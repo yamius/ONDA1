@@ -167,6 +167,3 @@ INSERT INTO languages (code, name, native_name, is_active) VALUES
   ('ZH', 'Chinese', '中文', true)
 ON CONFLICT (code) DO NOTHING;
 
--- ========================================
--- Готово! Базовая структура базы данных создана.
--- ========================================
