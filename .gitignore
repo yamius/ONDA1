@@ -25,6 +25,8 @@ dist-ssr
 # Android keystore files (NEVER commit these!)
 *.keystore
 *.jks
+*.pem
+KEYSTORE_INFO.md
 
 # Android build outputs
 android-webview/app/build/
