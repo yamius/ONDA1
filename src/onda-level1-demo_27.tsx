@@ -131,9 +131,7 @@ const OndaLevel1 = () => {
               .upsert({
                 id: user.id,
                 display_name: displayName,
-                avatar_url: user.user_metadata?.avatar_url,
-                created_at: new Date().toISOString(),
-                updated_at: new Date().toISOString()
+                avatar_url: user.user_metadata?.avatar_url
               })
               .select()
               .single();
@@ -158,9 +156,7 @@ const OndaLevel1 = () => {
                 selected_language: i18n.language?.split('-')[0]?.toUpperCase() || 'RU',
                 selected_level: 1,
                 selected_chapter: 1,
-                is_light_theme: false,
-                created_at: new Date().toISOString(),
-                updated_at: new Date().toISOString()
+                is_light_theme: false
               })
               .select()
               .single();

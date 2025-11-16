@@ -140,8 +140,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
         .from('user_profiles')
         .upsert({ 
           id: user.id,
-          display_name: displayName.trim(),
-          updated_at: new Date().toISOString()
+          display_name: displayName.trim()
         })
         .select()
         .single();
