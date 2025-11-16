@@ -10,6 +10,7 @@ interface AdaptivePracticeModalProps {
   isOpen: boolean;
   onClose: () => void;
   practiceId: string;
+  onOndEarned?: (amount: number) => void;
 }
 
 interface AdaptivePractice {
@@ -435,7 +436,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
 
 type PracticeState = 'intro' | 'practice' | 'complete';
 
-export function AdaptivePracticeModal({ isOpen, onClose, practiceId }: AdaptivePracticeModalProps) {
+export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned }: AdaptivePracticeModalProps) {
   const { t } = useTranslation();
   const vitalsData = useVitals();
   const [practiceState, setPracticeState] = useState<PracticeState>('intro');
@@ -669,6 +670,10 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId }: AdaptiveP
         }, {
           onConflict: 'user_id'
         });
+
+      if (onOndEarned) {
+        onOndEarned(ondReward.totalOnd);
+      }
 
     } catch (error) {
       console.error('Error saving practice reward:', error);

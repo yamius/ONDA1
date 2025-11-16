@@ -6,6 +6,7 @@ import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 interface EmotionalCheckModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onOndEarned?: (amount: number) => void;
 }
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -20,7 +21,7 @@ interface EmotionalResult {
   recommendation: string;
 }
 
-export function EmotionalCheckModal({ isOpen, onClose }: EmotionalCheckModalProps) {
+export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalCheckModalProps) {
   const { t } = useTranslation();
   const [recordingState, setRecordingState] = useState<RecordingState>('idle');
   const [recordingTime, setRecordingTime] = useState(0);
@@ -425,6 +426,7 @@ export function EmotionalCheckModal({ isOpen, onClose }: EmotionalCheckModalProp
       isOpen={selectedPractice !== null}
       onClose={() => setSelectedPractice(null)}
       practiceId={selectedPractice || ''}
+      onOndEarned={onOndEarned}
     />
     </>
   );

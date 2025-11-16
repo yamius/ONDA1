@@ -3278,6 +3278,7 @@ const OndaLevel1 = () => {
       <EmotionalCheckModal
         isOpen={showEmotionalCheck}
         onClose={() => setShowEmotionalCheck(false)}
+        onOndEarned={(amount) => setQnt(prev => prev + amount)}
       />
 
       <InfoModal
