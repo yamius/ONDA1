@@ -8,19 +8,66 @@ export interface HealthConnectHook {
   disconnect: () => void;
 }
 
+const HC_STORAGE_KEY = 'health_connect_last_update';
+
+function loadLastUpdate(): HcUpdatePayload | null {
+  if (typeof localStorage === 'undefined') {
+    return null;
+  }
+  
+  try {
+    const updateStr = localStorage.getItem(HC_STORAGE_KEY);
+    return updateStr ? JSON.parse(updateStr) : null;
+  } catch (error) {
+    console.error('[useHealthConnect] Failed to load from storage:', error);
+    return null;
+  }
+}
+
+function saveLastUpdate(lastUpdate: HcUpdatePayload | null) {
+  if (typeof localStorage === 'undefined') {
+    return;
+  }
+  
+  try {
+    if (lastUpdate) {
+      localStorage.setItem(HC_STORAGE_KEY, JSON.stringify(lastUpdate));
+    } else {
+      localStorage.removeItem(HC_STORAGE_KEY);
+    }
+  } catch (error) {
+    console.error('[useHealthConnect] Failed to save to storage:', error);
+  }
+}
+
+function clearStorage() {
+  if (typeof localStorage === 'undefined') {
+    return;
+  }
+  
+  try {
+    localStorage.removeItem(HC_STORAGE_KEY);
+  } catch (error) {
+    console.error('[useHealthConnect] Failed to clear storage:', error);
+  }
+}
+
 export function useHealthConnect(): HealthConnectHook {
   const [connected, setConnected] = useState(false);
-  const [lastUpdate, setLastUpdate] = useState<HcUpdatePayload | null>(null);
+  const [lastUpdate, setLastUpdate] = useState<HcUpdatePayload | null>(() => loadLastUpdate());
 
   useEffect(() => {
     const handler = (e: Event) => {
       const detail = (e as CustomEvent).detail as HcUpdatePayload;
       console.log('[useHealthConnect] Received hc-update event:', detail);
-      setLastUpdate(detail);
       
-      if (detail.source === 'health_connect') {
+      const isConnection = detail.source === 'health_connect' || detail.source === 'debug';
+      if (isConnection) {
         setConnected(true);
       }
+      
+      setLastUpdate(detail);
+      saveLastUpdate(detail);
     };
 
     window.addEventListener('hc-update', handler as EventListener);
@@ -87,7 +134,6 @@ export function useHealthConnect(): HealthConnectHook {
           hydrationLiters: 2.1
         }
       });
-      setConnected(true);
       console.log('[useHealthConnect] Debug data sent');
     } else {
       console.error('[useHealthConnect] Health Connect bridge not initialized');
@@ -99,6 +145,7 @@ export function useHealthConnect(): HealthConnectHook {
     console.log('[useHealthConnect] Disconnecting from Health Connect');
     setConnected(false);
     setLastUpdate(null);
+    clearStorage();
   }, []);
 
   return {
