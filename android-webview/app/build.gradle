@@ -16,9 +16,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        // Add environment variables from .env
-        buildConfigField "String", "SUPABASE_URL", "\"https://dwjwuqundlobtwkfuzmm.supabase.co\""
-        buildConfigField "String", "SUPABASE_ANON_KEY", "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR3and1cXVuZGxvYnR3a2Z1em1tIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjEzNzI2NTgsImV4cCI6MjA3Njk0ODY1OH0.H9YzFmGziswhy3aSA3jHwiNMPHB_whsv0yEQec5lerw\""
+        // Supabase credentials (for authentication and CDN audio)
+        buildConfigField "String", "SUPABASE_URL", "\"https://qwtdppugdcguyeaumymc.supabase.co\""
+        buildConfigField "String", "SUPABASE_ANON_KEY", "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF3dGRwcHVnZGNndXllYXVteW1jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE2MDU2NjEsImV4cCI6MjA0NzE4MTY2MX0.uZTlGNT2VudGMZxR8ALv14TAwKy-zzqL1Nb9o_oLJkg\""
     }
 
     buildTypes {

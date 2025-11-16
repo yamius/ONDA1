@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
+    <!-- Allow HTTPS connections to Supabase for:
+         - Authentication
+         - Database API
+         - CDN Audio Files (storage.supabase.co)
+    -->
     <domain-config cleartextTrafficPermitted="false">
         <domain includeSubdomains="true">supabase.co</domain>
     </domain-config>
+    
+    <!-- Default security: HTTPS only -->
     <base-config cleartextTrafficPermitted="false">
         <trust-anchors>
             <certificates src="system" />
