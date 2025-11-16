@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
 import type { UserProfile } from '../lib/supabase';
 import { HealthConnectCompactPanel } from './HealthConnectCompactPanel';
+import type { HealthConnectHook } from '../hooks/useHealthConnect';
 
 interface SettingsModalProps {
   user: any;
@@ -31,6 +32,7 @@ interface SettingsModalProps {
     fatigue: number | null;
     flow: number | null;
   };
+  healthConnectData: HealthConnectHook;
 }
 
 export const SettingsModal: React.FC<SettingsModalProps> = ({
@@ -40,6 +42,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   onProfileUpdate,
   isLightTheme,
   vitalsData,
+  healthConnectData,
 }) => {
   const { t } = useTranslation();
   const [displayName, setDisplayName] = useState(profile?.display_name || '');
@@ -47,78 +50,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
   const { connected, connect, disconnect, hr, br, stress, energy, hrv, csi, recoveryRate, hrTrendSlope, hrAcceleration, arousal, calm, focus, excitement, fatigue, flow } = vitalsData;
-
-  const handleHealthConnectClick = () => {
-    console.log("[HC] Connect button clicked");
-
-    if ((window as any).Android?.requestHealthConnectPermissions) {
-      (window as any).Android.requestHealthConnectPermissions();
-      return;
-    }
-
-    if ((window as any).onHealthConnectUpdate) {
-      (window as any).onHealthConnectUpdate({
-        ts: new Date().toISOString(),
-        source: "debug",
-        activity: {
-          activeCaloriesBurned: 320,
-          vo2Max: 42
-        },
-        vitals: {
-          heartRate: 78,
-          restingHeartRate: 60,
-          hrv: 55,
-          bloodPressureSys: 120,
-          bloodPressureDia: 78,
-          bloodGlucose: 4.8,
-          spo2: 97,
-          respiratoryRate: 14,
-          bodyTemperature: 36.8,
-          skinTemperature: 33.2
-        },
-        sleep: {
-          main: {
-            date: new Date().toISOString().split('T')[0],
-            sleepStart: "23:40",
-            wakeTime: "07:05",
-            durationMin: 445
-          }
-        },
-        wellness: {
-          mindfulnessMinutes: 15,
-          mindfulnessSessions: 2,
-          sexualActivityEvents: 0
-        },
-        body: {
-          weightKg: 72.5,
-          heightCm: 178,
-          bodyFatPct: 16,
-          bodyWaterMassKg: 40,
-          boneMassKg: 3,
-          leanBodyMassKg: 61,
-          basalMetabolicRate: 1700
-        },
-        nutrition: {
-          calories: 2300,
-          proteinGrams: 120,
-          fatGrams: 70,
-          carbsGrams: 260,
-          hydrationLiters: 2.1
-        },
-        femaleHealth: {
-          menstruationFlow: "medium",
-          basalBodyTemperature: 36.6,
-          cervicalMucus: "egg_white",
-          ovulationTestPositive: true,
-          intermenstrualBleeding: false
-        }
-      });
-      console.log('[HC] Test data package sent - check Rhythm, Vitals, and Health Connect panel');
-    } else {
-      console.warn("onHealthConnectUpdate is not defined");
-      alert('Health Connect bridge is not initialized');
-    }
-  };
+  const { connected: hcConnected, connect: hcConnect, disconnect: hcDisconnect } = healthConnectData;
 
   const handleSave = async () => {
     if (!user) return;
@@ -284,19 +216,47 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
           </div>
 
           <div>
-            <button
-              onClick={handleHealthConnectClick}
-              className={`w-full py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 mb-3 ${
-                isLightTheme
-                  ? 'bg-purple-100 hover:bg-purple-200 text-purple-700'
-                  : 'bg-purple-500/20 hover:bg-purple-500/30 text-purple-400'
-              }`}
-            >
-              <Moon className="w-5 h-5" />
-              {t('settings.connect_health_connect', 'Connect Google Health Connect')}
-            </button>
+            <div className="flex gap-3 mb-3">
+              <button
+                onClick={hcConnect}
+                disabled={hcConnected}
+                className={`${hcConnected ? 'flex-1' : 'w-full'} py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
+                  hcConnected
+                    ? isLightTheme
+                      ? 'bg-green-100 text-green-700'
+                      : 'bg-green-500/20 text-green-400'
+                    : isLightTheme
+                    ? 'bg-purple-100 hover:bg-purple-200 text-purple-700'
+                    : 'bg-purple-500/20 hover:bg-purple-500/30 text-purple-400'
+                } ${hcConnected ? 'cursor-default' : ''}`}
+                data-testid="button-connect-health-connect"
+              >
+                <Moon className="w-5 h-5" />
+                {hcConnected 
+                  ? t('settings.health_connect_connected', 'Health Connect Connected') 
+                  : t('settings.connect_health_connect', 'Connect Health Connect')}
+              </button>
+              
+              {hcConnected && (
+                <button
+                  onClick={hcDisconnect}
+                  className={`flex-1 py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
+                    isLightTheme
+                      ? 'bg-red-100 hover:bg-red-200 text-red-700'
+                      : 'bg-red-500/20 hover:bg-red-500/30 text-red-400'
+                  }`}
+                  data-testid="button-disconnect-health-connect"
+                >
+                  <X className="w-5 h-5" />
+                  {t('settings.health_connect_disconnect', 'Disconnect')}
+                </button>
+              )}
+            </div>
 
-            <HealthConnectCompactPanel isLightTheme={isLightTheme} />
+            <HealthConnectCompactPanel 
+              isLightTheme={isLightTheme} 
+              data={healthConnectData.lastUpdate}
+            />
 
             <div className="flex gap-3">
               <button

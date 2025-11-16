@@ -11,12 +11,14 @@ import { EmotionalCheckModal } from './components/EmotionalCheckModal';
 import { InfoModal } from './components/InfoModal';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
+import { useHealthConnect } from './hooks/useHealthConnect';
 import { rhythmStore } from './sleep/rhythm';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
   const vitalsData = useVitals();
+  const healthConnectData = useHealthConnect();
 
   const safeToFixed = (value: any, digits: number = 0): string => {
     if (value === null || value === undefined) return '--';
@@ -3265,6 +3267,7 @@ const OndaLevel1 = () => {
           }}
           isLightTheme={isLightTheme}
           vitalsData={vitalsData}
+          healthConnectData={healthConnectData}
         />
       )}
 

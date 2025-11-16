@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
-import { Heart, Activity, Moon, Flame, Droplets, Scale, Thermometer, Wind, Apple, Utensils } from "lucide-react";
+import { Heart, Activity, Moon, Flame, Droplets, Scale, Thermometer, Wind, Apple, Utensils, Smartphone, Bug } from "lucide-react";
 import type { HcUpdatePayload } from "../bridge/healthConnectBridge";
 
 interface HealthConnectCompactPanelProps {
   isLightTheme?: boolean;
+  data: HcUpdatePayload | null;
 }
 
 interface MetricItem {
@@ -19,18 +19,7 @@ interface MetricGroup {
   metrics: MetricItem[];
 }
 
-export function HealthConnectCompactPanel({ isLightTheme = false }: HealthConnectCompactPanelProps) {
-  const [data, setData] = useState<HcUpdatePayload | null>(null);
-
-  useEffect(() => {
-    const handler = (e: Event) => {
-      const detail = (e as CustomEvent).detail as HcUpdatePayload;
-      console.log('[HealthConnectCompactPanel] Received hc-update event:', detail);
-      setData(detail);
-    };
-    window.addEventListener("hc-update", handler as EventListener);
-    return () => window.removeEventListener("hc-update", handler as EventListener);
-  }, []);
+export function HealthConnectCompactPanel({ isLightTheme = false, data }: HealthConnectCompactPanelProps) {
 
   if (!data) {
     return null;
@@ -141,8 +130,8 @@ export function HealthConnectCompactPanel({ isLightTheme = false }: HealthConnec
         {
           icon: Moon,
           label: "Sleep Period",
-          value: data.sleep?.main?.start && data.sleep?.main?.end
-            ? `${new Date(data.sleep.main.start).toLocaleTimeString('ru', { hour: '2-digit', minute: '2-digit' })} - ${new Date(data.sleep.main.end).toLocaleTimeString('ru', { hour: '2-digit', minute: '2-digit' })}`
+          value: data.sleep?.main?.sleepStart && data.sleep?.main?.wakeTime
+            ? `${data.sleep.main.sleepStart} - ${data.sleep.main.wakeTime}`
             : undefined,
           unit: "",
           color: "text-blue-400"
@@ -314,11 +303,36 @@ export function HealthConnectCompactPanel({ isLightTheme = false }: HealthConnec
           </div>
         ))}
       </div>
-      <p className={`text-xs mt-3 text-center ${
-        isLightTheme ? 'text-gray-500' : 'text-white/50'
-      }`}>
-        Last update: {new Date(data.ts).toLocaleString()}
-      </p>
+      
+      <div className="flex items-center justify-between mt-3 pt-3 border-t border-white/10">
+        <p className={`text-xs ${
+          isLightTheme ? 'text-gray-500' : 'text-white/50'
+        }`}>
+          Last update: {data.ts ? new Date(data.ts).toLocaleString() : 'N/A'}
+        </p>
+        
+        <div className={`flex items-center gap-1.5 px-2 py-1 rounded-md text-xs font-medium ${
+          data.source === 'health_connect'
+            ? isLightTheme
+              ? 'bg-green-100 text-green-700'
+              : 'bg-green-500/20 text-green-400'
+            : isLightTheme
+            ? 'bg-yellow-100 text-yellow-700'
+            : 'bg-yellow-500/20 text-yellow-400'
+        }`}>
+          {data.source === 'health_connect' ? (
+            <>
+              <Smartphone className="w-3 h-3" />
+              Android
+            </>
+          ) : (
+            <>
+              <Bug className="w-3 h-3" />
+              Debug
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
