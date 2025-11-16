@@ -123,32 +123,72 @@ const OndaLevel1 = () => {
             supabase.from('user_progress').select('total_ond').eq('user_id', user.id).maybeSingle()
           ]);
 
-          if (profileRes.data) {
-            setUserProfile(profileRes.data);
+          let profile = profileRes.data;
+          if (!profile) {
+            const displayName = user.user_metadata?.full_name || user.email?.split('@')[0] || 'Игрок-' + Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+            const { data: newProfile } = await supabase
+              .from('user_profiles')
+              .upsert({
+                id: user.id,
+                display_name: displayName,
+                avatar_url: user.user_metadata?.avatar_url,
+                created_at: new Date().toISOString(),
+                updated_at: new Date().toISOString()
+              })
+              .select()
+              .single();
+            profile = newProfile;
+          }
+          setUserProfile(profile);
+
+          let progress = progressRes.data;
+          if (!progress) {
+            const { data: newProgress } = await supabase
+              .from('user_game_progress')
+              .upsert({
+                user_id: user.id,
+                ond: 0,
+                active_circuit: 1,
+                completed_practices: {},
+                practice_history: [],
+                artifacts: [],
+                unlocked_achievements: [],
+                bio_metrics: { heartRate: 72, hrv: 45, spo2: 98, temp: 36.6, stability: 100 },
+                sleep_tracking: { day: 0, lastCheck: null },
+                selected_language: i18n.language?.split('-')[0]?.toUpperCase() || 'RU',
+                selected_level: 1,
+                selected_chapter: 1,
+                is_light_theme: false,
+                created_at: new Date().toISOString(),
+                updated_at: new Date().toISOString()
+              })
+              .select()
+              .single();
+            progress = newProgress;
           }
 
-          if (progressRes.data) {
-            setGameProgress(progressRes.data);
-            setQnt(userProgressRes.data?.total_ond || progressRes.data.ond || 0);
-            setActiveCircuit(progressRes.data.active_circuit || 1);
-            setCompletedPractices(progressRes.data.completed_practices || {});
-            setPracticeHistory(progressRes.data.practice_history || []);
-            setArtifacts(progressRes.data.artifacts || []);
-            setUnlockedAchievements(progressRes.data.unlocked_achievements || []);
-            setBioMetrics(progressRes.data.bio_metrics || {
+          if (progress) {
+            setGameProgress(progress);
+            setQnt(userProgressRes.data?.total_ond || progress.ond || 0);
+            setActiveCircuit(progress.active_circuit || 1);
+            setCompletedPractices(progress.completed_practices || {});
+            setPracticeHistory(progress.practice_history || []);
+            setArtifacts(progress.artifacts || []);
+            setUnlockedAchievements(progress.unlocked_achievements || []);
+            setBioMetrics(progress.bio_metrics || {
               heartRate: 72,
               hrv: 45,
               spo2: 98,
               temp: 36.6,
               stability: 100
             });
-            setSleepTracking(progressRes.data.sleep_tracking || { day: 0, lastCheck: null });
-            const savedLang = progressRes.data.selected_language || i18n.language?.split('-')[0]?.toUpperCase() || 'EN';
+            setSleepTracking(progress.sleep_tracking || { day: 0, lastCheck: null });
+            const savedLang = progress.selected_language || i18n.language?.split('-')[0]?.toUpperCase() || 'EN';
             setSelectedLanguage(savedLang);
             i18n.changeLanguage(savedLang.toLowerCase());
-            setSelectedLevel(progressRes.data.selected_level || 1);
-            setSelectedChapter(progressRes.data.selected_chapter || 1);
-            setIsLightTheme(progressRes.data.is_light_theme || false);
+            setSelectedLevel(progress.selected_level || 1);
+            setSelectedChapter(progress.selected_chapter || 1);
+            setIsLightTheme(progress.is_light_theme || false);
           }
         }
       } catch (error) {
