@@ -68,8 +68,8 @@ export type HcFemaleHealth = {
 };
 
 export type HcUpdatePayload = {
-  ts?: string;
-  source?: "health_connect" | "bridge" | "debug";
+  timestamp: number;
+  source: "health_connect" | "bridge" | "debug";
   activity?: HcActivity;
   vitals?: HcVitals;
   sleep?: HcSleepBlock;
@@ -103,7 +103,7 @@ function handleVitalsFromHealthConnect(payload: HcVitalsPayload) {
 }
 
 function handleUpdateFromHealthConnect(update: HcUpdatePayload) {
-  const ts = update.ts || new Date().toISOString();
+  const ts = new Date(update.timestamp).toISOString();
   console.log("[HC] update payload received", update);
 
   if (update.sleep?.main) {

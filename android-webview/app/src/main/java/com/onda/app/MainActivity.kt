@@ -167,7 +167,7 @@ class MainActivity : AppCompatActivity() {
         coroutineScope.launch {
             try {
                 val data = JSONObject()
-                data.put("ts", Instant.now().toString())
+                data.put("timestamp", System.currentTimeMillis())
                 data.put("source", "health_connect")
 
                 // Get time range (last 24 hours)
