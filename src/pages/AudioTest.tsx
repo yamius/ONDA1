@@ -11,12 +11,13 @@ export default function AudioTest() {
   const [isLoading, setIsLoading] = useState(false);
   const [resetKey, setResetKey] = useState(0);
 
-  const singleTrackPath = 'https://qwtdppugdcguyeaumymc.supabase.co/storage/v1/object/public/audio-practices/p1-1_Breath%20of%20Life/p1-1_Breath%20of%20Life-1.mp3';
+  // Relative paths for useAudioCache (bucket prefix is added automatically)
+  const singleTrackPath = 'p1-1_Breath of Life/p1-1_Breath of Life-1.mp3';
   
   const multiTrackPaths = [
-    'https://qwtdppugdcguyeaumymc.supabase.co/storage/v1/object/public/audio-practices/Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-1.mp3',
-    'https://qwtdppugdcguyeaumymc.supabase.co/storage/v1/object/public/audio-practices/Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-2.mp3',
-    'https://qwtdppugdcguyeaumymc.supabase.co/storage/v1/object/public/audio-practices/Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-3.mp3',
+    'Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-1.mp3',
+    'Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-2.mp3',
+    'Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-3.mp3',
   ];
 
   const handleReset = () => {

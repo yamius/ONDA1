@@ -182,10 +182,14 @@ export function useAudioCache(audioPath: string | null): AudioCacheStatus {
         throw new Error(urlError?.message || 'Failed to get public URL');
       }
 
+      console.log('[AudioCache] Public URL generated:', data.publicUrl);
+
       setStatus(prev => ({ ...prev, progress: 10 }));
 
       // Fetch with progress tracking and abort signal
       const response = await fetch(data.publicUrl, { signal });
+      
+      console.log('[AudioCache] Fetch response status:', response.status, response.statusText);
       
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
