@@ -59,6 +59,13 @@ export function useHealthConnect(): HealthConnectHook {
   useEffect(() => {
     const handler = (e: Event) => {
       const detail = (e as CustomEvent).detail as HcUpdatePayload;
+      
+      // Handle null/undefined payload
+      if (!detail) {
+        console.warn('[useHealthConnect] Received null/undefined payload');
+        return;
+      }
+      
       console.log('[useHealthConnect] Received hc-update event:', detail);
       
       const isConnection = detail.source === 'health_connect' || detail.source === 'debug';
