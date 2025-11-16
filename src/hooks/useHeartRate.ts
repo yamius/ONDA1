@@ -38,7 +38,7 @@ export function useHeartRate() {
 
   const connect = useCallback(async () => {
     try {
-      const device = await navigator.bluetooth.requestDevice({
+      const device = await (navigator as any).bluetooth.requestDevice({
         filters: [{ services: ["heart_rate"] }],
         optionalServices: ["device_information"],
       });
@@ -63,5 +63,19 @@ export function useHeartRate() {
     }
   }, []);
 
-  return { hr, connected, connect, seriesRef: bufferRef };
+  const disconnect = useCallback(async () => {
+    try {
+      const device = heartRateStore.getDevice();
+      if (device && device.gatt && device.gatt.connected) {
+        await device.gatt.disconnect();
+      }
+      heartRateStore.setConnected(false);
+      heartRateStore.setDevice(null);
+      heartRateStore.clear();
+    } catch (err) {
+      console.error("Error disconnecting:", err);
+    }
+  }, []);
+
+  return { hr, connected, connect, disconnect, seriesRef: bufferRef };
 }

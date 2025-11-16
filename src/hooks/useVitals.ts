@@ -4,7 +4,7 @@ import { useHeartRate } from "./useHeartRate";
 import { useMotion } from "./useMotion";
 
 export function useVitals() {
-  const { hr, connected, connect, seriesRef } = useHeartRate();
+  const { hr, connected, connect, disconnect, seriesRef } = useHeartRate();
   const { activity } = useMotion();
 
   const [br, setBr] = useState<number | null>(null);
@@ -179,7 +179,7 @@ export function useVitals() {
   }, [seriesRef, activity]);
 
   return {
-    connected, connect, hr, br, stress, energy, hrv, csi, recoveryRate, hrTrendSlope, hrAcceleration,
+    connected, connect, disconnect, hr, br, stress, energy, hrv, csi, recoveryRate, hrTrendSlope, hrAcceleration,
     arousal, calm, focus, excitement, fatigue, flow
   };
 }

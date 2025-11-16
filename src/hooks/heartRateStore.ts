@@ -6,7 +6,7 @@ class HeartRateStore {
   private connectedListeners: Set<(connected: boolean) => void> = new Set();
   private currentHR: number | null = null;
   private isConnected = false;
-  private device: BluetoothDevice | null = null;
+  private device: any | null = null;
 
   getBuffer(): HRPoint[] {
     return this.buffer;
@@ -53,11 +53,11 @@ class HeartRateStore {
     this.notifyConnectionListeners();
   }
 
-  setDevice(device: BluetoothDevice | null) {
+  setDevice(device: any | null) {
     this.device = device;
   }
 
-  getDevice(): BluetoothDevice | null {
+  getDevice(): any | null {
     return this.device;
   }
 

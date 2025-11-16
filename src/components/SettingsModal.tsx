@@ -14,6 +14,7 @@ interface SettingsModalProps {
   vitalsData: {
     connected: boolean;
     connect: () => void;
+    disconnect: () => void;
     hr: number | null;
     br: number | null;
     stress: number | null;
@@ -45,7 +46,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [isSaving, setIsSaving] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
-  const { connected, connect, hr, br, stress, energy, hrv, csi, recoveryRate, hrTrendSlope, hrAcceleration, arousal, calm, focus, excitement, fatigue, flow } = vitalsData;
+  const { connected, connect, disconnect, hr, br, stress, energy, hrv, csi, recoveryRate, hrTrendSlope, hrAcceleration, arousal, calm, focus, excitement, fatigue, flow } = vitalsData;
 
   const handleHealthConnectClick = () => {
     console.log("[HC] Connect button clicked");
@@ -297,22 +298,39 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
 
             <HealthConnectCompactPanel isLightTheme={isLightTheme} />
 
-            <button
-              onClick={connect}
-              disabled={connected}
-              className={`w-full py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
-                connected
-                  ? isLightTheme
-                    ? 'bg-green-100 text-green-700'
-                    : 'bg-green-500/20 text-green-400'
-                  : isLightTheme
-                  ? 'bg-blue-100 hover:bg-blue-200 text-blue-700'
-                  : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
-              } ${connected ? 'cursor-default' : ''}`}
-            >
-              <Bluetooth className="w-5 h-5" />
-              {connected ? t('settings.tracker_connected') : t('settings.tracker_connect')}
-            </button>
+            <div className="flex gap-3">
+              <button
+                onClick={connect}
+                disabled={connected}
+                className={`flex-1 py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
+                  connected
+                    ? isLightTheme
+                      ? 'bg-green-100 text-green-700'
+                      : 'bg-green-500/20 text-green-400'
+                    : isLightTheme
+                    ? 'bg-blue-100 hover:bg-blue-200 text-blue-700'
+                    : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
+                } ${connected ? 'cursor-default' : ''}`}
+              >
+                <Bluetooth className="w-5 h-5" />
+                {connected ? t('settings.tracker_connected') : t('settings.tracker_connect')}
+              </button>
+              
+              {connected && (
+                <button
+                  onClick={disconnect}
+                  className={`py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
+                    isLightTheme
+                      ? 'bg-red-100 hover:bg-red-200 text-red-700'
+                      : 'bg-red-500/20 hover:bg-red-500/30 text-red-400'
+                  }`}
+                  data-testid="button-disconnect-tracker"
+                >
+                  <X className="w-5 h-5" />
+                  {t('settings.tracker_disconnect', 'Disconnect')}
+                </button>
+              )}
+            </div>
 
             {connected && (
               <div className={`mt-4 p-4 rounded-xl ${
