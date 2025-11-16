@@ -138,8 +138,11 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
     try {
       const { data, error } = await supabase
         .from('user_profiles')
-        .update({ display_name: displayName.trim() })
-        .eq('id', user.id)
+        .upsert({ 
+          id: user.id,
+          display_name: displayName.trim(),
+          updated_at: new Date().toISOString()
+        })
         .select()
         .single();
 
