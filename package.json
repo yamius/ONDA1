@@ -15,7 +15,8 @@
     "test:run": "vitest run",
     "test:coverage": "vitest run --coverage",
     "upload:audio": "tsx scripts/upload-audio-to-supabase.ts",
-    "upload:audio:tus": "tsx scripts/upload-large-audio-tus.ts"
+    "upload:audio:tus": "tsx scripts/upload-large-audio-tus.ts",
+    "prepare:android": "bash scripts/prepare-android.sh"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.57.4",
