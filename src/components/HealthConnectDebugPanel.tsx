@@ -9,8 +9,30 @@ interface EventLog {
   source: 'debug' | 'health_connect' | 'unknown';
 }
 
+const DEBUG_EVENTS_KEY = 'hc_debug_events';
+
+function loadDebugEvents(): EventLog[] {
+  if (typeof localStorage === 'undefined') return [];
+  try {
+    const stored = localStorage.getItem(DEBUG_EVENTS_KEY);
+    return stored ? JSON.parse(stored) : [];
+  } catch (e) {
+    console.error('[HC Debug] Failed to load events:', e);
+    return [];
+  }
+}
+
+function saveDebugEvents(events: EventLog[]) {
+  if (typeof localStorage === 'undefined') return;
+  try {
+    localStorage.setItem(DEBUG_EVENTS_KEY, JSON.stringify(events));
+  } catch (e) {
+    console.error('[HC Debug] Failed to save events:', e);
+  }
+}
+
 export function HealthConnectDebugPanel() {
-  const [events, setEvents] = useState<EventLog[]>([]);
+  const [events, setEvents] = useState<EventLog[]>(() => loadDebugEvents());
   const [isExpanded, setIsExpanded] = useState(false);
 
   useEffect(() => {
@@ -24,7 +46,11 @@ export function HealthConnectDebugPanel() {
         source: customEvent.detail?.source || 'unknown',
       };
       
-      setEvents((prev) => [newEvent, ...prev].slice(0, 50)); // Keep last 50 events
+      setEvents((prev) => {
+        const updated = [newEvent, ...prev].slice(0, 50); // Keep last 50 events
+        saveDebugEvents(updated);
+        return updated;
+      });
       console.log('[HC Debug] Event received:', newEvent);
     };
 
@@ -38,6 +64,7 @@ export function HealthConnectDebugPanel() {
 
   const clearEvents = () => {
     setEvents([]);
+    saveDebugEvents([]);
     console.log('[HC Debug] Events cleared');
   };
 
@@ -58,39 +85,52 @@ export function HealthConnectDebugPanel() {
       source: 'debug',
       timestamp: Date.now(),
       activity: {
-        calories: Math.floor(Math.random() * 500) + 1500,
-        vo2_max: Math.random() * 20 + 40,
+        activeCaloriesBurned: Math.floor(Math.random() * 500) + 1500,
+        vo2Max: Math.random() * 20 + 40,
         steps: Math.floor(Math.random() * 5000) + 5000,
       },
       vitals: {
-        heart_rate: Math.floor(Math.random() * 40) + 60,
-        blood_pressure_systolic: Math.floor(Math.random() * 20) + 110,
-        blood_pressure_diastolic: Math.floor(Math.random() * 10) + 70,
+        heartRate: Math.floor(Math.random() * 40) + 60,
+        bloodPressureSys: Math.floor(Math.random() * 20) + 110,
+        bloodPressureDia: Math.floor(Math.random() * 10) + 70,
         spo2: Math.random() * 2 + 97,
-        body_temperature: Math.random() * 1 + 36.5,
+        bodyTemperature: Math.random() * 1 + 36.5,
       },
       sleep: {
         sessions: [{
-          start: Date.now() - 8 * 60 * 60 * 1000,
-          end: Date.now() - 30 * 60 * 1000,
-          duration: 7.5,
-          stages: {
-            deep: 1.5,
-            light: 4.0,
-            rem: 2.0,
-            awake: 0.5,
-          },
+          startTime: new Date(Date.now() - 8 * 60 * 60 * 1000).toISOString(),
+          endTime: new Date(Date.now() - 30 * 60 * 1000).toISOString(),
+          durationMin: 450,
+          stages: [
+            {
+              stage: 'deep' as const,
+              startTime: new Date(Date.now() - 8 * 60 * 60 * 1000).toISOString(),
+              endTime: new Date(Date.now() - 6.5 * 60 * 60 * 1000).toISOString(),
+            },
+            {
+              stage: 'light' as const,
+              startTime: new Date(Date.now() - 6.5 * 60 * 60 * 1000).toISOString(),
+              endTime: new Date(Date.now() - 2.5 * 60 * 60 * 1000).toISOString(),
+            },
+            {
+              stage: 'rem' as const,
+              startTime: new Date(Date.now() - 2.5 * 60 * 60 * 1000).toISOString(),
+              endTime: new Date(Date.now() - 30 * 60 * 1000).toISOString(),
+            },
+          ],
         }],
       },
       body: {
-        weight: Math.random() * 20 + 70,
-        body_fat_percentage: Math.random() * 10 + 15,
-        lean_body_mass: Math.random() * 15 + 55,
+        weightKg: Math.random() * 20 + 70,
+        bodyFatPct: Math.random() * 10 + 15,
+        leanBodyMassKg: Math.random() * 15 + 55,
       },
       wellness: {
-        mindfulness_minutes: Math.floor(Math.random() * 30) + 10,
-        nutrition_calories: Math.floor(Math.random() * 500) + 1800,
-        hydration_ml: Math.floor(Math.random() * 1000) + 1500,
+        mindfulnessMinutes: Math.floor(Math.random() * 30) + 10,
+      },
+      nutrition: {
+        calories: Math.floor(Math.random() * 500) + 1800,
+        hydrationLiters: (Math.floor(Math.random() * 1000) + 1500) / 1000,
       },
     };
 
