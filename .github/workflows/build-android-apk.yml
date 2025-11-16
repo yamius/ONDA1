@@ -51,23 +51,9 @@ jobs:
       
       - name: Prepare Android assets
         run: |
-          echo "📦 Копирование веб-приложения в Android assets..."
-          
-          # Create assets directory
-          mkdir -p android-webview/app/src/main/assets
-          
-          # Copy dist files (WITHOUT audio - using CDN)
-          cp -r dist/* android-webview/app/src/main/assets/
-          
-          # Remove audio directories (they will be loaded from CDN)
-          rm -rf android-webview/app/src/main/assets/practices\ p1 || true
-          rm -rf android-webview/app/src/main/assets/adaptive-practices || true
-          
-          echo "✅ Assets подготовлены"
-          
-          # Show what was copied
-          echo "📊 Размер assets:"
-          du -sh android-webview/app/src/main/assets/
+          # Use the existing prepare-android.sh script to ensure parity with local builds
+          chmod +x scripts/prepare-android.sh
+          ./scripts/prepare-android.sh
       
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -146,11 +132,16 @@ jobs:
                     `Download from the [Actions tab](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`
             })
       
+      - name: Get short SHA
+        id: short_sha
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: echo "sha=$(echo ${{ github.sha }} | cut -c1-7)" >> $GITHUB_OUTPUT
+      
       - name: Create Release (on main branch)
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v1.0.${{ github.run_number }}
+          tag_name: v1.0.${{ github.run_number }}-${{ steps.short_sha.outputs.sha }}
           name: Release v1.0.${{ github.run_number }}
           body: |
             ## 🚀 ONDA Android Release
