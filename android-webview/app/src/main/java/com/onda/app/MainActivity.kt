@@ -93,6 +93,12 @@ class MainActivity : AppCompatActivity() {
             allowContentAccess = true
             mediaPlaybackRequiresUserGesture = false
             mixedContentMode = WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
+            
+            // Enable modern caching for audio files (Cache API + IndexedDB)
+            cacheMode = WebSettings.LOAD_DEFAULT
+            
+            // Ensure storage APIs are enabled for IndexedDB
+            javaScriptCanOpenWindowsAutomatically = false
         }
 
         // Add JavaScript interface for native bridges

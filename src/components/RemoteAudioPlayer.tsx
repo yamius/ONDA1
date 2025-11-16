@@ -4,7 +4,7 @@ import { Loader2 } from 'lucide-react';
 
 interface RemoteAudioPlayerProps {
   isPlaying: boolean;
-  audioPath: string;
+  audioPath: string | string[];
   fadeInDuration?: number;
   fadeOutDuration?: number;
   volume?: number;
@@ -25,9 +25,9 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   onLoadingChange,
   showLoadingIndicator = false,
 }) => {
-  const [availableTracks, setAvailableTracks] = useState<string[]>([]);
+  const tracks = Array.isArray(audioPath) ? audioPath : [audioPath];
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-  const currentTrackPath = availableTracks[currentTrackIndex] || audioPath;
+  const currentTrackPath = tracks[currentTrackIndex];
 
   const { url, loading, progress, error } = useAudioCache(currentTrackPath);
   const preloader = useAudioPreloader();
@@ -46,32 +46,22 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   }, [loading, progress, onLoadingChange]);
 
   useEffect(() => {
-    const detectMultiTrackFiles = () => {
-      const tracks: string[] = [];
-      const basePattern = audioPath.replace(/-1\.mp3$/, '');
+    if (onTrackChange) {
+      onTrackChange(currentTrackIndex + 1, tracks.length);
+    }
 
-      for (let i = 1; i <= 10; i++) {
-        tracks.push(`${basePattern}-${i}.mp3`);
+    if (tracks.length > 1 && currentTrackIndex < tracks.length - 1) {
+      const nextTracks = tracks.slice(currentTrackIndex + 1, currentTrackIndex + 3);
+      if (nextTracks.length > 0) {
+        preloader.preload(nextTracks);
       }
-
-      setAvailableTracks(tracks);
-
-      if (onTrackChange) {
-        onTrackChange(1, tracks.length);
-      }
-
-      if (tracks.length > 1) {
-        preloader.preload(tracks.slice(1, 3));
-      }
-    };
-
-    detectMultiTrackFiles();
-  }, [audioPath, onTrackChange]);
+    }
+  }, [currentTrackIndex, tracks.length, onTrackChange]);
 
   useEffect(() => {
     isFirstPlayRef.current = true;
     setCurrentTrackIndex(0);
-  }, [resetKey]);
+  }, [audioPath, resetKey]);
 
   useEffect(() => {
     if (!audioContextRef.current) {
@@ -87,30 +77,19 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     if (!audioRef.current) {
       audioRef.current = new Audio(url);
       audioRef.current.volume = 1;
-      audioRef.current.loop = availableTracks.length === 1;
+      audioRef.current.loop = tracks.length === 1;
 
       const handleEnded = () => {
         console.log('[RemoteAudioPlayer] Track ended', {
           currentIndex: currentTrackIndex,
-          totalTracks: availableTracks.length,
+          totalTracks: tracks.length,
         });
 
-        if (availableTracks.length > 1 && currentTrackIndex < availableTracks.length - 1) {
+        if (tracks.length > 1 && currentTrackIndex < tracks.length - 1) {
           const nextIndex = currentTrackIndex + 1;
           setCurrentTrackIndex(nextIndex);
-
-          if (onTrackChange) {
-            onTrackChange(nextIndex + 1, availableTracks.length);
-          }
-
-          if (nextIndex + 2 < availableTracks.length) {
-            preloader.preload([availableTracks[nextIndex + 2]]);
-          }
-        } else if (availableTracks.length > 1) {
+        } else if (tracks.length > 1) {
           setCurrentTrackIndex(0);
-          if (onTrackChange) {
-            onTrackChange(1, availableTracks.length);
-          }
         }
       };
 
@@ -124,7 +103,7 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
       audioRef.current.src = url;
       audioRef.current.load();
     }
-  }, [url, error, availableTracks.length, currentTrackIndex, onTrackChange]);
+  }, [url, error, tracks.length, currentTrackIndex]);
 
   useEffect(() => {
     const audio = audioRef.current;

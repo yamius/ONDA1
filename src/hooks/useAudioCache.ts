@@ -125,13 +125,16 @@ export function useAudioCache(audioPath: string | null): AudioCacheStatus {
     cached: false,
   });
 
-  const loadAudio = useCallback(async (path: string) => {
+  const loadAudio = useCallback(async (path: string, signal: AbortSignal, retryCount = 0) => {
+    const MAX_RETRIES = 3;
+    const RETRY_DELAY = 1000;
+
     setStatus(prev => ({ ...prev, loading: true, progress: 0, error: null }));
 
     try {
       // Step 1: Check IndexedDB cache
       const cachedBlob = await getFromIndexedDB(path);
-      if (cachedBlob) {
+      if (cachedBlob && !signal.aborted) {
         const objectURL = URL.createObjectURL(cachedBlob);
         setStatus({
           loading: false,
@@ -141,12 +144,12 @@ export function useAudioCache(audioPath: string | null): AudioCacheStatus {
           cached: true,
         });
         console.log('[AudioCache] Loaded from IndexedDB:', path);
-        return;
+        return objectURL;
       }
 
       // Step 2: Check Cache API
       const cachedResponse = await getFromCacheAPI(path);
-      if (cachedResponse) {
+      if (cachedResponse && !signal.aborted) {
         const blob = await cachedResponse.blob();
         const objectURL = URL.createObjectURL(blob);
         
@@ -161,7 +164,11 @@ export function useAudioCache(audioPath: string | null): AudioCacheStatus {
           cached: true,
         });
         console.log('[AudioCache] Loaded from Cache API:', path);
-        return;
+        return objectURL;
+      }
+
+      if (signal.aborted) {
+        throw new Error('Aborted');
       }
 
       // Step 3: Download from Supabase Storage
@@ -177,8 +184,8 @@ export function useAudioCache(audioPath: string | null): AudioCacheStatus {
 
       setStatus(prev => ({ ...prev, progress: 10 }));
 
-      // Fetch with progress tracking
-      const response = await fetch(data.publicUrl);
+      // Fetch with progress tracking and abort signal
+      const response = await fetch(data.publicUrl, { signal });
       
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -195,6 +202,11 @@ export function useAudioCache(audioPath: string | null): AudioCacheStatus {
       let receivedLength = 0;
 
       while (true) {
+        if (signal.aborted) {
+          await reader.cancel();
+          throw new Error('Aborted');
+        }
+
         const { done, value } = await reader.read();
         
         if (done) break;
@@ -228,9 +240,23 @@ export function useAudioCache(audioPath: string | null): AudioCacheStatus {
       });
 
       console.log('[AudioCache] Downloaded and cached:', path);
+      return objectURL;
 
     } catch (error) {
+      if (signal.aborted) {
+        console.log('[AudioCache] Load aborted:', path);
+        return null;
+      }
+
       const message = error instanceof Error ? error.message : 'Unknown error';
+      
+      // Retry logic for network errors
+      if (retryCount < MAX_RETRIES && !message.includes('Aborted')) {
+        console.warn(`[AudioCache] Retry ${retryCount + 1}/${MAX_RETRIES}:`, path);
+        await new Promise(resolve => setTimeout(resolve, RETRY_DELAY * (retryCount + 1)));
+        return loadAudio(path, signal, retryCount + 1);
+      }
+
       console.error('[AudioCache] Error loading audio:', message);
       setStatus({
         loading: false,
@@ -239,6 +265,7 @@ export function useAudioCache(audioPath: string | null): AudioCacheStatus {
         url: null,
         cached: false,
       });
+      return null;
     }
   }, []);
 
@@ -254,12 +281,18 @@ export function useAudioCache(audioPath: string | null): AudioCacheStatus {
       return;
     }
 
-    loadAudio(audioPath);
+    const abortController = new AbortController();
+    let currentURL: string | null = null;
 
-    // Cleanup object URL on unmount
+    loadAudio(audioPath, abortController.signal).then(url => {
+      currentURL = url;
+    });
+
+    // Cleanup: abort fetch and revoke blob URL
     return () => {
-      if (status.url) {
-        URL.revokeObjectURL(status.url);
+      abortController.abort();
+      if (currentURL) {
+        URL.revokeObjectURL(currentURL);
       }
     };
   }, [audioPath, loadAudio]);

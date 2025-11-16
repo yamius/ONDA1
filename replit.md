@@ -92,13 +92,22 @@ Preferred communication style: Simple, everyday language.
 
 ## Audio System
 
+**Audio CDN Infrastructure (November 2025):**
+- Supabase Storage CDN for ~245MB of audio files
+- Dual-layer caching: IndexedDB (fast) + Cache API (reliable)
+- Progressive loading with retry logic (3 attempts with backoff)
+- AbortController for proper cleanup and memory management
+- Reduces APK size from 250MB to ~5MB
+
 **Practice Audio Player:**
 - Multi-track audio support with automatic track progression
 - Fade in/out transitions for smooth audio experiences
 - Volume control and playback state management
 - Ambient sound mixing for meditation practices
+- `RemoteAudioPlayer` for CDN-based audio loading
+- `PracticeAudioPlayer` for local audio files (backward compatibility)
 
-**Rationale:** Audio is central to guided meditation. The multi-track system allows for progressive sessions without manual intervention.
+**Rationale:** Audio is central to guided meditation. The CDN-based system drastically reduces app size while maintaining offline capability through caching. Multi-track system allows for progressive sessions without manual intervention.
 
 ## Internationalization
 
