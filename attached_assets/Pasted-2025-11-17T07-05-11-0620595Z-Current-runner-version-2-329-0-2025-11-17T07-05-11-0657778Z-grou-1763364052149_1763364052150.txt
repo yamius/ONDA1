@@ -1,0 +1,385 @@
+2025-11-17T07:05:11.0620595Z Current runner version: '2.329.0'
+2025-11-17T07:05:11.0657778Z ##[group]Runner Image Provisioner
+2025-11-17T07:05:11.0658974Z Hosted Compute Agent
+2025-11-17T07:05:11.0659791Z Version: 20251016.436
+2025-11-17T07:05:11.0660694Z Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+2025-11-17T07:05:11.0661960Z Build Date: 2025-10-15T20:44:12Z
+2025-11-17T07:05:11.0662911Z ##[endgroup]
+2025-11-17T07:05:11.0663654Z ##[group]Operating System
+2025-11-17T07:05:11.0664598Z Ubuntu
+2025-11-17T07:05:11.0665506Z 24.04.3
+2025-11-17T07:05:11.0666273Z LTS
+2025-11-17T07:05:11.0666958Z ##[endgroup]
+2025-11-17T07:05:11.0667820Z ##[group]Runner Image
+2025-11-17T07:05:11.0669049Z Image: ubuntu-24.04
+2025-11-17T07:05:11.0669988Z Version: 20251112.124.1
+2025-11-17T07:05:11.0671708Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+2025-11-17T07:05:11.0674468Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+2025-11-17T07:05:11.0676371Z ##[endgroup]
+2025-11-17T07:05:11.0678233Z ##[group]GITHUB_TOKEN Permissions
+2025-11-17T07:05:11.0681006Z Contents: read
+2025-11-17T07:05:11.0681909Z Metadata: read
+2025-11-17T07:05:11.0682643Z Packages: read
+2025-11-17T07:05:11.0683454Z ##[endgroup]
+2025-11-17T07:05:11.0687223Z Secret source: Actions
+2025-11-17T07:05:11.0688727Z Prepare workflow directory
+2025-11-17T07:05:11.1144467Z Prepare all required actions
+2025-11-17T07:05:11.1201866Z Getting action download info
+2025-11-17T07:05:11.4978665Z Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+2025-11-17T07:05:11.6903862Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+2025-11-17T07:05:11.7786698Z Download action repository 'actions/setup-java@v4' (SHA:c5195efecf7bdfc987ee8bae7a71cb8b11521c00)
+2025-11-17T07:05:12.1213656Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+2025-11-17T07:05:12.2502482Z Download action repository 'actions/github-script@v7' (SHA:f28e40c7f34bde8b3046d885e986cb6290c5673b)
+2025-11-17T07:05:12.4908818Z Download action repository 'softprops/action-gh-release@v1' (SHA:de2c0eb89ae2a093876385947365aca7b0e5f844)
+2025-11-17T07:05:12.8016294Z Complete job name: Build APK
+2025-11-17T07:05:12.8873019Z ##[group]Run actions/checkout@v4
+2025-11-17T07:05:12.8874306Z with:
+2025-11-17T07:05:12.8875210Z   repository: yamius/ONDA1
+2025-11-17T07:05:12.8876350Z   token: ***
+2025-11-17T07:05:12.8877098Z   ssh-strict: true
+2025-11-17T07:05:12.8877863Z   ssh-user: git
+2025-11-17T07:05:12.8878647Z   persist-credentials: true
+2025-11-17T07:05:12.8879515Z   clean: true
+2025-11-17T07:05:12.8880308Z   sparse-checkout-cone-mode: true
+2025-11-17T07:05:12.8881248Z   fetch-depth: 1
+2025-11-17T07:05:12.8882008Z   fetch-tags: false
+2025-11-17T07:05:12.8882776Z   show-progress: true
+2025-11-17T07:05:12.8883571Z   lfs: false
+2025-11-17T07:05:12.8884289Z   submodules: false
+2025-11-17T07:05:12.8885245Z   set-safe-directory: true
+2025-11-17T07:05:12.8886534Z ##[endgroup]
+2025-11-17T07:05:12.9992143Z Syncing repository: yamius/ONDA1
+2025-11-17T07:05:12.9994610Z ##[group]Getting Git version info
+2025-11-17T07:05:12.9995948Z Working directory is '/home/runner/work/ONDA1/ONDA1'
+2025-11-17T07:05:12.9997737Z [command]/usr/bin/git version
+2025-11-17T07:05:13.0064362Z git version 2.51.2
+2025-11-17T07:05:13.0092074Z ##[endgroup]
+2025-11-17T07:05:13.0107461Z Temporarily overriding HOME='/home/runner/work/_temp/ac4ea832-585d-4a6a-843e-d143878fcb81' before making global git config changes
+2025-11-17T07:05:13.0110411Z Adding repository directory to the temporary git global config as a safe directory
+2025-11-17T07:05:13.0120214Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ONDA1/ONDA1
+2025-11-17T07:05:13.0157846Z Deleting the contents of '/home/runner/work/ONDA1/ONDA1'
+2025-11-17T07:05:13.0161865Z ##[group]Initializing the repository
+2025-11-17T07:05:13.0165829Z [command]/usr/bin/git init /home/runner/work/ONDA1/ONDA1
+2025-11-17T07:05:13.0286618Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-11-17T07:05:13.0289889Z hint: is subject to change. To configure the initial branch name to use in all
+2025-11-17T07:05:13.0292967Z hint: of your new repositories, which will suppress this warning, call:
+2025-11-17T07:05:13.0295447Z hint:
+2025-11-17T07:05:13.0297072Z hint: 	git config --global init.defaultBranch <name>
+2025-11-17T07:05:13.0298911Z hint:
+2025-11-17T07:05:13.0300610Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-11-17T07:05:13.0303216Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-11-17T07:05:13.0305723Z hint:
+2025-11-17T07:05:13.0307060Z hint: 	git branch -m <name>
+2025-11-17T07:05:13.0308642Z hint:
+2025-11-17T07:05:13.0310496Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2025-11-17T07:05:13.0313696Z Initialized empty Git repository in /home/runner/work/ONDA1/ONDA1/.git/
+2025-11-17T07:05:13.0318994Z [command]/usr/bin/git remote add origin https://github.com/yamius/ONDA1
+2025-11-17T07:05:13.0349216Z ##[endgroup]
+2025-11-17T07:05:13.0351630Z ##[group]Disabling automatic garbage collection
+2025-11-17T07:05:13.0353978Z [command]/usr/bin/git config --local gc.auto 0
+2025-11-17T07:05:13.0386743Z ##[endgroup]
+2025-11-17T07:05:13.0388997Z ##[group]Setting up auth
+2025-11-17T07:05:13.0394599Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-11-17T07:05:13.0427342Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-11-17T07:05:13.0820872Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-11-17T07:05:13.0856200Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-11-17T07:05:13.1119063Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-11-17T07:05:13.1178244Z ##[endgroup]
+2025-11-17T07:05:13.1184098Z ##[group]Fetching the repository
+2025-11-17T07:05:13.1188531Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +a6c4569ac68bfbfd1edfdaab2c75abd12cbb3c60:refs/remotes/origin/main
+2025-11-17T07:05:17.5442505Z From https://github.com/yamius/ONDA1
+2025-11-17T07:05:17.5443758Z  * [new ref]         a6c4569ac68bfbfd1edfdaab2c75abd12cbb3c60 -> origin/main
+2025-11-17T07:05:17.5505578Z ##[endgroup]
+2025-11-17T07:05:17.5506301Z ##[group]Determining the checkout info
+2025-11-17T07:05:17.5507089Z ##[endgroup]
+2025-11-17T07:05:17.5507604Z [command]/usr/bin/git sparse-checkout disable
+2025-11-17T07:05:17.5526067Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-11-17T07:05:17.5554121Z ##[group]Checking out the ref
+2025-11-17T07:05:17.5558192Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-11-17T07:05:18.6027790Z Updating files:  65% (128/196)
+2025-11-17T07:05:18.6277747Z Updating files:  66% (130/196)
+2025-11-17T07:05:18.6509869Z Updating files:  67% (132/196)
+2025-11-17T07:05:18.6669063Z Updating files:  68% (134/196)
+2025-11-17T07:05:18.6670224Z Updating files:  69% (136/196)
+2025-11-17T07:05:18.6672056Z Updating files:  70% (138/196)
+2025-11-17T07:05:18.6675251Z Updating files:  71% (140/196)
+2025-11-17T07:05:18.6678647Z Updating files:  72% (142/196)
+2025-11-17T07:05:18.6681418Z Updating files:  73% (144/196)
+2025-11-17T07:05:18.6682277Z Updating files:  74% (146/196)
+2025-11-17T07:05:18.6685321Z Updating files:  75% (147/196)
+2025-11-17T07:05:18.6688345Z Updating files:  76% (149/196)
+2025-11-17T07:05:18.6688841Z Updating files:  77% (151/196)
+2025-11-17T07:05:18.6693172Z Updating files:  78% (153/196)
+2025-11-17T07:05:18.6695734Z Updating files:  79% (155/196)
+2025-11-17T07:05:18.6696180Z Updating files:  80% (157/196)
+2025-11-17T07:05:18.6696601Z Updating files:  81% (159/196)
+2025-11-17T07:05:18.6699848Z Updating files:  82% (161/196)
+2025-11-17T07:05:18.6700610Z Updating files:  83% (163/196)
+2025-11-17T07:05:18.6701135Z Updating files:  84% (165/196)
+2025-11-17T07:05:18.6705861Z Updating files:  85% (167/196)
+2025-11-17T07:05:18.6707801Z Updating files:  86% (169/196)
+2025-11-17T07:05:18.6709611Z Updating files:  87% (171/196)
+2025-11-17T07:05:18.6712293Z Updating files:  88% (173/196)
+2025-11-17T07:05:18.6713179Z Updating files:  89% (175/196)
+2025-11-17T07:05:18.6714532Z Updating files:  90% (177/196)
+2025-11-17T07:05:18.6715562Z Updating files:  91% (179/196)
+2025-11-17T07:05:18.6716600Z Updating files:  92% (181/196)
+2025-11-17T07:05:18.6717182Z Updating files:  93% (183/196)
+2025-11-17T07:05:18.6718908Z Updating files:  94% (185/196)
+2025-11-17T07:05:18.6719983Z Updating files:  95% (187/196)
+2025-11-17T07:05:18.6720836Z Updating files:  96% (189/196)
+2025-11-17T07:05:18.6722003Z Updating files:  97% (191/196)
+2025-11-17T07:05:18.6723435Z Updating files:  98% (193/196)
+2025-11-17T07:05:18.6723774Z Updating files:  99% (195/196)
+2025-11-17T07:05:18.6724025Z Updating files: 100% (196/196)
+2025-11-17T07:05:18.6724290Z Updating files: 100% (196/196), done.
+2025-11-17T07:05:18.6739530Z Switched to a new branch 'main'
+2025-11-17T07:05:18.6742588Z branch 'main' set up to track 'origin/main'.
+2025-11-17T07:05:18.6827239Z ##[endgroup]
+2025-11-17T07:05:18.6865277Z [command]/usr/bin/git log -1 --format=%H
+2025-11-17T07:05:18.6886789Z a6c4569ac68bfbfd1edfdaab2c75abd12cbb3c60
+2025-11-17T07:05:18.7109965Z ##[group]Run actions/setup-node@v4
+2025-11-17T07:05:18.7110242Z with:
+2025-11-17T07:05:18.7110433Z   node-version: 20
+2025-11-17T07:05:18.7110619Z   cache: npm
+2025-11-17T07:05:18.7110811Z   always-auth: false
+2025-11-17T07:05:18.7111015Z   check-latest: false
+2025-11-17T07:05:18.7111358Z   token: ***
+2025-11-17T07:05:18.7111567Z ##[endgroup]
+2025-11-17T07:05:18.8883513Z Found in cache @ /opt/hostedtoolcache/node/20.19.5/x64
+2025-11-17T07:05:18.8889988Z ##[group]Environment details
+2025-11-17T07:05:21.3039428Z node: v20.19.5
+2025-11-17T07:05:21.3039771Z npm: 10.8.2
+2025-11-17T07:05:21.3039953Z yarn: 1.22.22
+2025-11-17T07:05:21.3040967Z ##[endgroup]
+2025-11-17T07:05:21.3063469Z [command]/opt/hostedtoolcache/node/20.19.5/x64/bin/npm config get cache
+2025-11-17T07:05:21.5878307Z /home/runner/.npm
+2025-11-17T07:05:21.7268393Z npm cache is not found
+2025-11-17T07:05:21.7415639Z ##[group]Run npm ci
+2025-11-17T07:05:21.7415930Z [36;1mnpm ci[0m
+2025-11-17T07:05:21.7522787Z shell: /usr/bin/bash -e {0}
+2025-11-17T07:05:21.7523056Z ##[endgroup]
+2025-11-17T07:05:30.9671048Z 
+2025-11-17T07:05:30.9680419Z added 404 packages, and audited 405 packages in 9s
+2025-11-17T07:05:30.9680843Z 
+2025-11-17T07:05:30.9681105Z 83 packages are looking for funding
+2025-11-17T07:05:30.9684205Z   run `npm fund` for details
+2025-11-17T07:05:30.9901543Z 
+2025-11-17T07:05:30.9903757Z 7 vulnerabilities (2 low, 4 moderate, 1 high)
+2025-11-17T07:05:30.9906000Z 
+2025-11-17T07:05:30.9906326Z To address all issues, run:
+2025-11-17T07:05:30.9906794Z   npm audit fix
+2025-11-17T07:05:30.9907000Z 
+2025-11-17T07:05:30.9907214Z Run `npm audit` for details.
+2025-11-17T07:05:31.0166867Z ##[group]Run npm run build
+2025-11-17T07:05:31.0167142Z [36;1mnpm run build[0m
+2025-11-17T07:05:31.0201741Z shell: /usr/bin/bash -e {0}
+2025-11-17T07:05:31.0201986Z env:
+2025-11-17T07:05:31.0202162Z   VITE_SUPABASE_URL: 
+2025-11-17T07:05:31.0202387Z   VITE_SUPABASE_ANON_KEY: 
+2025-11-17T07:05:31.0202597Z ##[endgroup]
+2025-11-17T07:05:31.1396184Z 
+2025-11-17T07:05:31.1396879Z > vite-react-typescript-starter@0.0.0 build
+2025-11-17T07:05:31.1397508Z > vite build
+2025-11-17T07:05:31.1397728Z 
+2025-11-17T07:05:31.3390426Z [36mvite v5.4.8 [32mbuilding for production...[36m[39m
+2025-11-17T07:05:31.6087039Z transforming...
+2025-11-17T07:05:31.6506891Z Browserslist: caniuse-lite is outdated. Please run:
+2025-11-17T07:05:31.6507961Z   npx update-browserslist-db@latest
+2025-11-17T07:05:31.6508720Z   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2025-11-17T07:05:34.6006164Z [32m✓[39m 1602 modules transformed.
+2025-11-17T07:05:35.0355546Z rendering chunks...
+2025-11-17T07:05:35.1655708Z computing gzip size...
+2025-11-17T07:05:35.1802913Z [2mdist/[22m[32mindex.html                           [39m[1m[2m  2.33 kB[22m[1m[22m[2m │ gzip:   1.22 kB[22m
+2025-11-17T07:05:35.1804462Z [2mdist/[22m[2massets/[22m[35mindex-B1T1TaM6.css            [39m[1m[2m 63.42 kB[22m[1m[22m[2m │ gzip:  10.03 kB[22m
+2025-11-17T07:05:35.1806166Z [2mdist/[22m[2massets/[22m[36mbrowser-ponyfill-DeocDBlt.js  [39m[1m[2m 10.26 kB[22m[1m[22m[2m │ gzip:   3.50 kB[22m
+2025-11-17T07:05:35.1807054Z [33m
+2025-11-17T07:05:35.1807697Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2025-11-17T07:05:35.1808442Z - Using dynamic import() to code-split the application
+2025-11-17T07:05:35.1809806Z - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-11-17T07:05:35.1811272Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+2025-11-17T07:05:35.1812535Z [2mdist/[22m[2massets/[22m[36mindex-BH1bgvsR.js             [39m[1m[33m551.53 kB[39m[22m[2m │ gzip: 147.70 kB[22m
+2025-11-17T07:05:35.1813310Z [32m✓ built in 3.82s[39m
+2025-11-17T07:05:35.2301434Z ##[group]Run # Use the existing prepare-android.sh script to ensure parity with local builds
+2025-11-17T07:05:35.2302100Z [36;1m# Use the existing prepare-android.sh script to ensure parity with local builds[0m
+2025-11-17T07:05:35.2302533Z [36;1mchmod +x scripts/prepare-android.sh[0m
+2025-11-17T07:05:35.2302811Z [36;1m./scripts/prepare-android.sh[0m
+2025-11-17T07:05:35.2336250Z shell: /usr/bin/bash -e {0}
+2025-11-17T07:05:35.2336502Z ##[endgroup]
+2025-11-17T07:05:35.2450821Z 🚀 ONDA: Подготовка Android APK
+2025-11-17T07:05:35.2451356Z ================================
+2025-11-17T07:05:35.2468291Z [1;33m📂 Корневая директория:[0m /home/runner/work/ONDA1/ONDA1
+2025-11-17T07:05:35.2468669Z 
+2025-11-17T07:05:35.2469089Z [1;33m📦 Шаг 1: Сборка веб-приложения[0m
+2025-11-17T07:05:35.2469589Z    Запуск: npm run build
+2025-11-17T07:05:35.3520979Z 
+2025-11-17T07:05:35.3521682Z > vite-react-typescript-starter@0.0.0 build
+2025-11-17T07:05:35.3522124Z > vite build
+2025-11-17T07:05:35.3522339Z 
+2025-11-17T07:05:35.5455792Z [36mvite v5.4.8 [32mbuilding for production...[36m[39m
+2025-11-17T07:05:35.7963929Z transforming...
+2025-11-17T07:05:35.8342807Z Browserslist: caniuse-lite is outdated. Please run:
+2025-11-17T07:05:35.8343555Z   npx update-browserslist-db@latest
+2025-11-17T07:05:35.8344580Z   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2025-11-17T07:05:38.7879942Z [32m✓[39m 1602 modules transformed.
+2025-11-17T07:05:39.1893811Z rendering chunks...
+2025-11-17T07:05:39.3252395Z computing gzip size...
+2025-11-17T07:05:39.3400684Z [2mdist/[22m[32mindex.html                           [39m[1m[2m  2.33 kB[22m[1m[22m[2m │ gzip:   1.22 kB[22m
+2025-11-17T07:05:39.3402083Z [2mdist/[22m[2massets/[22m[35mindex-B1T1TaM6.css            [39m[1m[2m 63.42 kB[22m[1m[22m[2m │ gzip:  10.03 kB[22m
+2025-11-17T07:05:39.3403622Z [2mdist/[22m[2massets/[22m[36mbrowser-ponyfill-0CqA2EaK.js  [39m[1m[2m 10.26 kB[22m[1m[22m[2m │ gzip:   3.50 kB[22m
+2025-11-17T07:05:39.3405254Z [2mdist/[22m[2massets/[22m[36mindex-vErnr4VT.js             [39m[1m[33m551.54 kB[39m[22m[2m │ gzip: 147.71 kB[22m
+2025-11-17T07:05:39.3406068Z [33m
+2025-11-17T07:05:39.3406645Z (!) Some chunks are larger than 500 kB after minification. Consider:
+2025-11-17T07:05:39.3407384Z - Using dynamic import() to code-split the application
+2025-11-17T07:05:39.3408224Z - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+2025-11-17T07:05:39.3410007Z - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+2025-11-17T07:05:39.3410756Z [32m✓ built in 3.77s[39m
+2025-11-17T07:05:39.3878625Z [0;32m✅ Веб-приложение собрано[0m
+2025-11-17T07:05:39.3878987Z 
+2025-11-17T07:05:39.3879370Z [1;33m📁 Шаг 2: Создание assets директории[0m
+2025-11-17T07:05:39.3879955Z    Создание новой директории...
+2025-11-17T07:05:39.3893711Z [0;32m✅ Assets директория готова[0m
+2025-11-17T07:05:39.3894092Z 
+2025-11-17T07:05:39.3894699Z [1;33m📋 Шаг 3: Копирование веб-файлов (БЕЗ аудио)[0m
+2025-11-17T07:05:39.3895794Z    Источник: /home/runner/work/ONDA1/ONDA1/dist
+2025-11-17T07:05:39.3896644Z    Назначение: /home/runner/work/ONDA1/ONDA1/android-webview/app/src/main/assets
+2025-11-17T07:05:39.5597867Z 
+2025-11-17T07:05:39.5599049Z [1;33m🗑️  Удаление аудио файлов (используется CDN)[0m
+2025-11-17T07:05:39.5693723Z    ✓ Удалено: practices p1/
+2025-11-17T07:05:39.6139264Z    ✓ Удалено: adaptive-practices/
+2025-11-17T07:05:39.6139960Z [0;32m✅ Аудио файлы исключены (будут загружаться из CDN)[0m
+2025-11-17T07:05:39.6140336Z 
+2025-11-17T07:05:39.6140590Z [1;33m🔍 Шаг 4: Проверка скопированных файлов[0m
+2025-11-17T07:05:39.6141228Z    [0;32m✓[0m index.html
+2025-11-17T07:05:39.6141625Z    [0;32m✓[0m assets
+2025-11-17T07:05:39.6142000Z    [0;32m✓[0m locales
+2025-11-17T07:05:39.6277247Z 
+2025-11-17T07:05:39.6277831Z [0;32m📊 Размер assets: 988K[0m
+2025-11-17T07:05:39.6278156Z 
+2025-11-17T07:05:39.6278876Z ================================
+2025-11-17T07:05:39.6279573Z [0;32m✅ Подготовка завершена![0m
+2025-11-17T07:05:39.6280806Z 
+2025-11-17T07:05:39.6281123Z 📱 Следующие шаги:
+2025-11-17T07:05:39.6281690Z    1. Откройте Android Studio
+2025-11-17T07:05:39.6282339Z    2. Откройте проект: android-webview/
+2025-11-17T07:05:39.6283178Z    3. Соберите APK: Build → Generate Signed Bundle/APK
+2025-11-17T07:05:39.6283636Z 
+2025-11-17T07:05:39.6283949Z 💡 Подробная инструкция:
+2025-11-17T07:05:39.6284432Z    docs/BUILD_APK.md
+2025-11-17T07:05:39.6284747Z 
+2025-11-17T07:05:39.6361131Z ##[group]Run actions/setup-java@v4
+2025-11-17T07:05:39.6361386Z with:
+2025-11-17T07:05:39.6361568Z   distribution: temurin
+2025-11-17T07:05:39.6361764Z   java-version: 17
+2025-11-17T07:05:39.6361944Z   cache: gradle
+2025-11-17T07:05:39.6362123Z   java-package: jdk
+2025-11-17T07:05:39.6362320Z   check-latest: false
+2025-11-17T07:05:39.6362521Z   server-id: github
+2025-11-17T07:05:39.6362715Z   server-username: GITHUB_ACTOR
+2025-11-17T07:05:39.6362950Z   server-password: GITHUB_TOKEN
+2025-11-17T07:05:39.6363184Z   overwrite-settings: true
+2025-11-17T07:05:39.6363396Z   job-status: success
+2025-11-17T07:05:39.6363726Z   token: ***
+2025-11-17T07:05:39.6363911Z ##[endgroup]
+2025-11-17T07:05:39.8321383Z ##[group]Installed distributions
+2025-11-17T07:05:39.8384889Z Resolved Java 17.0.17+10 from tool-cache
+2025-11-17T07:05:39.8385888Z Setting Java 17.0.17+10 as the default
+2025-11-17T07:05:39.8400485Z Creating toolchains.xml for JDK version 17 from temurin
+2025-11-17T07:05:39.8477677Z Writing to /home/runner/.m2/toolchains.xml
+2025-11-17T07:05:39.8478044Z 
+2025-11-17T07:05:39.8478295Z Java configuration:
+2025-11-17T07:05:39.8479038Z   Distribution: temurin
+2025-11-17T07:05:39.8479435Z   Version: 17.0.17+10
+2025-11-17T07:05:39.8481081Z   Path: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.17-10/x64
+2025-11-17T07:05:39.8482143Z 
+2025-11-17T07:05:39.8482828Z ##[endgroup]
+2025-11-17T07:05:39.8486471Z Creating settings.xml with server-id: github
+2025-11-17T07:05:39.8503335Z Writing to /home/runner/.m2/settings.xml
+2025-11-17T07:05:41.4543064Z gradle cache is not found
+2025-11-17T07:05:41.4706856Z ##[group]Run chmod +x android-webview/gradlew
+2025-11-17T07:05:41.4707198Z [36;1mchmod +x android-webview/gradlew[0m
+2025-11-17T07:05:41.4740082Z shell: /usr/bin/bash -e {0}
+2025-11-17T07:05:41.4740313Z env:
+2025-11-17T07:05:41.4740611Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.17-10/x64
+2025-11-17T07:05:41.4741089Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.17-10/x64
+2025-11-17T07:05:41.4741617Z ##[endgroup]
+2025-11-17T07:05:41.4871180Z ##[group]Run if [ -n "" ]; then
+2025-11-17T07:05:41.4871477Z [36;1mif [ -n "" ]; then[0m
+2025-11-17T07:05:41.4871766Z [36;1m  echo "Attempting to decode existing keystore..."[0m
+2025-11-17T07:05:41.4872156Z [36;1m  echo "" | base64 -d > android-webview/app/onda-release.keystore[0m
+2025-11-17T07:05:41.4872473Z [36;1m  [0m
+2025-11-17T07:05:41.4872658Z [36;1m  # Verify the keystore[0m
+2025-11-17T07:05:41.4873090Z [36;1m  if ! keytool -list -keystore android-webview/app/onda-release.keystore -storepass  &>/dev/null; then[0m
+2025-11-17T07:05:41.4873663Z [36;1m    echo "⚠️ Existing keystore is incompatible. Generating new one..."[0m
+2025-11-17T07:05:41.4874061Z [36;1m    rm android-webview/app/onda-release.keystore[0m
+2025-11-17T07:05:41.4874346Z [36;1m  else[0m
+2025-11-17T07:05:41.4874557Z [36;1m    echo "✅ Existing keystore is valid"[0m
+2025-11-17T07:05:41.4874806Z [36;1m    exit 0[0m
+2025-11-17T07:05:41.4875346Z [36;1m  fi[0m
+2025-11-17T07:05:41.4875553Z [36;1mfi[0m
+2025-11-17T07:05:41.4875719Z [36;1m[0m
+2025-11-17T07:05:41.4875974Z [36;1m# Generate new keystore if none exists or existing one failed[0m
+2025-11-17T07:05:41.4876344Z [36;1mecho "🔑 Generating new keystore with keytool..."[0m
+2025-11-17T07:05:41.4877192Z [36;1mkeytool -genkeypair -v -keystore android-webview/app/onda-release.keystore -alias  -keyalg RSA -keysize 2048 -validity 10000 -storepass  -keypass  -dname "CN=ONDA, OU=MindfulTech, O=ONDA, L=Moscow, ST=Moscow, C=RU"[0m
+2025-11-17T07:05:41.4877969Z [36;1m[0m
+2025-11-17T07:05:41.4878144Z [36;1m# Verify new keystore[0m
+2025-11-17T07:05:41.4878522Z [36;1mkeytool -list -v -keystore android-webview/app/onda-release.keystore -storepass [0m
+2025-11-17T07:05:41.4878896Z [36;1m[0m
+2025-11-17T07:05:41.4879087Z [36;1m# Create base64 for future reference[0m
+2025-11-17T07:05:41.4879498Z [36;1mbase64 -w 0 android-webview/app/onda-release.keystore > keystore-new.base64.txt[0m
+2025-11-17T07:05:41.4879887Z [36;1mecho ""[0m
+2025-11-17T07:05:41.4880142Z [36;1mecho "::notice::✨ New keystore generated successfully!"[0m
+2025-11-17T07:05:41.4880616Z [36;1mecho "::notice::📋 Update KEYSTORE_BASE64 secret with contents from artifact 'keystore-base64'"[0m
+2025-11-17T07:05:41.4910153Z shell: /usr/bin/bash -e {0}
+2025-11-17T07:05:41.4910382Z env:
+2025-11-17T07:05:41.4910673Z   JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.17-10/x64
+2025-11-17T07:05:41.4911142Z   JAVA_HOME_17_X64: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.17-10/x64
+2025-11-17T07:05:41.4911485Z ##[endgroup]
+2025-11-17T07:05:41.4963300Z 🔑 Generating new keystore with keytool...
+2025-11-17T07:05:42.0545196Z Illegal option:  RSA
+2025-11-17T07:05:42.0545724Z keytool -genkeypair [OPTION]...
+2025-11-17T07:05:42.0545996Z 
+2025-11-17T07:05:42.0546155Z Generates a key pair
+2025-11-17T07:05:42.0546371Z 
+2025-11-17T07:05:42.0548105Z Options:
+2025-11-17T07:05:42.0548546Z 
+2025-11-17T07:05:42.0623348Z  -alias <alias>          alias name of the entry to process
+2025-11-17T07:05:42.0626855Z  -keyalg <alg>           key algorithm name
+2025-11-17T07:05:42.0628834Z  -keysize <size>         key bit size
+2025-11-17T07:05:42.0631141Z  -groupname <name>       Group name. For example, an Elliptic Curve name.
+2025-11-17T07:05:42.0637378Z  -sigalg <alg>           signature algorithm name
+2025-11-17T07:05:42.0637955Z  -dname <name>           distinguished name
+2025-11-17T07:05:42.0638551Z  -startdate <date>       certificate validity start date/time
+2025-11-17T07:05:42.0640370Z  -ext <value>            X.509 extension
+2025-11-17T07:05:42.0642648Z  -validity <days>        validity number of days
+2025-11-17T07:05:42.0646209Z  -keypass <arg>          key password
+2025-11-17T07:05:42.0647283Z  -keystore <keystore>    keystore name
+2025-11-17T07:05:42.0649698Z  -signer <alias>         signer alias
+2025-11-17T07:05:42.0650442Z  -signerkeypass <arg>    signer key password
+2025-11-17T07:05:42.0652544Z  -storepass <arg>        keystore password
+2025-11-17T07:05:42.0654352Z  -storetype <type>       keystore type
+2025-11-17T07:05:42.0655613Z  -providername <name>    provider name
+2025-11-17T07:05:42.0657858Z  -addprovider <name>     add security provider by name (e.g. SunPKCS11)
+2025-11-17T07:05:42.0659391Z    [-providerarg <arg>]    configure argument for -addprovider
+2025-11-17T07:05:42.0663975Z  -providerclass <class>  add security provider by fully-qualified class name
+2025-11-17T07:05:42.0673044Z    [-providerarg <arg>]    configure argument for -providerclass
+2025-11-17T07:05:42.0676201Z  -providerpath <list>    provider classpath
+2025-11-17T07:05:42.0676791Z  -v                      verbose output
+2025-11-17T07:05:42.0677407Z  -protected              password through protected mechanism
+2025-11-17T07:05:42.0677820Z 
+2025-11-17T07:05:42.0678182Z Use "keytool -?, -h, or --help" for this help message
+2025-11-17T07:05:42.0843684Z ##[error]Process completed with exit code 1.
+2025-11-17T07:05:42.0979315Z Post job cleanup.
+2025-11-17T07:05:42.2724029Z Post job cleanup.
+2025-11-17T07:05:42.3672357Z [command]/usr/bin/git version
+2025-11-17T07:05:42.3713158Z git version 2.51.2
+2025-11-17T07:05:42.3758764Z Temporarily overriding HOME='/home/runner/work/_temp/5e430671-2b06-4514-87a6-fc79a5aa6d02' before making global git config changes
+2025-11-17T07:05:42.3760179Z Adding repository directory to the temporary git global config as a safe directory
+2025-11-17T07:05:42.3764620Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ONDA1/ONDA1
+2025-11-17T07:05:42.3809161Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-11-17T07:05:42.3843691Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-11-17T07:05:42.4078862Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-11-17T07:05:42.4100181Z http.https://github.com/.extraheader
+2025-11-17T07:05:42.4114473Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2025-11-17T07:05:42.4145926Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-11-17T07:05:42.4502630Z Cleaning up orphan processes

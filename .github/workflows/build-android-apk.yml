@@ -84,10 +84,19 @@ jobs:
           
           # Generate new keystore if none exists or existing one failed
           echo "🔑 Generating new keystore with keytool..."
-          keytool -genkeypair -v -keystore android-webview/app/onda-release.keystore -alias ${{ secrets.KEY_ALIAS }} -keyalg RSA -keysize 2048 -validity 10000 -storepass ${{ secrets.KEYSTORE_PASSWORD }} -keypass ${{ secrets.KEY_PASSWORD }} -dname "CN=ONDA, OU=MindfulTech, O=ONDA, L=Moscow, ST=Moscow, C=RU"
+          ALIAS="${{ secrets.KEY_ALIAS }}"
+          STORE_PASS="${{ secrets.KEYSTORE_PASSWORD }}"
+          KEY_PASS="${{ secrets.KEY_PASSWORD }}"
+          
+          # Use defaults if secrets are empty
+          : ${ALIAS:=onda}
+          : ${STORE_PASS:=onda2024secure}
+          : ${KEY_PASS:=onda2024secure}
+          
+          keytool -genkeypair -v -keystore android-webview/app/onda-release.keystore -alias "${ALIAS}" -keyalg RSA -keysize 2048 -validity 10000 -storepass "${STORE_PASS}" -keypass "${KEY_PASS}" -dname "CN=ONDA, OU=MindfulTech, O=ONDA, L=Moscow, ST=Moscow, C=RU"
           
           # Verify new keystore
-          keytool -list -v -keystore android-webview/app/onda-release.keystore -storepass ${{ secrets.KEYSTORE_PASSWORD }}
+          keytool -list -v -keystore android-webview/app/onda-release.keystore -storepass "${STORE_PASS}"
           
           # Create base64 for future reference
           base64 -w 0 android-webview/app/onda-release.keystore > keystore-new.base64.txt
@@ -104,8 +113,8 @@ jobs:
       - name: Build Release APK
         if: github.event.inputs.build_type == 'release' || github.ref == 'refs/heads/main'
         env:
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD || 'onda2024secure' }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD || 'onda2024secure' }}
         run: |
           cd android-webview
           ./gradlew assembleRelease --stacktrace
