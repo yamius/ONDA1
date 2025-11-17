@@ -78,8 +78,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Initialize Health Connect
-        healthConnectClient = HealthConnectClient.getOrCreate(this)
+        try {
+            // Initialize Health Connect
+            healthConnectClient = HealthConnectClient.getOrCreate(this)
+        } catch (e: Exception) {
+            println("Health Connect not available: ${e.message}")
+            // Continue without Health Connect
+        }
 
         // Set up WebView
         webView = WebView(this)
@@ -116,6 +121,15 @@ class MainActivity : AppCompatActivity() {
                 super.onPageFinished(view, url)
                 // Notify web app that native bridge is ready
                 webView.evaluateJavascript("window.dispatchEvent(new Event('native-ready'))", null)
+            }
+
+            override fun onReceivedError(
+                view: WebView?,
+                request: WebResourceRequest?,
+                error: WebResourceError?
+            ) {
+                super.onReceivedError(view, request, error)
+                println("WebView Error: ${error?.description} (${error?.errorCode})")
             }
         }
 
@@ -370,10 +384,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         if (webView.canGoBack()) {
             webView.goBack()
         } else {
+            @Suppress("DEPRECATION")
             super.onBackPressed()
         }
     }
