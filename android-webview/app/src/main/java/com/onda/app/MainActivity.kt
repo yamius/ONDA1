@@ -260,7 +260,7 @@ class MainActivity : AppCompatActivity() {
                 val response = healthConnectClient?.readRecords(
                     ReadRecordsRequest(OxygenSaturationRecord::class, timeRange)
                 )
-                response?.records?.lastOrNull()?.percentage?.value
+                response?.records?.lastOrNull()?.percentage?.value?.toDouble()
             } catch (e: Exception) {
                 null
             }
@@ -286,7 +286,7 @@ class MainActivity : AppCompatActivity() {
                 val response = healthConnectClient?.readRecords(
                     ReadRecordsRequest(Vo2MaxRecord::class, timeRange)
                 )
-                response?.records?.lastOrNull()?.vo2MillilitersPerMinuteKilogram?.value
+                response?.records?.lastOrNull()?.vo2MillilitersPerMinuteKilogram
             } catch (e: Exception) {
                 null
             }
@@ -325,7 +325,7 @@ class MainActivity : AppCompatActivity() {
                 val response = healthConnectClient?.readRecords(
                     ReadRecordsRequest(BodyFatRecord::class, timeRange)
                 )
-                response?.records?.lastOrNull()?.percentage?.value
+                response?.records?.lastOrNull()?.percentage?.value?.toDouble()
             } catch (e: Exception) {
                 null
             }
