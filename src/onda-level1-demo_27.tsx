@@ -6,7 +6,7 @@ import { AuthModal } from './components/AuthModal';
 import { UserProfile } from './components/UserProfile';
 import { SettingsModal } from './components/SettingsModal';
 import { OndShopModal } from './components/OndShopModal';
-import { PracticeAudioPlayer } from './components/PracticeAudioPlayer';
+import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { EmotionalCheckModal } from './components/EmotionalCheckModal';
 import { InfoModal } from './components/InfoModal';
 import type { UserProfile as UserProfileType } from './lib/supabase';
@@ -1545,9 +1545,9 @@ const OndaLevel1 = () => {
     return (
       <div className={`min-h-screen bg-gradient-to-br ${activePractice.colors} text-white relative overflow-hidden transition-all duration-1000`}>
         {activePractice.id === 'p1-1' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-1_Breath of Life/p1-1_Breath of Life-1.mp3"
+            audioPath="p1-1_Breath of Life/p1-1_Breath of Life-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1559,9 +1559,9 @@ const OndaLevel1 = () => {
           />
         )}
         {activePractice.id === 'p1-2' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-2_Sense of Being/p1-2_Sense of Being-1.mp3"
+            audioPath="p1-2_Sense of Being/p1-2_Sense of Being-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1573,9 +1573,9 @@ const OndaLevel1 = () => {
           />
         )}
         {activePractice.id === 'p1-3' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-3_Warm Pulse/p1-3_Warm Pulse-1.mp3"
+            audioPath="p1-3_Warm Pulse/p1-3_Warm Pulse-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1587,9 +1587,9 @@ const OndaLevel1 = () => {
           />
         )}
         {activePractice.id === 'p1-4' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-4_Still Wave/p1-4_Still Wave-1.mp3"
+            audioPath="p1-4_Still Wave/p1-4_Still Wave-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1601,9 +1601,9 @@ const OndaLevel1 = () => {
           />
         )}
         {activePractice.id === 'p1-5' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-5_Inner Listening/p1-5_Inner Listening-1.mp3"
+            audioPath="p1-5_Inner Listening/p1-5_Inner Listening-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1615,9 +1615,9 @@ const OndaLevel1 = () => {
           />
         )}
         {activePractice.id === 'p1-6' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-6_First Light/p1-6_First Light-1.mp3"
+            audioPath="p1-6_First Light/p1-6_First Light-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1629,9 +1629,9 @@ const OndaLevel1 = () => {
           />
         )}
         {activePractice.id === 'p1-7' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-7_Liquid Presence/p1-7_Liquid Presence-1.mp3"
+            audioPath="p1-7_Liquid Presence/p1-7_Liquid Presence-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1643,9 +1643,9 @@ const OndaLevel1 = () => {
           />
         )}
         {activePractice.id === 'p1-8' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-8_Breath Count/p1-8_Breath Count-1.mp3"
+            audioPath="p1-8_Breath Count/p1-8_Breath Count-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1657,9 +1657,9 @@ const OndaLevel1 = () => {
           />
         )}
         {activePractice.id === 'p1-9' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-9_Point of Stillness/p1-9_Point of Stillness-1.mp3"
+            audioPath="p1-9_Point of Stillness/p1-9_Point of Stillness-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1671,9 +1671,9 @@ const OndaLevel1 = () => {
           />
         )}
         {activePractice.id === 'p1-10' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-10_I Am Silence/p1-10_I Am Silence-1.mp3"
+            audioPath="p1-10_I Am Silence/p1-10_I Am Silence-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1685,9 +1685,9 @@ const OndaLevel1 = () => {
           />
         )}
         {activePractice.id === 'p1-11' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-11_Ground Flow/p1-11_Ground Flow-1.mp3"
+            audioPath="p1-11_Ground Flow/p1-11_Ground Flow-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1699,9 +1699,9 @@ const OndaLevel1 = () => {
           />
         )}
         {activePractice.id === 'p1-12' && (
-          <PracticeAudioPlayer
+          <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioSrc="/practices p1/p1-12_Body Root/p1-12_Body Root-1.mp3"
+            audioPath="p1-12_Body Root/p1-12_Body Root-1.mp3"
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
