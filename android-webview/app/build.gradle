@@ -21,8 +21,18 @@ android {
         buildConfigField "String", "SUPABASE_ANON_KEY", "\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InF3dGRwcHVnZGNndXllYXVteW1jIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzE2MDU2NjEsImV4cCI6MjA0NzE4MTY2MX0.uZTlGNT2VudGMZxR8ALv14TAwKy-zzqL1Nb9o_oLJkg\""
     }
 
+    signingConfigs {
+        release {
+            storeFile file("onda-release.keystore")
+            storePassword System.getenv("KEYSTORE_PASSWORD") ?: "onda2024secure"
+            keyAlias "onda"
+            keyPassword System.getenv("KEY_PASSWORD") ?: "onda2024secure"
+        }
+    }
+
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
