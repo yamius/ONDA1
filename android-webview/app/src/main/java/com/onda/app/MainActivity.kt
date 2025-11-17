@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         // Раздаём файлы из app/src/main/assets/** по HTTPS
         val assetLoader = WebViewAssetLoader.Builder()
             .addPathHandler(
-                "/assets/",
+                "/",
                 WebViewAssetLoader.AssetsPathHandler(this)
             )
             .build()
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
 
         // ВАЖНО: грузим как HTTPS, не file://
         // Это откроет файл app/src/main/assets/index.html
-        webView.loadUrl("https://appassets.androidplatform.net/assets/index.html")
+        webView.loadUrl("https://appassets.androidplatform.net/index.html")
     }
 
     override fun onBackPressed() {
