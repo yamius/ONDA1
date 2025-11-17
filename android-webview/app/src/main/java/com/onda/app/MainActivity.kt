@@ -4,14 +4,24 @@ import android.os.Bundle
 import android.util.Log
 import android.webkit.ConsoleMessage
 import android.webkit.WebChromeClient
+import android.webkit.WebResourceRequest
+import android.webkit.WebResourceResponse
 import android.webkit.WebSettings
 import android.webkit.WebView
-import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import androidx.webkit.WebViewAssetLoader
+import androidx.webkit.WebViewClientCompat
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var webView: WebView
+
+    // Мапим https://appassets.androidplatform.net/assets/... -> app/src/main/assets/...
+    private val assetLoader by lazy {
+        WebViewAssetLoader.Builder()
+            .addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(this))
+            .build()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,17 +34,22 @@ class MainActivity : AppCompatActivity() {
         settings.domStorageEnabled = true
         settings.databaseEnabled = true
 
-        // Доступ к файлам из assets и относительным путям
-        settings.allowFileAccess = true
-        settings.allowContentAccess = true
-        settings.allowFileAccessFromFileURLs = true
-        settings.allowUniversalAccessFromFileURLs = true
-
+        // Через WebViewAssetLoader нам уже не нужны file://-хаки
+        settings.allowFileAccess = false
+        settings.allowContentAccess = false
         settings.cacheMode = WebSettings.LOAD_DEFAULT
 
-        webView.webViewClient = WebViewClient()
+        // Подменяем запросы к appassets.androidplatform.net на локальные assets
+        webView.webViewClient = object : WebViewClientCompat() {
+            override fun shouldInterceptRequest(
+                view: WebView,
+                request: WebResourceRequest
+            ): WebResourceResponse? {
+                return assetLoader.shouldInterceptRequest(request.url)
+            }
+        }
 
-        // Логируем всё, что пишет console.log / ошибки загрузки
+        // Логируем console.log / ошибки
         webView.webChromeClient = object : WebChromeClient() {
             override fun onConsoleMessage(message: ConsoleMessage): Boolean {
                 Log.d(
@@ -45,8 +60,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // Грузим твою сборку Vite из assets
-        webView.loadUrl("file:///android_asset/index.html")
+        // ВАЖНО: грузим не file://, а https://appassets.androidplatform.net
+        webView.loadUrl("https://appassets.androidplatform.net/assets/index.html")
     }
 
     override fun onBackPressed() {
