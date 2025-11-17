@@ -1,5 +1,6 @@
 package com.onda.app
 
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.webkit.ConsoleMessage
@@ -8,20 +9,13 @@ import android.webkit.WebResourceRequest
 import android.webkit.WebResourceResponse
 import android.webkit.WebSettings
 import android.webkit.WebView
+import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import androidx.webkit.WebViewAssetLoader
-import androidx.webkit.WebViewClientCompat
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var webView: WebView
-
-    // Мапим https://appassets.androidplatform.net/assets/... -> app/src/main/assets/...
-    private val assetLoader by lazy {
-        WebViewAssetLoader.Builder()
-            .addPathHandler("/assets/", WebViewAssetLoader.AssetsPathHandler(this))
-            .build()
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,27 +23,42 @@ class MainActivity : AppCompatActivity() {
         webView = WebView(this)
         setContentView(webView)
 
+        // Раздаём файлы из app/src/main/assets/** по HTTPS
+        val assetLoader = WebViewAssetLoader.Builder()
+            .addPathHandler(
+                "/assets/",
+                WebViewAssetLoader.AssetsPathHandler(this)
+            )
+            .build()
+
         val settings = webView.settings
         settings.javaScriptEnabled = true
         settings.domStorageEnabled = true
         settings.databaseEnabled = true
 
-        // Через WebViewAssetLoader нам уже не нужны file://-хаки
+        // file:// больше не нужен — всё через https://appassets.androidplatform.net
         settings.allowFileAccess = false
         settings.allowContentAccess = false
         settings.cacheMode = WebSettings.LOAD_DEFAULT
 
-        // Подменяем запросы к appassets.androidplatform.net на локальные assets
-        webView.webViewClient = object : WebViewClientCompat() {
+        webView.webViewClient = object : WebViewClient() {
             override fun shouldInterceptRequest(
                 view: WebView,
                 request: WebResourceRequest
             ): WebResourceResponse? {
                 return assetLoader.shouldInterceptRequest(request.url)
             }
+
+            @Suppress("OverridingDeprecatedMember")
+            override fun shouldInterceptRequest(
+                view: WebView,
+                url: String
+            ): WebResourceResponse? {
+                return assetLoader.shouldInterceptRequest(Uri.parse(url))
+            }
         }
 
-        // Логируем console.log / ошибки
+        // Логируем всё из console.log
         webView.webChromeClient = object : WebChromeClient() {
             override fun onConsoleMessage(message: ConsoleMessage): Boolean {
                 Log.d(
@@ -60,7 +69,8 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        // ВАЖНО: грузим не file://, а https://appassets.androidplatform.net
+        // ВАЖНО: грузим как HTTPS, не file://
+        // Это откроет файл app/src/main/assets/index.html
         webView.loadUrl("https://appassets.androidplatform.net/assets/index.html")
     }
 
