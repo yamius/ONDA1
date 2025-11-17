@@ -29,7 +29,13 @@ jobs:
   build:
     name: Build APK
     runs-on: ubuntu-latest
-    
+
+    # 👇 Добавили права для этого job-а
+    permissions:
+      contents: write     # нужно для создания релиза и загрузки файлов
+      issues: write       # нужно для комментариев к PR
+      pull-requests: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
