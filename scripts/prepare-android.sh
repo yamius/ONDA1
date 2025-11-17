@@ -23,20 +23,18 @@ AUDIO_DIR_ADAPTIVE="$PROJECT_ROOT/public/adaptive-practices"
 
 echo -e "${YELLOW}📂 Корневая директория:${NC} $PROJECT_ROOT"
 
-# Step 1: Build web application
+# Step 1: Verify dist/ exists (should be pre-built with env vars)
 echo ""
-echo -e "${YELLOW}📦 Шаг 1: Сборка веб-приложения${NC}"
-echo "   Запуск: npm run build"
+echo -e "${YELLOW}📦 Шаг 1: Проверка сборки веб-приложения${NC}"
 
-cd "$PROJECT_ROOT"
-npm run build
-
-if [ $? -ne 0 ]; then
-    echo -e "${RED}❌ Ошибка сборки веб-приложения${NC}"
+if [ ! -d "$DIST_DIR" ] || [ -z "$(ls -A "$DIST_DIR" 2>/dev/null)" ]; then
+    echo -e "${RED}❌ Ошибка: dist/ не найдена или пуста${NC}"
+    echo -e "${YELLOW}💡 Сначала соберите проект с правильными env переменными:${NC}"
+    echo "   VITE_SUPABASE_URL=... VITE_SUPABASE_ANON_KEY=... npm run build"
     exit 1
 fi
 
-echo -e "${GREEN}✅ Веб-приложение собрано${NC}"
+echo -e "${GREEN}✅ Используется существующая сборка из dist/${NC}"
 
 # Step 2: Create assets directory
 echo ""
