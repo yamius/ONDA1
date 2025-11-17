@@ -84,15 +84,7 @@ jobs:
           
           # Generate new keystore if none exists or existing one failed
           echo "🔑 Generating new keystore with keytool..."
-          keytool -genkeypair -v \
-            -keystore android-webview/app/onda-release.keystore \
-            -alias ${{ secrets.KEY_ALIAS }} \
-            -keyalg RSA \
-            -keysize 2048 \
-            -validity 10000 \
-            -storepass ${{ secrets.KEYSTORE_PASSWORD }} \
-            -keypass ${{ secrets.KEY_PASSWORD }} \
-            -dname "CN=ONDA, OU=MindfulTech, O=ONDA, L=Moscow, ST=Moscow, C=RU"
+          keytool -genkeypair -v -keystore android-webview/app/onda-release.keystore -alias ${{ secrets.KEY_ALIAS }} -keyalg RSA -keysize 2048 -validity 10000 -storepass ${{ secrets.KEYSTORE_PASSWORD }} -keypass ${{ secrets.KEY_PASSWORD }} -dname "CN=ONDA, OU=MindfulTech, O=ONDA, L=Moscow, ST=Moscow, C=RU"
           
           # Verify new keystore
           keytool -list -v -keystore android-webview/app/onda-release.keystore -storepass ${{ secrets.KEYSTORE_PASSWORD }}
