@@ -65,10 +65,43 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x android-webview/gradlew
       
-      - name: Decode keystore (Release only)
+      - name: Setup Keystore (Release only)
         if: github.event.inputs.build_type == 'release' || github.ref == 'refs/heads/main'
         run: |
-          echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android-webview/app/onda-release.keystore
+          if [ -n "${{ secrets.KEYSTORE_BASE64 }}" ]; then
+            echo "Attempting to decode existing keystore..."
+            echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 -d > android-webview/app/onda-release.keystore
+            
+            # Verify the keystore
+            if ! keytool -list -keystore android-webview/app/onda-release.keystore -storepass ${{ secrets.KEYSTORE_PASSWORD }} &>/dev/null; then
+              echo "⚠️ Existing keystore is incompatible. Generating new one..."
+              rm android-webview/app/onda-release.keystore
+            else
+              echo "✅ Existing keystore is valid"
+              exit 0
+            fi
+          fi
+          
+          # Generate new keystore if none exists or existing one failed
+          echo "🔑 Generating new keystore with keytool..."
+          keytool -genkeypair -v \
+            -keystore android-webview/app/onda-release.keystore \
+            -alias ${{ secrets.KEY_ALIAS }} \
+            -keyalg RSA \
+            -keysize 2048 \
+            -validity 10000 \
+            -storepass ${{ secrets.KEYSTORE_PASSWORD }} \
+            -keypass ${{ secrets.KEY_PASSWORD }} \
+            -dname "CN=ONDA, OU=MindfulTech, O=ONDA, L=Moscow, ST=Moscow, C=RU"
+          
+          # Verify new keystore
+          keytool -list -v -keystore android-webview/app/onda-release.keystore -storepass ${{ secrets.KEYSTORE_PASSWORD }}
+          
+          # Create base64 for future reference
+          base64 -w 0 android-webview/app/onda-release.keystore > keystore-new.base64.txt
+          echo ""
+          echo "::notice::✨ New keystore generated successfully!"
+          echo "::notice::📋 Update KEYSTORE_BASE64 secret with contents from artifact 'keystore-base64'"
       
       - name: Build Debug APK
         if: github.event.inputs.build_type == 'debug' || (github.event.inputs.build_type == '' && github.ref != 'refs/heads/main')
@@ -111,6 +144,14 @@ jobs:
           name: onda-${{ steps.apk_info.outputs.build_type }}-${{ github.run_number }}
           path: ${{ steps.apk_info.outputs.apk_path }}
           retention-days: 30
+      
+      - name: Upload New Keystore Base64 (if generated)
+        if: success() && hashFiles('keystore-new.base64.txt') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: keystore-base64-new
+          path: keystore-new.base64.txt
+          retention-days: 90
       
       - name: Comment PR with APK info
         if: github.event_name == 'pull_request'
