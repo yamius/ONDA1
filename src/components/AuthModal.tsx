@@ -47,13 +47,35 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
 
   const handleGoogleSignIn = async () => {
     try {
-      const { error } = await supabase.auth.signInWithOAuth({
+      console.log('[Auth] Starting Google OAuth...');
+      
+      // Получаем OAuth URL от Supabase
+      const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: window.location.origin,
+          redirectTo: 'com.onda.app://callback', // Deep link для возврата в приложение
+          skipBrowserRedirect: true, // Получаем URL вместо автоматического редиректа
         },
       });
+      
       if (error) throw error;
+      
+      const oauthUrl = data?.url;
+      if (!oauthUrl) {
+        throw new Error('No OAuth URL returned from Supabase');
+      }
+      
+      console.log('[Auth] OAuth URL:', oauthUrl);
+      
+      // Проверяем, запущено ли приложение в Android WebView
+      if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
+        console.log('[Auth] Opening OAuth in external browser (Android)');
+        window.Android.openExternalBrowser(oauthUrl);
+      } else {
+        // Fallback для браузера
+        console.log('[Auth] Opening OAuth in same window (browser)');
+        window.location.href = oauthUrl;
+      }
     } catch (error) {
       console.error('Error signing in with Google:', error);
       setError(t('auth.error_google'));
@@ -62,13 +84,35 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
 
   const handleAppleSignIn = async () => {
     try {
-      const { error } = await supabase.auth.signInWithOAuth({
+      console.log('[Auth] Starting Apple OAuth...');
+      
+      // Получаем OAuth URL от Supabase
+      const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'apple',
         options: {
-          redirectTo: window.location.origin,
+          redirectTo: 'com.onda.app://callback', // Deep link для возврата в приложение
+          skipBrowserRedirect: true, // Получаем URL вместо автоматического редиректа
         },
       });
+      
       if (error) throw error;
+      
+      const oauthUrl = data?.url;
+      if (!oauthUrl) {
+        throw new Error('No OAuth URL returned from Supabase');
+      }
+      
+      console.log('[Auth] OAuth URL:', oauthUrl);
+      
+      // Проверяем, запущено ли приложение в Android WebView
+      if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
+        console.log('[Auth] Opening OAuth in external browser (Android)');
+        window.Android.openExternalBrowser(oauthUrl);
+      } else {
+        // Fallback для браузера
+        console.log('[Auth] Opening OAuth in same window (browser)');
+        window.location.href = oauthUrl;
+      }
     } catch (error) {
       console.error('Error signing in with Apple:', error);
       setError(t('auth.error_apple'));

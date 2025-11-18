@@ -2,12 +2,14 @@ package com.onda.app
 
 import android.Manifest
 import android.content.Context
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.media.AudioManager
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import android.webkit.ConsoleMessage
+import android.webkit.JavascriptInterface
 import android.webkit.PermissionRequest
 import android.webkit.WebChromeClient
 import android.webkit.WebResourceRequest
@@ -62,6 +64,9 @@ class MainActivity : AppCompatActivity() {
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.JELLY_BEAN_MR1) {
             settings.mediaPlaybackRequiresUserGesture = false
         }
+
+        // Добавляем JavaScript Interface для OAuth
+        webView.addJavascriptInterface(WebAppInterface(this), "Android")
 
         webView.webViewClient = object : WebViewClient() {
             override fun shouldInterceptRequest(
@@ -142,6 +147,33 @@ class MainActivity : AppCompatActivity() {
         // ВАЖНО: грузим как HTTPS, не file://
         // Это откроет файл app/src/main/assets/index.html
         webView.loadUrl("https://appassets.androidplatform.net/index.html")
+        
+        // Обработка deep link при первом запуске
+        handleDeepLink(intent)
+    }
+    
+    override fun onNewIntent(intent: Intent?) {
+        super.onNewIntent(intent)
+        // Обработка deep link при возврате из браузера
+        handleDeepLink(intent)
+    }
+    
+    private fun handleDeepLink(intent: Intent?) {
+        val data = intent?.data
+        if (data != null && data.scheme == "com.onda.app" && data.host == "callback") {
+            Log.d("WebViewConsole", "[OAuth] Deep link received: $data")
+            
+            // Получаем фрагмент URL с токеном
+            val fragment = data.fragment ?: ""
+            val fullUrl = "https://appassets.androidplatform.net/#$fragment"
+            
+            Log.d("WebViewConsole", "[OAuth] Redirecting to: $fullUrl")
+            
+            // Перенаправляем WebView на URL с токеном
+            if (::webView.isInitialized) {
+                webView.loadUrl(fullUrl)
+            }
+        }
     }
 
     override fun onRequestPermissionsResult(
@@ -179,6 +211,22 @@ class MainActivity : AppCompatActivity() {
             webView.goBack()
         } else {
             super.onBackPressed()
+        }
+    }
+
+    // JavaScript Interface для вызова Android функций из WebView
+    inner class WebAppInterface(private val activity: MainActivity) {
+        
+        @JavascriptInterface
+        fun openExternalBrowser(url: String) {
+            Log.d("WebViewConsole", "[OAuth] Opening URL in external browser: $url")
+            try {
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+                activity.startActivity(intent)
+                Log.d("WebViewConsole", "[OAuth] External browser opened successfully")
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[OAuth] Error opening external browser: ${e.message}")
+            }
         }
     }
 }
