@@ -163,15 +163,30 @@ class MainActivity : AppCompatActivity() {
         if (data != null && data.scheme == "com.onda.app" && data.host == "callback") {
             Log.d("WebViewConsole", "[OAuth] Deep link received: $data")
             
-            // Получаем фрагмент URL с токеном
+            // Получаем фрагмент URL с токеном (например: access_token=...&expires_at=...)
             val fragment = data.fragment ?: ""
-            val fullUrl = "https://appassets.androidplatform.net/#$fragment"
             
-            Log.d("WebViewConsole", "[OAuth] Redirecting to: $fullUrl")
-            
-            // Перенаправляем WebView на URL с токеном
-            if (::webView.isInitialized) {
-                webView.loadUrl(fullUrl)
+            if (fragment.isNotEmpty() && ::webView.isInitialized) {
+                Log.d("WebViewConsole", "[OAuth] Processing auth callback with fragment")
+                
+                // Передаём URL с токеном в JavaScript через bridge
+                val authUrl = "https://qwtdppugdcguyeaumymc.supabase.co/auth/v1/callback#$fragment"
+                
+                // Вызываем JavaScript функцию для обработки OAuth callback
+                webView.post {
+                    val script = """
+                        (function() {
+                            console.log('[OAuth] Processing callback from deep link');
+                            // Создаём событие hashchange чтобы Supabase обработал токен
+                            window.location.hash = '$fragment';
+                            window.dispatchEvent(new HashChangeEvent('hashchange'));
+                        })();
+                    """.trimIndent()
+                    
+                    webView.evaluateJavascript(script) { result ->
+                        Log.d("WebViewConsole", "[OAuth] JavaScript executed, result: $result")
+                    }
+                }
             }
         }
     }
