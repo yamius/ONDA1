@@ -640,10 +640,17 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     setEarnedOnd(ondReward.totalOnd);
 
     try {
+      console.log('[AdaptivePractice] Getting current user...');
       const { data: { user } } = await supabase.auth.getUser();
-      if (!user) return;
+      if (!user) {
+        console.log('[AdaptivePractice] No user found, skipping save');
+        setPracticeState('complete');
+        return;
+      }
+      console.log('[AdaptivePractice] User found:', user.id);
 
-      await supabase.from('practice_rewards').insert({
+      console.log('[AdaptivePractice] Saving practice reward...');
+      const insertResult = await supabase.from('practice_rewards').insert({
         user_id: user.id,
         practice_id: practice.id,
         practice_duration_seconds: practiceTime,
@@ -656,16 +663,21 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         performance_ond: ondReward.performanceOnd,
         total_ond_earned: ondReward.totalOnd
       });
+      console.log('[AdaptivePractice] Practice reward insert result:', insertResult);
 
+      console.log('[AdaptivePractice] Fetching current progress...');
       const { data: currentProgress } = await supabase
         .from('user_progress')
         .select('total_ond')
         .eq('user_id', user.id)
         .maybeSingle();
+      console.log('[AdaptivePractice] Current progress:', currentProgress);
 
       const newTotal = (currentProgress?.total_ond || 0) + ondReward.totalOnd;
+      console.log('[AdaptivePractice] New total OND:', newTotal);
 
-      await supabase
+      console.log('[AdaptivePractice] Upserting user progress...');
+      const upsertResult = await supabase
         .from('user_progress')
         .upsert({
           user_id: user.id,
@@ -674,16 +686,22 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         }, {
           onConflict: 'user_id'
         });
+      console.log('[AdaptivePractice] User progress upsert result:', upsertResult);
 
       if (onOndEarned) {
+        console.log('[AdaptivePractice] Calling onOndEarned callback...');
         onOndEarned(ondReward.totalOnd);
       }
 
+      console.log('[AdaptivePractice] All database operations completed successfully');
     } catch (error) {
-      console.error('Error saving practice reward:', error);
+      console.error('[AdaptivePractice] Error saving practice reward:', error);
+      console.error('[AdaptivePractice] Error details:', JSON.stringify(error));
     }
 
+    console.log('[AdaptivePractice] Setting practice state to complete...');
     setPracticeState('complete');
+    console.log('[AdaptivePractice] Practice state set to complete');
   };
 
   const handleClose = () => {
