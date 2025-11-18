@@ -42,8 +42,7 @@ class HealthConnectManager(private val context: Context) {
         HealthPermission.getReadPermission(BodyFatRecord::class),
         HealthPermission.getReadPermission(LeanBodyMassRecord::class),
         HealthPermission.getReadPermission(NutritionRecord::class),
-        HealthPermission.getReadPermission(HydrationRecord::class),
-        HealthPermission.getReadPermission(MindfulnessSessionRecord::class)
+        HealthPermission.getReadPermission(HydrationRecord::class)
     )
 
     /**
@@ -51,7 +50,7 @@ class HealthConnectManager(private val context: Context) {
      */
     fun isAvailable(): Boolean {
         return try {
-            HealthConnectClient.isAvailable(context)
+            HealthConnectClient.getSdkStatus(context) == HealthConnectClient.SDK_AVAILABLE
         } catch (e: Exception) {
             Log.e(TAG, "Error checking Health Connect availability", e)
             false
@@ -455,20 +454,9 @@ class HealthConnectManager(private val context: Context) {
         val wellness = JSONObject()
 
         try {
-            // Mindfulness sessions
-            val mindfulnessResponse = healthConnectClient.readRecords(
-                ReadRecordsRequest(
-                    MindfulnessSessionRecord::class,
-                    timeRangeFilter = TimeRangeFilter.between(start, end)
-                )
-            )
-            if (mindfulnessResponse.records.isNotEmpty()) {
-                val totalMinutes = mindfulnessResponse.records.sumOf {
-                    ChronoUnit.MINUTES.between(it.startTime, it.endTime)
-                }
-                wellness.put("mindfulnessMinutes", totalMinutes)
-                wellness.put("mindfulnessSessions", mindfulnessResponse.records.size)
-            }
+            // Note: MindfulnessSessionRecord was removed from Health Connect SDK
+            // We track meditation through the app's own practice sessions
+            Log.d(TAG, "Wellness data collection (mindfulness tracking via app)")
 
         } catch (e: Exception) {
             Log.e(TAG, "Error reading wellness", e)
