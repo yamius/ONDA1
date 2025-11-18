@@ -375,8 +375,8 @@ class HealthConnectManager(private val context: Context) {
     private suspend fun readBody(start: Instant, end: Instant): JSONObject {
         val body = JSONObject()
 
+        // Weight
         try {
-            // Weight
             val weightResponse = healthConnectClient.readRecords(
                 ReadRecordsRequest(
                     WeightRecord::class,
@@ -386,8 +386,14 @@ class HealthConnectManager(private val context: Context) {
             if (weightResponse.records.isNotEmpty()) {
                 body.put("weightKg", weightResponse.records.last().weight.inKilograms)
             }
+        } catch (e: SecurityException) {
+            Log.w(TAG, "No permission for Weight")
+        } catch (e: Exception) {
+            Log.e(TAG, "Error reading weight", e)
+        }
 
-            // Height
+        // Height
+        try {
             val heightResponse = healthConnectClient.readRecords(
                 ReadRecordsRequest(
                     HeightRecord::class,
@@ -397,8 +403,14 @@ class HealthConnectManager(private val context: Context) {
             if (heightResponse.records.isNotEmpty()) {
                 body.put("heightCm", heightResponse.records.last().height.inMeters * 100)
             }
+        } catch (e: SecurityException) {
+            Log.w(TAG, "No permission for Height")
+        } catch (e: Exception) {
+            Log.e(TAG, "Error reading height", e)
+        }
 
-            // Body Fat
+        // Body Fat
+        try {
             val fatResponse = healthConnectClient.readRecords(
                 ReadRecordsRequest(
                     BodyFatRecord::class,
@@ -408,8 +420,14 @@ class HealthConnectManager(private val context: Context) {
             if (fatResponse.records.isNotEmpty()) {
                 body.put("bodyFatPct", fatResponse.records.last().percentage.value)
             }
+        } catch (e: SecurityException) {
+            Log.w(TAG, "No permission for Body Fat")
+        } catch (e: Exception) {
+            Log.e(TAG, "Error reading body fat", e)
+        }
 
-            // Lean Body Mass
+        // Lean Body Mass
+        try {
             val leanResponse = healthConnectClient.readRecords(
                 ReadRecordsRequest(
                     LeanBodyMassRecord::class,
@@ -419,9 +437,10 @@ class HealthConnectManager(private val context: Context) {
             if (leanResponse.records.isNotEmpty()) {
                 body.put("leanBodyMassKg", leanResponse.records.last().mass.inKilograms)
             }
-
+        } catch (e: SecurityException) {
+            Log.w(TAG, "No permission for Lean Body Mass (expected - user denied)")
         } catch (e: Exception) {
-            Log.e(TAG, "Error reading body measurements", e)
+            Log.e(TAG, "Error reading lean body mass", e)
         }
 
         return body
