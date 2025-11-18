@@ -161,6 +161,8 @@ class HealthConnectManager(private val context: Context) {
         val vitals = JSONObject()
 
         try {
+            Log.d(TAG, "readVitals: start=$start, end=$end")
+            
             // Heart Rate
             val hrResponse = healthConnectClient.readRecords(
                 ReadRecordsRequest(
@@ -171,8 +173,11 @@ class HealthConnectManager(private val context: Context) {
             Log.d(TAG, "Heart Rate records found: ${hrResponse.records.size}")
             if (hrResponse.records.isNotEmpty()) {
                 val latestHR = hrResponse.records.last()
-                vitals.put("heartRate", latestHR.samples.lastOrNull()?.beatsPerMinute)
-                Log.d(TAG, "Heart Rate value: ${latestHR.samples.lastOrNull()?.beatsPerMinute}")
+                val hrValue = latestHR.samples.lastOrNull()?.beatsPerMinute
+                vitals.put("heartRate", hrValue)
+                Log.d(TAG, "Heart Rate value: $hrValue (from ${hrResponse.records.size} records, ${latestHR.samples.size} samples)")
+            } else {
+                Log.w(TAG, "No Heart Rate records found in timeRange")
             }
 
             // Resting Heart Rate
@@ -258,6 +263,8 @@ class HealthConnectManager(private val context: Context) {
             Log.e(TAG, "Error reading vitals", e)
         }
 
+        Log.d(TAG, "readVitals completed: ${vitals.length()} fields found")
+        Log.d(TAG, "Vitals JSON: $vitals")
         return vitals
     }
 
