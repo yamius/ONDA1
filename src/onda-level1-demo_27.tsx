@@ -215,6 +215,13 @@ const OndaLevel1 = () => {
   }, []);
 
   useEffect(() => {
+    if (user && showAuthModal) {
+      console.log('[Auth] User logged in, closing auth modal');
+      setShowAuthModal(false);
+    }
+  }, [user, showAuthModal]);
+
+  useEffect(() => {
     const saveGameProgress = async () => {
       if (!user || isLoadingUser) return;
 
