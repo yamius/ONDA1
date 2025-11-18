@@ -47,6 +47,13 @@ export function HealthConnectDataPanel() {
           <div className="mb-4">
             <h3 className="text-lg font-semibold mb-2 text-cyan-300">Активность</h3>
             <div className="grid grid-cols-2 gap-3">
+              {activity.steps !== undefined && (
+                <div className="bg-black/30 backdrop-blur-sm rounded-xl p-3 border border-blue-500/30">
+                  <Activity className="w-5 h-5 text-blue-400 mb-1" />
+                  <div className="text-xl font-bold">{activity.steps}</div>
+                  <div className="text-xs text-gray-400">Шаги</div>
+                </div>
+              )}
               {activity.activeCaloriesBurned !== undefined && (
                 <div className="bg-black/30 backdrop-blur-sm rounded-xl p-3 border border-orange-500/30">
                   <Flame className="w-5 h-5 text-orange-400 mb-1" />
@@ -145,9 +152,26 @@ export function HealthConnectDataPanel() {
                 </div>
               )}
               {sleep.sessions && sleep.sessions.length > 0 && (
-                <div className="text-gray-400">
-                  Сессий сна: {sleep.sessions.length}
-                </div>
+                <>
+                  {sleep.sessions.map((session, idx) => (
+                    <div key={idx} className="bg-black/20 rounded p-3">
+                      <div className="font-semibold mb-1">
+                        {new Date(session.startTime).toLocaleTimeString('ru-RU', {hour: '2-digit', minute: '2-digit'})} – 
+                        {new Date(session.endTime).toLocaleTimeString('ru-RU', {hour: '2-digit', minute: '2-digit'})}
+                      </div>
+                      {session.durationMin && (
+                        <div className="text-gray-400">
+                          Длительность: {session.durationMin} мин ({(session.durationMin / 60).toFixed(1)} ч)
+                        </div>
+                      )}
+                      {session.stages && session.stages.length > 0 && (
+                        <div className="text-gray-400 text-xs mt-1">
+                          Стадий: {session.stages.length}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </>
               )}
             </div>
           </div>

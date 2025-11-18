@@ -2,6 +2,7 @@ import { rhythmStore } from "../sleep/rhythm";
 import type { DaySleep } from "../sleep/rhythm";
 
 export type HcActivity = {
+  steps?: number;
   activeCaloriesBurned?: number;
   vo2Max?: number;
 };
@@ -69,6 +70,7 @@ export type HcFemaleHealth = {
 
 export type HcUpdatePayload = {
   timestamp: number;
+  ts?: string;
   source: "health_connect" | "bridge" | "debug";
   activity?: HcActivity;
   vitals?: HcVitals;
@@ -136,9 +138,6 @@ declare global {
     onHealthConnectSleep?: (payload: DaySleep) => void;
     onHealthConnectVitals?: (payload: HcVitalsPayload) => void;
     onHealthConnectUpdate?: (payload: HcUpdatePayload) => void;
-    Android?: {
-      requestHealthConnectPermissions?: () => void;
-    };
   }
 }
 

@@ -30,6 +30,13 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
       title: "Активность",
       metrics: [
         {
+          icon: Activity,
+          label: "Steps",
+          value: data.activity?.steps,
+          unit: "шагов",
+          color: "text-blue-500"
+        },
+        {
           icon: Flame,
           label: "Active Calories",
           value: data.activity?.activeCaloriesBurned,
@@ -121,8 +128,8 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
         {
           icon: Moon,
           label: "Duration",
-          value: data.sleep?.main?.durationMin
-            ? `${Math.floor(data.sleep.main.durationMin / 60)}:${String(data.sleep.main.durationMin % 60).padStart(2, '0')}`
+          value: data.sleep?.sessions?.[0]?.durationMin
+            ? `${Math.floor(data.sleep.sessions[0].durationMin / 60)}:${String(data.sleep.sessions[0].durationMin % 60).padStart(2, '0')}`
             : undefined,
           unit: "h",
           color: "text-indigo-500"
@@ -130,8 +137,8 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
         {
           icon: Moon,
           label: "Sleep Period",
-          value: data.sleep?.main?.sleepStart && data.sleep?.main?.wakeTime
-            ? `${data.sleep.main.sleepStart} - ${data.sleep.main.wakeTime}`
+          value: data.sleep?.sessions?.[0]?.startTime && data.sleep?.sessions?.[0]?.endTime
+            ? `${new Date(data.sleep.sessions[0].startTime).toLocaleTimeString('ru-RU', {hour: '2-digit', minute: '2-digit'})} - ${new Date(data.sleep.sessions[0].endTime).toLocaleTimeString('ru-RU', {hour: '2-digit', minute: '2-digit'})}`
             : undefined,
           unit: "",
           color: "text-blue-400"
