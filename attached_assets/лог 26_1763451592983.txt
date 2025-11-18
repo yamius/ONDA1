@@ -1,0 +1,62 @@
+
+Yakiv@WE MINGW64 /c/Android/Sdk/platform-tools
+$ adb uninstall com.onda.app
+Success
+
+Yakiv@WE MINGW64 /c/Android/Sdk/platform-tools
+$ adb install app-release-26.apk
+Performing Streamed Install
+adb.exe: failed to stat app-release-26.apk: No such file or directory
+
+Yakiv@WE MINGW64 /c/Android/Sdk/platform-tools
+$ adb install app-release-26.apk
+Performing Streamed Install
+Success
+
+Yakiv@WE MINGW64 /c/Android/Sdk/platform-tools
+$ # Запустите приложение
+adb shell am start -n com.onda.app/.MainActivity
+Starting: Intent { cmp=com.onda.app/.MainActivity }
+
+Yakiv@WE MINGW64 /c/Android/Sdk/platform-tools
+$ # Удалите старую версию (важно для сброса разрешений!)
+adb uninstall com.onda.app
+Success
+
+Yakiv@WE MINGW64 /c/Android/Sdk/platform-tools
+$ # Установите новый APK
+adb install app-release-26.apk
+Performing Streamed Install
+Success
+
+Yakiv@WE MINGW64 /c/Android/Sdk/platform-tools
+$ # Запустите приложение
+adb shell am start -n com.onda.app/.MainActivity
+Starting: Intent { cmp=com.onda.app/.MainActivity }
+
+Yakiv@WE MINGW64 /c/Android/Sdk/platform-tools
+$ adb logcat -c
+
+Yakiv@WE MINGW64 /c/Android/Sdk/platform-tools
+$ adb logcat -d | grep -E "WebViewConsole|EmotionalCheck" > logs.txt
+
+Yakiv@WE MINGW64 /c/Android/Sdk/platform-tools
+$ # Очистите логи и следите за новыми
+adb logcat -c && adb logcat | grep -E "WebViewConsole|EmotionalCheck"
+11-18 08:38:56.373 11547 11547 D WebViewConsole: User granted microphone permission - granting to WebView
+11-18 08:38:56.396 11547 11547 D WebViewConsole: [EmotionalCheck] Error accessing microphone: [object DOMException] (line 272 of https://appassets.androidplatform.net/assets/index-C0SkiHr1.js)
+11-18 08:38:56.396 11547 11547 D WebViewConsole: [EmotionalCheck] Error name: NotReadableError (line 272 of https://appassets.androidplatform.net/assets/index-C0SkiHr1.js)
+11-18 08:38:56.396 11547 11547 D WebViewConsole: [EmotionalCheck] Error message: Could not start audio source (line 272 of https://appassets.androidplatform.net/assets/index-C0SkiHr1.js)
+11-18 08:38:59.532 11547 11547 D WebViewConsole: useVitals: series length = 0 (line 272 of https://appassets.androidplatform.net/assets/index-C0SkiHr1.js)
+11-18 08:39:08.805 11547 11547 D WebViewConsole: [EmotionalCheck] Requesting microphone access... (line 272 of https://appassets.androidplatform.net/assets/index-C0SkiHr1.js)
+11-18 08:39:08.814 11547 11547 D WebViewConsole: onPermissionRequest called for: android.webkit.resource.AUDIO_CAPTURE
+11-18 08:39:08.814 11547 11547 D WebViewConsole: Microphone permission granted to WebView immediately
+11-18 08:39:08.822 11547 11547 D WebViewConsole: [EmotionalCheck] Error accessing microphone: [object DOMException] (line 272 of https://appassets.androidplatform.net/assets/index-C0SkiHr1.js)
+11-18 08:39:08.822 11547 11547 D WebViewConsole: [EmotionalCheck] Error name: NotReadableError (line 272 of https://appassets.androidplatform.net/assets/index-C0SkiHr1.js)
+11-18 08:39:08.823 11547 11547 D WebViewConsole: [EmotionalCheck] Error message: Could not start audio source (line 272 of https://appassets.androidplatform.net/assets/index-C0SkiHr1.js)
+11-18 08:39:10.966 11547 11547 D WebViewConsole: useVitals: series length = 0 (line 272 of https://appassets.androidplatform.net/assets/index-C0SkiHr1.js)
+11-18 08:39:10.966 11547 11547 D WebViewConsole: useVitals: series length = 0 (line 272 of https://appassets.androidplatform.net/assets/index-C0SkiHr1.js)
+
+
+Yakiv@WE MINGW64 /c/Android/Sdk/platform-tools
+$

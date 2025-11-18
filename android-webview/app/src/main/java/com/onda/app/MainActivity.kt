@@ -1,7 +1,9 @@
 package com.onda.app
 
 import android.Manifest
+import android.content.Context
 import android.content.pm.PackageManager
+import android.media.AudioManager
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -51,6 +53,15 @@ class MainActivity : AppCompatActivity() {
         settings.allowContentAccess = false
         settings.cacheMode = WebSettings.LOAD_DEFAULT
         settings.mediaPlaybackRequiresUserGesture = false
+        
+        // Критически важно для getUserMedia
+        settings.javaScriptCanOpenWindowsAutomatically = true
+        settings.mixedContentMode = WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
+        
+        // Включаем поддержку getUserMedia
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            settings.mediaPlaybackRequiresUserGesture = false
+        }
 
         webView.webViewClient = object : WebViewClient() {
             override fun shouldInterceptRequest(
@@ -84,6 +95,20 @@ class MainActivity : AppCompatActivity() {
                 
                 // Проверяем, что запрашивается микрофон
                 if (request.resources.contains(PermissionRequest.RESOURCE_AUDIO_CAPTURE)) {
+                    // Запрашиваем аудио фокус
+                    val audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
+                    val result = audioManager.requestAudioFocus(
+                        null,
+                        AudioManager.STREAM_VOICE_CALL,
+                        AudioManager.AUDIOFOCUS_GAIN_TRANSIENT
+                    )
+                    
+                    if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+                        Log.d("WebViewConsole", "Audio focus granted")
+                    } else {
+                        Log.d("WebViewConsole", "Audio focus NOT granted")
+                    }
+                    
                     // Проверяем, есть ли у нас runtime permission
                     if (ContextCompat.checkSelfPermission(
                             this@MainActivity,
