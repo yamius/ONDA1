@@ -73,14 +73,10 @@ class HealthConnectManager(private val context: Context) {
     }
 
     /**
-     * Create intent for requesting Health Connect permissions
-     * This launches the Health Connect system UI for permission grant
+     * Note: Health Connect permissions are requested via ActivityResultContract
+     * Use PermissionController.createRequestPermissionResultContract() in Activity
+     * See MainActivity for implementation
      */
-    suspend fun createPermissionRequestIntent(): android.content.Intent {
-        return healthConnectClient.permissionController.createRequestPermissionActivityIntent(
-            permissions
-        )
-    }
 
     /**
      * Read all health data from the last 24 hours

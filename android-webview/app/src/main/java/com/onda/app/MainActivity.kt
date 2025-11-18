@@ -21,6 +21,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.health.connect.client.PermissionController
 import androidx.lifecycle.lifecycleScope
 import androidx.webkit.WebViewAssetLoader
 import kotlinx.coroutines.Dispatchers
@@ -38,16 +39,16 @@ class MainActivity : AppCompatActivity() {
     }
 
     private val requestHealthPermissions = registerForActivityResult(
-        ActivityResultContracts.StartActivityForResult()
-    ) { result ->
-        Log.d("WebViewConsole", "[HealthConnect] Permission request result: ${result.resultCode}")
+        PermissionController.createRequestPermissionResultContract()
+    ) { grantedPermissions ->
+        Log.d("WebViewConsole", "[HealthConnect] Permission result: ${grantedPermissions.size} granted")
         
         // Check permission result
         lifecycleScope.launch {
             try {
-                val hasPermissions = healthConnectManager.checkPermissions()
+                val hasAllPermissions = healthConnectManager.checkPermissions()
                 
-                if (hasPermissions) {
+                if (hasAllPermissions) {
                     Log.d("WebViewConsole", "[HealthConnect] All permissions granted, reading data")
                     sendHealthDataToWeb()
                 } else {
@@ -331,12 +332,9 @@ class MainActivity : AppCompatActivity() {
                         sendHealthDataToWeb()
                     } else {
                         Log.d("WebViewConsole", "[HealthConnect] Requesting permissions via Health Connect UI")
-                        // Create Health Connect permission intent (suspend call)
-                        val intent = healthConnectManager.createPermissionRequestIntent()
-                        
-                        // Launch permission UI on main thread
+                        // Launch Health Connect permission UI on main thread
                         withContext(Dispatchers.Main) {
-                            requestHealthPermissions.launch(intent)
+                            requestHealthPermissions.launch(healthConnectManager.permissions)
                         }
                     }
                 } catch (e: Exception) {
