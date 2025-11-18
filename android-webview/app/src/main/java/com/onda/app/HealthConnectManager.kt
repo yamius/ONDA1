@@ -137,7 +137,18 @@ class HealthConnectManager(private val context: Context) {
                 json.put("wellness", wellness)
             }
 
-            Log.d(TAG, "Health data read successfully: $json")
+            // Log summary of what data was found
+            val summary = buildString {
+                append("HC Data Summary: ")
+                append("vitals=${vitals.length()} fields, ")
+                append("activity=${activity.length()} fields, ")
+                append("sleep=${sleep.length()} fields, ")
+                append("body=${body.length()} fields, ")
+                append("nutrition=${nutrition.length()} fields, ")
+                append("wellness=${wellness.length()} fields")
+            }
+            Log.d(TAG, summary)
+            Log.d(TAG, "Health data JSON: $json")
         } catch (e: Exception) {
             Log.e(TAG, "Error reading health data", e)
             json.put("error", e.message ?: "Unknown error")
@@ -157,9 +168,11 @@ class HealthConnectManager(private val context: Context) {
                     timeRangeFilter = TimeRangeFilter.between(start, end)
                 )
             )
+            Log.d(TAG, "Heart Rate records found: ${hrResponse.records.size}")
             if (hrResponse.records.isNotEmpty()) {
                 val latestHR = hrResponse.records.last()
                 vitals.put("heartRate", latestHR.samples.lastOrNull()?.beatsPerMinute)
+                Log.d(TAG, "Heart Rate value: ${latestHR.samples.lastOrNull()?.beatsPerMinute}")
             }
 
             // Resting Heart Rate
