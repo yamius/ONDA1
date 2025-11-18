@@ -331,14 +331,24 @@ class MainActivity : AppCompatActivity() {
                         Log.d("WebViewConsole", "[HealthConnect] Permissions already granted")
                         sendHealthDataToWeb()
                     } else {
-                        Log.d("WebViewConsole", "[HealthConnect] Requesting permissions via Health Connect UI")
+                        val permissionsToRequest = healthConnectManager.permissions
+                        Log.d("WebViewConsole", "[HealthConnect] Need to request ${permissionsToRequest.size} permissions")
+                        Log.d("WebViewConsole", "[HealthConnect] Permissions list: ${permissionsToRequest.joinToString(", ")}")
+                        Log.d("WebViewConsole", "[HealthConnect] Launching permission UI on main thread...")
+                        
                         // Launch Health Connect permission UI on main thread
                         withContext(Dispatchers.Main) {
-                            requestHealthPermissions.launch(healthConnectManager.permissions)
+                            try {
+                                requestHealthPermissions.launch(permissionsToRequest)
+                                Log.d("WebViewConsole", "[HealthConnect] Permission UI launched successfully")
+                            } catch (e: Exception) {
+                                Log.e("WebViewConsole", "[HealthConnect] Error launching permission UI: ${e.message}", e)
+                            }
                         }
                     }
                 } catch (e: Exception) {
                     Log.e("WebViewConsole", "[HealthConnect] Error checking/requesting permissions: ${e.message}", e)
+                    e.printStackTrace()
                 }
             }
         }
