@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { HcUpdatePayload } from '../bridge/healthConnectBridge';
+import { isHealthConnectAvailable, requestHealthConnectPermissions } from '../lib/android-bridge';
 
 export interface HealthConnectHook {
   connected: boolean;
@@ -84,13 +85,13 @@ export function useHealthConnect(): HealthConnectHook {
   const connect = useCallback(() => {
     console.log('[useHealthConnect] Connecting to Health Connect...');
     
-    if ((window as any).Android?.requestHealthConnectPermissions) {
+    if (isHealthConnectAvailable()) {
       console.log('[useHealthConnect] Requesting Android Health Connect permissions');
-      (window as any).Android.requestHealthConnectPermissions();
+      requestHealthConnectPermissions();
       return;
     }
 
-    console.log('[useHealthConnect] Android bridge not available, using debug mode');
+    console.log('[useHealthConnect] Health Connect not available, using debug mode');
     if ((window as any).onHealthConnectUpdate) {
       (window as any).onHealthConnectUpdate({
         ts: new Date().toISOString(),

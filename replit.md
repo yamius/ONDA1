@@ -35,16 +35,33 @@ Preferred communication style: Simple, everyday language.
 ## Native Bridge Integration
 
 **WebView Communication:**
-- JavaScript bridge pattern for Android native features
-- Custom events (`hc-update`) for Health Connect data updates
-- Window-attached methods (`window.Android.*`) for native API calls
+- JavaScript bridge pattern for Android native features (`window.Android`)
+- Custom events (`hc-update`, `oauth-success`, `hc-permissions-denied`) for data flow
+- Bridge methods exposed via `@JavascriptInterface` in MainActivity.kt
+- TypeScript type definitions in `src/types/android.d.ts`
 
-**Health Data Integration:**
-- Google Health Connect SDK integration via Android WebView
+**Health Connect Integration (November 2025):**
+- Complete Google Health Connect SDK 1.1.0-alpha07 integration
+- **Android Layer:** `HealthConnectManager.kt` handles all Health Connect operations:
+  - Reads 19 data types: heart rate, HRV, sleep, steps, nutrition, etc.
+  - Permission management with Android permission launcher
+  - JSON serialization for WebView communication
+- **Bridge Layer:** Three methods exposed to JavaScript:
+  - `isHealthConnectAvailable()` - check device support
+  - `requestHealthConnectPermissions()` - trigger permission flow
+  - `readHealthConnectData()` - fetch all health metrics
+- **Web Layer:** `useHealthConnect` hook + display components
+  - Listens for `hc-update` CustomEvent with health data payload
+  - Automatic localStorage persistence of last update
+  - Debug mode with mock data for development
+- **Data Flow:** Android → JSON → evaluateJavascript → CustomEvent → React State
+
+**Other Native Features:**
+- External browser launch for OAuth flows (deep link callback)
 - Bluetooth Web API for heart rate monitor connectivity
-- Real-time biometric data processing with DSP algorithms
+- Device motion API for activity detection
 
-**Rationale:** The bridge pattern allows the web app to access native device capabilities while maintaining a single codebase. This hybrid approach balances development speed with native feature access.
+**Rationale:** The bridge pattern allows the web app to access native device capabilities while maintaining a single codebase. Health Connect integration provides comprehensive biometric tracking without requiring users to manually input data, enabling adaptive practice recommendations based on real health metrics.
 
 ## Data Processing Pipeline
 

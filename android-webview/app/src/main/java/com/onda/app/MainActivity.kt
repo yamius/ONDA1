@@ -17,18 +17,53 @@ import android.webkit.WebResourceResponse
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.lifecycleScope
 import androidx.webkit.WebViewAssetLoader
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var webView: WebView
+    private lateinit var healthConnectManager: HealthConnectManager
     private var pendingPermissionRequest: PermissionRequest? = null
 
     companion object {
         private const val PERMISSION_REQUEST_CODE = 100
+    }
+
+    private val requestHealthPermissions = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult()
+    ) { result ->
+        Log.d("WebViewConsole", "[HealthConnect] Permission request result: ${result.resultCode}")
+        
+        // Check permission result
+        lifecycleScope.launch {
+            try {
+                val hasPermissions = healthConnectManager.checkPermissions()
+                
+                if (hasPermissions) {
+                    Log.d("WebViewConsole", "[HealthConnect] All permissions granted, reading data")
+                    sendHealthDataToWeb()
+                } else {
+                    Log.d("WebViewConsole", "[HealthConnect] Some permissions denied or not granted")
+                    // Notify web app about denied permissions
+                    webView.post {
+                        webView.evaluateJavascript(
+                            "window.dispatchEvent(new CustomEvent('hc-permissions-denied'))",
+                            null
+                        )
+                    }
+                }
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[HealthConnect] Error checking permissions after request: ${e.message}")
+            }
+        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,6 +71,10 @@ class MainActivity : AppCompatActivity() {
 
         webView = WebView(this)
         setContentView(webView)
+
+        // Initialize Health Connect Manager
+        healthConnectManager = HealthConnectManager(this)
+        Log.d("WebViewConsole", "[HealthConnect] Manager initialized, available: ${healthConnectManager.isAvailable()}")
 
         // Раздаём файлы из app/src/main/assets/** по HTTPS
         val assetLoader = WebViewAssetLoader.Builder()
@@ -269,6 +308,75 @@ class MainActivity : AppCompatActivity() {
                 Log.d("WebViewConsole", "[OAuth] External browser opened successfully")
             } catch (e: Exception) {
                 Log.e("WebViewConsole", "[OAuth] Error opening external browser: ${e.message}")
+            }
+        }
+
+        @JavascriptInterface
+        fun isHealthConnectAvailable(): Boolean {
+            val available = healthConnectManager.isAvailable()
+            Log.d("WebViewConsole", "[HealthConnect] isHealthConnectAvailable called: $available")
+            return available
+        }
+
+        @JavascriptInterface
+        fun requestHealthConnectPermissions() {
+            Log.d("WebViewConsole", "[HealthConnect] requestHealthConnectPermissions called")
+            
+            lifecycleScope.launch {
+                try {
+                    val hasPermissions = healthConnectManager.checkPermissions()
+                    
+                    if (hasPermissions) {
+                        Log.d("WebViewConsole", "[HealthConnect] Permissions already granted")
+                        sendHealthDataToWeb()
+                    } else {
+                        Log.d("WebViewConsole", "[HealthConnect] Requesting permissions via Health Connect UI")
+                        // Create Health Connect permission intent (suspend call)
+                        val intent = healthConnectManager.createPermissionRequestIntent()
+                        
+                        // Launch permission UI on main thread
+                        withContext(Dispatchers.Main) {
+                            requestHealthPermissions.launch(intent)
+                        }
+                    }
+                } catch (e: Exception) {
+                    Log.e("WebViewConsole", "[HealthConnect] Error checking/requesting permissions: ${e.message}", e)
+                }
+            }
+        }
+
+        @JavascriptInterface
+        fun readHealthConnectData() {
+            Log.d("WebViewConsole", "[HealthConnect] readHealthConnectData called")
+            sendHealthDataToWeb()
+        }
+    }
+
+    private fun sendHealthDataToWeb() {
+        lifecycleScope.launch {
+            try {
+                Log.d("WebViewConsole", "[HealthConnect] Reading health data...")
+                val healthData = healthConnectManager.readHealthData()
+                val jsonString = healthData.toString()
+                
+                Log.d("WebViewConsole", "[HealthConnect] Health data read, size: ${jsonString.length}")
+                
+                runOnUiThread {
+                    // Send data via custom event
+                    val script = """
+                        (function() {
+                            console.log('[HealthConnect] Received health data from Android');
+                            const data = $jsonString;
+                            window.dispatchEvent(new CustomEvent('hc-update', { detail: data }));
+                        })();
+                    """.trimIndent()
+                    
+                    webView.evaluateJavascript(script) { result ->
+                        Log.d("WebViewConsole", "[HealthConnect] Data sent to WebView, result: $result")
+                    }
+                }
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[HealthConnect] Error reading health data: ${e.message}", e)
             }
         }
     }
