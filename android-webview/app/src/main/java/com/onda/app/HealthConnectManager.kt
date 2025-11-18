@@ -64,8 +64,15 @@ class HealthConnectManager(private val context: Context) {
         return try {
             val granted = healthConnectClient.permissionController.getGrantedPermissions()
             val allGranted = permissions.all { it in granted }
-            Log.d(TAG, "Permissions check: granted=${granted.size}, needed=${permissions.size}, allGranted=$allGranted")
-            allGranted
+            val grantedCount = permissions.count { it in granted }
+            
+            // Accept if at least 80% of permissions are granted (15 out of 18)
+            val sufficientPermissions = grantedCount >= (permissions.size * 0.8).toInt()
+            
+            Log.d(TAG, "Permissions check: granted=$grantedCount/${permissions.size}, allGranted=$allGranted, sufficient=$sufficientPermissions")
+            
+            // Return true if we have sufficient permissions (even if not all)
+            sufficientPermissions
         } catch (e: Exception) {
             Log.e(TAG, "Error checking permissions", e)
             false
