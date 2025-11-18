@@ -33,3 +33,7 @@ android-webview/app/build/
 android-webview/app/src/main/assets/
 android-webview/.gradle/
 android-webview/local.properties
+
+# Log files with potential secrets
+attached_assets/*.txt
+attached_assets/*.log
