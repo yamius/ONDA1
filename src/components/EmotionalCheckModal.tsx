@@ -48,7 +48,10 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
   const startRecording = async () => {
     try {
+      console.log('[EmotionalCheck] Requesting microphone access...');
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      console.log('[EmotionalCheck] Microphone access granted, starting recording');
+      
       const mediaRecorder = new MediaRecorder(stream);
       mediaRecorderRef.current = mediaRecorder;
       audioChunksRef.current = [];
@@ -63,6 +66,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
         setAudioURL(url);
         setRecordingState('recorded');
         stream.getTracks().forEach(track => track.stop());
+        console.log('[EmotionalCheck] Recording stopped, audio ready');
       };
 
       mediaRecorder.start();
@@ -72,9 +76,19 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       timerRef.current = window.setInterval(() => {
         setRecordingTime(prev => prev + 1);
       }, 1000);
-    } catch (error) {
-      console.error('Error accessing microphone:', error);
-      alert('Unable to access microphone. Please check permissions.');
+    } catch (error: any) {
+      console.error('[EmotionalCheck] Error accessing microphone:', error);
+      console.error('[EmotionalCheck] Error name:', error.name);
+      console.error('[EmotionalCheck] Error message:', error.message);
+      
+      let errorMessage = 'Unable to access microphone. Please check permissions.';
+      if (error.name === 'NotAllowedError') {
+        errorMessage = 'Microphone access denied. Please allow microphone access in your device settings and try again.';
+      } else if (error.name === 'NotFoundError') {
+        errorMessage = 'No microphone found on your device.';
+      }
+      
+      alert(errorMessage);
     }
   };
 
