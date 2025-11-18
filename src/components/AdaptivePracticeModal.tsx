@@ -601,7 +601,11 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   };
 
   const completePractice = async () => {
-    if (!practice) return;
+    console.log('[AdaptivePractice] completePractice() called');
+    if (!practice) {
+      console.log('[AdaptivePractice] No practice found, returning');
+      return;
+    }
 
     const finalStress = vitalsData.connected && vitalsData.stress !== null ? vitalsData.stress : simulatedVitals.stress;
     const finalEnergy = vitalsData.connected && vitalsData.energy !== null ? vitalsData.energy : simulatedVitals.energy;
@@ -856,8 +860,12 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                 {isPaused ? <Play className="w-6 h-6 sm:w-8 sm:h-8" /> : <Pause className="w-6 h-6 sm:w-8 sm:h-8" />}
               </button>
               <button
-                onClick={completePractice}
+                onClick={() => {
+                  console.log('[AdaptivePractice] Complete button clicked!');
+                  completePractice();
+                }}
                 className="bg-emerald-500/30 hover:bg-emerald-500/50 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all hover:scale-110 shadow-xl border border-emerald-400/50"
+                data-testid="button-complete-practice"
               >
                 {t('practices.complete')}
               </button>
