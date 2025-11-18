@@ -172,14 +172,42 @@ class MainActivity : AppCompatActivity() {
                 // Передаём URL с токеном в JavaScript через bridge
                 val authUrl = "https://qwtdppugdcguyeaumymc.supabase.co/auth/v1/callback#$fragment"
                 
+                // Парсим токены из fragment
+                val params = fragment.split("&").associate {
+                    val parts = it.split("=", limit = 2)
+                    parts[0] to (parts.getOrNull(1) ?: "")
+                }
+                
+                val accessToken = params["access_token"] ?: ""
+                val refreshToken = params["refresh_token"] ?: ""
+                
                 // Вызываем JavaScript функцию для обработки OAuth callback
                 webView.post {
+                    // Экранируем токены для безопасной передачи в JavaScript
+                    val escapedAccessToken = accessToken.replace("\\", "\\\\").replace("\"", "\\\"")
+                    val escapedRefreshToken = refreshToken.replace("\\", "\\\\").replace("\"", "\\\"")
+                    
                     val script = """
-                        (function() {
+                        (async function() {
                             console.log('[OAuth] Processing callback from deep link');
-                            // Создаём событие hashchange чтобы Supabase обработал токен
-                            window.location.hash = '$fragment';
-                            window.dispatchEvent(new HashChangeEvent('hashchange'));
+                            
+                            const accessToken = "$escapedAccessToken";
+                            const refreshToken = "$escapedRefreshToken";
+                            
+                            console.log('[OAuth] Tokens parsed:', {
+                                hasAccessToken: !!accessToken,
+                                hasRefreshToken: !!refreshToken
+                            });
+                            
+                            if (accessToken && refreshToken && window.handleOAuthCallback) {
+                                try {
+                                    await window.handleOAuthCallback(accessToken, refreshToken);
+                                } catch (e) {
+                                    console.error('[OAuth] Error in handleOAuthCallback:', e);
+                                }
+                            } else {
+                                console.error('[OAuth] Missing tokens or handler not registered');
+                            }
                         })();
                     """.trimIndent()
                     

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import OndaLevel1 from './onda-level1-demo_27';
 import AudioTest from './pages/AudioTest';
+// Регистрируем Android bridge для OAuth callback
+import './lib/android-bridge';
 
 function App() {
   const [showTest, setShowTest] = useState(
