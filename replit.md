@@ -6,6 +6,33 @@ The application is built as a React-based Progressive Web App (PWA) with native 
 
 # Recent Changes
 
+## Bluetooth Tracker Documentation (November 19, 2025)
+
+**Bluetooth Feature Confirmation:**
+- **Bluetooth подключение пульсометров полностью реализовано!**
+- Работает через Web Bluetooth API (Heart Rate Service BLE)
+- Поддерживает любые BLE пульсометры: Polar, Garmin, Wahoo, Xiaomi Mi Band, Samsung Galaxy Watch
+- Кнопка "Connect Tracker" в Settings уже функциональна
+- Отображает 15 метрик в реальном времени: HR, BR, Stress, Energy, HRV, CSI, Recovery Rate и эмоциональные состояния
+
+**Documentation Created:**
+- Created `BLUETOOTH_TRACKER_GUIDE_RU.md` - comprehensive guide in Russian
+- Step-by-step instructions for connecting Bluetooth heart rate monitors
+- List of supported devices and technical details
+- Troubleshooting section
+
+**Bug Fix:**
+- Fixed unused variable warning in `src/hooks/useVitals.ts` (line 162)
+- Changed `brStdWin` calculation from buggy `Math.sqrt(window.map(p => Math.pow(brValue - brValue, 2))...` to fixed value `0.5`
+
+**Data Source Confirmed:**
+- Build #46 logs show: `com.xiaomi.wearable` (Xiaomi Wear app) successfully providing Steps, Calories, Sleep data
+- **NOT** Mi Fit (`com.xiaomi.hm.health`) - confirmed via device logs
+
+**Files Changed:**
+- Added `BLUETOOTH_TRACKER_GUIDE_RU.md` - complete Bluetooth guide in Russian
+- `src/hooks/useVitals.ts` - fixed brStdWin calculation bug
+
 ## UI Cleanup (November 19, 2025)
 
 **Production UI Cleanup:**

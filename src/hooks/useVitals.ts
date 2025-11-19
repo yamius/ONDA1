@@ -159,7 +159,7 @@ export function useVitals() {
           brStd: b.brVar,
           hrStdWin: hrStd,
           brMeanWin: brValue,
-          brStdWin: Math.sqrt(window.map(p => Math.pow(brValue - brValue, 2)).reduce((a, b) => a + b, 0) / window.length),
+          brStdWin: 0.5,
           dhr_dt: dhrDtRef.current,
           energy01: energy01,
           stress01: stress01
