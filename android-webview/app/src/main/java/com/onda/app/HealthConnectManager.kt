@@ -172,6 +172,12 @@ class HealthConnectManager(private val context: Context) {
             )
             Log.d(TAG, "Heart Rate records found: ${hrResponse.records.size}")
             if (hrResponse.records.isNotEmpty()) {
+                // Log data source
+                val hrSources = hrResponse.records
+                    .mapNotNull { it.metadata.dataOrigin.packageName }
+                    .distinct()
+                Log.d(TAG, "Heart Rate sources: ${hrSources.joinToString(", ")}")
+                
                 val latestHR = hrResponse.records.last()
                 val hrValue = latestHR.samples.lastOrNull()?.beatsPerMinute
                 vitals.put("heartRate", hrValue)
@@ -282,6 +288,12 @@ class HealthConnectManager(private val context: Context) {
             if (stepsResponse.records.isNotEmpty()) {
                 val totalSteps = stepsResponse.records.sumOf { it.count }
                 activity.put("steps", totalSteps)
+                
+                // Log data source
+                val stepsSources = stepsResponse.records
+                    .mapNotNull { it.metadata.dataOrigin.packageName }
+                    .distinct()
+                Log.d(TAG, "Steps sources: ${stepsSources.joinToString(", ")}")
             }
 
             // Active Calories
@@ -294,6 +306,12 @@ class HealthConnectManager(private val context: Context) {
             if (caloriesResponse.records.isNotEmpty()) {
                 val totalCalories = caloriesResponse.records.sumOf { it.energy.inKilocalories }
                 activity.put("activeCaloriesBurned", totalCalories.toInt())
+                
+                // Log data source
+                val caloriesSources = caloriesResponse.records
+                    .mapNotNull { it.metadata.dataOrigin.packageName }
+                    .distinct()
+                Log.d(TAG, "Calories sources: ${caloriesSources.joinToString(", ")}")
             }
 
             // VO2 Max
@@ -327,6 +345,12 @@ class HealthConnectManager(private val context: Context) {
 
             if (sleepResponse.records.isNotEmpty()) {
                 val sessions = JSONArray()
+                
+                // Log data source
+                val sleepSources = sleepResponse.records
+                    .mapNotNull { it.metadata.dataOrigin.packageName }
+                    .distinct()
+                Log.d(TAG, "Sleep sources: ${sleepSources.joinToString(", ")}")
 
                 for (session in sleepResponse.records) {
                     val sessionObj = JSONObject()

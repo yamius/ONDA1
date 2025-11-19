@@ -6,6 +6,25 @@ The application is built as a React-based Progressive Web App (PWA) with native 
 
 # Recent Changes
 
+## Build #46 (November 19, 2025)
+
+**Data Source Logging:**
+- Added metadata logging to show which app provides Health Connect data
+- Now logs package names for: Steps, Calories, Sleep, Heart Rate
+- Helps diagnose data source conflicts (e.g., Mi Fit vs Google Fit vs Zepp Life)
+- Example log output: `Steps sources: com.xiaomi.hm.health` or `com.google.android.apps.fitness`
+
+**Xiaomi Smart Band Integration Issue Identified:**
+- **Mi Fit does NOT export data to Health Connect** - this is why user sees different numbers
+- Mi Fit: 79 BPM heart rate, 8:32h sleep ✅
+- ONDA: 0 BPM heart rate, 0:24h old sleep ❌ (data from different source)
+- Health Connect receives data from Google Fit instead of Mi Fit
+- Solution: Use **Zepp Life** app which supports Health Connect sync
+
+**Files Changed:**
+- `android-webview/app/src/main/java/com/onda/app/HealthConnectManager.kt` - added data source logging
+- Added `XIAOMI_HEALTH_CONNECT_SETUP.md` - complete guide for Xiaomi Band users
+
 ## Build #45 (November 19, 2025)
 
 **Health Connect Error Handling Improvements:**
