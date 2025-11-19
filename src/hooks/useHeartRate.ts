@@ -89,6 +89,11 @@ export function useHeartRate() {
       alert('Bluetooth permissions denied. Please grant permissions to use heart rate monitors.');
     };
 
+    const handleScanStopped = () => {
+      console.log('[Bluetooth] Scan stopped');
+      setIsScanning(false);
+    };
+
     window.addEventListener('bluetooth-device-found', handleDeviceFound);
     window.addEventListener('bluetooth-connected', handleConnected);
     window.addEventListener('bluetooth-disconnected', handleDisconnected);
@@ -96,6 +101,7 @@ export function useHeartRate() {
     window.addEventListener('bluetooth-error', handleError);
     window.addEventListener('bluetooth-permissions-granted', handlePermissionsGranted);
     window.addEventListener('bluetooth-permissions-denied', handlePermissionsDenied);
+    window.addEventListener('bluetooth-scan-stopped', handleScanStopped);
 
     return () => {
       window.removeEventListener('bluetooth-device-found', handleDeviceFound);
@@ -105,6 +111,7 @@ export function useHeartRate() {
       window.removeEventListener('bluetooth-error', handleError);
       window.removeEventListener('bluetooth-permissions-granted', handlePermissionsGranted);
       window.removeEventListener('bluetooth-permissions-denied', handlePermissionsDenied);
+      window.removeEventListener('bluetooth-scan-stopped', handleScanStopped);
     };
   }, []);
 

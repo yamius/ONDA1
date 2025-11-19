@@ -134,6 +134,15 @@ class MainActivity : AppCompatActivity() {
                 webView.evaluateJavascript(script, null)
             }
         }
+        
+        bluetoothManager.onScanStopped = {
+            runOnUiThread {
+                webView.evaluateJavascript(
+                    "window.dispatchEvent(new CustomEvent('bluetooth-scan-stopped'))",
+                    null
+                )
+            }
+        }
 
         // Раздаём файлы из app/src/main/assets/** по HTTPS
         val assetLoader = WebViewAssetLoader.Builder()

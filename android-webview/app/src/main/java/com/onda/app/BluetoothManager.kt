@@ -55,6 +55,7 @@ class BluetoothManager(private val context: Context) {
     var onDisconnected: (() -> Unit)? = null
     var onHeartRateUpdate: ((Int) -> Unit)? = null
     var onError: ((String) -> Unit)? = null
+    var onScanStopped: (() -> Unit)? = null
     
     /**
      * Проверяет доступность Bluetooth
@@ -144,6 +145,7 @@ class BluetoothManager(private val context: Context) {
         }
         
         isScanning = false
+        onScanStopped?.invoke()
     }
     
     /**
