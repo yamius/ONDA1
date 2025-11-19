@@ -4,6 +4,13 @@ interface AndroidBridge {
   isHealthConnectAvailable(): boolean;
   requestHealthConnectPermissions(): void;
   readHealthConnectData(): void;
+  // Bluetooth methods
+  isBluetoothAvailable(): boolean;
+  startBluetoothScan(): void;
+  stopBluetoothScan(): void;
+  connectBluetoothDevice(deviceAddress: string): void;
+  disconnectBluetoothDevice(): void;
+  isBluetoothConnected(): boolean;
 }
 
 interface Window {

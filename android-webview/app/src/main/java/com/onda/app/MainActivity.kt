@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var webView: WebView
     private lateinit var healthConnectManager: HealthConnectManager
+    private lateinit var bluetoothManager: BluetoothManager
     private var pendingPermissionRequest: PermissionRequest? = null
 
     companion object {
@@ -76,6 +77,62 @@ class MainActivity : AppCompatActivity() {
         // Initialize Health Connect Manager
         healthConnectManager = HealthConnectManager(this)
         Log.d("WebViewConsole", "[HealthConnect] Manager initialized, available: ${healthConnectManager.isAvailable()}")
+        
+        // Initialize Bluetooth Manager
+        bluetoothManager = BluetoothManager(this)
+        Log.d("WebViewConsole", "[Bluetooth] Manager initialized, available: ${bluetoothManager.isBluetoothAvailable()}")
+        
+        // Setup Bluetooth callbacks
+        bluetoothManager.onDeviceFound = { deviceId, deviceName ->
+            runOnUiThread {
+                val script = """
+                    window.dispatchEvent(new CustomEvent('bluetooth-device-found', { 
+                        detail: { id: "$deviceId", name: "$deviceName" } 
+                    }));
+                """.trimIndent()
+                webView.evaluateJavascript(script, null)
+            }
+        }
+        
+        bluetoothManager.onConnected = {
+            runOnUiThread {
+                webView.evaluateJavascript(
+                    "window.dispatchEvent(new CustomEvent('bluetooth-connected'))",
+                    null
+                )
+            }
+        }
+        
+        bluetoothManager.onDisconnected = {
+            runOnUiThread {
+                webView.evaluateJavascript(
+                    "window.dispatchEvent(new CustomEvent('bluetooth-disconnected'))",
+                    null
+                )
+            }
+        }
+        
+        bluetoothManager.onHeartRateUpdate = { heartRate ->
+            runOnUiThread {
+                val script = """
+                    window.dispatchEvent(new CustomEvent('bluetooth-hr-update', { 
+                        detail: { hr: $heartRate, timestamp: ${System.currentTimeMillis()} } 
+                    }));
+                """.trimIndent()
+                webView.evaluateJavascript(script, null)
+            }
+        }
+        
+        bluetoothManager.onError = { error ->
+            runOnUiThread {
+                val script = """
+                    window.dispatchEvent(new CustomEvent('bluetooth-error', { 
+                        detail: { error: "$error" } 
+                    }));
+                """.trimIndent()
+                webView.evaluateJavascript(script, null)
+            }
+        }
 
         // Раздаём файлы из app/src/main/assets/** по HTTPS
         val assetLoader = WebViewAssetLoader.Builder()
@@ -357,6 +414,46 @@ class MainActivity : AppCompatActivity() {
         fun readHealthConnectData() {
             Log.d("WebViewConsole", "[HealthConnect] readHealthConnectData called")
             sendHealthDataToWeb()
+        }
+        
+        // ============ Bluetooth Methods ============
+        
+        @JavascriptInterface
+        fun isBluetoothAvailable(): Boolean {
+            val available = bluetoothManager.isBluetoothAvailable()
+            Log.d("WebViewConsole", "[Bluetooth] isBluetoothAvailable called: $available")
+            return available
+        }
+        
+        @JavascriptInterface
+        fun startBluetoothScan() {
+            Log.d("WebViewConsole", "[Bluetooth] startBluetoothScan called")
+            bluetoothManager.startScan()
+        }
+        
+        @JavascriptInterface
+        fun stopBluetoothScan() {
+            Log.d("WebViewConsole", "[Bluetooth] stopBluetoothScan called")
+            bluetoothManager.stopScan()
+        }
+        
+        @JavascriptInterface
+        fun connectBluetoothDevice(deviceAddress: String) {
+            Log.d("WebViewConsole", "[Bluetooth] connectBluetoothDevice called: $deviceAddress")
+            bluetoothManager.connectToDevice(deviceAddress)
+        }
+        
+        @JavascriptInterface
+        fun disconnectBluetoothDevice() {
+            Log.d("WebViewConsole", "[Bluetooth] disconnectBluetoothDevice called")
+            bluetoothManager.disconnect()
+        }
+        
+        @JavascriptInterface
+        fun isBluetoothConnected(): Boolean {
+            val connected = bluetoothManager.isConnected()
+            Log.d("WebViewConsole", "[Bluetooth] isBluetoothConnected called: $connected")
+            return connected
         }
     }
 
