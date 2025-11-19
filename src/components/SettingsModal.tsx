@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { X, Save, User as UserIcon, Bluetooth, Heart, Wind, Activity, Zap, Moon } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
@@ -62,6 +62,13 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
     isScanning, availableDevices, connectToDevice, stopScan, platform
   } = vitalsData;
   const { connected: hcConnected, connect: hcConnect, disconnect: hcDisconnect } = healthConnectData;
+
+  // DEBUG: Log available devices when they change
+  useEffect(() => {
+    console.log('[SettingsModal] availableDevices updated:', availableDevices);
+    console.log('[SettingsModal] isScanning:', isScanning);
+    console.log('[SettingsModal] Will render device list:', availableDevices && availableDevices.length > 0 && connectToDevice);
+  }, [availableDevices, isScanning, connectToDevice]);
 
   const handleSave = async () => {
     if (!user) return;

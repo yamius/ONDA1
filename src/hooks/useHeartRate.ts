@@ -43,8 +43,13 @@ export function useHeartRate() {
       console.log('[Bluetooth] Device found:', customEvent.detail);
       setAvailableDevices(prev => {
         // Avoid duplicates
-        if (prev.find(d => d.id === customEvent.detail.id)) return prev;
-        return [...prev, customEvent.detail];
+        if (prev.find(d => d.id === customEvent.detail.id)) {
+          console.log('[Bluetooth] Duplicate device, skipping:', customEvent.detail.id);
+          return prev;
+        }
+        const newDevices = [...prev, customEvent.detail];
+        console.log('[Bluetooth] Added device, total count:', newDevices.length);
+        return newDevices;
       });
     };
 
