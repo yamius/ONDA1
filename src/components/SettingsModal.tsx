@@ -32,6 +32,12 @@ interface SettingsModalProps {
     excitement: number | null;
     fatigue: number | null;
     flow: number | null;
+    // Android-specific fields
+    isScanning?: boolean;
+    availableDevices?: Array<{ id: string; name: string }>;
+    connectToDevice?: (deviceId: string) => void;
+    stopScan?: () => void;
+    platform?: 'android' | 'web';
   };
   healthConnectData: HealthConnectHook;
 }
@@ -50,7 +56,11 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [isSaving, setIsSaving] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
-  const { connected, connect, disconnect, hr, br, stress, energy, hrv, csi, recoveryRate, hrTrendSlope, hrAcceleration, arousal, calm, focus, excitement, fatigue, flow } = vitalsData;
+  const { 
+    connected, connect, disconnect, hr, br, stress, energy, hrv, csi, recoveryRate, 
+    hrTrendSlope, hrAcceleration, arousal, calm, focus, excitement, fatigue, flow,
+    isScanning, availableDevices, connectToDevice, stopScan, platform
+  } = vitalsData;
   const { connected: hcConnected, connect: hcConnect, disconnect: hcDisconnect } = healthConnectData;
 
   const handleSave = async () => {
@@ -265,38 +275,104 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </div> */}
 
             <div className="flex gap-3">
-              <button
-                onClick={connect}
-                disabled={connected}
-                className={`${connected ? 'flex-1' : 'w-full'} py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
-                  connected
-                    ? isLightTheme
-                      ? 'bg-green-100 text-green-700'
-                      : 'bg-green-500/20 text-green-400'
-                    : isLightTheme
-                    ? 'bg-blue-100 hover:bg-blue-200 text-blue-700'
-                    : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
-                } ${connected ? 'cursor-default' : ''}`}
-              >
-                <Bluetooth className="w-5 h-5" />
-                {connected ? t('settings.tracker_connected') : t('settings.tracker_connect')}
-              </button>
+              {!isScanning && (
+                <>
+                  <button
+                    onClick={connect}
+                    disabled={connected}
+                    className={`${connected ? 'flex-1' : 'w-full'} py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
+                      connected
+                        ? isLightTheme
+                          ? 'bg-green-100 text-green-700'
+                          : 'bg-green-500/20 text-green-400'
+                        : isLightTheme
+                        ? 'bg-blue-100 hover:bg-blue-200 text-blue-700'
+                        : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
+                    } ${connected ? 'cursor-default' : ''}`}
+                    data-testid="button-connect-tracker"
+                  >
+                    <Bluetooth className="w-5 h-5" />
+                    {connected ? t('settings.tracker_connected') : t('settings.tracker_connect')}
+                  </button>
+                  
+                  {connected && (
+                    <button
+                      onClick={disconnect}
+                      className={`flex-1 py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
+                        isLightTheme
+                          ? 'bg-red-100 hover:bg-red-200 text-red-700'
+                          : 'bg-red-500/20 hover:bg-red-500/30 text-red-400'
+                      }`}
+                      data-testid="button-disconnect-tracker"
+                    >
+                      <X className="w-5 h-5" />
+                      {t('settings.tracker_disconnect', 'Disconnect')}
+                    </button>
+                  )}
+                </>
+              )}
               
-              {connected && (
+              {isScanning && stopScan && (
                 <button
-                  onClick={disconnect}
-                  className={`flex-1 py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
+                  onClick={stopScan}
+                  className={`w-full py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
                     isLightTheme
-                      ? 'bg-red-100 hover:bg-red-200 text-red-700'
-                      : 'bg-red-500/20 hover:bg-red-500/30 text-red-400'
+                      ? 'bg-orange-100 hover:bg-orange-200 text-orange-700'
+                      : 'bg-orange-500/20 hover:bg-orange-500/30 text-orange-400'
                   }`}
-                  data-testid="button-disconnect-tracker"
+                  data-testid="button-stop-scan"
                 >
-                  <X className="w-5 h-5" />
-                  {t('settings.tracker_disconnect', 'Disconnect')}
+                  <Bluetooth className="w-5 h-5 animate-pulse" />
+                  {t('settings.scanning', 'Scanning...')} - Click to Stop
                 </button>
               )}
             </div>
+            
+            {/* Show available devices when scanning (Android only) */}
+            {isScanning && availableDevices && availableDevices.length > 0 && connectToDevice && (
+              <div className={`mt-4 p-4 rounded-xl ${
+                isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+              }`}>
+                <p className={`text-sm mb-3 ${
+                  isLightTheme ? 'text-gray-700' : 'text-white/70'
+                }`}>
+                  {t('settings.available_devices', 'Available Devices')}:
+                </p>
+                <div className="space-y-2">
+                  {availableDevices.map((device) => (
+                    <button
+                      key={device.id}
+                      onClick={() => connectToDevice(device.id)}
+                      className={`w-full py-2 px-4 rounded-lg font-medium transition-all flex items-center justify-between gap-3 ${
+                        isLightTheme
+                          ? 'bg-white hover:bg-gray-50 text-gray-900 border border-gray-300'
+                          : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
+                      }`}
+                      data-testid={`button-device-${device.id}`}
+                    >
+                      <span className="flex items-center gap-2">
+                        <Bluetooth className="w-4 h-4" />
+                        {device.name}
+                      </span>
+                      <span className={`text-xs ${
+                        isLightTheme ? 'text-gray-500' : 'text-white/50'
+                      }`}>
+                        Connect
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+            
+            {/* Show platform info for debugging */}
+            {platform && (
+              <div className={`mt-2 text-xs text-center ${
+                isLightTheme ? 'text-gray-500' : 'text-white/40'
+              }`}>
+                Platform: {platform === 'android' ? 'Android WebView' : 'Web Bluetooth API'}
+              </div>
+            )}
 
             {connected && (
               <div className={`mt-4 p-4 rounded-xl ${
