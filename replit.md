@@ -4,6 +4,35 @@ ONDA is a mindfulness and wellness mobile application that combines gamification
 
 The application is a React-based Progressive Web App (PWA) with native Android WebView wrapper support, featuring multilingual support (English, Spanish, Russian, Ukrainian, Chinese) and both light/dark themes. The business vision is to provide an engaging and effective platform for personal growth, leveraging technology to make wellness practices accessible and motivating, with strong market potential in the digital health and self-improvement sectors.
 
+# Recent Changes
+
+## Bluetooth UI Bug Fix - Device List Display (November 19, 2025)
+
+**CRITICAL BUG FIXED:** Device list disappeared after scan completed ✅
+
+**User Issue:** "Granted permissions, devices found in logs, but selection list doesn't appear in UI"
+
+**Root Cause:** 
+`SettingsModal.tsx` line 332 had incorrect rendering condition that hid device list when scan stopped:
+```tsx
+{isScanning && availableDevices.length > 0 && ...}  // ❌ BAD
+```
+When scan auto-stopped after 10 seconds → `isScanning = false` → list hidden even with found devices!
+
+**Fix:**
+```tsx
+{availableDevices.length > 0 && ...}  // ✅ GOOD
+```
+Device list now persists after scan completes, allowing user to select tracker.
+
+**Evidence from User's Logs:**
+- Native finds devices: `BluetoothManager: Found device: Xiaomi Smart Band 10 3955` ✅
+- JS receives events: `WebViewConsole: [Bluetooth] Device found: [object Object]` ✅  
+- UI incorrectly hid list after 10s auto-stop ❌ → **NOW FIXED** ✅
+
+**Files Changed:**
+- `src/components/SettingsModal.tsx` - removed `isScanning &&` gate from device list condition
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.

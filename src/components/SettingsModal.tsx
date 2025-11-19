@@ -328,15 +328,15 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               )}
             </div>
             
-            {/* Show available devices when scanning (Android only) */}
-            {isScanning && availableDevices && availableDevices.length > 0 && connectToDevice && (
+            {/* Show available devices after scan completes (Android only) */}
+            {availableDevices && availableDevices.length > 0 && connectToDevice && (
               <div className={`mt-4 p-4 rounded-xl ${
                 isLightTheme ? 'bg-gray-100' : 'bg-white/5'
               }`}>
                 <p className={`text-sm mb-3 ${
                   isLightTheme ? 'text-gray-700' : 'text-white/70'
                 }`}>
-                  {t('settings.available_devices', 'Available Devices')}:
+                  {t('settings.available_devices', 'Available Devices')} {isScanning && '(Scanning...)'}:
                 </p>
                 <div className="space-y-2">
                   {availableDevices.map((device) => (
