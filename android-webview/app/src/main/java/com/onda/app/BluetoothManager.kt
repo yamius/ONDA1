@@ -94,18 +94,17 @@ class BluetoothManager(private val context: Context) {
             return
         }
         
-        Log.d(TAG, "Starting BLE scan for Heart Rate devices...")
+        Log.d(TAG, "Starting BLE scan for all BLE devices...")
         
-        val scanFilter = ScanFilter.Builder()
-            .setServiceUuid(ParcelUuid(HEART_RATE_SERVICE_UUID))
-            .build()
-        
+        // Remove strict filter - many devices don't advertise Heart Rate UUID in scan response
+        // We'll filter client-side after connection
         val scanSettings = ScanSettings.Builder()
             .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY)
             .build()
         
         try {
-            bluetoothLeScanner?.startScan(listOf(scanFilter), scanSettings, scanCallback)
+            // Scan all BLE devices without filter to find more heart rate monitors
+            bluetoothLeScanner?.startScan(null, scanSettings, scanCallback)
             isScanning = true
             
             // Auto-stop scan after 10 seconds
@@ -241,7 +240,12 @@ class BluetoothManager(private val context: Context) {
             when (newState) {
                 BluetoothProfile.STATE_CONNECTED -> {
                     Log.d(TAG, "Connected to GATT server")
-                    gatt.discoverServices()
+                    try {
+                        gatt.discoverServices()
+                    } catch (e: SecurityException) {
+                        Log.e(TAG, "SecurityException discovering services: ${e.message}")
+                        onError?.invoke("Permission denied during service discovery")
+                    }
                 }
                 BluetoothProfile.STATE_DISCONNECTED -> {
                     Log.d(TAG, "Disconnected from GATT server")
@@ -255,26 +259,31 @@ class BluetoothManager(private val context: Context) {
             if (status == BluetoothGatt.GATT_SUCCESS) {
                 Log.d(TAG, "Services discovered")
                 
-                val service = gatt.getService(HEART_RATE_SERVICE_UUID)
-                if (service != null) {
-                    val characteristic = service.getCharacteristic(HEART_RATE_MEASUREMENT_CHAR_UUID)
-                    if (characteristic != null) {
-                        // Enable notifications
-                        gatt.setCharacteristicNotification(characteristic, true)
-                        
-                        val descriptor = characteristic.getDescriptor(CLIENT_CHARACTERISTIC_CONFIG_UUID)
-                        descriptor?.value = BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE
-                        gatt.writeDescriptor(descriptor)
-                        
-                        Log.d(TAG, "Heart Rate notifications enabled")
-                        onConnected?.invoke()
+                try {
+                    val service = gatt.getService(HEART_RATE_SERVICE_UUID)
+                    if (service != null) {
+                        val characteristic = service.getCharacteristic(HEART_RATE_MEASUREMENT_CHAR_UUID)
+                        if (characteristic != null) {
+                            // Enable notifications
+                            gatt.setCharacteristicNotification(characteristic, true)
+                            
+                            val descriptor = characteristic.getDescriptor(CLIENT_CHARACTERISTIC_CONFIG_UUID)
+                            descriptor?.value = BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE
+                            gatt.writeDescriptor(descriptor)
+                            
+                            Log.d(TAG, "Heart Rate notifications enabled")
+                            onConnected?.invoke()
+                        } else {
+                            Log.e(TAG, "Heart Rate characteristic not found")
+                            onError?.invoke("Heart Rate characteristic not found")
+                        }
                     } else {
-                        Log.e(TAG, "Heart Rate characteristic not found")
-                        onError?.invoke("Heart Rate characteristic not found")
+                        Log.e(TAG, "Heart Rate service not found")
+                        onError?.invoke("Heart Rate service not found")
                     }
-                } else {
-                    Log.e(TAG, "Heart Rate service not found")
-                    onError?.invoke("Heart Rate service not found")
+                } catch (e: SecurityException) {
+                    Log.e(TAG, "SecurityException enabling notifications: ${e.message}")
+                    onError?.invoke("Permission denied while enabling heart rate notifications")
                 }
             } else {
                 Log.e(TAG, "Service discovery failed: $status")

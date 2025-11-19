@@ -75,6 +75,9 @@ export function useHeartRate() {
 
     const handlePermissionsGranted = () => {
       console.log('[Bluetooth] Permissions granted, starting scan...');
+      // Reset state for fresh scan (fixes retry after denial)
+      setAvailableDevices([]);
+      setIsScanning(true);
       if (window.Android) {
         window.Android.startBluetoothScan();
       }
