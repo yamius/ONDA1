@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         private const val PERMISSION_REQUEST_CODE = 100
+        private const val BLUETOOTH_PERMISSION_REQUEST_CODE = 101
     }
 
     private val requestHealthPermissions = registerForActivityResult(
@@ -323,25 +324,51 @@ class MainActivity : AppCompatActivity() {
     ) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 
-        if (requestCode == PERMISSION_REQUEST_CODE) {
-            val request = pendingPermissionRequest
-            if (request != null) {
-                if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    // Разрешение получено, грантим запрос WebView
+        when (requestCode) {
+            PERMISSION_REQUEST_CODE -> {
+                val request = pendingPermissionRequest
+                if (request != null) {
+                    if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                        // Разрешение получено, грантим запрос WebView
+                        runOnUiThread {
+                            request.grant(request.resources)
+                            Log.d("WebViewConsole", "User granted microphone permission - granting to WebView")
+                        }
+                    } else {
+                        // Разрешение отклонено
+                        runOnUiThread {
+                            request.deny()
+                            Log.d("WebViewConsole", "User denied microphone permission")
+                        }
+                    }
+                    pendingPermissionRequest = null
+                } else {
+                    Log.d("WebViewConsole", "onRequestPermissionsResult: pendingPermissionRequest is null")
+                }
+            }
+            
+            BLUETOOTH_PERMISSION_REQUEST_CODE -> {
+                val allGranted = grantResults.all { it == PackageManager.PERMISSION_GRANTED }
+                
+                if (allGranted) {
+                    Log.d("WebViewConsole", "[Bluetooth] Runtime permissions granted")
+                    // Notify web app that permissions are ready
                     runOnUiThread {
-                        request.grant(request.resources)
-                        Log.d("WebViewConsole", "User granted microphone permission - granting to WebView")
+                        webView.evaluateJavascript(
+                            "window.dispatchEvent(new CustomEvent('bluetooth-permissions-granted'))",
+                            null
+                        )
                     }
                 } else {
-                    // Разрешение отклонено
+                    Log.d("WebViewConsole", "[Bluetooth] Runtime permissions denied")
+                    // Notify web app about denied permissions
                     runOnUiThread {
-                        request.deny()
-                        Log.d("WebViewConsole", "User denied microphone permission")
+                        webView.evaluateJavascript(
+                            "window.dispatchEvent(new CustomEvent('bluetooth-permissions-denied'))",
+                            null
+                        )
                     }
                 }
-                pendingPermissionRequest = null
-            } else {
-                Log.d("WebViewConsole", "onRequestPermissionsResult: pendingPermissionRequest is null")
             }
         }
     }
@@ -426,8 +453,42 @@ class MainActivity : AppCompatActivity() {
         }
         
         @JavascriptInterface
+        fun requestBluetoothPermissions() {
+            Log.d("WebViewConsole", "[Bluetooth] requestBluetoothPermissions called")
+            
+            if (hasBluetoothPermissions()) {
+                Log.d("WebViewConsole", "[Bluetooth] Permissions already granted")
+                // Immediately notify that permissions are ready
+                runOnUiThread {
+                    webView.evaluateJavascript(
+                        "window.dispatchEvent(new CustomEvent('bluetooth-permissions-granted'))",
+                        null
+                    )
+                }
+            } else {
+                Log.d("WebViewConsole", "[Bluetooth] Requesting runtime permissions")
+                activity.requestBluetoothPermissions()
+            }
+        }
+        
+        @JavascriptInterface
         fun startBluetoothScan() {
             Log.d("WebViewConsole", "[Bluetooth] startBluetoothScan called")
+            
+            // Check permissions - fail fast if missing
+            if (!hasBluetoothPermissions()) {
+                Log.e("WebViewConsole", "[Bluetooth] Cannot scan without permissions")
+                runOnUiThread {
+                    webView.evaluateJavascript(
+                        """window.dispatchEvent(new CustomEvent('bluetooth-error', { 
+                            detail: { error: 'Missing Bluetooth permissions. Call requestBluetoothPermissions() first.' } 
+                        }))""",
+                        null
+                    )
+                }
+                return
+            }
+            
             bluetoothManager.startScan()
         }
         
@@ -440,6 +501,21 @@ class MainActivity : AppCompatActivity() {
         @JavascriptInterface
         fun connectBluetoothDevice(deviceAddress: String) {
             Log.d("WebViewConsole", "[Bluetooth] connectBluetoothDevice called: $deviceAddress")
+            
+            // Check permissions - fail fast if missing
+            if (!hasBluetoothPermissions()) {
+                Log.e("WebViewConsole", "[Bluetooth] Cannot connect without permissions")
+                runOnUiThread {
+                    webView.evaluateJavascript(
+                        """window.dispatchEvent(new CustomEvent('bluetooth-error', { 
+                            detail: { error: 'Missing Bluetooth permissions. Call requestBluetoothPermissions() first.' } 
+                        }))""",
+                        null
+                    )
+                }
+                return
+            }
+            
             bluetoothManager.connectToDevice(deviceAddress)
         }
         
@@ -482,6 +558,61 @@ class MainActivity : AppCompatActivity() {
                 }
             } catch (e: Exception) {
                 Log.e("WebViewConsole", "[HealthConnect] Error reading health data: ${e.message}", e)
+            }
+        }
+    }
+    
+    /**
+     * Check if Bluetooth runtime permissions are granted (Android 12+)
+     */
+    private fun hasBluetoothPermissions(): Boolean {
+        return if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
+            val scanGranted = ContextCompat.checkSelfPermission(
+                this,
+                Manifest.permission.BLUETOOTH_SCAN
+            ) == PackageManager.PERMISSION_GRANTED
+            
+            val connectGranted = ContextCompat.checkSelfPermission(
+                this,
+                Manifest.permission.BLUETOOTH_CONNECT
+            ) == PackageManager.PERMISSION_GRANTED
+            
+            scanGranted && connectGranted
+        } else {
+            // Below Android 12, manifest permissions are sufficient
+            true
+        }
+    }
+    
+    /**
+     * Request Bluetooth runtime permissions (Android 12+)
+     */
+    private fun requestBluetoothPermissions() {
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
+            val permissionsToRequest = mutableListOf<String>()
+            
+            if (ContextCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.BLUETOOTH_SCAN
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                permissionsToRequest.add(Manifest.permission.BLUETOOTH_SCAN)
+            }
+            
+            if (ContextCompat.checkSelfPermission(
+                    this,
+                    Manifest.permission.BLUETOOTH_CONNECT
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                permissionsToRequest.add(Manifest.permission.BLUETOOTH_CONNECT)
+            }
+            
+            if (permissionsToRequest.isNotEmpty()) {
+                ActivityCompat.requestPermissions(
+                    this,
+                    permissionsToRequest.toTypedArray(),
+                    BLUETOOTH_PERMISSION_REQUEST_CODE
+                )
             }
         }
     }

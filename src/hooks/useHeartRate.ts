@@ -70,6 +70,20 @@ export function useHeartRate() {
       const customEvent = event as CustomEvent<{ error: string }>;
       console.error('[Bluetooth] Error:', customEvent.detail.error);
       setIsScanning(false);
+      alert(`Bluetooth Error: ${customEvent.detail.error}`);
+    };
+
+    const handlePermissionsGranted = () => {
+      console.log('[Bluetooth] Permissions granted, starting scan...');
+      if (window.Android) {
+        window.Android.startBluetoothScan();
+      }
+    };
+
+    const handlePermissionsDenied = () => {
+      console.error('[Bluetooth] Permissions denied by user');
+      setIsScanning(false);
+      alert('Bluetooth permissions denied. Please grant permissions to use heart rate monitors.');
     };
 
     window.addEventListener('bluetooth-device-found', handleDeviceFound);
@@ -77,6 +91,8 @@ export function useHeartRate() {
     window.addEventListener('bluetooth-disconnected', handleDisconnected);
     window.addEventListener('bluetooth-hr-update', handleHRUpdate);
     window.addEventListener('bluetooth-error', handleError);
+    window.addEventListener('bluetooth-permissions-granted', handlePermissionsGranted);
+    window.addEventListener('bluetooth-permissions-denied', handlePermissionsDenied);
 
     return () => {
       window.removeEventListener('bluetooth-device-found', handleDeviceFound);
@@ -84,6 +100,8 @@ export function useHeartRate() {
       window.removeEventListener('bluetooth-disconnected', handleDisconnected);
       window.removeEventListener('bluetooth-hr-update', handleHRUpdate);
       window.removeEventListener('bluetooth-error', handleError);
+      window.removeEventListener('bluetooth-permissions-granted', handlePermissionsGranted);
+      window.removeEventListener('bluetooth-permissions-denied', handlePermissionsDenied);
     };
   }, []);
 
@@ -117,11 +135,13 @@ export function useHeartRate() {
         setAvailableDevices([]);
         setIsScanning(true);
 
-        // Start scan
-        console.log('[Bluetooth] Starting scan...');
-        window.Android.startBluetoothScan();
+        // Request permissions first - scan will start automatically on grant
+        console.log('[Bluetooth] Requesting permissions...');
+        window.Android.requestBluetoothPermissions();
 
-        // Wait for user to select device (UI will show list)
+        // Wait for permission events
+        // If granted -> bluetooth-permissions-granted event -> we can start scan
+        // If denied -> bluetooth-permissions-denied event -> show error
         // Connection happens when user calls connectToDevice()
         
       } else if (isWebBluetoothSupported) {

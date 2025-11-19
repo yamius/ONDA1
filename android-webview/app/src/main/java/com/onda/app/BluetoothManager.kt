@@ -1,5 +1,6 @@
 package com.onda.app
 
+import android.Manifest
 import android.annotation.SuppressLint
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
@@ -15,8 +16,12 @@ import android.bluetooth.le.ScanFilter
 import android.bluetooth.le.ScanResult
 import android.bluetooth.le.ScanSettings
 import android.content.Context
+import android.content.pm.PackageManager
+import android.os.Handler
+import android.os.Looper
 import android.os.ParcelUuid
 import android.util.Log
+import androidx.core.content.ContextCompat
 import java.util.UUID
 
 /**
@@ -41,6 +46,8 @@ class BluetoothManager(private val context: Context) {
     private var bluetoothLeScanner: BluetoothLeScanner? = bluetoothAdapter?.bluetoothLeScanner
     private var bluetoothGatt: BluetoothGatt? = null
     private var isScanning = false
+    private var autoStopHandler: Handler? = null
+    private var autoStopRunnable: Runnable? = null
     
     // Callbacks для JavaScript
     var onDeviceFound: ((String, String) -> Unit)? = null  // (deviceId, deviceName)
@@ -63,6 +70,19 @@ class BluetoothManager(private val context: Context) {
      */
     @SuppressLint("MissingPermission")
     fun startScan() {
+        // Check runtime permissions (Android 12+)
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
+            val scanPermission = ContextCompat.checkSelfPermission(
+                context,
+                Manifest.permission.BLUETOOTH_SCAN
+            )
+            if (scanPermission != PackageManager.PERMISSION_GRANTED) {
+                Log.e(TAG, "BLUETOOTH_SCAN permission not granted")
+                onError?.invoke("BLUETOOTH_SCAN permission denied. Please grant permissions first.")
+                return
+            }
+        }
+        
         if (!isBluetoothAvailable()) {
             Log.e(TAG, "Bluetooth not available")
             onError?.invoke("Bluetooth not available")
@@ -84,13 +104,22 @@ class BluetoothManager(private val context: Context) {
             .setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY)
             .build()
         
-        bluetoothLeScanner?.startScan(listOf(scanFilter), scanSettings, scanCallback)
-        isScanning = true
-        
-        // Auto-stop scan after 10 seconds
-        android.os.Handler(android.os.Looper.getMainLooper()).postDelayed({
-            stopScan()
-        }, 10000)
+        try {
+            bluetoothLeScanner?.startScan(listOf(scanFilter), scanSettings, scanCallback)
+            isScanning = true
+            
+            // Auto-stop scan after 10 seconds
+            autoStopRunnable = Runnable {
+                stopScan()
+            }
+            autoStopHandler = Handler(Looper.getMainLooper())
+            autoStopHandler?.postDelayed(autoStopRunnable!!, 10000)
+            
+        } catch (e: SecurityException) {
+            Log.e(TAG, "SecurityException starting scan: ${e.message}")
+            onError?.invoke("Permission denied. Cannot start Bluetooth scan.")
+            isScanning = false
+        }
     }
     
     /**
@@ -101,7 +130,20 @@ class BluetoothManager(private val context: Context) {
         if (!isScanning) return
         
         Log.d(TAG, "Stopping BLE scan")
-        bluetoothLeScanner?.stopScan(scanCallback)
+        
+        // Cancel auto-stop handler
+        autoStopRunnable?.let { runnable ->
+            autoStopHandler?.removeCallbacks(runnable)
+        }
+        autoStopHandler = null
+        autoStopRunnable = null
+        
+        try {
+            bluetoothLeScanner?.stopScan(scanCallback)
+        } catch (e: SecurityException) {
+            Log.e(TAG, "SecurityException stopping scan: ${e.message}")
+        }
+        
         isScanning = false
     }
     
