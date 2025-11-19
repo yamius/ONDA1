@@ -4,6 +4,33 @@ ONDA is a mindfulness and wellness mobile application that combines gamification
 
 The application is built as a React-based Progressive Web App (PWA) with native Android WebView wrapper support, featuring multilingual support (English, Spanish, Russian, Ukrainian, Chinese) and both light/dark themes.
 
+# Recent Changes
+
+## Build #45 (November 19, 2025)
+
+**Health Connect Error Handling Improvements:**
+- Fixed SecurityException handling for body measurements (Weight, Height, Body Fat, Lean Body Mass)
+- Each measurement now wrapped in separate try/catch to prevent one missing permission from breaking others
+- Changed SecurityException logging from ERROR to WARNING for expected missing permissions (e.g., Lean Body Mass)
+- Added detailed logging for heart rate queries (time range, record count, values)
+- Added vitals completion logging to help diagnose missing data
+
+**Bug Fix:**
+- Build #43-44 showed `Error reading body measurements` with 50+ line stack trace when Lean Body Mass permission denied
+- Now shows clean `WARNING: No permission for Lean Body Mass (expected - user denied)`
+- Other body measurements (Weight, Height, Body Fat) continue to work even if one permission missing
+
+**Diagnosis Results:**
+- Steps, Active Calories, and Sleep data working correctly (6426 steps, 762 kcal, sleep sessions)
+- Heart Rate showing 0 records: **Not a bug** - device has no heart rate data in Health Connect for last 24 hours
+- Solution: Add heart rate data via Google Fit, Samsung Health, or fitness tracker
+
+**Files Changed:**
+- `android-webview/app/src/main/java/com/onda/app/HealthConnectManager.kt` - improved error handling and logging
+- Added `BUILD_APK_45.md` - comprehensive build and testing instructions
+- Added `android-webview/build-apk-45.sh` - automated build script
+- Added `HOW_TO_ADD_HEART_RATE.md` - guide for adding test heart rate data
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
