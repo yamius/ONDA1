@@ -173,6 +173,19 @@ class BluetoothManager(private val context: Context) {
      */
     @SuppressLint("MissingPermission")
     fun connectToDevice(deviceAddress: String) {
+        // Check runtime permissions (Android 12+)
+        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
+            val connectPermission = ContextCompat.checkSelfPermission(
+                context,
+                Manifest.permission.BLUETOOTH_CONNECT
+            )
+            if (connectPermission != PackageManager.PERMISSION_GRANTED) {
+                Log.e(TAG, "BLUETOOTH_CONNECT permission not granted")
+                onError?.invoke("BLUETOOTH_CONNECT permission denied. Please grant permissions first.")
+                return
+            }
+        }
+        
         stopScan()
         
         Log.d(TAG, "Connecting to device: $deviceAddress")
@@ -187,7 +200,12 @@ class BluetoothManager(private val context: Context) {
         // Disconnect previous device if any
         disconnect()
         
-        bluetoothGatt = device.connectGatt(context, false, gattCallback)
+        try {
+            bluetoothGatt = device.connectGatt(context, false, gattCallback)
+        } catch (e: SecurityException) {
+            Log.e(TAG, "SecurityException connecting to device: ${e.message}")
+            onError?.invoke("Permission denied. Cannot connect to device.")
+        }
     }
     
     /**
@@ -196,8 +214,21 @@ class BluetoothManager(private val context: Context) {
     @SuppressLint("MissingPermission")
     fun disconnect() {
         Log.d(TAG, "Disconnecting from device")
-        bluetoothGatt?.disconnect()
-        bluetoothGatt?.close()
+        
+        // Cancel auto-stop handler if still running
+        autoStopRunnable?.let { runnable ->
+            autoStopHandler?.removeCallbacks(runnable)
+        }
+        autoStopHandler = null
+        autoStopRunnable = null
+        
+        try {
+            bluetoothGatt?.disconnect()
+            bluetoothGatt?.close()
+        } catch (e: SecurityException) {
+            Log.e(TAG, "SecurityException disconnecting: ${e.message}")
+        }
+        
         bluetoothGatt = null
     }
     
