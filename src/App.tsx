@@ -31,7 +31,8 @@ function App() {
 
   return (
     <div>
-      <div className="fixed top-4 right-4 z-50">
+      {/* DEBUG: Audio Test button hidden in production */}
+      {/* <div className="fixed top-4 right-4 z-50">
         <button
           onClick={() => {
             setShowTest(true);
@@ -42,7 +43,7 @@ function App() {
         >
           🎵 Тест Аудио
         </button>
-      </div>
+      </div> */}
       <OndaLevel1 />
     </div>
   );

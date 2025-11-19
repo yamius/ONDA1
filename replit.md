@@ -6,6 +6,19 @@ The application is built as a React-based Progressive Web App (PWA) with native 
 
 # Recent Changes
 
+## UI Cleanup (November 19, 2025)
+
+**Production UI Cleanup:**
+- Hidden debug UI elements for cleaner production interface:
+  - Audio Test button (🎵 Тест Аудио) - hidden in main app
+  - HC Debug Monitor panel - hidden in Settings modal
+- Debug components remain in codebase but commented out for easy re-enabling during development
+- AudioTest page still accessible via direct URL `/audio-test` or `?test=audio` if needed
+
+**Files Changed:**
+- `src/App.tsx` - commented out Audio Test button
+- `src/components/SettingsModal.tsx` - commented out HealthConnectDebugPanel
+
 ## Build #46 (November 19, 2025)
 
 **Data Source Logging:**

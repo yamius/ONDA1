@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
 import type { UserProfile } from '../lib/supabase';
 import { HealthConnectCompactPanel } from './HealthConnectCompactPanel';
-import { HealthConnectDebugPanel } from './HealthConnectDebugPanel';
+// import { HealthConnectDebugPanel } from './HealthConnectDebugPanel'; // DEBUG: Hidden in production
 import type { HealthConnectHook } from '../hooks/useHealthConnect';
 
 interface SettingsModalProps {
@@ -259,10 +259,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               data={healthConnectData.lastUpdate}
             />
 
-            {/* Debug panel for testing */}
-            <div className="mt-4">
+            {/* DEBUG: HealthConnect Debug Panel hidden in production */}
+            {/* <div className="mt-4">
               <HealthConnectDebugPanel />
-            </div>
+            </div> */}
 
             <div className="flex gap-3">
               <button
