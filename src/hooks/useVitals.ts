@@ -4,7 +4,7 @@ import { useHeartRate } from "./useHeartRate";
 import { useMotion } from "./useMotion";
 
 export function useVitals() {
-  const { hr, connected, connect, disconnect, seriesRef } = useHeartRate();
+  const { hr, connected, connect, disconnect, seriesRef, isScanning, availableDevices, connectToDevice, stopScan, platform } = useHeartRate();
   const { activity } = useMotion();
 
   const [br, setBr] = useState<number | null>(null);
@@ -180,7 +180,9 @@ export function useVitals() {
 
   return {
     connected, connect, disconnect, hr, br, stress, energy, hrv, csi, recoveryRate, hrTrendSlope, hrAcceleration,
-    arousal, calm, focus, excitement, fatigue, flow
+    arousal, calm, focus, excitement, fatigue, flow,
+    // Android Bluetooth-specific fields
+    isScanning, availableDevices, connectToDevice, stopScan, platform
   };
 }
 

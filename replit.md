@@ -6,32 +6,58 @@ The application is a React-based Progressive Web App (PWA) with native Android W
 
 # Recent Changes
 
-## Bluetooth UI Bug Fix - Device List Display (November 19, 2025)
+## Bluetooth Data Flow Bug Fix - useVitals Not Propagating Android Fields (November 20, 2025)
 
-**CRITICAL BUG FIXED:** Device list disappeared after scan completed ✅
+**CRITICAL BUG FIXED:** Device list state not propagating from `useHeartRate` to UI ✅
 
-**User Issue:** "Granted permissions, devices found in logs, but selection list doesn't appear in UI"
+**User Issue:** Devices found and added to state, but `SettingsModal` receives `undefined` for all Bluetooth fields
 
-**Root Cause:** 
-`SettingsModal.tsx` line 332 had incorrect rendering condition that hid device list when scan stopped:
-```tsx
-{isScanning && availableDevices.length > 0 && ...}  // ❌ BAD
+**Root Cause Analysis:**
+1. `useHeartRate()` correctly returns Android-specific fields:
+   ```typescript
+   return { hr, connected, connect, disconnect, seriesRef, 
+            isScanning, availableDevices, connectToDevice, stopScan, platform };
+   ```
+
+2. **BUT** `useVitals()` only destructured basic fields:
+   ```typescript
+   const { hr, connected, connect, disconnect, seriesRef } = useHeartRate();  // ❌ Missing Android fields!
+   ```
+
+3. And only returned basic fields:
+   ```typescript
+   return { connected, connect, disconnect, hr, br, stress, ... };  // ❌ Missing Android fields!
+   ```
+
+4. Result: `SettingsModal` received `availableDevices = undefined`, `isScanning = undefined`, etc.
+
+**Fix in `src/hooks/useVitals.ts`:**
+```typescript
+// Destructure ALL fields from useHeartRate
+const { hr, connected, connect, disconnect, seriesRef, 
+        isScanning, availableDevices, connectToDevice, stopScan, platform } = useHeartRate();
+
+// Return ALL fields including Android-specific ones
+return {
+  connected, connect, disconnect, hr, br, stress, energy, hrv, csi, recoveryRate, 
+  hrTrendSlope, hrAcceleration, arousal, calm, focus, excitement, fatigue, flow,
+  isScanning, availableDevices, connectToDevice, stopScan, platform  // ✅ NOW INCLUDED
+};
 ```
-When scan auto-stopped after 10 seconds → `isScanning = false` → list hidden even with found devices!
 
-**Fix:**
-```tsx
-{availableDevices.length > 0 && ...}  // ✅ GOOD
-```
-Device list now persists after scan completes, allowing user to select tracker.
-
-**Evidence from User's Logs:**
-- Native finds devices: `BluetoothManager: Found device: Xiaomi Smart Band 10 3955` ✅
-- JS receives events: `WebViewConsole: [Bluetooth] Device found: [object Object]` ✅  
-- UI incorrectly hid list after 10s auto-stop ❌ → **NOW FIXED** ✅
+**Evidence from Debugging Logs:**
+- Before fix: `[SettingsModal] availableDevices updated: undefined` ❌
+- After fix: Full device list should propagate to UI ✅
 
 **Files Changed:**
-- `src/components/SettingsModal.tsx` - removed `isScanning &&` gate from device list condition
+- `src/hooks/useVitals.ts` - Added Android Bluetooth fields to destructuring and return statement
+- `src/hooks/useHeartRate.ts` - Added debug logging for device count tracking
+- `src/components/SettingsModal.tsx` - Added useEffect logging to track prop updates
+
+## Previous: Bluetooth UI Rendering Fix (November 19, 2025)
+
+**Fixed:** Removed `isScanning &&` condition from device list rendering in `SettingsModal.tsx`
+- Devices now remain visible after 10-second scan auto-stop
 
 # User Preferences
 
