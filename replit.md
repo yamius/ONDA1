@@ -6,6 +6,33 @@ The application is a React-based Progressive Web App (PWA) with native Android W
 
 # Recent Changes
 
+## App Branding Update - "ONDA Life" (November 20, 2025)
+
+**User Request:** Display "ONDA Life" instead of Supabase URL on Google OAuth screen
+
+**Changes Made:**
+1. **index.html** - Updated title and added meta tags:
+   ```html
+   <title>ONDA Life - Практики осознанности</title>
+   <meta name="application-name" content="ONDA Life" />
+   <meta property="og:title" content="ONDA Life" />
+   <meta property="og:site_name" content="ONDA Life" />
+   ```
+
+2. **AuthModal.tsx** - Updated heading from "ONDA" to "ONDA Life"
+
+3. **strings.xml (Android)** - Updated app name:
+   ```xml
+   <string name="app_name">ONDA Life</string>
+   ```
+
+**Google Cloud Console Setup Required:**
+- See `GOOGLE_OAUTH_BRANDING_RU.md` for complete instructions
+- Update "Application name" in OAuth consent screen to "ONDA Life"
+- This controls what users see on Google sign-in screen
+
+---
+
 ## Bluetooth UX Improvements (November 20, 2025)
 
 ### Device List Auto-Hide on Selection ✅

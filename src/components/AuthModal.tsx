@@ -155,7 +155,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
         )}
 
         <div className="text-center mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl font-light mb-2">ONDA</h2>
+          <h2 className="text-2xl sm:text-3xl font-light mb-2">ONDA Life</h2>
           <p className={`text-xs sm:text-sm ${isLightTheme ? 'text-gray-600' : 'text-white/70'}`}>
             {isLogin ? t('auth.sign_in_subtitle') : t('auth.sign_up_subtitle')}
           </p>
