@@ -6,53 +6,54 @@ The application is a React-based Progressive Web App (PWA) with native Android W
 
 # Recent Changes
 
-## Bluetooth Data Flow Bug Fix - useVitals Not Propagating Android Fields (November 20, 2025)
+## Bluetooth UX Improvements (November 20, 2025)
 
-**CRITICAL BUG FIXED:** Device list state not propagating from `useHeartRate` to UI ✅
+### Device List Auto-Hide on Selection ✅
 
-**User Issue:** Devices found and added to state, but `SettingsModal` receives `undefined` for all Bluetooth fields
+**User Request:** "При выборе трекера список других устройств должен скрываться"
 
-**Root Cause Analysis:**
-1. `useHeartRate()` correctly returns Android-specific fields:
-   ```typescript
-   return { hr, connected, connect, disconnect, seriesRef, 
-            isScanning, availableDevices, connectToDevice, stopScan, platform };
-   ```
+**Implemented:**
+When user selects a device from the list, the device list automatically hides. List reappears only on next scan.
 
-2. **BUT** `useVitals()` only destructured basic fields:
-   ```typescript
-   const { hr, connected, connect, disconnect, seriesRef } = useHeartRate();  // ❌ Missing Android fields!
-   ```
-
-3. And only returned basic fields:
-   ```typescript
-   return { connected, connect, disconnect, hr, br, stress, ... };  // ❌ Missing Android fields!
-   ```
-
-4. Result: `SettingsModal` received `availableDevices = undefined`, `isScanning = undefined`, etc.
-
-**Fix in `src/hooks/useVitals.ts`:**
+**Change in `src/hooks/useHeartRate.ts`:**
 ```typescript
-// Destructure ALL fields from useHeartRate
-const { hr, connected, connect, disconnect, seriesRef, 
-        isScanning, availableDevices, connectToDevice, stopScan, platform } = useHeartRate();
-
-// Return ALL fields including Android-specific ones
-return {
-  connected, connect, disconnect, hr, br, stress, energy, hrv, csi, recoveryRate, 
-  hrTrendSlope, hrAcceleration, arousal, calm, focus, excitement, fatigue, flow,
-  isScanning, availableDevices, connectToDevice, stopScan, platform  // ✅ NOW INCLUDED
-};
+const connectToDevice = useCallback((deviceId: string) => {
+  window.Android.connectBluetoothDevice(deviceId);
+  
+  // Hide device list after selecting a device
+  setAvailableDevices([]);
+  setIsScanning(false);
+}, []);
 ```
 
-**Evidence from Debugging Logs:**
-- Before fix: `[SettingsModal] availableDevices updated: undefined` ❌
-- After fix: Full device list should propagate to UI ✅
+**User Flow:**
+1. User clicks "Connect Tracker" → Scan starts → Device list appears
+2. User selects device → **List hides** (cleaner UI) → Connection attempt
+3. User clicks "Connect Tracker" again → New scan → Device list appears again
+
+---
+
+### Bluetooth Data Flow Bug Fix - useVitals Not Propagating Android Fields ✅
+
+**CRITICAL BUG FIXED:** Device list state not propagating from `useHeartRate` to UI
+
+**Root Cause:** `useVitals()` didn't pass through Android Bluetooth fields from `useHeartRate()`:
+```typescript
+// ❌ BEFORE: Missing Android fields
+const { hr, connected, connect, disconnect, seriesRef } = useHeartRate();
+return { connected, connect, disconnect, hr, br, stress, ... };
+
+// ✅ AFTER: All fields included
+const { hr, connected, connect, disconnect, seriesRef, 
+        isScanning, availableDevices, connectToDevice, stopScan, platform } = useHeartRate();
+return { connected, connect, disconnect, hr, br, stress, ..., 
+         isScanning, availableDevices, connectToDevice, stopScan, platform };
+```
 
 **Files Changed:**
-- `src/hooks/useVitals.ts` - Added Android Bluetooth fields to destructuring and return statement
-- `src/hooks/useHeartRate.ts` - Added debug logging for device count tracking
-- `src/components/SettingsModal.tsx` - Added useEffect logging to track prop updates
+- `src/hooks/useVitals.ts` - Pass through Android Bluetooth fields
+- `src/hooks/useHeartRate.ts` - Auto-hide device list on selection + debug logging
+- `src/components/SettingsModal.tsx` - Debug logging for prop tracking
 
 ## Previous: Bluetooth UI Rendering Fix (November 19, 2025)
 
