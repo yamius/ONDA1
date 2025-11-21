@@ -26,7 +26,10 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.Insets
+import androidx.core.view.ViewCompat
 import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
 import androidx.health.connect.client.PermissionController
 import androidx.lifecycle.lifecycleScope
@@ -300,7 +303,34 @@ class MainActivity : AppCompatActivity() {
         insetsController.isAppearanceLightStatusBars = false  // Light text/icons on dark bg
         insetsController.isAppearanceLightNavigationBars = false  // Light nav buttons on dark bg
         
-        Log.d("WebViewConsole", "[EdgeToEdge] Enabled fullscreen mode with dark system bars")
+        // Listen for WindowInsets changes and inject CSS variables into WebView
+        ViewCompat.setOnApplyWindowInsetsListener(webView) { view, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+            
+            // Inject CSS variables for status bar and navigation bar padding
+            val statusBarHeight = insets.top
+            val navBarHeight = insets.bottom
+            
+            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets: top=$statusBarHeight, bottom=$navBarHeight")
+            
+            // Inject CSS variables into the document root
+            val jsCode = """
+                (function() {
+                    document.documentElement.style.setProperty('--safe-area-inset-top', '${statusBarHeight}px');
+                    document.documentElement.style.setProperty('--safe-area-inset-bottom', '${navBarHeight}px');
+                    console.log('[EdgeToEdge] CSS variables injected: top=${statusBarHeight}px, bottom=${navBarHeight}px');
+                })();
+            """.trimIndent()
+            
+            webView.post {
+                webView.evaluateJavascript(jsCode, null)
+            }
+            
+            // Return the insets unchanged (don't consume them)
+            windowInsets
+        }
+        
+        Log.d("WebViewConsole", "[EdgeToEdge] Enabled fullscreen mode with dark system bars and WindowInsets listener")
     }
     
     private fun setupHRBroadcastReceiver() {

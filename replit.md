@@ -4,6 +4,10 @@ ONDA is a mindfulness and wellness mobile application that combines gamification
 
 The application is a React-based Progressive Web App (PWA) with native Android WebView wrapper support, featuring multilingual support (English, Spanish, Russian, Ukrainian, Chinese) and both light/dark themes. The business vision is to provide an engaging and effective platform for personal growth, leveraging technology to make wellness practices accessible and motivating, with strong market potential in the digital health and self-improvement sectors.
 
+# User Preferences
+
+Preferred communication style: Simple, everyday language.
+
 # Recent Changes
 
 ## Edge-to-Edge Fullscreen Mode (November 21, 2025) ✅
@@ -14,219 +18,36 @@ The application is a React-based Progressive Web App (PWA) with native Android W
 - Status bar (top) and navigation bar (bottom) now use app's dark background color (#111827 / gray-900)
 - Light icons/text on system bars for dark theme
 - Edge-to-edge mode enabled - app draws behind system bars
-- Clean, immersive experience without colored system bars
+- Content padding automatically adjusted for status bar height using WindowInsets API
 
 **Technical Details:**
-1. **themes.xml** - Transparent system bars:
-   ```xml
-   <item name="android:statusBarColor">@android:color/transparent</item>
-   <item name="android:navigationBarColor">@android:color/transparent</item>
-   <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-   ```
+1. **themes.xml** - Transparent system bars in app theme
 
-2. **MainActivity.kt** - Edge-to-edge setup:
+2. **MainActivity.kt** - Edge-to-edge setup with WindowInsets:
    - `WindowCompat.setDecorFitsSystemWindows(window, false)` - Enable edge-to-edge
    - System bars colored #111827 (gray-900) matching app's dark theme
    - Light content mode for status/navigation bars (light icons on dark background)
+   - **WindowInsets handling via ViewCompat.setOnApplyWindowInsetsListener**:
+     - Reads system bar heights from WindowInsetsCompat.Type.systemBars()
+     - Injects CSS variables `--safe-area-inset-top` and `--safe-area-inset-bottom` via JavaScript
+     - **Important:** CSS `env(safe-area-inset-*)` does NOT work in Android WebView without display cutouts
+
+3. **index.css** - CSS padding using injected variables:
+   ```css
+   #root {
+     padding-top: var(--safe-area-inset-top, 0px);
+     padding-bottom: var(--safe-area-inset-bottom, 0px);
+   }
+   ```
 
 **Files Modified:**
 - `android-webview/app/src/main/res/values/themes.xml`
 - `android-webview/app/src/main/java/com/onda/app/MainActivity.kt`
+- `src/index.css`
+
+**Key Learning:** CSS `env(safe-area-inset-*)` is iOS-specific and does NOT work in Android WebView. Must use WindowInsets API to inject CSS variables via JavaScript.
 
 ---
-
-## Notification Heart Rate Feature - UI Hidden (November 21, 2025) 🔕
-
-**Status:** Feature postponed - UI completely hidden from Settings modal.
-
-**Reason:** OndaHeartRateService not starting properly despite enabled permissions. Requires Android logcat debugging.
-
-**Code Status:** All implementation code preserved but commented out in SettingsModal.tsx. Can be restored when service issue is resolved.
-
----
-
-## Notification Heart Rate + Foreground Service (November 21, 2025) - ⚠️ NOT WORKING YET
-
-**Feature:** Periodic heart rate monitoring from fitness tracker apps (Mi Fitness, Fitbit, Samsung Health, etc.) during meditation sessions.
-
-**Status:** Code implemented but service not starting properly. Permission is granted, but OndaHeartRateService fails to launch. Investigation postponed - focusing on other features.
-
-**Known Issues:**
-- ✅ NotificationListener permission can be enabled
-- ✅ Android bridge methods available
-- ❌ OndaHeartRateService does not start even with manual `startHeartRateService()` call
-- ❌ HR updates from fitness tracker apps not received
-
-**TODO (Future):**
-- Debug why foreground service doesn't start despite permission being granted
-- Check Android logcat for service crash logs
-- May need to test on different Android versions
-
-### Architecture (Variant B - Foreground Service)
-
-**Data Flow:**
-```
-Fitness App → Android Notification → OndaNotificationListener 
-  → Broadcast → OndaHeartRateService (Foreground) 
-  → Forward Broadcast → MainActivity → WebView → React hooks
-  → useVitals (feeds into BLE series for BR/Stress/Energy calculations)
-```
-
-**Components:**
-
-1. **OndaNotificationListener.kt** (NotificationListenerService)
-   - Monitors notifications from fitness apps
-   - Extracts HR using regex patterns
-   - Broadcasts HR updates (no singleton pattern)
-   - Requires notification access permission
-
-2. **OndaHeartRateService.kt** (Foreground Service)
-   - Receives broadcasts from NotificationListener
-   - Updates persistent notification with latest HR
-   - Forwards data to MainActivity's WebView
-   - Survives app backgrounding (critical for meditation sessions)
-
-3. **MainActivity.kt** (BroadcastReceiver)
-   - Registers receiver for HR broadcasts
-   - Dispatches JavaScript events to WebView
-   - Manages service lifecycle (start/stop)
-   - Bridge methods: `startHeartRateService()`, `stopHeartRateService()`, `isHeartRateServiceRunning()`
-
-4. **useNotificationHeartRate.ts** (React Hook)
-   - Auto-starts/stops service based on permission status
-   - Listens to `notification-hr-update` events
-   - Provides HR data to UI components
-
-5. **useVitals.ts** (Integration)
-   - Feeds notification HR into BLE series
-   - Enables BR/Stress/Energy calculations from notification data
-   - Unified biometric processing pipeline
-
-**UI Enhancements:**
-- Real-time metrics display (HR, source, time-ago) in SettingsModal
-- Fully localized time formatting (EN, RU, ES, UK, ZH)
-- Visual feedback with pulsing heart icon
-
-**Permissions:**
-- `android.permission.BIND_NOTIFICATION_LISTENER_SERVICE` (NotificationListener)
-- `android.permission.FOREGROUND_SERVICE` (API 28+)
-- `android.permission.FOREGROUND_SERVICE_HEALTH` (API 34+, backward compatible)
-
-**Design Decisions:**
-
-1. **BroadcastReceiver Pattern** (not singleton)
-   - More robust across lifecycle changes
-   - Explicit broadcast routing between components
-   - Removed `MainActivity.getInstance()` antipattern
-
-2. **Foreground Service** (survives background)
-   - Keeps HR pipeline alive during meditation
-   - Persistent notification shows latest HR
-   - Auto-restart on permission enable/disable
-
-3. **Scope Limitation** (accepted by user)
-   - ✅ Works during meditation (MainActivity active)
-   - ❌ Does NOT work when app fully backgrounded/destroyed
-   - **Rationale:** Sufficient for use case - HR only needed during active practices
-   - Alternative (not implemented): Room database + persistent storage for background HR
-
-**Files Modified:**
-- `android-webview/app/src/main/java/com/onda/app/OndaHeartRateService.kt` (NEW)
-- `android-webview/app/src/main/java/com/onda/app/OndaNotificationListener.kt`
-- `android-webview/app/src/main/java/com/onda/app/MainActivity.kt`
-- `android-webview/app/src/main/AndroidManifest.xml`
-- `src/hooks/useNotificationHeartRate.ts`
-- `src/hooks/useVitals.ts`
-- `src/components/SettingsModal.tsx`
-- `src/types/android.d.ts`
-- `public/locales/{en,ru,es,uk,zh}/translation.json`
-
----
-
-## App Branding Update - "ONDA Life" (November 20, 2025)
-
-**User Request:** Display "ONDA Life" instead of Supabase URL on Google OAuth screen
-
-**Changes Made:**
-1. **index.html** - Updated title and added meta tags:
-   ```html
-   <title>ONDA Life - Практики осознанности</title>
-   <meta name="application-name" content="ONDA Life" />
-   <meta property="og:title" content="ONDA Life" />
-   <meta property="og:site_name" content="ONDA Life" />
-   ```
-
-2. **AuthModal.tsx** - Updated heading from "ONDA" to "ONDA Life"
-
-3. **strings.xml (Android)** - Updated app name:
-   ```xml
-   <string name="app_name">ONDA Life</string>
-   ```
-
-**Google Cloud Console Setup Required:**
-- See `GOOGLE_OAUTH_BRANDING_RU.md` for complete instructions
-- Update "Application name" in OAuth consent screen to "ONDA Life"
-- This controls what users see on Google sign-in screen
-
----
-
-## Bluetooth UX Improvements (November 20, 2025)
-
-### Device List Auto-Hide on Selection ✅
-
-**User Request:** "При выборе трекера список других устройств должен скрываться"
-
-**Implemented:**
-When user selects a device from the list, the device list automatically hides. List reappears only on next scan.
-
-**Change in `src/hooks/useHeartRate.ts`:**
-```typescript
-const connectToDevice = useCallback((deviceId: string) => {
-  window.Android.connectBluetoothDevice(deviceId);
-  
-  // Hide device list after selecting a device
-  setAvailableDevices([]);
-  setIsScanning(false);
-}, []);
-```
-
-**User Flow:**
-1. User clicks "Connect Tracker" → Scan starts → Device list appears
-2. User selects device → **List hides** (cleaner UI) → Connection attempt
-3. User clicks "Connect Tracker" again → New scan → Device list appears again
-
----
-
-### Bluetooth Data Flow Bug Fix - useVitals Not Propagating Android Fields ✅
-
-**CRITICAL BUG FIXED:** Device list state not propagating from `useHeartRate` to UI
-
-**Root Cause:** `useVitals()` didn't pass through Android Bluetooth fields from `useHeartRate()`:
-```typescript
-// ❌ BEFORE: Missing Android fields
-const { hr, connected, connect, disconnect, seriesRef } = useHeartRate();
-return { connected, connect, disconnect, hr, br, stress, ... };
-
-// ✅ AFTER: All fields included
-const { hr, connected, connect, disconnect, seriesRef, 
-        isScanning, availableDevices, connectToDevice, stopScan, platform } = useHeartRate();
-return { connected, connect, disconnect, hr, br, stress, ..., 
-         isScanning, availableDevices, connectToDevice, stopScan, platform };
-```
-
-**Files Changed:**
-- `src/hooks/useVitals.ts` - Pass through Android Bluetooth fields
-- `src/hooks/useHeartRate.ts` - Auto-hide device list on selection + debug logging
-- `src/components/SettingsModal.tsx` - Debug logging for prop tracking
-
-## Previous: Bluetooth UI Rendering Fix (November 19, 2025)
-
-**Fixed:** Removed `isScanning &&` condition from device list rendering in `SettingsModal.tsx`
-- Devices now remain visible after 10-second scan auto-stop
-
-# User Preferences
-
-Preferred communication style: Simple, everyday language.
 
 # System Architecture
 
@@ -234,13 +55,13 @@ Preferred communication style: Simple, everyday language.
 
 **Technology Stack:**
 - React 18 with TypeScript
-- Vite for build and development
+- Vite for build
 - TailwindCSS for styling
 - i18next for internationalization
 
 **Component Structure:**
 - Single `OndaLevel1` component as main entry point
-- Modal-based UI pattern for overlays (Auth, Settings, Practice, Shop)
+- Modal-based UI pattern for overlays
 - Custom hooks for data and side effects
 - Separation of presentation and business logic
 
@@ -266,8 +87,9 @@ Preferred communication style: Simple, everyday language.
 
 **Other Native Features:**
 - External browser launch for OAuth
-- Web Bluetooth API for heart rate monitor connectivity (production-ready)
+- Web Bluetooth API for heart rate monitor connectivity
 - Device motion API for activity detection
+- Immersive fullscreen experience with system bars matching app background color.
 
 ## Data Processing Pipeline
 
@@ -310,7 +132,6 @@ Preferred communication style: Simple, everyday language.
 - Supabase Storage CDN for audio files (~245MB)
 - Dual-layer caching (IndexedDB and Cache API)
 - Progressive loading with retry logic
-- Reduces APK size significantly (from 250MB to ~5MB)
 
 **Practice Audio Player:**
 - Multi-track audio support with auto progression
