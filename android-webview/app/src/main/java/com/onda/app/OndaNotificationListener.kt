@@ -1,5 +1,6 @@
 package com.onda.app
 
+import android.content.Intent
 import android.service.notification.NotificationListenerService
 import android.service.notification.StatusBarNotification
 import android.util.Log
@@ -9,6 +10,9 @@ class OndaNotificationListener : NotificationListenerService() {
     
     companion object {
         private const val TAG = "OndaNotificationListener"
+        
+        // Broadcast action for HR updates
+        const val ACTION_HR_UPDATE = "com.onda.app.HR_UPDATE"
         
         // List of fitness app package names to monitor
         private val FITNESS_APPS = setOf(
@@ -51,11 +55,16 @@ class OndaNotificationListener : NotificationListenerService() {
             if (heartRate != null && heartRate in 40..220) {
                 Log.d(TAG, "Heart rate extracted: $heartRate bpm from ${sbn.packageName}")
                 
-                // Send to MainActivity
-                MainActivity.getInstance()?.onNotificationHeartRate(
-                    heartRate = heartRate,
-                    source = sbn.packageName
-                )
+                // Send broadcast - ForegroundService will forward to MainActivity
+                // No longer using singleton pattern - broadcasts only
+                val intent = Intent(ACTION_HR_UPDATE).apply {
+                    putExtra("heartRate", heartRate)
+                    putExtra("source", sbn.packageName)
+                    putExtra("timestamp", System.currentTimeMillis())
+                    setPackage(packageName)
+                }
+                sendBroadcast(intent)
+                Log.d(TAG, "HR broadcast sent: $heartRate bpm (ForegroundService will forward to MainActivity)")
             }
         } catch (e: Exception) {
             Log.e(TAG, "Error processing notification: ${e.message}", e)

@@ -279,7 +279,17 @@
     "save": "Guardar",
     "cancel": "Cancelar",
     "saved": "Configuración guardada",
-    "appearance": "Apariencia"
+    "appearance": "Apariencia",
+    "notification_hr_enable": "Activar frecuencia cardíaca por notificaciones",
+    "notification_hr_enabled": "Notificaciones de FC activadas",
+    "notification_hr_latest": "Último",
+    "notification_hr_waiting": "Esperando actualizaciones...",
+    "notification_hr_source": "Fuente",
+    "notification_hr_fitness_app": "App de fitness",
+    "notification_hr_info": "Recibe actualizaciones periódicas de frecuencia cardíaca de tu app de fitness (Mi Fitness, Fitbit, Samsung Health, etc.)",
+    "notification_hr_seconds_ago": "hace {{count}}s",
+    "notification_hr_minutes_ago": "hace {{count}}m",
+    "notification_hr_hours_ago": "hace {{count}}h"
   },
   "profile": {
     "title": "Perfil",

@@ -314,35 +314,58 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                     }`}
                     data-testid="notification-hr-status"
                   >
-                    <div className="flex items-center justify-between">
-                      <div>
-                        <p 
-                          className={`text-xs ${
-                            isLightTheme ? 'text-gray-600' : 'text-white/60'
-                          }`}
-                          data-testid="text-notification-hr-value"
-                        >
-                          {notificationHR.hr 
-                            ? `${t('settings.notification_hr_latest', 'Latest')}: ${notificationHR.hr} bpm` 
-                            : t('settings.notification_hr_waiting', 'Waiting for updates...')}
-                        </p>
-                        {notificationHR.source && (
-                          <p 
-                            className={`text-xs mt-1 ${
+                    <div className="space-y-3">
+                      {/* Heart Rate Display */}
+                      <div className="flex items-center justify-between">
+                        <div className="flex-1">
+                          <div className="flex items-baseline gap-2">
+                            <span className={`text-2xl font-bold ${
+                              notificationHR.hr ? 'text-red-500' : (isLightTheme ? 'text-gray-400' : 'text-white/40')
+                            }`}>
+                              {notificationHR.hr ?? '--'}
+                            </span>
+                            <span className={`text-sm ${
                               isLightTheme ? 'text-gray-500' : 'text-white/50'
-                            }`}
-                            data-testid="text-notification-hr-source"
-                          >
-                            {t('settings.notification_hr_source', 'Source')}: {notificationHR.source.includes('mi.health') ? 'Mi Fitness' : 
-                                    notificationHR.source.includes('fitbit') ? 'Fitbit' :
-                                    notificationHR.source.includes('samsung') ? 'Samsung Health' :
-                                    t('settings.notification_hr_fitness_app', 'Fitness App')}
+                            }`}>bpm</span>
+                          </div>
+                          <p className={`text-xs mt-1 ${
+                            isLightTheme ? 'text-gray-500' : 'text-white/50'
+                          }`}>
+                            {notificationHR.lastUpdate 
+                              ? (() => {
+                                  const secondsAgo = Math.floor((Date.now() - notificationHR.lastUpdate) / 1000);
+                                  if (secondsAgo < 60) return t('settings.notification_hr_seconds_ago', '{{count}}s ago', { count: secondsAgo });
+                                  const minutesAgo = Math.floor(secondsAgo / 60);
+                                  if (minutesAgo < 60) return t('settings.notification_hr_minutes_ago', '{{count}}m ago', { count: minutesAgo });
+                                  const hoursAgo = Math.floor(minutesAgo / 60);
+                                  return t('settings.notification_hr_hours_ago', '{{count}}h ago', { count: hoursAgo });
+                                })()
+                              : t('settings.notification_hr_waiting', 'Waiting for updates...')}
                           </p>
-                        )}
+                        </div>
+                        <Heart className={`w-6 h-6 ${
+                          notificationHR.hr ? 'text-red-500 animate-pulse' : 'text-gray-400'
+                        }`} />
                       </div>
-                      <Heart className={`w-5 h-5 ${
-                        notificationHR.hr ? 'text-red-500 animate-pulse' : 'text-gray-400'
-                      }`} />
+                      
+                      {/* Source Info */}
+                      {notificationHR.source && (
+                        <div className={`flex items-center gap-2 text-xs ${
+                          isLightTheme ? 'text-gray-600' : 'text-white/60'
+                        }`}>
+                          <div className={`w-2 h-2 rounded-full ${
+                            notificationHR.hr ? 'bg-green-500' : 'bg-gray-400'
+                          }`} />
+                          <span data-testid="text-notification-hr-source">
+                            {notificationHR.source.includes('mi.health') ? 'Mi Fitness' : 
+                             notificationHR.source.includes('fitbit') ? 'Fitbit' :
+                             notificationHR.source.includes('samsung') ? 'Samsung Health' :
+                             notificationHR.source.includes('google') ? 'Google Fit' :
+                             notificationHR.source.includes('garmin') ? 'Garmin Connect' :
+                             t('settings.notification_hr_fitness_app', 'Fitness App')}
+                          </span>
+                        </div>
+                      )}
                     </div>
                   </div>
                 )}

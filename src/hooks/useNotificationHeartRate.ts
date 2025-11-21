@@ -33,6 +33,12 @@ export function useNotificationHeartRate(): UseNotificationHeartRateReturn {
       const enabled = window.Android.isNotificationListenerEnabled();
       setIsEnabled(enabled);
       console.log('[useNotificationHeartRate] Permission status:', enabled);
+      
+      // Start foreground service if permission is enabled
+      if (enabled && window.Android.startHeartRateService) {
+        window.Android.startHeartRateService();
+        console.log('[useNotificationHeartRate] Foreground service started');
+      }
     }
     
     // Listen for notification heart rate updates
@@ -56,16 +62,35 @@ export function useNotificationHeartRate(): UseNotificationHeartRateReturn {
     // Check permission status periodically (in case user enables it in settings)
     const permissionCheckInterval = setInterval(() => {
       if (window.Android?.isNotificationListenerEnabled) {
+        const wasEnabled = isEnabled;
         const enabled = window.Android.isNotificationListenerEnabled();
-        setIsEnabled(enabled);
+        
+        if (enabled !== wasEnabled) {
+          setIsEnabled(enabled);
+          
+          // Start/stop service when permission changes
+          if (enabled && window.Android.startHeartRateService) {
+            window.Android.startHeartRateService();
+            console.log('[useNotificationHeartRate] Service started (permission enabled)');
+          } else if (!enabled && window.Android.stopHeartRateService) {
+            window.Android.stopHeartRateService();
+            console.log('[useNotificationHeartRate] Service stopped (permission disabled)');
+          }
+        }
       }
     }, 5000); // Check every 5 seconds
     
     return () => {
       window.removeEventListener('notification-hr-update', handleHRUpdate);
       clearInterval(permissionCheckInterval);
+      
+      // Stop service on cleanup
+      if (window.Android?.stopHeartRateService) {
+        window.Android.stopHeartRateService();
+        console.log('[useNotificationHeartRate] Service stopped on cleanup');
+      }
     };
-  }, []);
+  }, [isEnabled]);
   
   const requestPermission = () => {
     if (window.Android?.requestNotificationListenerPermission) {

@@ -44,6 +44,12 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    
+    <!-- Foreground service for heart rate monitoring (API 28+) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!-- Foreground service type for health (API 34+) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH"
+        tools:ignore="UnusedAttribute" />
 
     <!-- Query for Health Connect and fitness apps -->
     <queries>
@@ -108,6 +114,14 @@
                 <action android:name="android.service.notification.NotificationListenerService" />
             </intent-filter>
         </service>
+        
+        <!-- Foreground Service for heart rate monitoring in background -->
+        <service
+            android:name=".OndaHeartRateService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="health"
+            tools:targetApi="34" />
     </application>
 
 </manifest>

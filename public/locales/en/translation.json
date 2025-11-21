@@ -512,7 +512,10 @@
     "notification_hr_waiting": "Waiting for updates...",
     "notification_hr_source": "Source",
     "notification_hr_fitness_app": "Fitness App",
-    "notification_hr_info": "Get periodic heart rate updates from your fitness tracker app (Mi Fitness, Fitbit, Samsung Health, etc.)"
+    "notification_hr_info": "Get periodic heart rate updates from your fitness tracker app (Mi Fitness, Fitbit, Samsung Health, etc.)",
+    "notification_hr_seconds_ago": "{{count}}s ago",
+    "notification_hr_minutes_ago": "{{count}}m ago",
+    "notification_hr_hours_ago": "{{count}}h ago"
   },
   "shop": {
     "title": "OND Shop",

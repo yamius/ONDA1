@@ -519,7 +519,10 @@
     "notification_hr_waiting": "Ожидание обновлений...",
     "notification_hr_source": "Источник",
     "notification_hr_fitness_app": "Фитнес-приложение",
-    "notification_hr_info": "Получайте периодические обновления пульса из вашего фитнес-приложения (Mi Fitness, Fitbit, Samsung Health и др.)"
+    "notification_hr_info": "Получайте периодические обновления пульса из вашего фитнес-приложения (Mi Fitness, Fitbit, Samsung Health и др.)",
+    "notification_hr_seconds_ago": "{{count}} сек назад",
+    "notification_hr_minutes_ago": "{{count}} мин назад",
+    "notification_hr_hours_ago": "{{count}} ч назад"
   },
   "shop": {
     "title": "Магазин OND",

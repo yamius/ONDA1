@@ -15,6 +15,10 @@ interface AndroidBridge {
   // Notification Listener methods
   isNotificationListenerEnabled(): boolean;
   requestNotificationListenerPermission(): void;
+  // Heart Rate Service methods (Foreground Service for background survival)
+  startHeartRateService(): void;
+  stopHeartRateService(): void;
+  isHeartRateServiceRunning(): boolean;
 }
 
 interface Window {

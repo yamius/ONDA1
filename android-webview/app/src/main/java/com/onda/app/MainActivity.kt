@@ -1,11 +1,14 @@
 package com.onda.app
 
 import android.Manifest
+import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.media.AudioManager
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
@@ -35,6 +38,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var healthConnectManager: HealthConnectManager
     private lateinit var bluetoothManager: BluetoothManager
     private var pendingPermissionRequest: PermissionRequest? = null
+    private var hrBroadcastReceiver: BroadcastReceiver? = null
 
     companion object {
         private const val PERMISSION_REQUEST_CODE = 100
@@ -266,6 +270,56 @@ class MainActivity : AppCompatActivity() {
         
         // Обработка deep link при первом запуске
         handleDeepLink(intent)
+        
+        // Register broadcast receiver for HR updates from NotificationListener/Service
+        setupHRBroadcastReceiver()
+    }
+    
+    private fun setupHRBroadcastReceiver() {
+        hrBroadcastReceiver = object : BroadcastReceiver() {
+            override fun onReceive(context: Context?, intent: Intent?) {
+                if (intent?.action == OndaNotificationListener.ACTION_HR_UPDATE) {
+                    val hr = intent.getIntExtra("heartRate", 0)
+                    val source = intent.getStringExtra("source") ?: "unknown"
+                    val timestamp = intent.getLongExtra("timestamp", System.currentTimeMillis())
+                    
+                    Log.d("WebViewConsole", "[NotificationHR] Broadcast received: $hr bpm from $source")
+                    
+                    if (hr > 0) {
+                        onNotificationHeartRate(hr, source, timestamp)
+                    }
+                }
+            }
+        }
+        
+        val filter = IntentFilter(OndaNotificationListener.ACTION_HR_UPDATE)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(hrBroadcastReceiver, filter, Context.RECEIVER_NOT_EXPORTED)
+        } else {
+            registerReceiver(hrBroadcastReceiver, filter)
+        }
+        
+        Log.d("WebViewConsole", "[NotificationHR] Broadcast receiver registered")
+    }
+    
+    override fun onDestroy() {
+        super.onDestroy()
+        
+        // Clear singleton reference
+        instance = null
+        
+        // Unregister broadcast receiver
+        hrBroadcastReceiver?.let {
+            try {
+                unregisterReceiver(it)
+                Log.d("WebViewConsole", "[NotificationHR] Broadcast receiver unregistered")
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[NotificationHR] Error unregistering receiver: ${e.message}")
+            }
+        }
+        
+        // Cleanup Bluetooth
+        bluetoothManager.cleanup()
     }
     
     override fun onNewIntent(intent: Intent?) {
@@ -409,14 +463,14 @@ class MainActivity : AppCompatActivity() {
      * Called by OndaNotificationListener when heart rate is detected in notifications
      * from fitness apps (Mi Fitness, Fitbit, Samsung Health, etc.)
      */
-    fun onNotificationHeartRate(heartRate: Int, source: String) {
+    fun onNotificationHeartRate(heartRate: Int, source: String, timestamp: Long = System.currentTimeMillis()) {
         runOnUiThread {
             if (::webView.isInitialized) {
                 val script = """
                     window.dispatchEvent(new CustomEvent('notification-hr-update', {
                         detail: {
                             heartRate: $heartRate,
-                            timestamp: ${System.currentTimeMillis()},
+                            timestamp: $timestamp,
                             source: '$source'
                         }
                     }));
@@ -602,6 +656,55 @@ class MainActivity : AppCompatActivity() {
                 Log.d("WebViewConsole", "[NotificationHR] Settings opened successfully")
             } catch (e: Exception) {
                 Log.e("WebViewConsole", "[NotificationHR] Error opening settings: ${e.message}")
+            }
+        }
+        
+        @JavascriptInterface
+        fun startHeartRateService() {
+            Log.d("WebViewConsole", "[NotificationHR] startHeartRateService called")
+            try {
+                val serviceIntent = Intent(activity, OndaHeartRateService::class.java).apply {
+                    action = OndaHeartRateService.ACTION_START
+                }
+                
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    activity.startForegroundService(serviceIntent)
+                } else {
+                    activity.startService(serviceIntent)
+                }
+                
+                Log.d("WebViewConsole", "[NotificationHR] Foreground service started successfully")
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[NotificationHR] Error starting service: ${e.message}")
+            }
+        }
+        
+        @JavascriptInterface
+        fun stopHeartRateService() {
+            Log.d("WebViewConsole", "[NotificationHR] stopHeartRateService called")
+            try {
+                val serviceIntent = Intent(activity, OndaHeartRateService::class.java).apply {
+                    action = OndaHeartRateService.ACTION_STOP
+                }
+                activity.stopService(serviceIntent)
+                
+                Log.d("WebViewConsole", "[NotificationHR] Foreground service stopped successfully")
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[NotificationHR] Error stopping service: ${e.message}")
+            }
+        }
+        
+        @JavascriptInterface
+        fun isHeartRateServiceRunning(): Boolean {
+            // Check if service is running by checking for active foreground notification
+            // This is a simple check - in production you might want a more robust solution
+            return try {
+                val am = activity.getSystemService(Context.ACTIVITY_SERVICE) as android.app.ActivityManager
+                val services = am.getRunningServices(Int.MAX_VALUE)
+                services.any { it.service.className == OndaHeartRateService::class.java.name }
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[NotificationHR] Error checking service status: ${e.message}")
+                false
             }
         }
     }

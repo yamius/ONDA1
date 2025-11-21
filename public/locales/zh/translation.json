@@ -279,7 +279,17 @@
     "save": "保存",
     "cancel": "取消",
     "saved": "设置已保存",
-    "appearance": "外观"
+    "appearance": "外观",
+    "notification_hr_enable": "启用通知心率",
+    "notification_hr_enabled": "通知心率已启用",
+    "notification_hr_latest": "最近",
+    "notification_hr_waiting": "等待更新...",
+    "notification_hr_source": "来源",
+    "notification_hr_fitness_app": "健身应用",
+    "notification_hr_info": "从您的健身应用获取定期心率更新（小米运动健康、Fitbit、三星健康等）",
+    "notification_hr_seconds_ago": "{{count}}秒前",
+    "notification_hr_minutes_ago": "{{count}}分钟前",
+    "notification_hr_hours_ago": "{{count}}小时前"
   },
   "profile": {
     "title": "个人资料",
