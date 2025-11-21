@@ -6,9 +6,22 @@ The application is a React-based Progressive Web App (PWA) with native Android W
 
 # Recent Changes
 
-## Notification Heart Rate + Foreground Service (November 21, 2025)
+## Notification Heart Rate + Foreground Service (November 21, 2025) - ⚠️ NOT WORKING YET
 
 **Feature:** Periodic heart rate monitoring from fitness tracker apps (Mi Fitness, Fitbit, Samsung Health, etc.) during meditation sessions.
+
+**Status:** Code implemented but service not starting properly. Permission is granted, but OndaHeartRateService fails to launch. Investigation postponed - focusing on other features.
+
+**Known Issues:**
+- ✅ NotificationListener permission can be enabled
+- ✅ Android bridge methods available
+- ❌ OndaHeartRateService does not start even with manual `startHeartRateService()` call
+- ❌ HR updates from fitness tracker apps not received
+
+**TODO (Future):**
+- Debug why foreground service doesn't start despite permission being granted
+- Check Android logcat for service crash logs
+- May need to test on different Android versions
 
 ### Architecture (Variant B - Foreground Service)
 

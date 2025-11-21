@@ -380,61 +380,6 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                     {t('settings.notification_hr_info', 'Get periodic heart rate updates from your fitness tracker app (Mi Fitness, Fitbit, Samsung Health, etc.)')}
                   </div>
                 )}
-
-                {/* DEBUG PANEL - remove after testing */}
-                <div 
-                  className={`mt-3 p-3 rounded-lg text-xs space-y-2 ${
-                    isLightTheme ? 'bg-yellow-50 border border-yellow-200' : 'bg-yellow-900/20 border border-yellow-500/30'
-                  }`}
-                >
-                  <div className="font-bold text-yellow-700 dark:text-yellow-400">DEBUG INFO:</div>
-                  <div className={isLightTheme ? 'text-gray-700' : 'text-white/80'}>
-                    <div>• Android bridge: {typeof window !== 'undefined' && window.Android ? '✅ Available' : '❌ Missing'}</div>
-                    <div>• Permission: {notificationHR.isEnabled ? '✅ Enabled' : '❌ Disabled'}</div>
-                    <div>• HR value: {notificationHR.hr ?? 'null'}</div>
-                    <div>• Source: {notificationHR.source ?? 'null'}</div>
-                    <div>• Last update: {notificationHR.lastUpdate ? new Date(notificationHR.lastUpdate).toLocaleTimeString() : 'never'}</div>
-                    {typeof window !== 'undefined' && window.Android?.isHeartRateServiceRunning && (
-                      <div>• Service running: {window.Android.isHeartRateServiceRunning() ? '✅ Yes' : '❌ No'}</div>
-                    )}
-                  </div>
-                  
-                  {/* Manual service control for debugging */}
-                  {notificationHR.isEnabled && typeof window !== 'undefined' && window.Android && (
-                    <div className="flex gap-2 mt-2">
-                      <button
-                        onClick={() => {
-                          console.log('[DEBUG] Manual service start clicked');
-                          if (window.Android?.startHeartRateService) {
-                            window.Android.startHeartRateService();
-                            console.log('[DEBUG] startHeartRateService() called');
-                            setTimeout(() => window.location.reload(), 500);
-                          }
-                        }}
-                        className={`flex-1 py-1 px-2 rounded ${
-                          isLightTheme ? 'bg-green-500 hover:bg-green-600 text-white' : 'bg-green-600 hover:bg-green-700 text-white'
-                        }`}
-                      >
-                        🚀 Start Service
-                      </button>
-                      <button
-                        onClick={() => {
-                          console.log('[DEBUG] Manual service stop clicked');
-                          if (window.Android?.stopHeartRateService) {
-                            window.Android.stopHeartRateService();
-                            console.log('[DEBUG] stopHeartRateService() called');
-                            setTimeout(() => window.location.reload(), 500);
-                          }
-                        }}
-                        className={`flex-1 py-1 px-2 rounded ${
-                          isLightTheme ? 'bg-red-500 hover:bg-red-600 text-white' : 'bg-red-600 hover:bg-red-700 text-white'
-                        }`}
-                      >
-                        🛑 Stop Service
-                      </button>
-                    </div>
-                  )}
-                </div>
               </div>
             )}
 
