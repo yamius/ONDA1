@@ -28,21 +28,31 @@ export function useNotificationHeartRate(): UseNotificationHeartRateReturn {
   const [isEnabled, setIsEnabled] = useState(false);
   
   useEffect(() => {
+    // Guard: Only run on Android
+    if (typeof window === 'undefined' || !window.Android) {
+      console.log('[useNotificationHeartRate] Not running on Android, skipping');
+      return;
+    }
+    
     // Check permission on mount (Android only)
-    if (window.Android?.isNotificationListenerEnabled) {
-      const enabled = window.Android.isNotificationListenerEnabled();
-      setIsEnabled(enabled);
-      console.log('[useNotificationHeartRate] Permission status:', enabled);
-      
-      // Start foreground service if permission is enabled
-      if (enabled && window.Android.startHeartRateService) {
-        try {
-          window.Android.startHeartRateService();
-          console.log('[useNotificationHeartRate] Foreground service started');
-        } catch (e) {
-          console.error('[useNotificationHeartRate] Failed to start service:', e);
+    try {
+      if (window.Android.isNotificationListenerEnabled) {
+        const enabled = window.Android.isNotificationListenerEnabled();
+        setIsEnabled(enabled);
+        console.log('[useNotificationHeartRate] Permission status:', enabled);
+        
+        // Start foreground service ONLY if permission is enabled
+        if (enabled && window.Android.startHeartRateService) {
+          try {
+            window.Android.startHeartRateService();
+            console.log('[useNotificationHeartRate] Foreground service started');
+          } catch (e) {
+            console.error('[useNotificationHeartRate] Failed to start service:', e);
+          }
         }
       }
+    } catch (e) {
+      console.error('[useNotificationHeartRate] Error checking initial permission:', e);
     }
     
     // Listen for notification heart rate updates
@@ -64,10 +74,20 @@ export function useNotificationHeartRate(): UseNotificationHeartRateReturn {
     window.addEventListener('notification-hr-update', handleHRUpdate);
     
     // Check permission status periodically (in case user enables it in settings)
-    let lastKnownState = window.Android?.isNotificationListenerEnabled?.() ?? false;
+    let lastKnownState = false;
+    try {
+      lastKnownState = window.Android?.isNotificationListenerEnabled?.() ?? false;
+    } catch (e) {
+      console.error('[useNotificationHeartRate] Error getting initial state:', e);
+    }
     
     const permissionCheckInterval = setInterval(() => {
-      if (window.Android?.isNotificationListenerEnabled) {
+      // Guard: Check bridge exists before every call
+      if (!window.Android?.isNotificationListenerEnabled) {
+        return;
+      }
+      
+      try {
         const currentState = window.Android.isNotificationListenerEnabled();
         
         // Only update if state actually changed
@@ -93,6 +113,8 @@ export function useNotificationHeartRate(): UseNotificationHeartRateReturn {
             }
           }
         }
+      } catch (e) {
+        console.error('[useNotificationHeartRate] Error in permission check interval:', e);
       }
     }, 5000); // Check every 5 seconds
     
@@ -100,13 +122,14 @@ export function useNotificationHeartRate(): UseNotificationHeartRateReturn {
       window.removeEventListener('notification-hr-update', handleHRUpdate);
       clearInterval(permissionCheckInterval);
       
-      // Stop service on cleanup
+      // Stop service on cleanup (guard against bridge being undefined)
       if (window.Android?.stopHeartRateService) {
         try {
           window.Android.stopHeartRateService();
           console.log('[useNotificationHeartRate] Service stopped on cleanup');
         } catch (e) {
-          console.error('[useNotificationHeartRate] Failed to stop service on cleanup:', e);
+          // Swallow error - cleanup shouldn't crash the app
+          console.warn('[useNotificationHeartRate] Failed to stop service on cleanup (non-critical):', e);
         }
       }
     };

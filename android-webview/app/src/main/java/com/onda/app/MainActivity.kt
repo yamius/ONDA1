@@ -653,6 +653,13 @@ class MainActivity : AppCompatActivity() {
         @JavascriptInterface
         fun startHeartRateService() {
             Log.d("WebViewConsole", "[NotificationHR] startHeartRateService called")
+            
+            // CRITICAL: Only start service if notification listener permission is granted
+            if (!isNotificationListenerEnabled()) {
+                Log.w("WebViewConsole", "[NotificationHR] Permission not granted, skipping service start")
+                return
+            }
+            
             try {
                 val serviceIntent = Intent(activity, OndaHeartRateService::class.java).apply {
                     action = OndaHeartRateService.ACTION_START
@@ -666,7 +673,7 @@ class MainActivity : AppCompatActivity() {
                 
                 Log.d("WebViewConsole", "[NotificationHR] Foreground service started successfully")
             } catch (e: Exception) {
-                Log.e("WebViewConsole", "[NotificationHR] Error starting service: ${e.message}")
+                Log.e("WebViewConsole", "[NotificationHR] Error starting service: ${e.message}", e)
             }
         }
         

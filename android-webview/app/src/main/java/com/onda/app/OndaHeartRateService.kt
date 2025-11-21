@@ -27,22 +27,28 @@ class OndaHeartRateService : Service() {
     override fun onCreate() {
         super.onCreate()
         
-        // Create notification channel (Android 8.0+)
-        createNotificationChannel()
-        
-        // Register broadcast receiver for HR updates
-        val filter = IntentFilter(OndaNotificationListener.ACTION_HR_UPDATE)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            registerReceiver(hrReceiver, filter, Context.RECEIVER_NOT_EXPORTED)
-        } else {
-            registerReceiver(hrReceiver, filter)
+        try {
+            // Create notification channel (Android 8.0+)
+            createNotificationChannel()
+            
+            // Register broadcast receiver for HR updates
+            val filter = IntentFilter(OndaNotificationListener.ACTION_HR_UPDATE)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                registerReceiver(hrReceiver, filter, Context.RECEIVER_NOT_EXPORTED)
+            } else {
+                registerReceiver(hrReceiver, filter)
+            }
+            
+            // Start as foreground service with notification
+            val notification = createNotification("Monitoring heart rate...", null)
+            startForeground(NOTIFICATION_ID, notification)
+            
+            android.util.Log.d("OndaHRService", "Service created and started in foreground")
+        } catch (e: Exception) {
+            android.util.Log.e("OndaHRService", "Error in onCreate: ${e.message}", e)
+            // Stop service if initialization fails
+            stopSelf()
         }
-        
-        // Start as foreground service with notification
-        val notification = createNotification("Monitoring heart rate...", null)
-        startForeground(NOTIFICATION_ID, notification)
-        
-        android.util.Log.d("OndaHRService", "Service created and started in foreground")
     }
     
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -152,23 +158,23 @@ class OndaHeartRateService : Service() {
                     updateNotification(hr, source)
                 }
                 
-                // CRITICAL: Forward to MainActivity's WebView even if activity is backgrounded
-                // Send as explicit broadcast to MainActivity
+                // Forward to MainActivity's registered BroadcastReceiver
+                // Use implicit broadcast within our package (safe even if Activity isn't running)
                 val broadcastToActivity = Intent(OndaNotificationListener.ACTION_HR_UPDATE).apply {
                     putExtra("heartRate", hr)
                     putExtra("source", source)
                     putExtra("timestamp", timestamp)
+                    // Only set package - let Android deliver to registered receivers
                     setPackage(context?.packageName)
-                    // Make it explicit for MainActivity
-                    setClassName(context?.packageName ?: "com.onda.app", "com.onda.app.MainActivity")
                 }
                 
                 try {
-                    // Try to deliver to MainActivity if it exists
+                    // Safely send - if MainActivity isn't running, broadcast is dropped (no crash)
                     context?.sendBroadcast(broadcastToActivity)
-                    android.util.Log.d("OndaHRService", "Forwarded HR to MainActivity")
+                    android.util.Log.d("OndaHRService", "Broadcast sent (will be received by MainActivity if running)")
                 } catch (e: Exception) {
-                    android.util.Log.e("OndaHRService", "Error forwarding to MainActivity: ${e.message}")
+                    // Swallow error - shouldn't crash service
+                    android.util.Log.e("OndaHRService", "Error sending broadcast (non-critical): ${e.message}")
                 }
             }
         }
