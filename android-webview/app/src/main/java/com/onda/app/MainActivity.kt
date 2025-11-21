@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.media.AudioManager
 import android.net.Uri
 import android.os.Build
@@ -25,6 +26,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import androidx.health.connect.client.PermissionController
 import androidx.lifecycle.lifecycleScope
 import androidx.webkit.WebViewAssetLoader
@@ -81,6 +84,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        // Enable edge-to-edge mode (fullscreen with system bars)
+        setupEdgeToEdge()
         
         // Set singleton instance
         instance = this
@@ -273,6 +279,28 @@ class MainActivity : AppCompatActivity() {
         
         // Register broadcast receiver for HR updates from NotificationListener/Service
         setupHRBroadcastReceiver()
+    }
+    
+    /**
+     * Enable edge-to-edge fullscreen mode with system bars matching app background
+     */
+    private fun setupEdgeToEdge() {
+        // Enable edge-to-edge (draw behind system bars)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        
+        // Set dark background color for system bars (matching app's dark theme)
+        // Using gray-900 (#111827) from Tailwind, which is the app's dark background
+        val darkBackgroundColor = Color.parseColor("#111827")
+        
+        window.statusBarColor = darkBackgroundColor
+        window.navigationBarColor = darkBackgroundColor
+        
+        // Set light content for system bars (light icons/text on dark background)
+        val insetsController = WindowCompat.getInsetsController(window, window.decorView)
+        insetsController.isAppearanceLightStatusBars = false  // Light text/icons on dark bg
+        insetsController.isAppearanceLightNavigationBars = false  // Light nav buttons on dark bg
+        
+        Log.d("WebViewConsole", "[EdgeToEdge] Enabled fullscreen mode with dark system bars")
     }
     
     private fun setupHRBroadcastReceiver() {

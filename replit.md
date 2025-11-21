@@ -6,6 +6,45 @@ The application is a React-based Progressive Web App (PWA) with native Android W
 
 # Recent Changes
 
+## Edge-to-Edge Fullscreen Mode (November 21, 2025) ✅
+
+**Feature:** Immersive fullscreen experience with system bars matching app background color.
+
+**Implementation:**
+- Status bar (top) and navigation bar (bottom) now use app's dark background color (#111827 / gray-900)
+- Light icons/text on system bars for dark theme
+- Edge-to-edge mode enabled - app draws behind system bars
+- Clean, immersive experience without colored system bars
+
+**Technical Details:**
+1. **themes.xml** - Transparent system bars:
+   ```xml
+   <item name="android:statusBarColor">@android:color/transparent</item>
+   <item name="android:navigationBarColor">@android:color/transparent</item>
+   <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+   ```
+
+2. **MainActivity.kt** - Edge-to-edge setup:
+   - `WindowCompat.setDecorFitsSystemWindows(window, false)` - Enable edge-to-edge
+   - System bars colored #111827 (gray-900) matching app's dark theme
+   - Light content mode for status/navigation bars (light icons on dark background)
+
+**Files Modified:**
+- `android-webview/app/src/main/res/values/themes.xml`
+- `android-webview/app/src/main/java/com/onda/app/MainActivity.kt`
+
+---
+
+## Notification Heart Rate Feature - UI Hidden (November 21, 2025) 🔕
+
+**Status:** Feature postponed - UI completely hidden from Settings modal.
+
+**Reason:** OndaHeartRateService not starting properly despite enabled permissions. Requires Android logcat debugging.
+
+**Code Status:** All implementation code preserved but commented out in SettingsModal.tsx. Can be restored when service issue is resolved.
+
+---
+
 ## Notification Heart Rate + Foreground Service (November 21, 2025) - ⚠️ NOT WORKING YET
 
 **Feature:** Periodic heart rate monitoring from fitness tracker apps (Mi Fitness, Fitbit, Samsung Health, etc.) during meditation sessions.
