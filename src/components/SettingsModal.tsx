@@ -303,31 +303,40 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 >
                   <Bell className="w-5 h-5" />
                   {notificationHR.isEnabled 
-                    ? 'Notification HR Enabled' 
-                    : 'Enable Notification Heart Rate'}
+                    ? t('settings.notification_hr_enabled', 'Notification HR Enabled') 
+                    : t('settings.notification_hr_enable', 'Enable Notification Heart Rate')}
                 </button>
 
                 {notificationHR.isEnabled && (
-                  <div className={`mt-3 p-4 rounded-xl ${
-                    isLightTheme ? 'bg-gray-100' : 'bg-white/5'
-                  }`}>
+                  <div 
+                    className={`mt-3 p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                    }`}
+                    data-testid="notification-hr-status"
+                  >
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className={`text-xs ${
-                          isLightTheme ? 'text-gray-600' : 'text-white/60'
-                        }`}>
+                        <p 
+                          className={`text-xs ${
+                            isLightTheme ? 'text-gray-600' : 'text-white/60'
+                          }`}
+                          data-testid="text-notification-hr-value"
+                        >
                           {notificationHR.hr 
-                            ? `Latest: ${notificationHR.hr} bpm` 
-                            : 'Waiting for updates...'}
+                            ? `${t('settings.notification_hr_latest', 'Latest')}: ${notificationHR.hr} bpm` 
+                            : t('settings.notification_hr_waiting', 'Waiting for updates...')}
                         </p>
                         {notificationHR.source && (
-                          <p className={`text-xs mt-1 ${
-                            isLightTheme ? 'text-gray-500' : 'text-white/50'
-                          }`}>
-                            Source: {notificationHR.source.includes('mi.health') ? 'Mi Fitness' : 
+                          <p 
+                            className={`text-xs mt-1 ${
+                              isLightTheme ? 'text-gray-500' : 'text-white/50'
+                            }`}
+                            data-testid="text-notification-hr-source"
+                          >
+                            {t('settings.notification_hr_source', 'Source')}: {notificationHR.source.includes('mi.health') ? 'Mi Fitness' : 
                                     notificationHR.source.includes('fitbit') ? 'Fitbit' :
                                     notificationHR.source.includes('samsung') ? 'Samsung Health' :
-                                    'Fitness App'}
+                                    t('settings.notification_hr_fitness_app', 'Fitness App')}
                           </p>
                         )}
                       </div>
@@ -339,10 +348,13 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 )}
 
                 {!notificationHR.isEnabled && (
-                  <div className={`mt-3 p-3 rounded-lg text-xs ${
-                    isLightTheme ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-white/60'
-                  }`}>
-                    Get periodic heart rate updates from your fitness tracker app (Mi Fitness, Fitbit, Samsung Health, etc.)
+                  <div 
+                    className={`mt-3 p-3 rounded-lg text-xs ${
+                      isLightTheme ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-white/60'
+                    }`}
+                    data-testid="notification-hr-info"
+                  >
+                    {t('settings.notification_hr_info', 'Get periodic heart rate updates from your fitness tracker app (Mi Fitness, Fitbit, Samsung Health, etc.)')}
                   </div>
                 )}
               </div>
@@ -466,7 +478,16 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                       <div className={`text-xs ${
                         isLightTheme ? 'text-gray-600' : 'text-white/60'
                       }`}>Heart Rate</div>
-                      <div className="text-lg font-semibold">{hr ?? '--'} bpm</div>
+                      <div className="text-lg font-semibold">
+                        {hr ?? '--'} bpm
+                        {hrSource && (
+                          <span className={`ml-2 text-xs font-normal ${
+                            isLightTheme ? 'text-gray-500' : 'text-white/50'
+                          }`}>
+                            ({hrSource === 'ble' ? 'BLE' : 'Notify'})
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </div>
 

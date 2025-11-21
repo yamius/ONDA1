@@ -505,7 +505,14 @@
     "connection_instructions": "Connection instructions:",
     "instruction_1": "On phone: Close standard tracker app",
     "instruction_2": "On tracker: Settings → Share heart rate → Enable",
-    "realtime_metrics": "Real-time metrics. Calibrating baseline..."
+    "realtime_metrics": "Real-time metrics. Calibrating baseline...",
+    "notification_hr_enable": "Enable Notification Heart Rate",
+    "notification_hr_enabled": "Notification HR Enabled",
+    "notification_hr_latest": "Latest",
+    "notification_hr_waiting": "Waiting for updates...",
+    "notification_hr_source": "Source",
+    "notification_hr_fitness_app": "Fitness App",
+    "notification_hr_info": "Get periodic heart rate updates from your fitness tracker app (Mi Fitness, Fitbit, Samsung Health, etc.)"
   },
   "shop": {
     "title": "OND Shop",

@@ -512,7 +512,14 @@
     "connection_instructions": "Инструкция по подключению:",
     "instruction_1": "В телефоне: Закрыть стандартное приложение трекера",
     "instruction_2": "В трекере: Настройки → Делиться пульсом → Включить",
-    "realtime_metrics": "Показатели в реальном времени. Калибровка базовой линии..."
+    "realtime_metrics": "Показатели в реальном времени. Калибровка базовой линии...",
+    "notification_hr_enable": "Включить уведомления о пульсе",
+    "notification_hr_enabled": "Уведомления о пульсе включены",
+    "notification_hr_latest": "Последнее",
+    "notification_hr_waiting": "Ожидание обновлений...",
+    "notification_hr_source": "Источник",
+    "notification_hr_fitness_app": "Фитнес-приложение",
+    "notification_hr_info": "Получайте периодические обновления пульса из вашего фитнес-приложения (Mi Fitness, Fitbit, Samsung Health и др.)"
   },
   "shop": {
     "title": "Магазин OND",

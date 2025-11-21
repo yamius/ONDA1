@@ -40,6 +40,18 @@ export function useVitals() {
 
   const dhrDtRef = useRef(0);
 
+  // Feed notification HR into series when BLE is not connected
+  useEffect(() => {
+    if (!bleHR.connected && notificationHR.hr != null) {
+      const now = Date.now() / 1000;
+      bleHR.seriesRef.current.push({ t: now, hr: notificationHR.hr });
+      // Keep series at reasonable size
+      if (bleHR.seriesRef.current.length > 200) {
+        bleHR.seriesRef.current.shift();
+      }
+    }
+  }, [notificationHR.hr, bleHR.connected, bleHR.seriesRef]);
+
   useEffect(() => {
     if (currentHR == null) return;
     const hr = currentHR;
