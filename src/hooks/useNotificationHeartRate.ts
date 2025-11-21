@@ -36,8 +36,12 @@ export function useNotificationHeartRate(): UseNotificationHeartRateReturn {
       
       // Start foreground service if permission is enabled
       if (enabled && window.Android.startHeartRateService) {
-        window.Android.startHeartRateService();
-        console.log('[useNotificationHeartRate] Foreground service started');
+        try {
+          window.Android.startHeartRateService();
+          console.log('[useNotificationHeartRate] Foreground service started');
+        } catch (e) {
+          console.error('[useNotificationHeartRate] Failed to start service:', e);
+        }
       }
     }
     
@@ -60,21 +64,33 @@ export function useNotificationHeartRate(): UseNotificationHeartRateReturn {
     window.addEventListener('notification-hr-update', handleHRUpdate);
     
     // Check permission status periodically (in case user enables it in settings)
+    let lastKnownState = window.Android?.isNotificationListenerEnabled?.() ?? false;
+    
     const permissionCheckInterval = setInterval(() => {
       if (window.Android?.isNotificationListenerEnabled) {
-        const wasEnabled = isEnabled;
-        const enabled = window.Android.isNotificationListenerEnabled();
+        const currentState = window.Android.isNotificationListenerEnabled();
         
-        if (enabled !== wasEnabled) {
-          setIsEnabled(enabled);
+        // Only update if state actually changed
+        if (currentState !== lastKnownState) {
+          console.log('[useNotificationHeartRate] Permission state changed:', lastKnownState, '->', currentState);
+          lastKnownState = currentState;
+          setIsEnabled(currentState);
           
           // Start/stop service when permission changes
-          if (enabled && window.Android.startHeartRateService) {
-            window.Android.startHeartRateService();
-            console.log('[useNotificationHeartRate] Service started (permission enabled)');
-          } else if (!enabled && window.Android.stopHeartRateService) {
-            window.Android.stopHeartRateService();
-            console.log('[useNotificationHeartRate] Service stopped (permission disabled)');
+          if (currentState && window.Android.startHeartRateService) {
+            try {
+              window.Android.startHeartRateService();
+              console.log('[useNotificationHeartRate] Service started (permission enabled)');
+            } catch (e) {
+              console.error('[useNotificationHeartRate] Failed to start service:', e);
+            }
+          } else if (!currentState && window.Android.stopHeartRateService) {
+            try {
+              window.Android.stopHeartRateService();
+              console.log('[useNotificationHeartRate] Service stopped (permission disabled)');
+            } catch (e) {
+              console.error('[useNotificationHeartRate] Failed to stop service:', e);
+            }
           }
         }
       }
@@ -86,11 +102,15 @@ export function useNotificationHeartRate(): UseNotificationHeartRateReturn {
       
       // Stop service on cleanup
       if (window.Android?.stopHeartRateService) {
-        window.Android.stopHeartRateService();
-        console.log('[useNotificationHeartRate] Service stopped on cleanup');
+        try {
+          window.Android.stopHeartRateService();
+          console.log('[useNotificationHeartRate] Service stopped on cleanup');
+        } catch (e) {
+          console.error('[useNotificationHeartRate] Failed to stop service on cleanup:', e);
+        }
       }
     };
-  }, [isEnabled]);
+  }, []); // ✅ Empty deps - runs only on mount/unmount
   
   const requestPermission = () => {
     if (window.Android?.requestNotificationListenerPermission) {
