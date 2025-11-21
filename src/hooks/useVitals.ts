@@ -2,10 +2,18 @@ import { useEffect, useRef, useState } from "react";
 import { goertzelPower, clamp01, ewma } from "./dsp";
 import { useHeartRate } from "./useHeartRate";
 import { useMotion } from "./useMotion";
+import { useNotificationHeartRate } from "./useNotificationHeartRate";
 
 export function useVitals() {
-  const { hr, connected, connect, disconnect, seriesRef, isScanning, availableDevices, connectToDevice, stopScan, platform } = useHeartRate();
+  const bleHR = useHeartRate();
+  const notificationHR = useNotificationHeartRate();
   const { activity } = useMotion();
+  
+  // Priority system for heart rate sources:
+  // 1. BLE (real-time, most accurate) - when connected
+  // 2. Notification (periodic updates) - when BLE not connected
+  const currentHR = bleHR.connected ? bleHR.hr : notificationHR.hr;
+  const hrSource = bleHR.connected ? 'ble' : (notificationHR.hr ? 'notification' : null);
 
   const [br, setBr] = useState<number | null>(null);
   const [stress, setStress] = useState<number | null>(null);
@@ -33,7 +41,8 @@ export function useVitals() {
   const dhrDtRef = useRef(0);
 
   useEffect(() => {
-    if (hr == null) return;
+    if (currentHR == null) return;
+    const hr = currentHR;
     const b = baseline.current;
     if (!b.ready) {
       b.count++;
@@ -43,11 +52,11 @@ export function useVitals() {
       b.actVar = b.actVar * 0.99 + Math.abs(activity - b.actMean) * 0.01;
       if (b.count > 120) b.ready = true;
     }
-  }, [hr, activity]);
+  }, [currentHR, activity]);
 
   useEffect(() => {
     const id = setInterval(() => {
-      const series = seriesRef.current;
+      const series = bleHR.seriesRef.current;
       console.log('useVitals: series length =', series.length);
       if (series.length < 10) return;
 
@@ -176,13 +185,37 @@ export function useVitals() {
       }
     }, 2000);
     return () => clearInterval(id);
-  }, [seriesRef, activity]);
+  }, [bleHR.seriesRef, activity]);
 
   return {
-    connected, connect, disconnect, hr, br, stress, energy, hrv, csi, recoveryRate, hrTrendSlope, hrAcceleration,
+    // BLE Heart Rate
+    connected: bleHR.connected, 
+    connect: bleHR.connect, 
+    disconnect: bleHR.disconnect,
+    
+    // Current heart rate (BLE or Notification fallback)
+    hr: currentHR,
+    hrSource, // 'ble' | 'notification' | null
+    
+    // Calculated vitals
+    br, stress, energy, hrv, csi, recoveryRate, hrTrendSlope, hrAcceleration,
     arousal, calm, focus, excitement, fatigue, flow,
+    
     // Android Bluetooth-specific fields
-    isScanning, availableDevices, connectToDevice, stopScan, platform
+    isScanning: bleHR.isScanning, 
+    availableDevices: bleHR.availableDevices, 
+    connectToDevice: bleHR.connectToDevice, 
+    stopScan: bleHR.stopScan, 
+    platform: bleHR.platform,
+    
+    // Notification HR fields
+    notificationHR: {
+      hr: notificationHR.hr,
+      lastUpdate: notificationHR.lastUpdate,
+      source: notificationHR.source,
+      isEnabled: notificationHR.isEnabled,
+      requestPermission: notificationHR.requestPermission
+    }
   };
 }
 

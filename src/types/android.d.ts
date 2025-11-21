@@ -12,6 +12,9 @@ interface AndroidBridge {
   connectBluetoothDevice(deviceAddress: string): void;
   disconnectBluetoothDevice(): void;
   isBluetoothConnected(): boolean;
+  // Notification Listener methods
+  isNotificationListenerEnabled(): boolean;
+  requestNotificationListenerPermission(): void;
 }
 
 interface Window {

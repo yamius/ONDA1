@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Save, User as UserIcon, Bluetooth, Heart, Wind, Activity, Zap, Moon } from 'lucide-react';
+import { X, Save, User as UserIcon, Bluetooth, Heart, Wind, Activity, Zap, Moon, Bell } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
 import type { UserProfile } from '../lib/supabase';
@@ -18,6 +18,7 @@ interface SettingsModalProps {
     connect: () => void;
     disconnect: () => void;
     hr: number | null;
+    hrSource?: 'ble' | 'notification' | null;
     br: number | null;
     stress: number | null;
     energy: number | null;
@@ -38,6 +39,14 @@ interface SettingsModalProps {
     connectToDevice?: (deviceId: string) => void;
     stopScan?: () => void;
     platform?: 'android' | 'web';
+    // Notification HR fields
+    notificationHR?: {
+      hr: number | null;
+      lastUpdate: number | null;
+      source: string | null;
+      isEnabled: boolean;
+      requestPermission: () => void;
+    };
   };
   healthConnectData: HealthConnectHook;
 }
@@ -57,9 +66,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
   const { 
-    connected, connect, disconnect, hr, br, stress, energy, hrv, csi, recoveryRate, 
+    connected, connect, disconnect, hr, hrSource, br, stress, energy, hrv, csi, recoveryRate, 
     hrTrendSlope, hrAcceleration, arousal, calm, focus, excitement, fatigue, flow,
-    isScanning, availableDevices, connectToDevice, stopScan, platform
+    isScanning, availableDevices, connectToDevice, stopScan, platform,
+    notificationHR
   } = vitalsData;
   const { connected: hcConnected, connect: hcConnect, disconnect: hcDisconnect } = healthConnectData;
 
@@ -274,7 +284,71 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               <HealthConnectDebugPanel />
             </div> */}
 
-            <div className="flex gap-3">
+            {/* Notification Heart Rate Section (Android only) */}
+            {notificationHR && (
+              <div className="mt-4">
+                <button
+                  onClick={notificationHR.requestPermission}
+                  disabled={notificationHR.isEnabled}
+                  className={`w-full py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
+                    notificationHR.isEnabled
+                      ? isLightTheme
+                        ? 'bg-green-100 text-green-700'
+                        : 'bg-green-500/20 text-green-400'
+                      : isLightTheme
+                      ? 'bg-orange-100 hover:bg-orange-200 text-orange-700'
+                      : 'bg-orange-500/20 hover:bg-orange-500/30 text-orange-400'
+                  } ${notificationHR.isEnabled ? 'cursor-default' : ''}`}
+                  data-testid="button-enable-notification-hr"
+                >
+                  <Bell className="w-5 h-5" />
+                  {notificationHR.isEnabled 
+                    ? 'Notification HR Enabled' 
+                    : 'Enable Notification Heart Rate'}
+                </button>
+
+                {notificationHR.isEnabled && (
+                  <div className={`mt-3 p-4 rounded-xl ${
+                    isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                  }`}>
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className={`text-xs ${
+                          isLightTheme ? 'text-gray-600' : 'text-white/60'
+                        }`}>
+                          {notificationHR.hr 
+                            ? `Latest: ${notificationHR.hr} bpm` 
+                            : 'Waiting for updates...'}
+                        </p>
+                        {notificationHR.source && (
+                          <p className={`text-xs mt-1 ${
+                            isLightTheme ? 'text-gray-500' : 'text-white/50'
+                          }`}>
+                            Source: {notificationHR.source.includes('mi.health') ? 'Mi Fitness' : 
+                                    notificationHR.source.includes('fitbit') ? 'Fitbit' :
+                                    notificationHR.source.includes('samsung') ? 'Samsung Health' :
+                                    'Fitness App'}
+                          </p>
+                        )}
+                      </div>
+                      <Heart className={`w-5 h-5 ${
+                        notificationHR.hr ? 'text-red-500 animate-pulse' : 'text-gray-400'
+                      }`} />
+                    </div>
+                  </div>
+                )}
+
+                {!notificationHR.isEnabled && (
+                  <div className={`mt-3 p-3 rounded-lg text-xs ${
+                    isLightTheme ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-white/60'
+                  }`}>
+                    Get periodic heart rate updates from your fitness tracker app (Mi Fitness, Fitbit, Samsung Health, etc.)
+                  </div>
+                )}
+              </div>
+            )}
+
+            <div className="flex gap-3 mt-4">
               {!isScanning && (
                 <>
                   <button

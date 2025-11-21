@@ -45,9 +45,17 @@
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-feature android:name="android.hardware.microphone" android:required="false" />
 
-    <!-- Query for Health Connect package -->
+    <!-- Query for Health Connect and fitness apps -->
     <queries>
         <package android:name="com.google.android.apps.healthdata" />
+        <!-- Fitness apps for notification listener -->
+        <package android:name="com.mi.health" />
+        <package android:name="com.xiaomi.hm.health" />
+        <package android:name="com.fitbit.FitbitMobile" />
+        <package android:name="com.samsung.android.app.health" />
+        <package android:name="com.google.android.apps.fitness" />
+        <package android:name="com.garmin.android.apps.connectmobile" />
+        <package android:name="com.huawei.health" />
     </queries>
 
     <application
@@ -90,6 +98,16 @@
         <meta-data
             android:name="androidx.health.platform.client"
             android:value="true" />
+        
+        <!-- NotificationListenerService for fitness app heart rate -->
+        <service
+            android:name=".OndaNotificationListener"
+            android:exported="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

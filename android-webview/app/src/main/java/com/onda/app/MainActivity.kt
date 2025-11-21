@@ -7,6 +7,7 @@ import android.content.pm.PackageManager
 import android.media.AudioManager
 import android.net.Uri
 import android.os.Bundle
+import android.provider.Settings
 import android.util.Log
 import android.webkit.ConsoleMessage
 import android.webkit.JavascriptInterface
@@ -38,6 +39,11 @@ class MainActivity : AppCompatActivity() {
     companion object {
         private const val PERMISSION_REQUEST_CODE = 100
         private const val BLUETOOTH_PERMISSION_REQUEST_CODE = 101
+        
+        // Singleton instance for NotificationListenerService access
+        private var instance: MainActivity? = null
+        
+        fun getInstance(): MainActivity? = instance
     }
 
     private val requestHealthPermissions = registerForActivityResult(
@@ -71,6 +77,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        // Set singleton instance
+        instance = this
 
         webView = WebView(this)
         setContentView(webView)
@@ -382,11 +391,41 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        // Clear singleton instance
+        instance = null
+    }
+
     override fun onBackPressed() {
         if (::webView.isInitialized && webView.canGoBack()) {
             webView.goBack()
         } else {
             super.onBackPressed()
+        }
+    }
+    
+    /**
+     * Called by OndaNotificationListener when heart rate is detected in notifications
+     * from fitness apps (Mi Fitness, Fitbit, Samsung Health, etc.)
+     */
+    fun onNotificationHeartRate(heartRate: Int, source: String) {
+        runOnUiThread {
+            if (::webView.isInitialized) {
+                val script = """
+                    window.dispatchEvent(new CustomEvent('notification-hr-update', {
+                        detail: {
+                            heartRate: $heartRate,
+                            timestamp: ${System.currentTimeMillis()},
+                            source: '$source'
+                        }
+                    }));
+                """.trimIndent()
+                
+                webView.evaluateJavascript(script) { result ->
+                    Log.d("WebViewConsole", "[NotificationHR] Sent to WebView: $heartRate bpm from $source")
+                }
+            }
         }
     }
 
@@ -539,6 +578,31 @@ class MainActivity : AppCompatActivity() {
             val connected = bluetoothManager.isConnected()
             Log.d("WebViewConsole", "[Bluetooth] isBluetoothConnected called: $connected")
             return connected
+        }
+        
+        // ============ Notification Listener Methods ============
+        
+        @JavascriptInterface
+        fun isNotificationListenerEnabled(): Boolean {
+            val enabledListeners = Settings.Secure.getString(
+                activity.contentResolver,
+                "enabled_notification_listeners"
+            )
+            val isEnabled = enabledListeners?.contains(activity.packageName) == true
+            Log.d("WebViewConsole", "[NotificationHR] isNotificationListenerEnabled: $isEnabled")
+            return isEnabled
+        }
+        
+        @JavascriptInterface
+        fun requestNotificationListenerPermission() {
+            Log.d("WebViewConsole", "[NotificationHR] requestNotificationListenerPermission called")
+            try {
+                val intent = Intent(Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS)
+                activity.startActivity(intent)
+                Log.d("WebViewConsole", "[NotificationHR] Settings opened successfully")
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[NotificationHR] Error opening settings: ${e.message}")
+            }
         }
     }
 
