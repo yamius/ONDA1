@@ -317,9 +317,6 @@ class MainActivity : AppCompatActivity() {
                 Log.e("WebViewConsole", "[NotificationHR] Error unregistering receiver: ${e.message}")
             }
         }
-        
-        // Cleanup Bluetooth
-        bluetoothManager.cleanup()
     }
     
     override fun onNewIntent(intent: Intent?) {
@@ -443,12 +440,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        // Clear singleton instance
-        instance = null
     }
 
     override fun onBackPressed() {
