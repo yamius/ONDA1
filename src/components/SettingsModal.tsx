@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Save, User as UserIcon, Bluetooth, Heart, Wind, Activity, Zap, Moon, Bell } from 'lucide-react';
+import { X, Save, User as UserIcon, Bluetooth, Heart, Wind, Activity, Zap, Moon } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
 import type { UserProfile } from '../lib/supabase';
@@ -68,8 +68,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const { 
     connected, connect, disconnect, hr, hrSource, br, stress, energy, hrv, csi, recoveryRate, 
     hrTrendSlope, hrAcceleration, arousal, calm, focus, excitement, fatigue, flow,
-    isScanning, availableDevices, connectToDevice, stopScan, platform,
-    notificationHR
+    isScanning, availableDevices, connectToDevice, stopScan, platform
   } = vitalsData;
   const { connected: hcConnected, connect: hcConnect, disconnect: hcDisconnect } = healthConnectData;
 
@@ -284,8 +283,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               <HealthConnectDebugPanel />
             </div> */}
 
-            {/* Notification Heart Rate Section (Android only) */}
-            {notificationHR && (
+            {/* Notification Heart Rate Section (Android only) - HIDDEN UNTIL WORKING */}
+            {/* {notificationHR && (
               <div className="mt-4">
                 <button
                   onClick={notificationHR.requestPermission}
@@ -315,7 +314,6 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                     data-testid="notification-hr-status"
                   >
                     <div className="space-y-3">
-                      {/* Heart Rate Display */}
                       <div className="flex items-center justify-between">
                         <div className="flex-1">
                           <div className="flex items-baseline gap-2">
@@ -348,7 +346,6 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                         }`} />
                       </div>
                       
-                      {/* Source Info */}
                       {notificationHR.source && (
                         <div className={`flex items-center gap-2 text-xs ${
                           isLightTheme ? 'text-gray-600' : 'text-white/60'
@@ -381,7 +378,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   </div>
                 )}
               </div>
-            )}
+            )} */}
 
             <div className="flex gap-3 mt-4">
               {!isScanning && (
