@@ -28,18 +28,22 @@ export function useNotificationHeartRate(): UseNotificationHeartRateReturn {
   const [isEnabled, setIsEnabled] = useState(false);
   
   useEffect(() => {
+    console.log('[useNotificationHeartRate] Hook mounted');
+    
     // Guard: Only run on Android
     if (typeof window === 'undefined' || !window.Android) {
       console.log('[useNotificationHeartRate] Not running on Android, skipping');
       return;
     }
     
+    console.log('[useNotificationHeartRate] Android bridge detected');
+    
     // Check permission on mount (Android only)
     try {
       if (window.Android.isNotificationListenerEnabled) {
         const enabled = window.Android.isNotificationListenerEnabled();
         setIsEnabled(enabled);
-        console.log('[useNotificationHeartRate] Permission status:', enabled);
+        console.log('[useNotificationHeartRate] ✅ Permission status:', enabled);
         
         // Start foreground service ONLY if permission is enabled
         if (enabled && window.Android.startHeartRateService) {
