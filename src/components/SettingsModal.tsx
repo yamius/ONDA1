@@ -398,6 +398,42 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                       <div>• Service running: {window.Android.isHeartRateServiceRunning() ? '✅ Yes' : '❌ No'}</div>
                     )}
                   </div>
+                  
+                  {/* Manual service control for debugging */}
+                  {notificationHR.isEnabled && typeof window !== 'undefined' && window.Android && (
+                    <div className="flex gap-2 mt-2">
+                      <button
+                        onClick={() => {
+                          console.log('[DEBUG] Manual service start clicked');
+                          if (window.Android?.startHeartRateService) {
+                            window.Android.startHeartRateService();
+                            console.log('[DEBUG] startHeartRateService() called');
+                            setTimeout(() => window.location.reload(), 500);
+                          }
+                        }}
+                        className={`flex-1 py-1 px-2 rounded ${
+                          isLightTheme ? 'bg-green-500 hover:bg-green-600 text-white' : 'bg-green-600 hover:bg-green-700 text-white'
+                        }`}
+                      >
+                        🚀 Start Service
+                      </button>
+                      <button
+                        onClick={() => {
+                          console.log('[DEBUG] Manual service stop clicked');
+                          if (window.Android?.stopHeartRateService) {
+                            window.Android.stopHeartRateService();
+                            console.log('[DEBUG] stopHeartRateService() called');
+                            setTimeout(() => window.location.reload(), 500);
+                          }
+                        }}
+                        className={`flex-1 py-1 px-2 rounded ${
+                          isLightTheme ? 'bg-red-500 hover:bg-red-600 text-white' : 'bg-red-600 hover:bg-red-700 text-white'
+                        }`}
+                      >
+                        🛑 Stop Service
+                      </button>
+                    </div>
+                  )}
                 </div>
               </div>
             )}
