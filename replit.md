@@ -6,6 +6,91 @@ The application is a React-based Progressive Web App (PWA) with native Android W
 
 # Recent Changes
 
+## Notification Heart Rate + Foreground Service (November 21, 2025)
+
+**Feature:** Periodic heart rate monitoring from fitness tracker apps (Mi Fitness, Fitbit, Samsung Health, etc.) during meditation sessions.
+
+### Architecture (Variant B - Foreground Service)
+
+**Data Flow:**
+```
+Fitness App → Android Notification → OndaNotificationListener 
+  → Broadcast → OndaHeartRateService (Foreground) 
+  → Forward Broadcast → MainActivity → WebView → React hooks
+  → useVitals (feeds into BLE series for BR/Stress/Energy calculations)
+```
+
+**Components:**
+
+1. **OndaNotificationListener.kt** (NotificationListenerService)
+   - Monitors notifications from fitness apps
+   - Extracts HR using regex patterns
+   - Broadcasts HR updates (no singleton pattern)
+   - Requires notification access permission
+
+2. **OndaHeartRateService.kt** (Foreground Service)
+   - Receives broadcasts from NotificationListener
+   - Updates persistent notification with latest HR
+   - Forwards data to MainActivity's WebView
+   - Survives app backgrounding (critical for meditation sessions)
+
+3. **MainActivity.kt** (BroadcastReceiver)
+   - Registers receiver for HR broadcasts
+   - Dispatches JavaScript events to WebView
+   - Manages service lifecycle (start/stop)
+   - Bridge methods: `startHeartRateService()`, `stopHeartRateService()`, `isHeartRateServiceRunning()`
+
+4. **useNotificationHeartRate.ts** (React Hook)
+   - Auto-starts/stops service based on permission status
+   - Listens to `notification-hr-update` events
+   - Provides HR data to UI components
+
+5. **useVitals.ts** (Integration)
+   - Feeds notification HR into BLE series
+   - Enables BR/Stress/Energy calculations from notification data
+   - Unified biometric processing pipeline
+
+**UI Enhancements:**
+- Real-time metrics display (HR, source, time-ago) in SettingsModal
+- Fully localized time formatting (EN, RU, ES, UK, ZH)
+- Visual feedback with pulsing heart icon
+
+**Permissions:**
+- `android.permission.BIND_NOTIFICATION_LISTENER_SERVICE` (NotificationListener)
+- `android.permission.FOREGROUND_SERVICE` (API 28+)
+- `android.permission.FOREGROUND_SERVICE_HEALTH` (API 34+, backward compatible)
+
+**Design Decisions:**
+
+1. **BroadcastReceiver Pattern** (not singleton)
+   - More robust across lifecycle changes
+   - Explicit broadcast routing between components
+   - Removed `MainActivity.getInstance()` antipattern
+
+2. **Foreground Service** (survives background)
+   - Keeps HR pipeline alive during meditation
+   - Persistent notification shows latest HR
+   - Auto-restart on permission enable/disable
+
+3. **Scope Limitation** (accepted by user)
+   - ✅ Works during meditation (MainActivity active)
+   - ❌ Does NOT work when app fully backgrounded/destroyed
+   - **Rationale:** Sufficient for use case - HR only needed during active practices
+   - Alternative (not implemented): Room database + persistent storage for background HR
+
+**Files Modified:**
+- `android-webview/app/src/main/java/com/onda/app/OndaHeartRateService.kt` (NEW)
+- `android-webview/app/src/main/java/com/onda/app/OndaNotificationListener.kt`
+- `android-webview/app/src/main/java/com/onda/app/MainActivity.kt`
+- `android-webview/app/src/main/AndroidManifest.xml`
+- `src/hooks/useNotificationHeartRate.ts`
+- `src/hooks/useVitals.ts`
+- `src/components/SettingsModal.tsx`
+- `src/types/android.d.ts`
+- `public/locales/{en,ru,es,uk,zh}/translation.json`
+
+---
+
 ## App Branding Update - "ONDA Life" (November 20, 2025)
 
 **User Request:** Display "ONDA Life" instead of Supabase URL on Google OAuth screen
