@@ -100,7 +100,6 @@ class MainActivity : AppCompatActivity() {
         // CRITICAL: Set WebView background to transparent for edge-to-edge (must be before setContentView)
         // This prevents white bar under status bar because WebView defaults to opaque white
         webView.setBackgroundColor(Color.TRANSPARENT)
-        webView.isOpaque = false
         
         // Enable edge-to-edge mode (must be after WebView creation)
         setupEdgeToEdge()
