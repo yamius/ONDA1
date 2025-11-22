@@ -45,6 +45,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var bluetoothManager: BluetoothManager
     private var pendingPermissionRequest: PermissionRequest? = null
     private var hrBroadcastReceiver: BroadcastReceiver? = null
+    
+    // Store WindowInsets values for edge-to-edge mode
+    private var statusBarHeight = 0
+    private var navBarHeight = 0
 
     companion object {
         private const val PERMISSION_REQUEST_CODE = 100
@@ -213,6 +217,14 @@ class MainActivity : AppCompatActivity() {
             ): WebResourceResponse? {
                 return assetLoader.shouldInterceptRequest(Uri.parse(url))
             }
+            
+            override fun onPageFinished(view: WebView?, url: String?) {
+                super.onPageFinished(view, url)
+                
+                // Inject CSS variables for safe area insets after page loads
+                injectSafeAreaInsets()
+                Log.d("WebViewConsole", "[EdgeToEdge] Page loaded, insets injected")
+            }
         }
 
         // Логируем всё из console.log + обрабатываем permissions
@@ -304,34 +316,36 @@ class MainActivity : AppCompatActivity() {
         insetsController.isAppearanceLightStatusBars = false  // Light text/icons on dark bg
         insetsController.isAppearanceLightNavigationBars = false  // Light nav buttons on dark bg
         
-        // Listen for WindowInsets changes and inject CSS variables into WebView
+        // Listen for WindowInsets changes and save values (inject later in onPageFinished)
         ViewCompat.setOnApplyWindowInsetsListener(webView) { view, windowInsets ->
             val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
             
-            // Inject CSS variables for status bar and navigation bar padding
-            val statusBarHeight = insets.top
-            val navBarHeight = insets.bottom
+            // Save inset values for later injection
+            statusBarHeight = insets.top
+            navBarHeight = insets.bottom
             
-            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets: top=$statusBarHeight, bottom=$navBarHeight")
-            
-            // Inject CSS variables into the document root
-            val jsCode = """
-                (function() {
-                    document.documentElement.style.setProperty('--safe-area-inset-top', '${statusBarHeight}px');
-                    document.documentElement.style.setProperty('--safe-area-inset-bottom', '${navBarHeight}px');
-                    console.log('[EdgeToEdge] CSS variables injected: top=${statusBarHeight}px, bottom=${navBarHeight}px');
-                })();
-            """.trimIndent()
-            
-            webView.post {
-                webView.evaluateJavascript(jsCode, null)
-            }
+            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets received: top=$statusBarHeight, bottom=$navBarHeight")
             
             // Return the insets unchanged (don't consume them)
             windowInsets
         }
         
-        Log.d("WebViewConsole", "[EdgeToEdge] Enabled fullscreen mode with dark system bars and WindowInsets listener")
+        Log.d("WebViewConsole", "[EdgeToEdge] Enabled fullscreen mode with dark system bars")
+    }
+    
+    /**
+     * Inject CSS variables for safe area insets (called once after page load)
+     */
+    private fun injectSafeAreaInsets() {
+        val jsCode = """
+            (function() {
+                document.documentElement.style.setProperty('--safe-area-inset-top', '${statusBarHeight}px');
+                document.documentElement.style.setProperty('--safe-area-inset-bottom', '${navBarHeight}px');
+                console.log('[EdgeToEdge] CSS variables injected: top=${statusBarHeight}px, bottom=${navBarHeight}px');
+            })();
+        """.trimIndent()
+        
+        webView.evaluateJavascript(jsCode, null)
     }
     
     private fun setupHRBroadcastReceiver() {
