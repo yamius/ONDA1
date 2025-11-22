@@ -298,18 +298,24 @@ class MainActivity : AppCompatActivity() {
     }
     
     /**
-     * Enable edge-to-edge fullscreen mode with system bars matching app background
+     * Enable edge-to-edge fullscreen mode with transparent blurred system bars (like Telegram)
      */
     private fun setupEdgeToEdge() {
         // Enable edge-to-edge (draw behind system bars)
         WindowCompat.setDecorFitsSystemWindows(window, false)
         
-        // Set dark background color for system bars (matching app's dark theme)
-        // Using gray-900 (#111827) from Tailwind, which is the app's dark background
-        val darkBackgroundColor = Color.parseColor("#111827")
+        // Semi-transparent dark background for system bars (80% opacity for blur effect)
+        // This creates the Telegram-like frosted glass effect
+        val transparentDarkColor = Color.parseColor("#CC111827")  // 80% opacity
         
-        window.statusBarColor = darkBackgroundColor
-        window.navigationBarColor = darkBackgroundColor
+        window.statusBarColor = transparentDarkColor
+        window.navigationBarColor = transparentDarkColor
+        
+        // Disable contrast enforcement for cleaner transparency (Android 11+)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            window.isStatusBarContrastEnforced = false
+            window.isNavigationBarContrastEnforced = false
+        }
         
         // Set light content for system bars (light icons/text on dark background)
         val insetsController = WindowCompat.getInsetsController(window, window.decorView)
@@ -330,7 +336,7 @@ class MainActivity : AppCompatActivity() {
             windowInsets
         }
         
-        Log.d("WebViewConsole", "[EdgeToEdge] Enabled fullscreen mode with dark system bars")
+        Log.d("WebViewConsole", "[EdgeToEdge] Enabled fullscreen with transparent blurred system bars")
     }
     
     /**

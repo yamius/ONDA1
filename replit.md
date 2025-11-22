@@ -10,42 +10,62 @@ Preferred communication style: Simple, everyday language.
 
 # Recent Changes
 
-## Edge-to-Edge Fullscreen Mode (November 21, 2025) ✅
+## Edge-to-Edge Fullscreen Mode with Transparent Blurred System Bars (November 22, 2025) ✅
 
-**Feature:** Immersive fullscreen experience with system bars matching app background color.
+**Feature:** Telegram-style immersive fullscreen with semi-transparent blurred system bars.
 
 **Implementation:**
-- Status bar (top) and navigation bar (bottom) now use app's dark background color (#111827 / gray-900)
+- Status bar (top) and navigation bar (bottom) use **80% transparent** dark background (#CC111827)
 - Light icons/text on system bars for dark theme
 - Edge-to-edge mode enabled - app draws behind system bars
 - Content padding automatically adjusted for status bar height using WindowInsets API
+- **Frosted glass blur effect** behind system bars (like Telegram)
 
 **Technical Details:**
 1. **themes.xml** - Transparent system bars in app theme
 
-2. **MainActivity.kt** - Edge-to-edge setup with WindowInsets:
+2. **MainActivity.kt** - Edge-to-edge setup with transparent blurred bars:
    - `WindowCompat.setDecorFitsSystemWindows(window, false)` - Enable edge-to-edge
-   - System bars colored #111827 (gray-900) matching app's dark theme
+   - System bars colored **#CC111827** (80% opacity for blur effect)
+   - `window.isStatusBarContrastEnforced = false` - Disable contrast enforcement (Android 11+)
+   - `window.isNavigationBarContrastEnforced = false` - Cleaner transparency
    - Light content mode for status/navigation bars (light icons on dark background)
    - **WindowInsets handling via ViewCompat.setOnApplyWindowInsetsListener**:
      - Reads system bar heights from WindowInsetsCompat.Type.systemBars()
-     - Injects CSS variables `--safe-area-inset-top` and `--safe-area-inset-bottom` via JavaScript
+     - Saves values to class variables (statusBarHeight, navBarHeight)
+     - **Injects CSS variables in WebViewClient.onPageFinished()** (ensures DOM is loaded)
      - **Important:** CSS `env(safe-area-inset-*)` does NOT work in Android WebView without display cutouts
 
-3. **index.css** - CSS padding using injected variables:
+3. **index.css** - CSS padding and transparent background:
    ```css
    #root {
      padding-top: var(--safe-area-inset-top, 0px);
      padding-bottom: var(--safe-area-inset-bottom, 0px);
+     background: transparent; /* Prevents white background showing through */
    }
+   ```
+
+4. **onda-level1-demo_27.tsx** - Main container uses `h-full` instead of `min-h-screen`:
+   ```tsx
+   <div className="h-full text-white overflow-x-hidden ...">
+     <div className="bg-black/20 backdrop-blur-sm border-b ...">
+       {/* Upper navigation with blur effect */}
+     </div>
+   </div>
    ```
 
 **Files Modified:**
 - `android-webview/app/src/main/res/values/themes.xml`
 - `android-webview/app/src/main/java/com/onda/app/MainActivity.kt`
 - `src/index.css`
+- `src/onda-level1-demo_27.tsx`
 
-**Key Learning:** CSS `env(safe-area-inset-*)` is iOS-specific and does NOT work in Android WebView. Must use WindowInsets API to inject CSS variables via JavaScript.
+**Key Learnings:**
+1. CSS `env(safe-area-inset-*)` is iOS-specific and does NOT work in Android WebView
+2. Must use WindowInsets API to inject CSS variables via JavaScript
+3. **CSS injection must happen in onPageFinished()** to ensure DOM is loaded
+4. **Use #CC prefix for 80% opacity** in hex colors (#CCRRGGBB)
+5. **Disable contrast enforcement** for cleaner transparency on Android 11+
 
 ---
 

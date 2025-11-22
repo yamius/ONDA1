@@ -36,6 +36,8 @@
     /* Android WebView injects these via WindowInsets API */
     padding-top: var(--safe-area-inset-top, 0px);
     padding-bottom: var(--safe-area-inset-bottom, 0px);
+    /* Prevent white background from showing through transparent system bars */
+    background: transparent;
   }
 
   input,
