@@ -346,15 +346,21 @@ class MainActivity : AppCompatActivity() {
         
         // Listen for WindowInsets changes and save values (inject later in onPageFinished)
         ViewCompat.setOnApplyWindowInsetsListener(webView) { view, windowInsets ->
-            // Get status bar and navigation bar separately for accurate measurements
-            val statusInsets = windowInsets.getInsets(WindowInsetsCompat.Type.statusBars())
+            // Get navigation bar inset
             val navInsets = windowInsets.getInsets(WindowInsetsCompat.Type.navigationBars())
-            
-            // Save inset values for later injection
-            statusBarHeight = statusInsets.top
             navBarHeight = navInsets.bottom
             
-            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets received: statusBar.top=$statusBarHeight, navBar.bottom=$navBarHeight")
+            // For status bar: statusBars() includes notch/cutout which makes it too large (99px instead of 24px)
+            // Solution: Use standard status bar height from resources
+            val resourceId = resources.getIdentifier("status_bar_height", "dimen", "android")
+            statusBarHeight = if (resourceId > 0) {
+                resources.getDimensionPixelSize(resourceId)
+            } else {
+                // Fallback: 24dp converted to pixels
+                (24 * resources.displayMetrics.density).toInt()
+            }
+            
+            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets: statusBar.top=$statusBarHeight (from resources), navBar.bottom=$navBarHeight")
             
             // Return the insets unchanged (don't consume them)
             windowInsets
