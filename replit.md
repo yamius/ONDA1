@@ -70,6 +70,8 @@ Preferred communication style: Simple, everyday language.
 5. **Use #80 for 50% opacity** in hex colors (#80RRGGBB) for maximum frosted glass
 6. **Lower opacity = more blur visible** (50% better than 80% for Telegram effect)
 7. **Disable contrast enforcement** for cleaner transparency on Android 11+
+8. **CRITICAL:** Must set `webView.setBackgroundColor(Color.TRANSPARENT)` + `webView.isOpaque = false` BEFORE setContentView - CSS cannot change WebView's native background
+9. **Set window.setBackgroundDrawable(null)** to prevent white background before WebView renders
 
 ---
 
