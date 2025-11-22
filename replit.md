@@ -15,25 +15,27 @@ Preferred communication style: Simple, everyday language.
 **Feature:** Telegram-style immersive fullscreen with semi-transparent blurred system bars.
 
 **Implementation:**
-- Status bar (top) and navigation bar (bottom) use **80% transparent** dark background (#CC111827)
+- Status bar (top) and navigation bar (bottom) use **50% transparent** dark background (#80111827)
 - Light icons/text on system bars for dark theme
 - Edge-to-edge mode enabled - app draws behind system bars
 - Content padding automatically adjusted for status bar height using WindowInsets API
-- **Frosted glass blur effect** behind system bars (like Telegram)
+- **Maximum frosted glass blur effect** behind system bars (like Telegram)
+- Upper navigation uses `bg-black/10 backdrop-blur-xl` for extra blur/transparency
 
 **Technical Details:**
 1. **themes.xml** - Transparent system bars in app theme
 
 2. **MainActivity.kt** - Edge-to-edge setup with transparent blurred bars:
    - `WindowCompat.setDecorFitsSystemWindows(window, false)` - Enable edge-to-edge
-   - System bars colored **#CC111827** (80% opacity for blur effect)
+   - System bars colored **#80111827** (50% opacity for MAXIMUM blur effect)
    - `window.isStatusBarContrastEnforced = false` - Disable contrast enforcement (Android 11+)
    - `window.isNavigationBarContrastEnforced = false` - Cleaner transparency
    - Light content mode for status/navigation bars (light icons on dark background)
    - **WindowInsets handling via ViewCompat.setOnApplyWindowInsetsListener**:
      - Reads system bar heights from WindowInsetsCompat.Type.systemBars()
      - Saves values to class variables (statusBarHeight, navBarHeight)
-     - **Injects CSS variables in WebViewClient.onPageFinished()** (ensures DOM is loaded)
+     - **Injects CSS variables + applies padding directly to #root** in onPageFinished()
+     - Direct padding fallback ensures white bar is eliminated
      - **Important:** CSS `env(safe-area-inset-*)` does NOT work in Android WebView without display cutouts
 
 3. **index.css** - CSS padding and transparent background:
@@ -45,11 +47,11 @@ Preferred communication style: Simple, everyday language.
    }
    ```
 
-4. **onda-level1-demo_27.tsx** - Main container uses `h-full` instead of `min-h-screen`:
+4. **onda-level1-demo_27.tsx** - Main container and navigation with maximum blur:
    ```tsx
    <div className="h-full text-white overflow-x-hidden ...">
-     <div className="bg-black/20 backdrop-blur-sm border-b ...">
-       {/* Upper navigation with blur effect */}
+     <div className="bg-black/10 backdrop-blur-xl border-b border-purple-500/20 ...">
+       {/* Upper navigation with EXTRA blur/transparency */}
      </div>
    </div>
    ```
@@ -64,8 +66,10 @@ Preferred communication style: Simple, everyday language.
 1. CSS `env(safe-area-inset-*)` is iOS-specific and does NOT work in Android WebView
 2. Must use WindowInsets API to inject CSS variables via JavaScript
 3. **CSS injection must happen in onPageFinished()** to ensure DOM is loaded
-4. **Use #CC prefix for 80% opacity** in hex colors (#CCRRGGBB)
-5. **Disable contrast enforcement** for cleaner transparency on Android 11+
+4. **Apply padding directly to #root** as fallback if CSS vars don't work
+5. **Use #80 for 50% opacity** in hex colors (#80RRGGBB) for maximum frosted glass
+6. **Lower opacity = more blur visible** (50% better than 80% for Telegram effect)
+7. **Disable contrast enforcement** for cleaner transparency on Android 11+
 
 ---
 

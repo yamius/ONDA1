@@ -304,9 +304,9 @@ class MainActivity : AppCompatActivity() {
         // Enable edge-to-edge (draw behind system bars)
         WindowCompat.setDecorFitsSystemWindows(window, false)
         
-        // Semi-transparent dark background for system bars (80% opacity for blur effect)
-        // This creates the Telegram-like frosted glass effect
-        val transparentDarkColor = Color.parseColor("#CC111827")  // 80% opacity
+        // VERY transparent dark background for frosted glass effect (50% opacity)
+        // Less opacity = more transparent = more blur visible
+        val transparentDarkColor = Color.parseColor("#80111827")  // 50% opacity for maximum frosted glass
         
         window.statusBarColor = transparentDarkColor
         window.navigationBarColor = transparentDarkColor
@@ -345,9 +345,22 @@ class MainActivity : AppCompatActivity() {
     private fun injectSafeAreaInsets() {
         val jsCode = """
             (function() {
-                document.documentElement.style.setProperty('--safe-area-inset-top', '${statusBarHeight}px');
-                document.documentElement.style.setProperty('--safe-area-inset-bottom', '${navBarHeight}px');
-                console.log('[EdgeToEdge] CSS variables injected: top=${statusBarHeight}px, bottom=${navBarHeight}px');
+                const top = '${statusBarHeight}px';
+                const bottom = '${navBarHeight}px';
+                
+                document.documentElement.style.setProperty('--safe-area-inset-top', top);
+                document.documentElement.style.setProperty('--safe-area-inset-bottom', bottom);
+                
+                // Also apply directly to #root to ensure it takes effect
+                const root = document.getElementById('root');
+                if (root) {
+                    root.style.paddingTop = top;
+                    root.style.paddingBottom = bottom;
+                    console.log('[EdgeToEdge] Direct padding applied to #root:', top, bottom);
+                }
+                
+                console.log('[EdgeToEdge] CSS variables injected:', { top, bottom });
+                console.log('[EdgeToEdge] Computed #root padding:', window.getComputedStyle(root || document.documentElement).paddingTop);
             })();
         """.trimIndent()
         
