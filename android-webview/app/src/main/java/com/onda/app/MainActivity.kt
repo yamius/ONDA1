@@ -13,6 +13,7 @@ import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
+import android.view.WindowManager
 import android.webkit.ConsoleMessage
 import android.webkit.JavascriptInterface
 import android.webkit.PermissionRequest
@@ -322,6 +323,20 @@ class MainActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
             window.isStatusBarContrastEnforced = false
             window.isNavigationBarContrastEnforced = false
+        }
+        
+        // Enable REAL blur effect behind system bars (Android 12+)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            window.attributes = window.attributes.apply {
+                blurBehindRadius = 80  // Blur radius in pixels (0-200, ~80 = medium blur like Telegram)
+            }
+            window.setFlags(
+                WindowManager.LayoutParams.FLAG_BLUR_BEHIND,
+                WindowManager.LayoutParams.FLAG_BLUR_BEHIND
+            )
+            Log.d("WebViewConsole", "[EdgeToEdge] System bar blur enabled (radius=80px)")
+        } else {
+            Log.d("WebViewConsole", "[EdgeToEdge] System bar blur NOT available (requires Android 12+)")
         }
         
         // Set light content for system bars (light icons/text on dark background)
