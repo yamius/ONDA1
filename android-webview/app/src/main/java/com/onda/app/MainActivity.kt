@@ -331,13 +331,15 @@ class MainActivity : AppCompatActivity() {
         
         // Listen for WindowInsets changes and save values (inject later in onPageFinished)
         ViewCompat.setOnApplyWindowInsetsListener(webView) { view, windowInsets ->
-            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+            // Get status bar and navigation bar separately for accurate measurements
+            val statusInsets = windowInsets.getInsets(WindowInsetsCompat.Type.statusBars())
+            val navInsets = windowInsets.getInsets(WindowInsetsCompat.Type.navigationBars())
             
             // Save inset values for later injection
-            statusBarHeight = insets.top
-            navBarHeight = insets.bottom
+            statusBarHeight = statusInsets.top
+            navBarHeight = navInsets.bottom
             
-            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets received: top=$statusBarHeight, bottom=$navBarHeight")
+            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets received: statusBar.top=$statusBarHeight, navBar.bottom=$navBarHeight")
             
             // Return the insets unchanged (don't consume them)
             windowInsets
@@ -357,7 +359,7 @@ class MainActivity : AppCompatActivity() {
                 const top = '${statusBarHeight}px';
                 const bottom = '${navBarHeight}px';
                 
-                console.log('[EdgeToEdge DEBUG] Raw values from Kotlin:', { top, bottom });
+                console.log('[EdgeToEdge DEBUG] Raw values from Kotlin: top=' + top + ', bottom=' + bottom);
                 
                 document.documentElement.style.setProperty('--safe-area-inset-top', top);
                 document.documentElement.style.setProperty('--safe-area-inset-bottom', bottom);
@@ -367,7 +369,7 @@ class MainActivity : AppCompatActivity() {
                 // Verify CSS variables were set
                 const topVar = getComputedStyle(document.documentElement).getPropertyValue('--safe-area-inset-top');
                 const bottomVar = getComputedStyle(document.documentElement).getPropertyValue('--safe-area-inset-bottom');
-                console.log('[EdgeToEdge DEBUG] CSS variables read back:', { topVar, bottomVar });
+                console.log('[EdgeToEdge DEBUG] CSS variables read back: topVar=' + topVar + ', bottomVar=' + bottomVar);
                 
                 // Check #root element
                 const root = document.getElementById('root');
@@ -378,11 +380,9 @@ class MainActivity : AppCompatActivity() {
                     const inlineTop = root.style.paddingTop;
                     const inlineBottom = root.style.paddingBottom;
                     
-                    console.log('[EdgeToEdge DEBUG] #root padding:', {
-                        computed: { top: computedPaddingTop, bottom: computedPaddingBottom },
-                        inline: { top: inlineTop, bottom: inlineBottom }
-                    });
-                    console.log('[EdgeToEdge DEBUG] #root classes:', root.className);
+                    console.log('[EdgeToEdge DEBUG] #root padding - computed.top=' + computedPaddingTop + ', computed.bottom=' + computedPaddingBottom);
+                    console.log('[EdgeToEdge DEBUG] #root padding - inline.top=' + inlineTop + ', inline.bottom=' + inlineBottom);
+                    console.log('[EdgeToEdge DEBUG] #root classes: ' + root.className);
                 } else {
                     console.error('[EdgeToEdge DEBUG] #root element NOT FOUND!');
                 }
