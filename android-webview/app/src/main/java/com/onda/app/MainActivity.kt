@@ -350,21 +350,41 @@ class MainActivity : AppCompatActivity() {
      * Inject CSS variables for safe area insets (called once after page load)
      */
     private fun injectSafeAreaInsets() {
+        Log.d("WebViewConsole", "[EdgeToEdge DEBUG] About to inject: statusBarHeight=$statusBarHeight, navBarHeight=$navBarHeight")
+        
         val jsCode = """
             (function() {
                 const top = '${statusBarHeight}px';
                 const bottom = '${navBarHeight}px';
                 
+                console.log('[EdgeToEdge DEBUG] Raw values from Kotlin:', { top, bottom });
+                
                 document.documentElement.style.setProperty('--safe-area-inset-top', top);
                 document.documentElement.style.setProperty('--safe-area-inset-bottom', bottom);
                 
-                console.log('[EdgeToEdge] CSS variables injected:', { top, bottom });
+                console.log('[EdgeToEdge DEBUG] CSS variables set');
                 
-                // Verify padding is applied via CSS
+                // Verify CSS variables were set
+                const topVar = getComputedStyle(document.documentElement).getPropertyValue('--safe-area-inset-top');
+                const bottomVar = getComputedStyle(document.documentElement).getPropertyValue('--safe-area-inset-bottom');
+                console.log('[EdgeToEdge DEBUG] CSS variables read back:', { topVar, bottomVar });
+                
+                // Check #root element
                 const root = document.getElementById('root');
                 if (root) {
-                    const computedPadding = window.getComputedStyle(root).paddingTop;
-                    console.log('[EdgeToEdge] Computed #root padding-top:', computedPadding);
+                    const styles = window.getComputedStyle(root);
+                    const computedPaddingTop = styles.paddingTop;
+                    const computedPaddingBottom = styles.paddingBottom;
+                    const inlineTop = root.style.paddingTop;
+                    const inlineBottom = root.style.paddingBottom;
+                    
+                    console.log('[EdgeToEdge DEBUG] #root padding:', {
+                        computed: { top: computedPaddingTop, bottom: computedPaddingBottom },
+                        inline: { top: inlineTop, bottom: inlineBottom }
+                    });
+                    console.log('[EdgeToEdge DEBUG] #root classes:', root.className);
+                } else {
+                    console.error('[EdgeToEdge DEBUG] #root element NOT FOUND!');
                 }
             })();
         """.trimIndent()
