@@ -88,13 +88,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        // Enable edge-to-edge mode (fullscreen with system bars)
-        setupEdgeToEdge()
-        
         // Set singleton instance
         instance = this
 
         webView = WebView(this)
+        
+        // Enable edge-to-edge mode (must be after WebView creation)
+        setupEdgeToEdge()
+        
         setContentView(webView)
 
         // Initialize Health Connect Manager
