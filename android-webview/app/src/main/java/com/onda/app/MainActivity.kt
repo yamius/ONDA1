@@ -358,16 +358,14 @@ class MainActivity : AppCompatActivity() {
                 document.documentElement.style.setProperty('--safe-area-inset-top', top);
                 document.documentElement.style.setProperty('--safe-area-inset-bottom', bottom);
                 
-                // Also apply directly to #root to ensure it takes effect
+                console.log('[EdgeToEdge] CSS variables injected:', { top, bottom });
+                
+                // Verify padding is applied via CSS
                 const root = document.getElementById('root');
                 if (root) {
-                    root.style.paddingTop = top;
-                    root.style.paddingBottom = bottom;
-                    console.log('[EdgeToEdge] Direct padding applied to #root:', top, bottom);
+                    const computedPadding = window.getComputedStyle(root).paddingTop;
+                    console.log('[EdgeToEdge] Computed #root padding-top:', computedPadding);
                 }
-                
-                console.log('[EdgeToEdge] CSS variables injected:', { top, bottom });
-                console.log('[EdgeToEdge] Computed #root padding:', window.getComputedStyle(root || document.documentElement).paddingTop);
             })();
         """.trimIndent()
         
