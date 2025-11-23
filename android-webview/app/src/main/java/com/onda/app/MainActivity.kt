@@ -346,17 +346,13 @@ class MainActivity : AppCompatActivity() {
         
         // Listen for WindowInsets changes and save values (inject later in onPageFinished)
         ViewCompat.setOnApplyWindowInsetsListener(webView) { view, windowInsets ->
-            // Get navigation bar inset
-            val navInsets = windowInsets.getInsets(WindowInsetsCompat.Type.navigationBars())
-            navBarHeight = navInsets.bottom
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
             
-            // CRITICAL FIX: On devices with notch, both WindowInsets AND system resources 
-            // include notch height (99px total instead of ~24px for status bar alone).
-            // Solution: Use FIXED standard status bar height (24dp = ~32px on most devices)
-            // This ensures clean frosted glass effect without excessive top padding.
-            statusBarHeight = (24 * resources.displayMetrics.density).toInt()
+            // Save inset values for later injection
+            statusBarHeight = insets.top
+            navBarHeight = insets.bottom
             
-            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets: statusBar.top=$statusBarHeight (fixed 24dp), navBar.bottom=$navBarHeight")
+            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets received: top=$statusBarHeight, bottom=$navBarHeight")
             
             // Return the insets unchanged (don't consume them)
             windowInsets
@@ -369,40 +365,15 @@ class MainActivity : AppCompatActivity() {
      * Inject CSS variables for safe area insets (called once after page load)
      */
     private fun injectSafeAreaInsets() {
-        Log.d("WebViewConsole", "[EdgeToEdge DEBUG] About to inject: statusBarHeight=$statusBarHeight, navBarHeight=$navBarHeight")
-        
         val jsCode = """
             (function() {
                 const top = '${statusBarHeight}px';
                 const bottom = '${navBarHeight}px';
                 
-                console.log('[EdgeToEdge DEBUG] Raw values from Kotlin: top=' + top + ', bottom=' + bottom);
-                
                 document.documentElement.style.setProperty('--safe-area-inset-top', top);
                 document.documentElement.style.setProperty('--safe-area-inset-bottom', bottom);
                 
-                console.log('[EdgeToEdge DEBUG] CSS variables set');
-                
-                // Verify CSS variables were set
-                const topVar = getComputedStyle(document.documentElement).getPropertyValue('--safe-area-inset-top');
-                const bottomVar = getComputedStyle(document.documentElement).getPropertyValue('--safe-area-inset-bottom');
-                console.log('[EdgeToEdge DEBUG] CSS variables read back: topVar=' + topVar + ', bottomVar=' + bottomVar);
-                
-                // Check #root element
-                const root = document.getElementById('root');
-                if (root) {
-                    const styles = window.getComputedStyle(root);
-                    const computedPaddingTop = styles.paddingTop;
-                    const computedPaddingBottom = styles.paddingBottom;
-                    const inlineTop = root.style.paddingTop;
-                    const inlineBottom = root.style.paddingBottom;
-                    
-                    console.log('[EdgeToEdge DEBUG] #root padding - computed.top=' + computedPaddingTop + ', computed.bottom=' + computedPaddingBottom);
-                    console.log('[EdgeToEdge DEBUG] #root padding - inline.top=' + inlineTop + ', inline.bottom=' + inlineBottom);
-                    console.log('[EdgeToEdge DEBUG] #root classes: ' + root.className);
-                } else {
-                    console.error('[EdgeToEdge DEBUG] #root element NOT FOUND!');
-                }
+                console.log('[EdgeToEdge] CSS variables injected:', { top, bottom });
             })();
         """.trimIndent()
         
