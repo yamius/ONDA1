@@ -1813,7 +1813,7 @@ const OndaLevel1 = () => {
               {/* Эмодзи и таймер в центре круга */}
               <div className="absolute inset-0 flex flex-col items-center justify-center">
                 {/* Эмодзи в маленьком круге с размытием к краям */}
-                <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-2 sm:mb-3 transform -translate-y-4 sm:-translate-y-6" style={{
+                <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-2 sm:mb-3 transform -translate-y-3 sm:-translate-y-5" style={{
                   animation: 'pulse 2s ease-in-out infinite',
                   filter: 'drop-shadow(0 0 20px rgba(168,85,247,0.6))'
                 }}>
