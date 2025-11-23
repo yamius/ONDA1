@@ -77,7 +77,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     id: 'inner_spark',
     element: 'TERRA',
     visual: '✨',
-    name: 'emotional_check.inner_spark',
+    name: 'adaptive_practices.inner_spark.name',
     shortPhrase: 'adaptive_practices.inner_spark.short_phrase',
     guidingTexts: [
       'adaptive_practices.inner_spark.guiding_1',
@@ -187,7 +187,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     id: 'light_flow',
     element: 'TERRA',
     visual: '🌟',
-    name: 'emotional_check.light_flow',
+    name: 'adaptive_practices.light_flow.name',
     shortPhrase: 'adaptive_practices.light_flow.short_phrase',
     guidingTexts: [
       'adaptive_practices.light_flow.guiding_1',
@@ -254,7 +254,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     id: 'breath_possibility',
     element: 'TERRA',
     visual: '🔥',
-    name: 'emotional_check.breath_possibility',
+    name: 'adaptive_practices.breath_possibility.name',
     shortPhrase: 'adaptive_practices.breath_possibility.short_phrase',
     guidingTexts: [
       'adaptive_practices.breath_possibility.guiding_1',
