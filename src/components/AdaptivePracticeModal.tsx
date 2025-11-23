@@ -24,7 +24,7 @@ interface AdaptivePractice {
   targetTime: number;
   maxOnd: number;
   ambientSound: string;
-  audioSrc?: string;
+  audioSrc?: string | string[];
 }
 
 const adaptivePractices: Record<string, AdaptivePractice> = {
@@ -49,7 +49,12 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-1.mp3'
+    audioSrc: [
+      'Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-1.mp3',
+      'Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-2.mp3',
+      'Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-3.mp3',
+      'Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-4.mp3'
+    ]
   },
   'light_inhale': {
     id: 'light_inhale',
@@ -71,7 +76,12 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Joy/adaptive-light_inhale/adaptive-light_inhale-1.mp3'
+    audioSrc: [
+      'Joy/adaptive-light_inhale/adaptive-light_inhale-1.mp3',
+      'Joy/adaptive-light_inhale/adaptive-light_inhale-2.mp3',
+      'Joy/adaptive-light_inhale/adaptive-light_inhale-3.mp3',
+      'Joy/adaptive-light_inhale/adaptive-light_inhale-4.mp3'
+    ]
   },
   'inner_spark': {
     id: 'inner_spark',
@@ -91,7 +101,12 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Inspiration/adaptive-inner_spark/adaptive-inner_spark-1.mp3'
+    audioSrc: [
+      'Inspiration/adaptive-inner_spark/adaptive-inner_spark-1.mp3',
+      'Inspiration/adaptive-inner_spark/adaptive-inner_spark-2.mp3',
+      'Inspiration/adaptive-inner_spark/adaptive-inner_spark-3.mp3',
+      'Inspiration/adaptive-inner_spark/adaptive-inner_spark-4.mp3'
+    ]
   },
   'slow_glow': {
     id: 'slow_glow',
@@ -113,7 +128,12 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Fatigue/adaptive-slow_glow/adaptive-slow_glow-1.mp3'
+    audioSrc: [
+      'Fatigue/adaptive-slow_glow/adaptive-slow_glow-1.mp3',
+      'Fatigue/adaptive-slow_glow/adaptive-slow_glow-2.mp3',
+      'Fatigue/adaptive-slow_glow/adaptive-slow_glow-3.mp3',
+      'Fatigue/adaptive-slow_glow/adaptive-slow_glow-4.mp3'
+    ]
   },
   'earth_breath': {
     id: 'earth_breath',
@@ -134,7 +154,11 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Calmness/adaptive-earth_breath/adaptive-earth_breath-1.mp3'
+    audioSrc: [
+      'Calmness/adaptive-earth_breath/adaptive-earth_breath-1.mp3',
+      'Calmness/adaptive-earth_breath/adaptive-earth_breath-2.mp3',
+      'Calmness/adaptive-earth_breath/adaptive-earth_breath-3.mp3'
+    ]
   },
   'wave_pulse': {
     id: 'wave_pulse',
@@ -158,7 +182,12 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Calmness/adaptive-wave_pulse/adaptive-wave_pulse-1.mp3'
+    audioSrc: [
+      'Calmness/adaptive-wave_pulse/adaptive-wave_pulse-1.mp3',
+      'Calmness/adaptive-wave_pulse/adaptive-wave_pulse-2.mp3',
+      'Calmness/adaptive-wave_pulse/adaptive-wave_pulse-3.mp3',
+      'Calmness/adaptive-wave_pulse/adaptive-wave_pulse-4.mp3'
+    ]
   },
   'sphere_breath': {
     id: 'sphere_breath',
@@ -181,7 +210,11 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Contemplation/adaptive-sphere_breath/adaptive-sphere_breath-1.mp3'
+    audioSrc: [
+      'Contemplation/adaptive-sphere_breath/adaptive-sphere_breath-1.mp3',
+      'Contemplation/adaptive-sphere_breath/adaptive-sphere_breath-2.mp3',
+      'Contemplation/adaptive-sphere_breath/adaptive-sphere_breath-3.mp3'
+    ]
   },
   'light_flow': {
     id: 'light_flow',
@@ -202,7 +235,11 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Inspiration/adaptive-light_flow/adaptive-light_flow-1.mp3'
+    audioSrc: [
+      'Inspiration/adaptive-light_flow/adaptive-light_flow-1.mp3',
+      'Inspiration/adaptive-light_flow/adaptive-light_flow-2.mp3',
+      'Inspiration/adaptive-light_flow/adaptive-light_flow-3.mp3'
+    ]
   },
   'roots_breath': {
     id: 'roots_breath',
@@ -225,7 +262,14 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Anxiety/adaptive-roots_breath/adaptive-roots_breath-1.mp3'
+    audioSrc: [
+      'Anxiety/adaptive-roots_breath/adaptive-roots_breath-1.mp3',
+      'Anxiety/adaptive-roots_breath/adaptive-roots_breath-2.mp3',
+      'Anxiety/adaptive-roots_breath/adaptive-roots_breath-3.mp3',
+      'Anxiety/adaptive-roots_breath/adaptive-roots_breath-4.mp3',
+      'Anxiety/adaptive-roots_breath/adaptive-roots_breath-5.mp3',
+      'Anxiety/adaptive-roots_breath/adaptive-roots_breath-6.mp3'
+    ]
   },
   'earth_pulse': {
     id: 'earth_pulse',
@@ -248,7 +292,12 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Anxiety/adaptive-earth_pulse/adaptive-earth_pulse-1.mp3'
+    audioSrc: [
+      'Anxiety/adaptive-earth_pulse/adaptive-earth_pulse-1.mp3',
+      'Anxiety/adaptive-earth_pulse/adaptive-earth_pulse-2.mp3',
+      'Anxiety/adaptive-earth_pulse/adaptive-earth_pulse-3.mp3',
+      'Anxiety/adaptive-earth_pulse/adaptive-earth_pulse-4.mp3'
+    ]
   },
   'breath_possibility': {
     id: 'breath_possibility',
@@ -268,7 +317,10 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Inspiration/adaptive-breath_possibility/adaptive-breath_possibility-1.mp3'
+    audioSrc: [
+      'Inspiration/adaptive-breath_possibility/adaptive-breath_possibility-1.mp3',
+      'Inspiration/adaptive-breath_possibility/adaptive-breath_possibility-2.mp3'
+    ]
   },
   'inner_smile': {
     id: 'inner_smile',
@@ -290,7 +342,11 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Joy/adaptive-inner_smile/adaptive-inner_smile-1.mp3'
+    audioSrc: [
+      'Joy/adaptive-inner_smile/adaptive-inner_smile-1.mp3',
+      'Joy/adaptive-inner_smile/adaptive-inner_smile-2.mp3',
+      'Joy/adaptive-inner_smile/adaptive-inner_smile-3.mp3'
+    ]
   },
   'amoeba_dance': {
     id: 'amoeba_dance',
@@ -312,7 +368,12 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Joy/adaptive-amoeba_dance/adaptive-amoeba_dance-1.mp3'
+    audioSrc: [
+      'Joy/adaptive-amoeba_dance/adaptive-amoeba_dance-1.mp3',
+      'Joy/adaptive-amoeba_dance/adaptive-amoeba_dance-2.mp3',
+      'Joy/adaptive-amoeba_dance/adaptive-amoeba_dance-3.mp3',
+      'Joy/adaptive-amoeba_dance/adaptive-amoeba_dance-4.mp3'
+    ]
   },
   'silence_point': {
     id: 'silence_point',
@@ -334,7 +395,12 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Contemplation/adaptive-silence_point/adaptive-silence_point-1.mp3'
+    audioSrc: [
+      'Contemplation/adaptive-silence_point/adaptive-silence_point-1.mp3',
+      'Contemplation/adaptive-silence_point/adaptive-silence_point-2.mp3',
+      'Contemplation/adaptive-silence_point/adaptive-silence_point-3.mp3',
+      'Contemplation/adaptive-silence_point/adaptive-silence_point-4.mp3'
+    ]
   },
   'listen_space': {
     id: 'listen_space',
@@ -356,7 +422,12 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Contemplation/adaptive-listen_space/adaptive-listen_space-1.mp3'
+    audioSrc: [
+      'Contemplation/adaptive-listen_space/adaptive-listen_space-1.mp3',
+      'Contemplation/adaptive-listen_space/adaptive-listen_space-2.mp3',
+      'Contemplation/adaptive-listen_space/adaptive-listen_space-3.mp3',
+      'Contemplation/adaptive-listen_space/adaptive-listen_space-4.mp3'
+    ]
   },
   'still_form': {
     id: 'still_form',
@@ -382,7 +453,11 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Calmness/adaptive-still_form/adaptive-still_form-1.mp3'
+    audioSrc: [
+      'Calmness/adaptive-still_form/adaptive-still_form-1.mp3',
+      'Calmness/adaptive-still_form/adaptive-still_form-2.mp3',
+      'Calmness/adaptive-still_form/adaptive-still_form-3.mp3'
+    ]
   },
   'rest_breath': {
     id: 'rest_breath',
@@ -403,7 +478,12 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Fatigue/adaptive-rest_breath/adaptive-rest_breath-1.mp3'
+    audioSrc: [
+      'Fatigue/adaptive-rest_breath/adaptive-rest_breath-1.mp3',
+      'Fatigue/adaptive-rest_breath/adaptive-rest_breath-2.mp3',
+      'Fatigue/adaptive-rest_breath/adaptive-rest_breath-3.mp3',
+      'Fatigue/adaptive-rest_breath/adaptive-rest_breath-4.mp3'
+    ]
   },
   'warm_sphere': {
     id: 'warm_sphere',
@@ -424,7 +504,12 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
     targetTime: 360,
     maxOnd: 50,
     ambientSound: 'elements.breath',
-    audioSrc: 'Fatigue/adaptive-warm_sphere/adaptive-warm_sphere-1.mp3'
+    audioSrc: [
+      'Fatigue/adaptive-warm_sphere/adaptive-warm_sphere-1.mp3',
+      'Fatigue/adaptive-warm_sphere/adaptive-warm_sphere-2.mp3',
+      'Fatigue/adaptive-warm_sphere/adaptive-warm_sphere-3.mp3',
+      'Fatigue/adaptive-warm_sphere/adaptive-warm_sphere-4.mp3'
+    ]
   }
 };
 
