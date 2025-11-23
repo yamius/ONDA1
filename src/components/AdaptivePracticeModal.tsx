@@ -339,7 +339,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'listen_space': {
     id: 'listen_space',
     element: 'TERRA',
-    visual: '👂',
+    visual: '🌌',
     name: 'adaptive_practices.listen_space.name',
     shortPhrase: 'adaptive_practices.listen_space.short_phrase',
     guidingTexts: [
