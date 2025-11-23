@@ -28,7 +28,7 @@ interface AdaptivePractice {
 }
 
 const OrangeCircle = () => (
-  <svg viewBox="0 0 120 120" className="w-16 h-16 sm:w-20 sm:h-20 inline-block">
+  <svg viewBox="0 0 120 120" className="w-8 h-8 sm:w-10 sm:h-10 inline-block">
     <circle cx="60" cy="60" r="50" fill="none" stroke="#FF5722" strokeWidth="8" />
   </svg>
 );
