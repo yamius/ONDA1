@@ -6,12 +6,14 @@ import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.media.AudioManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
+import android.view.WindowManager
 import android.webkit.ConsoleMessage
 import android.webkit.JavascriptInterface
 import android.webkit.PermissionRequest
@@ -25,6 +27,11 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.Insets
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.WindowInsetsControllerCompat
 import androidx.health.connect.client.PermissionController
 import androidx.lifecycle.lifecycleScope
 import androidx.webkit.WebViewAssetLoader
@@ -39,6 +46,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var bluetoothManager: BluetoothManager
     private var pendingPermissionRequest: PermissionRequest? = null
     private var hrBroadcastReceiver: BroadcastReceiver? = null
+    
+    // Store WindowInsets values for edge-to-edge mode
+    private var statusBarHeight = 0
+    private var navBarHeight = 0
 
     companion object {
         private const val PERMISSION_REQUEST_CODE = 100
@@ -86,6 +97,14 @@ class MainActivity : AppCompatActivity() {
         instance = this
 
         webView = WebView(this)
+        
+        // CRITICAL: Set WebView background to transparent for edge-to-edge (must be before setContentView)
+        // This prevents white bar under status bar because WebView defaults to opaque white
+        webView.setBackgroundColor(Color.TRANSPARENT)
+        
+        // Enable edge-to-edge mode (must be after WebView creation)
+        setupEdgeToEdge()
+        
         setContentView(webView)
 
         // Initialize Health Connect Manager
@@ -203,6 +222,14 @@ class MainActivity : AppCompatActivity() {
             ): WebResourceResponse? {
                 return assetLoader.shouldInterceptRequest(Uri.parse(url))
             }
+            
+            override fun onPageFinished(view: WebView?, url: String?) {
+                super.onPageFinished(view, url)
+                
+                // Inject CSS variables for safe area insets after page loads
+                injectSafeAreaInsets()
+                Log.d("WebViewConsole", "[EdgeToEdge] Page loaded, insets injected")
+            }
         }
 
         // Логируем всё из console.log + обрабатываем permissions
@@ -273,6 +300,84 @@ class MainActivity : AppCompatActivity() {
         
         // Register broadcast receiver for HR updates from NotificationListener/Service
         setupHRBroadcastReceiver()
+    }
+    
+    /**
+     * Enable edge-to-edge fullscreen mode with transparent blurred system bars (like Telegram)
+     */
+    private fun setupEdgeToEdge() {
+        // Enable edge-to-edge (draw behind system bars)
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        
+        // Make window background transparent (prevents white background before WebView renders)
+        window.setBackgroundDrawable(null)
+        
+        // VERY transparent dark background for frosted glass effect (50% opacity)
+        // Less opacity = more transparent = more blur visible
+        val transparentDarkColor = Color.parseColor("#80111827")  // 50% opacity for maximum frosted glass
+        
+        window.statusBarColor = transparentDarkColor
+        window.navigationBarColor = transparentDarkColor
+        
+        // Disable contrast enforcement for cleaner transparency (Android 11+)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            window.isStatusBarContrastEnforced = false
+            window.isNavigationBarContrastEnforced = false
+        }
+        
+        // Enable REAL blur effect behind system bars (Android 12+)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            window.attributes = window.attributes.apply {
+                blurBehindRadius = 80  // Blur radius in pixels (0-200, ~80 = medium blur like Telegram)
+            }
+            window.setFlags(
+                WindowManager.LayoutParams.FLAG_BLUR_BEHIND,
+                WindowManager.LayoutParams.FLAG_BLUR_BEHIND
+            )
+            Log.d("WebViewConsole", "[EdgeToEdge] System bar blur enabled (radius=80px)")
+        } else {
+            Log.d("WebViewConsole", "[EdgeToEdge] System bar blur NOT available (requires Android 12+)")
+        }
+        
+        // Set light content for system bars (light icons/text on dark background)
+        val insetsController = WindowCompat.getInsetsController(window, window.decorView)
+        insetsController.isAppearanceLightStatusBars = false  // Light text/icons on dark bg
+        insetsController.isAppearanceLightNavigationBars = false  // Light nav buttons on dark bg
+        
+        // Listen for WindowInsets changes and save values (inject later in onPageFinished)
+        ViewCompat.setOnApplyWindowInsetsListener(webView) { view, windowInsets ->
+            val insets = windowInsets.getInsets(WindowInsetsCompat.Type.systemBars())
+            
+            // Save inset values for later injection
+            statusBarHeight = insets.top
+            navBarHeight = insets.bottom
+            
+            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets received: top=$statusBarHeight, bottom=$navBarHeight")
+            
+            // Return the insets unchanged (don't consume them)
+            windowInsets
+        }
+        
+        Log.d("WebViewConsole", "[EdgeToEdge] Enabled fullscreen with transparent blurred system bars")
+    }
+    
+    /**
+     * Inject CSS variables for safe area insets (called once after page load)
+     */
+    private fun injectSafeAreaInsets() {
+        val jsCode = """
+            (function() {
+                const top = '${statusBarHeight}px';
+                const bottom = '${navBarHeight}px';
+                
+                document.documentElement.style.setProperty('--safe-area-inset-top', top);
+                document.documentElement.style.setProperty('--safe-area-inset-bottom', bottom);
+                
+                console.log('[EdgeToEdge] CSS variables injected:', { top, bottom });
+            })();
+        """.trimIndent()
+        
+        webView.evaluateJavascript(jsCode, null)
     }
     
     private fun setupHRBroadcastReceiver() {
