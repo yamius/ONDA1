@@ -1779,7 +1779,7 @@ const OndaLevel1 = () => {
         {practiceState === 'active' && (
           <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-3 sm:p-6">
             {/* Компактный круг с эмодзи и таймером */}
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-8 sm:mt-12">
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-4 sm:mt-6">
               {/* Круговой прогресс */}
               <svg className="w-full h-full transform -rotate-90" viewBox="0 0 256 256">
                 <circle
@@ -1813,7 +1813,7 @@ const OndaLevel1 = () => {
               {/* Эмодзи и таймер в центре круга */}
               <div className="absolute inset-0 flex flex-col items-center justify-center">
                 {/* Эмодзи в маленьком круге */}
-                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-purple-500/40 to-blue-500/40 backdrop-blur-md rounded-full flex items-center justify-center border-2 border-purple-400/50 shadow-xl mb-2 sm:mb-3" style={{
+                <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-purple-500/40 to-blue-500/40 backdrop-blur-md rounded-full flex items-center justify-center shadow-xl mb-2 sm:mb-3" style={{
                   animation: 'pulse 2s ease-in-out infinite',
                   filter: 'drop-shadow(0 0 20px rgba(168,85,247,0.6))'
                 }}>
