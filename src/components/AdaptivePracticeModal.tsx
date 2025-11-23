@@ -892,7 +892,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                 className="bg-emerald-500/30 hover:bg-emerald-500/50 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all hover:scale-110 shadow-xl border border-emerald-400/50"
                 data-testid="button-complete-practice"
               >
-                {t('practices.complete')}
+                {t('adaptive_practices.complete')}
               </button>
             </div>
           </div>
