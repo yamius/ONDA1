@@ -1953,13 +1953,13 @@ const OndaLevel1 = () => {
         ? 'bg-gradient-to-br from-slate-900 via-gray-800 to-slate-900'
         : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
     }`}>
-      {/* Верхняя навигация */}
-      <div className={`bg-black/20 backdrop-blur-sm border-b transition-all duration-1000 ${
+      {/* Верхняя навигация - Telegram style */}
+      <div className={`bg-black/40 backdrop-blur-md border-b transition-all duration-1000 ${
         activeCircuit === 2
-          ? 'border-cyan-500/30'
+          ? 'border-cyan-500/20'
           : activeCircuit === 3
-          ? 'border-gray-500/30'
-          : 'border-purple-500/30'
+          ? 'border-gray-500/20'
+          : 'border-purple-500/20'
       }`}>
         <div className="max-w-6xl mx-auto px-3 sm:px-6 py-3 sm:py-4 flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2 sm:gap-6">
@@ -2052,7 +2052,7 @@ const OndaLevel1 = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-8">
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 py-4 sm:py-8 pb-24 sm:pb-28">
         {/* Центральный заголовок */}
         <div className="text-center mb-6 sm:mb-12 pt-1 sm:pt-0">
           {/* Логотип по центру */}
@@ -3296,6 +3296,64 @@ const OndaLevel1 = () => {
         onClose={() => setShowInfoModal(false)}
         message={infoModalMessage}
       />
+
+      {/* Нижняя панель навигации - Telegram style */}
+      <div className={`fixed bottom-0 left-0 right-0 bg-black/30 backdrop-blur-lg border-t transition-all duration-1000 z-40 ${
+        activeCircuit === 2
+          ? 'border-cyan-500/20'
+          : activeCircuit === 3
+          ? 'border-gray-500/20'
+          : 'border-purple-500/20'
+      }`}>
+        <div className="max-w-6xl mx-auto px-3 sm:px-6 py-3 sm:py-4">
+          <div className="flex items-center justify-around gap-2">
+            <button
+              onClick={() => setActiveCircuit(1)}
+              className={`flex flex-col items-center gap-1 px-3 py-2 rounded-lg transition-all ${
+                activeCircuit === 1
+                  ? 'text-white bg-white/10'
+                  : 'text-white/60 hover:text-white hover:bg-white/5'
+              }`}
+              data-testid="button-nav-circuit-1"
+            >
+              <Heart className="w-5 h-5" />
+              <span className="text-xs">{t('circuits.earth')}</span>
+            </button>
+            <button
+              onClick={() => setActiveCircuit(2)}
+              className={`flex flex-col items-center gap-1 px-3 py-2 rounded-lg transition-all ${
+                activeCircuit === 2
+                  ? 'text-white bg-white/10'
+                  : 'text-white/60 hover:text-white hover:bg-white/5'
+              }`}
+              data-testid="button-nav-circuit-2"
+            >
+              <Droplets className="w-5 h-5" />
+              <span className="text-xs">{t('circuits.water')}</span>
+            </button>
+            <button
+              onClick={() => setActiveCircuit(3)}
+              className={`flex flex-col items-center gap-1 px-3 py-2 rounded-lg transition-all ${
+                activeCircuit === 3
+                  ? 'text-white bg-white/10'
+                  : 'text-white/60 hover:text-white hover:bg-white/5'
+              }`}
+              data-testid="button-nav-circuit-3"
+            >
+              <Wind className="w-5 h-5" />
+              <span className="text-xs">{t('circuits.air')}</span>
+            </button>
+            <button
+              onClick={() => setShowRatingModal(true)}
+              className="flex flex-col items-center gap-1 px-3 py-2 rounded-lg text-white/60 hover:text-white hover:bg-white/5 transition-all"
+              data-testid="button-nav-rating"
+            >
+              <Activity className="w-5 h-5" />
+              <span className="text-xs">{t('nav.rating')}</span>
+            </button>
+          </div>
+        </div>
+      </div>
 
     </div>
   );
