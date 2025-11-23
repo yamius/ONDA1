@@ -350,17 +350,13 @@ class MainActivity : AppCompatActivity() {
             val navInsets = windowInsets.getInsets(WindowInsetsCompat.Type.navigationBars())
             navBarHeight = navInsets.bottom
             
-            // For status bar: statusBars() includes notch/cutout which makes it too large (99px instead of 24px)
-            // Solution: Use standard status bar height from resources
-            val resourceId = resources.getIdentifier("status_bar_height", "dimen", "android")
-            statusBarHeight = if (resourceId > 0) {
-                resources.getDimensionPixelSize(resourceId)
-            } else {
-                // Fallback: 24dp converted to pixels
-                (24 * resources.displayMetrics.density).toInt()
-            }
+            // CRITICAL FIX: On devices with notch, both WindowInsets AND system resources 
+            // include notch height (99px total instead of ~24px for status bar alone).
+            // Solution: Use FIXED standard status bar height (24dp = ~32px on most devices)
+            // This ensures clean frosted glass effect without excessive top padding.
+            statusBarHeight = (24 * resources.displayMetrics.density).toInt()
             
-            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets: statusBar.top=$statusBarHeight (from resources), navBar.bottom=$navBarHeight")
+            Log.d("WebViewConsole", "[EdgeToEdge] WindowInsets: statusBar.top=$statusBarHeight (fixed 24dp), navBar.bottom=$navBarHeight")
             
             // Return the insets unchanged (don't consume them)
             windowInsets
