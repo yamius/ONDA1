@@ -32,9 +32,8 @@
     width: 100%;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    /* Edge-to-edge: Padding for status bar (top) and navigation bar (bottom) */
-    /* Android WebView injects these via WindowInsets API */
-    padding-top: var(--safe-area-inset-top, 0px);
+    /* Edge-to-edge: Only bottom padding for navigation bar */
+    /* Top padding is NOT applied here - app draws behind status bar for clean look */
     padding-bottom: var(--safe-area-inset-bottom, 0px);
     /* Prevent white background from showing through transparent system bars */
     background: transparent;

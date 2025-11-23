@@ -1954,7 +1954,7 @@ const OndaLevel1 = () => {
         : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
     }`}>
       {/* Верхняя навигация */}
-      <div className={`bg-black/10 backdrop-blur-xl border-b transition-all duration-1000 ${
+      <div className={`bg-black/10 backdrop-blur-xl border-b pt-2 transition-all duration-1000 ${
         activeCircuit === 2
           ? 'border-cyan-500/20'
           : activeCircuit === 3
