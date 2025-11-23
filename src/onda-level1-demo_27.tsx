@@ -1778,14 +1778,19 @@ const OndaLevel1 = () => {
 
         {practiceState === 'active' && (
           <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-3 sm:p-6">
-            <div className="text-5xl sm:text-9xl mb-6 sm:mb-16 transition-all duration-1000" style={{
-              animation: 'pulse 2s ease-in-out infinite',
-              filter: 'drop-shadow(0 0 30px rgba(255,255,255,0.5))'
-            }}>
-              {activePractice.visual}
-            </div>
-
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-6 sm:mb-12 mx-auto">
+            {/* Компактный круг с эмодзи и таймером */}
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-8 sm:mt-12">
+              {/* Эмодзи в круге над таймером */}
+              <div className="absolute -top-12 sm:-top-16 left-1/2 transform -translate-x-1/2 w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-purple-500/40 to-blue-500/40 backdrop-blur-md rounded-full flex items-center justify-center border-2 border-purple-400/50 shadow-xl" style={{
+                animation: 'pulse 2s ease-in-out infinite',
+                filter: 'drop-shadow(0 0 20px rgba(168,85,247,0.6))'
+              }}>
+                <div className="text-3xl sm:text-4xl">
+                  {activePractice.visual}
+                </div>
+              </div>
+              
+              {/* Круговой прогресс */}
               <svg className="w-full h-full transform -rotate-90" viewBox="0 0 256 256">
                 <circle
                   cx="128"
@@ -1814,6 +1819,8 @@ const OndaLevel1 = () => {
                   </linearGradient>
                 </defs>
               </svg>
+              
+              {/* Таймер внутри круга */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-4xl sm:text-6xl font-mono tracking-wider drop-shadow-2xl" style={{
                   fontVariantNumeric: 'tabular-nums'
