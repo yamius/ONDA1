@@ -733,7 +733,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
 
       <button
         onClick={handleClose}
-        className="absolute top-6 right-6 z-50 bg-black/40 hover:bg-black/60 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110"
+        className="absolute top-[72px] right-6 z-50 bg-black/40 hover:bg-black/60 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110"
       >
         <X className="w-6 h-6" />
       </button>
@@ -779,14 +779,16 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
 
         {practiceState === 'practice' && (
           <div className="flex flex-col items-center justify-center min-h-screen">
-            <div className="text-4xl sm:text-6xl mb-6 sm:mb-16 flex justify-center transition-all duration-1000" style={{
-              animation: 'pulse 2s ease-in-out infinite',
-              filter: 'drop-shadow(0 0 30px rgba(255,255,255,0.5))'
-            }}>
-              {practice.visual}
-            </div>
+            <div className="relative -translate-y-3 sm:-translate-y-5 flex flex-col items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+              <div className="relative w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full" style={{
+                background: 'radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, rgba(139, 92, 246, 0.15) 50%, transparent 100%)'
+              }}>
+                <div className="text-3xl sm:text-4xl transition-all duration-1000">
+                  {practice.visual}
+                </div>
+              </div>
 
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-6 sm:mb-12 mx-auto">
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 mx-auto">
               <svg className="w-full h-full transform -rotate-90" viewBox="0 0 256 256">
                 <circle
                   cx="128"
@@ -822,6 +824,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   {formatTime(practiceTime)}
                 </div>
               </div>
+            </div>
             </div>
 
             <div className="w-full max-w-md mb-6 sm:mb-12 px-3 sm:px-0">
