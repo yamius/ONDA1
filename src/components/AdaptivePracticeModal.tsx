@@ -779,16 +779,9 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
 
         {practiceState === 'practice' && (
           <div className="flex flex-col items-center justify-center min-h-screen">
-            <div className="relative -translate-y-3 sm:-translate-y-5 flex flex-col items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-              <div className="relative w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center rounded-full" style={{
-                background: 'radial-gradient(circle, rgba(139, 92, 246, 0.25) 0%, rgba(139, 92, 246, 0.15) 50%, transparent 100%)'
-              }}>
-                <div className="text-3xl sm:text-4xl transition-all duration-1000">
-                  {practice.visual}
-                </div>
-              </div>
-
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 mx-auto">
+            {/* Компактный круг с эмодзи и таймером */}
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-1 sm:mt-3">
+              {/* Круговой прогресс */}
               <svg className="w-full h-full transform -rotate-90" viewBox="0 0 256 256">
                 <circle
                   cx="128"
@@ -817,14 +810,31 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   </linearGradient>
                 </defs>
               </svg>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-4xl sm:text-6xl font-mono tracking-wider drop-shadow-2xl" style={{
+              
+              {/* Эмодзи и таймер в центре круга */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                {/* Эмодзи в маленьком круге с размытием к краям */}
+                <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-2 sm:mb-3 transform -translate-y-3 sm:-translate-y-5" style={{
+                  animation: 'pulse 2s ease-in-out infinite',
+                  filter: 'drop-shadow(0 0 20px rgba(168,85,247,0.6))'
+                }}>
+                  {/* Размытый фон с градиентом к краям (в 2 раза прозрачнее) */}
+                  <div className="absolute inset-0 rounded-full" style={{
+                    background: 'radial-gradient(circle, rgba(168,85,247,0.25) 0%, rgba(59,130,246,0.15) 50%, transparent 100%)',
+                    filter: 'blur(8px)'
+                  }} />
+                  <div className="relative text-3xl sm:text-4xl">
+                    {practice.visual}
+                  </div>
+                </div>
+                
+                {/* Таймер */}
+                <div className="text-4xl sm:text-6xl font-mono tracking-wider drop-shadow-2xl transform -translate-y-4 sm:-translate-y-6" style={{
                   fontVariantNumeric: 'tabular-nums'
                 }}>
                   {formatTime(practiceTime)}
                 </div>
               </div>
-            </div>
             </div>
 
             <div className="w-full max-w-md mb-6 sm:mb-12 px-3 sm:px-0">
