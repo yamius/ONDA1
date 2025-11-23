@@ -27,17 +27,11 @@ interface AdaptivePractice {
   audioSrc?: string;
 }
 
-const OrangeCircle = () => (
-  <svg viewBox="0 0 120 120" className="w-8 h-8 sm:w-10 sm:h-10 inline-block">
-    <circle cx="60" cy="60" r="50" fill="none" stroke="#FF5722" strokeWidth="8" />
-  </svg>
-);
-
 const adaptivePractices: Record<string, AdaptivePractice> = {
   'body_cocoon': {
     id: 'body_cocoon',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '🛡',
     name: 'adaptive_practices.body_cocoon.name',
     shortPhrase: 'adaptive_practices.body_cocoon.short_phrase',
     guidingTexts: [
@@ -60,7 +54,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'light_inhale': {
     id: 'light_inhale',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '☀️',
     name: 'adaptive_practices.light_inhale.name',
     shortPhrase: 'adaptive_practices.light_inhale.short_phrase',
     guidingTexts: [
@@ -82,7 +76,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'inner_spark': {
     id: 'inner_spark',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '✨',
     name: 'emotional_check.inner_spark',
     shortPhrase: 'adaptive_practices.inner_spark.short_phrase',
     guidingTexts: [
@@ -102,7 +96,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'slow_glow': {
     id: 'slow_glow',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '🌙',
     name: 'adaptive_practices.slow_glow.name',
     shortPhrase: 'adaptive_practices.slow_glow.short_phrase',
     guidingTexts: [
@@ -124,7 +118,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'earth_breath': {
     id: 'earth_breath',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '🌍',
     name: 'adaptive_practices.earth_breath.name',
     shortPhrase: 'adaptive_practices.earth_breath.short_phrase',
     guidingTexts: [
@@ -145,7 +139,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'wave_pulse': {
     id: 'wave_pulse',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '🌊',
     name: 'adaptive_practices.wave_pulse.name',
     shortPhrase: 'adaptive_practices.wave_pulse.short_phrase',
     guidingTexts: [
@@ -169,7 +163,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'sphere_breath': {
     id: 'sphere_breath',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '🔮',
     name: 'adaptive_practices.sphere_breath.name',
     shortPhrase: 'adaptive_practices.sphere_breath.short_phrase',
     guidingTexts: [
@@ -192,7 +186,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'light_flow': {
     id: 'light_flow',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '🌟',
     name: 'emotional_check.light_flow',
     shortPhrase: 'adaptive_practices.light_flow.short_phrase',
     guidingTexts: [
@@ -213,7 +207,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'roots_breath': {
     id: 'roots_breath',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '🌱',
     name: 'adaptive_practices.roots_breath.name',
     shortPhrase: 'adaptive_practices.roots_breath.short_phrase',
     guidingTexts: [
@@ -236,7 +230,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'earth_pulse': {
     id: 'earth_pulse',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '💓',
     name: 'adaptive_practices.earth_pulse.name',
     shortPhrase: 'adaptive_practices.earth_pulse.short_phrase',
     guidingTexts: [
@@ -259,7 +253,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'breath_possibility': {
     id: 'breath_possibility',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '🔥',
     name: 'emotional_check.breath_possibility',
     shortPhrase: 'adaptive_practices.breath_possibility.short_phrase',
     guidingTexts: [
@@ -279,7 +273,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'inner_smile': {
     id: 'inner_smile',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '😊',
     name: 'adaptive_practices.inner_smile.name',
     shortPhrase: 'adaptive_practices.inner_smile.short_phrase',
     guidingTexts: [
@@ -301,7 +295,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'amoeba_dance': {
     id: 'amoeba_dance',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '💫',
     name: 'adaptive_practices.amoeba_dance.name',
     shortPhrase: 'adaptive_practices.amoeba_dance.short_phrase',
     guidingTexts: [
@@ -323,7 +317,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'silence_point': {
     id: 'silence_point',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '⚫',
     name: 'adaptive_practices.silence_point.name',
     shortPhrase: 'adaptive_practices.silence_point.short_phrase',
     guidingTexts: [
@@ -345,7 +339,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'listen_space': {
     id: 'listen_space',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '👂',
     name: 'adaptive_practices.listen_space.name',
     shortPhrase: 'adaptive_practices.listen_space.short_phrase',
     guidingTexts: [
@@ -367,7 +361,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'still_form': {
     id: 'still_form',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '🕊',
     name: 'adaptive_practices.still_form.name',
     shortPhrase: 'adaptive_practices.still_form.short_phrase',
     guidingTexts: [
@@ -393,7 +387,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'rest_breath': {
     id: 'rest_breath',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '😴',
     name: 'adaptive_practices.rest_breath.name',
     shortPhrase: 'adaptive_practices.rest_breath.short_phrase',
     guidingTexts: [
@@ -414,7 +408,7 @@ const adaptivePractices: Record<string, AdaptivePractice> = {
   'warm_sphere': {
     id: 'warm_sphere',
     element: 'TERRA',
-    visual: <OrangeCircle />,
+    visual: '☀️',
     name: 'adaptive_practices.warm_sphere.name',
     shortPhrase: 'adaptive_practices.warm_sphere.short_phrase',
     guidingTexts: [
