@@ -32,8 +32,7 @@
     width: 100%;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    /* Edge-to-edge: Small bottom padding to prevent content from going under navigation bar */
-    padding-bottom: 24px;
+    /* Edge-to-edge: No padding - content manages its own spacing */
     /* Prevent white background from showing through transparent system bars */
     background: transparent;
   }

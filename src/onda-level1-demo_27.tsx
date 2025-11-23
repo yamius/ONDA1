@@ -1946,7 +1946,7 @@ const OndaLevel1 = () => {
   }
 
   return (
-    <div className={`h-full text-white overflow-x-hidden transition-all duration-1000 ${
+    <div className={`h-full text-white overflow-x-hidden pb-6 transition-all duration-1000 ${
       activeCircuit === 2
         ? 'bg-gradient-to-br from-teal-900 via-cyan-900 to-blue-900'
         : activeCircuit === 3
