@@ -1946,7 +1946,7 @@ const OndaLevel1 = () => {
   }
 
   return (
-    <div className={`h-full text-white overflow-x-hidden transition-all duration-1000 ${
+    <div className={`min-h-screen text-white overflow-x-hidden transition-all duration-1000 ${
       activeCircuit === 2
         ? 'bg-gradient-to-br from-teal-900 via-cyan-900 to-blue-900'
         : activeCircuit === 3
@@ -1954,12 +1954,12 @@ const OndaLevel1 = () => {
         : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
     }`}>
       {/* Верхняя навигация */}
-      <div className={`bg-black/10 backdrop-blur-xl border-b transition-all duration-1000 ${
+      <div className={`bg-black/20 backdrop-blur-sm border-b transition-all duration-1000 ${
         activeCircuit === 2
-          ? 'border-cyan-500/20'
+          ? 'border-cyan-500/30'
           : activeCircuit === 3
-          ? 'border-gray-500/20'
-          : 'border-purple-500/20'
+          ? 'border-gray-500/30'
+          : 'border-purple-500/30'
       }`}>
         <div className="max-w-6xl mx-auto px-3 sm:px-6 py-3 sm:py-4 flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2 sm:gap-6">
