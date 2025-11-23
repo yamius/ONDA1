@@ -735,9 +735,6 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       <div className="relative z-10 w-full max-w-2xl">
         {practiceState === 'intro' && (
           <div className="text-center space-y-4 sm:space-y-8">
-            <div className="text-4xl sm:text-6xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '2s' }}>
-              {practice.visual}
-            </div>
             <h1 className="text-3xl sm:text-6xl font-bold mb-2 sm:mb-4 drop-shadow-2xl">
               {t(practice.name)}
             </h1>
