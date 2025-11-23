@@ -32,9 +32,8 @@
     width: 100%;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
-    /* Edge-to-edge: Only bottom padding for navigation bar */
-    /* Top padding is NOT applied here - app draws behind status bar for clean look */
-    padding-bottom: var(--safe-area-inset-bottom, 0px);
+    /* Edge-to-edge: No padding - app draws behind both status and navigation bars */
+    /* Content manages its own spacing from system bars */
     /* Prevent white background from showing through transparent system bars */
     background: transparent;
   }
