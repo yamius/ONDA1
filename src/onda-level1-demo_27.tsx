@@ -1731,7 +1731,7 @@ const OndaLevel1 = () => {
 
         <button
           onClick={exitPractice}
-          className="absolute top-18 right-6 z-50 bg-black/40 hover:bg-black/60 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110"
+          className="absolute top-[72px] right-6 z-50 bg-black/40 hover:bg-black/60 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110"
         >
           <X className="w-6 h-6" />
         </button>
