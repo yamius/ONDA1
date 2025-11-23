@@ -1817,9 +1817,9 @@ const OndaLevel1 = () => {
                   animation: 'pulse 2s ease-in-out infinite',
                   filter: 'drop-shadow(0 0 20px rgba(168,85,247,0.6))'
                 }}>
-                  {/* Размытый фон с градиентом к краям */}
+                  {/* Размытый фон с градиентом к краям (в 2 раза прозрачнее) */}
                   <div className="absolute inset-0 rounded-full" style={{
-                    background: 'radial-gradient(circle, rgba(168,85,247,0.5) 0%, rgba(59,130,246,0.3) 50%, transparent 100%)',
+                    background: 'radial-gradient(circle, rgba(168,85,247,0.25) 0%, rgba(59,130,246,0.15) 50%, transparent 100%)',
                     filter: 'blur(8px)'
                   }} />
                   <div className="relative text-2xl sm:text-3xl">
@@ -1828,7 +1828,7 @@ const OndaLevel1 = () => {
                 </div>
                 
                 {/* Таймер */}
-                <div className="text-4xl sm:text-6xl font-mono tracking-wider drop-shadow-2xl" style={{
+                <div className="text-4xl sm:text-6xl font-mono tracking-wider drop-shadow-2xl transform -translate-y-4 sm:-translate-y-6" style={{
                   fontVariantNumeric: 'tabular-nums'
                 }}>
                   {formatTime(practiceTime)}
