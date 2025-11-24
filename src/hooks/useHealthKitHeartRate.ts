@@ -1,11 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Capacitor } from '@capacitor/core';
-import { CapacitorHealth, PermissionResult, QueryOutput } from 'capacitor-health';
-
-interface HeartRateData {
-  bpm: number;
-  timestamp: Date;
-}
+import { Health, type PermissionsRequest, type PermissionResponse } from 'capacitor-health';
 
 interface UseHealthKitHeartRateReturn {
   heartRate: number | null;
@@ -49,13 +44,17 @@ export function useHealthKitHeartRate(): UseHealthKitHeartRateReturn {
     }
 
     try {
-      const result: PermissionResult = await CapacitorHealth.requestAuthorization({
-        read: ['heartRate'],
-        write: []
-      });
+      const permissionsRequest: PermissionsRequest = {
+        permissions: ['READ_HEART_RATE']
+      };
 
-      setIsAuthorized(result.granted);
-      if (!result.granted) {
+      const result: PermissionResponse = await Health.requestHealthPermissions(permissionsRequest);
+
+      // Check if heart rate permission was granted
+      const granted = result.permissions[0]?.READ_HEART_RATE === true;
+      setIsAuthorized(granted);
+      
+      if (!granted) {
         setError('HealthKit permission denied');
       }
     } catch (err) {
@@ -81,22 +80,28 @@ export function useHealthKitHeartRate(): UseHealthKitHeartRateReturn {
       setIsMonitoring(true);
       setError(null);
 
-      // Query most recent heart rate sample
+      // Query workouts to get heart rate data
       const now = new Date();
       const oneHourAgo = new Date(now.getTime() - 60 * 60 * 1000);
 
-      const result: QueryOutput = await CapacitorHealth.queryHKitSampleType({
-        sampleName: 'heartRate',
+      const result = await Health.queryWorkouts({
         startDate: oneHourAgo.toISOString(),
         endDate: now.toISOString(),
-        limit: 1 // Get only the most recent sample
+        includeHeartRate: true,
+        includeRoute: false,
+        includeSteps: false
       });
 
-      if (result.resultData && result.resultData.length > 0) {
-        const latestSample = result.resultData[0];
-        // HealthKit returns heart rate in beats per minute
-        const bpm = Math.round(parseFloat(latestSample.value || '0'));
-        setHeartRate(bpm);
+      // Get the most recent heart rate sample from workouts
+      if (result.workouts && result.workouts.length > 0) {
+        for (const workout of result.workouts) {
+          if (workout.heartRate && workout.heartRate.length > 0) {
+            // Get latest heart rate sample
+            const latestHR = workout.heartRate[workout.heartRate.length - 1];
+            setHeartRate(latestHR.bpm);
+            break;
+          }
+        }
       }
 
     } catch (err) {
@@ -112,31 +117,37 @@ export function useHealthKitHeartRate(): UseHealthKitHeartRateReturn {
     setIsMonitoring(false);
   };
 
-  // Poll for updates while monitoring (every 5 seconds)
+  // Poll for updates while monitoring (every 10 seconds)
   useEffect(() => {
     if (!isMonitoring || !isAvailable) return;
 
     const interval = setInterval(async () => {
       try {
         const now = new Date();
-        const oneMinuteAgo = new Date(now.getTime() - 60 * 1000);
+        const fiveMinutesAgo = new Date(now.getTime() - 5 * 60 * 1000);
 
-        const result: QueryOutput = await CapacitorHealth.queryHKitSampleType({
-          sampleName: 'heartRate',
-          startDate: oneMinuteAgo.toISOString(),
+        const result = await Health.queryWorkouts({
+          startDate: fiveMinutesAgo.toISOString(),
           endDate: now.toISOString(),
-          limit: 1
+          includeHeartRate: true,
+          includeRoute: false,
+          includeSteps: false
         });
 
-        if (result.resultData && result.resultData.length > 0) {
-          const latestSample = result.resultData[0];
-          const bpm = Math.round(parseFloat(latestSample.value || '0'));
-          setHeartRate(bpm);
+        // Get the most recent heart rate sample
+        if (result.workouts && result.workouts.length > 0) {
+          for (const workout of result.workouts) {
+            if (workout.heartRate && workout.heartRate.length > 0) {
+              const latestHR = workout.heartRate[workout.heartRate.length - 1];
+              setHeartRate(latestHR.bpm);
+              break;
+            }
+          }
         }
       } catch (err) {
         console.error('[HealthKit] Polling error:', err);
       }
-    }, 5000); // Poll every 5 seconds
+    }, 10000); // Poll every 10 seconds
 
     return () => clearInterval(interval);
   }, [isMonitoring, isAvailable]);

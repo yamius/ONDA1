@@ -1,0 +1,107 @@
+# Fastfile for ONDA iOS App
+# This file automates building and deploying iOS app to TestFlight
+
+default_platform(:ios)
+
+platform :ios do
+  before_all do
+    # Ensure we're on the latest version of Fastlane
+    update_fastlane
+  end
+
+  desc "Build iOS app"
+  lane :build do
+    # Install dependencies
+    sh("cd .. && npm install")
+    
+    # Build React app
+    sh("cd .. && npm run build")
+    
+    # Sync Capacitor
+    sh("cd .. && npx cap sync ios")
+    
+    # Build the app
+    gym(
+      scheme: "App",
+      workspace: "ios/App/App.xcworkspace",
+      export_method: "app-store",
+      output_directory: "./build",
+      output_name: "ONDA.ipa",
+      clean: true
+    )
+  end
+
+  desc "Build and upload to TestFlight"
+  lane :beta do
+    # Setup code signing with Match
+    match(
+      type: "appstore",
+      readonly: true
+    )
+    
+    # Build the app
+    build
+    
+    # Upload to TestFlight
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true,
+      skip_submission: true,
+      notify_external_testers: false
+    )
+    
+    # Clean up build artifacts
+    clean_build_artifacts
+  end
+
+  desc "Release to App Store"
+  lane :release do
+    # Setup code signing
+    match(
+      type: "appstore",
+      readonly: true
+    )
+    
+    # Build the app
+    build
+    
+    # Upload to App Store
+    upload_to_app_store(
+      force: true,
+      skip_metadata: true,
+      skip_screenshots: true,
+      submit_for_review: false
+    )
+    
+    # Clean up
+    clean_build_artifacts
+  end
+
+  desc "Setup Match for code signing"
+  lane :setup_match do
+    match(
+      type: "development",
+      readonly: false
+    )
+    
+    match(
+      type: "appstore",
+      readonly: false
+    )
+  end
+
+  after_all do |lane|
+    # Success notification
+    notification(
+      title: "ONDA iOS",
+      message: "Successfully completed '#{lane}' lane!"
+    )
+  end
+
+  error do |lane, exception|
+    # Error notification
+    notification(
+      title: "ONDA iOS Error",
+      message: "Failed in '#{lane}' lane: #{exception.message}"
+    )
+  end
+end
