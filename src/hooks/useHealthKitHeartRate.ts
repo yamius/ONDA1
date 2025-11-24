@@ -32,9 +32,27 @@ export function useHealthKitHeartRate(): UseHealthKitHeartRateReturn {
   const [isAuthorized, setIsAuthorized] = useState<boolean | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isMonitoring, setIsMonitoring] = useState(false);
+  const [isAvailable, setIsAvailable] = useState(false);
 
-  // Check if running on iOS with HealthKit available
-  const isAvailable = Capacitor.getPlatform() === 'ios' && Capacitor.isNativePlatform();
+  // Check if HealthKit is available on this device
+  useEffect(() => {
+    const checkAvailability = async () => {
+      if (Capacitor.getPlatform() !== 'ios' || !Capacitor.isNativePlatform()) {
+        setIsAvailable(false);
+        return;
+      }
+
+      try {
+        const result = await Health.isHealthAvailable();
+        setIsAvailable(result.available);
+      } catch (err) {
+        console.error('[HealthKit] Availability check error:', err);
+        setIsAvailable(false);
+      }
+    };
+
+    checkAvailability();
+  }, []);
 
   // Request HealthKit permissions
   const requestPermission = async () => {
@@ -71,8 +89,8 @@ export function useHealthKitHeartRate(): UseHealthKitHeartRateReturn {
       return;
     }
 
-    if (isAuthorized === false) {
-      setError('HealthKit permission not granted');
+    if (isAuthorized !== true) {
+      setError('HealthKit permission not granted. Please request permission first.');
       return;
     }
 

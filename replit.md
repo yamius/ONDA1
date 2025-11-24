@@ -1,12 +1,93 @@
 # Overview
 
-ONDA is a mindfulness and wellness mobile application that combines gamification with biometric tracking. It guides users through consciousness development practices organized into progressive "circuits," rewarding completion with virtual currency (OND). The app integrates real-time health data from Google Health Connect and Bluetooth heart rate monitors to provide adaptive, personalized meditation and breathing exercises.
+ONDA is a mindfulness and wellness mobile application that combines gamification with biometric tracking. It guides users through consciousness development practices organized into progressive "circuits," rewarding completion with virtual currency (OND). The app integrates real-time health data from Google Health Connect (Android) and Apple HealthKit (iOS), plus Bluetooth heart rate monitors to provide adaptive, personalized meditation and breathing exercises.
 
-The application is a React-based Progressive Web App (PWA) with native Android WebView wrapper support, featuring multilingual support (English, Spanish, Russian, Ukrainian, Chinese) and both light/dark themes. The business vision is to provide an engaging and effective platform for personal growth, leveraging technology to make wellness practices accessible and motivating, with strong market potential in the digital health and self-improvement sectors.
+The application is a React-based Progressive Web App (PWA) with native mobile support: Android via custom WebView wrapper and iOS via Capacitor framework. Features multilingual support (English, Spanish, Russian, Ukrainian, Chinese) and both light/dark themes. iOS deployment is fully automated via GitHub Actions and Fastlane for TestFlight distribution. The business vision is to provide an engaging and effective platform for personal growth, leveraging technology to make wellness practices accessible and motivating, with strong market potential in the digital health and self-improvement sectors.
 
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+
+# Recent Changes
+
+## iOS Deployment Infrastructure via Capacitor (November 24, 2025) ✅
+
+**Feature:** Complete iOS app deployment setup with automated cloud builds via GitHub Actions.
+
+**Implementation:**
+- Installed Capacitor framework (`@capacitor/core`, `@capacitor/cli`, `@capacitor/ios`)
+- Installed `capacitor-health` plugin for unified HealthKit (iOS) + Health Connect (Android) support
+- Created `useHealthKitHeartRate` React hook for iOS heart rate monitoring
+- Configured Fastlane automation (Fastfile, Appfile, Matchfile) for TestFlight deployment
+- Created GitHub Actions workflow (`ios-deploy.yml`) for automated iOS builds on macOS runners
+- Updated `capacitor.config.ts` with iOS-specific settings and HealthKit plugin configuration
+- Added HealthKit permissions to `ios/App/App/Info.plist`:
+  - `NSHealthShareUsageDescription` - Permission to read heart rate data
+  - `NSHealthUpdateUsageDescription` - Permission to write workout data
+  - `UIBackgroundModes` - Background fetch capability
+
+**Technical Details:**
+1. **capacitor-health@7.0.0** - Cross-platform health data plugin:
+   - iOS: Reads from Apple HealthKit (heart rate, workouts, steps, mindfulness)
+   - Android: Reads from Google Health Connect (maintains existing implementation)
+   - Unified API across both platforms
+
+2. **useHealthKitHeartRate.ts** - React hook for iOS heart rate:
+   - Platform detection via `Capacitor.getPlatform()`
+   - Permission request: `Health.requestHealthPermissions()`
+   - Heart rate polling from workouts: `Health.queryWorkouts()`
+   - 10-second polling interval during meditation practices
+   - Graceful fallback on web/Android (returns null, isAvailable=false)
+
+3. **Fastlane Configuration:**
+   - `Fastfile`: Automated build lanes (build, beta, release, setup_match)
+   - `Appfile`: Apple Developer account configuration via env vars
+   - `Matchfile`: Code signing certificates management with git storage
+   - Uses App Store Connect API for authentication (no 2FA required)
+
+4. **GitHub Actions Workflow (`ios-deploy.yml`):**
+   - Triggers on push to `main` or manual dispatch
+   - Runs on `macos-latest` runners (~10-15 min build time)
+   - Steps: Checkout → Install deps → Build React → Sync Capacitor → Setup Xcode → Build & sign → Upload to TestFlight
+   - Secrets managed via GitHub repository secrets (see SETUP_IOS.md)
+   - Automatic artifact upload (IPA file + test reports)
+
+5. **Deployment Strategy:**
+   - **Direct Replit ↔ GitHub workflow** - No local Mac required!
+   - Code push to GitHub → Automatic cloud build → TestFlight in 10-15 minutes
+   - Free tier: ~200 macOS minutes/month (20 builds for public repos)
+   - Match stores certificates in private GitHub repo
+
+**Files Created:**
+- `src/hooks/useHealthKitHeartRate.ts` - iOS HealthKit integration hook
+- `fastlane/Fastfile` - Fastlane build automation
+- `fastlane/Appfile` - Apple Developer configuration
+- `fastlane/Matchfile` - Code signing setup
+- `.github/workflows/ios-deploy.yml` - GitHub Actions workflow
+- `SETUP_IOS.md` - Complete iOS deployment guide
+- `capacitor.config.ts` - Updated with iOS config
+
+**Files Modified:**
+- `ios/App/App/Info.plist` - Added HealthKit permissions
+- `replit.md` - Updated with iOS deployment info
+
+**Key Learnings:**
+1. **capacitor-health** provides unified API for both iOS HealthKit and Android Health Connect
+2. GitHub Actions provides free macOS runners for iOS builds (no local Mac needed)
+3. Fastlane Match stores certificates in git repo (encrypted with password)
+4. App Store Connect API keys eliminate 2FA prompts in CI/CD
+5. iOS requires privacy descriptions for all health data access
+6. HealthKit permissions are all-or-nothing per data type (can't request specific workouts)
+
+**Pending Setup (requires Apple Developer Account):**
+- Apple Developer Program enrollment ($99/year)
+- App registration in App Store Connect
+- App Store Connect API key generation
+- Certificates repository creation
+- GitHub Secrets configuration
+- First-time Match initialization (see SETUP_IOS.md)
+
+---
 
 # Recent Changes
 
