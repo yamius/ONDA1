@@ -19,6 +19,9 @@
     "prepare:android": "bash scripts/prepare-android.sh"
   },
   "dependencies": {
+    "@capacitor/cli": "^7.4.4",
+    "@capacitor/core": "^7.4.4",
+    "@capacitor/ios": "^7.4.4",
     "@octokit/rest": "^22.0.1",
     "@supabase/supabase-js": "^2.57.4",
     "@testing-library/jest-dom": "^6.9.1",
@@ -26,6 +29,8 @@
     "@testing-library/user-event": "^14.6.1",
     "@types/node": "^24.10.1",
     "@vitest/ui": "^4.0.9",
+    "capacitor-health": "^7.0.0",
+    "fastlane": "^0.0.9",
     "happy-dom": "^20.0.10",
     "i18next": "^25.6.0",
     "i18next-browser-languagedetector": "^8.2.0",
