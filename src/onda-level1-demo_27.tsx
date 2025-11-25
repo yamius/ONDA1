@@ -9,7 +9,6 @@ import { OndShopModal } from './components/OndShopModal';
 import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { EmotionalCheckModal } from './components/EmotionalCheckModal';
 import { InfoModal } from './components/InfoModal';
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from './components/ui/sheet';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
 import { useHealthConnect } from './hooks/useHealthConnect';
@@ -3329,12 +3328,8 @@ const OndaLevel1 = () => {
       />
 
       {/* Боковое меню */}
-      <Sheet open={showMenu} onOpenChange={setShowMenu}>
-        <SheetContent 
-          side="left" 
-          className="bg-transparent border-none shadow-none w-auto p-0"
-        >
-          <nav className="flex flex-col gap-3 pt-40 pl-4">
+      {showMenu && (
+        <nav className="fixed top-40 left-4 z-[60] flex flex-col gap-3 animate-in slide-in-from-left duration-300">
             <button
               className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
                 activeCircuit === 2
@@ -3478,9 +3473,8 @@ const OndaLevel1 = () => {
                 </div>
               </div>
             )}
-          </nav>
-        </SheetContent>
-      </Sheet>
+        </nav>
+      )}
 
     </div>
   );
