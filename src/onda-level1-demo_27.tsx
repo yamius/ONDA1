@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap } from 'lucide-react';
+import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
@@ -9,6 +9,7 @@ import { OndShopModal } from './components/OndShopModal';
 import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { EmotionalCheckModal } from './components/EmotionalCheckModal';
 import { InfoModal } from './components/InfoModal';
+import { Sheet, SheetContent, SheetHeader, SheetTitle } from './components/ui/sheet';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
 import { useHealthConnect } from './hooks/useHealthConnect';
@@ -68,6 +69,7 @@ const OndaLevel1 = () => {
   const [isLoadingUser, setIsLoadingUser] = useState(true);
   const [showInfoModal, setShowInfoModal] = useState(false);
   const [infoModalMessage, setInfoModalMessage] = useState('');
+  const [showMenu, setShowMenu] = useState(false);
 
   const [bioMetrics, setBioMetrics] = useState({
     heartRate: 72,
@@ -1976,6 +1978,15 @@ const OndaLevel1 = () => {
       }`}>
         <div className="max-w-6xl mx-auto px-3 sm:px-6 py-3 sm:py-4 flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2 sm:gap-6">
+            {/* Гамбургер меню */}
+            <button
+              onClick={() => setShowMenu(true)}
+              className="text-white/80 hover:text-white transition-all px-2 sm:px-3 py-1.5 sm:py-2 rounded-full bg-black/30 hover:bg-black/50"
+              data-testid="button-menu"
+            >
+              <Menu className="w-5 h-5" />
+            </button>
+            
             <div className="relative">
               <button
                 onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
