@@ -1,11 +1,12 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu } from 'lucide-react';
+import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
 import { UserProfile } from './components/UserProfile';
 import { SettingsModal } from './components/SettingsModal';
 import { ConnectionModal } from './components/ConnectionModal';
+import LanguageModal from './components/LanguageModal';
 import { OndShopModal } from './components/OndShopModal';
 import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { EmotionalCheckModal } from './components/EmotionalCheckModal';
@@ -66,6 +67,7 @@ const OndaLevel1 = () => {
   const [showProfileModal, setShowProfileModal] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
   const [showConnectionModal, setShowConnectionModal] = useState(false);
+  const [showLanguageModal, setShowLanguageModal] = useState(false);
   const [showQntShop, setShowQntShop] = useState(false);
   const [isLoadingUser, setIsLoadingUser] = useState(true);
   const [showInfoModal, setShowInfoModal] = useState(false);
@@ -1971,8 +1973,8 @@ const OndaLevel1 = () => {
     }`}>
       {/* Плавающая кнопка гамбургер меню */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
-       !showProfileModal && !showSettingsModal && !showConnectionModal && !showQntShop && 
-       !showEmotionalCheck && !showInfoModal && (
+       !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
+       !showQntShop && !showEmotionalCheck && !showInfoModal && (
         <button
           onClick={() => setShowMenu(!showMenu)}
           className={`fixed top-24 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
@@ -3323,6 +3325,11 @@ const OndaLevel1 = () => {
         />
       )}
 
+      <LanguageModal
+        isOpen={showLanguageModal}
+        onClose={() => setShowLanguageModal(false)}
+      />
+
       <OndShopModal
         isOpen={showQntShop}
         onClose={() => setShowQntShop(false)}
@@ -3443,6 +3450,32 @@ const OndaLevel1 = () => {
             >
               <Zap className="w-6 h-6 text-orange-400" />
               <span className="font-medium">Рейтинг</span>
+            </button>
+
+            {/* Язык */}
+            <button
+              onClick={() => {
+                setShowLanguageModal(true);
+                setShowMenu(false);
+              }}
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              data-testid="menu-item-language"
+            >
+              <Languages className="w-6 h-6 text-indigo-400" />
+              <span className="font-medium">
+                {i18n.language === 'en' ? 'English' :
+                 i18n.language === 'es' ? 'Español' :
+                 i18n.language === 'ru' ? 'Русский' :
+                 i18n.language === 'uk' ? 'Українська' :
+                 i18n.language === 'zh' ? '中文' : 'Language'}
+              </span>
             </button>
 
             {/* Настройки */}
