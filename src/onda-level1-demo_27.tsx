@@ -1971,7 +1971,7 @@ const OndaLevel1 = () => {
       {/* Плавающая кнопка гамбургер меню */}
       <button
         onClick={() => setShowMenu(!showMenu)}
-        className={`fixed top-24 left-4 z-50 text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
+        className={`fixed top-24 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
           activeCircuit === 2
             ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
             : activeCircuit === 3
