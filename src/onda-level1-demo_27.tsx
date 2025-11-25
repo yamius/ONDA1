@@ -3330,6 +3330,25 @@ const OndaLevel1 = () => {
       {/* Боковое меню */}
       {showMenu && (
         <nav className="fixed top-40 left-4 z-[60] flex flex-col gap-3 animate-in slide-in-from-left duration-300">
+            {/* Home */}
+            <button
+              onClick={() => {
+                setShowMenu(false);
+              }}
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              data-testid="menu-item-home"
+            >
+              <Mountain className="w-6 h-6 text-purple-400" />
+              <span className="font-medium">Home</span>
+            </button>
+
             {/* Дневник */}
             <button
               onClick={() => {
@@ -3429,6 +3448,25 @@ const OndaLevel1 = () => {
             >
               <Settings className="w-6 h-6 text-blue-400" />
               <span className="font-medium">Настройки</span>
+            </button>
+
+            {/* Connection */}
+            <button
+              onClick={() => {
+                setShowMenu(false);
+              }}
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              data-testid="menu-item-connection"
+            >
+              <Heart className="w-6 h-6 text-pink-400" />
+              <span className="font-medium">Connection</span>
             </button>
 
             {/* Разделитель */}
