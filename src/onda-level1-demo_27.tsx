@@ -1970,20 +1970,24 @@ const OndaLevel1 = () => {
         : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
     }`}>
       {/* Плавающая кнопка гамбургер меню */}
-      <button
-        onClick={() => setShowMenu(!showMenu)}
-        className={`fixed top-24 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
-          activeCircuit === 2
-            ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-            : activeCircuit === 3
-            ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
-            : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-        }`}
-        style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
-        data-testid="button-menu"
-      >
-        {showMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-      </button>
+      {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
+       !showProfileModal && !showSettingsModal && !showConnectionModal && !showQntShop && 
+       !showEmotionalCheck && !showInfoModal && (
+        <button
+          onClick={() => setShowMenu(!showMenu)}
+          className={`fixed top-24 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
+            activeCircuit === 2
+              ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+              : activeCircuit === 3
+              ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+              : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+          }`}
+          style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+          data-testid="button-menu"
+        >
+          {showMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
+      )}
 
       {/* Верхняя навигация */}
       <div className={`bg-black/10 backdrop-blur-xl border-b pt-8 transition-all duration-1000 ${
