@@ -3321,6 +3321,105 @@ const OndaLevel1 = () => {
         message={infoModalMessage}
       />
 
+      {/* Боковое меню */}
+      <Sheet open={showMenu} onOpenChange={setShowMenu}>
+        <SheetContent 
+          side="left" 
+          className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 border-purple-500/20 text-white w-[280px] sm:w-[320px]"
+        >
+          <SheetHeader className="mb-6">
+            <SheetTitle className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+              ONDA
+            </SheetTitle>
+          </SheetHeader>
+          
+          <nav className="flex flex-col gap-2">
+            <button
+              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              data-testid="menu-item-home"
+            >
+              <Mountain className="w-5 h-5 text-purple-400" />
+              <span className="font-medium">Home</span>
+            </button>
+
+            <button
+              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              data-testid="menu-item-diary"
+            >
+              <Circle className="w-5 h-5 text-cyan-400" />
+              <span className="font-medium">Diary</span>
+            </button>
+
+            <button
+              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              data-testid="menu-item-statistics"
+            >
+              <Activity className="w-5 h-5 text-emerald-400" />
+              <span className="font-medium">Statistics</span>
+            </button>
+
+            <button
+              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              data-testid="menu-item-ond-balance"
+            >
+              <Star className="w-5 h-5 text-yellow-400" />
+              <span className="font-medium">OND Balance</span>
+              <span className="ml-auto text-xs text-yellow-400 font-mono">{safeToFixed(qnt, 1)}</span>
+            </button>
+
+            <button
+              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              data-testid="menu-item-leaderboard"
+            >
+              <Zap className="w-5 h-5 text-orange-400" />
+              <span className="font-medium">Leaderboard</span>
+            </button>
+
+            <div className="my-2 border-t border-white/10"></div>
+
+            <button
+              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              data-testid="menu-item-settings"
+            >
+              <Settings className="w-5 h-5 text-blue-400" />
+              <span className="font-medium">Settings</span>
+            </button>
+
+            <button
+              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              data-testid="menu-item-connection"
+            >
+              <Heart className="w-5 h-5 text-pink-400" />
+              <span className="font-medium">Connection</span>
+            </button>
+
+            {!user && (
+              <button
+                className="flex items-center gap-3 px-4 py-3 rounded-lg bg-purple-500/20 hover:bg-purple-500/30 transition-all text-left group border border-purple-400/30"
+                data-testid="menu-item-login"
+              >
+                <User className="w-5 h-5 text-purple-400" />
+                <span className="font-medium">Login</span>
+              </button>
+            )}
+
+            {user && (
+              <div className="mt-4 p-4 rounded-lg bg-black/20 border border-cyan-500/20">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center">
+                    <User className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="font-semibold text-sm">{userProfile?.display_name || 'User'}</div>
+                    <div className="text-xs text-white/60">{user.email}</div>
+                  </div>
+                </div>
+              </div>
+            )}
+          </nav>
+        </SheetContent>
+      </Sheet>
+
     </div>
   );
 };
