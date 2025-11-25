@@ -1977,7 +1977,7 @@ const OndaLevel1 = () => {
        !showQntShop && !showEmotionalCheck && !showInfoModal && (
         <button
           onClick={() => setShowMenu(!showMenu)}
-          className={`fixed top-24 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
+          className={`fixed top-4 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
             activeCircuit === 2
               ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
               : activeCircuit === 3
@@ -3345,7 +3345,7 @@ const OndaLevel1 = () => {
 
       {/* Боковое меню */}
       {showMenu && (
-        <nav className="fixed top-40 left-4 z-[60] flex flex-col gap-3 animate-in slide-in-from-left duration-300 max-h-[calc(100vh-12rem)] overflow-y-auto pr-2 scrollbar-hide">
+        <nav className="fixed top-20 left-4 z-[60] flex flex-col gap-3 animate-in slide-in-from-left duration-300 max-h-[calc(100vh-6rem)] overflow-y-auto pr-2 scrollbar-hide">
             {/* Home */}
             <button
               onClick={() => {
