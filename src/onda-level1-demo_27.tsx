@@ -3351,7 +3351,7 @@ const OndaLevel1 = () => {
 
       {/* Боковое меню */}
       {showMenu && (
-        <nav className="fixed top-40 left-4 z-[60] flex flex-col gap-3 animate-in slide-in-from-left duration-300">
+        <nav className="fixed top-40 left-4 z-[60] flex flex-col gap-3 animate-in slide-in-from-left duration-300 max-h-[calc(100vh-12rem)] overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-purple-500/50 scrollbar-track-transparent">
             {/* Home */}
             <button
               onClick={() => {
