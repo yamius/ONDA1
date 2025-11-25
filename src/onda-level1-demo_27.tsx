@@ -1992,13 +1992,7 @@ const OndaLevel1 = () => {
       )}
 
       {/* Верхняя навигация */}
-      <div className={`bg-black/10 backdrop-blur-xl border-b pt-8 transition-all duration-1000 ${
-        activeCircuit === 2
-          ? 'border-cyan-500/20'
-          : activeCircuit === 3
-          ? 'border-gray-500/20'
-          : 'border-purple-500/20'
-      }`}>
+      <div className="hidden">
         <div className="max-w-6xl mx-auto px-3 sm:px-6 py-3 sm:py-4 flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2 sm:gap-6">
             <div className="relative">
