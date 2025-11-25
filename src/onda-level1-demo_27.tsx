@@ -3407,7 +3407,7 @@ const OndaLevel1 = () => {
             >
               <Star className="w-6 h-6 text-yellow-400" />
               <span className="font-medium">OND</span>
-              <span className="ml-auto text-xs sm:text-sm text-yellow-400">{safeToFixed(qnt, 1)}</span>
+              <span className="ml-auto text-sm sm:text-base text-yellow-400 font-medium">{safeToFixed(qnt, 1)}</span>
             </button>
 
             {/* Рейтинг */}
