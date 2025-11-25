@@ -1970,7 +1970,7 @@ const OndaLevel1 = () => {
     }`}>
       {/* Плавающая кнопка гамбургер меню */}
       <button
-        onClick={() => setShowMenu(true)}
+        onClick={() => setShowMenu(!showMenu)}
         className={`fixed top-24 left-4 z-50 text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
           activeCircuit === 2
             ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
@@ -1981,7 +1981,7 @@ const OndaLevel1 = () => {
         style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
         data-testid="button-menu"
       >
-        <Menu className="w-6 h-6" />
+        {showMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
 
       {/* Верхняя навигация */}
@@ -3332,94 +3332,149 @@ const OndaLevel1 = () => {
       <Sheet open={showMenu} onOpenChange={setShowMenu}>
         <SheetContent 
           side="left" 
-          className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 border-purple-500/20 text-white w-[280px] sm:w-[320px]"
+          className="bg-transparent border-none shadow-none w-auto p-0"
         >
-          <SheetHeader className="mb-6">
-            <SheetTitle className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-              ONDA
-            </SheetTitle>
-          </SheetHeader>
-          
-          <nav className="flex flex-col gap-2">
+          <nav className="flex flex-col gap-3 pt-32 pl-4">
             <button
-              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
               data-testid="menu-item-home"
             >
-              <Mountain className="w-5 h-5 text-purple-400" />
+              <Mountain className="w-6 h-6 text-purple-400" />
               <span className="font-medium">Home</span>
             </button>
 
             <button
-              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
               data-testid="menu-item-diary"
             >
-              <Circle className="w-5 h-5 text-cyan-400" />
+              <Circle className="w-6 h-6 text-cyan-400" />
               <span className="font-medium">Diary</span>
             </button>
 
             <button
-              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
               data-testid="menu-item-statistics"
             >
-              <Activity className="w-5 h-5 text-emerald-400" />
+              <Activity className="w-6 h-6 text-emerald-400" />
               <span className="font-medium">Statistics</span>
             </button>
 
             <button
-              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
               data-testid="menu-item-ond-balance"
             >
-              <Star className="w-5 h-5 text-yellow-400" />
+              <Star className="w-6 h-6 text-yellow-400" />
               <span className="font-medium">OND Balance</span>
               <span className="ml-auto text-xs text-yellow-400 font-mono">{safeToFixed(qnt, 1)}</span>
             </button>
 
             <button
-              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
               data-testid="menu-item-leaderboard"
             >
-              <Zap className="w-5 h-5 text-orange-400" />
+              <Zap className="w-6 h-6 text-orange-400" />
               <span className="font-medium">Leaderboard</span>
             </button>
 
-            <div className="my-2 border-t border-white/10"></div>
-
             <button
-              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
               data-testid="menu-item-settings"
             >
-              <Settings className="w-5 h-5 text-blue-400" />
+              <Settings className="w-6 h-6 text-blue-400" />
               <span className="font-medium">Settings</span>
             </button>
 
             <button
-              className="flex items-center gap-3 px-4 py-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all text-left group"
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
               data-testid="menu-item-connection"
             >
-              <Heart className="w-5 h-5 text-pink-400" />
+              <Heart className="w-6 h-6 text-pink-400" />
               <span className="font-medium">Connection</span>
             </button>
 
             {!user && (
               <button
-                className="flex items-center gap-3 px-4 py-3 rounded-lg bg-purple-500/20 hover:bg-purple-500/30 transition-all text-left group border border-purple-400/30"
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                  activeCircuit === 2
+                    ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                    : activeCircuit === 3
+                    ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                    : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                }`}
+                style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
                 data-testid="menu-item-login"
               >
-                <User className="w-5 h-5 text-purple-400" />
+                <User className="w-6 h-6 text-purple-400" />
                 <span className="font-medium">Login</span>
               </button>
             )}
 
             {user && (
-              <div className="mt-4 p-4 rounded-lg bg-black/20 border border-cyan-500/20">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center">
-                    <User className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <div className="font-semibold text-sm">{userProfile?.display_name || 'User'}</div>
-                    <div className="text-xs text-white/60">{user.email}</div>
-                  </div>
+              <div 
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white ${
+                  activeCircuit === 2
+                    ? 'bg-cyan-600/40 border border-cyan-400/30'
+                    : activeCircuit === 3
+                    ? 'bg-gray-700/40 border border-gray-400/30'
+                    : 'bg-purple-600/40 border border-purple-400/30'
+                }`}
+                style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              >
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
+                  <User className="w-5 h-5" />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="font-semibold text-sm truncate">{userProfile?.display_name || 'User'}</div>
+                  <div className="text-xs text-white/60 truncate">{user.email}</div>
                 </div>
               </div>
             )}
