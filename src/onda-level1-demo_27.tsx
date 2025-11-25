@@ -1964,7 +1964,7 @@ const OndaLevel1 = () => {
   }
 
   return (
-    <div className={`h-full text-white overflow-x-hidden pb-6 transition-all duration-1000 ${
+    <div className={`h-full text-white overflow-x-hidden pb-6 pt-8 transition-all duration-1000 ${
       activeCircuit === 2
         ? 'bg-gradient-to-br from-teal-900 via-cyan-900 to-blue-900'
         : activeCircuit === 3
@@ -1977,7 +1977,7 @@ const OndaLevel1 = () => {
        !showQntShop && !showEmotionalCheck && !showInfoModal && (
         <button
           onClick={() => setShowMenu(!showMenu)}
-          className={`fixed top-4 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
+          className={`fixed top-12 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
             activeCircuit === 2
               ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
               : activeCircuit === 3
@@ -3317,7 +3317,7 @@ const OndaLevel1 = () => {
 
       {/* Боковое меню */}
       {showMenu && (
-        <nav className="fixed top-20 left-4 z-[60] flex flex-col gap-3 animate-in slide-in-from-left duration-300 max-h-[calc(100vh-6rem)] overflow-y-auto pr-2 scrollbar-hide">
+        <nav className="fixed top-28 left-4 z-[60] flex flex-col gap-3 animate-in slide-in-from-left duration-300 max-h-[calc(100vh-8rem)] overflow-y-auto pr-2 scrollbar-hide">
             {/* Home */}
             <button
               onClick={() => {
@@ -3526,13 +3526,18 @@ const OndaLevel1 = () => {
                 style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
                 data-testid="menu-item-profile"
               >
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
-                  <User className="w-5 h-5" />
+                <div className="w-6 h-6 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                  {userProfile?.avatar_url ? (
+                    <img
+                      src={userProfile.avatar_url}
+                      alt={userProfile.display_name || 'User'}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <User className="w-4 h-4 text-white" />
+                  )}
                 </div>
-                <div className="flex-1 min-w-0">
-                  <div className="font-semibold text-sm truncate">{userProfile?.display_name || 'User'}</div>
-                  <div className="text-xs text-white/60 truncate">{user.email}</div>
-                </div>
+                <span className="font-medium">{userProfile?.display_name || 'User'}</span>
               </button>
             )}
         </nav>
