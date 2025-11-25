@@ -5,6 +5,7 @@ import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
 import { UserProfile } from './components/UserProfile';
 import { SettingsModal } from './components/SettingsModal';
+import { ConnectionModal } from './components/ConnectionModal';
 import { OndShopModal } from './components/OndShopModal';
 import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { EmotionalCheckModal } from './components/EmotionalCheckModal';
@@ -64,6 +65,7 @@ const OndaLevel1 = () => {
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
   const [showSettingsModal, setShowSettingsModal] = useState(false);
+  const [showConnectionModal, setShowConnectionModal] = useState(false);
   const [showQntShop, setShowQntShop] = useState(false);
   const [isLoadingUser, setIsLoadingUser] = useState(true);
   const [showInfoModal, setShowInfoModal] = useState(false);
@@ -3308,6 +3310,15 @@ const OndaLevel1 = () => {
         />
       )}
 
+      {showConnectionModal && (
+        <ConnectionModal
+          onClose={() => setShowConnectionModal(false)}
+          isLightTheme={isLightTheme}
+          vitalsData={vitalsData}
+          healthConnectData={healthConnectData}
+        />
+      )}
+
       <OndShopModal
         isOpen={showQntShop}
         onClose={() => setShowQntShop(false)}
@@ -3453,6 +3464,7 @@ const OndaLevel1 = () => {
             {/* Connection */}
             <button
               onClick={() => {
+                setShowConnectionModal(true);
                 setShowMenu(false);
               }}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
