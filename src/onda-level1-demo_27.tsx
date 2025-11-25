@@ -1968,6 +1968,22 @@ const OndaLevel1 = () => {
         ? 'bg-gradient-to-br from-slate-900 via-gray-800 to-slate-900'
         : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
     }`}>
+      {/* Плавающая кнопка гамбургер меню */}
+      <button
+        onClick={() => setShowMenu(true)}
+        className={`fixed top-24 left-4 z-50 text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
+          activeCircuit === 2
+            ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+            : activeCircuit === 3
+            ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+            : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+        }`}
+        style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+        data-testid="button-menu"
+      >
+        <Menu className="w-6 h-6" />
+      </button>
+
       {/* Верхняя навигация */}
       <div className={`bg-black/10 backdrop-blur-xl border-b pt-8 transition-all duration-1000 ${
         activeCircuit === 2
@@ -1978,15 +1994,6 @@ const OndaLevel1 = () => {
       }`}>
         <div className="max-w-6xl mx-auto px-3 sm:px-6 py-3 sm:py-4 flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2 sm:gap-6">
-            {/* Гамбургер меню */}
-            <button
-              onClick={() => setShowMenu(true)}
-              className="text-white/80 hover:text-white transition-all px-2 sm:px-3 py-1.5 sm:py-2 rounded-full bg-black/30 hover:bg-black/50"
-              data-testid="button-menu"
-            >
-              <Menu className="w-5 h-5" />
-            </button>
-            
             <div className="relative">
               <button
                 onClick={() => setShowLanguageDropdown(!showLanguageDropdown)}
