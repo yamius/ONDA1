@@ -3330,22 +3330,12 @@ const OndaLevel1 = () => {
       {/* Боковое меню */}
       {showMenu && (
         <nav className="fixed top-40 left-4 z-[60] flex flex-col gap-3 animate-in slide-in-from-left duration-300">
+            {/* Дневник */}
             <button
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
-              data-testid="menu-item-home"
-            >
-              <Mountain className="w-6 h-6 text-purple-400" />
-              <span className="font-medium">Home</span>
-            </button>
-
-            <button
+              onClick={() => {
+                setShowJournalModal(true);
+                setShowMenu(false);
+              }}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
@@ -3357,10 +3347,15 @@ const OndaLevel1 = () => {
               data-testid="menu-item-diary"
             >
               <Circle className="w-6 h-6 text-cyan-400" />
-              <span className="font-medium">Diary</span>
+              <span className="font-medium">Дневник</span>
             </button>
 
+            {/* Статистика */}
             <button
+              onClick={() => {
+                setShowStatsModal(true);
+                setShowMenu(false);
+              }}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
@@ -3372,10 +3367,15 @@ const OndaLevel1 = () => {
               data-testid="menu-item-statistics"
             >
               <Activity className="w-6 h-6 text-emerald-400" />
-              <span className="font-medium">Statistics</span>
+              <span className="font-medium">Статистика</span>
             </button>
 
+            {/* OND Balance */}
             <button
+              onClick={() => {
+                setShowQntShop(true);
+                setShowMenu(false);
+              }}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
@@ -3387,11 +3387,16 @@ const OndaLevel1 = () => {
               data-testid="menu-item-ond-balance"
             >
               <Star className="w-6 h-6 text-yellow-400" />
-              <span className="font-medium">OND Balance</span>
-              <span className="ml-auto text-xs text-yellow-400 font-mono">{safeToFixed(qnt, 1)}</span>
+              <span className="font-medium">OND</span>
+              <span className="ml-auto text-xs sm:text-sm text-yellow-400">{safeToFixed(qnt, 1)}</span>
             </button>
 
+            {/* Рейтинг */}
             <button
+              onClick={() => {
+                setShowRatingModal(true);
+                setShowMenu(false);
+              }}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
@@ -3403,10 +3408,15 @@ const OndaLevel1 = () => {
               data-testid="menu-item-leaderboard"
             >
               <Zap className="w-6 h-6 text-orange-400" />
-              <span className="font-medium">Leaderboard</span>
+              <span className="font-medium">Рейтинг</span>
             </button>
 
+            {/* Настройки */}
             <button
+              onClick={() => {
+                setShowSettingsModal(true);
+                setShowMenu(false);
+              }}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
@@ -3418,26 +3428,19 @@ const OndaLevel1 = () => {
               data-testid="menu-item-settings"
             >
               <Settings className="w-6 h-6 text-blue-400" />
-              <span className="font-medium">Settings</span>
+              <span className="font-medium">Настройки</span>
             </button>
 
-            <button
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
-              data-testid="menu-item-connection"
-            >
-              <Heart className="w-6 h-6 text-pink-400" />
-              <span className="font-medium">Connection</span>
-            </button>
+            {/* Разделитель */}
+            <div className="border-t border-white/10 my-1"></div>
 
+            {/* Login (если не залогинен) */}
             {!user && (
               <button
+                onClick={() => {
+                  setShowAuthModal(true);
+                  setShowMenu(false);
+                }}
                 className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
                   activeCircuit === 2
                     ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
@@ -3449,20 +3452,26 @@ const OndaLevel1 = () => {
                 data-testid="menu-item-login"
               >
                 <User className="w-6 h-6 text-purple-400" />
-                <span className="font-medium">Login</span>
+                <span className="font-medium">Войти</span>
               </button>
             )}
 
+            {/* User Profile (если залогинен) */}
             {user && (
-              <div 
-                className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white ${
+              <button
+                onClick={() => {
+                  setShowProfileModal(true);
+                  setShowMenu(false);
+                }}
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
                   activeCircuit === 2
-                    ? 'bg-cyan-600/40 border border-cyan-400/30'
+                    ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
                     : activeCircuit === 3
-                    ? 'bg-gray-700/40 border border-gray-400/30'
-                    : 'bg-purple-600/40 border border-purple-400/30'
+                    ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                    : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
                 }`}
                 style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+                data-testid="menu-item-profile"
               >
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
                   <User className="w-5 h-5" />
@@ -3471,7 +3480,7 @@ const OndaLevel1 = () => {
                   <div className="font-semibold text-sm truncate">{userProfile?.display_name || 'User'}</div>
                   <div className="text-xs text-white/60 truncate">{user.email}</div>
                 </div>
-              </div>
+              </button>
             )}
         </nav>
       )}
