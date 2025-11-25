@@ -2187,35 +2187,7 @@ const OndaLevel1 = () => {
 
         {/* Кнопки навигации */}
         <div className="flex flex-col items-center gap-3 sm:gap-4 mb-6 sm:mb-12 w-full max-w-md mx-auto px-4">
-          {/* Первая строка: Дневник и Статистика */}
-          <div className="flex items-center gap-3 sm:gap-6 w-full">
-            <button
-              onClick={() => setShowJournalModal(true)}
-              className={`backdrop-blur-sm px-4 sm:px-8 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-medium transition-all border flex-1 ${
-                activeCircuit === 2
-                  ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
-                  : activeCircuit === 3
-                  ? 'bg-gray-500/20 hover:bg-gray-500/30 border-gray-400/50'
-                  : 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/50'
-              }`}
-            >
-              {t('nav.diary')}
-            </button>
-            <button
-              onClick={() => setShowStatsModal(true)}
-              className={`backdrop-blur-sm px-4 sm:px-8 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-medium transition-all border flex-1 ${
-                activeCircuit === 2
-                  ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
-                  : activeCircuit === 3
-                  ? 'bg-gray-500/20 hover:bg-gray-500/30 border-gray-400/50'
-                  : 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/50'
-              }`}
-            >
-              {t('nav.stats')}
-            </button>
-          </div>
-
-          {/* Вторая строка: Эмоциональная сверка (на всю ширину) */}
+          {/* Эмоциональная сверка */}
           <button
             onClick={() => setShowEmotionalCheck(true)}
             className={`backdrop-blur-sm px-8 sm:px-16 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-medium transition-all border w-full ${
