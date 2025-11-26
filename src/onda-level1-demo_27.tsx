@@ -2096,7 +2096,7 @@ const OndaLevel1 = () => {
 
           <div className="w-full max-w-md mx-auto px-4">
             {/* Строка с Уровень слева и ТЕЛО справа */}
-            <div className="flex items-center justify-between gap-4 mb-1">
+            <div className="flex items-end justify-between gap-4 mb-1">
               <div className="relative">
                 <button
                   onClick={() => setShowChapterDropdown(!showChapterDropdown)}
@@ -2139,7 +2139,7 @@ const OndaLevel1 = () => {
               <h1 className="text-5xl sm:text-5xl md:text-7xl font-light tracking-wide text-right">{t('body_title')}</h1>
             </div>
             {/* Строка с Часть слева и название части справа */}
-            <div className="flex items-center justify-between gap-4 mb-3">
+            <div className="flex items-end justify-between gap-4 mb-3">
               <div className="relative">
                 <button
                   onClick={() => setShowLevelDropdown(!showLevelDropdown)}
