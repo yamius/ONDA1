@@ -2099,7 +2099,7 @@ const OndaLevel1 = () => {
             <div className="flex items-end justify-between gap-4 mb-2 sm:mb-1">
               <div className="relative">
                 <button
-                  onClick={() => setShowChapterDropdown(!showChapterDropdown)}
+                  onClick={() => { setShowChapterDropdown(!showChapterDropdown); setShowLevelDropdown(false); }}
                   className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border min-w-[100px] sm:min-w-[120px] text-left ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/5 hover:bg-cyan-500/15 border-cyan-400/20'
@@ -2142,7 +2142,7 @@ const OndaLevel1 = () => {
             <div className="flex items-end justify-between gap-4 mb-3">
               <div className="relative">
                 <button
-                  onClick={() => setShowLevelDropdown(!showLevelDropdown)}
+                  onClick={() => { setShowLevelDropdown(!showLevelDropdown); setShowChapterDropdown(false); }}
                   className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border min-w-[100px] sm:min-w-[120px] text-left ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/5 hover:bg-cyan-500/15 border-cyan-400/20'
