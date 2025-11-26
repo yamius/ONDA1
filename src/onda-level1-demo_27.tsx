@@ -2095,10 +2095,8 @@ const OndaLevel1 = () => {
           </div>
 
           <div className="w-full max-w-md mx-auto px-4">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-light mb-3 sm:mb-4 tracking-wide text-right">{t('body_title')}</h1>
-          </div>
-          <div className="flex flex-col items-center">
-            <div className="flex items-center gap-2 sm:gap-3 mb-6 flex-wrap justify-center">
+            {/* Выпадающий список Уровень - над названием */}
+            <div className="flex justify-end mb-2">
               <div className="relative">
                 <button
                   onClick={() => setShowChapterDropdown(!showChapterDropdown)}
@@ -2138,6 +2136,11 @@ const OndaLevel1 = () => {
                   </div>
                 )}
               </div>
+            </div>
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-light mb-3 sm:mb-4 tracking-wide text-right">{t('body_title')}</h1>
+          </div>
+          <div className="flex flex-col items-center">
+            <div className="flex items-center gap-2 sm:gap-3 mb-6 flex-wrap justify-center">
               <div className="relative">
                 <button
                   onClick={() => setShowLevelDropdown(!showLevelDropdown)}
