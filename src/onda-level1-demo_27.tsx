@@ -2111,23 +2111,23 @@ const OndaLevel1 = () => {
                   {t('chapter')} {selectedChapter}
                 </button>
                 {showChapterDropdown && (
-                  <div className={`absolute top-full mt-2 left-0 bg-black/90 backdrop-blur-md rounded-lg border z-50 ${
+                  <div className={`absolute top-full mt-2 left-0 backdrop-blur-md rounded-2xl border z-50 overflow-hidden ${
                     activeCircuit === 2
-                      ? 'border-cyan-500/30'
+                      ? 'bg-cyan-500/20 border-cyan-400/50'
                       : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
+                      ? 'bg-gray-500/20 border-gray-400/50'
+                      : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
                     {Array.from({length: 8}, (_, i) => i + 1).map(chapter => (
                       <button
                         key={chapter}
                         onClick={() => { setSelectedChapter(chapter); setShowChapterDropdown(false); }}
-                        className={`block w-full px-6 py-2 text-left transition-all whitespace-nowrap ${
+                        className={`block w-full px-6 py-2.5 text-left transition-all whitespace-nowrap text-sm ${
                           activeCircuit === 2
-                            ? 'hover:bg-cyan-500/20'
+                            ? selectedChapter === chapter ? 'bg-cyan-500/40 text-white' : 'hover:bg-cyan-500/30'
                             : activeCircuit === 3
-                            ? 'hover:bg-gray-500/20'
-                            : 'hover:bg-purple-500/20'
+                            ? selectedChapter === chapter ? 'bg-gray-500/40 text-white' : 'hover:bg-gray-500/30'
+                            : selectedChapter === chapter ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                         }`}
                       >
                         {t('chapter')} {chapter}
@@ -2154,12 +2154,12 @@ const OndaLevel1 = () => {
                   {t('level')} {selectedLevel}
                 </button>
                 {showLevelDropdown && (
-                  <div className={`absolute top-full mt-2 left-0 bg-black/90 backdrop-blur-md rounded-lg border max-h-64 overflow-y-auto z-50 ${
+                  <div className={`absolute top-full mt-2 left-0 backdrop-blur-md rounded-2xl border z-50 overflow-hidden ${
                     activeCircuit === 2
-                      ? 'border-cyan-500/30'
+                      ? 'bg-cyan-500/20 border-cyan-400/50'
                       : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
+                      ? 'bg-gray-500/20 border-gray-400/50'
+                      : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
                     {Array.from({length: 3}, (_, i) => i + 1).map(level => (
                       <button
@@ -2169,12 +2169,12 @@ const OndaLevel1 = () => {
                           setActiveCircuit(level);
                           setShowLevelDropdown(false);
                         }}
-                        className={`block w-full px-6 py-2 text-left transition-all whitespace-nowrap ${
+                        className={`block w-full px-6 py-2.5 text-left transition-all whitespace-nowrap text-sm ${
                           activeCircuit === 2
-                            ? level === selectedLevel ? 'bg-cyan-500/30 text-cyan-300' : 'hover:bg-cyan-500/20'
+                            ? level === selectedLevel ? 'bg-cyan-500/40 text-white' : 'hover:bg-cyan-500/30'
                             : activeCircuit === 3
-                            ? level === selectedLevel ? 'bg-gray-500/30 text-gray-300' : 'hover:bg-gray-500/20'
-                            : level === selectedLevel ? 'bg-purple-500/30 text-purple-300' : 'hover:bg-purple-500/20'
+                            ? level === selectedLevel ? 'bg-gray-500/40 text-white' : 'hover:bg-gray-500/30'
+                            : level === selectedLevel ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                         }`}
                       >
                         {t('level')} {level}
