@@ -2102,14 +2102,14 @@ const OndaLevel1 = () => {
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-wide">{t('body_title')}</h1>
           </div>
           
-          {/* Part слева, название части справа */}
+          {/* Уровень слева, название части справа */}
           <div className="flex items-baseline gap-4 mb-6">
             <div className="relative">
               <button
                 onClick={() => setShowChapterDropdown(!showChapterDropdown)}
                 className={`text-sm sm:text-base font-light text-white/70 hover:text-white transition-all`}
               >
-                {t('part')} {selectedChapter}
+                {t('chapter')} {selectedChapter}
               </button>
               {showChapterDropdown && (
                 <div className={`absolute top-full mt-2 left-0 bg-black/90 backdrop-blur-md rounded-lg border z-50 ${
@@ -2131,7 +2131,7 @@ const OndaLevel1 = () => {
                           : 'hover:bg-purple-500/20'
                       }`}
                     >
-                      {t('part')} {chapter}
+                      {t('chapter')} {chapter}
                     </button>
                   ))}
                 </div>
