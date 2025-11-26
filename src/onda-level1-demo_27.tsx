@@ -2100,7 +2100,7 @@ const OndaLevel1 = () => {
               <div className="relative">
                 <button
                   onClick={() => setShowChapterDropdown(!showChapterDropdown)}
-                  className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border ${
+                  className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border min-w-[100px] sm:min-w-[120px] text-center ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
                       : activeCircuit === 3
@@ -2143,7 +2143,7 @@ const OndaLevel1 = () => {
               <div className="relative">
                 <button
                   onClick={() => setShowLevelDropdown(!showLevelDropdown)}
-                  className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border ${
+                  className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border min-w-[100px] sm:min-w-[120px] text-center ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
                       : activeCircuit === 3
