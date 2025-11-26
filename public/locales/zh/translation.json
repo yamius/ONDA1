@@ -317,6 +317,10 @@
     "time_label": "时间",
     "stability_label": "稳定性"
   },
+  "progress": {
+    "level_progress": "部分进度",
+    "practices": "练习"
+  },
   "auth": {
     "login": "登录",
     "sign_in": "登入",

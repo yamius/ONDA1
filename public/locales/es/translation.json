@@ -317,6 +317,10 @@
     "time_label": "Tiempo",
     "stability_label": "Estabilidad"
   },
+  "progress": {
+    "level_progress": "Progreso de la parte",
+    "practices": "prácticas"
+  },
   "auth": {
     "login": "Iniciar Sesión",
     "sign_in": "Entrar",
