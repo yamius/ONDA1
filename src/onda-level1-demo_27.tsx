@@ -2096,7 +2096,7 @@ const OndaLevel1 = () => {
 
           <div className="w-full max-w-md mx-auto px-4">
             {/* Строка с Уровень слева и ТЕЛО справа */}
-            <div className="flex items-end justify-between gap-4 mb-3 sm:mb-1">
+            <div className="flex items-end justify-between gap-4 mb-2 sm:mb-1">
               <div className="relative">
                 <button
                   onClick={() => setShowChapterDropdown(!showChapterDropdown)}
