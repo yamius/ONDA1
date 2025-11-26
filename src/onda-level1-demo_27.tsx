@@ -2134,21 +2134,26 @@ const OndaLevel1 = () => {
                       ? 'bg-gray-500/20 border-gray-400/50'
                       : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
-                    {Array.from({length: 4}, (_, i) => i + 1).map(chapter => (
-                      <button
-                        key={chapter}
-                        onClick={() => { setSelectedChapter(chapter); setShowChapterDropdown(false); }}
-                        className={`block w-full px-6 py-2.5 text-left transition-all whitespace-nowrap text-sm ${
-                          activeCircuit === 2
-                            ? selectedChapter === chapter ? 'bg-cyan-500/40 text-white' : 'hover:bg-cyan-500/30'
-                            : activeCircuit === 3
-                            ? selectedChapter === chapter ? 'bg-gray-500/40 text-white' : 'hover:bg-gray-500/30'
-                            : selectedChapter === chapter ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
-                        }`}
-                      >
-                        {t('chapter')} {chapter}. {t(`chapters.chapter_${chapter}`)}
-                      </button>
-                    ))}
+                    {Array.from({length: 4}, (_, i) => i + 1).map(chapter => {
+                      const isAvailable = chapter === 1;
+                      return (
+                        <button
+                          key={chapter}
+                          onClick={() => { if (isAvailable) { setSelectedChapter(chapter); setShowChapterDropdown(false); } }}
+                          className={`block w-full px-6 py-2.5 text-left transition-all whitespace-nowrap text-sm ${
+                            !isAvailable
+                              ? 'text-white/40 cursor-not-allowed'
+                              : activeCircuit === 2
+                              ? selectedChapter === chapter ? 'bg-cyan-500/40 text-white' : 'hover:bg-cyan-500/30'
+                              : activeCircuit === 3
+                              ? selectedChapter === chapter ? 'bg-gray-500/40 text-white' : 'hover:bg-gray-500/30'
+                              : selectedChapter === chapter ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
+                          }`}
+                        >
+                          {t('chapter')} {chapter}. {t(`chapters.chapter_${chapter}`)}
+                        </button>
+                      );
+                    })}
                   </div>
                 )}
               </div>
@@ -2177,25 +2182,32 @@ const OndaLevel1 = () => {
                       ? 'bg-gray-500/20 border-gray-400/50'
                       : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
-                    {Array.from({length: 12}, (_, i) => i + 1).map(level => (
-                      <button
-                        key={level}
-                        onClick={() => {
-                          setSelectedLevel(level);
-                          setActiveCircuit(level);
-                          setShowLevelDropdown(false);
-                        }}
-                        className={`block w-full px-6 py-2.5 text-left transition-all whitespace-nowrap text-sm ${
-                          activeCircuit === 2
-                            ? level === selectedLevel ? 'bg-cyan-500/40 text-white' : 'hover:bg-cyan-500/30'
-                            : activeCircuit === 3
-                            ? level === selectedLevel ? 'bg-gray-500/40 text-white' : 'hover:bg-gray-500/30'
-                            : level === selectedLevel ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
-                        }`}
-                      >
-                        {t('level')} {level}. {t(`part_name_${level}`)}
-                      </button>
-                    ))}
+                    {Array.from({length: 12}, (_, i) => i + 1).map(level => {
+                      const isAvailable = level <= 3;
+                      return (
+                        <button
+                          key={level}
+                          onClick={() => {
+                            if (isAvailable) {
+                              setSelectedLevel(level);
+                              setActiveCircuit(level);
+                              setShowLevelDropdown(false);
+                            }
+                          }}
+                          className={`block w-full px-6 py-2.5 text-left transition-all whitespace-nowrap text-sm ${
+                            !isAvailable
+                              ? 'text-white/40 cursor-not-allowed'
+                              : activeCircuit === 2
+                              ? level === selectedLevel ? 'bg-cyan-500/40 text-white' : 'hover:bg-cyan-500/30'
+                              : activeCircuit === 3
+                              ? level === selectedLevel ? 'bg-gray-500/40 text-white' : 'hover:bg-gray-500/30'
+                              : level === selectedLevel ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
+                          }`}
+                        >
+                          {t('level')} {level}. {t(`part_name_${level}`)}
+                        </button>
+                      );
+                    })}
                   </div>
                 )}
               </div>
