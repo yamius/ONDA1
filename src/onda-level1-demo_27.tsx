@@ -2161,7 +2161,7 @@ const OndaLevel1 = () => {
                       ? 'bg-gray-500/20 border-gray-400/50'
                       : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
-                    {Array.from({length: 3}, (_, i) => i + 1).map(level => (
+                    {Array.from({length: 6}, (_, i) => i + 1).map(level => (
                       <button
                         key={level}
                         onClick={() => {
