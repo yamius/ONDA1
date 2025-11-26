@@ -2111,7 +2111,7 @@ const OndaLevel1 = () => {
                   {t('chapter')} {selectedChapter}
                 </button>
                 {showChapterDropdown && (
-                  <div className={`absolute top-full mt-2 left-0 backdrop-blur-md rounded-2xl border z-50 overflow-hidden ${
+                  <div className={`absolute top-full mt-1 left-0 backdrop-blur-md rounded-2xl border z-50 overflow-hidden ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 border-cyan-400/50'
                       : activeCircuit === 3
