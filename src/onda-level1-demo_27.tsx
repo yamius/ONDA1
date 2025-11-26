@@ -275,6 +275,19 @@ const OndaLevel1 = () => {
   }, [selectedLevel]);
 
   useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (!target.closest('.dropdown-container')) {
+        setShowLevelDropdown(false);
+        setShowChapterDropdown(false);
+      }
+    };
+
+    document.addEventListener('click', handleClickOutside);
+    return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
+  useEffect(() => {
     const interval = setInterval(() => {
       setBioMetrics(prev => {
         const newHR = prev.heartRate + (Math.random() - 0.5) * 2;
@@ -2097,7 +2110,7 @@ const OndaLevel1 = () => {
           <div className="w-full max-w-md mx-auto px-4">
             {/* Строка с Уровень слева и ТЕЛО справа */}
             <div className="flex items-end justify-between gap-4 mb-2 sm:mb-1">
-              <div className="relative">
+              <div className="relative dropdown-container">
                 <button
                   onClick={() => { setShowChapterDropdown(!showChapterDropdown); setShowLevelDropdown(false); }}
                   className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border min-w-[100px] sm:min-w-[120px] text-left ${
@@ -2140,7 +2153,7 @@ const OndaLevel1 = () => {
             </div>
             {/* Строка с Часть слева и название части справа */}
             <div className="flex items-end justify-between gap-4 mb-3">
-              <div className="relative">
+              <div className="relative dropdown-container">
                 <button
                   onClick={() => { setShowLevelDropdown(!showLevelDropdown); setShowChapterDropdown(false); }}
                   className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border min-w-[100px] sm:min-w-[120px] text-left ${
