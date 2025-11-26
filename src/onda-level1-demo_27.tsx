@@ -2094,92 +2094,53 @@ const OndaLevel1 = () => {
             <span className="text-lg sm:text-xl font-light">LIFE</span>
           </div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-light mb-3 sm:mb-4 tracking-wide">{t('body_title')}</h1>
-          <div className="flex flex-col items-center">
-            <div className="flex items-center gap-2 sm:gap-3 mb-6 flex-wrap justify-center">
-              <div className="relative">
-                <button
-                  onClick={() => setShowChapterDropdown(!showChapterDropdown)}
-                  className={`text-xs sm:text-sm font-medium px-3 sm:px-6 py-1.5 sm:py-2 rounded-full bg-black/30 hover:bg-black/50 transition-all border ${
-                    activeCircuit === 2
-                      ? 'border-cyan-500/30'
-                      : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
-                  }`}
-                >
-                  {t('chapter')} {selectedChapter}
-                </button>
-                {showChapterDropdown && (
-                  <div className={`absolute top-full mt-2 right-0 bg-black/90 backdrop-blur-md rounded-lg border z-50 ${
-                    activeCircuit === 2
-                      ? 'border-cyan-500/30'
-                      : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
-                  }`}>
-                    {Array.from({length: 8}, (_, i) => i + 1).map(chapter => (
-                      <button
-                        key={chapter}
-                        onClick={() => { setSelectedChapter(chapter); setShowChapterDropdown(false); }}
-                        className={`block w-full px-6 py-2 text-left transition-all whitespace-nowrap ${
-                          activeCircuit === 2
-                            ? 'hover:bg-cyan-500/20'
-                            : activeCircuit === 3
-                            ? 'hover:bg-gray-500/20'
-                            : 'hover:bg-purple-500/20'
-                        }`}
-                      >
-                        {t('chapter')} {chapter}
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
-              <div className="relative">
-                <button
-                  onClick={() => setShowLevelDropdown(!showLevelDropdown)}
-                  className={`text-xs sm:text-sm font-medium px-3 sm:px-6 py-1.5 sm:py-2 rounded-full bg-black/30 hover:bg-black/50 transition-all border ${
-                    activeCircuit === 2
-                      ? 'border-cyan-500/30'
-                      : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
-                  }`}
-                >
-                  {t('level')} {selectedLevel}
-                </button>
-                {showLevelDropdown && (
-                  <div className={`absolute top-full mt-2 right-0 bg-black/90 backdrop-blur-md rounded-lg border max-h-64 overflow-y-auto z-50 ${
-                    activeCircuit === 2
-                      ? 'border-cyan-500/30'
-                      : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
-                  }`}>
-                    {Array.from({length: 3}, (_, i) => i + 1).map(level => (
-                      <button
-                        key={level}
-                        onClick={() => {
-                          setSelectedLevel(level);
-                          setActiveCircuit(level);
-                          setShowLevelDropdown(false);
-                        }}
-                        className={`block w-full px-6 py-2 text-left transition-all whitespace-nowrap ${
-                          activeCircuit === 2
-                            ? level === selectedLevel ? 'bg-cyan-500/30 text-cyan-300' : 'hover:bg-cyan-500/20'
-                            : activeCircuit === 3
-                            ? level === selectedLevel ? 'bg-gray-500/30 text-gray-300' : 'hover:bg-gray-500/20'
-                            : level === selectedLevel ? 'bg-purple-500/30 text-purple-300' : 'hover:bg-purple-500/20'
-                        }`}
-                      >
-                        {t('level')} {level}
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
+          {/* Новая структура заголовка */}
+          <div className="flex flex-col items-end mb-4">
+            <div className="text-xs sm:text-sm text-white/60 font-light tracking-wider">
+              {t('level')} {selectedLevel}
             </div>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-wide">{t('body_title')}</h1>
+          </div>
+          
+          {/* Part слева, название части справа */}
+          <div className="flex items-baseline gap-4 mb-6">
+            <div className="relative">
+              <button
+                onClick={() => setShowChapterDropdown(!showChapterDropdown)}
+                className={`text-sm sm:text-base font-light text-white/70 hover:text-white transition-all`}
+              >
+                {t('part')} {selectedChapter}
+              </button>
+              {showChapterDropdown && (
+                <div className={`absolute top-full mt-2 left-0 bg-black/90 backdrop-blur-md rounded-lg border z-50 ${
+                  activeCircuit === 2
+                    ? 'border-cyan-500/30'
+                    : activeCircuit === 3
+                    ? 'border-gray-500/30'
+                    : 'border-purple-500/30'
+                }`}>
+                  {Array.from({length: 8}, (_, i) => i + 1).map(chapter => (
+                    <button
+                      key={chapter}
+                      onClick={() => { setSelectedChapter(chapter); setShowChapterDropdown(false); }}
+                      className={`block w-full px-6 py-2 text-left transition-all whitespace-nowrap ${
+                        activeCircuit === 2
+                          ? 'hover:bg-cyan-500/20'
+                          : activeCircuit === 3
+                          ? 'hover:bg-gray-500/20'
+                          : 'hover:bg-purple-500/20'
+                      }`}
+                    >
+                      {t('part')} {chapter}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-light italic">{t(`circuits.circuit_${selectedChapter}_title`)}</h2>
+          </div>
+
+          <div className="flex flex-col items-center">
             <div className="text-base sm:text-xl text-white/80 italic max-w-md text-center px-4 sm:px-0" dangerouslySetInnerHTML={{__html: `«${t(`quote_level_${activeCircuit}`)}»`}}>
             </div>
           </div>
