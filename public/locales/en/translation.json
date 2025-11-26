@@ -31,6 +31,16 @@
     "profile": "Profile",
     "connection": "Connection"
   },
+  "chapters": {
+    "chapter_1": "Body",
+    "chapter_1_element": "TERRA",
+    "chapter_2": "Emotions",
+    "chapter_2_element": "AQUA",
+    "chapter_3": "Mind",
+    "chapter_3_element": "AER",
+    "chapter_4": "Society",
+    "chapter_4_element": "IGNIS"
+  },
   "circuits": {
     "title": "Consciousness Circuits",
     "circuit_1": "Oral Circuit (survival)",

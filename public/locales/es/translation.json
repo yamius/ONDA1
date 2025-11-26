@@ -28,6 +28,16 @@
     "profile": "Perfil",
     "connection": "Conexión"
   },
+  "chapters": {
+    "chapter_1": "Cuerpo",
+    "chapter_1_element": "TERRA",
+    "chapter_2": "Emociones",
+    "chapter_2_element": "AQUA",
+    "chapter_3": "Mente",
+    "chapter_3_element": "AER",
+    "chapter_4": "Sociedad",
+    "chapter_4_element": "IGNIS"
+  },
   "circuits": {
     "title": "Circuitos de Consciencia",
     "circuit_1": "Circuito Oral (supervivencia)",

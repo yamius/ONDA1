@@ -28,6 +28,16 @@
     "profile": "个人资料",
     "connection": "连接"
   },
+  "chapters": {
+    "chapter_1": "身体",
+    "chapter_1_element": "TERRA",
+    "chapter_2": "情感",
+    "chapter_2_element": "AQUA",
+    "chapter_3": "心智",
+    "chapter_3_element": "AER",
+    "chapter_4": "社会",
+    "chapter_4_element": "IGNIS"
+  },
   "circuits": {
     "title": "意识回路",
     "circuit_1": "口腔回路（生存）",

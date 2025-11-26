@@ -28,6 +28,16 @@
     "profile": "Профіль",
     "connection": "Підключення"
   },
+  "chapters": {
+    "chapter_1": "Тіло",
+    "chapter_1_element": "TERRA",
+    "chapter_2": "Емоції",
+    "chapter_2_element": "AQUA",
+    "chapter_3": "Розум",
+    "chapter_3_element": "AER",
+    "chapter_4": "Соціум",
+    "chapter_4_element": "IGNIS"
+  },
   "circuits": {
     "title": "Контури свідомості",
     "circuit_1": "Оральний контур (виживання)",
