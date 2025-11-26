@@ -1992,7 +1992,7 @@ const OndaLevel1 = () => {
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
        !showQntShop && !showEmotionalCheck && !showInfoModal && (
         <button
-          onClick={() => setShowMenu(!showMenu)}
+          onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
           className={`menu-container fixed top-12 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
             activeCircuit === 2
               ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
