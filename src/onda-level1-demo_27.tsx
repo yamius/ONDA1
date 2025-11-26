@@ -2183,7 +2183,7 @@ const OndaLevel1 = () => {
                   </div>
                 )}
               </div>
-              <p className="text-2xl sm:text-xl text-white/70 font-light text-right">{t(`part_name_${selectedLevel}`)}</p>
+              <p className="text-3xl sm:text-2xl text-white/70 font-light text-right">{t(`part_name_${selectedLevel}`)}</p>
             </div>
           </div>
           <div className="flex flex-col items-center">
