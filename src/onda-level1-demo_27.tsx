@@ -2095,97 +2095,99 @@ const OndaLevel1 = () => {
           </div>
 
           <div className="w-full max-w-md mx-auto px-4">
-            {/* Выпадающий список Уровень - над названием */}
-            <div className="flex justify-end mb-2">
-              <div className="relative">
-                <button
-                  onClick={() => setShowChapterDropdown(!showChapterDropdown)}
-                  className={`text-xs sm:text-sm font-medium px-3 sm:px-6 py-1.5 sm:py-2 rounded-full bg-black/30 hover:bg-black/50 transition-all border ${
-                    activeCircuit === 2
-                      ? 'border-cyan-500/30'
-                      : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
-                  }`}
-                >
-                  {t('chapter')} {selectedChapter}
-                </button>
-                {showChapterDropdown && (
-                  <div className={`absolute top-full mt-2 right-0 bg-black/90 backdrop-blur-md rounded-lg border z-50 ${
-                    activeCircuit === 2
-                      ? 'border-cyan-500/30'
-                      : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
-                  }`}>
-                    {Array.from({length: 8}, (_, i) => i + 1).map(chapter => (
-                      <button
-                        key={chapter}
-                        onClick={() => { setSelectedChapter(chapter); setShowChapterDropdown(false); }}
-                        className={`block w-full px-6 py-2 text-left transition-all whitespace-nowrap ${
-                          activeCircuit === 2
-                            ? 'hover:bg-cyan-500/20'
-                            : activeCircuit === 3
-                            ? 'hover:bg-gray-500/20'
-                            : 'hover:bg-purple-500/20'
-                        }`}
-                      >
-                        {t('chapter')} {chapter}
-                      </button>
-                    ))}
-                  </div>
-                )}
+            {/* Строка с выпадающими списками слева и названием справа */}
+            <div className="flex items-center justify-between gap-4 mb-1">
+              {/* Выпадающие списки слева */}
+              <div className="flex items-center gap-2">
+                <div className="relative">
+                  <button
+                    onClick={() => setShowChapterDropdown(!showChapterDropdown)}
+                    className={`text-xs sm:text-sm font-medium px-3 sm:px-6 py-1.5 sm:py-2 rounded-full bg-black/30 hover:bg-black/50 transition-all border ${
+                      activeCircuit === 2
+                        ? 'border-cyan-500/30'
+                        : activeCircuit === 3
+                        ? 'border-gray-500/30'
+                        : 'border-purple-500/30'
+                    }`}
+                  >
+                    {t('chapter')} {selectedChapter}
+                  </button>
+                  {showChapterDropdown && (
+                    <div className={`absolute top-full mt-2 left-0 bg-black/90 backdrop-blur-md rounded-lg border z-50 ${
+                      activeCircuit === 2
+                        ? 'border-cyan-500/30'
+                        : activeCircuit === 3
+                        ? 'border-gray-500/30'
+                        : 'border-purple-500/30'
+                    }`}>
+                      {Array.from({length: 8}, (_, i) => i + 1).map(chapter => (
+                        <button
+                          key={chapter}
+                          onClick={() => { setSelectedChapter(chapter); setShowChapterDropdown(false); }}
+                          className={`block w-full px-6 py-2 text-left transition-all whitespace-nowrap ${
+                            activeCircuit === 2
+                              ? 'hover:bg-cyan-500/20'
+                              : activeCircuit === 3
+                              ? 'hover:bg-gray-500/20'
+                              : 'hover:bg-purple-500/20'
+                          }`}
+                        >
+                          {t('chapter')} {chapter}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
+                <div className="relative">
+                  <button
+                    onClick={() => setShowLevelDropdown(!showLevelDropdown)}
+                    className={`text-xs sm:text-sm font-medium px-3 sm:px-6 py-1.5 sm:py-2 rounded-full bg-black/30 hover:bg-black/50 transition-all border ${
+                      activeCircuit === 2
+                        ? 'border-cyan-500/30'
+                        : activeCircuit === 3
+                        ? 'border-gray-500/30'
+                        : 'border-purple-500/30'
+                    }`}
+                  >
+                    {t('level')} {selectedLevel}
+                  </button>
+                  {showLevelDropdown && (
+                    <div className={`absolute top-full mt-2 left-0 bg-black/90 backdrop-blur-md rounded-lg border max-h-64 overflow-y-auto z-50 ${
+                      activeCircuit === 2
+                        ? 'border-cyan-500/30'
+                        : activeCircuit === 3
+                        ? 'border-gray-500/30'
+                        : 'border-purple-500/30'
+                    }`}>
+                      {Array.from({length: 3}, (_, i) => i + 1).map(level => (
+                        <button
+                          key={level}
+                          onClick={() => {
+                            setSelectedLevel(level);
+                            setActiveCircuit(level);
+                            setShowLevelDropdown(false);
+                          }}
+                          className={`block w-full px-6 py-2 text-left transition-all whitespace-nowrap ${
+                            activeCircuit === 2
+                              ? level === selectedLevel ? 'bg-cyan-500/30 text-cyan-300' : 'hover:bg-cyan-500/20'
+                              : activeCircuit === 3
+                              ? level === selectedLevel ? 'bg-gray-500/30 text-gray-300' : 'hover:bg-gray-500/20'
+                              : level === selectedLevel ? 'bg-purple-500/30 text-purple-300' : 'hover:bg-purple-500/20'
+                          }`}
+                        >
+                          {t('level')} {level}
+                        </button>
+                      ))}
+                    </div>
+                  )}
+                </div>
               </div>
+              {/* Название справа */}
+              <h1 className="text-5xl sm:text-5xl md:text-7xl font-light tracking-wide text-right">{t('body_title')}</h1>
             </div>
-            <h1 className="text-5xl sm:text-5xl md:text-7xl font-light mb-1 tracking-wide text-right">{t('body_title')}</h1>
             <p className="text-2xl sm:text-xl text-white/70 font-light text-right mb-3">{t(`part_name_${selectedLevel}`)}</p>
           </div>
           <div className="flex flex-col items-center">
-            <div className="flex items-center gap-2 sm:gap-3 mb-6 flex-wrap justify-center">
-              <div className="relative">
-                <button
-                  onClick={() => setShowLevelDropdown(!showLevelDropdown)}
-                  className={`text-xs sm:text-sm font-medium px-3 sm:px-6 py-1.5 sm:py-2 rounded-full bg-black/30 hover:bg-black/50 transition-all border ${
-                    activeCircuit === 2
-                      ? 'border-cyan-500/30'
-                      : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
-                  }`}
-                >
-                  {t('level')} {selectedLevel}
-                </button>
-                {showLevelDropdown && (
-                  <div className={`absolute top-full mt-2 right-0 bg-black/90 backdrop-blur-md rounded-lg border max-h-64 overflow-y-auto z-50 ${
-                    activeCircuit === 2
-                      ? 'border-cyan-500/30'
-                      : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
-                  }`}>
-                    {Array.from({length: 3}, (_, i) => i + 1).map(level => (
-                      <button
-                        key={level}
-                        onClick={() => {
-                          setSelectedLevel(level);
-                          setActiveCircuit(level);
-                          setShowLevelDropdown(false);
-                        }}
-                        className={`block w-full px-6 py-2 text-left transition-all whitespace-nowrap ${
-                          activeCircuit === 2
-                            ? level === selectedLevel ? 'bg-cyan-500/30 text-cyan-300' : 'hover:bg-cyan-500/20'
-                            : activeCircuit === 3
-                            ? level === selectedLevel ? 'bg-gray-500/30 text-gray-300' : 'hover:bg-gray-500/20'
-                            : level === selectedLevel ? 'bg-purple-500/30 text-purple-300' : 'hover:bg-purple-500/20'
-                        }`}
-                      >
-                        {t('level')} {level}
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
             <div className="text-base sm:text-xl text-white/80 italic max-w-md text-center px-4 sm:px-0" dangerouslySetInnerHTML={{__html: `«${t(`quote_level_${activeCircuit}`)}»`}}>
             </div>
           </div>
