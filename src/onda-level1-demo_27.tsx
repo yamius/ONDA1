@@ -2097,7 +2097,7 @@ const OndaLevel1 = () => {
           {/* Новая структура заголовка */}
           <div className="flex flex-col items-end mb-4">
             <div className="text-xs sm:text-sm text-white/60 font-light tracking-wider">
-              {t('level')} {selectedLevel}
+              {t('level')} 1
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-light tracking-wide">{t('body_title')}</h1>
           </div>
