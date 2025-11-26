@@ -21,13 +21,15 @@
   "quote_level_3": "Form is born where<br/>earth and water meet",
   "you": "You",
   "nav": {
+    "home": "Home",
     "diary": "Diary",
     "emotional_check": "Emotional Check",
     "stats": "Statistics",
     "rating": "Rating",
     "login": "Sign In",
     "settings": "Settings",
-    "profile": "Profile"
+    "profile": "Profile",
+    "connection": "Connection"
   },
   "circuits": {
     "title": "Consciousness Circuits",

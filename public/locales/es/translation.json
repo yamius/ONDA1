@@ -18,13 +18,15 @@
   "quote": "Para moverse hacia la luz<br/>primero hay que echar raíces",
   "you": "Tú",
   "nav": {
+    "home": "Inicio",
     "diary": "Diario",
     "emotional_check": "Chequeo Emocional",
     "stats": "Estadísticas",
     "rating": "Clasificación",
     "login": "Iniciar Sesión",
     "settings": "Configuración",
-    "profile": "Perfil"
+    "profile": "Perfil",
+    "connection": "Conexión"
   },
   "circuits": {
     "title": "Circuitos de Consciencia",

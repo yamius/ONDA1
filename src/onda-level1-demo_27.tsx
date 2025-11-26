@@ -3357,7 +3357,7 @@ const OndaLevel1 = () => {
               data-testid="menu-item-home"
             >
               <Mountain className="w-6 h-6 text-purple-400" />
-              <span className="font-medium">Home</span>
+              <span className="font-medium">{t('nav.home')}</span>
             </button>
 
             {/* Дневник */}
@@ -3377,7 +3377,7 @@ const OndaLevel1 = () => {
               data-testid="menu-item-diary"
             >
               <Circle className="w-6 h-6 text-cyan-400" />
-              <span className="font-medium">Дневник</span>
+              <span className="font-medium">{t('nav.diary')}</span>
             </button>
 
             {/* Статистика */}
@@ -3397,7 +3397,7 @@ const OndaLevel1 = () => {
               data-testid="menu-item-statistics"
             >
               <Activity className="w-6 h-6 text-emerald-400" />
-              <span className="font-medium">Статистика</span>
+              <span className="font-medium">{t('nav.stats')}</span>
             </button>
 
             {/* OND Balance */}
@@ -3438,7 +3438,7 @@ const OndaLevel1 = () => {
               data-testid="menu-item-leaderboard"
             >
               <Zap className="w-6 h-6 text-orange-400" />
-              <span className="font-medium">Рейтинг</span>
+              <span className="font-medium">{t('nav.rating')}</span>
             </button>
 
             {/* Язык */}
@@ -3484,7 +3484,7 @@ const OndaLevel1 = () => {
               data-testid="menu-item-settings"
             >
               <Settings className="w-6 h-6 text-blue-400" />
-              <span className="font-medium">Настройки</span>
+              <span className="font-medium">{t('nav.settings')}</span>
             </button>
 
             {/* Connection */}
@@ -3504,7 +3504,7 @@ const OndaLevel1 = () => {
               data-testid="menu-item-connection"
             >
               <Heart className="w-6 h-6 text-pink-400" />
-              <span className="font-medium">Connection</span>
+              <span className="font-medium">{t('nav.connection')}</span>
             </button>
 
             {/* Разделитель */}
@@ -3528,7 +3528,7 @@ const OndaLevel1 = () => {
                 data-testid="menu-item-login"
               >
                 <User className="w-6 h-6 text-purple-400" />
-                <span className="font-medium">Войти</span>
+                <span className="font-medium">{t('nav.login')}</span>
               </button>
             )}
 

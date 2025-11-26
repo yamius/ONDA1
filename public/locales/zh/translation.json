@@ -18,13 +18,15 @@
   "quote": "为了走向光明<br/>首先要扎根",
   "you": "你",
   "nav": {
+    "home": "首页",
     "diary": "日记",
     "emotional_check": "情绪检查",
     "stats": "统计",
     "rating": "排名",
     "login": "登录",
     "settings": "设置",
-    "profile": "个人资料"
+    "profile": "个人资料",
+    "connection": "连接"
   },
   "circuits": {
     "title": "意识回路",
