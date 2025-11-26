@@ -2100,12 +2100,12 @@ const OndaLevel1 = () => {
               <div className="relative">
                 <button
                   onClick={() => setShowChapterDropdown(!showChapterDropdown)}
-                  className={`text-xs sm:text-sm font-medium px-3 sm:px-6 py-1.5 sm:py-2 rounded-full bg-black/30 hover:bg-black/50 transition-all border ${
+                  className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border ${
                     activeCircuit === 2
-                      ? 'border-cyan-500/30'
+                      ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
                       : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
+                      ? 'bg-gray-500/20 hover:bg-gray-500/30 border-gray-400/50'
+                      : 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/50'
                   }`}
                 >
                   {t('chapter')} {selectedChapter}
@@ -2143,12 +2143,12 @@ const OndaLevel1 = () => {
               <div className="relative">
                 <button
                   onClick={() => setShowLevelDropdown(!showLevelDropdown)}
-                  className={`text-xs sm:text-sm font-medium px-3 sm:px-6 py-1.5 sm:py-2 rounded-full bg-black/30 hover:bg-black/50 transition-all border ${
+                  className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border ${
                     activeCircuit === 2
-                      ? 'border-cyan-500/30'
+                      ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
                       : activeCircuit === 3
-                      ? 'border-gray-500/30'
-                      : 'border-purple-500/30'
+                      ? 'bg-gray-500/20 hover:bg-gray-500/30 border-gray-400/50'
+                      : 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/50'
                   }`}
                 >
                   {t('level')} {selectedLevel}
