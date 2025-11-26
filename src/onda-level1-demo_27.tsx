@@ -2866,7 +2866,7 @@ const OndaLevel1 = () => {
           <div className="text-center mt-6">
             {activeCircuit < 3 && (
               <button
-                onClick={() => setActiveCircuit(activeCircuit + 1)}
+                onClick={() => { setActiveCircuit(activeCircuit + 1); setSelectedLevel(activeCircuit + 1); }}
                 className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg ${
                   activeCircuit === 1
                     ? 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-2 border-purple-300/50'
