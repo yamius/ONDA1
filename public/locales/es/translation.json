@@ -166,7 +166,7 @@
     "sensory_message": "Toca el mundo"
   },
   "artifacts": {
-    "level_title": "Artefactos del Nivel {{level}}",
+    "level_title": "Artefactos de la Parte {{level}}",
     "roots_of_being": "Raíces del Ser",
     "pearl_of_flow": "Perla del Flujo",
     "crystal_of_grounding": "Cristal de Conexión a Tierra",

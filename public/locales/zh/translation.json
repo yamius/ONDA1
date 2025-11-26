@@ -166,7 +166,7 @@
     "sensory_message": "触摸世界"
   },
   "artifacts": {
-    "level_title": "第{{level}}级神器",
+    "level_title": "第{{level}}部分神器",
     "roots_of_being": "存在之根",
     "pearl_of_flow": "流动之珠",
     "crystal_of_grounding": "接地水晶",

@@ -232,7 +232,7 @@
     "breath_of_adaptation_desc": "Anchor new form and rhythm in changed environment"
   },
   "artifacts": {
-    "level_title": "Level {{level}} Artifacts",
+    "level_title": "Part {{level}} Artifacts",
     "roots_of_being": "Roots of Being",
     "pearl_of_flow": "Pearl of Flow",
     "crystal_of_grounding": "Crystal of Grounding",
