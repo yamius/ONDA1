@@ -281,6 +281,9 @@ const OndaLevel1 = () => {
         setShowLevelDropdown(false);
         setShowChapterDropdown(false);
       }
+      if (!target.closest('.menu-container')) {
+        setShowMenu(false);
+      }
     };
 
     document.addEventListener('click', handleClickOutside);
@@ -1990,7 +1993,7 @@ const OndaLevel1 = () => {
        !showQntShop && !showEmotionalCheck && !showInfoModal && (
         <button
           onClick={() => setShowMenu(!showMenu)}
-          className={`fixed top-12 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
+          className={`menu-container fixed top-12 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
             activeCircuit === 2
               ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
               : activeCircuit === 3
@@ -3337,7 +3340,7 @@ const OndaLevel1 = () => {
 
       {/* Боковое меню */}
       {showMenu && (
-        <nav className="fixed top-28 left-4 z-[60] flex flex-col gap-3 animate-in slide-in-from-left duration-300 max-h-[calc(100vh-8rem)] overflow-y-auto pr-2 scrollbar-hide min-w-[55vw]">
+        <nav className="menu-container fixed top-28 left-4 z-[60] flex flex-col gap-3 animate-in slide-in-from-left duration-300 max-h-[calc(100vh-8rem)] overflow-y-auto pr-2 scrollbar-hide min-w-[55vw]">
             {/* Home */}
             <button
               onClick={() => {
