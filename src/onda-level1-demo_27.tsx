@@ -2177,7 +2177,7 @@ const OndaLevel1 = () => {
                             : level === selectedLevel ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                         }`}
                       >
-                        {t('level')} {level}
+                        {t('level')} {level}. {t(`part_name_${level}`)}
                       </button>
                     ))}
                   </div>
