@@ -2118,7 +2118,7 @@ const OndaLevel1 = () => {
                       ? 'bg-gray-500/20 border-gray-400/50'
                       : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
-                    {Array.from({length: 8}, (_, i) => i + 1).map(chapter => (
+                    {Array.from({length: 4}, (_, i) => i + 1).map(chapter => (
                       <button
                         key={chapter}
                         onClick={() => { setSelectedChapter(chapter); setShowChapterDropdown(false); }}
@@ -2130,7 +2130,7 @@ const OndaLevel1 = () => {
                             : selectedChapter === chapter ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                         }`}
                       >
-                        {t('chapter')} {chapter}
+                        {t('chapter')} {chapter}. {t(`chapters.chapter_${chapter}`)}
                       </button>
                     ))}
                   </div>
