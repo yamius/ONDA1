@@ -2840,13 +2840,6 @@ const OndaLevel1 = () => {
           <div className="space-y-4 text-gray-200">
             <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.intro`)}</p>
             
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.game_task`)}</p>
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.principle_1`)}</p>
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.principle_2`)}</p>
-            <p className={`leading-relaxed italic ${
-              activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : 'text-cyan-300'
-            }`}>{t(`level_goal.level_${activeCircuit}.principle_3`)}</p>
-            
             <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_1`)}</p>
             <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_2`)}</p>
             <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_3`)}</p>
