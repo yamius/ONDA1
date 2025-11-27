@@ -2837,41 +2837,41 @@ const OndaLevel1 = () => {
             ? 'bg-gradient-to-br from-amber-900/30 via-orange-900/20 to-amber-900/30 border-amber-600/30'
             : 'bg-gradient-to-br from-indigo-900/30 via-purple-900/20 to-pink-900/30 border-indigo-500/30'
         }`}>
-          <div className="space-y-6 text-gray-200">
-            <div className="bg-black/20 rounded-xl p-6 space-y-3 border border-white/10">
-              <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.intro`)}</p>
-            </div>
-
-            <div className="bg-black/20 rounded-xl p-6 space-y-3 border border-white/10">
-              <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.game_task`)}</p>
-              <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.principle_1`)}</p>
-              <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.principle_2`)}</p>
-              <p className="text-cyan-300 leading-relaxed italic">{t(`level_goal.level_${activeCircuit}.principle_3`)}</p>
-            </div>
-
-            <div className="bg-black/20 rounded-xl p-6 space-y-3 border border-white/10">
-              <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_1`)}</p>
-              <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_2`)}</p>
-              <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_3`)}</p>
-              {activeCircuit === 1 && (
-                <p className="text-cyan-300 leading-relaxed italic">{t('level_goal.level_1.story_4')}</p>
-              )}
-            </div>
+          <div className="space-y-4 text-gray-200">
+            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.intro`)}</p>
+            
+            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.game_task`)}</p>
+            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.principle_1`)}</p>
+            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.principle_2`)}</p>
+            <p className={`leading-relaxed italic ${
+              activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : 'text-cyan-300'
+            }`}>{t(`level_goal.level_${activeCircuit}.principle_3`)}</p>
+            
+            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_1`)}</p>
+            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_2`)}</p>
+            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_3`)}</p>
+            {activeCircuit === 1 && (
+              <p className="text-cyan-300 leading-relaxed italic">{t('level_goal.level_1.story_4')}</p>
+            )}
 
             <div className="text-center py-4">
-              <div className="inline-block">
-                <p className="text-xl font-bold text-pink-300 mb-2">{t(`level_goal.level_${activeCircuit}.identity_1`)}</p>
-                <p className="text-lg text-purple-300">{t(`level_goal.level_${activeCircuit}.identity_2`)}</p>
-                <p className="text-lg text-indigo-300">{t(`level_goal.level_${activeCircuit}.identity_3`)}</p>
-              </div>
+              <p className={`text-xl font-bold mb-2 ${
+                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : 'text-pink-300'
+              }`}>{t(`level_goal.level_${activeCircuit}.identity_1`)}</p>
+              <p className={`text-lg ${
+                activeCircuit === 2 ? 'text-teal-300' : activeCircuit === 3 ? 'text-orange-300' : 'text-purple-300'
+              }`}>{t(`level_goal.level_${activeCircuit}.identity_2`)}</p>
+              <p className={`text-lg ${
+                activeCircuit === 2 ? 'text-blue-300' : activeCircuit === 3 ? 'text-yellow-300' : 'text-indigo-300'
+              }`}>{t(`level_goal.level_${activeCircuit}.identity_3`)}</p>
             </div>
-
-            <div className="bg-black/20 rounded-xl p-6 space-y-3 border border-white/10">
-              <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_1`)}</p>
-              <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_2`)}</p>
-              <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_3`)}</p>
-              <p className="text-cyan-300 leading-relaxed italic">{t(`level_goal.level_${activeCircuit}.wisdom_4`)}</p>
-            </div>
+            
+            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_1`)}</p>
+            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_2`)}</p>
+            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_3`)}</p>
+            <p className={`leading-relaxed italic ${
+              activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : 'text-cyan-300'
+            }`}>{t(`level_goal.level_${activeCircuit}.wisdom_4`)}</p>
           </div>
         </div>
 
