@@ -95,14 +95,14 @@ const OndaLevel1 = () => {
   const currentPlayerName = userProfile?.display_name || t('you');
 
   const leaderboardData = [
-    { name: 'Александр', qnt: 2847.5, avgQuality: 94, totalTime: 1245 },
-    { name: 'Мария', qnt: 2654.2, avgQuality: 92, totalTime: 1180 },
-    { name: 'Дмитрий', qnt: 2431.8, avgQuality: 89, totalTime: 1095 },
-    { name: 'Елена', qnt: 2289.3, avgQuality: 91, totalTime: 1020 },
+    { name: 'Alexander', qnt: 2847.5, avgQuality: 94, totalTime: 1245 },
+    { name: 'Emily', qnt: 2654.2, avgQuality: 92, totalTime: 1180 },
+    { name: 'Michael', qnt: 2431.8, avgQuality: 89, totalTime: 1095 },
+    { name: 'Sarah', qnt: 2289.3, avgQuality: 91, totalTime: 1020 },
     { name: currentPlayerName, qnt: Number(qnt) || 0, avgQuality: practiceHistory.length > 0 ? (practiceHistory.reduce((sum, p) => sum + (p.quality || 0), 0) / practiceHistory.length) : 0, totalTime: practiceHistory.reduce((sum, p) => sum + (p.duration || 0), 0) },
-    { name: 'Иван', qnt: 1987.6, avgQuality: 87, totalTime: 895 },
-    { name: 'Светлана', qnt: 1845.9, avgQuality: 88, totalTime: 840 },
-    { name: 'Михаил', qnt: 1723.4, avgQuality: 85, totalTime: 780 },
+    { name: 'James', qnt: 1987.6, avgQuality: 87, totalTime: 895 },
+    { name: 'Jessica', qnt: 1845.9, avgQuality: 88, totalTime: 840 },
+    { name: 'David', qnt: 1723.4, avgQuality: 85, totalTime: 780 },
   ];
 
   const sortedByQnt = [...leaderboardData].sort((a, b) => b.qnt - a.qnt);
@@ -132,7 +132,7 @@ const OndaLevel1 = () => {
 
           let profile = profileRes.data;
           if (!profile) {
-            const displayName = user.user_metadata?.full_name || user.email?.split('@')[0] || 'Игрок-' + Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+            const displayName = user.user_metadata?.full_name || user.email?.split('@')[0] || 'Player-' + Math.floor(Math.random() * 10000).toString().padStart(4, '0');
             const { data: newProfile } = await supabase
               .from('user_profiles')
               .upsert({
