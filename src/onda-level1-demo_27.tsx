@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages } from 'lucide-react';
+import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
@@ -2159,6 +2159,31 @@ const OndaLevel1 = () => {
           data-testid="button-menu"
         >
           {showMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+        </button>
+      )}
+
+      {/* Кнопка пройти заново интро */}
+      {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
+       !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
+       !showQntShop && !showEmotionalCheck && !showInfoModal && !showMenu && (
+        <button
+          onClick={() => {
+            localStorage.removeItem('onda_onboarding_completed');
+            setOnboardingScreen(1);
+            setShowOnboarding(true);
+          }}
+          className={`fixed top-12 right-4 z-[100] text-white transition-all w-12 h-12 rounded-full shadow-2xl backdrop-blur-md flex items-center justify-center ${
+            activeCircuit === 2
+              ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+              : activeCircuit === 3
+              ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
+              : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+          }`}
+          style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+          title={t('onboarding.replay') || 'Replay intro'}
+          data-testid="button-replay-intro"
+        >
+          <RotateCcw className="w-5 h-5" />
         </button>
       )}
 
