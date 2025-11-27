@@ -2104,7 +2104,7 @@ const OndaLevel1 = () => {
         {/* Центральный заголовок */}
         <div className="text-center mb-6 sm:mb-12 pt-0">
           {/* Логотип по центру */}
-          <div className="flex items-center justify-center gap-2 text-white/80 mb-4 sm:mb-6">
+          <div className="flex items-center justify-center gap-2 text-white/80 mb-10 sm:mb-12">
             <span className="text-lg sm:text-xl font-light">ONDA</span>
             <span className="text-sm sm:text-base font-light">~</span>
             <span className="text-lg sm:text-xl font-light">LIFE</span>
