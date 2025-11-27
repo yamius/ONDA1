@@ -2159,12 +2159,12 @@ const OndaLevel1 = () => {
                 )}
               </div>
             </div>
-            {/* Строка с Часть слева и название части справа */}
-            <div className="flex items-end justify-between gap-4 mb-3">
+            {/* Строка с Часть и название части объединённые */}
+            <div className="flex items-center justify-center mb-3">
               <div className="relative dropdown-container">
                 <button
                   onClick={() => { setShowLevelDropdown(!showLevelDropdown); setShowChapterDropdown(false); }}
-                  className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border min-w-[100px] sm:min-w-[120px] text-left ${
+                  className={`backdrop-blur-sm text-base sm:text-lg font-medium px-5 sm:px-6 py-2.5 sm:py-3 rounded-full transition-all border flex items-center gap-2 ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/5 hover:bg-cyan-500/15 border-cyan-400/20'
                       : activeCircuit === 3
@@ -2172,10 +2172,11 @@ const OndaLevel1 = () => {
                       : 'bg-indigo-500/5 hover:bg-indigo-500/15 border-indigo-400/20'
                   }`}
                 >
-                  {t('level')} {selectedLevel}
+                  <span className="text-white/70">{t('level')} {selectedLevel}.</span>
+                  <span className="text-2xl sm:text-3xl font-light tracking-wide">{t(`part_name_${selectedLevel}`)}</span>
                 </button>
                 {showLevelDropdown && (
-                  <div className={`absolute top-full mt-2 left-0 backdrop-blur-md rounded-2xl border z-50 overflow-hidden ${
+                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden min-w-full max-h-[60vh] overflow-y-auto ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 border-cyan-400/50'
                       : activeCircuit === 3
@@ -2211,7 +2212,6 @@ const OndaLevel1 = () => {
                   </div>
                 )}
               </div>
-              <p className="text-3xl sm:text-4xl text-white/70 font-light text-right">{t(`part_name_${selectedLevel}`)}</p>
             </div>
           </div>
           <div className="flex flex-col items-center">
