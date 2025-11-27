@@ -2176,7 +2176,7 @@ const OndaLevel1 = () => {
                   <span className="text-2xl sm:text-3xl font-light tracking-wide">{t(`part_name_${selectedLevel}`)}</span>
                 </button>
                 {showLevelDropdown && (
-                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden min-w-full max-h-[60vh] overflow-y-auto ${
+                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden min-w-full max-h-[60vh] overflow-y-auto scrollbar-hide ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 border-cyan-400/50'
                       : activeCircuit === 3
