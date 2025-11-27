@@ -1998,7 +1998,7 @@ const OndaLevel1 = () => {
     };
 
     return (
-      <div className="h-full text-white overflow-x-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+      <div className="h-full text-white overflow-x-hidden bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950">
         <div className="min-h-screen flex flex-col justify-between px-6 py-8 max-w-2xl mx-auto">
           <div className="flex justify-center gap-3 pt-4">
             {[1, 2, 3].map((dot) => (
@@ -2007,7 +2007,7 @@ const OndaLevel1 = () => {
                 onClick={() => setOnboardingScreen(dot)}
                 className={`w-3 h-3 rounded-full transition-all ${
                   onboardingScreen === dot
-                    ? 'bg-purple-400 scale-125'
+                    ? 'bg-violet-400 scale-125'
                     : 'bg-white/30 hover:bg-white/50'
                 }`}
                 data-testid={`onboarding-dot-${dot}`}
@@ -2024,23 +2024,23 @@ const OndaLevel1 = () => {
                 <p className="text-white/90 leading-relaxed text-lg">{t('onboarding.screen1_text1')}</p>
                 <ul className="space-y-3 text-white/80">
                   <li className="flex items-start gap-3">
-                    <span className="text-purple-400 mt-1">•</span>
+                    <span className="text-violet-400 mt-1">•</span>
                     <span>{t('onboarding.screen1_list1')}</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-purple-400 mt-1">•</span>
+                    <span className="text-violet-400 mt-1">•</span>
                     <span>{t('onboarding.screen1_list2')}</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-purple-400 mt-1">•</span>
+                    <span className="text-violet-400 mt-1">•</span>
                     <span>{t('onboarding.screen1_list3')}</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-purple-400 mt-1">•</span>
+                    <span className="text-violet-400 mt-1">•</span>
                     <span>{t('onboarding.screen1_list4')}</span>
                   </li>
                 </ul>
-                <p className="text-purple-300 italic text-lg text-center pt-4">{t('onboarding.screen1_conclusion')}</p>
+                <p className="text-violet-300 italic text-lg text-center pt-4">{t('onboarding.screen1_conclusion')}</p>
               </div>
             )}
 
