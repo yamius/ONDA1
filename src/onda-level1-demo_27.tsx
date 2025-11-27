@@ -3512,6 +3512,8 @@ const OndaLevel1 = () => {
             {/* Home */}
             <button
               onClick={() => {
+                setInfoModalMessage(t('nav.home_description'));
+                setShowInfoModal(true);
                 setShowMenu(false);
               }}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
