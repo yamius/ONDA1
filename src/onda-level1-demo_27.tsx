@@ -2018,11 +2018,10 @@ const OndaLevel1 = () => {
           <div className="flex-1 flex flex-col justify-center py-8">
             {onboardingScreen === 1 && (
               <div className="space-y-6 animate-in fade-in duration-500">
-                <div className="text-center mb-8">
-                  <h1 className="text-2xl sm:text-3xl font-bold mb-2">{t('onboarding.screen1_title')}</h1>
-                  <p className="text-lg text-purple-300 italic">{t('onboarding.screen1_subtitle')}</p>
+                <div className="text-center mb-6">
+                  <h1 className="text-2xl sm:text-3xl font-bold">{t('onboarding.screen1_title')}</h1>
                 </div>
-                <p className="text-white/90 leading-relaxed">{t('onboarding.screen1_text1')}</p>
+                <p className="text-white/90 leading-relaxed text-lg">{t('onboarding.screen1_text1')}</p>
                 <ul className="space-y-3 text-white/80">
                   <li className="flex items-start gap-3">
                     <span className="text-purple-400 mt-1">•</span>
@@ -2041,19 +2040,18 @@ const OndaLevel1 = () => {
                     <span>{t('onboarding.screen1_list4')}</span>
                   </li>
                 </ul>
-                <p className="text-white/90 italic border-l-2 border-purple-400 pl-4">{t('onboarding.screen1_conclusion')}</p>
+                <p className="text-purple-300 italic text-lg text-center pt-4">{t('onboarding.screen1_conclusion')}</p>
               </div>
             )}
 
             {onboardingScreen === 2 && (
               <div className="space-y-6 animate-in fade-in duration-500">
-                <div className="text-center mb-8">
-                  <h1 className="text-2xl sm:text-3xl font-bold mb-2">{t('onboarding.screen2_title')}</h1>
-                  <p className="text-lg text-purple-300 italic">{t('onboarding.screen2_subtitle')}</p>
+                <div className="text-center mb-6">
+                  <h1 className="text-2xl sm:text-3xl font-bold">{t('onboarding.screen2_title')}</h1>
                 </div>
-                <p className="text-white/90 leading-relaxed">{t('onboarding.screen2_text1')}</p>
-                <p className="text-white/80">{t('onboarding.screen2_text2')}</p>
-                <ul className="space-y-2 text-white/80 pl-4">
+                <p className="text-white/90 leading-relaxed text-lg">{t('onboarding.screen2_text1')}</p>
+                <p className="text-white/80 font-medium">{t('onboarding.screen2_text2')}</p>
+                <ul className="space-y-3 text-white/80">
                   <li className="flex items-start gap-3">
                     <span className="text-cyan-400 mt-1">•</span>
                     <span>{t('onboarding.screen2_list1')}</span>
@@ -2071,32 +2069,16 @@ const OndaLevel1 = () => {
                     <span>{t('onboarding.screen2_list4')}</span>
                   </li>
                 </ul>
-                <p className="text-white/80">{t('onboarding.screen2_text3')}</p>
-                <ul className="space-y-2 text-white/80 pl-4">
-                  <li className="flex items-start gap-3">
-                    <span className="text-indigo-400 mt-1">•</span>
-                    <span>{t('onboarding.screen2_list5')}</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-indigo-400 mt-1">•</span>
-                    <span>{t('onboarding.screen2_list6')}</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-indigo-400 mt-1">•</span>
-                    <span>{t('onboarding.screen2_list7')}</span>
-                  </li>
-                </ul>
-                <p className="text-white/90 italic border-l-2 border-cyan-400 pl-4">{t('onboarding.screen2_conclusion')}</p>
+                <p className="text-cyan-300 italic text-lg text-center pt-4">{t('onboarding.screen2_conclusion')}</p>
               </div>
             )}
 
             {onboardingScreen === 3 && (
               <div className="space-y-6 animate-in fade-in duration-500">
-                <div className="text-center mb-8">
-                  <h1 className="text-2xl sm:text-3xl font-bold mb-2">{t('onboarding.screen3_title')}</h1>
-                  <p className="text-lg text-yellow-300 italic">{t('onboarding.screen3_subtitle')}</p>
+                <div className="text-center mb-6">
+                  <h1 className="text-2xl sm:text-3xl font-bold">{t('onboarding.screen3_title')}</h1>
                 </div>
-                <p className="text-white/90 leading-relaxed">{t('onboarding.screen3_text1')}</p>
+                <p className="text-white/90 leading-relaxed text-lg">{t('onboarding.screen3_text1')}</p>
                 <ul className="space-y-3 text-white/80">
                   <li className="flex items-start gap-3">
                     <span className="text-yellow-400 mt-1">•</span>
@@ -2111,7 +2093,7 @@ const OndaLevel1 = () => {
                     <span>{t('onboarding.screen3_list3')}</span>
                   </li>
                 </ul>
-                <p className="text-white/90 italic border-l-2 border-yellow-400 pl-4">{t('onboarding.screen3_conclusion')}</p>
+                <p className="text-yellow-300 italic text-lg text-center pt-4">{t('onboarding.screen3_conclusion')}</p>
               </div>
             )}
           </div>
