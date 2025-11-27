@@ -2662,8 +2662,8 @@ const OndaLevel1 = () => {
                           : 'bg-cyan-600 hover:bg-cyan-700'
                         : activeCircuit === 3
                         ? isCompleted
-                          ? 'bg-gray-600/50 hover:bg-gray-600/70 border border-gray-400/50'
-                          : 'bg-gray-600 hover:bg-gray-700'
+                          ? 'bg-amber-600/50 hover:bg-amber-600/70 border border-amber-400/50'
+                          : 'bg-amber-600 hover:bg-amber-700'
                         : isCompleted
                           ? 'bg-purple-600/50 hover:bg-purple-600/70 border border-purple-400/50'
                           : 'bg-purple-600 hover:bg-purple-700'
@@ -2681,14 +2681,14 @@ const OndaLevel1 = () => {
           activeCircuit === 2
             ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-blue-900/30 border-cyan-500/30'
             : activeCircuit === 3
-            ? 'bg-gradient-to-br from-gray-900/30 via-slate-900/20 to-gray-900/30 border-gray-500/30'
+            ? 'bg-gradient-to-br from-amber-900/30 via-orange-900/20 to-amber-900/30 border-amber-600/30'
             : 'bg-gradient-to-br from-indigo-900/30 via-purple-900/20 to-pink-900/30 border-indigo-500/30'
         }`}>
           <h3 className={`text-3xl font-bold mb-6 text-transparent bg-clip-text transition-all duration-1000 ${
             activeCircuit === 2
               ? 'bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-400'
               : activeCircuit === 3
-              ? 'bg-gradient-to-r from-gray-400 via-slate-400 to-gray-400'
+              ? 'bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400'
               : 'bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400'
           }`}>
             {t('level_goal.title')}
