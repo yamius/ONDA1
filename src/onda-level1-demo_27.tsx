@@ -73,6 +73,13 @@ const OndaLevel1 = () => {
   const [showInfoModal, setShowInfoModal] = useState(false);
   const [infoModalMessage, setInfoModalMessage] = useState('');
   const [showMenu, setShowMenu] = useState(false);
+  const [showOnboarding, setShowOnboarding] = useState(() => {
+    if (typeof localStorage !== 'undefined') {
+      return !localStorage.getItem('onda_onboarding_completed');
+    }
+    return true;
+  });
+  const [onboardingScreen, setOnboardingScreen] = useState(1);
 
   const [bioMetrics, setBioMetrics] = useState({
     heartRate: 72,
@@ -1975,6 +1982,154 @@ const OndaLevel1 = () => {
             </div>
           </div>
         )}
+      </div>
+    );
+  }
+
+  if (showOnboarding) {
+    const handleOnboardingNext = () => {
+      if (onboardingScreen < 3) {
+        setOnboardingScreen(onboardingScreen + 1);
+      } else {
+        localStorage.setItem('onda_onboarding_completed', 'true');
+        setShowOnboarding(false);
+        setShowAuthModal(true);
+      }
+    };
+
+    return (
+      <div className="h-full text-white overflow-x-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+        <div className="min-h-screen flex flex-col justify-between px-6 py-8 max-w-2xl mx-auto">
+          <div className="flex justify-center gap-3 pt-4">
+            {[1, 2, 3].map((dot) => (
+              <button
+                key={dot}
+                onClick={() => setOnboardingScreen(dot)}
+                className={`w-3 h-3 rounded-full transition-all ${
+                  onboardingScreen === dot
+                    ? 'bg-purple-400 scale-125'
+                    : 'bg-white/30 hover:bg-white/50'
+                }`}
+                data-testid={`onboarding-dot-${dot}`}
+              />
+            ))}
+          </div>
+
+          <div className="flex-1 flex flex-col justify-center py-8">
+            {onboardingScreen === 1 && (
+              <div className="space-y-6 animate-in fade-in duration-500">
+                <div className="text-center mb-8">
+                  <h1 className="text-2xl sm:text-3xl font-bold mb-2">{t('onboarding.screen1_title')}</h1>
+                  <p className="text-lg text-purple-300 italic">{t('onboarding.screen1_subtitle')}</p>
+                </div>
+                <p className="text-white/90 leading-relaxed">{t('onboarding.screen1_text1')}</p>
+                <ul className="space-y-3 text-white/80">
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>{t('onboarding.screen1_list1')}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>{t('onboarding.screen1_list2')}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>{t('onboarding.screen1_list3')}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-purple-400 mt-1">•</span>
+                    <span>{t('onboarding.screen1_list4')}</span>
+                  </li>
+                </ul>
+                <p className="text-white/90 italic border-l-2 border-purple-400 pl-4">{t('onboarding.screen1_conclusion')}</p>
+              </div>
+            )}
+
+            {onboardingScreen === 2 && (
+              <div className="space-y-6 animate-in fade-in duration-500">
+                <div className="text-center mb-8">
+                  <h1 className="text-2xl sm:text-3xl font-bold mb-2">{t('onboarding.screen2_title')}</h1>
+                  <p className="text-lg text-purple-300 italic">{t('onboarding.screen2_subtitle')}</p>
+                </div>
+                <p className="text-white/90 leading-relaxed">{t('onboarding.screen2_text1')}</p>
+                <p className="text-white/80">{t('onboarding.screen2_text2')}</p>
+                <ul className="space-y-2 text-white/80 pl-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span>{t('onboarding.screen2_list1')}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span>{t('onboarding.screen2_list2')}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span>{t('onboarding.screen2_list3')}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-cyan-400 mt-1">•</span>
+                    <span>{t('onboarding.screen2_list4')}</span>
+                  </li>
+                </ul>
+                <p className="text-white/80">{t('onboarding.screen2_text3')}</p>
+                <ul className="space-y-2 text-white/80 pl-4">
+                  <li className="flex items-start gap-3">
+                    <span className="text-indigo-400 mt-1">•</span>
+                    <span>{t('onboarding.screen2_list5')}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-indigo-400 mt-1">•</span>
+                    <span>{t('onboarding.screen2_list6')}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-indigo-400 mt-1">•</span>
+                    <span>{t('onboarding.screen2_list7')}</span>
+                  </li>
+                </ul>
+                <p className="text-white/90 italic border-l-2 border-cyan-400 pl-4">{t('onboarding.screen2_conclusion')}</p>
+              </div>
+            )}
+
+            {onboardingScreen === 3 && (
+              <div className="space-y-6 animate-in fade-in duration-500">
+                <div className="text-center mb-8">
+                  <h1 className="text-2xl sm:text-3xl font-bold mb-2">{t('onboarding.screen3_title')}</h1>
+                  <p className="text-lg text-yellow-300 italic">{t('onboarding.screen3_subtitle')}</p>
+                </div>
+                <p className="text-white/90 leading-relaxed">{t('onboarding.screen3_text1')}</p>
+                <ul className="space-y-3 text-white/80">
+                  <li className="flex items-start gap-3">
+                    <span className="text-yellow-400 mt-1">•</span>
+                    <span>{t('onboarding.screen3_list1')}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-yellow-400 mt-1">•</span>
+                    <span>{t('onboarding.screen3_list2')}</span>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <span className="text-yellow-400 mt-1">•</span>
+                    <span>{t('onboarding.screen3_list3')}</span>
+                  </li>
+                </ul>
+                <p className="text-white/90 italic border-l-2 border-yellow-400 pl-4">{t('onboarding.screen3_conclusion')}</p>
+              </div>
+            )}
+          </div>
+
+          <div className="pb-8">
+            <button
+              onClick={handleOnboardingNext}
+              className={`w-full py-4 rounded-full text-lg font-semibold transition-all ${
+                onboardingScreen === 3
+                  ? 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white'
+                  : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
+              }`}
+              data-testid="button-onboarding-next"
+            >
+              {onboardingScreen === 3 ? t('onboarding.start_journey') : t('onboarding.continue')}
+            </button>
+          </div>
+        </div>
       </div>
     );
   }
