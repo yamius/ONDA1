@@ -11,29 +11,32 @@ export function InfoModal({ isOpen, onClose, message }: InfoModalProps) {
 
   return (
     <div className="fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center z-50 p-4">
-      <div className="bg-gradient-to-br from-gray-900 to-black border border-gray-700 rounded-lg max-w-md w-full p-6 shadow-2xl">
-        <div className="flex justify-between items-start mb-4">
-          <div className="flex-1" />
+      <div className="bg-gradient-to-br from-violet-900 via-purple-800 to-indigo-900 border border-purple-500/40 rounded-2xl max-w-md w-full shadow-2xl shadow-purple-900/50 max-h-[80vh] flex flex-col">
+        <div className="flex justify-end items-start p-4 pb-0">
           <button
             onClick={onClose}
-            className="text-gray-400 hover:text-white transition-colors"
+            className="text-purple-300 hover:text-white transition-colors bg-white/10 rounded-full p-1"
           >
-            <X className="w-6 h-6" />
+            <X className="w-5 h-5" />
           </button>
         </div>
 
-        <div className="text-center py-4">
-          <p className="text-white text-lg leading-relaxed whitespace-pre-line">
-            {message}
-          </p>
+        <div className="flex-1 overflow-y-auto px-6 pb-2 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+          <div className="text-center py-2">
+            <p className="text-white/95 text-base leading-relaxed whitespace-pre-line">
+              {message}
+            </p>
+          </div>
         </div>
 
-        <button
-          onClick={onClose}
-          className="w-full mt-6 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white py-3 rounded-lg font-semibold transition-all"
-        >
-          OK
-        </button>
+        <div className="p-4 pt-2">
+          <button
+            onClick={onClose}
+            className="w-full bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 hover:from-pink-600 hover:via-purple-600 hover:to-cyan-600 text-white py-3 rounded-xl font-semibold transition-all shadow-lg shadow-purple-500/30"
+          >
+            OK
+          </button>
+        </div>
       </div>
     </div>
   );
