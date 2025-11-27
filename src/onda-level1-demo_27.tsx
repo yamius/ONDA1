@@ -2460,6 +2460,39 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
+        {/* Цели уровня */}
+        <div className="mb-6">
+          <div className={`bg-black/20 backdrop-blur-sm rounded-2xl border py-4 sm:py-6 px-4 sm:px-6 transition-all duration-1000 ${
+            activeCircuit === 2
+              ? 'border-cyan-500/30'
+              : activeCircuit === 3
+              ? 'border-amber-600/30'
+              : 'border-purple-500/30'
+          }`}>
+            <h3 className={`text-lg font-semibold mb-4 ${
+              activeCircuit === 2
+                ? 'text-cyan-300'
+                : activeCircuit === 3
+                ? 'text-amber-300'
+                : 'text-purple-300'
+            }`}>{t('level_goals.title')}</h3>
+            
+            <p className="text-white/80 mb-4 leading-relaxed">
+              {t('level_goals.main_goal')}
+            </p>
+            
+            <p className="text-white/70 mb-4 leading-relaxed italic">
+              {t('level_goals.essence_line1')}<br/>
+              {t('level_goals.essence_line2')}<br/>
+              {t('level_goals.essence_line3')}
+            </p>
+            
+            <p className="text-white/60 text-sm leading-relaxed">
+              {t('level_goals.final_note')}
+            </p>
+          </div>
+        </div>
+
         {/* Биометрика */}
         <div className="mb-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
