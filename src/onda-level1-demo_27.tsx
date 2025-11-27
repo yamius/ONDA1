@@ -2235,16 +2235,16 @@ const OndaLevel1 = () => {
         </div>
 
         {/* Кнопки навигации */}
-        <div className="flex flex-col items-center gap-3 sm:gap-4 mb-6 sm:mb-12 w-full max-w-md mx-auto px-4">
+        <div className="flex flex-col items-center gap-3 sm:gap-4 mb-6 sm:mb-12 w-full max-w-lg mx-auto px-4">
           {/* Эмоциональная сверка */}
           <button
             onClick={() => setShowEmotionalCheck(true)}
-            className={`backdrop-blur-sm px-8 sm:px-16 py-2 sm:py-3 rounded-full text-xs sm:text-sm font-medium transition-all border w-full ${
+            className={`backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
               activeCircuit === 2
-                ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
+                ? 'bg-cyan-500/5 hover:bg-cyan-500/15 border-cyan-400/20'
                 : activeCircuit === 3
-                ? 'bg-gray-500/20 hover:bg-gray-500/30 border-gray-400/50'
-                : 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/50'
+                ? 'bg-gray-500/5 hover:bg-gray-500/15 border-gray-400/20'
+                : 'bg-indigo-500/5 hover:bg-indigo-500/15 border-indigo-400/20'
             }`}
           >
             {t('nav.emotional_check')}
