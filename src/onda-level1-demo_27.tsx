@@ -2439,23 +2439,8 @@ const OndaLevel1 = () => {
                 <div className="text-4xl sm:text-6xl font-light tracking-wider">{t(`circuits.circuit_${activeCircuit}_title`)}</div>
               </div>
               <h3 className="text-2xl font-light mb-4">{t(`circuits.circuit_${activeCircuit}_subtitle`)}</h3>
-              <p className="text-white/70 mb-6 leading-relaxed" dangerouslySetInnerHTML={{__html: t(`circuits.circuit_${activeCircuit}_desc`)}}>
+              <p className="text-white/70 leading-relaxed" dangerouslySetInnerHTML={{__html: t(`circuits.circuit_${activeCircuit}_desc`)}}>
               </p>
-
-              <div className="space-y-3 text-sm">
-                <div>
-                  <span className="font-semibold underline">{t(`goals.level_${activeCircuit}.explore`)}</span>
-                  <span className="text-white/70"> — {t(`goals.level_${activeCircuit}.explore_desc`)}</span>
-                </div>
-                <div>
-                  <span className="font-semibold underline">{t(`goals.level_${activeCircuit}.collect`)}</span>
-                  <span className="text-white/70"> — {t(`goals.level_${activeCircuit}.collect_desc`)}</span>
-                </div>
-                <div>
-                  <span className="font-semibold underline">{t(`goals.level_${activeCircuit}.react`)}</span>
-                  <span className="text-white/70"> — {t(`goals.level_${activeCircuit}.react_desc`)}</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
