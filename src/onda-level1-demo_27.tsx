@@ -2837,16 +2837,6 @@ const OndaLevel1 = () => {
             ? 'bg-gradient-to-br from-amber-900/30 via-orange-900/20 to-amber-900/30 border-amber-600/30'
             : 'bg-gradient-to-br from-indigo-900/30 via-purple-900/20 to-pink-900/30 border-indigo-500/30'
         }`}>
-          <h3 className={`text-3xl font-bold mb-6 text-transparent bg-clip-text transition-all duration-1000 ${
-            activeCircuit === 2
-              ? 'bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-400'
-              : activeCircuit === 3
-              ? 'bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400'
-              : 'bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400'
-          }`}>
-            {t('level_goal.title')}
-          </h3>
-
           <div className="space-y-6 text-gray-200">
             <div className="bg-black/20 rounded-xl p-6 space-y-3 border border-white/10">
               <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.intro`)}</p>
