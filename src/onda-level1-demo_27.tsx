@@ -2130,14 +2130,17 @@ const OndaLevel1 = () => {
        !showQntShop && !showEmotionalCheck && !showInfoModal && (
         <button
           onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
-          className={`menu-container fixed top-12 left-4 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
+          className={`menu-container fixed top-12 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
             activeCircuit === 2
               ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
               : activeCircuit === 3
               ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
               : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
           }`}
-          style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+          style={{ 
+            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
+            left: 'max(28px, calc(50% - 256px + 16px))'
+          }}
           data-testid="button-menu"
         >
           {showMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
