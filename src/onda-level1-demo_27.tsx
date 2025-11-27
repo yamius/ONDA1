@@ -2112,7 +2112,7 @@ const OndaLevel1 = () => {
 
           <div className="w-full max-w-lg mx-auto px-4">
             {/* Строка с Уровень | Тело */}
-            <div className="flex items-center justify-center mb-2 sm:mb-1">
+            <div className="flex items-center justify-center mb-2 sm:mb-4">
               <div className="relative dropdown-container w-full">
                 <button
                   onClick={() => { setShowChapterDropdown(!showChapterDropdown); setShowLevelDropdown(false); }}
