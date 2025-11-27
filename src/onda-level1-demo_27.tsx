@@ -2171,7 +2171,7 @@ const OndaLevel1 = () => {
               <div className="relative dropdown-container w-full">
                 <button
                   onClick={() => { setShowLevelDropdown(!showLevelDropdown); setShowChapterDropdown(false); }}
-                  className={`backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
+                  className={`backdrop-blur-sm font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full min-h-[56px] sm:min-h-[64px] ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/40'
                       : activeCircuit === 3
@@ -2180,9 +2180,12 @@ const OndaLevel1 = () => {
                   }`}
                 >
                   <div className="flex items-center justify-center">
-                    <span className="flex-1 text-right pr-3 sm:pr-4">{t('level')} {selectedLevel}</span>
-                    <span className="text-white/30">|</span>
-                    <span className="flex-1 text-left pl-3 sm:pl-4">{t(`part_name_${selectedLevel}`)}</span>
+                    <span className="flex-1 text-right pr-3 sm:pr-4 text-xl sm:text-2xl">{t('level')} {selectedLevel}</span>
+                    <span className="text-white/30 text-xl sm:text-2xl">|</span>
+                    <span className="flex-1 text-left pl-3 sm:pl-4">
+                      <span className="text-xl sm:text-2xl">{t(`part_name_${selectedLevel}`).split(' ')[0]}</span>
+                      <span className="text-base sm:text-xl"> {t(`part_name_${selectedLevel}`).split(' ').slice(1).join(' ')}</span>
+                    </span>
                   </div>
                 </button>
                 {showLevelDropdown && (
@@ -2218,7 +2221,10 @@ const OndaLevel1 = () => {
                           <div className="flex items-center justify-center">
                             <span className="flex-1 text-right pr-3 sm:pr-4">{t('level')} {level}</span>
                             <span className="text-white/30">|</span>
-                            <span className="flex-1 text-left pl-3 sm:pl-4">{t(`part_name_${level}`)}</span>
+                            <span className="flex-1 text-left pl-3 sm:pl-4">
+                              <span>{t(`part_name_${level}`).split(' ')[0]}</span>
+                              <span className="text-sm sm:text-base"> {t(`part_name_${level}`).split(' ').slice(1).join(' ')}</span>
+                            </span>
                           </div>
                         </button>
                       );
