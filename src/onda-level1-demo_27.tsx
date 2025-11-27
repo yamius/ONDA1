@@ -2154,14 +2154,17 @@ const OndaLevel1 = () => {
             setOnboardingScreen(1);
             setShowOnboarding(true);
           }}
-          className={`fixed top-12 right-4 z-[100] text-white transition-all w-12 h-12 rounded-full shadow-2xl backdrop-blur-md flex items-center justify-center ${
+          className={`fixed top-12 z-[100] text-white transition-all w-10 h-10 rounded-full shadow-2xl backdrop-blur-md flex items-center justify-center ${
             activeCircuit === 2
               ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
               : activeCircuit === 3
               ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
               : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
           }`}
-          style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+          style={{ 
+            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
+            right: 'max(16px, calc(50% - 256px + 16px))'
+          }}
           title={t('onboarding.replay') || 'Replay intro'}
           data-testid="button-replay-intro"
         >
