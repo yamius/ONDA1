@@ -2103,7 +2103,7 @@ const OndaLevel1 = () => {
               onClick={handleOnboardingNext}
               className={`w-full py-4 rounded-full text-lg font-semibold transition-all ${
                 onboardingScreen === 3
-                  ? 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white'
+                  ? 'bg-violet-600 hover:bg-violet-700 text-white shadow-lg shadow-violet-500/30'
                   : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
               }`}
               data-testid="button-onboarding-next"
