@@ -1984,7 +1984,7 @@ const OndaLevel1 = () => {
       activeCircuit === 2
         ? 'bg-gradient-to-br from-teal-900 via-cyan-900 to-blue-900'
         : activeCircuit === 3
-        ? 'bg-gradient-to-br from-slate-900 via-gray-800 to-slate-900'
+        ? 'bg-gradient-to-br from-amber-950 via-orange-900 to-amber-950'
         : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
     }`}>
       {/* Плавающая кнопка гамбургер меню */}
@@ -1997,7 +1997,7 @@ const OndaLevel1 = () => {
             activeCircuit === 2
               ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
               : activeCircuit === 3
-              ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+              ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
               : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
           }`}
           style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
@@ -2054,7 +2054,7 @@ const OndaLevel1 = () => {
                 onClick={() => setShowProfileModal(true)}
                 className={`flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
                   isLightTheme
-                    ? 'text-gray-700 hover:text-gray-900 bg-gray-300 hover:bg-gray-400'
+                    ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
                     : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
                 }`}
               >
@@ -2066,7 +2066,7 @@ const OndaLevel1 = () => {
                 onClick={() => setShowAuthModal(true)}
                 className={`text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
                   isLightTheme
-                    ? 'text-gray-700 hover:text-gray-900 bg-gray-300 hover:bg-gray-400'
+                    ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
                     : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
                 }`}
               >
@@ -2079,7 +2079,7 @@ const OndaLevel1 = () => {
               onClick={() => setShowQntShop(true)}
               className={`text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
                 isLightTheme
-                  ? 'text-gray-700 hover:text-gray-900 bg-gray-300 hover:bg-gray-400'
+                  ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
                   : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
               }`}
               title="Click to open OND Shop"
@@ -2090,7 +2090,7 @@ const OndaLevel1 = () => {
               onClick={() => setShowRatingModal(true)}
               className={`text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
                 isLightTheme
-                  ? 'text-gray-700 hover:text-gray-900 bg-gray-300 hover:bg-gray-400'
+                  ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
                   : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
               }`}
             >
@@ -2120,7 +2120,7 @@ const OndaLevel1 = () => {
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/40'
                       : activeCircuit === 3
-                      ? 'bg-gray-500/20 hover:bg-gray-500/30 border-gray-400/40'
+                      ? 'bg-amber-600/20 hover:bg-amber-600/30 border-amber-500/40'
                       : 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/40'
                   }`}
                 >
@@ -2135,7 +2135,7 @@ const OndaLevel1 = () => {
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 border-cyan-400/50'
                       : activeCircuit === 3
-                      ? 'bg-gray-500/20 border-gray-400/50'
+                      ? 'bg-amber-600/20 border-amber-500/50'
                       : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
                     {Array.from({length: 4}, (_, i) => i + 1).map(chapter => {
@@ -2150,7 +2150,7 @@ const OndaLevel1 = () => {
                               : activeCircuit === 2
                               ? selectedChapter === chapter ? 'bg-cyan-500/40 text-white' : 'hover:bg-cyan-500/30'
                               : activeCircuit === 3
-                              ? selectedChapter === chapter ? 'bg-gray-500/40 text-white' : 'hover:bg-gray-500/30'
+                              ? selectedChapter === chapter ? 'bg-amber-600/40 text-white' : 'hover:bg-amber-600/30'
                               : selectedChapter === chapter ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                           }`}
                         >
@@ -2175,7 +2175,7 @@ const OndaLevel1 = () => {
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/40'
                       : activeCircuit === 3
-                      ? 'bg-gray-500/20 hover:bg-gray-500/30 border-gray-400/40'
+                      ? 'bg-amber-600/20 hover:bg-amber-600/30 border-amber-500/40'
                       : 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/40'
                   }`}
                 >
@@ -2193,7 +2193,7 @@ const OndaLevel1 = () => {
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 border-cyan-400/50'
                       : activeCircuit === 3
-                      ? 'bg-gray-500/20 border-gray-400/50'
+                      ? 'bg-amber-600/20 border-amber-500/50'
                       : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
                     {Array.from({length: 12}, (_, i) => i + 1).map(level => {
@@ -2214,7 +2214,7 @@ const OndaLevel1 = () => {
                               : activeCircuit === 2
                               ? level === selectedLevel ? 'bg-cyan-500/40 text-white' : 'hover:bg-cyan-500/30'
                               : activeCircuit === 3
-                              ? level === selectedLevel ? 'bg-gray-500/40 text-white' : 'hover:bg-gray-500/30'
+                              ? level === selectedLevel ? 'bg-amber-600/40 text-white' : 'hover:bg-amber-600/30'
                               : level === selectedLevel ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                           }`}
                         >
@@ -2249,7 +2249,7 @@ const OndaLevel1 = () => {
               activeCircuit === 2
                 ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/40'
                 : activeCircuit === 3
-                ? 'bg-gray-500/20 hover:bg-gray-500/30 border-gray-400/40'
+                ? 'bg-amber-600/20 hover:bg-amber-600/30 border-amber-500/40'
                 : 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/40'
             }`}
           >
@@ -2263,7 +2263,7 @@ const OndaLevel1 = () => {
             activeCircuit === 2
               ? 'border-cyan-500/30'
               : activeCircuit === 3
-              ? 'border-gray-500/30'
+              ? 'border-amber-600/30'
               : 'border-purple-500/30'
           }`}>
             <div className="max-w-4xl mx-auto">
@@ -2324,7 +2324,7 @@ const OndaLevel1 = () => {
             activeCircuit === 2
               ? 'border-cyan-500/30'
               : activeCircuit === 3
-              ? 'border-gray-500/30'
+              ? 'border-amber-600/30'
               : 'border-purple-500/30'
           }`}>
             <div className="flex justify-between mb-2 text-sm">
@@ -2346,7 +2346,7 @@ const OndaLevel1 = () => {
             activeCircuit === 2
               ? 'bg-gradient-to-br from-teal-900/20 to-cyan-900/20 border-cyan-500/30'
               : activeCircuit === 3
-              ? 'bg-gradient-to-br from-gray-900/20 to-slate-900/20 border-gray-500/30'
+              ? 'bg-gradient-to-br from-amber-900/20 to-orange-900/20 border-amber-600/30'
               : 'bg-gradient-to-br from-purple-900/20 to-indigo-900/20 border-purple-500/30'
           }`}>
             <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
@@ -2377,7 +2377,7 @@ const OndaLevel1 = () => {
               activeCircuit === 2
                 ? 'border-cyan-500/20'
                 : activeCircuit === 3
-                ? 'border-gray-500/20'
+                ? 'border-amber-600/20'
                 : 'border-purple-500/20'
             }`}>
               <p className="text-gray-400 text-sm mb-1">{t('stats.total_qnt')}</p>
@@ -2387,7 +2387,7 @@ const OndaLevel1 = () => {
               activeCircuit === 2
                 ? 'border-cyan-500/20'
                 : activeCircuit === 3
-                ? 'border-gray-500/20'
+                ? 'border-amber-600/20'
                 : 'border-purple-500/20'
             }`}>
               <p className="text-gray-400 text-sm mb-1">{t('stats.time_in_practices')}</p>
@@ -2399,7 +2399,7 @@ const OndaLevel1 = () => {
               activeCircuit === 2
                 ? 'border-cyan-500/20'
                 : activeCircuit === 3
-                ? 'border-gray-500/20'
+                ? 'border-amber-600/20'
                 : 'border-purple-500/20'
             }`}>
               <p className="text-gray-400 text-sm mb-1">{t('stats.avg_quality')}</p>
@@ -2409,7 +2409,7 @@ const OndaLevel1 = () => {
               activeCircuit === 2
                 ? 'border-cyan-500/20'
                 : activeCircuit === 3
-                ? 'border-gray-500/20'
+                ? 'border-amber-600/20'
                 : 'border-purple-500/20'
             }`}>
               <p className="text-gray-400 text-sm mb-1">{t('stats.day_streak')}</p>
@@ -2477,7 +2477,7 @@ const OndaLevel1 = () => {
           activeCircuit === 2
             ? 'border-cyan-500/30'
             : activeCircuit === 3
-            ? 'border-gray-500/30'
+            ? 'border-amber-600/30'
             : 'border-indigo-500/30'
         }`}>
           <div className="flex items-center justify-between mb-6">
@@ -2613,7 +2613,7 @@ const OndaLevel1 = () => {
                               activeCircuit === 2
                                 ? 'border-cyan-500/20'
                                 : activeCircuit === 3
-                                ? 'border-gray-500/20'
+                                ? 'border-amber-600/20'
                                 : 'border-purple-500/20'
                             }`}
                           >
@@ -3382,7 +3382,7 @@ const OndaLevel1 = () => {
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
                   : activeCircuit === 3
-                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
                   : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
               }`}
               style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
@@ -3402,7 +3402,7 @@ const OndaLevel1 = () => {
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
                   : activeCircuit === 3
-                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
                   : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
               }`}
               style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
@@ -3422,7 +3422,7 @@ const OndaLevel1 = () => {
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
                   : activeCircuit === 3
-                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
                   : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
               }`}
               style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
@@ -3442,7 +3442,7 @@ const OndaLevel1 = () => {
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
                   : activeCircuit === 3
-                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
                   : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
               }`}
               style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
@@ -3463,7 +3463,7 @@ const OndaLevel1 = () => {
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
                   : activeCircuit === 3
-                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
                   : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
               }`}
               style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
@@ -3483,7 +3483,7 @@ const OndaLevel1 = () => {
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
                   : activeCircuit === 3
-                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
                   : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
               }`}
               style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
@@ -3509,7 +3509,7 @@ const OndaLevel1 = () => {
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
                   : activeCircuit === 3
-                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
                   : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
               }`}
               style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
@@ -3529,7 +3529,7 @@ const OndaLevel1 = () => {
                 activeCircuit === 2
                   ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
                   : activeCircuit === 3
-                  ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
                   : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
               }`}
               style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
@@ -3553,7 +3553,7 @@ const OndaLevel1 = () => {
                   activeCircuit === 2
                     ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
                     : activeCircuit === 3
-                    ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                    ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
                     : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
                 }`}
                 style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
@@ -3575,7 +3575,7 @@ const OndaLevel1 = () => {
                   activeCircuit === 2
                     ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
                     : activeCircuit === 3
-                    ? 'bg-gray-700/40 hover:bg-gray-700/60 border border-gray-400/30'
+                    ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
                     : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
                 }`}
                 style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
