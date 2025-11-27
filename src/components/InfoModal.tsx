@@ -32,7 +32,7 @@ export function InfoModal({ isOpen, onClose, message }: InfoModalProps) {
         <div className="p-4 pt-2 flex justify-center">
           <button
             onClick={onClose}
-            className="px-12 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 hover:from-pink-600 hover:via-purple-600 hover:to-cyan-600 text-white py-2.5 rounded-xl font-semibold transition-all shadow-lg shadow-purple-500/30"
+            className="px-12 bg-purple-600 hover:bg-purple-700 text-white py-2.5 rounded-xl font-semibold transition-all shadow-lg shadow-purple-500/30"
           >
             OK
           </button>
