@@ -2110,13 +2110,13 @@ const OndaLevel1 = () => {
             <span className="text-lg sm:text-xl font-light">LIFE</span>
           </div>
 
-          <div className="w-full max-w-md mx-auto px-4">
-            {/* Строка с Уровень и ТЕЛО объединённые */}
+          <div className="w-full max-w-lg mx-auto px-4">
+            {/* Строка с Уровень | Тело */}
             <div className="flex items-center justify-center mb-2 sm:mb-1">
-              <div className="relative dropdown-container">
+              <div className="relative dropdown-container w-full">
                 <button
                   onClick={() => { setShowChapterDropdown(!showChapterDropdown); setShowLevelDropdown(false); }}
-                  className={`backdrop-blur-sm text-lg sm:text-xl font-medium px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all border flex items-center gap-3 ${
+                  className={`backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/5 hover:bg-cyan-500/15 border-cyan-400/20'
                       : activeCircuit === 3
@@ -2124,11 +2124,14 @@ const OndaLevel1 = () => {
                       : 'bg-indigo-500/5 hover:bg-indigo-500/15 border-indigo-400/20'
                   }`}
                 >
-                  <span className="text-white/70">{t('chapter')} {selectedChapter}.</span>
-                  <span className="text-3xl sm:text-4xl font-light tracking-wide">{t(`chapters.chapter_${selectedChapter}`)}</span>
+                  <div className="flex items-center justify-center">
+                    <span className="flex-1 text-right pr-3 sm:pr-4">{t('chapter')} {selectedChapter}</span>
+                    <span className="text-white/30">|</span>
+                    <span className="flex-1 text-left pl-3 sm:pl-4">{t(`chapters.chapter_${selectedChapter}`)}</span>
+                  </div>
                 </button>
                 {showChapterDropdown && (
-                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden min-w-full ${
+                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden w-full ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 border-cyan-400/50'
                       : activeCircuit === 3
@@ -2141,7 +2144,7 @@ const OndaLevel1 = () => {
                         <button
                           key={chapter}
                           onClick={() => { if (isAvailable) { setSelectedChapter(chapter); setShowChapterDropdown(false); } }}
-                          className={`block w-full px-6 py-3 text-left transition-all whitespace-nowrap text-base ${
+                          className={`block w-full px-4 py-3 transition-all text-lg ${
                             !isAvailable
                               ? 'text-white/40 cursor-not-allowed'
                               : activeCircuit === 2
@@ -2151,7 +2154,11 @@ const OndaLevel1 = () => {
                               : selectedChapter === chapter ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                           }`}
                         >
-                          {t('chapter')} {chapter}. {t(`chapters.chapter_${chapter}`)}
+                          <div className="flex items-center justify-center">
+                            <span className="flex-1 text-right pr-3 sm:pr-4">{t('chapter')} {chapter}</span>
+                            <span className="text-white/30">|</span>
+                            <span className="flex-1 text-left pl-3 sm:pl-4">{t(`chapters.chapter_${chapter}`)}</span>
+                          </div>
                         </button>
                       );
                     })}
@@ -2159,12 +2166,12 @@ const OndaLevel1 = () => {
                 )}
               </div>
             </div>
-            {/* Строка с Часть и название части объединённые */}
+            {/* Строка с Часть | Я есть */}
             <div className="flex items-center justify-center mb-3">
-              <div className="relative dropdown-container">
+              <div className="relative dropdown-container w-full">
                 <button
                   onClick={() => { setShowLevelDropdown(!showLevelDropdown); setShowChapterDropdown(false); }}
-                  className={`backdrop-blur-sm text-base sm:text-lg font-medium px-5 sm:px-6 py-2.5 sm:py-3 rounded-full transition-all border flex items-center gap-2 ${
+                  className={`backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/5 hover:bg-cyan-500/15 border-cyan-400/20'
                       : activeCircuit === 3
@@ -2172,11 +2179,14 @@ const OndaLevel1 = () => {
                       : 'bg-indigo-500/5 hover:bg-indigo-500/15 border-indigo-400/20'
                   }`}
                 >
-                  <span className="text-white/70">{t('level')} {selectedLevel}.</span>
-                  <span className="text-2xl sm:text-3xl font-light tracking-wide">{t(`part_name_${selectedLevel}`)}</span>
+                  <div className="flex items-center justify-center">
+                    <span className="flex-1 text-right pr-3 sm:pr-4">{t('level')} {selectedLevel}</span>
+                    <span className="text-white/30">|</span>
+                    <span className="flex-1 text-left pl-3 sm:pl-4">{t(`part_name_${selectedLevel}`)}</span>
+                  </div>
                 </button>
                 {showLevelDropdown && (
-                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden min-w-full max-h-[60vh] overflow-y-auto scrollbar-hide ${
+                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden w-full max-h-[60vh] overflow-y-auto scrollbar-hide ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 border-cyan-400/50'
                       : activeCircuit === 3
@@ -2195,7 +2205,7 @@ const OndaLevel1 = () => {
                               setShowLevelDropdown(false);
                             }
                           }}
-                          className={`block w-full px-6 py-2.5 text-left transition-all whitespace-nowrap text-sm ${
+                          className={`block w-full px-4 py-2.5 transition-all text-lg ${
                             !isAvailable
                               ? 'text-white/40 cursor-not-allowed'
                               : activeCircuit === 2
@@ -2205,7 +2215,11 @@ const OndaLevel1 = () => {
                               : level === selectedLevel ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                           }`}
                         >
-                          {t('level')} {level}. {t(`part_name_${level}`)}
+                          <div className="flex items-center justify-center">
+                            <span className="flex-1 text-right pr-3 sm:pr-4">{t('level')} {level}</span>
+                            <span className="text-white/30">|</span>
+                            <span className="flex-1 text-left pl-3 sm:pl-4">{t(`part_name_${level}`)}</span>
+                          </div>
                         </button>
                       );
                     })}
