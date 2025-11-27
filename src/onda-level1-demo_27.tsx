@@ -2166,7 +2166,7 @@ const OndaLevel1 = () => {
           }`}
           style={{ 
             boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
-            right: 'max(12px, calc(50% - 256px + 16px))'
+            right: 'max(44px, calc(50% - 256px + 16px))'
           }}
           title={t('onboarding.replay') || 'Replay intro'}
           data-testid="button-replay-intro"
