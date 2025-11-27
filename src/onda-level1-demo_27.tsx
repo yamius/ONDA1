@@ -2111,12 +2111,12 @@ const OndaLevel1 = () => {
           </div>
 
           <div className="w-full max-w-md mx-auto px-4">
-            {/* Строка с Уровень слева и ТЕЛО справа */}
-            <div className="flex items-end justify-between gap-4 mb-2 sm:mb-1">
+            {/* Строка с Уровень и ТЕЛО объединённые */}
+            <div className="flex items-center justify-center mb-2 sm:mb-1">
               <div className="relative dropdown-container">
                 <button
                   onClick={() => { setShowChapterDropdown(!showChapterDropdown); setShowLevelDropdown(false); }}
-                  className={`backdrop-blur-sm text-xs sm:text-sm font-medium px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all border min-w-[100px] sm:min-w-[120px] text-left ${
+                  className={`backdrop-blur-sm text-lg sm:text-xl font-medium px-6 sm:px-8 py-3 sm:py-4 rounded-full transition-all border flex items-center gap-3 ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/5 hover:bg-cyan-500/15 border-cyan-400/20'
                       : activeCircuit === 3
@@ -2124,10 +2124,11 @@ const OndaLevel1 = () => {
                       : 'bg-indigo-500/5 hover:bg-indigo-500/15 border-indigo-400/20'
                   }`}
                 >
-                  {t('chapter')} {selectedChapter}
+                  <span className="text-white/70">{t('chapter')} {selectedChapter}.</span>
+                  <span className="text-3xl sm:text-4xl font-light tracking-wide">{t(`chapters.chapter_${selectedChapter}`)}</span>
                 </button>
                 {showChapterDropdown && (
-                  <div className={`absolute top-full mt-2 sm:mt-1 left-0 backdrop-blur-md rounded-2xl border z-50 overflow-hidden ${
+                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden min-w-full ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/20 border-cyan-400/50'
                       : activeCircuit === 3
@@ -2140,7 +2141,7 @@ const OndaLevel1 = () => {
                         <button
                           key={chapter}
                           onClick={() => { if (isAvailable) { setSelectedChapter(chapter); setShowChapterDropdown(false); } }}
-                          className={`block w-full px-6 py-2.5 text-left transition-all whitespace-nowrap text-sm ${
+                          className={`block w-full px-6 py-3 text-left transition-all whitespace-nowrap text-base ${
                             !isAvailable
                               ? 'text-white/40 cursor-not-allowed'
                               : activeCircuit === 2
@@ -2157,7 +2158,6 @@ const OndaLevel1 = () => {
                   </div>
                 )}
               </div>
-              <h1 className="text-5xl sm:text-5xl md:text-7xl font-light tracking-wide text-right">{t('body_title')}</h1>
             </div>
             {/* Строка с Часть слева и название части справа */}
             <div className="flex items-end justify-between gap-4 mb-3">
