@@ -16,13 +16,13 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
 
   return (
     <div 
-      className="fixed inset-0 z-[200] flex items-center justify-center p-4"
+      className="fixed inset-0 z-[200] flex items-center sm:items-start sm:pt-[5vh] justify-center p-0 sm:p-4"
       onClick={onClose}
     >
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       
       <div 
-        className="relative w-full h-full rounded-none sm:max-w-sm sm:max-h-[90vh] sm:rounded-2xl overflow-hidden shadow-2xl flex flex-col"
+        className="relative w-full h-full sm:max-w-sm sm:max-h-[90vh] sm:rounded-2xl overflow-hidden shadow-2xl flex flex-col"
         onClick={(e) => e.stopPropagation()}
         style={{
           background: 'linear-gradient(180deg, #1e1b4b 0%, #312e81 30%, #4c1d95 60%, #1e1b4b 100%)'
@@ -37,7 +37,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
         </button>
 
         <div 
-          className="flex-1 overflow-y-auto p-6 pt-14 pb-0 flex flex-col justify-center"
+          className="flex-1 overflow-y-auto p-6 pt-14 pb-0 flex flex-col justify-center sm:justify-start sm:pt-16"
           style={{
             scrollbarWidth: 'none',
             msOverflowStyle: 'none',
