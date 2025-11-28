@@ -20,7 +20,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       
       <div 
-        className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl"
+        className="relative w-full max-w-sm max-h-[85vh] rounded-2xl overflow-hidden shadow-2xl flex flex-col"
         onClick={(e) => e.stopPropagation()}
         style={{
           background: 'linear-gradient(180deg, #1e1b4b 0%, #312e81 30%, #4c1d95 60%, #1e1b4b 100%)'
@@ -34,7 +34,21 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
           <X className="w-5 h-5 text-white/80" />
         </button>
 
-        <div className="p-6 pt-16 pb-4">
+        <div 
+          className="flex-1 overflow-y-auto p-6 pt-16"
+          style={{
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+          }}
+        >
+          <style>
+            {`
+              .subscription-content::-webkit-scrollbar {
+                display: none;
+              }
+            `}
+          </style>
+          
           <p className="text-white/70 text-sm mb-1">{t('subscription.ready', 'Your plan is ready.')}</p>
           <h2 className="text-white text-2xl font-bold mb-6">
             {t('subscription.unlock', 'Unlock ONDA for free')}
@@ -77,16 +91,14 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
               </p>
             </div>
           </div>
-        </div>
 
-        <div className="px-6 pb-6">
           <div className="relative mb-3">
             <div className="absolute -top-3 right-4 bg-yellow-400 text-indigo-900 text-xs font-bold px-3 py-1 rounded-full">
               {t('subscription.trial_badge', '7-Day Free Trial')}
             </div>
             <div className="border-2 border-violet-400 rounded-xl p-4 bg-violet-900/30">
               <p className="font-bold text-white mb-1">{t('subscription.yearly', 'Yearly')}</p>
-              <div className="flex items-baseline gap-2">
+              <div className="flex items-baseline gap-2 flex-wrap">
                 <span className="text-white/50 line-through text-sm">199.99 EUR</span>
                 <span className="text-white font-bold">49.99 EUR/</span>
                 <span className="text-white/80 text-sm">4.17 EUR/mo. yr.</span>
@@ -95,7 +107,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
           </div>
 
           <div className="border border-white/20 rounded-xl p-4 mb-6">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-2">
               <p className="font-bold text-white">{t('subscription.monthly', 'Monthly')}</p>
               <p className="text-white">9.99 EUR/mo.</p>
             </div>
@@ -108,7 +120,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
             {t('subscription.try_free', 'Try 7 Days Free')}
           </button>
 
-          <p className="text-white/50 text-xs text-center mt-4 leading-relaxed">
+          <p className="text-white/50 text-xs text-center mt-4 pb-2 leading-relaxed">
             {t('subscription.disclaimer', 'Totally free for 7 days, then 4.17 EUR/month, billed annually at 49.99 EUR/year. Cancel anytime.')}
           </p>
         </div>
