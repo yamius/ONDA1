@@ -30,7 +30,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
       >
         <button
           onClick={onClose}
-          className="absolute top-4 left-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+          className="absolute top-6 left-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
           data-testid="button-close-subscription"
         >
           <X className="w-4 h-4 text-white/80" />
