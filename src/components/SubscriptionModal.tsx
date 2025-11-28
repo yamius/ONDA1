@@ -51,7 +51,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
             `}
           </style>
           
-          <div className="flex-1 flex flex-col justify-center">
+          <div>
             <p className="text-white/70 text-sm mb-1">{t('subscription.ready', 'Your plan is ready.')}</p>
             <h2 className="text-white text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
               {t('subscription.unlock', 'Unlock ONDA for free')}
