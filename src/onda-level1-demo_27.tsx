@@ -169,7 +169,7 @@ const OndaLevel1 = () => {
                 unlocked_achievements: [],
                 bio_metrics: { heartRate: 72, hrv: 45, spo2: 98, temp: 36.6, stability: 100 },
                 sleep_tracking: { day: 0, lastCheck: null },
-                selected_language: i18n.language?.split('-')[0]?.toUpperCase() || 'RU',
+                selected_language: 'EN',
                 selected_level: 1,
                 selected_chapter: 1,
                 is_light_theme: false
@@ -195,9 +195,8 @@ const OndaLevel1 = () => {
               stability: 100
             });
             setSleepTracking(progress.sleep_tracking || { day: 0, lastCheck: null });
-            const savedLang = progress.selected_language || i18n.language?.split('-')[0]?.toUpperCase() || 'EN';
-            setSelectedLanguage(savedLang);
-            i18n.changeLanguage(savedLang.toLowerCase());
+            setSelectedLanguage('EN');
+            i18n.changeLanguage('en');
             setSelectedLevel(progress.selected_level || 1);
             setSelectedChapter(progress.selected_chapter || 1);
             setIsLightTheme(progress.is_light_theme || false);
