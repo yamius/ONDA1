@@ -141,7 +141,10 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
               className="w-full bg-white hover:bg-gray-100 text-indigo-900 font-bold py-3 sm:py-4 rounded-full transition-colors shadow-lg text-sm sm:text-base"
               data-testid="button-start-trial"
             >
-              {t('subscription.try_free', 'Try 7 Days Free')}
+              {selectedPlan === 'yearly' 
+                ? t('subscription.try_free', 'Try 7 Days Free')
+                : t('subscription.subscribe', 'Subscribe')
+              }
             </button>
 
             <p className="text-white/50 text-xs text-center mt-2 pb-1 leading-relaxed">
