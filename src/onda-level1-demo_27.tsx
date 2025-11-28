@@ -2311,10 +2311,10 @@ const OndaLevel1 = () => {
                   onClick={() => { setShowChapterDropdown(!showChapterDropdown); setShowLevelDropdown(false); }}
                   className={`backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
                     activeCircuit === 2
-                      ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/40'
+                      ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                       : activeCircuit === 3
-                      ? 'bg-amber-600/20 hover:bg-amber-600/30 border-amber-500/40'
-                      : 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/40'
+                      ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                      : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
                   }`}
                 >
                   <div className="flex items-center justify-center">
@@ -2366,10 +2366,10 @@ const OndaLevel1 = () => {
                   onClick={() => { setShowLevelDropdown(!showLevelDropdown); setShowChapterDropdown(false); }}
                   className={`backdrop-blur-sm font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full min-h-[56px] sm:min-h-[64px] ${
                     activeCircuit === 2
-                      ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/40'
+                      ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                       : activeCircuit === 3
-                      ? 'bg-amber-600/20 hover:bg-amber-600/30 border-amber-500/40'
-                      : 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/40'
+                      ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                      : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
                   }`}
                 >
                   <div className="flex items-center justify-center">
@@ -2440,10 +2440,10 @@ const OndaLevel1 = () => {
             onClick={() => setShowEmotionalCheck(true)}
             className={`backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
               activeCircuit === 2
-                ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/40'
+                ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                 : activeCircuit === 3
-                ? 'bg-amber-600/20 hover:bg-amber-600/30 border-amber-500/40'
-                : 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/40'
+                ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
             }`}
           >
             {t('nav.emotional_check')}
