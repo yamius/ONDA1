@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { X, Infinity, Headphones, Sparkles, Heart } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -9,6 +10,7 @@ interface SubscriptionModalProps {
 
 export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: SubscriptionModalProps) {
   const { t } = useTranslation();
+  const [selectedPlan, setSelectedPlan] = useState<'yearly' | 'monthly'>('yearly');
 
   if (!isOpen) return null;
 
@@ -93,25 +95,41 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
           </div>
 
           <div className="relative mb-3">
-            <div className="absolute -top-3 right-4 bg-yellow-400 text-indigo-900 text-xs font-bold px-3 py-1 rounded-full">
+            <div className="absolute -top-3 right-4 bg-yellow-400 text-indigo-900 text-xs font-bold px-3 py-1 rounded-full z-10">
               {t('subscription.trial_badge', '7-Day Free Trial')}
             </div>
-            <div className="border-2 border-violet-400 rounded-xl p-4 bg-violet-900/30">
+            <button
+              onClick={() => setSelectedPlan('yearly')}
+              className={`w-full text-left rounded-xl p-4 transition-all ${
+                selectedPlan === 'yearly'
+                  ? 'border-2 border-violet-400 bg-violet-900/30'
+                  : 'border border-white/20 bg-transparent hover:bg-white/5'
+              }`}
+              data-testid="button-plan-yearly"
+            >
               <p className="font-bold text-white mb-1">{t('subscription.yearly', 'Yearly')}</p>
               <div className="flex items-baseline gap-2 flex-wrap">
                 <span className="text-white/50 line-through text-sm">199.99 EUR</span>
                 <span className="text-white font-bold">49.99 EUR/</span>
                 <span className="text-white/80 text-sm">4.17 EUR/mo. yr.</span>
               </div>
-            </div>
+            </button>
           </div>
 
-          <div className="border border-white/20 rounded-xl p-4 mb-6">
+          <button
+            onClick={() => setSelectedPlan('monthly')}
+            className={`w-full text-left rounded-xl p-4 mb-6 transition-all ${
+              selectedPlan === 'monthly'
+                ? 'border-2 border-violet-400 bg-violet-900/30'
+                : 'border border-white/20 bg-transparent hover:bg-white/5'
+            }`}
+            data-testid="button-plan-monthly"
+          >
             <div className="flex items-center justify-between gap-2">
               <p className="font-bold text-white">{t('subscription.monthly', 'Monthly')}</p>
               <p className="text-white">9.99 EUR/mo.</p>
             </div>
-          </div>
+          </button>
 
           <button
             className="w-full bg-white hover:bg-gray-100 text-indigo-900 font-bold py-4 rounded-full transition-colors shadow-lg"
