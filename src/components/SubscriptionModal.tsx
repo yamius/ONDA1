@@ -132,6 +132,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
           </button>
 
           <button
+            onClick={onClose}
             className="w-full bg-white hover:bg-gray-100 text-indigo-900 font-bold py-4 rounded-full transition-colors shadow-lg"
             data-testid="button-start-trial"
           >
