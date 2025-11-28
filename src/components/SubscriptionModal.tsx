@@ -30,14 +30,14 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
       >
         <button
           onClick={onClose}
-          className="absolute top-4 left-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+          className="absolute top-4 left-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
           data-testid="button-close-subscription"
         >
-          <X className="w-6 h-6 text-white/80" />
+          <X className="w-4 h-4 text-white/80" />
         </button>
 
         <div 
-          className="flex-1 overflow-y-auto p-6 pt-16 flex flex-col"
+          className="flex-1 overflow-y-auto p-6 pt-14 pb-4 flex flex-col"
           style={{
             scrollbarWidth: 'none',
             msOverflowStyle: 'none',
@@ -144,7 +144,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
               {t('subscription.try_free', 'Try 7 Days Free')}
             </button>
 
-            <p className="text-white/50 text-xs text-center mt-3 sm:mt-4 pb-2 leading-relaxed">
+            <p className="text-white/50 text-xs text-center mt-2 pb-1 leading-relaxed">
               {t('subscription.disclaimer', 'Totally free for 7 days, then 4.17 EUR/month, billed annually at 49.99 EUR/year. Cancel anytime.')}
             </p>
           </div>
