@@ -2427,7 +2427,7 @@ const OndaLevel1 = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center flex-1 justify-center my-4 sm:my-6">
             <div className="text-base sm:text-xl text-white/80 italic max-w-md text-center px-4 sm:px-0" dangerouslySetInnerHTML={{__html: `«${t(`quote_level_${activeCircuit}`)}»`}}>
             </div>
           </div>
