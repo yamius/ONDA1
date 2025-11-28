@@ -51,12 +51,12 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
             `}
           </style>
           
-          <p className="text-white/70 text-sm mb-0.5">{t('subscription.ready', 'Your plan is ready.')}</p>
-          <h2 className="text-white text-2xl font-bold mb-4">
+          <p className="text-white/70 text-sm mb-1">{t('subscription.ready', 'Your plan is ready.')}</p>
+          <h2 className="text-white text-2xl font-bold mb-6">
             {t('subscription.unlock', 'Unlock ONDA for free')}
           </h2>
 
-          <div className="space-y-3 mb-6">
+          <div className="space-y-4 mb-8">
             <div className="flex items-start gap-3">
               <div className="w-8 h-8 rounded-full bg-violet-500/30 flex items-center justify-center flex-shrink-0">
                 <Infinity className="w-4 h-4 text-yellow-400" />
@@ -94,13 +94,13 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
             </div>
           </div>
 
-          <div className="relative mb-2">
-            <div className="absolute -top-2.5 right-4 bg-yellow-400 text-indigo-900 text-xs font-bold px-3 py-0.5 rounded-full z-10">
+          <div className="relative mb-3">
+            <div className="absolute -top-3 right-4 bg-yellow-400 text-indigo-900 text-xs font-bold px-3 py-1 rounded-full z-10">
               {t('subscription.trial_badge', '7-Day Free Trial')}
             </div>
             <button
               onClick={() => setSelectedPlan('yearly')}
-              className={`w-full text-left rounded-xl p-3 transition-all ${
+              className={`w-full text-left rounded-xl p-4 transition-all ${
                 selectedPlan === 'yearly'
                   ? 'border-2 border-violet-400 bg-violet-900/30'
                   : 'border border-white/20 bg-transparent hover:bg-white/5'
@@ -118,7 +118,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
 
           <button
             onClick={() => setSelectedPlan('monthly')}
-            className={`w-full text-left rounded-xl p-3 mb-4 transition-all ${
+            className={`w-full text-left rounded-xl p-4 mb-6 transition-all ${
               selectedPlan === 'monthly'
                 ? 'border-2 border-violet-400 bg-violet-900/30'
                 : 'border border-white/20 bg-transparent hover:bg-white/5'
@@ -135,13 +135,13 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
             onClick={() => {
               window.open('https://chatgpt.com/s/t_6929571b682081919694a949d0609de8', '_blank');
             }}
-            className="w-full bg-white hover:bg-gray-100 text-indigo-900 font-bold py-3.5 rounded-full transition-colors shadow-lg"
+            className="w-full bg-white hover:bg-gray-100 text-indigo-900 font-bold py-4 rounded-full transition-colors shadow-lg"
             data-testid="button-start-trial"
           >
             {t('subscription.try_free', 'Try 7 Days Free')}
           </button>
 
-          <p className="text-white/50 text-xs text-center mt-3 pb-1 leading-snug">
+          <p className="text-white/50 text-xs text-center mt-4 pb-2 leading-relaxed">
             {t('subscription.disclaimer', 'Totally free for 7 days, then 4.17 EUR/month, billed annually at 49.99 EUR/year. Cancel anytime.')}
           </p>
         </div>
