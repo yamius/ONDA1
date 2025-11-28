@@ -132,7 +132,9 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
           </button>
 
           <button
-            onClick={onClose}
+            onClick={() => {
+              window.open('https://chatgpt.com/s/t_6929571b682081919694a949d0609de8', '_blank');
+            }}
             className="w-full bg-white hover:bg-gray-100 text-indigo-900 font-bold py-4 rounded-full transition-colors shadow-lg"
             data-testid="button-start-trial"
           >
