@@ -96,7 +96,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
             </div>
           </div>
 
-          <div className="mt-auto">
+          <div className="mt-6 sm:mt-8">
             <div className="relative mb-3">
               <div className="absolute -top-3 right-4 bg-yellow-400 text-indigo-900 text-xs font-bold px-3 py-1 rounded-full z-10">
                 {t('subscription.trial_badge', '7-Day Free Trial')}
