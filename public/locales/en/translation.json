@@ -1259,6 +1259,21 @@
     "screen3_list3": "early level skills — foundation for further growth.",
     "screen3_conclusion": "Result: stable presence, calm, clarity, and inner support in life.",
     "continue": "Continue",
-    "start_journey": "Start your ONDA Life journey"
+    "start_journey": "Start your ONDA Life journey",
+    "replay": "Replay intro"
+  },
+  "subscription": {
+    "title": "Subscription",
+    "ready": "Your plan is ready.",
+    "unlock": "Unlock ONDA for free",
+    "feature1": "Unlimited free access for 7 days",
+    "feature2": "100+ audio practices for meditation and relaxation",
+    "feature3": "Personalized practices based on your biometrics",
+    "feature4": "Real-time heart rate tracking during practices",
+    "trial_badge": "7-Day Free Trial",
+    "yearly": "Yearly",
+    "monthly": "Monthly",
+    "try_free": "Try 7 Days Free",
+    "disclaimer": "Totally free for 7 days, then 4.17 EUR/month, billed annually at 49.99 EUR/year. Cancel anytime."
   }
 }

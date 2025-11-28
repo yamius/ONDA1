@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw } from 'lucide-react';
+import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
@@ -11,6 +11,7 @@ import { OndShopModal } from './components/OndShopModal';
 import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { EmotionalCheckModal } from './components/EmotionalCheckModal';
 import { InfoModal } from './components/InfoModal';
+import { SubscriptionModal } from './components/SubscriptionModal';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
 import { useHealthConnect } from './hooks/useHealthConnect';
@@ -71,6 +72,7 @@ const OndaLevel1 = () => {
   const [showQntShop, setShowQntShop] = useState(false);
   const [isLoadingUser, setIsLoadingUser] = useState(true);
   const [showInfoModal, setShowInfoModal] = useState(false);
+  const [showSubscriptionModal, setShowSubscriptionModal] = useState(false);
   const [infoModalMessage, setInfoModalMessage] = useState('');
   const [showMenu, setShowMenu] = useState(false);
   const [showOnboarding, setShowOnboarding] = useState(() => {
@@ -2175,6 +2177,30 @@ const OndaLevel1 = () => {
         </button>
       )}
 
+      {/* Кнопка подписки */}
+      {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
+       !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
+       !showQntShop && !showEmotionalCheck && !showInfoModal && !showMenu && !showSubscriptionModal && (
+        <button
+          onClick={() => setShowSubscriptionModal(true)}
+          className={`fixed top-24 z-[100] text-white transition-all w-10 h-10 rounded-full shadow-2xl backdrop-blur-md flex items-center justify-center ${
+            activeCircuit === 2
+              ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+              : activeCircuit === 3
+              ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
+              : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+          }`}
+          style={{ 
+            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
+            right: 'max(44px, calc(50% - 256px + 16px))'
+          }}
+          title={t('subscription.title', 'Subscription')}
+          data-testid="button-subscription"
+        >
+          <DollarSign className="w-5 h-5" />
+        </button>
+      )}
+
       {/* Верхняя навигация */}
       <div className="hidden">
         <div className="max-w-6xl mx-auto px-3 sm:px-6 py-3 sm:py-4 flex items-center justify-between flex-wrap gap-2">
@@ -3504,6 +3530,12 @@ const OndaLevel1 = () => {
         isOpen={showInfoModal}
         onClose={() => setShowInfoModal(false)}
         message={infoModalMessage}
+      />
+
+      <SubscriptionModal
+        isOpen={showSubscriptionModal}
+        onClose={() => setShowSubscriptionModal(false)}
+        activeCircuit={activeCircuit}
       />
 
       {/* Боковое меню */}
