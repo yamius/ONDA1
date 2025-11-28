@@ -69,7 +69,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
                 <Headphones className="w-4 h-4 text-white/80" />
               </div>
               <p className="text-white/80 pt-1">
-                {t('subscription.feature2', '100+ audio practices for meditation and relaxation')}
+                {t('subscription.feature2', '100+ audio practices for meditation, relaxation and growth')}
               </p>
             </div>
             
