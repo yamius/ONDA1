@@ -1239,6 +1239,49 @@
       "guiding_6": "Imagine breath dissolving fatigue like warm water.",
       "guiding_7": "Stay in this slow rhythm without effort.",
       "final_phrase": "Rest is not weakness — it is wisdom of the body."
+    },
+    "silence_point": {
+      "name": "Point of Stillness",
+      "short_phrase": "Find a still point within and breathe around it.",
+      "guiding_1": "Close your eyes. Let your breath become barely noticeable.",
+      "guiding_2": "Notice a point of stillness — deep in belly or center of chest.",
+      "guiding_3": "Don't touch it with effort; breathe around it, like water around a stone.",
+      "guiding_4": "On inhale, attention gathers to the axis; on exhale — dissolves the excess.",
+      "guiding_5": "Thoughts float like clouds: notice — and let go.",
+      "guiding_6": "Ears listen to silence, skin listens to air, heart listens to itself.",
+      "guiding_7": "Let boundaries of 'I' become soft, like light in fog.",
+      "guiding_8": "Stay near the point — it requires nothing and is already calm.",
+      "final_phrase": "In the point of stillness, everything has already happened — all that remains is to be."
+    },
+    "listen_space": {
+      "name": "Listen to Space",
+      "short_phrase": "Listen not to sounds — listen to the space between them.",
+      "guiding_1": "Let breath be natural; allow hearing to open 360 degrees.",
+      "guiding_2": "Notice near sounds and far ones — without naming them.",
+      "guiding_3": "Listen to pauses from which each sound is born and to which it returns.",
+      "guiding_4": "Expand attention: body → room → street → even further.",
+      "guiding_5": "Let each sound pass through you without clinging.",
+      "guiding_6": "If judgment appears — 'like/dislike' — release it with exhale.",
+      "guiding_7": "Notice how space listens back to you — through silence around breath.",
+      "guiding_8": "Become transparent to the world, so the world becomes transparent to you.",
+      "final_phrase": "When you listen to space, space begins to listen to you."
+    },
+    "still_form": {
+      "name": "Still Form",
+      "short_phrase": "Freeze in a stable pose. Breath flows by itself. Be a form of peace.",
+      "guiding_1": "Sit or stand comfortably; choose a simple, stable pose.",
+      "guiding_2": "Feel the support: feet/sit bones and weight of pelvis.",
+      "guiding_3": "Straighten spine; crown gently reaches up, chin is free.",
+      "guiding_4": "Drop shoulders, relax jaw, tongue is free, gaze is soft.",
+      "guiding_5": "Inhale — axis lengthens; exhale — weight descends to earth.",
+      "guiding_6": "Leave breath natural; don't control it, just notice.",
+      "guiding_7": "Notice micro-movements within stillness: pulse, waves of warmth, barely audible inhale.",
+      "guiding_8": "Don't fix anything — let the form stand, and life quietly move within.",
+      "guiding_9": "Keep attention in three points: support below, warm belly, calm heart.",
+      "guiding_10": "If mind wanders — return to the feeling of weight and contact with earth.",
+      "guiding_11": "Let silence gradually fill the form from within, like light fills water.",
+      "guiding_12": "Stay still a bit longer than you want — there peace begins.",
+      "final_phrase": "When form freezes, silence is born within it."
     }
   },
   "onboarding": {
