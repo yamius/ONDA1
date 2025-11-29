@@ -12,7 +12,7 @@ storage_mode("git")
 type("appstore")
 
 # App Identifier (Bundle ID)
-app_identifier(["com.onda.app"])
+app_identifier(["com.onda-life.ios"])
 
 # Your Apple ID username
 # This will be set via environment variable: FASTLANE_USER

@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'com.onda.app',
+  appId: 'com.onda-life.ios',
   appName: 'ONDA',
   webDir: 'dist',
   server: {
