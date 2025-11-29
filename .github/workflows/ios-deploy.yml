@@ -43,12 +43,23 @@ jobs:
       - name: Create App Store Connect API Key
         run: |
           mkdir -p /Users/runner/private_keys
-          echo "$APP_STORE_CONNECT_API_KEY_CONTENT" | base64 -d > /Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8
-          echo "=== Verifying API Key file ==="
-          echo "File path: /Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8"
-          cat /Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8 | head -2
-          cat /Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8 | tail -1
-          echo "File size: $(wc -c < /Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8) bytes"
+          KEY_FILE="/Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8"
+          
+          echo "=== Base64 secret info ==="
+          echo "Base64 length: ${#APP_STORE_CONNECT_API_KEY_CONTENT} characters"
+          echo "First 50 chars: ${APP_STORE_CONNECT_API_KEY_CONTENT:0:50}"
+          
+          # Decode base64 to file
+          echo "$APP_STORE_CONNECT_API_KEY_CONTENT" | base64 -d > "$KEY_FILE"
+          
+          echo "=== Verifying decoded API Key file ==="
+          echo "File path: $KEY_FILE"
+          echo "File size: $(wc -c < "$KEY_FILE") bytes"
+          echo "Line count: $(wc -l < "$KEY_FILE")"
+          echo "=== Full file content (masked middle) ==="
+          head -2 "$KEY_FILE"
+          echo "... (middle lines hidden) ..."
+          tail -2 "$KEY_FILE"
         env:
           APP_STORE_CONNECT_API_KEY_CONTENT: ${{ secrets.APP_STORE_CONNECT_API_KEY_CONTENT }}
           APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
