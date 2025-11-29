@@ -67,7 +67,9 @@ platform :ios do
       type: "appstore",
       readonly: is_ci ? false : true,
       force_for_new_devices: true,
-      api_key_path: nil  # Uses api_key from before_all block
+      api_key_path: nil,  # Uses api_key from before_all block
+      keychain_name: ENV['CI'] ? "build.keychain" : nil,
+      keychain_password: ENV['CI'] ? "" : nil
     )
     
     # Build the app
