@@ -7,6 +7,16 @@ platform :ios do
   before_all do
     # Ensure we're on the latest version of Fastlane
     update_fastlane
+    
+    # Setup App Store Connect API Key for authentication
+    if ENV["APP_STORE_CONNECT_API_KEY_KEY_ID"]
+      app_store_connect_api_key(
+        key_id: ENV["APP_STORE_CONNECT_API_KEY_KEY_ID"],
+        issuer_id: ENV["APP_STORE_CONNECT_API_KEY_ISSUER_ID"],
+        key_filepath: ENV["APP_STORE_CONNECT_API_KEY_KEY"],
+        in_house: false
+      )
+    end
   end
 
   desc "Build iOS app"
@@ -33,13 +43,14 @@ platform :ios do
 
   desc "Build and upload to TestFlight"
   lane :beta do
-    # Setup code signing with Match
+    # Setup code signing with Match using API Key (no password needed)
     # First run: readonly=false to create certificates
     # After certificates exist: change to readonly=true for safety
     match(
       type: "appstore",
       readonly: is_ci ? false : true,
-      force_for_new_devices: true
+      force_for_new_devices: true,
+      api_key_path: nil  # Uses api_key from before_all block
     )
     
     # Build the app
