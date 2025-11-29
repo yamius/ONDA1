@@ -42,11 +42,13 @@ jobs:
 
       - name: Create App Store Connect API Key
         run: |
-          mkdir -p ~/private_keys
-          echo "$APP_STORE_CONNECT_API_KEY_CONTENT" | base64 -d > ~/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8
+          mkdir -p /Users/runner/private_keys
+          echo "$APP_STORE_CONNECT_API_KEY_CONTENT" | base64 -d > /Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8
           echo "=== Verifying API Key file ==="
-          head -1 ~/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8
-          tail -1 ~/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8
+          echo "File path: /Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8"
+          cat /Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8 | head -2
+          cat /Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8 | tail -1
+          echo "File size: $(wc -c < /Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8) bytes"
         env:
           APP_STORE_CONNECT_API_KEY_CONTENT: ${{ secrets.APP_STORE_CONNECT_API_KEY_CONTENT }}
           APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
@@ -67,7 +69,7 @@ jobs:
           MATCH_GIT_BASIC_AUTHORIZATION: ${{ secrets.MATCH_GIT_BASIC_AUTHORIZATION }}
           APP_STORE_CONNECT_API_KEY_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
           APP_STORE_CONNECT_API_KEY_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
-          APP_STORE_CONNECT_API_KEY_KEY: ~/private_keys/AuthKey_${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}.p8
+          APP_STORE_CONNECT_API_KEY_KEY: /Users/runner/private_keys/AuthKey_${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}.p8
           FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
 
       - name: Upload build artifacts
@@ -82,4 +84,4 @@ jobs:
 
       - name: Clean up API Key
         if: always()
-        run: rm -f ~/private_keys/AuthKey_*.p8
+        run: rm -f /Users/runner/private_keys/AuthKey_*.p8
