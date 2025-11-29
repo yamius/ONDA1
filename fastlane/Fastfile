@@ -40,8 +40,7 @@ platform :ios do
     # Sync Capacitor
     sh("cd .. && npx cap sync ios")
     
-    # Build with automatic signing during archive, manual profile at export
-    # This approach lets Xcode handle Pods signing automatically
+    # Build with team ID specified, apply provisioning profile at export
     gym(
       scheme: "App",
       workspace: "ios/App/App.xcworkspace",
@@ -49,6 +48,7 @@ platform :ios do
       output_directory: "./build",
       output_name: "ONDA.ipa",
       clean: true,
+      xcargs: "DEVELOPMENT_TEAM=#{ENV['FASTLANE_TEAM_ID']}",
       export_options: {
         signingStyle: "manual",
         provisioningProfiles: {
