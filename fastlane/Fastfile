@@ -34,9 +34,12 @@ platform :ios do
   desc "Build and upload to TestFlight"
   lane :beta do
     # Setup code signing with Match
+    # First run: readonly=false to create certificates
+    # After certificates exist: change to readonly=true for safety
     match(
       type: "appstore",
-      readonly: true
+      readonly: is_ci ? false : true,
+      force_for_new_devices: true
     )
     
     # Build the app
