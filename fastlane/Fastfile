@@ -47,7 +47,8 @@ platform :ios do
       export_method: "app-store",
       output_directory: "./build",
       output_name: "ONDA.ipa",
-      clean: true
+      clean: true,
+      xcargs: "DEVELOPMENT_TEAM='#{ENV['FASTLANE_TEAM_ID']}' CODE_SIGN_STYLE=Manual PROVISIONING_PROFILE_SPECIFIER='match AppStore com.onda-life.ios'"
     )
   end
 
