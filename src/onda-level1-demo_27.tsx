@@ -1950,27 +1950,27 @@ const OndaLevel1 = () => {
                 </div>
                 
                 {/* Row 2: Quality + Time - symmetric around divider */}
-                <div className="flex justify-center items-center gap-4 sm:gap-6 text-sm sm:text-base">
-                  <div className="flex items-center gap-2">
+                <div className="flex justify-center items-center text-sm sm:text-base">
+                  <div className="flex items-center justify-end gap-2 min-w-[120px]">
                     <span className="text-gray-300">{t('practices.quality')}</span>
                     <span className="font-bold text-lg sm:text-xl text-emerald-400">{safeToFixed(qualityScore, 0)}%</span>
                   </div>
-                  <div className="w-px h-6 bg-white/30" />
-                  <div className="flex items-center gap-2">
+                  <div className="w-px h-6 bg-white/30 mx-4" />
+                  <div className="flex items-center justify-start gap-2 min-w-[120px]">
                     <span className="font-bold text-lg sm:text-xl text-white">{formatTime(practiceTime)}</span>
                     <span className="text-gray-300">{t('practices.time')}</span>
                   </div>
                 </div>
                 
                 {/* Row 3: Stress + Energy - symmetric around divider */}
-                <div className="flex justify-center items-center gap-4 sm:gap-6 text-sm sm:text-base">
-                  <div className="flex items-center gap-2">
+                <div className="flex justify-center items-center text-sm sm:text-base">
+                  <div className="flex items-center justify-end gap-2 min-w-[120px]">
                     <Activity className="w-4 h-4 text-red-400" />
                     <span className="text-gray-300">{t('labels.stress')}</span>
                     <span className="font-bold text-red-400">{safeToFixed(vitalsData.stress, 0)}%</span>
                   </div>
-                  <div className="w-px h-6 bg-white/30" />
-                  <div className="flex items-center gap-2">
+                  <div className="w-px h-6 bg-white/30 mx-4" />
+                  <div className="flex items-center justify-start gap-2 min-w-[120px]">
                     <span className="font-bold text-blue-400">{safeToFixed(vitalsData.energy, 0)}%</span>
                     <span className="text-gray-300">{t('labels.energy')}</span>
                     <Zap className="w-4 h-4 text-blue-400" />
