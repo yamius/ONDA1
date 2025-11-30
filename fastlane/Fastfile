@@ -40,6 +40,12 @@ platform :ios do
     # Sync Capacitor
     sh("cd .. && npx cap sync ios")
     
+    # Auto-increment build number based on timestamp for unique builds
+    increment_build_number(
+      xcodeproj: "ios/App/App.xcodeproj",
+      build_number: Time.now.strftime("%Y%m%d%H%M")
+    )
+    
     # Configure code signing for App target only (not Pods)
     # This sets manual signing with the App Store profile for the main app
     update_code_signing_settings(
@@ -86,11 +92,15 @@ platform :ios do
     # Build the app
     build
     
+    # Fix for Xcode 16+ altool silent failures (2024)
+    ENV["DELIVER_ALTOOL_ADDITIONAL_UPLOAD_PARAMETERS"] = "--use-old-altool"
+    
     # Upload to TestFlight
     upload_to_testflight(
-      skip_waiting_for_build_processing: true,
+      skip_waiting_for_build_processing: false,
       skip_submission: true,
-      notify_external_testers: false
+      notify_external_testers: false,
+      changelog: "Build #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     )
     
     # Keep build artifacts for GitHub Actions upload
