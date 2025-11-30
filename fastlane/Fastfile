@@ -93,8 +93,8 @@ platform :ios do
       notify_external_testers: false
     )
     
-    # Clean up build artifacts
-    clean_build_artifacts
+    # Keep build artifacts for GitHub Actions upload
+    # (removed clean_build_artifacts)
   end
 
   desc "Release to App Store"
@@ -116,8 +116,8 @@ platform :ios do
       submit_for_review: false
     )
     
-    # Clean up
-    clean_build_artifacts
+    # Keep build artifacts for GitHub Actions upload
+    # (removed clean_build_artifacts)
   end
 
   desc "Setup Match for code signing"

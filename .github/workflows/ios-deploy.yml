@@ -100,9 +100,9 @@ jobs:
         with:
           name: ios-build
           path: |
-            fastlane/build/
-            fastlane/test_output/
+            build/
           retention-days: 30
+          if-no-files-found: warn
 
       - name: Clean up API Key
         if: always()
