@@ -40,8 +40,8 @@ platform :ios do
     # Sync Capacitor
     sh("cd .. && npx cap sync ios")
     
-    # Build with full manual signing configuration
-    # This tells Xcode exactly which certificate and profile to use
+    # Build with automatic signing during archive (lets Xcode handle Pods signing)
+    # Apply manual provisioning profile only during IPA export
     gym(
       scheme: "App",
       workspace: "ios/App/App.xcworkspace",
@@ -49,12 +49,7 @@ platform :ios do
       output_directory: "./build",
       output_name: "ONDA.ipa",
       clean: true,
-      xcargs: [
-        "DEVELOPMENT_TEAM=#{ENV['FASTLANE_TEAM_ID']}",
-        "CODE_SIGN_STYLE=Manual",
-        'CODE_SIGN_IDENTITY="Apple Distribution"',
-        'PROVISIONING_PROFILE_SPECIFIER="match AppStore com.onda-life.ios"'
-      ].join(" "),
+      xcargs: "DEVELOPMENT_TEAM=#{ENV['FASTLANE_TEAM_ID']}",
       export_options: {
         signingStyle: "manual",
         provisioningProfiles: {
