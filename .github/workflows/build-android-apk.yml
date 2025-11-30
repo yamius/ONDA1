@@ -1,19 +1,6 @@
 name: Build Android APK
 
 on:
-  push:
-    branches:
-      - main
-      - develop
-    paths:
-      - 'src/**'
-      - 'android-webview/**'
-      - 'public/**'
-      - 'package.json'
-      - '.github/workflows/build-android-apk.yml'
-  pull_request:
-    branches:
-      - main
   workflow_dispatch:
     inputs:
       build_type:
