@@ -1949,31 +1949,31 @@ const OndaLevel1 = () => {
                   +{Math.floor((activePractice.maxQnt * qualityScore) / 100)} OND
                 </div>
                 
-                {/* Row 2: Quality + Time */}
-                <div className="flex justify-center items-center gap-4 sm:gap-8 text-sm sm:text-base">
+                {/* Row 2: Quality + Time - symmetric around divider */}
+                <div className="flex justify-center items-center gap-4 sm:gap-6 text-sm sm:text-base">
                   <div className="flex items-center gap-2">
-                    <span className="text-gray-300">{t('practices.quality')}:</span>
+                    <span className="text-gray-300">{t('practices.quality')}</span>
                     <span className="font-bold text-lg sm:text-xl text-emerald-400">{safeToFixed(qualityScore, 0)}%</span>
                   </div>
-                  <div className="w-px self-stretch bg-white/30" />
+                  <div className="w-px h-6 bg-white/30" />
                   <div className="flex items-center gap-2">
-                    <span className="text-gray-300">{t('practices.time')}:</span>
                     <span className="font-bold text-lg sm:text-xl text-white">{formatTime(practiceTime)}</span>
+                    <span className="text-gray-300">{t('practices.time')}</span>
                   </div>
                 </div>
                 
-                {/* Row 3: Stress + Energy */}
-                <div className="flex justify-center items-center gap-4 sm:gap-8 text-sm sm:text-base">
+                {/* Row 3: Stress + Energy - symmetric around divider */}
+                <div className="flex justify-center items-center gap-4 sm:gap-6 text-sm sm:text-base">
                   <div className="flex items-center gap-2">
                     <Activity className="w-4 h-4 text-red-400" />
-                    <span className="text-gray-300">{t('labels.stress')}:</span>
+                    <span className="text-gray-300">{t('labels.stress')}</span>
                     <span className="font-bold text-red-400">{safeToFixed(vitalsData.stress, 0)}%</span>
                   </div>
-                  <div className="w-px self-stretch bg-white/30" />
+                  <div className="w-px h-6 bg-white/30" />
                   <div className="flex items-center gap-2">
-                    <Zap className="w-4 h-4 text-blue-400" />
-                    <span className="text-gray-300">{t('labels.energy')}:</span>
                     <span className="font-bold text-blue-400">{safeToFixed(vitalsData.energy, 0)}%</span>
+                    <span className="text-gray-300">{t('labels.energy')}</span>
+                    <Zap className="w-4 h-4 text-blue-400" />
                   </div>
                 </div>
                 
