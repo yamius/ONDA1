@@ -56,6 +56,29 @@
     /></noscript>
 
     <div id="root"></div>
+    <script>
+      // Early debug logging for iOS white screen debugging
+      console.log('[ONDA] HTML loaded, starting app...');
+      window.ondaBootLog = [];
+      window.ondaBootLog.push({ t: Date.now(), msg: 'HTML loaded' });
+      
+      window.onerror = function(msg, url, line, col, error) {
+        window.ondaBootLog.push({ t: Date.now(), msg: 'ERROR: ' + msg, url: url, line: line });
+        console.error('[ONDA BOOT ERROR]', msg, url, line, col, error);
+        
+        // Show error on white screen
+        var root = document.getElementById('root');
+        if (root && !root.innerHTML.trim()) {
+          root.innerHTML = '<div style="padding:20px;color:#fff;background:#111827;min-height:100vh;font-family:sans-serif;">' +
+            '<h1 style="color:#ef4444;">Boot Error</h1>' +
+            '<p style="color:#fbbf24;">' + msg + '</p>' +
+            '<p style="color:#9ca3af;font-size:12px;">at ' + url + ':' + line + '</p>' +
+            '<pre style="color:#9ca3af;font-size:10px;white-space:pre-wrap;">' + (error && error.stack ? error.stack : 'No stack') + '</pre>' +
+            '</div>';
+        }
+        return true;
+      };
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
