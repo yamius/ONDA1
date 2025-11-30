@@ -1952,13 +1952,13 @@ const OndaLevel1 = () => {
                 {/* Row 2: Quality + Time - symmetric: numbers in center */}
                 <div className="flex justify-center items-center text-sm sm:text-base">
                   <div className="flex items-center justify-end gap-2 w-[140px]">
-                    <span className="text-gray-300">{t('practices.quality')}</span>
                     <span className="font-bold text-lg sm:text-xl text-emerald-400">{safeToFixed(qualityScore, 0)}%</span>
+                    <span className="text-gray-300">{t('practices.quality')}</span>
                   </div>
                   <div className="w-px h-6 bg-white/30 mx-3" />
                   <div className="flex items-center justify-start gap-2 w-[140px]">
-                    <span className="font-bold text-lg sm:text-xl text-white">{formatTime(practiceTime)}</span>
                     <span className="text-gray-300">{t('practices.time')}</span>
+                    <span className="font-bold text-lg sm:text-xl text-white">{formatTime(practiceTime)}</span>
                   </div>
                 </div>
                 
@@ -1966,16 +1966,16 @@ const OndaLevel1 = () => {
                 <div className="flex justify-center items-start text-sm sm:text-base">
                   <div className="flex flex-col items-end w-[140px]">
                     <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className="text-gray-300">{t('labels.stress')}</span>
                       <span className="font-bold text-red-400">{safeToFixed(vitalsData.stress, 0)}%</span>
+                      <span className="text-gray-300">{t('labels.stress')}</span>
                     </div>
                     <Activity className="w-4 h-4 text-red-400 mt-1" />
                   </div>
                   <div className="w-px h-10 bg-white/30 mx-3" />
                   <div className="flex flex-col items-start w-[140px]">
                     <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className="font-bold text-blue-400">{safeToFixed(vitalsData.energy, 0)}%</span>
                       <span className="text-gray-300">{t('labels.energy')}</span>
+                      <span className="font-bold text-blue-400">{safeToFixed(vitalsData.energy, 0)}%</span>
                     </div>
                     <Zap className="w-4 h-4 text-blue-400 mt-1" />
                   </div>
