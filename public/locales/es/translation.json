@@ -302,7 +302,10 @@
     "rank": "Lugar",
     "player": "Jugador",
     "value": "Valor",
-    "total_time": "min"
+    "total_time": "min",
+    "practice_ratings": "Calificaciones de Prácticas",
+    "sessions": "sesiones",
+    "no_practice_ratings": "Aún no hay calificaciones. ¡Completa las prácticas y califícalas!"
   },
   "settings": {
     "title": "Configuración",

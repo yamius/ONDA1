@@ -302,7 +302,10 @@
     "rank": "排名",
     "player": "玩家",
     "value": "数值",
-    "total_time": "分钟"
+    "total_time": "分钟",
+    "practice_ratings": "练习评分",
+    "sessions": "次练习",
+    "no_practice_ratings": "暂无评分。完成练习并评价它们！"
   },
   "settings": {
     "title": "设置",

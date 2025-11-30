@@ -61,6 +61,13 @@ const OndaLevel1 = () => {
   const [rhythmProgress, setRhythmProgress] = useState(rhythmStore.progress());
   const [rhythmLog, setRhythmLog] = useState(rhythmStore.getLog());
   const [showRatingModal, setShowRatingModal] = useState(false);
+  const [practiceStats, setPracticeStats] = useState<Array<{
+    practice_id: string;
+    practice_name: string;
+    avg_duration: number;
+    avg_rating: number;
+    total_sessions: number;
+  }>>([]);
   const [isLightTheme, setIsLightTheme] = useState(false);
   const [user, setUser] = useState<any>(null);
   const [userProfile, setUserProfile] = useState<UserProfileType | null>(null);
@@ -227,6 +234,60 @@ const OndaLevel1 = () => {
       authListener.subscription.unsubscribe();
     };
   }, []);
+
+  // Load practice statistics for rating modal
+  useEffect(() => {
+    const loadPracticeStats = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('practice_ratings')
+          .select('practice_id, practice_name, rating, duration_seconds');
+        
+        if (error) throw error;
+        
+        if (data && data.length > 0) {
+          // Group by practice_id and calculate averages
+          const statsMap = new Map<string, { 
+            practice_name: string; 
+            ratings: number[]; 
+            durations: number[]; 
+          }>();
+          
+          data.forEach((row) => {
+            const existing = statsMap.get(row.practice_id);
+            if (existing) {
+              existing.ratings.push(row.rating);
+              existing.durations.push(row.duration_seconds);
+            } else {
+              statsMap.set(row.practice_id, {
+                practice_name: row.practice_name,
+                ratings: [row.rating],
+                durations: [row.duration_seconds]
+              });
+            }
+          });
+          
+          const stats = Array.from(statsMap.entries()).map(([practice_id, data]) => ({
+            practice_id,
+            practice_name: data.practice_name,
+            avg_duration: data.durations.reduce((a, b) => a + b, 0) / data.durations.length,
+            avg_rating: data.ratings.reduce((a, b) => a + b, 0) / data.ratings.length,
+            total_sessions: data.ratings.length
+          }));
+          
+          // Sort by average rating descending
+          stats.sort((a, b) => b.avg_rating - a.avg_rating);
+          setPracticeStats(stats);
+        }
+      } catch (error) {
+        console.error('Error loading practice stats:', error);
+      }
+    };
+    
+    if (showRatingModal) {
+      loadPracticeStats();
+    }
+  }, [showRatingModal]);
 
   useEffect(() => {
     if (user && showAuthModal) {
@@ -1063,12 +1124,31 @@ const OndaLevel1 = () => {
     }
   };
 
-  const exitPractice = () => {
+  const exitPractice = async () => {
     const practiceId = activePractice?.id;
+    const practiceName = circuits.flatMap(c => c.practices).find(p => p.id === activePractice?.id)?.name || '';
+    
+    // Save rating if user rated the practice
+    if (practiceRating > 0 && user && practiceTime > 0) {
+      try {
+        await supabase.from('practice_ratings').insert({
+          user_id: user.id,
+          practice_id: practiceId,
+          practice_name: practiceName,
+          rating: practiceRating,
+          duration_seconds: practiceTime
+        });
+        console.log('Practice rating saved:', { practiceId, rating: practiceRating, duration: practiceTime });
+      } catch (error) {
+        console.error('Error saving practice rating:', error);
+      }
+    }
+    
     setActivePractice(null);
     setPracticeState('intro');
     setPracticeTime(0);
     setQualityScore(0);
+    setPracticeRating(0);
     setIsPaused(false);
     setCurrentGuidingTextIndex(0);
     setIsTextTransitioning(false);
@@ -3512,6 +3592,48 @@ const OndaLevel1 = () => {
                       </div>
                     );
                   })}
+                </div>
+              </div>
+
+              {/* Рейтинг практик */}
+              <div>
+                <h3 className="text-base sm:text-xl font-bold mb-3 sm:mb-4">{t('leaderboard.practice_ratings')}</h3>
+                <div className="space-y-2">
+                  {practiceStats.length > 0 ? (
+                    practiceStats.map((practice, idx) => {
+                      const avgMinutes = Math.floor(practice.avg_duration / 60);
+                      const avgSeconds = Math.floor(practice.avg_duration % 60);
+                      return (
+                        <div
+                          key={practice.practice_id}
+                          className="flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all bg-black/30 border-gray-700/30 hover:border-gray-600/50"
+                        >
+                          <div className={`text-lg sm:text-2xl font-bold w-6 sm:w-8 ${idx === 0 ? 'text-yellow-400' : idx === 1 ? 'text-gray-300' : idx === 2 ? 'text-orange-400' : 'text-gray-500'}`}>
+                            {idx + 1}
+                          </div>
+                          <div className="flex-1">
+                            <div className="font-semibold text-sm sm:text-base">{practice.practice_name}</div>
+                            <div className="text-xs text-gray-400">
+                              {practice.total_sessions} {t('leaderboard.sessions')}
+                            </div>
+                          </div>
+                          <div className="text-right">
+                            <div className="flex items-center gap-1 text-yellow-400">
+                              <Star className="w-4 h-4 fill-yellow-400" />
+                              <span className="font-bold">{practice.avg_rating.toFixed(1)}</span>
+                            </div>
+                            <div className="text-xs text-gray-400">
+                              {avgMinutes}:{avgSeconds.toString().padStart(2, '0')}
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })
+                  ) : (
+                    <div className="text-center text-gray-400 py-4">
+                      {t('leaderboard.no_practice_ratings')}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

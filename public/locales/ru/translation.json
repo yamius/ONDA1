@@ -370,7 +370,10 @@
     "by_qnt": "💰 По количеству OND",
     "by_quality": "⭐ По качеству практик",
     "by_time": "⏱️ По времени в практиках",
-    "total_time": "мин"
+    "total_time": "мин",
+    "practice_ratings": "Рейтинг практик",
+    "sessions": "сессий",
+    "no_practice_ratings": "Ещё нет оценок практик. Завершите практики и оцените их!"
   },
   "emotional_states": {
     "calmness": "Спокойствие",

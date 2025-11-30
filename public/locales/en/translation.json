@@ -373,7 +373,10 @@
     "by_qnt": "💰 By OND Amount",
     "by_quality": "⭐ By Practice Quality",
     "by_time": "⏱️ By Time in Practices",
-    "total_time": "min"
+    "total_time": "min",
+    "practice_ratings": "Practice Ratings",
+    "sessions": "sessions",
+    "no_practice_ratings": "No practice ratings yet. Complete practices and rate them!"
   },
   "emotional_states": {
     "calmness": "Calmness",

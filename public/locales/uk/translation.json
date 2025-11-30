@@ -302,7 +302,10 @@
     "by_qnt": "💰 За Кількістю OND",
     "by_quality": "⭐ За Якістю Практик",
     "by_time": "⏱️ За Часом у Практиках",
-    "total_time": "хв"
+    "total_time": "хв",
+    "practice_ratings": "Рейтинг Практик",
+    "sessions": "сесій",
+    "no_practice_ratings": "Ще немає оцінок практик. Завершіть практики та оцініть їх!"
   },
   "emotional_states": {
     "calmness": "Спокій",
