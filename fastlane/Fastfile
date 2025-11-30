@@ -31,26 +31,14 @@ platform :ios do
 
   desc "Build iOS app"
   lane :build do
-    # Install dependencies
-    sh("cd .. && npm install")
+    # NOTE: npm install, npm run build, and npx cap sync ios are already done
+    # in GitHub Actions workflow with proper environment variables.
+    # Do NOT run them here again or Supabase env vars will be missing!
     
-    # Build React app
-    sh("cd .. && npm run build")
-    
-    # Sync Capacitor
-    sh("cd .. && npx cap sync ios")
-    
-    # Auto-increment build number: get latest from TestFlight + 1
-    latest_build = latest_testflight_build_number(
-      app_identifier: "com.onda-life.ios",
-      initial_build_number: 0
-    )
-    new_build = latest_build + 1
-    puts "Latest build: #{latest_build}, New build: #{new_build}"
-    
+    # Auto-increment build number based on timestamp for unique builds
     increment_build_number(
       xcodeproj: "ios/App/App.xcodeproj",
-      build_number: new_build
+      build_number: Time.now.strftime("%Y%m%d%H%M")
     )
     
     # Configure code signing for App target only (not Pods)
