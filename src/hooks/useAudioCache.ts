@@ -174,12 +174,12 @@ export function useAudioCache(audioPath: string | null): AudioCacheStatus {
       // Step 3: Download from Supabase Storage
       console.log('[AudioCache] Downloading from Supabase:', path);
       
-      const { data, error: urlError } = supabase.storage
+      const { data } = supabase.storage
         .from(BUCKET_NAME)
         .getPublicUrl(path);
 
-      if (urlError || !data) {
-        throw new Error(urlError?.message || 'Failed to get public URL');
+      if (!data || !data.publicUrl) {
+        throw new Error('Failed to get public URL');
       }
 
       console.log('[AudioCache] Public URL generated:', data.publicUrl);
@@ -319,7 +319,7 @@ export function useAudioPreloader() {
     setQueue(prev => [...prev, ...paths]);
   }, []);
 
-  const { url, loading } = useAudioCache(current);
+  const { loading } = useAudioCache(current);
 
   useEffect(() => {
     if (!loading && queue.length > 0) {
