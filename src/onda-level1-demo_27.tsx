@@ -1964,16 +1964,16 @@ const OndaLevel1 = () => {
                 
                 {/* Row 3: Stress + Energy - symmetric around divider */}
                 <div className="flex justify-center items-start text-sm sm:text-base">
-                  <div className="flex flex-col items-center w-[100px]">
-                    <div className="flex items-center gap-1">
+                  <div className="flex flex-col items-center">
+                    <div className="flex items-center gap-1 whitespace-nowrap">
                       <span className="text-gray-300">{t('labels.stress')}</span>
                       <span className="font-bold text-red-400">{safeToFixed(vitalsData.stress, 0)}%</span>
                     </div>
                     <Activity className="w-4 h-4 text-red-400 mt-1" />
                   </div>
-                  <div className="w-px h-10 bg-white/30 mx-3" />
-                  <div className="flex flex-col items-center w-[100px]">
-                    <div className="flex items-center gap-1">
+                  <div className="w-px h-10 bg-white/30 mx-4" />
+                  <div className="flex flex-col items-center">
+                    <div className="flex items-center gap-1 whitespace-nowrap">
                       <span className="font-bold text-blue-400">{safeToFixed(vitalsData.energy, 0)}%</span>
                       <span className="text-gray-300">{t('labels.energy')}</span>
                     </div>
