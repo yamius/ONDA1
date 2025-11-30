@@ -1955,7 +1955,7 @@ const OndaLevel1 = () => {
                     <span className="text-gray-300">{t('practices.quality')}:</span>
                     <span className="font-bold text-lg sm:text-xl text-emerald-400">{safeToFixed(qualityScore, 0)}%</span>
                   </div>
-                  <div className="w-px h-5 bg-white/30" />
+                  <div className="w-px self-stretch bg-white/30" />
                   <div className="flex items-center gap-2">
                     <span className="text-gray-300">{t('practices.time')}:</span>
                     <span className="font-bold text-lg sm:text-xl text-white">{formatTime(practiceTime)}</span>
@@ -1969,7 +1969,7 @@ const OndaLevel1 = () => {
                     <span className="text-gray-300">{t('labels.stress')}:</span>
                     <span className="font-bold text-red-400">{safeToFixed(vitalsData.stress, 0)}%</span>
                   </div>
-                  <div className="w-px h-5 bg-white/30" />
+                  <div className="w-px self-stretch bg-white/30" />
                   <div className="flex items-center gap-2">
                     <Zap className="w-4 h-4 text-blue-400" />
                     <span className="text-gray-300">{t('labels.energy')}:</span>
