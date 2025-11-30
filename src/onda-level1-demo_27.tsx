@@ -39,6 +39,7 @@ const OndaLevel1 = () => {
   const [practiceTime, setPracticeTime] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [qualityScore, setQualityScore] = useState(0);
+  const [practiceRating, setPracticeRating] = useState(0);
   const [showJournal, setShowJournal] = useState(false);
   const [showStats, setShowStats] = useState(false);
   const [showJournalModal, setShowJournalModal] = useState(false);
@@ -1942,18 +1943,63 @@ const OndaLevel1 = () => {
                 </div>
               )}
 
-              <div className="bg-black/40 backdrop-blur-md rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 sm:space-y-6 border border-white/20 shadow-2xl">
+              <div className="bg-black/40 backdrop-blur-md rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border border-white/20 shadow-2xl">
+                {/* Row 1: OND Amount */}
                 <div className="text-4xl sm:text-5xl md:text-7xl font-mono text-yellow-400 drop-shadow-2xl animate-pulse">
                   +{Math.floor((activePractice.maxQnt * qualityScore) / 100)} OND
                 </div>
-                <div className="text-lg sm:text-xl md:text-2xl">
-                  {t('practices.quality')}: <span className="font-bold text-xl sm:text-2xl md:text-3xl text-emerald-400">{safeToFixed(qualityScore, 0)}%</span>
+                
+                {/* Row 2: Quality + Time */}
+                <div className="flex justify-center items-center gap-4 sm:gap-8 text-sm sm:text-base">
+                  <div className="flex items-center gap-2">
+                    <span className="text-gray-300">{t('practices.quality')}:</span>
+                    <span className="font-bold text-lg sm:text-xl text-emerald-400">{safeToFixed(qualityScore, 0)}%</span>
+                  </div>
+                  <div className="w-px h-5 bg-white/30" />
+                  <div className="flex items-center gap-2">
+                    <span className="text-gray-300">{t('practices.time')}:</span>
+                    <span className="font-bold text-lg sm:text-xl text-white">{formatTime(practiceTime)}</span>
+                  </div>
                 </div>
-                <div className="text-sm sm:text-base text-gray-300 space-y-2">
-                  <p>{t('practices.time')}: {formatTime(practiceTime)}</p>
-                  <p>{t('labels.stress')}: {safeToFixed(vitalsData.stress, 0)}%</p>
-                  <p>{t('labels.energy')}: {safeToFixed(vitalsData.energy, 0)}%</p>
+                
+                {/* Row 3: Stress + Energy */}
+                <div className="flex justify-center items-center gap-4 sm:gap-8 text-sm sm:text-base">
+                  <div className="flex items-center gap-2">
+                    <Activity className="w-4 h-4 text-red-400" />
+                    <span className="text-gray-300">{t('labels.stress')}:</span>
+                    <span className="font-bold text-red-400">{safeToFixed(vitalsData.stress, 0)}%</span>
+                  </div>
+                  <div className="w-px h-5 bg-white/30" />
+                  <div className="flex items-center gap-2">
+                    <Zap className="w-4 h-4 text-blue-400" />
+                    <span className="text-gray-300">{t('labels.energy')}:</span>
+                    <span className="font-bold text-blue-400">{safeToFixed(vitalsData.energy, 0)}%</span>
+                  </div>
                 </div>
+                
+                {/* Row 4: Star Rating */}
+                <div className="pt-2">
+                  <p className="text-sm text-gray-400 mb-2">{t('practices.rate_practice') || 'Rate this practice'}</p>
+                  <div className="flex justify-center gap-2">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <button
+                        key={star}
+                        onClick={() => setPracticeRating(star)}
+                        className="transition-all hover:scale-110"
+                        data-testid={`button-star-${star}`}
+                      >
+                        <Star 
+                          className={`w-8 h-8 sm:w-10 sm:h-10 ${
+                            star <= practiceRating 
+                              ? 'text-yellow-400 fill-yellow-400' 
+                              : 'text-gray-500'
+                          }`} 
+                        />
+                      </button>
+                    ))}
+                  </div>
+                </div>
+                
                 {completedPractices[activePractice.id] && completedPractices[activePractice.id].quality < qualityScore && (
                   <div className="bg-emerald-500/20 border border-emerald-400/50 rounded-lg p-3 sm:p-4 text-sm sm:text-base text-emerald-200">
                     {t('practices.new_record')}: {safeToFixed(completedPractices[activePractice.id]?.quality, 0)}%
@@ -1966,6 +2012,7 @@ const OndaLevel1 = () => {
                     setPracticeState('intro');
                     setPracticeTime(0);
                     setQualityScore(0);
+                    setPracticeRating(0);
                     setIsPaused(false);
                     setAudioResetKey(prev => prev + 1);
                   }}
