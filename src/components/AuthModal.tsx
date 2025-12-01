@@ -126,9 +126,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       
       console.log('[Auth] Full OAuth URL:', oauthUrl);
       
-      // Покажем URL пользователю для отладки
-      alert(`OAuth URL: ${oauthUrl.substring(0, 100)}...`);
-      
       // Открываем OAuth в зависимости от платформы
       if (platform === 'ios') {
         console.log('[Auth] Opening OAuth in Safari (iOS)');
