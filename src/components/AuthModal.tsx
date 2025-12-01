@@ -152,9 +152,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
         console.log('[Auth] Opening OAuth in same window (browser)');
         window.location.href = oauthUrl;
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error('[Auth] Error signing in with Apple:', error);
-      setError(t('auth.error_apple'));
+      // Показываем детальную ошибку для отладки
+      const errorDetails = error?.message || error?.code || JSON.stringify(error);
+      setError(`Apple error: ${errorDetails}`);
     }
   };
   
