@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { X, Mail, Lock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
 import { Capacitor } from '@capacitor/core';
 import { Browser } from '@capacitor/browser';
+import { SignInWithApple, SignInWithAppleOptions, SignInWithAppleResponse } from '@capacitor-community/apple-sign-in';
 
 interface AuthModalProps {
   onClose: () => void;
@@ -103,20 +104,26 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
 
   const handleAppleSignIn = async () => {
     try {
-      console.log('[Auth] Starting Apple OAuth...');
+      console.log('[Auth] Starting Apple Sign-In...');
       
       const platform = Capacitor.getPlatform();
       const isNative = Capacitor.isNativePlatform();
       console.log('[Auth] Platform:', platform, 'isNative:', isNative);
       
-      // Для native iOS/Android используем capacitor://localhost
+      // На iOS используем native Apple Sign-In
+      if (platform === 'ios') {
+        console.log('[Auth] Using native Apple Sign-In on iOS');
+        await handleNativeAppleSignIn();
+        return;
+      }
+      
+      // Для web и Android используем OAuth flow
       const redirectUrl = isNative 
         ? 'capacitor://localhost'
         : window.location.origin;
       
-      console.log('[Auth] Redirect URL:', redirectUrl);
+      console.log('[Auth] Using OAuth flow, redirect URL:', redirectUrl);
       
-      // Получаем OAuth URL от Supabase
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'apple',
         options: {
@@ -138,18 +145,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       
       console.log('[Auth] Full OAuth URL:', oauthUrl);
       
-      // Открываем OAuth в зависимости от платформы
-      if (platform === 'ios') {
-        console.log('[Auth] Opening OAuth in Safari (iOS) with popover');
-        await Browser.open({ 
-          url: oauthUrl,
-          presentationStyle: 'popover',
-        });
-      } else if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
+      if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
         console.log('[Auth] Opening OAuth in external browser (Android)');
         window.Android.openExternalBrowser(oauthUrl);
       } else {
-        // Fallback для браузера
         console.log('[Auth] Opening OAuth in same window (browser)');
         window.location.href = oauthUrl;
       }
@@ -157,6 +156,69 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       console.error('[Auth] Error signing in with Apple:', error);
       setError(t('auth.error_apple'));
     }
+  };
+  
+  const handleNativeAppleSignIn = async () => {
+    try {
+      // Генерируем nonce для безопасности
+      const rawNonce = crypto.randomUUID();
+      const hashedNonce = await sha256(rawNonce);
+      
+      console.log('[Auth] Native Apple Sign-In with nonce');
+      
+      const options: SignInWithAppleOptions = {
+        clientId: 'com.onda-life.ios',
+        redirectURI: 'https://qwtdppugdcguyeaumymc.supabase.co/auth/v1/callback',
+        scopes: 'email name',
+        state: crypto.randomUUID(),
+        nonce: hashedNonce,
+      };
+      
+      const result: SignInWithAppleResponse = await SignInWithApple.authorize(options);
+      console.log('[Auth] Apple authorization result:', result);
+      
+      const identityToken = result.response.identityToken;
+      
+      if (!identityToken) {
+        throw new Error('No identity token received from Apple');
+      }
+      
+      console.log('[Auth] Signing in to Supabase with Apple ID token...');
+      
+      // Авторизуемся в Supabase с токеном Apple
+      const { data, error } = await supabase.auth.signInWithIdToken({
+        provider: 'apple',
+        token: identityToken,
+        nonce: rawNonce, // Используем НЕхешированный nonce для Supabase
+      });
+      
+      if (error) {
+        console.error('[Auth] Supabase signInWithIdToken error:', error);
+        throw error;
+      }
+      
+      console.log('[Auth] Successfully signed in with Apple:', data.user?.email);
+      window.dispatchEvent(new CustomEvent('oauth-success'));
+      onClose();
+    } catch (error: any) {
+      console.error('[Auth] Native Apple Sign-In error:', error);
+      // Проверяем отмену пользователем
+      if (error.message?.includes('cancelled') || error.code === 1001) {
+        console.log('[Auth] User cancelled Apple Sign-In');
+        return;
+      }
+      throw error;
+    }
+  };
+  
+  // Функция для хеширования SHA-256
+  const sha256 = async (value: string): Promise<string> => {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(value);
+    const hash = await crypto.subtle.digest('SHA-256', data);
+    return Array.from(new Uint8Array(hash))
+      .map(b => b.toString(16).padStart(2, '0'))
+      .join('');
   };
 
   return (

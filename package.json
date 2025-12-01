@@ -19,6 +19,7 @@
     "prepare:android": "bash scripts/prepare-android.sh"
   },
   "dependencies": {
+    "@capacitor-community/apple-sign-in": "^7.1.0",
     "@capacitor/app": "^7.1.0",
     "@capacitor/browser": "^7.0.2",
     "@capacitor/cli": "^7.4.4",
