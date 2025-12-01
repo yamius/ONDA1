@@ -97,23 +97,37 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       const platform = Capacitor.getPlatform();
       console.log('[Auth] Platform:', platform);
       
+      // Для iOS используем deep link, для web - обычный redirect
+      const redirectUrl = platform === 'ios' || platform === 'android'
+        ? 'com.onda.app://callback'
+        : window.location.origin;
+      
+      console.log('[Auth] Redirect URL:', redirectUrl);
+      
       // Получаем OAuth URL от Supabase
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'apple',
         options: {
-          redirectTo: 'com.onda.app://callback', // Deep link для возврата в приложение
-          skipBrowserRedirect: true, // Получаем URL вместо автоматического редиректа
+          redirectTo: redirectUrl,
+          skipBrowserRedirect: true,
+          scopes: 'email name', // Запрашиваем email и имя
         },
       });
       
-      if (error) throw error;
+      if (error) {
+        console.error('[Auth] Supabase OAuth error:', error);
+        throw error;
+      }
       
       const oauthUrl = data?.url;
       if (!oauthUrl) {
         throw new Error('No OAuth URL returned from Supabase');
       }
       
-      console.log('[Auth] OAuth URL:', oauthUrl);
+      console.log('[Auth] Full OAuth URL:', oauthUrl);
+      
+      // Покажем URL пользователю для отладки
+      alert(`OAuth URL: ${oauthUrl.substring(0, 100)}...`);
       
       // Открываем OAuth в зависимости от платформы
       if (platform === 'ios') {
@@ -128,7 +142,9 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
         window.location.href = oauthUrl;
       }
     } catch (error) {
-      console.error('Error signing in with Apple:', error);
+      console.error('[Auth] Error signing in with Apple:', error);
+      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+      alert(`Apple Sign-In Error: ${errorMessage}`);
       setError(t('auth.error_apple'));
     }
   };
