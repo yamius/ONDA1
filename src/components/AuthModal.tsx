@@ -52,14 +52,22 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       console.log('[Auth] Starting Google OAuth...');
       
       const platform = Capacitor.getPlatform();
-      console.log('[Auth] Platform:', platform);
+      const isNative = Capacitor.isNativePlatform();
+      console.log('[Auth] Platform:', platform, 'isNative:', isNative);
+      
+      // Для native iOS/Android используем capacitor://localhost
+      const redirectUrl = isNative 
+        ? 'capacitor://localhost'
+        : window.location.origin;
+      
+      console.log('[Auth] Redirect URL:', redirectUrl);
       
       // Получаем OAuth URL от Supabase
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: 'com.onda.app://callback', // Deep link для возврата в приложение
-          skipBrowserRedirect: true, // Получаем URL вместо автоматического редиректа
+          redirectTo: redirectUrl,
+          skipBrowserRedirect: true,
         },
       });
       
@@ -74,8 +82,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       
       // Открываем OAuth в зависимости от платформы
       if (platform === 'ios') {
-        console.log('[Auth] Opening OAuth in Safari (iOS)');
-        await Browser.open({ url: oauthUrl });
+        console.log('[Auth] Opening OAuth in Safari (iOS) with popover');
+        await Browser.open({ 
+          url: oauthUrl,
+          presentationStyle: 'popover',
+        });
       } else if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
         console.log('[Auth] Opening OAuth in external browser (Android)');
         window.Android.openExternalBrowser(oauthUrl);
@@ -95,11 +106,12 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       console.log('[Auth] Starting Apple OAuth...');
       
       const platform = Capacitor.getPlatform();
-      console.log('[Auth] Platform:', platform);
+      const isNative = Capacitor.isNativePlatform();
+      console.log('[Auth] Platform:', platform, 'isNative:', isNative);
       
-      // Для iOS используем deep link, для web - обычный redirect
-      const redirectUrl = platform === 'ios' || platform === 'android'
-        ? 'com.onda.app://callback'
+      // Для native iOS/Android используем capacitor://localhost
+      const redirectUrl = isNative 
+        ? 'capacitor://localhost'
         : window.location.origin;
       
       console.log('[Auth] Redirect URL:', redirectUrl);
@@ -110,7 +122,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
         options: {
           redirectTo: redirectUrl,
           skipBrowserRedirect: true,
-          scopes: 'email name', // Запрашиваем email и имя
+          scopes: 'email name',
         },
       });
       
@@ -128,8 +140,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       
       // Открываем OAuth в зависимости от платформы
       if (platform === 'ios') {
-        console.log('[Auth] Opening OAuth in Safari (iOS)');
-        await Browser.open({ url: oauthUrl });
+        console.log('[Auth] Opening OAuth in Safari (iOS) with popover');
+        await Browser.open({ 
+          url: oauthUrl,
+          presentationStyle: 'popover',
+        });
       } else if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
         console.log('[Auth] Opening OAuth in external browser (Android)');
         window.Android.openExternalBrowser(oauthUrl);
@@ -140,8 +155,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       }
     } catch (error) {
       console.error('[Auth] Error signing in with Apple:', error);
-      const errorMessage = error instanceof Error ? error.message : 'Unknown error';
-      alert(`Apple Sign-In Error: ${errorMessage}`);
       setError(t('auth.error_apple'));
     }
   };
