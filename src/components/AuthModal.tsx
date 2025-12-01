@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { X, Mail, Lock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
+import { Capacitor } from '@capacitor/core';
+import { Browser } from '@capacitor/browser';
 
 interface AuthModalProps {
   onClose: () => void;
@@ -49,6 +51,9 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
     try {
       console.log('[Auth] Starting Google OAuth...');
       
+      const platform = Capacitor.getPlatform();
+      console.log('[Auth] Platform:', platform);
+      
       // Получаем OAuth URL от Supabase
       const { data, error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
@@ -67,8 +72,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       
       console.log('[Auth] OAuth URL:', oauthUrl);
       
-      // Проверяем, запущено ли приложение в Android WebView
-      if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
+      // Открываем OAuth в зависимости от платформы
+      if (platform === 'ios') {
+        console.log('[Auth] Opening OAuth in Safari (iOS)');
+        await Browser.open({ url: oauthUrl });
+      } else if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
         console.log('[Auth] Opening OAuth in external browser (Android)');
         window.Android.openExternalBrowser(oauthUrl);
       } else {
@@ -85,6 +93,9 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
   const handleAppleSignIn = async () => {
     try {
       console.log('[Auth] Starting Apple OAuth...');
+      
+      const platform = Capacitor.getPlatform();
+      console.log('[Auth] Platform:', platform);
       
       // Получаем OAuth URL от Supabase
       const { data, error } = await supabase.auth.signInWithOAuth({
@@ -104,8 +115,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       
       console.log('[Auth] OAuth URL:', oauthUrl);
       
-      // Проверяем, запущено ли приложение в Android WebView
-      if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
+      // Открываем OAuth в зависимости от платформы
+      if (platform === 'ios') {
+        console.log('[Auth] Opening OAuth in Safari (iOS)');
+        await Browser.open({ url: oauthUrl });
+      } else if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
         console.log('[Auth] Opening OAuth in external browser (Android)');
         window.Android.openExternalBrowser(oauthUrl);
       } else {
