@@ -1,13 +1,19 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import OndaLevel1 from './onda-level1-demo_27';
 import AudioTest from './pages/AudioTest';
 // Регистрируем Android bridge для OAuth callback
 import './lib/android-bridge';
+// Инициализируем iOS auth handler
+import { initIOSAuthHandler } from './lib/ios-auth-handler';
 
 function App() {
   const [showTest, setShowTest] = useState(
     window.location.pathname === '/audio-test' || window.location.search.includes('test=audio')
   );
+
+  useEffect(() => {
+    initIOSAuthHandler();
+  }, []);
 
   if (showTest) {
     return (
