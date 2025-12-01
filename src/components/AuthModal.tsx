@@ -160,30 +160,52 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
   
   const handleNativeAppleSignIn = async () => {
     try {
+      console.log('[Auth] Starting Native Apple Sign-In...');
+      
       // Генерируем nonce для безопасности
       const rawNonce = crypto.randomUUID();
-      const hashedNonce = await sha256(rawNonce);
+      console.log('[Auth] Generated raw nonce');
       
-      console.log('[Auth] Native Apple Sign-In with nonce');
+      const hashedNonce = await sha256(rawNonce);
+      console.log('[Auth] Hashed nonce for Apple');
       
       const options: SignInWithAppleOptions = {
         clientId: 'com.onda-life.ios',
         redirectURI: 'https://qwtdppugdcguyeaumymc.supabase.co/auth/v1/callback',
         scopes: 'email name',
-        state: crypto.randomUUID(),
+        state: 'onda_state',
         nonce: hashedNonce,
       };
       
-      const result: SignInWithAppleResponse = await SignInWithApple.authorize(options);
-      console.log('[Auth] Apple authorization result:', result);
+      console.log('[Auth] Calling SignInWithApple.authorize with options:', JSON.stringify(options));
       
-      const identityToken = result.response.identityToken;
+      let result: SignInWithAppleResponse;
+      try {
+        result = await SignInWithApple.authorize(options);
+      } catch (appleError: any) {
+        console.error('[Auth] SignInWithApple.authorize failed:', appleError);
+        console.error('[Auth] Apple error details:', JSON.stringify(appleError, null, 2));
+        
+        // Check if user cancelled
+        if (appleError?.message?.includes('cancel') || 
+            appleError?.code === 1001 ||
+            appleError?.code === 'ERR_CANCELED') {
+          console.log('[Auth] User cancelled Apple Sign-In');
+          return;
+        }
+        throw appleError;
+      }
+      
+      console.log('[Auth] Apple authorization result:', JSON.stringify(result));
+      
+      const identityToken = result.response?.identityToken;
       
       if (!identityToken) {
+        console.error('[Auth] No identity token in response:', result);
         throw new Error('No identity token received from Apple');
       }
       
-      console.log('[Auth] Signing in to Supabase with Apple ID token...');
+      console.log('[Auth] Got identity token, signing in to Supabase...');
       
       // Авторизуемся в Supabase с токеном Apple
       const { data, error } = await supabase.auth.signInWithIdToken({
@@ -202,11 +224,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       onClose();
     } catch (error: any) {
       console.error('[Auth] Native Apple Sign-In error:', error);
-      // Проверяем отмену пользователем
-      if (error.message?.includes('cancelled') || error.code === 1001) {
-        console.log('[Auth] User cancelled Apple Sign-In');
-        return;
-      }
+      console.error('[Auth] Error type:', typeof error);
+      console.error('[Auth] Error message:', error?.message);
+      console.error('[Auth] Error code:', error?.code);
+      console.error('[Auth] Full error:', JSON.stringify(error, Object.getOwnPropertyNames(error)));
       throw error;
     }
   };
