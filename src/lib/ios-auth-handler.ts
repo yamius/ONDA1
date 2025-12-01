@@ -19,6 +19,8 @@ export async function initIOSAuthHandler(): Promise<void> {
   // Слушаем закрытие браузера (OAuth flow завершён)
   Browser.addListener('browserFinished', async () => {
     console.log('[iOS Auth] Browser finished, checking session...');
+    // Небольшая задержка чтобы Supabase успел обработать callback
+    await new Promise(resolve => setTimeout(resolve, 500));
     await checkAndRefreshSession();
   });
 
@@ -88,18 +90,38 @@ async function handleOAuthCallback(urlString: string): Promise<void> {
 
 async function checkAndRefreshSession(): Promise<void> {
   try {
-    const { data: { session }, error } = await supabase.auth.getSession();
+    // Сначала пробуем получить текущую сессию
+    let { data: { session }, error } = await supabase.auth.getSession();
     
     if (error) {
       console.error('[iOS Auth] Error getting session:', error);
-      return;
+    }
+    
+    // Если сессия есть, но возможно устарела - пробуем обновить
+    if (session) {
+      console.log('[iOS Auth] Session found, refreshing...');
+      const { data: refreshData, error: refreshError } = await supabase.auth.refreshSession();
+      
+      if (refreshError) {
+        console.error('[iOS Auth] Error refreshing session:', refreshError);
+      } else if (refreshData.session) {
+        session = refreshData.session;
+      }
     }
     
     if (session) {
-      console.log('[iOS Auth] Valid session found:', session.user.email);
+      console.log('[iOS Auth] Valid session:', session.user.email);
       window.dispatchEvent(new CustomEvent('oauth-success'));
     } else {
-      console.log('[iOS Auth] No session found');
+      console.log('[iOS Auth] No session found, trying to get user...');
+      // Последняя попытка - проверить пользователя напрямую
+      const { data: { user } } = await supabase.auth.getUser();
+      if (user) {
+        console.log('[iOS Auth] User found:', user.email);
+        window.dispatchEvent(new CustomEvent('oauth-success'));
+      } else {
+        console.log('[iOS Auth] No user found');
+      }
     }
   } catch (error) {
     console.error('[iOS Auth] Error checking session:', error);
