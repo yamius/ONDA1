@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { X, Infinity, Headphones, Sparkles, Heart } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Capacitor } from '@capacitor/core';
 
 interface SubscriptionModalProps {
   isOpen: boolean;
@@ -11,6 +12,8 @@ interface SubscriptionModalProps {
 export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: SubscriptionModalProps) {
   const { t } = useTranslation();
   const [selectedPlan, setSelectedPlan] = useState<'yearly' | 'monthly'>('yearly');
+  
+  const isIOS = useMemo(() => Capacitor.getPlatform() === 'ios', []);
 
   if (!isOpen) return null;
 
@@ -30,10 +33,12 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
       >
         <button
           onClick={onClose}
-          className="absolute top-6 left-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+          className={`absolute left-4 z-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors ${
+            isIOS ? 'top-14 w-10 h-10' : 'top-6 w-8 h-8'
+          }`}
           data-testid="button-close-subscription"
         >
-          <X className="w-4 h-4 text-white/80" />
+          <X className={isIOS ? 'w-5 h-5 text-white/80' : 'w-4 h-4 text-white/80'} />
         </button>
 
         <div 
