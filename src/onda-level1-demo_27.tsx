@@ -3844,7 +3844,11 @@ const OndaLevel1 = () => {
             {/* Настройки */}
             <button
               onClick={() => {
-                setShowSettingsModal(true);
+                if (user) {
+                  setShowSettingsModal(true);
+                } else {
+                  setShowAuthModal(true);
+                }
                 setShowMenu(false);
               }}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
