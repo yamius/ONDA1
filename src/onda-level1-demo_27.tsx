@@ -3490,7 +3490,7 @@ const OndaLevel1 = () => {
 
       {/* Модальное окно рейтинга */}
       {showRatingModal && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
           <div className="bg-gradient-to-br from-gray-900 to-black max-w-6xl w-full max-h-[90vh] overflow-y-auto no-scrollbar rounded-2xl border border-cyan-500/30 shadow-2xl my-4">
             <div className="sticky top-0 bg-gray-900/95 backdrop-blur-sm border-b border-cyan-500/30 p-4 sm:p-6 flex items-center justify-between">
               <h2 className="text-lg sm:text-2xl font-bold">{t('leaderboard.title')}</h2>
