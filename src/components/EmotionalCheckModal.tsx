@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { X, Mic, Square, Play, Pause, Volume2, RefreshCw, MessageCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
+import { LizaChatModal } from './LizaChatModal';
 
 interface EmotionalCheckModalProps {
   isOpen: boolean;
@@ -29,6 +30,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   const [audioURL, setAudioURL] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [emotionalResult, setEmotionalResult] = useState<EmotionalResult | null>(null);
+  const [isLizaChatOpen, setIsLizaChatOpen] = useState(false);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
@@ -413,11 +415,9 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
               <div className="pt-1 sm:pt-2"></div>
 
               <button
-                onClick={() => {
-                  // TODO: Implement Terra dialog functionality
-                  console.log('Start dialog with Terra');
-                }}
+                onClick={() => setIsLizaChatOpen(true)}
                 className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-semibold py-2.5 sm:py-3 px-4 sm:px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-xs sm:text-sm"
+                data-testid="button-start-liza-chat"
               >
                 <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5" />
                 {t('emotional_check.start_dialog_terra')}
@@ -441,6 +441,12 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       onClose={() => setSelectedPractice(null)}
       practiceId={selectedPractice || ''}
       onOndEarned={onOndEarned}
+    />
+
+    <LizaChatModal
+      isOpen={isLizaChatOpen}
+      onClose={() => setIsLizaChatOpen(false)}
+      initialEmotion={emotionalResult?.primaryEmotion}
     />
     </>
   );
