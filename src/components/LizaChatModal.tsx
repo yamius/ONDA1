@@ -110,6 +110,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
       stateRef.current = newState;
       pushMessage({ from: 'bot', text: bot.text, ui: bot });
       setIsTyping(false);
+      setTimeout(() => inputRef.current?.focus(), 50);
     }, 2500 + Math.random() * 1500);
   }
 
@@ -136,6 +137,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
         pushMessage({ from: 'bot', text: bot.text, ui: bot });
       }
       setIsTyping(false);
+      setTimeout(() => inputRef.current?.focus(), 50);
     }, 2000 + Math.random() * 1000);
   }
 
