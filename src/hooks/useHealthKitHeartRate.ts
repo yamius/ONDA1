@@ -186,8 +186,8 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
         await startRealtimeMonitoring();
         // ALSO poll frequently because Apple Watch only writes to HealthKit every 5-10 min in background
         // Polling ensures we always show the latest available data
-        intervalRef.current = setInterval(queryHeartRateData, 2000);
-        console.log('[HealthKit] Started realtime mode (observer + polling every 2s)');
+        intervalRef.current = setInterval(queryHeartRateData, 500);
+        console.log('[HealthKit] Started realtime mode (observer + polling every 500ms)');
       } else {
         // Use polling for direct/workout modes
         const interval = monitoringMode === 'direct' ? pollingInterval : 5000;
