@@ -54,7 +54,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
   useEffect(() => {
     if (isOpen && messages.length === 0) {
       const greeting = t('liza.greeting');
-      const emotionPrompt = initialEmotion ? t('liza.emotion_prompt', { emotion: t(`emotional_check.emotions.${initialEmotion}`) }) : '';
+      const emotionPrompt = initialEmotion ? t('liza.emotion_prompt', { emotion: t(initialEmotion) }) : '';
       const fullText = greeting + (emotionPrompt ? '\n\n' + emotionPrompt : '') + '\n\n' + t('liza.choose_exercise');
       
       setTimeout(() => {
