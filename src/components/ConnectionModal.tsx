@@ -37,12 +37,14 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
   const { t } = useTranslation();
   const { 
     connected, connect, disconnect, hr, hrSource, br, stress, energy,
-    isScanning, availableDevices, connectToDevice, stopScan, platform
+    isScanning, availableDevices, connectToDevice, stopScan, platform: vitalsPlat
   } = vitalsData;
   const { connected: hcConnected, connect: hcConnect, disconnect: hcDisconnect } = healthConnectData;
   
-  const isIOS = Capacitor.getPlatform() === 'ios' && Capacitor.isNativePlatform();
-  const isAndroid = Capacitor.getPlatform() === 'android';
+  const capacitorPlatform = Capacitor.getPlatform();
+  const isIOS = capacitorPlatform === 'ios';
+  const isAndroid = capacitorPlatform === 'android';
+  const showBluetooth = !isIOS; // Hide Bluetooth on iOS - use HealthKit instead
   
   const {
     heartRate: hkHeartRate,
@@ -326,7 +328,8 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
             </div>
           )}
 
-          {/* Bluetooth Heart Rate Monitor Section */}
+          {/* Bluetooth Heart Rate Monitor Section (hidden on iOS) */}
+          {showBluetooth && (
           <div>
             <h3 className={`text-sm font-semibold mb-3 ${
               isLightTheme ? 'text-gray-700' : 'text-white/80'
@@ -448,11 +451,11 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
             )}
             
             {/* Show platform info for debugging */}
-            {platform && (
+            {vitalsPlat && (
               <div className={`mt-2 text-xs text-center ${
                 isLightTheme ? 'text-gray-500' : 'text-white/40'
               }`}>
-                Platform: {platform === 'android' ? 'Android WebView' : 'Web Bluetooth API'}
+                Platform: {vitalsPlat === 'android' ? 'Android WebView' : 'Web Bluetooth API'}
               </div>
             )}
 
@@ -526,6 +529,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
               </div>
             )}
           </div>
+          )}
         </div>
       </div>
     </div>

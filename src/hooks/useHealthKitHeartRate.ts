@@ -37,19 +37,39 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
 
   useEffect(() => {
     const checkAvailability = async () => {
-      if (Capacitor.getPlatform() !== 'ios' || !Capacitor.isNativePlatform()) {
-        console.log('[HealthKit] Not iOS native platform, HealthKit unavailable');
+      const platform = Capacitor.getPlatform();
+      const isPluginAvailable = Capacitor.isPluginAvailable('HealthKitHeartRate');
+      
+      console.log('[HealthKit] Platform:', platform, 'Plugin available:', isPluginAvailable);
+      
+      // Check if we're on iOS - don't rely on isNativePlatform() as it can be false during early boot
+      if (platform !== 'ios') {
+        console.log('[HealthKit] Not iOS platform, HealthKit unavailable');
         setIsAvailable(false);
         return;
       }
 
-      try {
-        const result = await HealthKitHeartRate.isAvailable();
-        console.log('[HealthKit] Availability check:', result.available);
-        setIsAvailable(result.available);
-      } catch (err) {
-        console.error('[HealthKit] Availability check error:', err);
+      // If plugin is registered, call native isAvailable
+      if (isPluginAvailable) {
+        try {
+          const result = await HealthKitHeartRate.isAvailable();
+          console.log('[HealthKit] Native availability check:', result.available);
+          setIsAvailable(result.available);
+          
+          if (!result.available) {
+            setError('HealthKit is not available on this device');
+          }
+        } catch (err) {
+          console.error('[HealthKit] Availability check error:', err);
+          setError('Failed to check HealthKit availability');
+          setIsAvailable(false);
+        }
+      } else {
+        // Plugin not available - might be web preview or missing native code
+        console.log('[HealthKit] Plugin not registered, checking if native context...');
+        // On iOS native, plugin should be available - if not, show appropriate message
         setIsAvailable(false);
+        setError('HealthKit plugin not loaded');
       }
     };
 
