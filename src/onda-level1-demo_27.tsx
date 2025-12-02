@@ -2249,7 +2249,9 @@ const OndaLevel1 = () => {
   }
 
   return (
-    <div className={`h-full text-white overflow-x-hidden pb-6 pt-8 transition-all duration-1000 ${
+    <div 
+      data-main-container
+      className={`h-full text-white overflow-x-hidden pb-6 pt-8 transition-all duration-1000 ${
       activeCircuit === 2
         ? 'bg-gradient-to-br from-teal-900 via-cyan-900 to-blue-900'
         : activeCircuit === 3
@@ -3178,7 +3180,14 @@ const OndaLevel1 = () => {
           <div className="text-center mt-6">
             {activeCircuit < 3 && (
               <button
-                onClick={() => { setActiveCircuit(activeCircuit + 1); setSelectedLevel(activeCircuit + 1); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                onClick={() => { 
+                  setActiveCircuit(activeCircuit + 1); 
+                  setSelectedLevel(activeCircuit + 1); 
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                  const mainContainer = document.querySelector('[data-main-container]');
+                  if (mainContainer) mainContainer.scrollTop = 0;
+                }}
                 className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg ${
                   activeCircuit === 1
                     ? 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-2 border-purple-300/50'
