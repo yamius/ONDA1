@@ -239,17 +239,19 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
             </div>
           ))}
           
-          {isTyping && (
-            <div className={`flex justify-start typing-indicator ${isTypingFading ? 'fade-out' : ''}`}>
-              <div className="bg-slate-700/80 rounded-2xl rounded-bl-md px-4 py-3">
-                <div className="flex items-center gap-1.5">
-                  <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
-                  <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
-                  <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
-                </div>
+          <div 
+            className={`flex justify-start typing-indicator transition-all duration-700 ${
+              isTyping ? 'opacity-100 max-h-20' : 'opacity-0 max-h-0 overflow-hidden'
+            } ${isTypingFading ? 'opacity-0' : ''}`}
+          >
+            <div className="bg-slate-700/80 rounded-2xl rounded-bl-md px-4 py-3">
+              <div className="flex items-center gap-1.5">
+                <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
+                <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
+                <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
               </div>
             </div>
-          )}
+          </div>
           
           <div ref={messagesEndRef} />
         </div>
