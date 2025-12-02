@@ -235,7 +235,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </div>
           </div>
 
-          <div>
+          {/* Connection buttons hidden - Health Connect and Bluetooth tracker */}
+          {/* <div>
             <div className="flex gap-3 mb-3">
               <button
                 onClick={hcConnect}
@@ -277,7 +278,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               isLightTheme={isLightTheme} 
               data={healthConnectData.lastUpdate}
             />
+          </div> */}
 
+          {/* Bluetooth tracker and Notification HR sections hidden */}
+          {/* <div>
             {/* DEBUG: HealthConnect Debug Panel hidden in production */}
             {/* <div className="mt-4">
               <HealthConnectDebugPanel />
@@ -380,6 +384,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               </div>
             )} */}
 
+            {/* Bluetooth tracker section - HIDDEN
             <div className="flex gap-3 mt-4">
               {!isScanning && (
                 <>
@@ -434,7 +439,6 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               )}
             </div>
             
-            {/* Show available devices after scan completes (Android only) */}
             {availableDevices && availableDevices.length > 0 && connectToDevice && (
               <div className={`mt-4 p-4 rounded-xl ${
                 isLightTheme ? 'bg-gray-100' : 'bg-white/5'
@@ -471,7 +475,6 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               </div>
             )}
             
-            {/* Show platform info for debugging */}
             {platform && (
               <div className={`mt-2 text-xs text-center ${
                 isLightTheme ? 'text-gray-500' : 'text-white/40'
