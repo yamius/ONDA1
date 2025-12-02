@@ -785,13 +785,32 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     console.log('[AdaptivePractice] Practice state set to complete');
   };
 
-  const handleClose = () => {
+  const handleClose = async () => {
+    if (practiceRating > 0 && practiceTime > 0 && practice) {
+      try {
+        const { data: { user } } = await supabase.auth.getUser();
+        if (user) {
+          await supabase.from('practice_ratings').insert({
+            user_id: user.id,
+            practice_id: practice.id,
+            practice_name: t(practice.name),
+            rating: practiceRating,
+            duration_seconds: practiceTime
+          });
+          console.log('[AdaptivePractice] Rating saved:', { practiceId: practice.id, rating: practiceRating });
+        }
+      } catch (error) {
+        console.error('[AdaptivePractice] Error saving practice rating:', error);
+      }
+    }
+    
     setPracticeState('intro');
     setPracticeTime(0);
     setIsPaused(false);
     setCurrentGuidingTextIndex(0);
     setAudioResetKey(prev => prev + 1);
     setQualityScore(0);
+    setPracticeRating(0);
     setCurrentTrack(1);
     setTotalTracks(1);
     if (timerRef.current) {
