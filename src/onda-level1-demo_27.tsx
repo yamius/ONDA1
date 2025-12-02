@@ -2957,11 +2957,11 @@ const OndaLevel1 = () => {
                 
                 <div className="flex items-center justify-between">
                   <div className="text-yellow-400 font-mono">
-                    {t('practices.up_to')} {earnedQnt} OND
+                    <div>{t('practices.up_to')} {earnedQnt} OND</div>
                     {bonus > 0 && (
-                      <span className="text-xs text-emerald-400 ml-2">
+                      <div className="text-xs text-emerald-400">
                         (+{bonus}%)
-                      </span>
+                      </div>
                     )}
                   </div>
                   <button
