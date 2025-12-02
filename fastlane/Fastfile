@@ -77,7 +77,8 @@ platform :ios do
     # After certificates exist: change to readonly=true for safety
     match(
       type: "appstore",
-      readonly: is_ci ? false : true,
+      readonly: false,
+      force: true,  # Force regenerate profiles to pick up new capabilities
       force_for_new_devices: true,
       api_key_path: nil,  # Uses api_key from before_all block
       keychain_name: ENV['CI'] ? "build.keychain" : nil,
