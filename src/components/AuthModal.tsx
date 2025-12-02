@@ -172,10 +172,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       console.log('[Auth] Hashed nonce for Apple');
       
       const options: SignInWithAppleOptions = {
-        clientId: 'com.onda-life.ios',
-        redirectURI: 'https://qwtdppugdcguyeaumymc.supabase.co/auth/v1/callback',
+        clientId: 'com.onda-life.web',
         scopes: 'email name',
-        state: 'onda_state',
         nonce: hashedNonce,
       };
       
