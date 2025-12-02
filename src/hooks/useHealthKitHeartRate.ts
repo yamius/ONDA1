@@ -178,18 +178,20 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
       setMode(monitoringMode);
       setError(null);
 
+      // Initial query to get current value
+      await queryHeartRateData();
+
       if (monitoringMode === 'realtime') {
-        // Use HKAnchoredObjectQuery for instant updates
+        // Use HKAnchoredObjectQuery for instant updates when new samples arrive
         await startRealtimeMonitoring();
-        // Also do an initial query to get current value
-        await queryHeartRateData();
+        // ALSO poll frequently because Apple Watch only writes to HealthKit every 5-10 min in background
+        // Polling ensures we always show the latest available data
+        intervalRef.current = setInterval(queryHeartRateData, 2000);
+        console.log('[HealthKit] Started realtime mode (observer + polling every 2s)');
       } else {
         // Use polling for direct/workout modes
-        await queryHeartRateData();
-        
         const interval = monitoringMode === 'direct' ? pollingInterval : 5000;
         intervalRef.current = setInterval(queryHeartRateData, interval);
-        
         console.log(`[HealthKit] Started ${monitoringMode} mode (polling every ${interval}ms)`);
       }
     } catch (err) {
