@@ -25,11 +25,23 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
   const { t } = useTranslation();
   const [engine] = useState(() => new ConversationEngine({ eliza, flows, t }));
   const [state, setState] = useState<EngineState>(() => createInitialState());
+  const stateRef = useRef<EngineState>(state);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputText, setInputText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (!isOpen) {
+      setMessages([]);
+      const initialState = createInitialState();
+      setState(initialState);
+      stateRef.current = initialState;
+      setInputText('');
+      setIsTyping(false);
+    }
+  }, [isOpen]);
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -43,12 +55,23 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
     if (isOpen && messages.length === 0) {
       const greeting = t('liza.greeting');
       const emotionPrompt = initialEmotion ? t('liza.emotion_prompt', { emotion: t(`emotional_check.emotions.${initialEmotion}`) }) : '';
+      const fullText = greeting + (emotionPrompt ? '\n\n' + emotionPrompt : '') + '\n\n' + t('liza.choose_exercise');
       
       setTimeout(() => {
         pushMessage({
           from: 'bot',
-          text: greeting + (emotionPrompt ? '\n\n' + emotionPrompt : ''),
-          ui: { type: 'text', text: greeting }
+          text: fullText,
+          ui: {
+            type: 'buttons',
+            text: fullText,
+            options: [
+              { value: 'anxiety_basic', label: t('liza.flows.anxiety') },
+              { value: 'panic_grounding', label: t('liza.flows.panic') },
+              { value: 'body_scan', label: t('liza.flows.body') },
+              { value: 'loneliness_connection', label: t('liza.flows.loneliness') },
+              { value: 'free_talk', label: t('liza.flows.free_talk') }
+            ]
+          }
         });
       }, 500);
     }
@@ -78,8 +101,10 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
     setIsTyping(true);
 
     setTimeout(() => {
-      const { state: newState, bot } = engine.handleUserMessage(state, { text });
+      const currentState = stateRef.current;
+      const { state: newState, bot } = engine.handleUserMessage(currentState, { text });
       setState(newState);
+      stateRef.current = newState;
       pushMessage({ from: 'bot', text: bot.text, ui: bot });
       setIsTyping(false);
     }, 800 + Math.random() * 700);
@@ -92,9 +117,21 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
     setIsTyping(true);
 
     setTimeout(() => {
-      const { state: newState, bot } = engine.handleUserMessage(state, { value });
-      setState(newState);
-      pushMessage({ from: 'bot', text: bot.text, ui: bot });
+      const currentState = stateRef.current;
+      if (typeof value === 'string' && flows.some(f => f.id === value)) {
+        const { state: newState, bot } = engine.startFlow(currentState, value);
+        setState(newState);
+        stateRef.current = newState;
+        pushMessage({ from: 'bot', text: bot.text, ui: bot });
+      } else if (value === 'free_talk') {
+        const text = t('liza.free_talk_response');
+        pushMessage({ from: 'bot', text, ui: { type: 'text', text } });
+      } else {
+        const { state: newState, bot } = engine.handleUserMessage(currentState, { value });
+        setState(newState);
+        stateRef.current = newState;
+        pushMessage({ from: 'bot', text: bot.text, ui: bot });
+      }
       setIsTyping(false);
     }, 600 + Math.random() * 500);
   }
@@ -102,8 +139,10 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
   function startFlow(flowId: string) {
     setIsTyping(true);
     setTimeout(() => {
-      const { state: newState, bot } = engine.startFlow(state, flowId);
+      const currentState = stateRef.current;
+      const { state: newState, bot } = engine.startFlow(currentState, flowId);
       setState(newState);
+      stateRef.current = newState;
       pushMessage({ from: 'bot', text: bot.text, ui: bot });
       setIsTyping(false);
     }, 500);

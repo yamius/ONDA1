@@ -1378,13 +1378,16 @@
     "subtitle": "Your emotional support companion",
     "greeting": "Hi! I'm Liza, and I'm here to listen and support you. How are you feeling right now?",
     "emotion_prompt": "I noticed you're experiencing {{emotion}}. Would you like to talk about it?",
+    "choose_exercise": "Choose a guided exercise or just talk:",
     "input_placeholder": "Type your message...",
     "flows": {
       "anxiety": "Work with anxiety",
       "panic": "Grounding exercise",
       "body": "Body scan",
-      "loneliness": "Feel connected"
-    }
+      "loneliness": "Feel connected",
+      "free_talk": "Just talk freely"
+    },
+    "free_talk_response": "Of course, I'm here to listen. Tell me what's on your mind, and we can explore it together."
   },
   "flows": {
     "common": {
