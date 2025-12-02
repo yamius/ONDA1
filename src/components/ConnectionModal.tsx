@@ -50,18 +50,22 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
     isAuthorized: hkIsAuthorized,
     requestPermission: hkRequestPermission,
     startMonitoring: hkStartMonitoring,
-    error: hkError
-  } = useHealthKitHeartRate();
+    stopMonitoring: hkStopMonitoring,
+    error: hkError,
+    isMonitoring: hkIsMonitoring,
+    mode: hkMode,
+    lastUpdated: hkLastUpdated
+  } = useHealthKitHeartRate({ pollingInterval: 1500 });
   
   const [hkConnecting, setHkConnecting] = useState(false);
   const [hkAttempted, setHkAttempted] = useState(false);
 
-  const handleHealthKitConnect = async () => {
+  const handleHealthKitConnect = async (mode: 'direct' | 'workout') => {
     setHkConnecting(true);
     setHkAttempted(false);
     try {
       await hkRequestPermission();
-      await hkStartMonitoring();
+      await hkStartMonitoring(mode);
     } catch (err) {
       console.error('[HealthKit] Connection error:', err);
     } finally {
@@ -69,8 +73,13 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
       setHkAttempted(true);
     }
   };
+
+  const handleHealthKitDisconnect = () => {
+    hkStopMonitoring();
+    setHkAttempted(false);
+  };
   
-  const hkIsConnected = hkIsAuthorized === true;
+  const hkIsConnected = hkIsAuthorized === true && hkIsMonitoring;
   const hkShowSuccess = hkAttempted && hkIsConnected && !hkError;
   const hkAvailabilityChecked = hkIsAvailable !== null;
 
@@ -115,33 +124,73 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                 {t('connection.healthkit_desc', 'Connect Apple Watch and fitness trackers via HealthKit for heart rate monitoring')}
               </p>
               
-              <div className="flex gap-3 mb-3">
-                <button
-                  onClick={handleHealthKitConnect}
-                  disabled={hkConnecting || hkIsConnected}
-                  className={`w-full py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
-                    hkIsConnected
-                      ? isLightTheme
-                        ? 'bg-green-100 text-green-700'
-                        : 'bg-green-500/20 text-green-400'
-                      : hkConnecting
-                      ? isLightTheme
-                        ? 'bg-gray-100 text-gray-500'
-                        : 'bg-white/10 text-white/50'
-                      : isLightTheme
-                      ? 'bg-pink-100 hover:bg-pink-200 text-pink-700'
-                      : 'bg-pink-500/20 hover:bg-pink-500/30 text-pink-400'
-                  } ${(hkConnecting || hkIsConnected) ? 'cursor-default' : ''}`}
-                  data-testid="button-connect-healthkit"
-                >
-                  <Watch className="w-5 h-5" />
-                  {hkConnecting 
-                    ? t('connection.healthkit_connecting', 'Connecting...')
-                    : hkIsConnected
-                    ? t('connection.healthkit_connected', 'HealthKit Connected')
-                    : t('connection.healthkit_connect', 'Connect HealthKit')}
-                </button>
-              </div>
+              {!hkIsMonitoring ? (
+                <div className="flex gap-2 mb-3">
+                  <button
+                    onClick={() => handleHealthKitConnect('direct')}
+                    disabled={hkConnecting}
+                    className={`flex-1 py-3 px-4 rounded-xl font-medium transition-all flex flex-col items-center justify-center gap-1 ${
+                      hkConnecting
+                        ? isLightTheme
+                          ? 'bg-gray-100 text-gray-500'
+                          : 'bg-white/10 text-white/50'
+                        : isLightTheme
+                        ? 'bg-pink-100 hover:bg-pink-200 text-pink-700'
+                        : 'bg-pink-500/20 hover:bg-pink-500/30 text-pink-400'
+                    }`}
+                    data-testid="button-connect-healthkit-direct"
+                  >
+                    <Heart className="w-5 h-5" />
+                    <span className="text-sm">{t('connection.healthkit_direct', 'Direct')}</span>
+                    <span className={`text-[10px] ${isLightTheme ? 'text-pink-600' : 'text-pink-300'}`}>
+                      1.5s polling
+                    </span>
+                  </button>
+                  <button
+                    onClick={() => handleHealthKitConnect('workout')}
+                    disabled={hkConnecting}
+                    className={`flex-1 py-3 px-4 rounded-xl font-medium transition-all flex flex-col items-center justify-center gap-1 ${
+                      hkConnecting
+                        ? isLightTheme
+                          ? 'bg-gray-100 text-gray-500'
+                          : 'bg-white/10 text-white/50'
+                        : isLightTheme
+                        ? 'bg-orange-100 hover:bg-orange-200 text-orange-700'
+                        : 'bg-orange-500/20 hover:bg-orange-500/30 text-orange-400'
+                    }`}
+                    data-testid="button-connect-healthkit-workout"
+                  >
+                    <Activity className="w-5 h-5" />
+                    <span className="text-sm">{t('connection.healthkit_workout', 'Workout')}</span>
+                    <span className={`text-[10px] ${isLightTheme ? 'text-orange-600' : 'text-orange-300'}`}>
+                      5s polling
+                    </span>
+                  </button>
+                </div>
+              ) : (
+                <div className="flex gap-2 mb-3">
+                  <div className={`flex-1 py-3 px-4 rounded-xl flex items-center justify-center gap-2 ${
+                    isLightTheme ? 'bg-green-100 text-green-700' : 'bg-green-500/20 text-green-400'
+                  }`}>
+                    {hkMode === 'direct' ? <Heart className="w-5 h-5" /> : <Activity className="w-5 h-5" />}
+                    <span className="font-medium">
+                      {hkMode === 'direct' ? 'Direct Mode' : 'Workout Mode'}
+                    </span>
+                  </div>
+                  <button
+                    onClick={handleHealthKitDisconnect}
+                    className={`py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
+                      isLightTheme
+                        ? 'bg-red-100 hover:bg-red-200 text-red-700'
+                        : 'bg-red-500/20 hover:bg-red-500/30 text-red-400'
+                    }`}
+                    data-testid="button-disconnect-healthkit"
+                  >
+                    <X className="w-5 h-5" />
+                    {t('settings.stop', 'Stop')}
+                  </button>
+                </div>
+              )}
 
               {hkError && (
                 <div className={`flex items-center gap-2 p-3 rounded-lg mb-3 ${
@@ -171,10 +220,16 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       <div>
                         <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
                           {t('connection.healthkit_hr', 'Heart Rate from HealthKit')}
+                          {hkMode && <span className="ml-1">({hkMode})</span>}
                         </div>
                         <div className="text-xl font-semibold">
                           {hkHeartRate ?? '--'} <span className="text-sm font-normal">bpm</span>
                         </div>
+                        {hkLastUpdated && (
+                          <div className={`text-[10px] ${isLightTheme ? 'text-gray-500' : 'text-white/40'}`}>
+                            Updated: {hkLastUpdated.toLocaleTimeString()}
+                          </div>
+                        )}
                       </div>
                     </div>
                     <Watch className={`w-5 h-5 ${isLightTheme ? 'text-gray-400' : 'text-white/40'}`} />
