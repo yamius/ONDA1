@@ -134,5 +134,5 @@
 }
 
 .message-appear {
-  animation: messageFadeIn 0.8s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation: messageFadeIn 1.6s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
