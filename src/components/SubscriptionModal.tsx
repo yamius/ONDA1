@@ -33,8 +33,8 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
       >
         <button
           onClick={onClose}
-          className={`absolute left-4 z-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors ${
-            isIOS ? 'top-14 w-10 h-10' : 'top-12 w-10 h-10'
+          className={`absolute left-4 z-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors w-10 h-10 ${
+            isIOS ? 'top-12' : 'top-12'
           }`}
           data-testid="button-close-subscription"
         >
