@@ -19,33 +19,41 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
 
   return (
     <div 
-      className="fixed inset-0 z-[200] flex items-center sm:items-start sm:pt-[5vh] justify-center p-0 sm:p-4 pt-[env(safe-area-inset-top)]"
+      className="fixed inset-0 z-[200] flex items-center justify-center"
+      style={{
+        paddingTop: 'env(safe-area-inset-top)',
+        paddingBottom: 'env(safe-area-inset-bottom)',
+      }}
       onClick={onClose}
     >
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       
       <div 
-        className="relative w-full h-full sm:max-w-sm sm:max-h-[90vh] sm:rounded-2xl overflow-hidden shadow-2xl flex flex-col"
+        className="relative w-full h-full sm:max-w-sm sm:h-auto sm:max-h-[90vh] sm:rounded-2xl overflow-hidden shadow-2xl flex flex-col"
         onClick={(e) => e.stopPropagation()}
         style={{
-          background: 'linear-gradient(180deg, #1e1b4b 0%, #312e81 30%, #4c1d95 60%, #1e1b4b 100%)'
+          background: 'linear-gradient(180deg, #1e1b4b 0%, #312e81 30%, #4c1d95 60%, #1e1b4b 100%)',
+          minHeight: isIOS ? '100%' : undefined,
         }}
       >
         <button
           onClick={onClose}
-          className={`absolute left-4 z-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors w-10 h-10 ${
-            isIOS ? 'top-12' : 'top-12'
-          }`}
+          className="absolute left-4 z-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors w-10 h-10"
+          style={{
+            top: isIOS ? 'calc(env(safe-area-inset-top) + 8px)' : '12px',
+          }}
           data-testid="button-close-subscription"
         >
           <X className="w-5 h-5 text-white/80" />
         </button>
 
         <div 
-          className="flex-1 overflow-y-auto p-6 pt-14 pb-0 flex flex-col justify-center sm:justify-start sm:pt-16"
+          className="flex-1 overflow-y-auto p-6 pb-6 flex flex-col justify-center sm:justify-start"
           style={{
             scrollbarWidth: 'none',
             msOverflowStyle: 'none',
+            paddingTop: isIOS ? 'calc(env(safe-area-inset-top) + 56px)' : '56px',
+            paddingBottom: isIOS ? 'calc(env(safe-area-inset-bottom) + 24px)' : '24px',
           }}
         >
           <style>
