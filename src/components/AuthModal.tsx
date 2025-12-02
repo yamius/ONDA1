@@ -172,7 +172,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       console.log('[Auth] Hashed nonce for Apple');
       
       const options: SignInWithAppleOptions = {
-        clientId: 'com.onda-life.web',
         scopes: 'email name',
         nonce: hashedNonce,
       };
