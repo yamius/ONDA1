@@ -6,6 +6,7 @@ interface AndroidBridge {
   readHealthConnectData(): void;
   // Bluetooth methods
   isBluetoothAvailable(): boolean;
+  enableBluetooth(): void;
   requestBluetoothPermissions(): void;
   startBluetoothScan(): void;
   stopBluetoothScan(): void;

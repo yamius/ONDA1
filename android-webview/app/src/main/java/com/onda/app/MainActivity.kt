@@ -651,6 +651,12 @@ class MainActivity : AppCompatActivity() {
         }
         
         @JavascriptInterface
+        fun enableBluetooth() {
+            Log.d("WebViewConsole", "[Bluetooth] enableBluetooth called")
+            bluetoothManager.enableBluetooth(activity)
+        }
+        
+        @JavascriptInterface
         fun requestBluetoothPermissions() {
             Log.d("WebViewConsole", "[Bluetooth] requestBluetoothPermissions called")
             

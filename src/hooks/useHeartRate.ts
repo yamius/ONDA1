@@ -133,11 +133,16 @@ export function useHeartRate() {
         // ========== Android WebView Path ==========
         console.log('[Bluetooth] Using Android native bridge');
         
-        // Check if Bluetooth is available
+        // Check if Bluetooth is available and enabled
         const available = window.Android.isBluetoothAvailable();
         if (!available) {
-          console.error('[Bluetooth] Bluetooth not available on device');
-          alert('Bluetooth не доступен на этом устройстве');
+          console.error('[Bluetooth] Bluetooth not available or disabled');
+          // Try to enable Bluetooth if possible
+          if (window.Android.enableBluetooth) {
+            window.Android.enableBluetooth();
+          } else {
+            alert('Пожалуйста, включите Bluetooth в настройках устройства');
+          }
           return;
         }
 

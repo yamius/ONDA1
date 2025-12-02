@@ -171,8 +171,11 @@ window.Android.requestHealthConnectPermissions()
 // Запрос Bluetooth permissions
 window.Android.requestBluetoothPermissions()
 
-// Проверка Bluetooth
+// Проверка Bluetooth (возвращает true если Bluetooth есть И включён)
 window.Android.isBluetoothAvailable() // returns boolean
+
+// Открыть настройки для включения Bluetooth
+window.Android.enableBluetooth()
 
 // Получение данных Health Connect
 window.addEventListener('hc-update', (event) => {

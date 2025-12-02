@@ -62,8 +62,22 @@ class BluetoothManager(private val context: Context) {
      */
     fun isBluetoothAvailable(): Boolean {
         val available = bluetoothAdapter != null && bluetoothAdapter.isEnabled
-        Log.d(TAG, "Bluetooth available: $available")
+        Log.d(TAG, "Bluetooth available: $available, adapter: ${bluetoothAdapter != null}, enabled: ${bluetoothAdapter?.isEnabled}")
         return available
+    }
+    
+    /**
+     * Открывает настройки Bluetooth для включения
+     */
+    fun enableBluetooth(activity: android.app.Activity) {
+        Log.d(TAG, "Opening Bluetooth settings")
+        try {
+            val intent = android.content.Intent(android.provider.Settings.ACTION_BLUETOOTH_SETTINGS)
+            activity.startActivity(intent)
+        } catch (e: Exception) {
+            Log.e(TAG, "Error opening Bluetooth settings: ${e.message}")
+            onError?.invoke("Не удалось открыть настройки Bluetooth")
+        }
     }
     
     /**
