@@ -19,7 +19,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
 
   return (
     <div 
-      className="fixed inset-0 z-[200] flex items-center sm:items-start sm:pt-[5vh] justify-center p-0 sm:p-4"
+      className="fixed inset-0 z-[200] flex items-center sm:items-start sm:pt-[5vh] justify-center p-0 sm:p-4 pt-[env(safe-area-inset-top)]"
       onClick={onClose}
     >
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
@@ -34,11 +34,11 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
         <button
           onClick={onClose}
           className={`absolute left-4 z-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors ${
-            isIOS ? 'top-14 w-10 h-10' : 'top-6 w-8 h-8'
+            isIOS ? 'top-14 w-10 h-10' : 'top-12 w-10 h-10'
           }`}
           data-testid="button-close-subscription"
         >
-          <X className={isIOS ? 'w-5 h-5 text-white/80' : 'w-4 h-4 text-white/80'} />
+          <X className="w-5 h-5 text-white/80" />
         </button>
 
         <div 
