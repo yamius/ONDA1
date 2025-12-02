@@ -1372,5 +1372,137 @@
     "monthly": "Monthly",
     "try_free": "Try 7 Days Free",
     "disclaimer": "Totally free for 7 days, then 4.17 EUR/month, billed annually at 49.99 EUR/year. Cancel anytime."
+  },
+  "liza": {
+    "name": "Liza",
+    "subtitle": "Your emotional support companion",
+    "greeting": "Hi! I'm Liza, and I'm here to listen and support you. How are you feeling right now?",
+    "emotion_prompt": "I noticed you're experiencing {{emotion}}. Would you like to talk about it?",
+    "input_placeholder": "Type your message...",
+    "flows": {
+      "anxiety": "Work with anxiety",
+      "panic": "Grounding exercise",
+      "body": "Body scan",
+      "loneliness": "Feel connected"
+    }
+  },
+  "flows": {
+    "common": {
+      "end_thanks": "Thank you for sharing. Remember, you can always come back to talk whenever you need."
+    },
+    "anxiety_basic": {
+      "title": "Working with Anxiety",
+      "intro": "I'd like to help you work through some anxious feelings. Would you like to try a quick exercise?",
+      "situation": "What situation or thought is making you feel anxious right now?",
+      "thought": "What's the main thought running through your mind about this?",
+      "feeling": "On a scale from 1 to 10, how intense is your anxiety right now?",
+      "distortion": "Sometimes our thoughts can be a bit distorted. Which of these patterns might apply?",
+      "alternative_thought": "What's a more balanced way to look at this situation?",
+      "plan": "What small step could help you feel better right now?",
+      "plan.tiny_action": "Take one tiny action",
+      "plan.write_down": "Write down my thoughts",
+      "plan.self_care": "Do something caring for myself",
+      "plan.do_nothing": "Just acknowledge the feeling",
+      "summary": "You've done great work exploring your anxiety. Remember: {{situation}} triggered the thought \"{{thought}}\", but you found a more balanced perspective. Your anxiety level was {{anxiety_level}}/10. Take care of yourself.",
+      "end_normalize": "That's completely okay. Sometimes we're not ready to dive in, and that's fine. I'm here whenever you want to talk."
+    },
+    "panic_grounding": {
+      "title": "Grounding for Panic",
+      "intro": "Let's work through this together. Are you having a panic attack right now, or did you recently have one?",
+      "intro.now": "I'm panicking now",
+      "intro.recent": "It was recent",
+      "recent_panic": "Can you briefly describe what happened?",
+      "body_symptoms": "What physical sensations are you noticing in your body?",
+      "fear_thoughts": "What thoughts or fears are coming up for you?",
+      "reality_check": "Often panic makes us fear something specific. What's the main fear?",
+      "reality_check.health": "Fear about my health",
+      "reality_check.control": "Fear of losing control",
+      "grounding": "Let's try a grounding technique. Which one feels right for you?",
+      "grounding.5senses": "5 senses exercise",
+      "grounding.breathing": "Slow breathing",
+      "grounding.body": "Body awareness",
+      "safety_plan": "What's one thing you can do right now to feel a bit safer?",
+      "summary": "You've worked through this panic moment. You noticed {{panic_body}} in your body and feared {{panic_fear_thoughts}}. You chose {{grounding_choice}} for grounding. Remember: panic passes. You are safe."
+    },
+    "body_scan": {
+      "title": "Body Awareness",
+      "intro": "Let's tune into your body. Are you ready to spend a few minutes noticing physical sensations?",
+      "intro.ready": "Yes, I'm ready",
+      "intro.not_ready": "Not right now",
+      "location": "Where in your body do you notice the strongest sensation right now?",
+      "sensation_quality": "How would you describe this sensation? (tight, warm, heavy, tingling...)",
+      "intensity": "On a scale from 1 to 10, how intense is this sensation?",
+      "associated_thought": "Is there any thought or emotion connected to this body sensation?",
+      "need": "What does this part of your body need right now?",
+      "need.rest": "Rest",
+      "need.movement": "Movement",
+      "need.warmth": "Warmth",
+      "need.care": "Gentle care",
+      "micro_action": "What's one small thing you could do to respond to this need?",
+      "summary": "You noticed {{body_location}} with a {{body_quality}} sensation at intensity {{body_intensity}}/10. This connects to: {{body_thought}}. Your body needs {{body_need}}. Listen to it.",
+      "end_normalize": "That's okay. Sometimes we need space. I'm here when you're ready."
+    },
+    "fear_basic": {
+      "title": "Working with Fear",
+      "intro": "What fear or worry would you like to explore today?",
+      "situation": "In what situations does this fear show up most?",
+      "worst_case": "What's the worst thing you imagine could happen?",
+      "probability": "Realistically, what's the probability (0-100%) of this happening?",
+      "resources": "What resources or support do you have if something difficult did happen?",
+      "small_step": "What's one small step you could take to face this fear gently?",
+      "summary": "You explored your fear of {{fear_topic}}. The worst case ({{fear_worst_case}}) has about {{fear_probability}}% probability. You have resources: {{fear_resources}}. Your small step: {{fear_small_step}}."
+    },
+    "pain_reflection": {
+      "title": "Reflecting on Pain",
+      "intro": "What kind of pain are you experiencing?",
+      "intro.emotional": "Emotional pain",
+      "intro.physical": "Physical pain",
+      "intro.both": "Both",
+      "description": "Can you describe what this pain feels like?",
+      "intensity": "On a scale from 1 to 10, how intense is this pain?",
+      "triggers": "What seems to trigger or worsen this pain?",
+      "relief": "What, if anything, helps even a little?",
+      "support": "Who or what could support you with this pain?",
+      "summary": "You shared about your {{pain_type}} pain: {{pain_description}} at intensity {{pain_intensity}}/10. Triggers: {{pain_triggers}}. What helps: {{pain_relief}}. Support: {{pain_support}}."
+    },
+    "loneliness_connection": {
+      "title": "Finding Connection",
+      "intro": "Can you tell me a bit about what loneliness feels like for you right now?",
+      "hardest_moment": "When is the loneliness hardest?",
+      "needs": "What kind of connection do you most long for?",
+      "needs.being_seen": "Being truly seen",
+      "needs.support": "Having support",
+      "needs.shared_activity": "Sharing activities",
+      "person_option": "Is there anyone, even a small connection, you could reach out to?",
+      "small_reach_out_step": "What's one tiny step toward connection you could take?",
+      "self_compassion": "What kind words would you say to a friend feeling this way?",
+      "summary": "You're experiencing loneliness, especially {{lonely_moment}}. You long for {{lonely_need}}. You might reach out to {{lonely_person}} by {{lonely_action}}. Self-compassion: {{lonely_self_compassion}}."
+    },
+    "anger_boundaries": {
+      "title": "Anger and Boundaries",
+      "intro": "What's making you feel angry or frustrated right now?",
+      "trigger": "What specifically triggered this feeling?",
+      "expression_style": "How do you usually handle anger?",
+      "expression_style.express": "I express it openly",
+      "expression_style.suppress": "I hold it in",
+      "expression_style.both": "It depends",
+      "need_underneath": "Often anger protects a need. What might be underneath your anger?",
+      "need_underneath.respect": "Need for respect",
+      "need_underneath.fairness": "Need for fairness",
+      "need_underneath.space": "Need for space",
+      "need_underneath.being_heard": "Need to be heard",
+      "constructive_action": "What's one constructive way you could address this situation?",
+      "summary": "Your anger about {{anger_topic}} was triggered by {{anger_trigger}}. Underneath is a need for {{anger_need}}. Your constructive action: {{anger_action}}."
+    },
+    "distortions": {
+      "catastrophizing": "Catastrophizing",
+      "mind_reading": "Mind reading",
+      "all_or_nothing": "All-or-nothing thinking"
+    }
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "other_or_not_sure": "Other / Not sure"
   }
 }

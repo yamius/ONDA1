@@ -1,0 +1,690 @@
+[
+  {
+    "id": "anxiety_basic",
+    "titleKey": "flows.anxiety_basic.title",
+    "steps": [
+      {
+        "id": "intro",
+        "botTextKey": "flows.anxiety_basic.intro",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "yes",
+              "labelKey": "common.yes"
+            },
+            {
+              "value": "no",
+              "labelKey": "common.no"
+            }
+          ]
+        },
+        "nextByAnswer": {
+          "yes": "situation",
+          "no": "end_normalize"
+        }
+      },
+      {
+        "id": "situation",
+        "botTextKey": "flows.anxiety_basic.situation",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "situation",
+        "next": "thought"
+      },
+      {
+        "id": "thought",
+        "botTextKey": "flows.anxiety_basic.thought",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "thought",
+        "next": "feeling"
+      },
+      {
+        "id": "feeling",
+        "botTextKey": "flows.anxiety_basic.feeling",
+        "input": {
+          "type": "scale",
+          "min": 1,
+          "max": 10
+        },
+        "saveAs": "anxiety_level",
+        "next": "distortion"
+      },
+      {
+        "id": "distortion",
+        "botTextKey": "flows.anxiety_basic.distortion",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "catastrophizing",
+              "labelKey": "flows.distortions.catastrophizing"
+            },
+            {
+              "value": "mind_reading",
+              "labelKey": "flows.distortions.mind_reading"
+            },
+            {
+              "value": "all_or_nothing",
+              "labelKey": "flows.distortions.all_or_nothing"
+            },
+            {
+              "value": "other",
+              "labelKey": "common.other_or_not_sure"
+            }
+          ]
+        },
+        "saveAs": "distortion",
+        "next": "alternative_thought"
+      },
+      {
+        "id": "alternative_thought",
+        "botTextKey": "flows.anxiety_basic.alternative_thought",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "alt_thought",
+        "next": "plan"
+      },
+      {
+        "id": "plan",
+        "botTextKey": "flows.anxiety_basic.plan",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "tiny_action",
+              "labelKey": "flows.anxiety_basic.plan.tiny_action"
+            },
+            {
+              "value": "write_down",
+              "labelKey": "flows.anxiety_basic.plan.write_down"
+            },
+            {
+              "value": "self_care",
+              "labelKey": "flows.anxiety_basic.plan.self_care"
+            },
+            {
+              "value": "do_nothing",
+              "labelKey": "flows.anxiety_basic.plan.do_nothing"
+            }
+          ]
+        },
+        "saveAs": "plan_choice",
+        "next": "summary"
+      },
+      {
+        "id": "summary",
+        "botTextKey": "flows.anxiety_basic.summary",
+        "isSummaryStep": true,
+        "next": null
+      },
+      {
+        "id": "end_normalize",
+        "botTextKey": "flows.anxiety_basic.end_normalize",
+        "next": null
+      }
+    ]
+  },
+  {
+    "id": "panic_grounding",
+    "titleKey": "flows.panic_grounding.title",
+    "steps": [
+      {
+        "id": "intro",
+        "botTextKey": "flows.panic_grounding.intro",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "now",
+              "labelKey": "flows.panic_grounding.intro.now"
+            },
+            {
+              "value": "recent",
+              "labelKey": "flows.panic_grounding.intro.recent"
+            }
+          ]
+        },
+        "nextByAnswer": {
+          "now": "body_symptoms",
+          "recent": "recent_panic"
+        }
+      },
+      {
+        "id": "recent_panic",
+        "botTextKey": "flows.panic_grounding.recent_panic",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "panic_situation",
+        "next": "body_symptoms"
+      },
+      {
+        "id": "body_symptoms",
+        "botTextKey": "flows.panic_grounding.body_symptoms",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "panic_body",
+        "next": "fear_thoughts"
+      },
+      {
+        "id": "fear_thoughts",
+        "botTextKey": "flows.panic_grounding.fear_thoughts",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "panic_fear_thoughts",
+        "next": "reality_check"
+      },
+      {
+        "id": "reality_check",
+        "botTextKey": "flows.panic_grounding.reality_check",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "health",
+              "labelKey": "flows.panic_grounding.reality_check.health"
+            },
+            {
+              "value": "control",
+              "labelKey": "flows.panic_grounding.reality_check.control"
+            },
+            {
+              "value": "other",
+              "labelKey": "common.other_or_not_sure"
+            }
+          ]
+        },
+        "saveAs": "panic_main_fear",
+        "next": "grounding"
+      },
+      {
+        "id": "grounding",
+        "botTextKey": "flows.panic_grounding.grounding",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "5senses",
+              "labelKey": "flows.panic_grounding.grounding.5senses"
+            },
+            {
+              "value": "breathing",
+              "labelKey": "flows.panic_grounding.grounding.breathing"
+            },
+            {
+              "value": "body",
+              "labelKey": "flows.panic_grounding.grounding.body"
+            }
+          ]
+        },
+        "saveAs": "grounding_choice",
+        "next": "safety_plan"
+      },
+      {
+        "id": "safety_plan",
+        "botTextKey": "flows.panic_grounding.safety_plan",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "panic_safety_plan",
+        "next": "summary"
+      },
+      {
+        "id": "summary",
+        "botTextKey": "flows.panic_grounding.summary",
+        "isSummaryStep": true,
+        "next": null
+      }
+    ]
+  },
+  {
+    "id": "body_scan",
+    "titleKey": "flows.body_scan.title",
+    "steps": [
+      {
+        "id": "intro",
+        "botTextKey": "flows.body_scan.intro",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "ready",
+              "labelKey": "flows.body_scan.intro.ready"
+            },
+            {
+              "value": "not_ready",
+              "labelKey": "flows.body_scan.intro.not_ready"
+            }
+          ]
+        },
+        "nextByAnswer": {
+          "ready": "location",
+          "not_ready": "end_normalize"
+        }
+      },
+      {
+        "id": "location",
+        "botTextKey": "flows.body_scan.location",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "body_location",
+        "next": "sensation_quality"
+      },
+      {
+        "id": "sensation_quality",
+        "botTextKey": "flows.body_scan.sensation_quality",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "body_quality",
+        "next": "intensity"
+      },
+      {
+        "id": "intensity",
+        "botTextKey": "flows.body_scan.intensity",
+        "input": {
+          "type": "scale",
+          "min": 1,
+          "max": 10
+        },
+        "saveAs": "body_intensity",
+        "next": "associated_thought"
+      },
+      {
+        "id": "associated_thought",
+        "botTextKey": "flows.body_scan.associated_thought",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "body_thought",
+        "next": "need"
+      },
+      {
+        "id": "need",
+        "botTextKey": "flows.body_scan.need",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "rest",
+              "labelKey": "flows.body_scan.need.rest"
+            },
+            {
+              "value": "movement",
+              "labelKey": "flows.body_scan.need.movement"
+            },
+            {
+              "value": "warmth",
+              "labelKey": "flows.body_scan.need.warmth"
+            },
+            {
+              "value": "care",
+              "labelKey": "flows.body_scan.need.care"
+            },
+            {
+              "value": "other",
+              "labelKey": "common.other_or_not_sure"
+            }
+          ]
+        },
+        "saveAs": "body_need",
+        "next": "micro_action"
+      },
+      {
+        "id": "micro_action",
+        "botTextKey": "flows.body_scan.micro_action",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "body_micro_action",
+        "next": "summary"
+      },
+      {
+        "id": "summary",
+        "botTextKey": "flows.body_scan.summary",
+        "isSummaryStep": true,
+        "next": null
+      },
+      {
+        "id": "end_normalize",
+        "botTextKey": "flows.body_scan.end_normalize",
+        "next": null
+      }
+    ]
+  },
+  {
+    "id": "fear_basic",
+    "titleKey": "flows.fear_basic.title",
+    "steps": [
+      {
+        "id": "intro",
+        "botTextKey": "flows.fear_basic.intro",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "fear_topic",
+        "next": "situation"
+      },
+      {
+        "id": "situation",
+        "botTextKey": "flows.fear_basic.situation",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "fear_situation",
+        "next": "worst_case"
+      },
+      {
+        "id": "worst_case",
+        "botTextKey": "flows.fear_basic.worst_case",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "fear_worst_case",
+        "next": "probability"
+      },
+      {
+        "id": "probability",
+        "botTextKey": "flows.fear_basic.probability",
+        "input": {
+          "type": "scale",
+          "min": 0,
+          "max": 100
+        },
+        "saveAs": "fear_probability",
+        "next": "resources"
+      },
+      {
+        "id": "resources",
+        "botTextKey": "flows.fear_basic.resources",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "fear_resources",
+        "next": "small_step"
+      },
+      {
+        "id": "small_step",
+        "botTextKey": "flows.fear_basic.small_step",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "fear_small_step",
+        "next": "summary"
+      },
+      {
+        "id": "summary",
+        "botTextKey": "flows.fear_basic.summary",
+        "isSummaryStep": true,
+        "next": null
+      }
+    ]
+  },
+  {
+    "id": "pain_reflection",
+    "titleKey": "flows.pain_reflection.title",
+    "steps": [
+      {
+        "id": "intro",
+        "botTextKey": "flows.pain_reflection.intro",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "emotional",
+              "labelKey": "flows.pain_reflection.intro.emotional"
+            },
+            {
+              "value": "physical",
+              "labelKey": "flows.pain_reflection.intro.physical"
+            },
+            {
+              "value": "both",
+              "labelKey": "flows.pain_reflection.intro.both"
+            }
+          ]
+        },
+        "saveAs": "pain_type",
+        "next": "description"
+      },
+      {
+        "id": "description",
+        "botTextKey": "flows.pain_reflection.description",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "pain_description",
+        "next": "intensity"
+      },
+      {
+        "id": "intensity",
+        "botTextKey": "flows.pain_reflection.intensity",
+        "input": {
+          "type": "scale",
+          "min": 1,
+          "max": 10
+        },
+        "saveAs": "pain_intensity",
+        "next": "triggers"
+      },
+      {
+        "id": "triggers",
+        "botTextKey": "flows.pain_reflection.triggers",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "pain_triggers",
+        "next": "relief"
+      },
+      {
+        "id": "relief",
+        "botTextKey": "flows.pain_reflection.relief",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "pain_relief",
+        "next": "support"
+      },
+      {
+        "id": "support",
+        "botTextKey": "flows.pain_reflection.support",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "pain_support",
+        "next": "summary"
+      },
+      {
+        "id": "summary",
+        "botTextKey": "flows.pain_reflection.summary",
+        "isSummaryStep": true,
+        "next": null
+      }
+    ]
+  },
+  {
+    "id": "loneliness_connection",
+    "titleKey": "flows.loneliness_connection.title",
+    "steps": [
+      {
+        "id": "intro",
+        "botTextKey": "flows.loneliness_connection.intro",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "lonely_description",
+        "next": "hardest_moment"
+      },
+      {
+        "id": "hardest_moment",
+        "botTextKey": "flows.loneliness_connection.hardest_moment",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "lonely_moment",
+        "next": "needs"
+      },
+      {
+        "id": "needs",
+        "botTextKey": "flows.loneliness_connection.needs",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "being_seen",
+              "labelKey": "flows.loneliness_connection.needs.being_seen"
+            },
+            {
+              "value": "support",
+              "labelKey": "flows.loneliness_connection.needs.support"
+            },
+            {
+              "value": "shared_activity",
+              "labelKey": "flows.loneliness_connection.needs.shared_activity"
+            },
+            {
+              "value": "other",
+              "labelKey": "common.other_or_not_sure"
+            }
+          ]
+        },
+        "saveAs": "lonely_need",
+        "next": "person_option"
+      },
+      {
+        "id": "person_option",
+        "botTextKey": "flows.loneliness_connection.person_option",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "lonely_person",
+        "next": "small_reach_out_step"
+      },
+      {
+        "id": "small_reach_out_step",
+        "botTextKey": "flows.loneliness_connection.small_reach_out_step",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "lonely_action",
+        "next": "self_compassion"
+      },
+      {
+        "id": "self_compassion",
+        "botTextKey": "flows.loneliness_connection.self_compassion",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "lonely_self_compassion",
+        "next": "summary"
+      },
+      {
+        "id": "summary",
+        "botTextKey": "flows.loneliness_connection.summary",
+        "isSummaryStep": true,
+        "next": null
+      }
+    ]
+  },
+  {
+    "id": "anger_boundaries",
+    "titleKey": "flows.anger_boundaries.title",
+    "steps": [
+      {
+        "id": "intro",
+        "botTextKey": "flows.anger_boundaries.intro",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "anger_topic",
+        "next": "trigger"
+      },
+      {
+        "id": "trigger",
+        "botTextKey": "flows.anger_boundaries.trigger",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "anger_trigger",
+        "next": "expression_style"
+      },
+      {
+        "id": "expression_style",
+        "botTextKey": "flows.anger_boundaries.expression_style",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "express",
+              "labelKey": "flows.anger_boundaries.expression_style.express"
+            },
+            {
+              "value": "suppress",
+              "labelKey": "flows.anger_boundaries.expression_style.suppress"
+            },
+            {
+              "value": "both",
+              "labelKey": "flows.anger_boundaries.expression_style.both"
+            }
+          ]
+        },
+        "saveAs": "anger_expression_style",
+        "next": "need_underneath"
+      },
+      {
+        "id": "need_underneath",
+        "botTextKey": "flows.anger_boundaries.need_underneath",
+        "input": {
+          "type": "buttons",
+          "options": [
+            {
+              "value": "respect",
+              "labelKey": "flows.anger_boundaries.need_underneath.respect"
+            },
+            {
+              "value": "fairness",
+              "labelKey": "flows.anger_boundaries.need_underneath.fairness"
+            },
+            {
+              "value": "space",
+              "labelKey": "flows.anger_boundaries.need_underneath.space"
+            },
+            {
+              "value": "being_heard",
+              "labelKey": "flows.anger_boundaries.need_underneath.being_heard"
+            },
+            {
+              "value": "other",
+              "labelKey": "common.other_or_not_sure"
+            }
+          ]
+        },
+        "saveAs": "anger_need",
+        "next": "constructive_action"
+      },
+      {
+        "id": "constructive_action",
+        "botTextKey": "flows.anger_boundaries.constructive_action",
+        "input": {
+          "type": "text"
+        },
+        "saveAs": "anger_action",
+        "next": "summary"
+      },
+      {
+        "id": "summary",
+        "botTextKey": "flows.anger_boundaries.summary",
+        "isSummaryStep": true,
+        "next": null
+      }
+    ]
+  }
+]
