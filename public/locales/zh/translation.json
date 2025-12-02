@@ -379,19 +379,6 @@
     "confirmation_title": "请检查您的电子邮件",
     "confirmation_message": "我们向您发送了一个确认链接。请检查您的收件箱并点击链接以验证您的电子邮件地址。"
   },
-  "connection": {
-    "title": "连接",
-    "subtitle": "连接您的健康设备和追踪器",
-    "healthkit": "Apple HealthKit",
-    "healthkit_desc": "从Apple HealthKit读取心率和健康数据",
-    "connect_healthkit": "连接HealthKit",
-    "healthkit_connected": "HealthKit已连接",
-    "healthkit_unavailable": "HealthKit在此设备上不可用",
-    "disconnect": "断开连接",
-    "health_data": "健康数据",
-    "heart_rate": "心率",
-    "android_info": "健康连接功能在Android版本的应用中可用。"
-  },
   "shop": {
     "title": "OND商店",
     "subtitle": "加速您的精神进化",
