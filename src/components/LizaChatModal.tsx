@@ -110,7 +110,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
       stateRef.current = newState;
       pushMessage({ from: 'bot', text: bot.text, ui: bot });
       setIsTyping(false);
-    }, 800 + Math.random() * 700);
+    }, 2500 + Math.random() * 1500);
   }
 
   function sendUserValue(value: string | number, label?: string) {
@@ -136,7 +136,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
         pushMessage({ from: 'bot', text: bot.text, ui: bot });
       }
       setIsTyping(false);
-    }, 600 + Math.random() * 500);
+    }, 2000 + Math.random() * 1000);
   }
 
   function handleKeyPress(e: React.KeyboardEvent) {
