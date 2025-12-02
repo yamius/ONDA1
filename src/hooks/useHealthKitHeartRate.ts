@@ -1,11 +1,12 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { Capacitor } from '@capacitor/core';
-import HealthKitHeartRate from '../plugins/healthKitHeartRate';
+import HealthKitHeartRate, { HeartRateUpdateEvent } from '../plugins/healthKitHeartRate';
+import type { PluginListenerHandle } from '@capacitor/core';
 
-type MonitoringMode = 'direct' | 'workout' | null;
+export type MonitoringMode = 'direct' | 'workout' | 'realtime' | null;
 
 interface UseHealthKitHeartRateOptions {
-  pollingInterval?: number; // ms, default 2000 for direct mode
+  pollingInterval?: number;
 }
 
 interface UseHealthKitHeartRateReturn {
@@ -30,8 +31,9 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
   const [isAvailable, setIsAvailable] = useState<boolean | null>(null);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
   const [mode, setMode] = useState<MonitoringMode>(null);
-  const [pollingInterval, setPollingIntervalState] = useState(options?.pollingInterval ?? 2000);
+  const [pollingInterval, setPollingIntervalState] = useState(options?.pollingInterval ?? 1500);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const listenerRef = useRef<PluginListenerHandle | null>(null);
 
   useEffect(() => {
     const checkAvailability = async () => {
@@ -98,6 +100,41 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
     }
   }, []);
 
+  const startRealtimeMonitoring = useCallback(async () => {
+    try {
+      // Set up event listener for real-time updates
+      listenerRef.current = await HealthKitHeartRate.addListener(
+        'heartRateUpdate',
+        (event: HeartRateUpdateEvent) => {
+          console.log('[HealthKit] Real-time HR:', Math.round(event.bpm), 'bpm');
+          setHeartRate(Math.round(event.bpm));
+          setLastUpdated(new Date());
+          setError(null);
+        }
+      );
+
+      // Start the native monitoring
+      await HealthKitHeartRate.startRealtimeMonitoring();
+      console.log('[HealthKit] Real-time monitoring started');
+    } catch (err) {
+      console.error('[HealthKit] Real-time monitoring error:', err);
+      throw err;
+    }
+  }, []);
+
+  const stopRealtimeMonitoring = useCallback(async () => {
+    try {
+      if (listenerRef.current) {
+        await listenerRef.current.remove();
+        listenerRef.current = null;
+      }
+      await HealthKitHeartRate.stopRealtimeMonitoring();
+      console.log('[HealthKit] Real-time monitoring stopped');
+    } catch (err) {
+      console.error('[HealthKit] Stop real-time error:', err);
+    }
+  }, []);
+
   const startMonitoring = useCallback(async (monitoringMode: MonitoringMode = 'direct') => {
     if (!isAvailable) {
       setError('HealthKit is only available on iOS devices');
@@ -115,19 +152,26 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
         clearInterval(intervalRef.current);
         intervalRef.current = null;
       }
+      await stopRealtimeMonitoring();
 
       setIsMonitoring(true);
       setMode(monitoringMode);
       setError(null);
-      
-      // Initial query
-      await queryHeartRateData();
-      
-      // Set up polling based on mode
-      const interval = monitoringMode === 'direct' ? pollingInterval : 5000;
-      intervalRef.current = setInterval(queryHeartRateData, interval);
-      
-      console.log(`[HealthKit] Started ${monitoringMode} mode (polling every ${interval}ms)`);
+
+      if (monitoringMode === 'realtime') {
+        // Use HKAnchoredObjectQuery for instant updates
+        await startRealtimeMonitoring();
+        // Also do an initial query to get current value
+        await queryHeartRateData();
+      } else {
+        // Use polling for direct/workout modes
+        await queryHeartRateData();
+        
+        const interval = monitoringMode === 'direct' ? pollingInterval : 5000;
+        intervalRef.current = setInterval(queryHeartRateData, interval);
+        
+        console.log(`[HealthKit] Started ${monitoringMode} mode (polling every ${interval}ms)`);
+      }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to start heart rate monitoring';
       setError(errorMessage);
@@ -135,21 +179,21 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
       setIsMonitoring(false);
       setMode(null);
     }
-  }, [isAvailable, isAuthorized, requestPermission, queryHeartRateData, pollingInterval]);
+  }, [isAvailable, isAuthorized, requestPermission, queryHeartRateData, pollingInterval, startRealtimeMonitoring, stopRealtimeMonitoring]);
 
   const stopMonitoring = useCallback(() => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
+    stopRealtimeMonitoring();
     setIsMonitoring(false);
     setMode(null);
     console.log('[HealthKit] Stopped monitoring');
-  }, []);
+  }, [stopRealtimeMonitoring]);
 
   const setPollingInterval = useCallback((interval: number) => {
     setPollingIntervalState(interval);
-    // If already monitoring in direct mode, restart with new interval
     if (isMonitoring && mode === 'direct') {
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
@@ -164,8 +208,9 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
+      stopRealtimeMonitoring();
     };
-  }, []);
+  }, [stopRealtimeMonitoring]);
 
   return {
     heartRate,

@@ -60,7 +60,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
   const [hkConnecting, setHkConnecting] = useState(false);
   const [hkAttempted, setHkAttempted] = useState(false);
 
-  const handleHealthKitConnect = async (mode: 'direct' | 'workout') => {
+  const handleHealthKitConnect = async (mode: 'direct' | 'workout' | 'realtime') => {
     setHkConnecting(true);
     setHkAttempted(false);
     try {
@@ -127,9 +127,29 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
               {!hkIsMonitoring ? (
                 <div className="flex gap-2 mb-3">
                   <button
+                    onClick={() => handleHealthKitConnect('realtime')}
+                    disabled={hkConnecting}
+                    className={`flex-1 py-3 px-3 rounded-xl font-medium transition-all flex flex-col items-center justify-center gap-1 ${
+                      hkConnecting
+                        ? isLightTheme
+                          ? 'bg-gray-100 text-gray-500'
+                          : 'bg-white/10 text-white/50'
+                        : isLightTheme
+                        ? 'bg-green-100 hover:bg-green-200 text-green-700'
+                        : 'bg-green-500/20 hover:bg-green-500/30 text-green-400'
+                    }`}
+                    data-testid="button-connect-healthkit-realtime"
+                  >
+                    <Zap className="w-5 h-5" />
+                    <span className="text-sm">{t('connection.healthkit_realtime', 'Real-time')}</span>
+                    <span className={`text-[10px] ${isLightTheme ? 'text-green-600' : 'text-green-300'}`}>
+                      instant
+                    </span>
+                  </button>
+                  <button
                     onClick={() => handleHealthKitConnect('direct')}
                     disabled={hkConnecting}
-                    className={`flex-1 py-3 px-4 rounded-xl font-medium transition-all flex flex-col items-center justify-center gap-1 ${
+                    className={`flex-1 py-3 px-3 rounded-xl font-medium transition-all flex flex-col items-center justify-center gap-1 ${
                       hkConnecting
                         ? isLightTheme
                           ? 'bg-gray-100 text-gray-500'
@@ -143,13 +163,13 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     <Heart className="w-5 h-5" />
                     <span className="text-sm">{t('connection.healthkit_direct', 'Direct')}</span>
                     <span className={`text-[10px] ${isLightTheme ? 'text-pink-600' : 'text-pink-300'}`}>
-                      1.5s polling
+                      1.5s
                     </span>
                   </button>
                   <button
                     onClick={() => handleHealthKitConnect('workout')}
                     disabled={hkConnecting}
-                    className={`flex-1 py-3 px-4 rounded-xl font-medium transition-all flex flex-col items-center justify-center gap-1 ${
+                    className={`flex-1 py-3 px-3 rounded-xl font-medium transition-all flex flex-col items-center justify-center gap-1 ${
                       hkConnecting
                         ? isLightTheme
                           ? 'bg-gray-100 text-gray-500'
@@ -163,7 +183,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     <Activity className="w-5 h-5" />
                     <span className="text-sm">{t('connection.healthkit_workout', 'Workout')}</span>
                     <span className={`text-[10px] ${isLightTheme ? 'text-orange-600' : 'text-orange-300'}`}>
-                      5s polling
+                      5s
                     </span>
                   </button>
                 </div>
@@ -172,9 +192,10 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                   <div className={`flex-1 py-3 px-4 rounded-xl flex items-center justify-center gap-2 ${
                     isLightTheme ? 'bg-green-100 text-green-700' : 'bg-green-500/20 text-green-400'
                   }`}>
-                    {hkMode === 'direct' ? <Heart className="w-5 h-5" /> : <Activity className="w-5 h-5" />}
+                    {hkMode === 'realtime' ? <Zap className="w-5 h-5" /> : 
+                     hkMode === 'direct' ? <Heart className="w-5 h-5" /> : <Activity className="w-5 h-5" />}
                     <span className="font-medium">
-                      {hkMode === 'direct' ? 'Direct Mode' : 'Workout Mode'}
+                      {hkMode === 'realtime' ? 'Real-time' : hkMode === 'direct' ? 'Direct' : 'Workout'}
                     </span>
                   </div>
                   <button

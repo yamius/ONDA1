@@ -9,10 +9,14 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     public let pluginMethods: [CAPPluginMethod] = [
         CAPPluginMethod(name: "isAvailable", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "requestAuthorization", returnType: CAPPluginReturnPromise),
-        CAPPluginMethod(name: "queryHeartRate", returnType: CAPPluginReturnPromise)
+        CAPPluginMethod(name: "queryHeartRate", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "stopRealtimeMonitoring", returnType: CAPPluginReturnPromise)
     ]
     
     private let healthStore = HKHealthStore()
+    private var anchoredQuery: HKAnchoredObjectQuery?
+    private var queryAnchor: HKQueryAnchor?
     
     @objc func isAvailable(_ call: CAPPluginCall) {
         let available = HKHealthStore.isHealthDataAvailable()
@@ -109,5 +113,99 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         }
         
         healthStore.execute(query)
+    }
+    
+    @objc func startRealtimeMonitoring(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            call.reject("HealthKit is not available")
+            return
+        }
+        
+        guard let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate) else {
+            call.reject("Heart rate type is not available")
+            return
+        }
+        
+        // Stop existing query if any
+        if let existingQuery = anchoredQuery {
+            healthStore.stop(existingQuery)
+            anchoredQuery = nil
+        }
+        
+        let unit = HKUnit.count().unitDivided(by: .minute())
+        
+        // Create anchored query for real-time updates
+        let query = HKAnchoredObjectQuery(
+            type: heartRateType,
+            predicate: nil,
+            anchor: queryAnchor,
+            limit: HKObjectQueryNoLimit
+        ) { [weak self] query, samplesOrNil, deletedObjectsOrNil, newAnchor, errorOrNil in
+            guard let self = self else { return }
+            
+            self.queryAnchor = newAnchor
+            
+            if let error = errorOrNil {
+                print("[HealthKit] Initial query error: \(error.localizedDescription)")
+                return
+            }
+            
+            if let samples = samplesOrNil as? [HKQuantitySample], let latestSample = samples.last {
+                let bpm = latestSample.quantity.doubleValue(for: unit)
+                let timestamp = ISO8601DateFormatter().string(from: latestSample.endDate)
+                let sourceName = latestSample.sourceRevision.source.name
+                
+                DispatchQueue.main.async {
+                    self.notifyListeners("heartRateUpdate", data: [
+                        "bpm": bpm,
+                        "timestamp": timestamp,
+                        "sourceName": sourceName,
+                        "isRealtime": true
+                    ])
+                }
+            }
+        }
+        
+        // Set up update handler for real-time data
+        query.updateHandler = { [weak self] query, samplesOrNil, deletedObjectsOrNil, newAnchor, errorOrNil in
+            guard let self = self else { return }
+            
+            self.queryAnchor = newAnchor
+            
+            if let error = errorOrNil {
+                print("[HealthKit] Update error: \(error.localizedDescription)")
+                return
+            }
+            
+            if let samples = samplesOrNil as? [HKQuantitySample] {
+                for sample in samples {
+                    let bpm = sample.quantity.doubleValue(for: unit)
+                    let timestamp = ISO8601DateFormatter().string(from: sample.endDate)
+                    let sourceName = sample.sourceRevision.source.name
+                    
+                    DispatchQueue.main.async {
+                        self.notifyListeners("heartRateUpdate", data: [
+                            "bpm": bpm,
+                            "timestamp": timestamp,
+                            "sourceName": sourceName,
+                            "isRealtime": true
+                        ])
+                    }
+                }
+            }
+        }
+        
+        anchoredQuery = query
+        healthStore.execute(query)
+        
+        call.resolve(["started": true])
+    }
+    
+    @objc func stopRealtimeMonitoring(_ call: CAPPluginCall) {
+        if let query = anchoredQuery {
+            healthStore.stop(query)
+            anchoredQuery = nil
+        }
+        call.resolve(["stopped": true])
     }
 }
