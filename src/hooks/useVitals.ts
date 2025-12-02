@@ -3,17 +3,28 @@ import { goertzelPower, clamp01, ewma } from "./dsp";
 import { useHeartRate } from "./useHeartRate";
 import { useMotion } from "./useMotion";
 import { useNotificationHeartRate } from "./useNotificationHeartRate";
+import { useHealthKitHeartRate } from "./useHealthKitHeartRate";
 
 export function useVitals() {
   const bleHR = useHeartRate();
   const notificationHR = useNotificationHeartRate();
+  const healthKitHR = useHealthKitHeartRate();
   const { activity } = useMotion();
   
   // Priority system for heart rate sources:
   // 1. BLE (real-time, most accurate) - when connected
-  // 2. Notification (periodic updates) - when BLE not connected
-  const currentHR = bleHR.connected ? bleHR.hr : notificationHR.hr;
-  const hrSource = bleHR.connected ? 'ble' : (notificationHR.hr ? 'notification' : null);
+  // 2. HealthKit (iOS) - when monitoring and available
+  // 3. Notification (Android periodic updates) - fallback
+  const currentHR = bleHR.connected 
+    ? bleHR.hr 
+    : (healthKitHR.isMonitoring && healthKitHR.heartRate) 
+      ? healthKitHR.heartRate 
+      : notificationHR.hr;
+  const hrSource = bleHR.connected 
+    ? 'ble' 
+    : (healthKitHR.isMonitoring && healthKitHR.heartRate) 
+      ? 'healthkit' 
+      : (notificationHR.hr ? 'notification' : null);
 
   const [br, setBr] = useState<number | null>(null);
   const [stress, setStress] = useState<number | null>(null);
@@ -51,6 +62,19 @@ export function useVitals() {
       }
     }
   }, [notificationHR.hr, bleHR.connected, bleHR.seriesRef]);
+
+  // Feed HealthKit HR into series when BLE is not connected (iOS)
+  useEffect(() => {
+    if (!bleHR.connected && healthKitHR.isMonitoring && healthKitHR.heartRate != null) {
+      const now = Date.now() / 1000;
+      bleHR.seriesRef.current.push({ t: now, hr: healthKitHR.heartRate });
+      // Keep series at reasonable size
+      if (bleHR.seriesRef.current.length > 200) {
+        bleHR.seriesRef.current.shift();
+      }
+      console.log('[useVitals] Added HealthKit HR to series:', healthKitHR.heartRate);
+    }
+  }, [healthKitHR.heartRate, healthKitHR.isMonitoring, bleHR.connected, bleHR.seriesRef]);
 
   useEffect(() => {
     if (currentHR == null) return;
@@ -205,9 +229,9 @@ export function useVitals() {
     connect: bleHR.connect, 
     disconnect: bleHR.disconnect,
     
-    // Current heart rate (BLE or Notification fallback)
+    // Current heart rate (BLE, HealthKit, or Notification fallback)
     hr: currentHR,
-    hrSource, // 'ble' | 'notification' | null
+    hrSource, // 'ble' | 'healthkit' | 'notification' | null
     
     // Calculated vitals
     br, stress, energy, hrv, csi, recoveryRate, hrTrendSlope, hrAcceleration,
@@ -220,13 +244,27 @@ export function useVitals() {
     stopScan: bleHR.stopScan, 
     platform: bleHR.platform,
     
-    // Notification HR fields
+    // Notification HR fields (Android)
     notificationHR: {
       hr: notificationHR.hr,
       lastUpdate: notificationHR.lastUpdate,
       source: notificationHR.source,
       isEnabled: notificationHR.isEnabled,
       requestPermission: notificationHR.requestPermission
+    },
+    
+    // HealthKit HR fields (iOS)
+    healthKitHR: {
+      hr: healthKitHR.heartRate,
+      isAvailable: healthKitHR.isAvailable,
+      isAuthorized: healthKitHR.isAuthorized,
+      isMonitoring: healthKitHR.isMonitoring,
+      mode: healthKitHR.mode,
+      lastUpdated: healthKitHR.lastUpdated,
+      error: healthKitHR.error,
+      requestPermission: healthKitHR.requestPermission,
+      startMonitoring: healthKitHR.startMonitoring,
+      stopMonitoring: healthKitHR.stopMonitoring
     }
   };
 }
