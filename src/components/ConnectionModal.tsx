@@ -316,6 +316,23 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                 </button>
               )}
             </div>
+
+            {/* Connection instructions */}
+            <div className={`mt-3 p-3 rounded-lg ${
+              isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+            }`}>
+              <p className={`text-xs font-medium mb-2 ${
+                isLightTheme ? 'text-gray-700' : 'text-white/80'
+              }`}>
+                {t('connection.instructions_title', 'Connection instructions:')}
+              </p>
+              <div className={`text-xs space-y-1 ${
+                isLightTheme ? 'text-gray-600' : 'text-white/60'
+              }`}>
+                <p>{t('connection.instructions_phone', 'On phone: Close standard tracker app. Turn on Bluetooth')}</p>
+                <p>{t('connection.instructions_tracker', 'On tracker: Settings → Share heart rate → Enable')}</p>
+              </div>
+            </div>
             
             {/* Show available devices after scan completes (Android only) */}
             {availableDevices && availableDevices.length > 0 && connectToDevice && (
