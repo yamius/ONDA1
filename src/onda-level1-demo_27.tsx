@@ -3666,8 +3666,6 @@ const OndaLevel1 = () => {
             setUserProfile(updatedProfile);
           }}
           isLightTheme={isLightTheme}
-          vitalsData={vitalsData}
-          healthConnectData={healthConnectData}
         />
       )}
 
