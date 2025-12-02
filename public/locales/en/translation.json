@@ -1507,5 +1507,39 @@
     "yes": "Yes",
     "no": "No",
     "other_or_not_sure": "Other / Not sure"
+  },
+  "eliza": {
+    "empty": [
+      "I'm here and listening. You can start wherever feels easiest.",
+      "Sometimes beginning is the hardest part. What's on your mind right now?",
+      "Take your time. When you're ready, tell me a little bit about what's going on."
+    ],
+    "greeting": [
+      "Hello. What would you like to talk about today?",
+      "Hi. How are you feeling lately — even if the answer is complicated?",
+      "Hey. Is there anything that has been staying in your mind more than it should?"
+    ],
+    "thanks": [
+      "You're welcome. Is there anything else you'd like to explore?",
+      "I'm glad if this feels even a little helpful. What are you thinking about now?",
+      "Any time. If you want, we can keep looking at what's coming up for you."
+    ],
+    "fallback": [
+      "Tell me more about that.",
+      "How does that make you feel?",
+      "What do you think that means for you?",
+      "Can you say more about that?",
+      "What would feeling even 5% better about \"{{fragment}}\" look like in practice?"
+    ],
+    "feelings": [
+      "What does it feel like in your body when you experience {{fragment}}?",
+      "When did you first start feeling this way?",
+      "What helps, even a little, when you feel {{fragment}}?"
+    ],
+    "thinking": [
+      "What's the main thought running through your mind about this?",
+      "If you had to name one thing that keeps coming back, what would it be?",
+      "What would change if you thought about it differently?"
+    ]
   }
 }

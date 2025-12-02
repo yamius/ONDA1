@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import { X, Send, Sparkles } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Eliza } from '../bot/eliza';
@@ -19,11 +19,14 @@ type ChatMessage = {
   ui?: BotMessage;
 };
 
-const eliza = new Eliza();
-
 export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModalProps) {
-  const { t } = useTranslation();
-  const [engine] = useState(() => new ConversationEngine({ eliza, flows, t }));
+  const { t, i18n } = useTranslation();
+  const lang = i18n.language?.substring(0, 2) || 'en';
+  
+  const engine = useMemo(() => {
+    const eliza = new Eliza(t, lang);
+    return new ConversationEngine({ eliza, flows, t });
+  }, [t, lang]);
   const [state, setState] = useState<EngineState>(() => createInitialState());
   const stateRef = useRef<EngineState>(state);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
