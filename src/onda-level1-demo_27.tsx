@@ -3183,10 +3183,13 @@ const OndaLevel1 = () => {
                 onClick={() => { 
                   setActiveCircuit(activeCircuit + 1); 
                   setSelectedLevel(activeCircuit + 1); 
+                  // Прокрутка #root контейнера (где происходит скролл в этом приложении)
+                  const rootElement = document.getElementById('root');
+                  if (rootElement) rootElement.scrollTop = 0;
+                  // Резервные варианты
                   document.body.scrollTop = 0;
                   document.documentElement.scrollTop = 0;
-                  const mainContainer = document.querySelector('[data-main-container]');
-                  if (mainContainer) mainContainer.scrollTop = 0;
+                  window.scrollTo(0, 0);
                 }}
                 className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg ${
                   activeCircuit === 1
