@@ -32,17 +32,8 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputText, setInputText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
-  const [isTypingFading, setIsTypingFading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-
-  const stopTypingWithFade = () => {
-    setIsTypingFading(true);
-    setTimeout(() => {
-      setIsTyping(false);
-      setIsTypingFading(false);
-    }, 800);
-  };
 
   useEffect(() => {
     if (!isOpen) {
@@ -118,8 +109,8 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
       setState(newState);
       stateRef.current = newState;
       pushMessage({ from: 'bot', text: bot.text, ui: bot });
-      stopTypingWithFade();
-      setTimeout(() => inputRef.current?.focus(), 850);
+      setIsTyping(false);
+      setTimeout(() => inputRef.current?.focus(), 50);
     }, 2500 + Math.random() * 1500);
   }
 
@@ -145,8 +136,8 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
         stateRef.current = newState;
         pushMessage({ from: 'bot', text: bot.text, ui: bot });
       }
-      stopTypingWithFade();
-      setTimeout(() => inputRef.current?.focus(), 850);
+      setIsTyping(false);
+      setTimeout(() => inputRef.current?.focus(), 50);
     }, 2000 + Math.random() * 1000);
   }
 
@@ -239,19 +230,17 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
             </div>
           ))}
           
-          <div 
-            className={`flex justify-start typing-indicator transition-all duration-700 ${
-              isTyping ? 'opacity-100 max-h-20' : 'opacity-0 max-h-0 overflow-hidden'
-            } ${isTypingFading ? 'opacity-0' : ''}`}
-          >
-            <div className="bg-slate-700/80 rounded-2xl rounded-bl-md px-4 py-3">
-              <div className="flex items-center gap-1.5">
-                <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
-                <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
-                <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
+          {isTyping && (
+            <div className="flex justify-start">
+              <div className="bg-slate-700/80 rounded-2xl rounded-bl-md px-4 py-3">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
+                  <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
+                </div>
               </div>
             </div>
-          </div>
+          )}
           
           <div ref={messagesEndRef} />
         </div>
