@@ -136,3 +136,20 @@
 .message-appear {
   animation: messageFadeIn 3.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
+
+@keyframes typingFadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.typing-indicator {
+  transition: opacity 0.8s ease-out;
+}
+
+.typing-indicator.fade-out {
+  animation: typingFadeOut 0.8s ease-out forwards;
+}

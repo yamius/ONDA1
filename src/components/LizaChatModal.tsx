@@ -32,8 +32,17 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputText, setInputText] = useState('');
   const [isTyping, setIsTyping] = useState(false);
+  const [isTypingFading, setIsTypingFading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  const stopTypingWithFade = () => {
+    setIsTypingFading(true);
+    setTimeout(() => {
+      setIsTyping(false);
+      setIsTypingFading(false);
+    }, 800);
+  };
 
   useEffect(() => {
     if (!isOpen) {
@@ -109,8 +118,8 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
       setState(newState);
       stateRef.current = newState;
       pushMessage({ from: 'bot', text: bot.text, ui: bot });
-      setIsTyping(false);
-      setTimeout(() => inputRef.current?.focus(), 50);
+      stopTypingWithFade();
+      setTimeout(() => inputRef.current?.focus(), 850);
     }, 2500 + Math.random() * 1500);
   }
 
@@ -136,8 +145,8 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
         stateRef.current = newState;
         pushMessage({ from: 'bot', text: bot.text, ui: bot });
       }
-      setIsTyping(false);
-      setTimeout(() => inputRef.current?.focus(), 50);
+      stopTypingWithFade();
+      setTimeout(() => inputRef.current?.focus(), 850);
     }, 2000 + Math.random() * 1000);
   }
 
@@ -231,7 +240,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
           ))}
           
           {isTyping && (
-            <div className="flex justify-start">
+            <div className={`flex justify-start typing-indicator ${isTypingFading ? 'fade-out' : ''}`}>
               <div className="bg-slate-700/80 rounded-2xl rounded-bl-md px-4 py-3">
                 <div className="flex items-center gap-1.5">
                   <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
