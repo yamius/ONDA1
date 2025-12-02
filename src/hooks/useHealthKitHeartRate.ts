@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback, useRef } from 'react';
 import { Capacitor } from '@capacitor/core';
-import { Health, type PermissionsRequest, type PermissionResponse } from 'capacitor-health';
+import HealthKitHeartRate from '../plugins/healthKitHeartRate';
 
 interface UseHealthKitHeartRateReturn {
   heartRate: number | null;
@@ -10,40 +10,29 @@ interface UseHealthKitHeartRateReturn {
   startMonitoring: () => Promise<void>;
   stopMonitoring: () => void;
   error: string | null;
+  lastUpdated: Date | null;
 }
 
-/**
- * Hook for accessing heart rate data from Apple HealthKit (iOS only)
- * 
- * For web/Android: This hook will gracefully return null values and isAvailable=false
- * For iOS: Provides real-time heart rate monitoring from HealthKit
- * 
- * Usage:
- * const { heartRate, isAvailable, requestPermission, startMonitoring } = useHealthKitHeartRate();
- * 
- * // Check if HealthKit is available (iOS only)
- * if (isAvailable) {
- *   await requestPermission();
- *   await startMonitoring();
- * }
- */
 export function useHealthKitHeartRate(): UseHealthKitHeartRateReturn {
   const [heartRate, setHeartRate] = useState<number | null>(null);
   const [isAuthorized, setIsAuthorized] = useState<boolean | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isMonitoring, setIsMonitoring] = useState(false);
   const [isAvailable, setIsAvailable] = useState<boolean | null>(null);
+  const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
-  // Check if HealthKit is available on this device
   useEffect(() => {
     const checkAvailability = async () => {
       if (Capacitor.getPlatform() !== 'ios' || !Capacitor.isNativePlatform()) {
+        console.log('[HealthKit] Not iOS native platform, HealthKit unavailable');
         setIsAvailable(false);
         return;
       }
 
       try {
-        const result = await Health.isHealthAvailable();
+        const result = await HealthKitHeartRate.isAvailable();
+        console.log('[HealthKit] Availability check:', result.available);
         setIsAvailable(result.available);
       } catch (err) {
         console.error('[HealthKit] Availability check error:', err);
@@ -54,126 +43,97 @@ export function useHealthKitHeartRate(): UseHealthKitHeartRateReturn {
     checkAvailability();
   }, []);
 
-  // Request HealthKit permissions
-  const requestPermission = async () => {
+  const requestPermission = useCallback(async () => {
     if (!isAvailable) {
       setError('HealthKit is only available on iOS devices');
       return;
     }
 
     try {
-      const permissionsRequest: PermissionsRequest = {
-        permissions: ['READ_HEART_RATE']
-      };
-
-      const result: PermissionResponse = await Health.requestHealthPermissions(permissionsRequest);
-
-      // Check if heart rate permission was granted
-      const granted = result.permissions[0]?.READ_HEART_RATE === true;
-      setIsAuthorized(granted);
+      console.log('[HealthKit] Requesting authorization...');
+      const result = await HealthKitHeartRate.requestAuthorization();
+      console.log('[HealthKit] Authorization result:', result);
+      setIsAuthorized(result.authorized);
       
-      if (!granted) {
+      if (!result.authorized) {
         setError('HealthKit permission denied');
+      } else {
+        setError(null);
       }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to request HealthKit permission';
       setError(errorMessage);
       console.error('[HealthKit] Permission error:', err);
     }
-  };
+  }, [isAvailable]);
 
-  // Start monitoring heart rate
-  const startMonitoring = async () => {
+  const queryHeartRateData = useCallback(async () => {
+    try {
+      console.log('[HealthKit] Querying heart rate data...');
+      const result = await HealthKitHeartRate.queryHeartRate({
+        limit: 10,
+        minutesAgo: 30
+      });
+      
+      console.log('[HealthKit] Query result:', result);
+      
+      if (result.latestBpm !== null) {
+        setHeartRate(Math.round(result.latestBpm));
+        setLastUpdated(new Date());
+        setError(null);
+      } else if (result.count === 0) {
+        console.log('[HealthKit] No heart rate samples found in the last 30 minutes');
+      }
+    } catch (err) {
+      console.error('[HealthKit] Query error:', err);
+    }
+  }, []);
+
+  const startMonitoring = useCallback(async () => {
     if (!isAvailable) {
       setError('HealthKit is only available on iOS devices');
       return;
     }
 
     if (isAuthorized !== true) {
-      setError('HealthKit permission not granted. Please request permission first.');
-      return;
+      console.log('[HealthKit] Not authorized, requesting permission first');
+      await requestPermission();
     }
 
     try {
       setIsMonitoring(true);
       setError(null);
-
-      // Query workouts to get heart rate data
-      const now = new Date();
-      const oneHourAgo = new Date(now.getTime() - 60 * 60 * 1000);
-
-      const result = await Health.queryWorkouts({
-        startDate: oneHourAgo.toISOString(),
-        endDate: now.toISOString(),
-        includeHeartRate: true,
-        includeRoute: false,
-        includeSteps: false
-      });
-
-      // Get the most recent heart rate sample from workouts
-      if (result.workouts && result.workouts.length > 0) {
-        for (const workout of result.workouts) {
-          if (workout.heartRate && workout.heartRate.length > 0) {
-            // Get latest heart rate sample
-            const latestHR = workout.heartRate[workout.heartRate.length - 1];
-            setHeartRate(latestHR.bpm);
-            break;
-          }
-        }
+      
+      await queryHeartRateData();
+      
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
       }
-
+      intervalRef.current = setInterval(queryHeartRateData, 5000);
+      
+      console.log('[HealthKit] Started monitoring (polling every 5 seconds)');
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to start heart rate monitoring';
       setError(errorMessage);
       console.error('[HealthKit] Monitoring error:', err);
       setIsMonitoring(false);
     }
-  };
+  }, [isAvailable, isAuthorized, requestPermission, queryHeartRateData]);
 
-  // Stop monitoring
-  const stopMonitoring = () => {
+  const stopMonitoring = useCallback(() => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
     setIsMonitoring(false);
-  };
+    console.log('[HealthKit] Stopped monitoring');
+  }, []);
 
-  // Poll for updates while monitoring (every 10 seconds)
-  useEffect(() => {
-    if (!isMonitoring || !isAvailable) return;
-
-    const interval = setInterval(async () => {
-      try {
-        const now = new Date();
-        const fiveMinutesAgo = new Date(now.getTime() - 5 * 60 * 1000);
-
-        const result = await Health.queryWorkouts({
-          startDate: fiveMinutesAgo.toISOString(),
-          endDate: now.toISOString(),
-          includeHeartRate: true,
-          includeRoute: false,
-          includeSteps: false
-        });
-
-        // Get the most recent heart rate sample
-        if (result.workouts && result.workouts.length > 0) {
-          for (const workout of result.workouts) {
-            if (workout.heartRate && workout.heartRate.length > 0) {
-              const latestHR = workout.heartRate[workout.heartRate.length - 1];
-              setHeartRate(latestHR.bpm);
-              break;
-            }
-          }
-        }
-      } catch (err) {
-        console.error('[HealthKit] Polling error:', err);
-      }
-    }, 10000); // Poll every 10 seconds
-
-    return () => clearInterval(interval);
-  }, [isMonitoring, isAvailable]);
-
-  // Cleanup on unmount
   useEffect(() => {
     return () => {
-      stopMonitoring();
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
     };
   }, []);
 
@@ -184,6 +144,7 @@ export function useHealthKitHeartRate(): UseHealthKitHeartRateReturn {
     requestPermission,
     startMonitoring,
     stopMonitoring,
-    error
+    error,
+    lastUpdated
   };
 }
