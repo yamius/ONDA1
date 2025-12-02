@@ -1,7 +1,9 @@
-import React from 'react';
-import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap } from 'lucide-react';
+import { useState } from 'react';
+import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, Watch, CheckCircle, AlertCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Capacitor } from '@capacitor/core';
 import { HealthConnectCompactPanel } from './HealthConnectCompactPanel';
+import { useHealthKitHeartRate } from '../hooks/useHealthKitHeartRate';
 import type { HealthConnectHook } from '../hooks/useHealthConnect';
 
 interface ConnectionModalProps {
@@ -38,6 +40,39 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
     isScanning, availableDevices, connectToDevice, stopScan, platform
   } = vitalsData;
   const { connected: hcConnected, connect: hcConnect, disconnect: hcDisconnect } = healthConnectData;
+  
+  const isIOS = Capacitor.getPlatform() === 'ios' && Capacitor.isNativePlatform();
+  const isAndroid = Capacitor.getPlatform() === 'android';
+  
+  const {
+    heartRate: hkHeartRate,
+    isAvailable: hkIsAvailable,
+    isAuthorized: hkIsAuthorized,
+    requestPermission: hkRequestPermission,
+    startMonitoring: hkStartMonitoring,
+    error: hkError
+  } = useHealthKitHeartRate();
+  
+  const [hkConnecting, setHkConnecting] = useState(false);
+  const [hkAttempted, setHkAttempted] = useState(false);
+
+  const handleHealthKitConnect = async () => {
+    setHkConnecting(true);
+    setHkAttempted(false);
+    try {
+      await hkRequestPermission();
+      await hkStartMonitoring();
+    } catch (err) {
+      console.error('[HealthKit] Connection error:', err);
+    } finally {
+      setHkConnecting(false);
+      setHkAttempted(true);
+    }
+  };
+  
+  const hkIsConnected = hkIsAuthorized === true;
+  const hkShowSuccess = hkAttempted && hkIsConnected && !hkError;
+  const hkAvailabilityChecked = hkIsAvailable !== null;
 
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4">
@@ -59,68 +94,161 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
         </button>
 
         <div className="text-center mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl font-light mb-2">Connection</h2>
+          <h2 className="text-2xl sm:text-3xl font-light mb-2">{t('connection.title', 'Connection')}</h2>
           <p className={`text-xs sm:text-sm ${isLightTheme ? 'text-gray-600' : 'text-white/70'}`}>
             {t('connection.subtitle', 'Connect your health devices and trackers')}
           </p>
         </div>
 
         <div className="space-y-6">
-          {/* Health Connect Section */}
-          <div>
-            <h3 className={`text-sm font-semibold mb-3 ${
-              isLightTheme ? 'text-gray-700' : 'text-white/80'
-            }`}>
-              {t('connection.health_connect', 'Health Connect')}
-            </h3>
-            <p className={`text-xs mb-3 ${
-              isLightTheme ? 'text-gray-600' : 'text-white/60'
-            }`}>
-              {t('connection.health_connect_desc', 'Read health data from Google Health Connect (Android) or Apple HealthKit (iOS)')}
-            </p>
-            
-            <div className="flex gap-3 mb-3">
-              <button
-                onClick={hcConnect}
-                disabled={hcConnected}
-                className={`${hcConnected ? 'flex-1' : 'w-full'} py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
-                  hcConnected
-                    ? isLightTheme
-                      ? 'bg-green-100 text-green-700'
-                      : 'bg-green-500/20 text-green-400'
-                    : isLightTheme
-                    ? 'bg-purple-100 hover:bg-purple-200 text-purple-700'
-                    : 'bg-purple-500/20 hover:bg-purple-500/30 text-purple-400'
-                } ${hcConnected ? 'cursor-default' : ''}`}
-                data-testid="button-connect-health-connect"
-              >
-                <Moon className="w-5 h-5" />
-                {hcConnected 
-                  ? t('settings.health_connect_connected', 'Health Connect Connected') 
-                  : t('settings.connect_health_connect', 'Connect Health Connect')}
-              </button>
+          {/* Apple HealthKit Section (iOS only) */}
+          {isIOS && (
+            <div>
+              <h3 className={`text-sm font-semibold mb-3 ${
+                isLightTheme ? 'text-gray-700' : 'text-white/80'
+              }`}>
+                {t('connection.healthkit', 'Apple HealthKit')}
+              </h3>
+              <p className={`text-xs mb-3 ${
+                isLightTheme ? 'text-gray-600' : 'text-white/60'
+              }`}>
+                {t('connection.healthkit_desc', 'Connect Apple Watch and fitness trackers via HealthKit for heart rate monitoring')}
+              </p>
               
-              {hcConnected && (
+              <div className="flex gap-3 mb-3">
                 <button
-                  onClick={hcDisconnect}
-                  className={`flex-1 py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
-                    isLightTheme
-                      ? 'bg-red-100 hover:bg-red-200 text-red-700'
-                      : 'bg-red-500/20 hover:bg-red-500/30 text-red-400'
-                  }`}
-                  data-testid="button-disconnect-health-connect"
+                  onClick={handleHealthKitConnect}
+                  disabled={hkConnecting || hkIsConnected}
+                  className={`w-full py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
+                    hkIsConnected
+                      ? isLightTheme
+                        ? 'bg-green-100 text-green-700'
+                        : 'bg-green-500/20 text-green-400'
+                      : hkConnecting
+                      ? isLightTheme
+                        ? 'bg-gray-100 text-gray-500'
+                        : 'bg-white/10 text-white/50'
+                      : isLightTheme
+                      ? 'bg-pink-100 hover:bg-pink-200 text-pink-700'
+                      : 'bg-pink-500/20 hover:bg-pink-500/30 text-pink-400'
+                  } ${(hkConnecting || hkIsConnected) ? 'cursor-default' : ''}`}
+                  data-testid="button-connect-healthkit"
                 >
-                  <X className="w-5 h-5" />
-                  {t('settings.health_connect_disconnect', 'Disconnect')}
+                  <Watch className="w-5 h-5" />
+                  {hkConnecting 
+                    ? t('connection.healthkit_connecting', 'Connecting...')
+                    : hkIsConnected
+                    ? t('connection.healthkit_connected', 'HealthKit Connected')
+                    : t('connection.healthkit_connect', 'Connect HealthKit')}
                 </button>
+              </div>
+
+              {hkError && (
+                <div className={`flex items-center gap-2 p-3 rounded-lg mb-3 ${
+                  isLightTheme ? 'bg-red-100 text-red-700' : 'bg-red-500/20 text-red-400'
+                }`}>
+                  <AlertCircle className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-xs">{hkError}</span>
+                </div>
+              )}
+
+              {hkShowSuccess && (
+                <div className={`flex items-center gap-2 p-3 rounded-lg mb-3 ${
+                  isLightTheme ? 'bg-green-100 text-green-700' : 'bg-green-500/20 text-green-400'
+                }`}>
+                  <CheckCircle className="w-4 h-4 flex-shrink-0" />
+                  <span className="text-xs">{t('connection.healthkit_success', 'Successfully connected to HealthKit')}</span>
+                </div>
+              )}
+
+              {hkIsConnected && (
+                <div className={`p-4 rounded-xl ${
+                  isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                }`}>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <Heart className={`w-6 h-6 ${hkHeartRate ? 'text-red-500 animate-pulse' : 'text-gray-400'}`} />
+                      <div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
+                          {t('connection.healthkit_hr', 'Heart Rate from HealthKit')}
+                        </div>
+                        <div className="text-xl font-semibold">
+                          {hkHeartRate ?? '--'} <span className="text-sm font-normal">bpm</span>
+                        </div>
+                      </div>
+                    </div>
+                    <Watch className={`w-5 h-5 ${isLightTheme ? 'text-gray-400' : 'text-white/40'}`} />
+                  </div>
+                </div>
+              )}
+
+              {hkAvailabilityChecked && hkIsAvailable === false && (
+                <div className={`p-3 rounded-lg text-xs ${
+                  isLightTheme ? 'bg-yellow-100 text-yellow-700' : 'bg-yellow-500/20 text-yellow-400'
+                }`}>
+                  {t('connection.healthkit_not_available', 'HealthKit is not available on this device')}
+                </div>
               )}
             </div>
+          )}
 
-            <HealthConnectCompactPanel 
-              isLightTheme={isLightTheme} 
-              data={healthConnectData.lastUpdate}
-            />
-          </div>
+          {/* Health Connect Section (Android) */}
+          {isAndroid && (
+            <div>
+              <h3 className={`text-sm font-semibold mb-3 ${
+                isLightTheme ? 'text-gray-700' : 'text-white/80'
+              }`}>
+                {t('connection.health_connect', 'Health Connect')}
+              </h3>
+              <p className={`text-xs mb-3 ${
+                isLightTheme ? 'text-gray-600' : 'text-white/60'
+              }`}>
+                {t('connection.health_connect_desc', 'Read health data from Google Health Connect')}
+              </p>
+              
+              <div className="flex gap-3 mb-3">
+                <button
+                  onClick={hcConnect}
+                  disabled={hcConnected}
+                  className={`${hcConnected ? 'flex-1' : 'w-full'} py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
+                    hcConnected
+                      ? isLightTheme
+                        ? 'bg-green-100 text-green-700'
+                        : 'bg-green-500/20 text-green-400'
+                      : isLightTheme
+                      ? 'bg-purple-100 hover:bg-purple-200 text-purple-700'
+                      : 'bg-purple-500/20 hover:bg-purple-500/30 text-purple-400'
+                  } ${hcConnected ? 'cursor-default' : ''}`}
+                  data-testid="button-connect-health-connect"
+                >
+                  <Moon className="w-5 h-5" />
+                  {hcConnected 
+                    ? t('settings.health_connect_connected', 'Health Connect Connected') 
+                    : t('settings.connect_health_connect', 'Connect Health Connect')}
+                </button>
+                
+                {hcConnected && (
+                  <button
+                    onClick={hcDisconnect}
+                    className={`flex-1 py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
+                      isLightTheme
+                        ? 'bg-red-100 hover:bg-red-200 text-red-700'
+                        : 'bg-red-500/20 hover:bg-red-500/30 text-red-400'
+                    }`}
+                    data-testid="button-disconnect-health-connect"
+                  >
+                    <X className="w-5 h-5" />
+                    {t('settings.health_connect_disconnect', 'Disconnect')}
+                  </button>
+                )}
+              </div>
+
+              <HealthConnectCompactPanel 
+                isLightTheme={isLightTheme} 
+                data={healthConnectData.lastUpdate}
+              />
+            </div>
+          )}
 
           {/* Bluetooth Heart Rate Monitor Section */}
           <div>

@@ -4,7 +4,7 @@ import { Health, type PermissionsRequest, type PermissionResponse } from 'capaci
 
 interface UseHealthKitHeartRateReturn {
   heartRate: number | null;
-  isAvailable: boolean;
+  isAvailable: boolean | null;
   isAuthorized: boolean | null;
   requestPermission: () => Promise<void>;
   startMonitoring: () => Promise<void>;
@@ -32,7 +32,7 @@ export function useHealthKitHeartRate(): UseHealthKitHeartRateReturn {
   const [isAuthorized, setIsAuthorized] = useState<boolean | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [isMonitoring, setIsMonitoring] = useState(false);
-  const [isAvailable, setIsAvailable] = useState(false);
+  const [isAvailable, setIsAvailable] = useState<boolean | null>(null);
 
   // Check if HealthKit is available on this device
   useEffect(() => {
