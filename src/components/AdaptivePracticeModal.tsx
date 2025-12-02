@@ -1005,7 +1005,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         )}
 
         {practiceState === 'complete' && (
-          <div className="flex items-center justify-center min-h-screen p-4 sm:p-6">
+          <div className="relative z-10 flex items-center justify-center min-h-screen p-4 sm:p-6">
             <div className="max-w-2xl w-full text-center space-y-4 sm:space-y-8">
               <div className="text-6xl sm:text-8xl md:text-9xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '1s' }}>✨</div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">{t('practices.completed')}</h2>
@@ -1018,18 +1018,47 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                 </div>
               )}
 
-              <div className="bg-black/40 backdrop-blur-md rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 sm:space-y-6 border border-white/20 shadow-2xl">
+              <div className="bg-black/40 backdrop-blur-md rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border border-white/20 shadow-2xl">
+                {/* Row 1: OND Amount */}
                 <div className="text-4xl sm:text-5xl md:text-7xl font-mono text-yellow-400 drop-shadow-2xl animate-pulse">
                   +{earnedOnd} OND
                 </div>
-                <div className="text-sm sm:text-base text-gray-300 space-y-2">
-                  <p>{t('practices.time')}: {formatTime(practiceTime)} / {formatTime(practice.targetTime)}</p>
-                  <p>{t('labels.stress')}: {initialMetrics.stress}% → {vitalsData.stress !== null ? Math.round(vitalsData.stress) : '--'}%</p>
-                  <p>{t('labels.energy')}: {initialMetrics.energy}% → {vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</p>
+                
+                {/* Row 2: Quality + Time - symmetric: numbers in center */}
+                <div className="flex justify-center items-center text-sm sm:text-base">
+                  <div className="flex items-center justify-end gap-2 w-[140px]">
+                    <span className="text-gray-300">{t('practices.quality')}</span>
+                    <span className="font-bold text-lg sm:text-xl text-emerald-400">{qualityScore}%</span>
+                  </div>
+                  <div className="w-px h-6 bg-white/30 mx-3" />
+                  <div className="flex items-center justify-start gap-2 w-[140px]">
+                    <span className="font-bold text-lg sm:text-xl text-white">{formatTime(practiceTime)}</span>
+                    <span className="text-gray-300">{t('practices.time')}</span>
+                  </div>
                 </div>
                 
-                <div className="pt-2 border-t border-white/10">
-                  <p className="text-sm text-gray-400 mb-2">{t('practices.rate_practice', 'Rate this practice')}</p>
+                {/* Row 3: Stress + Energy - symmetric: numbers in center */}
+                <div className="flex justify-center items-start text-sm sm:text-base">
+                  <div className="flex flex-col items-end w-[140px]">
+                    <div className="flex items-center gap-1 whitespace-nowrap">
+                      <span className="text-gray-300">{t('labels.stress')}</span>
+                      <span className="font-bold text-red-400">{vitalsData.stress !== null ? Math.round(vitalsData.stress) : '--'}%</span>
+                    </div>
+                    <Activity className="w-4 h-4 text-red-400 mt-1" />
+                  </div>
+                  <div className="w-px h-10 bg-white/30 mx-3" />
+                  <div className="flex flex-col items-start w-[140px]">
+                    <div className="flex items-center gap-1 whitespace-nowrap">
+                      <span className="font-bold text-blue-400">{vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</span>
+                      <span className="text-gray-300">{t('labels.energy')}</span>
+                    </div>
+                    <Zap className="w-4 h-4 text-blue-400 mt-1" />
+                  </div>
+                </div>
+                
+                {/* Row 4: Star Rating */}
+                <div className="pt-2">
+                  <p className="text-sm text-gray-400 mb-2">{t('practices.rate_practice') || 'Rate this practice'}</p>
                   <div className="flex justify-center gap-2">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <button
