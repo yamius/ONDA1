@@ -181,7 +181,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
           {messages.map((msg) => (
             <div
               key={msg.id}
-              className={`flex ${msg.from === 'user' ? 'justify-end' : 'justify-start'}`}
+              className={`flex message-appear ${msg.from === 'user' ? 'justify-end' : 'justify-start'}`}
             >
               <div
                 className={`max-w-[85%] rounded-2xl px-4 py-3 ${
