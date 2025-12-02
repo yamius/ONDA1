@@ -54,12 +54,21 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       
       const platform = Capacitor.getPlatform();
       const isNative = Capacitor.isNativePlatform();
-      console.log('[Auth] Platform:', platform, 'isNative:', isNative);
+      const isAndroidWebView = !!(window.Android && typeof window.Android.openExternalBrowser === 'function');
+      console.log('[Auth] Platform:', platform, 'isNative:', isNative, 'isAndroidWebView:', isAndroidWebView);
       
-      // Для native iOS/Android используем capacitor://localhost
-      const redirectUrl = isNative 
-        ? 'capacitor://localhost'
-        : window.location.origin;
+      // Выбор redirect URL в зависимости от платформы
+      let redirectUrl: string;
+      if (isAndroidWebView) {
+        // Android WebView использует deep link схему
+        redirectUrl = 'com.onda.app://callback';
+      } else if (platform === 'ios' && isNative) {
+        // iOS Capacitor использует capacitor://localhost
+        redirectUrl = 'capacitor://localhost';
+      } else {
+        // Браузер использует текущий origin
+        redirectUrl = window.location.origin;
+      }
       
       console.log('[Auth] Redirect URL:', redirectUrl);
       
@@ -82,14 +91,14 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       console.log('[Auth] OAuth URL:', oauthUrl);
       
       // Открываем OAuth в зависимости от платформы
-      if (platform === 'ios') {
+      if (platform === 'ios' && isNative) {
         console.log('[Auth] Opening OAuth in Safari (iOS) with popover');
         await Browser.open({ 
           url: oauthUrl,
           presentationStyle: 'popover',
         });
-      } else if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
-        console.log('[Auth] Opening OAuth in external browser (Android)');
+      } else if (isAndroidWebView) {
+        console.log('[Auth] Opening OAuth in external browser (Android WebView)');
         window.Android.openExternalBrowser(oauthUrl);
       } else {
         // Fallback для браузера
@@ -108,19 +117,25 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       
       const platform = Capacitor.getPlatform();
       const isNative = Capacitor.isNativePlatform();
-      console.log('[Auth] Platform:', platform, 'isNative:', isNative);
+      const isAndroidWebView = !!(window.Android && typeof window.Android.openExternalBrowser === 'function');
+      console.log('[Auth] Platform:', platform, 'isNative:', isNative, 'isAndroidWebView:', isAndroidWebView);
       
       // На iOS используем native Apple Sign-In
-      if (platform === 'ios') {
+      if (platform === 'ios' && isNative) {
         console.log('[Auth] Using native Apple Sign-In on iOS');
         await handleNativeAppleSignIn();
         return;
       }
       
-      // Для web и Android используем OAuth flow
-      const redirectUrl = isNative 
-        ? 'capacitor://localhost'
-        : window.location.origin;
+      // Выбор redirect URL в зависимости от платформы
+      let redirectUrl: string;
+      if (isAndroidWebView) {
+        // Android WebView использует deep link схему
+        redirectUrl = 'com.onda.app://callback';
+      } else {
+        // Браузер использует текущий origin
+        redirectUrl = window.location.origin;
+      }
       
       console.log('[Auth] Using OAuth flow, redirect URL:', redirectUrl);
       
@@ -145,8 +160,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       
       console.log('[Auth] Full OAuth URL:', oauthUrl);
       
-      if (window.Android && typeof window.Android.openExternalBrowser === 'function') {
-        console.log('[Auth] Opening OAuth in external browser (Android)');
+      if (isAndroidWebView) {
+        console.log('[Auth] Opening OAuth in external browser (Android WebView)');
         window.Android.openExternalBrowser(oauthUrl);
       } else {
         console.log('[Auth] Opening OAuth in same window (browser)');
