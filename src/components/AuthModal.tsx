@@ -381,7 +381,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
           </div>
         </div>
 
-        <div className="space-y-2 sm:space-y-3">
+        <div className="space-y-4 sm:space-y-6">
           <button
             onClick={handleGoogleSignIn}
             className={`w-full py-2.5 sm:py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 text-sm sm:text-base ${
