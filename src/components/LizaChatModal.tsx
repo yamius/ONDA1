@@ -136,18 +136,6 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
     }, 600 + Math.random() * 500);
   }
 
-  function startFlow(flowId: string) {
-    setIsTyping(true);
-    setTimeout(() => {
-      const currentState = stateRef.current;
-      const { state: newState, bot } = engine.startFlow(currentState, flowId);
-      setState(newState);
-      stateRef.current = newState;
-      pushMessage({ from: 'bot', text: bot.text, ui: bot });
-      setIsTyping(false);
-    }, 500);
-  }
-
   function handleKeyPress(e: React.KeyboardEvent) {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
@@ -251,41 +239,6 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
           
           <div ref={messagesEndRef} />
         </div>
-
-        {state.mode === 'eliza' && messages.length > 0 && (
-          <div className="px-4 pb-2">
-            <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
-              <button
-                onClick={() => startFlow('anxiety_basic')}
-                className="flex-shrink-0 bg-slate-700/50 hover:bg-slate-600/50 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors border border-white/10"
-                data-testid="button-flow-anxiety"
-              >
-                {t('liza.flows.anxiety')}
-              </button>
-              <button
-                onClick={() => startFlow('panic_grounding')}
-                className="flex-shrink-0 bg-slate-700/50 hover:bg-slate-600/50 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors border border-white/10"
-                data-testid="button-flow-panic"
-              >
-                {t('liza.flows.panic')}
-              </button>
-              <button
-                onClick={() => startFlow('body_scan')}
-                className="flex-shrink-0 bg-slate-700/50 hover:bg-slate-600/50 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors border border-white/10"
-                data-testid="button-flow-body"
-              >
-                {t('liza.flows.body')}
-              </button>
-              <button
-                onClick={() => startFlow('loneliness_connection')}
-                className="flex-shrink-0 bg-slate-700/50 hover:bg-slate-600/50 text-white/80 text-xs px-3 py-1.5 rounded-full transition-colors border border-white/10"
-                data-testid="button-flow-loneliness"
-              >
-                {t('liza.flows.loneliness')}
-              </button>
-            </div>
-          </div>
-        )}
 
         <div className="p-4 border-t border-white/10 bg-slate-900/50">
           <div className="flex gap-2">
