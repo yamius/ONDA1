@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { X, Play, Pause, Activity, Zap } from 'lucide-react';
+import { X, Play, Pause, Activity, Zap, Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { RemoteAudioPlayer } from './RemoteAudioPlayer';
 import { useVitals } from '../hooks/useVitals';
@@ -531,6 +531,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const [bestMetrics, setBestMetrics] = useState<{ stress: number | null; energy: number | null }>({ stress: null, energy: null });
   const [earnedOnd, setEarnedOnd] = useState(0);
   const [simulatedVitals, setSimulatedVitals] = useState({ stress: 50, energy: 50 });
+  const [practiceRating, setPracticeRating] = useState(0);
   const timerRef = useRef<number | null>(null);
 
   const practice = adaptivePractices[practiceId];
@@ -558,6 +559,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       setCurrentGuidingTextIndex(0);
       setAudioResetKey(prev => prev + 1);
       setQualityScore(0);
+      setPracticeRating(0);
       setCurrentTrack(1);
       setTotalTracks(1);
       if (timerRef.current) {
@@ -1006,6 +1008,28 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   <p>{t('labels.stress')}: {initialMetrics.stress}% → {vitalsData.stress !== null ? Math.round(vitalsData.stress) : '--'}%</p>
                   <p>{t('labels.energy')}: {initialMetrics.energy}% → {vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</p>
                 </div>
+                
+                <div className="pt-2 border-t border-white/10">
+                  <p className="text-sm text-gray-400 mb-2">{t('practices.rate_practice', 'Rate this practice')}</p>
+                  <div className="flex justify-center gap-2">
+                    {[1, 2, 3, 4, 5].map((star) => (
+                      <button
+                        key={star}
+                        onClick={() => setPracticeRating(star)}
+                        className="transition-all hover:scale-110"
+                        data-testid={`button-adaptive-star-${star}`}
+                      >
+                        <Star 
+                          className={`w-8 h-8 sm:w-10 sm:h-10 ${
+                            star <= practiceRating 
+                              ? 'text-yellow-400 fill-yellow-400' 
+                              : 'text-gray-500'
+                          }`} 
+                        />
+                      </button>
+                    ))}
+                  </div>
+                </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 <button
@@ -1013,6 +1037,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                     setPracticeState('intro');
                     setPracticeTime(0);
                     setQualityScore(0);
+                    setPracticeRating(0);
                     setIsPaused(false);
                     setCurrentGuidingTextIndex(0);
                     setAudioResetKey(prev => prev + 1);
