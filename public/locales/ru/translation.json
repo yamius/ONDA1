@@ -551,6 +551,19 @@
     "notification_hr_minutes_ago": "{{count}} мин назад",
     "notification_hr_hours_ago": "{{count}} ч назад"
   },
+  "connection": {
+    "title": "Подключение",
+    "subtitle": "Подключите ваши устройства для отслеживания здоровья",
+    "healthkit": "Apple HealthKit",
+    "healthkit_desc": "Чтение пульса и данных о здоровье из Apple HealthKit",
+    "connect_healthkit": "Подключить HealthKit",
+    "healthkit_connected": "HealthKit подключен",
+    "healthkit_unavailable": "HealthKit недоступен на этом устройстве",
+    "disconnect": "Отключить",
+    "health_data": "Данные здоровья",
+    "heart_rate": "Пульс",
+    "android_info": "Подключения к здоровью доступны в Android версии приложения."
+  },
   "shop": {
     "title": "Магазин OND",
     "subtitle": "Ускорьте свою духовную эволюцию",

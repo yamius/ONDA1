@@ -554,6 +554,19 @@
     "notification_hr_minutes_ago": "{{count}}m ago",
     "notification_hr_hours_ago": "{{count}}h ago"
   },
+  "connection": {
+    "title": "Connection",
+    "subtitle": "Connect your health devices and trackers",
+    "healthkit": "Apple HealthKit",
+    "healthkit_desc": "Read heart rate and health data from Apple HealthKit",
+    "connect_healthkit": "Connect HealthKit",
+    "healthkit_connected": "HealthKit Connected",
+    "healthkit_unavailable": "HealthKit is not available on this device",
+    "disconnect": "Disconnect",
+    "health_data": "Health Data",
+    "heart_rate": "Heart Rate",
+    "android_info": "Health connections are available in the Android version of the app."
+  },
   "shop": {
     "title": "OND Shop",
     "subtitle": "Accelerate your spiritual evolution",
