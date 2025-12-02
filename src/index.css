@@ -134,7 +134,7 @@
 }
 
 .message-appear {
-  animation: messageFadeIn 3.2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  animation: messageFadeIn 2s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
 @keyframes typingFadeOut {
