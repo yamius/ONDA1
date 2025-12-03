@@ -39,7 +39,12 @@ jobs:
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: latest-stable
+          xcode-version: '15.4'
+
+      - name: Update CocoaPods dependencies
+        run: |
+          gem install xcodeproj
+          gem install cocoapods
 
       - name: Sync Capacitor
         run: npx cap sync ios
