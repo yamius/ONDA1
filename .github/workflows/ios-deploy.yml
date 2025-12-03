@@ -39,7 +39,12 @@ jobs:
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: latest-stable
+          xcode-version: '15.4'
+
+      - name: Update CocoaPods dependencies
+        run: |
+          gem install xcodeproj
+          gem install cocoapods
 
       - name: Sync Capacitor
         run: npx cap sync ios
@@ -47,26 +52,25 @@ jobs:
       - name: Create App Store Connect API Key
         run: |
           mkdir -p /Users/runner/private_keys
-          KEY_FILE="/Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8"
+          KEY_FILE="/Users/runner/private_keys/AuthKey_\${APP_STORE_CONNECT_API_KEY_ID}.p8"
           
           echo "=== Base64 secret info ==="
-          echo "Base64 length: ${#APP_STORE_CONNECT_API_KEY_CONTENT} characters"
-          echo "First 50 chars: ${APP_STORE_CONNECT_API_KEY_CONTENT:0:50}"
+          echo "Base64 length: \${#APP_STORE_CONNECT_API_KEY_CONTENT} characters"
+          echo "First 50 chars: \${APP_STORE_CONNECT_API_KEY_CONTENT:0:50}"
           
-          # Decode base64 to file
-          echo "$APP_STORE_CONNECT_API_KEY_CONTENT" | base64 -d > "$KEY_FILE"
+          echo "\$APP_STORE_CONNECT_API_KEY_CONTENT" | base64 -d > "\$KEY_FILE"
           
           echo "=== Verifying decoded API Key file ==="
-          echo "File path: $KEY_FILE"
-          echo "File size: $(wc -c < "$KEY_FILE") bytes"
-          echo "Line count: $(wc -l < "$KEY_FILE")"
+          echo "File path: \$KEY_FILE"
+          echo "File size: \$(wc -c < "\$KEY_FILE") bytes"
+          echo "Line count: \$(wc -l < "\$KEY_FILE")"
           echo "=== Full file content (masked middle) ==="
-          head -2 "$KEY_FILE"
+          head -2 "\$KEY_FILE"
           echo "... (middle lines hidden) ..."
-          tail -2 "$KEY_FILE"
+          tail -2 "\$KEY_FILE"
         env:
-          APP_STORE_CONNECT_API_KEY_CONTENT: ${{ secrets.APP_STORE_CONNECT_API_KEY_CONTENT }}
-          APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
+          APP_STORE_CONNECT_API_KEY_CONTENT: \${{ secrets.APP_STORE_CONNECT_API_KEY_CONTENT }}
+          APP_STORE_CONNECT_API_KEY_ID: \${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
 
       - name: Configure Fastlane Match
         run: |
@@ -86,16 +90,16 @@ jobs:
         run: cd fastlane && fastlane ios beta --verbose
         env:
           CI: "true"
-          FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
-          FASTLANE_TEAM_ID: ${{ secrets.FASTLANE_TEAM_ID }}
-          FASTLANE_ITC_TEAM_ID: ${{ secrets.FASTLANE_ITC_TEAM_ID }}
-          MATCH_GIT_URL: ${{ secrets.MATCH_GIT_URL }}
-          MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
-          MATCH_GIT_BASIC_AUTHORIZATION: ${{ secrets.MATCH_GIT_BASIC_AUTHORIZATION }}
-          APP_STORE_CONNECT_API_KEY_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
-          APP_STORE_CONNECT_API_KEY_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
-          APP_STORE_CONNECT_API_KEY_KEY: /Users/runner/private_keys/AuthKey_${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}.p8
-          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
+          FASTLANE_USER: \${{ secrets.FASTLANE_USER }}
+          FASTLANE_TEAM_ID: \${{ secrets.FASTLANE_TEAM_ID }}
+          FASTLANE_ITC_TEAM_ID: \${{ secrets.FASTLANE_ITC_TEAM_ID }}
+          MATCH_GIT_URL: \${{ secrets.MATCH_GIT_URL }}
+          MATCH_PASSWORD: \${{ secrets.MATCH_PASSWORD }}
+          MATCH_GIT_BASIC_AUTHORIZATION: \${{ secrets.MATCH_GIT_BASIC_AUTHORIZATION }}
+          APP_STORE_CONNECT_API_KEY_KEY_ID: \${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
+          APP_STORE_CONNECT_API_KEY_ISSUER_ID: \${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          APP_STORE_CONNECT_API_KEY_KEY: /Users/runner/private_keys/AuthKey_\${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}.p8
+          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: \${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
 
       - name: Upload build artifacts
         if: always()
