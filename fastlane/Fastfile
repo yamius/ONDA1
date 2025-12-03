@@ -31,18 +31,13 @@ platform :ios do
 
   desc "Build iOS app"
   lane :build do
-    # NOTE: npm install, npm run build, and npx cap sync ios are already done
-    # in GitHub Actions workflow with proper environment variables.
-    # Do NOT run them here again or Supabase env vars will be missing!
-    
     # Auto-increment build number based on timestamp for unique builds
     increment_build_number(
       xcodeproj: "ios/App/App.xcodeproj",
       build_number: Time.now.strftime("%Y%m%d%H%M")
     )
     
-    # Configure code signing for App target only (not Pods)
-    # This sets manual signing with the App Store profile for the main app
+    # Configure code signing for App target
     update_code_signing_settings(
       use_automatic_signing: false,
       path: "ios/App/App.xcodeproj",
@@ -52,7 +47,17 @@ platform :ios do
       code_sign_identity: "Apple Distribution"
     )
     
-    # Build the app - Pods will use their own signing settings
+    # Configure code signing for watchOS target
+    update_code_signing_settings(
+      use_automatic_signing: false,
+      path: "ios/App/App.xcodeproj",
+      targets: ["OndaWatch Watch App"],
+      team_id: ENV['FASTLANE_TEAM_ID'],
+      profile_name: "match AppStore com.onda-life.ios.watchkitapp",
+      code_sign_identity: "Apple Distribution"
+    )
+    
+    # Build the app with watchOS
     gym(
       scheme: "App",
       workspace: "ios/App/App.xcworkspace",
@@ -64,7 +69,8 @@ platform :ios do
       export_options: {
         signingStyle: "manual",
         provisioningProfiles: {
-          "com.onda-life.ios" => "match AppStore com.onda-life.ios"
+          "com.onda-life.ios" => "match AppStore com.onda-life.ios",
+          "com.onda-life.ios.watchkitapp" => "match AppStore com.onda-life.ios.watchkitapp"
         }
       }
     )
@@ -72,15 +78,26 @@ platform :ios do
 
   desc "Build and upload to TestFlight"
   lane :beta do
-    # Setup code signing with Match using API Key (no password needed)
-    # First run: readonly=false to create certificates
-    # After certificates exist: change to readonly=true for safety
+    # Match for iOS app
     match(
       type: "appstore",
+      app_identifier: "com.onda-life.ios",
       readonly: false,
-      force: true,  # Force regenerate profiles to pick up new capabilities
+      force: true,
       force_for_new_devices: true,
-      api_key_path: nil,  # Uses api_key from before_all block
+      api_key_path: nil,
+      keychain_name: ENV['CI'] ? "build.keychain" : nil,
+      keychain_password: ENV['CI'] ? "" : nil
+    )
+    
+    # Match for watchOS app
+    match(
+      type: "appstore",
+      app_identifier: "com.onda-life.ios.watchkitapp",
+      readonly: false,
+      force: true,
+      force_for_new_devices: true,
+      api_key_path: nil,
       keychain_name: ENV['CI'] ? "build.keychain" : nil,
       keychain_password: ENV['CI'] ? "" : nil
     )
@@ -98,60 +115,31 @@ platform :ios do
       notify_external_testers: false,
       changelog: "Build #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     )
-    
-    # Keep build artifacts for GitHub Actions upload
-    # (removed clean_build_artifacts)
   end
 
   desc "Release to App Store"
   lane :release do
-    # Setup code signing
-    match(
-      type: "appstore",
-      readonly: true
-    )
-    
-    # Build the app
+    match(type: "appstore", readonly: true)
     build
-    
-    # Upload to App Store
     upload_to_app_store(
       force: true,
       skip_metadata: true,
       skip_screenshots: true,
       submit_for_review: false
     )
-    
-    # Keep build artifacts for GitHub Actions upload
-    # (removed clean_build_artifacts)
   end
 
   desc "Setup Match for code signing"
   lane :setup_match do
-    match(
-      type: "development",
-      readonly: false
-    )
-    
-    match(
-      type: "appstore",
-      readonly: false
-    )
+    match(type: "development", readonly: false)
+    match(type: "appstore", readonly: false)
   end
 
   after_all do |lane|
-    # Success notification
-    notification(
-      title: "ONDA iOS",
-      message: "Successfully completed '#{lane}' lane!"
-    )
+    notification(title: "ONDA iOS", message: "Successfully completed '#{lane}' lane!")
   end
 
   error do |lane, exception|
-    # Error notification
-    notification(
-      title: "ONDA iOS Error",
-      message: "Failed in '#{lane}' lane: #{exception.message}"
-    )
+    notification(title: "ONDA iOS Error", message: "Failed in '#{lane}' lane: #{exception.message}")
   end
 end
