@@ -39,11 +39,14 @@ jobs:
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '16.0'
+          xcode-version: '16.2'
 
-      - name: Update CocoaPods dependencies
+      - name: Fix Xcode project format for CocoaPods
         run: |
-          gem install xcodeproj -v 1.28.0
+          # Downgrade project format to avoid object version 70 issue
+          sed -i '' 's/objectVersion = 70/objectVersion = 56/' ios/App/App.xcodeproj/project.pbxproj || true
+          # Update xcodeproj and cocoapods
+          gem update xcodeproj
           gem install cocoapods
           pod --version
 
