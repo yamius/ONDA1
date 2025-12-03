@@ -44,6 +44,9 @@ jobs:
       - name: Download iOS Platform
         run: sudo xcodebuild -downloadPlatform iOS
 
+      - name: Download watchOS Platform
+        run: sudo xcodebuild -downloadPlatform watchOS
+
       - name: Fix Xcode project format for CocoaPods
         run: |
           # Downgrade project format to avoid object version 70 issue
