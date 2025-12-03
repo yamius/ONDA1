@@ -41,6 +41,9 @@ jobs:
         with:
           xcode-version: '16.1'
 
+      - name: Download iOS Platform
+        run: sudo xcodebuild -downloadPlatform iOS
+
       - name: Fix Xcode project format for CocoaPods
         run: |
           # Downgrade project format to avoid object version 70 issue
