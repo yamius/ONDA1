@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  OndaWatch Watch App
+//  watchkitapp Watch App
 //
 //  Created by user945497 on 12/3/25.
 //
