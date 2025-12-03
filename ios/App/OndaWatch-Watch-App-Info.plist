@@ -2,6 +2,14 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleDisplayName</key>
+	<string>ONDA</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>ONDA uses your heart rate data to provide real-time biofeedback during meditation practices and track your wellness progress.</string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>ONDA saves your meditation workout sessions to help you track your mindfulness practice history.</string>
 	<key>UIBackgroundModes</key>
 	<array/>
 	<key>WKBackgroundModes</key>
