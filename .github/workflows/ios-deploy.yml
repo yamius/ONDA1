@@ -41,11 +41,14 @@ jobs:
         with:
           xcode-version: '16.2'
 
+      - name: Download iOS Platform
+        run: |
+          xcodebuild -downloadPlatform iOS
+          xcodebuild -showsdks
+
       - name: Fix Xcode project format for CocoaPods
         run: |
-          # Downgrade project format to avoid object version 70 issue
           sed -i '' 's/objectVersion = 70/objectVersion = 56/' ios/App/App.xcodeproj/project.pbxproj || true
-          # Update xcodeproj and cocoapods
           gem update xcodeproj
           gem install cocoapods
           pod --version
@@ -62,7 +65,6 @@ jobs:
           echo "Base64 length: ${#APP_STORE_CONNECT_API_KEY_CONTENT} characters"
           echo "First 50 chars: ${APP_STORE_CONNECT_API_KEY_CONTENT:0:50}"
           
-          # Decode base64 to file
           echo "$APP_STORE_CONNECT_API_KEY_CONTENT" | base64 -d > "$KEY_FILE"
           
           echo "=== Verifying decoded API Key file ==="
