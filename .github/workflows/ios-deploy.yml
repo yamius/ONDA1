@@ -45,20 +45,19 @@ jobs:
         with:
           xcode-version: '16.2'
 
+      - name: Install iOS 18.2 platform
+        run: |
+          echo "=== Installing iOS 18.2 platform ==="
+          xcodebuild -downloadPlatform iOS
+          echo "=== iOS platform installation complete ==="
+
       - name: Patch Xcode project for CocoaPods compatibility
         run: |
           echo "=== Patching objectVersion for Xcode 16.2 compatibility ==="
-          # Fix main iOS project
           if [ -f "ios/App/App.xcodeproj/project.pbxproj" ]; then
             sed -i '' 's/objectVersion = 70;/objectVersion = 60;/g' ios/App/App.xcodeproj/project.pbxproj
             sed -i '' 's/objectVersion = 77;/objectVersion = 60;/g' ios/App/App.xcodeproj/project.pbxproj
             echo "Patched ios/App/App.xcodeproj/project.pbxproj"
-          fi
-          # Also check watchOS project if exists
-          if [ -f "ios/App/watchkitapp.xcodeproj/project.pbxproj" ]; then
-            sed -i '' 's/objectVersion = 70;/objectVersion = 60;/g' ios/App/watchkitapp.xcodeproj/project.pbxproj
-            sed -i '' 's/objectVersion = 77;/objectVersion = 60;/g' ios/App/watchkitapp.xcodeproj/project.pbxproj
-            echo "Patched ios/App/watchkitapp.xcodeproj/project.pbxproj"
           fi
           echo "=== Patch complete ==="
 
@@ -72,21 +71,8 @@ jobs:
         run: |
           mkdir -p /Users/runner/private_keys
           KEY_FILE="/Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8"
-          
-          echo "=== Base64 secret info ==="
-          echo "Base64 length: ${#APP_STORE_CONNECT_API_KEY_CONTENT} characters"
-          echo "First 50 chars: ${APP_STORE_CONNECT_API_KEY_CONTENT:0:50}"
-          
           echo "$APP_STORE_CONNECT_API_KEY_CONTENT" | base64 -d > "$KEY_FILE"
-          
-          echo "=== Verifying decoded API Key file ==="
-          echo "File path: $KEY_FILE"
-          echo "File size: $(wc -c < "$KEY_FILE") bytes"
-          echo "Line count: $(wc -l < "$KEY_FILE")"
-          echo "=== Full file content (masked middle) ==="
-          head -2 "$KEY_FILE"
-          echo "... (middle lines hidden) ..."
-          tail -2 "$KEY_FILE"
+          echo "API Key file created: $(wc -c < "$KEY_FILE") bytes"
 
       - name: Configure Git for Fastlane Match
         run: |
