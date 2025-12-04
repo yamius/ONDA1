@@ -537,6 +537,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = watchkitapp;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "ONDA needs to read your heart rate during meditation to provide personalized guidance.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "ONDA needs to save your meditation sessions to HealthKit.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.onda-life.ios";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -584,6 +585,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = watchkitapp;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "ONDA needs to read your heart rate during meditation to provide personalized guidance.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "ONDA needs to save your meditation sessions to HealthKit.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.onda-life.ios";
 				LD_RUNPATH_SEARCH_PATHS = (
