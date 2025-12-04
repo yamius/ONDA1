@@ -35,21 +35,32 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: false
 
-      - name: Install Fastlane and update xcodeproj
+      - name: Install Fastlane and CocoaPods
         run: |
           gem install fastlane
-          gem install xcodeproj --pre
+          gem install cocoapods
 
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: '16.2'
 
-      - name: Install CocoaPods with updated xcodeproj
+      - name: Patch Xcode project for CocoaPods compatibility
         run: |
-          gem install cocoapods
-          gem list xcodeproj
-          pod --version
+          echo "=== Patching objectVersion for Xcode 16.2 compatibility ==="
+          # Fix main iOS project
+          if [ -f "ios/App/App.xcodeproj/project.pbxproj" ]; then
+            sed -i '' 's/objectVersion = 70;/objectVersion = 60;/g' ios/App/App.xcodeproj/project.pbxproj
+            sed -i '' 's/objectVersion = 77;/objectVersion = 60;/g' ios/App/App.xcodeproj/project.pbxproj
+            echo "Patched ios/App/App.xcodeproj/project.pbxproj"
+          fi
+          # Also check watchOS project if exists
+          if [ -f "ios/App/watchkitapp.xcodeproj/project.pbxproj" ]; then
+            sed -i '' 's/objectVersion = 70;/objectVersion = 60;/g' ios/App/watchkitapp.xcodeproj/project.pbxproj
+            sed -i '' 's/objectVersion = 77;/objectVersion = 60;/g' ios/App/watchkitapp.xcodeproj/project.pbxproj
+            echo "Patched ios/App/watchkitapp.xcodeproj/project.pbxproj"
+          fi
+          echo "=== Patch complete ==="
 
       - name: Capacitor Sync
         run: npx cap sync ios
