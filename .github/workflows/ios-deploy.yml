@@ -1,16 +1,17 @@
-name: iOS - Build and Deploy to TestFlight
+name: iOS Build & TestFlight Deploy
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
-  build-ios:
+  build:
     name: Build and Deploy iOS App
     runs-on: macos-15
-    timeout-minutes: 45
     
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -22,16 +23,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build React app
-        run: npm run build
+      - name: Build web app
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+        run: npm run build
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
+          bundler-cache: false
 
       - name: Install Fastlane
         run: gem install fastlane
@@ -41,22 +43,18 @@ jobs:
         with:
           xcode-version: '16.2'
 
-      - name: Download iOS Platform
+      - name: Install CocoaPods
         run: |
-          xcodebuild -downloadPlatform iOS
-          xcodebuild -showsdks
-
-      - name: Fix Xcode project format for CocoaPods
-        run: |
-          sed -i '' 's/objectVersion = 70/objectVersion = 56/' ios/App/App.xcodeproj/project.pbxproj || true
-          gem update xcodeproj
           gem install cocoapods
           pod --version
 
-      - name: Sync Capacitor
+      - name: Capacitor Sync
         run: npx cap sync ios
 
-      - name: Create App Store Connect API Key
+      - name: Setup App Store Connect API Key
+        env:
+          APP_STORE_CONNECT_API_KEY_CONTENT: ${{ secrets.APP_STORE_CONNECT_API_KEY_CONTENT }}
+          APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
         run: |
           mkdir -p /Users/runner/private_keys
           KEY_FILE="/Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8"
@@ -75,30 +73,25 @@ jobs:
           head -2 "$KEY_FILE"
           echo "... (middle lines hidden) ..."
           tail -2 "$KEY_FILE"
-        env:
-          APP_STORE_CONNECT_API_KEY_CONTENT: ${{ secrets.APP_STORE_CONNECT_API_KEY_CONTENT }}
-          APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
 
-      - name: Configure Fastlane Match
+      - name: Configure Git for Fastlane Match
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
 
-      - name: Unlock Keychain for codesigning
+      - name: Setup Keychain
         run: |
           security create-keychain -p "" build.keychain
           security default-keychain -s build.keychain
           security unlock-keychain -p "" build.keychain
           security set-keychain-settings -t 3600 -u build.keychain
           security list-keychains -d user -s build.keychain login.keychain
-        
-      - name: Build and Deploy to TestFlight
-        timeout-minutes: 30
-        run: cd fastlane && fastlane ios beta --verbose
+
+      - name: Run Fastlane Beta
         env:
-          CI: "true"
-          FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT: "120"
-          FASTLANE_XCODEBUILD_SETTINGS_RETRIES: "6"
+          CI: true
+          FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT: 120
+          FASTLANE_XCODEBUILD_SETTINGS_RETRIES: 6
           FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
           FASTLANE_TEAM_ID: ${{ secrets.FASTLANE_TEAM_ID }}
           FASTLANE_ITC_TEAM_ID: ${{ secrets.FASTLANE_ITC_TEAM_ID }}
@@ -106,20 +99,19 @@ jobs:
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
           MATCH_GIT_BASIC_AUTHORIZATION: ${{ secrets.MATCH_GIT_BASIC_AUTHORIZATION }}
           APP_STORE_CONNECT_API_KEY_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
-          APP_STORE_CONNECT_API_KEY_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          APP_STORE_CONNECT_API_KEY_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ISSUER_ID }}
           APP_STORE_CONNECT_API_KEY_KEY: /Users/runner/private_keys/AuthKey_${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}.p8
           FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
+        run: cd fastlane && fastlane ios beta --verbose
 
-      - name: Upload build artifacts
-        if: always()
+      - name: Upload Build Artifacts
         uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: ios-build
-          path: |
-            build/
+          path: build/
           retention-days: 30
-          if-no-files-found: warn
 
-      - name: Clean up API Key
+      - name: Cleanup
         if: always()
         run: rm -f /Users/runner/private_keys/AuthKey_*.p8
