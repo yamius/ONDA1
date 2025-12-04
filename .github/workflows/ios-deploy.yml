@@ -45,11 +45,14 @@ jobs:
         with:
           xcode-version: '16.2'
 
-      - name: Install iOS 18.2 platform
+      - name: Initialize Xcode and show available SDKs
         run: |
-          echo "=== Installing iOS 18.2 platform ==="
-          xcodebuild -downloadPlatform iOS
-          echo "=== iOS platform installation complete ==="
+          echo "=== Running Xcode first launch ==="
+          sudo xcodebuild -runFirstLaunch || true
+          echo "=== Available SDKs ==="
+          xcodebuild -showsdks
+          echo "=== Xcode version ==="
+          xcodebuild -version
 
       - name: Patch Xcode project for CocoaPods compatibility
         run: |
