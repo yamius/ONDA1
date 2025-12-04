@@ -1,63 +1,37 @@
 import SwiftUI
-import HealthKit
 
 struct ContentView: View {
-    @EnvironmentObject var workoutManager: WorkoutManager
+    @StateObject private var workoutManager = WorkoutManager.shared
     
     var body: some View {
-        VStack(spacing: 16) {
-            HStack {
-                Circle()
-                    .fill(workoutManager.isSessionActive ? Color.green : Color.gray)
-                    .frame(width: 8, height: 8)
-                Text(workoutManager.isSessionActive ? "Active" : "Idle")
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
-            }
+        VStack(spacing: 20) {
+            Text("ONDA")
+                .font(.title2)
+                .fontWeight(.bold)
             
-            Spacer()
+            Text("\(Int(workoutManager.heartRate))")
+                .font(.system(size: 60, weight: .bold))
+                .foregroundColor(.red)
             
-            VStack(spacing: 4) {
-                Image(systemName: "heart.fill")
-                    .font(.system(size: 32))
-                    .foregroundColor(.red)
-                
-                Text("\(workoutManager.heartRate)")
-                    .font(.system(size: 64, weight: .bold, design: .rounded))
-                    .foregroundColor(.white)
-                
-                Text("BPM")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
-            }
-            
-            Spacer()
+            Text("BPM")
+                .font(.caption)
+                .foregroundColor(.gray)
             
             Button(action: {
-                if workoutManager.isSessionActive {
+                if workoutManager.isActive {
                     workoutManager.stopWorkout()
                 } else {
+                    workoutManager.requestAuthorization()
                     workoutManager.startWorkout()
                 }
             }) {
-                HStack {
-                    Image(systemName: workoutManager.isSessionActive ? "stop.fill" : "play.fill")
-                    Text(workoutManager.isSessionActive ? "Stop" : "Start")
-                }
-                .font(.headline)
-                .frame(maxWidth: .infinity)
+                Text(workoutManager.isActive ? "Stop" : "Start")
+                    .font(.headline)
+                    .frame(maxWidth: .infinity)
             }
             .buttonStyle(.borderedProminent)
-            .tint(workoutManager.isSessionActive ? .red : .green)
+            .tint(workoutManager.isActive ? .red : .green)
         }
         .padding()
-        .onAppear {
-            workoutManager.requestAuthorization()
-        }
     }
-}
-
-#Preview {
-    ContentView()
-        .environmentObject(WorkoutManager())
 }

@@ -3,14 +3,14 @@ import HealthKit
 import WatchConnectivity
 
 class WorkoutManager: NSObject, ObservableObject {
-    @Published var heartRate: Int = 0
-    @Published var isSessionActive: Bool = false
-    @Published var authorizationStatus: String = "Unknown"
+    static let shared = WorkoutManager()
     
     private let healthStore = HKHealthStore()
     private var session: HKWorkoutSession?
     private var builder: HKLiveWorkoutBuilder?
-    private var wcSession: WCSession?
+    
+    @Published var heartRate: Double = 0
+    @Published var isActive = false
     
     override init() {
         super.init()
@@ -19,128 +19,84 @@ class WorkoutManager: NSObject, ObservableObject {
     
     private func setupWatchConnectivity() {
         if WCSession.isSupported() {
-            wcSession = WCSession.default
-            wcSession?.delegate = self
-            wcSession?.activate()
+            WCSession.default.delegate = self
+            WCSession.default.activate()
         }
     }
     
     func requestAuthorization() {
-        guard HKHealthStore.isHealthDataAvailable() else {
-            authorizationStatus = "HealthKit not available"
-            return
-        }
-        
+        let typesToShare: Set<HKSampleType> = [HKObjectType.workoutType()]
         let typesToRead: Set<HKObjectType> = [
-            HKQuantityType.quantityType(forIdentifier: .heartRate)!,
-            HKQuantityType.quantityType(forIdentifier: .heartRateVariabilitySDNN)!,
-            HKObjectType.workoutType()
+            HKObjectType.quantityType(forIdentifier: .heartRate)!
         ]
         
-        let typesToWrite: Set<HKSampleType> = [
-            HKQuantityType.quantityType(forIdentifier: .heartRate)!,
-            HKObjectType.workoutType()
-        ]
-        
-        healthStore.requestAuthorization(toShare: typesToWrite, read: typesToRead) { [weak self] success, error in
-            DispatchQueue.main.async {
-                if success {
-                    self?.authorizationStatus = "Authorized"
-                } else {
-                    self?.authorizationStatus = error?.localizedDescription ?? "Failed"
-                }
+        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
+            if success {
+                print("[WorkoutManager] HealthKit authorized")
             }
         }
     }
     
     func startWorkout() {
-        let configuration = HKWorkoutConfiguration()
-        configuration.activityType = .mindAndBody
-        configuration.locationType = .indoor
+        let config = HKWorkoutConfiguration()
+        config.activityType = .mindAndBody
+        config.locationType = .indoor
         
         do {
-            session = try HKWorkoutSession(healthStore: healthStore, configuration: configuration)
+            session = try HKWorkoutSession(healthStore: healthStore, configuration: config)
             builder = session?.associatedWorkoutBuilder()
+            
+            builder?.dataSource = HKLiveWorkoutDataSource(healthStore: healthStore, workoutConfiguration: config)
             
             session?.delegate = self
             builder?.delegate = self
             
-            builder?.dataSource = HKLiveWorkoutDataSource(
-                healthStore: healthStore,
-                workoutConfiguration: configuration
-            )
-            
             let startDate = Date()
             session?.startActivity(with: startDate)
-            builder?.beginCollection(withStart: startDate) { [weak self] success, error in
+            builder?.beginCollection(withStart: startDate) { success, error in
                 DispatchQueue.main.async {
-                    self?.isSessionActive = success
+                    self.isActive = true
                 }
             }
         } catch {
-            print("Failed to start workout: \(error)")
+            print("[WorkoutManager] Error starting workout: \(error)")
         }
     }
     
     func stopWorkout() {
         session?.end()
-        
-        builder?.endCollection(withEnd: Date()) { [weak self] success, error in
-            self?.builder?.finishWorkout { workout, error in
-                DispatchQueue.main.async {
-                    self?.isSessionActive = false
-                    self?.heartRate = 0
-                }
-            }
-        }
+        isActive = false
     }
     
-    private func sendHeartRateToPhone(_ heartRate: Int) {
-        guard let session = wcSession, session.isReachable else { return }
-        
-        let message: [String: Any] = [
-            "type": "heartRate",
-            "bpm": heartRate,
-            "timestamp": Date().timeIntervalSince1970
-        ]
-        
-        session.sendMessage(message, replyHandler: nil) { error in
-            print("Failed to send heart rate: \(error)")
-        }
+    private func sendHeartRateToPhone(_ hr: Double) {
+        guard WCSession.default.isReachable else { return }
+        WCSession.default.sendMessage(["heartRate": hr], replyHandler: nil)
     }
 }
 
 extension WorkoutManager: HKWorkoutSessionDelegate {
-    func workoutSession(_ workoutSession: HKWorkoutSession,
-                       didChangeTo toState: HKWorkoutSessionState,
-                       from fromState: HKWorkoutSessionState,
-                       date: Date) {
-        DispatchQueue.main.async {
-            self.isSessionActive = toState == .running
-        }
+    func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState, from fromState: HKWorkoutSessionState, date: Date) {
+        print("[WorkoutManager] State: \(toState.rawValue)")
     }
     
-    func workoutSession(_ workoutSession: HKWorkoutSession,
-                       didFailWithError error: Error) {
-        print("Workout session failed: \(error)")
+    func workoutSession(_ workoutSession: HKWorkoutSession, didFailWithError error: Error) {
+        print("[WorkoutManager] Error: \(error)")
     }
 }
 
 extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
-    func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder,
-                       didCollectDataOf collectedTypes: Set<HKSampleType>) {
+    func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf collectedTypes: Set<HKSampleType>) {
         for type in collectedTypes {
             guard let quantityType = type as? HKQuantityType,
                   quantityType == HKQuantityType.quantityType(forIdentifier: .heartRate) else { continue }
             
-            let statistics = workoutBuilder.statistics(for: quantityType)
-            let heartRateUnit = HKUnit.count().unitDivided(by: .minute())
-            
-            if let value = statistics?.mostRecentQuantity()?.doubleValue(for: heartRateUnit) {
-                let bpm = Int(value)
-                DispatchQueue.main.async {
-                    self.heartRate = bpm
-                    self.sendHeartRateToPhone(bpm)
+            if let statistics = workoutBuilder.statistics(for: quantityType) {
+                let hrUnit = HKUnit.count().unitDivided(by: .minute())
+                if let value = statistics.mostRecentQuantity()?.doubleValue(for: hrUnit) {
+                    DispatchQueue.main.async {
+                        self.heartRate = value
+                        self.sendHeartRateToPhone(value)
+                    }
                 }
             }
         }
@@ -150,26 +106,13 @@ extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
 }
 
 extension WorkoutManager: WCSessionDelegate {
-    func session(_ session: WCSession,
-                activationDidCompleteWith activationState: WCSessionActivationState,
-                error: Error?) {
-        if let error = error {
-            print("WCSession activation failed: \(error)")
-        }
-    }
+    func session(_ session: WCSession, activationDidCompleteWith state: WCSessionActivationState, error: Error?) {}
     
-    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
-        if let command = message["command"] as? String {
-            DispatchQueue.main.async {
-                switch command {
-                case "start":
-                    self.startWorkout()
-                case "stop":
-                    self.stopWorkout()
-                default:
-                    break
-                }
-            }
+    func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
+        if message["command"] as? String == "start" {
+            DispatchQueue.main.async { self.startWorkout() }
+        } else if message["command"] as? String == "stop" {
+            DispatchQueue.main.async { self.stopWorkout() }
         }
     }
 }

@@ -16,7 +16,7 @@
 		50B271D11FEDC1A000F3C39B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 50B271D01FEDC1A000F3C39B /* public */; };
 		A084ECDBA7D38E1E42DFC39D /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */; };
 		CUSTOMBR001ABCDEF0123456 /* CustomBridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CUSTOMBR002ABCDEF0123456 /* CustomBridgeViewController.swift */; };
-		F870779B2EE0DAC500511923 /* watchkitapp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F87077912EE0DAC300511923 /* watchkitapp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F84CE7232EE24BEA00A41804 /* watchkitapp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F84CE7192EE24BE900A41804 /* watchkitapp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F8DA16282EE06AB5009EBE0B /* OndaWatchPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA16272EE06AB5009EBE0B /* OndaWatchPlugin.swift */; };
 		F8DA16292EE06AB5009EBE0B /* OndaWatchPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DA16262EE06AB5009EBE0B /* OndaWatchPlugin.m */; };
 		F8DA162C2EE06C0A009EBE0B /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DA162B2EE06C0A009EBE0B /* WatchConnectivity.framework */; };
@@ -24,11 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F87077992EE0DAC500511923 /* PBXContainerItemProxy */ = {
+		F84CE7212EE24BEA00A41804 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 504EC2FC1FED79650016851F /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F87077902EE0DAC300511923;
+			remoteGlobalIDString = F84CE7182EE24BE900A41804;
 			remoteInfo = "watchkitapp Watch App";
 		};
 /* End PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				F870779B2EE0DAC500511923 /* watchkitapp Watch App.app in Embed Watch Content */,
+				F84CE7232EE24BEA00A41804 /* watchkitapp Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,7 +61,7 @@
 		AF277DCFFFF123FFC6DF26C7 /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF51FD2D460BCFE21FA515B2 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
 		CUSTOMBR002ABCDEF0123456 /* CustomBridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBridgeViewController.swift; sourceTree = "<group>"; };
-		F87077912EE0DAC300511923 /* watchkitapp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchkitapp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F84CE7192EE24BE900A41804 /* watchkitapp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchkitapp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8DA16262EE06AB5009EBE0B /* OndaWatchPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OndaWatchPlugin.m; sourceTree = "<group>"; };
 		F8DA16272EE06AB5009EBE0B /* OndaWatchPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OndaWatchPlugin.swift; sourceTree = "<group>"; };
 		F8DA162A2EE06AFD009EBE0B /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -71,6 +71,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		F84CE71A2EE24BE900A41804 /* watchkitapp Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "watchkitapp Watch App"; sourceTree = "<group>"; };
 		F87077542EE0CD2C00511923 /* OndaWatch Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "OndaWatch Watch App"; sourceTree = "<group>"; };
 		F87077692EE0D60B00511923 /* OndaWatch Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "OndaWatch Watch App"; sourceTree = "<group>"; };
 		F87077922EE0DAC300511923 /* watchkitapp Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "watchkitapp Watch App"; sourceTree = "<group>"; };
@@ -87,7 +88,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F870778E2EE0DAC300511923 /* Frameworks */ = {
+		F84CE7162EE24BE900A41804 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -114,6 +115,7 @@
 				F87077542EE0CD2C00511923 /* OndaWatch Watch App */,
 				F87077692EE0D60B00511923 /* OndaWatch Watch App */,
 				F87077922EE0DAC300511923 /* watchkitapp Watch App */,
+				F84CE71A2EE24BE900A41804 /* watchkitapp Watch App */,
 				504EC3051FED79650016851F /* Products */,
 				7F8756D8B27F46E3366F6CEA /* Pods */,
 				27E2DDA53C4D2A4D1A88CE4A /* Frameworks */,
@@ -124,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				504EC3041FED79650016851F /* App.app */,
-				F87077912EE0DAC300511923 /* watchkitapp Watch App.app */,
+				F84CE7192EE24BE900A41804 /* watchkitapp Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,33 +178,33 @@
 			buildRules = (
 			);
 			dependencies = (
-				F870779A2EE0DAC500511923 /* PBXTargetDependency */,
+				F84CE7222EE24BEA00A41804 /* PBXTargetDependency */,
 			);
 			name = App;
 			productName = App;
 			productReference = 504EC3041FED79650016851F /* App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F87077902EE0DAC300511923 /* watchkitapp Watch App */ = {
+		F84CE7182EE24BE900A41804 /* watchkitapp Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F870779E2EE0DAC500511923 /* Build configuration list for PBXNativeTarget "watchkitapp Watch App" */;
+			buildConfigurationList = F84CE7242EE24BEA00A41804 /* Build configuration list for PBXNativeTarget "watchkitapp Watch App" */;
 			buildPhases = (
-				F870778D2EE0DAC300511923 /* Sources */,
-				F870778E2EE0DAC300511923 /* Frameworks */,
-				F870778F2EE0DAC300511923 /* Resources */,
+				F84CE7152EE24BE900A41804 /* Sources */,
+				F84CE7162EE24BE900A41804 /* Frameworks */,
+				F84CE7172EE24BE900A41804 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F87077922EE0DAC300511923 /* watchkitapp Watch App */,
+				F84CE71A2EE24BE900A41804 /* watchkitapp Watch App */,
 			);
 			name = "watchkitapp Watch App";
 			packageProductDependencies = (
 			);
 			productName = "watchkitapp Watch App";
-			productReference = F87077912EE0DAC300511923 /* watchkitapp Watch App.app */;
+			productReference = F84CE7192EE24BE900A41804 /* watchkitapp Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -219,7 +221,7 @@
 						LastSwiftMigration = 2610;
 						ProvisioningStyle = Automatic;
 					};
-					F87077902EE0DAC300511923 = {
+					F84CE7182EE24BE900A41804 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
@@ -240,7 +242,7 @@
 			projectRoot = "";
 			targets = (
 				504EC3031FED79650016851F /* App */,
-				F87077902EE0DAC300511923 /* watchkitapp Watch App */,
+				F84CE7182EE24BE900A41804 /* watchkitapp Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -259,7 +261,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F870778F2EE0DAC300511923 /* Resources */ = {
+		F84CE7172EE24BE900A41804 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,7 +319,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F870778D2EE0DAC300511923 /* Sources */ = {
+		F84CE7152EE24BE900A41804 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -327,10 +329,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F870779A2EE0DAC500511923 /* PBXTargetDependency */ = {
+		F84CE7222EE24BEA00A41804 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F87077902EE0DAC300511923 /* watchkitapp Watch App */;
-			targetProxy = F87077992EE0DAC500511923 /* PBXContainerItemProxy */;
+			target = F84CE7182EE24BE900A41804 /* watchkitapp Watch App */;
+			targetProxy = F84CE7212EE24BEA00A41804 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -516,7 +518,7 @@
 			};
 			name = Release;
 		};
-		F870779C2EE0DAC500511923 /* Debug */ = {
+		F84CE7252EE24BEA00A41804 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -536,8 +538,6 @@
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = watchkitapp;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "ONDA needs to read your heart rate during meditation to provide personalized guidance.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "ONDA needs to save your meditation sessions to HealthKit.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.onda-life.ios";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -560,11 +560,11 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Debug;
 		};
-		F870779D2EE0DAC500511923 /* Release */ = {
+		F84CE7262EE24BEA00A41804 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -584,8 +584,6 @@
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = watchkitapp;
-				INFOPLIST_KEY_NSHealthShareUsageDescription = "ONDA needs to read your heart rate during meditation to provide personalized guidance.";
-				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "ONDA needs to save your meditation sessions to HealthKit.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.onda-life.ios";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -606,7 +604,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Release;
 		};
@@ -631,11 +629,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F870779E2EE0DAC500511923 /* Build configuration list for PBXNativeTarget "watchkitapp Watch App" */ = {
+		F84CE7242EE24BEA00A41804 /* Build configuration list for PBXNativeTarget "watchkitapp Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F870779C2EE0DAC500511923 /* Debug */,
-				F870779D2EE0DAC500511923 /* Release */,
+				F84CE7252EE24BEA00A41804 /* Debug */,
+				F84CE7262EE24BEA00A41804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
