@@ -70,8 +70,18 @@
 		HEALTHKIT002ABCDEF0123456 /* HealthKitHeartRatePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitHeartRatePlugin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F84CE7302EE2522E00A41804 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F84CE7182EE24BE900A41804 /* watchkitapp Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F84CE71A2EE24BE900A41804 /* watchkitapp Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "watchkitapp Watch App"; sourceTree = "<group>"; };
+		F84CE71A2EE24BE900A41804 /* watchkitapp Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F84CE7302EE2522E00A41804 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "watchkitapp Watch App"; sourceTree = "<group>"; };
 		F87077542EE0CD2C00511923 /* OndaWatch Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "OndaWatch Watch App"; sourceTree = "<group>"; };
 		F87077692EE0D60B00511923 /* OndaWatch Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "OndaWatch Watch App"; sourceTree = "<group>"; };
 		F87077922EE0DAC300511923 /* watchkitapp Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "watchkitapp Watch App"; sourceTree = "<group>"; };
