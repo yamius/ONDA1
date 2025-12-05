@@ -1,17 +1,16 @@
-name: iOS Build & TestFlight Deploy
+name: iOS - Build and Deploy to TestFlight
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 jobs:
-  build:
+  build-ios:
     name: Build and Deploy iOS App
     runs-on: macos-15
+    timeout-minutes: 60
     
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -23,76 +22,90 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build web app
+      - name: Build React app
+        run: npm run build
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
-        run: npm run build
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
-          bundler-cache: false
 
-      - name: Install Fastlane and CocoaPods
-        run: |
-          gem install fastlane
-          gem install cocoapods
+      - name: Install Fastlane
+        run: gem install fastlane
 
-      - name: Setup Xcode 16.1 (stable)
+      - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: '16.1'
 
-      - name: Show available SDKs
+      - name: Download iOS Platform
         run: |
-          echo "=== Xcode version ==="
+          echo "Downloading iOS platform (this takes ~10 minutes)..."
+          sudo xcodebuild -downloadPlatform iOS
+          echo "iOS platform download completed!"
+
+      - name: Verify iOS SDK
+        run: |
+          xcode-select -p
           xcodebuild -version
-          echo "=== Available SDKs ==="
           xcodebuild -showsdks
 
-      - name: Patch Xcode project for CocoaPods compatibility
+      - name: Fix Xcode project format for CocoaPods
         run: |
-          echo "=== Patching objectVersion for Xcode compatibility ==="
-          if [ -f "ios/App/App.xcodeproj/project.pbxproj" ]; then
-            sed -i '' 's/objectVersion = 70;/objectVersion = 60;/g' ios/App/App.xcodeproj/project.pbxproj
-            sed -i '' 's/objectVersion = 77;/objectVersion = 60;/g' ios/App/App.xcodeproj/project.pbxproj
-            echo "Patched ios/App/App.xcodeproj/project.pbxproj"
-          fi
-          echo "=== Patch complete ==="
+          sed -i '' 's/objectVersion = 70/objectVersion = 56/' ios/App/App.xcodeproj/project.pbxproj || true
+          gem update xcodeproj
+          gem install cocoapods
+          pod --version
 
-      - name: Capacitor Sync
+      - name: Sync Capacitor
         run: npx cap sync ios
 
-      - name: Setup App Store Connect API Key
-        env:
-          APP_STORE_CONNECT_API_KEY_CONTENT: ${{ secrets.APP_STORE_CONNECT_API_KEY_CONTENT }}
-          APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
+      - name: Create App Store Connect API Key
         run: |
           mkdir -p /Users/runner/private_keys
           KEY_FILE="/Users/runner/private_keys/AuthKey_${APP_STORE_CONNECT_API_KEY_ID}.p8"
+          
+          echo "=== Base64 secret info ==="
+          echo "Base64 length: ${#APP_STORE_CONNECT_API_KEY_CONTENT} characters"
+          echo "First 50 chars: ${APP_STORE_CONNECT_API_KEY_CONTENT:0:50}"
+          
           echo "$APP_STORE_CONNECT_API_KEY_CONTENT" | base64 -d > "$KEY_FILE"
-          echo "API Key file created: $(wc -c < "$KEY_FILE") bytes"
+          
+          echo "=== Verifying decoded API Key file ==="
+          echo "File path: $KEY_FILE"
+          echo "File size: $(wc -c < "$KEY_FILE") bytes"
+          echo "Line count: $(wc -l < "$KEY_FILE")"
+          echo "=== Full file content (masked middle) ==="
+          head -2 "$KEY_FILE"
+          echo "... (middle lines hidden) ..."
+          tail -2 "$KEY_FILE"
+        env:
+          APP_STORE_CONNECT_API_KEY_CONTENT: ${{ secrets.APP_STORE_CONNECT_API_KEY_CONTENT }}
+          APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
 
-      - name: Configure Git for Fastlane Match
+      - name: Configure Fastlane Match
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
 
-      - name: Setup Keychain
+      - name: Unlock Keychain for codesigning
         run: |
           security create-keychain -p "" build.keychain
           security default-keychain -s build.keychain
           security unlock-keychain -p "" build.keychain
           security set-keychain-settings -t 3600 -u build.keychain
-          security list-keychains -d user -s build.keychain login.keychain
-
-      - name: Run Fastlane Beta
+          security list-keychains -d user -s build.keychain
+        
+      - name: Build and Deploy to TestFlight
+        timeout-minutes: 30
+        run: cd fastlane && fastlane ios beta --verbose
         env:
-          CI: true
-          FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT: 120
-          FASTLANE_XCODEBUILD_SETTINGS_RETRIES: 6
+          CI: "true"
+          FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT: "120"
+          FASTLANE_XCODEBUILD_SETTINGS_RETRIES: "6"
           FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
           FASTLANE_TEAM_ID: ${{ secrets.FASTLANE_TEAM_ID }}
           FASTLANE_ITC_TEAM_ID: ${{ secrets.FASTLANE_ITC_TEAM_ID }}
@@ -100,19 +113,20 @@ jobs:
           MATCH_PASSWORD: ${{ secrets.MATCH_PASSWORD }}
           MATCH_GIT_BASIC_AUTHORIZATION: ${{ secrets.MATCH_GIT_BASIC_AUTHORIZATION }}
           APP_STORE_CONNECT_API_KEY_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
-          APP_STORE_CONNECT_API_KEY_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ISSUER_ID }}
+          APP_STORE_CONNECT_API_KEY_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
           APP_STORE_CONNECT_API_KEY_KEY: /Users/runner/private_keys/AuthKey_${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}.p8
           FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
-        run: cd fastlane && fastlane ios beta --verbose
 
-      - name: Upload Build Artifacts
-        uses: actions/upload-artifact@v4
+      - name: Upload build artifacts
         if: always()
+        uses: actions/upload-artifact@v4
         with:
           name: ios-build
-          path: build/
+          path: |
+            build/
           retention-days: 30
+          if-no-files-found: warn
 
-      - name: Cleanup
+      - name: Clean up API Key
         if: always()
         run: rm -f /Users/runner/private_keys/AuthKey_*.p8
