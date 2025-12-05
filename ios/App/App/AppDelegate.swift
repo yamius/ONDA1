@@ -8,9 +8,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Activate WCSession as early as possible to receive watch data
+        // Активируем WCSession рано для получения данных с часов
         if WCSession.isSupported() {
-            print("[ONDA] WCSession supported, activating early...")
+            print("[ONDA] WCSession supported, activating via OndaWatchManager")
             OndaWatchManager.shared.activateSession()
         }
         return true
