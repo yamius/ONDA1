@@ -321,8 +321,31 @@ extension WorkoutManager: WCSessionDelegate {
 
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any]) {
-
-        guard let type = message["type"] as? String else { return }
+        print("[Watch] Received message: \(message)")
+        handleCommand(message)
+    }
+    
+    func session(_ session: WCSession,
+                 didReceiveMessage message: [String : Any],
+                 replyHandler: @escaping ([String : Any]) -> Void) {
+        print("[Watch] Received message with reply: \(message)")
+        handleCommand(message)
+        replyHandler(["received": true])
+    }
+    
+    func session(_ session: WCSession,
+                 didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        print("[Watch] Received userInfo: \(userInfo)")
+        handleCommand(userInfo)
+    }
+    
+    private func handleCommand(_ data: [String: Any]) {
+        guard let type = data["type"] as? String else {
+            print("[Watch] No type in command: \(data)")
+            return
+        }
+        
+        print("[Watch] Handling command: \(type)")
 
         switch type {
         case "start":
@@ -330,7 +353,7 @@ extension WorkoutManager: WCSessionDelegate {
         case "stop":
             DispatchQueue.main.async { self.stopWorkout() }
         default:
-            break
+            print("[Watch] Unknown command: \(type)")
         }
     }
 }
