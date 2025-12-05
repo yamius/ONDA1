@@ -1,40 +1,50 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var workoutManager = WorkoutManager()
-    
+    @EnvironmentObject var workoutManager: WorkoutManager
+
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Onda Life")
-                .font(.headline)
+        VStack(spacing: 2) {
+            HStack {
+                Text("Onda")
+                    .font(.system(size: 11, weight: .medium))
+                    .foregroundColor(.secondary)
+                Spacer()
+                Text(workoutManager.connectionStatus)
+                    .font(.system(size: 10, weight: .medium))
+                    .foregroundColor(workoutManager.connectionStatus == "OK" ? .green : .orange)
+            }
+            .padding(.horizontal, 2)
             
-            Text("\(Int(workoutManager.heartRate))")
-                .font(.system(size: 60, weight: .bold, design: .rounded))
-                .foregroundColor(.red)
+            Spacer()
             
+            Text(workoutManager.heartRateString)
+                .font(.system(size: 48, weight: .bold, design: .rounded))
+                .foregroundColor(workoutManager.isRunning ? .red : .primary)
+
             Text("BPM")
-                .font(.caption)
+                .font(.system(size: 11, weight: .medium))
                 .foregroundColor(.secondary)
             
+            Spacer()
+
             Button(action: {
-                if workoutManager.isActive {
+                if workoutManager.isRunning {
                     workoutManager.stopWorkout()
                 } else {
                     workoutManager.startWorkout()
                 }
             }) {
-                Text(workoutManager.isActive ? "Stop" : "Start")
-                    .frame(maxWidth: .infinity)
+                Text(workoutManager.isRunning ? "Stop" : "Start")
+                    .font(.system(size: 15, weight: .semibold))
             }
-            #if os(watchOS)
             .buttonStyle(.borderedProminent)
-            .tint(workoutManager.isActive ? .red : .green)
-            #endif
+            .tint(workoutManager.isRunning ? .red : .green)
         }
-        .padding()
+        .padding(.horizontal, 2)
+        .padding(.vertical, 2)
+        .onAppear {
+            workoutManager.activateSession()
+        }
     }
-}
-
-#Preview {
-    ContentView()
 }
