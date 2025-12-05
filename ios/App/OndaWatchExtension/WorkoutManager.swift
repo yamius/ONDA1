@@ -7,6 +7,7 @@ final class WorkoutManager: NSObject, ObservableObject {
 
     @Published var heartRate: Double = 0
     @Published var isRunning: Bool = false
+    @Published var connectionStatus: String = "..."
 
     var heartRateString: String {
         heartRate > 0 ? String(Int(heartRate)) : "--"
@@ -16,18 +17,29 @@ final class WorkoutManager: NSObject, ObservableObject {
     private var workoutSession: HKWorkoutSession?
     private var workoutBuilder: HKLiveWorkoutBuilder?
 
-    private let session = WCSession.isSupported() ? WCSession.default : nil
+    private var wcSession: WCSession?
 
     override init() {
         super.init()
-        if let session = session {
-            session.delegate = self
-            session.activate()
+        if WCSession.isSupported() {
+            wcSession = WCSession.default
+            wcSession?.delegate = self
+            wcSession?.activate()
+            print("[Watch] WCSession init and activating...")
         }
     }
 
     func activateSession() {
         requestHealthAuthorization()
+        updateConnectionStatus()
+    }
+    
+    private func updateConnectionStatus() {
+        guard let session = wcSession else {
+            connectionStatus = "No WC"
+            return
+        }
+        connectionStatus = session.isReachable ? "OK" : "..."
     }
 
     private func requestHealthAuthorization() {
@@ -39,7 +51,9 @@ final class WorkoutManager: NSObject, ObservableObject {
 
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
             if !success {
-                print("HealthKit auth failed: \(error?.localizedDescription ?? "unknown")")
+                print("[Watch] HealthKit auth failed: \(error?.localizedDescription ?? "unknown")")
+            } else {
+                print("[Watch] HealthKit authorized")
             }
         }
     }
@@ -48,7 +62,7 @@ final class WorkoutManager: NSObject, ObservableObject {
         guard !isRunning else { return }
 
         let configuration = HKWorkoutConfiguration()
-        configuration.activityType = .other
+        configuration.activityType = .mindAndBody
         configuration.locationType = .indoor
 
         do {
@@ -71,13 +85,15 @@ final class WorkoutManager: NSObject, ObservableObject {
             session.startActivity(with: startDate)
             builder.beginCollection(withStart: startDate) { success, error in
                 if let error = error {
-                    print("beginCollection error: \(error)")
+                    print("[Watch] beginCollection error: \(error)")
+                } else {
+                    print("[Watch] Workout collection started")
                 }
             }
 
             sendStatusToPhone(status: "started")
         } catch {
-            print("Failed to start workout: \(error)")
+            print("[Watch] Failed to start workout: \(error)")
         }
     }
 
@@ -92,7 +108,7 @@ final class WorkoutManager: NSObject, ObservableObject {
             guard let self = self else { return }
             self.workoutBuilder?.finishWorkout { _, error in
                 if let error = error {
-                    print("finishWorkout error: \(error)")
+                    print("[Watch] finishWorkout error: \(error)")
                 }
             }
         }
@@ -101,7 +117,12 @@ final class WorkoutManager: NSObject, ObservableObject {
     }
 
     private func sendHeartRateToPhone(_ bpm: Double) {
-        guard let session = session else { return }
+        guard let session = wcSession else {
+            print("[Watch] No WCSession")
+            return
+        }
+        
+        print("[Watch] Sending HR \(Int(bpm)), reachable: \(session.isReachable)")
         
         let message: [String: Any] = [
             "type": "heartRate",
@@ -110,17 +131,23 @@ final class WorkoutManager: NSObject, ObservableObject {
         ]
         
         if session.isReachable {
-            session.sendMessage(message, replyHandler: nil) { [weak self] error in
-                print("sendMessage error: \(error.localizedDescription)")
+            session.sendMessage(message, replyHandler: { reply in
+                print("[Watch] HR sent, reply: \(reply)")
+            }) { [weak self] error in
+                print("[Watch] sendMessage error: \(error.localizedDescription)")
                 self?.transferHeartRateToPhone(bpm)
             }
         } else {
             transferHeartRateToPhone(bpm)
         }
+        
+        DispatchQueue.main.async {
+            self.updateConnectionStatus()
+        }
     }
     
     private func transferHeartRateToPhone(_ bpm: Double) {
-        guard let session = session else { return }
+        guard let session = wcSession else { return }
         
         let userInfo: [String: Any] = [
             "type": "heartRate",
@@ -129,10 +156,11 @@ final class WorkoutManager: NSObject, ObservableObject {
         ]
         
         session.transferUserInfo(userInfo)
+        print("[Watch] HR transferred via userInfo")
     }
 
     private func sendStatusToPhone(status: String) {
-        guard let session = session else { return }
+        guard let session = wcSession else { return }
 
         let message: [String: Any] = [
             "type": "status",
@@ -141,7 +169,7 @@ final class WorkoutManager: NSObject, ObservableObject {
         
         if session.isReachable {
             session.sendMessage(message, replyHandler: nil) { [weak self] error in
-                print("sendStatus error: \(error.localizedDescription)")
+                print("[Watch] sendStatus error: \(error.localizedDescription)")
                 self?.transferStatusToPhone(status: status)
             }
         } else {
@@ -150,7 +178,7 @@ final class WorkoutManager: NSObject, ObservableObject {
     }
     
     private func transferStatusToPhone(status: String) {
-        guard let session = session else { return }
+        guard let session = wcSession else { return }
         
         let userInfo: [String: Any] = [
             "type": "status",
@@ -165,11 +193,13 @@ extension WorkoutManager: HKWorkoutSessionDelegate, HKLiveWorkoutBuilderDelegate
     func workoutSession(_ workoutSession: HKWorkoutSession,
                         didChangeTo toState: HKWorkoutSessionState,
                         from fromState: HKWorkoutSessionState,
-                        date: Date) {}
+                        date: Date) {
+        print("[Watch] Workout state: \(fromState.rawValue) -> \(toState.rawValue)")
+    }
 
     func workoutSession(_ workoutSession: HKWorkoutSession,
                         didFailWithError error: Error) {
-        print("Workout session failed: \(error)")
+        print("[Watch] Workout session failed: \(error)")
     }
 
     func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {}
@@ -199,15 +229,22 @@ extension WorkoutManager: WCSessionDelegate {
     func session(_ session: WCSession,
                  activationDidCompleteWith activationState: WCSessionActivationState,
                  error: Error?) {
-        if let error = error {
-            print("WCSession activation error: \(error)")
-        } else {
-            print("Watch WCSession activated: \(activationState.rawValue)")
+        DispatchQueue.main.async {
+            if let error = error {
+                print("[Watch] WCSession error: \(error)")
+                self.connectionStatus = "Err"
+            } else {
+                print("[Watch] WCSession activated: \(activationState.rawValue)")
+                self.connectionStatus = session.isReachable ? "OK" : "..."
+            }
         }
     }
 
     func sessionReachabilityDidChange(_ session: WCSession) {
-        print("Watch WCSession reachable: \(session.isReachable)")
+        print("[Watch] Reachability: \(session.isReachable)")
+        DispatchQueue.main.async {
+            self.connectionStatus = session.isReachable ? "OK" : "..."
+        }
     }
 
     func session(_ session: WCSession,

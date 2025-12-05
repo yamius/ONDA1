@@ -4,23 +4,22 @@ struct ContentView: View {
     @EnvironmentObject var workoutManager: WorkoutManager
 
     var body: some View {
-        VStack(spacing: 8) {
+        VStack(spacing: 4) {
             HStack {
                 Text("Onda Life")
-                    .font(.system(size: 14, weight: .medium))
+                    .font(.system(size: 12, weight: .medium))
                     .foregroundColor(.secondary)
                 Spacer()
             }
-            .padding(.horizontal, 4)
             
             Spacer()
             
             Text(workoutManager.heartRateString)
-                .font(.system(size: 56, weight: .bold, design: .rounded))
+                .font(.system(size: 52, weight: .bold, design: .rounded))
                 .foregroundColor(workoutManager.isRunning ? .red : .primary)
 
             Text("BPM")
-                .font(.system(size: 14, weight: .medium))
+                .font(.system(size: 12, weight: .medium))
                 .foregroundColor(.secondary)
             
             Spacer()
@@ -30,27 +29,25 @@ struct ContentView: View {
                     workoutManager.stopWorkout()
                 }) {
                     Text("Stop")
-                        .font(.system(size: 18, weight: .semibold))
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 12)
+                        .font(.system(size: 16, weight: .semibold))
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.red)
+                .controlSize(.regular)
             } else {
                 Button(action: {
                     workoutManager.startWorkout()
                 }) {
                     Text("Start")
-                        .font(.system(size: 18, weight: .semibold))
-                        .frame(maxWidth: .infinity)
-                        .padding(.vertical, 12)
+                        .font(.system(size: 16, weight: .semibold))
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.green)
+                .controlSize(.regular)
             }
         }
-        .padding(.horizontal, 8)
-        .padding(.bottom, 4)
+        .padding(.horizontal, 4)
+        .padding(.vertical, 2)
         .onAppear {
             workoutManager.activateSession()
         }

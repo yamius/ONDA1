@@ -1,5 +1,6 @@
 import UIKit
 import Capacitor
+import WatchConnectivity
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -7,6 +8,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Activate WCSession as early as possible to receive watch data
+        if WCSession.isSupported() {
+            print("[ONDA] WCSession supported, activating early...")
+            OndaWatchManager.shared.activateSession()
+        }
         return true
     }
 
