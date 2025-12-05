@@ -16,6 +16,7 @@ import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
 import { useHealthConnect } from './hooks/useHealthConnect';
 import { useKeepAwake } from './hooks/useKeepAwake';
+import { useWatchHeartRate } from './hooks/useWatchHeartRate';
 import { rhythmStore } from './sleep/rhythm';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 
@@ -23,8 +24,11 @@ const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
   const vitalsData = useVitals();
   const healthConnectData = useHealthConnect();
+  const watchHeartRate = useWatchHeartRate();
   
   useKeepAwake(true);
+  
+  const displayHeartRate = watchHeartRate.heartRate ?? vitalsData.hr ?? null;
 
   const safeToFixed = (value: any, digits: number = 0): string => {
     if (value === null || value === undefined) return '--';
@@ -2610,9 +2614,9 @@ const OndaLevel1 = () => {
         <div className="mb-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-red-500/30">
-              <Heart className="w-5 sm:w-6 h-5 sm:h-6 text-red-400 mb-2 mx-auto" />
-              <div className="text-xl sm:text-2xl font-bold">{vitalsData.hr ?? '--'}</div>
-              <div className="text-xs text-gray-400">BPM</div>
+              <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
+              <div className="text-xl sm:text-2xl font-bold">{displayHeartRate ?? '--'}</div>
+              <div className="text-xs text-gray-400">BPM {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
             </div>
             <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-blue-500/30">
               <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
