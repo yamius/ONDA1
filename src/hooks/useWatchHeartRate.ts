@@ -34,7 +34,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
         return;
       }
 
-      const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatchPlugin');
+      const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
       console.log('[Watch] Plugin available:', isPluginAvailable);
       
       if (!isPluginAvailable) {
@@ -75,7 +75,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       const platform = Capacitor.getPlatform();
       if (platform !== 'ios') return;
       
-      const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatchPlugin');
+      const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
       if (!isPluginAvailable) return;
 
       try {

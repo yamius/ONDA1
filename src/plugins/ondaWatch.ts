@@ -30,6 +30,6 @@ export interface OndaWatchPlugin {
   removeAllListeners(): Promise<void>;
 }
 
-const OndaWatch = registerPlugin<OndaWatchPlugin>('OndaWatchPlugin');
+const OndaWatch = registerPlugin<OndaWatchPlugin>('OndaWatch');
 
 export default OndaWatch;
