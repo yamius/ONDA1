@@ -570,6 +570,7 @@
 				TARGETED_DEVICE_FAMILY = 4;
 ARCHS = "arm64_32 arm64";
 				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+IPHONEOS_DEPLOYMENT_TARGET = "";
 			};
 			name = Debug;
 		};
@@ -613,6 +614,7 @@ ARCHS = "arm64_32 arm64";
 				TARGETED_DEVICE_FAMILY = 4;
 ARCHS = "arm64_32 arm64";
 				WATCHOS_DEPLOYMENT_TARGET = 11.0;
+IPHONEOS_DEPLOYMENT_TARGET = "";
 			};
 			name = Release;
 		};
