@@ -25,7 +25,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   const isConnected = watchStatus?.reachable === true;
 
   useEffect(() => {
-    const checkStatus = async () => {
+    const checkStatusAndStart = async () => {
       const platform = Capacitor.getPlatform();
       
       if (platform !== 'ios') {
@@ -56,6 +56,17 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
           setError('Watch not reachable');
         } else {
           setError(null);
+          
+          if (!isMonitoring && status.reachable) {
+            console.log('[Watch] Auto-starting realtime...');
+            try {
+              await OndaWatch.startRealtime();
+              setIsMonitoring(true);
+              console.log('[Watch] Realtime auto-started');
+            } catch (startErr) {
+              console.error('[Watch] Auto-start error:', startErr);
+            }
+          }
         }
       } catch (err) {
         console.error('[Watch] Status error:', err);
@@ -64,11 +75,11 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       }
     };
 
-    checkStatus();
+    checkStatusAndStart();
     
-    const interval = setInterval(checkStatus, 10000);
+    const interval = setInterval(checkStatusAndStart, 10000);
     return () => clearInterval(interval);
-  }, []);
+  }, [isMonitoring]);
 
   useEffect(() => {
     const setupListener = async () => {
