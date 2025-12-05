@@ -8,6 +8,7 @@ final class WorkoutManager: NSObject, ObservableObject {
     @Published var heartRate: Double = 0
     @Published var isRunning: Bool = false
     @Published var connectionStatus: String = "..."
+    @Published var errorMessage: String = ""
 
     var heartRateString: String {
         heartRate > 0 ? String(Int(heartRate)) : "--"
@@ -43,23 +44,44 @@ final class WorkoutManager: NSObject, ObservableObject {
     }
 
     private func requestHealthAuthorization() {
-        guard HKHealthStore.isHealthDataAvailable() else { return }
-        guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else { return }
+        guard HKHealthStore.isHealthDataAvailable() else {
+            print("[Watch] HealthKit not available")
+            DispatchQueue.main.async {
+                self.errorMessage = "No HK"
+            }
+            return
+        }
+        
+        guard let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate),
+              let workoutType = HKObjectType.workoutType() as? HKSampleType else {
+            print("[Watch] Failed to create HK types")
+            return
+        }
 
-        let typesToShare: Set<HKSampleType> = []
-        let typesToRead: Set<HKObjectType> = [heartRateType]
+        // ВАЖНО: Для workout session нужно разрешение на ЗАПИСЬ workout
+        let typesToShare: Set<HKSampleType> = [workoutType]
+        let typesToRead: Set<HKObjectType> = [heartRateType, HKObjectType.workoutType()]
 
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
-            if !success {
-                print("[Watch] HealthKit auth failed: \(error?.localizedDescription ?? "unknown")")
-            } else {
-                print("[Watch] HealthKit authorized")
+            DispatchQueue.main.async {
+                if !success {
+                    print("[Watch] HealthKit auth failed: \(error?.localizedDescription ?? "unknown")")
+                    self.errorMessage = "Auth fail"
+                } else {
+                    print("[Watch] HealthKit authorized successfully")
+                    self.errorMessage = ""
+                }
             }
         }
     }
 
     func startWorkout() {
-        guard !isRunning else { return }
+        guard !isRunning else {
+            print("[Watch] Already running")
+            return
+        }
+        
+        print("[Watch] Starting workout...")
 
         let configuration = HKWorkoutConfiguration()
         configuration.activityType = .mindAndBody
@@ -79,36 +101,52 @@ final class WorkoutManager: NSObject, ObservableObject {
 
             self.workoutSession = session
             self.workoutBuilder = builder
-            self.isRunning = true
 
             let startDate = Date()
             session.startActivity(with: startDate)
-            builder.beginCollection(withStart: startDate) { success, error in
-                if let error = error {
-                    print("[Watch] beginCollection error: \(error)")
-                } else {
-                    print("[Watch] Workout collection started")
+            
+            builder.beginCollection(withStart: startDate) { [weak self] success, error in
+                DispatchQueue.main.async {
+                    if let error = error {
+                        print("[Watch] beginCollection error: \(error)")
+                        self?.errorMessage = "Coll err"
+                        self?.isRunning = false
+                    } else if success {
+                        print("[Watch] Workout collection started successfully")
+                        self?.isRunning = true
+                        self?.errorMessage = ""
+                    }
                 }
             }
 
             sendStatusToPhone(status: "started")
         } catch {
             print("[Watch] Failed to start workout: \(error)")
+            DispatchQueue.main.async {
+                self.errorMessage = "Start err"
+            }
         }
     }
 
     func stopWorkout() {
         guard isRunning else { return }
+        
+        print("[Watch] Stopping workout...")
 
-        isRunning = false
         let endDate = Date()
 
         workoutSession?.end()
         workoutBuilder?.endCollection(withEnd: endDate) { [weak self] success, error in
             guard let self = self else { return }
             self.workoutBuilder?.finishWorkout { _, error in
-                if let error = error {
-                    print("[Watch] finishWorkout error: \(error)")
+                DispatchQueue.main.async {
+                    self.isRunning = false
+                    self.heartRate = 0
+                    if let error = error {
+                        print("[Watch] finishWorkout error: \(error)")
+                    } else {
+                        print("[Watch] Workout finished")
+                    }
                 }
             }
         }
@@ -195,27 +233,61 @@ extension WorkoutManager: HKWorkoutSessionDelegate, HKLiveWorkoutBuilderDelegate
                         from fromState: HKWorkoutSessionState,
                         date: Date) {
         print("[Watch] Workout state: \(fromState.rawValue) -> \(toState.rawValue)")
+        
+        DispatchQueue.main.async {
+            switch toState {
+            case .running:
+                self.isRunning = true
+            case .ended, .stopped:
+                self.isRunning = false
+            default:
+                break
+            }
+        }
     }
 
     func workoutSession(_ workoutSession: HKWorkoutSession,
                         didFailWithError error: Error) {
         print("[Watch] Workout session failed: \(error)")
+        DispatchQueue.main.async {
+            self.errorMessage = "Sess err"
+            self.isRunning = false
+        }
     }
 
-    func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {}
+    func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {
+        print("[Watch] Collected event")
+    }
 
     func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder,
                         didCollectDataOf collectedTypes: Set<HKSampleType>) {
 
-        guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate),
-              collectedTypes.contains(heartRateType),
-              let stats = workoutBuilder.statistics(for: heartRateType),
-              let quantity = stats.mostRecentQuantity() else {
+        print("[Watch] Collected data types: \(collectedTypes.count)")
+        
+        guard let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate) else {
+            print("[Watch] No HR type")
+            return
+        }
+        
+        guard collectedTypes.contains(heartRateType) else {
+            print("[Watch] No HR in collected types")
+            return
+        }
+        
+        guard let stats = workoutBuilder.statistics(for: heartRateType) else {
+            print("[Watch] No stats for HR")
+            return
+        }
+        
+        guard let quantity = stats.mostRecentQuantity() else {
+            print("[Watch] No recent quantity")
             return
         }
 
         let unit = HKUnit(from: "count/min")
         let bpm = quantity.doubleValue(for: unit)
+        
+        print("[Watch] Got HR: \(bpm)")
 
         DispatchQueue.main.async {
             self.heartRate = bpm

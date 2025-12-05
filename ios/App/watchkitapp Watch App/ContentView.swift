@@ -1,33 +1,38 @@
 import SwiftUI
+import HealthKit
 
 struct ContentView: View {
     @EnvironmentObject var workoutManager: WorkoutManager
 
     var body: some View {
-        VStack(spacing: 2) {
+        VStack(spacing: 8) {
+            // Connection status
             HStack {
-                Text("Onda")
-                    .font(.system(size: 11, weight: .medium))
-                    .foregroundColor(.secondary)
-                Spacer()
+                Circle()
+                    .fill(workoutManager.connectionStatus == "OK" ? Color.green : Color.orange)
+                    .frame(width: 8, height: 8)
                 Text(workoutManager.connectionStatus)
-                    .font(.system(size: 10, weight: .medium))
-                    .foregroundColor(workoutManager.connectionStatus == "OK" ? .green : .orange)
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
             }
-            .padding(.horizontal, 2)
             
-            Spacer()
-            
+            // Heart rate display
             Text(workoutManager.heartRateString)
                 .font(.system(size: 48, weight: .bold, design: .rounded))
                 .foregroundColor(workoutManager.isRunning ? .red : .primary)
-
+            
             Text("BPM")
-                .font(.system(size: 11, weight: .medium))
+                .font(.caption)
                 .foregroundColor(.secondary)
             
-            Spacer()
-
+            // Error message if any
+            if !workoutManager.errorMessage.isEmpty {
+                Text(workoutManager.errorMessage)
+                    .font(.caption2)
+                    .foregroundColor(.orange)
+            }
+            
+            // Start/Stop button
             Button(action: {
                 if workoutManager.isRunning {
                     workoutManager.stopWorkout()
@@ -36,13 +41,13 @@ struct ContentView: View {
                 }
             }) {
                 Text(workoutManager.isRunning ? "Stop" : "Start")
-                    .font(.system(size: 15, weight: .semibold))
+                    .font(.headline)
+                    .frame(maxWidth: .infinity)
             }
             .buttonStyle(.borderedProminent)
             .tint(workoutManager.isRunning ? .red : .green)
         }
-        .padding(.horizontal, 2)
-        .padding(.vertical, 2)
+        .padding(.horizontal, 8)
         .onAppear {
             workoutManager.activateSession()
         }
