@@ -62,7 +62,7 @@ platform :ios do
     )
     
     # Build the app with watchOS
-    # Use sdk: iphoneos to properly resolve destination for multi-platform projects
+    # Use destination with name to properly resolve for multi-platform projects
     gym(
       scheme: "App",
       workspace: "ios/App/App.xcworkspace",
@@ -70,8 +70,8 @@ platform :ios do
       output_directory: "./build",
       output_name: "ONDA.ipa",
       clean: true,
-      sdk: "iphoneos",
-      xcargs: "DEVELOPMENT_TEAM=#{ENV['FASTLANE_TEAM_ID']} -allowProvisioningUpdates",
+      destination: "generic/platform=iOS,name=Any iOS Device",
+      xcargs: "DEVELOPMENT_TEAM=#{ENV['FASTLANE_TEAM_ID']} -allowProvisioningUpdates CODE_SIGN_STYLE=Manual",
       export_options: {
         signingStyle: "manual",
         provisioningProfiles: {
