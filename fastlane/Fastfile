@@ -62,7 +62,7 @@ platform :ios do
     )
     
     # Build the app with watchOS
-    # Use destination with name to properly resolve for multi-platform projects
+    # Use xcodebuild directly with proper archive settings
     gym(
       scheme: "App",
       workspace: "ios/App/App.xcworkspace",
@@ -70,8 +70,10 @@ platform :ios do
       output_directory: "./build",
       output_name: "ONDA.ipa",
       clean: true,
-      destination: "generic/platform=iOS,name=Any iOS Device",
-      xcargs: "DEVELOPMENT_TEAM=#{ENV['FASTLANE_TEAM_ID']} -allowProvisioningUpdates CODE_SIGN_STYLE=Manual",
+      skip_build_archive: false,
+      build_path: "./build/archive",
+      archive_path: "./build/archive/App.xcarchive",
+      xcargs: "-sdk iphoneos DEVELOPMENT_TEAM=#{ENV['FASTLANE_TEAM_ID']} CODE_SIGN_STYLE=Manual ONLY_ACTIVE_ARCH=NO",
       export_options: {
         signingStyle: "manual",
         provisioningProfiles: {
@@ -85,8 +87,6 @@ platform :ios do
   desc "Build and upload to TestFlight"
   lane :beta do
     # Setup code signing with Match using API Key (no password needed)
-    # First run: readonly=false to create certificates
-    # After certificates exist: change to readonly=true for safety
     
     # Match for iOS app
     match(
@@ -125,9 +125,6 @@ platform :ios do
       notify_external_testers: false,
       changelog: "Build #{Time.now.strftime('%Y-%m-%d %H:%M')}"
     )
-    
-    # Keep build artifacts for GitHub Actions upload
-    # (removed clean_build_artifacts)
   end
 
   desc "Release to App Store"
@@ -148,9 +145,6 @@ platform :ios do
       skip_screenshots: true,
       submit_for_review: false
     )
-    
-    # Keep build artifacts for GitHub Actions upload
-    # (removed clean_build_artifacts)
   end
 
   desc "Setup Match for code signing"
@@ -167,7 +161,6 @@ platform :ios do
   end
 
   after_all do |lane|
-    # Success notification
     notification(
       title: "ONDA iOS",
       message: "Successfully completed '#{lane}' lane!"
@@ -175,7 +168,6 @@ platform :ios do
   end
 
   error do |lane, exception|
-    # Error notification
     notification(
       title: "ONDA iOS Error",
       message: "Failed in '#{lane}' lane: #{exception.message}"
