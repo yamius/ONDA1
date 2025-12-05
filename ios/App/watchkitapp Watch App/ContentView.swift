@@ -1,37 +1,40 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var workoutManager = WorkoutManager.shared
+    @StateObject private var workoutManager = WorkoutManager()
     
     var body: some View {
         VStack(spacing: 20) {
-            Text("ONDA")
-                .font(.title2)
-                .fontWeight(.bold)
+            Text("Onda Life")
+                .font(.headline)
             
             Text("\(Int(workoutManager.heartRate))")
-                .font(.system(size: 60, weight: .bold))
+                .font(.system(size: 60, weight: .bold, design: .rounded))
                 .foregroundColor(.red)
             
             Text("BPM")
                 .font(.caption)
-                .foregroundColor(.gray)
+                .foregroundColor(.secondary)
             
             Button(action: {
                 if workoutManager.isActive {
                     workoutManager.stopWorkout()
                 } else {
-                    workoutManager.requestAuthorization()
                     workoutManager.startWorkout()
                 }
             }) {
                 Text(workoutManager.isActive ? "Stop" : "Start")
-                    .font(.headline)
                     .frame(maxWidth: .infinity)
             }
+            #if os(watchOS)
             .buttonStyle(.borderedProminent)
             .tint(workoutManager.isActive ? .red : .green)
+            #endif
         }
         .padding()
     }
+}
+
+#Preview {
+    ContentView()
 }
