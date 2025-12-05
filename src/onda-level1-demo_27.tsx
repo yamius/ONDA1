@@ -3234,7 +3234,7 @@ const OndaLevel1 = () => {
 
       {/* Модальное окно дневника */}
       {showJournalModal && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4">
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
           <div className="bg-gradient-to-br from-gray-900 to-black max-w-4xl w-full max-h-[90vh] rounded-2xl border border-indigo-500/30 shadow-2xl my-4 flex flex-col">
             <div className="sticky top-0 bg-gray-900/95 backdrop-blur-sm border-b border-indigo-500/30 p-4 sm:p-6 flex items-center justify-between">
               <h2 className="text-lg sm:text-2xl font-bold">📖 {t('practices.journal_title')}</h2>
@@ -3302,7 +3302,7 @@ const OndaLevel1 = () => {
 
       {/* Модальное окно статистики */}
       {showStatsModal && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
           <div className="bg-gradient-to-br from-gray-900 to-black max-w-6xl w-full max-h-[90vh] overflow-y-auto no-scrollbar rounded-2xl border border-cyan-500/30 shadow-2xl my-4">
             <div className="sticky top-0 bg-gray-900/95 backdrop-blur-sm border-b border-cyan-500/30 p-4 sm:p-6 flex items-center justify-between">
               <h2 className="text-lg sm:text-2xl font-bold">{t('stats.title')}</h2>
@@ -3896,6 +3896,28 @@ const OndaLevel1 = () => {
             >
               <Heart className="w-6 h-6 text-pink-400" />
               <span className="font-medium">{t('nav.connection')}</span>
+            </button>
+
+            {/* Пройти заново интро */}
+            <button
+              onClick={() => {
+                localStorage.removeItem('onda_onboarding_completed');
+                setOnboardingScreen(1);
+                setShowOnboarding(true);
+                setShowMenu(false);
+              }}
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              data-testid="menu-item-replay-intro"
+            >
+              <RotateCcw className="w-6 h-6 text-gray-400" />
+              <span className="font-medium">{t('onboarding.replay') || 'Replay intro'}</span>
             </button>
 
             {/* Разделитель */}
