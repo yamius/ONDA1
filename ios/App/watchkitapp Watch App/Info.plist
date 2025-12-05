@@ -18,6 +18,8 @@
     <string>APPL</string>
     <key>CFBundleInfoDictionaryVersion</key>
     <string>6.0</string>
+    <key>CFBundleIconName</key>
+    <string>AppIcon</string>
     <key>UIDeviceFamily</key>
     <array>
         <integer>4</integer>
@@ -35,5 +37,9 @@
         <string>UIInterfaceOrientationPortrait</string>
         <string>UIInterfaceOrientationPortraitUpsideDown</string>
     </array>
+    <key>NSHealthShareUsageDescription</key>
+    <string>ONDA uses your health data to track heart rate during meditation practices and provide personalized wellness insights.</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>ONDA saves your meditation workout sessions to Health to help you track your wellness journey.</string>
 </dict>
 </plist>
