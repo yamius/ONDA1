@@ -1,118 +1,227 @@
 import Foundation
 import HealthKit
 import WatchConnectivity
+import Combine
 
-class WorkoutManager: NSObject, ObservableObject {
-    static let shared = WorkoutManager()
-    
-    private let healthStore = HKHealthStore()
-    private var session: HKWorkoutSession?
-    private var builder: HKLiveWorkoutBuilder?
-    
+final class WorkoutManager: NSObject, ObservableObject {
+
     @Published var heartRate: Double = 0
-    @Published var isActive = false
-    
+    @Published var isRunning: Bool = false
+
+    var heartRateString: String {
+        heartRate > 0 ? String(Int(heartRate)) : "--"
+    }
+
+    private let healthStore = HKHealthStore()
+    private var workoutSession: HKWorkoutSession?
+    private var workoutBuilder: HKLiveWorkoutBuilder?
+
+    private let session = WCSession.isSupported() ? WCSession.default : nil
+
     override init() {
         super.init()
-        setupWatchConnectivity()
-    }
-    
-    private func setupWatchConnectivity() {
-        if WCSession.isSupported() {
-            WCSession.default.delegate = self
-            WCSession.default.activate()
+        if let session = session {
+            session.delegate = self
+            session.activate()
         }
     }
-    
-    func requestAuthorization() {
-        let typesToShare: Set<HKSampleType> = [HKObjectType.workoutType()]
-        let typesToRead: Set<HKObjectType> = [
-            HKObjectType.quantityType(forIdentifier: .heartRate)!
+
+    func activateSession() {
+        requestHealthAuthorization()
+    }
+
+    private func requestHealthAuthorization() {
+        guard HKHealthStore.isHealthDataAvailable() else { return }
+        guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else { return }
+
+        let typesToShare: Set<HKSampleType> = []
+        let typesToRead: Set<HKObjectType> = [heartRateType]
+
+        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
+            if !success {
+                print("HealthKit auth failed: \(error?.localizedDescription ?? "unknown")")
+            }
+        }
+    }
+
+    func startWorkout() {
+        guard !isRunning else { return }
+
+        let configuration = HKWorkoutConfiguration()
+        configuration.activityType = .other
+        configuration.locationType = .indoor
+
+        do {
+            let session = try HKWorkoutSession(healthStore: healthStore, configuration: configuration)
+            let builder = session.associatedWorkoutBuilder()
+
+            session.delegate = self
+            builder.delegate = self
+
+            builder.dataSource = HKLiveWorkoutDataSource(
+                healthStore: healthStore,
+                workoutConfiguration: configuration
+            )
+
+            self.workoutSession = session
+            self.workoutBuilder = builder
+            self.isRunning = true
+
+            let startDate = Date()
+            session.startActivity(with: startDate)
+            builder.beginCollection(withStart: startDate) { success, error in
+                if let error = error {
+                    print("beginCollection error: \(error)")
+                }
+            }
+
+            sendStatusToPhone(status: "started")
+        } catch {
+            print("Failed to start workout: \(error)")
+        }
+    }
+
+    func stopWorkout() {
+        guard isRunning else { return }
+
+        isRunning = false
+        let endDate = Date()
+
+        workoutSession?.end()
+        workoutBuilder?.endCollection(withEnd: endDate) { [weak self] success, error in
+            guard let self = self else { return }
+            self.workoutBuilder?.finishWorkout { _, error in
+                if let error = error {
+                    print("finishWorkout error: \(error)")
+                }
+            }
+        }
+
+        sendStatusToPhone(status: "stopped")
+    }
+
+    private func sendHeartRateToPhone(_ bpm: Double) {
+        guard let session = session else { return }
+        
+        let message: [String: Any] = [
+            "type": "heartRate",
+            "value": bpm,
+            "timestamp": Date().timeIntervalSince1970
         ]
         
-        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
-            if success {
-                print("[WorkoutManager] HealthKit authorized")
+        if session.isReachable {
+            session.sendMessage(message, replyHandler: nil) { [weak self] error in
+                print("sendMessage error: \(error.localizedDescription)")
+                self?.transferHeartRateToPhone(bpm)
             }
+        } else {
+            transferHeartRateToPhone(bpm)
         }
     }
     
-    func startWorkout() {
-        let config = HKWorkoutConfiguration()
-        config.activityType = .mindAndBody
-        config.locationType = .indoor
+    private func transferHeartRateToPhone(_ bpm: Double) {
+        guard let session = session else { return }
         
-        do {
-            session = try HKWorkoutSession(healthStore: healthStore, configuration: config)
-            builder = session?.associatedWorkoutBuilder()
-            
-            builder?.dataSource = HKLiveWorkoutDataSource(healthStore: healthStore, workoutConfiguration: config)
-            
-            session?.delegate = self
-            builder?.delegate = self
-            
-            let startDate = Date()
-            session?.startActivity(with: startDate)
-            builder?.beginCollection(withStart: startDate) { success, error in
-                DispatchQueue.main.async {
-                    self.isActive = true
-                }
+        let userInfo: [String: Any] = [
+            "type": "heartRate",
+            "value": bpm,
+            "timestamp": Date().timeIntervalSince1970
+        ]
+        
+        session.transferUserInfo(userInfo)
+    }
+
+    private func sendStatusToPhone(status: String) {
+        guard let session = session else { return }
+
+        let message: [String: Any] = [
+            "type": "status",
+            "value": status
+        ]
+        
+        if session.isReachable {
+            session.sendMessage(message, replyHandler: nil) { [weak self] error in
+                print("sendStatus error: \(error.localizedDescription)")
+                self?.transferStatusToPhone(status: status)
             }
-        } catch {
-            print("[WorkoutManager] Error starting workout: \(error)")
+        } else {
+            transferStatusToPhone(status: status)
         }
     }
     
-    func stopWorkout() {
-        session?.end()
-        isActive = false
-    }
-    
-    private func sendHeartRateToPhone(_ hr: Double) {
-        guard WCSession.default.isReachable else { return }
-        WCSession.default.sendMessage(["heartRate": hr], replyHandler: nil)
-    }
-}
-
-extension WorkoutManager: HKWorkoutSessionDelegate {
-    func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState, from fromState: HKWorkoutSessionState, date: Date) {
-        print("[WorkoutManager] State: \(toState.rawValue)")
-    }
-    
-    func workoutSession(_ workoutSession: HKWorkoutSession, didFailWithError error: Error) {
-        print("[WorkoutManager] Error: \(error)")
+    private func transferStatusToPhone(status: String) {
+        guard let session = session else { return }
+        
+        let userInfo: [String: Any] = [
+            "type": "status",
+            "value": status
+        ]
+        
+        session.transferUserInfo(userInfo)
     }
 }
 
-extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
-    func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf collectedTypes: Set<HKSampleType>) {
-        for type in collectedTypes {
-            guard let quantityType = type as? HKQuantityType,
-                  quantityType == HKQuantityType.quantityType(forIdentifier: .heartRate) else { continue }
-            
-            if let statistics = workoutBuilder.statistics(for: quantityType) {
-                let hrUnit = HKUnit.count().unitDivided(by: .minute())
-                if let value = statistics.mostRecentQuantity()?.doubleValue(for: hrUnit) {
-                    DispatchQueue.main.async {
-                        self.heartRate = value
-                        self.sendHeartRateToPhone(value)
-                    }
-                }
-            }
-        }
+extension WorkoutManager: HKWorkoutSessionDelegate, HKLiveWorkoutBuilderDelegate {
+    func workoutSession(_ workoutSession: HKWorkoutSession,
+                        didChangeTo toState: HKWorkoutSessionState,
+                        from fromState: HKWorkoutSessionState,
+                        date: Date) {}
+
+    func workoutSession(_ workoutSession: HKWorkoutSession,
+                        didFailWithError error: Error) {
+        print("Workout session failed: \(error)")
     }
-    
+
     func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {}
+
+    func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder,
+                        didCollectDataOf collectedTypes: Set<HKSampleType>) {
+
+        guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate),
+              collectedTypes.contains(heartRateType),
+              let stats = workoutBuilder.statistics(for: heartRateType),
+              let quantity = stats.mostRecentQuantity() else {
+            return
+        }
+
+        let unit = HKUnit(from: "count/min")
+        let bpm = quantity.doubleValue(for: unit)
+
+        DispatchQueue.main.async {
+            self.heartRate = bpm
+        }
+
+        sendHeartRateToPhone(bpm)
+    }
 }
 
 extension WorkoutManager: WCSessionDelegate {
-    func session(_ session: WCSession, activationDidCompleteWith state: WCSessionActivationState, error: Error?) {}
-    
-    func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
-        if message["command"] as? String == "start" {
+    func session(_ session: WCSession,
+                 activationDidCompleteWith activationState: WCSessionActivationState,
+                 error: Error?) {
+        if let error = error {
+            print("WCSession activation error: \(error)")
+        } else {
+            print("Watch WCSession activated: \(activationState.rawValue)")
+        }
+    }
+
+    func sessionReachabilityDidChange(_ session: WCSession) {
+        print("Watch WCSession reachable: \(session.isReachable)")
+    }
+
+    func session(_ session: WCSession,
+                 didReceiveMessage message: [String : Any]) {
+
+        guard let type = message["type"] as? String else { return }
+
+        switch type {
+        case "start":
             DispatchQueue.main.async { self.startWorkout() }
-        } else if message["command"] as? String == "stop" {
+        case "stop":
             DispatchQueue.main.async { self.stopWorkout() }
+        default:
+            break
         }
     }
 }
