@@ -7,7 +7,7 @@ jobs:
   build-ios:
     name: Build and Deploy iOS App
     runs-on: macos-15
-    timeout-minutes: 60
+    timeout-minutes: 75
     
     steps:
       - name: Checkout code
@@ -41,11 +41,15 @@ jobs:
         with:
           xcode-version: '16.1'
 
-      - name: Download iOS Platform
+      - name: Download iOS and watchOS Platforms
         run: |
           echo "Downloading iOS platform (this takes ~10 minutes)..."
           sudo xcodebuild -downloadPlatform iOS
           echo "iOS platform download completed!"
+          echo ""
+          echo "Downloading watchOS platform..."
+          sudo xcodebuild -downloadPlatform watchOS
+          echo "watchOS platform download completed!"
 
       - name: Verify iOS SDK
         run: |
