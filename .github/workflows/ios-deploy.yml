@@ -7,7 +7,7 @@ jobs:
   build-ios:
     name: Build and Deploy iOS App
     runs-on: macos-15
-    timeout-minutes: 75
+    timeout-minutes: 90
     
     steps:
       - name: Checkout code
@@ -41,15 +41,35 @@ jobs:
         with:
           xcode-version: '16.1'
 
-      - name: Download iOS and watchOS Platforms
+      - name: Download iOS and watchOS Platforms with retry
         run: |
-          echo "Downloading iOS platform (this takes ~10 minutes)..."
-          sudo xcodebuild -downloadPlatform iOS
-          echo "iOS platform download completed!"
+          download_platform() {
+            local platform=$1
+            local max_attempts=3
+            local attempt=1
+            
+            while [ $attempt -le $max_attempts ]; do
+              echo "Attempting to download $platform platform (attempt $attempt/$max_attempts)..."
+              if sudo xcodebuild -downloadPlatform "$platform"; then
+                echo "$platform platform download completed!"
+                return 0
+              else
+                echo "Download failed for $platform, waiting 30 seconds before retry..."
+                sleep 30
+                attempt=$((attempt + 1))
+              fi
+            done
+            
+            echo "Failed to download $platform after $max_attempts attempts"
+            return 1
+          }
+          
+          echo "=== Downloading iOS Platform ==="
+          download_platform iOS
+          
           echo ""
-          echo "Downloading watchOS platform..."
-          sudo xcodebuild -downloadPlatform watchOS
-          echo "watchOS platform download completed!"
+          echo "=== Downloading watchOS Platform ==="
+          download_platform watchOS
 
       - name: Verify iOS SDK
         run: |
