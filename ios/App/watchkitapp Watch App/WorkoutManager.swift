@@ -37,7 +37,7 @@ final class WorkoutManager: NSObject, ObservableObject {
     
     private var lastHeartbeatDate: Date?
     private var heartbeatMonitorTimer: Timer?
-    private let heartbeatTimeout: TimeInterval = 5.0
+    private let heartbeatTimeout: TimeInterval = 8.0
 
     override init() {
         super.init()

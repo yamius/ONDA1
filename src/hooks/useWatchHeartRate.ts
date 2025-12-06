@@ -63,17 +63,6 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
           setError('Watch not reachable');
         } else {
           setError(null);
-          
-          if (!isMonitoring && status.reachable) {
-            addLog('Auto-starting...');
-            try {
-              await OndaWatch.startRealtime();
-              setIsMonitoring(true);
-              addLog('Realtime started');
-            } catch (startErr) {
-              addLog(`Start error: ${startErr}`);
-            }
-          }
         }
       } catch (err) {
         addLog(`Status error: ${err}`);
@@ -146,7 +135,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
 
     heartbeatIntervalRef.current = setInterval(() => {
       OndaWatch.sendHeartbeat().catch(() => {});
-    }, 1000);
+    }, 2000);
 
     return () => {
       if (heartbeatIntervalRef.current) {
