@@ -4,27 +4,34 @@ import { useHeartRate } from "./useHeartRate";
 import { useMotion } from "./useMotion";
 import { useNotificationHeartRate } from "./useNotificationHeartRate";
 import { useHealthKitHeartRate } from "./useHealthKitHeartRate";
+import { useWatchHeartRate } from "./useWatchHeartRate";
 
 export function useVitals() {
   const bleHR = useHeartRate();
   const notificationHR = useNotificationHeartRate();
   const healthKitHR = useHealthKitHeartRate();
+  const watchHR = useWatchHeartRate();
   const { activity } = useMotion();
   
   // Priority system for heart rate sources:
   // 1. BLE (real-time, most accurate) - when connected
-  // 2. HealthKit (iOS) - when monitoring and available
-  // 3. Notification (Android periodic updates) - fallback
+  // 2. Apple Watch (iOS real-time via WCSession) - when connected
+  // 3. HealthKit (iOS) - when monitoring and available
+  // 4. Notification (Android periodic updates) - fallback
   const currentHR = bleHR.connected 
     ? bleHR.hr 
-    : (healthKitHR.isMonitoring && healthKitHR.heartRate) 
-      ? healthKitHR.heartRate 
-      : notificationHR.hr;
+    : watchHR.isConnected && watchHR.heartRate
+      ? watchHR.heartRate
+      : (healthKitHR.isMonitoring && healthKitHR.heartRate) 
+        ? healthKitHR.heartRate 
+        : notificationHR.hr;
   const hrSource = bleHR.connected 
     ? 'ble' 
-    : (healthKitHR.isMonitoring && healthKitHR.heartRate) 
-      ? 'healthkit' 
-      : (notificationHR.hr ? 'notification' : null);
+    : watchHR.isConnected && watchHR.heartRate
+      ? 'watch'
+      : (healthKitHR.isMonitoring && healthKitHR.heartRate) 
+        ? 'healthkit' 
+        : (notificationHR.hr ? 'notification' : null);
 
   const [br, setBr] = useState<number | null>(null);
   const [stress, setStress] = useState<number | null>(null);
@@ -75,6 +82,19 @@ export function useVitals() {
       console.log('[useVitals] Added HealthKit HR to series:', healthKitHR.heartRate);
     }
   }, [healthKitHR.heartRate, healthKitHR.isMonitoring, bleHR.connected, bleHR.seriesRef]);
+
+  // Feed Apple Watch HR into series (iOS real-time via WCSession)
+  useEffect(() => {
+    if (!bleHR.connected && watchHR.isConnected && watchHR.heartRate != null) {
+      const now = Date.now() / 1000;
+      bleHR.seriesRef.current.push({ t: now, hr: watchHR.heartRate });
+      // Keep series at reasonable size
+      if (bleHR.seriesRef.current.length > 200) {
+        bleHR.seriesRef.current.shift();
+      }
+      console.log('[useVitals] Added Watch HR to series:', watchHR.heartRate);
+    }
+  }, [watchHR.heartRate, watchHR.isConnected, bleHR.connected, bleHR.seriesRef]);
 
   useEffect(() => {
     if (currentHR == null) return;
@@ -265,6 +285,16 @@ export function useVitals() {
       requestPermission: healthKitHR.requestPermission,
       startMonitoring: healthKitHR.startMonitoring,
       stopMonitoring: healthKitHR.stopMonitoring
+    },
+    
+    // Apple Watch HR fields (iOS real-time)
+    watchHR: {
+      hr: watchHR.heartRate,
+      isConnected: watchHR.isConnected,
+      isMonitoring: watchHR.isMonitoring,
+      startRealtime: watchHR.startRealtime,
+      stopRealtime: watchHR.stopRealtime,
+      debugLog: watchHR.debugLog
     }
   };
 }
