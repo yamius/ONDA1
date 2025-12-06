@@ -124,7 +124,7 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     }
     
     func sendHeartbeat() {
-        guard let session = session, session.isReachable else {
+        guard let session = session else {
             return
         }
         
@@ -133,8 +133,14 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
             "ts": Date().timeIntervalSince1970
         ]
         
-        session.sendMessage(message, replyHandler: nil) { error in
-            print("[ONDA Manager] heartbeat error: \(error.localizedDescription)")
+        if session.isReachable {
+            session.sendMessage(message, replyHandler: nil) { error in
+                print("[ONDA Manager] heartbeat error: \(error.localizedDescription)")
+            }
+        } else {
+            // Send via transferUserInfo when not immediately reachable
+            // This queues the message and delivers when watch becomes reachable
+            session.transferUserInfo(message)
         }
     }
 
