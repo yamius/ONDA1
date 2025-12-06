@@ -135,7 +135,9 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
         }`}>
           <button
             onClick={onClose}
-            className={`absolute top-4 right-4 p-2 rounded-full transition-all ${
+            className={`absolute right-4 p-2 rounded-full transition-all ${
+              isAndroid ? 'top-8' : 'top-4'
+            } ${
               isLightTheme ? 'hover:bg-gray-200' : 'hover:bg-white/10'
             }`}
           >
