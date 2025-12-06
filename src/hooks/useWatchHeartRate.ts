@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { Capacitor } from '@capacitor/core';
-import OndaWatch, { WatchStatus, HeartRateEvent } from '../plugins/ondaWatch';
+import OndaWatch, { WatchStatus, HeartRateEvent, DebugLogEvent } from '../plugins/ondaWatch';
 import type { PluginListenerHandle } from '@capacitor/core';
 
 interface UseWatchHeartRateReturn {
@@ -22,7 +22,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   const [isMonitoring, setIsMonitoring] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
   const [debugLog, setDebugLog] = useState<string[]>([]);
-  const listenerRef = useRef<PluginListenerHandle | null>(null);
+  const heartbeatIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const isConnected = watchStatus?.reachable === true;
   
@@ -111,7 +111,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
         
         debugListener = await OndaWatch.addListener(
           'debugLog',
-          (event: { log: string[], receivedCount: number }) => {
+          (event: DebugLogEvent) => {
             if (event.log && Array.isArray(event.log)) {
               setDebugLog(event.log.slice(-10));
             }
@@ -131,6 +131,30 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       debugListener?.remove();
     };
   }, [addLog]);
+
+  useEffect(() => {
+    if (!isMonitoring) {
+      if (heartbeatIntervalRef.current) {
+        clearInterval(heartbeatIntervalRef.current);
+        heartbeatIntervalRef.current = null;
+      }
+      return;
+    }
+
+    const platform = Capacitor.getPlatform();
+    if (platform !== 'ios') return;
+
+    heartbeatIntervalRef.current = setInterval(() => {
+      OndaWatch.sendHeartbeat().catch(() => {});
+    }, 1000);
+
+    return () => {
+      if (heartbeatIntervalRef.current) {
+        clearInterval(heartbeatIntervalRef.current);
+        heartbeatIntervalRef.current = null;
+      }
+    };
+  }, [isMonitoring]);
 
   const startRealtime = useCallback(async () => {
     if (!watchStatus?.supported) {

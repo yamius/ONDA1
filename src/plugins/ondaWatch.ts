@@ -15,10 +15,16 @@ export interface StatusEvent {
   value: string;
 }
 
+export interface DebugLogEvent {
+  log: string[];
+  receivedCount: number;
+}
+
 export interface OndaWatchPlugin {
   getStatus(): Promise<WatchStatus>;
   startRealtime(): Promise<void>;
   stopRealtime(): Promise<void>;
+  sendHeartbeat(): Promise<void>;
   addListener(
     eventName: 'heartRate',
     listenerFunc: (event: HeartRateEvent) => void
@@ -26,6 +32,10 @@ export interface OndaWatchPlugin {
   addListener(
     eventName: 'status',
     listenerFunc: (event: StatusEvent) => void
+  ): Promise<PluginListenerHandle>;
+  addListener(
+    eventName: 'debugLog',
+    listenerFunc: (event: DebugLogEvent) => void
   ): Promise<PluginListenerHandle>;
   removeAllListeners(): Promise<void>;
 }

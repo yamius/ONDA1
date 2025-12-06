@@ -32,6 +32,11 @@ public class OndaWatchPlugin: CAPPlugin {
         implementation.sendCommand(type: "stop")
         call.resolve()
     }
+    
+    @objc func sendHeartbeat(_ call: CAPPluginCall) {
+        implementation.sendHeartbeat()
+        call.resolve()
+    }
 }
 
 // MARK: - Менеджер WCSession (iOS ↔ watchOS)
@@ -113,9 +118,23 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
                 print("[ONDA Manager] sendCommand error: \(error.localizedDescription)")
             }
         } else {
-            // Fallback to transferUserInfo
             session.transferUserInfo(message)
             print("[ONDA Manager] Command transferred via userInfo")
+        }
+    }
+    
+    func sendHeartbeat() {
+        guard let session = session, session.isReachable else {
+            return
+        }
+        
+        let message: [String: Any] = [
+            "type": "heartbeat",
+            "ts": Date().timeIntervalSince1970
+        ]
+        
+        session.sendMessage(message, replyHandler: nil) { error in
+            print("[ONDA Manager] heartbeat error: \(error.localizedDescription)")
         }
     }
 

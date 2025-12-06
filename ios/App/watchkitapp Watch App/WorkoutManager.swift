@@ -21,6 +21,10 @@ final class WorkoutManager: NSObject, ObservableObject {
     private var workoutSession: HKWorkoutSession?
     private var workoutBuilder: HKLiveWorkoutBuilder?
     private var wcSession: WCSession?
+    
+    private var lastHeartbeatDate: Date?
+    private var heartbeatMonitorTimer: Timer?
+    private let heartbeatTimeout: TimeInterval = 5.0
 
     override init() {
         super.init()
@@ -59,16 +63,16 @@ final class WorkoutManager: NSObject, ObservableObject {
             return
         }
 
-        // Только ЧТЕНИЕ пульса - не нужны разрешения на запись!
+        let typesToShare: Set = [HKObjectType.workoutType()]
         let typesToRead: Set<HKObjectType> = [heartRateType]
 
-        healthStore.requestAuthorization(toShare: nil, read: typesToRead) { [weak self] success, error in
+        healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { [weak self] success, error in
             DispatchQueue.main.async {
                 if !success {
                     print("[Watch] HealthKit auth failed: \(error?.localizedDescription ?? "unknown")")
                     self?.errorMessage = "Auth fail"
                 } else {
-                    print("[Watch] HealthKit authorized for reading")
+                    print("[Watch] HealthKit authorized")
                     self?.errorMessage = ""
                 }
             }
@@ -81,30 +85,31 @@ final class WorkoutManager: NSObject, ObservableObject {
             return
         }
         
-        print("[Watch] Starting workout session for frequent HR updates...")
+        print("[Watch] Starting workout session...")
         startWorkoutSession()
+        startHeartbeatMonitor()
     }
     
     private func startWorkoutSession() {
-        let configuration = HKWorkoutConfiguration()
-        configuration.activityType = .mindAndBody
-        configuration.locationType = .indoor
+        let config = HKWorkoutConfiguration()
+        config.activityType = .mindAndBody
+        config.locationType = .indoor
         
         do {
-            workoutSession = try HKWorkoutSession(healthStore: healthStore, configuration: configuration)
-            workoutBuilder = workoutSession?.associatedWorkoutBuilder()
+            let session = try HKWorkoutSession(healthStore: healthStore, configuration: config)
+            let builder = session.associatedWorkoutBuilder()
             
-            workoutSession?.delegate = self
-            workoutBuilder?.delegate = self
+            session.delegate = self
+            builder.delegate = self
             
-            workoutBuilder?.dataSource = HKLiveWorkoutDataSource(
+            builder.dataSource = HKLiveWorkoutDataSource(
                 healthStore: healthStore,
-                workoutConfiguration: configuration
+                workoutConfiguration: config
             )
             
             let startDate = Date()
-            workoutSession?.startActivity(with: startDate)
-            workoutBuilder?.beginCollection(withStart: startDate) { [weak self] success, error in
+            session.startActivity(with: startDate)
+            builder.beginCollection(withStart: startDate) { [weak self] success, error in
                 if success {
                     print("[Watch] Workout collection started")
                     DispatchQueue.main.async {
@@ -119,12 +124,14 @@ final class WorkoutManager: NSObject, ObservableObject {
                     }
                 }
             }
+            
+            self.workoutSession = session
+            self.workoutBuilder = builder
         } catch {
             print("[Watch] Failed to create workout session: \(error)")
             DispatchQueue.main.async {
                 self.errorMessage = "Session err"
             }
-            // Fallback to query-based approach
             startHeartRateQuery()
         }
     }
@@ -168,10 +175,9 @@ final class WorkoutManager: NSObject, ObservableObject {
             return
         }
         
-        // Берём последний sample
         guard let lastSample = samples.last else { return }
         
-        let unit = HKUnit(from: "count/min")
+        let unit = HKUnit.count().unitDivided(by: HKUnit.minute())
         let bpm = lastSample.quantity.doubleValue(for: unit)
         
         print("[Watch] Got HR: \(Int(bpm)) bpm")
@@ -180,26 +186,31 @@ final class WorkoutManager: NSObject, ObservableObject {
             self.heartRate = bpm
         }
         
-        // Отправляем на телефон
         sendHeartRateToPhone(bpm)
     }
 
     func stopWorkout() {
-        print("[Watch] Stopping heart rate monitoring...")
+        print("[Watch] Stopping workout...")
         
-        // Stop workout session if active
-        if let session = workoutSession {
+        stopHeartbeatMonitor()
+        
+        if let session = workoutSession, let builder = workoutBuilder {
+            let endDate = Date()
+            session.stopActivity(with: endDate)
             session.end()
-            workoutBuilder?.endCollection(withEnd: Date()) { success, error in
-                self.workoutBuilder?.finishWorkout { workout, error in
+            
+            builder.endCollection(withEnd: endDate) { success, error in
+                builder.finishWorkout { workout, error in
+                    DispatchQueue.main.async {
+                        self.workoutSession = nil
+                        self.workoutBuilder = nil
+                        self.heartRate = 0
+                    }
                     print("[Watch] Workout finished")
                 }
             }
-            workoutSession = nil
-            workoutBuilder = nil
         }
         
-        // Stop query if active
         if let query = heartRateQuery {
             healthStore.stop(query)
             heartRateQuery = nil
@@ -207,12 +218,45 @@ final class WorkoutManager: NSObject, ObservableObject {
         
         DispatchQueue.main.async {
             self.isRunning = false
+            self.heartRate = 0
         }
         
         sendStatusToPhone("stopped")
     }
-
-    // MARK: - WatchConnectivity
+    
+    private func startHeartbeatMonitor() {
+        lastHeartbeatDate = Date()
+        heartbeatMonitorTimer?.invalidate()
+        heartbeatMonitorTimer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { [weak self] _ in
+            self?.checkHeartbeat()
+        }
+        if let timer = heartbeatMonitorTimer {
+            RunLoop.main.add(timer, forMode: .common)
+        }
+        print("[Watch] Heartbeat monitor started")
+    }
+    
+    private func stopHeartbeatMonitor() {
+        heartbeatMonitorTimer?.invalidate()
+        heartbeatMonitorTimer = nil
+        lastHeartbeatDate = nil
+        print("[Watch] Heartbeat monitor stopped")
+    }
+    
+    private func checkHeartbeat() {
+        guard let last = lastHeartbeatDate else { return }
+        let delta = Date().timeIntervalSince(last)
+        if delta > heartbeatTimeout {
+            print("[Watch] Heartbeat timeout (\(Int(delta))s) - auto-stopping workout")
+            DispatchQueue.main.async {
+                self.stopWorkout()
+            }
+        }
+    }
+    
+    private func handleHeartbeat() {
+        lastHeartbeatDate = Date()
+    }
 
     private func sendHeartRateToPhone(_ bpm: Double) {
         guard let session = wcSession else {
@@ -220,8 +264,6 @@ final class WorkoutManager: NSObject, ObservableObject {
             DispatchQueue.main.async { self.lastSendResult = "NoSess" }
             return
         }
-        
-        print("[Watch] Sending HR \(Int(bpm)), reachable: \(session.isReachable), activationState: \(session.activationState.rawValue)")
         
         let message: [String: Any] = [
             "type": "heartRate",
@@ -235,29 +277,25 @@ final class WorkoutManager: NSObject, ObservableObject {
         
         if session.isReachable {
             session.sendMessage(message, replyHandler: { [weak self] reply in
-                print("[Watch] HR sent OK, reply: \(reply)")
                 DispatchQueue.main.async {
                     self?.lastSendResult = "OK"
                 }
             }) { [weak self] error in
                 print("[Watch] sendMessage error: \(error.localizedDescription)")
                 DispatchQueue.main.async {
-                    self?.lastSendResult = "Err:\(error.localizedDescription.prefix(10))"
+                    self?.lastSendResult = "Err"
                 }
             }
         } else {
-            // Fallback: try transferUserInfo when not reachable
-            print("[Watch] Phone not reachable, trying transferUserInfo")
             session.transferUserInfo(message)
             DispatchQueue.main.async {
-                self.lastSendResult = "Queue"
+                self.lastSendResult = "Q"
             }
         }
     }
     
     private func sendStatusToPhone(_ status: String) {
         guard let session = wcSession, session.isReachable else {
-            print("[Watch] Cannot send status - not reachable")
             return
         }
         
@@ -271,8 +309,6 @@ final class WorkoutManager: NSObject, ObservableObject {
         }
     }
 }
-
-// MARK: - WCSessionDelegate
 
 extension WorkoutManager: WCSessionDelegate {
     func session(_ session: WCSession,
@@ -298,44 +334,40 @@ extension WorkoutManager: WCSessionDelegate {
 
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any]) {
-        print("[Watch] Received message: \(message)")
         handleCommand(message)
     }
     
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any],
                  replyHandler: @escaping ([String : Any]) -> Void) {
-        print("[Watch] Received message with reply: \(message)")
         handleCommand(message)
         replyHandler(["received": true])
     }
     
     func session(_ session: WCSession,
                  didReceiveUserInfo userInfo: [String : Any] = [:]) {
-        print("[Watch] Received userInfo: \(userInfo)")
         handleCommand(userInfo)
     }
     
     private func handleCommand(_ data: [String: Any]) {
         guard let type = data["type"] as? String else {
-            print("[Watch] No type in command: \(data)")
             return
         }
         
-        print("[Watch] Handling command: \(type)")
+        print("[Watch] Command: \(type)")
 
         switch type {
         case "start":
             DispatchQueue.main.async { self.startWorkout() }
         case "stop":
             DispatchQueue.main.async { self.stopWorkout() }
+        case "heartbeat":
+            handleHeartbeat()
         default:
-            print("[Watch] Unknown command: \(type)")
+            break
         }
     }
 }
-
-// MARK: - HKWorkoutSessionDelegate
 
 extension WorkoutManager: HKWorkoutSessionDelegate {
     func workoutSession(_ workoutSession: HKWorkoutSession,
@@ -358,19 +390,15 @@ extension WorkoutManager: HKWorkoutSessionDelegate {
     
     func workoutSession(_ workoutSession: HKWorkoutSession,
                         didFailWithError error: Error) {
-        print("[Watch] Workout session error: \(error)")
+        print("[Watch] Workout error: \(error)")
         DispatchQueue.main.async {
-            self.errorMessage = "Session err"
+            self.errorMessage = "Err"
         }
     }
 }
 
-// MARK: - HKLiveWorkoutBuilderDelegate
-
 extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
-    func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {
-        // Not used
-    }
+    func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {}
     
     func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder,
                         didCollectDataOf collectedTypes: Set<HKSampleType>) {
@@ -381,10 +409,10 @@ extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
             }
             
             let statistics = workoutBuilder.statistics(for: quantityType)
-            let unit = HKUnit(from: "count/min")
+            let unit = HKUnit.count().unitDivided(by: HKUnit.minute())
             
             if let value = statistics?.mostRecentQuantity()?.doubleValue(for: unit) {
-                print("[Watch] Live HR: \(Int(value)) bpm")
+                print("[Watch] HR: \(Int(value))")
                 DispatchQueue.main.async {
                     self.heartRate = value
                 }
