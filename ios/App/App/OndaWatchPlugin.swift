@@ -40,7 +40,8 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
 
     static let shared = OndaWatchManager()
 
-    weak var plugin: OndaWatchPlugin?
+    // НЕ weak - чтобы plugin не терялся пока приложение активно
+    var plugin: OndaWatchPlugin?
 
     private var session: WCSession? {
         WCSession.isSupported() ? WCSession.default : nil
@@ -156,17 +157,27 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         switch type {
         case "heartRate":
             if let value = data["value"] as? Double {
-                print("[ONDA Manager] Heart rate: \(value)")
+                print("[ONDA Manager] Heart rate: \(value), plugin exists: \(plugin != nil)")
                 DispatchQueue.main.async {
-                    self.plugin?.notifyListeners("heartRate", data: ["value": value])
+                    if let p = self.plugin {
+                        print("[ONDA Manager] Notifying JS: heartRate = \(value)")
+                        p.notifyListeners("heartRate", data: ["value": value])
+                    } else {
+                        print("[ONDA Manager] ERROR: plugin is nil, cannot notify JS!")
+                    }
                 }
             }
 
         case "status":
             if let value = data["value"] as? String {
-                print("[ONDA Manager] Status: \(value)")
+                print("[ONDA Manager] Status: \(value), plugin exists: \(plugin != nil)")
                 DispatchQueue.main.async {
-                    self.plugin?.notifyListeners("status", data: ["value": value])
+                    if let p = self.plugin {
+                        print("[ONDA Manager] Notifying JS: status = \(value)")
+                        p.notifyListeners("status", data: ["value": value])
+                    } else {
+                        print("[ONDA Manager] ERROR: plugin is nil for status!")
+                    }
                 }
             }
 
