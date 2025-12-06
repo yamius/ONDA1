@@ -52,15 +52,16 @@ final class WorkoutManager: NSObject, ObservableObject {
             return
         }
         
-        guard let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate),
-              let workoutType = HKObjectType.workoutType() as? HKSampleType else {
-            print("[Watch] Failed to create HK types")
+        guard let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate) else {
+            print("[Watch] Failed to create HR type")
             return
         }
+        
+        let workoutType = HKObjectType.workoutType()
 
-        // ВАЖНО: Для workout session нужно разрешение на ЗАПИСЬ workout
-        let typesToShare: Set<HKSampleType> = [workoutType]
-        let typesToRead: Set<HKObjectType> = [heartRateType, HKObjectType.workoutType()]
+        // ВАЖНО: Для workout session нужно разрешение на ЗАПИСЬ workout И heartRate
+        let typesToShare: Set<HKSampleType> = [workoutType, heartRateType]
+        let typesToRead: Set<HKObjectType> = [heartRateType, workoutType]
 
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
             DispatchQueue.main.async {
