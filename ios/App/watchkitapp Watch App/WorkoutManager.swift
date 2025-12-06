@@ -11,9 +11,22 @@ final class WorkoutManager: NSObject, ObservableObject {
     @Published var errorMessage: String = ""
     @Published var lastSendResult: String = ""
     @Published var sendCount: Int = 0
+    @Published var authorizationStatus: AuthStatus = .unknown
+    
+    enum AuthStatus: String {
+        case unknown = "..."
+        case requesting = "Requesting"
+        case authorized = "OK"
+        case denied = "Denied"
+        case notAvailable = "N/A"
+    }
 
     var heartRateString: String {
         heartRate > 0 ? String(Int(heartRate)) : "--"
+    }
+    
+    var isAuthorized: Bool {
+        authorizationStatus == .authorized
     }
 
     private let healthStore = HKHealthStore()
@@ -53,6 +66,7 @@ final class WorkoutManager: NSObject, ObservableObject {
         guard HKHealthStore.isHealthDataAvailable() else {
             print("[Watch] HealthKit not available")
             DispatchQueue.main.async {
+                self.authorizationStatus = .notAvailable
                 self.errorMessage = "No HK"
             }
             return
@@ -60,7 +74,14 @@ final class WorkoutManager: NSObject, ObservableObject {
         
         guard let heartRateType = HKQuantityType.quantityType(forIdentifier: .heartRate) else {
             print("[Watch] Failed to create HR type")
+            DispatchQueue.main.async {
+                self.authorizationStatus = .notAvailable
+            }
             return
+        }
+        
+        DispatchQueue.main.async {
+            self.authorizationStatus = .requesting
         }
 
         let typesToShare: Set = [HKObjectType.workoutType()]
@@ -70,9 +91,11 @@ final class WorkoutManager: NSObject, ObservableObject {
             DispatchQueue.main.async {
                 if !success {
                     print("[Watch] HealthKit auth failed: \(error?.localizedDescription ?? "unknown")")
+                    self?.authorizationStatus = .denied
                     self?.errorMessage = "Auth fail"
                 } else {
                     print("[Watch] HealthKit authorized")
+                    self?.authorizationStatus = .authorized
                     self?.errorMessage = ""
                 }
             }
