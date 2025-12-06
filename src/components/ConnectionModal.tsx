@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, Watch, CheckCircle, AlertCircle, RefreshCw, Brain, Gauge, TrendingUp, Sparkles, Smile, Focus, Flame, Battery } from 'lucide-react';
+import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, Watch, CheckCircle, AlertCircle, RefreshCw } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { HealthConnectCompactPanel } from './HealthConnectCompactPanel';
@@ -51,7 +51,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
   const { t } = useTranslation();
   const { 
     connected, connect, disconnect, hr, hrSource, br, stress, energy, hrv,
-    csi, recoveryRate,
+    csi, recoveryRate, hrTrendSlope, hrAcceleration,
     arousal, calm, focus, excitement, fatigue, flow,
     isScanning, availableDevices, connectToDevice, stopScan, platform: vitalsPlat
   } = vitalsData;
@@ -628,143 +628,219 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                   </div>
                 </div>
                 
-                {/* Extended Calculated Vitals */}
-                {(hrv !== null || csi !== null || arousal !== null) && (
-                  <div className="mt-4">
-                    <h4 className={`text-sm font-semibold mb-3 text-center ${
-                      isLightTheme ? 'text-gray-700' : 'text-white/70'
+                {/* Advanced Physiological Metrics - Extended Format */}
+                <div className="mt-6">
+                  <h4 className={`text-base font-semibold mb-4 text-center ${
+                    isLightTheme ? 'text-gray-800' : 'text-white'
+                  }`}>
+                    {t('settings.advanced_metrics', 'Advanced Physiological Metrics')}
+                  </h4>
+                  <div className="space-y-2">
+                    {/* HRV surrogate */}
+                    <div className={`flex items-center justify-between p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
                     }`}>
-                      {t('settings.extended_metrics', 'Extended Metrics')}
-                    </h4>
-                    <div className="grid grid-cols-2 gap-3">
-                      {hrv !== null && (
-                        <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
-                        }`}>
-                          <Brain className="w-5 h-5 text-purple-500" />
-                          <div>
-                            <div className={`text-xs ${
-                              isLightTheme ? 'text-gray-600' : 'text-white/60'
-                            }`}>HRV</div>
-                            <div className="text-lg font-semibold">{hrv} ms</div>
-                          </div>
+                      <div>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.hrv_surrogate', 'HRV surrogate')}
                         </div>
-                      )}
-                      
-                      {csi !== null && (
-                        <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
-                        }`}>
-                          <Gauge className="w-5 h-5 text-cyan-500" />
-                          <div>
-                            <div className={`text-xs ${
-                              isLightTheme ? 'text-gray-600' : 'text-white/60'
-                            }`}>CSI</div>
-                            <div className="text-lg font-semibold">{csi.toFixed(2)}</div>
-                          </div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                          {t('settings.hrv_desc', 'HR variability over time')}
                         </div>
-                      )}
-                      
-                      {recoveryRate !== null && (
-                        <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
-                        }`}>
-                          <TrendingUp className="w-5 h-5 text-green-500" />
-                          <div>
-                            <div className={`text-xs ${
-                              isLightTheme ? 'text-gray-600' : 'text-white/60'
-                            }`}>{t('settings.recovery_rate', 'Recovery')}</div>
-                            <div className="text-lg font-semibold">{(recoveryRate * 100).toFixed(0)}%</div>
-                          </div>
-                        </div>
-                      )}
+                      </div>
+                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        {hrv !== null ? `${hrv}` : '--'}
+                      </div>
                     </div>
-                  </div>
-                )}
 
-                {/* Emotional Indices */}
-                {(arousal !== null || calm !== null || focus !== null) && (
-                  <div className="mt-4">
-                    <h4 className={`text-sm font-semibold mb-3 text-center ${
-                      isLightTheme ? 'text-gray-700' : 'text-white/70'
+                    {/* Cardiac Stability Index */}
+                    <div className={`flex items-center justify-between p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
                     }`}>
-                      {t('settings.emotional_indices', 'Emotional State')}
-                    </h4>
-                    <div className="grid grid-cols-3 gap-2">
-                      {arousal !== null && (
-                        <div className={`flex flex-col items-center p-2 rounded-lg ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
-                        }`}>
-                          <Flame className="w-4 h-4 text-red-400 mb-1" />
-                          <div className={`text-[10px] ${
-                            isLightTheme ? 'text-gray-600' : 'text-white/60'
-                          }`}>{t('settings.arousal', 'Arousal')}</div>
-                          <div className="text-sm font-semibold">{arousal}%</div>
+                      <div>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.cardiac_stability', 'Cardiac Stability Index')}
                         </div>
-                      )}
-                      
-                      {calm !== null && (
-                        <div className={`flex flex-col items-center p-2 rounded-lg ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
-                        }`}>
-                          <Sparkles className="w-4 h-4 text-blue-400 mb-1" />
-                          <div className={`text-[10px] ${
-                            isLightTheme ? 'text-gray-600' : 'text-white/60'
-                          }`}>{t('settings.calm', 'Calm')}</div>
-                          <div className="text-sm font-semibold">{calm}%</div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                          {t('settings.csi_desc', 'how evenly the heart beats')}
                         </div>
-                      )}
-                      
-                      {focus !== null && (
-                        <div className={`flex flex-col items-center p-2 rounded-lg ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
-                        }`}>
-                          <Focus className="w-4 h-4 text-amber-400 mb-1" />
-                          <div className={`text-[10px] ${
-                            isLightTheme ? 'text-gray-600' : 'text-white/60'
-                          }`}>{t('settings.focus', 'Focus')}</div>
-                          <div className="text-sm font-semibold">{focus}%</div>
+                      </div>
+                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        {csi !== null ? csi.toFixed(2) : '--'}
+                      </div>
+                    </div>
+
+                    {/* Recovery Rate */}
+                    <div className={`flex items-center justify-between p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                    }`}>
+                      <div>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.recovery_rate', 'Recovery Rate')}
                         </div>
-                      )}
-                      
-                      {excitement !== null && (
-                        <div className={`flex flex-col items-center p-2 rounded-lg ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
-                        }`}>
-                          <Zap className="w-4 h-4 text-yellow-400 mb-1" />
-                          <div className={`text-[10px] ${
-                            isLightTheme ? 'text-gray-600' : 'text-white/60'
-                          }`}>{t('settings.excitement', 'Excite')}</div>
-                          <div className="text-sm font-semibold">{excitement}%</div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                          {t('settings.recovery_desc', 'HR normalization speed after stress')}
                         </div>
-                      )}
-                      
-                      {fatigue !== null && (
-                        <div className={`flex flex-col items-center p-2 rounded-lg ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
-                        }`}>
-                          <Battery className="w-4 h-4 text-gray-400 mb-1" />
-                          <div className={`text-[10px] ${
-                            isLightTheme ? 'text-gray-600' : 'text-white/60'
-                          }`}>{t('settings.fatigue', 'Fatigue')}</div>
-                          <div className="text-sm font-semibold">{fatigue}%</div>
+                      </div>
+                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        {recoveryRate !== null ? `${(recoveryRate * 100).toFixed(0)}%` : '--'}
+                      </div>
+                    </div>
+
+                    {/* HR trend slope */}
+                    <div className={`flex items-center justify-between p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                    }`}>
+                      <div>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.hr_trend_slope', 'HR trend slope')}
                         </div>
-                      )}
-                      
-                      {flow !== null && (
-                        <div className={`flex flex-col items-center p-2 rounded-lg ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
-                        }`}>
-                          <Smile className="w-4 h-4 text-emerald-400 mb-1" />
-                          <div className={`text-[10px] ${
-                            isLightTheme ? 'text-gray-600' : 'text-white/60'
-                          }`}>{t('settings.flow', 'Flow')}</div>
-                          <div className="text-sm font-semibold">{flow}%</div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                          {t('settings.hr_trend_desc', 'trend over 30-60s')}
                         </div>
-                      )}
+                      </div>
+                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        {hrTrendSlope !== null ? hrTrendSlope.toFixed(2) : '--'}
+                      </div>
+                    </div>
+
+                    {/* HR Acceleration */}
+                    <div className={`flex items-center justify-between p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                    }`}>
+                      <div>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.hr_acceleration', 'HR Acceleration')}
+                        </div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                          {t('settings.hr_accel_desc', 'how fast HR rises')}
+                        </div>
+                      </div>
+                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        {hrAcceleration !== null ? hrAcceleration.toFixed(2) : '--'}
+                      </div>
                     </div>
                   </div>
-                )}
+                </div>
+
+                {/* Emotional State Metrics - Extended Format */}
+                <div className="mt-6">
+                  <h4 className={`text-base font-semibold mb-4 text-center ${
+                    isLightTheme ? 'text-gray-800' : 'text-white'
+                  }`}>
+                    {t('settings.emotional_metrics', 'Emotional State Metrics')}
+                  </h4>
+                  <div className="space-y-2">
+                    {/* Alarm / Anxiety */}
+                    <div className={`flex items-center justify-between p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                    }`}>
+                      <div>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.alarm_anxiety', 'Alarm / Anxiety')}
+                        </div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                          {t('settings.arousal_desc', 'HR rise + BR rise')}
+                        </div>
+                      </div>
+                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        {arousal !== null ? `${arousal}%` : '--'}
+                      </div>
+                    </div>
+
+                    {/* Relaxation / Calmness */}
+                    <div className={`flex items-center justify-between p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                    }`}>
+                      <div>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.relaxation_calmness', 'Relaxation / Calmness')}
+                        </div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                          {t('settings.calm_desc', 'low HR + stable BR')}
+                        </div>
+                      </div>
+                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        {calm !== null ? `${calm}%` : '--'}
+                      </div>
+                    </div>
+
+                    {/* Focus / Concentration */}
+                    <div className={`flex items-center justify-between p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                    }`}>
+                      <div>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.focus_concentration', 'Focus / Concentration')}
+                        </div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                          {t('settings.focus_desc', 'average HR + low variability')}
+                        </div>
+                      </div>
+                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        {focus !== null ? `${focus}%` : '--'}
+                      </div>
+                    </div>
+
+                    {/* Excitement */}
+                    <div className={`flex items-center justify-between p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                    }`}>
+                      <div>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.excitement', 'Excitement')}
+                        </div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                          {t('settings.excitement_desc', 'HR sharp moment')}
+                        </div>
+                      </div>
+                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        {excitement !== null ? `${excitement}%` : '--'}
+                      </div>
+                    </div>
+
+                    {/* Fatigue */}
+                    <div className={`flex items-center justify-between p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                    }`}>
+                      <div>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.fatigue_label', 'Fatigue / Fatigue')}
+                        </div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                          {t('settings.fatigue_desc', 'HR above baseline, BR low, energy low')}
+                        </div>
+                      </div>
+                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        {fatigue !== null ? `${fatigue}%` : '--'}
+                      </div>
+                    </div>
+
+                    {/* Flow */}
+                    <div className={`flex items-center justify-between p-4 rounded-xl ${
+                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                    }`}>
+                      <div>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.flow_label', 'Flow')}
+                        </div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                          {t('settings.flow_desc', 'HR slightly above baseline, stable BR')}
+                        </div>
+                      </div>
+                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        {flow !== null ? `${flow}%` : '--'}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Calibration notice */}
+                  <div className={`mt-4 text-center text-xs ${
+                    isLightTheme ? 'text-gray-500' : 'text-white/40'
+                  }`}>
+                    {t('settings.calibrating', 'Real-time metrics. Calibrating baseline...')}
+                  </div>
+                </div>
               </div>
             )}
             
