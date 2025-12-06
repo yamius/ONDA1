@@ -108,30 +108,39 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4">
       <div
-        className={`max-w-md w-full min-h-[55vh] max-h-[80vh] rounded-2xl border p-6 sm:p-8 relative overflow-y-auto scrollbar-hide ${
+        className={`max-w-md w-full min-h-[55vh] max-h-[80vh] rounded-2xl border relative flex flex-col ${
           isLightTheme
             ? 'bg-white border-gray-300'
             : 'bg-gradient-to-br from-gray-900 to-black border-purple-500/30'
         }`}
-        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        <button
-          onClick={onClose}
-          className={`absolute top-4 right-4 p-2 rounded-full transition-all ${
-            isLightTheme ? 'hover:bg-gray-200' : 'hover:bg-white/10'
-          }`}
-        >
-          <X className="w-5 h-5" />
-        </button>
+        <div className={`sticky top-0 z-10 pt-6 px-6 sm:pt-8 sm:px-8 pb-4 rounded-t-2xl ${
+          isLightTheme
+            ? 'bg-white'
+            : 'bg-gradient-to-br from-gray-900 to-gray-900'
+        }`}>
+          <button
+            onClick={onClose}
+            className={`absolute top-4 right-4 p-2 rounded-full transition-all ${
+              isLightTheme ? 'hover:bg-gray-200' : 'hover:bg-white/10'
+            }`}
+          >
+            <X className="w-5 h-5" />
+          </button>
 
-        <div className="text-center mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl font-light mb-2">{t('connection.title', 'Connection')}</h2>
-          <p className={`text-xs sm:text-sm ${isLightTheme ? 'text-gray-600' : 'text-white/70'}`}>
-            {t('connection.subtitle', 'Connect your health devices and trackers')}
-          </p>
+          <div className="text-center">
+            <h2 className="text-2xl sm:text-3xl font-light mb-2">{t('connection.title', 'Connection')}</h2>
+            <p className={`text-xs sm:text-sm ${isLightTheme ? 'text-gray-600' : 'text-white/70'}`}>
+              {t('connection.subtitle', 'Connect your health devices and trackers')}
+            </p>
+          </div>
         </div>
 
-        <div className="space-y-6">
+        <div 
+          className="flex-1 overflow-y-auto px-6 pb-6 sm:px-8 sm:pb-8 scrollbar-hide"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
+          <div className="space-y-6">
           {/* Apple HealthKit Section (iOS only) */}
           {isIOS && (
             <div>
@@ -585,6 +594,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
             )}
           </div>
           )}
+          </div>
         </div>
       </div>
     </div>
