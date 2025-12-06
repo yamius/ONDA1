@@ -5,6 +5,7 @@ import { useMotion } from "./useMotion";
 import { useNotificationHeartRate } from "./useNotificationHeartRate";
 import { useHealthKitHeartRate } from "./useHealthKitHeartRate";
 import { useWatchHeartRate } from "./useWatchHeartRate";
+import { heartRateStore } from "./heartRateStore";
 
 export function useVitals() {
   const bleHR = useHeartRate();
@@ -62,39 +63,31 @@ export function useVitals() {
   useEffect(() => {
     if (!bleHR.connected && notificationHR.hr != null) {
       const now = Date.now() / 1000;
-      bleHR.seriesRef.current.push({ t: now, hr: notificationHR.hr });
-      // Keep series at reasonable size
-      if (bleHR.seriesRef.current.length > 200) {
-        bleHR.seriesRef.current.shift();
-      }
+      // Use heartRateStore directly to ensure data persists across renders
+      heartRateStore.addDataPoint(now, notificationHR.hr);
+      console.log('[useVitals] Added Notification HR to series:', notificationHR.hr);
     }
-  }, [notificationHR.hr, bleHR.connected, bleHR.seriesRef]);
+  }, [notificationHR.hr, bleHR.connected]);
 
   // Feed HealthKit HR into series when BLE is not connected (iOS)
   useEffect(() => {
     if (!bleHR.connected && healthKitHR.isMonitoring && healthKitHR.heartRate != null) {
       const now = Date.now() / 1000;
-      bleHR.seriesRef.current.push({ t: now, hr: healthKitHR.heartRate });
-      // Keep series at reasonable size
-      if (bleHR.seriesRef.current.length > 200) {
-        bleHR.seriesRef.current.shift();
-      }
+      // Use heartRateStore directly to ensure data persists across renders
+      heartRateStore.addDataPoint(now, healthKitHR.heartRate);
       console.log('[useVitals] Added HealthKit HR to series:', healthKitHR.heartRate);
     }
-  }, [healthKitHR.heartRate, healthKitHR.isMonitoring, bleHR.connected, bleHR.seriesRef]);
+  }, [healthKitHR.heartRate, healthKitHR.isMonitoring, bleHR.connected]);
 
   // Feed Apple Watch HR into series (iOS real-time via WCSession)
   useEffect(() => {
     if (!bleHR.connected && watchHR.isConnected && watchHR.heartRate != null) {
       const now = Date.now() / 1000;
-      bleHR.seriesRef.current.push({ t: now, hr: watchHR.heartRate });
-      // Keep series at reasonable size
-      if (bleHR.seriesRef.current.length > 200) {
-        bleHR.seriesRef.current.shift();
-      }
+      // Use heartRateStore directly to ensure data persists across renders
+      heartRateStore.addDataPoint(now, watchHR.heartRate);
       console.log('[useVitals] Added Watch HR to series:', watchHR.heartRate);
     }
-  }, [watchHR.heartRate, watchHR.isConnected, bleHR.connected, bleHR.seriesRef]);
+  }, [watchHR.heartRate, watchHR.isConnected, bleHR.connected]);
 
   useEffect(() => {
     if (currentHR == null) return;
