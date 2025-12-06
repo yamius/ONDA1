@@ -2631,8 +2631,8 @@ const OndaLevel1 = () => {
             <HealthKitCompactPanel isLightTheme={isLightTheme} data={healthKitData.data} />
           )}
           
-          {platform === 'android' && healthConnectData && (
-            <HealthConnectCompactPanel isLightTheme={isLightTheme} data={healthConnectData} />
+          {platform === 'android' && healthConnectData.lastUpdate && (
+            <HealthConnectCompactPanel isLightTheme={isLightTheme} data={healthConnectData.lastUpdate} />
           )}
         </div>
 
