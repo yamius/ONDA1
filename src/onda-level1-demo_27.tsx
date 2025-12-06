@@ -15,8 +15,12 @@ import { SubscriptionModal } from './components/SubscriptionModal';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
 import { useHealthConnect } from './hooks/useHealthConnect';
+import { useHealthKitData } from './hooks/useHealthKitData';
 import { useKeepAwake } from './hooks/useKeepAwake';
 import { useWatchHeartRate } from './hooks/useWatchHeartRate';
+import { HealthKitCompactPanel } from './components/HealthKitCompactPanel';
+import { HealthConnectCompactPanel } from './components/HealthConnectCompactPanel';
+import { Capacitor } from '@capacitor/core';
 import { rhythmStore } from './sleep/rhythm';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 
@@ -24,9 +28,18 @@ const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
   const vitalsData = useVitals();
   const healthConnectData = useHealthConnect();
+  const healthKitData = useHealthKitData();
   const watchHeartRate = useWatchHeartRate();
+  const platform = Capacitor.getPlatform();
   
   useKeepAwake(true);
+  
+  useEffect(() => {
+    if (platform === 'ios' && healthKitData.isAvailable && healthKitData.isAuthorized) {
+      healthKitData.startAutoRefresh(30000);
+      return () => healthKitData.stopAutoRefresh();
+    }
+  }, [platform, healthKitData.isAvailable, healthKitData.isAuthorized]);
   
   const displayHeartRate = watchHeartRate.heartRate ?? vitalsData.hr ?? null;
 
@@ -2641,6 +2654,14 @@ const OndaLevel1 = () => {
               <div className="text-xs text-gray-400">Energy</div>
             </div>
           </div>
+          
+          {platform === 'ios' && healthKitData.data && (
+            <HealthKitCompactPanel isLightTheme={isLightTheme} data={healthKitData.data} />
+          )}
+          
+          {platform === 'android' && healthConnectData && (
+            <HealthConnectCompactPanel isLightTheme={isLightTheme} data={healthConnectData} />
+          )}
         </div>
 
         {/* Прогресс уровня */}
