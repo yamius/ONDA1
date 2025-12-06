@@ -121,7 +121,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4">
       <div
-        className={`max-w-md w-full min-h-[55vh] max-h-[80vh] rounded-2xl border relative flex flex-col ${
+        className={`max-w-md w-full h-[calc(100vh-3rem)] rounded-2xl border relative flex flex-col ${
           isLightTheme
             ? 'bg-white border-gray-300'
             : 'bg-gradient-to-br from-gray-900 to-black border-purple-500/30'
@@ -473,8 +473,8 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
               </div>
             </div>
             
-            {/* Show available devices after scan completes (Android only) */}
-            {availableDevices && availableDevices.length > 0 && connectToDevice && (
+            {/* Show available devices after scan completes (Android only) - hide when already connected */}
+            {!connected && availableDevices && availableDevices.length > 0 && connectToDevice && (
               <div className={`mt-4 p-4 rounded-xl ${
                 isLightTheme ? 'bg-gray-100' : 'bg-white/5'
               }`}>
