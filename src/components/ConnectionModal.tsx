@@ -509,7 +509,8 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
               </div>
             )}
 
-            {connected && (
+            {/* Show basic metrics when connected via BLE (Android) or HealthKit/Watch (iOS) */}
+            {(connected || (isIOS && hkIsMonitoring)) && (
               <div className={`mt-4 p-4 rounded-xl ${
                 isLightTheme ? 'bg-gray-100' : 'bg-white/5'
               }`}>
@@ -528,8 +529,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         isLightTheme ? 'text-gray-600' : 'text-white/60'
                       }`}>Heart Rate</div>
                       <div className="text-lg font-semibold">
-                        {hr ?? '--'} bpm
-                        {hrSource && (
+                        {isIOS ? (hkHeartRate ?? hr ?? '--') : (hr ?? '--')} bpm
+                        {isIOS && hkIsMonitoring && (
+                          <span className={`ml-2 text-xs font-normal ${
+                            isLightTheme ? 'text-gray-500' : 'text-white/50'
+                          }`}>
+                            (HealthKit)
+                          </span>
+                        )}
+                        {!isIOS && hrSource && (
                           <span className={`ml-2 text-xs font-normal ${
                             isLightTheme ? 'text-gray-500' : 'text-white/50'
                           }`}>
