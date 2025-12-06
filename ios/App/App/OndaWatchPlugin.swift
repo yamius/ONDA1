@@ -42,22 +42,44 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
 
     // НЕ weak - чтобы plugin не терялся пока приложение активно
     var plugin: OndaWatchPlugin?
+    
+    // Debug log для отображения в UI
+    var debugLog: [String] = []
+    var receivedCount: Int = 0
 
     private var session: WCSession? {
         WCSession.isSupported() ? WCSession.default : nil
     }
+    
+    private func addDebugLog(_ message: String) {
+        let timestamp = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .medium)
+        let entry = "\(timestamp): \(message)"
+        print("[ONDA Debug] \(entry)")
+        debugLog.append(entry)
+        // Keep only last 20 entries
+        if debugLog.count > 20 {
+            debugLog.removeFirst()
+        }
+        // Notify JS about debug update
+        DispatchQueue.main.async {
+            self.plugin?.notifyListeners("debugLog", data: [
+                "log": self.debugLog,
+                "receivedCount": self.receivedCount
+            ])
+        }
+    }
 
     func activateSession() {
         guard let session = session else {
-            print("[ONDA Manager] WCSession not supported")
+            addDebugLog("WCSession not supported")
             return
         }
         if session.delegate == nil {
             session.delegate = self
             session.activate()
-            print("[ONDA Manager] WCSession activating...")
+            addDebugLog("WCSession activating...")
         } else {
-            print("[ONDA Manager] WCSession already has delegate")
+            addDebugLog("WCSession has delegate")
         }
     }
 
@@ -103,9 +125,9 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
                  activationDidCompleteWith activationState: WCSessionActivationState,
                  error: Error?) {
         if let error = error {
-            print("[ONDA Manager] WCSession activation error: \(error)")
+            addDebugLog("Activation error: \(error.localizedDescription)")
         } else {
-            print("[ONDA Manager] WCSession activated: \(activationState.rawValue), paired: \(session.isPaired), watchAppInstalled: \(session.isWatchAppInstalled), reachable: \(session.isReachable)")
+            addDebugLog("Activated: p=\(session.isPaired) w=\(session.isWatchAppInstalled) r=\(session.isReachable)")
         }
     }
 
@@ -119,13 +141,13 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     }
 
     func sessionReachabilityDidChange(_ session: WCSession) {
-        print("[ONDA Manager] Reachability changed: \(session.isReachable)")
+        addDebugLog("Reachable: \(session.isReachable)")
     }
 
     // Получаем данные с часов через sendMessage
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any]) {
-        print("[ONDA Manager] Received message: \(message)")
+        addDebugLog("Msg: \(message.keys.joined(separator: ","))")
         handleReceivedData(message)
     }
     
@@ -133,7 +155,7 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any],
                  replyHandler: @escaping ([String : Any]) -> Void) {
-        print("[ONDA Manager] Received message with reply: \(message)")
+        addDebugLog("MsgReply: \(message.keys.joined(separator: ","))")
         handleReceivedData(message)
         replyHandler(["received": true])
     }
@@ -141,48 +163,43 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     // Получаем данные с часов через transferUserInfo
     func session(_ session: WCSession,
                  didReceiveUserInfo userInfo: [String : Any] = [:]) {
-        print("[ONDA Manager] Received userInfo: \(userInfo)")
+        addDebugLog("UserInfo: \(userInfo.keys.joined(separator: ","))")
         handleReceivedData(userInfo)
     }
     
     // Общий обработчик данных с часов
     private func handleReceivedData(_ data: [String: Any]) {
         guard let type = data["type"] as? String else {
-            print("[ONDA Manager] No type in data: \(data)")
+            addDebugLog("No type in data")
             return
         }
-
-        print("[ONDA Manager] Handling type: \(type)")
 
         switch type {
         case "heartRate":
             if let value = data["value"] as? Double {
-                print("[ONDA Manager] Heart rate: \(value), plugin exists: \(plugin != nil)")
+                receivedCount += 1
+                addDebugLog("HR#\(receivedCount): \(Int(value)) bpm, plugin=\(plugin != nil)")
                 DispatchQueue.main.async {
                     if let p = self.plugin {
-                        print("[ONDA Manager] Notifying JS: heartRate = \(value)")
                         p.notifyListeners("heartRate", data: ["value": value])
                     } else {
-                        print("[ONDA Manager] ERROR: plugin is nil, cannot notify JS!")
+                        self.addDebugLog("ERROR: plugin nil!")
                     }
                 }
             }
 
         case "status":
             if let value = data["value"] as? String {
-                print("[ONDA Manager] Status: \(value), plugin exists: \(plugin != nil)")
+                addDebugLog("Status: \(value)")
                 DispatchQueue.main.async {
                     if let p = self.plugin {
-                        print("[ONDA Manager] Notifying JS: status = \(value)")
                         p.notifyListeners("status", data: ["value": value])
-                    } else {
-                        print("[ONDA Manager] ERROR: plugin is nil for status!")
                     }
                 }
             }
 
         default:
-            print("[ONDA Manager] Unknown type: \(type)")
+            addDebugLog("Unknown: \(type)")
         }
     }
 }

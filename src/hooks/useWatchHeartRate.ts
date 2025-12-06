@@ -89,36 +89,46 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   }, [isMonitoring, addLog]);
 
   useEffect(() => {
-    const setupListener = async () => {
-      const platform = Capacitor.getPlatform();
-      if (platform !== 'ios') return;
-      
-      const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
-      if (!isPluginAvailable) return;
+    const platform = Capacitor.getPlatform();
+    if (platform !== 'ios') return;
+    
+    const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
+    if (!isPluginAvailable) return;
 
+    let hrListener: PluginListenerHandle | null = null;
+    let debugListener: PluginListenerHandle | null = null;
+
+    const setupListeners = async () => {
       try {
-        listenerRef.current = await OndaWatch.addListener(
+        hrListener = await OndaWatch.addListener(
           'heartRate',
           (event: HeartRateEvent) => {
-            addLog(`HR received: ${Math.round(event.value)} bpm`);
             setHeartRate(Math.round(event.value));
             setLastUpdated(new Date());
             setError(null);
           }
         );
-        addLog('Listener registered');
+        
+        debugListener = await OndaWatch.addListener(
+          'debugLog',
+          (event: { log: string[], receivedCount: number }) => {
+            if (event.log && Array.isArray(event.log)) {
+              setDebugLog(event.log.slice(-10));
+            }
+          }
+        );
+        
+        addLog('Listeners OK');
       } catch (err) {
         addLog(`Listener error: ${err}`);
       }
     };
 
-    setupListener();
+    setupListeners();
 
     return () => {
-      if (listenerRef.current) {
-        listenerRef.current.remove();
-        listenerRef.current = null;
-      }
+      hrListener?.remove();
+      debugListener?.remove();
     };
   }, [addLog]);
 
