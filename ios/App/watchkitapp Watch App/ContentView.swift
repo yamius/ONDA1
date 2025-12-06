@@ -50,6 +50,13 @@ struct ContentView: View {
         .padding(.horizontal, 8)
         .onAppear {
             workoutManager.activateSession()
+            // Автозапуск workout при открытии
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                if !workoutManager.isRunning {
+                    print("[Watch UI] Auto-starting workout")
+                    workoutManager.startWorkout()
+                }
+            }
         }
     }
 }
