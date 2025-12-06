@@ -1,9 +1,11 @@
-import { useState } from 'react';
-import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, Watch, CheckCircle, AlertCircle } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, Watch, CheckCircle, AlertCircle, RefreshCw } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { HealthConnectCompactPanel } from './HealthConnectCompactPanel';
+import { HealthKitCompactPanel } from './HealthKitCompactPanel';
 import { useHealthKitHeartRate } from '../hooks/useHealthKitHeartRate';
+import { useHealthKitData } from '../hooks/useHealthKitData';
 import type { HealthConnectHook } from '../hooks/useHealthConnect';
 
 interface ConnectionModalProps {
@@ -59,6 +61,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
     lastUpdated: hkLastUpdated
   } = useHealthKitHeartRate({ pollingInterval: 1500 });
   
+  const {
+    data: hkData,
+    isLoading: hkDataLoading,
+    refresh: hkRefresh,
+    requestPermission: hkRequestFullPermission,
+    startAutoRefresh: hkStartAutoRefresh,
+    stopAutoRefresh: hkStopAutoRefresh
+  } = useHealthKitData();
+  
   const [hkConnecting, setHkConnecting] = useState(false);
   const [hkAttempted, setHkAttempted] = useState(false);
 
@@ -67,7 +78,9 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
     setHkAttempted(false);
     try {
       await hkRequestPermission();
+      await hkRequestFullPermission();
       await hkStartMonitoring(mode);
+      hkStartAutoRefresh(30000);
     } catch (err) {
       console.error('[HealthKit] Connection error:', err);
     } finally {
@@ -75,9 +88,16 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
       setHkAttempted(true);
     }
   };
+  
+  useEffect(() => {
+    if (hkIsMonitoring && !hkData) {
+      hkRefresh();
+    }
+  }, [hkIsMonitoring, hkData, hkRefresh]);
 
   const handleHealthKitDisconnect = () => {
     hkStopMonitoring();
+    hkStopAutoRefresh();
     setHkAttempted(false);
   };
   
@@ -255,9 +275,30 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         )}
                       </div>
                     </div>
-                    <Watch className={`w-5 h-5 ${isLightTheme ? 'text-gray-400' : 'text-white/40'}`} />
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={hkRefresh}
+                        disabled={hkDataLoading}
+                        className={`p-2 rounded-lg transition-all ${
+                          isLightTheme 
+                            ? 'hover:bg-gray-200 text-gray-500' 
+                            : 'hover:bg-white/10 text-white/50'
+                        }`}
+                        data-testid="button-refresh-healthkit"
+                      >
+                        <RefreshCw className={`w-4 h-4 ${hkDataLoading ? 'animate-spin' : ''}`} />
+                      </button>
+                      <Watch className={`w-5 h-5 ${isLightTheme ? 'text-gray-400' : 'text-white/40'}`} />
+                    </div>
                   </div>
                 </div>
+              )}
+
+              {hkIsConnected && (
+                <HealthKitCompactPanel 
+                  isLightTheme={isLightTheme} 
+                  data={hkData}
+                />
               )}
 
               {hkAvailabilityChecked && hkIsAvailable === false && (

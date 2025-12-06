@@ -9,7 +9,9 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     public let pluginMethods: [CAPPluginMethod] = [
         CAPPluginMethod(name: "isAvailable", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "requestAuthorization", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "requestFullAuthorization", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryHeartRate", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "queryAllHealthData", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "stopRealtimeMonitoring", returnType: CAPPluginReturnPromise)
     ]
@@ -207,5 +209,359 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
             anchoredQuery = nil
         }
         call.resolve(["stopped": true])
+    }
+    
+    @objc func requestFullAuthorization(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            call.reject("HealthKit is not available on this device")
+            return
+        }
+        
+        var typesToRead: Set<HKObjectType> = []
+        
+        if let heartRate = HKQuantityType.quantityType(forIdentifier: .heartRate) {
+            typesToRead.insert(heartRate)
+        }
+        if let restingHR = HKQuantityType.quantityType(forIdentifier: .restingHeartRate) {
+            typesToRead.insert(restingHR)
+        }
+        if let hrv = HKQuantityType.quantityType(forIdentifier: .heartRateVariabilitySDNN) {
+            typesToRead.insert(hrv)
+        }
+        if let steps = HKQuantityType.quantityType(forIdentifier: .stepCount) {
+            typesToRead.insert(steps)
+        }
+        if let calories = HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned) {
+            typesToRead.insert(calories)
+        }
+        if let vo2max = HKQuantityType.quantityType(forIdentifier: .vo2Max) {
+            typesToRead.insert(vo2max)
+        }
+        if let respRate = HKQuantityType.quantityType(forIdentifier: .respiratoryRate) {
+            typesToRead.insert(respRate)
+        }
+        if let spo2 = HKQuantityType.quantityType(forIdentifier: .oxygenSaturation) {
+            typesToRead.insert(spo2)
+        }
+        if let bodyTemp = HKQuantityType.quantityType(forIdentifier: .bodyTemperature) {
+            typesToRead.insert(bodyTemp)
+        }
+        if let weight = HKQuantityType.quantityType(forIdentifier: .bodyMass) {
+            typesToRead.insert(weight)
+        }
+        if let height = HKQuantityType.quantityType(forIdentifier: .height) {
+            typesToRead.insert(height)
+        }
+        if let bodyFat = HKQuantityType.quantityType(forIdentifier: .bodyFatPercentage) {
+            typesToRead.insert(bodyFat)
+        }
+        if let bloodPressureSys = HKQuantityType.quantityType(forIdentifier: .bloodPressureSystolic) {
+            typesToRead.insert(bloodPressureSys)
+        }
+        if let bloodPressureDia = HKQuantityType.quantityType(forIdentifier: .bloodPressureDiastolic) {
+            typesToRead.insert(bloodPressureDia)
+        }
+        if let bloodGlucose = HKQuantityType.quantityType(forIdentifier: .bloodGlucose) {
+            typesToRead.insert(bloodGlucose)
+        }
+        
+        typesToRead.insert(HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!)
+        typesToRead.insert(HKObjectType.categoryType(forIdentifier: .mindfulSession)!)
+        
+        healthStore.requestAuthorization(toShare: nil, read: typesToRead) { success, error in
+            DispatchQueue.main.async {
+                if let error = error {
+                    call.reject("Authorization failed: \(error.localizedDescription)")
+                    return
+                }
+                call.resolve(["authorized": success])
+            }
+        }
+    }
+    
+    @objc func queryAllHealthData(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            call.reject("HealthKit is not available")
+            return
+        }
+        
+        let now = Date()
+        let startOfDay = Calendar.current.startOfDay(for: now)
+        let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: startOfDay) ?? startOfDay
+        
+        var result: [String: Any] = [
+            "ts": ISO8601DateFormatter().string(from: now),
+            "source": "healthkit"
+        ]
+        
+        let group = DispatchGroup()
+        
+        var activity: [String: Any] = [:]
+        var vitals: [String: Any] = [:]
+        var body: [String: Any] = [:]
+        var sleep: [String: Any] = [:]
+        var wellness: [String: Any] = [:]
+        
+        // Steps
+        group.enter()
+        querySum(.stepCount, from: startOfDay, to: now) { value in
+            if let v = value { activity["steps"] = Int(v) }
+            group.leave()
+        }
+        
+        // Active Calories
+        group.enter()
+        querySum(.activeEnergyBurned, from: startOfDay, to: now) { value in
+            if let v = value { activity["activeCaloriesBurned"] = Int(v) }
+            group.leave()
+        }
+        
+        // VO2 Max
+        group.enter()
+        queryLatest(.vo2Max) { value in
+            if let v = value { activity["vo2Max"] = round(v * 10) / 10 }
+            group.leave()
+        }
+        
+        // Heart Rate
+        group.enter()
+        queryLatest(.heartRate) { value in
+            if let v = value { vitals["heartRate"] = Int(v) }
+            group.leave()
+        }
+        
+        // Resting Heart Rate
+        group.enter()
+        queryLatest(.restingHeartRate) { value in
+            if let v = value { vitals["restingHeartRate"] = Int(v) }
+            group.leave()
+        }
+        
+        // HRV
+        group.enter()
+        queryLatest(.heartRateVariabilitySDNN) { value in
+            if let v = value { vitals["hrv"] = Int(v) }
+            group.leave()
+        }
+        
+        // Respiratory Rate
+        group.enter()
+        queryLatest(.respiratoryRate) { value in
+            if let v = value { vitals["respiratoryRate"] = Int(v) }
+            group.leave()
+        }
+        
+        // SpO2
+        group.enter()
+        queryLatest(.oxygenSaturation) { value in
+            if let v = value { vitals["spo2"] = round(v * 1000) / 10 }
+            group.leave()
+        }
+        
+        // Body Temperature
+        group.enter()
+        queryLatest(.bodyTemperature) { value in
+            if let v = value { vitals["bodyTemperature"] = round(v * 10) / 10 }
+            group.leave()
+        }
+        
+        // Blood Pressure
+        group.enter()
+        queryLatest(.bloodPressureSystolic) { value in
+            if let v = value { vitals["bloodPressureSys"] = Int(v) }
+            group.leave()
+        }
+        group.enter()
+        queryLatest(.bloodPressureDiastolic) { value in
+            if let v = value { vitals["bloodPressureDia"] = Int(v) }
+            group.leave()
+        }
+        
+        // Blood Glucose
+        group.enter()
+        queryLatest(.bloodGlucose) { value in
+            if let v = value { vitals["bloodGlucose"] = round(v * 10) / 10 }
+            group.leave()
+        }
+        
+        // Weight
+        group.enter()
+        queryLatest(.bodyMass) { value in
+            if let v = value { body["weightKg"] = round(v * 10) / 10 }
+            group.leave()
+        }
+        
+        // Height
+        group.enter()
+        queryLatest(.height) { value in
+            if let v = value { body["heightCm"] = Int(v * 100) }
+            group.leave()
+        }
+        
+        // Body Fat
+        group.enter()
+        queryLatest(.bodyFatPercentage) { value in
+            if let v = value { body["bodyFatPct"] = round(v * 1000) / 10 }
+            group.leave()
+        }
+        
+        // Sleep
+        group.enter()
+        querySleep(from: yesterday, to: now) { duration, startTime, endTime in
+            if let dur = duration {
+                sleep["durationMin"] = Int(dur / 60)
+                if let start = startTime, let end = endTime {
+                    let formatter = DateFormatter()
+                    formatter.dateFormat = "HH:mm"
+                    sleep["sleepStart"] = formatter.string(from: start)
+                    sleep["wakeTime"] = formatter.string(from: end)
+                }
+            }
+            group.leave()
+        }
+        
+        // Mindfulness
+        group.enter()
+        queryMindfulness(from: startOfDay, to: now) { minutes, sessions in
+            if let m = minutes {
+                wellness["mindfulnessMinutes"] = m
+                wellness["mindfulnessSessions"] = sessions
+            }
+            group.leave()
+        }
+        
+        group.notify(queue: .main) {
+            if !activity.isEmpty { result["activity"] = activity }
+            if !vitals.isEmpty { result["vitals"] = vitals }
+            if !body.isEmpty { result["body"] = body }
+            if !sleep.isEmpty { result["sleep"] = ["main": sleep] }
+            if !wellness.isEmpty { result["wellness"] = wellness }
+            
+            call.resolve(result)
+        }
+    }
+    
+    private func queryLatest(_ identifier: HKQuantityTypeIdentifier, completion: @escaping (Double?) -> Void) {
+        guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
+            completion(nil)
+            return
+        }
+        
+        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: false)
+        let query = HKSampleQuery(sampleType: type, predicate: nil, limit: 1, sortDescriptors: [sortDescriptor]) { _, samples, _ in
+            guard let sample = samples?.first as? HKQuantitySample else {
+                completion(nil)
+                return
+            }
+            
+            let unit = self.unitFor(identifier)
+            let value = sample.quantity.doubleValue(for: unit)
+            completion(value)
+        }
+        healthStore.execute(query)
+    }
+    
+    private func querySum(_ identifier: HKQuantityTypeIdentifier, from: Date, to: Date, completion: @escaping (Double?) -> Void) {
+        guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
+            completion(nil)
+            return
+        }
+        
+        let predicate = HKQuery.predicateForSamples(withStart: from, end: to, options: .strictStartDate)
+        let query = HKStatisticsQuery(quantityType: type, quantitySamplePredicate: predicate, options: .cumulativeSum) { _, stats, _ in
+            let unit = self.unitFor(identifier)
+            let value = stats?.sumQuantity()?.doubleValue(for: unit)
+            completion(value)
+        }
+        healthStore.execute(query)
+    }
+    
+    private func querySleep(from: Date, to: Date, completion: @escaping (Double?, Date?, Date?) -> Void) {
+        guard let sleepType = HKObjectType.categoryType(forIdentifier: .sleepAnalysis) else {
+            completion(nil, nil, nil)
+            return
+        }
+        
+        let predicate = HKQuery.predicateForSamples(withStart: from, end: to, options: .strictStartDate)
+        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: false)
+        
+        let query = HKSampleQuery(sampleType: sleepType, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: [sortDescriptor]) { _, samples, _ in
+            guard let samples = samples as? [HKCategorySample], !samples.isEmpty else {
+                completion(nil, nil, nil)
+                return
+            }
+            
+            var totalDuration: TimeInterval = 0
+            var sleepStart: Date? = nil
+            var wakeTime: Date? = nil
+            
+            for sample in samples {
+                if sample.value != HKCategoryValueSleepAnalysis.awake.rawValue {
+                    totalDuration += sample.endDate.timeIntervalSince(sample.startDate)
+                    if sleepStart == nil || sample.startDate < sleepStart! {
+                        sleepStart = sample.startDate
+                    }
+                    if wakeTime == nil || sample.endDate > wakeTime! {
+                        wakeTime = sample.endDate
+                    }
+                }
+            }
+            
+            completion(totalDuration > 0 ? totalDuration : nil, sleepStart, wakeTime)
+        }
+        healthStore.execute(query)
+    }
+    
+    private func queryMindfulness(from: Date, to: Date, completion: @escaping (Int?, Int) -> Void) {
+        guard let mindfulType = HKObjectType.categoryType(forIdentifier: .mindfulSession) else {
+            completion(nil, 0)
+            return
+        }
+        
+        let predicate = HKQuery.predicateForSamples(withStart: from, end: to, options: .strictStartDate)
+        
+        let query = HKSampleQuery(sampleType: mindfulType, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { _, samples, _ in
+            guard let samples = samples as? [HKCategorySample], !samples.isEmpty else {
+                completion(nil, 0)
+                return
+            }
+            
+            var totalMinutes = 0
+            for sample in samples {
+                totalMinutes += Int(sample.endDate.timeIntervalSince(sample.startDate) / 60)
+            }
+            
+            completion(totalMinutes, samples.count)
+        }
+        healthStore.execute(query)
+    }
+    
+    private func unitFor(_ identifier: HKQuantityTypeIdentifier) -> HKUnit {
+        switch identifier {
+        case .heartRate, .restingHeartRate, .respiratoryRate:
+            return HKUnit.count().unitDivided(by: .minute())
+        case .heartRateVariabilitySDNN:
+            return .secondUnit(with: .milli)
+        case .stepCount:
+            return .count()
+        case .activeEnergyBurned:
+            return .kilocalorie()
+        case .vo2Max:
+            return HKUnit(from: "ml/kg*min")
+        case .oxygenSaturation, .bodyFatPercentage:
+            return .percent()
+        case .bodyTemperature:
+            return .degreeCelsius()
+        case .bodyMass:
+            return .gramUnit(with: .kilo)
+        case .height:
+            return .meter()
+        case .bloodPressureSystolic, .bloodPressureDiastolic:
+            return .millimeterOfMercury()
+        case .bloodGlucose:
+            return HKUnit(from: "mmol/L")
+        default:
+            return .count()
+        }
     }
 }

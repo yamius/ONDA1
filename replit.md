@@ -47,6 +47,9 @@ Preferred communication style: Simple, everyday language.
 - `HealthConnectManager.kt` handles Health Connect operations on Android.
 - `capacitor-health` plugin for unified HealthKit (iOS) + Health Connect (Android) support.
 - `useHealthKitHeartRate` React hook for iOS heart rate monitoring.
+- `useHealthKitData` React hook for reading all HealthKit data (steps, calories, sleep, vitals, body measurements).
+- `HealthKitCompactPanel` component displays all health metrics in ConnectionModal on iOS.
+- Apple Watch integration via WCSession for real-time heart rate streaming during meditation.
 
 **Other Native Features:**
 - External browser launch for OAuth.
