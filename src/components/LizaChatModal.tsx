@@ -255,7 +255,6 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
               onKeyPress={handleKeyPress}
               placeholder={t('liza.input_placeholder')}
               className="flex-1 bg-slate-700/50 text-white placeholder-white/40 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 border border-white/10"
-              disabled={isTyping}
               data-testid="input-liza-message"
             />
             <button
