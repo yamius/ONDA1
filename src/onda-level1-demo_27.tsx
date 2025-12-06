@@ -3779,6 +3779,28 @@ const OndaLevel1 = () => {
               <span className="font-medium">{t('nav.home')}</span>
             </button>
 
+            {/* Интро */}
+            <button
+              onClick={() => {
+                localStorage.removeItem('onda_onboarding_completed');
+                setOnboardingScreen(1);
+                setShowOnboarding(true);
+                setShowMenu(false);
+              }}
+              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                activeCircuit === 2
+                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  : activeCircuit === 3
+                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
+                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              }`}
+              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              data-testid="menu-item-intro"
+            >
+              <RotateCcw className="w-6 h-6 text-gray-400" />
+              <span className="font-medium">{t('nav.intro') || 'Intro'}</span>
+            </button>
+
             {/* Дневник */}
             <button
               onClick={() => {
@@ -3928,28 +3950,6 @@ const OndaLevel1 = () => {
             >
               <Heart className="w-6 h-6 text-pink-400" />
               <span className="font-medium">{t('nav.connection')}</span>
-            </button>
-
-            {/* Пройти заново интро */}
-            <button
-              onClick={() => {
-                localStorage.removeItem('onda_onboarding_completed');
-                setOnboardingScreen(1);
-                setShowOnboarding(true);
-                setShowMenu(false);
-              }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
-              data-testid="menu-item-replay-intro"
-            >
-              <RotateCcw className="w-6 h-6 text-gray-400" />
-              <span className="font-medium">{t('onboarding.replay') || 'Replay intro'}</span>
             </button>
 
             {/* Разделитель */}
