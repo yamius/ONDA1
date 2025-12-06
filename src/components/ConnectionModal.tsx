@@ -304,10 +304,39 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
               )}
 
               {hkIsConnected && (
-                <HealthKitCompactPanel 
-                  isLightTheme={isLightTheme} 
-                  data={hkData}
-                />
+                <>
+                  {hkDataLoading && (
+                    <div className={`mt-4 p-4 rounded-xl text-center ${
+                      isLightTheme ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-white/60'
+                    }`}>
+                      <RefreshCw className="w-5 h-5 animate-spin mx-auto mb-2" />
+                      {t('connection.loading_health_data', 'Loading health data...')}
+                    </div>
+                  )}
+                  {!hkDataLoading && !hkData && (
+                    <div className={`mt-4 p-4 rounded-xl text-center ${
+                      isLightTheme ? 'bg-gray-100 text-gray-600' : 'bg-white/5 text-white/60'
+                    }`}>
+                      <button
+                        onClick={hkRefresh}
+                        className={`py-2 px-4 rounded-lg font-medium transition-all ${
+                          isLightTheme
+                            ? 'bg-blue-100 hover:bg-blue-200 text-blue-700'
+                            : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
+                        }`}
+                      >
+                        <RefreshCw className="w-4 h-4 inline mr-2" />
+                        {t('connection.load_health_data', 'Load Health Data')}
+                      </button>
+                    </div>
+                  )}
+                  {!hkDataLoading && hkData && (
+                    <HealthKitCompactPanel 
+                      isLightTheme={isLightTheme} 
+                      data={hkData}
+                    />
+                  )}
+                </>
               )}
 
               {hkAvailabilityChecked && hkIsAvailable === false && (
