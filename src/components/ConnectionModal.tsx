@@ -569,6 +569,20 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                 </div>
               </div>
             )}
+            
+            {isAndroid && healthConnectData.lastUpdate && (
+              <div className="mt-4">
+                <h4 className={`text-sm font-semibold mb-3 ${
+                  isLightTheme ? 'text-gray-700' : 'text-white/70'
+                }`}>
+                  {t('settings.health_connect_data', 'Health Connect Data')}
+                </h4>
+                <HealthConnectCompactPanel 
+                  isLightTheme={isLightTheme} 
+                  data={healthConnectData.lastUpdate}
+                />
+              </div>
+            )}
           </div>
           )}
         </div>
