@@ -5,30 +5,36 @@ struct ContentView: View {
     @EnvironmentObject var workoutManager: WorkoutManager
 
     var body: some View {
-        VStack(spacing: 8) {
-            // Connection status
-            HStack {
+        VStack(spacing: 4) {
+            // Connection status + send info
+            HStack(spacing: 4) {
                 Circle()
                     .fill(workoutManager.connectionStatus == "OK" ? Color.green : Color.orange)
-                    .frame(width: 8, height: 8)
+                    .frame(width: 6, height: 6)
                 Text(workoutManager.connectionStatus)
-                    .font(.caption2)
+                    .font(.system(size: 10))
                     .foregroundColor(.secondary)
+                Text("|\(workoutManager.sendCount)")
+                    .font(.system(size: 10))
+                    .foregroundColor(.blue)
+                Text(workoutManager.lastSendResult)
+                    .font(.system(size: 10))
+                    .foregroundColor(workoutManager.lastSendResult == "OK" ? .green : .orange)
             }
             
             // Heart rate display
             Text(workoutManager.heartRateString)
-                .font(.system(size: 48, weight: .bold, design: .rounded))
+                .font(.system(size: 44, weight: .bold, design: .rounded))
                 .foregroundColor(workoutManager.isRunning ? .red : .primary)
             
             Text("BPM")
-                .font(.caption)
+                .font(.caption2)
                 .foregroundColor(.secondary)
             
             // Error message if any
             if !workoutManager.errorMessage.isEmpty {
                 Text(workoutManager.errorMessage)
-                    .font(.caption2)
+                    .font(.system(size: 10))
                     .foregroundColor(.orange)
             }
             
@@ -41,13 +47,13 @@ struct ContentView: View {
                 }
             }) {
                 Text(workoutManager.isRunning ? "Stop" : "Start")
-                    .font(.headline)
+                    .font(.subheadline)
                     .frame(maxWidth: .infinity)
             }
             .buttonStyle(.borderedProminent)
             .tint(workoutManager.isRunning ? .red : .green)
         }
-        .padding(.horizontal, 8)
+        .padding(.horizontal, 6)
         .onAppear {
             workoutManager.activateSession()
             // Автозапуск workout при открытии

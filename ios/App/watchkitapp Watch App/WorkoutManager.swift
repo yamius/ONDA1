@@ -9,6 +9,8 @@ final class WorkoutManager: NSObject, ObservableObject {
     @Published var isRunning: Bool = false
     @Published var connectionStatus: String = "..."
     @Published var errorMessage: String = ""
+    @Published var lastSendResult: String = ""
+    @Published var sendCount: Int = 0
 
     var heartRateString: String {
         heartRate > 0 ? String(Int(heartRate)) : "--"
@@ -158,10 +160,11 @@ final class WorkoutManager: NSObject, ObservableObject {
     private func sendHeartRateToPhone(_ bpm: Double) {
         guard let session = wcSession else {
             print("[Watch] No WCSession")
+            DispatchQueue.main.async { self.lastSendResult = "NoSess" }
             return
         }
         
-        print("[Watch] Sending HR \(Int(bpm)), reachable: \(session.isReachable)")
+        print("[Watch] Sending HR \(Int(bpm)), reachable: \(session.isReachable), activationState: \(session.activationState.rawValue)")
         
         let message: [String: Any] = [
             "type": "heartRate",
@@ -169,14 +172,29 @@ final class WorkoutManager: NSObject, ObservableObject {
             "timestamp": Date().timeIntervalSince1970
         ]
         
+        DispatchQueue.main.async {
+            self.sendCount += 1
+        }
+        
         if session.isReachable {
-            session.sendMessage(message, replyHandler: { reply in
-                print("[Watch] HR sent OK")
-            }) { error in
+            session.sendMessage(message, replyHandler: { [weak self] reply in
+                print("[Watch] HR sent OK, reply: \(reply)")
+                DispatchQueue.main.async {
+                    self?.lastSendResult = "OK"
+                }
+            }) { [weak self] error in
                 print("[Watch] sendMessage error: \(error.localizedDescription)")
+                DispatchQueue.main.async {
+                    self?.lastSendResult = "Err:\(error.localizedDescription.prefix(10))"
+                }
             }
         } else {
-            print("[Watch] Phone not reachable, skipping")
+            // Fallback: try transferUserInfo when not reachable
+            print("[Watch] Phone not reachable, trying transferUserInfo")
+            session.transferUserInfo(message)
+            DispatchQueue.main.async {
+                self.lastSendResult = "Queue"
+            }
         }
     }
     
