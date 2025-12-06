@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, Watch, CheckCircle, AlertCircle, RefreshCw } from 'lucide-react';
+import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, Watch, CheckCircle, AlertCircle, RefreshCw, Brain, Gauge, TrendingUp, Sparkles, Smile, Focus, Flame, Battery } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { HealthConnectCompactPanel } from './HealthConnectCompactPanel';
@@ -16,11 +16,23 @@ interface ConnectionModalProps {
     connect: () => void;
     disconnect: () => void;
     hr: number | null;
-    hrSource?: 'ble' | 'notification' | null;
+    hrSource?: 'ble' | 'notification' | 'healthkit' | 'watch' | null;
     br: number | null;
     stress: number | null;
     energy: number | null;
     hrv: number | null;
+    // Extended calculated vitals
+    csi: number | null;
+    recoveryRate: number | null;
+    hrTrendSlope: number | null;
+    hrAcceleration: number | null;
+    // Emotional indices
+    arousal: number | null;
+    calm: number | null;
+    focus: number | null;
+    excitement: number | null;
+    fatigue: number | null;
+    flow: number | null;
     isScanning?: boolean;
     availableDevices?: Array<{ id: string; name: string }>;
     connectToDevice?: (deviceId: string) => void;
@@ -38,7 +50,9 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
 }) => {
   const { t } = useTranslation();
   const { 
-    connected, connect, disconnect, hr, hrSource, br, stress, energy,
+    connected, connect, disconnect, hr, hrSource, br, stress, energy, hrv,
+    csi, recoveryRate,
+    arousal, calm, focus, excitement, fatigue, flow,
     isScanning, availableDevices, connectToDevice, stopScan, platform: vitalsPlat
   } = vitalsData;
   const { connected: hcConnected, connect: hcConnect, disconnect: hcDisconnect } = healthConnectData;
@@ -613,6 +627,144 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     </div>
                   </div>
                 </div>
+                
+                {/* Extended Calculated Vitals */}
+                {(hrv !== null || csi !== null || arousal !== null) && (
+                  <div className="mt-4">
+                    <h4 className={`text-sm font-semibold mb-3 text-center ${
+                      isLightTheme ? 'text-gray-700' : 'text-white/70'
+                    }`}>
+                      {t('settings.extended_metrics', 'Extended Metrics')}
+                    </h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      {hrv !== null && (
+                        <div className={`flex items-center gap-2 p-3 rounded-lg ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <Brain className="w-5 h-5 text-purple-500" />
+                          <div>
+                            <div className={`text-xs ${
+                              isLightTheme ? 'text-gray-600' : 'text-white/60'
+                            }`}>HRV</div>
+                            <div className="text-lg font-semibold">{hrv} ms</div>
+                          </div>
+                        </div>
+                      )}
+                      
+                      {csi !== null && (
+                        <div className={`flex items-center gap-2 p-3 rounded-lg ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <Gauge className="w-5 h-5 text-cyan-500" />
+                          <div>
+                            <div className={`text-xs ${
+                              isLightTheme ? 'text-gray-600' : 'text-white/60'
+                            }`}>CSI</div>
+                            <div className="text-lg font-semibold">{csi.toFixed(2)}</div>
+                          </div>
+                        </div>
+                      )}
+                      
+                      {recoveryRate !== null && (
+                        <div className={`flex items-center gap-2 p-3 rounded-lg ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <TrendingUp className="w-5 h-5 text-green-500" />
+                          <div>
+                            <div className={`text-xs ${
+                              isLightTheme ? 'text-gray-600' : 'text-white/60'
+                            }`}>{t('settings.recovery_rate', 'Recovery')}</div>
+                            <div className="text-lg font-semibold">{(recoveryRate * 100).toFixed(0)}%</div>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {/* Emotional Indices */}
+                {(arousal !== null || calm !== null || focus !== null) && (
+                  <div className="mt-4">
+                    <h4 className={`text-sm font-semibold mb-3 text-center ${
+                      isLightTheme ? 'text-gray-700' : 'text-white/70'
+                    }`}>
+                      {t('settings.emotional_indices', 'Emotional State')}
+                    </h4>
+                    <div className="grid grid-cols-3 gap-2">
+                      {arousal !== null && (
+                        <div className={`flex flex-col items-center p-2 rounded-lg ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <Flame className="w-4 h-4 text-red-400 mb-1" />
+                          <div className={`text-[10px] ${
+                            isLightTheme ? 'text-gray-600' : 'text-white/60'
+                          }`}>{t('settings.arousal', 'Arousal')}</div>
+                          <div className="text-sm font-semibold">{arousal}%</div>
+                        </div>
+                      )}
+                      
+                      {calm !== null && (
+                        <div className={`flex flex-col items-center p-2 rounded-lg ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <Sparkles className="w-4 h-4 text-blue-400 mb-1" />
+                          <div className={`text-[10px] ${
+                            isLightTheme ? 'text-gray-600' : 'text-white/60'
+                          }`}>{t('settings.calm', 'Calm')}</div>
+                          <div className="text-sm font-semibold">{calm}%</div>
+                        </div>
+                      )}
+                      
+                      {focus !== null && (
+                        <div className={`flex flex-col items-center p-2 rounded-lg ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <Focus className="w-4 h-4 text-amber-400 mb-1" />
+                          <div className={`text-[10px] ${
+                            isLightTheme ? 'text-gray-600' : 'text-white/60'
+                          }`}>{t('settings.focus', 'Focus')}</div>
+                          <div className="text-sm font-semibold">{focus}%</div>
+                        </div>
+                      )}
+                      
+                      {excitement !== null && (
+                        <div className={`flex flex-col items-center p-2 rounded-lg ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <Zap className="w-4 h-4 text-yellow-400 mb-1" />
+                          <div className={`text-[10px] ${
+                            isLightTheme ? 'text-gray-600' : 'text-white/60'
+                          }`}>{t('settings.excitement', 'Excite')}</div>
+                          <div className="text-sm font-semibold">{excitement}%</div>
+                        </div>
+                      )}
+                      
+                      {fatigue !== null && (
+                        <div className={`flex flex-col items-center p-2 rounded-lg ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <Battery className="w-4 h-4 text-gray-400 mb-1" />
+                          <div className={`text-[10px] ${
+                            isLightTheme ? 'text-gray-600' : 'text-white/60'
+                          }`}>{t('settings.fatigue', 'Fatigue')}</div>
+                          <div className="text-sm font-semibold">{fatigue}%</div>
+                        </div>
+                      )}
+                      
+                      {flow !== null && (
+                        <div className={`flex flex-col items-center p-2 rounded-lg ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <Smile className="w-4 h-4 text-emerald-400 mb-1" />
+                          <div className={`text-[10px] ${
+                            isLightTheme ? 'text-gray-600' : 'text-white/60'
+                          }`}>{t('settings.flow', 'Flow')}</div>
+                          <div className="text-sm font-semibold">{flow}%</div>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                )}
               </div>
             )}
             
