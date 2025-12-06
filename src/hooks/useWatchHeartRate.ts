@@ -12,6 +12,7 @@ interface UseWatchHeartRateReturn {
   error: string | null;
   lastUpdated: Date | null;
   isMonitoring: boolean;
+  debugLog: string[];
 }
 
 export function useWatchHeartRate(): UseWatchHeartRateReturn {
@@ -20,22 +21,28 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   const [error, setError] = useState<string | null>(null);
   const [isMonitoring, setIsMonitoring] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
+  const [debugLog, setDebugLog] = useState<string[]>([]);
   const listenerRef = useRef<PluginListenerHandle | null>(null);
 
   const isConnected = watchStatus?.reachable === true;
+  
+  const addLog = useCallback((msg: string) => {
+    const time = new Date().toLocaleTimeString();
+    setDebugLog(prev => [...prev.slice(-9), `${time}: ${msg}`]);
+    console.log('[Watch]', msg);
+  }, []);
 
   useEffect(() => {
     const checkStatusAndStart = async () => {
       const platform = Capacitor.getPlatform();
       
       if (platform !== 'ios') {
-        console.log('[Watch] Not iOS platform');
         setWatchStatus({ supported: false });
         return;
       }
 
       const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
-      console.log('[Watch] Plugin available:', isPluginAvailable);
+      addLog(`Plugin: ${isPluginAvailable ? 'OK' : 'NO'}`);
       
       if (!isPluginAvailable) {
         setWatchStatus({ supported: false });
@@ -45,7 +52,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
 
       try {
         const status = await OndaWatch.getStatus();
-        console.log('[Watch] Status:', status);
+        addLog(`Status: paired=${status.paired}, app=${status.watchAppInstalled}, reach=${status.reachable}`);
         setWatchStatus(status);
         
         if (!status.paired) {
@@ -58,18 +65,18 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
           setError(null);
           
           if (!isMonitoring && status.reachable) {
-            console.log('[Watch] Auto-starting realtime...');
+            addLog('Auto-starting...');
             try {
               await OndaWatch.startRealtime();
               setIsMonitoring(true);
-              console.log('[Watch] Realtime auto-started');
+              addLog('Realtime started');
             } catch (startErr) {
-              console.error('[Watch] Auto-start error:', startErr);
+              addLog(`Start error: ${startErr}`);
             }
           }
         }
       } catch (err) {
-        console.error('[Watch] Status error:', err);
+        addLog(`Status error: ${err}`);
         setError('Failed to get watch status');
         setWatchStatus({ supported: false });
       }
@@ -79,7 +86,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     
     const interval = setInterval(checkStatusAndStart, 10000);
     return () => clearInterval(interval);
-  }, [isMonitoring]);
+  }, [isMonitoring, addLog]);
 
   useEffect(() => {
     const setupListener = async () => {
@@ -93,15 +100,15 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
         listenerRef.current = await OndaWatch.addListener(
           'heartRate',
           (event: HeartRateEvent) => {
-            console.log('[Watch] Heart rate received:', event.value, 'bpm');
+            addLog(`HR received: ${Math.round(event.value)} bpm`);
             setHeartRate(Math.round(event.value));
             setLastUpdated(new Date());
             setError(null);
           }
         );
-        console.log('[Watch] Listener registered');
+        addLog('Listener registered');
       } catch (err) {
-        console.error('[Watch] Listener error:', err);
+        addLog(`Listener error: ${err}`);
       }
     };
 
@@ -113,7 +120,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
         listenerRef.current = null;
       }
     };
-  }, []);
+  }, [addLog]);
 
   const startRealtime = useCallback(async () => {
     if (!watchStatus?.supported) {
@@ -152,6 +159,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     stopRealtime,
     error,
     lastUpdated,
-    isMonitoring
+    isMonitoring,
+    debugLog
   };
 }

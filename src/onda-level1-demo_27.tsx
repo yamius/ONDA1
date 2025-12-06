@@ -2617,6 +2617,13 @@ const OndaLevel1 = () => {
               <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
               <div className="text-xl sm:text-2xl font-bold">{displayHeartRate ?? '--'}</div>
               <div className="text-xs text-gray-400">BPM {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
+              {watchHeartRate.debugLog.length > 0 && (
+                <div className="mt-2 text-left text-[10px] text-gray-500 max-h-16 overflow-y-auto">
+                  {watchHeartRate.debugLog.map((log, i) => (
+                    <div key={i}>{log}</div>
+                  ))}
+                </div>
+              )}
             </div>
             <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-blue-500/30">
               <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
