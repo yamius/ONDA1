@@ -37,7 +37,7 @@ final class WorkoutManager: NSObject, ObservableObject {
     
     private var lastHeartbeatDate: Date?
     private var heartbeatMonitorTimer: Timer?
-    private let heartbeatTimeout: TimeInterval = 8.0
+    private let heartbeatTimeout: TimeInterval = 45.0  // Increased: phone may be backgrounded
 
     override init() {
         super.init()
@@ -205,6 +205,9 @@ final class WorkoutManager: NSObject, ObservableObject {
         
         print("[Watch] Got HR: \(Int(bpm)) bpm")
         
+        // Refresh heartbeat on HR sample - local activity keeps session alive
+        lastHeartbeatDate = Date()
+        
         DispatchQueue.main.async {
             self.heartRate = bpm
         }
@@ -352,6 +355,10 @@ extension WorkoutManager: WCSessionDelegate {
         print("[Watch] Reachability: \(session.isReachable)")
         DispatchQueue.main.async {
             self.connectionStatus = session.isReachable ? "OK" : "..."
+            // Refresh heartbeat when connectivity restored
+            if session.isReachable && self.isRunning {
+                self.lastHeartbeatDate = Date()
+            }
         }
     }
 
@@ -436,6 +443,10 @@ extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
             
             if let value = statistics?.mostRecentQuantity()?.doubleValue(for: unit) {
                 print("[Watch] HR: \(Int(value))")
+                
+                // Refresh heartbeat on HR data - keeps session alive
+                lastHeartbeatDate = Date()
+                
                 DispatchQueue.main.async {
                     self.heartRate = value
                 }
