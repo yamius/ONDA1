@@ -2301,34 +2301,6 @@ const OndaLevel1 = () => {
         </button>
       )}
 
-      {/* Кнопка пройти заново интро */}
-      {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
-       !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
-       !showQntShop && !showEmotionalCheck && !showInfoModal && !showMenu && (
-        <button
-          onClick={() => {
-            localStorage.removeItem('onda_onboarding_completed');
-            setOnboardingScreen(1);
-            setShowOnboarding(true);
-          }}
-          className={`fixed top-12 z-[100] text-white transition-all w-10 h-10 rounded-full shadow-2xl backdrop-blur-md flex items-center justify-center ${
-            activeCircuit === 2
-              ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-              : activeCircuit === 3
-              ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-              : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-          }`}
-          style={{ 
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
-            right: 'max(44px, calc(50% - 256px + 16px))'
-          }}
-          title={t('onboarding.replay') || 'Replay intro'}
-          data-testid="button-replay-intro"
-        >
-          <RotateCcw className="w-5 h-5" />
-        </button>
-      )}
-
       {/* Кнопка подписки */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
