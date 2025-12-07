@@ -3,6 +3,7 @@ import { X, Play, Pause, Activity, Zap, Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { RemoteAudioPlayer } from './RemoteAudioPlayer';
 import { useVitals } from '../hooks/useVitals';
+import { heartRateStore } from '../hooks/heartRateStore';
 import { supabase } from '../lib/supabase';
 import { calculatePracticeOnd } from '../utils/ondCalculator';
 
@@ -688,13 +689,44 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
           console.error('[AdaptivePractice] HealthKit start error:', err);
         }
       }
+      
+      // Wait for vitals to be calculated if HR source is active but vitals not ready yet
+      if (!vitalsData.hasVitalsData && vitalsData.hasHRSource) {
+        console.log('[AdaptivePractice] iOS: HR source active but vitals not ready, waiting...');
+        // Wait up to 5 seconds for vitals to calculate (2s interval + buffer time)
+        await new Promise<void>((resolve) => {
+          let attempts = 0;
+          const maxAttempts = 10; // 5 seconds total
+          const checkInterval = setInterval(() => {
+            attempts++;
+            // Check current buffer length from store
+            const buffer = heartRateStore.getBuffer();
+            const hasEnoughSamples = buffer.length >= 10;
+            console.log(`[AdaptivePractice] Wait attempt ${attempts}: samples=${buffer.length}, hasEnoughSamples=${hasEnoughSamples}`);
+            
+            if (hasEnoughSamples || attempts >= maxAttempts) {
+              clearInterval(checkInterval);
+              resolve();
+            }
+          }, 500);
+        });
+        console.log('[AdaptivePractice] Vitals wait complete');
+      }
     }
 
+    // Re-check hasVitalsData after potential wait
     const hasRealMetrics = vitalsData.hasVitalsData;
     const currentStress = hasRealMetrics ? vitalsData.stress : 50;
     const currentEnergy = hasRealMetrics ? vitalsData.energy : 50;
 
-    console.log('Starting practice with initial metrics:', { hasRealMetrics, currentStress, currentEnergy, hrSource: vitalsData.hrSource });
+    console.log('Starting practice with initial metrics:', { 
+      hasRealMetrics, 
+      currentStress, 
+      currentEnergy, 
+      hrSource: vitalsData.hrSource,
+      stressReady: vitalsData.stressReady,
+      energyReady: vitalsData.energyReady
+    });
 
     setInitialMetrics({
       stress: currentStress,
