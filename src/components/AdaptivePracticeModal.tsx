@@ -821,8 +821,13 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
 
     // Use vitalsRef.current for FRESH values (not stale closure)
     const freshVitals = vitalsRef.current;
-    const finalStress = freshVitals.hasVitalsData && freshVitals.stress !== null ? freshVitals.stress : simulatedVitals.stress;
-    const finalEnergy = freshVitals.hasVitalsData && freshVitals.energy !== null ? freshVitals.energy : simulatedVitals.energy;
+    const currentStress = freshVitals.hasVitalsData && freshVitals.stress !== null ? freshVitals.stress : simulatedVitals.stress;
+    const currentEnergy = freshVitals.hasVitalsData && freshVitals.energy !== null ? freshVitals.energy : simulatedVitals.energy;
+
+    // Use BEST metrics for OND calculation (lowest stress, highest energy achieved)
+    // This ensures users don't lose progress if metrics temporarily worsen
+    const finalStress = Math.min(bestMetrics.stress ?? currentStress, currentStress);
+    const finalEnergy = Math.max(bestMetrics.energy ?? currentEnergy, currentEnergy);
 
     // hasRealMetrics = TRUE only if BOTH initial and final used real data
     const hasRealMetrics = freshVitals.hasVitalsData && initialMetrics.stress !== 50;
@@ -832,14 +837,15 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       hrSource: freshVitals.hrSource,
       usingSimulation: !freshVitals.hasVitalsData,
       initialStress: initialMetrics.stress,
+      currentStress,
+      bestStress: bestMetrics.stress,
       finalStress,
       initialEnergy: initialMetrics.energy,
+      currentEnergy,
+      bestEnergy: bestMetrics.energy,
       finalEnergy,
       practiceTime,
-      targetTime: practice.targetTime,
-      freshHasVitalsData: freshVitals.hasVitalsData,
-      freshStress: freshVitals.stress,
-      freshEnergy: freshVitals.energy
+      targetTime: practice.targetTime
     });
 
     const ondReward = calculatePracticeOnd({
@@ -867,16 +873,16 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       }
       console.log('[AdaptivePractice] User found:', user.id);
 
-      console.log('[AdaptivePractice] Saving practice reward...');
+      console.log('[AdaptivePractice] Saving practice reward with BEST metrics...');
       const insertResult = await supabase.from('practice_rewards').insert({
         user_id: user.id,
         practice_id: practice.id,
         practice_duration_seconds: practiceTime,
         expected_duration_seconds: practice.targetTime,
         stress_before: initialMetrics.stress,
-        stress_after: finalStress,
+        stress_after: finalStress, // Best (lowest) stress achieved
         energy_before: initialMetrics.energy,
-        energy_after: finalEnergy,
+        energy_after: finalEnergy, // Best (highest) energy achieved
         completion_ond: ondReward.completionOnd,
         performance_ond: ondReward.performanceOnd,
         total_ond_earned: ondReward.totalOnd
