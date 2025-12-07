@@ -61,8 +61,10 @@ export function useHeartRate() {
 
     const handleHRUpdate = (event: Event) => {
       const customEvent = event as CustomEvent<{ hr: number; timestamp: number }>;
-      const { hr, timestamp } = customEvent.detail;
-      const t = timestamp / 1000; // Convert to seconds
+      const { hr } = customEvent.detail;
+      // Use local timestamp for reliable interpolation in useVitals
+      // Android bridge timestamps can have jitter issues
+      const t = Date.now() / 1000;
       heartRateStore.addDataPoint(t, hr);
     };
 

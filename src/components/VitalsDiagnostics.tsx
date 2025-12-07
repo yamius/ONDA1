@@ -72,11 +72,14 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
           {lastSamples.length > 0 && (
             <div className="mt-2 text-xs font-mono">
               Last samples:
-              {lastSamples.map((s, i) => (
-                <div key={i} className="text-gray-300">
-                  {formatTime(s.t)} → {s.hr} BPM
-                </div>
-              ))}
+              {lastSamples.map((s, i) => {
+                const delta = i > 0 ? (s.t - lastSamples[i-1].t).toFixed(2) : '—';
+                return (
+                  <div key={i} className="text-gray-300">
+                    {formatTime(s.t)} → {s.hr} BPM (Δ{delta}s)
+                  </div>
+                );
+              })}
             </div>
           )}
         </div>
