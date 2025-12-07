@@ -127,6 +127,7 @@ const OndaLevel1 = () => {
   const [currentTrack, setCurrentTrack] = useState(1);
   const [totalTracks, setTotalTracks] = useState(1);
   const [simulatedVitals, setSimulatedVitals] = useState({ stress: 50, energy: 50 });
+  const [bestMetrics, setBestMetrics] = useState({ stress: 50, energy: 50 }); // Best metrics achieved during practice
   const maxQualityRef = useRef(0);
   const practiceRefs = useRef({});
 
@@ -452,6 +453,12 @@ const OndaLevel1 = () => {
         // Calculate performance based on improvement from initial vitals
         const currentStress = vitalsData.connected && vitalsData.stress !== null ? vitalsData.stress : simulatedVitals.stress;
         const currentEnergy = vitalsData.connected && vitalsData.energy !== null ? vitalsData.energy : simulatedVitals.energy;
+
+        // Track BEST metrics (lowest stress, highest energy) - so progress never drops
+        setBestMetrics(prev => ({
+          stress: Math.min(prev.stress, currentStress),
+          energy: Math.max(prev.energy, currentEnergy)
+        }));
 
         // Stress reduction (10% = good, more is better)
         const stressReduction = initialVitals.stress - currentStress;
@@ -1007,6 +1014,10 @@ const OndaLevel1 = () => {
       stress: initialStress,
       energy: initialEnergy
     });
+    setBestMetrics({
+      stress: initialStress,
+      energy: initialEnergy
+    });
     maxQualityRef.current = 0;
     setPracticeState('active');
     setCurrentGuidingTextIndex(0);
@@ -1055,8 +1066,13 @@ const OndaLevel1 = () => {
           // Use real vitals if available from ANY source (BLE, HealthKit, Watch, Notification)
           // vitalsData.stress/energy are calculated in useVitals from heartRateStore data
           const hasRealVitals = vitalsData.stress !== null && vitalsData.energy !== null;
-          const finalStress = hasRealVitals ? vitalsData.stress : simulatedVitals.stress;
-          const finalEnergy = hasRealVitals ? vitalsData.energy : simulatedVitals.energy;
+          const currentStress = hasRealVitals ? vitalsData.stress : simulatedVitals.stress;
+          const currentEnergy = hasRealVitals ? vitalsData.energy : simulatedVitals.energy;
+
+          // Use BEST metrics for OND calculation (lowest stress, highest energy achieved)
+          // This ensures users don't lose progress if metrics temporarily worsen
+          const finalStress = Math.min(bestMetrics.stress, currentStress);
+          const finalEnergy = Math.max(bestMetrics.energy, currentEnergy);
 
           // Mark as real metrics when using actual calculated vitals
           const hasRealMetrics = hasRealVitals;
@@ -1068,8 +1084,12 @@ const OndaLevel1 = () => {
             vitalsDataEnergy: vitalsData.energy,
             usingSimulation: !hasRealVitals,
             initialStress: initialVitals.stress,
+            currentStress,
+            bestStress: bestMetrics.stress,
             finalStress,
             initialEnergy: initialVitals.energy,
+            currentEnergy,
+            bestEnergy: bestMetrics.energy,
             finalEnergy,
             practiceTime,
             targetTime: activePractice.targetTime || 720
@@ -1079,9 +1099,9 @@ const OndaLevel1 = () => {
             actualDurationSeconds: practiceTime,
             expectedDurationSeconds: activePractice.targetTime || 720,
             stressBefore: initialVitals.stress,
-            stressAfter: finalStress,
+            stressAfter: finalStress, // Best (lowest) stress achieved
             energyBefore: initialVitals.energy,
-            energyAfter: finalEnergy,
+            energyAfter: finalEnergy, // Best (highest) energy achieved
             baseOndReward: activePractice.maxQnt,
             hasRealMetrics
           });
@@ -1094,9 +1114,9 @@ const OndaLevel1 = () => {
             practice_duration_seconds: practiceTime,
             expected_duration_seconds: activePractice.targetTime || 720,
             stress_before: initialVitals.stress,
-            stress_after: finalStress,
+            stress_after: finalStress, // Best (lowest) stress achieved
             energy_before: initialVitals.energy,
-            energy_after: finalEnergy,
+            energy_after: finalEnergy, // Best (highest) energy achieved
             completion_ond: ondReward.completionOnd,
             performance_ond: ondReward.performanceOnd,
             total_ond_earned: ondReward.totalOnd
