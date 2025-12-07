@@ -552,6 +552,45 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     }
   }, [vitalsData.stress, vitalsData.energy, vitalsData.hasVitalsData, vitalsData.hrSource, practiceState]);
 
+  // Auto-start iOS monitoring when modal opens
+  useEffect(() => {
+    const isIOS = typeof window !== 'undefined' && /iPhone|iPad|iPod/.test(navigator.userAgent);
+    
+    if (isOpen && isIOS) {
+      console.log('[AdaptivePractice] Modal opened on iOS, starting health monitoring...');
+      
+      // Start HealthKit monitoring early so data accumulates before practice starts
+      if (vitalsData.healthKitHR.isAvailable && !vitalsData.healthKitHR.isMonitoring) {
+        vitalsData.healthKitHR.startMonitoring('realtime').then(() => {
+          console.log('[AdaptivePractice] HealthKit auto-started on modal open');
+        }).catch(err => {
+          console.error('[AdaptivePractice] HealthKit auto-start error:', err);
+        });
+      }
+      
+      // Start Watch monitoring if connected
+      if (vitalsData.watchHR.isConnected && !vitalsData.watchHR.isMonitoring) {
+        vitalsData.watchHR.startRealtime().then(() => {
+          console.log('[AdaptivePractice] Watch auto-started on modal open');
+        }).catch(err => {
+          console.error('[AdaptivePractice] Watch auto-start error:', err);
+        });
+      }
+    }
+    
+    // Stop monitoring when modal closes
+    if (!isOpen && isIOS) {
+      if (vitalsData.healthKitHR.isMonitoring) {
+        vitalsData.healthKitHR.stopMonitoring();
+        console.log('[AdaptivePractice] HealthKit stopped on modal close');
+      }
+      if (vitalsData.watchHR.isMonitoring) {
+        vitalsData.watchHR.stopRealtime().catch(() => {});
+        console.log('[AdaptivePractice] Watch stopped on modal close');
+      }
+    }
+  }, [isOpen, vitalsData.healthKitHR.isAvailable, vitalsData.watchHR.isConnected]);
+
   useEffect(() => {
     if (!isOpen) {
       setPracticeState('intro');
@@ -624,7 +663,33 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     };
   }, [practiceState, isPaused, practice, currentGuidingTextIndex]);
 
-  const startPractice = () => {
+  const startPractice = async () => {
+    // Start iOS monitoring if available but not already running
+    const isIOS = typeof window !== 'undefined' && /iPhone|iPad|iPod/.test(navigator.userAgent);
+    if (isIOS) {
+      console.log('[AdaptivePractice] iOS detected, starting health monitoring...');
+      
+      // Try Watch first (real-time), then HealthKit
+      if (vitalsData.watchHR.isConnected && !vitalsData.watchHR.isMonitoring) {
+        try {
+          await vitalsData.watchHR.startRealtime();
+          console.log('[AdaptivePractice] Watch monitoring started');
+        } catch (err) {
+          console.error('[AdaptivePractice] Watch start error:', err);
+        }
+      }
+      
+      // Start HealthKit monitoring if available
+      if (vitalsData.healthKitHR.isAvailable && !vitalsData.healthKitHR.isMonitoring) {
+        try {
+          await vitalsData.healthKitHR.startMonitoring('realtime');
+          console.log('[AdaptivePractice] HealthKit monitoring started');
+        } catch (err) {
+          console.error('[AdaptivePractice] HealthKit start error:', err);
+        }
+      }
+    }
+
     const hasRealMetrics = vitalsData.hasVitalsData;
     const currentStress = hasRealMetrics ? vitalsData.stress : 50;
     const currentEnergy = hasRealMetrics ? vitalsData.energy : 50;
