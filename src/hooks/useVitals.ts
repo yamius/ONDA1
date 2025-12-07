@@ -121,8 +121,8 @@ export function useVitals() {
 
   useEffect(() => {
     const id = setInterval(() => {
-      // Use heartRateStore for all HR sources (BLE, HealthKit, Watch, Notification)
-      const series = heartRateStore.getBuffer();
+      // Use bleHR.seriesRef which syncs with heartRateStore
+      const series = bleHR.seriesRef.current;
       console.log('useVitals: series length =', series.length);
       if (series.length < 10) return;
 
