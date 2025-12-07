@@ -526,6 +526,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const [isTextTransitioning, setIsTextTransitioning] = useState(false);
   const [audioResetKey, setAudioResetKey] = useState(0);
   const [qualityScore, setQualityScore] = useState(0);
+  const [maxQualityScore, setMaxQualityScore] = useState(0); // Quality only goes up, never down
   const [currentTrack, setCurrentTrack] = useState(1);
   const [totalTracks, setTotalTracks] = useState(1);
   const [initialMetrics, setInitialMetrics] = useState<{ stress: number | null; energy: number | null }>({ stress: null, energy: null });
@@ -604,6 +605,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       setCurrentGuidingTextIndex(0);
       setAudioResetKey(prev => prev + 1);
       setQualityScore(0);
+      setMaxQualityScore(0);
       setPracticeRating(0);
       setCurrentTrack(1);
       setTotalTracks(1);
@@ -660,6 +662,12 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             return updated;
           });
         }
+        
+        // Update maxQualityScore - quality only goes up, never down
+        setMaxQualityScore(prev => {
+          const current = calculateCurrentQuality();
+          return Math.max(prev, current);
+        });
       }, 1000);
     }
 
@@ -764,6 +772,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     setCurrentGuidingTextIndex(0);
     setIsPaused(false);
     setQualityScore(0);
+    setMaxQualityScore(0);
   };
 
   const togglePause = () => {
@@ -777,25 +786,30 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   };
 
   const calculateCurrentQuality = () => {
-    if (!practice) return 0;
+    if (!practice) return maxQualityScore;
 
     const completionProgress = Math.min(practiceTime / practice.targetTime, 1);
     const completionScore = completionProgress * 15;
 
-    const currentStress = vitalsData.hasVitalsData ? vitalsData.stress : simulatedVitals.stress;
-    const currentEnergy = vitalsData.hasVitalsData ? vitalsData.energy : simulatedVitals.energy;
+    // Use BEST metrics (lowest stress, highest energy achieved) instead of current
+    // This ensures quality never drops even if metrics temporarily worsen
+    const bestStress = bestMetrics.stress ?? (vitalsData.hasVitalsData ? vitalsData.stress : simulatedVitals.stress);
+    const bestEnergy = bestMetrics.energy ?? (vitalsData.hasVitalsData ? vitalsData.energy : simulatedVitals.energy);
 
-    const stressChange = ((initialMetrics.stress! - currentStress) / initialMetrics.stress!) * 100;
+    const stressChange = ((initialMetrics.stress! - bestStress!) / initialMetrics.stress!) * 100;
     const stressTarget = 10;
     const stressScore = Math.min(Math.max(stressChange / stressTarget, 0), 1);
     const stressPerformanceScore = stressScore * 40;
 
-    const energyChange = ((currentEnergy - initialMetrics.energy!) / initialMetrics.energy!) * 100;
+    const energyChange = ((bestEnergy! - initialMetrics.energy!) / initialMetrics.energy!) * 100;
     const energyTarget = 10;
     const energyScore = Math.min(Math.max(energyChange / energyTarget, 0), 1);
     const energyPerformanceScore = energyScore * 45;
 
-    return completionScore + stressPerformanceScore + energyPerformanceScore;
+    const calculatedQuality = completionScore + stressPerformanceScore + energyPerformanceScore;
+    
+    // Return the maximum quality ever achieved (never goes down)
+    return Math.max(calculatedQuality, maxQualityScore);
   };
 
   const completePractice = async () => {
@@ -933,6 +947,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     setCurrentGuidingTextIndex(0);
     setAudioResetKey(prev => prev + 1);
     setQualityScore(0);
+    setMaxQualityScore(0);
     setPracticeRating(0);
     setCurrentTrack(1);
     setTotalTracks(1);
@@ -1223,6 +1238,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                     setPracticeState('intro');
                     setPracticeTime(0);
                     setQualityScore(0);
+                    setMaxQualityScore(0);
                     setPracticeRating(0);
                     setIsPaused(false);
                     setCurrentGuidingTextIndex(0);
