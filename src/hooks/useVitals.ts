@@ -261,13 +261,22 @@ export function useVitals() {
     return () => clearInterval(id);
   }, []); // Empty deps - interval runs once, reads from store/refs
 
-  // Check if vitals data is available from ANY source (BLE, HealthKit, Watch, Notification)
-  const hasVitalsData = Boolean(
+  // Individual source checks for debugging
+  const hasHRSource = Boolean(
     bleHR.connected || 
     (healthKitHR.isMonitoring && healthKitHR.heartRate != null) ||
     (watchHR.isConnected && watchHR.heartRate != null) ||
     notificationHR.hr != null
-  ) && stress !== null && energy !== null;
+  );
+  
+  const stressReady = stress !== null;
+  const energyReady = energy !== null;
+  
+  // Check if vitals data is available from ANY source (BLE, HealthKit, Watch, Notification)
+  const hasVitalsData = hasHRSource && stressReady && energyReady;
+  
+  // Log state changes for debugging
+  console.log('[useVitals] hasVitalsData:', hasVitalsData, '{ hasHRSource:', hasHRSource, ', stressReady:', stressReady, ', energyReady:', energyReady, ', stress:', stress, ', energy:', energy, '}');
 
   return {
     // BLE Heart Rate
@@ -277,6 +286,11 @@ export function useVitals() {
     
     // True if vitals are being calculated from any HR source
     hasVitalsData,
+    
+    // Debug: individual gate checks
+    hasHRSource,
+    stressReady,
+    energyReady,
     
     // Current heart rate (BLE, HealthKit, or Notification fallback)
     hr: currentHR,

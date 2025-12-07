@@ -136,6 +136,29 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
           </div>
         </div>
 
+        {/* Vitals Gate - CRITICAL FOR PRACTICE REWARDS */}
+        <div className={`p-3 rounded-lg mb-3 border-2 ${
+          vitals.hasVitalsData 
+            ? 'border-green-500' 
+            : 'border-red-500'
+        } ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+          <h3 className="font-semibold mb-2">Vitals Gate (Practice Rewards)</h3>
+          <div className="grid grid-cols-2 gap-2 font-mono text-sm mb-2">
+            <div className="col-span-2 text-lg">
+              hasVitalsData: <span className={vitals.hasVitalsData ? 'text-green-400 font-bold' : 'text-red-400 font-bold'}>
+                {vitals.hasVitalsData ? 'TRUE' : 'FALSE'}
+              </span>
+            </div>
+            <div>hasHRSource: <StatusBadge ok={vitals.hasHRSource} label={vitals.hasHRSource ? 'YES' : 'NO'} /></div>
+            <div>stressReady: <StatusBadge ok={vitals.stressReady} label={vitals.stressReady ? 'YES' : 'NO'} /></div>
+            <div>energyReady: <StatusBadge ok={vitals.energyReady} label={vitals.energyReady ? 'YES' : 'NO'} /></div>
+            <div>hrSource: <span className="text-blue-400">{vitals.hrSource ?? 'null'}</span></div>
+          </div>
+          <div className="text-xs text-gray-400">
+            All 3 conditions must be TRUE for practice to use real metrics
+          </div>
+        </div>
+
         {/* Calculated Vitals - THIS IS THE KEY SECTION */}
         <div className={`p-3 rounded-lg mb-3 border-2 ${
           vitals.stress !== null 
