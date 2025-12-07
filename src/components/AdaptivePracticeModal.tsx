@@ -540,7 +540,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     console.log('AdaptivePracticeModal vitalsData:', {
       stress: vitalsData.stress,
       energy: vitalsData.energy,
-      connected: vitalsData.connected
+      hasVitalsData: vitalsData.hasVitalsData,
+      hrSource: vitalsData.hrSource
     });
 
     if (practiceState === 'practice' && vitalsData.stress !== null && vitalsData.energy !== null) {
@@ -549,7 +550,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         energy: Math.max(best.energy, vitalsData.energy!)
       }));
     }
-  }, [vitalsData.stress, vitalsData.energy, vitalsData.connected, practiceState]);
+  }, [vitalsData.stress, vitalsData.energy, vitalsData.hasVitalsData, vitalsData.hrSource, practiceState]);
 
   useEffect(() => {
     if (!isOpen) {
@@ -590,7 +591,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
           return newTime;
         });
 
-        if (!vitalsData.connected) {
+        if (!vitalsData.hasVitalsData) {
           setSimulatedVitals(prev => {
             const progressFactor = practiceTime / practice.targetTime;
             const maxStressReduction = initialMetrics.stress! * 0.03;
@@ -603,7 +604,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
           });
         }
 
-        if (vitalsData.connected && vitalsData.stress !== null && vitalsData.energy !== null) {
+        if (vitalsData.hasVitalsData) {
           setBestMetrics(best => {
             const updated = {
               stress: Math.min(best.stress, vitalsData.stress!),
@@ -624,11 +625,11 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   }, [practiceState, isPaused, practice, currentGuidingTextIndex]);
 
   const startPractice = () => {
-    const hasRealMetrics = vitalsData.connected && vitalsData.stress !== null && vitalsData.energy !== null;
+    const hasRealMetrics = vitalsData.hasVitalsData;
     const currentStress = hasRealMetrics ? vitalsData.stress : 50;
     const currentEnergy = hasRealMetrics ? vitalsData.energy : 50;
 
-    console.log('Starting practice with initial metrics:', { hasRealMetrics, currentStress, currentEnergy });
+    console.log('Starting practice with initial metrics:', { hasRealMetrics, currentStress, currentEnergy, hrSource: vitalsData.hrSource });
 
     setInitialMetrics({
       stress: currentStress,
@@ -665,8 +666,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     const completionProgress = Math.min(practiceTime / practice.targetTime, 1);
     const completionScore = completionProgress * 15;
 
-    const currentStress = vitalsData.connected && vitalsData.stress !== null ? vitalsData.stress : simulatedVitals.stress;
-    const currentEnergy = vitalsData.connected && vitalsData.energy !== null ? vitalsData.energy : simulatedVitals.energy;
+    const currentStress = vitalsData.hasVitalsData ? vitalsData.stress : simulatedVitals.stress;
+    const currentEnergy = vitalsData.hasVitalsData ? vitalsData.energy : simulatedVitals.energy;
 
     const stressChange = ((initialMetrics.stress! - currentStress) / initialMetrics.stress!) * 100;
     const stressTarget = 10;
@@ -688,15 +689,15 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       return;
     }
 
-    const finalStress = vitalsData.connected && vitalsData.stress !== null ? vitalsData.stress : simulatedVitals.stress;
-    const finalEnergy = vitalsData.connected && vitalsData.energy !== null ? vitalsData.energy : simulatedVitals.energy;
+    const finalStress = vitalsData.hasVitalsData ? vitalsData.stress : simulatedVitals.stress;
+    const finalEnergy = vitalsData.hasVitalsData ? vitalsData.energy : simulatedVitals.energy;
 
-    const hasRealMetrics = true;
+    const hasRealMetrics = vitalsData.hasVitalsData;
 
     console.log('Practice completion metrics:', {
       hasRealMetrics,
-      connected: vitalsData.connected,
-      usingSimulation: !vitalsData.connected,
+      hrSource: vitalsData.hrSource,
+      usingSimulation: !vitalsData.hasVitalsData,
       initialStress: initialMetrics.stress,
       finalStress,
       initialEnergy: initialMetrics.energy,

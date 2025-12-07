@@ -253,11 +253,22 @@ export function useVitals() {
     return () => clearInterval(id);
   }, [bleHR.seriesRef, activity]);
 
+  // Check if vitals data is available from ANY source (BLE, HealthKit, Watch, Notification)
+  const hasVitalsData = Boolean(
+    bleHR.connected || 
+    (healthKitHR.isMonitoring && healthKitHR.heartRate != null) ||
+    (watchHR.isConnected && watchHR.heartRate != null) ||
+    notificationHR.hr != null
+  ) && stress !== null && energy !== null;
+
   return {
     // BLE Heart Rate
     connected: bleHR.connected, 
     connect: bleHR.connect, 
     disconnect: bleHR.disconnect,
+    
+    // True if vitals are being calculated from any HR source
+    hasVitalsData,
     
     // Current heart rate (BLE, HealthKit, or Notification fallback)
     hr: currentHR,
