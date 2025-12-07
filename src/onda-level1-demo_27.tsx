@@ -16,6 +16,7 @@ import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
 import { useHealthConnect } from './hooks/useHealthConnect';
 import { useHealthKitData } from './hooks/useHealthKitData';
+import { useHealthKitHeartRate } from './hooks/useHealthKitHeartRate';
 import { useKeepAwake } from './hooks/useKeepAwake';
 import { useWatchHeartRate } from './hooks/useWatchHeartRate';
 import { HealthKitCompactPanel } from './components/HealthKitCompactPanel';
@@ -29,6 +30,7 @@ const OndaLevel1 = () => {
   const vitalsData = useVitals();
   const healthConnectData = useHealthConnect();
   const healthKitData = useHealthKitData();
+  const healthKitHeartRate = useHealthKitHeartRate({ pollingInterval: 1500 });
   const watchHeartRate = useWatchHeartRate();
   const platform = Capacitor.getPlatform();
   
@@ -3694,6 +3696,8 @@ const OndaLevel1 = () => {
           isLightTheme={isLightTheme}
           vitalsData={vitalsData}
           healthConnectData={healthConnectData}
+          healthKitHeartRateData={healthKitHeartRate}
+          healthKitDataFull={healthKitData}
         />
       )}
 

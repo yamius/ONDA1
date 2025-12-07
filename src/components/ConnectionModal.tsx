@@ -3,9 +3,31 @@ import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, Watch, CheckCircle, Ale
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { HealthConnectCompactPanel } from './HealthConnectCompactPanel';
-import { useHealthKitHeartRate } from '../hooks/useHealthKitHeartRate';
-import { useHealthKitData } from '../hooks/useHealthKitData';
 import type { HealthConnectHook } from '../hooks/useHealthConnect';
+
+interface HealthKitHeartRateData {
+  heartRate: number | null;
+  isAvailable: boolean | null;
+  isAuthorized: boolean | null;
+  requestPermission: () => Promise<void>;
+  startMonitoring: (mode: 'direct' | 'workout' | 'realtime') => Promise<void>;
+  stopMonitoring: () => void;
+  error: string | null;
+  isMonitoring: boolean;
+  mode: 'direct' | 'workout' | 'realtime' | null;
+  lastUpdated: Date | null;
+}
+
+interface HealthKitDataFull {
+  data: any;
+  isLoading: boolean;
+  refresh: () => void;
+  requestPermission: () => Promise<void>;
+  startAutoRefresh: (interval: number) => void;
+  stopAutoRefresh: () => void;
+  isAvailable?: boolean;
+  isAuthorized?: boolean;
+}
 
 interface ConnectionModalProps {
   onClose: () => void;
@@ -20,12 +42,10 @@ interface ConnectionModalProps {
     stress: number | null;
     energy: number | null;
     hrv: number | null;
-    // Extended calculated vitals
     csi: number | null;
     recoveryRate: number | null;
     hrTrendSlope: number | null;
     hrAcceleration: number | null;
-    // Emotional indices
     arousal: number | null;
     calm: number | null;
     focus: number | null;
@@ -39,6 +59,8 @@ interface ConnectionModalProps {
     platform?: 'android' | 'web';
   };
   healthConnectData: HealthConnectHook;
+  healthKitHeartRateData: HealthKitHeartRateData;
+  healthKitDataFull: HealthKitDataFull;
 }
 
 export const ConnectionModal: React.FC<ConnectionModalProps> = ({
@@ -46,6 +68,8 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
   isLightTheme,
   vitalsData,
   healthConnectData,
+  healthKitHeartRateData,
+  healthKitDataFull,
 }) => {
   const { t } = useTranslation();
   const { 
@@ -59,8 +83,9 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
   const capacitorPlatform = Capacitor.getPlatform();
   const isIOS = capacitorPlatform === 'ios';
   const isAndroid = capacitorPlatform === 'android';
-  const showBluetooth = !isIOS; // Hide Bluetooth on iOS - use HealthKit instead
+  const showBluetooth = !isIOS;
   
+  // Use HealthKit data from parent component (persists when modal closes)
   const {
     heartRate: hkHeartRate,
     isAvailable: hkIsAvailable,
@@ -72,7 +97,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
     isMonitoring: hkIsMonitoring,
     mode: hkMode,
     lastUpdated: hkLastUpdated
-  } = useHealthKitHeartRate({ pollingInterval: 1500 });
+  } = healthKitHeartRateData;
   
   const {
     data: hkData,
@@ -81,7 +106,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
     requestPermission: hkRequestFullPermission,
     startAutoRefresh: hkStartAutoRefresh,
     stopAutoRefresh: hkStopAutoRefresh
-  } = useHealthKitData();
+  } = healthKitDataFull;
   
   const [hkConnecting, setHkConnecting] = useState(false);
   const [hkAttempted, setHkAttempted] = useState(false);
@@ -318,7 +343,226 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                 </div>
               )}
 
-              {/* Note: Extended metrics are shown below in the common section */}
+              {/* Show iOS Vitals Panel when monitoring */}
+              {hkIsMonitoring && (
+                <div className={`mt-4 p-4 rounded-xl ${
+                  isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                }`}>
+                  <h4 className={`text-sm font-semibold mb-3 text-center ${
+                    isLightTheme ? 'text-gray-700' : 'text-white/70'
+                  }`}>
+                    {t('settings.basic_metrics', 'Basic Metrics')}
+                  </h4>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className={`flex items-center gap-2 p-3 rounded-lg ${
+                      isLightTheme ? 'bg-white' : 'bg-white/5'
+                    }`}>
+                      <Heart className="w-5 h-5 text-red-500" />
+                      <div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
+                          {t('settings.heart_rate', 'Heart Rate')}
+                        </div>
+                        <div className="text-lg font-semibold">
+                          {hkHeartRate ?? hr ?? '--'} bpm
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className={`flex items-center gap-2 p-3 rounded-lg ${
+                      isLightTheme ? 'bg-white' : 'bg-white/5'
+                    }`}>
+                      <Wind className="w-5 h-5 text-blue-500" />
+                      <div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
+                          {t('settings.breathing', 'Breathing')}
+                        </div>
+                        <div className="text-lg font-semibold">{br ? `${br.toFixed(1)}` : '--'} /min</div>
+                      </div>
+                    </div>
+
+                    <div className={`flex items-center gap-2 p-3 rounded-lg ${
+                      isLightTheme ? 'bg-white' : 'bg-white/5'
+                    }`}>
+                      <Activity className="w-5 h-5 text-orange-500" />
+                      <div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
+                          {t('settings.stress', 'Stress')}
+                        </div>
+                        <div className="text-lg font-semibold">{stress ?? '--'}%</div>
+                      </div>
+                    </div>
+
+                    <div className={`flex items-center gap-2 p-3 rounded-lg ${
+                      isLightTheme ? 'bg-white' : 'bg-white/5'
+                    }`}>
+                      <Zap className="w-5 h-5 text-yellow-500" />
+                      <div>
+                        <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
+                          {t('settings.energy', 'Energy')}
+                        </div>
+                        <div className="text-lg font-semibold">{energy ?? '--'}%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Advanced Physiological Metrics for iOS */}
+                  <div className="mt-6">
+                    <h4 className={`text-base font-semibold mb-4 text-center ${
+                      isLightTheme ? 'text-gray-800' : 'text-white'
+                    }`}>
+                      {t('settings.advanced_metrics', 'Advanced Physiological Metrics')}
+                    </h4>
+                    <div className="space-y-2">
+                      <div className={`flex items-center justify-between p-4 rounded-xl ${
+                        isLightTheme ? 'bg-white' : 'bg-white/5'
+                      }`}>
+                        <div>
+                          <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                            {t('settings.hrv_surrogate', 'HRV surrogate')}
+                          </div>
+                        </div>
+                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          {hrv !== null ? `${hrv}` : '--'}
+                        </div>
+                      </div>
+
+                      <div className={`flex items-center justify-between p-4 rounded-xl ${
+                        isLightTheme ? 'bg-white' : 'bg-white/5'
+                      }`}>
+                        <div>
+                          <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                            {t('settings.cardiac_stability', 'Cardiac Stability Index')}
+                          </div>
+                        </div>
+                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          {csi !== null ? csi.toFixed(2) : '--'}
+                        </div>
+                      </div>
+
+                      <div className={`flex items-center justify-between p-4 rounded-xl ${
+                        isLightTheme ? 'bg-white' : 'bg-white/5'
+                      }`}>
+                        <div>
+                          <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                            {t('settings.recovery_rate', 'Recovery Rate')}
+                          </div>
+                        </div>
+                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          {recoveryRate !== null ? `${(recoveryRate * 100).toFixed(0)}%` : '--'}
+                        </div>
+                      </div>
+
+                      <div className={`flex items-center justify-between p-4 rounded-xl ${
+                        isLightTheme ? 'bg-white' : 'bg-white/5'
+                      }`}>
+                        <div>
+                          <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                            {t('settings.hr_trend_slope', 'HR trend slope')}
+                          </div>
+                        </div>
+                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          {hrTrendSlope !== null ? hrTrendSlope.toFixed(2) : '--'}
+                        </div>
+                      </div>
+
+                      <div className={`flex items-center justify-between p-4 rounded-xl ${
+                        isLightTheme ? 'bg-white' : 'bg-white/5'
+                      }`}>
+                        <div>
+                          <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                            {t('settings.hr_acceleration', 'HR Acceleration')}
+                          </div>
+                        </div>
+                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          {hrAcceleration !== null ? hrAcceleration.toFixed(2) : '--'}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Emotional State Metrics for iOS */}
+                  <div className="mt-6">
+                    <h4 className={`text-base font-semibold mb-4 text-center ${
+                      isLightTheme ? 'text-gray-800' : 'text-white'
+                    }`}>
+                      {t('settings.emotional_metrics', 'Emotional State Metrics')}
+                    </h4>
+                    <div className="space-y-2">
+                      <div className={`flex items-center justify-between p-4 rounded-xl ${
+                        isLightTheme ? 'bg-white' : 'bg-white/5'
+                      }`}>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.alarm_anxiety', 'Alarm / Anxiety')}
+                        </div>
+                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          {arousal !== null ? `${arousal}%` : '--'}
+                        </div>
+                      </div>
+
+                      <div className={`flex items-center justify-between p-4 rounded-xl ${
+                        isLightTheme ? 'bg-white' : 'bg-white/5'
+                      }`}>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.relaxation_calmness', 'Relaxation / Calmness')}
+                        </div>
+                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          {calm !== null ? `${calm}%` : '--'}
+                        </div>
+                      </div>
+
+                      <div className={`flex items-center justify-between p-4 rounded-xl ${
+                        isLightTheme ? 'bg-white' : 'bg-white/5'
+                      }`}>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.focus_concentration', 'Focus / Concentration')}
+                        </div>
+                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          {focus !== null ? `${focus}%` : '--'}
+                        </div>
+                      </div>
+
+                      <div className={`flex items-center justify-between p-4 rounded-xl ${
+                        isLightTheme ? 'bg-white' : 'bg-white/5'
+                      }`}>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.excitement', 'Excitement')}
+                        </div>
+                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          {excitement !== null ? `${excitement}%` : '--'}
+                        </div>
+                      </div>
+
+                      <div className={`flex items-center justify-between p-4 rounded-xl ${
+                        isLightTheme ? 'bg-white' : 'bg-white/5'
+                      }`}>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.fatigue_label', 'Fatigue')}
+                        </div>
+                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          {fatigue !== null ? `${fatigue}%` : '--'}
+                        </div>
+                      </div>
+
+                      <div className={`flex items-center justify-between p-4 rounded-xl ${
+                        isLightTheme ? 'bg-white' : 'bg-white/5'
+                      }`}>
+                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          {t('settings.flow_label', 'Flow')}
+                        </div>
+                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          {flow !== null ? `${flow}%` : '--'}
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className={`mt-4 text-center text-xs ${
+                      isLightTheme ? 'text-gray-500' : 'text-white/40'
+                    }`}>
+                      {t('settings.calibrating', 'Real-time metrics. Calibrating baseline...')}
+                    </div>
+                  </div>
+                </div>
+              )}
 
               {hkAvailabilityChecked && hkIsAvailable === false && (
                 <div className={`p-3 rounded-lg text-xs ${
