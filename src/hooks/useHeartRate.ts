@@ -34,9 +34,10 @@ export function useHeartRate() {
 
   // ========== Android WebView Bridge Listeners ==========
   useEffect(() => {
+    console.log('[Bluetooth] Checking platform:', { isAndroidWebView, hasWindowAndroid: typeof window !== 'undefined' && !!window.Android });
     if (!isAndroidWebView) return;
 
-    console.log('[Bluetooth] Setting up Android WebView listeners');
+    console.log('[Bluetooth] Setting up Android WebView listeners - ACTIVE');
 
     const handleDeviceFound = (event: Event) => {
       const customEvent = event as CustomEvent<{ id: string; name: string }>;
