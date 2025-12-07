@@ -61,10 +61,12 @@ export function useHeartRate() {
 
     const handleHRUpdate = (event: Event) => {
       const customEvent = event as CustomEvent<{ hr: number; timestamp: number }>;
+      console.log('[Bluetooth] HR update event received:', customEvent.detail);
       const { hr } = customEvent.detail;
       // Use local timestamp for reliable interpolation in useVitals
       // Android bridge timestamps can have jitter issues
       const t = Date.now() / 1000;
+      console.log('[Bluetooth] Adding to heartRateStore:', { t, hr });
       heartRateStore.addDataPoint(t, hr);
     };
 
