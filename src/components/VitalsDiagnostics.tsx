@@ -4,6 +4,7 @@ import { useHeartRate } from '../hooks/useHeartRate';
 import { useHealthKitHeartRate } from '../hooks/useHealthKitHeartRate';
 import { useWatchHeartRate } from '../hooks/useWatchHeartRate';
 import { useNotificationHeartRate } from '../hooks/useNotificationHeartRate';
+import { useVitals } from '../hooks/useVitals';
 
 interface DiagnosticsProps {
   onClose: () => void;
@@ -19,11 +20,13 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
   const healthKitHR = useHealthKitHeartRate();
   const watchHR = useWatchHeartRate();
   const notificationHR = useNotificationHeartRate();
+  const vitals = useVitals();
   
   const [bufferLength, setBufferLength] = useState(0);
   const [lastSamples, setLastSamples] = useState<Array<{t: number, hr: number}>>([]);
   const [updateCount, setUpdateCount] = useState(0);
   const [eventLog, setEventLog] = useState<string[]>([]);
+  const [vitalsUpdateTime, setVitalsUpdateTime] = useState<string>('—');
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -34,6 +37,13 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
     }, 1000);
     return () => clearInterval(interval);
   }, []);
+
+  // Track vitals updates
+  useEffect(() => {
+    if (vitals.stress !== null) {
+      setVitalsUpdateTime(new Date().toLocaleTimeString());
+    }
+  }, [vitals.stress, vitals.energy, vitals.br]);
 
   // Listen for bluetooth events
   useEffect(() => {
@@ -123,6 +133,26 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
                 </div>
               ))
             )}
+          </div>
+        </div>
+
+        {/* Calculated Vitals - THIS IS THE KEY SECTION */}
+        <div className={`p-3 rounded-lg mb-3 border-2 ${
+          vitals.stress !== null 
+            ? 'border-green-500/50' 
+            : 'border-red-500/50'
+        } ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+          <h3 className="font-semibold mb-2">Calculated Vitals (realtime)</h3>
+          <div className="grid grid-cols-2 gap-2 font-mono text-sm">
+            <div>Stress: <span className={vitals.stress !== null ? 'text-green-400' : 'text-red-400'}>{vitals.stress ?? 'null'}</span></div>
+            <div>Energy: <span className={vitals.energy !== null ? 'text-green-400' : 'text-red-400'}>{vitals.energy ?? 'null'}</span></div>
+            <div>BR: <span className={vitals.br !== null ? 'text-green-400' : 'text-red-400'}>{vitals.br ?? 'null'}</span></div>
+            <div>HRV: <span className={vitals.hrv !== null ? 'text-green-400' : 'text-red-400'}>{vitals.hrv ?? 'null'}</span></div>
+            <div>Calm: <span className="text-blue-400">{vitals.calm ?? 'null'}</span></div>
+            <div>Focus: <span className="text-blue-400">{vitals.focus ?? 'null'}</span></div>
+          </div>
+          <div className="mt-2 text-xs text-gray-400">
+            Last update: <span className={vitalsUpdateTime !== '—' ? 'text-green-400' : 'text-red-400'}>{vitalsUpdateTime}</span>
           </div>
         </div>
 

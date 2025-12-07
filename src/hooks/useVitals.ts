@@ -58,6 +58,7 @@ export function useVitals() {
   });
 
   const dhrDtRef = useRef(0);
+  const calculationCountRef = useRef(0);
 
   // Debug: Log all HR source states every 5 seconds
   useEffect(() => {
@@ -119,12 +120,18 @@ export function useVitals() {
     }
   }, [currentHR, activity]);
 
+  // Main vitals calculation interval - runs every 2 seconds
+  // Uses refs instead of state to avoid re-creating interval
+  const activityRef = useRef(activity);
+  useEffect(() => { activityRef.current = activity; }, [activity]);
+
   useEffect(() => {
+    console.log('[useVitals] Starting calculation interval');
     const id = setInterval(() => {
       // Read directly from heartRateStore to ensure we get latest data
-      // (bleHR.seriesRef only updates on React render, not in interval)
       const series = heartRateStore.getBuffer();
-      console.log('useVitals: series length =', series.length);
+      calculationCountRef.current++;
+      console.log('[useVitals] Interval tick #' + calculationCountRef.current + ', series length =', series.length);
       if (series.length < 10) return;
 
       const tNow = series[series.length - 1].t;
@@ -165,7 +172,7 @@ export function useVitals() {
       }
       const lastHr = window[window.length - 1].hr;
       const zHr = (lastHr - b.hrMean) / (b.hrVar || 1);
-      const zAct = (activity - b.actMean) / (b.actVar || 1);
+      const zAct = (activityRef.current - b.actMean) / (b.actVar || 1);
 
       const roughBreathStability = Math.min(1, bestP / 200);
       const stress01 = clamp01(0.6 * sigmoid(zHr) + 0.3 * sigmoid(zAct) + 0.1 * (1 - roughBreathStability));
@@ -252,7 +259,7 @@ export function useVitals() {
       }
     }, 2000);
     return () => clearInterval(id);
-  }, [bleHR.seriesRef, activity]);
+  }, []); // Empty deps - interval runs once, reads from store/refs
 
   // Check if vitals data is available from ANY source (BLE, HealthKit, Watch, Notification)
   const hasVitalsData = Boolean(
