@@ -694,31 +694,32 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         }
       }
       
-      // Wait for vitals to be calculated if HR source is active but vitals not ready yet
-      const currentVitals = vitalsRef.current;
-      if (!currentVitals.hasVitalsData && currentVitals.hasHRSource) {
-        console.log('[AdaptivePractice] iOS: HR source active but vitals not ready, waiting...');
-        // Wait up to 5 seconds for vitals to calculate (2s interval + buffer time)
-        await new Promise<void>((resolve) => {
-          let attempts = 0;
-          const maxAttempts = 10; // 5 seconds total
-          const checkInterval = setInterval(() => {
-            attempts++;
-            // Check current buffer length from store
-            const buffer = heartRateStore.getBuffer();
-            const hasEnoughSamples = buffer.length >= 10;
-            // Also check if vitals are now ready via ref
-            const nowHasVitals = vitalsRef.current.hasVitalsData;
-            console.log(`[AdaptivePractice] Wait attempt ${attempts}: samples=${buffer.length}, hasVitals=${nowHasVitals}`);
-            
-            if (nowHasVitals || hasEnoughSamples || attempts >= maxAttempts) {
-              clearInterval(checkInterval);
-              resolve();
+      // Wait for hasVitalsData to become TRUE (vitals calculated from buffer)
+      // This is critical - samples in buffer != vitals calculated (2s delay)
+      console.log('[AdaptivePractice] iOS: Waiting for hasVitalsData to become TRUE...');
+      await new Promise<void>((resolve) => {
+        let attempts = 0;
+        const maxAttempts = 20; // 10 seconds total (vitals calc every 2s)
+        const checkInterval = setInterval(() => {
+          attempts++;
+          const nowHasVitals = vitalsRef.current.hasVitalsData;
+          const buffer = heartRateStore.getBuffer();
+          const stress = vitalsRef.current.stress;
+          const energy = vitalsRef.current.energy;
+          console.log(`[AdaptivePractice] Wait #${attempts}: hasVitals=${nowHasVitals}, samples=${buffer.length}, stress=${stress}, energy=${energy}`);
+          
+          // ONLY exit when hasVitalsData is TRUE (not just samples count)
+          if (nowHasVitals || attempts >= maxAttempts) {
+            clearInterval(checkInterval);
+            if (nowHasVitals) {
+              console.log('[AdaptivePractice] Vitals ready! stress=' + stress + ', energy=' + energy);
+            } else {
+              console.log('[AdaptivePractice] Timeout waiting for vitals, using fallback');
             }
-          }, 500);
-        });
-        console.log('[AdaptivePractice] Vitals wait complete');
-      }
+            resolve();
+          }
+        }, 500);
+      });
     }
 
     // Use vitalsRef.current for FRESH values after any async wait
