@@ -648,13 +648,15 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
           });
         }
 
-        if (vitalsData.hasVitalsData) {
+        // Use vitalsRef for fresh values
+        const freshVitals = vitalsRef.current;
+        if (freshVitals.hasVitalsData && freshVitals.stress !== null && freshVitals.energy !== null) {
           setBestMetrics(best => {
             const updated = {
-              stress: Math.min(best.stress, vitalsData.stress!),
-              energy: Math.max(best.energy, vitalsData.energy!)
+              stress: Math.min(best.stress ?? 100, freshVitals.stress!),
+              energy: Math.max(best.energy ?? 0, freshVitals.energy!)
             };
-            console.log('Best metrics updated:', { previous: best, current: { stress: vitalsData.stress, energy: vitalsData.energy }, updated });
+            console.log('Best metrics updated:', { previous: best, current: { stress: freshVitals.stress, energy: freshVitals.energy }, updated });
             return updated;
           });
         }
@@ -797,21 +799,27 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       return;
     }
 
-    const finalStress = vitalsData.hasVitalsData ? vitalsData.stress : simulatedVitals.stress;
-    const finalEnergy = vitalsData.hasVitalsData ? vitalsData.energy : simulatedVitals.energy;
+    // Use vitalsRef.current for FRESH values (not stale closure)
+    const freshVitals = vitalsRef.current;
+    const finalStress = freshVitals.hasVitalsData && freshVitals.stress !== null ? freshVitals.stress : simulatedVitals.stress;
+    const finalEnergy = freshVitals.hasVitalsData && freshVitals.energy !== null ? freshVitals.energy : simulatedVitals.energy;
 
-    const hasRealMetrics = vitalsData.hasVitalsData;
+    // hasRealMetrics = TRUE only if BOTH initial and final used real data
+    const hasRealMetrics = freshVitals.hasVitalsData && initialMetrics.stress !== 50;
 
     console.log('Practice completion metrics:', {
       hasRealMetrics,
-      hrSource: vitalsData.hrSource,
-      usingSimulation: !vitalsData.hasVitalsData,
+      hrSource: freshVitals.hrSource,
+      usingSimulation: !freshVitals.hasVitalsData,
       initialStress: initialMetrics.stress,
       finalStress,
       initialEnergy: initialMetrics.energy,
       finalEnergy,
       practiceTime,
-      targetTime: practice.targetTime
+      targetTime: practice.targetTime,
+      freshHasVitalsData: freshVitals.hasVitalsData,
+      freshStress: freshVitals.stress,
+      freshEnergy: freshVitals.energy
     });
 
     const ondReward = calculatePracticeOnd({
@@ -1089,6 +1097,21 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                 <Zap className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-blue-400" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</div>
                 <div className="text-xs sm:text-sm text-gray-300">{t('labels.energy')}</div>
+              </div>
+            </div>
+            
+            {/* Debug panel - показывает какие метрики используются для расчёта */}
+            <div className="w-full max-w-md mb-4 px-3 sm:px-0">
+              <div className="bg-black/50 backdrop-blur-sm rounded-lg p-2 text-xs font-mono border border-yellow-500/30">
+                <div className="text-yellow-400 mb-1">OND Debug:</div>
+                <div className="grid grid-cols-2 gap-1 text-gray-300">
+                  <div>Init S: <span className={initialMetrics.stress === 50 ? 'text-red-400' : 'text-green-400'}>{initialMetrics.stress}</span></div>
+                  <div>Init E: <span className={initialMetrics.energy === 50 ? 'text-red-400' : 'text-green-400'}>{initialMetrics.energy}</span></div>
+                  <div>Now S: <span className="text-blue-400">{vitalsData.stress !== null ? Math.round(vitalsData.stress) : 'null'}</span></div>
+                  <div>Now E: <span className="text-blue-400">{vitalsData.energy !== null ? Math.round(vitalsData.energy) : 'null'}</span></div>
+                  <div>hasVitals: <span className={vitalsData.hasVitalsData ? 'text-green-400' : 'text-red-400'}>{vitalsData.hasVitalsData ? 'TRUE' : 'FALSE'}</span></div>
+                  <div>Source: <span className="text-cyan-400">{vitalsData.hrSource || 'none'}</span></div>
+                </div>
               </div>
             </div>
 
