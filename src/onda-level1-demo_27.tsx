@@ -1052,16 +1052,21 @@ const OndaLevel1 = () => {
 
       if (user) {
         try {
-          const finalStress = vitalsData.connected && vitalsData.stress !== null ? vitalsData.stress : simulatedVitals.stress;
-          const finalEnergy = vitalsData.connected && vitalsData.energy !== null ? vitalsData.energy : simulatedVitals.energy;
+          // Use real vitals if available from ANY source (BLE, HealthKit, Watch, Notification)
+          // vitalsData.stress/energy are calculated in useVitals from heartRateStore data
+          const hasRealVitals = vitalsData.stress !== null && vitalsData.energy !== null;
+          const finalStress = hasRealVitals ? vitalsData.stress : simulatedVitals.stress;
+          const finalEnergy = hasRealVitals ? vitalsData.energy : simulatedVitals.energy;
 
-          // We always have metrics - either real or simulated
-          const hasRealMetrics = true;
+          // Mark as real metrics when using actual calculated vitals
+          const hasRealMetrics = hasRealVitals;
 
           console.log('Practice completion metrics:', {
             hasRealMetrics,
-            connected: vitalsData.connected,
-            usingSimulation: !vitalsData.connected,
+            hasRealVitals,
+            vitalsDataStress: vitalsData.stress,
+            vitalsDataEnergy: vitalsData.energy,
+            usingSimulation: !hasRealVitals,
             initialStress: initialVitals.stress,
             finalStress,
             initialEnergy: initialVitals.energy,
