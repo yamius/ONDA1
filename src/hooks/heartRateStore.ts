@@ -63,7 +63,8 @@ class HeartRateStore {
   }
 
   clear() {
-    this.buffer = [];
+    // Clear buffer in-place to preserve reference for bufferRef.current
+    this.buffer.length = 0;
     this.currentHR = null;
   }
 }
