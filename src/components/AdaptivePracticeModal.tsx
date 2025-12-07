@@ -534,6 +534,10 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const [simulatedVitals, setSimulatedVitals] = useState({ stress: 50, energy: 50 });
   const [practiceRating, setPracticeRating] = useState(0);
   const timerRef = useRef<number | null>(null);
+  
+  // Ref to store CURRENT vitals - updated every render, accessible in async functions
+  const vitalsRef = useRef(vitalsData);
+  vitalsRef.current = vitalsData;
 
   const practice = adaptivePractices[practiceId];
 
@@ -691,7 +695,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       }
       
       // Wait for vitals to be calculated if HR source is active but vitals not ready yet
-      if (!vitalsData.hasVitalsData && vitalsData.hasHRSource) {
+      const currentVitals = vitalsRef.current;
+      if (!currentVitals.hasVitalsData && currentVitals.hasHRSource) {
         console.log('[AdaptivePractice] iOS: HR source active but vitals not ready, waiting...');
         // Wait up to 5 seconds for vitals to calculate (2s interval + buffer time)
         await new Promise<void>((resolve) => {
@@ -702,9 +707,11 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             // Check current buffer length from store
             const buffer = heartRateStore.getBuffer();
             const hasEnoughSamples = buffer.length >= 10;
-            console.log(`[AdaptivePractice] Wait attempt ${attempts}: samples=${buffer.length}, hasEnoughSamples=${hasEnoughSamples}`);
+            // Also check if vitals are now ready via ref
+            const nowHasVitals = vitalsRef.current.hasVitalsData;
+            console.log(`[AdaptivePractice] Wait attempt ${attempts}: samples=${buffer.length}, hasVitals=${nowHasVitals}`);
             
-            if (hasEnoughSamples || attempts >= maxAttempts) {
+            if (nowHasVitals || hasEnoughSamples || attempts >= maxAttempts) {
               clearInterval(checkInterval);
               resolve();
             }
@@ -714,18 +721,21 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       }
     }
 
-    // Re-check hasVitalsData after potential wait
-    const hasRealMetrics = vitalsData.hasVitalsData;
-    const currentStress = hasRealMetrics ? vitalsData.stress : 50;
-    const currentEnergy = hasRealMetrics ? vitalsData.energy : 50;
+    // Use vitalsRef.current for FRESH values after any async wait
+    const freshVitals = vitalsRef.current;
+    const hasRealMetrics = freshVitals.hasVitalsData;
+    const currentStress = hasRealMetrics && freshVitals.stress !== null ? freshVitals.stress : 50;
+    const currentEnergy = hasRealMetrics && freshVitals.energy !== null ? freshVitals.energy : 50;
 
     console.log('Starting practice with initial metrics:', { 
       hasRealMetrics, 
       currentStress, 
       currentEnergy, 
-      hrSource: vitalsData.hrSource,
-      stressReady: vitalsData.stressReady,
-      energyReady: vitalsData.energyReady
+      hrSource: freshVitals.hrSource,
+      stressReady: freshVitals.stressReady,
+      energyReady: freshVitals.energyReady,
+      rawStress: freshVitals.stress,
+      rawEnergy: freshVitals.energy
     });
 
     setInitialMetrics({
