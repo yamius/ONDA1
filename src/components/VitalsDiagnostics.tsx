@@ -10,6 +10,10 @@ interface DiagnosticsProps {
   isLightTheme?: boolean;
 }
 
+// Platform detection
+const isAndroidWebView = typeof window !== 'undefined' && window.Android !== undefined;
+const hasWindowAndroid = typeof window !== 'undefined' && !!window.Android;
+
 export function VitalsDiagnostics({ onClose, isLightTheme = false }: DiagnosticsProps) {
   const bleHR = useHeartRate();
   const healthKitHR = useHealthKitHeartRate();
@@ -19,6 +23,7 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
   const [bufferLength, setBufferLength] = useState(0);
   const [lastSamples, setLastSamples] = useState<Array<{t: number, hr: number}>>([]);
   const [updateCount, setUpdateCount] = useState(0);
+  const [eventLog, setEventLog] = useState<string[]>([]);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -28,6 +33,39 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
       setUpdateCount(c => c + 1);
     }, 1000);
     return () => clearInterval(interval);
+  }, []);
+
+  // Listen for bluetooth events
+  useEffect(() => {
+    const addLog = (msg: string) => {
+      const time = new Date().toLocaleTimeString();
+      setEventLog(prev => [`${time}: ${msg}`, ...prev.slice(0, 9)]);
+    };
+
+    const onHRUpdate = (e: Event) => {
+      const ce = e as CustomEvent<{ hr: number }>;
+      addLog(`HR: ${ce.detail?.hr} BPM`);
+    };
+    const onConnected = () => addLog('BLE Connected');
+    const onDisconnected = () => addLog('BLE Disconnected');
+    const onError = (e: Event) => {
+      const ce = e as CustomEvent<{ error: string }>;
+      addLog(`Error: ${ce.detail?.error}`);
+    };
+
+    window.addEventListener('bluetooth-hr-update', onHRUpdate);
+    window.addEventListener('bluetooth-connected', onConnected);
+    window.addEventListener('bluetooth-disconnected', onDisconnected);
+    window.addEventListener('bluetooth-error', onError);
+
+    addLog('Diagnostics opened');
+
+    return () => {
+      window.removeEventListener('bluetooth-hr-update', onHRUpdate);
+      window.removeEventListener('bluetooth-connected', onConnected);
+      window.removeEventListener('bluetooth-disconnected', onDisconnected);
+      window.removeEventListener('bluetooth-error', onError);
+    };
   }, []);
 
   const formatTime = (t: number) => {
@@ -58,6 +96,34 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
           >
             Close
           </button>
+        </div>
+
+        {/* Platform Info */}
+        <div className={`p-3 rounded-lg mb-3 ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+          <h3 className="font-semibold mb-2">Platform</h3>
+          <div className="flex flex-wrap gap-2 mb-2">
+            <StatusBadge ok={isAndroidWebView} label="Android WebView" />
+            <StatusBadge ok={hasWindowAndroid} label="window.Android" />
+          </div>
+          <div className="font-mono text-sm">
+            Platform: {bleHR.platform}
+          </div>
+        </div>
+
+        {/* Event Log */}
+        <div className={`p-3 rounded-lg mb-3 ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+          <h3 className="font-semibold mb-2">Event Log (last 10)</h3>
+          <div className="font-mono text-xs space-y-1 max-h-32 overflow-y-auto">
+            {eventLog.length === 0 ? (
+              <div className="text-gray-500">No events yet...</div>
+            ) : (
+              eventLog.map((log, i) => (
+                <div key={i} className={i === 0 ? 'text-green-400' : 'text-gray-400'}>
+                  {log}
+                </div>
+              ))
+            )}
+          </div>
         </div>
 
         {/* Buffer Status */}
