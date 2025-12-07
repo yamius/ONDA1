@@ -59,8 +59,22 @@ export function useVitals() {
 
   const dhrDtRef = useRef(0);
 
+  // Debug: Log all HR source states every 5 seconds
+  useEffect(() => {
+    const id = setInterval(() => {
+      console.log('[useVitals] HR sources:', {
+        ble: { connected: bleHR.connected, hr: bleHR.hr },
+        healthKit: { isMonitoring: healthKitHR.isMonitoring, hr: healthKitHR.heartRate },
+        watch: { isConnected: watchHR.isConnected, hr: watchHR.heartRate },
+        notification: { hr: notificationHR.hr }
+      });
+    }, 5000);
+    return () => clearInterval(id);
+  }, [bleHR.connected, bleHR.hr, healthKitHR.isMonitoring, healthKitHR.heartRate, watchHR.isConnected, watchHR.heartRate, notificationHR.hr]);
+
   // Feed notification HR into series when BLE is not connected
   useEffect(() => {
+    console.log('[useVitals] Notification effect:', { bleConnected: bleHR.connected, notificationHR: notificationHR.hr });
     if (!bleHR.connected && notificationHR.hr != null) {
       const now = Date.now() / 1000;
       // Use heartRateStore directly to ensure data persists across renders
@@ -71,6 +85,7 @@ export function useVitals() {
 
   // Feed HealthKit HR into series when BLE is not connected (iOS)
   useEffect(() => {
+    console.log('[useVitals] HealthKit effect:', { bleConnected: bleHR.connected, isMonitoring: healthKitHR.isMonitoring, hr: healthKitHR.heartRate });
     if (!bleHR.connected && healthKitHR.isMonitoring && healthKitHR.heartRate != null) {
       const now = Date.now() / 1000;
       // Use heartRateStore directly to ensure data persists across renders
@@ -81,6 +96,7 @@ export function useVitals() {
 
   // Feed Apple Watch HR into series (iOS real-time via WCSession)
   useEffect(() => {
+    console.log('[useVitals] Watch effect:', { bleConnected: bleHR.connected, isConnected: watchHR.isConnected, hr: watchHR.heartRate });
     if (!bleHR.connected && watchHR.isConnected && watchHR.heartRate != null) {
       const now = Date.now() / 1000;
       // Use heartRateStore directly to ensure data persists across renders
