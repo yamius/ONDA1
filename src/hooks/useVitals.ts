@@ -121,8 +121,9 @@ export function useVitals() {
 
   useEffect(() => {
     const id = setInterval(() => {
-      // Use bleHR.seriesRef which syncs with heartRateStore
-      const series = bleHR.seriesRef.current;
+      // Read directly from heartRateStore to ensure we get latest data
+      // (bleHR.seriesRef only updates on React render, not in interval)
+      const series = heartRateStore.getBuffer();
       console.log('useVitals: series length =', series.length);
       if (series.length < 10) return;
 
