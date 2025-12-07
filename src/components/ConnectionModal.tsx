@@ -119,9 +119,9 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
   const hkAvailabilityChecked = hkIsAvailable !== null;
 
   return (
-    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4">
+    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 pt-[calc(env(safe-area-inset-top)+0.75rem)]">
       <div
-        className={`max-w-md w-full h-[calc(100vh-3rem)] rounded-2xl border relative flex flex-col ${
+        className={`max-w-md w-full h-[calc(100vh-env(safe-area-inset-top)-env(safe-area-inset-bottom)-3rem)] rounded-2xl border relative flex flex-col ${
           isLightTheme
             ? 'bg-white border-gray-300'
             : 'bg-gradient-to-br from-gray-900 to-black border-purple-500/30'

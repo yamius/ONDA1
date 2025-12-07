@@ -45,6 +45,7 @@ class HeartRateStore {
       this.buffer.shift();
     }
     this.currentHR = hr;
+    console.log('[heartRateStore] Added HR:', hr, 'buffer size:', this.buffer.length);
     this.notifyListeners();
   }
 
