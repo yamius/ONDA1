@@ -28,6 +28,11 @@ import { calculatePracticeOnd } from './utils/ondCalculator';
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
   const vitalsData = useVitals();
+  
+  // Ref to store CURRENT vitals - updated every render, accessible in async functions
+  const vitalsRef = useRef(vitalsData);
+  vitalsRef.current = vitalsData;
+  
   const healthConnectData = useHealthConnect();
   const healthKitData = useHealthKitData();
   const healthKitHeartRate = useHealthKitHeartRate({ pollingInterval: 1500 });
@@ -450,15 +455,27 @@ const OndaLevel1 = () => {
           });
         }
 
+        // Use vitalsRef for fresh values (like AdaptivePracticeModal)
+        const freshVitals = vitalsRef.current;
+        
         // Calculate performance based on improvement from initial vitals
-        const currentStress = vitalsData.connected && vitalsData.stress !== null ? vitalsData.stress : simulatedVitals.stress;
-        const currentEnergy = vitalsData.connected && vitalsData.energy !== null ? vitalsData.energy : simulatedVitals.energy;
+        // Use REAL vitals data if available, otherwise use simulation
+        const currentStress = freshVitals.hasVitalsData && freshVitals.stress !== null 
+          ? freshVitals.stress 
+          : simulatedVitals.stress;
+        const currentEnergy = freshVitals.hasVitalsData && freshVitals.energy !== null 
+          ? freshVitals.energy 
+          : simulatedVitals.energy;
 
         // Track BEST metrics (lowest stress, highest energy) - so progress never drops
-        setBestMetrics(prev => ({
-          stress: Math.min(prev.stress, currentStress),
-          energy: Math.max(prev.energy, currentEnergy)
-        }));
+        setBestMetrics(prev => {
+          const updated = {
+            stress: Math.min(prev.stress, currentStress),
+            energy: Math.max(prev.energy, currentEnergy)
+          };
+          console.log('Basic practice best metrics:', { previous: prev, current: { stress: currentStress, energy: currentEnergy }, updated, hasRealVitals: freshVitals.hasVitalsData });
+          return updated;
+        });
 
         // Stress reduction (10% = good, more is better)
         const stressReduction = initialVitals.stress - currentStress;
@@ -1003,8 +1020,20 @@ const OndaLevel1 = () => {
   };
 
   const beginPractice = () => {
-    const initialStress = vitalsData.stress !== null ? vitalsData.stress : 50;
-    const initialEnergy = vitalsData.energy !== null ? vitalsData.energy : 50;
+    // Use vitalsRef for FRESH values (like AdaptivePracticeModal)
+    const freshVitals = vitalsRef.current;
+    const hasRealMetrics = freshVitals.hasVitalsData;
+    const initialStress = hasRealMetrics && freshVitals.stress !== null ? freshVitals.stress : 50;
+    const initialEnergy = hasRealMetrics && freshVitals.energy !== null ? freshVitals.energy : 50;
+
+    console.log('Starting basic practice with initial metrics:', { 
+      hasRealMetrics, 
+      initialStress, 
+      initialEnergy, 
+      hrSource: freshVitals.hrSource,
+      stressReady: freshVitals.stressReady,
+      energyReady: freshVitals.energyReady
+    });
 
     setInitialVitals({
       stress: initialStress,
@@ -1033,6 +1062,8 @@ const OndaLevel1 = () => {
     const existingPractice = completedPractices[activePractice.id];
     const shouldUpdate = !existingPractice || qualityScore > existingPractice.quality;
 
+    // Use vitalsRef for fresh values
+    const freshVitalsForSession = vitalsRef.current;
     const session = {
       id: Date.now(),
       practiceId: activePractice.id,
@@ -1041,8 +1072,8 @@ const OndaLevel1 = () => {
       duration: practiceTime,
       quality: qualityScore,
       qnt: earnedQnt,
-      stress: vitalsData.stress,
-      energy: vitalsData.energy,
+      stress: freshVitalsForSession.stress,
+      energy: freshVitalsForSession.energy,
       isNewRecord: shouldUpdate && existingPractice
     };
 
@@ -1063,26 +1094,27 @@ const OndaLevel1 = () => {
 
       if (user) {
         try {
-          // Use real vitals if available from ANY source (BLE, HealthKit, Watch, Notification)
-          // vitalsData.stress/energy are calculated in useVitals from heartRateStore data
-          const hasRealVitals = vitalsData.stress !== null && vitalsData.energy !== null;
-          const currentStress = hasRealVitals ? vitalsData.stress : simulatedVitals.stress;
-          const currentEnergy = hasRealVitals ? vitalsData.energy : simulatedVitals.energy;
+          // Use vitalsRef.current for FRESH values (not stale closure) - like AdaptivePracticeModal
+          const freshVitals = vitalsRef.current;
+          const currentStress = freshVitals.hasVitalsData && freshVitals.stress !== null 
+            ? freshVitals.stress 
+            : simulatedVitals.stress;
+          const currentEnergy = freshVitals.hasVitalsData && freshVitals.energy !== null 
+            ? freshVitals.energy 
+            : simulatedVitals.energy;
 
           // Use BEST metrics for OND calculation (lowest stress, highest energy achieved)
           // This ensures users don't lose progress if metrics temporarily worsen
           const finalStress = Math.min(bestMetrics.stress, currentStress);
           const finalEnergy = Math.max(bestMetrics.energy, currentEnergy);
 
-          // Mark as real metrics when using actual calculated vitals
-          const hasRealMetrics = hasRealVitals;
+          // hasRealMetrics = TRUE only if BOTH initial and final used real data
+          const hasRealMetrics = freshVitals.hasVitalsData && initialVitals.stress !== 50;
 
-          console.log('Practice completion metrics:', {
+          console.log('Basic practice completion metrics:', {
             hasRealMetrics,
-            hasRealVitals,
-            vitalsDataStress: vitalsData.stress,
-            vitalsDataEnergy: vitalsData.energy,
-            usingSimulation: !hasRealVitals,
+            hrSource: freshVitals.hrSource,
+            usingSimulation: !freshVitals.hasVitalsData,
             initialStress: initialVitals.stress,
             currentStress,
             bestStress: bestMetrics.stress,
