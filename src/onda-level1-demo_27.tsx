@@ -1050,6 +1050,14 @@ const OndaLevel1 = () => {
     setCurrentGuidingTextIndex(0);
     setIsTextTransitioning(false);
     setAudioResetKey(prev => prev + 1);
+    
+    // Start Apple Watch HR streaming
+    if (watchHeartRate.watchStatus?.reachable) {
+      console.log('[Basic Practice] Starting Watch HR streaming');
+      watchHeartRate.startRealtime().catch(err => {
+        console.error('[Basic Practice] Failed to start Watch:', err);
+      });
+    }
   };
 
   const finishPractice = async () => {
@@ -1219,6 +1227,14 @@ const OndaLevel1 = () => {
       } catch (error) {
         console.error('Error saving practice rating:', error);
       }
+    }
+    
+    // Stop Apple Watch HR streaming
+    if (watchHeartRate.isMonitoring) {
+      console.log('[Basic Practice] Stopping Watch HR streaming');
+      watchHeartRate.stopRealtime().catch(err => {
+        console.error('[Basic Practice] Failed to stop Watch:', err);
+      });
     }
     
     setActivePractice(null);
