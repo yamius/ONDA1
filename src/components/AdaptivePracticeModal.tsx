@@ -1127,21 +1127,6 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
               </div>
             </div>
             
-            {/* Debug panel - показывает какие метрики используются для расчёта */}
-            <div className="w-full max-w-md mb-4 px-3 sm:px-0">
-              <div className="bg-black/50 backdrop-blur-sm rounded-lg p-2 text-xs font-mono border border-yellow-500/30">
-                <div className="text-yellow-400 mb-1">OND Debug:</div>
-                <div className="grid grid-cols-2 gap-1 text-gray-300">
-                  <div>Init S: <span className={initialMetrics.stress === 50 ? 'text-red-400' : 'text-green-400'}>{initialMetrics.stress}</span></div>
-                  <div>Init E: <span className={initialMetrics.energy === 50 ? 'text-red-400' : 'text-green-400'}>{initialMetrics.energy}</span></div>
-                  <div>Now S: <span className="text-blue-400">{vitalsData.stress !== null ? Math.round(vitalsData.stress) : 'null'}</span></div>
-                  <div>Now E: <span className="text-blue-400">{vitalsData.energy !== null ? Math.round(vitalsData.energy) : 'null'}</span></div>
-                  <div>hasVitals: <span className={vitalsData.hasVitalsData ? 'text-green-400' : 'text-red-400'}>{vitalsData.hasVitalsData ? 'TRUE' : 'FALSE'}</span></div>
-                  <div>Source: <span className="text-cyan-400">{vitalsData.hrSource || 'none'}</span></div>
-                </div>
-              </div>
-            </div>
-
             <div className="flex gap-3 sm:gap-6">
               <button
                 onClick={togglePause}
