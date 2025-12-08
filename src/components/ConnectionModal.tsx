@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, Watch, CheckCircle, AlertCircle, RefreshCw } from 'lucide-react';
+import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, CheckCircle, AlertCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { HealthConnectCompactPanel } from './HealthConnectCompactPanel';
@@ -95,13 +95,11 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
     stopMonitoring: hkStopMonitoring,
     error: hkError,
     isMonitoring: hkIsMonitoring,
-    mode: hkMode,
-    lastUpdated: hkLastUpdated
+    mode: hkMode
   } = healthKitHeartRateData;
   
   const {
     data: hkData,
-    isLoading: hkDataLoading,
     refresh: hkRefresh,
     requestPermission: hkRequestFullPermission,
     startAutoRefresh: hkStartAutoRefresh,
