@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, CheckCircle, AlertCircle } from 'lucide-react';
+import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, CheckCircle, AlertCircle, Clock, Calendar, TrendingUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { HealthConnectCompactPanel } from './HealthConnectCompactPanel';
 import type { HealthConnectHook } from '../hooks/useHealthConnect';
+import { useLifeRhythm } from '../hooks/useLifeRhythm';
 
 interface HealthKitHeartRateData {
   heartRate: number | null;
@@ -108,6 +109,8 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
   
   const [hkConnecting, setHkConnecting] = useState(false);
   const [hkAttempted, setHkAttempted] = useState(false);
+  
+  const { metrics: lifeRhythmMetrics, syncFromHealthKit, history: sleepHistory } = useLifeRhythm();
 
   const handleHealthKitConnect = async (mode: 'direct' | 'workout' | 'realtime') => {
     setHkConnecting(true);
@@ -130,6 +133,12 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
       hkRefresh();
     }
   }, [hkIsMonitoring, hkData, hkRefresh]);
+  
+  useEffect(() => {
+    if (hkData) {
+      syncFromHealthKit(hkData);
+    }
+  }, [hkData, syncFromHealthKit]);
 
   const handleHealthKitDisconnect = () => {
     hkStopMonitoring();
@@ -517,6 +526,156 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     }`}>
                       {t('settings.calibrating', 'Real-time metrics. Calibrating baseline...')}
                     </div>
+                  </div>
+
+                  {/* Life Rhythm Section */}
+                  <div className="mt-6">
+                    <h4 className={`text-base font-semibold mb-4 text-center ${
+                      isLightTheme ? 'text-gray-800' : 'text-white'
+                    }`}>
+                      {t('settings.life_rhythm', 'Life Rhythm')}
+                    </h4>
+                    
+                    {sleepHistory.length === 0 ? (
+                      <div className={`p-4 rounded-xl text-center ${
+                        isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      }`}>
+                        <Moon className={`w-8 h-8 mx-auto mb-2 ${
+                          isLightTheme ? 'text-gray-400' : 'text-white/40'
+                        }`} />
+                        <p className={`text-sm ${
+                          isLightTheme ? 'text-gray-600' : 'text-white/60'
+                        }`}>
+                          {t('settings.no_sleep_data', 'No sleep data yet. Wear your Apple Watch while sleeping to track your rhythm.')}
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="space-y-2">
+                        {/* Overall Score */}
+                        <div className={`flex items-center justify-between p-4 rounded-xl ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <div className="flex items-center gap-3">
+                            <TrendingUp className={`w-5 h-5 ${
+                              (lifeRhythmMetrics?.overallScore ?? 0) >= 70 ? 'text-green-500' :
+                              (lifeRhythmMetrics?.overallScore ?? 0) >= 40 ? 'text-yellow-500' : 'text-red-500'
+                            }`} />
+                            <span className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                              {t('settings.rhythm_score', 'Rhythm Score')}
+                            </span>
+                          </div>
+                          <div className={`font-semibold text-lg ${
+                            (lifeRhythmMetrics?.overallScore ?? 0) >= 70 ? 'text-green-500' :
+                            (lifeRhythmMetrics?.overallScore ?? 0) >= 40 ? 'text-yellow-500' : 'text-red-500'
+                          }`}>
+                            {lifeRhythmMetrics?.overallScore ?? '--'}%
+                          </div>
+                        </div>
+
+                        {/* Sleep Regularity */}
+                        <div className={`flex items-center justify-between p-4 rounded-xl ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <div className="flex items-center gap-3">
+                            <Moon className="w-5 h-5 text-indigo-500" />
+                            <div>
+                              <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                                {t('settings.sleep_regularity', 'Sleep Regularity')}
+                              </div>
+                              <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                                {t('settings.avg_bedtime', 'Avg bedtime')}: {lifeRhythmMetrics?.avgSleepTime ?? '--:--'}
+                              </div>
+                            </div>
+                          </div>
+                          <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                            {lifeRhythmMetrics?.sleepRegularity ?? '--'}%
+                          </div>
+                        </div>
+
+                        {/* Wake Regularity */}
+                        <div className={`flex items-center justify-between p-4 rounded-xl ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <div className="flex items-center gap-3">
+                            <Clock className="w-5 h-5 text-orange-500" />
+                            <div>
+                              <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                                {t('settings.wake_regularity', 'Wake Regularity')}
+                              </div>
+                              <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                                {t('settings.avg_wake', 'Avg wake')}: {lifeRhythmMetrics?.avgWakeTime ?? '--:--'}
+                              </div>
+                            </div>
+                          </div>
+                          <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                            {lifeRhythmMetrics?.wakeRegularity ?? '--'}%
+                          </div>
+                        </div>
+
+                        {/* Duration Score */}
+                        <div className={`flex items-center justify-between p-4 rounded-xl ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <div className="flex items-center gap-3">
+                            <Activity className="w-5 h-5 text-blue-500" />
+                            <div>
+                              <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                                {t('settings.duration_score', 'Sleep Duration')}
+                              </div>
+                              <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                                {t('settings.avg_duration', 'Avg')}: {lifeRhythmMetrics?.avgDurationHours ?? '--'}h
+                              </div>
+                            </div>
+                          </div>
+                          <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                            {lifeRhythmMetrics?.durationScore ?? '--'}%
+                          </div>
+                        </div>
+
+                        {/* Streak */}
+                        <div className={`flex items-center justify-between p-4 rounded-xl ${
+                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                        }`}>
+                          <div className="flex items-center gap-3">
+                            <Calendar className="w-5 h-5 text-purple-500" />
+                            <span className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                              {t('settings.streak', 'Streak')}
+                            </span>
+                          </div>
+                          <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                            {lifeRhythmMetrics?.streak ?? 0} {t('settings.days', 'days')}
+                          </div>
+                        </div>
+
+                        {/* Last Night Quality */}
+                        {lifeRhythmMetrics?.lastNightQuality && (
+                          <div className={`flex items-center justify-between p-4 rounded-xl ${
+                            isLightTheme ? 'bg-white' : 'bg-white/5'
+                          }`}>
+                            <span className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                              {t('settings.last_night', 'Last Night')}
+                            </span>
+                            <div className={`px-3 py-1 rounded-full text-sm font-medium ${
+                              lifeRhythmMetrics.lastNightQuality === 'excellent' ? 'bg-green-500/20 text-green-400' :
+                              lifeRhythmMetrics.lastNightQuality === 'good' ? 'bg-blue-500/20 text-blue-400' :
+                              lifeRhythmMetrics.lastNightQuality === 'fair' ? 'bg-yellow-500/20 text-yellow-400' :
+                              'bg-red-500/20 text-red-400'
+                            }`}>
+                              {lifeRhythmMetrics.lastNightQuality === 'excellent' ? t('settings.excellent', 'Excellent') :
+                               lifeRhythmMetrics.lastNightQuality === 'good' ? t('settings.good', 'Good') :
+                               lifeRhythmMetrics.lastNightQuality === 'fair' ? t('settings.fair', 'Fair') :
+                               t('settings.poor', 'Poor')}
+                            </div>
+                          </div>
+                        )}
+
+                        <div className={`mt-2 text-center text-xs ${
+                          isLightTheme ? 'text-gray-500' : 'text-white/40'
+                        }`}>
+                          {t('settings.sleep_history_count', 'Based on {{count}} nights', { count: sleepHistory.length })}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
