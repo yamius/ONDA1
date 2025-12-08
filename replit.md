@@ -1,3 +1,25 @@
+# Current Stage
+
+## Текущие задачи (TODO)
+- [ ] Оптимизация структуры проекта (в процессе)
+- [ ] Тестирование Apple Watch HR streaming
+- [ ] Улучшение UX практик
+
+## Недавно сделано (DONE)
+- [x] Унифицированы reward mechanics — обе практики используют vitalsRef паттерн
+- [x] Исправлен расчёт OND: 15% completion + 40% stress + 45% energy
+- [x] bestMetrics отслеживает лучшие показатели за сессию
+- [x] Добавлена папка `.assistant/` с документацией для ИИ
+
+## Важные файлы для контекста ИИ
+- `.assistant/PHILOSOPHY.md` — правила работы над проектом
+- `.assistant/AI_INSTRUCTIONS.md` — быстрый старт сессии
+- `.assistant/MODULE_FRONTEND.md` — архитектура React PWA
+- `.assistant/MODULE_NATIVE.md` — архитектура iOS/Android
+- `.assistant/MODULE_SUPABASE.md` — архитектура бэкенда
+
+---
+
 # Overview
 
 ONDA is a mindfulness and wellness mobile application that integrates gamification with biometric tracking. It guides users through progressive "circuits" of consciousness development practices, rewarding completion with virtual currency (OND). The app leverages real-time health data from Google Health Connect (Android), Apple HealthKit (iOS), and Bluetooth heart rate monitors to provide adaptive, personalized meditation and breathing exercises.
