@@ -255,12 +255,6 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         if let bodyFat = HKQuantityType.quantityType(forIdentifier: .bodyFatPercentage) {
             typesToRead.insert(bodyFat)
         }
-        if let bloodPressureSys = HKQuantityType.quantityType(forIdentifier: .bloodPressureSystolic) {
-            typesToRead.insert(bloodPressureSys)
-        }
-        if let bloodPressureDia = HKQuantityType.quantityType(forIdentifier: .bloodPressureDiastolic) {
-            typesToRead.insert(bloodPressureDia)
-        }
         if let bloodGlucose = HKQuantityType.quantityType(forIdentifier: .bloodGlucose) {
             typesToRead.insert(bloodGlucose)
         }
@@ -362,18 +356,6 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         group.enter()
         queryLatest(.bodyTemperature) { value in
             if let v = value { vitals["bodyTemperature"] = round(v * 10) / 10 }
-            group.leave()
-        }
-        
-        // Blood Pressure
-        group.enter()
-        queryLatest(.bloodPressureSystolic) { value in
-            if let v = value { vitals["bloodPressureSys"] = Int(v) }
-            group.leave()
-        }
-        group.enter()
-        queryLatest(.bloodPressureDiastolic) { value in
-            if let v = value { vitals["bloodPressureDia"] = Int(v) }
             group.leave()
         }
         
@@ -556,8 +538,6 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
             return .gramUnit(with: .kilo)
         case .height:
             return .meter()
-        case .bloodPressureSystolic, .bloodPressureDiastolic:
-            return .millimeterOfMercury()
         case .bloodGlucose:
             return HKUnit(from: "mmol/L")
         default:
