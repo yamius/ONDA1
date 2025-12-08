@@ -80,16 +80,29 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
       audioRef.current.loop = tracks.length === 1;
 
       const handleEnded = () => {
-        console.log('[RemoteAudioPlayer] Track ended', {
+        console.log('[RemoteAudioPlayer] 🎵 Track ended', {
           currentIndex: currentTrackIndex,
           totalTracks: tracks.length,
+          loop: audioRef.current?.loop,
+          allTracks: tracks
         });
 
         if (tracks.length > 1 && currentTrackIndex < tracks.length - 1) {
           const nextIndex = currentTrackIndex + 1;
+          console.log('[RemoteAudioPlayer] 🔄 Moving to next track', {
+            from: currentTrackIndex,
+            to: nextIndex,
+            isLooping: false
+          });
           setCurrentTrackIndex(nextIndex);
         } else if (tracks.length > 1) {
+          console.log('[RemoteAudioPlayer] 🔁 Looping back to first track', {
+            from: currentTrackIndex,
+            to: 0
+          });
           setCurrentTrackIndex(0);
+        } else {
+          console.log('[RemoteAudioPlayer] 🔁 Single track with loop=true, should auto-restart');
         }
       };
 

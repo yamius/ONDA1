@@ -124,34 +124,46 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
       audioRef.current.loop = availableTracksRef.current.length === 1;
 
       const handleEnded = async () => {
-        console.log('Audio ended event fired', {
+        console.log('[PracticeAudioPlayer] 🎵 Track ended', {
           availableTracks: availableTracksRef.current.length,
-          currentIndex: currentTrackIndexRef.current
+          currentIndex: currentTrackIndexRef.current,
+          loop: audioRef.current?.loop,
+          trackUrls: availableTracksRef.current
         });
 
         if (availableTracksRef.current.length > 1) {
+          const prevIndex = currentTrackIndexRef.current;
           currentTrackIndexRef.current = (currentTrackIndexRef.current + 1) % availableTracksRef.current.length;
           const nextTrack = availableTracksRef.current[currentTrackIndexRef.current];
 
-          console.log('Switching to next track:', nextTrack);
+          console.log('[PracticeAudioPlayer] 🔄 Switching track', {
+            from: prevIndex,
+            to: currentTrackIndexRef.current,
+            isLooping: currentTrackIndexRef.current === 0 && prevIndex === availableTracksRef.current.length - 1,
+            nextTrackUrl: nextTrack
+          });
 
           if (audioRef.current && gainNodeRef.current && audioContextRef.current) {
             audioRef.current.src = nextTrack;
             audioRef.current.load();
+            console.log('[PracticeAudioPlayer] ⏳ Loading next track...');
 
             try {
               await audioRef.current.play();
+              console.log('[PracticeAudioPlayer] ▶️ Playing next track successfully');
               const currentTime = audioContextRef.current.currentTime;
               gainNodeRef.current.gain.cancelScheduledValues(currentTime);
               gainNodeRef.current.gain.setValueAtTime(volume, currentTime);
             } catch (err) {
-              console.error('Track change play error:', err);
+              console.error('[PracticeAudioPlayer] ❌ Track change play error:', err);
             }
           }
 
           if (onTrackChange) {
             onTrackChange(currentTrackIndexRef.current + 1, availableTracksRef.current.length);
           }
+        } else {
+          console.log('[PracticeAudioPlayer] 🔁 Single track with loop=true, should auto-restart');
         }
       };
 
