@@ -344,7 +344,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
                           {t('settings.breathing', 'Breathing')}
                         </div>
-                        <div className="text-lg font-semibold">{hr && br ? `${br.toFixed(1)}` : '--'} /min</div>
+                        <div className="text-lg font-semibold">{hkHeartRate && br ? `${br.toFixed(1)}` : '--'} /min</div>
                       </div>
                     </div>
 
@@ -356,7 +356,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
                           {t('settings.stress', 'Stress')}
                         </div>
-                        <div className="text-lg font-semibold">{hr && stress !== null ? `${stress}%` : '--%'}</div>
+                        <div className="text-lg font-semibold">{hkHeartRate && stress !== null ? `${stress}%` : '--%'}</div>
                       </div>
                     </div>
 
@@ -368,7 +368,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
                           {t('settings.energy', 'Energy')}
                         </div>
-                        <div className="text-lg font-semibold">{hr && energy !== null ? `${energy}%` : '--%'}</div>
+                        <div className="text-lg font-semibold">{hkHeartRate && energy !== null ? `${energy}%` : '--%'}</div>
                       </div>
                     </div>
                   </div>
@@ -390,7 +390,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           </div>
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                          {hr && hrv !== null ? `${hrv}` : '--'}
+                          {hkHeartRate && hrv !== null ? `${hrv}` : '--'}
                         </div>
                       </div>
 
@@ -403,7 +403,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           </div>
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                          {hr && csi !== null ? csi.toFixed(2) : '--'}
+                          {hkHeartRate && csi !== null ? csi.toFixed(2) : '--'}
                         </div>
                       </div>
 
@@ -416,7 +416,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           </div>
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                          {hr && recoveryRate !== null ? `${(recoveryRate * 100).toFixed(0)}%` : '--'}
+                          {hkHeartRate && recoveryRate !== null ? `${(recoveryRate * 100).toFixed(0)}%` : '--'}
                         </div>
                       </div>
 
@@ -429,7 +429,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           </div>
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                          {hr && hrTrendSlope !== null ? hrTrendSlope.toFixed(2) : '--'}
+                          {hkHeartRate && hrTrendSlope !== null ? hrTrendSlope.toFixed(2) : '--'}
                         </div>
                       </div>
 
@@ -442,7 +442,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           </div>
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                          {hr && hrAcceleration !== null ? hrAcceleration.toFixed(2) : '--'}
+                          {hkHeartRate && hrAcceleration !== null ? hrAcceleration.toFixed(2) : '--'}
                         </div>
                       </div>
                     </div>
@@ -463,7 +463,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           {t('settings.alarm_anxiety', 'Alarm / Anxiety')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                          {hr && arousal !== null ? `${arousal}%` : '--'}
+                          {hkHeartRate && arousal !== null ? `${arousal}%` : '--'}
                         </div>
                       </div>
 
@@ -474,7 +474,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           {t('settings.relaxation_calmness', 'Relaxation / Calmness')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                          {hr && calm !== null ? `${calm}%` : '--'}
+                          {hkHeartRate && calm !== null ? `${calm}%` : '--'}
                         </div>
                       </div>
 
@@ -485,7 +485,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           {t('settings.focus_concentration', 'Focus / Concentration')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                          {hr && focus !== null ? `${focus}%` : '--'}
+                          {hkHeartRate && focus !== null ? `${focus}%` : '--'}
                         </div>
                       </div>
 
@@ -496,7 +496,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           {t('settings.excitement', 'Excitement')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                          {hr && excitement !== null ? `${excitement}%` : '--'}
+                          {hkHeartRate && excitement !== null ? `${excitement}%` : '--'}
                         </div>
                       </div>
 
@@ -507,7 +507,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           {t('settings.fatigue_label', 'Fatigue')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                          {hr && fatigue !== null ? `${fatigue}%` : '--'}
+                          {hkHeartRate && fatigue !== null ? `${fatigue}%` : '--'}
                         </div>
                       </div>
 
@@ -518,7 +518,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           {t('settings.flow_label', 'Flow')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                          {hr && flow !== null ? `${flow}%` : '--'}
+                          {hkHeartRate && flow !== null ? `${flow}%` : '--'}
                         </div>
                       </div>
                     </div>
