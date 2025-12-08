@@ -535,6 +535,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const [simulatedVitals, setSimulatedVitals] = useState({ stress: 50, energy: 50 });
   const [practiceRating, setPracticeRating] = useState(0);
   const timerRef = useRef<number | null>(null);
+  const prevIsOpenRef = useRef(false);
   
   // Ref to store CURRENT vitals - updated every render, accessible in async functions
   const vitalsRef = useRef(vitalsData);
@@ -598,7 +599,13 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   }, [isOpen, vitalsData.healthKitHR.isAvailable, vitalsData.watchHR.isConnected]);
 
   useEffect(() => {
-    if (!isOpen) {
+    // Reset state when modal OPENS (transition from closed to open)
+    const wasOpen = prevIsOpenRef.current;
+    prevIsOpenRef.current = isOpen;
+    
+    if (isOpen && !wasOpen) {
+      // Modal just opened - reset everything to initial state
+      console.log('[AdaptivePractice] Modal opened - resetting state to intro');
       setPracticeState('intro');
       setPracticeTime(0);
       setIsPaused(false);
@@ -609,9 +616,19 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       setPracticeRating(0);
       setCurrentTrack(1);
       setTotalTracks(1);
+      setInitialMetrics({ stress: null, energy: null });
+      setBestMetrics({ stress: null, energy: null });
+      setEarnedOnd(0);
       if (timerRef.current) {
         clearInterval(timerRef.current);
+        timerRef.current = null;
       }
+    }
+    
+    // Clean up timer when modal closes
+    if (!isOpen && timerRef.current) {
+      clearInterval(timerRef.current);
+      timerRef.current = null;
     }
   }, [isOpen]);
 
