@@ -116,8 +116,10 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
     setHkConnecting(true);
     setHkAttempted(false);
     try {
-      await hkRequestPermission();
+      // Request full permissions first (includes sleep, activity, etc.)
       await hkRequestFullPermission();
+      // Then request HR monitoring permission
+      await hkRequestPermission();
       await hkStartMonitoring(mode);
       hkStartAutoRefresh(30000);
     } catch (err) {
