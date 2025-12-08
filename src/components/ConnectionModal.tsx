@@ -302,47 +302,6 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                 </div>
               )}
 
-              {hkIsConnected && (
-                <div className={`p-4 rounded-xl ${
-                  isLightTheme ? 'bg-gray-100' : 'bg-white/5'
-                }`}>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-3">
-                      <Heart className={`w-6 h-6 ${hkHeartRate ? 'text-red-500 animate-pulse' : 'text-gray-400'}`} />
-                      <div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
-                          {t('connection.healthkit_hr', 'Heart Rate from HealthKit')}
-                          {hkMode && <span className="ml-1">({hkMode})</span>}
-                        </div>
-                        <div className="text-xl font-semibold">
-                          {hkHeartRate ?? '--'} <span className="text-sm font-normal">bpm</span>
-                        </div>
-                        {hkLastUpdated && (
-                          <div className={`text-[10px] ${isLightTheme ? 'text-gray-500' : 'text-white/40'}`}>
-                            Updated: {hkLastUpdated.toLocaleTimeString()}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <button
-                        onClick={hkRefresh}
-                        disabled={hkDataLoading}
-                        className={`p-2 rounded-lg transition-all ${
-                          isLightTheme 
-                            ? 'hover:bg-gray-200 text-gray-500' 
-                            : 'hover:bg-white/10 text-white/50'
-                        }`}
-                        data-testid="button-refresh-healthkit"
-                      >
-                        <RefreshCw className={`w-4 h-4 ${hkDataLoading ? 'animate-spin' : ''}`} />
-                      </button>
-                      <Watch className={`w-5 h-5 ${isLightTheme ? 'text-gray-400' : 'text-white/40'}`} />
-                    </div>
-                  </div>
-                </div>
-              )}
-
               {/* Show iOS Vitals Panel when monitoring */}
               {hkIsMonitoring && (
                 <div className={`mt-4 p-4 rounded-xl ${
@@ -357,13 +316,13 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     <div className={`flex items-center gap-2 p-3 rounded-lg ${
                       isLightTheme ? 'bg-white' : 'bg-white/5'
                     }`}>
-                      <Heart className="w-5 h-5 text-red-500" />
+                      <Heart className={`w-5 h-5 ${hr ? 'text-red-500 animate-pulse' : 'text-red-500'}`} />
                       <div>
                         <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
                           {t('settings.heart_rate', 'Heart Rate')}
                         </div>
                         <div className="text-lg font-semibold">
-                          {hkHeartRate ?? hr ?? '--'} bpm
+                          {hr ?? '--'} bpm
                         </div>
                       </div>
                     </div>
