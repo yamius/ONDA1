@@ -263,7 +263,7 @@
     "your_artifacts": "Your Artifacts",
     "life_rhythm": "Life Rhythm",
     "life_rhythm_desc": "Sleep and wake up at the same time for 7 days in a row",
-    "life_rhythm_alert": "🌙 Biotracker monitors your sleep automatically. Go to bed and wake up at the same time for 7 days in a row.",
+    "life_rhythm_alert": "Activate the Sleep app on your watch and the biotracker will monitor your sleep automatically. Go to bed and wake up at the same time for 7 days in a row.",
     "progress": "Progress",
     "days": "days"
   },
