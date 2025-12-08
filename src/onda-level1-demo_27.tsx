@@ -19,8 +19,6 @@ import { useHealthKitData } from './hooks/useHealthKitData';
 import { useHealthKitHeartRate } from './hooks/useHealthKitHeartRate';
 import { useKeepAwake } from './hooks/useKeepAwake';
 import { useWatchHeartRate } from './hooks/useWatchHeartRate';
-import { HealthKitCompactPanel } from './components/HealthKitCompactPanel';
-import { HealthConnectCompactPanel } from './components/HealthConnectCompactPanel';
 import { Capacitor } from '@capacitor/core';
 import { rhythmStore } from './sleep/rhythm';
 import { calculatePracticeOnd } from './utils/ondCalculator';
@@ -2685,14 +2683,6 @@ const OndaLevel1 = () => {
               <div className="text-xs text-gray-400">Energy</div>
             </div>
           </div>
-          
-          {platform === 'ios' && healthKitData.data && (
-            <HealthKitCompactPanel isLightTheme={isLightTheme} data={healthKitData.data} />
-          )}
-          
-          {platform === 'android' && healthConnectData.lastUpdate && (
-            <HealthConnectCompactPanel isLightTheme={isLightTheme} data={healthConnectData.lastUpdate} />
-          )}
         </div>
 
         {/* Прогресс уровня */}
