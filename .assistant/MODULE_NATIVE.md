@@ -1,0 +1,84 @@
+# MODULE_NATIVE — Архитектура нативных приложений ONDA
+
+## iOS (Capacitor)
+
+### Структура
+```
+ios/
+├── App/
+│   ├── App/
+│   │   ├── AppDelegate.swift
+│   │   ├── ViewController.swift
+│   │   └── Info.plist
+│   └── App.xcodeproj
+├── OndaWatch Watch App/       # Apple Watch приложение
+│   ├── ContentView.swift
+│   ├── WorkoutManager.swift   # Тренировка + HR streaming
+│   └── PhoneConnector.swift   # WCSession связь с iPhone
+└── Podfile
+```
+
+### Ключевые компоненты
+
+| Компонент | Назначение |
+|-----------|------------|
+| `ViewController.swift` | WKWebView + WCSession делегат |
+| `WorkoutManager.swift` | Запуск тренировки, получение HR с часов |
+| `PhoneConnector.swift` | Отправка HR на iPhone через WCSession |
+
+### Поток данных HR (Apple Watch → React)
+1. Watch: `WorkoutManager` получает HR через HKWorkoutSession
+2. Watch: `PhoneConnector` отправляет через `WCSession.sendMessage()`
+3. iPhone: `ViewController` получает в `session(_:didReceiveMessage:)`
+4. iPhone: Вызывает JS: `webView.evaluateJavaScript("window.receiveWatchHeartRate(\(hr))")`
+5. React: `useWatchHeartRate` ловит через `window.receiveWatchHeartRate`
+
+### Деплой
+- GitHub Actions: `.github/workflows/ios-deploy.yml`
+- Fastlane: `ios/fastlane/Fastfile`
+- TestFlight: автоматическая загрузка после сборки
+
+---
+
+## Android (WebView)
+
+### Структура
+```
+android-webview/
+├── app/
+│   ├── src/main/
+│   │   ├── java/.../
+│   │   │   ├── MainActivity.kt         # WebView + JS Bridge
+│   │   │   └── HealthConnectManager.kt # Health Connect API
+│   │   ├── res/
+│   │   └── AndroidManifest.xml
+│   └── build.gradle
+└── build.gradle
+```
+
+### JavaScript Bridge
+
+Методы доступны через `window.Android`:
+
+```typescript
+interface AndroidBridge {
+  openExternalBrowser(url: string): void;
+  requestHealthConnectPermissions(): void;
+  getHealthConnectData(): string;
+  isHealthConnectAvailable(): boolean;
+  setImmersiveMode(enabled: boolean): void;
+}
+```
+
+### События от Android
+- `hc-update` — новые данные Health Connect
+- `hc-permissions-denied` — отказ в разрешениях
+- `oauth-success` — успешная OAuth авторизация
+
+### Health Connect
+Читаемые типы данных:
+- Steps, Distance, Calories
+- Heart Rate, Resting Heart Rate, HRV
+- Blood Pressure, Blood Oxygen, Body Temperature
+- Sleep, Weight, Height, Body Fat
+- Respiratory Rate, Hydration
