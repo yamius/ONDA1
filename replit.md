@@ -1,11 +1,11 @@
 # Current Stage
 
 ## Текущие задачи (TODO)
-- [ ] Оптимизация структуры проекта (в процессе)
 - [ ] Тестирование Apple Watch HR streaming
 - [ ] Улучшение UX практик
 
 ## Недавно сделано (DONE)
+- [x] Оптимизация структуры проекта — добавлены `.assistant/`, обновлены `replit.md` и `README.md`
 - [x] Унифицированы reward mechanics — обе практики используют vitalsRef паттерн
 - [x] Исправлен расчёт OND: 15% completion + 40% stress + 45% energy
 - [x] bestMetrics отслеживает лучшие показатели за сессию
