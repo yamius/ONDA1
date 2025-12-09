@@ -107,13 +107,49 @@ extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
 }
 
 extension WorkoutManager: WCSessionDelegate {
-    func session(_ session: WCSession, activationDidCompleteWith state: WCSessionActivationState, error: Error?) {}
+    func session(_ session: WCSession, activationDidCompleteWith state: WCSessionActivationState, error: Error?) {
+        print("[WorkoutManager] WCSession activated: \(state.rawValue)")
+    }
     
+    // Handle realtime messages (when Watch app is in foreground)
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
-        if message["command"] as? String == "start" {
-            DispatchQueue.main.async { self.startWorkout() }
-        } else if message["command"] as? String == "stop" {
-            DispatchQueue.main.async { self.stopWorkout() }
+        print("[WorkoutManager] Received message: \(message)")
+        handleCommand(message)
+    }
+    
+    // Handle queued messages (wakes Watch app from background!)
+    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String: Any] = [:]) {
+        print("[WorkoutManager] Received userInfo (background wake): \(userInfo)")
+        handleCommand(userInfo)
+    }
+    
+    // Unified command handler - supports both "type" and "command" keys
+    private func handleCommand(_ data: [String: Any]) {
+        let command = (data["type"] as? String) ?? (data["command"] as? String)
+        
+        guard let cmd = command else {
+            print("[WorkoutManager] No command found in data")
+            return
+        }
+        
+        print("[WorkoutManager] Processing command: \(cmd)")
+        
+        DispatchQueue.main.async {
+            switch cmd {
+            case "start":
+                if !self.isActive {
+                    self.startWorkout()
+                } else {
+                    print("[WorkoutManager] Workout already active")
+                }
+            case "stop":
+                self.stopWorkout()
+            case "heartbeat":
+                // Keep-alive ping, just log
+                print("[WorkoutManager] Heartbeat received")
+            default:
+                print("[WorkoutManager] Unknown command: \(cmd)")
+            }
         }
     }
 }

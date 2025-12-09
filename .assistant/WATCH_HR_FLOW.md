@@ -307,26 +307,46 @@ const hr = bleHR.hr
 - iOS отправляет `transferUserInfo` при запуске практики
 - watchOS просыпается и запускает workout автоматически
 
-### Рекомендуемая реализация (Вариант C):
+### РЕАЛИЗОВАНО: Автозапуск через transferUserInfo
 
+**iPhone (OndaWatchPlugin.swift):**
 ```swift
-// iPhone: при старте практики
-func startRealtime() {
-    // Если watch app не reachable - отправить через transferUserInfo
-    if !session.isReachable {
-        session.transferUserInfo(["autoStart": true])
+func sendCommand(type: String) {
+    let message: [String: Any] = ["type": type]
+    
+    if session.isReachable {
+        // Watch в foreground - мгновенная доставка
+        session.sendMessage(message, replyHandler: nil)
     } else {
-        session.sendMessage(["command": "start"], replyHandler: nil)
-    }
-}
-
-// Watch: при получении userInfo
-func session(_ session: WCSession, didReceiveUserInfo userInfo: [String: Any]) {
-    if userInfo["autoStart"] as? Bool == true {
-        startWorkout()  // Автоматический запуск даже из фона
+        // Watch в фоне - очередь для доставки при пробуждении
+        session.transferUserInfo(message)
     }
 }
 ```
+
+**Watch (WorkoutManager.swift):**
+```swift
+// Realtime - когда Watch app активен
+func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
+    handleCommand(message)
+}
+
+// Background wake - пробуждает Watch app из фона!
+func session(_ session: WCSession, didReceiveUserInfo userInfo: [String: Any]) {
+    handleCommand(userInfo)  // Автоматический запуск workout
+}
+
+private func handleCommand(_ data: [String: Any]) {
+    let cmd = (data["type"] as? String) ?? (data["command"] as? String)
+    switch cmd {
+    case "start": startWorkout()
+    case "stop": stopWorkout()
+    default: break
+    }
+}
+```
+
+**Результат:** Пользователю достаточно нажать "Начать практику" — Watch app запустится автоматически.
 
 ---
 

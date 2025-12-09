@@ -247,16 +247,33 @@ extension WorkoutManager: WCSessionDelegate {
         }
     }
 
+    // Handle realtime messages (when Watch app is in foreground)
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any]) {
-
-        guard let type = message["type"] as? String else { return }
+        print("[Watch] Received message: \(message)")
+        handleCommand(message)
+    }
+    
+    // Handle queued messages (wakes Watch app from background!)
+    func session(_ session: WCSession,
+                 didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        print("[Watch] Received userInfo (background wake): \(userInfo)")
+        handleCommand(userInfo)
+    }
+    
+    // Unified command handler
+    private func handleCommand(_ data: [String: Any]) {
+        guard let type = data["type"] as? String else { return }
+        
+        print("[Watch] Processing command: \(type)")
 
         switch type {
         case "start":
             DispatchQueue.main.async { self.startWorkout() }
         case "stop":
             DispatchQueue.main.async { self.stopWorkout() }
+        case "heartbeat":
+            print("[Watch] Heartbeat received")
         default:
             break
         }
