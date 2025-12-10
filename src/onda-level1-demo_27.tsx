@@ -39,6 +39,16 @@ const OndaLevel1 = () => {
   
   useKeepAwake(true);
   
+  // Auto-manage Watch workout: start when app opens, stop when app closes/backgrounds
+  useEffect(() => {
+    if (platform === 'ios' && watchHeartRate.watchStatus?.supported) {
+      watchHeartRate.setAutoManaged(true);
+    }
+    return () => {
+      watchHeartRate.setAutoManaged(false);
+    };
+  }, [platform, watchHeartRate.watchStatus?.supported]);
+  
   useEffect(() => {
     if (platform === 'ios' && healthKitData.isAvailable && healthKitData.isAuthorized) {
       healthKitData.startAutoRefresh(30000);
