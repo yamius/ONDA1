@@ -41,7 +41,14 @@ const OndaLevel1 = () => {
   
   // Auto-manage Watch workout: start when app opens, stop when app closes/backgrounds
   useEffect(() => {
+    console.log('[OndaLevel1] Watch auto-manage check:', {
+      platform,
+      watchStatus: watchHeartRate.watchStatus,
+      supported: watchHeartRate.watchStatus?.supported
+    });
+    
     if (platform === 'ios' && watchHeartRate.watchStatus?.supported) {
+      console.log('[OndaLevel1] Enabling autoManaged for Watch');
       watchHeartRate.setAutoManaged(true);
     }
     return () => {

@@ -182,15 +182,25 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   // Keep ref in sync with state
   useEffect(() => {
     isAutoManagedRef.current = autoManaged;
+    console.log('[Watch] autoManaged changed to:', autoManaged);
   }, [autoManaged]);
 
   // Auto-manage workout based on app lifecycle
   useEffect(() => {
     const platform = Capacitor.getPlatform();
-    if (platform !== 'ios') return;
-    if (!autoManaged) return;
+    console.log('[Watch] Auto-manage effect: platform=', platform, 'autoManaged=', autoManaged);
+    
+    if (platform !== 'ios') {
+      console.log('[Watch] Skipping - not iOS');
+      return;
+    }
+    if (!autoManaged) {
+      console.log('[Watch] Skipping - autoManaged is false');
+      return;
+    }
 
     const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
+    console.log('[Watch] Plugin available:', isPluginAvailable);
     if (!isPluginAvailable) return;
 
     let appStateListener: PluginListenerHandle | null = null;
