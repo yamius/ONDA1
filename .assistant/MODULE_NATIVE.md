@@ -9,14 +9,12 @@ ios/
 │   ├── App/
 │   │   ├── AppDelegate.swift
 │   │   ├── ViewController.swift
-│   │   ├── OndaWatchPlugin.swift    # Capacitor плагин для Watch
 │   │   └── Info.plist
 │   └── App.xcodeproj
-├── OndaWatch Watch App/              # Apple Watch приложение
-│   ├── OndaWatchApp.swift            # Точка входа
-│   ├── ContentView.swift             # UI часов
-│   ├── WorkoutManager.swift          # Тренировка + HR + Extended Session
-│   └── NotificationManager.swift     # Локальные уведомления
+├── OndaWatch Watch App/       # Apple Watch приложение
+│   ├── ContentView.swift
+│   ├── WorkoutManager.swift   # Тренировка + HR streaming
+│   └── PhoneConnector.swift   # WCSession связь с iPhone
 └── Podfile
 ```
 
@@ -24,41 +22,16 @@ ios/
 
 | Компонент | Назначение |
 |-----------|------------|
-| `OndaWatchPlugin.swift` | Capacitor плагин для связи с Watch |
-| `WorkoutManager.swift` | HKWorkoutSession + WCSession + Extended Runtime |
-| `NotificationManager.swift` | Локальные уведомления для пробуждения app |
-| `ContentView.swift` | UI часов с кнопкой разрешения HealthKit |
+| `ViewController.swift` | WKWebView + WCSession делегат |
+| `WorkoutManager.swift` | Запуск тренировки, получение HR с часов |
+| `PhoneConnector.swift` | Отправка HR на iPhone через WCSession |
 
 ### Поток данных HR (Apple Watch → React)
-1. Watch: `WorkoutManager` запускает HKWorkoutSession
-2. Watch: Получает HR через `HKLiveWorkoutBuilder`
-3. Watch: Отправляет через `WCSession.sendMessage(["heartRate": hr])`
-4. iPhone: `OndaWatchPlugin` получает в `session(_:didReceiveMessage:)`
-5. iPhone: Эмитит событие `heartRate` в JavaScript
-6. React: `useWatchHeartRate` получает через listener
-
-### Система пробуждения Watch App
-
-```
-iPhone открывает ONDA
-    ↓
-OndaWatch.startRealtime() → transferUserInfo(["type": "start"])
-    ↓
-Watch получает команду в handleCommand()
-    ↓
-Проверка WKApplication.applicationState:
-    ├── .active → startWorkout() сразу
-    └── иначе → NotificationManager.showOpenAppNotification()
-                    ↓
-              Вибрация + уведомление "Откройте для медитации"
-                    ↓
-              Пользователь нажимает → app открывается → workout стартует
-```
-
-### Extended Runtime Session
-- `WKExtendedRuntimeSession` предотвращает засыпание часов
-- Тип: mindfulness (до 1 часа активности)
-- Автоматический перезапуск при истечении
+1. Watch: `WorkoutManager` получает HR через HKWorkoutSession
+2. Watch: `PhoneConnector` отправляет через `WCSession.sendMessage()`
+3. iPhone: `ViewController` получает в `session(_:didReceiveMessage:)`
+4. iPhone: Вызывает JS: `webView.evaluateJavaScript("window.receiveWatchHeartRate(\(hr))")`
+5. React: `useWatchHeartRate` ловит через `window.receiveWatchHeartRate`
 
 ### Деплой
 - GitHub Actions: `.github/workflows/ios-deploy.yml`

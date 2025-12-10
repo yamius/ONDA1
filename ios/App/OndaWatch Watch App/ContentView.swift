@@ -11,6 +11,7 @@ import WatchKit
 
 struct ContentView: View {
     @StateObject private var workoutManager = WorkoutManager.shared
+    @State private var hasRequestedPermission = false
     @State private var showPermissionHint = true
     
     var body: some View {
@@ -59,6 +60,7 @@ struct ContentView: View {
                     
                     Button(action: {
                         workoutManager.checkAndRequestAuthorization()
+                        hasRequestedPermission = true
                     }) {
                         HStack(spacing: 4) {
                             Image(systemName: "heart.fill")
@@ -70,20 +72,18 @@ struct ContentView: View {
                     .buttonStyle(.borderedProminent)
                     .tint(.green)
                     
-                    Button(action: {
-                        if let url = URL(string: "x-apple-health://") {
-                            WKExtension.shared().openSystemURL(url)
-                        }
-                    }) {
-                        HStack(spacing: 4) {
-                            Image(systemName: "heart.text.square")
-                                .font(.caption2)
+                    if hasRequestedPermission {
+                        Button(action: {
+                            if let url = URL(string: "x-apple-health://") {
+                                WKExtension.shared().openSystemURL(url)
+                            }
+                        }) {
                             Text("Открыть Здоровье")
                                 .font(.caption2)
                         }
+                        .buttonStyle(.bordered)
+                        .tint(.blue)
                     }
-                    .buttonStyle(.bordered)
-                    .tint(.blue)
                 }
                 .padding(.top, 4)
             }

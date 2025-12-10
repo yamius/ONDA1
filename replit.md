@@ -1,8 +1,5 @@
 # Current Stage
 
-## ⚠️ ПЕРЕД ЛЮБОЙ ЗАДАЧЕЙ
-**Прочитай `.assistant/AI_INSTRUCTIONS.md`** — там ключевые паттерны проекта!
-
 ## Текущие задачи (TODO)
 - [ ] Подключение платёжных систем для оформления платной подписки
 - [ ] Добавление возможности захода с часов на базовые практики
@@ -10,30 +7,20 @@
 - [ ] Улучшение UX практик
 
 ## Недавно сделано (DONE)
-- [x] Watch Notifications — уведомления на часы с кнопкой "Открыть" при запуске ONDA на телефоне
-- [x] Extended Runtime Session — предотвращение засыпания часов (до 1 часа)
-- [x] Watch Permission UI — кнопка "Дать разрешение" на часах, скрывается когда HR получен
-- [x] iOS Warning Banner — подсказка на главном экране для настройки Watch permissions
-- [x] Локализация Watch hint — 5 языков (RU, EN, ES, UK, ZH)
 - [x] Life Rhythm сервис — автоматическое чтение времени сна из HealthKit
 - [x] Метрики ритма: регулярность засыпания/пробуждения, качество сна, streak
+- [x] Оптимизация структуры проекта — добавлены `.assistant/`, обновлены `replit.md` и `README.md`
 - [x] Унифицированы reward mechanics — обе практики используют vitalsRef паттерн
+- [x] Исправлен расчёт OND: 15% completion + 40% stress + 45% energy
 - [x] bestMetrics отслеживает лучшие показатели за сессию
+- [x] Добавлена папка `.assistant/` с документацией для ИИ
 
 ## Важные файлы для контекста ИИ
 - `.assistant/PHILOSOPHY.md` — правила работы над проектом
-- `.assistant/AI_INSTRUCTIONS.md` — **КЛЮЧЕВЫЕ ПАТТЕРНЫ** + быстрый старт сессии
+- `.assistant/AI_INSTRUCTIONS.md` — быстрый старт сессии
 - `.assistant/MODULE_FRONTEND.md` — архитектура React PWA
 - `.assistant/MODULE_NATIVE.md` — архитектура iOS/Android
 - `.assistant/MODULE_SUPABASE.md` — архитектура бэкенда
-
-## КРИТИЧЕСКИ ВАЖНО (читай .assistant/AI_INSTRUCTIONS.md!)
-
-1. **Watch Auto-Management**: Workout на часах стартует АВТОМАТИЧЕСКИ при открытии приложения (`setAutoManaged(true)` в OndaLevel1)
-2. **Vitals расчёт**: stress/energy/breathing считаются каждые 2 сек из HR буфера (мин. 10 точек)
-3. **Watch Permission UI**: Обе кнопки ("Дать разрешение" + "Открыть Здоровье") видны пока heartRate == 0
-4. **Watch Notifications**: iPhone → transferUserInfo → Watch уведомление → workout
-5. **Extended Runtime**: WKExtendedRuntimeSession до 1 часа активности
 
 ---
 
