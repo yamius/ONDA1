@@ -2625,21 +2625,6 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
-        {/* Подсказка для разрешения Watch */}
-        {platform === 'ios' && watchHeartRate.watchStatus?.paired && !watchHeartRate.heartRate && (
-          <div className="mb-6 px-4">
-            <div className="bg-orange-500/10 border border-orange-500/30 rounded-2xl p-4 text-center">
-              <div className="flex items-center justify-center gap-2 text-orange-400 mb-2">
-                <Watch className="w-5 h-5" />
-                <span className="font-medium">Apple Watch</span>
-              </div>
-              <p className="text-white/70 text-sm">
-                В приложении ONDA на своих часах получите разрешение на использование данных о здоровье
-              </p>
-            </div>
-          </div>
-        )}
-
         {/* Кнопки навигации */}
         <div className="flex flex-col items-center gap-3 sm:gap-4 mb-6 sm:mb-12 w-full max-w-lg mx-auto px-4">
           {/* Эмоциональная сверка */}
@@ -2934,6 +2919,21 @@ const OndaLevel1 = () => {
       )}
 
       <div className="max-w-6xl mx-auto">
+
+        {/* Подсказка для разрешения Watch */}
+        {platform === 'ios' && watchHeartRate.watchStatus?.paired && !watchHeartRate.heartRate && (
+          <div className="mb-6 px-4">
+            <div className="bg-orange-500/10 border border-orange-500/30 rounded-2xl p-4 text-center">
+              <div className="flex items-center justify-center gap-2 text-orange-400 mb-2">
+                <Watch className="w-5 h-5" />
+                <span className="font-medium">Apple Watch</span>
+              </div>
+              <p className="text-white/70 text-sm">
+                В приложении ONDA на своих часах получите разрешение на использование данных о здоровье
+              </p>
+            </div>
+          </div>
+        )}
 
         <div className="grid md:grid-cols-2 gap-4 mb-8">
           {currentCircuit.practices.map(practice => {
