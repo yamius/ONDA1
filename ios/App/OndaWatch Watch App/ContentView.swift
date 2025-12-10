@@ -11,31 +11,33 @@ import WatchKit
 
 struct ContentView: View {
     @StateObject private var workoutManager = WorkoutManager.shared
+    @State private var hasRequestedPermission = false
+    @State private var showPermissionHint = true
     
     var body: some View {
-        VStack(spacing: 12) {
+        VStack(spacing: 8) {
             // App icon/logo
             Image(systemName: "waveform.path.ecg")
-                .font(.system(size: 40))
+                .font(.system(size: 36))
                 .foregroundColor(.cyan)
             
             Text("ONDA")
-                .font(.title2)
+                .font(.title3)
                 .fontWeight(.bold)
             
             // Heart rate display
-            if workoutManager.isActive {
+            if workoutManager.heartRate > 0 {
                 HStack {
                     Image(systemName: "heart.fill")
                         .foregroundColor(.red)
                     Text("\(Int(workoutManager.heartRate))")
-                        .font(.title)
+                        .font(.title2)
                         .fontWeight(.semibold)
                     Text("BPM")
-                        .font(.caption)
+                        .font(.caption2)
                         .foregroundColor(.secondary)
                 }
-                .padding(.vertical, 8)
+                .padding(.vertical, 4)
             }
             
             // Status indicator
@@ -44,43 +46,57 @@ struct ContentView: View {
                     .fill(workoutManager.isActive ? Color.green : Color.gray)
                     .frame(width: 8, height: 8)
                 Text(workoutManager.isActive ? "Активна" : "Ожидание")
-                    .font(.caption)
+                    .font(.caption2)
                     .foregroundColor(.secondary)
             }
             
-            // Authorization status warning with button to open Health app
-            if workoutManager.authorizationStatus == .sharingDenied {
+            // Permission hint - show when no HR data received yet
+            if showPermissionHint && workoutManager.heartRate == 0 {
                 VStack(spacing: 6) {
-                    Image(systemName: "exclamationmark.triangle.fill")
-                        .foregroundColor(.orange)
-                    Text("Нет доступа к данным")
+                    Text("Разрешите доступ к данным о здоровье")
                         .font(.caption2)
                         .foregroundColor(.orange)
+                        .multilineTextAlignment(.center)
                     
                     Button(action: {
-                        // Try to open Health app on Watch
-                        if let url = URL(string: "x-apple-health://") {
-                            WKExtension.shared().openSystemURL(url)
-                        }
+                        workoutManager.checkAndRequestAuthorization()
+                        hasRequestedPermission = true
                     }) {
                         HStack(spacing: 4) {
                             Image(systemName: "heart.fill")
                                 .font(.caption2)
-                            Text("Открыть Здоровье")
+                            Text("Дать разрешение")
                                 .font(.caption2)
                         }
                     }
-                    .buttonStyle(.bordered)
+                    .buttonStyle(.borderedProminent)
                     .tint(.green)
+                    
+                    if hasRequestedPermission {
+                        Button(action: {
+                            if let url = URL(string: "x-apple-health://") {
+                                WKExtension.shared().openSystemURL(url)
+                            }
+                        }) {
+                            Text("Открыть Здоровье")
+                                .font(.caption2)
+                        }
+                        .buttonStyle(.bordered)
+                        .tint(.blue)
+                    }
                 }
-                .padding(.top, 8)
+                .padding(.top, 4)
             }
         }
-        .padding()
+        .padding(.horizontal, 8)
         .onAppear {
-            // Check and request authorization every time app appears
             print("[ContentView] App appeared, checking authorization")
             workoutManager.checkAndRequestAuthorization()
+        }
+        .onChange(of: workoutManager.heartRate) { newValue in
+            if newValue > 0 {
+                showPermissionHint = false
+            }
         }
     }
 }
