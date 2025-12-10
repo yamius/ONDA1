@@ -4,20 +4,23 @@
 
 ### Структура
 ```
-ios/
+ios/App/
 ├── App/
-│   ├── App/
-│   │   ├── AppDelegate.swift
-│   │   ├── ViewController.swift
-│   │   ├── OndaWatchPlugin.swift    # Capacitor плагин для Watch
-│   │   └── Info.plist
-│   └── App.xcodeproj
-├── OndaWatch Watch App/              # Apple Watch приложение
-│   ├── OndaWatchApp.swift            # Точка входа
-│   ├── ContentView.swift             # UI часов
-│   ├── WorkoutManager.swift          # Тренировка + HR + Extended Session
-│   └── NotificationManager.swift     # Локальные уведомления
-└── Podfile
+│   ├── AppDelegate.swift
+│   ├── ViewController.swift
+│   ├── OndaWatchPlugin.swift        # Capacitor плагин для Watch
+│   └── Info.plist
+├── App.xcodeproj/
+├── App.xcworkspace/
+├── OndaWatch Watch App/             # Apple Watch приложение
+│   ├── OndaWatchApp.swift           # Точка входа
+│   ├── ContentView.swift            # UI часов (2 кнопки разрешений)
+│   ├── WorkoutManager.swift         # HKWorkoutSession + Extended Runtime
+│   ├── NotificationManager.swift    # Локальные уведомления
+│   └── Assets.xcassets/
+├── OndaWatch-Watch-App-Info.plist
+├── Podfile
+└── Podfile.lock
 ```
 
 ### Ключевые компоненты
@@ -27,7 +30,7 @@ ios/
 | `OndaWatchPlugin.swift` | Capacitor плагин для связи с Watch |
 | `WorkoutManager.swift` | HKWorkoutSession + WCSession + Extended Runtime |
 | `NotificationManager.swift` | Локальные уведомления для пробуждения app |
-| `ContentView.swift` | UI часов с кнопкой разрешения HealthKit |
+| `ContentView.swift` | UI часов с 2 кнопками: "Дать разрешение" + "Открыть Здоровье" |
 
 ### Поток данных HR (Apple Watch → React)
 1. Watch: `WorkoutManager` запускает HKWorkoutSession
