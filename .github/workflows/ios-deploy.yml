@@ -84,42 +84,8 @@ jobs:
           gem install cocoapods
           pod --version
 
-      - name: Sync Capacitor with retry
-        run: |
-          max_attempts=3
-          attempt=1
-          
-          # First, copy web assets (this always works)
-          npx cap copy ios
-          
-          # Then try pod install with retries
-          while [ $attempt -le $max_attempts ]; do
-            echo "=== Attempt $attempt/$max_attempts: Running pod install ==="
-            cd ios/App
-            
-            # Clear CocoaPods cache on retry
-            if [ $attempt -gt 1 ]; then
-              echo "Clearing CocoaPods cache..."
-              pod cache clean --all 2>/dev/null || true
-              rm -rf ~/Library/Caches/CocoaPods 2>/dev/null || true
-            fi
-            
-            if pod install --repo-update; then
-              echo "Pod install succeeded!"
-              cd ../..
-              break
-            else
-              echo "Pod install failed, waiting 30 seconds before retry..."
-              cd ../..
-              sleep 30
-              attempt=$((attempt + 1))
-            fi
-          done
-          
-          if [ $attempt -gt $max_attempts ]; then
-            echo "Pod install failed after $max_attempts attempts"
-            exit 1
-          fi
+      - name: Sync Capacitor
+        run: npx cap sync ios
 
       - name: Create App Store Connect API Key
         run: |

@@ -43,7 +43,7 @@ useEffect(() => {
 }, [...]);
 ```
 **Расчёты stress/energy/breathing идут АВТОМАТИЧЕСКИ при открытии приложения на iOS!**
-Кнопка "Connect HealthKit" в ConnectionModal — для ручного запроса разрешений (режим realtime).
+Кнопки "Real-time/Direct/Workout" — для ручного режима, не обязательны.
 
 ### Vitals Calculation Flow
 ```
