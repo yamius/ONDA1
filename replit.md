@@ -19,10 +19,18 @@
 
 ## Важные файлы для контекста ИИ
 - `.assistant/PHILOSOPHY.md` — правила работы над проектом
-- `.assistant/AI_INSTRUCTIONS.md` — быстрый старт сессии
+- `.assistant/AI_INSTRUCTIONS.md` — **КЛЮЧЕВЫЕ ПАТТЕРНЫ** + быстрый старт сессии
 - `.assistant/MODULE_FRONTEND.md` — архитектура React PWA
 - `.assistant/MODULE_NATIVE.md` — архитектура iOS/Android
 - `.assistant/MODULE_SUPABASE.md` — архитектура бэкенда
+
+## КРИТИЧЕСКИ ВАЖНО (читай .assistant/AI_INSTRUCTIONS.md!)
+
+1. **Watch Auto-Management**: Workout на часах стартует АВТОМАТИЧЕСКИ при открытии приложения (`setAutoManaged(true)` в OndaLevel1)
+2. **Vitals расчёт**: stress/energy/breathing считаются каждые 2 сек из HR буфера (мин. 10 точек)
+3. **Watch Permission UI**: Обе кнопки ("Дать разрешение" + "Открыть Здоровье") видны пока heartRate == 0
+4. **Watch Notifications**: iPhone → transferUserInfo → Watch уведомление → workout
+5. **Extended Runtime**: WKExtendedRuntimeSession до 1 часа активности
 
 ---
 
