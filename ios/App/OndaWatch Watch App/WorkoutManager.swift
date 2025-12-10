@@ -12,6 +12,7 @@ class WorkoutManager: NSObject, ObservableObject {
     
     @Published var heartRate: Double = 0
     @Published var isActive = false
+    @Published var authorizationStatus: HKAuthorizationStatus = .notDetermined
     
     override init() {
         super.init()
@@ -25,6 +26,25 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
+    /// Check current authorization status and request if needed
+    func checkAndRequestAuthorization() {
+        guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
+            print("[WorkoutManager] Heart rate type not available")
+            return
+        }
+        
+        let currentStatus = healthStore.authorizationStatus(for: heartRateType)
+        print("[WorkoutManager] Current authorization status: \(currentStatus.rawValue)")
+        
+        DispatchQueue.main.async {
+            self.authorizationStatus = currentStatus
+        }
+        
+        // Always request authorization - iOS will show dialog only if not determined
+        // If already denied, user must go to Settings manually
+        requestAuthorization()
+    }
+    
     func requestAuthorization() {
         let typesToShare: Set<HKSampleType> = [HKObjectType.workoutType()]
         let typesToRead: Set<HKObjectType> = [
@@ -32,10 +52,31 @@ class WorkoutManager: NSObject, ObservableObject {
         ]
         
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
-            if success {
-                print("[WorkoutManager] HealthKit authorized")
+            DispatchQueue.main.async {
+                if success {
+                    print("[WorkoutManager] HealthKit authorization requested successfully")
+                    // Update status after request
+                    if let hrType = HKObjectType.quantityType(forIdentifier: .heartRate) {
+                        self.authorizationStatus = self.healthStore.authorizationStatus(for: hrType)
+                        print("[WorkoutManager] Updated status: \(self.authorizationStatus.rawValue)")
+                    }
+                } else {
+                    print("[WorkoutManager] HealthKit authorization failed: \(error?.localizedDescription ?? "unknown")")
+                }
             }
         }
+    }
+    
+    /// Returns true if we have authorization to read heart rate
+    var isAuthorized: Bool {
+        guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
+            return false
+        }
+        let status = healthStore.authorizationStatus(for: heartRateType)
+        // For read permissions, .sharingAuthorized means we requested and user didn't deny
+        // Note: iOS doesn't tell us if READ was granted, only if WRITE was
+        // So we check if not .notDetermined (meaning we've asked)
+        return status != .notDetermined
     }
     
     func startWorkout() {
