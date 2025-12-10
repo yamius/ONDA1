@@ -28,7 +28,9 @@
     "login": "登录",
     "settings": "设置",
     "profile": "个人资料",
-    "connection": "连接"
+    "connection": "连接",
+    "watch_hint_title": "Apple Watch",
+    "watch_hint_text": "在手表上的ONDA应用中授权健康数据访问"
   },
   "chapters": {
     "chapter_1": "身体",

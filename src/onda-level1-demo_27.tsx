@@ -2926,10 +2926,10 @@ const OndaLevel1 = () => {
             <div className="bg-orange-500/10 border border-orange-500/30 rounded-2xl p-4 text-center">
               <div className="flex items-center justify-center gap-2 text-orange-400 mb-2">
                 <Watch className="w-5 h-5" />
-                <span className="font-medium">Apple Watch</span>
+                <span className="font-medium">{t('nav.watch_hint_title')}</span>
               </div>
               <p className="text-white/70 text-sm">
-                В приложении ONDA на своих часах получите разрешение на использование данных о здоровье
+                {t('nav.watch_hint_text')}
               </p>
             </div>
           </div>

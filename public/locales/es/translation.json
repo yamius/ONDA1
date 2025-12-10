@@ -28,7 +28,9 @@
     "login": "Iniciar Sesión",
     "settings": "Configuración",
     "profile": "Perfil",
-    "connection": "Conexión"
+    "connection": "Conexión",
+    "watch_hint_title": "Apple Watch",
+    "watch_hint_text": "Concede acceso a los datos de salud en la app ONDA de tu reloj"
   },
   "chapters": {
     "chapter_1": "Cuerpo",
