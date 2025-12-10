@@ -7,6 +7,7 @@
 
 import SwiftUI
 import HealthKit
+import WatchKit
 
 struct ContentView: View {
     @StateObject private var workoutManager = WorkoutManager.shared
@@ -47,17 +48,30 @@ struct ContentView: View {
                     .foregroundColor(.secondary)
             }
             
-            // Authorization status warning
+            // Authorization status warning with button to open Health app
             if workoutManager.authorizationStatus == .sharingDenied {
-                VStack(spacing: 4) {
+                VStack(spacing: 6) {
                     Image(systemName: "exclamationmark.triangle.fill")
                         .foregroundColor(.orange)
                     Text("Нет доступа к данным")
                         .font(.caption2)
                         .foregroundColor(.orange)
-                    Text("Настройки → Здоровье")
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
+                    
+                    Button(action: {
+                        // Try to open Health app on Watch
+                        if let url = URL(string: "x-apple-health://") {
+                            WKExtension.shared().openSystemURL(url)
+                        }
+                    }) {
+                        HStack(spacing: 4) {
+                            Image(systemName: "heart.fill")
+                                .font(.caption2)
+                            Text("Открыть Здоровье")
+                                .font(.caption2)
+                        }
+                    }
+                    .buttonStyle(.bordered)
+                    .tint(.green)
                 }
                 .padding(.top, 8)
             }
