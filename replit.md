@@ -34,6 +34,14 @@ The application is a React-based Progressive Web App (PWA) with native mobile su
 
 Preferred communication style: Simple, everyday language.
 
+**Development Environment Constraints:**
+- User works on **MacinCloud** (remote Mac) — NO local Mac available
+- **Cannot connect iPhone to Mac** for debugging (no USB access)
+- **No Safari Web Inspector** access for iOS console logs
+- Workflow: **Replit → GitHub → GitHub Actions → TestFlight** only
+- All iOS testing done via TestFlight builds on physical device
+- Russian language preferred for UI and communication
+
 # System Architecture
 
 ## Frontend Architecture

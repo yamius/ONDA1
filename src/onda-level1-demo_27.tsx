@@ -2927,6 +2927,28 @@ const OndaLevel1 = () => {
 
       <div className="max-w-6xl mx-auto">
 
+        {/* ВРЕМЕННЫЙ ОТЛАДОЧНЫЙ БЛОК - убрать после тестирования */}
+        {platform === 'ios' && (
+          <div className="mb-4 px-4">
+            <div className="bg-gray-800/80 border border-gray-600 rounded-lg p-3 text-xs font-mono">
+              <div className="text-yellow-400 mb-1">Watch Debug:</div>
+              <div className="text-gray-300">
+                supported: {String(watchHeartRate.watchStatus?.supported ?? 'null')} | 
+                paired: {String(watchHeartRate.watchStatus?.paired ?? 'null')} | 
+                reachable: {String(watchHeartRate.watchStatus?.reachable ?? 'null')}
+              </div>
+              <div className="text-gray-300">
+                autoManaged: {String(watchHeartRate.autoManaged)} | 
+                isMonitoring: {String(watchHeartRate.isMonitoring)} | 
+                HR: {watchHeartRate.heartRate ?? '--'}
+              </div>
+              {watchHeartRate.error && (
+                <div className="text-red-400 mt-1">Error: {watchHeartRate.error}</div>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* Подсказка для разрешения Watch */}
         {platform === 'ios' && watchHeartRate.watchStatus?.paired && !watchHeartRate.heartRate && (
           <div className="mb-6 px-4">
