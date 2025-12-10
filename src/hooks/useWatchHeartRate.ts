@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { Capacitor } from '@capacitor/core';
+import { App } from '@capacitor/app';
 import OndaWatch, { WatchStatus, HeartRateEvent, DebugLogEvent } from '../plugins/ondaWatch';
 import type { PluginListenerHandle } from '@capacitor/core';
 
@@ -13,6 +14,8 @@ interface UseWatchHeartRateReturn {
   lastUpdated: Date | null;
   isMonitoring: boolean;
   debugLog: string[];
+  autoManaged: boolean;
+  setAutoManaged: (value: boolean) => void;
 }
 
 export function useWatchHeartRate(): UseWatchHeartRateReturn {
@@ -22,7 +25,9 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   const [isMonitoring, setIsMonitoring] = useState(false);
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
   const [debugLog, setDebugLog] = useState<string[]>([]);
+  const [autoManaged, setAutoManaged] = useState(false);
   const heartbeatIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const isAutoManagedRef = useRef(false);
 
   const isConnected = watchStatus?.reachable === true;
   
@@ -174,6 +179,88 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     }
   }, []);
 
+  // Keep ref in sync with state
+  useEffect(() => {
+    isAutoManagedRef.current = autoManaged;
+  }, [autoManaged]);
+
+  // Auto-manage workout based on app lifecycle
+  useEffect(() => {
+    const platform = Capacitor.getPlatform();
+    if (platform !== 'ios') return;
+    if (!autoManaged) return;
+
+    const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
+    if (!isPluginAvailable) return;
+
+    let appStateListener: PluginListenerHandle | null = null;
+    let visibilityHandler: (() => void) | null = null;
+
+    const handleAppActive = async () => {
+      if (!isAutoManagedRef.current) return;
+      console.log('[Watch] App became active - starting workout');
+      try {
+        await OndaWatch.startRealtime();
+        setIsMonitoring(true);
+        setError(null);
+      } catch (err) {
+        console.error('[Watch] Auto-start error:', err);
+      }
+    };
+
+    const handleAppInactive = async () => {
+      console.log('[Watch] App became inactive - stopping workout');
+      try {
+        await OndaWatch.stopRealtime();
+        setIsMonitoring(false);
+      } catch (err) {
+        console.error('[Watch] Auto-stop error:', err);
+      }
+    };
+
+    const setupLifecycleListeners = async () => {
+      // Capacitor App lifecycle (iOS/Android native)
+      try {
+        appStateListener = await App.addListener('appStateChange', ({ isActive }) => {
+          console.log('[Watch] App state changed:', isActive ? 'active' : 'inactive');
+          if (isActive) {
+            handleAppActive();
+          } else {
+            handleAppInactive();
+          }
+        });
+      } catch (err) {
+        console.log('[Watch] App listener not available, using visibility API');
+      }
+
+      // Web visibility API (fallback + PWA support)
+      visibilityHandler = () => {
+        if (document.visibilityState === 'visible') {
+          handleAppActive();
+        } else {
+          handleAppInactive();
+        }
+      };
+      document.addEventListener('visibilitychange', visibilityHandler);
+
+      // Start immediately if app is currently visible
+      if (document.visibilityState === 'visible') {
+        handleAppActive();
+      }
+    };
+
+    setupLifecycleListeners();
+
+    return () => {
+      appStateListener?.remove();
+      if (visibilityHandler) {
+        document.removeEventListener('visibilitychange', visibilityHandler);
+      }
+      // Stop workout when autoManaged is disabled
+      handleAppInactive();
+    };
+  }, [autoManaged]);
+
   return {
     heartRate,
     isConnected,
@@ -183,6 +270,8 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     error,
     lastUpdated,
     isMonitoring,
-    debugLog
+    debugLog,
+    autoManaged,
+    setAutoManaged
   };
 }
