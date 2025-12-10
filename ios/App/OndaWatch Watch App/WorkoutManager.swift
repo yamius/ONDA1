@@ -1,6 +1,7 @@
 import Foundation
 import HealthKit
 import WatchConnectivity
+import WatchKit
 import Combine
 
 class WorkoutManager: NSObject, ObservableObject {
@@ -9,6 +10,7 @@ class WorkoutManager: NSObject, ObservableObject {
     private let healthStore = HKHealthStore()
     private var session: HKWorkoutSession?
     private var builder: HKLiveWorkoutBuilder?
+    private var extendedSession: WKExtendedRuntimeSession?
     
     @Published var heartRate: Double = 0
     @Published var isActive = false
@@ -17,6 +19,7 @@ class WorkoutManager: NSObject, ObservableObject {
     override init() {
         super.init()
         setupWatchConnectivity()
+        startExtendedSession()
     }
     
     private func setupWatchConnectivity() {
@@ -26,7 +29,24 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
-    /// Check current authorization status and request if needed
+    func startExtendedSession() {
+        guard extendedSession == nil || extendedSession?.state == .invalid else {
+            print("[WorkoutManager] Extended session already active")
+            return
+        }
+        
+        extendedSession = WKExtendedRuntimeSession()
+        extendedSession?.delegate = self
+        extendedSession?.start()
+        print("[WorkoutManager] Starting extended runtime session")
+    }
+    
+    func stopExtendedSession() {
+        extendedSession?.invalidate()
+        extendedSession = nil
+        print("[WorkoutManager] Stopped extended session")
+    }
+    
     func checkAndRequestAuthorization() {
         guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
             print("[WorkoutManager] Heart rate type not available")
@@ -40,8 +60,6 @@ class WorkoutManager: NSObject, ObservableObject {
             self.authorizationStatus = currentStatus
         }
         
-        // Always request authorization - iOS will show dialog only if not determined
-        // If already denied, user must go to Settings manually
         requestAuthorization()
     }
     
@@ -55,7 +73,6 @@ class WorkoutManager: NSObject, ObservableObject {
             DispatchQueue.main.async {
                 if success {
                     print("[WorkoutManager] HealthKit authorization requested successfully")
-                    // Update status after request
                     if let hrType = HKObjectType.quantityType(forIdentifier: .heartRate) {
                         self.authorizationStatus = self.healthStore.authorizationStatus(for: hrType)
                         print("[WorkoutManager] Updated status: \(self.authorizationStatus.rawValue)")
@@ -67,15 +84,11 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
-    /// Returns true if we have authorization to read heart rate
     var isAuthorized: Bool {
         guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
             return false
         }
         let status = healthStore.authorizationStatus(for: heartRateType)
-        // For read permissions, .sharingAuthorized means we requested and user didn't deny
-        // Note: iOS doesn't tell us if READ was granted, only if WRITE was
-        // So we check if not .notDetermined (meaning we've asked)
         return status != .notDetermined
     }
     
@@ -116,6 +129,31 @@ class WorkoutManager: NSObject, ObservableObject {
     }
 }
 
+extension WorkoutManager: WKExtendedRuntimeSessionDelegate {
+    func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
+        print("[WorkoutManager] Extended runtime session started")
+    }
+    
+    func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
+        print("[WorkoutManager] Extended session will expire, restarting...")
+        startExtendedSession()
+    }
+    
+    func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession,
+                                didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason,
+                                error: Error?) {
+        print("[WorkoutManager] Extended session invalidated: \(reason.rawValue), error: \(error?.localizedDescription ?? "none")")
+        
+        if reason == .sessionInProgress {
+            return
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.startExtendedSession()
+        }
+    }
+}
+
 extension WorkoutManager: HKWorkoutSessionDelegate {
     func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState, from fromState: HKWorkoutSessionState, date: Date) {
         print("[WorkoutManager] State: \(toState.rawValue)")
@@ -152,19 +190,16 @@ extension WorkoutManager: WCSessionDelegate {
         print("[WorkoutManager] WCSession activated: \(state.rawValue)")
     }
     
-    // Handle realtime messages (when Watch app is in foreground)
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         print("[WorkoutManager] Received message: \(message)")
         handleCommand(message)
     }
     
-    // Handle queued messages (wakes Watch app from background!)
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String: Any] = [:]) {
         print("[WorkoutManager] Received userInfo (background wake): \(userInfo)")
         handleCommand(userInfo)
     }
     
-    // Unified command handler - supports both "type" and "command" keys
     private func handleCommand(_ data: [String: Any]) {
         let command = (data["type"] as? String) ?? (data["command"] as? String)
         
@@ -186,7 +221,6 @@ extension WorkoutManager: WCSessionDelegate {
             case "stop":
                 self.stopWorkout()
             case "heartbeat":
-                // Keep-alive ping, just log
                 print("[WorkoutManager] Heartbeat received")
             default:
                 print("[WorkoutManager] Unknown command: \(cmd)")
