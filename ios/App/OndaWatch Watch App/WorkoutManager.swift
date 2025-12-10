@@ -214,7 +214,15 @@ extension WorkoutManager: WCSessionDelegate {
             switch cmd {
             case "start":
                 if !self.isActive {
-                    self.startWorkout()
+                    let appState = WKApplication.shared().applicationState
+                    print("[WorkoutManager] App state: \(appState.rawValue)")
+                    
+                    if appState == .active {
+                        self.startWorkout()
+                    } else {
+                        print("[WorkoutManager] App not active, showing notification")
+                        NotificationManager.shared.showOpenAppNotification()
+                    }
                 } else {
                     print("[WorkoutManager] Workout already active")
                 }

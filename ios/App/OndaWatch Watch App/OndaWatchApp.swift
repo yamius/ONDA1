@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct OndaWatch_Watch_AppApp: App {
+    @StateObject private var workoutManager = WorkoutManager.shared
+    
+    init() {
+        _ = NotificationManager.shared
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(workoutManager)
         }
     }
 }
