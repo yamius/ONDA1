@@ -112,7 +112,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
           <div className="mt-6 sm:mt-8">
             <div className="relative mb-3">
               <div className="absolute -top-3 right-4 bg-yellow-400 text-indigo-900 text-xs font-bold px-3 py-1 rounded-full z-10">
-                {t('subscription.trial_badge', '7-Day Free Trial')}
+                {t('subscription.trial_badge_yearly', '14-Day Free Trial')}
               </div>
               <button
                 onClick={() => setSelectedPlan('yearly')}
@@ -125,27 +125,32 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
               >
                 <p className="font-bold text-white mb-1 text-sm sm:text-base">{t('subscription.yearly', 'Yearly')}</p>
                 <div className="flex items-baseline gap-2 flex-wrap">
-                  <span className="text-white/50 line-through text-xs sm:text-sm">199.99 EUR</span>
-                  <span className="text-white font-bold text-sm sm:text-base">49.99 EUR/</span>
-                  <span className="text-white/80 text-xs sm:text-sm">4.17 EUR/mo. yr.</span>
+                  <span className="text-white/50 line-through text-xs sm:text-sm">129.99 USD</span>
+                  <span className="text-white font-bold text-sm sm:text-base">64.99 USD/</span>
+                  <span className="text-white/80 text-xs sm:text-sm">5.42 USD/mo. yr.</span>
                 </div>
               </button>
             </div>
 
-            <button
-              onClick={() => setSelectedPlan('monthly')}
-              className={`w-full text-left rounded-xl p-3 sm:p-4 mb-4 sm:mb-6 transition-all ${
-                selectedPlan === 'monthly'
-                  ? 'border-2 border-violet-400 bg-violet-900/30'
-                  : 'border border-white/20 bg-transparent hover:bg-white/5'
-              }`}
-              data-testid="button-plan-monthly"
-            >
-              <div className="flex items-center justify-between gap-2">
-                <p className="font-bold text-white text-sm sm:text-base">{t('subscription.monthly', 'Monthly')}</p>
-                <p className="text-white text-sm sm:text-base">9.99 EUR/mo.</p>
+            <div className="relative mb-4 sm:mb-6">
+              <div className="absolute -top-3 right-4 bg-yellow-400 text-indigo-900 text-xs font-bold px-3 py-1 rounded-full z-10">
+                {t('subscription.trial_badge', '7-Day Free Trial')}
               </div>
-            </button>
+              <button
+                onClick={() => setSelectedPlan('monthly')}
+                className={`w-full text-left rounded-xl p-3 sm:p-4 transition-all ${
+                  selectedPlan === 'monthly'
+                    ? 'border-2 border-violet-400 bg-violet-900/30'
+                    : 'border border-white/20 bg-transparent hover:bg-white/5'
+                }`}
+                data-testid="button-plan-monthly"
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <p className="font-bold text-white text-sm sm:text-base">{t('subscription.monthly', 'Monthly')}</p>
+                  <p className="text-white text-sm sm:text-base">14.99 USD/mo.</p>
+                </div>
+              </button>
+            </div>
 
             <button
               onClick={() => {
@@ -155,13 +160,15 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
               data-testid="button-start-trial"
             >
               {selectedPlan === 'yearly' 
-                ? t('subscription.try_free', 'Try 7 Days Free')
-                : t('subscription.subscribe', 'Subscribe')
+                ? t('subscription.try_free_14', 'Try 14 Days Free')
+                : t('subscription.try_free', 'Try 7 Days Free')
               }
             </button>
 
             <p className="text-white/50 text-xs text-center mt-2 pb-1 leading-relaxed">
-              {t('subscription.disclaimer', 'Totally free for 7 days, then 4.17 EUR/month, billed annually at 49.99 EUR/year. Cancel anytime.')}
+              {selectedPlan === 'yearly'
+                ? t('subscription.disclaimer_yearly', 'Totally free for 14 days, then 5.42 USD/month, billed annually at 64.99 USD/year. Cancel anytime.')
+                : t('subscription.disclaimer_monthly', 'Totally free for 7 days, then 14.99 USD/month. Cancel anytime.')}
             </p>
           </div>
         </div>
