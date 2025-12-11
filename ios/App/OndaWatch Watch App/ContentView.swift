@@ -91,8 +91,12 @@ struct ContentView: View {
         .padding(.horizontal, 8)
         .onAppear {
             print("[ContentView] App appeared")
-            // НЕ вызываем checkAndRequestAuthorization автоматически
-            // чтобы диалог разрешения не проскакивал
+            // Если разрешение уже есть (heartRate > 0 раньше было), автоматически запускаем workout
+            // Если нет - показываем кнопку "Дать разрешение"
+            if workoutManager.isAuthorized && !workoutManager.isActive {
+                print("[ContentView] Already authorized, starting workout automatically")
+                workoutManager.startWorkout()
+            }
         }
         .onChange(of: workoutManager.heartRate) { newValue in
             if newValue > 0 {

@@ -37,6 +37,9 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     console.log('[Watch]', msg);
   }, []);
 
+  // Track previous reachable state for auto-start when watch becomes reachable
+  const prevReachableRef = useRef<boolean | undefined>(undefined);
+
   useEffect(() => {
     const checkStatusAndStart = async () => {
       const platform = Capacitor.getPlatform();
@@ -58,6 +61,22 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       try {
         const status = await OndaWatch.getStatus();
         addLog(`Status: paired=${status.paired}, app=${status.watchAppInstalled}, reach=${status.reachable}`);
+        
+        // Auto-start when watch becomes reachable (was not reachable, now is)
+        const wasNotReachable = prevReachableRef.current === false;
+        const nowReachable = status.reachable === true;
+        
+        if (wasNotReachable && nowReachable && isAutoManagedRef.current && !isMonitoring) {
+          addLog('Watch became reachable - auto-starting workout');
+          try {
+            await OndaWatch.startRealtime();
+            setIsMonitoring(true);
+          } catch (err) {
+            addLog(`Auto-start on reachable failed: ${err}`);
+          }
+        }
+        
+        prevReachableRef.current = status.reachable;
         setWatchStatus(status);
         
         if (!status.paired) {
@@ -78,7 +97,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
 
     checkStatusAndStart();
     
-    const interval = setInterval(checkStatusAndStart, 10000);
+    const interval = setInterval(checkStatusAndStart, 5000); // Check more frequently
     return () => clearInterval(interval);
   }, [isMonitoring, addLog]);
 
