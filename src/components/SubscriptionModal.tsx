@@ -40,7 +40,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
           onClick={onClose}
           className="absolute left-4 z-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors w-10 h-10"
           style={{
-            top: isIOS ? 'calc(env(safe-area-inset-top) + 8px)' : '12px',
+            top: isIOS ? 'calc(env(safe-area-inset-top) + 2px)' : '12px',
           }}
           data-testid="button-close-subscription"
         >
