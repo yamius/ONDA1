@@ -132,8 +132,23 @@ class WorkoutManager: NSObject, ObservableObject {
     }
     
     private func sendHeartRateToPhone(_ hr: Double) {
-        guard WCSession.default.isReachable else { return }
-        WCSession.default.sendMessage(["heartRate": hr], replyHandler: nil)
+        let message: [String: Any] = [
+            "type": "heartRate",
+            "value": hr,
+            "ts": Date().timeIntervalSince1970
+        ]
+        
+        if WCSession.default.isReachable {
+            WCSession.default.sendMessage(message, replyHandler: nil) { error in
+                print("[WorkoutManager] sendMessage error: \(error.localizedDescription)")
+                // Fallback to transferUserInfo
+                WCSession.default.transferUserInfo(message)
+            }
+        } else {
+            // When not reachable, use transferUserInfo for reliable delivery
+            WCSession.default.transferUserInfo(message)
+            print("[WorkoutManager] HR sent via transferUserInfo")
+        }
     }
 }
 
