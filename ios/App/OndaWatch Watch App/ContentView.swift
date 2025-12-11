@@ -12,6 +12,7 @@ import WatchKit
 enum PermissionState {
     case checking
     case needsPermission
+    case waitingForHR
     case granted
     case denied
 }
@@ -19,6 +20,8 @@ enum PermissionState {
 struct ContentView: View {
     @StateObject private var workoutManager = WorkoutManager.shared
     @State private var permissionState: PermissionState = .checking
+    @State private var waitingTimer: Timer?
+    @State private var waitingSeconds: Int = 0
     
     var body: some View {
         Group {
@@ -27,6 +30,8 @@ struct ContentView: View {
                 checkingView
             case .needsPermission:
                 permissionRequestView
+            case .waitingForHR:
+                waitingForHRView
             case .granted:
                 mainView
             case .denied:
@@ -37,9 +42,19 @@ struct ContentView: View {
             checkInitialPermissionState()
         }
         .onChange(of: workoutManager.heartRate) { newValue in
-            if newValue > 0 && permissionState != .granted {
-                permissionState = .granted
+            if newValue > 0 {
+                // HR received - permission is working
+                waitingTimer?.invalidate()
+                waitingTimer = nil
+                if permissionState != .granted {
+                    UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
+                    permissionState = .granted
+                }
             }
+        }
+        .onDisappear {
+            waitingTimer?.invalidate()
+            waitingTimer = nil
         }
     }
     
@@ -85,6 +100,25 @@ struct ContentView: View {
             }
             .buttonStyle(.borderedProminent)
             .tint(.green)
+        }
+        .padding(.horizontal, 8)
+    }
+    
+    private var waitingForHRView: some View {
+        VStack(spacing: 10) {
+            Image(systemName: "heart.circle")
+                .font(.system(size: 40))
+                .foregroundColor(.cyan)
+            
+            Text("Ожидание пульса...")
+                .font(.headline)
+            
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle())
+            
+            Text("\(5 - waitingSeconds) сек")
+                .font(.caption2)
+                .foregroundColor(.secondary)
         }
         .padding(.horizontal, 8)
     }
@@ -147,10 +181,21 @@ struct ContentView: View {
             Text("Доступ запрещён")
                 .font(.headline)
             
-            Text("Откройте Настройки > Конфиденциальность > Здоровье")
+            Text("Откройте Настройки > Здоровье > ONDA")
                 .font(.caption2)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
+            
+            Button(action: openHealthSettings) {
+                HStack(spacing: 4) {
+                    Image(systemName: "gear")
+                        .font(.caption)
+                    Text("Настройки")
+                        .font(.caption)
+                }
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.blue)
             
             Button(action: {
                 permissionState = .needsPermission
@@ -159,7 +204,6 @@ struct ContentView: View {
                     .font(.caption)
             }
             .buttonStyle(.bordered)
-            .tint(.blue)
         }
         .padding(.horizontal, 8)
     }
@@ -167,7 +211,7 @@ struct ContentView: View {
     // MARK: - Logic
     
     private func checkInitialPermissionState() {
-        // Check if we already have heart rate data (means permission was granted before)
+        // Check if we already have heart rate data
         if workoutManager.heartRate > 0 {
             permissionState = .granted
             return
@@ -190,14 +234,50 @@ struct ContentView: View {
         workoutManager.requestAuthorizationWithCompletion { success in
             DispatchQueue.main.async {
                 if success {
-                    print("[ContentView] Permission granted, moving to main view")
-                    UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
-                    permissionState = .granted
+                    print("[ContentView] Dialog shown, starting workout and waiting for HR...")
+                    // Start workout immediately
+                    workoutManager.startWorkout()
+                    // Move to waiting state
+                    permissionState = .waitingForHR
+                    waitingSeconds = 0
+                    // Start timer to check if HR arrives
+                    startWaitingTimer()
                 } else {
-                    print("[ContentView] Permission denied or error")
+                    print("[ContentView] Permission request failed")
                     permissionState = .denied
                 }
             }
+        }
+    }
+    
+    private func startWaitingTimer() {
+        waitingTimer?.invalidate()
+        waitingTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+            DispatchQueue.main.async {
+                waitingSeconds += 1
+                print("[ContentView] Waiting for HR: \(waitingSeconds)s, current HR: \(workoutManager.heartRate)")
+                
+                if workoutManager.heartRate > 0 {
+                    // HR received - success
+                    timer.invalidate()
+                    waitingTimer = nil
+                    UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
+                    permissionState = .granted
+                } else if waitingSeconds >= 5 {
+                    // Timeout - no HR received, permission likely denied
+                    timer.invalidate()
+                    waitingTimer = nil
+                    print("[ContentView] No HR after 5 seconds, assuming permission denied")
+                    permissionState = .denied
+                }
+            }
+        }
+    }
+    
+    private func openHealthSettings() {
+        // Open Health app settings for this app
+        if let url = URL(string: "x-apple-health://") {
+            WKExtension.shared().openSystemURL(url)
         }
     }
 }
