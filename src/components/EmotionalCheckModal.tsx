@@ -248,17 +248,17 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
         <div className="p-4 space-y-4 overflow-y-auto flex-1" style={{ paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}>
           {recordingState === 'idle' && (
-            <div className="text-center space-y-4 sm:space-y-6">
-              <div className="bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-2xl p-6 sm:p-8 border border-indigo-500/30">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 mx-auto mb-3 sm:mb-4 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
-                  <Mic className="w-10 h-10 sm:w-12 sm:h-12 text-white" />
+            <div className="text-center space-y-4">
+              <div className="bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-2xl p-6 border border-indigo-500/30">
+                <div className="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
+                  <Mic className="w-10 h-10 text-white" />
                 </div>
-                <p className="text-white/80 mb-2 text-sm sm:text-base">{t('emotional_check.instruction')}</p>
-                <p className="text-white/60 text-xs sm:text-sm">{t('emotional_check.instruction_detail')}</p>
+                <p className="text-white/80 mb-2 text-base">{t('emotional_check.instruction')}</p>
+                <p className="text-white/60 text-sm">{t('emotional_check.instruction_detail')}</p>
               </div>
               <button
                 onClick={startRecording}
-                className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3 sm:py-4 px-4 sm:px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-sm sm:text-base"
+                className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-base"
               >
                 {t('emotional_check.start_recording')}
               </button>
@@ -266,24 +266,24 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
           )}
 
           {recordingState === 'recording' && (
-            <div className="text-center space-y-4 sm:space-y-6">
+            <div className="text-center space-y-4">
               <div className="relative">
-                <div className="w-24 h-24 sm:w-32 sm:h-32 mx-auto bg-gradient-to-br from-red-500 to-pink-600 rounded-full flex items-center justify-center animate-pulse">
-                  <Mic className="w-12 h-12 sm:w-16 sm:h-16 text-white" />
+                <div className="w-24 h-24 mx-auto bg-gradient-to-br from-red-500 to-pink-600 rounded-full flex items-center justify-center animate-pulse">
+                  <Mic className="w-12 h-12 text-white" />
                 </div>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 sm:w-40 sm:h-40 border-4 border-red-500/30 rounded-full animate-ping" />
+                  <div className="w-32 h-32 border-4 border-red-500/30 rounded-full animate-ping" />
                 </div>
               </div>
-              <div className="text-2xl sm:text-3xl font-bold text-white tabular-nums">
+              <div className="text-2xl font-bold text-white tabular-nums">
                 {formatTime(recordingTime)}
               </div>
-              <p className="text-white/70 text-sm sm:text-base">{t('emotional_check.recording_in_progress')}</p>
+              <p className="text-white/70 text-sm">{t('emotional_check.recording_in_progress')}</p>
               <button
                 onClick={stopRecording}
-                className="w-full bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-semibold py-3 sm:py-4 px-4 sm:px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
+                className="w-full bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
               >
-                <Square className="w-4 h-4 sm:w-5 sm:h-5" />
+                <Square className="w-5 h-5" />
                 {t('emotional_check.stop_recording')}
               </button>
             </div>
@@ -293,41 +293,41 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
             <div className="space-y-4">
               <audio ref={audioRef} src={audioURL} onEnded={() => setIsPlaying(false)} className="hidden" />
 
-              <div className="bg-slate-800/50 rounded-xl p-4 sm:p-6 border border-white/10">
-                <div className="flex items-center justify-between mb-3 sm:mb-4">
-                  <span className="text-white/70 text-xs sm:text-sm">{t('emotional_check.recording_ready')}</span>
-                  <span className="text-white font-semibold text-sm sm:text-base">{formatTime(recordingTime)}</span>
+              <div className="bg-slate-800/50 rounded-xl p-4 border border-white/10">
+                <div className="flex items-center justify-between mb-3 gap-2">
+                  <span className="text-white/70 text-sm">{t('emotional_check.recording_ready')}</span>
+                  <span className="text-white font-semibold text-base">{formatTime(recordingTime)}</span>
                 </div>
 
                 <button
                   onClick={playAudio}
-                  className="w-full bg-slate-700 hover:bg-slate-600 text-white py-2.5 sm:py-3 rounded-lg transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
+                  className="w-full bg-slate-700 hover:bg-slate-600 text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2 text-base"
                 >
                   {isPlaying ? (
                     <>
-                      <Pause className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <Pause className="w-5 h-5" />
                       {t('emotional_check.pause')}
                     </>
                   ) : (
                     <>
-                      <Play className="w-4 h-4 sm:w-5 sm:h-5" />
+                      <Play className="w-5 h-5" />
                       {t('emotional_check.play')}
                     </>
                   )}
                 </button>
               </div>
 
-              <div className="flex gap-2 sm:gap-3">
+              <div className="flex gap-3">
                 <button
                   onClick={reset}
-                  className="flex-1 bg-slate-700 hover:bg-slate-600 text-white py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl transition-all flex items-center justify-center gap-1.5 sm:gap-2 text-xs sm:text-sm"
+                  className="flex-1 bg-slate-700 hover:bg-slate-600 text-white py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2 text-sm"
                 >
-                  <RefreshCw className="w-4 h-4 sm:w-5 sm:h-5" />
+                  <RefreshCw className="w-5 h-5" />
                   {t('emotional_check.record_again')}
                 </button>
                 <button
                   onClick={analyzeVoice}
-                  className="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-2.5 sm:py-3 px-3 sm:px-4 rounded-xl transition-all text-xs sm:text-sm"
+                  className="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3 px-4 rounded-xl transition-all text-base"
                 >
                   {t('emotional_check.analyze')}
                 </button>
@@ -336,16 +336,16 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
           )}
 
           {recordingState === 'analyzing' && (
-            <div className="text-center space-y-4 sm:space-y-6 py-6 sm:py-8">
-              <div className="relative w-24 h-24 sm:w-32 sm:h-32 mx-auto">
+            <div className="text-center space-y-4 py-6">
+              <div className="relative w-24 h-24 mx-auto">
                 <div className="absolute inset-0 border-4 border-indigo-500/30 rounded-full" />
                 <div className="absolute inset-0 border-4 border-t-indigo-500 rounded-full animate-spin" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Volume2 className="w-10 h-10 sm:w-12 sm:h-12 text-indigo-400 animate-pulse" />
+                  <Volume2 className="w-10 h-10 text-indigo-400 animate-pulse" />
                 </div>
               </div>
-              <p className="text-white font-semibold text-sm sm:text-base">{t('emotional_check.analyzing')}</p>
-              <p className="text-white/60 text-xs sm:text-sm">{t('emotional_check.analyzing_detail')}</p>
+              <p className="text-white font-semibold text-base">{t('emotional_check.analyzing')}</p>
+              <p className="text-white/60 text-sm">{t('emotional_check.analyzing_detail')}</p>
             </div>
           )}
 
