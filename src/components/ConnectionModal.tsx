@@ -226,46 +226,6 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       instant
                     </span>
                   </button>
-                  <button
-                    onClick={() => handleHealthKitConnect('direct')}
-                    disabled={hkConnecting}
-                    className={`flex-1 py-3 px-3 rounded-xl font-medium transition-all flex flex-col items-center justify-center gap-1 ${
-                      hkConnecting
-                        ? isLightTheme
-                          ? 'bg-gray-100 text-gray-500'
-                          : 'bg-white/10 text-white/50'
-                        : isLightTheme
-                        ? 'bg-pink-100 hover:bg-pink-200 text-pink-700'
-                        : 'bg-pink-500/20 hover:bg-pink-500/30 text-pink-400'
-                    }`}
-                    data-testid="button-connect-healthkit-direct"
-                  >
-                    <Heart className="w-5 h-5" />
-                    <span className="text-sm">{t('connection.healthkit_direct', 'Direct')}</span>
-                    <span className={`text-[10px] ${isLightTheme ? 'text-pink-600' : 'text-pink-300'}`}>
-                      1.5s
-                    </span>
-                  </button>
-                  <button
-                    onClick={() => handleHealthKitConnect('workout')}
-                    disabled={hkConnecting}
-                    className={`flex-1 py-3 px-3 rounded-xl font-medium transition-all flex flex-col items-center justify-center gap-1 ${
-                      hkConnecting
-                        ? isLightTheme
-                          ? 'bg-gray-100 text-gray-500'
-                          : 'bg-white/10 text-white/50'
-                        : isLightTheme
-                        ? 'bg-orange-100 hover:bg-orange-200 text-orange-700'
-                        : 'bg-orange-500/20 hover:bg-orange-500/30 text-orange-400'
-                    }`}
-                    data-testid="button-connect-healthkit-workout"
-                  >
-                    <Activity className="w-5 h-5" />
-                    <span className="text-sm">{t('connection.healthkit_workout', 'Workout')}</span>
-                    <span className={`text-[10px] ${isLightTheme ? 'text-orange-600' : 'text-orange-300'}`}>
-                      5s
-                    </span>
-                  </button>
                 </div>
               ) : (
                 <div className="flex gap-2 mb-3">
