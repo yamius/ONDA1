@@ -32,11 +32,27 @@ enum WatchStrings {
     static let waiting = NSLocalizedString("Ожидание", comment: "Waiting status")
     static let part = NSLocalizedString("Часть", comment: "Part/Circuit")
     
-    // Parts
+    // Parts - titles
     static let part1 = NSLocalizedString("Часть 1", comment: "Part 1")
     static let part2 = NSLocalizedString("Часть 2", comment: "Part 2")
     static let part3 = NSLocalizedString("Часть 3", comment: "Part 3")
     static let part4 = NSLocalizedString("Часть 4", comment: "Part 4")
+    
+    // Parts - practice names
+    static let practice1 = NSLocalizedString("Я есть", comment: "Practice 1 - I am")
+    static let practice2 = NSLocalizedString("Я чувствую", comment: "Practice 2 - I feel")
+    static let practice3 = NSLocalizedString("Я мыслю", comment: "Practice 3 - I think")
+    static let practice4 = NSLocalizedString("Я осознаю", comment: "Practice 4 - I am aware")
+    
+    static func practiceName(for part: Int) -> String {
+        switch part {
+        case 1: return practice1
+        case 2: return practice2
+        case 3: return practice3
+        case 4: return practice4
+        default: return practice1
+        }
+    }
 }
 
 enum PermissionState {
@@ -151,6 +167,7 @@ struct ContentView: View {
     }
     
     private var mainView: some View {
+        NavigationView {
         VStack(spacing: 8) {
             // Header with ONDA - aligned with system time
             HStack {
@@ -205,20 +222,45 @@ struct ContentView: View {
             
             Spacer(minLength: 4)
             
-            // Part selector - compact
-            Picker(WatchStrings.part, selection: $selectedPart) {
-                Text(WatchStrings.part1).tag(1)
-                Text(WatchStrings.part2).tag(2)
-                Text(WatchStrings.part3).tag(3)
-                Text(WatchStrings.part4).tag(4)
-            }
-            .pickerStyle(.navigationLink)
-            .onChange(of: selectedPart) { newValue in
-                sendPartToPhone(newValue)
+            // Part selector - shows "Часть X" + practice name
+            NavigationLink {
+                List {
+                    ForEach(1...4, id: \.self) { part in
+                        Button(action: {
+                            selectedPart = part
+                            sendPartToPhone(part)
+                        }) {
+                            HStack {
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text("\(WatchStrings.part) \(part)")
+                                        .font(.system(size: 12))
+                                        .foregroundColor(.secondary)
+                                    Text(WatchStrings.practiceName(for: part))
+                                        .font(.system(size: 14, weight: .medium))
+                                }
+                                Spacer()
+                                if selectedPart == part {
+                                    Image(systemName: "checkmark")
+                                        .foregroundColor(.cyan)
+                                }
+                            }
+                        }
+                        .buttonStyle(.plain)
+                    }
+                }
+            } label: {
+                VStack(alignment: .leading, spacing: 1) {
+                    Text("\(WatchStrings.part) \(selectedPart)")
+                        .font(.system(size: 10))
+                        .foregroundColor(.secondary)
+                    Text(WatchStrings.practiceName(for: selectedPart))
+                        .font(.system(size: 13, weight: .medium))
+                }
             }
         }
         .padding(.horizontal, 8)
         .padding(.top, 2)
+        }
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
