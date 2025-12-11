@@ -228,6 +228,9 @@ extension WorkoutManager: WCSessionDelegate {
         DispatchQueue.main.async {
             switch cmd {
             case "start":
+                // Вибрация чтобы пользователь поднял руку
+                WKInterfaceDevice.current().play(.notification)
+                
                 if !self.isActive {
                     let appState = WKApplication.shared().applicationState
                     print("[WorkoutManager] App state: \(appState.rawValue)")
@@ -236,12 +239,16 @@ extension WorkoutManager: WCSessionDelegate {
                         self.startWorkout()
                     } else {
                         print("[WorkoutManager] App not active, showing notification")
+                        // Дополнительная вибрация для привлечения внимания
+                        WKInterfaceDevice.current().play(.start)
                         NotificationManager.shared.showOpenAppNotification()
                     }
                 } else {
                     print("[WorkoutManager] Workout already active")
                 }
             case "stop":
+                // Вибрация при остановке
+                WKInterfaceDevice.current().play(.stop)
                 self.stopWorkout()
             case "heartbeat":
                 print("[WorkoutManager] Heartbeat received")
