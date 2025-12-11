@@ -2955,10 +2955,10 @@ const OndaLevel1 = () => {
             <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-2xl p-4 text-center">
               <div className="flex items-center justify-center gap-2 text-cyan-400 mb-2">
                 <Watch className="w-5 h-5" />
-                <span className="font-medium">Подними руку</span>
+                <span className="font-medium">Onda Life</span>
               </div>
               <p className="text-white/70 text-sm">
-                Подними руку или нажми кнопку на часах чтобы активировать Apple Watch
+                Зайди в приложение на часах для корректного прохождения практики
               </p>
             </div>
           </div>
