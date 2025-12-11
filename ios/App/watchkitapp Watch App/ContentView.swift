@@ -192,13 +192,11 @@ struct ContentView: View {
                 .multilineTextAlignment(.leading)
                 .padding(.vertical, 4)
                 
-                Button(action: {
-                    permissionState = .needsPermission
-                }) {
+                Button(action: retryAfterSettingsChange) {
                     HStack(spacing: 4) {
                         Image(systemName: "arrow.clockwise")
                             .font(.caption)
-                        Text("Повторить")
+                        Text("Проверить")
                             .font(.caption)
                     }
                 }
@@ -265,6 +263,14 @@ struct ContentView: View {
                 }
             }
         }
+    }
+    
+    private func retryAfterSettingsChange() {
+        print("[ContentView] Retry after settings change - starting workout directly")
+        workoutManager.startWorkout()
+        permissionState = .waitingForHR
+        waitingSeconds = 0
+        startWaitingTimer()
     }
     
 }
