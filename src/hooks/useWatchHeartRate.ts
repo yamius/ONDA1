@@ -83,9 +83,8 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
           setError('Apple Watch not paired');
         } else if (!status.watchAppInstalled) {
           setError('ONDA Watch app not installed');
-        } else if (!status.reachable) {
-          setError('Watch not reachable');
         } else {
+          // Не показываем ошибку если часы не reachable — данные могут приходить через фоновый режим
           setError(null);
         }
       } catch (err) {
