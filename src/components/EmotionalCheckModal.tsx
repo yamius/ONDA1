@@ -231,10 +231,10 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   return (
     <>
     <div 
-      className={`fixed inset-0 bg-black/70 backdrop-blur-sm flex flex-col justify-end z-50 ${selectedPractice ? 'hidden' : ''}`}
-      style={{ paddingTop: 'max(20px, env(safe-area-inset-top))' }}
+      className={`fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4 overflow-y-auto ${selectedPractice ? 'hidden' : ''}`}
+      style={{ paddingTop: 'max(20px, env(safe-area-inset-top))', paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}
     >
-      <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-t-3xl max-w-lg w-full mx-auto shadow-2xl border border-white/10 border-b-0 overflow-hidden max-h-[92vh] flex flex-col">
+      <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl max-w-lg w-full shadow-2xl border border-white/10 overflow-hidden max-h-full flex flex-col my-auto">
         <div className="relative bg-gradient-to-r from-indigo-600 to-purple-600 p-4 flex-shrink-0">
           <button
             onClick={onClose}
