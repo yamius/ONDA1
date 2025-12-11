@@ -2324,7 +2324,10 @@ const OndaLevel1 = () => {
             )}
           </div>
 
-          <div className="pb-8">
+          <div 
+            className="pb-8"
+            style={{ paddingBottom: 'calc(env(safe-area-inset-bottom) + 32px)' }}
+          >
             <button
               onClick={handleOnboardingNext}
               className={`w-full py-4 rounded-full text-lg font-semibold transition-all ${
