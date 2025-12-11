@@ -2223,9 +2223,50 @@ const OndaLevel1 = () => {
       }
     };
 
+    const handleOnboardingPrev = () => {
+      if (onboardingScreen > 1) {
+        setOnboardingScreen(onboardingScreen - 1);
+      }
+    };
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const handleTouchStart = (e: React.TouchEvent) => {
+      touchStartX = e.touches[0].clientX;
+    };
+
+    const handleTouchMove = (e: React.TouchEvent) => {
+      touchEndX = e.touches[0].clientX;
+    };
+
+    const handleTouchEnd = () => {
+      const swipeThreshold = 50;
+      const diff = touchStartX - touchEndX;
+      
+      if (Math.abs(diff) > swipeThreshold) {
+        if (diff > 0) {
+          // Свайп влево - следующий экран
+          if (onboardingScreen < 3) {
+            setOnboardingScreen(onboardingScreen + 1);
+          }
+        } else {
+          // Свайп вправо - предыдущий экран
+          if (onboardingScreen > 1) {
+            setOnboardingScreen(onboardingScreen - 1);
+          }
+        }
+      }
+    };
+
     return (
       <div className="h-full text-white overflow-x-hidden bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950">
-        <div className="min-h-screen flex flex-col justify-between px-6 py-8 max-w-2xl mx-auto">
+        <div 
+          className="min-h-screen flex flex-col justify-between px-6 py-8 max-w-2xl mx-auto"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           <div className="flex justify-center gap-3 pt-4">
             {[1, 2, 3].map((dot) => (
               <button
