@@ -34,7 +34,7 @@ enum WatchStrings {
     
     // Circuits - matching app localization keys
     static let circuit1 = NSLocalizedString("Я есть", comment: "Circuit 1 - I Am")
-    static let circuit2 = NSLocalizedString("Я двигаюсь", comment: "Circuit 2 - I Move / Magician")
+    static let circuit2 = NSLocalizedString("Я двигаюсь", comment: "Circuit 2 - I Move")
     static let circuit3 = NSLocalizedString("Я адаптируюсь", comment: "Circuit 3 - I Adapt")
     
     static func circuitName(for part: Int) -> String {
