@@ -2949,8 +2949,23 @@ const OndaLevel1 = () => {
           </div>
         )}
 
-        {/* Подсказка для разрешения Watch */}
-        {platform === 'ios' && watchHeartRate.watchStatus?.paired && !watchHeartRate.heartRate && (
+        {/* Подсказка для активации Watch - показываем когда мониторинг включен но HR не приходит */}
+        {platform === 'ios' && watchHeartRate.watchStatus?.paired && watchHeartRate.isMonitoring && !watchHeartRate.watchStatus?.reachable && (
+          <div className="mb-6 px-4">
+            <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-2xl p-4 text-center">
+              <div className="flex items-center justify-center gap-2 text-cyan-400 mb-2">
+                <Watch className="w-5 h-5" />
+                <span className="font-medium">Подними руку</span>
+              </div>
+              <p className="text-white/70 text-sm">
+                Подними руку или нажми кнопку на часах чтобы активировать Apple Watch
+              </p>
+            </div>
+          </div>
+        )}
+
+        {/* Подсказка для разрешения Watch - только если HR никогда не приходил */}
+        {platform === 'ios' && watchHeartRate.watchStatus?.paired && !watchHeartRate.heartRate && !watchHeartRate.isMonitoring && (
           <div className="mb-6 px-4">
             <div className="bg-orange-500/10 border border-orange-500/30 rounded-2xl p-4 text-center">
               <div className="flex items-center justify-center gap-2 text-orange-400 mb-2">
