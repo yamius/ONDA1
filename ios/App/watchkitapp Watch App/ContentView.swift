@@ -32,25 +32,17 @@ enum WatchStrings {
     static let waiting = NSLocalizedString("Ожидание", comment: "Waiting status")
     static let part = NSLocalizedString("Часть", comment: "Part/Circuit")
     
-    // Parts - titles
-    static let part1 = NSLocalizedString("Часть 1", comment: "Part 1")
-    static let part2 = NSLocalizedString("Часть 2", comment: "Part 2")
-    static let part3 = NSLocalizedString("Часть 3", comment: "Part 3")
-    static let part4 = NSLocalizedString("Часть 4", comment: "Part 4")
+    // Circuits - matching app localization keys
+    static let circuit1 = NSLocalizedString("Я есть", comment: "Circuit 1 - I Am")
+    static let circuit2 = NSLocalizedString("Я двигаюсь", comment: "Circuit 2 - I Move / Magician")
+    static let circuit3 = NSLocalizedString("Я адаптируюсь", comment: "Circuit 3 - I Adapt")
     
-    // Parts - practice names
-    static let practice1 = NSLocalizedString("Я есть", comment: "Practice 1 - I am")
-    static let practice2 = NSLocalizedString("Я чувствую", comment: "Practice 2 - I feel")
-    static let practice3 = NSLocalizedString("Я мыслю", comment: "Practice 3 - I think")
-    static let practice4 = NSLocalizedString("Я осознаю", comment: "Practice 4 - I am aware")
-    
-    static func practiceName(for part: Int) -> String {
+    static func circuitName(for part: Int) -> String {
         switch part {
-        case 1: return practice1
-        case 2: return practice2
-        case 3: return practice3
-        case 4: return practice4
-        default: return practice1
+        case 1: return circuit1
+        case 2: return circuit2
+        case 3: return circuit3
+        default: return circuit1
         }
     }
 }
@@ -222,10 +214,10 @@ struct ContentView: View {
             
             Spacer(minLength: 4)
             
-            // Part selector - shows "Часть X" + practice name
+            // Circuit selector - shows "Часть X" + circuit name
             NavigationLink {
                 List {
-                    ForEach(1...4, id: \.self) { part in
+                    ForEach(1...3, id: \.self) { part in
                         Button(action: {
                             selectedPart = part
                             sendPartToPhone(part)
@@ -235,7 +227,7 @@ struct ContentView: View {
                                     Text("\(WatchStrings.part) \(part)")
                                         .font(.system(size: 12))
                                         .foregroundColor(.secondary)
-                                    Text(WatchStrings.practiceName(for: part))
+                                    Text(WatchStrings.circuitName(for: part))
                                         .font(.system(size: 14, weight: .medium))
                                 }
                                 Spacer()
@@ -253,7 +245,7 @@ struct ContentView: View {
                     Text("\(WatchStrings.part) \(selectedPart)")
                         .font(.system(size: 10))
                         .foregroundColor(.secondary)
-                    Text(WatchStrings.practiceName(for: selectedPart))
+                    Text(WatchStrings.circuitName(for: selectedPart))
                         .font(.system(size: 13, weight: .medium))
                 }
             }
