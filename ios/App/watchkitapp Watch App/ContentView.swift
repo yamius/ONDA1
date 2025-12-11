@@ -32,17 +32,35 @@ enum WatchStrings {
     static let waiting = NSLocalizedString("Ожидание", comment: "Waiting status")
     static let part = NSLocalizedString("Часть", comment: "Part/Circuit")
     
-    // Circuits - matching app localization keys
-    static let circuit1 = NSLocalizedString("Я есть", comment: "Circuit 1 - I Am")
-    static let circuit2 = NSLocalizedString("Я двигаюсь", comment: "Circuit 2 - I Move")
-    static let circuit3 = NSLocalizedString("Я адаптируюсь", comment: "Circuit 3 - I Adapt")
+    // All 12 parts - matching app structure
+    static let part1 = NSLocalizedString("Я есть", comment: "Part 1 - I Am")
+    static let part2 = NSLocalizedString("Я двигаюсь", comment: "Part 2 - I Move")
+    static let part3 = NSLocalizedString("Я адаптируюсь", comment: "Part 3 - I Adapt")
+    static let part4 = NSLocalizedString("Я маневрирую", comment: "Part 4 - I Maneuver")
+    static let part5 = NSLocalizedString("Я охраняю территорию", comment: "Part 5 - I Guard Territory")
+    static let part6 = NSLocalizedString("Я в стае", comment: "Part 6 - I Am in the Pack")
+    static let part7 = NSLocalizedString("Я различаю", comment: "Part 7 - I Distinguish")
+    static let part8 = NSLocalizedString("Я фокусируюсь", comment: "Part 8 - I Focus")
+    static let part9 = NSLocalizedString("Я планирую", comment: "Part 9 - I Plan")
+    static let part10 = NSLocalizedString("Я говорю", comment: "Part 10 - I Speak")
+    static let part11 = NSLocalizedString("Я обмениваюсь", comment: "Part 11 - I Exchange")
+    static let part12 = NSLocalizedString("Я сотрудничаю", comment: "Part 12 - I Collaborate")
     
-    static func circuitName(for part: Int) -> String {
+    static func partName(for part: Int) -> String {
         switch part {
-        case 1: return circuit1
-        case 2: return circuit2
-        case 3: return circuit3
-        default: return circuit1
+        case 1: return part1
+        case 2: return part2
+        case 3: return part3
+        case 4: return part4
+        case 5: return part5
+        case 6: return part6
+        case 7: return part7
+        case 8: return part8
+        case 9: return part9
+        case 10: return part10
+        case 11: return part11
+        case 12: return part12
+        default: return part1
         }
     }
 }
@@ -214,10 +232,10 @@ struct ContentView: View {
             
             Spacer(minLength: 4)
             
-            // Circuit selector - shows "Часть X" + circuit name
+            // Part selector - shows all 12 parts
             NavigationLink {
                 List {
-                    ForEach(1...3, id: \.self) { part in
+                    ForEach(1...12, id: \.self) { part in
                         Button(action: {
                             selectedPart = part
                             sendPartToPhone(part)
@@ -227,7 +245,7 @@ struct ContentView: View {
                                     Text("\(WatchStrings.part) \(part)")
                                         .font(.system(size: 12))
                                         .foregroundColor(.secondary)
-                                    Text(WatchStrings.circuitName(for: part))
+                                    Text(WatchStrings.partName(for: part))
                                         .font(.system(size: 14, weight: .medium))
                                 }
                                 Spacer()
@@ -245,7 +263,7 @@ struct ContentView: View {
                     Text("\(WatchStrings.part) \(selectedPart)")
                         .font(.system(size: 10))
                         .foregroundColor(.secondary)
-                    Text(WatchStrings.circuitName(for: selectedPart))
+                    Text(WatchStrings.partName(for: selectedPart))
                         .font(.system(size: 13, weight: .medium))
                 }
             }
