@@ -64,21 +64,31 @@ class WorkoutManager: NSObject, ObservableObject {
     }
     
     func requestAuthorization() {
+        requestAuthorizationWithCompletion { _ in }
+    }
+    
+    func requestAuthorizationWithCompletion(completion: @escaping (Bool) -> Void) {
         let typesToShare: Set<HKSampleType> = [HKObjectType.workoutType()]
         let typesToRead: Set<HKObjectType> = [
             HKObjectType.quantityType(forIdentifier: .heartRate)!
         ]
         
+        print("[WorkoutManager] Requesting HealthKit authorization...")
+        
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
             DispatchQueue.main.async {
                 if success {
-                    print("[WorkoutManager] HealthKit authorization requested successfully")
+                    print("[WorkoutManager] HealthKit authorization dialog shown successfully")
                     if let hrType = HKObjectType.quantityType(forIdentifier: .heartRate) {
                         self.authorizationStatus = self.healthStore.authorizationStatus(for: hrType)
                         print("[WorkoutManager] Updated status: \(self.authorizationStatus.rawValue)")
                     }
+                    // Note: success here means the dialog was shown, not that permission was granted
+                    // We assume permission is granted and will detect if HR data comes through
+                    completion(true)
                 } else {
                     print("[WorkoutManager] HealthKit authorization failed: \(error?.localizedDescription ?? "unknown")")
+                    completion(false)
                 }
             }
         }

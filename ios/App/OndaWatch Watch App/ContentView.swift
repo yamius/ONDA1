@@ -9,14 +9,44 @@ import SwiftUI
 import HealthKit
 import WatchKit
 
+enum PermissionState {
+    case checking
+    case needsPermission
+    case granted
+    case denied
+}
+
 struct ContentView: View {
     @StateObject private var workoutManager = WorkoutManager.shared
-    @State private var hasRequestedPermission = false
-    @State private var showPermissionHint = true
+    @State private var permissionState: PermissionState = .checking
     
     var body: some View {
-        VStack(spacing: 8) {
-            // App icon/logo
+        Group {
+            switch permissionState {
+            case .checking:
+                checkingView
+            case .needsPermission:
+                permissionRequestView
+            case .granted:
+                mainView
+            case .denied:
+                deniedView
+            }
+        }
+        .onAppear {
+            checkInitialPermissionState()
+        }
+        .onChange(of: workoutManager.heartRate) { newValue in
+            if newValue > 0 && permissionState != .granted {
+                permissionState = .granted
+            }
+        }
+    }
+    
+    // MARK: - Views
+    
+    private var checkingView: some View {
+        VStack(spacing: 12) {
             Image(systemName: "waveform.path.ecg")
                 .font(.system(size: 36))
                 .foregroundColor(.cyan)
@@ -25,7 +55,50 @@ struct ContentView: View {
                 .font(.title3)
                 .fontWeight(.bold)
             
-            // Heart rate display
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle())
+        }
+    }
+    
+    private var permissionRequestView: some View {
+        VStack(spacing: 10) {
+            Image(systemName: "heart.circle")
+                .font(.system(size: 40))
+                .foregroundColor(.red)
+            
+            Text("Доступ к здоровью")
+                .font(.headline)
+                .multilineTextAlignment(.center)
+            
+            Text("Разрешите чтение пульса для практик")
+                .font(.caption2)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+            
+            Button(action: requestPermission) {
+                HStack(spacing: 4) {
+                    Image(systemName: "checkmark.shield")
+                        .font(.caption)
+                    Text("Разрешить")
+                        .font(.caption)
+                }
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.green)
+        }
+        .padding(.horizontal, 8)
+    }
+    
+    private var mainView: some View {
+        VStack(spacing: 8) {
+            Image(systemName: "waveform.path.ecg")
+                .font(.system(size: 36))
+                .foregroundColor(.cyan)
+            
+            Text("ONDA")
+                .font(.title3)
+                .fontWeight(.bold)
+            
             if workoutManager.heartRate > 0 {
                 HStack {
                     Image(systemName: "heart.fill")
@@ -38,9 +111,15 @@ struct ContentView: View {
                         .foregroundColor(.secondary)
                 }
                 .padding(.vertical, 4)
+            } else {
+                Text("--")
+                    .font(.title2)
+                    .foregroundColor(.secondary)
+                Text("BPM")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
             }
             
-            // Status indicator
             HStack(spacing: 6) {
                 Circle()
                     .fill(workoutManager.isActive ? Color.green : Color.gray)
@@ -49,58 +128,75 @@ struct ContentView: View {
                     .font(.caption2)
                     .foregroundColor(.secondary)
             }
-            
-            // Permission hint - show when no HR data received yet
-            if showPermissionHint && workoutManager.heartRate == 0 {
-                VStack(spacing: 6) {
-                    Text("Разрешите доступ к данным о здоровье")
-                        .font(.caption2)
-                        .foregroundColor(.orange)
-                        .multilineTextAlignment(.center)
-                    
-                    Button(action: {
-                        workoutManager.checkAndRequestAuthorization()
-                        hasRequestedPermission = true
-                    }) {
-                        HStack(spacing: 4) {
-                            Image(systemName: "heart.fill")
-                                .font(.caption2)
-                            Text("Дать разрешение")
-                                .font(.caption2)
-                        }
-                    }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.green)
-                    
-                    if hasRequestedPermission {
-                        Button(action: {
-                            if let url = URL(string: "x-apple-health://") {
-                                WKExtension.shared().openSystemURL(url)
-                            }
-                        }) {
-                            Text("Открыть Здоровье")
-                                .font(.caption2)
-                        }
-                        .buttonStyle(.bordered)
-                        .tint(.blue)
-                    }
-                }
-                .padding(.top, 4)
-            }
         }
         .padding(.horizontal, 8)
         .onAppear {
-            print("[ContentView] App appeared")
-            // Если разрешение уже есть (heartRate > 0 раньше было), автоматически запускаем workout
-            // Если нет - показываем кнопку "Дать разрешение"
-            if workoutManager.isAuthorized && !workoutManager.isActive {
-                print("[ContentView] Already authorized, starting workout automatically")
+            if !workoutManager.isActive {
+                print("[ContentView] Permission granted, starting workout")
                 workoutManager.startWorkout()
             }
         }
-        .onChange(of: workoutManager.heartRate) { newValue in
-            if newValue > 0 {
-                showPermissionHint = false
+    }
+    
+    private var deniedView: some View {
+        VStack(spacing: 10) {
+            Image(systemName: "xmark.circle")
+                .font(.system(size: 40))
+                .foregroundColor(.red)
+            
+            Text("Доступ запрещён")
+                .font(.headline)
+            
+            Text("Откройте Настройки > Конфиденциальность > Здоровье")
+                .font(.caption2)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+            
+            Button(action: {
+                permissionState = .needsPermission
+            }) {
+                Text("Повторить")
+                    .font(.caption)
+            }
+            .buttonStyle(.bordered)
+            .tint(.blue)
+        }
+        .padding(.horizontal, 8)
+    }
+    
+    // MARK: - Logic
+    
+    private func checkInitialPermissionState() {
+        // Check if we already have heart rate data (means permission was granted before)
+        if workoutManager.heartRate > 0 {
+            permissionState = .granted
+            return
+        }
+        
+        // Check saved permission state
+        let wasGranted = UserDefaults.standard.bool(forKey: "healthkit_permission_granted")
+        if wasGranted {
+            permissionState = .granted
+            return
+        }
+        
+        // First time - need to ask permission
+        permissionState = .needsPermission
+    }
+    
+    private func requestPermission() {
+        print("[ContentView] User tapped Allow button")
+        
+        workoutManager.requestAuthorizationWithCompletion { success in
+            DispatchQueue.main.async {
+                if success {
+                    print("[ContentView] Permission granted, moving to main view")
+                    UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
+                    permissionState = .granted
+                } else {
+                    print("[ContentView] Permission denied or error")
+                    permissionState = .denied
+                }
             }
         }
     }
