@@ -123,46 +123,63 @@ struct ContentView: View {
     }
     
     private var mainView: some View {
-        VStack(spacing: 8) {
-            Image(systemName: "waveform.path.ecg")
-                .font(.system(size: 36))
-                .foregroundColor(.cyan)
+        VStack(spacing: 0) {
+            // Header with ONDA aligned to top-left
+            HStack {
+                Text("ONDA")
+                    .font(.caption)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.cyan)
+                Spacer()
+            }
+            .padding(.horizontal, 8)
+            .padding(.top, 4)
             
-            Text("ONDA")
-                .font(.title3)
-                .fontWeight(.bold)
+            Spacer()
             
-            if workoutManager.heartRate > 0 {
-                HStack {
+            // Heart rate card
+            VStack(spacing: 6) {
+                HStack(spacing: 4) {
                     Image(systemName: "heart.fill")
                         .foregroundColor(.red)
-                    Text("\(Int(workoutManager.heartRate))")
-                        .font(.title2)
-                        .fontWeight(.semibold)
+                        .font(.system(size: 18))
+                    
+                    if workoutManager.heartRate > 0 {
+                        Text("\(Int(workoutManager.heartRate))")
+                            .font(.system(size: 32, weight: .bold, design: .rounded))
+                    } else {
+                        Text("--")
+                            .font(.system(size: 32, weight: .bold, design: .rounded))
+                            .foregroundColor(.secondary)
+                    }
+                    
                     Text("BPM")
                         .font(.caption2)
                         .foregroundColor(.secondary)
                 }
-                .padding(.vertical, 4)
-            } else {
-                Text("--")
-                    .font(.title2)
-                    .foregroundColor(.secondary)
-                Text("BPM")
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
+                
+                HStack(spacing: 4) {
+                    Circle()
+                        .fill(workoutManager.isActive ? Color.green : Color.gray)
+                        .frame(width: 6, height: 6)
+                    Text(workoutManager.isActive ? "Активна" : "Ожидание")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                }
             }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 10)
+            .background(
+                RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.black.opacity(0.3))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 12)
+                            .stroke(Color.white.opacity(0.1), lineWidth: 1)
+                    )
+            )
             
-            HStack(spacing: 6) {
-                Circle()
-                    .fill(workoutManager.isActive ? Color.green : Color.gray)
-                    .frame(width: 8, height: 8)
-                Text(workoutManager.isActive ? "Активна" : "Ожидание")
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
-            }
+            Spacer()
         }
-        .padding(.horizontal, 8)
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
