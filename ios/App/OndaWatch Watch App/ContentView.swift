@@ -90,8 +90,9 @@ struct ContentView: View {
         }
         .padding(.horizontal, 8)
         .onAppear {
-            print("[ContentView] App appeared, checking authorization")
-            workoutManager.checkAndRequestAuthorization()
+            print("[ContentView] App appeared")
+            // НЕ вызываем checkAndRequestAuthorization автоматически
+            // чтобы диалог разрешения не проскакивал
         }
         .onChange(of: workoutManager.heartRate) { newValue in
             if newValue > 0 {
