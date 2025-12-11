@@ -28,6 +28,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   const [autoManaged, setAutoManaged] = useState(false);
   const heartbeatIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const isAutoManagedRef = useRef(false);
+  const lastHrUpdateRef = useRef<number>(0);
 
   const isConnected = watchStatus?.reachable === true;
   
@@ -118,6 +119,8 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
             setHeartRate(Math.round(event.value));
             setLastUpdated(new Date());
             setError(null);
+            // Update last HR time for stale detection
+            lastHrUpdateRef.current = Date.now();
           }
         );
         
@@ -156,9 +159,23 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     const platform = Capacitor.getPlatform();
     if (platform !== 'ios') return;
 
-    heartbeatIntervalRef.current = setInterval(() => {
-      OndaWatch.sendHeartbeat().catch(() => {});
-    }, 2000);
+    heartbeatIntervalRef.current = setInterval(async () => {
+      const now = Date.now();
+      const timeSinceLastHr = now - lastHrUpdateRef.current;
+      
+      // Если HR не обновлялся более 10 секунд — повторно отправляем "start"
+      if (timeSinceLastHr > 10000) {
+        addLog('HR stale, resending start command');
+        try {
+          await OndaWatch.startRealtime();
+        } catch (err) {
+          // Ignore errors
+        }
+      } else {
+        // Обычный heartbeat
+        OndaWatch.sendHeartbeat().catch(() => {});
+      }
+    }, 3000);
 
     return () => {
       if (heartbeatIntervalRef.current) {
@@ -166,7 +183,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
         heartbeatIntervalRef.current = null;
       }
     };
-  }, [isMonitoring]);
+  }, [isMonitoring, addLog]);
 
   const startRealtime = useCallback(async () => {
     if (!watchStatus?.supported) {
