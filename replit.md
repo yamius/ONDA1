@@ -26,7 +26,7 @@
 
 # Overview
 
-ONDA is a mindfulness and wellness mobile application that integrates gamification with biometric tracking. It guides users through progressive "circuits" of consciousness development practices, rewarding completion with virtual currency (OND). The app leverages real-time health data from Google Health Connect (Android), Apple HealthKit (iOS), and Bluetooth heart rate monitors to provide adaptive, personalized meditation and breathing exercises.
+ONDA is a mindfulness and wellness mobile application that integrates gamification with biometric tracking. It guides users through progressive "Части" (Parts, formerly "circuits") of consciousness development practices, rewarding completion with virtual currency (OND). The app leverages real-time health data from Google Health Connect (Android), Apple HealthKit (iOS), Apple Watch, and Bluetooth heart rate monitors to provide adaptive, personalized meditation and breathing exercises.
 
 The application is a React-based Progressive Web App (PWA) with native mobile support via a custom WebView wrapper for Android and Capacitor for iOS. It features multilingual support (English, Spanish, Russian, Ukrainian, Chinese) and both light/dark themes. The business vision is to provide an engaging and effective platform for personal growth, making wellness practices accessible and motivating, with strong market potential in the digital health and self-improvement sectors.
 
@@ -117,14 +117,35 @@ Preferred communication style: Simple, everyday language.
 
 ## Gamification System
 
-**Circuit-Based Progression:**
-- Four consciousness circuits with sequential unlocking.
-- Practice-based advancement and OND currency rewards.
+**Части (Parts) — бывшие "контуры" (circuits):**
+- Три части с последовательной разблокировкой:
+  - Часть 1: "Я есть" (I Am)
+  - Часть 2: "Я двигаюсь" (I Move)
+  - Часть 3: "Я адаптируюсь" (I Adapt)
+- Практики внутри каждой части
+- Награды OND за выполнение практик
 
 **Achievement System:**
 - Artifact collection.
 - Historical tracking of practice sessions.
 - Sleep rhythm monitoring.
+
+## Apple Watch Integration
+
+**Файлы watchOS приложения:**
+- `ios/App/watchkitapp Watch App/ContentView.swift` — UI экраны
+- `ios/App/watchkitapp Watch App/WorkoutManager.swift` — HR + WCSession
+- `ios/App/watchkitapp Watch App/OndaWatchApp.swift` — точка входа
+
+**Функционал часов:**
+- Real-time HR streaming на iPhone через WCSession
+- Выбор текущей Части (1-3)
+- Локализация (русский по умолчанию, следует языку iPhone)
+
+**Коммуникация Watch ↔ iPhone:**
+- `sendMessage` — когда iPhone reachable
+- `transferUserInfo` — надёжная доставка в фоне
+- Формат данных: `["type": "heartRate", "value": 72, "ts": timestamp]`
 
 ## Audio System
 
