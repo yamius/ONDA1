@@ -109,17 +109,29 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         
         print("[ONDA Manager] Sending command '\(type)', reachable: \(session.isReachable)")
         
-        let message: [String: Any] = ["type": type]
+        let message: [String: Any] = ["type": type, "ts": Date().timeIntervalSince1970]
 
         if session.isReachable {
+            // Прямая отправка когда часы активны
             session.sendMessage(message, replyHandler: { reply in
                 print("[ONDA Manager] Command sent OK")
             }) { error in
                 print("[ONDA Manager] sendCommand error: \(error.localizedDescription)")
             }
         } else {
+            // Когда часы не активны - используем оба метода для надёжности
+            
+            // 1. transferUserInfo - разбудит приложение на часах в фоне
             session.transferUserInfo(message)
             print("[ONDA Manager] Command transferred via userInfo")
+            
+            // 2. updateApplicationContext - данные будут доступны сразу при пробуждении
+            do {
+                try session.updateApplicationContext(["command": type, "ts": Date().timeIntervalSince1970])
+                print("[ONDA Manager] Application context updated")
+            } catch {
+                print("[ONDA Manager] updateApplicationContext error: \(error.localizedDescription)")
+            }
         }
     }
     

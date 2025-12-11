@@ -188,6 +188,13 @@ extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
 extension WorkoutManager: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith state: WCSessionActivationState, error: Error?) {
         print("[WorkoutManager] WCSession activated: \(state.rawValue)")
+        
+        // Проверяем applicationContext при активации сессии
+        let context = session.receivedApplicationContext
+        if let command = context["command"] as? String {
+            print("[WorkoutManager] Found pending command in context: \(command)")
+            handleCommand(["type": command])
+        }
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
@@ -198,6 +205,14 @@ extension WorkoutManager: WCSessionDelegate {
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String: Any] = [:]) {
         print("[WorkoutManager] Received userInfo (background wake): \(userInfo)")
         handleCommand(userInfo)
+    }
+    
+    // Обработка applicationContext - вызывается когда iPhone обновляет контекст
+    func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
+        print("[WorkoutManager] Received applicationContext: \(applicationContext)")
+        if let command = applicationContext["command"] as? String {
+            handleCommand(["type": command])
+        }
     }
     
     private func handleCommand(_ data: [String: Any]) {
