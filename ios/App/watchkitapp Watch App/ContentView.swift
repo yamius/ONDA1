@@ -151,73 +151,74 @@ struct ContentView: View {
     }
     
     private var mainView: some View {
-        ScrollView {
-            VStack(spacing: 12) {
-                // Header with ONDA aligned to top-left
-                HStack {
-                    Text(WatchStrings.appName)
-                        .font(.caption)
-                        .fontWeight(.semibold)
-                        .foregroundColor(.cyan)
-                    Spacer()
-                }
-                .padding(.horizontal, 4)
-                
-                // Heart rate card
-                VStack(spacing: 6) {
-                    HStack(spacing: 4) {
-                        Image(systemName: "heart.fill")
-                            .foregroundColor(.red)
-                            .font(.system(size: 18))
-                        
-                        if workoutManager.heartRate > 0 {
-                            Text("\(Int(workoutManager.heartRate))")
-                                .font(.system(size: 32, weight: .bold, design: .rounded))
-                        } else {
-                            Text("--")
-                                .font(.system(size: 32, weight: .bold, design: .rounded))
-                                .foregroundColor(.secondary)
-                        }
-                        
-                        Text(WatchStrings.bpm)
-                            .font(.caption2)
+        VStack(spacing: 8) {
+            // Header with ONDA - aligned with system time
+            HStack {
+                Text(WatchStrings.appName)
+                    .font(.system(size: 13, weight: .semibold))
+                    .foregroundColor(.cyan)
+                Spacer()
+            }
+            
+            Spacer(minLength: 4)
+            
+            // Heart rate card
+            VStack(spacing: 4) {
+                HStack(spacing: 4) {
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(.red)
+                        .font(.system(size: 16))
+                    
+                    if workoutManager.heartRate > 0 {
+                        Text("\(Int(workoutManager.heartRate))")
+                            .font(.system(size: 28, weight: .bold, design: .rounded))
+                    } else {
+                        Text("--")
+                            .font(.system(size: 28, weight: .bold, design: .rounded))
                             .foregroundColor(.secondary)
                     }
                     
-                    HStack(spacing: 4) {
-                        Circle()
-                            .fill(workoutManager.isActive ? Color.green : Color.gray)
-                            .frame(width: 6, height: 6)
-                        Text(workoutManager.isActive ? WatchStrings.active : WatchStrings.waiting)
-                            .font(.caption2)
-                            .foregroundColor(.secondary)
-                    }
+                    Text(WatchStrings.bpm)
+                        .font(.system(size: 10))
+                        .foregroundColor(.secondary)
                 }
-                .padding(.horizontal, 12)
-                .padding(.vertical, 10)
-                .background(
-                    RoundedRectangle(cornerRadius: 12)
-                        .fill(Color.black.opacity(0.3))
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 12)
-                                .stroke(Color.white.opacity(0.1), lineWidth: 1)
-                        )
-                )
                 
-                // Part selector
-                Picker(WatchStrings.part, selection: $selectedPart) {
-                    Text(WatchStrings.part1).tag(1)
-                    Text(WatchStrings.part2).tag(2)
-                    Text(WatchStrings.part3).tag(3)
-                    Text(WatchStrings.part4).tag(4)
-                }
-                .pickerStyle(.navigationLink)
-                .onChange(of: selectedPart) { newValue in
-                    sendPartToPhone(newValue)
+                HStack(spacing: 4) {
+                    Circle()
+                        .fill(workoutManager.isActive ? Color.green : Color.gray)
+                        .frame(width: 5, height: 5)
+                    Text(workoutManager.isActive ? WatchStrings.active : WatchStrings.waiting)
+                        .font(.system(size: 10))
+                        .foregroundColor(.secondary)
                 }
             }
-            .padding(.horizontal, 8)
+            .padding(.horizontal, 10)
+            .padding(.vertical, 8)
+            .background(
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color.black.opacity(0.3))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.1), lineWidth: 1)
+                    )
+            )
+            
+            Spacer(minLength: 4)
+            
+            // Part selector - compact
+            Picker(WatchStrings.part, selection: $selectedPart) {
+                Text(WatchStrings.part1).tag(1)
+                Text(WatchStrings.part2).tag(2)
+                Text(WatchStrings.part3).tag(3)
+                Text(WatchStrings.part4).tag(4)
+            }
+            .pickerStyle(.navigationLink)
+            .onChange(of: selectedPart) { newValue in
+                sendPartToPhone(newValue)
+            }
         }
+        .padding(.horizontal, 8)
+        .padding(.top, 2)
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
