@@ -30,7 +30,9 @@
     "profile": "Perfil",
     "connection": "Conexión",
     "watch_hint_title": "Apple Watch",
-    "watch_hint_text": "Concede acceso a los datos de salud en la app ONDA de tu reloj"
+    "watch_hint_text": "Concede acceso a los datos de salud en la app ONDA de tu reloj",
+    "watch_activate_title": "Onda Life",
+    "watch_activate_text": "Abre la app en tu reloj para un seguimiento preciso de la práctica"
   },
   "chapters": {
     "chapter_1": "Cuerpo",

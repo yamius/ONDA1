@@ -33,7 +33,9 @@
     "profile": "Profile",
     "connection": "Connection",
     "watch_hint_title": "Apple Watch",
-    "watch_hint_text": "Grant health data access in the ONDA app on your watch"
+    "watch_hint_text": "Grant health data access in the ONDA app on your watch",
+    "watch_activate_title": "Onda Life",
+    "watch_activate_text": "Open the app on your watch for accurate practice tracking"
   },
   "chapters": {
     "chapter_1": "Body",

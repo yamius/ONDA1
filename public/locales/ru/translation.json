@@ -33,7 +33,9 @@
     "profile": "Профиль",
     "connection": "Подключение",
     "watch_hint_title": "Apple Watch",
-    "watch_hint_text": "В приложении ONDA на своих часах получите разрешение на использование данных о здоровье"
+    "watch_hint_text": "В приложении ONDA на своих часах получите разрешение на использование данных о здоровье",
+    "watch_activate_title": "Onda Life",
+    "watch_activate_text": "Зайди в приложение на часах для корректного прохождения практики"
   },
   "chapters": {
     "chapter_1": "Тело",
