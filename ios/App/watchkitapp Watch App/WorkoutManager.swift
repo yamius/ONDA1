@@ -249,24 +249,12 @@ extension WorkoutManager: WCSessionDelegate {
         DispatchQueue.main.async {
             switch cmd {
             case "start":
-                WKInterfaceDevice.current().play(.notification)
-                
                 if !self.isActive {
-                    let appState = WKApplication.shared().applicationState
-                    print("[WorkoutManager] App state: \(appState.rawValue)")
-                    
-                    if appState == .active {
-                        self.startWorkout()
-                    } else {
-                        print("[WorkoutManager] App not active, showing notification")
-                        WKInterfaceDevice.current().play(.start)
-                        NotificationManager.shared.showOpenAppNotification()
-                    }
+                    self.startWorkout()
                 } else {
                     print("[WorkoutManager] Workout already active")
                 }
             case "stop":
-                WKInterfaceDevice.current().play(.stop)
                 self.stopWorkout()
             case "heartbeat":
                 print("[WorkoutManager] Heartbeat received")
