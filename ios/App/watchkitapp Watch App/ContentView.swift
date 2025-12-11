@@ -172,39 +172,41 @@ struct ContentView: View {
     }
     
     private var deniedView: some View {
-        VStack(spacing: 10) {
-            Image(systemName: "xmark.circle")
-                .font(.system(size: 40))
-                .foregroundColor(.red)
-            
-            Text("Доступ запрещён")
-                .font(.headline)
-            
-            Text("Откройте Настройки > Здоровье > ONDA")
-                .font(.caption2)
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
-            
-            Button(action: openHealthSettings) {
-                HStack(spacing: 4) {
-                    Image(systemName: "gear")
-                        .font(.caption)
-                    Text("Настройки")
-                        .font(.caption)
+        ScrollView {
+            VStack(spacing: 8) {
+                Image(systemName: "xmark.circle")
+                    .font(.system(size: 32))
+                    .foregroundColor(.red)
+                
+                Text("Доступ запрещён")
+                    .font(.headline)
+                
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("На iPhone откройте:")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
+                    Text("Настройки → Здоровье → Доступ к данным → ONDA")
+                        .font(.caption2)
+                        .foregroundColor(.cyan)
                 }
+                .multilineTextAlignment(.leading)
+                .padding(.vertical, 4)
+                
+                Button(action: {
+                    permissionState = .needsPermission
+                }) {
+                    HStack(spacing: 4) {
+                        Image(systemName: "arrow.clockwise")
+                            .font(.caption)
+                        Text("Повторить")
+                            .font(.caption)
+                    }
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.green)
             }
-            .buttonStyle(.borderedProminent)
-            .tint(.blue)
-            
-            Button(action: {
-                permissionState = .needsPermission
-            }) {
-                Text("Повторить")
-                    .font(.caption)
-            }
-            .buttonStyle(.bordered)
+            .padding(.horizontal, 8)
         }
-        .padding(.horizontal, 8)
     }
     
     // MARK: - Logic
@@ -265,11 +267,6 @@ struct ContentView: View {
         }
     }
     
-    private func openHealthSettings() {
-        if let url = URL(string: "x-apple-health://") {
-            WKExtension.shared().openSystemURL(url)
-        }
-    }
 }
 
 #Preview {
