@@ -39,34 +39,16 @@ jobs:
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '16.1'
+          xcode-version: '16.2'
 
-      - name: Download iOS and watchOS Platforms (optional)
-        continue-on-error: true
+      - name: Verify Xcode SDKs
         run: |
-          echo "Checking available SDKs first..."
-          xcodebuild -showsdks || true
-          
-          # Only download if not already available
-          if ! xcodebuild -showsdks | grep -q "iphoneos18"; then
-            echo "=== Downloading iOS Platform ==="
-            sudo xcodebuild -downloadPlatform iOS || echo "iOS platform download failed, continuing..."
-          else
-            echo "iOS SDK already available"
-          fi
-          
-          if ! xcodebuild -showsdks | grep -q "watchos"; then
-            echo "=== Downloading watchOS Platform ==="
-            sudo xcodebuild -downloadPlatform watchOS || echo "watchOS platform download failed, continuing..."
-          else
-            echo "watchOS SDK already available"
-          fi
-
-      - name: Verify iOS SDK
-        run: |
+          echo "=== Xcode and SDK Info ==="
           xcode-select -p
           xcodebuild -version
           xcodebuild -showsdks
+          echo "=== Available simulators ==="
+          xcrun simctl list devices available | head -20 || true
 
       - name: Fix Xcode project format for CocoaPods
         run: |
