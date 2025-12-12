@@ -232,13 +232,14 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 8) {
-                    // Heart rate card with scroll tracking
+                    // Scroll tracking
                     GeometryReader { geo in
                         Color.clear
                             .preference(key: ScrollOffsetPreferenceKey.self, value: geo.frame(in: .named("scroll")).minY)
                     }
                     .frame(height: 0)
                     
+                    // Heart rate card
                     VStack(spacing: 4) {
                         HStack(spacing: 4) {
                             Image(systemName: "heart.fill")
@@ -341,7 +342,25 @@ struct ContentView: View {
                 showHRInTitle = offset < -20
             }
         }
-        .navigationTitle(showHRInTitle ? "\(workoutManager.heartRate > 0 ? "\(Int(workoutManager.heartRate))" : "--") BPM" : WatchStrings.appName)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                if showHRInTitle {
+                    // Show heart rate when scrolled
+                    HStack(spacing: 2) {
+                        Image(systemName: "heart.fill")
+                            .foregroundColor(.red)
+                            .font(.system(size: 13))
+                        Text(workoutManager.heartRate > 0 ? "\(Int(workoutManager.heartRate))" : "--")
+                            .font(.system(size: 15, weight: .medium))
+                    }
+                } else {
+                    // Show ONDA at initial position
+                    Text(WatchStrings.appName)
+                        .font(.system(size: 15, weight: .medium))
+                }
+            }
+        }
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
@@ -592,15 +611,16 @@ struct PartSelectorView: View {
                 .buttonStyle(.plain)
             }
         }
-        .navigationBarBackButtonHidden(true)
+        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
+                // Heart rate in same line as clock, same size/style
                 HStack(spacing: 2) {
                     Image(systemName: "heart.fill")
                         .foregroundColor(.red)
-                        .font(.system(size: 12))
+                        .font(.system(size: 13))
                     Text(heartRate > 0 ? "\(Int(heartRate))" : "--")
-                        .font(.system(size: 14, weight: .semibold))
+                        .font(.system(size: 15, weight: .medium))
                 }
             }
         }
