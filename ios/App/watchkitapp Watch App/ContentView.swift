@@ -148,7 +148,6 @@ struct ContentView: View {
         case .practiceSession(let practice):
             PracticeSessionView(
                 practice: practice,
-                heartRate: workoutManager.heartRate,
                 onEnd: { duration in
                     sendPracticeEnded(practiceId: practice.id, duration: duration)
                     mainViewState = .main
@@ -599,7 +598,6 @@ struct PracticeRow: View {
 
 struct PracticeSessionView: View {
     let practice: WatchPractice
-    let heartRate: Double
     let onEnd: (Int) -> Void
     
     @State private var elapsedSeconds: Int = 0
@@ -610,49 +608,30 @@ struct PracticeSessionView: View {
     private let textChangeInterval: Int = 15
     
     var body: some View {
-        VStack(spacing: 8) {
-            // Timer and HR
-            HStack {
-                Text(formatTime(elapsedSeconds))
-                    .font(.system(size: 20, weight: .bold, design: .rounded))
-                    .foregroundColor(.cyan)
-                
-                Spacer()
-                
-                HStack(spacing: 2) {
-                    Image(systemName: "heart.fill")
-                        .font(.system(size: 12))
-                        .foregroundColor(.red)
-                    Text(heartRate > 0 ? "\(Int(heartRate))" : "--")
-                        .font(.system(size: 14, weight: .medium))
-                }
-            }
-            .padding(.horizontal, 4)
-            
-            // Guiding text
+        VStack(spacing: 4) {
+            // Guiding text - maximized for readability
             ScrollView {
                 Text(currentGuidingText)
-                    .font(.system(size: 14))
+                    .font(.system(size: 18, weight: .medium))
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                     .opacity(textOpacity)
                     .animation(.easeInOut(duration: 0.5), value: textOpacity)
-                    .padding(.horizontal, 8)
-                    .padding(.vertical, 12)
+                    .padding(.horizontal, 4)
+                    .padding(.vertical, 8)
             }
             
-            Spacer()
-            
-            // End button
+            // End button - compact at bottom
             Button(action: endPractice) {
                 Text(WatchStrings.endPractice)
-                    .font(.system(size: 13, weight: .medium))
+                    .font(.system(size: 12, weight: .medium))
             }
             .buttonStyle(.borderedProminent)
-            .tint(.red.opacity(0.8))
+            .tint(.red.opacity(0.7))
         }
-        .padding(.horizontal, 8)
-        .padding(.vertical, 4)
+        .padding(.horizontal, 4)
+        .padding(.top, 2)
+        .padding(.bottom, 4)
         .onAppear {
             startTimer()
         }
@@ -665,12 +644,6 @@ struct PracticeSessionView: View {
     private var currentGuidingText: String {
         guard !practice.guidingTexts.isEmpty else { return "" }
         return practice.guidingTexts[currentTextIndex % practice.guidingTexts.count]
-    }
-    
-    private func formatTime(_ seconds: Int) -> String {
-        let mins = seconds / 60
-        let secs = seconds % 60
-        return String(format: "%d:%02d", mins, secs)
     }
     
     private func startTimer() {
