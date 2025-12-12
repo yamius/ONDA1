@@ -6,7 +6,7 @@ on:
 jobs:
   build-ios:
     name: Build and Deploy iOS App
-    runs-on: macos-14
+    runs-on: macos-15
     timeout-minutes: 90
     
     steps:
@@ -39,7 +39,7 @@ jobs:
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '15.4'
+          xcode-version: '16.1'
 
       - name: Verify Xcode SDKs
         run: |
@@ -48,19 +48,20 @@ jobs:
           xcodebuild -version
           xcodebuild -showsdks
 
-      - name: Prepare iOS Platform
-        continue-on-error: true
+      - name: Install iOS/watchOS Platforms
         run: |
-          echo "=== SDK path check ==="
-          xcrun --sdk iphoneos --show-sdk-path || true
-          xcrun --sdk watchos --show-sdk-path || true
-          echo "=== Try to download platforms (may take a while) ==="
-          sudo xcodebuild -downloadPlatform iOS 2>&1 || echo "Download failed, continuing..."
-          sudo xcodebuild -downloadPlatform watchOS 2>&1 || echo "Download failed, continuing..."
+          echo "=== Downloading and installing iOS platform ==="
+          sudo xcodebuild -downloadPlatform iOS
+          sudo xcodebuild -runFirstLaunch || true
+          echo "=== Downloading and installing watchOS platform ==="
+          sudo xcodebuild -downloadPlatform watchOS
+          echo "=== Verify SDKs are available ==="
+          xcodebuild -showsdks
+          xcrun --sdk iphoneos --show-sdk-path
+          xcrun --sdk watchos --show-sdk-path
 
-      - name: Fix Xcode project format for CocoaPods
+      - name: Setup CocoaPods
         run: |
-          sed -i '' 's/objectVersion = 70/objectVersion = 56/' ios/App/App.xcodeproj/project.pbxproj || true
           gem update xcodeproj
           gem install cocoapods
           pod --version
