@@ -49,6 +49,11 @@ Preferred communication style: Simple, everyday language.
 - All iOS testing done via TestFlight builds on physical device
 - Russian language preferred for UI and communication
 
+**ОБЯЗАТЕЛЬНОЕ ПРАВИЛО при ошибках iOS сборки:**
+- **ВСЕГДА** читать `.assistant/GITHUB_ACTIONS_TROUBLESHOOTING.md` ПЕРЕД попыткой исправить ошибку
+- Файл содержит решения всех известных проблем с точными симптомами и командами
+- Это предотвращает циклические попытки подбора конфигурации
+
 # System Architecture
 
 ## Frontend Architecture
