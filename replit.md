@@ -23,8 +23,9 @@
 - `.assistant/PHILOSOPHY.md` — правила работы над проектом
 - `.assistant/AI_INSTRUCTIONS.md` — быстрый старт сессии
 - `.assistant/MODULE_FRONTEND.md` — архитектура React PWA
-- `.assistant/MODULE_NATIVE.md` — архитектура iOS/Android
+- `.assistant/MODULE_NATIVE.md` — архитектура iOS/Android + Apple Watch
 - `.assistant/MODULE_SUPABASE.md` — архитектура бэкенда
+- `.assistant/PRACTICES_AUDIO.md` — структура практик, ID, аудио файлы
 
 ---
 
