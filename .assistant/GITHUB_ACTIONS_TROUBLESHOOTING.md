@@ -143,7 +143,44 @@ runs-on: macos-14
 
 ---
 
-## ПРОБЛЕМА #4: SSL Certificate Errors
+## КРИТИЧЕСКАЯ ПРОБЛЕМА #4: watchOS App Icon CompileAssetCatalog Failed
+
+### Симптомы
+```
+** ARCHIVE FAILED **
+The following build commands failed:
+     CompileAssetCatalog ... watchkitapp Watch App/Assets.xcassets 
+     (in target 'watchkitapp Watch App' from project 'App')
+```
+
+### Причина
+watchOS иконки требуют:
+1. Формат PNG без альфа-канала (no transparency)
+2. Цветовое пространство sRGB
+3. Размер ровно 1024x1024 пикселей
+
+### Решение
+Добавить шаг для обработки иконки перед сборкой:
+
+```yaml
+- name: Fix watchOS App Icon (remove alpha channel)
+  run: |
+    ICON_PATH="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png"
+    if [ -f "$ICON_PATH" ]; then
+      echo "Converting watchOS app icon to remove alpha channel..."
+      sips -s format png -s formatOptions default "$ICON_PATH" --out "$ICON_PATH.tmp"
+      sips -s format png --setProperty formatOptions 'no-alpha' "$ICON_PATH.tmp" --out "$ICON_PATH" 2>/dev/null || mv "$ICON_PATH.tmp" "$ICON_PATH"
+      rm -f "$ICON_PATH.tmp"
+    fi
+```
+
+### Важно
+- `sips` — встроенный macOS инструмент для обработки изображений
+- Шаг должен быть ПОСЛЕ `npx cap sync ios` и ПЕРЕД `fastlane ios beta`
+
+---
+
+## ПРОБЛЕМА #5: SSL Certificate Errors
 
 ### Симптомы
 ```
@@ -160,7 +197,7 @@ SSL_connect returned=1 errno=0 peeraddr=140.82.116.6:443 state=error: certificat
 
 ---
 
-## ПРОБЛЕМА #5: Fastlane Match Timeout
+## ПРОБЛЕМА #6: Fastlane Match Timeout
 
 ### Симптомы
 ```
@@ -178,7 +215,7 @@ env:
 
 ---
 
-## ПРОБЛЕМА #6: Keychain Access
+## ПРОБЛЕМА #7: Keychain Access
 
 ### Симптомы
 ```
