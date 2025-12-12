@@ -39,7 +39,7 @@ jobs:
       - name: Setup Xcode
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '15.4'
+          xcode-version: '16.0'
 
       - name: Verify Xcode SDKs
         run: |
@@ -51,11 +51,12 @@ jobs:
       - name: Prepare iOS Platform
         continue-on-error: true
         run: |
-          echo "=== Checking simulator/device availability ==="
-          xcrun simctl list devices available 2>/dev/null | head -10 || true
           echo "=== SDK path check ==="
           xcrun --sdk iphoneos --show-sdk-path || true
           xcrun --sdk watchos --show-sdk-path || true
+          echo "=== Try to download platforms (may take a while) ==="
+          sudo xcodebuild -downloadPlatform iOS 2>&1 || echo "Download failed, continuing..."
+          sudo xcodebuild -downloadPlatform watchOS 2>&1 || echo "Download failed, continuing..."
 
       - name: Fix Xcode project format for CocoaPods
         run: |
