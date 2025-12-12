@@ -47,8 +47,15 @@ jobs:
           xcode-select -p
           xcodebuild -version
           xcodebuild -showsdks
-          echo "=== Available simulators ==="
-          xcrun simctl list devices available | head -20 || true
+
+      - name: Download iOS Platform (required for archive)
+        run: |
+          echo "=== Downloading iOS Platform to fix archive issue ==="
+          sudo xcodebuild -downloadPlatform iOS
+          echo "=== Downloading watchOS Platform ==="
+          sudo xcodebuild -downloadPlatform watchOS
+          echo "=== Verifying SDKs after download ==="
+          xcodebuild -showsdks
 
       - name: Fix Xcode project format for CocoaPods
         run: |
