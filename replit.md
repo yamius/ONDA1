@@ -6,6 +6,7 @@
 - [ ] Улучшение UX практик
 
 ## Недавно сделано (DONE)
+- [x] GitHub Actions iOS сборка — исправлены все проблемы совместимости (Xcode 16, CocoaPods, objectVersion)
 - [x] Watch практики Part 1 — полная реализация системы практик на Apple Watch
 - [x] PracticeSessionView — экран практики с направляющими текстами (15-сек интервалы) без таймера/HR
 - [x] WCSession синхронизация — iPhone → Watch передача практик, Watch → iPhone события start/end
@@ -26,6 +27,7 @@
 - `.assistant/MODULE_NATIVE.md` — архитектура iOS/Android + Apple Watch
 - `.assistant/MODULE_SUPABASE.md` — архитектура бэкенда
 - `.assistant/PRACTICES_AUDIO.md` — структура практик, ID, аудио файлы
+- `.assistant/GITHUB_ACTIONS_TROUBLESHOOTING.md` — решения проблем iOS сборки
 
 ---
 
