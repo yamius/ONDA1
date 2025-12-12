@@ -90,25 +90,52 @@ jobs:
       - name: Sync Capacitor
         run: npx cap sync ios
 
-      - name: Fix watchOS App Icon (remove alpha channel)
+      - name: Generate watchOS App Icons (all required sizes)
         run: |
-          ICON_PATH="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset/_ONDA_logo.png"
-          if [ -f "$ICON_PATH" ]; then
-            echo "Converting watchOS app icon to remove alpha channel..."
-            echo "Original file info:"
-            sips -g all "$ICON_PATH" | grep -E "(hasAlpha|pixelWidth|pixelHeight|format)"
+          ICON_DIR="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset"
+          SOURCE_ICON="$ICON_DIR/_ONDA_logo.png"
+          
+          if [ -f "$SOURCE_ICON" ]; then
+            echo "=== Generating all watchOS icon sizes ==="
             
-            # Method: Convert to JPEG (loses alpha) then back to PNG
-            sips -s format jpeg -s formatOptions best "$ICON_PATH" --out "${ICON_PATH}.jpg"
-            sips -s format png "${ICON_PATH}.jpg" --out "$ICON_PATH"
-            rm -f "${ICON_PATH}.jpg"
+            # First, remove alpha channel from source
+            echo "Removing alpha channel from source icon..."
+            sips -s format jpeg -s formatOptions best "$SOURCE_ICON" --out "${SOURCE_ICON}.jpg"
+            sips -s format png "${SOURCE_ICON}.jpg" --out "$SOURCE_ICON"
+            rm -f "${SOURCE_ICON}.jpg"
             
-            echo "Processed file info:"
-            sips -g all "$ICON_PATH" | grep -E "(hasAlpha|pixelWidth|pixelHeight|format)"
-            echo "watchOS app icon processed successfully"
+            # Generate all required sizes (pixel dimensions = size * scale)
+            declare -a SIZES=(
+              "48:icon-48.png"    # 24x24@2x notificationCenter 38mm
+              "55:icon-55.png"    # 27.5x27.5@2x notificationCenter 42mm  
+              "58:icon-58.png"    # 29x29@2x companionSettings
+              "87:icon-87.png"    # 29x29@3x companionSettings
+              "80:icon-80.png"    # 40x40@2x appLauncher 38mm
+              "88:icon-88.png"    # 44x44@2x appLauncher 40mm
+              "92:icon-92.png"    # 46x46@2x appLauncher 41mm
+              "100:icon-100.png"  # 50x50@2x appLauncher 44mm
+              "102:icon-102.png"  # 51x51@2x appLauncher 45mm
+              "108:icon-108.png"  # 54x54@2x appLauncher 49mm
+              "172:icon-172.png"  # 86x86@2x quickLook 38mm
+              "196:icon-196.png"  # 98x98@2x quickLook 42mm
+              "216:icon-216.png"  # 108x108@2x quickLook 44mm
+              "234:icon-234.png"  # 117x117@2x quickLook 45mm
+              "258:icon-258.png"  # 129x129@2x quickLook 49mm
+              "1024:icon-1024.png" # 1024x1024@1x marketing
+            )
+            
+            for ENTRY in "${SIZES[@]}"; do
+              SIZE="${ENTRY%%:*}"
+              FILENAME="${ENTRY##*:}"
+              echo "Creating ${SIZE}x${SIZE} -> $FILENAME"
+              sips -z $SIZE $SIZE "$SOURCE_ICON" --out "$ICON_DIR/$FILENAME"
+            done
+            
+            echo "=== Generated icons ==="
+            ls -la "$ICON_DIR/"
           else
-            echo "Warning: watchOS app icon not found at $ICON_PATH"
-            ls -la "ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset/" || true
+            echo "ERROR: Source icon not found at $SOURCE_ICON"
+            exit 1
           fi
 
       - name: Create App Store Connect API Key
