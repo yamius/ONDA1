@@ -51,25 +51,30 @@ jobs:
       - name: Install iOS/watchOS Platforms
         run: |
           echo "=== Running first launch setup ==="
-          sudo xcodebuild -runFirstLaunch || true
+          sudo xcodebuild -runFirstLaunch
           
-          echo "=== Downloading iOS platform ==="
-          # This is required for Xcode 16+ on macOS 15
-          xcodebuild -downloadPlatform iOS || {
-            echo "iOS platform download failed, trying alternative method..."
-            xcrun simctl runtime add --downloadPlatform iOS || true
-          }
+          echo "=== Downloading iOS platform (required for Xcode 16+ on macos-15) ==="
+          # CRITICAL: Must use sudo and must not mask failures
+          # See: https://github.com/actions/runner-images/issues/10286
+          sudo xcodebuild -downloadPlatform iOS
           
           echo "=== Downloading watchOS platform ==="
-          xcodebuild -downloadPlatform watchOS || {
-            echo "watchOS platform download failed, trying alternative method..."
-            xcrun simctl runtime add --downloadPlatform watchOS || true
-          }
+          sudo xcodebuild -downloadPlatform watchOS
           
-          echo "=== Verify SDKs are available ==="
+          echo "=== Verifying platform installation ==="
+          # Verify iOS platform directory exists
+          PLATFORM_DIR="/Applications/Xcode_16.1.app/Contents/Developer/Platforms/iPhoneOS.platform"
+          if [ -d "$PLATFORM_DIR" ]; then
+            echo "iOS platform installed successfully at $PLATFORM_DIR"
+          else
+            echo "ERROR: iOS platform not found at $PLATFORM_DIR"
+            exit 1
+          fi
+          
+          echo "=== Available SDKs ==="
           xcodebuild -showsdks
-          xcrun --sdk iphoneos --show-sdk-path || echo "iphoneos SDK path not found"
-          xcrun --sdk watchos --show-sdk-path || echo "watchos SDK path not found"
+          xcrun --sdk iphoneos --show-sdk-path
+          xcrun --sdk watchos --show-sdk-path
 
       - name: Setup CocoaPods
         run: |

@@ -78,34 +78,62 @@ runs-on: macos-15
 
 ---
 
-## КРИТИЧЕСКАЯ ПРОБЛЕМА #3: Platform Download Failures
+## КРИТИЧЕСКАЯ ПРОБЛЕМА #3: iOS 18.1 Platform Not Installed (Xcode 16+ on macos-15)
 
 ### Симптомы
 ```
-Unable to connect to simulator.
-Finding content...
-Process completed with exit code 70.
+xcodebuild: error: Unable to find a destination matching the provided destination specifier:
+{ generic:1, platform:iOS }
+Ineligible destinations for the "App" scheme:
+{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device, 
+  error:iOS 18.1 is not installed. To use with Xcode, first download and install the platform }
 ```
 
 ### Причина
-`xcodebuild -downloadPlatform iOS` может падать по разным причинам:
-- Платформы уже установлены
-- Сетевые проблемы Apple CDN
-- Проблемы с симулятором
+GitHub macos-15 runners с Xcode 16.1 **НЕ включают iOS SDK по умолчанию**. Это экономит место на диске runner-а, но требует явной установки платформы перед сборкой.
+
+Проблема документирована: https://github.com/actions/runner-images/issues/10286
 
 ### Решение
-Использовать `continue-on-error: true` и `|| echo`:
+**КРИТИЧЕСКИ ВАЖНО:**
+1. Использовать `sudo` для downloadPlatform
+2. НЕ маскировать ошибки с `|| true` — сборка должна падать если платформа не установилась
+3. Проверить наличие директории платформы после установки
 
 ```yaml
 - name: Install iOS/watchOS Platforms
-  continue-on-error: true
   run: |
-    sudo xcodebuild -runFirstLaunch || true
-    sudo xcodebuild -downloadPlatform iOS || echo "iOS platform download skipped"
-    sudo xcodebuild -downloadPlatform watchOS || echo "watchOS platform download skipped"
-    # Проверка что SDKs доступны
+    echo "=== Running first launch setup ==="
+    sudo xcodebuild -runFirstLaunch
+    
+    echo "=== Downloading iOS platform (required for Xcode 16+ on macos-15) ==="
+    # CRITICAL: Must use sudo and must not mask failures
+    sudo xcodebuild -downloadPlatform iOS
+    
+    echo "=== Downloading watchOS platform ==="
+    sudo xcodebuild -downloadPlatform watchOS
+    
+    echo "=== Verifying platform installation ==="
+    PLATFORM_DIR="/Applications/Xcode_16.1.app/Contents/Developer/Platforms/iPhoneOS.platform"
+    if [ -d "$PLATFORM_DIR" ]; then
+      echo "iOS platform installed successfully"
+    else
+      echo "ERROR: iOS platform not found"
+      exit 1
+    fi
+    
     xcodebuild -showsdks
     xcrun --sdk iphoneos --show-sdk-path
+```
+
+### Альтернатива: Использовать Xcode 15.4 на macos-14
+Если загрузка платформы продолжает падать из-за проблем Apple CDN:
+```yaml
+runs-on: macos-14
+# ...
+- uses: maxim-lobanov/setup-xcode@v1
+  with:
+    xcode-version: '15.4'  # Включает iOS SDK по умолчанию
 ```
 
 ### Важно
