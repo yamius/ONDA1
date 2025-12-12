@@ -151,13 +151,18 @@ runs-on: macos-14
 The following build commands failed:
      CompileAssetCatalog ... watchkitapp Watch App/Assets.xcassets 
      (in target 'watchkitapp Watch App' from project 'App')
+
+The stickers icon set or app icon set named "AppIcon" did not have any applicable content.
 ```
 
 ### Причина
 watchOS иконки требуют:
-1. Формат PNG без альфа-канала (no transparency)
+1. **Формат PNG без альфа-канала** (no transparency)
 2. Цветовое пространство sRGB
 3. Размер ровно 1024x1024 пикселей
+4. **КРИТИЧНО: Правильные idiom/role записи в Contents.json**
+
+**Главная ошибка:** Contents.json содержит только `"idiom": "universal"`, но watchOS требует специфические записи с `"idiom": "watch"` и разными roles (notificationCenter, appLauncher, quickLook, companionSettings) и marketing icon с `"idiom": "watch-marketing"`
 
 ### Решение
 Добавить шаг для обработки иконки перед сборкой. **Метод: JPEG round-trip** (конвертация в JPEG удаляет альфа-канал):
