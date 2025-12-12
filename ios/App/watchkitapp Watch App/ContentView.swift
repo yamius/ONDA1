@@ -352,31 +352,14 @@ struct ContentView: View {
     }
     
     private var partSelectorList: some View {
-        List {
-            ForEach(1...12, id: \.self) { part in
-                Button(action: {
-                    selectedPart = part
-                    sendPartToPhone(part)
-                    requestPracticesFromPhone()
-                }) {
-                    HStack {
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("\(WatchStrings.part) \(part)")
-                                .font(.system(size: 12))
-                                .foregroundColor(.secondary)
-                            Text(WatchStrings.partName(for: part))
-                                .font(.system(size: 14, weight: .medium))
-                        }
-                        Spacer()
-                        if selectedPart == part {
-                            Image(systemName: "checkmark")
-                                .foregroundColor(.cyan)
-                        }
-                    }
-                }
-                .buttonStyle(.plain)
+        PartSelectorView(
+            selectedPart: $selectedPart,
+            heartRate: workoutManager.heartRate,
+            onSelect: { part in
+                sendPartToPhone(part)
+                requestPracticesFromPhone()
             }
-        }
+        )
     }
     
     private var deniedView: some View {
@@ -479,7 +462,6 @@ struct ContentView: View {
     }
     
     private func startPractice(_ practice: WatchPractice) {
-        // Notify iPhone that practice started
         guard WCSession.default.activationState == .activated else { return }
         let message: [String: Any] = [
             "type": "startPractice",
@@ -491,8 +473,6 @@ struct ContentView: View {
         } else {
             WCSession.default.transferUserInfo(message)
         }
-        
-        // Switch to practice session
         mainViewState = .practiceSession(practice)
     }
     
@@ -575,6 +555,55 @@ struct ContentView: View {
         permissionState = .waitingForHR
         waitingSeconds = 0
         startWaitingTimer()
+    }
+}
+
+// MARK: - Part Selector View
+
+struct PartSelectorView: View {
+    @Binding var selectedPart: Int
+    let heartRate: Double
+    let onSelect: (Int) -> Void
+    @Environment(\.dismiss) private var dismiss
+    
+    var body: some View {
+        List {
+            ForEach(1...12, id: \.self) { part in
+                Button(action: {
+                    selectedPart = part
+                    onSelect(part)
+                    dismiss()
+                }) {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("\(WatchStrings.part) \(part)")
+                                .font(.system(size: 12))
+                                .foregroundColor(.secondary)
+                            Text(WatchStrings.partName(for: part))
+                                .font(.system(size: 14, weight: .medium))
+                        }
+                        Spacer()
+                        if selectedPart == part {
+                            Image(systemName: "checkmark")
+                                .foregroundColor(.cyan)
+                        }
+                    }
+                }
+                .buttonStyle(.plain)
+            }
+        }
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                HStack(spacing: 2) {
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(.red)
+                        .font(.system(size: 12))
+                    Text(heartRate > 0 ? "\(Int(heartRate))" : "--")
+                        .font(.system(size: 14, weight: .semibold))
+                }
+            }
+        }
     }
 }
 
