@@ -334,7 +334,8 @@ jobs:
 | Dec 2024 | Platform download exit code 70 | continue-on-error + || true |
 | Dec 2024 | SDK not found | macos-15 + Xcode 16.1 |
 | Dec 2024 | SSL certificate verify failed | Retry workflow |
-| Dec 2024 | iOS 18.1 not installed | Check SDK before download, fail if missing |
+| Dec 2024 | iOS 18.1 not installed | FORCE download platforms (skip "already installed" check) |
+| Dec 2024 | IDEFileSystemSynchronizedGroupsAreEnabled | macos-14/Xcode 15 incompatible with Xcode 16 projects - use macos-15 |
 
 ---
 
