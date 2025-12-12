@@ -648,25 +648,53 @@ struct PracticeSessionView: View {
     let practice: WatchPractice
     let onEnd: (Int) -> Void
     
+    @ObservedObject private var workoutManager = WorkoutManager.shared
+    
     @State private var elapsedSeconds: Int = 0
     @State private var currentTextIndex: Int = 0
     @State private var textOpacity: Double = 1.0
     @State private var timer: Timer?
+    @State private var audioReady = false
+    @State private var checkingCache = true
     
     private let textChangeInterval: Int = 15
     
     var body: some View {
         VStack(spacing: 4) {
-            // Guiding text - maximized for readability
-            ScrollView {
-                Text(currentGuidingText)
-                    .font(.system(size: 18, weight: .medium))
-                    .foregroundColor(.white)
-                    .multilineTextAlignment(.center)
-                    .opacity(textOpacity)
-                    .animation(.easeInOut(duration: 0.5), value: textOpacity)
-                    .padding(.horizontal, 4)
-                    .padding(.vertical, 8)
+            // Audio loading indicator
+            if workoutManager.isAudioLoading || checkingCache {
+                VStack(spacing: 8) {
+                    ProgressView()
+                        .progressViewStyle(CircularProgressViewStyle(tint: .cyan))
+                    Text(checkingCache ? "Checking audio..." : workoutManager.audioLoadingProgress)
+                        .font(.system(size: 12))
+                        .foregroundColor(.secondary)
+                }
+                .padding()
+            } else {
+                // Guiding text - maximized for readability
+                ScrollView {
+                    Text(currentGuidingText)
+                        .font(.system(size: 18, weight: .medium))
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.center)
+                        .opacity(textOpacity)
+                        .animation(.easeInOut(duration: 0.5), value: textOpacity)
+                        .padding(.horizontal, 4)
+                        .padding(.vertical, 8)
+                }
+                
+                // Audio playing indicator
+                if workoutManager.isAudioPlaying {
+                    HStack(spacing: 4) {
+                        Image(systemName: "speaker.wave.2.fill")
+                            .foregroundColor(.cyan)
+                            .font(.system(size: 10))
+                        Text("Playing")
+                            .font(.system(size: 10))
+                            .foregroundColor(.cyan)
+                    }
+                }
             }
             
             // End button - compact at bottom, cyan color matching Part theme
@@ -681,11 +709,36 @@ struct PracticeSessionView: View {
         .padding(.top, 2)
         .padding(.bottom, 4)
         .onAppear {
-            startTimer()
+            checkAudioAndStart()
         }
         .onDisappear {
             timer?.invalidate()
             timer = nil
+            workoutManager.stopAudio()
+        }
+        .onReceive(NotificationCenter.default.publisher(for: Notification.Name("AudioReady"))) { notification in
+            if let practiceId = notification.userInfo?["practiceId"] as? String,
+               practiceId == practice.id,
+               let url = notification.userInfo?["url"] as? URL {
+                audioReady = true
+                workoutManager.playAudio(from: url)
+                startTimer()
+            }
+        }
+    }
+    
+    private func checkAudioAndStart() {
+        // Check if audio is already cached
+        if let cachedURL = workoutManager.getCachedAudioURL(practiceId: practice.id) {
+            checkingCache = false
+            audioReady = true
+            workoutManager.playAudio(from: cachedURL)
+            startTimer()
+        } else {
+            // Request audio from iPhone
+            checkingCache = false
+            workoutManager.requestAudio(practiceId: practice.id)
+            // Timer will start when audio arrives
         }
     }
     

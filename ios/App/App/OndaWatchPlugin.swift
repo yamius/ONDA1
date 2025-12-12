@@ -468,6 +468,39 @@ public class OndaWatchPlugin: CAPPlugin {
         implementation.sendPractices(forPart: partNumber)
         call.resolve()
     }
+    
+    @objc func sendAudioToWatch(_ call: CAPPluginCall) {
+        guard let practiceId = call.getString("practiceId") else {
+            call.reject("Missing practiceId")
+            return
+        }
+        
+        guard let filePath = call.getString("filePath") else {
+            call.reject("Missing filePath")
+            return
+        }
+        
+        let fileURL = URL(fileURLWithPath: filePath)
+        
+        guard FileManager.default.fileExists(atPath: filePath) else {
+            call.reject("File not found: \(filePath)")
+            return
+        }
+        
+        print("[ONDA Plugin] sendAudioToWatch: \(practiceId), file: \(fileURL.lastPathComponent)")
+        implementation.sendAudioToWatch(practiceId: practiceId, fileURL: fileURL)
+        call.resolve()
+    }
+    
+    @objc func sendAudioProgress(_ call: CAPPluginCall) {
+        guard let progress = call.getString("progress") else {
+            call.reject("Missing progress")
+            return
+        }
+        
+        implementation.sendAudioProgress(progress: progress)
+        call.resolve()
+    }
 }
 
 // MARK: - Менеджер WCSession (iOS ↔ watchOS)
@@ -767,9 +800,162 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
                     ])
                 }
             }
+            
+        case "requestAudio":
+            // Watch requests audio file for a practice
+            if let practiceId = data["practiceId"] as? String {
+                addDebugLog("Watch requests audio for: \(practiceId)")
+                // Download audio from CDN and send to Watch
+                downloadAndSendAudio(practiceId: practiceId)
+            }
 
         default:
             addDebugLog("Unknown: \(type)")
+        }
+    }
+    
+    // MARK: - Audio Transfer to Watch
+    
+    private let audioBaseURL = "https://ilckshuxgvrbmibmfpaq.supabase.co/storage/v1/object/public/audio-practices"
+    
+    // Practice ID to audio paths mapping (all tracks per practice)
+    private let practiceAudioMap: [String: [String]] = [
+        "p1-1": ["p1-1_Breath of Life/p1-1_Breath of Life-1.mp3", "p1-1_Breath of Life/p1-1_Breath of Life-2.mp3"],
+        "p1-2": ["p1-2_Sense of Being/p1-2_Sense of Being-1.mp3", "p1-2_Sense of Being/p1-2_Sense of Being-2.mp3"],
+        "p1-3": ["p1-3_Warm Pulse/p1-3_Warm Pulse-1.mp3", "p1-3_Warm Pulse/p1-3_Warm Pulse-2.mp3"],
+        "p1-4": ["p1-4_Still Wave/p1-4_Still Wave-1.mp3", "p1-4_Still Wave/p1-4_Still Wave-2.mp3"],
+        "p1-5": ["p1-5_Inner Listening/p1-5_Inner Listening-1.mp3", "p1-5_Inner Listening/p1-5_Inner Listening-2.mp3"],
+        "p1-6": ["p1-6_First Light/p1-6_First Light-1.mp3", "p1-6_First Light/p1-6_First Light-2.mp3"],
+        "p1-7": ["p1-7_Liquid Presence/p1-7_Liquid Presence-1.mp3", "p1-7_Liquid Presence/p1-7_Liquid Presence-2.mp3"],
+        "p1-8": ["p1-8_Breath Counting/p1-8_Breath Counting-1.mp3", "p1-8_Breath Counting/p1-8_Breath Counting-2.mp3"],
+        "p1-9": ["p1-9_Point of Stillness/p1-9_Point of Stillness-1.mp3", "p1-9_Point of Stillness/p1-9_Point of Stillness-2.mp3", "p1-9_Point of Stillness/p1-9_Point of Stillness-3.mp3"],
+        "p1-10": ["p1-10_I Am Stillness/p1-10_I Am Stillness-1.mp3", "p1-10_I Am Stillness/p1-10_I Am Stillness-2.mp3", "p1-10_I Am Stillness/p1-10_I Am Stillness-3.mp3"],
+        "p1-11": ["p1-11_Earth Flow/p1-11_Earth Flow-1.mp3", "p1-11_Earth Flow/p1-11_Earth Flow-2.mp3", "p1-11_Earth Flow/p1-11_Earth Flow-3.mp3", "p1-11_Earth Flow/p1-11_Earth Flow-4.mp3"],
+        "p1-12": ["p1-12_Body Root/p1-12_Body Root-1.mp3", "p1-12_Body Root/p1-12_Body Root-2.mp3", "p1-12_Body Root/p1-12_Body Root-3.mp3", "p1-12_Body Root/p1-12_Body Root-4.mp3"]
+    ]
+    
+    /// Download audio from CDN and send to Watch
+    /// Downloads first track only for faster start, watch loops it
+    func downloadAndSendAudio(practiceId: String) {
+        guard let audioPaths = practiceAudioMap[practiceId], !audioPaths.isEmpty else {
+            addDebugLog("No audio paths for: \(practiceId)")
+            sendAudioProgress(progress: "Audio not found")
+            return
+        }
+        
+        // Use first track for quick start
+        let audioPath = audioPaths[0]
+        
+        // Check if already cached on iPhone
+        let fileManager = FileManager.default
+        let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let cachedURL = documentsURL.appendingPathComponent("audio_\(practiceId).mp3")
+        
+        if fileManager.fileExists(atPath: cachedURL.path) {
+            addDebugLog("Using cached audio for \(practiceId)")
+            sendAudioToWatch(practiceId: practiceId, fileURL: cachedURL)
+            return
+        }
+        
+        // Download from CDN
+        guard let encodedPath = audioPath.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed),
+              let downloadURL = URL(string: "\(audioBaseURL)/\(encodedPath)") else {
+            addDebugLog("Invalid audio URL")
+            sendAudioProgress(progress: "URL error")
+            return
+        }
+        
+        addDebugLog("Downloading: \(audioPath)")
+        sendAudioProgress(progress: "Downloading...")
+        
+        let task = URLSession.shared.downloadTask(with: downloadURL) { [weak self] tempURL, response, error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                self.addDebugLog("Download error: \(error.localizedDescription)")
+                self.sendAudioProgress(progress: "Download failed")
+                return
+            }
+            
+            guard let tempURL = tempURL else {
+                self.addDebugLog("No temp file")
+                self.sendAudioProgress(progress: "Download failed")
+                return
+            }
+            
+            do {
+                // Remove existing file if present
+                if fileManager.fileExists(atPath: cachedURL.path) {
+                    try fileManager.removeItem(at: cachedURL)
+                }
+                
+                // Move downloaded file to cache
+                try fileManager.moveItem(at: tempURL, to: cachedURL)
+                
+                self.addDebugLog("Downloaded and cached: \(practiceId)")
+                self.sendAudioProgress(progress: "Sending to Watch...")
+                
+                // Send to Watch
+                self.sendAudioToWatch(practiceId: practiceId, fileURL: cachedURL)
+                
+            } catch {
+                self.addDebugLog("Cache error: \(error.localizedDescription)")
+                self.sendAudioProgress(progress: "Cache error")
+            }
+        }
+        
+        task.resume()
+    }
+    
+    /// Send audio file to Watch
+    func sendAudioToWatch(practiceId: String, fileURL: URL) {
+        guard let session = session else {
+            print("[ONDA Manager] No session for audio transfer")
+            return
+        }
+        
+        guard session.isPaired && session.isWatchAppInstalled else {
+            print("[ONDA Manager] Watch not paired or app not installed")
+            return
+        }
+        
+        // Transfer file with metadata
+        let metadata: [String: Any] = [
+            "practiceId": practiceId,
+            "ts": Date().timeIntervalSince1970
+        ]
+        
+        print("[ONDA Manager] Transferring audio to Watch: \(fileURL.lastPathComponent)")
+        
+        session.transferFile(fileURL, metadata: metadata)
+    }
+    
+    /// Send progress update to Watch
+    func sendAudioProgress(progress: String) {
+        guard let session = session, session.isReachable else { return }
+        
+        let message: [String: Any] = [
+            "type": "audioProgress",
+            "progress": progress,
+            "ts": Date().timeIntervalSince1970
+        ]
+        
+        session.sendMessage(message, replyHandler: nil) { error in
+            print("[ONDA Manager] audioProgress error: \(error)")
+        }
+    }
+    
+    // MARK: - WCSession File Transfer Delegate
+    
+    func session(_ session: WCSession, didFinish fileTransfer: WCSessionFileTransfer, error: Error?) {
+        if let error = error {
+            addDebugLog("File transfer failed: \(error.localizedDescription)")
+            sendAudioProgress(progress: "Transfer failed")
+        } else {
+            if let practiceId = fileTransfer.file.metadata?["practiceId"] as? String {
+                addDebugLog("File transfer complete: \(practiceId)")
+            }
+            // Audio ready notification sent from Watch side when it receives the file
         }
     }
 }
