@@ -276,23 +276,28 @@ struct ContentView: View {
                         partSelectorList
                     } label: {
                         HStack {
-                            VStack(alignment: .leading, spacing: 1) {
+                            VStack(alignment: .leading, spacing: 2) {
                                 Text("\(WatchStrings.part) \(selectedPart)")
-                                    .font(.system(size: 10))
-                                    .foregroundColor(.secondary)
+                                    .font(.system(size: 11, weight: .medium))
+                                    .foregroundColor(.cyan.opacity(0.8))
                                 Text(WatchStrings.partName(for: selectedPart))
-                                    .font(.system(size: 13, weight: .medium))
+                                    .font(.system(size: 14, weight: .semibold))
+                                    .foregroundColor(.white)
                             }
                             Spacer()
                             Image(systemName: "chevron.right")
-                                .font(.system(size: 10))
-                                .foregroundColor(.secondary)
+                                .font(.system(size: 12, weight: .medium))
+                                .foregroundColor(.cyan)
                         }
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 8)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 10)
                         .background(
-                            RoundedRectangle(cornerRadius: 8)
-                                .fill(Color.black.opacity(0.2))
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color.cyan.opacity(0.15))
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.cyan.opacity(0.4), lineWidth: 1)
+                                )
                         )
                     }
                     .buttonStyle(.plain)
@@ -570,24 +575,29 @@ struct PracticeRow: View {
     var body: some View {
         Button(action: onTap) {
             HStack {
-                VStack(alignment: .leading, spacing: 2) {
+                VStack(alignment: .leading, spacing: 3) {
                     Text(practice.name)
-                        .font(.system(size: 13, weight: .medium))
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(.white)
                         .lineLimit(1)
                     Text(practice.duration)
-                        .font(.system(size: 10))
-                        .foregroundColor(.secondary)
+                        .font(.system(size: 11, weight: .medium))
+                        .foregroundColor(.white.opacity(0.7))
                 }
                 Spacer()
-                Image(systemName: "play.fill")
-                    .font(.system(size: 10))
-                    .foregroundColor(.cyan)
+                Image(systemName: "play.circle.fill")
+                    .font(.system(size: 22))
+                    .foregroundColor(.green)
             }
-            .padding(.horizontal, 10)
-            .padding(.vertical, 8)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 10)
             .background(
-                RoundedRectangle(cornerRadius: 8)
-                    .fill(Color.black.opacity(0.2))
+                RoundedRectangle(cornerRadius: 10)
+                    .fill(Color.green.opacity(0.15))
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.green.opacity(0.4), lineWidth: 1)
+                    )
             )
         }
         .buttonStyle(.plain)
