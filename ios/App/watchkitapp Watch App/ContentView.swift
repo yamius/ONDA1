@@ -285,9 +285,6 @@ struct ContentView: View {
                                     .foregroundColor(.white)
                             }
                             Spacer()
-                            Image(systemName: "chevron.right")
-                                .font(.system(size: 12, weight: .medium))
-                                .foregroundColor(.cyan)
                         }
                         .padding(.horizontal, 12)
                         .padding(.vertical, 10)
@@ -585,9 +582,6 @@ struct PracticeRow: View {
                         .foregroundColor(.white.opacity(0.7))
                 }
                 Spacer()
-                Image(systemName: "play.circle.fill")
-                    .font(.system(size: 22))
-                    .foregroundColor(.green)
             }
             .padding(.horizontal, 12)
             .padding(.vertical, 10)
