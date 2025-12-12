@@ -49,12 +49,13 @@ jobs:
           xcodebuild -showsdks
 
       - name: Install iOS/watchOS Platforms
+        continue-on-error: true
         run: |
-          echo "=== Downloading and installing iOS platform ==="
-          sudo xcodebuild -downloadPlatform iOS
+          echo "=== Running first launch setup ==="
           sudo xcodebuild -runFirstLaunch || true
-          echo "=== Downloading and installing watchOS platform ==="
-          sudo xcodebuild -downloadPlatform watchOS
+          echo "=== Downloading platforms (may fail if already installed) ==="
+          sudo xcodebuild -downloadPlatform iOS || echo "iOS platform download skipped"
+          sudo xcodebuild -downloadPlatform watchOS || echo "watchOS platform download skipped"
           echo "=== Verify SDKs are available ==="
           xcodebuild -showsdks
           xcrun --sdk iphoneos --show-sdk-path
