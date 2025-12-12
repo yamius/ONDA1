@@ -41,35 +41,26 @@ jobs:
         with:
           xcode-version: '16.1'
 
-      - name: Download iOS and watchOS Platforms with retry
+      - name: Download iOS and watchOS Platforms (optional)
+        continue-on-error: true
         run: |
-          download_platform() {
-            local platform=$1
-            local max_attempts=3
-            local attempt=1
-            
-            while [ $attempt -le $max_attempts ]; do
-              echo "Attempting to download $platform platform (attempt $attempt/$max_attempts)..."
-              if sudo xcodebuild -downloadPlatform "$platform"; then
-                echo "$platform platform download completed!"
-                return 0
-              else
-                echo "Download failed for $platform, waiting 30 seconds before retry..."
-                sleep 30
-                attempt=$((attempt + 1))
-              fi
-            done
-            
-            echo "Failed to download $platform after $max_attempts attempts"
-            return 1
-          }
+          echo "Checking available SDKs first..."
+          xcodebuild -showsdks || true
           
-          echo "=== Downloading iOS Platform ==="
-          download_platform iOS
+          # Only download if not already available
+          if ! xcodebuild -showsdks | grep -q "iphoneos18"; then
+            echo "=== Downloading iOS Platform ==="
+            sudo xcodebuild -downloadPlatform iOS || echo "iOS platform download failed, continuing..."
+          else
+            echo "iOS SDK already available"
+          fi
           
-          echo ""
-          echo "=== Downloading watchOS Platform ==="
-          download_platform watchOS
+          if ! xcodebuild -showsdks | grep -q "watchos"; then
+            echo "=== Downloading watchOS Platform ==="
+            sudo xcodebuild -downloadPlatform watchOS || echo "watchOS platform download failed, continuing..."
+          else
+            echo "watchOS SDK already available"
+          fi
 
       - name: Verify iOS SDK
         run: |
