@@ -56,18 +56,28 @@ jobs:
           echo "=== Accepting Xcode license ==="
           sudo xcodebuild -license accept || true
           
-          echo "=== Downloading iOS platform (required for Xcode 16+ on macos-15) ==="
-          sudo xcodebuild -downloadPlatform iOS || echo "iOS platform download skipped (may already exist)"
+          echo "=== Checking if iOS SDK exists ==="
+          if xcrun --sdk iphoneos --show-sdk-path 2>/dev/null; then
+            echo "iOS SDK already installed"
+          else
+            echo "=== iOS SDK missing, downloading... ==="
+            sudo xcodebuild -downloadPlatform iOS
+          fi
           
-          echo "=== Downloading watchOS platform ==="
-          sudo xcodebuild -downloadPlatform watchOS || echo "watchOS platform download skipped (may already exist)"
+          echo "=== Checking if watchOS SDK exists ==="
+          if xcrun --sdk watchos --show-sdk-path 2>/dev/null; then
+            echo "watchOS SDK already installed"
+          else
+            echo "=== watchOS SDK missing, downloading... ==="
+            sudo xcodebuild -downloadPlatform watchOS
+          fi
           
           echo "=== Verifying platforms ==="
           xcodebuild -showsdks
           
-          echo "=== SDK Paths ==="
-          xcrun --sdk iphoneos --show-sdk-path
-          xcrun --sdk watchos --show-sdk-path
+          echo "=== Final SDK verification ==="
+          xcrun --sdk iphoneos --show-sdk-path || { echo "ERROR: iOS SDK not available"; exit 1; }
+          xcrun --sdk watchos --show-sdk-path || { echo "ERROR: watchOS SDK not available"; exit 1; }
 
       - name: Setup CocoaPods
         run: |
