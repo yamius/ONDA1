@@ -63,8 +63,13 @@ jobs:
 
       - name: Setup CocoaPods
         run: |
-          gem update xcodeproj
-          gem install cocoapods
+          # Fix Xcode 16 project format for CocoaPods compatibility
+          echo "=== Fixing objectVersion for CocoaPods ==="
+          sed -i '' 's/objectVersion = 70/objectVersion = 56/' ios/App/App.xcodeproj/project.pbxproj || true
+          grep "objectVersion" ios/App/App.xcodeproj/project.pbxproj | head -1
+          # Update gems
+          gem install xcodeproj --no-document
+          gem install cocoapods --no-document
           pod --version
 
       - name: Sync Capacitor
