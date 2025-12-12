@@ -222,14 +222,6 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 8) {
-                    // Header with ONDA
-                    HStack {
-                        Text(WatchStrings.appName)
-                            .font(.system(size: 13, weight: .semibold))
-                            .foregroundColor(.cyan)
-                        Spacer()
-                    }
-                    
                     // Heart rate card
                     VStack(spacing: 4) {
                         HStack(spacing: 4) {
@@ -327,6 +319,7 @@ struct ContentView: View {
                 .padding(.top, 2)
             }
         }
+        .navigationTitle(WatchStrings.appName)
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
