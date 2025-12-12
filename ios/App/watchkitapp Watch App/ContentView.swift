@@ -669,13 +669,13 @@ struct PracticeSessionView: View {
                     .padding(.vertical, 8)
             }
             
-            // End button - compact at bottom
+            // End button - compact at bottom, cyan color matching Part theme
             Button(action: endPractice) {
                 Text(WatchStrings.endPractice)
                     .font(.system(size: 12, weight: .medium))
             }
             .buttonStyle(.borderedProminent)
-            .tint(.red.opacity(0.7))
+            .tint(.cyan)
         }
         .padding(.horizontal, 4)
         .padding(.top, 2)
