@@ -2,11 +2,14 @@
 
 ## Текущие задачи (TODO)
 - [ ] Подключение платёжных систем для оформления платной подписки
-- [ ] Добавление возможности захода с часов на базовые практики
-- [ ] Тестирование Apple Watch HR streaming
+- [ ] Тестирование Apple Watch практик через TestFlight
 - [ ] Улучшение UX практик
 
 ## Недавно сделано (DONE)
+- [x] Watch практики Part 1 — полная реализация системы практик на Apple Watch
+- [x] PracticeSessionView — экран практики с таймером, HR и направляющими текстами (15-сек интервалы)
+- [x] WCSession синхронизация — iPhone → Watch передача практик, Watch → iPhone события start/end
+- [x] 12 практик Part 1 с полными guiding texts (3мин=12 текстов, 6мин=24, 12мин=48)
 - [x] Life Rhythm сервис — автоматическое чтение времени сна из HealthKit
 - [x] Метрики ритма: регулярность засыпания/пробуждения, качество сна, streak
 - [x] Оптимизация структуры проекта — добавлены `.assistant/`, обновлены `replit.md` и `README.md`
@@ -154,19 +157,31 @@ Preferred communication style: Simple, everyday language.
 ## Apple Watch Integration
 
 **Файлы watchOS приложения:**
-- `ios/App/watchkitapp Watch App/ContentView.swift` — UI экраны
+- `ios/App/watchkitapp Watch App/ContentView.swift` — UI экраны (MainView, PracticeSessionView)
 - `ios/App/watchkitapp Watch App/WorkoutManager.swift` — HR + WCSession
 - `ios/App/watchkitapp Watch App/OndaWatchApp.swift` — точка входа
 
+**Файлы iPhone (WCSession):**
+- `ios/App/App/OndaWatchPlugin.swift` — Capacitor plugin + OndaWatchManager + PracticeData
+
 **Функционал часов:**
 - Real-time HR streaming на iPhone через WCSession
-- Выбор текущей Части (1-3)
-- Локализация (русский по умолчанию, следует языку iPhone)
+- Выбор текущей Части (1-12) через NavigationLink picker
+- Список практик текущей части с кнопками запуска
+- Экран практики с таймером, HR, направляющими текстами (смена каждые 15 сек с fade)
+- Кнопка завершения практики с уведомлением iPhone
 
 **Коммуникация Watch ↔ iPhone:**
+- Watch → iPhone: `heartRate`, `requestPractices`, `startPractice`, `endPractice`
+- iPhone → Watch: `practices` (массив практик с guidingTexts)
 - `sendMessage` — когда iPhone reachable
 - `transferUserInfo` — надёжная доставка в фоне
-- Формат данных: `["type": "heartRate", "value": 72, "ts": timestamp]`
+- iPhone уведомляет JS через `notifyListeners("practiceStarted"/"practiceEnded")`
+
+**Практики Part 1:**
+- 12 практик с полными guiding texts (3мин=12, 6мин=24, 12мин=48 текстов)
+- Данные хранятся в `part1Practices` в OndaWatchPlugin.swift
+- Текст меняется каждые 15 секунд с 0.5s fade анимацией
 
 ## Audio System
 
