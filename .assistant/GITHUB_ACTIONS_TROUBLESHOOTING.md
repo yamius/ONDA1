@@ -198,7 +198,75 @@ watchOS иконки требуют:
 
 ---
 
-## ПРОБЛЕМА #5: SSL Certificate Errors
+## КРИТИЧЕСКАЯ ПРОБЛЕМА #5: iOS Platform Not Activated on macos-15
+
+### Симптомы
+```
+xcodebuild: error: Unable to find a destination matching the provided destination specifier:
+{ platform:iOS, id:dvtdevice-DVTiPhonePlaceholder-iphoneos:placeholder, name:Any iOS Device, 
+  error:iOS 18.1 is not installed. To use with Xcode, first download and install the platform }
+```
+
+При этом `xcrun --sdk iphoneos --show-sdk-path` возвращает путь к SDK!
+
+### Причина
+Известный баг macos-15 runners — SDK файлы присутствуют, но платформа не полностью активирована. Проверка `xcrun` проходит, но `xcodebuild` не видит платформу.
+
+### Решение
+**ПРИНУДИТЕЛЬНО скачивать платформы** (без проверки "already installed"):
+
+```yaml
+- name: Install iOS/watchOS Platforms
+  run: |
+    sudo xcodebuild -runFirstLaunch || true
+    sudo xcodebuild -license accept || true
+    
+    # FORCE download - не проверяем "already installed"
+    sudo xcodebuild -downloadPlatform iOS || true
+    sudo xcodebuild -downloadPlatform watchOS || true
+    
+    xcodebuild -showsdks
+    xcrun --sdk iphoneos --show-sdk-path
+    xcrun --sdk watchos --show-sdk-path
+```
+
+### Важно
+- `|| true` позволяет продолжить даже если платформа уже скачана
+- Если ошибка повторяется — перезапустить workflow (попадёт на другой runner)
+
+---
+
+## КРИТИЧЕСКАЯ ПРОБЛЕМА #6: Xcode 15 Incompatible with Xcode 16 Projects
+
+### Симптомы
+```
+Assertion failed: IDEFileSystemSynchronizedGroupsAreEnabled()
+✖ Updating iOS native dependencies with pod install - failed!
+```
+
+### Причина
+Проекты созданные в Xcode 16 используют новый формат файловой синхронизации групп. Xcode 15.x **не понимает** этот формат, даже если `objectVersion` изменён с 70 на 56.
+
+### Решение
+**НЕ использовать macos-14 + Xcode 15.x для проектов Xcode 16!**
+
+Единственный рабочий вариант: `macos-15 + Xcode 16.1`
+
+```yaml
+runs-on: macos-15
+
+- uses: maxim-lobanov/setup-xcode@v1
+  with:
+    xcode-version: '16.1'
+```
+
+### Важно
+- `sed` для objectVersion помогает только CocoaPods, но не исправляет формат групп
+- Миграция проекта на Xcode 15 формат требует ручной работы в Xcode
+
+---
+
+## ПРОБЛЕМА #7: SSL Certificate Errors
 
 ### Симптомы
 ```
@@ -215,7 +283,7 @@ SSL_connect returned=1 errno=0 peeraddr=140.82.116.6:443 state=error: certificat
 
 ---
 
-## ПРОБЛЕМА #6: Fastlane Match Timeout
+## ПРОБЛЕМА #8: Fastlane Match Timeout
 
 ### Симптомы
 ```
@@ -233,7 +301,7 @@ env:
 
 ---
 
-## ПРОБЛЕМА #7: Keychain Access
+## ПРОБЛЕМА #9: Keychain Access
 
 ### Симптомы
 ```
