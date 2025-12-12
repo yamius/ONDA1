@@ -717,13 +717,27 @@ struct PracticeSessionView: View {
                 }
             }
             
-            // End button - compact at bottom, cyan color matching Part theme
+            // End button - styled like other buttons, purple theme
             Button(action: endPractice) {
-                Text(WatchStrings.endPractice)
-                    .font(.system(size: 12, weight: .medium))
+                HStack {
+                    Spacer()
+                    Text(WatchStrings.endPractice)
+                        .font(.system(size: 14, weight: .semibold))
+                        .foregroundColor(.white)
+                    Spacer()
+                }
+                .padding(.horizontal, 12)
+                .padding(.vertical, 10)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.purple.opacity(0.15))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.purple.opacity(0.4), lineWidth: 1)
+                        )
+                )
             }
-            .buttonStyle(.borderedProminent)
-            .tint(.cyan)
+            .buttonStyle(.plain)
         }
         .padding(.horizontal, 4)
         .padding(.top, 2)
