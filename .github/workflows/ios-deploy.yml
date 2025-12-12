@@ -97,6 +97,23 @@ jobs:
           fi
           echo "All 16 icons present"
 
+      - name: Fix watchOS App Icons (remove alpha channel)
+        run: |
+          ICON_DIR="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset"
+          echo "=== Removing alpha channel from watchOS icons ==="
+          for icon in "$ICON_DIR"/*.png; do
+            if [ -f "$icon" ]; then
+              echo "Processing: $(basename "$icon")"
+              # JPEG round-trip removes alpha channel (JPEG doesn't support transparency)
+              sips -s format jpeg -s formatOptions best "$icon" --out "${icon}.jpg" 2>/dev/null
+              sips -s format png "${icon}.jpg" --out "$icon" 2>/dev/null
+              rm -f "${icon}.jpg"
+            fi
+          done
+          echo "=== Verifying alpha channel removed ==="
+          sips -g all "$ICON_DIR/icon-1024.png" | grep -E "(hasAlpha|pixelWidth)" || true
+          echo "=== Done processing watchOS icons ==="
+
       - name: Create App Store Connect API Key
         run: |
           mkdir -p /Users/runner/private_keys
