@@ -88,12 +88,14 @@ jobs:
           ICON_DIR="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset"
           echo "=== Checking watchOS icons ==="
           ls -la "$ICON_DIR/"
-          # Verify icon-1024.png exists (marketing icon is required)
-          if [ ! -f "$ICON_DIR/icon-1024.png" ]; then
-            echo "ERROR: icon-1024.png not found!"
+          # Count icon files (should be 16)
+          ICON_COUNT=$(ls "$ICON_DIR"/icon-*.png 2>/dev/null | wc -l)
+          echo "Found $ICON_COUNT icon files"
+          if [ "$ICON_COUNT" -lt 16 ]; then
+            echo "ERROR: Expected 16 icons, found $ICON_COUNT"
             exit 1
           fi
-          echo "All icons present"
+          echo "All 16 icons present"
 
       - name: Create App Store Connect API Key
         run: |
