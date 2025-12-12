@@ -92,7 +92,7 @@ jobs:
 
       - name: Fix watchOS App Icon (remove alpha channel)
         run: |
-          ICON_PATH="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png"
+          ICON_PATH="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset/_ONDA_logo.png"
           if [ -f "$ICON_PATH" ]; then
             echo "Converting watchOS app icon to remove alpha channel..."
             # Use sips (built-in macOS tool) to convert PNG and flatten alpha
