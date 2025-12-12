@@ -93,6 +93,15 @@ enum MainViewState {
     case practiceSession(WatchPractice)
 }
 
+// MARK: - Scroll Tracking
+
+struct ScrollOffsetPreferenceKey: PreferenceKey {
+    static var defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) {
+        value = nextValue()
+    }
+}
+
 // MARK: - Content View
 
 struct ContentView: View {
@@ -104,6 +113,7 @@ struct ContentView: View {
     @State private var practices: [WatchPractice] = []
     @State private var mainViewState: MainViewState = .main
     @State private var isLoadingPractices: Bool = false
+    @State private var showHRInTitle: Bool = false
     
     var body: some View {
         Group {
@@ -222,7 +232,13 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 8) {
-                    // Heart rate card
+                    // Heart rate card with scroll tracking
+                    GeometryReader { geo in
+                        Color.clear
+                            .preference(key: ScrollOffsetPreferenceKey.self, value: geo.frame(in: .named("scroll")).minY)
+                    }
+                    .frame(height: 0)
+                    
                     VStack(spacing: 4) {
                         HStack(spacing: 4) {
                             Image(systemName: "heart.fill")
@@ -319,7 +335,13 @@ struct ContentView: View {
                 .padding(.top, 2)
             }
         }
-        .navigationTitle(WatchStrings.appName)
+        .coordinateSpace(name: "scroll")
+        .onPreferenceChange(ScrollOffsetPreferenceKey.self) { offset in
+            withAnimation(.easeInOut(duration: 0.2)) {
+                showHRInTitle = offset < -20
+            }
+        }
+        .navigationTitle(showHRInTitle ? "\(workoutManager.heartRate > 0 ? "\(Int(workoutManager.heartRate))" : "--") BPM" : WatchStrings.appName)
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
