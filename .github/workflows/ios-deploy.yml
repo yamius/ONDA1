@@ -95,14 +95,20 @@ jobs:
           ICON_PATH="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset/_ONDA_logo.png"
           if [ -f "$ICON_PATH" ]; then
             echo "Converting watchOS app icon to remove alpha channel..."
-            # Use sips (built-in macOS tool) to convert PNG and flatten alpha
-            sips -s format png -s formatOptions default "$ICON_PATH" --out "$ICON_PATH.tmp"
-            # Remove alpha channel by converting to RGB
-            sips -s format png --setProperty formatOptions 'no-alpha' "$ICON_PATH.tmp" --out "$ICON_PATH" 2>/dev/null || mv "$ICON_PATH.tmp" "$ICON_PATH"
-            rm -f "$ICON_PATH.tmp"
-            echo "watchOS app icon processed"
+            echo "Original file info:"
+            sips -g all "$ICON_PATH" | grep -E "(hasAlpha|pixelWidth|pixelHeight|format)"
+            
+            # Method: Convert to JPEG (loses alpha) then back to PNG
+            sips -s format jpeg -s formatOptions best "$ICON_PATH" --out "${ICON_PATH}.jpg"
+            sips -s format png "${ICON_PATH}.jpg" --out "$ICON_PATH"
+            rm -f "${ICON_PATH}.jpg"
+            
+            echo "Processed file info:"
+            sips -g all "$ICON_PATH" | grep -E "(hasAlpha|pixelWidth|pixelHeight|format)"
+            echo "watchOS app icon processed successfully"
           else
             echo "Warning: watchOS app icon not found at $ICON_PATH"
+            ls -la "ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset/" || true
           fi
 
       - name: Create App Store Connect API Key

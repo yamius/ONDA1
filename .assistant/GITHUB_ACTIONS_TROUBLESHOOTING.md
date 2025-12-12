@@ -160,23 +160,36 @@ watchOS иконки требуют:
 3. Размер ровно 1024x1024 пикселей
 
 ### Решение
-Добавить шаг для обработки иконки перед сборкой:
+Добавить шаг для обработки иконки перед сборкой. **Метод: JPEG round-trip** (конвертация в JPEG удаляет альфа-канал):
 
 ```yaml
 - name: Fix watchOS App Icon (remove alpha channel)
   run: |
-    ICON_PATH="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png"
+    ICON_PATH="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset/_ONDA_logo.png"
     if [ -f "$ICON_PATH" ]; then
       echo "Converting watchOS app icon to remove alpha channel..."
-      sips -s format png -s formatOptions default "$ICON_PATH" --out "$ICON_PATH.tmp"
-      sips -s format png --setProperty formatOptions 'no-alpha' "$ICON_PATH.tmp" --out "$ICON_PATH" 2>/dev/null || mv "$ICON_PATH.tmp" "$ICON_PATH"
-      rm -f "$ICON_PATH.tmp"
+      echo "Original file info:"
+      sips -g all "$ICON_PATH" | grep -E "(hasAlpha|pixelWidth|pixelHeight|format)"
+      
+      # Method: Convert to JPEG (loses alpha) then back to PNG
+      sips -s format jpeg -s formatOptions best "$ICON_PATH" --out "${ICON_PATH}.jpg"
+      sips -s format png "${ICON_PATH}.jpg" --out "$ICON_PATH"
+      rm -f "${ICON_PATH}.jpg"
+      
+      echo "Processed file info:"
+      sips -g all "$ICON_PATH" | grep -E "(hasAlpha|pixelWidth|pixelHeight|format)"
     fi
 ```
+
+### Почему JPEG round-trip?
+- `sips --setProperty formatOptions 'no-alpha'` **НЕ РАБОТАЕТ** — это некорректный параметр
+- JPEG формат физически не поддерживает альфа-канал
+- Конвертация PNG → JPEG → PNG гарантированно удаляет прозрачность
 
 ### Важно
 - `sips` — встроенный macOS инструмент для обработки изображений
 - Шаг должен быть ПОСЛЕ `npx cap sync ios` и ПЕРЕД `fastlane ios beta`
+- Файл иконки: `_ONDA_logo.png` (фирменный логотип ONDA)
 
 ---
 
