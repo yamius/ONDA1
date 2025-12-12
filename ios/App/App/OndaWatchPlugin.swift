@@ -351,6 +351,81 @@ let part1Practices: [PracticeData] = [
     )
 ]
 
+// MARK: - Text Splitting for Watch
+
+/// Разбивает длинные тексты на части для лучшего отображения на часах
+/// maxLength: максимальная длина текста (по умолчанию 50 символов для Watch)
+func splitLongTexts(_ texts: [String], maxLength: Int = 50) -> [String] {
+    var result: [String] = []
+    
+    for text in texts {
+        if text.count <= maxLength {
+            result.append(text)
+        } else {
+            // Разбить текст на части
+            let parts = splitTextIntoParts(text, maxLength: maxLength)
+            result.append(contentsOf: parts)
+        }
+    }
+    
+    return result
+}
+
+/// Разбивает один длинный текст на части по ближайшему разделителю
+func splitTextIntoParts(_ text: String, maxLength: Int) -> [String] {
+    var parts: [String] = []
+    var remaining = text
+    
+    while remaining.count > maxLength {
+        // Ищем место для разбиения (приоритет: \n, ., пробел)
+        let searchRange = remaining.prefix(maxLength + 10) // небольшой запас
+        
+        var splitIndex: String.Index? = nil
+        
+        // 1. Сначала ищем \n
+        if let newlineRange = searchRange.range(of: "\n", options: .backwards) {
+            splitIndex = newlineRange.lowerBound
+        }
+        // 2. Затем точку с пробелом
+        else if let periodRange = searchRange.range(of: ". ", options: .backwards) {
+            splitIndex = searchRange.index(after: periodRange.lowerBound)
+        }
+        // 3. Затем просто пробел ближе к середине
+        else {
+            let midPoint = remaining.index(remaining.startIndex, offsetBy: min(maxLength, remaining.count))
+            let searchBack = remaining[..<midPoint]
+            if let spaceRange = searchBack.range(of: " ", options: .backwards) {
+                splitIndex = spaceRange.upperBound
+            }
+        }
+        
+        // Если нашли место для разбиения
+        if let idx = splitIndex, idx > remaining.startIndex {
+            let part = String(remaining[..<idx]).trimmingCharacters(in: .whitespacesAndNewlines)
+            if !part.isEmpty {
+                parts.append(part)
+            }
+            remaining = String(remaining[idx...]).trimmingCharacters(in: .whitespacesAndNewlines)
+        } else {
+            // Не нашли хорошее место — берём первые maxLength символов
+            let cutIndex = remaining.index(remaining.startIndex, offsetBy: min(maxLength, remaining.count))
+            let part = String(remaining[..<cutIndex]).trimmingCharacters(in: .whitespacesAndNewlines)
+            if !part.isEmpty {
+                parts.append(part)
+            }
+            remaining = String(remaining[cutIndex...]).trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+    }
+    
+    // Добавляем остаток
+    let trimmed = remaining.trimmingCharacters(in: .whitespacesAndNewlines)
+    if !trimmed.isEmpty {
+        parts.append(trimmed)
+    }
+    
+    return parts
+}
+
 @objc(OndaWatchPlugin)
 public class OndaWatchPlugin: CAPPlugin {
 
@@ -519,13 +594,15 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         }
         
         // Only Part 1 for now
+        // Apply text splitting for better Watch display
         let practices: [[String: Any]] = part1Practices.map { practice in
+            let splitTexts = splitLongTexts(practice.guidingTexts, maxLength: 50)
             return [
                 "id": practice.id,
                 "name": practice.name,
                 "duration": practice.duration,
                 "targetTime": practice.targetTime,
-                "guidingTexts": practice.guidingTexts
+                "guidingTexts": splitTexts
             ]
         }
         
@@ -560,12 +637,15 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
             return
         }
         
+        // Apply text splitting for better Watch display
+        let splitTexts = splitLongTexts(practice.guidingTexts, maxLength: 50)
+        
         let message: [String: Any] = [
             "type": "practiceData",
             "id": practice.id,
             "name": practice.name,
             "targetTime": practice.targetTime,
-            "guidingTexts": practice.guidingTexts,
+            "guidingTexts": splitTexts,
             "ts": Date().timeIntervalSince1970
         ]
         
