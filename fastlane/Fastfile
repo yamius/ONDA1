@@ -62,8 +62,7 @@ platform :ios do
     )
     
     # Build the app with watchOS
-    # IMPORTANT: Do NOT use -sdk iphoneos as it overrides watchOS SDK settings!
-    # Let Xcode use the correct SDK for each target automatically
+    # IMPORTANT: Use generic/platform=iOS for archive builds without simulator
     gym(
       scheme: "App",
       workspace: "ios/App/App.xcworkspace",
@@ -74,6 +73,7 @@ platform :ios do
       skip_build_archive: false,
       build_path: "./build/archive",
       archive_path: "./build/archive/App.xcarchive",
+      destination: "generic/platform=iOS",
       xcargs: "DEVELOPMENT_TEAM=#{ENV['FASTLANE_TEAM_ID']} CODE_SIGN_STYLE=Manual ONLY_ACTIVE_ARCH=NO",
       export_options: {
         signingStyle: "manual",
