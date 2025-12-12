@@ -858,12 +858,15 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         }
         
         // Download from CDN
-        guard let encodedPath = audioPath.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed),
-              let downloadURL = URL(string: "\(audioBaseURL)/\(encodedPath)") else {
-            addDebugLog("Invalid audio URL")
+        // Replace spaces with %20 for URL encoding
+        let encodedPath = audioPath.replacingOccurrences(of: " ", with: "%20")
+        guard let downloadURL = URL(string: "\(audioBaseURL)/\(encodedPath)") else {
+            addDebugLog("Invalid audio URL: \(audioBaseURL)/\(encodedPath)")
             sendAudioProgress(progress: "URL error")
             return
         }
+        
+        addDebugLog("Audio URL: \(downloadURL.absoluteString)")
         
         addDebugLog("Downloading: \(audioPath)")
         sendAudioProgress(progress: "Downloading...")
