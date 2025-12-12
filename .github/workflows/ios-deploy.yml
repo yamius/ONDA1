@@ -49,17 +49,27 @@ jobs:
           xcodebuild -showsdks
 
       - name: Install iOS/watchOS Platforms
-        continue-on-error: true
         run: |
           echo "=== Running first launch setup ==="
           sudo xcodebuild -runFirstLaunch || true
-          echo "=== Downloading platforms (may fail if already installed) ==="
-          sudo xcodebuild -downloadPlatform iOS || echo "iOS platform download skipped"
-          sudo xcodebuild -downloadPlatform watchOS || echo "watchOS platform download skipped"
+          
+          echo "=== Downloading iOS platform ==="
+          # This is required for Xcode 16+ on macOS 15
+          xcodebuild -downloadPlatform iOS || {
+            echo "iOS platform download failed, trying alternative method..."
+            xcrun simctl runtime add --downloadPlatform iOS || true
+          }
+          
+          echo "=== Downloading watchOS platform ==="
+          xcodebuild -downloadPlatform watchOS || {
+            echo "watchOS platform download failed, trying alternative method..."
+            xcrun simctl runtime add --downloadPlatform watchOS || true
+          }
+          
           echo "=== Verify SDKs are available ==="
           xcodebuild -showsdks
-          xcrun --sdk iphoneos --show-sdk-path
-          xcrun --sdk watchos --show-sdk-path
+          xcrun --sdk iphoneos --show-sdk-path || echo "iphoneos SDK path not found"
+          xcrun --sdk watchos --show-sdk-path || echo "watchos SDK path not found"
 
       - name: Setup CocoaPods
         run: |

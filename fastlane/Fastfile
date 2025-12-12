@@ -62,7 +62,7 @@ platform :ios do
     )
     
     # Build the app with watchOS
-    # Xcode 15.4 works reliably without explicit destination
+    # Use SDK-based destination instead of generic platform for Xcode 16+ compatibility
     gym(
       scheme: "App",
       workspace: "ios/App/App.xcworkspace",
@@ -73,7 +73,9 @@ platform :ios do
       skip_build_archive: false,
       build_path: "./build/archive",
       archive_path: "./build/archive/App.xcarchive",
-      xcargs: "DEVELOPMENT_TEAM=#{ENV['FASTLANE_TEAM_ID']} CODE_SIGN_STYLE=Manual ONLY_ACTIVE_ARCH=NO",
+      destination: "generic/platform=iOS",
+      sdk: "iphoneos",
+      xcargs: "DEVELOPMENT_TEAM=#{ENV['FASTLANE_TEAM_ID']} CODE_SIGN_STYLE=Manual ONLY_ACTIVE_ARCH=NO -allowProvisioningUpdates",
       export_options: {
         signingStyle: "manual",
         provisioningProfiles: {
