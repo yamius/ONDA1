@@ -51,45 +51,23 @@ jobs:
       - name: Install iOS/watchOS Platforms
         run: |
           echo "=== Running first launch setup ==="
-          sudo xcodebuild -runFirstLaunch || true
+          sudo xcodebuild -runFirstLaunch
           
-          echo "=== Checking if iOS platform is already installed ==="
-          PLATFORM_DIR="/Applications/Xcode_16.1.app/Contents/Developer/Platforms/iPhoneOS.platform"
-          if [ -d "$PLATFORM_DIR" ]; then
-            echo "iOS platform already installed at $PLATFORM_DIR"
-          else
-            echo "=== Downloading iOS platform (required for Xcode 16+ on macos-15) ==="
-            # Try download, continue on error (may already be installed differently)
-            sudo xcodebuild -downloadPlatform iOS || echo "Download returned error, checking if already available..."
-          fi
+          echo "=== Force downloading iOS platform ==="
+          # The -downloadPlatform command downloads the runtime needed for building
+          # This is required on macos-15 runners with Xcode 16+
+          sudo xcodebuild -downloadPlatform iOS -buildVersion latest
           
-          echo "=== Checking if watchOS platform is already installed ==="
-          WATCHOS_DIR="/Applications/Xcode_16.1.app/Contents/Developer/Platforms/WatchOS.platform"
-          if [ -d "$WATCHOS_DIR" ]; then
-            echo "watchOS platform already installed at $WATCHOS_DIR"
-          else
-            echo "=== Downloading watchOS platform ==="
-            sudo xcodebuild -downloadPlatform watchOS || echo "Download returned error, checking if already available..."
-          fi
+          echo "=== Force downloading watchOS platform ==="
+          sudo xcodebuild -downloadPlatform watchOS -buildVersion latest
           
-          echo "=== Verifying SDKs are available ==="
+          echo "=== Available SDKs and Simulators ==="
           xcodebuild -showsdks
+          xcrun simctl list runtimes
           
-          # Check iOS SDK
-          if xcrun --sdk iphoneos --show-sdk-path > /dev/null 2>&1; then
-            echo "iOS SDK available: $(xcrun --sdk iphoneos --show-sdk-path)"
-          else
-            echo "ERROR: iOS SDK not found"
-            exit 1
-          fi
-          
-          # Check watchOS SDK
-          if xcrun --sdk watchos --show-sdk-path > /dev/null 2>&1; then
-            echo "watchOS SDK available: $(xcrun --sdk watchos --show-sdk-path)"
-          else
-            echo "ERROR: watchOS SDK not found"
-            exit 1
-          fi
+          echo "=== SDK Paths ==="
+          xcrun --sdk iphoneos --show-sdk-path
+          xcrun --sdk watchos --show-sdk-path
 
       - name: Setup CocoaPods
         run: |
