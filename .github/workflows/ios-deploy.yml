@@ -48,14 +48,14 @@ jobs:
           xcodebuild -version
           xcodebuild -showsdks
 
-      - name: Download iOS Platform (required for archive)
+      - name: Prepare iOS Platform
+        continue-on-error: true
         run: |
-          echo "=== Downloading iOS Platform to fix archive issue ==="
-          sudo xcodebuild -downloadPlatform iOS
-          echo "=== Downloading watchOS Platform ==="
-          sudo xcodebuild -downloadPlatform watchOS
-          echo "=== Verifying SDKs after download ==="
-          xcodebuild -showsdks
+          echo "=== Checking simulator/device availability ==="
+          xcrun simctl list devices available 2>/dev/null | head -10 || true
+          echo "=== SDK path check ==="
+          xcrun --sdk iphoneos --show-sdk-path || true
+          xcrun --sdk watchos --show-sdk-path || true
 
       - name: Fix Xcode project format for CocoaPods
         run: |
