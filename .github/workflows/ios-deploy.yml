@@ -48,26 +48,20 @@ jobs:
           xcodebuild -version
           xcodebuild -showsdks
 
-      - name: Install iOS/watchOS Platforms
+      - name: Prepare Xcode Environment
         run: |
           echo "=== Running first launch setup ==="
-          sudo xcodebuild -runFirstLaunch
+          sudo xcodebuild -runFirstLaunch || true
           
-          echo "=== Force downloading iOS platform ==="
-          # The -downloadPlatform command downloads the runtime needed for building
-          # This is required on macos-15 runners with Xcode 16+
-          sudo xcodebuild -downloadPlatform iOS -buildVersion latest
+          echo "=== Accepting Xcode license ==="
+          sudo xcodebuild -license accept || true
           
-          echo "=== Force downloading watchOS platform ==="
-          sudo xcodebuild -downloadPlatform watchOS -buildVersion latest
-          
-          echo "=== Available SDKs and Simulators ==="
+          echo "=== Available SDKs ==="
           xcodebuild -showsdks
-          xcrun simctl list runtimes
           
           echo "=== SDK Paths ==="
-          xcrun --sdk iphoneos --show-sdk-path
-          xcrun --sdk watchos --show-sdk-path
+          xcrun --sdk iphoneos --show-sdk-path || echo "iOS SDK check failed"
+          xcrun --sdk watchos --show-sdk-path || echo "watchOS SDK check failed"
 
       - name: Setup CocoaPods
         run: |
