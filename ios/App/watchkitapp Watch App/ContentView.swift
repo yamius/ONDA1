@@ -31,6 +31,9 @@ enum WatchStrings {
     static let active = NSLocalizedString("Активна", comment: "Active status")
     static let waiting = NSLocalizedString("Ожидание", comment: "Waiting status")
     static let part = NSLocalizedString("Часть", comment: "Part/Circuit")
+    static let practices = NSLocalizedString("Практики", comment: "Practices")
+    static let endPractice = NSLocalizedString("Завершить", comment: "End practice")
+    static let loading = NSLocalizedString("Загрузка...", comment: "Loading")
     
     // All 12 parts - matching app structure
     static let part1 = NSLocalizedString("Я есть", comment: "Part 1 - I Am")
@@ -65,6 +68,18 @@ enum WatchStrings {
     }
 }
 
+// MARK: - Practice Model
+
+struct WatchPractice: Identifiable {
+    let id: String
+    let name: String
+    let duration: String
+    let targetTime: Int
+    let guidingTexts: [String]
+}
+
+// MARK: - States
+
 enum PermissionState {
     case checking
     case needsPermission
@@ -73,12 +88,22 @@ enum PermissionState {
     case denied
 }
 
+enum MainViewState {
+    case main
+    case practiceSession(WatchPractice)
+}
+
+// MARK: - Content View
+
 struct ContentView: View {
     @StateObject private var workoutManager = WorkoutManager.shared
     @State private var permissionState: PermissionState = .checking
     @State private var waitingTimer: Timer?
     @State private var waitingSeconds: Int = 0
     @State private var selectedPart: Int = 1
+    @State private var practices: [WatchPractice] = []
+    @State private var mainViewState: MainViewState = .main
+    @State private var isLoadingPractices: Bool = false
     
     var body: some View {
         Group {
@@ -90,13 +115,14 @@ struct ContentView: View {
             case .waitingForHR:
                 waitingForHRView
             case .granted:
-                mainView
+                grantedContent
             case .denied:
                 deniedView
             }
         }
         .onAppear {
             checkInitialPermissionState()
+            setupWCSessionObserver()
         }
         .onChange(of: workoutManager.heartRate) { newValue in
             if newValue > 0 {
@@ -111,6 +137,23 @@ struct ContentView: View {
         .onDisappear {
             waitingTimer?.invalidate()
             waitingTimer = nil
+        }
+    }
+    
+    @ViewBuilder
+    private var grantedContent: some View {
+        switch mainViewState {
+        case .main:
+            mainView
+        case .practiceSession(let practice):
+            PracticeSessionView(
+                practice: practice,
+                heartRate: workoutManager.heartRate,
+                onEnd: { duration in
+                    sendPracticeEnded(practiceId: practice.id, duration: duration)
+                    mainViewState = .main
+                }
+            )
         }
     }
     
@@ -178,118 +221,145 @@ struct ContentView: View {
     
     private var mainView: some View {
         NavigationView {
-        VStack(spacing: 8) {
-            // Header with ONDA - aligned with system time
-            HStack {
-                Text(WatchStrings.appName)
-                    .font(.system(size: 13, weight: .semibold))
-                    .foregroundColor(.cyan)
-                Spacer()
-            }
-            
-            Spacer(minLength: 4)
-            
-            // Heart rate card
-            VStack(spacing: 4) {
-                HStack(spacing: 4) {
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(.red)
-                        .font(.system(size: 16))
-                    
-                    if workoutManager.heartRate > 0 {
-                        Text("\(Int(workoutManager.heartRate))")
-                            .font(.system(size: 28, weight: .bold, design: .rounded))
-                    } else {
-                        Text("--")
-                            .font(.system(size: 28, weight: .bold, design: .rounded))
-                            .foregroundColor(.secondary)
+            ScrollView {
+                VStack(spacing: 8) {
+                    // Header with ONDA
+                    HStack {
+                        Text(WatchStrings.appName)
+                            .font(.system(size: 13, weight: .semibold))
+                            .foregroundColor(.cyan)
+                        Spacer()
                     }
                     
-                    Text(WatchStrings.bpm)
-                        .font(.system(size: 10))
-                        .foregroundColor(.secondary)
-                }
-                
-                HStack(spacing: 4) {
-                    Circle()
-                        .fill(workoutManager.isActive ? Color.green : Color.gray)
-                        .frame(width: 5, height: 5)
-                    Text(workoutManager.isActive ? WatchStrings.active : WatchStrings.waiting)
-                        .font(.system(size: 10))
-                        .foregroundColor(.secondary)
-                }
-            }
-            .padding(.horizontal, 10)
-            .padding(.vertical, 8)
-            .background(
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color.black.opacity(0.3))
-                    .overlay(
+                    // Heart rate card
+                    VStack(spacing: 4) {
+                        HStack(spacing: 4) {
+                            Image(systemName: "heart.fill")
+                                .foregroundColor(.red)
+                                .font(.system(size: 16))
+                            
+                            if workoutManager.heartRate > 0 {
+                                Text("\(Int(workoutManager.heartRate))")
+                                    .font(.system(size: 28, weight: .bold, design: .rounded))
+                            } else {
+                                Text("--")
+                                    .font(.system(size: 28, weight: .bold, design: .rounded))
+                                    .foregroundColor(.secondary)
+                            }
+                            
+                            Text(WatchStrings.bpm)
+                                .font(.system(size: 10))
+                                .foregroundColor(.secondary)
+                        }
+                        
+                        HStack(spacing: 4) {
+                            Circle()
+                                .fill(workoutManager.isActive ? Color.green : Color.gray)
+                                .frame(width: 5, height: 5)
+                            Text(workoutManager.isActive ? WatchStrings.active : WatchStrings.waiting)
+                                .font(.system(size: 10))
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 8)
+                    .background(
                         RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.white.opacity(0.1), lineWidth: 1)
+                            .fill(Color.black.opacity(0.3))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.white.opacity(0.1), lineWidth: 1)
+                            )
                     )
-            )
-            
-            Spacer(minLength: 4)
-            
-            // Part selector - shows all 12 parts
-            NavigationLink {
-                List {
-                    ForEach(1...12, id: \.self) { part in
-                        Button(action: {
-                            selectedPart = part
-                            sendPartToPhone(part)
-                        }) {
-                            HStack {
-                                VStack(alignment: .leading, spacing: 2) {
-                                    Text("\(WatchStrings.part) \(part)")
-                                        .font(.system(size: 12))
-                                        .foregroundColor(.secondary)
-                                    Text(WatchStrings.partName(for: part))
-                                        .font(.system(size: 14, weight: .medium))
-                                }
-                                Spacer()
-                                if selectedPart == part {
-                                    Image(systemName: "checkmark")
-                                        .foregroundColor(.cyan)
+                    
+                    // Part selector
+                    NavigationLink {
+                        partSelectorList
+                    } label: {
+                        HStack {
+                            VStack(alignment: .leading, spacing: 1) {
+                                Text("\(WatchStrings.part) \(selectedPart)")
+                                    .font(.system(size: 10))
+                                    .foregroundColor(.secondary)
+                                Text(WatchStrings.partName(for: selectedPart))
+                                    .font(.system(size: 13, weight: .medium))
+                            }
+                            Spacer()
+                            Image(systemName: "chevron.right")
+                                .font(.system(size: 10))
+                                .foregroundColor(.secondary)
+                        }
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 8)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .fill(Color.black.opacity(0.2))
+                        )
+                    }
+                    .buttonStyle(.plain)
+                    
+                    // Practices section
+                    if isLoadingPractices {
+                        HStack {
+                            ProgressView()
+                            Text(WatchStrings.loading)
+                                .font(.caption2)
+                                .foregroundColor(.secondary)
+                        }
+                        .padding(.vertical, 8)
+                    } else if practices.isEmpty {
+                        Text(WatchStrings.practices)
+                            .font(.caption2)
+                            .foregroundColor(.secondary)
+                            .padding(.vertical, 8)
+                    } else {
+                        VStack(spacing: 4) {
+                            ForEach(practices) { practice in
+                                PracticeRow(practice: practice) {
+                                    startPractice(practice)
                                 }
                             }
                         }
-                        .buttonStyle(.plain)
                     }
                 }
-            } label: {
-                VStack(alignment: .leading, spacing: 1) {
-                    Text("\(WatchStrings.part) \(selectedPart)")
-                        .font(.system(size: 10))
-                        .foregroundColor(.secondary)
-                    Text(WatchStrings.partName(for: selectedPart))
-                        .font(.system(size: 13, weight: .medium))
-                }
+                .padding(.horizontal, 8)
+                .padding(.top, 2)
             }
-        }
-        .padding(.horizontal, 8)
-        .padding(.top, 2)
         }
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
                 workoutManager.startWorkout()
             }
+            requestPracticesFromPhone()
         }
     }
     
-    private func sendPartToPhone(_ part: Int) {
-        guard WCSession.default.activationState == .activated else { return }
-        let message: [String: Any] = [
-            "type": "partChanged",
-            "value": part,
-            "ts": Date().timeIntervalSince1970
-        ]
-        if WCSession.default.isReachable {
-            WCSession.default.sendMessage(message, replyHandler: nil, errorHandler: nil)
-        } else {
-            WCSession.default.transferUserInfo(message)
+    private var partSelectorList: some View {
+        List {
+            ForEach(1...12, id: \.self) { part in
+                Button(action: {
+                    selectedPart = part
+                    sendPartToPhone(part)
+                    requestPracticesFromPhone()
+                }) {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("\(WatchStrings.part) \(part)")
+                                .font(.system(size: 12))
+                                .foregroundColor(.secondary)
+                            Text(WatchStrings.partName(for: part))
+                                .font(.system(size: 14, weight: .medium))
+                        }
+                        Spacer()
+                        if selectedPart == part {
+                            Image(systemName: "checkmark")
+                                .foregroundColor(.cyan)
+                        }
+                    }
+                }
+                .buttonStyle(.plain)
+            }
         }
     }
     
@@ -326,6 +396,102 @@ struct ContentView: View {
                 .tint(.green)
             }
             .padding(.horizontal, 8)
+        }
+    }
+    
+    // MARK: - WCSession
+    
+    private func setupWCSessionObserver() {
+        NotificationCenter.default.addObserver(
+            forName: Notification.Name("PracticesReceived"),
+            object: nil,
+            queue: .main
+        ) { notification in
+            if let practicesData = notification.userInfo?["practices"] as? [[String: Any]] {
+                self.practices = practicesData.compactMap { data in
+                    guard let id = data["id"] as? String,
+                          let name = data["name"] as? String,
+                          let duration = data["duration"] as? String,
+                          let targetTime = data["targetTime"] as? Int,
+                          let guidingTexts = data["guidingTexts"] as? [String] else {
+                        return nil
+                    }
+                    return WatchPractice(id: id, name: name, duration: duration, targetTime: targetTime, guidingTexts: guidingTexts)
+                }
+                self.isLoadingPractices = false
+                print("[ContentView] Received \(self.practices.count) practices")
+            }
+        }
+    }
+    
+    private func requestPracticesFromPhone() {
+        guard WCSession.default.activationState == .activated else { return }
+        isLoadingPractices = true
+        
+        let message: [String: Any] = [
+            "type": "requestPractices",
+            "partNumber": selectedPart,
+            "ts": Date().timeIntervalSince1970
+        ]
+        
+        print("[ContentView] Requesting practices for part \(selectedPart)")
+        
+        if WCSession.default.isReachable {
+            WCSession.default.sendMessage(message, replyHandler: nil) { error in
+                print("[ContentView] Request practices error: \(error)")
+                DispatchQueue.main.async {
+                    self.isLoadingPractices = false
+                }
+            }
+        } else {
+            WCSession.default.transferUserInfo(message)
+        }
+    }
+    
+    private func sendPartToPhone(_ part: Int) {
+        guard WCSession.default.activationState == .activated else { return }
+        let message: [String: Any] = [
+            "type": "partChanged",
+            "value": part,
+            "ts": Date().timeIntervalSince1970
+        ]
+        if WCSession.default.isReachable {
+            WCSession.default.sendMessage(message, replyHandler: nil, errorHandler: nil)
+        } else {
+            WCSession.default.transferUserInfo(message)
+        }
+    }
+    
+    private func startPractice(_ practice: WatchPractice) {
+        // Notify iPhone that practice started
+        guard WCSession.default.activationState == .activated else { return }
+        let message: [String: Any] = [
+            "type": "startPractice",
+            "practiceId": practice.id,
+            "ts": Date().timeIntervalSince1970
+        ]
+        if WCSession.default.isReachable {
+            WCSession.default.sendMessage(message, replyHandler: nil, errorHandler: nil)
+        } else {
+            WCSession.default.transferUserInfo(message)
+        }
+        
+        // Switch to practice session
+        mainViewState = .practiceSession(practice)
+    }
+    
+    private func sendPracticeEnded(practiceId: String, duration: Int) {
+        guard WCSession.default.activationState == .activated else { return }
+        let message: [String: Any] = [
+            "type": "endPractice",
+            "practiceId": practiceId,
+            "duration": duration,
+            "ts": Date().timeIntervalSince1970
+        ]
+        if WCSession.default.isReachable {
+            WCSession.default.sendMessage(message, replyHandler: nil, errorHandler: nil)
+        } else {
+            WCSession.default.transferUserInfo(message)
         }
     }
     
@@ -394,7 +560,153 @@ struct ContentView: View {
         waitingSeconds = 0
         startWaitingTimer()
     }
+}
+
+// MARK: - Practice Row
+
+struct PracticeRow: View {
+    let practice: WatchPractice
+    let onTap: () -> Void
     
+    var body: some View {
+        Button(action: onTap) {
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(practice.name)
+                        .font(.system(size: 13, weight: .medium))
+                        .lineLimit(1)
+                    Text(practice.duration)
+                        .font(.system(size: 10))
+                        .foregroundColor(.secondary)
+                }
+                Spacer()
+                Image(systemName: "play.fill")
+                    .font(.system(size: 10))
+                    .foregroundColor(.cyan)
+            }
+            .padding(.horizontal, 10)
+            .padding(.vertical, 8)
+            .background(
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color.black.opacity(0.2))
+            )
+        }
+        .buttonStyle(.plain)
+    }
+}
+
+// MARK: - Practice Session View
+
+struct PracticeSessionView: View {
+    let practice: WatchPractice
+    let heartRate: Double
+    let onEnd: (Int) -> Void
+    
+    @State private var elapsedSeconds: Int = 0
+    @State private var currentTextIndex: Int = 0
+    @State private var textOpacity: Double = 1.0
+    @State private var timer: Timer?
+    
+    private let textChangeInterval: Int = 15
+    
+    var body: some View {
+        VStack(spacing: 8) {
+            // Timer and HR
+            HStack {
+                Text(formatTime(elapsedSeconds))
+                    .font(.system(size: 20, weight: .bold, design: .rounded))
+                    .foregroundColor(.cyan)
+                
+                Spacer()
+                
+                HStack(spacing: 2) {
+                    Image(systemName: "heart.fill")
+                        .font(.system(size: 12))
+                        .foregroundColor(.red)
+                    Text(heartRate > 0 ? "\(Int(heartRate))" : "--")
+                        .font(.system(size: 14, weight: .medium))
+                }
+            }
+            .padding(.horizontal, 4)
+            
+            // Guiding text
+            ScrollView {
+                Text(currentGuidingText)
+                    .font(.system(size: 14))
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+                    .opacity(textOpacity)
+                    .animation(.easeInOut(duration: 0.5), value: textOpacity)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 12)
+            }
+            
+            Spacer()
+            
+            // End button
+            Button(action: endPractice) {
+                Text(WatchStrings.endPractice)
+                    .font(.system(size: 13, weight: .medium))
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.red.opacity(0.8))
+        }
+        .padding(.horizontal, 8)
+        .padding(.vertical, 4)
+        .onAppear {
+            startTimer()
+        }
+        .onDisappear {
+            timer?.invalidate()
+            timer = nil
+        }
+    }
+    
+    private var currentGuidingText: String {
+        guard !practice.guidingTexts.isEmpty else { return "" }
+        return practice.guidingTexts[currentTextIndex % practice.guidingTexts.count]
+    }
+    
+    private func formatTime(_ seconds: Int) -> String {
+        let mins = seconds / 60
+        let secs = seconds % 60
+        return String(format: "%d:%02d", mins, secs)
+    }
+    
+    private func startTimer() {
+        timer?.invalidate()
+        elapsedSeconds = 0
+        currentTextIndex = 0
+        textOpacity = 1.0
+        
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
+            DispatchQueue.main.async {
+                elapsedSeconds += 1
+                
+                // Change text every 15 seconds with fade
+                if elapsedSeconds > 0 && elapsedSeconds % textChangeInterval == 0 {
+                    // Fade out
+                    withAnimation(.easeOut(duration: 0.5)) {
+                        textOpacity = 0.0
+                    }
+                    
+                    // After fade out, change text and fade in
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        currentTextIndex += 1
+                        withAnimation(.easeIn(duration: 0.5)) {
+                            textOpacity = 1.0
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    private func endPractice() {
+        timer?.invalidate()
+        timer = nil
+        onEnd(elapsedSeconds)
+    }
 }
 
 #Preview {

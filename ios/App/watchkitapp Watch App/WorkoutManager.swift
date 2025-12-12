@@ -258,6 +258,16 @@ extension WorkoutManager: WCSessionDelegate {
                 self.stopWorkout()
             case "heartbeat":
                 print("[WorkoutManager] Heartbeat received")
+            case "practices":
+                // Received practices from iPhone
+                if let practices = data["practices"] as? [[String: Any]] {
+                    print("[WorkoutManager] Received \(practices.count) practices from iPhone")
+                    NotificationCenter.default.post(
+                        name: Notification.Name("PracticesReceived"),
+                        object: nil,
+                        userInfo: ["practices": practices]
+                    )
+                }
             default:
                 print("[WorkoutManager] Unknown command: \(cmd)")
             }
