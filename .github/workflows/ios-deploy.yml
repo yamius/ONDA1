@@ -123,44 +123,6 @@ jobs:
           fi
           echo "All 16 icons present"
 
-      - name: Generate and fix watchOS App Icons
-        run: |
-          ICON_DIR="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset"
-          SOURCE="$ICON_DIR/icon-1024.png"
-          
-          echo "=== Step 1: Remove alpha from source 1024x1024 icon ==="
-          sips -g hasAlpha "$SOURCE" 2>/dev/null || true
-          sips -s format jpeg -s formatOptions best "$SOURCE" --out "${SOURCE}.jpg"
-          sips -s format png "${SOURCE}.jpg" --out "$SOURCE"
-          rm -f "${SOURCE}.jpg"
-          echo "Source icon alpha removed"
-          
-          echo "=== Step 2: Generate all required sizes from 1024x1024 source ==="
-          # watchOS requires specific sizes matching Contents.json
-          for size in 48 55 58 80 87 88 92 100 102 108 172 196 216 234 258; do
-            TARGET="$ICON_DIR/icon-${size}.png"
-            echo "Generating ${size}x${size} -> $TARGET"
-            sips -z $size $size "$SOURCE" --out "$TARGET"
-          done
-          
-          echo "=== Step 3: JPEG round-trip all icons to ensure no alpha ==="
-          for icon in "$ICON_DIR"/*.png; do
-            if [ -f "$icon" ]; then
-              sips -s format jpeg -s formatOptions best "$icon" --out "${icon}.jpg" 2>/dev/null
-              sips -s format png "${icon}.jpg" --out "$icon" 2>/dev/null
-              rm -f "${icon}.jpg"
-            fi
-          done
-          
-          echo "=== Step 4: Verify all icons ==="
-          for icon in "$ICON_DIR"/*.png; do
-            BASENAME=$(basename "$icon")
-            INFO=$(sips -g pixelWidth -g pixelHeight -g hasAlpha "$icon" 2>/dev/null | grep -E '(pixelWidth|pixelHeight|hasAlpha)' | tr '\n' ' ')
-            echo "$BASENAME: $INFO"
-          done
-          
-          echo "=== Done generating watchOS icons ==="
-
       - name: Create App Store Connect API Key
         run: |
           mkdir -p /Users/runner/private_keys
