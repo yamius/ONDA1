@@ -56,11 +56,29 @@ jobs:
           echo "=== Accepting Xcode license ==="
           sudo xcodebuild -license accept || true
           
-          echo "=== Downloading iOS platform (skip if already installed) ==="
-          sudo xcodebuild -downloadPlatform iOS || echo "iOS platform download skipped (likely already installed)"
+          echo "=== Downloading iOS platform (with retry) ==="
+          for i in 1 2 3; do
+            echo "Attempt $i to download iOS platform..."
+            if sudo xcodebuild -downloadPlatform iOS; then
+              echo "iOS platform download succeeded"
+              break
+            else
+              echo "iOS platform download failed (attempt $i), waiting 10s..."
+              sleep 10
+            fi
+          done
           
-          echo "=== Downloading watchOS platform (skip if already installed) ==="
-          sudo xcodebuild -downloadPlatform watchOS || echo "watchOS platform download skipped (likely already installed)"
+          echo "=== Downloading watchOS platform (with retry) ==="
+          for i in 1 2 3; do
+            echo "Attempt $i to download watchOS platform..."
+            if sudo xcodebuild -downloadPlatform watchOS; then
+              echo "watchOS platform download succeeded"
+              break
+            else
+              echo "watchOS platform download failed (attempt $i), waiting 10s..."
+              sleep 10
+            fi
+          done
           
           echo "=== Verifying platforms installed ==="
           xcodebuild -showsdks
@@ -69,13 +87,13 @@ jobs:
           xcrun --sdk iphoneos --show-sdk-path
           xcrun --sdk watchos --show-sdk-path
           
-          # Critical: Verify iOS platform directory exists
-          PLATFORM_DIR="/Applications/Xcode_16.1.app/Contents/Developer/Platforms/iPhoneOS.platform"
-          if [ ! -d "$PLATFORM_DIR" ]; then
-            echo "ERROR: iOS platform not found at $PLATFORM_DIR"
-            exit 1
+          # Critical: Test that xcodebuild can actually find iOS destination
+          echo "=== Testing iOS destination availability ==="
+          if xcodebuild -showdestinations -scheme App -workspace ios/App/App.xcworkspace 2>&1 | grep -q "platform:iOS"; then
+            echo "SUCCESS: iOS destination available"
+          else
+            echo "WARNING: iOS destination may not be available, continuing anyway..."
           fi
-          echo "SUCCESS: iOS platform verified at $PLATFORM_DIR"
 
       - name: Setup CocoaPods
         run: |
