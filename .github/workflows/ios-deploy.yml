@@ -56,18 +56,26 @@ jobs:
           echo "=== Accepting Xcode license ==="
           sudo xcodebuild -license accept || true
           
-          echo "=== FORCE downloading iOS platform (macos-15 bug workaround) ==="
-          sudo xcodebuild -downloadPlatform iOS || true
+          echo "=== Downloading iOS platform (REQUIRED - no masking errors) ==="
+          sudo xcodebuild -downloadPlatform iOS
           
-          echo "=== FORCE downloading watchOS platform ==="
-          sudo xcodebuild -downloadPlatform watchOS || true
+          echo "=== Downloading watchOS platform ==="
+          sudo xcodebuild -downloadPlatform watchOS
           
-          echo "=== Verifying platforms ==="
+          echo "=== Verifying platforms installed ==="
           xcodebuild -showsdks
           
           echo "=== SDK Paths ==="
           xcrun --sdk iphoneos --show-sdk-path
           xcrun --sdk watchos --show-sdk-path
+          
+          # Critical: Verify iOS platform directory exists
+          PLATFORM_DIR="/Applications/Xcode_16.1.app/Contents/Developer/Platforms/iPhoneOS.platform"
+          if [ ! -d "$PLATFORM_DIR" ]; then
+            echo "ERROR: iOS platform not found at $PLATFORM_DIR"
+            exit 1
+          fi
+          echo "SUCCESS: iOS platform verified at $PLATFORM_DIR"
 
       - name: Setup CocoaPods
         run: |
