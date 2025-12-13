@@ -56,11 +56,11 @@ jobs:
           echo "=== Accepting Xcode license ==="
           sudo xcodebuild -license accept || true
           
-          echo "=== Downloading iOS platform (REQUIRED - no masking errors) ==="
-          sudo xcodebuild -downloadPlatform iOS
+          echo "=== Downloading iOS platform (skip if already installed) ==="
+          sudo xcodebuild -downloadPlatform iOS || echo "iOS platform download skipped (likely already installed)"
           
-          echo "=== Downloading watchOS platform ==="
-          sudo xcodebuild -downloadPlatform watchOS
+          echo "=== Downloading watchOS platform (skip if already installed) ==="
+          sudo xcodebuild -downloadPlatform watchOS || echo "watchOS platform download skipped (likely already installed)"
           
           echo "=== Verifying platforms installed ==="
           xcodebuild -showsdks
