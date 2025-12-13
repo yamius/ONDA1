@@ -123,24 +123,31 @@ jobs:
           fi
           echo "All 16 icons present"
 
-      - name: Fix watchOS App Icons (remove alpha channel)
+      - name: Fix watchOS App Icons (remove alpha channel via JPEG round-trip)
         run: |
           ICON_DIR="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset"
-          echo "=== Installing ImageMagick for alpha removal ==="
-          brew install imagemagick --quiet
           
-          echo "=== Removing alpha channel from watchOS icons ==="
+          echo "=== Removing alpha channel from watchOS icons via JPEG round-trip ==="
+          echo "This method converts PNG->JPEG->PNG to strip alpha (JPEG doesn't support alpha)"
+          
           for icon in "$ICON_DIR"/*.png; do
             if [ -f "$icon" ]; then
-              echo "Processing: $(basename "$icon")"
-              # ImageMagick: flatten alpha to white background, then remove alpha
-              convert "$icon" -background white -alpha remove -alpha off "$icon"
+              BASENAME=$(basename "$icon")
+              echo "Processing: $BASENAME"
+              
+              # Show original file info
+              echo "  Before: $(sips -g hasAlpha -g pixelWidth -g pixelHeight "$icon" 2>/dev/null | grep -E '(hasAlpha|pixelWidth|pixelHeight)' | tr '\n' ' ')"
+              
+              # JPEG round-trip: PNG -> JPEG (removes alpha) -> PNG
+              sips -s format jpeg -s formatOptions best "$icon" --out "${icon}.jpg" 2>/dev/null
+              sips -s format png "${icon}.jpg" --out "$icon" 2>/dev/null
+              rm -f "${icon}.jpg"
+              
+              # Show processed file info
+              echo "  After:  $(sips -g hasAlpha -g pixelWidth -g pixelHeight "$icon" 2>/dev/null | grep -E '(hasAlpha|pixelWidth|pixelHeight)' | tr '\n' ' ')"
             fi
           done
           
-          echo "=== Verifying alpha channel removed ==="
-          # Check if alpha was actually removed
-          identify -verbose "$ICON_DIR/icon-1024.png" | grep -E "(Alpha|Type)" || true
           echo "=== Done processing watchOS icons ==="
 
       - name: Create App Store Connect API Key
