@@ -126,9 +126,7 @@ struct ContentView: View {
     
     private var mainView: some View {
         VStack(spacing: 0) {
-            Spacer()
-            
-            // Heart rate card - 20% larger
+            // Heart rate card - 20% larger, close to top like "Статистика"
             VStack(spacing: 8) {
                 HStack(spacing: 5) {
                     Image(systemName: "heart.fill")
@@ -168,8 +166,6 @@ struct ContentView: View {
                             .stroke(Color.white.opacity(0.1), lineWidth: 1)
                     )
             )
-            
-            Spacer()
         }
         .navigationTitle("ONDA")
         .onAppear {
