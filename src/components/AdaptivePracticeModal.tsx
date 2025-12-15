@@ -553,8 +553,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
 
     if (practiceState === 'practice' && vitalsData.stress !== null && vitalsData.energy !== null) {
       setBestMetrics(best => ({
-        stress: Math.min(best.stress, vitalsData.stress!),
-        energy: Math.max(best.energy, vitalsData.energy!)
+        stress: Math.min(best.stress ?? 100, vitalsData.stress!),
+        energy: Math.max(best.energy ?? 0, vitalsData.energy!)
       }));
     }
   }, [vitalsData.stress, vitalsData.energy, vitalsData.hasVitalsData, vitalsData.hrSource, practiceState]);
@@ -1113,7 +1113,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
               </div>
               <div className="mt-2 sm:mt-3 text-xs sm:text-sm text-gray-300 flex justify-between">
                 <span>{t('labels.time_label')}: {Math.round((practiceTime / practice.targetTime) * 100)}%</span>
-                <span>{t('labels.energy')}: {vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</span>
+                <span>{t('labels.energy')}: {Math.round(vitalsData.hasVitalsData && vitalsData.energy !== null ? vitalsData.energy : simulatedVitals.energy)}%</span>
               </div>
             </div>
 
@@ -1134,12 +1134,12 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             <div className="grid grid-cols-2 gap-3 sm:gap-6 mb-6 sm:mb-12 px-3 sm:px-0 w-full max-w-md">
               <div className="bg-black/30 backdrop-blur-md rounded-2xl p-3 sm:p-6 text-center border border-red-400/30 shadow-xl">
                 <Activity className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-red-400" />
-                <div className="text-2xl sm:text-4xl font-bold mb-1">{vitalsData.stress !== null ? Math.round(vitalsData.stress) : '--'}%</div>
+                <div className="text-2xl sm:text-4xl font-bold mb-1">{Math.round(vitalsData.hasVitalsData && vitalsData.stress !== null ? vitalsData.stress : simulatedVitals.stress)}%</div>
                 <div className="text-xs sm:text-sm text-gray-300">{t('labels.stress')}</div>
               </div>
               <div className="bg-black/30 backdrop-blur-md rounded-2xl p-3 sm:p-6 text-center border border-blue-400/30 shadow-xl">
                 <Zap className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-blue-400" />
-                <div className="text-2xl sm:text-4xl font-bold mb-1">{vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</div>
+                <div className="text-2xl sm:text-4xl font-bold mb-1">{Math.round(vitalsData.hasVitalsData && vitalsData.energy !== null ? vitalsData.energy : simulatedVitals.energy)}%</div>
                 <div className="text-xs sm:text-sm text-gray-300">{t('labels.energy')}</div>
               </div>
             </div>
@@ -1203,14 +1203,14 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   <div className="flex flex-col items-end w-[140px]">
                     <div className="flex items-center gap-1 whitespace-nowrap">
                       <span className="text-gray-300">{t('labels.stress')}</span>
-                      <span className="font-bold text-red-400">{vitalsData.stress !== null ? Math.round(vitalsData.stress) : '--'}%</span>
+                      <span className="font-bold text-red-400">{Math.round(bestMetrics.stress ?? simulatedVitals.stress)}%</span>
                     </div>
                     <Activity className="w-4 h-4 text-red-400 mt-1" />
                   </div>
                   <div className="w-px h-10 bg-white/30 mx-3" />
                   <div className="flex flex-col items-start w-[140px]">
                     <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className="font-bold text-blue-400">{vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</span>
+                      <span className="font-bold text-blue-400">{Math.round(bestMetrics.energy ?? simulatedVitals.energy)}%</span>
                       <span className="text-gray-300">{t('labels.energy')}</span>
                     </div>
                     <Zap className="w-4 h-4 text-blue-400 mt-1" />
