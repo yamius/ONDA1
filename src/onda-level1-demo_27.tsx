@@ -40,21 +40,26 @@ const OndaLevel1 = () => {
   useKeepAwake(true);
   
   // Auto-manage Watch workout: start when app opens, stop when app closes/backgrounds
+  // This enables continuous workout mode while app is in foreground
+  const watchSupported = watchHeartRate.watchStatus?.supported;
   useEffect(() => {
     console.log('[OndaLevel1] Watch auto-manage check:', {
       platform,
-      watchStatus: watchHeartRate.watchStatus,
-      supported: watchHeartRate.watchStatus?.supported
+      watchSupported,
+      autoManaged: watchHeartRate.autoManaged
     });
     
-    if (platform === 'ios' && watchHeartRate.watchStatus?.supported) {
-      console.log('[OndaLevel1] Enabling autoManaged for Watch');
+    if (platform === 'ios' && watchSupported === true) {
+      console.log('[OndaLevel1] Enabling autoManaged for Watch - workout will run while app is open');
       watchHeartRate.setAutoManaged(true);
     }
     return () => {
-      watchHeartRate.setAutoManaged(false);
+      if (watchHeartRate.autoManaged) {
+        console.log('[OndaLevel1] Disabling autoManaged for Watch');
+        watchHeartRate.setAutoManaged(false);
+      }
     };
-  }, [platform, watchHeartRate.watchStatus?.supported]);
+  }, [platform, watchSupported]);
   
   useEffect(() => {
     if (platform === 'ios' && healthKitData.isAvailable && healthKitData.isAuthorized) {
