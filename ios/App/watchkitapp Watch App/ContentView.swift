@@ -127,45 +127,44 @@ struct ContentView: View {
     private var mainView: some View {
         VStack(spacing: 0) {
             Spacer()
-                .frame(height: 8)
             
-            // Heart rate card
-            VStack(spacing: 6) {
-                HStack(spacing: 4) {
+            // Heart rate card - 20% larger
+            VStack(spacing: 8) {
+                HStack(spacing: 5) {
                     Image(systemName: "heart.fill")
                         .foregroundColor(.red)
-                        .font(.system(size: 18))
+                        .font(.system(size: 22))
                     
                     if workoutManager.heartRate > 0 {
                         Text("\(Int(workoutManager.heartRate))")
-                            .font(.system(size: 32, weight: .bold, design: .rounded))
+                            .font(.system(size: 38, weight: .bold, design: .rounded))
                     } else {
                         Text("--")
-                            .font(.system(size: 32, weight: .bold, design: .rounded))
+                            .font(.system(size: 38, weight: .bold, design: .rounded))
                             .foregroundColor(.secondary)
                     }
                     
                     Text("BPM")
-                        .font(.caption2)
+                        .font(.caption)
                         .foregroundColor(.secondary)
                 }
                 
-                HStack(spacing: 4) {
+                HStack(spacing: 5) {
                     Circle()
                         .fill(workoutManager.isActive ? Color.green : Color.gray)
-                        .frame(width: 6, height: 6)
+                        .frame(width: 7, height: 7)
                     Text(workoutManager.isActive ? "Активна" : "Ожидание")
                         .font(.caption2)
                         .foregroundColor(.secondary)
                 }
             }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 10)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 12)
             .background(
-                RoundedRectangle(cornerRadius: 12)
+                RoundedRectangle(cornerRadius: 14)
                     .fill(Color.black.opacity(0.3))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 12)
+                        RoundedRectangle(cornerRadius: 14)
                             .stroke(Color.white.opacity(0.1), lineWidth: 1)
                     )
             )
