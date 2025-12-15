@@ -128,22 +128,22 @@ struct ContentView: View {
         VStack(spacing: 0) {
             // Heart rate card - 20% larger, close to top like "Статистика"
             VStack(spacing: 8) {
-                HStack(spacing: 5) {
+                HStack(spacing: 6) {
                     Image(systemName: "heart.fill")
                         .foregroundColor(.red)
-                        .font(.system(size: 22))
+                        .font(.system(size: 26))
                     
                     if workoutManager.heartRate > 0 {
                         Text("\(Int(workoutManager.heartRate))")
-                            .font(.system(size: 38, weight: .bold, design: .rounded))
+                            .font(.system(size: 46, weight: .bold, design: .rounded))
                     } else {
                         Text("--")
-                            .font(.system(size: 38, weight: .bold, design: .rounded))
+                            .font(.system(size: 46, weight: .bold, design: .rounded))
                             .foregroundColor(.secondary)
                     }
                     
                     Text("BPM")
-                        .font(.caption)
+                        .font(.footnote)
                         .foregroundColor(.secondary)
                 }
                 
