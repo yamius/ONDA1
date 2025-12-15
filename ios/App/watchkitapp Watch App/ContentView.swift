@@ -168,6 +168,7 @@ struct ContentView: View {
             )
         }
         .navigationTitle("ONDA")
+        .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
