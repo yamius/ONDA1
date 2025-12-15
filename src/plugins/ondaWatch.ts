@@ -20,26 +20,11 @@ export interface DebugLogEvent {
   receivedCount: number;
 }
 
-export interface PracticeStartedEvent {
-  practiceId: string;
-}
-
-export interface PracticeEndedEvent {
-  practiceId: string;
-  duration: number;
-}
-
-export interface AudioRequestedEvent {
-  practiceId: string;
-}
-
 export interface OndaWatchPlugin {
   getStatus(): Promise<WatchStatus>;
   startRealtime(): Promise<void>;
   stopRealtime(): Promise<void>;
   sendHeartbeat(): Promise<void>;
-  sendAudioToWatch(options: { practiceId: string; filePath: string }): Promise<void>;
-  sendAudioProgress(options: { progress: string }): Promise<void>;
   addListener(
     eventName: 'heartRate',
     listenerFunc: (event: HeartRateEvent) => void
@@ -51,18 +36,6 @@ export interface OndaWatchPlugin {
   addListener(
     eventName: 'debugLog',
     listenerFunc: (event: DebugLogEvent) => void
-  ): Promise<PluginListenerHandle>;
-  addListener(
-    eventName: 'practiceStarted',
-    listenerFunc: (event: PracticeStartedEvent) => void
-  ): Promise<PluginListenerHandle>;
-  addListener(
-    eventName: 'practiceEnded',
-    listenerFunc: (event: PracticeEndedEvent) => void
-  ): Promise<PluginListenerHandle>;
-  addListener(
-    eventName: 'audioRequested',
-    listenerFunc: (event: AudioRequestedEvent) => void
   ): Promise<PluginListenerHandle>;
   removeAllListeners(): Promise<void>;
 }

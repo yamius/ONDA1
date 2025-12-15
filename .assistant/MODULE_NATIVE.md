@@ -29,22 +29,9 @@ ios/
 ### Поток данных HR (Apple Watch → React)
 1. Watch: `WorkoutManager` получает HR через HKWorkoutSession
 2. Watch: `PhoneConnector` отправляет через `WCSession.sendMessage()`
-3. iPhone: `OndaWatchPlugin` получает, вызывает `notifyListeners("heartRate")`
-4. React: `useWatchHeartRate` ловит событие
-
-### Практики на Apple Watch
-1. Watch: пользователь выбирает часть (1-12) и практику
-2. Watch → iPhone: `requestPractices` запрашивает данные
-3. iPhone → Watch: `sendPractices()` отправляет список практик с guidingTexts
-4. Watch: `PracticeSessionView` показывает текст (меняется каждые 15 сек)
-5. Watch → iPhone: `startPractice` / `endPractice` события
-6. iPhone: `useWatchPracticeAudio` запускает/останавливает аудио
-
-**Ключевые файлы:**
-- `ios/App/App/OndaWatchPlugin.swift` — plugin + практики Part 1
-- `ios/App/watchkitapp Watch App/ContentView.swift` — UI часов
-- `src/hooks/useWatchPracticeAudio.ts` — воспроизведение аудио
-- `.assistant/PRACTICES_AUDIO.md` — полная документация практик
+3. iPhone: `ViewController` получает в `session(_:didReceiveMessage:)`
+4. iPhone: Вызывает JS: `webView.evaluateJavaScript("window.receiveWatchHeartRate(\(hr))")`
+5. React: `useWatchHeartRate` ловит через `window.receiveWatchHeartRate`
 
 ### Деплой
 - GitHub Actions: `.github/workflows/ios-deploy.yml`

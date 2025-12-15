@@ -19,7 +19,6 @@ import { useHealthKitData } from './hooks/useHealthKitData';
 import { useHealthKitHeartRate } from './hooks/useHealthKitHeartRate';
 import { useKeepAwake } from './hooks/useKeepAwake';
 import { useWatchHeartRate } from './hooks/useWatchHeartRate';
-import { useWatchPracticeAudio } from './hooks/useWatchPracticeAudio';
 import { Capacitor } from '@capacitor/core';
 import { rhythmStore } from './sleep/rhythm';
 import { calculatePracticeOnd } from './utils/ondCalculator';
@@ -36,7 +35,6 @@ const OndaLevel1 = () => {
   const healthKitData = useHealthKitData();
   const healthKitHeartRate = useHealthKitHeartRate({ pollingInterval: 1500 });
   const watchHeartRate = useWatchHeartRate();
-  const watchPracticeAudio = useWatchPracticeAudio();
   const platform = Capacitor.getPlatform();
   
   useKeepAwake(true);

@@ -41,87 +41,51 @@ jobs:
         with:
           xcode-version: '16.1'
 
-      - name: Verify Xcode SDKs
+      - name: Download iOS and watchOS Platforms with retry
         run: |
-          echo "=== Xcode and SDK Info ==="
+          download_platform() {
+            local platform=$1
+            local max_attempts=3
+            local attempt=1
+            
+            while [ $attempt -le $max_attempts ]; do
+              echo "Attempting to download $platform platform (attempt $attempt/$max_attempts)..."
+              if sudo xcodebuild -downloadPlatform "$platform"; then
+                echo "$platform platform download completed!"
+                return 0
+              else
+                echo "Download failed for $platform, waiting 30 seconds before retry..."
+                sleep 30
+                attempt=$((attempt + 1))
+              fi
+            done
+            
+            echo "Failed to download $platform after $max_attempts attempts"
+            return 1
+          }
+          
+          echo "=== Downloading iOS Platform ==="
+          download_platform iOS
+          
+          echo ""
+          echo "=== Downloading watchOS Platform ==="
+          download_platform watchOS
+
+      - name: Verify iOS SDK
+        run: |
           xcode-select -p
           xcodebuild -version
           xcodebuild -showsdks
 
-      - name: Install iOS/watchOS Platforms
+      - name: Fix Xcode project format for CocoaPods
         run: |
-          echo "=== Running first launch setup ==="
-          sudo xcodebuild -runFirstLaunch || true
-          
-          echo "=== Accepting Xcode license ==="
-          sudo xcodebuild -license accept || true
-          
-          echo "=== Downloading iOS platform (with retry) ==="
-          for i in 1 2 3; do
-            echo "Attempt $i to download iOS platform..."
-            if sudo xcodebuild -downloadPlatform iOS; then
-              echo "iOS platform download succeeded"
-              break
-            else
-              echo "iOS platform download failed (attempt $i), waiting 10s..."
-              sleep 10
-            fi
-          done
-          
-          echo "=== Downloading watchOS platform (with retry) ==="
-          for i in 1 2 3; do
-            echo "Attempt $i to download watchOS platform..."
-            if sudo xcodebuild -downloadPlatform watchOS; then
-              echo "watchOS platform download succeeded"
-              break
-            else
-              echo "watchOS platform download failed (attempt $i), waiting 10s..."
-              sleep 10
-            fi
-          done
-          
-          echo "=== Verifying platforms installed ==="
-          xcodebuild -showsdks
-          
-          echo "=== SDK Paths ==="
-          xcrun --sdk iphoneos --show-sdk-path
-          xcrun --sdk watchos --show-sdk-path
-          
-          # Critical: Test that xcodebuild can actually find iOS destination
-          echo "=== Testing iOS destination availability ==="
-          if xcodebuild -showdestinations -scheme App -workspace ios/App/App.xcworkspace 2>&1 | grep -q "platform:iOS"; then
-            echo "SUCCESS: iOS destination available"
-          else
-            echo "WARNING: iOS destination may not be available, continuing anyway..."
-          fi
-
-      - name: Setup CocoaPods
-        run: |
-          # Fix Xcode 16 project format for CocoaPods compatibility
-          echo "=== Fixing objectVersion for CocoaPods ==="
           sed -i '' 's/objectVersion = 70/objectVersion = 56/' ios/App/App.xcodeproj/project.pbxproj || true
-          grep "objectVersion" ios/App/App.xcodeproj/project.pbxproj | head -1
-          # Update gems
-          gem install xcodeproj --no-document
-          gem install cocoapods --no-document
+          gem update xcodeproj
+          gem install cocoapods
           pod --version
 
       - name: Sync Capacitor
         run: npx cap sync ios
-
-      - name: Verify watchOS App Icons
-        run: |
-          ICON_DIR="ios/App/watchkitapp Watch App/Assets.xcassets/AppIcon.appiconset"
-          echo "=== Checking watchOS icons ==="
-          ls -la "$ICON_DIR/"
-          # Count icon files (should be 16)
-          ICON_COUNT=$(ls "$ICON_DIR"/icon-*.png 2>/dev/null | wc -l)
-          echo "Found $ICON_COUNT icon files"
-          if [ "$ICON_COUNT" -lt 16 ]; then
-            echo "ERROR: Expected 16 icons, found $ICON_COUNT"
-            exit 1
-          fi
-          echo "All 16 icons present"
 
       - name: Create App Store Connect API Key
         run: |

@@ -2,16 +2,11 @@
 
 ## Текущие задачи (TODO)
 - [ ] Подключение платёжных систем для оформления платной подписки
-- [ ] Тестирование Apple Watch практик через TestFlight
+- [ ] Добавление возможности захода с часов на базовые практики
+- [ ] Тестирование Apple Watch HR streaming
 - [ ] Улучшение UX практик
 
 ## Недавно сделано (DONE)
-- [x] GitHub Actions iOS сборка — исправлены все проблемы совместимости (Xcode 16, CocoaPods, objectVersion)
-- [x] Watch практики Part 1 — полная реализация системы практик на Apple Watch
-- [x] PracticeSessionView — экран практики с направляющими текстами (15-сек интервалы) без таймера/HR
-- [x] WCSession синхронизация — iPhone → Watch передача практик, Watch → iPhone события start/end
-- [x] 12 практик Part 1 с полными guiding texts (3мин=12 текстов, 6мин=24, 12мин=48)
-- [x] useWatchPracticeAudio — автоматическое воспроизведение аудио на iPhone при запуске практики с часов
 - [x] Life Rhythm сервис — автоматическое чтение времени сна из HealthKit
 - [x] Метрики ритма: регулярность засыпания/пробуждения, качество сна, streak
 - [x] Оптимизация структуры проекта — добавлены `.assistant/`, обновлены `replit.md` и `README.md`
@@ -24,16 +19,14 @@
 - `.assistant/PHILOSOPHY.md` — правила работы над проектом
 - `.assistant/AI_INSTRUCTIONS.md` — быстрый старт сессии
 - `.assistant/MODULE_FRONTEND.md` — архитектура React PWA
-- `.assistant/MODULE_NATIVE.md` — архитектура iOS/Android + Apple Watch
+- `.assistant/MODULE_NATIVE.md` — архитектура iOS/Android
 - `.assistant/MODULE_SUPABASE.md` — архитектура бэкенда
-- `.assistant/PRACTICES_AUDIO.md` — структура практик, ID, аудио файлы
-- `.assistant/GITHUB_ACTIONS_TROUBLESHOOTING.md` — решения проблем iOS сборки
 
 ---
 
 # Overview
 
-ONDA is a mindfulness and wellness mobile application that integrates gamification with biometric tracking. It guides users through progressive "Части" (Parts, formerly "circuits") of consciousness development practices, rewarding completion with virtual currency (OND). The app leverages real-time health data from Google Health Connect (Android), Apple HealthKit (iOS), Apple Watch, and Bluetooth heart rate monitors to provide adaptive, personalized meditation and breathing exercises.
+ONDA is a mindfulness and wellness mobile application that integrates gamification with biometric tracking. It guides users through progressive "circuits" of consciousness development practices, rewarding completion with virtual currency (OND). The app leverages real-time health data from Google Health Connect (Android), Apple HealthKit (iOS), and Bluetooth heart rate monitors to provide adaptive, personalized meditation and breathing exercises.
 
 The application is a React-based Progressive Web App (PWA) with native mobile support via a custom WebView wrapper for Android and Capacitor for iOS. It features multilingual support (English, Spanish, Russian, Ukrainian, Chinese) and both light/dark themes. The business vision is to provide an engaging and effective platform for personal growth, making wellness practices accessible and motivating, with strong market potential in the digital health and self-improvement sectors.
 
@@ -48,11 +41,6 @@ Preferred communication style: Simple, everyday language.
 - Workflow: **Replit → GitHub → GitHub Actions → TestFlight** only
 - All iOS testing done via TestFlight builds on physical device
 - Russian language preferred for UI and communication
-
-**ОБЯЗАТЕЛЬНОЕ ПРАВИЛО при ошибках iOS сборки:**
-- **ВСЕГДА** читать `.assistant/GITHUB_ACTIONS_TROUBLESHOOTING.md` ПЕРЕД попыткой исправить ошибку
-- Файл содержит решения всех известных проблем с точными симптомами и командами
-- Это предотвращает циклические попытки подбора конфигурации
 
 # System Architecture
 
@@ -129,68 +117,14 @@ Preferred communication style: Simple, everyday language.
 
 ## Gamification System
 
-**Структура прогрессии:**
-- **Уровень** = 3 Части
-- **Часть** (Part, бывший "контур"/circuit) = набор практик
-- Всего 12 частей, 4 уровня
-
-**Уровень 1 — Body (Тело):**
-  - Часть 1: I Am (Я есть)
-  - Часть 2: I Move (Я двигаюсь)
-  - Часть 3: I Adapt (Я адаптируюсь)
-
-**Уровень 2 — Emotions (Эмоции):**
-  - Часть 4: I Maneuver (Я маневрирую)
-  - Часть 5: I Guard Territory (Я охраняю территорию)
-  - Часть 6: I Am in the Pack (Я в стае)
-
-**Уровень 3 — Mind (Разум):**
-  - Часть 7: I Distinguish (Я различаю)
-  - Часть 8: I Focus (Я фокусируюсь)
-  - Часть 9: I Plan (Я планирую)
-
-**Уровень 4 — Society (Общество):**
-  - Часть 10: I Speak (Я говорю)
-  - Часть 11: I Exchange (Я обмениваюсь)
-  - Часть 12: I Collaborate (Я сотрудничаю)
-
-- Практики внутри каждой части
-- Награды OND за выполнение практик
-- Последовательная разблокировка частей и уровней
+**Circuit-Based Progression:**
+- Four consciousness circuits with sequential unlocking.
+- Practice-based advancement and OND currency rewards.
 
 **Achievement System:**
 - Artifact collection.
 - Historical tracking of practice sessions.
 - Sleep rhythm monitoring.
-
-## Apple Watch Integration
-
-**Файлы watchOS приложения:**
-- `ios/App/watchkitapp Watch App/ContentView.swift` — UI экраны (MainView, PracticeSessionView)
-- `ios/App/watchkitapp Watch App/WorkoutManager.swift` — HR + WCSession
-- `ios/App/watchkitapp Watch App/OndaWatchApp.swift` — точка входа
-
-**Файлы iPhone (WCSession):**
-- `ios/App/App/OndaWatchPlugin.swift` — Capacitor plugin + OndaWatchManager + PracticeData
-
-**Функционал часов:**
-- Real-time HR streaming на iPhone через WCSession
-- Выбор текущей Части (1-12) через NavigationLink picker
-- Список практик текущей части с кнопками запуска
-- Экран практики с таймером, HR, направляющими текстами (смена каждые 15 сек с fade)
-- Кнопка завершения практики с уведомлением iPhone
-
-**Коммуникация Watch ↔ iPhone:**
-- Watch → iPhone: `heartRate`, `requestPractices`, `startPractice`, `endPractice`
-- iPhone → Watch: `practices` (массив практик с guidingTexts)
-- `sendMessage` — когда iPhone reachable
-- `transferUserInfo` — надёжная доставка в фоне
-- iPhone уведомляет JS через `notifyListeners("practiceStarted"/"practiceEnded")`
-
-**Практики Part 1:**
-- 12 практик с полными guiding texts (3мин=12, 6мин=24, 12мин=48 текстов)
-- Данные хранятся в `part1Practices` в OndaWatchPlugin.swift
-- Текст меняется каждые 15 секунд с 0.5s fade анимацией
 
 ## Audio System
 
