@@ -24,18 +24,20 @@ struct ContentView: View {
     @State private var waitingSeconds: Int = 0
     
     var body: some View {
-        Group {
-            switch permissionState {
-            case .checking:
-                checkingView
-            case .needsPermission:
-                permissionRequestView
-            case .waitingForHR:
-                waitingForHRView
-            case .granted:
-                mainView
-            case .denied:
-                deniedView
+        NavigationStack {
+            Group {
+                switch permissionState {
+                case .checking:
+                    checkingView
+                case .needsPermission:
+                    permissionRequestView
+                case .waitingForHR:
+                    waitingForHRView
+                case .granted:
+                    mainView
+                case .denied:
+                    deniedView
+                }
             }
         }
         .onAppear {
@@ -124,18 +126,8 @@ struct ContentView: View {
     
     private var mainView: some View {
         VStack(spacing: 0) {
-            // Header with ONDA aligned to top-left
-            HStack {
-                Text("ONDA")
-                    .font(.caption)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.cyan)
-                Spacer()
-            }
-            .padding(.horizontal, 8)
-            .padding(.top, 4)
-            
             Spacer()
+                .frame(height: 8)
             
             // Heart rate card
             VStack(spacing: 6) {
@@ -180,6 +172,7 @@ struct ContentView: View {
             
             Spacer()
         }
+        .navigationTitle("ONDA")
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
