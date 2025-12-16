@@ -8,6 +8,8 @@ interface EmotionalCheckModalProps {
   isOpen: boolean;
   onClose: () => void;
   onOndEarned?: (amount: number) => void;
+  pauseAutoStop?: () => void;
+  resumeAutoStop?: () => void;
 }
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -22,7 +24,7 @@ interface EmotionalResult {
   recommendation: string;
 }
 
-export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalCheckModalProps) {
+export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoStop, resumeAutoStop }: EmotionalCheckModalProps) {
   const { t } = useTranslation();
   const [recordingState, setRecordingState] = useState<RecordingState>('idle');
   const [recordingTime, setRecordingTime] = useState(0);
@@ -51,7 +53,11 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   const startRecording = async () => {
     try {
       console.log('[EmotionalCheck] Requesting microphone access...');
+      // Pause auto-stop to prevent Watch disconnection during permission dialog
+      pauseAutoStop?.();
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      // Resume auto-stop after permission granted
+      resumeAutoStop?.();
       console.log('[EmotionalCheck] Microphone access granted, starting recording');
       
       const mediaRecorder = new MediaRecorder(stream);
@@ -79,6 +85,8 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
         setRecordingTime(prev => prev + 1);
       }, 1000);
     } catch (error: any) {
+      // Resume auto-stop even on error
+      resumeAutoStop?.();
       console.error('[EmotionalCheck] Error accessing microphone:', error);
       console.error('[EmotionalCheck] Error name:', error.name);
       console.error('[EmotionalCheck] Error message:', error.message);

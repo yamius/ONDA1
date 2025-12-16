@@ -3875,6 +3875,8 @@ const OndaLevel1 = () => {
         isOpen={showEmotionalCheck}
         onClose={() => setShowEmotionalCheck(false)}
         onOndEarned={(amount) => setQnt(prev => prev + amount)}
+        pauseAutoStop={watchHeartRate.pauseAutoStop}
+        resumeAutoStop={watchHeartRate.resumeAutoStop}
       />
 
       <InfoModal

@@ -16,6 +16,8 @@ interface UseWatchHeartRateReturn {
   debugLog: string[];
   autoManaged: boolean;
   setAutoManaged: (value: boolean) => void;
+  pauseAutoStop: () => void;
+  resumeAutoStop: () => void;
 }
 
 export function useWatchHeartRate(): UseWatchHeartRateReturn {
@@ -222,6 +224,17 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     }
   }, []);
 
+  // Pause/resume auto-stop for permission dialogs
+  const pauseAutoStop = useCallback(() => {
+    console.log('[Watch] pauseAutoStop called - blocking auto-stop');
+    isConnectingRef.current = true;
+  }, []);
+
+  const resumeAutoStop = useCallback(() => {
+    console.log('[Watch] resumeAutoStop called - unblocking auto-stop');
+    isConnectingRef.current = false;
+  }, []);
+
   // Keep ref in sync with state
   useEffect(() => {
     isAutoManagedRef.current = autoManaged;
@@ -372,6 +385,8 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     isMonitoring,
     debugLog,
     autoManaged,
-    setAutoManaged
+    setAutoManaged,
+    pauseAutoStop,
+    resumeAutoStop
   };
 }
