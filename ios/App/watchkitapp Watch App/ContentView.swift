@@ -83,11 +83,11 @@ struct ContentView: View {
                 .font(.system(size: 40))
                 .foregroundColor(.red)
             
-            Text("Доступ к здоровью")
+            Text("health_access")
                 .font(.headline)
                 .multilineTextAlignment(.center)
             
-            Text("Разрешите чтение пульса для практик")
+            Text("permission_description")
                 .font(.caption2)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
@@ -96,7 +96,7 @@ struct ContentView: View {
                 HStack(spacing: 4) {
                     Image(systemName: "checkmark.shield")
                         .font(.caption)
-                    Text("Разрешить")
+                    Text("allow_button")
                         .font(.caption)
                 }
             }
@@ -112,13 +112,13 @@ struct ContentView: View {
                 .font(.system(size: 40))
                 .foregroundColor(.cyan)
             
-            Text("Ожидание пульса...")
+            Text("waiting_for_hr")
                 .font(.headline)
             
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle())
             
-            Text("\(5 - waitingSeconds) сек")
+            Text(String(format: NSLocalizedString("seconds_remaining", comment: ""), 5 - waitingSeconds))
                 .font(.caption2)
                 .foregroundColor(.secondary)
         }
@@ -152,7 +152,7 @@ struct ContentView: View {
                     Circle()
                         .fill(workoutManager.isActive ? Color.green : Color.gray)
                         .frame(width: 7, height: 7)
-                    Text(workoutManager.isActive ? "Активна" : "Ожидание")
+                    Text(workoutManager.isActive ? "status_active" : "status_waiting")
                         .font(.caption2)
                         .foregroundColor(.secondary)
                 }
@@ -169,14 +169,6 @@ struct ContentView: View {
                     )
             )
         }
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Text("ONDAONDAONDAONDA")
-                    .font(.system(size: 10, weight: .medium))
-                    .foregroundColor(Color.white.opacity(0.15))
-                    .lineLimit(1)
-            }
-        }
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
@@ -192,14 +184,14 @@ struct ContentView: View {
                     .font(.system(size: 32))
                     .foregroundColor(.red)
                 
-                Text("Доступ запрещён")
+                Text("access_denied")
                     .font(.headline)
                 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("На iPhone откройте:")
+                    Text("open_on_iphone")
                         .font(.caption2)
                         .foregroundColor(.secondary)
-                    Text("Настройки → Здоровье → Доступ к данным → ONDA")
+                    Text("settings_path")
                         .font(.caption2)
                         .foregroundColor(.cyan)
                 }
@@ -210,7 +202,7 @@ struct ContentView: View {
                     HStack(spacing: 4) {
                         Image(systemName: "arrow.clockwise")
                             .font(.caption)
-                        Text("Проверить")
+                        Text("check_button")
                             .font(.caption)
                     }
                 }

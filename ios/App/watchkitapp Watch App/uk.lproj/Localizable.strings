@@ -1,0 +1,20 @@
+/* Ukrainian localization for ONDA Watch App */
+
+/* Permission Request Screen */
+"health_access" = "Доступ до здоров'я";
+"permission_description" = "Дозвольте читання пульсу для практик";
+"allow_button" = "Дозволити";
+
+/* Waiting for HR Screen */
+"waiting_for_hr" = "Очікування пульсу...";
+"seconds_remaining" = "%d сек";
+
+/* Main Screen */
+"status_active" = "Активна";
+"status_waiting" = "Очікування";
+
+/* Denied Screen */
+"access_denied" = "Доступ заборонено";
+"open_on_iphone" = "На iPhone відкрийте:";
+"settings_path" = "Налаштування → Здоров'я → Доступ до даних → ONDA";
+"check_button" = "Перевірити";
