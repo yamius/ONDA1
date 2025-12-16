@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { X, Mic, Square, Play, Pause, Volume2, RefreshCw, MessageCircle } from 'lucide-react';
+import { X, Mic, Play, Pause, Volume2, RefreshCw, MessageCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 import { LizaChatModal } from './LizaChatModal';
@@ -99,7 +99,13 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
       setRecordingTime(0);
 
       timerRef.current = window.setInterval(() => {
-        setRecordingTime(prev => prev + 1);
+        setRecordingTime(prev => {
+          // Auto-stop recording at 30 seconds
+          if (prev >= 29) {
+            setTimeout(() => stopRecording(), 0);
+          }
+          return prev + 1;
+        });
       }, 1000);
     } catch (error: any) {
       // Resume auto-stop even on error
@@ -306,9 +312,8 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
               <p className="text-white/70 text-sm">{t('emotional_check.recording_in_progress')}</p>
               <button
                 onClick={stopRecording}
-                className="w-full bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
+                className="w-full bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all text-base"
               >
-                <Square className="w-5 h-5" />
                 {t('emotional_check.stop_recording')}
               </button>
             </div>
