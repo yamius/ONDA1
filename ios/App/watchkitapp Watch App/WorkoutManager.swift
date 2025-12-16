@@ -18,7 +18,10 @@ class WorkoutManager: NSObject, ObservableObject {
     
     private var keepAliveTimer: Timer?
     private var disconnectTime: Date?
-    private let keepAliveDuration: TimeInterval = 60.0
+    private let keepAliveDuration: TimeInterval = 90.0
+    
+    @Published var isWaitingForPermissions = false
+    private var permissionWaitTimer: Timer?
     
     override init() {
         super.init()
@@ -75,10 +78,53 @@ class WorkoutManager: NSObject, ObservableObject {
         keepAliveTimer = nil
         disconnectTime = nil
         
+        if isWaitingForPermissions {
+            print("[WorkoutManager] Connection restored while waiting for permissions - clearing flag")
+            endPermissionWait()
+        }
+        
         if !isActive {
             print("[WorkoutManager] Auto-restarting workout after reconnection")
             startWorkout()
         }
+    }
+    
+    func startPermissionWait() {
+        print("[WorkoutManager] Permission dialog opened on phone - entering wait mode")
+        isWaitingForPermissions = true
+        
+        startExtendedSession()
+        
+        permissionWaitTimer?.invalidate()
+        permissionWaitTimer = Timer.scheduledTimer(withTimeInterval: 45.0, repeats: false) { [weak self] _ in
+            print("[WorkoutManager] Permission wait timeout (45s) - auto-clearing")
+            self?.endPermissionWait()
+        }
+    }
+    
+    func endPermissionWait() {
+        print("[WorkoutManager] Permission dialog closed - resuming normal mode")
+        isWaitingForPermissions = false
+        permissionWaitTimer?.invalidate()
+        permissionWaitTimer = nil
+        
+        if !isActive {
+            print("[WorkoutManager] Workout not active after permission wait - restarting")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                self.startWorkout()
+            }
+        }
+    }
+    
+    func handleAppBecameActive() {
+        print("[WorkoutManager] App became active - checking workout state")
+        
+        if !isActive {
+            print("[WorkoutManager] Workout not active on foreground - restarting")
+            startWorkout()
+        }
+        
+        startExtendedSession()
     }
     
     func checkAndRequestAuthorization() {
@@ -333,6 +379,10 @@ extension WorkoutManager: WCSessionDelegate {
                 self.stopWorkout()
             case "heartbeat":
                 print("[WorkoutManager] Heartbeat received")
+            case "permission_start":
+                self.startPermissionWait()
+            case "permission_end":
+                self.endPermissionWait()
             default:
                 print("[WorkoutManager] Unknown command: \(cmd)")
             }

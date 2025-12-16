@@ -18,6 +18,8 @@ interface UseWatchHeartRateReturn {
   setAutoManaged: (value: boolean) => void;
   pauseAutoStop: () => void;
   resumeAutoStop: () => void;
+  notifyPermissionStart: () => Promise<void>;
+  notifyPermissionEnd: () => Promise<void>;
 }
 
 export function useWatchHeartRate(): UseWatchHeartRateReturn {
@@ -235,6 +237,30 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     isConnectingRef.current = false;
   }, []);
 
+  const notifyPermissionStart = useCallback(async () => {
+    const platform = Capacitor.getPlatform();
+    if (platform !== 'ios') return;
+    
+    console.log('[Watch] Notifying watch: permission dialog starting');
+    try {
+      await OndaWatch.notifyPermissionStart();
+    } catch (err) {
+      console.error('[Watch] notifyPermissionStart error:', err);
+    }
+  }, []);
+
+  const notifyPermissionEnd = useCallback(async () => {
+    const platform = Capacitor.getPlatform();
+    if (platform !== 'ios') return;
+    
+    console.log('[Watch] Notifying watch: permission dialog ended');
+    try {
+      await OndaWatch.notifyPermissionEnd();
+    } catch (err) {
+      console.error('[Watch] notifyPermissionEnd error:', err);
+    }
+  }, []);
+
   // Keep ref in sync with state
   useEffect(() => {
     isAutoManagedRef.current = autoManaged;
@@ -387,6 +413,8 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     autoManaged,
     setAutoManaged,
     pauseAutoStop,
-    resumeAutoStop
+    resumeAutoStop,
+    notifyPermissionStart,
+    notifyPermissionEnd
   };
 }

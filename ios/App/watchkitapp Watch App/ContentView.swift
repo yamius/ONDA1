@@ -58,6 +58,10 @@ struct ContentView: View {
             waitingTimer?.invalidate()
             waitingTimer = nil
         }
+        .onReceive(NotificationCenter.default.publisher(for: WKExtension.applicationDidBecomeActiveNotification)) { _ in
+            print("[ContentView] App became active - triggering workout check")
+            workoutManager.handleAppBecameActive()
+        }
     }
     
     // MARK: - Views

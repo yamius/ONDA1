@@ -37,6 +37,18 @@ public class OndaWatchPlugin: CAPPlugin {
         implementation.sendHeartbeat()
         call.resolve()
     }
+    
+    @objc func notifyPermissionStart(_ call: CAPPluginCall) {
+        print("[ONDA Plugin] notifyPermissionStart called")
+        implementation.sendCommand(type: "permission_start")
+        call.resolve()
+    }
+    
+    @objc func notifyPermissionEnd(_ call: CAPPluginCall) {
+        print("[ONDA Plugin] notifyPermissionEnd called")
+        implementation.sendCommand(type: "permission_end")
+        call.resolve()
+    }
 }
 
 // MARK: - Менеджер WCSession (iOS ↔ watchOS)

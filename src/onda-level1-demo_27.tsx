@@ -3879,6 +3879,8 @@ const OndaLevel1 = () => {
         resumeAutoStop={watchHeartRate.resumeAutoStop}
         isWatchMonitoring={watchHeartRate.isMonitoring}
         startWatchWorkout={watchHeartRate.startRealtime}
+        notifyPermissionStart={watchHeartRate.notifyPermissionStart}
+        notifyPermissionEnd={watchHeartRate.notifyPermissionEnd}
       />
 
       <InfoModal

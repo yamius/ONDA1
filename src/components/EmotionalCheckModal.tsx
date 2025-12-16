@@ -12,6 +12,8 @@ interface EmotionalCheckModalProps {
   resumeAutoStop?: () => void;
   isWatchMonitoring?: boolean;
   startWatchWorkout?: () => void;
+  notifyPermissionStart?: () => Promise<void>;
+  notifyPermissionEnd?: () => Promise<void>;
 }
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -26,7 +28,7 @@ interface EmotionalResult {
   recommendation: string;
 }
 
-export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoStop, resumeAutoStop, isWatchMonitoring, startWatchWorkout }: EmotionalCheckModalProps) {
+export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoStop, resumeAutoStop, isWatchMonitoring, startWatchWorkout, notifyPermissionStart, notifyPermissionEnd }: EmotionalCheckModalProps) {
   const { t } = useTranslation();
   const [recordingState, setRecordingState] = useState<RecordingState>('idle');
   const [recordingTime, setRecordingTime] = useState(0);
@@ -70,10 +72,14 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
   const startRecording = async () => {
     try {
       console.log('[EmotionalCheck] Requesting microphone access...');
-      // Pause auto-stop to prevent Watch disconnection during permission dialog
+      // Notify watch that permission dialog is about to show
       pauseAutoStop?.();
+      await notifyPermissionStart?.();
+      
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      // Resume auto-stop after permission granted
+      
+      // Notify watch that permission dialog has closed
+      await notifyPermissionEnd?.();
       resumeAutoStop?.();
       console.log('[EmotionalCheck] Microphone access granted, starting recording');
       
@@ -108,7 +114,8 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
         });
       }, 1000);
     } catch (error: any) {
-      // Resume auto-stop even on error
+      // Notify watch and resume auto-stop even on error
+      await notifyPermissionEnd?.();
       resumeAutoStop?.();
       console.error('[EmotionalCheck] Error accessing microphone:', error);
       console.error('[EmotionalCheck] Error name:', error.name);
