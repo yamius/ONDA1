@@ -10,6 +10,8 @@ interface EmotionalCheckModalProps {
   onOndEarned?: (amount: number) => void;
   pauseAutoStop?: () => void;
   resumeAutoStop?: () => void;
+  isWatchMonitoring?: boolean;
+  startWatchWorkout?: () => void;
 }
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -24,7 +26,7 @@ interface EmotionalResult {
   recommendation: string;
 }
 
-export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoStop, resumeAutoStop }: EmotionalCheckModalProps) {
+export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoStop, resumeAutoStop, isWatchMonitoring, startWatchWorkout }: EmotionalCheckModalProps) {
   const { t } = useTranslation();
   const [recordingState, setRecordingState] = useState<RecordingState>('idle');
   const [recordingTime, setRecordingTime] = useState(0);
@@ -49,6 +51,21 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
       }
     };
   }, [audioURL]);
+
+  // Auto-reconnect Watch when recording starts (after permission granted)
+  // This handles the case where Watch disconnected during permission dialog
+  useEffect(() => {
+    if (recordingState === 'recording' && isWatchMonitoring === false && startWatchWorkout) {
+      console.log('[EmotionalCheck] Recording started but Watch disconnected - auto-reconnecting...');
+      pauseAutoStop?.();
+      startWatchWorkout();
+      // Resume auto-stop after giving time for reconnection
+      setTimeout(() => {
+        resumeAutoStop?.();
+        console.log('[EmotionalCheck] Watch reconnection attempt complete');
+      }, 3000);
+    }
+  }, [recordingState, isWatchMonitoring, startWatchWorkout, pauseAutoStop, resumeAutoStop]);
 
   const startRecording = async () => {
     try {

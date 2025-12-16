@@ -3877,6 +3877,8 @@ const OndaLevel1 = () => {
         onOndEarned={(amount) => setQnt(prev => prev + amount)}
         pauseAutoStop={watchHeartRate.pauseAutoStop}
         resumeAutoStop={watchHeartRate.resumeAutoStop}
+        isWatchMonitoring={watchHeartRate.isMonitoring}
+        startWatchWorkout={watchHeartRate.startRealtime}
       />
 
       <InfoModal
