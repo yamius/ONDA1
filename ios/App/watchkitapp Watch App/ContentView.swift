@@ -126,7 +126,7 @@ struct ContentView: View {
     
     private var mainView: some View {
         VStack(spacing: 0) {
-            // Heart rate card - 20% larger, close to top like "Статистика"
+            // Heart rate card - raised slightly higher
             VStack(spacing: 8) {
                 HStack(spacing: 6) {
                     Image(systemName: "heart.fill")
@@ -158,6 +158,7 @@ struct ContentView: View {
             }
             .padding(.horizontal, 14)
             .padding(.vertical, 12)
+            .offset(y: -8)
             .background(
                 RoundedRectangle(cornerRadius: 14)
                     .fill(Color.black.opacity(0.3))
