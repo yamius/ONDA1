@@ -22,6 +22,7 @@ struct ContentView: View {
     @State private var permissionState: PermissionState = .checking
     @State private var waitingTimer: Timer?
     @State private var waitingSeconds: Int = 0
+    @State private var isFirstLaunch: Bool = true
     
     var body: some View {
         NavigationStack {
@@ -224,19 +225,29 @@ struct ContentView: View {
     private func checkInitialPermissionState() {
         // If we already have HR data, permission is granted
         if workoutManager.heartRate > 0 {
+            print("[ContentView] HR already available, permission granted")
+            isFirstLaunch = false
             permissionState = .granted
             return
         }
         
-        // Check if workout is already active (app was backgrounded and returned)
+        // On first launch, ignore isActive and always show permission request
+        if isFirstLaunch {
+            print("[ContentView] First launch - showing permission request (ignoring isActive=\(workoutManager.isActive))")
+            isFirstLaunch = false
+            permissionState = .needsPermission
+            return
+        }
+        
+        // Not first launch - check if workout is active (app was backgrounded and returned)
         if workoutManager.isActive {
+            print("[ContentView] Returning from background with active workout")
             permissionState = .granted
             return
         }
         
-        // Always show permission request on fresh start
-        // HealthKit doesn't allow checking read permission status directly
-        print("[ContentView] Fresh start - showing permission request")
+        // Fallback - show permission request
+        print("[ContentView] Fallback - showing permission request")
         permissionState = .needsPermission
     }
     
