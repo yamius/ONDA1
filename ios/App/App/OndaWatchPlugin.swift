@@ -122,27 +122,37 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         print("[ONDA Manager] Sending command '\(type)', reachable: \(session.isReachable)")
         
         let message: [String: Any] = ["type": type, "ts": Date().timeIntervalSince1970]
-
-        if session.isReachable {
-            // Прямая отправка когда часы активны
-            session.sendMessage(message, replyHandler: { reply in
-                print("[ONDA Manager] Command sent OK")
-            }) { error in
-                print("[ONDA Manager] sendCommand error: \(error.localizedDescription)")
-            }
-        } else {
-            // Когда часы не активны - используем оба метода для надёжности
-            
-            // 1. transferUserInfo - разбудит приложение на часах в фоне
+        
+        // Критические команды - отправляем через ВСЕ каналы для надёжности
+        let isCritical = ["start", "stop", "permission_start", "permission_end"].contains(type)
+        
+        if isCritical {
+            // 1. transferUserInfo - надёжная доставка, работает даже когда app inactive
             session.transferUserInfo(message)
-            print("[ONDA Manager] Command transferred via userInfo")
+            print("[ONDA Manager] Critical command '\(type)' sent via transferUserInfo")
             
-            // 2. updateApplicationContext - данные будут доступны сразу при пробуждении
+            // 2. applicationContext - данные доступны сразу при пробуждении
             do {
                 try session.updateApplicationContext(["command": type, "ts": Date().timeIntervalSince1970])
-                print("[ONDA Manager] Application context updated")
+                print("[ONDA Manager] Application context updated with '\(type)'")
             } catch {
                 print("[ONDA Manager] updateApplicationContext error: \(error.localizedDescription)")
+            }
+            
+            // 3. sendMessage как "ускоритель" - быстрая доставка если reachable
+            if session.isReachable {
+                session.sendMessage(message, replyHandler: nil) { error in
+                    print("[ONDA Manager] sendMessage (accelerator) error: \(error.localizedDescription)")
+                }
+            }
+        } else {
+            // Некритические команды (heartbeat и т.д.) - обычная логика
+            if session.isReachable {
+                session.sendMessage(message, replyHandler: nil) { error in
+                    print("[ONDA Manager] sendCommand error: \(error.localizedDescription)")
+                }
+            } else {
+                session.transferUserInfo(message)
             }
         }
     }

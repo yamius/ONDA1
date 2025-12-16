@@ -23,6 +23,10 @@ class WorkoutManager: NSObject, ObservableObject {
     @Published var isWaitingForPermissions = false
     private var permissionWaitTimer: Timer?
     
+    // Дедупликация команд (команда может прийти через несколько каналов)
+    private var lastProcessedCommands: [String: TimeInterval] = [:]
+    private let commandDeduplicationWindow: TimeInterval = 5.0 // 5 секунд
+    
     override init() {
         super.init()
         setupWatchConnectivity()
@@ -364,6 +368,25 @@ extension WorkoutManager: WCSessionDelegate {
             print("[WorkoutManager] No command found in data")
             return
         }
+        
+        // Дедупликация: проверяем не обрабатывали ли эту команду недавно
+        let timestamp = data["ts"] as? TimeInterval ?? Date().timeIntervalSince1970
+        let commandKey = "\(cmd)_\(Int(timestamp))" // Уникальный ключ по команде и времени
+        
+        if let lastProcessed = lastProcessedCommands[commandKey] {
+            let elapsed = Date().timeIntervalSince1970 - lastProcessed
+            if elapsed < commandDeduplicationWindow {
+                print("[WorkoutManager] Skipping duplicate command '\(cmd)' (processed \(Int(elapsed))s ago)")
+                return
+            }
+        }
+        
+        // Запоминаем что обработали эту команду
+        lastProcessedCommands[commandKey] = Date().timeIntervalSince1970
+        
+        // Очистка старых записей (старше 30 секунд)
+        let now = Date().timeIntervalSince1970
+        lastProcessedCommands = lastProcessedCommands.filter { now - $0.value < 30 }
         
         print("[WorkoutManager] Processing command: \(cmd)")
         
