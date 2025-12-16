@@ -169,10 +169,10 @@ struct ContentView: View {
             )
         }
         .toolbar {
-            ToolbarItem(placement: .topBarLeading) {
+            ToolbarItem(placement: .topBarTrailing) {
                 Text("ONDA")
                     .font(.system(size: 14, weight: .semibold))
-                    .foregroundColor(Color(red: 0.4, green: 0.8, blue: 0.5))
+                    .foregroundColor(Color(red: 0.6, green: 0.4, blue: 0.9))
             }
         }
         .onAppear {
