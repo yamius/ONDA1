@@ -167,8 +167,13 @@ struct ContentView: View {
                     )
             )
         }
-        .navigationTitle("ONDA")
-        .navigationBarTitleDisplayMode(.inline)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Text("ONDA")
+                    .font(.system(size: 14, weight: .semibold))
+                    .foregroundColor(Color(red: 0.4, green: 0.8, blue: 0.5))
+            }
+        }
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
