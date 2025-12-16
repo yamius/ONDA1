@@ -29,6 +29,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   const heartbeatIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const isAutoManagedRef = useRef(false);
   const lastHrUpdateRef = useRef<number>(0);
+  const isConnectingRef = useRef(false); // Block auto-stop during initial connection
 
   const isConnected = watchStatus?.reachable === true;
   
@@ -193,13 +194,20 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
 
     try {
       console.log('[Watch] Starting realtime...');
+      isConnectingRef.current = true; // Block auto-stop during connection
       await OndaWatch.startRealtime();
       setIsMonitoring(true);
       setError(null);
       console.log('[Watch] Realtime started');
+      // Keep isConnecting true for 30 seconds to allow permission dialogs
+      setTimeout(() => {
+        isConnectingRef.current = false;
+        console.log('[Watch] Connection grace period ended');
+      }, 30000);
     } catch (err) {
       console.error('[Watch] Start error:', err);
       setError('Failed to start watch monitoring');
+      isConnectingRef.current = false;
     }
   }, [watchStatus]);
 
@@ -267,11 +275,23 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       // This prevents stopping during system dialogs (permissions, etc.)
       console.log('[Watch] App became inactive - scheduling stop in 15s');
       
+      // Block auto-stop during initial connection (permission dialogs)
+      if (isConnectingRef.current) {
+        console.log('[Watch] Connection in progress - ignoring inactive state');
+        return;
+      }
+      
       if (inactiveTimeout) {
         clearTimeout(inactiveTimeout);
       }
       
       inactiveTimeout = setTimeout(async () => {
+        // Double-check connecting state before stopping
+        if (isConnectingRef.current) {
+          console.log('[Watch] Still connecting - skipping stop');
+          inactiveTimeout = null;
+          return;
+        }
         console.log('[Watch] Grace period expired - stopping workout');
         try {
           await OndaWatch.stopRealtime();
@@ -309,6 +329,14 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       document.addEventListener('visibilitychange', visibilityHandler);
 
       // Start immediately if app is currently visible
+      // Set connecting flag to protect from auto-stop during initial setup
+      isConnectingRef.current = true;
+      console.log('[Watch] Starting auto-managed mode - connection protection enabled for 30s');
+      setTimeout(() => {
+        isConnectingRef.current = false;
+        console.log('[Watch] Initial connection grace period ended');
+      }, 30000);
+      
       if (document.visibilityState === 'visible') {
         handleAppActive();
       }
