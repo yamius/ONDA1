@@ -160,6 +160,18 @@ struct ContentView: View {
                         .font(.caption2)
                         .foregroundColor(.secondary)
                 }
+                
+                // Debug button
+                NavigationLink(destination: DebugLogsView(workoutManager: workoutManager)) {
+                    HStack(spacing: 4) {
+                        Image(systemName: "doc.text.magnifyingglass")
+                            .font(.caption2)
+                        Text("Logs (\(workoutManager.debugLogs.count))")
+                            .font(.caption2)
+                    }
+                    .foregroundColor(.cyan)
+                }
+                .buttonStyle(.plain)
             }
             .padding(.horizontal, 14)
             .padding(.vertical, 12)
@@ -298,6 +310,70 @@ struct ContentView: View {
     }
     
 }
+
+// MARK: - Debug Logs View
+struct DebugLogsView: View {
+    @ObservedObject var workoutManager: WorkoutManager
+    
+    var body: some View {
+        ScrollViewReader { proxy in
+            List {
+                // State summary at top
+                Section("State") {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Active: \(workoutManager.isActive ? "YES" : "NO")")
+                        Text("HR: \(Int(workoutManager.heartRate)) bpm")
+                        Text("PermWait: \(workoutManager.isWaitingForPermissions ? "YES" : "NO")")
+                        Text("WC Reach: \(WCSession.default.isReachable ? "YES" : "NO")")
+                    }
+                    .font(.caption2)
+                }
+                
+                // Logs
+                Section("Logs (\(workoutManager.debugLogs.count))") {
+                    ForEach(workoutManager.debugLogs.suffix(50)) { entry in
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text(entry.event)
+                                .font(.caption2)
+                                .fontWeight(.bold)
+                                .foregroundColor(colorFor(entry.event))
+                            Text(entry.details)
+                                .font(.system(size: 10))
+                                .foregroundColor(.secondary)
+                            Text(formatTime(entry.timestamp))
+                                .font(.system(size: 8))
+                                .foregroundColor(.gray)
+                        }
+                        .id(entry.id)
+                    }
+                }
+            }
+            .navigationTitle("Debug")
+            .onAppear {
+                if let lastId = workoutManager.debugLogs.last?.id {
+                    proxy.scrollTo(lastId, anchor: .bottom)
+                }
+            }
+        }
+    }
+    
+    private func colorFor(_ event: String) -> Color {
+        if event.contains("ERROR") || event == "WATCHDOG" { return .red }
+        if event.contains("WC_") { return .orange }
+        if event.contains("HK_") { return .purple }
+        if event == "HR" { return .green }
+        if event.contains("PERMISSION") { return .yellow }
+        return .cyan
+    }
+    
+    private func formatTime(_ date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm:ss.SSS"
+        return formatter.string(from: date)
+    }
+}
+
+import WatchConnectivity
 
 #Preview {
     ContentView()

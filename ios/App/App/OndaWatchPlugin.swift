@@ -53,6 +53,34 @@ public class OndaWatchPlugin: CAPPlugin {
 
 // MARK: - Менеджер WCSession (iOS ↔ watchOS)
 
+// MARK: - Debug Log Entry for Phone
+struct PhoneDebugLogEntry {
+    let timestamp: Date
+    let device: String // "phone" or "watch"
+    let event: String
+    let details: String
+    let correlationId: String?
+    
+    var formatted: String {
+        let tf = DateFormatter()
+        tf.dateFormat = "HH:mm:ss.SSS"
+        let ts = tf.string(from: timestamp)
+        let dev = device == "watch" ? "[W]" : "[P]"
+        let corr = correlationId != nil && !correlationId!.isEmpty ? "[\(correlationId!.prefix(6))]" : ""
+        return "\(ts)\(dev)\(corr) \(event): \(details)"
+    }
+    
+    var asDict: [String: Any] {
+        return [
+            "timestamp": timestamp.timeIntervalSince1970,
+            "device": device,
+            "event": event,
+            "details": details,
+            "correlationId": correlationId ?? ""
+        ]
+    }
+}
+
 class OndaWatchManager: NSObject, WCSessionDelegate {
 
     static let shared = OndaWatchManager()
@@ -60,43 +88,61 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     // НЕ weak - чтобы plugin не терялся пока приложение активно
     var plugin: OndaWatchPlugin?
     
-    // Debug log для отображения в UI
-    var debugLog: [String] = []
+    // Debug log для отображения в UI - теперь структурированный
+    var debugLogs: [PhoneDebugLogEntry] = []
     var receivedCount: Int = 0
+    private let maxLogs = 100
+    
+    // Текущий correlation ID
+    var currentCorrelationId: String?
 
     private var session: WCSession? {
         WCSession.isSupported() ? WCSession.default : nil
     }
     
-    private func addDebugLog(_ message: String) {
-        let timestamp = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .medium)
-        let entry = "\(timestamp): \(message)"
-        print("[ONDA Debug] \(entry)")
-        debugLog.append(entry)
-        // Keep only last 20 entries
-        if debugLog.count > 20 {
-            debugLog.removeFirst()
+    private func log(_ event: String, _ details: String = "", device: String = "phone") {
+        let entry = PhoneDebugLogEntry(
+            timestamp: Date(),
+            device: device,
+            event: event,
+            details: details,
+            correlationId: currentCorrelationId
+        )
+        
+        debugLogs.append(entry)
+        if debugLogs.count > maxLogs {
+            debugLogs.removeFirst()
         }
+        
+        print("[ONDA] \(entry.formatted)")
+        
         // Notify JS about debug update
         DispatchQueue.main.async {
             self.plugin?.notifyListeners("debugLog", data: [
-                "log": self.debugLog,
-                "receivedCount": self.receivedCount
+                "log": self.debugLogs.map { $0.asDict },
+                "receivedCount": self.receivedCount,
+                "latestEvent": event,
+                "latestDetails": details
             ])
         }
+    }
+    
+    // Legacy method for compatibility
+    private func addDebugLog(_ message: String) {
+        log("INFO", message)
     }
 
     func activateSession() {
         guard let session = session else {
-            addDebugLog("WCSession not supported")
+            log("WC_INIT", "WCSession not supported")
             return
         }
         if session.delegate == nil {
             session.delegate = self
             session.activate()
-            addDebugLog("WCSession activating...")
+            log("WC_INIT", "WCSession activating...")
         } else {
-            addDebugLog("WCSession has delegate")
+            log("WC_INIT", "WCSession already has delegate")
         }
     }
 
@@ -115,13 +161,22 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
 
     func sendCommand(type: String) {
         guard let session = session else {
-            print("[ONDA Manager] No session for command")
+            log("CMD_SEND", "No session for command '\(type)'")
             return
         }
         
-        print("[ONDA Manager] Sending command '\(type)', reachable: \(session.isReachable)")
+        // Генерируем correlation ID для start
+        if type == "start" {
+            currentCorrelationId = UUID().uuidString
+        }
         
-        let message: [String: Any] = ["type": type, "ts": Date().timeIntervalSince1970]
+        log("CMD_SEND", "'\(type)' reachable:\(session.isReachable)")
+        
+        let message: [String: Any] = [
+            "type": type,
+            "ts": Date().timeIntervalSince1970,
+            "correlationId": currentCorrelationId ?? ""
+        ]
         
         // Критические команды - отправляем через ВСЕ каналы для надёжности
         let isCritical = ["start", "stop", "permission_start", "permission_end"].contains(type)
@@ -129,31 +184,37 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         if isCritical {
             // 1. transferUserInfo - надёжная доставка, работает даже когда app inactive
             session.transferUserInfo(message)
-            print("[ONDA Manager] Critical command '\(type)' sent via transferUserInfo")
+            log("CMD_SEND", "'\(type)' via transferUserInfo")
             
             // 2. applicationContext - данные доступны сразу при пробуждении
             do {
                 try session.updateApplicationContext(["command": type, "ts": Date().timeIntervalSince1970])
-                print("[ONDA Manager] Application context updated with '\(type)'")
+                log("CMD_SEND", "'\(type)' via applicationContext")
             } catch {
-                print("[ONDA Manager] updateApplicationContext error: \(error.localizedDescription)")
+                log("CMD_ERROR", "applicationContext failed: \(error.localizedDescription)")
             }
             
             // 3. sendMessage как "ускоритель" - быстрая доставка если reachable
             if session.isReachable {
                 session.sendMessage(message, replyHandler: nil) { error in
-                    print("[ONDA Manager] sendMessage (accelerator) error: \(error.localizedDescription)")
+                    self.log("CMD_ERROR", "sendMessage failed: \(error.localizedDescription)")
                 }
+                log("CMD_SEND", "'\(type)' via sendMessage (accelerator)")
             }
         } else {
             // Некритические команды (heartbeat и т.д.) - обычная логика
             if session.isReachable {
                 session.sendMessage(message, replyHandler: nil) { error in
-                    print("[ONDA Manager] sendCommand error: \(error.localizedDescription)")
+                    self.log("CMD_ERROR", "sendMessage failed: \(error.localizedDescription)")
                 }
             } else {
                 session.transferUserInfo(message)
             }
+        }
+        
+        // Очищаем correlation ID после stop
+        if type == "stop" {
+            currentCorrelationId = nil
         }
     }
     
@@ -183,30 +244,34 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     func session(_ session: WCSession,
                  activationDidCompleteWith activationState: WCSessionActivationState,
                  error: Error?) {
+        let stateNames = ["notActivated", "inactive", "activated"]
+        let stateName = activationState.rawValue < stateNames.count ? stateNames[Int(activationState.rawValue)] : "\(activationState.rawValue)"
+        
         if let error = error {
-            addDebugLog("Activation error: \(error.localizedDescription)")
+            log("WC_ACTIVATE", "Error: \(error.localizedDescription)")
         } else {
-            addDebugLog("Activated: p=\(session.isPaired) w=\(session.isWatchAppInstalled) r=\(session.isReachable)")
+            log("WC_ACTIVATE", "State:\(stateName) p:\(session.isPaired) w:\(session.isWatchAppInstalled) r:\(session.isReachable)")
         }
     }
 
     func sessionDidBecomeInactive(_ session: WCSession) {
-        print("[ONDA Manager] Session became inactive")
+        log("WC_LIFECYCLE", "Session became INACTIVE")
     }
 
     func sessionDidDeactivate(_ session: WCSession) {
-        print("[ONDA Manager] Session deactivated, reactivating...")
+        log("WC_LIFECYCLE", "Session DEACTIVATED - reactivating...")
         session.activate()
     }
 
     func sessionReachabilityDidChange(_ session: WCSession) {
-        addDebugLog("Reachable: \(session.isReachable)")
+        log("WC_REACH", "Changed to: \(session.isReachable)")
     }
 
     // Получаем данные с часов через sendMessage
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any]) {
-        addDebugLog("Msg: \(message.keys.joined(separator: ","))")
+        let msgType = message["type"] as? String ?? "?"
+        log("WC_RECV", "sendMessage: \(msgType)")
         handleReceivedData(message)
     }
     
@@ -214,7 +279,8 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any],
                  replyHandler: @escaping ([String : Any]) -> Void) {
-        addDebugLog("MsgReply: \(message.keys.joined(separator: ","))")
+        let msgType = message["type"] as? String ?? "?"
+        log("WC_RECV", "sendMessage(reply): \(msgType)")
         handleReceivedData(message)
         replyHandler(["received": true])
     }
@@ -222,14 +288,15 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     // Получаем данные с часов через transferUserInfo
     func session(_ session: WCSession,
                  didReceiveUserInfo userInfo: [String : Any] = [:]) {
-        addDebugLog("UserInfo: \(userInfo.keys.joined(separator: ","))")
+        let msgType = userInfo["type"] as? String ?? "?"
+        log("WC_RECV", "transferUserInfo: \(msgType)")
         handleReceivedData(userInfo)
     }
     
     // Общий обработчик данных с часов
     private func handleReceivedData(_ data: [String: Any]) {
         guard let type = data["type"] as? String else {
-            addDebugLog("No type in data")
+            log("WC_RECV", "No type in data")
             return
         }
 
@@ -237,28 +304,38 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         case "heartRate":
             if let value = data["value"] as? Double {
                 receivedCount += 1
-                addDebugLog("HR#\(receivedCount): \(Int(value)) bpm, plugin=\(plugin != nil)")
+                // Логируем только каждый 10-й HR чтобы не спамить
+                if receivedCount == 1 || receivedCount % 10 == 0 {
+                    log("HR_RECV", "#\(receivedCount): \(Int(value)) bpm")
+                }
                 DispatchQueue.main.async {
                     if let p = self.plugin {
                         p.notifyListeners("heartRate", data: ["value": value])
                     } else {
-                        self.addDebugLog("ERROR: plugin nil!")
+                        self.log("HR_ERROR", "plugin is nil!")
                     }
                 }
             }
 
         case "status":
             if let value = data["value"] as? String {
-                addDebugLog("Status: \(value)")
+                log("STATUS", value)
                 DispatchQueue.main.async {
                     if let p = self.plugin {
                         p.notifyListeners("status", data: ["value": value])
                     }
                 }
             }
+            
+        case "debugLog":
+            // Логи с часов - добавляем в наш список
+            if let event = data["event"] as? String,
+               let details = data["details"] as? String {
+                log(event, details, device: "watch")
+            }
 
         default:
-            addDebugLog("Unknown: \(type)")
+            log("WC_RECV", "Unknown type: \(type)")
         }
     }
 }
