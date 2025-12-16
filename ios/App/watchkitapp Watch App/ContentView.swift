@@ -48,7 +48,7 @@ struct ContentView: View {
                 waitingTimer?.invalidate()
                 waitingTimer = nil
                 if permissionState != .granted {
-                    UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
+                    print("[ContentView] HR detected via onChange, switching to granted")
                     permissionState = .granted
                 }
             }
@@ -222,17 +222,21 @@ struct ContentView: View {
     // MARK: - Logic
     
     private func checkInitialPermissionState() {
+        // If we already have HR data, permission is granted
         if workoutManager.heartRate > 0 {
             permissionState = .granted
             return
         }
         
-        let wasGranted = UserDefaults.standard.bool(forKey: "healthkit_permission_granted")
-        if wasGranted {
+        // Check if workout is already active (app was backgrounded and returned)
+        if workoutManager.isActive {
             permissionState = .granted
             return
         }
         
+        // Always show permission request on fresh start
+        // HealthKit doesn't allow checking read permission status directly
+        print("[ContentView] Fresh start - showing permission request")
         permissionState = .needsPermission
     }
     
@@ -265,7 +269,7 @@ struct ContentView: View {
                 if workoutManager.heartRate > 0 {
                     timer.invalidate()
                     waitingTimer = nil
-                    UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
+                    print("[ContentView] HR received, permission confirmed")
                     permissionState = .granted
                 } else if waitingSeconds >= 5 {
                     timer.invalidate()
