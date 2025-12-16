@@ -16,6 +16,10 @@ class WorkoutManager: NSObject, ObservableObject {
     @Published var isActive = false
     @Published var authorizationStatus: HKAuthorizationStatus = .notDetermined
     
+    private var keepAliveTimer: Timer?
+    private var disconnectTime: Date?
+    private let keepAliveDuration: TimeInterval = 60.0
+    
     override init() {
         super.init()
         setupWatchConnectivity()
@@ -45,6 +49,36 @@ class WorkoutManager: NSObject, ObservableObject {
         extendedSession?.invalidate()
         extendedSession = nil
         print("[WorkoutManager] Stopped extended session")
+    }
+    
+    func keepAwakeAfterDisconnect() {
+        disconnectTime = Date()
+        print("[WorkoutManager] Connection lost - starting keep-alive for \(Int(keepAliveDuration))s")
+        
+        startExtendedSession()
+        
+        keepAliveTimer?.invalidate()
+        keepAliveTimer = Timer.scheduledTimer(withTimeInterval: keepAliveDuration, repeats: false) { [weak self] _ in
+            guard let self = self else { return }
+            print("[WorkoutManager] Keep-alive timer expired after \(Int(self.keepAliveDuration))s")
+            self.disconnectTime = nil
+        }
+    }
+    
+    func connectionRestored() {
+        if let disconnectTime = disconnectTime {
+            let elapsed = Date().timeIntervalSince(disconnectTime)
+            print("[WorkoutManager] Connection restored after \(Int(elapsed))s")
+        }
+        
+        keepAliveTimer?.invalidate()
+        keepAliveTimer = nil
+        disconnectTime = nil
+        
+        if !isActive {
+            print("[WorkoutManager] Auto-restarting workout after reconnection")
+            startWorkout()
+        }
     }
     
     func checkAndRequestAuthorization() {
@@ -179,11 +213,40 @@ extension WorkoutManager: WKExtendedRuntimeSessionDelegate {
 
 extension WorkoutManager: HKWorkoutSessionDelegate {
     func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState, from fromState: HKWorkoutSessionState, date: Date) {
-        print("[WorkoutManager] State: \(toState.rawValue)")
+        let stateNames = ["notStarted", "running", "ended", "paused", "prepared", "stopped"]
+        let toName = toState.rawValue < stateNames.count ? stateNames[Int(toState.rawValue)] : "\(toState.rawValue)"
+        let fromName = fromState.rawValue < stateNames.count ? stateNames[Int(fromState.rawValue)] : "\(fromState.rawValue)"
+        print("[WorkoutManager] State: \(fromName) → \(toName)")
+        
+        DispatchQueue.main.async {
+            switch toState {
+            case .running:
+                self.isActive = true
+            case .ended, .stopped:
+                self.isActive = false
+                if self.disconnectTime != nil {
+                    print("[WorkoutManager] Workout ended during keep-alive - will auto-restart on reconnect")
+                }
+            case .paused:
+                print("[WorkoutManager] Workout paused")
+            default:
+                break
+            }
+        }
     }
     
     func workoutSession(_ workoutSession: HKWorkoutSession, didFailWithError error: Error) {
         print("[WorkoutManager] Error: \(error)")
+        
+        DispatchQueue.main.async {
+            self.isActive = false
+            if self.disconnectTime != nil {
+                print("[WorkoutManager] Workout failed during keep-alive - scheduling restart")
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                    self.startWorkout()
+                }
+            }
+        }
     }
 }
 
@@ -216,6 +279,18 @@ extension WorkoutManager: WCSessionDelegate {
         if let command = context["command"] as? String {
             print("[WorkoutManager] Found pending command in context: \(command)")
             handleCommand(["type": command])
+        }
+    }
+    
+    func sessionReachabilityDidChange(_ session: WCSession) {
+        print("[WorkoutManager] Reachability changed: \(session.isReachable)")
+        
+        DispatchQueue.main.async {
+            if session.isReachable {
+                self.connectionRestored()
+            } else {
+                self.keepAwakeAfterDisconnect()
+            }
         }
     }
     
