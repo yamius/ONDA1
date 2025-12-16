@@ -37,11 +37,13 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
   const [isPlaying, setIsPlaying] = useState(false);
   const [emotionalResult, setEmotionalResult] = useState<EmotionalResult | null>(null);
   const [isLizaChatOpen, setIsLizaChatOpen] = useState(false);
+  const [micPermissionGranted, setMicPermissionGranted] = useState<boolean | null>(null);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
   const timerRef = useRef<number | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const permissionRequestedRef = useRef(false);
 
   useEffect(() => {
     return () => {
@@ -53,6 +55,42 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
       }
     };
   }, [audioURL]);
+  
+  // Pre-request microphone permission when modal opens
+  // This prevents the permission dialog from appearing during active Watch monitoring
+  useEffect(() => {
+    if (isOpen && micPermissionGranted === null && !permissionRequestedRef.current) {
+      permissionRequestedRef.current = true;
+      console.log('[EmotionalCheck] Pre-requesting microphone permission...');
+      
+      // Notify watch that permission dialog might show
+      pauseAutoStop?.();
+      notifyPermissionStart?.();
+      
+      navigator.mediaDevices.getUserMedia({ audio: true })
+        .then(stream => {
+          // Permission granted - stop the stream immediately (we'll request again when recording)
+          stream.getTracks().forEach(track => track.stop());
+          setMicPermissionGranted(true);
+          console.log('[EmotionalCheck] Microphone permission pre-granted');
+        })
+        .catch(err => {
+          console.log('[EmotionalCheck] Microphone permission denied or error:', err.name);
+          setMicPermissionGranted(false);
+        })
+        .finally(() => {
+          // Notify watch that permission dialog closed
+          notifyPermissionEnd?.();
+          resumeAutoStop?.();
+        });
+    }
+    
+    // Reset when modal closes
+    if (!isOpen) {
+      permissionRequestedRef.current = false;
+      setMicPermissionGranted(null);
+    }
+  }, [isOpen, micPermissionGranted, pauseAutoStop, resumeAutoStop, notifyPermissionStart, notifyPermissionEnd]);
 
   // Auto-reconnect Watch when recording starts (after permission granted)
   // This handles the case where Watch disconnected during permission dialog
@@ -71,16 +109,24 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
 
   const startRecording = async () => {
     try {
-      console.log('[EmotionalCheck] Requesting microphone access...');
-      // Notify watch that permission dialog is about to show
-      pauseAutoStop?.();
-      await notifyPermissionStart?.();
+      console.log('[EmotionalCheck] Starting recording, micPermissionGranted:', micPermissionGranted);
+      
+      // If permission wasn't pre-granted, we need to request it now
+      // This should rarely happen since we pre-request when modal opens
+      if (micPermissionGranted !== true) {
+        console.log('[EmotionalCheck] Permission not pre-granted, requesting now...');
+        pauseAutoStop?.();
+        await notifyPermissionStart?.();
+      }
       
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       
-      // Notify watch that permission dialog has closed
-      await notifyPermissionEnd?.();
-      resumeAutoStop?.();
+      // Only notify watch if we had to request permission
+      if (micPermissionGranted !== true) {
+        await notifyPermissionEnd?.();
+        resumeAutoStop?.();
+      }
+      
       console.log('[EmotionalCheck] Microphone access granted, starting recording');
       
       const mediaRecorder = new MediaRecorder(stream);
@@ -114,9 +160,11 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
         });
       }, 1000);
     } catch (error: any) {
-      // Notify watch and resume auto-stop even on error
-      await notifyPermissionEnd?.();
-      resumeAutoStop?.();
+      // Notify watch and resume auto-stop even on error (only if we had to request permission)
+      if (micPermissionGranted !== true) {
+        await notifyPermissionEnd?.();
+        resumeAutoStop?.();
+      }
       console.error('[EmotionalCheck] Error accessing microphone:', error);
       console.error('[EmotionalCheck] Error name:', error.name);
       console.error('[EmotionalCheck] Error message:', error.message);
