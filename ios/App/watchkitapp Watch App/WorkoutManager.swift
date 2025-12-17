@@ -24,7 +24,9 @@ class WorkoutManager: NSObject, ObservableObject {
     
     private var lastPingTime: Date = Date()
     private var autoStopTimer: Timer?
-    private let autoStopInterval: TimeInterval = 180
+    private let autoStopInterval: TimeInterval = 600  // 10 minutes - meditation can be long
+    private var lastHRReceived: Date = Date()  // Track when we last got HR data
+    private var isInAccumulationMode = false  // True when phone is unreachable but we keep collecting
     
     private var debugUpdateTimer: Timer?
     private var wcReconnectTimer: Timer?
@@ -136,11 +138,13 @@ class WorkoutManager: NSObject, ObservableObject {
     private func startAutoStopTimer() {
         stopAutoStopTimer()
         lastPingTime = Date()
+        lastHRReceived = Date()
+        isInAccumulationMode = false
         
         autoStopTimer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { [weak self] _ in
             self?.checkAutoStop()
         }
-        print("[WorkoutManager] Auto-stop timer started (3 min timeout)")
+        print("[WorkoutManager] Auto-stop timer started (10 min timeout)")
     }
     
     private func stopAutoStopTimer() {
@@ -154,11 +158,27 @@ class WorkoutManager: NSObject, ObservableObject {
             return
         }
         
-        let elapsed = Date().timeIntervalSince(lastPingTime)
-        print("[WorkoutManager] Time since last ping: \(Int(elapsed))s")
+        let elapsedPing = Date().timeIntervalSince(lastPingTime)
+        let elapsedHR = Date().timeIntervalSince(lastHRReceived)
         
-        if elapsed >= autoStopInterval {
-            print("[WorkoutManager] No ping for 3 minutes, stopping workout")
+        print("[WorkoutManager] Time since ping: \(Int(elapsedPing))s, since HR: \(Int(elapsedHR))s")
+        
+        // If we're still getting HR data, the workout is working - don't stop!
+        // Just switch to accumulation mode if phone is unreachable
+        if elapsedHR < 30 {
+            // HR sensor is active - workout is working fine
+            if elapsedPing > 60 && !isInAccumulationMode {
+                // Phone unreachable for >1 min, switch to accumulation mode
+                isInAccumulationMode = true
+                connectionStatus = "accumulating"
+                print("[WorkoutManager] Phone unreachable, switching to accumulation mode")
+            }
+            return // Don't stop - we're collecting data
+        }
+        
+        // No HR data for 30 seconds - sensor may be off user's wrist
+        if elapsedPing >= autoStopInterval {
+            print("[WorkoutManager] No ping for 10 minutes and no HR data, stopping workout")
             stopWorkout()
             stopAutoStopTimer()
         }
@@ -166,7 +186,15 @@ class WorkoutManager: NSObject, ObservableObject {
     
     private func resetPingTimer() {
         lastPingTime = Date()
+        isInAccumulationMode = false
+        if connectionStatus == "accumulating" {
+            connectionStatus = WCSession.default.isReachable ? "reachable" : "background"
+        }
         print("[WorkoutManager] Ping received, timer reset")
+    }
+    
+    private func markHRReceived() {
+        lastHRReceived = Date()
     }
     
     // MARK: - Authorization
@@ -490,6 +518,7 @@ extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
                 if let value = statistics.mostRecentQuantity()?.doubleValue(for: hrUnit) {
                     DispatchQueue.main.async {
                         self.heartRate = value
+                        self.markHRReceived()  // Track that HR sensor is active
                         self.sendHeartRateToPhone(value)
                     }
                 }
