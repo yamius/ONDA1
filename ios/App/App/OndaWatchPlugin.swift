@@ -51,9 +51,57 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     var lastHeartRate: Double = 0
     var lastHeartRateTime: Date = Date.distantPast
     var watchStatus: String = "unknown"
+    
+    private var isSessionInactive = false
 
     private var session: WCSession? {
         WCSession.isSupported() ? WCSession.default : nil
+    }
+    
+    override init() {
+        super.init()
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(appWillEnterForeground),
+            name: UIApplication.willEnterForegroundNotification,
+            object: nil
+        )
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(appDidBecomeActive),
+            name: UIApplication.didBecomeActiveNotification,
+            object: nil
+        )
+    }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    @objc private func appWillEnterForeground() {
+        print("[ONDA Manager] App will enter foreground - reactivating session")
+        reactivateIfNeeded()
+    }
+    
+    @objc private func appDidBecomeActive() {
+        print("[ONDA Manager] App did become active - sending ping")
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.reactivateIfNeeded()
+            self.sendPing()
+        }
+    }
+    
+    private func reactivateIfNeeded() {
+        guard let session = session else { return }
+        
+        if session.activationState != .activated || isSessionInactive {
+            addDebugLog("Reactivating WCSession...")
+            session.activate()
+            isSessionInactive = false
+        }
     }
     
     private func addDebugLog(_ message: String) {
@@ -83,6 +131,7 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
             addDebugLog("WCSession activating...")
         } else {
             addDebugLog("WCSession has delegate")
+            reactivateIfNeeded()
         }
     }
 
@@ -151,11 +200,18 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
 
     func sessionDidBecomeInactive(_ session: WCSession) {
         print("[ONDA Manager] Session became inactive")
+        isSessionInactive = true
+        addDebugLog("Session inactive - will reactivate on foreground")
     }
 
     func sessionDidDeactivate(_ session: WCSession) {
         print("[ONDA Manager] Session deactivated, reactivating...")
-        session.activate()
+        isSessionInactive = true
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            session.activate()
+            self.isSessionInactive = false
+        }
     }
 
     func sessionReachabilityDidChange(_ session: WCSession) {

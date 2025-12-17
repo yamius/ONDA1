@@ -362,7 +362,7 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
-    // MARK: - Data Transmission
+    // MARK: - Data Transmission (Dual-Path: sendMessage + transferUserInfo)
     
     private func sendHeartRateToPhone(_ hr: Double) {
         let now = Date()
@@ -386,16 +386,28 @@ class WorkoutManager: NSObject, ObservableObject {
             "ts": now.timeIntervalSince1970
         ]
         
+        // Dual-path delivery: always use both channels
+        // sendMessage for real-time (if reachable), transferUserInfo for guaranteed delivery
+        
         if session.isReachable {
-            session.sendMessage(message, replyHandler: nil) { error in
+            // Try real-time delivery first
+            session.sendMessage(message, replyHandler: { _ in
+                // Message delivered successfully - reset ping timer
+                DispatchQueue.main.async {
+                    self.resetPingTimer()
+                }
+            }) { error in
                 print("[WorkoutManager] sendMessage error: \(error.localizedDescription)")
-                WCSession.default.transferUserInfo(message)
+                // Real-time failed but transferUserInfo already queued below
             }
             connectionStatus = "reachable"
         } else {
-            session.transferUserInfo(message)
             connectionStatus = "background"
         }
+        
+        // Always queue via transferUserInfo for guaranteed delivery
+        // This ensures data arrives even if sendMessage fails due to system alerts
+        session.transferUserInfo(message)
     }
     
     private func sendStatusToPhone(_ status: String) {
