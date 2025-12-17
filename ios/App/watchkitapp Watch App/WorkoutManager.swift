@@ -596,6 +596,21 @@ extension WorkoutManager: WCSessionDelegate {
                 self.sendStatusToPhone(self.isActive ? "active" : "idle")
             case "stop":
                 self.stopWorkout()
+            case "pauseRealtime":
+                // Switch to accumulation mode BEFORE permission dialog appears
+                print("[WorkoutManager] Pausing realtime - switching to accumulation mode")
+                self.isInAccumulationMode = true
+                self.connectionStatus = "accumulating"
+            case "resumeRealtime":
+                // Resume normal operation AFTER permission dialog closes
+                print("[WorkoutManager] Resuming realtime - back to normal mode")
+                self.isInAccumulationMode = false
+                self.resetPingTimer()
+                self.connectionStatus = WCSession.default.isReachable ? "reachable" : "background"
+                // Send current HR immediately to sync
+                if self.isActive && self.heartRate > 0 {
+                    self.sendHeartRateToPhone(self.heartRate)
+                }
             default:
                 break
             }

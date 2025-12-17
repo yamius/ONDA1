@@ -36,6 +36,19 @@ public class OndaWatchPlugin: CAPPlugin {
         implementation.sendPing()
         call.resolve()
     }
+    
+    @objc func pauseRealtime(_ call: CAPPluginCall) {
+        print("[ONDA Plugin] pauseRealtime - switching watch to accumulation mode before permission request")
+        implementation.sendCommand(type: "pauseRealtime")
+        call.resolve()
+    }
+    
+    @objc func resumeRealtime(_ call: CAPPluginCall) {
+        print("[ONDA Plugin] resumeRealtime - restoring watch to normal mode after permission")
+        implementation.sendCommand(type: "resumeRealtime")
+        implementation.sendPing()
+        call.resolve()
+    }
 }
 
 // MARK: - WCSession Manager (iOS ↔ watchOS)
