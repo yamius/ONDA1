@@ -87,10 +87,32 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     }
     
     @objc private func appDidBecomeActive() {
-        print("[ONDA Manager] App did become active - sending ping")
+        print("[ONDA Manager] App did become active - force reactivation")
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.reactivateIfNeeded()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            // Force activation check
+            let session = WCSession.default
+            if session.activationState != .activated {
+                print("[ONDA Manager] Force activating WCSession")
+                session.activate()
+            }
+            
+            self.isSessionInactive = false
+            
+            // Check for missed data in receivedApplicationContext
+            let lastContext = session.receivedApplicationContext
+            if let lastUpdate = lastContext["lastUpdate"] as? [String: Any] {
+                self.addDebugLog("Recovered data from context after pause")
+                self.handleReceivedData(lastUpdate)
+            } else if let heartRate = lastContext["lastHeartRate"] as? Double {
+                let data: [String: Any] = [
+                    "type": "heartRate",
+                    "value": heartRate,
+                    "ts": lastContext["timestamp"] as? Double ?? Date().timeIntervalSince1970
+                ]
+                self.handleReceivedData(data)
+            }
+            
             self.sendPing()
         }
     }

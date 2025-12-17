@@ -414,22 +414,9 @@ class WorkoutManager: NSObject, ObservableObject {
             "ts": now.timeIntervalSince1970
         ]
         
-        // LAYER 1: Try real-time sendMessage (fastest, but fails during alerts)
-        if session.isReachable {
-            session.sendMessage(message, replyHandler: { _ in
-                DispatchQueue.main.async {
-                    self.resetPingTimer()
-                }
-            }) { error in
-                print("[WorkoutManager] sendMessage error: \(error.localizedDescription)")
-            }
-            connectionStatus = "reachable"
-        } else {
-            connectionStatus = "background"
-        }
-        
-        // LAYER 2: updateApplicationContext (most stable - system daemon handles sync)
+        // PRIMARY: updateApplicationContext (most stable - system daemon handles sync)
         // This survives alerts because iOS system process syncs it, not our app
+        // We prioritize this over sendMessage to avoid errors that can crash the app
         do {
             try session.updateApplicationContext([
                 "lastUpdate": message,
@@ -441,8 +428,25 @@ class WorkoutManager: NSObject, ObservableObject {
             print("[WorkoutManager] Failed to update context: \(error)")
         }
         
-        // LAYER 3: transferUserInfo as backup queue (guaranteed delivery)
-        session.transferUserInfo(message)
+        // SECONDARY: sendMessage only if truly reachable (real-time bonus)
+        // Disabled when phone might be showing alerts to avoid WCSession errors
+        if session.isReachable && !isInAccumulationMode {
+            session.sendMessage(message, replyHandler: { _ in
+                DispatchQueue.main.async {
+                    self.resetPingTimer()
+                }
+            }) { error in
+                // Error during sendMessage - switch to accumulation mode
+                print("[WorkoutManager] sendMessage error, switching to context-only: \(error.localizedDescription)")
+                DispatchQueue.main.async {
+                    self.isInAccumulationMode = true
+                    self.connectionStatus = "accumulating"
+                }
+            }
+            connectionStatus = "reachable"
+        } else {
+            connectionStatus = isInAccumulationMode ? "accumulating" : "background"
+        }
     }
     
     private func sendStatusToPhone(_ status: String) {
