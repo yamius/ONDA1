@@ -43,7 +43,7 @@ struct ContentView: View {
         .onAppear {
             checkInitialPermissionState()
         }
-        .onChange(of: scenePhase) { newPhase in
+        .onChange(of: scenePhase) { oldPhase, newPhase in
             if newPhase == .active {
                 print("[ContentView] Scene became active")
                 workoutManager.handleSceneActivation()
@@ -52,7 +52,7 @@ struct ContentView: View {
                 workoutManager.handleSceneDeactivation()
             }
         }
-        .onChange(of: workoutManager.heartRate) { newValue in
+        .onChange(of: workoutManager.heartRate) { oldValue, newValue in
             if newValue > 0 {
                 waitingTimer?.invalidate()
                 waitingTimer = nil

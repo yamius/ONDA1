@@ -496,23 +496,9 @@ extension WorkoutManager: WCSessionDelegate {
         }
     }
     
-    func sessionDidBecomeInactive(_ session: WCSession) {
-        print("[WorkoutManager] WCSession became inactive")
-        DispatchQueue.main.async {
-            self.wcSessionState = "inactive"
-        }
-    }
-    
-    func sessionDidDeactivate(_ session: WCSession) {
-        print("[WorkoutManager] WCSession deactivated - reactivating...")
-        DispatchQueue.main.async {
-            self.wcSessionState = "deactivated"
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.reactivateWCSession()
-        }
-    }
+    // Note: sessionDidBecomeInactive and sessionDidDeactivate are iOS-only
+    // On watchOS, WCSession doesn't deactivate like on iOS
+    // We rely on the 10-second watchdog timer for reconnection
     
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         handleCommand(message)
