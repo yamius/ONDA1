@@ -15,26 +15,98 @@ class WorkoutManager: NSObject, ObservableObject {
     @Published var isActive = false
     @Published var authorizationStatus: HKAuthorizationStatus = .notDetermined
     @Published var connectionStatus: String = "init"
+    @Published var wcSessionState: String = "unknown"
+    @Published var lastPingAgo: Int = 0
+    @Published var lastHRSentAgo: Int = 0
     
     private var lastHRSendTime: Date = Date.distantPast
     private let minHRInterval: TimeInterval = 0.8
     
-    // Auto-stop timer: 3 minutes without ping from iPhone
     private var lastPingTime: Date = Date()
     private var autoStopTimer: Timer?
-    private let autoStopInterval: TimeInterval = 180 // 3 minutes
+    private let autoStopInterval: TimeInterval = 180
+    
+    private var debugUpdateTimer: Timer?
+    private var wcReconnectTimer: Timer?
+    private var isAuthorizationPending = false
     
     override init() {
         super.init()
         setupWatchConnectivity()
+        startDebugUpdateTimer()
+        startWCReconnectTimer()
+        requestAuthorizationAtLaunch()
         tryRecoverActiveWorkout()
     }
     
+    // MARK: - Watch Connectivity with Reconnect
+    
     private func setupWatchConnectivity() {
         if WCSession.isSupported() {
-            WCSession.default.delegate = self
-            WCSession.default.activate()
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
             print("[WorkoutManager] WCSession setup complete")
+            updateWCState()
+        }
+    }
+    
+    func reactivateWCSession() {
+        guard WCSession.isSupported() else { return }
+        
+        let session = WCSession.default
+        
+        if session.activationState != .activated {
+            print("[WorkoutManager] Reactivating WCSession (was: \(session.activationState.rawValue))")
+            session.delegate = self
+            session.activate()
+        }
+        
+        updateWCState()
+    }
+    
+    private func updateWCState() {
+        let session = WCSession.default
+        let stateStr: String
+        switch session.activationState {
+        case .notActivated: stateStr = "notActivated"
+        case .inactive: stateStr = "inactive"
+        case .activated: stateStr = session.isReachable ? "reachable" : "bg"
+        @unknown default: stateStr = "unknown"
+        }
+        
+        DispatchQueue.main.async {
+            self.wcSessionState = stateStr
+            // connectionStatus uses original values for phone compatibility
+            if session.activationState == .activated {
+                self.connectionStatus = session.isReachable ? "reachable" : "background"
+            } else {
+                self.connectionStatus = "inactive"
+            }
+        }
+    }
+    
+    private func startWCReconnectTimer() {
+        wcReconnectTimer?.invalidate()
+        wcReconnectTimer = Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { [weak self] _ in
+            guard let self = self else { return }
+            
+            let session = WCSession.default
+            if session.activationState != .activated {
+                print("[WorkoutManager] WCSession not activated, reconnecting...")
+                self.reactivateWCSession()
+            }
+        }
+    }
+    
+    private func startDebugUpdateTimer() {
+        debugUpdateTimer?.invalidate()
+        debugUpdateTimer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                self.lastPingAgo = Int(Date().timeIntervalSince(self.lastPingTime))
+                self.lastHRSentAgo = Int(Date().timeIntervalSince(self.lastHRSendTime))
+            }
         }
     }
     
@@ -77,6 +149,11 @@ class WorkoutManager: NSObject, ObservableObject {
     }
     
     private func checkAutoStop() {
+        if isAuthorizationPending {
+            print("[WorkoutManager] Authorization pending, skipping auto-stop check")
+            return
+        }
+        
         let elapsed = Date().timeIntervalSince(lastPingTime)
         print("[WorkoutManager] Time since last ping: \(Int(elapsed))s")
         
@@ -94,6 +171,40 @@ class WorkoutManager: NSObject, ObservableObject {
     
     // MARK: - Authorization
     
+    private func requestAuthorizationAtLaunch() {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            print("[WorkoutManager] HealthKit not available")
+            return
+        }
+        
+        guard let hrType = HKObjectType.quantityType(forIdentifier: .heartRate) else { return }
+        
+        let currentStatus = healthStore.authorizationStatus(for: hrType)
+        print("[WorkoutManager] Launch auth status: \(currentStatus.rawValue)")
+        
+        DispatchQueue.main.async {
+            self.authorizationStatus = currentStatus
+        }
+        
+        if currentStatus == .notDetermined {
+            print("[WorkoutManager] Requesting HealthKit auth at launch...")
+            isAuthorizationPending = true
+            
+            let typesToShare: Set<HKSampleType> = [HKObjectType.workoutType()]
+            let typesToRead: Set<HKObjectType> = [hrType]
+            
+            healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
+                DispatchQueue.main.async {
+                    self.isAuthorizationPending = false
+                    self.authorizationStatus = self.healthStore.authorizationStatus(for: hrType)
+                    print("[WorkoutManager] Launch auth completed: \(success), status: \(self.authorizationStatus.rawValue)")
+                    
+                    self.reactivateWCSession()
+                }
+            }
+        }
+    }
+    
     func checkAndRequestAuthorization() {
         guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
             print("[WorkoutManager] Heart rate type not available")
@@ -107,7 +218,9 @@ class WorkoutManager: NSObject, ObservableObject {
             self.authorizationStatus = currentStatus
         }
         
-        requestAuthorization()
+        if currentStatus == .notDetermined {
+            requestAuthorizationWithCompletion { _ in }
+        }
     }
     
     func requestAuthorization() {
@@ -121,15 +234,20 @@ class WorkoutManager: NSObject, ObservableObject {
         ]
         
         print("[WorkoutManager] Requesting HealthKit authorization...")
+        isAuthorizationPending = true
         
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
             DispatchQueue.main.async {
+                self.isAuthorizationPending = false
+                
                 if success {
                     print("[WorkoutManager] HealthKit authorization dialog shown successfully")
                     if let hrType = HKObjectType.quantityType(forIdentifier: .heartRate) {
                         self.authorizationStatus = self.healthStore.authorizationStatus(for: hrType)
                         print("[WorkoutManager] Updated status: \(self.authorizationStatus.rawValue)")
                     }
+                    
+                    self.reactivateWCSession()
                     completion(true)
                 } else {
                     print("[WorkoutManager] HealthKit authorization failed: \(error?.localizedDescription ?? "unknown")")
@@ -145,6 +263,21 @@ class WorkoutManager: NSObject, ObservableObject {
         }
         let status = healthStore.authorizationStatus(for: heartRateType)
         return status != .notDetermined
+    }
+    
+    // MARK: - App Lifecycle
+    
+    func handleSceneActivation() {
+        print("[WorkoutManager] Scene activated")
+        reactivateWCSession()
+        
+        if isAuthorized && !isActive {
+            startWorkout()
+        }
+    }
+    
+    func handleSceneDeactivation() {
+        print("[WorkoutManager] Scene deactivated")
     }
     
     // MARK: - Workout Control
@@ -238,29 +371,41 @@ class WorkoutManager: NSObject, ObservableObject {
         }
         lastHRSendTime = now
         
+        let session = WCSession.default
+        
+        guard session.activationState == .activated else {
+            connectionStatus = "inactive"
+            print("[WorkoutManager] Cannot send HR: WCSession not activated")
+            reactivateWCSession()
+            return
+        }
+        
         let message: [String: Any] = [
             "type": "heartRate",
             "value": hr,
             "ts": now.timeIntervalSince1970
         ]
         
-        if WCSession.default.activationState == .activated {
-            if WCSession.default.isReachable {
-                WCSession.default.sendMessage(message, replyHandler: nil) { error in
-                    print("[WorkoutManager] sendMessage error: \(error.localizedDescription)")
-                    WCSession.default.transferUserInfo(message)
-                }
-                connectionStatus = "reachable"
-            } else {
+        if session.isReachable {
+            session.sendMessage(message, replyHandler: nil) { error in
+                print("[WorkoutManager] sendMessage error: \(error.localizedDescription)")
                 WCSession.default.transferUserInfo(message)
-                connectionStatus = "background"
             }
+            connectionStatus = "reachable"
         } else {
-            connectionStatus = "inactive"
+            session.transferUserInfo(message)
+            connectionStatus = "background"
         }
     }
     
     private func sendStatusToPhone(_ status: String) {
+        let session = WCSession.default
+        
+        guard session.activationState == .activated else {
+            print("[WorkoutManager] Cannot send status: WCSession not activated")
+            return
+        }
+        
         let message: [String: Any] = [
             "type": "status",
             "status": status,
@@ -268,15 +413,14 @@ class WorkoutManager: NSObject, ObservableObject {
             "ts": Date().timeIntervalSince1970
         ]
         
-        if WCSession.default.activationState == .activated {
-            if WCSession.default.isReachable {
-                WCSession.default.sendMessage(message, replyHandler: nil, errorHandler: nil)
-            }
-            do {
-                try WCSession.default.updateApplicationContext(message)
-            } catch {
-                print("[WorkoutManager] Failed to update app context: \(error)")
-            }
+        if session.isReachable {
+            session.sendMessage(message, replyHandler: nil, errorHandler: nil)
+        }
+        
+        do {
+            try session.updateApplicationContext(message)
+        } catch {
+            print("[WorkoutManager] Failed to update app context: \(error)")
         }
     }
 }
@@ -341,12 +485,32 @@ extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
 
 extension WorkoutManager: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith state: WCSessionActivationState, error: Error?) {
-        print("[WorkoutManager] WCSession activated: \(state.rawValue)")
+        print("[WorkoutManager] WCSession activated: \(state.rawValue), error: \(error?.localizedDescription ?? "none")")
         
         DispatchQueue.main.async {
-            if state == .activated {
-                self.connectionStatus = session.isReachable ? "reachable" : "background"
+            self.updateWCState()
+            
+            if state == .activated && self.isActive && self.heartRate > 0 {
+                self.sendHeartRateToPhone(self.heartRate)
             }
+        }
+    }
+    
+    func sessionDidBecomeInactive(_ session: WCSession) {
+        print("[WorkoutManager] WCSession became inactive")
+        DispatchQueue.main.async {
+            self.wcSessionState = "inactive"
+        }
+    }
+    
+    func sessionDidDeactivate(_ session: WCSession) {
+        print("[WorkoutManager] WCSession deactivated - reactivating...")
+        DispatchQueue.main.async {
+            self.wcSessionState = "deactivated"
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            self.reactivateWCSession()
         }
     }
     
@@ -367,7 +531,7 @@ extension WorkoutManager: WCSessionDelegate {
     func sessionReachabilityDidChange(_ session: WCSession) {
         print("[WorkoutManager] Reachability changed: \(session.isReachable)")
         DispatchQueue.main.async {
-            self.connectionStatus = session.isReachable ? "reachable" : "background"
+            self.updateWCState()
             
             if session.isReachable {
                 self.resetPingTimer()
