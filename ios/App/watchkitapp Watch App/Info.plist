@@ -41,7 +41,7 @@
     <string>ONDA uses your health data to track heart rate during meditation practices and provide personalized wellness insights.</string>
     <key>NSHealthUpdateUsageDescription</key>
     <string>ONDA saves your meditation workout sessions to Health to help you track your wellness journey.</string>
-    <key>WKBackgroundModes</key>
+    <key>UIBackgroundModes</key>
     <array>
         <string>workout-processing</string>
     </array>

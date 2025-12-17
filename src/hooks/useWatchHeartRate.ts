@@ -16,10 +16,6 @@ interface UseWatchHeartRateReturn {
   debugLog: string[];
   autoManaged: boolean;
   setAutoManaged: (value: boolean) => void;
-  pauseAutoStop: () => void;
-  resumeAutoStop: () => void;
-  notifyPermissionStart: () => Promise<void>;
-  notifyPermissionEnd: () => Promise<void>;
 }
 
 export function useWatchHeartRate(): UseWatchHeartRateReturn {
@@ -33,7 +29,6 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   const heartbeatIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const isAutoManagedRef = useRef(false);
   const lastHrUpdateRef = useRef<number>(0);
-  const isConnectingRef = useRef(false); // Block auto-stop during initial connection
 
   const isConnected = watchStatus?.reachable === true;
   
@@ -198,20 +193,13 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
 
     try {
       console.log('[Watch] Starting realtime...');
-      isConnectingRef.current = true; // Block auto-stop during connection
       await OndaWatch.startRealtime();
       setIsMonitoring(true);
       setError(null);
       console.log('[Watch] Realtime started');
-      // Keep isConnecting true for 30 seconds to allow permission dialogs
-      setTimeout(() => {
-        isConnectingRef.current = false;
-        console.log('[Watch] Connection grace period ended');
-      }, 30000);
     } catch (err) {
       console.error('[Watch] Start error:', err);
       setError('Failed to start watch monitoring');
-      isConnectingRef.current = false;
     }
   }, [watchStatus]);
 
@@ -223,41 +211,6 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       console.log('[Watch] Realtime stopped');
     } catch (err) {
       console.error('[Watch] Stop error:', err);
-    }
-  }, []);
-
-  // Pause/resume auto-stop for permission dialogs
-  const pauseAutoStop = useCallback(() => {
-    console.log('[Watch] pauseAutoStop called - blocking auto-stop');
-    isConnectingRef.current = true;
-  }, []);
-
-  const resumeAutoStop = useCallback(() => {
-    console.log('[Watch] resumeAutoStop called - unblocking auto-stop');
-    isConnectingRef.current = false;
-  }, []);
-
-  const notifyPermissionStart = useCallback(async () => {
-    const platform = Capacitor.getPlatform();
-    if (platform !== 'ios') return;
-    
-    console.log('[Watch] Notifying watch: permission dialog starting');
-    try {
-      await OndaWatch.notifyPermissionStart();
-    } catch (err) {
-      console.error('[Watch] notifyPermissionStart error:', err);
-    }
-  }, []);
-
-  const notifyPermissionEnd = useCallback(async () => {
-    const platform = Capacitor.getPlatform();
-    if (platform !== 'ios') return;
-    
-    console.log('[Watch] Notifying watch: permission dialog ended');
-    try {
-      await OndaWatch.notifyPermissionEnd();
-    } catch (err) {
-      console.error('[Watch] notifyPermissionEnd error:', err);
     }
   }, []);
 
@@ -287,17 +240,8 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
 
     let appStateListener: PluginListenerHandle | null = null;
     let visibilityHandler: (() => void) | null = null;
-    let inactiveTimeout: ReturnType<typeof setTimeout> | null = null;
-    const INACTIVE_GRACE_PERIOD = 15000; // 15 seconds - ignore short inactive periods (system dialogs, etc.)
 
     const handleAppActive = async () => {
-      // Cancel pending stop if app becomes active again
-      if (inactiveTimeout) {
-        console.log('[Watch] App active again - cancelling scheduled stop');
-        clearTimeout(inactiveTimeout);
-        inactiveTimeout = null;
-      }
-      
       if (!isAutoManagedRef.current) return;
       console.log('[Watch] App became active - starting workout');
       try {
@@ -309,37 +253,14 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       }
     };
 
-    const handleAppInactive = () => {
-      // Don't stop immediately - wait for grace period
-      // This prevents stopping during system dialogs (permissions, etc.)
-      console.log('[Watch] App became inactive - scheduling stop in 15s');
-      
-      // Block auto-stop during initial connection (permission dialogs)
-      if (isConnectingRef.current) {
-        console.log('[Watch] Connection in progress - ignoring inactive state');
-        return;
+    const handleAppInactive = async () => {
+      console.log('[Watch] App became inactive - stopping workout');
+      try {
+        await OndaWatch.stopRealtime();
+        setIsMonitoring(false);
+      } catch (err) {
+        console.error('[Watch] Auto-stop error:', err);
       }
-      
-      if (inactiveTimeout) {
-        clearTimeout(inactiveTimeout);
-      }
-      
-      inactiveTimeout = setTimeout(async () => {
-        // Double-check connecting state before stopping
-        if (isConnectingRef.current) {
-          console.log('[Watch] Still connecting - skipping stop');
-          inactiveTimeout = null;
-          return;
-        }
-        console.log('[Watch] Grace period expired - stopping workout');
-        try {
-          await OndaWatch.stopRealtime();
-          setIsMonitoring(false);
-        } catch (err) {
-          console.error('[Watch] Auto-stop error:', err);
-        }
-        inactiveTimeout = null;
-      }, INACTIVE_GRACE_PERIOD);
     };
 
     const setupLifecycleListeners = async () => {
@@ -368,14 +289,6 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       document.addEventListener('visibilitychange', visibilityHandler);
 
       // Start immediately if app is currently visible
-      // Set connecting flag to protect from auto-stop during initial setup
-      isConnectingRef.current = true;
-      console.log('[Watch] Starting auto-managed mode - connection protection enabled for 30s');
-      setTimeout(() => {
-        isConnectingRef.current = false;
-        console.log('[Watch] Initial connection grace period ended');
-      }, 30000);
-      
       if (document.visibilityState === 'visible') {
         handleAppActive();
       }
@@ -384,19 +297,12 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     setupLifecycleListeners();
 
     return () => {
-      // Clear any pending inactive timeout
-      if (inactiveTimeout) {
-        clearTimeout(inactiveTimeout);
-        inactiveTimeout = null;
-      }
       appStateListener?.remove();
       if (visibilityHandler) {
         document.removeEventListener('visibilitychange', visibilityHandler);
       }
-      // Stop workout immediately when autoManaged is disabled (no grace period)
-      console.log('[Watch] Cleanup - stopping workout immediately');
-      OndaWatch.stopRealtime().catch(() => {});
-      setIsMonitoring(false);
+      // Stop workout when autoManaged is disabled
+      handleAppInactive();
     };
   }, [autoManaged]);
 
@@ -411,10 +317,6 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     isMonitoring,
     debugLog,
     autoManaged,
-    setAutoManaged,
-    pauseAutoStop,
-    resumeAutoStop,
-    notifyPermissionStart,
-    notifyPermissionEnd
+    setAutoManaged
   };
 }

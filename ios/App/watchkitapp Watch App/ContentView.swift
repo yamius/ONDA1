@@ -22,23 +22,20 @@ struct ContentView: View {
     @State private var permissionState: PermissionState = .checking
     @State private var waitingTimer: Timer?
     @State private var waitingSeconds: Int = 0
-    @State private var isFirstLaunch: Bool = true
     
     var body: some View {
-        NavigationStack {
-            Group {
-                switch permissionState {
-                case .checking:
-                    checkingView
-                case .needsPermission:
-                    permissionRequestView
-                case .waitingForHR:
-                    waitingForHRView
-                case .granted:
-                    mainView
-                case .denied:
-                    deniedView
-                }
+        Group {
+            switch permissionState {
+            case .checking:
+                checkingView
+            case .needsPermission:
+                permissionRequestView
+            case .waitingForHR:
+                waitingForHRView
+            case .granted:
+                mainView
+            case .denied:
+                deniedView
             }
         }
         .onAppear {
@@ -49,7 +46,7 @@ struct ContentView: View {
                 waitingTimer?.invalidate()
                 waitingTimer = nil
                 if permissionState != .granted {
-                    print("[ContentView] HR detected via onChange, switching to granted")
+                    UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
                     permissionState = .granted
                 }
             }
@@ -57,10 +54,6 @@ struct ContentView: View {
         .onDisappear {
             waitingTimer?.invalidate()
             waitingTimer = nil
-        }
-        .onReceive(NotificationCenter.default.publisher(for: WKExtension.applicationDidBecomeActiveNotification)) { _ in
-            print("[ContentView] App became active - triggering workout check")
-            workoutManager.handleAppBecameActive()
         }
     }
     
@@ -87,11 +80,11 @@ struct ContentView: View {
                 .font(.system(size: 40))
                 .foregroundColor(.red)
             
-            Text("health_access")
+            Text("Доступ к здоровью")
                 .font(.headline)
                 .multilineTextAlignment(.center)
             
-            Text("permission_description")
+            Text("Разрешите чтение пульса для практик")
                 .font(.caption2)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
@@ -100,7 +93,7 @@ struct ContentView: View {
                 HStack(spacing: 4) {
                     Image(systemName: "checkmark.shield")
                         .font(.caption)
-                    Text("allow_button")
+                    Text("Разрешить")
                         .font(.caption)
                 }
             }
@@ -116,13 +109,13 @@ struct ContentView: View {
                 .font(.system(size: 40))
                 .foregroundColor(.cyan)
             
-            Text("waiting_for_hr")
+            Text("Ожидание пульса...")
                 .font(.headline)
             
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle())
             
-            Text(String(format: NSLocalizedString("seconds_remaining", comment: ""), 5 - waitingSeconds))
+            Text("\(5 - waitingSeconds) сек")
                 .font(.caption2)
                 .foregroundColor(.secondary)
         }
@@ -131,59 +124,61 @@ struct ContentView: View {
     
     private var mainView: some View {
         VStack(spacing: 0) {
-            // Heart rate card - raised slightly higher
-            VStack(spacing: 8) {
-                HStack(spacing: 6) {
+            // Header with ONDA aligned to top-left
+            HStack {
+                Text("ONDA")
+                    .font(.caption)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.cyan)
+                Spacer()
+            }
+            .padding(.horizontal, 8)
+            .padding(.top, 4)
+            
+            Spacer()
+            
+            // Heart rate card
+            VStack(spacing: 6) {
+                HStack(spacing: 4) {
                     Image(systemName: "heart.fill")
                         .foregroundColor(.red)
-                        .font(.system(size: 26))
+                        .font(.system(size: 18))
                     
                     if workoutManager.heartRate > 0 {
                         Text("\(Int(workoutManager.heartRate))")
-                            .font(.system(size: 46, weight: .bold, design: .rounded))
+                            .font(.system(size: 32, weight: .bold, design: .rounded))
                     } else {
                         Text("--")
-                            .font(.system(size: 46, weight: .bold, design: .rounded))
+                            .font(.system(size: 32, weight: .bold, design: .rounded))
                             .foregroundColor(.secondary)
                     }
                     
                     Text("BPM")
-                        .font(.footnote)
-                        .foregroundColor(.secondary)
-                }
-                
-                HStack(spacing: 5) {
-                    Circle()
-                        .fill(workoutManager.isActive ? Color.green : Color.gray)
-                        .frame(width: 7, height: 7)
-                    Text(workoutManager.isActive ? "status_active" : "status_waiting")
                         .font(.caption2)
                         .foregroundColor(.secondary)
                 }
                 
-                // Debug button
-                NavigationLink(destination: DebugLogsView(workoutManager: workoutManager)) {
-                    HStack(spacing: 4) {
-                        Image(systemName: "doc.text.magnifyingglass")
-                            .font(.caption2)
-                        Text("Logs (\(workoutManager.debugLogs.count))")
-                            .font(.caption2)
-                    }
-                    .foregroundColor(.cyan)
+                HStack(spacing: 4) {
+                    Circle()
+                        .fill(workoutManager.isActive ? Color.green : Color.gray)
+                        .frame(width: 6, height: 6)
+                    Text(workoutManager.isActive ? "Активна" : "Ожидание")
+                        .font(.caption2)
+                        .foregroundColor(.secondary)
                 }
-                .buttonStyle(.plain)
             }
-            .padding(.horizontal, 14)
-            .padding(.vertical, 12)
-            .offset(y: -8)
+            .padding(.horizontal, 12)
+            .padding(.vertical, 10)
             .background(
-                RoundedRectangle(cornerRadius: 14)
+                RoundedRectangle(cornerRadius: 12)
                     .fill(Color.black.opacity(0.3))
                     .overlay(
-                        RoundedRectangle(cornerRadius: 14)
+                        RoundedRectangle(cornerRadius: 12)
                             .stroke(Color.white.opacity(0.1), lineWidth: 1)
                     )
             )
+            
+            Spacer()
         }
         .onAppear {
             if !workoutManager.isActive {
@@ -200,14 +195,14 @@ struct ContentView: View {
                     .font(.system(size: 32))
                     .foregroundColor(.red)
                 
-                Text("access_denied")
+                Text("Доступ запрещён")
                     .font(.headline)
                 
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("open_on_iphone")
+                    Text("На iPhone откройте:")
                         .font(.caption2)
                         .foregroundColor(.secondary)
-                    Text("settings_path")
+                    Text("Настройки → Здоровье → Доступ к данным → ONDA")
                         .font(.caption2)
                         .foregroundColor(.cyan)
                 }
@@ -218,7 +213,7 @@ struct ContentView: View {
                     HStack(spacing: 4) {
                         Image(systemName: "arrow.clockwise")
                             .font(.caption)
-                        Text("check_button")
+                        Text("Проверить")
                             .font(.caption)
                     }
                 }
@@ -232,31 +227,17 @@ struct ContentView: View {
     // MARK: - Logic
     
     private func checkInitialPermissionState() {
-        // If we already have HR data, permission is granted
         if workoutManager.heartRate > 0 {
-            print("[ContentView] HR already available, permission granted")
-            isFirstLaunch = false
             permissionState = .granted
             return
         }
         
-        // On first launch, ignore isActive and always show permission request
-        if isFirstLaunch {
-            print("[ContentView] First launch - showing permission request (ignoring isActive=\(workoutManager.isActive))")
-            isFirstLaunch = false
-            permissionState = .needsPermission
-            return
-        }
-        
-        // Not first launch - check if workout is active (app was backgrounded and returned)
-        if workoutManager.isActive {
-            print("[ContentView] Returning from background with active workout")
+        let wasGranted = UserDefaults.standard.bool(forKey: "healthkit_permission_granted")
+        if wasGranted {
             permissionState = .granted
             return
         }
         
-        // Fallback - show permission request
-        print("[ContentView] Fallback - showing permission request")
         permissionState = .needsPermission
     }
     
@@ -289,7 +270,7 @@ struct ContentView: View {
                 if workoutManager.heartRate > 0 {
                     timer.invalidate()
                     waitingTimer = nil
-                    print("[ContentView] HR received, permission confirmed")
+                    UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
                     permissionState = .granted
                 } else if waitingSeconds >= 5 {
                     timer.invalidate()
@@ -310,70 +291,6 @@ struct ContentView: View {
     }
     
 }
-
-// MARK: - Debug Logs View
-struct DebugLogsView: View {
-    @ObservedObject var workoutManager: WorkoutManager
-    
-    var body: some View {
-        ScrollViewReader { proxy in
-            List {
-                // State summary at top
-                Section("State") {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text("Active: \(workoutManager.isActive ? "YES" : "NO")")
-                        Text("HR: \(Int(workoutManager.heartRate)) bpm")
-                        Text("PermWait: \(workoutManager.isWaitingForPermissions ? "YES" : "NO")")
-                        Text("WC Reach: \(WCSession.default.isReachable ? "YES" : "NO")")
-                    }
-                    .font(.caption2)
-                }
-                
-                // Logs
-                Section("Logs (\(workoutManager.debugLogs.count))") {
-                    ForEach(workoutManager.debugLogs.suffix(50)) { entry in
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text(entry.event)
-                                .font(.caption2)
-                                .fontWeight(.bold)
-                                .foregroundColor(colorFor(entry.event))
-                            Text(entry.details)
-                                .font(.system(size: 10))
-                                .foregroundColor(.secondary)
-                            Text(formatTime(entry.timestamp))
-                                .font(.system(size: 8))
-                                .foregroundColor(.gray)
-                        }
-                        .id(entry.id)
-                    }
-                }
-            }
-            .navigationTitle("Debug")
-            .onAppear {
-                if let lastId = workoutManager.debugLogs.last?.id {
-                    proxy.scrollTo(lastId, anchor: .bottom)
-                }
-            }
-        }
-    }
-    
-    private func colorFor(_ event: String) -> Color {
-        if event.contains("ERROR") || event == "WATCHDOG" { return .red }
-        if event.contains("WC_") { return .orange }
-        if event.contains("HK_") { return .purple }
-        if event == "HR" { return .green }
-        if event.contains("PERMISSION") { return .yellow }
-        return .cyan
-    }
-    
-    private func formatTime(_ date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "HH:mm:ss.SSS"
-        return formatter.string(from: date)
-    }
-}
-
-import WatchConnectivity
 
 #Preview {
     ContentView()

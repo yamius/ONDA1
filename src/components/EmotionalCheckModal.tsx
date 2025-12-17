@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { X, Mic, Play, Pause, Volume2, RefreshCw, MessageCircle } from 'lucide-react';
+import { X, Mic, Square, Play, Pause, Volume2, RefreshCw, MessageCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 import { LizaChatModal } from './LizaChatModal';
@@ -8,12 +8,6 @@ interface EmotionalCheckModalProps {
   isOpen: boolean;
   onClose: () => void;
   onOndEarned?: (amount: number) => void;
-  pauseAutoStop?: () => void;
-  resumeAutoStop?: () => void;
-  isWatchMonitoring?: boolean;
-  startWatchWorkout?: () => void;
-  notifyPermissionStart?: () => Promise<void>;
-  notifyPermissionEnd?: () => Promise<void>;
 }
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
@@ -28,7 +22,7 @@ interface EmotionalResult {
   recommendation: string;
 }
 
-export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoStop, resumeAutoStop, isWatchMonitoring, startWatchWorkout, notifyPermissionStart, notifyPermissionEnd }: EmotionalCheckModalProps) {
+export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalCheckModalProps) {
   const { t } = useTranslation();
   const [recordingState, setRecordingState] = useState<RecordingState>('idle');
   const [recordingTime, setRecordingTime] = useState(0);
@@ -37,13 +31,11 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
   const [isPlaying, setIsPlaying] = useState(false);
   const [emotionalResult, setEmotionalResult] = useState<EmotionalResult | null>(null);
   const [isLizaChatOpen, setIsLizaChatOpen] = useState(false);
-  const [micPermissionGranted, setMicPermissionGranted] = useState<boolean | null>(null);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
   const timerRef = useRef<number | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const permissionRequestedRef = useRef(false);
 
   useEffect(() => {
     return () => {
@@ -55,78 +47,11 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
       }
     };
   }, [audioURL]);
-  
-  // Pre-request microphone permission when modal opens
-  // This prevents the permission dialog from appearing during active Watch monitoring
-  useEffect(() => {
-    if (isOpen && micPermissionGranted === null && !permissionRequestedRef.current) {
-      permissionRequestedRef.current = true;
-      console.log('[EmotionalCheck] Pre-requesting microphone permission...');
-      
-      // Notify watch that permission dialog might show
-      pauseAutoStop?.();
-      notifyPermissionStart?.();
-      
-      navigator.mediaDevices.getUserMedia({ audio: true })
-        .then(stream => {
-          // Permission granted - stop the stream immediately (we'll request again when recording)
-          stream.getTracks().forEach(track => track.stop());
-          setMicPermissionGranted(true);
-          console.log('[EmotionalCheck] Microphone permission pre-granted');
-        })
-        .catch(err => {
-          console.log('[EmotionalCheck] Microphone permission denied or error:', err.name);
-          setMicPermissionGranted(false);
-        })
-        .finally(() => {
-          // Notify watch that permission dialog closed
-          notifyPermissionEnd?.();
-          resumeAutoStop?.();
-        });
-    }
-    
-    // Reset when modal closes
-    if (!isOpen) {
-      permissionRequestedRef.current = false;
-      setMicPermissionGranted(null);
-    }
-  }, [isOpen, micPermissionGranted, pauseAutoStop, resumeAutoStop, notifyPermissionStart, notifyPermissionEnd]);
-
-  // Auto-reconnect Watch when recording starts (after permission granted)
-  // This handles the case where Watch disconnected during permission dialog
-  useEffect(() => {
-    if (recordingState === 'recording' && isWatchMonitoring === false && startWatchWorkout) {
-      console.log('[EmotionalCheck] Recording started but Watch disconnected - auto-reconnecting...');
-      pauseAutoStop?.();
-      startWatchWorkout();
-      // Resume auto-stop after giving time for reconnection
-      setTimeout(() => {
-        resumeAutoStop?.();
-        console.log('[EmotionalCheck] Watch reconnection attempt complete');
-      }, 3000);
-    }
-  }, [recordingState, isWatchMonitoring, startWatchWorkout, pauseAutoStop, resumeAutoStop]);
 
   const startRecording = async () => {
     try {
-      console.log('[EmotionalCheck] Starting recording, micPermissionGranted:', micPermissionGranted);
-      
-      // If permission wasn't pre-granted, we need to request it now
-      // This should rarely happen since we pre-request when modal opens
-      if (micPermissionGranted !== true) {
-        console.log('[EmotionalCheck] Permission not pre-granted, requesting now...');
-        pauseAutoStop?.();
-        await notifyPermissionStart?.();
-      }
-      
+      console.log('[EmotionalCheck] Requesting microphone access...');
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      
-      // Only notify watch if we had to request permission
-      if (micPermissionGranted !== true) {
-        await notifyPermissionEnd?.();
-        resumeAutoStop?.();
-      }
-      
       console.log('[EmotionalCheck] Microphone access granted, starting recording');
       
       const mediaRecorder = new MediaRecorder(stream);
@@ -151,20 +76,9 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
       setRecordingTime(0);
 
       timerRef.current = window.setInterval(() => {
-        setRecordingTime(prev => {
-          // Auto-stop recording at 30 seconds
-          if (prev >= 29) {
-            setTimeout(() => stopRecording(), 0);
-          }
-          return prev + 1;
-        });
+        setRecordingTime(prev => prev + 1);
       }, 1000);
     } catch (error: any) {
-      // Notify watch and resume auto-stop even on error (only if we had to request permission)
-      if (micPermissionGranted !== true) {
-        await notifyPermissionEnd?.();
-        resumeAutoStop?.();
-      }
       console.error('[EmotionalCheck] Error accessing microphone:', error);
       console.error('[EmotionalCheck] Error name:', error.name);
       console.error('[EmotionalCheck] Error message:', error.message);
@@ -367,8 +281,9 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned, pauseAutoSto
               <p className="text-white/70 text-sm">{t('emotional_check.recording_in_progress')}</p>
               <button
                 onClick={stopRecording}
-                className="w-full bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all text-base"
+                className="w-full bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
               >
+                <Square className="w-5 h-5" />
                 {t('emotional_check.stop_recording')}
               </button>
             </div>

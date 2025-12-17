@@ -40,26 +40,21 @@ const OndaLevel1 = () => {
   useKeepAwake(true);
   
   // Auto-manage Watch workout: start when app opens, stop when app closes/backgrounds
-  // This enables continuous workout mode while app is in foreground
-  const watchSupported = watchHeartRate.watchStatus?.supported;
   useEffect(() => {
     console.log('[OndaLevel1] Watch auto-manage check:', {
       platform,
-      watchSupported,
-      autoManaged: watchHeartRate.autoManaged
+      watchStatus: watchHeartRate.watchStatus,
+      supported: watchHeartRate.watchStatus?.supported
     });
     
-    if (platform === 'ios' && watchSupported === true) {
-      console.log('[OndaLevel1] Enabling autoManaged for Watch - workout will run while app is open');
+    if (platform === 'ios' && watchHeartRate.watchStatus?.supported) {
+      console.log('[OndaLevel1] Enabling autoManaged for Watch');
       watchHeartRate.setAutoManaged(true);
     }
     return () => {
-      if (watchHeartRate.autoManaged) {
-        console.log('[OndaLevel1] Disabling autoManaged for Watch');
-        watchHeartRate.setAutoManaged(false);
-      }
+      watchHeartRate.setAutoManaged(false);
     };
-  }, [platform, watchSupported]);
+  }, [platform, watchHeartRate.watchStatus?.supported]);
   
   useEffect(() => {
     if (platform === 'ios' && healthKitData.isAvailable && healthKitData.isAuthorized) {
@@ -3875,12 +3870,6 @@ const OndaLevel1 = () => {
         isOpen={showEmotionalCheck}
         onClose={() => setShowEmotionalCheck(false)}
         onOndEarned={(amount) => setQnt(prev => prev + amount)}
-        pauseAutoStop={watchHeartRate.pauseAutoStop}
-        resumeAutoStop={watchHeartRate.resumeAutoStop}
-        isWatchMonitoring={watchHeartRate.isMonitoring}
-        startWatchWorkout={watchHeartRate.startRealtime}
-        notifyPermissionStart={watchHeartRate.notifyPermissionStart}
-        notifyPermissionEnd={watchHeartRate.notifyPermissionEnd}
       />
 
       <InfoModal
