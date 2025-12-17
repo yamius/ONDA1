@@ -19,6 +19,11 @@ class WorkoutManager: NSObject, ObservableObject {
     private var lastHRSendTime: Date = Date.distantPast
     private let minHRInterval: TimeInterval = 0.8
     
+    // Auto-stop timer: 3 minutes without ping from iPhone
+    private var lastPingTime: Date = Date()
+    private var autoStopTimer: Timer?
+    private let autoStopInterval: TimeInterval = 180 // 3 minutes
+    
     override init() {
         super.init()
         setupWatchConnectivity()
@@ -44,6 +49,7 @@ class WorkoutManager: NSObject, ObservableObject {
                     self.builder?.delegate = self
                     self.isActive = true
                     self.sendStatusToPhone("recovered")
+                    self.startAutoStopTimer()
                 }
             } else if let error = error {
                 print("[WorkoutManager] No session to recover: \(error.localizedDescription)")
@@ -52,6 +58,41 @@ class WorkoutManager: NSObject, ObservableObject {
             }
         }
     }
+    
+    // MARK: - Auto-stop Timer
+    
+    private func startAutoStopTimer() {
+        stopAutoStopTimer()
+        lastPingTime = Date()
+        
+        autoStopTimer = Timer.scheduledTimer(withTimeInterval: 30, repeats: true) { [weak self] _ in
+            self?.checkAutoStop()
+        }
+        print("[WorkoutManager] Auto-stop timer started (3 min timeout)")
+    }
+    
+    private func stopAutoStopTimer() {
+        autoStopTimer?.invalidate()
+        autoStopTimer = nil
+    }
+    
+    private func checkAutoStop() {
+        let elapsed = Date().timeIntervalSince(lastPingTime)
+        print("[WorkoutManager] Time since last ping: \(Int(elapsed))s")
+        
+        if elapsed >= autoStopInterval {
+            print("[WorkoutManager] No ping for 3 minutes, stopping workout")
+            stopWorkout()
+            stopAutoStopTimer()
+        }
+    }
+    
+    private func resetPingTimer() {
+        lastPingTime = Date()
+        print("[WorkoutManager] Ping received, timer reset")
+    }
+    
+    // MARK: - Authorization
     
     func checkAndRequestAuthorization() {
         guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
@@ -106,6 +147,8 @@ class WorkoutManager: NSObject, ObservableObject {
         return status != .notDetermined
     }
     
+    // MARK: - Workout Control
+    
     func startWorkout() {
         if isActive {
             print("[WorkoutManager] Workout already active, skipping start")
@@ -139,6 +182,7 @@ class WorkoutManager: NSObject, ObservableObject {
                     if success {
                         self.isActive = true
                         self.sendStatusToPhone("started")
+                        self.startAutoStopTimer()
                         print("[WorkoutManager] Workout started successfully")
                     } else {
                         print("[WorkoutManager] Failed to begin collection: \(error?.localizedDescription ?? "unknown")")
@@ -156,6 +200,8 @@ class WorkoutManager: NSObject, ObservableObject {
             return
         }
         
+        stopAutoStopTimer()
+        
         session?.end()
         builder?.endCollection(withEnd: Date()) { success, error in
             if success {
@@ -168,6 +214,7 @@ class WorkoutManager: NSObject, ObservableObject {
         session = nil
         builder = nil
         isActive = false
+        heartRate = 0
         sendStatusToPhone("stopped")
         print("[WorkoutManager] Workout stopped")
     }
@@ -178,8 +225,11 @@ class WorkoutManager: NSObject, ObservableObject {
             startWorkout()
         } else {
             print("[WorkoutManager] ensureWorkoutRunning: already active")
+            resetPingTimer()
         }
     }
+    
+    // MARK: - Data Transmission
     
     private func sendHeartRateToPhone(_ hr: Double) {
         let now = Date()
@@ -204,10 +254,8 @@ class WorkoutManager: NSObject, ObservableObject {
             } else {
                 WCSession.default.transferUserInfo(message)
                 connectionStatus = "background"
-                print("[WorkoutManager] HR sent via transferUserInfo (background)")
             }
         } else {
-            print("[WorkoutManager] WCSession not activated, can't send HR")
             connectionStatus = "inactive"
         }
     }
@@ -233,6 +281,8 @@ class WorkoutManager: NSObject, ObservableObject {
     }
 }
 
+// MARK: - HKWorkoutSessionDelegate
+
 extension WorkoutManager: HKWorkoutSessionDelegate {
     func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState, from fromState: HKWorkoutSessionState, date: Date) {
         print("[WorkoutManager] Session state: \(fromState.rawValue) -> \(toState.rawValue)")
@@ -246,6 +296,7 @@ extension WorkoutManager: HKWorkoutSessionDelegate {
                 self.sendStatusToPhone("paused")
             case .ended, .stopped:
                 self.isActive = false
+                self.stopAutoStopTimer()
                 self.sendStatusToPhone("ended")
             default:
                 break
@@ -257,10 +308,13 @@ extension WorkoutManager: HKWorkoutSessionDelegate {
         print("[WorkoutManager] Session error: \(error)")
         DispatchQueue.main.async {
             self.isActive = false
+            self.stopAutoStopTimer()
             self.sendStatusToPhone("error")
         }
     }
 }
+
+// MARK: - HKLiveWorkoutBuilderDelegate
 
 extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
     func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didCollectDataOf collectedTypes: Set<HKSampleType>) {
@@ -283,6 +337,8 @@ extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
     func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {}
 }
 
+// MARK: - WCSessionDelegate
+
 extension WorkoutManager: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith state: WCSessionActivationState, error: Error?) {
         print("[WorkoutManager] WCSession activated: \(state.rawValue)")
@@ -295,17 +351,14 @@ extension WorkoutManager: WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
-        print("[WorkoutManager] Received message: \(message)")
         handleCommand(message)
     }
     
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String: Any] = [:]) {
-        print("[WorkoutManager] Received userInfo: \(userInfo)")
         handleCommand(userInfo)
     }
     
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        print("[WorkoutManager] Received applicationContext: \(applicationContext)")
         if let command = applicationContext["command"] as? String {
             handleCommand(["type": command])
         }
@@ -316,8 +369,11 @@ extension WorkoutManager: WCSessionDelegate {
         DispatchQueue.main.async {
             self.connectionStatus = session.isReachable ? "reachable" : "background"
             
-            if session.isReachable && self.isActive && self.heartRate > 0 {
-                self.sendHeartRateToPhone(self.heartRate)
+            if session.isReachable {
+                self.resetPingTimer()
+                if self.isActive && self.heartRate > 0 {
+                    self.sendHeartRateToPhone(self.heartRate)
+                }
             }
         }
     }
@@ -333,12 +389,13 @@ extension WorkoutManager: WCSessionDelegate {
         
         DispatchQueue.main.async {
             switch cmd {
-            case "ping":
+            case "ping", "keepalive":
+                self.resetPingTimer()
                 self.sendStatusToPhone(self.isActive ? "active" : "idle")
             case "stop":
                 self.stopWorkout()
             default:
-                print("[WorkoutManager] Unknown command: \(cmd)")
+                break
             }
         }
     }

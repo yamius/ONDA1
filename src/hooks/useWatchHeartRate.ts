@@ -26,7 +26,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   const [lastUpdated, setLastUpdated] = useState<Date | null>(null);
   const [debugLog, setDebugLog] = useState<string[]>([]);
   const [autoManaged, setAutoManaged] = useState(false);
-  const heartbeatIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const keepAliveIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const isAutoManagedRef = useRef(false);
   const lastHrUpdateRef = useRef<number>(0);
 
@@ -38,11 +38,10 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     console.log('[Watch]', msg);
   }, []);
 
-  // Track previous reachable state for auto-start when watch becomes reachable
   const prevReachableRef = useRef<boolean | undefined>(undefined);
 
   useEffect(() => {
-    const checkStatusAndStart = async () => {
+    const checkStatus = async () => {
       const platform = Capacitor.getPlatform();
       
       if (platform !== 'ios') {
@@ -51,7 +50,6 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       }
 
       const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
-      addLog(`Plugin: ${isPluginAvailable ? 'OK' : 'NO'}`);
       
       if (!isPluginAvailable) {
         setWatchStatus({ supported: false });
@@ -61,20 +59,12 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
 
       try {
         const status = await OndaWatch.getStatus();
-        addLog(`Status: paired=${status.paired}, app=${status.watchAppInstalled}, reach=${status.reachable}`);
         
-        // Auto-start when watch becomes reachable (was not reachable, now is)
         const wasNotReachable = prevReachableRef.current === false;
         const nowReachable = status.reachable === true;
         
-        if (wasNotReachable && nowReachable && isAutoManagedRef.current && !isMonitoring) {
-          addLog('Watch became reachable - auto-starting workout');
-          try {
-            await OndaWatch.startRealtime();
-            setIsMonitoring(true);
-          } catch (err) {
-            addLog(`Auto-start on reachable failed: ${err}`);
-          }
+        if (wasNotReachable && nowReachable) {
+          addLog('Watch became reachable');
         }
         
         prevReachableRef.current = status.reachable;
@@ -85,7 +75,6 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
         } else if (!status.watchAppInstalled) {
           setError('ONDA Watch app not installed');
         } else {
-          // Не показываем ошибку если часы не reachable — данные могут приходить через фоновый режим
           setError(null);
         }
       } catch (err) {
@@ -95,11 +84,10 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       }
     };
 
-    checkStatusAndStart();
-    
-    const interval = setInterval(checkStatusAndStart, 5000); // Check more frequently
+    checkStatus();
+    const interval = setInterval(checkStatus, 10000);
     return () => clearInterval(interval);
-  }, [isMonitoring, addLog]);
+  }, [addLog]);
 
   useEffect(() => {
     const platform = Capacitor.getPlatform();
@@ -119,8 +107,11 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
             setHeartRate(Math.round(event.value));
             setLastUpdated(new Date());
             setError(null);
-            // Update last HR time for stale detection
             lastHrUpdateRef.current = Date.now();
+            
+            if (!isMonitoring) {
+              setIsMonitoring(true);
+            }
           }
         );
         
@@ -145,45 +136,30 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       hrListener?.remove();
       debugListener?.remove();
     };
-  }, [addLog]);
+  }, [addLog, isMonitoring]);
 
+  // Keep-alive: send ping every 30 seconds to prevent watch auto-stop (3 min timer)
   useEffect(() => {
-    if (!isMonitoring) {
-      if (heartbeatIntervalRef.current) {
-        clearInterval(heartbeatIntervalRef.current);
-        heartbeatIntervalRef.current = null;
-      }
-      return;
-    }
-
     const platform = Capacitor.getPlatform();
     if (platform !== 'ios') return;
+    
+    const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
+    if (!isPluginAvailable) return;
 
-    heartbeatIntervalRef.current = setInterval(async () => {
-      const now = Date.now();
-      const timeSinceLastHr = now - lastHrUpdateRef.current;
-      
-      // Если HR не обновлялся более 10 секунд — повторно отправляем "start"
-      if (timeSinceLastHr > 10000) {
-        addLog('HR stale, resending start command');
-        try {
-          await OndaWatch.startRealtime();
-        } catch (err) {
-          // Ignore errors
-        }
-      } else {
-        // Обычный heartbeat
+    // Always send keep-alive when app is visible
+    keepAliveIntervalRef.current = setInterval(() => {
+      if (document.visibilityState === 'visible') {
         OndaWatch.sendHeartbeat().catch(() => {});
       }
-    }, 3000);
+    }, 30000); // Every 30 seconds
 
     return () => {
-      if (heartbeatIntervalRef.current) {
-        clearInterval(heartbeatIntervalRef.current);
-        heartbeatIntervalRef.current = null;
+      if (keepAliveIntervalRef.current) {
+        clearInterval(keepAliveIntervalRef.current);
+        keepAliveIntervalRef.current = null;
       }
     };
-  }, [isMonitoring, addLog]);
+  }, []);
 
   const startRealtime = useCallback(async () => {
     if (!watchStatus?.supported) {
@@ -192,7 +168,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     }
 
     try {
-      console.log('[Watch] Starting realtime...');
+      console.log('[Watch] Starting realtime (ping)...');
       await OndaWatch.startRealtime();
       setIsMonitoring(true);
       setError(null);
@@ -214,28 +190,17 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     }
   }, []);
 
-  // Keep ref in sync with state
   useEffect(() => {
     isAutoManagedRef.current = autoManaged;
-    console.log('[Watch] autoManaged changed to:', autoManaged);
   }, [autoManaged]);
 
-  // Auto-manage workout based on app lifecycle
+  // Auto-manage: start workout when app becomes active
   useEffect(() => {
     const platform = Capacitor.getPlatform();
-    console.log('[Watch] Auto-manage effect: platform=', platform, 'autoManaged=', autoManaged);
-    
-    if (platform !== 'ios') {
-      console.log('[Watch] Skipping - not iOS');
-      return;
-    }
-    if (!autoManaged) {
-      console.log('[Watch] Skipping - autoManaged is false');
-      return;
-    }
+    if (platform !== 'ios') return;
+    if (!autoManaged) return;
 
     const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
-    console.log('[Watch] Plugin available:', isPluginAvailable);
     if (!isPluginAvailable) return;
 
     let appStateListener: PluginListenerHandle | null = null;
@@ -243,52 +208,37 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
 
     const handleAppActive = async () => {
       if (!isAutoManagedRef.current) return;
-      console.log('[Watch] App became active - starting workout');
+      console.log('[Watch] App active - sending ping');
       try {
         await OndaWatch.startRealtime();
         setIsMonitoring(true);
         setError(null);
       } catch (err) {
-        console.error('[Watch] Auto-start error:', err);
-      }
-    };
-
-    const handleAppInactive = async () => {
-      console.log('[Watch] App became inactive - stopping workout');
-      try {
-        await OndaWatch.stopRealtime();
-        setIsMonitoring(false);
-      } catch (err) {
-        console.error('[Watch] Auto-stop error:', err);
+        console.error('[Watch] Ping error:', err);
       }
     };
 
     const setupLifecycleListeners = async () => {
-      // Capacitor App lifecycle (iOS/Android native)
       try {
         appStateListener = await App.addListener('appStateChange', ({ isActive }) => {
-          console.log('[Watch] App state changed:', isActive ? 'active' : 'inactive');
+          console.log('[Watch] App state:', isActive ? 'active' : 'background');
           if (isActive) {
             handleAppActive();
-          } else {
-            handleAppInactive();
           }
+          // Note: We do NOT stop on background - watch has 3 min auto-stop
         });
       } catch (err) {
-        console.log('[Watch] App listener not available, using visibility API');
+        console.log('[Watch] App listener not available');
       }
 
-      // Web visibility API (fallback + PWA support)
       visibilityHandler = () => {
         if (document.visibilityState === 'visible') {
           handleAppActive();
-        } else {
-          handleAppInactive();
         }
+        // Note: We do NOT stop on hidden - watch has 3 min auto-stop
       };
       document.addEventListener('visibilitychange', visibilityHandler);
 
-      // Start immediately if app is currently visible
       if (document.visibilityState === 'visible') {
         handleAppActive();
       }
@@ -301,8 +251,6 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
       if (visibilityHandler) {
         document.removeEventListener('visibilitychange', visibilityHandler);
       }
-      // Stop workout when autoManaged is disabled
-      handleAppInactive();
     };
   }, [autoManaged]);
 

@@ -585,16 +585,14 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       }
     }
     
-    // Stop monitoring when modal closes
+    // Stop HealthKit monitoring when modal closes
+    // Note: Watch workout continues - it auto-stops after 3 min without ping
     if (!isOpen && isIOS) {
       if (vitalsData.healthKitHR.isMonitoring) {
         vitalsData.healthKitHR.stopMonitoring();
         console.log('[AdaptivePractice] HealthKit stopped on modal close');
       }
-      if (vitalsData.watchHR.isMonitoring) {
-        vitalsData.watchHR.stopRealtime().catch(() => {});
-        console.log('[AdaptivePractice] Watch stopped on modal close');
-      }
+      // Watch workout NOT stopped here - auto-stops after 3 min without app activity
     }
   }, [isOpen, vitalsData.healthKitHR.isAvailable, vitalsData.watchHR.isConnected]);
 
