@@ -362,7 +362,7 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
-    // MARK: - Data Transmission (Dual-Path: sendMessage + transferUserInfo)
+    // MARK: - Data Transmission (Triple-Layer: sendMessage + applicationContext + transferUserInfo)
     
     private func sendHeartRateToPhone(_ hr: Double) {
         let now = Date()
@@ -386,27 +386,34 @@ class WorkoutManager: NSObject, ObservableObject {
             "ts": now.timeIntervalSince1970
         ]
         
-        // Dual-path delivery: always use both channels
-        // sendMessage for real-time (if reachable), transferUserInfo for guaranteed delivery
-        
+        // LAYER 1: Try real-time sendMessage (fastest, but fails during alerts)
         if session.isReachable {
-            // Try real-time delivery first
             session.sendMessage(message, replyHandler: { _ in
-                // Message delivered successfully - reset ping timer
                 DispatchQueue.main.async {
                     self.resetPingTimer()
                 }
             }) { error in
                 print("[WorkoutManager] sendMessage error: \(error.localizedDescription)")
-                // Real-time failed but transferUserInfo already queued below
             }
             connectionStatus = "reachable"
         } else {
             connectionStatus = "background"
         }
         
-        // Always queue via transferUserInfo for guaranteed delivery
-        // This ensures data arrives even if sendMessage fails due to system alerts
+        // LAYER 2: updateApplicationContext (most stable - system daemon handles sync)
+        // This survives alerts because iOS system process syncs it, not our app
+        do {
+            try session.updateApplicationContext([
+                "lastUpdate": message,
+                "lastHeartRate": hr,
+                "timestamp": now.timeIntervalSince1970,
+                "isWorkoutActive": isActive
+            ])
+        } catch {
+            print("[WorkoutManager] Failed to update context: \(error)")
+        }
+        
+        // LAYER 3: transferUserInfo as backup queue (guaranteed delivery)
         session.transferUserInfo(message)
     }
     

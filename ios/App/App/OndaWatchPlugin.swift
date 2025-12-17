@@ -53,6 +53,7 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     var watchStatus: String = "unknown"
     
     private var isSessionInactive = false
+    private var lastProcessedTimestamp: Double = 0
 
     private var session: WCSession? {
         WCSession.isSupported() ? WCSession.default : nil
@@ -244,7 +245,22 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     func session(_ session: WCSession,
                  didReceiveApplicationContext applicationContext: [String : Any]) {
         addDebugLog("AppContext received")
-        handleReceivedData(applicationContext)
+        
+        // Handle nested lastUpdate format from watch
+        if let lastUpdate = applicationContext["lastUpdate"] as? [String: Any] {
+            addDebugLog("Context: restored data after pause")
+            handleReceivedData(lastUpdate)
+        } else if let heartRate = applicationContext["lastHeartRate"] as? Double {
+            // Direct format fallback
+            let data: [String: Any] = [
+                "type": "heartRate",
+                "value": heartRate,
+                "ts": applicationContext["timestamp"] as? Double ?? Date().timeIntervalSince1970
+            ]
+            handleReceivedData(data)
+        } else {
+            handleReceivedData(applicationContext)
+        }
     }
     
     private func handleReceivedData(_ data: [String: Any]) {
@@ -255,6 +271,13 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         switch type {
         case "heartRate":
             if let value = data["value"] as? Double {
+                // Deduplicate by timestamp (data may arrive via multiple channels)
+                let timestamp = data["ts"] as? Double ?? Date().timeIntervalSince1970
+                if timestamp <= lastProcessedTimestamp {
+                    return // Already processed this data
+                }
+                lastProcessedTimestamp = timestamp
+                
                 receivedCount += 1
                 lastHeartRate = value
                 lastHeartRateTime = Date()
