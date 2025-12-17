@@ -115,7 +115,7 @@ struct ContentView: View {
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle())
             
-            Text("\(5 - waitingSeconds) сек")
+            Text("\(max(0, 8 - waitingSeconds)) сек")
                 .font(.caption2)
                 .foregroundColor(.secondary)
         }
@@ -124,20 +124,21 @@ struct ContentView: View {
     
     private var mainView: some View {
         VStack(spacing: 0) {
-            // Header with ONDA aligned to top-left
             HStack {
                 Text("ONDA")
                     .font(.caption)
                     .fontWeight(.semibold)
                     .foregroundColor(.cyan)
                 Spacer()
+                Circle()
+                    .fill(connectionColor)
+                    .frame(width: 6, height: 6)
             }
             .padding(.horizontal, 8)
             .padding(.top, 4)
             
             Spacer()
             
-            // Heart rate card
             VStack(spacing: 6) {
                 HStack(spacing: 4) {
                     Image(systemName: "heart.fill")
@@ -160,9 +161,9 @@ struct ContentView: View {
                 
                 HStack(spacing: 4) {
                     Circle()
-                        .fill(workoutManager.isActive ? Color.green : Color.gray)
+                        .fill(workoutManager.isActive ? Color.green : Color.orange)
                         .frame(width: 6, height: 6)
-                    Text(workoutManager.isActive ? "Активна" : "Ожидание")
+                    Text(workoutManager.isActive ? "Активна" : "Запуск...")
                         .font(.caption2)
                         .foregroundColor(.secondary)
                 }
@@ -181,10 +182,18 @@ struct ContentView: View {
             Spacer()
         }
         .onAppear {
-            if !workoutManager.isActive {
-                print("[ContentView] Permission granted, starting workout")
-                workoutManager.startWorkout()
-            }
+            workoutManager.ensureWorkoutRunning()
+        }
+    }
+    
+    private var connectionColor: Color {
+        switch workoutManager.connectionStatus {
+        case "reachable":
+            return .green
+        case "background":
+            return .orange
+        default:
+            return .gray
         }
     }
     
@@ -272,10 +281,10 @@ struct ContentView: View {
                     waitingTimer = nil
                     UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
                     permissionState = .granted
-                } else if waitingSeconds >= 5 {
+                } else if waitingSeconds >= 8 {
                     timer.invalidate()
                     waitingTimer = nil
-                    print("[ContentView] No HR after 5 seconds, assuming permission denied")
+                    print("[ContentView] No HR after 8 seconds, assuming permission denied")
                     permissionState = .denied
                 }
             }

@@ -11,7 +11,6 @@ public class OndaWatchPlugin: CAPPlugin {
         super.load()
         print("[ONDA Plugin] Loading OndaWatchPlugin")
         implementation.plugin = self
-        // Session уже активирована в AppDelegate, но на всякий случай
         implementation.activateSession()
     }
 
@@ -22,8 +21,8 @@ public class OndaWatchPlugin: CAPPlugin {
     }
 
     @objc func startRealtime(_ call: CAPPluginCall) {
-        print("[ONDA Plugin] startRealtime called")
-        implementation.sendCommand(type: "start")
+        print("[ONDA Plugin] startRealtime - Watch controls workout, just ping")
+        implementation.sendPing()
         call.resolve()
     }
 
@@ -34,23 +33,24 @@ public class OndaWatchPlugin: CAPPlugin {
     }
     
     @objc func sendHeartbeat(_ call: CAPPluginCall) {
-        implementation.sendHeartbeat()
+        implementation.sendPing()
         call.resolve()
     }
 }
 
-// MARK: - Менеджер WCSession (iOS ↔ watchOS)
+// MARK: - WCSession Manager (iOS ↔ watchOS)
 
 class OndaWatchManager: NSObject, WCSessionDelegate {
 
     static let shared = OndaWatchManager()
 
-    // НЕ weak - чтобы plugin не терялся пока приложение активно
     var plugin: OndaWatchPlugin?
     
-    // Debug log для отображения в UI
     var debugLog: [String] = []
     var receivedCount: Int = 0
+    var lastHeartRate: Double = 0
+    var lastHeartRateTime: Date = Date.distantPast
+    var watchStatus: String = "unknown"
 
     private var session: WCSession? {
         WCSession.isSupported() ? WCSession.default : nil
@@ -61,11 +61,9 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         let entry = "\(timestamp): \(message)"
         print("[ONDA Debug] \(entry)")
         debugLog.append(entry)
-        // Keep only last 20 entries
         if debugLog.count > 20 {
             debugLog.removeFirst()
         }
-        // Notify JS about debug update
         DispatchQueue.main.async {
             self.plugin?.notifyListeners("debugLog", data: [
                 "log": self.debugLog,
@@ -97,7 +95,10 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
             "supported": WCSession.isSupported(),
             "paired": session.isPaired,
             "watchAppInstalled": session.isWatchAppInstalled,
-            "reachable": session.isReachable
+            "reachable": session.isReachable,
+            "watchStatus": watchStatus,
+            "lastHR": lastHeartRate,
+            "receivedCount": receivedCount
         ]
     }
 
@@ -112,47 +113,27 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         let message: [String: Any] = ["type": type, "ts": Date().timeIntervalSince1970]
 
         if session.isReachable {
-            // Прямая отправка когда часы активны
-            session.sendMessage(message, replyHandler: { reply in
-                print("[ONDA Manager] Command sent OK")
-            }) { error in
+            session.sendMessage(message, replyHandler: nil) { error in
                 print("[ONDA Manager] sendCommand error: \(error.localizedDescription)")
             }
         } else {
-            // Когда часы не активны - используем оба метода для надёжности
-            
-            // 1. transferUserInfo - разбудит приложение на часах в фоне
             session.transferUserInfo(message)
             print("[ONDA Manager] Command transferred via userInfo")
-            
-            // 2. updateApplicationContext - данные будут доступны сразу при пробуждении
-            do {
-                try session.updateApplicationContext(["command": type, "ts": Date().timeIntervalSince1970])
-                print("[ONDA Manager] Application context updated")
-            } catch {
-                print("[ONDA Manager] updateApplicationContext error: \(error.localizedDescription)")
-            }
         }
     }
     
-    func sendHeartbeat() {
+    func sendPing() {
         guard let session = session else {
             return
         }
         
         let message: [String: Any] = [
-            "type": "heartbeat",
+            "type": "ping",
             "ts": Date().timeIntervalSince1970
         ]
         
         if session.isReachable {
-            session.sendMessage(message, replyHandler: nil) { error in
-                print("[ONDA Manager] heartbeat error: \(error.localizedDescription)")
-            }
-        } else {
-            // Send via transferUserInfo when not immediately reachable
-            // This queues the message and delivers when watch becomes reachable
-            session.transferUserInfo(message)
+            session.sendMessage(message, replyHandler: nil, errorHandler: nil)
         }
     }
 
@@ -179,35 +160,39 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
 
     func sessionReachabilityDidChange(_ session: WCSession) {
         addDebugLog("Reachable: \(session.isReachable)")
+        DispatchQueue.main.async {
+            self.plugin?.notifyListeners("reachability", data: [
+                "reachable": session.isReachable
+            ])
+        }
     }
 
-    // Получаем данные с часов через sendMessage
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any]) {
-        addDebugLog("Msg: \(message.keys.joined(separator: ","))")
         handleReceivedData(message)
     }
     
-    // Получаем данные с часов через sendMessage с reply
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any],
                  replyHandler: @escaping ([String : Any]) -> Void) {
-        addDebugLog("MsgReply: \(message.keys.joined(separator: ","))")
         handleReceivedData(message)
         replyHandler(["received": true])
     }
     
-    // Получаем данные с часов через transferUserInfo
     func session(_ session: WCSession,
                  didReceiveUserInfo userInfo: [String : Any] = [:]) {
-        addDebugLog("UserInfo: \(userInfo.keys.joined(separator: ","))")
+        addDebugLog("UserInfo received")
         handleReceivedData(userInfo)
     }
     
-    // Общий обработчик данных с часов
+    func session(_ session: WCSession,
+                 didReceiveApplicationContext applicationContext: [String : Any]) {
+        addDebugLog("AppContext received")
+        handleReceivedData(applicationContext)
+    }
+    
     private func handleReceivedData(_ data: [String: Any]) {
         guard let type = data["type"] as? String else {
-            addDebugLog("No type in data")
             return
         }
 
@@ -215,28 +200,32 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         case "heartRate":
             if let value = data["value"] as? Double {
                 receivedCount += 1
-                addDebugLog("HR#\(receivedCount): \(Int(value)) bpm, plugin=\(plugin != nil)")
+                lastHeartRate = value
+                lastHeartRateTime = Date()
+                
+                if receivedCount % 10 == 1 {
+                    addDebugLog("HR#\(receivedCount): \(Int(value)) bpm")
+                }
+                
                 DispatchQueue.main.async {
-                    if let p = self.plugin {
-                        p.notifyListeners("heartRate", data: ["value": value])
-                    } else {
-                        self.addDebugLog("ERROR: plugin nil!")
-                    }
+                    self.plugin?.notifyListeners("heartRate", data: ["value": value])
                 }
             }
 
         case "status":
-            if let value = data["value"] as? String {
-                addDebugLog("Status: \(value)")
+            if let status = data["status"] as? String {
+                watchStatus = status
+                addDebugLog("Watch status: \(status)")
                 DispatchQueue.main.async {
-                    if let p = self.plugin {
-                        p.notifyListeners("status", data: ["value": value])
-                    }
+                    self.plugin?.notifyListeners("watchStatus", data: [
+                        "status": status,
+                        "isActive": data["isActive"] as? Bool ?? false
+                    ])
                 }
             }
 
         default:
-            addDebugLog("Unknown: \(type)")
+            break
         }
     }
 }

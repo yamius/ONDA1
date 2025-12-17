@@ -10,41 +10,47 @@ class WorkoutManager: NSObject, ObservableObject {
     private let healthStore = HKHealthStore()
     private var session: HKWorkoutSession?
     private var builder: HKLiveWorkoutBuilder?
-    private var extendedSession: WKExtendedRuntimeSession?
     
     @Published var heartRate: Double = 0
     @Published var isActive = false
     @Published var authorizationStatus: HKAuthorizationStatus = .notDetermined
+    @Published var connectionStatus: String = "init"
+    
+    private var lastHRSendTime: Date = Date.distantPast
+    private let minHRInterval: TimeInterval = 0.8
     
     override init() {
         super.init()
         setupWatchConnectivity()
-        startExtendedSession()
+        tryRecoverActiveWorkout()
     }
     
     private func setupWatchConnectivity() {
         if WCSession.isSupported() {
             WCSession.default.delegate = self
             WCSession.default.activate()
+            print("[WorkoutManager] WCSession setup complete")
         }
     }
     
-    func startExtendedSession() {
-        guard extendedSession == nil || extendedSession?.state == .invalid else {
-            print("[WorkoutManager] Extended session already active")
-            return
+    private func tryRecoverActiveWorkout() {
+        healthStore.recoverActiveWorkoutSession { recoveredSession, error in
+            if let session = recoveredSession {
+                print("[WorkoutManager] Recovered active workout session!")
+                DispatchQueue.main.async {
+                    self.session = session
+                    self.builder = session.associatedWorkoutBuilder()
+                    session.delegate = self
+                    self.builder?.delegate = self
+                    self.isActive = true
+                    self.sendStatusToPhone("recovered")
+                }
+            } else if let error = error {
+                print("[WorkoutManager] No session to recover: \(error.localizedDescription)")
+            } else {
+                print("[WorkoutManager] No active session to recover")
+            }
         }
-        
-        extendedSession = WKExtendedRuntimeSession()
-        extendedSession?.delegate = self
-        extendedSession?.start()
-        print("[WorkoutManager] Starting extended runtime session")
-    }
-    
-    func stopExtendedSession() {
-        extendedSession?.invalidate()
-        extendedSession = nil
-        print("[WorkoutManager] Stopped extended session")
     }
     
     func checkAndRequestAuthorization() {
@@ -101,6 +107,18 @@ class WorkoutManager: NSObject, ObservableObject {
     }
     
     func startWorkout() {
+        if isActive {
+            print("[WorkoutManager] Workout already active, skipping start")
+            return
+        }
+        
+        if session != nil {
+            print("[WorkoutManager] Ending previous session before starting new one")
+            session?.end()
+            session = nil
+            builder = nil
+        }
+        
         let config = HKWorkoutConfiguration()
         config.activityType = .mindAndBody
         config.locationType = .indoor
@@ -118,7 +136,13 @@ class WorkoutManager: NSObject, ObservableObject {
             session?.startActivity(with: startDate)
             builder?.beginCollection(withStart: startDate) { success, error in
                 DispatchQueue.main.async {
-                    self.isActive = true
+                    if success {
+                        self.isActive = true
+                        self.sendStatusToPhone("started")
+                        print("[WorkoutManager] Workout started successfully")
+                    } else {
+                        print("[WorkoutManager] Failed to begin collection: \(error?.localizedDescription ?? "unknown")")
+                    }
                 }
             }
         } catch {
@@ -127,63 +151,114 @@ class WorkoutManager: NSObject, ObservableObject {
     }
     
     func stopWorkout() {
-        session?.end()
-        isActive = false
-    }
-    
-    private func sendHeartRateToPhone(_ hr: Double) {
-        let message: [String: Any] = [
-            "type": "heartRate",
-            "value": hr,
-            "ts": Date().timeIntervalSince1970
-        ]
-        
-        if WCSession.default.isReachable {
-            WCSession.default.sendMessage(message, replyHandler: nil) { error in
-                print("[WorkoutManager] sendMessage error: \(error.localizedDescription)")
-                // Fallback to transferUserInfo
-                WCSession.default.transferUserInfo(message)
-            }
-        } else {
-            // When not reachable, use transferUserInfo for reliable delivery
-            WCSession.default.transferUserInfo(message)
-            print("[WorkoutManager] HR sent via transferUserInfo")
-        }
-    }
-}
-
-extension WorkoutManager: WKExtendedRuntimeSessionDelegate {
-    func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
-        print("[WorkoutManager] Extended runtime session started")
-    }
-    
-    func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
-        print("[WorkoutManager] Extended session will expire, restarting...")
-        startExtendedSession()
-    }
-    
-    func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession,
-                                didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason,
-                                error: Error?) {
-        print("[WorkoutManager] Extended session invalidated: \(reason.rawValue), error: \(error?.localizedDescription ?? "none")")
-        
-        if reason == .sessionInProgress {
+        guard isActive else {
+            print("[WorkoutManager] Workout not active, nothing to stop")
             return
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.startExtendedSession()
+        session?.end()
+        builder?.endCollection(withEnd: Date()) { success, error in
+            if success {
+                self.builder?.finishWorkout { workout, error in
+                    print("[WorkoutManager] Workout saved: \(workout?.uuid.uuidString ?? "nil")")
+                }
+            }
+        }
+        
+        session = nil
+        builder = nil
+        isActive = false
+        sendStatusToPhone("stopped")
+        print("[WorkoutManager] Workout stopped")
+    }
+    
+    func ensureWorkoutRunning() {
+        if !isActive {
+            print("[WorkoutManager] ensureWorkoutRunning: starting workout")
+            startWorkout()
+        } else {
+            print("[WorkoutManager] ensureWorkoutRunning: already active")
+        }
+    }
+    
+    private func sendHeartRateToPhone(_ hr: Double) {
+        let now = Date()
+        guard now.timeIntervalSince(lastHRSendTime) >= minHRInterval else {
+            return
+        }
+        lastHRSendTime = now
+        
+        let message: [String: Any] = [
+            "type": "heartRate",
+            "value": hr,
+            "ts": now.timeIntervalSince1970
+        ]
+        
+        if WCSession.default.activationState == .activated {
+            if WCSession.default.isReachable {
+                WCSession.default.sendMessage(message, replyHandler: nil) { error in
+                    print("[WorkoutManager] sendMessage error: \(error.localizedDescription)")
+                    WCSession.default.transferUserInfo(message)
+                }
+                connectionStatus = "reachable"
+            } else {
+                WCSession.default.transferUserInfo(message)
+                connectionStatus = "background"
+                print("[WorkoutManager] HR sent via transferUserInfo (background)")
+            }
+        } else {
+            print("[WorkoutManager] WCSession not activated, can't send HR")
+            connectionStatus = "inactive"
+        }
+    }
+    
+    private func sendStatusToPhone(_ status: String) {
+        let message: [String: Any] = [
+            "type": "status",
+            "status": status,
+            "isActive": isActive,
+            "ts": Date().timeIntervalSince1970
+        ]
+        
+        if WCSession.default.activationState == .activated {
+            if WCSession.default.isReachable {
+                WCSession.default.sendMessage(message, replyHandler: nil, errorHandler: nil)
+            }
+            do {
+                try WCSession.default.updateApplicationContext(message)
+            } catch {
+                print("[WorkoutManager] Failed to update app context: \(error)")
+            }
         }
     }
 }
 
 extension WorkoutManager: HKWorkoutSessionDelegate {
     func workoutSession(_ workoutSession: HKWorkoutSession, didChangeTo toState: HKWorkoutSessionState, from fromState: HKWorkoutSessionState, date: Date) {
-        print("[WorkoutManager] State: \(toState.rawValue)")
+        print("[WorkoutManager] Session state: \(fromState.rawValue) -> \(toState.rawValue)")
+        
+        DispatchQueue.main.async {
+            switch toState {
+            case .running:
+                self.isActive = true
+                self.sendStatusToPhone("running")
+            case .paused:
+                self.sendStatusToPhone("paused")
+            case .ended, .stopped:
+                self.isActive = false
+                self.sendStatusToPhone("ended")
+            default:
+                break
+            }
+        }
     }
     
     func workoutSession(_ workoutSession: HKWorkoutSession, didFailWithError error: Error) {
-        print("[WorkoutManager] Error: \(error)")
+        print("[WorkoutManager] Session error: \(error)")
+        DispatchQueue.main.async {
+            self.isActive = false
+            self.sendStatusToPhone("error")
+        }
     }
 }
 
@@ -212,10 +287,10 @@ extension WorkoutManager: WCSessionDelegate {
     func session(_ session: WCSession, activationDidCompleteWith state: WCSessionActivationState, error: Error?) {
         print("[WorkoutManager] WCSession activated: \(state.rawValue)")
         
-        let context = session.receivedApplicationContext
-        if let command = context["command"] as? String {
-            print("[WorkoutManager] Found pending command in context: \(command)")
-            handleCommand(["type": command])
+        DispatchQueue.main.async {
+            if state == .activated {
+                self.connectionStatus = session.isReachable ? "reachable" : "background"
+            }
         }
     }
     
@@ -225,7 +300,7 @@ extension WorkoutManager: WCSessionDelegate {
     }
     
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String: Any] = [:]) {
-        print("[WorkoutManager] Received userInfo (background wake): \(userInfo)")
+        print("[WorkoutManager] Received userInfo: \(userInfo)")
         handleCommand(userInfo)
     }
     
@@ -236,11 +311,21 @@ extension WorkoutManager: WCSessionDelegate {
         }
     }
     
+    func sessionReachabilityDidChange(_ session: WCSession) {
+        print("[WorkoutManager] Reachability changed: \(session.isReachable)")
+        DispatchQueue.main.async {
+            self.connectionStatus = session.isReachable ? "reachable" : "background"
+            
+            if session.isReachable && self.isActive && self.heartRate > 0 {
+                self.sendHeartRateToPhone(self.heartRate)
+            }
+        }
+    }
+    
     private func handleCommand(_ data: [String: Any]) {
         let command = (data["type"] as? String) ?? (data["command"] as? String)
         
         guard let cmd = command else {
-            print("[WorkoutManager] No command found in data")
             return
         }
         
@@ -248,16 +333,10 @@ extension WorkoutManager: WCSessionDelegate {
         
         DispatchQueue.main.async {
             switch cmd {
-            case "start":
-                if !self.isActive {
-                    self.startWorkout()
-                } else {
-                    print("[WorkoutManager] Workout already active")
-                }
+            case "ping":
+                self.sendStatusToPhone(self.isActive ? "active" : "idle")
             case "stop":
                 self.stopWorkout()
-            case "heartbeat":
-                print("[WorkoutManager] Heartbeat received")
             default:
                 print("[WorkoutManager] Unknown command: \(cmd)")
             }
