@@ -178,36 +178,64 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     }
 
     func sessionReachabilityDidChange(_ session: WCSession) {
-        addDebugLog("Reachable: \(session.isReachable)")
+        let reachable = session.isReachable
+        addDebugLog("📡 Reachable: \(reachable)")
+        
+        // Уведомляем JavaScript о изменении состояния
+        DispatchQueue.main.async {
+            if let p = self.plugin {
+                p.notifyListeners("reachabilityChanged", data: [
+                    "reachable": reachable,
+                    "paired": session.isPaired,
+                    "watchAppInstalled": session.isWatchAppInstalled
+                ])
+            }
+        }
     }
 
-    // Получаем данные с часов через sendMessage
+    // Получаем данные с часов через sendMessage (реалтайм)
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any]) {
-        addDebugLog("Msg: \(message.keys.joined(separator: ","))")
+        addDebugLog("📨 Msg: \(message.keys.joined(separator: ","))")
         handleReceivedData(message)
     }
     
-    // Получаем данные с часов через sendMessage с reply
+    // Получаем данные с часов через sendMessage с reply (реалтайм)
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any],
                  replyHandler: @escaping ([String : Any]) -> Void) {
-        addDebugLog("MsgReply: \(message.keys.joined(separator: ","))")
+        addDebugLog("📨 MsgReply: \(message.keys.joined(separator: ","))")
         handleReceivedData(message)
-        replyHandler(["received": true])
+        replyHandler(["received": true, "timestamp": Date().timeIntervalSince1970])
     }
     
-    // Получаем данные с часов через transferUserInfo
+    // Получаем данные с часов через transferUserInfo (фоновая доставка)
     func session(_ session: WCSession,
                  didReceiveUserInfo userInfo: [String : Any] = [:]) {
-        addDebugLog("UserInfo: \(userInfo.keys.joined(separator: ","))")
+        addDebugLog("📦 UserInfo: \(userInfo.keys.joined(separator: ","))")
         handleReceivedData(userInfo)
+    }
+    
+    // Получаем обновления applicationContext от часов
+    func session(_ session: WCSession,
+                 didReceiveApplicationContext applicationContext: [String : Any]) {
+        addDebugLog("📋 Context: \(applicationContext.keys.joined(separator: ","))")
+        
+        // Извлекаем последний HR из контекста
+        if let latestHR = applicationContext["latestHeartRate"] as? Double {
+            let data: [String: Any] = [
+                "type": "heartRate",
+                "value": latestHR,
+                "timestamp": applicationContext["timestamp"] ?? Date().timeIntervalSince1970
+            ]
+            handleReceivedData(data)
+        }
     }
     
     // Общий обработчик данных с часов
     private func handleReceivedData(_ data: [String: Any]) {
         guard let type = data["type"] as? String else {
-            addDebugLog("No type in data")
+            addDebugLog("⚠️ No type in data")
             return
         }
 
@@ -215,19 +243,29 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         case "heartRate":
             if let value = data["value"] as? Double {
                 receivedCount += 1
-                addDebugLog("HR#\(receivedCount): \(Int(value)) bpm, plugin=\(plugin != nil)")
+                
+                let timestamp = data["timestamp"] as? TimeInterval ?? Date().timeIntervalSince1970
+                let timeAgo = Date().timeIntervalSince1970 - timestamp
+                
+                addDebugLog("💗 HR#\(receivedCount): \(Int(value)) bpm (\(String(format: "%.1f", timeAgo))s ago)")
+                
                 DispatchQueue.main.async {
                     if let p = self.plugin {
-                        p.notifyListeners("heartRate", data: ["value": value])
+                        let eventData: [String: Any] = [
+                            "value": value,
+                            "source": "watch",
+                            "timestamp": ISO8601DateFormatter().string(from: Date(timeIntervalSince1970: timestamp))
+                        ]
+                        p.notifyListeners("heartRate", data: eventData)
                     } else {
-                        self.addDebugLog("ERROR: plugin nil!")
+                        self.addDebugLog("❌ ERROR: plugin nil!")
                     }
                 }
             }
 
         case "status":
             if let value = data["value"] as? String {
-                addDebugLog("Status: \(value)")
+                addDebugLog("ℹ️ Status: \(value)")
                 DispatchQueue.main.async {
                     if let p = self.plugin {
                         p.notifyListeners("status", data: ["value": value])
@@ -236,7 +274,7 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
             }
 
         default:
-            addDebugLog("Unknown: \(type)")
+            addDebugLog("❓ Unknown type: \(type)")
         }
     }
 }

@@ -1,0 +1,57 @@
+feat(watch): implement autonomous Apple Watch session with auto-recovery
+
+Major improvements to Apple Watch heart rate monitoring:
+
+🎯 Problem Solved:
+- Watch app no longer sleeps when iPhone shows system dialogs (e.g., microphone permission)
+- HKWorkoutSession continues autonomously
+- WCSession automatically reconnects after interruptions
+
+✨ Key Features:
+- Three-level data delivery system:
+  1. Real-time via sendMessage (when reachable)
+  2. Background delivery via transferUserInfo
+  3. Queue accumulation with auto-sync
+- Automatic HKWorkoutSession restart on failures
+- Connection monitoring every 2 seconds
+- Extended Runtime Session with auto-restart
+- Application Context synchronization
+- Heart rate validation (30-220 bpm)
+- Comprehensive logging with emoji markers
+
+🔧 Technical Changes:
+- Enhanced WorkoutManager with autonomous operation
+- Multi-level data transmission fallback
+- Automatic WCSession reactivation
+- Background modes for iPhone app
+- Session state protection against duplication
+
+📝 Files Modified:
+- ios/App/OndaWatch Watch App/WorkoutManager.swift (main implementation)
+- ios/App/OndaWatchExtension/WorkoutManager.swift
+- ios/App/watchkitapp Watch App/WorkoutManager.swift
+- ios/App/App/OndaWatchPlugin.swift (background delivery)
+- ios/App/App/Info.plist (background modes)
+
+📚 Documentation:
+- docs/WATCH_AUTONOMY_FIX.md (technical details)
+- docs/WATCH_TESTING_GUIDE.md (testing scenarios)
+- WATCH_AUTONOMY_SUMMARY.md (summary)
+- APPLE_WATCH_AUTONOMY_README.md (quick start)
+- .assistant/WATCH_HR_FLOW.md (updated architecture)
+
+✅ Benefits:
+- No interruptions during meditation practices
+- Works even when iPhone is locked
+- Automatic connection recovery
+- No data loss during temporary disconnections
+- Real-time heart rate for adaptive practices
+
+🧪 Testing Required:
+- Test with microphone permission dialog
+- Test with locked iPhone
+- Test Bluetooth disconnect/reconnect
+- Verify background data delivery
+
+Version: 2.0 - Autonomous Watch with Auto-Recovery
+Date: December 18, 2025
