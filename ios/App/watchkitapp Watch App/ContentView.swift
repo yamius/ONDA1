@@ -22,8 +22,6 @@ struct ContentView: View {
     @State private var permissionState: PermissionState = .checking
     @State private var waitingTimer: Timer?
     @State private var waitingSeconds: Int = 0
-    @State private var showDebugPanel = false
-    @Environment(\.scenePhase) private var scenePhase
     
     var body: some View {
         Group {
@@ -43,16 +41,7 @@ struct ContentView: View {
         .onAppear {
             checkInitialPermissionState()
         }
-        .onChange(of: scenePhase) { oldPhase, newPhase in
-            if newPhase == .active {
-                print("[ContentView] Scene became active")
-                workoutManager.handleSceneActivation()
-            } else if newPhase == .background {
-                print("[ContentView] Scene went to background")
-                workoutManager.handleSceneDeactivation()
-            }
-        }
-        .onChange(of: workoutManager.heartRate) { oldValue, newValue in
+        .onChange(of: workoutManager.heartRate) { newValue in
             if newValue > 0 {
                 waitingTimer?.invalidate()
                 waitingTimer = nil
@@ -126,41 +115,29 @@ struct ContentView: View {
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle())
             
-            Text("\(max(0, 8 - waitingSeconds)) сек")
+            Text("\(5 - waitingSeconds) сек")
                 .font(.caption2)
                 .foregroundColor(.secondary)
-            
-            Text("WC: \(workoutManager.wcSessionState)")
-                .font(.system(size: 10))
-                .foregroundColor(.gray)
         }
         .padding(.horizontal, 8)
     }
     
     private var mainView: some View {
         VStack(spacing: 0) {
+            // Header with ONDA aligned to top-left
             HStack {
                 Text("ONDA")
                     .font(.caption)
                     .fontWeight(.semibold)
                     .foregroundColor(.cyan)
                 Spacer()
-                Circle()
-                    .fill(connectionColor)
-                    .frame(width: 6, height: 6)
             }
             .padding(.horizontal, 8)
             .padding(.top, 4)
-            .onTapGesture {
-                showDebugPanel.toggle()
-            }
-            
-            if showDebugPanel {
-                debugPanelView
-            }
             
             Spacer()
             
+            // Heart rate card
             VStack(spacing: 6) {
                 HStack(spacing: 4) {
                     Image(systemName: "heart.fill")
@@ -183,9 +160,9 @@ struct ContentView: View {
                 
                 HStack(spacing: 4) {
                     Circle()
-                        .fill(workoutManager.isActive ? Color.green : Color.orange)
+                        .fill(workoutManager.isActive ? Color.green : Color.gray)
                         .frame(width: 6, height: 6)
-                    Text(workoutManager.isActive ? "Активна" : "Запуск...")
+                    Text(workoutManager.isActive ? "Активна" : "Ожидание")
                         .font(.caption2)
                         .foregroundColor(.secondary)
                 }
@@ -204,62 +181,10 @@ struct ContentView: View {
             Spacer()
         }
         .onAppear {
-            workoutManager.ensureWorkoutRunning()
-        }
-    }
-    
-    private var debugPanelView: some View {
-        VStack(alignment: .leading, spacing: 2) {
-            HStack {
-                Text("WC:")
-                    .foregroundColor(.gray)
-                Text(workoutManager.wcSessionState)
-                    .foregroundColor(wcStateColor)
+            if !workoutManager.isActive {
+                print("[ContentView] Permission granted, starting workout")
+                workoutManager.startWorkout()
             }
-            HStack {
-                Text("Ping:")
-                    .foregroundColor(.gray)
-                Text("\(workoutManager.lastPingAgo)s")
-                    .foregroundColor(workoutManager.lastPingAgo > 60 ? .red : .green)
-            }
-            HStack {
-                Text("HR:")
-                    .foregroundColor(.gray)
-                Text("\(workoutManager.lastHRSentAgo)s")
-                    .foregroundColor(workoutManager.lastHRSentAgo > 5 ? .orange : .green)
-            }
-            HStack {
-                Text("Workout:")
-                    .foregroundColor(.gray)
-                Text(workoutManager.isActive ? "ON" : "OFF")
-                    .foregroundColor(workoutManager.isActive ? .green : .red)
-            }
-        }
-        .font(.system(size: 10, design: .monospaced))
-        .padding(6)
-        .background(Color.black.opacity(0.5))
-        .cornerRadius(6)
-        .padding(.horizontal, 8)
-    }
-    
-    private var wcStateColor: Color {
-        switch workoutManager.wcSessionState {
-        case "reachable": return .green
-        case "bg": return .orange
-        case "activated": return .yellow
-        case "inactive", "notActivated", "deactivated": return .red
-        default: return .gray
-        }
-    }
-    
-    private var connectionColor: Color {
-        switch workoutManager.connectionStatus {
-        case "reachable":
-            return .green
-        case "background", "bg":
-            return .orange
-        default:
-            return .gray
         }
     }
     
@@ -277,7 +202,7 @@ struct ContentView: View {
                     Text("На iPhone откройте:")
                         .font(.caption2)
                         .foregroundColor(.secondary)
-                    Text("Настройки -> Здоровье -> Доступ к данным -> ONDA")
+                    Text("Настройки → Здоровье → Доступ к данным → ONDA")
                         .font(.caption2)
                         .foregroundColor(.cyan)
                 }
@@ -294,11 +219,6 @@ struct ContentView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.green)
-                
-                Text("WC: \(workoutManager.wcSessionState)")
-                    .font(.system(size: 10))
-                    .foregroundColor(.gray)
-                    .padding(.top, 4)
             }
             .padding(.horizontal, 8)
         }
@@ -352,10 +272,10 @@ struct ContentView: View {
                     waitingTimer = nil
                     UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
                     permissionState = .granted
-                } else if waitingSeconds >= 8 {
+                } else if waitingSeconds >= 5 {
                     timer.invalidate()
                     waitingTimer = nil
-                    print("[ContentView] No HR after 8 seconds, assuming permission denied")
+                    print("[ContentView] No HR after 5 seconds, assuming permission denied")
                     permissionState = .denied
                 }
             }
@@ -364,7 +284,6 @@ struct ContentView: View {
     
     private func retryAfterSettingsChange() {
         print("[ContentView] Retry after settings change - starting workout directly")
-        workoutManager.reactivateWCSession()
         workoutManager.startWorkout()
         permissionState = .waitingForHR
         waitingSeconds = 0

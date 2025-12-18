@@ -3,8 +3,6 @@ import { X, Mic, Square, Play, Pause, Volume2, RefreshCw, MessageCircle } from '
 import { useTranslation } from 'react-i18next';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 import { LizaChatModal } from './LizaChatModal';
-import { Capacitor } from '@capacitor/core';
-import OndaWatch from '../plugins/ondaWatch';
 
 interface EmotionalCheckModalProps {
   isOpen: boolean;
@@ -51,18 +49,6 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   }, [audioURL]);
 
   const startRecording = async () => {
-    // BEFORE requesting permission: pause watch realtime to prevent WCSession errors
-    if (Capacitor.isNativePlatform()) {
-      try {
-        console.log('[EmotionalCheck] Pausing watch realtime before permission dialog');
-        await OndaWatch.pauseRealtime();
-        // Wait 200ms for command to reach watch before showing system alert
-        await new Promise(r => setTimeout(r, 200));
-      } catch (e) {
-        console.log('[EmotionalCheck] pauseRealtime not available:', e);
-      }
-    }
-    
     try {
       console.log('[EmotionalCheck] Requesting microphone access...');
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -105,17 +91,6 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       }
       
       alert(errorMessage);
-    } finally {
-      // ALWAYS resume watch realtime after permission dialog closes
-      // This runs whether permission was granted, denied, or error occurred
-      if (Capacitor.isNativePlatform()) {
-        try {
-          console.log('[EmotionalCheck] Resuming watch realtime (finally block)');
-          await OndaWatch.resumeRealtime();
-        } catch (e) {
-          console.log('[EmotionalCheck] resumeRealtime not available:', e);
-        }
-      }
     }
   };
 

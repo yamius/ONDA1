@@ -67,13 +67,6 @@
         <key>UIBackgroundModes</key>
         <array>
                 <string>fetch</string>
-                <string>bluetooth-central</string>
-                <string>processing</string>
-        </array>
-        <key>BGTaskSchedulerPermittedIdentifiers</key>
-        <array>
-                <string>com.onda-life.ios.watchsync</string>
-                <string>com.onda-life.ios.refresh</string>
         </array>
 </dict>
 </plist>

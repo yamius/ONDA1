@@ -5,166 +5,55 @@ import WatchConnectivity
 @objc(OndaWatchPlugin)
 public class OndaWatchPlugin: CAPPlugin {
 
-    private let watchService = WatchConnectivityService.shared
-    private let legacyManager = OndaWatchManager.shared
+    private let implementation = OndaWatchManager.shared
 
     public override func load() {
         super.load()
-        print("[ONDA Plugin] Loading OndaWatchPlugin with WatchConnectivityService")
-        
-        // Connect legacy manager to plugin for JS notifications
-        legacyManager.plugin = self
-        
-        // Also set up callbacks on WatchConnectivityService
-        watchService.setHeartRateCallback { [weak self] heartRate in
-            self?.notifyListeners("heartRate", data: ["value": Double(heartRate)])
-        }
-        
-        watchService.setWorkoutStatusCallback { [weak self] isActive in
-            self?.notifyListeners("watchStatus", data: [
-                "status": isActive ? "active" : "stopped",
-                "isActive": isActive
-            ])
-        }
+        print("[ONDA Plugin] Loading OndaWatchPlugin")
+        implementation.plugin = self
+        // Session уже активирована в AppDelegate, но на всякий случай
+        implementation.activateSession()
     }
 
     @objc func getStatus(_ call: CAPPluginCall) {
-        let status: [String: Any] = [
-            "supported": WCSession.isSupported(),
-            "paired": watchService.isWatchPaired(),
-            "reachable": watchService.isWatchReachable(),
-            "sessionActivated": watchService.isSessionActivated(),
-            "lastHR": watchService.getLastHeartRate(),
-            "workoutActive": watchService.isWorkoutActive()
-        ]
+        let status = implementation.status()
         print("[ONDA Plugin] getStatus: \(status)")
         call.resolve(status)
     }
 
     @objc func startRealtime(_ call: CAPPluginCall) {
-        print("[ONDA Plugin] startRealtime - sending ping")
-        watchService.sendPing()
+        print("[ONDA Plugin] startRealtime called")
+        implementation.sendCommand(type: "start")
         call.resolve()
     }
 
     @objc func stopRealtime(_ call: CAPPluginCall) {
         print("[ONDA Plugin] stopRealtime called")
-        watchService.stopWorkout { success, error in
-            if let error = error {
-                call.reject(error)
-            } else {
-                call.resolve(["success": success])
-            }
-        }
-    }
-    
-    @objc func sendHeartbeat(_ call: CAPPluginCall) {
-        watchService.sendPing()
+        implementation.sendCommand(type: "stop")
         call.resolve()
     }
     
-    @objc func pauseRealtime(_ call: CAPPluginCall) {
-        print("[ONDA Plugin] pauseRealtime - switching watch to accumulation mode before permission request")
-        watchService.pauseRealtime { success in
-            call.resolve(["success": success])
-        }
-    }
-    
-    @objc func resumeRealtime(_ call: CAPPluginCall) {
-        print("[ONDA Plugin] resumeRealtime - restoring watch to normal mode after permission")
-        watchService.resumeRealtime { success in
-            call.resolve(["success": success])
-        }
+    @objc func sendHeartbeat(_ call: CAPPluginCall) {
+        implementation.sendHeartbeat()
+        call.resolve()
     }
 }
 
-// MARK: - WCSession Manager (iOS ↔ watchOS)
+// MARK: - Менеджер WCSession (iOS ↔ watchOS)
 
 class OndaWatchManager: NSObject, WCSessionDelegate {
 
     static let shared = OndaWatchManager()
 
+    // НЕ weak - чтобы plugin не терялся пока приложение активно
     var plugin: OndaWatchPlugin?
     
+    // Debug log для отображения в UI
     var debugLog: [String] = []
     var receivedCount: Int = 0
-    var lastHeartRate: Double = 0
-    var lastHeartRateTime: Date = Date.distantPast
-    var watchStatus: String = "unknown"
-    
-    private var isSessionInactive = false
-    private var lastProcessedTimestamp: Double = 0
 
     private var session: WCSession? {
         WCSession.isSupported() ? WCSession.default : nil
-    }
-    
-    override init() {
-        super.init()
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(appWillEnterForeground),
-            name: UIApplication.willEnterForegroundNotification,
-            object: nil
-        )
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(appDidBecomeActive),
-            name: UIApplication.didBecomeActiveNotification,
-            object: nil
-        )
-    }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-    }
-    
-    @objc private func appWillEnterForeground() {
-        print("[ONDA Manager] App will enter foreground - reactivating session")
-        reactivateIfNeeded()
-    }
-    
-    @objc private func appDidBecomeActive() {
-        print("[ONDA Manager] App did become active - force reactivation")
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            // Force activation check
-            let session = WCSession.default
-            if session.activationState != .activated {
-                print("[ONDA Manager] Force activating WCSession")
-                session.activate()
-            }
-            
-            self.isSessionInactive = false
-            
-            // Check for missed data in receivedApplicationContext
-            let lastContext = session.receivedApplicationContext
-            if let lastUpdate = lastContext["lastUpdate"] as? [String: Any] {
-                self.addDebugLog("Recovered data from context after pause")
-                self.handleReceivedData(lastUpdate)
-            } else if let heartRate = lastContext["lastHeartRate"] as? Double {
-                let data: [String: Any] = [
-                    "type": "heartRate",
-                    "value": heartRate,
-                    "ts": lastContext["timestamp"] as? Double ?? Date().timeIntervalSince1970
-                ]
-                self.handleReceivedData(data)
-            }
-            
-            self.sendPing()
-        }
-    }
-    
-    private func reactivateIfNeeded() {
-        guard let session = session else { return }
-        
-        if session.activationState != .activated || isSessionInactive {
-            addDebugLog("Reactivating WCSession...")
-            session.activate()
-            isSessionInactive = false
-        }
     }
     
     private func addDebugLog(_ message: String) {
@@ -172,9 +61,11 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         let entry = "\(timestamp): \(message)"
         print("[ONDA Debug] \(entry)")
         debugLog.append(entry)
+        // Keep only last 20 entries
         if debugLog.count > 20 {
             debugLog.removeFirst()
         }
+        // Notify JS about debug update
         DispatchQueue.main.async {
             self.plugin?.notifyListeners("debugLog", data: [
                 "log": self.debugLog,
@@ -194,7 +85,6 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
             addDebugLog("WCSession activating...")
         } else {
             addDebugLog("WCSession has delegate")
-            reactivateIfNeeded()
         }
     }
 
@@ -207,10 +97,7 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
             "supported": WCSession.isSupported(),
             "paired": session.isPaired,
             "watchAppInstalled": session.isWatchAppInstalled,
-            "reachable": session.isReachable,
-            "watchStatus": watchStatus,
-            "lastHR": lastHeartRate,
-            "receivedCount": receivedCount
+            "reachable": session.isReachable
         ]
     }
 
@@ -225,27 +112,47 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         let message: [String: Any] = ["type": type, "ts": Date().timeIntervalSince1970]
 
         if session.isReachable {
-            session.sendMessage(message, replyHandler: nil) { error in
+            // Прямая отправка когда часы активны
+            session.sendMessage(message, replyHandler: { reply in
+                print("[ONDA Manager] Command sent OK")
+            }) { error in
                 print("[ONDA Manager] sendCommand error: \(error.localizedDescription)")
             }
         } else {
+            // Когда часы не активны - используем оба метода для надёжности
+            
+            // 1. transferUserInfo - разбудит приложение на часах в фоне
             session.transferUserInfo(message)
             print("[ONDA Manager] Command transferred via userInfo")
+            
+            // 2. updateApplicationContext - данные будут доступны сразу при пробуждении
+            do {
+                try session.updateApplicationContext(["command": type, "ts": Date().timeIntervalSince1970])
+                print("[ONDA Manager] Application context updated")
+            } catch {
+                print("[ONDA Manager] updateApplicationContext error: \(error.localizedDescription)")
+            }
         }
     }
     
-    func sendPing() {
+    func sendHeartbeat() {
         guard let session = session else {
             return
         }
         
         let message: [String: Any] = [
-            "type": "ping",
+            "type": "heartbeat",
             "ts": Date().timeIntervalSince1970
         ]
         
         if session.isReachable {
-            session.sendMessage(message, replyHandler: nil, errorHandler: nil)
+            session.sendMessage(message, replyHandler: nil) { error in
+                print("[ONDA Manager] heartbeat error: \(error.localizedDescription)")
+            }
+        } else {
+            // Send via transferUserInfo when not immediately reachable
+            // This queues the message and delivers when watch becomes reachable
+            session.transferUserInfo(message)
         }
     }
 
@@ -263,110 +170,73 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
 
     func sessionDidBecomeInactive(_ session: WCSession) {
         print("[ONDA Manager] Session became inactive")
-        isSessionInactive = true
-        addDebugLog("Session inactive - will reactivate on foreground")
     }
 
     func sessionDidDeactivate(_ session: WCSession) {
         print("[ONDA Manager] Session deactivated, reactivating...")
-        isSessionInactive = true
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-            session.activate()
-            self.isSessionInactive = false
-        }
+        session.activate()
     }
 
     func sessionReachabilityDidChange(_ session: WCSession) {
         addDebugLog("Reachable: \(session.isReachable)")
-        DispatchQueue.main.async {
-            self.plugin?.notifyListeners("reachability", data: [
-                "reachable": session.isReachable
-            ])
-        }
     }
 
+    // Получаем данные с часов через sendMessage
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any]) {
+        addDebugLog("Msg: \(message.keys.joined(separator: ","))")
         handleReceivedData(message)
     }
     
+    // Получаем данные с часов через sendMessage с reply
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any],
                  replyHandler: @escaping ([String : Any]) -> Void) {
+        addDebugLog("MsgReply: \(message.keys.joined(separator: ","))")
         handleReceivedData(message)
         replyHandler(["received": true])
     }
     
+    // Получаем данные с часов через transferUserInfo
     func session(_ session: WCSession,
                  didReceiveUserInfo userInfo: [String : Any] = [:]) {
-        addDebugLog("UserInfo received")
+        addDebugLog("UserInfo: \(userInfo.keys.joined(separator: ","))")
         handleReceivedData(userInfo)
     }
     
-    func session(_ session: WCSession,
-                 didReceiveApplicationContext applicationContext: [String : Any]) {
-        addDebugLog("AppContext received")
-        
-        // Handle nested lastUpdate format from watch
-        if let lastUpdate = applicationContext["lastUpdate"] as? [String: Any] {
-            addDebugLog("Context: restored data after pause")
-            handleReceivedData(lastUpdate)
-        } else if let heartRate = applicationContext["lastHeartRate"] as? Double {
-            // Direct format fallback
-            let data: [String: Any] = [
-                "type": "heartRate",
-                "value": heartRate,
-                "ts": applicationContext["timestamp"] as? Double ?? Date().timeIntervalSince1970
-            ]
-            handleReceivedData(data)
-        } else {
-            handleReceivedData(applicationContext)
-        }
-    }
-    
+    // Общий обработчик данных с часов
     private func handleReceivedData(_ data: [String: Any]) {
         guard let type = data["type"] as? String else {
+            addDebugLog("No type in data")
             return
         }
 
         switch type {
         case "heartRate":
             if let value = data["value"] as? Double {
-                // Deduplicate by timestamp (data may arrive via multiple channels)
-                let timestamp = data["ts"] as? Double ?? Date().timeIntervalSince1970
-                if timestamp <= lastProcessedTimestamp {
-                    return // Already processed this data
-                }
-                lastProcessedTimestamp = timestamp
-                
                 receivedCount += 1
-                lastHeartRate = value
-                lastHeartRateTime = Date()
-                
-                if receivedCount % 10 == 1 {
-                    addDebugLog("HR#\(receivedCount): \(Int(value)) bpm")
-                }
-                
+                addDebugLog("HR#\(receivedCount): \(Int(value)) bpm, plugin=\(plugin != nil)")
                 DispatchQueue.main.async {
-                    self.plugin?.notifyListeners("heartRate", data: ["value": value])
+                    if let p = self.plugin {
+                        p.notifyListeners("heartRate", data: ["value": value])
+                    } else {
+                        self.addDebugLog("ERROR: plugin nil!")
+                    }
                 }
             }
 
         case "status":
-            if let status = data["status"] as? String {
-                watchStatus = status
-                addDebugLog("Watch status: \(status)")
+            if let value = data["value"] as? String {
+                addDebugLog("Status: \(value)")
                 DispatchQueue.main.async {
-                    self.plugin?.notifyListeners("watchStatus", data: [
-                        "status": status,
-                        "isActive": data["isActive"] as? Bool ?? false
-                    ])
+                    if let p = self.plugin {
+                        p.notifyListeners("status", data: ["value": value])
+                    }
                 }
             }
 
         default:
-            break
+            addDebugLog("Unknown: \(type)")
         }
     }
 }

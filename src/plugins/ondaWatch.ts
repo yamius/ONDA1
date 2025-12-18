@@ -25,8 +25,6 @@ export interface OndaWatchPlugin {
   startRealtime(): Promise<void>;
   stopRealtime(): Promise<void>;
   sendHeartbeat(): Promise<void>;
-  pauseRealtime(): Promise<void>;
-  resumeRealtime(): Promise<void>;
   addListener(
     eventName: 'heartRate',
     listenerFunc: (event: HeartRateEvent) => void
