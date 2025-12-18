@@ -1,5 +1,6 @@
 import Foundation
 import WatchConnectivity
+import UIKit
 
 @objc public class WatchConnectivityService: NSObject, WCSessionDelegate {
     
