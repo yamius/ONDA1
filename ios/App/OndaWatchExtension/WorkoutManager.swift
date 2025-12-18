@@ -118,27 +118,37 @@ final class WorkoutManager: NSObject, ObservableObject {
 
     private func sendHeartRateToPhone(_ bpm: Double) {
         guard let session = wcSession else {
-            print("[Watch] No WCSession")
+            print("[Watch] ❌ No WCSession")
             return
         }
         
-        print("[Watch] Sending HR \(Int(bpm)), reachable: \(session.isReachable)")
+        // Валидация значения пульса
+        guard bpm > 30 && bpm < 220 else {
+            print("[Watch] ⚠️ Invalid HR value: \(bpm), skipping")
+            return
+        }
+        
+        let roundedBpm = round(bpm)
+        print("[Watch] 💗 Sending HR \(Int(roundedBpm)), reachable: \(session.isReachable)")
         
         let message: [String: Any] = [
             "type": "heartRate",
-            "value": bpm,
+            "value": roundedBpm,
             "timestamp": Date().timeIntervalSince1970
         ]
         
         if session.isReachable {
+            // Прямая отправка когда связь активна
             session.sendMessage(message, replyHandler: { reply in
-                print("[Watch] HR sent, reply: \(reply)")
+                print("[Watch] ✅ HR sent successfully, reply: \(reply)")
             }) { [weak self] error in
-                print("[Watch] sendMessage error: \(error.localizedDescription)")
-                self?.transferHeartRateToPhone(bpm)
+                print("[Watch] ⚠️ sendMessage error: \(error.localizedDescription)")
+                // Fallback на фоновую доставку
+                self?.transferHeartRateToPhone(roundedBpm)
             }
         } else {
-            transferHeartRateToPhone(bpm)
+            // Фоновая доставка когда связь недоступна
+            transferHeartRateToPhone(roundedBpm)
         }
         
         DispatchQueue.main.async {
@@ -155,8 +165,21 @@ final class WorkoutManager: NSObject, ObservableObject {
             "timestamp": Date().timeIntervalSince1970
         ]
         
+        // Фоновая доставка - разбудит приложение на iPhone
         session.transferUserInfo(userInfo)
-        print("[Watch] HR transferred via userInfo")
+        print("[Watch] 📦 HR queued via transferUserInfo")
+        
+        // Также обновляем applicationContext для мгновенного доступа
+        do {
+            try session.updateApplicationContext([
+                "latestHeartRate": bpm,
+                "timestamp": Date().timeIntervalSince1970,
+                "isRunning": isRunning
+            ])
+            print("[Watch] 📋 Application context updated")
+        } catch {
+            print("[Watch] ⚠️ Failed to update context: \(error.localizedDescription)")
+        }
     }
 
     private func sendStatusToPhone(status: String) {
@@ -194,15 +217,51 @@ extension WorkoutManager: HKWorkoutSessionDelegate, HKLiveWorkoutBuilderDelegate
                         didChangeTo toState: HKWorkoutSessionState,
                         from fromState: HKWorkoutSessionState,
                         date: Date) {
-        print("[Watch] Workout state: \(fromState.rawValue) -> \(toState.rawValue)")
+        
+        let stateString: String
+        switch toState {
+        case .notStarted: stateString = "notStarted"
+        case .running: 
+            stateString = "running"
+            DispatchQueue.main.async { self.isRunning = true }
+        case .ended: 
+            stateString = "ended"
+            DispatchQueue.main.async { self.isRunning = false }
+        case .paused: stateString = "paused"
+        case .prepared: stateString = "prepared"
+        @unknown default: stateString = "unknown(\(toState.rawValue))"
+        }
+        
+        print("[Watch] Workout state: \(fromState.rawValue) → \(stateString)")
+        
+        // Автоматический перезапуск если сессия завершилась неожиданно
+        if toState == .ended && isRunning {
+            print("[Watch] ⚠️ Workout ended unexpectedly, will restart in 2 seconds...")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
+                guard let self = self, self.isRunning else { return }
+                print("[Watch] 🔄 Restarting workout after unexpected end")
+                self.startWorkout()
+            }
+        }
     }
 
     func workoutSession(_ workoutSession: HKWorkoutSession,
                         didFailWithError error: Error) {
-        print("[Watch] Workout session failed: \(error)")
+        print("[Watch] ❌ Workout session failed: \(error.localizedDescription)")
+        
+        // Попытка перезапуска при ошибке
+        if isRunning {
+            print("[Watch] 🔄 Attempting to restart workout after error...")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [weak self] in
+                guard let self = self, self.isRunning else { return }
+                self.startWorkout()
+            }
+        }
     }
 
-    func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {}
+    func workoutBuilderDidCollectEvent(_ workoutBuilder: HKLiveWorkoutBuilder) {
+        print("[Watch] Workout builder collected event")
+    }
 
     func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder,
                         didCollectDataOf collectedTypes: Set<HKSampleType>) {
@@ -216,9 +275,15 @@ extension WorkoutManager: HKWorkoutSessionDelegate, HKLiveWorkoutBuilderDelegate
 
         let unit = HKUnit(from: "count/min")
         let bpm = quantity.doubleValue(for: unit)
+        
+        // Валидация значения пульса
+        guard bpm > 30 && bpm < 220 else {
+            print("[Watch] ⚠️ Invalid HR value: \(bpm), skipping")
+            return
+        }
 
         DispatchQueue.main.async {
-            self.heartRate = bpm
+            self.heartRate = round(bpm)
         }
 
         sendHeartRateToPhone(bpm)
@@ -229,53 +294,129 @@ extension WorkoutManager: WCSessionDelegate {
     func session(_ session: WCSession,
                  activationDidCompleteWith activationState: WCSessionActivationState,
                  error: Error?) {
+        
+        let stateString: String
+        switch activationState {
+        case .activated: stateString = "activated"
+        case .inactive: stateString = "inactive"
+        case .notActivated: stateString = "notActivated"
+        @unknown default: stateString = "unknown(\(activationState.rawValue))"
+        }
+        
         DispatchQueue.main.async {
             if let error = error {
-                print("[Watch] WCSession error: \(error)")
+                print("[Watch] ❌ WCSession activation failed: \(error.localizedDescription)")
                 self.connectionStatus = "Err"
             } else {
-                print("[Watch] WCSession activated: \(activationState.rawValue)")
+                print("[Watch] ✅ WCSession \(stateString)")
                 self.connectionStatus = session.isReachable ? "OK" : "..."
             }
+        }
+        
+        // Проверяем applicationContext при активации
+        let context = session.receivedApplicationContext
+        if !context.isEmpty, let command = context["command"] as? String {
+            print("[Watch] 📋 Found pending command in context: \(command)")
+            handleCommand(["type": command])
+        }
+        
+        // Отправляем текущий статус если активна сессия
+        if activationState == .activated && isRunning && heartRate > 0 {
+            print("[Watch] 💗 Sending current HR after activation: \(Int(heartRate)) bpm")
+            sendHeartRateToPhone(heartRate)
         }
     }
 
     func sessionReachabilityDidChange(_ session: WCSession) {
-        print("[Watch] Reachability: \(session.isReachable)")
+        let reachable = session.isReachable
+        print("[Watch] 📡 Reachability changed: \(reachable)")
+        
         DispatchQueue.main.async {
-            self.connectionStatus = session.isReachable ? "OK" : "..."
+            self.connectionStatus = reachable ? "OK" : "..."
+        }
+        
+        // Если связь восстановилась, отправляем текущий HR
+        if reachable && heartRate > 0 {
+            print("[Watch] 💗 Connection restored, sending current HR: \(Int(heartRate)) bpm")
+            sendHeartRateToPhone(heartRate)
         }
     }
 
     // Handle realtime messages (when Watch app is in foreground)
     func session(_ session: WCSession,
                  didReceiveMessage message: [String : Any]) {
-        print("[Watch] Received message: \(message)")
+        print("[Watch] 📨 Received message: \(message.keys.joined(separator: ", "))")
         handleCommand(message)
+    }
+    
+    // Handle realtime messages with reply
+    func session(_ session: WCSession,
+                 didReceiveMessage message: [String : Any],
+                 replyHandler: @escaping ([String : Any]) -> Void) {
+        print("[Watch] 📨 Received message with reply: \(message.keys.joined(separator: ", "))")
+        handleCommand(message)
+        
+        // Отправляем ответ с текущим статусом
+        replyHandler([
+            "received": true,
+            "isRunning": isRunning,
+            "heartRate": heartRate
+        ])
     }
     
     // Handle queued messages (wakes Watch app from background!)
     func session(_ session: WCSession,
                  didReceiveUserInfo userInfo: [String : Any] = [:]) {
-        print("[Watch] Received userInfo (background wake): \(userInfo)")
+        print("[Watch] 📦 Received userInfo (background wake): \(userInfo.keys.joined(separator: ", "))")
         handleCommand(userInfo)
+    }
+    
+    // Handle application context updates
+    func session(_ session: WCSession,
+                 didReceiveApplicationContext applicationContext: [String : Any]) {
+        print("[Watch] 📋 Received applicationContext: \(applicationContext.keys.joined(separator: ", "))")
+        
+        if let command = applicationContext["command"] as? String {
+            handleCommand(["type": command])
+        }
     }
     
     // Unified command handler
     private func handleCommand(_ data: [String: Any]) {
-        guard let type = data["type"] as? String else { return }
+        let type = (data["type"] as? String) ?? (data["command"] as? String)
         
-        print("[Watch] Processing command: \(type)")
+        guard let cmd = type else {
+            print("[Watch] ⚠️ No command found in data")
+            return
+        }
+        
+        print("[Watch] 🎯 Processing command: '\(cmd)'")
 
-        switch type {
+        switch cmd {
         case "start":
-            DispatchQueue.main.async { self.startWorkout() }
+            print("[Watch] 🟢 START command")
+            DispatchQueue.main.async {
+                if !self.isRunning {
+                    self.startWorkout()
+                } else {
+                    print("[Watch] ℹ️ Workout already running")
+                    // Отправляем текущий HR для подтверждения
+                    if self.heartRate > 0 {
+                        self.sendHeartRateToPhone(self.heartRate)
+                    }
+                }
+            }
         case "stop":
+            print("[Watch] 🔴 STOP command")
             DispatchQueue.main.async { self.stopWorkout() }
         case "heartbeat":
-            print("[Watch] Heartbeat received")
+            print("[Watch] 💓 Heartbeat received (keepalive)")
+            // Отвечаем текущим HR если активны
+            if isRunning && heartRate > 0 {
+                sendHeartRateToPhone(heartRate)
+            }
         default:
-            break
+            print("[Watch] ❓ Unknown command: '\(cmd)'")
         }
     }
 }

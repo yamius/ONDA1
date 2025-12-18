@@ -272,10 +272,17 @@ const hr = bleHR.hr
 - Watch app не запущен (в фоне)
 - Watch не на руке / экран выключен
 - Bluetooth отключён
+- iPhone показывает системный диалог (микрофон и т.д.)
 
-**Решение:** 
-- Watch app должен работать в foreground во время практики
-- HKWorkoutSession держит экран активным
+**Решение (РЕАЛИЗОВАНО v2.0):** 
+- ✅ Трёхуровневая система доставки:
+  1. sendMessage (реалтайм, когда isReachable = true)
+  2. transferUserInfo (фоновая доставка)
+  3. Очередь накопления данных
+- ✅ Автоматический мониторинг связи каждые 2 секунды
+- ✅ Application Context для мгновенной синхронизации
+- ✅ Extended Runtime Session держит часы активными
+- ✅ HKWorkoutSession работает автономно
 
 ### Проблема 3: Задержка первого HR
 
@@ -360,3 +367,39 @@ private func handleCommand(_ data: [String: Any]) {
 - [ ] При старте практики: `[Basic Practice] Starting Watch HR streaming`
 - [ ] На Watch: экран workout с пульсом
 - [ ] В приложении: HR обновляется каждые 1-5 секунд
+
+## Обновления
+
+### Версия 2.0 - Автономность и Auto-Recovery (18 дек 2025)
+
+**Добавлено:**
+- ✅ Полная автономность Apple Watch
+- ✅ Автоматический перезапуск HKWorkoutSession при сбоях
+- ✅ Трёхуровневая система доставки данных:
+  - Реалтайм через sendMessage
+  - Фоновая доставка через transferUserInfo
+  - Очередь накопления (до 20 значений)
+- ✅ Автоматический мониторинг связи каждые 2 секунды
+- ✅ Application Context синхронизация
+- ✅ Улучшенная Extended Runtime Session с auto-restart
+- ✅ Валидация данных пульса (30-220 bpm)
+- ✅ Подробное логирование с эмодзи-маркерами
+- ✅ iOS фоновые режимы (processing, remote-notification)
+
+**Исправлено:**
+- ✅ Часы больше не засыпают при системных диалогах на iPhone
+- ✅ Автоматическое восстановление связи WCSession
+- ✅ Нет потери данных при временной потере связи
+- ✅ Защита от дублирования workout сессий
+
+**Документация:**
+- 📖 `/docs/WATCH_AUTONOMY_FIX.md` - Полное описание изменений
+- 🧪 `/docs/WATCH_TESTING_GUIDE.md` - Руководство по тестированию
+- 📋 `/WATCH_AUTONOMY_SUMMARY.md` - Краткое резюме
+
+**Изменённые файлы:**
+- `/ios/App/OndaWatch Watch App/WorkoutManager.swift` (основной)
+- `/ios/App/OndaWatchExtension/WorkoutManager.swift`
+- `/ios/App/watchkitapp Watch App/WorkoutManager.swift`
+- `/ios/App/App/OndaWatchPlugin.swift`
+- `/ios/App/App/Info.plist`
