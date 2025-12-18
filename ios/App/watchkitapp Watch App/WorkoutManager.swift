@@ -474,6 +474,32 @@ class WorkoutManager: NSObject, ObservableObject {
             print("[WorkoutManager] Failed to update app context: \(error)")
         }
     }
+    
+    private func sendContextUpdate() {
+        let session = WCSession.default
+        
+        guard session.activationState == .activated else {
+            print("[WorkoutManager] Cannot send context update: WCSession not activated")
+            return
+        }
+        
+        let context: [String: Any] = [
+            "type": "heartRate",
+            "value": heartRate,
+            "lastHeartRate": heartRate,
+            "timestamp": Date().timeIntervalSince1970,
+            "ts": Date().timeIntervalSince1970,
+            "isWorkoutActive": isActive,
+            "syncAfterResume": true
+        ]
+        
+        do {
+            try session.updateApplicationContext(context)
+            print("[WorkoutManager] Sent context update after resume: HR=\(Int(heartRate))")
+        } catch {
+            print("[WorkoutManager] Failed to send context update: \(error)")
+        }
+    }
 }
 
 // MARK: - HKWorkoutSessionDelegate
@@ -607,10 +633,14 @@ extension WorkoutManager: WCSessionDelegate {
                 self.isInAccumulationMode = false
                 self.resetPingTimer()
                 self.connectionStatus = WCSession.default.isReachable ? "reachable" : "background"
-                // Send current HR immediately to sync
+                // Send current HR immediately to sync via ALL channels
                 if self.isActive && self.heartRate > 0 {
                     self.sendHeartRateToPhone(self.heartRate)
+                    // Also send via updateApplicationContext for guaranteed delivery
+                    self.sendContextUpdate()
                 }
+                // Send status update
+                self.sendStatusToPhone(self.isActive ? "active" : "idle")
             default:
                 break
             }

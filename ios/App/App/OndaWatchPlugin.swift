@@ -5,49 +5,76 @@ import WatchConnectivity
 @objc(OndaWatchPlugin)
 public class OndaWatchPlugin: CAPPlugin {
 
-    private let implementation = OndaWatchManager.shared
+    private let watchService = WatchConnectivityService.shared
+    private let legacyManager = OndaWatchManager.shared
 
     public override func load() {
         super.load()
-        print("[ONDA Plugin] Loading OndaWatchPlugin")
-        implementation.plugin = self
-        implementation.activateSession()
+        print("[ONDA Plugin] Loading OndaWatchPlugin with WatchConnectivityService")
+        
+        // Connect legacy manager to plugin for JS notifications
+        legacyManager.plugin = self
+        
+        // Also set up callbacks on WatchConnectivityService
+        watchService.setHeartRateCallback { [weak self] heartRate in
+            self?.notifyListeners("heartRate", data: ["value": Double(heartRate)])
+        }
+        
+        watchService.setWorkoutStatusCallback { [weak self] isActive in
+            self?.notifyListeners("watchStatus", data: [
+                "status": isActive ? "active" : "stopped",
+                "isActive": isActive
+            ])
+        }
     }
 
     @objc func getStatus(_ call: CAPPluginCall) {
-        let status = implementation.status()
+        let status: [String: Any] = [
+            "supported": WCSession.isSupported(),
+            "paired": watchService.isWatchPaired(),
+            "reachable": watchService.isWatchReachable(),
+            "sessionActivated": watchService.isSessionActivated(),
+            "lastHR": watchService.getLastHeartRate(),
+            "workoutActive": watchService.isWorkoutActive()
+        ]
         print("[ONDA Plugin] getStatus: \(status)")
         call.resolve(status)
     }
 
     @objc func startRealtime(_ call: CAPPluginCall) {
-        print("[ONDA Plugin] startRealtime - Watch controls workout, just ping")
-        implementation.sendPing()
+        print("[ONDA Plugin] startRealtime - sending ping")
+        watchService.sendPing()
         call.resolve()
     }
 
     @objc func stopRealtime(_ call: CAPPluginCall) {
         print("[ONDA Plugin] stopRealtime called")
-        implementation.sendCommand(type: "stop")
-        call.resolve()
+        watchService.stopWorkout { success, error in
+            if let error = error {
+                call.reject(error)
+            } else {
+                call.resolve(["success": success])
+            }
+        }
     }
     
     @objc func sendHeartbeat(_ call: CAPPluginCall) {
-        implementation.sendPing()
+        watchService.sendPing()
         call.resolve()
     }
     
     @objc func pauseRealtime(_ call: CAPPluginCall) {
         print("[ONDA Plugin] pauseRealtime - switching watch to accumulation mode before permission request")
-        implementation.sendCommand(type: "pauseRealtime")
-        call.resolve()
+        watchService.pauseRealtime { success in
+            call.resolve(["success": success])
+        }
     }
     
     @objc func resumeRealtime(_ call: CAPPluginCall) {
         print("[ONDA Plugin] resumeRealtime - restoring watch to normal mode after permission")
-        implementation.sendCommand(type: "resumeRealtime")
-        implementation.sendPing()
-        call.resolve()
+        watchService.resumeRealtime { success in
+            call.resolve(["success": success])
+        }
     }
 }
 
