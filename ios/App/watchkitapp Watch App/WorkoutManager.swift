@@ -3,6 +3,7 @@ import HealthKit
 import WatchConnectivity
 import WatchKit
 import Combine
+import WidgetKit
 
 class WorkoutManager: NSObject, ObservableObject {
     static let shared = WorkoutManager()
@@ -15,6 +16,15 @@ class WorkoutManager: NSObject, ObservableObject {
     @Published var heartRate: Double = 0
     @Published var isActive = false
     @Published var authorizationStatus: HKAuthorizationStatus = .notDetermined
+
+    // Avoid spamming WidgetKit reloads (HR can arrive very frequently).
+    private var lastComplicationReloadAt = Date.distantPast
+    private func reloadComplicationIfNeeded() {
+        let now = Date()
+        guard now.timeIntervalSince(lastComplicationReloadAt) >= 15 else { return }
+        lastComplicationReloadAt = now
+        WidgetCenter.shared.reloadTimelines(ofKind: "OndaComplication")
+    }
     
     override init() {
         super.init()
@@ -323,6 +333,9 @@ extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
                         
                         // Обновляем локальное значение
                         self.heartRate = roundedValue
+
+                        // Ping the complication so watchOS considers us an active provider.
+                        self.reloadComplicationIfNeeded()
                         
                         // Отправляем на телефон
                         self.sendHeartRateToPhone(roundedValue)
