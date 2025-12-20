@@ -247,12 +247,9 @@ struct ContentView: View {
             return
         }
         
-        // Первый запуск - пробуем запустить workout без запроса
-        print("[ContentView] First time, trying to start workout directly...")
-        permissionState = .waitingForHR
-        waitingSeconds = 0
-        workoutManager.startWorkout()
-        startWaitingTimer()
+        // Разрешения НЕТ → показываем кнопку "Разрешить"
+        print("[ContentView] Permission not granted, showing permission UI")
+        permissionState = .needsPermission
     }
     
     private func requestPermission() {

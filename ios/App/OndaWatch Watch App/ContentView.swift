@@ -233,14 +233,9 @@ struct ContentView: View {
             return
         }
         
-        // Первый запуск - нужно спросить разрешение
-        // НО: если iPhone уже запросил через OndaWatchPlugin, разрешение УЖЕ дано
-        // Просто запускаем workout и проверяем приходит ли HR
-        print("[ContentView] First time, trying to start workout directly...")
-        permissionState = .waitingForHR
-        waitingSeconds = 0
-        workoutManager.startWorkout()
-        startWaitingTimer()
+        // Разрешения НЕТ → показываем кнопку "Разрешить"
+        print("[ContentView] Permission not granted, showing permission UI")
+        permissionState = .needsPermission
     }
     
     private func requestPermission() {
