@@ -148,10 +148,10 @@ export class PermissionsService {
       }
 
       // Запрашиваем разрешения на чтение и запись
-      // READ: только HeartRate (пульс для практик)
+      // READ: HeartRate (пульс) + Sleep (сон для Ритма Жизни)
       // WRITE: Workout + MindfulSession (сохранение практик в Здоровье)
       const result = await CapacitorHealth.requestAuthorization({
-        read: ['HKQuantityTypeIdentifierHeartRate'],
+        read: ['HKQuantityTypeIdentifierHeartRate', 'HKCategoryTypeIdentifierSleepAnalysis'],
         write: ['HKWorkoutTypeIdentifier', 'HKCategoryTypeIdentifierMindfulSession']
       });
 
