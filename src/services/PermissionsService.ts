@@ -147,9 +147,10 @@ export class PermissionsService {
         return false;
       }
 
+      // Запрашиваем разрешения на чтение и запись
       const result = await CapacitorHealth.requestAuthorization({
-        read: ['HKQuantityTypeIdentifierHeartRate', 'HKCategoryTypeIdentifierSleepAnalysis', 'HKQuantityTypeIdentifierActiveEnergyBurned']
-        // ❌ НЕ запрашиваем write - мы не записываем медитации в Apple Health
+        read: ['HKQuantityTypeIdentifierHeartRate', 'HKCategoryTypeIdentifierSleepAnalysis', 'HKQuantityTypeIdentifierActiveEnergyBurned'],
+        write: ['HKWorkoutTypeIdentifier', 'HKCategoryTypeIdentifierMindfulSession']
       });
 
       console.log('[Permissions] HealthKit authorization result:', result);
@@ -198,12 +199,13 @@ export class PermissionsService {
     
     await this.delay(500);
 
-    // 2. HealthKit (read only) - потом сложное
+    // 2. HealthKit (read + write) - потом сложное
     console.log('[Permissions] Requesting HealthKit permissions...');
     const healthGranted = await this.requestHealthPermissions();
     status.healthRead = healthGranted;
-    status.healthWrite = false; // Не запрашиваем write, не записываем в Apple Health
+    status.healthWrite = healthGranted; // Разрешение на запись тоже получено
     onProgress?.('healthRead', healthGranted);
+    onProgress?.('healthWrite', healthGranted);
     
     // 3. Уведомления пока не запрашиваем (пакет не установлен)
     status.notifications = false;
@@ -241,8 +243,7 @@ export class PermissionsService {
    */
   static needsPermissionSetup(status: PermissionStatus): boolean {
     // Показываем баннер если НЕТ хотя бы одного из критичных разрешений
-    // healthWrite НЕ критично (не записываем в Apple Health)
-    return !status.microphone || !status.healthRead;
+    return !status.microphone || !status.healthRead || !status.healthWrite;
   }
 
   /**

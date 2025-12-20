@@ -24,6 +24,12 @@ const PERMISSION_INFO = {
     description: 'Чтобы видеть ваш прогресс во время практик мы наблюдаем за вашим пульсом',
     color: 'red',
   },
+  healthWrite: {
+    icon: Heart,
+    title: 'Сохранение в Здоровье',
+    description: 'Ваши практики будут записываться в приложение Здоровье чтобы вы могли отслеживать прогресс',
+    color: 'green',
+  },
 } as const;
 
 export function PermissionSetupModal({
@@ -44,8 +50,8 @@ export function PermissionSetupModal({
         setRequestStatus(prev => ({ ...prev, [permission]: granted }));
       });
       
-      // Если критичные разрешения получены, закрываем модалку и показываем Watch prompt
-      if (status.microphone && status.healthRead) {
+      // Если все критичные разрешения получены, закрываем модалку и показываем Watch prompt
+      if (status.microphone && status.healthRead && status.healthWrite) {
         setTimeout(() => {
           onClose();
           onPermissionsGranted?.();
@@ -122,6 +128,18 @@ export function PermissionSetupModal({
               color={PERMISSION_INFO.healthRead.color}
               granted={requestStatus.healthRead}
               colorClasses={getColorClasses(PERMISSION_INFO.healthRead.color)}
+            />
+          )}
+
+          {/* Health Write - ТРЕТИЙ */}
+          {PERMISSION_INFO.healthWrite && (
+            <PermissionCard
+              icon={PERMISSION_INFO.healthWrite.icon}
+              title={PERMISSION_INFO.healthWrite.title}
+              description={PERMISSION_INFO.healthWrite.description}
+              color={PERMISSION_INFO.healthWrite.color}
+              granted={requestStatus.healthWrite}
+              colorClasses={getColorClasses(PERMISSION_INFO.healthWrite.color)}
             />
           )}
         </div>
