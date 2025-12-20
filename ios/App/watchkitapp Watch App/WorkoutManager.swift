@@ -332,8 +332,6 @@ extension WorkoutManager: WKExtendedRuntimeSessionDelegate {
             return
         case .expired:
             reasonString = "expired"
-        case .userRequest:
-            reasonString = "userRequest"
         @unknown default:
             reasonString = "unknown(\(reason.rawValue))"
         }
@@ -594,9 +592,6 @@ extension WorkoutManager: WCSessionDelegate {
                     
                     // Дополнительная вибрация для привлечения внимания
                     WKInterfaceDevice.current().play(.start)
-                    
-                    // Показываем уведомление
-                    NotificationManager.shared.showOpenAppNotification()
                     
                     // Запускаем workout даже в фоне - HKWorkoutSession работает в фоне
                     print("[WorkoutManager] 🏃 Starting workout in background")
