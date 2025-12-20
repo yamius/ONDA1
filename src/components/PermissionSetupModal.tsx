@@ -29,12 +29,6 @@ const PERMISSION_INFO = {
     description: 'Для записи ваших медитаций в Apple Health',
     color: 'green',
   },
-  notifications: {
-    icon: Moon,
-    title: 'Сон',
-    description: 'Чтобы задействовать Ритм Жизни мы желаем чтобы ваш сон был регулярным',
-    color: 'purple',
-  },
 } as const;
 
 export function PermissionSetupModal({
@@ -141,18 +135,6 @@ export function PermissionSetupModal({
               color={PERMISSION_INFO.healthWrite.color}
               granted={requestStatus.healthWrite}
               colorClasses={getColorClasses(PERMISSION_INFO.healthWrite.color)}
-            />
-          )}
-
-          {/* Notifications (Sleep) */}
-          {PERMISSION_INFO.notifications && (
-            <PermissionCard
-              icon={PERMISSION_INFO.notifications.icon}
-              title={PERMISSION_INFO.notifications.title}
-              description={PERMISSION_INFO.notifications.description}
-              color={PERMISSION_INFO.notifications.color}
-              granted={requestStatus.notifications}
-              colorClasses={getColorClasses(PERMISSION_INFO.notifications.color)}
             />
           )}
         </div>

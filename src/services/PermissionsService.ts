@@ -38,15 +38,19 @@ export class PermissionsService {
 
       // Проверяем через Permissions API если доступен
       if (navigator.permissions && navigator.permissions.query) {
-        const result = await navigator.permissions.query({ name: 'microphone' as PermissionName });
-        return result.state === 'granted';
+        try {
+          const result = await navigator.permissions.query({ name: 'microphone' as PermissionName });
+          return result.state === 'granted';
+        } catch (e) {
+          // Permissions API может не поддерживаться на iOS
+          console.log('[Permissions] Permissions API not available, assuming not granted');
+          return false;
+        }
       }
 
-      // Fallback: пробуем получить доступ
-      // Если уже есть разрешение, это быстро вернётся без диалога
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      stream.getTracks().forEach(track => track.stop());
-      return true;
+      // На iOS Permissions API не работает, поэтому не можем проверить
+      // Возвращаем false (пусть пользователь нажмёт кнопку)
+      return false;
     } catch (error) {
       console.error('[Permissions] Error checking microphone permission:', error);
       return false;
@@ -57,20 +61,35 @@ export class PermissionsService {
    * Проверяет разрешение на чтение HealthKit
    */
   static async checkHealthReadPermission(): Promise<boolean> {
-    if (!Capacitor.isNativePlatform()) {
+    if (!Capacitor.isNativePlatform() || Capacitor.getPlatform() !== 'ios') {
       return false;
     }
 
     try {
-      // Проверяем через OndaWatch plugin
-      const OndaWatch = (window as any).OndaWatch;
-      if (!OndaWatch) {
+      // Используем capacitor-health plugin
+      const CapacitorHealth = (window as any).CapacitorHealth;
+      if (!CapacitorHealth) {
+        console.log('[Permissions] CapacitorHealth plugin not available');
         return false;
       }
 
-      const status = await OndaWatch.getStatus();
-      // Если Watch app установлен и paired, считаем что разрешение есть
-      return status.paired && status.watchAppInstalled;
+      // Проверяем доступность HealthKit
+      const available = await CapacitorHealth.isAvailable();
+      if (!available.value) {
+        return false;
+      }
+
+      // Пытаемся получить последний HR для проверки разрешения
+      // Если разрешение есть - вернёт данные, если нет - ошибка
+      try {
+        await CapacitorHealth.queryHKitSampleType({
+          sampleName: 'HKQuantityTypeIdentifierHeartRate',
+          limit: 1
+        });
+        return true; // Разрешение есть
+      } catch (e) {
+        return false; // Разрешения нет
+      }
     } catch (error) {
       console.error('[Permissions] Error checking health read permission:', error);
       return false;
@@ -130,28 +149,25 @@ export class PermissionsService {
    * Запрашивает разрешения HealthKit (read + write)
    */
   static async requestHealthPermissions(): Promise<boolean> {
-    if (!Capacitor.isNativePlatform()) {
+    if (!Capacitor.isNativePlatform() || Capacitor.getPlatform() !== 'ios') {
       return false;
     }
 
     try {
-      const OndaWatch = (window as any).OndaWatch;
-      if (!OndaWatch) {
-        console.error('[Permissions] OndaWatch plugin not available');
+      const CapacitorHealth = (window as any).CapacitorHealth;
+      if (!CapacitorHealth) {
+        console.error('[Permissions] CapacitorHealth plugin not available');
         return false;
       }
 
-      // Запрашиваем разрешения через активацию session
-      // WorkoutManager на часах запросит разрешения при первом запуске
-      await OndaWatch.startRealtime();
-      
-      // Даём время на системный диалог
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Запрашиваем разрешения на чтение и запись
+      const result = await CapacitorHealth.requestAuthorization({
+        read: ['HKQuantityTypeIdentifierHeartRate', 'HKCategoryTypeIdentifierSleepAnalysis', 'HKQuantityTypeIdentifierActiveEnergyBurned'],
+        write: ['HKWorkoutTypeIdentifier', 'HKCategoryTypeIdentifierMindfulSession']
+      });
 
-      // Останавливаем (чтобы не начинать workout)
-      await OndaWatch.stopRealtime();
-
-      return true;
+      console.log('[Permissions] HealthKit authorization result:', result);
+      return true; // Apple всегда возвращает success даже если пользователь отказал
     } catch (error) {
       console.error('[Permissions] Error requesting health permissions:', error);
       return false;
@@ -197,19 +213,15 @@ export class PermissionsService {
     onProgress?.('healthRead', healthGranted);
     onProgress?.('healthWrite', healthGranted);
     
-    await this.delay(500);
+    await this.delay(1000);
 
     // 2. Микрофон
     console.log('[Permissions] Requesting microphone permission...');
     status.microphone = await this.requestMicrophonePermission();
     onProgress?.('microphone', status.microphone);
     
-    await this.delay(500);
-
-    // 3. Уведомления
-    console.log('[Permissions] Requesting notification permission...');
-    status.notifications = await this.requestNotificationPermission();
-    onProgress?.('notifications', status.notifications);
+    // 3. Уведомления пока не запрашиваем (пакет не установлен)
+    status.notifications = false;
 
     console.log('[Permissions] All permissions requested:', status);
     return status;
