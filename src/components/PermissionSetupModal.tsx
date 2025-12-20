@@ -8,6 +8,7 @@ interface PermissionSetupModalProps {
   onRequestAll: (onProgress: (permission: keyof PermissionStatus, granted: boolean) => void) => Promise<PermissionStatus>;
   currentStatus: PermissionStatus;
   isRequesting: boolean;
+  onPermissionsGranted?: () => void;
 }
 
 const PERMISSION_INFO = {
@@ -37,6 +38,7 @@ export function PermissionSetupModal({
   onRequestAll,
   currentStatus,
   isRequesting,
+  onPermissionsGranted,
 }: PermissionSetupModalProps) {
   const [requestStatus, setRequestStatus] = useState<PermissionStatus>(currentStatus);
 
@@ -48,9 +50,12 @@ export function PermissionSetupModal({
         setRequestStatus(prev => ({ ...prev, [permission]: granted }));
       });
       
-      // Если все разрешения получены, закрываем модалку
+      // Если все разрешения получены, закрываем модалку и показываем Watch prompt
       if (status.microphone && status.healthRead && status.healthWrite) {
-        setTimeout(onClose, 500);
+        setTimeout(() => {
+          onClose();
+          onPermissionsGranted?.();
+        }, 500);
       }
     } catch (error) {
       console.error('[PermissionSetupModal] Error requesting permissions:', error);

@@ -14,6 +14,7 @@ import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
 import { PermissionWarningBanner } from './components/PermissionWarningBanner';
 import { PermissionSetupModal } from './components/PermissionSetupModal';
+import { WatchConnectionPrompt } from './components/WatchConnectionPrompt';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
 import { useHealthConnect } from './hooks/useHealthConnect';
@@ -42,23 +43,6 @@ const OndaLevel1 = () => {
   const platform = Capacitor.getPlatform();
   
   useKeepAwake(true);
-  
-  // Auto-manage Watch workout: start when app opens, stop when app closes/backgrounds
-  useEffect(() => {
-    console.log('[OndaLevel1] Watch auto-manage check:', {
-      platform,
-      watchStatus: watchHeartRate.watchStatus,
-      supported: watchHeartRate.watchStatus?.supported
-    });
-    
-    if (platform === 'ios' && watchHeartRate.watchStatus?.supported) {
-      console.log('[OndaLevel1] Enabling autoManaged for Watch');
-      watchHeartRate.setAutoManaged(true);
-    }
-    return () => {
-      watchHeartRate.setAutoManaged(false);
-    };
-  }, [platform, watchHeartRate.watchStatus?.supported]);
   
   useEffect(() => {
     if (platform === 'ios' && healthKitData.isAvailable && healthKitData.isAuthorized) {
@@ -124,6 +108,7 @@ const OndaLevel1 = () => {
   const [showConnectionModal, setShowConnectionModal] = useState(false);
   const [showLanguageModal, setShowLanguageModal] = useState(false);
   const [showPermissionModal, setShowPermissionModal] = useState(false);
+  const [showWatchPrompt, setShowWatchPrompt] = useState(false);
   const [showQntShop, setShowQntShop] = useState(false);
   const [isLoadingUser, setIsLoadingUser] = useState(true);
   const [showInfoModal, setShowInfoModal] = useState(false);
@@ -2727,6 +2712,12 @@ const OndaLevel1 = () => {
           </div>
         )}
 
+        {/* Watch Connection Prompt */}
+        <WatchConnectionPrompt
+          visible={showWatchPrompt}
+          onConnected={() => setShowWatchPrompt(false)}
+        />
+
         {/* Биометрика */}
         <div className="mb-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
@@ -3864,6 +3855,7 @@ const OndaLevel1 = () => {
           onRequestAll={permissions.requestAllPermissions}
           currentStatus={permissions.permissionStatus}
           isRequesting={permissions.isRequesting}
+          onPermissionsGranted={() => setShowWatchPrompt(true)}
         />
       )}
 

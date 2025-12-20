@@ -551,6 +551,28 @@ extension WorkoutManager: WCSessionDelegate {
         
         DispatchQueue.main.async {
             switch cmd {
+            case "REQUEST_OPEN":
+                print("[WorkoutManager] 📳 REQUEST_OPEN command received")
+                
+                // Вибрация для привлечения внимания (3 раза с интервалом)
+                WKInterfaceDevice.current().play(.notification)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    WKInterfaceDevice.current().play(.notification)
+                }
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                    WKInterfaceDevice.current().play(.notification)
+                }
+                
+                // Если app активно → запускаем workout сразу
+                let appState = WKApplication.shared().applicationState
+                if appState == .active {
+                    print("[WorkoutManager] 🏃 App active → starting workout immediately")
+                    self.startWorkout()
+                } else {
+                    print("[WorkoutManager] ℹ️ App not active → vibration sent, waiting for user to open")
+                    // Пользователь должен открыть app, тогда workout запустится через startWorkout()
+                }
+                
             case "start":
                 print("[WorkoutManager] 🟢 START command received")
                 

@@ -218,7 +218,31 @@ export class PermissionsService {
     status.notifications = false;
 
     console.log('[Permissions] All permissions requested:', status);
+    
+    // 🎯 После получения разрешений → запускаем HR мониторинг
+    if ((status.healthRead || status.healthWrite) && Capacitor.isNativePlatform() && Capacitor.getPlatform() === 'ios') {
+      console.log('[Permissions] ✅ Разрешения получены → запускаем HR мониторинг');
+      await this.startHeartRateMonitoring();
+    }
+    
     return status;
+  }
+
+  /**
+   * Запускает HR мониторинг после получения разрешений
+   */
+  private static async startHeartRateMonitoring(): Promise<void> {
+    try {
+      // Отправляем команду на Watch для запуска через WCSession
+      const OndaWatch = (window as any).OndaWatch;
+      if (OndaWatch) {
+        // Оповещаем Watch что нужно открыться и начать мониторинг
+        await OndaWatch.requestWatchAppOpen();
+        console.log('[Permissions] Watch оповещены о начале мониторинга');
+      }
+    } catch (error) {
+      console.error('[Permissions] Error starting HR monitoring:', error);
+    }
   }
 
   /**

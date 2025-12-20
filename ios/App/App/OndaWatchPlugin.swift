@@ -41,6 +41,12 @@ public class OndaWatchPlugin: CAPPlugin {
         call.resolve()
     }
     
+    @objc func requestWatchAppOpen(_ call: CAPPluginCall) {
+        print("[ONDA Plugin] requestWatchAppOpen called")
+        implementation.requestWatchAppOpen()
+        call.resolve()
+    }
+    
     @objc func getDebugLog(_ call: CAPPluginCall) {
         let log = implementation.debugLog
         let count = implementation.receivedCount
@@ -171,6 +177,37 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
             // Send via transferUserInfo when not immediately reachable
             // This queues the message and delivers when watch becomes reachable
             session.transferUserInfo(message)
+        }
+    }
+    
+    /// Оповещает Watch что нужно открыться и начать мониторинг HR
+    func requestWatchAppOpen() {
+        guard let session = session else {
+            addDebugLog("❌ No session for requestWatchAppOpen")
+            return
+        }
+        
+        addDebugLog("📳 Requesting Watch app to open...")
+        
+        let message: [String: Any] = [
+            "type": "REQUEST_OPEN",
+            "reason": "permissions_granted",
+            "ts": Date().timeIntervalSince1970
+        ]
+        
+        // Отправляем вибрацию на часы через WCSession
+        // Часы должны обработать это и показать вибрацию + начать workout
+        if session.isReachable {
+            // Watch app активно → прямая отправка
+            session.sendMessage(message, replyHandler: { reply in
+                self.addDebugLog("✅ Watch ответили: \(reply)")
+            }) { error in
+                self.addDebugLog("❌ requestWatchAppOpen error: \(error.localizedDescription)")
+            }
+        } else {
+            // Watch app неактивно → transferUserInfo (разбудит в фоне)
+            session.transferUserInfo(message)
+            addDebugLog("📦 Sent via transferUserInfo (watch not reachable)")
         }
     }
 
