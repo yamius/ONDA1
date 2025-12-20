@@ -1,6 +1,7 @@
 import Foundation
 import Capacitor
 import WatchConnectivity
+import HealthKit
 
 @objc(OndaWatchPlugin)
 public class OndaWatchPlugin: CAPPlugin {
@@ -13,6 +14,8 @@ public class OndaWatchPlugin: CAPPlugin {
         implementation.plugin = self
         // Session уже активирована в AppDelegate, но на всякий случай
         implementation.activateSession()
+        // Запускаем HealthKit observer для прямого чтения HR с часов
+        implementation.startHealthKitObserver()
     }
 
     @objc func getStatus(_ call: CAPPluginCall) {
@@ -37,6 +40,15 @@ public class OndaWatchPlugin: CAPPlugin {
         implementation.sendHeartbeat()
         call.resolve()
     }
+    
+    @objc func getDebugLog(_ call: CAPPluginCall) {
+        let log = implementation.debugLog
+        let count = implementation.receivedCount
+        call.resolve([
+            "log": log,
+            "receivedCount": count
+        ])
+    }
 }
 
 // MARK: - Менеджер WCSession (iOS ↔ watchOS)
@@ -51,6 +63,12 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     // Debug log для отображения в UI
     var debugLog: [String] = []
     var receivedCount: Int = 0
+    
+    // HealthKit для прямого чтения HR с часов
+    private let healthStore = HKHealthStore()
+    private var heartRateQuery: HKObserverQuery?
+    private var anchoredQuery: HKAnchoredObjectQuery?
+    private var isHealthKitObserverActive = false
 
     private var session: WCSession? {
         WCSession.isSupported() ? WCSession.default : nil
@@ -275,6 +293,138 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
 
         default:
             addDebugLog("❓ Unknown type: \(type)")
+        }
+    }
+    
+    // MARK: - HealthKit Direct Observer
+    
+    /// Запускает наблюдение за HR в HealthKit (прямое чтение с Apple Watch)
+    func startHealthKitObserver() {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            addDebugLog("⚠️ HealthKit not available")
+            return
+        }
+        
+        guard let hrType = HKQuantityType.quantityType(forIdentifier: .heartRate) else {
+            addDebugLog("⚠️ HR type not available")
+            return
+        }
+        
+        // Проверяем/запрашиваем разрешение
+        let status = healthStore.authorizationStatus(for: hrType)
+        if status == .notDetermined {
+            addDebugLog("📋 Requesting HealthKit authorization...")
+            healthStore.requestAuthorization(toShare: [], read: [hrType]) { [weak self] success, error in
+                if success {
+                    self?.addDebugLog("✅ HealthKit authorized")
+                    self?.setupHealthKitObserver()
+                } else {
+                    self?.addDebugLog("❌ HealthKit denied: \(error?.localizedDescription ?? "unknown")")
+                }
+            }
+        } else if status == .sharingAuthorized {
+            addDebugLog("✅ HealthKit already authorized")
+            setupHealthKitObserver()
+        } else {
+            addDebugLog("⚠️ HealthKit status: \(status.rawValue)")
+        }
+    }
+    
+    private func setupHealthKitObserver() {
+        guard !isHealthKitObserverActive else {
+            addDebugLog("ℹ️ HealthKit observer already active")
+            return
+        }
+        
+        guard let hrType = HKQuantityType.quantityType(forIdentifier: .heartRate) else { return }
+        
+        // HKObserverQuery - уведомляет о новых данных в HealthKit
+        heartRateQuery = HKObserverQuery(sampleType: hrType, predicate: nil) { [weak self] query, completionHandler, error in
+            guard let self = self else {
+                completionHandler()
+                return
+            }
+            
+            if let error = error {
+                self.addDebugLog("❌ Observer error: \(error.localizedDescription)")
+                completionHandler()
+                return
+            }
+            
+            self.addDebugLog("🔔 HealthKit HR updated, fetching...")
+            self.fetchLatestHeartRate()
+            completionHandler()
+        }
+        
+        if let query = heartRateQuery {
+            healthStore.execute(query)
+            isHealthKitObserverActive = true
+            addDebugLog("👂 HealthKit observer started")
+        }
+    }
+    
+    /// Получает последний HR из HealthKit
+    private func fetchLatestHeartRate() {
+        guard let hrType = HKQuantityType.quantityType(forIdentifier: .heartRate) else { return }
+        
+        // Получаем только данные за последние 10 секунд
+        let now = Date()
+        let tenSecondsAgo = now.addingTimeInterval(-10)
+        let predicate = HKQuery.predicateForSamples(withStart: tenSecondsAgo, end: now, options: .strictStartDate)
+        
+        // Сортируем по времени (последний сверху)
+        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: false)
+        
+        let query = HKSampleQuery(
+            sampleType: hrType,
+            predicate: predicate,
+            limit: 1, // Только самый последний
+            sortDescriptors: [sortDescriptor]
+        ) { [weak self] query, samples, error in
+            guard let self = self else { return }
+            
+            if let error = error {
+                self.addDebugLog("❌ Fetch error: \(error.localizedDescription)")
+                return
+            }
+            
+            guard let sample = samples?.first as? HKQuantitySample else {
+                self.addDebugLog("⚠️ No recent HR samples")
+                return
+            }
+            
+            let hrUnit = HKUnit.count().unitDivided(by: .minute())
+            let hrValue = sample.quantity.doubleValue(for: hrUnit)
+            let timeAgo = now.timeIntervalSince(sample.endDate)
+            
+            // Проверяем что данные свежие (< 5 секунд)
+            if timeAgo < 5 {
+                self.receivedCount += 1
+                self.addDebugLog("💗 HR#\(self.receivedCount) from HealthKit: \(Int(hrValue)) bpm (\(String(format: "%.1f", timeAgo))s ago)")
+                
+                // Отправляем в JavaScript
+                DispatchQueue.main.async {
+                    if let p = self.plugin {
+                        let eventData: [String: Any] = [
+                            "value": hrValue,
+                            "source": "healthkit",
+                            "timestamp": ISO8601DateFormatter().string(from: sample.endDate)
+                        ]
+                        p.notifyListeners("heartRate", data: eventData)
+                    }
+                }
+            } else {
+                self.addDebugLog("⚠️ HR too old (\(String(format: "%.1f", timeAgo))s)")
+            }
+        }
+        
+        healthStore.execute(query)
+    }
+    
+    deinit {
+        // Останавливаем observer при удалении
+        if let query = heartRateQuery {
+            healthStore.stop(query)
         }
     }
 }

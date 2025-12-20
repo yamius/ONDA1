@@ -435,10 +435,15 @@ extension WorkoutManager: HKLiveWorkoutBuilderDelegate {
                         // Обновляем локальное значение
                         self.heartRate = roundedValue
                         
-                        // Отправляем на телефон (с автоматическим fallback на фоновую доставку)
+                        // 🆕 HealthKit Direct: Сохраняем HR напрямую в HealthKit
+                        // iPhone прочитает это автоматически через HKObserverQuery
+                        self.saveHeartRateToHealthKit(roundedValue)
+                        
+                        // Также отправляем через WatchConnectivity (для обратной совместимости)
+                        // но не полагаемся на это как на основной канал
                         self.sendHeartRateToPhone(roundedValue)
                         
-                        print("[WorkoutManager] 💗 HR: \(Int(roundedValue)) bpm (reachable: \(WCSession.default.isReachable))")
+                        print("[WorkoutManager] 💗 HR: \(Int(roundedValue)) bpm (saved to HealthKit + WC reachable: \(WCSession.default.isReachable))")
                     }
                 }
             }
@@ -621,6 +626,39 @@ extension WorkoutManager: WCSessionDelegate {
                 
             default:
                 print("[WorkoutManager] ❓ Unknown command: '\(cmd)'")
+            }
+        }
+    }
+    
+    // MARK: - HealthKit Direct Save
+    
+    /// Сохраняет HR напрямую в HealthKit для чтения iPhone
+    private func saveHeartRateToHealthKit(_ heartRate: Double) {
+        guard let hrType = HKQuantityType.quantityType(forIdentifier: .heartRate) else {
+            print("[WorkoutManager] ❌ HR type not available")
+            return
+        }
+        
+        let hrQuantity = HKQuantity(unit: HKUnit.count().unitDivided(by: .minute()), doubleValue: heartRate)
+        let now = Date()
+        
+        let hrSample = HKQuantitySample(
+            type: hrType,
+            quantity: hrQuantity,
+            start: now,
+            end: now,
+            metadata: [
+                HKMetadataKeyHeartRateMotionContext: HKHeartRateMotionContext.sedentary.rawValue,
+                "source": "ONDA Watch",
+                "session": "meditation"
+            ]
+        )
+        
+        healthStore.save(hrSample) { success, error in
+            if success {
+                print("[WorkoutManager] ✅ HR saved to HealthKit: \(Int(heartRate)) bpm")
+            } else {
+                print("[WorkoutManager] ❌ Failed to save HR to HealthKit: \(error?.localizedDescription ?? "unknown")")
             }
         }
     }
