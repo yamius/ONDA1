@@ -147,10 +147,9 @@ export class PermissionsService {
         return false;
       }
 
-      // Запрашиваем разрешения на чтение и запись
       const result = await CapacitorHealth.requestAuthorization({
-        read: ['HKQuantityTypeIdentifierHeartRate', 'HKCategoryTypeIdentifierSleepAnalysis', 'HKQuantityTypeIdentifierActiveEnergyBurned'],
-        write: ['HKWorkoutTypeIdentifier', 'HKCategoryTypeIdentifierMindfulSession']
+        read: ['HKQuantityTypeIdentifierHeartRate', 'HKCategoryTypeIdentifierSleepAnalysis', 'HKQuantityTypeIdentifierActiveEnergyBurned']
+        // ❌ НЕ запрашиваем write - мы не записываем медитации в Apple Health
       });
 
       console.log('[Permissions] HealthKit authorization result:', result);
@@ -192,20 +191,19 @@ export class PermissionsService {
       notifications: false,
     };
 
-    // 1. HealthKit (read + write) - самое важное
-    console.log('[Permissions] Requesting HealthKit permissions...');
-    const healthGranted = await this.requestHealthPermissions();
-    status.healthRead = healthGranted;
-    status.healthWrite = healthGranted;
-    onProgress?.('healthRead', healthGranted);
-    onProgress?.('healthWrite', healthGranted);
-    
-    await this.delay(1000);
-
-    // 2. Микрофон
+    // 1. Микрофон (проще!) - сначала простое разрешение
     console.log('[Permissions] Requesting microphone permission...');
     status.microphone = await this.requestMicrophonePermission();
     onProgress?.('microphone', status.microphone);
+    
+    await this.delay(500);
+
+    // 2. HealthKit (read only) - потом сложное
+    console.log('[Permissions] Requesting HealthKit permissions...');
+    const healthGranted = await this.requestHealthPermissions();
+    status.healthRead = healthGranted;
+    status.healthWrite = false; // Не запрашиваем write, не записываем в Apple Health
+    onProgress?.('healthRead', healthGranted);
     
     // 3. Уведомления пока не запрашиваем (пакет не установлен)
     status.notifications = false;
@@ -243,7 +241,8 @@ export class PermissionsService {
    */
   static needsPermissionSetup(status: PermissionStatus): boolean {
     // Показываем баннер если НЕТ хотя бы одного из критичных разрешений
-    return !status.microphone || !status.healthRead || !status.healthWrite;
+    // healthWrite НЕ критично (не записываем в Apple Health)
+    return !status.microphone || !status.healthRead;
   }
 
   /**

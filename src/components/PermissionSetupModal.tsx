@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Heart, Mic, Moon, Save, Check, AlertCircle } from 'lucide-react';
+import { X, Heart, Mic, Check } from 'lucide-react';
 import { PermissionStatus } from '../services/PermissionsService';
 
 interface PermissionSetupModalProps {
@@ -12,23 +12,17 @@ interface PermissionSetupModalProps {
 }
 
 const PERMISSION_INFO = {
-  healthRead: {
-    icon: Heart,
-    title: 'Пульс',
-    description: 'Чтобы видеть ваш прогресс во время практик мы наблюдаем за вашим пульсом',
-    color: 'red',
-  },
   microphone: {
     icon: Mic,
     title: 'Микрофон',
     description: 'Когда вы желаете пройти Эмоциональную сверку мы будем записывать ваш голос',
     color: 'blue',
   },
-  healthWrite: {
-    icon: Save,
-    title: 'Сохранение тренировок',
-    description: 'Для записи ваших медитаций в Apple Health',
-    color: 'green',
+  healthRead: {
+    icon: Heart,
+    title: 'Пульс',
+    description: 'Чтобы видеть ваш прогресс во время практик мы наблюдаем за вашим пульсом',
+    color: 'red',
   },
 } as const;
 
@@ -50,8 +44,8 @@ export function PermissionSetupModal({
         setRequestStatus(prev => ({ ...prev, [permission]: granted }));
       });
       
-      // Если все разрешения получены, закрываем модалку и показываем Watch prompt
-      if (status.microphone && status.healthRead && status.healthWrite) {
+      // Если критичные разрешения получены, закрываем модалку и показываем Watch prompt
+      if (status.microphone && status.healthRead) {
         setTimeout(() => {
           onClose();
           onPermissionsGranted?.();
@@ -107,19 +101,7 @@ export function PermissionSetupModal({
 
         {/* Content */}
         <div className="p-6 space-y-3">
-          {/* Health Read */}
-          {PERMISSION_INFO.healthRead && (
-            <PermissionCard
-              icon={PERMISSION_INFO.healthRead.icon}
-              title={PERMISSION_INFO.healthRead.title}
-              description={PERMISSION_INFO.healthRead.description}
-              color={PERMISSION_INFO.healthRead.color}
-              granted={requestStatus.healthRead}
-              colorClasses={getColorClasses(PERMISSION_INFO.healthRead.color)}
-            />
-          )}
-
-          {/* Microphone */}
+          {/* Microphone - ПЕРВЫЙ (проще!) */}
           {PERMISSION_INFO.microphone && (
             <PermissionCard
               icon={PERMISSION_INFO.microphone.icon}
@@ -131,38 +113,36 @@ export function PermissionSetupModal({
             />
           )}
 
-          {/* Health Write */}
-          {PERMISSION_INFO.healthWrite && (
+          {/* Health Read - ВТОРОЙ */}
+          {PERMISSION_INFO.healthRead && (
             <PermissionCard
-              icon={PERMISSION_INFO.healthWrite.icon}
-              title={PERMISSION_INFO.healthWrite.title}
-              description={PERMISSION_INFO.healthWrite.description}
-              color={PERMISSION_INFO.healthWrite.color}
-              granted={requestStatus.healthWrite}
-              colorClasses={getColorClasses(PERMISSION_INFO.healthWrite.color)}
+              icon={PERMISSION_INFO.healthRead.icon}
+              title={PERMISSION_INFO.healthRead.title}
+              description={PERMISSION_INFO.healthRead.description}
+              color={PERMISSION_INFO.healthRead.color}
+              granted={requestStatus.healthRead}
+              colorClasses={getColorClasses(PERMISSION_INFO.healthRead.color)}
             />
           )}
         </div>
 
         {/* Footer */}
-        <div className="sticky bottom-0 bg-gradient-to-t from-gray-900 to-gray-900/95 backdrop-blur-sm border-t border-white/10 p-6 pt-4">
+        <div className="sticky bottom-0 bg-gradient-to-t from-gray-900 to-gray-900/95 backdrop-blur-sm border-t border-white/10 p-6 pt-4 space-y-3">
+          {/* Кнопка "Предоставить все разрешения" */}
           <button
             onClick={handleRequestAll}
             disabled={isRequesting}
-            className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 disabled:from-gray-600 disabled:to-gray-700 text-white font-medium py-4 rounded-2xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-white/10 hover:bg-white/20 disabled:bg-white/5 border border-white/20 hover:border-white/30 text-white font-medium py-4 rounded-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isRequesting ? 'Запрашиваем разрешения...' : 'Предоставить все разрешения'}
           </button>
 
-          <p className="text-center text-xs text-gray-500 mt-4">
-            Можно пропустить и настроить позже в меню Подключения
-          </p>
-
+          {/* Кнопка "Настроить позже" - такая же по размеру */}
           <button
             onClick={onClose}
-            className="w-full text-gray-400 hover:text-white text-sm py-2 mt-2 transition-colors"
+            className="w-full bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/30 text-white font-medium py-4 rounded-xl transition-all"
           >
-            Пропустить
+            Настроить позже
           </button>
         </div>
       </div>
