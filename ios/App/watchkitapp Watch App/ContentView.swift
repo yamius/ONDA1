@@ -235,10 +235,24 @@ struct ContentView: View {
         let wasGranted = UserDefaults.standard.bool(forKey: "healthkit_permission_granted")
         if wasGranted {
             permissionState = .granted
+            print("[ContentView] Permission already granted (saved state)")
             return
         }
         
-        permissionState = .needsPermission
+        // Проверяем фактический статус HealthKit
+        if workoutManager.isAuthorized {
+            permissionState = .granted
+            UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
+            print("[ContentView] Permission already granted (HealthKit status)")
+            return
+        }
+        
+        // Первый запуск - пробуем запустить workout без запроса
+        print("[ContentView] First time, trying to start workout directly...")
+        permissionState = .waitingForHR
+        waitingSeconds = 0
+        workoutManager.startWorkout()
+        startWaitingTimer()
     }
     
     private func requestPermission() {

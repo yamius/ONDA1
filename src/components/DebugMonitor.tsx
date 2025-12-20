@@ -76,18 +76,47 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
     };
   }, [buildNumber, commitHash]);
 
-  const downloadLogs = () => {
+  const downloadLogs = async () => {
     const logText = logs.map(log => 
       `[${log.timestamp}] [${log.level.toUpperCase()}] [${log.category}] ${log.message}`
     ).join('\n');
 
     const blob = new Blob([logText], { type: 'text/plain' });
+    const fileName = `onda-debug-${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.txt`;
+
+    // Проверяем доступность Share API (работает на iOS)
+    if (navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], fileName)] })) {
+      try {
+        const file = new File([blob], fileName, { type: 'text/plain' });
+        await navigator.share({
+          files: [file],
+          title: 'ONDA Debug Logs',
+          text: `Debug logs (${logs.length} entries)`
+        });
+        console.log('[DebugMonitor] ✅ Logs shared successfully');
+      } catch (error: any) {
+        if (error.name !== 'AbortError') {
+          console.error('[DebugMonitor] Share error:', error);
+          // Fallback to download
+          downloadLogsFallback(blob, fileName);
+        }
+      }
+    } else {
+      // Fallback для браузеров без Share API
+      downloadLogsFallback(blob, fileName);
+    }
+  };
+
+  const downloadLogsFallback = (blob: Blob, fileName: string) => {
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `onda-debug-${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.txt`;
+    a.download = fileName;
+    document.body.appendChild(a);
     a.click();
+    document.body.removeChild(a);
     URL.revokeObjectURL(url);
+    console.log('[DebugMonitor] ✅ Logs downloaded');
   };
 
   const clearLogs = () => {
