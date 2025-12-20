@@ -51,35 +51,60 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   const startRecording = async () => {
     try {
       console.log('[EmotionalCheck] Requesting microphone access...');
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      console.log('[EmotionalCheck] Microphone access granted, starting recording');
       
-      const mediaRecorder = new MediaRecorder(stream);
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        throw new Error('getUserMedia not supported');
+      }
+      
+      const stream = await navigator.mediaDevices.getUserMedia({ 
+        audio: {
+          echoCancellation: true,
+          noiseSuppression: true,
+          sampleRate: 44100
+        }
+      });
+      
+      console.log('[EmotionalCheck] ✅ Microphone access granted');
+      console.log('[EmotionalCheck] Audio tracks:', stream.getAudioTracks().length);
+      
+      const mediaRecorder = new MediaRecorder(stream, {
+        mimeType: 'audio/webm'
+      });
       mediaRecorderRef.current = mediaRecorder;
       audioChunksRef.current = [];
 
       mediaRecorder.ondataavailable = (event) => {
-        audioChunksRef.current.push(event.data);
+        if (event.data.size > 0) {
+          audioChunksRef.current.push(event.data);
+          console.log('[EmotionalCheck] Audio chunk received:', event.data.size, 'bytes');
+        }
       };
 
       mediaRecorder.onstop = () => {
+        console.log('[EmotionalCheck] Recording stopped, chunks:', audioChunksRef.current.length);
         const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
+        console.log('[EmotionalCheck] Audio blob size:', audioBlob.size, 'bytes');
+        
         const url = URL.createObjectURL(audioBlob);
         setAudioURL(url);
         setRecordingState('recorded');
-        stream.getTracks().forEach(track => track.stop());
-        console.log('[EmotionalCheck] Recording stopped, audio ready');
+        stream.getTracks().forEach(track => {
+          console.log('[EmotionalCheck] Stopping track:', track.label);
+          track.stop();
+        });
+        console.log('[EmotionalCheck] Recording complete, audio ready for playback');
       };
 
-      mediaRecorder.start();
+      mediaRecorder.start(100); // Request data every 100ms
       setRecordingState('recording');
       setRecordingTime(0);
+      console.log('[EmotionalCheck] MediaRecorder started');
 
       timerRef.current = window.setInterval(() => {
         setRecordingTime(prev => prev + 1);
       }, 1000);
     } catch (error: any) {
-      console.error('[EmotionalCheck] Error accessing microphone:', error);
+      console.error('[EmotionalCheck] ❌ Error accessing microphone:', error);
       console.error('[EmotionalCheck] Error name:', error.name);
       console.error('[EmotionalCheck] Error message:', error.message);
       

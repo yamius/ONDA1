@@ -14,8 +14,9 @@ public class OndaWatchPlugin: CAPPlugin {
         implementation.plugin = self
         // Session уже активирована в AppDelegate, но на всякий случай
         implementation.activateSession()
-        // Запускаем HealthKit observer для прямого чтения HR с часов
-        implementation.startHealthKitObserver()
+        // ❌ НЕ запускаем HealthKit observer автоматически!
+        // Он будет запущен ПОСЛЕ получения разрешений через PermissionsService
+        // implementation.startHealthKitObserver() ← УДАЛЕНО
     }
 
     @objc func getStatus(_ call: CAPPluginCall) {
@@ -44,6 +45,8 @@ public class OndaWatchPlugin: CAPPlugin {
     @objc func requestWatchAppOpen(_ call: CAPPluginCall) {
         print("[ONDA Plugin] requestWatchAppOpen called")
         implementation.requestWatchAppOpen()
+        // После оповещения Watch → запускаем HealthKit observer для приёма HR
+        implementation.startHealthKitObserver()
         call.resolve()
     }
     

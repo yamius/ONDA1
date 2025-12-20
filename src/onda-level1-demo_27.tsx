@@ -15,6 +15,7 @@ import { SubscriptionModal } from './components/SubscriptionModal';
 import { PermissionWarningBanner } from './components/PermissionWarningBanner';
 import { PermissionSetupModal } from './components/PermissionSetupModal';
 import { WatchConnectionPrompt } from './components/WatchConnectionPrompt';
+import { DebugMonitor } from './components/DebugMonitor';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
 import { useHealthConnect } from './hooks/useHealthConnect';
@@ -3898,6 +3899,12 @@ const OndaLevel1 = () => {
         isOpen={showSubscriptionModal}
         onClose={() => setShowSubscriptionModal(false)}
         activeCircuit={activeCircuit}
+      />
+
+      {/* Debug Monitor */}
+      <DebugMonitor
+        buildNumber={import.meta.env.VITE_BUILD_NUMBER}
+        commitHash={import.meta.env.VITE_COMMIT_HASH}
       />
 
       {/* Боковое меню */}

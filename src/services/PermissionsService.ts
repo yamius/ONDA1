@@ -36,26 +36,23 @@ export class PermissionsService {
         return false;
       }
 
-      // Сначала проверяем localStorage флаг
-      const wasRequested = localStorage.getItem('onda_microphone_requested') === 'true';
-      if (wasRequested) {
-        return true;
-      }
-
-      // Проверяем через Permissions API если доступен
+      // ❌ НЕ используем localStorage - он может быть неактуальным!
+      // ✅ Проверяем РЕАЛЬНЫЙ статус через Permissions API
       if (navigator.permissions && navigator.permissions.query) {
         try {
           const result = await navigator.permissions.query({ name: 'microphone' as PermissionName });
-          return result.state === 'granted';
+          const granted = result.state === 'granted';
+          console.log('[Permissions] Microphone real status:', result.state);
+          return granted;
         } catch (e) {
           // Permissions API может не поддерживаться на iOS
-          console.log('[Permissions] Permissions API not available, assuming not granted');
+          console.log('[Permissions] Permissions API not available');
+          // На iOS нельзя проверить без запроса, возвращаем false
           return false;
         }
       }
 
-      // На iOS Permissions API не работает, поэтому не можем проверить
-      // Возвращаем false (пусть пользователь нажмёт кнопку)
+      // Fallback: нельзя проверить
       return false;
     } catch (error) {
       console.error('[Permissions] Error checking microphone permission:', error);
@@ -73,9 +70,9 @@ export class PermissionsService {
 
     try {
       // На iOS НЕВОЗМОЖНО проверить HealthKit статус без запроса (Apple privacy)
-      // Используем localStorage для запоминания что пользователь уже настроил
-      const wasRequested = localStorage.getItem('onda_healthkit_requested') === 'true';
-      return wasRequested;
+      // Поэтому всегда возвращаем false до момента когда пользователь сам нажмет кнопку
+      // После успешного запроса capacitor-health вернёт success
+      return false;
     } catch (error) {
       console.error('[Permissions] Error checking health read permission:', error);
       return false;
@@ -121,13 +118,13 @@ export class PermissionsService {
         return false;
       }
 
+      console.log('[Permissions] Requesting microphone access...');
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      
       // Останавливаем сразу, нам нужно только разрешение
       stream.getTracks().forEach(track => track.stop());
       
-      // Сохраняем флаг что разрешение получено
-      localStorage.setItem('onda_microphone_requested', 'true');
-      
+      console.log('[Permissions] ✅ Microphone permission granted');
       return true;
     } catch (error) {
       console.error('[Permissions] Error requesting microphone permission:', error);
@@ -157,10 +154,6 @@ export class PermissionsService {
       });
 
       console.log('[Permissions] HealthKit authorization result:', result);
-      
-      // Сохраняем флаг что разрешение было запрошено
-      localStorage.setItem('onda_healthkit_requested', 'true');
-      
       return true; // Apple всегда возвращает success даже если пользователь отказал
     } catch (error) {
       console.error('[Permissions] Error requesting health permissions:', error);
