@@ -1,4 +1,3 @@
-import { VoiceRecorder } from 'capacitor-voice-recorder';
 import { Capacitor } from '@capacitor/core';
 
 export interface PermissionStatus {
@@ -33,8 +32,21 @@ export class PermissionsService {
    */
   static async checkMicrophonePermission(): Promise<boolean> {
     try {
-      const result = await VoiceRecorder.hasAudioRecordingPermission();
-      return result.value === true;
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        return false;
+      }
+
+      // Проверяем через Permissions API если доступен
+      if (navigator.permissions && navigator.permissions.query) {
+        const result = await navigator.permissions.query({ name: 'microphone' as PermissionName });
+        return result.state === 'granted';
+      }
+
+      // Fallback: пробуем получить доступ
+      // Если уже есть разрешение, это быстро вернётся без диалога
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      stream.getTracks().forEach(track => track.stop());
+      return true;
     } catch (error) {
       console.error('[Permissions] Error checking microphone permission:', error);
       return false;
@@ -99,8 +111,15 @@ export class PermissionsService {
    */
   static async requestMicrophonePermission(): Promise<boolean> {
     try {
-      const result = await VoiceRecorder.requestAudioRecordingPermission();
-      return result.value === true;
+      if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        console.error('[Permissions] MediaDevices not available');
+        return false;
+      }
+
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      // Останавливаем сразу, нам нужно только разрешение
+      stream.getTracks().forEach(track => track.stop());
+      return true;
     } catch (error) {
       console.error('[Permissions] Error requesting microphone permission:', error);
       return false;
