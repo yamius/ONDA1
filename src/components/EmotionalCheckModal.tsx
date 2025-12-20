@@ -199,9 +199,15 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       }
 
       setRecordingState('result');
-    } catch (error) {
-      console.error('Error analyzing voice:', error);
+    } catch (error: any) {
+      console.error('[EmotionalCheck] ❌ Error analyzing voice:', error);
+      console.error('[EmotionalCheck] Error details:', {
+        message: error?.message,
+        name: error?.name,
+        stack: error?.stack
+      });
 
+      // Используем mock данные в случае ошибки
       const emotions = [
         { name: 'emotional_check.calmness', confidence: 0.75, energy: 0.4, rec: 'emotional_check.rec_calmness' },
         { name: 'emotional_check.joy', confidence: 0.82, energy: 0.8, rec: 'emotional_check.rec_joy' },

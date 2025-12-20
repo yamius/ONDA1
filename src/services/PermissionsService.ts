@@ -201,13 +201,12 @@ export class PermissionsService {
     
     await this.delay(500);
 
-    // 2. HealthKit (read + write) - потом сложное
-    console.log('[Permissions] Requesting HealthKit permissions...');
-    const healthGranted = await this.requestHealthPermissions();
-    status.healthRead = healthGranted;
-    status.healthWrite = healthGranted; // Разрешение на запись тоже получено
-    onProgress?.('healthRead', healthGranted);
-    onProgress?.('healthWrite', healthGranted);
+    // 2. HealthKit (только read) - capacitor-health не установлен
+    // Пульс работает через нативный HKHealthStore в OndaWatchPlugin
+    console.log('[Permissions] HealthKit works via native OndaWatchPlugin');
+    status.healthRead = true; // Считаем что разрешение есть (работает нативно)
+    status.healthWrite = false; // Не используем
+    onProgress?.('healthRead', true);
     
     // 3. Уведомления пока не запрашиваем (пакет не установлен)
     status.notifications = false;
@@ -244,8 +243,9 @@ export class PermissionsService {
    * Проверяет нужно ли показывать баннер с запросом разрешений
    */
   static needsPermissionSetup(status: PermissionStatus): boolean {
-    // Показываем баннер если НЕТ хотя бы одного из критичных разрешений
-    return !status.microphone || !status.healthRead || !status.healthWrite;
+    // Показываем баннер если НЕТ микрофона
+    // healthRead работает через нативный код (не требует UI запроса)
+    return !status.microphone;
   }
 
   /**
