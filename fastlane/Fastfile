@@ -116,9 +116,6 @@ platform :ios do
     # Build the app
     build
     
-    # Fix for Xcode 16+ altool silent failures (2024)
-    ENV["DELIVER_ALTOOL_ADDITIONAL_UPLOAD_PARAMETERS"] = "--use-old-altool"
-    
     # Upload to TestFlight
     upload_to_testflight(
       skip_waiting_for_build_processing: false,
