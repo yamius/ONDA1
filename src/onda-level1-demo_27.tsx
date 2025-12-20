@@ -12,6 +12,8 @@ import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { EmotionalCheckModal } from './components/EmotionalCheckModal';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
+import { PermissionWarningBanner } from './components/PermissionWarningBanner';
+import { PermissionSetupModal } from './components/PermissionSetupModal';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
 import { useHealthConnect } from './hooks/useHealthConnect';
@@ -19,6 +21,7 @@ import { useHealthKitData } from './hooks/useHealthKitData';
 import { useHealthKitHeartRate } from './hooks/useHealthKitHeartRate';
 import { useKeepAwake } from './hooks/useKeepAwake';
 import { useWatchHeartRate } from './hooks/useWatchHeartRate';
+import { usePermissions } from './hooks/usePermissions';
 import { Capacitor } from '@capacitor/core';
 import { rhythmStore } from './sleep/rhythm';
 import { calculatePracticeOnd } from './utils/ondCalculator';
@@ -35,6 +38,7 @@ const OndaLevel1 = () => {
   const healthKitData = useHealthKitData();
   const healthKitHeartRate = useHealthKitHeartRate({ pollingInterval: 1500 });
   const watchHeartRate = useWatchHeartRate();
+  const permissions = usePermissions();
   const platform = Capacitor.getPlatform();
   
   useKeepAwake(true);
@@ -119,6 +123,7 @@ const OndaLevel1 = () => {
   const [showSettingsModal, setShowSettingsModal] = useState(false);
   const [showConnectionModal, setShowConnectionModal] = useState(false);
   const [showLanguageModal, setShowLanguageModal] = useState(false);
+  const [showPermissionModal, setShowPermissionModal] = useState(false);
   const [showQntShop, setShowQntShop] = useState(false);
   const [isLoadingUser, setIsLoadingUser] = useState(true);
   const [showInfoModal, setShowInfoModal] = useState(false);
@@ -2713,6 +2718,15 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
+        {/* Permission Warning Banner */}
+        {permissions.needsSetup && (
+          <div className="mb-6">
+            <PermissionWarningBanner
+              onSetupClick={() => setShowPermissionModal(true)}
+            />
+          </div>
+        )}
+
         {/* Биометрика */}
         <div className="mb-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
@@ -3840,6 +3854,16 @@ const OndaLevel1 = () => {
             setUserProfile(updatedProfile);
           }}
           isLightTheme={isLightTheme}
+        />
+      )}
+
+      {showPermissionModal && (
+        <PermissionSetupModal
+          isOpen={showPermissionModal}
+          onClose={() => setShowPermissionModal(false)}
+          onRequestAll={permissions.requestAllPermissions}
+          currentStatus={permissions.permissionStatus}
+          isRequesting={permissions.isRequesting}
         />
       )}
 
