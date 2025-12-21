@@ -230,9 +230,15 @@ export class PermissionsService {
       // Отправляем команду на Watch для запуска через WCSession
       const OndaWatch = (window as any).OndaWatch;
       if (OndaWatch) {
-        // Оповещаем Watch что нужно открыться и начать мониторинг
+        console.log('[Permissions] Запускаем HR мониторинг...');
+        
+        // 1. Оповещаем Watch что нужно открыться (вибрация)
         await OndaWatch.requestWatchAppOpen();
-        console.log('[Permissions] Watch оповещены о начале мониторинга');
+        console.log('[Permissions] ✅ Watch оповещены');
+        
+        // 2. Запускаем мониторинг на iPhone (настраиваем канал связи)
+        await OndaWatch.startRealtime();
+        console.log('[Permissions] ✅ startRealtime() вызван → канал настроен');
       }
     } catch (error) {
       console.error('[Permissions] Error starting HR monitoring:', error);

@@ -45,6 +45,28 @@ const OndaLevel1 = () => {
   
   useKeepAwake(true);
   
+  // Автозапуск HR мониторинга на втором и последующих запусках (когда разрешения уже есть)
+  useEffect(() => {
+    const autoStartMonitoring = async () => {
+      // Если разрешения УЖЕ есть → запускаем стрим сразу при старте app
+      if (!permissions.needsSetup && platform === 'ios') {
+        console.log('[OndaLevel1] Разрешения уже есть → запускаем HR мониторинг автоматически');
+        
+        const OndaWatch = (window as any).OndaWatch;
+        if (OndaWatch && Capacitor.isPluginAvailable('OndaWatch')) {
+          try {
+            await OndaWatch.startRealtime();
+            console.log('[OndaLevel1] ✅ HR мониторинг запущен (канал настроен)');
+          } catch (error) {
+            console.error('[OndaLevel1] Ошибка запуска мониторинга:', error);
+          }
+        }
+      }
+    };
+    
+    autoStartMonitoring();
+  }, [permissions.needsSetup, platform]);
+  
   useEffect(() => {
     if (platform === 'ios' && healthKitData.isAvailable && healthKitData.isAuthorized) {
       healthKitData.startAutoRefresh(30000);
