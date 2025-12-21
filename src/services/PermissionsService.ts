@@ -33,6 +33,7 @@ export class PermissionsService {
   static async checkMicrophonePermission(): Promise<boolean> {
     try {
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+        console.log('[Permissions] checkMicrophonePermission: MediaDevices not available');
         return false;
       }
 
@@ -41,29 +42,31 @@ export class PermissionsService {
         try {
           const result = await navigator.permissions.query({ name: 'microphone' as PermissionName });
           const granted = result.state === 'granted';
-          console.log('[Permissions] Microphone real status:', result.state);
+          console.log('[Permissions] Microphone Permissions API status:', result.state);
           
           // Сохраняем статус если granted
           if (granted) {
             localStorage.setItem('onda_microphone_granted', 'true');
+            console.log('[Permissions] ✅ Microphone permission saved to localStorage');
           }
           
           return granted;
         } catch (e) {
           // Permissions API может не поддерживаться на iOS
-          console.log('[Permissions] Permissions API not available on this platform');
+          console.log('[Permissions] Permissions API not available on this platform (likely iOS)');
         }
       }
 
       // Fallback для iOS: проверяем localStorage (сохранённый статус после успешного запроса)
       const savedStatus = localStorage.getItem('onda_microphone_granted');
+      console.log('[Permissions] checkMicrophonePermission localStorage value:', savedStatus);
       if (savedStatus === 'true') {
-        console.log('[Permissions] Microphone permission from saved state: granted');
+        console.log('[Permissions] ✅ Microphone permission from saved state: granted');
         return true;
       }
 
       // Если ничего не нашли - возвращаем false
-      console.log('[Permissions] Microphone permission unknown, assuming not granted');
+      console.log('[Permissions] ❌ Microphone permission unknown, assuming not granted');
       return false;
     } catch (error) {
       console.error('[Permissions] Error checking microphone permission:', error);
@@ -76,6 +79,7 @@ export class PermissionsService {
    */
   static async checkHealthReadPermission(): Promise<boolean> {
     if (!Capacitor.isNativePlatform() || Capacitor.getPlatform() !== 'ios') {
+      console.log('[Permissions] checkHealthReadPermission: Not iOS native platform');
       return false;
     }
 
@@ -83,12 +87,13 @@ export class PermissionsService {
       // На iOS НЕВОЗМОЖНО проверить HealthKit статус через API (Apple privacy)
       // Поэтому проверяем localStorage - сохранённый флаг после успешного запроса
       const savedStatus = localStorage.getItem('onda_healthkit_granted');
+      console.log('[Permissions] checkHealthReadPermission localStorage value:', savedStatus);
       if (savedStatus === 'true') {
-        console.log('[Permissions] HealthKit permission from saved state: granted');
+        console.log('[Permissions] ✅ HealthKit permission from saved state: granted');
         return true;
       }
       
-      console.log('[Permissions] HealthKit permission unknown, assuming not granted');
+      console.log('[Permissions] ❌ HealthKit permission unknown, assuming not granted');
       return false;
     } catch (error) {
       console.error('[Permissions] Error checking health read permission:', error);

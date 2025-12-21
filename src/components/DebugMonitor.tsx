@@ -46,7 +46,7 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
         message: message.replace(/^\[[^\]]+\]\s*/, '') // Убираем категорию из сообщения
       };
 
-      setLogs(prev => [...prev.slice(-99), log]); // Храним последние 100 логов
+      setLogs(prev => [...prev.slice(-999), log]); // Храним последние 1000 логов
     };
 
     console.log = (...args) => {
