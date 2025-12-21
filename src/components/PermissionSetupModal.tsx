@@ -75,78 +75,83 @@ export function PermissionSetupModal({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
-      {/* Backdrop */}
-      <div
-        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-        onClick={onClose}
-      />
-
+    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 pt-[calc(env(safe-area-inset-top)+0.75rem)]">
       {/* Modal */}
-      <div className="relative w-full max-w-md bg-gradient-to-b from-gray-900 to-black border border-white/10 rounded-t-3xl sm:rounded-3xl shadow-2xl max-h-[90vh] overflow-y-auto">
+      <div className="max-w-md w-full h-auto max-h-[calc(100vh-env(safe-area-inset-top)-env(safe-area-inset-bottom)-3rem)] rounded-2xl border border-purple-500/30 relative flex flex-col bg-gradient-to-br from-gray-900 to-black">
         {/* Header */}
-        <div className="sticky top-0 bg-gradient-to-b from-gray-900 to-gray-900/95 backdrop-blur-sm border-b border-white/10 p-6 pb-4">
-          <div className="flex items-start justify-between">
-            <div>
-              <h2 className="text-2xl font-light text-white mb-1">🔐 Настройка ONDA</h2>
-              <p className="text-sm text-gray-400">
-                Для полноценной работы приложения необходимо предоставить доступ:
-              </p>
-            </div>
-            <button
-              onClick={onClose}
-              className="text-gray-400 hover:text-white transition-colors ml-4"
-            >
-              <X className="w-6 h-6" />
-            </button>
+        <div className="sticky top-0 z-10 pt-6 px-6 sm:pt-8 sm:px-8 pb-4 rounded-t-2xl bg-gradient-to-br from-gray-900 to-gray-900">
+          <button
+            onClick={onClose}
+            className="absolute right-4 top-4 p-2 rounded-full transition-all hover:bg-white/10"
+          >
+            <X className="w-5 h-5" />
+          </button>
+
+          <div className="text-center">
+            <h2 className="text-2xl sm:text-3xl font-light mb-2">🔐 Настройка разрешений</h2>
+            <p className="text-xs sm:text-sm text-white/70">
+              Для полноценной работы приложения необходимо предоставить доступ
+            </p>
           </div>
         </div>
 
         {/* Content */}
-        <div className="p-6 space-y-3">
-          {/* Microphone - ПЕРВЫЙ (проще!) */}
-          {PERMISSION_INFO.microphone && (
-            <PermissionCard
-              icon={PERMISSION_INFO.microphone.icon}
-              title={PERMISSION_INFO.microphone.title}
-              description={PERMISSION_INFO.microphone.description}
-              color={PERMISSION_INFO.microphone.color}
-              granted={requestStatus.microphone}
-              colorClasses={getColorClasses(PERMISSION_INFO.microphone.color)}
-            />
-          )}
+        <div className="flex-1 overflow-y-auto px-6 pb-6 sm:px-8 sm:pb-8 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+          <div className="space-y-4 mt-4">
+            {/* Microphone - ПЕРВЫЙ (проще!) */}
+            {PERMISSION_INFO.microphone && (
+              <PermissionCard
+                icon={PERMISSION_INFO.microphone.icon}
+                title={PERMISSION_INFO.microphone.title}
+                description={PERMISSION_INFO.microphone.description}
+                color={PERMISSION_INFO.microphone.color}
+                granted={requestStatus.microphone}
+                colorClasses={getColorClasses(PERMISSION_INFO.microphone.color)}
+              />
+            )}
 
-          {/* Health Read - ВТОРОЙ */}
-          {PERMISSION_INFO.healthRead && (
-            <PermissionCard
-              icon={PERMISSION_INFO.healthRead.icon}
-              title={PERMISSION_INFO.healthRead.title}
-              description={PERMISSION_INFO.healthRead.description}
-              color={PERMISSION_INFO.healthRead.color}
-              granted={requestStatus.healthRead}
-              colorClasses={getColorClasses(PERMISSION_INFO.healthRead.color)}
-            />
-          )}
-        </div>
+            {/* Health Read - ВТОРОЙ */}
+            {PERMISSION_INFO.healthRead && (
+              <PermissionCard
+                icon={PERMISSION_INFO.healthRead.icon}
+                title={PERMISSION_INFO.healthRead.title}
+                description={PERMISSION_INFO.healthRead.description}
+                color={PERMISSION_INFO.healthRead.color}
+                granted={requestStatus.healthRead}
+                colorClasses={getColorClasses(PERMISSION_INFO.healthRead.color)}
+              />
+            )}
 
-        {/* Footer */}
-        <div className="sticky bottom-0 bg-gradient-to-t from-gray-900 to-gray-900/95 backdrop-blur-sm border-t border-white/10 p-6 pt-4 space-y-3">
-          {/* Кнопка "Предоставить все разрешения" */}
-          <button
-            onClick={handleRequestAll}
-            disabled={isRequesting}
-            className="w-full bg-white/10 hover:bg-white/20 disabled:bg-white/5 border border-white/20 hover:border-white/30 text-white font-medium py-4 rounded-xl transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {isRequesting ? 'Запрашиваем разрешения...' : 'Предоставить все разрешения'}
-          </button>
+            {/* Buttons */}
+            <div className="pt-4 space-y-3">
+              {/* Кнопка "Предоставить все разрешения" */}
+              <button
+                onClick={handleRequestAll}
+                disabled={isRequesting}
+                className="w-full bg-green-500/20 hover:bg-green-500/30 disabled:bg-green-500/10 text-green-400 disabled:text-green-400/50 font-medium py-3 px-6 rounded-xl transition-all disabled:cursor-not-allowed flex items-center justify-center gap-2"
+              >
+                {isRequesting ? (
+                  <>
+                    <div className="w-4 h-4 border-2 border-green-400/30 border-t-green-400 rounded-full animate-spin" />
+                    Запрашиваем разрешения...
+                  </>
+                ) : (
+                  <>
+                    <Check className="w-5 h-5" />
+                    Предоставить все разрешения
+                  </>
+                )}
+              </button>
 
-          {/* Кнопка "Настроить позже" - такая же по размеру */}
-          <button
-            onClick={onClose}
-            className="w-full bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/30 text-white font-medium py-4 rounded-xl transition-all"
-          >
-            Настроить позже
-          </button>
+              {/* Кнопка "Настроить позже" */}
+              <button
+                onClick={onClose}
+                className="w-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-white font-medium py-3 px-6 rounded-xl transition-all"
+              >
+                Настроить позже
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -164,12 +169,22 @@ interface PermissionCardProps {
 
 function PermissionCard({ icon: Icon, title, description, granted, colorClasses }: PermissionCardProps) {
   return (
-    <div className={`border rounded-xl p-4 transition-all ${colorClasses}`}>
-      <div className="flex items-start gap-3">
-        <Icon className="w-6 h-6 flex-shrink-0 mt-0.5" />
-        <div className="flex-1">
-          <h3 className="font-medium mb-1">{title}</h3>
-          <p className="text-sm text-white/70">{description}</p>
+    <div className={`border rounded-xl p-4 transition-all ${
+      granted 
+        ? 'bg-green-500/10 border-green-500/30' 
+        : 'bg-white/5 border-white/10'
+    }`}>
+      <div className="flex items-start gap-4">
+        <div className={`flex-shrink-0 ${granted ? 'text-green-400' : 'text-white/70'}`}>
+          <Icon className="w-6 h-6" />
+        </div>
+        <div className="flex-1 min-w-0">
+          <h3 className={`font-medium mb-1 ${granted ? 'text-green-400' : 'text-white'}`}>
+            {title}
+          </h3>
+          <p className="text-sm text-white/60 leading-relaxed">
+            {description}
+          </p>
         </div>
         <div className="flex-shrink-0">
           {granted ? (
