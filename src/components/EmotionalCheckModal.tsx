@@ -202,12 +202,15 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
     } catch (error: any) {
       console.error('[EmotionalCheck] ❌ Error analyzing voice:', error);
       console.error('[EmotionalCheck] Error details:', {
-        message: error?.message,
-        name: error?.name,
-        stack: error?.stack
+        message: error?.message || 'Unknown error',
+        name: error?.name || 'Unknown',
+        stack: error?.stack,
+        type: typeof error,
+        fullError: JSON.stringify(error, Object.getOwnPropertyNames(error))
       });
 
-      // Используем mock данные в случае ошибки
+      // Используем mock данные в случае ошибки (graceful fallback)
+      console.warn('[EmotionalCheck] ⚠️ Using fallback mock emotion data due to API error');
       const emotions = [
         { name: 'emotional_check.calmness', confidence: 0.75, energy: 0.4, rec: 'emotional_check.rec_calmness' },
         { name: 'emotional_check.joy', confidence: 0.82, energy: 0.8, rec: 'emotional_check.rec_joy' },
@@ -218,6 +221,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       ];
 
       const randomEmotion = emotions[Math.floor(Math.random() * emotions.length)];
+      console.log('[EmotionalCheck] 🎲 Selected mock emotion:', randomEmotion.name);
 
       setEmotionalResult({
         primaryEmotion: randomEmotion.name,
