@@ -36,23 +36,34 @@ export class PermissionsService {
         return false;
       }
 
-      // ❌ НЕ используем localStorage - он может быть неактуальным!
       // ✅ Проверяем РЕАЛЬНЫЙ статус через Permissions API
       if (navigator.permissions && navigator.permissions.query) {
         try {
           const result = await navigator.permissions.query({ name: 'microphone' as PermissionName });
           const granted = result.state === 'granted';
           console.log('[Permissions] Microphone real status:', result.state);
+          
+          // Сохраняем статус если granted
+          if (granted) {
+            localStorage.setItem('onda_microphone_granted', 'true');
+          }
+          
           return granted;
         } catch (e) {
           // Permissions API может не поддерживаться на iOS
-          console.log('[Permissions] Permissions API not available');
-          // На iOS нельзя проверить без запроса, возвращаем false
-          return false;
+          console.log('[Permissions] Permissions API not available on this platform');
         }
       }
 
-      // Fallback: нельзя проверить
+      // Fallback для iOS: проверяем localStorage (сохранённый статус после успешного запроса)
+      const savedStatus = localStorage.getItem('onda_microphone_granted');
+      if (savedStatus === 'true') {
+        console.log('[Permissions] Microphone permission from saved state: granted');
+        return true;
+      }
+
+      // Если ничего не нашли - возвращаем false
+      console.log('[Permissions] Microphone permission unknown, assuming not granted');
       return false;
     } catch (error) {
       console.error('[Permissions] Error checking microphone permission:', error);
@@ -123,6 +134,9 @@ export class PermissionsService {
       
       // Останавливаем сразу, нам нужно только разрешение
       stream.getTracks().forEach(track => track.stop());
+      
+      // ✅ Сохраняем статус в localStorage для последующих запусков
+      localStorage.setItem('onda_microphone_granted', 'true');
       
       console.log('[Permissions] ✅ Microphone permission granted');
       return true;

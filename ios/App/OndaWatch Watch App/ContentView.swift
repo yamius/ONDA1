@@ -233,9 +233,18 @@ struct ContentView: View {
             return
         }
         
-        // Разрешения НЕТ → показываем кнопку "Разрешить"
-        print("[ContentView] Permission not granted, showing permission UI")
-        permissionState = .needsPermission
+        // ⏳ Разрешения НЕТ → показываем спиннер (НЕ кнопку!)
+        // Кнопка появится только если iPhone не даст разрешения в течение 10 секунд
+        print("[ContentView] Permission not granted, waiting for iPhone to request permissions...")
+        permissionState = .checking
+        
+        // Через 10 секунд если ничего не изменилось → показываем кнопку
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+            if self.permissionState == .checking {
+                print("[ContentView] Timeout waiting for iPhone, showing permission button")
+                self.permissionState = .needsPermission
+            }
+        }
     }
     
     private func requestPermission() {
