@@ -585,17 +585,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       }
     }
     
-    // Stop monitoring when modal closes
-    if (!isOpen && isIOS) {
-      if (vitalsData.healthKitHR.isMonitoring) {
-        vitalsData.healthKitHR.stopMonitoring();
-        console.log('[AdaptivePractice] HealthKit stopped on modal close');
-      }
-      if (vitalsData.watchHR.isMonitoring) {
-        vitalsData.watchHR.stopRealtime().catch(() => {});
-        console.log('[AdaptivePractice] Watch stopped on modal close');
-      }
-    }
+    // ❌ НЕ ОСТАНАВЛИВАЕМ мониторинг при закрытии модалки
+    // Мониторинг должен продолжаться в фоне для других практик
   }, [isOpen, vitalsData.healthKitHR.isAvailable, vitalsData.watchHR.isConnected]);
 
   useEffect(() => {

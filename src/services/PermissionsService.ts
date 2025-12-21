@@ -80,9 +80,15 @@ export class PermissionsService {
     }
 
     try {
-      // На iOS НЕВОЗМОЖНО проверить HealthKit статус без запроса (Apple privacy)
-      // Поэтому всегда возвращаем false до момента когда пользователь сам нажмет кнопку
-      // После успешного запроса capacitor-health вернёт success
+      // На iOS НЕВОЗМОЖНО проверить HealthKit статус через API (Apple privacy)
+      // Поэтому проверяем localStorage - сохранённый флаг после успешного запроса
+      const savedStatus = localStorage.getItem('onda_healthkit_granted');
+      if (savedStatus === 'true') {
+        console.log('[Permissions] HealthKit permission from saved state: granted');
+        return true;
+      }
+      
+      console.log('[Permissions] HealthKit permission unknown, assuming not granted');
       return false;
     } catch (error) {
       console.error('[Permissions] Error checking health read permission:', error);
@@ -253,6 +259,10 @@ export class PermissionsService {
         // 2. Запускаем мониторинг на iPhone (настраиваем канал связи)
         await OndaWatch.startRealtime();
         console.log('[Permissions] ✅ startRealtime() вызван → канал настроен');
+        
+        // 3. Сохраняем флаг что HealthKit разрешения получены
+        localStorage.setItem('onda_healthkit_granted', 'true');
+        console.log('[Permissions] ✅ HealthKit permission saved to localStorage');
       }
     } catch (error) {
       console.error('[Permissions] Error starting HR monitoring:', error);
