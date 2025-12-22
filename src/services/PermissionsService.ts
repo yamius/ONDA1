@@ -1,4 +1,5 @@
 import { Capacitor } from '@capacitor/core';
+import OndaWatch from '../plugins/ondaWatch';
 
 export interface PermissionStatus {
   microphone: boolean;
@@ -261,31 +262,30 @@ export class PermissionsService {
    */
   private static async startHeartRateMonitoring(): Promise<void> {
     try {
-      // Отправляем команду на Watch для запуска через WCSession
-      const OndaWatch = (window as any).OndaWatch;
+      const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
       console.log('[Permissions] 🔍 startHeartRateMonitoring() - OndaWatch plugin check:', {
-        exists: !!OndaWatch,
-        type: typeof OndaWatch,
-        isPluginAvailable: Capacitor.isPluginAvailable ? Capacitor.isPluginAvailable('OndaWatch') : 'no method'
+        isPluginAvailable,
+        platform: Capacitor.getPlatform()
       });
 
-      if (OndaWatch) {
-        console.log('[Permissions] Запускаем HR мониторинг...');
-        
-        // 1. Оповещаем Watch что нужно открыться (вибрация)
-        await OndaWatch.requestWatchAppOpen();
-        console.log('[Permissions] ✅ Watch оповещены');
-        
-        // 2. Запускаем мониторинг на iPhone (настраиваем канал связи)
-        await OndaWatch.startRealtime();
-        console.log('[Permissions] ✅ startRealtime() вызван → канал настроен');
-        
-        // 3. Сохраняем флаг что HealthKit разрешения получены
-        localStorage.setItem('onda_healthkit_granted', 'true');
-        console.log('[Permissions] ✅ HealthKit permission saved to localStorage');
-      } else {
+      if (!isPluginAvailable) {
         console.error('[Permissions] ❌ OndaWatch plugin NOT AVAILABLE!');
+        return;
       }
+
+      console.log('[Permissions] Запускаем HR мониторинг...');
+      
+      // 1. Оповещаем Watch что нужно открыться (вибрация)
+      await OndaWatch.requestWatchAppOpen();
+      console.log('[Permissions] ✅ Watch оповещены');
+      
+      // 2. Запускаем мониторинг на iPhone (настраиваем канал связи)
+      await OndaWatch.startRealtime();
+      console.log('[Permissions] ✅ startRealtime() вызван → канал настроен');
+      
+      // 3. Сохраняем флаг что HealthKit разрешения получены
+      localStorage.setItem('onda_healthkit_granted', 'true');
+      console.log('[Permissions] ✅ HealthKit permission saved to localStorage');
     } catch (error) {
       console.error('[Permissions] Error starting HR monitoring:', error);
     }

@@ -27,6 +27,7 @@ import { usePermissions } from './hooks/usePermissions';
 import { Capacitor } from '@capacitor/core';
 import { rhythmStore } from './sleep/rhythm';
 import { calculatePracticeOnd } from './utils/ondCalculator';
+import OndaWatch from './plugins/ondaWatch';
 
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
@@ -52,14 +53,13 @@ const OndaLevel1 = () => {
       if (!permissions.needsSetup && platform === 'ios') {
         console.log('[OndaLevel1] Разрешения уже есть → запускаем HR мониторинг автоматически');
         
-        const OndaWatch = (window as any).OndaWatch;
+        const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
         console.log('[OndaLevel1] 🔍 OndaWatch plugin check:', {
-          exists: !!OndaWatch,
-          type: typeof OndaWatch,
-          isPluginAvailable: Capacitor.isPluginAvailable ? Capacitor.isPluginAvailable('OndaWatch') : 'no method'
+          isPluginAvailable,
+          platform
         });
 
-        if (OndaWatch && Capacitor.isPluginAvailable('OndaWatch')) {
+        if (isPluginAvailable) {
           try {
             await OndaWatch.startRealtime();
             console.log('[OndaLevel1] ✅ HR мониторинг запущен (канал настроен)');
