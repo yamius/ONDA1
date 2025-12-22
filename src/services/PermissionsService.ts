@@ -263,6 +263,12 @@ export class PermissionsService {
     try {
       // Отправляем команду на Watch для запуска через WCSession
       const OndaWatch = (window as any).OndaWatch;
+      console.log('[Permissions] 🔍 startHeartRateMonitoring() - OndaWatch plugin check:', {
+        exists: !!OndaWatch,
+        type: typeof OndaWatch,
+        isPluginAvailable: Capacitor.isPluginAvailable ? Capacitor.isPluginAvailable('OndaWatch') : 'no method'
+      });
+
       if (OndaWatch) {
         console.log('[Permissions] Запускаем HR мониторинг...');
         
@@ -277,6 +283,8 @@ export class PermissionsService {
         // 3. Сохраняем флаг что HealthKit разрешения получены
         localStorage.setItem('onda_healthkit_granted', 'true');
         console.log('[Permissions] ✅ HealthKit permission saved to localStorage');
+      } else {
+        console.error('[Permissions] ❌ OndaWatch plugin NOT AVAILABLE!');
       }
     } catch (error) {
       console.error('[Permissions] Error starting HR monitoring:', error);

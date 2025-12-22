@@ -53,6 +53,12 @@ const OndaLevel1 = () => {
         console.log('[OndaLevel1] Разрешения уже есть → запускаем HR мониторинг автоматически');
         
         const OndaWatch = (window as any).OndaWatch;
+        console.log('[OndaLevel1] 🔍 OndaWatch plugin check:', {
+          exists: !!OndaWatch,
+          type: typeof OndaWatch,
+          isPluginAvailable: Capacitor.isPluginAvailable ? Capacitor.isPluginAvailable('OndaWatch') : 'no method'
+        });
+
         if (OndaWatch && Capacitor.isPluginAvailable('OndaWatch')) {
           try {
             await OndaWatch.startRealtime();
@@ -60,6 +66,8 @@ const OndaLevel1 = () => {
           } catch (error) {
             console.error('[OndaLevel1] Ошибка запуска мониторинга:', error);
           }
+        } else {
+          console.error('[OndaLevel1] ❌ OndaWatch plugin NOT AVAILABLE or not registered!');
         }
       }
     };
