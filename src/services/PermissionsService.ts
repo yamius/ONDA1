@@ -12,6 +12,12 @@ export class PermissionsService {
    * Проверяет статус всех разрешений
    */
   static async checkAllPermissions(): Promise<PermissionStatus> {
+    // 🔍 DEBUG: Проверяем localStorage при старте
+    console.log('[Permissions] 🔍 checkAllPermissions() - localStorage dump:', {
+      microphone: localStorage.getItem('onda_microphone_granted'),
+      healthkit: localStorage.getItem('onda_healthkit_granted')
+    });
+
     const [microphone, healthRead, healthWrite, notifications] = await Promise.all([
       this.checkMicrophonePermission(),
       this.checkHealthReadPermission(),
@@ -19,12 +25,15 @@ export class PermissionsService {
       this.checkNotificationPermission(),
     ]);
 
-    return {
+    const result = {
       microphone,
       healthRead,
       healthWrite,
       notifications,
     };
+
+    console.log('[Permissions] checkAllPermissions() result:', result);
+    return result;
   }
 
   /**
