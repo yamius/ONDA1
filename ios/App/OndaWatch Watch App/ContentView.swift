@@ -124,36 +124,49 @@ struct ContentView: View {
     }
     
     private var mainView: some View {
-        VStack(spacing: 8) {
-            Image(systemName: "waveform.path.ecg")
-                .font(.system(size: 36))
-                .foregroundColor(.cyan)
+        VStack(spacing: 0) {
+            Spacer()
             
-            Text("ONDA")
+            // Системное время вверху по центру
+            Text(Date(), style: .time)
                 .font(.title3)
-                .fontWeight(.bold)
+                .fontWeight(.medium)
+                .foregroundColor(.white)
             
-            if workoutManager.heartRate > 0 {
-                HStack {
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(.red)
-                    Text("\(Int(workoutManager.heartRate))")
-                        .font(.title2)
-                        .fontWeight(.semibold)
+            Spacer()
+            
+            // Пульс в центре (крупно)
+            VStack(spacing: 4) {
+                if workoutManager.heartRate > 0 {
+                    HStack(spacing: 6) {
+                        Image(systemName: "heart.fill")
+                            .font(.system(size: 24))
+                            .foregroundColor(.red)
+                        Text("\(Int(workoutManager.heartRate))")
+                            .font(.system(size: 48, weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
+                    }
                     Text("BPM")
-                        .font(.caption2)
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                } else {
+                    HStack(spacing: 6) {
+                        Image(systemName: "heart.fill")
+                            .font(.system(size: 24))
+                            .foregroundColor(.gray)
+                        Text("--")
+                            .font(.system(size: 48, weight: .bold, design: .rounded))
+                            .foregroundColor(.secondary)
+                    }
+                    Text("BPM")
+                        .font(.caption)
                         .foregroundColor(.secondary)
                 }
-                .padding(.vertical, 4)
-            } else {
-                Text("--")
-                    .font(.title2)
-                    .foregroundColor(.secondary)
-                Text("BPM")
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
             }
             
+            Spacer()
+            
+            // Статус внизу
             HStack(spacing: 6) {
                 Circle()
                     .fill(workoutManager.isActive ? Color.green : Color.gray)
@@ -162,6 +175,7 @@ struct ContentView: View {
                     .font(.caption2)
                     .foregroundColor(.secondary)
             }
+            .padding(.bottom, 8)
         }
         .padding(.horizontal, 8)
         .onAppear {

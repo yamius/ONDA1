@@ -124,62 +124,59 @@ struct ContentView: View {
     
     private var mainView: some View {
         VStack(spacing: 0) {
-            // Header with ONDA aligned to top-left
-            HStack {
-                Text("ONDA")
-                    .font(.caption)
-                    .fontWeight(.semibold)
-                    .foregroundColor(.cyan)
-                Spacer()
-            }
-            .padding(.horizontal, 8)
-            .padding(.top, 4)
+            Spacer()
+            
+            // Системное время вверху по центру
+            Text(Date(), style: .time)
+                .font(.title3)
+                .fontWeight(.medium)
+                .foregroundColor(.white)
             
             Spacer()
             
-            // Heart rate card
-            VStack(spacing: 6) {
-                HStack(spacing: 4) {
-                    Image(systemName: "heart.fill")
-                        .foregroundColor(.red)
-                        .font(.system(size: 18))
-                    
-                    if workoutManager.heartRate > 0 {
+            // Пульс в центре (крупно)
+            VStack(spacing: 4) {
+                if workoutManager.heartRate > 0 {
+                    HStack(spacing: 6) {
+                        Image(systemName: "heart.fill")
+                            .font(.system(size: 24))
+                            .foregroundColor(.red)
                         Text("\(Int(workoutManager.heartRate))")
-                            .font(.system(size: 32, weight: .bold, design: .rounded))
-                    } else {
+                            .font(.system(size: 48, weight: .bold, design: .rounded))
+                            .foregroundColor(.white)
+                    }
+                    Text("BPM")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                } else {
+                    HStack(spacing: 6) {
+                        Image(systemName: "heart.fill")
+                            .font(.system(size: 24))
+                            .foregroundColor(.gray)
                         Text("--")
-                            .font(.system(size: 32, weight: .bold, design: .rounded))
+                            .font(.system(size: 48, weight: .bold, design: .rounded))
                             .foregroundColor(.secondary)
                     }
-                    
                     Text("BPM")
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
-                }
-                
-                HStack(spacing: 4) {
-                    Circle()
-                        .fill(workoutManager.isActive ? Color.green : Color.gray)
-                        .frame(width: 6, height: 6)
-                    Text(workoutManager.isActive ? "Активна" : "Ожидание")
-                        .font(.caption2)
+                        .font(.caption)
                         .foregroundColor(.secondary)
                 }
             }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 10)
-            .background(
-                RoundedRectangle(cornerRadius: 12)
-                    .fill(Color.black.opacity(0.3))
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 12)
-                            .stroke(Color.white.opacity(0.1), lineWidth: 1)
-                    )
-            )
             
             Spacer()
+            
+            // Статус внизу
+            HStack(spacing: 6) {
+                Circle()
+                    .fill(workoutManager.isActive ? Color.green : Color.gray)
+                    .frame(width: 8, height: 8)
+                Text(workoutManager.isActive ? "Активна" : "Ожидание")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+            }
+            .padding(.bottom, 8)
         }
+        .padding(.horizontal, 8)
         .onAppear {
             if !workoutManager.isActive {
                 print("[ContentView] Permission granted, starting workout")
