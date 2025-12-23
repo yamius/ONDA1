@@ -2417,6 +2417,12 @@ const OndaLevel1 = () => {
         ? 'bg-gradient-to-br from-amber-950 via-orange-900 to-amber-950'
         : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
     }`}>
+      {/* Debug Monitor - ПЕРВЫМ для захвата всех логов */}
+      <DebugMonitor
+        buildNumber={import.meta.env.VITE_BUILD_NUMBER}
+        commitHash={import.meta.env.VITE_COMMIT_HASH}
+      />
+
       {/* Плавающая кнопка гамбургер меню */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
@@ -3929,12 +3935,6 @@ const OndaLevel1 = () => {
         isOpen={showSubscriptionModal}
         onClose={() => setShowSubscriptionModal(false)}
         activeCircuit={activeCircuit}
-      />
-
-      {/* Debug Monitor */}
-      <DebugMonitor
-        buildNumber={import.meta.env.VITE_BUILD_NUMBER}
-        commitHash={import.meta.env.VITE_COMMIT_HASH}
       />
 
       {/* Боковое меню */}
