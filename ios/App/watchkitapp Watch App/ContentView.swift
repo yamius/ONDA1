@@ -126,14 +126,6 @@ struct ContentView: View {
         VStack(spacing: 0) {
             Spacer()
             
-            // Системное время вверху по центру
-            Text(Date(), style: .time)
-                .font(.title3)
-                .fontWeight(.medium)
-                .foregroundColor(.white)
-            
-            Spacer()
-            
             // Пульс в центре (крупно)
             VStack(spacing: 4) {
                 if workoutManager.heartRate > 0 {
