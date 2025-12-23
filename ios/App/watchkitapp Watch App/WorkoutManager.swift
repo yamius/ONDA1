@@ -332,6 +332,8 @@ extension WorkoutManager: WKExtendedRuntimeSessionDelegate {
             return
         case .expired:
             reasonString = "expired"
+        case .userRequest:
+            reasonString = "userRequest"
         @unknown default:
             reasonString = "unknown(\(reason.rawValue))"
         }
@@ -549,10 +551,56 @@ extension WorkoutManager: WCSessionDelegate {
         
         print("[WorkoutManager] 🎯 Processing command: '\(cmd)'")
         
+        // 🔍 DEBUG: Проверяем статус разрешений при получении команды
+        if let hrType = HKObjectType.quantityType(forIdentifier: .heartRate) {
+            let authStatus = healthStore.authorizationStatus(for: hrType)
+            let statusStr: String
+            switch authStatus {
+            case .notDetermined:
+                statusStr = "NOT_DETERMINED ⚠️"
+            case .sharingAuthorized:
+                statusStr = "AUTHORIZED ✅"
+            case .sharingDenied:
+                statusStr = "DENIED ❌"
+            @unknown default:
+                statusStr = "UNKNOWN"
+            }
+            print("[WorkoutManager] 🔐 HealthKit authorization status: \(statusStr)")
+        }
+        
         DispatchQueue.main.async {
             switch cmd {
             case "REQUEST_OPEN":
                 print("[WorkoutManager] 📳 REQUEST_OPEN command received")
+                
+                // 🔐 Проверяем разрешения HealthKit при REQUEST_OPEN
+                if !self.isAuthorized {
+                    print("[WorkoutManager] ⚠️ No HealthKit permission - will request when app opens")
+                    
+                    // Вибрация для привлечения внимания
+                    WKInterfaceDevice.current().play(.notification)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        WKInterfaceDevice.current().play(.notification)
+                    }
+                    
+                    // Показываем уведомление
+                    NotificationManager.shared.showOpenAppNotification()
+                    
+                    // Если app активно - запрашиваем разрешения сразу
+                    let appState = WKApplication.shared().applicationState
+                    if appState == .active {
+                        print("[WorkoutManager] 🔐 App active → requesting permissions now")
+                        self.requestAuthorizationWithCompletion { success in
+                            if success {
+                                print("[WorkoutManager] ✅ Permission granted → ready for workout")
+                            }
+                        }
+                    }
+                    
+                    return
+                }
+                
+                print("[WorkoutManager] ✅ HealthKit permission OK")
                 
                 // Вибрация для привлечения внимания (3 раза с интервалом)
                 WKInterfaceDevice.current().play(.notification)
@@ -586,6 +634,29 @@ extension WorkoutManager: WCSessionDelegate {
                     return
                 }
                 
+                // 🔐 КРИТИЧНО: Проверяем разрешения HealthKit перед запуском
+                if !self.isAuthorized {
+                    print("[WorkoutManager] ⚠️ HealthKit permission NOT GRANTED - requesting now...")
+                    
+                    // Вибрация чтобы привлечь внимание к диалогу разрешений
+                    WKInterfaceDevice.current().play(.notification)
+                    
+                    // Запрашиваем разрешения
+                    self.requestAuthorizationWithCompletion { success in
+                        if success {
+                            print("[WorkoutManager] ✅ Permission granted, now starting workout")
+                            self.startWorkout()
+                        } else {
+                            print("[WorkoutManager] ❌ Permission request failed or denied")
+                            // Показываем уведомление что нужны разрешения
+                            NotificationManager.shared.showOpenAppNotification()
+                        }
+                    }
+                    return
+                }
+                
+                print("[WorkoutManager] ✅ HealthKit permission already granted")
+                
                 // Вибрация чтобы пользователь поднял руку и увидел часы
                 WKInterfaceDevice.current().play(.notification)
                 
@@ -614,6 +685,9 @@ extension WorkoutManager: WCSessionDelegate {
                     
                     // Дополнительная вибрация для привлечения внимания
                     WKInterfaceDevice.current().play(.start)
+                    
+                    // Показываем уведомление
+                    NotificationManager.shared.showOpenAppNotification()
                     
                     // Запускаем workout даже в фоне - HKWorkoutSession работает в фоне
                     print("[WorkoutManager] 🏃 Starting workout in background")
