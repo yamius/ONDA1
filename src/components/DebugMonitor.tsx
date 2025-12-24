@@ -82,9 +82,11 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
     ).join('\n');
 
     const blob = new Blob([logText], { type: 'text/plain' });
-    const fileName = `onda-debug-${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}-${logs.length}logs.txt`;
+    const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, '-');
+    const commit = commitHash ? `-${commitHash.slice(0, 7)}` : '';
+    const fileName = `onda-debug-${timestamp}-${logs.length}logs${commit}.txt`;
 
-    console.log(`[DebugMonitor] 📥 Preparing to download ${logs.length} log entries`);
+    console.log(`[DebugMonitor] 📥 Preparing to download ${logs.length} log entries (commit: ${commitHash || 'local'})`);
 
     // Проверяем доступность Share API (работает на iOS)
     if (navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], fileName)] })) {
