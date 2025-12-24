@@ -46,7 +46,7 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
         message: message.replace(/^\[[^\]]+\]\s*/, '') // Убираем категорию из сообщения
       };
 
-      setLogs(prev => [...prev.slice(-999), log]); // Храним последние 1000 логов
+      setLogs(prev => [...prev.slice(-2499), log]); // Храним последние 2500 логов
     };
 
     console.log = (...args) => {
@@ -82,7 +82,9 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
     ).join('\n');
 
     const blob = new Blob([logText], { type: 'text/plain' });
-    const fileName = `onda-debug-${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.txt`;
+    const fileName = `onda-debug-${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}-${logs.length}logs.txt`;
+
+    console.log(`[DebugMonitor] 📥 Preparing to download ${logs.length} log entries`);
 
     // Проверяем доступность Share API (работает на iOS)
     if (navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], fileName)] })) {
