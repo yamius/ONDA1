@@ -77,7 +77,22 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
   }, [buildNumber, commitHash]);
 
   const downloadLogs = async () => {
-    const logText = logs.map(log => 
+    // Добавляем заголовок с метаинформацией
+    const header = [
+      '='.repeat(80),
+      'ONDA Debug Logs',
+      '='.repeat(80),
+      `Generated: ${new Date().toISOString()}`,
+      `Build: ${buildNumber || 'dev'}`,
+      `Commit: ${commitHash || 'local'}`,
+      `Platform: ${Capacitor.getPlatform()}`,
+      `Native: ${Capacitor.isNativePlatform()}`,
+      `Total logs: ${logs.length}`,
+      '='.repeat(80),
+      ''
+    ].join('\n');
+
+    const logText = header + logs.map(log => 
       `[${log.timestamp}] [${log.level.toUpperCase()}] [${log.category}] ${log.message}`
     ).join('\n');
 
