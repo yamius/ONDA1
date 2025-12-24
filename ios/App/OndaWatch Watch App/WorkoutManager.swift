@@ -108,8 +108,13 @@ class WorkoutManager: NSObject, ObservableObject {
         
         extendedSession = WKExtendedRuntimeSession()
         extendedSession?.delegate = self
-        extendedSession?.start()
-        print("[WorkoutManager] Starting extended runtime session")
+        
+        // 🔥 Запускаем сессию на 1 час вперед (3600 секунд)
+        // Это позволяет Watch работать в фоне даже при потускневшем экране
+        let oneHourFromNow = Date().addingTimeInterval(3600)
+        extendedSession?.start(at: oneHourFromNow)
+        
+        print("[WorkoutManager] 🕐 Starting extended runtime session for 1 hour (until \(oneHourFromNow))")
     }
     
     func stopExtendedSession() {
@@ -332,12 +337,21 @@ extension WorkoutManager: WKExtendedRuntimeSessionDelegate {
     }
     
     func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
-        print("[WorkoutManager] ⚠️ Extended session will expire, restarting...")
+        print("[WorkoutManager] ⚠️ Extended session will expire in ~30 sec, prolonging for another hour...")
         
-        // Перезапускаем сессию до истечения
+        // 🔥 Автоматическая пролонгация на еще 1 час
+        // Не останавливаем сессию, а продлеваем её
         DispatchQueue.main.async {
-            self.stopExtendedSession()
-            self.startExtendedSession()
+            if self.isActive {
+                // Если воркаут активен - продлеваем
+                let oneHourFromNow = Date().addingTimeInterval(3600)
+                extendedRuntimeSession.start(at: oneHourFromNow)
+                print("[WorkoutManager] ✅ Extended session prolonged until \(oneHourFromNow)")
+            } else {
+                // Если воркаут остановлен - завершаем extended session
+                print("[WorkoutManager] ℹ️ Workout not active, letting session expire")
+                self.stopExtendedSession()
+            }
         }
     }
     
@@ -361,12 +375,14 @@ extension WorkoutManager: WKExtendedRuntimeSessionDelegate {
         
         print("[WorkoutManager] ❌ Extended session invalidated: \(reasonString), error: \(error?.localizedDescription ?? "none")")
         
-        // Автоматически перезапускаем если есть активная workout сессия
+        // 🔥 Автоматически перезапускаем только если воркаут активен
         if isActive {
-            print("[WorkoutManager] 🔄 Workout is active, restarting extended session...")
+            print("[WorkoutManager] 🔄 Workout is active, restarting extended session for 1 hour...")
             DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                 self.startExtendedSession()
             }
+        } else {
+            print("[WorkoutManager] ℹ️ Workout not active, not restarting extended session")
         }
     }
 }
