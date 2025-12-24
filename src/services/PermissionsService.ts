@@ -42,19 +42,26 @@ export class PermissionsService {
    */
   static async checkMicrophonePermission(): Promise<boolean> {
     try {
+      // 🔥 ПРИОРИТЕТ 1: localStorage (самый надежный на iOS)
+      const savedStatus = localStorage.getItem('onda_microphone_granted');
+      if (savedStatus === 'true') {
+        console.log('[Permissions] ✅ Microphone already granted (localStorage)');
+        return true;
+      }
+      
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
         console.log('[Permissions] checkMicrophonePermission: MediaDevices not available');
         return false;
       }
 
-      // ✅ Проверяем РЕАЛЬНЫЙ статус через Permissions API
+      // 🔥 ПРИОРИТЕТ 2: Permissions API (дополнительная проверка)
       if (navigator.permissions && navigator.permissions.query) {
         try {
           const result = await navigator.permissions.query({ name: 'microphone' as PermissionName });
           const granted = result.state === 'granted';
           console.log('[Permissions] Microphone Permissions API status:', result.state);
           
-          // Сохраняем статус если granted
+          // Сохраняем статус если granted (синхронизируем с localStorage)
           if (granted) {
             localStorage.setItem('onda_microphone_granted', 'true');
             console.log('[Permissions] ✅ Microphone permission saved to localStorage');
@@ -65,14 +72,6 @@ export class PermissionsService {
           // Permissions API может не поддерживаться на iOS
           console.log('[Permissions] Permissions API not available on this platform (likely iOS)');
         }
-      }
-
-      // Fallback для iOS: проверяем localStorage (сохранённый статус после успешного запроса)
-      const savedStatus = localStorage.getItem('onda_microphone_granted');
-      console.log('[Permissions] checkMicrophonePermission localStorage value:', savedStatus);
-      if (savedStatus === 'true') {
-        console.log('[Permissions] ✅ Microphone permission from saved state: granted');
-        return true;
       }
 
       // Если ничего не нашли - возвращаем false
