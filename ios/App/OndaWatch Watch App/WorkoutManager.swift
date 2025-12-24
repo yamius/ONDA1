@@ -16,9 +16,13 @@ class WorkoutManager: NSObject, ObservableObject {
     private var pendingHeartRates: [(value: Double, timestamp: Date)] = []
     private var lastSentHeartRate: Double = 0
     private var lastSentTime: Date = Date.distantPast
+    private let minHRInterval: TimeInterval = 0.8 // Минимальный интервал между отправками
     
     // Таймер для периодической проверки и отправки данных
     private var reconnectionTimer: Timer?
+    
+    // 🔥 Режим накопления - когда phone показывает диалоги (PRIMARY = context only)
+    private var isInAccumulationMode = false
     
     @Published var heartRate: Double = 0
     @Published var isActive = false
@@ -238,16 +242,24 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
+    // 🔥 ПЕРЕДЕЛАНО: updateApplicationContext = PRIMARY (как в main 86cd4bc)
     private func sendHeartRateToPhone(_ hr: Double, immediate: Bool = false) {
         let now = Date()
         
-        // Избегаем отправки одинаковых значений слишком часто
-        if !immediate && abs(hr - lastSentHeartRate) < 1.0 && now.timeIntervalSince(lastSentTime) < 2.0 {
+        // Минимальный интервал между отправками
+        if !immediate && now.timeIntervalSince(lastSentTime) < minHRInterval {
             return
         }
         
         lastSentHeartRate = hr
         lastSentTime = now
+        
+        let wcSession = WCSession.default
+        
+        guard wcSession.activationState == .activated else {
+            print("[WorkoutManager] ❌ Cannot send HR: WCSession not activated")
+            return
+        }
         
         let message: [String: Any] = [
             "type": "heartRate",
@@ -255,52 +267,61 @@ class WorkoutManager: NSObject, ObservableObject {
             "timestamp": now.timeIntervalSince1970
         ]
         
-        let wcSession = WCSession.default
+        // 🔥 PRIMARY: updateApplicationContext (самый стабильный)
+        // Выживает при диалогах потому что iOS system daemon синхронизирует
+        // НЕ требует isReachable=true - работает ВСЕГДА
+        do {
+            try wcSession.updateApplicationContext([
+                "lastUpdate": message,
+                "lastHeartRate": hr,
+                "timestamp": now.timeIntervalSince1970,
+                "isWorkoutActive": isActive
+            ])
+            print("[WorkoutManager] 📋 Context updated: \(Int(hr)) bpm")
+        } catch {
+            print("[WorkoutManager] ⚠️ Context update failed: \(error.localizedDescription)")
+        }
         
-        if wcSession.isReachable {
-            // Прямая отправка когда связь активна
+        // 🔥 SECONDARY: sendMessage ТОЛЬКО если реально reachable (realtime БОНУС)
+        // Отключается в accumulation mode чтобы избежать ошибок
+        if wcSession.isReachable && !isInAccumulationMode {
             wcSession.sendMessage(message, replyHandler: { _ in
-                print("[WorkoutManager] HR sent: \(Int(hr)) bpm")
+                print("[WorkoutManager] 💗 HR sent realtime: \(Int(hr)) bpm")
             }) { error in
-                print("[WorkoutManager] sendMessage error: \(error.localizedDescription)")
-                // Если прямая отправка не удалась, используем фоновую доставку
-                self.sendViaBackgroundDelivery(hr: hr, timestamp: now)
+                // При ошибке sendMessage → переключаемся в accumulation mode
+                print("[WorkoutManager] ⚠️ sendMessage error, switching to context-only: \(error.localizedDescription)")
+                DispatchQueue.main.async {
+                    self.isInAccumulationMode = true
+                }
             }
         } else {
-            // Используем фоновую доставку когда связь недоступна
-            sendViaBackgroundDelivery(hr: hr, timestamp: now)
+            print("[WorkoutManager] 📋 Context-only mode (reach=\(wcSession.isReachable), accum=\(isInAccumulationMode))")
         }
     }
     
-    private func sendViaBackgroundDelivery(hr: Double, timestamp: Date) {
-        // Добавляем в очередь
-        pendingHeartRates.append((value: hr, timestamp: timestamp))
+    // 🔥 Context update после возобновления (после закрытия диалога)
+    private func sendContextUpdate() {
+        let wcSession = WCSession.default
         
-        // Ограничиваем размер очереди (храним только последние 20 значений)
-        if pendingHeartRates.count > 20 {
-            pendingHeartRates.removeFirst()
+        guard wcSession.activationState == .activated else {
+            print("[WorkoutManager] Cannot send context update: not activated")
+            return
         }
         
-        // Отправляем через transferUserInfo - это разбудит приложение на iPhone
-        let message: [String: Any] = [
+        let context: [String: Any] = [
             "type": "heartRate",
-            "value": hr,
-            "timestamp": timestamp.timeIntervalSince1970
+            "value": heartRate,
+            "lastHeartRate": heartRate,
+            "timestamp": Date().timeIntervalSince1970,
+            "isWorkoutActive": isActive,
+            "syncAfterResume": true
         ]
         
-        WCSession.default.transferUserInfo(message)
-        print("[WorkoutManager] HR queued for background delivery: \(Int(hr)) bpm (pending: \(pendingHeartRates.count))")
-        
-        // Также обновляем applicationContext для мгновенного доступа при восстановлении связи
         do {
-            try WCSession.default.updateApplicationContext([
-                "latestHeartRate": hr,
-                "timestamp": timestamp.timeIntervalSince1970,
-                "isActive": isActive
-            ])
-            print("[WorkoutManager] Application context updated")
+            try wcSession.updateApplicationContext(context)
+            print("[WorkoutManager] ✅ Sent context update after resume: HR=\(Int(heartRate))")
         } catch {
-            print("[WorkoutManager] Failed to update context: \(error.localizedDescription)")
+            print("[WorkoutManager] ⚠️ Context update failed: \(error.localizedDescription)")
         }
     }
 }
@@ -640,6 +661,22 @@ extension WorkoutManager: WCSessionDelegate {
                 // Отвечаем текущим статусом если активны
                 if self.isActive && self.heartRate > 0 {
                     self.sendHeartRateToPhone(self.heartRate, immediate: true)
+                }
+            
+            case "pauseRealtime":
+                // 🔥 Переключаемся в accumulation mode ПЕРЕД появлением диалога
+                print("[WorkoutManager] ⏸️ pauseRealtime - switching to accumulation mode")
+                self.isInAccumulationMode = true
+            
+            case "resumeRealtime":
+                // 🔥 Возвращаемся в нормальный режим ПОСЛЕ закрытия диалога
+                print("[WorkoutManager] ▶️ resumeRealtime - back to normal mode")
+                self.isInAccumulationMode = false
+                
+                // Отправляем текущий HR для синхронизации
+                if self.isActive && self.heartRate > 0 {
+                    self.sendHeartRateToPhone(self.heartRate, immediate: true)
+                    self.sendContextUpdate()
                 }
                 
             default:

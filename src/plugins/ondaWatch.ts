@@ -31,6 +31,11 @@ export interface OndaWatchPlugin {
   stopRealtime(): Promise<void>;
   sendHeartbeat(): Promise<void>;
   requestWatchAppOpen(): Promise<void>;
+  
+  // 🔥 Новые методы для управления accumulation mode
+  pauseRealtime(): Promise<void>;
+  resumeRealtime(): Promise<void>;
+  
   addListener(
     eventName: 'heartRate',
     listenerFunc: (event: HeartRateEvent) => void

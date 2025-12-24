@@ -50,6 +50,19 @@ public class OndaWatchPlugin: CAPPlugin {
         call.resolve()
     }
     
+    // 🔥 НОВЫЕ методы для управления accumulation mode
+    @objc func pauseRealtime(_ call: CAPPluginCall) {
+        print("[ONDA Plugin] pauseRealtime called")
+        implementation.sendCommand(type: "pauseRealtime")
+        call.resolve()
+    }
+    
+    @objc func resumeRealtime(_ call: CAPPluginCall) {
+        print("[ONDA Plugin] resumeRealtime called")
+        implementation.sendCommand(type: "resumeRealtime")
+        call.resolve()
+    }
+    
     @objc func getDebugLog(_ call: CAPPluginCall) {
         let log = implementation.debugLog
         let count = implementation.receivedCount
