@@ -145,6 +145,13 @@ export class PermissionsService {
    */
   static async requestMicrophonePermission(): Promise<boolean> {
     try {
+      // 🔥 ВАЖНО: Проверяем localStorage ПЕРЕД запросом
+      const savedStatus = localStorage.getItem('onda_microphone_granted');
+      if (savedStatus === 'true') {
+        console.log('[Permissions] ✅ Microphone already granted (from localStorage), skipping request');
+        return true;
+      }
+      
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
         console.error('[Permissions] MediaDevices not available');
         return false;
