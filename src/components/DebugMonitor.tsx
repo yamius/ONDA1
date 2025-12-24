@@ -12,13 +12,14 @@ interface DebugLog {
 interface DebugMonitorProps {
   buildNumber?: string;
   commitHash?: string;
+  branchName?: string;
 }
 
 /**
  * Debug Monitor - отслеживает и отображает логи приложения
  * Показывается только в development mode или при активации
  */
-export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
+export function DebugMonitor({ buildNumber, commitHash, branchName }: DebugMonitorProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [logs, setLogs] = useState<DebugLog[]>([]);
@@ -66,7 +67,7 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
 
     // Добавляем стартовый лог
     console.log('[DebugMonitor] Initialized');
-    console.log(`[Build] Version: ${buildNumber || 'dev'}, Commit: ${commitHash || 'local'}`);
+    console.log(`[Build] Version: ${buildNumber || 'dev'}, Commit: ${commitHash || 'local'}, Branch: ${branchName || 'unknown'}`);
     console.log(`[Platform] ${Capacitor.getPlatform()}, Native: ${Capacitor.isNativePlatform()}`);
 
     return () => {
@@ -74,7 +75,7 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
       console.warn = originalWarn;
       console.error = originalError;
     };
-  }, [buildNumber, commitHash]);
+  }, [buildNumber, commitHash, branchName]);
 
   const downloadLogs = async () => {
     // Добавляем заголовок с метаинформацией
@@ -85,6 +86,7 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
       `Generated: ${new Date().toISOString()}`,
       `Build: ${buildNumber || 'dev'}`,
       `Commit: ${commitHash || 'local'}`,
+      `Branch: ${branchName || 'unknown'}`,
       `Platform: ${Capacitor.getPlatform()}`,
       `Native: ${Capacitor.isNativePlatform()}`,
       `Total logs: ${logs.length}`,
@@ -101,7 +103,7 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
     const commit = commitHash ? `-${commitHash.slice(0, 7)}` : '';
     const fileName = `onda-debug-${timestamp}-${logs.length}logs${commit}.txt`;
 
-    console.log(`[DebugMonitor] 📥 Preparing to download ${logs.length} log entries (commit: ${commitHash || 'local'})`);
+    console.log(`[DebugMonitor] 📥 Preparing to download ${logs.length} log entries (branch: ${branchName || 'unknown'}, commit: ${commitHash || 'local'})`);
 
     // Проверяем доступность Share API (работает на iOS)
     if (navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], fileName)] })) {
