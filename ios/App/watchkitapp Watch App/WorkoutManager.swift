@@ -171,7 +171,7 @@ class WorkoutManager: NSObject, ObservableObject {
     }
     
     var isAuthorized: Bool {
-        guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRateType) else {
+        guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
             return false
         }
         let status = healthStore.authorizationStatus(for: heartRateType)
