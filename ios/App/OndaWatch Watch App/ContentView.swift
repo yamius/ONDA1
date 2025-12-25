@@ -116,7 +116,7 @@ struct ContentView: View {
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle())
             
-            Text("\(5 - waitingSeconds) сек")
+            Text("\(15 - waitingSeconds) сек")
                 .font(.caption2)
                 .foregroundColor(.secondary)
         }
@@ -298,11 +298,11 @@ struct ContentView: View {
                     waitingTimer = nil
                     UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
                     permissionState = .granted
-                } else if waitingSeconds >= 5 {
+                } else if waitingSeconds >= 15 {
                     // Timeout - no HR received, permission likely denied
                     timer.invalidate()
                     waitingTimer = nil
-                    print("[ContentView] No HR after 5 seconds, assuming permission denied")
+                    print("[ContentView] No HR after 15 seconds, assuming permission denied")
                     permissionState = .denied
                 }
             }
