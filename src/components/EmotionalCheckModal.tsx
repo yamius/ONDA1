@@ -161,16 +161,20 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
     setRecordingState('analyzing');
 
     try {
-      if (!audioURL) {
+      // ✅ Используем blob напрямую из памяти вместо fetch(audioURL)
+      // fetch(blob:...) не работает на iOS Safari/WKWebView из-за ограничений безопасности
+      if (audioChunksRef.current.length === 0) {
         throw new Error('No audio recording available');
       }
 
-      const audioBlob = await fetch(audioURL).then(r => r.blob());
+      const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
+      console.log('[EmotionalCheck] 📦 Using audio blob from memory:', audioBlob.size, 'bytes');
 
       const formData = new FormData();
       formData.append('audio', audioBlob, 'recording.webm');
 
       const apiUrl = `${SUPABASE_URL}/functions/v1/analyze-emotion`;
+      console.log('[EmotionalCheck] 📤 Sending to Supabase Edge Function...');
 
       const response = await fetch(apiUrl, {
         method: 'POST',
