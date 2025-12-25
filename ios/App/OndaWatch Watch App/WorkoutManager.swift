@@ -175,7 +175,8 @@ class WorkoutManager: NSObject, ObservableObject {
             return false
         }
         let status = healthStore.authorizationStatus(for: heartRateType)
-        return status != .notDetermined
+        // ✅ Возвращаем true ТОЛЬКО если реально разрешено (не .notDetermined и не .sharingDenied)
+        return status == .sharingAuthorized
     }
     
     func startWorkout() {

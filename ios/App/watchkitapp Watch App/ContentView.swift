@@ -216,13 +216,20 @@ struct ContentView: View {
     // MARK: - Logic
     
     private func checkInitialPermissionState() {
+        print("[ContentView] 🔍 === Permission Check Started ===")
+        print("[ContentView] Current HR: \(workoutManager.heartRate)")
+        print("[ContentView] UserDefaults flag: \(UserDefaults.standard.bool(forKey: "healthkit_permission_granted"))")
+        print("[ContentView] isAuthorized: \(workoutManager.isAuthorized)")
+        
         if workoutManager.heartRate > 0 {
+            print("[ContentView] ✅ HR already available → granted")
             permissionState = .granted
             return
         }
         
         let wasGranted = UserDefaults.standard.bool(forKey: "healthkit_permission_granted")
         if wasGranted {
+            print("[ContentView] ✅ UserDefaults says granted")
             permissionState = .granted
             print("[ContentView] Permission already granted (saved state)")
             return
@@ -230,6 +237,7 @@ struct ContentView: View {
         
         // Проверяем фактический статус HealthKit
         if workoutManager.isAuthorized {
+            print("[ContentView] ✅ HealthKit says authorized")
             permissionState = .granted
             UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
             print("[ContentView] Permission already granted (HealthKit status)")
@@ -238,12 +246,14 @@ struct ContentView: View {
         
         // ⏳ Разрешения НЕТ → показываем спиннер (НЕ кнопку!)
         // Кнопка появится только если iPhone не даст разрешения в течение 10 секунд
+        print("[ContentView] ⚠️ No permissions → waiting 10s for iPhone...")
         print("[ContentView] Permission not granted, waiting for iPhone to request permissions...")
         permissionState = .checking
         
         // Через 10 секунд если ничего не изменилось → показываем кнопку
         DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
             if self.permissionState == .checking {
+                print("[ContentView] ⏰ Timeout → showing permission button")
                 print("[ContentView] Timeout waiting for iPhone, showing permission button")
                 self.permissionState = .needsPermission
             }

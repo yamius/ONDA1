@@ -171,11 +171,12 @@ class WorkoutManager: NSObject, ObservableObject {
     }
     
     var isAuthorized: Bool {
-        guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
+        guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRateType) else {
             return false
         }
         let status = healthStore.authorizationStatus(for: heartRateType)
-        return status != .notDetermined
+        // ✅ Возвращаем true ТОЛЬКО если реально разрешено (не .notDetermined и не .sharingDenied)
+        return status == .sharingAuthorized
     }
     
     func startWorkout() {
