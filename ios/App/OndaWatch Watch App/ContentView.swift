@@ -23,6 +23,8 @@ struct ContentView: View {
     @State private var waitingTimer: Timer?
     @State private var waitingSeconds: Int = 0
     @State private var retryAttempted: Bool = false
+    @State private var lastHRValue: Double = 0
+    @State private var lastHRUpdateTime: Date = Date()
     
     var body: some View {
         Group {
@@ -289,21 +291,48 @@ struct ContentView: View {
     private func startWaitingTimer() {
         waitingTimer?.invalidate()
         retryAttempted = false  // Сбрасываем флаг при новом старте
+        lastHRValue = 0
+        lastHRUpdateTime = Date()
         
         waitingTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             DispatchQueue.main.async {
                 self.waitingSeconds += 1
-                print("[ContentView] Waiting for HR: \(self.waitingSeconds)s, current HR: \(self.workoutManager.heartRate), authorized: \(self.workoutManager.isAuthorized), retry: \(self.retryAttempted)")
                 
-                if self.workoutManager.heartRate > 0 {
-                    // HR received - success
+                // 🔥 НОВОЕ: Отслеживаем изменение HR
+                if self.workoutManager.heartRate != self.lastHRValue {
+                    self.lastHRValue = self.workoutManager.heartRate
+                    self.lastHRUpdateTime = Date()
+                    print("[ContentView] 💓 HR updated to: \(Int(self.lastHRValue)) bpm")
+                }
+                
+                let timeSinceLastHR = Date().timeIntervalSince(self.lastHRUpdateTime)
+                
+                print("[ContentView] Waiting for HR: \(self.waitingSeconds)s, current HR: \(Int(self.workoutManager.heartRate)), last update: \(Int(timeSinceLastHR))s ago, authorized: \(self.workoutManager.isAuthorized), retry: \(self.retryAttempted)")
+                
+                // Если HR получен и продолжает обновляться (< 10 секунд с последнего обновления)
+                if self.workoutManager.heartRate > 0 && timeSinceLastHR < 10 {
                     timer.invalidate()
                     self.waitingTimer = nil
                     UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
                     self.permissionState = .granted
-                    print("[ContentView] ✅ HR received, permissions confirmed")
-                } else if self.waitingSeconds >= 8 && !self.retryAttempted && self.workoutManager.isAuthorized {
-                    // 🔥 После 8 секунд проверяем isAuthorized
+                    print("[ContentView] ✅ HR stable and updating, permissions confirmed")
+                }
+                // Если HR был, но перестал обновляться больше 10 секунд
+                else if self.workoutManager.heartRate > 0 && timeSinceLastHR >= 10 && !self.retryAttempted {
+                    print("[ContentView] ⚠️ HR stopped updating (stale for \(Int(timeSinceLastHR))s) → restarting workout...")
+                    self.retryAttempted = true
+                    self.workoutManager.stopWorkout()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        print("[ContentView] 🏃 Starting workout after HR stale...")
+                        self.workoutManager.startWorkout()
+                    }
+                    // Сбрасываем таймер на еще 7 секунд
+                    self.waitingSeconds = 0
+                    self.lastHRUpdateTime = Date()  // Сбрасываем время последнего обновления
+                }
+                // Если HR вообще не пришел через 8 секунд
+                else if self.waitingSeconds >= 8 && self.workoutManager.heartRate == 0 && !self.retryAttempted && self.workoutManager.isAuthorized {
+                    // 🔄 После 8 секунд проверяем isAuthorized
                     // Если true → разрешения были даны, но workout не подключился к HR sensor
                     // Перезапускаем workout один раз
                     print("[ContentView] 🔄 Permissions granted but no HR → restarting workout...")
@@ -315,11 +344,13 @@ struct ContentView: View {
                     }
                     // Сбрасываем таймер на еще 7 секунд
                     self.waitingSeconds = 0
-                } else if self.waitingSeconds >= 15 {
-                    // Timeout - no HR received, permission likely denied
+                    self.lastHRUpdateTime = Date()
+                }
+                // Timeout - 15 секунд прошло
+                else if self.waitingSeconds >= 15 {
                     timer.invalidate()
                     self.waitingTimer = nil
-                    print("[ContentView] ❌ No HR after 15 seconds, assuming permission denied")
+                    print("[ContentView] ❌ No stable HR after 15 seconds, assuming permission denied")
                     self.permissionState = .denied
                 }
             }
