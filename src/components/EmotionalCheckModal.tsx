@@ -161,34 +161,71 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
     setRecordingState('analyzing');
 
     try {
-      // ✅ Используем blob напрямую из памяти вместо fetch(audioURL)
-      // fetch(blob:...) не работает на iOS Safari/WKWebView из-за ограничений безопасности
       if (audioChunksRef.current.length === 0) {
         throw new Error('No audio recording available');
       }
 
       const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
-      console.log('[EmotionalCheck] 📦 Using audio blob from memory:', audioBlob.size, 'bytes');
+      console.log('[EmotionalCheck] 📦 Audio blob:', {
+        size: audioBlob.size,
+        type: audioBlob.type,
+        chunks: audioChunksRef.current.length
+      });
 
-      const formData = new FormData();
-      formData.append('audio', audioBlob, 'recording.webm');
+      // 🔥 НОВОЕ: Конвертируем в base64 (обходит проблемы с FormData на iOS)
+      console.log('[EmotionalCheck] 🔄 Converting to base64...');
+      const base64Audio = await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onloadend = () => {
+          if (typeof reader.result === 'string') {
+            console.log('[EmotionalCheck] ✅ Base64 conversion complete');
+            resolve(reader.result);
+          } else {
+            reject(new Error('Failed to read as data URL'));
+          }
+        };
+        reader.onerror = (error) => {
+          console.error('[EmotionalCheck] ❌ FileReader error:', error);
+          reject(error);
+        };
+        reader.readAsDataURL(audioBlob);
+      });
+
+      console.log('[EmotionalCheck] 📊 Base64 string length:', base64Audio.length);
 
       const apiUrl = `${SUPABASE_URL}/functions/v1/analyze-emotion`;
-      console.log('[EmotionalCheck] 📤 Sending to Supabase Edge Function...');
+      
+      // 🔍 ДИАГНОСТИКА
+      console.log('[EmotionalCheck] 🌐 API URL:', apiUrl);
+      console.log('[EmotionalCheck] 🔑 Auth key (first 20 chars):', SUPABASE_ANON_KEY?.substring(0, 20) + '...');
+      console.log('[EmotionalCheck] 📤 Sending as base64 JSON...');
+      
+      const fetchStartTime = Date.now();
 
       const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+          'Content-Type': 'application/json',
         },
-        body: formData,
+        body: JSON.stringify({ 
+          audio: base64Audio,
+          format: 'base64'
+        }),
       });
 
+      const fetchDuration = Date.now() - fetchStartTime;
+      console.log('[EmotionalCheck] ✅ Fetch completed in', fetchDuration, 'ms');
+      console.log('[EmotionalCheck] 📊 Response status:', response.status);
+
       if (!response.ok) {
-        throw new Error(`API error: ${response.status}`);
+        const errorText = await response.text();
+        console.error('[EmotionalCheck] ❌ API error response:', errorText);
+        throw new Error(`API error: ${response.status} - ${errorText}`);
       }
 
       const result = await response.json();
+      console.log('[EmotionalCheck] 📦 API result received');
 
       if (result.useMock) {
         console.warn('Using mock emotion detection:', result.error || 'API key not configured');
@@ -223,13 +260,23 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       console.log('[EmotionalCheck] ✅ Analysis complete, showing results');
     } catch (error: any) {
       console.error('[EmotionalCheck] ❌ Error analyzing voice:', error);
-      console.error('[EmotionalCheck] Error details:', {
+      console.error('[EmotionalCheck] 🔍 Error details:', {
         message: error?.message || 'Unknown error',
         name: error?.name || 'Unknown',
         stack: error?.stack,
         type: typeof error,
         fullError: JSON.stringify(error, Object.getOwnPropertyNames(error))
       });
+      
+      // 🔍 ДИАГНОСТИКА: Специфичные проверки для "Load failed"
+      if (error.name === 'TypeError' && error.message === 'Load failed') {
+        console.error('[EmotionalCheck] 🚨 Network request blocked or failed (Load failed)');
+        console.error('[EmotionalCheck] This typically indicates:');
+        console.error('[EmotionalCheck] - iOS WKWebView network restrictions');
+        console.error('[EmotionalCheck] - CORS issue with Edge Function');
+        console.error('[EmotionalCheck] - Invalid Supabase URL or credentials');
+        console.error('[EmotionalCheck] Switched to base64 JSON format to avoid FormData issues');
+      }
 
       // Используем mock данные в случае ошибки (graceful fallback)
       console.warn('[EmotionalCheck] ⚠️ Using fallback mock emotion data due to API error');

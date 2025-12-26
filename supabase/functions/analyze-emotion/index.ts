@@ -57,7 +57,32 @@ Deno.serve(async (req: Request) => {
     let audioBlob: Blob;
     let fileName = "recording.webm";
 
-    if (contentType.includes("multipart/form-data")) {
+    // 🔥 НОВОЕ: Поддержка base64 JSON (для iOS WKWebView compatibility)
+    if (contentType.includes("application/json")) {
+      console.log("Processing JSON request (base64)");
+      const body = await req.json();
+      
+      if (body.audio && body.format === 'base64') {
+        console.log("Received base64 audio, decoding...");
+        
+        // Извлекаем base64 без data URL prefix (data:audio/webm;base64,...)
+        const base64Data = body.audio.includes(',') ? body.audio.split(',')[1] : body.audio;
+        console.log("Base64 data length:", base64Data.length);
+        
+        // Декодируем base64 → binary
+        const binaryString = atob(base64Data);
+        const bytes = new Uint8Array(binaryString.length);
+        for (let i = 0; i < binaryString.length; i++) {
+          bytes[i] = binaryString.charCodeAt(i);
+        }
+        
+        audioBlob = new Blob([bytes], { type: 'audio/webm' });
+        console.log("Decoded audio blob size:", audioBlob.size, "bytes");
+      } else {
+        throw new Error("Invalid JSON body format (expected audio + format fields)");
+      }
+    } else if (contentType.includes("multipart/form-data")) {
+      console.log("Processing FormData request");
       const formData = await req.formData();
       const file = formData.get("audio");
 
@@ -71,6 +96,7 @@ Deno.serve(async (req: Request) => {
         fileName = file.name;
       }
     } else {
+      console.log("Processing raw blob request");
       audioBlob = await req.blob();
     }
 
