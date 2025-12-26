@@ -58,6 +58,24 @@ struct ContentView: View {
             waitingTimer?.invalidate()
             waitingTimer = nil
         }
+        .onReceive(NotificationCenter.default.publisher(for: NSNotification.Name("HealthKitPermissionGranted"))) { _ in
+            print("[ContentView] 🎉 Permission granted notification received!")
+            
+            // Если workout уже запущен → перезапускаем для активации HR sensor
+            if workoutManager.isActive {
+                print("[ContentView] 🔄 Restarting workout immediately after permission grant...")
+                workoutManager.stopWorkout()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    print("[ContentView] 🏃 Starting workout with fresh permissions...")
+                    workoutManager.startWorkout()
+                    // Сбрасываем таймер для нового ожидания
+                    if permissionState == .waitingForHR {
+                        waitingSeconds = 0
+                        lastHRUpdateTime = Date()
+                    }
+                }
+            }
+        }
     }
     
     // MARK: - Views

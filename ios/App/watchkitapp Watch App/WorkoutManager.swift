@@ -149,23 +149,86 @@ class WorkoutManager: NSObject, ObservableObject {
             HKObjectType.quantityType(forIdentifier: .heartRate)!
         ]
         
+        guard let hrType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
+            print("[WorkoutManager] ❌ Failed to get heart rate type")
+            completion(false)
+            return
+        }
+        
+        // Запоминаем статус ДО показа диалога
+        let statusBefore = healthStore.authorizationStatus(for: hrType)
         print("[WorkoutManager] Requesting HealthKit authorization...")
+        print("[WorkoutManager] Status before dialog: \(statusBefore.rawValue)")
         
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
             DispatchQueue.main.async {
                 if success {
-                    print("[WorkoutManager] HealthKit authorization dialog shown successfully")
-                    if let hrType = HKObjectType.quantityType(forIdentifier: .heartRate) {
-                        self.authorizationStatus = self.healthStore.authorizationStatus(for: hrType)
-                        print("[WorkoutManager] Updated status: \(self.authorizationStatus.rawValue)")
-                    }
-                    // Note: success here means the dialog was shown, not that permission was granted
-                    // We assume permission is granted and will detect if HR data comes through
-                    completion(true)
+                    print("[WorkoutManager] ✅ Dialog shown, starting status monitor...")
+                    
+                    // 🔥 НОВОЕ: Мониторим изменение статуса
+                    self.monitorAuthorizationStatus(
+                        beforeStatus: statusBefore,
+                        hrType: hrType,
+                        completion: completion
+                    )
                 } else {
-                    print("[WorkoutManager] HealthKit authorization failed: \(error?.localizedDescription ?? "unknown")")
+                    print("[WorkoutManager] ❌ Failed to show dialog: \(error?.localizedDescription ?? "unknown")")
                     completion(false)
                 }
+            }
+        }
+    }
+    
+    // 🔥 НОВЫЙ метод: Отслеживание изменения статуса разрешений
+    private func monitorAuthorizationStatus(
+        beforeStatus: HKAuthorizationStatus,
+        hrType: HKQuantityType,
+        completion: @escaping (Bool) -> Void
+    ) {
+        var attempts = 0
+        let maxAttempts = 40  // 40 попыток * 0.5 секунды = 20 секунд
+        
+        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
+            attempts += 1
+            
+            let currentStatus = self.healthStore.authorizationStatus(for: hrType)
+            
+            if attempts % 4 == 0 {  // Логируем каждые 2 секунды
+                print("[WorkoutManager] 🔍 Status check #\(attempts): \(currentStatus.rawValue)")
+            }
+            
+            // Если статус изменился на .sharingAuthorized
+            if currentStatus == .sharingAuthorized && beforeStatus != .sharingAuthorized {
+                print("[WorkoutManager] 🎉 PERMISSION GRANTED! Status: \(beforeStatus.rawValue) → \(currentStatus.rawValue)")
+                timer.invalidate()
+                self.authorizationStatus = currentStatus
+                
+                // 🔥 Отправляем notification что разрешения изменились
+                NotificationCenter.default.post(
+                    name: NSNotification.Name("HealthKitPermissionGranted"),
+                    object: nil
+                )
+                
+                completion(true)
+                return
+            }
+            
+            // Если статус изменился на .sharingDenied
+            if currentStatus == .sharingDenied && beforeStatus != .sharingDenied {
+                print("[WorkoutManager] ❌ Permission denied! Status: \(currentStatus.rawValue)")
+                timer.invalidate()
+                self.authorizationStatus = currentStatus
+                completion(false)
+                return
+            }
+            
+            // Если превысили лимит попыток
+            if attempts >= maxAttempts {
+                print("[WorkoutManager] ⏰ Timeout waiting for permission decision (20s)")
+                timer.invalidate()
+                // Предполагаем что разрешения дали (диалог закрылся без явного deny)
+                self.authorizationStatus = currentStatus
+                completion(true)
             }
         }
     }
@@ -624,9 +687,6 @@ extension WorkoutManager: WCSessionDelegate {
                     return
                 }
                 
-                // Вибрация чтобы пользователь поднял руку и увидел часы
-                WKInterfaceDevice.current().play(.notification)
-                
                 let appState = WKApplication.shared().applicationState
                 let stateString: String
                 switch appState {
@@ -644,14 +704,15 @@ extension WorkoutManager: WCSessionDelegate {
                 
                 if appState == .active {
                     // Приложение на переднем плане - запускаем workout сразу
-                    print("[WorkoutManager] 🏃 Starting workout (app is active)")
+                    print("[WorkoutManager] 🏃 Starting workout (app is active, no vibration)")
+                    // ✅ БЕЗ вибрации - пользователь уже смотрит на часы
                     self.startWorkout()
                 } else {
-                    // Приложение в фоне - показываем уведомление и запускаем workout
-                    print("[WorkoutManager] 🔔 App not active, showing notification and starting workout")
+                    // Приложение в фоне - нужно привлечь внимание
+                    print("[WorkoutManager] 🔔 App in background, vibration + notification + starting workout")
                     
-                    // Дополнительная вибрация для привлечения внимания
-                    WKInterfaceDevice.current().play(.start)
+                    // ✅ Вибрация ТОЛЬКО в фоне (привлечь внимание)
+                    WKInterfaceDevice.current().play(.notification)
                     
                     // Запускаем workout даже в фоне - HKWorkoutSession работает в фоне
                     print("[WorkoutManager] 🏃 Starting workout in background")

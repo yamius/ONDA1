@@ -281,13 +281,12 @@ export class PermissionsService {
 
       console.log('[Permissions] Запускаем HR мониторинг...');
       
-      // 1. Оповещаем Watch что нужно открыться (вибрация)
-      await OndaWatch.requestWatchAppOpen();
-      console.log('[Permissions] ✅ Watch оповещены');
+      // ❌ УБРАНО: requestWatchAppOpen() - избыточные вибрации если пользователь сам открыл app
+      // Пользователь должен сам открыть ONDA app на часах вручную
       
-      // 2. Запускаем мониторинг на iPhone (настраиваем канал связи)
+      // Запускаем мониторинг на iPhone (настраиваем канал связи)
       await OndaWatch.startRealtime();
-      console.log('[Permissions] ✅ startRealtime() вызван → канал настроен');
+      console.log('[Permissions] ✅ startRealtime() вызван → канал настроен (без вибраций)');
       
       // 3. Сохраняем флаг что HealthKit разрешения получены
       localStorage.setItem('onda_healthkit_granted', 'true');
