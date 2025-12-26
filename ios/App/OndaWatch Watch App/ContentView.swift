@@ -287,10 +287,12 @@ struct ContentView: View {
     
     private func startWaitingTimer() {
         waitingTimer?.invalidate()
+        var retryAttempted = false  // Флаг чтобы retry был только 1 раз
+        
         waitingTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             DispatchQueue.main.async {
                 waitingSeconds += 1
-                print("[ContentView] Waiting for HR: \(waitingSeconds)s, current HR: \(workoutManager.heartRate)")
+                print("[ContentView] Waiting for HR: \(waitingSeconds)s, current HR: \(workoutManager.heartRate), authorized: \(workoutManager.isAuthorized)")
                 
                 if workoutManager.heartRate > 0 {
                     // HR received - success
@@ -298,11 +300,25 @@ struct ContentView: View {
                     waitingTimer = nil
                     UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
                     permissionState = .granted
+                    print("[ContentView] ✅ HR received, permissions confirmed")
+                } else if waitingSeconds >= 8 && !retryAttempted && workoutManager.isAuthorized {
+                    // 🔥 После 8 секунд проверяем isAuthorized
+                    // Если true → разрешения были даны, но workout не подключился к HR sensor
+                    // Перезапускаем workout один раз
+                    print("[ContentView] 🔄 Permissions granted but no HR → restarting workout...")
+                    retryAttempted = true
+                    workoutManager.stopWorkout()
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        print("[ContentView] 🏃 Starting workout after restart...")
+                        workoutManager.startWorkout()
+                    }
+                    // Сбрасываем таймер на еще 7 секунд
+                    waitingSeconds = 0
                 } else if waitingSeconds >= 15 {
                     // Timeout - no HR received, permission likely denied
                     timer.invalidate()
                     waitingTimer = nil
-                    print("[ContentView] No HR after 15 seconds, assuming permission denied")
+                    print("[ContentView] ❌ No HR after 15 seconds, assuming permission denied")
                     permissionState = .denied
                 }
             }
