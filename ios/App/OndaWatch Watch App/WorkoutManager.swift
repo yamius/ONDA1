@@ -27,6 +27,7 @@ class WorkoutManager: NSObject, ObservableObject {
     @Published var heartRate: Double = 0
     @Published var isActive = false
     @Published var authorizationStatus: HKAuthorizationStatus = .notDetermined
+    @Published var permissionJustGranted: Bool = false  // 🔥 НОВОЕ: Флаг для немедленного restart
     
     override init() {
         super.init()
@@ -203,11 +204,11 @@ class WorkoutManager: NSObject, ObservableObject {
                 timer.invalidate()
                 self.authorizationStatus = currentStatus
                 
-                // 🔥 Отправляем notification что разрешения изменились
-                NotificationCenter.default.post(
-                    name: NSNotification.Name("HealthKitPermissionGranted"),
-                    object: nil
-                )
+                // 🔥 Устанавливаем @Published флаг для немедленного restart
+                DispatchQueue.main.async {
+                    self.permissionJustGranted = true
+                    print("[WorkoutManager] 🚨 permissionJustGranted = true (will trigger restart)")
+                }
                 
                 completion(true)
                 return
