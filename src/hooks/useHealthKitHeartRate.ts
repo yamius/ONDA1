@@ -144,6 +144,8 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
 
   const stopRealtimeMonitoring = useCallback(async () => {
     try {
+      console.log('[HealthKit] ⏸️ stopRealtimeMonitoring called');
+      console.log('[HealthKit] Call stack:', new Error().stack);
       if (listenerRef.current) {
         await listenerRef.current.remove();
         listenerRef.current = null;
@@ -156,6 +158,9 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
   }, []);
 
   const startMonitoring = useCallback(async (monitoringMode: MonitoringMode = 'direct') => {
+    console.log('[HealthKit] 🟢 startMonitoring called, mode:', monitoringMode);
+    console.log('[HealthKit] Current state:', { isAvailable, isAuthorized, isMonitoring, currentMode: mode });
+    
     if (!isAvailable) {
       setError('HealthKit is only available on iOS devices');
       return;
@@ -194,6 +199,7 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
         intervalRef.current = setInterval(queryHeartRateData, interval);
         console.log(`[HealthKit] Started ${monitoringMode} mode (polling every ${interval}ms)`);
       }
+      console.log('[HealthKit] ✅ Monitoring started successfully');
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to start heart rate monitoring';
       setError(errorMessage);
@@ -204,6 +210,10 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
   }, [isAvailable, isAuthorized, requestPermission, queryHeartRateData, pollingInterval, startRealtimeMonitoring, stopRealtimeMonitoring]);
 
   const stopMonitoring = useCallback(() => {
+    console.log('[HealthKit] 🔴 stopMonitoring called');
+    console.log('[HealthKit] Call stack:', new Error().stack);
+    console.log('[HealthKit] Current state before stop:', { isMonitoring, mode });
+    
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
@@ -212,7 +222,7 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
     setIsMonitoring(false);
     setMode(null);
     console.log('[HealthKit] Stopped monitoring');
-  }, [stopRealtimeMonitoring]);
+  }, [stopRealtimeMonitoring, isMonitoring, mode]);
 
   const setPollingInterval = useCallback((interval: number) => {
     setPollingIntervalState(interval);
@@ -226,13 +236,18 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
   }, [isMonitoring, mode, queryHeartRateData]);
 
   useEffect(() => {
+    console.log('[HealthKit] 🟢 useEffect mounted, attaching cleanup');
     return () => {
+      console.log('[HealthKit] 🔴 CLEANUP TRIGGERED!');
+      console.log('[HealthKit] Cleanup reason: component unmounting or dependencies changed');
+      console.log('[HealthKit] Stack trace:', new Error().stack);
+      console.log('[HealthKit] Current monitoring state:', { isMonitoring, mode });
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
       stopRealtimeMonitoring();
     };
-  }, [stopRealtimeMonitoring]);
+  }, [stopRealtimeMonitoring, isMonitoring, mode]);
 
   return {
     heartRate,

@@ -12,13 +12,14 @@ interface DebugLog {
 interface DebugMonitorProps {
   buildNumber?: string;
   commitHash?: string;
+  branchName?: string;
 }
 
 /**
  * Debug Monitor - отслеживает и отображает логи приложения
  * Показывается только в development mode или при активации
  */
-export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
+export function DebugMonitor({ buildNumber, commitHash, branchName }: DebugMonitorProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
   const [logs, setLogs] = useState<DebugLog[]>([]);
@@ -46,7 +47,7 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
         message: message.replace(/^\[[^\]]+\]\s*/, '') // Убираем категорию из сообщения
       };
 
-      setLogs(prev => [...prev.slice(-999), log]); // Храним последние 1000 логов
+      setLogs(prev => [...prev.slice(-2499), log]); // Храним последние 2500 логов
     };
 
     console.log = (...args) => {
@@ -66,7 +67,7 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
 
     // Добавляем стартовый лог
     console.log('[DebugMonitor] Initialized');
-    console.log(`[Build] Version: ${buildNumber || 'dev'}, Commit: ${commitHash || 'local'}`);
+    console.log(`[Build] Version: ${buildNumber || 'dev'}, Commit: ${commitHash || 'local'}, Branch: ${branchName || 'unknown'}`);
     console.log(`[Platform] ${Capacitor.getPlatform()}, Native: ${Capacitor.isNativePlatform()}`);
 
     return () => {
@@ -74,15 +75,35 @@ export function DebugMonitor({ buildNumber, commitHash }: DebugMonitorProps) {
       console.warn = originalWarn;
       console.error = originalError;
     };
-  }, [buildNumber, commitHash]);
+  }, [buildNumber, commitHash, branchName]);
 
   const downloadLogs = async () => {
-    const logText = logs.map(log => 
+    // Добавляем заголовок с метаинформацией
+    const header = [
+      '='.repeat(80),
+      'ONDA Debug Logs',
+      '='.repeat(80),
+      `Generated: ${new Date().toISOString()}`,
+      `Build: ${buildNumber || 'dev'}`,
+      `Commit: ${commitHash || 'local'}`,
+      `Branch: ${branchName || 'unknown'}`,
+      `Platform: ${Capacitor.getPlatform()}`,
+      `Native: ${Capacitor.isNativePlatform()}`,
+      `Total logs: ${logs.length}`,
+      '='.repeat(80),
+      ''
+    ].join('\n');
+
+    const logText = header + logs.map(log => 
       `[${log.timestamp}] [${log.level.toUpperCase()}] [${log.category}] ${log.message}`
     ).join('\n');
 
     const blob = new Blob([logText], { type: 'text/plain' });
-    const fileName = `onda-debug-${new Date().toISOString().slice(0, 19).replace(/:/g, '-')}.txt`;
+    const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, '-');
+    const commit = commitHash ? `-${commitHash.slice(0, 7)}` : '';
+    const fileName = `onda-debug-${timestamp}-${logs.length}logs${commit}.txt`;
+
+    console.log(`[DebugMonitor] 📥 Preparing to download ${logs.length} log entries (branch: ${branchName || 'unknown'}, commit: ${commitHash || 'local'})`);
 
     // Проверяем доступность Share API (работает на iOS)
     if (navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], fileName)] })) {

@@ -38,6 +38,14 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
+    if (isOpen) {
+      console.log('[EmotionalCheck] 🚪 Modal OPENED');
+    } else {
+      console.log('[EmotionalCheck] 🚪 Modal CLOSED');
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
     return () => {
       if (timerRef.current) {
         clearInterval(timerRef.current);
@@ -50,6 +58,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
   const startRecording = async () => {
     try {
+      console.log('[EmotionalCheck] 🎤 Starting recording...');
       console.log('[EmotionalCheck] Requesting microphone access...');
       
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
@@ -66,6 +75,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       
       console.log('[EmotionalCheck] ✅ Microphone access granted');
       console.log('[EmotionalCheck] Audio tracks:', stream.getAudioTracks().length);
+      console.log('[EmotionalCheck] 🔊 iOS Audio Session may have changed to RECORD mode');
       
       const mediaRecorder = new MediaRecorder(stream, {
         mimeType: 'audio/webm'
@@ -81,7 +91,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       };
 
       mediaRecorder.onstop = () => {
-        console.log('[EmotionalCheck] Recording stopped, chunks:', audioChunksRef.current.length);
+        console.log('[EmotionalCheck] 🛑 Recording stopped, chunks:', audioChunksRef.current.length);
         const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
         console.log('[EmotionalCheck] Audio blob size:', audioBlob.size, 'bytes');
         
@@ -93,6 +103,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
           track.stop();
         });
         console.log('[EmotionalCheck] Recording complete, audio ready for playback');
+        console.log('[EmotionalCheck] 🔊 iOS Audio Session released (microphone stopped)');
       };
 
       mediaRecorder.start(100); // Request data every 100ms
@@ -120,6 +131,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   };
 
   const stopRecording = () => {
+    console.log('[EmotionalCheck] ⏸️ Stop recording requested');
     if (mediaRecorderRef.current && recordingState === 'recording') {
       mediaRecorderRef.current.stop();
       if (timerRef.current) {
@@ -129,11 +141,15 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   };
 
   const playAudio = () => {
+    console.log('[EmotionalCheck] 🔊 Play audio requested, current state:', { isPlaying, hasAudio: !!audioURL });
     if (audioURL && audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
         setIsPlaying(false);
+        console.log('[EmotionalCheck] ⏸️ Audio paused');
       } else {
+        console.log('[EmotionalCheck] ▶️ Starting audio playback');
+        console.log('[EmotionalCheck] 🔊 iOS Audio Session may change to PLAYBACK mode');
         audioRef.current.play();
         setIsPlaying(true);
       }
@@ -141,19 +157,24 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   };
 
   const analyzeVoice = async () => {
+    console.log('[EmotionalCheck] 🔍 Starting voice analysis...');
     setRecordingState('analyzing');
 
     try {
-      if (!audioURL) {
+      // ✅ Используем blob напрямую из памяти вместо fetch(audioURL)
+      // fetch(blob:...) не работает на iOS Safari/WKWebView из-за ограничений безопасности
+      if (audioChunksRef.current.length === 0) {
         throw new Error('No audio recording available');
       }
 
-      const audioBlob = await fetch(audioURL).then(r => r.blob());
+      const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
+      console.log('[EmotionalCheck] 📦 Using audio blob from memory:', audioBlob.size, 'bytes');
 
       const formData = new FormData();
       formData.append('audio', audioBlob, 'recording.webm');
 
       const apiUrl = `${SUPABASE_URL}/functions/v1/analyze-emotion`;
+      console.log('[EmotionalCheck] 📤 Sending to Supabase Edge Function...');
 
       const response = await fetch(apiUrl, {
         method: 'POST',
@@ -199,6 +220,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       }
 
       setRecordingState('result');
+      console.log('[EmotionalCheck] ✅ Analysis complete, showing results');
     } catch (error: any) {
       console.error('[EmotionalCheck] ❌ Error analyzing voice:', error);
       console.error('[EmotionalCheck] Error details:', {
@@ -231,10 +253,12 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       });
 
       setRecordingState('result');
+      console.log('[EmotionalCheck] ✅ Fallback analysis complete, showing mock results');
     }
   };
 
   const reset = () => {
+    console.log('[EmotionalCheck] 🔄 Resetting to initial state');
     if (audioURL) {
       URL.revokeObjectURL(audioURL);
     }

@@ -2421,6 +2421,7 @@ const OndaLevel1 = () => {
       <DebugMonitor
         buildNumber={import.meta.env.VITE_BUILD_NUMBER}
         commitHash={import.meta.env.VITE_COMMIT_HASH}
+        branchName={import.meta.env.VITE_BRANCH_NAME}
       />
 
       {/* Плавающая кнопка гамбургер меню */}

@@ -7,4 +7,6 @@ CAP_PLUGIN(OndaWatchPlugin, "OndaWatch",
            CAP_PLUGIN_METHOD(sendHeartbeat, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(requestWatchAppOpen, CAPPluginReturnPromise);
            CAP_PLUGIN_METHOD(getDebugLog, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(pauseRealtime, CAPPluginReturnPromise);
+           CAP_PLUGIN_METHOD(resumeRealtime, CAPPluginReturnPromise);
 )

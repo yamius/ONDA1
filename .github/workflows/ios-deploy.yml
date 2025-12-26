@@ -27,6 +27,9 @@ jobs:
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          VITE_BUILD_NUMBER: ${{ github.run_number }}
+          VITE_COMMIT_HASH: ${{ github.sha }}
+          VITE_BRANCH_NAME: ${{ github.ref_name }}
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
