@@ -22,6 +22,7 @@ struct ContentView: View {
     @State private var permissionState: PermissionState = .checking
     @State private var waitingTimer: Timer?
     @State private var waitingSeconds: Int = 0
+    @State private var retryAttempted: Bool = false
     
     var body: some View {
         Group {
@@ -281,37 +282,37 @@ struct ContentView: View {
     
     private func startWaitingTimer() {
         waitingTimer?.invalidate()
-        var retryAttempted = false  // Флаг чтобы retry был только 1 раз
+        retryAttempted = false  // Сбрасываем флаг при новом старте
         
         waitingTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             DispatchQueue.main.async {
-                waitingSeconds += 1
-                print("[ContentView] Waiting for HR: \(waitingSeconds)s, current HR: \(workoutManager.heartRate), authorized: \(workoutManager.isAuthorized)")
+                self.waitingSeconds += 1
+                print("[ContentView] Waiting for HR: \(self.waitingSeconds)s, current HR: \(self.workoutManager.heartRate), authorized: \(self.workoutManager.isAuthorized), retry: \(self.retryAttempted)")
                 
-                if workoutManager.heartRate > 0 {
+                if self.workoutManager.heartRate > 0 {
                     timer.invalidate()
-                    waitingTimer = nil
+                    self.waitingTimer = nil
                     UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
-                    permissionState = .granted
+                    self.permissionState = .granted
                     print("[ContentView] ✅ HR received, permissions confirmed")
-                } else if waitingSeconds >= 8 && !retryAttempted && workoutManager.isAuthorized {
+                } else if self.waitingSeconds >= 8 && !self.retryAttempted && self.workoutManager.isAuthorized {
                     // 🔄 После 8 секунд проверяем isAuthorized
                     // Если true → разрешения были даны, но workout не подключился к HR sensor
                     // Перезапускаем workout один раз
                     print("[ContentView] 🔄 Permissions granted but no HR → restarting workout...")
-                    retryAttempted = true
-                    workoutManager.stopWorkout()
+                    self.retryAttempted = true
+                    self.workoutManager.stopWorkout()
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                         print("[ContentView] 🏃 Starting workout after restart...")
-                        workoutManager.startWorkout()
+                        self.workoutManager.startWorkout()
                     }
                     // Сбрасываем таймер на еще 7 секунд
-                    waitingSeconds = 0
-                } else if waitingSeconds >= 15 {
+                    self.waitingSeconds = 0
+                } else if self.waitingSeconds >= 15 {
                     timer.invalidate()
-                    waitingTimer = nil
+                    self.waitingTimer = nil
                     print("[ContentView] ❌ No HR after 15 seconds, assuming permission denied")
-                    permissionState = .denied
+                    self.permissionState = .denied
                 }
             }
         }
