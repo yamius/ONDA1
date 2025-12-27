@@ -133,17 +133,32 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
           }
         );
         
+        // 🔥 НОВОЕ: Слушаем диагностику с Watch
+        const watchDiagnosticListener = await OndaWatch.addListener(
+          'watchDiagnostic',
+          (event: any) => {
+            const time = new Date().toLocaleTimeString();
+            const msg = `🔧 [Watch] ${event.message}`;
+            console.log('[WatchDiagnostic]', event);
+            setDebugLog(prev => [...prev.slice(-9), `${time}: ${msg}`]);
+          }
+        );
+        
         addLog('Listeners OK');
+        
+        // Сохраняем для cleanup
+        return watchDiagnosticListener;
       } catch (err) {
         addLog(`Listener error: ${err}`);
       }
     };
 
-    setupListeners();
+    const watchDiagListener = setupListeners();
 
     return () => {
       hrListener?.remove();
       debugListener?.remove();
+      watchDiagListener?.then(l => l?.remove());
     };
   }, [addLog]);
 

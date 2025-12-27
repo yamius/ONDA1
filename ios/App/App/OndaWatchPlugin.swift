@@ -343,6 +343,30 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
                     }
                 }
             }
+        
+        // 🔥 НОВОЕ: Обработка диагностических логов с Watch
+        case "watchDiagnostic":
+            if let message = data["message"] as? String {
+                let timestamp = data["timestamp"] as? String ?? "unknown"
+                let hr = data["heartRate"] as? Double ?? 0
+                let isActive = data["isActive"] as? Bool ?? false
+                let isAuthorized = data["isAuthorized"] as? Bool ?? false
+                
+                addDebugLog("🔧 [Watch] \(message) | HR=\(Int(hr)), active=\(isActive), auth=\(isAuthorized)")
+                
+                // Отправляем в JavaScript для DebugMonitor
+                DispatchQueue.main.async {
+                    if let p = self.plugin {
+                        p.notifyListeners("watchDiagnostic", data: [
+                            "message": message,
+                            "timestamp": timestamp,
+                            "heartRate": hr,
+                            "isActive": isActive,
+                            "isAuthorized": isAuthorized
+                        ])
+                    }
+                }
+            }
 
         default:
             addDebugLog("❓ Unknown type: \(type)")

@@ -312,6 +312,79 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
+    // 🔥 НОВОЕ: Полное пересоздание workout session (агрессивный restart)
+    func recreateWorkoutSession() {
+        print("[WorkoutManager] 🔥 === FULL WORKOUT RECREATION START ===")
+        
+        // Отправляем диагностику на iPhone
+        sendDiagnosticLog("Recreating workout session (full invalidation)")
+        
+        // 1. Полностью останавливаем builder
+        if let currentBuilder = builder {
+            print("[WorkoutManager] 🔥 Ending builder collection...")
+            currentBuilder.endCollection(withEnd: Date()) { success, error in
+                if let error = error {
+                    print("[WorkoutManager] ⚠️ Builder end error: \(error.localizedDescription)")
+                } else {
+                    print("[WorkoutManager] ✅ Builder ended successfully")
+                }
+            }
+        }
+        
+        // 2. Полностью останавливаем session
+        if let currentSession = session {
+            print("[WorkoutManager] 🔥 Ending session...")
+            currentSession.end()
+        }
+        
+        // 3. Обнуляем ссылки
+        print("[WorkoutManager] 🔥 Invalidating session/builder references...")
+        session = nil
+        builder = nil
+        
+        DispatchQueue.main.async {
+            self.isActive = false
+            self.heartRate = 0
+        }
+        
+        // 4. Даем системе время на очистку (2 секунды)
+        print("[WorkoutManager] 🔥 Waiting 2s for HealthKit cleanup...")
+        sendDiagnosticLog("Waiting 2s for HealthKit cleanup")
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            print("[WorkoutManager] 🔥 Starting fresh workout session...")
+            self.sendDiagnosticLog("Starting fresh workout after full cleanup")
+            self.startWorkout()
+            print("[WorkoutManager] 🔥 === FULL WORKOUT RECREATION END ===")
+        }
+    }
+    
+    // 🔥 НОВОЕ: Отправка диагностических логов с Watch на iPhone
+    private func sendDiagnosticLog(_ message: String) {
+        let wcSession = WCSession.default
+        guard wcSession.activationState == .activated else { return }
+        
+        let timestamp = ISO8601DateFormatter().string(from: Date())
+        let log: [String: Any] = [
+            "type": "watchDiagnostic",
+            "message": message,
+            "timestamp": timestamp,
+            "heartRate": heartRate,
+            "isActive": isActive,
+            "isAuthorized": isAuthorized
+        ]
+        
+        // Отправляем через context (гарантированная доставка)
+        do {
+            var currentContext = wcSession.applicationContext
+            currentContext["lastDiagnostic"] = log
+            try wcSession.updateApplicationContext(currentContext)
+            print("[WorkoutManager] 📤 Diagnostic sent: \(message)")
+        } catch {
+            print("[WorkoutManager] ⚠️ Failed to send diagnostic: \(error.localizedDescription)")
+        }
+    }
+    
     // 🔥 ПЕРЕДЕЛАНО: updateApplicationContext = PRIMARY (как в main 86cd4bc)
     private func sendHeartRateToPhone(_ hr: Double, immediate: Bool = false) {
         let now = Date()

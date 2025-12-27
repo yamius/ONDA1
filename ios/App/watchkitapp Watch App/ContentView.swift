@@ -62,19 +62,18 @@ struct ContentView: View {
             guard justGranted else { return }
             
             print("[ContentView] 🎉 Permission granted detected via @Published!")
+            print("[ContentView] 🔥 Triggering FULL workout recreation...")
             
-            // Если workout уже запущен → перезапускаем для активации HR sensor
+            // 🔥 НОВОЕ: Полное пересоздание workout session
+            // Используем агрессивный restart: invalidate + 2s delay + recreate
             if workoutManager.isActive {
-                print("[ContentView] 🔄 Restarting workout immediately after permission grant...")
-                workoutManager.stopWorkout()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                    print("[ContentView] 🏃 Starting workout with fresh permissions...")
-                    workoutManager.startWorkout()
-                    // Сбрасываем таймер для нового ожидания
-                    waitingSeconds = 0
-                    lastHRUpdateTime = Date()
-                    retryAttempted = false  // Даем еще один шанс на retry если нужно
-                }
+                print("[ContentView] 🔥 Calling recreateWorkoutSession()...")
+                workoutManager.recreateWorkoutSession()
+                
+                // Сбрасываем таймер для нового ожидания
+                waitingSeconds = 0
+                lastHRUpdateTime = Date()
+                retryAttempted = false
             }
             
             // Сбрасываем флаг
