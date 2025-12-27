@@ -539,14 +539,11 @@ extension WorkoutManager: WKExtendedRuntimeSessionDelegate {
         let reasonString: String
         switch reason {
         case .sessionInProgress:
-            reasonString = "sessionInProgress (workout already running)"
-            // Это нормально - значит HKWorkoutSession уже держит приложение активным
-            print("[WorkoutManager] ℹ️ Extended session invalidated: \(reasonString)")
+            reasonString = "sessionInProgress (HKWorkoutSession active)"
+            logDiagnostic("ℹ️ Extended session invalidated: \(reasonString)")
             return
         case .expired:
             reasonString = "expired"
-        case .userRequest:
-            reasonString = "userRequest"
         @unknown default:
             reasonString = "unknown(\(reason.rawValue))"
         }
@@ -713,11 +710,10 @@ extension WorkoutManager: WCSessionDelegate {
         let timeSinceLast = lastReachabilityChange.map { now.timeIntervalSince($0) } ?? 0
         lastReachabilityChange = now
         
-        let paired = session.isPaired
-        let installed = session.isWatchAppInstalled
         let activated = session.activationState == .activated
         
-        logDiagnostic("📡 Reachability changed: \(reachable) (paired=\(paired), installed=\(installed), activated=\(activated), Δ\(String(format: "%.1f", timeSinceLast))s)", important: true)
+        // 🔥 ИСПРАВЛЕНО: isPaired и isWatchAppInstalled недоступны на watchOS (только на iOS)
+        logDiagnostic("📡 Reachability changed: \(reachable) (activated=\(activated), Δ\(String(format: "%.1f", timeSinceLast))s)", important: true)
         
         // Если связь восстановилась, отправляем накопленные данные
         if reachable {
@@ -840,8 +836,8 @@ extension WorkoutManager: WCSessionDelegate {
                     // ✅ Вибрация ТОЛЬКО в фоне (привлечь внимание)
                     WKInterfaceDevice.current().play(.notification)
                     
-                    // Показываем уведомление
-                    NotificationManager.shared.showOpenAppNotification()
+                    // 🔥 ИСПРАВЛЕНО: NotificationManager отсутствует в OndaWatch
+                    // Убрано: NotificationManager.shared.showOpenAppNotification()
                     
                     // Запускаем workout даже в фоне - HKWorkoutSession работает в фоне
                     print("[WorkoutManager] 🏃 Starting workout in background")
