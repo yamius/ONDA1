@@ -29,8 +29,14 @@ class WorkoutManager: NSObject, ObservableObject {
     @Published var authorizationStatus: HKAuthorizationStatus = .notDetermined
     @Published var permissionJustGranted: Bool = false  // 🔥 НОВОЕ: Флаг для немедленного restart
     
+    // 🔥 НОВОЕ: Timestamps для диагностики
+    private var workoutStartTime: Date?
+    private var extendedSessionStartTime: Date?
+    private var lastReachabilityChange: Date?
+    
     override init() {
         super.init()
+        logDiagnostic("🚀 WorkoutManager initialized")
         setupWatchConnectivity()
         startExtendedSession()
         startReconnectionMonitor()
@@ -38,6 +44,20 @@ class WorkoutManager: NSObject, ObservableObject {
     
     deinit {
         reconnectionTimer?.invalidate()
+        logDiagnostic("💀 WorkoutManager deinitialized")
+    }
+    
+    // 🔥 НОВОЕ: Единый метод логирования с отправкой на iPhone
+    private func logDiagnostic(_ message: String, important: Bool = false) {
+        let timestamp = DateFormatter.localizedString(from: Date(), dateStyle: .none, timeStyle: .medium)
+        let prefix = important ? "🔥" : "📊"
+        let fullMessage = "[\(timestamp)] \(prefix) [Watch] \(message)"
+        print(fullMessage)
+        
+        // Отправляем важные логи на iPhone
+        if important {
+            sendDiagnosticLog(message)
+        }
     }
     
     private func setupWatchConnectivity() {
@@ -90,32 +110,40 @@ class WorkoutManager: NSObject, ObservableObject {
     }
     
     func startExtendedSession() {
+        logDiagnostic("🕐 startExtendedSession() called", important: true)
+        
         // Проверяем текущее состояние
         if let currentSession = extendedSession {
+            let stateStr: String
             switch currentSession.state {
             case .running:
-                print("[WorkoutManager] Extended session already running")
+                stateStr = "running"
+                logDiagnostic("⏭️ Extended session already running, skipping")
                 return
             case .scheduled:
-                print("[WorkoutManager] Extended session scheduled")
+                stateStr = "scheduled"
+                logDiagnostic("⏭️ Extended session scheduled, skipping")
                 return
-            case .notStarted, .invalid:
-                print("[WorkoutManager] Extended session invalid, creating new")
-                extendedSession = nil
+            case .notStarted:
+                stateStr = "notStarted"
+            case .invalid:
+                stateStr = "invalid"
             @unknown default:
-                print("[WorkoutManager] Extended session unknown state")
+                stateStr = "unknown"
             }
+            logDiagnostic("🔄 Extended session state: \(stateStr), creating new", important: true)
+            extendedSession = nil
         }
         
         extendedSession = WKExtendedRuntimeSession()
         extendedSession?.delegate = self
         
         // 🔥 Запускаем сессию на 1 час вперед (3600 секунд)
-        // Это позволяет Watch работать в фоне даже при потускневшем экране
         let oneHourFromNow = Date().addingTimeInterval(3600)
         extendedSession?.start(at: oneHourFromNow)
+        extendedSessionStartTime = Date()
         
-        print("[WorkoutManager] 🕐 Starting extended runtime session for 1 hour (until \(oneHourFromNow))")
+        logDiagnostic("✅ Extended session created, scheduled until \(oneHourFromNow)", important: true)
     }
     
     func stopExtendedSession() {
@@ -244,9 +272,11 @@ class WorkoutManager: NSObject, ObservableObject {
     }
     
     func startWorkout() {
+        logDiagnostic("🏃 startWorkout() called", important: true)
+        
         // Если сессия уже активна, не запускаем повторно
         if session?.state == .running {
-            print("[WorkoutManager] Workout already running")
+            logDiagnostic("⏭️ Workout already running, skipping")
             return
         }
         
@@ -275,6 +305,7 @@ class WorkoutManager: NSObject, ObservableObject {
             
             // Запускаем сессию
             let startDate = Date()
+            workoutStartTime = startDate
             newSession.startActivity(with: startDate)
             newBuilder.beginCollection(withStart: startDate) { [weak self] success, error in
                 guard let self = self else { return }
@@ -282,17 +313,18 @@ class WorkoutManager: NSObject, ObservableObject {
                 DispatchQueue.main.async {
                     if success {
                         self.isActive = true
-                        print("[WorkoutManager] Workout started successfully")
+                        self.logDiagnostic("✅ Workout started successfully at \(startDate)", important: true)
                         
                         // Убеждаемся что extended session активна
                         self.startExtendedSession()
                     } else {
-                        print("[WorkoutManager] Failed to begin collection: \(error?.localizedDescription ?? "unknown")")
+                        let errorMsg = error?.localizedDescription ?? "unknown"
+                        self.logDiagnostic("❌ Failed to begin collection: \(errorMsg)", important: true)
                     }
                 }
             }
         } catch {
-            print("[WorkoutManager] Error starting workout: \(error.localizedDescription)")
+            logDiagnostic("❌ Error starting workout: \(error.localizedDescription)", important: true)
         }
     }
     
@@ -400,10 +432,11 @@ class WorkoutManager: NSObject, ObservableObject {
         let wcSession = WCSession.default
         
         guard wcSession.activationState == .activated else {
-            print("[WorkoutManager] ❌ Cannot send HR: WCSession not activated")
+            logDiagnostic("❌ Cannot send HR: WCSession not activated", important: true)
             return
         }
         
+        let isReachable = wcSession.isReachable
         let message: [String: Any] = [
             "type": "heartRate",
             "value": hr,
@@ -411,8 +444,6 @@ class WorkoutManager: NSObject, ObservableObject {
         ]
         
         // 🔥 PRIMARY: updateApplicationContext (самый стабильный)
-        // Выживает при диалогах потому что iOS system daemon синхронизирует
-        // НЕ требует isReachable=true - работает ВСЕГДА
         do {
             try wcSession.updateApplicationContext([
                 "lastUpdate": message,
@@ -420,25 +451,24 @@ class WorkoutManager: NSObject, ObservableObject {
                 "timestamp": now.timeIntervalSince1970,
                 "isWorkoutActive": isActive
             ])
-            print("[WorkoutManager] 📋 Context updated: \(Int(hr)) bpm")
+            logDiagnostic("📋 Context updated: \(Int(hr)) bpm, reach=\(isReachable)")
         } catch {
-            print("[WorkoutManager] ⚠️ Context update failed: \(error.localizedDescription)")
+            logDiagnostic("❌ Context update failed: \(error.localizedDescription)", important: true)
         }
         
         // 🔥 SECONDARY: sendMessage ТОЛЬКО если реально reachable (realtime БОНУС)
-        // Отключается в accumulation mode чтобы избежать ошибок
         if wcSession.isReachable && !isInAccumulationMode {
             wcSession.sendMessage(message, replyHandler: { _ in
-                print("[WorkoutManager] 💗 HR sent realtime: \(Int(hr)) bpm")
+                self.logDiagnostic("💗 sendMessage SUCCESS: \(Int(hr)) bpm")
             }) { error in
-                // При ошибке sendMessage → переключаемся в accumulation mode
-                print("[WorkoutManager] ⚠️ sendMessage error, switching to context-only: \(error.localizedDescription)")
+                self.logDiagnostic("⚠️ sendMessage FAILED: \(error.localizedDescription), switching to context-only", important: true)
                 DispatchQueue.main.async {
                     self.isInAccumulationMode = true
                 }
             }
         } else {
-            print("[WorkoutManager] 📋 Context-only mode (reach=\(wcSession.isReachable), accum=\(isInAccumulationMode))")
+            let reason = !wcSession.isReachable ? "not reachable" : "accumulation mode"
+            logDiagnostic("📋 Context-only mode (\(reason))")
         }
     }
     
@@ -514,6 +544,8 @@ extension WorkoutManager: WKExtendedRuntimeSessionDelegate {
             return
         case .expired:
             reasonString = "expired"
+        case .userRequest:
+            reasonString = "userRequest"
         @unknown default:
             reasonString = "unknown(\(reason.rawValue))"
         }
@@ -676,7 +708,15 @@ extension WorkoutManager: WCSessionDelegate {
     
     func sessionReachabilityDidChange(_ session: WCSession) {
         let reachable = session.isReachable
-        print("[WorkoutManager] 📡 Reachability changed: \(reachable)")
+        let now = Date()
+        let timeSinceLast = lastReachabilityChange.map { now.timeIntervalSince($0) } ?? 0
+        lastReachabilityChange = now
+        
+        let paired = session.isPaired
+        let installed = session.isWatchAppInstalled
+        let activated = session.activationState == .activated
+        
+        logDiagnostic("📡 Reachability changed: \(reachable) (paired=\(paired), installed=\(installed), activated=\(activated), Δ\(String(format: "%.1f", timeSinceLast))s)", important: true)
         
         // Если связь восстановилась, отправляем накопленные данные
         if reachable {
@@ -684,9 +724,11 @@ extension WorkoutManager: WCSessionDelegate {
             
             // Также отправляем текущее значение HR если оно есть
             if heartRate > 0 {
-                print("[WorkoutManager] Connection restored, sending current HR: \(Int(heartRate)) bpm")
+                logDiagnostic("💗 Connection restored, sending current HR: \(Int(heartRate)) bpm")
                 sendHeartRateToPhone(heartRate, immediate: true)
             }
+        } else {
+            logDiagnostic("⚠️ Connection lost, will use context-only mode", important: true)
         }
     }
     
@@ -796,6 +838,9 @@ extension WorkoutManager: WCSessionDelegate {
                     
                     // ✅ Вибрация ТОЛЬКО в фоне (привлечь внимание)
                     WKInterfaceDevice.current().play(.notification)
+                    
+                    // Показываем уведомление
+                    NotificationManager.shared.showOpenAppNotification()
                     
                     // Запускаем workout даже в фоне - HKWorkoutSession работает в фоне
                     print("[WorkoutManager] 🏃 Starting workout in background")
