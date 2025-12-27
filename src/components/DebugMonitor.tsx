@@ -47,7 +47,7 @@ export function DebugMonitor({ buildNumber, commitHash, branchName }: DebugMonit
         message: message.replace(/^\[[^\]]+\]\s*/, '') // Убираем категорию из сообщения
       };
 
-      setLogs(prev => [...prev.slice(-2499), log]); // Храним последние 2500 логов
+      setLogs(prev => [...prev.slice(-4999), log]); // Храним последние 5000 логов
     };
 
     console.log = (...args) => {
@@ -94,16 +94,17 @@ export function DebugMonitor({ buildNumber, commitHash, branchName }: DebugMonit
       ''
     ].join('\n');
 
-    const logText = header + logs.map(log => 
+    const logText = header + logs.slice(-5000).map(log =>  // 🔥 Увеличено до 5000 последних логов
       `[${log.timestamp}] [${log.level.toUpperCase()}] [${log.category}] ${log.message}`
     ).join('\n');
 
     const blob = new Blob([logText], { type: 'text/plain' });
     const timestamp = new Date().toISOString().slice(0, 19).replace(/:/g, '-');
     const commit = commitHash ? `-${commitHash.slice(0, 7)}` : '';
-    const fileName = `onda-debug-${timestamp}-${logs.length}logs${commit}.txt`;
+    const logCount = Math.min(logs.length, 5000); // Ограничено 5000
+    const fileName = `onda-debug-${timestamp}-${logCount}logs${commit}.txt`;
 
-    console.log(`[DebugMonitor] 📥 Preparing to download ${logs.length} log entries (branch: ${branchName || 'unknown'}, commit: ${commitHash || 'local'})`);
+    console.log(`[DebugMonitor] 📥 Preparing to download ${logCount} log entries (branch: ${branchName || 'unknown'}, commit: ${commitHash || 'local'})`);
 
     // Проверяем доступность Share API (работает на iOS)
     if (navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], fileName)] })) {

@@ -36,7 +36,8 @@ class WorkoutManager: NSObject, ObservableObject {
     
     override init() {
         super.init()
-        logDiagnostic("🚀 WorkoutManager initialized")
+        let bundleId = Bundle.main.bundleIdentifier ?? "unknown"
+        logDiagnostic("🚀 WorkoutManager initialized [OndaWatch] bundle: \(bundleId)", important: true)
         setupWatchConnectivity()
         startExtendedSession()
         startReconnectionMonitor()
