@@ -235,19 +235,19 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
     }
   }, [isMonitoring, mode, queryHeartRateData]);
 
+  // 🔥 ИСПРАВЛЕНО: Убраны isMonitoring и mode из зависимостей
+  // Эти зависимости вызывали cleanup при каждом изменении state,
+  // что приводило к остановке мониторинга сразу после старта
   useEffect(() => {
     console.log('[HealthKit] 🟢 useEffect mounted, attaching cleanup');
     return () => {
-      console.log('[HealthKit] 🔴 CLEANUP TRIGGERED!');
-      console.log('[HealthKit] Cleanup reason: component unmounting or dependencies changed');
-      console.log('[HealthKit] Stack trace:', new Error().stack);
-      console.log('[HealthKit] Current monitoring state:', { isMonitoring, mode });
+      console.log('[HealthKit] 🔴 CLEANUP TRIGGERED (component unmount only)');
       if (intervalRef.current) {
         clearInterval(intervalRef.current);
       }
       stopRealtimeMonitoring();
     };
-  }, [stopRealtimeMonitoring, isMonitoring, mode]);
+  }, [stopRealtimeMonitoring]); // ✅ Только stopRealtimeMonitoring
 
   return {
     heartRate,

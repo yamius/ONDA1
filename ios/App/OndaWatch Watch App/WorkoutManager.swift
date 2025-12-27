@@ -475,16 +475,25 @@ extension WorkoutManager: WKExtendedRuntimeSessionDelegate {
     }
     
     func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
-        print("[WorkoutManager] ⚠️ Extended session will expire in ~30 sec, prolonging for another hour...")
+        print("[WorkoutManager] ⚠️ Extended session will expire in ~30 sec...")
         
-        // 🔥 Автоматическая пролонгация на еще 1 час
-        // Не останавливаем сессию, а продлеваем её
         DispatchQueue.main.async {
             if self.isActive {
-                // Если воркаут активен - продлеваем
-                let oneHourFromNow = Date().addingTimeInterval(3600)
-                extendedRuntimeSession.start(at: oneHourFromNow)
-                print("[WorkoutManager] ✅ Extended session prolonged until \(oneHourFromNow)")
+                // 🔥 ИСПРАВЛЕНО: Нельзя вызывать start(at:) повторно на той же сессии
+                // Нужно invalidate старую и создать новую
+                print("[WorkoutManager] 🔄 Recreating extended session for another hour...")
+                
+                // 1. Invalidate старую сессию
+                extendedRuntimeSession.invalidate()
+                self.extendedSession = nil
+                
+                // 2. Создать и запустить новую сессию через 0.5 секунды
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    if self.isActive {
+                        self.startExtendedSession()
+                        print("[WorkoutManager] ✅ New extended session started")
+                    }
+                }
             } else {
                 // Если воркаут остановлен - завершаем extended session
                 print("[WorkoutManager] ℹ️ Workout not active, letting session expire")
