@@ -34,6 +34,10 @@ class WorkoutManager: NSObject, ObservableObject {
     private var extendedSessionStartTime: Date?
     private var lastReachabilityChange: Date?
     
+    // 🔥 НОВОЕ: Heartbeat timeout monitoring
+    private var lastIphoneHeartbeatTime: Date?
+    private var heartbeatCheckTimer: Timer?
+    
     override init() {
         super.init()
         let bundleId = Bundle.main.bundleIdentifier ?? "unknown"
@@ -41,10 +45,12 @@ class WorkoutManager: NSObject, ObservableObject {
         setupWatchConnectivity()
         startExtendedSession()
         startReconnectionMonitor()
+        startHeartbeatMonitor()  // ← Запускаем мониторинг heartbeat
     }
     
     deinit {
         reconnectionTimer?.invalidate()
+        heartbeatCheckTimer?.invalidate()  // ← Очищаем
         logDiagnostic("💀 WorkoutManager deinitialized")
     }
     
@@ -77,6 +83,37 @@ class WorkoutManager: NSObject, ObservableObject {
             self?.checkAndSendPendingData()
         }
         print("[WorkoutManager] Reconnection monitor started")
+    }
+    
+    // 🔥 НОВОЕ: Мониторинг heartbeat от iPhone
+    private func startHeartbeatMonitor() {
+        heartbeatCheckTimer?.invalidate()
+        heartbeatCheckTimer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true) { [weak self] _ in
+            self?.checkIphoneHeartbeat()
+        }
+        logDiagnostic("💓 Heartbeat monitor started (check every 10s)", important: true)
+    }
+    
+    private func checkIphoneHeartbeat() {
+        guard let lastBeat = lastIphoneHeartbeatTime else {
+            // Еще не получали heartbeat (первый запуск или после перезагрузки)
+            return
+        }
+        
+        let elapsed = Date().timeIntervalSince(lastBeat)
+        
+        if elapsed > 60 {  // 1 минута без heartbeat от iPhone
+            logDiagnostic("💔 No iPhone heartbeat for \(Int(elapsed))s - iPhone app likely closed", important: true)
+            
+            if isActive {
+                logDiagnostic("🛑 Auto-stopping workout due to iPhone inactivity", important: true)
+                stopWorkout()
+                stopExtendedSession()
+                
+                // Сбрасываем чтобы не спамить
+                lastIphoneHeartbeatTime = nil
+            }
+        }
     }
     
     private func checkAndSendPendingData() {
@@ -731,6 +768,8 @@ extension WorkoutManager: WCSessionDelegate {
     
     func session(_ session: WCSession, didReceiveMessage message: [String: Any]) {
         print("[WorkoutManager] 📨 Received message: \(message.keys.joined(separator: ", "))")
+        // 🔥 Обновляем heartbeat timestamp для ЛЮБОГО сообщения от iPhone
+        lastIphoneHeartbeatTime = Date()
         handleCommand(message)
     }
     
@@ -738,6 +777,8 @@ extension WorkoutManager: WCSessionDelegate {
                 didReceiveMessage message: [String: Any],
                 replyHandler: @escaping ([String: Any]) -> Void) {
         print("[WorkoutManager] 📨 Received message with reply: \(message.keys.joined(separator: ", "))")
+        // 🔥 Обновляем heartbeat timestamp
+        lastIphoneHeartbeatTime = Date()
         handleCommand(message)
         
         // Отправляем ответ с текущим статусом
@@ -750,12 +791,16 @@ extension WorkoutManager: WCSessionDelegate {
     
     func session(_ session: WCSession, didReceiveUserInfo userInfo: [String: Any] = [:]) {
         print("[WorkoutManager] 📦 Received userInfo (background wake): \(userInfo.keys.joined(separator: ", "))")
+        // 🔥 Обновляем heartbeat timestamp
+        lastIphoneHeartbeatTime = Date()
         handleCommand(userInfo)
     }
     
     // Обработка applicationContext - вызывается когда iPhone обновляет контекст
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
         print("[WorkoutManager] 📋 Received applicationContext: \(applicationContext.keys.joined(separator: ", "))")
+        // 🔥 Обновляем heartbeat timestamp для context тоже
+        lastIphoneHeartbeatTime = Date()
         
         if let command = applicationContext["command"] as? String {
             handleCommand(["type": command])
