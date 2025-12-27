@@ -244,16 +244,12 @@ struct ContentView: View {
     
     private func checkInitialPermissionState() {
         print("[ContentView] 🔍 === Permission Check Started ===")
-        print("[ContentView] Current HR: \(workoutManager.heartRate)")
         print("[ContentView] UserDefaults flag: \(UserDefaults.standard.bool(forKey: "healthkit_permission_granted"))")
         print("[ContentView] isAuthorized: \(workoutManager.isAuthorized)")
         
-        // Check if we already have heart rate data
-        if workoutManager.heartRate > 0 {
-            print("[ContentView] ✅ HR already available → granted")
-            permissionState = .granted
-            return
-        }
+        // 🔥 УДАЛЕНА ПРОВЕРКА #1: if workoutManager.heartRate > 0
+        // Причина: heartRate > 0 НЕ означает наличие разрешений!
+        // Это может быть старое значение из памяти, что позволяет обойти запрос разрешений.
         
         // Check saved permission state
         let wasGranted = UserDefaults.standard.bool(forKey: "healthkit_permission_granted")
