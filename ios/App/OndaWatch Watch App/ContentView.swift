@@ -42,7 +42,13 @@ struct ContentView: View {
             }
         }
         .onAppear {
+            print("[ContentView] 🟢 ContentView appeared (app became visible)")
             checkInitialPermissionState()
+        }
+        .onDisappear {
+            print("[ContentView] 🔴 ContentView disappeared (app closing/backgrounding)")
+            waitingTimer?.invalidate()
+            waitingTimer = nil
         }
         .onChange(of: workoutManager.heartRate) { newValue in
             if newValue > 0 {
@@ -54,10 +60,6 @@ struct ContentView: View {
                     permissionState = .granted
                 }
             }
-        }
-        .onDisappear {
-            waitingTimer?.invalidate()
-            waitingTimer = nil
         }
         .onChange(of: workoutManager.permissionJustGranted) { justGranted in
             guard justGranted else { return }
@@ -195,9 +197,12 @@ struct ContentView: View {
         }
         .padding(.horizontal, 8)
         .onAppear {
+            print("[ContentView] 🟢 mainView appeared")
             if !workoutManager.isActive {
-                print("[ContentView] Permission granted, starting workout")
+                print("[ContentView] 💡 Permission granted, starting workout (isActive=false)")
                 workoutManager.startWorkout()
+            } else {
+                print("[ContentView] ℹ️ Workout already active (isActive=true)")
             }
         }
     }

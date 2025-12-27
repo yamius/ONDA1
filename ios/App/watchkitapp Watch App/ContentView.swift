@@ -42,10 +42,17 @@ struct ContentView: View {
             }
         }
         .onAppear {
+            print("[ContentView] 🟢 ContentView appeared (app became visible)")
             checkInitialPermissionState()
+        }
+        .onDisappear {
+            print("[ContentView] 🔴 ContentView disappeared (app closing/backgrounding)")
+            waitingTimer?.invalidate()
+            waitingTimer = nil
         }
         .onChange(of: workoutManager.heartRate) { newValue in
             if newValue > 0 {
+                // HR received - permission is working
                 waitingTimer?.invalidate()
                 waitingTimer = nil
                 if permissionState != .granted {
@@ -53,10 +60,6 @@ struct ContentView: View {
                     permissionState = .granted
                 }
             }
-        }
-        .onDisappear {
-            waitingTimer?.invalidate()
-            waitingTimer = nil
         }
         .onChange(of: workoutManager.permissionJustGranted) { justGranted in
             guard justGranted else { return }
@@ -194,47 +197,50 @@ struct ContentView: View {
         }
         .padding(.horizontal, 8)
         .onAppear {
+            print("[ContentView] 🟢 mainView appeared")
             if !workoutManager.isActive {
-                print("[ContentView] Permission granted, starting workout")
+                print("[ContentView] 💡 Permission granted, starting workout (isActive=false)")
                 workoutManager.startWorkout()
+            } else {
+                print("[ContentView] ℹ️ Workout already active (isActive=true)")
             }
         }
     }
     
     private var deniedView: some View {
-        ScrollView {
-            VStack(spacing: 8) {
-                Image(systemName: "xmark.circle")
-                    .font(.system(size: 32))
-                    .foregroundColor(.red)
-                
-                Text("Доступ запрещён")
-                    .font(.headline)
-                
-                VStack(alignment: .leading, spacing: 4) {
-                    Text("На iPhone откройте:")
-                        .font(.caption2)
-                        .foregroundColor(.secondary)
-                    Text("Настройки → Здоровье → Доступ к данным → ONDA")
-                        .font(.caption2)
-                        .foregroundColor(.cyan)
+        VStack(spacing: 10) {
+            Image(systemName: "xmark.circle")
+                .font(.system(size: 40))
+                .foregroundColor(.red)
+            
+            Text("Доступ запрещён")
+                .font(.headline)
+            
+            Text("Откройте Настройки > Здоровье > ONDA")
+                .font(.caption2)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+            
+            Button(action: openHealthSettings) {
+                HStack(spacing: 4) {
+                    Image(systemName: "gear")
+                        .font(.caption)
+                    Text("Настройки")
+                        .font(.caption)
                 }
-                .multilineTextAlignment(.leading)
-                .padding(.vertical, 4)
-                
-                Button(action: retryAfterSettingsChange) {
-                    HStack(spacing: 4) {
-                        Image(systemName: "arrow.clockwise")
-                            .font(.caption)
-                        Text("Проверить")
-                            .font(.caption)
-                    }
-                }
-                .buttonStyle(.borderedProminent)
-                .tint(.green)
             }
-            .padding(.horizontal, 8)
+            .buttonStyle(.borderedProminent)
+            .tint(.blue)
+            
+            Button(action: {
+                permissionState = .needsPermission
+            }) {
+                Text("Повторить")
+                    .font(.caption)
+            }
+            .buttonStyle(.bordered)
         }
+        .padding(.horizontal, 8)
     }
     
     // MARK: - Logic
@@ -245,12 +251,14 @@ struct ContentView: View {
         print("[ContentView] UserDefaults flag: \(UserDefaults.standard.bool(forKey: "healthkit_permission_granted"))")
         print("[ContentView] isAuthorized: \(workoutManager.isAuthorized)")
         
+        // Check if we already have heart rate data
         if workoutManager.heartRate > 0 {
             print("[ContentView] ✅ HR already available → granted")
             permissionState = .granted
             return
         }
         
+        // Check saved permission state
         let wasGranted = UserDefaults.standard.bool(forKey: "healthkit_permission_granted")
         if wasGranted {
             print("[ContentView] ✅ UserDefaults says granted")
@@ -291,9 +299,12 @@ struct ContentView: View {
             DispatchQueue.main.async {
                 if success {
                     print("[ContentView] Dialog shown, starting workout and waiting for HR...")
+                    // Start workout immediately
                     workoutManager.startWorkout()
+                    // Move to waiting state
                     permissionState = .waitingForHR
                     waitingSeconds = 0
+                    // Start timer to check if HR arrives
                     startWaitingTimer()
                 } else {
                     print("[ContentView] Permission request failed")
@@ -372,14 +383,12 @@ struct ContentView: View {
         }
     }
     
-    private func retryAfterSettingsChange() {
-        print("[ContentView] Retry after settings change - starting workout directly")
-        workoutManager.startWorkout()
-        permissionState = .waitingForHR
-        waitingSeconds = 0
-        startWaitingTimer()
+    private func openHealthSettings() {
+        // Open Health app settings for this app
+        if let url = URL(string: "x-apple-health://") {
+            WKExtension.shared().openSystemURL(url)
+        }
     }
-    
 }
 
 #Preview {
