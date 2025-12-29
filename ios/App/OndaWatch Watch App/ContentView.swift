@@ -42,7 +42,12 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            print("[ContentView] 🟢 ContentView appeared (app became visible)")
+            let bundleId = Bundle.main.bundleIdentifier ?? "unknown"
+            print("[ContentView] 🟢 ContentView appeared - bundle: \(bundleId)")
+            
+            // Отправляем диагностику на iPhone
+            workoutManager.sendStartupDiagnostic(stage: "ContentView.onAppear", bundle: bundleId)
+            
             checkInitialPermissionState()
         }
         .onDisappear {

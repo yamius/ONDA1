@@ -418,6 +418,50 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
+    // 🔥 Публичный метод для отправки диагностики запуска
+    func sendStartupDiagnostic(stage: String, bundle: String) {
+        print("[WorkoutManager] 🚀 Startup diagnostic: \(stage) - \(bundle)")
+        
+        let wcSession = WCSession.default
+        guard WCSession.isSupported() else {
+            print("[WorkoutManager] ⚠️ WCSession not supported")
+            return
+        }
+        
+        // Активируем сессию если нужно
+        if wcSession.activationState != .activated {
+            wcSession.activate()
+        }
+        
+        let timestamp = ISO8601DateFormatter().string(from: Date())
+        let diagnostic: [String: Any] = [
+            "type": "watchStartup",
+            "stage": stage,
+            "bundleId": bundle,
+            "timestamp": timestamp,
+            "wcState": wcSession.activationState.rawValue,
+            "isReachable": wcSession.isReachable
+        ]
+        
+        // Пробуем отправить через message (быстро, но требует reachable)
+        if wcSession.isReachable {
+            wcSession.sendMessage(diagnostic, replyHandler: nil) { error in
+                print("[WorkoutManager] ⚠️ Message failed: \(error.localizedDescription)")
+            }
+            print("[WorkoutManager] 📤 Startup sent via message")
+        }
+        
+        // Также через context (гарантированная доставка)
+        do {
+            var context = wcSession.applicationContext
+            context["watchStartup"] = diagnostic
+            try wcSession.updateApplicationContext(context)
+            print("[WorkoutManager] 📤 Startup sent via context")
+        } catch {
+            print("[WorkoutManager] ⚠️ Context update failed: \(error.localizedDescription)")
+        }
+    }
+    
     // 🔥 ПЕРЕДЕЛАНО: updateApplicationContext = PRIMARY (как в main 86cd4bc)
     private func sendHeartRateToPhone(_ hr: Double, immediate: Bool = false) {
         let now = Date()

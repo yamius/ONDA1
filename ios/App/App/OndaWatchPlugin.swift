@@ -301,6 +301,29 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
             ]
             handleReceivedData(data)
         }
+        
+        // 🔥 Обработка диагностики запуска Watch App
+        if let startup = applicationContext["watchStartup"] as? [String: Any] {
+            var data = startup
+            data["type"] = "watchStartup"
+            handleReceivedData(data)
+        }
+        
+        // 🔥 Обработка диагностических логов
+        if let diagnostic = applicationContext["lastDiagnostic"] as? [String: Any] {
+            var data = diagnostic
+            if data["type"] == nil {
+                data["type"] = "watchDiagnostic"
+            }
+            handleReceivedData(data)
+        }
+        
+        // 🔥 Прямой лог при старте Watch App
+        if let watchAppStarted = applicationContext["watchAppStarted"] as? Bool, watchAppStarted {
+            let bundleId = applicationContext["bundleId"] as? String ?? "unknown"
+            let target = applicationContext["target"] as? String ?? "unknown"
+            addDebugLog("🚀🚀🚀 [Watch App STARTED] bundle=\(bundleId), target=\(target)")
+        }
     }
     
     // Общий обработчик данных с часов
@@ -365,6 +388,29 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
                             "isAuthorized": isAuthorized
                         ])
                     }
+                }
+            }
+        
+        // 🔥 Обработка логов запуска Watch App
+        case "watchStartup":
+            let stage = data["stage"] as? String ?? "unknown"
+            let bundleId = data["bundleId"] as? String ?? "unknown"
+            let wcState = data["wcState"] as? Int ?? -1
+            let isReachable = data["isReachable"] as? Bool ?? false
+            let timestamp = data["timestamp"] as? String ?? "unknown"
+            
+            addDebugLog("🚀 [Watch STARTUP] stage=\(stage), bundle=\(bundleId), wcState=\(wcState), reachable=\(isReachable)")
+            
+            // Отправляем в JavaScript для DebugMonitor
+            DispatchQueue.main.async {
+                if let p = self.plugin {
+                    p.notifyListeners("watchStartup", data: [
+                        "stage": stage,
+                        "bundleId": bundleId,
+                        "wcState": wcState,
+                        "isReachable": isReachable,
+                        "timestamp": timestamp
+                    ])
                 }
             }
 
