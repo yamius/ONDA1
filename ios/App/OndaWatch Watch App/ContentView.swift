@@ -205,37 +205,34 @@ struct ContentView: View {
     }
     
     private var deniedView: some View {
-        VStack(spacing: 10) {
-            Image(systemName: "xmark.circle")
-                .font(.system(size: 40))
-                .foregroundColor(.red)
+        VStack(spacing: 8) {
+            Image(systemName: "heart.text.square")
+                .font(.system(size: 36))
+                .foregroundColor(.cyan)
             
-            Text("Доступ запрещён")
+            Text("Включите доступ")
                 .font(.headline)
             
-            Text("Откройте Настройки > Здоровье > ONDA")
+            Text("Параметры → Здоровье → ONDA → включить Пульс")
                 .font(.caption2)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
             
-            Button(action: openHealthSettings) {
-                HStack(spacing: 4) {
-                    Image(systemName: "gear")
-                        .font(.caption)
-                    Text("Настройки")
-                        .font(.caption)
-                }
-            }
-            .buttonStyle(.borderedProminent)
-            .tint(.blue)
+            Text("Перезапустите приложение")
+                .font(.caption2)
+                .foregroundColor(.cyan)
+                .multilineTextAlignment(.center)
             
             Button(action: {
-                permissionState = .needsPermission
+                retryAttempted = false
+                permissionState = .checking
+                checkInitialPermissionState()
             }) {
                 Text("Повторить")
                     .font(.caption)
             }
-            .buttonStyle(.bordered)
+            .buttonStyle(.borderedProminent)
+            .tint(.cyan)
         }
         .padding(.horizontal, 8)
     }
