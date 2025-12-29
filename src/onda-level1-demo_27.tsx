@@ -1877,7 +1877,10 @@ const OndaLevel1 = () => {
         {activePractice.id === 'p1-8' && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioPath="p1/p1-8_Breath Count/p1-8_Breath Count-1.mp3"
+            audioPath={[
+              "p1/p1-8_Breath Count/p1-8_Breath Count-1.mp3",
+              "p1/p1-8_Breath Count/p1-8_Breath Count-2.mp3"
+            ]}
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
@@ -1905,7 +1908,10 @@ const OndaLevel1 = () => {
         {activePractice.id === 'p1-10' && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
-            audioPath="p1/p1-10_I Am Silence/p1-10_I Am Silence-1.mp3"
+            audioPath={[
+              "p1/p1-10_I Am Silence/p1-10_I Am Silence-1.mp3",
+              "p1/p1-10_I Am Silence/p1-10_I Am Silence-2.mp3"
+            ]}
             fadeInDuration={3000}
             fadeOutDuration={3000}
             volume={0.6}
