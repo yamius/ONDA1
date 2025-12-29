@@ -247,20 +247,7 @@ struct ContentView: View {
         print("[ContentView] UserDefaults flag: \(UserDefaults.standard.bool(forKey: "healthkit_permission_granted"))")
         print("[ContentView] isAuthorized: \(workoutManager.isAuthorized)")
         
-        // 🔥 УДАЛЕНА ПРОВЕРКА #1: if workoutManager.heartRate > 0
-        // Причина: heartRate > 0 НЕ означает наличие разрешений!
-        // Это может быть старое значение из памяти, что позволяет обойти запрос разрешений.
-        
-        // Check saved permission state
-        let wasGranted = UserDefaults.standard.bool(forKey: "healthkit_permission_granted")
-        if wasGranted {
-            print("[ContentView] ✅ UserDefaults says granted")
-            permissionState = .granted
-            print("[ContentView] Permission already granted (saved state)")
-            return
-        }
-        
-        // Проверяем фактический статус HealthKit
+        // ✅ Проверяем РЕАЛЬНЫЙ статус HealthKit (не доверяем UserDefaults)
         if workoutManager.isAuthorized {
             print("[ContentView] ✅ HealthKit says authorized")
             permissionState = .granted
@@ -269,18 +256,22 @@ struct ContentView: View {
             return
         }
         
-        // ⏳ Разрешения НЕТ → показываем спиннер (НЕ кнопку!)
-        // Кнопка появится только если iPhone не даст разрешения в течение 3 секунд
-        print("[ContentView] ⚠️ No permissions → waiting 3s for iPhone...")
-        print("[ContentView] Permission not granted, waiting for iPhone to request permissions...")
+        // 🔥 Разрешений НЕТ → автоматически запрашиваем (системное окно появится сразу)
+        print("[ContentView] ⚠️ No permissions → auto-requesting...")
         permissionState = .checking
         
-        // Через 3 секунды если ничего не изменилось → показываем кнопку
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-            if self.permissionState == .checking {
-                print("[ContentView] ⏰ Timeout (3s) → showing permission button")
-                print("[ContentView] Timeout waiting for iPhone, showing permission button")
-                self.permissionState = .needsPermission
+        workoutManager.requestAuthorizationWithCompletion { success in
+            DispatchQueue.main.async {
+                if success {
+                    print("[ContentView] ✅ Auto-request successful, starting workout...")
+                    self.workoutManager.startWorkout()
+                    self.permissionState = .waitingForHR
+                    self.waitingSeconds = 0
+                    self.startWaitingTimer()
+                } else {
+                    print("[ContentView] ❌ Auto-request failed → showing manual button")
+                    self.permissionState = .needsPermission
+                }
             }
         }
     }
