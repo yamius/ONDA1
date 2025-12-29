@@ -1950,6 +1950,225 @@ const OndaLevel1 = () => {
             }}
           />
         )}
+        {/* Part 2 Audio Players */}
+        {activePractice.id === 'p2-1' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-1_Flow Rhythm/p2-1_Flow Rhythm-1.mp3",
+              "p2/p2-1_Flow Rhythm/p2-1_Flow Rhythm-2.mp3",
+              "p2/p2-1_Flow Rhythm/p2-1_Flow Rhythm-3.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p2-2' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-2_Sense of Direction/p2-2_Sense of Direction-1.mp3",
+              "p2/p2-2_Sense of Direction/p2-2_Sense of Direction-2.mp3",
+              "p2/p2-2_Sense of Direction/p2-2_Sense of Direction-3.mp3",
+              "p2/p2-2_Sense of Direction/p2-2_Sense of Direction-4.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p2-3' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-3_Rhythm of Movement/p2-3_Rhythm of Movement-1.mp3",
+              "p2/p2-3_Rhythm of Movement/p2-3_Rhythm of Movement-2.mp3",
+              "p2/p2-3_Rhythm of Movement/p2-3_Rhythm of Movement-3.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p2-4' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-4_Water Balance/p2-4_Water Balance-1.mp3",
+              "p2/p2-4_Water Balance/p2-4_Water Balance-2.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p2-5' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-5_Fluid Form/p2-5_Fluid Form-1.mp3",
+              "p2/p2-5_Fluid Form/p2-5_Fluid Form-2.mp3",
+              "p2/p2-5_Fluid Form/p2-5_Fluid Form-3.mp3",
+              "p2/p2-5_Fluid Form/p2-5_Fluid Form-4.mp3",
+              "p2/p2-5_Fluid Form/p2-5_Fluid Form-5.mp3",
+              "p2/p2-5_Fluid Form/p2-5_Fluid Form-6.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p2-6' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-6_Wave Breath/p2-6_Wave Breath-1.mp3",
+              "p2/p2-6_Wave Breath/p2-6_Wave Breath-2.mp3",
+              "p2/p2-6_Wave Breath/p2-6_Wave Breath-3.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p2-7' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-7_Intuition of Flow/p2-7_Intuition of Flow-1.mp3",
+              "p2/p2-7_Intuition of Flow/p2-7_Intuition of Flow-2.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p2-8' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-8_Focus in Motion/p2-8_Focus in Motion-1.mp3",
+              "p2/p2-8_Focus in Motion/p2-8_Focus in Motion-2.mp3",
+              "p2/p2-8_Focus in Motion/p2-8_Focus in Motion-3.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p2-9' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-9_Flexible Response/p2-9_Flexible Response-1.mp3",
+              "p2/p2-9_Flexible Response/p2-9_Flexible Response-2.mp3",
+              "p2/p2-9_Flexible Response/p2-9_Flexible Response-3.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p2-10' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-10_Still Water/p2-10_Still Water-1.mp3",
+              "p2/p2-10_Still Water/p2-10_Still Water-2.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p2-11' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-11_Deep Current/p2-11_Deep Current-1.mp3",
+              "p2/p2-11_Deep Current/p2-11_Deep Current-2.mp3",
+              "p2/p2-11_Deep Current/p2-11_Deep Current-3.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p2-12' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p2/p2-12_Echo of Ocean/p2-12_Echo of Ocean-1.mp3",
+              "p2/p2-12_Echo of Ocean/p2-12_Echo of Ocean-2.mp3",
+              "p2/p2-12_Echo of Ocean/p2-12_Echo of Ocean-3.mp3",
+              "p2/p2-12_Echo of Ocean/p2-12_Echo of Ocean-4.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDuration: '3s' }} />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s', animationDuration: '3s' }} />
