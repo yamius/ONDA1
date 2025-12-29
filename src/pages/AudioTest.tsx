@@ -12,7 +12,7 @@ export default function AudioTest() {
   const [resetKey, setResetKey] = useState(0);
 
   // Relative paths for useAudioCache (bucket prefix is added automatically)
-  const singleTrackPath = 'p1-1_Breath of Life/p1-1_Breath of Life-1.mp3';
+  const singleTrackPath = 'p1/p1-1_Breath of Life/p1-1_Breath of Life-1.mp3';
   
   const multiTrackPaths = [
     'Anxiety/adaptive-body_cocoon/adaptive-body_cocoon-1.mp3',
