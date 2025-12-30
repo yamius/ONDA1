@@ -265,11 +265,11 @@ struct ContentView: View {
         workoutManager.requestAuthorizationWithCompletion { success in
             DispatchQueue.main.async {
                 if success {
-                    print("[ContentView] ✅ Auto-request successful, starting workout...")
-                    self.workoutManager.startWorkout()
-                    self.permissionState = .waitingForHR
-                    self.waitingSeconds = 0
-                    self.startWaitingTimer()
+                    // 🚀 ОПТИМИЗАЦИЯ: Сразу переходим в mainView (как при перезапуске)
+                    // mainView.onAppear запустит workout
+                    print("[ContentView] ✅ Permissions granted → going directly to mainView")
+                    UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
+                    self.permissionState = .granted
                 } else {
                     print("[ContentView] ❌ Auto-request failed → showing manual button")
                     self.permissionState = .needsPermission
@@ -284,17 +284,13 @@ struct ContentView: View {
         workoutManager.requestAuthorizationWithCompletion { success in
             DispatchQueue.main.async {
                 if success {
-                    print("[ContentView] Dialog shown, starting workout and waiting for HR...")
-                    // Start workout immediately
-                    workoutManager.startWorkout()
-                    // Move to waiting state
-                    permissionState = .waitingForHR
-                    waitingSeconds = 0
-                    // Start timer to check if HR arrives
-                    startWaitingTimer()
+                    // 🚀 ОПТИМИЗАЦИЯ: Сразу переходим в mainView (как при перезапуске)
+                    print("[ContentView] ✅ Permissions granted → going directly to mainView")
+                    UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
+                    self.permissionState = .granted
                 } else {
                     print("[ContentView] Permission request failed")
-                    permissionState = .denied
+                    self.permissionState = .denied
                 }
             }
         }
