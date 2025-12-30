@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { X, Mic, Square, Play, Pause, Volume2, RefreshCw, MessageCircle } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Capacitor } from '@capacitor/core';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 import { LizaChatModal } from './LizaChatModal';
 
@@ -196,35 +197,62 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       const apiUrl = `${SUPABASE_URL}/functions/v1/analyze-emotion`;
       
       // 🔍 ДИАГНОСТИКА
+      const platform = Capacitor.getPlatform();
+      const isNative = Capacitor.isNativePlatform();
       console.log('[EmotionalCheck] 🌐 API URL:', apiUrl);
+      console.log('[EmotionalCheck] 📱 Platform:', platform, 'Native:', isNative);
       console.log('[EmotionalCheck] 🔑 Auth key (first 20 chars):', SUPABASE_ANON_KEY?.substring(0, 20) + '...');
-      console.log('[EmotionalCheck] 📤 Sending as base64 JSON...');
+      console.log('[EmotionalCheck] 📤 Sending as base64 JSON via CapacitorHttp...');
       
       const fetchStartTime = Date.now();
 
-      const response = await fetch(apiUrl, {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ 
-          audio: base64Audio,
-          format: 'base64'
-        }),
-      });
+      // Попытка с retry для iOS
+      let response: Response;
+      let lastError: Error | null = null;
+      const maxRetries = 2;
+      
+      for (let attempt = 1; attempt <= maxRetries; attempt++) {
+        try {
+          console.log(`[EmotionalCheck] 🔄 Fetch attempt ${attempt}/${maxRetries}...`);
+          
+          response = await fetch(apiUrl, {
+            method: 'POST',
+            headers: {
+              'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ 
+              audio: base64Audio,
+              format: 'base64'
+            }),
+          });
+          
+          lastError = null;
+          break; // Success
+        } catch (e) {
+          lastError = e as Error;
+          console.warn(`[EmotionalCheck] ⚠️ Attempt ${attempt} failed:`, lastError.message);
+          if (attempt < maxRetries) {
+            await new Promise(r => setTimeout(r, 1000)); // Wait 1s before retry
+          }
+        }
+      }
+      
+      if (lastError) {
+        throw lastError;
+      }
 
       const fetchDuration = Date.now() - fetchStartTime;
       console.log('[EmotionalCheck] ✅ Fetch completed in', fetchDuration, 'ms');
-      console.log('[EmotionalCheck] 📊 Response status:', response.status);
+      console.log('[EmotionalCheck] 📊 Response status:', response!.status);
 
-      if (!response.ok) {
-        const errorText = await response.text();
+      if (!response!.ok) {
+        const errorText = await response!.text();
         console.error('[EmotionalCheck] ❌ API error response:', errorText);
-        throw new Error(`API error: ${response.status} - ${errorText}`);
+        throw new Error(`API error: ${response!.status} - ${errorText}`);
       }
 
-      const result = await response.json();
+      const result = await response!.json();
       console.log('[EmotionalCheck] 📦 API result received');
 
       if (result.useMock) {

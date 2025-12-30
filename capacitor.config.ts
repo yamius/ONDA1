@@ -21,6 +21,10 @@ const config: CapacitorConfig = {
       permissions: {
         read: ['READ_HEART_RATE', 'READ_WORKOUTS', 'READ_STEPS', 'READ_MINDFULNESS']
       }
+    },
+    // Use native HTTP for iOS to bypass WKWebView restrictions
+    CapacitorHttp: {
+      enabled: true
     }
   }
 };
