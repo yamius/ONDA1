@@ -1,13 +1,9 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { HealthKitDataResult } from '../plugins/healthKitHeartRate';
-import {
-  loadSleepHistory,
-  saveSleepRecord,
-  calculateLifeRhythmMetrics,
-  processHealthKitSleepData,
-  type SleepRecord,
-  type LifeRhythmMetrics
-} from '../services/lifeRhythmService';
+import { rhythmStore, type DaySleep, type LifeRhythmMetrics } from '../sleep/rhythm';
+
+// Адаптер для совместимости с существующим кодом
+type SleepRecord = DaySleep;
 
 interface UseLifeRhythmReturn {
   metrics: LifeRhythmMetrics | null;
@@ -25,10 +21,10 @@ export function useLifeRhythm(): UseLifeRhythmReturn {
   const refresh = useCallback(() => {
     setIsLoading(true);
     try {
-      const loadedHistory = loadSleepHistory();
+      const loadedHistory = rhythmStore.getLog();
       setHistory(loadedHistory);
       
-      const calculatedMetrics = calculateLifeRhythmMetrics(loadedHistory);
+      const calculatedMetrics = rhythmStore.getMetrics();
       setMetrics(calculatedMetrics);
       
       console.log('[LifeRhythm] Refreshed:', {
@@ -48,12 +44,23 @@ export function useLifeRhythm(): UseLifeRhythmReturn {
       return;
     }
 
-    const record = processHealthKitSleepData(healthKitData.sleep.main);
-    if (record) {
-      saveSleepRecord(record);
-      refresh();
-      console.log('[LifeRhythm] Synced from HealthKit:', record);
+    const { sleepStart, wakeTime, durationMin } = healthKitData.sleep.main;
+    
+    if (!sleepStart || !wakeTime || !durationMin) {
+      console.log('[LifeRhythm] Incomplete sleep data');
+      return;
     }
+
+    const today = new Date().toISOString().split('T')[0];
+    rhythmStore.addDay({
+      date: today,
+      sleepStart,
+      wakeTime,
+      durationMin
+    });
+    
+    refresh();
+    console.log('[LifeRhythm] Synced from HealthKit:', { date: today, sleepStart, wakeTime, durationMin });
   }, [refresh]);
 
   useEffect(() => {

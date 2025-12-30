@@ -190,11 +190,22 @@ const OndaLevel1 = () => {
   const sortedByQuality = [...leaderboardData].sort((a, b) => b.avgQuality - a.avgQuality);
   const sortedByTime = [...leaderboardData].sort((a, b) => b.totalTime - a.totalTime);
 
+  // Автосинхронизация ритма жизни при старте и периодическое обновление
   useEffect(() => {
+    // Синхронизация из HealthKit при старте (только на iOS)
+    rhythmStore.syncFromHealthKit().then(synced => {
+      if (synced) {
+        setRhythmProgress(rhythmStore.progress());
+        setRhythmLog(rhythmStore.getLog());
+        console.log('[App] Life Rhythm synced from HealthKit');
+      }
+    }).catch(e => console.log('[App] Life Rhythm sync skipped:', e));
+
+    // Периодическое обновление UI
     const id = setInterval(() => {
       setRhythmProgress(rhythmStore.progress());
       setRhythmLog(rhythmStore.getLog());
-    }, 1000);
+    }, 5000); // Обновляем раз в 5 секунд вместо 1
     return () => clearInterval(id);
   }, []);
 

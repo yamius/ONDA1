@@ -1,6 +1,7 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
 import { Capacitor } from '@capacitor/core';
 import HealthKitHeartRate, { HealthKitDataResult } from '../plugins/healthKitHeartRate';
+import { rhythmStore } from '../sleep/rhythm';
 
 interface UseHealthKitDataReturn {
   data: HealthKitDataResult | null;
@@ -36,7 +37,7 @@ export function useHealthKitData(): UseHealthKitDataReturn {
         try {
           const result = await HealthKitHeartRate.isAvailable();
           setIsAvailable(result.available);
-        } catch (err) {
+        } catch {
           setIsAvailable(false);
         }
       } else {
@@ -80,6 +81,27 @@ export function useHealthKitData(): UseHealthKitDataReturn {
       setData(result);
       setError(null);
       console.log('[HealthKit] All data refreshed:', result);
+      
+      // Синхронизируем данные сна с rhythmStore для артефакта "Ритм Жизни"
+      if (result?.sleep?.main) {
+        const { sleepStart, wakeTime, durationMin } = result.sleep.main;
+        if (sleepStart && wakeTime && durationMin) {
+          const today = new Date().toISOString().split('T')[0];
+          rhythmStore.addDay({
+            date: today,
+            sleepStart,
+            wakeTime,
+            durationMin
+          });
+          console.log('[HealthKit] Synced sleep to rhythmStore:', { 
+            date: today, 
+            sleepStart, 
+            wakeTime, 
+            durationMin,
+            progress: rhythmStore.progress()
+          });
+        }
+      }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to query health data';
       setError(errorMessage);
