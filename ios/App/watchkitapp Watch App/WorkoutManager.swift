@@ -41,6 +41,27 @@ class WorkoutManager: NSObject, ObservableObject {
         setupWatchConnectivity()
         startExtendedSession()
         startReconnectionMonitor()
+        
+        // 🚀 Предварительный "прогрев" HealthKit — запрашиваем статус сразу при инициализации
+        // Это заставляет HealthKit начать инициализацию раньше
+        preWarmHealthKit()
+    }
+    
+    // 🔥 Предварительная инициализация HealthKit для ускорения старта
+    private func preWarmHealthKit() {
+        guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else { return }
+        
+        // Запрашиваем статус авторизации — это "будит" HealthKit
+        let status = healthStore.authorizationStatus(for: heartRateType)
+        print("[WorkoutManager] 🔥 Pre-warm HealthKit: authorization status = \(status.rawValue)")
+        
+        // Если разрешения уже есть — сразу запускаем workout для ускорения
+        if status == .sharingAuthorized {
+            print("[WorkoutManager] 🚀 Permissions exist, pre-starting workout...")
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                self.startWorkout()
+            }
+        }
     }
     
     deinit {
@@ -380,13 +401,13 @@ class WorkoutManager: NSObject, ObservableObject {
             self.heartRate = 0
         }
         
-        // 4. Даем системе время на очистку (2 секунды)
-        print("[WorkoutManager] 🔥 Waiting 2s for HealthKit cleanup...")
-        sendDiagnosticLog("Waiting 2s for HealthKit cleanup")
+        // 4. Даем системе время на очистку (0.5 секунды — оптимизировано)
+        print("[WorkoutManager] 🔥 Waiting 0.5s for HealthKit cleanup...")
+        sendDiagnosticLog("Waiting 0.5s for HealthKit cleanup")
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             print("[WorkoutManager] 🔥 Starting fresh workout session...")
-            self.sendDiagnosticLog("Starting fresh workout after full cleanup")
+            self.sendDiagnosticLog("Starting fresh workout after cleanup")
             self.startWorkout()
             print("[WorkoutManager] 🔥 === FULL WORKOUT RECREATION END ===")
         }
