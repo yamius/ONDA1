@@ -3276,20 +3276,7 @@ const OndaLevel1 = () => {
           </div>
         )}
 
-        {/* Подсказка для разрешения Watch - только если HR никогда не приходил */}
-        {platform === 'ios' && watchHeartRate.watchStatus?.paired && !watchHeartRate.heartRate && !watchHeartRate.isMonitoring && (
-          <div className="mb-6 px-4">
-            <div className="bg-orange-500/10 border border-orange-500/30 rounded-2xl p-4 text-center">
-              <div className="flex items-center justify-center gap-2 text-orange-400 mb-2">
-                <Watch className="w-5 h-5" />
-                <span className="font-medium">{t('nav.watch_hint_title')}</span>
-              </div>
-              <p className="text-white/70 text-sm">
-                {t('nav.watch_hint_text')}
-              </p>
-            </div>
-          </div>
-        )}
+        {/* Подсказка для разрешения Watch - СКРЫТА */}
 
         <div className="grid md:grid-cols-2 gap-4 mb-8">
           {currentCircuit.practices.map(practice => {

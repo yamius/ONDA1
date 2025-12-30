@@ -87,11 +87,8 @@ export function WatchConnectionPrompt({ visible, onConnected }: WatchConnectionP
 
           {/* Content */}
           <div className="flex-1 min-w-0">
-            <h3 className="text-base font-semibold text-white mb-2">
-              Откройте приложение на Apple Watch
-            </h3>
             <p className="text-sm text-gray-300 leading-relaxed">
-              Часы получили сигнал о начале мониторинга. Откройте приложение ONDA на часах для запуска отслеживания пульса.
+              Откройте приложение на Apple Watch для отслеживания пульса
             </p>
 
             {/* Animated dots */}
