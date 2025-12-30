@@ -125,22 +125,34 @@ struct ContentView: View {
     
     private func startInitialization() {
         print("[ContentView] 🔍 === Initialization Started ===")
-        print("[ContentView] isAuthorized: \(workoutManager.isAuthorized)")
         
-        // Если разрешения уже есть — просто запускаем workout (если ещё не запущен)
-        if workoutManager.isAuthorized {
-            print("[ContentView] ✅ Permissions exist, ensuring workout is running...")
-            if !workoutManager.isActive {
-                workoutManager.startWorkout()
-            }
+        // Проверяем был ли диалог уже показан в этой сессии
+        let wasPermissionRequested = UserDefaults.standard.bool(forKey: "healthkit_permission_requested_v2")
+        let isHRWorking = workoutManager.heartRate > 0
+        
+        print("[ContentView] wasPermissionRequested: \(wasPermissionRequested), isHRWorking: \(isHRWorking)")
+        
+        // Если HR уже работает — всё ок
+        if isHRWorking {
+            print("[ContentView] ✅ HR already working, skipping")
             return
         }
         
-        // Разрешений нет — запрашиваем (системное окно появится автоматически)
-        print("[ContentView] ⚠️ No permissions → requesting...")
+        // Если разрешения уже запрашивались и workout активен — ждём HR
+        if wasPermissionRequested && workoutManager.isActive {
+            print("[ContentView] ⏳ Permissions were requested, workout active, waiting for HR...")
+            return
+        }
+        
+        // 🔥 ГЛАВНОЕ: Всегда запрашиваем разрешения при первом запуске
+        // На watchOS нельзя узнать статус read-разрешений до показа диалога
+        print("[ContentView] 📋 Requesting HealthKit permissions (first launch or retry)...")
         
         workoutManager.requestAuthorizationWithCompletion { success in
             DispatchQueue.main.async {
+                // Помечаем что запрос был сделан
+                UserDefaults.standard.set(true, forKey: "healthkit_permission_requested_v2")
+                
                 if success {
                     print("[ContentView] ✅ Permissions granted → starting workout")
                     UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
@@ -150,9 +162,11 @@ struct ContentView: View {
                         self.workoutManager.recreateWorkoutSession()
                     }
                 } else {
-                    print("[ContentView] ❌ Permission request failed, will retry...")
-                    // Повторяем попытку через 3 секунды
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                    print("[ContentView] ❌ Permission request failed, will retry in 5s...")
+                    // Повторяем попытку через 5 секунд
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                        // Сбрасываем флаг для повторной попытки
+                        UserDefaults.standard.set(false, forKey: "healthkit_permission_requested_v2")
                         self.startInitialization()
                     }
                 }

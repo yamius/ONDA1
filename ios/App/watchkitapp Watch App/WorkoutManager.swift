@@ -55,12 +55,17 @@ class WorkoutManager: NSObject, ObservableObject {
         let status = healthStore.authorizationStatus(for: heartRateType)
         print("[WorkoutManager] 🔥 Pre-warm HealthKit: authorization status = \(status.rawValue)")
         
-        // Если разрешения уже есть — сразу запускаем workout для ускорения
-        if status == .sharingAuthorized {
-            print("[WorkoutManager] 🚀 Permissions exist, pre-starting workout...")
+        // Проверяем был ли HR успешно получен ранее (надёжный индикатор что разрешения работают)
+        let wasHRSuccessful = UserDefaults.standard.bool(forKey: "healthkit_permission_granted")
+        
+        // Если разрешения точно работали раньше — сразу запускаем workout для ускорения
+        if wasHRSuccessful && status == .sharingAuthorized {
+            print("[WorkoutManager] 🚀 Permissions confirmed working, pre-starting workout...")
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 self.startWorkout()
             }
+        } else {
+            print("[WorkoutManager] ⏳ Waiting for ContentView to handle permissions")
         }
     }
     
