@@ -265,11 +265,16 @@ struct ContentView: View {
         workoutManager.requestAuthorizationWithCompletion { success in
             DispatchQueue.main.async {
                 if success {
-                    // 🚀 ОПТИМИЗАЦИЯ: Сразу переходим в mainView (как при перезапуске)
-                    // mainView.onAppear запустит workout
-                    print("[ContentView] ✅ Permissions granted → going directly to mainView")
+                    // 🚀 После выдачи разрешений — пересоздаём workout session
+                    // Это "будит" HealthKit и он начинает отдавать HR данные
+                    print("[ContentView] ✅ Permissions granted → recreating workout session")
                     UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
-                    self.permissionState = .granted
+                    
+                    // Небольшая задержка чтобы HealthKit успел применить разрешения
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.workoutManager.recreateWorkoutSession()
+                        self.permissionState = .granted
+                    }
                 } else {
                     print("[ContentView] ❌ Auto-request failed → showing manual button")
                     self.permissionState = .needsPermission
@@ -284,10 +289,14 @@ struct ContentView: View {
         workoutManager.requestAuthorizationWithCompletion { success in
             DispatchQueue.main.async {
                 if success {
-                    // 🚀 ОПТИМИЗАЦИЯ: Сразу переходим в mainView (как при перезапуске)
-                    print("[ContentView] ✅ Permissions granted → going directly to mainView")
+                    // 🚀 После выдачи разрешений — пересоздаём workout session
+                    print("[ContentView] ✅ Permissions granted → recreating workout session")
                     UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
-                    self.permissionState = .granted
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                        self.workoutManager.recreateWorkoutSession()
+                        self.permissionState = .granted
+                    }
                 } else {
                     print("[ContentView] Permission request failed")
                     self.permissionState = .denied
