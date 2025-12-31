@@ -12,12 +12,14 @@ import WatchKit
 struct ContentView: View {
     @StateObject private var workoutManager = WorkoutManager.shared
     @State private var hasStartedInit: Bool = false
+    @State private var showManualInstructions: Bool = false
     
     var body: some View {
         Group {
-            // Простая логика: HR > 0 = главный экран, иначе = ожидание
             if workoutManager.heartRate > 0 {
                 mainView
+            } else if showManualInstructions {
+                instructionsView
             } else {
                 waitingView
             }
@@ -37,8 +39,9 @@ struct ContentView: View {
         }
         .onChange(of: workoutManager.heartRate) { newValue in
             if newValue > 0 {
-                // HR получен — сохраняем флаг разрешений
+                // HR получен — сохраняем флаг разрешений и убираем инструкции
                 UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
+                showManualInstructions = false
                 print("[ContentView] ✅ HR received: \(Int(newValue)) bpm")
             }
         }
@@ -61,6 +64,41 @@ struct ContentView: View {
                 .scaleEffect(1.2)
         }
         .padding(.horizontal, 8)
+    }
+    
+    private var instructionsView: some View {
+        ScrollView {
+            VStack(spacing: 10) {
+                Image(systemName: "gearshape.fill")
+                    .font(.system(size: 32))
+                    .foregroundColor(.orange)
+                
+                Text("Включите доступ")
+                    .font(.headline)
+                
+                Text("Настройки → Здоровье → ONDA → включить Пульс")
+                    .font(.caption)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                
+                Text("Перезапустите приложение")
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                
+                Button(action: {
+                    showManualInstructions = false
+                    hasStartedInit = false
+                    startInitialization()
+                }) {
+                    Text("Повторить")
+                        .font(.footnote)
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.cyan)
+                .padding(.top, 4)
+            }
+            .padding(.horizontal, 8)
+        }
     }
     
     private var mainView: some View {
@@ -168,8 +206,11 @@ struct ContentView: View {
             }
             
             if checks >= maxChecks {
-                print("[ContentView] ⏰ HR check timeout (30s), user may need to grant permissions manually")
+                print("[ContentView] ⏰ HR check timeout (30s), showing manual instructions")
                 timer.invalidate()
+                DispatchQueue.main.async {
+                    self.showManualInstructions = true
+                }
                 return
             }
             
