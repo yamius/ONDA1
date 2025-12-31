@@ -57,15 +57,18 @@ class WorkoutManager: NSObject, ObservableObject {
         
         // Проверяем был ли HR успешно получен ранее (надёжный индикатор что разрешения работают)
         let wasHRSuccessful = UserDefaults.standard.bool(forKey: "healthkit_permission_granted")
+        print("[WorkoutManager] 🔥 wasHRSuccessful (from UserDefaults): \(wasHRSuccessful)")
         
         // Если разрешения точно работали раньше — сразу запускаем workout для ускорения
+        // НО только если статус sharingAuthorized (для write типов это надёжно)
         if wasHRSuccessful && status == .sharingAuthorized {
             print("[WorkoutManager] 🚀 Permissions confirmed working, pre-starting workout...")
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
                 self.startWorkout()
             }
         } else {
-            print("[WorkoutManager] ⏳ Waiting for ContentView to handle permissions")
+            print("[WorkoutManager] ⏳ First launch or permissions not confirmed - ContentView will handle")
+            // НЕ запускаем workout здесь - пусть ContentView сначала запросит разрешения
         }
     }
     
@@ -205,86 +208,28 @@ class WorkoutManager: NSObject, ObservableObject {
             HKObjectType.quantityType(forIdentifier: .heartRate)!
         ]
         
-        guard let hrType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
-            print("[WorkoutManager] ❌ Failed to get heart rate type")
-            completion(false)
-            return
-        }
-        
-        // Запоминаем статус ДО показа диалога
-        let statusBefore = healthStore.authorizationStatus(for: hrType)
-        print("[WorkoutManager] Requesting HealthKit authorization...")
-        print("[WorkoutManager] Status before dialog: \(statusBefore.rawValue)")
+        print("[WorkoutManager] 📋 Requesting HealthKit authorization...")
         
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
             DispatchQueue.main.async {
                 if success {
-                    print("[WorkoutManager] ✅ Dialog shown, starting status monitor...")
+                    // ✅ На watchOS success=true означает что система обработала запрос
+                    // Для READ типов мы НЕ МОЖЕМ узнать реальный статус разрешений
+                    // authorizationStatus(for: heartRate) всегда возвращает .notDetermined
+                    print("[WorkoutManager] ✅ Authorization request processed by system")
+                    print("[WorkoutManager] ℹ️ Note: For READ types, we cannot determine actual permission status on watchOS")
                     
-                    // 🔥 НОВОЕ: Мониторим изменение статуса
-                    self.monitorAuthorizationStatus(
-                        beforeStatus: statusBefore,
-                        hrType: hrType,
-                        completion: completion
-                    )
+                    // Ждём 2 секунды чтобы пользователь успел нажать на диалог
+                    // Затем возвращаем success и пробуем запустить workout
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                        print("[WorkoutManager] ✅ Returning success after dialog wait")
+                        self.permissionJustGranted = true
+                        completion(true)
+                    }
                 } else {
-                    print("[WorkoutManager] ❌ Failed to show dialog: \(error?.localizedDescription ?? "unknown")")
+                    print("[WorkoutManager] ❌ Authorization request failed: \(error?.localizedDescription ?? "unknown")")
                     completion(false)
                 }
-            }
-        }
-    }
-    
-    // 🔥 НОВЫЙ метод: Отслеживание изменения статуса разрешений
-    private func monitorAuthorizationStatus(
-        beforeStatus: HKAuthorizationStatus,
-        hrType: HKQuantityType,
-        completion: @escaping (Bool) -> Void
-    ) {
-        var attempts = 0
-        let maxAttempts = 40  // 40 попыток * 0.5 секунды = 20 секунд
-        
-        Timer.scheduledTimer(withTimeInterval: 0.5, repeats: true) { timer in
-            attempts += 1
-            
-            let currentStatus = self.healthStore.authorizationStatus(for: hrType)
-            
-            if attempts % 4 == 0 {  // Логируем каждые 2 секунды
-                print("[WorkoutManager] 🔍 Status check #\(attempts): \(currentStatus.rawValue)")
-            }
-            
-            // Если статус изменился на .sharingAuthorized
-            if currentStatus == .sharingAuthorized && beforeStatus != .sharingAuthorized {
-                print("[WorkoutManager] 🎉 PERMISSION GRANTED! Status: \(beforeStatus.rawValue) → \(currentStatus.rawValue)")
-                timer.invalidate()
-                self.authorizationStatus = currentStatus
-                
-                // 🔥 Устанавливаем @Published флаг для немедленного restart
-                DispatchQueue.main.async {
-                    self.permissionJustGranted = true
-                    print("[WorkoutManager] 🚨 permissionJustGranted = true (will trigger restart)")
-                }
-                
-                completion(true)
-                return
-            }
-            
-            // Если статус изменился на .sharingDenied
-            if currentStatus == .sharingDenied && beforeStatus != .sharingDenied {
-                print("[WorkoutManager] ❌ Permission denied! Status: \(currentStatus.rawValue)")
-                timer.invalidate()
-                self.authorizationStatus = currentStatus
-                completion(false)
-                return
-            }
-            
-            // Если превысили лимит попыток
-            if attempts >= maxAttempts {
-                print("[WorkoutManager] ⏰ Timeout waiting for permission decision (20s)")
-                timer.invalidate()
-                // Предполагаем что разрешения дали (диалог закрылся без явного deny)
-                self.authorizationStatus = currentStatus
-                completion(true)
             }
         }
     }
