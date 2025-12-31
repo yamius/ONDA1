@@ -127,41 +127,54 @@ struct ContentView: View {
         print("[ContentView] 🔍 === Initialization Started ===")
         print("[ContentView] heartRate: \(workoutManager.heartRate), isActive: \(workoutManager.isActive)")
         
-        // Если HR уже работает — всё ок, ничего не делаем
+        // Если HR уже работает — всё ок
         if workoutManager.heartRate > 0 {
-            print("[ContentView] ✅ HR already working (\(Int(workoutManager.heartRate)) bpm), skipping init")
+            print("[ContentView] ✅ HR already working (\(Int(workoutManager.heartRate)) bpm)")
             return
         }
         
-        // 🔥 ВСЕГДА запрашиваем разрешения при первом запуске
-        // На watchOS requestAuthorization нужно вызывать чтобы показать системный диалог
-        // Даже если workout уже активен - без разрешений пульс не будет читаться
+        // 🔥 Запрашиваем разрешения - это покажет системный диалог (если ещё не показывался)
         print("[ContentView] 📋 Requesting HealthKit permissions...")
         
-        workoutManager.requestAuthorizationWithCompletion { success in
+        workoutManager.requestAuthorizationWithCompletion { _ in
             DispatchQueue.main.async {
-                print("[ContentView] 📋 Authorization callback: success=\(success)")
+                print("[ContentView] 📋 Authorization callback received")
                 
-                if success {
-                    print("[ContentView] ✅ Permissions granted → recreating workout session")
-                    UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
-                    
-                    // Пересоздаём workout session для "пробуждения" HealthKit
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                        self.workoutManager.recreateWorkoutSession()
-                    }
-                } else {
-                    print("[ContentView] ⚠️ Permission callback returned false")
-                    // Всё равно пробуем запустить/пересоздать workout
-                    // Возможно разрешения уже есть, просто статус не определён
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                        if self.workoutManager.heartRate == 0 {
-                            print("[ContentView] 🔄 HR still 0, trying recreateWorkoutSession...")
-                            self.workoutManager.recreateWorkoutSession()
-                        }
-                    }
-                }
+                // Запускаем workout сразу после запроса разрешений
+                // Диалог уже показан пользователю, он может в любой момент дать разрешения
+                self.workoutManager.recreateWorkoutSession()
+                
+                // Запускаем периодическую проверку HR
+                // Если пользователь даст разрешения - HR появится
+                self.startHRCheckTimer()
             }
+        }
+    }
+    
+    // Периодическая проверка: если HR всё ещё 0 - пересоздаём workout
+    private func startHRCheckTimer() {
+        // Проверяем каждые 5 секунд в течение 30 секунд
+        var checks = 0
+        let maxChecks = 6
+        
+        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { timer in
+            checks += 1
+            
+            if self.workoutManager.heartRate > 0 {
+                print("[ContentView] ✅ HR detected: \(Int(self.workoutManager.heartRate)) bpm, stopping timer")
+                UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
+                timer.invalidate()
+                return
+            }
+            
+            if checks >= maxChecks {
+                print("[ContentView] ⏰ HR check timeout (30s), user may need to grant permissions manually")
+                timer.invalidate()
+                return
+            }
+            
+            print("[ContentView] 🔄 HR still 0, attempt \(checks)/\(maxChecks), recreating workout...")
+            self.workoutManager.recreateWorkoutSession()
         }
     }
 }

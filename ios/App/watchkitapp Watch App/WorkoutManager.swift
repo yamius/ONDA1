@@ -212,23 +212,22 @@ class WorkoutManager: NSObject, ObservableObject {
         
         healthStore.requestAuthorization(toShare: typesToShare, read: typesToRead) { success, error in
             DispatchQueue.main.async {
+                // На watchOS:
+                // - success=true означает "запрос обработан" (диалог показан или уже был показан ранее)
+                // - Callback вызывается СРАЗУ после показа диалога, НЕ после ответа пользователя
+                // - Для READ типов мы не можем узнать реальный статус разрешений
+                
                 if success {
-                    // ✅ На watchOS success=true означает что система обработала запрос
-                    // Для READ типов мы НЕ МОЖЕМ узнать реальный статус разрешений
-                    // authorizationStatus(for: heartRate) всегда возвращает .notDetermined
-                    print("[WorkoutManager] ✅ Authorization request processed by system")
-                    print("[WorkoutManager] ℹ️ Note: For READ types, we cannot determine actual permission status on watchOS")
-                    
-                    // Ждём 2 секунды чтобы пользователь успел нажать на диалог
-                    // Затем возвращаем success и пробуем запустить workout
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                        print("[WorkoutManager] ✅ Returning success after dialog wait")
-                        self.permissionJustGranted = true
-                        completion(true)
-                    }
+                    print("[WorkoutManager] ✅ Authorization request processed (dialog shown or was shown before)")
+                    self.permissionJustGranted = true
+                    completion(true)
+                    // ContentView вызовет recreateWorkoutSession() который запустит workout
+                    // Если разрешения есть - HR придёт, если нет - останется 0
                 } else {
                     print("[WorkoutManager] ❌ Authorization request failed: \(error?.localizedDescription ?? "unknown")")
-                    completion(false)
+                    // Всё равно возвращаем true чтобы попробовать запустить workout
+                    // Возможно разрешения уже были даны ранее
+                    completion(true)
                 }
             }
         }
