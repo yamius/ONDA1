@@ -12,16 +12,14 @@ import WatchKit
 struct ContentView: View {
     @StateObject private var workoutManager = WorkoutManager.shared
     @State private var hasStartedInit: Bool = false
-    @State private var showManualInstructions: Bool = false
     
     var body: some View {
         Group {
             if workoutManager.heartRate > 0 {
                 mainView
-            } else if showManualInstructions {
-                instructionsView
             } else {
-                waitingView
+                // Сразу показываем кнопку "Запустить" без ожидания
+                startView
             }
         }
         .onAppear {
@@ -39,9 +37,8 @@ struct ContentView: View {
         }
         .onChange(of: workoutManager.heartRate) { newValue in
             if newValue > 0 {
-                // HR получен — сохраняем флаг разрешений и убираем инструкции
+                // HR получен — сохраняем флаг разрешений
                 UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
-                showManualInstructions = false
                 print("[ContentView] ✅ HR received: \(Int(newValue)) bpm")
             }
         }
@@ -49,49 +46,31 @@ struct ContentView: View {
     
     // MARK: - Views
     
-    private var waitingView: some View {
-        VStack(spacing: 12) {
-            Image(systemName: "heart.circle")
-                .font(.system(size: 40))
-                .foregroundColor(.cyan)
-            
-            Text("Ожидайте запуска пульса")
-                .font(.headline)
-                .multilineTextAlignment(.center)
-            
-            ProgressView()
-                .progressViewStyle(CircularProgressViewStyle())
-                .scaleEffect(1.2)
-        }
-        .padding(.horizontal, 8)
-    }
-    
-    private var instructionsView: some View {
+    private var startView: some View {
         ScrollView {
-            VStack(spacing: 10) {
-                Image(systemName: "gearshape.fill")
-                    .font(.system(size: 32))
-                    .foregroundColor(.orange)
+            VStack(spacing: 12) {
+                Image(systemName: "heart.circle")
+                    .font(.system(size: 36))
+                    .foregroundColor(.cyan)
                 
-                Text("Включите доступ")
+                Text("ONDA")
                     .font(.headline)
                 
-                Text("Настройки → Здоровье → ONDA → включить Пульс")
-                    .font(.caption)
+                Text("Настройки → Здоровье → ONDA → Пульс")
+                    .font(.caption2)
                     .multilineTextAlignment(.center)
                     .foregroundColor(.secondary)
                 
-                Text("Перезапустите приложение")
-                    .font(.caption2)
-                    .foregroundColor(.secondary)
-                
                 Button(action: {
-                    showManualInstructions = false
+                    print("[ContentView] 🚀 Start button pressed")
                     hasStartedInit = false
                     startInitialization()
                 }) {
-                    Text("Повторить")
-                        .font(.footnote)
+                    HStack {
+                        Image(systemName: "play.fill")
+                        Text("Запустить")
+                    }
+                    .font(.footnote)
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.cyan)
@@ -162,7 +141,7 @@ struct ContentView: View {
     // MARK: - Logic
     
     private func startInitialization() {
-        print("[ContentView] 🔍 === Initialization Started ===")
+        print("[ContentView] 🔍 === Start button pressed ===")
         print("[ContentView] heartRate: \(workoutManager.heartRate), isActive: \(workoutManager.isActive)")
         
         // Если HR уже работает — всё ок
@@ -171,51 +150,14 @@ struct ContentView: View {
             return
         }
         
-        // 🔥 Запрашиваем разрешения - это покажет системный диалог (если ещё не показывался)
+        // Запрашиваем разрешения - это покажет системный диалог
         print("[ContentView] 📋 Requesting HealthKit permissions...")
         
         workoutManager.requestAuthorizationWithCompletion { _ in
             DispatchQueue.main.async {
-                print("[ContentView] 📋 Authorization callback received")
-                
-                // Запускаем workout сразу после запроса разрешений
-                // Диалог уже показан пользователю, он может в любой момент дать разрешения
+                print("[ContentView] 📋 Authorization callback → recreating workout")
                 self.workoutManager.recreateWorkoutSession()
-                
-                // Запускаем периодическую проверку HR
-                // Если пользователь даст разрешения - HR появится
-                self.startHRCheckTimer()
             }
-        }
-    }
-    
-    // Периодическая проверка: если HR всё ещё 0 - пересоздаём workout
-    private func startHRCheckTimer() {
-        // Проверяем каждые 5 секунд в течение 30 секунд
-        var checks = 0
-        let maxChecks = 6
-        
-        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { timer in
-            checks += 1
-            
-            if self.workoutManager.heartRate > 0 {
-                print("[ContentView] ✅ HR detected: \(Int(self.workoutManager.heartRate)) bpm, stopping timer")
-                UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
-                timer.invalidate()
-                return
-            }
-            
-            if checks >= maxChecks {
-                print("[ContentView] ⏰ HR check timeout (30s), showing manual instructions")
-                timer.invalidate()
-                DispatchQueue.main.async {
-                    self.showManualInstructions = true
-                }
-                return
-            }
-            
-            print("[ContentView] 🔄 HR still 0, attempt \(checks)/\(maxChecks), recreating workout...")
-            self.workoutManager.recreateWorkoutSession()
         }
     }
 }
