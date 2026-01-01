@@ -33,7 +33,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   // isConnected = часы сопряжены и приложение установлено
   // НЕ зависит от reachable (который скачет true/false)
   // reachable только означает "приложение активно прямо сейчас"
-  const isConnected = watchStatus?.paired === true && watchStatus?.installed === true;
+  const isConnected = watchStatus?.paired === true && watchStatus?.watchAppInstalled === true;
   
   const addLog = useCallback((msg: string) => {
     const time = new Date().toLocaleTimeString();
