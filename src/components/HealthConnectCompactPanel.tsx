@@ -1,4 +1,4 @@
-import { Heart, Activity, Moon, Flame, Droplets, Scale, Thermometer, Wind, Apple, Utensils, Smartphone, Bug } from "lucide-react";
+import { Heart, Activity, Moon, Flame, Droplets, Scale, Thermometer, Wind, Apple, Utensils, Smartphone, Bug, type LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import type { HcUpdatePayload } from "../bridge/healthConnectBridge";
 
@@ -8,7 +8,7 @@ interface HealthConnectCompactPanelProps {
 }
 
 interface MetricItem {
-  icon: any;
+  icon: LucideIcon;
   label: string;
   value: number | string | undefined;
   unit?: string;
