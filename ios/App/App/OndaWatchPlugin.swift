@@ -293,7 +293,7 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         addDebugLog("📋 Context: \(applicationContext.keys.joined(separator: ","))")
         
         // Извлекаем последний HR из контекста
-        if let latestHR = applicationContext["latestHeartRate"] as? Double {
+        if let latestHR = applicationContext["lastHeartRate"] as? Double {
             let data: [String: Any] = [
                 "type": "heartRate",
                 "value": latestHR,
