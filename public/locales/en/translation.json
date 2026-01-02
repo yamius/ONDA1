@@ -37,6 +37,10 @@
     "watch_activate_title": "Onda Life",
     "watch_activate_text": "Open the app on your watch for accurate practice tracking"
   },
+  "permissions": {
+    "description": "For ONDA to work properly, grant access to microphone, heart rate, and sleep data.",
+    "setup_button": "Set up now"
+  },
   "chapters": {
     "chapter_1": "Body",
     "chapter_1_element": "TERRA",

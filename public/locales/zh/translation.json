@@ -34,6 +34,10 @@
     "watch_activate_title": "Onda Life",
     "watch_activate_text": "打开手表上的应用以准确跟踪练习"
   },
+  "permissions": {
+    "description": "为了让ONDA正常工作，请授予麦克风、心率和睡眠数据的访问权限。",
+    "setup_button": "立即设置"
+  },
   "chapters": {
     "chapter_1": "身体",
     "chapter_1_element": "TERRA",

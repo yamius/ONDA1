@@ -37,6 +37,10 @@
     "watch_activate_title": "Onda Life",
     "watch_activate_text": "Зайди в приложение на часах для корректного прохождения практики"
   },
+  "permissions": {
+    "description": "Для полноценной работы ONDA настрой доступ к микрофону, пульсу и данным о сне.",
+    "setup_button": "Настроить сейчас"
+  },
   "chapters": {
     "chapter_1": "Тело",
     "chapter_1_element": "TERRA",

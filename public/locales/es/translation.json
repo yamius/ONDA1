@@ -34,6 +34,10 @@
     "watch_activate_title": "Onda Life",
     "watch_activate_text": "Abre la app en tu reloj para un seguimiento preciso de la práctica"
   },
+  "permissions": {
+    "description": "Para que ONDA funcione correctamente, permite el acceso al micrófono, frecuencia cardíaca y datos de sueño.",
+    "setup_button": "Configurar ahora"
+  },
   "chapters": {
     "chapter_1": "Cuerpo",
     "chapter_1_element": "TERRA",
