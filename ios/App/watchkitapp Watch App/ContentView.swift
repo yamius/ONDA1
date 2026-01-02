@@ -47,37 +47,39 @@ struct ContentView: View {
     // MARK: - Views
     
     private var startView: some View {
-        ScrollView {
-            VStack(spacing: 12) {
-                Image(systemName: "heart.circle")
-                    .font(.system(size: 36))
-                    .foregroundColor(.cyan)
-                
-                Text("ONDA")
-                    .font(.headline)
-                
-                Text("Настройки → Здоровье → ONDA → Пульс")
-                    .font(.caption2)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.secondary)
-                
-                Button(action: {
-                    print("[ContentView] 🚀 Start button pressed")
-                    hasStartedInit = false
-                    startInitialization()
-                }) {
-                    HStack {
-                        Image(systemName: "play.fill")
-                        Text("Запустить")
-                    }
-                    .font(.footnote)
+        VStack(spacing: 12) {
+            Button(action: {
+                print("[ContentView] 🚀 Start button pressed")
+                hasStartedInit = false
+                startInitialization()
+            }) {
+                HStack {
+                    Image(systemName: "play.fill")
+                    Text("Запустить")
                 }
-                .buttonStyle(.borderedProminent)
-                .tint(.cyan)
-                .padding(.top, 4)
+                .font(.body)
             }
-            .padding(.horizontal, 8)
+            .buttonStyle(.borderedProminent)
+            .tint(.cyan)
+            
+            Spacer()
+            
+            Image(systemName: "heart.circle")
+                .font(.system(size: 32))
+                .foregroundColor(.cyan)
+            
+            Text("ONDA")
+                .font(.headline)
+            
+            Text("Настройки → Здоровье → ONDA → Пульс")
+                .font(.caption2)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.secondary)
+            
+            Spacer()
         }
+        .padding(.horizontal, 8)
+        .padding(.top, 8)
     }
     
     private var mainView: some View {
