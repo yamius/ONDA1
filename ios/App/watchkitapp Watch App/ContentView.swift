@@ -12,14 +12,19 @@ import WatchKit
 struct ContentView: View {
     @StateObject private var workoutManager = WorkoutManager.shared
     @State private var hasStartedInit: Bool = false
+    @State private var showStartButton: Bool = false
+    @State private var timeoutTimer: Timer? = nil
     
     var body: some View {
         Group {
             if workoutManager.heartRate > 0 {
                 mainView
-            } else {
-                // Сразу показываем кнопку "Запустить" без ожидания
+            } else if showStartButton {
+                // После 30 сек без HR — показываем кнопку
                 startView
+            } else {
+                // Сначала показываем спиннер
+                waitingView
             }
         }
         .onAppear {
@@ -33,25 +38,71 @@ struct ContentView: View {
             if !hasStartedInit {
                 hasStartedInit = true
                 startInitialization()
+                startTimeoutTimer()
             }
         }
         .onChange(of: workoutManager.heartRate) { newValue in
             if newValue > 0 {
-                // HR получен — сохраняем флаг разрешений
+                // HR получен — сохраняем флаг, останавливаем таймер
                 UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
+                showStartButton = false
+                timeoutTimer?.invalidate()
+                timeoutTimer = nil
                 print("[ContentView] ✅ HR received: \(Int(newValue)) bpm")
+            }
+        }
+        .onDisappear {
+            timeoutTimer?.invalidate()
+            timeoutTimer = nil
+        }
+    }
+    
+    // Таймер: через 30 сек показать кнопку "Запустить"
+    private func startTimeoutTimer() {
+        timeoutTimer?.invalidate()
+        timeoutTimer = Timer.scheduledTimer(withTimeInterval: 30.0, repeats: false) { _ in
+            DispatchQueue.main.async {
+                if self.workoutManager.heartRate == 0 {
+                    print("[ContentView] ⏰ 30s timeout, showing start button")
+                    self.showStartButton = true
+                }
             }
         }
     }
     
     // MARK: - Views
     
-    private var startView: some View {
+    // Спиннер — показывается первые 30 сек
+    private var waitingView: some View {
         VStack(spacing: 12) {
+            Image(systemName: "heart.circle")
+                .font(.system(size: 40))
+                .foregroundColor(.cyan)
+            
+            Text("Ожидайте запуска пульса")
+                .font(.headline)
+                .multilineTextAlignment(.center)
+            
+            ProgressView()
+                .progressViewStyle(CircularProgressViewStyle())
+                .scaleEffect(1.2)
+        }
+        .padding(.horizontal, 8)
+    }
+    
+    // Кнопка "Запустить" — показывается после 30 сек без HR
+    private var startView: some View {
+        VStack(spacing: 10) {
+            Image(systemName: "heart.circle")
+                .font(.system(size: 36))
+                .foregroundColor(.cyan)
+            
             Button(action: {
                 print("[ContentView] 🚀 Start button pressed")
+                showStartButton = false
                 hasStartedInit = false
                 startInitialization()
+                startTimeoutTimer()
             }) {
                 HStack {
                     Image(systemName: "play.fill")
@@ -64,19 +115,10 @@ struct ContentView: View {
             
             Spacer()
             
-            Image(systemName: "heart.circle")
-                .font(.system(size: 32))
-                .foregroundColor(.cyan)
-            
-            Text("ONDA")
-                .font(.headline)
-            
             Text("Настройки → Здоровье → ONDA → Пульс")
                 .font(.caption2)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.secondary)
-            
-            Spacer()
         }
         .padding(.horizontal, 8)
         .padding(.top, 8)
