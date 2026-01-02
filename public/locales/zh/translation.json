@@ -38,6 +38,17 @@
     "description": "为了让ONDA正常工作，请授予麦克风、心率和睡眠数据的访问权限。",
     "setup_button": "立即设置"
   },
+  "health": {
+    "activity": "活动",
+    "steps_unit": "步",
+    "vitals": "生命体征",
+    "sleep": "睡眠",
+    "body_measurements": "身体测量",
+    "nutrition": "营养",
+    "min_short": "分钟",
+    "sessions": "次",
+    "events": "次"
+  },
   "chapters": {
     "chapter_1": "身体",
     "chapter_1_element": "TERRA",

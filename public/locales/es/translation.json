@@ -38,6 +38,17 @@
     "description": "Para que ONDA funcione correctamente, permite el acceso al micrófono, frecuencia cardíaca y datos de sueño.",
     "setup_button": "Configurar ahora"
   },
+  "health": {
+    "activity": "Actividad",
+    "steps_unit": "pasos",
+    "vitals": "Signos Vitales",
+    "sleep": "Sueño",
+    "body_measurements": "Mediciones Corporales",
+    "nutrition": "Nutrición",
+    "min_short": "min",
+    "sessions": "sesiones",
+    "events": "eventos"
+  },
   "chapters": {
     "chapter_1": "Cuerpo",
     "chapter_1_element": "TERRA",

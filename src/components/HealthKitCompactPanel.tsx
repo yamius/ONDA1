@@ -1,4 +1,5 @@
 import { Heart, Activity, Moon, Flame, Droplets, Scale, Thermometer, Wind, Watch } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import type { HealthKitDataResult } from "../plugins/healthKitHeartRate";
 
 interface HealthKitCompactPanelProps {
@@ -20,6 +21,7 @@ interface MetricGroup {
 }
 
 export function HealthKitCompactPanel({ isLightTheme = false, data }: HealthKitCompactPanelProps) {
+  const { t } = useTranslation();
 
   if (!data) {
     return null;
@@ -27,13 +29,13 @@ export function HealthKitCompactPanel({ isLightTheme = false, data }: HealthKitC
 
   const groups: MetricGroup[] = [
     {
-      title: "Активность",
+      title: t('health.activity'),
       metrics: [
         {
           icon: Activity,
           label: "Steps",
           value: data.activity?.steps,
-          unit: "шагов",
+          unit: t('health.steps_unit'),
           color: "text-blue-500"
         },
         {
@@ -53,7 +55,7 @@ export function HealthKitCompactPanel({ isLightTheme = false, data }: HealthKitC
       ]
     },
     {
-      title: "Витальные показатели",
+      title: t('health.vitals'),
       metrics: [
         {
           icon: Heart,
@@ -116,7 +118,7 @@ export function HealthKitCompactPanel({ isLightTheme = false, data }: HealthKitC
       ]
     },
     {
-      title: "Сон",
+      title: t('health.sleep'),
       metrics: [
         {
           icon: Moon,
@@ -145,7 +147,7 @@ export function HealthKitCompactPanel({ isLightTheme = false, data }: HealthKitC
           icon: Activity,
           label: "Mindfulness",
           value: data.wellness?.mindfulnessMinutes && data.wellness?.mindfulnessSessions
-            ? `${data.wellness.mindfulnessMinutes} мин (${data.wellness.mindfulnessSessions} сессий)`
+            ? `${data.wellness.mindfulnessMinutes} ${t('health.min_short')} (${data.wellness.mindfulnessSessions} ${t('health.sessions')})`
             : undefined,
           unit: "",
           color: "text-purple-400"
@@ -153,7 +155,7 @@ export function HealthKitCompactPanel({ isLightTheme = false, data }: HealthKitC
       ]
     },
     {
-      title: "Измерения тела",
+      title: t('health.body_measurements'),
       metrics: [
         {
           icon: Scale,

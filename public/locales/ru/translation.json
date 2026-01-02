@@ -41,6 +41,17 @@
     "description": "Для полноценной работы ONDA настрой доступ к микрофону, пульсу и данным о сне.",
     "setup_button": "Настроить сейчас"
   },
+  "health": {
+    "activity": "Активность",
+    "steps_unit": "шагов",
+    "vitals": "Витальные показатели",
+    "sleep": "Сон",
+    "body_measurements": "Измерения тела",
+    "nutrition": "Питание",
+    "min_short": "мин",
+    "sessions": "сессий",
+    "events": "событий"
+  },
   "chapters": {
     "chapter_1": "Тело",
     "chapter_1_element": "TERRA",

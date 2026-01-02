@@ -41,6 +41,17 @@
     "description": "For ONDA to work properly, grant access to microphone, heart rate, and sleep data.",
     "setup_button": "Set up now"
   },
+  "health": {
+    "activity": "Activity",
+    "steps_unit": "steps",
+    "vitals": "Vital Signs",
+    "sleep": "Sleep",
+    "body_measurements": "Body Measurements",
+    "nutrition": "Nutrition",
+    "min_short": "min",
+    "sessions": "sessions",
+    "events": "events"
+  },
   "chapters": {
     "chapter_1": "Body",
     "chapter_1_element": "TERRA",

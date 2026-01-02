@@ -1,4 +1,5 @@
 import { Heart, Activity, Moon, Flame, Droplets, Scale, Thermometer, Wind, Apple, Utensils, Smartphone, Bug } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import type { HcUpdatePayload } from "../bridge/healthConnectBridge";
 
 interface HealthConnectCompactPanelProps {
@@ -20,6 +21,7 @@ interface MetricGroup {
 }
 
 export function HealthConnectCompactPanel({ isLightTheme = false, data }: HealthConnectCompactPanelProps) {
+  const { t, i18n } = useTranslation();
 
   if (!data) {
     return null;
@@ -27,13 +29,13 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
 
   const groups: MetricGroup[] = [
     {
-      title: "Активность",
+      title: t('health.activity'),
       metrics: [
         {
           icon: Activity,
           label: "Steps",
           value: data.activity?.steps,
-          unit: "шагов",
+          unit: t('health.steps_unit'),
           color: "text-blue-500"
         },
         {
@@ -53,7 +55,7 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
       ]
     },
     {
-      title: "Витальные показатели",
+      title: t('health.vitals'),
       metrics: [
         {
           icon: Heart,
@@ -123,7 +125,7 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
       ]
     },
     {
-      title: "Сон",
+      title: t('health.sleep'),
       metrics: [
         {
           icon: Moon,
@@ -138,7 +140,7 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
           icon: Moon,
           label: "Sleep Period",
           value: data.sleep?.sessions?.[0]?.startTime && data.sleep?.sessions?.[0]?.endTime
-            ? `${new Date(data.sleep.sessions[0].startTime).toLocaleTimeString('ru-RU', {hour: '2-digit', minute: '2-digit'})} - ${new Date(data.sleep.sessions[0].endTime).toLocaleTimeString('ru-RU', {hour: '2-digit', minute: '2-digit'})}`
+            ? `${new Date(data.sleep.sessions[0].startTime).toLocaleTimeString(i18n.language, {hour: '2-digit', minute: '2-digit'})} - ${new Date(data.sleep.sessions[0].endTime).toLocaleTimeString(i18n.language, {hour: '2-digit', minute: '2-digit'})}`
             : undefined,
           unit: "",
           color: "text-blue-400"
@@ -152,7 +154,7 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
           icon: Activity,
           label: "Mindfulness",
           value: data.wellness?.mindfulnessMinutes && data.wellness?.mindfulnessSessions
-            ? `${data.wellness.mindfulnessMinutes} мин (${data.wellness.mindfulnessSessions} сессий)`
+            ? `${data.wellness.mindfulnessMinutes} ${t('health.min_short')} (${data.wellness.mindfulnessSessions} ${t('health.sessions')})`
             : undefined,
           unit: "",
           color: "text-purple-400"
@@ -161,13 +163,13 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
           icon: Heart,
           label: "Sexual Activity",
           value: data.wellness?.sexualActivityEvents,
-          unit: "событий",
+          unit: t('health.events'),
           color: "text-pink-400"
         }
       ]
     },
     {
-      title: "Измерения тела",
+      title: t('health.body_measurements'),
       metrics: [
         {
           icon: Scale,
@@ -221,7 +223,7 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
       ]
     },
     {
-      title: "Питание",
+      title: t('health.nutrition'),
       metrics: [
         {
           icon: Apple,
