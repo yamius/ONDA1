@@ -39,7 +39,16 @@
   },
   "permissions": {
     "description": "For ONDA to work properly, grant access to microphone, heart rate, and sleep data.",
-    "setup_button": "Set up now"
+    "setup_button": "Set up now",
+    "modal_title": "Permission Setup",
+    "modal_description": "Grant access for the app to work properly",
+    "microphone_title": "Microphone",
+    "microphone_description": "When you want to do an Emotional Check-in, we will record your voice",
+    "heart_rate_title": "Heart Rate",
+    "heart_rate_description": "To track your progress during practices, we monitor your heart rate",
+    "grant_all": "Grant all permissions",
+    "requesting": "Requesting permissions...",
+    "setup_later": "Set up later"
   },
   "health": {
     "activity": "Activity",

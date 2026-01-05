@@ -36,7 +36,16 @@
   },
   "permissions": {
     "description": "Para que ONDA funcione correctamente, permite el acceso al micrófono, frecuencia cardíaca y datos de sueño.",
-    "setup_button": "Configurar ahora"
+    "setup_button": "Configurar ahora",
+    "modal_title": "Configuración de permisos",
+    "modal_description": "Otorga acceso para que la aplicación funcione correctamente",
+    "microphone_title": "Micrófono",
+    "microphone_description": "Cuando quieras hacer un Chequeo Emocional, grabaremos tu voz",
+    "heart_rate_title": "Frecuencia cardíaca",
+    "heart_rate_description": "Para ver tu progreso durante las prácticas, monitoreamos tu frecuencia cardíaca",
+    "grant_all": "Otorgar todos los permisos",
+    "requesting": "Solicitando permisos...",
+    "setup_later": "Configurar después"
   },
   "health": {
     "activity": "Actividad",

@@ -36,7 +36,16 @@
   },
   "permissions": {
     "description": "为了让ONDA正常工作，请授予麦克风、心率和睡眠数据的访问权限。",
-    "setup_button": "立即设置"
+    "setup_button": "立即设置",
+    "modal_title": "权限设置",
+    "modal_description": "授予访问权限以使应用程序正常工作",
+    "microphone_title": "麦克风",
+    "microphone_description": "当您想进行情绪检查时，我们将录制您的声音",
+    "heart_rate_title": "心率",
+    "heart_rate_description": "为了在练习中查看您的进度，我们会监测您的心率",
+    "grant_all": "授予所有权限",
+    "requesting": "正在请求权限...",
+    "setup_later": "稍后设置"
   },
   "health": {
     "activity": "活动",

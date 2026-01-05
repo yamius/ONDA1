@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { X, Heart, Mic, Check } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { PermissionStatus } from '../services/PermissionsService';
 
 interface PermissionSetupModalProps {
@@ -11,23 +12,6 @@ interface PermissionSetupModalProps {
   onPermissionsGranted?: () => void;
 }
 
-const PERMISSION_INFO = {
-  microphone: {
-    icon: Mic,
-    title: 'Микрофон',
-    description: 'Когда вы желаете пройти Эмоциональную сверку мы будем записывать ваш голос',
-    color: 'blue',
-  },
-  healthRead: {
-    icon: Heart,
-    title: 'Пульс',
-    description: 'Чтобы видеть ваш прогресс во время практик мы наблюдаем за вашим пульсом',
-    color: 'red',
-  },
-  // healthWrite убран - capacitor-health плагин не установлен
-  // Пульс работает через нативный HKHealthStore в OndaWatchPlugin
-} as const;
-
 export function PermissionSetupModal({
   isOpen,
   onClose,
@@ -36,7 +20,23 @@ export function PermissionSetupModal({
   isRequesting,
   onPermissionsGranted,
 }: PermissionSetupModalProps) {
+  const { t } = useTranslation();
   const [requestStatus, setRequestStatus] = useState<PermissionStatus>(currentStatus);
+
+  const PERMISSION_INFO = {
+    microphone: {
+      icon: Mic,
+      title: t('permissions.microphone_title'),
+      description: t('permissions.microphone_description'),
+      color: 'blue',
+    },
+    healthRead: {
+      icon: Heart,
+      title: t('permissions.heart_rate_title'),
+      description: t('permissions.heart_rate_description'),
+      color: 'red',
+    },
+  } as const;
 
   if (!isOpen) return null;
 
@@ -88,9 +88,9 @@ export function PermissionSetupModal({
           </button>
 
           <div className="text-center">
-            <h2 className="text-2xl sm:text-3xl font-light mb-2">🔐 Настройка разрешений</h2>
+            <h2 className="text-2xl sm:text-3xl font-light mb-2">🔐 {t('permissions.modal_title')}</h2>
             <p className="text-xs sm:text-sm text-white/70">
-              Для полноценной работы приложения необходимо предоставить доступ
+              {t('permissions.modal_description')}
             </p>
           </div>
         </div>
@@ -124,7 +124,7 @@ export function PermissionSetupModal({
 
             {/* Buttons */}
             <div className="pt-4 space-y-3">
-              {/* Кнопка "Предоставить все разрешения" */}
+              {/* Grant all permissions button */}
               <button
                 onClick={handleRequestAll}
                 disabled={isRequesting}
@@ -133,22 +133,22 @@ export function PermissionSetupModal({
                 {isRequesting ? (
                   <>
                     <div className="w-4 h-4 border-2 border-green-400/30 border-t-green-400 rounded-full animate-spin" />
-                    Запрашиваем разрешения...
+                    {t('permissions.requesting')}
                   </>
                 ) : (
                   <>
                     <Check className="w-5 h-5" />
-                    Предоставить все разрешения
+                    {t('permissions.grant_all')}
                   </>
                 )}
               </button>
 
-              {/* Кнопка "Настроить позже" */}
+              {/* Setup later button */}
               <button
                 onClick={onClose}
                 className="w-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-white font-medium py-3 px-6 rounded-xl transition-all"
               >
-                Настроить позже
+                {t('permissions.setup_later')}
               </button>
             </div>
           </div>
