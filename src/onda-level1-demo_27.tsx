@@ -3569,8 +3569,10 @@ const OndaLevel1 = () => {
                 key={practice.id}
                 ref={el => practiceRefs.current[practice.id] = el}
                 className={`bg-black/40 backdrop-blur-sm rounded-lg p-6 border transition-all ${
-                  isCompleted
+                  isCompleted?.isValidForArtifact
                     ? 'border-emerald-500/50 bg-emerald-500/10'
+                    : isCompleted
+                    ? 'border-amber-500/50 bg-amber-500/5'
                     : activeCircuit === 2
                     ? 'border-cyan-500/30 hover:border-cyan-400/50'
                     : activeCircuit === 3
@@ -3583,10 +3585,15 @@ const OndaLevel1 = () => {
                     <h3 className="text-xl font-semibold mb-1">{getPracticeName(practice.id)}</h3>
                     <p className="text-sm text-gray-400">{practice.duration}</p>
                   </div>
-                  {isCompleted ? (
+                  {isCompleted?.isValidForArtifact ? (
                     <div className="text-right">
                       <CheckCircle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
                       <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
+                    </div>
+                  ) : isCompleted ? (
+                    <div className="text-right">
+                      <Circle className="w-6 h-6 text-amber-400 mb-1 ml-auto" />
+                      <div className="text-xs text-amber-300">{safeToFixed(bestQuality, 0)}%</div>
                     </div>
                   ) : (
                     <Circle className="w-6 h-6 text-gray-600" />
