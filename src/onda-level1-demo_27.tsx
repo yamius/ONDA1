@@ -169,6 +169,7 @@ const OndaLevel1 = () => {
   const [totalTracks, setTotalTracks] = useState(1);
   const [simulatedVitals, setSimulatedVitals] = useState({ stress: 50, energy: 50 });
   const [bestMetrics, setBestMetrics] = useState({ stress: 50, energy: 50 }); // Best metrics achieved during practice
+  const [meetsArtifactRequirements, setMeetsArtifactRequirements] = useState(false); // Real-time validation for artifact
   const maxQualityRef = useRef(0);
   const practiceRefs = useRef({});
 
@@ -559,6 +560,12 @@ const OndaLevel1 = () => {
         }
 
         setQualityScore(Math.min(100, newQuality));
+
+        // Check if artifact requirements are met (real-time validation)
+        const timePercent = currentTime / targetTime;
+        const minQuality = freshVitals.hasVitalsData ? 70 : 33; // 70% with tracker, 33% without
+        const meetsRequirements = timePercent >= 0.8 && newQuality >= minQuality;
+        setMeetsArtifactRequirements(meetsRequirements);
 
         // Update guiding text every 15 seconds with 2s transition (cycling through all texts)
         if (activePractice.guidingTexts && activePractice.guidingTexts.length > 0) {
@@ -1095,6 +1102,7 @@ const OndaLevel1 = () => {
       energy: initialEnergy
     });
     maxQualityRef.current = 0;
+    setMeetsArtifactRequirements(false); // Reset artifact validation
     setPracticeState('active');
     setCurrentGuidingTextIndex(0);
     setIsTextTransitioning(false);
@@ -1111,6 +1119,12 @@ const OndaLevel1 = () => {
 
     // Use vitalsRef for fresh values
     const freshVitalsForSession = vitalsRef.current;
+
+    // Calculate isValidForArtifact at finish time
+    const timePercent = practiceTime / (activePractice.targetTime || 720);
+    const hasRealMetricsAtFinish = freshVitalsForSession.hasVitalsData;
+    const minQualityRequired = hasRealMetricsAtFinish ? 70 : 33;
+    const isValidForArtifact = timePercent >= 0.8 && qualityScore >= minQualityRequired;
     const session = {
       id: Date.now(),
       practiceId: activePractice.id,
@@ -1135,7 +1149,9 @@ const OndaLevel1 = () => {
         [activePractice.id]: {
           quality: qualityScore,
           qnt: earnedQnt,
-          sessions: [...(prev[activePractice.id]?.sessions || []), session.id]
+          sessions: [...(prev[activePractice.id]?.sessions || []), session.id],
+          // Keep validated status if already validated, or set new validation result
+          isValidForArtifact: prev[activePractice.id]?.isValidForArtifact || isValidForArtifact
         }
       }));
 
@@ -1224,11 +1240,14 @@ const OndaLevel1 = () => {
         }
       }
     } else {
+      // Even if quality didn't improve, we might have validated the practice this time
       setCompletedPractices(prev => ({
         ...prev,
         [activePractice.id]: {
           ...prev[activePractice.id],
-          sessions: [...(prev[activePractice.id]?.sessions || []), session.id]
+          sessions: [...(prev[activePractice.id]?.sessions || []), session.id],
+          // Keep validated status if already validated, or set new validation result
+          isValidForArtifact: prev[activePractice.id]?.isValidForArtifact || isValidForArtifact
         }
       }));
     }
@@ -1236,11 +1255,18 @@ const OndaLevel1 = () => {
     setPracticeState('complete');
 
     const circuit = circuits.find(c => c.practices.some(p => p.id === activePractice.id));
-    const allCompleted = circuit.practices.every(p =>
-      completedPractices[p.id] || p.id === activePractice.id
-    );
+    
+    // For artifact: ALL practices must be validated (isValidForArtifact = true)
+    const allValidated = circuit.practices.every(p => {
+      if (p.id === activePractice.id) {
+        // Current practice - use just calculated value
+        return isValidForArtifact || completedPractices[p.id]?.isValidForArtifact;
+      }
+      // Other practices - check stored validation
+      return completedPractices[p.id]?.isValidForArtifact;
+    });
 
-    if (allCompleted && !artifacts.some(a => a.circuitId === circuit.id)) {
+    if (allValidated && !artifacts.some(a => a.circuitId === circuit.id)) {
       setTimeout(() => {
         setArtifacts(prev => [...prev, {
           ...circuit.artifact,
@@ -2540,7 +2566,11 @@ const OndaLevel1 = () => {
               </div>
               <div className="w-full h-5 sm:h-6 bg-black/40 rounded-full overflow-hidden backdrop-blur-sm border border-white/20 shadow-inner">
                 <div
-                  className="h-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-300 transition-all duration-[12500ms] relative"
+                  className={`h-full transition-all duration-[12500ms] relative ${
+                    meetsArtifactRequirements 
+                      ? 'bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-300' 
+                      : 'bg-gradient-to-r from-green-400 via-emerald-400 to-teal-300'
+                  }`}
                   style={{ width: `${qualityScore}%` }}
                 >
                   <div className="absolute inset-0 bg-white/30 animate-pulse" />
