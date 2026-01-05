@@ -20,10 +20,10 @@ struct ContentView: View {
             if workoutManager.heartRate > 0 {
                 mainView
             } else if showStartButton {
-                // После 30 сек без HR — показываем кнопку
+                // After 30 sec without HR — show button
                 startView
             } else {
-                // Сначала показываем спиннер
+                // First show spinner
                 waitingView
             }
         }
@@ -57,7 +57,7 @@ struct ContentView: View {
         }
     }
     
-    // Таймер: через 30 сек показать кнопку "Запустить"
+    // Timer: show "Start" button after 30 sec
     private func startTimeoutTimer() {
         timeoutTimer?.invalidate()
         timeoutTimer = Timer.scheduledTimer(withTimeInterval: 30.0, repeats: false) { _ in
@@ -72,14 +72,14 @@ struct ContentView: View {
     
     // MARK: - Views
     
-    // Спиннер — показывается первые 30 сек
+    // Spinner — shown for first 30 sec
     private var waitingView: some View {
         VStack(spacing: 12) {
             Image(systemName: "heart.circle")
                 .font(.system(size: 40))
                 .foregroundColor(.cyan)
             
-            Text("Ожидайте запуска пульса")
+            Text("Starting heart rate...")
                 .font(.headline)
                 .multilineTextAlignment(.center)
             
@@ -90,7 +90,7 @@ struct ContentView: View {
         .padding(.horizontal, 8)
     }
     
-    // Кнопка "Запустить" — показывается после 30 сек без HR
+    // Start button — shown after 30 sec without HR
     private var startView: some View {
         VStack(spacing: 10) {
             Image(systemName: "heart.circle")
@@ -106,7 +106,7 @@ struct ContentView: View {
             }) {
                 HStack {
                     Image(systemName: "play.fill")
-                    Text("Запустить")
+                    Text("Start")
                 }
                 .font(.body)
             }
@@ -115,7 +115,7 @@ struct ContentView: View {
             
             Spacer()
             
-            Text("Настройки → Здоровье → ONDA → Пульс")
+            Text("Settings → Health → ONDA → Heart Rate")
                 .font(.caption2)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.secondary)
@@ -128,7 +128,7 @@ struct ContentView: View {
         VStack(spacing: 0) {
             Spacer()
             
-            // Пульс в центре (крупно)
+            // Heart rate in center (large)
             VStack(spacing: 4) {
                 if workoutManager.heartRate > 0 {
                     HStack(spacing: 6) {
@@ -159,12 +159,12 @@ struct ContentView: View {
             
             Spacer()
             
-            // Статус внизу
+            // Status at bottom
             HStack(spacing: 6) {
                 Circle()
                     .fill(workoutManager.isActive ? Color.green : Color.gray)
                     .frame(width: 8, height: 8)
-                Text(workoutManager.isActive ? "Активна" : "Ожидание")
+                Text(workoutManager.isActive ? "Active" : "Waiting")
                     .font(.caption2)
                     .foregroundColor(.secondary)
             }
