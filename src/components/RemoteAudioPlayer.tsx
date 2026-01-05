@@ -28,6 +28,12 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   const tracks = Array.isArray(audioPath) ? audioPath : [audioPath];
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const currentTrackPath = tracks[currentTrackIndex];
+  const tracksLengthRef = useRef(tracks.length);
+  
+  // Keep ref in sync with tracks length
+  useEffect(() => {
+    tracksLengthRef.current = tracks.length;
+  }, [tracks.length]);
 
   const { url, loading, progress, error } = useAudioCache(currentTrackPath);
   const preloader = useAudioPreloader();
@@ -80,30 +86,34 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
       audioRef.current.loop = tracks.length === 1;
 
       const handleEnded = () => {
-        console.log('[RemoteAudioPlayer] 🎵 Track ended', {
-          currentIndex: currentTrackIndex,
-          totalTracks: tracks.length,
-          loop: audioRef.current?.loop,
-          allTracks: tracks
-        });
+        // Use functional form of setState to get current value, not stale closure
+        setCurrentTrackIndex(prevIndex => {
+          const totalTracks = tracksLengthRef.current;
+          
+          console.log('[RemoteAudioPlayer] 🎵 Track ended', {
+            currentIndex: prevIndex,
+            totalTracks,
+            loop: audioRef.current?.loop
+          });
 
-        if (tracks.length > 1 && currentTrackIndex < tracks.length - 1) {
-          const nextIndex = currentTrackIndex + 1;
-          console.log('[RemoteAudioPlayer] 🔄 Moving to next track', {
-            from: currentTrackIndex,
-            to: nextIndex,
-            isLooping: false
-          });
-          setCurrentTrackIndex(nextIndex);
-        } else if (tracks.length > 1) {
-          console.log('[RemoteAudioPlayer] 🔁 Looping back to first track', {
-            from: currentTrackIndex,
-            to: 0
-          });
-          setCurrentTrackIndex(0);
-        } else {
-          console.log('[RemoteAudioPlayer] 🔁 Single track with loop=true, should auto-restart');
-        }
+          if (totalTracks > 1 && prevIndex < totalTracks - 1) {
+            const nextIndex = prevIndex + 1;
+            console.log('[RemoteAudioPlayer] 🔄 Moving to next track', {
+              from: prevIndex,
+              to: nextIndex
+            });
+            return nextIndex;
+          } else if (totalTracks > 1) {
+            console.log('[RemoteAudioPlayer] 🔁 Looping back to first track', {
+              from: prevIndex,
+              to: 0
+            });
+            return 0;
+          } else {
+            console.log('[RemoteAudioPlayer] 🔁 Single track with loop=true, should auto-restart');
+            return prevIndex;
+          }
+        });
       };
 
       audioRef.current.addEventListener('ended', handleEnded);
