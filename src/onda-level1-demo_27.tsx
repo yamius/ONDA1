@@ -2180,6 +2180,242 @@ const OndaLevel1 = () => {
             }}
           />
         )}
+        {activePractice.id === 'p3-1' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-1_Breath of Transition/p3-1_Breath of Transition-1.mp3",
+              "p3/p3-1_Breath of Transition/p3-1_Breath of Transition-2.mp3",
+              "p3/p3-1_Breath of Transition/p3-1_Breath of Transition-3.mp3",
+              "p3/p3-1_Breath of Transition/p3-1_Breath of Transition-4.mp3",
+              "p3/p3-1_Breath of Transition/p3-1_Breath of Transition-5.mp3",
+              "p3/p3-1_Breath of Transition/p3-1_Breath of Transition-6.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p3-2' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-2_Point of Stability/p3-2_Point of Stability-1.mp3",
+              "p3/p3-2_Point of Stability/p3-2_Point of Stability-2.mp3",
+              "p3/p3-2_Point of Stability/p3-2_Point of Stability-3.mp3",
+              "p3/p3-2_Point of Stability/p3-2_Point of Stability-4.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p3-3' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-3_Form Plasticity/p3-3_Form Plasticity-1.mp3",
+              "p3/p3-3_Form Plasticity/p3-3_Form Plasticity-2.mp3",
+              "p3/p3-3_Form Plasticity/p3-3_Form Plasticity-3.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p3-4' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-4_Earth and Air Breath/p3-4_Earth and Air Breath-1.mp3",
+              "p3/p3-4_Earth and Air Breath/p3-4_Earth and Air Breath-2.mp3",
+              "p3/p3-4_Earth and Air Breath/p3-4_Earth and Air Breath-3.mp3",
+              "p3/p3-4_Earth and Air Breath/p3-4_Earth and Air Breath-4.mp3",
+              "p3/p3-4_Earth and Air Breath/p3-4_Earth and Air Breath-5.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p3-5' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-5_First Step of Stability/p3-5_First Step of Stability-1.mp3",
+              "p3/p3-5_First Step of Stability/p3-5_First Step of Stability-2.mp3",
+              "p3/p3-5_First Step of Stability/p3-5_First Step of Stability-3.mp3",
+              "p3/p3-5_First Step of Stability/p3-5_First Step of Stability-4.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p3-6' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-6_Wave of Breath/p3-6_Wave of Breath-1.mp3",
+              "p3/p3-6_Wave of Breath/p3-6_Wave of Breath-2.mp3",
+              "p3/p3-6_Wave of Breath/p3-6_Wave of Breath-3.mp3",
+              "p3/p3-6_Wave of Breath/p3-6_Wave of Breath-4.mp3",
+              "p3/p3-6_Wave of Breath/p3-6_Wave of Breath-5.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p3-7' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-7_Breath Bridge/p3-7_Breath Bridge-1.mp3",
+              "p3/p3-7_Breath Bridge/p3-7_Breath Bridge-2.mp3",
+              "p3/p3-7_Breath Bridge/p3-7_Breath Bridge-3.mp3",
+              "p3/p3-7_Breath Bridge/p3-7_Breath Bridge-4.mp3",
+              "p3/p3-7_Breath Bridge/p3-7_Breath Bridge-5.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p3-8' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-8_Center of Gravity/p3-8_Center of Gravity-1.mp3",
+              "p3/p3-8_Center of Gravity/p3-8_Center of Gravity-2.mp3",
+              "p3/p3-8_Center of Gravity/p3-8_Center of Gravity-3.mp3",
+              "p3/p3-8_Center of Gravity/p3-8_Center of Gravity-4.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p3-9' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-9_Shape Shift/p3-9_Shape Shift-1.mp3",
+              "p3/p3-9_Shape Shift/p3-9_Shape Shift-2.mp3",
+              "p3/p3-9_Shape Shift/p3-9_Shape Shift-3.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p3-10' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-10_Resonant Stillness/p3-10_Resonant Stillness-1.mp3",
+              "p3/p3-10_Resonant Stillness/p3-10_Resonant Stillness-2.mp3",
+              "p3/p3-10_Resonant Stillness/p3-10_Resonant Stillness-3.mp3",
+              "p3/p3-10_Resonant Stillness/p3-10_Resonant Stillness-4.mp3",
+              "p3/p3-10_Resonant Stillness/p3-10_Resonant Stillness-5.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p3-11' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-11_Pulse of Earth/p3-11_Pulse of Earth-1.mp3",
+              "p3/p3-11_Pulse of Earth/p3-11_Pulse of Earth-2.mp3",
+              "p3/p3-11_Pulse of Earth/p3-11_Pulse of Earth-3.mp3",
+              "p3/p3-11_Pulse of Earth/p3-11_Pulse of Earth-4.mp3",
+              "p3/p3-11_Pulse of Earth/p3-11_Pulse of Earth-5.mp3",
+              "p3/p3-11_Pulse of Earth/p3-11_Pulse of Earth-6.mp3",
+              "p3/p3-11_Pulse of Earth/p3-11_Pulse of Earth-7.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
+        {activePractice.id === 'p3-12' && (
+          <RemoteAudioPlayer
+            isPlaying={practiceState === 'active' && !isPaused}
+            audioPath={[
+              "p3/p3-12_Breath of Adaptation/p3-12_Breath of Adaptation-1.mp3",
+              "p3/p3-12_Breath of Adaptation/p3-12_Breath of Adaptation-2.mp3",
+              "p3/p3-12_Breath of Adaptation/p3-12_Breath of Adaptation-3.mp3",
+              "p3/p3-12_Breath of Adaptation/p3-12_Breath of Adaptation-4.mp3",
+              "p3/p3-12_Breath of Adaptation/p3-12_Breath of Adaptation-5.mp3"
+            ]}
+            fadeInDuration={3000}
+            fadeOutDuration={3000}
+            volume={0.6}
+            resetKey={audioResetKey}
+            onTrackChange={(current, total) => {
+              setCurrentTrack(current);
+              setTotalTracks(total);
+            }}
+          />
+        )}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDuration: '3s' }} />
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s', animationDuration: '3s' }} />
