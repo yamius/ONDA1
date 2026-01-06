@@ -65,20 +65,8 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   }, [currentTrackIndex, tracks.length, onTrackChange]);
 
   useEffect(() => {
-    // Reset everything when audioPath or resetKey changes
     isFirstPlayRef.current = true;
     setCurrentTrackIndex(0);
-    
-    // Clean up old audio element to ensure fresh start with correct loop setting
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.src = '';
-      audioRef.current = null;
-    }
-    if (sourceRef.current) {
-      sourceRef.current.disconnect();
-      sourceRef.current = null;
-    }
   }, [audioPath, resetKey]);
 
   useEffect(() => {
@@ -95,7 +83,8 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     if (!audioRef.current) {
       audioRef.current = new Audio(url);
       audioRef.current.volume = 1;
-      
+      audioRef.current.loop = tracks.length === 1;
+
       const handleEnded = () => {
         // Use functional form of setState to get current value, not stale closure
         setCurrentTrackIndex(prevIndex => {
@@ -136,15 +125,6 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     } else if (audioRef.current.src !== url) {
       audioRef.current.src = url;
       audioRef.current.load();
-    }
-    
-    // Always update loop setting based on current tracks length
-    if (audioRef.current) {
-      const shouldLoop = tracks.length === 1;
-      if (audioRef.current.loop !== shouldLoop) {
-        console.log('[RemoteAudioPlayer] 🔄 Updating loop setting:', shouldLoop);
-        audioRef.current.loop = shouldLoop;
-      }
     }
   }, [url, error, tracks.length, currentTrackIndex]);
 
