@@ -134,14 +134,10 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
         url: url.substring(0, 50)
       });
 
-      // Use stable wrapper that calls the ref - this way handler always has current values
-      audioRef.current.onended = () => {
-        console.log('[RemoteAudioPlayer] 🎵 onended fired, calling ref handler');
-        handleEndedRef.current();
-      };
-      
-      // Note: ontimeupdate may not fire reliably on iOS with Web Audio API
-      // We use setInterval as primary fallback (see below)
+      // Note: We don't use onended because:
+      // 1. It's unreliable on iOS with Web Audio API
+      // 2. It causes double-triggering with our setInterval polling
+      // setInterval polling (below) is the primary and only method for track switching
 
       if (audioContextRef.current && gainNodeRef.current && !sourceRef.current) {
         sourceRef.current = audioContextRef.current.createMediaElementSource(audioRef.current);
