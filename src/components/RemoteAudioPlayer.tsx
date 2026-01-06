@@ -62,6 +62,11 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   }, [currentTrackIndex, tracks.length, onTrackChange]);
 
   useEffect(() => {
+    console.log('[RemoteAudioPlayer] 🔄 Reset triggered', {
+      tracksCount: tracks.length,
+      firstTrack: tracks[0]?.split('/').pop(),
+      resetKey
+    });
     isFirstPlayRef.current = true;
     setCurrentTrackIndex(0);
   }, [audioPath, resetKey]);
@@ -156,16 +161,22 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
 
       try {
         await audio.play();
+        console.log('[RemoteAudioPlayer] ▶️ Play started', {
+          trackIndex: currentTrackIndex,
+          duration: audio.duration,
+          loop: audio.loop
+        });
         const currentTime = audioContext.currentTime;
         gainNode.gain.cancelScheduledValues(currentTime);
         gainNode.gain.setValueAtTime(gainNode.gain.value, currentTime);
         gainNode.gain.linearRampToValueAtTime(volume, currentTime + fadeInDuration / 1000);
       } catch (err) {
-        console.error('[RemoteAudioPlayer] Play error:', err);
+        console.error('[RemoteAudioPlayer] ❌ Play error:', err);
       }
     };
 
     const fadeOut = () => {
+      console.log('[RemoteAudioPlayer] ⏸️ FadeOut started');
       const currentTime = audioContext.currentTime;
       gainNode.gain.cancelScheduledValues(currentTime);
       gainNode.gain.setValueAtTime(gainNode.gain.value, currentTime);
@@ -189,7 +200,13 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   }, [isPlaying, url, loading, fadeInDuration, fadeOutDuration, volume]);
 
   useEffect(() => {
+    console.log('[RemoteAudioPlayer] 🎵 Component mounted', {
+      tracksCount: tracks.length,
+      firstTrack: tracks[0]?.split('/').pop()
+    });
+    
     return () => {
+      console.log('[RemoteAudioPlayer] 🛑 Component unmounting');
       if (fadeOutTimerRef.current) {
         clearTimeout(fadeOutTimerRef.current);
       }
