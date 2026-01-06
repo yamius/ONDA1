@@ -28,6 +28,9 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   const tracks = Array.isArray(audioPath) ? audioPath : [audioPath];
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const currentTrackPath = tracks[currentTrackIndex];
+  
+  // Stable key for audioPath to avoid reset on every render (arrays create new references)
+  const audioPathKey = Array.isArray(audioPath) ? audioPath.join('|') : audioPath;
 
   const { url, loading, progress, error } = useAudioCache(currentTrackPath);
   const preloader = useAudioPreloader();
@@ -72,7 +75,7 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     isFirstPlayRef.current = true;
     trackEndHandledRef.current = false;
     setCurrentTrackIndex(0);
-  }, [audioPath, resetKey]);
+  }, [audioPathKey, resetKey]); // Use stable key instead of audioPath array
 
   // Update the ended handler ref on every render with current values
   useEffect(() => {
