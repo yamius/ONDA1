@@ -1813,6 +1813,13 @@ const OndaLevel1 = () => {
   if (activePractice) {
     return (
       <div className={`min-h-screen bg-gradient-to-br ${activePractice.colors} text-white relative overflow-hidden transition-all duration-1000`}>
+        {/* Debug Monitor - also during practice */}
+        <DebugMonitor
+          buildNumber={import.meta.env.VITE_BUILD_NUMBER}
+          commitHash={import.meta.env.VITE_COMMIT_HASH}
+          branchName={import.meta.env.VITE_BRANCH_NAME}
+        />
+        
         {activePractice.id === 'p1-1' && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
