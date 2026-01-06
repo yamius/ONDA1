@@ -79,9 +79,10 @@ struct ContentView: View {
                 .font(.system(size: 40))
                 .foregroundColor(.cyan)
             
-            Text("Starting heart rate...")
-                .font(.headline)
+            Text("Starting\nheart rate...")
+                .font(.subheadline)
                 .multilineTextAlignment(.center)
+                .lineLimit(2)
             
             ProgressView()
                 .progressViewStyle(CircularProgressViewStyle())
