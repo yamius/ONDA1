@@ -28,12 +28,6 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   const tracks = Array.isArray(audioPath) ? audioPath : [audioPath];
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const currentTrackPath = tracks[currentTrackIndex];
-  const tracksLengthRef = useRef(tracks.length);
-  
-  // Keep ref in sync with tracks length
-  useEffect(() => {
-    tracksLengthRef.current = tracks.length;
-  }, [tracks.length]);
 
   const { url, loading, progress, error } = useAudioCache(currentTrackPath);
   const preloader = useAudioPreloader();
@@ -44,6 +38,9 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   const sourceRef = useRef<MediaElementAudioSourceNode | null>(null);
   const fadeOutTimerRef = useRef<NodeJS.Timeout | null>(null);
   const isFirstPlayRef = useRef<boolean>(true);
+  
+  // Stable handler ref that always has current values
+  const handleEndedRef = useRef<() => void>(() => {});
 
   useEffect(() => {
     if (onLoadingChange) {
@@ -69,6 +66,29 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     setCurrentTrackIndex(0);
   }, [audioPath, resetKey]);
 
+  // Update the ended handler ref on every render with current values
+  useEffect(() => {
+    handleEndedRef.current = () => {
+      const totalTracks = tracks.length;
+      
+      console.log('[RemoteAudioPlayer] 🎵 Track ended (via ref)', {
+        currentIndex: currentTrackIndex,
+        totalTracks,
+        loop: audioRef.current?.loop,
+        audioPath: currentTrackPath
+      });
+
+      if (totalTracks > 1) {
+        const nextIndex = currentTrackIndex < totalTracks - 1 ? currentTrackIndex + 1 : 0;
+        console.log('[RemoteAudioPlayer] 🔄 Moving to track', {
+          from: currentTrackIndex,
+          to: nextIndex
+        });
+        setCurrentTrackIndex(nextIndex);
+      }
+    };
+  }, [currentTrackIndex, tracks.length, currentTrackPath]);
+
   useEffect(() => {
     if (!audioContextRef.current) {
       const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
@@ -83,46 +103,30 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     if (!audioRef.current) {
       audioRef.current = new Audio(url);
       audioRef.current.volume = 1;
+      // Set loop=false for multi-track playlists so 'ended' event fires
       audioRef.current.loop = tracks.length === 1;
+      
+      console.log('[RemoteAudioPlayer] 🎵 Created audio element', {
+        tracksLength: tracks.length,
+        loop: audioRef.current.loop,
+        url: url.substring(0, 50)
+      });
 
-      const handleEnded = () => {
-        // Use functional form of setState to get current value, not stale closure
-        setCurrentTrackIndex(prevIndex => {
-          const totalTracks = tracksLengthRef.current;
-          
-          console.log('[RemoteAudioPlayer] 🎵 Track ended', {
-            currentIndex: prevIndex,
-            totalTracks,
-            loop: audioRef.current?.loop
-          });
-
-          if (totalTracks > 1 && prevIndex < totalTracks - 1) {
-            const nextIndex = prevIndex + 1;
-            console.log('[RemoteAudioPlayer] 🔄 Moving to next track', {
-              from: prevIndex,
-              to: nextIndex
-            });
-            return nextIndex;
-          } else if (totalTracks > 1) {
-            console.log('[RemoteAudioPlayer] 🔁 Looping back to first track', {
-              from: prevIndex,
-              to: 0
-            });
-            return 0;
-          } else {
-            console.log('[RemoteAudioPlayer] 🔁 Single track with loop=true, should auto-restart');
-            return prevIndex;
-          }
-        });
+      // Use stable wrapper that calls the ref - this way handler always has current values
+      audioRef.current.onended = () => {
+        console.log('[RemoteAudioPlayer] 🎵 onended fired, calling ref handler');
+        handleEndedRef.current();
       };
-
-      audioRef.current.addEventListener('ended', handleEnded);
 
       if (audioContextRef.current && gainNodeRef.current && !sourceRef.current) {
         sourceRef.current = audioContextRef.current.createMediaElementSource(audioRef.current);
         sourceRef.current.connect(gainNodeRef.current);
       }
     } else if (audioRef.current.src !== url) {
+      console.log('[RemoteAudioPlayer] 🔄 Updating audio src', {
+        trackIndex: currentTrackIndex,
+        newUrl: url.substring(0, 50)
+      });
       audioRef.current.src = url;
       audioRef.current.load();
     }
