@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Watch } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
+import { useTranslation } from 'react-i18next';
 import OndaWatch from '../plugins/ondaWatch';
 
 interface WatchConnectionPromptProps {
@@ -13,6 +14,7 @@ interface WatchConnectionPromptProps {
  * и автоматически исчезает когда Watch подключится
  */
 export function WatchConnectionPrompt({ visible, onConnected }: WatchConnectionPromptProps) {
+  const { t } = useTranslation();
   const [isWatchConnected, setIsWatchConnected] = useState(false);
 
   useEffect(() => {
@@ -88,12 +90,12 @@ export function WatchConnectionPrompt({ visible, onConnected }: WatchConnectionP
           {/* Content */}
           <div className="flex-1 min-w-0">
             <p className="text-sm text-gray-300 leading-relaxed">
-              Откройте приложение на Apple Watch для отслеживания пульса
+              {t('watch.open_app_prompt')}
             </p>
 
             {/* Animated dots */}
             <div className="flex items-center gap-2 mt-3">
-              <span className="text-xs text-gray-400">Ожидание подключения</span>
+              <span className="text-xs text-gray-400">{t('watch.waiting_connection')}</span>
               <div className="flex gap-1">
                 <div className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-bounce" style={{ animationDelay: '0ms' }}></div>
                 <div className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-bounce" style={{ animationDelay: '150ms' }}></div>

@@ -50,6 +50,10 @@
     "requesting": "Requesting permissions...",
     "setup_later": "Set up later"
   },
+  "watch": {
+    "open_app_prompt": "Open the app on Apple Watch to track heart rate",
+    "waiting_connection": "Waiting for connection"
+  },
   "health": {
     "activity": "Activity",
     "steps_unit": "steps",

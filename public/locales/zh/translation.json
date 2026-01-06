@@ -47,6 +47,10 @@
     "requesting": "正在请求权限...",
     "setup_later": "稍后设置"
   },
+  "watch": {
+    "open_app_prompt": "打开Apple Watch上的应用程序以追踪心率",
+    "waiting_connection": "等待连接"
+  },
   "health": {
     "activity": "活动",
     "steps_unit": "步",

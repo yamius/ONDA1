@@ -47,6 +47,10 @@
     "requesting": "Запитуємо дозволи...",
     "setup_later": "Налаштувати пізніше"
   },
+  "watch": {
+    "open_app_prompt": "Відкрийте додаток на Apple Watch для відстеження пульсу",
+    "waiting_connection": "Очікування підключення"
+  },
   "health": {
     "activity": "Активність",
     "steps_unit": "кроків",

@@ -47,6 +47,10 @@
     "requesting": "Solicitando permisos...",
     "setup_later": "Configurar después"
   },
+  "watch": {
+    "open_app_prompt": "Abre la app en Apple Watch para monitorear tu frecuencia cardíaca",
+    "waiting_connection": "Esperando conexión"
+  },
   "health": {
     "activity": "Actividad",
     "steps_unit": "pasos",

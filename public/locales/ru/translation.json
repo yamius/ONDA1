@@ -50,6 +50,10 @@
     "requesting": "Запрашиваем разрешения...",
     "setup_later": "Настроить позже"
   },
+  "watch": {
+    "open_app_prompt": "Откройте приложение на Apple Watch для отслеживания пульса",
+    "waiting_connection": "Ожидание подключения"
+  },
   "health": {
     "activity": "Активность",
     "steps_unit": "шагов",
