@@ -39,6 +39,7 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   const fadeOutTimerRef = useRef<NodeJS.Timeout | null>(null);
   const isFirstPlayRef = useRef<boolean>(true);
   const trackEndHandledRef = useRef<boolean>(false);
+  const trackEndCheckIntervalRef = useRef<NodeJS.Timeout | null>(null);
   
   // Stable handler ref that always has current values
   const handleEndedRef = useRef<() => void>(() => {});
@@ -136,21 +137,8 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
         handleEndedRef.current();
       };
       
-      // Fallback for iOS: use timeupdate to detect end of track
-      // iOS with Web Audio API sometimes doesn't fire 'ended' event reliably
-      audioRef.current.ontimeupdate = () => {
-        const audio = audioRef.current;
-        if (!audio || audio.loop) return;
-        
-        // Check if we're very close to the end (within 0.3 seconds)
-        if (audio.duration > 0 && audio.currentTime >= audio.duration - 0.3) {
-          console.log('[RemoteAudioPlayer] ⏱️ timeupdate: near end detected', {
-            currentTime: audio.currentTime,
-            duration: audio.duration
-          });
-          handleEndedRef.current();
-        }
-      };
+      // Note: ontimeupdate may not fire reliably on iOS with Web Audio API
+      // We use setInterval as primary fallback (see below)
 
       if (audioContextRef.current && gainNodeRef.current && !sourceRef.current) {
         sourceRef.current = audioContextRef.current.createMediaElementSource(audioRef.current);
@@ -230,6 +218,43 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     }
   }, [isPlaying, url, loading, fadeInDuration, fadeOutDuration, volume]);
 
+  // Reliable polling for track end detection (iOS workaround)
+  // Events like 'ended' and 'timeupdate' may not fire with Web Audio API on iOS
+  useEffect(() => {
+    if (!isPlaying || tracks.length <= 1) {
+      // Clear interval if not playing or single track (loop handles it)
+      if (trackEndCheckIntervalRef.current) {
+        clearInterval(trackEndCheckIntervalRef.current);
+        trackEndCheckIntervalRef.current = null;
+      }
+      return;
+    }
+
+    // Check every 500ms if track is near end
+    trackEndCheckIntervalRef.current = setInterval(() => {
+      const audio = audioRef.current;
+      if (!audio || audio.paused || audio.loop) return;
+      
+      // Check if we're very close to the end (within 0.5 seconds)
+      if (audio.duration > 0 && audio.currentTime >= audio.duration - 0.5) {
+        console.log('[RemoteAudioPlayer] ⏱️ Interval check: near end detected', {
+          currentTime: audio.currentTime.toFixed(2),
+          duration: audio.duration.toFixed(2),
+          trackIndex: currentTrackIndex,
+          totalTracks: tracks.length
+        });
+        handleEndedRef.current();
+      }
+    }, 500);
+
+    return () => {
+      if (trackEndCheckIntervalRef.current) {
+        clearInterval(trackEndCheckIntervalRef.current);
+        trackEndCheckIntervalRef.current = null;
+      }
+    };
+  }, [isPlaying, tracks.length, currentTrackIndex]);
+
   useEffect(() => {
     console.log('[RemoteAudioPlayer] 🎵 Component mounted', {
       tracksCount: tracks.length,
@@ -240,6 +265,9 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
       console.log('[RemoteAudioPlayer] 🛑 Component unmounting');
       if (fadeOutTimerRef.current) {
         clearTimeout(fadeOutTimerRef.current);
+      }
+      if (trackEndCheckIntervalRef.current) {
+        clearInterval(trackEndCheckIntervalRef.current);
       }
       if (audioRef.current) {
         audioRef.current.pause();
