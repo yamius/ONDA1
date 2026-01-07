@@ -4,10 +4,10 @@ This guide explains how to set up automatic database migrations for ONDA.
 
 ## How It Works
 
-When you push changes to `supabase/migrations/` on the `main` branch, GitHub Actions automatically applies new migrations to your Supabase database.
+Migrations are applied **manually** via GitHub Actions workflow. This approach is more reliable for existing projects.
 
 ```
-Push to main → GitHub Action → Supabase CLI → Database updated
+Create SQL file → Push to main → Run workflow manually → Database updated
 ```
 
 ## Setup Steps
@@ -48,12 +48,10 @@ If successful, you'll see a green checkmark.
 
 ## Usage
 
-### Automatic (Recommended)
-
-Simply push migration files to `main`:
+### Step 1: Create Migration File
 
 ```bash
-# Create a new migration
+# Create a new migration with timestamp
 touch supabase/migrations/20260106120000_add_new_table.sql
 
 # Edit the file with your SQL
@@ -64,14 +62,19 @@ git commit -m "db: add new table"
 git push origin main
 ```
 
-The migration will be applied automatically.
+### Step 2: Apply via GitHub Actions
 
-### Manual
-
-1. Go to **Actions** → **Supabase - Apply Migrations**
+1. Go to **Actions** → **Supabase - Apply Migrations (Manual)**
 2. Click **Run workflow**
-3. Type `apply` to confirm
-4. Run
+3. Enter the migration filename (e.g., `20260106120000_add_new_table.sql`)
+4. Type `apply` to confirm
+5. Click **Run workflow**
+
+### Alternative: Apply via Supabase Dashboard
+
+1. Open **Supabase Dashboard** → **SQL Editor**
+2. Copy the contents of your migration file
+3. Execute
 
 ## Creating Migrations
 

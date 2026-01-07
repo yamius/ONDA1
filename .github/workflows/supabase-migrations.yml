@@ -1,59 +1,50 @@
-name: Supabase - Apply Migrations
+name: Supabase - Apply Migrations (Manual)
 
+# MANUAL ONLY - automatic migrations don't work well with existing projects
+# To apply migrations: Run this workflow and provide the migration filename
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'supabase/migrations/**'
   workflow_dispatch:
     inputs:
+      migration_file:
+        description: 'Migration filename (e.g., 20260105160000_create_app_events.sql)'
+        required: true
       confirm:
-        description: 'Type "apply" to confirm migration'
+        description: 'Type "apply" to confirm'
         required: true
         default: ''
 
 jobs:
   migrate:
-    name: Apply Database Migrations
+    name: Apply Single Migration
     runs-on: ubuntu-latest
-    
-    # Only run if triggered by push OR manual with confirmation
-    if: github.event_name == 'push' || github.event.inputs.confirm == 'apply'
+    if: github.event.inputs.confirm == 'apply'
     
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Validate migration file exists
+        run: |
+          if [ ! -f "supabase/migrations/${{ github.event.inputs.migration_file }}" ]; then
+            echo "❌ Migration file not found: ${{ github.event.inputs.migration_file }}"
+            exit 1
+          fi
+          echo "✅ Found migration: ${{ github.event.inputs.migration_file }}"
 
       - name: Setup Supabase CLI
         uses: supabase/setup-cli@v1
         with:
           version: latest
 
-      - name: Link Supabase project
+      - name: Link and apply migration
         run: |
           supabase link --project-ref ${{ secrets.SUPABASE_PROJECT_REF }}
+          
+          echo "Applying migration: ${{ github.event.inputs.migration_file }}"
+          
+          # Execute the SQL file directly
+          supabase db execute --file "supabase/migrations/${{ github.event.inputs.migration_file }}"
+          
+          echo "✅ Migration applied successfully!"
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
-
-      - name: Mark existing migrations as applied
-        run: |
-          # Mark all migrations before 2026 as already applied
-          for file in supabase/migrations/2025*.sql; do
-            filename=$(basename "$file")
-            echo "Marking $filename as applied..."
-            supabase migration repair --status applied "${filename%.sql}" 2>/dev/null || true
-          done
-        env:
-          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
-
-      - name: Apply new migrations
-        run: |
-          supabase db push
-        env:
-          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
-
-      - name: Migration complete
-        run: |
-          echo "✅ Migrations applied successfully!"
-          echo "Applied migrations from: supabase/migrations/"
