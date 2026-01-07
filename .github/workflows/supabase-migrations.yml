@@ -1,0 +1,48 @@
+name: Supabase - Apply Migrations
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'supabase/migrations/**'
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: 'Type "apply" to confirm migration'
+        required: true
+        default: ''
+
+jobs:
+  migrate:
+    name: Apply Database Migrations
+    runs-on: ubuntu-latest
+    
+    # Only run if triggered by push OR manual with confirmation
+    if: github.event_name == 'push' || github.event.inputs.confirm == 'apply'
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Supabase CLI
+        uses: supabase/setup-cli@v1
+        with:
+          version: latest
+
+      - name: Link Supabase project
+        run: |
+          supabase link --project-ref ${{ secrets.SUPABASE_PROJECT_REF }}
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+
+      - name: Apply migrations
+        run: |
+          supabase db push
+        env:
+          SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+
+      - name: Migration complete
+        run: |
+          echo "✅ Migrations applied successfully!"
+          echo "Applied migrations from: supabase/migrations/"

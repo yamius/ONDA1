@@ -61,6 +61,7 @@ Detailed technical guides for specific tasks.
 ### CI/CD & Infrastructure
 - **[CI/CD Setup](./guides/ci-cd-setup.md)** — Full CI/CD configuration
 - **[GitHub Actions](./guides/github-actions.md)** — GitHub Actions workflow setup
+- **[Supabase Migrations](./guides/supabase-migrations.md)** — Automatic database migrations
 - **[Audio CDN Setup](./guides/audio-cdn-setup.md)** — Audio CDN infrastructure
 - **[Upload Large Files](./guides/upload-large-files.md)** — Handling large file uploads
 - **[Keystore Regeneration](./guides/keystore-regeneration.md)** — Android keystore management
