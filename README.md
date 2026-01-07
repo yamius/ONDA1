@@ -25,23 +25,36 @@ ONDA проводит пользователей через прогрессив
 | Android | WebView, Kotlin, Health Connect |
 | Backend | Supabase (Auth, PostgreSQL, Storage, Edge Functions) |
 
-## Структура проекта
+## Documentation
+
+📚 **[Full Documentation](./docs/index.md)**
+
+| Section | Description |
+|---------|-------------|
+| [Getting Started](./docs/getting-started/) | Setup guides for iOS, Android, CI/CD |
+| [Architecture](./docs/architecture/) | System design and technical solutions |
+| [Guides](./docs/guides/) | Step-by-step technical guides |
+
+## Project Structure
 
 ```
 src/                    # React PWA
-├── components/         # UI компоненты
-├── hooks/              # React хуки (vitals, health data)
-├── utils/              # Утилиты и расчёты
-└── onda-level1-demo_27.tsx  # Главный компонент
+├── components/         # UI components
+├── hooks/              # React hooks (vitals, health data)
+├── utils/              # Utilities and calculations
+└── onda-level1-demo_27.tsx  # Main component
 
-ios/                    # iOS приложение (Capacitor)
-├── App/                # iPhone приложение
-└── OndaWatch Watch App/  # Apple Watch приложение
+ios/                    # iOS app (Capacitor)
+├── App/                # iPhone app
+└── watchkitapp Watch App/  # Apple Watch app
 
-android-webview/        # Android приложение
+android-webview/        # Android app
 supabase/               # Edge Functions
-.assistant/             # Документация для ИИ
-docs/                   # Техническая документация
+docs/                   # Technical documentation
+├── getting-started/    # Setup guides
+├── architecture/       # System design
+├── guides/             # Technical guides
+└── archive/            # Legacy docs
 ```
 
 ## Запуск
