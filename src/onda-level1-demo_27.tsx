@@ -28,6 +28,7 @@ import { Capacitor } from '@capacitor/core';
 import { rhythmStore } from './sleep/rhythm';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
+import { useAnalytics } from './hooks/useAnalytics';
 
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
@@ -42,9 +43,27 @@ const OndaLevel1 = () => {
   const healthKitHeartRate = useHealthKitHeartRate({ pollingInterval: 1500 });
   const watchHeartRate = useWatchHeartRate();
   const permissions = usePermissions();
+  const { track, trackPractice } = useAnalytics();
   const platform = Capacitor.getPlatform();
   
   useKeepAwake(true);
+  
+  // Track app open on mount
+  useEffect(() => {
+    track('app_open', { platform });
+  }, []);
+
+  // Track first heart rate from watch (successful connection)
+  const hasTrackedWatchConnection = useRef(false);
+  useEffect(() => {
+    if (watchHeartRate.heartRate && !hasTrackedWatchConnection.current) {
+      hasTrackedWatchConnection.current = true;
+      track('watch_connection_success', {
+        heart_rate: watchHeartRate.heartRate,
+        is_connected: watchHeartRate.isConnected,
+      });
+    }
+  }, [watchHeartRate.heartRate]);
   
   // Автозапуск HR мониторинга на втором и последующих запусках (когда разрешения уже есть)
   useEffect(() => {
@@ -1045,6 +1064,13 @@ const OndaLevel1 = () => {
       setQualityScore(0);
       setIsPaused(false);
 
+      // Track practice view
+      trackPractice('view', practiceId, {
+        practice_name: space.name,
+        target_duration: space.duration,
+        base_ond: baseQnt,
+      });
+
       // Scroll to practice after a short delay
       setTimeout(() => {
         practiceRefs.current[practiceId]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -1079,6 +1105,17 @@ const OndaLevel1 = () => {
     const hasRealMetrics = freshVitals.hasVitalsData;
     const initialStress = hasRealMetrics && freshVitals.stress !== null ? freshVitals.stress : 50;
     const initialEnergy = hasRealMetrics && freshVitals.energy !== null ? freshVitals.energy : 50;
+
+    // Track practice start
+    if (activePractice) {
+      trackPractice('start', activePractice.id, {
+        practice_name: activePractice.name,
+        target_duration: activePractice.duration,
+        has_biometrics: hasRealMetrics,
+        initial_stress: initialStress,
+        initial_energy: initialEnergy,
+      });
+    }
 
     console.log('Starting basic practice with initial metrics:', { 
       hasRealMetrics, 
@@ -1125,6 +1162,21 @@ const OndaLevel1 = () => {
     const hasRealMetricsAtFinish = freshVitalsForSession.hasVitalsData;
     const minQualityRequired = hasRealMetricsAtFinish ? 70 : 33;
     const isValidForArtifact = timePercent >= 0.8 && qualityScore >= minQualityRequired;
+
+    // Track practice completion
+    trackPractice('complete', activePractice.id, {
+      practice_name: activePractice.name,
+      duration_seconds: practiceTime,
+      target_duration: activePractice.targetTime || 720,
+      quality_score: qualityScore,
+      ond_earned: earnedQnt,
+      has_biometrics: hasRealMetricsAtFinish,
+      is_valid_for_artifact: isValidForArtifact,
+      is_new_record: shouldUpdate && !!existingPractice,
+      final_stress: freshVitalsForSession.stress,
+      final_energy: freshVitalsForSession.energy,
+    });
+
     const session = {
       id: Date.now(),
       practiceId: activePractice.id,
