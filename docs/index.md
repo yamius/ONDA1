@@ -29,6 +29,7 @@ Start here if you're new to the project.
 
 Technical decisions and system design documentation.
 
+- **[Architecture Overview](./architecture/overview.md)** — High-level system diagram and data flows
 - **[Heart Rate Integration](./architecture/heart-rate-integration.md)** — How heart rate monitoring works
 - **[HealthKit Solution](./architecture/healthkit-solution.md)** — iOS HealthKit integration architecture
 - **[Permissions Solution](./architecture/permissions-solution.md)** — Unified permissions system design
