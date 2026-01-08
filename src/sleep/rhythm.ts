@@ -262,6 +262,7 @@ export const rhythmStore = {
   /**
    * Синхронизировать данные из HealthKit
    * Вызывать при старте приложения на iOS
+   * Загружает историю сна за последние 14 дней
    */
   async syncFromHealthKit(): Promise<boolean> {
     if (Capacitor.getPlatform() !== 'ios') {
@@ -270,41 +271,40 @@ export const rhythmStore = {
     }
 
     try {
-      console.log('[Rhythm] Starting HealthKit sync...');
+      console.log('[Rhythm] Starting HealthKit sync (14 days history)...');
       
-      const result = await HealthKitHeartRate.queryAllHealthData();
+      // Query sleep history for the last 14 days
+      const result = await HealthKitHeartRate.querySleepHistory({ days: 14 });
       
-      if (!result?.sleep?.main) {
-        console.log('[Rhythm] No sleep data in HealthKit');
+      if (!result?.records || result.records.length === 0) {
+        console.log('[Rhythm] No sleep history in HealthKit');
         return false;
       }
 
-      const { sleepStart, wakeTime, durationMin } = result.sleep.main;
-      
-      if (!sleepStart || !wakeTime || !durationMin) {
-        console.log('[Rhythm] Incomplete sleep data:', result.sleep.main);
-        return false;
-      }
+      console.log(`[Rhythm] Found ${result.records.length} sleep records`);
 
-      // Определяем дату записи (дата пробуждения)
-      const today = new Date().toISOString().split('T')[0];
-      
-      this.addDay({
-        date: today,
-        sleepStart,
-        wakeTime,
-        durationMin
-      });
+      // Add each day's sleep data
+      let addedCount = 0;
+      for (const record of result.records) {
+        if (record.sleepStart && record.wakeTime && record.durationMin && record.date) {
+          this.addDay({
+            date: record.date,
+            sleepStart: record.sleepStart,
+            wakeTime: record.wakeTime,
+            durationMin: record.durationMin
+          });
+          addedCount++;
+        }
+      }
 
       console.log('[Rhythm] HealthKit sync complete:', {
-        date: today,
-        sleepStart,
-        wakeTime,
-        durationMin,
+        recordsFound: result.records.length,
+        recordsAdded: addedCount,
+        totalInStore: this.getLog().length,
         progress: this.progress()
       });
 
-      return true;
+      return addedCount > 0;
     } catch (e) {
       console.error('[Rhythm] HealthKit sync error:', e);
       return false;

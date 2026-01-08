@@ -56,12 +56,24 @@ export interface HealthKitDataResult {
   };
 }
 
+export interface SleepRecord {
+  date: string;       // "2026-01-07"
+  sleepStart: string; // "23:30"
+  wakeTime: string;   // "07:15"
+  durationMin: number; // 465
+}
+
+export interface SleepHistoryResult {
+  records: SleepRecord[];
+}
+
 export interface HealthKitHeartRatePlugin {
   isAvailable(): Promise<{ available: boolean }>;
   requestAuthorization(): Promise<{ authorized: boolean }>;
   requestFullAuthorization(): Promise<{ authorized: boolean }>;
   queryHeartRate(options?: { limit?: number; minutesAgo?: number }): Promise<QueryHeartRateResult>;
   queryAllHealthData(): Promise<HealthKitDataResult>;
+  querySleepHistory(options?: { days?: number }): Promise<SleepHistoryResult>;
   startRealtimeMonitoring(): Promise<{ started: boolean }>;
   stopRealtimeMonitoring(): Promise<{ stopped: boolean }>;
   addListener(

@@ -12,6 +12,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "requestFullAuthorization", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryHeartRate", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryAllHealthData", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "querySleepHistory", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "stopRealtimeMonitoring", returnType: CAPPluginReturnPromise)
     ]
@@ -387,6 +388,86 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
             
             call.resolve(result)
         }
+    }
+    
+    // Query sleep history for the last N days (for Life Rhythm artifact)
+    @objc func querySleepHistory(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            call.reject("HealthKit is not available")
+            return
+        }
+        
+        let days = call.getInt("days") ?? 14
+        let now = Date()
+        let calendar = Calendar.current
+        let startDate = calendar.date(byAdding: .day, value: -days, to: calendar.startOfDay(for: now)) ?? now
+        
+        guard let sleepType = HKObjectType.categoryType(forIdentifier: .sleepAnalysis) else {
+            call.resolve(["records": []])
+            return
+        }
+        
+        let predicate = HKQuery.predicateForSamples(withStart: startDate, end: now, options: .strictStartDate)
+        let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: false)
+        
+        let query = HKSampleQuery(sampleType: sleepType, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: [sortDescriptor]) { _, samples, error in
+            DispatchQueue.main.async {
+                guard let samples = samples as? [HKCategorySample], !samples.isEmpty else {
+                    call.resolve(["records": []])
+                    return
+                }
+                
+                // Group samples by date (wake date)
+                var dailySleep: [String: (duration: TimeInterval, sleepStart: Date?, wakeTime: Date?)] = [:]
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd"
+                let timeFormatter = DateFormatter()
+                timeFormatter.dateFormat = "HH:mm"
+                
+                for sample in samples {
+                    // Skip "awake" periods
+                    if sample.value == HKCategoryValueSleepAnalysis.awake.rawValue {
+                        continue
+                    }
+                    
+                    // Use wake date as the key (end date of sleep)
+                    let wakeDate = dateFormatter.string(from: sample.endDate)
+                    let duration = sample.endDate.timeIntervalSince(sample.startDate)
+                    
+                    if var existing = dailySleep[wakeDate] {
+                        existing.duration += duration
+                        if existing.sleepStart == nil || sample.startDate < existing.sleepStart! {
+                            existing.sleepStart = sample.startDate
+                        }
+                        if existing.wakeTime == nil || sample.endDate > existing.wakeTime! {
+                            existing.wakeTime = sample.endDate
+                        }
+                        dailySleep[wakeDate] = existing
+                    } else {
+                        dailySleep[wakeDate] = (duration: duration, sleepStart: sample.startDate, wakeTime: sample.endDate)
+                    }
+                }
+                
+                // Convert to array of records
+                var records: [[String: Any]] = []
+                for (date, data) in dailySleep {
+                    if data.duration > 0, let sleepStart = data.sleepStart, let wakeTime = data.wakeTime {
+                        records.append([
+                            "date": date,
+                            "sleepStart": timeFormatter.string(from: sleepStart),
+                            "wakeTime": timeFormatter.string(from: wakeTime),
+                            "durationMin": Int(data.duration / 60)
+                        ])
+                    }
+                }
+                
+                // Sort by date descending
+                records.sort { ($0["date"] as? String ?? "") > ($1["date"] as? String ?? "") }
+                
+                call.resolve(["records": records])
+            }
+        }
+        healthStore.execute(query)
     }
     
     private func queryLatest(_ identifier: HKQuantityTypeIdentifier, completion: @escaping (Double?) -> Void) {
