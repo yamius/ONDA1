@@ -236,25 +236,22 @@ const OndaLevel1 = () => {
     return () => clearInterval(id);
   }, []);
 
-  // Добавляем/удаляем артефакт "Ритм Жизни" в зависимости от progress
+  // Добавляем артефакт "Ритм Жизни" при достижении 7 дней (постоянный, не удаляется)
   const LIFE_RHYTHM_ARTIFACT_ID = 'life-rhythm';
   useEffect(() => {
     const hasLifeRhythmArtifact = artifacts.some(a => a.id === LIFE_RHYTHM_ARTIFACT_ID);
     
     if (rhythmProgress >= 7 && !hasLifeRhythmArtifact) {
-      // Добавляем артефакт "Ритм Жизни"
-      console.log('[App] Life Rhythm artifact activated! +100% OND bonus');
+      // Добавляем артефакт "Ритм Жизни" - он остаётся навсегда
+      console.log('[App] Life Rhythm artifact unlocked! +100% OND bonus (permanent)');
       setArtifacts(prev => [...prev, {
         id: LIFE_RHYTHM_ARTIFACT_ID,
         name: 'Ритм Жизни',
         bonus: 100,
         isLifeRhythm: true
       }]);
-    } else if (rhythmProgress < 7 && hasLifeRhythmArtifact) {
-      // Удаляем артефакт если streak прервался
-      console.log('[App] Life Rhythm artifact deactivated - streak broken');
-      setArtifacts(prev => prev.filter(a => a.id !== LIFE_RHYTHM_ARTIFACT_ID));
     }
+    // Артефакт НЕ удаляется при падении streak - он постоянный
   }, [rhythmProgress, artifacts]);
 
   useEffect(() => {
