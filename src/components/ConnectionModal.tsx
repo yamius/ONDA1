@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, Bluetooth, Moon, Heart, Wind, Activity, Zap, CheckCircle, AlertCircle, Clock, Calendar, TrendingUp } from 'lucide-react';
+import { X, Bluetooth, Moon, Sun, Heart, Wind, Activity, Zap, CheckCircle, AlertCircle, Clock, Calendar, TrendingUp } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { HealthConnectCompactPanel } from './HealthConnectCompactPanel';
@@ -636,6 +636,64 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         }`}>
                           {t('settings.sleep_history_count', 'Based on {{count}} nights', { count: sleepHistory.length })}
                         </div>
+
+                        {/* Sleep History - Last 7 days */}
+                        {sleepHistory.length > 0 && (
+                          <div className="mt-4 space-y-2">
+                            <h5 className={`text-sm font-medium mb-2 ${
+                              isLightTheme ? 'text-gray-700' : 'text-white/70'
+                            }`}>
+                              {t('settings.recent_nights', 'Recent Nights')}
+                            </h5>
+                            {sleepHistory.slice(0, 7).map((day, index) => {
+                              const date = new Date(day.date);
+                              const formattedDate = date.toLocaleDateString(undefined, { 
+                                weekday: 'short', 
+                                month: 'short', 
+                                day: 'numeric' 
+                              });
+                              const hours = Math.floor(day.durationMin / 60);
+                              const mins = day.durationMin % 60;
+                              const durationStr = `${hours}h ${mins}m`;
+                              
+                              return (
+                                <div 
+                                  key={day.date} 
+                                  className={`p-3 rounded-xl ${
+                                    isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                                  }`}
+                                >
+                                  <div className="flex justify-between items-center mb-2">
+                                    <span className={`text-sm font-medium ${
+                                      isLightTheme ? 'text-gray-800' : 'text-white'
+                                    }`}>
+                                      {formattedDate}
+                                    </span>
+                                    <span className={`text-sm font-semibold ${
+                                      day.durationMin >= 420 ? 'text-green-500' : 
+                                      day.durationMin >= 360 ? 'text-yellow-500' : 'text-red-500'
+                                    }`}>
+                                      {durationStr}
+                                    </span>
+                                  </div>
+                                  <div className={`flex justify-between text-xs ${
+                                    isLightTheme ? 'text-gray-500' : 'text-white/50'
+                                  }`}>
+                                    <div className="flex items-center gap-1">
+                                      <Moon className="w-3 h-3" />
+                                      <span>{day.sleepStart}</span>
+                                    </div>
+                                    <span>→</span>
+                                    <div className="flex items-center gap-1">
+                                      <Sun className="w-3 h-3" />
+                                      <span>{day.wakeTime}</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
