@@ -32,6 +32,7 @@ Technical decisions and system design documentation.
 - **[Architecture Overview](./architecture/overview.md)** — High-level system diagram and data flows
 - **[Analytics System](./architecture/analytics.md)** — Event tracking and product metrics
 - **[Heart Rate Integration](./architecture/heart-rate-integration.md)** — How heart rate monitoring works
+- **[Life Rhythm Artifact](./architecture/life-rhythm-artifact.md)** — Sleep tracking and +100% OND bonus
 - **[HealthKit Solution](./architecture/healthkit-solution.md)** — iOS HealthKit integration architecture
 - **[Permissions Solution](./architecture/permissions-solution.md)** — Unified permissions system design
 - **[Emotional Check Fix](./architecture/emotional-check-fix.md)** — Base64 encoding solution for emotion analysis
