@@ -219,48 +219,14 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         
         var typesToRead: Set<HKObjectType> = []
         
+        // Only request essential permissions: Heart Rate and Sleep
+        // This keeps the permission dialog simple for users
+        
         if let heartRate = HKQuantityType.quantityType(forIdentifier: .heartRate) {
             typesToRead.insert(heartRate)
         }
-        if let restingHR = HKQuantityType.quantityType(forIdentifier: .restingHeartRate) {
-            typesToRead.insert(restingHR)
-        }
-        if let hrv = HKQuantityType.quantityType(forIdentifier: .heartRateVariabilitySDNN) {
-            typesToRead.insert(hrv)
-        }
-        if let steps = HKQuantityType.quantityType(forIdentifier: .stepCount) {
-            typesToRead.insert(steps)
-        }
-        if let calories = HKQuantityType.quantityType(forIdentifier: .activeEnergyBurned) {
-            typesToRead.insert(calories)
-        }
-        if let vo2max = HKQuantityType.quantityType(forIdentifier: .vo2Max) {
-            typesToRead.insert(vo2max)
-        }
-        if let respRate = HKQuantityType.quantityType(forIdentifier: .respiratoryRate) {
-            typesToRead.insert(respRate)
-        }
-        if let spo2 = HKQuantityType.quantityType(forIdentifier: .oxygenSaturation) {
-            typesToRead.insert(spo2)
-        }
-        if let bodyTemp = HKQuantityType.quantityType(forIdentifier: .bodyTemperature) {
-            typesToRead.insert(bodyTemp)
-        }
-        if let weight = HKQuantityType.quantityType(forIdentifier: .bodyMass) {
-            typesToRead.insert(weight)
-        }
-        if let height = HKQuantityType.quantityType(forIdentifier: .height) {
-            typesToRead.insert(height)
-        }
-        if let bodyFat = HKQuantityType.quantityType(forIdentifier: .bodyFatPercentage) {
-            typesToRead.insert(bodyFat)
-        }
-        if let bloodGlucose = HKQuantityType.quantityType(forIdentifier: .bloodGlucose) {
-            typesToRead.insert(bloodGlucose)
-        }
         
         typesToRead.insert(HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!)
-        typesToRead.insert(HKObjectType.categoryType(forIdentifier: .mindfulSession)!)
         
         healthStore.requestAuthorization(toShare: nil, read: typesToRead) { success, error in
             DispatchQueue.main.async {
