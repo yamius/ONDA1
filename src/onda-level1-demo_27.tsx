@@ -213,21 +213,49 @@ const OndaLevel1 = () => {
   // Автосинхронизация ритма жизни при старте и периодическое обновление
   useEffect(() => {
     // Синхронизация из HealthKit при старте (только на iOS)
-    rhythmStore.syncFromHealthKit().then(synced => {
-      if (synced) {
+    const syncRhythm = async () => {
+      try {
+        await rhythmStore.syncFromHealthKit();
         setRhythmProgress(rhythmStore.progress());
         setRhythmLog(rhythmStore.getLog());
         console.log('[App] Life Rhythm synced from HealthKit');
+      } catch (e) {
+        console.log('[App] Life Rhythm sync skipped:', e);
       }
-    }).catch(e => console.log('[App] Life Rhythm sync skipped:', e));
+    };
+    
+    syncRhythm();
 
-    // Периодическое обновление UI
+    // Периодическое обновление UI и синхронизация (каждые 30 секунд)
     const id = setInterval(() => {
+      // Пересинхронизируем из HealthKit периодически
+      rhythmStore.syncFromHealthKit().catch(() => {});
       setRhythmProgress(rhythmStore.progress());
       setRhythmLog(rhythmStore.getLog());
-    }, 5000); // Обновляем раз в 5 секунд вместо 1
+    }, 30000); // Обновляем раз в 30 секунд
     return () => clearInterval(id);
   }, []);
+
+  // Добавляем/удаляем артефакт "Ритм Жизни" в зависимости от progress
+  const LIFE_RHYTHM_ARTIFACT_ID = 'life-rhythm';
+  useEffect(() => {
+    const hasLifeRhythmArtifact = artifacts.some(a => a.id === LIFE_RHYTHM_ARTIFACT_ID);
+    
+    if (rhythmProgress >= 7 && !hasLifeRhythmArtifact) {
+      // Добавляем артефакт "Ритм Жизни"
+      console.log('[App] Life Rhythm artifact activated! +100% OND bonus');
+      setArtifacts(prev => [...prev, {
+        id: LIFE_RHYTHM_ARTIFACT_ID,
+        name: 'Ритм Жизни',
+        bonus: 100,
+        isLifeRhythm: true
+      }]);
+    } else if (rhythmProgress < 7 && hasLifeRhythmArtifact) {
+      // Удаляем артефакт если streak прервался
+      console.log('[App] Life Rhythm artifact deactivated - streak broken');
+      setArtifacts(prev => prev.filter(a => a.id !== LIFE_RHYTHM_ARTIFACT_ID));
+    }
+  }, [rhythmProgress, artifacts]);
 
   useEffect(() => {
     const loadUserData = async () => {
@@ -1253,7 +1281,17 @@ const OndaLevel1 = () => {
             hasRealMetrics
           });
 
-          console.log('OND reward calculation:', ondReward);
+          // Apply artifact bonuses to OND
+          const artifactBonus = calculateBonus();
+          const bonusMultiplier = 1 + artifactBonus / 100;
+          const totalOndWithBonus = Math.round(ondReward.totalOnd * bonusMultiplier * 100) / 100;
+
+          console.log('OND reward calculation:', {
+            ...ondReward,
+            artifactBonus,
+            bonusMultiplier,
+            totalOndWithBonus
+          });
 
           await supabase.from('practice_rewards').insert({
             user_id: user.id,
@@ -1266,7 +1304,7 @@ const OndaLevel1 = () => {
             energy_after: finalEnergy, // Best (highest) energy achieved
             completion_ond: ondReward.completionOnd,
             performance_ond: ondReward.performanceOnd,
-            total_ond_earned: ondReward.totalOnd
+            total_ond_earned: totalOndWithBonus // With artifact bonuses applied
           });
 
           const { data: currentProgress } = await supabase
@@ -1275,7 +1313,7 @@ const OndaLevel1 = () => {
             .eq('user_id', user.id)
             .maybeSingle();
 
-          const actualEarnedDiff = existingPractice ? ondReward.totalOnd - existingPractice.qnt : ondReward.totalOnd;
+          const actualEarnedDiff = existingPractice ? totalOndWithBonus - existingPractice.qnt : totalOndWithBonus;
           const newTotal = (currentProgress?.total_ond || 0) + actualEarnedDiff;
 
           await supabase
