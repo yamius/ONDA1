@@ -1,10 +1,97 @@
-# Privacy Policy
+# ONDA Privacy Policy
 
-**Application Name:** ONDA (ONDA Life)  
-**Last Updated:** January 9, 2026
+Effective Date: January 9, 2026
 
----
+This Privacy Policy describes how the ONDA mobile application (hereinafter "the App", "we", "us", or "our") collects, uses, and discloses your information in connection with your use of our application. We are committed to protecting your privacy and handling your data responsibly.
 
-*Privacy Policy content will be added here.*
+## 1. Information Collection and Use
 
-Please provide your Privacy Policy document to complete this section.
+We collect various types of information to provide and improve our services and to ensure a personalized experience.
+
+### 1.1. Personal Data
+
+When using our App, we may ask you to provide certain personal information that can be used to identify or contact you. Such information may include, but is not limited to:
+
+- **Identification Data:** Email address, username (display_name), avatar URL (avatar_url).
+- **Health Data:** Heart rate, sleep data obtained through Apple HealthKit (for iOS) and Health Connect (for Android), as well as from connected Bluetooth heart rate monitors. This data is used for adaptive meditations, breathing exercises, and calculating stress and energy indicators.
+- **Activity Data:** Practice history, completed practices, game progress (earned OND, unlocked artifacts, level progression).
+
+### 1.2. Usage and Analytics Data
+
+We automatically collect information about App usage for analytical purposes to understand how users interact with the App and to improve its functionality. This data includes:
+
+- **Device Data:** Platform (iOS, Android, watchOS), app version.
+- **Session Data:** Session identifier, anonymous identifier (for tracking before login).
+- **Interaction Events:** App opening, onboarding start and completion, viewing onboarding steps, login/registration, requests and grants for health data access permissions, Apple Watch connection attempts and successes, practice start/pause/resume/complete/abandon, heart rate data reception, successful/unsuccessful biometric data synchronization, virtual currency (OND) acquisition, artifact unlocking, level progression.
+- **Error Data:** Error type, error message, URL (for audio loading errors), API endpoint and status (for API errors).
+- **Attribution Data:** UTM parameters (utm_source, utm_medium, utm_campaign) for tracking installation sources and campaigns.
+
+### 1.3. Emotion Analysis
+
+The App uses Edge Functions (powered by OpenAI) for emotion analysis. This may include processing voice or text data provided by the user to deliver personalized recommendations or feedback.
+
+## 2. Purposes of Data Collection
+
+We use the collected information for various purposes, including:
+
+- **Providing and Supporting the App:** Ensuring functionality, maintaining accounts, processing transactions.
+- **Personalizing Experience:** Adapting meditations and exercises based on health and activity data, providing personalized feedback.
+- **Improving the App:** Analyzing usage to identify trends, improve features, and fix bugs.
+- **Security and Fraud Prevention:** Protecting our services and users.
+- **Analytics and Reporting:** Understanding App effectiveness and user behavior.
+- **Communicating with You:** Sending notifications, updates, and responding to inquiries.
+
+## 3. Information Disclosure
+
+We do not sell or share your personal information with third parties, except as described in this Privacy Policy.
+
+### 3.1. Service Providers
+
+We may engage third-party companies and individuals to facilitate the operation of our App ("Service Providers"), to provide services on our behalf, to perform App-related services, or to assist us in analyzing how our App is used. These third parties have access to your personal information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.
+
+- **Supabase:** Used for user authentication, data storage (PostgreSQL), practice audio file storage, and Edge Functions execution (including emotion analysis).
+- **OpenAI:** Used via Edge Functions for emotion analysis.
+- **Apple HealthKit / Health Connect:** For collecting and synchronizing health data from your device.
+
+### 3.2. Legal Compliance
+
+We may disclose your personal information if required by law or in response to valid requests from public authorities (e.g., a court or government agency).
+
+### 3.3. Business Transfer
+
+In the event of a merger, acquisition, or asset sale, your personal information may be transferred. We will notify you before your personal information is transferred and becomes subject to a different Privacy Policy.
+
+## 4. Data Security
+
+The security of your data is important to us, but remember that no method of transmission over the Internet or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your personal information, we cannot guarantee its absolute security.
+
+## 5. Data Retention
+
+We retain your personal data only for as long as necessary for the purposes set forth in this Privacy Policy. We will also retain and use your data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable law), resolve disputes, and enforce our legal agreements and policies.
+
+## 6. Your Data Protection Rights
+
+Depending on your location, you may have the following rights regarding your personal data:
+
+- **Right to Access:** You have the right to request copies of your personal data.
+- **Right to Rectification:** You have the right to request correction of any information you believe is inaccurate or completion of information you believe is incomplete.
+- **Right to Erasure:** You have the right to request deletion of your personal data under certain conditions.
+- **Right to Restrict Processing:** You have the right to request restriction of processing of your personal data under certain conditions.
+- **Right to Object to Processing:** You have the right to object to processing of your personal data under certain conditions.
+- **Right to Data Portability:** You have the right to request transfer of the data we have collected to another organization or directly to you under certain conditions.
+
+To exercise any of these rights, please contact us using the contact information provided below.
+
+## 7. Children's Privacy
+
+Our App is not intended for use by persons under 13 years of age ("Children"). We do not knowingly collect personal information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal data, please contact us. If we become aware that we have collected personal data from children without verification of parental consent, we will take steps to remove that information from our servers.
+
+## 8. Changes to This Privacy Policy
+
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We will also notify you via email and/or a prominent notice in our App before the change takes effect and update the "Effective Date" at the top of this Privacy Policy.
+
+You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+
+## 9. Contact Information
+
+If you have any questions regarding this Privacy Policy, please contact us at: info@onda-life.com
