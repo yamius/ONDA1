@@ -15,33 +15,33 @@ The Life Rhythm artifact rewards users for maintaining a consistent sleep schedu
 
 ```mermaid
 flowchart TB
-    subgraph Watch["Apple Watch"]
-        Sleep["Sleep App"]
+    subgraph Watch[Apple Watch]
+        Sleep[Sleep App]
     end
     
-    subgraph iOS["iOS Device"]
-        HK["HealthKit"]
-        Plugin["HealthKitHeartRatePlugin.swift"]
+    subgraph iOS[iOS Device]
+        HK[HealthKit]
+        Plugin[HealthKitHeartRatePlugin]
     end
     
-    subgraph App["React App"]
-        RhythmStore["rhythmStore<br/>(sleep/rhythm.ts)"]
-        Artifacts["artifacts[]<br/>state"]
-        Bonus["calculateBonus()"]
-        OND["OND Calculation"]
+    subgraph App[React App]
+        RhythmStore[rhythmStore]
+        Artifacts[artifacts state]
+        Bonus[calculateBonus]
+        OND[OND Calculation]
     end
     
-    subgraph Backend["Supabase"]
-        DB["user_game_progress<br/>artifacts[]"]
+    subgraph Backend[Supabase]
+        DB[user_game_progress]
     end
     
-    Sleep -->|Records sleep| HK
-    HK -->|sleepAnalysis| Plugin
-    Plugin -->|queryAllHealthData()| RhythmStore
-    RhythmStore -->|progress >= 7| Artifacts
-    Artifacts -->|bonus: 100| Bonus
-    Bonus -->|multiplier| OND
-    Artifacts -->|persist| DB
+    Sleep --> HK
+    HK --> Plugin
+    Plugin --> RhythmStore
+    RhythmStore --> Artifacts
+    Artifacts --> Bonus
+    Bonus --> OND
+    Artifacts --> DB
 ```
 
 ## Data Flow
