@@ -404,7 +404,10 @@
     "or_continue_with": "o continuar con",
     "no_account": "¿No tienes cuenta? Regístrate",
     "have_account": "¿Ya tienes cuenta? Inicia sesión",
-    "terms_agreement": "Al continuar, aceptas los términos de uso",
+    "terms_agreement": "Al continuar, aceptas nuestros",
+    "terms_of_use": "Términos de uso",
+    "privacy_policy": "Política de privacidad",
+    "and": "y",
     "loading": "Cargando...",
     "error_occurred": "Ocurrió un error",
     "error_google": "Error de autenticación con Google",
@@ -645,5 +648,10 @@
     "monthly": "Mensual",
     "try_free": "Probar 7 días gratis",
     "disclaimer": "Totalmente gratis por 7 días, luego 4.17 EUR/mes, facturado anualmente a 49.99 EUR/año. Cancela en cualquier momento."
+  },
+  "legal": {
+    "terms_of_use": "Términos de uso",
+    "privacy_policy": "Política de privacidad",
+    "load_error": "No se pudo cargar el documento. Inténtalo más tarde."
   }
 }

@@ -5,6 +5,7 @@ import { supabase } from '../lib/supabase';
 import { Capacitor } from '@capacitor/core';
 import { Browser } from '@capacitor/browser';
 import { SignInWithApple, SignInWithAppleOptions, SignInWithAppleResponse } from '@capacitor-community/apple-sign-in';
+import { LegalModal } from './LegalModal';
 
 interface AuthModalProps {
   onClose: () => void;
@@ -19,6 +20,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [showConfirmationMessage, setShowConfirmationMessage] = useState(false);
+  const [legalModal, setLegalModal] = useState<'terms' | 'privacy' | null>(null);
 
   const handleEmailAuth = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -441,9 +443,37 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
         </div>
 
         <p className={`text-xs text-center mt-6 ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
-          {t('auth.terms_agreement')}
+          {t('auth.terms_agreement')}{' '}
+          <button
+            type="button"
+            onClick={() => setLegalModal('terms')}
+            className={`underline hover:no-underline ${
+              isLightTheme ? 'text-gray-700 hover:text-gray-900' : 'text-white/70 hover:text-white'
+            }`}
+          >
+            {t('auth.terms_of_use')}
+          </button>
+          {' '}{t('auth.and')}{' '}
+          <button
+            type="button"
+            onClick={() => setLegalModal('privacy')}
+            className={`underline hover:no-underline ${
+              isLightTheme ? 'text-gray-700 hover:text-gray-900' : 'text-white/70 hover:text-white'
+            }`}
+          >
+            {t('auth.privacy_policy')}
+          </button>
         </p>
       </div>
+
+      {/* Legal Modals */}
+      {legalModal && (
+        <LegalModal
+          type={legalModal}
+          onClose={() => setLegalModal(null)}
+          isLightTheme={isLightTheme}
+        />
+      )}
     </div>
   );
 };

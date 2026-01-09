@@ -404,7 +404,10 @@
     "or_continue_with": "或继续使用",
     "no_account": "没有账户？注册",
     "have_account": "已有账户？登录",
-    "terms_agreement": "继续即表示您同意使用条款",
+    "terms_agreement": "继续即表示您同意我们的",
+    "terms_of_use": "使用条款",
+    "privacy_policy": "隐私政策",
+    "and": "和",
     "loading": "加载中...",
     "error_occurred": "发生错误",
     "error_google": "Google认证错误",
@@ -645,5 +648,10 @@
     "monthly": "月度",
     "try_free": "免费试用7天",
     "disclaimer": "7天完全免费，之后每月4.17欧元，按年计费49.99欧元/年。随时取消。"
+  },
+  "legal": {
+    "terms_of_use": "使用条款",
+    "privacy_policy": "隐私政策",
+    "load_error": "无法加载文档，请稍后再试。"
   }
 }

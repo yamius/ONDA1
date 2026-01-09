@@ -517,7 +517,10 @@
     "or_continue_with": "or continue with",
     "no_account": "No account? Sign up",
     "have_account": "Already have an account? Sign in",
-    "terms_agreement": "By continuing, you agree to the terms of use",
+    "terms_agreement": "By continuing, you agree to our",
+    "terms_of_use": "Terms of Use",
+    "privacy_policy": "Privacy Policy",
+    "and": "and",
     "loading": "Loading...",
     "error_occurred": "An error occurred",
     "error_google": "Google authentication error",
@@ -1574,5 +1577,10 @@
       "If you had to name one thing that keeps coming back, what would it be?",
       "What would change if you thought about it differently?"
     ]
+  },
+  "legal": {
+    "terms_of_use": "Terms of Use",
+    "privacy_policy": "Privacy Policy",
+    "load_error": "Unable to load document. Please try again later."
   }
 }
