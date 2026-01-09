@@ -585,12 +585,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                                 {t('settings.duration_score', 'Sleep Duration')}
                               </div>
                               <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
-                                {t('settings.avg_duration', 'Avg')}: {lifeRhythmMetrics?.avgDurationHours ?? '--'}h
+                                {t('settings.avg_duration', 'Avg')}
                               </div>
                             </div>
                           </div>
-                          <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
-                            {lifeRhythmMetrics?.durationScore ?? '--'}%
+                          <div className={`font-semibold ${
+                            (lifeRhythmMetrics?.avgDurationHours ?? 0) >= 7 ? 'text-green-500' : 
+                            (lifeRhythmMetrics?.avgDurationHours ?? 0) >= 6 ? 'text-yellow-500' : 'text-red-500'
+                          }`}>
+                            {lifeRhythmMetrics?.avgDurationHours ?? '--'}h
                           </div>
                         </div>
 

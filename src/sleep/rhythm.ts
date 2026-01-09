@@ -44,7 +44,7 @@ function hmToMin(x: string): number {
 }
 
 function minToHm(totalMin: number): string {
-  let mins = totalMin;
+  let mins = Math.round(totalMin); // Round to avoid float issues
   if (mins < 0) mins += 1440;
   if (mins >= 1440) mins -= 1440;
   const hours = Math.floor(mins / 60);
