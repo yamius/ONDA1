@@ -4400,12 +4400,12 @@ const OndaLevel1 = () => {
                 </div>
               </div>
 
-              {/* Рейтинг практик */}
+              {/* Рейтинг практик - Top 10 */}
               <div>
                 <h3 className="text-base sm:text-xl font-bold mb-3 sm:mb-4">{t('leaderboard.practice_ratings')}</h3>
                 <div className="space-y-2">
                   {practiceStats.length > 0 ? (
-                    practiceStats.map((practice, idx) => {
+                    practiceStats.slice(0, 10).map((practice, idx) => {
                       const avgMinutes = Math.floor(practice.avg_duration / 60);
                       const avgSeconds = Math.floor(practice.avg_duration % 60);
                       return (
