@@ -59,6 +59,9 @@ Detailed technical guides for specific tasks.
 - **[Xiaomi Data Analysis](./guides/xiaomi-data-analysis.md)** — Data interception analysis (RU)
 - **[Bluetooth Tracker](./guides/bluetooth-tracker.md)** — Bluetooth tracker integration guide
 
+### Monetization
+- **[In-App Purchase](./guides/in-app-purchase.md)** — RevenueCat subscription integration
+
 ### CI/CD & Infrastructure
 - **[CI/CD Setup](./guides/ci-cd-setup.md)** — Full CI/CD configuration
 - **[GitHub Actions](./guides/github-actions.md)** — GitHub Actions workflow setup

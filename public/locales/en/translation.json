@@ -1404,10 +1404,22 @@
     "feature3": "Personalized practices based on your biometrics",
     "feature4": "Real-time heart rate tracking during practices",
     "trial_badge": "7-Day Free Trial",
+    "trial_badge_yearly": "14-Day Free Trial",
     "yearly": "Yearly",
     "monthly": "Monthly",
     "try_free": "Try 7 Days Free",
-    "disclaimer": "Totally free for 7 days, then 4.17 EUR/month, billed annually at 49.99 EUR/year. Cancel anytime."
+    "try_free_14": "Try 14 Days Free",
+    "disclaimer": "Totally free for 7 days, then 4.17 EUR/month, billed annually at 49.99 EUR/year. Cancel anytime.",
+    "disclaimer_yearly": "Totally free for 14 days, then 5.42 USD/month, billed annually at 64.99 USD/year. Cancel anytime.",
+    "disclaimer_monthly": "Totally free for 7 days, then 14.99 USD/month. Cancel anytime.",
+    "restore": "Restore Purchases",
+    "restoring": "Restoring...",
+    "processing": "Processing...",
+    "loading": "Loading...",
+    "error_no_product": "Product not available",
+    "error_purchase": "Purchase failed",
+    "error_restore": "Restore failed",
+    "error_no_purchases": "No purchases to restore"
   },
   "liza": {
     "name": "Liza",
