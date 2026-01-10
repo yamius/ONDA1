@@ -29,9 +29,32 @@
 - `ios/App/` — нативный iOS код
 - `supabase/functions/` — Edge Functions
 
-## Workflow
+## Build Environment
 
-1. Replit → редактирование кода
-2. GitHub → автоматический push
-3. GitHub Actions → сборка iOS
-4. TestFlight → тестирование на устройстве
+**ВАЖНО:** У пользователя **НЕТ Mac**. Все iOS сборки происходят через:
+
+1. **GitHub Actions** — автоматическая сборка при push в main
+2. **TestFlight** — распространение тестовых сборок
+3. **Fastlane** — автоматизация code signing и деплоя
+
+### Что это значит для разработки:
+
+- ❌ Нельзя попросить "запусти `npx cap open ios`" — нет Xcode
+- ❌ Нельзя попросить локальную iOS сборку
+- ✅ Изменения iOS кода проверяются через CI/CD pipeline
+- ✅ После push в main — ждать сборку в GitHub Actions
+- ✅ Тестирование на реальном устройстве через TestFlight
+
+### Workflow
+
+1. Cursor/Replit → редактирование кода
+2. Git push → GitHub
+3. GitHub Actions → автоматическая сборка iOS (Fastlane)
+4. TestFlight → установка на iPhone для тестирования
+
+### Native iOS изменения
+
+При изменении Swift кода (`ios/App/`):
+- Код попадает в сборку автоматически при следующем push
+- Capacitor плагины синхронизируются в CI (`npx cap sync ios`)
+- Проверка ошибок компиляции — в логах GitHub Actions
