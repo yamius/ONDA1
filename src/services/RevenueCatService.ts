@@ -2,8 +2,8 @@ import { Purchases, LOG_LEVEL, PurchasesPackage, CustomerInfo, PurchasesOffering
 import { Capacitor } from '@capacitor/core';
 
 // RevenueCat API Keys
-const REVENUECAT_IOS_API_KEY = 'appl_XXXXXXXXXXXXXXXXXXXXXXXXX'; // Replace with your iOS API key
-const REVENUECAT_ANDROID_API_KEY = 'goog_XXXXXXXXXXXXXXXXXXXXXXXXX'; // Replace with your Android API key
+const REVENUECAT_IOS_API_KEY = 'appl_wKcgXIVuduXFpPpIWEcrqrWhpZz';
+const REVENUECAT_ANDROID_API_KEY = 'goog_XXXXXXXXXXXXXXXXXXXXXXXXX'; // TODO: Add Android key when ready
 
 // Entitlement ID from RevenueCat dashboard
 export const ENTITLEMENT_ID = 'ONDA Premium';
