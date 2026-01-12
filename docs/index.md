@@ -62,6 +62,9 @@ Detailed technical guides for specific tasks.
 ### Monetization
 - **[In-App Purchase](./guides/in-app-purchase.md)** — RevenueCat subscription integration
 
+### Analytics
+- **[Analytics Views](./guides/analytics-views.md)** — SQL views for product metrics (DAU, retention, funnels)
+
 ### CI/CD & Infrastructure
 - **[CI/CD Setup](./guides/ci-cd-setup.md)** — Full CI/CD configuration
 - **[GitHub Actions](./guides/github-actions.md)** — GitHub Actions workflow setup
