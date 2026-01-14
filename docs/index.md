@@ -64,6 +64,7 @@ Detailed technical guides for specific tasks.
 
 ### Analytics
 - **[Analytics Views](./guides/analytics-views.md)** — SQL views for product metrics (DAU, retention, funnels)
+- **[Analytics Roadmap](./guides/analytics-roadmap.md)** — План развития аналитики (Metabase, PostHog)
 
 ### CI/CD & Infrastructure
 - **[CI/CD Setup](./guides/ci-cd-setup.md)** — Full CI/CD configuration
