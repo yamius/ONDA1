@@ -1,4 +1,4 @@
-import { Heart, Activity, Moon, Flame, Droplets, Scale, Thermometer, Wind, Apple, Utensils, Smartphone, Bug, type LucideIcon } from "lucide-react";
+import { Heart, Activity, Moon, Flame, Droplets, Scale, Thermometer, Wind, Apple, Utensils, Smartphone, type LucideIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import type { HcUpdatePayload } from "../bridge/healthConnectBridge";
 
@@ -336,8 +336,8 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
             </>
           ) : (
             <>
-              <Bug className="w-3 h-3" />
-              Debug
+              <Smartphone className="w-3 h-3" />
+              Simulated
             </>
           )}
         </div>

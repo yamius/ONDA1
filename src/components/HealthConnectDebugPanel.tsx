@@ -215,7 +215,7 @@ export function HealthConnectDebugPanel() {
                               ? 'bg-green-900 text-green-300 border border-green-700'
                               : 'bg-gray-700 text-gray-300 border border-gray-600'
                           }`}>
-                            {event.source === 'health_connect' ? 'Android' : 'Debug'}
+                            {event.source === 'health_connect' ? 'Android' : 'Simulated'}
                           </span>
                           <span className="text-xs text-gray-400 font-mono">
                             {formatTimestamp(event.timestamp)}

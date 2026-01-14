@@ -40,8 +40,9 @@ class RevenueCatService {
     }
 
     try {
-      // Set log level for debugging (change to LOG_LEVEL.ERROR in production)
-      await Purchases.setLogLevel({ level: LOG_LEVEL.DEBUG });
+      // Set log level based on environment
+      const isProduction = import.meta.env?.PROD ?? false;
+      await Purchases.setLogLevel({ level: isProduction ? LOG_LEVEL.ERROR : LOG_LEVEL.DEBUG });
 
       // Configure with platform-specific API key
       const apiKey = platform === 'ios' ? REVENUECAT_IOS_API_KEY : REVENUECAT_ANDROID_API_KEY;

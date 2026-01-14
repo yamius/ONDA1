@@ -17,10 +17,17 @@ interface DebugMonitorProps {
 
 /**
  * Debug Monitor - отслеживает и отображает логи приложения
- * Показывается только в development mode или при активации
+ * HIDDEN in production builds for App Store compliance
+ * Can be enabled by setting localStorage.debugMode = 'true'
  */
 export function DebugMonitor({ buildNumber, commitHash, branchName }: DebugMonitorProps) {
   const [isOpen, setIsOpen] = useState(false);
+  
+  // Check if debug mode should be shown
+  // Hidden in production unless explicitly enabled via localStorage
+  const isProduction = import.meta.env.PROD;
+  const debugModeEnabled = typeof window !== 'undefined' && localStorage.getItem('debugMode') === 'true';
+  const shouldShow = !isProduction || debugModeEnabled;
   const [isExpanded, setIsExpanded] = useState(false);
   const [logs, setLogs] = useState<DebugLog[]>([]);
   const [filter, setFilter] = useState<'all' | 'info' | 'warn' | 'error'>('all');
@@ -152,6 +159,11 @@ export function DebugMonitor({ buildNumber, commitHash, branchName }: DebugMonit
 
   const errorCount = logs.filter(l => l.level === 'error').length;
   const warnCount = logs.filter(l => l.level === 'warn').length;
+
+  // Hide completely in production unless debug mode is enabled
+  if (!shouldShow) {
+    return null;
+  }
 
   if (!isOpen) {
     return (
