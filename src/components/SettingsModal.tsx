@@ -27,6 +27,11 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [success, setSuccess] = useState(false);
   const [showDiagnostics, setShowDiagnostics] = useState(false);
 
+  // Hide Vitals Diagnostics in production unless debug mode is enabled
+  const isProduction = import.meta.env.PROD;
+  const debugModeEnabled = typeof window !== 'undefined' && localStorage.getItem('debugMode') === 'true';
+  const showDiagnosticsButton = !isProduction || debugModeEnabled;
+
   const handleSave = async () => {
     if (!user) return;
 
@@ -194,21 +199,23 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
             </div>
           </div>
 
-          {/* Diagnostics Button */}
-          <div className="pt-4 border-t border-white/10">
-            <button
-              onClick={() => setShowDiagnostics(true)}
-              className={`w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm ${
-                isLightTheme
-                  ? 'bg-gray-200 hover:bg-gray-300 text-gray-700'
-                  : 'bg-white/10 hover:bg-white/20 text-white/80'
-              }`}
-              data-testid="button-open-diagnostics"
-            >
-              <Activity className="w-4 h-4" />
-              Vitals Diagnostics
-            </button>
-          </div>
+          {/* Diagnostics Button - Hidden in production for App Store compliance */}
+          {showDiagnosticsButton && (
+            <div className="pt-4 border-t border-white/10">
+              <button
+                onClick={() => setShowDiagnostics(true)}
+                className={`w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm ${
+                  isLightTheme
+                    ? 'bg-gray-200 hover:bg-gray-300 text-gray-700'
+                    : 'bg-white/10 hover:bg-white/20 text-white/80'
+                }`}
+                data-testid="button-open-diagnostics"
+              >
+                <Activity className="w-4 h-4" />
+                Vitals Diagnostics
+              </button>
+            </div>
+          )}
         </div>
       </div>
 

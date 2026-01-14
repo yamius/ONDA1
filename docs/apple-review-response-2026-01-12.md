@@ -98,10 +98,10 @@ Privacy Policy: https://yourdomain.com/legal/privacy
 2. Debug элементы видимы
 3. UI выглядит незавершённым
 
-### Решение
-1. ✅ Тестовая страница AudioTest доступна только по специальному URL - **это нормально**
-2. ✅ Debug кнопка закомментирована в production - **это нормально**
-3. Убедиться что в UI нет текстов типа "Coming soon", "Test", "Demo"
+### ✅ Решение (уже применено в коде)
+1. ✅ Тестовая страница AudioTest доступна только по специальному URL
+2. ✅ **DebugMonitor** скрыт в production билдах
+3. ✅ **Vitals Diagnostics** в Settings скрыт в production билдах
 
 **Ответ для Apple (если спросят):**
 > The app is a complete, production-ready application with full functionality including:
@@ -111,6 +111,46 @@ Privacy Policy: https://yourdomain.com/legal/privacy
 > - Multi-language support (EN, RU, ES, UK, ZH)
 > 
 > All core features are fully implemented and tested.
+
+---
+
+## 🛠️ Встроенные инструменты отладки
+
+В приложении есть **два встроенных debug-инструмента**, которые **скрыты в production** для соответствия требованиям App Store:
+
+### 1. Debug Monitor (главный экран)
+- **Файл:** `src/components/DebugMonitor.tsx`
+- **Расположение:** Иконка жука 🐛 в левом нижнем углу
+- **Функции:** 
+  - Логирование всех console.log/warn/error
+  - Фильтрация по уровню
+  - Экспорт логов в файл
+
+### 2. Vitals Diagnostics (Settings)
+- **Файл:** `src/components/VitalsDiagnostics.tsx`
+- **Расположение:** Settings → Vitals Diagnostics
+- **Функции:**
+  - Диагностика подключений HR (Bluetooth, HealthKit, Watch)
+  - Проверка Health Connect на Android
+  - Отладка биометрических данных
+
+### 🔓 Как включить debug-режим в production
+
+Для тестирования на реальном устройстве в production билде:
+
+```javascript
+// В Safari Web Inspector или через консоль
+localStorage.setItem('debugMode', 'true');
+location.reload();
+```
+
+**Для отключения:**
+```javascript
+localStorage.removeItem('debugMode');
+location.reload();
+```
+
+> ⚠️ **Важно:** Не забудьте отключить debug-режим перед передачей устройства на review!
 
 ---
 
