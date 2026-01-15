@@ -3610,8 +3610,8 @@ const OndaLevel1 = () => {
 
       <div className="max-w-6xl mx-auto">
 
-        {/* ВРЕМЕННЫЙ ОТЛАДОЧНЫЙ БЛОК - убрать после тестирования */}
-        {platform === 'ios' && (
+        {/* Watch Debug - скрыт в production, включается через localStorage.debugMode='true' */}
+        {platform === 'ios' && (!import.meta.env.PROD || localStorage.getItem('debugMode') === 'true') && (
           <div className="mb-4 px-4">
             <div className="bg-gray-800/80 border border-gray-600 rounded-lg p-3 text-xs font-mono">
               <div className="text-yellow-400 mb-1">Watch Debug:</div>

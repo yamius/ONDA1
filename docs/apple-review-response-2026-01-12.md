@@ -116,7 +116,7 @@ Privacy Policy: https://yourdomain.com/legal/privacy
 
 ## 🛠️ Встроенные инструменты отладки
 
-В приложении есть **два встроенных debug-инструмента**, которые **скрыты в production** для соответствия требованиям App Store:
+В приложении есть **три встроенных debug-инструмента**, которые **скрыты в production** для соответствия требованиям App Store:
 
 ### 1. Debug Monitor (главный экран)
 - **Файл:** `src/components/DebugMonitor.tsx`
@@ -133,6 +133,14 @@ Privacy Policy: https://yourdomain.com/legal/privacy
   - Диагностика подключений HR (Bluetooth, HealthKit, Watch)
   - Проверка Health Connect на Android
   - Отладка биометрических данных
+
+### 3. Watch Debug (главный экран, только iOS)
+- **Файл:** `src/onda-level1-demo_27.tsx` (строка ~3613)
+- **Расположение:** Под цитатой на главном экране
+- **Функции:**
+  - Статус Apple Watch (supported, paired, reachable)
+  - Состояние мониторинга HR (autoManaged, isMonitoring)
+  - Текущий пульс и ошибки
 
 ### 🔓 Как включить debug-режим в production
 
