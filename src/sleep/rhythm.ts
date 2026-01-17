@@ -5,8 +5,10 @@
  * Механизм работы:
  * 1. Данные сна приходят из HealthKit (Apple Watch → приложение "Сон")
  * 2. При старте приложения синхронизируем данные за последние 14 дней
- * 3. Считаем streak "хороших" дней подряд (одинаковое время сна/подъёма)
+ * 3. Считаем streak дней подряд с оптимальным сном (7-9 часов)
  * 4. При streak >= 7 дней → артефакт активен → +100% OND
+ * 
+ * Условие "хорошего" дня: сон от 7 до 9 часов (время не важно)
  */
 
 import { Capacitor } from '@capacitor/core';
@@ -120,6 +122,9 @@ export const rhythmStore = {
   /**
    * Рассчитать прогресс артефакта (0-7)
    * Возвращает количество "хороших" дней подряд
+   * 
+   * Условие "хорошего" дня: сон от 7 до 9 часов (420-540 мин)
+   * Время засыпания/пробуждения НЕ учитывается
    */
   progress(): number {
     const days = load();
@@ -128,22 +133,12 @@ export const rhythmStore = {
     // Сортируем по дате (новые первые)
     const sorted = [...days].sort((a, b) => b.date.localeCompare(a.date));
     
-    // Берём последние 14 дней для анализа
-    const tail = sorted.slice(0, 14);
-    if (tail.length < 2) return tail.length;
-
-    // Считаем средние значения
-    const sleepMins = tail.map(d => normalizeNightMinutes(hmToMin(d.sleepStart)));
-    const wakeMins = tail.map(d => hmToMin(d.wakeTime));
-    const avgSleep = average(sleepMins);
-    const avgWake = average(wakeMins);
-
     // Считаем streak от сегодня назад
     let streak = 0;
     const today = new Date();
     
-    for (let i = 0; i < tail.length; i++) {
-      const record = tail[i];
+    for (let i = 0; i < sorted.length && i < 14; i++) {
+      const record = sorted[i];
       const expectedDate = new Date(today);
       expectedDate.setDate(today.getDate() - i);
       
@@ -154,15 +149,13 @@ export const rhythmStore = {
         break; // Пропуск дня - streak прерывается
       }
       
-      // Проверяем качество дня
-      const sleepDev = Math.abs(normalizeNightMinutes(hmToMin(record.sleepStart)) - avgSleep);
-      const wakeDev = Math.abs(hmToMin(record.wakeTime) - avgWake);
-      const durationOK = record.durationMin >= MIN_DURATION_MIN;
+      // Проверяем только длительность сна: 7-9 часов (420-540 мин)
+      const durationOK = record.durationMin >= OPTIMAL_SLEEP_MIN && record.durationMin <= OPTIMAL_SLEEP_MAX;
       
-      if (sleepDev <= MAX_DEVIATION_MIN && wakeDev <= MAX_DEVIATION_MIN && durationOK) {
+      if (durationOK) {
         streak++;
       } else {
-        break; // Плохой день - streak прерывается
+        break; // Недостаточный или избыточный сон - streak прерывается
       }
     }
     
