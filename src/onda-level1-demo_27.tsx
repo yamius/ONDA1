@@ -267,10 +267,15 @@ const OndaLevel1 = () => {
             supabase.from('user_progress').select('total_ond').eq('user_id', user.id).maybeSingle()
           ]);
 
+          // Log any fetch errors
+          if (profileRes.error) console.error('Error fetching profile:', profileRes.error);
+          if (progressRes.error) console.error('Error fetching game progress:', progressRes.error);
+          if (userProgressRes.error) console.error('Error fetching user progress:', userProgressRes.error);
+
           let profile = profileRes.data;
           if (!profile) {
             const displayName = user.user_metadata?.full_name || user.email?.split('@')[0] || 'Player-' + Math.floor(Math.random() * 10000).toString().padStart(4, '0');
-            const { data: newProfile } = await supabase
+            const { data: newProfile, error: profileError } = await supabase
               .from('user_profiles')
               .upsert({
                 id: user.id,
@@ -279,13 +284,17 @@ const OndaLevel1 = () => {
               })
               .select()
               .single();
-            profile = newProfile;
+            if (profileError) {
+              console.error('Error creating profile:', profileError);
+            } else {
+              profile = newProfile;
+            }
           }
           setUserProfile(profile);
 
           let progress = progressRes.data;
           if (!progress) {
-            const { data: newProgress } = await supabase
+            const { data: newProgress, error: progressError } = await supabase
               .from('user_game_progress')
               .upsert({
                 user_id: user.id,
@@ -304,7 +313,11 @@ const OndaLevel1 = () => {
               })
               .select()
               .single();
-            progress = newProgress;
+            if (progressError) {
+              console.error('Error creating game progress:', progressError);
+            } else {
+              progress = newProgress;
+            }
           }
 
           if (progress) {
@@ -421,7 +434,7 @@ const OndaLevel1 = () => {
       if (!user || isLoadingUser) return;
 
       try {
-        await supabase.from('user_game_progress').update({
+        const { error } = await supabase.from('user_game_progress').update({
           ond: qnt,
           active_circuit: activeCircuit,
           completed_practices: completedPractices,
@@ -436,8 +449,12 @@ const OndaLevel1 = () => {
           is_light_theme: isLightTheme,
           updated_at: new Date().toISOString()
         }).eq('user_id', user.id);
+        
+        if (error) {
+          console.error('Error saving game progress:', error.message, error.details, error.hint);
+        }
       } catch (error) {
-        console.error('Error saving game progress:', error);
+        console.error('Error saving game progress (exception):', error);
       }
     };
 
@@ -1290,7 +1307,7 @@ const OndaLevel1 = () => {
             totalOndWithBonus
           });
 
-          await supabase.from('practice_rewards').insert({
+          const { error: rewardError } = await supabase.from('practice_rewards').insert({
             user_id: user.id,
             practice_id: activePractice.id,
             practice_duration_seconds: practiceTime,
@@ -1303,17 +1320,23 @@ const OndaLevel1 = () => {
             performance_ond: ondReward.performanceOnd,
             total_ond_earned: totalOndWithBonus // With artifact bonuses applied
           });
+          if (rewardError) {
+            console.error('Error inserting practice_rewards:', rewardError.message, rewardError.details, rewardError.hint);
+          }
 
-          const { data: currentProgress } = await supabase
+          const { data: currentProgress, error: progressFetchError } = await supabase
             .from('user_progress')
             .select('total_ond')
             .eq('user_id', user.id)
             .maybeSingle();
+          if (progressFetchError) {
+            console.error('Error fetching user_progress:', progressFetchError.message);
+          }
 
           const actualEarnedDiff = existingPractice ? totalOndWithBonus - existingPractice.qnt : totalOndWithBonus;
           const newTotal = (currentProgress?.total_ond || 0) + actualEarnedDiff;
 
-          await supabase
+          const { error: upsertError } = await supabase
             .from('user_progress')
             .upsert({
               user_id: user.id,
@@ -1322,6 +1345,9 @@ const OndaLevel1 = () => {
             }, {
               onConflict: 'user_id'
             });
+          if (upsertError) {
+            console.error('Error upserting user_progress:', upsertError.message, upsertError.details, upsertError.hint);
+          }
         } catch (error) {
           console.error('Error saving practice reward:', error);
         }
