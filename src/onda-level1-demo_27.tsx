@@ -387,7 +387,6 @@ const OndaLevel1 = () => {
           } else {
             console.warn('[ONDA Debug] No progress data loaded for user:', user.id);
           }
-        }
       } catch (error) {
         console.error('Error loading user data:', error);
       } finally {
