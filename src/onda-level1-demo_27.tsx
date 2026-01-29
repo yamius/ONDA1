@@ -112,6 +112,7 @@ const OndaLevel1 = () => {
   const [activeCircuit, setActiveCircuit] = useState(1);
   const [qnt, setQnt] = useState(0);
   const [artifacts, setArtifacts] = useState([]);
+  const [debugInfo, setDebugInfo] = useState<string>('Loading...');
   const [completedPractices, setCompletedPractices] = useState({});
   const [practiceHistory, setPracticeHistory] = useState([]);
   const [activePractice, setActivePractice] = useState(null);
@@ -257,78 +258,134 @@ const OndaLevel1 = () => {
   useEffect(() => {
     const loadUserData = async () => {
       try {
+        console.log('[ONDA Debug] Loading user data...');
+        setDebugInfo('Загрузка...');
         const { data: { user } } = await supabase.auth.getUser();
         setUser(user);
+        console.log('[ONDA Debug] User:', user ? { id: user.id, email: user.email } : 'Not authenticated');
 
-        if (user) {
-          const [profileRes, progressRes, userProgressRes] = await Promise.all([
-            supabase.from('user_profiles').select('*').eq('id', user.id).maybeSingle(),
-            supabase.from('user_game_progress').select('*').eq('user_id', user.id).maybeSingle(),
-            supabase.from('user_progress').select('total_ond').eq('user_id', user.id).maybeSingle()
-          ]);
+        if (!user) {
+          setDebugInfo('❌ Не авторизован');
+          return;
+        }
 
-          let profile = profileRes.data;
-          if (!profile) {
-            const displayName = user.user_metadata?.full_name || user.email?.split('@')[0] || 'Player-' + Math.floor(Math.random() * 10000).toString().padStart(4, '0');
-            const { data: newProfile } = await supabase
-              .from('user_profiles')
-              .upsert({
-                id: user.id,
-                display_name: displayName,
-                avatar_url: user.user_metadata?.avatar_url
-              })
-              .select()
-              .single();
+        setDebugInfo(`✓ User: ${user.email?.slice(0, 15)}...`);
+
+        const [profileRes, progressRes, userProgressRes] = await Promise.all([
+          supabase.from('user_profiles').select('*').eq('id', user.id).maybeSingle(),
+          supabase.from('user_game_progress').select('*').eq('user_id', user.id).maybeSingle(),
+          supabase.from('user_progress').select('total_ond').eq('user_id', user.id).maybeSingle()
+        ]);
+        console.log('[ONDA Debug] Fetch results:', {
+          profile: profileRes.data ? 'found' : 'null',
+          profileError: profileRes.error?.message,
+          gameProgress: progressRes.data ? 'found' : 'null',
+          gameProgressError: progressRes.error?.message,
+          userProgress: userProgressRes.data,
+          userProgressError: userProgressRes.error?.message
+        });
+
+        // Update debug info with errors if any
+        const errors = [];
+        if (profileRes.error) errors.push(`profile: ${profileRes.error.message}`);
+        if (progressRes.error) errors.push(`progress: ${progressRes.error.message}`);
+        if (errors.length > 0) {
+          setDebugInfo(`❌ Ошибки: ${errors.join(', ')}`);
+        }
+
+        // Log any fetch errors
+        if (profileRes.error) console.error('Error fetching profile:', profileRes.error);
+        if (progressRes.error) console.error('Error fetching game progress:', progressRes.error);
+        if (userProgressRes.error) console.error('Error fetching user progress:', userProgressRes.error);
+
+        let profile = profileRes.data;
+        if (!profile) {
+          const displayName = user.user_metadata?.full_name || user.email?.split('@')[0] || 'Player-' + Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+          const { data: newProfile, error: profileError } = await supabase
+            .from('user_profiles')
+            .upsert({
+              id: user.id,
+              display_name: displayName,
+              avatar_url: user.user_metadata?.avatar_url
+            })
+            .select()
+            .single();
+          if (profileError) {
+            console.error('Error creating profile:', profileError);
+          } else {
             profile = newProfile;
           }
-          setUserProfile(profile);
+        }
+        setUserProfile(profile);
 
-          let progress = progressRes.data;
-          if (!progress) {
-            const { data: newProgress } = await supabase
-              .from('user_game_progress')
-              .upsert({
-                user_id: user.id,
-                ond: 0,
-                active_circuit: 1,
-                completed_practices: {},
-                practice_history: [],
-                artifacts: [],
-                unlocked_achievements: [],
-                bio_metrics: { heartRate: 72, hrv: 45, spo2: 98, temp: 36.6, stability: 100 },
-                sleep_tracking: { day: 0, lastCheck: null },
-                selected_language: 'EN',
-                selected_level: 1,
-                selected_chapter: 1,
-                is_light_theme: false
-              })
-              .select()
-              .single();
+        let progress = progressRes.data;
+        if (!progress) {
+          const { data: newProgress, error: progressError } = await supabase
+            .from('user_game_progress')
+            .upsert({
+              user_id: user.id,
+              ond: 0,
+              active_circuit: 1,
+              completed_practices: {},
+              practice_history: [],
+              artifacts: [],
+              unlocked_achievements: [],
+              bio_metrics: { heartRate: 72, hrv: 45, spo2: 98, temp: 36.6, stability: 100 },
+              sleep_tracking: { day: 0, lastCheck: null },
+              selected_language: 'EN',
+              selected_level: 1,
+              selected_chapter: 1,
+              is_light_theme: false
+            })
+            .select()
+            .single();
+          if (progressError) {
+            console.error('Error creating game progress:', progressError);
+          } else {
             progress = newProgress;
           }
+        }
 
-          if (progress) {
-            setGameProgress(progress);
-            setQnt(userProgressRes.data?.total_ond || progress.ond || 0);
-            setActiveCircuit(progress.active_circuit || 1);
-            setCompletedPractices(progress.completed_practices || {});
-            setPracticeHistory(progress.practice_history || []);
-            setArtifacts(progress.artifacts || []);
-            setUnlockedAchievements(progress.unlocked_achievements || []);
-            setBioMetrics(progress.bio_metrics || {
-              heartRate: 72,
-              hrv: 45,
-              spo2: 98,
-              temp: 36.6,
-              stability: 100
-            });
-            setSleepTracking(progress.sleep_tracking || { day: 0, lastCheck: null });
-            setSelectedLanguage('EN');
-            i18n.changeLanguage('en');
-            setSelectedLevel(progress.selected_level || 1);
-            setSelectedChapter(progress.selected_chapter || 1);
-            setIsLightTheme(progress.is_light_theme || false);
-          }
+        if (progress) {
+          const finalOnd = userProgressRes.data?.total_ond || progress.ond || 0;
+          const practiceCount = Object.keys(progress.completed_practices || {}).length;
+          
+          // Debug logging to diagnose data loading issues
+          console.log('[ONDA Debug] Loaded user progress:', {
+            user_id: user.id,
+            user_progress_total_ond: userProgressRes.data?.total_ond,
+            game_progress_ond: progress.ond,
+            final_ond: finalOnd,
+            completed_practices: Object.keys(progress.completed_practices || {}),
+            practice_history_count: (progress.practice_history || []).length,
+            artifacts: progress.artifacts
+          });
+
+          // Update visible debug info
+          setDebugInfo(`✅ OND: ${finalOnd} | Практик: ${practiceCount}`);
+
+          setGameProgress(progress);
+          setQnt(finalOnd);
+          setActiveCircuit(progress.active_circuit || 1);
+          setCompletedPractices(progress.completed_practices || {});
+          setPracticeHistory(progress.practice_history || []);
+          setArtifacts(progress.artifacts || []);
+          setUnlockedAchievements(progress.unlocked_achievements || []);
+          setBioMetrics(progress.bio_metrics || {
+            heartRate: 72,
+            hrv: 45,
+            spo2: 98,
+            temp: 36.6,
+            stability: 100
+          });
+          setSleepTracking(progress.sleep_tracking || { day: 0, lastCheck: null });
+          setSelectedLanguage('EN');
+          i18n.changeLanguage('en');
+          setSelectedLevel(progress.selected_level || 1);
+          setSelectedChapter(progress.selected_chapter || 1);
+          setIsLightTheme(progress.is_light_theme || false);
+        } else {
+          console.warn('[ONDA Debug] No progress data loaded for user:', user.id);
         }
       } catch (error) {
         console.error('Error loading user data:', error);
@@ -421,7 +478,7 @@ const OndaLevel1 = () => {
       if (!user || isLoadingUser) return;
 
       try {
-        await supabase.from('user_game_progress').update({
+        const { error } = await supabase.from('user_game_progress').update({
           ond: qnt,
           active_circuit: activeCircuit,
           completed_practices: completedPractices,
@@ -436,8 +493,12 @@ const OndaLevel1 = () => {
           is_light_theme: isLightTheme,
           updated_at: new Date().toISOString()
         }).eq('user_id', user.id);
+        
+        if (error) {
+          console.error('Error saving game progress:', error.message, error.details, error.hint);
+        }
       } catch (error) {
-        console.error('Error saving game progress:', error);
+        console.error('Error saving game progress (exception):', error);
       }
     };
 
@@ -1290,7 +1351,7 @@ const OndaLevel1 = () => {
             totalOndWithBonus
           });
 
-          await supabase.from('practice_rewards').insert({
+          const { error: rewardError } = await supabase.from('practice_rewards').insert({
             user_id: user.id,
             practice_id: activePractice.id,
             practice_duration_seconds: practiceTime,
@@ -1303,17 +1364,23 @@ const OndaLevel1 = () => {
             performance_ond: ondReward.performanceOnd,
             total_ond_earned: totalOndWithBonus // With artifact bonuses applied
           });
+          if (rewardError) {
+            console.error('Error inserting practice_rewards:', rewardError.message, rewardError.details, rewardError.hint);
+          }
 
-          const { data: currentProgress } = await supabase
+          const { data: currentProgress, error: progressFetchError } = await supabase
             .from('user_progress')
             .select('total_ond')
             .eq('user_id', user.id)
             .maybeSingle();
+          if (progressFetchError) {
+            console.error('Error fetching user_progress:', progressFetchError.message);
+          }
 
           const actualEarnedDiff = existingPractice ? totalOndWithBonus - existingPractice.qnt : totalOndWithBonus;
           const newTotal = (currentProgress?.total_ond || 0) + actualEarnedDiff;
 
-          await supabase
+          const { error: upsertError } = await supabase
             .from('user_progress')
             .upsert({
               user_id: user.id,
@@ -1322,6 +1389,9 @@ const OndaLevel1 = () => {
             }, {
               onConflict: 'user_id'
             });
+          if (upsertError) {
+            console.error('Error upserting user_progress:', upsertError.message, upsertError.details, upsertError.hint);
+          }
         } catch (error) {
           console.error('Error saving practice reward:', error);
         }
@@ -3019,6 +3089,11 @@ const OndaLevel1 = () => {
         commitHash={import.meta.env.VITE_COMMIT_HASH}
         branchName={import.meta.env.VITE_BRANCH_NAME}
       />
+
+      {/* TEMPORARY: Visible Debug Banner - DELETE AFTER DEBUGGING */}
+      <div className="fixed top-0 left-0 right-0 z-[200] bg-black/90 text-white text-xs px-3 py-2 text-center font-mono">
+        🔧 DEBUG: {debugInfo}
+      </div>
 
       {/* Плавающая кнопка гамбургер меню */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 

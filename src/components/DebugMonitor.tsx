@@ -23,11 +23,9 @@ interface DebugMonitorProps {
 export function DebugMonitor({ buildNumber, commitHash, branchName }: DebugMonitorProps) {
   const [isOpen, setIsOpen] = useState(false);
   
-  // Check if debug mode should be shown
-  // Hidden in production unless explicitly enabled via localStorage
-  const isProduction = import.meta.env.PROD;
-  const debugModeEnabled = typeof window !== 'undefined' && localStorage.getItem('debugMode') === 'true';
-  const shouldShow = !isProduction || debugModeEnabled;
+  // Debug Monitor always visible (temporarily enabled for testing)
+  // To hide in production later: const shouldShow = !import.meta.env.PROD || localStorage.getItem('debugMode') === 'true';
+  const shouldShow = true;
   const [isExpanded, setIsExpanded] = useState(false);
   const [logs, setLogs] = useState<DebugLog[]>([]);
   const [filter, setFilter] = useState<'all' | 'info' | 'warn' | 'error'>('all');

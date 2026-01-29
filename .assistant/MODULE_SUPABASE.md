@@ -47,6 +47,54 @@ practice_sessions (
 )
 ```
 
+## Безопасность: Создание новых таблиц
+
+### Правило: Используй схему `internal` для внутренних таблиц
+
+Чтобы избежать предупреждений Security Advisor и не давать доступ anon/authenticated:
+
+**1. Создай схему (один раз):**
+
+```sql
+create schema if not exists internal;
+revoke all on schema internal from anon, authenticated;
+```
+
+**2. Создавай таблицы в схеме `internal`:**
+
+```sql
+-- Пример: таблица аналитики
+create table internal.app_events (
+  id bigserial primary key,
+  user_id uuid references auth.users,
+  event_name text not null,
+  event_data jsonb,
+  created_at timestamptz default now()
+);
+
+-- ВАЖНО: явно убираем доступ
+revoke all on internal.app_events from anon, authenticated;
+```
+
+### Преимущества схемы `internal`:
+
+- Default privileges для `public` не применяются
+- Security Advisor не выдаёт предупреждений
+- Меньше ручной работы по отзыву привилегий
+
+### Шаблон промпта для Cursor:
+
+> "Create an internal Postgres table for [описание] in schema `internal`.
+> Do NOT expose it to anon/authenticated.
+> Include REVOKE statements."
+
+### Когда использовать `public` vs `internal`:
+
+| Схема | Когда использовать |
+|-------|-------------------|
+| `public` | Данные, которые клиент читает/пишет через RLS |
+| `internal` | Аналитика, логи, внутренние данные, бэкенд-only |
+
 ## Edge Functions
 
 Расположение: `supabase/functions/`
