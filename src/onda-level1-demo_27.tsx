@@ -271,32 +271,20 @@ const OndaLevel1 = () => {
 
         setDebugInfo(`✓ User: ${user.email?.slice(0, 15)}...`);
 
-        const [profileRes, progressRes, userProgressRes] = await Promise.all([
+        const [profileRes, progressRes] = await Promise.all([
           supabase.from('user_profiles').select('*').eq('id', user.id).maybeSingle(),
-          supabase.from('user_game_progress').select('*').eq('user_id', user.id).maybeSingle(),
-          supabase.from('user_progress').select('total_ond').eq('user_id', user.id).maybeSingle()
+          supabase.from('user_game_progress').select('*').eq('user_id', user.id).maybeSingle()
         ]);
         console.log('[ONDA Debug] Fetch results:', {
           profile: profileRes.data ? 'found' : 'null',
           profileError: profileRes.error?.message,
           gameProgress: progressRes.data ? 'found' : 'null',
-          gameProgressError: progressRes.error?.message,
-          userProgress: userProgressRes.data,
-          userProgressError: userProgressRes.error?.message
+          gameProgressError: progressRes.error?.message
         });
-
-        // Update debug info with errors if any
-        const errors = [];
-        if (profileRes.error) errors.push(`profile: ${profileRes.error.message}`);
-        if (progressRes.error) errors.push(`progress: ${progressRes.error.message}`);
-        if (errors.length > 0) {
-          setDebugInfo(`❌ Ошибки: ${errors.join(', ')}`);
-        }
 
         // Log any fetch errors
         if (profileRes.error) console.error('Error fetching profile:', profileRes.error);
         if (progressRes.error) console.error('Error fetching game progress:', progressRes.error);
-        if (userProgressRes.error) console.error('Error fetching user progress:', userProgressRes.error);
 
         let profile = profileRes.data;
         if (!profile) {
@@ -369,15 +357,13 @@ const OndaLevel1 = () => {
         }
 
         if (progress) {
-          const finalOnd = userProgressRes.data?.total_ond || progress.ond || 0;
+          const finalOnd = progress.ond || 0;
           const practiceCount = Object.keys(progress.completed_practices || {}).length;
           
           // Debug logging to diagnose data loading issues
           console.log('[ONDA Debug] Loaded user progress:', {
             user_id: user.id,
-            user_progress_total_ond: userProgressRes.data?.total_ond,
-            game_progress_ond: progress.ond,
-            final_ond: finalOnd,
+            ond: progress.ond,
             completed_practices: Object.keys(progress.completed_practices || {}),
             practice_history_count: (progress.practice_history || []).length,
             artifacts: progress.artifacts
@@ -1389,31 +1375,7 @@ const OndaLevel1 = () => {
           if (rewardError) {
             console.error('Error inserting practice_rewards:', rewardError.message, rewardError.details, rewardError.hint);
           }
-
-          const { data: currentProgress, error: progressFetchError } = await supabase
-            .from('user_progress')
-            .select('total_ond')
-            .eq('user_id', user.id)
-            .maybeSingle();
-          if (progressFetchError) {
-            console.error('Error fetching user_progress:', progressFetchError.message);
-          }
-
-          const actualEarnedDiff = existingPractice ? totalOndWithBonus - existingPractice.qnt : totalOndWithBonus;
-          const newTotal = (currentProgress?.total_ond || 0) + actualEarnedDiff;
-
-          const { error: upsertError } = await supabase
-            .from('user_progress')
-            .upsert({
-              user_id: user.id,
-              total_ond: newTotal,
-              updated_at: new Date().toISOString()
-            }, {
-              onConflict: 'user_id'
-            });
-          if (upsertError) {
-            console.error('Error upserting user_progress:', upsertError.message, upsertError.details, upsertError.hint);
-          }
+          // OND сохраняется автоматически в user_game_progress через saveGameProgress effect
         } catch (error) {
           console.error('Error saving practice reward:', error);
         }
