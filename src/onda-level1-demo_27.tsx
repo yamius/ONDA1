@@ -257,8 +257,10 @@ const OndaLevel1 = () => {
   useEffect(() => {
     const loadUserData = async () => {
       try {
+        console.log('[ONDA Debug] Loading user data...');
         const { data: { user } } = await supabase.auth.getUser();
         setUser(user);
+        console.log('[ONDA Debug] User:', user ? { id: user.id, email: user.email } : 'Not authenticated');
 
         if (user) {
           const [profileRes, progressRes, userProgressRes] = await Promise.all([
@@ -266,6 +268,14 @@ const OndaLevel1 = () => {
             supabase.from('user_game_progress').select('*').eq('user_id', user.id).maybeSingle(),
             supabase.from('user_progress').select('total_ond').eq('user_id', user.id).maybeSingle()
           ]);
+          console.log('[ONDA Debug] Fetch results:', {
+            profile: profileRes.data ? 'found' : 'null',
+            profileError: profileRes.error?.message,
+            gameProgress: progressRes.data ? 'found' : 'null',
+            gameProgressError: progressRes.error?.message,
+            userProgress: userProgressRes.data,
+            userProgressError: userProgressRes.error?.message
+          });
 
           // Log any fetch errors
           if (profileRes.error) console.error('Error fetching profile:', profileRes.error);
@@ -321,6 +331,17 @@ const OndaLevel1 = () => {
           }
 
           if (progress) {
+            // Debug logging to diagnose data loading issues
+            console.log('[ONDA Debug] Loaded user progress:', {
+              user_id: user.id,
+              user_progress_total_ond: userProgressRes.data?.total_ond,
+              game_progress_ond: progress.ond,
+              final_ond: userProgressRes.data?.total_ond || progress.ond || 0,
+              completed_practices: Object.keys(progress.completed_practices || {}),
+              practice_history_count: (progress.practice_history || []).length,
+              artifacts: progress.artifacts
+            });
+
             setGameProgress(progress);
             setQnt(userProgressRes.data?.total_ond || progress.ond || 0);
             setActiveCircuit(progress.active_circuit || 1);
@@ -341,6 +362,8 @@ const OndaLevel1 = () => {
             setSelectedLevel(progress.selected_level || 1);
             setSelectedChapter(progress.selected_chapter || 1);
             setIsLightTheme(progress.is_light_theme || false);
+          } else {
+            console.warn('[ONDA Debug] No progress data loaded for user:', user.id);
           }
         }
       } catch (error) {
