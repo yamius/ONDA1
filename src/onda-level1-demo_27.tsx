@@ -112,6 +112,7 @@ const OndaLevel1 = () => {
   const [activeCircuit, setActiveCircuit] = useState(1);
   const [qnt, setQnt] = useState(0);
   const [artifacts, setArtifacts] = useState([]);
+  const [debugInfo, setDebugInfo] = useState<string>('Loading...');
   const [completedPractices, setCompletedPractices] = useState({});
   const [practiceHistory, setPracticeHistory] = useState([]);
   const [activePractice, setActivePractice] = useState(null);
@@ -258,24 +259,39 @@ const OndaLevel1 = () => {
     const loadUserData = async () => {
       try {
         console.log('[ONDA Debug] Loading user data...');
+        setDebugInfo('Загрузка...');
         const { data: { user } } = await supabase.auth.getUser();
         setUser(user);
         console.log('[ONDA Debug] User:', user ? { id: user.id, email: user.email } : 'Not authenticated');
 
-        if (user) {
-          const [profileRes, progressRes, userProgressRes] = await Promise.all([
-            supabase.from('user_profiles').select('*').eq('id', user.id).maybeSingle(),
-            supabase.from('user_game_progress').select('*').eq('user_id', user.id).maybeSingle(),
-            supabase.from('user_progress').select('total_ond').eq('user_id', user.id).maybeSingle()
-          ]);
-          console.log('[ONDA Debug] Fetch results:', {
-            profile: profileRes.data ? 'found' : 'null',
-            profileError: profileRes.error?.message,
-            gameProgress: progressRes.data ? 'found' : 'null',
-            gameProgressError: progressRes.error?.message,
-            userProgress: userProgressRes.data,
-            userProgressError: userProgressRes.error?.message
-          });
+        if (!user) {
+          setDebugInfo('❌ Не авторизован');
+          return;
+        }
+
+        setDebugInfo(`✓ User: ${user.email?.slice(0, 15)}...`);
+
+        const [profileRes, progressRes, userProgressRes] = await Promise.all([
+          supabase.from('user_profiles').select('*').eq('id', user.id).maybeSingle(),
+          supabase.from('user_game_progress').select('*').eq('user_id', user.id).maybeSingle(),
+          supabase.from('user_progress').select('total_ond').eq('user_id', user.id).maybeSingle()
+        ]);
+        console.log('[ONDA Debug] Fetch results:', {
+          profile: profileRes.data ? 'found' : 'null',
+          profileError: profileRes.error?.message,
+          gameProgress: progressRes.data ? 'found' : 'null',
+          gameProgressError: progressRes.error?.message,
+          userProgress: userProgressRes.data,
+          userProgressError: userProgressRes.error?.message
+        });
+
+        // Update debug info with errors if any
+        const errors = [];
+        if (profileRes.error) errors.push(`profile: ${profileRes.error.message}`);
+        if (progressRes.error) errors.push(`progress: ${progressRes.error.message}`);
+        if (errors.length > 0) {
+          setDebugInfo(`❌ Ошибки: ${errors.join(', ')}`);
+        }
 
           // Log any fetch errors
           if (profileRes.error) console.error('Error fetching profile:', profileRes.error);
@@ -331,19 +347,25 @@ const OndaLevel1 = () => {
           }
 
           if (progress) {
+            const finalOnd = userProgressRes.data?.total_ond || progress.ond || 0;
+            const practiceCount = Object.keys(progress.completed_practices || {}).length;
+            
             // Debug logging to diagnose data loading issues
             console.log('[ONDA Debug] Loaded user progress:', {
               user_id: user.id,
               user_progress_total_ond: userProgressRes.data?.total_ond,
               game_progress_ond: progress.ond,
-              final_ond: userProgressRes.data?.total_ond || progress.ond || 0,
+              final_ond: finalOnd,
               completed_practices: Object.keys(progress.completed_practices || {}),
               practice_history_count: (progress.practice_history || []).length,
               artifacts: progress.artifacts
             });
 
+            // Update visible debug info
+            setDebugInfo(`✅ OND: ${finalOnd} | Практик: ${practiceCount}`);
+
             setGameProgress(progress);
-            setQnt(userProgressRes.data?.total_ond || progress.ond || 0);
+            setQnt(finalOnd);
             setActiveCircuit(progress.active_circuit || 1);
             setCompletedPractices(progress.completed_practices || {});
             setPracticeHistory(progress.practice_history || []);
@@ -3068,6 +3090,11 @@ const OndaLevel1 = () => {
         commitHash={import.meta.env.VITE_COMMIT_HASH}
         branchName={import.meta.env.VITE_BRANCH_NAME}
       />
+
+      {/* TEMPORARY: Visible Debug Banner - DELETE AFTER DEBUGGING */}
+      <div className="fixed top-0 left-0 right-0 z-[200] bg-black/90 text-white text-xs px-3 py-2 text-center font-mono">
+        🔧 DEBUG: {debugInfo}
+      </div>
 
       {/* Плавающая кнопка гамбургер меню */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
