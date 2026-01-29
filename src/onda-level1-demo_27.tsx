@@ -300,17 +300,28 @@ const OndaLevel1 = () => {
 
         let profile = profileRes.data;
         if (!profile) {
+          // INSERT only if no record exists - DO NOT overwrite existing data!
           const displayName = user.user_metadata?.full_name || user.email?.split('@')[0] || 'Player-' + Math.floor(Math.random() * 10000).toString().padStart(4, '0');
           const { data: newProfile, error: profileError } = await supabase
             .from('user_profiles')
-            .upsert({
+            .insert({
               id: user.id,
               display_name: displayName,
               avatar_url: user.user_metadata?.avatar_url
             })
             .select()
             .single();
-          if (profileError) {
+          
+          // If duplicate key error (23505), try to fetch existing record
+          if (profileError?.code === '23505') {
+            console.log('[ONDA Debug] Profile already exists, fetching...');
+            const { data: existingProfile } = await supabase
+              .from('user_profiles')
+              .select('*')
+              .eq('id', user.id)
+              .single();
+            profile = existingProfile;
+          } else if (profileError) {
             console.error('Error creating profile:', profileError);
           } else {
             profile = newProfile;
@@ -320,9 +331,10 @@ const OndaLevel1 = () => {
 
         let progress = progressRes.data;
         if (!progress) {
+          // INSERT only if no record exists - DO NOT overwrite existing data!
           const { data: newProgress, error: progressError } = await supabase
             .from('user_game_progress')
-            .upsert({
+            .insert({
               user_id: user.id,
               ond: 0,
               active_circuit: 1,
@@ -339,7 +351,17 @@ const OndaLevel1 = () => {
             })
             .select()
             .single();
-          if (progressError) {
+          
+          // If duplicate key error (23505), try to fetch existing record
+          if (progressError?.code === '23505') {
+            console.log('[ONDA Debug] Record already exists, fetching...');
+            const { data: existingProgress } = await supabase
+              .from('user_game_progress')
+              .select('*')
+              .eq('user_id', user.id)
+              .single();
+            progress = existingProgress;
+          } else if (progressError) {
             console.error('Error creating game progress:', progressError);
           } else {
             progress = newProgress;
