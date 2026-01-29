@@ -112,7 +112,6 @@ const OndaLevel1 = () => {
   const [activeCircuit, setActiveCircuit] = useState(1);
   const [qnt, setQnt] = useState(0);
   const [artifacts, setArtifacts] = useState([]);
-  const [debugInfo, setDebugInfo] = useState<string>('Loading...');
   const [completedPractices, setCompletedPractices] = useState({});
   const [practiceHistory, setPracticeHistory] = useState([]);
   const [activePractice, setActivePractice] = useState(null);
@@ -259,17 +258,13 @@ const OndaLevel1 = () => {
     const loadUserData = async () => {
       try {
         console.log('[ONDA Debug] Loading user data...');
-        setDebugInfo('Загрузка...');
         const { data: { user } } = await supabase.auth.getUser();
         setUser(user);
         console.log('[ONDA Debug] User:', user ? { id: user.id, email: user.email } : 'Not authenticated');
 
         if (!user) {
-          setDebugInfo('❌ Не авторизован');
           return;
         }
-
-        setDebugInfo(`✓ User: ${user.email?.slice(0, 15)}...`);
 
         const [profileRes, progressRes, userProgressRes] = await Promise.all([
           supabase.from('user_profiles').select('*').eq('id', user.id).maybeSingle(),
@@ -284,14 +279,6 @@ const OndaLevel1 = () => {
           userProgress: userProgressRes.data,
           userProgressError: userProgressRes.error?.message
         });
-
-        // Update debug info with errors if any
-        const errors = [];
-        if (profileRes.error) errors.push(`profile: ${profileRes.error.message}`);
-        if (progressRes.error) errors.push(`progress: ${progressRes.error.message}`);
-        if (errors.length > 0) {
-          setDebugInfo(`❌ Ошибки: ${errors.join(', ')}`);
-        }
 
         // Log any fetch errors
         if (profileRes.error) console.error('Error fetching profile:', profileRes.error);
@@ -360,9 +347,6 @@ const OndaLevel1 = () => {
             practice_history_count: (progress.practice_history || []).length,
             artifacts: progress.artifacts
           });
-
-          // Update visible debug info
-          setDebugInfo(`✅ OND: ${finalOnd} | Практик: ${practiceCount}`);
 
           setGameProgress(progress);
           setQnt(finalOnd);
@@ -3089,11 +3073,6 @@ const OndaLevel1 = () => {
         commitHash={import.meta.env.VITE_COMMIT_HASH}
         branchName={import.meta.env.VITE_BRANCH_NAME}
       />
-
-      {/* TEMPORARY: Visible Debug Banner - DELETE AFTER DEBUGGING */}
-      <div className="fixed top-0 left-0 right-0 z-[200] bg-black/90 text-white text-xs px-3 py-2 text-center font-mono">
-        🔧 DEBUG: {debugInfo}
-      </div>
 
       {/* Плавающая кнопка гамбургер меню */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
