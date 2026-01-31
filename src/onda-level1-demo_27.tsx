@@ -191,6 +191,7 @@ const OndaLevel1 = () => {
   const [bestMetrics, setBestMetrics] = useState({ stress: 50, energy: 50 }); // Best metrics achieved during practice
   const [meetsArtifactRequirements, setMeetsArtifactRequirements] = useState(false); // Real-time validation for artifact
   const maxQualityRef = useRef(0);
+  const qualityAt100Ref = useRef(0); // Quality locked at 100% time (for no-tracker mode)
   const practiceRefs = useRef({});
 
 
@@ -660,9 +661,13 @@ const OndaLevel1 = () => {
         } else {
           // WITHOUT tracker: performance works normally, then time continues after 100%
           if (currentTime >= targetTime) {
-            // After 100% time: base 15% + performance + extra time beyond 100%
+            // Lock quality at 100% time mark (first time reaching it)
+            if (qualityAt100Ref.current === 0) {
+              qualityAt100Ref.current = Math.max(currentQuality, 15 + (performanceScore * 0.85));
+            }
+            // After 100% time: locked quality + linear time bonus
             const extraTimeProgress = (currentTime - targetTime) / targetTime * 100; // % beyond target
-            rawQuality = 15 + (performanceScore * 0.85) + (extraTimeProgress * 0.15);
+            rawQuality = qualityAt100Ref.current + (extraTimeProgress * 0.15);
           } else {
             // Before 100% time: normal formula
             rawQuality = (timeProgress * 0.15 + performanceScore * 0.85);
@@ -673,7 +678,11 @@ const OndaLevel1 = () => {
         const currentQuality = qualityScore;
         let newQuality;
 
-        if (rawQuality > maxQualityRef.current) {
+        // Without tracker after 100% time: linear growth, no smoothing needed
+        if (!freshVitals.hasVitalsData && currentTime >= targetTime) {
+          newQuality = rawQuality; // Direct assignment, always grows
+          maxQualityRef.current = Math.max(maxQualityRef.current, rawQuality);
+        } else if (rawQuality > maxQualityRef.current) {
           // New peak - grow slowly (2x smoother)
           maxQualityRef.current = rawQuality;
           const diff = rawQuality - currentQuality;
@@ -1244,6 +1253,7 @@ const OndaLevel1 = () => {
       energy: initialEnergy
     });
     maxQualityRef.current = 0;
+    qualityAt100Ref.current = 0; // Reset locked quality
     setMeetsArtifactRequirements(false); // Reset artifact validation
     setPracticeState('active');
     setCurrentGuidingTextIndex(0);
