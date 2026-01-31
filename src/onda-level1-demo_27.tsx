@@ -2722,7 +2722,13 @@ const OndaLevel1 = () => {
               </div>
               <div className="w-full h-5 sm:h-6 bg-black/40 rounded-full overflow-hidden backdrop-blur-sm border border-white/20 shadow-inner">
                 <div
-                  className="h-full transition-all duration-[12500ms] relative bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600"
+                  className={`h-full transition-all duration-[12500ms] relative ${
+                    qualityScore >= 100
+                      ? 'bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600'
+                      : meetsArtifactRequirements 
+                        ? 'bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-300' 
+                        : 'bg-gradient-to-r from-green-400 via-emerald-400 to-teal-300'
+                  }`}
                   style={{ width: `${qualityScore}%` }}
                 >
                   <div className="absolute inset-0 bg-white/30 animate-pulse" />
