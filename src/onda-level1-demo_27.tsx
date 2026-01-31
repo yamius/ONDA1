@@ -658,9 +658,15 @@ const OndaLevel1 = () => {
             rawQuality = (timeProgress * 0.15 + performanceScore * 0.85);
           }
         } else {
-          // WITHOUT tracker: time continues to give progress beyond 100%
-          // 15% per 100% time, so 100% quality = ~667% time
-          rawQuality = timeProgress * 0.15;
+          // WITHOUT tracker: performance works normally, then time continues after 100%
+          if (currentTime >= targetTime) {
+            // After 100% time: base 15% + performance + extra time beyond 100%
+            const extraTimeProgress = (currentTime - targetTime) / targetTime * 100; // % beyond target
+            rawQuality = 15 + (performanceScore * 0.85) + (extraTimeProgress * 0.15);
+          } else {
+            // Before 100% time: normal formula
+            rawQuality = (timeProgress * 0.15 + performanceScore * 0.85);
+          }
         }
 
         // Smooth quality changes: keep max value, grow slowly
