@@ -13,6 +13,14 @@
    - iOS/Android нативное → `.assistant/MODULE_NATIVE.md`
    - Supabase (Auth, DB, Functions) → `.assistant/MODULE_SUPABASE.md`
 
+## Git: Работа с ветками
+
+**⚠️ ВАЖНО: Работай ТОЛЬКО в ветке `main`!**
+
+- Не создавай feature-ветки без явной просьбы
+- Все коммиты делай напрямую в `main`
+- При push используй: `git push origin main`
+
 ## Общие правила
 
 - Соблюдай все пункты из `.assistant/PHILOSOPHY.md`.
