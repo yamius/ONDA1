@@ -33,11 +33,8 @@ export default function LanguageModal({ isOpen, onClose }: LanguageModalProps) {
         className="bg-gradient-to-br from-slate-900 via-purple-900/50 to-slate-900 border border-purple-500/30 rounded-2xl p-6 max-w-md w-full shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Заголовок */}
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-white">
-            {t('settings.language') || 'Language'}
-          </h2>
+        {/* Кнопка закрытия */}
+        <div className="flex justify-end mb-4">
           <button
             onClick={onClose}
             className="text-gray-400 hover:text-white transition-colors"
@@ -73,10 +70,6 @@ export default function LanguageModal({ isOpen, onClose }: LanguageModalProps) {
           ))}
         </div>
 
-        {/* Описание */}
-        <p className="text-gray-400 text-sm mt-6 text-center">
-          {t('settings.languageDescription') || 'Select your preferred language'}
-        </p>
       </div>
     </div>
   );
