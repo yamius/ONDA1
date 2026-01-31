@@ -659,8 +659,8 @@ const OndaLevel1 = () => {
           }
         } else {
           // WITHOUT tracker: pure time-based, linear growth
-          // 15% quality per 100% time, so 100% quality = ~667% time
-          rawQuality = timeProgress * 0.15;
+          // 20% quality per 100% time, so 100% quality = 500% time
+          rawQuality = timeProgress * 0.2;
         }
 
         // Smooth quality changes
