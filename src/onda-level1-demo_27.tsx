@@ -650,12 +650,17 @@ const OndaLevel1 = () => {
         const performanceScore = (stressScore * 0.40 + energyScore * 0.45);
 
         let rawQuality;
-        if (currentTime >= targetTime) {
-          // After 100% time: 15% for completion + 85% for performance
-          rawQuality = 15 + (performanceScore * 0.85);
+        if (freshVitals.hasVitalsData) {
+          // WITH tracker: 15% time + 85% performance (capped at 100% time)
+          if (currentTime >= targetTime) {
+            rawQuality = 15 + (performanceScore * 0.85);
+          } else {
+            rawQuality = (timeProgress * 0.15 + performanceScore * 0.85);
+          }
         } else {
-          // Before 100% time: 15% from time progress + 85% from performance
-          rawQuality = (timeProgress * 0.15 + performanceScore * 0.85);
+          // WITHOUT tracker: time continues to give progress beyond 100%
+          // 15% per 100% time, so 100% quality = ~667% time
+          rawQuality = timeProgress * 0.15;
         }
 
         // Smooth quality changes: keep max value, grow slowly
