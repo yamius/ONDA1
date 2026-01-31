@@ -76,3 +76,103 @@ vitalsRef.current = vitalsData;
 // В async функции:
 const freshVitals = vitalsRef.current;
 ```
+
+## Система практик и прогресса
+
+### Структура данных практик
+
+```typescript
+// State пройденных практик
+const [completedPractices, setCompletedPractices] = useState({});
+
+// Структура completedPractices[practiceId]:
+{
+  quality: number,              // Лучший показатель качества (0-100%)
+  qnt: number,                  // Количество заработанных OND
+  sessions: string[],           // Массив ID сессий этой практики
+  isValidForArtifact: boolean   // Засчитана ли для артефакта контура
+}
+```
+
+### Условия валидации практики (isValidForArtifact)
+
+Практика засчитывается как "пройденная" для артефакта если:
+
+```typescript
+const timePercent = practiceTime / (activePractice.targetTime || 720);
+const hasRealMetrics = freshVitals.hasVitalsData;
+const minQualityRequired = hasRealMetrics ? 70 : 33;
+
+const isValidForArtifact = timePercent >= 0.8 && qualityScore >= minQualityRequired;
+```
+
+| Условие | С биометрией | Без биометрии |
+|---------|--------------|---------------|
+| Время | ≥80% от целевого | ≥80% от целевого |
+| Качество | ≥70% | ≥33% |
+
+### Расчёт качества (qualityScore)
+
+```typescript
+// Снижение стресса (10% = хорошо)
+const stressReduction = initialVitals.stress - currentStress;
+const stressScore = Math.min(Math.max(stressReduction / (initialVitals.stress * 0.1), 0), 1) * 100;
+
+// Повышение энергии (10% = хорошо)  
+const energyIncrease = currentEnergy - initialVitals.energy;
+const energyScore = Math.min(Math.max(energyIncrease / (initialVitals.energy * 0.1), 0), 1) * 100;
+
+// Комбинированный скор: 40% стресс + 45% энергия
+const performanceScore = (stressScore * 0.40 + energyScore * 0.45);
+
+// Итоговое качество
+rawQuality = currentTime >= targetTime 
+  ? 15 + (performanceScore * 0.85)           // После 100% времени
+  : (timeProgress * 0.15 + performanceScore * 0.85);  // До 100% времени
+```
+
+### Прогресс-бар контура
+
+```typescript
+const currentCircuit = circuits[activeCircuit - 1];
+const totalPractices = currentCircuit.practices.length;
+// Считаются ТОЛЬКО валидированные практики
+const completedCount = currentCircuit.practices.filter(
+  p => completedPractices[p.id]?.isValidForArtifact
+).length;
+const progress = (completedCount / totalPractices) * 100;
+```
+
+### Получение артефакта контура
+
+Артефакт выдаётся когда ВСЕ практики контура имеют `isValidForArtifact = true`:
+
+```typescript
+const allValidated = circuit.practices.every(p => 
+  completedPractices[p.id]?.isValidForArtifact
+);
+
+if (allValidated && !artifacts.some(a => a.circuitId === circuit.id)) {
+  setArtifacts(prev => [...prev, { ...circuit.artifact, circuitId: circuit.id }]);
+}
+```
+
+### Achievements (достижения)
+
+| ID | Условие |
+|----|---------|
+| `circuit_1` | Все практики 1-го контура пройдены |
+| `all_circuits` | Все практики ВСЕХ контуров пройдены |
+| `streak_3` | 3 дня подряд практик |
+| `marathoner` | 50 практик всего |
+| `quality_master` | 10 практик с качеством >90% |
+| `time_master` | 10 часов общего времени |
+| `collector` | 3 артефакта собрано |
+
+### Файлы
+
+| Файл | Что содержит |
+|------|--------------|
+| `src/onda-level1-demo_27.tsx` | Вся логика практик, прогресса, артефактов |
+| `src/utils/ondCalculator.ts` | Расчёт OND награды |
+| `src/lib/supabase.ts` | Типы для `user_game_progress` |
