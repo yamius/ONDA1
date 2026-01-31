@@ -597,7 +597,7 @@ const OndaLevel1 = () => {
 
         const targetTime = activePractice.targetTime;
         const currentTime = practiceTime + 1;
-        const timeProgress = Math.min(100, (currentTime / targetTime) * 100);
+        const timeProgress = (currentTime / targetTime) * 100; // Can exceed 100% for no-tracker mode
 
         // Simulate gradual improvement during practice if no real sensors connected
         if (!vitalsData.connected) {
