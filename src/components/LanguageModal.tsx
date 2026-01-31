@@ -33,8 +33,11 @@ export default function LanguageModal({ isOpen, onClose }: LanguageModalProps) {
         className="bg-gradient-to-br from-slate-900 via-purple-900/50 to-slate-900 border border-purple-500/30 rounded-2xl p-6 max-w-md w-full shadow-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* Кнопка закрытия */}
-        <div className="flex justify-end mb-4">
+        {/* Заголовок */}
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-semibold text-white">
+            {t('language_select', 'Select Language')}
+          </h2>
           <button
             onClick={onClose}
             className="text-gray-400 hover:text-white transition-colors"
