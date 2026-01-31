@@ -1948,7 +1948,7 @@ const OndaLevel1 = () => {
 
   const currentCircuit = circuits[activeCircuit - 1];
   const totalPractices = currentCircuit.practices.length;
-  const completedCount = currentCircuit.practices.filter(p => completedPractices[p.id]).length;
+  const completedCount = currentCircuit.practices.filter(p => completedPractices[p.id]?.isValidForArtifact).length;
   const progress = (completedCount / totalPractices) * 100;
 
   if (activePractice) {
