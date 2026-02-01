@@ -52,7 +52,10 @@ export function DebugMonitor({ buildNumber, commitHash, branchName }: DebugMonit
         message: message.replace(/^\[[^\]]+\]\s*/, '') // Убираем категорию из сообщения
       };
 
-      setLogs(prev => [...prev.slice(-4999), log]); // Храним последние 5000 логов
+      // Defer state update to avoid "Cannot update component while rendering" warning
+      queueMicrotask(() => {
+        setLogs(prev => [...prev.slice(-4999), log]); // Храним последние 5000 логов
+      });
     };
 
     console.log = (...args) => {
