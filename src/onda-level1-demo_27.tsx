@@ -3973,49 +3973,32 @@ const OndaLevel1 = () => {
               </div>
             </div>
           </div>
-          {/* Артефакт - Ясная Воля */}
-          {(() => {
+          {/* Артефакт - Ясная Воля (только для части 1, если ещё не взят) */}
+          {activeCircuit === 1 && !artifacts.some(a => a.id === 'clear-will') && (() => {
             const perfectCount = practiceHistory.filter(p => p.quality >= 100).length;
-            const hasClearWill = artifacts.some(a => a.id === 'clear-will');
             return (
               <div
                 onClick={() => {
-                  if (!hasClearWill) {
-                    setInfoModalMessage(t('artifacts.clear_will_alert'));
-                    setShowInfoModal(true);
-                  }
+                  setInfoModalMessage(t('artifacts.clear_will_alert'));
+                  setShowInfoModal(true);
                 }}
-                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
-                  hasClearWill
-                    ? 'border-yellow-500/50 bg-yellow-500/10'
-                    : 'border-purple-500/50 bg-purple-500/10'
-                }`}
+                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
               >
                 <div className="flex items-center gap-4">
-                  {hasClearWill ? (
-                    <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
-                  ) : (
-                    <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
-                  )}
+                  <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-1">{t('artifacts.clear_will')}</h3>
                     <p className="text-sm text-gray-400 mb-2">
                       {t('artifacts.clear_will_desc')}
                     </p>
-                    {hasClearWill ? (
+                    <div>
+                      <div className="text-gray-400 text-sm mb-1">
+                        {t('artifacts.progress')}: {perfectCount}/3 {t('artifacts.practices_100')}
+                      </div>
                       <div className="text-emerald-400">
                         {t('labels.bonus')}: +30% {t('labels.to_qnt_generation')}
                       </div>
-                    ) : (
-                      <div>
-                        <div className="text-gray-400 text-sm mb-1">
-                          {t('artifacts.progress')}: {perfectCount}/3 {t('artifacts.practices_100')}
-                        </div>
-                        <div className="text-emerald-400">
-                          {t('labels.bonus')}: +30% {t('labels.to_qnt_generation')}
-                        </div>
-                      </div>
-                    )}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -4139,14 +4122,23 @@ const OndaLevel1 = () => {
             <h3 className="text-2xl font-bold mb-4">{t('artifacts.your_artifacts')}</h3>
             <div className="grid md:grid-cols-3 gap-4">
               {artifacts.map((artifact, idx) => {
-                const circuit = circuits.find(c => c.id === artifact.circuitId);
+                // Определяем имя артефакта
+                let artifactName = '';
+                if (artifact.id === 'clear-will') {
+                  artifactName = t('artifacts.clear_will');
+                } else if (artifact.id === 'life-rhythm') {
+                  artifactName = t('artifacts.life_rhythm');
+                } else {
+                  const circuit = circuits.find(c => c.id === artifact.circuitId);
+                  artifactName = circuit?.artifact.name || artifact.name || 'Artifact';
+                }
                 return (
                   <div
                     key={idx}
-                    className="bg-gradient-to-br from-yellow-900/30 to-orange-900/30 rounded-lg p-6 border border-yellow-500/50"
+                    className="bg-gradient-to-br from-yellow-900/30 to-orange-900/30 rounded-2xl p-6 border border-yellow-500/50"
                   >
                     <Star className="w-8 h-8 text-yellow-400 fill-yellow-400 mb-3" />
-                    <h4 className="text-lg font-bold mb-2">{circuit?.artifact.name}</h4>
+                    <h4 className="text-lg font-bold mb-2">{artifactName}</h4>
                     <div className="text-emerald-400">+{artifact.bonus}% OND</div>
                   </div>
                 );
