@@ -3987,15 +3987,15 @@ const OndaLevel1 = () => {
                 }}
                 className={`bg-black/40 backdrop-blur-sm rounded-lg p-6 border ${
                   hasClearWill
-                    ? 'border-purple-500/50 bg-purple-500/10'
-                    : 'border-gray-600/30'
+                    ? 'border-yellow-500/50 bg-yellow-500/10'
+                    : 'border-purple-500/30'
                 }`}
               >
                 <div className="flex items-center gap-4">
                   {hasClearWill ? (
-                    <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+                    <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
                   ) : (
-                    <Lock className="w-12 h-12 text-gray-600" />
+                    <Lock className="w-12 h-12 text-purple-400" />
                   )}
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-1">{t('artifacts.clear_will')}</h3>
@@ -4033,14 +4033,14 @@ const OndaLevel1 = () => {
             className={`bg-black/40 backdrop-blur-sm rounded-lg p-6 border ${
               rhythmProgress >= 7
                 ? 'border-yellow-500/50 bg-yellow-500/10'
-                : 'border-gray-600/30'
+                : 'border-purple-500/30'
             }`}
           >
             <div className="flex items-center gap-4">
               {rhythmProgress >= 7 ? (
                 <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
               ) : (
-                <Lock className="w-12 h-12 text-gray-600" />
+                <Lock className="w-12 h-12 text-purple-400" />
               )}
               <div className="flex-1">
                 <h3 className="text-xl font-bold mb-1">{t('artifacts.life_rhythm')}</h3>
