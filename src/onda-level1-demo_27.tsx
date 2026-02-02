@@ -292,6 +292,26 @@ const OndaLevel1 = () => {
     }
   }, [practiceHistory, artifacts]);
 
+  // Добавляем артефакт "Пульс Трансформации" за 9 практик части 3 с качеством 100%
+  const TRANSFORMATION_PULSE_ARTIFACT_ID = 'transformation-pulse';
+  useEffect(() => {
+    const hasTransformationPulseArtifact = artifacts.some(a => a.id === TRANSFORMATION_PULSE_ARTIFACT_ID);
+    // Считаем практики части 3 (p3-*) с качеством 100%
+    const part3PerfectPractices = practiceHistory.filter(p => 
+      p.practiceId?.startsWith('p3-') && p.quality >= 100
+    ).length;
+    
+    if (part3PerfectPractices >= 9 && !hasTransformationPulseArtifact) {
+      console.log('[App] Transformation Pulse artifact unlocked! +30% OND bonus');
+      setArtifacts(prev => [...prev, {
+        id: TRANSFORMATION_PULSE_ARTIFACT_ID,
+        name: t('artifacts.transformation_pulse'),
+        bonus: 30,
+        isTransformationPulse: true
+      }]);
+    }
+  }, [practiceHistory, artifacts]);
+
   useEffect(() => {
     const loadUserData = async () => {
       try {
@@ -4093,6 +4113,57 @@ const OndaLevel1 = () => {
             );
           })()}
 
+          {/* Артефакт - Пульс Трансформации (только для части 3) */}
+          {activeCircuit === 3 && (() => {
+            const part3PerfectCount = practiceHistory.filter(p => 
+              p.practiceId?.startsWith('p3-') && p.quality >= 100
+            ).length;
+            const hasTransformationPulse = artifacts.some(a => a.id === 'transformation-pulse');
+            return (
+              <div
+                onClick={() => {
+                  if (!hasTransformationPulse) {
+                    setInfoModalMessage(t('artifacts.transformation_pulse_alert'));
+                    setShowInfoModal(true);
+                  }
+                }}
+                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+                  hasTransformationPulse
+                    ? 'border-yellow-500/50 bg-yellow-500/10'
+                    : 'border-purple-500/50 bg-purple-500/10'
+                }`}
+              >
+                <div className="flex items-center gap-4">
+                  {hasTransformationPulse ? (
+                    <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
+                  ) : (
+                    <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+                  )}
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-1">{t('artifacts.transformation_pulse')}</h3>
+                    <p className="text-sm text-gray-400 mb-2">
+                      {t('artifacts.transformation_pulse_desc')}
+                    </p>
+                    {hasTransformationPulse ? (
+                      <div className="text-emerald-400">
+                        {t('labels.bonus')}: +30% {t('labels.to_qnt_generation')}
+                      </div>
+                    ) : (
+                      <div>
+                        <div className="text-gray-400 text-sm mb-1">
+                          {t('artifacts.progress')}: {part3PerfectCount}/9 {t('artifacts.practices_100')}
+                        </div>
+                        <div className="text-emerald-400">
+                          {t('labels.bonus')}: +30% {t('labels.to_qnt_generation')}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+
           {/* Артефакт - Ритм Жизни */}
           <div
             onClick={() => {
@@ -4219,6 +4290,9 @@ const OndaLevel1 = () => {
                 } else if (artifact.id === 'inner-wave') {
                   artifactName = t('artifacts.inner_wave');
                   artifactDesc = t('artifacts.inner_wave_desc');
+                } else if (artifact.id === 'transformation-pulse') {
+                  artifactName = t('artifacts.transformation_pulse');
+                  artifactDesc = t('artifacts.transformation_pulse_desc');
                 } else if (artifact.id === 'life-rhythm') {
                   artifactName = t('artifacts.life_rhythm');
                   artifactDesc = t('artifacts.life_rhythm_desc');
