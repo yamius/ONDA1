@@ -223,6 +223,7 @@
     "sensory_message": "触摸世界"
   },
   "artifacts": {
+    "requirement_part": "完成第{{part}}部分的所有练习",
     "clear_will": "清晰意志",
     "clear_will_desc": "完成3次100%质量的练习",
     "clear_will_alert": "完成3次100%质量的练习以解锁此神器",

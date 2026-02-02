@@ -288,6 +288,7 @@
     "breath_of_adaptation_desc": "Anchor new form and rhythm in changed environment"
   },
   "artifacts": {
+    "requirement_part": "Complete all practices of part {{part}}",
     "clear_will": "Clear Will",
     "clear_will_desc": "Complete 3 practices with 100% quality",
     "clear_will_alert": "Complete 3 practices with 100% quality to unlock this artifact",

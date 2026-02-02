@@ -223,6 +223,7 @@
     "sensory_message": "Toca el mundo"
   },
   "artifacts": {
+    "requirement_part": "Completa todas las prácticas de la parte {{part}}",
     "clear_will": "Voluntad Clara",
     "clear_will_desc": "Completa 3 prácticas con 100% de calidad",
     "clear_will_alert": "Completa 3 prácticas con 100% de calidad para desbloquear este artefacto",

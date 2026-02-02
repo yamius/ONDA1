@@ -1111,7 +1111,7 @@ const OndaLevel1 = () => {
       artifact: {
         name: t('artifacts.roots_of_being'),
         bonus: 20,
-        requirement: t('artifacts.requirement')
+        requirement: t('artifacts.requirement_part', { part: 1 })
       }
     },
     {
@@ -1138,7 +1138,7 @@ const OndaLevel1 = () => {
       artifact: {
         name: t('artifacts.pearl_of_flow'),
         bonus: 35,
-        requirement: t('artifacts.requirement')
+        requirement: t('artifacts.requirement_part', { part: 2 })
       }
     },
     {
@@ -1165,7 +1165,7 @@ const OndaLevel1 = () => {
       artifact: {
         name: t('artifacts.crystal_of_grounding'),
         bonus: 50,
-        requirement: t('artifacts.requirement')
+        requirement: t('artifacts.requirement_part', { part: 3 })
       }
     }
   ], [i18n.language]);
@@ -4139,15 +4139,19 @@ const OndaLevel1 = () => {
             <h3 className="text-2xl font-bold mb-4">{t('artifacts.your_artifacts')}</h3>
             <div className="grid md:grid-cols-3 gap-4">
               {artifacts.map((artifact, idx) => {
-                // Определяем имя артефакта
+                // Определяем имя и описание артефакта
                 let artifactName = '';
+                let artifactDesc = '';
                 if (artifact.id === 'clear-will') {
                   artifactName = t('artifacts.clear_will');
+                  artifactDesc = t('artifacts.clear_will_desc');
                 } else if (artifact.id === 'life-rhythm') {
                   artifactName = t('artifacts.life_rhythm');
+                  artifactDesc = t('artifacts.life_rhythm_desc');
                 } else {
                   const circuit = circuits.find(c => c.id === artifact.circuitId);
                   artifactName = circuit?.artifact.name || artifact.name || 'Artifact';
+                  artifactDesc = circuit?.artifact.requirement || '';
                 }
                 return (
                   <div
@@ -4155,7 +4159,8 @@ const OndaLevel1 = () => {
                     className="bg-gradient-to-br from-yellow-900/30 to-orange-900/30 rounded-2xl p-6 border border-yellow-500/50"
                   >
                     <Star className="w-8 h-8 text-yellow-400 fill-yellow-400 mb-3" />
-                    <h4 className="text-lg font-bold mb-2">{artifactName}</h4>
+                    <h4 className="text-lg font-bold mb-1">{artifactName}</h4>
+                    <p className="text-sm text-gray-400 mb-2">{artifactDesc}</p>
                     <div className="text-emerald-400">+{artifact.bonus}% OND</div>
                   </div>
                 );
