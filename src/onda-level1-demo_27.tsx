@@ -3950,29 +3950,29 @@ const OndaLevel1 = () => {
           </h2>
         </div>
 
-        <div className={`bg-black/40 backdrop-blur-sm rounded-lg p-6 border ${
-          artifacts.some(a => a.circuitId === currentCircuit.id)
-            ? 'border-yellow-500/50 bg-yellow-500/10'
-            : 'border-gray-600/30'
-        }`}>
-          <div className="flex items-center gap-4">
-            {artifacts.some(a => a.circuitId === currentCircuit.id) ? (
-              <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
-            ) : (
-              <Lock className="w-12 h-12 text-gray-600" />
-            )}
-            <div className="flex-1">
-              <h3 className="text-xl font-bold mb-1">{currentCircuit.artifact.name}</h3>
-              <p className="text-sm text-gray-400 mb-2">{currentCircuit.artifact.requirement}</p>
-              <div className="text-emerald-400">
-                {t('labels.bonus')}: +{currentCircuit.artifact.bonus}% {t('labels.to_qnt_generation')}
+        {/* Все артефакты */}
+        <div className="space-y-4 mb-12">
+          {/* Артефакт контура (Roots of Being и т.д.) */}
+          <div className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+            artifacts.some(a => a.circuitId === currentCircuit.id)
+              ? 'border-yellow-500/50 bg-yellow-500/10'
+              : 'border-purple-500/50 bg-purple-500/10'
+          }`}>
+            <div className="flex items-center gap-4">
+              {artifacts.some(a => a.circuitId === currentCircuit.id) ? (
+                <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
+              ) : (
+                <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+              )}
+              <div className="flex-1">
+                <h3 className="text-xl font-bold mb-1">{currentCircuit.artifact.name}</h3>
+                <p className="text-sm text-gray-400 mb-2">{currentCircuit.artifact.requirement}</p>
+                <div className="text-emerald-400">
+                  {t('labels.bonus')}: +{currentCircuit.artifact.bonus}% {t('labels.to_qnt_generation')}
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Уникальные артефакты */}
-        <div className="mt-8 mb-12 space-y-4">
           {/* Артефакт - Ясная Воля */}
           {(() => {
             const perfectCount = practiceHistory.filter(p => p.quality >= 100).length;
@@ -3985,17 +3985,17 @@ const OndaLevel1 = () => {
                     setShowInfoModal(true);
                   }
                 }}
-                className={`bg-black/40 backdrop-blur-sm rounded-lg p-6 border ${
+                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
                   hasClearWill
                     ? 'border-yellow-500/50 bg-yellow-500/10'
-                    : 'border-purple-500/30'
+                    : 'border-purple-500/50 bg-purple-500/10'
                 }`}
               >
                 <div className="flex items-center gap-4">
                   {hasClearWill ? (
                     <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
                   ) : (
-                    <Lock className="w-12 h-12 text-purple-400" />
+                    <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
                   )}
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-1">{t('artifacts.clear_will')}</h3>
@@ -4030,17 +4030,17 @@ const OndaLevel1 = () => {
                 setShowInfoModal(true);
               }
             }}
-            className={`bg-black/40 backdrop-blur-sm rounded-lg p-6 border ${
+            className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
               rhythmProgress >= 7
                 ? 'border-yellow-500/50 bg-yellow-500/10'
-                : 'border-purple-500/30'
+                : 'border-purple-500/50 bg-purple-500/10'
             }`}
           >
             <div className="flex items-center gap-4">
               {rhythmProgress >= 7 ? (
                 <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
               ) : (
-                <Lock className="w-12 h-12 text-purple-400" />
+                <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
               )}
               <div className="flex-1">
                 <h3 className="text-xl font-bold mb-1">{t('artifacts.life_rhythm')}</h3>
