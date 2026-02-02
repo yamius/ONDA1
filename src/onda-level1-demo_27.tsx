@@ -3973,32 +3973,49 @@ const OndaLevel1 = () => {
               </div>
             </div>
           </div>
-          {/* Артефакт - Ясная Воля (только для части 1, если ещё не взят) */}
-          {activeCircuit === 1 && !artifacts.some(a => a.id === 'clear-will') && (() => {
+          {/* Артефакт - Ясная Воля (только для части 1) */}
+          {activeCircuit === 1 && (() => {
             const perfectCount = practiceHistory.filter(p => p.quality >= 100).length;
+            const hasClearWill = artifacts.some(a => a.id === 'clear-will');
             return (
               <div
                 onClick={() => {
-                  setInfoModalMessage(t('artifacts.clear_will_alert'));
-                  setShowInfoModal(true);
+                  if (!hasClearWill) {
+                    setInfoModalMessage(t('artifacts.clear_will_alert'));
+                    setShowInfoModal(true);
+                  }
                 }}
-                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+                  hasClearWill
+                    ? 'border-yellow-500/50 bg-yellow-500/10'
+                    : 'border-purple-500/50 bg-purple-500/10'
+                }`}
               >
                 <div className="flex items-center gap-4">
-                  <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+                  {hasClearWill ? (
+                    <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
+                  ) : (
+                    <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+                  )}
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-1">{t('artifacts.clear_will')}</h3>
                     <p className="text-sm text-gray-400 mb-2">
                       {t('artifacts.clear_will_desc')}
                     </p>
-                    <div>
-                      <div className="text-gray-400 text-sm mb-1">
-                        {t('artifacts.progress')}: {perfectCount}/3 {t('artifacts.practices_100')}
-                      </div>
+                    {hasClearWill ? (
                       <div className="text-emerald-400">
                         {t('labels.bonus')}: +30% {t('labels.to_qnt_generation')}
                       </div>
-                    </div>
+                    ) : (
+                      <div>
+                        <div className="text-gray-400 text-sm mb-1">
+                          {t('artifacts.progress')}: {perfectCount}/3 {t('artifacts.practices_100')}
+                        </div>
+                        <div className="text-emerald-400">
+                          {t('labels.bonus')}: +30% {t('labels.to_qnt_generation')}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
