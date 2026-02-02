@@ -255,6 +255,23 @@ const OndaLevel1 = () => {
     // Артефакт НЕ удаляется при падении streak - он постоянный
   }, [rhythmProgress, artifacts]);
 
+  // Добавляем артефакт "Ясная Воля" за 3 практики с качеством 100%
+  const CLEAR_WILL_ARTIFACT_ID = 'clear-will';
+  useEffect(() => {
+    const hasClearWillArtifact = artifacts.some(a => a.id === CLEAR_WILL_ARTIFACT_ID);
+    const perfectPractices = practiceHistory.filter(p => p.quality >= 100).length;
+    
+    if (perfectPractices >= 3 && !hasClearWillArtifact) {
+      console.log('[App] Clear Will artifact unlocked! +30% OND bonus');
+      setArtifacts(prev => [...prev, {
+        id: CLEAR_WILL_ARTIFACT_ID,
+        name: t('artifacts.clear_will'),
+        bonus: 30,
+        isClearWill: true
+      }]);
+    }
+  }, [practiceHistory, artifacts]);
+
   useEffect(() => {
     const loadUserData = async () => {
       try {
@@ -3954,8 +3971,58 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
-        {/* Уникальный артефакт - Ритм Жизни */}
-        <div className="mt-8 mb-12">
+        {/* Уникальные артефакты */}
+        <div className="mt-8 mb-12 space-y-4">
+          {/* Артефакт - Ясная Воля */}
+          {(() => {
+            const perfectCount = practiceHistory.filter(p => p.quality >= 100).length;
+            const hasClearWill = artifacts.some(a => a.id === 'clear-will');
+            return (
+              <div
+                onClick={() => {
+                  if (!hasClearWill) {
+                    setInfoModalMessage(t('artifacts.clear_will_alert'));
+                    setShowInfoModal(true);
+                  }
+                }}
+                className={`bg-black/40 backdrop-blur-sm rounded-lg p-6 border ${
+                  hasClearWill
+                    ? 'border-purple-500/50 bg-purple-500/10'
+                    : 'border-gray-600/30'
+                }`}
+              >
+                <div className="flex items-center gap-4">
+                  {hasClearWill ? (
+                    <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+                  ) : (
+                    <Lock className="w-12 h-12 text-gray-600" />
+                  )}
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-1">{t('artifacts.clear_will')}</h3>
+                    <p className="text-sm text-gray-400 mb-2">
+                      {t('artifacts.clear_will_desc')}
+                    </p>
+                    {hasClearWill ? (
+                      <div className="text-emerald-400">
+                        {t('labels.bonus')}: +30% {t('labels.to_qnt_generation')}
+                      </div>
+                    ) : (
+                      <div>
+                        <div className="text-gray-400 text-sm mb-1">
+                          {t('artifacts.progress')}: {perfectCount}/3 {t('artifacts.practices_100')}
+                        </div>
+                        <div className="text-emerald-400">
+                          {t('labels.bonus')}: +30% {t('labels.to_qnt_generation')}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+
+          {/* Артефакт - Ритм Жизни */}
           <div
             onClick={() => {
               if (rhythmProgress < 7) {

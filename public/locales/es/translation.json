@@ -223,6 +223,10 @@
     "sensory_message": "Toca el mundo"
   },
   "artifacts": {
+    "clear_will": "Voluntad Clara",
+    "clear_will_desc": "Completa 3 prácticas con 100% de calidad",
+    "clear_will_alert": "Completa 3 prácticas con 100% de calidad para desbloquear este artefacto",
+    "practices_100": "prácticas al 100%",
     "level_title": "Artefactos de la Parte {{level}}",
     "roots_of_being": "Raíces del Ser",
     "pearl_of_flow": "Perla del Flujo",

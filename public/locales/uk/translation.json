@@ -208,6 +208,10 @@
     "duration_min": "хв"
   },
   "artifacts": {
+    "clear_will": "Ясна Воля",
+    "clear_will_desc": "Завершити 3 практики з якістю 100%",
+    "clear_will_alert": "Завершіть 3 практики з якістю 100% щоб отримати цей артефакт",
+    "practices_100": "практик на 100%",
     "level_title": "Артефакти {{level}} Частини",
     "roots_of_being": "Коріння Буття",
     "pearl_of_flow": "Перлина Потоку",

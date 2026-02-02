@@ -223,6 +223,10 @@
     "sensory_message": "触摸世界"
   },
   "artifacts": {
+    "clear_will": "清晰意志",
+    "clear_will_desc": "完成3次100%质量的练习",
+    "clear_will_alert": "完成3次100%质量的练习以解锁此神器",
+    "practices_100": "次100%练习",
     "level_title": "第{{level}}部分神器",
     "roots_of_being": "存在之根",
     "pearl_of_flow": "流动之珠",
