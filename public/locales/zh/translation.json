@@ -225,8 +225,11 @@
   "artifacts": {
     "requirement_part": "完成第{{part}}部分的所有练习",
     "clear_will": "清晰意志",
-    "clear_will_desc": "完成3次100%质量的练习",
-    "clear_will_alert": "完成3次100%质量的练习以解锁此神器",
+    "clear_will_desc": "完成第1部分的3次100%质量练习",
+    "inner_wave": "内在波动",
+    "inner_wave_desc": "完成第2部分的6次100%质量练习",
+    "inner_wave_alert": "完成第2部分的6次100%质量练习以解锁此神器",
+    "clear_will_alert": "完成第1部分的3次100%质量练习以解锁此神器",
     "practices_100": "次100%练习",
     "level_title": "第{{level}}部分神器",
     "roots_of_being": "存在之根",

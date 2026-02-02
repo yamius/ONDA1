@@ -272,6 +272,26 @@ const OndaLevel1 = () => {
     }
   }, [practiceHistory, artifacts]);
 
+  // Добавляем артефакт "Внутренняя Волна" за 6 практик части 2 с качеством 100%
+  const INNER_WAVE_ARTIFACT_ID = 'inner-wave';
+  useEffect(() => {
+    const hasInnerWaveArtifact = artifacts.some(a => a.id === INNER_WAVE_ARTIFACT_ID);
+    // Считаем практики части 2 (p2-*) с качеством 100%
+    const part2PerfectPractices = practiceHistory.filter(p => 
+      p.practiceId?.startsWith('p2-') && p.quality >= 100
+    ).length;
+    
+    if (part2PerfectPractices >= 6 && !hasInnerWaveArtifact) {
+      console.log('[App] Inner Wave artifact unlocked! +30% OND bonus');
+      setArtifacts(prev => [...prev, {
+        id: INNER_WAVE_ARTIFACT_ID,
+        name: t('artifacts.inner_wave'),
+        bonus: 30,
+        isInnerWave: true
+      }]);
+    }
+  }, [practiceHistory, artifacts]);
+
   useEffect(() => {
     const loadUserData = async () => {
       try {
@@ -4022,6 +4042,57 @@ const OndaLevel1 = () => {
             );
           })()}
 
+          {/* Артефакт - Внутренняя Волна (только для части 2) */}
+          {activeCircuit === 2 && (() => {
+            const part2PerfectCount = practiceHistory.filter(p => 
+              p.practiceId?.startsWith('p2-') && p.quality >= 100
+            ).length;
+            const hasInnerWave = artifacts.some(a => a.id === 'inner-wave');
+            return (
+              <div
+                onClick={() => {
+                  if (!hasInnerWave) {
+                    setInfoModalMessage(t('artifacts.inner_wave_alert'));
+                    setShowInfoModal(true);
+                  }
+                }}
+                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+                  hasInnerWave
+                    ? 'border-yellow-500/50 bg-yellow-500/10'
+                    : 'border-purple-500/50 bg-purple-500/10'
+                }`}
+              >
+                <div className="flex items-center gap-4">
+                  {hasInnerWave ? (
+                    <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
+                  ) : (
+                    <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+                  )}
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-1">{t('artifacts.inner_wave')}</h3>
+                    <p className="text-sm text-gray-400 mb-2">
+                      {t('artifacts.inner_wave_desc')}
+                    </p>
+                    {hasInnerWave ? (
+                      <div className="text-emerald-400">
+                        {t('labels.bonus')}: +30% {t('labels.to_qnt_generation')}
+                      </div>
+                    ) : (
+                      <div>
+                        <div className="text-gray-400 text-sm mb-1">
+                          {t('artifacts.progress')}: {part2PerfectCount}/6 {t('artifacts.practices_100')}
+                        </div>
+                        <div className="text-emerald-400">
+                          {t('labels.bonus')}: +30% {t('labels.to_qnt_generation')}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+
           {/* Артефакт - Ритм Жизни */}
           <div
             onClick={() => {
@@ -4145,6 +4216,9 @@ const OndaLevel1 = () => {
                 if (artifact.id === 'clear-will') {
                   artifactName = t('artifacts.clear_will');
                   artifactDesc = t('artifacts.clear_will_desc');
+                } else if (artifact.id === 'inner-wave') {
+                  artifactName = t('artifacts.inner_wave');
+                  artifactDesc = t('artifacts.inner_wave_desc');
                 } else if (artifact.id === 'life-rhythm') {
                   artifactName = t('artifacts.life_rhythm');
                   artifactDesc = t('artifacts.life_rhythm_desc');
