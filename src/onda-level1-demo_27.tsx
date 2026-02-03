@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch } from 'lucide-react';
+import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
@@ -1206,6 +1206,22 @@ const OndaLevel1 = () => {
         name: t('artifacts.crystal_of_grounding'),
         bonus: 50,
         requirement: t('artifacts.requirement_part', { part: 3 })
+      }
+    },
+    {
+      id: 4,
+      name: t('circuits.circuit_4_name'),
+      subtitle: t('circuits.circuit_4_subtitle'),
+      element: 'AQUA',
+      color: 'from-blue-900 to-cyan-800',
+      icon: Waves,
+      practices: [
+        // Практики будут добавлены позже
+      ],
+      artifact: {
+        name: t('artifacts.agility_essence'),
+        bonus: 65,
+        requirement: t('artifacts.requirement_part', { part: 4 })
       }
     }
   ], [i18n.language]);

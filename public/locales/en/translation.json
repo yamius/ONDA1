@@ -97,6 +97,8 @@
     "circuit_2_subtitle": "Fish / Marine Intelligence",
     "circuit_2_desc": "Awareness of movement and direction through flow.<br/>Not a route, not a goal — only the feeling of \"I swim\".<br/>Point of the first impulse, the first wave of movement.",
     "circuit_3_title": "I Adapt",
+    "circuit_4_name": "I Maneuver",
+    "circuit_4_subtitle": "Small Mammal / Agility and Evasion",
     "circuit_3_subtitle": "Amphibian / Crawling",
     "circuit_3_desc": "Mastery of two worlds: water's fluidity + earth's support.<br/>Not fight or flight — adapting form to conditions.<br/>Point of balance: first stable step and breath between two worlds.",
     "circuit_1_name": "I Am",
@@ -303,6 +305,7 @@
     "roots_of_being": "Roots of Being",
     "pearl_of_flow": "Pearl of Flow",
     "crystal_of_grounding": "Crystal of Grounding",
+    "agility_essence": "Essence of Agility",
     "requirement": "Complete all circuit practices",
     "your_artifacts": "Your Artifacts",
     "life_rhythm": "Life Rhythm",
@@ -465,6 +468,14 @@
       "text_3": "You learn to hold and to release.",
       "text_4": "Form is born where elements meet.",
       "text_5": "Your body knows the language of survival."
+    },
+    "level_4": {
+      "text_1": "Your body becomes quick and attentive.",
+      "text_2": "Muscles don't tense — they're ready.",
+      "text_3": "Space feels like a network of possibilities.",
+      "text_4": "You learn to shift, dodge, change direction.",
+      "text_5": "Not with a jerk — but instantly and softly.",
+      "text_6": "Not fleeing — but finding a more precise place."
     }
   },
   "goals": {
@@ -1081,6 +1092,23 @@
       "wisdom_2": "Breathe as if uniting ocean and stone within your body.",
       "wisdom_3": "All that's required — to change without losing yourself. Feel the world as flow and support simultaneously.",
       "wisdom_4": "Remember the ancient language of thresholds and transitions that the shore speaks: in it your stability is born."
+    },
+    "level_4": {
+      "intro": "Learn to maneuver — feel distance with your body. Maintain center even when form changes. Choose movement without losing balance.",
+      "game_task": "Game and energetic task — activation of the Agility field (AQUA mobility).",
+      "principle_1": "You don't push — you go around.",
+      "principle_2": "You don't resist — you glide.",
+      "principle_3": "Flexibility is a form of survival.",
+      "story_1": "The world opens as a field of trajectories.",
+      "story_2": "You know when to approach. You know when to shift.",
+      "story_3": "And you know that sometimes a step aside is the most precise step forward.",
+      "identity_1": "You are the Small Mammal, a form of agility on land.",
+      "identity_2": "Breath becomes quick and quiet.",
+      "identity_3": "Inhale gathers attention. Exhale allows you to change direction.",
+      "wisdom_1": "No need to push. No need to freeze.",
+      "wisdom_2": "Enough to be mobile and attentive.",
+      "wisdom_3": "In this mobility, safety is born. In this flexibility — stability.",
+      "wisdom_4": "In this choice — life."
     }
   },
   "terra_speaks": {
@@ -1102,6 +1130,12 @@
       "quote_2": "Choose not by force, but by wisdom.",
       "quote_3": "A boundary is not a wall, but a teacher.",
       "quote_4": "Your body remembers how to survive and thrive."
+    },
+    "level_4": {
+      "quote_1": "Those who know how to shift rarely collide head-on.",
+      "quote_2": "Agility is the wisdom of the body.",
+      "quote_3": "Flexibility saves where strength breaks.",
+      "quote_4": "Space helps those who feel it."
     }
   },
   "terra_final": {
@@ -1125,6 +1159,11 @@
       "line_2": "Each of your inhales gives birth to new balance, each exhale — a new form.",
       "line_3": "Stability is not stillness, but the ability to breathe through change.",
       "line_4": "You are ready to go further — AQUA awaits you."
+    },
+    "level_4": {
+      "line_1": "Now you know how to change trajectory without losing yourself.",
+      "line_2": "Your mobility has become conscious, and your reactions — precise.",
+      "line_3": "You are ready to go further — toward strength and boundaries, toward weight and status, toward calm presence."
     }
   },
   "adaptive_practices": {
