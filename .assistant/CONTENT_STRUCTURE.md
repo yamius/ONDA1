@@ -174,13 +174,13 @@ final_phrases.pN_M                    — Финальная фраза посл
 
 ### 1. Код (onda-level1-demo_27.tsx)
 
-- [ ] Добавить объект в массив `circuits`
+- [ ] Добавить объект в массив `circuits` с практиками
 - [ ] Добавить все практики в `practiceSpaces`
-- [ ] Добавить маппинги в функции:
-  - `getPracticeName()`
-  - `getPracticeDesc()`
-  - `getPracticeMessage()`
-  - `getAmbientSound()` (если нужно)
+- [ ] **⚠️ КРИТИЧЕСКИ ВАЖНО:** Добавить маппинги в функции (иначе будет отображаться ID вместо названия!):
+  - `getPracticeName()` — маппинг ID → ключ названия
+  - `getPracticeDesc()` — маппинг ID → ключ описания
+  - `getPracticeMessage()` — маппинг ID → ключ сообщения перед практикой
+  - `getAmbientSound()` (опционально, только для p1-* практик)
 
 ### 2. Переводы (public/locales/*/translation.json)
 
@@ -205,6 +205,59 @@ final_phrases.pN_M                    — Финальная фраза посл
 - [ ] Выбрать цветовую схему (Tailwind градиент)
 - [ ] Выбрать иконку (Lucide)
 - [ ] Выбрать emoji для каждой практики
+
+---
+
+## ⚠️ Функции маппинга практик (ОБЯЗАТЕЛЬНО!)
+
+В коде есть **отдельные функции**, которые преобразуют ID практики в ключ перевода. Без добавления маппинга практика будет отображаться как `p4-1` вместо "Мягкий Взгляд"!
+
+### Где находятся (onda-level1-demo_27.tsx, ~строки 1575-1700):
+
+```typescript
+// 1. getPracticeName — название практики в списке и заголовках
+const getPracticeName = (practiceId: string) => {
+  const mapping = {
+    'p1-1': 'practice_items.micro_breath',
+    // ... другие практики ...
+    'p4-1': 'practice_items.soft_gaze'  // ← ДОБАВИТЬ!
+  };
+  return t(mapping[practiceId] || practiceId);
+};
+
+// 2. getPracticeDesc — описание практики
+const getPracticeDesc = (practiceId: string) => {
+  const mapping = {
+    'p1-1': 'practice_items.micro_breath_desc',
+    // ... другие практики ...
+    'p4-1': 'practice_items.soft_gaze_desc'  // ← ДОБАВИТЬ!
+  };
+  return t(mapping[practiceId] || practiceId);
+};
+
+// 3. getPracticeMessage — сообщение элемента перед стартом
+const getPracticeMessage = (practiceId: string) => {
+  const mapping = {
+    'p1-1': 'practice_messages.breath_message',
+    // ... другие практики ...
+    'p4-1': 'practice_messages.soft_gaze_message'  // ← ДОБАВИТЬ!
+  };
+  return t(mapping[practiceId] || '');
+};
+```
+
+### Почему это нужно:
+
+UI использует эти функции для отображения текстов, а НЕ напрямую данные из массива `circuits`. Даже если в `circuits` указано `name: t('practice_items.soft_gaze')`, в некоторых местах UI вызывает `getPracticeName(practice.id)`.
+
+### Чеклист для каждой новой практики:
+
+1. ✅ Добавить в `circuits[N].practices[]`
+2. ✅ Добавить в `practiceSpaces`
+3. ✅ Добавить в `getPracticeName()` маппинг
+4. ✅ Добавить в `getPracticeDesc()` маппинг  
+5. ✅ Добавить в `getPracticeMessage()` маппинг
+6. ✅ Добавить переводы в `translation.json`
 
 ---
 
