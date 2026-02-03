@@ -1165,6 +1165,26 @@ const OndaLevel1 = () => {
       guidingTexts: t('guiding_texts.p4_2', { returnObjects: true }) as string[],
       finalPhrase: t('final_phrases.p4_2'),
       scienceInfo: t('science_info.p4_2', { returnObjects: true }) as string[]
+    },
+    'p5-1': {
+      colors: 'from-slate-900 via-stone-800 to-slate-700',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.grounded_stance_message'),
+      ambientSound: t('elements.earth_breathes'),
+      visual: '🐅',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p5_1', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p5_1')
+    },
+    'p5-2': {
+      colors: 'from-slate-900 via-stone-800 to-slate-700',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.boundary_breath_message'),
+      ambientSound: t('elements.earth_breathes'),
+      visual: '🛡️',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p5_2', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p5_2')
     }
   }), [i18n.language]);
 
@@ -1641,7 +1661,9 @@ const OndaLevel1 = () => {
       'p3-11': 'practice_items.pulse_of_earth',
       'p3-12': 'practice_items.breath_of_adaptation',
       'p4-1': 'practice_items.soft_gaze',
-      'p4-2': 'practice_items.orienting_inhale'
+      'p4-2': 'practice_items.orienting_inhale',
+      'p5-1': 'practice_items.grounded_stance',
+      'p5-2': 'practice_items.boundary_breath'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -1685,7 +1707,9 @@ const OndaLevel1 = () => {
       'p2-11': 'practice_items.deep_current_desc',
       'p2-12': 'practice_items.echo_ocean_desc',
       'p4-1': 'practice_items.soft_gaze_desc',
-      'p4-2': 'practice_items.orienting_inhale_desc'
+      'p4-2': 'practice_items.orienting_inhale_desc',
+      'p5-1': 'practice_items.grounded_stance_desc',
+      'p5-2': 'practice_items.boundary_breath_desc'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -1729,7 +1753,9 @@ const OndaLevel1 = () => {
       'p2-11': 'practice_messages.deep_current_message',
       'p2-12': 'practice_messages.echo_ocean_message',
       'p4-1': 'practice_messages.soft_gaze_message',
-      'p4-2': 'practice_messages.orienting_inhale_message'
+      'p4-2': 'practice_messages.orienting_inhale_message',
+      'p5-1': 'practice_messages.grounded_stance_message',
+      'p5-2': 'practice_messages.boundary_breath_message'
     };
     return t(mapping[practiceId] || '');
   };
