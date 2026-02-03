@@ -1149,7 +1149,7 @@ const OndaLevel1 = () => {
       element: 'AQUA',
       elementMessage: t('practice_messages.soft_gaze_message'),
       ambientSound: t('elements.silence'),
-      visual: '👁️',
+      visual: '😌',
       targetTime: 360,
       guidingTexts: t('guiding_texts.p4_1', { returnObjects: true }) as string[],
       finalPhrase: t('final_phrases.p4_1'),
