@@ -1609,7 +1609,8 @@ const OndaLevel1 = () => {
       'p3-9': 'practice_items.shape_shift',
       'p3-10': 'practice_items.resonant_stillness',
       'p3-11': 'practice_items.pulse_of_earth',
-      'p3-12': 'practice_items.breath_of_adaptation'
+      'p3-12': 'practice_items.breath_of_adaptation',
+      'p4-1': 'practice_items.soft_gaze'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -1651,7 +1652,8 @@ const OndaLevel1 = () => {
       'p2-9': 'practice_items.flow_adapt_desc',
       'p2-10': 'practice_items.still_water_desc',
       'p2-11': 'practice_items.deep_current_desc',
-      'p2-12': 'practice_items.echo_ocean_desc'
+      'p2-12': 'practice_items.echo_ocean_desc',
+      'p4-1': 'practice_items.soft_gaze_desc'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -1693,7 +1695,8 @@ const OndaLevel1 = () => {
       'p2-9': 'practice_messages.flow_adapt_message',
       'p2-10': 'practice_messages.still_water_message',
       'p2-11': 'practice_messages.deep_current_message',
-      'p2-12': 'practice_messages.echo_ocean_message'
+      'p2-12': 'practice_messages.echo_ocean_message',
+      'p4-1': 'practice_messages.soft_gaze_message'
     };
     return t(mapping[practiceId] || '');
   };
