@@ -3214,6 +3214,8 @@ const OndaLevel1 = () => {
         ? 'bg-gradient-to-br from-teal-900 via-cyan-900 to-blue-900'
         : activeCircuit === 3
         ? 'bg-gradient-to-br from-amber-950 via-orange-900 to-amber-950'
+        : activeCircuit === 4
+        ? 'bg-gradient-to-br from-teal-950 via-cyan-900 to-teal-950'
         : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
     }`}>
       {/* Debug Monitor - ПЕРВЫМ для захвата всех логов */}
@@ -3239,6 +3241,8 @@ const OndaLevel1 = () => {
               ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
               : activeCircuit === 3
               ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
+              : activeCircuit === 4
+              ? 'bg-teal-600/40 hover:bg-teal-600/60 border border-teal-400/30'
               : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
           }`}
           style={{ 
@@ -3262,6 +3266,8 @@ const OndaLevel1 = () => {
               ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
               : activeCircuit === 3
               ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
+              : activeCircuit === 4
+              ? 'bg-teal-600/40 hover:bg-teal-600/60 border border-teal-400/30'
               : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
           }`}
           style={{ 
