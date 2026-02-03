@@ -2744,10 +2744,20 @@ const OndaLevel1 = () => {
                 </p>
               </div>
               {activePractice.scienceInfo && activePractice.scienceInfo.length > 0 && (
-                <div className="text-xs sm:text-sm text-gray-300/80 space-y-1 mb-4 sm:mb-6 px-4 max-w-lg">
-                  {activePractice.scienceInfo.map((info: string, idx: number) => (
-                    <p key={idx} className="leading-relaxed">{info}</p>
-                  ))}
+                <div className="text-sm sm:text-base text-gray-200 space-y-2 mb-4 sm:mb-6 px-4 max-w-lg text-left">
+                  {activePractice.scienceInfo.map((info: string, idx: number) => {
+                    const colonIndex = info.indexOf(':');
+                    if (colonIndex > -1) {
+                      const label = info.substring(0, colonIndex + 1);
+                      const value = info.substring(colonIndex + 1);
+                      return (
+                        <p key={idx} className="leading-relaxed">
+                          <span className="font-bold">{label}</span>{value}
+                        </p>
+                      );
+                    }
+                    return <p key={idx} className="leading-relaxed">{info}</p>;
+                  })}
                 </div>
               )}
               <div className="flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base text-gray-200">
