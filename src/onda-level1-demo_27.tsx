@@ -2751,12 +2751,12 @@ const OndaLevel1 = () => {
                       const label = info.substring(0, colonIndex + 1);
                       const value = info.substring(colonIndex + 1);
                       return (
-                        <p key={idx} className="leading-relaxed">
+                        <p key={idx} className="leading-tight">
                           <span className="font-bold">{label}</span>{value}
                         </p>
                       );
                     }
-                    return <p key={idx} className="leading-relaxed">{info}</p>;
+                    return <p key={idx} className="leading-tight">{info}</p>;
                   })}
                 </div>
               )}
