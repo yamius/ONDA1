@@ -20,6 +20,7 @@
   "quote_level_1": "To move towards the light<br/>first you need to put down roots",
   "quote_level_2": "Movement is breath<br/>that has become body",
   "quote_level_3": "Form is born where<br/>earth and water meet",
+  "quote_level_4": "Emotion is a current,<br/>it teaches movement in invisible space",
   "you": "You",
   "nav": {
     "home": "Home",
@@ -99,6 +100,8 @@
     "circuit_3_title": "I Adapt",
     "circuit_4_name": "I Maneuver",
     "circuit_4_subtitle": "Small Mammal / Agility and Evasion",
+    "circuit_4_desc": "Awareness of mobility and reaction.<br/>Not attack, not freezing — the ability to change trajectory.<br/>A point of living adaptation, where movement is born before thought.",
+    "circuit_4_chapter": "Chapter 2: Emotions (AQUA)",
     "circuit_3_subtitle": "Amphibian / Crawling",
     "circuit_3_desc": "Mastery of two worlds: water's fluidity + earth's support.<br/>Not fight or flight — adapting form to conditions.<br/>Point of balance: first stable step and breath between two worlds.",
     "circuit_1_name": "I Am",
