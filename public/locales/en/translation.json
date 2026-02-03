@@ -194,7 +194,8 @@
     "resonant_stillness_message": "Freeze steadily. Breath — quiet, exhale slightly longer. Listen to silence beneath breath.",
     "pulse_of_earth_message": "Listen to low rhythm under feet: inhale — gathers, exhale — goes into depth.",
     "breath_of_adaptation_message": "Inhale — accept conditions, exhale — strengthen support. Find your working rhythm.",
-    "soft_gaze_message": "Let your eyes look not at a point — but into space. Let the world unfold before you."
+    "soft_gaze_message": "Let your eyes look not at a point — but into space. Let the world unfold before you.",
+    "orienting_inhale_message": "Inhale sharply and keenly, as if trying to catch a faint scent of change. Let this breath bring you back from the labyrinth of thoughts to the real world."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -294,7 +295,9 @@
     "breath_of_adaptation": "Breath of Adaptation",
     "breath_of_adaptation_desc": "Anchor new form and rhythm in changed environment",
     "soft_gaze": "Soft Gaze",
-    "soft_gaze_desc": "Defocus vision and shift from anxiety mode to calm mode"
+    "soft_gaze_desc": "Defocus vision and shift from anxiety mode to calm mode",
+    "orienting_inhale": "Orienting Inhale",
+    "orienting_inhale_desc": "Instantly restore mental clarity through attention activation"
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1024,6 +1027,20 @@
       "Your brain is switching: from anxious searching — to safe presence.",
       "Stay in this volumetric world, where there are no targets, only pure being.",
       "Keep this panorama inside, even when focus returns to tasks."
+    ],
+    "p4_2": [
+      "Freeze for a moment, wherever you are.",
+      "Imagine you are an explorer in an unfamiliar but interesting space.",
+      "Take a series of sharp, short inhales through your nose — as if actively 'sniffing the air'.",
+      "Feel how the cool stream touches the upper parts of your nasopharynx.",
+      "Once more: two or three short 'sniff-breaths', eagerly and curiously.",
+      "Listen as silence sets in inside at this moment: your brain is busy analyzing the environment.",
+      "This 'sniff' breaks the thread of anxious dialogue, returning you to 'here and now'.",
+      "Feel how your pupils become sharper, and your hearing — keener.",
+      "You are no longer a victim of your feelings; you are an active observer, studying the world.",
+      "Notice three scents or simply the feeling of freshness around you.",
+      "Let this impulse of curiosity displace the remnants of emotional fog.",
+      "Breathe calmly now, but keep this sharp edge of attention."
     ]
   },
   "final_phrases": {
@@ -1063,13 +1080,20 @@
     "p3_10": "When stillness resonates, you hear pulse of silence.",
     "p3_11": "When you breathe with Earth, anxiety goes into depths.",
     "p3_12": "When breath accepts and anchors, environment becomes your ally.",
-    "p4_1": "When your gaze is embraced by the silence of the horizon, the world ceases to be a threat and becomes a space for your expression."
+    "p4_1": "When your gaze is embraced by the silence of the horizon, the world ceases to be a threat and becomes a space for your expression.",
+    "p4_2": "When you actively perceive the world, anxiety loses its power over you. Your nose is a navigator that will always guide you from the storm of emotions to clarity."
   },
   "science_info": {
     "p4_1": [
       "Biology: Expanding the field of vision reduces amygdala activity.",
       "Why: This is a motor pattern of environmental monitoring in small mammals, canceling the tunnel vision of 'prey'.",
       "Effect: Reduction of background anxiety levels."
+    ],
+    "p4_2": [
+      "Biology: Imitation of the orienting reflex (exploratory behavior).",
+      "Why: A sharp inhale through the nose sends a signal to the cerebral cortex, forcibly shifting focus from internal emotions to external stimuli.",
+      "Effect: Instant 'sobering' of attention and breaking the cycle of obsessive anxieties.",
+      "Bio-marker: Activation of cholinergic systems responsible for selective attention."
     ]
   },
   "level_goal": {

@@ -1154,6 +1154,17 @@ const OndaLevel1 = () => {
       guidingTexts: t('guiding_texts.p4_1', { returnObjects: true }) as string[],
       finalPhrase: t('final_phrases.p4_1'),
       scienceInfo: t('science_info.p4_1', { returnObjects: true }) as string[]
+    },
+    'p4-2': {
+      colors: 'from-blue-900 via-cyan-800 to-teal-700',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.orienting_inhale_message'),
+      ambientSound: t('elements.breath'),
+      visual: '👃',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p4_2', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p4_2'),
+      scienceInfo: t('science_info.p4_2', { returnObjects: true }) as string[]
     }
   }), [i18n.language]);
 
@@ -1247,7 +1258,8 @@ const OndaLevel1 = () => {
       color: 'from-blue-900 to-cyan-800',
       icon: Waves,
       practices: [
-        { id: 'p4-1', name: t('practice_items.soft_gaze'), duration: t('practice_items.duration_6min'), maxQnt: 50, desc: t('practice_items.soft_gaze_desc') }
+        { id: 'p4-1', name: t('practice_items.soft_gaze'), duration: t('practice_items.duration_6min'), maxQnt: 50, desc: t('practice_items.soft_gaze_desc') },
+        { id: 'p4-2', name: t('practice_items.orienting_inhale'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.orienting_inhale_desc') }
       ],
       artifact: {
         name: t('artifacts.listen_heart'),
@@ -1611,7 +1623,8 @@ const OndaLevel1 = () => {
       'p3-10': 'practice_items.resonant_stillness',
       'p3-11': 'practice_items.pulse_of_earth',
       'p3-12': 'practice_items.breath_of_adaptation',
-      'p4-1': 'practice_items.soft_gaze'
+      'p4-1': 'practice_items.soft_gaze',
+      'p4-2': 'practice_items.orienting_inhale'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -1654,7 +1667,8 @@ const OndaLevel1 = () => {
       'p2-10': 'practice_items.still_water_desc',
       'p2-11': 'practice_items.deep_current_desc',
       'p2-12': 'practice_items.echo_ocean_desc',
-      'p4-1': 'practice_items.soft_gaze_desc'
+      'p4-1': 'practice_items.soft_gaze_desc',
+      'p4-2': 'practice_items.orienting_inhale_desc'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -1697,7 +1711,8 @@ const OndaLevel1 = () => {
       'p2-10': 'practice_messages.still_water_message',
       'p2-11': 'practice_messages.deep_current_message',
       'p2-12': 'practice_messages.echo_ocean_message',
-      'p4-1': 'practice_messages.soft_gaze_message'
+      'p4-1': 'practice_messages.soft_gaze_message',
+      'p4-2': 'practice_messages.orienting_inhale_message'
     };
     return t(mapping[practiceId] || '');
   };
