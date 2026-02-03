@@ -1255,7 +1255,7 @@ const OndaLevel1 = () => {
       name: t('circuits.circuit_4_name'),
       subtitle: t('circuits.circuit_4_subtitle'),
       element: 'AQUA',
-      color: 'from-blue-900 to-cyan-800',
+      color: 'from-indigo-900 to-teal-700',
       icon: Waves,
       practices: [
         { id: 'p4-1', name: t('practice_items.soft_gaze'), duration: t('practice_items.duration_6min'), maxQnt: 50, desc: t('practice_items.soft_gaze_desc') },
