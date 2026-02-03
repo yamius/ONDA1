@@ -3345,7 +3345,16 @@ const OndaLevel1 = () => {
                       return (
                         <button
                           key={chapter}
-                          onClick={() => { if (isAvailable) { setSelectedChapter(chapter); setShowChapterDropdown(false); } }}
+                          onClick={() => { 
+                            if (isAvailable) { 
+                              setSelectedChapter(chapter); 
+                              // При выборе Chapter → переключаем на первую часть этого уровня
+                              const firstLevelOfChapter = (chapter - 1) * 3 + 1;
+                              setSelectedLevel(firstLevelOfChapter);
+                              setActiveCircuit(firstLevelOfChapter);
+                              setShowChapterDropdown(false); 
+                            } 
+                          }}
                           className={`block w-full px-4 py-3 transition-all text-lg ${
                             !isAvailable
                               ? 'text-white/40 cursor-not-allowed'
@@ -3409,6 +3418,9 @@ const OndaLevel1 = () => {
                             if (isAvailable) {
                               setSelectedLevel(level);
                               setActiveCircuit(level);
+                              // При выборе Level → переключаем на соответствующий Chapter
+                              const chapterForLevel = Math.ceil(level / 3);
+                              setSelectedChapter(chapterForLevel);
                               setShowLevelDropdown(false);
                             }
                           }}
