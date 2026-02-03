@@ -66,6 +66,106 @@ circuits.circuit_N_chapter  — К какой главе относится ("Г
 
 ---
 
+## 🎨 Цветовая палитра частей
+
+**ВАЖНО:** Каждая часть должна иметь согласованную цветовую палитру. Цвета задаются в `onda-level1-demo_27.tsx` через условия `activeCircuit === N`.
+
+### Существующие палитры
+
+| Part | Основной цвет | Примеры классов |
+|------|---------------|-----------------|
+| **Part 1** | Indigo/Purple | `bg-indigo-500/10`, `border-indigo-400/40`, `text-purple-300` |
+| **Part 2** | Cyan | `bg-cyan-500/10`, `border-cyan-400/40`, `text-cyan-300` |
+| **Part 3** | Amber/Orange | `bg-amber-600/10`, `border-amber-500/40`, `text-amber-300` |
+| **Part 4** | Teal | `bg-teal-500/10`, `border-teal-400/40`, `text-teal-300` |
+
+### Где нужно задать цвета для новой части
+
+При добавлении новой части (например Part 5) нужно добавить условие `activeCircuit === 5` во ВСЕ следующие места:
+
+1. **Основной фон страницы** (~строка 3213):
+   ```typescript
+   : activeCircuit === 5
+   ? 'bg-gradient-to-br from-COLOR-950 via-COLOR-900 to-COLOR-950'
+   ```
+
+2. **Кнопка меню** (~строка 3239):
+   ```typescript
+   : activeCircuit === 5
+   ? 'bg-COLOR-600/40 hover:bg-COLOR-600/60 border border-COLOR-400/30'
+   ```
+
+3. **Кнопка подписки** (~строка 3265)
+
+4. **Dropdown Level** (~строка 3392, 3406, 3428):
+   ```typescript
+   : activeCircuit === 5
+   ? 'bg-COLOR-500/10 hover:bg-COLOR-500/20 border-COLOR-400/40'
+   ```
+
+5. **Dropdown Part** (~строка 3455, 3477, 3502)
+
+6. **Кнопка Emotional Check** (~строка 3546)
+
+7. **Бордеры секций** (~строки 3554, 3615, 3665-3700):
+   ```typescript
+   : activeCircuit === 5
+   ? 'border-COLOR-500/30'
+   ```
+
+8. **Фон секции philosophy** (~строка 3637):
+   ```typescript
+   : activeCircuit === 5
+   ? 'bg-gradient-to-br from-COLOR-900/20 to-COLOR-900/20 border-COLOR-500/30'
+   ```
+
+9. **Карточки практик** (~строка 3889):
+   ```typescript
+   : activeCircuit === 5
+   ? 'border-COLOR-500/30 hover:border-COLOR-400/50'
+   ```
+
+10. **Фон секции level_goal** (~строка 4018):
+    ```typescript
+    : activeCircuit === 5
+    ? 'bg-gradient-to-br from-COLOR-900/30 via-COLOR-900/20 to-COLOR-900/30 border-COLOR-500/30'
+    ```
+
+11. **Цвета текста identity** (~строки 4035-4041):
+    ```typescript
+    : activeCircuit === 5 ? 'text-COLOR-300'
+    ```
+
+12. **Цвета terra_speaks** (~строки 4057, 4076, 4090)
+
+13. **Кнопка "Перейти к Части N"** (~строка 4419):
+    ```typescript
+    : activeCircuit + 1 === 5
+    ? 'bg-gradient-to-r from-COLOR-600 to-COLOR-600 hover:from-COLOR-500 hover:to-COLOR-500 text-white border-2 border-COLOR-300/50'
+    ```
+
+### Структура цветов (паттерн)
+
+Для согласованности используй один базовый цвет Tailwind:
+
+| Элемент | Прозрачность/оттенок |
+|---------|---------------------|
+| Фон страницы | `COLOR-950`, `COLOR-900` |
+| Фон кнопок | `COLOR-600/40`, `COLOR-500/10` |
+| Бордеры | `COLOR-400/30`, `COLOR-500/30`, `COLOR-400/40` |
+| Hover | `COLOR-600/60`, `COLOR-500/20`, `COLOR-400/50` |
+| Текст | `COLOR-300`, `COLOR-200` |
+
+### Поиск всех мест для замены
+
+```bash
+# Найти все места где нужно добавить цвет для новой части:
+grep -n "activeCircuit === 3" src/onda-level1-demo_27.tsx | wc -l
+# Ожидается ~30+ мест
+```
+
+---
+
 ## Блоки контента (BN_X)
 
 | Блок | Описание | Ключ в translation.json |
