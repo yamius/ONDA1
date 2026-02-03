@@ -2744,7 +2744,7 @@ const OndaLevel1 = () => {
                 </p>
               </div>
               {activePractice.scienceInfo && activePractice.scienceInfo.length > 0 && (
-                <div className="text-sm sm:text-base text-gray-200 space-y-2 mb-4 sm:mb-6 px-4 max-w-lg text-left">
+                <div className="text-sm sm:text-base text-gray-200 space-y-2 mb-4 sm:mb-6 px-4 max-w-lg text-justify">
                   {activePractice.scienceInfo.map((info: string, idx: number) => {
                     const colonIndex = info.indexOf(':');
                     if (colonIndex > -1) {
