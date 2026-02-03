@@ -3396,10 +3396,12 @@ const OndaLevel1 = () => {
                       ? 'bg-cyan-500/20 border-cyan-400/50'
                       : activeCircuit === 3
                       ? 'bg-amber-600/20 border-amber-500/50'
+                      : activeCircuit === 4
+                      ? 'bg-blue-500/20 border-blue-400/50'
                       : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
                     {Array.from({length: 12}, (_, i) => i + 1).map(level => {
-                      const isAvailable = level <= 3;
+                      const isAvailable = level <= 4;
                       return (
                         <button
                           key={level}
@@ -3417,6 +3419,8 @@ const OndaLevel1 = () => {
                               ? level === selectedLevel ? 'bg-cyan-500/40 text-white' : 'hover:bg-cyan-500/30'
                               : activeCircuit === 3
                               ? level === selectedLevel ? 'bg-amber-600/40 text-white' : 'hover:bg-amber-600/30'
+                              : activeCircuit === 4
+                              ? level === selectedLevel ? 'bg-blue-500/40 text-white' : 'hover:bg-blue-500/30'
                               : level === selectedLevel ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                           }`}
                         >
@@ -4265,7 +4269,7 @@ const OndaLevel1 = () => {
           </div>
 
           <div className="text-center mt-6">
-            {activeCircuit < 3 && (
+            {activeCircuit < 4 && (
               <button
                 onClick={() => { 
                   setActiveCircuit(activeCircuit + 1); 
@@ -4283,6 +4287,8 @@ const OndaLevel1 = () => {
                     ? 'bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white border-2 border-cyan-300/50'
                     : activeCircuit + 1 === 3
                     ? 'bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white border-2 border-amber-300/50'
+                    : activeCircuit + 1 === 4
+                    ? 'bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white border-2 border-cyan-300/50'
                     : 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-2 border-purple-300/50'
                 }`}
               >
