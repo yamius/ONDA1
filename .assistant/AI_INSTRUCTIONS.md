@@ -8,10 +8,45 @@
    - `replit.md` — обзор проекта, архитектура, зависимости
    - `.assistant/PHILOSOPHY.md` — правила работы
 
+---
+
+## 🔗 Работа с GitHub Gists
+
+**ВАЖНО:** Пользователь часто даёт ссылки на gist для контента. Используй правильный способ сразу!
+
+### ✅ Рабочий способ (используй этот):
+
+```bash
+curl -sL "https://gist.githubusercontent.com/{user}/{gist_id}/raw"
+```
+
+**Пример:**
+```bash
+# Ссылка от пользователя: https://gist.github.com/yamius/1c0df3f9899b77d83ee3496013046d3d
+# Команда:
+curl -sL "https://gist.githubusercontent.com/yamius/1c0df3f9899b77d83ee3496013046d3d/raw"
+```
+
+### ❌ НЕ работает (не пробуй):
+
+- `gh gist view {id}` — HTTP 403 (ограничения интеграции)
+- `curl https://gist.github.com/...` — возвращает HTML, не содержимое
+
+### Как извлечь gist_id из ссылки:
+
+```
+https://gist.github.com/yamius/1c0df3f9899b77d83ee3496013046d3d
+                        ↑       ↑
+                       user    gist_id
+```
+
+---
+
 2. **В зависимости от задачи:**
    - Фронтенд (React) → `.assistant/MODULE_FRONTEND.md`
    - iOS/Android нативное → `.assistant/MODULE_NATIVE.md`
    - Supabase (Auth, DB, Functions) → `.assistant/MODULE_SUPABASE.md`
+   - **Создание новых частей (контуров)** → `.assistant/CONTENT_STRUCTURE.md`
 
 ## Git: Работа с ветками
 
