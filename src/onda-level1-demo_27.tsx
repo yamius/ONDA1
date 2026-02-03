@@ -312,6 +312,26 @@ const OndaLevel1 = () => {
     }
   }, [practiceHistory, artifacts]);
 
+  // Добавляем артефакт "Эхо Радости" за 3 практики части 4 с качеством 100%
+  const ECHO_OF_JOY_ARTIFACT_ID = 'echo-of-joy';
+  useEffect(() => {
+    const hasEchoOfJoyArtifact = artifacts.some(a => a.id === ECHO_OF_JOY_ARTIFACT_ID);
+    // Считаем практики части 4 (p4-*) с качеством 100%
+    const part4PerfectPractices = practiceHistory.filter(p => 
+      p.practiceId?.startsWith('p4-') && p.quality >= 100
+    ).length;
+    
+    if (part4PerfectPractices >= 3 && !hasEchoOfJoyArtifact) {
+      console.log('[App] Echo of Joy artifact unlocked! +50% OND bonus');
+      setArtifacts(prev => [...prev, {
+        id: ECHO_OF_JOY_ARTIFACT_ID,
+        name: t('artifacts.echo_of_joy'),
+        bonus: 50,
+        isEchoOfJoy: true
+      }]);
+    }
+  }, [practiceHistory, artifacts]);
+
   useEffect(() => {
     const loadUserData = async () => {
       try {
@@ -1219,8 +1239,8 @@ const OndaLevel1 = () => {
         // Практики будут добавлены позже
       ],
       artifact: {
-        name: t('artifacts.agility_essence'),
-        bonus: 65,
+        name: t('artifacts.listen_heart'),
+        bonus: 20,
         requirement: t('artifacts.requirement_part', { part: 4 })
       }
     }
@@ -4196,6 +4216,57 @@ const OndaLevel1 = () => {
             );
           })()}
 
+          {/* Артефакт - Эхо Радости (Part 4) */}
+          {(() => {
+            const part4PerfectCount = practiceHistory.filter(p => 
+              p.practiceId?.startsWith('p4-') && p.quality >= 100
+            ).length;
+            const hasEchoOfJoy = artifacts.some(a => a.id === 'echo-of-joy');
+            return (
+              <div
+                onClick={() => {
+                  if (!hasEchoOfJoy) {
+                    setInfoModalMessage(t('artifacts.echo_of_joy_alert'));
+                    setShowInfoModal(true);
+                  }
+                }}
+                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+                  hasEchoOfJoy
+                    ? 'border-yellow-500/50 bg-yellow-500/10'
+                    : 'border-purple-500/50 bg-purple-500/10'
+                }`}
+              >
+                <div className="flex items-center gap-4">
+                  {hasEchoOfJoy ? (
+                    <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
+                  ) : (
+                    <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+                  )}
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-1">{t('artifacts.echo_of_joy')}</h3>
+                    <p className="text-sm text-gray-400 mb-2">
+                      {t('artifacts.echo_of_joy_desc')}
+                    </p>
+                    {hasEchoOfJoy ? (
+                      <div className="text-emerald-400">
+                        {t('labels.bonus')}: +50% {t('labels.to_qnt_generation')}
+                      </div>
+                    ) : (
+                      <div>
+                        <div className="text-gray-400 text-sm mb-1">
+                          {t('artifacts.progress')}: {part4PerfectCount}/3 {t('artifacts.practices_100')}
+                        </div>
+                        <div className="text-emerald-400">
+                          {t('labels.bonus')}: +50% {t('labels.to_qnt_generation')}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+
           {/* Артефакт - Ритм Жизни */}
           <div
             onClick={() => {
@@ -4330,6 +4401,9 @@ const OndaLevel1 = () => {
                 } else if (artifact.id === 'life-rhythm') {
                   artifactName = t('artifacts.life_rhythm');
                   artifactDesc = t('artifacts.life_rhythm_desc');
+                } else if (artifact.id === 'echo-of-joy') {
+                  artifactName = t('artifacts.echo_of_joy');
+                  artifactDesc = t('artifacts.echo_of_joy_desc');
                 } else {
                   const circuit = circuits.find(c => c.id === artifact.circuitId);
                   artifactName = circuit?.artifact.name || artifact.name || 'Artifact';
