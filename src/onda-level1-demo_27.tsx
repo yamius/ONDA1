@@ -1143,6 +1143,16 @@ const OndaLevel1 = () => {
       targetTime: 660,
       guidingTexts: t('guiding_texts.p2_12', { returnObjects: true }) as string[],
       finalPhrase: t('final_phrases.p2_12')
+    },
+    'p4-1': {
+      colors: 'from-blue-900 via-cyan-800 to-teal-700',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.soft_gaze_message'),
+      ambientSound: t('elements.silence'),
+      visual: '👁️',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p4_1', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p4_1')
     }
   }), [i18n.language]);
 
@@ -1236,7 +1246,7 @@ const OndaLevel1 = () => {
       color: 'from-blue-900 to-cyan-800',
       icon: Waves,
       practices: [
-        // Практики будут добавлены позже
+        { id: 'p4-1', name: t('practice_items.soft_gaze'), duration: t('practice_items.duration_6min'), maxQnt: 50, desc: t('practice_items.soft_gaze_desc') }
       ],
       artifact: {
         name: t('artifacts.listen_heart'),

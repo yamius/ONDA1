@@ -193,7 +193,8 @@
     "shape_shift_message": "Center — in place, form — for the task. Breathe and change softly.",
     "resonant_stillness_message": "Freeze steadily. Breath — quiet, exhale slightly longer. Listen to silence beneath breath.",
     "pulse_of_earth_message": "Listen to low rhythm under feet: inhale — gathers, exhale — goes into depth.",
-    "breath_of_adaptation_message": "Inhale — accept conditions, exhale — strengthen support. Find your working rhythm."
+    "breath_of_adaptation_message": "Inhale — accept conditions, exhale — strengthen support. Find your working rhythm.",
+    "soft_gaze_message": "Let your eyes look not at a point — but into space. Let the world unfold before you."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -291,7 +292,9 @@
     "pulse_of_earth": "Pulse of Earth",
     "pulse_of_earth_desc": "Synchronize breath with Earth's pulse",
     "breath_of_adaptation": "Breath of Adaptation",
-    "breath_of_adaptation_desc": "Anchor new form and rhythm in changed environment"
+    "breath_of_adaptation_desc": "Anchor new form and rhythm in changed environment",
+    "soft_gaze": "Soft Gaze",
+    "soft_gaze_desc": "Defocus vision and shift from anxiety mode to calm mode"
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1006,6 +1009,21 @@
       "Notice how body finds solutions when you stop insisting.",
       "Stay several minutes, let new form settle.",
       "Finish knowing: environment is not obstacle, it's information for adaptation."
+    ],
+    "p4_1": [
+      "Choose a point in front of you, but don't 'stare' at it with attention.",
+      "Soften your gaze, as if looking through a transparent veil or into deep twilight.",
+      "Without moving your pupils, slowly begin to notice the right and left edges of space.",
+      "Allow your attention to flow to the sides, embracing walls, shadows, and air beside you.",
+      "Your gaze is no longer a 'tunnel' seeking a target; now it's a wide, calm mirror.",
+      "Feel how, with the expansion of your field of view, the ancient fear in the depths of your brain quiets.",
+      "The tension of 'hunting' fades, the frozen expectation of 'prey' dissolves.",
+      "You no longer fixate on details — you monitor life itself in its wholeness.",
+      "Breathe freely, holding both edges of space in your attention simultaneously.",
+      "Notice how, along with the defocus of eyes, your jaw and back of head relax.",
+      "Your brain is switching: from anxious searching — to safe presence.",
+      "Stay in this volumetric world, where there are no targets, only pure being.",
+      "Keep this panorama inside, even when focus returns to tasks."
     ]
   },
   "final_phrases": {
@@ -1044,7 +1062,8 @@
     "p3_9": "When form changes without losing center, you master adaptation.",
     "p3_10": "When stillness resonates, you hear pulse of silence.",
     "p3_11": "When you breathe with Earth, anxiety goes into depths.",
-    "p3_12": "When breath accepts and anchors, environment becomes your ally."
+    "p3_12": "When breath accepts and anchors, environment becomes your ally.",
+    "p4_1": "When your gaze is embraced by the silence of the horizon, the world ceases to be a threat and becomes a space for your expression."
   },
   "level_goal": {
     "title": "GOALS and TASKS",
