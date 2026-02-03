@@ -1152,7 +1152,8 @@ const OndaLevel1 = () => {
       visual: '👁️',
       targetTime: 360,
       guidingTexts: t('guiding_texts.p4_1', { returnObjects: true }) as string[],
-      finalPhrase: t('final_phrases.p4_1')
+      finalPhrase: t('final_phrases.p4_1'),
+      scienceInfo: t('science_info.p4_1', { returnObjects: true }) as string[]
     }
   }), [i18n.language]);
 
@@ -2742,6 +2743,13 @@ const OndaLevel1 = () => {
                   "{getPracticeMessage(activePractice.id)}"
                 </p>
               </div>
+              {activePractice.scienceInfo && activePractice.scienceInfo.length > 0 && (
+                <div className="text-xs sm:text-sm text-gray-300/80 space-y-1 mb-4 sm:mb-6 px-4 max-w-lg">
+                  {activePractice.scienceInfo.map((info: string, idx: number) => (
+                    <p key={idx} className="leading-relaxed">{info}</p>
+                  ))}
+                </div>
+              )}
               <div className="flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base text-gray-200">
                 <span className="bg-black/30 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-sm text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center">
                   {activePractice.targetTime ? `${Math.floor(activePractice.targetTime / 60)} ${t('practice_items.duration_min')}` : activePractice.duration}

@@ -1065,6 +1065,13 @@
     "p3_12": "When breath accepts and anchors, environment becomes your ally.",
     "p4_1": "When your gaze is embraced by the silence of the horizon, the world ceases to be a threat and becomes a space for your expression."
   },
+  "science_info": {
+    "p4_1": [
+      "Biology: Expanding the field of vision reduces amygdala activity.",
+      "Why: This is a motor pattern of environmental monitoring in small mammals, canceling the tunnel vision of 'prey'.",
+      "Effect: Reduction of background anxiety levels."
+    ]
+  },
   "level_goal": {
     "title": "GOALS and TASKS",
     "level_1": {
