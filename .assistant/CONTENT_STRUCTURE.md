@@ -127,9 +127,27 @@ circuits.circuit_N_chapter  — К какой главе относится ("Г
   visual: '🦎',                             // Emoji в центре круга
   targetTime: 360,                          // Секунды (6 мин = 360)
   guidingTexts: t('guiding_texts.p3_1', { returnObjects: true }),
-  finalPhrase: t('final_phrases.p3_1')
+  finalPhrase: t('final_phrases.p3_1'),
+  scienceInfo: t('science_info.p3_1', { returnObjects: true })  // Опционально
 }
 ```
+
+### 4. Блок scienceInfo (научная информация)
+
+**Опциональный блок** — отображается на экране intro между сообщением элемента и таймером.
+
+Формат в `translation.json`:
+```json
+"science_info": {
+  "p4_1": [
+    "Биология: Расширение поля зрения снижает активность миндалины.",
+    "Почему: Это моторный паттерн мониторинга среды у мелких животных.",
+    "Эффект: Снижение уровня фоновой тревоги."
+  ]
+}
+```
+
+**Важно:** Текст до двоеточия автоматически выделяется **жирным** в UI.
 
 ---
 
@@ -161,12 +179,16 @@ practice_items.practice_name          — Название практики
 practice_items.practice_name_desc     — Описание практики
 practice_items.duration_Xmin          — Длительность
 
-practice_messages.practice_message    — Сообщение элемента
+practice_messages.practice_message    — Сообщение элемента (короткая фраза перед стартом)
 elements.sound_name                   — Название звука
 
 guiding_texts.pN_M                    — Массив направляющих текстов (показываются во время практики)
 final_phrases.pN_M                    — Финальная фраза после завершения
+science_info.pN_M                     — (Опционально) Массив строк: Биология/Почему/Эффект
 ```
+
+**Формат science_info:** Текст до двоеточия выделяется жирным автоматически.
+Пример: `"Биология: Текст..."` → **Биология:** Текст...
 
 ---
 
@@ -253,11 +275,16 @@ UI использует эти функции для отображения те
 ### Чеклист для каждой новой практики:
 
 1. ✅ Добавить в `circuits[N].practices[]`
-2. ✅ Добавить в `practiceSpaces`
+2. ✅ Добавить в `practiceSpaces` (включая `scienceInfo` если нужен)
 3. ✅ Добавить в `getPracticeName()` маппинг
 4. ✅ Добавить в `getPracticeDesc()` маппинг  
 5. ✅ Добавить в `getPracticeMessage()` маппинг
-6. ✅ Добавить переводы в `translation.json`
+6. ✅ Добавить переводы в `translation.json`:
+   - `practice_items.*` — название и описание
+   - `practice_messages.*` — сообщение перед стартом
+   - `guiding_texts.pN_M` — направляющие фразы во время практики
+   - `final_phrases.pN_M` — финальная фраза
+   - `science_info.pN_M` — (опционально) биология/почему/эффект
 
 ---
 
