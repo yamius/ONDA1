@@ -201,7 +201,8 @@
     "pulse_of_earth_message": "Listen to low rhythm under feet: inhale — gathers, exhale — goes into depth.",
     "breath_of_adaptation_message": "Inhale — accept conditions, exhale — strengthen support. Find your working rhythm.",
     "soft_gaze_message": "Let your eyes look not at a point — but into space. Let the world unfold before you.",
-    "orienting_inhale_message": "Inhale sharply and keenly, as if trying to catch a faint scent of change. Let this breath bring you back from the labyrinth of thoughts to the real world."
+    "orienting_inhale_message": "Inhale sharply and keenly, as if trying to catch a faint scent of change. Let this breath bring you back from the labyrinth of thoughts to the real world.",
+    "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -303,7 +304,9 @@
     "soft_gaze": "Soft Gaze",
     "soft_gaze_desc": "Defocus vision and shift from anxiety mode to calm mode",
     "orienting_inhale": "Orienting Inhale",
-    "orienting_inhale_desc": "Instantly restore mental clarity through attention activation"
+    "orienting_inhale_desc": "Instantly restore mental clarity through attention activation",
+    "mass_center": "Mass of Center",
+    "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing"
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -325,6 +328,9 @@
     "echo_of_joy": "Echo of Joy",
     "echo_of_joy_desc": "Complete 3 practices of part 4 with 100% quality",
     "echo_of_joy_alert": "Complete 3 practices of part 4 with 100% quality to unlock this artifact",
+    "shield_of_status": "Shield of Status",
+    "shield_of_status_desc": "Complete 3 practices of part 5 with 100% quality",
+    "shield_of_status_alert": "Complete 3 practices of part 5 with 100% quality to unlock this artifact",
     "requirement": "Complete all circuit practices",
     "your_artifacts": "Your Artifacts",
     "life_rhythm": "Life Rhythm",
@@ -1055,6 +1061,20 @@
       "Notice three scents or simply the feeling of freshness around you.",
       "Let this impulse of curiosity displace the remnants of emotional fog.",
       "Breathe calmly now, but keep this sharp edge of attention."
+    ],
+    "p5_1": [
+      "Take up space. Spread your shoulders as if your back is a wide rock.",
+      "Imagine that in your lower belly, just below the navel, lies a dense, warm, and very heavy block.",
+      "This block doesn't press on you — it holds you, connecting you to the very center of the earth.",
+      "Begin breathing: a deep inhale for 4 counts, directing air straight into this block.",
+      "Feel how your lower belly expands, accepting this volume.",
+      "Hold your breath for 2 seconds — lock in your density and mass.",
+      "Now — a long, smooth exhale for 8 counts. With this exhale, the block becomes even heavier.",
+      "Feel how with each cycle, the 'inner weight' lowers your shoulders and relaxes your face.",
+      "You are no longer a feather in the wind. You are a monolith that cannot be moved by a random word or glance.",
+      "Breathe into the lower center. Let each exhale wash away the fuss, leaving only cold, calm confidence.",
+      "Feel how testosterone fills your tissues, and cortisol melts, turning into pure energy of presence.",
+      "Keep this feeling of 'heavy center' even when you start moving or speaking."
     ]
   },
   "final_phrases": {
@@ -1095,7 +1115,8 @@
     "p3_11": "When you breathe with Earth, anxiety goes into depths.",
     "p3_12": "When breath accepts and anchors, environment becomes your ally.",
     "p4_1": "When your gaze is embraced by the silence of the horizon, the world ceases to be a threat and becomes a space for your expression.",
-    "p4_2": "When you actively perceive the world, anxiety loses its power over you. Your nose is a navigator that will always guide you from the storm of emotions to clarity."
+    "p4_2": "When you actively perceive the world, anxiety loses its power over you. Your nose is a navigator that will always guide you from the storm of emotions to clarity.",
+    "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence."
   },
   "science_info": {
     "p4_1": [
@@ -1108,6 +1129,12 @@
       "Why: A sharp inhale through the nose sends a signal to the cerebral cortex, forcibly shifting focus from internal emotions to external stimuli.",
       "Effect: Instant 'sobering' of attention and breaking the cycle of obsessive anxieties.",
       "Bio-marker: Activation of cholinergic systems responsible for selective attention."
+    ],
+    "p5_1": [
+      "Action: Assume a 'power pose': back straight, shoulders open, feet firmly planted on the support.",
+      "Biology: Suppression of the hypothalamic-pituitary-adrenal (HPA) axis. Research confirms that such exposure reduces cortisol by 25% and increases testosterone by 20%.",
+      "Bio-marker: Stimulation of the Ventral Vagus. Extended exhale is a direct signal to the brain about safety, stabilizing heart rate variability (HRV).",
+      "Effect: A feeling of 'inner weight' emerges — the biological basis of calm dominance."
     ]
   },
   "level_goal": {

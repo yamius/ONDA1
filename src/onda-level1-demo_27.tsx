@@ -1165,8 +1165,18 @@ const OndaLevel1 = () => {
       guidingTexts: t('guiding_texts.p4_2', { returnObjects: true }) as string[],
       finalPhrase: t('final_phrases.p4_2'),
       scienceInfo: t('science_info.p4_2', { returnObjects: true }) as string[]
+    },
+    'p5-1': {
+      colors: 'from-stone-800 via-stone-700 to-stone-600',
+      element: 'TERRA',
+      elementMessage: t('practice_messages.mass_center_message'),
+      ambientSound: t('elements.earth_breathes'),
+      visual: '⚖️',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p5_1', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p5_1'),
+      scienceInfo: t('science_info.p5_1', { returnObjects: true }) as string[]
     }
-    // Part 5 practices: ждём данные от пользователя
   }), [i18n.language]);
 
   const circuits = useMemo(() => [
@@ -1275,8 +1285,14 @@ const OndaLevel1 = () => {
       element: 'AQUA',
       color: 'from-stone-700 to-stone-500',
       icon: Shield,
-      practices: [],  // Ждём данные от пользователя
-      artifact: null  // Ждём данные от пользователя
+      practices: [
+        { id: 'p5-1', name: t('practice_items.mass_center'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.mass_center_desc') }
+      ],
+      artifact: {
+        name: t('artifacts.shield_of_status'),
+        bonus: 25,
+        requirement: t('artifacts.requirement_part', { part: 5 })
+      }
     }
   ], [i18n.language]);
 
@@ -1635,8 +1651,8 @@ const OndaLevel1 = () => {
       'p3-11': 'practice_items.pulse_of_earth',
       'p3-12': 'practice_items.breath_of_adaptation',
       'p4-1': 'practice_items.soft_gaze',
-      'p4-2': 'practice_items.orienting_inhale'
-      // Part 5: ждём данные от пользователя
+      'p4-2': 'practice_items.orienting_inhale',
+      'p5-1': 'practice_items.mass_center'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -1680,8 +1696,8 @@ const OndaLevel1 = () => {
       'p2-11': 'practice_items.deep_current_desc',
       'p2-12': 'practice_items.echo_ocean_desc',
       'p4-1': 'practice_items.soft_gaze_desc',
-      'p4-2': 'practice_items.orienting_inhale_desc'
-      // Part 5: ждём данные от пользователя
+      'p4-2': 'practice_items.orienting_inhale_desc',
+      'p5-1': 'practice_items.mass_center_desc'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -1725,8 +1741,8 @@ const OndaLevel1 = () => {
       'p2-11': 'practice_messages.deep_current_message',
       'p2-12': 'practice_messages.echo_ocean_message',
       'p4-1': 'practice_messages.soft_gaze_message',
-      'p4-2': 'practice_messages.orienting_inhale_message'
-      // Part 5: ждём данные от пользователя
+      'p4-2': 'practice_messages.orienting_inhale_message',
+      'p5-1': 'practice_messages.mass_center_message'
     };
     return t(mapping[practiceId] || '');
   };
