@@ -1288,11 +1288,7 @@ const OndaLevel1 = () => {
       practices: [
         { id: 'p5-1', name: t('practice_items.mass_center'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.mass_center_desc') }
       ],
-      artifact: {
-        name: t('artifacts.shield_of_status'),
-        bonus: 25,
-        requirement: t('artifacts.requirement_part', { part: 5 })
-      }
+      artifact: null
     }
   ], [i18n.language]);
 
