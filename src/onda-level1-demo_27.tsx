@@ -4293,12 +4293,6 @@ const OndaLevel1 = () => {
             const hasClearWill = artifacts.some(a => a.id === 'clear-will');
             return (
               <div
-                onClick={() => {
-                  if (!hasClearWill) {
-                    setInfoModalMessage(t('artifacts.clear_will_alert'));
-                    setShowInfoModal(true);
-                  }
-                }}
                 className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
                   hasClearWill
                     ? 'border-yellow-500/50 bg-yellow-500/10'
@@ -4344,12 +4338,6 @@ const OndaLevel1 = () => {
             const hasInnerWave = artifacts.some(a => a.id === 'inner-wave');
             return (
               <div
-                onClick={() => {
-                  if (!hasInnerWave) {
-                    setInfoModalMessage(t('artifacts.inner_wave_alert'));
-                    setShowInfoModal(true);
-                  }
-                }}
                 className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
                   hasInnerWave
                     ? 'border-yellow-500/50 bg-yellow-500/10'
@@ -4395,12 +4383,6 @@ const OndaLevel1 = () => {
             const hasTransformationPulse = artifacts.some(a => a.id === 'transformation-pulse');
             return (
               <div
-                onClick={() => {
-                  if (!hasTransformationPulse) {
-                    setInfoModalMessage(t('artifacts.transformation_pulse_alert'));
-                    setShowInfoModal(true);
-                  }
-                }}
                 className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
                   hasTransformationPulse
                     ? 'border-yellow-500/50 bg-yellow-500/10'
@@ -4445,10 +4427,6 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                onClick={() => {
-                  setInfoModalMessage(t('artifacts.echo_of_joy_alert'));
-                  setShowInfoModal(true);
-                }}
                 className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
               >
                 <div className="flex items-center gap-4">
@@ -4479,10 +4457,6 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                onClick={() => {
-                  setInfoModalMessage(t('artifacts.calm_power_alert'));
-                  setShowInfoModal(true);
-                }}
                 className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
               >
                 <div className="flex items-center gap-4">
@@ -4513,10 +4487,6 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                onClick={() => {
-                  setInfoModalMessage(t('artifacts.echo_of_power_alert'));
-                  setShowInfoModal(true);
-                }}
                 className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
               >
                 <div className="flex items-center gap-4">
