@@ -1542,7 +1542,7 @@ const OndaLevel1 = () => {
       return completedPractices[p.id]?.isValidForArtifact;
     });
 
-    if (allValidated && !artifacts.some(a => a.circuitId === circuit.id)) {
+    if (allValidated && circuit.artifact && !artifacts.some(a => a.circuitId === circuit.id)) {
       setTimeout(() => {
         setArtifacts(prev => [...prev, {
           ...circuit.artifact,
@@ -4504,7 +4504,16 @@ const OndaLevel1 = () => {
           <div className="mt-8 mb-12">
             <h3 className="text-2xl font-bold mb-4">{t('artifacts.your_artifacts')}</h3>
             <div className="grid md:grid-cols-3 gap-4">
-              {artifacts.map((artifact, idx) => {
+              {artifacts
+                .filter(artifact => {
+                  // Скрыть артефакты для частей где circuit.artifact === null
+                  if (artifact.circuitId) {
+                    const circuit = circuits.find(c => c.id === artifact.circuitId);
+                    if (!circuit?.artifact) return false;
+                  }
+                  return true;
+                })
+                .map((artifact, idx) => {
                 // Определяем имя и описание артефакта
                 let artifactName = '';
                 let artifactDesc = '';
