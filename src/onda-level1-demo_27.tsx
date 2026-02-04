@@ -4360,87 +4360,56 @@ const OndaLevel1 = () => {
             );
           })()}
 
-          {/* Артефакт - Эхо Радости (Part 4) */}
-          {(() => {
+          {/* Артефакт - Эхо Радости (только Part 4, пока не взят) */}
+          {activeCircuit === 4 && !artifacts.some(a => a.id === 'echo-of-joy') && (() => {
             const part4PerfectCount = practiceHistory.filter(p => 
               p.practiceId?.startsWith('p4-') && p.quality >= 100
             ).length;
-            const hasEchoOfJoy = artifacts.some(a => a.id === 'echo-of-joy');
             return (
               <div
                 onClick={() => {
-                  if (!hasEchoOfJoy) {
-                    setInfoModalMessage(t('artifacts.echo_of_joy_alert'));
-                    setShowInfoModal(true);
-                  }
+                  setInfoModalMessage(t('artifacts.echo_of_joy_alert'));
+                  setShowInfoModal(true);
                 }}
-                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
-                  hasEchoOfJoy
-                    ? 'border-yellow-500/50 bg-yellow-500/10'
-                    : 'border-purple-500/50 bg-purple-500/10'
-                }`}
+                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
               >
                 <div className="flex items-center gap-4">
-                  {hasEchoOfJoy ? (
-                    <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
-                  ) : (
-                    <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
-                  )}
+                  <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
                   <div className="flex-1">
                     <h3 className="text-xl font-bold mb-1">{t('artifacts.echo_of_joy')}</h3>
                     <p className="text-sm text-gray-400 mb-2">
                       {t('artifacts.echo_of_joy_desc')}
                     </p>
-                    {hasEchoOfJoy ? (
+                    <div>
+                      <div className="text-gray-400 text-sm mb-1">
+                        {t('artifacts.progress')}: {part4PerfectCount}/3 {t('artifacts.practices_100')}
+                      </div>
                       <div className="text-emerald-400">
                         {t('labels.bonus')}: +50% {t('labels.to_qnt_generation')}
                       </div>
-                    ) : (
-                      <div>
-                        <div className="text-gray-400 text-sm mb-1">
-                          {t('artifacts.progress')}: {part4PerfectCount}/3 {t('artifacts.practices_100')}
-                        </div>
-                        <div className="text-emerald-400">
-                          {t('labels.bonus')}: +50% {t('labels.to_qnt_generation')}
-                        </div>
-                      </div>
-                    )}
+                    </div>
                   </div>
                 </div>
               </div>
             );
           })()}
 
-          {/* Артефакт - Ритм Жизни */}
-          <div
-            onClick={() => {
-              if (rhythmProgress < 7) {
+          {/* Артефакт - Ритм Жизни (только Parts 1-3, пока не взят) */}
+          {activeCircuit <= 3 && rhythmProgress < 7 && (
+            <div
+              onClick={() => {
                 setInfoModalMessage(t('artifacts.life_rhythm_alert'));
                 setShowInfoModal(true);
-              }
-            }}
-            className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
-              rhythmProgress >= 7
-                ? 'border-yellow-500/50 bg-yellow-500/10'
-                : 'border-purple-500/50 bg-purple-500/10'
-            }`}
-          >
-            <div className="flex items-center gap-4">
-              {rhythmProgress >= 7 ? (
-                <Star className="w-12 h-12 text-yellow-400 fill-yellow-400" />
-              ) : (
+              }}
+              className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+            >
+              <div className="flex items-center gap-4">
                 <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
-              )}
-              <div className="flex-1">
-                <h3 className="text-xl font-bold mb-1">{t('artifacts.life_rhythm')}</h3>
-                <p className="text-sm text-gray-400 mb-2">
-                  {t('artifacts.life_rhythm_desc')}
-                </p>
-                {rhythmProgress >= 7 ? (
-                  <div className="text-emerald-400">
-                    {t('labels.bonus')}: +100% {t('labels.to_qnt_generation')}
-                  </div>
-                ) : (
+                <div className="flex-1">
+                  <h3 className="text-xl font-bold mb-1">{t('artifacts.life_rhythm')}</h3>
+                  <p className="text-sm text-gray-400 mb-2">
+                    {t('artifacts.life_rhythm_desc')}
+                  </p>
                   <div>
                     <div className="text-gray-400 text-sm mb-1">
                       {t('artifacts.progress')}: {rhythmProgress}/7 {t('artifacts.days')}
@@ -4449,10 +4418,10 @@ const OndaLevel1 = () => {
                       {t('labels.bonus')}: +100% {t('labels.to_qnt_generation')}
                     </div>
                   </div>
-                )}
+                </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
 
         <div className="mt-8 p-4 sm:p-8">
