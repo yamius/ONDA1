@@ -332,6 +332,46 @@ const OndaLevel1 = () => {
     }
   }, [practiceHistory, artifacts]);
 
+  // Добавляем артефакт "Спокойная Сила" за 6 практик части 5 с качеством 100%
+  const CALM_POWER_ARTIFACT_ID = 'calm-power';
+  useEffect(() => {
+    const hasCalmPowerArtifact = artifacts.some(a => a.id === CALM_POWER_ARTIFACT_ID);
+    // Считаем практики части 5 (p5-*) с качеством 100%
+    const part5PerfectPractices = practiceHistory.filter(p => 
+      p.practiceId?.startsWith('p5-') && p.quality >= 100
+    ).length;
+    
+    if (part5PerfectPractices >= 6 && !hasCalmPowerArtifact) {
+      console.log('[App] Calm Power artifact unlocked! +20% OND bonus');
+      setArtifacts(prev => [...prev, {
+        id: CALM_POWER_ARTIFACT_ID,
+        name: t('artifacts.calm_power'),
+        bonus: 20,
+        isCalmPower: true
+      }]);
+    }
+  }, [practiceHistory, artifacts]);
+
+  // Добавляем артефакт "Эхо Власти" за 12 практик части 5 с качеством 100%
+  const ECHO_OF_POWER_ARTIFACT_ID = 'echo-of-power';
+  useEffect(() => {
+    const hasEchoOfPowerArtifact = artifacts.some(a => a.id === ECHO_OF_POWER_ARTIFACT_ID);
+    // Считаем практики части 5 (p5-*) с качеством 100%
+    const part5PerfectPractices = practiceHistory.filter(p => 
+      p.practiceId?.startsWith('p5-') && p.quality >= 100
+    ).length;
+    
+    if (part5PerfectPractices >= 12 && !hasEchoOfPowerArtifact) {
+      console.log('[App] Echo of Power artifact unlocked! +50% OND bonus');
+      setArtifacts(prev => [...prev, {
+        id: ECHO_OF_POWER_ARTIFACT_ID,
+        name: t('artifacts.echo_of_power'),
+        bonus: 50,
+        isEchoOfPower: true
+      }]);
+    }
+  }, [practiceHistory, artifacts]);
+
   useEffect(() => {
     const loadUserData = async () => {
       try {
@@ -1288,7 +1328,11 @@ const OndaLevel1 = () => {
       practices: [
         { id: 'p5-1', name: t('practice_items.mass_center'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.mass_center_desc') }
       ],
-      artifact: null
+      artifact: {
+        name: t('artifacts.territory_pulse'),
+        bonus: 20,
+        requirement: t('artifacts.requirement_part', { part: 5 })
+      }
     }
   ], [i18n.language]);
 
@@ -4406,6 +4450,74 @@ const OndaLevel1 = () => {
             );
           })()}
 
+          {/* Артефакт - Спокойная Сила (только Part 5, пока не взят) */}
+          {activeCircuit === 5 && !artifacts.some(a => a.id === 'calm-power') && (() => {
+            const part5PerfectCount = practiceHistory.filter(p => 
+              p.practiceId?.startsWith('p5-') && p.quality >= 100
+            ).length;
+            return (
+              <div
+                onClick={() => {
+                  setInfoModalMessage(t('artifacts.calm_power_alert'));
+                  setShowInfoModal(true);
+                }}
+                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+              >
+                <div className="flex items-center gap-4">
+                  <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-1">{t('artifacts.calm_power')}</h3>
+                    <p className="text-sm text-gray-400 mb-2">
+                      {t('artifacts.calm_power_desc')}
+                    </p>
+                    <div>
+                      <div className="text-gray-400 text-sm mb-1">
+                        {t('artifacts.progress')}: {part5PerfectCount}/6 {t('artifacts.practices_100')}
+                      </div>
+                      <div className="text-emerald-400">
+                        {t('labels.bonus')}: +20% {t('labels.to_qnt_generation')}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+
+          {/* Артефакт - Эхо Власти (только Part 5, пока не взят) */}
+          {activeCircuit === 5 && !artifacts.some(a => a.id === 'echo-of-power') && (() => {
+            const part5PerfectCount = practiceHistory.filter(p => 
+              p.practiceId?.startsWith('p5-') && p.quality >= 100
+            ).length;
+            return (
+              <div
+                onClick={() => {
+                  setInfoModalMessage(t('artifacts.echo_of_power_alert'));
+                  setShowInfoModal(true);
+                }}
+                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+              >
+                <div className="flex items-center gap-4">
+                  <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-1">{t('artifacts.echo_of_power')}</h3>
+                    <p className="text-sm text-gray-400 mb-2">
+                      {t('artifacts.echo_of_power_desc')}
+                    </p>
+                    <div>
+                      <div className="text-gray-400 text-sm mb-1">
+                        {t('artifacts.progress')}: {part5PerfectCount}/12 {t('artifacts.practices_100')}
+                      </div>
+                      <div className="text-emerald-400">
+                        {t('labels.bonus')}: +50% {t('labels.to_qnt_generation')}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+
           {/* Артефакт - Ритм Жизни (только Parts 1-3, пока не взят) */}
           {activeCircuit <= 3 && rhythmProgress < 7 && (
             <div
@@ -4544,6 +4656,12 @@ const OndaLevel1 = () => {
                 } else if (artifact.id === 'echo-of-joy') {
                   artifactName = t('artifacts.echo_of_joy');
                   artifactDesc = t('artifacts.echo_of_joy_desc');
+                } else if (artifact.id === 'calm-power') {
+                  artifactName = t('artifacts.calm_power');
+                  artifactDesc = t('artifacts.calm_power_desc');
+                } else if (artifact.id === 'echo-of-power') {
+                  artifactName = t('artifacts.echo_of_power');
+                  artifactDesc = t('artifacts.echo_of_power_desc');
                 } else {
                   const circuit = circuits.find(c => c.id === artifact.circuitId);
                   artifactName = circuit?.artifact?.name || artifact.name || 'Artifact';
