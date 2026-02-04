@@ -4022,10 +4022,12 @@ const OndaLevel1 = () => {
 
         <div className="grid md:grid-cols-2 gap-4 mb-8">
           {currentCircuit.practices.map(practice => {
-            const isCompleted = completedPractices[practice.id];
+            const completedData = completedPractices[practice.id];
+            const bestQuality = completedData ? (completedData.quality || 0) : 0;
+            // Практика считается пройденной только если качество > 0
+            const isCompleted = completedData && bestQuality > 0 ? completedData : null;
             const bonus = calculateBonus();
             const earnedQnt = Math.floor(practice.maxQnt * (1 + bonus / 100));
-            const bestQuality = isCompleted ? (isCompleted.quality || 0) : 0;
             const sessions = getPracticeSessions(practice.id);
             const isExpanded = expandedPractice === practice.id;
 
