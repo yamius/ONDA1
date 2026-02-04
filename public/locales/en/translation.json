@@ -202,7 +202,8 @@
     "breath_of_adaptation_message": "Inhale — accept conditions, exhale — strengthen support. Find your working rhythm.",
     "soft_gaze_message": "Let your eyes look not at a point — but into space. Let the world unfold before you.",
     "orienting_inhale_message": "Inhale sharply and keenly, as if trying to catch a faint scent of change. Let this breath bring you back from the labyrinth of thoughts to the real world.",
-    "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point."
+    "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
+    "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -306,7 +307,9 @@
     "orienting_inhale": "Orienting Inhale",
     "orienting_inhale_desc": "Instantly restore mental clarity through attention activation",
     "mass_center": "Mass of Center",
-    "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing"
+    "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
+    "vagal_brake": "Vagal Brake",
+    "vagal_brake_desc": "Instantly stop emotional surge and regain control over your state"
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1079,6 +1082,18 @@
       "Breathe into the lower center. Let each exhale wash away the fuss, leaving only cold, calm confidence.",
       "Feel how testosterone fills your tissues, and cortisol melts, turning into pure energy of presence.",
       "Keep this feeling of 'heavy center' even when you start moving or speaking."
+    ],
+    "p5_2": [
+      "Pause your movement. Deep breath.",
+      "Close your eyes and gently touch your fingers to your eyelids. The pressure should be gentle, barely noticeable — like touching a petal.",
+      "Or find the hollows behind your earlobes. Begin slow circular movements, warming this area.",
+      "Feel how with this simple gesture, a 'brake' switches on inside.",
+      "Your heart hears this signal and begins to beat slower, calmer, stronger.",
+      "Imagine you're turning down the volume on a too-loud radio. The noise of thoughts fades.",
+      "The autonomic system switches: from fuss — to contemplation, from defense — to presence.",
+      "With each exhale, warmth from the massage or softness in your eyes spreads throughout your body.",
+      "You are no longer a prisoner of reaction. You are the one who presses the button and chooses peace.",
+      "Stay in this darkness or this warmth for a few more seconds, completely releasing residual tension."
     ]
   },
   "final_phrases": {
@@ -1120,7 +1135,8 @@
     "p3_12": "When breath accepts and anchors, environment becomes your ally.",
     "p4_1": "When your gaze is embraced by the silence of the horizon, the world ceases to be a threat and becomes a space for your expression.",
     "p4_2": "When you actively perceive the world, anxiety loses its power over you. Your nose is a navigator that will always guide you from the storm of emotions to clarity.",
-    "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence."
+    "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
+    "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
   },
   "science_info": {
     "p4_1": [
@@ -1139,6 +1155,12 @@
       "Biology: Suppression of the hypothalamic-pituitary-adrenal (HPA) axis. Research confirms that such exposure reduces cortisol by 25% and increases testosterone by 20%.",
       "Bio-marker: Stimulation of the Ventral Vagus. Extended exhale is a direct signal to the brain about safety, stabilizing heart rate variability (HRV).",
       "Effect: A feeling of 'inner weight' emerges — the biological basis of calm dominance."
+    ],
+    "p5_2": [
+      "Action: Gently press fingertips on closed eyelids for 10-20 seconds or softly massage the warm area behind the ears (at the base of the skull).",
+      "Biology: Activation of parasympathetic tone through cranial nerves (Aschner-Dagnini reflex).",
+      "Bio-marker: Reduction in heart rate and normalization of heart rate variability (HRV).",
+      "Effect: Instant cooling of the 'emotional engine', transition from anxiety mode to cold calculation mode."
     ]
   },
   "level_goal": {

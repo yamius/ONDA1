@@ -1216,6 +1216,17 @@ const OndaLevel1 = () => {
       guidingTexts: t('guiding_texts.p5_1', { returnObjects: true }) as string[],
       finalPhrase: t('final_phrases.p5_1'),
       scienceInfo: t('science_info.p5_1', { returnObjects: true }) as string[]
+    },
+    'p5-2': {
+      colors: 'from-slate-800 via-slate-700 to-slate-600',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.vagal_brake_message'),
+      ambientSound: t('elements.silence'),
+      visual: '🫀',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p5_2', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p5_2'),
+      scienceInfo: t('science_info.p5_2', { returnObjects: true }) as string[]
     }
   }), [i18n.language]);
 
@@ -1326,7 +1337,8 @@ const OndaLevel1 = () => {
       color: 'from-stone-700 to-stone-500',
       icon: Shield,
       practices: [
-        { id: 'p5-1', name: t('practice_items.mass_center'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.mass_center_desc') }
+        { id: 'p5-1', name: t('practice_items.mass_center'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.mass_center_desc') },
+        { id: 'p5-2', name: t('practice_items.vagal_brake'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.vagal_brake_desc') }
       ],
       artifact: {
         name: t('artifacts.territory_pulse'),
@@ -1692,7 +1704,8 @@ const OndaLevel1 = () => {
       'p3-12': 'practice_items.breath_of_adaptation',
       'p4-1': 'practice_items.soft_gaze',
       'p4-2': 'practice_items.orienting_inhale',
-      'p5-1': 'practice_items.mass_center'
+      'p5-1': 'practice_items.mass_center',
+      'p5-2': 'practice_items.vagal_brake'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -1737,7 +1750,8 @@ const OndaLevel1 = () => {
       'p2-12': 'practice_items.echo_ocean_desc',
       'p4-1': 'practice_items.soft_gaze_desc',
       'p4-2': 'practice_items.orienting_inhale_desc',
-      'p5-1': 'practice_items.mass_center_desc'
+      'p5-1': 'practice_items.mass_center_desc',
+      'p5-2': 'practice_items.vagal_brake_desc'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -1782,7 +1796,8 @@ const OndaLevel1 = () => {
       'p2-12': 'practice_messages.echo_ocean_message',
       'p4-1': 'practice_messages.soft_gaze_message',
       'p4-2': 'practice_messages.orienting_inhale_message',
-      'p5-1': 'practice_messages.mass_center_message'
+      'p5-1': 'practice_messages.mass_center_message',
+      'p5-2': 'practice_messages.vagal_brake_message'
     };
     return t(mapping[practiceId] || '');
   };
