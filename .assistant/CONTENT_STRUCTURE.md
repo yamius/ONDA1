@@ -30,6 +30,86 @@ practices: [
 
 ---
 
+## 📋 ТЕКУЩЕЕ СОСТОЯНИЕ ЧАСТЕЙ
+
+### Созданные части (на февраль 2026)
+
+| Part | Название | Level | Статус | Практики |
+|------|----------|-------|--------|----------|
+| **Part 1** | Я Есть | Body (TERRA) | ✅ Полная | 12 практик |
+| **Part 2** | Я Двигаюсь | Body (TERRA) | ✅ Полная | 12 практик |
+| **Part 3** | Я Адаптируюсь | Body (TERRA) | ✅ Полная | 12 практик |
+| **Part 4** | Я Маневрирую | Emotions (AQUA) | ✅ Контент есть | 2 практики |
+| **Part 5** | Я Охраняю Территорию | Emotions (AQUA) | ✅ Контент есть | ⏳ Ждём практики |
+| Part 6-12 | — | — | ❌ Не созданы | — |
+
+### Где искать части в коде
+
+#### 1. Главный компонент: `src/onda-level1-demo_27.tsx`
+
+**Массив `circuits`** (~строка 1230-1310):
+```typescript
+const circuits = useMemo(() => [
+  { id: 1, name: t('circuits.circuit_1_name'), ... },
+  { id: 2, name: t('circuits.circuit_2_name'), ... },
+  { id: 3, name: t('circuits.circuit_3_name'), ... },
+  { id: 4, name: t('circuits.circuit_4_name'), ... },
+  { id: 5, name: t('circuits.circuit_5_name'), ... },  // ← Part 5 здесь
+], [i18n.language]);
+```
+
+**Объект `practiceSpaces`** (~строка 1100-1170):
+```typescript
+const practiceSpaces = useMemo(() => ({
+  'p1-1': { colors: '...', element: 'TERRA', ... },
+  'p4-1': { ... },
+  'p4-2': { ... },
+  // Part 5 practices: ждём данные от пользователя
+}), [i18n.language]);
+```
+
+**Цветовые условия** (поиск `activeCircuit === 5`):
+```bash
+grep -n "activeCircuit === 5" src/onda-level1-demo_27.tsx
+```
+
+#### 2. Переводы: `public/locales/{lang}/translation.json`
+
+**Ключи для Part N:**
+```
+circuits.circuit_N_name        — Название
+circuits.circuit_N_title       — Заголовок  
+circuits.circuit_N_subtitle    — Подзаголовок
+circuits.circuit_N_desc        — Описание
+circuits.circuit_N_chapter     — Глава
+
+philosophy.level_N.text_1..6   — Поэтический текст
+level_goal.level_N.*           — Цели и задачи
+terra_speaks.level_N.quote_1..4 — Цитаты элемента
+terra_final.level_N.line_1..3  — Финальное напутствие
+
+quote_level_N                  — Эпиграф части
+```
+
+**Проверить наличие переводов:**
+```bash
+grep -c "level_5" public/locales/ru/translation.json  # Должно быть > 0
+grep -c "level_5" public/locales/en/translation.json  # Должно быть > 0
+```
+
+#### 3. Быстрая проверка Part 5
+
+```bash
+# Проверить что Part 5 есть в circuits
+grep -A5 "id: 5," src/onda-level1-demo_27.tsx
+
+# Проверить переводы Part 5
+grep "circuit_5" public/locales/ru/translation.json
+grep "level_5" public/locales/ru/translation.json | head -20
+```
+
+---
+
 ## 🔗 Связь Уровней (Levels) и Частей (Parts)
 
 ### Терминология
