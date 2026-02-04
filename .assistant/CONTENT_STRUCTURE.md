@@ -204,6 +204,27 @@ circuits.circuit_N_chapter  — К какой главе относится ("Г
 
 **ВАЖНО:** Каждая часть должна иметь согласованную цветовую палитру. Цвета задаются в `onda-level1-demo_27.tsx` через условия `activeCircuit === N`.
 
+### ⚠️ Правило для кнопки перехода
+
+**Кнопка "Go to Part X" / "Перейти к Части X"** должна быть в цветовой схеме **ЦЕЛЕВОЙ части** (куда идёт переход), а не текущей.
+
+Пример: находимся на Part 2, кнопка "Go to Part 3" — **оранжевая** (цвет Part 3).
+
+```typescript
+// В terra_final секции, кнопка перехода:
+// activeCircuit + 1 определяет цвет кнопки
+const nextPart = activeCircuit + 1;
+// Цвет кнопки = цвет nextPart
+```
+
+| Текущая Part | Кнопка | Цвет кнопки |
+|--------------|--------|-------------|
+| Part 1 | "Go to Part 2" | Cyan (Part 2) |
+| Part 2 | "Go to Part 3" | Amber/Orange (Part 3) |
+| Part 3 | "Go to Part 4" | Teal (Part 4) |
+| Part 4 | "Go to Part 5" | Stone (Part 5) |
+| Part 5 | "Go to Part 6" | Rose/Pink (Part 6) |
+
 ### Существующие палитры
 
 | Part | Основной цвет | Примеры классов |

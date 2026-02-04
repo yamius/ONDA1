@@ -4660,7 +4660,9 @@ const OndaLevel1 = () => {
                     : activeCircuit + 1 === 4
                     ? 'bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white border-2 border-teal-300/50'
                     : activeCircuit + 1 === 5
-                    ? 'bg-gradient-to-r from-slate-600 to-stone-600 hover:from-slate-500 hover:to-stone-500 text-white border-2 border-slate-300/50'
+                    ? 'bg-gradient-to-r from-stone-600 to-stone-500 hover:from-stone-500 hover:to-stone-400 text-white border-2 border-stone-300/50'
+                    : activeCircuit + 1 === 6
+                    ? 'bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 text-white border-2 border-rose-300/50'
                     : 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-2 border-purple-300/50'
                 }`}
               >
