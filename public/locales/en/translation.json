@@ -22,6 +22,7 @@
   "quote_level_3": "Form is born where<br/>earth and water meet",
   "quote_level_4": "Emotion is a current,<br/>it teaches movement in invisible space",
   "quote_level_5": "Presence is stronger than any movement.",
+  "quote_level_6": "Connection is born where<br/>you feel others without losing yourself.",
   "you": "You",
   "nav": {
     "home": "Home",
@@ -105,6 +106,11 @@
     "circuit_5_subtitle": "Large Mammal / Strength and Boundaries",
     "circuit_5_desc": "Awareness of strength and space.<br/>Not attack, not defense — a clear feeling: 'I am here, and this is my place'.<br/>A point of calm dominance, where power needs no proof.",
     "circuit_5_chapter": "Chapter 2: Emotions (AQUA)",
+    "circuit_6_name": "I Am in the Pack",
+    "circuit_6_title": "I Am in the Pack",
+    "circuit_6_subtitle": "Primate / Connection and Social Resonance",
+    "circuit_6_desc": "Awareness of connection and presence among others.<br/>Not dissolution, not domination — the ability to be in the field.<br/>A point of social balance, where emotions become language.",
+    "circuit_6_chapter": "Chapter 2: Emotions (AQUA)",
     "circuit_4_name": "I Maneuver",
     "circuit_4_subtitle": "Small Mammal / Agility and Evasion",
     "circuit_4_desc": "Awareness of mobility and reaction.<br/>Not attack, not freezing — the ability to change trajectory.<br/>A point of living adaptation, where movement is born before thought.",
@@ -517,6 +523,14 @@
       "text_4": "You learn to stand and hold your place.",
       "text_5": "Not shrinking, not inflating.",
       "text_6": "Simply — being and holding."
+    },
+    "level_6": {
+      "text_1": "The body becomes attentive and alive.",
+      "text_2": "Gaze — mobile. Gesture — precise.",
+      "text_3": "You begin to feel others with your body: by breath, by pause, by direction of attention.",
+      "text_4": "Space fills with signals.",
+      "text_5": "You learn to be near. Not merging, not closing off.",
+      "text_6": "Simply — being in a shared rhythm."
     }
   },
   "goals": {
@@ -1251,6 +1265,23 @@
       "wisdom_2": "Enough to stand and feel the ground beneath you.",
       "wisdom_3": "In this calm, status is born. In this weight — confidence.",
       "wisdom_4": "In this silence — power."
+    },
+    "level_6": {
+      "intro": "Learn to be in the pack — read the field. Feel where you're needed. Where to step back. And where — to strengthen presence.",
+      "game_task": "Game and energetic task — activation of the Connection field (AQUA resonance).",
+      "principle_1": "Connection is not words. It's a subtle tuning.",
+      "principle_2": "Emotions cease to be personal flashes — they become means of contact.",
+      "principle_3": "The world becomes a living network where every response changes the collective movement.",
+      "story_1": "The world ceases to be a set of separate figures.",
+      "story_2": "You feel: you are seen. You see.",
+      "story_3": "And between this, trust arises.",
+      "identity_1": "You are the Primate, a form of connection on land.",
+      "identity_2": "Breath synchronizes. Inhale expands the field of attention.",
+      "identity_3": "Exhale attunes you to others.",
+      "wisdom_1": "No need to pull toward yourself. No need to disappear.",
+      "wisdom_2": "Enough to be in resonance.",
+      "wisdom_3": "In this connection, safety is born. In this tuning — belonging.",
+      "wisdom_4": "In this field — life."
     }
   },
   "terra_speaks": {
@@ -1284,6 +1315,12 @@
       "quote_2": "Boundaries are a form of respect for yourself and the world.",
       "quote_3": "Those who stand confidently don't need to fight.",
       "quote_4": "Your density is your language."
+    },
+    "level_6": {
+      "quote_1": "Connection begins with sensitivity.",
+      "quote_2": "Those who hear the field rarely remain alone.",
+      "quote_3": "Popularity is the ability to be in rhythm.",
+      "quote_4": "The pack holds together not by force, but by attention."
     }
   },
   "terra_final": {
@@ -1317,6 +1354,13 @@
       "line_1": "Now you know how to hold space and maintain your center under pressure.",
       "line_2": "Your strength has become calm, and your boundaries — clear.",
       "line_3": "You are ready to go further — toward meeting others, toward the language of the pack, toward the rhythm of connection."
+    },
+    "level_6": {
+      "line_1": "Now you know how to be among others without losing your center.",
+      "line_2": "Your sensitivity has become connection, and emotions — a language of contact.",
+      "line_3": "You have completed the path of AQUA — the path of emotions, strength, and connection.",
+      "line_4": "Ahead — air and thought. Ahead — discernment and choice.",
+      "line_5": "You are ready to transition to AER."
     }
   },
   "adaptive_practices": {
