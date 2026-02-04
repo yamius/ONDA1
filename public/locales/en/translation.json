@@ -495,6 +495,14 @@
       "text_4": "You learn to shift, dodge, change direction.",
       "text_5": "Not with a jerk — but instantly and softly.",
       "text_6": "Not fleeing — but finding a more precise place."
+    },
+    "level_5": {
+      "text_1": "The body becomes denser and heavier.",
+      "text_2": "Muscles gather into readiness.",
+      "text_3": "Earth feels like a foundation, space — like an extension of you.",
+      "text_4": "You learn to stand and hold your place.",
+      "text_5": "Not shrinking, not inflating.",
+      "text_6": "Simply — being and holding."
     }
   },
   "goals": {
@@ -1172,6 +1180,23 @@
       "wisdom_2": "Enough to be mobile and attentive.",
       "wisdom_3": "In this mobility, safety is born. In this flexibility — stability.",
       "wisdom_4": "In this choice — life."
+    },
+    "level_5": {
+      "intro": "Learn to hold territory — feel boundaries with your body. Stabilize the center of power, withstand pressure, and maintain dignity without aggression.",
+      "game_task": "Game and energetic task — activation of the Power field (AQUA presence).",
+      "principle_1": "Strength is no longer a flash — it is background, density, presence.",
+      "principle_2": "Emotions become guides: where the boundary is, where contact is, where to step back.",
+      "principle_3": "Mass is not a burden — it is stability.",
+      "story_1": "The world no longer seems chaotic.",
+      "story_2": "It divides into zones of proximity and distance, warmth and tension.",
+      "story_3": "You feel the weight of your body and understand: mass is stability.",
+      "identity_1": "You are the Large Mammal, a form of power on land.",
+      "identity_2": "Breath becomes lower. Inhale gathers strength in the center.",
+      "identity_3": "Exhale calmly marks boundaries.",
+      "wisdom_1": "No need to prove. No need to attack.",
+      "wisdom_2": "Enough to stand and feel the ground beneath you.",
+      "wisdom_3": "In this calm, status is born. In this weight — confidence.",
+      "wisdom_4": "In this silence — power."
     }
   },
   "terra_speaks": {
@@ -1199,6 +1224,12 @@
       "quote_2": "Agility is the wisdom of the body.",
       "quote_3": "Flexibility saves where strength breaks.",
       "quote_4": "Space helps those who feel it."
+    },
+    "level_5": {
+      "quote_1": "Strength doesn't shout — it is felt.",
+      "quote_2": "Boundaries are a form of respect for yourself and the world.",
+      "quote_3": "Those who stand confidently don't need to fight.",
+      "quote_4": "Your density is your language."
     }
   },
   "terra_final": {
@@ -1227,6 +1258,11 @@
       "line_1": "Now you know how to change trajectory without losing yourself.",
       "line_2": "Your mobility has become conscious, and your reactions — precise.",
       "line_3": "You are ready to go further — toward strength and boundaries, toward weight and status, toward calm presence."
+    },
+    "level_5": {
+      "line_1": "Now you know how to hold space and maintain your center under pressure.",
+      "line_2": "Your strength has become calm, and your boundaries — clear.",
+      "line_3": "You are ready to go further — toward meeting others, toward the language of the pack, toward the rhythm of connection."
     }
   },
   "adaptive_practices": {
