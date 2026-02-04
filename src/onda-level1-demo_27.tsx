@@ -1317,11 +1317,11 @@ const OndaLevel1 = () => {
       const circuit = circuits.find(c => c.practices.some(p => p.id === practiceId));
       const allCompleted = circuit.practices.every(p => completedPractices[p.id] || p.id === practiceId);
       
-      if (allCompleted && !artifacts.some(a => a.circuitId === circuit.id)) {
+      if (allCompleted && circuit.artifact && !artifacts.some(a => a.circuitId === circuit.id)) {
         setTimeout(() => {
           setArtifacts(prev => [...prev, {
             circuitId: circuit.id,
-            bonus: circuit.artifact.bonus
+            bonus: circuit.artifact!.bonus
           }]);
         }, 500);
       }
@@ -4187,6 +4187,7 @@ const OndaLevel1 = () => {
         {/* Все артефакты */}
         <div className="space-y-4 mb-12">
           {/* Артефакт контура (Roots of Being и т.д.) */}
+          {currentCircuit.artifact && (
           <div className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
             artifacts.some(a => a.circuitId === currentCircuit.id)
               ? 'border-yellow-500/50 bg-yellow-500/10'
@@ -4207,6 +4208,7 @@ const OndaLevel1 = () => {
               </div>
             </div>
           </div>
+          )}
           {/* Артефакт - Ясная Воля (только для части 1) */}
           {activeCircuit === 1 && (() => {
             const perfectCount = practiceHistory.filter(p => p.quality >= 100).length;
@@ -4554,8 +4556,8 @@ const OndaLevel1 = () => {
                   artifactDesc = t('artifacts.echo_of_joy_desc');
                 } else {
                   const circuit = circuits.find(c => c.id === artifact.circuitId);
-                  artifactName = circuit?.artifact.name || artifact.name || 'Artifact';
-                  artifactDesc = circuit?.artifact.requirement || '';
+                  artifactName = circuit?.artifact?.name || artifact.name || 'Artifact';
+                  artifactDesc = circuit?.artifact?.requirement || '';
                 }
                 return (
                   <div
