@@ -223,7 +223,7 @@ const nextPart = activeCircuit + 1;
 | Part 2 | "Go to Part 3" | Amber/Orange (Part 3) |
 | Part 3 | "Go to Part 4" | Teal (Part 4) |
 | Part 4 | "Go to Part 5" | Stone (Part 5) |
-| Part 5 | "Go to Part 6" | Rose/Pink (Part 6) |
+| Part 5 | "Go to Part 6" | Emerald/Teal (Part 6) |
 
 ### Существующие палитры
 
@@ -233,6 +233,8 @@ const nextPart = activeCircuit + 1;
 | **Part 2** | Cyan | `bg-cyan-500/10`, `border-cyan-400/40`, `text-cyan-300` |
 | **Part 3** | Amber/Orange | `bg-amber-600/10`, `border-amber-500/40`, `text-amber-300` |
 | **Part 4** | Teal | `bg-teal-500/10`, `border-teal-400/40`, `text-teal-300` |
+| **Part 5** | Stone | `bg-stone-500/20`, `border-stone-400/50`, `text-stone-200` |
+| **Part 6** | Emerald/Teal (warm) | `bg-emerald-500/20`, `border-emerald-400/50`, `text-emerald-300` |
 
 ### Где нужно задать цвета для новой части
 
