@@ -494,7 +494,9 @@ const OndaLevel1 = () => {
           setActiveCircuit(progress.active_circuit || 1);
           setCompletedPractices(progress.completed_practices || {});
           setPracticeHistory(progress.practice_history || []);
-          setArtifacts(progress.artifacts || []);
+          // Миграция: удаляем старый артефакт Territory Pulse (circuitId: 5) для пересоздания с новыми параметрами
+          const migratedArtifacts = (progress.artifacts || []).filter((a: any) => a.circuitId !== 5);
+          setArtifacts(migratedArtifacts);
           setUnlockedAchievements(progress.unlocked_achievements || []);
           setBioMetrics(progress.bio_metrics || {
             heartRate: 72,
@@ -1341,8 +1343,8 @@ const OndaLevel1 = () => {
         { id: 'p5-2', name: t('practice_items.vagal_brake'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.vagal_brake_desc') }
       ],
       artifact: {
-        name: t('artifacts.territory_pulse'),
-        bonus: 20,
+        name: t('artifacts.territorys_pulse'),
+        bonus: 30,
         requirement: t('artifacts.requirement_part', { part: 5 })
       }
     }
