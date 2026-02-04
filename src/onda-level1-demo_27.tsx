@@ -4024,11 +4024,14 @@ const OndaLevel1 = () => {
           {currentCircuit.practices.map(practice => {
             const sessions = getPracticeSessions(practice.id);
             const completedData = completedPractices[practice.id];
+            // Лучшее качество из сессий или из completedData
+            const bestQuality = sessions.length > 0 
+              ? Math.max(...sessions.map(s => s.quality || 0), completedData?.quality || 0)
+              : (completedData?.quality || 0);
             // Практика считается начатой только если есть хотя бы одна сессия
-            const isCompleted = sessions.length > 0 ? completedData : null;
+            const isCompleted = sessions.length > 0 ? { ...completedData, quality: bestQuality } : null;
             const bonus = calculateBonus();
             const earnedQnt = Math.floor(practice.maxQnt * (1 + bonus / 100));
-            const bestQuality = isCompleted ? (isCompleted.quality || 0) : 0;
             const isExpanded = expandedPractice === practice.id;
 
             return (
