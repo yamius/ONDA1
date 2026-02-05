@@ -260,7 +260,8 @@
     "gravity_grounding_message": "Stop resisting gravity — let it become your strength. Become heavy, become part of the earth, become the one who cannot be moved.",
     "testosterone_vertical_message": "Stretch your power into a line. Become a bridge between earth and sky, turning your posture into an undeniable manifesto of calm power.",
     "protected_heart_message": "Find your anchor point. Let the warmth of your hand create a zone of absolute peace where your feelings and your strength are born.",
-    "silent_roar_message": "Give your strength a voice. Let the low vibration of your body fill the space, securing your right to territory and silence."
+    "silent_roar_message": "Give your strength a voice. Let the low vibration of your body fill the space, securing your right to territory and silence.",
+    "territorial_gaze_message": "Look not at the world, but through it. Your gaze is not a search for threats, it's an inventory of your domain."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -396,7 +397,9 @@
     "protected_heart": "Protected Heart",
     "protected_heart_desc": "Strengthen the inner center of safety and activate neuroimmune protection.",
     "silent_roar": "Silent Roar",
-    "silent_roar_desc": "Express inner strength and finally stabilize the nervous system through sound resonance."
+    "silent_roar_desc": "Express inner strength and finally stabilize the nervous system through sound resonance.",
+    "territorial_gaze": "Territorial Gaze",
+    "territorial_gaze_desc": "Stabilize visual perception and assert your dominance in space."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1477,6 +1480,28 @@
       "Resonate with every cell.",
       "Feel how after the sound comes a ringing, quality silence.",
       "This is the silence of a predator who is calm and confident."
+    ],
+    "p5_8": [
+      "Choose an object right in front of you — at a distance of 1-2 meters",
+      "Focus on it for 5-8 seconds. Examine its details, but don't strain your eyes.",
+      "Simply note: 'This is here'",
+      "Then smoothly shift your gaze to the farthest point beyond it — the horizon, far wall, window",
+      "Let your gaze 'shoot through' the space and go into the distance. Look as deeply as possible",
+      "Hold focus for 5-8 seconds",
+      "Feel how when transitioning to the far point, your inner space expands",
+      "You are not just looking — you are covering with your attention everything between you and the horizon",
+      "Your gaze is calm, heavy and confident. You are the master surveying your lands",
+      "Focus again on the object in front of you for 5-8 seconds",
+      "See new details in it",
+      "Then again let your gaze 'shoot through' the space and go into the distance",
+      "Look as deeply as possible",
+      "Notice how with panoramic gaze the bustle of thoughts disappears",
+      "The world becomes a backdrop to your power",
+      "Repeat shifting your gaze to the near object again",
+      "5-7 seconds and smoothly shift your gaze to the farthest point beyond it again",
+      "Once more… Object nearby — pause — gaze to the horizon",
+      "Close — control. Far — perspective",
+      "Feel how your shoulders and neck relax when your gaze becomes 'wide'"
     ]
   },
   "final_phrases": {
@@ -1534,7 +1559,8 @@
     "p5_4": "When you are grounded by gravity, the world stops being a storm and becomes just a landscape around your monolith. Your stability is your true nature.",
     "p5_5": "When your vertical is built, stress cannot bend you. Your posture is your biological truth, in which there is no room for doubt.",
     "p5_6": "When your center is protected from within, external storms lose their power. Your chest is a shield always with you, and the source of your unshakeable confidence.",
-    "p5_7": "Your voice is a projection of your will. When you sound from the center of your power, the world quiets down to hear you. Your presence is now undeniable."
+    "p5_7": "Your voice is a projection of your will. When you sound from the center of your power, the world quiets down to hear you. Your presence is now undeniable.",
+    "p5_8": "Where your gaze reaches, foreign influence ends. You see everything, and this vision makes you invulnerable."
   },
   "science_info": {
     "p4_1": [
@@ -1645,6 +1671,12 @@
       "Biomechanics: Activation of the diaphragm and vocal cords, which are directly connected to the vagus nerve.",
       "Bio-marker: Reduction in cortisol levels and stimulation of oxytocin release through rhythmic chest vibration.",
       "Effect: Expression of strength in a socially acceptable way. Releasing blocks from throat and chest, gaining a 'commanding' voice that is listened to without objection."
+    ],
+    "p5_8": [
+      "Action: Choose an object in front of you (1-2 meters away), focus on it for 5-8 seconds. Then smoothly shift your gaze to the farthest point beyond it and hold focus for another 5-8 seconds. Repeat the cycle 3 times.",
+      "Physiology: Training accommodation and alternating work of the ciliary muscle. This stabilizes the visual system and reduces amygdala activity.",
+      "Bio-marker: Transition from 'tunnel vision' (a sign of stress) to panoramic view.",
+      "Effect: Reduction of environmental emotional pressure. You begin to perceive space not as hostile, but as belonging to you."
     ]
   },
   "level_goal": {
