@@ -25,6 +25,7 @@
   "quote_level_6": "Connection is born where<br/>you feel others without losing yourself.",
   "quote_level_7": "Clarity begins where<br/>you see the difference.",
   "quote_level_8": "The power of attention is born<br/>where you choose one.",
+  "quote_level_9": "Image is the bridge between thought and matter,<br/>light that illuminates the path before you lay it.",
   "you": "You",
   "nav": {
     "home": "Home",
@@ -123,6 +124,11 @@
     "circuit_8_subtitle": "The Gathering Human / Attention and Concentration",
     "circuit_8_desc": "Awareness of attention direction.<br/>Not tension, not control — the ability to hold what is chosen.<br/>The point of concentration, where thought ceases to scatter.",
     "circuit_8_chapter": "Chapter 3: Mind (AER)",
+    "circuit_9_name": "I Create Image",
+    "circuit_9_title": "I Create Image",
+    "circuit_9_subtitle": "The Creating Human / Architect of Inner Projections",
+    "circuit_9_desc": "Awareness of the power of imagination and synthesis.<br/>Not just data processing — the ability to see the whole in empty space.<br/>The point of cognitive breakthrough, where mind learns to design the future.",
+    "circuit_9_chapter": "Chapter 3: Mind (AER)",
     "circuit_4_name": "I Maneuver",
     "circuit_4_subtitle": "Small Mammal / Agility and Evasion",
     "circuit_4_desc": "Awareness of mobility and reaction.<br/>Not attack, not freezing — the ability to change trajectory.<br/>A point of living adaptation, where movement is born before thought.",
@@ -559,6 +565,14 @@
       "text_4": "How the body supports thought. How breath helps you stay here.",
       "text_5": "You learn to hold focus. Not squeezing the mind,",
       "text_6": "but allowing it to be clear and directed."
+    },
+    "level_9": {
+      "text_1": "Attention becomes light yet utterly precise.",
+      "text_2": "Inside you, a screen ignites where ideas gain color, density, and volume.",
+      "text_3": "You learn to 'see' the result not with eyes, but with your whole being.",
+      "text_4": "Space around becomes a field for creativity.",
+      "text_5": "Not copying reality — but adding meaning to it.",
+      "text_6": "Not wandering in fantasies — but creating a working sketch of life."
     }
   },
   "goals": {
@@ -1344,6 +1358,23 @@
       "wisdom_2": "In this concentration — effectiveness.",
       "wisdom_3": "In this choice — direction.",
       "wisdom_4": "In this focus — power."
+    },
+    "level_9": {
+      "intro": "Learn to create image — stop acting 'blindly'. Maintain inspiration even in routine, seeing the final goal. Choose movement based on an inner sketch of beauty.",
+      "game_task": "Game and energetic task — activation of the Image field (AER visualization).",
+      "principle_1": "Creating an image is not escape from reality. It is programming it.",
+      "principle_2": "Symbols become your language: a clear thought changes the state of the body.",
+      "principle_3": "A clear image is the shortest distance between dream and fact.",
+      "story_1": "The world unfolds as a canvas.",
+      "story_2": "You are no longer hostage to circumstances — you are the author of your perception.",
+      "story_3": "Not just an observer — but the director of your inner states.",
+      "identity_1": "You are the Creating Human, master of mental space.",
+      "identity_2": "Breath becomes deep and rhythmic. Inhale fills the picture with light.",
+      "identity_3": "Exhale allows the image to take its place in reality.",
+      "wisdom_1": "No need to hurry. No need to struggle.",
+      "wisdom_2": "Enough to see — and allow it to be.",
+      "wisdom_3": "In this vision — your true power.",
+      "wisdom_4": "In this image — your freedom."
     }
   },
   "terra_speaks": {
@@ -1395,6 +1426,12 @@
       "quote_2": "Where attention is, there you are.",
       "quote_3": "Concentration breeds stability.",
       "quote_4": "Focus releases energy."
+    },
+    "level_9": {
+      "quote_1": "What you can imagine already exists in your field of possibilities.",
+      "quote_2": "Thought becomes thing when it takes form in your heart.",
+      "quote_3": "Your imagination is a laboratory where your tomorrow is created.",
+      "quote_4": "Clarity of the picture inside determines ease of step outside."
     }
   },
   "terra_final": {
@@ -1447,6 +1484,13 @@
       "line_2": "Your clarity has become directed. Your mind — steady.",
       "line_3": "Ahead — a step into time.",
       "line_4": "Ahead — intention and route, image and future."
+    },
+    "level_9": {
+      "line_1": "Now you know how to see the invisible and give form to your intentions.",
+      "line_2": "Your mind has become a bright instrument of creation.",
+      "line_3": "You have completed the path of AER — the path of discernment, focus, and design.",
+      "line_4": "Ahead — the fire of interaction. Ahead — speech, exchange, and joint action.",
+      "line_5": "You are ready to transition to IGNIS."
     }
   },
   "adaptive_practices": {
