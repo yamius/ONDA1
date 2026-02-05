@@ -15,7 +15,7 @@
   "part_name_9": "I Shape the Vision",
   "part_name_10": "I Express",
   "part_name_11": "I Interact",
-  "part_name_12": "I Collaborate",
+  "part_name_12": "I Co-Create",
   "quote": "To move towards the light<br/>first you need to put down roots",
   "quote_level_1": "To move towards the light<br/>first you need to put down roots",
   "quote_level_2": "Movement is breath<br/>that has become body",
@@ -28,6 +28,7 @@
   "quote_level_9": "Image is the bridge between thought and matter,<br/>light that illuminates the path before you lay it.",
   "quote_level_10": "Expression is the moment<br/>when the inner takes form in the outer.",
   "quote_level_11": "Interaction is a dance<br/>in which two flames become a common hearth, without losing their color.",
+  "quote_level_12": "Co-creation begins where<br/>the result matters more than authorship.",
   "you": "You",
   "nav": {
     "home": "Home",
@@ -141,6 +142,11 @@
     "circuit_11_subtitle": "The Social Human / Master of Resonance",
     "circuit_11_desc": "Awareness of the value of exchange and partnership.<br/>Not just contact — but the ability to hear the world's responsive impulse.<br/>The point of social balance, where your 'I want' meets another person's 'I want'.",
     "circuit_11_chapter": "Chapter 4: Society (IGNIS)",
+    "circuit_12_name": "I Co-Create",
+    "circuit_12_title": "I Co-Create",
+    "circuit_12_subtitle": "The Cultural Human / Master of Synergy",
+    "circuit_12_desc": "Awareness of the power of collective creation.<br/>Not just working together — but the alchemy of shared meanings and goals.<br/>The highest point of social maturity, where you become the architect of a common future.",
+    "circuit_12_chapter": "Chapter 4: Society (IGNIS)",
     "circuit_4_name": "I Maneuver",
     "circuit_4_subtitle": "Small Mammal / Agility and Evasion",
     "circuit_4_desc": "Awareness of mobility and reaction.<br/>Not attack, not freezing — the ability to change trajectory.<br/>A point of living adaptation, where movement is born before thought.",
@@ -601,6 +607,14 @@
       "text_4": "You learn not only to transmit, but also to receive, creating the rhythm of communication.",
       "text_5": "Not dominating — but attuning.",
       "text_6": "Not adapting — but finding a common frequency."
+    },
+    "level_12": {
+      "text_1": "Attention becomes distributed and flowing.",
+      "text_2": "You feel the common rhythm of the group as your own pulse.",
+      "text_3": "The space around vibrates with ideas that amplify each other, resonating in everyone.",
+      "text_4": "You learn to weave your skills into the common fabric of the process without losing yourself.",
+      "text_5": "Not competing — but complementing.",
+      "text_6": "Not submitting — but co-acting."
     }
   },
   "goals": {
@@ -1437,6 +1451,23 @@
       "wisdom_2": "Enough to be sincere and attentive to the response.",
       "wisdom_3": "In this exchange, trust is born.",
       "wisdom_4": "In this encounter — life."
+    },
+    "level_12": {
+      "intro": "Learn to co-create — trust another's talent as much as your own. Maintain inspiration in the common flow, turning collective will into tangible form.",
+      "game_task": "Game and energetic task — activation of the Co-creation field (IGNIS synergy).",
+      "principle_1": "Co-creation is not just teamwork. It is a state where one plus one equals infinity.",
+      "principle_2": "Your ego steps back, making room for a shared result that is greater than the sum of its parts.",
+      "principle_3": "Creation is the highest form of expressing human potential.",
+      "story_1": "The world unfolds as a grand collaborative project.",
+      "story_2": "You are no longer alone in the void — you are a co-author of reality.",
+      "story_3": "Not just playing a role — but creating new cultural codes.",
+      "identity_1": "You are the Cultural Human, master of synergy in the fire of common purpose.",
+      "identity_2": "Breath becomes wide and free. Inhale absorbs the group's shared energy.",
+      "identity_3": "Exhale transforms it into action and result.",
+      "wisdom_1": "No need to hog the spotlight. No need to fear being lost.",
+      "wisdom_2": "Enough to be part of a living, creating flow.",
+      "wisdom_3": "In this unity, miracles are born.",
+      "wisdom_4": "In this legacy — life."
     }
   },
   "terra_speaks": {
@@ -1506,6 +1537,12 @@
       "quote_2": "Your flame shines brighter when it is reflected in the eyes of another.",
       "quote_3": "Interaction is a bridge you build from both sides simultaneously.",
       "quote_4": "To hear what is not said — the highest form of social agility."
+    },
+    "level_12": {
+      "quote_1": "Great deeds are never accomplished alone.",
+      "quote_2": "Co-creation is when your success becomes joy for everyone.",
+      "quote_3": "The most complex instrument is another person, but together you can play a symphony.",
+      "quote_4": "You are as rich as how much you can create together with others."
     }
   },
   "terra_final": {
@@ -1577,6 +1614,12 @@
       "line_2": "Your relationships have become a field for growth, and each contact — a conscious exchange.",
       "line_3": "You are ready to go further — to the peak of the social level, to the magic of joint action.",
       "line_4": "To the state of 'I CO-CREATE', where personal mastery becomes a shared miracle."
+    },
+    "level_12": {
+      "line_1": "Now you have mastered the art of being part of the great 'WE' without losing your 'I'.",
+      "line_2": "Your social path is complete — you have learned to shine, interact, and create in the world of people.",
+      "line_3": "But beyond the boundary of the social realm, something else opens up.",
+      "line_4": "You are ready to turn attention inward — to the consciousness of the BODY itself. TERRA II awaits you."
     }
   },
   "adaptive_practices": {
