@@ -252,6 +252,7 @@
     "distance_barrier_message": "The world ends where you begin. Feel the transparent but strong sphere of your presence and let it become your personal fortress.",
     "trajectory_detection_message": "Stop seeing faces and details. Start seeing vectors, speeds, and directions. Become a point of stillness through which the flow of trajectories passes.",
     "shadow_maneuvering_message": "Imagine the air around you is filled with invisible strings. Slip through them, maintaining the sensitivity and lightness of every movement.",
+    "sensory_bypass_message": "Hand control over to your body. Let your feet find the path on their own, while your mind remains clear and free from calculations.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
   },
@@ -372,6 +373,8 @@
     "trajectory_detection_desc": "Enter 'strategic scanning' mode and speed up reaction to changes",
     "shadow_maneuvering": "Shadow Maneuvering",
     "shadow_maneuvering_desc": "Shift from stiffness to supple readiness through play with space",
+    "sensory_bypass": "Sensory Bypass",
+    "sensory_bypass_desc": "Tune instant coordination and trust the body's instinctive accuracy",
     "mass_center": "Mass of Center",
     "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
     "vagal_brake": "Vagal Brake",
@@ -1309,6 +1312,19 @@
       "Feel how your brain enjoys this complex and beautiful task, releasing background anxieties.",
       "Freeze for a second in any pose and feel: you're ready to move in any direction in that same second."
     ],
+    "p4_11": [
+      "Begin moving, choosing a target — 'clean' areas of the floor.",
+      "Gradually increase speed, not giving yourself time for long deliberation.",
+      "Don't look directly at your feet. Use 'soft gaze' and peripheral vision to scan the surface.",
+      "Let your body recalculate the trajectory itself. Trust its natural grace and accuracy.",
+      "Feel how your feet find safe islands on their own, as if crossing a mountain stream on stones.",
+      "Your brain works ahead — it sees an obstacle before you have time to think about it.",
+      "Feel the thrill and lightness of this dance. There's no room for error here, only endless adaptation.",
+      "Let movements become fluid and fast. You're a stream flowing around stones in a riverbed.",
+      "With each step, your confidence in your body's intuition grows.",
+      "Notice how the inner noise disappears in this rhythm. Only the pure joy of precise movement remains.",
+      "You are one with space. You maneuver in it without effort or tension."
+    ],
     "p5_1": [
       "Take up space. Spread your shoulders as if your back is a wide rock.",
       "Imagine that in your lower belly, just below the navel, lies a dense, warm, and very heavy block.",
@@ -1383,6 +1399,7 @@
     "p4_8": "When your boundaries are conscious, you stop wasting energy on defense. Your sphere is the space of your freedom, where you are always safe.",
     "p4_9": "When you see vectors instead of obstacles, the world becomes predictable and manageable. Your vision is your superpower.",
     "p4_10": "When your body gains the plasticity of a shadow, any obstacle becomes just an occasion for an elegant maneuver. Your readiness is your freedom.",
+    "p4_11": "When you trust your intuitive coordination, any complexity turns into an exciting game. Your accuracy is your natural nature.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
   },
@@ -1444,6 +1461,12 @@
       "Why: Training the cerebellum and basal ganglia allows the body to instantly adapt to changes without wasting resources on unnecessary tension.",
       "Effect: Increased movement plasticity, improved coordination and sense of balance.",
       "Bio-marker: Optimization of signals from proprioceptors (body position sensors in space)."
+    ],
+    "p4_11": [
+      "Action: Walk through space, consciously avoiding certain zones (tile lines, carpet edges, shadows, or imaginary spots).",
+      "Biology: Stimulation of the superior colliculi and cerebellum for instant automatic movement correction.",
+      "Why: Using peripheral vision for navigation disables slow 'conscious' planning and activates ancient, ultra-fast neural circuits.",
+      "Effect: Optimization of proprioception and coordination under time pressure; relief of cognitive overload."
     ],
     "p5_1": [
       "Action: Assume a 'power pose': back straight, shoulders open, feet firmly planted on the support.",
