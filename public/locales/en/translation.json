@@ -23,6 +23,7 @@
   "quote_level_4": "Emotion is a current,<br/>it teaches movement in invisible space",
   "quote_level_5": "Presence is stronger than any movement.",
   "quote_level_6": "Connection is born where<br/>you feel others without losing yourself.",
+  "quote_level_7": "Clarity begins where<br/>you see the difference.",
   "you": "You",
   "nav": {
     "home": "Home",
@@ -111,6 +112,11 @@
     "circuit_6_subtitle": "Primate / Connection and Social Resonance",
     "circuit_6_desc": "Awareness of connection and presence among others.<br/>Not dissolution, not domination — the ability to be in the field.<br/>A point of social balance, where emotions become language.",
     "circuit_6_chapter": "Chapter 2: Emotions (AQUA)",
+    "circuit_7_name": "I Discern",
+    "circuit_7_title": "I Discern",
+    "circuit_7_subtitle": "The Observing Human / Clarity and Discernment",
+    "circuit_7_desc": "Awareness of differences and forms.<br/>Not evaluation, not analysis — the ability to see what is what.<br/>The birth point of mind, where the world ceases to be a continuous stream.",
+    "circuit_7_chapter": "Chapter 3: Mind (AER)",
     "circuit_4_name": "I Maneuver",
     "circuit_4_subtitle": "Small Mammal / Agility and Evasion",
     "circuit_4_desc": "Awareness of mobility and reaction.<br/>Not attack, not freezing — the ability to change trajectory.<br/>A point of living adaptation, where movement is born before thought.",
@@ -531,6 +537,14 @@
       "text_4": "Space fills with signals.",
       "text_5": "You learn to be near. Not merging, not closing off.",
       "text_6": "Simply — being in a shared rhythm."
+    },
+    "level_7": {
+      "text_1": "Attention becomes sharper.",
+      "text_2": "Sensations separate from each other. The contours of the world emerge.",
+      "text_3": "You begin to discern: form and background, signal and noise, important and secondary.",
+      "text_4": "You learn to notice details.",
+      "text_5": "Not grasping them with mind, but allowing them to become visible.",
+      "text_6": "In this clarity, orientation is born."
     }
   },
   "goals": {
@@ -1282,6 +1296,23 @@
       "wisdom_2": "Enough to be in resonance.",
       "wisdom_3": "In this connection, safety is born. In this tuning — belonging.",
       "wisdom_4": "In this field — life."
+    },
+    "level_7": {
+      "intro": "Learn to discern — see without haste. Notice boundaries without destroying wholeness. Separate one from another while staying in contact with the whole.",
+      "game_task": "Game and energetic task — activation of the Clarity field (AER discernment).",
+      "principle_1": "Discernment is not division. It is clarification.",
+      "principle_2": "The world unfolds as a multitude of elements, each with its own place and meaning.",
+      "principle_3": "Clarity is the first step toward choice.",
+      "story_1": "You feel how thought becomes precise.",
+      "story_2": "How attention stops blurring.",
+      "story_3": "How clarity brings calm.",
+      "identity_1": "You are the Clarifying Mind, a form of discernment.",
+      "identity_2": "Breath becomes light. Inhale expands the field of perception.",
+      "identity_3": "Exhale highlights what matters.",
+      "wisdom_1": "No need to understand everything. Enough to see differences.",
+      "wisdom_2": "In this clarity, orientation is born.",
+      "wisdom_3": "In this discernment — the foundation of thinking.",
+      "wisdom_4": "In this gaze — freedom from chaos."
     }
   },
   "terra_speaks": {
@@ -1321,6 +1352,12 @@
       "quote_2": "Those who hear the field rarely remain alone.",
       "quote_3": "Popularity is the ability to be in rhythm.",
       "quote_4": "The pack holds together not by force, but by attention."
+    },
+    "level_7": {
+      "quote_1": "Discernment is the breath of the mind.",
+      "quote_2": "Where clarity appears, haste disappears.",
+      "quote_3": "To see difference is to respect form.",
+      "quote_4": "Thought begins with attention."
     }
   },
   "terra_final": {
@@ -1361,6 +1398,12 @@
       "line_3": "You have completed the path of AQUA — the path of emotions, strength, and connection.",
       "line_4": "Ahead — air and thought. Ahead — discernment and choice.",
       "line_5": "You are ready to transition to AER."
+    },
+    "level_7": {
+      "line_1": "Now you know how to see differences and forms.",
+      "line_2": "Your clarity has become a foundation for thinking.",
+      "line_3": "Ahead — holding attention.",
+      "line_4": "Ahead — focus and direction."
     }
   },
   "adaptive_practices": {
