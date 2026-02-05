@@ -247,6 +247,7 @@
     "audio_scan_message": "Become hearing itself. Let the sounds of the world pass through you without touching your feelings — as if you're tuning a sensitive instrument to the frequency of silence.",
     "mammalian_neck_message": "Let your head move softly and freely, like a keen animal in a quiet forest. Let the tension flow away, opening the path to your clarity.",
     "tail_reset_message": "Feel your spine not as a rigid rod, but as a living, flowing stem. Let the wave of relaxation rise from the very roots of your body.",
+    "lymphatic_drift_message": "Become fluid and weightless. Let a gentle wave of vibration wash away the remnants of fatigue and tension from every cell.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
   },
@@ -357,6 +358,8 @@
     "mammalian_neck_desc": "Release neck tension and oxygenate the brain",
     "tail_reset": "Tail Reset",
     "tail_reset_desc": "Release accumulated stress through a gentle wave along the spine",
+    "lymphatic_drift": "Lymphatic Drift",
+    "lymphatic_drift_desc": "Clear the body of biochemical stress traces through gentle vibration",
     "mass_center": "Mass of Center",
     "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
     "vagal_brake": "Vagal Brake",
@@ -1220,6 +1223,20 @@
       "Imagine this wave washing away the weight of responsibility and others' expectations from your back.",
       "Breathe in rhythm with this movement, feeling how with each cycle your body becomes lighter and more supple."
     ],
+    "p4_6": [
+      "Stand straight, feet parallel, knees slightly relaxed and springy.",
+      "Slightly rise on your toes and begin a small, frequent vibration throughout your body.",
+      "Imagine you're not made of stone and bones, but of soft, pliable jelly.",
+      "Let this vibration rise from your heels to your calves, thighs, and pelvis.",
+      "Shake softly, without effort, as if you're the surface of water into which a stone was thrown.",
+      "Feel how your shoulders, cheeks, and even tongue relax. Let your whole body 'drift' in this rhythm.",
+      "Imagine thousands of tiny pumps starting inside, pushing lymph through the vessels.",
+      "Each movement washes toxins and stagnant emotions from the tissues, transforming them into pure energy.",
+      "Without lifting your feet from the floor, let your body sway slightly and flow in different directions while maintaining the inner tremor.",
+      "Feel the pleasant warmth spreading across your skin — this is a sign that cleansing has begun.",
+      "Breathe deeply and freely, helping your body renew with each cycle of vibration.",
+      "Gradually reduce the intensity until the movement becomes a barely perceptible hum inside."
+    ],
     "p5_1": [
       "Take up space. Spread your shoulders as if your back is a wide rock.",
       "Imagine that in your lower belly, just below the navel, lies a dense, warm, and very heavy block.",
@@ -1289,6 +1306,7 @@
     "p4_3": "When you control the filters of your attention, the world ceases to be chaos. Your selectivity is your shield and your clarity in any flow of events.",
     "p4_4": "When your neck is free, your brain sheds the shackles of survival. Your maneuverability is the shortest path to wise decisions.",
     "p4_5": "When your spine gains fluidity, static fear dissolves. Your flexibility is your protection and your inexhaustible life force.",
+    "p4_6": "When lymph flows freely, stress finds no place to shelter. You are renewed, clean, and ready for a new day in your full power.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
   },
@@ -1320,6 +1338,12 @@
       "Why: In mammals, tail micro-movements are an evolutionary mechanism for releasing 'frozen' tension after experienced stress.",
       "Effect: Deep muscle relaxation and removal of static block from the body axis.",
       "Bio-marker: Reduced tone in the lumbosacral region and normalization of breathing rhythm."
+    ],
+    "p4_6": [
+      "Biology: Stimulation of the lymphatic system through rhythmic muscle contractions.",
+      "Why: The lymphatic system has no 'pump' of its own (heart); its movement depends entirely on muscle movement. Vibration is the most effective way to initiate this process.",
+      "Effect: Accelerated elimination of stress metabolism products (cortisol, adrenaline) and reduction of swelling.",
+      "Bio-marker: Reduced lactate and cortisol concentration in intercellular fluid."
     ],
     "p5_1": [
       "Action: Assume a 'power pose': back straight, shoulders open, feet firmly planted on the support.",
