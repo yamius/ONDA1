@@ -261,7 +261,8 @@
     "testosterone_vertical_message": "Stretch your power into a line. Become a bridge between earth and sky, turning your posture into an undeniable manifesto of calm power.",
     "protected_heart_message": "Find your anchor point. Let the warmth of your hand create a zone of absolute peace where your feelings and your strength are born.",
     "silent_roar_message": "Give your strength a voice. Let the low vibration of your body fill the space, securing your right to territory and silence.",
-    "territorial_gaze_message": "Look not at the world, but through it. Your gaze is not a search for threats, it's an inventory of your domain."
+    "territorial_gaze_message": "Look not at the world, but through it. Your gaze is not a search for threats, it's an inventory of your domain.",
+    "heart_coherence_message": "Tune your inner frequency. When your heart beats in the rhythm of harmony, someone else's chaos is powerless against your calm."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -399,7 +400,9 @@
     "silent_roar": "Silent Roar",
     "silent_roar_desc": "Express inner strength and finally stabilize the nervous system through sound resonance.",
     "territorial_gaze": "Territorial Gaze",
-    "territorial_gaze_desc": "Stabilize visual perception and assert your dominance in space."
+    "territorial_gaze_desc": "Stabilize visual perception and assert your dominance in space.",
+    "heart_coherence": "Heart Coherence",
+    "heart_coherence_desc": "Create a coherent electromagnetic field and protect your system from external emotional noise."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1502,6 +1505,24 @@
       "Once more… Object nearby — pause — gaze to the horizon",
       "Close — control. Far — perspective",
       "Feel how your shoulders and neck relax when your gaze becomes 'wide'"
+    ],
+    "p5_9": [
+      "Place your hand on the center of your chest to ground your attention at this point.",
+      "Focus your attention on the center of your chest.",
+      "Breathe slowly and smoothly.",
+      "Imagine that air enters and exits through the heart area, warming it.",
+      "With each breath, imagine how the heart's pulsation becomes clearer, steadier and more powerful.",
+      "This is not just an organ — it's your main transmitter.",
+      "Now you are tuning it to purity and strength.",
+      "Feel how a sphere of harmonious rhythm forms around your chest.",
+      "This is a coherence field.",
+      "It orders everything inside you: thoughts, hormones, electrical impulses.",
+      "If there's noise, aggression or bustle around — just return your attention to this breathing.",
+      "Your inner rhythm is stronger than external chaos.",
+      "Others' 'waves' simply break against your structure.",
+      "Feel the quiet joy and dignity coming from this center.",
+      "This is your true density of presence.",
+      "Stay in this resonance, feeling how your whole body begins to vibrate in unison with your heart."
     ]
   },
   "final_phrases": {
@@ -1560,7 +1581,8 @@
     "p5_5": "When your vertical is built, stress cannot bend you. Your posture is your biological truth, in which there is no room for doubt.",
     "p5_6": "When your center is protected from within, external storms lose their power. Your chest is a shield always with you, and the source of your unshakeable confidence.",
     "p5_7": "Your voice is a projection of your will. When you sound from the center of your power, the world quiets down to hear you. Your presence is now undeniable.",
-    "p5_8": "Where your gaze reaches, foreign influence ends. You see everything, and this vision makes you invulnerable."
+    "p5_8": "Where your gaze reaches, foreign influence ends. You see everything, and this vision makes you invulnerable.",
+    "p5_9": "He who owns his rhythm owns the situation. Your coherent heart is a compass that always points to your personal power and safety."
   },
   "science_info": {
     "p4_1": [
@@ -1677,6 +1699,11 @@
       "Physiology: Training accommodation and alternating work of the ciliary muscle. This stabilizes the visual system and reduces amygdala activity.",
       "Bio-marker: Transition from 'tunnel vision' (a sign of stress) to panoramic view.",
       "Effect: Reduction of environmental emotional pressure. You begin to perceive space not as hostile, but as belonging to you."
+    ],
+    "p5_9": [
+      "Biology: Formation of an ordered electromagnetic field (according to HeartMath Institute research). The heart is the most powerful EM field generator in the body.",
+      "Bio-marker: Synchronization of brain rhythms (alpha waves) with heart rate variability.",
+      "Effect: A state of 'invulnerability'. Your system operates at its own frequency, so others' anger, panic or pressure cannot resonate with you and 'infect' you."
     ]
   },
   "level_goal": {
