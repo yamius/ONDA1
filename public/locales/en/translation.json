@@ -256,7 +256,8 @@
     "tonic_fluidity_message": "Become a master of your states. Learn to switch your inner power with a single impulse of will, leaving no inertia to old emotions.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology.",
-    "lymphatic_lock_message": "Break the stagnation inside you. Let the deep pressure of the diaphragm become a pump that washes away anxiety and returns purity and lightness to the body."
+    "lymphatic_lock_message": "Break the stagnation inside you. Let the deep pressure of the diaphragm become a pump that washes away anxiety and returns purity and lightness to the body.",
+    "gravity_grounding_message": "Stop resisting gravity — let it become your strength. Become heavy, become part of the earth, become the one who cannot be moved."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -384,7 +385,9 @@
     "vagal_brake": "Vagal Brake",
     "vagal_brake_desc": "Instantly stop emotional surge and regain control over your state",
     "lymphatic_lock": "Lymphatic Lock",
-    "lymphatic_lock_desc": "Unlock lymph flow and cleanse the body of stress biochemistry through diaphragm work."
+    "lymphatic_lock_desc": "Unlock lymph flow and cleanse the body of stress biochemistry through diaphragm work.",
+    "gravity_grounding": "Gravity Grounding",
+    "gravity_grounding_desc": "Gain unshakeable stability and turn off background anxiety through connection with support."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1398,6 +1401,24 @@
       "Repeat again: inhale, gentle expansion, lock",
       "Feel how the 'knot' in your belly unties, turning into a warm, free space",
       "Your body becomes a clean chemical reactor, where there is no room for stress remnants"
+    ],
+    "p5_4": [
+      "Close your eyes for a moment",
+      "Feel how gravity gently pulls your body down",
+      "Don't hold yourself — give your weight to the chair and floor",
+      "Imagine your center of gravity turning into molten lead and flowing down to the very bottom of your pelvis",
+      "Feel how your sitting bones firmly 'dig into' the support",
+      "You are putting down roots right here and now",
+      "Imagine you are an ancient tree or a stone statue",
+      "Your mass is your power over space",
+      "Let your thighs become heavy, your feet — wide and dense",
+      "With each exhale, let gravity 'press' you into the support even more",
+      "This pressure doesn't burden, it gives strength",
+      "Notice how with this 'settling' the mental noise quiets down",
+      "Heavy body — calm mind",
+      "You are no longer balancing on the surface of life; you are rooted in its very essence",
+      "Feel warmth spreading along your spine — this is your inner core activating, which needs no muscle tension",
+      "Hold this feeling of 'leaden calm' even when you open your eyes"
     ]
   },
   "final_phrases": {
@@ -1451,7 +1472,8 @@
     "p4_12": "When you master tonic fluidity, no event will catch you off guard. Your flexibility is your invincibility in a world of change.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege.",
-    "p5_3": "When your diaphragm is free, you breathe with the full power of your being. Free lymph flow is your invulnerability and your inexhaustible inner purity."
+    "p5_3": "When your diaphragm is free, you breathe with the full power of your being. Free lymph flow is your invulnerability and your inexhaustible inner purity.",
+    "p5_4": "When you are grounded by gravity, the world stops being a storm and becomes just a landscape around your monolith. Your stability is your true nature."
   },
   "science_info": {
     "p4_1": [
@@ -1540,6 +1562,12 @@
       "Biology: Direct mechanical massage of the cisterna chyli (main lymphatic collector) by diaphragm legs.",
       "Why: Chronic stress causes the diaphragm to spasm, literally 'locking' lymph in the abdominal cavity. This exercise restores drainage.",
       "Effect: The physical sensation of a 'lump in the stomach' disappears, metabolism improves and system detoxification occurs."
+    ],
+    "p5_4": [
+      "Action: Sit on a chair, place your feet parallel. Feel the contact points of your body with the seat and floor.",
+      "Biology: Activation of proprioceptors and vestibulo-spinal tracts that transmit signals from the inner ear to muscles that maintain posture.",
+      "Why: When the brain receives a clear signal of physical stability ('I am standing/sitting firmly'), the limbic system (fear center) automatically reduces its reactivity.",
+      "Effect: Fidgeting in movements disappears, voice becomes deeper, gaze — calmer."
     ]
   },
   "level_goal": {

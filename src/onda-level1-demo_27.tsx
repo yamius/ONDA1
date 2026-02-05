@@ -1350,6 +1350,17 @@ const OndaLevel1 = () => {
       guidingTexts: t('guiding_texts.p5_3', { returnObjects: true }) as string[],
       finalPhrase: t('final_phrases.p5_3'),
       scienceInfo: t('science_info.p5_3', { returnObjects: true }) as string[]
+    },
+    'p5-4': {
+      colors: 'from-blue-900 via-cyan-800 to-teal-700',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.gravity_grounding_message'),
+      ambientSound: t('elements.silence'),
+      visual: '🪨',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p5_4', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p5_4'),
+      scienceInfo: t('science_info.p5_4', { returnObjects: true }) as string[]
     }
   }), [i18n.language]);
 
@@ -1472,7 +1483,8 @@ const OndaLevel1 = () => {
       practices: [
         { id: 'p5-1', name: t('practice_items.mass_center'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.mass_center_desc') },
         { id: 'p5-2', name: t('practice_items.vagal_brake'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.vagal_brake_desc') },
-        { id: 'p5-3', name: t('practice_items.lymphatic_lock'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.lymphatic_lock_desc') }
+        { id: 'p5-3', name: t('practice_items.lymphatic_lock'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.lymphatic_lock_desc') },
+        { id: 'p5-4', name: t('practice_items.gravity_grounding'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.gravity_grounding_desc') }
       ],
       artifact: {
         name: t('artifacts.territorys_pulse'),
@@ -1920,7 +1932,8 @@ const OndaLevel1 = () => {
       'p4-12': 'practice_items.tonic_fluidity',
       'p5-1': 'practice_items.mass_center',
       'p5-2': 'practice_items.vagal_brake',
-      'p5-3': 'practice_items.lymphatic_lock'
+      'p5-3': 'practice_items.lymphatic_lock',
+      'p5-4': 'practice_items.gravity_grounding'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -1977,7 +1990,8 @@ const OndaLevel1 = () => {
       'p4-12': 'practice_items.tonic_fluidity_desc',
       'p5-1': 'practice_items.mass_center_desc',
       'p5-2': 'practice_items.vagal_brake_desc',
-      'p5-3': 'practice_items.lymphatic_lock_desc'
+      'p5-3': 'practice_items.lymphatic_lock_desc',
+      'p5-4': 'practice_items.gravity_grounding_desc'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -2034,7 +2048,8 @@ const OndaLevel1 = () => {
       'p4-12': 'practice_messages.tonic_fluidity_message',
       'p5-1': 'practice_messages.mass_center_message',
       'p5-2': 'practice_messages.vagal_brake_message',
-      'p5-3': 'practice_messages.lymphatic_lock_message'
+      'p5-3': 'practice_messages.lymphatic_lock_message',
+      'p5-4': 'practice_messages.gravity_grounding_message'
     };
     return t(mapping[practiceId] || '');
   };
