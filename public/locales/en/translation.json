@@ -13,7 +13,7 @@
   "part_name_7": "I Distinguish",
   "part_name_8": "I Focus",
   "part_name_9": "I Shape the Vision",
-  "part_name_10": "I Speak",
+  "part_name_10": "I Express",
   "part_name_11": "I Exchange",
   "part_name_12": "I Collaborate",
   "quote": "To move towards the light<br/>first you need to put down roots",
@@ -26,6 +26,7 @@
   "quote_level_7": "Clarity begins where<br/>you see the difference.",
   "quote_level_8": "The power of attention is born<br/>where you choose one.",
   "quote_level_9": "Image is the bridge between thought and matter,<br/>light that illuminates the path before you lay it.",
+  "quote_level_10": "Expression is the moment<br/>when the inner takes form in the outer.",
   "you": "You",
   "nav": {
     "home": "Home",
@@ -129,6 +130,11 @@
     "circuit_9_subtitle": "The Creating Human / Architect of Inner Projections",
     "circuit_9_desc": "Awareness of the power of imagination and synthesis.<br/>Not just data processing — the ability to see the whole in empty space.<br/>The point of cognitive breakthrough, where mind learns to design the future.",
     "circuit_9_chapter": "Chapter 3: Mind (AER)",
+    "circuit_10_name": "I Express",
+    "circuit_10_title": "I Express",
+    "circuit_10_subtitle": "The Social Human / Master of Manifestation",
+    "circuit_10_desc": "Awareness of your role and value in society.<br/>Not just transmitting sounds — but conveying your inner image outward.<br/>The point of social birth, where you announce your presence to the world.",
+    "circuit_10_chapter": "Chapter 4: Society (IGNIS)",
     "circuit_4_name": "I Maneuver",
     "circuit_4_subtitle": "Small Mammal / Agility and Evasion",
     "circuit_4_desc": "Awareness of mobility and reaction.<br/>Not attack, not freezing — the ability to change trajectory.<br/>A point of living adaptation, where movement is born before thought.",
@@ -573,6 +579,14 @@
       "text_4": "Space around becomes a field for creativity.",
       "text_5": "Not copying reality — but adding meaning to it.",
       "text_6": "Not wandering in fantasies — but creating a working sketch of life."
+    },
+    "level_10": {
+      "text_1": "Attention moves from head to chest center and throat.",
+      "text_2": "You feel a surge of warmth: the energy of image seeks an outlet.",
+      "text_3": "Space around feels like a resonating environment, ready to receive your impulse.",
+      "text_4": "You learn to speak so you are heard, and act so you are seen.",
+      "text_5": "Not forcing — but captivating.",
+      "text_6": "Not hiding behind masks — but expressing your essence through them."
     }
   },
   "goals": {
@@ -1375,6 +1389,23 @@
       "wisdom_2": "Enough to see — and allow it to be.",
       "wisdom_3": "In this vision — your true power.",
       "wisdom_4": "In this image — your freedom."
+    },
+    "level_10": {
+      "intro": "Learn to express — overcome fear of judgment and allow your inner self to become visible. Maintain dignity when watched. Choose sincerity as a strategy.",
+      "game_task": "Game and energetic task — activation of the Expression field (IGNIS manifestation).",
+      "principle_1": "Expression is not noise. It is the precision of your presence.",
+      "principle_2": "Your voice, gestures, and actions become your signature in the world of people.",
+      "principle_3": "To express yourself means to let life happen through you.",
+      "story_1": "The world unfolds as a great stage.",
+      "story_2": "You are no longer a shadow — you are an active participant.",
+      "story_3": "Not just a listener — but one whose opinion carries weight.",
+      "identity_1": "You are the Social Human, master of manifestation in the fire of human connections.",
+      "identity_2": "Breath becomes powerful and open. Inhale gathers the force of intention.",
+      "identity_3": "Exhale carries your voice and will into the world.",
+      "wisdom_1": "No need to shout. No need to prove.",
+      "wisdom_2": "Enough to sound clear and open.",
+      "wisdom_3": "In this sound, recognition is born.",
+      "wisdom_4": "In this expression — life."
     }
   },
   "terra_speaks": {
@@ -1432,6 +1463,12 @@
       "quote_2": "Thought becomes thing when it takes form in your heart.",
       "quote_3": "Your imagination is a laboratory where your tomorrow is created.",
       "quote_4": "Clarity of the picture inside determines ease of step outside."
+    },
+    "level_10": {
+      "quote_1": "Your silence may be deep, but only your word builds cities.",
+      "quote_2": "Sincerity is fire that does not burn, but illuminates the path.",
+      "quote_3": "One who fears to sound remains hostage to their fantasies.",
+      "quote_4": "The world learns about you exactly as much as you choose to show it."
     }
   },
   "terra_final": {
@@ -1491,6 +1528,12 @@
       "line_3": "You have completed the path of AER — the path of discernment, focus, and design.",
       "line_4": "Ahead — the fire of interaction. Ahead — speech, exchange, and joint action.",
       "line_5": "You are ready to transition to IGNIS."
+    },
+    "level_10": {
+      "line_1": "Now you know how to bring your images into the light and give them voice.",
+      "line_2": "Your presence has become tangible, and your self-expression — a conscious gift to the world.",
+      "line_3": "You are ready to go further — to deep interaction, to the dance of interests and exchange of power.",
+      "line_4": "To co-creation, where 'I' becomes part of the great 'WE'."
     }
   },
   "adaptive_practices": {
