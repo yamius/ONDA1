@@ -1274,6 +1274,17 @@ const OndaLevel1 = () => {
       finalPhrase: t('final_phrases.p4_8'),
       scienceInfo: t('science_info.p4_8', { returnObjects: true }) as string[]
     },
+    'p4-9': {
+      colors: 'from-blue-900 via-cyan-800 to-teal-700',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.trajectory_detection_message'),
+      ambientSound: t('elements.silence'),
+      visual: '🎯',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p4_9', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p4_9'),
+      scienceInfo: t('science_info.p4_9', { returnObjects: true }) as string[]
+    },
     'p5-1': {
       colors: 'from-stone-800 via-stone-700 to-stone-600',
       element: 'TERRA',
@@ -1395,7 +1406,8 @@ const OndaLevel1 = () => {
         { id: 'p4-5', name: t('practice_items.tail_reset'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.tail_reset_desc') },
         { id: 'p4-6', name: t('practice_items.lymphatic_drift'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.lymphatic_drift_desc') },
         { id: 'p4-7', name: t('practice_items.deep_in_quick_out'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.deep_in_quick_out_desc') },
-        { id: 'p4-8', name: t('practice_items.distance_barrier'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.distance_barrier_desc') }
+        { id: 'p4-8', name: t('practice_items.distance_barrier'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.distance_barrier_desc') },
+        { id: 'p4-9', name: t('practice_items.trajectory_detection'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.trajectory_detection_desc') }
       ],
       artifact: {
         name: t('artifacts.listen_heart'),
@@ -1854,6 +1866,7 @@ const OndaLevel1 = () => {
       'p4-6': 'practice_items.lymphatic_drift',
       'p4-7': 'practice_items.deep_in_quick_out',
       'p4-8': 'practice_items.distance_barrier',
+      'p4-9': 'practice_items.trajectory_detection',
       'p5-1': 'practice_items.mass_center',
       'p5-2': 'practice_items.vagal_brake'
     };
@@ -1906,6 +1919,7 @@ const OndaLevel1 = () => {
       'p4-6': 'practice_items.lymphatic_drift_desc',
       'p4-7': 'practice_items.deep_in_quick_out_desc',
       'p4-8': 'practice_items.distance_barrier_desc',
+      'p4-9': 'practice_items.trajectory_detection_desc',
       'p5-1': 'practice_items.mass_center_desc',
       'p5-2': 'practice_items.vagal_brake_desc'
     };
@@ -1958,6 +1972,7 @@ const OndaLevel1 = () => {
       'p4-6': 'practice_messages.lymphatic_drift_message',
       'p4-7': 'practice_messages.deep_in_quick_out_message',
       'p4-8': 'practice_messages.distance_barrier_message',
+      'p4-9': 'practice_messages.trajectory_detection_message',
       'p5-1': 'practice_messages.mass_center_message',
       'p5-2': 'practice_messages.vagal_brake_message'
     };

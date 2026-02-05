@@ -250,6 +250,7 @@
     "lymphatic_drift_message": "Become fluid and weightless. Let a gentle wave of vibration wash away the remnants of fatigue and tension from every cell.",
     "deep_in_quick_out_message": "Shed the weight of the frozen moment. Let air into your deepest self and exhale resolve, making room for new movement.",
     "distance_barrier_message": "The world ends where you begin. Feel the transparent but strong sphere of your presence and let it become your personal fortress.",
+    "trajectory_detection_message": "Stop seeing faces and details. Start seeing vectors, speeds, and directions. Become a point of stillness through which the flow of trajectories passes.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
   },
@@ -366,6 +367,8 @@
     "deep_in_quick_out_desc": "Release emotional numbness and prepare for maneuvering",
     "distance_barrier": "Distance Barrier",
     "distance_barrier_desc": "Feel and strengthen the boundaries of your personal space",
+    "trajectory_detection": "Trajectory Detection",
+    "trajectory_detection_desc": "Enter 'strategic scanning' mode and speed up reaction to changes",
     "mass_center": "Mass of Center",
     "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
     "vagal_brake": "Vagal Brake",
@@ -1275,6 +1278,20 @@
       "You are the center of this space. Everything outside is just information. Everything inside is your unshakeable integrity.",
       "Feel the ground with your feet: your sphere is rooted. It cannot be moved without your consent."
     ],
+    "p4_9": [
+      "Relax your gaze, as in the 'Soft Gaze' practice, but don't close your eyes.",
+      "Look through people and objects, as if they are transparent ghosts in space.",
+      "Focus only on movement. Catch vectors: someone accelerates, someone changes angle, someone slows down.",
+      "Don't look at faces — faces carry emotions that steal your resources. Look at body trajectories.",
+      "Perceive the world as a flow of colored lines crossing the space around you.",
+      "Your task is simply to note directions: left to right, fast, slow, in an arc.",
+      "Feel how your inner critic and evaluator quiets down.",
+      "There's no 'good' or 'bad' here, only dynamics.",
+      "You are an impartial processor, processing a map of speeds and trajectories.",
+      "Notice how your body naturally begins to adjust to this rhythm, becoming streamlined and ready to maneuver.",
+      "Stay in this state of 'transparent observer', for whom only the rhythm and direction of flow matters.",
+      "Feel the lightness: when the world is a flow of trajectories, it's impossible to get stuck or lost in it."
+    ],
     "p5_1": [
       "Take up space. Spread your shoulders as if your back is a wide rock.",
       "Imagine that in your lower belly, just below the navel, lies a dense, warm, and very heavy block.",
@@ -1347,6 +1364,7 @@
     "p4_6": "When lymph flows freely, stress finds no place to shelter. You are renewed, clean, and ready for a new day in your full power.",
     "p4_7": "When breathing becomes a tool, you stop waiting for the storm and start managing the sails. You are ready for any turn.",
     "p4_8": "When your boundaries are conscious, you stop wasting energy on defense. Your sphere is the space of your freedom, where you are always safe.",
+    "p4_9": "When you see vectors instead of obstacles, the world becomes predictable and manageable. Your vision is your superpower.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
   },
@@ -1396,6 +1414,12 @@
       "Why: Distance control is an evolutionary mechanism of mammals that, with clear awareness of boundaries, activates the parasympathetic system (relaxation).",
       "Effect: Strengthening of psychological boundaries, reduction of social anxiety and feelings of vulnerability.",
       "Bio-marker: Reduced cortisol levels while maintaining high stress resistance."
+    ],
+    "p4_9": [
+      "Action: Find a safe space in a crowded place (cafe, station, busy street). Can be practiced sitting or standing.",
+      "Biology: Activation of the dorsal stream of the visual system (the 'Where?' and 'How?' pathway through the parietal cortex).",
+      "Why: Switching attention from objects ('What is it?') to movement vectors disables emotional evaluation and enables pure environmental calculation.",
+      "Effect: Accelerated reaction speed to any changes and increased maneuverability in crowds or information flow."
     ],
     "p5_1": [
       "Action: Assume a 'power pose': back straight, shoulders open, feet firmly planted on the support.",
