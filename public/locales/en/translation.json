@@ -244,6 +244,7 @@
     "breath_of_adaptation_message": "Inhale — accept conditions, exhale — strengthen support. Find your working rhythm.",
     "soft_gaze_message": "Let your eyes look not at a point — but into space. Let the world unfold before you.",
     "orienting_inhale_message": "Inhale sharply and keenly, as if trying to catch a faint scent of change. Let this breath bring you back from the labyrinth of thoughts to the real world.",
+    "audio_scan_message": "Become hearing itself. Let the sounds of the world pass through you without touching your feelings — as if you're tuning a sensitive instrument to the frequency of silence.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
   },
@@ -348,6 +349,8 @@
     "soft_gaze_desc": "Defocus vision and shift from anxiety mode to calm mode",
     "orienting_inhale": "Orienting Inhale",
     "orienting_inhale_desc": "Instantly restore mental clarity through attention activation",
+    "audio_scan": "Audio Scan",
+    "audio_scan_desc": "Tune attention filters and cut through emotional noise",
     "mass_center": "Mass of Center",
     "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
     "vagal_brake": "Vagal Brake",
@@ -1168,6 +1171,20 @@
       "Let this impulse of curiosity displace the remnants of emotional fog.",
       "Breathe calmly now, but keep this sharp edge of attention."
     ],
+    "p4_3": [
+      "Close your eyes or simply lower your eyelids, shutting out visual noise.",
+      "Imagine your ears are highly sensitive direction finders, capable of catching the universe's whisper.",
+      "First, hear the sounds of your body: your breathing, the beat of blood, the quiet rustle of clothing.",
+      "Now expand your sphere of attention: find the loudest or closest sound in the space around you.",
+      "Don't name it, don't judge it — just acknowledge its presence and move on.",
+      "Now — the most important part: find the quietest, barely perceptible sound in this room.",
+      "Grab onto it with your attention, hold it for a second, like a thin thread.",
+      "Take another step: send your hearing outward, beyond the walls. Find the most distant sound — on the street, in the sky, beyond the horizon.",
+      "Feel how your brain quickly switches filters, jumping from near to far, from obvious to hidden.",
+      "You are an impartial observer. Sounds simply exist, and they have no power over your calm.",
+      "Notice how in the pauses between sounds, your own inner silence is born.",
+      "The reticular formation of your brain is now clear and ready to work, cutting off everything unnecessary."
+    ],
     "p5_1": [
       "Take up space. Spread your shoulders as if your back is a wide rock.",
       "Imagine that in your lower belly, just below the navel, lies a dense, warm, and very heavy block.",
@@ -1234,6 +1251,7 @@
     "p3_12": "When breath accepts and anchors, environment becomes your ally.",
     "p4_1": "When your gaze is embraced by the silence of the horizon, the world ceases to be a threat and becomes a space for your expression.",
     "p4_2": "When you actively perceive the world, anxiety loses its power over you. Your nose is a navigator that will always guide you from the storm of emotions to clarity.",
+    "p4_3": "When you control the filters of your attention, the world ceases to be chaos. Your selectivity is your shield and your clarity in any flow of events.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
   },
@@ -1248,6 +1266,12 @@
       "Why: A sharp inhale through the nose sends a signal to the cerebral cortex, forcibly shifting focus from internal emotions to external stimuli.",
       "Effect: Instant 'sobering' of attention and breaking the cycle of obsessive anxieties.",
       "Bio-marker: Activation of cholinergic systems responsible for selective attention."
+    ],
+    "p4_3": [
+      "Biology: Imitation of the orienting reflex through the auditory channel.",
+      "Why: Training of signal filtering in the reticular formation of the brainstem.",
+      "Effect: Increased cognitive selectivity — the ability to instantly cut out the unnecessary and maintain focus.",
+      "Bio-marker: Shift of dominance toward theta rhythms while maintaining high alertness."
     ],
     "p5_1": [
       "Action: Assume a 'power pose': back straight, shoulders open, feet firmly planted on the support.",
