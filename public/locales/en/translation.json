@@ -246,6 +246,7 @@
     "orienting_inhale_message": "Inhale sharply and keenly, as if trying to catch a faint scent of change. Let this breath bring you back from the labyrinth of thoughts to the real world.",
     "audio_scan_message": "Become hearing itself. Let the sounds of the world pass through you without touching your feelings — as if you're tuning a sensitive instrument to the frequency of silence.",
     "mammalian_neck_message": "Let your head move softly and freely, like a keen animal in a quiet forest. Let the tension flow away, opening the path to your clarity.",
+    "tail_reset_message": "Feel your spine not as a rigid rod, but as a living, flowing stem. Let the wave of relaxation rise from the very roots of your body.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
   },
@@ -354,6 +355,8 @@
     "audio_scan_desc": "Tune attention filters and cut through emotional noise",
     "mammalian_neck": "Mammalian Neck",
     "mammalian_neck_desc": "Release neck tension and oxygenate the brain",
+    "tail_reset": "Tail Reset",
+    "tail_reset_desc": "Release accumulated stress through a gentle wave along the spine",
     "mass_center": "Mass of Center",
     "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
     "vagal_brake": "Vagal Brake",
@@ -1202,6 +1205,21 @@
       "Your vestibular system finds the point of perfect balance, giving you support in motion.",
       "Stay in this feeling of fluid strength, where there's no place for tension, only free energy."
     ],
+    "p4_5": [
+      "Feel your tailbone — the point of support and the beginning of your inner freedom.",
+      "Imagine you have a long, soft tail touching the ground itself.",
+      "Begin a barely noticeable, microscopic movement of your pelvis.",
+      "As if you're gently swaying this imaginary tail.",
+      "Let this impulse turn into a soft wave that begins to crawl up your vertebrae.",
+      "The wave travels from the pelvis to the lower back, higher to the shoulder blades, reaching the base of the skull.",
+      "This movement is almost invisible from the outside, but inside it feels like melting ice.",
+      "With each micro-movement of the 'tail', static tension accumulated over hours flows down into the earth.",
+      "Feel how your spine becomes flexible, like seaweed in deep, calm water.",
+      "Your body is no longer a compressed spring; it's a living, pulsating wave.",
+      "Relax your sacrum, release your lower back. Let energy flow freely, without obstacles.",
+      "Imagine this wave washing away the weight of responsibility and others' expectations from your back.",
+      "Breathe in rhythm with this movement, feeling how with each cycle your body becomes lighter and more supple."
+    ],
     "p5_1": [
       "Take up space. Spread your shoulders as if your back is a wide rock.",
       "Imagine that in your lower belly, just below the navel, lies a dense, warm, and very heavy block.",
@@ -1270,6 +1288,7 @@
     "p4_2": "When you actively perceive the world, anxiety loses its power over you. Your nose is a navigator that will always guide you from the storm of emotions to clarity.",
     "p4_3": "When you control the filters of your attention, the world ceases to be chaos. Your selectivity is your shield and your clarity in any flow of events.",
     "p4_4": "When your neck is free, your brain sheds the shackles of survival. Your maneuverability is the shortest path to wise decisions.",
+    "p4_5": "When your spine gains fluidity, static fear dissolves. Your flexibility is your protection and your inexhaustible life force.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
   },
@@ -1295,6 +1314,12 @@
       "Biology: Reduction of deep suboccipital muscle tone.",
       "Bio-marker: Optimization of vestibulo-spinal tract function.",
       "Effect: Improved blood supply to the prefrontal cortex."
+    ],
+    "p4_5": [
+      "Biology: Activation of parasympathetic response through stimulation of the sacral plexus.",
+      "Why: In mammals, tail micro-movements are an evolutionary mechanism for releasing 'frozen' tension after experienced stress.",
+      "Effect: Deep muscle relaxation and removal of static block from the body axis.",
+      "Bio-marker: Reduced tone in the lumbosacral region and normalization of breathing rhythm."
     ],
     "p5_1": [
       "Action: Assume a 'power pose': back straight, shoulders open, feet firmly planted on the support.",

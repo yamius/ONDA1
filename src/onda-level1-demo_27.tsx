@@ -1230,6 +1230,17 @@ const OndaLevel1 = () => {
       finalPhrase: t('final_phrases.p4_4'),
       scienceInfo: t('science_info.p4_4', { returnObjects: true }) as string[]
     },
+    'p4-5': {
+      colors: 'from-blue-900 via-cyan-800 to-teal-700',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.tail_reset_message'),
+      ambientSound: t('elements.silence'),
+      visual: '🐆',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p4_5', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p4_5'),
+      scienceInfo: t('science_info.p4_5', { returnObjects: true }) as string[]
+    },
     'p5-1': {
       colors: 'from-stone-800 via-stone-700 to-stone-600',
       element: 'TERRA',
@@ -1347,7 +1358,8 @@ const OndaLevel1 = () => {
         { id: 'p4-1', name: t('practice_items.soft_gaze'), duration: t('practice_items.duration_6min'), maxQnt: 50, desc: t('practice_items.soft_gaze_desc') },
         { id: 'p4-2', name: t('practice_items.orienting_inhale'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.orienting_inhale_desc') },
         { id: 'p4-3', name: t('practice_items.audio_scan'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.audio_scan_desc') },
-        { id: 'p4-4', name: t('practice_items.mammalian_neck'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.mammalian_neck_desc') }
+        { id: 'p4-4', name: t('practice_items.mammalian_neck'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.mammalian_neck_desc') },
+        { id: 'p4-5', name: t('practice_items.tail_reset'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.tail_reset_desc') }
       ],
       artifact: {
         name: t('artifacts.listen_heart'),
@@ -1802,6 +1814,7 @@ const OndaLevel1 = () => {
       'p4-2': 'practice_items.orienting_inhale',
       'p4-3': 'practice_items.audio_scan',
       'p4-4': 'practice_items.mammalian_neck',
+      'p4-5': 'practice_items.tail_reset',
       'p5-1': 'practice_items.mass_center',
       'p5-2': 'practice_items.vagal_brake'
     };
@@ -1850,6 +1863,7 @@ const OndaLevel1 = () => {
       'p4-2': 'practice_items.orienting_inhale_desc',
       'p4-3': 'practice_items.audio_scan_desc',
       'p4-4': 'practice_items.mammalian_neck_desc',
+      'p4-5': 'practice_items.tail_reset_desc',
       'p5-1': 'practice_items.mass_center_desc',
       'p5-2': 'practice_items.vagal_brake_desc'
     };
@@ -1898,6 +1912,7 @@ const OndaLevel1 = () => {
       'p4-2': 'practice_messages.orienting_inhale_message',
       'p4-3': 'practice_messages.audio_scan_message',
       'p4-4': 'practice_messages.mammalian_neck_message',
+      'p4-5': 'practice_messages.tail_reset_message',
       'p5-1': 'practice_messages.mass_center_message',
       'p5-2': 'practice_messages.vagal_brake_message'
     };
