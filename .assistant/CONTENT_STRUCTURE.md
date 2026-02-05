@@ -70,7 +70,8 @@ artifact: { name: t('artifacts.shield_of_status'), ... }  // ❌ НЕ добав
 | **Part 5** | Я Охраняю Территорию | Emotions (AQUA) | ✅ Полная | 2 практики |
 | **Part 6** | Я в Стае | Emotions (AQUA) | ✅ Контент есть | ⏳ Ждём практики |
 | **Part 7** | Я Различаю | Mind (AER) | ✅ Контент есть | ⏳ Ждём практики |
-| Part 8-12 | — | — | ❌ Не созданы | — |
+| **Part 8** | Я Фокусируюсь | Mind (AER) | ✅ Контент есть | ⏳ Ждём практики |
+| Part 9-12 | — | — | ❌ Не созданы | — |
 
 ### Где искать части в коде
 
@@ -237,6 +238,7 @@ const nextPart = activeCircuit + 1;
 | **Part 5** | Stone | `bg-stone-500/20`, `border-stone-400/50`, `text-stone-200` |
 | **Part 6** | Emerald/Teal (warm) | `bg-emerald-500/20`, `border-emerald-400/50`, `text-emerald-300` |
 | **Part 7** | Sky/Blue | `bg-sky-500/20`, `border-sky-400/50`, `text-sky-300` |
+| **Part 8** | Indigo/Violet | `bg-indigo-500/20`, `border-indigo-400/50`, `text-indigo-300` |
 
 ### Где нужно задать цвета для новой части
 

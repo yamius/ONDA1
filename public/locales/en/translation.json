@@ -24,6 +24,7 @@
   "quote_level_5": "Presence is stronger than any movement.",
   "quote_level_6": "Connection is born where<br/>you feel others without losing yourself.",
   "quote_level_7": "Clarity begins where<br/>you see the difference.",
+  "quote_level_8": "The power of attention is born<br/>where you choose one.",
   "you": "You",
   "nav": {
     "home": "Home",
@@ -117,6 +118,11 @@
     "circuit_7_subtitle": "The Observing Human / Clarity and Discernment",
     "circuit_7_desc": "Awareness of differences and forms.<br/>Not evaluation, not analysis — the ability to see what is what.<br/>The birth point of mind, where the world ceases to be a continuous stream.",
     "circuit_7_chapter": "Chapter 3: Mind (AER)",
+    "circuit_8_name": "I Focus",
+    "circuit_8_title": "I Focus",
+    "circuit_8_subtitle": "The Gathering Human / Attention and Concentration",
+    "circuit_8_desc": "Awareness of attention direction.<br/>Not tension, not control — the ability to hold what is chosen.<br/>The point of concentration, where thought ceases to scatter.",
+    "circuit_8_chapter": "Chapter 3: Mind (AER)",
     "circuit_4_name": "I Maneuver",
     "circuit_4_subtitle": "Small Mammal / Agility and Evasion",
     "circuit_4_desc": "Awareness of mobility and reaction.<br/>Not attack, not freezing — the ability to change trajectory.<br/>A point of living adaptation, where movement is born before thought.",
@@ -545,6 +551,14 @@
       "text_4": "You learn to notice details.",
       "text_5": "Not grasping them with mind, but allowing them to become visible.",
       "text_6": "In this clarity, orientation is born."
+    },
+    "level_8": {
+      "text_1": "The world no longer pulls you in all directions.",
+      "text_2": "Attention gathers. Noise recedes.",
+      "text_3": "You feel how your gaze becomes steady.",
+      "text_4": "How the body supports thought. How breath helps you stay here.",
+      "text_5": "You learn to hold focus. Not squeezing the mind,",
+      "text_6": "but allowing it to be clear and directed."
     }
   },
   "goals": {
@@ -1313,6 +1327,23 @@
       "wisdom_2": "In this clarity, orientation is born.",
       "wisdom_3": "In this discernment — the foundation of thinking.",
       "wisdom_4": "In this gaze — freedom from chaos."
+    },
+    "level_8": {
+      "intro": "Learn to focus — hold attention over time. Return to what is chosen again and again. Not scolding yourself for distraction, but gently gathering.",
+      "game_task": "Game and energetic task — activation of the Focus field (AER concentration).",
+      "principle_1": "Focus is not rigidity. It is choice.",
+      "principle_2": "From many signals you keep one — because you know where to look.",
+      "principle_3": "Attention is a resource. It tires and recovers.",
+      "story_1": "You notice: the cleaner the focus, the less effort required.",
+      "story_2": "Focus is born from calm.",
+      "story_3": "In this focus, power appears.",
+      "identity_1": "You are the Gathering Mind, a form of concentration.",
+      "identity_2": "Breath becomes even. Inhale supports presence.",
+      "identity_3": "Exhale removes the excess.",
+      "wisdom_1": "No need to hold everything. Enough to hold what matters.",
+      "wisdom_2": "In this concentration — effectiveness.",
+      "wisdom_3": "In this choice — direction.",
+      "wisdom_4": "In this focus — power."
     }
   },
   "terra_speaks": {
@@ -1358,6 +1389,12 @@
       "quote_2": "Where clarity appears, haste disappears.",
       "quote_3": "To see difference is to respect form.",
       "quote_4": "Thought begins with attention."
+    },
+    "level_8": {
+      "quote_1": "Attention is a form of power.",
+      "quote_2": "Where attention is, there you are.",
+      "quote_3": "Concentration breeds stability.",
+      "quote_4": "Focus releases energy."
     }
   },
   "terra_final": {
@@ -1404,6 +1441,12 @@
       "line_2": "Your clarity has become a foundation for thinking.",
       "line_3": "Ahead — holding attention.",
       "line_4": "Ahead — focus and direction."
+    },
+    "level_8": {
+      "line_1": "Now you know how to hold attention and return it to what is chosen.",
+      "line_2": "Your clarity has become directed. Your mind — steady.",
+      "line_3": "Ahead — a step into time.",
+      "line_4": "Ahead — intention and route, image and future."
     }
   },
   "adaptive_practices": {
