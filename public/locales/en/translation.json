@@ -259,7 +259,8 @@
     "lymphatic_lock_message": "Break the stagnation inside you. Let the deep pressure of the diaphragm become a pump that washes away anxiety and returns purity and lightness to the body.",
     "gravity_grounding_message": "Stop resisting gravity — let it become your strength. Become heavy, become part of the earth, become the one who cannot be moved.",
     "testosterone_vertical_message": "Stretch your power into a line. Become a bridge between earth and sky, turning your posture into an undeniable manifesto of calm power.",
-    "protected_heart_message": "Find your anchor point. Let the warmth of your hand create a zone of absolute peace where your feelings and your strength are born."
+    "protected_heart_message": "Find your anchor point. Let the warmth of your hand create a zone of absolute peace where your feelings and your strength are born.",
+    "silent_roar_message": "Give your strength a voice. Let the low vibration of your body fill the space, securing your right to territory and silence."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -393,7 +394,9 @@
     "testosterone_vertical": "Testosterone Vertical",
     "testosterone_vertical_desc": "Form a physical core of dominance and activate confidence hormones.",
     "protected_heart": "Protected Heart",
-    "protected_heart_desc": "Strengthen the inner center of safety and activate neuroimmune protection."
+    "protected_heart_desc": "Strengthen the inner center of safety and activate neuroimmune protection.",
+    "silent_roar": "Silent Roar",
+    "silent_roar_desc": "Express inner strength and finally stabilize the nervous system through sound resonance."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1456,6 +1459,24 @@
       "All external noise stays outside.",
       "Inside — only the steady rhythm and density of your presence.",
       "Stay in this contact until you feel that the 'emptiness' in your chest has filled with calm power."
+    ],
+    "p5_7": [
+      "Sit on a chair, place your feet parallel. Feel the contact points of your body with the seat and floor.",
+      "Take a deep breath into your belly.",
+      "Feel how the breath fills your 'heavy center' in the lower belly",
+      "On the exhale, make a low, dense sound 'OOOMM' or 'RRRRR', coming from the very depth of your belly",
+      "Let it be so low that you feel trembling in your ribs and spine.",
+      "Focus on the vibration that should resonate in your chest",
+      "Don't try to sound loud — try to sound dense.",
+      "Imagine this sound is a thick fog slowly filling the entire room.",
+      "Your voice is an extension of your vertical.",
+      "It rests on your feet and exits through a relaxed throat.",
+      "With each cycle, feel how the sound carries out the remnants of uncertainty.",
+      "Imagine how this vibration passes through walls, marking the boundaries of your influence for meters around.",
+      "Your body is the body of a powerful musical instrument.",
+      "Resonate with every cell.",
+      "Feel how after the sound comes a ringing, quality silence.",
+      "This is the silence of a predator who is calm and confident."
     ]
   },
   "final_phrases": {
@@ -1512,7 +1533,8 @@
     "p5_3": "When your diaphragm is free, you breathe with the full power of your being. Free lymph flow is your invulnerability and your inexhaustible inner purity.",
     "p5_4": "When you are grounded by gravity, the world stops being a storm and becomes just a landscape around your monolith. Your stability is your true nature.",
     "p5_5": "When your vertical is built, stress cannot bend you. Your posture is your biological truth, in which there is no room for doubt.",
-    "p5_6": "When your center is protected from within, external storms lose their power. Your chest is a shield always with you, and the source of your unshakeable confidence."
+    "p5_6": "When your center is protected from within, external storms lose their power. Your chest is a shield always with you, and the source of your unshakeable confidence.",
+    "p5_7": "Your voice is a projection of your will. When you sound from the center of your power, the world quiets down to hear you. Your presence is now undeniable."
   },
   "science_info": {
     "p4_1": [
@@ -1617,6 +1639,12 @@
       "Physiology: Stimulation of the thymus area (thymus gland) and sternal sensory receptors. This improves neuroimmune regulation, signaling the brain about physical integrity.",
       "Why: In moments of social threat, we instinctively compress the chest. This exercise forcibly shifts biochemistry from 'compression' to 'protected expansion'.",
       "Effect: A deep feeling of 'my zone is calmly protected' appears, emotional vulnerability decreases."
+    ],
+    "p5_7": [
+      "Action: Stand in a rooted position (GRAVITY GROUNDING). Take a deep breath into your belly. On the exhale, make a low, dense sound 'OOOMM' or 'RRRRR' coming from the very depths of your belly.",
+      "Biomechanics: Activation of the diaphragm and vocal cords, which are directly connected to the vagus nerve.",
+      "Bio-marker: Reduction in cortisol levels and stimulation of oxytocin release through rhythmic chest vibration.",
+      "Effect: Expression of strength in a socially acceptable way. Releasing blocks from throat and chest, gaining a 'commanding' voice that is listened to without objection."
     ]
   },
   "level_goal": {
