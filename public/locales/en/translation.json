@@ -255,7 +255,8 @@
     "sensory_bypass_message": "Hand control over to your body. Let your feet find the path on their own, while your mind remains clear and free from calculations.",
     "tonic_fluidity_message": "Become a master of your states. Learn to switch your inner power with a single impulse of will, leaving no inertia to old emotions.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
-    "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
+    "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology.",
+    "lymphatic_lock_message": "Break the stagnation inside you. Let the deep pressure of the diaphragm become a pump that washes away anxiety and returns purity and lightness to the body."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -381,7 +382,9 @@
     "mass_center": "Mass of Center",
     "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
     "vagal_brake": "Vagal Brake",
-    "vagal_brake_desc": "Instantly stop emotional surge and regain control over your state"
+    "vagal_brake_desc": "Instantly stop emotional surge and regain control over your state",
+    "lymphatic_lock": "Lymphatic Lock",
+    "lymphatic_lock_desc": "Unlock lymph flow and cleanse the body of stress biochemistry through diaphragm work."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1381,6 +1384,20 @@
       "With each exhale, warmth from the massage or softness in your eyes spreads throughout your body.",
       "You are no longer a prisoner of reaction. You are the one who presses the button and chooses peace.",
       "Stay in this darkness or this warmth for a few more seconds, completely releasing residual tension."
+    ],
+    "p5_3": [
+      "Place your hand on the area just above your navel",
+      "Take a deep breath through your nose directly 'into your belly'",
+      "On the inhale, push your palm outward with your belly",
+      "Fill the lower parts of your lungs so that your diaphragm descends as low as possible",
+      "Hold your breath for 3-5 seconds, then exhale smoothly",
+      "At the peak of the inhale, hold your breath and slightly push your abdominal wall forward, creating gentle internal pressure",
+      "Feel how this internal pressure massages deep tissues that are impossible to reach with your hands",
+      "You are literally squeezing out stagnant lymph, clearing the path for pure energy",
+      "With a smooth exhale, imagine how a stream of toxins and old tension flows away, making room for freshness",
+      "Repeat again: inhale, gentle expansion, lock",
+      "Feel how the 'knot' in your belly unties, turning into a warm, free space",
+      "Your body becomes a clean chemical reactor, where there is no room for stress remnants"
     ]
   },
   "final_phrases": {
@@ -1433,7 +1450,8 @@
     "p4_11": "When you trust your intuitive coordination, any complexity turns into an exciting game. Your accuracy is your natural nature.",
     "p4_12": "When you master tonic fluidity, no event will catch you off guard. Your flexibility is your invincibility in a world of change.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
-    "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
+    "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege.",
+    "p5_3": "When your diaphragm is free, you breathe with the full power of your being. Free lymph flow is your invulnerability and your inexhaustible inner purity."
   },
   "science_info": {
     "p4_1": [
@@ -1517,6 +1535,11 @@
       "Biology: Activation of parasympathetic tone through cranial nerves (Aschner-Dagnini reflex).",
       "Bio-marker: Reduction in heart rate and normalization of heart rate variability (HRV).",
       "Effect: Instant cooling of the 'emotional engine', transition from anxiety mode to cold calculation mode."
+    ],
+    "p5_3": [
+      "Biology: Direct mechanical massage of the cisterna chyli (main lymphatic collector) by diaphragm legs.",
+      "Why: Chronic stress causes the diaphragm to spasm, literally 'locking' lymph in the abdominal cavity. This exercise restores drainage.",
+      "Effect: The physical sensation of a 'lump in the stomach' disappears, metabolism improves and system detoxification occurs."
     ]
   },
   "level_goal": {
