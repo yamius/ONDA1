@@ -253,6 +253,7 @@
     "trajectory_detection_message": "Stop seeing faces and details. Start seeing vectors, speeds, and directions. Become a point of stillness through which the flow of trajectories passes.",
     "shadow_maneuvering_message": "Imagine the air around you is filled with invisible strings. Slip through them, maintaining the sensitivity and lightness of every movement.",
     "sensory_bypass_message": "Hand control over to your body. Let your feet find the path on their own, while your mind remains clear and free from calculations.",
+    "tonic_fluidity_message": "Become a master of your states. Learn to switch your inner power with a single impulse of will, leaving no inertia to old emotions.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
   },
@@ -375,6 +376,8 @@
     "shadow_maneuvering_desc": "Shift from stiffness to supple readiness through play with space",
     "sensory_bypass": "Sensory Bypass",
     "sensory_bypass_desc": "Tune instant coordination and trust the body's instinctive accuracy",
+    "tonic_fluidity": "Tonic Fluidity",
+    "tonic_fluidity_desc": "Practice instant transition from complete rest to active action.",
     "mass_center": "Mass of Center",
     "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
     "vagal_brake": "Vagal Brake",
@@ -1325,6 +1328,34 @@
       "Notice how the inner noise disappears in this rhythm. Only the pure joy of precise movement remains.",
       "You are one with space. You maneuver in it without effort or tension."
     ],
+    "p4_12": [
+      "Now — the Ventral Vagus phase",
+      "Sink into complete, total relaxation",
+      "Exhale all tension",
+      "Let the muscles of your face, shoulders, and belly become soft like warm clay",
+      "Feel how your body grows heavy, sinking into a state of safety and deep rest",
+      "Stay in this silence... you are completely protected, the world has frozen in peace",
+      "Attention! Switch! Sympathetic phase",
+      "Instantly gather yourself",
+      "Engage tone in every muscle, feel springy readiness in your body",
+      "You are a taut string, you are a predator before a leap",
+      "You are pure energy, ready to maneuver",
+      "Gaze sharp, breathing active, feet firmly pressed to the ground",
+      "You are ready for anything",
+      "Switch again! Return to softness",
+      "Drop tone as quickly as a light turns off",
+      "No residual tension. Become flowing water again, filling a vessel",
+      "Let every cell 'soften', restoring resources",
+      "And again — Take off! Gather your will into a fist",
+      "Fill your body with power, become hard as granite and fast as lightning",
+      "Feel that fire of readiness in your spine",
+      "Your attention is sharp as a razor",
+      "Final drop — into Silence. Relax instantly",
+      "Feel how your pulse slows and your mind becomes clear and peaceful",
+      "Notice how your brain obediently follows your body",
+      "Instantly changing blood chemistry from drive to peace",
+      "This is your ultimate power over yourself — to be stone or cloud by your choice"
+    ],
     "p5_1": [
       "Take up space. Spread your shoulders as if your back is a wide rock.",
       "Imagine that in your lower belly, just below the navel, lies a dense, warm, and very heavy block.",
@@ -1400,6 +1431,7 @@
     "p4_9": "When you see vectors instead of obstacles, the world becomes predictable and manageable. Your vision is your superpower.",
     "p4_10": "When your body gains the plasticity of a shadow, any obstacle becomes just an occasion for an elegant maneuver. Your readiness is your freedom.",
     "p4_11": "When you trust your intuitive coordination, any complexity turns into an exciting game. Your accuracy is your natural nature.",
+    "p4_12": "When you master tonic fluidity, no event will catch you off guard. Your flexibility is your invincibility in a world of change.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
   },
@@ -1467,6 +1499,12 @@
       "Biology: Stimulation of the superior colliculi and cerebellum for instant automatic movement correction.",
       "Why: Using peripheral vision for navigation disables slow 'conscious' planning and activates ancient, ultra-fast neural circuits.",
       "Effect: Optimization of proprioception and coordination under time pressure; relief of cognitive overload."
+    ],
+    "p4_12": [
+      "Biology: Training autonomic flexibility (Vagal Tone).",
+      "Why: The ability to quickly switch between branches of the autonomic nervous system prevents burnout and chronic stress.",
+      "Effect: Increased adaptability, control over reactions, and the ability to 'switch on' for work without a long warm-up.",
+      "Bio-marker: Increase in heart rate variability (HRV) and vagal tone index."
     ],
     "p5_1": [
       "Action: Assume a 'power pose': back straight, shoulders open, feet firmly planted on the support.",
