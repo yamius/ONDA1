@@ -249,6 +249,7 @@
     "tail_reset_message": "Feel your spine not as a rigid rod, but as a living, flowing stem. Let the wave of relaxation rise from the very roots of your body.",
     "lymphatic_drift_message": "Become fluid and weightless. Let a gentle wave of vibration wash away the remnants of fatigue and tension from every cell.",
     "deep_in_quick_out_message": "Shed the weight of the frozen moment. Let air into your deepest self and exhale resolve, making room for new movement.",
+    "distance_barrier_message": "The world ends where you begin. Feel the transparent but strong sphere of your presence and let it become your personal fortress.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
   },
@@ -363,6 +364,8 @@
     "lymphatic_drift_desc": "Clear the body of biochemical stress traces through gentle vibration",
     "deep_in_quick_out": "Deep In — Quick Out",
     "deep_in_quick_out_desc": "Release emotional numbness and prepare for maneuvering",
+    "distance_barrier": "Distance Barrier",
+    "distance_barrier_desc": "Feel and strengthen the boundaries of your personal space",
     "mass_center": "Mass of Center",
     "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
     "vagal_brake": "Vagal Brake",
@@ -1258,6 +1261,20 @@
       "Feel clarity in your head and springy readiness in your body.",
       "You control this rhythm, which means — you control the situation."
     ],
+    "p4_8": [
+      "Stand or sit straight. Imagine a transparent sphere around you at arm's length.",
+      "This is your sacred space — a zone where you are completely in control.",
+      "Feel the density of air inside this sphere. It's warm, calm, and belongs to you.",
+      "Imagine an object or person slowly entering this space.",
+      "Notice how your body instantly reacts with micro-tension.",
+      "Don't freeze. Gently 'roll back' with attention or micro-movement, keeping your sphere's shape intact.",
+      "Learn to change the boundaries of your zone: expand them when you feel strong, and compress them when protection is needed.",
+      "Let the muscles inside the sphere stay relaxed. All protection lies in the awareness of the boundary itself.",
+      "Breathe deeply, filling your 'bubble' of safety with confidence and silence.",
+      "If someone pushes on your boundaries, imagine your sphere becoming elastic, like rubber, gently repelling foreign influence.",
+      "You are the center of this space. Everything outside is just information. Everything inside is your unshakeable integrity.",
+      "Feel the ground with your feet: your sphere is rooted. It cannot be moved without your consent."
+    ],
     "p5_1": [
       "Take up space. Spread your shoulders as if your back is a wide rock.",
       "Imagine that in your lower belly, just below the navel, lies a dense, warm, and very heavy block.",
@@ -1329,6 +1346,7 @@
     "p4_5": "When your spine gains fluidity, static fear dissolves. Your flexibility is your protection and your inexhaustible life force.",
     "p4_6": "When lymph flows freely, stress finds no place to shelter. You are renewed, clean, and ready for a new day in your full power.",
     "p4_7": "When breathing becomes a tool, you stop waiting for the storm and start managing the sails. You are ready for any turn.",
+    "p4_8": "When your boundaries are conscious, you stop wasting energy on defense. Your sphere is the space of your freedom, where you are always safe.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
   },
@@ -1372,6 +1390,12 @@
       "Why: A sharp but controlled exhale interrupts the freeze cycle, activating resources for an active response to challenge.",
       "Effect: Rapid emotional stabilization and exit from 'mental fog' state.",
       "Bio-marker: Mobilization shift in heart rate variability."
+    ],
+    "p4_8": [
+      "Biology: Calibration of peripersonal space in the parietal cortex of the brain.",
+      "Why: Distance control is an evolutionary mechanism of mammals that, with clear awareness of boundaries, activates the parasympathetic system (relaxation).",
+      "Effect: Strengthening of psychological boundaries, reduction of social anxiety and feelings of vulnerability.",
+      "Bio-marker: Reduced cortisol levels while maintaining high stress resistance."
     ],
     "p5_1": [
       "Action: Assume a 'power pose': back straight, shoulders open, feet firmly planted on the support.",
