@@ -251,6 +251,7 @@
     "deep_in_quick_out_message": "Shed the weight of the frozen moment. Let air into your deepest self and exhale resolve, making room for new movement.",
     "distance_barrier_message": "The world ends where you begin. Feel the transparent but strong sphere of your presence and let it become your personal fortress.",
     "trajectory_detection_message": "Stop seeing faces and details. Start seeing vectors, speeds, and directions. Become a point of stillness through which the flow of trajectories passes.",
+    "shadow_maneuvering_message": "Imagine the air around you is filled with invisible strings. Slip through them, maintaining the sensitivity and lightness of every movement.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
   },
@@ -369,6 +370,8 @@
     "distance_barrier_desc": "Feel and strengthen the boundaries of your personal space",
     "trajectory_detection": "Trajectory Detection",
     "trajectory_detection_desc": "Enter 'strategic scanning' mode and speed up reaction to changes",
+    "shadow_maneuvering": "Shadow Maneuvering",
+    "shadow_maneuvering_desc": "Shift from stiffness to supple readiness through play with space",
     "mass_center": "Mass of Center",
     "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
     "vagal_brake": "Vagal Brake",
@@ -1292,6 +1295,20 @@
       "Stay in this state of 'transparent observer', for whom only the rhythm and direction of flow matters.",
       "Feel the lightness: when the world is a flow of trajectories, it's impossible to get stuck or lost in it."
     ],
+    "p4_10": [
+      "Begin moving slowly, imagining the space is threaded with laser beams or thin cobwebs.",
+      "Your task is not to touch any of them. Move smoothly, flowing around invisible obstacles.",
+      "Change levels: crouch slightly, dodge with your shoulder, let an imaginary thread pass over your head.",
+      "Feel the difference between 'tension' and 'readiness'. Your muscles are like violin strings: alive, but not clamped.",
+      "Let movement originate in the center of your body and spread to your fingertips.",
+      "Each step is a dance of maneuverability. You're always in balance, even in the moment of changing pose.",
+      "Imagine you're a shadow gliding along a wall. Intangible, fluid, fast.",
+      "Breathe in rhythm with your dodges: inhale — expansion, exhale — smooth glide past the obstacle.",
+      "Train your cerebellum: feel the space behind you, beside you, under your feet.",
+      "You're not fighting space — you're playing with it, becoming part of it.",
+      "Feel how your brain enjoys this complex and beautiful task, releasing background anxieties.",
+      "Freeze for a second in any pose and feel: you're ready to move in any direction in that same second."
+    ],
     "p5_1": [
       "Take up space. Spread your shoulders as if your back is a wide rock.",
       "Imagine that in your lower belly, just below the navel, lies a dense, warm, and very heavy block.",
@@ -1365,6 +1382,7 @@
     "p4_7": "When breathing becomes a tool, you stop waiting for the storm and start managing the sails. You are ready for any turn.",
     "p4_8": "When your boundaries are conscious, you stop wasting energy on defense. Your sphere is the space of your freedom, where you are always safe.",
     "p4_9": "When you see vectors instead of obstacles, the world becomes predictable and manageable. Your vision is your superpower.",
+    "p4_10": "When your body gains the plasticity of a shadow, any obstacle becomes just an occasion for an elegant maneuver. Your readiness is your freedom.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
   },
@@ -1420,6 +1438,12 @@
       "Biology: Activation of the dorsal stream of the visual system (the 'Where?' and 'How?' pathway through the parietal cortex).",
       "Why: Switching attention from objects ('What is it?') to movement vectors disables emotional evaluation and enables pure environmental calculation.",
       "Effect: Accelerated reaction speed to any changes and increased maneuverability in crowds or information flow."
+    ],
+    "p4_10": [
+      "Biology: Dynamic modulation of muscle tone through the basal ganglia.",
+      "Why: Training the cerebellum and basal ganglia allows the body to instantly adapt to changes without wasting resources on unnecessary tension.",
+      "Effect: Increased movement plasticity, improved coordination and sense of balance.",
+      "Bio-marker: Optimization of signals from proprioceptors (body position sensors in space)."
     ],
     "p5_1": [
       "Action: Assume a 'power pose': back straight, shoulders open, feet firmly planted on the support.",
