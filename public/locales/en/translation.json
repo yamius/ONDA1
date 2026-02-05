@@ -248,6 +248,7 @@
     "mammalian_neck_message": "Let your head move softly and freely, like a keen animal in a quiet forest. Let the tension flow away, opening the path to your clarity.",
     "tail_reset_message": "Feel your spine not as a rigid rod, but as a living, flowing stem. Let the wave of relaxation rise from the very roots of your body.",
     "lymphatic_drift_message": "Become fluid and weightless. Let a gentle wave of vibration wash away the remnants of fatigue and tension from every cell.",
+    "deep_in_quick_out_message": "Shed the weight of the frozen moment. Let air into your deepest self and exhale resolve, making room for new movement.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
   },
@@ -360,6 +361,8 @@
     "tail_reset_desc": "Release accumulated stress through a gentle wave along the spine",
     "lymphatic_drift": "Lymphatic Drift",
     "lymphatic_drift_desc": "Clear the body of biochemical stress traces through gentle vibration",
+    "deep_in_quick_out": "Deep In — Quick Out",
+    "deep_in_quick_out_desc": "Release emotional numbness and prepare for maneuvering",
     "mass_center": "Mass of Center",
     "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
     "vagal_brake": "Vagal Brake",
@@ -1237,6 +1240,24 @@
       "Breathe deeply and freely, helping your body renew with each cycle of vibration.",
       "Gradually reduce the intensity until the movement becomes a barely perceptible hum inside."
     ],
+    "p4_7": [
+      "Place one hand on your belly — feel the center of your stability.",
+      "Take a deep, slow inhale through your nose, directing air into the very depths of your belly.",
+      "Feel how your belly rounds, filling with the power of the earth.",
+      "Now — a short, sharp, but soft exhale through your mouth.",
+      "As if extinguishing a candle with one precise movement.",
+      "Inhale — quiet and low, like the tide of the ocean.",
+      "Exhale — clear and quick, like a switch clicking.",
+      "With each short exhale, shed the remnants of anxiety like dust from clothing.",
+      "Feel how an impulse to action is born inside, free from fuss.",
+      "You are no longer a 'frozen target' — you are a flow, ready to change direction.",
+      "Deep inhale again — slowly fill the base of your body, like a cup.",
+      "And a sharp exhale — like a whip crack, cutting off everything unnecessary.",
+      "Relax your shoulders on the exhale, but keep tone in your feet and palms.",
+      "Breathe as if you're starting the engine of your intention.",
+      "Feel clarity in your head and springy readiness in your body.",
+      "You control this rhythm, which means — you control the situation."
+    ],
     "p5_1": [
       "Take up space. Spread your shoulders as if your back is a wide rock.",
       "Imagine that in your lower belly, just below the navel, lies a dense, warm, and very heavy block.",
@@ -1307,6 +1328,7 @@
     "p4_4": "When your neck is free, your brain sheds the shackles of survival. Your maneuverability is the shortest path to wise decisions.",
     "p4_5": "When your spine gains fluidity, static fear dissolves. Your flexibility is your protection and your inexhaustible life force.",
     "p4_6": "When lymph flows freely, stress finds no place to shelter. You are renewed, clean, and ready for a new day in your full power.",
+    "p4_7": "When breathing becomes a tool, you stop waiting for the storm and start managing the sails. You are ready for any turn.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
   },
@@ -1344,6 +1366,12 @@
       "Why: The lymphatic system has no 'pump' of its own (heart); its movement depends entirely on muscle movement. Vibration is the most effective way to initiate this process.",
       "Effect: Accelerated elimination of stress metabolism products (cortisol, adrenaline) and reduction of swelling.",
       "Bio-marker: Reduced lactate and cortisol concentration in intercellular fluid."
+    ],
+    "p4_7": [
+      "Biology: Switching the sympathetic nervous system from 'freeze' mode to 'maneuver' mode.",
+      "Why: A sharp but controlled exhale interrupts the freeze cycle, activating resources for an active response to challenge.",
+      "Effect: Rapid emotional stabilization and exit from 'mental fog' state.",
+      "Bio-marker: Mobilization shift in heart rate variability."
     ],
     "p5_1": [
       "Action: Assume a 'power pose': back straight, shoulders open, feet firmly planted on the support.",
