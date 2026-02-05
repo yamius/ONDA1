@@ -258,7 +258,8 @@
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology.",
     "lymphatic_lock_message": "Break the stagnation inside you. Let the deep pressure of the diaphragm become a pump that washes away anxiety and returns purity and lightness to the body.",
     "gravity_grounding_message": "Stop resisting gravity — let it become your strength. Become heavy, become part of the earth, become the one who cannot be moved.",
-    "testosterone_vertical_message": "Stretch your power into a line. Become a bridge between earth and sky, turning your posture into an undeniable manifesto of calm power."
+    "testosterone_vertical_message": "Stretch your power into a line. Become a bridge between earth and sky, turning your posture into an undeniable manifesto of calm power.",
+    "protected_heart_message": "Find your anchor point. Let the warmth of your hand create a zone of absolute peace where your feelings and your strength are born."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -390,7 +391,9 @@
     "gravity_grounding": "Gravity Grounding",
     "gravity_grounding_desc": "Gain unshakeable stability and turn off background anxiety through connection with support.",
     "testosterone_vertical": "Testosterone Vertical",
-    "testosterone_vertical_desc": "Form a physical core of dominance and activate confidence hormones."
+    "testosterone_vertical_desc": "Form a physical core of dominance and activate confidence hormones.",
+    "protected_heart": "Protected Heart",
+    "protected_heart_desc": "Strengthen the inner center of safety and activate neuroimmune protection."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1438,6 +1441,21 @@
       "Notice how your facial expression changes — your gaze becomes direct, your chin — free",
       "You are broadcasting calm dominance",
       "You don't need to prove anything, your form speaks for itself"
+    ],
+    "p5_6": [
+      "Place your palm on the center of your chest",
+      "Press slightly to feel firm contact",
+      "Feel the weight and warmth of your palm. This is the physical anchor of your 'Self'.",
+      "On the inhale, push your chest towards your hand. Create space inside yourself.",
+      "Breathe as if air passes 'under' the palm, gently expanding the chest from inside and lifting your hand",
+      "Imagine that under your palm is a source of steady, dense light. With each breath, it grows brighter.",
+      "You don't need to build external shields — your protection is born here, in the very center of your being.",
+      "Breathe deeply and slowly.",
+      "The palm signals the nervous system: 'I am here, I am safe, I am in control'.",
+      "Feel how your shoulders and neck relax as attention moves to this warm point in the center of your chest.",
+      "All external noise stays outside.",
+      "Inside — only the steady rhythm and density of your presence.",
+      "Stay in this contact until you feel that the 'emptiness' in your chest has filled with calm power."
     ]
   },
   "final_phrases": {
@@ -1493,7 +1511,8 @@
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege.",
     "p5_3": "When your diaphragm is free, you breathe with the full power of your being. Free lymph flow is your invulnerability and your inexhaustible inner purity.",
     "p5_4": "When you are grounded by gravity, the world stops being a storm and becomes just a landscape around your monolith. Your stability is your true nature.",
-    "p5_5": "When your vertical is built, stress cannot bend you. Your posture is your biological truth, in which there is no room for doubt."
+    "p5_5": "When your vertical is built, stress cannot bend you. Your posture is your biological truth, in which there is no room for doubt.",
+    "p5_6": "When your center is protected from within, external storms lose their power. Your chest is a shield always with you, and the source of your unshakeable confidence."
   },
   "science_info": {
     "p4_1": [
@@ -1593,6 +1612,11 @@
       "Biology: Activation of proprioceptive pathways leading to the reticular formation of the brainstem — the center of wakefulness and readiness.",
       "Bio-marker: Balancing somatotropin levels (growth and recovery hormone) and suppression of prolactin (stress submission and defeat hormone).",
       "Effect: Formation of a powerful non-verbal signal 'I am here, I am strong'. Others read this code as a sign of high status and reliability."
+    ],
+    "p5_6": [
+      "Physiology: Stimulation of the thymus area (thymus gland) and sternal sensory receptors. This improves neuroimmune regulation, signaling the brain about physical integrity.",
+      "Why: In moments of social threat, we instinctively compress the chest. This exercise forcibly shifts biochemistry from 'compression' to 'protected expansion'.",
+      "Effect: A deep feeling of 'my zone is calmly protected' appears, emotional vulnerability decreases."
     ]
   },
   "level_goal": {
