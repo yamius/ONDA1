@@ -245,6 +245,7 @@
     "soft_gaze_message": "Let your eyes look not at a point — but into space. Let the world unfold before you.",
     "orienting_inhale_message": "Inhale sharply and keenly, as if trying to catch a faint scent of change. Let this breath bring you back from the labyrinth of thoughts to the real world.",
     "audio_scan_message": "Become hearing itself. Let the sounds of the world pass through you without touching your feelings — as if you're tuning a sensitive instrument to the frequency of silence.",
+    "mammalian_neck_message": "Let your head move softly and freely, like a keen animal in a quiet forest. Let the tension flow away, opening the path to your clarity.",
     "mass_center_message": "Feel your inner gravity. When you have weight, the world stops swaying you — you become the reference point.",
     "vagal_brake_message": "Press pause. Calm your pulse and return to a point of absolute calm, using direct levers of control over your biology."
   },
@@ -351,6 +352,8 @@
     "orienting_inhale_desc": "Instantly restore mental clarity through attention activation",
     "audio_scan": "Audio Scan",
     "audio_scan_desc": "Tune attention filters and cut through emotional noise",
+    "mammalian_neck": "Mammalian Neck",
+    "mammalian_neck_desc": "Release neck tension and oxygenate the brain",
     "mass_center": "Mass of Center",
     "mass_center_desc": "Shift blood biochemistry from 'anxious' to 'dominant' through mass and breathing",
     "vagal_brake": "Vagal Brake",
@@ -1185,6 +1188,20 @@
       "Notice how in the pauses between sounds, your own inner silence is born.",
       "The reticular formation of your brain is now clear and ready to work, cutting off everything unnecessary."
     ],
+    "p4_4": [
+      "Lower your shoulders and feel the weight of your arms; let them pull the tension down, toward the earth.",
+      "Imagine your nose is the tip of a fine brush, barely touching an invisible canvas.",
+      "Begin slowly tracing a smooth horizontal 'figure eight' in the air with your nose.",
+      "Move smoothly and silently, like a graceful animal maintaining full maneuverability.",
+      "Feel the ice melting where the skull meets the spine — where anxiety hides.",
+      "Your neck is no longer a frozen shell; it's a living, flexible bridge between body and mind.",
+      "With each loop of the 'figure eight', vessels open up, allowing blood to flow to the prefrontal cortex.",
+      "Feel how the back of your head becomes light, and the inner space of your head — bright and spacious.",
+      "Reduce the amplitude to a barely noticeable whisper; let the movement become almost imaginary.",
+      "Notice how along with the neck muscles, the root of the tongue and muscles around the eyes relax.",
+      "Your vestibular system finds the point of perfect balance, giving you support in motion.",
+      "Stay in this feeling of fluid strength, where there's no place for tension, only free energy."
+    ],
     "p5_1": [
       "Take up space. Spread your shoulders as if your back is a wide rock.",
       "Imagine that in your lower belly, just below the navel, lies a dense, warm, and very heavy block.",
@@ -1252,6 +1269,7 @@
     "p4_1": "When your gaze is embraced by the silence of the horizon, the world ceases to be a threat and becomes a space for your expression.",
     "p4_2": "When you actively perceive the world, anxiety loses its power over you. Your nose is a navigator that will always guide you from the storm of emotions to clarity.",
     "p4_3": "When you control the filters of your attention, the world ceases to be chaos. Your selectivity is your shield and your clarity in any flow of events.",
+    "p4_4": "When your neck is free, your brain sheds the shackles of survival. Your maneuverability is the shortest path to wise decisions.",
     "p5_1": "When your center gains mass, your boundaries become invisible armor. You dominate not through force, but through the inevitability of your presence.",
     "p5_2": "When you master the vagal brake, you become invulnerable to provocations. Your pulse is your choice, and your calm is your main privilege."
   },
@@ -1272,6 +1290,11 @@
       "Why: Training of signal filtering in the reticular formation of the brainstem.",
       "Effect: Increased cognitive selectivity — the ability to instantly cut out the unnecessary and maintain focus.",
       "Bio-marker: Shift of dominance toward theta rhythms while maintaining high alertness."
+    ],
+    "p4_4": [
+      "Biology: Reduction of deep suboccipital muscle tone.",
+      "Bio-marker: Optimization of vestibulo-spinal tract function.",
+      "Effect: Improved blood supply to the prefrontal cortex."
     ],
     "p5_1": [
       "Action: Assume a 'power pose': back straight, shoulders open, feet firmly planted on the support.",
