@@ -1397,6 +1397,16 @@ const OndaLevel1 = () => {
       icon: Zap,
       practices: [],  // Ждём данные от пользователя
       artifact: null  // Ждём данные от пользователя
+    },
+    {
+      id: 11,
+      name: t('circuits.circuit_11_name'),
+      subtitle: t('circuits.circuit_11_subtitle'),
+      element: 'IGNIS',
+      color: 'from-rose-500 to-pink-400',
+      icon: Zap,
+      practices: [],  // Ждём данные от пользователя
+      artifact: null  // Ждём данные от пользователя
     }
   ], [i18n.language]);
 
@@ -3365,6 +3375,8 @@ const OndaLevel1 = () => {
         ? 'bg-gradient-to-br from-cyan-900 via-sky-800 to-cyan-900'
         : activeCircuit === 10
         ? 'bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950'
+        : activeCircuit === 11
+        ? 'bg-gradient-to-br from-rose-950 via-pink-900 to-rose-950'
         : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
     }`}>
       {/* Debug Monitor - ПЕРВЫМ для захвата всех логов */}
@@ -3404,6 +3416,8 @@ const OndaLevel1 = () => {
               ? 'bg-cyan-500/40 hover:bg-cyan-500/60 border border-cyan-400/30'
               : activeCircuit === 10
               ? 'bg-orange-500/40 hover:bg-orange-500/60 border border-amber-400/30'
+              : activeCircuit === 11
+              ? 'bg-rose-500/40 hover:bg-rose-500/60 border border-pink-400/30'
               : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
           }`}
           style={{ 
@@ -3441,6 +3455,8 @@ const OndaLevel1 = () => {
               ? 'bg-cyan-500/40 hover:bg-cyan-500/60 border border-cyan-400/30'
               : activeCircuit === 10
               ? 'bg-orange-500/40 hover:bg-orange-500/60 border border-amber-400/30'
+              : activeCircuit === 11
+              ? 'bg-rose-500/40 hover:bg-rose-500/60 border border-pink-400/30'
               : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
           }`}
           style={{ 
@@ -3582,6 +3598,8 @@ const OndaLevel1 = () => {
                       ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
                       : activeCircuit === 10
                       ? 'bg-orange-500/20 hover:bg-orange-500/30 border-amber-400/50'
+                      : activeCircuit === 11
+                      ? 'bg-rose-500/20 hover:bg-rose-500/30 border-pink-400/50'
                       : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
                   }`}
                 >
@@ -3611,6 +3629,8 @@ const OndaLevel1 = () => {
                       ? 'bg-cyan-500/30 border-cyan-400/60'
                       : activeCircuit === 10
                       ? 'bg-orange-500/30 border-amber-400/60'
+                      : activeCircuit === 11
+                      ? 'bg-rose-500/30 border-pink-400/60'
                       : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
                     {Array.from({length: 4}, (_, i) => i + 1).map(chapter => {
@@ -3649,6 +3669,8 @@ const OndaLevel1 = () => {
                               ? selectedChapter === chapter ? 'bg-cyan-500/50 text-white' : 'hover:bg-cyan-500/40'
                               : activeCircuit === 10
                               ? selectedChapter === chapter ? 'bg-orange-500/50 text-white' : 'hover:bg-orange-500/40'
+                              : activeCircuit === 11
+                              ? selectedChapter === chapter ? 'bg-rose-500/50 text-white' : 'hover:bg-rose-500/40'
                               : selectedChapter === chapter ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                           }`}
                         >
@@ -3688,6 +3710,8 @@ const OndaLevel1 = () => {
                       ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
                       : activeCircuit === 10
                       ? 'bg-orange-500/20 hover:bg-orange-500/30 border-amber-400/50'
+                      : activeCircuit === 11
+                      ? 'bg-rose-500/20 hover:bg-rose-500/30 border-pink-400/50'
                       : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
                   }`}
                 >
@@ -3720,10 +3744,12 @@ const OndaLevel1 = () => {
                       ? 'bg-cyan-500/30 border-cyan-400/60'
                       : activeCircuit === 10
                       ? 'bg-orange-500/30 border-amber-400/60'
+                      : activeCircuit === 11
+                      ? 'bg-rose-500/30 border-pink-400/60'
                       : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
                     {Array.from({length: 12}, (_, i) => i + 1).map(level => {
-                      const isAvailable = level <= 10;
+                      const isAvailable = level <= 11;
                       return (
                         <button
                           key={level}
@@ -3758,6 +3784,8 @@ const OndaLevel1 = () => {
                               ? level === selectedLevel ? 'bg-cyan-500/50 text-white' : 'hover:bg-cyan-500/40'
                               : activeCircuit === 10
                               ? level === selectedLevel ? 'bg-orange-500/50 text-white' : 'hover:bg-orange-500/40'
+                              : activeCircuit === 11
+                              ? level === selectedLevel ? 'bg-rose-500/50 text-white' : 'hover:bg-rose-500/40'
                               : level === selectedLevel ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                           }`}
                         >
@@ -3823,6 +3851,8 @@ const OndaLevel1 = () => {
               ? 'border-cyan-500/40'
               : activeCircuit === 10
               ? 'border-orange-500/40'
+              : activeCircuit === 11
+              ? 'border-rose-500/40'
               : 'border-purple-500/30'
           }`}>
             <div className="max-w-4xl mx-auto">
@@ -3898,6 +3928,8 @@ const OndaLevel1 = () => {
               ? 'border-cyan-500/40'
               : activeCircuit === 10
               ? 'border-orange-500/40'
+              : activeCircuit === 11
+              ? 'border-rose-500/40'
               : 'border-purple-500/30'
           }`}>
             <div className="flex justify-between mb-2 text-sm">
@@ -3934,6 +3966,8 @@ const OndaLevel1 = () => {
               ? 'bg-gradient-to-br from-cyan-800/30 to-sky-700/30 border-cyan-500/40'
               : activeCircuit === 10
               ? 'bg-gradient-to-br from-orange-800/30 to-amber-700/30 border-orange-500/40'
+              : activeCircuit === 11
+              ? 'bg-gradient-to-br from-rose-800/30 to-pink-700/30 border-rose-500/40'
               : 'bg-gradient-to-br from-purple-900/20 to-indigo-900/20 border-purple-500/30'
           }`}>
             <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
@@ -3979,6 +4013,8 @@ const OndaLevel1 = () => {
                 ? 'border-cyan-500/30'
                 : activeCircuit === 10
                 ? 'border-orange-500/30'
+                : activeCircuit === 11
+                ? 'border-rose-500/30'
                 : 'border-purple-500/20'
             }`}>
               <p className="text-gray-400 text-sm mb-1">{t('stats.total_qnt')}</p>
@@ -4003,6 +4039,8 @@ const OndaLevel1 = () => {
                 ? 'border-cyan-500/30'
                 : activeCircuit === 10
                 ? 'border-orange-500/30'
+                : activeCircuit === 11
+                ? 'border-rose-500/30'
                 : 'border-purple-500/20'
             }`}>
               <p className="text-gray-400 text-sm mb-1">{t('stats.time_in_practices')}</p>
@@ -4029,6 +4067,8 @@ const OndaLevel1 = () => {
                 ? 'border-cyan-500/30'
                 : activeCircuit === 10
                 ? 'border-orange-500/30'
+                : activeCircuit === 11
+                ? 'border-rose-500/30'
                 : 'border-purple-500/20'
             }`}>
               <p className="text-gray-400 text-sm mb-1">{t('stats.avg_quality')}</p>
@@ -4053,6 +4093,8 @@ const OndaLevel1 = () => {
                 ? 'border-cyan-500/30'
                 : activeCircuit === 10
                 ? 'border-orange-500/30'
+                : activeCircuit === 11
+                ? 'border-rose-500/30'
                 : 'border-purple-500/20'
             }`}>
               <p className="text-gray-400 text-sm mb-1">{t('stats.day_streak')}</p>
@@ -4271,6 +4313,8 @@ const OndaLevel1 = () => {
                     ? 'border-cyan-500/40 hover:border-cyan-400/60'
                     : activeCircuit === 10
                     ? 'border-orange-500/40 hover:border-orange-400/60'
+                    : activeCircuit === 11
+                    ? 'border-rose-500/40 hover:border-rose-400/60'
                     : 'border-purple-500/30 hover:border-purple-400/50'
                 }`}
               >
@@ -4402,6 +4446,8 @@ const OndaLevel1 = () => {
             ? 'bg-gradient-to-br from-cyan-800/40 via-sky-700/30 to-cyan-800/40 border-cyan-500/40'
             : activeCircuit === 10
             ? 'bg-gradient-to-br from-orange-800/40 via-amber-700/30 to-orange-800/40 border-orange-500/40'
+            : activeCircuit === 11
+            ? 'bg-gradient-to-br from-rose-800/40 via-pink-700/30 to-rose-800/40 border-rose-500/40'
             : 'bg-gradient-to-br from-indigo-900/30 via-purple-900/20 to-pink-900/30 border-indigo-500/30'
         }`}>
           <div className="space-y-4 text-gray-200">
@@ -4416,13 +4462,13 @@ const OndaLevel1 = () => {
 
             <div className="text-center py-4">
               <p className={`text-xl font-bold mb-2 ${
-                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : 'text-pink-300'
+                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : 'text-pink-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_1`)}</p>
               <p className={`text-lg ${
-                activeCircuit === 2 ? 'text-teal-300' : activeCircuit === 3 ? 'text-orange-300' : activeCircuit === 4 ? 'text-cyan-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-teal-300' : activeCircuit === 7 ? 'text-blue-300' : activeCircuit === 8 ? 'text-violet-300' : activeCircuit === 9 ? 'text-sky-300' : activeCircuit === 10 ? 'text-amber-300' : 'text-purple-300'
+                activeCircuit === 2 ? 'text-teal-300' : activeCircuit === 3 ? 'text-orange-300' : activeCircuit === 4 ? 'text-cyan-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-teal-300' : activeCircuit === 7 ? 'text-blue-300' : activeCircuit === 8 ? 'text-violet-300' : activeCircuit === 9 ? 'text-sky-300' : activeCircuit === 10 ? 'text-amber-300' : activeCircuit === 11 ? 'text-pink-300' : 'text-purple-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_2`)}</p>
               <p className={`text-lg ${
-                activeCircuit === 2 ? 'text-blue-300' : activeCircuit === 3 ? 'text-yellow-300' : activeCircuit === 4 ? 'text-teal-200' : activeCircuit === 5 ? 'text-stone-100' : activeCircuit === 6 ? 'text-emerald-200' : activeCircuit === 7 ? 'text-sky-200' : activeCircuit === 8 ? 'text-indigo-200' : activeCircuit === 9 ? 'text-cyan-200' : activeCircuit === 10 ? 'text-amber-200' : 'text-indigo-300'
+                activeCircuit === 2 ? 'text-blue-300' : activeCircuit === 3 ? 'text-yellow-300' : activeCircuit === 4 ? 'text-teal-200' : activeCircuit === 5 ? 'text-stone-100' : activeCircuit === 6 ? 'text-emerald-200' : activeCircuit === 7 ? 'text-sky-200' : activeCircuit === 8 ? 'text-indigo-200' : activeCircuit === 9 ? 'text-cyan-200' : activeCircuit === 10 ? 'text-amber-200' : activeCircuit === 11 ? 'text-pink-200' : 'text-indigo-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_3`)}</p>
             </div>
             
@@ -4823,7 +4869,7 @@ const OndaLevel1 = () => {
           </div>
 
           <div className="text-center mt-6">
-            {activeCircuit < 10 && (
+            {activeCircuit < 11 && (
               <button
                 onClick={() => { 
                   setActiveCircuit(activeCircuit + 1); 
@@ -4855,6 +4901,8 @@ const OndaLevel1 = () => {
                     ? 'bg-gradient-to-r from-cyan-500 to-sky-500 hover:from-cyan-400 hover:to-sky-400 text-white border-2 border-cyan-300/50'
                     : activeCircuit + 1 === 10
                     ? 'bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white border-2 border-orange-300/50'
+                    : activeCircuit + 1 === 11
+                    ? 'bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-400 hover:to-pink-400 text-white border-2 border-rose-300/50'
                     : 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-2 border-purple-300/50'
                 }`}
               >

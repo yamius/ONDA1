@@ -14,7 +14,7 @@
   "part_name_8": "I Focus",
   "part_name_9": "I Shape the Vision",
   "part_name_10": "I Express",
-  "part_name_11": "I Exchange",
+  "part_name_11": "I Interact",
   "part_name_12": "I Collaborate",
   "quote": "To move towards the light<br/>first you need to put down roots",
   "quote_level_1": "To move towards the light<br/>first you need to put down roots",
@@ -27,6 +27,7 @@
   "quote_level_8": "The power of attention is born<br/>where you choose one.",
   "quote_level_9": "Image is the bridge between thought and matter,<br/>light that illuminates the path before you lay it.",
   "quote_level_10": "Expression is the moment<br/>when the inner takes form in the outer.",
+  "quote_level_11": "Interaction is a dance<br/>in which two flames become a common hearth, without losing their color.",
   "you": "You",
   "nav": {
     "home": "Home",
@@ -135,6 +136,11 @@
     "circuit_10_subtitle": "The Social Human / Master of Manifestation",
     "circuit_10_desc": "Awareness of your role and value in society.<br/>Not just transmitting sounds — but conveying your inner image outward.<br/>The point of social birth, where you announce your presence to the world.",
     "circuit_10_chapter": "Chapter 4: Society (IGNIS)",
+    "circuit_11_name": "I Interact",
+    "circuit_11_title": "I Interact",
+    "circuit_11_subtitle": "The Social Human / Master of Resonance",
+    "circuit_11_desc": "Awareness of the value of exchange and partnership.<br/>Not just contact — but the ability to hear the world's responsive impulse.<br/>The point of social balance, where your 'I want' meets another person's 'I want'.",
+    "circuit_11_chapter": "Chapter 4: Society (IGNIS)",
     "circuit_4_name": "I Maneuver",
     "circuit_4_subtitle": "Small Mammal / Agility and Evasion",
     "circuit_4_desc": "Awareness of mobility and reaction.<br/>Not attack, not freezing — the ability to change trajectory.<br/>A point of living adaptation, where movement is born before thought.",
@@ -587,6 +593,14 @@
       "text_4": "You learn to speak so you are heard, and act so you are seen.",
       "text_5": "Not forcing — but captivating.",
       "text_6": "Not hiding behind masks — but expressing your essence through them."
+    },
+    "level_11": {
+      "text_1": "Attention expands, encompassing the space between you and the other.",
+      "text_2": "You begin to feel the 'social skin' — the invisible boundary and points of contact.",
+      "text_3": "The world of people feels like a living field of connections, where every gesture evokes a response.",
+      "text_4": "You learn not only to transmit, but also to receive, creating the rhythm of communication.",
+      "text_5": "Not dominating — but attuning.",
+      "text_6": "Not adapting — but finding a common frequency."
     }
   },
   "goals": {
@@ -1406,6 +1420,23 @@
       "wisdom_2": "Enough to sound clear and open.",
       "wisdom_3": "In this sound, recognition is born.",
       "wisdom_4": "In this expression — life."
+    },
+    "level_11": {
+      "intro": "Learn to interact — see in the other not an obstacle or a means, but a living mirror. Maintain interest in the otherness of another, turning differences into opportunities.",
+      "game_task": "Game and energetic task — activation of the Interaction field (IGNIS resonance).",
+      "principle_1": "Interaction is not compromise. It is the art of mutual amplification.",
+      "principle_2": "Your boundaries become flexible: you know where to let the other in, and where to leave space for yourself.",
+      "principle_3": "Openness is the shortest path to understanding.",
+      "story_1": "The world unfolds as a network of dialogues.",
+      "story_2": "You are no longer a lonely island — you are part of an archipelago.",
+      "story_3": "Not just a unit — but a force multiplier in partnership.",
+      "identity_1": "You are the Social Human, master of fine-tuning in the fire of relationships.",
+      "identity_2": "Breath becomes synchronous and calm. Inhale absorbs the partner's attention.",
+      "identity_3": "Exhale directs your impulse toward them.",
+      "wisdom_1": "No need to defend. No need to manipulate.",
+      "wisdom_2": "Enough to be sincere and attentive to the response.",
+      "wisdom_3": "In this exchange, trust is born.",
+      "wisdom_4": "In this encounter — life."
     }
   },
   "terra_speaks": {
@@ -1469,6 +1500,12 @@
       "quote_2": "Sincerity is fire that does not burn, but illuminates the path.",
       "quote_3": "One who fears to sound remains hostage to their fantasies.",
       "quote_4": "The world learns about you exactly as much as you choose to show it."
+    },
+    "level_11": {
+      "quote_1": "True strength is known not in struggle, but in the ability to negotiate.",
+      "quote_2": "Your flame shines brighter when it is reflected in the eyes of another.",
+      "quote_3": "Interaction is a bridge you build from both sides simultaneously.",
+      "quote_4": "To hear what is not said — the highest form of social agility."
     }
   },
   "terra_final": {
@@ -1534,6 +1571,12 @@
       "line_2": "Your presence has become tangible, and your self-expression — a conscious gift to the world.",
       "line_3": "You are ready to go further — to deep interaction, to the dance of interests and exchange of power.",
       "line_4": "To co-creation, where 'I' becomes part of the great 'WE'."
+    },
+    "level_11": {
+      "line_1": "Now you know how to not only manifest, but enter deep resonance with the world of people.",
+      "line_2": "Your relationships have become a field for growth, and each contact — a conscious exchange.",
+      "line_3": "You are ready to go further — to the peak of the social level, to the magic of joint action.",
+      "line_4": "To the state of 'I CO-CREATE', where personal mastery becomes a shared miracle."
     }
   },
   "adaptive_practices": {
