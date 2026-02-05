@@ -262,7 +262,8 @@
     "protected_heart_message": "Find your anchor point. Let the warmth of your hand create a zone of absolute peace where your feelings and your strength are born.",
     "silent_roar_message": "Give your strength a voice. Let the low vibration of your body fill the space, securing your right to territory and silence.",
     "territorial_gaze_message": "Look not at the world, but through it. Your gaze is not a search for threats, it's an inventory of your domain.",
-    "heart_coherence_message": "Tune your inner frequency. When your heart beats in the rhythm of harmony, someone else's chaos is powerless against your calm."
+    "heart_coherence_message": "Tune your inner frequency. When your heart beats in the rhythm of harmony, someone else's chaos is powerless against your calm.",
+    "solid_aura_message": "Feel where the world ends and you begin. Densify the space around your heart and center, creating a zone of absolute inviolability."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -402,7 +403,9 @@
     "territorial_gaze": "Territorial Gaze",
     "territorial_gaze_desc": "Stabilize visual perception and assert your dominance in space.",
     "heart_coherence": "Heart Coherence",
-    "heart_coherence_desc": "Create a coherent electromagnetic field and protect your system from external emotional noise."
+    "heart_coherence_desc": "Create a coherent electromagnetic field and protect your system from external emotional noise.",
+    "solid_aura": "Solid Aura",
+    "solid_aura_desc": "Create a physically tangible barrier of personal space and activate the center of bodily 'Self'."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1523,6 +1526,24 @@
       "Feel the quiet joy and dignity coming from this center.",
       "This is your true density of presence.",
       "Stay in this resonance, feeling how your whole body begins to vibrate in unison with your heart."
+    ],
+    "p5_10": [
+      "Slowly raise your palms to chest level. Feel the warmth and slight air resistance between your hands and body.",
+      "Begin smooth, enveloping movements with your palms along your chest and belly at a distance of 20-30 cm",
+      "As if stroking an invisible sphere",
+      "Focus on your palms",
+      "Let them become super-sensitive sensors feeling the boundaries of your aura.",
+      "Move your hands down to your belly, marking your perimeter.",
+      "The air inside this dome is yours, it's saturated with your calm.",
+      "You'll notice how with this movement external bustle quiets down.",
+      "Everything beyond the dome loses its sharpness.",
+      "Your brain — the insular cortex — is now registering: 'Here — I am, here — Safe'.",
+      "Feel the density of this invisible layer.",
+      "It's flexible, but impenetrable to others' pressure.",
+      "Inhale, expanding this dome, and exhale, making its walls stronger.",
+      "Hold this feeling of 'volume' around you, even when you lower your hands.",
+      "Your dome always stays with you.",
+      "Now any external impact first encounters this density, giving you time for a conscious response."
     ]
   },
   "final_phrases": {
@@ -1582,7 +1603,8 @@
     "p5_6": "When your center is protected from within, external storms lose their power. Your chest is a shield always with you, and the source of your unshakeable confidence.",
     "p5_7": "Your voice is a projection of your will. When you sound from the center of your power, the world quiets down to hear you. Your presence is now undeniable.",
     "p5_8": "Where your gaze reaches, foreign influence ends. You see everything, and this vision makes you invulnerable.",
-    "p5_9": "He who owns his rhythm owns the situation. Your coherent heart is a compass that always points to your personal power and safety."
+    "p5_9": "He who owns his rhythm owns the situation. Your coherent heart is a compass that always points to your personal power and safety.",
+    "p5_10": "When your boundaries are felt at the biological level, you don't need to prove them. Your density speaks for itself, making the world respect your space."
   },
   "science_info": {
     "p4_1": [
@@ -1704,6 +1726,11 @@
       "Biology: Formation of an ordered electromagnetic field (according to HeartMath Institute research). The heart is the most powerful EM field generator in the body.",
       "Bio-marker: Synchronization of brain rhythms (alpha waves) with heart rate variability.",
       "Effect: A state of 'invulnerability'. Your system operates at its own frequency, so others' anger, panic or pressure cannot resonate with you and 'infect' you."
+    ],
+    "p5_10": [
+      "Physiology: Tactile visualization activates the insular cortex (insula) — a key brain node responsible for interoception (sensing processes inside the body) and forming the body boundary schema.",
+      "Bio-marker: Enhancement of alpha rhythms signaling a state of protected rest.",
+      "Effect: Personality boundaries begin to be felt physically, making your presence 'dense' and natural to others."
     ]
   },
   "level_goal": {
