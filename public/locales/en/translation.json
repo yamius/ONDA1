@@ -2825,6 +2825,33 @@
       "result_2": "You recognize patterns before they capture your attention.",
       "result_3": "You maintain crystal-clear thinking even amid information overload.",
       "result_outro": "Radical reduction of cognitive load through sharpening the tools of perception."
+    },
+    "level_8": {
+      "title": "PART 8: I FOCUS",
+      "protocol": "Protocol: Cognitive Control and Neural Resilience",
+      "intro": "Part 8 is the heart of the cognitive level. Here, attention ceases to be a reactive response to external stimuli and becomes a controlled instrument. We learn to choose what matters in the present moment and hold that focus, ignoring noise. This is the stage of transforming attention from chaotic to deliberate.",
+      "basis": "At this stage, we work with the architecture of attention and the mechanisms for suppressing 'internal noise'. The key biological challenge: maintaining a target and efficiently distributing cognitive energy.",
+      "architecture_title": "Part 8 Technology Stack",
+      "architecture_intro": "Target systems and deep work mechanisms:",
+      "pillar_1_title": "DLPFC and Executive Control",
+      "pillar_1_text": "The Dorsolateral Prefrontal Cortex is the chief controller of goal retention. Strengthening the PFC–basal ganglia link for seamless return to target and filtering of impulsive urges.",
+      "pillar_2_title": "Dorsal Attention Network (DAN) and DMN Suppression",
+      "pillar_2_text": "Activating the voluntary, directed attention network. Training the brain to timely switch off 'mind-wandering mode' (Default Mode Network) for deep task immersion.",
+      "pillar_3_title": "Gamma Binding and Cholinergic Modulation",
+      "pillar_3_text": "Synchronizing neurons at gamma frequency to assemble scattered perceptual elements into a unified, coherent image. Working with acetylcholine, which literally 'spotlights' the needed neural connections.",
+      "pillar_4_title": "Locus Coeruleus",
+      "pillar_4_text": "Regulating alertness levels through norepinephrine. Anterior Cingulate Cortex (ACC) — monitoring distractions and detecting errors.",
+      "bio_focus_title": "Biological Protocol",
+      "bio_focus_intro": "Tuning the brain for 'deep work' mode and preventing cognitive burnout:",
+      "bio_focus_1": "Neural stabilization of the DLPFC for rigid focus control. Dopamine calibration — micro-rewards to maintain high motivation and working memory capacity.",
+      "bio_focus_2": "Ultradian optimization: working in natural rhythms (90/20 minute cycles) for timely neurotransmitter recovery.",
+      "bio_focus_3": "Metacognitive return: gentle, effortless redirection of attention to the focus object. Vagal brake: breathing to maintain body calm during high-intensity mental focus.",
+      "result_title": "Result",
+      "result_intro": "Achieving 'neural resilience'.",
+      "result_1": "You don't just concentrate — you become the master of your attention.",
+      "result_2": "The brain learns to enter deep focus without excessive effort, maintaining clarity and conserving biological energy.",
+      "result_3": "Optimization of cognitive inhibition — the system's ability to actively ignore irrelevant stimuli.",
+      "result_outro": "Increased beta-rhythm power in frontal lobes, heart rate stabilization, and reduced reaction time when switching between tasks."
     }
   }
 }
