@@ -203,6 +203,140 @@ circuits.circuit_N_chapter  — К какой главе относится ("Г
 
 ---
 
+## 📖 Аддоны (Addon-страницы)
+
+### Что такое аддон
+
+**Аддон** — это полноэкранная отдельная страница с расширенной информацией о части (протокол, научная база, биологический фокус, результаты). Каждая Part может иметь свой аддон.
+
+### Архитектура навигации
+
+```
+Part 4  ——→  Part 5  ——→  Part 6       (горизонтальная навигация, уже есть)
+  ↕            ↕            ↕           (вертикальная навигация — аддоны)
+Part 4       Part 5       Part 6
+ Addon        Addon        Addon
+  ←——————→  ←——————→                    (горизонтальная навигация между аддонами — будущее)
+```
+
+### Реализация в коде
+
+**State:** `activeView: 'main' | 'addon'`
+
+```typescript
+const [activeView, setActiveView] = useState<'main' | 'addon'>('main');
+```
+
+**Переключение видов** — реализовано через `if (activeView === 'addon') return (...)` перед основным `return`, на одном уровне с `activePractice` и `showOnboarding`:
+
+```typescript
+// Порядок return'ов в OndaLevel1:
+if (activePractice) return (...);    // 1. Экран практики
+if (showOnboarding) return (...);    // 2. Онбординг
+if (activeView === 'addon') return (...);  // 3. Addon-страница  ← НОВОЕ
+return (...);                        // 4. Основной вид Part
+```
+
+**Автосброс при переключении Part:**
+```typescript
+useEffect(() => {
+  setActiveView('main');
+}, [activeCircuit]);
+```
+
+### Где находится в `onda-level1-demo_27.tsx`
+
+| Элемент | Где искать |
+|---------|------------|
+| State `activeView` | Рядом с `showMenu` (~строка 169) |
+| Автосброс `useEffect` | После `setActiveCircuit(selectedLevel)` |
+| Кнопка "Part's info" на основной странице | Между grid практик и блоком `level_goal` |
+| Полный addon-вид (return) | Перед основным `return` — поиск: `ADDON VIEW` |
+
+```bash
+# Быстрый поиск addon-кода
+grep -n "activeView" src/onda-level1-demo_27.tsx
+grep -n "ADDON VIEW" src/onda-level1-demo_27.tsx
+grep -n "part_info" src/onda-level1-demo_27.tsx
+```
+
+### Структура addon-страницы
+
+Addon-страница использует тот же фоновый градиент и цветовую схему что у родительской Part. Контент состоит из карточек-секций:
+
+| Секция | Ключ локализации | Описание |
+|--------|-----------------|----------|
+| **Кнопка возврата** (вверху) | `part_info.back_to_part` | Навигация обратно к Part |
+| **Заголовок + протокол** | `part_info.level_N.title`, `.protocol` | Название части и протокола |
+| **Введение** | `.intro`, `.basis` | Два абзаца с описанием |
+| **Архитектура** | `.architecture_title`, `.pillar_1-4_title/text` | 4 столпа в отдельных карточках |
+| **Биологический фокус** | `.bio_focus_title`, `.bio_focus_1-3` | Список с маркерами |
+| **Результаты** | `.result_title`, `.result_1-3`, `.result_outro` | Список + курсивная цитата |
+| **Кнопка возврата** (внизу) | `part_info.back_to_part` | Дублирующая навигация |
+
+### Ключи локализации для аддонов
+
+```
+part_info.button                          — Текст кнопки "Part's info"
+part_info.back_to_part                    — "← Вернуться к Части {{part}}"
+
+part_info.level_N.title                   — Заголовок ("ЧАСТЬ 4: Я МАНЕВРИРУЮ")
+part_info.level_N.protocol                — Протокол ("Протокол: Маневренность «Мелкого Млекопитающего»")
+part_info.level_N.intro                   — Вступительный абзац
+part_info.level_N.basis                   — Основа/базис
+
+part_info.level_N.architecture_title      — "Архитектура Протокола"
+part_info.level_N.architecture_intro      — Вводная фраза к столпам
+part_info.level_N.pillar_1_title          — Название столпа 1
+part_info.level_N.pillar_1_text           — Описание столпа 1
+part_info.level_N.pillar_2_title/text     — Столп 2
+part_info.level_N.pillar_3_title/text     — Столп 3
+part_info.level_N.pillar_4_title/text     — Столп 4
+
+part_info.level_N.bio_focus_title         — "Биологический фокус"
+part_info.level_N.bio_focus_intro         — Вводная фраза
+part_info.level_N.bio_focus_1             — Пункт 1
+part_info.level_N.bio_focus_2             — Пункт 2
+part_info.level_N.bio_focus_3             — Пункт 3
+
+part_info.level_N.result_title            — "Что это даёт?"
+part_info.level_N.result_intro            — Вводная фраза
+part_info.level_N.result_1                — Пункт 1
+part_info.level_N.result_2                — Пункт 2
+part_info.level_N.result_3                — Пункт 3
+part_info.level_N.result_outro            — Завершающая фраза (курсив)
+```
+
+### Текущее состояние аддонов
+
+| Part | Addon | Статус |
+|------|-------|--------|
+| Part 4 | Маневренность «Мелкого Млекопитающего» | ✅ Готов |
+| Part 5 | — | ⏳ Ждём контент |
+| Part 6 | — | ⏳ Ждём контент |
+| Part 1-3, 7-12 | — | ⏳ Ждём контент |
+
+### Чеклист: добавление нового аддона
+
+#### 1. Контент от пользователя
+- [ ] Получить текст аддона (обычно через gist)
+- [ ] Текст содержит: название, протокол, введение, столпы/секции, биофокус, результаты
+
+#### 2. Локализация (public/locales/*/translation.json)
+- [ ] Добавить `part_info.level_N.*` ключи в `ru/translation.json` (оригинал)
+- [ ] Перевести на `en/`, `uk/`, `es/`, `zh/`
+
+#### 3. Код — НЕ нужен!
+Addon-вид в `onda-level1-demo_27.tsx` **универсальный** — он автоматически рендерит контент по ключам `part_info.level_${activeCircuit}.*`. Кнопка "Part's info" появляется только если ключ `part_info.level_N.title` существует.
+
+**Для добавления нового аддона достаточно только добавить переводы!**
+
+### Будущее: горизонтальная навигация между аддонами
+
+Для связей между аддонами (синие линии на схеме) потребуется добавить кнопки навигации внутри addon-вида, аналогично существующей "Go to Part N".
+
+---
+
 ## 🎨 Цветовая палитра частей
 
 **ВАЖНО:** Каждая часть должна иметь согласованную цветовую палитру. Цвета задаются в `onda-level1-demo_27.tsx` через условия `activeCircuit === N`.

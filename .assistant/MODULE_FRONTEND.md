@@ -77,6 +77,36 @@ vitalsRef.current = vitalsData;
 const freshVitals = vitalsRef.current;
 ```
 
+## Система видов (View System)
+
+Главный компонент `onda-level1-demo_27.tsx` использует каскад `if/return` для переключения видов:
+
+```typescript
+// Порядок return'ов в OndaLevel1:
+if (activePractice) return (...);           // 1. Экран практики (полноэкранный)
+if (showOnboarding) return (...);           // 2. Онбординг (полноэкранный)
+if (activeView === 'addon') return (...);   // 3. Addon-страница (полноэкранный)
+return (...);                               // 4. Основной вид Part
+```
+
+### activeView — переключение main/addon
+
+```typescript
+const [activeView, setActiveView] = useState<'main' | 'addon'>('main');
+```
+
+- `'main'` — основная страница Part (практики, story, артефакты)
+- `'addon'` — полноэкранная страница расширенной информации о части (протокол, научная база)
+
+Автосброс при переключении Part:
+```typescript
+useEffect(() => { setActiveView('main'); }, [activeCircuit]);
+```
+
+**Подробнее:** см. `.assistant/CONTENT_STRUCTURE.md` → "Аддоны (Addon-страницы)"
+
+---
+
 ## Система практик и прогресса
 
 ### Структура данных практик
