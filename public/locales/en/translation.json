@@ -2633,5 +2633,36 @@
     "terms_of_use": "Terms of Use",
     "privacy_policy": "Privacy Policy",
     "load_error": "Unable to load document. Please try again later."
+  },
+  "part_info": {
+    "button": "Part's info",
+    "back_to_part": "← Back to Part {{part}}",
+    "level_4": {
+      "title": "PART 4: I MANEUVER",
+      "protocol": "Protocol: Small Mammal Agility",
+      "intro": "Welcome to the stage where biological flexibility transforms into applied mastery. While previous stages taught us simply to 'be', here we learn to be in motion.",
+      "basis": "Part 4 is built on the evolutionary gift of small mammals: the ability to instantly dodge, navigate precisely, and micro-avoid threats without falling into paralyzing stress. We transform agility from a matter of luck into a measurable biological skill.",
+      "architecture_title": "Protocol Architecture",
+      "architecture_intro": "Our practices are built upon four pillars of modern science:",
+      "pillar_1_title": "Polyvagal Theory",
+      "pillar_1_text": "Training the nervous system to smoothly 'drift' between the Ventral Vagus (social engagement and safety state) and Sympathetic activation (energy for action). Using sympathetic tone for maneuvering without falling into panic or rage.",
+      "pillar_2_title": "Neurobiology & Neuroception",
+      "pillar_2_text": "We train the chain: Reticular Formation → Thalamus → Motor Cortex. This allows the brain to read environmental changes (neuroception) and produce a response 'before thought', bypassing slow cognitive filters.",
+      "pillar_3_title": "Neuroendocrinology",
+      "pillar_3_text": "Direct influence on the HPA axis (hypothalamus-pituitary-adrenal). We teach the body to control cortisol and adrenaline release, turning them from poison into fuel for precision.",
+      "pillar_4_title": "Lymphology",
+      "pillar_4_text": "Using muscle tone as a natural pump to cleanse the body of stress metabolites, ensuring physical freshness even under high load.",
+      "bio_focus_title": "Biological Focus",
+      "bio_focus_intro": "Instead of rigid reflexes, we develop sensorimotor emotional reactivity.",
+      "bio_focus_1": "Vestibular system: Precise orientation in chaos.",
+      "bio_focus_2": "Proprioception: Sensing trajectory and the boundaries of your safety 'bubble'.",
+      "bio_focus_3": "Diffuse perception: 360° attention field that allows seeing the world as a stream of opportunities rather than obstacles.",
+      "result_title": "What does this give you?",
+      "result_intro": "The result of completing Part 4 is high cognitive selectivity. You gain the ability to:",
+      "result_1": "Reduce impulsivity, replacing it with conscious speed.",
+      "result_2": "Execute soft and quick transitions in life and work.",
+      "result_3": "Use micro-movements and breathing for real-time self-regulation.",
+      "result_outro": "Emotional navigation at this stage is not cognitive calculation but a sensory process. You don't think about how to dodge — you feel the trajectory and flow along it."
+    }
   }
 }

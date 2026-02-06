@@ -166,6 +166,7 @@ const OndaLevel1 = () => {
   const [showSubscriptionModal, setShowSubscriptionModal] = useState(false);
   const [infoModalMessage, setInfoModalMessage] = useState('');
   const [showMenu, setShowMenu] = useState(false);
+  const [activeView, setActiveView] = useState<'main' | 'addon'>('main');
   const [showOnboarding, setShowOnboarding] = useState(() => {
     if (typeof localStorage !== 'undefined') {
       return !localStorage.getItem('onda_onboarding_completed');
@@ -651,6 +652,11 @@ const OndaLevel1 = () => {
   useEffect(() => {
     setActiveCircuit(selectedLevel);
   }, [selectedLevel]);
+
+  // Сбрасываем addon-вид при переключении части
+  useEffect(() => {
+    setActiveView('main');
+  }, [activeCircuit]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -3663,6 +3669,313 @@ const OndaLevel1 = () => {
     );
   }
 
+  // ═══════════════════════════════════════════════════════
+  // ADDON VIEW — полноэкранная страница расширенной информации о части
+  // ═══════════════════════════════════════════════════════
+  if (activeView === 'addon') {
+    const accentColor = activeCircuit === 2 ? 'cyan' : activeCircuit === 3 ? 'amber' : activeCircuit === 4 ? 'teal' : activeCircuit === 5 ? 'stone' : activeCircuit === 6 ? 'emerald' : activeCircuit === 7 ? 'sky' : activeCircuit === 8 ? 'indigo' : activeCircuit === 9 ? 'cyan' : activeCircuit === 10 ? 'orange' : activeCircuit === 11 ? 'rose' : activeCircuit === 12 ? 'fuchsia' : 'purple';
+
+    return (
+      <div className={`h-full text-white overflow-x-hidden pb-6 pt-8 transition-all duration-1000 ${
+        activeCircuit === 2
+          ? 'bg-gradient-to-br from-teal-900 via-cyan-900 to-blue-900'
+          : activeCircuit === 3
+          ? 'bg-gradient-to-br from-amber-950 via-orange-900 to-amber-950'
+          : activeCircuit === 4
+          ? 'bg-gradient-to-br from-teal-950 via-cyan-900 to-teal-950'
+          : activeCircuit === 5
+          ? 'bg-gradient-to-br from-stone-800 via-stone-700 to-stone-800'
+          : activeCircuit === 6
+          ? 'bg-gradient-to-br from-emerald-950 via-teal-900 to-emerald-950'
+          : activeCircuit === 7
+          ? 'bg-gradient-to-br from-sky-950 via-blue-900 to-sky-950'
+          : activeCircuit === 8
+          ? 'bg-gradient-to-br from-indigo-950 via-violet-900 to-indigo-950'
+          : activeCircuit === 9
+          ? 'bg-gradient-to-br from-cyan-900 via-sky-800 to-cyan-900'
+          : activeCircuit === 10
+          ? 'bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950'
+          : activeCircuit === 11
+          ? 'bg-gradient-to-br from-rose-950 via-pink-900 to-rose-950'
+          : activeCircuit === 12
+          ? 'bg-gradient-to-br from-fuchsia-950 via-red-900 to-fuchsia-950'
+          : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
+      }`}>
+        <div className="max-w-2xl mx-auto px-4 sm:px-6">
+
+          {/* Кнопка возврата к основной странице части */}
+          <button
+            onClick={() => {
+              setActiveView('main');
+              const rootEl = document.getElementById('root');
+              if (rootEl) rootEl.scrollTop = 0;
+              window.scrollTo(0, 0);
+            }}
+            className={`mb-6 mt-2 flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all backdrop-blur-md ${
+              activeCircuit === 2
+                ? 'bg-cyan-900/40 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-800/50'
+                : activeCircuit === 3
+                ? 'bg-amber-900/40 border border-amber-600/30 text-amber-300 hover:bg-amber-800/50'
+                : activeCircuit === 4
+                ? 'bg-teal-900/40 border border-teal-500/30 text-teal-300 hover:bg-teal-800/50'
+                : activeCircuit === 5
+                ? 'bg-stone-700/40 border border-stone-500/30 text-stone-200 hover:bg-stone-600/50'
+                : activeCircuit === 6
+                ? 'bg-emerald-800/40 border border-emerald-500/30 text-emerald-300 hover:bg-emerald-700/50'
+                : activeCircuit === 7
+                ? 'bg-sky-800/40 border border-sky-500/30 text-sky-300 hover:bg-sky-700/50'
+                : activeCircuit === 8
+                ? 'bg-indigo-800/40 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-700/50'
+                : activeCircuit === 9
+                ? 'bg-cyan-800/40 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-700/50'
+                : activeCircuit === 10
+                ? 'bg-orange-800/40 border border-orange-500/30 text-orange-300 hover:bg-orange-700/50'
+                : activeCircuit === 11
+                ? 'bg-rose-800/40 border border-rose-500/30 text-rose-300 hover:bg-rose-700/50'
+                : activeCircuit === 12
+                ? 'bg-fuchsia-800/40 border border-fuchsia-500/30 text-fuchsia-300 hover:bg-fuchsia-700/50'
+                : 'bg-indigo-900/40 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-800/50'
+            }`}
+          >
+            <span>←</span>
+            <span>{t('part_info.back_to_part', { part: activeCircuit })}</span>
+          </button>
+
+          {/* Заголовок и протокол */}
+          <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl mb-6 transition-all duration-500 ${
+            activeCircuit === 2
+              ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-blue-900/30 border-cyan-500/30'
+              : activeCircuit === 3
+              ? 'bg-gradient-to-br from-amber-900/30 via-orange-900/20 to-amber-900/30 border-amber-600/30'
+              : activeCircuit === 4
+              ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-teal-900/30 border-teal-500/30'
+              : activeCircuit === 5
+              ? 'bg-gradient-to-br from-stone-700/40 via-stone-600/30 to-stone-700/40 border-stone-500/40'
+              : activeCircuit === 6
+              ? 'bg-gradient-to-br from-emerald-800/40 via-teal-700/30 to-emerald-800/40 border-emerald-500/40'
+              : activeCircuit === 7
+              ? 'bg-gradient-to-br from-sky-800/40 via-blue-700/30 to-sky-800/40 border-sky-500/40'
+              : activeCircuit === 8
+              ? 'bg-gradient-to-br from-indigo-800/40 via-violet-700/30 to-indigo-800/40 border-indigo-500/40'
+              : activeCircuit === 9
+              ? 'bg-gradient-to-br from-cyan-800/40 via-sky-700/30 to-cyan-800/40 border-cyan-500/40'
+              : activeCircuit === 10
+              ? 'bg-gradient-to-br from-orange-800/40 via-amber-700/30 to-orange-800/40 border-orange-500/40'
+              : activeCircuit === 11
+              ? 'bg-gradient-to-br from-rose-800/40 via-pink-700/30 to-rose-800/40 border-rose-500/40'
+              : activeCircuit === 12
+              ? 'bg-gradient-to-br from-fuchsia-800/40 via-red-700/30 to-fuchsia-800/40 border-fuchsia-500/40'
+              : 'bg-gradient-to-br from-indigo-900/30 via-purple-900/20 to-pink-900/30 border-indigo-500/30'
+          }`}>
+            <div className="text-center mb-6">
+              <h1 className={`text-2xl font-bold mb-3 ${
+                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+              }`}>{t(`part_info.level_${activeCircuit}.title`)}</h1>
+              <p className={`text-base italic ${
+                activeCircuit === 2 ? 'text-teal-300/80' : activeCircuit === 3 ? 'text-orange-300/80' : activeCircuit === 4 ? 'text-cyan-300/80' : activeCircuit === 5 ? 'text-stone-300/80' : activeCircuit === 6 ? 'text-teal-300/80' : activeCircuit === 7 ? 'text-blue-300/80' : activeCircuit === 8 ? 'text-violet-300/80' : activeCircuit === 9 ? 'text-sky-300/80' : activeCircuit === 10 ? 'text-amber-300/80' : activeCircuit === 11 ? 'text-pink-300/80' : activeCircuit === 12 ? 'text-red-300/80' : 'text-purple-300/80'
+              }`}>{t(`part_info.level_${activeCircuit}.protocol`)}</p>
+            </div>
+
+            {/* Введение */}
+            <div className="space-y-4 mb-2">
+              <p className="text-gray-200 leading-relaxed">{t(`part_info.level_${activeCircuit}.intro`)}</p>
+              <p className="text-gray-300 leading-relaxed">{t(`part_info.level_${activeCircuit}.basis`)}</p>
+            </div>
+          </div>
+
+          {/* Архитектура Протокола */}
+          {t(`part_info.level_${activeCircuit}.architecture_title`, { defaultValue: '' }) && (
+            <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl mb-6 ${
+              activeCircuit === 2
+                ? 'bg-gradient-to-br from-teal-900/20 via-cyan-900/10 to-blue-900/20 border-cyan-500/20'
+                : activeCircuit === 3
+                ? 'bg-gradient-to-br from-amber-900/20 via-orange-900/10 to-amber-900/20 border-amber-600/20'
+                : activeCircuit === 4
+                ? 'bg-gradient-to-br from-teal-900/20 via-cyan-900/10 to-teal-900/20 border-teal-500/20'
+                : activeCircuit === 5
+                ? 'bg-gradient-to-br from-stone-700/30 via-stone-600/20 to-stone-700/30 border-stone-500/30'
+                : activeCircuit === 6
+                ? 'bg-gradient-to-br from-emerald-800/30 via-teal-700/20 to-emerald-800/30 border-emerald-500/30'
+                : activeCircuit === 7
+                ? 'bg-gradient-to-br from-sky-800/30 via-blue-700/20 to-sky-800/30 border-sky-500/30'
+                : activeCircuit === 8
+                ? 'bg-gradient-to-br from-indigo-800/30 via-violet-700/20 to-indigo-800/30 border-indigo-500/30'
+                : activeCircuit === 9
+                ? 'bg-gradient-to-br from-cyan-800/30 via-sky-700/20 to-cyan-800/30 border-cyan-500/30'
+                : activeCircuit === 10
+                ? 'bg-gradient-to-br from-orange-800/30 via-amber-700/20 to-orange-800/30 border-orange-500/30'
+                : activeCircuit === 11
+                ? 'bg-gradient-to-br from-rose-800/30 via-pink-700/20 to-rose-800/30 border-rose-500/30'
+                : activeCircuit === 12
+                ? 'bg-gradient-to-br from-fuchsia-800/30 via-red-700/20 to-fuchsia-800/30 border-fuchsia-500/30'
+                : 'bg-gradient-to-br from-indigo-900/20 via-purple-900/10 to-pink-900/20 border-indigo-500/20'
+            }`}>
+              <h2 className={`text-xl font-bold mb-3 ${
+                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+              }`}>{t(`part_info.level_${activeCircuit}.architecture_title`)}</h2>
+              <p className="text-gray-400 mb-5">{t(`part_info.level_${activeCircuit}.architecture_intro`)}</p>
+
+              <div className="space-y-4">
+                {[1, 2, 3, 4].map(i => {
+                  const pillarTitle = t(`part_info.level_${activeCircuit}.pillar_${i}_title`, { defaultValue: '' });
+                  if (!pillarTitle) return null;
+                  return (
+                    <div key={i} className={`bg-black/25 rounded-xl p-5 border ${
+                      activeCircuit === 2 ? 'border-cyan-500/20' : activeCircuit === 3 ? 'border-amber-600/20' : activeCircuit === 4 ? 'border-teal-500/20' : activeCircuit === 5 ? 'border-stone-500/20' : activeCircuit === 6 ? 'border-emerald-500/20' : activeCircuit === 7 ? 'border-sky-500/20' : activeCircuit === 8 ? 'border-indigo-500/20' : activeCircuit === 9 ? 'border-cyan-500/20' : activeCircuit === 10 ? 'border-orange-500/20' : activeCircuit === 11 ? 'border-rose-500/20' : activeCircuit === 12 ? 'border-fuchsia-500/20' : 'border-purple-500/20'
+                    }`}>
+                      <h3 className={`font-semibold mb-2 ${
+                        activeCircuit === 2 ? 'text-cyan-400' : activeCircuit === 3 ? 'text-amber-400' : activeCircuit === 4 ? 'text-teal-400' : activeCircuit === 5 ? 'text-stone-300' : activeCircuit === 6 ? 'text-emerald-400' : activeCircuit === 7 ? 'text-sky-400' : activeCircuit === 8 ? 'text-indigo-400' : activeCircuit === 9 ? 'text-cyan-400' : activeCircuit === 10 ? 'text-orange-400' : activeCircuit === 11 ? 'text-rose-400' : activeCircuit === 12 ? 'text-fuchsia-400' : 'text-purple-400'
+                      }`}>{i}. {pillarTitle}</h3>
+                      <p className="text-gray-300 leading-relaxed">{t(`part_info.level_${activeCircuit}.pillar_${i}_text`)}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Биологический фокус */}
+          {t(`part_info.level_${activeCircuit}.bio_focus_title`, { defaultValue: '' }) && (
+            <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl mb-6 ${
+              activeCircuit === 2
+                ? 'bg-gradient-to-br from-teal-900/20 via-cyan-900/10 to-blue-900/20 border-cyan-500/20'
+                : activeCircuit === 3
+                ? 'bg-gradient-to-br from-amber-900/20 via-orange-900/10 to-amber-900/20 border-amber-600/20'
+                : activeCircuit === 4
+                ? 'bg-gradient-to-br from-teal-900/20 via-cyan-900/10 to-teal-900/20 border-teal-500/20'
+                : activeCircuit === 5
+                ? 'bg-gradient-to-br from-stone-700/30 via-stone-600/20 to-stone-700/30 border-stone-500/30'
+                : activeCircuit === 6
+                ? 'bg-gradient-to-br from-emerald-800/30 via-teal-700/20 to-emerald-800/30 border-emerald-500/30'
+                : activeCircuit === 7
+                ? 'bg-gradient-to-br from-sky-800/30 via-blue-700/20 to-sky-800/30 border-sky-500/30'
+                : activeCircuit === 8
+                ? 'bg-gradient-to-br from-indigo-800/30 via-violet-700/20 to-indigo-800/30 border-indigo-500/30'
+                : activeCircuit === 9
+                ? 'bg-gradient-to-br from-cyan-800/30 via-sky-700/20 to-cyan-800/30 border-cyan-500/30'
+                : activeCircuit === 10
+                ? 'bg-gradient-to-br from-orange-800/30 via-amber-700/20 to-orange-800/30 border-orange-500/30'
+                : activeCircuit === 11
+                ? 'bg-gradient-to-br from-rose-800/30 via-pink-700/20 to-rose-800/30 border-rose-500/30'
+                : activeCircuit === 12
+                ? 'bg-gradient-to-br from-fuchsia-800/30 via-red-700/20 to-fuchsia-800/30 border-fuchsia-500/30'
+                : 'bg-gradient-to-br from-indigo-900/20 via-purple-900/10 to-pink-900/20 border-indigo-500/20'
+            }`}>
+              <h2 className={`text-xl font-bold mb-3 ${
+                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+              }`}>{t(`part_info.level_${activeCircuit}.bio_focus_title`)}</h2>
+              <p className="text-gray-400 mb-4">{t(`part_info.level_${activeCircuit}.bio_focus_intro`)}</p>
+              <ul className="space-y-3">
+                {[1, 2, 3].map(i => {
+                  const item = t(`part_info.level_${activeCircuit}.bio_focus_${i}`, { defaultValue: '' });
+                  if (!item) return null;
+                  return (
+                    <li key={i} className="flex items-start gap-3 text-gray-200">
+                      <span className={`mt-2 w-2 h-2 rounded-full flex-shrink-0 ${
+                        activeCircuit === 2 ? 'bg-cyan-400' : activeCircuit === 3 ? 'bg-amber-400' : activeCircuit === 4 ? 'bg-teal-400' : activeCircuit === 5 ? 'bg-stone-400' : activeCircuit === 6 ? 'bg-emerald-400' : activeCircuit === 7 ? 'bg-sky-400' : activeCircuit === 8 ? 'bg-indigo-400' : activeCircuit === 9 ? 'bg-cyan-400' : activeCircuit === 10 ? 'bg-orange-400' : activeCircuit === 11 ? 'bg-rose-400' : activeCircuit === 12 ? 'bg-fuchsia-400' : 'bg-purple-400'
+                      }`} />
+                      <span className="leading-relaxed">{item}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          )}
+
+          {/* Что это даёт? */}
+          {t(`part_info.level_${activeCircuit}.result_title`, { defaultValue: '' }) && (
+            <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl mb-6 ${
+              activeCircuit === 2
+                ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-blue-900/30 border-cyan-500/30'
+                : activeCircuit === 3
+                ? 'bg-gradient-to-br from-amber-900/30 via-orange-900/20 to-amber-900/30 border-amber-600/30'
+                : activeCircuit === 4
+                ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-teal-900/30 border-teal-500/30'
+                : activeCircuit === 5
+                ? 'bg-gradient-to-br from-stone-700/40 via-stone-600/30 to-stone-700/40 border-stone-500/40'
+                : activeCircuit === 6
+                ? 'bg-gradient-to-br from-emerald-800/40 via-teal-700/30 to-emerald-800/40 border-emerald-500/40'
+                : activeCircuit === 7
+                ? 'bg-gradient-to-br from-sky-800/40 via-blue-700/30 to-sky-800/40 border-sky-500/40'
+                : activeCircuit === 8
+                ? 'bg-gradient-to-br from-indigo-800/40 via-violet-700/30 to-indigo-800/40 border-indigo-500/40'
+                : activeCircuit === 9
+                ? 'bg-gradient-to-br from-cyan-800/40 via-sky-700/30 to-cyan-800/40 border-cyan-500/40'
+                : activeCircuit === 10
+                ? 'bg-gradient-to-br from-orange-800/40 via-amber-700/30 to-orange-800/40 border-orange-500/40'
+                : activeCircuit === 11
+                ? 'bg-gradient-to-br from-rose-800/40 via-pink-700/30 to-rose-800/40 border-rose-500/40'
+                : activeCircuit === 12
+                ? 'bg-gradient-to-br from-fuchsia-800/40 via-red-700/30 to-fuchsia-800/40 border-fuchsia-500/40'
+                : 'bg-gradient-to-br from-indigo-900/30 via-purple-900/20 to-pink-900/30 border-indigo-500/30'
+            }`}>
+              <h2 className={`text-xl font-bold mb-3 ${
+                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+              }`}>{t(`part_info.level_${activeCircuit}.result_title`)}</h2>
+              <p className="text-gray-400 mb-4">{t(`part_info.level_${activeCircuit}.result_intro`)}</p>
+              <ul className="space-y-3 mb-5">
+                {[1, 2, 3].map(i => {
+                  const item = t(`part_info.level_${activeCircuit}.result_${i}`, { defaultValue: '' });
+                  if (!item) return null;
+                  return (
+                    <li key={i} className="flex items-start gap-3 text-gray-200">
+                      <span className={`mt-2 w-2 h-2 rounded-full flex-shrink-0 ${
+                        activeCircuit === 2 ? 'bg-cyan-400' : activeCircuit === 3 ? 'bg-amber-400' : activeCircuit === 4 ? 'bg-teal-400' : activeCircuit === 5 ? 'bg-stone-400' : activeCircuit === 6 ? 'bg-emerald-400' : activeCircuit === 7 ? 'bg-sky-400' : activeCircuit === 8 ? 'bg-indigo-400' : activeCircuit === 9 ? 'bg-cyan-400' : activeCircuit === 10 ? 'bg-orange-400' : activeCircuit === 11 ? 'bg-rose-400' : activeCircuit === 12 ? 'bg-fuchsia-400' : 'bg-purple-400'
+                      }`} />
+                      <span className="leading-relaxed">{item}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+              <p className={`leading-relaxed italic border-l-2 pl-4 ${
+                activeCircuit === 2 ? 'text-cyan-200/80 border-cyan-500/40' : activeCircuit === 3 ? 'text-amber-200/80 border-amber-500/40' : activeCircuit === 4 ? 'text-teal-200/80 border-teal-500/40' : activeCircuit === 5 ? 'text-stone-200/80 border-stone-400/40' : activeCircuit === 6 ? 'text-emerald-200/80 border-emerald-500/40' : activeCircuit === 7 ? 'text-sky-200/80 border-sky-500/40' : activeCircuit === 8 ? 'text-indigo-200/80 border-indigo-500/40' : activeCircuit === 9 ? 'text-cyan-200/80 border-cyan-500/40' : activeCircuit === 10 ? 'text-orange-200/80 border-orange-500/40' : activeCircuit === 11 ? 'text-rose-200/80 border-rose-500/40' : activeCircuit === 12 ? 'text-fuchsia-200/80 border-fuchsia-500/40' : 'text-purple-200/80 border-purple-500/40'
+              }`}>{t(`part_info.level_${activeCircuit}.result_outro`)}</p>
+            </div>
+          )}
+
+          {/* Кнопка возврата внизу */}
+          <button
+            onClick={() => {
+              setActiveView('main');
+              const rootEl = document.getElementById('root');
+              if (rootEl) rootEl.scrollTop = 0;
+              window.scrollTo(0, 0);
+            }}
+            className={`w-full py-3.5 px-6 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md mb-8 ${
+              activeCircuit === 2
+                ? 'bg-cyan-900/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-800/50'
+                : activeCircuit === 3
+                ? 'bg-amber-900/40 border border-amber-600/40 text-amber-300 hover:bg-amber-800/50'
+                : activeCircuit === 4
+                ? 'bg-teal-900/40 border border-teal-500/40 text-teal-300 hover:bg-teal-800/50'
+                : activeCircuit === 5
+                ? 'bg-stone-700/40 border border-stone-500/40 text-stone-200 hover:bg-stone-600/50'
+                : activeCircuit === 6
+                ? 'bg-emerald-800/40 border border-emerald-500/40 text-emerald-300 hover:bg-emerald-700/50'
+                : activeCircuit === 7
+                ? 'bg-sky-800/40 border border-sky-500/40 text-sky-300 hover:bg-sky-700/50'
+                : activeCircuit === 8
+                ? 'bg-indigo-800/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-700/50'
+                : activeCircuit === 9
+                ? 'bg-cyan-800/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-700/50'
+                : activeCircuit === 10
+                ? 'bg-orange-800/40 border border-orange-500/40 text-orange-300 hover:bg-orange-700/50'
+                : activeCircuit === 11
+                ? 'bg-rose-800/40 border border-rose-500/40 text-rose-300 hover:bg-rose-700/50'
+                : activeCircuit === 12
+                ? 'bg-fuchsia-800/40 border border-fuchsia-500/40 text-fuchsia-300 hover:bg-fuchsia-700/50'
+                : 'bg-indigo-900/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-800/50'
+            }`}
+          >
+            <span>←</span>
+            <span>{t('part_info.back_to_part', { part: activeCircuit })}</span>
+          </button>
+
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div 
       data-main-container
@@ -4770,6 +5083,48 @@ const OndaLevel1 = () => {
             );
           })}
         </div>
+
+        {/* Кнопка Part's info — переход на addon-страницу */}
+        {t(`part_info.level_${activeCircuit}.title`, { defaultValue: '' }) && (
+          <div className="mb-6">
+            <button
+              onClick={() => {
+                setActiveView('addon');
+                const rootEl = document.getElementById('root');
+                if (rootEl) rootEl.scrollTop = 0;
+                window.scrollTo(0, 0);
+              }}
+              className={`w-full py-3.5 px-6 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md ${
+                activeCircuit === 2
+                  ? 'bg-cyan-900/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-800/50 hover:border-cyan-400/60'
+                  : activeCircuit === 3
+                  ? 'bg-amber-900/40 border border-amber-600/40 text-amber-300 hover:bg-amber-800/50 hover:border-amber-500/60'
+                  : activeCircuit === 4
+                  ? 'bg-teal-900/40 border border-teal-500/40 text-teal-300 hover:bg-teal-800/50 hover:border-teal-400/60'
+                  : activeCircuit === 5
+                  ? 'bg-stone-700/40 border border-stone-500/40 text-stone-200 hover:bg-stone-600/50 hover:border-stone-400/60'
+                  : activeCircuit === 6
+                  ? 'bg-emerald-800/40 border border-emerald-500/40 text-emerald-300 hover:bg-emerald-700/50 hover:border-emerald-400/60'
+                  : activeCircuit === 7
+                  ? 'bg-sky-800/40 border border-sky-500/40 text-sky-300 hover:bg-sky-700/50 hover:border-sky-400/60'
+                  : activeCircuit === 8
+                  ? 'bg-indigo-800/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-700/50 hover:border-indigo-400/60'
+                  : activeCircuit === 9
+                  ? 'bg-cyan-800/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-700/50 hover:border-cyan-400/60'
+                  : activeCircuit === 10
+                  ? 'bg-orange-800/40 border border-orange-500/40 text-orange-300 hover:bg-orange-700/50 hover:border-orange-400/60'
+                  : activeCircuit === 11
+                  ? 'bg-rose-800/40 border border-rose-500/40 text-rose-300 hover:bg-rose-700/50 hover:border-rose-400/60'
+                  : activeCircuit === 12
+                  ? 'bg-fuchsia-800/40 border border-fuchsia-500/40 text-fuchsia-300 hover:bg-fuchsia-700/50 hover:border-fuchsia-400/60'
+                  : 'bg-indigo-900/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-800/50 hover:border-indigo-400/60'
+              }`}
+            >
+              <span>{t('part_info.button')}</span>
+              <span>→</span>
+            </button>
+          </div>
+        )}
 
         <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl transition-all duration-1000 ${
           activeCircuit === 2
