@@ -1455,6 +1455,17 @@ const OndaLevel1 = () => {
       guidingTexts: t('guiding_texts.p5_12', { returnObjects: true }) as string[],
       finalPhrase: t('final_phrases.p5_12'),
       scienceInfo: t('science_info.p5_12', { returnObjects: true }) as string[]
+    },
+    'p6-1': {
+      colors: 'from-emerald-800 via-teal-700 to-cyan-600',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.social_breathing_message'),
+      ambientSound: t('elements.silence'),
+      visual: '🤝',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p6_1', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p6_1'),
+      scienceInfo: t('science_info.p6_1', { returnObjects: true }) as string[]
     }
   }), [i18n.language]);
 
@@ -1601,7 +1612,9 @@ const OndaLevel1 = () => {
       element: 'AQUA',
       color: 'from-emerald-800 to-teal-600',
       icon: Users,
-      practices: [],  // Ждём данные от пользователя
+      practices: [
+        { id: 'p6-1', name: t('practice_items.social_breathing'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.social_breathing_desc') }
+      ],
       artifact: null  // Ждём данные от пользователя
     },
     {
@@ -2043,7 +2056,8 @@ const OndaLevel1 = () => {
       'p5-9': 'practice_items.heart_coherence',
       'p5-10': 'practice_items.solid_aura',
       'p5-11': 'practice_items.tigers_path',
-      'p5-12': 'practice_items.bears_circle'
+      'p5-12': 'practice_items.bears_circle',
+      'p6-1': 'practice_items.social_breathing'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -2109,7 +2123,8 @@ const OndaLevel1 = () => {
       'p5-9': 'practice_items.heart_coherence_desc',
       'p5-10': 'practice_items.solid_aura_desc',
       'p5-11': 'practice_items.tigers_path_desc',
-      'p5-12': 'practice_items.bears_circle_desc'
+      'p5-12': 'practice_items.bears_circle_desc',
+      'p6-1': 'practice_items.social_breathing_desc'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -2175,7 +2190,8 @@ const OndaLevel1 = () => {
       'p5-9': 'practice_messages.heart_coherence_message',
       'p5-10': 'practice_messages.solid_aura_message',
       'p5-11': 'practice_messages.tigers_path_message',
-      'p5-12': 'practice_messages.bears_circle_message'
+      'p5-12': 'practice_messages.bears_circle_message',
+      'p6-1': 'practice_messages.social_breathing_message'
     };
     return t(mapping[practiceId] || '');
   };

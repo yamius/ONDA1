@@ -265,7 +265,8 @@
     "heart_coherence_message": "Tune your inner frequency. When your heart beats in the rhythm of harmony, someone else's chaos is powerless against your calm.",
     "solid_aura_message": "Feel where the world ends and you begin. Densify the space around your heart and center, creating a zone of absolute inviolability.",
     "tigers_path_message": "Don't walk on the surface — press into it. Every step you take is a seal confirming your power over the space.",
-    "bears_circle_message": "Draw your world. Inside this circle you are the highest law and the point of peace. Let every step seal the boundaries of your undeniable influence."
+    "bears_circle_message": "Draw your world. Inside this circle you are the highest law and the point of peace. Let every step seal the boundaries of your undeniable influence.",
+    "social_breathing_message": "Drop the settings of separation. Find a common rhythm where 'I' and 'You' disappear, and a unified field of safe interaction is born."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -411,7 +412,9 @@
     "tigers_path": "Tiger's Path",
     "tigers_path_desc": "Change the gait pattern to 'dominant' and reinforce the feeling of confidence in movement.",
     "bears_circle": "The Bear's Circle",
-    "bears_circle_desc": "Fix the boundaries of your territory and bring the state of 'calm dominance' to the absolute."
+    "bears_circle_desc": "Fix the boundaries of your territory and bring the state of 'calm dominance' to the absolute.",
+    "social_breathing": "Social Breathing",
+    "social_breathing_desc": "Synchronize your nervous system with a partner's or group's system to remove barriers."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1592,6 +1595,22 @@
       "Feel how from all sides you are supported by the boundary you created",
       "Stay in this silence",
       "Here you are fully protected, here is your personal fortress"
+    ],
+    "p6_1": [
+      "Sit or stand facing another person (or imagine them)",
+      "Look at your partner softly, not trying to 'read' their thoughts — just notice the rhythm of their chest",
+      "On the inhale, expand your chest while keeping a 'soft gaze'",
+      "On the exhale, smoothly relax your shoulders",
+      "Your inhale is an invitation to connection. Your exhale is a safety signal",
+      "Don't try to adjust forcibly",
+      "Just let your body catch the other's frequency, like a musical instrument catches the sound of a tuning fork",
+      "Notice how at the moment of synchronous inhale the distance between you stops being empty — it fills with trust",
+      "If your partner is thrown off or tense — continue breathing evenly and deeply",
+      "Become the leading rhythm that their nervous system will follow on its own",
+      "Feel how your heart responds to another's presence without wanting to defend",
+      "Now you are a single biological mechanism operating at the frequency of calm",
+      "Hold this connection",
+      "Any words spoken from this state will be heard and accepted"
     ]
   },
   "final_phrases": {
@@ -1654,7 +1673,8 @@
     "p5_9": "He who owns his rhythm owns the situation. Your coherent heart is a compass that always points to your personal power and safety.",
     "p5_10": "When your boundaries are felt at the biological level, you don't need to prove them. Your density speaks for itself, making the world respect your space.",
     "p5_11": "When your walk gains weight, the world begins to adjust to your rhythm. Your 'tiger's path' is an invisible command for the space to belong to you.",
-    "p5_12": "When you know how to draw your circles, the world begins to respect your rules. You are the master of your territory, and your strength is now part of your biology."
+    "p5_12": "When you know how to draw your circles, the world begins to respect your rules. You are the master of your territory, and your strength is now part of your biology.",
+    "p6_1": "When you breathe in unison, social masks disappear. Your synchronicity is the key to any cooperation and the foundation of a true pack."
   },
   "science_info": {
     "p4_1": [
@@ -1792,6 +1812,12 @@
       "Biomechanics: Territory marking through proprioceptive and visual confirmation of boundaries.",
       "Bio-marker: Maximum reduction of amygdala activity and stabilization of the HPA axis (cortisol-testosterone balance).",
       "Effect: Strengthening the sense of territoriality, total reduction of social anxiety and formation of an 'impenetrable' presence."
+    ],
+    "p6_1": [
+      "Action: Sit or stand facing another person (or imagine them).",
+      "Physiology: Synchronization of breathing frequency leads to coherence of heart rate variability (HRV) in both participants. This activates the ventral vagus in both simultaneously.",
+      "Bio-marker: Reduction of cortisol levels and the beginning of oxytocin production, signaling that the person nearby is 'one of us'.",
+      "Effect: Social tension disappears, a physical sense of 'we are in the same rhythm' appears along with readiness for joint action."
     ]
   },
   "level_goal": {
