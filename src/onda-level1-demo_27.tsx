@@ -166,6 +166,7 @@ const OndaLevel1 = () => {
   const [showSubscriptionModal, setShowSubscriptionModal] = useState(false);
   const [infoModalMessage, setInfoModalMessage] = useState('');
   const [showMenu, setShowMenu] = useState(false);
+  const [showPartInfo, setShowPartInfo] = useState(false);
   const [showOnboarding, setShowOnboarding] = useState(() => {
     if (typeof localStorage !== 'undefined') {
       return !localStorage.getItem('onda_onboarding_completed');
@@ -651,6 +652,11 @@ const OndaLevel1 = () => {
   useEffect(() => {
     setActiveCircuit(selectedLevel);
   }, [selectedLevel]);
+
+  // Сбрасываем Part's info при переключении части
+  useEffect(() => {
+    setShowPartInfo(false);
+  }, [activeCircuit]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -4770,6 +4776,161 @@ const OndaLevel1 = () => {
             );
           })}
         </div>
+
+        {/* Part's info button — показывается только для частей с расширенной информацией */}
+        {t(`part_info.level_${activeCircuit}.title`, { defaultValue: '' }) && (
+          <div className="mb-6">
+            <button
+              onClick={() => setShowPartInfo(!showPartInfo)}
+              className={`w-full py-3 px-6 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 ${
+                activeCircuit === 2
+                  ? 'bg-cyan-900/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-800/50 hover:border-cyan-400/60'
+                  : activeCircuit === 3
+                  ? 'bg-amber-900/40 border border-amber-600/40 text-amber-300 hover:bg-amber-800/50 hover:border-amber-500/60'
+                  : activeCircuit === 4
+                  ? 'bg-teal-900/40 border border-teal-500/40 text-teal-300 hover:bg-teal-800/50 hover:border-teal-400/60'
+                  : activeCircuit === 5
+                  ? 'bg-stone-700/40 border border-stone-500/40 text-stone-200 hover:bg-stone-600/50 hover:border-stone-400/60'
+                  : activeCircuit === 6
+                  ? 'bg-emerald-800/40 border border-emerald-500/40 text-emerald-300 hover:bg-emerald-700/50 hover:border-emerald-400/60'
+                  : activeCircuit === 7
+                  ? 'bg-sky-800/40 border border-sky-500/40 text-sky-300 hover:bg-sky-700/50 hover:border-sky-400/60'
+                  : activeCircuit === 8
+                  ? 'bg-indigo-800/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-700/50 hover:border-indigo-400/60'
+                  : activeCircuit === 9
+                  ? 'bg-cyan-800/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-700/50 hover:border-cyan-400/60'
+                  : activeCircuit === 10
+                  ? 'bg-orange-800/40 border border-orange-500/40 text-orange-300 hover:bg-orange-700/50 hover:border-orange-400/60'
+                  : activeCircuit === 11
+                  ? 'bg-rose-800/40 border border-rose-500/40 text-rose-300 hover:bg-rose-700/50 hover:border-rose-400/60'
+                  : activeCircuit === 12
+                  ? 'bg-fuchsia-800/40 border border-fuchsia-500/40 text-fuchsia-300 hover:bg-fuchsia-700/50 hover:border-fuchsia-400/60'
+                  : 'bg-indigo-900/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-800/50 hover:border-indigo-400/60'
+              }`}
+            >
+              <span>{showPartInfo ? '▼' : '▶'}</span>
+              <span>{t('part_info.button')}</span>
+            </button>
+
+            {showPartInfo && (
+              <div className={`mt-4 backdrop-blur-md rounded-2xl p-6 border shadow-xl transition-all duration-500 ${
+                activeCircuit === 2
+                  ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-blue-900/30 border-cyan-500/30'
+                  : activeCircuit === 3
+                  ? 'bg-gradient-to-br from-amber-900/30 via-orange-900/20 to-amber-900/30 border-amber-600/30'
+                  : activeCircuit === 4
+                  ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-teal-900/30 border-teal-500/30'
+                  : activeCircuit === 5
+                  ? 'bg-gradient-to-br from-stone-700/40 via-stone-600/30 to-stone-700/40 border-stone-500/40'
+                  : activeCircuit === 6
+                  ? 'bg-gradient-to-br from-emerald-800/40 via-teal-700/30 to-emerald-800/40 border-emerald-500/40'
+                  : activeCircuit === 7
+                  ? 'bg-gradient-to-br from-sky-800/40 via-blue-700/30 to-sky-800/40 border-sky-500/40'
+                  : activeCircuit === 8
+                  ? 'bg-gradient-to-br from-indigo-800/40 via-violet-700/30 to-indigo-800/40 border-indigo-500/40'
+                  : activeCircuit === 9
+                  ? 'bg-gradient-to-br from-cyan-800/40 via-sky-700/30 to-cyan-800/40 border-cyan-500/40'
+                  : activeCircuit === 10
+                  ? 'bg-gradient-to-br from-orange-800/40 via-amber-700/30 to-orange-800/40 border-orange-500/40'
+                  : activeCircuit === 11
+                  ? 'bg-gradient-to-br from-rose-800/40 via-pink-700/30 to-rose-800/40 border-rose-500/40'
+                  : activeCircuit === 12
+                  ? 'bg-gradient-to-br from-fuchsia-800/40 via-red-700/30 to-fuchsia-800/40 border-fuchsia-500/40'
+                  : 'bg-gradient-to-br from-indigo-900/30 via-purple-900/20 to-pink-900/30 border-indigo-500/30'
+              }`}>
+                {/* Заголовок и протокол */}
+                <div className="text-center mb-6">
+                  <h2 className={`text-xl font-bold mb-2 ${
+                    activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+                  }`}>{t(`part_info.level_${activeCircuit}.title`)}</h2>
+                  <p className={`text-sm italic ${
+                    activeCircuit === 2 ? 'text-teal-300/80' : activeCircuit === 3 ? 'text-orange-300/80' : activeCircuit === 4 ? 'text-cyan-300/80' : activeCircuit === 5 ? 'text-stone-300/80' : activeCircuit === 6 ? 'text-teal-300/80' : activeCircuit === 7 ? 'text-blue-300/80' : activeCircuit === 8 ? 'text-violet-300/80' : activeCircuit === 9 ? 'text-sky-300/80' : activeCircuit === 10 ? 'text-amber-300/80' : activeCircuit === 11 ? 'text-pink-300/80' : activeCircuit === 12 ? 'text-red-300/80' : 'text-purple-300/80'
+                  }`}>{t(`part_info.level_${activeCircuit}.protocol`)}</p>
+                </div>
+
+                {/* Введение */}
+                <div className="space-y-3 mb-6">
+                  <p className="text-gray-300 leading-relaxed">{t(`part_info.level_${activeCircuit}.intro`)}</p>
+                  <p className="text-gray-300 leading-relaxed">{t(`part_info.level_${activeCircuit}.basis`)}</p>
+                </div>
+
+                {/* Архитектура Протокола */}
+                <div className="mb-6">
+                  <h3 className={`text-lg font-semibold mb-3 ${
+                    activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+                  }`}>{t(`part_info.level_${activeCircuit}.architecture_title`)}</h3>
+                  <p className="text-gray-400 text-sm mb-4">{t(`part_info.level_${activeCircuit}.architecture_intro`)}</p>
+                  
+                  <div className="space-y-4">
+                    {[1, 2, 3, 4].map(i => {
+                      const pillarTitle = t(`part_info.level_${activeCircuit}.pillar_${i}_title`, { defaultValue: '' });
+                      if (!pillarTitle) return null;
+                      return (
+                        <div key={i} className={`bg-black/20 rounded-lg p-4 border ${
+                          activeCircuit === 2 ? 'border-cyan-500/20' : activeCircuit === 3 ? 'border-amber-600/20' : activeCircuit === 4 ? 'border-teal-500/20' : activeCircuit === 5 ? 'border-stone-500/20' : activeCircuit === 6 ? 'border-emerald-500/20' : activeCircuit === 7 ? 'border-sky-500/20' : activeCircuit === 8 ? 'border-indigo-500/20' : activeCircuit === 9 ? 'border-cyan-500/20' : activeCircuit === 10 ? 'border-orange-500/20' : activeCircuit === 11 ? 'border-rose-500/20' : activeCircuit === 12 ? 'border-fuchsia-500/20' : 'border-purple-500/20'
+                        }`}>
+                          <h4 className={`font-semibold text-sm mb-2 ${
+                            activeCircuit === 2 ? 'text-cyan-400' : activeCircuit === 3 ? 'text-amber-400' : activeCircuit === 4 ? 'text-teal-400' : activeCircuit === 5 ? 'text-stone-300' : activeCircuit === 6 ? 'text-emerald-400' : activeCircuit === 7 ? 'text-sky-400' : activeCircuit === 8 ? 'text-indigo-400' : activeCircuit === 9 ? 'text-cyan-400' : activeCircuit === 10 ? 'text-orange-400' : activeCircuit === 11 ? 'text-rose-400' : activeCircuit === 12 ? 'text-fuchsia-400' : 'text-purple-400'
+                          }`}>{i}. {pillarTitle}</h4>
+                          <p className="text-gray-300 text-sm leading-relaxed">{t(`part_info.level_${activeCircuit}.pillar_${i}_text`)}</p>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Биологический фокус */}
+                {t(`part_info.level_${activeCircuit}.bio_focus_title`, { defaultValue: '' }) && (
+                  <div className="mb-6">
+                    <h3 className={`text-lg font-semibold mb-3 ${
+                      activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+                    }`}>{t(`part_info.level_${activeCircuit}.bio_focus_title`)}</h3>
+                    <p className="text-gray-400 text-sm mb-3">{t(`part_info.level_${activeCircuit}.bio_focus_intro`)}</p>
+                    <ul className="space-y-2">
+                      {[1, 2, 3].map(i => {
+                        const item = t(`part_info.level_${activeCircuit}.bio_focus_${i}`, { defaultValue: '' });
+                        if (!item) return null;
+                        return (
+                          <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
+                            <span className={`mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0 ${
+                              activeCircuit === 2 ? 'bg-cyan-400' : activeCircuit === 3 ? 'bg-amber-400' : activeCircuit === 4 ? 'bg-teal-400' : activeCircuit === 5 ? 'bg-stone-400' : activeCircuit === 6 ? 'bg-emerald-400' : activeCircuit === 7 ? 'bg-sky-400' : activeCircuit === 8 ? 'bg-indigo-400' : activeCircuit === 9 ? 'bg-cyan-400' : activeCircuit === 10 ? 'bg-orange-400' : activeCircuit === 11 ? 'bg-rose-400' : activeCircuit === 12 ? 'bg-fuchsia-400' : 'bg-purple-400'
+                            }`} />
+                            <span>{item}</span>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                )}
+
+                {/* Что это даёт? */}
+                {t(`part_info.level_${activeCircuit}.result_title`, { defaultValue: '' }) && (
+                  <div>
+                    <h3 className={`text-lg font-semibold mb-3 ${
+                      activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-stone-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+                    }`}>{t(`part_info.level_${activeCircuit}.result_title`)}</h3>
+                    <p className="text-gray-400 text-sm mb-3">{t(`part_info.level_${activeCircuit}.result_intro`)}</p>
+                    <ul className="space-y-2 mb-4">
+                      {[1, 2, 3].map(i => {
+                        const item = t(`part_info.level_${activeCircuit}.result_${i}`, { defaultValue: '' });
+                        if (!item) return null;
+                        return (
+                          <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
+                            <span className={`mt-1 w-1.5 h-1.5 rounded-full flex-shrink-0 ${
+                              activeCircuit === 2 ? 'bg-cyan-400' : activeCircuit === 3 ? 'bg-amber-400' : activeCircuit === 4 ? 'bg-teal-400' : activeCircuit === 5 ? 'bg-stone-400' : activeCircuit === 6 ? 'bg-emerald-400' : activeCircuit === 7 ? 'bg-sky-400' : activeCircuit === 8 ? 'bg-indigo-400' : activeCircuit === 9 ? 'bg-cyan-400' : activeCircuit === 10 ? 'bg-orange-400' : activeCircuit === 11 ? 'bg-rose-400' : activeCircuit === 12 ? 'bg-fuchsia-400' : 'bg-purple-400'
+                            }`} />
+                            <span>{item}</span>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                    <p className="text-gray-300 text-sm leading-relaxed italic">{t(`part_info.level_${activeCircuit}.result_outro`)}</p>
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        )}
 
         <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl transition-all duration-1000 ${
           activeCircuit === 2
