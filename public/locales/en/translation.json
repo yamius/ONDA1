@@ -264,7 +264,8 @@
     "territorial_gaze_message": "Look not at the world, but through it. Your gaze is not a search for threats, it's an inventory of your domain.",
     "heart_coherence_message": "Tune your inner frequency. When your heart beats in the rhythm of harmony, someone else's chaos is powerless against your calm.",
     "solid_aura_message": "Feel where the world ends and you begin. Densify the space around your heart and center, creating a zone of absolute inviolability.",
-    "tigers_path_message": "Don't walk on the surface — press into it. Every step you take is a seal confirming your power over the space."
+    "tigers_path_message": "Don't walk on the surface — press into it. Every step you take is a seal confirming your power over the space.",
+    "bears_circle_message": "Draw your world. Inside this circle you are the highest law and the point of peace. Let every step seal the boundaries of your undeniable influence."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -408,7 +409,9 @@
     "solid_aura": "Solid Aura",
     "solid_aura_desc": "Create a physically tangible barrier of personal space and activate the center of bodily 'Self'.",
     "tigers_path": "Tiger's Path",
-    "tigers_path_desc": "Change the gait pattern to 'dominant' and reinforce the feeling of confidence in movement."
+    "tigers_path_desc": "Change the gait pattern to 'dominant' and reinforce the feeling of confidence in movement.",
+    "bears_circle": "The Bear's Circle",
+    "bears_circle_desc": "Fix the boundaries of your territory and bring the state of 'calm dominance' to the absolute."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1565,6 +1568,30 @@
       "Notice how others' reactions change — people instinctively give way to one whose step has such weight.",
       "Breathe in rhythm with your steps.",
       "Inhale — readiness, step — assertion."
+    ],
+    "p5_12": [
+      "Stand on the border of your circle",
+      "This is a line that no one will cross without your consent",
+      "Start moving",
+      "Feel how under your feet the space becomes dense and obedient",
+      "You are the guardian of your perimeter",
+      "Look outward, beyond the circle, with the calm and all-seeing gaze of a master",
+      "First stop. Inhale — feel your vertical",
+      "Exhale — broadcast the power of your 'silent roar' in all directions",
+      "Continue the circuit",
+      "You're not just walking — you're 'stitching' the space with your weight",
+      "Second stop. Feel how the dome of your 'solid aura' expands to the edges of this circle",
+      "Inhale — gather strength to the center, exhale — radiate presence outward",
+      "You are a large mammal. Your mass is undeniable.",
+      "Continue the circuit",
+      "Another stop. Inhale — feel your vertical",
+      "Exhale — broadcast the power of your 'silent roar' in all directions",
+      "Your right to be here is absolute",
+      "Complete the circle. Inhale — gather strength to the center, exhale — radiate presence outward",
+      "Now step into the very center",
+      "Feel how from all sides you are supported by the boundary you created",
+      "Stay in this silence",
+      "Here you are fully protected, here is your personal fortress"
     ]
   },
   "final_phrases": {
@@ -1626,7 +1653,8 @@
     "p5_8": "Where your gaze reaches, foreign influence ends. You see everything, and this vision makes you invulnerable.",
     "p5_9": "He who owns his rhythm owns the situation. Your coherent heart is a compass that always points to your personal power and safety.",
     "p5_10": "When your boundaries are felt at the biological level, you don't need to prove them. Your density speaks for itself, making the world respect your space.",
-    "p5_11": "When your walk gains weight, the world begins to adjust to your rhythm. Your 'tiger's path' is an invisible command for the space to belong to you."
+    "p5_11": "When your walk gains weight, the world begins to adjust to your rhythm. Your 'tiger's path' is an invisible command for the space to belong to you.",
+    "p5_12": "When you know how to draw your circles, the world begins to respect your rules. You are the master of your territory, and your strength is now part of your biology."
   },
   "science_info": {
     "p4_1": [
@@ -1758,6 +1786,12 @@
       "Biology: Increasing foot-ground contact time maximally activates sole proprioceptors. This sends a super-stability signal to the brain, which automatically inhibits amygdala activity (anxiety center).",
       "Bio-marker: Change in neuromotor gait pattern: reduced step frequency with increased 'density'. This correlates with increased testosterone levels and reduced social anxiety.",
       "Effect: A physical sense of 'your territory' appears. You are no longer a guest in this space — you are its master."
+    ],
+    "p5_12": [
+      "Action: Mark a circle on the floor (imaginary or real — with tape, carpet). Slowly walk its perimeter with the 'tiger's path'. Stop at four key points (cardinal directions).",
+      "Biomechanics: Territory marking through proprioceptive and visual confirmation of boundaries.",
+      "Bio-marker: Maximum reduction of amygdala activity and stabilization of the HPA axis (cortisol-testosterone balance).",
+      "Effect: Strengthening the sense of territoriality, total reduction of social anxiety and formation of an 'impenetrable' presence."
     ]
   },
   "level_goal": {

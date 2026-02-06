@@ -1438,6 +1438,17 @@ const OndaLevel1 = () => {
       guidingTexts: t('guiding_texts.p5_11', { returnObjects: true }) as string[],
       finalPhrase: t('final_phrases.p5_11'),
       scienceInfo: t('science_info.p5_11', { returnObjects: true }) as string[]
+    },
+    'p5-12': {
+      colors: 'from-blue-900 via-cyan-800 to-teal-700',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.bears_circle_message'),
+      ambientSound: t('elements.silence'),
+      visual: '🐻',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p5_12', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p5_12'),
+      scienceInfo: t('science_info.p5_12', { returnObjects: true }) as string[]
     }
   }), [i18n.language]);
 
@@ -1568,7 +1579,8 @@ const OndaLevel1 = () => {
         { id: 'p5-8', name: t('practice_items.territorial_gaze'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.territorial_gaze_desc') },
         { id: 'p5-9', name: t('practice_items.heart_coherence'), duration: t('practice_items.duration_6min'), maxQnt: 65, desc: t('practice_items.heart_coherence_desc') },
         { id: 'p5-10', name: t('practice_items.solid_aura'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.solid_aura_desc') },
-        { id: 'p5-11', name: t('practice_items.tigers_path'), duration: t('practice_items.duration_6min'), maxQnt: 65, desc: t('practice_items.tigers_path_desc') }
+        { id: 'p5-11', name: t('practice_items.tigers_path'), duration: t('practice_items.duration_6min'), maxQnt: 65, desc: t('practice_items.tigers_path_desc') },
+        { id: 'p5-12', name: t('practice_items.bears_circle'), duration: t('practice_items.duration_6min'), maxQnt: 70, desc: t('practice_items.bears_circle_desc') }
       ],
       artifact: {
         name: t('artifacts.territorys_pulse'),
@@ -2024,7 +2036,8 @@ const OndaLevel1 = () => {
       'p5-8': 'practice_items.territorial_gaze',
       'p5-9': 'practice_items.heart_coherence',
       'p5-10': 'practice_items.solid_aura',
-      'p5-11': 'practice_items.tigers_path'
+      'p5-11': 'practice_items.tigers_path',
+      'p5-12': 'practice_items.bears_circle'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -2089,7 +2102,8 @@ const OndaLevel1 = () => {
       'p5-8': 'practice_items.territorial_gaze_desc',
       'p5-9': 'practice_items.heart_coherence_desc',
       'p5-10': 'practice_items.solid_aura_desc',
-      'p5-11': 'practice_items.tigers_path_desc'
+      'p5-11': 'practice_items.tigers_path_desc',
+      'p5-12': 'practice_items.bears_circle_desc'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -2154,7 +2168,8 @@ const OndaLevel1 = () => {
       'p5-8': 'practice_messages.territorial_gaze_message',
       'p5-9': 'practice_messages.heart_coherence_message',
       'p5-10': 'practice_messages.solid_aura_message',
-      'p5-11': 'practice_messages.tigers_path_message'
+      'p5-11': 'practice_messages.tigers_path_message',
+      'p5-12': 'practice_messages.bears_circle_message'
     };
     return t(mapping[practiceId] || '');
   };
