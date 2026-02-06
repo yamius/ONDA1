@@ -138,8 +138,9 @@ grep "circuit_5\|level_5" public/locales/ru/translation.json
 
 | Part | Addon | Статус |
 |------|-------|--------|
+| Part 3 | Овладение гравитацией и интероцепция | ✅ |
 | Part 4 | Маневренность «Мелкого Млекопитающего» | ✅ |
-| Part 5-12 | — | ⏳ Ждём контент |
+| Part 1-2, 5-12 | — | ⏳ Ждём контент |
 
 **Подробнее:** см. `.assistant/CONTENT_STRUCTURE.md` → "Аддоны (Addon-страницы)"
 
