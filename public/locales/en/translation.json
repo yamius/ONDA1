@@ -263,7 +263,8 @@
     "silent_roar_message": "Give your strength a voice. Let the low vibration of your body fill the space, securing your right to territory and silence.",
     "territorial_gaze_message": "Look not at the world, but through it. Your gaze is not a search for threats, it's an inventory of your domain.",
     "heart_coherence_message": "Tune your inner frequency. When your heart beats in the rhythm of harmony, someone else's chaos is powerless against your calm.",
-    "solid_aura_message": "Feel where the world ends and you begin. Densify the space around your heart and center, creating a zone of absolute inviolability."
+    "solid_aura_message": "Feel where the world ends and you begin. Densify the space around your heart and center, creating a zone of absolute inviolability.",
+    "tigers_path_message": "Don't walk on the surface — press into it. Every step you take is a seal confirming your power over the space."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -405,7 +406,9 @@
     "heart_coherence": "Heart Coherence",
     "heart_coherence_desc": "Create a coherent electromagnetic field and protect your system from external emotional noise.",
     "solid_aura": "Solid Aura",
-    "solid_aura_desc": "Create a physically tangible barrier of personal space and activate the center of bodily 'Self'."
+    "solid_aura_desc": "Create a physically tangible barrier of personal space and activate the center of bodily 'Self'.",
+    "tigers_path": "Tiger's Path",
+    "tigers_path_desc": "Change the gait pattern to 'dominant' and reinforce the feeling of confidence in movement."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1544,6 +1547,24 @@
       "Hold this feeling of 'volume' around you, even when you lower your hands.",
       "Your dome always stays with you.",
       "Now any external impact first encounters this density, giving you time for a conscious response."
+    ],
+    "p5_11": [
+      "Start walking slowly",
+      "Place your foot smoothly, rolling from heel to toe, but with noticeable weight",
+      "Feel how your foot fully accepts your body weight.",
+      "No rush.",
+      "Imagine your legs are powerful columns.",
+      "With each step you 'imprint' your confidence into the floor.",
+      "Your pelvis stays stable, shoulders — open.",
+      "All your weight works for your stability.",
+      "You're not just moving — you're conquering space.",
+      "Every meter you've walked this way becomes yours.",
+      "Feel how this movement 'grounds' your thoughts.",
+      "Bustle disappears, only rhythm and power remain.",
+      "Your gaze is directed forward, you see the perspective while your feet hold reality.",
+      "Notice how others' reactions change — people instinctively give way to one whose step has such weight.",
+      "Breathe in rhythm with your steps.",
+      "Inhale — readiness, step — assertion."
     ]
   },
   "final_phrases": {
@@ -1604,7 +1625,8 @@
     "p5_7": "Your voice is a projection of your will. When you sound from the center of your power, the world quiets down to hear you. Your presence is now undeniable.",
     "p5_8": "Where your gaze reaches, foreign influence ends. You see everything, and this vision makes you invulnerable.",
     "p5_9": "He who owns his rhythm owns the situation. Your coherent heart is a compass that always points to your personal power and safety.",
-    "p5_10": "When your boundaries are felt at the biological level, you don't need to prove them. Your density speaks for itself, making the world respect your space."
+    "p5_10": "When your boundaries are felt at the biological level, you don't need to prove them. Your density speaks for itself, making the world respect your space.",
+    "p5_11": "When your walk gains weight, the world begins to adjust to your rhythm. Your 'tiger's path' is an invisible command for the space to belong to you."
   },
   "science_info": {
     "p4_1": [
@@ -1731,6 +1753,11 @@
       "Physiology: Tactile visualization activates the insular cortex (insula) — a key brain node responsible for interoception (sensing processes inside the body) and forming the body boundary schema.",
       "Bio-marker: Enhancement of alpha rhythms signaling a state of protected rest.",
       "Effect: Personality boundaries begin to be felt physically, making your presence 'dense' and natural to others."
+    ],
+    "p5_11": [
+      "Biology: Increasing foot-ground contact time maximally activates sole proprioceptors. This sends a super-stability signal to the brain, which automatically inhibits amygdala activity (anxiety center).",
+      "Bio-marker: Change in neuromotor gait pattern: reduced step frequency with increased 'density'. This correlates with increased testosterone levels and reduced social anxiety.",
+      "Effect: A physical sense of 'your territory' appears. You are no longer a guest in this space — you are its master."
     ]
   },
   "level_goal": {
