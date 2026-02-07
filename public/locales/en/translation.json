@@ -266,7 +266,8 @@
     "solid_aura_message": "Feel where the world ends and you begin. Densify the space around your heart and center, creating a zone of absolute inviolability.",
     "tigers_path_message": "Don't walk on the surface — press into it. Every step you take is a seal confirming your power over the space.",
     "bears_circle_message": "Draw your world. Inside this circle you are the highest law and the point of peace. Let every step seal the boundaries of your undeniable influence.",
-    "social_breathing_message": "Drop the settings of separation. Find a common rhythm where 'I' and 'You' disappear, and a unified field of safe interaction is born."
+    "social_breathing_message": "Drop the settings of separation. Find a common rhythm where 'I' and 'You' disappear, and a unified field of safe interaction is born.",
+    "expanded_vision_message": "Stop 'aiming' your gaze at the other person. Open your attention like a radar, covering the entire space and all participants simultaneously."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -414,7 +415,9 @@
     "bears_circle": "The Bear's Circle",
     "bears_circle_desc": "Fix the boundaries of your territory and bring the state of 'calm dominance' to the absolute.",
     "social_breathing": "Social Breathing",
-    "social_breathing_desc": "Synchronize your nervous system with a partner's or group's system to remove barriers."
+    "social_breathing_desc": "Synchronize your nervous system with a partner's or group's system to remove barriers.",
+    "expanded_vision": "Expanded Vision",
+    "expanded_vision_desc": "Remove tension in communication and learn to read the group's shared field through panoramic attention."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1611,6 +1614,20 @@
       "Now you are a single biological mechanism operating at the frequency of calm",
       "Hold this connection",
       "Any words spoken from this state will be heard and accepted"
+    ],
+    "p6_2": [
+      "Looking at the other person, consciously 'dilute' your focus.",
+      "Look 'through' the person, noticing what's happening behind them and to the sides.",
+      "Your gaze becomes soft and volumetric.",
+      "You no longer spend energy on fixing one point.",
+      "Feel how when you expand your gaze, your jaw and neck relax by themselves.",
+      "Notice micro-movements of other people in the room without turning your head.",
+      "Your attention is now everywhere.",
+      "If the person tries to pressure or manipulate — just expand your periphery even more.",
+      "Their influence will dissolve in your volume.",
+      "You are the center of this space.",
+      "Your gaze doesn't seek approval, it simply states the reality of the entire 'pack'.",
+      "Feel how from this state it becomes easier to understand the true moods of the group, hidden behind words."
     ]
   },
   "final_phrases": {
@@ -1674,7 +1691,8 @@
     "p5_10": "When your boundaries are felt at the biological level, you don't need to prove them. Your density speaks for itself, making the world respect your space.",
     "p5_11": "When your walk gains weight, the world begins to adjust to your rhythm. Your 'tiger's path' is an invisible command for the space to belong to you.",
     "p5_12": "When you know how to draw your circles, the world begins to respect your rules. You are the master of your territory, and your strength is now part of your biology.",
-    "p6_1": "When you breathe in unison, social masks disappear. Your synchronicity is the key to any cooperation and the foundation of a true pack."
+    "p6_1": "When you breathe in unison, social masks disappear. Your synchronicity is the key to any cooperation and the foundation of a true pack.",
+    "p6_2": "He who sees the whole field always owns the initiative. Your wide gaze is your freedom and your highest social intuition."
   },
   "science_info": {
     "p4_1": [
@@ -1818,6 +1836,12 @@
       "Physiology: Synchronization of breathing frequency leads to coherence of heart rate variability (HRV) in both participants. This activates the ventral vagus in both simultaneously.",
       "Bio-marker: Reduction of cortisol levels and the beginning of oxytocin production, signaling that the person nearby is 'one of us'.",
       "Effect: Social tension disappears, a physical sense of 'we are in the same rhythm' appears along with readiness for joint action."
+    ],
+    "p6_2": [
+      "Action: Looking at the other person, consciously 'dilute' your focus. Keep attention not on their face, but on the space to the sides of them — left and right simultaneously.",
+      "Physiology: Activation of the superior colliculus and insular cortex. Peripheral vision is directly connected to the parasympathetic system.",
+      "Why: 'Tunnel vision' is a signal of attack or flight. An expanded gaze tells the brain: 'I am safe, I control the entire perimeter'.",
+      "Effect: You stop being a target for others' pressure. You perceive the pack as a single living organism while maintaining inner autonomy."
     ]
   },
   "level_goal": {
