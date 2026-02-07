@@ -268,7 +268,8 @@
     "bears_circle_message": "Draw your world. Inside this circle you are the highest law and the point of peace. Let every step seal the boundaries of your undeniable influence.",
     "social_breathing_message": "Drop the settings of separation. Find a common rhythm where 'I' and 'You' disappear, and a unified field of safe interaction is born.",
     "expanded_vision_message": "Stop 'aiming' your gaze at the other person. Open your attention like a radar, covering the entire space and all participants simultaneously.",
-    "goodwill_message": "Remove your armor. Your true strength is not in the armor, but in the ability to be open while remaining unperturbed."
+    "goodwill_message": "Remove your armor. Your true strength is not in the armor, but in the ability to be open while remaining unperturbed.",
+    "chest_warmth_message": "Become a source, not a consumer. Warm the space inside yourself so that it begins to warm those around you."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -420,7 +421,9 @@
     "expanded_vision": "Expanded Vision",
     "expanded_vision_desc": "Remove tension in communication and learn to read the group's shared field through panoramic attention.",
     "goodwill": "Goodwill",
-    "goodwill_desc": "Broadcast a signal of safety and openness, evoking instinctive trust in others."
+    "goodwill_desc": "Broadcast a signal of safety and openness, evoking instinctive trust in others.",
+    "chest_warmth": "Chest Warmth",
+    "chest_warmth_desc": "Create a 'warm' field of presence and activate the social comfort system."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1643,6 +1646,23 @@
       "Your body broadcasts: 'I have nothing to hide, and I fear nothing'",
       "Notice how people nearby involuntarily begin to relax their shoulders, copying your posture and mood through mirror neurons",
       "You control the pack's state simply by demonstrating your relaxed openness."
+    ],
+    "p6_4": [
+      "Place your palm on the center of your chest.",
+      "Feel how a soft, warming light is born under your palm.",
+      "This warmth is your inner goodwill, your readiness for open contact.",
+      "Imagine how this warmth begins to slowly expand",
+      "With each exhale, let this warmth fill the room even more.",
+      "You are literally 'warming up' the atmosphere around you.",
+      "Inhale — gather warmth from the space around,",
+      "Exhale — let it go out even warmer",
+      "Breathe softly",
+      "Don't try to be liked — just warm",
+      "This is a biological process, it works deeper than words.",
+      "Notice how the tone of your voice changes when it comes through this 'warm' space in your chest.",
+      "It becomes more volumetric and trusting.",
+      "Feel how social barriers melt in this warmth, like ice under spring sun.",
+      "You broadcast to the pack: 'Near me it's safe, warm and calm'."
     ]
   },
   "final_phrases": {
@@ -1708,7 +1728,8 @@
     "p5_12": "When you know how to draw your circles, the world begins to respect your rules. You are the master of your territory, and your strength is now part of your biology.",
     "p6_1": "When you breathe in unison, social masks disappear. Your synchronicity is the key to any cooperation and the foundation of a true pack.",
     "p6_2": "He who sees the whole field always owns the initiative. Your wide gaze is your freedom and your highest social intuition.",
-    "p6_3": "An open heart is the privilege of the strong. When your shoulders are relaxed, you invite the world to dialogue on your terms, creating space for deep resonance."
+    "p6_3": "An open heart is the privilege of the strong. When your shoulders are relaxed, you invite the world to dialogue on your terms, creating space for deep resonance.",
+    "p6_4": "He who knows how to warm the space is never alone. Your warmth is the quietest and most convincing form of leadership."
   },
   "science_info": {
     "p4_1": [
@@ -1864,6 +1885,12 @@
       "Physiology: Open Posture reduces sympathetic nervous system activity. The brain receives a signal: 'No threat, can proceed to social interaction'.",
       "Bio-marker: Increased oxytocin production and reduced background cortisol. Relaxation of trapezius muscles frees the passage of signals through the vagus nerve.",
       "Effect: You become 'readable' to the pack. Others read your lack of defense as a sign of leadership and friendliness, which removes their counter-aggression."
+    ],
+    "p6_4": [
+      "Action: Place your palm on the center of your chest. Wait for the sensation of physical warmth from your hand, then extending beyond your skin. Breathe softly, transmitting this warmth into the space around you.",
+      "Physiology: Activation of thermoreceptors in the sternum area sends signals to the hypothalamus, which triggers oxytocin release. In mammalian evolution, physical warmth is inseparably linked with social closeness and safety.",
+      "Bio-marker: Expansion of peripheral vessels and stabilization of heart rate.",
+      "Effect: Your presence becomes 'warm' and attractive. People instinctively want to be in your field, as their limbic system reads you as a safe and resourceful object."
     ]
   },
   "level_goal": {
