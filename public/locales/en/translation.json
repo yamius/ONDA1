@@ -271,7 +271,8 @@
     "goodwill_message": "Remove your armor. Your true strength is not in the armor, but in the ability to be open while remaining unperturbed.",
     "chest_warmth_message": "Become a source, not a consumer. Warm the space inside yourself so that it begins to warm those around you.",
     "gesture_inclusion_message": "Show your hands. Let your palms become a visual safety code that disables others' suspicion and opens doors for dialogue.",
-    "attention_sensing_message": "Stop being a point, become a space. Feel the invisible threads of attention that permeate the pack, and find your place in this weaving."
+    "attention_sensing_message": "Stop being a point, become a space. Feel the invisible threads of attention that permeate the pack, and find your place in this weaving.",
+    "body_listening_message": "Words can lie, biology never does. Stop listening with your ears, start listening with the full volume of your body, catching others' truth in the rhythm of breathing and pauses."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -429,7 +430,9 @@
     "gesture_inclusion": "The Gesture of Inclusion",
     "gesture_inclusion_desc": "Remove others' protective barriers and shift communication into a mode of trusting cooperation.",
     "attention_sensing": "Attention Sensing",
-    "attention_sensing_desc": "Develop sensory sensitivity to the social field and feel your inclusion in the 'network' of interactions."
+    "attention_sensing_desc": "Develop sensory sensitivity to the social field and feel your inclusion in the 'network' of interactions.",
+    "body_listening": "Body Listening",
+    "body_listening_desc": "Activate deep understanding of your interlocutor by reading their physiological rhythms."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1704,6 +1707,25 @@
       "Allow your attention to touch others just as softly.",
       "Notice how this exercise removes the 'social cold'.",
       "You are no longer alone — you are in the system."
+    ],
+    "p6_7": [
+      "Balance your breathing",
+      "Relax your face and simply observe",
+      "Let information enter your body, bypassing the filters of criticism.",
+      "During a conversation or while observing someone, shift focus from the meaning of words to the physics of the process.",
+      "Notice the pauses. They hide more than words.",
+      "What is happening in your partner's body when they are silent?",
+      "Observe how the person breathes — shallowly or deeply",
+      "How their shoulders move during phrases, how the tension in their hands changes.",
+      "Feel where in your own body the state of your interlocutor resonates",
+      "With tightness in the stomach, warmth in the chest, or tension in the throat?",
+      "Allow your nervous system to 'mirror' these rhythms within yourself",
+      "Don't analyze — contemplate.",
+      "Your 'social brain' is already doing all the work for you.",
+      "Listen to the sound of the voice as vibration, not as text.",
+      "Vibration always conveys the real level of stress or joy hormones.",
+      "Your body is a hypersensitive resonator.",
+      "Trust its 'intimate' contact with the world."
     ]
   },
   "final_phrases": {
@@ -1772,7 +1794,8 @@
     "p6_3": "An open heart is the privilege of the strong. When your shoulders are relaxed, you invite the world to dialogue on your terms, creating space for deep resonance.",
     "p6_4": "He who knows how to warm the space is never alone. Your warmth is the quietest and most convincing form of leadership.",
     "p6_5": "A soft hand rules the world more effectively than a clenched fist. Your 'gesture of inclusion' is the key to the hearts and minds of those with whom you build a shared future.",
-    "p6_6": "Attention is the energy of connection. When you learn to scan its flows, you stop being a random passerby and become a full participant in the living process of the pack."
+    "p6_6": "Attention is the energy of connection. When you learn to scan its flows, you stop being a random passerby and become a full participant in the living process of the pack.",
+    "p6_7": "When you listen with your body, you become invisible to manipulation. Your interoceptive empathy sees the essence of things, making you the most attentive and formidable ally in the pack."
   },
   "science_info": {
     "p4_1": [
@@ -1946,6 +1969,12 @@
       "Biology: The work of the superior colliculus and parietal cortex, responsible for spatial attention and 'body schema' in the external environment.",
       "Bio-marker: Training of tonic vigilance (system readiness for perception without tension) and improvement of spatial orientation.",
       "Effect: The feeling of social isolation and alienation disappears. A deep, almost physical sensation of inclusion in a unified 'social network' of the pack emerges."
+    ],
+    "p6_7": [
+      "Action: During a conversation or while observing someone, shift focus from the meaning of words to the physics of the process.",
+      "Physiology: Activation of interoceptive circuits of the insular cortex (insula). The brain compares observed micro-signals of another person with your own bodily archives.",
+      "Bio-marker: Synchronous blinking and micro-tension of facial muscles (mirror neuron effect).",
+      "Effect: You begin to understand people's state and true intentions before they finish their sentence. A feeling of 'direct knowing' emerges."
     ]
   },
   "level_goal": {
