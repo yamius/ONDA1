@@ -267,7 +267,8 @@
     "tigers_path_message": "Don't walk on the surface — press into it. Every step you take is a seal confirming your power over the space.",
     "bears_circle_message": "Draw your world. Inside this circle you are the highest law and the point of peace. Let every step seal the boundaries of your undeniable influence.",
     "social_breathing_message": "Drop the settings of separation. Find a common rhythm where 'I' and 'You' disappear, and a unified field of safe interaction is born.",
-    "expanded_vision_message": "Stop 'aiming' your gaze at the other person. Open your attention like a radar, covering the entire space and all participants simultaneously."
+    "expanded_vision_message": "Stop 'aiming' your gaze at the other person. Open your attention like a radar, covering the entire space and all participants simultaneously.",
+    "goodwill_message": "Remove your armor. Your true strength is not in the armor, but in the ability to be open while remaining unperturbed."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -417,7 +418,9 @@
     "social_breathing": "Social Breathing",
     "social_breathing_desc": "Synchronize your nervous system with a partner's or group's system to remove barriers.",
     "expanded_vision": "Expanded Vision",
-    "expanded_vision_desc": "Remove tension in communication and learn to read the group's shared field through panoramic attention."
+    "expanded_vision_desc": "Remove tension in communication and learn to read the group's shared field through panoramic attention.",
+    "goodwill": "Goodwill",
+    "goodwill_desc": "Broadcast a signal of safety and openness, evoking instinctive trust in others."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1628,6 +1631,18 @@
       "You are the center of this space.",
       "Your gaze doesn't seek approval, it simply states the reality of the entire 'pack'.",
       "Feel how from this state it becomes easier to understand the true moods of the group, hidden behind words."
+    ],
+    "p6_3": [
+      "Smooth deep inhale — and simply flowing exhale",
+      "Lower your shoulders down and slightly back, opening the collarbone line",
+      "Imagine your shoulders are heavy drops flowing down, freeing the neck",
+      "Arms hang along the body softly, without tension in the wrists",
+      "Your chest is open towards the other person, as if inviting them into your field of safety",
+      "Feel the difference: you're not 'puffing out' your chest (that's aggression), you're simply removing blocks (that's status)",
+      "Feel warmth in your palms — this is a sign that blood is circulating freely, and you're ready for contact",
+      "Your body broadcasts: 'I have nothing to hide, and I fear nothing'",
+      "Notice how people nearby involuntarily begin to relax their shoulders, copying your posture and mood through mirror neurons",
+      "You control the pack's state simply by demonstrating your relaxed openness."
     ]
   },
   "final_phrases": {
@@ -1692,7 +1707,8 @@
     "p5_11": "When your walk gains weight, the world begins to adjust to your rhythm. Your 'tiger's path' is an invisible command for the space to belong to you.",
     "p5_12": "When you know how to draw your circles, the world begins to respect your rules. You are the master of your territory, and your strength is now part of your biology.",
     "p6_1": "When you breathe in unison, social masks disappear. Your synchronicity is the key to any cooperation and the foundation of a true pack.",
-    "p6_2": "He who sees the whole field always owns the initiative. Your wide gaze is your freedom and your highest social intuition."
+    "p6_2": "He who sees the whole field always owns the initiative. Your wide gaze is your freedom and your highest social intuition.",
+    "p6_3": "An open heart is the privilege of the strong. When your shoulders are relaxed, you invite the world to dialogue on your terms, creating space for deep resonance."
   },
   "science_info": {
     "p4_1": [
@@ -1842,6 +1858,12 @@
       "Physiology: Activation of the superior colliculus and insular cortex. Peripheral vision is directly connected to the parasympathetic system.",
       "Why: 'Tunnel vision' is a signal of attack or flight. An expanded gaze tells the brain: 'I am safe, I control the entire perimeter'.",
       "Effect: You stop being a target for others' pressure. You perceive the pack as a single living organism while maintaining inner autonomy."
+    ],
+    "p6_3": [
+      "Action: Arms should hang along the body softly, without tension in the wrists. Feel how the front line of your torso (solar plexus, chest, throat) becomes available for contact while being supported by your inner core.",
+      "Physiology: Open Posture reduces sympathetic nervous system activity. The brain receives a signal: 'No threat, can proceed to social interaction'.",
+      "Bio-marker: Increased oxytocin production and reduced background cortisol. Relaxation of trapezius muscles frees the passage of signals through the vagus nerve.",
+      "Effect: You become 'readable' to the pack. Others read your lack of defense as a sign of leadership and friendliness, which removes their counter-aggression."
     ]
   },
   "level_goal": {
