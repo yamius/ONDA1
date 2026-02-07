@@ -270,7 +270,8 @@
     "expanded_vision_message": "Stop 'aiming' your gaze at the other person. Open your attention like a radar, covering the entire space and all participants simultaneously.",
     "goodwill_message": "Remove your armor. Your true strength is not in the armor, but in the ability to be open while remaining unperturbed.",
     "chest_warmth_message": "Become a source, not a consumer. Warm the space inside yourself so that it begins to warm those around you.",
-    "gesture_inclusion_message": "Show your hands. Let your palms become a visual safety code that disables others' suspicion and opens doors for dialogue."
+    "gesture_inclusion_message": "Show your hands. Let your palms become a visual safety code that disables others' suspicion and opens doors for dialogue.",
+    "attention_sensing_message": "Stop being a point, become a space. Feel the invisible threads of attention that permeate the pack, and find your place in this weaving."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -426,7 +427,9 @@
     "chest_warmth": "Chest Warmth",
     "chest_warmth_desc": "Create a 'warm' field of presence and activate the social comfort system.",
     "gesture_inclusion": "The Gesture of Inclusion",
-    "gesture_inclusion_desc": "Remove others' protective barriers and shift communication into a mode of trusting cooperation."
+    "gesture_inclusion_desc": "Remove others' protective barriers and shift communication into a mode of trusting cooperation.",
+    "attention_sensing": "Attention Sensing",
+    "attention_sensing_desc": "Develop sensory sensitivity to the social field and feel your inclusion in the 'network' of interactions."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1683,6 +1686,24 @@
       "Notice how in response to your softness, the other person begins to shift to a more open posture",
       "Your hands are a tuning fork",
       "You set the rhythm of safety, and everyone around tunes to your wave"
+    ],
+    "p6_6": [
+      "While in a crowded place, defocus your gaze",
+      "Imagine the air around you is filled with vibrations.",
+      "Relax the skin on your back and the back of your head.",
+      "We often 'sense' someone else's attention with precisely these areas.",
+      "Try to feel the directions of attention from people around you, imagining them as 'rays'.",
+      "Feel where these rays intersect, where they are directed into emptiness,",
+      "and where they touch your body.",
+      "Someone's attention makes the air around 'denser'.",
+      "Pay special attention to the moment when someone's 'ray' focuses directly on you.",
+      "Don't analyze who is looking at you",
+      "— simply register the fact of your field being touched by someone else's interest.",
+      "Feel the difference between the chaotic attention of a crowd and the directed vector of an interlocutor.",
+      "You are not a target for these rays, you are part of a shared pattern.",
+      "Allow your attention to touch others just as softly.",
+      "Notice how this exercise removes the 'social cold'.",
+      "You are no longer alone — you are in the system."
     ]
   },
   "final_phrases": {
@@ -1750,7 +1771,8 @@
     "p6_2": "He who sees the whole field always owns the initiative. Your wide gaze is your freedom and your highest social intuition.",
     "p6_3": "An open heart is the privilege of the strong. When your shoulders are relaxed, you invite the world to dialogue on your terms, creating space for deep resonance.",
     "p6_4": "He who knows how to warm the space is never alone. Your warmth is the quietest and most convincing form of leadership.",
-    "p6_5": "A soft hand rules the world more effectively than a clenched fist. Your 'gesture of inclusion' is the key to the hearts and minds of those with whom you build a shared future."
+    "p6_5": "A soft hand rules the world more effectively than a clenched fist. Your 'gesture of inclusion' is the key to the hearts and minds of those with whom you build a shared future.",
+    "p6_6": "Attention is the energy of connection. When you learn to scan its flows, you stop being a random passerby and become a full participant in the living process of the pack."
   },
   "science_info": {
     "p4_1": [
@@ -1918,6 +1940,12 @@
       "Physiology: A safety signal for others' limbic system. Evolutionarily, empty, relaxed palms are a marker of 'no weapon' and no intention to attack.",
       "Bio-marker: Tense hands are subconsciously read as readiness to strike or grab, which instantly triggers a defensive reaction in the other person (even if they don't realize it).",
       "Effect: The other person instinctively relaxes. The level of formality decreases, the need to 'hold the defense' disappears, and communication becomes more sincere and productive."
+    ],
+    "p6_6": [
+      "Action: While in a crowded place, defocus your gaze.",
+      "Biology: The work of the superior colliculus and parietal cortex, responsible for spatial attention and 'body schema' in the external environment.",
+      "Bio-marker: Training of tonic vigilance (system readiness for perception without tension) and improvement of spatial orientation.",
+      "Effect: The feeling of social isolation and alienation disappears. A deep, almost physical sensation of inclusion in a unified 'social network' of the pack emerges."
     ]
   },
   "level_goal": {
