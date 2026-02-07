@@ -1499,6 +1499,17 @@ const OndaLevel1 = () => {
       guidingTexts: t('guiding_texts.p6_4', { returnObjects: true }) as string[],
       finalPhrase: t('final_phrases.p6_4'),
       scienceInfo: t('science_info.p6_4', { returnObjects: true }) as string[]
+    },
+    'p6-5': {
+      colors: 'from-emerald-800 via-teal-700 to-cyan-600',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.gesture_inclusion_message'),
+      ambientSound: t('elements.silence'),
+      visual: '🤲',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p6_5', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p6_5'),
+      scienceInfo: t('science_info.p6_5', { returnObjects: true }) as string[]
     }
   }), [i18n.language]);
 
@@ -1649,7 +1660,8 @@ const OndaLevel1 = () => {
         { id: 'p6-1', name: t('practice_items.social_breathing'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.social_breathing_desc') },
         { id: 'p6-2', name: t('practice_items.expanded_vision'), duration: t('practice_items.duration_6min'), maxQnt: 55, desc: t('practice_items.expanded_vision_desc') },
         { id: 'p6-3', name: t('practice_items.goodwill'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.goodwill_desc') },
-        { id: 'p6-4', name: t('practice_items.chest_warmth'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.chest_warmth_desc') }
+        { id: 'p6-4', name: t('practice_items.chest_warmth'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.chest_warmth_desc') },
+        { id: 'p6-5', name: t('practice_items.gesture_inclusion'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.gesture_inclusion_desc') }
       ],
       artifact: null  // Ждём данные от пользователя
     },
@@ -2096,7 +2108,8 @@ const OndaLevel1 = () => {
       'p6-1': 'practice_items.social_breathing',
       'p6-2': 'practice_items.expanded_vision',
       'p6-3': 'practice_items.goodwill',
-      'p6-4': 'practice_items.chest_warmth'
+      'p6-4': 'practice_items.chest_warmth',
+      'p6-5': 'practice_items.gesture_inclusion'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -2166,7 +2179,8 @@ const OndaLevel1 = () => {
       'p6-1': 'practice_items.social_breathing_desc',
       'p6-2': 'practice_items.expanded_vision_desc',
       'p6-3': 'practice_items.goodwill_desc',
-      'p6-4': 'practice_items.chest_warmth_desc'
+      'p6-4': 'practice_items.chest_warmth_desc',
+      'p6-5': 'practice_items.gesture_inclusion_desc'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -2236,7 +2250,8 @@ const OndaLevel1 = () => {
       'p6-1': 'practice_messages.social_breathing_message',
       'p6-2': 'practice_messages.expanded_vision_message',
       'p6-3': 'practice_messages.goodwill_message',
-      'p6-4': 'practice_messages.chest_warmth_message'
+      'p6-4': 'practice_messages.chest_warmth_message',
+      'p6-5': 'practice_messages.gesture_inclusion_message'
     };
     return t(mapping[practiceId] || '');
   };

@@ -269,7 +269,8 @@
     "social_breathing_message": "Drop the settings of separation. Find a common rhythm where 'I' and 'You' disappear, and a unified field of safe interaction is born.",
     "expanded_vision_message": "Stop 'aiming' your gaze at the other person. Open your attention like a radar, covering the entire space and all participants simultaneously.",
     "goodwill_message": "Remove your armor. Your true strength is not in the armor, but in the ability to be open while remaining unperturbed.",
-    "chest_warmth_message": "Become a source, not a consumer. Warm the space inside yourself so that it begins to warm those around you."
+    "chest_warmth_message": "Become a source, not a consumer. Warm the space inside yourself so that it begins to warm those around you.",
+    "gesture_inclusion_message": "Show your hands. Let your palms become a visual safety code that disables others' suspicion and opens doors for dialogue."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -423,7 +424,9 @@
     "goodwill": "Goodwill",
     "goodwill_desc": "Broadcast a signal of safety and openness, evoking instinctive trust in others.",
     "chest_warmth": "Chest Warmth",
-    "chest_warmth_desc": "Create a 'warm' field of presence and activate the social comfort system."
+    "chest_warmth_desc": "Create a 'warm' field of presence and activate the social comfort system.",
+    "gesture_inclusion": "The Gesture of Inclusion",
+    "gesture_inclusion_desc": "Remove others' protective barriers and shift communication into a mode of trusting cooperation."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1663,6 +1666,23 @@
       "It becomes more volumetric and trusting.",
       "Feel how social barriers melt in this warmth, like ice under spring sun.",
       "You broadcast to the pack: 'Near me it's safe, warm and calm'."
+    ],
+    "p6_5": [
+      "Take a deep breath... and with the exhale, let your attention drop into your palms",
+      "Feel the weight of your hands.",
+      "Sense how gravity gently pulls them down, freeing your shoulders",
+      "Imagine your hands tracing smooth spheres in space",
+      "Let them move freely, as if in water",
+      "No sharp angles, only endless smooth lines.",
+      "Consciously relax your hands — they should not be clenched into fists or tense",
+      "The air around you becomes dense and warm",
+      "Inhale... and on the exhale let them become soft, like a sleeping child's",
+      "When you speak, your palms are an extension of your breathing",
+      "Every finger movement sends your brain a signal: 'Everything is fine. I am safe. I am in control'",
+      "By opening your palms, you literally say: 'I have nothing to hide, I trust you with my vulnerability, because I am strong'",
+      "Notice how in response to your softness, the other person begins to shift to a more open posture",
+      "Your hands are a tuning fork",
+      "You set the rhythm of safety, and everyone around tunes to your wave"
     ]
   },
   "final_phrases": {
@@ -1729,7 +1749,8 @@
     "p6_1": "When you breathe in unison, social masks disappear. Your synchronicity is the key to any cooperation and the foundation of a true pack.",
     "p6_2": "He who sees the whole field always owns the initiative. Your wide gaze is your freedom and your highest social intuition.",
     "p6_3": "An open heart is the privilege of the strong. When your shoulders are relaxed, you invite the world to dialogue on your terms, creating space for deep resonance.",
-    "p6_4": "He who knows how to warm the space is never alone. Your warmth is the quietest and most convincing form of leadership."
+    "p6_4": "He who knows how to warm the space is never alone. Your warmth is the quietest and most convincing form of leadership.",
+    "p6_5": "A soft hand rules the world more effectively than a clenched fist. Your 'gesture of inclusion' is the key to the hearts and minds of those with whom you build a shared future."
   },
   "science_info": {
     "p4_1": [
@@ -1891,6 +1912,12 @@
       "Physiology: Activation of thermoreceptors in the sternum area sends signals to the hypothalamus, which triggers oxytocin release. In mammalian evolution, physical warmth is inseparably linked with social closeness and safety.",
       "Bio-marker: Expansion of peripheral vessels and stabilization of heart rate.",
       "Effect: Your presence becomes 'warm' and attractive. People instinctively want to be in your field, as their limbic system reads you as a safe and resourceful object."
+    ],
+    "p6_5": [
+      "Action: During communication, use open palms (turning them up or toward the other person) and soft, rounded gestures.",
+      "Physiology: A safety signal for others' limbic system. Evolutionarily, empty, relaxed palms are a marker of 'no weapon' and no intention to attack.",
+      "Bio-marker: Tense hands are subconsciously read as readiness to strike or grab, which instantly triggers a defensive reaction in the other person (even if they don't realize it).",
+      "Effect: The other person instinctively relaxes. The level of formality decreases, the need to 'hold the defense' disappears, and communication becomes more sincere and productive."
     ]
   },
   "level_goal": {
