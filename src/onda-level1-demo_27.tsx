@@ -1565,6 +1565,17 @@ const OndaLevel1 = () => {
       guidingTexts: t('guiding_texts.p6_10', { returnObjects: true }) as string[],
       finalPhrase: t('final_phrases.p6_10'),
       scienceInfo: t('science_info.p6_10', { returnObjects: true }) as string[]
+    },
+    'p6-11': {
+      colors: 'from-emerald-800 via-teal-700 to-cyan-600',
+      element: 'AQUA',
+      elementMessage: t('practice_messages.somatic_containment_message'),
+      ambientSound: t('elements.silence'),
+      visual: '🛡️',
+      targetTime: 360,
+      guidingTexts: t('guiding_texts.p6_11', { returnObjects: true }) as string[],
+      finalPhrase: t('final_phrases.p6_11'),
+      scienceInfo: t('science_info.p6_11', { returnObjects: true }) as string[]
     }
   }), [i18n.language]);
 
@@ -1721,7 +1732,8 @@ const OndaLevel1 = () => {
         { id: 'p6-7', name: t('practice_items.body_listening'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.body_listening_desc') },
         { id: 'p6-8', name: t('practice_items.distance_balance'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.distance_balance_desc') },
         { id: 'p6-9', name: t('practice_items.social_exhale'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.social_exhale_desc') },
-        { id: 'p6-10', name: t('practice_items.oxytocin_wave'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.oxytocin_wave_desc') }
+        { id: 'p6-10', name: t('practice_items.oxytocin_wave'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.oxytocin_wave_desc') },
+        { id: 'p6-11', name: t('practice_items.somatic_containment'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.somatic_containment_desc') }
       ],
       artifact: null  // Ждём данные от пользователя
     },
@@ -2174,7 +2186,8 @@ const OndaLevel1 = () => {
       'p6-7': 'practice_items.body_listening',
       'p6-8': 'practice_items.distance_balance',
       'p6-9': 'practice_items.social_exhale',
-      'p6-10': 'practice_items.oxytocin_wave'
+      'p6-10': 'practice_items.oxytocin_wave',
+      'p6-11': 'practice_items.somatic_containment'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -2250,7 +2263,8 @@ const OndaLevel1 = () => {
       'p6-7': 'practice_items.body_listening_desc',
       'p6-8': 'practice_items.distance_balance_desc',
       'p6-9': 'practice_items.social_exhale_desc',
-      'p6-10': 'practice_items.oxytocin_wave_desc'
+      'p6-10': 'practice_items.oxytocin_wave_desc',
+      'p6-11': 'practice_items.somatic_containment_desc'
     };
     return t(mapping[practiceId] || practiceId);
   };
@@ -2326,7 +2340,8 @@ const OndaLevel1 = () => {
       'p6-7': 'practice_messages.body_listening_message',
       'p6-8': 'practice_messages.distance_balance_message',
       'p6-9': 'practice_messages.social_exhale_message',
-      'p6-10': 'practice_messages.oxytocin_wave_message'
+      'p6-10': 'practice_messages.oxytocin_wave_message',
+      'p6-11': 'practice_messages.somatic_containment_message'
     };
     return t(mapping[practiceId] || '');
   };

@@ -275,7 +275,8 @@
     "body_listening_message": "Words can lie, biology never does. Stop listening with your ears, start listening with the full volume of your body, catching others' truth in the rhythm of breathing and pauses.",
     "distance_balance_message": "Find your point of equilibrium. The space between you and the pack is not emptiness, but a regulator of your inner tension and strength.",
     "social_exhale_message": "Be the one who sets the rhythm of silence. Your exhale is an invisible wave that extinguishes others' anxiety and returns clarity to the pack.",
-    "oxytocin_wave_message": "Become a source of safety. Transmit warmth that cannot be faked, and watch as social coldness transforms into trust."
+    "oxytocin_wave_message": "Become a source of safety. Transmit warmth that cannot be faked, and watch as social coldness transforms into trust.",
+    "somatic_containment_message": "Return to your home. Feel the density of your skin and the boundaries of your body, to stay in contact without losing yourself in others' chaos."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -441,7 +442,9 @@
     "social_exhale": "Social Exhale",
     "social_exhale_desc": "Become a stabilization point for others and reduce the level of background tension in a group.",
     "oxytocin_wave": "Oxytocin Wave",
-    "oxytocin_wave_desc": "Reduce social stress and activate group cohesion mode through directed emotion."
+    "oxytocin_wave_desc": "Reduce social stress and activate group cohesion mode through directed emotion.",
+    "somatic_containment": "Somatic Containment",
+    "somatic_containment_desc": "Restore the sense of personal boundaries and prevent emotional dissolution in a group."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1784,6 +1787,18 @@
       "This is oxytocin beginning its work.",
       "Your gaze becomes 'accepting'.",
       "You see allies in people, and they begin to mirror this."
+    ],
+    "p6_11": [
+      "Feel your feet, shoulders, the back of your head.",
+      "These are your boundaries. You are here.",
+      "Your skin is a reliable filter.",
+      "It lets information through but maintains your integrity.",
+      "Let others' emotions fly past like wind past a rock.",
+      "You feel their movement but remain still.",
+      "With each inhale make your inner 'container' denser and calmer.",
+      "You can empathize while remaining sovereign.",
+      "Your empathy is a choice, not an automatic reaction.",
+      "Notice how awareness of your own boundaries makes you a more confident conversationalist."
     ]
   },
   "final_phrases": {
@@ -1856,7 +1871,8 @@
     "p6_7": "When you listen with your body, you become invisible to manipulation. Your interoceptive empathy sees the essence of things, making you the most attentive and formidable ally in the pack.",
     "p6_8": "Your distance is your freedom. When you have found your point of balance, you can be part of the pack while remaining the master of your state.",
     "p6_9": "A leader is not the one who shouts the loudest, but the one who breathes the deepest. Your social exhale is the quiet power over the atmosphere of any space.",
-    "p6_10": "Your ability to generate warmth is the highest form of social intelligence. When you transmit the oxytocin wave, you change the rules of the game, turning a crowd into a pack, and strangers into partners."
+    "p6_10": "Your ability to generate warmth is the highest form of social intelligence. When you transmit the oxytocin wave, you change the rules of the game, turning a crowd into a pack, and strangers into partners.",
+    "p6_11": "Your autonomy is the guarantee of your value to the pack. Only the one who knows how to return to themselves in time can lead others without losing course."
   },
   "science_info": {
     "p4_1": [
@@ -2053,6 +2069,11 @@
       "Biology: Conscious activation of oxytocin synthesis in the paraventricular nuclei of the hypothalamus. Oxytocin is a direct biological antagonist of cortisol (the stress hormone).",
       "Why: High oxytocin levels block signals of fear of social rejection in the amygdala. This makes your presence 'magnetic' and safe for the limbic system of those around you.",
       "Effect: A sharp increase in personal charisma. The group begins to perceive you as a leader who unites rather than divides."
+    ],
+    "p6_11": [
+      "Biology: Somatosensory confirmation of autonomy. Activation of the parietal cortex responsible for body schema helps the brain draw a clear line between 'Self' and 'Not-Self'.",
+      "Bio-marker: Reduction of sympathetic system reactivity. Stabilization of interoception (inner body sense), which blocks excessive mirroring of others' stress.",
+      "Effect: You maintain the ability to be 'together' without merging with the crowd. This is the best prevention of emotional burnout and 'social hangover'."
     ]
   },
   "level_goal": {
