@@ -273,7 +273,8 @@
     "gesture_inclusion_message": "Show your hands. Let your palms become a visual safety code that disables others' suspicion and opens doors for dialogue.",
     "attention_sensing_message": "Stop being a point, become a space. Feel the invisible threads of attention that permeate the pack, and find your place in this weaving.",
     "body_listening_message": "Words can lie, biology never does. Stop listening with your ears, start listening with the full volume of your body, catching others' truth in the rhythm of breathing and pauses.",
-    "distance_balance_message": "Find your point of equilibrium. The space between you and the pack is not emptiness, but a regulator of your inner tension and strength."
+    "distance_balance_message": "Find your point of equilibrium. The space between you and the pack is not emptiness, but a regulator of your inner tension and strength.",
+    "social_exhale_message": "Be the one who sets the rhythm of silence. Your exhale is an invisible wave that extinguishes others' anxiety and returns clarity to the pack."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -435,7 +436,9 @@
     "body_listening": "Body Listening",
     "body_listening_desc": "Activate deep understanding of your interlocutor by reading their physiological rhythms.",
     "distance_balance": "Distance of Balance",
-    "distance_balance_desc": "Find the optimal distance for maintaining clarity of thought and social contact."
+    "distance_balance_desc": "Find the optimal distance for maintaining clarity of thought and social contact.",
+    "social_exhale": "Social Exhale",
+    "social_exhale_desc": "Become a stabilization point for others and reduce the level of background tension in a group."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1751,6 +1754,19 @@
       "you yourself regulate the brightness of social contact simply by changing the distance",
       "Repeat several times until you find the point where you are maximally engaged",
       "but at the same time absolutely calm"
+    ],
+    "p6_9": [
+      "Don't try to calm others with words — just exhale.",
+      "Your biology will do it for you.",
+      "Your exhale is longer than your inhale.",
+      "This is a biological code: 'There is no danger, we can relax.'",
+      "Feel how with each such exhale you become heavier and more stable,",
+      "and the space around you — more transparent.",
+      "If tension is rising in the group, don't get involved in it.",
+      "Extend your exhale by a couple more seconds.",
+      "Imagine that your calmness is a virus that gently infects everyone in this room.",
+      "You don't absorb others' panic, you dissolve it in your own depth.",
+      "Notice how people nearby begin to inhale more deeply or shift to more relaxed postures following you."
     ]
   },
   "final_phrases": {
@@ -1821,7 +1837,8 @@
     "p6_5": "A soft hand rules the world more effectively than a clenched fist. Your 'gesture of inclusion' is the key to the hearts and minds of those with whom you build a shared future.",
     "p6_6": "Attention is the energy of connection. When you learn to scan its flows, you stop being a random passerby and become a full participant in the living process of the pack.",
     "p6_7": "When you listen with your body, you become invisible to manipulation. Your interoceptive empathy sees the essence of things, making you the most attentive and formidable ally in the pack.",
-    "p6_8": "Your distance is your freedom. When you have found your point of balance, you can be part of the pack while remaining the master of your state."
+    "p6_8": "Your distance is your freedom. When you have found your point of balance, you can be part of the pack while remaining the master of your state.",
+    "p6_9": "A leader is not the one who shouts the loudest, but the one who breathes the deepest. Your social exhale is the quiet power over the atmosphere of any space."
   },
   "science_info": {
     "p4_1": [
@@ -2007,6 +2024,12 @@
       "Physiology: Regulation of proxemics (spatial behavior). Optimal distance prevents hyperstimulation of the amygdala, allowing the prefrontal cortex to maintain control over the situation.",
       "Bio-marker: Reduction of micro-tension in eye muscles and jaw muscles when finding 'your' point.",
       "Effect: You stop 'falling' into others' field and don't wall yourself off. You feel the boundary and maintain a living contact."
+    ],
+    "p6_9": [
+      "Action: While in company or at a meeting, periodically make a soft, extended exhale. It should be silent and natural.",
+      "Physiology: An extended exhale activates the parasympathetic system through the vagus nerve. The dominant's calmness is transmitted through the absence of signs of breathlessness and tension.",
+      "Bio-marker: Increase in heart rate variability (HRV) in you and synchronous slowing of pulse in those within a 2-3 meter radius.",
+      "Effect: You become the 'center of gravity' and an island of safety. Conflicts fade in your presence, and people begin to unconsciously seek your gaze or approval."
     ]
   },
   "level_goal": {
