@@ -4112,10 +4112,12 @@ const OndaLevel1 = () => {
                 activeCircuit === 2 ? 'text-cyan-200/80 border-cyan-500/40' : activeCircuit === 3 ? 'text-amber-200/80 border-amber-500/40' : activeCircuit === 4 ? 'text-teal-200/80 border-teal-500/40' : activeCircuit === 5 ? 'text-stone-200/80 border-stone-400/40' : activeCircuit === 6 ? 'text-emerald-200/80 border-emerald-500/40' : activeCircuit === 7 ? 'text-sky-200/80 border-sky-500/40' : activeCircuit === 8 ? 'text-indigo-200/80 border-indigo-500/40' : activeCircuit === 9 ? 'text-cyan-200/80 border-cyan-500/40' : activeCircuit === 10 ? 'text-orange-200/80 border-orange-500/40' : activeCircuit === 11 ? 'text-rose-200/80 border-rose-500/40' : activeCircuit === 12 ? 'text-fuchsia-200/80 border-fuchsia-500/40' : 'text-purple-200/80 border-purple-500/40'
               }`}>{t(`part_info.level_${activeCircuit}.result_outro`)}</p>
 
-              {activeCircuit >= 1 && activeCircuit <= 3 && (
+              {((activeCircuit >= 1 && activeCircuit <= 3) || (activeCircuit >= 7 && activeCircuit <= 9)) && (
                 <div className="mt-6 rounded-xl overflow-hidden" style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
                   <iframe
-                    src="https://www.youtube.com/embed/fZjKE81nIJ0"
+                    src={activeCircuit >= 7 && activeCircuit <= 9
+                      ? "https://www.youtube.com/embed/TtqoMQoS4WQ"
+                      : "https://www.youtube.com/embed/fZjKE81nIJ0"}
                     title="ONDA Video"
                     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', borderRadius: '0.75rem' }}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
