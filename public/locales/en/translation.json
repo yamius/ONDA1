@@ -274,7 +274,8 @@
     "attention_sensing_message": "Stop being a point, become a space. Feel the invisible threads of attention that permeate the pack, and find your place in this weaving.",
     "body_listening_message": "Words can lie, biology never does. Stop listening with your ears, start listening with the full volume of your body, catching others' truth in the rhythm of breathing and pauses.",
     "distance_balance_message": "Find your point of equilibrium. The space between you and the pack is not emptiness, but a regulator of your inner tension and strength.",
-    "social_exhale_message": "Be the one who sets the rhythm of silence. Your exhale is an invisible wave that extinguishes others' anxiety and returns clarity to the pack."
+    "social_exhale_message": "Be the one who sets the rhythm of silence. Your exhale is an invisible wave that extinguishes others' anxiety and returns clarity to the pack.",
+    "oxytocin_wave_message": "Become a source of safety. Transmit warmth that cannot be faked, and watch as social coldness transforms into trust."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -438,7 +439,9 @@
     "distance_balance": "Distance of Balance",
     "distance_balance_desc": "Find the optimal distance for maintaining clarity of thought and social contact.",
     "social_exhale": "Social Exhale",
-    "social_exhale_desc": "Become a stabilization point for others and reduce the level of background tension in a group."
+    "social_exhale_desc": "Become a stabilization point for others and reduce the level of background tension in a group.",
+    "oxytocin_wave": "Oxytocin Wave",
+    "oxytocin_wave_desc": "Reduce social stress and activate group cohesion mode through directed emotion."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1767,6 +1770,20 @@
       "Imagine that your calmness is a virus that gently infects everyone in this room.",
       "You don't absorb others' panic, you dissolve it in your own depth.",
       "Notice how people nearby begin to inhale more deeply or shift to more relaxed postures following you."
+    ],
+    "p6_10": [
+      "Don't look for a reason in the present — use body memory.",
+      "Remember that very 'warm' feeling.",
+      "Breathe through the center of your chest.",
+      "With each exhale the wave becomes wider and denser.",
+      "Imagine that this wave touches everyone within a three-to-five meter radius,",
+      "gently 'relaxing' their suspicion.",
+      "You are not giving away your energy — you are creating a shared field,",
+      "in which you yourself will find it easier to breathe.",
+      "Feel how the lump in your throat or heaviness in your stomach melts.",
+      "This is oxytocin beginning its work.",
+      "Your gaze becomes 'accepting'.",
+      "You see allies in people, and they begin to mirror this."
     ]
   },
   "final_phrases": {
@@ -1838,7 +1855,8 @@
     "p6_6": "Attention is the energy of connection. When you learn to scan its flows, you stop being a random passerby and become a full participant in the living process of the pack.",
     "p6_7": "When you listen with your body, you become invisible to manipulation. Your interoceptive empathy sees the essence of things, making you the most attentive and formidable ally in the pack.",
     "p6_8": "Your distance is your freedom. When you have found your point of balance, you can be part of the pack while remaining the master of your state.",
-    "p6_9": "A leader is not the one who shouts the loudest, but the one who breathes the deepest. Your social exhale is the quiet power over the atmosphere of any space."
+    "p6_9": "A leader is not the one who shouts the loudest, but the one who breathes the deepest. Your social exhale is the quiet power over the atmosphere of any space.",
+    "p6_10": "Your ability to generate warmth is the highest form of social intelligence. When you transmit the oxytocin wave, you change the rules of the game, turning a crowd into a pack, and strangers into partners."
   },
   "science_info": {
     "p4_1": [
@@ -2030,6 +2048,11 @@
       "Physiology: An extended exhale activates the parasympathetic system through the vagus nerve. The dominant's calmness is transmitted through the absence of signs of breathlessness and tension.",
       "Bio-marker: Increase in heart rate variability (HRV) in you and synchronous slowing of pulse in those within a 2-3 meter radius.",
       "Effect: You become the 'center of gravity' and an island of safety. Conflicts fade in your presence, and people begin to unconsciously seek your gaze or approval."
+    ],
+    "p6_10": [
+      "Biology: Conscious activation of oxytocin synthesis in the paraventricular nuclei of the hypothalamus. Oxytocin is a direct biological antagonist of cortisol (the stress hormone).",
+      "Why: High oxytocin levels block signals of fear of social rejection in the amygdala. This makes your presence 'magnetic' and safe for the limbic system of those around you.",
+      "Effect: A sharp increase in personal charisma. The group begins to perceive you as a leader who unites rather than divides."
     ]
   },
   "level_goal": {
