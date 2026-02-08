@@ -276,7 +276,8 @@
     "distance_balance_message": "Find your point of equilibrium. The space between you and the pack is not emptiness, but a regulator of your inner tension and strength.",
     "social_exhale_message": "Be the one who sets the rhythm of silence. Your exhale is an invisible wave that extinguishes others' anxiety and returns clarity to the pack.",
     "oxytocin_wave_message": "Become a source of safety. Transmit warmth that cannot be faked, and watch as social coldness transforms into trust.",
-    "somatic_containment_message": "Return to your home. Feel the density of your skin and the boundaries of your body, to stay in contact without losing yourself in others' chaos."
+    "somatic_containment_message": "Return to your home. Feel the density of your skin and the boundaries of your body, to stay in contact without losing yourself in others' chaos.",
+    "social_spheres_message": "Become the architect of your space. Divide the world into layers and be the center of your universe."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -444,7 +445,9 @@
     "oxytocin_wave": "Oxytocin Wave",
     "oxytocin_wave_desc": "Reduce social stress and activate group cohesion mode through directed emotion.",
     "somatic_containment": "Somatic Containment",
-    "somatic_containment_desc": "Restore the sense of personal boundaries and prevent emotional dissolution in a group."
+    "somatic_containment_desc": "Restore the sense of personal boundaries and prevent emotional dissolution in a group.",
+    "social_spheres": "Social Spheres Navigation",
+    "social_spheres_desc": "Tune the distance of attention and gain stability in any group."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1799,6 +1802,34 @@
       "You can empathize while remaining sovereign.",
       "Your empathy is a choice, not an automatic reaction.",
       "Notice how awareness of your own boundaries makes you a more confident conversationalist."
+    ],
+    "p6_12": [
+      "Take a deep breath and a smooth exhale",
+      "Fix the stillness of your center",
+      "Near zone — Feel the air right at your skin",
+      "Where you still feel the warmth of your body in space...",
+      "Linger here",
+      "This is your home",
+      "Your personal rhythm",
+      "Here you are completely safe",
+      "Feel this density",
+      "Contact zone — Slowly expand your attention to arm's length",
+      "Here you touch others",
+      "Here the air becomes shared",
+      "Feel the warmth and breath of those nearby",
+      "This is your zone of dialogue",
+      "Stay in this volume",
+      "Far zone — Now gently embrace the entire room with your attention, to the very walls",
+      "You are part of this large space",
+      "Your radar sees everyone",
+      "Feel yourself as a node in the pack's network",
+      "You are in the system",
+      "Switch — Return again to the warmth at your skin...",
+      "Feel your center",
+      "And now smoothly expand to the walls...",
+      "Feel the scale",
+      "Your center is always in place",
+      "You yourself decide how close to let this world in"
     ]
   },
   "final_phrases": {
@@ -1872,7 +1903,8 @@
     "p6_8": "Your distance is your freedom. When you have found your point of balance, you can be part of the pack while remaining the master of your state.",
     "p6_9": "A leader is not the one who shouts the loudest, but the one who breathes the deepest. Your social exhale is the quiet power over the atmosphere of any space.",
     "p6_10": "Your ability to generate warmth is the highest form of social intelligence. When you transmit the oxytocin wave, you change the rules of the game, turning a crowd into a pack, and strangers into partners.",
-    "p6_11": "Your autonomy is the guarantee of your value to the pack. Only the one who knows how to return to themselves in time can lead others without losing course."
+    "p6_11": "Your autonomy is the guarantee of your value to the pack. Only the one who knows how to return to themselves in time can lead others without losing course.",
+    "p6_12": "Mastery of zones is your freedom. Enter any pack, command any field, but always remain at the point of your true peace."
   },
   "science_info": {
     "p4_1": [
@@ -2074,6 +2106,10 @@
       "Biology: Somatosensory confirmation of autonomy. Activation of the parietal cortex responsible for body schema helps the brain draw a clear line between 'Self' and 'Not-Self'.",
       "Bio-marker: Reduction of sympathetic system reactivity. Stabilization of interoception (inner body sense), which blocks excessive mirroring of others' stress.",
       "Effect: You maintain the ability to be 'together' without merging with the crowd. This is the best prevention of emotional burnout and 'social hangover'."
+    ],
+    "p6_12": [
+      "Physiology: Training of the parietal cortex. Tuning social navigation and sense of boundaries.",
+      "Effect: You are part of the structure, but you are autonomous."
     ]
   },
   "level_goal": {
