@@ -272,7 +272,8 @@
     "chest_warmth_message": "Become a source, not a consumer. Warm the space inside yourself so that it begins to warm those around you.",
     "gesture_inclusion_message": "Show your hands. Let your palms become a visual safety code that disables others' suspicion and opens doors for dialogue.",
     "attention_sensing_message": "Stop being a point, become a space. Feel the invisible threads of attention that permeate the pack, and find your place in this weaving.",
-    "body_listening_message": "Words can lie, biology never does. Stop listening with your ears, start listening with the full volume of your body, catching others' truth in the rhythm of breathing and pauses."
+    "body_listening_message": "Words can lie, biology never does. Stop listening with your ears, start listening with the full volume of your body, catching others' truth in the rhythm of breathing and pauses.",
+    "distance_balance_message": "Find your point of equilibrium. The space between you and the pack is not emptiness, but a regulator of your inner tension and strength."
   },
   "practice_items": {
     "micro_breath": "Micro-Breath",
@@ -432,7 +433,9 @@
     "attention_sensing": "Attention Sensing",
     "attention_sensing_desc": "Develop sensory sensitivity to the social field and feel your inclusion in the 'network' of interactions.",
     "body_listening": "Body Listening",
-    "body_listening_desc": "Activate deep understanding of your interlocutor by reading their physiological rhythms."
+    "body_listening_desc": "Activate deep understanding of your interlocutor by reading their physiological rhythms.",
+    "distance_balance": "Distance of Balance",
+    "distance_balance_desc": "Find the optimal distance for maintaining clarity of thought and social contact."
   },
   "artifacts": {
     "requirement_part": "Complete all practices of part {{part}}",
@@ -1726,6 +1729,28 @@
       "Vibration always conveys the real level of stress or joy hormones.",
       "Your body is a hypersensitive resonator.",
       "Trust its 'intimate' contact with the world."
+    ],
+    "p6_8": [
+      "Stand in front of your interlocutor at 2 meters or imagine them",
+      "Restore your breathing",
+      "Slowly take a step back on the exhale — feel how the view expands and the pressure decreases",
+      "Feel the space between you",
+      "Then take a step forward on the inhale — feel the increasing intensity of contact",
+      "Observe how your body reacts to the change in distance",
+      "Take 2 steps back — catch the decrease in intensity of sensations...",
+      "...and possibly, an increase in the number of nuances",
+      "Feel how the air between you and other people changes its density as you move",
+      "A step back is not a retreat, it is gaining perspective and depth",
+      "A step forward is not aggression, it is an offer of closeness and exchange",
+      "Listen to your stomach: at the right point it should feel warm and stable, without wanting to clench",
+      "Your body knows your 'comfort zone' better than etiquette rules",
+      "Trust this compass",
+      "When you find your balance, others instinctively begin to respect...",
+      "...your space, your feelings, your confidence",
+      "Train this feeling of an 'invisible lever'",
+      "you yourself regulate the brightness of social contact simply by changing the distance",
+      "Repeat several times until you find the point where you are maximally engaged",
+      "but at the same time absolutely calm"
     ]
   },
   "final_phrases": {
@@ -1795,7 +1820,8 @@
     "p6_4": "He who knows how to warm the space is never alone. Your warmth is the quietest and most convincing form of leadership.",
     "p6_5": "A soft hand rules the world more effectively than a clenched fist. Your 'gesture of inclusion' is the key to the hearts and minds of those with whom you build a shared future.",
     "p6_6": "Attention is the energy of connection. When you learn to scan its flows, you stop being a random passerby and become a full participant in the living process of the pack.",
-    "p6_7": "When you listen with your body, you become invisible to manipulation. Your interoceptive empathy sees the essence of things, making you the most attentive and formidable ally in the pack."
+    "p6_7": "When you listen with your body, you become invisible to manipulation. Your interoceptive empathy sees the essence of things, making you the most attentive and formidable ally in the pack.",
+    "p6_8": "Your distance is your freedom. When you have found your point of balance, you can be part of the pack while remaining the master of your state."
   },
   "science_info": {
     "p4_1": [
@@ -1975,6 +2001,12 @@
       "Physiology: Activation of interoceptive circuits of the insular cortex (insula). The brain compares observed micro-signals of another person with your own bodily archives.",
       "Bio-marker: Synchronous blinking and micro-tension of facial muscles (mirror neuron effect).",
       "Effect: You begin to understand people's state and true intentions before they finish their sentence. A feeling of 'direct knowing' emerges."
+    ],
+    "p6_8": [
+      "Action: Find a safe social space (or imagine an interlocutor). Slowly take steps forward and backward, studying your state as the distance changes.",
+      "Physiology: Regulation of proxemics (spatial behavior). Optimal distance prevents hyperstimulation of the amygdala, allowing the prefrontal cortex to maintain control over the situation.",
+      "Bio-marker: Reduction of micro-tension in eye muscles and jaw muscles when finding 'your' point.",
+      "Effect: You stop 'falling' into others' field and don't wall yourself off. You feel the boundary and maintain a living contact."
     ]
   },
   "level_goal": {
