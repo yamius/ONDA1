@@ -193,28 +193,6 @@ const OndaLevel1 = () => {
   const [meetsArtifactRequirements, setMeetsArtifactRequirements] = useState(false); // Real-time validation for artifact
   const maxQualityRef = useRef(0);
   const practiceRefs = useRef({});
-  const videoContainerRef = useRef<HTMLDivElement>(null);
-  const [videoStarted, setVideoStarted] = useState(false);
-
-  useEffect(() => {
-    setVideoStarted(false);
-  }, [activeCircuit]);
-
-  useEffect(() => {
-    const el = videoContainerRef.current;
-    if (!el || videoStarted) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVideoStarted(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.5 }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [videoStarted]);
 
 
   const currentPlayerName = userProfile?.display_name || t('you');
@@ -4135,28 +4113,20 @@ const OndaLevel1 = () => {
               }`}>{t(`part_info.level_${activeCircuit}.result_outro`)}</p>
 
               {activeCircuit >= 1 && activeCircuit <= 12 && (
-                <div ref={videoContainerRef} className="mt-6 rounded-xl overflow-hidden" style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
-                  {videoStarted ? (
-                    <iframe
-                      src={`${activeCircuit >= 10 && activeCircuit <= 12
-                        ? "https://www.youtube.com/embed/qsDhvNptrZA"
-                        : activeCircuit >= 7 && activeCircuit <= 9
-                        ? "https://www.youtube.com/embed/TtqoMQoS4WQ"
-                        : activeCircuit >= 4 && activeCircuit <= 6
-                        ? "https://www.youtube.com/embed/3HCOCpWwC9Y"
-                        : "https://www.youtube.com/embed/fZjKE81nIJ0"}?autoplay=1&mute=1`}
-                      title="ONDA Video"
-                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', borderRadius: '0.75rem' }}
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    />
-                  ) : (
-                    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', borderRadius: '0.75rem' }} className="bg-black/40 flex items-center justify-center">
-                      <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
-                        <div className="w-0 h-0 border-t-8 border-b-8 border-l-12 border-t-transparent border-b-transparent border-l-white/80 ml-1" />
-                      </div>
-                    </div>
-                  )}
+                <div className="mt-6 rounded-xl overflow-hidden" style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+                  <iframe
+                    src={activeCircuit >= 10 && activeCircuit <= 12
+                      ? "https://www.youtube.com/embed/qsDhvNptrZA"
+                      : activeCircuit >= 7 && activeCircuit <= 9
+                      ? "https://www.youtube.com/embed/TtqoMQoS4WQ"
+                      : activeCircuit >= 4 && activeCircuit <= 6
+                      ? "https://www.youtube.com/embed/3HCOCpWwC9Y"
+                      : "https://www.youtube.com/embed/fZjKE81nIJ0"}
+                    title="ONDA Video"
+                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', borderRadius: '0.75rem' }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
                 </div>
               )}
             </div>
