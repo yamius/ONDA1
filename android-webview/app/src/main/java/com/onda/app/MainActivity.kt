@@ -440,7 +440,7 @@ class MainActivity : AppCompatActivity() {
     
     private fun handleDeepLink(intent: Intent?) {
         val data = intent?.data
-        if (data != null && data.scheme == "com.onda.app" && data.host == "callback") {
+        if (data != null && data.scheme == "com.onda.life" && data.host == "callback") {
             Log.d("WebViewConsole", "[OAuth] Deep link received: $data")
             
             // Получаем фрагмент URL с токеном (например: access_token=...&expires_at=...)

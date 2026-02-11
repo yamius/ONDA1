@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace 'com.onda.app'
+    namespace 'com.onda.life'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.onda.app"
+        applicationId "com.onda.life"
         minSdk 26
         targetSdk 34
         versionCode 1
