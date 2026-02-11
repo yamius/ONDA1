@@ -33,6 +33,8 @@ npm install
 cd ios/App && pod install && cd ../..
 ```
 
+**Примечание:** Используется `@capacitor-community/firebase-analytics` v7.0.0 для совместимости с Capacitor 7.
+
 ### 4️⃣ Коммит и push
 
 ```bash

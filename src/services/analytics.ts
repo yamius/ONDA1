@@ -65,8 +65,8 @@ export async function initializeAnalytics() {
   // iOS uses Capacitor plugin
   if (isIOS) {
     try {
-      // Dynamically import Firebase Analytics plugin
-      const { FirebaseAnalytics } = await import('@capacitor-firebase/analytics');
+      // Dynamically import Firebase Analytics plugin (community version for Capacitor 7)
+      const { FirebaseAnalytics } = await import('@capacitor-community/firebase-analytics');
       firebaseAnalytics = FirebaseAnalytics;
       
       console.log('[Analytics] Firebase Analytics initialized for iOS');

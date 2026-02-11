@@ -16,7 +16,7 @@
 ### 2. Изменённые файлы
 
 #### Frontend
-- ✅ `package.json` - Добавлен `@capacitor-firebase/analytics`
+- ✅ `package.json` - Добавлен `@capacitor-community/firebase-analytics` (Capacitor 7 compatible)
 - ✅ `src/main.tsx` - Инициализация Firebase Analytics при старте
 - ✅ `src/types/android.d.ts` - Добавлены типы для Analytics методов
 
