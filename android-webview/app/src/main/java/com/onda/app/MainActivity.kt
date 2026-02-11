@@ -14,10 +14,9 @@ import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
 import android.view.WindowManager
-// Firebase Analytics (uncomment after adding google-services.json)
-// import com.google.firebase.analytics.FirebaseAnalytics
-// import com.google.firebase.analytics.ktx.analytics
-// import com.google.firebase.ktx.Firebase
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import android.webkit.ConsoleMessage
 import android.webkit.JavascriptInterface
 import android.webkit.PermissionRequest
@@ -48,8 +47,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var webView: WebView
     private lateinit var healthConnectManager: HealthConnectManager
     private lateinit var bluetoothManager: BluetoothManager
-    // Firebase Analytics (uncomment after adding google-services.json)
-    // private lateinit var firebaseAnalytics: FirebaseAnalytics
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
     private var pendingPermissionRequest: PermissionRequest? = null
     private var hrBroadcastReceiver: BroadcastReceiver? = null
     
@@ -113,9 +111,9 @@ class MainActivity : AppCompatActivity() {
         
         setContentView(webView)
 
-        // Firebase Analytics (uncomment after adding google-services.json)
-        // firebaseAnalytics = Firebase.analytics
-        // Log.d("WebViewConsole", "[Analytics] Firebase Analytics initialized")
+        // Initialize Firebase Analytics
+        firebaseAnalytics = Firebase.analytics
+        Log.d("WebViewConsole", "[Analytics] Firebase Analytics initialized")
         
         // Initialize Health Connect Manager
         healthConnectManager = HealthConnectManager(this)
@@ -829,8 +827,7 @@ class MainActivity : AppCompatActivity() {
         
         // ============ Firebase Analytics Methods ============
         
-        // Firebase Analytics methods (uncomment after adding google-services.json)
-        /*
+        // Firebase Analytics methods
         @JavascriptInterface
         fun trackEvent(eventName: String, eventParamsJson: String) {
             Log.d("WebViewConsole", "[Analytics] trackEvent called: $eventName")
@@ -891,7 +888,6 @@ class MainActivity : AppCompatActivity() {
                 Log.e("WebViewConsole", "[Analytics] Error setting user property: ${e.message}")
             }
         }
-        */
     }
 
     private fun sendHealthDataToWeb() {
