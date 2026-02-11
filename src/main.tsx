@@ -5,6 +5,7 @@ import ErrorBoundary from './components/ErrorBoundary';
 import './index.css';
 import './i18n';
 import './bridge/healthConnectBridge';
+import { initializeAnalytics } from './services/analytics';
 
 window.onerror = function(message, source, lineno, colno, error) {
   console.error('[ONDA Global Error]:', { message, source, lineno, colno, error });
@@ -40,6 +41,13 @@ window.onunhandledrejection = function(event) {
     localStorage.setItem('onda_error_logs', JSON.stringify(logs));
   } catch (e) {}
 };
+
+// Initialize Firebase Analytics
+initializeAnalytics().then(() => {
+  console.log('[ONDA] Firebase Analytics initialized');
+}).catch((error) => {
+  console.error('[ONDA] Failed to initialize Firebase Analytics:', error);
+});
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

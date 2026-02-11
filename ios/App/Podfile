@@ -16,11 +16,15 @@ def capacitor_pods
   pod 'CapacitorApp', :path => '../../node_modules/@capacitor/app'
   pod 'CapacitorBrowser', :path => '../../node_modules/@capacitor/browser'
   pod 'CapacitorHealth', :path => '../../node_modules/capacitor-health'
+  pod 'CapacitorFirebaseAnalytics', :path => '../../node_modules/@capacitor-firebase/analytics'
 end
 
 target 'App' do
   capacitor_pods
   # Add your Pods here
+  
+  # Firebase Analytics
+  pod 'FirebaseAnalytics'
 end
 
 post_install do |installer|

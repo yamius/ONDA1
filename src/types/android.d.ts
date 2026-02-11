@@ -20,6 +20,10 @@ interface AndroidBridge {
   startHeartRateService(): void;
   stopHeartRateService(): void;
   isHeartRateServiceRunning(): boolean;
+  // Firebase Analytics methods
+  trackEvent(eventName: string, eventParamsJson: string): void;
+  setAnalyticsUserId(userId: string): void;
+  setUserProperty(propertyName: string, propertyValue: string): void;
 }
 
 interface Window {

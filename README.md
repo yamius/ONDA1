@@ -24,6 +24,7 @@ ONDA проводит пользователей через прогрессив
 | iOS | Capacitor, Swift, WatchKit |
 | Android | WebView, Kotlin, Health Connect |
 | Backend | Supabase (Auth, PostgreSQL, Storage, Edge Functions) |
+| Analytics | Firebase Analytics (iOS + Android), Supabase Events |
 
 ## Documentation
 
@@ -67,6 +68,14 @@ npm run dev
 ## Деплой iOS
 
 Автоматический через GitHub Actions → TestFlight.
+
+## Аналитика
+
+Firebase Analytics интегрирован для отслеживания конверсий и атрибуции рекламного трафика.
+
+**Быстрый старт:** См. `FIREBASE_QUICK_START.md`
+
+**Полная документация:** См. `docs/FIREBASE_ANALYTICS_SETUP.md`
 
 ## Лицензия
 

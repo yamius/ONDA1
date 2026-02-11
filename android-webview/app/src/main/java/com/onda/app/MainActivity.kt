@@ -14,6 +14,9 @@ import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
 import android.view.WindowManager
+import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.analytics.ktx.analytics
+import com.google.firebase.ktx.Firebase
 import android.webkit.ConsoleMessage
 import android.webkit.JavascriptInterface
 import android.webkit.PermissionRequest
@@ -44,6 +47,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var webView: WebView
     private lateinit var healthConnectManager: HealthConnectManager
     private lateinit var bluetoothManager: BluetoothManager
+    private lateinit var firebaseAnalytics: FirebaseAnalytics
     private var pendingPermissionRequest: PermissionRequest? = null
     private var hrBroadcastReceiver: BroadcastReceiver? = null
     
@@ -107,6 +111,10 @@ class MainActivity : AppCompatActivity() {
         
         setContentView(webView)
 
+        // Initialize Firebase Analytics
+        firebaseAnalytics = Firebase.analytics
+        Log.d("WebViewConsole", "[Analytics] Firebase Analytics initialized")
+        
         // Initialize Health Connect Manager
         healthConnectManager = HealthConnectManager(this)
         Log.d("WebViewConsole", "[HealthConnect] Manager initialized, available: ${healthConnectManager.isAvailable()}")
@@ -814,6 +822,69 @@ class MainActivity : AppCompatActivity() {
             } catch (e: Exception) {
                 Log.e("WebViewConsole", "[NotificationHR] Error checking service status: ${e.message}")
                 false
+            }
+        }
+        
+        // ============ Firebase Analytics Methods ============
+        
+        @JavascriptInterface
+        fun trackEvent(eventName: String, eventParamsJson: String) {
+            Log.d("WebViewConsole", "[Analytics] trackEvent called: $eventName")
+            
+            try {
+                // Parse JSON params
+                val params = org.json.JSONObject(eventParamsJson)
+                val bundle = android.os.Bundle()
+                
+                // Convert JSON to Bundle
+                val keys = params.keys()
+                while (keys.hasNext()) {
+                    val key = keys.next()
+                    val value = params.get(key)
+                    
+                    when (value) {
+                        is String -> bundle.putString(key, value)
+                        is Int -> bundle.putInt(key, value)
+                        is Long -> bundle.putLong(key, value)
+                        is Double -> bundle.putDouble(key, value)
+                        is Boolean -> bundle.putBoolean(key, value)
+                        else -> bundle.putString(key, value.toString())
+                    }
+                }
+                
+                // Add platform
+                bundle.putString("platform", "android")
+                
+                // Log to Firebase
+                firebaseAnalytics.logEvent(eventName, bundle)
+                Log.d("WebViewConsole", "[Analytics] Event logged to Firebase: $eventName")
+                
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[Analytics] Error tracking event: ${e.message}", e)
+            }
+        }
+        
+        @JavascriptInterface
+        fun setAnalyticsUserId(userId: String) {
+            Log.d("WebViewConsole", "[Analytics] setAnalyticsUserId called: $userId")
+            
+            try {
+                firebaseAnalytics.setUserId(userId)
+                Log.d("WebViewConsole", "[Analytics] User ID set in Firebase")
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[Analytics] Error setting user ID: ${e.message}")
+            }
+        }
+        
+        @JavascriptInterface
+        fun setUserProperty(propertyName: String, propertyValue: String) {
+            Log.d("WebViewConsole", "[Analytics] setUserProperty called: $propertyName = $propertyValue")
+            
+            try {
+                firebaseAnalytics.setUserProperty(propertyName, propertyValue)
+                Log.d("WebViewConsole", "[Analytics] User property set in Firebase")
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[Analytics] Error setting user property: ${e.message}")
             }
         }
     }
