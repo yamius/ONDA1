@@ -66,7 +66,7 @@ GitHub Actions автоматически:
 2. Установите `app-debug.apk` на устройство
 3. Включите DebugView:
    ```bash
-   adb shell setprop debug.firebase.analytics.app com.onda.life
+   adb shell setprop debug.firebase.analytics.app com.onda.app
    ```
 4. Откройте приложение
 5. Проверьте **Firebase Console → Analytics → DebugView**

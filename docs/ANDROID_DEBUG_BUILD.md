@@ -39,7 +39,7 @@ Debug APK автоматически отправляет события в Fire
 3. Выполните команду:
 
 ```bash
-adb shell setprop debug.firebase.analytics.app com.onda.life
+adb shell setprop debug.firebase.analytics.app com.onda.app
 ```
 
 4. Откройте приложение
@@ -95,7 +95,7 @@ adb shell setprop debug.firebase.analytics.app .none.
 
 **Решение:**
 1. Проверьте, что установлен **Debug APK** (имя файла `app-debug.apk`)
-2. Выполните команду `adb shell setprop debug.firebase.analytics.app com.onda.life`
+2. Выполните команду `adb shell setprop debug.firebase.analytics.app com.onda.app`
 3. Перезапустите приложение
 4. Откройте Firebase Console → Analytics → DebugView
 

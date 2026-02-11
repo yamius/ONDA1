@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.onda.life">
+    package="com.onda.app">
 
     <!-- Internet permission for Supabase API -->
     <uses-permission android:name="android.permission.INTERNET" />
@@ -91,7 +91,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="com.onda.life" />
+                <data android:scheme="com.onda.app" />
                 <data android:host="callback" />
             </intent-filter>
             

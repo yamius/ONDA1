@@ -187,7 +187,7 @@ git push origin main
 
 **Android:**
 ```bash
-adb shell setprop debug.firebase.analytics.app com.onda.life
+adb shell setprop debug.firebase.analytics.app com.onda.app
 ```
 
 Затем откройте **Analytics → DebugView** в Firebase Console.
