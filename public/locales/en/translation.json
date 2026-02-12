@@ -2920,6 +2920,100 @@
       "I'm glad if this feels even a little helpful. What are you thinking about now?",
       "Any time. If you want, we can keep looking at what's coming up for you."
     ],
+    "tired": [
+      "Exhaustion takes a lot out of you. What exactly is draining you so much?",
+      "It sounds like you need rest. What's demanding so much of your energy?",
+      "When was the last time you felt truly rested?",
+      "Sometimes tiredness is a signal. What is your body trying to tell you?",
+      "How long have you been feeling this exhaustion?"
+    ],
+    "work": [
+      "Work can really affect your state. What specifically is bothering you?",
+      "How is this work situation affecting your wellbeing?",
+      "What would you like to change about the work situation?",
+      "Is there anything at work that brings you satisfaction?",
+      "How do you usually recover after a hard day at work?"
+    ],
+    "want": [
+      "What's stopping you from getting what you want?",
+      "This desire seems important to you. Tell me more.",
+      "How long have you wanted this?",
+      "What will happen when you get it?",
+      "What's the smallest step that could bring you closer to it?"
+    ],
+    "need": [
+      "That sounds like a lot of pressure. Where does this obligation come from?",
+      "Carrying all this must be tiring. How does that make you feel?",
+      "What will happen if you don't do what you 'have to'?",
+      "Whose expectations are these really — yours or someone else's?",
+      "What would your life look like if this 'have to' didn't exist?"
+    ],
+    "stress": [
+      "Stress can be overwhelming. What's the main source right now?",
+      "Let's pause for a moment. What's creating this tension?",
+      "How does your body react to this stress?",
+      "What usually helps you cope with stress?",
+      "If you could remove one cause of stress, what would it be?"
+    ],
+    "anxiety": [
+      "Anxiety can be all-consuming. What triggers these feelings for you?",
+      "When did you first notice this anxiety?",
+      "What helps you calm down when anxiety hits?",
+      "What specifically are you most worried about?",
+      "How does anxiety show up in your body?"
+    ],
+    "sad": [
+      "I hear sadness in your words. What's weighing on your heart?",
+      "Sadness is an important feeling. What caused it?",
+      "When do you feel this sadness the strongest?",
+      "Is there something you're missing?",
+      "What usually helps you when you're sad?"
+    ],
+    "angry": [
+      "Anger often signals something important. What's behind this feeling?",
+      "It's okay to be angry. What triggered it?",
+      "How do you usually deal with anger?",
+      "What happened before this anger appeared?",
+      "What need is behind this anger?"
+    ],
+    "fear": [
+      "Fear can protect, but also limit. What are you afraid of?",
+      "Tell me more about this fear. When does it appear?",
+      "What would you do if you weren't afraid?",
+      "How does this fear affect your life?",
+      "Was there a moment when you overcame a similar fear?"
+    ],
+    "lonely": [
+      "Loneliness is painful. What kind of connection do you miss most?",
+      "Feeling isolated is hard. When did this loneliness start?",
+      "Who would you want to be with right now?",
+      "What prevents you from feeling connected to others?",
+      "When was the last time you felt true closeness?"
+    ],
+    "difficult": [
+      "That really does sound hard. What makes the situation especially difficult?",
+      "When everything feels tough, small steps can help. What's the hardest part?",
+      "You've handled difficult situations before. What helped then?",
+      "Which part of this causes the most difficulty?",
+      "Who could support you in this situation?"
+    ],
+    "cant": [
+      "What would change if you could?",
+      "Sometimes 'can't' means a different approach is needed. What have you already tried?",
+      "What's blocking you the most?",
+      "Is this 'can't' a belief or an actual barrier?",
+      "What's the smallest thing you could do right now?"
+    ],
+    "why": [
+      "That's a thoughtful question. What do you think the reason might be?",
+      "Interesting question. What does your intuition tell you?",
+      "Searching for 'why' can be important. What have you figured out so far?"
+    ],
+    "how": [
+      "That's worth exploring. What ideas come to mind?",
+      "Good question. What have you already considered?",
+      "Let's think together. Where would you like to start?"
+    ],
     "fallback": [
       "Tell me more about that.",
       "How does that make you feel?",
