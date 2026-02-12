@@ -17,12 +17,12 @@ import {
   isAndroidBridgeAvailable,
 } from '../lib/analytics-bridge';
 
-// Firebase Analytics types
+// Firebase Analytics types (matches @capacitor-community/firebase-analytics)
 interface FirebaseAnalytics {
   logEvent(options: { name: string; params?: Record<string, any> }): Promise<void>;
   setUserId(options: { userId: string }): Promise<void>;
   setUserProperty(options: { name: string; value: string }): Promise<void>;
-  setCurrentScreen(options: { screenName: string }): Promise<void>;
+  setScreenName(options: { screenName: string }): Promise<void>;
 }
 
 // Event parameters interface
@@ -204,11 +204,11 @@ export async function trackScreenView(screenName: string): Promise<void> {
   // Track as event in Supabase
   await trackEvent('screen_view', { screen_name: screenName });
 
-  // Track in Firebase (iOS only has setCurrentScreen, Android uses event)
+  // Track in Firebase (iOS: setScreenName, Android: event via bridge)
   if (isNative) {
     try {
       if (isIOS && firebaseAnalytics) {
-        await firebaseAnalytics.setCurrentScreen({ screenName });
+        await firebaseAnalytics.setScreenName({ screenName });
       }
       console.log('[Analytics] Screen view sent to Firebase');
     } catch (error) {
