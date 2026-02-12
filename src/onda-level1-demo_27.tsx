@@ -5203,7 +5203,7 @@ const OndaLevel1 = () => {
                         activeCircuit === 2
                           ? 'text-cyan-300 hover:text-cyan-200'
                           : activeCircuit === 3
-                          ? 'text-gray-300 hover:text-gray-200'
+                          ? 'text-amber-200 hover:text-amber-100'
                           : activeCircuit === 4
                           ? 'text-teal-300 hover:text-teal-200'
                           : activeCircuit === 5
