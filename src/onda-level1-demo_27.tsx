@@ -1704,7 +1704,7 @@ const OndaLevel1 = () => {
       name: t('circuits.circuit_5_name'),
       subtitle: t('circuits.circuit_5_subtitle'),
       element: 'AQUA',
-      color: 'from-stone-800 to-stone-700',
+      color: 'from-stone-600 to-stone-500',
       icon: Shield,
       practices: [
         { id: 'p5-1', name: t('practice_items.mass_center'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.mass_center_desc') },
@@ -3865,7 +3865,7 @@ const OndaLevel1 = () => {
           : activeCircuit === 4
           ? 'bg-gradient-to-br from-teal-950 via-cyan-900 to-teal-950'
           : activeCircuit === 5
-          ? 'bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950'
+          ? 'bg-gradient-to-br from-stone-800 via-stone-700 to-stone-800'
           : activeCircuit === 6
           ? 'bg-gradient-to-br from-emerald-950 via-teal-900 to-emerald-950'
           : activeCircuit === 7
@@ -3900,7 +3900,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 4
                 ? 'bg-teal-900/40 border border-teal-500/30 text-teal-300 hover:bg-teal-800/50'
                 : activeCircuit === 5
-                ? 'bg-stone-900/40 border border-stone-700/30 text-stone-300 hover:bg-stone-800/50'
+                ? 'bg-stone-700/40 border border-stone-500/30 text-stone-200 hover:bg-stone-600/50'
                 : activeCircuit === 6
                 ? 'bg-emerald-800/40 border border-emerald-500/30 text-emerald-300 hover:bg-emerald-700/50'
                 : activeCircuit === 7
@@ -3931,7 +3931,7 @@ const OndaLevel1 = () => {
               : activeCircuit === 4
               ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-teal-900/30 border-teal-500/30'
               : activeCircuit === 5
-              ? 'bg-gradient-to-br from-stone-900/40 via-stone-800/30 to-stone-900/40 border-amber-600/40'
+              ? 'bg-gradient-to-br from-stone-700/40 via-stone-600/30 to-stone-700/40 border-amber-600/40'
               : activeCircuit === 6
               ? 'bg-gradient-to-br from-emerald-800/40 via-teal-700/30 to-emerald-800/40 border-emerald-500/40'
               : activeCircuit === 7
@@ -3974,7 +3974,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 4
                 ? 'bg-gradient-to-br from-teal-900/20 via-cyan-900/10 to-teal-900/20 border-teal-500/20'
                 : activeCircuit === 5
-                ? 'bg-gradient-to-br from-stone-900/30 via-stone-800/20 to-stone-900/30 border-amber-600/30'
+                ? 'bg-gradient-to-br from-stone-700/30 via-stone-600/20 to-stone-700/30 border-amber-600/30'
                 : activeCircuit === 6
                 ? 'bg-gradient-to-br from-emerald-800/30 via-teal-700/20 to-emerald-800/30 border-emerald-500/30'
                 : activeCircuit === 7
@@ -4025,7 +4025,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 4
                 ? 'bg-gradient-to-br from-teal-900/20 via-cyan-900/10 to-teal-900/20 border-teal-500/20'
                 : activeCircuit === 5
-                ? 'bg-gradient-to-br from-stone-900/30 via-stone-800/20 to-stone-900/30 border-amber-600/30'
+                ? 'bg-gradient-to-br from-stone-700/30 via-stone-600/20 to-stone-700/30 border-amber-600/30'
                 : activeCircuit === 6
                 ? 'bg-gradient-to-br from-emerald-800/30 via-teal-700/20 to-emerald-800/30 border-emerald-500/30'
                 : activeCircuit === 7
@@ -4073,7 +4073,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 4
                 ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-teal-900/30 border-teal-500/30'
                 : activeCircuit === 5
-                ? 'bg-gradient-to-br from-stone-900/40 via-stone-800/30 to-stone-900/40 border-amber-600/40'
+                ? 'bg-gradient-to-br from-stone-700/40 via-stone-600/30 to-stone-700/40 border-amber-600/40'
                 : activeCircuit === 6
                 ? 'bg-gradient-to-br from-emerald-800/40 via-teal-700/30 to-emerald-800/40 border-emerald-500/40'
                 : activeCircuit === 7
@@ -4186,7 +4186,7 @@ const OndaLevel1 = () => {
         : activeCircuit === 4
         ? 'bg-gradient-to-br from-teal-950 via-cyan-900 to-teal-950'
         : activeCircuit === 5
-        ? 'bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950'
+        ? 'bg-gradient-to-br from-stone-800 via-stone-700 to-stone-800'
         : activeCircuit === 6
         ? 'bg-gradient-to-br from-emerald-950 via-teal-900 to-emerald-950'
         : activeCircuit === 7
@@ -4229,7 +4229,7 @@ const OndaLevel1 = () => {
               : activeCircuit === 4
               ? 'bg-teal-600/40 hover:bg-teal-600/60 border border-teal-400/30'
               : activeCircuit === 5
-              ? 'bg-stone-800/40 hover:bg-stone-800/60 border border-stone-600/30'
+              ? 'bg-stone-600/40 hover:bg-stone-600/60 border border-stone-500/30'
               : activeCircuit === 6
               ? 'bg-emerald-500/40 hover:bg-emerald-500/60 border border-emerald-400/30'
               : activeCircuit === 7
@@ -4270,7 +4270,7 @@ const OndaLevel1 = () => {
               : activeCircuit === 4
               ? 'bg-teal-600/40 hover:bg-teal-600/60 border border-teal-400/30'
               : activeCircuit === 5
-              ? 'bg-stone-800/40 hover:bg-stone-800/60 border border-stone-600/30'
+              ? 'bg-stone-600/40 hover:bg-stone-600/60 border border-stone-500/30'
               : activeCircuit === 6
               ? 'bg-emerald-500/40 hover:bg-emerald-500/60 border border-emerald-400/30'
               : activeCircuit === 7
@@ -4415,7 +4415,7 @@ const OndaLevel1 = () => {
                       : activeCircuit === 4
                       ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
                       : activeCircuit === 5
-                      ? 'bg-stone-800/20 hover:bg-stone-800/30 border-stone-600/50'
+                      ? 'bg-stone-600/20 hover:bg-stone-600/30 border-stone-500/50'
                       : activeCircuit === 6
                       ? 'bg-emerald-500/20 hover:bg-emerald-500/30 border-emerald-400/50'
                       : activeCircuit === 7
@@ -4448,7 +4448,7 @@ const OndaLevel1 = () => {
                       : activeCircuit === 4
                       ? 'bg-teal-500/20 border-teal-400/50'
                       : activeCircuit === 5
-                      ? 'bg-stone-800/30 border-stone-600/60'
+                      ? 'bg-stone-600/30 border-stone-500/60'
                       : activeCircuit === 6
                       ? 'bg-emerald-500/30 border-emerald-400/60'
                       : activeCircuit === 7
@@ -4490,7 +4490,7 @@ const OndaLevel1 = () => {
                               : activeCircuit === 4
                               ? selectedChapter === chapter ? 'bg-teal-500/40 text-white' : 'hover:bg-teal-500/30'
                               : activeCircuit === 5
-                              ? selectedChapter === chapter ? 'bg-stone-700/50 text-white' : 'hover:bg-stone-700/40'
+                              ? selectedChapter === chapter ? 'bg-stone-500/50 text-white' : 'hover:bg-stone-500/40'
                               : activeCircuit === 6
                               ? selectedChapter === chapter ? 'bg-emerald-500/50 text-white' : 'hover:bg-emerald-500/40'
                               : activeCircuit === 7
@@ -4533,7 +4533,7 @@ const OndaLevel1 = () => {
                       : activeCircuit === 4
                       ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
                       : activeCircuit === 5
-                      ? 'bg-stone-800/20 hover:bg-stone-800/30 border-stone-600/50'
+                      ? 'bg-stone-600/20 hover:bg-stone-600/30 border-stone-500/50'
                       : activeCircuit === 6
                       ? 'bg-emerald-500/20 hover:bg-emerald-500/30 border-emerald-400/50'
                       : activeCircuit === 7
@@ -4569,7 +4569,7 @@ const OndaLevel1 = () => {
                       : activeCircuit === 4
                       ? 'bg-teal-500/20 border-teal-400/50'
                       : activeCircuit === 5
-                      ? 'bg-stone-800/30 border-stone-600/60'
+                      ? 'bg-stone-600/30 border-stone-500/60'
                       : activeCircuit === 6
                       ? 'bg-emerald-500/30 border-emerald-400/60'
                       : activeCircuit === 7
@@ -4611,7 +4611,7 @@ const OndaLevel1 = () => {
                               : activeCircuit === 4
                               ? level === selectedLevel ? 'bg-teal-500/40 text-white' : 'hover:bg-teal-500/30'
                               : activeCircuit === 5
-                              ? level === selectedLevel ? 'bg-stone-700/50 text-white' : 'hover:bg-stone-700/40'
+                              ? level === selectedLevel ? 'bg-stone-500/50 text-white' : 'hover:bg-stone-500/40'
                               : activeCircuit === 6
                               ? level === selectedLevel ? 'bg-emerald-500/50 text-white' : 'hover:bg-emerald-500/40'
                               : activeCircuit === 7
@@ -4799,7 +4799,7 @@ const OndaLevel1 = () => {
               : activeCircuit === 4
               ? 'bg-gradient-to-br from-teal-900/20 to-cyan-900/20 border-teal-500/30'
               : activeCircuit === 5
-              ? 'bg-gradient-to-br from-stone-900/30 to-stone-800/30 border-amber-600/40'
+              ? 'bg-gradient-to-br from-stone-700/30 to-stone-600/30 border-amber-600/40'
               : activeCircuit === 6
               ? 'bg-gradient-to-br from-emerald-800/30 to-teal-700/30 border-emerald-500/40'
               : activeCircuit === 7
@@ -5301,7 +5301,7 @@ const OndaLevel1 = () => {
                   : activeCircuit === 4
                   ? 'bg-teal-900/40 border border-teal-500/40 text-teal-300 hover:bg-teal-800/50 hover:border-teal-400/60'
                   : activeCircuit === 5
-                  ? 'bg-stone-900/40 border border-stone-700/40 text-stone-300 hover:bg-stone-800/50 hover:border-stone-600/60'
+                  ? 'bg-stone-700/40 border border-stone-500/40 text-stone-200 hover:bg-stone-600/50 hover:border-stone-400/60'
                   : activeCircuit === 6
                   ? 'bg-emerald-800/40 border border-emerald-500/40 text-emerald-300 hover:bg-emerald-700/50 hover:border-emerald-400/60'
                   : activeCircuit === 7
@@ -5333,7 +5333,7 @@ const OndaLevel1 = () => {
             : activeCircuit === 4
             ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-teal-900/30 border-teal-500/30'
             : activeCircuit === 5
-            ? 'bg-gradient-to-br from-stone-900/40 via-stone-800/30 to-stone-900/40 border-amber-600/40'
+            ? 'bg-gradient-to-br from-stone-700/40 via-stone-600/30 to-stone-700/40 border-amber-600/40'
             : activeCircuit === 6
             ? 'bg-gradient-to-br from-emerald-800/40 via-teal-700/30 to-emerald-800/40 border-emerald-500/40'
             : activeCircuit === 7
