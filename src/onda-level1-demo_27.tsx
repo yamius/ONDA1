@@ -5204,6 +5204,8 @@ const OndaLevel1 = () => {
                           ? 'text-cyan-300 hover:text-cyan-200'
                           : activeCircuit === 3
                           ? 'text-gray-300 hover:text-gray-200'
+                          : activeCircuit === 4
+                          ? 'text-teal-300 hover:text-teal-200'
                           : 'text-indigo-300 hover:text-indigo-200'
                       }`}
                     >
@@ -5220,6 +5222,8 @@ const OndaLevel1 = () => {
                                 ? 'border-cyan-500/20'
                                 : activeCircuit === 3
                                 ? 'border-amber-600/20'
+                                : activeCircuit === 4
+                                ? 'border-teal-500/20'
                                 : 'border-purple-500/20'
                             }`}
                           >
@@ -5270,6 +5274,10 @@ const OndaLevel1 = () => {
                         ? isCompleted
                           ? 'bg-amber-600/50 hover:bg-amber-600/70 border border-amber-400/50'
                           : 'bg-amber-600 hover:bg-amber-700'
+                        : activeCircuit === 4
+                        ? isCompleted
+                          ? 'bg-teal-600/50 hover:bg-teal-600/70 border border-teal-400/50'
+                          : 'bg-teal-600 hover:bg-teal-700'
                         : isCompleted
                           ? 'bg-purple-600/50 hover:bg-purple-600/70 border border-purple-400/50'
                           : 'bg-purple-600 hover:bg-purple-700'
