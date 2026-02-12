@@ -353,6 +353,44 @@ const OndaLevel1 = () => {
     }
   }, [practiceHistory, artifacts]);
 
+  // Добавляем артефакт "Язык Тела" за 6 практик части 6 с качеством 100%
+  const BODY_LANGUAGE_ARTIFACT_ID = 'body-language';
+  useEffect(() => {
+    const hasBodyLanguageArtifact = artifacts.some(a => a.id === BODY_LANGUAGE_ARTIFACT_ID);
+    const part6PerfectPractices = practiceHistory.filter(p => 
+      p.practiceId?.startsWith('p6-') && p.quality >= 100
+    ).length;
+    
+    if (part6PerfectPractices >= 6 && !hasBodyLanguageArtifact) {
+      console.log('[App] Body Language artifact unlocked! +30% OND bonus');
+      setArtifacts(prev => [...prev, {
+        id: BODY_LANGUAGE_ARTIFACT_ID,
+        name: t('artifacts.body_language'),
+        bonus: 30,
+        isBodyLanguage: true
+      }]);
+    }
+  }, [practiceHistory, artifacts]);
+
+  // Добавляем артефакт "Безмолвное Понимание" за 12 практик части 6 с качеством 100%
+  const SILENT_UNDERSTANDING_ARTIFACT_ID = 'silent-understanding';
+  useEffect(() => {
+    const hasSilentUnderstandingArtifact = artifacts.some(a => a.id === SILENT_UNDERSTANDING_ARTIFACT_ID);
+    const part6PerfectPractices = practiceHistory.filter(p => 
+      p.practiceId?.startsWith('p6-') && p.quality >= 100
+    ).length;
+    
+    if (part6PerfectPractices >= 12 && !hasSilentUnderstandingArtifact) {
+      console.log('[App] Silent Understanding artifact unlocked! +50% OND bonus');
+      setArtifacts(prev => [...prev, {
+        id: SILENT_UNDERSTANDING_ARTIFACT_ID,
+        name: t('artifacts.silent_understanding'),
+        bonus: 50,
+        isSilentUnderstanding: true
+      }]);
+    }
+  }, [practiceHistory, artifacts]);
+
   // Добавляем артефакт "Эхо Власти" за 12 практик части 5 с качеством 100%
   const ECHO_OF_POWER_ARTIFACT_ID = 'echo-of-power';
   useEffect(() => {
@@ -1768,7 +1806,11 @@ const OndaLevel1 = () => {
         { id: 'p6-11', name: t('practice_items.somatic_containment'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.somatic_containment_desc') },
         { id: 'p6-12', name: t('practice_items.social_spheres'), duration: t('practice_items.duration_6min'), maxQnt: 60, desc: t('practice_items.social_spheres_desc') }
       ],
-      artifact: null  // Ждём данные от пользователя
+      artifact: {
+        name: t('artifacts.voice_of_pack'),
+        bonus: 20,
+        requirement: t('artifacts.requirement_part', { part: 6 })
+      }
     },
     {
       id: 7,
@@ -5776,6 +5818,66 @@ const OndaLevel1 = () => {
             );
           })()}
 
+          {/* Артефакт - Язык Тела (только Part 6, пока не взят) */}
+          {activeCircuit === 6 && !artifacts.some(a => a.id === 'body-language') && (() => {
+            const part6PerfectCount = practiceHistory.filter(p => 
+              p.practiceId?.startsWith('p6-') && p.quality >= 100
+            ).length;
+            return (
+              <div
+                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+              >
+                <div className="flex items-center gap-4">
+                  <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-1">{t('artifacts.body_language')}</h3>
+                    <p className="text-sm text-gray-400 mb-2">
+                      {t('artifacts.body_language_desc')}
+                    </p>
+                    <div>
+                      <div className="text-gray-400 text-sm mb-1">
+                        {t('artifacts.progress')}: {part6PerfectCount}/6 {t('artifacts.practices_100')}
+                      </div>
+                      <div className="text-emerald-400">
+                        {t('labels.bonus')}: +30% {t('labels.to_qnt_generation')}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+
+          {/* Артефакт - Безмолвное Понимание (только Part 6, пока не взят) */}
+          {activeCircuit === 6 && !artifacts.some(a => a.id === 'silent-understanding') && (() => {
+            const part6PerfectCount = practiceHistory.filter(p => 
+              p.practiceId?.startsWith('p6-') && p.quality >= 100
+            ).length;
+            return (
+              <div
+                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+              >
+                <div className="flex items-center gap-4">
+                  <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-1">{t('artifacts.silent_understanding')}</h3>
+                    <p className="text-sm text-gray-400 mb-2">
+                      {t('artifacts.silent_understanding_desc')}
+                    </p>
+                    <div>
+                      <div className="text-gray-400 text-sm mb-1">
+                        {t('artifacts.progress')}: {part6PerfectCount}/12 {t('artifacts.practices_100')}
+                      </div>
+                      <div className="text-emerald-400">
+                        {t('labels.bonus')}: +50% {t('labels.to_qnt_generation')}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })()}
+
           {/* Артефакт - Ритм Жизни (только Parts 1-3, пока не взят) */}
           {activeCircuit <= 3 && rhythmProgress < 7 && (
             <div
@@ -5937,6 +6039,12 @@ const OndaLevel1 = () => {
                 } else if (artifact.id === 'echo-of-power') {
                   artifactName = t('artifacts.echo_of_power');
                   artifactDesc = t('artifacts.echo_of_power_desc');
+                } else if (artifact.id === 'body-language') {
+                  artifactName = t('artifacts.body_language');
+                  artifactDesc = t('artifacts.body_language_desc');
+                } else if (artifact.id === 'silent-understanding') {
+                  artifactName = t('artifacts.silent_understanding');
+                  artifactDesc = t('artifacts.silent_understanding_desc');
                 } else {
                   const circuit = circuits.find(c => c.id === artifact.circuitId);
                   artifactName = circuit?.artifact?.name || artifact.name || 'Artifact';
