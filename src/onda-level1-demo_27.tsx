@@ -5757,7 +5757,7 @@ const OndaLevel1 = () => {
                   {t('terra_final.level_2.line_5')}
                 </p>
               </>
-            ) : (
+            ) : (activeCircuit === 1 || activeCircuit === 3) ? (
               <p className={`text-sm sm:text-lg leading-relaxed text-center italic font-semibold transition-colors duration-1000 ${
                 activeCircuit === 3
                   ? 'text-gray-200'
@@ -5765,7 +5765,7 @@ const OndaLevel1 = () => {
               }`}>
                 {t(`terra_final.level_${activeCircuit}.line_4`)}
               </p>
-            )}
+            ) : null}
           </div>
 
           <div className="text-center mt-6">
