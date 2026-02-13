@@ -540,6 +540,27 @@ const OndaLevel1 = () => {
     };
   }, []);
 
+  // Проверка доступности части после загрузки practiceHistory
+  useEffect(() => {
+    if (practiceHistory.length >= 0 && !isPartUnlocked(activeCircuit)) {
+      // Находим последнюю доступную часть
+      let lastUnlockedPart = 1;
+      for (let part = 1; part <= 12; part++) {
+        if (isPartUnlocked(part)) {
+          lastUnlockedPart = part;
+        } else {
+          break;
+        }
+      }
+      if (lastUnlockedPart !== activeCircuit) {
+        setActiveCircuit(lastUnlockedPart);
+        setSelectedLevel(lastUnlockedPart);
+        const chapterForLevel = Math.ceil(lastUnlockedPart / 3);
+        setSelectedChapter(chapterForLevel);
+      }
+    }
+  }, [practiceHistory, isPartUnlocked, activeCircuit]);
+
   // Load practice statistics for rating modal
   useEffect(() => {
     const loadPracticeStats = async () => {
@@ -1810,6 +1831,41 @@ const OndaLevel1 = () => {
       artifact: null  // Ждём данные от пользователя
     }
   ], [i18n.language]);
+
+  // ═══════════════════════════════════════════════════════
+  // Функция проверки разблокировки части
+  // ═══════════════════════════════════════════════════════
+  // Для разработки: установи VITE_UNLOCK_ALL_PARTS=true в .env чтобы открыть все части
+  // В production: части разблокируются последовательно после прохождения всех практик предыдущей части
+  const isPartUnlocked = useMemo(() => {
+    return (partNumber: number): boolean => {
+      // Dev режим: если установлена переменная VITE_UNLOCK_ALL_PARTS=true - все части открыты
+      const unlockAllParts = import.meta.env.VITE_UNLOCK_ALL_PARTS === 'true';
+      if (unlockAllParts) {
+        return true;
+      }
+
+      // Part 1 всегда доступна
+      if (partNumber === 1) return true;
+
+      // Проверяем предыдущую часть: все её практики должны быть пройдены хотя бы раз
+      const previousPart = partNumber - 1;
+      const previousPartCircuit = circuits.find(c => c.id === previousPart);
+      
+      if (!previousPartCircuit || !previousPartCircuit.practices || previousPartCircuit.practices.length === 0) {
+        return true; // Если нет практик - считаем разблокированной
+      }
+
+      // Проверяем, что все практики предыдущей части пройдены
+      const previousPartPracticeIds = previousPartCircuit.practices.map(p => p.id);
+      const completedPreviousPractices = previousPartPracticeIds.filter(practiceId => {
+        // Ищем в practiceHistory записи с этим practiceId
+        return practiceHistory.some(ph => ph.practiceId === practiceId);
+      });
+
+      return completedPreviousPractices.length === previousPartPracticeIds.length;
+    };
+  }, [circuits, practiceHistory]);
 
   const calculateBonus = () => {
     return artifacts.reduce((sum, a) => sum + a.bonus, 0);
@@ -4466,15 +4522,15 @@ const OndaLevel1 = () => {
                       : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
                     {Array.from({length: 4}, (_, i) => i + 1).map(chapter => {
-                      const isAvailable = chapter <= 4; // Уровни 1, 2, 3 и 4 доступны
+                      // При выборе Chapter → переключаем на первую часть этого уровня
+                      const firstLevelOfChapter = (chapter - 1) * 3 + 1;
+                      const isAvailable = isPartUnlocked(firstLevelOfChapter);
                       return (
                         <button
                           key={chapter}
                           onClick={() => { 
                             if (isAvailable) { 
                               setSelectedChapter(chapter); 
-                              // При выборе Chapter → переключаем на первую часть этого уровня
-                              const firstLevelOfChapter = (chapter - 1) * 3 + 1;
                               setSelectedLevel(firstLevelOfChapter);
                               setActiveCircuit(firstLevelOfChapter);
                               setShowChapterDropdown(false); 
@@ -4511,7 +4567,10 @@ const OndaLevel1 = () => {
                           <div className="flex items-center justify-center">
                             <span className="flex-1 text-right pr-3 sm:pr-4">{t('chapter')} {chapter}</span>
                             <span className="text-white/30">|</span>
-                            <span className="flex-1 text-left pl-3 sm:pl-4">{t(`chapters.chapter_${chapter}`)}</span>
+                            <span className="flex-1 text-left pl-3 sm:pl-4">
+                              {t(`chapters.chapter_${chapter}`)}
+                              {!isAvailable && <span className="ml-2 text-xs">🔒</span>}
+                            </span>
                           </div>
                         </button>
                       );
@@ -4587,7 +4646,7 @@ const OndaLevel1 = () => {
                       : 'bg-indigo-500/20 border-indigo-400/50'
                   }`}>
                     {Array.from({length: 12}, (_, i) => i + 1).map(level => {
-                      const isAvailable = level <= 12;
+                      const isAvailable = isPartUnlocked(level);
                       return (
                         <button
                           key={level}
@@ -4635,6 +4694,7 @@ const OndaLevel1 = () => {
                             <span className="flex-1 text-left pl-3 sm:pl-4">
                               <span>{t(`part_name_${level}`).split(' ')[0]}</span>
                               <span className="text-sm sm:text-base"> {t(`part_name_${level}`).split(' ').slice(1).join(' ')}</span>
+                              {!isAvailable && <span className="ml-2 text-xs">🔒</span>}
                             </span>
                           </div>
                         </button>
@@ -5793,11 +5853,12 @@ const OndaLevel1 = () => {
           </div>
 
           <div className="text-center mt-6">
-            {activeCircuit < 12 && (
+            {activeCircuit < 12 && isPartUnlocked(activeCircuit + 1) && (
               <button
                 onClick={() => { 
-                  setActiveCircuit(activeCircuit + 1); 
-                  setSelectedLevel(activeCircuit + 1); 
+                  const nextPart = activeCircuit + 1;
+                  setActiveCircuit(nextPart); 
+                  setSelectedLevel(nextPart); 
                   // Прокрутка #root контейнера (где происходит скролл в этом приложении)
                   const rootElement = document.getElementById('root');
                   if (rootElement) rootElement.scrollTop = 0;
