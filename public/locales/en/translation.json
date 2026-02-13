@@ -2389,6 +2389,7 @@
   "terra_final": {
     "title": "💬 TERRA'S FINAL BLESSING",
     "button": "Go to Part",
+    "lock_alert": "To go to the next part, complete all practices of the current part.",
     "level_1": {
       "line_1": "You remembered breath.",
       "line_2": "From silence, life is born.",

@@ -5952,44 +5952,51 @@ const OndaLevel1 = () => {
           </div>
 
           <div className="text-center mt-6">
-            {activeCircuit < 12 && isPartUnlocked(activeCircuit + 1) && (
+            {activeCircuit < 12 && (
               <button
-                onClick={() => { 
+                onClick={() => {
                   const nextPart = activeCircuit + 1;
-                  setActiveCircuit(nextPart); 
-                  setSelectedLevel(nextPart); 
-                  // Прокрутка #root контейнера (где происходит скролл в этом приложении)
-                  const rootElement = document.getElementById('root');
-                  if (rootElement) rootElement.scrollTop = 0;
-                  // Резервные варианты
-                  document.body.scrollTop = 0;
-                  document.documentElement.scrollTop = 0;
-                  window.scrollTo(0, 0);
+                  if (isPartUnlocked(nextPart)) {
+                    setActiveCircuit(nextPart);
+                    setSelectedLevel(nextPart);
+                    const rootElement = document.getElementById('root');
+                    if (rootElement) rootElement.scrollTop = 0;
+                    document.body.scrollTop = 0;
+                    document.documentElement.scrollTop = 0;
+                    window.scrollTo(0, 0);
+                  } else {
+                    setInfoModalMessage(t('terra_final.lock_alert'));
+                    setShowInfoModal(true);
+                  }
                 }}
-                className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg ${
-                  activeCircuit + 1 === 2
-                    ? 'bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white border-2 border-cyan-300/50'
-                    : activeCircuit + 1 === 3
-                    ? 'bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white border-2 border-amber-300/50'
-                    : activeCircuit + 1 === 4
-                    ? 'bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white border-2 border-teal-300/50'
-                    : activeCircuit + 1 === 5
-                    ? 'bg-gradient-to-r from-yellow-800 to-yellow-700 hover:from-yellow-700 hover:to-yellow-600 text-white border-2 border-yellow-600/50'
-                    : activeCircuit + 1 === 6
-                    ? 'bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white border-2 border-emerald-300/50'
-                    : activeCircuit + 1 === 7
-                    ? 'bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white border-2 border-sky-300/50'
-                    : activeCircuit + 1 === 8
-                    ? 'bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white border-2 border-indigo-300/50'
-                    : activeCircuit + 1 === 9
-                    ? 'bg-gradient-to-r from-cyan-500 to-sky-500 hover:from-cyan-400 hover:to-sky-400 text-white border-2 border-cyan-300/50'
-                    : activeCircuit + 1 === 10
-                    ? 'bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white border-2 border-orange-300/50'
-                    : activeCircuit + 1 === 11
-                    ? 'bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-400 hover:to-pink-400 text-white border-2 border-rose-300/50'
-                    : activeCircuit + 1 === 12
-                    ? 'bg-gradient-to-r from-fuchsia-500 to-red-500 hover:from-fuchsia-400 hover:to-red-400 text-white border-2 border-fuchsia-300/50'
-                    : 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-2 border-purple-300/50'
+                className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg ${
+                  isPartUnlocked(activeCircuit + 1)
+                    ? 'hover:scale-105 active:scale-95 ' + (
+                      activeCircuit + 1 === 2
+                        ? 'bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white border-2 border-cyan-300/50'
+                        : activeCircuit + 1 === 3
+                        ? 'bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white border-2 border-amber-300/50'
+                        : activeCircuit + 1 === 4
+                        ? 'bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white border-2 border-teal-300/50'
+                        : activeCircuit + 1 === 5
+                        ? 'bg-gradient-to-r from-yellow-800 to-yellow-700 hover:from-yellow-700 hover:to-yellow-600 text-white border-2 border-yellow-600/50'
+                        : activeCircuit + 1 === 6
+                        ? 'bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white border-2 border-emerald-300/50'
+                        : activeCircuit + 1 === 7
+                        ? 'bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white border-2 border-sky-300/50'
+                        : activeCircuit + 1 === 8
+                        ? 'bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white border-2 border-indigo-300/50'
+                        : activeCircuit + 1 === 9
+                        ? 'bg-gradient-to-r from-cyan-500 to-sky-500 hover:from-cyan-400 hover:to-sky-400 text-white border-2 border-cyan-300/50'
+                        : activeCircuit + 1 === 10
+                        ? 'bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white border-2 border-orange-300/50'
+                        : activeCircuit + 1 === 11
+                        ? 'bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-400 hover:to-pink-400 text-white border-2 border-rose-300/50'
+                        : activeCircuit + 1 === 12
+                        ? 'bg-gradient-to-r from-fuchsia-500 to-red-500 hover:from-fuchsia-400 hover:to-red-400 text-white border-2 border-fuchsia-300/50'
+                        : 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-2 border-purple-300/50'
+                    )
+                    : 'bg-gray-600/60 text-gray-400 border-2 border-gray-500/50 cursor-not-allowed'
                 }`}
               >
                 {t('terra_final.button')} {activeCircuit + 1}
