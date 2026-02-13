@@ -71,9 +71,9 @@ https://gist.github.com/yamius/1c0df3f9899b77d83ee3496013046d3d
 ### Логика разблокировки
 
 - **Part 1** всегда доступна (стартовая часть).
-- **Part N** разблокируется только когда пройдены **все практики** Part (N-1).
-- Проверка идёт по `practiceHistory` — нужна хотя бы одна сессия для каждой практики предыдущей части.
-- Функция проверки: `isPartUnlocked(partNumber)` в `src/onda-level1-demo_27.tsx` (~строка 1848).
+- **Part N** разблокируется только когда **все практики** Part (N-1) засчитаны по тем же условиям, что и для артефактов контура (`isValidForArtifact`).
+- **Условия засчёта практики** (как в `.assistant/MODULE_FRONTEND.md`): время ≥80% от целевого, качество ≥70% (с биометрией) или ≥33% (без). Проверка: `completedPractices[practiceId]?.isValidForArtifact === true`.
+- Функция проверки: `isPartUnlocked(partNumber)` в `src/onda-level1-demo_27.tsx` (~строка 1861), зависит от `circuits` и `completedPractices`.
 
 ### Где применяется проверка
 
@@ -100,8 +100,8 @@ VITE_UNLOCK_ALL_PARTS=true
 
 ### Технические детали
 
-- Функция `isPartUnlocked` использует `useMemo` и зависит от `circuits` и `practiceHistory`.
-- Проверка идёт по ID практик вида `p1-1`, `p2-1`, `p3-1` и т.д.
+- Функция `isPartUnlocked` использует `useCallback` и зависит от `circuits` и `completedPractices`.
+- Для каждой практики предыдущей части проверяется `completedPractices[p.id]?.isValidForArtifact === true`.
 - Если у предыдущей части нет практик (пустой массив) — следующая часть считается разблокированной.
 
 ## Git: Правильный workflow для коммитов и пуша

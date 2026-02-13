@@ -1876,19 +1876,18 @@ const OndaLevel1 = () => {
       return true; // Если нет практик - считаем разблокированной
     }
 
-    // Проверяем, что все практики предыдущей части пройдены
-    const previousPartPracticeIds = previousPartCircuit.practices.map(p => p.id);
-    const completedPreviousPractices = previousPartPracticeIds.filter(practiceId => {
-      // Ищем в practiceHistory записи с этим practiceId
-      return practiceHistory.some(ph => ph.practiceId === practiceId);
-    });
+    // Проверяем, что все практики предыдущей части засчитаны по условиям артефакта (isValidForArtifact)
+    // Условия: время ≥80% от целевого, качество ≥70% (с биометрией) или ≥33% (без)
+    const previousPartPractices = previousPartCircuit.practices;
+    const allValidated = previousPartPractices.every(
+      p => completedPractices[p.id]?.isValidForArtifact === true
+    );
+    return allValidated;
+  }, [circuits, completedPractices]);
 
-    return completedPreviousPractices.length === previousPartPracticeIds.length;
-  }, [circuits, practiceHistory]);
-
-  // Проверка доступности части после загрузки practiceHistory
+  // Проверка доступности части после загрузки / обновления completedPractices
   useEffect(() => {
-    if (practiceHistory.length >= 0 && !isPartUnlocked(activeCircuit)) {
+    if (!isPartUnlocked(activeCircuit)) {
       // Находим последнюю доступную часть
       let lastUnlockedPart = 1;
       for (let part = 1; part <= 12; part++) {
@@ -1905,7 +1904,7 @@ const OndaLevel1 = () => {
         setSelectedChapter(chapterForLevel);
       }
     }
-  }, [practiceHistory, isPartUnlocked, activeCircuit]);
+  }, [completedPractices, isPartUnlocked, activeCircuit]);
 
   const calculateBonus = () => {
     return artifacts.reduce((sum, a) => sum + a.bonus, 0);
