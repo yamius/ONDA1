@@ -689,6 +689,7 @@ const OndaLevel1 = () => {
 
   useEffect(() => {
     setActiveCircuit(selectedLevel);
+    setSelectedChapter(Math.ceil(selectedLevel / 3));
   }, [selectedLevel]);
 
   // Сбрасываем addon-вид при переключении части
@@ -4608,7 +4609,6 @@ const OndaLevel1 = () => {
                             <span className="text-white/30">|</span>
                             <span className="flex-1 text-left pl-3 sm:pl-4">
                               {t(`chapters.chapter_${chapter}`)}
-                              {!isAvailable && <span className="ml-2 text-xs">🔒</span>}
                             </span>
                           </div>
                         </button>
@@ -4733,7 +4733,6 @@ const OndaLevel1 = () => {
                             <span className="flex-1 text-left pl-3 sm:pl-4">
                               <span>{t(`part_name_${level}`).split(' ')[0]}</span>
                               <span className="text-sm sm:text-base"> {t(`part_name_${level}`).split(' ').slice(1).join(' ')}</span>
-                              {!isAvailable && <span className="ml-2 text-xs">🔒</span>}
                             </span>
                           </div>
                         </button>
