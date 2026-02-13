@@ -1869,21 +1869,16 @@ const OndaLevel1 = () => {
     // Part 1 всегда доступна
     if (partNumber === 1) return true;
 
-    // Проверяем предыдущую часть: все её практики должны быть пройдены хотя бы раз
-    const previousPart = partNumber - 1;
-    const previousPartCircuit = circuits.find(c => c.id === previousPart);
-    
-    if (!previousPartCircuit || !previousPartCircuit.practices || previousPartCircuit.practices.length === 0) {
-      return true; // Если нет практик - считаем разблокированной
+    // Часть N разблокирована только если все части 1..N-1, у которых есть практики, полностью пройдены
+    for (let part = 1; part < partNumber; part++) {
+      const circuit = circuits.find(c => c.id === part);
+      if (!circuit?.practices?.length) continue; // нет практик — пропускаем
+      const allValidated = circuit.practices.every(
+        p => completedPractices[p.id]?.isValidForArtifact === true
+      );
+      if (!allValidated) return false;
     }
-
-    // Проверяем, что все практики предыдущей части засчитаны по условиям артефакта (isValidForArtifact)
-    // Условия: время ≥80% от целевого, качество ≥70% (с биометрией) или ≥33% (без)
-    const previousPartPractices = previousPartCircuit.practices;
-    const allValidated = previousPartPractices.every(
-      p => completedPractices[p.id]?.isValidForArtifact === true
-    );
-    return allValidated;
+    return true;
   }, [circuits, completedPractices]);
 
   // Проверка доступности части после загрузки / обновления completedPractices
