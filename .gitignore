@@ -21,6 +21,8 @@ dist-ssr
 *.sln
 *.sw?
 .env
+.env.local
+.env.production
 
 # Android keystore files (NEVER commit these!)
 *.keystore
