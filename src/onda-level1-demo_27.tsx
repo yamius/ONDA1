@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from 'react';
+import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
@@ -577,27 +577,6 @@ const OndaLevel1 = () => {
       authListener.subscription.unsubscribe();
     };
   }, []);
-
-  // Проверка доступности части после загрузки practiceHistory
-  useEffect(() => {
-    if (practiceHistory.length >= 0 && !isPartUnlocked(activeCircuit)) {
-      // Находим последнюю доступную часть
-      let lastUnlockedPart = 1;
-      for (let part = 1; part <= 12; part++) {
-        if (isPartUnlocked(part)) {
-          lastUnlockedPart = part;
-        } else {
-          break;
-        }
-      }
-      if (lastUnlockedPart !== activeCircuit) {
-        setActiveCircuit(lastUnlockedPart);
-        setSelectedLevel(lastUnlockedPart);
-        const chapterForLevel = Math.ceil(lastUnlockedPart / 3);
-        setSelectedChapter(chapterForLevel);
-      }
-    }
-  }, [practiceHistory, isPartUnlocked, activeCircuit]);
 
   // Load practice statistics for rating modal
   useEffect(() => {
@@ -1879,35 +1858,54 @@ const OndaLevel1 = () => {
   // ═══════════════════════════════════════════════════════
   // Для разработки: установи VITE_UNLOCK_ALL_PARTS=true в .env чтобы открыть все части
   // В production: части разблокируются последовательно после прохождения всех практик предыдущей части
-  const isPartUnlocked = useMemo(() => {
-    return (partNumber: number): boolean => {
-      // Dev режим: если установлена переменная VITE_UNLOCK_ALL_PARTS=true - все части открыты
-      const unlockAllParts = import.meta.env.VITE_UNLOCK_ALL_PARTS === 'true';
-      if (unlockAllParts) {
-        return true;
-      }
+  const isPartUnlocked = useCallback((partNumber: number): boolean => {
+    // Dev режим: если установлена переменная VITE_UNLOCK_ALL_PARTS=true - все части открыты
+    const unlockAllParts = import.meta.env.VITE_UNLOCK_ALL_PARTS === 'true';
+    if (unlockAllParts) {
+      return true;
+    }
 
-      // Part 1 всегда доступна
-      if (partNumber === 1) return true;
+    // Part 1 всегда доступна
+    if (partNumber === 1) return true;
 
-      // Проверяем предыдущую часть: все её практики должны быть пройдены хотя бы раз
-      const previousPart = partNumber - 1;
-      const previousPartCircuit = circuits.find(c => c.id === previousPart);
-      
-      if (!previousPartCircuit || !previousPartCircuit.practices || previousPartCircuit.practices.length === 0) {
-        return true; // Если нет практик - считаем разблокированной
-      }
+    // Проверяем предыдущую часть: все её практики должны быть пройдены хотя бы раз
+    const previousPart = partNumber - 1;
+    const previousPartCircuit = circuits.find(c => c.id === previousPart);
+    
+    if (!previousPartCircuit || !previousPartCircuit.practices || previousPartCircuit.practices.length === 0) {
+      return true; // Если нет практик - считаем разблокированной
+    }
 
-      // Проверяем, что все практики предыдущей части пройдены
-      const previousPartPracticeIds = previousPartCircuit.practices.map(p => p.id);
-      const completedPreviousPractices = previousPartPracticeIds.filter(practiceId => {
-        // Ищем в practiceHistory записи с этим practiceId
-        return practiceHistory.some(ph => ph.practiceId === practiceId);
-      });
+    // Проверяем, что все практики предыдущей части пройдены
+    const previousPartPracticeIds = previousPartCircuit.practices.map(p => p.id);
+    const completedPreviousPractices = previousPartPracticeIds.filter(practiceId => {
+      // Ищем в practiceHistory записи с этим practiceId
+      return practiceHistory.some(ph => ph.practiceId === practiceId);
+    });
 
-      return completedPreviousPractices.length === previousPartPracticeIds.length;
-    };
+    return completedPreviousPractices.length === previousPartPracticeIds.length;
   }, [circuits, practiceHistory]);
+
+  // Проверка доступности части после загрузки practiceHistory
+  useEffect(() => {
+    if (practiceHistory.length >= 0 && !isPartUnlocked(activeCircuit)) {
+      // Находим последнюю доступную часть
+      let lastUnlockedPart = 1;
+      for (let part = 1; part <= 12; part++) {
+        if (isPartUnlocked(part)) {
+          lastUnlockedPart = part;
+        } else {
+          break;
+        }
+      }
+      if (lastUnlockedPart !== activeCircuit) {
+        setActiveCircuit(lastUnlockedPart);
+        setSelectedLevel(lastUnlockedPart);
+        const chapterForLevel = Math.ceil(lastUnlockedPart / 3);
+        setSelectedChapter(chapterForLevel);
+      }
+    }
+  }, [practiceHistory, isPartUnlocked, activeCircuit]);
 
   const calculateBonus = () => {
     return artifacts.reduce((sum, a) => sum + a.bonus, 0);
