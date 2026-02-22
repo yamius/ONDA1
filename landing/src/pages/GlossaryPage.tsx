@@ -16,11 +16,11 @@ export function GlossaryPage() {
   })
 
   return (
-    <div className="mx-auto max-w-5xl px-6 py-16">
+    <div className="mx-auto max-w-5xl px-4 pt-20 pb-16 md:px-6">
       <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
         [ KNOWLEDGE BASE ]
       </div>
-      <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-5xl">
+      <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-5xl">
         Glossary
       </h1>
       <p className="mb-12 max-w-2xl font-mono text-sm text-white/40">
@@ -45,7 +45,7 @@ export function GlossaryPage() {
       </div>
 
       {/* Categories */}
-      <div className="mb-10 flex flex-wrap gap-2">
+      <div className="mb-10 flex flex-wrap gap-2 overflow-x-auto pb-2">
         <button
           onClick={() => setActiveCategory(null)}
           className={`rounded-lg border px-4 py-1.5 font-mono text-xs transition-all ${

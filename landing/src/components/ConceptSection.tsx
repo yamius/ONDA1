@@ -1,11 +1,11 @@
 export function ConceptSection() {
   return (
-    <section id="concept" className="relative px-6 py-24">
+    <section id="concept" className="relative px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-4xl">
         <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
           [ CONCEPT ]
         </div>
-        <h2 className="mb-6 text-3xl font-bold tracking-tight md:text-4xl">
+        <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
           Your Body is the Most Complex{' '}
           <span className="bg-gradient-to-r from-terminal-green to-terminal-cyan bg-clip-text text-transparent">
             Computer
@@ -17,7 +17,7 @@ export function ConceptSection() {
           higher consciousness.
         </p>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-4 md:mt-16 md:gap-6 md:grid-cols-3">
           <ConceptCard
             number="01"
             title="Systematic"

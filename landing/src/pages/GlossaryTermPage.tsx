@@ -15,7 +15,7 @@ export function GlossaryTermPage() {
     .slice(0, 3)
 
   return (
-    <div className="mx-auto max-w-3xl px-6 py-16">
+    <div className="mx-auto max-w-3xl px-4 pt-20 pb-16 md:px-6">
       {/* Breadcrumb */}
       <div className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30">
         <Link to="/" className="transition-colors hover:text-white/50">
@@ -37,7 +37,7 @@ export function GlossaryTermPage() {
       </div>
 
       {/* Title */}
-      <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">
+      <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
         {term.title}
       </h1>
       <p className="mb-10 font-mono text-sm leading-relaxed text-white/50">

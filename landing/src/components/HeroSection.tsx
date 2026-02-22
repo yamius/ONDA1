@@ -10,7 +10,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-20">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16 md:pt-20">
       {/* Background image with parallax (moves at 50% scroll speed) */}
       <div
         className="absolute inset-0 opacity-40"
@@ -26,14 +26,14 @@ export function HeroSection() {
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
         {/* [ SYSTEM INITIALIZED ] badge */}
-        <div className="mb-8 inline-block rounded-full border border-cyan-500/50 bg-cyan-500/10 px-4 py-2">
-          <span className="font-mono text-sm text-cyan-400">
+        <div className="mb-6 inline-block rounded-full border border-cyan-500/50 bg-cyan-500/10 px-3 py-1.5 md:mb-8 md:px-4 md:py-2">
+          <span className="font-mono text-xs text-cyan-400 md:text-sm">
             [ SYSTEM INITIALIZED ]
           </span>
         </div>
 
         {/* Main heading */}
-        <h1 className="mb-6 font-mono text-6xl font-bold leading-tight md:text-7xl">
+        <h1 className="mb-4 font-mono text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-6xl lg:text-7xl">
           <span className="text-cyan-400">ONDA LIFE:</span>
           <br />
           <span className="text-green-400">Operating System</span>
@@ -42,23 +42,23 @@ export function HeroSection() {
         </h1>
 
         {/* Subtitle */}
-        <p className="mx-auto mb-12 max-w-2xl text-xl leading-relaxed text-gray-300">
+        <p className="mx-auto mb-8 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base md:mb-12 md:text-xl">
           Stop meditating randomly. Start managing your biological code through
           systematic upgrades. Your body is a biocomputer. ONDA Life is the OS.
         </p>
 
         {/* CTA buttons */}
-        <div className="mb-16 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="mb-10 flex flex-col items-center justify-center gap-3 sm:flex-row md:mb-16 md:gap-4">
           <a
             href="#download"
-            className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-2 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600"
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-2 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 sm:w-auto"
           >
             <DownloadIcon />
             <span>Download Now</span>
           </a>
           <a
             href="#concept"
-            className="flex items-center gap-2 rounded-lg border border-cyan-500/50 px-6 py-2 text-sm text-cyan-400 transition-all hover:bg-cyan-500/10"
+            className="flex w-full items-center justify-center gap-2 rounded-lg border border-cyan-500/50 px-6 py-2 text-sm text-cyan-400 transition-all hover:bg-cyan-500/10 sm:w-auto"
           >
             <span>Learn More</span>
             <span>&rarr;</span>
@@ -66,17 +66,17 @@ export function HeroSection() {
         </div>
 
         {/* Store badges */}
-        <div className="mb-8 flex items-center justify-center gap-4">
+        <div className="mb-8 flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <a
             href="#"
-            className="flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-5 py-2.5 text-xs text-white/50 transition-all hover:border-white/30 hover:text-white/70"
+            className="flex w-full items-center justify-center gap-2 rounded-lg border border-white/15 bg-white/5 px-5 py-2.5 text-xs text-white/50 transition-all hover:border-white/30 hover:text-white/70 sm:w-auto"
           >
             <AppleIcon />
             <span>Available on App Store</span>
           </a>
           <a
             href="#"
-            className="flex items-center gap-2 rounded-lg border border-white/15 bg-white/5 px-5 py-2.5 text-xs text-white/50 transition-all hover:border-white/30 hover:text-white/70"
+            className="flex w-full items-center justify-center gap-2 rounded-lg border border-white/15 bg-white/5 px-5 py-2.5 text-xs text-white/50 transition-all hover:border-white/30 hover:text-white/70 sm:w-auto"
           >
             <PlayIcon />
             <span>Available on Google Play</span>
@@ -84,7 +84,7 @@ export function HeroSection() {
         </div>
 
         {/* Scroll indicator */}
-        <div className="flex justify-center pb-8">
+        <div className="flex justify-center pb-4 md:pb-8">
           <div className="animate-bounce text-cyan-400/60">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M12 5v14M5 12l7 7 7-7" />
