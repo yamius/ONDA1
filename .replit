@@ -1,4 +1,4 @@
-modules = ["nodejs-20", "web"]
+modules = ["nodejs-20", "web", "java-17", "java-graalvm22.3", "postgresql-16"]
 [agent]
 expertMode = true
 
@@ -29,16 +29,21 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd landing && npm install && npm run dev"
-waitForPort = 5173
+args = "npm run dev"
+waitForPort = 5000
 
 [workflows.workflow.metadata]
 outputType = "webview"
 
 [[ports]]
-localPort = 5173
+localPort = 5000
 externalPort = 80
 
 [[ports]]
-localPort = 5000
+localPort = 5001
 externalPort = 3000
+
+[userenv]
+
+[userenv.shared]
+VITE_UNLOCK_ALL_PARTS = "true"
