@@ -48,6 +48,7 @@ ONDA — приложение для медитации и осознаннос�
 - `MODULE_FRONTEND.md` — фронтенд (React + Capacitor)
 - `MODULE_NATIVE.md` — iOS/Android нативное
 - `MODULE_SUPABASE.md` — база данных, auth, edge functions
+- `MODULE_LANDING.md` — лендинг onda-life.com, глоссарий, деплой
 
 ## Git: НЕ создавай новые ветки!
 

@@ -41,4 +41,22 @@ npm run build
 # Собрать прод с проверкой разблокировки (как для релиза)
 # Не создавать .env.production или удалить переменную
 npm run build
+
+# --- Лендинг (отдельный проект в landing/) ---
+# Локальная разработка лендинга
+cd landing && npm install && npm run dev
+
+# Сборка и запуск лендинга (как на Replit Deployment)
+cd landing && npm install && npm run build && npm run start
 ```
+
+---
+
+## Лендинг vs Приложение
+
+| Что | Папка | Dev-команда | Порт | Replit |
+|-----|-------|-------------|------|--------|
+| Приложение | корень (`src/`) | `npm run dev` | 5000 | Preview |
+| Лендинг | `landing/` | `cd landing && npm run dev` | 5173 | Deployment |
+
+Подробнее: `.assistant/MODULE_LANDING.md`

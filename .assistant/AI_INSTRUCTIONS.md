@@ -51,6 +51,7 @@ https://gist.github.com/yamius/1c0df3f9899b77d83ee3496013046d3d
    - iOS/Android нативное → `.assistant/MODULE_NATIVE.md`
    - Supabase (Auth, DB, Functions) → `.assistant/MODULE_SUPABASE.md`
    - **Создание новых частей (контуров)** → `.assistant/CONTENT_STRUCTURE.md`
+   - **Лендинг (onda-life.com, глоссарий)** → `.assistant/MODULE_LANDING.md`
 
 ## Git: Работа с ветками
 
