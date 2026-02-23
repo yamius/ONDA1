@@ -1,4 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0a0a0a"/>
-  <text x="16" y="22" text-anchor="middle" font-family="monospace" font-size="16" font-weight="bold" fill="#00ff41">O</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d4f4f"/>
+      <stop offset="100%" stop-color="#1a5c3a"/>
+    </linearGradient>
+    <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="6" fill="url(#bg)"/>
+  <path d="M4 18 C8 12, 12 12, 16 16 S24 20, 28 14" stroke="url(#wave)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <text x="16" y="13" text-anchor="middle" font-family="system-ui, sans-serif" font-size="7" font-weight="700" fill="white" letter-spacing="0.5">ONDA</text>
+  <text x="16" y="27" text-anchor="middle" font-family="system-ui, sans-serif" font-size="5.5" font-weight="400" fill="white" letter-spacing="1">LIFE</text>
 </svg>
