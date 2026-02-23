@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export function HeroSection() {
   const [scrollY, setScrollY] = useState(0)
@@ -56,13 +57,13 @@ export function HeroSection() {
             <DownloadIcon />
             <span>Download Now</span>
           </a>
-          <a
-            href="#concept"
+          <Link
+            to="/about"
             className="flex w-full items-center justify-center gap-2 rounded-lg border border-cyan-500/50 px-6 py-2 text-sm text-cyan-400 transition-all hover:bg-cyan-500/10 sm:w-auto"
           >
             <span>Learn More</span>
             <span>&rarr;</span>
-          </a>
+          </Link>
         </div>
 
         {/* Scroll indicator */}

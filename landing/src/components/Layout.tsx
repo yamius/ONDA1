@@ -48,9 +48,11 @@ export function Layout() {
           <div className="border-t border-white/5 bg-[#050a0f]">
             <div className="mx-auto max-w-7xl px-5 py-2 md:px-6">
               <Link
-                to="/"
+                to="/about"
                 onClick={() => setMenuOpen(false)}
-                className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
+                className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
+                  location.pathname === '/about' ? 'text-cyan-400' : 'text-white/70'
+                }`}
               >
                 About
               </Link>
