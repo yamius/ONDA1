@@ -10,7 +10,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden pb-12 pt-24 md:min-h-screen md:pb-0 md:pt-20">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16 md:pt-20">
       {/* Background image with parallax (moves at 50% scroll speed) */}
       <div
         className="absolute inset-0 opacity-40"
@@ -48,7 +48,7 @@ export function HeroSection() {
         </p>
 
         {/* CTA buttons */}
-        <div className="mb-6 flex flex-col items-center justify-center gap-3 sm:flex-row md:mb-16 md:gap-4">
+        <div className="mb-10 flex flex-col items-center justify-center gap-3 sm:flex-row md:mb-16 md:gap-4">
           <a
             href="#download"
             className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-2 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 sm:w-auto"

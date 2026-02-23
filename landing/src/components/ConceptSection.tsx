@@ -1,6 +1,6 @@
 export function ConceptSection() {
   return (
-    <section id="concept" className="relative px-4 py-16 md:px-6 md:py-24">
+    <section id="concept" className="relative -mt-20 px-4 py-16 md:-mt-0 md:px-6 md:py-24">
       <div className="mx-auto max-w-4xl">
         <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
           [ CONCEPT ]
