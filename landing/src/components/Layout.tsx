@@ -18,25 +18,18 @@ export function Layout() {
     <div className="min-h-screen bg-[#050a0f] text-white">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#050a0f]/90 backdrop-blur-md pt-[env(safe-area-inset-top)]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
-          {/* Logo + burger */}
-          <div className="flex items-center gap-3">
+          {/* Logo — ">" is menu toggle on mobile */}
+          <div className="flex items-center font-mono text-lg font-bold">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-white/60 transition-colors hover:border-white/20 hover:text-white md:hidden"
+              className="mr-0.5 text-cyan-400 transition-transform duration-200 md:pointer-events-none"
+              style={{ transform: menuOpen ? 'rotate(90deg)' : 'none' }}
               aria-label="Menu"
             >
-              {menuOpen ? (
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                  <path d="M18 6L6 18M6 6l12 12" />
-                </svg>
-              ) : (
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-                  <path d="M3 12h18M3 6h18M3 18h18" />
-                </svg>
-              )}
+              {'>'}
             </button>
-            <Link to="/" className="font-mono text-lg font-bold" onClick={() => setMenuOpen(false)}>
-              <span className="text-cyan-400">{'> ONDA'}</span>
+            <Link to="/" className="flex items-center" onClick={() => setMenuOpen(false)}>
+              <span className="text-cyan-400">{' ONDA'}</span>
               <span className="text-green-400"> LIFE</span>
             </Link>
           </div>
@@ -67,19 +60,19 @@ export function Layout() {
             </a>
           </div>
 
-          {/* Mobile: Download App button always visible */}
+          {/* Mobile: Download button */}
           <a
             href="#download"
-            className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-3 py-1.5 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:hidden"
+            className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-2.5 py-1 text-[11px] font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:hidden"
           >
             Download
           </a>
         </div>
 
-        {/* Mobile menu overlay */}
+        {/* Mobile menu */}
         {menuOpen && (
-          <div className="fixed inset-0 top-[52px] z-40 bg-[#050a0f] md:hidden">
-            <div className="flex flex-col px-6 pt-4">
+          <div className="fixed inset-0 top-[52px] z-40 bg-[#050a0f] pt-[env(safe-area-inset-top)] md:hidden">
+            <div className="flex flex-col px-6 pt-2">
               <Link
                 to="/"
                 onClick={() => setMenuOpen(false)}
@@ -116,7 +109,6 @@ export function Layout() {
                 Contacts
               </a>
 
-              {/* Store badges in mobile menu */}
               <div className="mt-6 flex gap-3">
                 <a
                   href="#"
