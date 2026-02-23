@@ -30,12 +30,12 @@ export function AboutPage() {
           <span className="mr-2 text-terminal-green/40">•</span>internal currency OND for practices and missions.
         </li>
       </ul>
-      <p className="mb-12 font-mono text-sm leading-relaxed text-white/60 md:text-base">
+      <p className="mb-16 font-mono text-sm leading-relaxed text-white/60 md:text-base">
         Path: from body sensation — to clarity, inspiration, and strength.
       </p>
 
       {/* How it works */}
-      <h2 className="mb-4 text-xl font-bold tracking-tight md:text-3xl">
+      <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
         <span className="text-terminal-green">How</span> it works
       </h2>
       <p className="mb-4 font-mono text-sm leading-relaxed text-white/60 md:text-base">
@@ -58,12 +58,12 @@ export function AboutPage() {
           <span className="mr-2 text-terminal-green/40">•</span>kindle the soul by supporting others.
         </li>
       </ul>
-      <p className="mb-12 font-mono text-sm leading-relaxed text-white/60">
+      <p className="mb-16 font-mono text-sm leading-relaxed text-white/60">
         Each practice — short breathing, attention to body, micro-movements, or contemplation.
       </p>
 
       {/* Resources */}
-      <h2 className="mb-4 text-xl font-bold tracking-tight md:text-3xl">
+      <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
         Resources, rewards,{' '}
         <span className="bg-gradient-to-r from-terminal-green to-terminal-cyan bg-clip-text text-transparent">
           results
@@ -83,13 +83,13 @@ export function AboutPage() {
           <span className="mr-2 text-terminal-green/40">•</span>early level skills — foundation for further growth.
         </li>
       </ul>
-      <p className="mb-12 font-mono text-sm leading-relaxed text-white/60">
+      <p className="mb-16 font-mono text-sm leading-relaxed text-white/60">
         Result: stable presence, calm, clarity, and inner support in life.
       </p>
 
       {/* Details */}
       <div className="space-y-6 border-t border-white/5 pt-10">
-        <h2 className="mb-2 text-xl font-bold tracking-tight md:text-3xl">
+        <h2 className="mb-2 text-2xl font-bold tracking-tight md:text-4xl">
           ONDA Life is a practice of{' '}
           <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
             self-awareness
