@@ -16,7 +16,7 @@ export function Layout() {
 
   return (
     <div className="min-h-screen bg-[#050a0f] text-white">
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#050a0f]/90 backdrop-blur-md">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#050a0f]/90 backdrop-blur-md pt-[env(safe-area-inset-top)]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
           {/* Logo + burger */}
           <div className="flex items-center gap-3">
