@@ -1,9 +1,9 @@
 const levels = [
   {
     number: 1,
-    emoji: '\uD83C\uDF0D',
-    name: '\u0422\u0415\u041B\u041E / TERRA',
-    parts: '\u042F \u0415\u0421\u0422\u042C \u2022 \u042F \u0414\u0412\u0418\u0413\u0410\u042E\u0421\u042C \u2022 \u042F \u0410\u0414\u0410\u041F\u0422\u0418\u0420\u0423\u042E\u0421\u042C',
+    emoji: '🌍',
+    name: 'BODY / TERRA',
+    parts: 'I AM • I MOVE • I ADAPT',
     color: 'from-purple-500/20 to-purple-900/10',
     borderColor: 'border-purple-500/20',
     accentColor: 'text-purple-400',
@@ -11,9 +11,9 @@ const levels = [
   },
   {
     number: 2,
-    emoji: '\uD83D\uDCA7',
-    name: '\u042D\u041C\u041E\u0426\u0418\u0418 / AQUA',
-    parts: '\u042F \u041C\u0410\u041D\u0415\u0412\u0420\u0418\u0420\u0423\u042E \u2022 \u042F \u041E\u0425\u0420\u0410\u041D\u042F\u042E \u2022 \u042F \u0412 \u0421\u0422\u0410\u0415',
+    emoji: '💧',
+    name: 'EMOTIONS / AQUA',
+    parts: 'I MANEUVER • I GUARD • I BELONG',
     color: 'from-cyan-500/20 to-cyan-900/10',
     borderColor: 'border-cyan-500/20',
     accentColor: 'text-cyan-400',
@@ -21,9 +21,9 @@ const levels = [
   },
   {
     number: 3,
-    emoji: '\uD83C\uDF2C\uFE0F',
-    name: '\u0420\u0410\u0417\u0423\u041C / AER',
-    parts: '\u042F \u0420\u0410\u0417\u041B\u0418\u0427\u0410\u042E \u2022 \u042F \u0424\u041E\u041A\u0423\u0421\u0418\u0420\u0423\u042E\u0421\u042C \u2022 \u042F \u0421\u041E\u0417\u0414\u0410\u042E',
+    emoji: '🌬️',
+    name: 'MIND / AER',
+    parts: 'I DISCERN • I FOCUS • I CREATE',
     color: 'from-sky-500/20 to-sky-900/10',
     borderColor: 'border-sky-500/20',
     accentColor: 'text-sky-400',
@@ -31,9 +31,9 @@ const levels = [
   },
   {
     number: 4,
-    emoji: '\uD83D\uDD25',
-    name: '\u0421\u041E\u0426\u0418\u0423\u041C / IGNIS',
-    parts: '\u042F \u0412\u042B\u0420\u0410\u0416\u0410\u042E \u2022 \u042F \u0412\u0417\u0410\u0418\u041C\u041E\u0414\u0415\u0419\u0421\u0422\u0412\u0423\u042E \u2022 \u042F \u0421\u041E-\u0422\u0412\u041E\u0420\u042E',
+    emoji: '🔥',
+    name: 'SOCIETY / IGNIS',
+    parts: 'I EXPRESS • I INTERACT • I CO-CREATE',
     color: 'from-amber-500/20 to-amber-900/10',
     borderColor: 'border-amber-500/20',
     accentColor: 'text-amber-400',
@@ -41,9 +41,9 @@ const levels = [
   },
   {
     number: 5,
-    emoji: '\uD83E\uDDD8',
-    name: '\u0422\u0415\u041B\u041E II / SOMA',
-    parts: '\u042F \u041E\u0429\u0423\u0429\u0410\u042E \u2022 \u042F \u041F\u0420\u041E\u0412\u041E\u0416\u0423 \u2022 \u042F \u0421\u041E\u0415\u0414\u0418\u041D\u042F\u042E\u0421\u042C',
+    emoji: '🧘',
+    name: 'BODY II / SOMA',
+    parts: 'I SENSE • I CONDUCT • I UNITE',
     color: 'from-rose-500/20 to-rose-900/10',
     borderColor: 'border-rose-500/20',
     accentColor: 'text-rose-400',
@@ -51,9 +51,9 @@ const levels = [
   },
   {
     number: 6,
-    emoji: '\uD83E\uDDE0',
-    name: '\u0421\u041E\u0417\u041D\u0410\u041D\u0418\u0415 \u041C\u041E\u0417\u0413\u0410',
-    parts: '\u042F \u041D\u0410\u0411\u041B\u042E\u0414\u0410\u042E \u2022 \u042F \u0418\u041D\u0422\u0415\u0413\u0420\u0418\u0420\u0423\u042E \u2022 \u042F \u0421\u0418\u041D\u0425\u0420\u041E\u041D\u0418\u0417\u0418\u0420\u0423\u042E\u0421\u042C',
+    emoji: '🧠',
+    name: 'BRAIN AWARENESS',
+    parts: 'I OBSERVE • I INTEGRATE • I SYNCHRONIZE',
     color: 'from-indigo-500/20 to-indigo-900/10',
     borderColor: 'border-indigo-500/20',
     accentColor: 'text-indigo-400',
@@ -61,9 +61,9 @@ const levels = [
   },
   {
     number: 7,
-    emoji: '\uD83E\uDDEC',
-    name: '\u0421\u041E\u0417\u041D\u0410\u041D\u0418\u0415 \u0414\u041D\u041A',
-    parts: '\u042F \u0412\u0421\u041F\u041E\u041C\u0418\u041D\u0410\u042E \u2022 \u042F \u0412\u041E\u0421\u0421\u0422\u0410\u041D\u0410\u0412\u041B\u0418\u0412\u0410\u042E \u2022 \u042F \u0421\u0418\u041D\u0422\u0415\u0417\u0418\u0420\u0423\u042E',
+    emoji: '🧬',
+    name: 'DNA AWARENESS',
+    parts: 'I REMEMBER • I RESTORE • I SYNTHESIZE',
     color: 'from-emerald-500/20 to-emerald-900/10',
     borderColor: 'border-emerald-500/20',
     accentColor: 'text-emerald-400',
@@ -71,9 +71,9 @@ const levels = [
   },
   {
     number: 8,
-    emoji: '\uD83C\uDF0C',
-    name: '\u0421\u041E\u0417\u041D\u0410\u041D\u0418\u0415 \u0410\u0422\u041E\u041C\u0410',
-    parts: '\u042F \u0412\u0418\u0411\u0420\u0410\u0426\u0418\u042F \u2022 \u042F \u0426\u0415\u041B\u041E\u0421\u0422\u041D\u041E\u0421\u0422\u042C \u2022 \u042F \u0418\u0421\u0422\u041E\u0427\u041D\u0418\u041A',
+    emoji: '🌌',
+    name: 'ATOM AWARENESS',
+    parts: 'I VIBRATE • I AM WHOLE • I AM SOURCE',
     color: 'from-white/10 to-white/5',
     borderColor: 'border-white/20',
     accentColor: 'text-white/80',
@@ -115,7 +115,7 @@ function LevelCard({ level }: { level: (typeof levels)[number] }) {
     >
       <div className="mb-3 flex items-center justify-between">
         <span className={`font-mono text-xs font-semibold ${level.accentColor}`}>
-          \u0423\u0440\u043E\u0432\u0435\u043D\u044C {level.number}
+          Level {level.number}
         </span>
         <span className="text-2xl">{level.emoji}</span>
       </div>
