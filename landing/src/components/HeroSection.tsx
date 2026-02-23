@@ -43,7 +43,7 @@ export function HeroSection() {
         </h1>
 
         {/* Subtitle */}
-        <p className="mx-auto mb-8 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base md:mb-12 md:text-xl">
+        <p className="mx-auto mb-14 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base md:mb-20 md:text-xl">
           Stop meditating randomly. Start managing your biological code through
           systematic upgrades. Your body is a biocomputer. ONDA Life is the OS.
         </p>
