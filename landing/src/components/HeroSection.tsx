@@ -11,7 +11,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative flex min-h-screen items-end justify-center overflow-hidden pb-16 pt-16 md:items-center md:pb-0 md:pt-20">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-32 md:pt-20">
       {/* Background image with parallax (moves at 50% scroll speed) */}
       <div
         className="absolute inset-0 opacity-40"
