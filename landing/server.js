@@ -2,16 +2,11 @@ import { createServer } from 'http'
 import { readFileSync, existsSync } from 'fs'
 import { join, extname } from 'path'
 import { fileURLToPath } from 'url'
+import { execSync } from 'child_process'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const distDir = join(__dirname, 'dist')
 const port = parseInt(process.env.PORT || '5000', 10)
-
-if (!existsSync(join(distDir, 'index.html'))) {
-  console.error(`ERROR: dist/index.html not found at ${distDir}`)
-  console.error('Run "npm run build" first.')
-  process.exit(1)
-}
 
 const mimeTypes = {
   '.html': 'text/html',
@@ -27,9 +22,25 @@ const mimeTypes = {
   '.webp': 'image/webp',
 }
 
-const indexHtml = readFileSync(join(distDir, 'index.html'), 'utf-8')
+const loadingHtml = `<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>ONDA Life</title>
+<style>body{background:#050a0f;color:#22d3ee;font-family:'Roboto Mono',monospace;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
+.c{text-align:center}.s{animation:spin 1s linear infinite;display:inline-block;width:32px;height:32px;border:3px solid #22d3ee33;border-top-color:#22d3ee;border-radius:50%}
+p{margin-top:16px;font-size:14px;opacity:.7}
+@keyframes spin{to{transform:rotate(360deg)}}</style>
+<meta http-equiv="refresh" content="5"></head>
+<body><div class="c"><div class="s"></div><p>> initializing system...</p></div></body></html>`
 
-createServer((req, res) => {
+let ready = false
+let indexHtml = ''
+
+const server = createServer((req, res) => {
+  if (!ready) {
+    res.writeHead(200, { 'Content-Type': 'text/html' })
+    res.end(loadingHtml)
+    return
+  }
+
   const url = new URL(req.url, `http://localhost:${port}`)
   const filePath = join(distDir, url.pathname)
   const ext = extname(filePath)
@@ -45,6 +56,24 @@ createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/html', 'Cache-Control': 'no-cache' })
     res.end(indexHtml)
   }
-}).listen(port, '0.0.0.0', () => {
-  console.log(`ONDA Landing running on http://0.0.0.0:${port}`)
+})
+
+server.listen(port, '0.0.0.0', () => {
+  console.log(`Server listening on port ${port}`)
+
+  if (existsSync(join(distDir, 'index.html'))) {
+    indexHtml = readFileSync(join(distDir, 'index.html'), 'utf-8')
+    ready = true
+    console.log('dist/ found — serving landing')
+  } else {
+    console.log('dist/ not found — running build...')
+    try {
+      execSync('npm run build', { cwd: __dirname, stdio: 'inherit' })
+      indexHtml = readFileSync(join(distDir, 'index.html'), 'utf-8')
+      ready = true
+      console.log('Build complete — landing is live')
+    } catch (err) {
+      console.error('Build failed:', err.message)
+    }
+  }
 })
