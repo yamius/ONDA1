@@ -37,7 +37,7 @@ export function Layout() {
           {/* Download App — always visible */}
           <a
             href="#download"
-            className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-4 py-2 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 mr-2 md:mr-4 md:px-5 md:text-sm"
+            className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-4 py-2 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 mr-6 md:mr-8 md:px-5 md:text-sm"
           >
             Download App
           </a>
