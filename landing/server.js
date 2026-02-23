@@ -7,6 +7,12 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const distDir = join(__dirname, 'dist')
 const port = parseInt(process.env.PORT || '5000', 10)
 
+if (!existsSync(join(distDir, 'index.html'))) {
+  console.error(`ERROR: dist/index.html not found at ${distDir}`)
+  console.error('Run "npm run build" first.')
+  process.exit(1)
+}
+
 const mimeTypes = {
   '.html': 'text/html',
   '.js': 'application/javascript',
@@ -18,6 +24,7 @@ const mimeTypes = {
   '.ico': 'image/x-icon',
   '.woff': 'font/woff',
   '.woff2': 'font/woff2',
+  '.webp': 'image/webp',
 }
 
 const indexHtml = readFileSync(join(distDir, 'index.html'), 'utf-8')

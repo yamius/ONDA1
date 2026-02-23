@@ -8,8 +8,8 @@ packages = ["nano", "unzip"]
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["bash", "-c", "cd landing && npm install && npm run build && npm run start"]
-build = ["bash", "-c", "echo 'Build handled in run command'"]
+build = ["bash", "-c", "cd landing && npm install && npm run build"]
+run = ["bash", "-c", "cd landing && node server.js"]
 
 [workflows]
 runButton = "Project"
