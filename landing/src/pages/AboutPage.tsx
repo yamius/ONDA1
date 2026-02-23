@@ -8,7 +8,10 @@ export function AboutPage() {
       </div>
 
       <h1 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-        What is ONDA Life
+        What is{' '}
+        <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
+          ONDA Life
+        </span>
       </h1>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60 md:text-base">
         ONDA Life — a system of mindfulness and self-development practices for real life.
@@ -33,7 +36,8 @@ export function AboutPage() {
 
       {/* How it works */}
       <h2 className="mb-4 text-xl font-bold tracking-tight md:text-3xl">
-        How it works
+        How it{' '}
+        <span className="text-white/40">works</span>
       </h2>
       <p className="mb-4 font-mono text-sm leading-relaxed text-white/60 md:text-base">
         ONDA Life — routes (waves and levels) of simple daily steps.
@@ -61,7 +65,10 @@ export function AboutPage() {
 
       {/* Resources */}
       <h2 className="mb-4 text-xl font-bold tracking-tight md:text-3xl">
-        Resources, rewards, results
+        Resources, rewards,{' '}
+        <span className="bg-gradient-to-r from-terminal-green to-terminal-cyan bg-clip-text text-transparent">
+          results
+        </span>
       </h2>
       <p className="mb-4 font-mono text-sm leading-relaxed text-white/60 md:text-base">
         We provide routes, tips, and support. For practices and missions you earn OND — game currency:
