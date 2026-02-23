@@ -151,7 +151,7 @@ Operating System   → text-green-400
 for Your Consciousness → text-white
 ```
 
-Шрифт: `font-mono text-6xl md:text-7xl font-bold leading-tight`.
+Шрифт: `font-mono text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight`.
 
 ---
 
@@ -192,39 +192,64 @@ for Your Consciousness → text-white
 
 ---
 
-## Деплой
+## Деплой на Replit
 
-### Как работает .replit
+### ⚠️ КРИТИЧЕСКИ ВАЖНО: Replit Autoscale не сохраняет файлы между build и run
+
+Replit Autoscale запускает `build` и `run` в **разных окружениях**. Папка `dist/`, созданная в фазе `build`, **не доступна** в фазе `run`. Это значит:
+
+- ❌ **НЕ работает**: `build` собирает `dist/`, `run` запускает сервер — `dist/` не найден
+- ❌ **НЕ работает**: `outDir: '../dist'` (в корень) — тоже теряется
+- ❌ **НЕ работает**: раздельные `build` и `run` для Autoscale
+- ✅ **Работает**: всё в одной команде `run` — install → build → start
+
+### Рабочая конфигурация .replit
 
 ```toml
 [deployment]
-# Build пустой — всё в run (Replit не сохраняет dist между build и run)
-build = ["bash", "-c", "echo 'Build handled in run command'"]
-# Run: install → build → serve
+deploymentTarget = "autoscale"
+# ВСЁ в run: install, build, serve — в одном процессе, dist не теряется
 run = ["bash", "-c", "cd landing && npm install && npm run build && npm run start"]
+# Build пустой — реальная сборка в run
+build = ["bash", "-c", "echo 'Build handled in run command'"]
 
 [workflows]
-# Preview — основное приложение (для разработки)
+# Preview — основное приложение (НЕ лендинг!)
 args = "npm run dev"
 waitForPort = 5000
 ```
 
-### Production-сервер (server.js)
+**Не менять эту конфигурацию!** Любые попытки разделить `build` и `run` приведут к ошибке "dist not found".
+
+### Что где показывается
+
+| Контекст | Что запускается | Что видно |
+|----------|----------------|-----------|
+| **Replit Preview** (кнопка Run) | `npm run dev` (корень, порт 5000) | Основное приложение |
+| **Replit Deployment** (Republish) | `cd landing && npm install && build && start` | Лендинг |
+| **https://ONDALife.replit.app** | Deployment | Лендинг |
+| **https://onda-life.com** | Deployment (после DNS) | Лендинг |
+
+### Production-сервер (landing/server.js)
 
 - Чистый Node.js HTTP-сервер (без express)
 - Раздаёт статику из `landing/dist/`
 - **SPA fallback**: любой маршрут без расширения → `index.html`
 - Статические файлы: `Cache-Control: max-age=31536000, immutable`
 - HTML: `Cache-Control: no-cache`
+- Проверка наличия `dist/index.html` при старте
 - Порт: `process.env.PORT || 5000`
 
 ### Процесс деплоя
 
 1. Внести изменения в `landing/` (Cursor)
 2. Commit + push в `main`
-3. На Replit: `git reset --hard origin/main`
+3. На Replit Shell: `git reset --hard origin/main`
 4. Нажать **Republish**
-5. Лендинг появится на `https://ONDALife.replit.app`
+5. Дождаться прохождения всех фаз (Provision → Security Scan → Build → Bundle → Promote)
+6. Лендинг появится на `https://ONDALife.replit.app`
+
+**Если Republish failed** — проверить вкладку Publishing, прочитать ошибку. Обычно причина в таймауте порта или отсутствии `dist/`.
 
 ### postcss.config.js
 
@@ -263,6 +288,39 @@ cd landing && npm run start
 
 Текущие записи не совпадают (A → 75.2.60.5, TXT отсутствует).
 После обновления DNS `onda-life.com` начнёт показывать лендинг.
+
+---
+
+## Мобильная адаптация
+
+Лендинг адаптирован под мобильные устройства (mobile-first через Tailwind breakpoints).
+
+### Навигация
+
+- **Десктоп** (`md:` и выше): лого + кнопки Glossary, About, Download App
+- **Мобильные** (`< md`): бургер-кнопка + лого + кнопка Download App
+- Бургер раскрывает полноэкранное меню: About, Glossary, Language, Download, Contacts + кнопки App Store / Google Play
+- Меню закрывается при переходе на другую страницу
+- Скролл фона блокируется при открытом меню
+
+### Адаптивная типографика
+
+| Элемент | Мобильные | Десктоп |
+|---------|-----------|---------|
+| Hero заголовок | `text-3xl` → `sm:text-4xl` | `md:text-6xl` → `lg:text-7xl` |
+| Hero подзаголовок | `text-sm` → `sm:text-base` | `md:text-xl` |
+| Секции заголовки | `text-2xl` | `md:text-4xl` |
+| Padding секций | `px-4 py-16` | `md:px-6 md:py-24` |
+
+### CTA-кнопки и бейджи
+
+- На мобильных: `w-full` (на всю ширину)
+- На десктопе: `sm:w-auto` (по содержимому)
+
+### Глоссарий
+
+- Фильтры категорий: горизонтальный скролл на мобильных
+- `pt-20` на страницах глоссария (отступ под фиксированный хедер)
 
 ---
 
