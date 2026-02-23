@@ -17,7 +17,7 @@ export function Layout() {
   return (
     <div className="min-h-screen bg-[#050a0f] text-white">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-[#050a0f]/90 backdrop-blur-md pt-[env(safe-area-inset-top)]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-6 md:py-4">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 md:px-6 md:py-4">
           {/* Logo — ">" is menu toggle on mobile */}
           <div className="flex items-center font-mono text-lg font-bold">
             <button
@@ -63,7 +63,7 @@ export function Layout() {
           {/* Mobile: Download button */}
           <a
             href="#download"
-            className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-2.5 py-1 text-[11px] font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:hidden"
+            className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-3 py-1.5 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:hidden"
           >
             Download
           </a>
