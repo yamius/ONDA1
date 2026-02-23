@@ -36,8 +36,7 @@ export function AboutPage() {
 
       {/* How it works */}
       <h2 className="mb-4 text-xl font-bold tracking-tight md:text-3xl">
-        How it{' '}
-        <span className="text-white/40">works</span>
+        <span className="text-terminal-green">How</span> it works
       </h2>
       <p className="mb-4 font-mono text-sm leading-relaxed text-white/60 md:text-base">
         ONDA Life — routes (waves and levels) of simple daily steps.
@@ -90,9 +89,16 @@ export function AboutPage() {
 
       {/* Details */}
       <div className="space-y-6 border-t border-white/5 pt-10">
-        <p className="font-mono text-sm leading-relaxed text-white/60">
-          ONDA Life is a practice of self-awareness and body awareness.
-        </p>
+        <h2 className="mb-2 text-xl font-bold tracking-tight md:text-3xl">
+          ONDA Life is a practice of{' '}
+          <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
+            self-awareness
+          </span>{' '}
+          and{' '}
+          <span className="bg-gradient-to-r from-terminal-green to-terminal-cyan bg-clip-text text-transparent">
+            body awareness
+          </span>
+        </h2>
         <p className="font-mono text-sm leading-relaxed text-white/60">
           Connect your fitness tracker or smartwatch in settings and watch your vitals change in real time during your practice.
         </p>
