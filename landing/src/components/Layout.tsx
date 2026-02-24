@@ -1,9 +1,18 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useLayoutEffect } from 'react'
 import { Outlet, Link, useLocation } from 'react-router-dom'
 
 export function Layout() {
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [visible, setVisible] = useState(true)
+
+  useLayoutEffect(() => {
+    setVisible(false)
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior })
+    requestAnimationFrame(() => setVisible(true))
+  }, [location.pathname])
 
   useEffect(() => {
     setMenuOpen(false)
@@ -97,7 +106,7 @@ export function Layout() {
         />
       )}
 
-      <main>
+      <main style={{ opacity: visible ? 1 : 0 }}>
         <Outlet />
       </main>
 
