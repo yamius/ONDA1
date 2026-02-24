@@ -2,6 +2,7 @@ import { createServer } from 'http'
 import { readFileSync, existsSync } from 'fs'
 import { join, extname } from 'path'
 import { fileURLToPath } from 'url'
+import { execSync } from 'child_process'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const distDir = join(__dirname, 'dist')
@@ -65,8 +66,16 @@ server.listen(port, '0.0.0.0', () => {
     ready = true
     console.log('dist/ found — serving landing')
   } else {
-    console.error('dist/ not found — run "npm run build" in the build phase')
-    indexHtml = '<!DOCTYPE html><html><body><h1>Build required</h1><p>dist/ not found. Ensure build phase completed.</p></body></html>'
-    ready = true
+    console.log('dist/ not found — running build...')
+    try {
+      execSync('npm run build', { cwd: __dirname, stdio: 'inherit' })
+      indexHtml = readFileSync(join(distDir, 'index.html'), 'utf-8')
+      ready = true
+      console.log('Build complete — landing is live')
+    } catch (err) {
+      console.error('Build failed:', err.message)
+      indexHtml = '<!DOCTYPE html><html><body><h1>Build failed</h1><p>' + String(err.message) + '</p></body></html>'
+      ready = true
+    }
   }
 })
