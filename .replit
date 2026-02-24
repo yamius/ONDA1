@@ -8,7 +8,7 @@ packages = ["nano", "unzip"]
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["bash", "-c", "cd landing && npm install && node server.js"]
+run = ["bash", "-c", "cd landing && node server.js"]
 build = ["bash", "-c", "cd landing && npm install && npm run build"]
 
 [workflows]
@@ -38,10 +38,6 @@ outputType = "webview"
 [[ports]]
 localPort = 5000
 externalPort = 80
-
-[[ports]]
-localPort = 5001
-externalPort = 3000
 
 [userenv]
 
