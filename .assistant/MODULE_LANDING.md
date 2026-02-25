@@ -52,30 +52,34 @@ ONDA1/
 
 ```
 landing/
-├── index.html                    ← HTML с SEO meta-тегами, OG, шрифты
+├── index.html                    ← HTML с SEO meta-тегами, OG, шрифты, viewport-fit=cover
 ├── vite.config.ts                ← Vite + React + Tailwind v4 + allowedHosts
 ├── postcss.config.js             ← Изоляция от корневого Tailwind v3
-├── server.js                     ← Production-сервер (Node.js, SPA fallback)
+├── server.js                     ← Production-сервер (Node.js, SPA fallback, instant port)
 ├── package.json                  ← Зависимости и скрипты
 ├── public/
-│   ├── favicon.svg
+│   ├── favicon.svg               ← Логотип ONDA Life (волна + текст, SVG)
 │   └── hero-bg.png               ← Фоновое изображение hero-секции
 └── src/
-    ├── main.tsx                  ← Роутинг: /, /glossary, /glossary/:slug
+    ├── main.tsx                  ← Роутинг: /, /about, /glossary, /glossary/:slug, /part/:slug
     ├── index.css                 ← Tailwind v4, кастомные цвета, анимации
     ├── components/
-    │   ├── Layout.tsx            ← Навигация + футер (общий каркас)
+    │   ├── Layout.tsx            ← Навигация + футер + scroll-to-top при навигации
     │   ├── HeroSection.tsx       ← Главный экран с параллакс-фоном
     │   ├── ConceptSection.tsx    ← Секция "Your Body is a Computer"
-    │   ├── LevelsSection.tsx     ← 8 уровней системы (карточки)
+    │   ├── LevelsSection.tsx     ← 8 уровней (карточки, кликабельные parts → /part/:slug)
     │   ├── FeaturesSection.tsx   ← Трекеры, геймификация, система
-    │   └── CtaSection.tsx        ← Кнопки App Store / Google Play
+    │   └── CtaSection.tsx        ← Секция "Initialize Your System" + App Store / Google Play
     ├── pages/
     │   ├── HomePage.tsx          ← Главная (все секции)
+    │   ├── AboutPage.tsx         ← Страница "About" с описанием ONDA Life
+    │   ├── PartPage.tsx          ← Детальное описание Part (уровня), ссылки на глоссарий
     │   ├── GlossaryPage.tsx      ← Список терминов с поиском/фильтрами
     │   └── GlossaryTermPage.tsx  ← Отдельная страница термина
+    ├── config/
+    │   └── routes.ts             ← Единый источник маршрутов (staticRoutes + getPrerenderRoutes)
     └── data/
-        └── glossary.ts           ← Данные глоссария (термины)
+        └── glossary.ts           ← Данные глоссария
 ```
 
 ---
@@ -85,8 +89,32 @@ landing/
 | Путь | Страница | Описание |
 |------|----------|----------|
 | `/` | HomePage | Главная с секциями Hero, Concept, Levels, Features, CTA |
+| `/about` | AboutPage | О проекте ONDA Life (стиль заголовков с градиентами) |
+| `/part/:slug` | PartPage | Детальное описание Part (например `/part/i-am`) |
 | `/glossary` | GlossaryPage | Список терминов с поиском и фильтрами по категориям |
 | `/glossary/:slug` | GlossaryTermPage | Отдельная страница термина (Markdown-контент) |
+
+### Навигация между страницами
+
+- При переходе на новую страницу контент мгновенно скрывается (`opacity: 0`), скролл сбрасывается, затем контент появляется уже сверху — без видимого скролла.
+- Реализовано через `useLayoutEffect` + `requestAnimationFrame` в `Layout.tsx`.
+
+### Страницы Part (PartPage.tsx)
+
+Каждая Part — отдельная страница с подробным описанием практики. Стиль заголовков идентичен AboutPage (`text-2xl md:text-4xl`, градиенты `terminal-cyan → terminal-green`).
+
+Структура данных Part:
+- `badge` — бейдж уровня (`[ PART 1 — LEVEL 1: BODY / TERRA ]`)
+- `title` / `titleHighlight` — заголовок с градиентным выделением
+- `subtitle` — подзаголовок протокола
+- `intro` — вводный текст
+- `sections` — секции (Biological Protocol, Target Systems, Results & Benefits)
+- `glossaryLinks` — ссылки на термины глоссария (теги внизу страницы)
+
+Для добавления новой Part: добавить объект в `parts` в `PartPage.tsx` и `slug` в соответствующий part в `LevelsSection.tsx`.
+
+Текущие Part-страницы:
+- `/part/i-am` — Part 1: I Am (Level 1, BODY / TERRA)
 
 ---
 
@@ -112,9 +140,10 @@ landing/
 
 ### Навигация (Layout.tsx)
 
-- Лого: `> ONDA` (`text-cyan-400`) + `LIFE` (`text-green-400`)
-- Кнопки About/Glossary: `border-cyan-500/30 text-cyan-400`
-- Кнопка Download App: `bg-gradient-to-r from-cyan-500 to-green-500 text-black`
+- Кнопка `>` (бургер): `h-8 w-8 rounded-lg border-cyan-500/30 text-cyan-400`, поворачивается на 90° при открытии меню
+- Лого: `ONDA` (`text-cyan-400`) + `LIFE` (`text-green-400`)
+- Кнопка Download App: `bg-gradient-to-r from-cyan-500 to-green-500 text-black`, сдвинута от правого края (`mr-6 md:mr-8`)
+- Выпадающее меню (одинаковое на всех экранах): About, Glossary, Language, Download, Contacts
 - Закругление кнопок: `rounded-lg` (НЕ `rounded-full`, кроме бейджей-статусов)
 
 ### Бейджи-статусы
@@ -178,17 +207,43 @@ for Your Consciousness → text-white
 }
 ```
 
-### Текущие категории
+### Текущие категории и термины
 
-- **Core Concepts** — Biocomputer, Firmware Update
-- **Neuroscience** — Psycho-Neural Network, Molecular Psychology
-- **Body Systems** — Interoception
+- **Core Concepts** — Biocomputer, Firmware Update, Mind
+- **Neuroscience** — Psycho-Neural Network, Molecular Psychology, Brain, Insular Cortex
+- **Body Systems** — Interoception, Homeostasis, Primary Interoception, Metabolism, Vagus Nerve
 - **Gamification** — OND Tokens
 
-### SEO
+### SEO и SSG
 
-Каждый термин — отдельная страница с уникальным URL (`/glossary/slug`).
-В будущем при переходе на SSG каждая страница станет отдельным HTML-файлом для индексации.
+Каждый термин и Part — отдельная страница с уникальным URL. **SSG включён**: после `vite build` запускается `scripts/prerender.ts`, который через Puppeteer генерирует статический HTML для каждого маршрута. Результат: `dist/about/index.html`, `dist/glossary/term-slug/index.html`, `dist/part/part-slug/index.html` — каждый URL = отдельный HTML-файл для индексации.
+
+**Полная автоматизация маршрутов** — всё берётся из `src/config/routes.ts`:
+- **Термины глоссария** — из `glossary.ts` (добавил термин → prerender подхватит)
+- **Part-страницы** — из `PartPage.tsx` (добавил Part → prerender подхватит)
+- **Новые статические страницы** — добавь `{ path: '/articles', component: ArticlesPage }` в `staticRoutes` в `routes.ts`; `main.tsx` уже рендерит маршруты из этого массива, prerender тоже подхватит
+
+### После добавления контента
+
+1. **Проверка сборки** — обязательно запусти:
+   ```bash
+   cd landing && npm run build
+   ```
+   Если сборка прошла без ошибок — prerender отработал, новые страницы попали в `dist/`.
+
+2. **Где что добавлять:**
+
+   | Тип контента | Где добавлять | Дополнительно |
+   |--------------|--------------|---------------|
+   | Термин глоссария | `glossary.ts` | Ничего |
+   | Part-страница | `PartPage.tsx` (в `parts`) + `LevelsSection.tsx` (slug в карточке уровня) | Ничего |
+   | Новая страница (напр. /articles) | `routes.ts` → `staticRoutes` + новый компонент страницы | `main.tsx` подхватит из `staticRoutes` автоматически |
+
+3. **Перед деплоем** — всегда запусти `npm run build`. При необходимости проверь локально: `npm run start` и открой новые URL в браузере.
+
+4. **Если prerender падает** — в логе будет строка вида `[prerender] Failed /glossary/some-slug ...`. Частые причины: неверный slug в ссылках или страница не успевает загрузиться (таймаут).
+
+**Итог:** добавляешь контент в нужные файлы → запускаешь `npm run build` → prerender подхватывает всё автоматически. Дальше — см. «Процесс деплоя» (push → Replit Republish).
 
 ---
 
@@ -208,48 +263,61 @@ Replit Autoscale запускает `build` и `run` в **разных окру�
 ```toml
 [deployment]
 deploymentTarget = "autoscale"
-# ВСЁ в run: install, build, serve — в одном процессе, dist не теряется
-run = ["bash", "-c", "cd landing && npm install && npm run build && npm run start"]
-# Build пустой — реальная сборка в run
-build = ["bash", "-c", "echo 'Build handled in run command'"]
-
-[workflows]
-# Preview — основное приложение (НЕ лендинг!)
-args = "npm run dev"
-waitForPort = 5000
+build = ["bash", "-c", "cd landing && npm install && npm run build"]
+run = ["bash", "-c", "cd landing && npm install && node server.js"]
 ```
 
-**Не менять эту конфигурацию!** Любые попытки разделить `build` и `run` приведут к ошибке "dist not found".
+**Важно:**
+- `build` фаза: `cd landing && npm install && npm run build` — собирает `dist/`
+- `run` фаза: `cd landing && npm install && node server.js` — на Autoscale `dist/` из build недоступна, поэтому `server.js` при отсутствии `dist/` запускает сборку в фоне; порт 5000 открывается сразу (loading-страница)
+- Это решает проблему таймаута порта на Replit Autoscale
 
 ### Что где показывается
 
 | Контекст | Что запускается | Что видно |
 |----------|----------------|-----------|
 | **Replit Preview** (кнопка Run) | `npm run dev` (корень, порт 5000) | Основное приложение |
-| **Replit Deployment** (Republish) | `cd landing && npm install && build && start` | Лендинг |
+| **Replit Deployment** (Republish) | build + run из `.replit` | Лендинг |
 | **https://ONDALife.replit.app** | Deployment | Лендинг |
 | **https://onda-life.com** | Deployment (после DNS) | Лендинг |
 
 ### Production-сервер (landing/server.js)
 
 - Чистый Node.js HTTP-сервер (без express)
+- **Мгновенное открытие порта**: показывает loading-страницу пока `dist/` не готов
+- **Fallback-сборка**: если `dist/index.html` не найден — запускает `npm run build` в фоне
 - Раздаёт статику из `landing/dist/`
 - **SPA fallback**: любой маршрут без расширения → `index.html`
 - Статические файлы: `Cache-Control: max-age=31536000, immutable`
 - HTML: `Cache-Control: no-cache`
-- Проверка наличия `dist/index.html` при старте
 - Порт: `process.env.PORT || 5000`
 
-### Процесс деплоя
+### Процесс деплоя: от контента до Replit
 
-1. Внести изменения в `landing/` (Cursor)
-2. Commit + push в `main`
-3. На Replit Shell: `git reset --hard origin/main`
-4. Нажать **Republish**
-5. Дождаться прохождения всех фаз (Provision → Security Scan → Build → Bundle → Promote)
-6. Лендинг появится на `https://ONDALife.replit.app`
+**1. Локально (Cursor)**
 
-**Если Republish failed** — проверить вкладку Publishing, прочитать ошибку. Обычно причина в таймауте порта или отсутствии `dist/`.
+- Добавить контент (термин, Part, страницу) — см. «После добавления контента»
+- Проверить сборку: `cd landing && npm run build`
+- Закоммитить и отправить в `main`:
+  ```bash
+  git add .
+  git commit -m "описание изменений"
+  git pull --rebase origin main   # обязательно перед push
+  git push origin main
+  ```
+
+**2. На Replit**
+
+- Открыть Replit Shell
+- Подтянуть изменения: `git reset --hard origin/main`
+- Нажать **Republish** (Deployments → Republish)
+- Дождаться фаз: Provision → Security Scan → Build → Bundle → Promote
+
+**3. Результат**
+
+- Лендинг доступен на `https://ONDALife.replit.app`
+
+**Если Republish failed** — проверить вкладку Publishing, прочитать ошибку. Частые причины: таймаут порта или отсутствие `dist/` (run-фаза пересобирает в фоне через `server.js`).
 
 ### postcss.config.js
 
@@ -297,11 +365,11 @@ cd landing && npm run start
 
 ### Навигация
 
-- **Десктоп** (`md:` и выше): лого + кнопки Glossary, About, Download App
-- **Мобильные** (`< md`): бургер-кнопка + лого + кнопка Download App
-- Бургер раскрывает полноэкранное меню: About, Glossary, Language, Download, Contacts + кнопки App Store / Google Play
-- Меню закрывается при переходе на другую страницу
+- **Все экраны**: кнопка `>` (бургер) + лого `ONDA LIFE` + кнопка `Download App`
+- Бургер раскрывает выпадающее меню: About, Glossary, Language, Download, Contacts
+- Меню закрывается при переходе на другую страницу или клике вне меню
 - Скролл фона блокируется при открытом меню
+- Safe area insets для устройств с вырезами (`pt-[env(safe-area-inset-top)]`)
 
 ### Адаптивная типографика
 
@@ -312,10 +380,10 @@ cd landing && npm run start
 | Секции заголовки | `text-2xl` | `md:text-4xl` |
 | Padding секций | `px-4 py-16` | `md:px-6 md:py-24` |
 
-### CTA-кнопки и бейджи
+### CTA-кнопки
 
-- На мобильных: `w-full` (на всю ширину)
-- На десктопе: `sm:w-auto` (по содержимому)
+- На мобильных: ограничены `max-w-[200px]`, компактный padding (`px-4 py-2`)
+- На десктопе: `sm:w-auto sm:flex-row`, стандартный padding
 
 ### Глоссарий
 
@@ -324,9 +392,29 @@ cd landing && npm run start
 
 ---
 
+## Уровни и Parts (LevelsSection.tsx)
+
+8 уровней, каждый с 3 частями (Parts). Карточки уровней отображаются в сетке 2 колонки (десктоп) / 1 колонка (мобильные).
+
+Если у Part есть `slug` — она отображается как кликабельная ссылка (`→`), ведущая на `/part/:slug`.
+
+| Уровень | Название | Parts |
+|---------|----------|-------|
+| 1 | BODY / TERRA | 1) I Am (**→ /part/i-am**), 2) I Move, 3) I Adapt |
+| 2 | EMOTIONS / AQUA | 4-6 |
+| 3 | MIND / AER | 7-9 |
+| 4 | SOCIETY / IGNIS | 10-12 |
+| 5 | BODY II / TERRA II | 13-15 |
+| 6 | BRAIN CONSCIOUSNESS / AQUA II | 16-18 |
+| 7 | DNA CONSCIOUSNESS / AER II | 19-21 |
+| 8 | ATOMIC CONSCIOUSNESS / IGNIS II | 22-24 |
+
+---
+
 ## Будущие улучшения
 
-- **SSG (Static Site Generation)** — для SEO глоссария (каждый термин = отдельный HTML)
+- **SSG** — реализован через post-build prerender (Puppeteer), каждый термин и Part = отдельный HTML
 - **Миграция на Vercel/Cloudflare Pages** — если Replit станет недостаточно
 - **Многоязычность** — русская/английская версия лендинга
 - **Markdown-файлы для глоссария** — вместо TS-объектов, для удобства редактирования
+- **Описания для всех Parts** — добавить данные в `PartPage.tsx` и `slug` в `LevelsSection.tsx`

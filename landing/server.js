@@ -42,7 +42,8 @@ const server = createServer((req, res) => {
   }
 
   const url = new URL(req.url, `http://localhost:${port}`)
-  const filePath = join(distDir, url.pathname)
+  const pathname = (url.pathname.replace(/\/$/, '') || '/').replace(/^\//, '') || '.'
+  const filePath = join(distDir, pathname)
   const ext = extname(filePath)
 
   if (ext && existsSync(filePath)) {
@@ -53,8 +54,14 @@ const server = createServer((req, res) => {
     })
     res.end(readFileSync(filePath))
   } else {
-    res.writeHead(200, { 'Content-Type': 'text/html', 'Cache-Control': 'no-cache' })
-    res.end(indexHtml)
+    const nestedHtml = join(filePath, 'index.html')
+    if (existsSync(nestedHtml)) {
+      res.writeHead(200, { 'Content-Type': 'text/html', 'Cache-Control': 'no-cache' })
+      res.end(readFileSync(nestedHtml, 'utf-8'))
+    } else {
+      res.writeHead(200, { 'Content-Type': 'text/html', 'Cache-Control': 'no-cache' })
+      res.end(indexHtml)
+    }
   }
 })
 

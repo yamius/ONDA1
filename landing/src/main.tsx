@@ -3,20 +3,18 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import { Layout } from './components/Layout'
-import { HomePage } from './pages/HomePage'
-import { AboutPage } from './pages/AboutPage'
-import { GlossaryPage } from './pages/GlossaryPage'
 import { GlossaryTermPage } from './pages/GlossaryTermPage'
 import { PartPage } from './pages/PartPage'
+import { staticRoutes } from './config/routes'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route element={<Layout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/glossary" element={<GlossaryPage />} />
+          {staticRoutes.map((r) => (
+            <Route key={r.path} path={r.path} element={<r.component />} />
+          ))}
           <Route path="/glossary/:slug" element={<GlossaryTermPage />} />
           <Route path="/part/:slug" element={<PartPage />} />
         </Route>

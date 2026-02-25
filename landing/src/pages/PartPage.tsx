@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 
-const parts: Record<string, {
+export const parts: Record<string, {
   badge: string
   title: string
   titleHighlight: string
