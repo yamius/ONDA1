@@ -14,7 +14,6 @@ export const glossaryTerms: GlossaryTerm[] = [
     shortDescription:
       'The human body viewed as a complex biological computing system capable of running consciousness programs.',
     content: `
-## Biocomputer
 
 The **Biocomputer** is the foundational metaphor of ONDA Life. Your body is not just a vessel — it is the most sophisticated computing system known to exist.
 
@@ -37,6 +36,9 @@ Most people run on autopilot — executing ancient firmware without awareness. O
 ### In the ONDA System
 
 The Biocomputer concept maps directly to the 8-level architecture. Levels 1-4 work with the "hardware" (body, emotions, mind, social systems), while Levels 5-8 access deeper "source code" (cellular, genetic, planetary, universal).
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -46,7 +48,6 @@ The Biocomputer concept maps directly to the 8-level architecture. Levels 1-4 wo
     shortDescription:
       'A structured practice session that rewrites deep biological programs — breathing patterns, stress responses, emotional regulation.',
     content: `
-## Firmware Update
 
 In ONDA Life, a **Firmware Update** is what traditional apps call a "meditation" or "practice session." But it's fundamentally different.
 
@@ -75,6 +76,9 @@ Because each Firmware Update targets a specific system, results are measurable:
 - HRV changes after breathing practices
 - Sleep quality improvements after evening protocols
 - Stress response changes tracked over weeks
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -84,7 +88,6 @@ Because each Firmware Update targets a specific system, results are measurable:
     shortDescription:
       'The interconnected web of psychological patterns and neural pathways that form your behavioral operating system.',
     content: `
-## Psycho-Neural Network
 
 The **Psycho-Neural Network** (PNN) describes the bidirectional relationship between psychological states and neural architecture.
 
@@ -111,6 +114,9 @@ Each Level of the ONDA system works with a different layer of the PNN:
 ### Molecular Psychology Connection
 
 The PNN is not abstract — it has a molecular basis. Every psychological state corresponds to specific neurotransmitter and hormone profiles. ONDA practices are designed to shift these profiles systematically.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -120,7 +126,6 @@ The PNN is not abstract — it has a molecular basis. Every psychological state 
     shortDescription:
       'Understanding psychological states through their molecular basis — hormones, neurotransmitters, and peptides.',
     content: `
-## Molecular Psychology
 
 **Molecular Psychology** bridges the gap between subjective experience and biochemistry. Every emotion, thought, and behavior has a molecular signature.
 
@@ -142,6 +147,9 @@ Traditional meditation apps say "feel calmer." ONDA Life says "reduce cortisol b
 ### Hormonal Firmware
 
 Your endocrine system is the "firmware" that runs beneath conscious awareness. Hormonal patterns established in childhood continue to run unless deliberately updated. ONDA practices target these patterns at the molecular level.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -151,16 +159,15 @@ Your endocrine system is the "firmware" that runs beneath conscious awareness. H
     shortDescription:
       'The sense of the internal state of your body — the foundation of all self-awareness and emotional intelligence.',
     content: `
-## Interoception
 
-**Interoception** is your body's ability to sense its own internal state — heartbeat, breathing, gut feelings, temperature, pain, hunger. It is the most fundamental sense, and the foundation of the entire ONDA system.
+**Interoception** is your body's ability to sense its own internal state — heartbeat, breathing, gut feelings, temperature, pain, hunger.¹ It is the most fundamental sense, and the foundation of the entire ONDA system.
 
 ### Why Interoception First
 
 ONDA Level 1 (TERRA) begins with interoception because:
 
 1. **It's the base layer** — You cannot regulate what you cannot sense
-2. **Emotional awareness depends on it** — Emotions are first felt as body sensations
+2. **Emotional awareness depends on it** — Emotions are first felt as body sensations²
 3. **It's measurable** — Interoceptive accuracy correlates with emotional intelligence
 4. **It's trainable** — Unlike many cognitive abilities, interoception improves rapidly with practice
 
@@ -179,6 +186,13 @@ Studies show that people with higher interoceptive accuracy:
 - Have greater emotional regulation (Füstös et al., 2013)
 - Experience less anxiety (Paulus & Stein, 2010)
 - Show enhanced empathy (Ernst et al., 2013)
+
+---
+
+### References
+
+1. [Craig, Nat Rev Neurosci (2002)](https://pubmed.ncbi.nlm.nih.gov/12030437/) — interoception and insula
+2. [Füstös et al., Biol Psychol (2013)](https://pubmed.ncbi.nlm.nih.gov/23153889/) — interoception and emotional regulation
 `,
   },
   {
@@ -188,7 +202,6 @@ Studies show that people with higher interoceptive accuracy:
     shortDescription:
       'The internal reward currency earned through completed practices — converting consciousness work into measurable progress.',
     content: `
-## OND Tokens
 
 **OND Tokens** are the gamification layer of ONDA Life — a reward system that makes consciousness development measurable and motivating.
 
@@ -220,6 +233,9 @@ Each Part has an associated **Artifact** — a collectible that provides permane
 ### Future: Real Value
 
 Starting at Level 3, OND tokens will be convertible to real value through the ONDA ecosystem. The exact mechanism is under development.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -229,9 +245,8 @@ Starting at Level 3, OND tokens will be convertible to real value through the ON
     shortDescription:
       'The body\'s ability to maintain stable internal conditions — temperature, pH, blood sugar — despite external changes.',
     content: `
-## Homeostasis
 
-**Homeostasis** is the dynamic process by which living organisms maintain a stable internal environment. It is the biological foundation of the "I Am" state in ONDA Level 1.
+**Homeostasis** is the dynamic process by which living organisms maintain a stable internal environment.¹ It is the biological foundation of the "I Am" state in ONDA Level 1.
 
 ### How It Works
 
@@ -250,6 +265,12 @@ Level 1 (TERRA) begins with homeostatic alignment — the practice of sensing an
 ### Why It Matters
 
 A body in homeostatic balance is a body ready for growth. Without this foundation, higher-level practices (emotional regulation, cognitive focus, social connection) lack the biological substrate they need.
+
+---
+
+### References
+
+1. [Saper & Lowell, Cell (2014)](https://pubmed.ncbi.nlm.nih.gov/24679536/) — hypothalamus and homeostasis
 `,
   },
   {
@@ -259,9 +280,8 @@ A body in homeostatic balance is a body ready for growth. Without this foundatio
     shortDescription:
       'The most fundamental layer of body sensing — awareness of heartbeat, breath, gut signals, and internal organ states.',
     content: `
-## Primary Interoception
 
-**Primary Interoception** is the raw, unfiltered sensing of your body's internal state. It is the connection between the brainstem and the insular cortex — the most ancient pathway of self-awareness.
+**Primary Interoception** is the raw, unfiltered sensing of your body's internal state.¹ It is the connection between the brainstem and the insular cortex — the most ancient pathway of self-awareness.
 
 ### Layers of Interoception
 
@@ -282,6 +302,12 @@ Practices include:
 - Breath observation without modification
 - Gut-feeling awareness scans
 - Temperature gradient sensing
+
+---
+
+### References
+
+1. [Craig, Nat Rev Neurosci (2009)](https://pubmed.ncbi.nlm.nih.gov/12030437/) — interoception and insula
 `,
   },
   {
@@ -291,7 +317,6 @@ Practices include:
     shortDescription:
       'The sum of all chemical reactions in the body that convert food into energy and building materials for cells.',
     content: `
-## Metabolism
 
 **Metabolism** encompasses every chemical reaction occurring in your body — from cellular respiration to protein synthesis. In ONDA Life, metabolism is understood as the energetic foundation of consciousness.
 
@@ -311,6 +336,9 @@ Practices include:
 ### In ONDA Life
 
 Level 1 practices help shift the metabolic balance from chronic catabolic stress toward dynamic equilibrium. When metabolism is balanced, the nervous system has the energy resources needed for higher-order functions like emotional regulation and focused attention.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -320,7 +348,6 @@ Level 1 practices help shift the metabolic balance from chronic catabolic stress
     shortDescription:
       'The central organ of the nervous system — a biological supercomputer processing 11 million bits of sensory information per second.',
     content: `
-## Brain
 
 The **brain** is the master control center of the biocomputer. In ONDA Life, we work with the brain not as an abstract concept but as a layered system with distinct evolutionary origins.
 
@@ -340,6 +367,9 @@ ONDA Life works bottom-up: we stabilize the brainstem before engaging the limbic
 ### Neuroplasticity
 
 The brain rewires itself based on repeated experience. Every ONDA practice is designed to strengthen specific neural pathways through deliberate, structured repetition.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -349,7 +379,6 @@ The brain rewires itself based on repeated experience. Every ONDA practice is de
     shortDescription:
       'The emergent phenomenon of consciousness arising from brain activity — the "software" running on biological "hardware."',
     content: `
-## Mind
 
 In ONDA Life, the **mind** is distinguished from the brain. The brain is hardware; the mind is the software — the patterns of thought, perception, and awareness that emerge from neural activity.
 
@@ -372,6 +401,9 @@ In ONDA Life, the **mind** is distinguished from the brain. The brain is hardwar
 ### The Observer
 
 The ultimate goal of ONDA is to develop the "observer" — the aspect of mind that can witness its own processes without being captured by them.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -381,7 +413,6 @@ The ultimate goal of ONDA is to develop the "observer" — the aspect of mind th
     shortDescription:
       'A deep brain region (the insula) that serves as the primary hub for interoception, self-awareness, and emotional processing.',
     content: `
-## Insular Cortex
 
 The **insular cortex** (or insula) is a region of the cerebral cortex folded deep within the lateral sulcus. It is the brain's primary center for interoception — the sense of the body's internal state.
 
@@ -403,6 +434,9 @@ The **insular cortex** (or insula) is a region of the cerebral cortex folded dee
 ### In ONDA Life
 
 The insula is the key target of Level 1 practices. By training interoceptive accuracy, you strengthen the insula's ability to provide clear, reliable signals about your internal state — the foundation of all self-regulation.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -412,21 +446,20 @@ The insula is the key target of Level 1 practices. By training interoceptive acc
     shortDescription:
       'The longest cranial nerve, connecting the brain to the heart, lungs, and gut — the highway of the parasympathetic nervous system.',
     content: `
-## Vagus Nerve
 
-The **vagus nerve** (cranial nerve X) is the primary channel of the parasympathetic nervous system. It wanders from the brainstem through the neck, thorax, and abdomen — connecting the brain to virtually every major organ.
+The **vagus nerve** (cranial nerve X) is the primary channel of the parasympathetic nervous system.¹ It wanders from the brainstem through the neck, thorax, and abdomen — connecting the brain to virtually every major organ.
 
 ### Key Functions
 
 - **Heart rate regulation** — slowing heart rate for calm states
 - **Breathing control** — coordinating diaphragm and respiratory rhythm
 - **Digestive activation** — stimulating "rest and digest" mode
-- **Inflammation control** — the cholinergic anti-inflammatory pathway
+- **Inflammation control** — the cholinergic anti-inflammatory pathway²
 - **Social engagement** — facial expression, voice tone, listening
 
 ### Vagal Tone
 
-**Vagal tone** is measured through Heart Rate Variability (HRV). Higher vagal tone = greater ability to shift between activation and recovery. ONDA Level 1 practices directly train vagal tone through:
+**Vagal tone** is measured through Heart Rate Variability (HRV).³ Higher vagal tone = greater ability to shift between activation and recovery. ONDA Level 1 practices directly train vagal tone through:
 
 - Diaphragmatic breathing (mechanical stimulation)
 - Extended exhale patterns (parasympathetic activation)
@@ -434,7 +467,7 @@ The **vagus nerve** (cranial nerve X) is the primary channel of the parasympathe
 
 ### Polyvagal Theory
 
-Stephen Porges' polyvagal theory describes three states:
+Stephen Porges' polyvagal theory⁴ describes three states:
 
 | State | Nerve Branch | Experience |
 |-------|-------------|-----------|
@@ -443,6 +476,15 @@ Stephen Porges' polyvagal theory describes three states:
 | **Dorsal vagal** | Unmyelinated vagus | Freeze, shutdown |
 
 ONDA Level 1 aims to establish a stable ventral vagal state — the biological foundation of safety.
+
+---
+
+### References
+
+1. [Berthoud & Neuhuber, Physiol Rev (2000)](https://pubmed.ncbi.nlm.nih.gov/10696521/) — vagal anatomy and function
+2. [Tracey, Nature (2002)](https://pubmed.ncbi.nlm.nih.gov/11967552/) — cholinergic anti-inflammatory pathway
+3. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — HRV as vagal tone marker
+4. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — Polyvagal Theory
 `,
   },
   {
@@ -452,7 +494,6 @@ ONDA Level 1 aims to establish a stable ventral vagal state — the biological f
     shortDescription:
       'The brain\'s sensory relay station — filters and routes incoming sensory information to the cortex.',
     content: `
-## Thalamus
 
 The **thalamus** is a paired structure in the center of the brain that acts as the main relay station for sensory information. Almost all sensory input (except smell) passes through the thalamus before reaching the cerebral cortex.
 
@@ -466,6 +507,9 @@ The **thalamus** is a paired structure in the center of the brain that acts as t
 ### In ONDA Life
 
 Level 1 practices include "thalamic calibration" — training the thalamus to filter out redundant stimuli and reduce the load on the nervous system. When the thalamus is overwhelmed (chronic stress, sensory overload), the system operates in deficit mode.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -475,7 +519,6 @@ Level 1 practices include "thalamic calibration" — training the thalamus to fi
     shortDescription:
       'The most basic form of awareness — pre-reflective sensing of existence before thought or emotion.',
     content: `
-## Proto-consciousness
 
 **Proto-consciousness** is the earliest, most fundamental layer of awareness. It exists before the mind labels experience, before emotions are named, before the sense of "I" solidifies.
 
@@ -489,6 +532,9 @@ Level 1 practices include "thalamic calibration" — training the thalamus to fi
 ### In ONDA Life
 
 The main objective of Part 1 ("I Am") is the activation of proto-consciousness and the creation of an unconditional sense of safety. This is the "biological zero" — the foundation from which all higher consciousness emerges.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -498,7 +544,6 @@ The main objective of Part 1 ("I Am") is the activation of proto-consciousness a
     shortDescription:
       'The natural oscillating patterns of the body — heartbeat, breath, gut motility, circadian cycles.',
     content: `
-## Physiological Rhythms
 
 **Physiological rhythms** are the body's built-in oscillating patterns that govern life at the cellular and systemic level. They operate largely outside conscious awareness.
 
@@ -515,6 +560,9 @@ The main objective of Part 1 ("I Am") is the activation of proto-consciousness a
 ### In ONDA Life
 
 Part 1 activates proto-consciousness "through contact with physiological rhythms." Practices bring attention to breath, heartbeat, and gut sensations — aligning awareness with the body's natural tempo rather than overriding it.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -524,9 +572,8 @@ Part 1 activates proto-consciousness "through contact with physiological rhythms
     shortDescription:
       'The brain\'s master regulator of homeostasis — temperature, hunger, thirst, sleep, and stress response.',
     content: `
-## Hypothalamus
 
-The **hypothalamus** is a small region at the base of the brain that acts as the body's control center for homeostasis. It constantly monitors internal state and coordinates responses to maintain equilibrium.
+The **hypothalamus** is a small region at the base of the brain that acts as the body's control center for homeostasis.¹ It constantly monitors internal state and coordinates responses to maintain equilibrium.
 
 ### Key Functions
 
@@ -539,6 +586,12 @@ The **hypothalamus** is a small region at the base of the brain that acts as the
 ### In ONDA Life
 
 Level 1 "Homeostatic Alignment" works directly with the hypothalamus to establish internal equilibrium. When the hypothalamus is chronically activated (stress), the entire system operates in survival mode.
+
+---
+
+### References
+
+1. [Saper & Lowell, Cell (2014)](https://pubmed.ncbi.nlm.nih.gov/24679536/) — hypothalamus and homeostasis
 `,
   },
   {
@@ -548,7 +601,6 @@ Level 1 "Homeostatic Alignment" works directly with the hypothalamus to establis
     shortDescription:
       'The study of links between mind, nervous system, and immune function — how mental states affect immunity.',
     content: `
-## Psychoneuroimmunology
 
 **Psychoneuroimmunology** (PNI) is the field studying the bidirectional communication between the nervous system, endocrine system, and immune system. Mental states directly influence immune function at the cellular level.
 
@@ -562,6 +614,9 @@ Level 1 "Homeostatic Alignment" works directly with the hypothalamus to establis
 ### In ONDA Life
 
 Level 1 "Sensory Filtering & PNI" leverages neuroplasticity to strengthen the link between mental states and immune responses. Calming the nervous system through interoceptive practices has measurable effects on immune function.
+
+### Scientific Basis
+Built on: [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -571,20 +626,26 @@ Level 1 "Sensory Filtering & PNI" leverages neuroplasticity to strengthen the li
     shortDescription:
       'The primary respiratory muscle — a dome-shaped sheet separating chest and abdomen, central to breath and vagal tone.',
     content: `
-## Diaphragm
 
-The **diaphragm** is the main muscle of respiration — a dome-shaped sheet that separates the thoracic cavity from the abdomen. It contracts and relaxes with each breath, and its health is intimately linked to the vagus nerve and parasympathetic system.
+The **diaphragm** is the main muscle of respiration — a dome-shaped sheet that separates the thoracic cavity from the abdomen.¹ It contracts and relaxes with each breath, and its health is intimately linked to the vagus nerve and parasympathetic system.
 
 ### Functions
 
 - **Breathing** — primary driver of inhalation
 - **Pressure regulation** — creates pressure gradient for venous return
 - **Core stability** — part of the inner unit
-- **Vagal stimulation** — mechanical massage of the vagus nerve with each breath
+- **Vagal stimulation** — mechanical massage of the vagus nerve with each breath²
 
 ### In ONDA Life
 
 "Diaphragmatic Release" in Part 1 aims to release spasms in this muscle. Chronic stress and shallow breathing can cause diaphragmatic holding patterns that restrict the vagus nerve and prevent deep parasympathetic recovery.
+
+---
+
+### References
+
+1. [Lehrer et al., Appl Psychophysiol Biofeedback (2000)](https://pubmed.ncbi.nlm.nih.gov/19246382/) — diaphragmatic breathing and HRV
+2. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — vagal tone and respiration
 `,
   },
   {
@@ -594,7 +655,6 @@ The **diaphragm** is the main muscle of respiration — a dome-shaped sheet that
     shortDescription:
       'The "rest and digest" branch of the autonomic nervous system — promotes recovery, digestion, and calm.',
     content: `
-## Parasympathetic Nervous System
 
 The **parasympathetic nervous system** (PNS) is one of two branches of the autonomic nervous system. It promotes "rest and digest" — slowing heart rate, stimulating digestion, and enabling recovery.
 
@@ -609,6 +669,9 @@ The **parasympathetic nervous system** (PNS) is one of two branches of the auton
 ### In ONDA Life
 
 Level 1 practices aim to activate the parasympathetic system through diaphragmatic breathing, extended exhales, and interoceptive awareness. The vagus nerve is the primary channel of parasympathetic influence.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/19463818/) (Thayer & Lane).
 `,
   },
   {
@@ -618,7 +681,6 @@ Level 1 practices aim to activate the parasympathetic system through diaphragmat
     shortDescription:
       'The "fight or flight" branch of the autonomic nervous system — mobilizes the body for action and threat response.',
     content: `
-## Sympathetic Nervous System
 
 The **sympathetic nervous system** (SNS) is the "fight or flight" branch of the autonomic nervous system. It mobilizes the body for action — increasing heart rate, redirecting blood flow, and releasing stress hormones.
 
@@ -633,6 +695,9 @@ The **sympathetic nervous system** (SNS) is the "fight or flight" branch of the 
 ### In ONDA Life
 
 Chronic sympathetic activation (stress) keeps the body in deficit mode. Level 1 practices help restore balance by activating the parasympathetic system, allowing the sympathetic branch to return to baseline when not needed.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -642,7 +707,6 @@ Chronic sympathetic activation (stress) keeps the body in deficit mode. Level 1 
     shortDescription:
       'The insular cortex — the brain\'s primary hub for interoception, self-awareness, and emotional feeling.',
     content: `
-## Insula
 
 The **insula** (or insular cortex) is a region of the cerebral cortex folded deep within the lateral sulcus. It is often called the "island" of the brain and serves as the primary hub for interoception and self-awareness.
 
@@ -656,6 +720,9 @@ The **insula** (or insular cortex) is a region of the cerebral cortex folded dee
 ### Relation to Insular Cortex
 
 The terms "insula" and "insular cortex" refer to the same structure. The insula is the primary target of Level 1 interoceptive practices.
+
+### Scientific Basis
+Built on: [Interoception & insula](https://pubmed.ncbi.nlm.nih.gov/12030437/) (Craig); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -665,9 +732,8 @@ The terms "insula" and "insular cortex" refer to the same structure. The insula 
     shortDescription:
       'The primary stress hormone — released by the adrenal glands, elevated in chronic stress.',
     content: `
-## Cortisol
 
-**Cortisol** is the main glucocorticoid hormone produced by the adrenal glands. It is essential for life but becomes problematic when chronically elevated.
+**Cortisol** is the main glucocorticoid hormone produced by the adrenal glands.¹ It is essential for life but becomes problematic when chronically elevated.
 
 ### Normal Functions
 
@@ -687,6 +753,12 @@ The terms "insula" and "insular cortex" refer to the same structure. The insula 
 ### In ONDA Life
 
 One marker of Part 1 progress is "reduced levels of basal cortisol." Level 1 practices activate the parasympathetic system, which downregulates the HPA axis and allows cortisol to return to healthy baseline levels.
+
+---
+
+### References
+
+1. [Sapolsky, Arch Intern Med (2004)](https://pubmed.ncbi.nlm.nih.gov/15557597/) — stress and cortisol
 `,
   },
   {
@@ -696,7 +768,6 @@ One marker of Part 1 progress is "reduced levels of basal cortisol." Level 1 pra
     shortDescription:
       'The wave-like muscular contractions that move food through the digestive tract.',
     content: `
-## Peristalsis
 
 **Peristalsis** is the coordinated, wave-like contraction of smooth muscle that moves contents through the digestive tract — from esophagus to intestines. It operates largely automatically, regulated by the enteric nervous system and vagal tone.
 
@@ -707,6 +778,9 @@ Under sympathetic activation (stress), peristalsis slows or stops — the body p
 ### In ONDA Life
 
 "Restoration of rhythmic peristalsis" is a biological marker of Part 1 completion. When the parasympathetic system is activated and cortisol drops, the gut can return to its natural rhythmic movement — a sign that the body perceives safety.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/19463818/) (Thayer & Lane).
 `,
   },
   {
@@ -716,9 +790,8 @@ Under sympathetic activation (stress), peristalsis slows or stops — the body p
     shortDescription:
       'The variation in time between heartbeats — a key marker of nervous system flexibility and recovery capacity.',
     content: `
-## Heart Rate Variability
 
-**Heart Rate Variability** (HRV) is the variation in the time interval between successive heartbeats. Contrary to intuition, a healthy heart does not beat like a metronome — it constantly adjusts its rhythm in response to breathing, stress, and environmental demands.
+**Heart Rate Variability** (HRV) is the variation in the time interval between successive heartbeats.¹ Contrary to intuition, a healthy heart does not beat like a metronome — it constantly adjusts its rhythm in response to breathing, stress, and environmental demands.
 
 ### What It Measures
 
@@ -729,7 +802,14 @@ Under sympathetic activation (stress), peristalsis slows or stops — the body p
 
 ### In ONDA Life
 
-Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") progress. Part 1 practices activate the parasympathetic system, raising baseline HRV. Part 2 "Rhythmic Coherence" further increases HRV by synchronizing axial movements with the respiratory cycle.
+Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") progress.² Part 1 practices activate the parasympathetic system, raising baseline HRV. Part 2 "Rhythmic Coherence" further increases HRV by synchronizing axial movements with the respiratory cycle.
+
+---
+
+### References
+
+1. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — HRV as vagal tone marker
+2. [Lehrer et al., Appl Psychophysiol Biofeedback (2000)](https://pubmed.ncbi.nlm.nih.gov/19246382/) — resonance breathing and HRV
 `,
   },
   {
@@ -739,7 +819,6 @@ Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") pr
     shortDescription:
       'Spinal cord circuits that generate rhythmic movement patterns — the neural basis of "autopilot" locomotion.',
     content: `
-## Central Pattern Generators
 
 **Central Pattern Generators** (CPGs) are neural circuits in the spinal cord that produce rhythmic, coordinated movement patterns without continuous input from the brain. They underlie walking, swimming, breathing, and other cyclical behaviors.
 
@@ -750,6 +829,9 @@ CPGs are "half-center" networks — mutually inhibiting neuron groups that alter
 ### In ONDA Life
 
 Part 2 ("I Move") activates CPGs to create natural, effortless locomotion. Movement becomes "as effortless as swimming" — the body's built-in motor programs take over, reducing conscious effort and enabling fluid navigation through space.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -759,7 +841,6 @@ Part 2 ("I Move") activates CPGs to create natural, effortless locomotion. Movem
     shortDescription:
       'The reflex that stabilizes gaze during head movement — keeps vision clear while moving.',
     content: `
-## Vestibulo-Ocular Reflex
 
 The **Vestibulo-Ocular Reflex** (VOR) is a reflex that stabilizes visual images on the retina during head movement. When the head turns, the eyes automatically move in the opposite direction to maintain a stable view of the world.
 
@@ -773,6 +854,9 @@ The **Vestibulo-Ocular Reflex** (VOR) is a reflex that stabilizes visual images 
 ### In ONDA Life
 
 Part 2 trains VOR as part of "stabilizing gaze while the head is in motion." This is the foundation for visual navigation and the feeling of stability within the flow — essential for moving through space with confidence.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -782,7 +866,6 @@ Part 2 trains VOR as part of "stabilizing gaze while the head is in motion." Thi
     shortDescription:
       'The inner ear balance system — the body\'s primary gyroscope for orientation and spatial awareness.',
     content: `
-## Vestibular System
 
 The **vestibular system** is the sensory system in the inner ear that provides the sense of balance and spatial orientation. It detects head position, movement, and acceleration.
 
@@ -795,6 +878,9 @@ The **vestibular system** is the sensory system in the inner ear that provides t
 ### In ONDA Life
 
 Part 2 targets the vestibular system as "the primary gyroscope for orientation within the flow." A well-calibrated vestibular system enables intuitive navigation — you sense where you are in space without conscious calculation.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -804,7 +890,6 @@ Part 2 targets the vestibular system as "the primary gyroscope for orientation w
     shortDescription:
       'The "little brain" — coordinates movement, balance, and motor learning; modulates smoothness.',
     content: `
-## Cerebellum
 
 The **cerebellum** ("little brain") is a structure at the back of the brain that coordinates voluntary movement, balance, and motor learning. It receives input from the spinal cord, vestibular system, and cortex, and fine-tunes motor output.
 
@@ -818,6 +903,9 @@ The **cerebellum** ("little brain") is a structure at the back of the brain that
 ### In ONDA Life
 
 Part 2 works with "spinal neural circuits and cerebellum" as "centers for rhythmic movement; modulating smoothness and eliminating noise." The cerebellum learns to produce fluid, efficient movement with minimal effort.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -827,7 +915,6 @@ Part 2 works with "spinal neural circuits and cerebellum" as "centers for rhythm
     shortDescription:
       'The connective tissue web that wraps muscles and organs — transmits force through the body.',
     content: `
-## Fascia
 
 **Fascia** is the connective tissue that wraps muscles, organs, bones, and nerves into a continuous web. It transmits mechanical force throughout the body and is essential for coordinated movement.
 
@@ -841,6 +928,9 @@ Part 2 works with "spinal neural circuits and cerebellum" as "centers for rhythm
 ### In ONDA Life
 
 Part 2 "Intermuscular Coordination" trains "transferring force through fascial chains, allowing the whole body to move as a single vector." Improved fascial gliding and synovial joint lubrication are markers of Part 2 progress.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -850,7 +940,6 @@ Part 2 "Intermuscular Coordination" trains "transferring force through fascial c
     shortDescription:
       'The study of how the nervous system functions — from single neurons to brain-wide circuits.',
     content: `
-## Neurophysiology
 
 **Neurophysiology** is the branch of physiology that studies the function of the nervous system. It examines how neurons, neural circuits, and brain regions generate behavior, perception, and consciousness.
 
@@ -864,6 +953,9 @@ Part 2 "Intermuscular Coordination" trains "transferring force through fascial c
 ### In ONDA Life
 
 ONDA practices are grounded in neurophysiology. Part 3 works with "the deepest, automated processes" — brainstem, reticular formation, sensorimotor cortex — from a neurophysiological perspective. Each protocol targets specific neural structures with measurable outcomes.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -873,7 +965,6 @@ ONDA practices are grounded in neurophysiology. Part 3 works with "the deepest, 
     shortDescription:
       'A network in the brainstem that regulates arousal, consciousness, and motor control.',
     content: `
-## Reticular Formation
 
 The **reticular formation** is a diffuse network of neurons in the brainstem that extends from the medulla to the midbrain. It plays a central role in regulating arousal, sleep-wake cycles, attention, and motor control.
 
@@ -887,6 +978,9 @@ The **reticular formation** is a diffuse network of neurons in the brainstem tha
 ### In ONDA Life
 
 Part 3 aims to "tune the brainstem and reticular formation." A well-regulated reticular formation supports the rapid switching between "relaxation/fluidity" and "tone/stability" — essential for adaptive movement and gravity mastery.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -896,7 +990,6 @@ Part 3 aims to "tune the brainstem and reticular formation." A well-regulated re
     shortDescription:
       'The brain region that integrates sensation and movement — the primary motor and somatosensory cortex.',
     content: `
-## Sensorimotor Cortex
 
 The **sensorimotor cortex** refers to the brain regions that integrate sensory input with motor output — primarily the primary motor cortex (M1) and primary somatosensory cortex (S1), which lie adjacent to each other in the frontal and parietal lobes.
 
@@ -910,6 +1003,9 @@ The **sensorimotor cortex** refers to the brain regions that integrate sensory i
 ### In ONDA Life
 
 Part 3 activates "the primary sensorimotor cortex" as part of gravity mastery. Training this region improves the brain-muscle-brain feedback loop — the foundation for efficient movement and the elimination of parasitic tension.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -919,7 +1015,6 @@ Part 3 activates "the primary sensorimotor cortex" as part of gravity mastery. T
     shortDescription:
       'The ability to move through space — walking, running, swimming — driven by spinal pattern generators.',
     content: `
-## Locomotion
 
 **Locomotion** is the act of moving from one place to another — walking, running, swimming, crawling. It is one of the most fundamental motor behaviors, largely controlled by Central Pattern Generators (CPGs) in the spinal cord.
 
@@ -933,6 +1028,9 @@ Part 3 activates "the primary sensorimotor cortex" as part of gravity mastery. T
 ### In ONDA Life
 
 Parts 2 and 3 work with "spinal pattern generators for natural locomotion." The goal is to transform movement from effortful "pushing" to effortless "flow" — the body navigating space using inertia, rhythm, and the natural curves of the spine.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -942,7 +1040,6 @@ Parts 2 and 3 work with "spinal pattern generators for natural locomotion." The 
     shortDescription:
       'Chronic muscular tension that holds repressed emotions — a concept from Wilhelm Reich, widely used in body-oriented therapy.',
     content: `
-## Body Armor
 
 **Body armor** (German: *Körperpanzer*; Russian: *телесный панцирь*) is a concept introduced by Wilhelm Reich. It refers to chronic muscular tension and rigidity that develops as a defense against repressed emotions, trauma, or unacceptable impulses.
 
@@ -962,6 +1059,9 @@ The concept is central to Western body-oriented psychotherapy (Bioenergetics, So
 ### In ONDA Life
 
 Part 3 ("I Adapt") targets "reduction of muscular tension (the \u2018body armor\u2019)." As you master gravity and develop interoceptive efficiency, chronic holding patterns release. The body transitions from defensive rigidity to responsive fluidity.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -971,9 +1071,8 @@ Part 3 ("I Adapt") targets "reduction of muscular tension (the \u2018body armor\
     shortDescription:
       'Stephen Porges\' theory of the vagus nerve — three neural states: ventral vagal (safety), sympathetic (mobilization), dorsal vagal (shutdown).',
     content: `
-## Polyvagal Theory
 
-**Polyvagal Theory**, developed by Stephen Porges, describes how the vagus nerve has evolved in layers, each supporting a different survival strategy. The nervous system doesn't simply switch between "on" and "off" — it navigates between distinct physiological states.
+**Polyvagal Theory**, developed by Stephen Porges,¹ describes how the vagus nerve has evolved in layers, each supporting a different survival strategy. The nervous system doesn't simply switch between "on" and "off" — it navigates between distinct physiological states.
 
 ### Three States
 
@@ -990,6 +1089,12 @@ We can "drift" between states. The goal is not to eliminate sympathetic activati
 ### In ONDA Life
 
 Part 4 trains the nervous system to transition smoothly between Ventral Vagus (safety, social engagement) and Sympathetic (energy for maneuver). Sympathetic tone becomes fuel for precision rather than a trigger for overwhelm.
+
+---
+
+### References
+
+1. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — Polyvagal Theory
 `,
   },
   {
@@ -999,9 +1104,8 @@ Part 4 trains the nervous system to transition smoothly between Ventral Vagus (s
     shortDescription:
       'The brain\'s unconscious detection of safety or threat — happens before conscious perception.',
     content: `
-## Neuroception
 
-**Neuroception** is a term coined by Stephen Porges to describe the nervous system's automatic, unconscious evaluation of the environment for safety or threat. It occurs before we consciously perceive or think — the body "reads" the situation and responds.
+**Neuroception** is a term coined by Stephen Porges¹ to describe the nervous system's automatic, unconscious evaluation of the environment for safety or threat. It occurs before we consciously perceive or think — the body "reads" the situation and responds.
 
 ### How It Works
 
@@ -1017,6 +1121,36 @@ Reticular Formation → Thalamus → Motor Cortex. This pathway allows the brain
 ### In ONDA Life
 
 Part 4 trains "the chain: Reticular Formation → Thalamus → Motor Cortex" so the brain can read environmental changes (neuroception) and respond with precision. You react to flow, not to thought.
+
+---
+
+### References
+
+1. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — neuroception and Polyvagal Theory
+`,
+  },
+  {
+    slug: 'neuroplasticity',
+    title: 'Neuroplasticity',
+    category: 'Neuroscience',
+    shortDescription:
+      'The brain\'s ability to reorganize itself by forming new neural connections throughout life.',
+    content: `
+
+**Neuroplasticity** is the brain's capacity to change its structure and function in response to experience, learning, and practice. Contrary to the old belief that the adult brain is fixed, research shows that neural pathways can be rewired at any age.
+
+### Key Mechanisms
+
+- **Synaptic plasticity** — strengthening or weakening connections between neurons
+- **Neurogenesis** — birth of new neurons (in hippocampus and other regions)
+- **Cortical remapping** — brain regions can take on new functions after injury or training
+
+### In ONDA Life
+
+ONDA practices leverage neuroplasticity at every level. Level 1 interoceptive calibration rewires the brainstem-insula connection. Level 3 cognitive protocols strengthen prefrontal circuits. The entire system is designed to systematically update your "firmware" through repeated, structured practice.
+
+### Scientific Basis
+Built on: [Neuroplasticity research](https://pubmed.ncbi.nlm.nih.gov/17329479/) (Doidge et al.); [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen).
 `,
   },
   {
@@ -1026,7 +1160,6 @@ Part 4 trains "the chain: Reticular Formation → Thalamus → Motor Cortex" so 
     shortDescription:
       'Hypothalamus-Pituitary-Adrenal axis — the body\'s central stress response system that releases cortisol.',
     content: `
-## HPA Axis
 
 The **HPA axis** (Hypothalamus-Pituitary-Adrenal) is the body's primary stress response system. When activated, it triggers the release of cortisol and other stress hormones, mobilizing the body for challenge.
 
@@ -1043,6 +1176,9 @@ Chronically elevated cortisol is damaging. But in acute, controlled doses, corti
 ### In ONDA Life
 
 Part 4 "Neuroendocrinology" directly impacts the HPA axis. We teach the body to control cortisol and adrenaline release, turning them "from poison into fuel for precision."
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -1052,7 +1188,6 @@ Part 4 "Neuroendocrinology" directly impacts the HPA axis. We teach the body to 
     shortDescription:
       'The sense of body position and movement in space — "where am I" and "how am I moving."',
     content: `
-## Proprioception
 
 **Proprioception** is the sense of your body's position, movement, and orientation in space. Unlike interoception (internal state), proprioception tells you where your limbs are, how they're moving, and your relationship to gravity — without looking.
 
@@ -1066,6 +1201,9 @@ Part 4 "Neuroendocrinology" directly impacts the HPA axis. We teach the body to 
 ### In ONDA Life
 
 Part 4 develops proprioception as "a sense of trajectory and the boundaries of one's \u2018safety bubble.\u2019" Combined with vestibular precision and diffuse perception, it enables maneuverability — feeling the trajectory and flowing through it.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -1075,7 +1213,6 @@ Part 4 develops proprioception as "a sense of trajectory and the boundaries of o
     shortDescription:
       'The body\'s drainage network — clears metabolic waste and supports immune function; pumped by muscle movement.',
     content: `
-## Lymphatic System
 
 The **lymphatic system** is a network of vessels and nodes that drains fluid, metabolic waste, and cellular debris from tissues. Unlike the circulatory system, it has no central pump — it relies on muscle contraction and movement to circulate.
 
@@ -1093,6 +1230,9 @@ Muscle tone and movement act as a natural pump for lymph. Sedentary states and c
 ### In ONDA Life
 
 Part 4 "Lymphology" uses muscle tone as a natural pump to clear the body of stress metabolic byproducts, ensuring physical freshness even under high-load conditions.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
   },
   {
@@ -1102,7 +1242,6 @@ Part 4 "Lymphology" uses muscle tone as a natural pump to clear the body of stre
     shortDescription:
       'The brain region that sends movement commands to muscles — primary motor cortex (M1) and premotor areas.',
     content: `
-## Motor Cortex
 
 The **motor cortex** is the region of the cerebral cortex responsible for planning, controlling, and executing voluntary movements. The primary motor cortex (M1) sends direct commands to muscles; premotor and supplementary motor areas plan and sequence movements.
 
@@ -1115,6 +1254,9 @@ The **motor cortex** is the region of the cerebral cortex responsible for planni
 ### In ONDA Life
 
 Part 4 trains the chain "Reticular Formation → Thalamus → Motor Cortex" — enabling reactions "before the thought." The motor cortex executes maneuverability; when fed by rapid neuroception, it produces precise, adaptive responses without slow cognitive filtering.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1124,7 +1266,6 @@ Part 4 trains the chain "Reticular Formation → Thalamus → Motor Cortex" — 
     shortDescription:
       'The study of the nervous system at all levels — from molecules and cells to circuits and behavior.',
     content: `
-## Neurobiology
 
 **Neurobiology** is the scientific study of the nervous system — its structure, function, development, and role in behavior. It spans levels from single neurons to brain-wide networks.
 
@@ -1139,6 +1280,9 @@ Part 4 trains the chain "Reticular Formation → Thalamus → Motor Cortex" — 
 ### In ONDA Life
 
 Part 4 "Neurobiology and Neuroception" trains the chain Reticular Formation → Thalamus → Motor Cortex. Understanding neurobiology allows us to target specific circuits — turning scientific knowledge into precise, measurable practices.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1148,7 +1292,6 @@ Part 4 "Neurobiology and Neuroception" trains the chain Reticular Formation → 
     shortDescription:
       'The brain networks involved in thinking, attention, memory, and decision-making — slower than sensory-motor processing.',
     content: `
-## Cognitive System
 
 The **cognitive system** refers to the brain networks that support higher-order mental processes: attention, memory, reasoning, planning, and conscious decision-making. These processes are relatively slow compared to sensory-motor reflexes.
 
@@ -1166,6 +1309,9 @@ Cognitive processing operates on the order of hundreds of milliseconds. Sensory-
 ### In ONDA Life
 
 Part 4 bypasses "slow cognitive filters" for maneuverability. Emotional navigation becomes a sensory process, not a cognitive calculation. The cognitive system remains available for reflection — but doesn't bottleneck action.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1175,7 +1321,6 @@ Part 4 bypasses "slow cognitive filters" for maneuverability. Emotional navigati
     shortDescription:
       'The study of interactions between the nervous system and endocrine system — how the brain regulates hormones.',
     content: `
-## Neuroendocrinology
 
 **Neuroendocrinology** is the study of how the nervous system and endocrine (hormonal) system interact. The brain regulates hormone release; hormones in turn influence brain function and behavior.
 
@@ -1188,6 +1333,9 @@ Part 4 bypasses "slow cognitive filters" for maneuverability. Emotional navigati
 ### In ONDA Life
 
 Part 4 "Neuroendocrinology" directly impacts the HPA axis. We teach the body to control cortisol and adrenaline release — turning stress hormones from "poison" (chronic elevation) into "fuel for precision" (acute, regulated mobilization).
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1197,7 +1345,6 @@ Part 4 "Neuroendocrinology" directly impacts the HPA axis. We teach the body to 
     shortDescription:
       'The "master gland" at the base of the brain — regulates growth, stress response, and other hormones.',
     content: `
-## Pituitary Gland
 
 The **pituitary gland** is a small gland at the base of the brain, often called the "master gland" because it controls many other endocrine glands. It receives signals from the hypothalamus and releases hormones into the bloodstream.
 
@@ -1212,6 +1359,9 @@ The **pituitary gland** is a small gland at the base of the brain, often called 
 ### In the HPA Axis
 
 Hypothalamus → CRH → Pituitary → ACTH → Adrenal → Cortisol. The pituitary is the middle link in the stress response chain.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1221,7 +1371,6 @@ Hypothalamus → CRH → Pituitary → ACTH → Adrenal → Cortisol. The pituit
     shortDescription:
       'Small glands above the kidneys that release cortisol and adrenaline — the stress hormones.',
     content: `
-## Adrenal Glands
 
 The **adrenal glands** are two small glands located above each kidney. Each has two parts: the cortex (outer) and medulla (inner), which produce different hormones.
 
@@ -1239,6 +1388,9 @@ The **adrenal glands** are two small glands located above each kidney. Each has 
 ### In ONDA Life
 
 Part 4 teaches the body to control adrenal output. Instead of chronic cortisol and adrenaline release (stress), we develop the ability to mobilize acutely when needed — and return to baseline quickly.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1248,7 +1400,6 @@ Part 4 teaches the body to control adrenal output. Instead of chronic cortisol a
     shortDescription:
       'Epinephrine — the hormone that mobilizes the body for action; released by the adrenal medulla.',
     content: `
-## Adrenaline
 
 **Adrenaline** (epinephrine) is a hormone and neurotransmitter released by the adrenal medulla in response to stress or excitement. It prepares the body for rapid action.
 
@@ -1263,6 +1414,9 @@ Part 4 teaches the body to control adrenal output. Instead of chronic cortisol a
 ### Poison or Fuel?
 
 Chronically elevated adrenaline contributes to anxiety and burnout. But in acute, controlled doses, it sharpens focus and provides energy for precision. Part 4 aims to use adrenaline as "fuel for precision" rather than a trigger for panic.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1272,7 +1426,6 @@ Chronically elevated adrenaline contributes to anxiety and burnout. But in acute
     shortDescription:
       'The study of the lymphatic system — drainage, immune function, and the role of movement in lymph flow.',
     content: `
-## Lymphology
 
 **Lymphology** is the branch of medicine and physiology that studies the lymphatic system — its structure, function, and disorders. It encompasses lymph flow, immune function, and the role of muscle movement in drainage.
 
@@ -1286,6 +1439,9 @@ Chronically elevated adrenaline contributes to anxiety and burnout. But in acute
 ### In ONDA Life
 
 Part 4 "Lymphology" uses muscle tone as a natural pump to clear the body of stress metabolic byproducts. Rhythmic movement and optimal muscle tone ensure lymphatic flow — physical freshness even under high-load conditions.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1295,7 +1451,6 @@ Part 4 "Lymphology" uses muscle tone as a natural pump to clear the body of stre
     shortDescription:
       'Dehydroepiandrosterone — the hormone of vitality and longevity; precursor to sex hormones.',
     content: `
-## DHEA
 
 **DHEA** (dehydroepiandrosterone) is a hormone produced primarily by the adrenal glands. It is a precursor to testosterone and estrogen and is often called the "hormone of vitality" or "anti-aging hormone."
 
@@ -1309,6 +1464,9 @@ Part 4 "Lymphology" uses muscle tone as a natural pump to clear the body of stre
 ### Cortisol/DHEA Ratio
 
 Chronic stress shifts adrenal output from DHEA toward cortisol. Part 5 aims to reverse this — the adrenals switch from "emergency cortisol release" to DHEA production, supporting the "winner's state" of calm dominance.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1318,7 +1476,6 @@ Chronic stress shifts adrenal output from DHEA toward cortisol. Part 5 aims to r
     shortDescription:
       'The primary male sex hormone — also in women; supports dominance, confidence, and metabolic vigor.',
     content: `
-## Testosterone
 
 **Testosterone** is a steroid hormone produced in the testes (men), ovaries (women), and adrenal glands. It supports muscle mass, bone density, libido, and — at moderate levels — confidence and assertiveness without aggression.
 
@@ -1332,6 +1489,9 @@ Chronic stress shifts adrenal output from DHEA toward cortisol. Part 5 aims to r
 ### In ONDA Life
 
 Part 5 engages the Pituitary-Gonadal axis for "moderate testosterone stimulation" — the "winner's state." The feedback loop: Hypothalamus activation → Increased testosterone → Decreased cortisol = calm dominance without aggression.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1341,7 +1501,6 @@ Part 5 engages the Pituitary-Gonadal axis for "moderate testosterone stimulation
     shortDescription:
       'The gland behind the breastbone that trains T-cells — links immune function with social safety.',
     content: `
-## Thymus
 
 The **thymus** is a gland located behind the breastbone that plays a key role in immune function. It is where T-cells mature and learn to distinguish self from non-self. The thymus is largest in childhood and gradually shrinks with age.
 
@@ -1354,6 +1513,9 @@ The **thymus** is a gland located behind the breastbone that plays a key role in
 ### In ONDA Life
 
 Part 5 aims to "restore the link between the sense of social safety and a powerful immune response" through the thymus. When the nervous system perceives safety (ventral vagal state), immune function can operate optimally.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1363,7 +1525,6 @@ Part 5 aims to "restore the link between the sense of social safety and a powerf
     shortDescription:
       'Deep brain structures that control movement, posture, and habit formation — "unshakeable" stability.',
     content: `
-## Basal Ganglia
 
 The **basal ganglia** are a group of nuclei deep in the brain that control voluntary movement, posture, habit formation, and reward-based learning. They modulate the motor cortex and support smooth, stable action.
 
@@ -1377,6 +1538,9 @@ The **basal ganglia** are a group of nuclei deep in the brain that control volun
 ### In ONDA Life
 
 Part 5 engages the basal ganglia for "formation of stable, \u2018unshakeable\u2019 postures." Combined with deep postural muscles, this creates an internal framework of strength — the body as territory, occupied with calm dominance.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1386,7 +1550,6 @@ Part 5 engages the basal ganglia for "formation of stable, \u2018unshakeable\u20
     shortDescription:
       'The system of glands that release hormones into the bloodstream — regulates metabolism, growth, stress, and reproduction.',
     content: `
-## Endocrine System
 
 The **endocrine system** is a network of glands that produce and secrete hormones directly into the bloodstream. Hormones regulate virtually every bodily function: metabolism, growth, stress response, reproduction, mood, and energy.
 
@@ -1403,6 +1566,9 @@ The **endocrine system** is a network of glands that produce and secrete hormone
 ### In ONDA Life
 
 Part 5 "Endocrine System (Dominance Hormonal Circuit)" reconfigures the body through hormonal balance: adrenals shift from cortisol to DHEA, pituitary-gonadal axis supports the "winner's state," thymus links safety with immune strength.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1412,7 +1578,6 @@ Part 5 "Endocrine System (Dominance Hormonal Circuit)" reconfigures the body thr
     shortDescription:
       'The reproductive glands — testes and ovaries — produce sex hormones (testosterone, estrogen).',
     content: `
-## Gonads
 
 The **gonads** are the primary reproductive glands: the **testes** in men and **ovaries** in women. They produce sex hormones (testosterone, estrogen, progesterone) and gametes (sperm, eggs).
 
@@ -1425,6 +1590,9 @@ The **gonads** are the primary reproductive glands: the **testes** in men and **
 ### Pituitary-Gonadal Axis
 
 The hypothalamus and pituitary regulate gonadal function through gonadotropins (LH, FSH). Part 5 engages this axis for "moderate testosterone stimulation" — the hormonal basis of calm dominance.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1434,7 +1602,6 @@ The hypothalamus and pituitary regulate gonadal function through gonadotropins (
     shortDescription:
       'The involuntary nervous system — regulates heart, breath, digestion, and stress response.',
     content: `
-## Autonomic Nervous System
 
 The **autonomic nervous system** (ANS) controls involuntary bodily functions: heart rate, breathing, digestion, blood pressure, temperature regulation. It operates largely outside conscious control.
 
@@ -1452,6 +1619,9 @@ Stephen Porges' Polyvagal Theory further divides the parasympathetic into ventra
 ### In ONDA Life
 
 Part 5 activates the Ventral Vagus for "calm alertness" — the heart beats powerfully and steadily, the brain is ready for effective dominance rather than panic.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1461,7 +1631,6 @@ Part 5 activates the Ventral Vagus for "calm alertness" — the heart beats powe
     shortDescription:
       'The myelinated vagal branch — supports social engagement, safety, and calm alertness.',
     content: `
-## Ventral Vagus
 
 The **ventral vagal** (or ventral vagus) is the myelinated branch of the vagus nerve that supports the "social engagement" state. In Polyvagal Theory, it is the evolutionarily newest branch — enabling connection, safety, and calm presence.
 
@@ -1475,6 +1644,9 @@ The **ventral vagal** (or ventral vagus) is the myelinated branch of the vagus n
 ### In ONDA Life
 
 Part 5 "Smart Parasympathetic" activates the Ventral Vagus. This is a state of "calm alertness" — ready for effective dominance rather than panic. The heart beats powerfully and steadily; the brain is primed for presence.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1484,7 +1656,6 @@ Part 5 "Smart Parasympathetic" activates the Ventral Vagus. This is a state of "
     shortDescription:
       'The study of quantum effects in biological systems — coherence, biophotonics, and cellular communication.',
     content: `
-## Quantum Biology
 
 **Quantum biology** explores how quantum mechanical phenomena (coherence, entanglement, tunneling) may operate in living systems. It bridges physics and biology, suggesting that cells and organisms may exploit quantum effects for efficiency and coordination.
 
@@ -1497,6 +1668,9 @@ Part 5 "Smart Parasympathetic" activates the Ventral Vagus. This is a state of "
 ### In ONDA Life
 
 Part 5 "Quantum Biology (Coherence)" works on the "density of presence." From a biophotonics perspective, this is high coherence in the electromagnetic field of cells. Your presence becomes palpable to others on a physical level.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1506,7 +1680,6 @@ Part 5 "Quantum Biology (Coherence)" works on the "density of presence." From a 
     shortDescription:
       'Synchronized, ordered oscillation — in physics, biology, and the subjective sense of "density of presence."',
     content: `
-## Coherence
 
 **Coherence** describes a state of synchronized, ordered oscillation — as opposed to random, chaotic fluctuation. In physics, coherent waves align in phase; in biology, coherent systems exhibit coordinated activity.
 
@@ -1519,6 +1692,9 @@ Part 5 "Quantum Biology (Coherence)" works on the "density of presence." From a 
 ### In ONDA Life
 
 Part 5 works on "the density of presence" through "high coherence in the electromagnetic field of the cells." Coherent presence is palpable — others register your stability before you speak.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1528,7 +1704,6 @@ Part 5 works on "the density of presence" through "high coherence in the electro
     shortDescription:
       'The study of light emission from living systems — ultra-weak photon emission and possible cellular signaling.',
     content: `
-## Biophotonics
 
 **Biophotonics** is the study of light (photons) in biological systems. Living cells emit ultra-weak photons — too faint for normal vision but detectable by sensitive instruments. The function of this emission is debated; hypotheses include cellular signaling and coherence.
 
@@ -1541,6 +1716,9 @@ Part 5 works on "the density of presence" through "high coherence in the electro
 ### In ONDA Life
 
 Part 5 "Quantum Biology (Coherence)" references biophotonics: "high coherence in the electromagnetic field of the cells" makes your presence palpable. The body's coherent state may be detectable by others at a subtle level.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1550,7 +1728,6 @@ Part 5 "Quantum Biology (Coherence)" references biophotonics: "high coherence in
     shortDescription:
       'The emotional brain — a network of structures that process emotions, memory, and social behavior.',
     content: `
-## Limbic System
 
 The **limbic system** is a network of brain structures involved in emotion, memory, motivation, and social behavior. It sits between the brainstem and the cortex, acting as a bridge between primitive survival and higher cognition.
 
@@ -1572,6 +1749,9 @@ The **limbic system** is a network of brain structures involved in emotion, memo
 ### In ONDA Life
 
 Part 5 "Limbic Influence" describes how others register your stability and limbic confidence before you speak. A well-regulated limbic system broadcasts calm dominance — others sense it through limbic-to-limbic communication.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1581,7 +1761,6 @@ Part 5 "Limbic Influence" describes how others register your stability and limbi
     shortDescription:
       'Neurons that fire when we observe others\' actions — the biological basis of empathy and social intuition.',
     content: `
-## Mirror Neurons
 
 **Mirror neurons** are a class of neurons that fire both when we perform an action and when we observe someone else performing the same action. They were first discovered in the premotor cortex of macaque monkeys and are thought to exist in humans.
 
@@ -1595,6 +1774,9 @@ Part 5 "Limbic Influence" describes how others register your stability and limbi
 ### In ONDA Life
 
 Part 6 trains the "Mirror Neuron System (Premotor Cortex)" — your "biological Wi-Fi." We develop the ability to instantaneously read the intentions and states of others through micro-expressions and gestures, turning intuition into a precise navigational tool.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1604,7 +1786,6 @@ Part 6 trains the "Mirror Neuron System (Premotor Cortex)" — your "biological 
     shortDescription:
       'The "bonding hormone" — promotes trust, belonging, and social connection; lowers anxiety and aggression.',
     content: `
-## Oxytocin
 
 **Oxytocin** is a hormone and neuropeptide produced in the hypothalamus and released by the pituitary. It is often called the "love hormone" or "bonding hormone" for its role in social connection, trust, and attachment.
 
@@ -1619,6 +1800,9 @@ Part 6 trains the "Mirror Neuron System (Premotor Cortex)" — your "biological 
 ### In ONDA Life
 
 Part 6 "Oxytocin Profile" works with the hormone of trust and belonging. The goal is to train the system to produce oxytocin in response to safe social contact — which automatically lowers baseline anxiety and aggression, enabling social engagement without fear.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1628,7 +1812,6 @@ Part 6 "Oxytocin Profile" works with the hormone of trust and belonging. The goa
     shortDescription:
       'The brain region for conflict monitoring, social sensing, and emotional regulation.',
     content: `
-## Anterior Cingulate Cortex
 
 The **anterior cingulate cortex** (ACC) is a region of the cingulate cortex that wraps around the corpus callosum. It is involved in conflict monitoring, error detection, pain processing, and — critically — social and emotional regulation.
 
@@ -1642,6 +1825,9 @@ The **anterior cingulate cortex** (ACC) is a region of the cingulate cortex that
 ### In ONDA Life
 
 Part 6 trains the ACC as the "detector for social errors and signals." We learn "emotional osmosis" — the exchange of states with others — while maintaining autonomy and avoiding being pulled into someone else's chaos.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1651,7 +1837,6 @@ Part 6 trains the ACC as the "detector for social errors and signals." We learn 
     shortDescription:
       'The unconscious exchange of emotional states between people — feeling what others feel while maintaining autonomy.',
     content: `
-## Emotional Osmosis
 
 **Emotional osmosis** describes the process by which emotional states are exchanged between people without conscious effort — like osmosis, where substances pass through a membrane by diffusion. We "absorb" the emotional tone of those around us and, in turn, influence theirs.
 
@@ -1669,6 +1854,9 @@ Emotional osmosis can pull us into someone else's chaos — we lose our "coheren
 ### In ONDA Life
 
 Part 6 trains "emotional osmosis" through the Anterior Cingulate Cortex. We learn to exchange states with others — feeling the "pack," influencing it — while avoiding being pulled into chaos. Your presence becomes the "glue" that unites the group.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1678,7 +1866,6 @@ Part 6 trains "emotional osmosis" through the Anterior Cingulate Cortex. We lear
     shortDescription:
       'The brain\'s ability to process social signals — gaze, tone, posture, micro-expressions — often below conscious awareness.',
     content: `
-## Social Sensing
 
 **Social sensing** is the brain's capacity to process and interpret social signals from others. This includes gaze direction, voice tone, body posture, facial micro-expressions, and subtle gestures — often below conscious awareness.
 
@@ -1697,6 +1884,9 @@ Social sensing involves the mirror neuron system, anterior cingulate cortex, and
 ### In ONDA Life
 
 Part 6 trains "Social Sensing" through the Anterior Cingulate Cortex — the detector for social errors and signals. We develop the ability to read and broadcast signals of safety and status through the subtlest movements, turning social intuition into a precise navigational tool.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1706,7 +1896,6 @@ Part 6 trains "Social Sensing" through the Anterior Cingulate Cortex — the det
     shortDescription:
       'A neurotransmitter that enhances alertness, attention, and inhibitory control — supports cognitive clarity.',
     content: `
-## Norepinephrine
 
 **Norepinephrine** (noradrenaline) is a neurotransmitter and hormone that plays a key role in arousal, attention, and the stress response. It is produced in the locus coeruleus (brainstem) and adrenal medulla.
 
@@ -1720,6 +1909,9 @@ Part 6 trains "Social Sensing" through the Anterior Cingulate Cortex — the det
 ### In ONDA Life
 
 Part 7 "Neural Clarity (Norepinephrine)" utilizes norepinephrine modulation to enhance alertness and inhibitory control over impulsive reactions. Metacognitive monitoring trains the medial PFC to separate objective facts from subjective interpretations.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1729,7 +1921,6 @@ Part 7 "Neural Clarity (Norepinephrine)" utilizes norepinephrine modulation to e
     shortDescription:
       'The brain\'s command center for executive functions — attention, planning, inhibition, and cognitive control.',
     content: `
-## Prefrontal Cortex
 
 The **prefrontal cortex** (PFC) is the front part of the frontal lobe, responsible for executive functions: planning, decision-making, working memory, attention control, and inhibition of inappropriate responses.
 
@@ -1742,6 +1933,9 @@ The **prefrontal cortex** (PFC) is the front part of the frontal lobe, responsib
 ### In ONDA Life
 
 Part 7 activates the PFC as the "command center for attention and executive functions." We strengthen the link between PFC and Anterior Cingulate Cortex for instantaneous detection of inconsistencies — the foundation of discernment.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1751,7 +1945,6 @@ Part 7 activates the PFC as the "command center for attention and executive func
     shortDescription:
       'The dlPFC — supports cognitive clarity, working memory, and sustained focus.',
     content: `
-## Dorsolateral Prefrontal Cortex
 
 The **dorsolateral prefrontal cortex** (dlPFC) is the upper outer region of the PFC. It is critical for "cold" cognitive functions: working memory, sustained attention, planning, and cognitive flexibility.
 
@@ -1765,6 +1958,9 @@ The **dorsolateral prefrontal cortex** (dlPFC) is the upper outer region of the 
 ### In ONDA Life
 
 Part 7 targets the dlPFC for "cognitive clarity and focus retention." A well-tuned dlPFC creates the "cognitive gap" between stimulus and reaction — the space for discernment rather than reflexive response.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1774,7 +1970,6 @@ Part 7 targets the dlPFC for "cognitive clarity and focus retention." A well-tun
     shortDescription:
       'The brain region that processes visual information — V1 through V5, from raw input to complex perception.',
     content: `
-## Visual Cortex
 
 The **visual cortex** is the region of the occipital lobe that processes visual information. It is organized in a hierarchy from V1 (primary) to V5 (MT), each layer extracting more complex features.
 
@@ -1789,6 +1984,9 @@ The **visual cortex** is the region of the occipital lobe that processes visual 
 ### In ONDA Life
 
 Part 7 "Sensorimotor Integration" develops deep processing of contours, shapes, and movement vectors through the visual cortex (V1–V5). We train the ability to isolate key signals from a dense flow of external stimuli.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1798,7 +1996,6 @@ Part 7 "Sensorimotor Integration" develops deep processing of contours, shapes, 
     shortDescription:
       'Real-time feedback of physiological signals — learning to consciously regulate heart rate, brain waves, muscle tension.',
     content: `
-## Biofeedback
 
 **Biofeedback** is a technique that provides real-time information about physiological processes (heart rate, brain waves, muscle tension, skin conductance) so that a person can learn to consciously regulate them.
 
@@ -1812,6 +2009,9 @@ Part 7 "Sensorimotor Integration" develops deep processing of contours, shapes, 
 ### In ONDA Life
 
 Biofeedback principles underlie many ONDA practices. Connecting a fitness tracker or smartwatch provides real-time vitals during practice. Part 7 biomarkers (P300, saccadic stability, theta/alpha states) can be measured and trained through biofeedback approaches.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1821,7 +2021,6 @@ Biofeedback principles underlie many ONDA practices. Connecting a fitness tracke
     shortDescription:
       'The brain\'s electrical response to something significant, novel, or expected in the information stream — an ERP component.',
     content: `
-## P300
 
 The **P300** (or P3) is an event-related potential (ERP) — an electrical response of the brain that occurs about 300 milliseconds after the presentation of a significant, novel, or expected stimulus. It reflects the brain's detection and processing of meaningful information.
 
@@ -1835,6 +2034,9 @@ The **P300** (or P3) is an event-related potential (ERP) — an electrical respo
 ### In ONDA Life
 
 Part 7 lists "P300 Amplitude Increase" as a progress biomarker — indicating how quickly and efficiently the brain recognizes a significant stimulus. Higher P300 amplitude suggests improved signal-to-noise optimization and cognitive clarity.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1844,7 +2046,6 @@ Part 7 lists "P300 Amplitude Increase" as a progress biomarker — indicating ho
     shortDescription:
       'Rapid, ballistic eye movements that shift gaze from one point to another — the basis of visual scanning.',
     content: `
-## Saccades
 
 **Saccades** are rapid, ballistic eye movements that shift the point of gaze from one location to another. They are the primary way we scan the visual world — we don't move our eyes smoothly across a scene, we jump in discrete "saccades."
 
@@ -1858,6 +2059,9 @@ Part 7 lists "P300 Amplitude Increase" as a progress biomarker — indicating ho
 ### In ONDA Life
 
 Part 7 "Saccadic Stability" refers to the precision and controllability of eye micro-movements when scanning space. Training saccadic stability supports perceptual clarity and reduces cognitive load when processing visual information.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1867,7 +2071,6 @@ Part 7 "Saccadic Stability" refers to the precision and controllability of eye m
     shortDescription:
       'Brain waves in the 4–8 Hz range — associated with deep relaxation, meditation, and creative insight.',
     content: `
-## Theta State
 
 **Theta state** refers to brain activity in the theta frequency band (4–8 Hz). Theta waves are associated with deep relaxation, meditation, light sleep, and the threshold between waking and sleep.
 
@@ -1881,6 +2084,9 @@ Part 7 "Saccadic Stability" refers to the precision and controllability of eye m
 ### In ONDA Life
 
 Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to ground the mind." Theta supports the transition from reactive thinking to observational presence — the cognitive gap that enables discernment.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1890,7 +2096,6 @@ Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to grou
     shortDescription:
       'Brain waves in the 8–12 Hz range — associated with relaxed wakefulness and focused attention.',
     content: `
-## Alpha State
 
 **Alpha state** refers to brain activity in the alpha frequency band (8–12 Hz). Alpha waves are prominent during relaxed wakefulness with eyes closed, and during certain meditative and focused states.
 
@@ -1904,6 +2109,9 @@ Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to grou
 ### In ONDA Life
 
 Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to ground the mind." Alpha supports relaxed alertness — the optimal state for cognitive clarity and signal-to-noise optimization.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1913,7 +2121,6 @@ Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to grou
     shortDescription:
       'The pause between an event and our reaction — the space where freedom of choice is born.',
     content: `
-## Cognitive Gap
 
 The **cognitive gap** is the crucial pause between a stimulus (event) and our reaction. In that gap, we are not compelled to respond reflexively — we have the space to choose.
 
@@ -1932,6 +2139,9 @@ The gap is built through:
 ### In ONDA Life
 
 Part 7 ("I Distinguish") aims to create a cognitive gap between stimulus and reaction. Discernment — the ability to see clearly and choose consciously — is the first step toward true mental autonomy. The gap is where freedom of choice is born.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1941,7 +2151,6 @@ Part 7 ("I Distinguish") aims to create a cognitive gap between stimulus and rea
     shortDescription:
       'The "mind-wandering" network — active when we\'re not focused on the external world; suppressed during deep focus.',
     content: `
-## Default Mode Network
 
 The **Default Mode Network** (DMN) is a network of brain regions that are active when we are not focused on the external world — during mind-wandering, self-reflection, daydreaming, and autobiographical thinking.
 
@@ -1959,6 +2168,9 @@ When we engage in focused, goal-directed tasks, the DMN is typically deactivated
 ### In ONDA Life
 
 Part 8 trains the brain to "timely deactivate the Default Mode Network (DMN) — the \u2018mind-wandering mode\u2019 — for deep immersion in the task." This enables sustained, voluntary attention.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1968,7 +2180,6 @@ Part 8 trains the brain to "timely deactivate the Default Mode Network (DMN) —
     shortDescription:
       'The network for voluntary, goal-directed attention — top-down control of focus.',
     content: `
-## Dorsal Attention Network
 
 The **Dorsal Attention Network** (DAN) is a network of brain regions that support voluntary, goal-directed attention — "top-down" control of what we focus on, as opposed to "bottom-up" capture by salient stimuli.
 
@@ -1985,6 +2196,9 @@ The DAN directs attention to task-relevant stimuli and suppresses irrelevant one
 ### In ONDA Life
 
 Part 8 activates the "network of voluntary, directed attention." Training the DAN enables the shift from reactive attention (chaotic) to voluntary attention (controlled) — the heart of "I Focus."
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -1994,7 +2208,6 @@ Part 8 activates the "network of voluntary, directed attention." Training the DA
     shortDescription:
       'A neurotransmitter that "highlights" relevant neural connections — supports attention and learning.',
     content: `
-## Acetylcholine
 
 **Acetylcholine** (ACh) is a neurotransmitter that plays a key role in attention, learning, and memory. It is produced in the basal forebrain and brainstem and projects widely to the cortex.
 
@@ -2008,6 +2221,9 @@ Part 8 activates the "network of voluntary, directed attention." Training the DA
 ### In ONDA Life
 
 Part 8 "Gamma Binding and Cholinergic Modulation" works with acetylcholine, which "literally \u2018highlights\u2019 the necessary neural connections." This supports the assembly of scattered perceptual elements into a single, cohesive image during deep focus.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2017,7 +2233,6 @@ Part 8 "Gamma Binding and Cholinergic Modulation" works with acetylcholine, whic
     shortDescription:
       'The brainstem nucleus that produces norepinephrine — regulates alertness and attention.',
     content: `
-## Locus Coeruleus
 
 The **locus coeruleus** is a small nucleus in the brainstem that is the primary source of norepinephrine in the brain. It projects widely to the cortex, hippocampus, and cerebellum, regulating alertness, attention, and the stress response.
 
@@ -2031,6 +2246,9 @@ The **locus coeruleus** is a small nucleus in the brainstem that is the primary 
 ### In ONDA Life
 
 Part 8 "Locus Coeruleus" regulates alertness levels through norepinephrine. The ACC monitors distractions and detects errors. Optimal locus coeruleus function supports sustained focus without burnout.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2040,7 +2258,6 @@ Part 8 "Locus Coeruleus" regulates alertness levels through norepinephrine. The 
     shortDescription:
       'The neurotransmitter of motivation and reward — supports working memory and sustained focus.',
     content: `
-## Dopamine
 
 **Dopamine** is a neurotransmitter that plays a central role in motivation, reward, movement, and working memory. It is produced in the substantia nigra and ventral tegmental area and projects to the striatum and prefrontal cortex.
 
@@ -2054,6 +2271,9 @@ Part 8 "Locus Coeruleus" regulates alertness levels through norepinephrine. The 
 ### In ONDA Life
 
 Part 8 "Dopamine Calibration" utilizes micro-rewards to maintain high motivation and working memory capacity. This prevents cognitive burnout and supports "Deep Work" mode — sustained focus without excessive strain.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2063,7 +2283,6 @@ Part 8 "Dopamine Calibration" utilizes micro-rewards to maintain high motivation
     shortDescription:
       'Biological cycles shorter than 24 hours — e.g., 90-minute focus cycles, 20-minute rest.',
     content: `
-## Ultradian Rhythm
 
 **Ultradian rhythms** are biological cycles that repeat more than once per 24 hours. Examples include the 90-minute sleep cycle, the 90–120 minute basic rest-activity cycle (BRAC), and shorter attention cycles.
 
@@ -2076,6 +2295,9 @@ Part 8 "Dopamine Calibration" utilizes micro-rewards to maintain high motivation
 ### In ONDA Life
 
 Part 8 "Ultradian Optimization" works within natural rhythms (90/20-minute cycles) for the timely restoration of neurotransmitters. Working against these rhythms leads to cognitive burnout; working with them supports neural resilience.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2085,7 +2307,6 @@ Part 8 "Ultradian Optimization" works within natural rhythms (90/20-minute cycle
     shortDescription:
       'Synchronization of neurons at gamma frequency (30–100 Hz) — assembles scattered perceptual elements into a coherent whole.',
     content: `
-## Gamma Binding
 
 **Gamma binding** (or gamma synchronization) refers to the coordinated firing of neurons at gamma frequency (approximately 30–100 Hz). This synchronization is thought to "bind" scattered elements of perception — features processed in different brain regions — into a single, coherent experience.
 
@@ -2099,6 +2320,9 @@ Part 8 "Ultradian Optimization" works within natural rhythms (90/20-minute cycle
 ### In ONDA Life
 
 Part 8 "Gamma Binding and Cholinergic Modulation" synchronizes neurons at gamma frequency to assemble scattered elements of perception into a single, cohesive image. Combined with acetylcholine, this supports deep focus and unified perceptual experience.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2108,7 +2332,6 @@ Part 8 "Gamma Binding and Cholinergic Modulation" synchronizes neurons at gamma 
     shortDescription:
       'The regulation of neural activity by acetylcholine — enhances attention and selectively amplifies relevant signals.',
     content: `
-## Cholinergic Modulation
 
 **Cholinergic modulation** refers to the regulation of brain function by acetylcholine (ACh). The cholinergic system projects from the basal forebrain to the cortex, modulating attention, learning, and the signal-to-noise ratio of neural processing.
 
@@ -2122,6 +2345,9 @@ Part 8 "Gamma Binding and Cholinergic Modulation" synchronizes neurons at gamma 
 ### In ONDA Life
 
 Part 8 works with acetylcholine, which "literally \u2018highlights\u2019 the necessary neural connections." Cholinergic modulation supports the assembly of scattered perceptual elements into a single, cohesive image during deep focus.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2131,7 +2357,6 @@ Part 8 works with acetylcholine, which "literally \u2018highlights\u2019 the nec
     shortDescription:
       'Chemical messengers that transmit signals between neurons — dopamine, serotonin, norepinephrine, acetylcholine, and others.',
     content: `
-## Neurotransmitters
 
 **Neurotransmitters** are chemical messengers that transmit signals across synapses from one neuron to another. They enable all brain function — from basic reflexes to complex thought.
 
@@ -2148,6 +2373,9 @@ Part 8 works with acetylcholine, which "literally \u2018highlights\u2019 the nec
 ### Depletion and Restoration
 
 Sustained focus depletes neurotransmitters. Ultradian rhythms (90/20-minute cycles) allow timely restoration. Working against these cycles leads to cognitive burnout.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2157,7 +2385,6 @@ Sustained focus depletes neurotransmitters. Ultradian rhythms (90/20-minute cycl
     shortDescription:
       'Brain waves in the 12–30 Hz range — associated with active thinking, focus, and alert wakefulness.',
     content: `
-## Beta Rhythm
 
 **Beta rhythm** refers to brain activity in the beta frequency band (12–30 Hz). Beta waves are prominent during active, focused thinking, problem-solving, and alert wakefulness.
 
@@ -2171,6 +2398,9 @@ Sustained focus depletes neurotransmitters. Ultradian rhythms (90/20-minute cycl
 ### In ONDA Life
 
 Part 8 lists "increased beta-rhythm power in the frontal lobes" as a biological marker of progress. It indicates improved neural resilience — the brain's ability to sustain focus and maintain cognitive control.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2180,7 +2410,6 @@ Part 8 lists "increased beta-rhythm power in the frontal lobes" as a biological 
     shortDescription:
       'The front part of the brain — executive functions, planning, attention, and motor control.',
     content: `
-## Frontal Lobes
 
 The **frontal lobes** are the largest of the four cerebral lobes, occupying the front of the brain. They are responsible for executive functions, planning, decision-making, attention control, and voluntary movement.
 
@@ -2197,6 +2426,9 @@ The frontal lobes enable us to set goals, resist impulses, and maintain focus. T
 ### In ONDA Life
 
 Part 8 targets the frontal lobes for "Deep Work" mode. Increased beta-rhythm power in the frontal lobes, along with dlPFC stabilization, supports sustained focus and neural resilience.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2206,7 +2438,6 @@ Part 8 targets the frontal lobes for "Deep Work" mode. Increased beta-rhythm pow
     shortDescription:
       'The brain structure for memory formation and spatial navigation — reconstructs past experiences to model future scenarios.',
     content: `
-## Hippocampus
 
 The **hippocampus** is a structure in the medial temporal lobe critical for memory formation, spatial navigation, and the imagination of future scenarios. It is part of the limbic system and connects to the Default Mode Network.
 
@@ -2220,6 +2451,9 @@ The **hippocampus** is a structure in the medial temporal lobe critical for memo
 ### In ONDA Life
 
 Part 9 links the hippocampus and medial PFC for "mental modeling" — playing out future scenarios. The hippocampus reconstructs past experiences to model new possibilities, enabling imagination as a tool for behavioral engineering.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2229,7 +2463,6 @@ Part 9 links the hippocampus and medial PFC for "mental modeling" — playing ou
     shortDescription:
       'The brain\'s model of reality — predicts sensory input and updates based on prediction errors.',
     content: `
-## Predictive Coding
 
 **Predictive coding** is a theory of how the brain processes information: it maintains an internal model of reality, generates predictions about incoming sensory input, and updates the model based on prediction errors (the difference between predicted and actual input).
 
@@ -2243,6 +2476,9 @@ Part 9 links the hippocampus and medial PFC for "mental modeling" — playing ou
 ### In ONDA Life
 
 Part 9 aims to create a "precise Predictive Coding model of reality." Mental simulation and visualization train the brain to generate accurate predictions — enabling proactive mastery and "pre-writing" events at the neural level.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2252,7 +2488,6 @@ Part 9 aims to create a "precise Predictive Coding model of reality." Mental sim
     shortDescription:
       'The brain region for spatial representation, attention, and integrating body with environment.',
     content: `
-## Posterior Parietal Cortex
 
 The **posterior parietal cortex** (PPC) is a region of the parietal lobe that integrates sensory information for spatial representation, attention, and the planning of actions. It creates and maintains spatial maps.
 
@@ -2266,6 +2501,9 @@ The **posterior parietal cortex** (PPC) is a region of the parietal lobe that in
 ### In ONDA Life
 
 Part 9 engages the PPC for "assembling spatial maps and placing the image within the environmental context." It synchronizes the mental sketch with the body's physiological response — the vision becomes grounded in space.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2275,7 +2513,6 @@ Part 9 engages the PPC for "assembling spatial maps and placing the image within
     shortDescription:
       'The brainstem network that filters sensory input and regulates arousal — can be tuned to notice what matches your vision.',
     content: `
-## Reticular Activating System
 
 The **Reticular Activating System** (RAS) is a diffuse network in the brainstem that regulates arousal, consciousness, and the filtering of sensory information. It determines what reaches conscious awareness.
 
@@ -2289,6 +2526,9 @@ The **Reticular Activating System** (RAS) is a diffuse network in the brainstem 
 ### In ONDA Life
 
 Part 9 "Proactive Programming (RAS)" tunes the Reticular Activating System to automatically search for opportunities that match the internal vision. The brain begins to notice what aligns with your mental model — turning imagination into a program for reality.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2298,7 +2538,6 @@ Part 9 "Proactive Programming (RAS)" tunes the Reticular Activating System to au
     shortDescription:
       'Changes in skin conductance due to emotional arousal — a biomarker that the body "believes" in the mental image.',
     content: `
-## Galvanic Skin Response
 
 **Galvanic Skin Response** (GSR), also called electrodermal activity, measures changes in the electrical conductance of the skin. Sweat gland activity increases with emotional arousal — even when we are not consciously aware of it.
 
@@ -2312,6 +2551,9 @@ Part 9 "Proactive Programming (RAS)" tunes the Reticular Activating System to au
 ### In ONDA Life
 
 Part 9 "Biological Belief" references changes in GSR as an indicator that the body "believes" in the created image as if it were real. When mental simulation is vivid enough, the autonomic system responds — the vision becomes physiologically real.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2321,7 +2563,6 @@ Part 9 "Biological Belief" references changes in GSR as an indicator that the bo
     shortDescription:
       'A state of optimal performance — deep immersion, effortless action, and loss of self-consciousness.',
     content: `
-## Flow State
 
 **Flow state** (or "being in the zone") is a mental state of full immersion in an activity, characterized by focused concentration, loss of self-consciousness, distorted sense of time, and a feeling of effortless action.
 
@@ -2335,6 +2576,9 @@ Part 9 "Biological Belief" references changes in GSR as an indicator that the bo
 ### In ONDA Life
 
 Part 9 lists "Flow State: Predominance of Alpha and Theta rhythms, characteristic of creative flow and insight" as a result. When imagination becomes a precise program and the brain acts as an efficient executor, flow emerges — the vision and action unite.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2344,7 +2588,6 @@ Part 9 lists "Flow State: Predominance of Alpha and Theta rhythms, characteristi
     shortDescription:
       'Chemical messengers released by endocrine glands — regulate metabolism, stress, growth, and emotional states.',
     content: `
-## Hormones
 
 **Hormones** are chemical messengers produced by the endocrine glands (pituitary, thyroid, adrenal, gonads, etc.) and released into the bloodstream. They regulate metabolism, growth, stress response, reproduction, and emotional states.
 
@@ -2358,6 +2601,9 @@ Part 9 lists "Flow State: Predominance of Alpha and Theta rhythms, characteristi
 ### In ONDA Life
 
 Part 9 "Biochemical Resonance" trains the hypothalamus to generate the "victory state" through hormonal release — even before real action begins. The mental image triggers the same chemical response as actual success.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2367,7 +2613,6 @@ Part 9 "Biochemical Resonance" trains the hypothalamus to generate the "victory 
     shortDescription:
       'The primary visual cortex — processes and renders images; V1–V4 are the hierarchical stages of visual processing.',
     content: `
-## Occipital Cortex (V1–V4)
 
 The **occipital cortex** is the visual processing center at the back of the brain. Areas V1 through V4 form a hierarchy: V1 (primary) detects edges and orientation; V2–V4 build increasingly complex representations (shapes, color, motion).
 
@@ -2381,6 +2626,9 @@ The **occipital cortex** is the visual processing center at the back of the brai
 ### In ONDA Life
 
 Part 9 engages the occipital cortex for "visualizing and rendering images in the absence of external stimuli" — mental imagery activates the same regions as real vision, creating a tangible internal experience.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2390,7 +2638,6 @@ Part 9 engages the occipital cortex for "visualizing and rendering images in the
     shortDescription:
       'High-frequency neural oscillation (30–100 Hz) that binds scattered brain regions into a unified conscious experience.',
     content: `
-## γ-Synchronization (Gamma Synchronization)
 
 **γ-Synchronization** (gamma synchronization) refers to neural oscillations in the 30–100 Hz range. When distributed brain regions fire in phase at gamma frequency, they form a temporary "binding" — assembling scattered elements into a single, coherent perception or thought.
 
@@ -2404,6 +2651,9 @@ Part 9 engages the occipital cortex for "visualizing and rendering images in the
 ### In ONDA Life
 
 Part 9 describes "instantaneous unification of neural ensembles for a 'flash' of understanding and image integrity." Gamma synchronization enables the mental image to cohere — the vision becomes a single, vivid whole.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2413,7 +2663,6 @@ Part 9 describes "instantaneous unification of neural ensembles for a 'flash' of
     shortDescription:
       'The inner prefrontal region for self-reflection, value judgment, and mental simulation of future scenarios.',
     content: `
-## Medial Prefrontal Cortex (mPFC)
 
 The **medial prefrontal cortex** (mPFC) is the midline region of the prefrontal cortex, involved in self-referential processing, value assessment, and the simulation of future scenarios. It connects strongly with the hippocampus and Default Mode Network.
 
@@ -2427,6 +2676,9 @@ The **medial prefrontal cortex** (mPFC) is the midline region of the prefrontal 
 ### In ONDA Life
 
 Part 9 "Mental Modeling" links the hippocampus and medial PFC to "play out future scenarios." The mPFC evaluates and directs the creative process — it is the conductor of the internal "rendering" of reality.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2436,7 +2688,6 @@ Part 9 "Mental Modeling" links the hippocampus and medial PFC to "play out futur
     shortDescription:
       'Tuning the Reticular Activating System to automatically notice opportunities that match your internal vision.',
     content: `
-## Proactive Programming (RAS)
 
 **Proactive Programming** is the practice of training the Reticular Activating System (RAS) to filter sensory input in favor of information that aligns with your internal vision. Instead of passively receiving the world, you "program" the brain to seek what matters.
 
@@ -2450,6 +2701,9 @@ Part 9 "Mental Modeling" links the hippocampus and medial PFC to "play out futur
 ### In ONDA Life
 
 Part 9 lists "Proactive Programming (RAS)" as a Biological Protocol item. The vision becomes a program; the brain acts as an efficient executor, finding the shortest paths to the goal by automatically detecting relevant signals in the environment.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2459,7 +2713,6 @@ Part 9 lists "Proactive Programming (RAS)" as a Biological Protocol item. The vi
     shortDescription:
       'Using cognitive metaphors and new interpretations to alter synaptic connections and change behavioral patterns.',
     content: `
-## Neural Reframing
 
 **Neural Reframing** is the practice of changing the meaning assigned to experiences, events, or sensations through new cognitive frameworks. By shifting interpretation, we alter which neural pathways fire and strengthen — effectively rewiring the brain.
 
@@ -2473,6 +2726,9 @@ Part 9 lists "Proactive Programming (RAS)" as a Biological Protocol item. The vi
 ### In ONDA Life
 
 Part 9 "Neural Reframing" uses cognitive metaphors to alter synaptic connections. Imagination is not idle — it is a biological tool for behavioral engineering. New frames create new neural patterns.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2482,7 +2738,6 @@ Part 9 "Neural Reframing" uses cognitive metaphors to alter synaptic connections
     shortDescription:
       'The junctions between neurons where signals are transmitted — the physical substrate of learning and memory.',
     content: `
-## Synaptic Connections
 
 **Synaptic connections** (synapses) are the points of contact between neurons where chemical or electrical signals are transmitted. They are the physical basis of learning, memory, and all behavioral change.
 
@@ -2496,6 +2751,9 @@ Part 9 "Neural Reframing" uses cognitive metaphors to alter synaptic connections
 ### In ONDA Life
 
 Part 9 "Neural Reframing" aims to alter synaptic connections through cognitive metaphors. Mental simulation and visualization create new firing patterns — imagination literally rewires the brain at the synaptic level.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2505,7 +2763,6 @@ Part 9 "Neural Reframing" aims to alter synaptic connections through cognitive m
     shortDescription:
       'The brain region for speech production — assembles and delivers the motor programs of language.',
     content: `
-## Broca's Area
 
 **Broca's area** is a region in the left frontal lobe (inferior frontal gyrus) responsible for speech production. It assembles the motor programs for articulation and coordinates the muscles of the mouth, tongue, and larynx.
 
@@ -2518,6 +2775,9 @@ Part 9 "Neural Reframing" aims to alter synaptic connections through cognitive m
 ### In ONDA Life
 
 Part 10 engages Broca's area as one of the "centers for assembling and delivering speech structures." Together with Wernicke's area and the Ventral Vagus, it enables sovereign expression — clear, authentic self-expression supported by calm social engagement.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2527,7 +2787,6 @@ Part 10 engages Broca's area as one of the "centers for assembling and deliverin
     shortDescription:
       'The brain region for language comprehension — processes and interprets spoken and written words.',
     content: `
-## Wernicke's Area
 
 **Wernicke's area** is a region in the left temporal lobe responsible for language comprehension. It processes incoming speech, assigns meaning to words, and supports the understanding of context and nuance.
 
@@ -2540,6 +2799,9 @@ Part 10 engages Broca's area as one of the "centers for assembling and deliverin
 ### In ONDA Life
 
 Part 10 lists Wernicke's area as part of the "centers for assembling and delivering speech structures." Effective expression requires both production (Broca's) and comprehension (Wernicke's) — you must understand before you speak, and monitor your own output in real time.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2549,7 +2811,6 @@ Part 10 lists Wernicke's area as part of the "centers for assembling and deliver
     shortDescription:
       'The brain structure for threat detection and emotional reactivity — the source of social fear and anxiety.',
     content: `
-## Amygdala
 
 The **amygdala** is an almond-shaped structure in the temporal lobe, part of the limbic system. It is the primary detector of threat and the driver of fear, anxiety, and defensive responses.
 
@@ -2563,6 +2824,9 @@ The **amygdala** is an almond-shaped structure in the temporal lobe, part of the
 ### In ONDA Life
 
 Part 10 aims to "reduce amygdala reactivity to suppress paralyzing social fear." Cognitive Reappraisal is a prefrontal technique that physiologically dampens amygdala activity — replacing fear with excitement. The goal is to exit "social paralysis" and enter sovereign expression.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2572,7 +2836,6 @@ Part 10 aims to "reduce amygdala reactivity to suppress paralyzing social fear."
     shortDescription:
       'The endocrine gland that regulates metabolic tempo — the driver of energy and manifestation.',
     content: `
-## Thyroid Gland
 
 The **thyroid gland** is located in the neck and produces hormones (T3, T4) that regulate metabolism, energy levels, body temperature, and growth. It sets the overall "tempo" of the body.
 
@@ -2586,6 +2849,9 @@ The **thyroid gland** is located in the neck and produces hormones (T3, T4) that
 ### In ONDA Life
 
 Part 10 describes the Thyroid as "the driver of metabolic tempo and the energy of manifestation." Optimal thyroid function supports the physical energy needed for vocal projection, presence, and sustained social engagement.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2595,7 +2861,6 @@ Part 10 describes the Thyroid as "the driver of metabolic tempo and the energy o
     shortDescription:
       'A prefrontal technique that reframes emotional stimuli — physiologically dampens amygdala and replaces fear with excitement.',
     content: `
-## Cognitive Reappraisal
 
 **Cognitive reappraisal** is an emotion regulation strategy in which you change the meaning or interpretation of a situation. Instead of "this is threatening," you reframe: "this is exciting," "this is an opportunity," "my body is preparing me for peak performance."
 
@@ -2609,6 +2874,9 @@ Part 10 describes the Thyroid as "the driver of metabolic tempo and the energy o
 ### In ONDA Life
 
 Part 10 lists "Cognitive Reappraisal" as a Biological Protocol item. It is a prefrontal control technique that physiologically dampens amygdala activity, replacing social fear with excitement. You no longer fear being noticed — you use attention as fuel.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2618,7 +2886,6 @@ Part 10 lists "Cognitive Reappraisal" as a Biological Protocol item. It is a pre
     shortDescription:
       'The ability to attribute mental states to others — understanding perspectives, intentions, and beliefs.',
     content: `
-## Theory of Mind (ToM)
 
 **Theory of Mind** (ToM) is the cognitive capacity to attribute mental states — thoughts, beliefs, intentions, emotions — to oneself and others. It enables us to understand that others have different perspectives and to predict their behavior.
 
@@ -2632,6 +2899,9 @@ Part 10 lists "Cognitive Reappraisal" as a Biological Protocol item. It is a pre
 ### In ONDA Life
 
 Part 11 "Cognitive Flexibility (ToM)" trains the ability to "walk in someone else's shoes." The mPFC is the center for understanding the "Self" of another. Theory of Mind is the foundation for instantaneous empathy and nutritious interaction.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2641,7 +2911,6 @@ Part 11 "Cognitive Flexibility (ToM)" trains the ability to "walk in someone els
     shortDescription:
       'The prefrontal region for social harmony, value judgment, and ethical choices in the moment.',
     content: `
-## Orbitofrontal Cortex
 
 The **orbitofrontal cortex** (OFC) is the ventral part of the prefrontal cortex, located above the orbits of the eyes. It integrates emotional and social information for decision-making, value assessment, and adaptive behavior.
 
@@ -2655,6 +2924,9 @@ The **orbitofrontal cortex** (OFC) is the ventral part of the prefrontal cortex,
 ### In ONDA Life
 
 Part 11 pairs the Orbitofrontal Cortex with the Ventral Vagus to ensure "social harmony and ethical choices in the moment." The OFC helps prevent interaction from turning into conflict or manipulation.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2664,7 +2936,6 @@ Part 11 pairs the Orbitofrontal Cortex with the Ventral Vagus to ensure "social 
     shortDescription:
       'The brain region for reading non-verbal signals and managing the mental model of others.',
     content: `
-## Right Temporoparietal Junction (rTPJ)
 
 The **right temporoparietal junction** (rTPJ) is a region at the boundary of the temporal and parietal lobes. It is a key node for social cognition — particularly for understanding others' perspectives and reading non-verbal signals.
 
@@ -2678,6 +2949,9 @@ The **right temporoparietal junction** (rTPJ) is a region at the boundary of the
 ### In ONDA Life
 
 Part 11 describes the rTPJ as "a key node for reading non-verbal signals and managing the 'mental model' of others." Together with the mPFC, it enables the balance between autonomy ("I") and deep connection ("We").
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2687,7 +2961,6 @@ Part 11 describes the rTPJ as "a key node for reading non-verbal signals and man
     shortDescription:
       'The hormone of boundary protection and pair-bonding — balances trust (oxytocin) with territorial defense.',
     content: `
-## Vasopressin
 
 **Vasopressin** is a hormone and neurotransmitter produced in the hypothalamus. It regulates water retention, blood pressure, and — in the social domain — pair-bonding, territorial behavior, and boundary protection.
 
@@ -2701,6 +2974,9 @@ Part 11 describes the rTPJ as "a key node for reading non-verbal signals and man
 ### In ONDA Life
 
 Part 11 references the "Oxytocin-Vasopressin System" as the "biochemical balance between trust and boundary protection." Deep connection (oxytocin) requires healthy boundaries (vasopressin) — preventing either total merging or alienation.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2710,7 +2986,6 @@ Part 11 references the "Oxytocin-Vasopressin System" as the "biochemical balance
     shortDescription:
       'The phenomenon where brain rhythms of partners begin to operate in a coherent mode during interaction.',
     content: `
-## Inter-brain Synchrony
 
 **Inter-brain synchrony** (or neural synchrony) is the phenomenon where the brain activity of two or more people becomes correlated during social interaction. Their neural rhythms — EEG, HRV — begin to align.
 
@@ -2724,6 +2999,9 @@ Part 11 references the "Oxytocin-Vasopressin System" as the "biochemical balance
 ### In ONDA Life
 
 Part 11 lists "Inter-brain Synchrony" as a target: "the brain rhythms of partners begin to operate in a coherent mode." Biological markers include "synchronization of Heart Rate Variability (HRV) between partners and Alpha-rhythm brain coherence." This is co-resonance at the physiological level.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2733,13 +3011,15 @@ Part 11 lists "Inter-brain Synchrony" as a target: "the brain rhythms of partner
     shortDescription:
       'In physics: when two waves overlap, creating a new, complex pattern. In ONDA: the moment of genuine interaction between two people.',
     content: `
-## Interference
 
 **Interference** is a physics concept: when two waves meet, they overlap and create a new, complex pattern — neither wave simply passes through the other unchanged. The result is amplification (constructive) or cancellation (destructive) depending on phase.
 
 ### In ONDA Life
 
 Part 11 describes the transition from self-expression to **interference** — "the moment when two waves overlap, creating a new, complex pattern." In ONDA, this is the tuning of your "neural Wi-Fi." We learn to be with another so that interaction does not turn into conflict or manipulation, but into co-resonance.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2749,7 +3029,6 @@ Part 11 describes the transition from self-expression to **interference** — "t
     shortDescription:
       'Subjective emotional experiences — the felt sense of what we value, desire, or experience in relation to ourselves and others.',
     content: `
-## Feelings
 
 **Feelings** are the subjective, conscious experience of emotions. They are the "felt sense" — how we register and interpret our emotional state. Feelings arise from the integration of bodily sensations, cognitive appraisal, and social context.
 
@@ -2763,6 +3042,9 @@ Part 11 describes the transition from self-expression to **interference** — "t
 ### In ONDA Life
 
 Part 10 aims to "synchronize the heart (feelings), the brain (vision), and the throat (the instrument of manifestation)." Feelings are one pole of the triad — they must align with vision and expression for sovereign manifestation.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2772,7 +3054,6 @@ Part 10 aims to "synchronize the heart (feelings), the brain (vision), and the t
     shortDescription:
       'Multicomponent responses — physiological, behavioral, and experiential — to internal or external events.',
     content: `
-## Emotions
 
 **Emotions** are multicomponent responses that include physiological changes (hormones, autonomic nervous system), behavioral expressions (facial, vocal, postural), and subjective experience (feelings). They are rapid, often automatic reactions to events that matter for survival or well-being.
 
@@ -2786,6 +3067,9 @@ Part 10 aims to "synchronize the heart (feelings), the brain (vision), and the t
 ### In ONDA Life
 
 The ONDA system works with emotions at multiple levels — from limbic regulation (Parts 4–6) to cognitive reappraisal (Part 10) to empathic calibration (Part 11). Emotions are not enemies to suppress but signals to integrate.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2795,7 +3079,6 @@ The ONDA system works with emotions at multiple levels — from limbic regulatio
     shortDescription:
       'Mental representations — ideas, beliefs, inner speech — generated by the cognitive system.',
     content: `
-## Thoughts
 
 **Thoughts** are mental representations — ideas, beliefs, inner speech, images — generated by the cognitive system. They arise from the prefrontal cortex, default mode network, and language centers (Broca's, Wernicke's).
 
@@ -2809,6 +3092,9 @@ The ONDA system works with emotions at multiple levels — from limbic regulatio
 ### In ONDA Life
 
 Parts 7–9 train the mind to distinguish signal from noise, focus attention, and shape vision through mental simulation. Thoughts become tools rather than masters — you learn to observe and direct them.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2818,7 +3104,6 @@ Parts 7–9 train the mind to distinguish signal from noise, focus attention, an
     shortDescription:
       'Raw sensory input — what we feel in the body before interpretation (interoception, proprioception, touch).',
     content: `
-## Sensations
 
 **Sensations** are the raw, pre-interpretive input from the body — what we feel before we label it as emotion, thought, or meaning. They include interoception (internal organs, heartbeat, breath), proprioception (body position, movement), and exteroception (touch, temperature, pressure).
 
@@ -2832,6 +3117,9 @@ Parts 7–9 train the mind to distinguish signal from noise, focus attention, an
 ### In ONDA Life
 
 Part 1 "Interoceptive Calibration" develops the ability to feel pulsation, pressure, and internal movement. Part 11 "Interoception in Contact" uses sensations to feel one's own and others' boundaries in real-time. Sensations are the bedrock of self-awareness.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2841,7 +3129,6 @@ Part 1 "Interoceptive Calibration" develops the ability to feel pulsation, press
     shortDescription:
       'The muscular floor of the pelvis — supports organs, regulates breath and tone; chronic stress can create deep blocks here.',
     content: `
-## Pelvic Diaphragm
 
 The **pelvic diaphragm** (or pelvic floor) is the muscular layer that forms the floor of the pelvis. It supports the bladder, rectum, and reproductive organs, and works in coordination with the respiratory diaphragm during breathing.
 
@@ -2855,6 +3142,9 @@ The **pelvic diaphragm** (or pelvic floor) is the muscular layer that forms the 
 ### In ONDA Life
 
 Part 11 "Resonance Strategy" includes "relaxation of the pelvic diaphragm and the release of deep bodily blocks." Chronic stress blocks both the respiratory diaphragm and the pelvic floor; releasing them supports the shift from "social survival" to "social resonance."
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2864,7 +3154,6 @@ Part 11 "Resonance Strategy" includes "relaxation of the pelvic diaphragm and th
     shortDescription:
       'The shared focus of two or more individuals on the same object or goal — the center of group synergy.',
     content: `
-## Joint Attention
 
 **Joint attention** is the ability to share focus with another person on the same object, event, or goal. It emerges in infancy and is foundational for social cognition, language development, and cooperative action.
 
@@ -2878,6 +3167,9 @@ Part 11 "Resonance Strategy" includes "relaxation of the pelvic diaphragm and th
 ### In ONDA Life
 
 Part 12 "DMN Inhibition and Joint Attention" shifts from protecting personal boundaries to realizing a common goal. Joint Attention forms "a single focus as the group's center of synergy" — the foundation for collective co-creation and We-Consciousness.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2887,7 +3179,6 @@ Part 12 "DMN Inhibition and Joint Attention" shifts from protecting personal bou
     shortDescription:
       'Endogenous opioids that reduce pain and produce euphoria — the "hormonal glue" of collective cohesion.',
     content: `
-## Endorphins
 
 **Endorphins** are endogenous opioid peptides produced by the brain and pituitary gland. They reduce pain, produce feelings of euphoria and well-being, and are released during exercise, laughter, social bonding, and collective achievement.
 
@@ -2901,6 +3192,9 @@ Part 12 "DMN Inhibition and Joint Attention" shifts from protecting personal bou
 ### In ONDA Life
 
 Part 12 pairs the "Endorphin-Oxytocin Systems" as the "hormonal glue" of collective cohesion. Celebrating collective victories (Dopaminergic Reinforcement) and synchronized group activities trigger endorphin release — reinforcing cooperative behavior and We-Consciousness.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2910,7 +3204,6 @@ Part 12 pairs the "Endorphin-Oxytocin Systems" as the "hormonal glue" of collect
     shortDescription:
       'The state where neural patterns of two or more individuals mirror one another — entering a shared neural field.',
     content: `
-## Neural Coupling
 
 **Neural coupling** (нейронная сцепка) is the state where the brain activity of two or more people becomes aligned — their neural patterns mirror one another. Attention, breathing rhythms, and brain waves begin to operate in a shared field.
 
@@ -2924,6 +3217,9 @@ Part 12 pairs the "Endorphin-Oxytocin Systems" as the "hormonal glue" of collect
 ### In ONDA Life
 
 Part 12 "Neural Coupling" practices synchronize attention and breathing rhythms to enter a shared neural field. This is the foundation for collective co-creation — the transition from "I" to "WE" without loss of individuality.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2933,7 +3229,6 @@ Part 12 "Neural Coupling" practices synchronize attention and breathing rhythms 
     shortDescription:
       'The alignment of rhythms across systems — breath, heart, brain waves — between individuals or within the body.',
     content: `
-## Synchronization
 
 **Synchronization** (синхронизация) is the alignment of rhythms — temporal, physiological, or neural — across systems. When two oscillators (or people) synchronize, their cycles align in phase or frequency.
 
@@ -2947,6 +3242,9 @@ Part 12 "Neural Coupling" practices synchronize attention and breathing rhythms 
 ### In ONDA Life
 
 Part 9 engages gamma synchronization for image integrity. Part 11 targets HRV synchronization between partners. Part 12 uses "Intentional Synchronization" for seamless joint task execution. Synchronization is the biological substrate of coordination and collective flow.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2956,7 +3254,6 @@ Part 9 engages gamma synchronization for image integrity. Part 11 targets HRV sy
     shortDescription:
       'The neurohormonal network for trust, bonding, and social cooperation — the biochemical foundation of "We."',
     content: `
-## Oxytocin System
 
 The **oxytocin system** (окситоциновая система) refers to the production, release, and receptor distribution of oxytocin — the hormone of trust, bonding, and social cooperation. It is produced in the hypothalamus and released by the pituitary.
 
@@ -2970,6 +3267,9 @@ The **oxytocin system** (окситоциновая система) refers to th
 ### In ONDA Life
 
 Part 9 links the hippocampus and mPFC for mental modeling. Part 10 "Oxytocin Loops" build social trust. Part 11 "Oxytocin Loop Stimulation" shifts into deep cooperation. Part 12 "Oxytocin Resonance" lowers amygdala reactivity within the group through radical trust. The oxytocin system is central to the transition from "I" to "WE."
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
   {
@@ -2979,7 +3279,6 @@ Part 9 links the hippocampus and mPFC for mental modeling. Part 10 "Oxytocin Loo
     shortDescription:
       'The phenomenon where brain rhythms of multiple individuals operate in a coherent, phase-aligned mode.',
     content: `
-## Inter-brain Coherence
 
 **Inter-brain coherence** (межмозговая когерентность) is the phenomenon where the brain activity of two or more people becomes phase-aligned — their neural rhythms operate in a coherent mode. Coherence implies not just correlation but organized, in-phase oscillation.
 
@@ -2993,6 +3292,9 @@ Part 9 links the hippocampus and mPFC for mental modeling. Part 10 "Oxytocin Loo
 ### In ONDA Life
 
 Part 12 lists "Inter-brain coherence" as a biological marker — alongside group HRV alignment and collective dopamine surges. Together with Gamma Synchronization, it enables collective insight and the instantaneous synthesis of ideas. The group becomes a living neural network.
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+
 `,
   },
 ]

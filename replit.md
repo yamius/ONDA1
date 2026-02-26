@@ -1,5 +1,8 @@
 # ONDA - Mindfulness & Wellness Mobile App
 
+> **Replit:** Preview = основное приложение (`npm run dev`). Deployment = лендинг (build + run из `.replit`).  
+> **Деплой:** push → Replit Shell `git reset --hard origin/main` → Republish. См. `README.md` и `.assistant/MODULE_LANDING.md`.
+
 ## Overview
 
 ONDA is a mobile application for mindfulness and wellness that combines meditation practices with real-time biometric tracking and gamification. The app guides users through progressive "circuits" of consciousness development practices, rewarding completion with virtual currency (OND). It uses real-time health data from Apple Watch, Bluetooth heart rate monitors, and platform health APIs to create adaptive meditation experiences.

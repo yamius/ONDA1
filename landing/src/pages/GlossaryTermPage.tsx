@@ -1,10 +1,44 @@
+import { useEffect } from 'react'
 import { useParams, Link, Navigate } from 'react-router-dom'
 import Markdown from 'react-markdown'
 import { getTermBySlug, glossaryTerms } from '../data/glossary'
 
+const SITE_URL = 'https://onda-life.com'
+
+function setMeta(name: string, content: string, isProperty = false) {
+  const attr = isProperty ? 'property' : 'name'
+  let el = document.querySelector(`meta[${attr}="${name}"]`)
+  if (!el) {
+    el = document.createElement('meta')
+    el.setAttribute(attr, name)
+    document.head.appendChild(el)
+  }
+  el.setAttribute('content', content)
+}
+
 export function GlossaryTermPage() {
   const { slug } = useParams<{ slug: string }>()
   const term = slug ? getTermBySlug(slug) : undefined
+
+  useEffect(() => {
+    if (!term) return
+    const title = `${term.title} | ONDA Life Glossary`
+    const url = `${SITE_URL}/glossary/${term.slug}`
+    document.title = title
+    setMeta('description', term.shortDescription)
+    setMeta('og:title', title, true)
+    setMeta('og:description', term.shortDescription, true)
+    setMeta('og:url', url, true)
+    setMeta('og:type', 'article', true)
+    return () => {
+      document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
+      setMeta('description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
+      setMeta('og:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
+      setMeta('og:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
+      setMeta('og:url', SITE_URL, true)
+      setMeta('og:type', 'website', true)
+    }
+  }, [term])
 
   if (!term) {
     return <Navigate to="/glossary" replace />
@@ -14,8 +48,24 @@ export function GlossaryTermPage() {
     .filter((t) => t.slug !== term.slug && t.category === term.category)
     .slice(0, 3)
 
+  const schemaOrg = {
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTerm',
+    name: term.title,
+    description: term.shortDescription,
+    inDefinedTermSet: {
+      '@type': 'DefinedTermSet',
+      name: 'ONDA Life Glossary',
+      url: `${SITE_URL}/glossary`,
+    },
+  }
+
   return (
     <div className="mx-auto max-w-3xl px-4 pt-20 pb-16 md:px-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
+      />
       {/* Breadcrumb */}
       <div className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30">
         <Link to="/" className="transition-colors hover:text-white/50">
@@ -102,6 +152,16 @@ export function GlossaryTermPage() {
               <code className="rounded bg-white/5 px-1.5 py-0.5 font-mono text-xs text-terminal-green">
                 {children}
               </code>
+            ),
+            a: ({ href, children }) => (
+              <a
+                href={href}
+                target={href?.startsWith('http') ? '_blank' : undefined}
+                rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className="text-terminal-cyan underline decoration-terminal-cyan/30 underline-offset-2 transition-colors hover:text-terminal-cyan/80 hover:decoration-terminal-cyan/50"
+              >
+                {children}
+              </a>
             ),
           }}
         >

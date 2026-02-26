@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
+import { GlossaryTooltip } from '../components/GlossaryTooltip'
 
 export const parts: Record<string, {
   badge: string
@@ -11,6 +12,7 @@ export const parts: Record<string, {
   results: { intro: string; items: string[] }
   outro: string
   glossaryLinks: { label: string; slug: string }[]
+  researchLinks?: { label: string; url: string }[]
 }> = {
   'i-am': {
     badge: '[ PART 1 — LEVEL 1: BODY / TERRA ]',
@@ -84,6 +86,11 @@ export const parts: Record<string, {
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
       { label: 'Molecular Psychology', slug: 'molecular-psychology' },
     ],
+    researchLinks: [
+      { label: 'Diaphragmatic breathing & HRV', url: 'https://pubmed.ncbi.nlm.nih.gov/19246382/' },
+      { label: 'HRV & vagal tone', url: 'https://pubmed.ncbi.nlm.nih.gov/19463818/' },
+      { label: 'Polyvagal Theory', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+    ],
   },
   'i-move': {
     badge: '[ PART 2 — LEVEL 1: BODY / TERRA ]',
@@ -145,6 +152,10 @@ export const parts: Record<string, {
       { label: 'Parasympathetic System', slug: 'parasympathetic-nervous-system' },
       { label: 'Biocomputer', slug: 'biocomputer' },
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
+    ],
+    researchLinks: [
+      { label: 'HRV & rhythmic coherence', url: 'https://pubmed.ncbi.nlm.nih.gov/19463818/' },
+      { label: 'Resonance breathing', url: 'https://pubmed.ncbi.nlm.nih.gov/19246382/' },
     ],
   },
   'i-adapt': {
@@ -213,6 +224,10 @@ export const parts: Record<string, {
       { label: 'Body Armor', slug: 'body-armor' },
       { label: 'Biocomputer', slug: 'biocomputer' },
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
+    ],
+    researchLinks: [
+      { label: 'Interoception & insula', url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/' },
+      { label: 'HRV & vagal tone', url: 'https://pubmed.ncbi.nlm.nih.gov/19463818/' },
     ],
   },
   'i-maneuver': {
@@ -493,6 +508,9 @@ export const parts: Record<string, {
       { label: 'Brain', slug: 'brain' },
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
     ],
+    researchLinks: [
+      { label: 'Neuroplasticity', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+    ],
   },
   'i-focus': {
     badge: '[ PART 8 — LEVEL 3: MIND / AER ]',
@@ -564,6 +582,9 @@ export const parts: Record<string, {
       { label: 'Vagus Nerve', slug: 'vagus-nerve' },
       { label: 'Cognitive Gap', slug: 'cognitive-gap' },
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
+    ],
+    researchLinks: [
+      { label: 'Neuroplasticity', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
     ],
   },
   'i-shape-the-vision': {
@@ -656,6 +677,10 @@ export const parts: Record<string, {
       { label: 'Alpha State', slug: 'alpha-state' },
       { label: 'Theta State', slug: 'theta-state' },
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
+    ],
+    researchLinks: [
+      { label: 'Neuroplasticity', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Hemispheric synchronization', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
     ],
   },
   'i-express': {
@@ -1022,6 +1047,28 @@ export function PartPage() {
         ))}
       </div>
 
+      {/* Research Links */}
+      {part.researchLinks && part.researchLinks.length > 0 && (
+        <div className="border-t border-white/5 pt-10">
+          <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
+            <span className="text-terminal-green">Research</span> Basis
+          </h2>
+          <div className="mb-10 flex flex-wrap gap-2">
+            {part.researchLinks.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg border border-terminal-cyan/20 bg-terminal-cyan/5 px-3 py-1.5 font-mono text-xs text-terminal-cyan transition-all hover:border-terminal-cyan/40 hover:bg-terminal-cyan/10"
+              >
+                {link.label} ↗
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
       {/* Glossary Links */}
       <div className="border-t border-white/5 pt-10">
         <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
@@ -1029,13 +1076,12 @@ export function PartPage() {
         </h2>
         <div className="flex flex-wrap gap-2">
           {part.glossaryLinks.map((link) => (
-            <Link
+            <GlossaryTooltip
               key={link.slug}
-              to={`/glossary/${link.slug}`}
+              label={link.label}
+              slug={link.slug}
               className="rounded-lg border border-terminal-cyan/20 bg-terminal-cyan/5 px-3 py-1.5 font-mono text-xs text-terminal-cyan transition-all hover:border-terminal-cyan/40 hover:bg-terminal-cyan/10"
-            >
-              {link.label}
-            </Link>
+            />
           ))}
         </div>
       </div>

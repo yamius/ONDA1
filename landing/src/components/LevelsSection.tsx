@@ -5,6 +5,11 @@ interface PartData {
   slug?: string
 }
 
+interface ResearchLink {
+  label: string
+  url: string
+}
+
 interface LevelData {
   number: number
   emoji: string
@@ -13,6 +18,8 @@ interface LevelData {
   color: string
   borderColor: string
   accentColor: string
+  description?: string
+  researchLinks?: ResearchLink[]
 }
 
 const levels: LevelData[] = [
@@ -28,6 +35,7 @@ const levels: LevelData[] = [
     color: 'from-purple-500/20 to-purple-900/10',
     borderColor: 'border-purple-500/20',
     accentColor: 'text-purple-400',
+    description: 'Breathing, diaphragm, and HRV — the foundation of parasympathetic activation.',
   },
   {
     number: 2,
@@ -41,6 +49,7 @@ const levels: LevelData[] = [
     color: 'from-cyan-500/20 to-cyan-900/10',
     borderColor: 'border-cyan-500/20',
     accentColor: 'text-cyan-400',
+    description: 'HPA axis, DHEA, and Mirror Neurons — the architecture of emotional mastery.',
   },
   {
     number: 3,
@@ -93,6 +102,11 @@ const levels: LevelData[] = [
     color: 'from-indigo-500/20 to-indigo-900/10',
     borderColor: 'border-indigo-500/20',
     accentColor: 'text-indigo-400',
+    description: 'Neuroplasticity and hemispheric synchronization.',
+    researchLinks: [
+      { label: 'Neuroplasticity', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Hemispheric synchronization', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
+    ],
   },
   {
     number: 7,
@@ -149,20 +163,34 @@ export function LevelsSection() {
   )
 }
 
+const levelsWithPages = [1, 2] // Levels that have dedicated parent pages
+
 function LevelCard({ level }: { level: LevelData }) {
+  const hasLevelPage = levelsWithPages.includes(level.number)
   return (
     <div
       className={`glass-card rounded-xl border ${level.borderColor} bg-gradient-to-br ${level.color} p-4 transition-all hover:scale-[1.02] md:p-6`}
     >
       <div className="mb-3 flex items-center justify-between">
         <span className={`font-mono text-xs font-semibold ${level.accentColor}`}>
-          Level {level.number}
+          {hasLevelPage ? (
+            <Link to={`/level/${level.number}`} className="transition-colors hover:opacity-80">
+              Level {level.number} →
+            </Link>
+          ) : (
+            `Level ${level.number}`
+          )}
         </span>
         <span className="text-2xl">{level.emoji}</span>
       </div>
-      <h3 className="mb-2 font-mono text-lg font-bold tracking-wide">
+      <h3 className="mb-2 font-mono text-xl font-bold tracking-wide text-white md:text-2xl">
         {level.name}
       </h3>
+      {level.description && (
+        <p className="mb-3 font-mono text-[11px] leading-relaxed text-white/40">
+          {level.description}
+        </p>
+      )}
       <div className="flex flex-col gap-0.5 font-mono text-[11px] leading-relaxed text-white/40">
         {level.parts.map((part) =>
           part.slug ? (
@@ -174,10 +202,25 @@ function LevelCard({ level }: { level: LevelData }) {
               {part.label} →
             </Link>
           ) : (
-            <span key={part.label} className="px-1 py-0.5">{part.label}</span>
+            <span key={part.label} className={`px-1 py-0.5 ${level.accentColor}`}>{part.label}</span>
           )
         )}
       </div>
+      {level.researchLinks && level.researchLinks.length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-1.5 border-t border-white/5 pt-3">
+          {level.researchLinks.map((link) => (
+            <a
+              key={link.url}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`rounded px-1.5 py-0.5 font-mono text-[10px] transition-colors hover:bg-white/5 hover:text-white/70 ${level.accentColor}`}
+            >
+              {link.label} ↗
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

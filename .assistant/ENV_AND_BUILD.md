@@ -43,8 +43,9 @@ npm run build
 npm run build
 
 # --- Лендинг (отдельный проект в landing/) ---
-# Локальная разработка лендинга
-cd landing && npm install && npm run dev
+# Локальная разработка лендинга (порт 5173)
+npm run dev:landing
+# или: cd landing && npm install && npm run dev
 
 # Сборка и запуск лендинга (как на Replit Deployment)
 cd landing && npm install && npm run build && npm run start
@@ -57,6 +58,6 @@ cd landing && npm install && npm run build && npm run start
 | Что | Папка | Dev-команда | Порт | Replit |
 |-----|-------|-------------|------|--------|
 | Приложение | корень (`src/`) | `npm run dev` | 5000 | Preview |
-| Лендинг | `landing/` | `cd landing && npm run dev` | 5173 | Deployment |
+| Лендинг | `landing/` | `npm run dev:landing` | 5173 | Deployment |
 
 Подробнее: `.assistant/MODULE_LANDING.md`

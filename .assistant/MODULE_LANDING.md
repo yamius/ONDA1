@@ -21,9 +21,9 @@ ONDA1/
 | Что | Где | Как запускается |
 |-----|-----|-----------------|
 | **Мобильное приложение** | `src/` (корень) | `npm run dev` (порт 5000), сборка через Capacitor |
-| **Лендинг** | `landing/` | `cd landing && npm run dev` (порт 5173) |
+| **Лендинг** | `landing/` | `npm run dev:landing` или `cd landing && npm run dev` (порт 5173) |
 | **Replit Preview** | — | Основное приложение (workflow → `npm run dev`) |
-| **Replit Deployment** | — | Лендинг (`cd landing && npm install && npm run build && npm run start`) |
+| **Replit Deployment** | — | Лендинг (build: `npm run build`, run: `node server.js` — см. `.replit`) |
 
 ### Домены
 
@@ -91,6 +91,7 @@ landing/
 | `/` | HomePage | Главная с секциями Hero, Concept, Levels, Features, CTA |
 | `/about` | AboutPage | О проекте ONDA Life (стиль заголовков с градиентами) |
 | `/part/:slug` | PartPage | Детальное описание Part (например `/part/i-am`) |
+| `/level/:number` | LevelPage | Агрегированное описание уровня (например `/level/1`, `/level/2`) |
 | `/glossary` | GlossaryPage | Список терминов с поиском и фильтрами по категориям |
 | `/glossary/:slug` | GlossaryTermPage | Отдельная страница термина (Markdown-контент) |
 
@@ -190,22 +191,28 @@ for Your Consciousness → text-white
 
 Файл: `landing/src/data/glossary.ts`
 
+**Структура без дублирования:** страница рендерит `title` (H1) и `shortDescription` отдельно. В `content` **не повторяй** заголовок — начинай сразу с уникального текста. См. `.cursorrules` → «Глоссарий».
+
 Добавить объект в массив `glossaryTerms`:
 
 ```typescript
 {
   slug: 'term-slug',           // URL: /glossary/term-slug
-  title: 'Term Title',         // Заголовок
+  title: 'Term Title',         // Заголовок (H1 рендерится шаблоном)
   category: 'Category Name',   // Категория (для фильтрации)
-  shortDescription: '...',     // Краткое описание (на карточке)
+  shortDescription: '...',     // Одно предложение (карточка + под заголовком)
   content: `
-## Markdown Content
+### Первая секция
 
-Полное описание термина в формате **Markdown**.
-Поддерживаются: заголовки, списки, таблицы, жирный текст, код.
+Начинай сразу с контента — **без** повторения заголовка (## Term Title).
+Используй ### для подзаголовков, Markdown для списков, таблиц, **жирного** текста.
 `,
 }
 ```
+
+### Структура страницы термина (GlossaryTermPage)
+
+Рендерится в порядке: breadcrumb → category badge → **H1** (`title`) → **shortDescription** → `content` (Markdown). Поэтому `content` не должен дублировать заголовок — иначе SEO-дублирование.
 
 ### Текущие категории и термины
 
@@ -216,7 +223,10 @@ for Your Consciousness → text-white
 
 ### SEO и SSG
 
-Каждый термин и Part — отдельная страница с уникальным URL. **SSG включён**: после `vite build` запускается `scripts/prerender.ts`, который через Puppeteer генерирует статический HTML для каждого маршрута. Результат: `dist/about/index.html`, `dist/glossary/term-slug/index.html`, `dist/part/part-slug/index.html` — каждый URL = отдельный HTML-файл для индексации.
+Каждый термин и Part — отдельная страница с уникальным URL. Для страниц терминов глоссария настроено:
+- **Meta description** — из `shortDescription`
+- **Open Graph** — og:title, og:description, og:url, og:type (article)
+- **Schema.org** — JSON-LD `DefinedTerm` для каждого термина **SSG включён**: после `vite build` запускается `scripts/prerender.ts`, который через Puppeteer генерирует статический HTML для каждого маршрута. Результат: `dist/about/index.html`, `dist/glossary/term-slug/index.html`, `dist/part/part-slug/index.html` — каждый URL = отдельный HTML-файл для индексации.
 
 **Полная автоматизация маршрутов** — всё берётся из `src/config/routes.ts`:
 - **Термины глоссария** — из `glossary.ts` (добавил термин → prerender подхватит)
@@ -330,8 +340,10 @@ run = ["bash", "-c", "cd landing && npm install && node server.js"]
 ## Локальная разработка
 
 ```bash
-# Запуск dev-сервера
+# Запуск dev-сервера лендинга (порт 5173)
 cd landing && npm install && npm run dev
+# или из корня:
+npm run dev:landing
 # → http://localhost:5173/
 
 # Сборка production

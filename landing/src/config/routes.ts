@@ -8,6 +8,7 @@ import { AboutPage } from '../pages/AboutPage'
 import { GlossaryPage } from '../pages/GlossaryPage'
 import { glossaryTerms } from '../data/glossary'
 import { parts } from '../pages/PartPage'
+import { levelsData } from '../data/levels'
 
 /** Статические маршруты (без параметров в path) */
 export const staticRoutes: { path: string; component: ComponentType }[] = [
@@ -22,5 +23,6 @@ export function getPrerenderRoutes(): string[] {
     ...staticRoutes.map((r) => r.path),
     ...glossaryTerms.map((t) => `/glossary/${t.slug}`),
     ...Object.keys(parts).map((s) => `/part/${s}`),
+    ...Object.keys(levelsData).map((n) => `/level/${n}`),
   ]
 }

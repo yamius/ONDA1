@@ -5,6 +5,7 @@ import './index.css'
 import { Layout } from './components/Layout'
 import { GlossaryTermPage } from './pages/GlossaryTermPage'
 import { PartPage } from './pages/PartPage'
+import { LevelPage } from './pages/LevelPage'
 import { staticRoutes } from './config/routes'
 
 createRoot(document.getElementById('root')!).render(
@@ -17,6 +18,7 @@ createRoot(document.getElementById('root')!).render(
           ))}
           <Route path="/glossary/:slug" element={<GlossaryTermPage />} />
           <Route path="/part/:slug" element={<PartPage />} />
+          <Route path="/level/:number" element={<LevelPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

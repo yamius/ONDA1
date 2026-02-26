@@ -13,14 +13,12 @@ export function HeroSection() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-32 md:pt-20">
       {/* Background image with parallax (moves at 50% scroll speed) */}
-      <div
-        className="absolute inset-0 opacity-40"
-        style={{
-          backgroundImage: 'url(/hero-bg.png)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          transform: `translateY(${scrollY * 0.5}px)`,
-        }}
+      <img
+        src="/hero-bg.png"
+        alt="ONDA Life app — biohacking and HRV tracker interface"
+        className="absolute inset-0 h-full w-full object-cover opacity-40"
+        style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+        fetchPriority="high"
       />
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
@@ -53,6 +51,7 @@ export function HeroSection() {
           <a
             href="#download"
             className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-2 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 sm:w-auto"
+            aria-label="Download ONDA Life app"
           >
             <DownloadIcon />
             <span>Download Now</span>
@@ -68,7 +67,7 @@ export function HeroSection() {
 
         {/* Scroll indicator */}
         <div className="flex justify-center pb-4 md:pb-8">
-          <div className="animate-bounce text-cyan-400/60">
+          <div className="animate-bounce text-cyan-400/60" aria-hidden="true">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M12 5v14M5 12l7 7 7-7" />
             </svg>
@@ -81,7 +80,7 @@ export function HeroSection() {
 
 function DownloadIcon() {
   return (
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
       <polyline points="7 10 12 15 17 10" />
       <line x1="12" y1="15" x2="12" y2="3" />
