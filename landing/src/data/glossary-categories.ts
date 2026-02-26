@@ -88,6 +88,11 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   'lymphatic-system': 'Biological Software',
   peristalsis: 'Biological Software',
   'enteric-nervous-system': 'Biological Software',
+  serotonin: 'Biological Software',
+  microbiome: 'Biological Software',
+  'blood-brain-barrier': 'Neural Hardware',
+  'co2-tolerance': 'OS States',
+  'nitric-oxide': 'Biological Software',
   psychoneuroimmunology: 'Biological Software',
   // OS States
   'flow-state': 'OS States',

@@ -27,7 +27,7 @@ export function GlossaryTooltip({ label, slug, className }: GlossaryTooltipProps
         {label}
       </Link>
       {show && description && (
-        <div className="absolute bottom-full left-1/2 z-50 mb-2 max-w-xs -translate-x-1/2 rounded-lg border border-terminal-cyan/30 bg-black/95 px-3 py-2 font-mono text-xs leading-relaxed text-white/80 shadow-xl">
+        <div className="absolute bottom-full left-1/2 z-50 mb-2 w-max max-w-md -translate-x-1/2 rounded-lg border border-terminal-cyan/30 bg-black/95 px-3 py-2 font-mono text-xs leading-relaxed text-white/80 shadow-xl">
           {description}
         </div>
       )}

@@ -8,8 +8,16 @@ import dopamineArticle from './dopamine-architecture-mastering-desire'
 import circadianArticle from './circadian-reset-mastering-light'
 import metabolicArticle from './metabolic-flexibility-dual-fuel-system'
 import neuroplasticityArticle from './neuroplasticity-flow-overclocking'
+import gutBrainArticle from './gut-brain-axis-data-link'
+import breathworkArticle from './breathwork-command-line-interface'
+import hrvArticle from './hrv-training-nervous-system-latency'
+import digitalDementiaArticle from './digital-dementia-attentional-control'
+import longevityArticle from './longevity-hardware-cellular-cleanup'
+import cognitiveArticle from './cognitive-architecture-nootropic-stacks'
+import mitochondrialArticle from './mitochondrial-biogenesis-cellular-power-grid'
+import circadianLightingArticle from './circadian-lighting-dark-therapy'
 
-export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle]
+export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle]
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug)

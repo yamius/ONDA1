@@ -27,7 +27,7 @@ const article: Article = {
     linkText: 'Vagus Nerve Protocol',
   },
   content: `
-## [ ARTICLE INTRO ]
+## [ SYSTEM CLOCK SYNC ]
 
 > "Your biology doesn't run on clock time; it runs on light code. Deep inside your hypothalamus lies the Suprachiasmatic Nucleus (SCN)—a master oscillator that synchronizes every cellular clock in your body. In the ONDA model, this is your System Clock.
 >

@@ -27,7 +27,7 @@ const article: Article = {
     linkText: 'Metabolic Flexibility Protocol',
   },
   content: `
-## [ ARTICLE INTRO ]
+## [ REWRITING NEURAL CODE ]
 
 > "Your brain is not a static piece of hardware; it is 'wetware'—constantly reconfiguring itself based on the data it processes. This is Neuroplasticity. Every thought, action, and environment either strengthens or prunes your neural connections.
 >

@@ -9,6 +9,22 @@ import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 const SITE_URL = 'https://ondalife.replit.app'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
+const ARTICLE_SYNC_TIMES: Record<string, string> = {
+  'vagus-nerve-master-key': '4 min 20 sec',
+  'dopamine-architecture-mastering-desire': '5 min 15 sec',
+  'circadian-reset-mastering-light': '3 min 45 sec',
+  'metabolic-flexibility-dual-fuel-system': '6 min 10 sec',
+  'neuroplasticity-flow-overclocking': '5 min 30 sec',
+  'gut-brain-axis-data-link': '4 min 50 sec',
+  'breathwork-command-line-interface': '2 min 30 sec',
+  'hrv-training-nervous-system-latency': '3 min 50 sec',
+  'digital-dementia-attentional-control': '4 min 10 sec',
+  'longevity-hardware-cellular-cleanup': '7 min 05 sec',
+  'cognitive-architecture-nootropic-stacks': '5 min 40 sec',
+  'mitochondrial-biogenesis-cellular-power-grid': '6 min 15 sec',
+  'circadian-lighting-dark-therapy': '5 min 20 sec',
+}
+
 function extractText(node: React.ReactNode): string {
   if (typeof node === 'string') return node
   if (typeof node === 'number') return String(node)
@@ -75,18 +91,40 @@ export function ArticlePage() {
     .slice(0, 5)
 
   const markdownComponents = {
-    h2: ({ children }: { children?: React.ReactNode }) => (
-      <h2 className="mb-4 mt-10 text-2xl font-bold tracking-tight first:mt-0">
-        {children}
-      </h2>
-    ),
+    h2: ({ children }: { children?: React.ReactNode }) => {
+      const text = typeof children === 'string' ? children : String(children)
+      const isSystemStatus = text.includes('System Status') && article.slug === 'gut-brain-axis-data-link'
+      const isCLIStatus = text.includes('CLI Active') && article.slug === 'breathwork-command-line-interface'
+      const isHRVStatus = text.includes('SCANNING HRV') && article.slug === 'hrv-training-nervous-system-latency'
+      const isFirewallStatus = text.includes('FIREWALL: ACTIVE') && article.slug === 'digital-dementia-attentional-control'
+      const isLongevityStatus = text.includes('SYSTEM LIFESPAN: EXTENDED') && article.slug === 'longevity-hardware-cellular-cleanup'
+      const isStatusBlock = isSystemStatus || isCLIStatus || isHRVStatus || isFirewallStatus || isLongevityStatus
+      const isTechIntro = /^\[.*\]$/.test(text.trim()) && !isStatusBlock
+      return (
+        <h2
+          className={`mb-4 mt-10 text-xl font-bold tracking-tight md:text-2xl first:mt-0 ${
+            isStatusBlock ? 'font-mono tracking-wider text-terminal-green/90 text-[13.9px] [text-shadow:0_0_12px_rgba(74,222,128,0.76)]' : ''
+          } ${
+            isTechIntro ? 'font-mono tracking-wider text-terminal-green/90 text-[13.9px] [text-shadow:0_0_12px_rgba(74,222,128,0.76)]' : ''
+          }`}
+        >
+          {children}
+        </h2>
+      )
+    },
     h3: ({ children }: { children?: React.ReactNode }) => {
       const text = typeof children === 'string' ? children : String(children)
-      const isProtocol = text.startsWith('PROTOCOL ')
-      const isNeuroplasticityProtocol = isProtocol && article.slug === 'neuroplasticity-flow-overclocking'
+      const isProtocol = text.startsWith('PROTOCOL ') || text.startsWith('PROTOCOL_')
+      const isGutBrainProtocol = isProtocol && article.slug === 'gut-brain-axis-data-link'
+      const isBreathworkProtocol = isProtocol && article.slug === 'breathwork-command-line-interface'
+      const isHRVProtocol = isProtocol && article.slug === 'hrv-training-nervous-system-latency'
+      const isDigitalDementiaProtocol = isProtocol && article.slug === 'digital-dementia-attentional-control'
+      const isLongevityProtocol = isProtocol && article.slug === 'longevity-hardware-cellular-cleanup'
+      const isCognitiveProtocol = isProtocol && article.slug === 'cognitive-architecture-nootropic-stacks'
+      const isMitochondrialProtocol = isProtocol && article.slug === 'mitochondrial-biogenesis-cellular-power-grid'
+      const isCircadianLightingProtocol = isProtocol && article.slug === 'circadian-lighting-dark-therapy'
       return (
-        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''}`}>
-          {isNeuroplasticityProtocol && <span className="mr-2" aria-hidden="true">🧠 </span>}
+        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
           {children}
         </h3>
       )
@@ -122,6 +160,46 @@ export function ArticlePage() {
       const isAmberIntro = article.introStyle === 'amber' && content.includes('light code')
       const isEmeraldIntro = article.introStyle === 'emerald' && content.includes('hybrid engine')
       const isBlueIntro = article.introStyle === 'blue' && content.includes('wetware')
+      const isOrangeIntro = article.introStyle === 'orange' && content.includes('second brain')
+      const isCyanIntro = article.introStyle === 'cyan' && content.includes('Command Line Interface')
+      const isRoseIntro = article.introStyle === 'rose' && content.includes('diagnostic report')
+      const isIndigoIntro = article.introStyle === 'indigo' && content.includes('Attention Leeches')
+      const isGoldIntro = article.introStyle === 'gold' && content.includes('Zombie Cells')
+      const isSlateIntro =
+        article.introStyle === 'slate' &&
+        (content.includes('pharmacological patches') || content.includes('cellular power plants'))
+      const isLongevityProtocol =
+        isHackBlock &&
+        (content.includes('36-to-72 hour') ||
+          content.includes('water-only fast') ||
+          content.includes('Quercetin') ||
+          content.includes('Fisetin') ||
+          content.includes('Sauna-Cold') ||
+          content.includes('sauna') ||
+          content.includes('cold exposure'))
+      const isDigitalDementiaProtocol =
+        isHackBlock &&
+        (content.includes('60 minutes after waking') ||
+          content.includes('Forest') ||
+          content.includes('90 minutes of one') ||
+          content.includes('zero digital devices') ||
+          content.includes('analog activities'))
+      const isRoseProtocol =
+        isHackBlock &&
+        (content.includes('Morning Baseline Scan') ||
+          content.includes('Biofeedback Resync') ||
+          content.includes('Cold Exposure Spike'))
+      const isCyanProtocol =
+        isHackBlock &&
+        (content.includes('Box Breathing') ||
+          content.includes('Physiological Sigh') ||
+          content.includes('Nitric Oxide') ||
+          content.includes('Nasal Only'))
+      const isOrangeProtocol =
+        isHackBlock &&
+        (content.includes('Microbiome Patch') ||
+          content.includes('Polyphenol Boost') ||
+          content.includes('Cold Restart'))
       const isBlueProtocol =
         isHackBlock &&
         (content.includes('Deep Work') ||
@@ -136,8 +214,25 @@ export function ArticlePage() {
           content.includes('Glucose Buffer') ||
           content.includes('Post-Meal Movement') ||
           content.includes('Zone 2'))
+      const isCognitiveProtocol =
+        isHackBlock &&
+        ((content.includes('Caffeine') && content.includes('L-Theanine')) ||
+          content.includes('Alpha-GPC') ||
+          content.includes('Bacopa Monnieri') ||
+          content.includes('Magnesium L-Threonate'))
+      const isMitochondrialProtocol =
+        isHackBlock &&
+        (content.includes('sauna') ||
+          content.includes('80°C') ||
+          content.includes('660nm') ||
+          content.includes('850nm') ||
+          content.includes('Red Light') ||
+          content.includes('NAD+') ||
+          content.includes('HIIT'))
       const isMorningProtocol =
         isHackBlock &&
+        !isCognitiveProtocol &&
+        !isMitochondrialProtocol &&
         (content.includes('First Photon') ||
           content.includes('Morning Light') ||
           content.includes('within 30 minutes of waking'))
@@ -156,6 +251,16 @@ export function ArticlePage() {
         blockquoteClass = 'border-l-2 border-emerald-500 bg-emerald-500/5 pl-6 pr-4'
       } else if (isBlueProtocol) {
         blockquoteClass = 'border-l-2 border-blue-500 bg-blue-500/5 pl-6 pr-4'
+      } else if (isOrangeProtocol) {
+        blockquoteClass = 'border-l-2 border-orange-500 bg-orange-500/5 pl-6 pr-4'
+      } else if (isCyanProtocol) {
+        blockquoteClass = 'border-l-2 border-cyan-400 bg-cyan-500/5 pl-6 pr-4'
+      } else if (isRoseProtocol) {
+        blockquoteClass = 'border-l-2 border-rose-500 bg-rose-500/5 pl-6 pr-4'
+      } else if (isDigitalDementiaProtocol) {
+        blockquoteClass = 'border-l-2 border-indigo-500 bg-indigo-500/5 pl-6 pr-4'
+      } else if (isLongevityProtocol) {
+        blockquoteClass = 'border-l-2 border-amber-500 bg-amber-500/5 pl-6 pr-4'
       } else if (isHackBlock) {
         blockquoteClass = 'border-l-2 border-cyan-500/50 bg-cyan-500/5 pl-6 pr-4'
       } else if (isPurpleIntro) {
@@ -166,8 +271,22 @@ export function ArticlePage() {
         blockquoteClass = 'border-l-2 border-emerald-500 bg-emerald-500/5 pl-6 pr-4 rounded-r-lg'
       } else if (isBlueIntro) {
         blockquoteClass = 'border-l-2 border-blue-500 bg-blue-500/5 pl-6 pr-4 rounded-r-lg'
+      } else if (isOrangeIntro) {
+        blockquoteClass = 'border-l-2 border-orange-500 bg-orange-500/5 pl-6 pr-4 rounded-r-lg'
+      } else if (isCyanIntro) {
+        blockquoteClass = 'border-l-2 border-cyan-400 bg-cyan-500/5 pl-6 pr-4 rounded-r-lg'
+      } else if (isRoseIntro) {
+        blockquoteClass = 'border-l-2 border-rose-500 bg-rose-500/5 pl-6 pr-4 rounded-r-lg'
+      } else if (isIndigoIntro) {
+        blockquoteClass = 'border-l-2 border-indigo-500 bg-indigo-500/5 pl-6 pr-4 rounded-r-lg'
+      } else if (isGoldIntro) {
+        blockquoteClass = 'border-l-2 border-amber-500 bg-amber-500/5 pl-6 pr-4 rounded-r-lg'
+      } else if (isSlateIntro) {
+        blockquoteClass = 'border border-slate-800 bg-slate-900/80 pl-6 pr-4 rounded-r-lg'
+      } else if (isCognitiveProtocol || isMitochondrialProtocol) {
+        blockquoteClass = 'border border-slate-800 bg-slate-900/50 pl-6 pr-4 rounded-r-lg'
       }
-      const protocolIcon = isMorningProtocol ? '☀️ ' : isEveningProtocol ? '🌙 ' : isBlueProtocol ? '🧠 ' : ''
+      const protocolIcon = isMorningProtocol ? '☀️ ' : isEveningProtocol ? '🌙 ' : isBlueProtocol ? '🧠 ' : isOrangeProtocol ? '🧬 ' : isCyanProtocol ? '🫁 ' : isRoseProtocol ? '📊 ' : isDigitalDementiaProtocol ? '🛡️ ' : isLongevityProtocol ? '⏳ ' : ''
       return (
         <blockquote className={`my-6 py-4 font-mono text-sm leading-relaxed text-white/70 ${blockquoteClass}`}>
           {protocolIcon && <span className="mr-2" aria-hidden="true">{protocolIcon}</span>}
@@ -224,8 +343,11 @@ export function ArticlePage() {
       <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
         {article.title}
       </h1>
-      <p className="mb-10 font-mono text-sm leading-relaxed text-white/50">
+      <p className="mb-4 font-mono text-sm leading-relaxed text-white/50">
         {article.description}
+      </p>
+      <p className="mb-10 text-right font-mono text-xs text-cyan-500/50">
+        [{ARTICLE_SYNC_TIMES[article.slug] ?? '—'}]
       </p>
 
       <article className="prose-onda">
@@ -245,7 +367,17 @@ export function ArticlePage() {
                 ? 'System Calibration Ready. Download ONDA Life to optimize your Metabolic Flexibility and track fuel switching.'
                 : article.slug === 'neuroplasticity-flow-overclocking'
                   ? 'System Calibration Ready. Download ONDA Life to track Flow State and optimize Neuroplasticity.'
-                  : 'System Calibration Ready. Download ONDA Life to track your Vagus Nerve tone in real-time.'}
+                  : article.slug === 'gut-brain-axis-data-link'
+                    ? 'System Calibration Ready. Download ONDA Life to optimize your Gut-Brain Data Link and Vagus Nerve tone.'
+                    : article.slug === 'breathwork-command-line-interface'
+                      ? 'System Calibration Ready. Download ONDA Life to master the CLI of your breathing and gain Root Access.'
+                      : article.slug === 'hrv-training-nervous-system-latency'
+                        ? 'System Calibration Ready. Download ONDA Life to track HRV and optimize your nervous system latency.'
+                        : article.slug === 'digital-dementia-attentional-control'
+                          ? 'System Calibration Ready. Download ONDA Life to protect your attention and install the firewall.'
+                          : article.slug === 'longevity-hardware-cellular-cleanup'
+                            ? 'System Calibration Ready. Download ONDA Life to track your cellular health and longevity metrics.'
+                            : 'System Calibration Ready. Download ONDA Life to track your Vagus Nerve tone in real-time.'}
         </p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <a

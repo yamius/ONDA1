@@ -18,7 +18,7 @@ const article: Article = {
     linkText: 'Vagus Nerve Protocol',
   },
   content: `
-## [ ARTICLE INTRO ]
+## [ ANALYZING REWARD LOGIC ]
 
 > "Dopamine is not about pleasure. It is about pursuit. It is the biological 'Prediction Error'—the neural delta between what you expect and what you receive. In the ONDA Biocomputer model, Dopamine is the biological substrate of OND Tokens — the internal reward currency used to prioritize tasks and allocate metabolic energy.
 >

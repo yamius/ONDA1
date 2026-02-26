@@ -12,7 +12,7 @@ const article: Article = {
   category: 'Neural Hardware',
   relatedSlugs: ['vagus-nerve', 'parasympathetic-nervous-system', 'heart-rate-variability', 'polyvagal-theory', 'neuroception'],
   content: `
-## [ ARTICLE INTRO ]
+## [ INITIALIZING ADMIN ACCESS ]
 
 > "Vagus Nerve: The Master Key to Your Biocomputer"
 >

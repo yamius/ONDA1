@@ -27,7 +27,7 @@ const article: Article = {
     linkText: 'Circadian Reset Protocol',
   },
   content: `
-## [ ARTICLE INTRO ]
+## [ POWER MANAGEMENT 2.0 ]
 
 > "Your body is a hybrid engine designed to run on two distinct fuel sources: Glucose (Sugar) and Ketones (Fats). In the modern world, most biological systems are 'Glucose-Locked'—trapped in a perpetual cycle of insulin spikes and energy crashes. This is inefficient hardware management.
 >

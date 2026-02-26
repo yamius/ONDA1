@@ -3752,6 +3752,122 @@ The **Enteric Nervous System** (ENS) is a complex network of over 100 million ne
 ### Scientific Basis
 Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
 `,
+    relatedSlugs: ['vagus-nerve', 'microbiome', 'serotonin'],
+  },
+  {
+    slug: 'serotonin',
+    title: 'Serotonin',
+    category: 'Biological Software',
+    shortDescription:
+      'A neurotransmitter regulating mood, sleep, and appetite — 95% produced in the gut by the microbiome.',
+    content: `
+
+**Serotonin** (5-HT) is a key neurotransmitter that regulates mood, sleep, appetite, and social behavior. Remarkably, approximately 95% of the body's serotonin is produced in the gut—not the brain—by enterochromaffin cells and influenced by the microbiome.
+
+### Key Functions
+
+- **Mood regulation** — low serotonin linked to anxiety and depression
+- **Sleep** — precursor to melatonin
+- **Gut-brain axis** — gut-produced serotonin influences brain via the Vagus Nerve
+- **Appetite** — modulates satiety and food intake
+
+### In ONDA Life
+
+A healthy microbiome and diverse fiber intake support serotonin production. The Gut-Brain Axis article covers protocols for optimizing your "Serotonin Factory."
+`,
+    relatedSlugs: ['microbiome', 'vagus-nerve', 'neurotransmitters', 'enteric-nervous-system'],
+  },
+  {
+    slug: 'microbiome',
+    title: 'Microbiome',
+    category: 'Biological Software',
+    shortDescription:
+      'The community of trillions of bacteria, fungi, and viruses in your gut — your "biological modem" for gut-brain communication.',
+    content: `
+
+The **microbiome** is the ecosystem of trillions of microorganisms (bacteria, fungi, viruses) living in your gastrointestinal tract. It acts as a "biological modem"—producing neurotransmitters, metabolites, and signaling molecules that influence your brain via the Vagus Nerve and bloodstream.
+
+### Key Functions
+
+- **Neurotransmitter production** — bacteria produce serotonin, GABA, and other molecules
+- **SCFA production** — fiber fermentation yields short-chain fatty acids that cross the Blood-Brain Barrier
+- **Immune modulation** — shapes systemic inflammation and neuroinflammation
+- **Gut-brain axis** — constant bidirectional communication with the brain
+
+### In ONDA Life
+
+The Gut-Brain Axis article covers protocols for microbiome optimization: prebiotic loading, polyphenol boost, and fasting for microbial reset.
+`,
+    relatedSlugs: ['vagus-nerve', 'serotonin', 'blood-brain-barrier', 'enteric-nervous-system'],
+  },
+  {
+    slug: 'blood-brain-barrier',
+    title: 'Blood-Brain Barrier',
+    category: 'Neural Hardware',
+    shortDescription:
+      'A selective membrane that controls which molecules enter the brain from the bloodstream — protecting and filtering neural tissue.',
+    content: `
+
+The **Blood-Brain Barrier** (BBB) is a semi-permeable membrane of endothelial cells that separates the bloodstream from the brain's extracellular fluid. It tightly controls which molecules can enter the brain—protecting neural tissue from toxins while allowing essential nutrients and signaling molecules.
+
+### Key Functions
+
+- **Protection** — blocks pathogens, toxins, and many drugs
+- **Selective transport** — allows glucose, amino acids, and specific metabolites
+- **SCFA passage** — short-chain fatty acids from gut fermentation can cross and reduce neuroinflammation
+- **Gut-brain link** — microbiome metabolites influence brain health through BBB transport
+
+### In ONDA Life
+
+Prebiotic fiber and a healthy microbiome produce SCFAs that cross the Blood-Brain Barrier to support cognitive function. See the Gut-Brain Axis article.
+`,
+    relatedSlugs: ['microbiome', 'neurotransmitters'],
+  },
+  {
+    slug: 'co2-tolerance',
+    title: 'CO2 Tolerance',
+    category: 'OS States',
+    shortDescription:
+      'Your body\'s ability to tolerate elevated CO2 before triggering a breath urge — like RAM for metabolic stress resilience.',
+    content: `
+
+**CO2 Tolerance** is your body's capacity to tolerate elevated carbon dioxide levels before the brainstem triggers an urgent breath response. Contrary to popular belief, the primary driver of the urge to breathe is CO2 accumulation—not lack of oxygen.
+
+### Key Functions
+
+- **Metabolic buffer** — higher tolerance = more capacity under stress
+- **Oxygen delivery** — the Bohr effect: CO2 helps release oxygen from hemoglobin to tissues
+- **Prefrontal cortex** — high CO2 tolerance supports cognitive clarity under pressure
+- **Trainable** — breath-hold exercises and controlled breathing can increase tolerance
+
+### In ONDA Life
+
+The Breathwork CLI article covers protocols (Box Breathing, Physiological Sigh) that improve CO2 tolerance and give you Root Access to your nervous system.
+`,
+    relatedSlugs: ['vagus-nerve', 'diaphragm', 'prefrontal-cortex'],
+  },
+  {
+    slug: 'nitric-oxide',
+    title: 'Nitric Oxide',
+    category: 'Biological Software',
+    shortDescription:
+      'A potent vasodilator produced in the paranasal sinuses — nasal breathing boosts NO and increases oxygen uptake by ~20%.',
+    content: `
+
+**Nitric Oxide** (NO) is a signaling molecule that dilates blood vessels, improving blood flow and oxygen delivery. Your paranasal sinuses produce NO continuously; nasal breathing carries it into the lungs, where it enhances gas exchange.
+
+### Key Functions
+
+- **Vasodilation** — widens blood vessels for better perfusion
+- **Oxygen uptake** — nasal breathing increases oxygen absorption by ~20%
+- **Air conditioning** — nasal passages filter, warm, and humidify air
+- **Antimicrobial** — NO has mild antimicrobial properties in the respiratory tract
+
+### In ONDA Life
+
+The Breathwork CLI article recommends strict nasal breathing for low-to-moderate intensity as the "Nitric Oxide Boost" protocol.
+`,
+    relatedSlugs: ['vagus-nerve', 'diaphragm', 'autonomic-nervous-system'],
   },
 ]
 
