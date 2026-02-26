@@ -4,6 +4,25 @@
  * Skips replacements inside existing markdown links and code blocks.
  */
 
+import { glossaryTerms } from '../data/glossary'
+
+/** Common abbreviations for glossary terms (used in articles). */
+const ARTICLE_ABBREVIATIONS: { pattern: RegExp; slug: string }[] = [
+  { pattern: /\bHRV\b/gi, slug: 'heart-rate-variability' },
+]
+
+/** Build patterns from glossary terms for article linking. Longest titles first to avoid partial matches. */
+function buildArticleTermPatterns(): { pattern: RegExp; slug: string }[] {
+  const fromTerms = glossaryTerms
+    .map((t) => ({ title: t.title, slug: t.slug }))
+    .sort((a, b) => b.title.length - a.title.length)
+    .map(({ title, slug }) => ({
+      pattern: new RegExp(`\\b${title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'gi'),
+      slug,
+    }))
+  return [...fromTerms, ...ARTICLE_ABBREVIATIONS]
+}
+
 /** Map: regex pattern (case-insensitive) -> glossary slug. Order: longest phrases first. */
 const TERM_PATTERNS: { pattern: RegExp; slug: string }[] = [
   { pattern: /\bprefrontal cortex\b/gi, slug: 'prefrontal-cortex' },
@@ -30,6 +49,14 @@ const CREATED_LINK_PREFIX = '\x01GLOSSARY_CREATED_'
  * @param currentSlug Slug of the term being viewed — self-mentions are not linked
  */
 export function injectGlossaryLinks(content: string, currentSlug: string): string {
+  return injectGlossaryLinksWithPatterns(content, currentSlug, TERM_PATTERNS)
+}
+
+function injectGlossaryLinksWithPatterns(
+  content: string,
+  currentSlug: string,
+  patterns: { pattern: RegExp; slug: string }[]
+): string {
   // 1. Protect existing markdown links [text](url) - replace with placeholders
   const linkMatches: string[] = []
   let protectedContent = content.replace(/\[([^\]]*)\]\(([^)]*)\)/g, (_, text, url) => {
@@ -48,7 +75,7 @@ export function injectGlossaryLinks(content: string, currentSlug: string): strin
 
   // 3. Replace term mentions with internal links (skip self-linking). Use placeholders so overlapping patterns don't corrupt.
   const createdLinks: string[] = []
-  for (const { pattern, slug } of TERM_PATTERNS) {
+  for (const { pattern, slug } of patterns) {
     if (slug === currentSlug) continue
     protectedContent = protectedContent.replace(pattern, (match) => {
       const link = `[${match}](/glossary/${slug})`
@@ -77,4 +104,12 @@ export function injectGlossaryLinks(content: string, currentSlug: string): strin
   )
 
   return protectedContent
+}
+
+/**
+ * Injects glossary links into article content. Uses all glossary terms for auto-linking.
+ * For articles there is no "self" to skip — all term mentions become links.
+ */
+export function injectArticleGlossaryLinks(content: string): string {
+  return injectGlossaryLinksWithPatterns(content, '__no_self__', buildArticleTermPatterns())
 }

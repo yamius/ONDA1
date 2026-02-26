@@ -18,8 +18,10 @@ const buildDate = new Date().toISOString().split('T')[0]
 function getPriority(route: string): string {
   if (route === '/') return '1.0'
   if (route === '/glossary') return '0.9'
+  if (route === '/articles') return '0.9'
   if (route.startsWith('/level/')) return '0.8'
   if (route.startsWith('/glossary/')) return '0.7'
+  if (route.startsWith('/articles/')) return '0.8'
   return '0.8'
 }
 

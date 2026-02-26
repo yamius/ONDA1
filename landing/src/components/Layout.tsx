@@ -74,6 +74,15 @@ export function Layout() {
               >
                 Glossary
               </Link>
+              <Link
+                to="/articles"
+                onClick={() => setMenuOpen(false)}
+                className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
+                  location.pathname.startsWith('/articles') ? 'text-cyan-400' : 'text-white/70'
+                }`}
+              >
+                Articles
+              </Link>
               <button
                 className="block w-full border-b border-white/5 py-3 text-left text-sm font-medium text-white/70 transition-colors hover:text-white"
               >
@@ -120,6 +129,9 @@ export function Layout() {
             <div className="flex gap-6">
               <Link to="/glossary" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 Glossary
+              </Link>
+              <Link to="/articles" className="text-xs text-white/40 transition-colors hover:text-white/60">
+                Articles
               </Link>
               <a href="mailto:hello@onda-life.com" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 Contact

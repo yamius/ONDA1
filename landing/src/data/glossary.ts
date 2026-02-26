@@ -1,3 +1,5 @@
+import { SLUG_TO_CATEGORY } from './glossary-categories'
+
 export interface GlossaryTerm {
   slug: string
   title: string
@@ -8,7 +10,7 @@ export interface GlossaryTerm {
   relatedSlugs?: string[]
 }
 
-export const glossaryTerms: GlossaryTerm[] = [
+const rawGlossaryTerms: GlossaryTerm[] = [
   {
     slug: 'biocomputer',
     title: 'Biocomputer',
@@ -3355,6 +3357,12 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 `,
   },
 ]
+
+// Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol)
+export const glossaryTerms = rawGlossaryTerms.map((t) => ({
+  ...t,
+  category: SLUG_TO_CATEGORY[t.slug] ?? t.category,
+}))
 
 export const categories = [...new Set(glossaryTerms.map((t) => t.category))]
 

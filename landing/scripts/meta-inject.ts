@@ -7,6 +7,7 @@ import { GLOSSARY_SEO } from '../src/data/glossary-seo'
 import { levelsData } from '../src/data/levels'
 import { PART_SEO } from '../src/data/part-seo'
 import { parts } from '../src/pages/PartPage'
+import { getArticleBySlug } from '../src/data/articles'
 
 const SITE_URL = 'https://ondalife.replit.app'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
@@ -33,6 +34,8 @@ export interface RouteMeta {
   url: string
   breadcrumbs: BreadcrumbItem[]
   definedTerm?: { name: string; description: string; url: string }
+  techArticle?: { name: string; description: string; url: string; datePublished: string }
+  howTo?: { name: string; step: { name: string; text: string }[] }
 }
 
 function buildBreadcrumbs(route: string): BreadcrumbItem[] {
@@ -53,6 +56,17 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({
         name: term?.title ?? segments[1],
         url: `${SITE_URL}/glossary/${segments[1]}`,
+      })
+    }
+    return items
+  }
+  if (segments[0] === 'articles') {
+    items.push({ name: 'Articles', url: `${SITE_URL}/articles` })
+    if (segments[1]) {
+      const article = getArticleBySlug(segments[1])
+      items.push({
+        name: article?.title ?? segments[1],
+        url: `${SITE_URL}/articles/${segments[1]}`,
       })
     }
     return items
@@ -115,6 +129,49 @@ function buildDefinedTermJsonLd(name: string, description: string, url: string):
   return JSON.stringify(term)
 }
 
+function buildTechArticleJsonLd(
+  name: string,
+  description: string,
+  url: string,
+  datePublished: string
+): string {
+  const article = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: name,
+    description,
+    url,
+    datePublished,
+    author: {
+      '@type': 'Organization',
+      name: 'ONDA Life',
+      url: SITE_URL,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'ONDA Life',
+      url: SITE_URL,
+    },
+  }
+  return JSON.stringify(article)
+}
+
+function buildHowToJsonLd(name: string, steps: { name: string; text: string }[], url: string): string {
+  const howTo = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name,
+    url,
+    step: steps.map((s, i) => ({
+      '@type': 'HowToStep',
+      position: i + 1,
+      name: s.name,
+      text: s.text,
+    })),
+  }
+  return JSON.stringify(howTo)
+}
+
 export function getMetaForRoute(route: string): RouteMeta {
   const url = `${SITE_URL}${route === '/' ? '' : route}`
 
@@ -128,6 +185,34 @@ export function getMetaForRoute(route: string): RouteMeta {
   }
   if (route === '/glossary') {
     return { title: GLOSSARY_TITLE, description: GLOSSARY_DESC, url, breadcrumbs }
+  }
+
+  const articlesMatch = route.match(/^\/articles\/([^/]+)$/)
+  if (articlesMatch) {
+    const slug = articlesMatch[1]
+    const article = getArticleBySlug(slug)
+    if (article) {
+      const meta: RouteMeta = {
+        title: `${article.title} | ONDA Life`,
+        description: article.description,
+        url,
+        breadcrumbs,
+        techArticle: {
+          name: article.title,
+          description: article.description,
+          url,
+          datePublished: '2025-02-22',
+        },
+      }
+      if (article.howToSteps && article.howToSteps.length > 0) {
+        meta.howTo = {
+          name: `${article.title} — Practical Protocols`,
+          step: article.howToSteps.map((s) => ({ name: s.name, text: s.text })),
+          url,
+        }
+      }
+      return meta
+    }
   }
 
   const glossaryMatch = route.match(/^\/glossary\/([^/]+)$/)
@@ -213,6 +298,18 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (meta.definedTerm) {
     const definedTermScript = `<script type="application/ld+json">${buildDefinedTermJsonLd(meta.definedTerm.name, meta.definedTerm.description, meta.definedTerm.url)}</script>`
     out = out.replace('</head>', `  ${definedTermScript}\n</head>`)
+  }
+
+  // JSON-LD: TechArticle (article pages only)
+  if (meta.techArticle) {
+    const techArticleScript = `<script type="application/ld+json">${buildTechArticleJsonLd(meta.techArticle.name, meta.techArticle.description, meta.techArticle.url, meta.techArticle.datePublished)}</script>`
+    out = out.replace('</head>', `  ${techArticleScript}\n</head>`)
+  }
+
+  // JSON-LD: HowTo (article pages with protocols)
+  if (meta.howTo) {
+    const howToScript = `<script type="application/ld+json">${buildHowToJsonLd(meta.howTo.name, meta.howTo.step, meta.howTo.url)}</script>`
+    out = out.replace('</head>', `  ${howToScript}\n</head>`)
   }
 
   // Replace <title>...</title>

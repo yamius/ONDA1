@@ -38,7 +38,14 @@ app.use((req, res, next) => {
     const indexHtml = join(distDir, 'index.html')
     if (existsSync(indexHtml)) {
       res.setHeader('Cache-Control', 'no-cache')
-      res.sendFile(indexHtml)
+      // Invalid glossary or article slug: no prerendered file → return 404 so Google gets honest status
+      const isInvalidGlossarySlug = /^glossary\/[^/]+$/.test(cleanPath)
+      const isInvalidArticleSlug = /^articles\/[^/]+$/.test(cleanPath)
+      if (isInvalidGlossarySlug || isInvalidArticleSlug) {
+        res.status(404).sendFile(indexHtml)
+      } else {
+        res.sendFile(indexHtml)
+      }
     } else {
       res.status(404).send('Not found. Run: npm run build')
     }

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
-import { useParams, Link, Navigate } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
+import { NotFoundPage } from './NotFoundPage'
 import Markdown from 'react-markdown'
 import { getTermBySlug, glossaryTerms } from '../data/glossary'
 import { injectGlossaryLinks } from '../utils/glossaryLinks'
@@ -53,7 +54,7 @@ export function GlossaryTermPage() {
   }, [term])
 
   if (!term) {
-    return <Navigate to="/glossary" replace />
+    return <NotFoundPage />
   }
 
   const relatedTerms = term.relatedSlugs
@@ -61,9 +62,16 @@ export function GlossaryTermPage() {
         .map((s) => glossaryTerms.find((t) => t.slug === s))
         .filter((t): t is NonNullable<typeof t> => t != null)
         .slice(0, 5)
-    : glossaryTerms
-        .filter((t) => t.slug !== term.slug && t.category === term.category)
-        .slice(0, 5)
+    : (() => {
+        const sameCategory = glossaryTerms.filter(
+          (t) => t.slug !== term.slug && t.category === term.category
+        )
+        if (sameCategory.length >= 5) return sameCategory.slice(0, 5)
+        const others = glossaryTerms.filter(
+          (t) => t.slug !== term.slug && t.category !== term.category
+        )
+        return [...sameCategory, ...others].slice(0, 5)
+      })()
 
   return (
     <div className="mx-auto max-w-3xl px-4 pt-20 pb-16 md:px-6">

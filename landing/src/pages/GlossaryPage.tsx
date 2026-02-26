@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { glossaryTerms, categories } from '../data/glossary'
+import { glossaryTerms } from '../data/glossary'
+import {
+  CATEGORY_DESCRIPTIONS,
+  FEATURED_TERM_SLUGS,
+  GLOSSARY_CATEGORIES,
+} from '../data/glossary-categories'
 
 const SITE_URL = 'https://ondalife.replit.app'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
@@ -80,6 +85,28 @@ export function GlossaryPage() {
         From molecular psychology to consciousness architecture.
       </p>
 
+      {/* Featured Terms */}
+      <div className="mb-12">
+        <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
+          [ FEATURED TERMS ]
+        </h2>
+        <div className="flex flex-wrap gap-3">
+          {FEATURED_TERM_SLUGS.map((slug) => {
+            const term = glossaryTerms.find((t) => t.slug === slug)
+            if (!term) return null
+            return (
+              <Link
+                key={slug}
+                to={`/glossary/${slug}`}
+                className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/40 transition-all hover:border-white/20 hover:text-white/60"
+              >
+                {term.title}
+              </Link>
+            )
+          })}
+        </div>
+      </div>
+
       {/* Search */}
       <div className="mb-8">
         <div className="relative">
@@ -97,33 +124,40 @@ export function GlossaryPage() {
       </div>
 
       {/* Categories */}
-      <div className="mb-10 flex flex-wrap gap-2 overflow-x-auto pb-2">
-        <button
-          onClick={() => setActiveCategory(null)}
-          className={`rounded-lg border px-4 py-1.5 font-mono text-xs transition-all ${
-            !activeCategory
-              ? 'border-terminal-green/30 bg-terminal-green/10 text-terminal-green'
-              : 'border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
-          }`}
-        >
-          All ({glossaryTerms.length})
-        </button>
-        {categories.map((cat) => {
-          const count = glossaryTerms.filter((t) => t.category === cat).length
-          return (
-            <button
-              key={cat}
-              onClick={() => setActiveCategory(activeCategory === cat ? null : cat)}
-              className={`rounded-lg border px-4 py-1.5 font-mono text-xs transition-all ${
-                activeCategory === cat
-                  ? 'border-terminal-green/30 bg-terminal-green/10 text-terminal-green'
-                  : 'border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
-              }`}
-            >
-              {cat} ({count})
-            </button>
-          )
-        })}
+      <div className="mb-10">
+        <div className="mb-4 flex flex-wrap gap-2 overflow-x-auto pb-2">
+          <button
+            onClick={() => setActiveCategory(null)}
+            className={`rounded-lg border px-4 py-1.5 font-mono text-xs transition-all ${
+              !activeCategory
+                ? 'border-terminal-green/30 bg-terminal-green/10 text-terminal-green'
+                : 'border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
+            }`}
+          >
+            All ({glossaryTerms.length})
+          </button>
+          {GLOSSARY_CATEGORIES.map((cat) => {
+            const count = glossaryTerms.filter((t) => t.category === cat).length
+            return (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(activeCategory === cat ? null : cat)}
+                className={`rounded-lg border px-4 py-1.5 font-mono text-xs transition-all ${
+                  activeCategory === cat
+                    ? 'border-terminal-green/30 bg-terminal-green/10 text-terminal-green'
+                    : 'border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
+                }`}
+              >
+                {cat} ({count})
+              </button>
+            )
+          })}
+        </div>
+        {activeCategory && CATEGORY_DESCRIPTIONS[activeCategory] && (
+          <p className="font-mono text-sm leading-relaxed text-white/40">
+            {CATEGORY_DESCRIPTIONS[activeCategory]}
+          </p>
+        )}
       </div>
 
       {/* Terms grid */}
