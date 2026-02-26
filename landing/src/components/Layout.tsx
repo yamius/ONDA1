@@ -95,13 +95,15 @@ export function Layout() {
               >
                 Download
               </a>
-              <a
-                href="mailto:hello@onda-life.com"
+              <Link
+                to="/contact"
                 onClick={() => setMenuOpen(false)}
-                className="block py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
+                className={`block py-3 text-sm font-medium transition-colors hover:text-white ${
+                  location.pathname === '/contact' ? 'text-cyan-400' : 'text-white/70'
+                }`}
               >
                 Contacts
-              </a>
+              </Link>
             </div>
           </div>
         )}
@@ -126,16 +128,22 @@ export function Layout() {
               <span className="text-cyan-400">{'> ONDA'}</span>
               <span className="text-green-400"> LIFE</span>
             </div>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap justify-center gap-6">
+              <Link to="/about" className="text-xs text-white/40 transition-colors hover:text-white/60">
+                About
+              </Link>
               <Link to="/glossary" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 Glossary
               </Link>
               <Link to="/articles" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 Articles
               </Link>
-              <a href="mailto:hello@onda-life.com" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                Contact
+              <a href="#download" className="text-xs text-white/40 transition-colors hover:text-white/60">
+                Download
               </a>
+              <Link to="/contact" className="text-xs text-white/40 transition-colors hover:text-white/60">
+                Contacts
+              </Link>
             </div>
             <p className="text-xs text-white/20">
               &copy; {new Date().getFullYear()} ONDA Life

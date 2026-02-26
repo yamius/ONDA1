@@ -347,6 +347,183 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 `,
   },
   {
+    slug: 'metabolic-flexibility',
+    title: 'Metabolic Flexibility',
+    category: 'Biological Software',
+    shortDescription:
+      'The ability of mitochondria to seamlessly switch between glucose and fat (ketones) as fuel sources based on availability and demand.',
+    content: `
+
+**Metabolic Flexibility** is the capacity of your cells—especially mitochondria—to switch between fuel sources based on availability and demand. A metabolically flexible system burns glucose when it's abundant and fat (ketones) when glucose is low.
+
+### Key Features
+
+- **Dual-fuel capability** — glucose and ketones as interchangeable energy sources
+- **Insulin sensitivity** — low insulin allows fat oxidation; high insulin blocks it
+- **Mitochondrial health** — efficient mitochondria oxidize fatty acids readily
+- **Stable energy** — no more "glucose-locked" spikes and crashes
+
+### In ONDA Life
+
+Metabolic Flexibility is "Power Management 2.0." When you unlock it, you eliminate brain fog, stabilize mood, and access a near-limitless reserve of stored metabolic energy. The Metabolic Firmware Upgrades (fasting, post-meal movement, Zone 2 training) target this flexibility.
+`,
+  },
+  {
+    slug: 'insulin-sensitivity',
+    title: 'Insulin Sensitivity',
+    category: 'Biological Software',
+    shortDescription:
+      'How responsive your cells are to insulin — high sensitivity means efficient glucose uptake and fat-burning capability.',
+    content: `
+
+**Insulin Sensitivity** describes how well your cells respond to insulin. When sensitivity is high, cells take up glucose efficiently with smaller insulin signals. When sensitivity is low (insulin resistance), the pancreas must pump out more insulin to achieve the same effect—and fat-burning is blocked.
+
+### Key Effects
+
+- **Glucose gatekeeper** — insulin determines which fuel your system burns
+- **Software lock** — high insulin prevents access to stored fat
+- **Fat-burning** — low insulin signals allow fat oxidation and ketone production
+- **Metabolic flexibility** — sensitivity enables seamless fuel switching
+
+### In ONDA Life
+
+To unlock dual-fuel capability, you must master Insulin Sensitivity. Intermittent fasting, post-meal movement, and Zone 2 training all improve this metric. The Metabolic Flexibility article details the protocols.
+`,
+  },
+  {
+    slug: 'glucose-spikes',
+    title: 'Glucose Spikes',
+    category: 'Biological Software',
+    shortDescription:
+      'Rapid rises in blood sugar after eating — followed by insulin spikes and energy crashes. A sign of glucose-locked metabolism.',
+    content: `
+
+**Glucose Spikes** are rapid increases in blood sugar after a meal, often followed by a sharp insulin response and subsequent energy crash. They indicate a "glucose-locked" system—one that struggles to access fat for fuel.
+
+### Why They Matter
+
+- **Energy crash** — spikes lead to crashes; unstable energy throughout the day
+- **Insulin resistance** — chronic spikes can reduce insulin sensitivity over time
+- **Brain fog** — volatile glucose impairs cognitive function
+- **Fat storage** — excess glucose is stored as fat when insulin is high
+
+### In ONDA Life
+
+The Glucose Buffer protocol (10-minute brisk walk after your largest meal) flattens glucose spikes by activating GLUT4 transporters. This pulls glucose into muscle without a massive insulin spike.
+
+`,
+  },
+  {
+    slug: 'mitochondria',
+    title: 'Mitochondria',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The cellular power plants — produce ATP from glucose and fatty acids. Metabolic flexibility depends on their health.',
+    content: `
+
+**Mitochondria** are organelles inside your cells that produce ATP—the energy currency of life. They can oxidize both glucose and fatty acids. Metabolic flexibility depends on mitochondrial health and efficiency.
+
+### Key Functions
+
+- **ATP production** — cellular respiration converts fuel to usable energy
+- **Fat oxidation** — healthy mitochondria burn fatty acids efficiently
+- **Ketone utilization** — mitochondria can burn ketones when glucose is low
+- **Out of shape** — when mitochondria struggle, you become dependent on the next sugar hit
+
+### In ONDA Life
+
+Zone 2 aerobic training specifically targets and "trains" mitochondria to become more efficient at burning fat. The Metabolic Flexibility article details the protocols for mitochondrial optimization.
+`,
+  },
+  {
+    slug: 'atp',
+    title: 'ATP',
+    category: 'Biological Software',
+    shortDescription:
+      'Adenosine triphosphate — the universal energy currency of life. Produced by mitochondria from glucose and fat.',
+    content: `
+
+**ATP** (adenosine triphosphate) is the molecule that stores and transfers energy within cells. Every metabolic process—from muscle contraction to neural firing—depends on ATP. Mitochondria produce ATP from glucose and fatty acids.
+
+### Key Properties
+
+- **Energy currency** — all cells use ATP for work
+- **Continuous production** — mitochondria constantly regenerate ATP
+- **Breakdown product** — ATP breakdown produces adenosine (sleep pressure)
+- **Dual fuel** — ATP can be made from glucose or from fat oxidation
+
+### In ONDA Life
+
+Metabolic flexibility means your mitochondria can produce ATP from either fuel source. When glucose is locked, ATP production suffers—leading to fatigue and brain fog. The Metabolic Firmware Upgrades optimize ATP production capacity.
+`,
+  },
+  {
+    slug: 'ketosis',
+    title: 'Ketosis',
+    category: 'Biological Software',
+    shortDescription:
+      'A metabolic state where the body burns fat and produces ketones for fuel — a high-performance alternative to glucose.',
+    content: `
+
+**Ketosis** is a metabolic state in which the body burns fat and produces ketones (beta-hydroxybutyrate, acetoacetate) as fuel. The brain can use ketones efficiently—often with fewer reactive oxygen species than glucose.
+
+### Key Properties
+
+- **Fat-burning mode** — liver converts fat to ketones when glucose is low
+- **Clean fuel** — ketones produce fewer ROS than glucose for the brain
+- **Stable power** — like switching your CPU to a more stable power supply
+- **Fasting trigger** — extended fasting or ketogenic diet induces ketosis
+
+### In ONDA Life
+
+Ketosis isn't just a diet; it's a high-performance metabolic state. The Fasted Window protocol (intermittent fasting) lowers insulin long enough to initialize fat-burning mode and access ketosis. See the Metabolic Flexibility article.
+`,
+  },
+  {
+    slug: 'autophagy',
+    title: 'Autophagy',
+    category: 'Biological Software',
+    shortDescription:
+      'The cellular cleanup process that removes damaged proteins and organelles — "deletes damaged code" for cellular renewal.',
+    content: `
+
+**Autophagy** (literally "self-eating") is the process by which cells break down and recycle damaged proteins, organelles, and other cellular debris. It is a "cellular cleanup" that removes "damaged code" and supports renewal.
+
+### Key Functions
+
+- **Cellular cleanup** — removes damaged mitochondria, proteins, aggregates
+- **Fasting trigger** — extended low-insulin periods activate autophagy
+- **Longevity** — linked to healthy aging and longevity in research
+- **Metabolic flexibility** — supports mitochondrial health and efficiency
+
+### In ONDA Life
+
+The Fasted Window protocol (intermittent fasting) triggers autophagy by lowering insulin for an extended period. This "deletes" damaged cellular components and supports metabolic flexibility. See the Metabolic Flexibility article.
+`,
+  },
+  {
+    slug: 'ketones',
+    title: 'Ketones',
+    category: 'Biological Software',
+    shortDescription:
+      'Molecules produced from fat when glucose is low — beta-hydroxybutyrate (BHB) and others. A "cleaner" fuel for the brain.',
+    content: `
+
+**Ketones** (ketone bodies) are molecules produced by the liver when the body burns fat for fuel. The main ketone used by the brain is beta-hydroxybutyrate (BHB). Ketones are a "cleaner" fuel—producing fewer reactive oxygen species than glucose.
+
+### Key Properties
+
+- **Fat-derived** — produced when glucose is low and insulin is low
+- **Brain fuel** — the brain can use ketones when glucose is scarce
+- **Stable energy** — fewer spikes and crashes than glucose
+- **Metabolic flexibility** — ketones indicate your system has accessed fat storage
+
+### In ONDA Life
+
+Accessing ketones is like switching your CPU to a more stable power supply. The Fasted Window and Zone 2 protocols support ketone production. See the Metabolic Flexibility article for full protocols.
+`,
+  },
+  {
     slug: 'brain',
     title: 'Brain',
     category: 'Neuroscience',
@@ -490,6 +667,28 @@ ONDA Level 1 aims to establish a stable ventral vagal state — the biological f
 2. [Tracey, Nature (2002)](https://pubmed.ncbi.nlm.nih.gov/11967552/) — cholinergic anti-inflammatory pathway
 3. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — HRV as vagal tone marker
 4. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — Polyvagal Theory
+`,
+  },
+  {
+    slug: 'mammalian-dive-reflex',
+    title: 'Mammalian Dive Reflex',
+    category: 'Neural Hardware',
+    shortDescription:
+      'A set of physiological responses to cold water immersion that optimizes respiration and slows the heart rate, mediated by the vagus nerve.',
+    content: `
+
+The **Mammalian Dive Reflex** is an automatic physiological response triggered when the face is immersed in cold water. It optimizes oxygen use and redirects blood flow. The vagus nerve mediates the heart-rate-slowing component of this reflex.
+
+### Key Effects
+
+- **Bradycardia** — heart rate slows immediately
+- **Peripheral vasoconstriction** — blood shifts to core organs
+- **Vagal activation** — the parasympathetic system takes control
+- **Stress reset** — can interrupt sympathetic dominance
+
+### In ONDA Life
+
+Cold exposure protocols (face immersion, cold showers) leverage the Mammalian Dive Reflex to build vagal resilience. The reflex provides a biological "hard reset" that forces the autonomic nervous system to recalibrate.
 `,
   },
   {
@@ -1157,6 +1356,50 @@ ONDA practices leverage neuroplasticity at every level. Level 1 interoceptive ca
 
 ### Scientific Basis
 Built on: [Neuroplasticity research](https://pubmed.ncbi.nlm.nih.gov/17329479/) (Doidge et al.); [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen).
+`,
+  },
+  {
+    slug: 'bdnf',
+    title: 'BDNF',
+    category: 'Biological Software',
+    shortDescription:
+      'Brain-Derived Neurotrophic Factor — the "Miracle-Gro" for your brain. Supports neuron survival and growth.',
+    content: `
+
+**BDNF** (Brain-Derived Neurotrophic Factor) is a protein that supports the survival of existing neurons and encourages the growth of new ones. It is often called the "Miracle-Gro" for the brain—high levels make your brain more plastic, allowing you to learn new skills and overwrite old habits at an accelerated rate.
+
+### Key Functions
+
+- **Neuron survival** — protects existing neurons from degeneration
+- **Neurogenesis** — supports birth of new neurons, especially in the Hippocampus
+- **Synaptic plasticity** — strengthens connections; enables rapid learning
+- **Flow trigger** — intense exercise triggers massive BDNF release
+
+### In ONDA Life
+
+The Neuroplasticity & Flow article details the BDNF Trigger protocol: 3 minutes of high-intensity movement before learning opens a "Plasticity Window" where your brain is physically more capable of forming new synaptic connections for the next 60–90 minutes.
+`,
+  },
+  {
+    slug: 'myelin',
+    title: 'Myelin',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The insulating sheath around neural pathways — increases signal speed. Rapid myelination = rapid skill acquisition.',
+    content: `
+
+**Myelin** is a fatty insulating sheath that wraps around axons (neural pathways). Each time you repeat a high-quality action, your brain adds more myelin to that pathway—increasing the speed of electrical signals up to 100x. Mastering a skill is essentially a process of rapid myelination.
+
+### Key Properties
+
+- **Insulation** — wraps axons like rubber around a wire
+- **Speed** — myelinated pathways conduct signals faster
+- **Skill** — "practice makes perfect" because practice adds myelin
+- **Quality matters** — only correct repetitions add productive myelin
+
+### In ONDA Life
+
+Mastering Flow is a process of rapid myelination. The Neuroplasticity & Flow article details protocols for entering the Flow State—where high-quality repetitions build myelin on the right circuits. See also Basal Ganglia for habit formation.
 `,
   },
   {
@@ -2287,6 +2530,50 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 `,
   },
   {
+    slug: 'ventral-tegmental-area',
+    title: 'Ventral Tegmental Area',
+    category: 'Neuroscience',
+    shortDescription:
+      'The brainstem nucleus that produces dopamine — core of the reward and motivation circuitry.',
+    content: `
+
+The **Ventral Tegmental Area** (VTA) is a group of neurons in the midbrain that is the primary source of dopamine for the mesolimbic and mesocortical pathways. It projects to the Nucleus Accumbens, prefrontal cortex, and other regions.
+
+### Key Functions
+
+- **Reward signaling** — encodes prediction error and reward anticipation
+- **Motivation** — drives goal-directed behavior
+- **Learning** — reinforces successful actions
+- **Addiction vulnerability** — overstimulation leads to compulsive seeking
+
+### In ONDA Life
+
+Part 8 "Dopamine Calibration" works with VTA-driven motivation. Protecting the VTA from synthetic overstimulation (scrolling, sugar, notifications) preserves natural drive for high-value pursuits.
+`,
+  },
+  {
+    slug: 'nucleus-accumbens',
+    title: 'Nucleus Accumbens',
+    category: 'Neuroscience',
+    shortDescription:
+      'The brain\'s reward hub — integrates motivation, pleasure, and goal-directed behavior.',
+    content: `
+
+The **Nucleus Accumbens** is a key structure in the ventral striatum that receives dopamine from the Ventral Tegmental Area. It integrates reward signals and drives motivated behavior.
+
+### Key Functions
+
+- **Reward processing** — responds to anticipated and received rewards
+- **Motivation** — translates desire into action
+- **Addiction** — central to compulsive reward-seeking
+- **Social reward** — responds to social cues and connection
+
+### In ONDA Life
+
+Part 8 works with the Nucleus Accumbens through intermittent rewards and high-yield pursuits. Calibrating this circuit prevents "Cheap Dopamine" traps and supports sustained motivation.
+`,
+  },
+  {
     slug: 'ultradian-rhythm',
     title: 'Ultradian Rhythm',
     category: 'Body Systems',
@@ -3330,6 +3617,116 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 ### Scientific Basis
 Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+`,
+  },
+  {
+    slug: 'suprachiasmatic-nucleus',
+    title: 'Suprachiasmatic Nucleus',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The master clock in the hypothalamus — receives light via the retina and synchronizes every cellular clock in your body.',
+    content: `
+
+The **Suprachiasmatic Nucleus** (SCN) is a small region of the hypothalamus that acts as the body's master oscillator. It receives light signals directly from the retina via the retinohypothalamic tract and synchronizes circadian rhythms throughout the organism.
+
+### Key Functions
+
+- **Master clock** — sets the phase for all peripheral clocks
+- **Light input** — photoreceptors in the retina send signals to the SCN
+- **Output signals** — regulates melatonin, cortisol, body temperature
+- **Entrainment** — adjusts to light-dark cycles (jet lag recovery)
+
+### In ONDA Life
+
+The Circadian Reset protocols work with the SCN: morning light exposure triggers a timed Cortisol pulse and sets the timer for Melatonin release. Blocking blue light at night allows the natural shutdown sequence to initialize.
+`,
+  },
+  {
+    slug: 'melatonin',
+    title: 'Melatonin',
+    category: 'Biological Software',
+    shortDescription:
+      'The sleep hormone — released by the pineal gland in darkness, triggers the body\'s shutdown sequence.',
+    content: `
+
+**Melatonin** is a hormone produced by the pineal gland in response to darkness. It signals the body to prepare for sleep and regulates the sleep-wake cycle.
+
+### Key Functions
+
+- **Sleep trigger** — initiates the natural shutdown sequence
+- **Light-sensitive** — suppressed by blue light, even artificial
+- **Circadian marker** — release typically begins ~16 hours after morning light exposure
+- **Antioxidant** — secondary roles in cellular protection
+
+### In ONDA Life
+
+Morning light exposure sets a 16-hour countdown for Melatonin release. Blue light at night suppresses melatonin by tricking the SCN into thinking it's still noon. The Blue Light Firewall protocol protects this critical signal.
+`,
+  },
+  {
+    slug: 'adenosine',
+    title: 'Adenosine',
+    category: 'Biological Software',
+    shortDescription:
+      'A neuromodulator that builds up during wakefulness — the "sleep debt" variable that drives sleep pressure.',
+    content: `
+
+**Adenosine** is a neuromodulator that accumulates in the brain during wakefulness. It creates "sleep pressure" — the longer you're awake, the more adenosine builds up, and the stronger the drive to sleep.
+
+### Key Functions
+
+- **Sleep debt** — builds like cache files that need clearing
+- **ATP breakdown** — adenosine is a byproduct of energy metabolism
+- **Caffeine antagonist** — caffeine blocks adenosine receptors (temporary wakefulness)
+- **Homeostasis** — sleep clears adenosine; wakefulness resets the cycle
+
+### In ONDA Life
+
+Understanding adenosine helps explain why consistent sleep timing matters. Sleep deprivation leaves adenosine "uncleared" — leading to metabolic lag and chronic brain fog. The Circadian Reset protocols ensure your system clears this cache properly.
+`,
+  },
+  {
+    slug: 'blue-light',
+    title: 'Blue Light',
+    category: 'Neural Hardware',
+    shortDescription:
+      'Short-wavelength light that suppresses melatonin and signals the SCN that it\'s daytime — a "digital caffeine" at night.',
+    content: `
+
+**Blue light** (wavelengths ~450–495 nm) is the portion of the visible spectrum that most strongly affects the circadian system. Photoreceptors in the retina (particularly melanopsin-containing retinal ganglion cells) are most sensitive to blue light.
+
+### Key Effects
+
+- **Melatonin suppression** — blue light at night blocks the natural shutdown sequence
+- **SCN activation** — signals "daytime" to the master clock
+- **Digital caffeine** — screens at 11 PM act as a "Force Quit" for sleep architecture
+- **Morning benefit** — blue light in the AM helps set the circadian timer
+
+### In ONDA Life
+
+The Blue Light Firewall protocol: use 100% blue-blocking glasses or "Red Mode" on all devices after sunset. This allows the natural shutdown sequence to initialize.
+`,
+  },
+  {
+    slug: 'deep-sleep',
+    title: 'Deep Sleep',
+    category: 'OS States',
+    shortDescription:
+      'Slow-wave sleep (N3) — the most restorative phase, when the brain clears adenosine and repairs tissue.',
+    content: `
+
+**Deep sleep** (slow-wave sleep, N3) is the most restorative phase of the sleep cycle. It is characterized by slow delta waves and is essential for physical recovery, memory consolidation, and adenosine clearance.
+
+### Key Functions
+
+- **Adenosine clearance** — sleep debt is "cleared" during deep sleep
+- **Tissue repair** — growth hormone release, cellular restoration
+- **Temperature drop** — core body temperature must drop 1–2°C to initiate
+- **Immune function** — critical for immune system maintenance
+
+### In ONDA Life
+
+The Temperature Down-Regulation protocol supports deep sleep: a warm bath 90 minutes before bed or a cool bedroom (18°C) helps the core temperature drop. This "Thermal Handshake" signals the brain that it's time for the most restorative phase.
 `,
   },
   {

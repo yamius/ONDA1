@@ -23,6 +23,10 @@ const GLOSSARY_TITLE = 'Biohacking & Neuroscience Glossary | ONDA Life Knowledge
 const GLOSSARY_DESC =
   'Explore 100+ key terms in molecular psychology, neurophysiology, and consciousness architecture. Your comprehensive guide to the ONDA Life system.'
 
+const CONTACT_TITLE = 'Contact ONDA Life | Support & Community'
+const CONTACT_DESC =
+  'Need technical support for your biological upgrade? Connect with the ONDA Core Team. Email, Telegram, Discord — we respond.'
+
 export interface BreadcrumbItem {
   name: string
   url: string
@@ -36,6 +40,7 @@ export interface RouteMeta {
   definedTerm?: { name: string; description: string; url: string }
   techArticle?: { name: string; description: string; url: string; datePublished: string }
   howTo?: { name: string; step: { name: string; text: string }[] }
+  contactPage?: { name: string; description: string; url: string; email: string }
 }
 
 function buildBreadcrumbs(route: string): BreadcrumbItem[] {
@@ -58,6 +63,10 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
         url: `${SITE_URL}/glossary/${segments[1]}`,
       })
     }
+    return items
+  }
+  if (segments[0] === 'contact') {
+    items.push({ name: 'Contact', url: `${SITE_URL}/contact` })
     return items
   }
   if (segments[0] === 'articles') {
@@ -156,6 +165,28 @@ function buildTechArticleJsonLd(
   return JSON.stringify(article)
 }
 
+function buildContactPageJsonLd(
+  name: string,
+  description: string,
+  url: string,
+  email: string
+): string {
+  const contactPage = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name,
+    description,
+    url,
+    mainEntity: {
+      '@type': 'Organization',
+      name: 'ONDA Life',
+      email,
+      url: SITE_URL,
+    },
+  }
+  return JSON.stringify(contactPage)
+}
+
 function buildHowToJsonLd(name: string, steps: { name: string; text: string }[], url: string): string {
   const howTo = {
     '@context': 'https://schema.org',
@@ -185,6 +216,20 @@ export function getMetaForRoute(route: string): RouteMeta {
   }
   if (route === '/glossary') {
     return { title: GLOSSARY_TITLE, description: GLOSSARY_DESC, url, breadcrumbs }
+  }
+  if (route === '/contact') {
+    return {
+      title: CONTACT_TITLE,
+      description: CONTACT_DESC,
+      url,
+      breadcrumbs,
+      contactPage: {
+        name: 'Contact ONDA Life',
+        description: CONTACT_DESC,
+        url,
+        email: 'hello@onda-life.com',
+      },
+    }
   }
 
   const articlesMatch = route.match(/^\/articles\/([^/]+)$/)
@@ -304,6 +349,12 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (meta.techArticle) {
     const techArticleScript = `<script type="application/ld+json">${buildTechArticleJsonLd(meta.techArticle.name, meta.techArticle.description, meta.techArticle.url, meta.techArticle.datePublished)}</script>`
     out = out.replace('</head>', `  ${techArticleScript}\n</head>`)
+  }
+
+  // JSON-LD: ContactPage
+  if (meta.contactPage) {
+    const contactScript = `<script type="application/ld+json">${buildContactPageJsonLd(meta.contactPage.name, meta.contactPage.description, meta.contactPage.url, meta.contactPage.email)}</script>`
+    out = out.replace('</head>', `  ${contactScript}\n</head>`)
   }
 
   // JSON-LD: HowTo (article pages with protocols)

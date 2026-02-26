@@ -4,6 +4,7 @@ import { NotFoundPage } from './NotFoundPage'
 import Markdown from 'react-markdown'
 import { getTermBySlug, glossaryTerms } from '../data/glossary'
 import { injectGlossaryLinks } from '../utils/glossaryLinks'
+import { getArticlesForTerm } from '../data/articles'
 
 const SITE_URL = 'https://ondalife.replit.app'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
@@ -56,6 +57,8 @@ export function GlossaryTermPage() {
   if (!term) {
     return <NotFoundPage />
   }
+
+  const relatedArticles = getArticlesForTerm(term.slug, term.title)
 
   const relatedTerms = term.relatedSlugs
     ? term.relatedSlugs
@@ -189,6 +192,39 @@ export function GlossaryTermPage() {
           {injectGlossaryLinks(term.content, term.slug)}
         </Markdown>
       </article>
+
+      {/* Related Deep Dives */}
+      {relatedArticles.length > 0 && (
+        <div className="mt-16 border-t border-white/5 pt-10">
+          <h3 className="mb-6 font-mono text-xs tracking-widest text-white/30">
+            RELATED DEEP DIVES
+          </h3>
+          <div className="grid gap-3">
+            {relatedArticles.map((article) => (
+              <Link
+                key={article.slug}
+                to={`/articles/${article.slug}`}
+                className="glass-card group flex items-start gap-4 rounded-lg p-5 transition-all hover:border-cyan-500/20"
+              >
+                <span className="text-2xl" aria-hidden="true">
+                  📖
+                </span>
+                <div className="min-w-0 flex-1">
+                  <h4 className="mb-1 font-semibold transition-colors group-hover:text-terminal-green">
+                    {article.title}
+                  </h4>
+                  <p className="font-mono text-xs text-white/40">
+                    Upgrade your knowledge: Learn how to optimize {term.title} in our full guide.
+                  </p>
+                </div>
+                <span className="shrink-0 font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
+                  →
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Related terms */}
       {relatedTerms.length > 0 && (

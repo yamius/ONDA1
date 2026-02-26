@@ -83,8 +83,10 @@ export function ArticlePage() {
     h3: ({ children }: { children?: React.ReactNode }) => {
       const text = typeof children === 'string' ? children : String(children)
       const isProtocol = text.startsWith('PROTOCOL ')
+      const isNeuroplasticityProtocol = isProtocol && article.slug === 'neuroplasticity-flow-overclocking'
       return (
         <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''}`}>
+          {isNeuroplasticityProtocol && <span className="mr-2" aria-hidden="true">🧠 </span>}
           {children}
         </h3>
       )
@@ -116,10 +118,59 @@ export function ArticlePage() {
     blockquote: ({ children }: { children?: React.ReactNode }) => {
       const content = extractText(children)
       const isHackBlock = content.includes('The Hack:')
+      const isPurpleIntro = article.introStyle === 'purple' && content.includes('Prediction Error')
+      const isAmberIntro = article.introStyle === 'amber' && content.includes('light code')
+      const isEmeraldIntro = article.introStyle === 'emerald' && content.includes('hybrid engine')
+      const isBlueIntro = article.introStyle === 'blue' && content.includes('wetware')
+      const isBlueProtocol =
+        isHackBlock &&
+        (content.includes('Deep Work') ||
+          content.includes('Binaural Beats') ||
+          content.includes('BDNF Trigger') ||
+          content.includes('NSDR') ||
+          content.includes('Yoga Nidra'))
+      const isEmeraldProtocol =
+        isHackBlock &&
+        (content.includes('Fasted Window') ||
+          content.includes('Intermittent Fasting') ||
+          content.includes('Glucose Buffer') ||
+          content.includes('Post-Meal Movement') ||
+          content.includes('Zone 2'))
+      const isMorningProtocol =
+        isHackBlock &&
+        (content.includes('First Photon') ||
+          content.includes('Morning Light') ||
+          content.includes('within 30 minutes of waking'))
+      const isEveningProtocol =
+        isHackBlock &&
+        (content.includes('Blue Light') ||
+          content.includes('after sunset') ||
+          content.includes('90 minutes before bed') ||
+          content.includes('Temperature Down'))
+      let blockquoteClass = 'pl-0 pr-0'
+      if (isMorningProtocol) {
+        blockquoteClass = 'border-l-4 border-amber-500/60 bg-amber-500/5 pl-6 pr-4 rounded-r-lg'
+      } else if (isEveningProtocol) {
+        blockquoteClass = 'border-l-4 border-indigo-500/60 bg-indigo-500/5 pl-6 pr-4 rounded-r-lg'
+      } else if (isEmeraldProtocol) {
+        blockquoteClass = 'border-l-2 border-emerald-500 bg-emerald-500/5 pl-6 pr-4'
+      } else if (isBlueProtocol) {
+        blockquoteClass = 'border-l-2 border-blue-500 bg-blue-500/5 pl-6 pr-4'
+      } else if (isHackBlock) {
+        blockquoteClass = 'border-l-2 border-cyan-500/50 bg-cyan-500/5 pl-6 pr-4'
+      } else if (isPurpleIntro) {
+        blockquoteClass = 'border-l-4 border-purple-500 bg-black/40 pl-6 pr-4 rounded-r-lg'
+      } else if (isAmberIntro) {
+        blockquoteClass = 'border-l-4 border-amber-500 bg-black/40 pl-6 pr-4 rounded-r-lg'
+      } else if (isEmeraldIntro) {
+        blockquoteClass = 'border-l-2 border-emerald-500 bg-emerald-500/5 pl-6 pr-4 rounded-r-lg'
+      } else if (isBlueIntro) {
+        blockquoteClass = 'border-l-2 border-blue-500 bg-blue-500/5 pl-6 pr-4 rounded-r-lg'
+      }
+      const protocolIcon = isMorningProtocol ? '☀️ ' : isEveningProtocol ? '🌙 ' : isBlueProtocol ? '🧠 ' : ''
       return (
-        <blockquote className={`my-6 py-4 font-mono text-sm leading-relaxed text-white/70 ${
-          isHackBlock ? 'border-l-2 border-cyan-500/50 bg-cyan-500/5 pl-6 pr-4' : 'pl-0 pr-0'
-        }`}>
+        <blockquote className={`my-6 py-4 font-mono text-sm leading-relaxed text-white/70 ${blockquoteClass}`}>
+          {protocolIcon && <span className="mr-2" aria-hidden="true">{protocolIcon}</span>}
           {children}
         </blockquote>
       )
@@ -186,7 +237,15 @@ export function ArticlePage() {
       {/* CTA: Download ONDA Life */}
       <div className="mt-16 rounded-xl border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-terminal-green/5 p-8 text-center">
         <p className="mb-6 font-mono text-base font-semibold text-white/90 md:text-lg">
-          System Calibration Ready. Download ONDA Life to track your Vagus Nerve tone in real-time.
+          {article.slug === 'dopamine-architecture-mastering-desire'
+            ? 'System Calibration Ready. Download ONDA Life to optimize your Dopamine baseline and track motivation windows.'
+            : article.slug === 'circadian-reset-mastering-light'
+              ? 'System Calibration Ready. Download ONDA Life to sync your Circadian Rhythm and track light exposure.'
+              : article.slug === 'metabolic-flexibility-dual-fuel-system'
+                ? 'System Calibration Ready. Download ONDA Life to optimize your Metabolic Flexibility and track fuel switching.'
+                : article.slug === 'neuroplasticity-flow-overclocking'
+                  ? 'System Calibration Ready. Download ONDA Life to track Flow State and optimize Neuroplasticity.'
+                  : 'System Calibration Ready. Download ONDA Life to track your Vagus Nerve tone in real-time.'}
         </p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <a
@@ -207,6 +266,20 @@ export function ArticlePage() {
           </a>
         </div>
       </div>
+
+      {article.neuralSuggestion && (
+        <div className="mt-12 rounded-xl border border-purple-500/30 bg-purple-500/5 p-6">
+          <p className="mb-3 font-mono text-sm text-white/70">
+            {article.neuralSuggestion.text}
+          </p>
+          <Link
+            to={article.neuralSuggestion.link}
+            className="font-mono text-sm font-semibold text-purple-400 underline decoration-purple-400/30 underline-offset-2 transition-colors hover:text-purple-300 hover:decoration-purple-300/50"
+          >
+            → {article.neuralSuggestion.linkText}
+          </Link>
+        </div>
+      )}
 
       {relatedTerms.length > 0 && (
         <div className="mt-16 border-t border-white/5 pt-10">
