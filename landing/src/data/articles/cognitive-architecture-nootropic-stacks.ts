@@ -71,14 +71,17 @@ High-performance states often fail due to 'System Noise'—anxiety or over-stimu
     {
       name: "The 'Focus' Baseline (Caffeine/Theanine)",
       text: 'A 1:2 ratio of Caffeine (100mg) to L-Theanine (200mg).',
+      protocolId: 'cognitive-focus-baseline',
     },
     {
       name: "The 'Memory Encoder' (Cholinergic Stack)",
       text: '300mg of Alpha-GPC paired with 150mg of Bacopa Monnieri.',
+      protocolId: 'cognitive-memory-encoder',
     },
     {
       name: "The 'Recovery' Loop (Magnesium L-Threonate)",
       text: '144mg of elemental Magnesium in the L-Threonate form before sleep.',
+      protocolId: 'cognitive-recovery-loop',
     },
   ],
 }

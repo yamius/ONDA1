@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import { useParams, useLocation, Link } from 'react-router-dom'
 import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
 import { getArticleBySlug } from '../data/articles'
@@ -8,6 +8,23 @@ import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 
 const SITE_URL = 'https://ondalife.replit.app'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
+
+/** Maps article slug to TheStack section id (for /the-stack#section-id anchor) */
+const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
+  'vagus-nerve-master-key': 'nervous-system',
+  'breathwork-command-line-interface': 'nervous-system',
+  'hrv-training-nervous-system-latency': 'nervous-system',
+  'dopamine-architecture-mastering-desire': 'reward-logic',
+  'digital-dementia-attentional-control': 'reward-logic',
+  'circadian-reset-mastering-light': 'energy-grid',
+  'circadian-lighting-dark-therapy': 'energy-grid',
+  'metabolic-flexibility-dual-fuel-system': 'energy-grid',
+  'mitochondrial-biogenesis-cellular-power-grid': 'power-grid',
+  'longevity-hardware-cellular-cleanup': 'power-grid',
+  'neuroplasticity-flow-overclocking': 'cognitive-engine',
+  'cognitive-architecture-nootropic-stacks': 'cognitive-engine',
+  'gut-brain-axis-data-link': 'gut-brain-link',
+}
 
 const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'vagus-nerve-master-key': '4 min 20 sec',
@@ -47,9 +64,69 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
+import { PROTOCOL_STORAGE_PREFIX, ARTICLE_STORAGE_PREFIX } from '../data/protocol-ids'
+
+const STORAGE_KEY_PREFIX = ARTICLE_STORAGE_PREFIX
+
+function ProtocolDoneButton({
+  protocolId,
+  onToggle,
+}: {
+  protocolId: string
+  onToggle: () => void
+}) {
+  const isActive =
+    typeof window !== 'undefined' &&
+    localStorage.getItem(PROTOCOL_STORAGE_PREFIX + protocolId) === 'active'
+
+  return (
+    <button
+      type="button"
+      onClick={() => {
+        if (typeof window === 'undefined') return
+        if (isActive) {
+          localStorage.removeItem(PROTOCOL_STORAGE_PREFIX + protocolId)
+        } else {
+          localStorage.setItem(PROTOCOL_STORAGE_PREFIX + protocolId, 'active')
+        }
+        onToggle()
+      }}
+      className={`ml-2 inline-block rounded font-mono text-xs transition-colors ${
+        isActive
+          ? 'text-terminal-green'
+          : 'text-white/20 hover:text-white/35'
+      }`}
+      aria-pressed={isActive}
+    >
+      {isActive ? '[ ACTIVE ]' : '[ DONE ]'}
+    </button>
+  )
+}
+
 export function ArticlePage() {
   const { slug } = useParams<{ slug: string }>()
+  const { hash } = useLocation()
   const article = slug ? getArticleBySlug(slug) : undefined
+  const [isCompleted, setIsCompleted] = useState(false)
+  const [protocolRefresh, setProtocolRefresh] = useState(0)
+
+  useEffect(() => {
+    const id = hash?.slice(1)
+    if (!id) return
+    const scrollToProtocol = () => {
+      const el = document.getElementById(id)
+      if (el) el.scrollIntoView({ behavior: 'auto', block: 'start' })
+    }
+    scrollToProtocol()
+    const t = setTimeout(scrollToProtocol, 100)
+    return () => clearTimeout(t)
+  }, [hash, article?.slug])
+
+  useEffect(() => {
+    if (!article?.slug) return
+    const stored = localStorage.getItem(STORAGE_KEY_PREFIX + article.slug)
+    setIsCompleted(stored === 'true')
+  }, [article?.slug])
 
   useEffect(() => {
     if (!article) return
@@ -83,6 +160,19 @@ export function ArticlePage() {
 
   if (!article) {
     return <NotFoundPage />
+  }
+
+  /** Match "The Hack" blockquote content to howToSteps (for [ DONE ] button placement) */
+  function getProtocolIdFromHackBlock(blockquoteContent: string): string | undefined {
+    if (!article?.howToSteps?.length) return undefined
+    const hackText = blockquoteContent.replace(/.*The Hack:\s*/s, '').trim()
+    const step = article.howToSteps.find(
+      (s) =>
+        blockquoteContent.includes(s.text) ||
+        s.text.includes(hackText) ||
+        hackText.includes(s.text)
+    )
+    return step?.protocolId
   }
 
   const relatedTerms = article.relatedSlugs
@@ -119,12 +209,13 @@ export function ArticlePage() {
       const isBreathworkProtocol = isProtocol && article.slug === 'breathwork-command-line-interface'
       const isHRVProtocol = isProtocol && article.slug === 'hrv-training-nervous-system-latency'
       const isDigitalDementiaProtocol = isProtocol && article.slug === 'digital-dementia-attentional-control'
+      const isDopamineProtocol = isProtocol && article.slug === 'dopamine-architecture-mastering-desire'
       const isLongevityProtocol = isProtocol && article.slug === 'longevity-hardware-cellular-cleanup'
       const isCognitiveProtocol = isProtocol && article.slug === 'cognitive-architecture-nootropic-stacks'
       const isMitochondrialProtocol = isProtocol && article.slug === 'mitochondrial-biogenesis-cellular-power-grid'
       const isCircadianLightingProtocol = isProtocol && article.slug === 'circadian-lighting-dark-therapy'
       return (
-        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
+        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
           {children}
         </h3>
       )
@@ -286,11 +377,21 @@ export function ArticlePage() {
       } else if (isCognitiveProtocol || isMitochondrialProtocol) {
         blockquoteClass = 'border border-slate-800 bg-slate-900/50 pl-6 pr-4 rounded-r-lg'
       }
-      const protocolIcon = isMorningProtocol ? '☀️ ' : isEveningProtocol ? '🌙 ' : isBlueProtocol ? '🧠 ' : isOrangeProtocol ? '🧬 ' : isCyanProtocol ? '🫁 ' : isRoseProtocol ? '📊 ' : isDigitalDementiaProtocol ? '🛡️ ' : isLongevityProtocol ? '⏳ ' : ''
+      const protocolId = isHackBlock ? getProtocolIdFromHackBlock(content) : undefined
       return (
-        <blockquote className={`my-6 py-4 font-mono text-sm leading-relaxed text-white/70 ${blockquoteClass}`}>
-          {protocolIcon && <span className="mr-2" aria-hidden="true">{protocolIcon}</span>}
+        <blockquote
+          id={protocolId}
+          className={`my-6 py-4 font-mono text-sm leading-relaxed text-white/70 scroll-mt-24 ${blockquoteClass}`}
+        >
           {children}
+          {protocolId && (
+            <div className="mt-3 flex justify-end">
+              <ProtocolDoneButton
+                protocolId={protocolId}
+                onToggle={() => setProtocolRefresh((n) => n + 1)}
+              />
+            </div>
+          )}
         </blockquote>
       )
     },
@@ -351,10 +452,33 @@ export function ArticlePage() {
       </p>
 
       <article className="prose-onda">
-        <Markdown components={markdownComponents}>
+        <Markdown components={markdownComponents} key={protocolRefresh}>
           {injectArticleGlossaryLinks(article.content)}
         </Markdown>
       </article>
+
+      {/* Control block: MARK_COMPLETED + OPEN_SYSTEM_STACK */}
+      <div className="mb-8 flex flex-col items-center justify-center gap-2 sm:flex-row">
+        <button
+          type="button"
+          className="w-[200px] border border-slate-700 px-4 py-2 text-center font-mono text-xs transition-colors hover:border-emerald-500"
+          onClick={() => {
+            const next = !isCompleted
+            setIsCompleted(next)
+            localStorage.setItem(STORAGE_KEY_PREFIX + article.slug, String(next))
+          }}
+        >
+          {isCompleted ? '[ STATUS: OPTIMIZED ]' : '[ FINALIZE_ARTICLE ]'}
+        </button>
+        {ARTICLE_SLUG_TO_STACK_SECTION[article.slug] && (
+          <a
+            href={`/the-stack#${ARTICLE_SLUG_TO_STACK_SECTION[article.slug]}`}
+            className="w-[200px] border border-slate-700 bg-slate-900 px-4 py-2 text-center font-mono text-xs transition-colors hover:border-emerald-500"
+          >
+            [ OPEN_SYSTEM_STACK ]
+          </a>
+        )}
+      </div>
 
       {/* CTA: Download ONDA Life */}
       <div className="mt-16 rounded-xl border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-terminal-green/5 p-8 text-center">

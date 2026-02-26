@@ -70,14 +70,17 @@ Dark Therapy is the intentional restriction of short-wavelength light to allow f
     {
       name: 'The Photonic Anchor (Morning Lux)',
       text: 'Exposure to 10,000+ LUX of natural sunlight within 30 minutes of waking.',
+      protocolId: 'circadian-light-photonic-anchor',
     },
     {
       name: 'Spectral Shift (Evening Calibration)',
       text: 'Switch all environmental lighting to red/amber wavelengths (below 2000K) after 8:00 PM.',
+      protocolId: 'circadian-light-spectral-shift',
     },
     {
       name: 'The Photic Firewall (Blue Light Blocking)',
       text: 'Use 100% blue-blocking glasses (orange lenses) if digital screens are used after sunset.',
+      protocolId: 'circadian-light-photic-firewall',
     },
   ],
 }

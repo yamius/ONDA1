@@ -78,14 +78,17 @@ To move from theory to hardware optimization, initialize these three neural reca
     {
       name: 'The Resonant Frequency Protocol (Breathing)',
       text: 'Inhale for 5.5 seconds, then exhale for 5.5 seconds through the nose. Repeat for 3–5 minutes.',
+      protocolId: 'breathwork-resonant-frequency',
     },
     {
       name: 'Thermal Shock Reset (Cold Exposure)',
       text: 'Splash ice-cold water on your face for 30 seconds or finish your shower with 30 seconds of maximum cold. Focus on the chest and neck area.',
+      protocolId: 'vagus-cold-spike',
     },
     {
       name: 'Ocular-Vagal Re-centering (The Basic Exercise)',
       text: 'Keep your head facing forward. Without moving your head, look as far right as possible using only your eyes. Hold until you feel a spontaneous sigh, swallow, or yawn (usually 30–60 seconds). Repeat on the left side.',
+      protocolId: 'vagus-ocular-vagal',
     },
   ],
 }

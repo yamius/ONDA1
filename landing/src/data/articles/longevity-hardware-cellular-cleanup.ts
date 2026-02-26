@@ -69,9 +69,9 @@ Autophagy is your body's internal recycling program. During periods of nutrient 
 **The Logic:** This triggers 'Heat Shock Proteins' and 'Cold Shock Proteins.' These molecular chaperones go into the 'Code' of your proteins, helping them fold correctly and preventing the 'Bit Rot' that leads to neurodegenerative diseases.
 `,
   howToSteps: [
-    { name: "The '3-Day System Flush' (Extended Fasting)", text: 'A 36-to-72 hour water-only fast performed once per quarter.' },
-    { name: 'Natural Senolytics (The Quercetin/Fisetin Patch)', text: 'High intake of strawberries (Fisetin) and capers or red onions (Quercetin).' },
-    { name: 'Hormetic Stress (The Sauna-Cold Cycle)', text: '20 minutes of high heat (sauna) followed by 3 minutes of cold exposure.' },
+    { name: "The '3-Day System Flush' (Extended Fasting)", text: 'A 36-to-72 hour water-only fast performed once per quarter.', protocolId: 'longevity-system-flush' },
+    { name: 'Natural Senolytics (The Quercetin/Fisetin Patch)', text: 'High intake of strawberries (Fisetin) and capers or red onions (Quercetin).', protocolId: 'longevity-senolytics' },
+    { name: 'Hormetic Stress (The Sauna-Cold Cycle)', text: '20 minutes of high heat (sauna) followed by 3 minutes of cold exposure.', protocolId: 'longevity-sauna-cold' },
   ],
 }
 

@@ -77,14 +77,17 @@ The diaphragm is more than a muscle; it is a mechanical pump for the Vagus Nerve
     {
       name: "The 'Box Breathing' Firewall (Stress Suppression)",
       text: 'Inhale for 4s, Hold 4s, Exhale 4s, Hold 4s. Repeat for 2 minutes.',
+      protocolId: 'breathwork-box-breathing',
     },
     {
       name: "The 'Physiological Sigh' (Instant Reboot)",
       text: "Take a deep inhale followed by a second, shorter 'top-off' inhale to fully expand the lungs, then a long, slow exhale through the mouth.",
+      protocolId: 'breathwork-physiological-sigh',
     },
     {
       name: "The 'Nitric Oxide' Boost (Nasal Only)",
       text: 'Strict nasal breathing for all low-to-moderate intensity activities.',
+      protocolId: 'breathwork-nasal-only',
     },
   ],
 }

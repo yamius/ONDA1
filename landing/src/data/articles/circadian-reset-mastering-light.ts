@@ -79,14 +79,17 @@ Screens at 11 PM act as a "Force Quit" for your sleep architecture. Blue light s
     {
       name: 'The First Photon (Morning Light)',
       text: 'View sunlight within 30 minutes of waking. 10 mins on a clear day, 20–30 mins on a cloudy day.',
+      protocolId: 'circadian-first-photon',
     },
     {
       name: 'The Blue Light Firewall',
       text: 'Use 100% blue-blocking glasses or "Red Mode" on all devices after sunset.',
+      protocolId: 'circadian-blue-firewall',
     },
     {
       name: 'Temperature Down-Regulation',
       text: 'Take a warm bath 90 minutes before bed or keep your bedroom at 18°C.',
+      protocolId: 'circadian-temp-down',
     },
   ],
 }

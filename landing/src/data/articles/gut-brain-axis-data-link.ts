@@ -77,14 +77,17 @@ The Vagus Nerve serves as the high-speed data cable between your gut and your br
     {
       name: 'The Microbiome Patch (Prebiotic Loading)',
       text: 'Aim for 30g+ of diverse fiber from leeks, onions, garlic, and asparagus daily.',
+      protocolId: 'gut-microbiome-patch',
     },
     {
       name: 'System De-noising (Polyphenol Boost)',
       text: 'Consume high-density polyphenols (dark chocolate 85%+, blueberries, green tea) daily.',
+      protocolId: 'gut-polyphenol',
     },
     {
       name: "The 'Cold Restart' (Fasting for the Microbiome)",
       text: 'Practice a 24-hour fast once a month or regular 16:8 intermittent fasting.',
+      protocolId: 'gut-cold-restart',
     },
   ],
 }

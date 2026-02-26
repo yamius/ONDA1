@@ -1,0 +1,72 @@
+/**
+ * Unique protocol IDs for granular tracking.
+ * Format: {articleShort}-{protocolKey}
+ * Storage: onda-protocol-{uniqueId}: active
+ */
+const ARTICLE_SHORT: Record<string, string> = {
+  'vagus-nerve-master-key': 'vagus',
+  'breathwork-command-line-interface': 'breathwork',
+  'hrv-training-nervous-system-latency': 'hrv',
+  'dopamine-architecture-mastering-desire': 'dopamine',
+  'digital-dementia-attentional-control': 'digital',
+  'circadian-reset-mastering-light': 'circadian',
+  'circadian-lighting-dark-therapy': 'circadian-light',
+  'metabolic-flexibility-dual-fuel-system': 'metabolic',
+  'mitochondrial-biogenesis-cellular-power-grid': 'mito',
+  'longevity-hardware-cellular-cleanup': 'longevity',
+  'neuroplasticity-flow-overclocking': 'neuro',
+  'cognitive-architecture-nootropic-stacks': 'cognitive',
+  'gut-brain-axis-data-link': 'gut',
+}
+
+/** Protocol base id -> article slug (for building unique IDs) */
+export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
+  'resonant-frequency': 'breathwork-command-line-interface',
+  'box-breathing': 'breathwork-command-line-interface',
+  'physiological-sigh': 'breathwork-command-line-interface',
+  'nasal-only': 'breathwork-command-line-interface',
+  'ocular-vagal': 'vagus-nerve-master-key',
+  'hrv-baseline': 'hrv-training-nervous-system-latency',
+  'biofeedback-resync': 'hrv-training-nervous-system-latency',
+  'cold-spike': 'vagus-nerve-master-key',
+  'intermittent-reward': 'dopamine-architecture-mastering-desire',
+  'morning-light': 'dopamine-architecture-mastering-desire',
+  'cold-baseline': 'dopamine-architecture-mastering-desire',
+  'analog-morning': 'digital-dementia-attentional-control',
+  monotasking: 'digital-dementia-attentional-control',
+  'dopamine-fast': 'digital-dementia-attentional-control',
+  'first-photon': 'circadian-reset-mastering-light',
+  'photonic-anchor': 'circadian-lighting-dark-therapy',
+  'blue-firewall': 'circadian-reset-mastering-light',
+  'spectral-shift': 'circadian-lighting-dark-therapy',
+  'photic-firewall': 'circadian-lighting-dark-therapy',
+  'temp-down': 'circadian-reset-mastering-light',
+  'fasted-window': 'metabolic-flexibility-dual-fuel-system',
+  'glucose-buffer': 'metabolic-flexibility-dual-fuel-system',
+  zone2: 'metabolic-flexibility-dual-fuel-system',
+  'thermal-shock': 'longevity-hardware-cellular-cleanup',
+  'photonic-charging': 'mitochondrial-biogenesis-cellular-power-grid',
+  'nad-fuel': 'mitochondrial-biogenesis-cellular-power-grid',
+  'system-flush': 'longevity-hardware-cellular-cleanup',
+  senolytics: 'longevity-hardware-cellular-cleanup',
+  'sauna-cold': 'longevity-hardware-cellular-cleanup',
+  'alpha-priming': 'neuroplasticity-flow-overclocking',
+  'bdnf-trigger': 'neuroplasticity-flow-overclocking',
+  nsdr: 'neuroplasticity-flow-overclocking',
+  'focus-baseline': 'cognitive-architecture-nootropic-stacks',
+  'memory-encoder': 'cognitive-architecture-nootropic-stacks',
+  'recovery-loop': 'cognitive-architecture-nootropic-stacks',
+  'microbiome-patch': 'gut-brain-axis-data-link',
+  polyphenol: 'gut-brain-axis-data-link',
+  'cold-restart': 'gut-brain-axis-data-link',
+}
+
+export const PROTOCOL_STORAGE_PREFIX = 'onda-protocol-'
+export const ARTICLE_STORAGE_PREFIX = 'onda-article-completed-'
+
+/** Get unique protocol ID for storage and display */
+export function getProtocolUniqueId(protocolBaseId: string): string {
+  const articleSlug = PROTOCOL_TO_ARTICLE[protocolBaseId]
+  const short = articleSlug ? ARTICLE_SHORT[articleSlug] : 'unknown'
+  return `${short}-${protocolBaseId}`
+}

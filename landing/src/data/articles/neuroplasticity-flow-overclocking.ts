@@ -77,14 +77,17 @@ Every time you repeat a high-quality action, your brain wraps the neural pathway
     {
       name: "The 'Deep Work' Priming (Alpha Waves)",
       text: 'Use 10 minutes of Binaural Beats (Alpha range: 8–12 Hz) or box breathing before a cognitively demanding task.',
+      protocolId: 'neuro-alpha-priming',
     },
     {
       name: 'High-Intensity Cognitive Bursts (BDNF Trigger)',
       text: 'Perform 3 minutes of high-intensity movement (sprints or burpees) before an intensive learning session.',
+      protocolId: 'neuro-bdnf-trigger',
     },
     {
       name: "The 'Non-Sleep Deep Rest' (NSDR) Recovery",
       text: '20 minutes of Yoga Nidra or guided NSDR after a period of intense learning.',
+      protocolId: 'neuro-nsdr',
     },
   ],
 }

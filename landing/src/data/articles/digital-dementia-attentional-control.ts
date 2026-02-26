@@ -73,9 +73,9 @@ The Prefrontal Cortex (PFC) is the 'Executive Suite' of your brain. It is the mo
 **The Logic:** This allows your Dopamine Receptors to 'up-regulate.' By lowering the artificial floor of stimulation, you make everyday reality—and complex work—interesting again.
 `,
   howToSteps: [
-    { name: "The 'Analog Morning' Firewall", text: 'No digital inputs (phone, email, news) for the first 60 minutes after waking.' },
-    { name: "Monotasking & 'Deep Work' Blocks", text: "Use the 'Forest' method or a physical timer. 90 minutes of one single task, phone in another room." },
-    { name: "The 'Dopamine Fast' (Weekly Reset)", text: '4 hours every Sunday with zero digital devices. Only analog activities (reading, walking, talking).' },
+    { name: "The 'Analog Morning' Firewall", text: 'No digital inputs (phone, email, news) for the first 60 minutes after waking.', protocolId: 'digital-analog-morning' },
+    { name: "Monotasking & 'Deep Work' Blocks", text: "Use the 'Forest' method or a physical timer. 90 minutes of one single task, phone in another room.", protocolId: 'digital-monotasking' },
+    { name: "The 'Dopamine Fast' (Weekly Reset)", text: '4 hours every Sunday with zero digital devices. Only analog activities (reading, walking, talking).', protocolId: 'digital-dopamine-fast' },
   ],
 }
 

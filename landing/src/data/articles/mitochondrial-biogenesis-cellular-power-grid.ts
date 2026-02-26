@@ -69,14 +69,17 @@ The primary command for building new mitochondria is the activation of the PGC-1
     {
       name: 'Thermal Shock (Mito-Stimulation)',
       text: 'High-heat sauna (80°C+) for 20 minutes, 3 times a week.',
+      protocolId: 'longevity-thermal-shock',
     },
     {
       name: 'Photonic Charging (Red Light Therapy)',
       text: 'Exposure to 660nm (Red) and 850nm (Near-Infrared) light for 10 minutes daily.',
+      protocolId: 'mito-photonic-charging',
     },
     {
       name: "The 'NAD+' Fuel Cell (Molecular Repair)",
       text: 'Supplementation with NAD+ precursors or intense HIIT (High-Intensity Interval Training).',
+      protocolId: 'mito-nad-fuel',
     },
   ],
 }

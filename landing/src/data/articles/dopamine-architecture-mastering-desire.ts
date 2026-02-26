@@ -64,14 +64,17 @@ Your biological "Satisfaction Level" depends on your Dopamine Baseline. When you
     {
       name: "The 'Intermittent Reward' Logic",
       text: 'Do not celebrate every minor win. Use a "coin flip" or a randomizer to decide if you get a reward after a successful task.',
+      protocolId: 'dopamine-intermittent-reward',
     },
     {
       name: 'The Morning Light Trigger',
       text: 'Get 10–15 minutes of direct sunlight (no windows/sunglasses) within the first hour of waking up.',
+      protocolId: 'dopamine-morning-light',
     },
     {
       name: 'Cold-Induced Baseline Boost',
       text: 'A 2-minute cold shower or ice bath (below 15°C).',
+      protocolId: 'dopamine-cold-baseline',
     },
   ],
 }

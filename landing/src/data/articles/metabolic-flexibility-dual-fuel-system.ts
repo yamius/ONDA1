@@ -79,14 +79,17 @@ Ketosis isn't just a diet; it's a high-performance metabolic state. Ketones are 
     {
       name: 'The Fasted Window (Intermittent Fasting)',
       text: 'Limit your calorie intake to an 8-hour window (e.g., 12 PM to 8 PM).',
+      protocolId: 'metabolic-fasted-window',
     },
     {
       name: 'The Glucose Buffer (Post-Meal Movement)',
       text: 'Take a 10-minute brisk walk immediately after your largest meal.',
+      protocolId: 'metabolic-glucose-buffer',
     },
     {
       name: 'Zone 2 Aerobic Base Building',
       text: 'Perform 45 minutes of low-intensity exercise (where you can still hold a conversation) 2–3 times a week.',
+      protocolId: 'metabolic-zone2',
     },
   ],
 }

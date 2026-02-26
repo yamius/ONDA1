@@ -78,14 +78,17 @@ Think of HRV as your 'Battery Health' percentage. If you wake up with an HRV sig
     {
       name: 'The Morning Baseline Scan',
       text: 'Use an HRV-compatible strap or sensor for 2 minutes every morning before getting out of bed.',
+      protocolId: 'hrv-hrv-baseline',
     },
     {
       name: 'Biofeedback Resync',
       text: 'Use a real-time HRV monitor while performing Resonant Breathing (5.5s inhale/exhale).',
+      protocolId: 'hrv-biofeedback-resync',
     },
     {
       name: 'The Cold Exposure Spike',
       text: 'Face-only cold immersion (30 seconds) or a full cold shower.',
+      protocolId: 'hrv-cold-spike',
     },
   ],
 }

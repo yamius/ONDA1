@@ -1,6 +1,8 @@
 export interface HowToStep {
   name: string
   text: string
+  /** Unique protocol ID for tracking (e.g. vagus-resonant-frequency) */
+  protocolId?: string
 }
 
 export interface Article {
