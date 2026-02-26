@@ -191,6 +191,12 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
 
   let out = html
 
+  // Google Search Console verification
+  const googleVerification = '<meta name="google-site-verification" content="ZbGWsLeH2NXSrxUe00KHQsd4g3SEBS2NptUCrzLU4HE" />'
+  if (!out.includes('google-site-verification')) {
+    out = out.replace('</head>', `  ${googleVerification}\n</head>`)
+  }
+
   // Canonical link — replace existing or add before </head>
   const canonicalTag = `<link rel="canonical" href="${escapedUrl}">`
   if (out.includes('rel="canonical"')) {
