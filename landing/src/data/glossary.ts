@@ -3297,6 +3297,54 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 `,
   },
+  {
+    slug: 'circadian-rhythm',
+    title: 'Circadian Rhythm',
+    category: 'Biomarkers & Metrics',
+    shortDescription:
+      'Internal 24-hour cycles that regulate sleep-wake patterns, hormone levels, and metabolism — your biological clock.',
+    content: `
+
+**Circadian rhythms** are internal 24-hour cycles of biological processes that regulate sleep-wake patterns, hormone levels, and metabolism. In the ONDA system, this term is fundamental to Level 1 (Body / Terra), as synchronizing with natural light and dark cycles determines your baseline energy levels.
+
+### Key Mechanisms
+
+- **Suprachiasmatic Nucleus (SCN)** — The "master clock" in the hypothalamus that receives light information through the retina.
+- **Melatonin & Cortisol** — A light-sensitive balance: melatonin prepares the body for sleep, while the morning cortisol spike initializes the system for action.
+
+### ONDA Protocol
+
+- **Light Exposure** — Get bright sunlight within the first 30 minutes of waking to suppress melatonin and set the timer for your sleep cycle.
+- **Blue Light Block** — Limit blue spectrum light 2–3 hours before sleep to initiate the natural recovery process.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+`,
+  },
+  {
+    slug: 'enteric-nervous-system',
+    title: 'Enteric Nervous System',
+    category: 'Neurobiology',
+    shortDescription:
+      'The "second brain" — over 100 million neurons lining the gut, capable of independent function and influencing mood and mental clarity.',
+    content: `
+
+The **Enteric Nervous System** (ENS) is a complex network of over 100 million neurons lining the gastrointestinal tract. Often called the "second brain," it is capable of functioning independently of the central nervous system. In the ONDA system, the ENS is a key node of Level 2 (Visceral Wisdom).
+
+### Key Mechanisms
+
+- **Gut-Brain Axis** — A constant bidirectional data exchange between the gut and the brain via the Vagus Nerve.
+- **Neurotransmitter Production** — Approximately 95% of the body's serotonin and 50% of its dopamine are produced in the gut, directly influencing emotional states and mental clarity.
+
+### ONDA Protocol
+
+- **Visceral Awareness** — Practice scanning sensations in the abdominal area to decode "gut feelings" and intuitive signals.
+- **Microbiome Support** — Maintaining a healthy microbiome is viewed as a foundation for cognitive performance and emotional stability.
+
+### Scientific Basis
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
+`,
+  },
 ]
 
 export const categories = [...new Set(glossaryTerms.map((t) => t.category))]

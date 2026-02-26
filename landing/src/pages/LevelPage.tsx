@@ -3,7 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import { levelsData } from '../data/levels'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
 
-const SITE_URL = 'https://onda-life.com'
+const SITE_URL = 'https://ondalife.replit.app'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
 function setMeta(name: string, content: string, isProperty = false) {
@@ -62,9 +62,15 @@ export function LevelPage() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 pt-24 pb-16 md:px-6">
-      <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-        {level.badge}
-      </div>
+      <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
+        <Link to="/" className="transition-colors hover:text-white/50">
+          Home
+        </Link>
+        <span>/</span>
+        <span className="text-terminal-green/60" aria-current="page">
+          Level {level.number}: {level.name}
+        </span>
+      </nav>
 
       <h1 className="mb-2 text-2xl font-bold tracking-tight md:text-4xl">
         <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">

@@ -17,6 +17,7 @@ const levelThemes: Record<number, { borderColor: string; accentColor: string }> 
   1: { borderColor: 'border-purple-500/20', accentColor: 'text-purple-400' },
   2: { borderColor: 'border-cyan-500/20', accentColor: 'text-cyan-400' },
   3: { borderColor: 'border-sky-500/20', accentColor: 'text-sky-400' },
+  4: { borderColor: 'border-amber-500/20', accentColor: 'text-amber-400' },
 }
 
 export interface LevelData {
@@ -360,6 +361,110 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'Default Mode Network', slug: 'default-mode-network' },
       { label: 'Reticular Activating System', slug: 'reticular-activating-system' },
       { label: 'Flow State', slug: 'flow-state' },
+    ],
+  },
+  4: {
+    number: 4,
+    badge: '[ LEVEL 4: SOCIETY / IGNIS ]',
+    name: 'SOCIETY / IGNIS',
+    subtitle: 'Oxytocin, Mirror Neurons, and Ventral Vagus — the fuel of social resonance.',
+    theme: levelThemes[4],
+    metaDescription:
+      'Level 4: Social Intelligence, Leadership Biology, Team Synergy. Oxytocin, mirror neurons, ventral vagus — neurobiology of empathy. From self-expression to collective mind.',
+    intro:
+      'Social Intelligence: From Self-Expression to Collective Mind\n\nLevel 4 is the stage of social realization and tempering. Here, the "internal sketch" created at the Mind level passes through the filter of the external environment. We transform the body into a powerful transmitter of ideas, and human interaction into the art of resonance.\n\nAt this level, we master the biology of influence, empathy, and group synergy, transitioning from personal survival to the state of Homo Creativus (The Creative Human).',
+    architecture: {
+      title: 'System Architecture',
+      intro: 'Level 4 integrates three stages of social evolution:',
+      parts: [
+        {
+          number: '10',
+          label: 'I Express',
+          slug: 'i-express',
+          protocol: 'Protocol: Neuroendocrinology of Influence',
+          goal: 'Objective: Overcoming social paralysis and attaining a sovereign voice.',
+          work:
+            'Mechanism: Synchronizing the heart (feelings), the brain (vision), and the throat (the instrument of manifestation). We use cognitive reappraisal to turn stage fright into drive and the voice into a tool for physical resonance.',
+        },
+        {
+          number: '11',
+          label: 'I Interact',
+          slug: 'i-interact',
+          protocol: 'Protocol: Empathic Regulation',
+          goal: 'Objective: Mastery of the "space between." Moving from conflict to interference.',
+          work:
+            'Mechanism: Activating the "social brain" (Theory of Mind). We learn to sense boundaries—both our own and others\'—in real-time, creating a nourishing interaction that empowers both participants.',
+        },
+        {
+          number: '12',
+          label: 'I Co-Create',
+          slug: 'i-co-create',
+          protocol: 'Protocol: Collective Intelligence',
+          goal: 'Objective: Transforming a group into a living neural network.',
+          work:
+            'Mechanism: Achieving Neural Coupling. We learn to synchronize breathing and brain rhythms within a team, reaching collective insights and synergies inaccessible to the individual mind.',
+        },
+      ],
+    },
+    biologicalProtocol: {
+      title: 'Biological Protocol',
+      intro: 'The social interaction technological stack:',
+      items: [
+        {
+          name: 'Cognitive Reappraisal',
+          text: 'A PFC technique to physiologically dampen amygdala activity (fear) and replace it with excitement.',
+        },
+        {
+          name: 'Oxytocin Loops',
+          text: 'Managing eye contact and micro-expressions to build instantaneous biological trust.',
+        },
+        {
+          name: 'Inter-brain Synchrony',
+          text: 'The phenomenon where partners\' brain rhythms align for seamless joint task execution.',
+        },
+        {
+          name: 'DMN Inhibition',
+          text: 'Suppressing the brain\'s "ego-network" to shift from protecting personal boundaries to realizing a common goal.',
+        },
+      ],
+    },
+    targetSystems: {
+      title: 'Target Systems',
+      intro: 'The level engages the following neural structures:',
+      items: [
+        { name: "Broca's & Wernicke's Areas", text: 'Centers for speech structure assembly and delivery.' },
+        { name: 'Mirror Neurons', text: 'The biological basis for empathy and intuitive reading of intentions.' },
+        { name: 'Orbitofrontal Cortex', text: 'Modulator of ethical choices and social harmony in the moment.' },
+        { name: 'rTPJ (Right Temporoparietal Junction)', text: 'Key node for managing the "mental model" of others.' },
+      ],
+    },
+    results: {
+      title: 'Results & Benefits',
+      intro:
+        'The outcome of Level 4 is entering a space of social freedom and co-creation. Your progress markers include:',
+      items: [
+        'Sovereign Expression: Your voice gains weight, and your self-expression becomes clear and authentic, free of jaw or throat tension.',
+        'Empathic Precision: The ability to "read" a partner\'s state before it is voiced.',
+        'Synergetic Mastery: The skill of integrating into group processes of any complexity while maintaining personal sovereignty.',
+        'Hormonal Glue: Establishing stable oxytocin and endorphin reward circuits for collective activities.',
+      ],
+    },
+    researchLinks: [
+      { label: 'Mirror neurons & social cognition', url: 'https://pubmed.ncbi.nlm.nih.gov/17512470/' },
+      { label: 'Oxytocin & social bonding', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+      { label: 'Inter-brain synchrony', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
+    ],
+    glossaryLinks: [
+      { label: 'Ventral Vagus', slug: 'ventral-vagus' },
+      { label: "Broca's Area", slug: 'brocas-area' },
+      { label: 'Mirror Neurons', slug: 'mirror-neurons' },
+      { label: 'Theory of Mind', slug: 'theory-of-mind' },
+      { label: 'Oxytocin', slug: 'oxytocin' },
+      { label: 'Inter-brain Synchrony', slug: 'inter-brain-synchrony' },
+      { label: 'Neural Coupling', slug: 'neural-coupling' },
+      { label: 'Cognitive Reappraisal', slug: 'cognitive-reappraisal' },
+      { label: 'rTPJ', slug: 'right-temporoparietal-junction' },
+      { label: 'Endorphins', slug: 'endorphins' },
     ],
   },
 }

@@ -3,7 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import Markdown from 'react-markdown'
 import { getTermBySlug, glossaryTerms } from '../data/glossary'
 
-const SITE_URL = 'https://onda-life.com'
+const SITE_URL = 'https://ondalife.replit.app'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
 function setMeta(name: string, content: string, isProperty = false) {
@@ -59,36 +59,20 @@ export function GlossaryTermPage() {
     .filter((t) => t.slug !== term.slug && t.category === term.category)
     .slice(0, 3)
 
-  const schemaOrg = {
-    '@context': 'https://schema.org',
-    '@type': 'DefinedTerm',
-    name: term.title,
-    description: term.shortDescription,
-    inDefinedTermSet: {
-      '@type': 'DefinedTermSet',
-      name: 'ONDA Life Glossary',
-      url: `${SITE_URL}/glossary`,
-    },
-  }
-
   return (
     <div className="mx-auto max-w-3xl px-4 pt-20 pb-16 md:px-6">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }}
-      />
       {/* Breadcrumb */}
-      <div className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30">
+      <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
         <Link to="/" className="transition-colors hover:text-white/50">
-          home
+          Home
         </Link>
         <span>/</span>
         <Link to="/glossary" className="transition-colors hover:text-white/50">
-          glossary
+          Glossary
         </Link>
         <span>/</span>
-        <span className="text-terminal-green/60">{term.slug}</span>
-      </div>
+        <span className="text-terminal-green/60" aria-current="page">{term.title}</span>
+      </nav>
 
       {/* Category badge */}
       <div className="mb-4">

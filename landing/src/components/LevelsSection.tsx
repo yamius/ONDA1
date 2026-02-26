@@ -77,6 +77,7 @@ const levels: LevelData[] = [
     color: 'from-amber-500/20 to-amber-900/10',
     borderColor: 'border-amber-500/20',
     accentColor: 'text-amber-400',
+    description: 'Oxytocin, Mirror Neurons, and Ventral Vagus — the fuel of social resonance.',
   },
   {
     number: 5,
@@ -164,7 +165,7 @@ export function LevelsSection() {
   )
 }
 
-const levelsWithPages = [1, 2, 3] // Levels that have dedicated parent pages
+const levelsWithPages = [1, 2, 3, 4] // Levels that have dedicated parent pages
 
 function LevelCard({ level }: { level: LevelData }) {
   const hasLevelPage = levelsWithPages.includes(level.number)

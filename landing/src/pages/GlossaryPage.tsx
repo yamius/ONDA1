@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { glossaryTerms, categories } from '../data/glossary'
 
-const SITE_URL = 'https://onda-life.com'
+const SITE_URL = 'https://ondalife.replit.app'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
 function setMeta(name: string, content: string, isProperty = false) {
@@ -60,6 +60,15 @@ export function GlossaryPage() {
 
   return (
     <div className="mx-auto max-w-5xl px-4 pt-20 pb-16 md:px-6">
+      <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
+        <Link to="/" className="transition-colors hover:text-white/50">
+          Home
+        </Link>
+        <span>/</span>
+        <span className="text-terminal-green/60" aria-current="page">
+          Glossary
+        </span>
+      </nav>
       <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
         [ KNOWLEDGE BASE ]
       </div>

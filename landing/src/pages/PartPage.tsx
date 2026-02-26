@@ -1,8 +1,10 @@
 import { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
+import { levelsData } from '../data/levels'
+import { PART_SEO } from '../data/part-seo'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
 
-const SITE_URL = 'https://onda-life.com'
+const SITE_URL = 'https://ondalife.replit.app'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
 function setMeta(name: string, content: string, isProperty = false) {
@@ -983,8 +985,9 @@ export function PartPage() {
 
   useEffect(() => {
     if (!part) return
-    const title = `${part.title} ${part.titleHighlight} | ONDA Life`
-    const desc = part.metaDescription ?? DEFAULT_DESCRIPTION
+    const seo = slug ? PART_SEO[slug] : undefined
+    const title = seo?.title ?? `${part.title} ${part.titleHighlight} | ONDA Life`
+    const desc = seo?.description ?? part.metaDescription ?? DEFAULT_DESCRIPTION
     document.title = title
     setMeta('description', desc)
     setMeta('og:title', title, true)
@@ -1020,11 +1023,28 @@ export function PartPage() {
     )
   }
 
+  const levelNum = part.badge.match(/LEVEL (\d+)/)?.[1]
+  const level = levelNum ? levelsData[parseInt(levelNum, 10)] : undefined
+
   return (
     <div className="mx-auto max-w-3xl px-4 pt-24 pb-16 md:px-6">
-      <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-        {part.badge}
-      </div>
+      <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
+        <Link to="/" className="transition-colors hover:text-white/50">
+          Home
+        </Link>
+        <span>/</span>
+        {level && (
+          <>
+            <Link to={`/level/${level.number}`} className="transition-colors hover:text-white/50">
+              Level {level.number}: {level.name}
+            </Link>
+            <span>/</span>
+          </>
+        )}
+        <span className="text-terminal-green/60" aria-current="page">
+          {part.title} {part.titleHighlight}
+        </span>
+      </nav>
 
       <h1 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
         {part.title}{' '}
