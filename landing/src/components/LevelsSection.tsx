@@ -63,6 +63,7 @@ const levels: LevelData[] = [
     color: 'from-sky-500/20 to-sky-900/10',
     borderColor: 'border-sky-500/20',
     accentColor: 'text-sky-400',
+    description: 'PFC, Norepinephrine, and Gamma Binding — the fuel of cognitive clarity.',
   },
   {
     number: 4,
@@ -163,7 +164,7 @@ export function LevelsSection() {
   )
 }
 
-const levelsWithPages = [1, 2] // Levels that have dedicated parent pages
+const levelsWithPages = [1, 2, 3] // Levels that have dedicated parent pages
 
 function LevelCard({ level }: { level: LevelData }) {
   const hasLevelPage = levelsWithPages.includes(level.number)

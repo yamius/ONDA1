@@ -1,8 +1,51 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { glossaryTerms, categories } from '../data/glossary'
 
+const SITE_URL = 'https://onda-life.com'
+const OG_IMAGE = `${SITE_URL}/og-preview.png`
+
+function setMeta(name: string, content: string, isProperty = false) {
+  const attr = isProperty ? 'property' : 'name'
+  let el = document.querySelector(`meta[${attr}="${name}"]`)
+  if (!el) {
+    el = document.createElement('meta')
+    el.setAttribute(attr, name)
+    document.head.appendChild(el)
+  }
+  el.setAttribute('content', content)
+}
+
+const GLOSSARY_TITLE = 'Biohacking & Neuroscience Glossary | ONDA Life Knowledge Base'
+const GLOSSARY_DESC =
+  'Explore 100+ key terms in molecular psychology, neurophysiology, and consciousness architecture. Your comprehensive guide to the ONDA Life system.'
+
 export function GlossaryPage() {
+  useEffect(() => {
+    document.title = GLOSSARY_TITLE
+    setMeta('description', GLOSSARY_DESC)
+    setMeta('og:title', GLOSSARY_TITLE, true)
+    setMeta('og:description', GLOSSARY_DESC, true)
+    setMeta('og:url', `${SITE_URL}/glossary`, true)
+    setMeta('og:image', OG_IMAGE, true)
+    setMeta('twitter:card', 'summary_large_image', true)
+    setMeta('twitter:title', GLOSSARY_TITLE, true)
+    setMeta('twitter:description', GLOSSARY_DESC, true)
+    setMeta('twitter:image', OG_IMAGE, true)
+    return () => {
+      document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
+      setMeta('description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
+      setMeta('og:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
+      setMeta('og:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
+      setMeta('og:url', SITE_URL, true)
+      setMeta('og:image', OG_IMAGE, true)
+      setMeta('twitter:card', 'summary_large_image', true)
+      setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
+      setMeta('twitter:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
+      setMeta('twitter:image', OG_IMAGE, true)
+    }
+  }, [])
+
   const [search, setSearch] = useState('')
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
 

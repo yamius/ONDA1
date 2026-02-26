@@ -3,6 +3,23 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import { levelsData } from '../data/levels'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
 
+const SITE_URL = 'https://onda-life.com'
+const OG_IMAGE = `${SITE_URL}/og-preview.png`
+
+function setMeta(name: string, content: string, isProperty = false) {
+  const attr = isProperty ? 'property' : 'name'
+  let el = document.querySelector(`meta[${attr}="${name}"]`)
+  if (!el) {
+    el = document.createElement('meta')
+    el.setAttribute(attr, name)
+    document.head.appendChild(el)
+  }
+  el.setAttribute('content', content)
+}
+
+const DEFAULT_DESCRIPTION =
+  'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.'
+
 export function LevelPage() {
   const { number } = useParams<{ number: string }>()
   const levelNum = number ? parseInt(number, 10) : 0
@@ -10,10 +27,32 @@ export function LevelPage() {
 
   useEffect(() => {
     if (level) {
-      document.title = `Level ${level.number}: ${level.name} | ONDA Life`
+      const title = `Level ${level.number}: ${level.name} | ONDA Life`
+      const url = `${SITE_URL}/level/${level.number}`
+      document.title = title
+      setMeta('description', level.metaDescription ?? level.subtitle)
+      setMeta('og:title', title, true)
+      setMeta('og:description', level.metaDescription ?? level.subtitle, true)
+      setMeta('og:url', url, true)
+      setMeta('og:image', OG_IMAGE, true)
+      setMeta('og:type', 'article', true)
+      setMeta('twitter:card', 'summary_large_image', true)
+      setMeta('twitter:title', title, true)
+      setMeta('twitter:description', level.metaDescription ?? level.subtitle, true)
+      setMeta('twitter:image', OG_IMAGE, true)
     }
     return () => {
       document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
+      setMeta('description', DEFAULT_DESCRIPTION)
+      setMeta('og:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
+      setMeta('og:description', DEFAULT_DESCRIPTION, true)
+      setMeta('og:url', SITE_URL, true)
+      setMeta('og:image', OG_IMAGE, true)
+      setMeta('og:type', 'website', true)
+      setMeta('twitter:card', 'summary_large_image', true)
+      setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
+      setMeta('twitter:description', DEFAULT_DESCRIPTION, true)
+      setMeta('twitter:image', OG_IMAGE, true)
     }
   }, [level])
 

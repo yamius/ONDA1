@@ -16,6 +16,7 @@ export interface LevelPartArchitecture {
 const levelThemes: Record<number, { borderColor: string; accentColor: string }> = {
   1: { borderColor: 'border-purple-500/20', accentColor: 'text-purple-400' },
   2: { borderColor: 'border-cyan-500/20', accentColor: 'text-cyan-400' },
+  3: { borderColor: 'border-sky-500/20', accentColor: 'text-sky-400' },
 }
 
 export interface LevelData {
@@ -47,6 +48,7 @@ export interface LevelData {
   }
   researchLinks: { label: string; url: string }[]
   glossaryLinks: { label: string; slug: string }[]
+  metaDescription?: string
 }
 
 export const levelsData: Record<number, LevelData> = {
@@ -56,6 +58,8 @@ export const levelsData: Record<number, LevelData> = {
     name: 'BODY / TERRA',
     subtitle: 'Biocomputer Architecture: From Survival to Autonomy',
     theme: levelThemes[1],
+    metaDescription:
+      'Level 1: Homeostasis, interoception, HRV. Breathing, diaphragm, vagal tone — the foundation of parasympathetic activation. Calibrate your biological zero.',
     intro:
       'Level 1 is a deep inspection and calibration of your "hardware." At this stage, we descend to "biological zero"—the baseline settings of survival—to transform the body from a "besieged fortress" into a safe and efficient home.\n\nThis is the foundation of the entire ONDA Life ecosystem. Here, consciousness is not yet separated from metabolic processes; our task is to optimize the performance of the most ancient brain structures.',
     architecture: {
@@ -156,6 +160,8 @@ export const levelsData: Record<number, LevelData> = {
     name: 'EMOTIONS / AQUA',
     subtitle: 'Energy Biochemistry: From Maneuverability to Social Power',
     theme: levelThemes[2],
+    metaDescription:
+      'Level 2: Emotional mastery. HPA axis, DHEA, mirror neurons — neuroception, ventral vagus, social resonance. From maneuverability to calm dominance.',
     intro:
       'Level 2 is the stage of mastering your emotional system as a high-tech reactor. We stop perceiving emotions as mere "moods" and begin treating them as biological protocols: with specific hormonal signatures, neuromotor patterns, and vegetative profiles.\n\nAt this level, we follow the path of mammalian evolution: from the instantaneous reactions of a small animal to the unshakable calm of a large predator and the complex resonance of a higher primate.',
     architecture: {
@@ -250,6 +256,110 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'Coherence', slug: 'coherence' },
       { label: 'Emotional Osmosis', slug: 'emotional-osmosis' },
       { label: 'Homeostasis', slug: 'homeostasis' },
+    ],
+  },
+  3: {
+    number: 3,
+    badge: '[ LEVEL 3: MIND / AER ]',
+    name: 'MIND / AER',
+    subtitle: 'Mind Architecture: From Reactivity to Design',
+    theme: levelThemes[3],
+    metaDescription:
+      'Level 3: Deep Work and productivity. PFC, norepinephrine, gamma binding — cognitive clarity. Train focus, pattern recognition, and mental simulation for entrepreneurs and IT professionals.',
+    intro:
+      'Level 3 is the level of cognitive sovereignty. We rise above instincts and limbic reactions to transform attention from a chaotic process into a controlled instrument. Here, the mind takes on the role of the lead conductor of the biocomputer.\n\nAt this stage, we train the brain to extract the "signal" from the "noise," maintain focus under information overload, and use imagination as biological software to rewrite reality.',
+    architecture: {
+      title: 'System Architecture',
+      intro: 'Level 3 integrates three consciousness management algorithms:',
+      parts: [
+        {
+          number: '07',
+          label: 'I Distinguish',
+          slug: 'i-distinguish',
+          protocol: 'Protocol: S/N Optimization',
+          goal: 'Objective: Creating a "cognitive gap" between stimulus and reaction.',
+          work:
+            'Mechanism: Tuning the Thalamus—the primary gatekeeper of sensory streams. We train the brain to separate objective facts from subjective noise, achieving crystal-clear perceptual clarity.',
+        },
+        {
+          number: '08',
+          label: 'I Focus',
+          slug: 'i-focus',
+          protocol: 'Protocol: Neural Resilience',
+          goal: 'Objective: Shifting from reactive attention to voluntary resource management.',
+          work:
+            'Mechanism: Activating the Dorsal Attention Network (DAN) and suppressing the Default Mode Network (DMN—"mind-wandering"). This is "Deep Work" mode, allowing deep immersion without wasting energy on distractions.',
+        },
+        {
+          number: '09',
+          label: 'I Shape the Vision',
+          slug: 'i-shape-the-vision',
+          protocol: 'Protocol: Mental Simulation',
+          goal: 'Objective: Engineering the future at the neural level.',
+          work:
+            'Mechanism: Launching internal "rendering." We utilize the hippocampus and the prefrontal cortex to create predictive models (Predictive Coding). Imagination here is not a fantasy but an action program for the RAS (Reticular Activating System).',
+        },
+      ],
+    },
+    biologicalProtocol: {
+      title: 'Biological Protocol',
+      intro: 'The cognitive control technological stack:',
+      items: [
+        {
+          name: 'Cognitive Gap',
+          text: 'Increasing the pause between an event and an automatic reaction to allow for freedom of choice.',
+        },
+        {
+          name: 'Cholinergic Modulation',
+          text: 'Utilizing acetylcholine to literally "highlight" necessary neural connections during focus.',
+        },
+        {
+          name: 'Gamma Binding',
+          text: 'Synchronizing neurons at gamma frequency to assemble scattered fragments of experience into a single insight.',
+        },
+        {
+          name: 'Proactive Programming (RAS)',
+          text: 'Tuning the brain\'s filters to automatically seek opportunities that match your internal vision.',
+        },
+      ],
+    },
+    targetSystems: {
+      title: 'Target Systems',
+      intro: 'The level engages the following neural structures:',
+      items: [
+        { name: 'DLPFC (Dorsolateral PFC)', text: 'The command center for attention and working memory.' },
+        { name: 'Thalamus', text: 'The gatekeeper of sensory streams, filtering out the redundant.' },
+        { name: 'ACC (Anterior Cingulate Cortex)', text: 'A high-precision detector of errors and differences.' },
+        { name: 'Locus Coeruleus', text: 'Regulator of alertness and neuroplasticity via norepinephrine.' },
+      ],
+    },
+    results: {
+      title: 'Results & Benefits',
+      intro:
+        'The outcome of Level 3 is the attainment of mental autonomy and "Neural Resilience." Your progress markers include:',
+      items: [
+        'Pattern Recognition: The ability to recognize event patterns before they hijack your attention.',
+        'Deep Work Efficiency: Sustained focus in 90/20 cycles without cognitive burnout.',
+        'Biological Belief: Changes in Galvanic Skin Response (GSR)—the body begins to "believe" in the created mental image as if it were real.',
+        'Load Reduction: A radical decrease in cognitive costs by "sharpening" the tools of perception.',
+      ],
+    },
+    researchLinks: [
+      { label: 'Prefrontal cortex & attention', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Norepinephrine & locus coeruleus', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+      { label: 'Gamma oscillations & binding', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
+    ],
+    glossaryLinks: [
+      { label: 'Cognitive Gap', slug: 'cognitive-gap' },
+      { label: 'Dorsolateral Prefrontal Cortex', slug: 'dorsolateral-prefrontal-cortex' },
+      { label: 'Thalamus', slug: 'thalamus' },
+      { label: 'Norepinephrine', slug: 'norepinephrine' },
+      { label: 'Acetylcholine', slug: 'acetylcholine' },
+      { label: 'Gamma Binding', slug: 'gamma-binding' },
+      { label: 'Predictive Coding', slug: 'predictive-coding' },
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'Reticular Activating System', slug: 'reticular-activating-system' },
+      { label: 'Flow State', slug: 'flow-state' },
     ],
   },
 }

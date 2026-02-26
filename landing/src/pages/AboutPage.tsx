@@ -1,6 +1,50 @@
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+const SITE_URL = 'https://onda-life.com'
+const OG_IMAGE = `${SITE_URL}/og-preview.png`
+
+function setMeta(name: string, content: string, isProperty = false) {
+  const attr = isProperty ? 'property' : 'name'
+  let el = document.querySelector(`meta[${attr}="${name}"]`)
+  if (!el) {
+    el = document.createElement('meta')
+    el.setAttribute(attr, name)
+    document.head.appendChild(el)
+  }
+  el.setAttribute('content', content)
+}
+
+const ABOUT_TITLE = 'About ONDA Life | The Operating System for Your Consciousness'
+const ABOUT_DESC =
+  'Discover the science behind ONDA Life. A systematic approach to human upgrade combining neuroscience, evolutionary biology, and biofeedback.'
+
 export function AboutPage() {
+  useEffect(() => {
+    document.title = ABOUT_TITLE
+    setMeta('description', ABOUT_DESC)
+    setMeta('og:title', ABOUT_TITLE, true)
+    setMeta('og:description', ABOUT_DESC, true)
+    setMeta('og:url', `${SITE_URL}/about`, true)
+    setMeta('og:image', OG_IMAGE, true)
+    setMeta('twitter:card', 'summary_large_image', true)
+    setMeta('twitter:title', ABOUT_TITLE, true)
+    setMeta('twitter:description', ABOUT_DESC, true)
+    setMeta('twitter:image', OG_IMAGE, true)
+    return () => {
+      document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
+      setMeta('description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
+      setMeta('og:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
+      setMeta('og:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
+      setMeta('og:url', SITE_URL, true)
+      setMeta('og:image', OG_IMAGE, true)
+      setMeta('twitter:card', 'summary_large_image', true)
+      setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
+      setMeta('twitter:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
+      setMeta('twitter:image', OG_IMAGE, true)
+    }
+  }, [])
+
   return (
     <div className="mx-auto max-w-3xl px-4 pt-24 pb-16 md:px-6">
       <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">

@@ -1,11 +1,30 @@
+import { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
+
+const SITE_URL = 'https://onda-life.com'
+const OG_IMAGE = `${SITE_URL}/og-preview.png`
+
+function setMeta(name: string, content: string, isProperty = false) {
+  const attr = isProperty ? 'property' : 'name'
+  let el = document.querySelector(`meta[${attr}="${name}"]`)
+  if (!el) {
+    el = document.createElement('meta')
+    el.setAttribute(attr, name)
+    document.head.appendChild(el)
+  }
+  el.setAttribute('content', content)
+}
+
+const DEFAULT_DESCRIPTION =
+  'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.'
 
 export const parts: Record<string, {
   badge: string
   title: string
   titleHighlight: string
   subtitle: string
+  metaDescription?: string
   intro: string
   protocol: { title: string; intro: string; items: { name: string; text: string }[] }
   targets: { intro: string; items: { name: string; text: string }[] }
@@ -19,6 +38,7 @@ export const parts: Record<string, {
     title: 'I',
     titleHighlight: 'Am',
     subtitle: 'Protocol: Homeostasis and Primary Interoception',
+    metaDescription: 'Part 1: Homeostasis and primary interoception. Calibrate your biological zero — HRV, vagal tone, diaphragmatic release. ONDA Life.',
     intro:
       'We descend into the very foundation\u2014the \u201cbiological zero.\u201d This is the level of cellular survival, where consciousness is not yet separated from metabolic processes. The primary goal of this stage is to shift the system from a mode of \u201canxious anticipation\u201d and deficit into a mode of \u201csafe being.\u201d\n\nAt this level, we work with the most ancient brain structures that govern life before we even begin to think about it: primary interoception (the connection between the brainstem and the insula), vagal tone (exiting the \u201cfreeze\u201d or \u201cflight\u201d response), sensory navigation (thalamic calibration), and the activation of proto-consciousness through contact with physiological rhythms.',
     protocol: {
@@ -97,6 +117,7 @@ export const parts: Record<string, {
     title: 'I',
     titleHighlight: 'Move',
     subtitle: 'Protocol: Rhythmic Coherence and Primary Locomotion',
+    metaDescription: 'Part 2: Rhythmic coherence and CPG. Awaken primary motor skills — fluid body, effortless movement. ONDA Life.',
     intro:
       'The transition from the static state of \u201cI Am\u201d to the dynamic \u201cI Flow.\u201d At this stage, we awaken primary motor skills and master navigation within the flow. This is the engineering of the \u201cfluid body,\u201d where movement does not require exhausting effort but is born from resonance with the environment.\n\nWe descend to the level of \u201cfish intelligence\u201d\u2014activating ancient brainstem structures and spinal cord circuits responsible for automatic grace and survival: activating CPGs (Central Pattern Generators), engaging primary motor circuits of the brainstem, working with spinal micro-movements, and learning to navigate through the flow of incoming stimuli.',
     protocol: {
@@ -163,6 +184,7 @@ export const parts: Record<string, {
     title: 'I',
     titleHighlight: 'Adapt',
     subtitle: 'Protocol: Gravity Mastery and Interoception',
+    metaDescription: 'Part 3: Gravity mastery and body armor release. From swimming to support — interoception and energy efficiency. ONDA Life.',
     intro:
       'This stage is dedicated to mastering gravity and transitioning from the state of \u201cswimming\u201d (complete dependence on the environment) to \u201csupport\u201d (attaining internal autonomy). Here, we lay the foundation for how our body interacts with the physical world. We move from passive survival to the active management of our position in space.\n\nFrom a neurophysiological perspective, we are working with the deepest, automated processes. The primary goal is to tune the brainstem and reticular formation, as well as to activate the primary sensorimotor cortex: managing muscle tone (optimizing the balance between flexors and extensors), learning to switch rapidly between states of \u201crelaxation/fluidity\u201d and \u201ctone/stability,\u201d and activating spinal pattern generators for natural locomotion.',
     protocol: {
@@ -235,6 +257,7 @@ export const parts: Record<string, {
     title: 'I',
     titleHighlight: 'Maneuver',
     subtitle: 'Protocol: The Maneuverability of the \u201cSmall Mammal\u201d',
+    metaDescription: 'Part 4: Neuroception and polyvagal drift. Small mammal maneuverability — cortisol and adrenaline as fuel. ONDA Life.',
     intro:
       'Welcome to the stage where biological flexibility transforms into applied mastery. If the previous stages were about learning to simply \u201cbe,\u201d here we learn to be in motion.\n\nAt the core of Part 4 lies the evolutionary gift of small mammals: the ability for instantaneous evasion, subtle navigation, and micro-avoidance of threats without falling into paralyzing stress. We translate maneuverability from a matter of \u201cluck\u201d into a measurable biological skill.',
     protocol: {
@@ -307,6 +330,7 @@ export const parts: Record<string, {
     title: 'I Guard',
     titleHighlight: 'the Territory',
     subtitle: 'Protocol: The Strength of the \u201cLarge Mammal\u201d',
+    metaDescription: 'Part 5: DHEA, ventral vagus, calm dominance. Large mammal strength — density of presence. ONDA Life.',
     intro:
       'At this stage, we stop maneuvering and begin to take up space. We shift to working with the body\u2019s biochemical reactor at the level of the \u201clarge beast.\u201d Here, emotion is viewed not as an abstract feeling, but as a bio-engineering process with a hormonal signature, a neuromotor pattern, and a vegetative profile.\n\nIn Part 5, our focus is homeostasis. This is the ability to maintain the stability of the internal environment, the density of presence, and a state of \u201cstatus calm,\u201d regardless of the external pressure the world exerts on us.',
     protocol: {
@@ -380,6 +404,7 @@ export const parts: Record<string, {
     title: "I'm Part of",
     titleHighlight: 'the Pack',
     subtitle: 'Protocol: The Social Resonance of the \u201cHigher Primate\u201d',
+    metaDescription: 'Part 6: Mirror neurons, oxytocin, social resonance. Higher primate — co-regulation and pack dynamics. ONDA Life.',
     intro:
       'Welcome to the pinnacle of Level 2. While previous stages were focused on building maneuverability and personal boundaries, Part 6 moves us toward the most complex biological interface: social resonance.\n\nBiologically, this is the stage of the \u201cHigher Primate.\u201d Our task is to transform individual survival into collective power. We learn to synchronize our biological rhythms with those of others without losing our own \u201ccoherent center.\u201d We don\u2019t just exist near people\u2014we enter into resonance with them.',
     protocol: {
@@ -444,6 +469,7 @@ export const parts: Record<string, {
     title: 'I',
     titleHighlight: 'Distinguish',
     subtitle: 'Protocol: Cognitive Control and S/N (Signal-to-Noise) Optimization',
+    metaDescription: 'Part 7: S/N optimization — cognitive gap between stimulus and reaction. Thalamus tuning. ONDA Life.',
     intro:
       'At this stage, we rise above limbic reactions and instincts. The focus is on the foundation of intelligence: the brain\u2019s ability to extract the \u201csignal\u201d from the \u201cnoise.\u201d We train the mind not to merely \u201cthink thoughts,\u201d but to purely perceive the discreteness of the world\u2014its forms, contours, and structures.\n\nThis is the first level where the cognitive system takes on the role of the lead conductor. The key biological challenge is increasing cognitive clarity and transitioning from reactivity to observation.',
     protocol: {
@@ -517,6 +543,7 @@ export const parts: Record<string, {
     title: 'I',
     titleHighlight: 'Focus',
     subtitle: 'Protocol: Cognitive Control and Neural Resilience',
+    metaDescription: 'Part 8: Deep Work and neural resilience. Voluntary attention, focus retention — dlPFC and DMN suppression. ONDA Life.',
     intro:
       'Part 8 is the heart of the cognitive level. Here, attention ceases to be a reactive response to external stimuli and becomes a controlled instrument. We learn to choose what is important in the moment and maintain that focus while ignoring noise. This is the stage of transforming attention from chaotic to voluntary.\n\nAt this stage, we work with the architecture of attention and the mechanisms for suppressing \u201cinternal noise.\u201d The key biological challenge is goal retention and the efficient distribution of cognitive energy.',
     protocol: {
@@ -592,6 +619,7 @@ export const parts: Record<string, {
     title: 'I Shape the',
     titleHighlight: 'Vision',
     subtitle: 'Protocol: Mental Simulation and Neural Plasticity',
+    metaDescription: 'Part 9: Mental simulation and predictive coding. Imagination as software — hippocampus, RAS. ONDA Life.',
     intro:
       'Part 9 is the moment we launch internal "rendering." Here, imagination is viewed not as idle fantasy, but as a powerful biological tool for behavioral engineering. We move from analyzing the present to modeling the future, creating mental prototypes of reality.\n\nAt this level, we engage the brain\'s highest integrative systems to assemble scattered fragments of experience into a unified image. The key biological challenge is the creation of a precise Predictive Coding model of reality.',
     protocol: {
@@ -688,6 +716,7 @@ export const parts: Record<string, {
     title: 'I',
     titleHighlight: 'Express',
     subtitle: 'Protocol: Neuroendocrinology of Influence and Vocal Resonance',
+    metaDescription: 'Part 10: Vocal resonance and social manifestation. Neuroendocrinology of influence — from simulation to expression. ONDA Life.',
     intro:
       'This is the stage of social realization and tempering. Here, the "internal sketch" created at the Mind level must pass through the filter of the external environment. The goal of this stage is to synchronize the heart (feelings), the brain (vision), and the throat (the instrument of manifestation). We transform self-expression into a sovereign act.\n\nAt this level, a powerful leap occurs: the brain engages systems for social monitoring and speech production. The key biological challenge is overcoming social anxiety and transitioning from internal simulation to real-world manifestation.',
     protocol: {
@@ -774,6 +803,7 @@ export const parts: Record<string, {
     title: 'I',
     titleHighlight: 'Interact',
     subtitle: 'Protocol: Social Cognition and Empathic Regulation',
+    metaDescription: 'Part 11: Social cognition and empathic regulation. Theory of Mind, social predictive coding. ONDA Life.',
     intro:
       'Part 11 is the transition from self-expression to interference. In physics, this is the moment when two waves overlap, creating a new, complex pattern. In ONDA, this is the tuning of your "neural Wi-Fi." We learn to be with another in a way that ensures interaction does not turn into a conflict of interest or manipulation.\n\nAt this level, the "social brain" is activated — a sophisticated network responsible for interpersonal synchronization. The key biological challenge is the balance between maintaining autonomy ("I") and deep connection ("We").',
     protocol: {
@@ -861,6 +891,7 @@ export const parts: Record<string, {
     title: 'I',
     titleHighlight: 'Co-Create',
     subtitle: 'Protocol: Neural Synchronization and Collective Intelligence',
+    metaDescription: 'Part 12: Neural coupling and collective intelligence. Gamma sync, brain-to-brain coherence. ONDA Life.',
     intro:
       'Part 12 is the culmination of the ONDA system\'s social evolution. We transition from "I" to "WE" without the loss of individuality, entering a state of neural coupling. This is the point where the intelligence, emotions, and meanings of a group synchronize, creating a collective flow.\n\nAt this level, the brain demonstrates the highest form of interpersonal coordination: the synchronous operation of rhythms across multiple individuals. The key biological challenge is the integration of individual consciousness into a collective neural network.',
     protocol: {
@@ -949,6 +980,34 @@ export const parts: Record<string, {
 export function PartPage() {
   const { slug } = useParams<{ slug: string }>()
   const part = slug ? parts[slug] : undefined
+
+  useEffect(() => {
+    if (!part) return
+    const title = `${part.title} ${part.titleHighlight} | ONDA Life`
+    const desc = part.metaDescription ?? DEFAULT_DESCRIPTION
+    document.title = title
+    setMeta('description', desc)
+    setMeta('og:title', title, true)
+    setMeta('og:description', desc, true)
+    setMeta('og:url', `${SITE_URL}/part/${slug}`, true)
+    setMeta('og:image', OG_IMAGE, true)
+    setMeta('twitter:card', 'summary_large_image', true)
+    setMeta('twitter:title', title, true)
+    setMeta('twitter:description', desc, true)
+    setMeta('twitter:image', OG_IMAGE, true)
+    return () => {
+      document.title = 'ONDA Life | Operating System for Your Consciousness'
+      setMeta('description', DEFAULT_DESCRIPTION)
+      setMeta('og:title', 'ONDA Life | Operating System for Your Consciousness', true)
+      setMeta('og:description', DEFAULT_DESCRIPTION, true)
+      setMeta('og:url', SITE_URL, true)
+      setMeta('og:image', OG_IMAGE, true)
+      setMeta('twitter:card', 'summary_large_image', true)
+      setMeta('twitter:title', 'ONDA Life | Operating System for Your Consciousness', true)
+      setMeta('twitter:description', DEFAULT_DESCRIPTION, true)
+      setMeta('twitter:image', OG_IMAGE, true)
+    }
+  }, [part, slug])
 
   if (!part) {
     return (

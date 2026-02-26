@@ -4,6 +4,7 @@ import Markdown from 'react-markdown'
 import { getTermBySlug, glossaryTerms } from '../data/glossary'
 
 const SITE_URL = 'https://onda-life.com'
+const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
 function setMeta(name: string, content: string, isProperty = false) {
   const attr = isProperty ? 'property' : 'name'
@@ -29,14 +30,24 @@ export function GlossaryTermPage() {
     setMeta('og:title', title, true)
     setMeta('og:description', term.shortDescription, true)
     setMeta('og:url', url, true)
+    setMeta('og:image', OG_IMAGE, true)
     setMeta('og:type', 'article', true)
+    setMeta('twitter:card', 'summary_large_image', true)
+    setMeta('twitter:title', title, true)
+    setMeta('twitter:description', term.shortDescription, true)
+    setMeta('twitter:image', OG_IMAGE, true)
     return () => {
       document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
       setMeta('description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
       setMeta('og:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
       setMeta('og:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
       setMeta('og:url', SITE_URL, true)
+      setMeta('og:image', OG_IMAGE, true)
       setMeta('og:type', 'website', true)
+      setMeta('twitter:card', 'summary_large_image', true)
+      setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
+      setMeta('twitter:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
+      setMeta('twitter:image', OG_IMAGE, true)
     }
   }, [term])
 
