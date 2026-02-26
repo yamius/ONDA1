@@ -4,6 +4,8 @@ export interface GlossaryTerm {
   category: string
   shortDescription: string
   content: string
+  /** Optional: 3 most logically related terms for internal linking (SEO). */
+  relatedSlugs?: string[]
 }
 
 export const glossaryTerms: GlossaryTerm[] = [
@@ -244,6 +246,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     category: 'Body Systems',
     shortDescription:
       'The body\'s ability to maintain stable internal conditions — temperature, pH, blood sugar — despite external changes.',
+    relatedSlugs: ['hypothalamus', 'primary-interoception', 'autonomic-nervous-system'],
     content: `
 
 **Homeostasis** is the dynamic process by which living organisms maintain a stable internal environment.¹ It is the biological foundation of the "I Am" state in ONDA Level 1.
@@ -1135,6 +1138,7 @@ Part 4 trains "the chain: Reticular Formation → Thalamus → Motor Cortex" so 
     category: 'Neuroscience',
     shortDescription:
       'The brain\'s ability to reorganize itself by forming new neural connections throughout life.',
+    relatedSlugs: ['prefrontal-cortex', 'hippocampus', 'psycho-neural-network'],
     content: `
 
 **Neuroplasticity** is the brain's capacity to change its structure and function in response to experience, learning, and practice. Contrary to the old belief that the adult brain is fixed, research shows that neural pathways can be rewired at any age.
@@ -1187,6 +1191,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     category: 'Body Systems',
     shortDescription:
       'The sense of body position and movement in space — "where am I" and "how am I moving."',
+    relatedSlugs: ['interoception', 'vestibular-system', 'sensorimotor-cortex'],
     content: `
 
 **Proprioception** is the sense of your body's position, movement, and orientation in space. Unlike interoception (internal state), proprioception tells you where your limbs are, how they're moving, and your relationship to gravity — without looking.
@@ -1785,6 +1790,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     category: 'Neuroscience',
     shortDescription:
       'The "bonding hormone" — promotes trust, belonging, and social connection; lowers anxiety and aggression.',
+    relatedSlugs: ['amygdala', 'vagus-nerve', 'anterior-cingulate-cortex'],
     content: `
 
 **Oxytocin** is a hormone and neuropeptide produced in the hypothalamus and released by the pituitary. It is often called the "love hormone" or "bonding hormone" for its role in social connection, trust, and attachment.
@@ -1793,7 +1799,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 - **Trust** — increases willingness to cooperate
 - **Bonding** — strengthens attachment (parent-child, romantic, social)
-- **Anxiety reduction** — lowers baseline anxiety
+- **Anxiety reduction** — lowers baseline anxiety (counteracts amygdala reactivity)
 - **Aggression reduction** — dampens defensive aggression
 - **Social salience** — enhances attention to social cues
 
@@ -1920,6 +1926,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     category: 'Neuroscience',
     shortDescription:
       'The brain\'s command center for executive functions — attention, planning, inhibition, and cognitive control.',
+    relatedSlugs: ['amygdala', 'dorsolateral-prefrontal-cortex', 'anterior-cingulate-cortex'],
     content: `
 
 The **prefrontal cortex** (PFC) is the front part of the frontal lobe, responsible for executive functions: planning, decision-making, working memory, attention control, and inhibition of inappropriate responses.
@@ -2257,6 +2264,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     category: 'Neuroscience',
     shortDescription:
       'The neurotransmitter of motivation and reward — supports working memory and sustained focus.',
+    relatedSlugs: ['prefrontal-cortex', 'neuroplasticity', 'neurotransmitters'],
     content: `
 
 **Dopamine** is a neurotransmitter that plays a central role in motivation, reward, movement, and working memory. It is produced in the substantia nigra and ventral tegmental area and projects to the striatum and prefrontal cortex.
@@ -2810,6 +2818,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     category: 'Neuroscience',
     shortDescription:
       'The brain structure for threat detection and emotional reactivity — the source of social fear and anxiety.',
+    relatedSlugs: ['prefrontal-cortex', 'limbic-system', 'cognitive-reappraisal'],
     content: `
 
 The **amygdala** is an almond-shaped structure in the temporal lobe, part of the limbic system. It is the primary detector of threat and the driver of fear, anxiety, and defensive responses.

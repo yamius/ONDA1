@@ -32,7 +32,7 @@ export interface RouteMeta {
   description: string
   url: string
   breadcrumbs: BreadcrumbItem[]
-  definedTerm?: { name: string; description: string }
+  definedTerm?: { name: string; description: string; url: string }
 }
 
 function buildBreadcrumbs(route: string): BreadcrumbItem[] {
@@ -99,12 +99,13 @@ function buildBreadcrumbListJsonLd(breadcrumbs: BreadcrumbItem[]): string {
   return JSON.stringify(list)
 }
 
-function buildDefinedTermJsonLd(name: string, description: string): string {
+function buildDefinedTermJsonLd(name: string, description: string, url: string): string {
   const term = {
     '@context': 'https://schema.org',
     '@type': 'DefinedTerm',
     name,
     description,
+    url,
     inDefinedTermSet: {
       '@type': 'DefinedTermSet',
       name: 'ONDA Life Glossary',
@@ -142,7 +143,7 @@ export function getMetaForRoute(route: string): RouteMeta {
         description,
         url,
         breadcrumbs,
-        definedTerm: { name: term.title, description },
+        definedTerm: { name: term.title, description, url },
       }
     }
   }
@@ -162,11 +163,11 @@ export function getMetaForRoute(route: string): RouteMeta {
   const levelMatch = route.match(/^\/level\/([^/]+)$/)
   if (levelMatch) {
     const level = levelsData[parseInt(levelMatch[1], 10)]
-    if (level) {
-      const title = `Level ${level.number}: ${level.name} | ONDA Life`
-      const description = level.metaDescription ?? level.subtitle
-      return { title, description, url, breadcrumbs }
-    }
+    const title = level
+      ? `Level ${level.number}: ${level.name} | ONDA Life`
+      : `Level ${levelMatch[1]} | ONDA Life`
+    const description = level?.metaDescription ?? level?.subtitle ?? ''
+    return { title, description, url, breadcrumbs }
   }
 
   return { title: DEFAULT_TITLE, description: DEFAULT_DESC, url, breadcrumbs }
@@ -204,7 +205,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
 
   // JSON-LD: DefinedTerm (glossary pages only)
   if (meta.definedTerm) {
-    const definedTermScript = `<script type="application/ld+json">${buildDefinedTermJsonLd(meta.definedTerm.name, meta.definedTerm.description)}</script>`
+    const definedTermScript = `<script type="application/ld+json">${buildDefinedTermJsonLd(meta.definedTerm.name, meta.definedTerm.description, meta.definedTerm.url)}</script>`
     out = out.replace('</head>', `  ${definedTermScript}\n</head>`)
   }
 

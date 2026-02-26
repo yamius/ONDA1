@@ -2,9 +2,10 @@
  * Generates sitemap.xml with all prerendered routes for Google indexing.
  * Run after: npm run build (prerender calls this at the end)
  *
- * Includes: /, /about, /glossary, /glossary/:slug (140+), /part/:slug (12), /level/:id (4)
+ * Priority: Main 1.0, /glossary (hub) 0.9, /level/ 0.8, /glossary/:slug 0.7
+ * Lastmod: file mtime when available, else build date
  */
-import { writeFileSync, mkdirSync } from 'fs'
+import { writeFileSync, mkdirSync, statSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { getPrerenderRoutes } from '../src/config/routes'
@@ -12,13 +13,38 @@ import { getPrerenderRoutes } from '../src/config/routes'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
 const SITE_URL = 'https://ondalife.replit.app'
+const buildDate = new Date().toISOString().split('T')[0]
+
+function getPriority(route: string): string {
+  if (route === '/') return '1.0'
+  if (route === '/glossary') return '0.9'
+  if (route.startsWith('/level/')) return '0.8'
+  if (route.startsWith('/glossary/')) return '0.7'
+  return '0.8'
+}
+
+function getLastmod(route: string): string {
+  const filePath =
+    route === '/'
+      ? join(distDir, 'index.html')
+      : join(distDir, route.slice(1), 'index.html')
+  try {
+    if (existsSync(filePath)) {
+      const mtime = statSync(filePath).mtime
+      return mtime.toISOString().split('T')[0]
+    }
+  } catch {
+    /* ignore */
+  }
+  return buildDate
+}
 
 const routes = getPrerenderRoutes()
-const lastmod = new Date().toISOString().split('T')[0]
 
 const urls = routes.map((path) => {
   const loc = `${SITE_URL}${path === '/' ? '' : path}`
-  const priority = path === '/' ? '1.0' : path.split('/').length <= 2 ? '0.9' : '0.8'
+  const lastmod = getLastmod(path)
+  const priority = getPriority(path)
   const changefreq = path === '/' ? 'weekly' : 'monthly'
   return `  <url>
     <loc>${loc}</loc>

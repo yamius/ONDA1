@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useParams, Link, Navigate } from 'react-router-dom'
 import Markdown from 'react-markdown'
 import { getTermBySlug, glossaryTerms } from '../data/glossary'
+import { injectGlossaryLinks } from '../utils/glossaryLinks'
 
 const SITE_URL = 'https://ondalife.replit.app'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
@@ -55,9 +56,14 @@ export function GlossaryTermPage() {
     return <Navigate to="/glossary" replace />
   }
 
-  const relatedTerms = glossaryTerms
-    .filter((t) => t.slug !== term.slug && t.category === term.category)
-    .slice(0, 3)
+  const relatedTerms = term.relatedSlugs
+    ? term.relatedSlugs
+        .map((s) => glossaryTerms.find((t) => t.slug === s))
+        .filter((t): t is NonNullable<typeof t> => t != null)
+        .slice(0, 5)
+    : glossaryTerms
+        .filter((t) => t.slug !== term.slug && t.category === term.category)
+        .slice(0, 5)
 
   return (
     <div className="mx-auto max-w-3xl px-4 pt-20 pb-16 md:px-6">
@@ -172,7 +178,7 @@ export function GlossaryTermPage() {
             },
           }}
         >
-          {term.content}
+          {injectGlossaryLinks(term.content, term.slug)}
         </Markdown>
       </article>
 
