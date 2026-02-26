@@ -1,7 +1,8 @@
 User-agent: *
-Disallow: /
-Allow: /glossary
+Allow: /
 Allow: /glossary/
 Allow: /level/
+Allow: /part/
+Disallow: /static/
 
 Sitemap: https://ondalife.replit.app/sitemap.xml
