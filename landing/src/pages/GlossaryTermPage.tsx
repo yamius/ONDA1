@@ -148,16 +148,28 @@ export function GlossaryTermPage() {
                 {children}
               </code>
             ),
-            a: ({ href, children }) => (
-              <a
-                href={href}
-                target={href?.startsWith('http') ? '_blank' : undefined}
-                rel={href?.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className="text-terminal-cyan underline decoration-terminal-cyan/30 underline-offset-2 transition-colors hover:text-terminal-cyan/80 hover:decoration-terminal-cyan/50"
-              >
-                {children}
-              </a>
-            ),
+            a: ({ href, children }) => {
+              const isExternal = href?.startsWith('http')
+              const className =
+                'text-terminal-cyan underline decoration-terminal-cyan/30 underline-offset-2 transition-colors hover:text-terminal-cyan/80 hover:decoration-terminal-cyan/50'
+              if (href && !isExternal && href.startsWith('/')) {
+                return (
+                  <Link to={href} className={className}>
+                    {children}
+                  </Link>
+                )
+              }
+              return (
+                <a
+                  href={href}
+                  target={isExternal ? '_blank' : undefined}
+                  rel={isExternal ? 'noopener noreferrer' : undefined}
+                  className={className}
+                >
+                  {children}
+                </a>
+              )
+            },
           }}
         >
           {term.content}

@@ -1,5 +1,5 @@
 import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import { Layout } from './components/Layout'
@@ -9,7 +9,7 @@ import { LevelPage } from './pages/LevelPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { staticRoutes } from './config/routes'
 
-createRoot(document.getElementById('root')!).render(
+const app = (
   <StrictMode>
     <BrowserRouter>
       <Routes>
@@ -24,5 +24,13 @@ createRoot(document.getElementById('root')!).render(
         </Route>
       </Routes>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )
+
+const container = document.getElementById('root')!
+// Hydrate prerendered HTML to avoid flicker; fallback to render for empty root (e.g. 404 SPA fallback)
+if (container.hasChildNodes()) {
+  hydrateRoot(container, app)
+} else {
+  createRoot(container).render(app)
+}
