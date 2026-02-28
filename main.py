@@ -218,6 +218,9 @@ def _is_similar(topic, used_topics, min_overlap=2):
     return False
 
 
+USED_TOPICS_FILE = Path(__file__).parent / 'scripts' / 'used_topics.txt'
+
+
 def _load_used_topics():
     used = []
     if os.path.exists(ARTICLES_DIR):
@@ -229,7 +232,25 @@ def _load_used_topics():
                         used.append(first)
                 except Exception:
                     pass
+    if USED_TOPICS_FILE.exists():
+        try:
+            for line in USED_TOPICS_FILE.read_text(encoding='utf-8').strip().split('\n'):
+                t = line.strip()
+                if t and not t.startswith('#') and t not in used:
+                    used.append(t)
+        except Exception:
+            pass
     return used
+
+
+def _save_used_topic(topic: str):
+    """Mark topic as used (so we don't suggest it again after reject)."""
+    try:
+        USED_TOPICS_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with open(USED_TOPICS_FILE, 'a', encoding='utf-8') as f:
+            f.write(topic.strip() + '\n')
+    except Exception as e:
+        print(f'[used_topics] {e}')
 
 
 def _load_topics():
@@ -279,6 +300,7 @@ def _generate_and_send():
         if topic is None:
             _send_error("All topics filtered (drugs/injections/supplements)")
             return
+        _save_used_topic(topic)
         client = OpenAI(api_key=OPENAI_KEY, timeout=90)
         system_prompt = """ONDA OS COMPILER v1.0
 Role: You are the terminal for the biological operating system ONDA. Your task: decompile incoming "human" text and assemble it into a technical optimization protocol.
