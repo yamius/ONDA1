@@ -237,6 +237,8 @@ async function generateAndSend() {
   }
 }
 
+const DEPLOY_URL = (process.env.DEPLOY_URL || process.env.SITE_URL || 'https://onda-life.com').replace(/\/$/, '')
+
 function saveArticle(content) {
   mkdirSync(ARTICLES_DIR, { recursive: true })
   const ts = new Date().toISOString().replace(/[-:T]/g, '').slice(0, 15)
@@ -244,6 +246,21 @@ function saveArticle(content) {
   const filepath = join(ARTICLES_DIR, filename)
   writeFileSync(filepath, content.trim(), 'utf-8')
   return filename
+}
+
+async function postToDeploy(content, filename) {
+  try {
+    const res = await fetch(`${DEPLOY_URL}/api/save-article`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ content: content.trim(), filename }),
+    })
+    if (!res.ok) throw new Error(await res.text())
+    return true
+  } catch (e) {
+    console.error('[bot] postToDeploy failed:', e.message || e)
+    return false
+  }
 }
 
 const INLINE_APPROVE_REJECT = {
@@ -337,8 +354,12 @@ STATUS: TEST_MODE`
       }
       try {
         const filename = saveArticle(content)
+        const pushed = await postToDeploy(content, filename)
         await tg('answerCallbackQuery', { callback_query_id: cb.id, text: 'Article saved!' })
-        await tg('sendMessage', { chat_id: chatId, text: `Article saved to \`articles/${filename}\`. Edit in Replit Files.`, parse_mode: 'Markdown' })
+        const msg = pushed
+          ? `Article saved to \`articles/${filename}\`. Live on site. Edit locally → \`node scripts/push_articles.js\``
+          : `Article saved to \`articles/${filename}\`. Deploy failed — run \`node scripts/push_articles.js\` to push.`
+        await tg('sendMessage', { chat_id: chatId, text: msg, parse_mode: 'Markdown' })
       } catch (e) {
         await tg('answerCallbackQuery', { callback_query_id: cb.id, text: 'Save failed!' })
         await tg('sendMessage', { chat_id: chatId, text: `❌ Save failed: ${e.message}` })

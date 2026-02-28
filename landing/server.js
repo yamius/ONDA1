@@ -126,6 +126,7 @@ app.get('/api/articles-list', (req, res) => {
 
 // API: list markdown articles (dedup by content hash — keeps newest)
 app.get('/api/md-articles', (req, res) => {
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate')
   if (!existsSync(articlesDir)) return res.json([])
   const files = readdirSync(articlesDir).filter(f => f.endsWith('.md'))
   const seen = new Map()

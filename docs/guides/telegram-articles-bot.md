@@ -9,6 +9,7 @@
 | `TELEGRAM_TOKEN` | Токен бота от @BotFather |
 | `MY_CHAT_ID` | ID чата, куда бот отправляет статьи |
 | `OPENAI_API_KEY` | Ключ OpenAI для генерации |
+| `DEPLOY_URL` | URL сайта для POST (по умолчанию https://onda-life.com) |
 
 ## Запуск
 
@@ -54,7 +55,9 @@ ONDA фокусируется на: **поведенческие модели, �
 2. Скопируй, отредактируй в своём редакторе.
 3. Вставь отредактированный текст в чат и отправь.
 4. Бот ответит «Save as article?» с Approve/Reject.
-5. Approve → бот отправляет статью на `POST /api/save-article` → сохраняется в `articles/`.
+5. Approve → бот сохраняет локально и POST на сайт (`DEPLOY_URL/api/save-article`) → статья сразу на сайте.
+
+**Редактирование:** правь в `articles/` → `node scripts/push_articles.js`.
 
 **Где папка на Replit:** `articles/` в корне проекта (рядом с `landing/`). Если не видно — открой `https://твой-сайт.com/api/articles-path` — там путь. На Deploy файлы могут быть в контейнере, не в Files.
 
