@@ -1,12 +1,17 @@
-# Topics for article generation (one per line, # = comment)
-# Add hot topics from biohacking, neuroscience, longevity
-mitochondrial health and ATP optimization
-vagal tone and stress resilience
+# ONDA-aligned topics: behavioral models, devices, timing, light exercise, social
+# Avoid: drugs, injections, supplements
+vagal tone and breathing for stress resilience
 circadian rhythm and sleep architecture
 cold exposure and brown fat activation
 red light therapy and cellular energy
-intermittent fasting and autophagy
 HRV training and nervous system
 neuroplasticity and flow state
-gut-brain axis and microbiome
 blue light and melatonin suppression
+morning light exposure and circadian alignment
+EEG and brainwave entrainment
+walking and low-intensity movement
+posture and spinal health
+social co-regulation and nervous system
+sleep tracking with wearables
+binaural beats and focus
+temperature and sleep quality

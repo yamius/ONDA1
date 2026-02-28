@@ -17,6 +17,21 @@ FIRST_DELAY_SEC = int(os.environ.get('ARTICLE_FIRST_DELAY_SEC', '3600'))  # 1h d
 
 _STOPWORDS = {'the', 'a', 'an', 'and', 'or', 'but', 'for', 'in', 'on', 'at', 'to', 'of', 'is', 'are', 'was', 'were', 'be', 'been', 'this', 'that', 'it', 'its', 'as', 'by', 'with'}
 
+# Topics we reject: drugs, injections, supplements, peptides
+_TOPIC_BLACKLIST = {
+    'injection', 'inject', 'tesamorelin', 'peptide', 'semaglutide', 'ozempic',
+    'berberine', 'quercetin', 'fisetin', 'dasatinib', 'senolytic',
+    'supplement', 'pill', 'capsule', 'mg ', 'dosage', 'dose',
+    'pharmaceutical', 'drug', 'compound', 'stack', 'stacking',
+    'melatonin', 'nootropic',
+}
+# Output blacklist: reject generated text containing these
+_OUTPUT_BLACKLIST = {
+    'injection', 'inject', 'subcutaneous', 'mg ', 'dosage', 'dose',
+    'tesamorelin', 'peptide', 'semaglutide', 'ozempic', 'pharmaceutical',
+    'administer',
+}
+
 
 def ensure_articles_dir():
     if not os.path.exists(ARTICLES_DIR):
@@ -116,10 +131,13 @@ REDDIT_SUBS = os.environ.get('REDDIT_SUBS', 'biohacking,Nootropics,longevity').s
 def _fetch_reddit_topics(limit=10):
     try:
         import feedparser
+        import urllib.request
         topics = []
         for sub in REDDIT_SUBS[:3]:
             url = f'https://www.reddit.com/r/{sub.strip()}/top/.rss?t=day&limit=10'
-            d = feedparser.parse(url)
+            req = urllib.request.Request(url, headers={'User-Agent': 'ONDA-bot/1'})
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                d = feedparser.parse(resp.read())
             for e in d.entries[:limit]:
                 t = (e.get('title') or '').strip()
                 if t and len(t) > 10:
@@ -135,6 +153,16 @@ def _fetch_reddit_topics(limit=10):
 def _words(text):
     w = [x.lower() for x in text.replace("'", " ").split() if len(x) >= 3 and x.lower() not in _STOPWORDS]
     return set(w)
+
+
+def _is_topic_blacklisted(topic: str) -> bool:
+    t = topic.lower()
+    return any(b in t for b in _TOPIC_BLACKLIST)
+
+
+def _is_output_blacklisted(text: str) -> bool:
+    t = text.lower()
+    return any(b in t for b in _OUTPUT_BLACKLIST)
 
 
 def _is_similar(topic, used_topics, min_overlap=2):
@@ -172,6 +200,15 @@ def _load_topics():
     return topics
 
 
+def _send_error(msg: str):
+    try:
+        if CHAT_ID:
+            bot.send_message(CHAT_ID, f"❌ Generator: {msg}")
+    except Exception:
+        pass
+    print(f'[generator] {msg}')
+
+
 def _generate_and_send():
     if not all([CHAT_ID, OPENAI_KEY]):
         return
@@ -179,28 +216,59 @@ def _generate_and_send():
         from openai import OpenAI
         topics = _load_topics()
         if not topics:
+            _send_error("No topics (Reddit + topics.txt failed)")
             return
         used = _load_used_topics()
         topic = None
         for t in topics:
+            if _is_topic_blacklisted(t):
+                continue
             if not _is_similar(t, used):
                 topic = t
                 break
         if topic is None:
-            topic = topics[0]
-        client = OpenAI(api_key=OPENAI_KEY)
-        prompt = f"""Write a short ONDA Life style article (max 3500 chars) in English.
-Structure: [ ARTICLE: TITLE // SUBTITLE ], THE INTRO, THE HACK: [ PROTOCOL_NAME ], THE LOGIC, [ HARDWARE_VALIDATION ].
-Style: technical, biohacking, biocomputer metaphor. Markdown. Topic: {topic}"""
+            # fallback: first non-blacklisted topic
+            for t in topics:
+                if not _is_topic_blacklisted(t):
+                    topic = t
+                    break
+        if topic is None:
+            _send_error("All topics filtered (drugs/injections/supplements)")
+            return
+        client = OpenAI(api_key=OPENAI_KEY, timeout=90)
+        system_prompt = """You write ONDA Life biohacking articles. ONDA treats the body as a biocomputer: hardware (cells, organs), software (protocols, hacks), validation (metrics, devices).
+
+SCOPE (ONLY these):
+- Behavioral models: breathing, posture, movement patterns
+- Devices: wearables (Oura, Whoop, Muse), EEG, red/blue light panels, acoustic stimulation
+- Time of day: circadian windows, morning/evening protocols
+- Light physical exercise: walking, stretching, low-intensity movement
+- Social: co-regulation, group dynamics, interpersonal tuning
+
+FORBIDDEN (never include):
+- Injections, drugs, pharmaceuticals, peptides (Tesamorelin, Ozempic, etc.)
+- Supplements, pills, capsules, dosages in mg
+- Any compound you "administer" or "take"
+
+RULES:
+- Create ORIGINAL content. Use the topic only as inspiration. Do NOT copy existing articles.
+- ONDA style: engineering tone, "black box" metaphor, concrete protocols, specific hardware.
+- Structure: [ ARTICLE: TITLE // SUBTITLE ], THE INTRO, THE HACK: [ PROTOCOL_NAME ] (steps in blockquotes), THE LOGIC, [ HARDWARE_VALIDATION ].
+- Use Markdown: ## headers, > blockquotes. Max 3500 chars. English."""
+
+        prompt = f"""Write an ONDA Life article. Topic (use as inspiration only): {topic}"""
         r = client.chat.completions.create(
             model='gpt-4o-mini',
             messages=[
-                {'role': 'system', 'content': 'ONDA Life biohacking articles. Technical, markdown, under 3500 chars.'},
+                {'role': 'system', 'content': system_prompt},
                 {'role': 'user', 'content': prompt},
             ],
             max_tokens=1500,
         )
         text = r.choices[0].message.content.strip()
+        if _is_output_blacklisted(text):
+            _send_error("Generated content rejected (drugs/injections/supplements detected)")
+            return
         if len(text) > 4000:
             text = text[:3997] + '...'
         markup = telebot.types.InlineKeyboardMarkup()
@@ -210,7 +278,7 @@ Style: technical, biohacking, biocomputer metaphor. Markdown. Topic: {topic}"""
         )
         bot.send_message(CHAT_ID, text, reply_markup=markup)
     except Exception as e:
-        print(f'[generator] {e}')
+        _send_error(str(e))
 
 
 def _generator_loop():
