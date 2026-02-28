@@ -23,11 +23,19 @@ def handle_next(message):
     bot.reply_to(message, "Send me content and use the approve button to save it.")
 
 
+@bot.message_handler(func=lambda message: message.text and not message.text.startswith('/'))
+def handle_text(message):
+    markup = telebot.types.InlineKeyboardMarkup()
+    markup.add(telebot.types.InlineKeyboardButton('Approve', callback_data='approve'))
+    bot.reply_to(message, "Сохранить это сообщение как статью?", reply_markup=markup)
+
+
 @bot.callback_query_handler(func=lambda call: call.data == 'approve')
 def handle_approve(call):
     ensure_articles_dir()
 
-    message_text = call.message.text or call.message.caption or ''
+    original = call.message.reply_to_message
+    message_text = (original.text or original.caption or '') if original else (call.message.text or '')
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     filename = os.path.join(ARTICLES_DIR, f'article_{timestamp}.md')
 
