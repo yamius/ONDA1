@@ -3,6 +3,8 @@ import { useParams, Link } from 'react-router-dom'
 import Markdown from 'react-markdown'
 
 const SITE_URL = 'https://ondalife.replit.app'
+const DONE_PREFIX = 'md_done_'
+const FINALIZE_PREFIX = 'md_final_'
 
 interface MdArticle {
   slug: string
@@ -37,118 +39,216 @@ function PlayIcon() {
   )
 }
 
-/**
- * Converts plain-text Telegram article format to markdown.
- * Handles:
- *   - [ SECTION: NAME ] → ## [ SECTION: NAME ]
- *   - ALL CAPS short lines → ### LINE
- *   - Lines starting with PROTOCOL_ → blockquote
- */
-function toMarkdown(raw: string): string {
-  const lines = raw.split('\n')
-  const out: string[] = []
+function estimateReadTime(text: string): string {
+  const words = text.trim().split(/\s+/).length
+  const minutes = Math.max(1, Math.round(words / 200))
+  const seconds = Math.round((words % 200) / 200 * 60)
+  return `${minutes} min ${seconds.toString().padStart(2, '0')} sec`
+}
 
-  for (let i = 0; i < lines.length; i++) {
+type Block =
+  | { type: 'header'; text: string }
+  | { type: 'subheader'; text: string }
+  | { type: 'quote'; lines: string[] }
+  | { type: 'protocol'; id: string; name: string; lines: string[] }
+  | { type: 'text'; lines: string[] }
+
+function parseContent(raw: string): Block[] {
+  const lines = raw.split('\n')
+  const blocks: Block[] = []
+  let i = 0
+
+  while (i < lines.length) {
     const line = lines[i]
     const trimmed = line.trim()
 
-    if (!trimmed) {
-      out.push('')
-      continue
-    }
+    if (!trimmed) { i++; continue }
 
-    // Full-line bracket header: [ SOME TEXT ] or [ SOME: TEXT ]
+    // [ BRACKET HEADER ]
     if (/^\[.+\]$/.test(trimmed)) {
-      out.push(`## ${trimmed.toUpperCase()}`)
+      blocks.push({ type: 'header', text: trimmed.replace(/^\[|\]$/g, '').trim().toUpperCase() })
+      i++
       continue
     }
 
-    // THE HACK: [ ... ] pattern
+    // THE HACK: [ ... ] — treat as header
     if (/^THE HACK[:\s]/i.test(trimmed)) {
-      out.push(`## ${trimmed.toUpperCase()}`)
+      blocks.push({ type: 'header', text: trimmed.toUpperCase() })
+      i++
       continue
     }
 
-    // PROTOCOL_ line
-    if (/^PROTOCOL[_\s]/i.test(trimmed)) {
-      out.push(`> → ${trimmed}`)
+    // PROTOCOL_XX > Name or PROTOCOL XX: Name
+    if (/^PROTOCOL[_\s\d]/i.test(trimmed)) {
+      const id = `protocol-${blocks.filter(b => b.type === 'protocol').length}`
+      const protoLines: string[] = [trimmed]
+      i++
+      while (i < lines.length && lines[i].trim() && !/^\[/.test(lines[i].trim()) && !/^PROTOCOL[_\s\d]/i.test(lines[i].trim())) {
+        protoLines.push(lines[i].trim())
+        i++
+      }
+      blocks.push({ type: 'protocol', id, name: trimmed, lines: protoLines })
       continue
     }
 
-    // Short ALL CAPS line (section label like "THE INTRO", "THE LOGIC")
-    if (trimmed === trimmed.toUpperCase() && trimmed.length < 60 && /^[A-Z\s_:[\]()]+$/.test(trimmed)) {
-      out.push(`### ${trimmed}`)
+    // Short ALL-CAPS line = sub-label
+    if (
+      trimmed === trimmed.toUpperCase() &&
+      trimmed.length < 60 &&
+      /^[A-Z\s_:[\]()/]+$/.test(trimmed) &&
+      trimmed.length > 2
+    ) {
+      blocks.push({ type: 'subheader', text: trimmed })
+      i++
       continue
     }
 
-    // Normal paragraph line
-    out.push(trimmed)
+    // Quoted text block (starts with ")
+    if (trimmed.startsWith('"')) {
+      const quoteLines: string[] = []
+      while (i < lines.length) {
+        const t = lines[i].trim()
+        if (!t) { i++; if (quoteLines.length) break; continue }
+        quoteLines.push(t)
+        i++
+        if (t.endsWith('"') && quoteLines.length > 0) break
+      }
+      blocks.push({ type: 'quote', lines: quoteLines })
+      continue
+    }
+
+    // Normal text — collect into a block
+    const textLines: string[] = []
+    while (i < lines.length) {
+      const t = lines[i].trim()
+      if (!t) { i++; if (textLines.length) break; continue }
+      if (
+        /^\[.+\]$/.test(t) ||
+        /^THE HACK[:\s]/i.test(t) ||
+        /^PROTOCOL[_\s\d]/i.test(t) ||
+        (t === t.toUpperCase() && t.length < 60 && /^[A-Z\s_:[\]()/]+$/.test(t) && t.length > 2)
+      ) break
+      textLines.push(t)
+      i++
+    }
+    if (textLines.length) blocks.push({ type: 'text', lines: textLines })
   }
 
-  return out.join('\n')
+  return blocks
 }
 
-const mdComponents = {
-  h1: ({ children }: { children?: React.ReactNode }) => (
-    <h1 className="mb-6 mt-10 font-mono text-lg font-bold tracking-widest text-[#00FF41] [text-shadow:0_0_10px_rgba(0,255,65,0.5)] uppercase first:mt-0">
-      {children}
-    </h1>
-  ),
-  h2: ({ children }: { children?: React.ReactNode }) => (
-    <h2 className="mb-4 mt-10 font-mono text-sm font-bold tracking-widest text-[#00FF41] [text-shadow:0_0_10px_rgba(0,255,65,0.4)] uppercase first:mt-0">
-      {children}
-    </h2>
-  ),
-  h3: ({ children }: { children?: React.ReactNode }) => (
-    <h3 className="mb-3 mt-8 font-mono text-xs font-bold tracking-widest text-[#00FF41]/70 uppercase">
-      {children}
-    </h3>
-  ),
-  p: ({ children }: { children?: React.ReactNode }) => (
-    <p className="mb-4 font-mono text-sm leading-relaxed text-white/60">
-      {children}
-    </p>
-  ),
-  strong: ({ children }: { children?: React.ReactNode }) => (
-    <strong className="font-mono font-bold text-[#00FF41]">
-      {children}
-    </strong>
-  ),
-  em: ({ children }: { children?: React.ReactNode }) => (
-    <em className="font-mono not-italic text-white/80">
-      {children}
-    </em>
-  ),
-  blockquote: ({ children }: { children?: React.ReactNode }) => (
-    <blockquote className="my-6 border-l-2 border-[#00FF41]/40 bg-[#00FF41]/5 py-4 pl-6 pr-4 font-mono text-sm leading-relaxed text-[#00FF41]/80">
-      {children}
-    </blockquote>
-  ),
-  code: ({ children }: { children?: React.ReactNode }) => (
-    <code className="rounded bg-black/60 px-2 py-0.5 font-mono text-xs text-[#00FF41]">
-      {children}
-    </code>
-  ),
-  pre: ({ children }: { children?: React.ReactNode }) => (
-    <pre className="my-4 overflow-x-auto rounded border border-[#00FF41]/20 bg-black p-4 font-mono text-xs text-[#00FF41]">
-      {children}
-    </pre>
-  ),
-  ul: ({ children }: { children?: React.ReactNode }) => (
-    <ul className="mb-4 space-y-2 pl-4">{children}</ul>
-  ),
-  ol: ({ children }: { children?: React.ReactNode }) => (
-    <ol className="mb-4 list-decimal space-y-2 pl-4">{children}</ol>
-  ),
-  li: ({ children }: { children?: React.ReactNode }) => (
-    <li className="font-mono text-sm leading-relaxed text-white/60">
-      <span className="mr-1 text-[#00FF41]/50">→</span>
-      {children}
-    </li>
-  ),
-  hr: () => (
-    <hr className="my-8 border-[#00FF41]/10" />
-  ),
+function DoneButton({ id }: { id: string }) {
+  const storageKey = DONE_PREFIX + id
+  const [done, setDone] = useState(() =>
+    typeof window !== 'undefined' && localStorage.getItem(storageKey) === 'true'
+  )
+
+  function toggle() {
+    const next = !done
+    setDone(next)
+    localStorage.setItem(storageKey, String(next))
+  }
+
+  return (
+    <div className="mt-3 flex justify-end">
+      <button
+        type="button"
+        onClick={toggle}
+        className={`font-mono text-xs transition-colors ${done ? 'text-[#00FF41]' : 'text-white/20 hover:text-white/40'}`}
+      >
+        {done ? '[ ACTIVE ]' : '[ DONE ]'}
+      </button>
+    </div>
+  )
+}
+
+function renderBlock(block: Block, idx: number) {
+  switch (block.type) {
+    case 'header':
+      return (
+        <h2 key={idx} className="mb-4 mt-10 font-mono text-sm font-bold tracking-widest text-[#00FF41]/90 [text-shadow:0_0_12px_rgba(0,255,65,0.4)] uppercase first:mt-0">
+          [ {block.text} ]
+        </h2>
+      )
+
+    case 'subheader':
+      return (
+        <h3 key={idx} className="mb-3 mt-8 font-mono text-xs font-bold tracking-widest text-[#00FF41]/60 uppercase">
+          {block.text}
+        </h3>
+      )
+
+    case 'quote':
+      return (
+        <blockquote key={idx} className="my-6 border-l-4 border-[#00FF41]/40 bg-[#00FF41]/5 py-4 pl-6 pr-4 font-mono text-sm leading-relaxed text-white/70">
+          {block.lines.map((l, i) => <p key={i} className="mb-2 last:mb-0">{l}</p>)}
+        </blockquote>
+      )
+
+    case 'protocol': {
+      const [first, ...rest] = block.lines
+      return (
+        <div key={idx} className="my-6 border-l-2 border-cyan-500/50 bg-cyan-500/5 py-4 pl-6 pr-4">
+          <p className="mb-3 font-mono text-sm font-semibold tracking-wide text-white/90">
+            {first}
+          </p>
+          <div className="space-y-2">
+            {rest.map((line, i) => {
+              if (/^The Hack[:\s]/i.test(line)) {
+                return (
+                  <p key={i} className="font-mono text-sm leading-relaxed text-white/70">
+                    <span className="font-semibold text-white/90">The Hack:</span>{' '}
+                    {line.replace(/^The Hack[:\s]*/i, '')}
+                  </p>
+                )
+              }
+              if (/^The Logic[:\s]/i.test(line)) {
+                return (
+                  <p key={i} className="font-mono text-sm leading-relaxed text-white/70">
+                    <span className="font-semibold text-white/90">The Logic:</span>{' '}
+                    {line.replace(/^The Logic[:\s]*/i, '')}
+                  </p>
+                )
+              }
+              return (
+                <p key={i} className="font-mono text-sm leading-relaxed text-white/60">{line}</p>
+              )
+            })}
+          </div>
+          <DoneButton id={block.id} />
+        </div>
+      )
+    }
+
+    case 'text':
+      return (
+        <div key={idx} className="mb-4">
+          {block.lines.map((line, i) => (
+            <p key={i} className="mb-2 font-mono text-sm leading-relaxed text-white/60">
+              <Markdown
+                components={{
+                  p: ({ children }) => <>{children}</>,
+                  strong: ({ children }) => (
+                    <strong className="font-mono font-bold text-[#00FF41]">{children}</strong>
+                  ),
+                  em: ({ children }) => (
+                    <em className="not-italic text-white/80">{children}</em>
+                  ),
+                  a: ({ href, children }) => (
+                    <a href={href} className="text-[#00FF41] underline">{children}</a>
+                  ),
+                }}
+              >
+                {line}
+              </Markdown>
+            </p>
+          ))}
+        </div>
+      )
+
+    default:
+      return null
+  }
 }
 
 export function MdArticlePage() {
@@ -156,18 +256,18 @@ export function MdArticlePage() {
   const [article, setArticle] = useState<MdArticle | null>(null)
   const [loading, setLoading] = useState(true)
   const [notFound, setNotFound] = useState(false)
+  const [finalized, setFinalized] = useState(false)
 
   useEffect(() => {
     if (!slug) return
+    const key = FINALIZE_PREFIX + slug
+    setFinalized(localStorage.getItem(key) === 'true')
     fetch('/api/md-articles')
       .then(r => r.json())
       .then((list: MdArticle[]) => {
         const found = list.find(a => a.slug === slug)
-        if (found) {
-          setArticle(found)
-        } else {
-          setNotFound(true)
-        }
+        if (found) setArticle(found)
+        else setNotFound(true)
         setLoading(false)
       })
       .catch(() => { setNotFound(true); setLoading(false) })
@@ -183,6 +283,13 @@ export function MdArticlePage() {
       document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
     }
   }, [article])
+
+  function toggleFinalize() {
+    if (!slug) return
+    const next = !finalized
+    setFinalized(next)
+    localStorage.setItem(FINALIZE_PREFIX + slug, String(next))
+  }
 
   if (loading) {
     return (
@@ -203,7 +310,8 @@ export function MdArticlePage() {
     )
   }
 
-  const markdownContent = toMarkdown(article.content)
+  const blocks = parseContent(article.content)
+  const readTime = estimateReadTime(article.content)
 
   return (
     <div className="mx-auto max-w-4xl px-4 pt-20 pb-16 md:px-6">
@@ -224,28 +332,49 @@ export function MdArticlePage() {
       </div>
 
       {/* Title */}
-      <h1 className="mb-10 text-2xl font-bold tracking-tight md:text-4xl">
+      <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
         {article.title}
       </h1>
 
+      {/* Read time */}
+      <p className="mb-10 text-right font-mono text-xs text-cyan-500/50">
+        [{readTime}]
+      </p>
+
       {/* Content */}
-      <article className="prose-onda">
-        <Markdown components={mdComponents}>
-          {markdownContent}
-        </Markdown>
+      <article>
+        {blocks.map((block, i) => renderBlock(block, i))}
       </article>
 
-      <div className="my-16 border-t border-white/5" />
+      {/* Action buttons */}
+      <div className="mb-8 mt-10 flex flex-col items-center justify-center gap-2 sm:flex-row">
+        <button
+          type="button"
+          onClick={toggleFinalize}
+          className="w-[200px] border border-slate-700 px-4 py-2 text-center font-mono text-xs transition-colors hover:border-emerald-500"
+          data-testid="button-finalize-article"
+        >
+          {finalized ? '[ STATUS: OPTIMIZED ]' : '[ FINALIZE_ARTICLE ]'}
+        </button>
+        <a
+          href="/the-stack"
+          className="w-[200px] border border-slate-700 bg-slate-900 px-4 py-2 text-center font-mono text-xs transition-colors hover:border-emerald-500"
+        >
+          [ OPEN_SYSTEM_STACK ]
+        </a>
+      </div>
+
+      <div className="my-8 border-t border-white/5" />
 
       {/* Footer CTA */}
-      <div className="rounded-xl border border-[#00FF41]/30 bg-gradient-to-br from-[#00FF41]/10 to-black p-8 text-center">
+      <div className="rounded-xl border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-[#00FF41]/5 p-8 text-center">
         <p className="mb-6 font-mono text-base font-semibold text-white/90">
           System Calibration Ready. Download ONDA Life to track your nervous system in real-time.
         </p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <a
             href="/#download"
-            className="flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold transition-all hover:border-[#00FF41]/50 hover:bg-white/15 sm:w-auto"
+            className="flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold transition-all hover:border-cyan-500/50 hover:bg-white/15 sm:w-auto"
             aria-label="Download ONDA Life on App Store"
           >
             <AppleIcon />
@@ -253,13 +382,36 @@ export function MdArticlePage() {
           </a>
           <a
             href="/#download"
-            className="flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold transition-all hover:border-[#00FF41]/50 hover:bg-white/15 sm:w-auto"
+            className="flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold transition-all hover:border-cyan-500/50 hover:bg-white/15 sm:w-auto"
             aria-label="Download ONDA Life on Google Play"
           >
             <PlayIcon />
             <span>Google Play</span>
           </a>
         </div>
+      </div>
+
+      {/* Related Glossary Terms placeholder */}
+      <div className="mt-16 border-t border-white/5 pt-10">
+        <h3 className="mb-6 font-mono text-xs tracking-widest text-white/30">
+          RELATED GLOSSARY TERMS
+        </h3>
+        <Link
+          to="/glossary"
+          className="font-mono text-xs text-[#00FF41]/60 underline decoration-[#00FF41]/20 underline-offset-2 transition-colors hover:text-[#00FF41]"
+        >
+          → Browse full Glossary
+        </Link>
+      </div>
+
+      {/* Back to Articles */}
+      <div className="mt-12">
+        <Link
+          to="/articles"
+          className="font-mono text-xs text-white/30 transition-colors hover:text-white/60"
+        >
+          ← Back to Articles
+        </Link>
       </div>
     </div>
   )
