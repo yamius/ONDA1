@@ -253,9 +253,9 @@ const INLINE_APPROVE_REJECT = {
 async function handleUpdate(update) {
   if (!TOKEN) return
 
-  if (update.message) {
-    const msg = update.message
-    const text = msg.text || ''
+  const msg = update.message || update.edited_message
+  if (msg) {
+    const text = (msg.text || msg.caption || '').trim()
     const chatId = msg.chat.id
 
     if (text === '/start') {
@@ -297,7 +297,17 @@ STATUS: TEST_MODE`
       return
     }
     if (text && !text.startsWith('/')) {
-      await tg('sendMessage', { chat_id: chatId, text: 'Save as article?', reply_to_message_id: msg.message_id, reply_markup: INLINE_APPROVE_REJECT })
+      try {
+        await tg('sendMessage', {
+          chat_id: chatId,
+          text: 'Save as article?',
+          reply_to_message_id: msg.message_id,
+          reply_markup: INLINE_APPROVE_REJECT,
+        })
+      } catch (e) {
+        console.error('[bot] paste reply failed:', e)
+        await tg('sendMessage', { chat_id: chatId, text: `❌ Error: ${e.message || e}` }).catch(() => {})
+      }
       return
     }
   }
