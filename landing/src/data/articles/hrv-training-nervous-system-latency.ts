@@ -73,6 +73,11 @@ Think of HRV as your 'Battery Health' percentage. If you wake up with an HRV sig
 > **The Hack:** Face-only cold immersion (30 seconds) or a full cold shower.
 
 **The Logic:** While the cold is an acute stressor that temporarily drops HRV, the 'Rebound Effect' afterwards is a massive surge in parasympathetic activity. It's like 'Spring Cleaning' for your neural pathways.
+
+> [ HARDWARE_VALIDATION ]
+> VALIDATION_DEVICE: ECG-grade Chest Strap
+> METRIC: SDNN and rMSSD Baseline
+> STATUS: SYSTEM_LATENCY_LOW
 `,
   howToSteps: [
     {

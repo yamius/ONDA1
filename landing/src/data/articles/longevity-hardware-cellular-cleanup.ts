@@ -67,6 +67,11 @@ Autophagy is your body's internal recycling program. During periods of nutrient 
 > **The Hack:** 20 minutes of high heat (sauna) followed by 3 minutes of cold exposure.
 
 **The Logic:** This triggers 'Heat Shock Proteins' and 'Cold Shock Proteins.' These molecular chaperones go into the 'Code' of your proteins, helping them fold correctly and preventing the 'Bit Rot' that leads to neurodegenerative diseases.
+
+> [ HARDWARE_VALIDATION ]
+> VALIDATION_DEVICE: DNA Methylation Kit
+> METRIC: Epigenetic Aging Rate (DunedinPACE)
+> STATUS: HARDWARE_LIFESPAN_EXTENDED
 `,
   howToSteps: [
     { name: "The '3-Day System Flush' (Extended Fasting)", text: 'A 36-to-72 hour water-only fast performed once per quarter.', protocolId: 'longevity-system-flush' },

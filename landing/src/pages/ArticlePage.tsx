@@ -19,7 +19,13 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'circadian-reset-mastering-light': 'energy-grid',
   'circadian-lighting-dark-therapy': 'energy-grid',
   'metabolic-flexibility-dual-fuel-system': 'energy-grid',
+  'glp1-biology-muscle-preservation': 'energy-grid',
   'mitochondrial-biogenesis-cellular-power-grid': 'power-grid',
+  'mitochondrial-dna-red-light': 'power-grid',
+  'senolytic-high-dosing-longevity': 'power-grid',
+  'ai-biomarker-tracking-predictive': 'system-forecasting',
+  'phase-locked-acoustic-sleep': 'os-states',
+  'neural-entrainment-meditation-2': 'neural-hardware',
   'longevity-hardware-cellular-cleanup': 'power-grid',
   'neuroplasticity-flow-overclocking': 'cognitive-engine',
   'cognitive-architecture-nootropic-stacks': 'cognitive-engine',
@@ -40,6 +46,12 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'cognitive-architecture-nootropic-stacks': '5 min 40 sec',
   'mitochondrial-biogenesis-cellular-power-grid': '6 min 15 sec',
   'circadian-lighting-dark-therapy': '5 min 20 sec',
+  'glp1-biology-muscle-preservation': '5 min 45 sec',
+  'mitochondrial-dna-red-light': '5 min 30 sec',
+  'senolytic-high-dosing-longevity': '6 min 00 sec',
+  'ai-biomarker-tracking-predictive': '5 min 45 sec',
+  'phase-locked-acoustic-sleep': '6 min 15 sec',
+  'neural-entrainment-meditation-2': '5 min 50 sec',
 }
 
 function extractText(node: React.ReactNode): string {
@@ -67,6 +79,42 @@ function setMeta(name: string, content: string, isProperty = false) {
 import { PROTOCOL_STORAGE_PREFIX, ARTICLE_STORAGE_PREFIX } from '../data/protocol-ids'
 
 const STORAGE_KEY_PREFIX = ARTICLE_STORAGE_PREFIX
+
+function TerminologyAccordion({
+  items,
+}: {
+  items: { term: string; definition: string }[]
+}) {
+  const [open, setOpen] = useState(false)
+  return (
+    <div className="my-8 rounded-lg border border-slate-700 bg-slate-900/50">
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className="flex w-full items-center justify-between px-4 py-3 font-mono text-xs tracking-wider text-white/70 transition-colors hover:text-white/90"
+      >
+        [ DECODING_TERMINOLOGY ]
+        <span className="font-mono text-white/40">{open ? '−' : '+'}</span>
+      </button>
+      {open && (
+        <div className="border-t border-slate-700 px-4 py-4">
+          <dl className="space-y-4">
+            {items.map(({ term, definition }) => (
+              <div key={term}>
+                <dt className="font-mono text-xs font-semibold text-terminal-green/80">
+                  {term}
+                </dt>
+                <dd className="mt-1 font-mono text-sm leading-relaxed text-white/50">
+                  {definition}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      )}
+    </div>
+  )
+}
 
 function ProtocolDoneButton({
   protocolId,
@@ -246,6 +294,7 @@ export function ArticlePage() {
     ),
     blockquote: ({ children }: { children?: React.ReactNode }) => {
       const content = extractText(children)
+      const isHardwareValidation = content.includes('[ HARDWARE_VALIDATION ]')
       const isHackBlock = content.includes('The Hack:')
       const isPurpleIntro = article.introStyle === 'purple' && content.includes('Prediction Error')
       const isAmberIntro = article.introStyle === 'amber' && content.includes('light code')
@@ -378,6 +427,31 @@ export function ArticlePage() {
         blockquoteClass = 'border border-slate-800 bg-slate-900/50 pl-6 pr-4 rounded-r-lg'
       }
       const protocolId = isHackBlock ? getProtocolIdFromHackBlock(content) : undefined
+      if (isHardwareValidation) {
+        const lines = content
+          .split(/\r?\n/)
+          .map((s) => s.trim())
+          .filter(Boolean)
+        const isPredictiveArticle = article.slug === 'ai-biomarker-tracking-predictive'
+        return (
+          <blockquote className="my-6 space-y-1 border border-slate-800 bg-slate-900/30 px-5 py-4 font-mono text-xs leading-relaxed">
+            {lines.map((line, i) => {
+              const isHeader = line.includes('[ HARDWARE_VALIDATION ]')
+              const isStatus = line.startsWith('STATUS:')
+              const accentClass = isPredictiveArticle && (isHeader || isStatus)
+                ? 'text-blue-400'
+                : isHeader
+                  ? 'text-emerald-500'
+                  : 'text-white/60'
+              return (
+                <div key={i} className={accentClass}>
+                  {line}
+                </div>
+              )
+            })}
+          </blockquote>
+        )
+      }
       return (
         <blockquote
           id={protocolId}
@@ -457,6 +531,10 @@ export function ArticlePage() {
         </Markdown>
       </article>
 
+      {article.terminologyBlock && article.terminologyBlock.length > 0 && (
+        <TerminologyAccordion items={article.terminologyBlock} />
+      )}
+
       {/* Control block: MARK_COMPLETED + OPEN_SYSTEM_STACK */}
       <div className="mb-8 flex flex-col items-center justify-center gap-2 sm:flex-row">
         <button
@@ -501,7 +579,15 @@ export function ArticlePage() {
                           ? 'System Calibration Ready. Download ONDA Life to protect your attention and install the firewall.'
                           : article.slug === 'longevity-hardware-cellular-cleanup'
                             ? 'System Calibration Ready. Download ONDA Life to track your cellular health and longevity metrics.'
-                            : 'System Calibration Ready. Download ONDA Life to track your Vagus Nerve tone in real-time.'}
+                            : article.slug === 'senolytic-high-dosing-longevity'
+                              ? 'System Calibration Ready. Download ONDA Life to track epigenetic aging and optimize your Hit and Run protocol.'
+                              : article.slug === 'ai-biomarker-tracking-predictive'
+                                ? 'Future of the OS. Download ONDA Life to access predictive biomarker analytics and forecast system stability before symptoms appear.'
+                                : article.slug === 'phase-locked-acoustic-sleep'
+                                  ? 'System Calibration Ready. Download ONDA Life to optimize deep sleep and amplify Delta wave recovery.'
+                                  : article.slug === 'neural-entrainment-meditation-2'
+                                    ? 'System Calibration Ready. Download ONDA Life to tune your brain frequency with EEG-driven neural entrainment.'
+                                    : 'System Calibration Ready. Download ONDA Life to track your Vagus Nerve tone in real-time.'}
         </p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <a

@@ -65,18 +65,18 @@ npm install
 npm run dev
 ```
 
-## Replit и деплой лендинга
+## Деплой лендинга
 
 | Контекст | Команда | Результат |
 |----------|---------|------------|
-| **Replit Preview** (Run) | `npm run dev` | Основное приложение (порт 5000) |
-| **Replit Deployment** | build + run из `.replit` | Лендинг на https://ONDALife.replit.app |
+| **Локальная разработка** | `cd landing && npm run dev` | Лендинг на http://localhost:5173 |
+| **Production** | `cd landing && npm run build` → `npm run start` | Лендинг на https://onda-life.com |
 
 **Процесс деплоя:**
 1. Локально: `cd landing && npm run build` → `git add .` → `git commit -m "..."` → `git pull --rebase origin main` → `git push origin main`
-2. На Replit: Shell → `git reset --hard origin/main` → Deployments → **Republish**
+2. На хостинге (Replit / Vercel / др.): подтянуть изменения и пересобрать
 
-Подробнее: `.assistant/MODULE_LANDING.md` (раздел «Деплой на Replit»)
+Подробнее: `.assistant/MODULE_LANDING.md` (раздел «Деплой»)
 
 ## Деплой iOS
 

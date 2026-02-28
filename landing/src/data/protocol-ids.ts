@@ -17,6 +17,12 @@ const ARTICLE_SHORT: Record<string, string> = {
   'neuroplasticity-flow-overclocking': 'neuro',
   'cognitive-architecture-nootropic-stacks': 'cognitive',
   'gut-brain-axis-data-link': 'gut',
+  'glp1-biology-muscle-preservation': 'glp1',
+  'mitochondrial-dna-red-light': 'mt-dna',
+  'senolytic-high-dosing-longevity': 'senolytic',
+  'ai-biomarker-tracking-predictive': 'predictive',
+  'phase-locked-acoustic-sleep': 'phase-lock',
+  'neural-entrainment-meditation-2': 'neural-ent',
 }
 
 /** Protocol base id -> article slug (for building unique IDs) */
@@ -44,11 +50,17 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'fasted-window': 'metabolic-flexibility-dual-fuel-system',
   'glucose-buffer': 'metabolic-flexibility-dual-fuel-system',
   zone2: 'metabolic-flexibility-dual-fuel-system',
+  'fiber-pre-loading': 'glp1-biology-muscle-preservation',
+  'berberine-pulsing': 'glp1-biology-muscle-preservation',
+  'protein-leverage-16': 'glp1-biology-muscle-preservation',
+  'bitter-signaling': 'glp1-biology-muscle-preservation',
+  'photonic-mtdna': 'mitochondrial-dna-red-light',
   'thermal-shock': 'longevity-hardware-cellular-cleanup',
   'photonic-charging': 'mitochondrial-biogenesis-cellular-power-grid',
   'nad-fuel': 'mitochondrial-biogenesis-cellular-power-grid',
   'system-flush': 'longevity-hardware-cellular-cleanup',
   senolytics: 'longevity-hardware-cellular-cleanup',
+  'senolytic-purge': 'senolytic-high-dosing-longevity',
   'sauna-cold': 'longevity-hardware-cellular-cleanup',
   'alpha-priming': 'neuroplasticity-flow-overclocking',
   'bdnf-trigger': 'neuroplasticity-flow-overclocking',
@@ -59,6 +71,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'microbiome-patch': 'gut-brain-axis-data-link',
   polyphenol: 'gut-brain-axis-data-link',
   'cold-restart': 'gut-brain-axis-data-link',
+  'anomaly-detection-pulse': 'ai-biomarker-tracking-predictive',
+  'delta-wave-amplification': 'phase-locked-acoustic-sleep',
+  'closed-loop-neural-sync': 'neural-entrainment-meditation-2',
 }
 
 export const PROTOCOL_STORAGE_PREFIX = 'onda-protocol-'

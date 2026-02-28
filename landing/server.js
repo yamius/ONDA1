@@ -4,7 +4,7 @@
  */
 import express from 'express'
 import { join } from 'path'
-import { existsSync, readdirSync, readFileSync } from 'fs'
+import { existsSync, readdirSync, readFileSync, statSync } from 'fs'
 import { fileURLToPath } from 'url'
 import { execSync } from 'child_process'
 
@@ -12,8 +12,78 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const distDir = join(__dirname, 'dist')
 const articlesDir = join(__dirname, '..', 'articles')
 const port = parseInt(process.env.PORT || '5000', 10)
+const SITE_URL = 'https://onda-life.com'
 
 const app = express()
+
+// Dynamic sitemap: static routes from dist/ + Telegram articles from articles/
+app.get('/sitemap.xml', (req, res) => {
+  const routes = []
+
+  // 1. Scan dist/ for prerendered index.html
+  if (existsSync(distDir)) {
+    try {
+      const entries = readdirSync(distDir, { recursive: true })
+      for (const rel of entries) {
+        if (typeof rel === 'string' && rel.endsWith('index.html')) {
+          const path = rel === 'index.html' ? '/' : '/' + rel.replace(/\/index\.html$/, '').replace(/\\/g, '/')
+          routes.push({ path, filePath: join(distDir, rel) })
+        }
+      }
+    } catch (_) { /* ignore */ }
+  }
+
+  // 2. Add Telegram articles from articles/
+  if (existsSync(articlesDir)) {
+    const files = readdirSync(articlesDir).filter((f) => f.endsWith('.md'))
+    for (const f of files) {
+      const slug = f.replace('.md', '')
+      routes.push({
+        path: `/articles/telegram/${slug}`,
+        filePath: join(articlesDir, f),
+      })
+    }
+  }
+
+  const buildDate = new Date().toISOString().split('T')[0]
+  function getPriority(path) {
+    if (path === '/') return '1.0'
+    if (path === '/glossary') return '0.9'
+    if (path === '/articles') return '0.9'
+    if (path.startsWith('/level/')) return '0.8'
+    if (path.startsWith('/glossary/')) return '0.7'
+    if (path.startsWith('/articles/')) return '0.8'
+    return '0.8'
+  }
+  function getLastmod(filePath) {
+    try {
+      if (existsSync(filePath)) return statSync(filePath).mtime.toISOString().split('T')[0]
+    } catch (_) {}
+    return buildDate
+  }
+
+  const urls = routes.map(({ path, filePath }) => {
+    const loc = `${SITE_URL}${path === '/' ? '' : path}`
+    const lastmod = getLastmod(filePath)
+    const priority = getPriority(path)
+    const changefreq = path === '/' ? 'weekly' : 'monthly'
+    return `  <url>
+    <loc>${loc}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`
+  })
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.join('\n')}
+</urlset>`
+
+  res.setHeader('Content-Type', 'application/xml')
+  res.setHeader('Cache-Control', 'public, max-age=300')
+  res.send(sitemap)
+})
 
 // API: list markdown articles saved by Telegram bot
 app.get('/api/md-articles', (req, res) => {

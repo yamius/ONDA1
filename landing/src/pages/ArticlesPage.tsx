@@ -83,46 +83,27 @@ export function ArticlesPage() {
         Science-backed guides for nervous system optimization. From vagal tone to consciousness architecture.
       </p>
 
-      {mdArticles.length > 0 && (
-        <div className="mb-10">
-          <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-            [ FROM TELEGRAM ]
-          </div>
-          <div className="grid gap-6 md:grid-cols-2">
-            {mdArticles.map((article) => (
-              <Link
-                key={article.slug}
-                to={`/articles/telegram/${article.slug}`}
-                data-testid={`card-md-article-${article.slug}`}
-                className="glass-card group rounded-xl p-6 transition-all hover:border-[#00FF41]/20"
-              >
-                <div className="mb-2 flex items-center justify-between">
-                  <span className="rounded-md border border-[#00FF41]/20 bg-[#00FF41]/5 px-3 py-0.5 font-mono text-[10px] text-[#00FF41]/60">
-                    TELEGRAM
-                  </span>
-                  <span className="font-mono text-xs text-[#00FF41]/0 transition-all group-hover:text-[#00FF41]/60">
-                    →
-                  </span>
-                </div>
-                <h3 className="mb-2 text-lg font-semibold transition-colors group-hover:text-[#00FF41]">
-                  {article.title}
-                </h3>
-                <p className="font-mono text-xs leading-relaxed text-white/40 line-clamp-3">
-                  {article.content.split('\n').filter(l => l.trim() && !/^\[/.test(l.trim())).slice(0, 3).join(' ').slice(0, 180)}…
-                </p>
-              </Link>
-            ))}
-          </div>
-          <div className="my-10 border-t border-white/5" />
-        </div>
-      )}
-
       <div className="grid gap-6 md:grid-cols-2">
-        {articles.map((article) => (
+        {[
+          ...articles.map((a) => ({ ...a, path: `/articles/${a.slug}` })),
+          ...mdArticles.map((a) => ({
+            slug: a.slug,
+            title: a.title,
+            description: a.content
+              .split('\n')
+              .filter((l) => l.trim() && !/^\[/.test(l.trim()))
+              .slice(0, 3)
+              .join(' ')
+              .slice(0, 180) + '…',
+            category: 'Biological Software',
+            path: `/articles/telegram/${a.slug}`,
+          })),
+        ].map((article) => (
           <Link
-            key={article.slug}
-            to={`/articles/${article.slug}`}
+            key={article.path}
+            to={article.path}
             className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/10"
+            data-testid={article.path.startsWith('/articles/telegram/') ? `card-md-article-${article.slug}` : undefined}
           >
             <div className="mb-2 flex items-center justify-between">
               <span className="rounded-md border border-white/10 bg-white/5 px-3 py-0.5 font-mono text-[10px] text-white/30">

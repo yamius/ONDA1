@@ -261,7 +261,7 @@ class MainActivity : AppCompatActivity() {
         webView.addJavascriptInterface(AndroidBridge(), "Android")
         
         // Загружаем React приложение
-        webView.loadUrl("https://your-onda-app.replit.app")
+        webView.loadUrl("https://onda-life.com")
     }
     
     inner class AndroidBridge {

@@ -64,6 +64,18 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Technical protocol on mitochondrial biogenesis for biocomputer upgrade. Build new power units, raise total wattage.',
   'circadian-lighting-dark-therapy':
     'Technical protocol on Circadian Lighting and Dark Therapy for biocomputer upgrade. Restore hormonal integrity, eliminate photic noise.',
+  'glp1-biology-muscle-preservation':
+    'Natural GLP-1 activation protocols using Berberine and Protein Leverage to optimize metabolism without muscle loss.',
+  'mitochondrial-dna-red-light':
+    'How NIR light reduces water viscosity and boosts ATP synthase efficiency. A deep dive into mitochondrial photonics.',
+  'senolytic-high-dosing-longevity':
+    'Learn the "Hit and Run" protocol using Quercetin, Dasatinib, and Fisetin to clear senescent "zombie" cells and slow biological aging.',
+  'ai-biomarker-tracking-predictive':
+    'Move beyond static tracking. Learn how AI-driven predictive analytics can forecast illness and burnout before symptoms appear.',
+  'phase-locked-acoustic-sleep':
+    'Learn how to use phase-locked acoustic stimulation and real-time EEG to amplify deep sleep waves and optimize cognitive recovery.',
+  'neural-entrainment-meditation-2':
+    'Master your brain\'s operating frequency using EEG-driven AI audio and the Frequency Following Response.',
 }
 
 export interface RouteMeta {
@@ -409,6 +421,30 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
       question: 'Why use red light at night?',
       answer:
         'Red light (2000K or lower) does not suppress melatonin. It provides enough illumination for evening activities without disrupting the shutdown sequence for sleep.',
+    },
+  ],
+  'glp1-biology-muscle-preservation': [
+    {
+      question: 'Can Berberine replace resistance training?',
+      answer:
+        'No. Berberine manages fuel efficiency (software), but resistance training is the only signal that tells the body to retain muscle mass (hardware).',
+    },
+    {
+      question: 'Why not just use the drug?',
+      answer:
+        'Endogenous stimulation preserves your metabolism\'s natural feedback loops, preventing "Ozempic face" (the loss of facial fat pads and muscle tone) and rebound weight gain.',
+    },
+  ],
+  'mitochondrial-dna-red-light': [
+    {
+      question: 'What wavelengths are best for NIR photobiomodulation?',
+      answer:
+        '660nm (red) penetrates surface tissue; 850nm (near-infrared) reaches deeper. Combined, they target both superficial and mitochondrial layers. Medical-grade panels typically use both.',
+    },
+    {
+      question: 'Why does hydration matter for red light sessions?',
+      answer:
+        'Water serves as the substrate for the fourth-phase (EZ) structured layer around ATP Synthase. Adequate hydration ensures the viscosity-reducing effect can occur at biological membranes.',
     },
   ],
 }

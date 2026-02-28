@@ -16,8 +16,14 @@ import longevityArticle from './longevity-hardware-cellular-cleanup'
 import cognitiveArticle from './cognitive-architecture-nootropic-stacks'
 import mitochondrialArticle from './mitochondrial-biogenesis-cellular-power-grid'
 import circadianLightingArticle from './circadian-lighting-dark-therapy'
+import glp1Article from './glp1-biology-muscle-preservation'
+import mtDnaRedLightArticle from './mitochondrial-dna-red-light'
+import senolyticArticle from './senolytic-high-dosing-longevity'
+import aiBiomarkerArticle from './ai-biomarker-tracking-predictive'
+import phaseLockedSleepArticle from './phase-locked-acoustic-sleep'
+import neuralEntrainmentArticle from './neural-entrainment-meditation-2'
 
-export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle]
+export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle, ...glp1Article, ...mtDnaRedLightArticle, ...senolyticArticle, ...aiBiomarkerArticle, ...phaseLockedSleepArticle, ...neuralEntrainmentArticle]
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug)

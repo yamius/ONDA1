@@ -18,8 +18,8 @@ export function ArticlesSection() {
           Science-backed guides for nervous system optimization. From vagal tone to longevity hardware.
         </p>
 
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-          {articles.map((article) => (
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {articles.slice(-3).map((article) => (
             <Link
               key={article.slug}
               to={`/articles/${article.slug}`}

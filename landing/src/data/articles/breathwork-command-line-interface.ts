@@ -72,6 +72,11 @@ The diaphragm is more than a muscle; it is a mechanical pump for the Vagus Nerve
 > **The Hack:** Strict nasal breathing for all low-to-moderate intensity activities.
 
 **The Logic:** Your paranasal sinuses produce Nitric Oxide, a potent vasodilator. Nasal breathing increases oxygen uptake by 20% and acts as a natural 'Air Filter' and 'Heater' for your internal hardware.
+
+> [ HARDWARE_VALIDATION ]
+> VALIDATION_DEVICE: Pulse Oximeter
+> METRIC: SpO2 Stability & CO2 Tolerance
+> STATUS: ROOT_ACCESS_GRANTED
 `,
   howToSteps: [
     {

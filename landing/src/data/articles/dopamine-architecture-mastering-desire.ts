@@ -59,6 +59,11 @@ Your biological "Satisfaction Level" depends on your Dopamine Baseline. When you
 > **The Hack:** A 2-minute cold shower or ice bath (below 15°C).
 
 **The Logic:** Unlike caffeine, which causes a sharp spike and crash, cold exposure raises baseline dopamine by up to 250%. This elevation is slow, steady, and lasts for 3–4 hours, providing "Clean Energy" for deep work.
+
+> [ HARDWARE_VALIDATION ]
+> VALIDATION_DEVICE: Screen Time Analytics
+> METRIC: Daily Pickup Count
+> STATUS: ATTENTION_AUDIT_STABLE
 `,
   howToSteps: [
     {

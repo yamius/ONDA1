@@ -71,6 +71,11 @@ The Prefrontal Cortex (PFC) is the 'Executive Suite' of your brain. It is the mo
 > **The Hack:** 4 hours every Sunday with zero digital devices. Only analog activities (reading, walking, talking).
 
 **The Logic:** This allows your Dopamine Receptors to 'up-regulate.' By lowering the artificial floor of stimulation, you make everyday reality—and complex work—interesting again.
+
+> [ HARDWARE_VALIDATION ]
+> VALIDATION_DEVICE: Focus Session Logs
+> METRIC: Deep Work Units (90min blocks)
+> STATUS: FIREWALL_ACTIVE
 `,
   howToSteps: [
     { name: "The 'Analog Morning' Firewall", text: 'No digital inputs (phone, email, news) for the first 60 minutes after waking.', protocolId: 'digital-analog-morning' },

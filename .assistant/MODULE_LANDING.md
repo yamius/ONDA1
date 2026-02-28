@@ -12,7 +12,7 @@
 ONDA1/
 ├── src/              ← Основное приложение (мобильное, Capacitor)
 ├── landing/          ← Лендинг для onda-life.com (отдельный Vite-проект)
-├── .replit           ← Preview = приложение, Deployment = лендинг
+├── .replit           ← конфиг для Replit (если используется)
 └── ...
 ```
 
@@ -21,17 +21,15 @@ ONDA1/
 | Что | Где | Как запускается |
 |-----|-----|-----------------|
 | **Мобильное приложение** | `src/` (корень) | `npm run dev` (порт 5000), сборка через Capacitor |
-| **Лендинг** | `landing/` | `npm run dev:landing` или `cd landing && npm run dev` (порт 5173) |
-| **Replit Preview** | — | Основное приложение (workflow → `npm run dev`) |
-| **Replit Deployment** | — | Лендинг (build: `npm run build`, run: `node server.js` — см. `.replit`) |
+| **Лендинг** (разработка) | `landing/` | `cd landing && npm run dev` (порт 5173) |
+| **Лендинг** (production) | https://onda-life.com | `npm run build` + `node server.js` |
 
 ### Домены
 
 | URL | Что показывает |
 |-----|---------------|
-| `https://ONDALife.replit.app` | Лендинг (deployment) |
-| `https://onda-life.com` | Лендинг (когда DNS будет настроен) |
-| Replit Preview | Основное приложение (для разработки) |
+| **https://onda-life.com** | Лендинг (основной домен) |
+| localhost:5173 | Лендинг (локальная разработка) |
 
 ---
 
@@ -253,81 +251,50 @@ for Your Consciousness → text-white
 
 4. **Если prerender падает** — в логе будет строка вида `[prerender] Failed /glossary/some-slug ...`. Частые причины: неверный slug в ссылках или страница не успевает загрузиться (таймаут).
 
-**Итог:** добавляешь контент в нужные файлы → запускаешь `npm run build` → prerender подхватывает всё автоматически. Дальше — см. «Процесс деплоя» (push → Replit Republish).
+**Итог:** добавляешь контент в нужные файлы → запускаешь `npm run build` → prerender подхватывает всё автоматически. Дальше — см. «Процесс деплоя» (push → хостинг).
 
 ---
 
-## Деплой на Replit
+## Деплой
 
-### ⚠️ КРИТИЧЕСКИ ВАЖНО: Replit Autoscale не сохраняет файлы между build и run
+**Основной домен:** https://onda-life.com
 
-Replit Autoscale запускает `build` и `run` в **разных окружениях**. Папка `dist/`, созданная в фазе `build`, **не доступна** в фазе `run`. Это значит:
+### Локальная подготовка
 
-- ❌ **НЕ работает**: `build` собирает `dist/`, `run` запускает сервер — `dist/` не найден
-- ❌ **НЕ работает**: `outDir: '../dist'` (в корень) — тоже теряется
-- ❌ **НЕ работает**: раздельные `build` и `run` для Autoscale
-- ✅ **Работает**: всё в одной команде `run` — install → build → start
+1. Добавить контент (термин, Part, страницу) — см. «После добавления контента»
+2. Проверить сборку: `cd landing && npm run build`
+3. Закоммитить и отправить в `main`:
+   ```bash
+   git add .
+   git commit -m "описание изменений"
+   git pull --rebase origin main   # обязательно перед push
+   git push origin main
+   ```
 
-### Рабочая конфигурация .replit
+### Хостинг (Replit / Vercel / др.)
 
-```toml
-[deployment]
-deploymentTarget = "autoscale"
-build = ["bash", "-c", "cd landing && npm install && npm run build"]
-run = ["bash", "-c", "cd landing && npm install && node server.js"]
-```
+После push хостинг подтягивает изменения и пересобирает. Лендинг доступен на https://onda-life.com.
 
-**Важно:**
-- `build` фаза: `cd landing && npm install && npm run build` — собирает `dist/`
-- `run` фаза: `cd landing && npm install && node server.js` — на Autoscale `dist/` из build недоступна, поэтому `server.js` при отсутствии `dist/` запускает сборку в фоне; порт 5000 открывается сразу (loading-страница)
-- Это решает проблему таймаута порта на Replit Autoscale
+**Если используется Replit:**
 
-### Что где показывается
-
-| Контекст | Что запускается | Что видно |
-|----------|----------------|-----------|
-| **Replit Preview** (кнопка Run) | `npm run dev` (корень, порт 5000) | Основное приложение |
-| **Replit Deployment** (Republish) | build + run из `.replit` | Лендинг |
-| **https://ONDALife.replit.app** | Deployment | Лендинг |
-| **https://onda-life.com** | Deployment (после DNS) | Лендинг |
+- Replit Autoscale запускает `build` и `run` в разных окружениях — `dist/` из build недоступна в run. Поэтому `server.js` при отсутствии `dist/` запускает сборку в фоне.
+- Конфигурация `.replit`:
+  ```toml
+  [deployment]
+  deploymentTarget = "autoscale"
+  build = ["bash", "-c", "cd landing && npm install && npm run build"]
+  run = ["bash", "-c", "cd landing && npm install && node server.js"]
+  ```
+- Shell → `git reset --hard origin/main` → Deployments → **Republish**
 
 ### Production-сервер (landing/server.js)
 
-- Чистый Node.js HTTP-сервер (без express)
-- **Мгновенное открытие порта**: показывает loading-страницу пока `dist/` не готов
+- Express-сервер, раздаёт статику из `landing/dist/`
 - **Fallback-сборка**: если `dist/index.html` не найден — запускает `npm run build` в фоне
-- Раздаёт статику из `landing/dist/`
-- **SPA fallback**: любой маршрут без расширения → `index.html`
-- Статические файлы: `Cache-Control: max-age=31536000, immutable`
+- **SPA fallback**: маршруты без расширения → `index.html`
+- Статика: `Cache-Control: max-age=31536000, immutable`
 - HTML: `Cache-Control: no-cache`
 - Порт: `process.env.PORT || 5000`
-
-### Процесс деплоя: от контента до Replit
-
-**1. Локально (Cursor)**
-
-- Добавить контент (термин, Part, страницу) — см. «После добавления контента»
-- Проверить сборку: `cd landing && npm run build`
-- Закоммитить и отправить в `main`:
-  ```bash
-  git add .
-  git commit -m "описание изменений"
-  git pull --rebase origin main   # обязательно перед push
-  git push origin main
-  ```
-
-**2. На Replit**
-
-- Открыть Replit Shell
-- Подтянуть изменения: `git reset --hard origin/main`
-- Нажать **Republish** (Deployments → Republish)
-- Дождаться фаз: Provision → Security Scan → Build → Bundle → Promote
-
-**3. Результат**
-
-- Лендинг доступен на `https://ONDALife.replit.app`
-
-**Если Republish failed** — проверить вкладку Publishing, прочитать ошибку. Частые причины: таймаут порта или отсутствие `dist/` (run-фаза пересобирает в фоне через `server.js`).
 
 ### postcss.config.js
 
@@ -357,17 +324,9 @@ cd landing && npm run start
 
 ---
 
-## DNS для onda-life.com (в ожидании)
+## DNS для onda-life.com
 
-Домен на **GoDaddy**. Для привязки к Replit нужно:
-
-| Тип | Hostname | Значение |
-|-----|----------|----------|
-| A | @ | `34.111.179.208` |
-| TXT | @ | `replit-verify=a99cf86e-1faa-4171-a249-a55f91d2d125` |
-
-Текущие записи не совпадают (A → 75.2.60.5, TXT отсутствует).
-После обновления DNS `onda-life.com` начнёт показывать лендинг.
+Домен настроен и указывает на https://onda-life.com. Лендинг доступен по основному домену.
 
 ---
 
@@ -426,7 +385,7 @@ cd landing && npm run start
 ## Будущие улучшения
 
 - **SSG** — реализован через post-build prerender (Puppeteer), каждый термин и Part = отдельный HTML
-- **Миграция на Vercel/Cloudflare Pages** — если Replit станет недостаточно
+- **Альтернативный хостинг** — Vercel/Cloudflare Pages при необходимости
 - **Многоязычность** — русская/английская версия лендинга
 - **Markdown-файлы для глоссария** — вместо TS-объектов, для удобства редактирования
 - **Описания для всех Parts** — добавить данные в `PartPage.tsx` и `slug` в `LevelsSection.tsx`

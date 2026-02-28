@@ -1,7 +1,7 @@
 # ONDA - Mindfulness & Wellness Mobile App
 
-> **Replit:** Preview = основное приложение (`npm run dev`). Deployment = лендинг (build + run из `.replit`).  
-> **Деплой:** push → Replit Shell `git reset --hard origin/main` → Republish. См. `README.md` и `.assistant/MODULE_LANDING.md`.
+> **Лендинг:** https://onda-life.com — основной домен.  
+> **Деплой:** push → хостинг (Replit / Vercel / др.) подтягивает изменения и пересобирает. См. `README.md` и `.assistant/MODULE_LANDING.md`.
 
 ## Overview
 

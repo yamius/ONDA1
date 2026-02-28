@@ -72,6 +72,11 @@ Every time you repeat a high-quality action, your brain wraps the neural pathway
 > **The Hack:** 20 minutes of Yoga Nidra or guided NSDR after a period of intense learning.
 
 **The Logic:** Neural changes (plasticity) don't happen during the work; they happen during the rest immediately following it. NSDR accelerates the consolidation of new neural pathways by mimicking the brain states found in deep sleep.
+
+> [ HARDWARE_VALIDATION ]
+> VALIDATION_DEVICE: Consumer EEG (Muse)
+> METRIC: Alpha-Theta Wave Ratio
+> STATUS: NEURAL_COHERENCE_STABLE
 `,
   howToSteps: [
     {

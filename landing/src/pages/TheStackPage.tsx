@@ -19,6 +19,18 @@ interface Component {
 
 const STACK_COMPONENTS: Component[] = [
   {
+    name: 'OS_STATES',
+    protocols: [
+      { id: 'delta-wave-amplification', name: 'DELTA_WAVE_AMPLIFICATION', params: '(PHASE_LOCKED)' },
+    ],
+  },
+  {
+    name: 'NEURAL_HARDWARE',
+    protocols: [
+      { id: 'closed-loop-neural-sync', name: 'CLOSED_LOOP_NEURAL_SYNC', params: '(EEG_DRIVEN)' },
+    ],
+  },
+  {
     name: 'NERVOUS_SYSTEM',
     protocols: [
       { id: 'resonant-frequency', name: 'RESONANT_FREQUENCY', params: '(5.5-5.5)' },
@@ -54,6 +66,9 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'fasted-window', name: 'FASTED_WINDOW', params: '(8h_EATING)' },
       { id: 'glucose-buffer', name: 'GLUCOSE_BUFFER', params: '(POST_MEAL_WALK)' },
       { id: 'zone2', name: 'ZONE_2_AEROBIC', params: '(45min)' },
+      { id: 'fiber-pre-loading', name: 'FIBER_PRE_LOADING', params: '(10-15g_PRE_MEAL)' },
+      { id: 'berberine-pulsing', name: 'BERBERINE_PULSING', params: '(500mg)' },
+      { id: 'protein-leverage-16', name: 'PROTEIN_LEVERAGE_1.6', params: '(g/KG)' },
     ],
   },
   {
@@ -62,8 +77,10 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'thermal-shock', name: 'THERMAL_SHOCK', params: '(SAUNA_80C)' },
       { id: 'photonic-charging', name: 'PHOTONIC_CHARGING', params: '(660nm_850nm)' },
       { id: 'nad-fuel', name: 'NAD+_FUEL_CELL', params: '(HIIT)' },
+      { id: 'photonic-mtdna', name: 'PHOTONIC_CHARGING', params: '(660nm_850nm)' },
       { id: 'system-flush', name: 'SYSTEM_FLUSH', params: '(36-72h_FAST)' },
       { id: 'senolytics', name: 'QUERCETIN_FISETIN', params: '(STRAWBERRIES_CAPERS)' },
+      { id: 'senolytic-purge', name: 'SENOLYTIC_PURGE', params: '(HIT_AND_RUN)' },
       { id: 'sauna-cold', name: 'SAUNA_COLD_CYCLE', params: '(20min_3min)' },
     ],
   },
@@ -76,6 +93,12 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'focus-baseline', name: 'FOCUS_BASELINE', params: '(CAFFEINE_THEANINE_1:2)' },
       { id: 'memory-encoder', name: 'MEMORY_ENCODER', params: '(ALPHA_GPC_BACOPA)' },
       { id: 'recovery-loop', name: 'RECOVERY_LOOP', params: '(MAGNESIUM_L_THREONATE)' },
+    ],
+  },
+  {
+    name: 'SYSTEM_FORECASTING',
+    protocols: [
+      { id: 'anomaly-detection-pulse', name: 'ANOMALY_DETECTION_PULSE', params: '(PREDICTIVE_SYNC)' },
     ],
   },
   {

@@ -73,6 +73,11 @@ To move from theory to hardware optimization, initialize these three neural reca
 > **The Hack:** Keep your head facing forward. Without moving your head, look as far right as possible using only your eyes. Hold until you feel a spontaneous sigh, swallow, or yawn (usually 30–60 seconds). Repeat on the left side.
 
 **The Logic:** The Vagus nerve is anatomically linked to the cranial nerves controlling eye movement. By shifting your gaze to the periphery, you create a mild "stretch" in the neural circuitry, which often triggers a reflexive release from the Brainstem, signaling that the environment is safe.
+
+> [ HARDWARE_VALIDATION ]
+> VALIDATION_DEVICE: Polar H10 / Oura Ring
+> METRIC: rMSSD
+> STATUS: BIOMETRIC_VERIFIED
 `,
   howToSteps: [
     {

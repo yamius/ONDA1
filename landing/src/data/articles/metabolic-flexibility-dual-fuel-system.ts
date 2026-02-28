@@ -74,6 +74,11 @@ Ketosis isn't just a diet; it's a high-performance metabolic state. Ketones are 
 > **The Hack:** Perform 45 minutes of low-intensity exercise (where you can still hold a conversation) 2–3 times a week.
 
 **The Logic:** Zone 2 training specifically targets and "trains" your Mitochondria to become more efficient at burning fat for fuel, increasing your overall metabolic "bandwidth."
+
+> [ HARDWARE_VALIDATION ]
+> VALIDATION_DEVICE: CGM (Abbott/Dexcom)
+> METRIC: Postprandial Glucose Curve
+> STATUS: DUAL_FUEL_ACTIVE
 `,
   howToSteps: [
     {

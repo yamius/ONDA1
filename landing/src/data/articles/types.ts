@@ -18,4 +18,6 @@ export interface Article {
   introStyle?: 'cyan' | 'purple' | 'amber' | 'emerald' | 'blue' | 'orange' | 'rose' | 'indigo' | 'gold' | 'slate'
   /** Optional: Cross-link to related article at bottom */
   neuralSuggestion?: { text: string; link: string; linkText: string }
+  /** Optional: System Reference / terminology accordion */
+  terminologyBlock?: { term: string; definition: string }[]
 }
