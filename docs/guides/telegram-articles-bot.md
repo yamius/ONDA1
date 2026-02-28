@@ -54,7 +54,15 @@ ONDA фокусируется на: **поведенческие модели, �
 2. Скопируй, отредактируй в своём редакторе.
 3. Вставь отредактированный текст в чат и отправь.
 4. Бот ответит «Save as article?» с Approve/Reject.
-5. Approve → бот отправляет статью на `POST /api/save-article` сервера лендинга → сохраняется в `articles/` (работает на Replit deploy).
+5. Approve → бот отправляет статью на `POST /api/save-article` → сохраняется в `articles/`.
+
+**Где папка на Replit:** `articles/` в корне проекта (рядом с `landing/`). Если не видно — открой `https://твой-сайт.com/api/articles-path` — там путь. На Deploy файлы могут быть в контейнере, не в Files.
+
+**Редактирование:** 1) Редактируй в `articles/`. 2) Запусти `node scripts/push_articles.js` — правки уйдут на сайт. Без push локальные изменения не появятся на сайте.
+
+**Дубликаты:** `GET https://onda-life.com/api/articles-list` — список файлов (нужен push + redeploy). Удалить: `curl -X DELETE https://onda-life.com/api/article/имя_файла.md`
+
+**Синхронизация с API:** `node scripts/sync_articles.js` — скачивает статьи с сайта в локальную `articles/`.
 
 ## Проверка
 

@@ -1,0 +1,2 @@
+# Telegram bot saves articles here (POST /api/save-article)
+# Path: project_root/articles/ (next to landing/)

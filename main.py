@@ -108,20 +108,35 @@ def handle_text(message):
     bot.reply_to(message, "Save as article?", reply_markup=markup)
 
 
-def _save_article_via_api(content: str) -> tuple[bool, str]:
-    """Save article via landing server API (works on Replit deploy)."""
+def _save_article(content: str) -> tuple[bool, str]:
+    """Save article: 1) to local articles/ (Replit workspace), 2) via API (server)."""
     import urllib.request
     import json
+    ts = datetime.now().strftime('%Y%m%d_%H%M%S')
+    filename = f'article_{ts}.md'
+    local_path = Path(__file__).resolve().parent / 'articles' / filename
+
+    # 1) Write to local articles/ (visible in Replit Files for editing)
+    try:
+        local_path.parent.mkdir(parents=True, exist_ok=True)
+        local_path.write_text(content, encoding='utf-8')
+    except Exception as e:
+        print(f'[approve] local write: {e}')
+
+    # 2) POST to API with same filename (server uses same path)
     port = os.environ.get('PORT', '5000')
     url = f'http://127.0.0.1:{port}/api/save-article'
     try:
-        data = json.dumps({'content': content}).encode('utf-8')
+        data = json.dumps({'content': content, 'filename': filename}).encode('utf-8')
         req = urllib.request.Request(url, data=data, method='POST')
         req.add_header('Content-Type', 'application/json')
         with urllib.request.urlopen(req, timeout=10) as resp:
             out = json.loads(resp.read().decode())
-            return True, out.get('filename', 'article.md')
+            filename = out.get('filename', filename)
+        return True, filename
     except Exception as e:
+        if local_path.exists():
+            return True, filename
         return False, str(e)
 
 
@@ -130,15 +145,15 @@ def handle_approve(call):
     original = call.message.reply_to_message
     message_text = (original.text or original.caption or '') if original else (call.message.text or '')
 
-    ok, result = _save_article_via_api(message_text)
+    ok, result = _save_article(message_text)
     if not ok:
         bot.answer_callback_query(call.id, "Save failed!")
         bot.send_message(call.message.chat.id, f"❌ Save failed: {result}", parse_mode=None)
-        print(f'[approve] API save failed: {result}')
+        print(f'[approve] save failed: {result}')
         return
 
     bot.answer_callback_query(call.id, "Article saved!")
-    bot.send_message(call.message.chat.id, f"Article saved to `articles/{result}`.", parse_mode='Markdown')
+    bot.send_message(call.message.chat.id, f"Article saved to `articles/{result}`. Edit in Replit Files.", parse_mode='Markdown')
 
 
 @bot.callback_query_handler(func=lambda call: call.data == 'reject')

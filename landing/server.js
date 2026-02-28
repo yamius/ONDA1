@@ -3,8 +3,8 @@
  * Serves prerendered HTML from dist/ for each route — crawlers see full content.
  */
 import express from 'express'
-import { join } from 'path'
-import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'fs'
+import { join, resolve } from 'path'
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, unlinkSync, writeFileSync } from 'fs'
 import { fileURLToPath } from 'url'
 import { execSync } from 'child_process'
 
@@ -17,6 +17,11 @@ const SITE_URL = 'https://onda-life.com'
 const app = express()
 app.use(express.json({ limit: '1mb' }))
 
+// Debug: where articles are stored (for Replit Files visibility)
+app.get('/api/articles-path', (req, res) => {
+  res.json({ path: resolve(articlesDir), exists: existsSync(articlesDir) })
+})
+
 // API: save article from Telegram bot (writes to same articlesDir as md-articles)
 app.post('/api/save-article', (req, res) => {
   const content = req.body?.content
@@ -24,8 +29,10 @@ app.post('/api/save-article', (req, res) => {
     return res.status(400).json({ error: 'Missing content' })
   }
   try {
-    const ts = new Date().toISOString().replace(/[-:]/g, '').slice(0, 15).replace('T', '_')
-    const filename = `article_${ts}.md`
+    const filename =
+      req.body?.filename && /^article_[a-zA-Z0-9_]+\.md$/.test(req.body.filename)
+        ? req.body.filename
+        : `article_${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}.md`
     const filepath = join(articlesDir, filename)
     mkdirSync(articlesDir, { recursive: true })
     writeFileSync(filepath, content.trim(), 'utf-8')
@@ -105,17 +112,70 @@ ${urls.join('\n')}
   res.send(sitemap)
 })
 
-// API: list markdown articles saved by Telegram bot
+// API: raw list of all .md files (for debugging duplicates)
+app.get('/api/articles-list', (req, res) => {
+  if (!existsSync(articlesDir)) return res.json([])
+  const files = readdirSync(articlesDir).filter(f => f.endsWith('.md'))
+  const list = files.map((filename) => {
+    const content = readFileSync(join(articlesDir, filename), 'utf-8').trim()
+    const firstLine = content.split('\n')[0].replace(/[\[\]#*]/g, '').trim()
+    return { filename, title: firstLine || filename }
+  })
+  res.json(list)
+})
+
+// API: list markdown articles (dedup by content hash — keeps newest)
 app.get('/api/md-articles', (req, res) => {
   if (!existsSync(articlesDir)) return res.json([])
   const files = readdirSync(articlesDir).filter(f => f.endsWith('.md'))
-  const result = files.map(filename => {
+  const seen = new Map()
+  const result = []
+  for (const filename of files.sort().reverse()) {
     const content = readFileSync(join(articlesDir, filename), 'utf-8').trim()
+    const hash = content.replace(/\s+/g, ' ').slice(0, 500)
+    if (seen.has(hash)) continue
+    seen.set(hash, true)
     const firstLine = content.split('\n')[0].replace(/[\[\]#*]/g, '').trim()
     const slug = filename.replace('.md', '')
-    return { slug, filename, title: firstLine || filename, content }
-  }).reverse()
+    result.push({ slug, filename, title: firstLine || filename, content })
+  }
   res.json(result)
+})
+
+// API: update article (push local edits to deployment)
+app.put('/api/article/:filename', (req, res) => {
+  const filename = req.params.filename
+  if (!filename.endsWith('.md') || filename.includes('..') || filename.includes('/')) {
+    return res.status(400).json({ error: 'Invalid filename' })
+  }
+  const content = req.body?.content
+  if (typeof content !== 'string') {
+    return res.status(400).json({ error: 'Missing content' })
+  }
+  const filepath = join(articlesDir, filename)
+  try {
+    mkdirSync(articlesDir, { recursive: true })
+    writeFileSync(filepath, content.trim(), 'utf-8')
+    res.json({ ok: true })
+  } catch (err) {
+    res.status(500).json({ error: String(err.message) })
+  }
+})
+
+// API: delete article by filename (to remove duplicates)
+app.delete('/api/article/:filename', (req, res) => {
+  const filename = req.params.filename
+  if (!filename.endsWith('.md') || filename.includes('..') || filename.includes('/')) {
+    return res.status(400).json({ error: 'Invalid filename' })
+  }
+  const filepath = join(articlesDir, filename)
+  if (!existsSync(filepath)) return res.status(404).json({ error: 'Not found' })
+  try {
+    unlinkSync(filepath)
+    res.json({ ok: true })
+  } catch (err) {
+    res.status(500).json({ error: String(err.message) })
+  }
 })
 
 // 1. Static assets (js, css, images) — HTML served via route below
