@@ -1,0 +1,12 @@
+# Topics for article generation (one per line, # = comment)
+# Add hot topics from biohacking, neuroscience, longevity
+mitochondrial health and ATP optimization
+vagal tone and stress resilience
+circadian rhythm and sleep architecture
+cold exposure and brown fat activation
+red light therapy and cellular energy
+intermittent fasting and autophagy
+HRV training and nervous system
+neuroplasticity and flow state
+gut-brain axis and microbiome
+blue light and melatonin suppression
