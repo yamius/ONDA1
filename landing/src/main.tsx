@@ -5,6 +5,7 @@ import './index.css'
 import { Layout } from './components/Layout'
 import { GlossaryTermPage } from './pages/GlossaryTermPage'
 import { ArticlePage } from './pages/ArticlePage'
+import { MdArticlePage } from './pages/MdArticlePage'
 import { PartPage } from './pages/PartPage'
 import { LevelPage } from './pages/LevelPage'
 import { NotFoundPage } from './pages/NotFoundPage'
@@ -20,6 +21,7 @@ const app = (
           ))}
           <Route path="/glossary/:slug" element={<GlossaryTermPage />} />
           <Route path="/articles/:slug" element={<ArticlePage />} />
+          <Route path="/articles/telegram/:slug" element={<MdArticlePage />} />
           <Route path="/part/:slug" element={<PartPage />} />
           <Route path="/level/:number" element={<LevelPage />} />
           <Route path="*" element={<NotFoundPage />} />

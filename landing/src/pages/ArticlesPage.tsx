@@ -90,23 +90,27 @@ export function ArticlesPage() {
           </div>
           <div className="grid gap-6 md:grid-cols-2">
             {mdArticles.map((article) => (
-              <div
+              <Link
                 key={article.slug}
+                to={`/articles/telegram/${article.slug}`}
                 data-testid={`card-md-article-${article.slug}`}
-                className="glass-card rounded-xl p-6"
+                className="glass-card group rounded-xl p-6 transition-all hover:border-[#00FF41]/20"
               >
                 <div className="mb-2 flex items-center justify-between">
-                  <span className="rounded-md border border-white/10 bg-white/5 px-3 py-0.5 font-mono text-[10px] text-white/30">
-                    Telegram
+                  <span className="rounded-md border border-[#00FF41]/20 bg-[#00FF41]/5 px-3 py-0.5 font-mono text-[10px] text-[#00FF41]/60">
+                    TELEGRAM
+                  </span>
+                  <span className="font-mono text-xs text-[#00FF41]/0 transition-all group-hover:text-[#00FF41]/60">
+                    →
                   </span>
                 </div>
-                <h3 className="mb-2 text-lg font-semibold">
+                <h3 className="mb-2 text-lg font-semibold transition-colors group-hover:text-[#00FF41]">
                   {article.title}
                 </h3>
-                <p className="font-mono text-xs leading-relaxed text-white/40 line-clamp-4 whitespace-pre-wrap">
-                  {article.content.split('\n').slice(1).join('\n').trim().slice(0, 200)}…
+                <p className="font-mono text-xs leading-relaxed text-white/40 line-clamp-3">
+                  {article.content.split('\n').filter(l => l.trim() && !/^\[/.test(l.trim())).slice(0, 3).join(' ').slice(0, 180)}…
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
           <div className="my-10 border-t border-white/5" />

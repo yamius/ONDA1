@@ -52,9 +52,11 @@ app.use((req, res, next) => {
     const indexHtml = join(distDir, 'index.html')
     if (existsSync(indexHtml)) {
       res.setHeader('Cache-Control', 'no-cache')
-      // Invalid glossary or article slug: no prerendered file → return 404 so Google gets honest status
+      // Telegram articles are dynamic — serve SPA with 200 so React can handle routing
+      const isTelegramArticle = /^articles\/telegram\/[^/]+$/.test(cleanPath)
+      // Invalid glossary or static article slug: no prerendered file → return 404
       const isInvalidGlossarySlug = /^glossary\/[^/]+$/.test(cleanPath)
-      const isInvalidArticleSlug = /^articles\/[^/]+$/.test(cleanPath)
+      const isInvalidArticleSlug = /^articles\/[^/]+$/.test(cleanPath) && !isTelegramArticle
       if (isInvalidGlossarySlug || isInvalidArticleSlug) {
         res.status(404).sendFile(indexHtml)
       } else {
