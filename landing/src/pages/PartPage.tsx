@@ -4,7 +4,7 @@ import { levelsData } from '../data/levels'
 import { PART_SEO } from '../data/part-seo'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
 
-const SITE_URL = 'https://ondalife.replit.app'
+const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
 function setMeta(name: string, content: string, isProperty = false) {

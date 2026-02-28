@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import Markdown from 'react-markdown'
 
-const SITE_URL = 'https://ondalife.replit.app'
+const SITE_URL = 'https://onda-life.com'
 const DONE_PREFIX = 'md_done_'
 const FINALIZE_PREFIX = 'md_final_'
 

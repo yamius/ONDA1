@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const SITE_URL = 'https://ondalife.replit.app'
+const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 const CONTACT_EMAIL = 'hello@onda-life.com'
 

@@ -9,7 +9,7 @@ import { PART_SEO } from '../src/data/part-seo'
 import { parts } from '../src/pages/PartPage'
 import { getArticleBySlug } from '../src/data/articles'
 
-const SITE_URL = 'https://ondalife.replit.app'
+const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 const DEFAULT_TITLE = 'ONDA Life | Operating System for Your Consciousness'
 const DEFAULT_DESC =

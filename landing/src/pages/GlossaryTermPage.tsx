@@ -6,7 +6,7 @@ import { getTermBySlug, glossaryTerms } from '../data/glossary'
 import { injectGlossaryLinks } from '../utils/glossaryLinks'
 import { getArticlesForTerm } from '../data/articles'
 
-const SITE_URL = 'https://ondalife.replit.app'
+const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
 function setMeta(name: string, content: string, isProperty = false) {

@@ -12,7 +12,7 @@ import { getPrerenderRoutes } from '../src/config/routes'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
-const SITE_URL = 'https://ondalife.replit.app'
+const SITE_URL = 'https://onda-life.com'
 const buildDate = new Date().toISOString().split('T')[0]
 
 function getPriority(route: string): string {

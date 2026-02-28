@@ -3,7 +3,7 @@ import { useParams, Link, Navigate } from 'react-router-dom'
 import { levelsData } from '../data/levels'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
 
-const SITE_URL = 'https://ondalife.replit.app'
+const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
 function setMeta(name: string, content: string, isProperty = false) {

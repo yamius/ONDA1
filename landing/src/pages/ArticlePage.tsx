@@ -6,7 +6,7 @@ import { getArticleBySlug } from '../data/articles'
 import { glossaryTerms } from '../data/glossary'
 import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 
-const SITE_URL = 'https://ondalife.replit.app'
+const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
 /** Maps article slug to TheStack section id (for /the-stack#section-id anchor) */

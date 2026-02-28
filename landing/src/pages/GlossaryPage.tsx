@@ -7,7 +7,7 @@ import {
   GLOSSARY_CATEGORIES,
 } from '../data/glossary-categories'
 
-const SITE_URL = 'https://ondalife.replit.app'
+const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
 function setMeta(name: string, content: string, isProperty = false) {

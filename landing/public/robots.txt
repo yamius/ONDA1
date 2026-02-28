@@ -5,4 +5,4 @@ Allow: /level/
 Allow: /part/
 Disallow: /static/
 
-Sitemap: https://ondalife.replit.app/sitemap.xml
+Sitemap: https://onda-life.com/sitemap.xml
