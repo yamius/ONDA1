@@ -11,7 +11,8 @@ CHAT_ID = os.environ.get('MY_CHAT_ID')
 OPENAI_KEY = os.environ.get('OPENAI_API_KEY')
 
 bot = telebot.TeleBot(TOKEN)
-ARTICLES_DIR = 'articles'
+# Absolute path so it works on Replit regardless of cwd (landing server reads ../articles)
+ARTICLES_DIR = str(Path(__file__).resolve().parent / 'articles')
 INTERVAL_HOURS = int(os.environ.get('ARTICLE_INTERVAL_HOURS', '24'))
 FIRST_DELAY_SEC = int(os.environ.get('ARTICLE_FIRST_DELAY_SEC', '3600'))  # 1h default
 
@@ -116,8 +117,14 @@ def handle_approve(call):
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     filename = os.path.join(ARTICLES_DIR, f'article_{timestamp}.md')
 
-    with open(filename, 'w', encoding='utf-8') as f:
-        f.write(message_text)
+    try:
+        with open(filename, 'w', encoding='utf-8') as f:
+            f.write(message_text)
+    except Exception as e:
+        bot.answer_callback_query(call.id, "Save failed!")
+        bot.send_message(call.message.chat.id, f"❌ Save failed: {e}", parse_mode=None)
+        print(f'[approve] save failed: {e}')
+        return
 
     bot.answer_callback_query(call.id, "Article saved!")
     bot.send_message(call.message.chat.id, f"Article saved to `{filename}`.", parse_mode='Markdown')
