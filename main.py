@@ -48,6 +48,16 @@ def handle_next(message):
     bot.reply_to(message, "Send me content and use the approve button to save it.")
 
 
+@bot.message_handler(commands=['article'])
+def handle_article(message):
+    """Prompt to paste article for save."""
+    bot.reply_to(
+        message,
+        "Paste your article below. I'll add Approve/Reject buttons.\n\n"
+        "Flow: /generate → copy draft → edit elsewhere → paste here → Approve to save.",
+    )
+
+
 @bot.message_handler(commands=['generate'])
 def handle_generate(message):
     """Generate article now (only for MY_CHAT_ID)."""
@@ -88,12 +98,13 @@ STATUS: TEST_MODE"""
 
 @bot.message_handler(func=lambda message: message.text and not message.text.startswith('/'))
 def handle_text(message):
+    """Any pasted text → Approve/Reject to save as article."""
     markup = telebot.types.InlineKeyboardMarkup()
     markup.row(
         telebot.types.InlineKeyboardButton('✅ Approve', callback_data='approve'),
         telebot.types.InlineKeyboardButton('❌ Reject', callback_data='reject'),
     )
-    bot.reply_to(message, "Сохранить это сообщение как статью?", reply_markup=markup)
+    bot.reply_to(message, "Save as article?", reply_markup=markup)
 
 
 @bot.callback_query_handler(func=lambda call: call.data == 'approve')
@@ -322,12 +333,12 @@ Create ORIGINAL content. Max 3500 chars. English."""
             return
         if len(text) > 4000:
             text = text[:3997] + '...'
-        markup = telebot.types.InlineKeyboardMarkup()
-        markup.row(
-            telebot.types.InlineKeyboardButton('✅ Approve', callback_data='approve'),
-            telebot.types.InlineKeyboardButton('❌ Reject', callback_data='reject'),
+        draft_msg = (
+            "📝 *Draft* (use as base). Edit elsewhere, then paste back and send — "
+            "I'll add Approve/Reject to save to articles."
         )
-        bot.send_message(CHAT_ID, text, reply_markup=markup)
+        bot.send_message(CHAT_ID, draft_msg, parse_mode='Markdown')
+        bot.send_message(CHAT_ID, text)
     except Exception as e:
         _send_error(str(e))
 
