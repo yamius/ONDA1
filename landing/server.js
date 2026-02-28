@@ -4,7 +4,7 @@
  */
 import express from 'express'
 import { join } from 'path'
-import { existsSync, readdirSync, readFileSync, statSync } from 'fs'
+import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'fs'
 import { fileURLToPath } from 'url'
 import { execSync } from 'child_process'
 
@@ -15,6 +15,26 @@ const port = parseInt(process.env.PORT || '5000', 10)
 const SITE_URL = 'https://onda-life.com'
 
 const app = express()
+app.use(express.json({ limit: '1mb' }))
+
+// API: save article from Telegram bot (writes to same articlesDir as md-articles)
+app.post('/api/save-article', (req, res) => {
+  const content = req.body?.content
+  if (typeof content !== 'string' || !content.trim()) {
+    return res.status(400).json({ error: 'Missing content' })
+  }
+  try {
+    const ts = new Date().toISOString().replace(/[-:]/g, '').slice(0, 15).replace('T', '_')
+    const filename = `article_${ts}.md`
+    const filepath = join(articlesDir, filename)
+    mkdirSync(articlesDir, { recursive: true })
+    writeFileSync(filepath, content.trim(), 'utf-8')
+    res.json({ ok: true, filename })
+  } catch (err) {
+    console.error('[save-article]', err)
+    res.status(500).json({ error: String(err.message) })
+  }
+})
 
 // Dynamic sitemap: static routes from dist/ + Telegram articles from articles/
 app.get('/sitemap.xml', (req, res) => {

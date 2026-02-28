@@ -108,26 +108,37 @@ def handle_text(message):
     bot.reply_to(message, "Save as article?", reply_markup=markup)
 
 
+def _save_article_via_api(content: str) -> tuple[bool, str]:
+    """Save article via landing server API (works on Replit deploy)."""
+    import urllib.request
+    import json
+    port = os.environ.get('PORT', '5000')
+    url = f'http://127.0.0.1:{port}/api/save-article'
+    try:
+        data = json.dumps({'content': content}).encode('utf-8')
+        req = urllib.request.Request(url, data=data, method='POST')
+        req.add_header('Content-Type', 'application/json')
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            out = json.loads(resp.read().decode())
+            return True, out.get('filename', 'article.md')
+    except Exception as e:
+        return False, str(e)
+
+
 @bot.callback_query_handler(func=lambda call: call.data == 'approve')
 def handle_approve(call):
-    ensure_articles_dir()
-
     original = call.message.reply_to_message
     message_text = (original.text or original.caption or '') if original else (call.message.text or '')
-    timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-    filename = os.path.join(ARTICLES_DIR, f'article_{timestamp}.md')
 
-    try:
-        with open(filename, 'w', encoding='utf-8') as f:
-            f.write(message_text)
-    except Exception as e:
+    ok, result = _save_article_via_api(message_text)
+    if not ok:
         bot.answer_callback_query(call.id, "Save failed!")
-        bot.send_message(call.message.chat.id, f"❌ Save failed: {e}", parse_mode=None)
-        print(f'[approve] save failed: {e}')
+        bot.send_message(call.message.chat.id, f"❌ Save failed: {result}", parse_mode=None)
+        print(f'[approve] API save failed: {result}')
         return
 
     bot.answer_callback_query(call.id, "Article saved!")
-    bot.send_message(call.message.chat.id, f"Article saved to `{filename}`.", parse_mode='Markdown')
+    bot.send_message(call.message.chat.id, f"Article saved to `articles/{result}`.", parse_mode='Markdown')
 
 
 @bot.callback_query_handler(func=lambda call: call.data == 'reject')
