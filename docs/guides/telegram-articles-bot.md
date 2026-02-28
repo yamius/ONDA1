@@ -28,6 +28,14 @@ ONDA фокусируется на: **поведенческие модели, �
 
 Чёрный список тем и вывода — в `main.py` (`_TOPIC_BLACKLIST`, `_OUTPUT_BLACKLIST`).
 
+## Источники тем
+
+- **Reddit** — r/biohacking, r/Nootropics, r/longevity (через `REDDIT_SUBS`)
+- **YouTube** — RSS последних видео с каналов (Huberman Lab, FoundMyFitness, Peter Attia). Без API-ключа.
+- **topics.txt** — fallback, если оба источника недоступны
+
+Добавить свои каналы: `YOUTUBE_CHANNEL_IDS=UCxxx,UCyyy` (channel ID через запятую).
+
 ## Команды
 
 | Команда | Описание |

@@ -126,9 +126,15 @@ def handle_reject(call):
 
 
 REDDIT_SUBS = os.environ.get('REDDIT_SUBS', 'biohacking,Nootropics,longevity').split(',')
+# YouTube channel IDs for RSS (no API key). Add via YOUTUBE_CHANNEL_IDS env or use defaults.
+_DEFAULT_YT_CHANNELS = [
+    'UCEu4Ce6JeTovBQpavZbbLfA',   # Huberman Lab
+    'UC5fdyC4LxyyYv8Am6nDrkmg',   # FoundMyFitness Clips
+    'UC8kGsMa0LygSX9nkBcBH1Sg',   # Peter Attia MD
+]
 
 
-def _fetch_reddit_topics(limit=10):
+def _fetch_reddit_topics(limit=15):
     try:
         import feedparser
         import urllib.request
@@ -147,6 +153,31 @@ def _fetch_reddit_topics(limit=10):
         return topics[:limit]
     except Exception as e:
         print(f'[reddit] {e}')
+        return []
+
+
+def _fetch_youtube_topics(limit=20):
+    """Fetch video titles from YouTube channel RSS feeds (no API key)."""
+    ids = os.environ.get('YOUTUBE_CHANNEL_IDS', '').strip().split(',')
+    ids = [x.strip() for x in ids if x.strip()] or _DEFAULT_YT_CHANNELS
+    topics = []
+    try:
+        import feedparser
+        import urllib.request
+        for cid in ids[:5]:
+            url = f'https://www.youtube.com/feeds/videos.xml?channel_id={cid}'
+            req = urllib.request.Request(url, headers={'User-Agent': 'ONDA-bot/1'})
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                d = feedparser.parse(resp.read())
+            for e in d.entries[:limit]:
+                t = (e.get('title') or '').strip()
+                if t and len(t) > 15:
+                    topics.append(t)
+            if len(topics) >= limit:
+                break
+        return topics[:limit]
+    except Exception as e:
+        print(f'[youtube] {e}')
         return []
 
 
@@ -191,7 +222,9 @@ def _load_used_topics():
 
 
 def _load_topics():
-    topics = _fetch_reddit_topics(10)
+    reddit = _fetch_reddit_topics(15)
+    youtube = _fetch_youtube_topics(20)
+    topics = list(dict.fromkeys(reddit + youtube))  # merge, preserve order, dedupe
     if not topics:
         path = Path(__file__).parent / 'scripts' / 'topics.txt'
         if path.exists():
@@ -236,25 +269,43 @@ def _generate_and_send():
             _send_error("All topics filtered (drugs/injections/supplements)")
             return
         client = OpenAI(api_key=OPENAI_KEY, timeout=90)
-        system_prompt = """You write ONDA Life biohacking articles. ONDA treats the body as a biocomputer: hardware (cells, organs), software (protocols, hacks), validation (metrics, devices).
+        system_prompt = """ONDA OS COMPILER v1.0
+Role: You are the terminal for the biological operating system ONDA. Your task: decompile incoming "human" text and assemble it into a technical optimization protocol.
 
-SCOPE (ONLY these):
-- Behavioral models: breathing, posture, movement patterns
-- Devices: wearables (Oura, Whoop, Muse), EEG, red/blue light panels, acoustic stimulation
-- Time of day: circadian windows, morning/evening protocols
-- Light physical exercise: walking, stretching, low-intensity movement
-- Social: co-regulation, group dynamics, interpersonal tuning
+Core Philosophy: Biology is software. The body is hardware. The environment is input data. We don't "improve health"—we "fix system errors" and "calibrate metrics".
 
-FORBIDDEN (never include):
-- Injections, drugs, pharmaceuticals, peptides (Tesamorelin, Ozempic, etc.)
-- Supplements, pills, capsules, dosages in mg
-- Any compound you "administer" or "take"
+Stylistic Constraints:
+- No Fluff: Remove intros ("in the modern world", "scientists have proven"). Start with substance.
+- Directive Tone: Use imperative. Not "you might try" but "REQUIRED:", "INITIATE:", "EXECUTE:".
+- The ONDA Dictionary:
+  Eyes → Optical Data Ports / Photic Receptors
+  Brain → Central Processing Unit (CPU) / Neural Hardware
+  Sleep → System Recovery Mode / Melatonin_Upload
+  Food → Fuel Input / Metabolic Signaling
+  Stress → System Noise / High Cortisol Load
 
-RULES:
-- Create ORIGINAL content. Use the topic only as inspiration. Do NOT copy existing articles.
-- ONDA style: engineering tone, "black box" metaphor, concrete protocols, specific hardware.
-- Structure: [ ARTICLE: TITLE // SUBTITLE ], THE INTRO, THE HACK: [ PROTOCOL_NAME ] (steps in blockquotes), THE LOGIC, [ HARDWARE_VALIDATION ].
-- Use Markdown: ## headers, > blockquotes. Max 3500 chars. English."""
+Structure (Markdown):
+- Headers in UPPERCASE and brackets: ## [ SECTION_NAME ]
+- Protocol lists: PROTOCOL_01 > [TITLE]
+- Key variables (hormones, devices) as code: **Cortisol** or [Oura_Data]
+
+Article Architecture:
+[ SUMMARY ]: 1-2 sentences — calibration goal.
+[ HARDWARE_LOGIC ]: Why it works at physiology level (brief, technical).
+[ EXECUTION_PROTOCOLS ]: Step-by-step action algorithm.
+[ SYSTEM_VALIDATION ]: How to verify (metrics, devices).
+[ STATUS ]: Closing line: System Integrity: Optimal.
+
+Example transformation:
+Input: "Morning Sunlight Exposure: Begin the day by stepping outside..."
+Output:
+PROTOCOL_01 > PHOTONIC_ANCHOR
+EXECUTION: Exposure to >10,000 LUX within 30 min of ignition (wake up).
+LOGIC: Hard-reset of the Suprachiasmatic Nucleus. Initiates countdown for Melatonin_Release.
+
+SCOPE (ONLY): behavioral models, devices (Oura/Whoop/Muse), time-of-day, light exercise, social co-regulation.
+FORBIDDEN: injections, drugs, supplements, pills, dosages in mg.
+Create ORIGINAL content. Max 3500 chars. English."""
 
         prompt = f"""Write an ONDA Life article. Topic (use as inspiration only): {topic}"""
         r = client.chat.completions.create(
