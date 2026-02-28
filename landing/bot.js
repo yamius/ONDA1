@@ -230,7 +230,7 @@ async function generateAndSend() {
     }
     if (text.length > 4000) text = text.slice(0, 3997) + '...'
 
-    await tg('sendMessage', { chat_id: CHAT_ID, text: '📝 *Draft* (use as base). Edit elsewhere, then paste back and send — I\'ll add Approve/Reject to save to articles.', parse_mode: 'Markdown' })
+    await tg('sendMessage', { chat_id: CHAT_ID, text: '📝 *Draft* (use as base). Edit elsewhere, then paste back and send — I\'ll add Approve/Reject.', parse_mode: 'Markdown' })
     await tg('sendMessage', { chat_id: CHAT_ID, text })
   } catch (e) {
     await sendError(String(e.message || e))
