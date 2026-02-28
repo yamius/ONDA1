@@ -26,7 +26,7 @@ def handle_next(message):
 @bot.message_handler(func=lambda message: message.text and not message.text.startswith('/'))
 def handle_text(message):
     markup = telebot.types.InlineKeyboardMarkup()
-    markup.add(telebot.types.InlineKeyboardButton('Approve', callback_data='approve'))
+    markup.add(telebot.types.InlineKeyboardButton('✅ Approve', callback_data='approve'))
     bot.reply_to(message, "Сохранить это сообщение как статью?", reply_markup=markup)
 
 
