@@ -4,15 +4,29 @@
  */
 import express from 'express'
 import { join } from 'path'
-import { existsSync } from 'fs'
+import { existsSync, readdirSync, readFileSync } from 'fs'
 import { fileURLToPath } from 'url'
 import { execSync } from 'child_process'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const distDir = join(__dirname, 'dist')
+const articlesDir = join(__dirname, '..', 'articles')
 const port = parseInt(process.env.PORT || '5000', 10)
 
 const app = express()
+
+// API: list markdown articles saved by Telegram bot
+app.get('/api/md-articles', (req, res) => {
+  if (!existsSync(articlesDir)) return res.json([])
+  const files = readdirSync(articlesDir).filter(f => f.endsWith('.md'))
+  const result = files.map(filename => {
+    const content = readFileSync(join(articlesDir, filename), 'utf-8').trim()
+    const firstLine = content.split('\n')[0].replace(/[\[\]#*]/g, '').trim()
+    const slug = filename.replace('.md', '')
+    return { slug, filename, title: firstLine || filename, content }
+  }).reverse()
+  res.json(result)
+})
 
 // 1. Static assets (js, css, images) — HTML served via route below
 app.use(

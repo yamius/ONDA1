@@ -1,6 +1,13 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { articles } from '../data/articles'
+
+interface MdArticle {
+  slug: string
+  filename: string
+  title: string
+  content: string
+}
 
 const SITE_URL = 'https://ondalife.replit.app'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
@@ -21,6 +28,15 @@ const ARTICLES_DESC =
   'Deep-dive articles on vagal tone, nervous system optimization, and consciousness architecture. Science-backed guides for your biocomputer upgrade.'
 
 export function ArticlesPage() {
+  const [mdArticles, setMdArticles] = useState<MdArticle[]>([])
+
+  useEffect(() => {
+    fetch('/api/md-articles')
+      .then(r => r.json())
+      .then(setMdArticles)
+      .catch(() => {})
+  }, [])
+
   useEffect(() => {
     document.title = ARTICLES_TITLE
     setMeta('description', ARTICLES_DESC)
@@ -66,6 +82,36 @@ export function ArticlesPage() {
       <p className="mb-12 max-w-2xl font-mono text-sm text-white/40">
         Science-backed guides for nervous system optimization. From vagal tone to consciousness architecture.
       </p>
+
+      {mdArticles.length > 0 && (
+        <div className="mb-10">
+          <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
+            [ FROM TELEGRAM ]
+          </div>
+          <div className="grid gap-6 md:grid-cols-2">
+            {mdArticles.map((article) => (
+              <div
+                key={article.slug}
+                data-testid={`card-md-article-${article.slug}`}
+                className="glass-card rounded-xl p-6"
+              >
+                <div className="mb-2 flex items-center justify-between">
+                  <span className="rounded-md border border-white/10 bg-white/5 px-3 py-0.5 font-mono text-[10px] text-white/30">
+                    Telegram
+                  </span>
+                </div>
+                <h3 className="mb-2 text-lg font-semibold">
+                  {article.title}
+                </h3>
+                <p className="font-mono text-xs leading-relaxed text-white/40 line-clamp-4 whitespace-pre-wrap">
+                  {article.content.split('\n').slice(1).join('\n').trim().slice(0, 200)}…
+                </p>
+              </div>
+            ))}
+          </div>
+          <div className="my-10 border-t border-white/5" />
+        </div>
+      )}
 
       <div className="grid gap-6 md:grid-cols-2">
         {articles.map((article) => (
