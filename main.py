@@ -1,6 +1,5 @@
 import os
 import threading
-import time
 from pathlib import Path
 
 import telebot
@@ -13,8 +12,6 @@ OPENAI_KEY = os.environ.get('OPENAI_API_KEY')
 bot = telebot.TeleBot(TOKEN)
 # Absolute path so it works on Replit regardless of cwd (landing server reads ../articles)
 ARTICLES_DIR = str(Path(__file__).resolve().parent / 'articles')
-INTERVAL_HOURS = int(os.environ.get('ARTICLE_INTERVAL_HOURS', '24'))
-FIRST_DELAY_SEC = int(os.environ.get('ARTICLE_FIRST_DELAY_SEC', '3600'))  # 1h default
 
 _STOPWORDS = {'the', 'a', 'an', 'and', 'or', 'but', 'for', 'in', 'on', 'at', 'to', 'of', 'is', 'are', 'was', 'were', 'be', 'been', 'this', 'that', 'it', 'its', 'as', 'by', 'with'}
 
@@ -398,17 +395,7 @@ Create ORIGINAL content. Max 3500 chars. English."""
         _send_error(str(e))
 
 
-def _generator_loop():
-    time.sleep(FIRST_DELAY_SEC)
-    while True:
-        _generate_and_send()
-        time.sleep(INTERVAL_HOURS * 3600)
-
-
 if __name__ == '__main__':
     ensure_articles_dir()
-    if CHAT_ID and OPENAI_KEY:
-        t = threading.Thread(target=_generator_loop, daemon=True)
-        t.start()
-        print(f'[generator] 1 article/day')
+    # Auto-generation disabled — use /generate command only
     bot.infinity_polling()
