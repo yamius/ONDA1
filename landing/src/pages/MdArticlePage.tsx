@@ -154,7 +154,7 @@ function DoneButton({ id }: { id: string }) {
       <button
         type="button"
         onClick={toggle}
-        className={`font-mono text-xs transition-colors ${done ? 'text-[#00FF41]' : 'text-white/20 hover:text-white/40'}`}
+        className={`font-mono text-xs transition-colors ${done ? 'text-terminal-green' : 'text-white/20 hover:text-white/40'}`}
       >
         {done ? '[ ACTIVE ]' : '[ DONE ]'}
       </button>
@@ -166,21 +166,21 @@ function renderBlock(block: Block, idx: number) {
   switch (block.type) {
     case 'header':
       return (
-        <h2 key={idx} className="mb-4 mt-10 font-mono text-sm font-bold tracking-widest text-[#00FF41]/90 [text-shadow:0_0_12px_rgba(0,255,65,0.4)] uppercase first:mt-0">
+        <h2 key={idx} className="mb-4 mt-10 font-mono text-sm font-bold tracking-widest text-terminal-green/90 [text-shadow:0_0_12px_rgba(74,222,128,0.4)] uppercase first:mt-0">
           [ {block.text} ]
         </h2>
       )
 
     case 'subheader':
       return (
-        <h3 key={idx} className="mb-3 mt-8 font-mono text-xs font-bold tracking-widest text-[#00FF41]/60 uppercase">
+        <h3 key={idx} className="mb-3 mt-8 font-mono text-xs font-bold tracking-widest text-terminal-green/60 uppercase">
           {block.text}
         </h3>
       )
 
     case 'quote':
       return (
-        <blockquote key={idx} className="my-6 border-l-4 border-[#00FF41]/40 bg-[#00FF41]/5 py-4 pl-6 pr-4 font-mono text-sm leading-relaxed text-white/70">
+        <blockquote key={idx} className="my-6 border-l-4 border-terminal-green/40 bg-terminal-green/5 py-4 pl-6 pr-4 font-mono text-sm leading-relaxed text-white/70">
           {block.lines.map((l, i) => <p key={i} className="mb-2 last:mb-0">{l}</p>)}
         </blockquote>
       )
@@ -229,13 +229,13 @@ function renderBlock(block: Block, idx: number) {
                 components={{
                   p: ({ children }) => <>{children}</>,
                   strong: ({ children }) => (
-                    <strong className="font-mono font-bold text-[#00FF41]">{children}</strong>
+                    <strong className="font-mono font-bold text-terminal-green">{children}</strong>
                   ),
                   em: ({ children }) => (
                     <em className="not-italic text-white/80">{children}</em>
                   ),
                   a: ({ href, children }) => (
-                    <a href={href} className="text-[#00FF41] underline">{children}</a>
+                    <a href={href} className="text-terminal-green underline">{children}</a>
                   ),
                 }}
               >
@@ -294,7 +294,7 @@ export function MdArticlePage() {
   if (loading) {
     return (
       <div className="mx-auto max-w-4xl px-4 pt-20 pb-16 md:px-6">
-        <p className="animate-pulse font-mono text-sm text-[#00FF41]/60">[ LOADING... ]</p>
+        <p className="animate-pulse font-mono text-sm text-terminal-green/60">[ LOADING... ]</p>
       </div>
     )
   }
@@ -303,7 +303,7 @@ export function MdArticlePage() {
     return (
       <div className="mx-auto max-w-4xl px-4 pt-20 pb-16 md:px-6">
         <p className="font-mono text-sm text-white/40">[ 404: ARTICLE NOT FOUND ]</p>
-        <Link to="/articles" className="mt-4 inline-block font-mono text-xs text-[#00FF41] underline">
+        <Link to="/articles" className="mt-4 inline-block font-mono text-xs text-terminal-green underline">
           ← Back to Articles
         </Link>
       </div>
@@ -321,12 +321,12 @@ export function MdArticlePage() {
         <span>/</span>
         <Link to="/articles" className="transition-colors hover:text-white/50">Articles</Link>
         <span>/</span>
-        <span className="text-[#00FF41]/60" aria-current="page">{article.title}</span>
+        <span className="text-terminal-green/60" aria-current="page">{article.title}</span>
       </nav>
 
       {/* Badge */}
       <div className="mb-4">
-        <span className="rounded-md border border-[#00FF41]/20 bg-[#00FF41]/5 px-3 py-1 font-mono text-[10px] tracking-wider text-[#00FF41]">
+        <span className="rounded-md border border-terminal-green/20 bg-terminal-green/5 px-3 py-1 font-mono text-[10px] tracking-wider text-terminal-green">
           TELEGRAM
         </span>
       </div>
@@ -367,7 +367,7 @@ export function MdArticlePage() {
       <div className="my-8 border-t border-white/5" />
 
       {/* Footer CTA */}
-      <div className="rounded-xl border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-[#00FF41]/5 p-8 text-center">
+      <div className="rounded-xl border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-terminal-green/5 p-8 text-center">
         <p className="mb-6 font-mono text-base font-semibold text-white/90">
           System Calibration Ready. Download ONDA Life to track your nervous system in real-time.
         </p>
@@ -398,7 +398,7 @@ export function MdArticlePage() {
         </h3>
         <Link
           to="/glossary"
-          className="font-mono text-xs text-[#00FF41]/60 underline decoration-[#00FF41]/20 underline-offset-2 transition-colors hover:text-[#00FF41]"
+          className="font-mono text-xs text-terminal-green/60 underline decoration-terminal-green/20 underline-offset-2 transition-colors hover:text-terminal-green"
         >
           → Browse full Glossary
         </Link>
