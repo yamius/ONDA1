@@ -392,15 +392,7 @@ export function startBot() {
     return
   }
   mkdirSync(ARTICLES_DIR, { recursive: true })
-  if (CHAT_ID && OPENAI_KEY) {
-    const firstDelay = parseInt(process.env.ARTICLE_FIRST_DELAY_SEC || '3600', 10) * 1000
-    const interval = parseInt(process.env.ARTICLE_INTERVAL_HOURS || '24', 10) * 3600 * 1000
-    setTimeout(() => {
-      setInterval(generateAndSend, interval)
-      generateAndSend().catch(console.error)
-    }, firstDelay)
-    console.log('[generator] 1 article/day')
-  }
+  // Auto-generation disabled — use /generate command only
   poll()
   console.log('[bot] polling started')
 }
