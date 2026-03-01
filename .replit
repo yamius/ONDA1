@@ -29,7 +29,7 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd landing && npm install && npm run start"
+args = "bash scripts/start-replit.sh"
 waitForPort = 5000
 
 [workflows.workflow.metadata]
