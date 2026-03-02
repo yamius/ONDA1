@@ -120,3 +120,24 @@ body {
   mask-composite: exclude;
   pointer-events: none;
 }
+
+/* Burger: left edge = footer "> ONDA LIFE" left edge (matches max-w-7xl + px) */
+.burger-anchor-center {
+  left: 1.25rem; /* = px-5, matches footer */
+}
+@media (min-width: 768px) {
+  .burger-anchor-center {
+    left: calc((100vw - min(1280px, 100vw)) / 2 + 1.5rem); /* = px-6, matches footer */
+  }
+}
+
+/* Header content: same horizontal bounds as footer (left: burger+gap, right: matches footer px) */
+.header-content-center {
+  padding-left: 61px; /* mobile: 20px + 34px burger + 7px gap */
+}
+@media (min-width: 768px) {
+  .header-content-center {
+    /* container + 24px + 30px burger + 12px gap = align logo after burger, same left bound as footer */
+    padding-left: calc((100vw - min(1280px, 100vw)) / 2 + 4.125rem);
+  }
+}
