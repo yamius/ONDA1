@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import Markdown from 'react-markdown'
+import { ArticleReactions, ArticleValidationArrows } from '../components/ArticleReactions'
 
 const SITE_URL = 'https://onda-life.com'
 const DONE_PREFIX = 'md_done_'
@@ -366,7 +367,11 @@ export function MdArticlePage() {
       <div className="my-8 border-t border-white/5" />
 
       {/* Footer CTA */}
-      <div className="p-8 text-center">
+      <div>
+        <div className="mb-4 flex justify-end">
+          <ArticleValidationArrows articleSlug={slug || ''} />
+        </div>
+        <div className="p-8 text-center">
         <p className="mb-6 font-mono text-base font-semibold text-white/90">
           System Calibration Ready. Download ONDA Life to track your nervous system in real-time.
         </p>
@@ -388,7 +393,11 @@ export function MdArticlePage() {
             <span>Google Play</span>
           </a>
         </div>
+        </div>
       </div>
+
+      {/* Reactions & Comments */}
+      <ArticleReactions articleSlug={slug || ''} />
 
       {/* Related Glossary Terms placeholder */}
       <div className="mt-16 border-t border-white/5 pt-10">

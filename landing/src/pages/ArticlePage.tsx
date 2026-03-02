@@ -77,6 +77,7 @@ function setMeta(name: string, content: string, isProperty = false) {
 }
 
 import { PROTOCOL_STORAGE_PREFIX, ARTICLE_STORAGE_PREFIX } from '../data/protocol-ids'
+import { ArticleReactions, ArticleValidationArrows } from '../components/ArticleReactions'
 
 const STORAGE_KEY_PREFIX = ARTICLE_STORAGE_PREFIX
 
@@ -559,7 +560,11 @@ export function ArticlePage() {
       </div>
 
       {/* CTA: Download ONDA Life */}
-      <div className="mt-16 p-8 text-center">
+      <div className="mt-16">
+        <div className="mb-4 flex justify-end">
+          <ArticleValidationArrows articleSlug={article.slug} />
+        </div>
+        <div className="p-8 text-center">
         <p className="mb-6 font-mono text-base font-semibold text-white/90 md:text-lg">
           {article.slug === 'dopamine-architecture-mastering-desire'
             ? 'System Calibration Ready. Download ONDA Life to optimize your Dopamine baseline and track motivation windows.'
@@ -607,7 +612,11 @@ export function ArticlePage() {
             <span>Google Play</span>
           </a>
         </div>
+        </div>
       </div>
+
+      {/* Reactions & Comments */}
+      <ArticleReactions articleSlug={article.slug} />
 
       {article.neuralSuggestion && (
         <div className="mt-12 rounded-xl border border-purple-500/30 bg-purple-500/5 p-6">
