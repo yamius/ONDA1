@@ -38,10 +38,9 @@ export function Layout() {
       {/* Fixed burger — minimal fixed surface */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="fixed z-[60] flex h-[34px] w-[34px] items-center justify-center rounded-lg border border-white/10 bg-[#1a1b26]/90 backdrop-blur-sm text-cyan-400 shadow-lg transition-colors hover:bg-[#1a1b26] hover:text-cyan-300 md:h-[30px] md:w-[30px]"
+        className="fixed left-3 z-[60] flex h-[34px] w-[34px] items-center justify-center rounded-lg border border-white/10 bg-[#1a1b26]/90 backdrop-blur-sm text-cyan-400 shadow-lg transition-colors hover:bg-[#1a1b26] hover:text-cyan-300 md:left-8 md:h-[30px] md:w-[30px]"
         style={{
           top: 'calc(max(env(safe-area-inset-top, 0px), 12px) + 10px)',
-          left: '12px',
           transform: menuOpen ? 'rotate(90deg)' : 'none',
           transition: 'transform 0.2s',
         }}
@@ -118,7 +117,7 @@ export function Layout() {
       <main style={{ opacity: visible ? 1 : 0 }}>
         {/* Scrolling header — logo + download */}
         <header className="border-b border-white/5 bg-[#1a1b26]/70 backdrop-blur-xl pt-[max(env(safe-area-inset-top,0px),12px)]">
-          <div className="mx-auto flex max-w-7xl items-center justify-between pl-[61px] pr-5 py-3 md:px-6 md:py-4 md:pl-[26px]">
+          <div className="mx-auto flex max-w-7xl items-center justify-between pl-[61px] pr-5 py-3 md:px-6 md:py-4 md:pl-12">
             <Link to="/" className="font-mono text-lg font-bold" onClick={() => setMenuOpen(false)}>
               <span className="text-cyan-400">ONDA</span>
               <span className="text-green-400"> LIFE</span>
