@@ -122,15 +122,15 @@ export function Layout() {
 
       <main style={{ opacity: visible ? 1 : 0 }}>
         {/* Scrolling header — logo + download */}
-        <header className="border-b border-white/5 bg-[#1a1b26]/70 backdrop-blur-xl pt-[max(env(safe-area-inset-top,0px),12px)]">
-          <div className="header-content-center mx-auto flex max-w-7xl items-center justify-between pr-5 py-3 md:py-4 md:pr-6">
-            <Link to="/" className="font-mono text-lg font-bold" onClick={() => setMenuOpen(false)}>
+        <header className="border-b border-white/5 bg-[#1a1b26]/70 backdrop-blur-xl pt-[max(env(safe-area-inset-top,0px),8px)]">
+          <div className="header-content-center mx-auto flex max-w-7xl items-center justify-between pr-5 py-2 md:py-4 md:pr-6">
+            <Link to="/" className="font-mono text-base font-bold md:text-lg" onClick={() => setMenuOpen(false)}>
               <span className="text-cyan-400">ONDA</span>
               <span className="text-green-400"> LIFE</span>
             </Link>
             <a
               href="#download"
-              className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-4 py-2 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:px-5 md:text-sm"
+              className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-3 py-1.5 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:px-5 md:py-2 md:text-sm"
             >
               Download App
             </a>
