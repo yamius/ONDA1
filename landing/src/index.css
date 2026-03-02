@@ -124,12 +124,12 @@ body {
 /* Burger: left edge = footer "> ONDA LIFE" left edge (matches max-w-7xl + px) */
 .burger-anchor-center {
   left: 1.25rem; /* = px-5, matches footer */
-  top: calc(env(safe-area-inset-top, 20px) + 12px); /* mobile: extra offset to stay below system UI when scrolling */
+  top: calc(max(env(safe-area-inset-top, 0px), 48px) + 12px); /* mobile: large min to stay well below system bar/notch */
 }
 @media (min-width: 768px) {
   .burger-anchor-center {
     left: calc((100vw - min(1280px, 100vw)) / 2 + 1.5rem); /* = px-6, matches footer */
-    top: calc(max(env(safe-area-inset-top, 0px), 12px) + 10px);
+    top: calc(max(env(safe-area-inset-top, 0px), 12px) + 20px); /* +10px = 1/3 of burger (30px) */
   }
 }
 
