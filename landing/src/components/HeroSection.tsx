@@ -5,14 +5,16 @@ export function HeroSection() {
   const [scrollY, setScrollY] = useState(0)
 
   useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY)
+    const handleScroll = () => {
+      if (window.innerWidth >= 768) setScrollY(window.scrollY)
+    }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-8 md:pt-4">
-      {/* Background image with parallax (moves at 50% scroll speed) */}
+      {/* Background image with parallax on desktop only (avoids iOS fixed-nav bug on mobile) */}
       <img
         src="/hero-bg.png"
         alt="ONDA Life app — biohacking and HRV tracker interface"
