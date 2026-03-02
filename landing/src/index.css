@@ -121,21 +121,10 @@ body {
   pointer-events: none;
 }
 
-/* Option 4: body padding-top on mobile — content starts below system bar, burger aligns */
-:root {
-  --mobile-safe-top: calc(max(env(safe-area-inset-top, 0px), 44px) + 16px);
-}
-
-@media (max-width: 767px) {
-  body {
-    padding-top: var(--mobile-safe-top);
-  }
-}
-
 /* Burger: left edge = footer "> ONDA LIFE" left edge (matches max-w-7xl + px) */
 .burger-anchor-center {
   left: 1.25rem; /* = px-5, matches footer */
-  top: var(--mobile-safe-top); /* mobile: same as body padding */
+  top: max(env(safe-area-inset-top, 0px), 12px); /* mobile: minimal top */
 }
 @media (min-width: 768px) {
   .burger-anchor-center {
