@@ -63,4 +63,9 @@ export const PART_SEO: Record<string, { title: string; description: string }> = 
     description:
       'Global integration. How individual biological efficiency transforms the surrounding environment and the world.',
   },
+  'i-sense': {
+    title: 'Part 13: Sensory Intelligence | ONDA Life',
+    description:
+      'Interoceptive accuracy and sensory expansion. Transform the body into a high-precision antenna for internal and external data.',
+  },
 }

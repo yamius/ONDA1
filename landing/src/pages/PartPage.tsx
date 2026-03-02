@@ -977,6 +977,93 @@ export const parts: Record<string, {
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
     ],
   },
+  'i-sense': {
+    badge: '[ PART 13 — LEVEL 5: NEURO-SOMATIC MIND / SENSORY INTELLIGENCE ]',
+    title: 'I',
+    titleHighlight: 'Sense',
+    subtitle: 'Protocol: Interoceptive Accuracy and Sensory Expansion',
+    metaDescription:
+      'Part 13: Sensory Intelligence. Interoception, insula, C-tactile fibers. Transform the body into a high-precision antenna. ONDA Life.',
+    intro:
+      'At this stage, we return to the "biological spacesuit"—not as passive passengers, but as expert pilots. We transition from simple self-observation to high-precision Sensory Intelligence. The objective is to transform the body from an object that needs maintenance into a perfect "antenna" capable of reading the subtlest data from both internal and external environments. Here, we learn to separate the raw electrical signal of the nervous system from automatic mental interpretation.\n\nKey Biological Challenge: Synchronizing the "Body Schema" (where I am) and the "Body Image" (how I feel) into a single stream of ultra-precise data.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'This protocol turns the body into a sensitive measuring instrument ready to manage internal flows:',
+      items: [
+        {
+          name: 'Interoceptive Accuracy',
+          text: 'Practices to activate the insula, allowing you to hear pulsation, peristalsis, and micro-movements beneath the skin without fear or judgment.',
+        },
+        {
+          name: 'Sensory Discrimination',
+          text: 'Exercises to sharpen exteroception (hearing, touch, smell) through the conscious management of thalamic filters.',
+        },
+        {
+          name: 'DMN Suppression via Sensories',
+          text: 'Shifting attention to the "direct wire" of sensations, which physiologically deactivates mental "rumination" and reduces stress.',
+        },
+        {
+          name: 'Neuro-Vegetative Calibration',
+          text: "Tuning the brain's ability to instantly recognize changes in the internal chemical background (e.g., an adrenaline surge) before it even becomes an emotion.",
+        },
+        {
+          name: 'Embodiment Clarity',
+          text: 'Eliminating the delay between the body\'s signal and its realization ("I feel — I know — I act").',
+        },
+      ],
+    },
+    targets: {
+      intro: 'We activate systems responsible for deep presence and the decoding of bodily codes:',
+      items: [
+        {
+          name: 'Interoception (Insula)',
+          text: 'Activating the insular cortex—the hub of our bodily self-awareness that processes signals from internal organs.',
+        },
+        {
+          name: 'Somatosensory Cortex (S1/S2)',
+          text: 'Sharpening tactile perception and stimulus discrimination.',
+        },
+        {
+          name: 'Sensory Gateway (Thalamus)',
+          text: 'Lowering filtration thresholds to allow more detailed information about textures, sounds, and scents.',
+        },
+        {
+          name: 'Proprioceptive Integration',
+          text: 'Engaging the cerebellum and parietal cortex to create an ultra-precise "body map" in space.',
+        },
+        {
+          name: 'C-Tactile Fibers',
+          text: 'Activating the pathways of "emotional" touch that link the skin to the brain\'s well-being centers.',
+        },
+      ],
+    },
+    results: {
+      intro: 'Attaining "Bodily Transparency."',
+      items: [
+        'You begin to perceive the body not as noise, but as a high-precision data stream.',
+        'This is the state of a "pilot" who feels the slightest vibration of the aircraft\'s wing.',
+        'Progress biomarkers: Increased gray matter density in the insular cortex, reduced resting muscle tone, normalization of Galvanic Skin Response (GSR).',
+        'Transition from "Survival Mode" to total "Presence Mode" through sensory anchors.',
+      ],
+    },
+    outro:
+      'You are now ready for the next step: managing internal energy flows and deep state regulation.',
+    glossaryLinks: [
+      { label: 'Interoception', slug: 'interoception' },
+      { label: 'Insular Cortex', slug: 'insular-cortex' },
+      { label: 'Insula', slug: 'insula' },
+      { label: 'Thalamus', slug: 'thalamus' },
+      { label: 'Somatosensory Cortex', slug: 'somatosensory-cortex' },
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'Parasympathetic System', slug: 'parasympathetic-nervous-system' },
+      { label: 'Galvanic Skin Response', slug: 'galvanic-skin-response' },
+      { label: 'Body Schema', slug: 'body-schema' },
+      { label: 'C-Tactile Fibers', slug: 'c-tactile-fibers' },
+      { label: 'Proprioception', slug: 'proprioception' },
+      { label: 'Cerebellum', slug: 'cerebellum' },
+      { label: 'Posterior Parietal Cortex', slug: 'posterior-parietal-cortex' },
+    ],
+  },
 }
 
 export function PartPage() {

@@ -25,7 +25,7 @@ export function Layout() {
 
   return (
     <div className="min-h-screen bg-[#050a0f] text-white">
-      <nav className="fixed left-0 right-0 top-0 z-[100] bg-[#050a0f]/95 backdrop-blur-md pt-[max(env(safe-area-inset-top,0px),12px)]">
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#050a0f]/60 backdrop-blur-xl pt-[max(env(safe-area-inset-top,0px),12px)]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 md:px-6 md:py-4">
           {/* Logo with > button */}
           <div className="flex items-center gap-2">
@@ -121,7 +121,7 @@ export function Layout() {
         <Outlet />
       </main>
 
-      <footer className="border-t border-white/5 bg-[#050a0f]">
+      <footer className="border-t border-white/5 bg-[#050a0f]/60 pb-[env(safe-area-inset-bottom,0px)] backdrop-blur-xl">
         <div className="mx-auto max-w-7xl px-5 py-8 md:px-6 md:py-12">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div className="flex items-center gap-1 font-mono text-lg font-bold">

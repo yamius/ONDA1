@@ -18,6 +18,7 @@ const levelThemes: Record<number, { borderColor: string; accentColor: string }> 
   2: { borderColor: 'border-cyan-500/20', accentColor: 'text-cyan-400' },
   3: { borderColor: 'border-sky-500/20', accentColor: 'text-sky-400' },
   4: { borderColor: 'border-amber-500/20', accentColor: 'text-amber-400' },
+  5: { borderColor: 'border-rose-500/20', accentColor: 'text-rose-400' },
 }
 
 export interface LevelData {
@@ -465,6 +466,89 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'Cognitive Reappraisal', slug: 'cognitive-reappraisal' },
       { label: 'rTPJ', slug: 'right-temporoparietal-junction' },
       { label: 'Endorphins', slug: 'endorphins' },
+    ],
+  },
+  5: {
+    number: 5,
+    badge: '[ LEVEL 5: NEURO-SOMATIC MIND / SENSORY INTELLIGENCE ]',
+    name: 'NEURO-SOMATIC MIND / SENSORY INTELLIGENCE',
+    subtitle: 'Interoceptive Accuracy and Sensory Expansion — the body as a high-precision antenna.',
+    theme: levelThemes[5],
+    metaDescription:
+      'Level 5: Sensory Intelligence. Interoception, insula, C-tactile fibers. Transform the body into a high-precision antenna for internal and external data.',
+    intro:
+      'At this stage, we return to the "biological spacesuit"—not as passive passengers, but as expert pilots. We transition from simple self-observation to high-precision Sensory Intelligence. The objective is to transform the body from an object that needs maintenance into a perfect "antenna" capable of reading the subtlest data from both internal and external environments.',
+    architecture: {
+      title: 'System Architecture',
+      intro: 'Level 5 integrates sensory precision protocols:',
+      parts: [
+        {
+          number: '13',
+          label: 'I Sense',
+          slug: 'i-sense',
+          protocol: 'Protocol: Interoceptive Accuracy and Sensory Expansion',
+          goal: 'Objective: Transitioning from "Survival Mode" to total "Presence Mode" through sensory anchors.',
+          work:
+            'Work: Activating the insular cortex, somatosensory cortex, and thalamic filters. Engaging C-tactile fibers and proprioceptive integration to create an ultra-precise body map.',
+        },
+      ],
+    },
+    biologicalProtocol: {
+      title: 'Biological Protocol',
+      intro: 'The sensory expansion technological stack:',
+      items: [
+        {
+          name: 'Interoceptive Accuracy',
+          text: 'Practices to activate the insula, allowing you to hear pulsation, peristalsis, and micro-movements beneath the skin.',
+        },
+        {
+          name: 'Sensory Discrimination',
+          text: 'Exercises to sharpen exteroception through the conscious management of thalamic filters.',
+        },
+        {
+          name: 'DMN Suppression via Sensories',
+          text: 'Shifting attention to the "direct wire" of sensations to deactivate mental rumination.',
+        },
+        {
+          name: 'Embodiment Clarity',
+          text: 'Eliminating the delay between the body\'s signal and its realization.',
+        },
+      ],
+    },
+    targetSystems: {
+      title: 'Target Systems',
+      intro: 'The level engages the following neural structures:',
+      items: [
+        { name: 'Insular Cortex', text: 'The center for translating physiological signals into conscious sensations.' },
+        { name: 'Parasympathetic Nervous System', text: 'Creating a background of safety for maximum sensitivity.' },
+        { name: 'Right Hemisphere', text: 'Holistic, unified perception of the bodily experience.' },
+        { name: 'Somatosensory Cortex (S1/S2)', text: 'Sharpening tactile perception and stimulus discrimination.' },
+        { name: 'Thalamus', text: 'Sensory gateway—lowering filtration thresholds for detailed information.' },
+        { name: 'C-Tactile Fibers', text: 'Pathways of "emotional" touch linking skin to well-being centers.' },
+      ],
+    },
+    results: {
+      title: 'Results & Benefits',
+      intro: 'The outcome of completing Level 5 is attaining "Bodily Transparency." Your progress markers include:',
+      items: [
+        'Increased gray matter density in the insular cortex.',
+        'Reduced resting muscle tone.',
+        'Normalization of Galvanic Skin Response (GSR) for autonomic stability.',
+        'The body perceived not as noise, but as a high-precision data stream.',
+      ],
+    },
+    researchLinks: [
+      { label: 'Interoception & Insula', url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/' },
+      { label: 'C-tactile fibers & affective touch', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+    ],
+    glossaryLinks: [
+      { label: 'Interoception', slug: 'interoception' },
+      { label: 'Insular Cortex', slug: 'insular-cortex' },
+      { label: 'Thalamus', slug: 'thalamus' },
+      { label: 'Galvanic Skin Response', slug: 'galvanic-skin-response' },
+      { label: 'Body Schema', slug: 'body-schema' },
+      { label: 'C-Tactile Fibers', slug: 'c-tactile-fibers' },
+      { label: 'Proprioception', slug: 'proprioception' },
     ],
   },
 }

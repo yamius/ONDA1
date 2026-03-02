@@ -84,7 +84,7 @@ const levels: LevelData[] = [
     emoji: '🧘',
     name: 'BODY II / TERRA II',
     parts: [
-      { label: '13. I Sense' },
+      { label: '13. I Sense', slug: 'i-sense' },
       { label: '14. I Channel' },
       { label: '15. I Attune' },
     ],
@@ -165,7 +165,7 @@ export function LevelsSection() {
   )
 }
 
-const levelsWithPages = [1, 2, 3, 4] // Levels that have dedicated parent pages
+const levelsWithPages = [1, 2, 3, 4, 5] // Levels that have dedicated parent pages
 
 function LevelCard({ level }: { level: LevelData }) {
   const hasLevelPage = levelsWithPages.includes(level.number)
