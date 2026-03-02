@@ -46,7 +46,7 @@ export function AboutPage() {
   }, [])
 
   return (
-    <div className="mx-auto max-w-3xl px-4 pt-24 pb-16 md:px-6">
+    <div className="mx-auto max-w-3xl px-4 pb-16 md:px-6">
       <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
         [ ABOUT ]
       </div>

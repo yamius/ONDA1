@@ -293,7 +293,7 @@ export function MdArticlePage() {
 
   if (loading) {
     return (
-      <div className="mx-auto max-w-4xl px-4 pt-20 pb-16 md:px-6">
+      <div className="mx-auto max-w-4xl px-4 pb-16 md:px-6">
         <p className="animate-pulse font-mono text-sm text-terminal-green/60">[ LOADING... ]</p>
       </div>
     )
@@ -301,7 +301,7 @@ export function MdArticlePage() {
 
   if (notFound || !article) {
     return (
-      <div className="mx-auto max-w-4xl px-4 pt-20 pb-16 md:px-6">
+      <div className="mx-auto max-w-4xl px-4 pb-16 md:px-6">
         <p className="font-mono text-sm text-white/40">[ 404: ARTICLE NOT FOUND ]</p>
         <Link to="/articles" className="mt-4 inline-block font-mono text-xs text-terminal-green underline">
           ← Back to Articles
@@ -314,7 +314,7 @@ export function MdArticlePage() {
   const readTime = estimateReadTime(article.content)
 
   return (
-    <div className="mx-auto max-w-4xl px-4 pt-20 pb-16 md:px-6">
+    <div className="mx-auto max-w-4xl px-4 pb-16 md:px-6">
       {/* Breadcrumb */}
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
         <Link to="/" className="transition-colors hover:text-white/50">Home</Link>

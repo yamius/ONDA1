@@ -61,7 +61,7 @@ export function LevelPage() {
   }
 
   return (
-    <div className="mx-auto max-w-3xl px-4 pt-24 pb-16 md:px-6">
+    <div className="mx-auto max-w-3xl px-4 pb-16 md:px-6">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
         <Link to="/" className="transition-colors hover:text-white/50">
           Home

@@ -117,7 +117,7 @@ export function Layout() {
         />
       )}
 
-      <main style={{ opacity: visible ? 1 : 0 }}>
+      <main className="pt-20" style={{ opacity: visible ? 1 : 0 }}>
         <Outlet />
       </main>
 

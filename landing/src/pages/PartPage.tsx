@@ -1101,7 +1101,7 @@ export function PartPage() {
 
   if (!part) {
     return (
-      <div className="mx-auto max-w-3xl px-4 pt-24 pb-16 md:px-6">
+      <div className="mx-auto max-w-3xl px-4 pb-16 md:px-6">
         <p className="font-mono text-white/60">Part not found.</p>
         <Link to="/" className="mt-4 inline-block font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60">
           ← Back to Home
@@ -1114,7 +1114,7 @@ export function PartPage() {
   const level = levelNum ? levelsData[parseInt(levelNum, 10)] : undefined
 
   return (
-    <div className="mx-auto max-w-3xl px-4 pt-24 pb-16 md:px-6">
+    <div className="mx-auto max-w-3xl px-4 pb-16 md:px-6">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
         <Link to="/" className="transition-colors hover:text-white/50">
           Home

@@ -495,7 +495,7 @@ export function ArticlePage() {
   }
 
   return (
-    <div className="mx-auto max-w-4xl px-4 pt-20 pb-16 md:px-6">
+    <div className="mx-auto max-w-4xl px-4 pb-16 md:px-6">
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
         <Link to="/" className="transition-colors hover:text-white/50">
           Home
