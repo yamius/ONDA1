@@ -19,7 +19,14 @@ export function Layout() {
   }, [location.pathname])
 
   useEffect(() => {
-    if (menuOpen) {
+    if (!menuOpen) return
+    const handleScroll = () => setMenuOpen(false)
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [menuOpen])
+
+  useEffect(() => {
+    if (menuOpen && window.innerWidth >= 768) {
       const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth
       document.body.style.overflow = 'hidden'
       document.body.style.paddingRight = `${scrollbarWidth}px`
@@ -35,7 +42,7 @@ export function Layout() {
 
   return (
     <div className="min-h-screen bg-[#050a0f] text-white">
-      {/* Fixed burger — minimal fixed surface */}
+      {/* Fixed burger */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
         className="burger-anchor-center fixed z-[60] flex h-[34px] w-[34px] items-center justify-center rounded-lg border border-white/10 bg-[#1a1b26]/90 backdrop-blur-sm text-cyan-400 shadow-lg transition-colors hover:bg-[#1a1b26] hover:text-cyan-300 md:h-[30px] md:w-[30px]"
