@@ -131,13 +131,13 @@ body {
   }
 }
 
-/* Header content: same horizontal bounds as footer (left: burger+gap, right: matches footer px) */
+/* Header content: logo next to burger, with gap */
 .header-content-center {
-  padding-left: 61px; /* mobile: 20px + 34px burger + 7px gap */
+  padding-left: 64px; /* mobile: 20px + 34px burger + 10px gap */
 }
 @media (min-width: 768px) {
   .header-content-center {
-    /* container + 24px + 30px burger + 12px gap = align logo after burger, same left bound as footer */
-    padding-left: calc((100vw - min(1280px, 100vw)) / 2 + 4.125rem);
+    /* container + 24px + 30px burger + 0.375rem gap */
+    padding-left: calc((100vw - min(1280px, 100vw)) / 2 + 3.75rem);
   }
 }
