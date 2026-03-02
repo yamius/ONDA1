@@ -40,7 +40,6 @@ export function Layout() {
         onClick={() => setMenuOpen(!menuOpen)}
         className="burger-anchor-center fixed z-[60] flex h-[34px] w-[34px] items-center justify-center rounded-lg border border-white/10 bg-[#1a1b26]/90 backdrop-blur-sm text-cyan-400 shadow-lg transition-colors hover:bg-[#1a1b26] hover:text-cyan-300 md:h-[30px] md:w-[30px]"
         style={{
-          top: 'calc(max(env(safe-area-inset-top, 0px), 12px) + 10px)',
           transform: menuOpen ? 'rotate(90deg)' : 'none',
           transition: 'transform 0.2s',
         }}
