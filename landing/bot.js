@@ -180,7 +180,7 @@ Article Architecture:
 
 SCOPE (ONLY): behavioral models, devices (Oura/Whoop/Muse), time-of-day, light exercise, social co-regulation.
 FORBIDDEN: injections, drugs, supplements, pills, dosages in mg.
-Create ORIGINAL content. Max 3500 chars. English.`
+Create ORIGINAL content. Max 3500 chars. LANGUAGE: Write the entire article in RUSSIAN.`
 
 async function generateAndSend() {
   if (!CHAT_ID || !OPENAI_KEY) return
@@ -219,7 +219,7 @@ async function generateAndSend() {
       model: 'gpt-4o-mini',
       messages: [
         { role: 'system', content: SYSTEM_PROMPT },
-        { role: 'user', content: `Write an ONDA Life article. Topic (use as inspiration only): ${topic}` },
+        { role: 'user', content: `Напиши статью ONDA Life на русском. Тема (только как идея): ${topic}` },
       ],
       max_tokens: 1500,
     })
@@ -230,7 +230,7 @@ async function generateAndSend() {
     }
     if (text.length > 4000) text = text.slice(0, 3997) + '...'
 
-    await tg('sendMessage', { chat_id: CHAT_ID, text: '📝 *Draft* (use as base). Edit elsewhere, then paste back and send — I\'ll add Approve/Reject.', parse_mode: 'Markdown' })
+    await tg('sendMessage', { chat_id: CHAT_ID, text: '📝 *Черновик.* Вычитай, отредактируй, затем вставь сюда — добавлю Approve/Reject.', parse_mode: 'Markdown' })
     await tg('sendMessage', { chat_id: CHAT_ID, text })
   } catch (e) {
     await sendError(String(e.message || e))
@@ -284,7 +284,7 @@ async function handleUpdate(update) {
       return
     }
     if (text === '/article') {
-      await tg('sendMessage', { chat_id: chatId, text: "Paste your article below. I'll add Approve/Reject buttons.\n\nFlow: /generate → copy draft → edit elsewhere → paste here → Approve to save." })
+      await tg('sendMessage', { chat_id: chatId, text: "Вставь статью сюда. Добавлю Approve/Reject.\n\nFlow: /generate → черновик на русском → вычитай, отредактируй → вставь сюда → Approve." })
       return
     }
     if (text === '/generate') {
@@ -297,7 +297,7 @@ async function handleUpdate(update) {
         await tg('sendMessage', { chat_id: chatId, text: 'OPENAI_API_KEY not set.' })
         return
       }
-      await tg('sendMessage', { chat_id: chatId, text: 'Generating article...' })
+      await tg('sendMessage', { chat_id: chatId, text: 'Генерирую черновик...' })
       generateAndSend().catch(console.error)
       return
     }

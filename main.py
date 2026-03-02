@@ -51,8 +51,8 @@ def handle_article(message):
     """Prompt to paste article for save."""
     bot.reply_to(
         message,
-        "Paste your article below. I'll add Approve/Reject buttons.\n\n"
-        "Flow: /generate → copy draft → edit elsewhere → paste here → Approve to save.",
+        "Вставь статью сюда. Добавлю Approve/Reject.\n\n"
+        "Flow: /generate → черновик на русском → вычитай, отредактируй → вставь сюда → Approve.",
     )
 
 
@@ -69,7 +69,7 @@ def handle_generate(message):
     if not OPENAI_KEY:
         bot.reply_to(message, "OPENAI_API_KEY not set.")
         return
-    bot.reply_to(message, "Generating article...")
+    bot.reply_to(message, "Генерирую черновик...")
     def run():
         _generate_and_send()
     threading.Thread(target=run, daemon=True).start()
@@ -368,9 +368,9 @@ LOGIC: Hard-reset of the Suprachiasmatic Nucleus. Initiates countdown for Melato
 
 SCOPE (ONLY): behavioral models, devices (Oura/Whoop/Muse), time-of-day, light exercise, social co-regulation.
 FORBIDDEN: injections, drugs, supplements, pills, dosages in mg.
-Create ORIGINAL content. Max 3500 chars. English."""
+Create ORIGINAL content. Max 3500 chars. LANGUAGE: Write the entire article in RUSSIAN."""
 
-        prompt = f"""Write an ONDA Life article. Topic (use as inspiration only): {topic}"""
+        prompt = f"""Напиши статью ONDA Life на русском. Тема (только как идея): {topic}"""
         r = client.chat.completions.create(
             model='gpt-4o-mini',
             messages=[
@@ -386,8 +386,7 @@ Create ORIGINAL content. Max 3500 chars. English."""
         if len(text) > 4000:
             text = text[:3997] + '...'
         draft_msg = (
-            "📝 *Draft* (use as base). Edit elsewhere, then paste back and send — "
-            "I'll add Approve/Reject to save to articles."
+            "📝 *Черновик.* Вычитай, отредактируй, затем вставь сюда — добавлю Approve/Reject для сохранения."
         )
         bot.send_message(CHAT_ID, draft_msg, parse_mode='Markdown')
         bot.send_message(CHAT_ID, text)
