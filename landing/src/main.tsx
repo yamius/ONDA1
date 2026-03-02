@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useParams } from 'react-router-dom'
 import './index.css'
 import { Layout } from './components/Layout'
 import { GlossaryTermPage } from './pages/GlossaryTermPage'
@@ -10,6 +10,14 @@ import { PartPage } from './pages/PartPage'
 import { LevelPage } from './pages/LevelPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { staticRoutes } from './config/routes'
+import { getArticleBySlug } from './data/articles'
+
+function ArticlesSlugRouter() {
+  const { slug } = useParams<{ slug: string }>()
+  const staticArticle = slug ? getArticleBySlug(slug) : undefined
+  if (staticArticle) return <ArticlePage />
+  return <MdArticlePage />
+}
 
 const app = (
   <StrictMode>
@@ -20,8 +28,7 @@ const app = (
             <Route key={r.path} path={r.path} element={<r.component />} />
           ))}
           <Route path="/glossary/:slug" element={<GlossaryTermPage />} />
-          <Route path="/articles/:slug" element={<ArticlePage />} />
-          <Route path="/articles/telegram/:slug" element={<MdArticlePage />} />
+          <Route path="/articles/:slug" element={<ArticlesSlugRouter />} />
           <Route path="/part/:slug" element={<PartPage />} />
           <Route path="/level/:number" element={<LevelPage />} />
           <Route path="*" element={<NotFoundPage />} />

@@ -60,16 +60,13 @@ app.get('/sitemap.xml', (req, res) => {
     } catch (_) { /* ignore */ }
   }
 
-  // 2. Add Telegram articles from articles/
-  if (existsSync(articlesDir)) {
-    const files = readdirSync(articlesDir).filter((f) => f.endsWith('.md'))
-    for (const f of files) {
-      const slug = f.replace('.md', '')
-      routes.push({
-        path: `/articles/telegram/${slug}`,
-        filePath: join(articlesDir, f),
-      })
-    }
+  // 2. Add md (Telegram) articles — same path as static articles
+  const mdArticles = loadMdArticles()
+  for (const a of mdArticles) {
+    routes.push({
+      path: `/articles/${a.slug}`,
+      filePath: join(articlesDir, a.filename),
+    })
   }
 
   const buildDate = new Date().toISOString().split('T')[0]
@@ -124,12 +121,23 @@ app.get('/api/articles-list', (req, res) => {
   res.json(list)
 })
 
-// API: list markdown articles (dedup by content hash — keeps newest)
-app.get('/api/md-articles', (req, res) => {
-  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate')
-  if (!existsSync(articlesDir)) return res.json([])
+function titleToSlug(title) {
+  if (!title || typeof title !== 'string') return ''
+  return title
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^\p{L}\p{N}\s-]/gu, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .slice(0, 80)
+}
+
+function loadMdArticles() {
+  if (!existsSync(articlesDir)) return []
   const files = readdirSync(articlesDir).filter(f => f.endsWith('.md'))
   const seen = new Map()
+  const usedSlugs = new Set()
   const result = []
   for (const filename of files.sort().reverse()) {
     const content = readFileSync(join(articlesDir, filename), 'utf-8').trim()
@@ -137,10 +145,36 @@ app.get('/api/md-articles', (req, res) => {
     if (seen.has(hash)) continue
     seen.set(hash, true)
     const firstLine = content.split('\n')[0].replace(/[\[\]#*]/g, '').trim()
-    const slug = filename.replace('.md', '')
-    result.push({ slug, filename, title: firstLine || filename, content })
+    const title = firstLine || filename
+    const baseSlug = titleToSlug(title) || filename.replace('.md', '')
+    let slug = baseSlug
+    let n = 1
+    while (usedSlugs.has(slug)) {
+      slug = `${baseSlug}-${++n}`
+    }
+    usedSlugs.add(slug)
+    result.push({ slug, filename, title, content })
   }
-  res.json(result)
+  return result
+}
+
+// API: list markdown articles (dedup by content hash — keeps newest). slug = human-readable from title.
+app.get('/api/md-articles', (req, res) => {
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate')
+  res.json(loadMdArticles())
+})
+
+// API: get single md article by slug (or by legacy filename)
+app.get('/api/md-article/:slugOrFilename', (req, res) => {
+  const slugOrFilename = req.params.slugOrFilename
+  if (!slugOrFilename) return res.status(400).json({ error: 'Missing slug' })
+  const list = loadMdArticles()
+  const legacySlug = slugOrFilename.replace(/\.md$/, '')
+  const found = list.find(
+    (a) => a.slug === slugOrFilename || a.slug === legacySlug || a.filename.replace('.md', '') === legacySlug
+  )
+  if (!found) return res.status(404).json({ error: 'Not found' })
+  res.json(found)
 })
 
 // API: update article (push local edits to deployment)
@@ -188,6 +222,19 @@ app.use(
   }),
 )
 
+// Redirect legacy /articles/telegram/:slug to /articles/:slug
+app.get('/articles/telegram/:slug', (req, res, next) => {
+  const list = loadMdArticles()
+  const legacySlug = req.params.slug.replace(/\.md$/, '')
+  const found = list.find(
+    (a) => a.slug === req.params.slug || a.filename.replace('.md', '') === legacySlug
+  )
+  if (found) {
+    return res.redirect(301, `/articles/${found.slug}`)
+  }
+  next()
+})
+
 // 2. SSG routing — serve prerendered index.html for each path (GET only)
 app.use((req, res, next) => {
   if (req.method !== 'GET' && req.method !== 'HEAD') return next()
@@ -203,12 +250,9 @@ app.use((req, res, next) => {
     const indexHtml = join(distDir, 'index.html')
     if (existsSync(indexHtml)) {
       res.setHeader('Cache-Control', 'no-cache')
-      // Telegram articles are dynamic — serve SPA with 200 so React can handle routing
-      const isTelegramArticle = /^articles\/telegram\/[^/]+$/.test(cleanPath)
-      // Invalid glossary or static article slug: no prerendered file → return 404
+      // Invalid glossary slug: no prerendered file → return 404. Articles can be static or md — SPA resolves.
       const isInvalidGlossarySlug = /^glossary\/[^/]+$/.test(cleanPath)
-      const isInvalidArticleSlug = /^articles\/[^/]+$/.test(cleanPath) && !isTelegramArticle
-      if (isInvalidGlossarySlug || isInvalidArticleSlug) {
+      if (isInvalidGlossarySlug) {
         res.status(404).sendFile(indexHtml)
       } else {
         res.sendFile(indexHtml)

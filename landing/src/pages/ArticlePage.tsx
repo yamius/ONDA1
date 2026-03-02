@@ -559,7 +559,7 @@ export function ArticlePage() {
       </div>
 
       {/* CTA: Download ONDA Life */}
-      <div className="mt-16 rounded-xl border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-terminal-green/5 p-8 text-center">
+      <div className="mt-16 p-8 text-center">
         <p className="mb-6 font-mono text-base font-semibold text-white/90 md:text-lg">
           {article.slug === 'dopamine-architecture-mastering-desire'
             ? 'System Calibration Ready. Download ONDA Life to optimize your Dopamine baseline and track motivation windows.'

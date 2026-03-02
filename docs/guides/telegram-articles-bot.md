@@ -57,6 +57,8 @@ ONDA фокусируется на: **поведенческие модели, �
 4. Бот ответит «Save as article?» с Approve/Reject.
 5. Approve → бот сохраняет локально и POST на сайт (`DEPLOY_URL/api/save-article`) → статья сразу на сайте.
 
+**URL статей:** Telegram-статьи теперь по тому же пути, что и обычные: `/articles/cacao-and-stem-cells` (slug из заголовка). Старый формат `/articles/telegram/article_xxx` автоматически редиректит.
+
 **Редактирование:** правь в `articles/` → `node scripts/push_articles.js`.
 
 **Где папка на Replit:** `articles/` в корне проекта (рядом с `landing/`). Если не видно — открой `https://твой-сайт.com/api/articles-path` — там путь. На Deploy файлы могут быть в контейнере, не в Files.

@@ -262,10 +262,9 @@ export function MdArticlePage() {
     if (!slug) return
     const key = FINALIZE_PREFIX + slug
     setFinalized(localStorage.getItem(key) === 'true')
-    fetch('/api/md-articles')
-      .then(r => r.json())
-      .then((list: MdArticle[]) => {
-        const found = list.find(a => a.slug === slug)
+    fetch(`/api/md-article/${encodeURIComponent(slug)}`)
+      .then(r => (r.ok ? r.json() : null))
+      .then((found: MdArticle | null) => {
         if (found) setArticle(found)
         else setNotFound(true)
         setLoading(false)
@@ -278,7 +277,7 @@ export function MdArticlePage() {
     const title = `${article.title} | ONDA Life`
     document.title = title
     setMeta('og:title', title, true)
-    setMeta('og:url', `${SITE_URL}/articles/telegram/${article.slug}`, true)
+    setMeta('og:url', `${SITE_URL}/articles/${article.slug}`, true)
     return () => {
       document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
     }
@@ -367,7 +366,7 @@ export function MdArticlePage() {
       <div className="my-8 border-t border-white/5" />
 
       {/* Footer CTA */}
-      <div className="rounded-xl border border-cyan-500/30 bg-gradient-to-br from-cyan-500/10 to-terminal-green/5 p-8 text-center">
+      <div className="p-8 text-center">
         <p className="mb-6 font-mono text-base font-semibold text-white/90">
           System Calibration Ready. Download ONDA Life to track your nervous system in real-time.
         </p>
