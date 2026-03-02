@@ -19,43 +19,51 @@ export function Layout() {
   }, [location.pathname])
 
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? 'hidden' : ''
-    return () => { document.body.style.overflow = '' }
+    if (menuOpen) {
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth
+      document.body.style.overflow = 'hidden'
+      document.body.style.paddingRight = `${scrollbarWidth}px`
+    } else {
+      document.body.style.overflow = ''
+      document.body.style.paddingRight = ''
+    }
+    return () => {
+      document.body.style.overflow = ''
+      document.body.style.paddingRight = ''
+    }
   }, [menuOpen])
 
   return (
     <div className="min-h-screen bg-[#050a0f] text-white">
-      <nav className="sticky top-0 z-50 border-b border-white/5 bg-[#1a1b26]/70 backdrop-blur-xl pt-[max(env(safe-area-inset-top,0px),12px)]">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 md:px-6 md:py-4">
-          {/* Logo with > button */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="flex h-8 w-8 items-center justify-center rounded-lg border border-cyan-500/30 font-mono text-sm text-cyan-400 transition-all hover:border-cyan-500 hover:text-cyan-300"
-              style={{ transform: menuOpen ? 'rotate(90deg)' : 'none', transition: 'transform 0.2s' }}
-              aria-label="Menu"
-            >
-              {'>'}
-            </button>
-            <Link to="/" className="font-mono text-lg font-bold" onClick={() => setMenuOpen(false)}>
-              <span className="text-cyan-400">ONDA</span>
-              <span className="text-green-400"> LIFE</span>
-            </Link>
-          </div>
+      {/* Fixed burger — minimal fixed surface */}
+      <button
+        onClick={() => setMenuOpen(!menuOpen)}
+        className="fixed z-[60] flex h-[34px] w-[34px] items-center justify-center rounded-lg border border-white/10 bg-[#1a1b26]/90 backdrop-blur-sm text-cyan-400 shadow-lg transition-colors hover:bg-[#1a1b26] hover:text-cyan-300 md:h-[30px] md:w-[30px]"
+        style={{
+          top: 'calc(max(env(safe-area-inset-top, 0px), 12px) + 10px)',
+          left: '12px',
+          transform: menuOpen ? 'rotate(90deg)' : 'none',
+          transition: 'transform 0.2s',
+        }}
+        aria-label="Menu"
+      >
+        {'>'}
+      </button>
 
-          {/* Download App — always visible */}
-          <a
-            href="#download"
-            className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-4 py-2 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 mr-6 md:mr-8 md:px-5 md:text-sm"
-          >
-            Download App
-          </a>
-        </div>
-
-        {/* Dropdown menu — same on all screens */}
-        {menuOpen && (
-          <div className="border-t border-white/5 bg-[#1a1b26]">
-            <div className="mx-auto max-w-7xl px-5 py-2 md:px-6">
+      {/* Menu overlay */}
+      {menuOpen && (
+        <>
+          <div className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm" onClick={() => setMenuOpen(false)} aria-hidden />
+          <div className="fixed inset-0 z-50 flex items-start justify-center pt-20">
+            <nav className="mx-4 w-full max-w-sm rounded-lg border border-white/10 bg-[#1a1b26] p-4">
+              <Link
+                to="/"
+                onClick={() => setMenuOpen(false)}
+                className="mb-4 flex items-center gap-2 font-mono text-lg font-bold"
+              >
+                <span className="text-cyan-400">ONDA</span>
+                <span className="text-green-400"> LIFE</span>
+              </Link>
               <Link
                 to="/about"
                 onClick={() => setMenuOpen(false)}
@@ -83,9 +91,7 @@ export function Layout() {
               >
                 Articles
               </Link>
-              <button
-                className="block w-full border-b border-white/5 py-3 text-left text-sm font-medium text-white/70 transition-colors hover:text-white"
-              >
+              <button className="block w-full border-b border-white/5 py-3 text-left text-sm font-medium text-white/70 transition-colors hover:text-white">
                 Language
               </button>
               <a
@@ -104,30 +110,41 @@ export function Layout() {
               >
                 Contacts
               </Link>
-            </div>
+            </nav>
           </div>
-        )}
-      </nav>
-
-      {/* Click outside to close menu */}
-      {menuOpen && (
-        <div
-          className="fixed inset-0 z-40"
-          onClick={() => setMenuOpen(false)}
-        />
+        </>
       )}
 
       <main style={{ opacity: visible ? 1 : 0 }}>
+        {/* Scrolling header — logo + download */}
+        <header className="border-b border-white/5 bg-[#1a1b26]/70 backdrop-blur-xl pt-[max(env(safe-area-inset-top,0px),12px)]">
+          <div className="mx-auto flex max-w-7xl items-center justify-between pl-[61px] pr-5 py-3 md:px-6 md:py-4 md:pl-[26px]">
+            <Link to="/" className="font-mono text-lg font-bold" onClick={() => setMenuOpen(false)}>
+              <span className="text-cyan-400">ONDA</span>
+              <span className="text-green-400"> LIFE</span>
+            </Link>
+            <a
+              href="#download"
+              className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-4 py-2 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:px-5 md:text-sm"
+            >
+              Download App
+            </a>
+          </div>
+        </header>
         <Outlet />
       </main>
 
       <footer className="border-t border-white/5 bg-[#1a1b26]/70 pb-[env(safe-area-inset-bottom,0px)] backdrop-blur-xl">
         <div className="mx-auto max-w-7xl px-5 py-8 md:px-6 md:py-12">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-            <div className="flex items-center gap-1 font-mono text-lg font-bold">
+            <Link
+              to="/"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="flex items-center gap-1 font-mono text-lg font-bold transition-colors hover:text-cyan-400/90"
+            >
               <span className="text-cyan-400">{'> ONDA'}</span>
               <span className="text-green-400"> LIFE</span>
-            </div>
+            </Link>
             <div className="flex flex-wrap justify-center gap-6">
               <Link to="/about" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 About
