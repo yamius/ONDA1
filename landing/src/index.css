@@ -139,7 +139,7 @@ body {
 }
 @media (min-width: 768px) {
   .header-content-center {
-    /* container + burger + 2px gap — flush */
-    padding-left: calc((100vw - min(1280px, 100vw)) / 2 + 9.5rem);
+    /* container + burger + 2px gap - 300px left */
+    padding-left: calc((100vw - min(1280px, 100vw)) / 2 + 9.5rem - 300px);
   }
 }
