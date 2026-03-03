@@ -6,7 +6,7 @@ import { PROTOCOL_STORAGE_PREFIX } from '../data/protocol-ids'
  * Use in ArticlePage and MdArticlePage for protocols registered in protocol-ids.
  */
 export function ProtocolToggle({ protocolId, onToggle }: { protocolId: string; onToggle?: () => void }) {
-  const [refresh, setRefresh] = useState(0)
+  const [, setRefresh] = useState(0)
   const isActive =
     typeof window !== 'undefined' &&
     localStorage.getItem(PROTOCOL_STORAGE_PREFIX + protocolId) === 'active'

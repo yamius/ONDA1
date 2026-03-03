@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
+import { supabase, getFingerprint } from '../lib/supabase'
 
 const STORAGE_VALIDATE = 'onda_article_validate_'
 const STORAGE_INVALIDATE = 'onda_article_invalidate_'
@@ -9,8 +10,32 @@ export function ArticleValidationArrows({ articleSlug }: { articleSlug: string }
   const [validateCount, setValidateCount] = useState(0)
   const [invalidateCount, setInvalidateCount] = useState(0)
   const [vote, setVote] = useState<'validate' | 'invalidate' | null>(null)
+  const [loading, setLoading] = useState(false)
 
-  const loadCounts = useCallback(() => {
+  const loadFromSupabase = useCallback(async () => {
+    if (!supabase || !articleSlug) return
+    const { data, error } = await supabase
+      .from('article_votes')
+      .select('vote_type')
+      .eq('article_slug', articleSlug)
+    if (error) return
+    const validate = data?.filter((r) => r.vote_type === 'validate').length ?? 0
+    const invalidate = data?.filter((r) => r.vote_type === 'invalidate').length ?? 0
+    setValidateCount(validate)
+    setInvalidateCount(invalidate)
+    const fp = getFingerprint()
+    const { data: myData } = await supabase
+      .from('article_votes')
+      .select('vote_type')
+      .eq('article_slug', articleSlug)
+      .eq('fingerprint', fp)
+      .maybeSingle()
+    if (myData?.vote_type === 'validate' || myData?.vote_type === 'invalidate') {
+      setVote(myData.vote_type)
+    }
+  }, [articleSlug])
+
+  const loadFromStorage = useCallback(() => {
     if (!articleSlug) return
     try {
       const v = parseInt(localStorage.getItem(STORAGE_VALIDATE + articleSlug) || '0', 10)
@@ -23,31 +48,63 @@ export function ArticleValidationArrows({ articleSlug }: { articleSlug: string }
   }, [articleSlug])
 
   useEffect(() => {
-    loadCounts()
-  }, [loadCounts])
+    if (supabase) {
+      loadFromSupabase()
+    } else {
+      loadFromStorage()
+    }
+  }, [loadFromSupabase, loadFromStorage])
 
-  function handleValidate() {
+  async function handleValidate() {
     if (!articleSlug || vote === 'validate') return
-    const newValidate = validateCount + 1
-    const newInvalidate = vote === 'invalidate' ? Math.max(0, invalidateCount - 1) : invalidateCount
-    setValidateCount(newValidate)
-    setInvalidateCount(newInvalidate)
-    setVote('validate')
-    localStorage.setItem(STORAGE_VALIDATE + articleSlug, String(newValidate))
-    localStorage.setItem(STORAGE_INVALIDATE + articleSlug, String(newInvalidate))
-    localStorage.setItem(STORAGE_VOTE + articleSlug, 'validate')
+    setLoading(true)
+    const fp = getFingerprint()
+    if (supabase) {
+      const { error } = await supabase.from('article_votes').upsert(
+        { article_slug: articleSlug, vote_type: 'validate', fingerprint: fp },
+        { onConflict: 'article_slug,fingerprint' }
+      )
+      if (!error) {
+        setVote('validate')
+        await loadFromSupabase()
+      }
+    } else {
+      const newValidate = validateCount + 1
+      const newInvalidate = vote === 'invalidate' ? Math.max(0, invalidateCount - 1) : invalidateCount
+      setValidateCount(newValidate)
+      setInvalidateCount(newInvalidate)
+      setVote('validate')
+      localStorage.setItem(STORAGE_VALIDATE + articleSlug, String(newValidate))
+      localStorage.setItem(STORAGE_INVALIDATE + articleSlug, String(newInvalidate))
+      localStorage.setItem(STORAGE_VOTE + articleSlug, 'validate')
+    }
+    setLoading(false)
   }
 
-  function handleInvalidate() {
+  async function handleInvalidate() {
     if (!articleSlug || vote === 'invalidate') return
-    const newInvalidate = invalidateCount + 1
-    const newValidate = vote === 'validate' ? Math.max(0, validateCount - 1) : validateCount
-    setInvalidateCount(newInvalidate)
-    setValidateCount(newValidate)
-    setVote('invalidate')
-    localStorage.setItem(STORAGE_INVALIDATE + articleSlug, String(newInvalidate))
-    localStorage.setItem(STORAGE_VALIDATE + articleSlug, String(newValidate))
-    localStorage.setItem(STORAGE_VOTE + articleSlug, 'invalidate')
+    setLoading(true)
+    const fp = getFingerprint()
+    if (supabase) {
+      const { error } = await supabase.from('article_votes').upsert(
+        { article_slug: articleSlug, vote_type: 'invalidate', fingerprint: fp },
+        { onConflict: 'article_slug,fingerprint' }
+      )
+      if (!error) {
+        setVote('invalidate')
+        await loadFromSupabase()
+      }
+    } else {
+      const newInvalidate = invalidateCount + 1
+      const newValidate = vote === 'validate' ? Math.max(0, validateCount - 1) : validateCount
+      setInvalidateCount(newInvalidate)
+      setValidateCount(newValidate)
+      setVote('invalidate')
+      localStorage.setItem(STORAGE_INVALIDATE + articleSlug, String(newInvalidate))
+      localStorage.setItem(STORAGE_VALIDATE + articleSlug, String(newValidate))
+      localStorage.setItem(STORAGE_VOTE + articleSlug, 'invalidate')
+    }
+    setLoading(false)
   }
 
   if (!articleSlug) return null
@@ -57,6 +114,7 @@ export function ArticleValidationArrows({ articleSlug }: { articleSlug: string }
       <button
         type="button"
         onClick={handleValidate}
+        disabled={loading}
         title="Validate"
         className={`terminal-button flex items-center justify-center gap-1.5 rounded-none border px-2 py-1 font-mono text-xs leading-none transition-all ${
           vote === 'validate'
@@ -70,6 +128,7 @@ export function ArticleValidationArrows({ articleSlug }: { articleSlug: string }
       <button
         type="button"
         onClick={handleInvalidate}
+        disabled={loading}
         title="Invalidate"
         className={`terminal-button flex items-center justify-center gap-1.5 rounded-none border px-2 py-1 font-mono text-xs leading-none transition-all ${
           vote === 'invalidate'
@@ -86,6 +145,7 @@ export function ArticleValidationArrows({ articleSlug }: { articleSlug: string }
 
 interface Comment {
   id: string
+  displayId: string
   timestamp: string
   text: string
 }
@@ -102,39 +162,86 @@ function shortId(): string {
 export function ArticleReactions({ articleSlug }: { articleSlug: string }) {
   const [comments, setComments] = useState<Comment[]>([])
   const [inputValue, setInputValue] = useState('')
+  const [submitting, setSubmitting] = useState(false)
 
-  const loadComments = useCallback(() => {
+  const loadFromSupabase = useCallback(async () => {
+    if (!supabase || !articleSlug) return
+    const { data, error } = await supabase
+      .from('article_comments')
+      .select('id, text, created_at')
+      .eq('article_slug', articleSlug)
+      .order('created_at', { ascending: false })
+    if (error) return
+    const list: Comment[] = (data ?? []).map((r) => ({
+      id: r.id,
+      displayId: r.id.slice(0, 8),
+      timestamp: r.created_at ? new Date(r.created_at).toISOString().replace('T', ' ').slice(0, 19) : '',
+      text: r.text ?? '',
+    }))
+    setComments(list)
+  }, [articleSlug])
+
+  const loadFromStorage = useCallback(() => {
     if (!articleSlug) return
     try {
       const raw = localStorage.getItem(STORAGE_COMMENTS + articleSlug)
-      if (raw) setComments(JSON.parse(raw))
+      if (raw) {
+        const parsed: { id?: string; timestamp?: string; text?: string }[] = JSON.parse(raw)
+        setComments(parsed.map((c) => ({
+          id: c.id ?? shortId(),
+          displayId: c.id ?? shortId(),
+          timestamp: c.timestamp ?? '',
+          text: c.text ?? '',
+        })))
+      }
     } catch (_) {}
   }, [articleSlug])
 
   useEffect(() => {
-    loadComments()
-  }, [loadComments])
+    if (supabase) {
+      loadFromSupabase()
+    } else {
+      loadFromStorage()
+    }
+  }, [loadFromSupabase, loadFromStorage])
 
-  function handleSubmitComment(e: React.FormEvent) {
+  async function handleSubmitComment(e: React.FormEvent) {
     e.preventDefault()
     if (!articleSlug || !inputValue.trim()) return
-    const id = shortId()
-    const comment: Comment = {
-      id,
-      timestamp: formatTimestamp(),
-      text: inputValue.trim(),
-    }
-    const next = [comment, ...comments]
-    setComments(next)
+    const text = inputValue.trim()
     setInputValue('')
-    localStorage.setItem(STORAGE_COMMENTS + articleSlug, JSON.stringify(next))
+    setSubmitting(true)
+
+    if (supabase) {
+      const fp = getFingerprint()
+      const { data, error } = await supabase
+        .from('article_comments')
+        .insert({ article_slug: articleSlug, text, fingerprint: fp })
+        .select('id, created_at')
+        .single()
+      if (!error && data) {
+        const comment: Comment = {
+          id: data.id,
+          displayId: data.id.slice(0, 8),
+          timestamp: data.created_at ? new Date(data.created_at).toISOString().replace('T', ' ').slice(0, 19) : formatTimestamp(),
+          text,
+        }
+        setComments((prev) => [comment, ...prev])
+      }
+    } else {
+      const id = shortId()
+      const comment: Comment = { id, displayId: id, timestamp: formatTimestamp(), text }
+      const next = [comment, ...comments]
+      setComments(next)
+      localStorage.setItem(STORAGE_COMMENTS + articleSlug, JSON.stringify(next))
+    }
+    setSubmitting(false)
   }
 
   if (!articleSlug) return null
 
   return (
     <div className="font-terminal mx-auto my-12 max-w-2xl">
-      {/* User System Logs */}
       <div className="border-t border-white/10 pt-10">
         <h2 className="mb-6 font-mono text-sm font-bold uppercase tracking-widest text-terminal-green/90">
           [ USER_SYSTEM_LOGS ]
@@ -156,7 +263,8 @@ export function ArticleReactions({ articleSlug }: { articleSlug: string }) {
           </div>
           <button
             type="submit"
-            className="terminal-button mt-3 rounded-none border border-terminal-cyan/30 px-3 py-1 font-mono text-[10px] uppercase text-terminal-cyan/80 transition-colors hover:border-terminal-green/50 hover:text-terminal-green"
+            disabled={submitting}
+            className="terminal-button mt-3 rounded-none border border-terminal-cyan/30 px-3 py-1 font-mono text-[10px] uppercase text-terminal-cyan/80 transition-colors hover:border-terminal-green/50 hover:text-terminal-green disabled:opacity-50"
           >
             EXECUTE
           </button>
@@ -173,7 +281,7 @@ export function ArticleReactions({ articleSlug }: { articleSlug: string }) {
               key={c.id}
               className="font-mono text-[10px] leading-relaxed text-white/60"
             >
-              <span className="text-terminal-cyan/70">[USER_0x{c.id}]</span>{' '}
+              <span className="text-terminal-cyan/70">[USER_0x{c.displayId}]</span>{' '}
               <span className="text-terminal-amber/60">[{c.timestamp}]</span>:{' '}
               &quot;{c.text}&quot;
             </div>
