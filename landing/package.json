@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "express": "^5.2.1",
+    "gray-matter": "^4.0.3",
     "jsdom": "^28.1.0",
     "openai": "^6.25.0",
     "react": "^19.2.0",

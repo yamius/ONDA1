@@ -7,6 +7,8 @@ import { join, resolve } from 'path'
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, unlinkSync, writeFileSync } from 'fs'
 import { fileURLToPath } from 'url'
 import { execSync } from 'child_process'
+import matter from 'gray-matter'
+import { extractProtocolsFromContent } from './protocol-name-mapping.js'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const distDir = join(__dirname, 'dist')
@@ -23,20 +25,34 @@ app.get('/api/articles-path', (req, res) => {
 })
 
 // API: save article from Telegram bot (writes to same articlesDir as md-articles)
+// Auto-adds YAML frontmatter with protocolIds when PROTOCOL_XX blocks are detected
 app.post('/api/save-article', (req, res) => {
   const content = req.body?.content
   if (typeof content !== 'string' || !content.trim()) {
     return res.status(400).json({ error: 'Missing content' })
   }
   try {
+    let body = content.trim()
+    let parsed = matter(body)
+    const firstLine = body.split('\n')[0]?.replace(/[\[\]#*]/g, '').trim() || ''
+    const slug = titleToSlug(firstLine) || `article-${Date.now().toString(36)}`
+    const protocolIds = extractProtocolsFromContent(parsed.content || body, slug)
+    let finalContent = body
+    if (protocolIds.length > 0) {
+      const frontmatter = matter.stringify(parsed.content || body, {
+        ...parsed.data,
+        protocolIds,
+      })
+      finalContent = frontmatter
+    }
     const filename =
       req.body?.filename && /^article_[a-zA-Z0-9_]+\.md$/.test(req.body.filename)
         ? req.body.filename
         : `article_${Date.now().toString(36)}${Math.random().toString(36).slice(2, 6)}.md`
     const filepath = join(articlesDir, filename)
     mkdirSync(articlesDir, { recursive: true })
-    writeFileSync(filepath, content.trim(), 'utf-8')
-    res.json({ ok: true, filename })
+    writeFileSync(filepath, finalContent, 'utf-8')
+    res.json({ ok: true, filename, protocolIds: protocolIds.length > 0 ? protocolIds : undefined })
   } catch (err) {
     console.error('[save-article]', err)
     res.status(500).json({ error: String(err.message) })
@@ -140,11 +156,13 @@ function loadMdArticles() {
   const usedSlugs = new Set()
   const result = []
   for (const filename of files.sort().reverse()) {
-    const content = readFileSync(join(articlesDir, filename), 'utf-8').trim()
+    const raw = readFileSync(join(articlesDir, filename), 'utf-8').trim()
+    const parsed = matter(raw)
+    const content = parsed.content || raw
     const hash = content.replace(/\s+/g, ' ').slice(0, 500)
     if (seen.has(hash)) continue
     seen.set(hash, true)
-    const firstLine = content.split('\n')[0].replace(/[\[\]#*]/g, '').trim()
+    const firstLine = content.split('\n')[0]?.replace(/[\[\]#*]/g, '').trim() || ''
     const title = firstLine || filename
     const baseSlug = titleToSlug(title) || filename.replace('.md', '')
     let slug = baseSlug
@@ -153,7 +171,8 @@ function loadMdArticles() {
       slug = `${baseSlug}-${++n}`
     }
     usedSlugs.add(slug)
-    result.push({ slug, filename, title, content })
+    const protocolIds = parsed.data?.protocolIds
+    result.push({ slug, filename, title, content, protocolIds: Array.isArray(protocolIds) ? protocolIds : undefined })
   }
   return result
 }

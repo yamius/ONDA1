@@ -72,6 +72,14 @@ const STACK_COMPONENTS: Component[] = [
     ],
   },
   {
+    name: 'REGENERATION_MATRIX',
+    protocols: [
+      { id: 'cellular-ignition', name: 'CELLULAR_IGNITION', params: '(DECAF_CACAO)' },
+      { id: 'micro-circulation-loop', name: 'MICRO_CIRCULATION_LOOP', params: '(ZONE_1)' },
+      { id: 'recovery-firewall', name: 'RECOVERY_FIREWALL', params: '(RED_LIGHT_660nm)' },
+    ],
+  },
+  {
     name: 'POWER_GRID',
     protocols: [
       { id: 'thermal-shock', name: 'THERMAL_SHOCK', params: '(SAUNA_80C)' },

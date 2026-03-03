@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import Markdown from 'react-markdown'
 import { ArticleReactions, ArticleValidationArrows } from '../components/ArticleReactions'
+import { ProtocolToggle } from '../components/ProtocolToggle'
+import { ARTICLE_PROTOCOL_ORDER } from '../data/protocol-ids'
 
 const SITE_URL = 'https://onda-life.com'
 const DONE_PREFIX = 'md_done_'
@@ -11,6 +13,7 @@ interface MdArticle {
   slug: string
   title: string
   content: string
+  protocolIds?: string[]
 }
 
 function setMeta(name: string, content: string, isProperty = false) {
@@ -163,7 +166,13 @@ function DoneButton({ id }: { id: string }) {
   )
 }
 
-function renderBlock(block: Block, idx: number) {
+function renderBlock(
+    block: Block,
+    idx: number,
+    articleSlug: string,
+    allBlocks: Block[],
+    articleProtocolIds?: string[]
+  ) {
   switch (block.type) {
     case 'header':
       return (
@@ -188,6 +197,9 @@ function renderBlock(block: Block, idx: number) {
 
     case 'protocol': {
       const [first, ...rest] = block.lines
+      const protocolIndex = allBlocks.slice(0, idx).filter((b) => b.type === 'protocol').length
+      const protocolIds = articleProtocolIds ?? ARTICLE_PROTOCOL_ORDER[articleSlug]
+      const protocolId = protocolIds?.[protocolIndex]
       return (
         <div key={idx} className="my-6 border-l-2 border-cyan-500/50 bg-cyan-500/5 py-4 pl-6 pr-4">
           <p className="mb-3 font-mono text-sm font-semibold tracking-wide text-white/90">
@@ -216,7 +228,11 @@ function renderBlock(block: Block, idx: number) {
               )
             })}
           </div>
-          <DoneButton id={block.id} />
+          {protocolId ? (
+            <ProtocolToggle protocolId={protocolId} />
+          ) : (
+            <DoneButton id={block.id} />
+          )}
         </div>
       )
     }
@@ -343,7 +359,7 @@ export function MdArticlePage() {
 
       {/* Content */}
       <article>
-        {blocks.map((block, i) => renderBlock(block, i))}
+        {blocks.map((block, i) => renderBlock(block, i, article.slug, blocks, article.protocolIds))}
       </article>
 
       {/* Action buttons */}

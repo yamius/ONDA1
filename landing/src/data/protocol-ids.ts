@@ -3,7 +3,13 @@
  * Format: {articleShort}-{protocolKey}
  * Storage: onda-protocol-{uniqueId}: active
  */
+/** MD articles (Telegram): slug -> protocol IDs in order (PROTOCOL_01, PROTOCOL_02, ...) */
+export const ARTICLE_PROTOCOL_ORDER: Record<string, string[]> = {
+  'cacao-stem-cells': ['cacao-cellular-ignition', 'cacao-micro-circulation-loop', 'cacao-recovery-firewall'],
+}
+
 const ARTICLE_SHORT: Record<string, string> = {
+  'cacao-stem-cells': 'cacao',
   'vagus-nerve-master-key': 'vagus',
   'breathwork-command-line-interface': 'breathwork',
   'hrv-training-nervous-system-latency': 'hrv',
@@ -74,6 +80,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'anomaly-detection-pulse': 'ai-biomarker-tracking-predictive',
   'delta-wave-amplification': 'phase-locked-acoustic-sleep',
   'closed-loop-neural-sync': 'neural-entrainment-meditation-2',
+  'cellular-ignition': 'cacao-stem-cells',
+  'micro-circulation-loop': 'cacao-stem-cells',
+  'recovery-firewall': 'cacao-stem-cells',
 }
 
 export const PROTOCOL_STORAGE_PREFIX = 'onda-protocol-'
