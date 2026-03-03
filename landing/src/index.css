@@ -129,7 +129,7 @@ body {
 @media (min-width: 768px) {
   .burger-anchor-center {
     left: calc((100vw - min(1280px, 100vw)) / 2 + 7.5rem);
-    top: calc(max(env(safe-area-inset-top, 0px), 12px) + 20px);
+    top: calc(max(env(safe-area-inset-top, 0px), 12px) + 5px);
   }
 }
 
@@ -139,7 +139,7 @@ body {
 }
 @media (min-width: 768px) {
   .header-content-center {
-    /* container + 120px burger + 30px width + 2px gap + 10px */
-    padding-left: calc((100vw - min(1280px, 100vw)) / 2 + 10.125rem);
+    /* container + burger + 2px gap — flush */
+    padding-left: calc((100vw - min(1280px, 100vw)) / 2 + 9.5rem);
   }
 }
