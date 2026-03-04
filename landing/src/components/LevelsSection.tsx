@@ -99,7 +99,7 @@ const levels: LevelData[] = [
     emoji: '🧠',
     name: 'BRAIN CONSCIOUSNESS / AQUA II',
     parts: [
-      { label: '16. I Witness' },
+      { label: '16. I Witness', slug: 'i-witness' },
       { label: '17. I Integrate' },
       { label: '18. I Synchronize' },
     ],

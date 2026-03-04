@@ -78,4 +78,9 @@ export const PART_SEO: Record<string, { title: string; description: string }> = 
     description:
       'Neurosomatic fusion and collective ecstasy. Oxytocin, mirror neurons, ventral vagal. From individual conductivity to collective resonance — the connected human.',
   },
+  'i-witness': {
+    title: 'Part 16: The Observing Human | ONDA Life',
+    description:
+      'Neural distance and metacognitive monitoring. DMN deactivation, witness consciousness. Become the meta-programmer of your own brain.',
+  },
 }

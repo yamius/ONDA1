@@ -1234,6 +1234,89 @@ export const parts: Record<string, {
       { label: 'Mirror neurons & inter-brain synchrony', url: 'https://pubmed.ncbi.nlm.nih.gov/17512470/' },
     ],
   },
+  'i-witness': {
+    badge: '[ PART 16 — LEVEL 6: BRAIN CONSCIOUSNESS / AQUA II ]',
+    title: 'I',
+    titleHighlight: 'Witness',
+    subtitle: 'Protocol: Neural Distance and Metacognitive Monitoring',
+    metaDescription:
+      'Part 16: The observing human. DMN deactivation, metacognitive monitoring. Establish neural distance — become the witness of your thoughts. Meta-programmer. ONDA Life.',
+    intro:
+      'Part 16 marks the transition from managing the "spacesuit" (the body) to managing the "command deck" (the mind). While previous stages taught us how to feel, here we learn to see how we think.\n\nThe primary goal is to establish "neural distance" between yourself and your thoughts. We cease being participants in the internal dialogue and become its Witness. This is not about suppressing the mind, but about making it "transparent," where every thought is registered as a transient electrical impulse that no longer triggers an automatic emotional storm. This is the stage of cognitive sovereignty.\n\nKey Biological Challenge: Deactivating the Default Mode Network (DMN) and developing a stable skill of disidentification from mental noise.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'Neural Distance and Metacognitive Monitoring trains you to be the "System Administrator" of your own brain:',
+      items: [
+        {
+          name: 'Thought Inventory',
+          text: 'The practice of "tagging" incoming thoughts: "planning," "memory," "criticism." This activates the mPFC and strips the thought of its power over you.',
+        },
+        {
+          name: 'Neural Inhibition',
+          text: 'Training the ability to instantly sever a chain of associations, preventing it from growing into an emotional narrative.',
+        },
+        {
+          name: '"Witness" Meta-Monitoring',
+          text: 'Maintaining attention not on the object, but on the process of perception itself. You observe the one who is observing.',
+        },
+        {
+          name: 'Limbic Response Decoupling',
+          text: 'Training the PFC to register "charged" thoughts as dry data, preventing the release of cortisol.',
+        },
+        {
+          name: 'DMN Silence',
+          text: 'Using sensory anchors to "collapse" the internal dialogue and transition into a state of deep cognitive silence.',
+        },
+      ],
+    },
+    targets: {
+      intro: 'Target systems and biomarkers of progress:',
+      items: [
+        {
+          name: 'Dorsolateral PFC',
+          text: 'A powerful filter that separates vital signals from informational junk.',
+        },
+        {
+          name: 'Anterior Cingulate Cortex (ACC)',
+          text: 'Your internal monitor that signals: "Attention! We have just slipped back into rumination."',
+        },
+        {
+          name: 'Amygdala (Circuit Breaking)',
+          text: 'Blocking the pathway where a thought instantly triggers a fear response in the body.',
+        },
+        {
+          name: 'Biomarkers',
+          text: 'Cognitive Gap increase; Alpha-rhythm stabilization; reduction in mental rumination.',
+        },
+      ],
+    },
+    results: {
+      intro: 'Achieving the status of a Meta-Programmer.',
+      items: [
+        'You are no longer a hostage to your stream of consciousness.',
+        'The brain becomes a submissive tool, and you become the one who chooses which programs to run and which to delete.',
+        'This is the foundation for true intellectual and emotional freedom.',
+      ],
+    },
+    outro:
+      'You are no longer inside the storm—you are the one watching it. The meta-programmer.',
+    glossaryLinks: [
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'Prefrontal Cortex', slug: 'prefrontal-cortex' },
+      { label: 'Medial Prefrontal Cortex (mPFC)', slug: 'medial-prefrontal-cortex' },
+      { label: 'Anterior Cingulate Cortex', slug: 'anterior-cingulate-cortex' },
+      { label: 'Amygdala', slug: 'amygdala' },
+      { label: 'Insular Cortex', slug: 'insular-cortex' },
+      { label: 'Cortisol', slug: 'cortisol' },
+      { label: 'Cognitive Gap', slug: 'cognitive-gap' },
+      { label: 'Alpha State', slug: 'alpha-state' },
+      { label: 'Neuroplasticity', slug: 'neuroplasticity' },
+    ],
+    researchLinks: [
+      { label: 'DMN & self-referential processing', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Metacognition & PFC', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
+    ],
+  },
 }
 
 export function PartPage() {
