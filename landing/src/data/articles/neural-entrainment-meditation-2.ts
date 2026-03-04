@@ -62,13 +62,6 @@ The biological mechanism behind this is the Frequency Following Response (FFR).
       protocolId: 'neural-ent-closed-loop-neural-sync',
     },
   ],
-  terminologyBlock: [
-    { term: 'Binaural Beats', definition: 'An auditory illusion created by playing two slightly different frequencies in each ear; the brain "perceives" the difference as a third, pulsing tone.' },
-    { term: 'Frequency Following Response (FFR)', definition: 'The brain\'s tendency to synchronize its dominant EEG frequency with the frequency of an external stimulus.' },
-    { term: 'Alpha State (8–12 Hz)', definition: 'The signature of "Flow"—calm, alert, and focused. Ideal for deep work and information processing.' },
-    { term: 'Theta State (4–8 Hz)', definition: 'The "Hypnagogic" zone—associated with deep meditation, REM sleep, and divergent "out-of-the-box" thinking.' },
-    { term: 'Closed-Loop System', definition: 'A control system that uses its output (real-time EEG data) as an input to adjust its performance (audio frequency).' },
-  ],
 }
 
 export default [article]

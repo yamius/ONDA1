@@ -26,6 +26,12 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'ai-biomarker-tracking-predictive': 'system-forecasting',
   'phase-locked-acoustic-sleep': 'os-states',
   'neural-entrainment-meditation-2': 'neural-hardware',
+  'electric-medicine-neuromodulation': 'neural-hardware',
+  'muscle-metabolic-marker': 'power-grid',
+  'chm-continuous-hormone-monitoring': 'system-forecasting',
+  'glymphatic-flush-clearing-neural-cache': 'os-states',
+  'cpg-neural-autopilot': 'nervous-system',
+  'co2-tolerance-expanding-oxygen-limit': 'nervous-system',
   'longevity-hardware-cellular-cleanup': 'power-grid',
   'neuroplasticity-flow-overclocking': 'cognitive-engine',
   'cognitive-architecture-nootropic-stacks': 'cognitive-engine',
@@ -52,6 +58,12 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'ai-biomarker-tracking-predictive': '5 min 45 sec',
   'phase-locked-acoustic-sleep': '6 min 15 sec',
   'neural-entrainment-meditation-2': '5 min 50 sec',
+  'electric-medicine-neuromodulation': '4 min 45 sec',
+  'muscle-metabolic-marker': '4 min 20 sec',
+  'chm-continuous-hormone-monitoring': '5 min 10 sec',
+  'glymphatic-flush-clearing-neural-cache': '4 min 50 sec',
+  'cpg-neural-autopilot': '4 min 40 sec',
+  'co2-tolerance-expanding-oxygen-limit': '4 min 50 sec',
 }
 
 function extractText(node: React.ReactNode): string {
@@ -80,42 +92,6 @@ import { PROTOCOL_STORAGE_PREFIX, ARTICLE_STORAGE_PREFIX } from '../data/protoco
 import { ArticleReactions, ArticleValidationArrows } from '../components/ArticleReactions'
 
 const STORAGE_KEY_PREFIX = ARTICLE_STORAGE_PREFIX
-
-function TerminologyAccordion({
-  items,
-}: {
-  items: { term: string; definition: string }[]
-}) {
-  const [open, setOpen] = useState(false)
-  return (
-    <div className="my-8 rounded-lg border border-slate-700 bg-slate-900/50">
-      <button
-        type="button"
-        onClick={() => setOpen(!open)}
-        className="flex w-full items-center justify-between px-4 py-3 font-mono text-xs tracking-wider text-white/70 transition-colors hover:text-white/90"
-      >
-        [ DECODING_TERMINOLOGY ]
-        <span className="font-mono text-white/40">{open ? '−' : '+'}</span>
-      </button>
-      {open && (
-        <div className="border-t border-slate-700 px-4 py-4">
-          <dl className="space-y-4">
-            {items.map(({ term, definition }) => (
-              <div key={term}>
-                <dt className="font-mono text-xs font-semibold text-terminal-green/80">
-                  {term}
-                </dt>
-                <dd className="mt-1 font-mono text-sm leading-relaxed text-white/50">
-                  {definition}
-                </dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      )}
-    </div>
-  )
-}
 
 function ProtocolDoneButton({
   protocolId,
@@ -263,8 +239,14 @@ export function ArticlePage() {
       const isCognitiveProtocol = isProtocol && article.slug === 'cognitive-architecture-nootropic-stacks'
       const isMitochondrialProtocol = isProtocol && article.slug === 'mitochondrial-biogenesis-cellular-power-grid'
       const isCircadianLightingProtocol = isProtocol && article.slug === 'circadian-lighting-dark-therapy'
+      const isElectricMedicineProtocol = isProtocol && article.slug === 'electric-medicine-neuromodulation'
+      const isMuscleProtocol = isProtocol && article.slug === 'muscle-metabolic-marker'
+      const isChmProtocol = isProtocol && article.slug === 'chm-continuous-hormone-monitoring'
+      const isGlymphaticProtocol = isProtocol && article.slug === 'glymphatic-flush-clearing-neural-cache'
+      const isCpgProtocol = isProtocol && article.slug === 'cpg-neural-autopilot'
+      const isCo2ToleranceProtocol = isProtocol && article.slug === 'co2-tolerance-expanding-oxygen-limit'
       return (
-        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
+        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
           {children}
         </h3>
       )
@@ -370,10 +352,74 @@ export function ArticlePage() {
           content.includes('Red Light') ||
           content.includes('NAD+') ||
           content.includes('HIIT'))
+      const isNeuromodProtocol =
+        isHackBlock &&
+        article.slug === 'electric-medicine-neuromodulation' &&
+        (content.includes('Pulsetto') ||
+          content.includes('Nurosym') ||
+          content.includes('tDCS') ||
+          content.includes('F3 zone') ||
+          content.includes('Cranial Electrotherapy') ||
+          content.includes('CES'))
+      const isMuscleProtocol =
+        isHackBlock &&
+        article.slug === 'muscle-metabolic-marker' &&
+        (content.includes('grip strength') ||
+          content.includes('dynamometer') ||
+          content.includes('Tabata') ||
+          content.includes('HIIT') ||
+          content.includes('BPC-157') ||
+          content.includes('TB-500') ||
+          content.includes('peptide'))
+      const isChmProtocol =
+        isHackBlock &&
+        article.slug === 'chm-continuous-hormone-monitoring' &&
+        (content.includes('CHM sensor') ||
+          content.includes('cortisol') ||
+          content.includes('Testosterone') ||
+          content.includes('Estrogen') ||
+          content.includes('task calendar') ||
+          content.includes('baseline threshold') ||
+          content.includes('automated system notifications'))
+      const isGlymphaticProtocol =
+        isHackBlock &&
+        article.slug === 'glymphatic-flush-clearing-neural-cache' &&
+        (content.includes('lateral position') ||
+          content.includes('right side') ||
+          content.includes('head-of-bed') ||
+          content.includes('hot bath') ||
+          content.includes('17–18°C') ||
+          content.includes('Zero caloric') ||
+          content.includes('3–4 hours before'))
+      const isCpgProtocol =
+        isHackBlock &&
+        article.slug === 'cpg-neural-autopilot' &&
+        (content.includes('Bear Crawl') ||
+          content.includes('Dead Bug') ||
+          content.includes('quadrupedal') ||
+          content.includes('metronome') ||
+          content.includes('BPM') ||
+          content.includes('uneven surfaces') ||
+          content.includes('barefoot'))
+      const isCo2ToleranceProtocol =
+        isHackBlock &&
+        article.slug === 'co2-tolerance-expanding-oxygen-limit' &&
+        (content.includes('BOLT') ||
+          content.includes('hold your breath') ||
+          content.includes('normal exhale') ||
+          content.includes('Inhale (4s)') ||
+          content.includes('breath-holds') ||
+          content.includes('Apnea'))
       const isMorningProtocol =
         isHackBlock &&
         !isCognitiveProtocol &&
         !isMitochondrialProtocol &&
+        !isNeuromodProtocol &&
+        !isMuscleProtocol &&
+        !isChmProtocol &&
+        !isGlymphaticProtocol &&
+        !isCpgProtocol &&
+        !isCo2ToleranceProtocol &&
         (content.includes('First Photon') ||
           content.includes('Morning Light') ||
           content.includes('within 30 minutes of waking'))
@@ -402,6 +448,18 @@ export function ArticlePage() {
         blockquoteClass = 'border-l-2 border-indigo-500 bg-indigo-500/5 pl-6 pr-4'
       } else if (isLongevityProtocol) {
         blockquoteClass = 'border-l-2 border-amber-500 bg-amber-500/5 pl-6 pr-4'
+      } else if (isNeuromodProtocol) {
+        blockquoteClass = 'border-l-2 border-violet-500 bg-violet-500/5 pl-6 pr-4'
+      } else if (isMuscleProtocol) {
+        blockquoteClass = 'border-l-2 border-emerald-500 bg-emerald-500/5 pl-6 pr-4'
+      } else if (isChmProtocol) {
+        blockquoteClass = 'border-l-2 border-amber-500 bg-amber-500/5 pl-6 pr-4'
+      } else if (isGlymphaticProtocol) {
+        blockquoteClass = 'border-l-2 border-indigo-500 bg-indigo-500/5 pl-6 pr-4'
+      } else if (isCpgProtocol) {
+        blockquoteClass = 'border-l-2 border-blue-500 bg-blue-500/5 pl-6 pr-4'
+      } else if (isCo2ToleranceProtocol) {
+        blockquoteClass = 'border-l-2 border-cyan-500 bg-cyan-500/5 pl-6 pr-4'
       } else if (isHackBlock) {
         blockquoteClass = 'border-l-2 border-cyan-500/50 bg-cyan-500/5 pl-6 pr-4'
       } else if (isPurpleIntro) {
@@ -532,10 +590,6 @@ export function ArticlePage() {
         </Markdown>
       </article>
 
-      {article.terminologyBlock && article.terminologyBlock.length > 0 && (
-        <TerminologyAccordion items={article.terminologyBlock} />
-      )}
-
       {/* Control block: MARK_COMPLETED + OPEN_SYSTEM_STACK */}
       <div className="mb-8 flex flex-col items-center justify-center gap-2 sm:flex-row">
         <button
@@ -590,8 +644,20 @@ export function ArticlePage() {
                                 ? 'Future of the OS. Download ONDA Life to access predictive biomarker analytics and forecast system stability before symptoms appear.'
                                 : article.slug === 'phase-locked-acoustic-sleep'
                                   ? 'System Calibration Ready. Download ONDA Life to optimize deep sleep and amplify Delta wave recovery.'
-                                  : article.slug === 'neural-entrainment-meditation-2'
+                                    : article.slug === 'neural-entrainment-meditation-2'
                                     ? 'System Calibration Ready. Download ONDA Life to tune your brain frequency with EEG-driven neural entrainment.'
+                                    : article.slug === 'electric-medicine-neuromodulation'
+                                    ? 'System Calibration Ready. Download ONDA Life to track neuromodulation protocols and neural interface metrics.'
+                                    : article.slug === 'muscle-metabolic-marker'
+                                    ? 'System Calibration Ready. Download ONDA Life to track muscle mass, grip strength, and metabolic flexibility.'
+                                    : article.slug === 'chm-continuous-hormone-monitoring'
+                                    ? 'Future of the OS. Download ONDA Life to integrate your endocrine dashboard and optimize performance windows.'
+                                    : article.slug === 'glymphatic-flush-clearing-neural-cache'
+                                    ? 'System Calibration Ready. Download ONDA Life to track deep sleep and optimize glymphatic clearance.'
+                                    : article.slug === 'cpg-neural-autopilot'
+                                    ? 'System Calibration Ready. Download ONDA Life to optimize locomotion and reclaim mental bandwidth.'
+                                    : article.slug === 'co2-tolerance-expanding-oxygen-limit'
+                                    ? 'System Calibration Ready. Download ONDA Life to track BOLT score and optimize gas exchange.'
                                     : 'System Calibration Ready. Download ONDA Life to track your Vagus Nerve tone in real-time.'}
         </p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">

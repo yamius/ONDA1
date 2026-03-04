@@ -11,6 +11,11 @@ const ARTICLE_ABBREVIATIONS: { pattern: RegExp; slug: string }[] = [
   { pattern: /\bHRV\b/gi, slug: 'heart-rate-variability' },
   { pattern: /\bAlpha Waves\b/gi, slug: 'alpha-state' },
   { pattern: /\bTheta Waves\b/gi, slug: 'theta-state' },
+  { pattern: /\bNIR\b/gi, slug: 'nir' },
+  { pattern: /\bPBM\b/gi, slug: 'photobiomodulation' },
+  { pattern: /\bFFR\b/gi, slug: 'frequency-following-response' },
+  { pattern: /\bmtDNA\b/gi, slug: 'mtdna' },
+  { pattern: /\bSWS\b/gi, slug: 'slow-wave-sleep' },
 ]
 
 /** Build patterns from glossary terms for article linking. Longest titles first to avoid partial matches. */

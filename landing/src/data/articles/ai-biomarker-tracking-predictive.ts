@@ -59,12 +59,6 @@ Most trackers tell you how you slept last night. Predictive Analytics tells you 
       protocolId: 'predictive-anomaly-detection-pulse',
     },
   ],
-  terminologyBlock: [
-    { term: 'Predictive Modeling', definition: 'Using historical data and machine learning to forecast future biological states.' },
-    { term: 'Biological Signature', definition: 'The unique, multi-variate pattern of your biomarkers when your system is in optimal health.' },
-    { term: 'Micro-Drift', definition: 'Subtle, trending changes in data (e.g., +2 bpm in RHR over 3 nights) that precede a systemic crash.' },
-    { term: 'Telemetry', definition: 'The automated communication process by which your biological data is collected and transmitted for analysis.' },
-  ],
 }
 
 export default [article]

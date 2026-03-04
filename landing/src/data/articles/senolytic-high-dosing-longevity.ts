@@ -64,13 +64,6 @@ Aging is not just the loss of healthy cells; it is the accumulation of "Zombie C
       protocolId: 'senolytic-senolytic-purge',
     },
   ],
-  terminologyBlock: [
-    { term: 'Senescence', definition: 'A state where a cell enters permanent growth arrest but remains metabolically active, causing damage to its surroundings.' },
-    { term: 'Apoptosis', definition: 'Programmed cell death. A clean, non-inflammatory way for the system to decommission faulty hardware.' },
-    { term: 'SASP', definition: 'The toxic "cocktail" of cytokines and proteases secreted by zombie cells.' },
-    { term: 'Quercetin & Fisetin', definition: 'Polyphenols that act as "scaffolds" for senolytic activity, targeting specific survival pathways in old cells.' },
-    { term: 'DunedinPACE', definition: 'A specialized epigenetic clock that measures the speed at which your system is currently aging.' },
-  ],
 }
 
 export default [article]

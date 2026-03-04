@@ -63,13 +63,6 @@ Why does light drive energy? Within the mitochondria, ATP Synthase is a nanomoto
       protocolId: 'mt-dna-photonic-mtdna',
     },
   ],
-  terminologyBlock: [
-    { term: 'ATP Synthase', definition: 'An enzyme-rotor. Visualize it as a hydroelectric turbine where protons flow through to drive rotation, creating ATP "energy batteries."' },
-    { term: 'mtDNA (Mitochondrial DNA)', definition: 'The mitochondria\'s own genetic code, distinct from nuclear DNA. It is highly susceptible to toxins and oxidative radiation.' },
-    { term: 'Photobiomodulation (PBM)', definition: 'The use of non-ionizing light (lasers or LEDs) to trigger photochemical changes within cellular structures.' },
-    { term: 'Water Viscosity', definition: 'Resistance to flow. Lowering the viscosity of water surrounding proteins accelerates the rate of biochemical reactions.' },
-    { term: 'NIR (Near Infra-Red)', definition: 'The 700–1400nm light spectrum. Unlike visible light, NIR penetrates several centimeters deep into biological tissue.' },
-  ],
 }
 
 export default [article]

@@ -3869,9 +3869,904 @@ The Breathwork CLI article recommends strict nasal breathing for low-to-moderate
 `,
     relatedSlugs: ['vagus-nerve', 'diaphragm', 'autonomic-nervous-system'],
   },
+  // Terms from articles (formerly in terminologyBlock)
+  {
+    slug: 'tdcs',
+    title: 'tDCS',
+    category: 'Neural Hardware',
+    shortDescription:
+      'Transcranial Direct Current Stimulation — non-invasive electrical modulation of neuronal excitability thresholds.',
+    content: `
+
+**tDCS** (Transcranial Direct Current Stimulation) delivers low-intensity direct current to the scalp, modulating neuronal excitability without triggering action potentials. It is used for cognitive enhancement, depression, and pain management.
+
+### Key Concepts
+
+- **Anodal stimulation** — increases cortical excitability
+- **Cathodal stimulation** — decreases cortical excitability
+- **F3 zone** — common target for cognitive focus (left Dorsolateral Prefrontal Cortex)
+- **Dose** — typically 1–2 mA for 10–20 minutes
+
+### In ONDA Life
+
+The Electric Medicine article covers tDCS protocols for cognitive focus before deep work sessions.
+`,
+    relatedSlugs: ['prefrontal-cortex', 'dorsolateral-prefrontal-cortex'],
+  },
+  {
+    slug: 'ces',
+    title: 'CES',
+    category: 'Neural Hardware',
+    shortDescription:
+      'Cranial Electrotherapy Stimulation — low-current stimulation to harmonize Alpha and Delta wave frequencies before sleep.',
+    content: `
+
+**CES** (Cranial Electrotherapy Stimulation) applies microcurrents to the head via ear clips or scalp electrodes. It promotes relaxation, reduces anxiety, and supports sleep onset by modulating brain wave activity toward Alpha and Delta frequencies.
+
+### Key Functions
+
+- **Alpha/Delta entrainment** — shifts brain state toward rest
+- **Vagus engagement** — ear-clip placement can stimulate auricular vagal branches
+- **Sleep calibration** — 20–30 minutes before bed aids system shutdown
+
+### In ONDA Life
+
+The Electric Medicine article covers CES protocols for sleep calibration.
+`,
+    relatedSlugs: ['alpha-state', 'vagus-nerve'],
+  },
+  {
+    slug: 'f3-zone',
+    title: 'F3 Zone',
+    category: 'Neural Hardware',
+    shortDescription:
+      'EEG 10-20 system coordinate over the left Dorsolateral Prefrontal Cortex (DLPFC).',
+    content: `
+
+The **F3 zone** is an electrode position in the international 10–20 EEG system, located over the left Dorsolateral Prefrontal Cortex (DLPFC). It is a primary target for tDCS and other neuromodulation protocols aimed at cognitive focus, working memory, and executive function.
+
+### Why F3
+
+- **Left DLPFC** — implicated in verbal working memory, planning, and cognitive control
+- **Standard target** — widely used in research for depression and cognition
+- **Reproducible** — 10–20 system allows consistent placement across sessions
+
+### In ONDA Life
+
+The Electric Medicine article describes tDCS protocols targeting the F3 zone for cognitive focus.
+`,
+    relatedSlugs: ['prefrontal-cortex', 'dorsolateral-prefrontal-cortex', 'tdcs'],
+  },
+  {
+    slug: 'myokines',
+    title: 'Myokines',
+    category: 'Biological Software',
+    shortDescription:
+      'Signaling molecules released by muscle contraction; communicate with brain and other organs (e.g., BDNF).',
+    content: `
+
+**Myokines** are cytokines and other signaling molecules secreted by skeletal muscle in response to contraction. They act as hormones, influencing metabolism, brain function, inflammation, and tissue repair across the body.
+
+### Key Myokines
+
+- **BDNF** — Brain-Derived Neurotrophic Factor; supports neuroplasticity and cognitive function
+- **Irisin** — promotes fat oxidation and browning of white adipose tissue
+- **IL-6** — acute exercise raises IL-6, which can have anti-inflammatory effects in context
+
+### In ONDA Life
+
+The Muscle Metabolic Marker article covers how myokines connect muscle health to brain and metabolic optimization.
+`,
+    relatedSlugs: ['neuroplasticity', 'metabolism'],
+  },
+  {
+    slug: 'sarcopenia',
+    title: 'Sarcopenia',
+    category: 'Biological Software',
+    shortDescription:
+      'Age-related loss of muscle mass — the biological equivalent of battery degradation.',
+    content: `
+
+**Sarcopenia** is progressive loss of skeletal muscle mass, strength, and function with aging. It accelerates after ~30 and accelerates further after 60, leading to frailty, metabolic decline, and increased risk of falls.
+
+### Key Drivers
+
+- **Disuse** — inactivity accelerates loss
+- **Hormonal changes** — declining testosterone, growth hormone
+- **Inflammation** — chronic low-grade inflammation promotes catabolism
+- **Nutrition** — inadequate protein and resistance stimulus
+
+### In ONDA Life
+
+The Muscle Metabolic Marker article covers protocols for grip calibration, metabolic overclocking, and recovery peptides to counter sarcopenia.
+`,
+    relatedSlugs: ['metabolism', 'testosterone'],
+  },
+  {
+    slug: 'bpc-157-tb-500',
+    title: 'BPC-157 / TB-500',
+    category: 'Biological Software',
+    shortDescription:
+      'Peptides that accelerate angiogenesis and tissue repair during high-stress training cycles.',
+    content: `
+
+**BPC-157** and **TB-500** are peptides studied for their ability to promote tissue repair, angiogenesis (blood vessel growth), and healing. They are sometimes used in recovery protocols during intensive training or injury rehabilitation.
+
+### Key Effects
+
+- **Angiogenesis** — supports blood flow to injured or stressed tissue
+- **Tendon/ligament repair** — BPC-157 has shown promise in preclinical models
+- **Gut healing** — BPC-157 may support gut barrier integrity
+- **Recovery window** — often used during high-intensity training cycles
+
+### In ONDA Life
+
+The Muscle Metabolic Marker article covers peptide patch protocols for recovery during metabolic overclocking.
+`,
+    relatedSlugs: ['sarcopenia', 'myokines'],
+  },
+  {
+    slug: 'chm',
+    title: 'CHM',
+    category: 'OS States',
+    shortDescription:
+      'Continuous Hormone Monitoring — real-time tracking of hormonal fluctuations via wearable biosensors.',
+    content: `
+
+**CHM** (Continuous Hormone Monitoring) refers to wearable biosensors that track hormone levels (cortisol, testosterone, estrogen, etc.) in near real-time, rather than via single blood draws or saliva tests.
+
+### Key Applications
+
+- **Cortisol sync** — identify stress-response patterns throughout the day
+- **Performance windows** — align demanding tasks with peak free hormone levels
+- **Crash prevention** — alerts when levels drop below baseline
+- **Circadian mapping** — see how hormones track with sleep and light
+
+### In ONDA Life
+
+The CHM article covers protocols for stress-response calibration, performance window optimization, and hormonal crash prevention.
+`,
+    relatedSlugs: ['cortisol', 'testosterone', 'circadian-rhythm'],
+  },
+  {
+    slug: 'lipolysis',
+    title: 'Lipolysis',
+    category: 'Biological Software',
+    shortDescription:
+      'Fat breakdown; blocked when cortisol remains elevated into evening hours.',
+    content: `
+
+**Lipolysis** is the breakdown of triglycerides in adipose tissue into free fatty acids and glycerol for use as energy. It is regulated by hormones including catecholamines (epinephrine, norepinephrine) and inhibited by insulin and prolonged cortisol elevation.
+
+### Key Points
+
+- **Cortisol timing** — evening cortisol elevation blocks lipolysis during the metabolic window when fat oxidation typically peaks
+- **Insulin** — high insulin suppresses lipolysis; fasting and low-carb states promote it
+- **Sleep** — deep sleep supports growth hormone release, which favors fat mobilization
+
+### In ONDA Life
+
+The CHM article explains how cortisol sync and evening protocols support lipolytic windows.
+`,
+    relatedSlugs: ['cortisol', 'metabolism', 'circadian-rhythm'],
+  },
+  {
+    slug: 'free-hormonal-index',
+    title: 'Free Hormonal Index',
+    category: 'Biological Software',
+    shortDescription:
+      'Bioavailable fraction of hormones (e.g., free testosterone) available to tissues.',
+    content: `
+
+The **Free Hormonal Index** refers to the fraction of a hormone that is unbound to carrier proteins and thus available to bind receptors and exert biological effects. For testosterone, only 1–2% is typically "free"; the rest is bound to SHBG or albumin.
+
+### Why It Matters
+
+- **Bioavailability** — free hormone determines tissue-level activity
+- **Total vs. free** — total testosterone can be normal while free is low (e.g., high SHBG)
+- **Performance** — cognitive and physical performance correlate with free hormone availability
+
+### In ONDA Life
+
+The CHM article covers performance window optimization based on free hormone levels.
+`,
+    relatedSlugs: ['testosterone', 'hormones', 'chm'],
+  },
+  {
+    slug: 'glymphatic-pathway',
+    title: 'Glymphatic Pathway',
+    category: 'Neural Hardware',
+    shortDescription:
+      "The brain's clearance system; activates during deep sleep to remove metabolic waste (e.g., beta-amyloid) via CSF circulation.",
+    content: `
+
+The **Glymphatic Pathway** is the brain's waste-clearance system. Cerebrospinal fluid (CSF) flows through periarterial spaces, exchanges with interstitial fluid, and flushes metabolic waste (including beta-amyloid) out of the brain, primarily during deep sleep.
+
+### Key Points
+
+- **Sleep-dependent** — ~90% of glymphatic clearance occurs during deep sleep
+- **Temperature** — core temperature drop promotes clearance
+- **Posture** — lateral sleep position may enhance flow
+- **Insulin** — caloric intake before sleep can impair clearance
+
+### In ONDA Life
+
+The Glymphatic Flush article covers sleep posture, thermal flush, and dietary firewall protocols for optimizing glymphatic clearance.
+`,
+    relatedSlugs: ['deep-sleep', 'blood-brain-barrier'],
+  },
+  {
+    slug: 'csf',
+    title: 'CSF',
+    category: 'Neural Hardware',
+    shortDescription:
+      'Cerebrospinal Fluid — the fluid that washes through brain tissue during glymphatic clearance.',
+    content: `
+
+**CSF** (Cerebrospinal Fluid) is the clear fluid that surrounds the brain and spinal cord. It cushions the CNS, delivers nutrients, removes waste, and is the medium through which the glymphatic system clears metabolic debris during deep sleep.
+
+### Key Functions
+
+- **Waste clearance** — carries beta-amyloid, tau, and other metabolites out of the brain
+- **Buoyancy** — reduces effective brain weight
+- **Chemical stability** — maintains stable ionic environment for neurons
+
+### In ONDA Life
+
+The Glymphatic Flush article describes how CSF circulation enables brain "detox" during deep sleep.
+`,
+    relatedSlugs: ['glymphatic-pathway', 'deep-sleep'],
+  },
+  {
+    slug: 'deep-maintenance',
+    title: 'DEEP_MAINTENANCE',
+    category: 'OS States',
+    shortDescription:
+      "Deep sleep phase where ~90% of glymphatic clearance occurs; requires temperature drop and insulin absence.",
+    content: `
+
+**DEEP_MAINTENANCE** is the ONDA concept for the deep sleep phase when glymphatic clearance is maximally active. The system performs critical "maintenance" — clearing metabolic waste, consolidating memory, and repairing tissue.
+
+### Requirements
+
+- **Temperature drop** — core body temperature must decrease 1–2°C
+- **Insulin absence** — no caloric intake 3–4 hours before sleep
+- **Sleep architecture** — sufficient slow-wave sleep (N3) duration
+- **Quiet environment** — uninterrupted sleep for full cycles
+
+### In ONDA Life
+
+The Glymphatic Flush article covers Thermal Flush, Dietary Firewall, and sleep posture protocols for DEEP_MAINTENANCE optimization.
+`,
+    relatedSlugs: ['deep-sleep', 'glymphatic-pathway', 'circadian-rhythm'],
+  },
+  {
+    slug: 'cpg',
+    title: 'CPG',
+    category: 'Neural Hardware',
+    shortDescription:
+      'Central Pattern Generator — autonomous spinal cord circuits that produce rhythmic movement without continuous cortical input.',
+    content: `
+
+**CPG** (Central Pattern Generator) refers to neural circuits, primarily in the spinal cord, that generate rhythmic motor patterns (walking, swimming, chewing) without needing continuous commands from higher brain centers. They operate like autonomous oscillators.
+
+### Key Concepts
+
+- **Mutual inhibition** — alternating neurons inhibit each other, creating a biological "pendulum"
+- **Sensory feedback** — CPGs adapt to load, terrain, and proprioceptive input
+- **Ground contact time** — gait efficiency correlates with CPG tuning
+- **Cross-lateral patterns** — crawling and cross-body movements recalibrate CPGs
+
+### In ONDA Life
+
+The CPG Neural Autopilot article covers cross-lateral reset, cadence hack, and sensory override protocols to optimize CPG function.
+`,
+    relatedSlugs: ['central-pattern-generators', 'proprioception'],
+  },
+  {
+    slug: 'mutual-inhibition',
+    title: 'Mutual Inhibition',
+    category: 'Neural Hardware',
+    shortDescription:
+      'Neurons that inhibit each other alternately; creates the biological equivalent of a pendulum or clock.',
+    content: `
+
+**Mutual Inhibition** is a circuit motif where two (or more) neural populations inhibit each other. When one is active, it suppresses the other; when it fatigues or is inhibited, the other becomes active. This creates rhythmic alternation — the basis of Central Pattern Generators (CPGs) for locomotion.
+
+### Key Applications
+
+- **Locomotion** — left/right leg alternation in walking
+- **Breathing** — inspiratory vs. expiratory neuron pools
+- **Sleep-wake** — flip-flop switch between wake and sleep centers
+
+### In ONDA Life
+
+The CPG article explains how mutual inhibition underlies autonomous rhythmic movement.
+`,
+    relatedSlugs: ['cpg', 'central-pattern-generators'],
+  },
+  {
+    slug: 'ground-contact-time',
+    title: 'Ground Contact Time',
+    category: 'OS States',
+    shortDescription:
+      'Duration of foot contact during gait; lower and symmetrical = more efficient CPG.',
+    content: `
+
+**Ground Contact Time** (GCT) is the duration each foot spends in contact with the ground during walking or running. Shorter, symmetrical GCT typically indicates efficient CPG-driven gait and better running economy.
+
+### Key Points
+
+- **Asymmetry** — uneven GCT suggests CPG imbalance or compensation
+- **Cadence** — higher cadence usually shortens GCT
+- **Surfaces** — uneven terrain and minimalist footwear can recalibrate CPG and GCT
+
+### In ONDA Life
+
+The CPG article covers cadence hack and sensory override protocols that optimize ground contact time.
+`,
+    relatedSlugs: ['cpg', 'proprioception'],
+  },
+  {
+    slug: 'bohr-effect',
+    title: 'Bohr Effect',
+    category: 'Biological Software',
+    shortDescription:
+      "The phenomenon whereby hemoglobin releases oxygen more readily when CO₂ is present; low CO₂ = oxygen stays locked on hemoglobin.",
+    content: `
+
+The **Bohr Effect** describes how carbon dioxide (CO₂) facilitates oxygen release from hemoglobin in tissues. As CO₂ increases (e.g., in active muscle), hemoglobin's affinity for oxygen drops, releasing more O₂ where it is needed. Low CO₂ (e.g., from over-breathing) keeps oxygen "locked" on hemoglobin — a form of "oxygen debt" despite ample air.
+
+### Key Implications
+
+- **Over-breathing** — reduces tissue oxygenation despite normal blood oxygen
+- **Breath-hold training** — increases CO₂ tolerance, improving O₂ delivery under stress
+- **BOLT** — breath-hold time correlates with CO₂ tolerance and Bohr effect efficiency
+
+### In ONDA Life
+
+The CO2 Tolerance article covers BOLT test, box breathing, and apnea tables to optimize gas exchange via the Bohr effect.
+`,
+    relatedSlugs: ['co2-tolerance', 'bolt'],
+  },
+  {
+    slug: 'bolt',
+    title: 'BOLT',
+    category: 'OS States',
+    shortDescription:
+      'Body Oxygen Level Test — breath-hold duration after normal exhale; 40+ seconds = optimized gas exchange.',
+    content: `
+
+**BOLT** (Body Oxygen Level Test) measures breath-hold duration after a normal exhale (not maximum). You hold until the first distinct urge to breathe — not to your limit. Shorter BOLT indicates lower CO₂ tolerance and less efficient gas exchange; 40+ seconds suggests optimized function.
+
+### Key Points
+
+- **Not maximal** — BOLT is submaximal; it reflects chemoreceptor sensitivity
+- **Trainable** — breathwork (box breathing, apnea tables) can increase BOLT
+- **Practical** — correlates with exercise performance and stress resilience
+
+### In ONDA Life
+
+The CO2 Tolerance article covers BOLT testing and protocols to improve it.
+`,
+    relatedSlugs: ['co2-tolerance', 'bohr-effect'],
+  },
+  {
+    slug: 'hypercapnic-stress',
+    title: 'Hypercapnic Stress',
+    category: 'OS States',
+    shortDescription:
+      'Controlled exposure to elevated CO₂; trains chemoreceptors to tolerate higher concentrations.',
+    content: `
+
+**Hypercapnic Stress** is deliberate, controlled exposure to elevated carbon dioxide (e.g., through breath-hold exercises, reduced breathing rate, or rebreathing). It trains chemoreceptors to tolerate higher CO₂ before triggering a breath urge, improving CO₂ tolerance and gas exchange efficiency.
+
+### Key Benefits
+
+- **CO₂ tolerance** — higher tolerance = better O₂ delivery via Bohr effect
+- **Stress resilience** — breath-hold under load mimics metabolic stress
+- **Prefrontal clarity** — high CO₂ tolerance supports cognitive performance under pressure
+
+### In ONDA Life
+
+The CO2 Tolerance article covers apnea tables and box breathing as hypercapnic stress protocols.
+`,
+    relatedSlugs: ['co2-tolerance', 'bolt', 'bohr-effect'],
+  },
+  {
+    slug: 'atp-synthase',
+    title: 'ATP Synthase',
+    category: 'Biological Software',
+    shortDescription:
+      'An enzyme-rotor. Visualize it as a hydroelectric turbine where protons flow through to drive rotation, creating ATP "energy batteries."',
+    content: `
+
+**ATP Synthase** is the enzyme that produces ATP (adenosine triphosphate), the cell's primary energy currency. It functions like a molecular turbine: protons flow through it, driving rotation that catalyzes the joining of ADP and phosphate to form ATP.
+
+### Key Concepts
+
+- **Mitochondrial** — located in the inner mitochondrial membrane
+- **Proton gradient** — depends on electron transport chain creating ΔpH
+- **Photobiomodulation** — red/NIR light may enhance ATP production via cytochrome c oxidase
+- **Water viscosity** — lower viscosity around proteins can accelerate enzymatic turnover
+
+### In ONDA Life
+
+The Mitochondrial DNA Red Light article covers how red light protocols may support ATP production.
+`,
+    relatedSlugs: ['metabolism'],
+  },
+  {
+    slug: 'mtdna',
+    title: 'mtDNA (Mitochondrial DNA)',
+    category: 'Biological Software',
+    shortDescription:
+      "The mitochondria's own genetic code, distinct from nuclear DNA. It is highly susceptible to toxins and oxidative radiation.",
+    content: `
+
+**mtDNA** (Mitochondrial DNA) is the small circular genome inside mitochondria, encoding proteins essential for the electron transport chain. Unlike nuclear DNA, mtDNA has limited repair mechanisms and is exposed to high concentrations of reactive oxygen species from OXPHOS, making it vulnerable to damage.
+
+### Key Points
+
+- **Maternal inheritance** — mtDNA is passed primarily through the maternal line
+- **Mutation rate** — higher than nuclear DNA due to oxidative stress
+- **Red light** — photobiomodulation may support mtDNA integrity and biogenesis
+
+### In ONDA Life
+
+The Mitochondrial DNA Red Light article covers protocols for supporting mitochondrial health and mtDNA.
+`,
+    relatedSlugs: ['atp-synthase'],
+  },
+  {
+    slug: 'photobiomodulation',
+    title: 'Photobiomodulation (PBM)',
+    category: 'Biological Software',
+    shortDescription:
+      'The use of non-ionizing light (lasers or LEDs) to trigger photochemical changes within cellular structures.',
+    content: `
+
+**Photobiomodulation** (PBM) uses visible red and near-infrared (NIR) light to stimulate cellular processes. It is non-thermal and non-ionizing. Primary targets include cytochrome c oxidase in mitochondria, which may enhance ATP production and reduce oxidative stress.
+
+### Key Mechanisms
+
+- **Cytochrome c oxidase** — absorbs red/NIR, may increase electron transport and ATP
+- **Nitric oxide** — light can dissociate NO from cytochrome c oxidase, restoring respiration
+- **Water viscosity** — some models suggest light reduces viscosity around proteins
+- **NIR penetration** — 700–1400 nm penetrates several cm into tissue
+
+### In ONDA Life
+
+The Mitochondrial DNA Red Light article covers photonic charging protocols using red/NIR panels.
+`,
+    relatedSlugs: ['atp-synthase', 'mtdna', 'nitric-oxide'],
+  },
+  {
+    slug: 'water-viscosity',
+    title: 'Water Viscosity',
+    category: 'Biological Software',
+    shortDescription:
+      'Resistance to flow. Lowering the viscosity of water surrounding proteins accelerates the rate of biochemical reactions.',
+    content: `
+
+**Water Viscosity** in the cellular context refers to the resistance of water molecules around proteins and membranes. Some research suggests that red/NIR light can reduce this viscosity, potentially accelerating enzyme activity and metabolic flow.
+
+### Key Points
+
+- **Interfacial water** — structured water layers around proteins behave differently from bulk water
+- **Reaction rates** — lower viscosity could increase diffusion and turnover
+- **PBM hypothesis** — one proposed mechanism for photobiomodulation effects
+
+### In ONDA Life
+
+The Mitochondrial DNA Red Light article references water viscosity in the context of red light effects.
+`,
+    relatedSlugs: ['photobiomodulation', 'atp-synthase'],
+  },
+  {
+    slug: 'nir',
+    title: 'NIR (Near Infra-Red)',
+    category: 'Biological Software',
+    shortDescription:
+      'The 700–1400nm light spectrum. Unlike visible light, NIR penetrates several centimeters deep into biological tissue.',
+    content: `
+
+**NIR** (Near Infrared) light spans approximately 700–1400 nm. Unlike visible light, NIR penetrates several centimeters into biological tissue, reaching muscles, joints, and deeper structures. It is used in photobiomodulation for mitochondrial support, pain relief, and recovery.
+
+### Key Properties
+
+- **Penetration** — 700–850 nm (red-NIR) penetrates ~2–5 cm; 850–1100 nm can go deeper
+- **Targets** — cytochrome c oxidase, hemoglobin, water
+- **Non-thermal** — PBM uses low irradiance; heating is minimal at typical doses
+
+### In ONDA Life
+
+The Mitochondrial DNA Red Light article covers NIR protocols for mitochondrial and tissue support.
+`,
+    relatedSlugs: ['photobiomodulation', 'atp-synthase'],
+  },
+  {
+    slug: 'senescence',
+    title: 'Senescence',
+    category: 'Biological Software',
+    shortDescription:
+      "A state where a cell enters permanent growth arrest but remains metabolically active, causing damage to its surroundings.",
+    content: `
+
+**Senescence** is a state in which a cell stops dividing (permanent growth arrest) but remains alive and metabolically active. Senescent cells often secrete pro-inflammatory factors (the SASP) that damage neighboring cells and drive aging.
+
+### Key Concepts
+
+- **SASP** — Senescence-Associated Secretory Phenotype; cytokine/protease "cocktail"
+- **Zombie cells** — accumulate with age, driving chronic inflammation
+- **Senolytics** — compounds that selectively eliminate senescent cells
+- **Apoptosis** — programmed cell death; senolytics induce it in senescent cells
+
+### In ONDA Life
+
+The Senolytic High-Dosing article covers quercetin/fisetin and other senolytic protocols.
+`,
+    relatedSlugs: ['apoptosis', 'sasp'],
+  },
+  {
+    slug: 'apoptosis',
+    title: 'Apoptosis',
+    category: 'Biological Software',
+    shortDescription:
+      "Programmed cell death. A clean, non-inflammatory way for the system to decommission faulty hardware.",
+    content: `
+
+**Apoptosis** is programmed, regulated cell death. Unlike necrosis (traumatic cell death), apoptosis is a controlled process that minimizes inflammation and clears cells cleanly. The cell shrinks, fragments, and is engulfed by phagocytes.
+
+### Key Functions
+
+- **Development** — sculpting tissues (e.g., webbing between fingers)
+- **Homeostasis** — removing damaged, infected, or senescent cells
+- **Senolytics** — induce apoptosis preferentially in senescent cells
+
+### In ONDA Life
+
+The Senolytic article explains how senolytic compounds trigger apoptosis in "zombie" cells.
+`,
+    relatedSlugs: ['senescence', 'sasp'],
+  },
+  {
+    slug: 'sasp',
+    title: 'SASP',
+    category: 'Biological Software',
+    shortDescription:
+      'The toxic "cocktail" of cytokines and proteases secreted by zombie cells.',
+    content: `
+
+**SASP** (Senescence-Associated Secretory Phenotype) is the mix of inflammatory cytokines, chemokines, proteases, and other factors secreted by senescent cells. It damages surrounding tissue, promotes chronic inflammation, and drives aging phenotypes.
+
+### Key Components
+
+- **IL-6, IL-8** — pro-inflammatory cytokines
+- **MMPs** — matrix metalloproteinases that degrade tissue
+- **Spread** — SASP can induce senescence in neighboring cells
+
+### In ONDA Life
+
+The Senolytic article covers protocols to reduce SASP burden by clearing senescent cells.
+`,
+    relatedSlugs: ['senescence', 'apoptosis'],
+  },
+  {
+    slug: 'quercetin-fisetin',
+    title: 'Quercetin & Fisetin',
+    category: 'Biological Software',
+    shortDescription:
+      'Polyphenols that act as "scaffolds" for senolytic activity, targeting specific survival pathways in old cells.',
+    content: `
+
+**Quercetin** and **Fisetin** are flavonoid polyphenols found in foods (onions, apples, strawberries) and supplements. They have shown senolytic activity in preclinical research — inducing apoptosis in senescent cells while sparing healthy cells, potentially by targeting Bcl-2 family pathways.
+
+### Key Points
+
+- **High-dose protocols** — senolytic effects may require doses above typical dietary intake
+- **Cycling** — often used in "hit and run" protocols: high dose for 2–3 days, then 30 days off
+- **Combination** — sometimes combined with other senolytics (e.g., dasatinib) in research
+
+### In ONDA Life
+
+The Senolytic High-Dosing article covers quercetin/fisetin protocols.
+`,
+    relatedSlugs: ['senescence', 'apoptosis', 'sasp'],
+  },
+  {
+    slug: 'dunedinpace',
+    title: 'DunedinPACE',
+    category: 'OS States',
+    shortDescription:
+      'A specialized epigenetic clock that measures the speed at which your system is currently aging.',
+    content: `
+
+**DunedinPACE** is an epigenetic clock that estimates *pace* of aging (how fast you are aging) rather than biological age. It is derived from the Dunedin Study longitudinal cohort and uses DNA methylation patterns to predict decline across multiple organ systems.
+
+### Key Points
+
+- **Pace vs. age** — reflects rate of change, not absolute "age"
+- **Intervention tracking** — can show if interventions slow aging pace
+- **Multi-system** — correlates with cardiovascular, metabolic, cognitive, and physical decline
+
+### In ONDA Life
+
+The Senolytic article references DunedinPACE as a biomarker for aging and intervention effects.
+`,
+    relatedSlugs: ['senescence'],
+  },
+  {
+    slug: 'predictive-modeling',
+    title: 'Predictive Modeling',
+    category: 'ONDA Protocol',
+    shortDescription:
+      'Using historical data and machine learning to forecast future biological states.',
+    content: `
+
+**Predictive Modeling** in health uses historical biomarker data and machine learning to forecast future states — e.g., predicting illness before symptoms appear, or optimizing intervention timing based on individual patterns.
+
+### Key Applications
+
+- **Anomaly detection** — flagging deviations from personal baseline
+- **Micro-drift** — detecting subtle trending changes (e.g., +2 bpm RHR over 3 nights)
+- **Biological signature** — mapping your unique optimal-state pattern
+- **Telemetry** — continuous data collection enables modeling
+
+### In ONDA Life
+
+The AI Biomarker Tracking article covers predictive sync and anomaly detection protocols.
+`,
+    relatedSlugs: ['biological-signature', 'micro-drift', 'telemetry'],
+  },
+  {
+    slug: 'biological-signature',
+    title: 'Biological Signature',
+    category: 'ONDA Protocol',
+    shortDescription:
+      'The unique, multi-variate pattern of your biomarkers when your system is in optimal health.',
+    content: `
+
+**Biological Signature** is your personal multivariate pattern of biomarkers (HRV, RHR, sleep, cortisol, etc.) when your system is in optimal health. It serves as a baseline for anomaly detection and predictive modeling.
+
+### Key Points
+
+- **Individual** — each person has a unique signature
+- **Clean signal** — established during a "clean" period (e.g., 21 days of high-fidelity wearables)
+- **Deviation** — micro-drifts from signature can precede systemic crashes
+
+### In ONDA Life
+
+The AI Biomarker Tracking article covers establishing a Biological Signature for predictive sync.
+`,
+    relatedSlugs: ['predictive-modeling', 'micro-drift', 'heart-rate-variability'],
+  },
+  {
+    slug: 'micro-drift',
+    title: 'Micro-Drift',
+    category: 'ONDA Protocol',
+    shortDescription:
+      'Subtle, trending changes in data (e.g., +2 bpm in RHR over 3 nights) that precede a systemic crash.',
+    content: `
+
+**Micro-Drift** refers to subtle, directional shifts in biomarker data over time — e.g., resting heart rate creeping up by 2 bpm over several nights, or HRV trending down. These small changes often precede noticeable illness or performance decline.
+
+### Key Points
+
+- **Early warning** — micro-drift can signal stress, infection, or overtraining before symptoms
+- **Noise vs. signal** — requires sufficient data quality and baseline to distinguish
+- **Predictive modeling** — AI can detect micro-drift patterns and flag anomalies
+
+### In ONDA Life
+
+The AI Biomarker Tracking article covers protocols for detecting micro-drift and predictive anomaly detection.
+`,
+    relatedSlugs: ['predictive-modeling', 'biological-signature', 'heart-rate-variability'],
+  },
+  {
+    slug: 'telemetry',
+    title: 'Telemetry',
+    category: 'ONDA Protocol',
+    shortDescription:
+      'The automated communication process by which your biological data is collected and transmitted for analysis.',
+    content: `
+
+**Telemetry** in the ONDA context refers to automated collection and transmission of biological data from wearables and sensors to analysis systems. Continuous data streams enable real-time monitoring and predictive modeling.
+
+### Key Components
+
+- **Wearables** — HRV, RHR, sleep, activity, glucose, etc.
+- **Sync** — data flows to cloud or local analysis
+- **Automation** — no manual logging; seamless pipeline from body to model
+
+### In ONDA Life
+
+The AI Biomarker Tracking article describes how telemetry enables predictive sync and anomaly detection.
+`,
+    relatedSlugs: ['predictive-modeling', 'biological-signature', 'heart-rate-variability'],
+  },
+  {
+    slug: 'phase-locked',
+    title: 'Phase-Locked',
+    category: 'Neural Hardware',
+    shortDescription:
+      'Synchronizing an external signal (sound) with an internal biological rhythm (brain waves).',
+    content: `
+
+**Phase-Locked** stimulation means synchronizing an external stimulus (e.g., sound, light) with the phase of an internal biological oscillation (e.g., slow-wave sleep, delta waves). The external signal "locks" to the internal rhythm to amplify or entrain it.
+
+### Key Applications
+
+- **Sleep** — acoustic stimulation phase-locked to slow-wave sleep can enhance delta amplitude
+- **EEG** — frequency-following response to binaural beats
+- **Precision** — requires real-time detection of the internal rhythm (e.g., via EEG or actigraphy)
+
+### In ONDA Life
+
+The Phase-Locked Sleep article covers delta amplification protocols using phase-locked acoustic stimulation.
+`,
+    relatedSlugs: ['deep-sleep', 'alpha-state', 'theta-state'],
+  },
+  {
+    slug: 'slow-wave-sleep',
+    title: 'Slow-Wave Sleep (SWS)',
+    category: 'OS States',
+    shortDescription:
+      'The deepest phase of non-REM sleep, crucial for memory consolidation and physical repair.',
+    content: `
+
+**Slow-Wave Sleep** (SWS), also called N3 or deep sleep, is the deepest non-REM stage. It is characterized by high-amplitude delta waves (0.5–4 Hz) and is critical for memory consolidation, tissue repair, growth hormone release, and glymphatic clearance.
+
+### Key Points
+
+- **Delta waves** — signature EEG pattern
+- **Priority** — the brain prioritizes SWS early in the night
+- **Deprivation** — SWS loss impairs cognition and recovery
+- **Phase-locking** — acoustic stimulation can be timed to SWS for amplification
+
+### In ONDA Life
+
+The Phase-Locked Sleep article covers delta amplification and phase-locked acoustic protocols.
+`,
+    relatedSlugs: ['deep-sleep', 'delta-waves', 'glymphatic-pathway'],
+  },
+  {
+    slug: 'delta-waves',
+    title: 'Delta Waves',
+    category: 'Neural Hardware',
+    shortDescription:
+      'Brain oscillations between 0.5 and 4 Hz. The signature of deep, restorative rest.',
+    content: `
+
+**Delta Waves** are high-amplitude, slow brain oscillations (0.5–4 Hz) characteristic of deep sleep (slow-wave sleep, N3). They are associated with restorative processes, memory consolidation, and glymphatic clearance.
+
+### Key Points
+
+- **Deep sleep marker** — predominance of delta indicates SWS
+- **Amplitude** — high amplitude correlates with sleep depth
+- **Stimulation** — phase-locked acoustic stimulation can enhance delta amplitude
+- **Bone conduction** — sound via skull can stimulate without waking
+
+### In ONDA Life
+
+The Phase-Locked Sleep article covers delta wave amplification using phase-locked acoustic stimulation.
+`,
+    relatedSlugs: ['slow-wave-sleep', 'deep-sleep', 'alpha-state', 'theta-state'],
+  },
+  {
+    slug: 'glymphatic-system',
+    title: 'Glymphatic System',
+    category: 'Neural Hardware',
+    shortDescription:
+      "The waste-clearance system of the Central Nervous System, primarily active during Deep Sleep.",
+    content: `
+
+The **Glymphatic System** is the brain's waste-clearance network, analogous to the lymphatic system for the rest of the body. It uses cerebrospinal fluid (CSF) to flush metabolic waste (including beta-amyloid) from brain tissue, primarily during deep sleep.
+
+### Key Points
+
+- **CSF flow** — periarterial inflow, interstitial exchange, perivenous outflow
+- **Sleep-dependent** — most active during slow-wave sleep
+- **Glymphatic Pathway** — the route of CSF through the brain; see the Glymphatic Pathway glossary entry for protocol details
+
+### In ONDA Life
+
+The Phase-Locked Sleep and Glymphatic Flush articles cover protocols for optimizing glymphatic function.
+`,
+    relatedSlugs: ['glymphatic-pathway', 'csf', 'deep-sleep'],
+  },
+  {
+    slug: 'bone-conduction',
+    title: 'Bone Conduction',
+    category: 'Neural Hardware',
+    shortDescription:
+      'Transmitting sound through the skull bones directly to the inner ear, bypassing the eardrum to avoid waking the user.',
+    content: `
+
+**Bone Conduction** transmits sound vibrations through the skull bones directly to the cochlea, bypassing the eardrum and outer ear. It is used in sleep devices to deliver phase-locked acoustic stimulation without the risk of waking the user with ear-based headphones.
+
+### Key Applications
+
+- **Sleep stimulation** — delta wave amplification during SWS
+- **Hearing aids** — for conductive hearing loss
+- **Low arousal** — skull transmission is less likely to cause startle than air-conducted sound
+
+### In ONDA Life
+
+The Phase-Locked Sleep article covers bone conduction for acoustic deep sleep stimulation.
+`,
+    relatedSlugs: ['phase-locked', 'slow-wave-sleep', 'delta-waves'],
+  },
+  {
+    slug: 'binaural-beats',
+    title: 'Binaural Beats',
+    category: 'Neural Hardware',
+    shortDescription:
+      'An auditory illusion created by playing two slightly different frequencies in each ear; the brain "perceives" the difference as a third, pulsing tone.',
+    content: `
+
+**Binaural Beats** are created by playing two slightly different frequencies (e.g., 100 Hz in the left ear, 104 Hz in the right). The brain perceives the difference (4 Hz) as a third, "phantom" beat. They are used for entrainment toward theta, alpha, or other states.
+
+### Key Points
+
+- **Stereo required** — each ear must receive a different frequency
+- **Frequency-following** — the perceived beat may influence dominant EEG frequency
+- **State shifting** — different beat frequencies target different states (e.g., 4 Hz for theta)
+
+### In ONDA Life
+
+The Neural Entrainment article covers binaural beats and closed-loop neural sync protocols.
+`,
+    relatedSlugs: ['alpha-state', 'theta-state', 'frequency-following-response'],
+  },
+  {
+    slug: 'frequency-following-response',
+    title: 'Frequency Following Response (FFR)',
+    category: 'Neural Hardware',
+    shortDescription:
+      "The brain's tendency to synchronize its dominant EEG frequency with the frequency of an external stimulus.",
+    content: `
+
+**Frequency Following Response** (FFR) is the brain's tendency to synchronize its dominant EEG rhythm with the frequency of an external stimulus (e.g., binaural beats, flickering light, rhythmic sound). It underlies neural entrainment and state-shifting technologies.
+
+### Key Points
+
+- **Entrainment** — external rhythm "pulls" internal rhythm toward it
+- **Stimulus types** — auditory (binaural beats), visual (flicker), tactile
+- **Individual variability** — not everyone responds equally
+
+### In ONDA Life
+
+The Neural Entrainment article covers FFR-based protocols for alpha and theta states.
+`,
+    relatedSlugs: ['binaural-beats', 'alpha-state', 'theta-state'],
+  },
+  {
+    slug: 'closed-loop-system',
+    title: 'Closed-Loop System',
+    category: 'ONDA Protocol',
+    shortDescription:
+      'A control system that uses its output (real-time EEG data) as an input to adjust its performance (audio frequency).',
+    content: `
+
+A **Closed-Loop System** uses feedback from its output to modify its input. In neural entrainment, real-time EEG data is fed back to adjust the frequency of auditory (or other) stimulation — creating an adaptive loop that responds to the user's current brain state.
+
+### Key Components
+
+- **Sensing** — EEG measures current state
+- **Processing** — algorithm determines target vs. current
+- **Actuation** — stimulus (sound, light) is adjusted
+- **Feedback** — loop continues until target state is achieved
+
+### In ONDA Life
+
+The Neural Entrainment article covers closed-loop neural sync protocols using EEG and adaptive audio.
+`,
+    relatedSlugs: ['alpha-state', 'theta-state', 'binaural-beats'],
+  },
 ]
 
-// Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol)
+// Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol) (Neural Hardware, Biological Software, OS States, ONDA Protocol)
 export const glossaryTerms = rawGlossaryTerms.map((t) => ({
   ...t,
   category: SLUG_TO_CATEGORY[t.slug] ?? t.category,

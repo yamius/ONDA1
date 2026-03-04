@@ -59,13 +59,6 @@ For decades, sleep was treated as a black box—you closed your eyes and hoped f
       protocolId: 'phase-lock-delta-wave-amplification',
     },
   ],
-  terminologyBlock: [
-    { term: 'Phase-Locked', definition: 'Synchronizing an external signal (sound) with an internal biological rhythm (brain waves).' },
-    { term: 'Slow-Wave Sleep (SWS)', definition: 'The deepest phase of non-REM sleep, crucial for memory consolidation and physical repair.' },
-    { term: 'Delta Waves', definition: 'Brain oscillations between 0.5 and 4 Hz. The signature of deep, restorative rest.' },
-    { term: 'Glymphatic System', definition: 'The waste-clearance system of the Central Nervous System, primarily active during Deep Sleep.' },
-    { term: 'Bone Conduction', definition: 'Transmitting sound through the skull bones directly to the inner ear, bypassing the eardrum to avoid waking the user.' },
-  ],
 }
 
 export default [article]

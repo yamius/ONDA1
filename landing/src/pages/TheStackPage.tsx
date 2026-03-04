@@ -22,12 +22,18 @@ const STACK_COMPONENTS: Component[] = [
     name: 'OS_STATES',
     protocols: [
       { id: 'delta-wave-amplification', name: 'DELTA_WAVE_AMPLIFICATION', params: '(PHASE_LOCKED)' },
+      { id: 'sleep-posture', name: 'GRAVITATIONAL_DRAINAGE', params: '(LATERAL_10-15deg)' },
+      { id: 'thermal-flush', name: 'THERMAL_FLUSH', params: '(HOT_BATH_90min)' },
+      { id: 'insulin-block', name: 'DIETARY_FIREWALL', params: '(3-4h_PRE_SLEEP)' },
     ],
   },
   {
     name: 'NEURAL_HARDWARE',
     protocols: [
       { id: 'closed-loop-neural-sync', name: 'CLOSED_LOOP_NEURAL_SYNC', params: '(EEG_DRIVEN)' },
+      { id: 'vagus-reset', name: 'VAGUS_NERVE_RESET', params: '(10min_PULSETTO)' },
+      { id: 'cognitive-focus', name: 'COGNITIVE_FOCUS', params: '(tDCS_F3_1.5mA)' },
+      { id: 'ces-sleep', name: 'ELECTRICAL_SLEEP_CALIBRATION', params: '(CES_30min)' },
     ],
   },
   {
@@ -41,6 +47,12 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'hrv-baseline', name: 'MORNING_BASELINE_SCAN', params: '(HRV)' },
       { id: 'biofeedback-resync', name: 'BIOFEEDBACK_RESYNC', params: '(5.5s_BREATH)' },
       { id: 'cold-spike', name: 'COLD_EXPOSURE_SPIKE', params: '(30s)' },
+      { id: 'cross-lateral', name: 'CROSS_LATERAL_RESET', params: '(5min_BEAR_CRAWL)' },
+      { id: 'cadence-hack', name: 'RHYTHMIC_ENTRAINMENT', params: '(120-140_BPM)' },
+      { id: 'sensory-override', name: 'SENSORY_OVERRIDE', params: '(UNEVEN_SURFACES)' },
+      { id: 'bolt-test', name: 'BOLT_TEST', params: '(BODY_OXYGEN_LEVEL)' },
+      { id: 'co2-box-calibration', name: 'CO2_BOX_CALIBRATION', params: '(4-4-4-4_10min)' },
+      { id: 'apnea-tables', name: 'APNEA_TABLES', params: '(PROGRESSIVE_STRESS)' },
     ],
   },
   {
@@ -90,6 +102,9 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'senolytics', name: 'QUERCETIN_FISETIN', params: '(STRAWBERRIES_CAPERS)' },
       { id: 'senolytic-purge', name: 'SENOLYTIC_PURGE', params: '(HIT_AND_RUN)' },
       { id: 'sauna-cold', name: 'SAUNA_COLD_CYCLE', params: '(20min_3min)' },
+      { id: 'grip-strength', name: 'GRIP_STRENGTH_CALIBRATION', params: '(WEEKLY_DYNAMOMETER)' },
+      { id: 'metabolic-overclocking', name: 'METABOLIC_OVERCLOCKING', params: '(TABATA_4min)' },
+      { id: 'peptide-patch', name: 'RECOVERY_FIRMWARE', params: '(BPC157_TB500)' },
     ],
   },
   {
@@ -107,6 +122,9 @@ const STACK_COMPONENTS: Component[] = [
     name: 'SYSTEM_FORECASTING',
     protocols: [
       { id: 'anomaly-detection-pulse', name: 'ANOMALY_DETECTION_PULSE', params: '(PREDICTIVE_SYNC)' },
+      { id: 'cortisol-sync', name: 'STRESS_RESPONSE_CALIBRATION', params: '(CORTISOL_SYNC)' },
+      { id: 'performance-window', name: 'PERFORMANCE_WINDOW_OPTIMIZATION', params: '(PEAK_TESTOSTERONE)' },
+      { id: 'crash-prevention', name: 'HORMONAL_CRASH_PREVENTION', params: '(BASELINE_ALERT)' },
     ],
   },
   {

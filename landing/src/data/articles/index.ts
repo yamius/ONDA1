@@ -22,8 +22,14 @@ import senolyticArticle from './senolytic-high-dosing-longevity'
 import aiBiomarkerArticle from './ai-biomarker-tracking-predictive'
 import phaseLockedSleepArticle from './phase-locked-acoustic-sleep'
 import neuralEntrainmentArticle from './neural-entrainment-meditation-2'
+import electricMedicineArticle from './electric-medicine-neuromodulation'
+import muscleMetabolicArticle from './muscle-metabolic-marker'
+import chmArticle from './chm-continuous-hormone-monitoring'
+import glymphaticFlushArticle from './glymphatic-flush-clearing-neural-cache'
+import cpgArticle from './cpg-neural-autopilot'
+import co2ToleranceArticle from './co2-tolerance-expanding-oxygen-limit'
 
-export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle, ...glp1Article, ...mtDnaRedLightArticle, ...senolyticArticle, ...aiBiomarkerArticle, ...phaseLockedSleepArticle, ...neuralEntrainmentArticle]
+export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle, ...glp1Article, ...mtDnaRedLightArticle, ...senolyticArticle, ...aiBiomarkerArticle, ...phaseLockedSleepArticle, ...neuralEntrainmentArticle, ...electricMedicineArticle, ...muscleMetabolicArticle, ...chmArticle, ...glymphaticFlushArticle, ...cpgArticle, ...co2ToleranceArticle]
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug)

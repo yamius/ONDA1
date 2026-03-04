@@ -88,10 +88,13 @@ landing/
 |------|----------|----------|
 | `/` | HomePage | Главная с секциями Hero, Concept, Levels, Features, CTA |
 | `/about` | AboutPage | О проекте ONDA Life (стиль заголовков с градиентами) |
+| `/articles` | ArticlesPage | Список статей с поиском и фильтрами |
+| `/articles/:slug` | ArticlePage / MdArticlePage | Статическая TS-статья или Markdown (Telegram) |
 | `/part/:slug` | PartPage | Детальное описание Part (например `/part/i-am`) |
 | `/level/:number` | LevelPage | Агрегированное описание уровня (например `/level/1`, `/level/2`) |
 | `/glossary` | GlossaryPage | Список терминов с поиском и фильтрами по категориям |
 | `/glossary/:slug` | GlossaryTermPage | Отдельная страница термина (Markdown-контент) |
+| `/the-stack` | TheStackPage | Дашборд всех протоколов с STATUS |
 
 ### Навигация между страницами
 
@@ -114,6 +117,102 @@ landing/
 
 Текущие Part-страницы:
 - `/part/i-am` — Part 1: I Am (Level 1, BODY / TERRA)
+
+---
+
+## Articles (статические статьи)
+
+SEO-статьи в стиле «биокомпьютер / протокол». Хранятся в `landing/src/data/articles/` как TS-модули.
+
+### Типы статей
+
+| Тип | Где | Описание |
+|-----|-----|----------|
+| **Статические (TS)** | `landing/src/data/articles/*.ts` | Full control, prerender, протоколы с [DONE]/[ACTIVE] |
+| **Markdown (Telegram)** | `articles/*.md` | См. `docs/guides/telegram-articles-bot.md` |
+
+### Структура Article (types.ts)
+
+```typescript
+{
+  slug: 'article-slug',           // URL: /articles/article-slug
+  title: 'Article Title',
+  description: 'SEO description',
+  category: 'Neural Hardware',   // см. ARTICLE_CATEGORIES
+  relatedSlugs: ['vagus-nerve', 'hrv'],  // термины глоссария
+  content: `## [ SECTION ] ...`,  // Markdown
+  howToSteps?: [                 // для протоколов с [DONE]/[ACTIVE]
+    { name: '...', text: '...', protocolId: 'short-protocolKey' },
+  ],
+  introStyle?: 'cyan' | 'purple' | 'amber' | ...,
+  neuralSuggestion?: { text: '...', link: '/articles/...', linkText: '...' },
+}
+```
+
+**⚠️ НЕ используй `terminologyBlock`** — термины из статей добавляются только в глоссарий (см. правило ниже).
+
+### Чеклист: добавление новой статьи
+
+1. **Создать файл** `landing/src/data/articles/{slug}.ts`
+   - Экспорт: `export default [article]`
+
+2. **Зарегистрировать в index** `landing/src/data/articles/index.ts`
+   - `import xxxArticle from './xxx'`
+   - Добавить в массив `articles`
+
+3. **Если есть протоколы** — `landing/src/data/protocol-ids.ts`:
+   - `ARTICLE_SHORT`: `'article-slug': 'short'`
+   - `PROTOCOL_TO_ARTICLE`: `'protocol-key': 'article-slug'` для каждого протокола
+
+4. **ArticlePage.tsx** (обязательно):
+   - `ARTICLE_SLUG_TO_STACK_SECTION`: slug → id секции The Stack (или убрать, если не нужна ссылка)
+   - `ARTICLE_SYNC_TIMES`: slug → читать время (например `'4 min 45 sec'`)
+   - CTA-блок: добавить ветку `article.slug === 'xxx'` с текстом призыва
+
+5. **Стили протоколов (ArticlePage)** — при необходимости:
+   - `h3`: добавить `isXxxProtocol` и цвет (например `text-violet-400`)
+   - `blockquote`: добавить `isXxxProtocol` для бордера (например `border-violet-500`)
+
+6. **TheStackPage.tsx** — если протоколы должны быть в The Stack:
+   - Добавить в нужную секцию `STACK_COMPONENTS`: `{ id: 'protocol-key', name: 'PROTOCOL_NAME', params: '...' }`
+
+7. **Опционально** `landing/src/data/articles-categories.ts`:
+   - Добавить slug в `FEATURED_ARTICLE_SLUGS` для вывода в Featured
+
+8. **Термины из статьи → глоссарий** (обязательно, если в статье есть новые термины):
+   - Добавить каждый термин в `landing/src/data/glossary.ts` (см. правило «Термины из статей» в разделе Глоссарий)
+   - Добавить slug в `landing/src/data/glossary-categories.ts` → `SLUG_TO_CATEGORY`
+   - При необходимости добавить аббревиатуры в `landing/src/utils/glossaryLinks.ts` → `ARTICLE_ABBREVIATIONS`
+   - В тексте статьи использовать те же формулировки/названия — ссылки на глоссарий подставляются автоматически
+
+### Секции The Stack (id для ARTICLE_SLUG_TO_STACK_SECTION)
+
+| id | Секция |
+|----|--------|
+| `nervous-system` | NERVOUS_SYSTEM |
+| `reward-logic` | REWARD_LOGIC |
+| `energy-grid` | ENERGY_GRID |
+| `power-grid` | POWER_GRID |
+| `neural-hardware` | NEURAL_HARDWARE |
+| `cognitive-engine` | COGNITIVE_ENGINE |
+| `gut-brain-link` | GUT_BRAIN_LINK |
+| `system-forecasting` | SYSTEM_FORECASTING |
+| `os-states` | OS_STATES |
+
+### Категории статей (ARTICLE_CATEGORIES)
+
+- Neural Hardware
+- Biological Software
+- OS States
+- ONDA Protocol
+
+### После добавления
+
+```bash
+cd landing && npm run build
+```
+
+Prerender автоматически создаёт `dist/articles/{slug}/index.html`. Маршруты берутся из `articles` в `routes.ts`.
 
 ---
 
@@ -185,13 +284,24 @@ for Your Consciousness → text-white
 
 ## Глоссарий
 
+### Правило: термины из статей → только в глоссарий
+
+**Новые термины из статей НЕ добавляются в статью (нет `terminologyBlock`).** Все термины должны быть в глоссарии, а в тексте статьи — только упоминания. Ссылки на глоссарий подставляются автоматически через `injectArticleGlossaryLinks()`.
+
+**При добавлении новой статьи с новыми терминами:**
+
+1. Добавь каждый термин в `landing/src/data/glossary.ts` в массив `rawGlossaryTerms`
+2. Добавь slug в `landing/src/data/glossary-categories.ts` → `SLUG_TO_CATEGORY`
+3. Для аббревиатур (NIR, PBM, CSF, BOLT и т.п.) — добавь паттерн в `landing/src/utils/glossaryLinks.ts` → `ARTICLE_ABBREVIATIONS`
+4. Используй в статье те же названия, что в `title` термина — тогда ссылки подставятся автоматически
+
 ### Добавление нового термина
 
 Файл: `landing/src/data/glossary.ts`
 
 **Структура без дублирования:** страница рендерит `title` (H1) и `shortDescription` отдельно. В `content` **не повторяй** заголовок — начинай сразу с уникального текста. См. `.cursorrules` → «Глоссарий».
 
-Добавить объект в массив `glossaryTerms`:
+Добавить объект в массив `rawGlossaryTerms`:
 
 ```typescript
 {
@@ -245,6 +355,7 @@ for Your Consciousness → text-white
    |--------------|--------------|---------------|
    | Термин глоссария | `glossary.ts` | Ничего |
    | Part-страница | `PartPage.tsx` (в `parts`) + `LevelsSection.tsx` (slug в карточке уровня) | Ничего |
+   | Статическая статья | `data/articles/*.ts` + `index.ts` + `protocol-ids.ts` + `ArticlePage.tsx` + `TheStackPage.tsx` | См. «Articles (статические статьи)» |
    | Новая страница (напр. /articles) | `routes.ts` → `staticRoutes` + новый компонент страницы | `main.tsx` подхватит из `staticRoutes` автоматически |
 
 3. **Перед деплоем** — всегда запусти `npm run build`. При необходимости проверь локально: `npm run start` и открой новые URL в браузере.
