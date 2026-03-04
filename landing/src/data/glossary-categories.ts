@@ -203,4 +203,17 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   'binaural-beats': 'Neural Hardware',
   'frequency-following-response': 'Neural Hardware',
   'closed-loop-system': 'ONDA Protocol',
+  // Parts 14–16
+  neurodynamics: 'Neural Hardware',
+  'posterior-cingulate-cortex': 'Neural Hardware',
+  'central-executive-network': 'Neural Hardware',
+  'somatosensory-cortex': 'Neural Hardware',
+  // Additional Part terms
+  brainstem: 'Neural Hardware',
+  'body-schema': 'Neural Hardware',
+  'c-tactile-fibers': 'Neural Hardware',
+  'co-regulation': 'ONDA Protocol',
+  tensegrity: 'Neural Hardware',
+  vasomotricity: 'Neural Hardware',
+  'premotor-cortex': 'Neural Hardware',
 }

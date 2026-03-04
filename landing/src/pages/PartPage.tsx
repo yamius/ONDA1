@@ -21,6 +21,9 @@ function setMeta(name: string, content: string, isProperty = false) {
 const DEFAULT_DESCRIPTION =
   'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.'
 
+/** Intro block for parts that need inline links (e.g. internal linking) */
+type IntroBlock = { type: 'text'; content: string } | { type: 'link'; content: string; href: string }
+
 export const parts: Record<string, {
   badge: string
   title: string
@@ -28,6 +31,12 @@ export const parts: Record<string, {
   subtitle: string
   metaDescription?: string
   intro: string
+  /** Optional: intro as blocks for parts needing inline links. When set, overrides intro render. */
+  introBlocks?: IntroBlock[][]
+  /** Optional: YouTube video URL (shorts or regular). Rendered after intro. */
+  videoUrl?: string
+  /** Optional: FAQ for "People also ask" SEO. */
+  faq?: { question: string; answer: string }[]
   protocol: { title: string; intro: string; items: { name: string; text: string }[] }
   targets: { intro: string; items: { name: string; text: string }[] }
   results: { intro: string; items: string[] }
@@ -84,6 +93,7 @@ export const parts: Record<string, {
     outro:
       'You are teaching your nervous system to perceive safety and the pure fact of existence without any external conditions. This is the state from which any purposeful movement (\u201cI Move\u201d) and any transformation (\u201cI Adapt\u201d) become possible.',
     glossaryLinks: [
+      { label: 'Brainstem', slug: 'brainstem' },
       { label: 'Homeostasis', slug: 'homeostasis' },
       { label: 'Primary Interoception', slug: 'primary-interoception' },
       { label: 'Interoception', slug: 'interoception' },
@@ -163,6 +173,7 @@ export const parts: Record<string, {
     outro:
       'You stop \u201cpushing\u201d yourself through space and begin to move within it, utilizing inertia, rhythm, and the natural curves of the spine. The body becomes responsive, and navigation becomes intuitive.',
     glossaryLinks: [
+      { label: 'Brainstem', slug: 'brainstem' },
       { label: 'Central Pattern Generators', slug: 'central-pattern-generators' },
       { label: 'Vestibulo-Ocular Reflex', slug: 'vestibulo-ocular-reflex' },
       { label: 'Vestibular System', slug: 'vestibular-system' },
@@ -230,6 +241,7 @@ export const parts: Record<string, {
     outro:
       'You transition from \u201cswimming\u201d (a chaotic response to external stimuli) to \u201csupport\u201d (the ability to maintain centeredness and stability in any changing environment). You transform your body from an object acted upon by gravity into a subject that utilizes gravity as a resource.',
     glossaryLinks: [
+      { label: 'Brainstem', slug: 'brainstem' },
       { label: 'Interoception', slug: 'interoception' },
       { label: 'Primary Interoception', slug: 'primary-interoception' },
       { label: 'Central Pattern Generators', slug: 'central-pattern-generators' },
@@ -397,6 +409,7 @@ export const parts: Record<string, {
       { label: 'Pituitary', slug: 'pituitary' },
       { label: 'Cortisol', slug: 'cortisol' },
       { label: 'Diaphragm', slug: 'diaphragm' },
+      { label: 'Pelvic Diaphragm', slug: 'pelvic-diaphragm' },
       { label: 'Parasympathetic System', slug: 'parasympathetic-nervous-system' },
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
     ],
@@ -450,7 +463,9 @@ export const parts: Record<string, {
     outro:
       'You are part of the whole, yet you remain yourself.\n\nIt is time to enter into resonance.',
     glossaryLinks: [
+      { label: 'Co-regulation', slug: 'co-regulation' },
       { label: 'Mirror Neurons', slug: 'mirror-neurons' },
+      { label: 'Premotor Cortex', slug: 'premotor-cortex' },
       { label: 'Oxytocin', slug: 'oxytocin' },
       { label: 'Emotional Osmosis', slug: 'emotional-osmosis' },
       { label: 'Ventral Vagus', slug: 'ventral-vagus' },
@@ -1139,10 +1154,12 @@ export const parts: Record<string, {
       { label: 'Autonomic Nervous System', slug: 'autonomic-nervous-system' },
       { label: 'Heart Rate Variability', slug: 'heart-rate-variability' },
       { label: 'Fascia', slug: 'fascia' },
+      { label: 'Tensegrity', slug: 'tensegrity' },
       { label: 'Default Mode Network', slug: 'default-mode-network' },
       { label: 'HPA Axis', slug: 'hpa-axis' },
       { label: 'Flow State', slug: 'flow-state' },
-      { label: 'Neurophysiology', slug: 'neurophysiology' },
+      { label: 'Neurodynamics', slug: 'neurodynamics' },
+      { label: 'Vasomotricity', slug: 'vasomotricity' },
       { label: 'Parasympathetic System', slug: 'parasympathetic-nervous-system' },
       { label: 'Sympathetic System', slug: 'sympathetic-nervous-system' },
     ],
@@ -1219,10 +1236,13 @@ export const parts: Record<string, {
       'You are no longer two separate beings—you are one synchronized field. The connected human.',
     glossaryLinks: [
       { label: 'Oxytocin', slug: 'oxytocin' },
+      { label: 'Vasopressin', slug: 'vasopressin' },
       { label: 'Mirror Neurons', slug: 'mirror-neurons' },
       { label: 'Ventral Vagus', slug: 'ventral-vagus' },
       { label: 'Default Mode Network', slug: 'default-mode-network' },
       { label: 'Prefrontal Cortex', slug: 'prefrontal-cortex' },
+      { label: 'Somatosensory Cortex', slug: 'somatosensory-cortex' },
+      { label: 'Posterior Parietal Cortex', slug: 'posterior-parietal-cortex' },
       { label: 'Heart Rate Variability', slug: 'heart-rate-variability' },
       { label: 'Dopamine', slug: 'dopamine' },
       { label: 'Endorphins', slug: 'endorphins' },
@@ -1243,6 +1263,44 @@ export const parts: Record<string, {
       'Part 16: The observing human. DMN deactivation, metacognitive monitoring. Establish neural distance — become the witness of your thoughts. Meta-programmer. ONDA Life.',
     intro:
       'Part 16 marks the transition from managing the "spacesuit" (the body) to managing the "command deck" (the mind). While previous stages taught us how to feel, here we learn to see how we think.\n\nThe primary goal is to establish "neural distance" between yourself and your thoughts. We cease being participants in the internal dialogue and become its Witness. This is not about suppressing the mind, but about making it "transparent," where every thought is registered as a transient electrical impulse that no longer triggers an automatic emotional storm. This is the stage of cognitive sovereignty.\n\nKey Biological Challenge: Deactivating the Default Mode Network (DMN) and developing a stable skill of disidentification from mental noise.',
+    introBlocks: [
+      [
+        { type: 'text', content: 'Part 16 of the ' },
+        { type: 'link', content: 'Operating System for Your Consciousness', href: '/' },
+        {
+          type: 'text',
+          content:
+            ' marks a critical firmware update: the transition from managing the "spacesuit" (the body) to mastering the "command deck" (the mind). While earlier stages of biohacking focus on physical optimization, here we initialize Real-Time Bio-Sync with our neural hardware. It is no longer about random meditation; it is about learning to see exactly how we think, effectively upgrading the interface between your awareness and your brain.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          content:
+            'The primary goal is to establish "neural distance" between yourself and your thoughts. We cease being participants in the internal dialogue and become its Witness. This is not about suppressing the mind, but about making it "transparent," where every thought is registered as a transient electrical impulse that no longer triggers an automatic emotional storm. This is the stage of cognitive sovereignty.',
+        },
+      ],
+      [
+        {
+          type: 'text',
+          content:
+            'Key Biological Challenge: Deactivating the Default Mode Network (DMN) and developing a stable skill of disidentification from mental noise.',
+        },
+      ],
+    ],
+    videoUrl: 'https://www.youtube.com/embed/r9F65UWdSRI',
+    faq: [
+      {
+        question: 'What is the I Witness protocol in biohacking?',
+        answer:
+          'The I Witness protocol is Part 16 of the ONDA system. It trains neural distance and metacognitive monitoring — establishing a "witness" stance toward your thoughts rather than being absorbed by them. Key practices include Thought Inventory, Neural Inhibition, and DMN Silence to deactivate the Default Mode Network and achieve cognitive sovereignty.',
+      },
+      {
+        question: 'How to decouple the limbic response?',
+        answer:
+          'Limbic Response Decoupling is trained by registering "charged" thoughts as dry data. The PFC learns to detect emotional triggers without releasing cortisol. Practices include tagging thoughts (planning, memory, criticism), sensory anchors to collapse internal dialogue, and maintaining meta-attention on the process of perception itself.',
+      },
+    ],
     protocol: {
       title: 'Biological Protocol',
       intro: 'Neural Distance and Metacognitive Monitoring trains you to be the "System Administrator" of your own brain:',
@@ -1302,8 +1360,10 @@ export const parts: Record<string, {
       'You are no longer inside the storm—you are the one watching it. The meta-programmer.',
     glossaryLinks: [
       { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'Central Executive Network', slug: 'central-executive-network' },
       { label: 'Prefrontal Cortex', slug: 'prefrontal-cortex' },
       { label: 'Medial Prefrontal Cortex (mPFC)', slug: 'medial-prefrontal-cortex' },
+      { label: 'Posterior Cingulate Cortex', slug: 'posterior-cingulate-cortex' },
       { label: 'Anterior Cingulate Cortex', slug: 'anterior-cingulate-cortex' },
       { label: 'Amygdala', slug: 'amygdala' },
       { label: 'Insular Cortex', slug: 'insular-cortex' },
@@ -1338,6 +1398,26 @@ export function PartPage() {
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', desc, true)
     setMeta('twitter:image', OG_IMAGE, true)
+    // FAQ schema for "People also ask"
+    if (part.faq && part.faq.length > 0) {
+      const faqSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: part.faq.map((q) => ({
+          '@type': 'Question',
+          name: q.question,
+          acceptedAnswer: { '@type': 'Answer', text: q.answer },
+        })),
+      }
+      let el = document.querySelector('script[data-faq-schema]')
+      if (!el) {
+        el = document.createElement('script')
+        el.setAttribute('type', 'application/ld+json')
+        el.setAttribute('data-faq-schema', '')
+        document.head.appendChild(el)
+      }
+      el.textContent = JSON.stringify(faqSchema)
+    }
     return () => {
       document.title = 'ONDA Life | Operating System for Your Consciousness'
       setMeta('description', DEFAULT_DESCRIPTION)
@@ -1349,6 +1429,8 @@ export function PartPage() {
       setMeta('twitter:title', 'ONDA Life | Operating System for Your Consciousness', true)
       setMeta('twitter:description', DEFAULT_DESCRIPTION, true)
       setMeta('twitter:image', OG_IMAGE, true)
+      const faqEl = document.querySelector('script[data-faq-schema]')
+      if (faqEl) faqEl.remove()
     }
   }, [part, slug])
 
@@ -1398,11 +1480,41 @@ export function PartPage() {
         {part.subtitle.slice(part.subtitle.indexOf(':') + 1)}
       </h2>
 
-      {part.intro.split('\n\n').map((paragraph, i) => (
-        <p key={i} className="mb-6 font-mono text-sm leading-relaxed text-white/60 md:text-base">
-          {paragraph}
-        </p>
-      ))}
+      {part.introBlocks ? (
+        part.introBlocks.map((blocks, i) => (
+          <p key={i} className="mb-6 font-mono text-sm leading-relaxed text-white/60 md:text-base">
+            {blocks.map((b, j) =>
+              b.type === 'link' ? (
+                <Link key={j} to={b.href} className="text-terminal-cyan underline decoration-terminal-cyan/30 underline-offset-2 transition-colors hover:text-terminal-cyan/80 hover:decoration-terminal-cyan/50">
+                  {b.content}
+                </Link>
+              ) : (
+                b.content
+              )
+            )}
+          </p>
+        ))
+      ) : (
+        part.intro.split('\n\n').map((paragraph, i) => (
+          <p key={i} className="mb-6 font-mono text-sm leading-relaxed text-white/60 md:text-base">
+            {paragraph}
+          </p>
+        ))
+      )}
+
+      {part.videoUrl && (
+        <div className="mb-16">
+          <div className="aspect-[9/16] max-h-[500px] w-full max-w-[280px] overflow-hidden rounded-lg border border-white/10">
+            <iframe
+              src={part.videoUrl}
+              title={`${part.title} ${part.titleHighlight} — video`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="h-full w-full"
+            />
+          </div>
+        </div>
+      )}
 
       <div className="mb-16" />
 
@@ -1504,6 +1616,23 @@ export function PartPage() {
           ))}
         </div>
       </div>
+
+      {/* FAQ — People also ask */}
+      {part.faq && part.faq.length > 0 && (
+        <div className="mt-10 border-t border-white/5 pt-10">
+          <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
+            <span className="text-terminal-green">People</span> Also Ask
+          </h2>
+          <div className="space-y-6">
+            {part.faq.map((item, i) => (
+              <div key={i} className="rounded-lg border border-white/10 bg-white/5 p-4">
+                <h3 className="mb-2 font-mono text-sm font-semibold text-white/90">{item.question}</h3>
+                <p className="font-mono text-sm leading-relaxed text-white/50">{item.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="mt-12">
         <Link

@@ -4764,6 +4764,259 @@ The Neural Entrainment article covers closed-loop neural sync protocols using EE
 `,
     relatedSlugs: ['alpha-state', 'theta-state', 'binaural-beats'],
   },
+  {
+    slug: 'neurodynamics',
+    title: 'Neurodynamics',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The study and optimization of nerve mobility — how nerve trunks slide relative to surrounding tissues to prevent signal compression.',
+    content: `
+
+**Neurodynamics** refers to the mechanical relationship between neural structures and their surrounding tissues. Nerves must glide freely within fascial sheaths; when this movement is restricted (adhesions, tension), signal transmission can be compromised — leading to pain, numbness, or "sensory amnesia."
+
+### Key Principles
+
+- **Neural mobility** — nerves slide and stretch relative to fascia, muscles, and bones
+- **Tensioners** — positions that create mechanical load on nerve pathways (e.g., slump test, straight leg raise)
+- **Sliders** — movements that promote gliding without excessive stretch
+- **Double-crush** — multiple sites of compression can compound dysfunction
+
+### In ONDA Life
+
+Part 14 (I Channel) targets neurodynamics to eliminate "congestions" — muscular, vascular, and neural blocks — for the free distribution of energy and signals. Optimizing nerve sliding prevents signal compression and supports high conductivity.
+`,
+    relatedSlugs: ['fascia', 'vagus-nerve', 'autonomic-nervous-system'],
+  },
+  {
+    slug: 'posterior-cingulate-cortex',
+    title: 'Posterior Cingulate Cortex (PCC)',
+    category: 'Neural Hardware',
+    shortDescription:
+      'A key node of the Default Mode Network that supports self-referential thought and the sense of "outsideness" relative to experience.',
+    content: `
+
+The **posterior cingulate cortex** (PCC) is a region at the back of the cingulate cortex, heavily connected to the Default Mode Network. It is involved in self-reflection, autobiographical memory, and the sense of being an observer of one's own experience.
+
+### Key Functions
+
+- **Self-referential processing** — "me" vs "not me"
+- **DMN hub** — active during mind-wandering, less active during focused attention
+- **Witness position** — PCC modulation can support the sense of "outsideness" — observing thoughts rather than being absorbed by them
+- **Spatial orientation** — contributes to the sense of where "I" am in relation to the world
+
+### In ONDA Life
+
+Part 16 (I Witness) engages the PCC as a key element for maintaining a position of "outsideness" relative to one's own experience — the foundation of metacognitive monitoring and the witness stance.
+`,
+    relatedSlugs: ['default-mode-network', 'medial-prefrontal-cortex', 'anterior-cingulate-cortex'],
+  },
+  {
+    slug: 'central-executive-network',
+    title: 'Central Executive Network (CEN)',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The attention network that maintains sharp, directed focus — activated for goal-directed tasks and meta-attention.',
+    content: `
+
+The **Central Executive Network** (CEN) is a large-scale brain network that supports executive control, working memory, and directed attention. It includes the dorsolateral prefrontal cortex, posterior parietal cortex, and other regions. When the CEN is active, the Default Mode Network tends to be suppressed — and vice versa.
+
+### Key Functions
+
+- **Goal-directed attention** — maintaining focus on a chosen object
+- **Working memory** — holding and manipulating information
+- **Meta-attention** — attending to the process of attention itself ("witness" mode)
+- **Inhibition** — suppressing irrelevant thoughts and distractions
+
+### In ONDA Life
+
+Part 16 (I Witness) activates the CEN to maintain sharp, directed meta-attention — the ability to observe the one who is observing. This creates "neural distance" between the self and the stream of thoughts.
+`,
+    relatedSlugs: ['dorsolateral-prefrontal-cortex', 'default-mode-network', 'dorsal-attention-network'],
+  },
+  {
+    slug: 'somatosensory-cortex',
+    title: 'Somatosensory Cortex (S1/S2)',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The brain region that processes tactile, proprioceptive, and body-position information — the primary map of bodily sensation.',
+    content: `
+
+The **somatosensory cortex** (S1 and S2) is the region of the parietal lobe that receives and processes sensory input from the body — touch, temperature, pain, proprioception, and body position. It creates a "somatotopic" map of the body (the homunculus).
+
+### Key Functions
+
+- **Tactile discrimination** — texture, pressure, vibration
+- **Proprioception** — joint position, movement sense
+- **Body schema** — integrated sense of body boundaries and position in space
+- **Sensory expansion** — training can sharpen discrimination and expand the "felt" body
+
+### In ONDA Life
+
+Parts 13 (I Sense) and 15 (I Attune) engage the somatosensory cortex for expanded sensory mapping. Part 13 sharpens tactile perception and stimulus discrimination; Part 15 uses it to blur the physical edges of the body and experience the partner's sensations as one's own.
+`,
+    relatedSlugs: ['posterior-parietal-cortex', 'interoception', 'proprioception', 'body-schema'],
+  },
+  {
+    slug: 'brainstem',
+    title: 'Brainstem',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The oldest part of the brain — connects spinal cord to cerebellum and cortex; regulates arousal, breathing, heart rate, and survival reflexes.',
+    content: `
+
+The **brainstem** is the posterior part of the brain, continuous with the spinal cord. It includes the medulla, pons, and midbrain. It regulates essential life functions: breathing, heart rate, blood pressure, arousal, and consciousness.
+
+### Key Functions
+
+- **Life support** — respiratory and cardiovascular centers
+- **Reticular formation** — arousal, sleep-wake cycles, attention
+- **Cranial nerve nuclei** — including the vagus nerve (parasympathetic)
+- **Sensory gate** — relays sensory input to thalamus and cortex
+
+### In ONDA Life
+
+Part 1 works with "the connection between the brainstem and the insula" for primary interoception. Part 2 activates "ancient brainstem structures" for automatic locomotion. Part 3 tunes "the brainstem and reticular formation."
+`,
+    relatedSlugs: ['reticular-formation', 'vagus-nerve', 'insular-cortex', 'primary-interoception'],
+  },
+  {
+    slug: 'body-schema',
+    title: 'Body Schema',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The brain\'s dynamic representation of body position and boundaries in space — "where I am" in relation to the environment.',
+    content: `
+
+**Body schema** is the brain\'s unconscious, constantly updated representation of the body\'s position, posture, and boundaries in space. It integrates proprioception, vestibular input, and tactile feedback to create a coherent "body map."
+
+### Key Functions
+
+- **Spatial self** — where limbs and torso are in 3D space
+- **Movement planning** — required for coordinated action
+- **Body boundaries** — the felt edge between "me" and "not me"
+- **Dynamic** — updates in real time with movement and sensation
+
+### In ONDA Life
+
+Part 13 targets "Synchronizing the Body Schema (where I am) and the Body Image (how I feel) into a single stream of ultra-precise data." This is the foundation for high-precision sensory intelligence.
+`,
+    relatedSlugs: ['proprioception', 'somatosensory-cortex', 'interoception', 'posterior-parietal-cortex'],
+  },
+  {
+    slug: 'c-tactile-fibers',
+    title: 'C-Tactile Fibers',
+    category: 'Neural Hardware',
+    shortDescription:
+      'Specialized nerve fibers that transmit "affective" touch — slow, gentle stroking linked to well-being and social bonding.',
+    content: `
+
+**C-tactile (CT) fibers** are unmyelinated nerve fibers in the skin that respond to slow, gentle stroking (1–10 cm/s). Unlike fast-conducting touch fibers, CT fibers project to the insula and are linked to emotional and social processing — the "affective" dimension of touch.
+
+### Key Functions
+
+- **Affective touch** — pleasant, calming, bonding
+- **Social touch** — grooming, hugging, gentle contact
+- **Insula pathway** — connects to emotional and interoceptive centers
+- **Well-being** — CT activation supports parasympathetic tone
+
+### In ONDA Life
+
+Part 13 engages "C-tactile fibers and proprioceptive integration to create an ultra-precise body map." These pathways link skin to the brain\'s well-being centers — essential for sensory expansion and embodiment clarity.
+`,
+    relatedSlugs: ['insular-cortex', 'interoception', 'somatosensory-cortex', 'vagus-nerve'],
+  },
+  {
+    slug: 'co-regulation',
+    title: 'Co-regulation',
+    category: 'ONDA Protocol',
+    shortDescription:
+      'The ability to regulate one\'s emotional state through another person — mutual calming and stabilization in social contact.',
+    content: `
+
+**Co-regulation** is the process by which one person\'s nervous system helps regulate another\'s. Through proximity, voice, touch, and synchronized rhythms, we can calm each other — or escalate each other. It is the biological basis of "we regulate together."
+
+### Key Functions
+
+- **Mutual calming** — one person\'s ventral vagal state supports another\'s
+- **Social engagement** — facial muscles, hearing tuned to human voice
+- **Rhythm alignment** — breathing, heart rate, movement synchronize
+- **Bidirectional** — both participants influence and are influenced
+
+### In ONDA Life
+
+Part 6 describes "co-regulation — the ability to calm oneself through another and to calm others in return." Activation of the ventral vagus creates a state where "facial muscles and hearing are tuned to the human voice and face."
+`,
+    relatedSlugs: ['ventral-vagus', 'polyvagal-theory', 'mirror-neurons', 'heart-rate-variability'],
+  },
+  {
+    slug: 'tensegrity',
+    title: 'Tensegrity',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The body as a tension-compression architecture — fascia and connective tissue form a continuous global information network.',
+    content: `
+
+**Tensegrity** (tension + integrity) is an architectural principle where structures maintain stability through a balance of tension and compression. When applied to the body, fascia forms continuous "chains" — tension in one area transmits through the whole network.
+
+### Key Functions
+
+- **Fascial continuity** — connective tissue links every part of the body
+- **Force transmission** — movement distributes through the network
+- **Information network** — mechanoreceptors throughout fascia relay mechanical and energetic signals
+- **Global** — local restriction affects global function
+
+### In ONDA Life
+
+Part 14 (I Channel) works with "Fascial Chains (Tensegrity)" — "connective tissue as the body\'s global information network." Fascial gliding improves "the transmission of mechanical and energetic information throughout the entire tensegrity framework."
+`,
+    relatedSlugs: ['fascia', 'neurodynamics', 'proprioception', 'autonomic-nervous-system'],
+  },
+  {
+    slug: 'vasomotricity',
+    title: 'Vasomotricity',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The regulation of blood vessel tone — smooth muscle control of vessel diameter for blood flow and heat distribution.',
+    content: `
+
+**Vasomotricity** is the ability of smooth vascular muscles to regulate the diameter of blood vessels. It controls blood flow, blood pressure, and heat distribution — and is influenced by the autonomic nervous system, attention, and stress.
+
+### Key Functions
+
+- **Vessel tone** — constriction and dilation of arteries and veins
+- **Thermoregulation** — heat distribution (cold extremities = vasoconstriction)
+- **Microcirculation** — tissue perfusion and nutrient delivery
+- **Autonomic** — sympathetic and parasympathetic regulation
+
+### In ONDA Life
+
+Part 14 (I Channel) targets "Vasomotricity: Managing the tone of smooth vascular muscles for the free flow of blood and heat distribution." Biomarkers include "stabilization of vascular tone (absence of cold extremities under stress)."
+`,
+    relatedSlugs: ['autonomic-nervous-system', 'neurodynamics', 'heart-rate-variability'],
+  },
+  {
+    slug: 'premotor-cortex',
+    title: 'Premotor Cortex',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The brain region that plans and prepares movement — integrates sensory input with motor output; site of mirror neurons.',
+    content: `
+
+The **premotor cortex** is the region of the frontal lobe just anterior to the primary motor cortex (M1). It plans and sequences movements, integrates sensory-guided action, and — in the ventral premotor area — contains mirror neurons.
+
+### Key Functions
+
+- **Movement planning** — prepares actions before execution
+- **Sensory-motor integration** — links perception to action
+- **Mirror neurons** — fire when observing and performing actions
+- **Sequencing** — coordinates multi-step movements
+
+### In ONDA Life
+
+Part 6 describes the "Mirror Neuron System (Premotor Cortex)" as "your biological Wi-Fi" — training the ability to instantaneously read the intentions and states of others through micro-expressions and gestures.
+`,
+    relatedSlugs: ['motor-cortex', 'mirror-neurons', 'prefrontal-cortex', 'sensorimotor-cortex'],
+  },
 ]
 
 // Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol) (Neural Hardware, Biological Software, OS States, ONDA Protocol)
