@@ -1064,6 +1064,176 @@ export const parts: Record<string, {
       { label: 'Posterior Parietal Cortex', slug: 'posterior-parietal-cortex' },
     ],
   },
+  'i-channel': {
+    badge: '[ PART 14 — LEVEL 5: NEURO-SOMATIC MIND / SENSORY INTELLIGENCE ]',
+    title: 'I',
+    titleHighlight: 'Channel',
+    subtitle: 'Protocol: Neurodynamic Conductivity and Fascial Flow',
+    metaDescription:
+      'Part 14: The body as conductor. Vagal tone, neurodynamics, fascial flow. Master of flow states — eliminate congestions, achieve high conductivity. ONDA Life.',
+    intro:
+      'At this stage, we work with the "informational fluidity" of the organism. The goal is to train the nervous system and tissues not to block incoming or internal impulses (stress, pain, intense emotions), but to let them pass through unhindered. We stop being a "form" that resists pressure and become a "process" that transforms any impulse into a resource while maintaining homeostasis.\n\nKey Biological Challenge: Eliminating "congestions"—muscular, vascular, and neural blocks—for the free distribution of energy and signals.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'Neurodynamic Conductivity and Fascial Flow transforms the body into an open channel:',
+      items: [
+        {
+          name: 'Neurodynamic Discharge',
+          text: 'Modulating spinal reflexes to pass excess excitation through the body without turning it into a chronic blockage.',
+        },
+        {
+          name: 'Fascial Gliding',
+          text: 'Working with fascial mechanoreceptors to improve the transmission of mechanical and energetic information throughout the entire "tensegrity" framework.',
+        },
+        {
+          name: 'Vasomotor Control',
+          text: 'Conscious management of microcirculation and heat flow through attention, directly affecting tissue conductivity.',
+        },
+        {
+          name: 'Vagal Bridge',
+          text: 'Using breathing and vocal techniques to increase the "bandwidth" of the vagus nerve during peak loads.',
+        },
+        {
+          name: 'Flow Integration',
+          text: 'Reducing the activity of the Default Mode Network (DMN) through total somatic presence, where action is born from conductivity rather than effort.',
+        },
+      ],
+    },
+    targets: {
+      intro: 'Target systems and biomarkers of progress:',
+      items: [
+        {
+          name: 'Peripheral Nervous System',
+          text: 'Fiber conductivity without "noise."',
+        },
+        {
+          name: 'Fascial Chains (Tensegrity)',
+          text: 'Connective tissue as the body\'s global information network.',
+        },
+        {
+          name: 'Spinal Canal',
+          text: 'The main highway for impulse transmission.',
+        },
+        {
+          name: 'HPA Axis',
+          text: 'Regulation of the stress response.',
+        },
+        {
+          name: 'Biomarkers',
+          text: 'Reduction in skin electrical impedance; stabilization of vascular tone; disappearance of "sensory amnesia" zones.',
+        },
+      ],
+    },
+    results: {
+      intro: 'Achieving somatic freedom and "high conductivity."',
+      items: [
+        'The body stops accumulating stress and begins to transmit it, processing it into kinetic or creative energy.',
+        'You become a master of flow states, capable of maintaining internal softness and conductivity even under ultra-strong external influences.',
+        'Transition to minimal internal friction: ANS harmonization, vagal tone optimization, neurodynamics, vasomotricity, CSF dynamics.',
+      ],
+    },
+    outro:
+      'You are no longer a form that resists—you are a process that transforms. Every impulse becomes a resource.',
+    glossaryLinks: [
+      { label: 'Vagus Nerve', slug: 'vagus-nerve' },
+      { label: 'Autonomic Nervous System', slug: 'autonomic-nervous-system' },
+      { label: 'Heart Rate Variability', slug: 'heart-rate-variability' },
+      { label: 'Fascia', slug: 'fascia' },
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'HPA Axis', slug: 'hpa-axis' },
+      { label: 'Flow State', slug: 'flow-state' },
+      { label: 'Neurophysiology', slug: 'neurophysiology' },
+      { label: 'Parasympathetic System', slug: 'parasympathetic-nervous-system' },
+      { label: 'Sympathetic System', slug: 'sympathetic-nervous-system' },
+    ],
+    researchLinks: [
+      { label: 'Polyvagal Theory', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+      { label: 'Neurodynamics & nerve mobility', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+    ],
+  },
+  'i-attune': {
+    badge: '[ PART 15 — LEVEL 5: NEURO-SOMATIC MIND / SENSORY INTELLIGENCE ]',
+    title: 'I',
+    titleHighlight: 'Attune',
+    subtitle: 'Protocol: Neurosomatic Fusion and Collective Ecstasy',
+    metaDescription:
+      'Part 15: Neurosomatic fusion. Oxytocin, mirror neurons, ventral vagal. From individual conductivity to collective resonance — the connected human. ONDA Life.',
+    intro:
+      'Part 15 is about the transition from individual conductivity to collective resonance. It is not just "contact"; it is the creation of a unified neurosomatic circuit ("We-state"). We utilize powerful neurochemical levers—oxytocin, dopamine, and endorphins—not for mere discharge, but to expand cognitive and sensory capacities through another human being. At this stage, the body becomes a high-tech instrument for exploring the "other" and the "self" simultaneously.\n\nKey Biological Challenge: Dissolving the boundaries of the "ego-shell" to create a synchronized physiological field.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'Neurosomatic Fusion and Collective Ecstasy transforms intimacy into a precise method of neurobiological programming:',
+      items: [
+        {
+          name: 'Physiological Synchronization',
+          text: 'Practices involving synchronized breathing, micro-movements, and heart-rate entrainment to activate the "neurosomatic bridge."',
+        },
+        {
+          name: 'Biochemistry of Trust',
+          text: 'Using prolonged eye contact and specific tactile stimulation to flood the system with oxytocin and vasopressin, stabilizing the bond.',
+        },
+        {
+          name: 'Sensory Field Expansion',
+          text: 'Techniques to modulate the parietal lobe, blurring the physical edges of the body to experience the partner\'s sensations as one\'s own.',
+        },
+        {
+          name: 'State Alchemy',
+          text: 'Transforming biological stress and tension into the energy of action and pleasure (converting cortisol-driven states into dopamine/endorphin flow).',
+        },
+        {
+          name: 'Conscious Ecstasy',
+          text: 'Training the PFC to remain "online" during peak experiences, allowing for the integration of ecstatic states into long-term neuroplasticity.',
+        },
+      ],
+    },
+    targets: {
+      intro: 'Target systems and biomarkers of progress:',
+      items: [
+        {
+          name: 'Oxytocinergic Pathways',
+          text: 'Centers of bonding and stress reduction.',
+        },
+        {
+          name: 'Somatosensory Cortex',
+          text: 'For expanded sensory mapping.',
+        },
+        {
+          name: 'Prefrontal Cortex (PFC)',
+          text: 'Maintaining awareness even within intense ecstatic states.',
+        },
+        {
+          name: 'Biomarkers',
+          text: 'HRV coherence between partners; brainwave coupling (Alpha/Theta sync); oxytocin/cortisol ratio shift toward bonding biochemistry.',
+        },
+      ],
+    },
+    results: {
+      intro: 'Achieving the state of "The Connected Human."',
+      items: [
+        'You gain the ability to enter deep resonance with another, where intimacy is transformed into a profound spiritual and biological experience.',
+        'The boundaries of "I" and "Thou" dissolve into a single, pulsating organism.',
+        'Intimacy becomes a source of immense energy, healing, and mutual cognitive expansion.',
+      ],
+    },
+    outro:
+      'You are no longer two separate beings—you are one synchronized field. The connected human.',
+    glossaryLinks: [
+      { label: 'Oxytocin', slug: 'oxytocin' },
+      { label: 'Mirror Neurons', slug: 'mirror-neurons' },
+      { label: 'Ventral Vagus', slug: 'ventral-vagus' },
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'Prefrontal Cortex', slug: 'prefrontal-cortex' },
+      { label: 'Heart Rate Variability', slug: 'heart-rate-variability' },
+      { label: 'Dopamine', slug: 'dopamine' },
+      { label: 'Endorphins', slug: 'endorphins' },
+      { label: 'Cortisol', slug: 'cortisol' },
+      { label: 'Neuroplasticity', slug: 'neuroplasticity' },
+    ],
+    researchLinks: [
+      { label: 'Oxytocin & social bonding', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+      { label: 'Mirror neurons & inter-brain synchrony', url: 'https://pubmed.ncbi.nlm.nih.gov/17512470/' },
+    ],
+  },
 }
 
 export function PartPage() {

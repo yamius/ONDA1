@@ -68,4 +68,14 @@ export const PART_SEO: Record<string, { title: string; description: string }> = 
     description:
       'Interoceptive accuracy and sensory expansion. Transform the body into a high-precision antenna for internal and external data.',
   },
+  'i-channel': {
+    title: 'Part 14: Body as Conductor | ONDA Life',
+    description:
+      'Neurodynamic conductivity and fascial flow. The body as conductor — vagal tone, neurodynamics, flow states. Master of high conductivity.',
+  },
+  'i-attune': {
+    title: 'Part 15: Neurosomatic Fusion | ONDA Life',
+    description:
+      'Neurosomatic fusion and collective ecstasy. Oxytocin, mirror neurons, ventral vagal. From individual conductivity to collective resonance — the connected human.',
+  },
 }

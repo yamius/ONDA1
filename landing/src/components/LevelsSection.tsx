@@ -85,12 +85,14 @@ const levels: LevelData[] = [
     name: 'BODY II / TERRA II',
     parts: [
       { label: '13. I Sense', slug: 'i-sense' },
-      { label: '14. I Channel' },
-      { label: '15. I Attune' },
+      { label: '14. I Channel', slug: 'i-channel' },
+      { label: '15. I Attune', slug: 'i-attune' },
     ],
     color: 'from-rose-500/20 to-rose-900/10',
     borderColor: 'border-rose-500/20',
     accentColor: 'text-rose-400',
+    description:
+      'The body as conductor. I Sense → I Channel → I Attune: informational fluidity, flow states, neurosomatic fusion.',
   },
   {
     number: 6,

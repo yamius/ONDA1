@@ -491,6 +491,24 @@ export const levelsData: Record<number, LevelData> = {
           work:
             'Work: Activating the insular cortex, somatosensory cortex, and thalamic filters. Engaging C-tactile fibers and proprioceptive integration to create an ultra-precise body map.',
         },
+        {
+          number: '14',
+          label: 'I Channel',
+          slug: 'i-channel',
+          protocol: 'Protocol: Neurodynamic Conductivity and Fascial Flow',
+          goal: 'Objective: The body as conductor — transforming impulses into resource while maintaining homeostasis.',
+          work:
+            'Work: Eliminating muscular, vascular, and neural congestions. Training the nervous system and tissues to let stress, pain, and intense emotions pass through unhindered. Achieving somatic freedom and high conductivity.',
+        },
+        {
+          number: '15',
+          label: 'I Attune',
+          slug: 'i-attune',
+          protocol: 'Protocol: Neurosomatic Fusion and Collective Ecstasy',
+          goal: 'Objective: From individual conductivity to collective resonance — creating a unified neurosomatic circuit ("We-state").',
+          work:
+            'Work: Dissolving the ego-shell boundaries. Activating oxytocin, mirror neurons, ventral vagal complex, and parietal modulation. Achieving neurosomatic coupling where two organisms function as one.',
+        },
       ],
     },
     biologicalProtocol: {
