@@ -125,6 +125,9 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'cortisol-sync', name: 'STRESS_RESPONSE_CALIBRATION', params: '(CORTISOL_SYNC)' },
       { id: 'performance-window', name: 'PERFORMANCE_WINDOW_OPTIMIZATION', params: '(PEAK_TESTOSTERONE)' },
       { id: 'crash-prevention', name: 'HORMONAL_CRASH_PREVENTION', params: '(BASELINE_ALERT)' },
+      { id: 'phase-sync', name: 'PHASE_SYNCHRONIZATION', params: '(CYCLE_SYNCING_DAYS_7-14)' },
+      { id: 'bbt-tracking', name: 'THERMAL_MONITORING', params: '(BBT_OURA_EVIE)' },
+      { id: 'micronutrient-load', name: 'NUTRITIONAL_PATCH', params: '(MG_CARBS_PRE_CYCLE)' },
     ],
   },
   {

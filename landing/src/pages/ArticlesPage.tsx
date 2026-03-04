@@ -16,6 +16,7 @@ interface ArticleCard {
   description: string
   category: string
   path: string
+  image?: string
   isMd?: boolean
 }
 
@@ -56,6 +57,7 @@ export function ArticlesPage() {
       description: a.description,
       category: a.category,
       path: `/articles/${a.slug}`,
+      image: a.image,
     })),
     ...mdArticles.map((a) => ({
       slug: a.slug,
@@ -207,23 +209,34 @@ export function ArticlesPage() {
           <Link
             key={article.path}
             to={article.path}
-            className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/10"
+            className="glass-card group rounded-xl overflow-hidden transition-all hover:border-terminal-green/10"
             data-testid={'isMd' in article && article.isMd ? `card-md-article-${article.slug}` : undefined}
           >
-            <div className="mb-2 flex items-center justify-between">
-              <span className="rounded-md border border-white/10 bg-white/5 px-3 py-0.5 font-mono text-[10px] text-white/30">
-                {article.category}
-              </span>
-              <span className="font-mono text-xs text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
-                →
-              </span>
+            {article.image && (
+              <div className="aspect-video w-full overflow-hidden border-b border-white/5">
+                <img
+                  src={article.image}
+                  alt=""
+                  className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                />
+              </div>
+            )}
+            <div className="p-6">
+              <div className="mb-2 flex items-center justify-between">
+                <span className="rounded-md border border-white/10 bg-white/5 px-3 py-0.5 font-mono text-[10px] text-white/30">
+                  {article.category}
+                </span>
+                <span className="font-mono text-xs text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
+                  →
+                </span>
+              </div>
+              <h3 className="mb-2 text-lg font-semibold transition-colors group-hover:text-terminal-green">
+                {article.title}
+              </h3>
+              <p className="font-mono text-xs leading-relaxed text-white/40">
+                {article.description}
+              </p>
             </div>
-            <h3 className="mb-2 text-lg font-semibold transition-colors group-hover:text-terminal-green">
-              {article.title}
-            </h3>
-            <p className="font-mono text-xs leading-relaxed text-white/40">
-              {article.description}
-            </p>
           </Link>
         ))}
       </div>

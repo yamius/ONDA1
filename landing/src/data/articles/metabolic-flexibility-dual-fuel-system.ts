@@ -21,6 +21,12 @@ const article: Article = {
     'ketones',
   ],
   introStyle: 'emerald',
+  image: '/images/articles/metabolic-flexibility-dual-fuel-glucose-ketones-onda.png',
+  imageAlt:
+    'Metabolic flexibility and dual-fuel system: glucose and ketone metabolism, biohacking endurance, hybrid engine.',
+  imageTitle:
+    '[HYBRID_SYSTEM_ACTIVE]: Actively transitioning between glucose and ketone fuel sources.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Metabolism and circadian rhythm are linked. Learn how light sets your metabolic timer.',
     link: '/articles/circadian-reset-mastering-light',

@@ -136,7 +136,9 @@ export function Layout() {
             </a>
           </div>
         </header>
-        <Outlet />
+        <div className="pt-6">
+          <Outlet />
+        </div>
       </main>
 
       <footer className="border-t border-white/5 bg-[#1a1b26]/70 pb-[env(safe-area-inset-bottom,0px)] backdrop-blur-xl">

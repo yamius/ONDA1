@@ -8,10 +8,17 @@ const article: Article = {
   slug: 'dopamine-architecture-mastering-desire',
   title: 'Dopamine Architecture: Mastering the Currency of Desire',
   description:
-    'Learn how to reclaim your drive by understanding Dopamine as the biological Prediction Error — and escape the Dopamine Traps that hijack your reward circuitry.',
+    'Dopamine architecture: reclaim your drive by understanding the biological Prediction Error — and escape the Dopamine Traps that hijack your reward circuitry.',
   category: 'Biological Software',
   relatedSlugs: ['dopamine', 'ventral-tegmental-area', 'prefrontal-cortex', 'limbic-system', 'homeostasis', 'circadian-rhythm', 'ond-tokens', 'neuroplasticity'],
   introStyle: 'purple',
+  image: '/images/articles/dopamine-reward-system-neural-architecture.png',
+  imageAlt:
+    'Dopamine neural reward pathway architecture visual: mesolimbic pathway, VTA, nucleus accumbens, biohacking dopamine circuitry.',
+  imageTitle: 'Dopamine architecture — mesolimbic pathway, reward circuitry, and biohacking dopamine optimization',
+  imageCaption:
+    '[ NEURAL_CURRENCY_FLOW ]: Visualizing the gold-standard reward circuitry and motivational energy distribution. VTA → Nucleus Accumbens → Frontal Cortex.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Drive requires Balance. Learn how to calibrate your recovery with the Vagus Nerve Protocol.',
     link: '/articles/vagus-nerve-master-key',

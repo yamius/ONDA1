@@ -32,6 +32,7 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'glymphatic-flush-clearing-neural-cache': 'os-states',
   'cpg-neural-autopilot': 'nervous-system',
   'co2-tolerance-expanding-oxygen-limit': 'nervous-system',
+  'femtech-cyclical-architecture': 'system-forecasting',
   'longevity-hardware-cellular-cleanup': 'power-grid',
   'neuroplasticity-flow-overclocking': 'cognitive-engine',
   'cognitive-architecture-nootropic-stacks': 'cognitive-engine',
@@ -64,6 +65,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'glymphatic-flush-clearing-neural-cache': '4 min 50 sec',
   'cpg-neural-autopilot': '4 min 40 sec',
   'co2-tolerance-expanding-oxygen-limit': '4 min 50 sec',
+  'femtech-cyclical-architecture': '5 min 30 sec',
 }
 
 function extractText(node: React.ReactNode): string {
@@ -245,8 +247,9 @@ export function ArticlePage() {
       const isGlymphaticProtocol = isProtocol && article.slug === 'glymphatic-flush-clearing-neural-cache'
       const isCpgProtocol = isProtocol && article.slug === 'cpg-neural-autopilot'
       const isCo2ToleranceProtocol = isProtocol && article.slug === 'co2-tolerance-expanding-oxygen-limit'
+      const isFemtechProtocol = isProtocol && article.slug === 'femtech-cyclical-architecture'
       return (
-        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
+        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
           {children}
         </h3>
       )
@@ -401,6 +404,15 @@ export function ArticlePage() {
           content.includes('BPM') ||
           content.includes('uneven surfaces') ||
           content.includes('barefoot'))
+      const isFemtechProtocol =
+        isHackBlock &&
+        article.slug === 'femtech-cyclical-architecture' &&
+        (content.includes('Days 7–14') ||
+          content.includes('Estrogen Peak') ||
+          content.includes('BBT') ||
+          content.includes('Basal Body Temperature') ||
+          content.includes('Magnesium') ||
+          content.includes('Progesterone Drop'))
       const isCo2ToleranceProtocol =
         isHackBlock &&
         article.slug === 'co2-tolerance-expanding-oxygen-limit' &&
@@ -419,6 +431,7 @@ export function ArticlePage() {
         !isChmProtocol &&
         !isGlymphaticProtocol &&
         !isCpgProtocol &&
+        !isFemtechProtocol &&
         !isCo2ToleranceProtocol &&
         (content.includes('First Photon') ||
           content.includes('Morning Light') ||
@@ -458,6 +471,8 @@ export function ArticlePage() {
         blockquoteClass = 'border-l-2 border-indigo-500 bg-indigo-500/5 pl-6 pr-4'
       } else if (isCpgProtocol) {
         blockquoteClass = 'border-l-2 border-blue-500 bg-blue-500/5 pl-6 pr-4'
+      } else if (isFemtechProtocol) {
+        blockquoteClass = 'border-l-2 border-rose-500 bg-rose-500/5 pl-6 pr-4'
       } else if (isCo2ToleranceProtocol) {
         blockquoteClass = 'border-l-2 border-cyan-500 bg-cyan-500/5 pl-6 pr-4'
       } else if (isHackBlock) {
@@ -528,6 +543,19 @@ export function ArticlePage() {
         </blockquote>
       )
     },
+    img: ({ src, alt, title }: { src?: string; alt?: string; title?: string }) => {
+      const isArticleImage = article.image && src?.endsWith(article.image.split('/').pop() ?? '')
+      const hoverTitle = isArticleImage ? (article.imageCaption ?? article.imageTitle ?? title) : title
+      return (
+        <img
+          src={src}
+          alt={alt ?? ''}
+          title={hoverTitle}
+          loading="lazy"
+          className="my-6 w-full overflow-hidden rounded-xl border border-white/10 object-cover"
+        />
+      )
+    },
     a: ({ href, children }: { href?: string; children?: React.ReactNode }) => {
       const isExternal = href?.startsWith('http')
       const className =
@@ -577,6 +605,17 @@ export function ArticlePage() {
       <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
         {article.title}
       </h1>
+      {article.image && article.imagePlacement !== 'content' && (
+        <figure className="mb-6 overflow-hidden rounded-xl border border-white/10">
+          <img
+            src={article.image}
+            alt={article.imageAlt ?? ''}
+            title={article.imageCaption ?? article.imageTitle}
+            loading="lazy"
+            className="w-full object-cover"
+          />
+        </figure>
+      )}
       <p className="mb-4 font-mono text-sm leading-relaxed text-white/50">
         {article.description}
       </p>
@@ -658,6 +697,8 @@ export function ArticlePage() {
                                     ? 'System Calibration Ready. Download ONDA Life to optimize locomotion and reclaim mental bandwidth.'
                                     : article.slug === 'co2-tolerance-expanding-oxygen-limit'
                                     ? 'System Calibration Ready. Download ONDA Life to track BOLT score and optimize gas exchange.'
+                                    : article.slug === 'femtech-cyclical-architecture'
+                                    ? 'System Calibration Ready. Download ONDA Life to sync your cycle phases and optimize hormonal firmware.'
                                     : 'System Calibration Ready. Download ONDA Life to track your Vagus Nerve tone in real-time.'}
         </p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">

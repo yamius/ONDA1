@@ -8,7 +8,7 @@ const article: Article = {
   slug: 'circadian-reset-mastering-light',
   title: 'The Circadian Reset: Programming Your Biological System Clock',
   description:
-    'Master the photic signal and resync your hardware with the solar cycle. Fix Circadian Drift, insomnia, and chronic brain fog.',
+    'Circadian rhythm reset: master the photic signal and resync your hardware with the solar cycle. Fix Circadian Drift, insomnia, and chronic brain fog.',
   category: 'Neural Hardware',
   relatedSlugs: [
     'circadian-rhythm',
@@ -21,6 +21,12 @@ const article: Article = {
     'deep-sleep',
   ],
   introStyle: 'amber',
+  image: '/images/articles/circadian-rhythm-light-optimization-onda.png',
+  imageAlt:
+    'Circadian rhythm reset and blue light biohacking visual: SCN light synchronization, photonic input, biological clock.',
+  imageTitle:
+    '[ PHOTONIC_SYNC ]: SCN core biological clock, circadian reset active. Blue/orange light input, melatonin and cortisol regulation.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Light sets the clock; breath sets the tone. Learn how to calibrate your recovery with the Vagus Nerve Protocol.',
     link: '/articles/vagus-nerve-master-key',

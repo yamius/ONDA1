@@ -144,12 +144,53 @@ SEO-статьи в стиле «биокомпьютер / протокол». 
   howToSteps?: [                 // для протоколов с [DONE]/[ACTIVE]
     { name: '...', text: '...', protocolId: 'short-protocolKey' },
   ],
-  introStyle?: 'cyan' | 'purple' | 'amber' | ...,
+  introStyle?: 'cyan' | 'purple' | 'amber' | 'emerald' | 'blue' | 'orange' | 'rose' | 'indigo' | 'gold' | 'slate',
   neuralSuggestion?: { text: '...', link: '/articles/...', linkText: '...' },
+  // Изображение (опционально)
+  image?: '/images/articles/keyword-article-name.png',
+  imageAlt?: '...',    // ~125 символов, ключевое слово + описание визуала. SEO-критично.
+  imageTitle?: '...',  // title-атрибут (всплывающая подсказка)
+  imageCaption?: '...', // подпись под картинкой (увеличивает время удержания)
+  imagePlacement?: 'header' | 'content',  // 'header' = под заголовком; 'content' = inline в markdown
 }
 ```
 
 **⚠️ НЕ используй `terminologyBlock`** — термины из статей добавляются только в глоссарий (см. правило ниже).
+
+### Изображения: SEO и размещение
+
+| Параметр | Роль | Рекомендация |
+|----------|------|--------------|
+| **Имя файла** | Фактор ранжирования | `keyword-topic-onda.png` вместо `IMG_1234.png` |
+| **imageAlt** | Главный SEO-сигнал. Описательный, keyword-rich (e.g. "Dopamine neural reward pathway architecture visual") | ~125 символов |
+| **imageTitle** | Всплывающая подсказка при наведении | Кратко, с ключевым словом |
+| **imageCaption** | Текст при наведении (title). Не отображается — только hover. Оставляет UI чистым | ONDA-голос, суть визуала |
+| **imagePlacement** | Семантика | `'content'` — после intro blockquote (лучший контекст); `'header'` — под заголовком |
+
+**Размещение в контенте:** при `imagePlacement: 'content'` добавь изображение в markdown после intro blockquote с вводной фразой:
+
+```markdown
+> "Intro quote..."
+
+The diagram below maps [концепция] to [метрики].
+
+![Alt text с ключевым словом](/images/articles/file-name.png "Title для tooltip")
+
+---
+## [ SECTION 1: ... ]
+```
+
+Файл изображения: `landing/public/images/articles/`. Карточка в списке статей всегда использует `article.image`.
+
+**Минималистичный UI:** видимая подпись (figcaption) не отображается. `imageCaption` уходит в атрибут `title` — показывается только при hover. Alt — основной SEO-сигнал, должен быть описательным и keyword-rich. Абзац сразу после изображения — начинать с сильного ключевого слова для семантической релевантности.
+
+**Производительность:** все изображения рендерятся с `loading="lazy"` (уже в ArticlePage).
+
+**Примеры имён файлов:** `vagus-nerve-biohacking-data-highway.png`, `dopamine-reward-system-neural-architecture.png`, `female-cycle-biohacking-onda.png`.
+
+### Протоколы и кнопки [ DONE ]
+
+Для привязки кнопки [ DONE ] к блоку «The Hack» поле `howToSteps[].text` **должно совпадать с текстом в blockquote** (матчинг по подстроке `blockquoteContent.includes(s.text)`). Используй тот же текст, что в `**The Hack:** ...` — иначе кнопка не появится.
 
 ### Чеклист: добавление новой статьи
 
@@ -161,8 +202,9 @@ SEO-статьи в стиле «биокомпьютер / протокол». 
    - Добавить в массив `articles`
 
 3. **Если есть протоколы** — `landing/src/data/protocol-ids.ts`:
-   - `ARTICLE_SHORT`: `'article-slug': 'short'`
+   - `ARTICLE_SHORT`: `'article-slug': 'short'` (short используется в protocolId: `short-protocolKey`)
    - `PROTOCOL_TO_ARTICLE`: `'protocol-key': 'article-slug'` для каждого протокола
+   - `howToSteps[].protocolId` = `short-protocolKey` (например `femtech-phase-sync`)
 
 4. **ArticlePage.tsx** (обязательно):
    - `ARTICLE_SLUG_TO_STACK_SECTION`: slug → id секции The Stack (или убрать, если не нужна ссылка)
@@ -184,6 +226,12 @@ SEO-статьи в стиле «биокомпьютер / протокол». 
    - Добавить slug в `landing/src/data/glossary-categories.ts` → `SLUG_TO_CATEGORY`
    - При необходимости добавить аббревиатуры в `landing/src/utils/glossaryLinks.ts` → `ARTICLE_ABBREVIATIONS`
    - В тексте статьи использовать те же формулировки/названия — ссылки на глоссарий подставляются автоматически
+
+9. **Если есть изображение:**
+   - Сохранить в `landing/public/images/articles/` с SEO-именем (keyword-topic-onda.png)
+   - Заполнить `image`, `imageAlt`, `imageTitle`, `imageCaption`
+   - Выбрать `imagePlacement`: `'content'` — inline после intro (лучший контекст); `'header'` — под заголовком
+   - При `'content'` — добавить изображение в markdown с вводной фразой (см. «Изображения: SEO и размещение»)
 
 ### Секции The Stack (id для ARTICLE_SLUG_TO_STACK_SECTION)
 

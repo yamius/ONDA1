@@ -35,6 +35,7 @@ const ARTICLE_SHORT: Record<string, string> = {
   'glymphatic-flush-clearing-neural-cache': 'glymph',
   'cpg-neural-autopilot': 'cpg',
   'co2-tolerance-expanding-oxygen-limit': 'co2',
+  'femtech-cyclical-architecture': 'femtech',
 }
 
 /** Protocol base id -> article slug (for building unique IDs) */
@@ -104,6 +105,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'bolt-test': 'co2-tolerance-expanding-oxygen-limit',
   'co2-box-calibration': 'co2-tolerance-expanding-oxygen-limit',
   'apnea-tables': 'co2-tolerance-expanding-oxygen-limit',
+  'phase-sync': 'femtech-cyclical-architecture',
+  'bbt-tracking': 'femtech-cyclical-architecture',
+  'micronutrient-load': 'femtech-cyclical-architecture',
   'cellular-ignition': 'cacao-stem-cells',
   'micro-circulation-loop': 'cacao-stem-cells',
   'recovery-firewall': 'cacao-stem-cells',

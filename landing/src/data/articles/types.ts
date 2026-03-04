@@ -18,4 +18,14 @@ export interface Article {
   introStyle?: 'cyan' | 'purple' | 'amber' | 'emerald' | 'blue' | 'orange' | 'rose' | 'indigo' | 'gold' | 'slate'
   /** Optional: Cross-link to related article at bottom */
   neuralSuggestion?: { text: string; link: string; linkText: string }
+  /** Optional: Image path (from public root, e.g. /images/articles/slug.png) for card and article header */
+  image?: string
+  /** Optional: Alt text for image (~125 chars, keyword + visual description). SEO-critical. */
+  imageAlt?: string
+  /** Optional: Title attribute (tooltip on hover) */
+  imageTitle?: string
+  /** Optional: Caption under image. Increases dwell time. */
+  imageCaption?: string
+  /** Optional: 'header' = under title; 'content' = inline in markdown (better semantic flow) */
+  imagePlacement?: 'header' | 'content'
 }

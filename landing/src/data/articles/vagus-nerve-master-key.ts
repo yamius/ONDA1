@@ -8,9 +8,16 @@ const article: Article = {
   slug: 'vagus-nerve-master-key',
   title: "Vagus Nerve: The Master Key to Your Biocomputer",
   description:
-    "Learn how to hack your biological stress response and unlock deep resilience through Vagus Nerve optimization.",
+    "Vagus nerve optimization: hack your biological stress response and unlock deep resilience through neural interface control.",
   category: 'Neural Hardware',
   relatedSlugs: ['vagus-nerve', 'parasympathetic-nervous-system', 'heart-rate-variability', 'polyvagal-theory', 'neuroception'],
+  image: '/images/articles/vagus-nerve-biohacking-data-highway.png',
+  imageAlt:
+    'Vagus nerve stimulation biohacking visual: neural interface, parasympathetic data highway, brainstem to heart lungs gut pathway.',
+  imageTitle: 'Vagus nerve biohacking — master data highway for neural interface and parasympathetic control',
+  imageCaption:
+    '[ SYSTEM_BUS_INTERFACE ]: Mapping the primary data conduit for parasympathetic override. Neural code pulses connect CPU to heart, lungs, gut.',
+  imagePlacement: 'header',
   content: `
 ## [ INITIALIZING ADMIN ACCESS ]
 
