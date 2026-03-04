@@ -20,6 +20,12 @@ const article: Article = {
     'myelin',
   ],
   introStyle: 'indigo',
+  image: '/images/articles/digital-dementia-attentional-control-neural-optimization.png',
+  imageAlt:
+    'Digital dementia and attentional control biohacking: focus optimization, neuroplasticity. Neural filter visual.',
+  imageTitle:
+    '[SIGNAL_RESTORE]: Rebuilding the attentional filter against digital information fragmentation.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Focus requires drive. Recalibrate your reward system with Dopamine Architecture.',
     link: '/articles/dopamine-architecture-mastering-desire',

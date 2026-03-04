@@ -21,6 +21,12 @@ const article: Article = {
     'autonomic-nervous-system',
   ],
   introStyle: 'orange',
+  image: '/images/articles/gut-brain-axis-vagus-nerve-data-link.png',
+  imageAlt:
+    'Gut-brain axis and vagus nerve data link: microbiome signaling, biohacking gut health. Bi-directional telemetry.',
+  imageTitle:
+    '[LINK_ESTABLISHED]: Real-time bi-directional telemetry between enteric and central nervous systems.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A clean gut needs a calm mind. Optimize your signal with the Vagus Nerve Master Key.',
     link: '/articles/vagus-nerve-master-key',

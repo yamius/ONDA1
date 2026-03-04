@@ -16,6 +16,12 @@ const article: Article = {
     'ketosis',
   ],
   introStyle: 'gold',
+  image: '/images/articles/longevity-autophagy-cellular-cleanup-onda.png',
+  imageAlt:
+    'Longevity biohacking and cellular autophagy: mTOR vs AMPK balance, sirtuin activation. Cellular cleanup visual.',
+  imageTitle:
+    '[SYSTEM_MAINTENANCE]: Initiating autophagic recycling to restore cellular hardware integrity.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A long life requires energy. Power your future with Metabolic Flexibility.',
     link: '/articles/metabolic-flexibility-dual-fuel-system',

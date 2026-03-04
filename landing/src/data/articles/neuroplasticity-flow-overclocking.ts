@@ -21,6 +21,12 @@ const article: Article = {
     'hippocampus',
   ],
   introStyle: 'blue',
+  image: '/images/articles/neuroplasticity-brain-overclocking-flow-state.png',
+  imageAlt:
+    'Neuroplasticity and flow state biohacking: brain overclocking, synaptic rewiring, neural overclock bridge.',
+  imageTitle:
+    '[SYSTEM_RE_WIRING]: Accelerating synaptic formation via high-bandwidth flow states.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Flow requires stable fuel. Learn how Metabolic Flexibility supports sustained cognitive performance.',
     link: '/articles/metabolic-flexibility-dual-fuel-system',

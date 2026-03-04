@@ -21,6 +21,12 @@ const article: Article = {
     'sympathetic-nervous-system',
   ],
   introStyle: 'cyan',
+  image: '/images/articles/breathwork-command-line-interface-biohacking.png',
+  imageAlt:
+    'Breathwork biohacking and CO2 tolerance: autonomic nervous system control via resonant breathing. CLI visual.',
+  imageTitle:
+    '[EXECUTING_COMMAND]: Manual override of the autonomic nervous system via respiratory input.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The CLI is powerful, but it needs a stable Power Supply. Optimize your fuel with Metabolic Flexibility.',
     link: '/articles/metabolic-flexibility-dual-fuel-system',
