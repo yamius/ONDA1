@@ -17,6 +17,12 @@ const article: Article = {
     'mitochondria',
   ],
   introStyle: 'gold',
+  image: '/images/articles/senolytic-high-dosing-longevity-zombie-cells-purge.png',
+  imageAlt:
+    'Senolytic protocols and longevity biohacking: eliminating zombie cells via selective apoptosis.',
+  imageTitle:
+    '[PURGE_MODE]: Selectively eliminating senescent cells to reduce systemic SASP load and reset biological age.',
+  imagePlacement: 'header',
   content: `
 ## [ ARTICLE: SENOLYTIC_SWITCH // CELLULAR_CLEANUP ]
 

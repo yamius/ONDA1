@@ -18,6 +18,12 @@ const article: Article = {
     'insulin-sensitivity',
   ],
   introStyle: 'indigo',
+  image: '/images/articles/glymphatic-flush-brain-detox-neural-cache-onda.png',
+  imageAlt:
+    'Glymphatic system flush and brain detox: amyloid clearance, neural cache optimization.',
+  imageTitle:
+    '[FLUSH_SEQUENCE_ACTIVE]: Optimizing interstitial fluid exchange to clear metabolic waste from brain tissue.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'For phase-locked acoustic amplification of Delta waves and deep sleep, see Phase-Locked Acoustic Sleep.',
     link: '/articles/phase-locked-acoustic-sleep',

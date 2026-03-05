@@ -18,6 +18,12 @@ const article: Article = {
     'heart-rate-variability',
   ],
   introStyle: 'amber',
+  image: '/images/articles/continuous-hormone-monitoring-chm-biohacking-onda.png',
+  imageAlt:
+    'Continuous hormone monitoring and CHM biohacking: cortisol tracking, testosterone optimization.',
+  imageTitle:
+    '[HORMONE_STREAM_ACTIVE]: Capturing real-time endocrine data to eliminate metabolic blind spots.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'For predictive biomarker analytics and anomaly detection before symptoms appear, see AI Biomarker Tracking.',
     link: '/articles/ai-biomarker-tracking-predictive',

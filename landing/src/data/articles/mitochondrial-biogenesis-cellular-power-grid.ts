@@ -19,6 +19,12 @@ const article: Article = {
     'ketones',
   ],
   introStyle: 'slate',
+  image: '/images/articles/mitochondrial-biogenesis-cellular-power-grid-optimization.png',
+  imageAlt:
+    'Mitochondrial biogenesis and cellular power grid: ATP synthesis, biohacking endurance. Energy optimization.',
+  imageTitle:
+    '[GRID_EXPANSION]: Increasing mitochondrial density to scale systemic energy production.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Power requires a stable clock. Sync your energy cycles with the Circadian Reset.',
     link: '/articles/circadian-reset-mastering-light',

@@ -16,6 +16,12 @@ const article: Article = {
     'delta-waves',
   ],
   introStyle: 'slate',
+  image: '/images/articles/phase-locked-acoustic-sleep-delta-wave-stimulation.png',
+  imageAlt:
+    'Phase-locked acoustic stimulation for deep sleep enhancement: delta wave synchronization, sleep biohacking.',
+  imageTitle:
+    '[RESONANCE_ENGAGED]: Enhancing slow-wave sleep amplitude via real-time acoustic phase-locking.',
+  imagePlacement: 'header',
   content: `
 ## [ ARTICLE: PHASE_LOCKED_SLEEP // DEEP_RECOVERY_HACK ]
 

@@ -21,6 +21,12 @@ const article: Article = {
     'prefrontal-cortex',
   ],
   introStyle: 'slate',
+  image: '/images/articles/cognitive-architecture-nootropic-stacks-brain-optimization.png',
+  imageAlt:
+    'Nootropic stacks and cognitive architecture: brain optimization, neuroenhancement, stack integration.',
+  imageTitle:
+    '[STACK_ACTIVE]: Optimizing neural bandwidth and synaptic precision via targeted neurochemistry.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Architecture is useless without control. Install the Attentional Firewall.',
     link: '/articles/digital-dementia-attentional-control',

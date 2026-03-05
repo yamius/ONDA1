@@ -17,6 +17,12 @@ const article: Article = {
     'theta-state',
   ],
   introStyle: 'slate',
+  image: '/images/articles/neural-entrainment-meditation-coherence-onda.png',
+  imageAlt:
+    'Neural entrainment and meditation 2.0: brainwave synchronization, gamma wave coherence.',
+  imageTitle:
+    '[SYNC_ACTIVE]: Achieving global neural coherence through phase-locked frequency entrainment.',
+  imagePlacement: 'header',
   content: `
 ## [ ARTICLE: NEURAL_ENTRAINMENT // BRAIN_FREQUENCY_TUNING ]
 

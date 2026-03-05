@@ -18,6 +18,12 @@ const article: Article = {
     'autophagy',
   ],
   introStyle: 'emerald',
+  image: '/images/articles/glp-1-biology-muscle-preservation-metabolism.png',
+  imageAlt:
+    'GLP-1 biology and muscle preservation for metabolic health and body composition optimization.',
+  imageTitle:
+    '[RESOURCE_PROTECT]: Maintaining lean tissue integrity during metabolic state transitions.',
+  imagePlacement: 'header',
   content: `
 ## [ ARTICLE: GLP-1_AGONISM // METABOLIC_RECODE ]
 

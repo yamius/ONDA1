@@ -19,6 +19,12 @@ const article: Article = {
     'heart-rate-variability',
   ],
   introStyle: 'cyan',
+  image: '/images/articles/electric-medicine-neuromodulation-vagus-nerve-stimulation.png',
+  imageAlt:
+    'Electric medicine and neuromodulation: vagus nerve stimulation, bioelectronic medicine.',
+  imageTitle:
+    '[SIGNAL_INJECTION]: Modulating systemic homeostasis through precision-tuned bioelectronic impulses.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'For closed-loop neural tuning with real-time EEG feedback, see Neural Entrainment.',
     link: '/articles/neural-entrainment-meditation-2',

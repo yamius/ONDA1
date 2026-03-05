@@ -19,6 +19,12 @@ const article: Article = {
     'cortisol',
   ],
   introStyle: 'emerald',
+  image: '/images/articles/muscle-metabolic-marker-longevity-onda.png',
+  imageAlt:
+    'Muscle metabolic marker: skeletal muscle health, myokines longevity, metabolic age optimization.',
+  imageTitle:
+    '[ENGINE_STATUS]: Leveraging muscle tissue as the primary driver for systemic metabolic stability.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'For metabolic fuel switching and glucose optimization, see Metabolic Flexibility.',
     link: '/articles/metabolic-flexibility-dual-fuel-system',

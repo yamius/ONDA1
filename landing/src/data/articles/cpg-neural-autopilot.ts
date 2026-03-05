@@ -18,6 +18,12 @@ const article: Article = {
     'flow-state',
   ],
   introStyle: 'blue',
+  image: '/images/articles/cpg-neural-autopilot-spinal-cord-circuits-onda.png',
+  imageAlt:
+    'Central pattern generators and CPG neural autopilot: spinal cord motor control, rhythmic motion biohacking.',
+  imageTitle:
+    '[LOW_LEVEL_PROCESSOR_ACTIVE]: Delegating rhythmic motor tasks to spinal CPG circuits to optimize cognitive bandwidth.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'For breathing rhythm and 5.5s coherence, see Breathwork Command Line Interface.',
     link: '/articles/breathwork-command-line-interface',
