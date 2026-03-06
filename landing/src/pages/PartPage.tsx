@@ -1283,7 +1283,7 @@ export const parts: Record<string, {
     ],
   },
   'i-witness': {
-    badge: '[ PART 16 — LEVEL 6: BRAIN CONSCIOUSNESS / AQUA II ]',
+    badge: '[ PART 16 — LEVEL 6: BRAIN / AQUA II ]',
     title: 'I',
     titleHighlight: 'Witness',
     subtitle: 'Protocol: Neural Distance and Metacognitive Monitoring',
@@ -1403,6 +1403,595 @@ export const parts: Record<string, {
     researchLinks: [
       { label: 'DMN & self-referential processing', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
       { label: 'Metacognition & PFC', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
+    ],
+  },
+  'i-integrate': {
+    badge: '[ PART 17 — LEVEL 6: BRAIN / AQUA II ]',
+    title: 'I',
+    titleHighlight: 'Integrate',
+    subtitle: 'Protocol: Global Neural Integration and Experience Synthesis',
+    metaDescription:
+      'Part 17: Corpus callosum, mPFC, ACC — inter-hemispheric and vertical integration. Architect of internal connections. Maximum coherence. ONDA Life.',
+    intro:
+      'From a neurobiological standpoint, integration is a state of maximum coherence. This is the moment when the right and left hemispheres, the analytical mind, and primal instincts stop competing and begin to operate as a single supercomputer. Integration is not about being "perfect"; it is about achieving maximum data conductivity without internal interference. We move from managing individual functions to conducting the entire neural symphony.\n\nKey Biological Challenge: Reconciling cognitive dissonance and strengthening vertical (cortex-body) and horizontal (inter-hemispheric) connections.\n\nWe are working on global neural connectivity and the reconsolidation of experience. The Corpus Callosum serves as the primary bridge for inter-hemispheric synchronization—uniting logic (left) with intuition and imagery (right). The Medial Prefrontal Cortex (mPFC) acts as the "conductor" of the system, integrating disparate aspects of experience into a unified narrative identity. The Anterior Cingulate Cortex (ACC) is the hub for reconciling conflicting signals and reducing cognitive dissonance. The Hippocampus enables contextual integration of memory—transforming "past mistakes" into useful resources. The Insular Cortex (Insula) serves as the bridge for body-mind integration.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'This protocol transforms you into the Architect of Internal Connections:',
+      items: [
+        {
+          name: 'Inter-hemispheric Synchronization',
+          text: 'Utilizing cross-lateral movements, binaural stimulation, and visualization techniques to activate the corpus callosum and unite rational thought with sensory perception.',
+        },
+        {
+          name: 'Vertical Integration',
+          text: 'Practices designed to connect the "instinctive" body with the "analytical" mind by strengthening connections between the insular cortex and the PFC.',
+        },
+        {
+          name: 'Reconsolidation of Experience',
+          text: 'Memory rewiring techniques where traumatic or negative patterns are recoded into resources through the shifting of neural context within the hippocampus.',
+        },
+        {
+          name: 'Value Synthesis (vmPFC)',
+          text: 'Exercises to align core beliefs with daily actions, eliminating energy leaks caused by internal arguments.',
+        },
+        {
+          name: 'Daily Inventory',
+          text: 'Maintaining the functional connectivity of high-order networks through conscious end-of-day reviews and the respiratory harmonization of all systems.',
+        },
+      ],
+    },
+    targets: {
+      intro: 'Target systems and biomarkers of progress:',
+      items: [
+        { name: 'Corpus Callosum (horizontal)', text: 'Inter-hemispheric synchronization.' },
+        { name: 'Cortex-Subcortex pathways (vertical)', text: 'Strengthening body-mind connections.' },
+        { name: 'Limbic system (emotional synthesis)', text: 'Integrating emotional signals into a coherent structure.' },
+        {
+          name: 'Biomarkers',
+          text: 'High Heart Rate Variability (HRV), absence of internal conflict ("the swan, the pike, and the crab" effect), and a state of stable flow.',
+        },
+      ],
+    },
+    results: {
+      intro: 'Achieving authentic personality wholeness.',
+      items: [
+        'You no longer waste energy on internal struggles.',
+        'Your system gains transparency and conductivity: thoughts, feelings, and actions flow in a single direction.',
+        'You become the Architect who sees the blueprint of your life in its entirety and is capable of managing it with masterly precision.',
+      ],
+    },
+    outro:
+      'You become the Architect of Internal Connections—the Master of Wholeness. Your system operates with maximum coherence and conductivity.',
+    glossaryLinks: [
+      { label: 'Medial Prefrontal Cortex', slug: 'medial-prefrontal-cortex' },
+      { label: 'Anterior Cingulate Cortex', slug: 'anterior-cingulate-cortex' },
+      { label: 'Hippocampus', slug: 'hippocampus' },
+      { label: 'Insular Cortex', slug: 'insular-cortex' },
+      { label: 'Prefrontal Cortex', slug: 'prefrontal-cortex' },
+      { label: 'Limbic System', slug: 'limbic-system' },
+      { label: 'Heart Rate Variability', slug: 'heart-rate-variability' },
+      { label: 'Cognitive System', slug: 'cognitive-system' },
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'Neuroplasticity', slug: 'neuroplasticity' },
+    ],
+    researchLinks: [
+      { label: 'Corpus callosum & hemispheric integration', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Memory reconsolidation', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
+    ],
+  },
+  'i-synchronize': {
+    badge: '[ PART 18 — LEVEL 6: BRAIN / AQUA II ]',
+    title: 'I',
+    titleHighlight: 'Synchronize',
+    subtitle: 'Protocol: Neuroelectric Synchronization and Collective Intelligence',
+    metaDescription:
+      'Part 18: Inter-brain hyperscanning, gamma rhythms, mirror neurons. The Networked Human. Master of collective intelligence. ONDA Life.',
+    intro:
+      'Part 18 is the triumph of network-centric thinking. In science, this is described as inter-brain hyperscanning: a state where the electrical brain rhythms of participants literally lock into phase, creating a single neural cluster. We move from "I-mode" to "Network Node" mode. This is the biological foundation for collective intelligence, where meanings and intentions are transmitted via "neural Wi-Fi," turning the group into a self-learning, synergistic entity.\n\nKey Biological Challenge: Overcoming egocentric filters to achieve "biological telepathy" and mastering the quality of one\'s own signal within the collective system.\n\nWe activate systems responsible for ultra-high-order resonance and inter-brain coherence. Gamma Rhythms (40 Hz) are the frequency at which informational streams from different brains instantaneously merge into a unified insight. The Mirror Neuron System (premotor cortex and inferior parietal lobule) provides pre-verbal understanding of the actions and intentions of partners. The Right Temporoparietal Junction (rTPJ) is a key hub for modeling the states of others and acting as a "social navigator." The Anterior Insula provides empathic fusion—you experience the state of the group as your own. The Dorsal Anterior Cingulate Cortex (dACC) maintains joint attention, turning the group into a single focus of creation.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'This protocol transforms you into a conductor of the collective mind:',
+      items: [
+        {
+          name: 'Neuroelectric Tuning',
+          text: 'Practices of group breath synchronization, shared visual fields, and vocal toning to align the electrical potentials of the group.',
+        },
+        {
+          name: 'Mirror Resonance Activation',
+          text: 'Exercises in non-verbal dialogue and "micro-mirroring" to intuitively read intentions without cognitive distortion.',
+        },
+        {
+          name: 'Gamma-Flow Synchronization',
+          text: 'Solving complex collective challenges and engaging in co-creation to break individual barriers and trigger shared high-frequency insights.',
+        },
+        {
+          name: 'Oxytocin Coupling',
+          text: 'Utilizing mechanisms of trust and radical vulnerability to reduce social noise and activate the "neurochemistry of belonging."',
+        },
+        {
+          name: 'Signal Management',
+          text: 'Techniques for maintaining the quality of one\'s own "broadcast" within the network, ensuring you are a productive node that amplifies global coherence.',
+        },
+      ],
+    },
+    targets: {
+      intro: 'Target systems and biomarkers of progress:',
+      items: [
+        { name: 'Mirror Neuron Network', text: 'Pre-verbal understanding of partners\' intentions and actions.' },
+        { name: 'Oxytocin System (bonding chemistry)', text: 'The neurochemistry of trust and belonging within the collective.' },
+        { name: 'Gamma-wave generators', text: 'Brain rhythms at 40 Hz where informational streams merge into unified insight.' },
+        {
+          name: 'Biomarkers',
+          text: 'Inter-brain phase coherence, synchronous pupil dilation (limbic resonance), Alpha-rhythm alignment within the group.',
+        },
+      ],
+    },
+    results: {
+      intro: 'Achieving the status of the Networked Human.',
+      items: [
+        'You become a co-author of the global informational field.',
+        'Any communication is no longer a struggle for influence but an opportunity to enter a state of collective flow.',
+        'You gain the ability to consciously synchronize with any system of interaction, accessing resources and solutions of an "oceanic" scale.',
+      ],
+    },
+    outro:
+      'The group\'s output exponentially exceeds the sum of individual efforts. You are the Networked Human—Master of Collective Intelligence.',
+    glossaryLinks: [
+      { label: 'Mirror Neurons', slug: 'mirror-neurons' },
+      { label: 'Oxytocin', slug: 'oxytocin' },
+      { label: 'Gamma Synchronization', slug: 'gamma-synchronization' },
+      { label: 'Right Temporoparietal Junction', slug: 'right-temporoparietal-junction' },
+      { label: 'Insular Cortex', slug: 'insular-cortex' },
+      { label: 'Anterior Cingulate Cortex', slug: 'anterior-cingulate-cortex' },
+      { label: 'Inter-brain Synchrony', slug: 'inter-brain-synchrony' },
+      { label: 'Inter-brain Coherence', slug: 'inter-brain-coherence' },
+      { label: 'Alpha State', slug: 'alpha-state' },
+    ],
+    researchLinks: [
+      { label: 'Inter-brain hyperscanning', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
+      { label: 'Gamma rhythms & collective cognition', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+    ],
+  },
+  'i-remember': {
+    badge: '[ PART 19 — LEVEL 7: DNA / AER II ]',
+    title: 'I',
+    titleHighlight: 'Remember',
+    subtitle: 'Protocol: DNA Consciousness and Evolutionary Memory',
+    metaDescription:
+      'Part 19: Epigenetic modulation, genetic memory, ancestral breathing. The Inheriting Human. Guardian of ancient memory. ONDA Life.',
+    intro:
+      'Part 19 is about working with the "Legacy Code" of your biology. We move beyond working memory (your thoughts and plans) and dive into the genetic and epigenetic memory of generations. Your body is not just "you"; it is a manuscript edited over billions of years. Here, we learn to recognize archaic life forms within ourselves: from Ice Age survival instincts to cellular algorithms that remember life\'s emergence from the ocean. DNA is viewed not as a sentence, but as a library of evolution\'s triumphant solutions.\n\nKey Biological Challenge: Moving ancient instinctive programs from blind automatism into a mode of conscious resource.\n\nWe activate the oldest layers of the nervous system and mechanisms of cellular recognition. Epigenetic Modulation influences gene expression by managing deep physiological states. The Reticular Formation and Brainstem provide access to the "reptilian" brain and archaic survival algorithms. The Hippocampus (implicit memory) works with the memory of forms and movements that precede the conscious "I." The Archicortex synchronizes limbic and instinctive patterns. Ultra-deep Interoception is the ability to read "tissue memory" and organ-level data.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'This protocol transforms you into a Guardian of Ancient Memory:',
+      items: [
+        {
+          name: 'Epigenetic Resonance',
+          text: '"Ancestral Breathing" practices to modulate the vagus nerve, affecting the expression of genes related to immunity and stress resilience.',
+        },
+        {
+          name: 'Evolutionary Recapitulation',
+          text: 'Contacting archaic brain layers to transform primal fears into instinctive wisdom and dignity.',
+        },
+        {
+          name: 'Cellular Retrospection',
+          text: 'Deep tissue scanning to "recognize" the history of your biological suit and activate self-healing mechanisms.',
+        },
+        {
+          name: 'Motor Memory of Forms',
+          text: 'Movements that activate the cerebellum and archicortex, restoring connection with the natural grace and power of the species.',
+        },
+        {
+          name: 'Guardian of the Code',
+          text: 'Integrating the stance of "I am the continuation of life," providing an unshakeable foundation and a sense of evolutionary validity in every breath.',
+        },
+      ],
+    },
+    targets: {
+      intro: 'Target systems and biomarkers of progress:',
+      items: [
+        { name: 'Genetic memory (epigenetic markers)', text: 'Influencing gene expression through deep physiological states.' },
+        { name: 'Limbic system (archaic emotions)', text: 'Transforming primal patterns into conscious resources.' },
+        { name: 'Fascial networks (somatic memory)', text: 'Stores of tissue-level and movement memory.' },
+        {
+          name: 'Biomarkers',
+          text: 'Reduction in systemic inflammation (epigenetic stabilization), shift in primordial breathing patterns, strengthening of instinctive calm in the face of core threats.',
+        },
+      ],
+    },
+    results: {
+      intro:
+        'Achieving the status of the Inheriting Human. You cease to perceive yourself as an isolated fragment of time and realize yourself as the living tip of a billion-year-old evolutionary arrow.',
+      items: [
+        'Instinctive Foundation: You gain access to nature\'s "database" of successful solutions. Fear and anxiety are replaced by a profound calm, as you feel the power of all your ancestors who survived to pass this code down to you.',
+        'Biological Dignity: Your body acquires a new stature and grace, characteristic of a being that recognizes its evolutionary worth.',
+        'Epigenetic Freedom: You are no longer a hostage to family traumas or hereditary scripts. You have learned to "read" the code and use its energy for creation rather than the repetition of errors.',
+        'Sensory Depth: Your interoception expands to the ability to feel the rhythms of life in every cell, providing an unshakeable sense of the "rightness" of your existence in this world.',
+      ],
+    },
+    outro:
+      'You are the continuation of life. Every breath carries evolutionary validity. The Guardian of the Code.',
+    glossaryLinks: [
+      { label: 'Hippocampus', slug: 'hippocampus' },
+      { label: 'Vagus Nerve', slug: 'vagus-nerve' },
+      { label: 'Reticular Formation', slug: 'reticular-formation' },
+      { label: 'Limbic System', slug: 'limbic-system' },
+      { label: 'Fascia', slug: 'fascia' },
+      { label: 'Cerebellum', slug: 'cerebellum' },
+      { label: 'Interoception', slug: 'interoception' },
+      { label: 'Brainstem', slug: 'brainstem' },
+    ],
+    researchLinks: [
+      { label: 'Epigenetics & stress resilience', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Vagus nerve & gene expression', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+    ],
+  },
+  'i-restore': {
+    badge: '[ PART 20 — LEVEL 7: DNA / AER II ]',
+    title: 'I',
+    titleHighlight: 'Restore',
+    subtitle: 'Protocol: Cellular Regeneration and DNA Self-Correction',
+    metaDescription:
+      'Part 20: Autophagy, DNA repair, parasympathetic activation. Biological Designer. Guardian of the primary code. Deep renewal. ONDA Life.',
+    intro:
+      'Part 20 is the transition from observation to active self-regulation. We leave the "software" level and enter the engineering department of self-regulating matter. Our task is to use the prefrontal cortex as a control panel to activate repair systems that usually operate in the background. We learn to shift the body from a mode of "survival and attrition" to a mode of "deep renewal." Restoration is understood here not as "healing," but as removing blockages from the natural flow of life.\n\nKey Biological Challenge: Activating autophagy and DNA repair mechanisms through conscious alignment with the body\'s "factory settings."\n\nWe work with homeorhesis (dynamic constancy) and the reduction of allostatic load. The Parasympathetic NS (Vagal Tone) is the primary lever for switching into trophotropic recovery and cellular repair. The DNA Repair System activates proofreading enzymes that correct errors in the genetic code. Limbic Decompression reduces amygdala activity to stop the release of cortisol, which inhibits regeneration. The Endocrine Axis stimulates the release of anabolic hormones and growth hormone through deep relaxation phases. Interoceptive Integration enables recognizing internal recovery signals as direct feedback from the tissues.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'This protocol transforms you into a Biological Designer:',
+      items: [
+        {
+          name: 'Parasympathetic Resource Activation',
+          text: '"Vagal Breathing" techniques to force the system into tissue repair mode and reduce systemic pressure.',
+        },
+        {
+          name: 'Cellular Detoxification',
+          text: 'Using visualization and micro-movements to stimulate lymphatic drainage and cleanse the extracellular matrix.',
+        },
+        {
+          name: 'Somatic Trauma Rewiring',
+          text: 'Releasing tensions "stuck" in the fascia through somatic release, restoring elasticity to the tissues.',
+        },
+        {
+          name: 'Telomerase Modulation',
+          text: 'Deep meditative states aimed at long-term preservation of genetic integrity.',
+        },
+        {
+          name: 'Primary Code Audit',
+          text: 'Daily alignment with the sensation of "health as the standard," forming a proactive neural set for continuous regeneration.',
+        },
+      ],
+    },
+    targets: {
+      intro: 'Target systems and biomarkers of progress:',
+      items: [
+        { name: 'Lysosomes (cellular waste recycling)', text: 'Activating autophagy and cellular cleanup.' },
+        { name: 'Telomeres (cellular longevity)', text: 'Preserving genetic integrity and cellular lifespan.' },
+        { name: 'Lymphatic system (detox)', text: 'Stimulating drainage and cleansing of the extracellular matrix.' },
+        {
+          name: 'Biomarkers',
+          text: 'Reduction in C-reactive protein (CRP), stabilization of cellular respiration and heart rate, increased speed of somatic response to relaxation.',
+        },
+      ],
+    },
+    results: {
+      intro:
+        'Achieving the status of the Biological Designer. You shift from passive aging and attrition to a mode of conscious regeneration. Your body ceases to be a "black box" and becomes a dynamic, manageable process.',
+      items: [
+        'Biological Flexibility: The system\'s ability to instantly switch from a state of high tension to deep recovery mode. You no longer "burn out" because repair cycles are integrated into your daily life.',
+        'Resource Optimization: The disappearance of chronic micro-tensions and systemic inflammation releases a massive amount of energy that was previously wasted on "holding the line."',
+        'Cellular Confidence: A profound, physically palpable sense of wholeness. You feel that your DNA is an active ally, capable of returning the system to full function after any load.',
+        '"Factory Settings" Effect: A sensation of clarity, lightness, and functionality reminiscent of the peak moments of youth, but backed by mature, conscious control.',
+      ],
+    },
+    outro:
+      'You are the Guardian of the Primary Code. The Biological Designer who restores the system to its blueprint.',
+    glossaryLinks: [
+      { label: 'Autophagy', slug: 'autophagy' },
+      { label: 'Parasympathetic System', slug: 'parasympathetic-nervous-system' },
+      { label: 'Lymphatic System', slug: 'lymphatic-system' },
+      { label: 'Vagus Nerve', slug: 'vagus-nerve' },
+      { label: 'Fascia', slug: 'fascia' },
+      { label: 'Amygdala', slug: 'amygdala' },
+      { label: 'Cortisol', slug: 'cortisol' },
+      { label: 'Interoception', slug: 'interoception' },
+      { label: 'Prefrontal Cortex', slug: 'prefrontal-cortex' },
+    ],
+    researchLinks: [
+      { label: 'Autophagy & cellular repair', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Vagal tone & regeneration', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+    ],
+  },
+  'i-synthesize': {
+    badge: '[ PART 21 — LEVEL 7: DNA / AER II ]',
+    title: 'I',
+    titleHighlight: 'Synthesize',
+    subtitle: 'Protocol: Epigenetic Mastery and Planetary Symbiosis',
+    metaDescription:
+      'Part 21: Epigenetic design, evolutionary creator. Engineer of life. Conscious co-author of the planetary field. ONDA Life.',
+    intro:
+      'Part 21 is the climax of the DNA Consciousness path. While Part 19 was about "remembering" the code and Part 20 was about "restoring" it, here we become its conscious editors. This is the Output mode. You are no longer just a biological object; you are an engineering node of evolution. We utilize maximum neural integration to turn personal experience into an "update" for the planetary field (noosphere), aligning the vector of personal development with the developmental vector of Life itself.\n\nKey Biological Challenge: Synthesizing individual identity with evolutionary function and transitioning to conscious epigenetic design.\n\nWe activate higher regulatory centers and prospection networks (future-building). The Orbitofrontal Cortex is the center for higher ethical decisions and evaluating the global significance of actions. Prospection Networks (PFC + DMN in Synthesis Mode) enable the brain to model the future based on creative patterns rather than fear. The Oxytocin and Serotonin Systems facilitate pro-social creation and a sense of deep connection with the biosphere. Epigenetic Mastery allows conscious influence on gene expression by managing mental and emotional states. Right-Hemisphere Holistic Vision perceives reality as a single living web where you are an active node.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'This protocol transforms you into an Evolutionary Creator:',
+      items: [
+        {
+          name: 'Epigenetic Design',
+          text: 'Conscious modulation of environment and internal states to direct the expression of genes related to immunity and longevity.',
+        },
+        {
+          name: 'Biological Transcendence',
+          text: '"Unity Breathing" practices to expand the boundaries of the "Self," perceiving the body as part of a planetary organism.',
+        },
+        {
+          name: 'Legacy Transmission',
+          text: 'Consciously shaping an informational signal through actions and intentions that impact the collective unconscious.',
+        },
+        {
+          name: 'Symphony of Symbioses',
+          text: 'Activating pro-social behavior and resonance with other life forms to create synergistic effects.',
+        },
+        {
+          name: 'Evolutionary Timing',
+          text: 'Synchronizing personal biological rhythms with global natural cycles for maximum creative impact.',
+        },
+      ],
+    },
+    targets: {
+      intro: 'Target systems and biomarkers of progress:',
+      items: [
+        { name: 'Quantum-biological DNA resonance', text: 'Conscious influence on gene expression and epigenetic design.' },
+        { name: 'Expanded empathy network', text: 'Pro-social creation and resonance with the biosphere.' },
+        { name: 'HPA axis (in eustress mode)', text: 'Healthy stress response aligned with creative challenge.' },
+        {
+          name: 'Biomarkers',
+          text: 'Sustainable flow state as default, heart rate coherence aligned with Schumann frequencies, integration of personal meaning with the global evolutionary vector.',
+        },
+      ],
+    },
+    results: {
+      intro:
+        'Achieving the status of the Evolutionary Creator. You transition from being a "consumer of life" to being its conscious co-author. Your biology and consciousness become instruments of a planetary scale.',
+      items: [
+        'Evolutionary Resonance: Your personal will and meaning fully align with the developmental vector of life. This provides access to an inexhaustible source of energy (eustress) and motivation, as you act not as an isolated self, but as a functional part of the whole.',
+        'Epigenetic Mastery: You gain the ability to consciously manage your states to broadcast a "healthy signal" into the informational field. You are no longer a victim of circumstances, but the editor of your biological future.',
+        'Sustainable Flow State: The ecstasy of creation becomes your baseline operating frequency. You are capable of maintaining high heart-brain coherence even in conditions of extreme uncertainty.',
+        'Informational Immortality: You realize that your experience, cleansed of trauma and integrated into wisdom, becomes part of the shared legacy of the biosphere. This provides a sense of profound peace and belonging to eternity.',
+      ],
+    },
+    outro:
+      'You are the Evolutionary Creator—the Engineer of Life. A clean informational imprint for future generations.',
+    glossaryLinks: [
+      { label: 'Orbitofrontal Cortex', slug: 'orbitofrontal-cortex' },
+      { label: 'Oxytocin', slug: 'oxytocin' },
+      { label: 'Serotonin', slug: 'serotonin' },
+      { label: 'Flow State', slug: 'flow-state' },
+      { label: 'HPA Axis', slug: 'hpa-axis' },
+      { label: 'Prefrontal Cortex', slug: 'prefrontal-cortex' },
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+    ],
+    researchLinks: [
+      { label: 'Epigenetics & consciousness', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Oxytocin & pro-social behavior', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+    ],
+  },
+  'i-resonate': {
+    badge: '[ PART 22 — LEVEL 8: ATOMIC / IGNIS II ]',
+    title: 'I',
+    titleHighlight: 'Resonate',
+    subtitle: 'Protocol: Quantum Consciousness and Energy Resonance',
+    metaDescription:
+      'Part 22: Quantum observer, wave-based perception. The Resonating Human. Gamma coherence, frequency sovereignty. ONDA Life.',
+    intro:
+      'Part 22 is a transition to the software of reality itself. From a quantum physics perspective, your body is 99.9999999% vacuum filled with energy fields. What you perceive as "solid" is merely the resistance of electromagnetic fields. In IGNIS II, we learn to perceive this interface directly. We deconstruct the "biographical ego" (DMN) and activate the "Core Self." You are no longer a biological object; you are a wave packet in an infinite ocean of frequencies, capable of influencing the structure of reality through the act of observation and your internal vibration.\n\nKey Biological Challenge: Stripping away the neural filters of "density" and shifting from object-based to wave-based perception.\n\nWe retune the brain to function as a high-frequency receiver-transmitter. The Pineal Gland acts as a piezoelectric transducer, converting subtle electromagnetic signals into neurochemical impulses. The Thalamus enables deep tuning of sensory filters to allow more subtle frequencies into consciousness. Gamma Rhythms (40+ Hz) create a state of maximum inter-hemispheric coherence where consciousness dissolves the ego\'s boundaries. Parietal Lobe deactivation reduces physical spatial orientation to experience transpersonal unity. The Right Hemisphere dominates with holistic, field-oriented perception over discrete logic.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'This protocol transforms you into a Quantum Observer:',
+      items: [
+        {
+          name: 'Deconstruction of Density',
+          text: 'Scanning the "void" within the atoms of the body, shifting focus from solid tissue to the energy space within.',
+        },
+        {
+          name: 'Vibrational Tuning Fork',
+          text: 'Consciously managing internal frequency through breath and specific sonic resonances that modulate neurotransmitters.',
+        },
+        {
+          name: 'Quantum Observation',
+          text: 'Holding attention on the "probability field," where the act of observation begins to change the quality of internal states.',
+        },
+        {
+          name: 'Shift to Pure Presence',
+          text: 'Meditatively holding the "I AM" point, stripped of roles, history, and biological programming (DMN deconstruction).',
+        },
+        {
+          name: 'Infinity Resonance',
+          text: 'Practices of "merging with light" that lower parietal lobe activity and blur the lines between observer and observed.',
+        },
+      ],
+    },
+    targets: {
+      intro: 'Target systems and biomarkers of progress:',
+      items: [
+        { name: 'Reticular Formation', text: 'Primary frequency filter for incoming data.' },
+        { name: 'Insular Cortex', text: 'Subtle vibrational interoception and internal resonance.' },
+        { name: 'Somatosensory Cortex', text: 'Expanding the maps of bodily perception into the energetic field.' },
+        {
+          name: 'Biomarkers',
+          text: 'Stable Gamma-wave presence (40+ Hz), dissolution of bodily boundaries (field-like state), high Heart-Brain Phase Coherence.',
+        },
+      ],
+    },
+    results: {
+      intro:
+        'Achieving the status of the Resonating Human. You make the transition from an object-based perception of reality to a wave-based one. Your presence becomes more than a biological fact; it becomes an active frequency signal.',
+      items: [
+        'Quantum Plasticity: You stop feeling your body as a "solid barrier." A physical sensation of transparency and lightness emerges, where the boundaries of the "Self" become permeable to energy flows.',
+        'Frequency Sovereignty: You gain the ability to consciously choose your internal vibration. Instead of reactively adapting to the chaos of the external environment, you become the "tuning fork" that harmonizes the space around you.',
+        'Gamma Coherence: A state of expanded consciousness becomes accessible through a volitional impulse. You are capable of maintaining high brain coherence, providing instant access to intuitive insights and "non-local" knowledge.',
+        'Deconstruction of Ego-Filters: Purifying perception from biographical noise and social roles. You reside in the point of "Pure Presence," where reality is perceived as a living, vibrating stream of probabilities that you influence through the very act of your observation.',
+      ],
+    },
+    outro:
+      'You are the Resonating Human—the Quantum Observer. A wave packet in an infinite ocean of frequencies.',
+    glossaryLinks: [
+      { label: 'Thalamus', slug: 'thalamus' },
+      { label: 'Gamma Synchronization', slug: 'gamma-synchronization' },
+      { label: 'Insular Cortex', slug: 'insular-cortex' },
+      { label: 'Reticular Formation', slug: 'reticular-formation' },
+      { label: 'Somatosensory Cortex', slug: 'somatosensory-cortex' },
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'Interoception', slug: 'interoception' },
+      { label: 'Flow State', slug: 'flow-state' },
+    ],
+    researchLinks: [
+      { label: 'Gamma rhythms & consciousness', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Interoception & resonance', url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/' },
+    ],
+  },
+  'i-am-wholeness': {
+    badge: '[ PART 23 — LEVEL 8: ATOMIC / IGNIS II ]',
+    title: 'I Am',
+    titleHighlight: 'Wholeness',
+    subtitle: 'Protocol: Non-local Unity and Quantum Self-Awareness',
+    metaDescription:
+      'Part 23: The Quantum Human, Universal Assembly Point. Integrated Information Theory, collapse of duality. Non-local self-awareness. ONDA Life.',
+    intro:
+      'Part 23 is the climax of the ONDA system, grounded in Integrated Information Theory (IIT) and Field Theory. From the perspective of physics, we are working with the state of Quantum Entanglement. You are a node in the informational web of existence, where every part of the system instantly "knows" the state of every other part. Separation is recognized as mere noise in the transmission channel; Wholeness is the clear signal. This is the stage where attention ceases to divide, and consciousness becomes a self-luminous field without an external source.\n\nKey Biological Challenge: Collapsing the "Subject-Object" duality and transitioning to non-local self-awareness.\n\nThe final synchronization of the brain\'s global networks. The Prefrontal-Parietal Network achieves full integration of spatial perception, where the boundary between "inner" and "outer" vanishes. The Default Mode Network (DMN) enters self-transcendence—the complete dissolution of the ego-narrative and biographical filters. The Salience Network scales attention to the macrocosm: everything is perceived as fundamentally significant and unified. Thalamocortical Loops enable global synchronization of all perceptual levels via high-amplitude Gamma rhythms. The Right Hemisphere dominates with non-dual, holistic perception of reality.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'This protocol transforms you into the Universal Assembly Point:',
+      items: [
+        {
+          name: 'Ocean Meditation',
+          text: 'Practices aimed at reducing DMN (Default Mode Network) activity to erase the illusion of separateness and experience unity with all of existence.',
+        },
+        {
+          name: 'Mirror of Consciousness',
+          text: 'Realizing oneself as the inseparable unity of the observer, the process of observation, and the observed reality.',
+        },
+        {
+          name: 'Alchemy of Opposites',
+          text: 'Integrating all previously mastered levels (Terra, Aqua, Aer, Ignis) into a single, non-contradictory structure through the activation of the corpus callosum.',
+        },
+        {
+          name: 'Void Full of Form',
+          text: 'Holding attention in the state of "I AM," where the vacuum of consciousness is perceived as the primordial source of all existing forms.',
+        },
+        {
+          name: 'Quantum Prospection',
+          text: 'Direct creation of reality from the point of stillness, where intention instantaneously modulates the informational field.',
+        },
+      ],
+    },
+    targets: {
+      intro: 'Target systems and biomarkers of progress:',
+      items: [
+        { name: 'Global Brain Workspace', text: 'Full integration of spatial perception and non-local awareness.' },
+        { name: 'Dorsolateral PFC (bypass)', text: 'Deactivation of the "ego-censor" to allow direct access to Core Presence.' },
+        { name: 'Insular Cortex', text: 'Non-local interoception—sensing the field beyond bodily boundaries.' },
+        {
+          name: 'Biomarkers',
+          text: 'Global Gamma-coherence across all brain regions, disappearance of the gap between sensory input and internal representation, total absence of existential anxiety.',
+        },
+      ],
+    },
+    results: {
+      intro:
+        'Achieving the status of the Quantum Human / Universal Assembly Point. You reach a state of inseparable unity, where the personal "Self" is no longer a limitation but becomes a transparent conduit for the creative energy of the Cosmos.',
+      items: [
+        'Collapse of Duality: The disappearance of the internal division between "observer" and "observed." You no longer look at the world—you are the very process of the world unfolding.',
+        'Existential Sovereignty: The total eradication of existential anxiety and fear. Once you realize yourself as the "Ocean," the storms on the surface of individual events can no longer disturb your primordial silence.',
+        'Global Coherence: Your nervous system operates in a state of maximum connectivity. This grants the ability to instantaneously integrate any contradictions and find solutions from a state of "non-local insight."',
+        'Alchemy of Creation: You gain the ability to directly influence reality through intention. Your will, purified of ego-filters, aligns with the will of evolution, making your actions profoundly precise and effective.',
+        'Pure Presence: You become the embodiment of harmony. Your presence in any system automatically increases its coherence and facilitates the healing of the surrounding space.',
+      ],
+    },
+    outro:
+      'You are the Quantum Human—the Universal Assembly Point. A transparent conduit for the creative energy of the Cosmos.',
+    glossaryLinks: [
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'Insular Cortex', slug: 'insular-cortex' },
+      { label: 'Gamma Synchronization', slug: 'gamma-synchronization' },
+      { label: 'Prefrontal Cortex', slug: 'prefrontal-cortex' },
+      { label: 'Thalamus', slug: 'thalamus' },
+      { label: 'Flow State', slug: 'flow-state' },
+    ],
+    researchLinks: [
+      { label: 'Integrated Information Theory', url: 'https://pubmed.ncbi.nlm.nih.gov/27161172/' },
+      { label: 'DMN & self-transcendence', url: 'https://pubmed.ncbi.nlm.nih.gov/21390261/' },
+    ],
+  },
+  'i-am-the-source': {
+    badge: '[ PART 24 — LEVEL 8: ATOMIC / IGNIS II ]',
+    title: 'I Am the',
+    titleHighlight: 'Source',
+    subtitle: 'Protocol: Consciousness Singularity and Quantum Creation',
+    metaDescription:
+      'Part 24: Reality Creator, Zero Point. Zero-Point Energy, consciousness superconductivity. Pure Being. ONDA Life.',
+    intro:
+      'Part 24 is the return to the "Singularity Point." From the perspective of fundamental physics, we are working with Zero-Point Energy. The vacuum is not empty; it is a medium of infinite energy density. You are that Vacuum. At this level, you don\'t just manage reality—you realize yourself as the "space" from which it erupts every nanosecond. This is the recognition of a simple yet radical fact: everything you experience happens within the field of your consciousness.\n\nKey Biological Challenge: Transitioning from the identity of "I am someone" to the realization of "I am That from which SOMEONE arises."\n\nA state of maximum coherence and "creative stillness." Neural Activity Zero Point: a state of consciousness preceding the emergence of thought. The Thalamus functions as the Gateway—the central hub distributing the signals of Being from the potential to the manifested. The Default Mode Network (DMN) enters Annihilation Mode: the total absence of "ego-noise" and biographical programming. Ultra-High Intensity Gamma Bursts create moments of "quantum leaps" in awareness, uniting all brain regions into a single field. Deep Brainstem Structures activate primordial biological being that exists before concepts and words.',
+    protocol: {
+      title: 'Biological Protocol',
+      intro: 'This protocol transforms you into the Master-Creator:',
+      items: [
+        {
+          name: 'Zero Point Practice',
+          text: 'Holding attention in the silence before a thought arises. Entering the space of "Pure Awareness."',
+        },
+        {
+          name: 'Collapse and Infinity',
+          text: 'Simultaneously holding attention in an infinitesimal point (center of the head) and the infinite space surrounding it.',
+        },
+        {
+          name: 'Radiation of Creation',
+          text: 'Consciously radiating will and intent ("Clarity," "Kindness," "Creation") from the center of your being into the field of reality.',
+        },
+        {
+          name: 'Author of Reality',
+          text: 'Realizing how attention constructs the object. Shifting from passive perception to the active "writing" of meanings.',
+        },
+        {
+          name: 'Path Integration',
+          text: 'A state where "Flow" (AQUA), "Structure" (AER), and "Vibration" (IGNIS) merge into a single, indivisible Presence.',
+        },
+      ],
+    },
+    targets: {
+      intro: 'Target systems and biomarkers of progress:',
+      items: [
+        { name: 'Entire Consciousness Circuit', text: 'The full integration of the consciousness system.' },
+        { name: 'Reticular Formation', text: 'Primary filter and gateway for ascending signals.' },
+        { name: 'Thalamo-cortical Resonance', text: 'Central hub distributing Being from potential to manifested.' },
+        {
+          name: 'Biomarkers',
+          text: 'Superconductivity State (absence of mental and physical resistance), Brainwave Coherence approaching 100%, Instant Autonomic Stabilization. Final formula: I = Source = Consciousness = Reality.',
+        },
+      ],
+    },
+    results: {
+      intro:
+        'Achieving the status of the Reality Creator / Zero Point. You reach a state of consciousness "superconductivity," where the division between internal intent and the external world is permanently dissolved.',
+      items: [
+        'Fundamental Peace: Your baseline state is a silence independent of external circumstances. You no longer "seek" peace; you are the very peace in which all events unfold.',
+        'Instant Realignment: The ability to return the system to a state of balance within nanoseconds. Any stress or noise is instantaneously annihilated in the "zero point" of your presence.',
+        'Direct Authorship: You realize yourself as the cause of your states. Life stops "happening" to you; it begins to "emanate" from you. This grants absolute responsibility and infinite creative freedom.',
+        'Quantum Clarity: Intellect and intuition merge into a single stream of direct knowledge. You see the essence of things before they are clothed in words or concepts.',
+        'Radiation of Presence: Your field becomes so coherent that your mere presence harmonizes the surrounding environment, ordering chaos and activating the potential of life in others.',
+      ],
+    },
+    outro:
+      'You are the Reality Creator—the Zero Point. The space from which all of existence erupts.',
+    glossaryLinks: [
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'Thalamus', slug: 'thalamus' },
+      { label: 'Gamma Synchronization', slug: 'gamma-synchronization' },
+      { label: 'Reticular Formation', slug: 'reticular-formation' },
+      { label: 'Flow State', slug: 'flow-state' },
+      { label: 'Coherence', slug: 'coherence' },
+    ],
+    researchLinks: [
+      { label: 'Zero-point energy & consciousness', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Thalamocortical resonance', url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/' },
     ],
   },
 }

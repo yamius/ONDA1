@@ -83,4 +83,44 @@ export const PART_SEO: Record<string, { title: string; description: string }> = 
     description:
       'Neural distance and metacognitive monitoring. DMN deactivation, witness consciousness. Become the meta-programmer of your own brain.',
   },
+  'i-integrate': {
+    title: 'Part 17: Architect of Internal Connections | ONDA Life',
+    description:
+      'Global neural integration. Corpus callosum, mPFC, ACC. Inter-hemispheric and vertical coherence. Master of wholeness.',
+  },
+  'i-synchronize': {
+    title: 'Part 18: The Networked Human | ONDA Life',
+    description:
+      'Inter-brain hyperscanning, gamma rhythms, mirror neurons. Master of collective intelligence. Neural Wi-Fi.',
+  },
+  'i-remember': {
+    title: 'Part 19: The Inheriting Human | ONDA Life',
+    description:
+      'Epigenetic modulation, genetic memory, ancestral breathing. Guardian of ancient memory. DNA consciousness.',
+  },
+  'i-restore': {
+    title: 'Part 20: Biological Designer | ONDA Life',
+    description:
+      'Autophagy, DNA repair, parasympathetic activation. Guardian of the primary code. Cellular regeneration.',
+  },
+  'i-synthesize': {
+    title: 'Part 21: Evolutionary Creator | ONDA Life',
+    description:
+      'Epigenetic mastery, planetary symbiosis. Engineer of life. Conscious co-author of the noosphere.',
+  },
+  'i-resonate': {
+    title: 'Part 22: The Resonating Human | ONDA Life',
+    description:
+      'Quantum observer, wave-based perception. Gamma coherence, frequency sovereignty. Energy resonance.',
+  },
+  'i-am-wholeness': {
+    title: 'Part 23: The Quantum Human | ONDA Life',
+    description:
+      'Universal Assembly Point. Integrated Information Theory, non-local unity. Collapse of duality, existential sovereignty.',
+  },
+  'i-am-the-source': {
+    title: 'Part 24: Reality Creator | ONDA Life',
+    description:
+      'Zero Point, Pure Being. Zero-Point Energy, consciousness superconductivity. Direct authorship of reality.',
+  },
 }
