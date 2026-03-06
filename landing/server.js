@@ -297,7 +297,7 @@ app.use((req, res, next) => {
         res.sendFile(indexHtml)
       }
     } else {
-      res.status(404).send('Not found. Run: npm run build')
+      res.status(200).send('<!doctype html><html><head><meta charset="UTF-8"><title>ONDA Life</title><meta http-equiv="refresh" content="10"></head><body style="background:#050a0f;color:#fff;font-family:monospace;display:flex;align-items:center;justify-content:center;height:100vh;margin:0"><p>Building... please wait.</p></body></html>')
     }
   }
 })
