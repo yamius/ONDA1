@@ -19,6 +19,17 @@ const SITE_URL = 'https://onda-life.com'
 const app = express()
 app.use(express.json({ limit: '1mb' }))
 
+// Canonical URLs: no trailing slash. Redirect /articles/ -> /articles (301)
+app.use((req, res, next) => {
+  if (req.method !== 'GET' && req.method !== 'HEAD') return next()
+  const path = req.path
+  if (path.length > 1 && path.endsWith('/')) {
+    const canonical = path.slice(0, -1) || '/'
+    return res.redirect(301, canonical + (req.url.slice(req.path.length) || ''))
+  }
+  next()
+})
+
 // Debug: where articles are stored (for Replit Files visibility)
 app.get('/api/articles-path', (req, res) => {
   res.json({ path: resolve(articlesDir), exists: existsSync(articlesDir) })
@@ -238,6 +249,7 @@ app.use(
     maxAge: '1y',
     immutable: true,
     index: false, // disable default index.html so we control SSG routing
+    redirect: false, // no trailing-slash redirect: /articles stays /articles (canonical)
   }),
 )
 

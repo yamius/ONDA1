@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Allow: /glossary
+Allow: /level
+Allow: /part
 Allow: /about
 Allow: /articles
 Disallow: /static/
