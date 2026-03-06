@@ -302,22 +302,19 @@ app.use((req, res, next) => {
   }
 })
 
-// Start server; build dist if missing (Replit Autoscale)
-function start() {
+// Start server FIRST (healthcheck!), then build dist if missing (Replit Autoscale)
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Server is running on port ${port}`)
+
   if (!existsSync(join(distDir, 'index.html'))) {
-    console.log('dist/ not found — running build...')
-    try {
-      execSync('npm run build', { cwd: __dirname, stdio: 'inherit' })
-    } catch (err) {
-      console.error('Build failed:', err.message)
-      process.exit(1)
-    }
+    console.log('dist/ not found — running build in background...')
+    import('child_process').then(({ exec }) => {
+      exec('npm run build', { cwd: __dirname }, (err) => {
+        if (err) console.error('Build failed:', err.message)
+        else console.log('Background build complete — dist/ ready')
+      })
+    })
   }
 
-  app.listen(port, '0.0.0.0', () => {
-    console.log(`Server is running on port ${port}`)
-    import('./bot.js').then(({ startBot }) => startBot())
-  })
-}
-
-start()
+  import('./bot.js').then(({ startBot }) => startBot())
+})
