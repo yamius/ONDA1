@@ -35,6 +35,10 @@ export const parts: Record<string, {
   introBlocks?: IntroBlock[][]
   /** Optional: YouTube video URL (shorts or regular). Rendered after intro. */
   videoUrl?: string
+  /** Optional: header image (SEO path, e.g. /images/parts/onda-part-1-i-am-conscious-architecture.png) */
+  image?: string
+  imageAlt?: string
+  imageTitle?: string
   /** Optional: FAQ for "People also ask" SEO. */
   faq?: { question: string; answer: string }[]
   protocol: { title: string; intro: string; items: { name: string; text: string }[] }
@@ -50,6 +54,10 @@ export const parts: Record<string, {
     titleHighlight: 'Am',
     subtitle: 'Protocol: Homeostasis and Primary Interoception',
     metaDescription: 'Part 1: Homeostasis and primary interoception. Calibrate your biological zero — HRV, vagal tone, diaphragmatic release. ONDA Life.',
+    image: '/images/parts/onda-part-1-i-am-conscious-architecture.png',
+    imageAlt:
+      'Human consciousness architecture, self-awareness biology, ONDA I AM identity, neural lattice coherence visualized.',
+    imageTitle: '[I_AM]: Visualizing the coherent neural lattice that gives rise to fundamental self-awareness.',
     intro:
       'We descend into the very foundation\u2014the \u201cbiological zero.\u201d This is the level of cellular survival, where consciousness is not yet separated from metabolic processes. The primary goal of this stage is to shift the system from a mode of \u201canxious anticipation\u201d and deficit into a mode of \u201csafe being.\u201d\n\nAt this level, we work with the most ancient brain structures that govern life before we even begin to think about it: primary interoception (the connection between the brainstem and the insula), vagal tone (exiting the \u201cfreeze\u201d or \u201cflight\u201d response), sensory navigation (thalamic calibration), and the activation of proto-consciousness through contact with physiological rhythms.',
     protocol: {
@@ -130,6 +138,10 @@ export const parts: Record<string, {
     titleHighlight: 'Move',
     subtitle: 'Protocol: Rhythmic Coherence and Primary Locomotion',
     metaDescription: 'Part 2: Rhythmic coherence and CPG. Awaken primary motor skills — fluid body, effortless movement. ONDA Life.',
+    image: '/images/parts/onda-part-2-i-move-kinetic-architecture.png',
+    imageAlt:
+      'Human kinetic architecture, self-awareness biology, ONDA I MOVE identity, neural lattice coherence visualized.',
+    imageTitle: '[I_MOVE]: Visualizing the coherent neural lattice that gives rise to fundamental kinetic awareness.',
     intro:
       'The transition from the static state of \u201cI Am\u201d to the dynamic \u201cI Flow.\u201d At this stage, we awaken primary motor skills and master navigation within the flow. This is the engineering of the \u201cfluid body,\u201d where movement does not require exhausting effort but is born from resonance with the environment.\n\nWe descend to the level of \u201cfish intelligence\u201d\u2014activating ancient brainstem structures and spinal cord circuits responsible for automatic grace and survival: activating CPGs (Central Pattern Generators), engaging primary motor circuits of the brainstem, working with spinal micro-movements, and learning to navigate through the flow of incoming stimuli.',
     protocol: {
@@ -198,6 +210,10 @@ export const parts: Record<string, {
     titleHighlight: 'Adapt',
     subtitle: 'Protocol: Gravity Mastery and Interoception',
     metaDescription: 'Part 3: Gravity mastery and body armor release. From swimming to support — interoception and energy efficiency. ONDA Life.',
+    image: '/images/parts/onda-part-3-i-adapt-biological-resilience.png',
+    imageAlt:
+      'Biological adaptation, stress resilience biohacking, ONDA I ADAPT, homeostasis optimization visualized.',
+    imageTitle: '[I_ADAPT]: Visualizing the conversion of external stress into internal systemic strength through homeostatic coherence.',
     intro:
       'This stage is dedicated to mastering gravity and transitioning from the state of \u201cswimming\u201d (complete dependence on the environment) to \u201csupport\u201d (attaining internal autonomy). Here, we lay the foundation for how our body interacts with the physical world. We move from passive survival to the active management of our position in space.\n\nFrom a neurophysiological perspective, we are working with the deepest, automated processes. The primary goal is to tune the brainstem and reticular formation, as well as to activate the primary sensorimotor cortex: managing muscle tone (optimizing the balance between flexors and extensors), learning to switch rapidly between states of \u201crelaxation/fluidity\u201d and \u201ctone/stability,\u201d and activating spinal pattern generators for natural locomotion.',
     protocol: {
@@ -272,6 +288,10 @@ export const parts: Record<string, {
     titleHighlight: 'Maneuver',
     subtitle: 'Protocol: The Maneuverability of the \u201cSmall Mammal\u201d',
     metaDescription: 'Part 4: Neuroception and polyvagal drift. Small mammal maneuverability — cortisol and adrenaline as fuel. ONDA Life.',
+    image: '/images/parts/onda-part-4-i-maneuver-cognitive-strategy-matrix.png',
+    imageAlt:
+      'Cognitive maneuvering, strategic decision making biohacking, ONDA I MANEUVER, neural executive function visualized.',
+    imageTitle: '[I_MANEUVER]: Visualizing the multi-dimensional decision matrix and tactical intelligence synchronization.',
     intro:
       'Welcome to the stage where biological flexibility transforms into applied mastery. If the previous stages were about learning to simply \u201cbe,\u201d here we learn to be in motion.\n\nAt the core of Part 4 lies the evolutionary gift of small mammals: the ability for instantaneous evasion, subtle navigation, and micro-avoidance of threats without falling into paralyzing stress. We translate maneuverability from a matter of \u201cluck\u201d into a measurable biological skill.',
     protocol: {
@@ -345,6 +365,10 @@ export const parts: Record<string, {
     titleHighlight: 'the Territory',
     subtitle: 'Protocol: The Strength of the \u201cLarge Mammal\u201d',
     metaDescription: 'Part 5: DHEA, ventral vagus, calm dominance. Large mammal strength — density of presence. ONDA Life.',
+    image: '/images/parts/onda-part-5-i-guard-territory-immune-security.png',
+    imageAlt:
+      'Immune system security, biological territory defense, ONDA I GUARD TERRITORY, microbiome integrity visualized.',
+    imageTitle: '[I_GUARD]: Visualizing the multi-layered immune perimeter and the maintenance of biological sovereignty.',
     intro:
       'At this stage, we stop maneuvering and begin to take up space. We shift to working with the body\u2019s biochemical reactor at the level of the \u201clarge beast.\u201d Here, emotion is viewed not as an abstract feeling, but as a bio-engineering process with a hormonal signature, a neuromotor pattern, and a vegetative profile.\n\nIn Part 5, our focus is homeostasis. This is the ability to maintain the stability of the internal environment, the density of presence, and a state of \u201cstatus calm,\u201d regardless of the external pressure the world exerts on us.',
     protocol: {
@@ -420,6 +444,10 @@ export const parts: Record<string, {
     titleHighlight: 'the Pack',
     subtitle: 'Protocol: The Social Resonance of the \u201cHigher Primate\u201d',
     metaDescription: 'Part 6: Mirror neurons, oxytocin, social resonance. Higher primate — co-regulation and pack dynamics. ONDA Life.',
+    image: '/images/parts/onda-part-6-pack-synchronization-social-intelligence.png',
+    imageAlt:
+      'Social brain synchronization, collective intelligence biohacking, ONDA I AM PART OF THE PACK, neural resonance visualized.',
+    imageTitle: '[PACK_MODE_ACTIVE]: Visualizing the coherent neural and hormonal synchronization within a high-performance social collective.',
     intro:
       'Welcome to the pinnacle of Level 2. While previous stages were focused on building maneuverability and personal boundaries, Part 6 moves us toward the most complex biological interface: social resonance.\n\nBiologically, this is the stage of the \u201cHigher Primate.\u201d Our task is to transform individual survival into collective power. We learn to synchronize our biological rhythms with those of others without losing our own \u201ccoherent center.\u201d We don\u2019t just exist near people\u2014we enter into resonance with them.',
     protocol: {
@@ -1454,18 +1482,14 @@ export function PartPage() {
         <Link to="/" className="transition-colors hover:text-white/50">
           Home
         </Link>
-        <span>/</span>
         {level && (
           <>
+            <span>/</span>
             <Link to={`/level/${level.number}`} className="transition-colors hover:text-white/50">
               Level {level.number}: {level.name}
             </Link>
-            <span>/</span>
           </>
         )}
-        <span className="text-terminal-green/60" aria-current="page">
-          {part.title} {part.titleHighlight}
-        </span>
       </nav>
 
       <h1 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
@@ -1474,6 +1498,18 @@ export function PartPage() {
           {part.titleHighlight}
         </span>
       </h1>
+
+      {part.image && (
+        <figure className="mb-8 overflow-hidden rounded-xl border border-white/10">
+          <img
+            src={part.image}
+            alt={part.imageAlt ?? ''}
+            title={part.imageTitle}
+            loading="lazy"
+            className="w-full object-cover"
+          />
+        </figure>
+      )}
 
       <h2 className="mb-8 text-2xl font-bold tracking-tight md:text-4xl">
         <span className="text-terminal-green">{part.subtitle.split(':')[0]}:</span>

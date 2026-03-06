@@ -2,7 +2,6 @@
  * SSR entry point for prerender. Uses StaticRouter instead of BrowserRouter.
  * Exports the app for a given location.
  */
-import { StrictMode } from 'react'
 import { StaticRouter, Routes, Route, useParams } from 'react-router-dom'
 import { Layout } from './components/Layout'
 import { GlossaryTermPage } from './pages/GlossaryTermPage'
@@ -23,8 +22,7 @@ function ArticlesSlugRouter() {
 
 export function createApp(location: string) {
   return (
-    <StrictMode>
-      <StaticRouter location={location}>
+    <StaticRouter location={location}>
         <Routes>
           <Route element={<Layout />}>
             {staticRoutes.map((r) => (
@@ -38,6 +36,5 @@ export function createApp(location: string) {
           </Route>
         </Routes>
       </StaticRouter>
-    </StrictMode>
   )
 }

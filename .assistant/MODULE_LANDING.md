@@ -57,12 +57,16 @@ landing/
 ├── package.json                  ← Зависимости и скрипты
 ├── public/
 │   ├── favicon.svg               ← Логотип ONDA Life (волна + текст, SVG)
-│   └── hero-bg.png               ← Фоновое изображение hero-секции
+│   ├── hero-bg.png               ← Фоновое изображение hero-секции
+│   ├── robots.txt                ← Allow/Disallow, Sitemap (без trailing slash в директивах)
+│   ├── images/articles/          ← Header-изображения статей (SEO-имена: keyword-topic-onda.png)
+│   └── images/parts/             ← Header-изображения Part-страниц (SEO-имена: onda-part-N-slug-*.png)
 └── src/
     ├── main.tsx                  ← Роутинг: /, /about, /glossary, /glossary/:slug, /part/:slug
     ├── index.css                 ← Tailwind v4, кастомные цвета, анимации
     ├── components/
-    │   ├── Layout.tsx            ← Навигация + футер + scroll-to-top при навигации
+    │   ├── Layout.tsx            ← Навигация + футер + FooterSitemap + scroll-to-top при навигации
+    │   ├── FooterSitemap.tsx     ← HTML-карта сайта в футере (для роботов, свёрнута по умолчанию)
     │   ├── HeroSection.tsx       ← Главный экран с параллакс-фоном
     │   ├── ConceptSection.tsx    ← Секция "Your Body is a Computer"
     │   ├── LevelsSection.tsx     ← 8 уровней (карточки, кликабельные parts → /part/:slug)
@@ -110,13 +114,18 @@ landing/
 - `title` / `titleHighlight` — заголовок с градиентным выделением
 - `subtitle` — подзаголовок протокола
 - `intro` — вводный текст
+- **Header-изображение (опционально):**
+  - `image` — путь `/images/parts/onda-part-N-slug-conscious-architecture.png`
+  - `imageAlt` — SEO alt (~125 символов: keywords)
+  - `imageTitle` — title-атрибут (hover, техническое описание)
+  - Рендер: под заголовком h1, без подписи, `loading="lazy"`
 - `sections` — секции (Biological Protocol, Target Systems, Results & Benefits)
 - `glossaryLinks` — ссылки на термины глоссария (теги внизу страницы)
 
 Для добавления новой Part: добавить объект в `parts` в `PartPage.tsx` и `slug` в соответствующий part в `LevelsSection.tsx`.
 
 Текущие Part-страницы:
-- `/part/i-am` — Part 1: I Am (Level 1, BODY / TERRA)
+- `/part/i-am` — Part 1: I Am (Level 1, BODY / TERRA) — с header-изображением сознания/нейросети
 
 ---
 
@@ -377,6 +386,34 @@ for Your Consciousness → text-white
 - **Body Systems** — Interoception, Homeostasis, Primary Interoception, Metabolism, Vagus Nerve
 - **Gamification** — OND Tokens
 
+### SEO и индексация (последние изменения)
+
+**Канонические URL без trailing slash.** Все URL на сайте используют формат без слэша на конце (`/articles`, `/glossary/vagus-nerve`). Сервер (`server.js`):
+- `redirect: false` в `express.static` — отключает редирект `/articles` → `/articles/`
+- Middleware редиректит запросы со слэшем (`/articles/`) 301 на канонический URL без слэша (`/articles`)
+
+**robots.txt** (`landing/public/robots.txt`):
+```
+User-agent: *
+Allow: /
+Allow: /glossary
+Allow: /level
+Allow: /part
+Allow: /about
+Allow: /articles
+Disallow: /static/
+Sitemap: https://onda-life.com/sitemap.xml
+```
+Директивы `Allow` — без завершающих слэшей, в соответствии со стандартом URL.
+
+**HTML-карта сайта (FooterSitemap).** В футере на каждой странице — свёрнутый блок «Site map» (`<details>`), содержащий прямые ссылки на все важные разделы: Main, Articles, Levels & Parts, Glossary. Контент всегда в DOM — роботы видят ссылки без клика. Компонент: `landing/src/components/FooterSitemap.tsx`.
+
+**Бургер-меню.** Ссылки (About, Glossary, Articles, Download, Contact) всегда в DOM, скрыты через `opacity-0` и `pointer-events-none`, когда меню закрыто. Роботы находят ссылки при первичной загрузке.
+
+**Страница About.** `meta-inject.ts` + `AboutPage.tsx`: title, description, og:title, og:description, og:type, JSON-LD `AboutPage` с `SoftwareApplication` в mainEntity. H1: «What is ONDA Life».
+
+**sitemap.xml.** Генерируется при `npm run build` (`scripts/sitemap.ts`), все URL с `https://onda-life.com`, без trailing slash. Production-сервер при необходимости отдаёт динамический sitemap (см. `server.js`).
+
 ### SEO и SSG
 
 Каждый термин и Part — отдельная страница с уникальным URL. Для страниц терминов глоссария настроено:
@@ -449,6 +486,7 @@ for Your Consciousness → text-white
 ### Production-сервер (landing/server.js)
 
 - Express-сервер, раздаёт статику из `landing/dist/`
+- **Canonical URLs (no trailing slash):** middleware редиректит `/path/` → `/path` (301); `express.static` с `redirect: false` не добавляет слэш
 - **Fallback-сборка**: если `dist/index.html` не найден — запускает `npm run build` в фоне
 - **SPA fallback**: маршруты без расширения → `index.html`
 - Статика: `Cache-Control: max-age=31536000, immutable`

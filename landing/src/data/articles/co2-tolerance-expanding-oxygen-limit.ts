@@ -17,6 +17,12 @@ const article: Article = {
     'heart-rate-variability',
   ],
   introStyle: 'cyan',
+  image: '/images/articles/co2-tolerance-oxygen-efficiency-bohr-effect-onda.png',
+  imageAlt:
+    'CO2 tolerance training and Bohr effect biohacking: oxygen bioavailability, respiratory efficiency.',
+  imageTitle:
+    '[GAS_EXCHANGE_OPTIMIZED]: Utilizing CO2 as the primary catalyst for maximum cellular oxygen delivery.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'For resonant breathing and 5.5s coherence, see Breathwork Command Line Interface.',
     link: '/articles/breathwork-command-line-interface',
