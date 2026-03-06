@@ -15,9 +15,9 @@ const DEFAULT_TITLE = 'ONDA Life | Operating System for Your Consciousness'
 const DEFAULT_DESC =
   'Stop meditating randomly. Start managing your biological code through systematic upgrades. Your body is a biocomputer. ONDA Life is the OS.'
 
-const ABOUT_TITLE = 'About ONDA Life | The Operating System for Your Consciousness'
+const ABOUT_TITLE = 'About ONDA Life | Operating System for Your Consciousness & Biohacking'
 const ABOUT_DESC =
-  'Discover the science behind ONDA Life. A systematic approach to human upgrade combining neuroscience, evolutionary biology, and biofeedback.'
+  'Discover how ONDA Life upgrades your biological firmware through systematic HRV tracking, neural hardware optimization, and 8 levels of consciousness development.'
 
 const GLOSSARY_TITLE = 'Biohacking & Neuroscience Glossary | ONDA Life Knowledge Base'
 const GLOSSARY_DESC =
@@ -89,6 +89,7 @@ export interface RouteMeta {
   howTo?: { name: string; step: { name: string; text: string }[] }
   faq?: { mainEntity: { question: string; answer: string }[]; url: string }
   contactPage?: { name: string; description: string; url: string; email: string }
+  aboutPage?: { name: string; description: string; url: string }
 }
 
 function buildBreadcrumbs(route: string): BreadcrumbItem[] {
@@ -237,6 +238,26 @@ function buildContactPageJsonLd(
     },
   }
   return JSON.stringify(contactPage)
+}
+
+function buildAboutPageJsonLd(name: string, description: string, url: string): string {
+  const aboutPage = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name,
+    description,
+    url,
+    mainEntity: {
+      '@type': 'SoftwareApplication',
+      name: 'ONDA Life',
+      applicationCategory: 'HealthApplication',
+      operatingSystem: 'iOS, Android',
+      description:
+        'Operating system for consciousness. Biohacking platform with HRV tracking, neural hardware optimization, and 8 levels of consciousness development.',
+      url: SITE_URL,
+    },
+  }
+  return JSON.stringify(aboutPage)
 }
 
 function buildHowToJsonLd(name: string, steps: { name: string; text: string }[], url: string): string {
@@ -478,7 +499,18 @@ export function getMetaForRoute(route: string): RouteMeta {
     return { title: DEFAULT_TITLE, description: DEFAULT_DESC, url, breadcrumbs, ogType: 'website' }
   }
   if (route === '/about') {
-    return { title: ABOUT_TITLE, description: ABOUT_DESC, url, breadcrumbs }
+    return {
+      title: ABOUT_TITLE,
+      description: ABOUT_DESC,
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      aboutPage: {
+        name: 'About ONDA Life',
+        description: ABOUT_DESC,
+        url,
+      },
+    }
   }
   if (route === '/glossary') {
     return { title: GLOSSARY_TITLE, description: GLOSSARY_DESC, url, breadcrumbs }
@@ -630,6 +662,12 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (meta.contactPage) {
     const contactScript = `<script type="application/ld+json">${buildContactPageJsonLd(meta.contactPage.name, meta.contactPage.description, meta.contactPage.url, meta.contactPage.email)}</script>`
     out = out.replace('</head>', `  ${contactScript}\n</head>`)
+  }
+
+  // JSON-LD: AboutPage
+  if (meta.aboutPage) {
+    const aboutScript = `<script type="application/ld+json">${buildAboutPageJsonLd(meta.aboutPage.name, meta.aboutPage.description, meta.aboutPage.url)}</script>`
+    out = out.replace('</head>', `  ${aboutScript}\n</head>`)
   }
 
   // JSON-LD: HowTo (article pages with protocols)

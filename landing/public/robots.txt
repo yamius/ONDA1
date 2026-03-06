@@ -1,8 +1,7 @@
 User-agent: *
 Allow: /
-Allow: /glossary/
-Allow: /level/
-Allow: /part/
+Allow: /about
+Allow: /articles
 Disallow: /static/
 
 Sitemap: https://onda-life.com/sitemap.xml

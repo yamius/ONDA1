@@ -15,9 +15,9 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-const ABOUT_TITLE = 'About ONDA Life | The Operating System for Your Consciousness'
+const ABOUT_TITLE = 'About ONDA Life | Operating System for Your Consciousness & Biohacking'
 const ABOUT_DESC =
-  'Discover the science behind ONDA Life. A systematic approach to human upgrade combining neuroscience, evolutionary biology, and biofeedback.'
+  'Discover how ONDA Life upgrades your biological firmware through systematic HRV tracking, neural hardware optimization, and 8 levels of consciousness development.'
 
 export function AboutPage() {
   useEffect(() => {
@@ -25,6 +25,7 @@ export function AboutPage() {
     setMeta('description', ABOUT_DESC)
     setMeta('og:title', ABOUT_TITLE, true)
     setMeta('og:description', ABOUT_DESC, true)
+    setMeta('og:type', 'website', true)
     setMeta('og:url', `${SITE_URL}/about`, true)
     setMeta('og:image', OG_IMAGE, true)
     setMeta('twitter:card', 'summary_large_image', true)

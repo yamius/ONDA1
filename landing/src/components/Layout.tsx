@@ -1,5 +1,6 @@
 import { useState, useEffect, useLayoutEffect } from 'react'
 import { Outlet, Link, useLocation } from 'react-router-dom'
+import { FooterSitemap } from './FooterSitemap'
 
 export function Layout() {
   const location = useLocation()
@@ -55,70 +56,80 @@ export function Layout() {
         {'>'}
       </button>
 
-      {/* Menu overlay */}
-      {menuOpen && (
-        <>
-          <div className="fixed inset-0 z-40 bg-black/60 backdrop-blur-sm" onClick={() => setMenuOpen(false)} aria-hidden />
-          <div className="fixed inset-0 z-50 flex items-start justify-center pt-20">
-            <nav className="mx-4 w-full max-w-sm rounded-lg border border-white/10 bg-[#1a1b26] p-4">
-              <Link
-                to="/"
-                onClick={() => setMenuOpen(false)}
-                className="mb-4 flex items-center gap-2 font-mono text-lg font-bold"
-              >
-                <span className="text-cyan-400">ONDA</span>
-                <span className="text-green-400"> LIFE</span>
-              </Link>
-              <Link
-                to="/about"
-                onClick={() => setMenuOpen(false)}
-                className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
-                  location.pathname === '/about' ? 'text-cyan-400' : 'text-white/70'
-                }`}
-              >
-                About
-              </Link>
-              <Link
-                to="/glossary"
-                onClick={() => setMenuOpen(false)}
-                className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
-                  location.pathname.startsWith('/glossary') ? 'text-cyan-400' : 'text-white/70'
-                }`}
-              >
-                Glossary
-              </Link>
-              <Link
-                to="/articles"
-                onClick={() => setMenuOpen(false)}
-                className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
-                  location.pathname.startsWith('/articles') ? 'text-cyan-400' : 'text-white/70'
-                }`}
-              >
-                Articles
-              </Link>
-              <button className="block w-full border-b border-white/5 py-3 text-left text-sm font-medium text-white/70 transition-colors hover:text-white">
-                Language
-              </button>
-              <a
-                href="#download"
-                onClick={() => setMenuOpen(false)}
-                className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
-              >
-                Download
-              </a>
-              <Link
-                to="/contact"
-                onClick={() => setMenuOpen(false)}
-                className={`block py-3 text-sm font-medium transition-colors hover:text-white ${
-                  location.pathname === '/contact' ? 'text-cyan-400' : 'text-white/70'
-                }`}
-              >
-                Contacts
-              </Link>
-            </nav>
-          </div>
-        </>
-      )}
+      {/* Menu overlay — always in DOM for crawlers; hidden via opacity when closed */}
+      <div
+        className={`fixed inset-0 z-40 bg-black/60 backdrop-blur-sm transition-opacity duration-200 ${
+          menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={() => menuOpen && setMenuOpen(false)}
+        aria-hidden={!menuOpen}
+      />
+      <div
+        className={`fixed inset-0 z-50 flex items-start justify-center pt-20 transition-opacity duration-200 ${
+          menuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+        }`}
+        aria-hidden={!menuOpen}
+      >
+        <nav aria-label="Main navigation" className="mx-4 w-full max-w-sm rounded-lg border border-white/10 bg-[#1a1b26] p-4">
+          <Link
+            to="/"
+            onClick={() => setMenuOpen(false)}
+            className="mb-4 flex items-center gap-2 font-mono text-lg font-bold"
+          >
+            <span className="text-cyan-400">ONDA</span>
+            <span className="text-green-400"> LIFE</span>
+          </Link>
+          <Link
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+            className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
+              location.pathname === '/about' ? 'text-cyan-400' : 'text-white/70'
+            }`}
+          >
+            About
+          </Link>
+          <Link
+            to="/glossary"
+            onClick={() => setMenuOpen(false)}
+            className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
+              location.pathname.startsWith('/glossary') ? 'text-cyan-400' : 'text-white/70'
+            }`}
+          >
+            Glossary
+          </Link>
+          <Link
+            to="/articles"
+            onClick={() => setMenuOpen(false)}
+            className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
+              location.pathname.startsWith('/articles') ? 'text-cyan-400' : 'text-white/70'
+            }`}
+          >
+            Articles
+          </Link>
+          <button
+            type="button"
+            className="block w-full border-b border-white/5 py-3 text-left text-sm font-medium text-white/70 transition-colors hover:text-white"
+          >
+            Language
+          </button>
+          <a
+            href="#download"
+            onClick={() => setMenuOpen(false)}
+            className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
+          >
+            Download
+          </a>
+          <Link
+            to="/contact"
+            onClick={() => setMenuOpen(false)}
+            className={`block py-3 text-sm font-medium transition-colors hover:text-white ${
+              location.pathname === '/contact' ? 'text-cyan-400' : 'text-white/70'
+            }`}
+          >
+            Contacts
+          </Link>
+        </nav>
+      </div>
 
       <main style={{ opacity: visible ? 1 : 0 }}>
         {/* Scrolling header — logo + download */}
@@ -173,6 +184,7 @@ export function Layout() {
               &copy; {new Date().getFullYear()} ONDA Life
             </p>
           </div>
+          <FooterSitemap />
         </div>
       </footer>
     </div>
