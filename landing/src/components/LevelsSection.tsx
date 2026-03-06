@@ -120,6 +120,7 @@ const levels: LevelData[] = [
     color: 'from-emerald-500/20 to-emerald-900/10',
     borderColor: 'border-emerald-500/20',
     accentColor: 'text-emerald-400',
+    description: 'Epigenetic modulation, genetic memory, cellular repair. Guardian of the primary code.',
   },
   {
     number: 8,
@@ -133,6 +134,7 @@ const levels: LevelData[] = [
     color: 'from-white/10 to-white/5',
     borderColor: 'border-white/20',
     accentColor: 'text-white/80',
+    description: 'Quantum observer, wave-based perception. Zero Point. From resonance to Source.',
   },
 ]
 
