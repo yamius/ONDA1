@@ -36,6 +36,9 @@ for (const route of routes) {
     let out = dom.serialize()
     const meta = getMetaForRoute(route)
     out = injectMetaIntoHtml(out, meta)
+    // Build fingerprint for deployment verification (view page source, search "onda-build")
+    const buildStamp = `<!-- onda-build: ${new Date().toISOString()} -->`
+    out = out.replace('</head>', `  ${buildStamp}\n</head>`)
 
     // Main page -> dist/index.html; others -> dist/route/index.html (Express static lookup)
     const outDir = route === '/' ? distDir : join(distDir, route.slice(1))

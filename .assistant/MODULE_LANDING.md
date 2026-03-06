@@ -473,15 +473,16 @@ Sitemap: https://onda-life.com/sitemap.xml
 
 **Если используется Replit:**
 
-- Replit Autoscale запускает `build` и `run` в разных окружениях — `dist/` из build недоступна в run. Поэтому `server.js` при отсутствии `dist/` запускает сборку в фоне.
-- Конфигурация `.replit`:
+- Replit деплоит из **workspace**, не из GitHub. Перед Republish нужно **Pull** в Replit, чтобы подтянуть изменения.
+- Конфигурация `.replit` (рабочие настройки):
   ```toml
   [deployment]
   deploymentTarget = "autoscale"
   build = ["bash", "-c", "cd landing && npm install && npm run build"]
   run = ["bash", "-c", "cd landing && npm install && node server.js"]
   ```
-- Shell → `git reset --hard origin/main` → Deployments → **Republish**
+- Порты: `[[ports]] localPort = 5000, externalPort = 80` — сервер слушает на `0.0.0.0:5000`.
+- Процесс деплоя: Git → **Pull** (в Replit) → Deployments → **Republish**
 
 ### Production-сервер (landing/server.js)
 
@@ -573,9 +574,9 @@ cd landing && npm run start
 | 3 | MIND / AER | 7-9 |
 | 4 | SOCIETY / IGNIS | 10-12 |
 | 5 | BODY II / TERRA II | 13-15 |
-| 6 | BRAIN CONSCIOUSNESS / AQUA II | 16-18 |
-| 7 | DNA CONSCIOUSNESS / AER II | 19-21 |
-| 8 | ATOMIC CONSCIOUSNESS / IGNIS II | 22-24 |
+| 6 | BRAIN / AQUA II | 16-18 |
+| 7 | DNA / AER II | 19-21 |
+| 8 | ATOMIC / IGNIS II | 22-24 |
 
 ---
 
