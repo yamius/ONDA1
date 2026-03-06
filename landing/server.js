@@ -19,6 +19,11 @@ const SITE_URL = 'https://onda-life.com'
 const app = express()
 app.use(express.json({ limit: '1mb' }))
 
+// Health check: Replit expects fast response (<5s) before marking app live
+app.get('/health', (req, res) => {
+  res.status(200).send('OK')
+})
+
 // Canonical URLs: no trailing slash. Redirect /articles/ -> /articles (301)
 app.use((req, res, next) => {
   if (req.method !== 'GET' && req.method !== 'HEAD') return next()
