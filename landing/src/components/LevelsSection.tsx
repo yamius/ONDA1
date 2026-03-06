@@ -127,7 +127,7 @@ const levels: LevelData[] = [
     emoji: '🌌',
     name: 'ATOMIC / IGNIS II',
     parts: [
-      { label: '22. I Resonate', slug: 'i-resonate' },
+      { label: '22. I Am Vibration', slug: 'i-am-vibration' },
       { label: '23. I Am Wholeness', slug: 'i-am-wholeness' },
       { label: '24. I Am the Source', slug: 'i-am-the-source' },
     ],

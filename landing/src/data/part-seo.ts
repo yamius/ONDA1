@@ -108,8 +108,8 @@ export const PART_SEO: Record<string, { title: string; description: string }> = 
     description:
       'Epigenetic mastery, planetary symbiosis. Engineer of life. Conscious co-author of the noosphere.',
   },
-  'i-resonate': {
-    title: 'Part 22: The Resonating Human | ONDA Life',
+  'i-am-vibration': {
+    title: 'Part 22: I Am Vibration | ONDA Life',
     description:
       'Quantum observer, wave-based perception. Gamma coherence, frequency sovereignty. Energy resonance.',
   },

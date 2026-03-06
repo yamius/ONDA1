@@ -1774,13 +1774,13 @@ export const parts: Record<string, {
       { label: 'Oxytocin & pro-social behavior', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
     ],
   },
-  'i-resonate': {
+  'i-am-vibration': {
     badge: '[ PART 22 — LEVEL 8: ATOMIC / IGNIS II ]',
-    title: 'I',
-    titleHighlight: 'Resonate',
+    title: 'I Am',
+    titleHighlight: 'Vibration',
     subtitle: 'Protocol: Quantum Consciousness and Energy Resonance',
     metaDescription:
-      'Part 22: Quantum observer, wave-based perception. The Resonating Human. Gamma coherence, frequency sovereignty. ONDA Life.',
+      'Part 22: I Am Vibration. Quantum observer, wave-based perception. Gamma coherence, frequency sovereignty. ONDA Life.',
     intro:
       'Part 22 is a transition to the software of reality itself. From a quantum physics perspective, your body is 99.9999999% vacuum filled with energy fields. What you perceive as "solid" is merely the resistance of electromagnetic fields. In IGNIS II, we learn to perceive this interface directly. We deconstruct the "biographical ego" (DMN) and activate the "Core Self." You are no longer a biological object; you are a wave packet in an infinite ocean of frequencies, capable of influencing the structure of reality through the act of observation and your internal vibration.\n\nKey Biological Challenge: Stripping away the neural filters of "density" and shifting from object-based to wave-based perception.\n\nWe retune the brain to function as a high-frequency receiver-transmitter. The Pineal Gland acts as a piezoelectric transducer, converting subtle electromagnetic signals into neurochemical impulses. The Thalamus enables deep tuning of sensory filters to allow more subtle frequencies into consciousness. Gamma Rhythms (40+ Hz) create a state of maximum inter-hemispheric coherence where consciousness dissolves the ego\'s boundaries. Parietal Lobe deactivation reduces physical spatial orientation to experience transpersonal unity. The Right Hemisphere dominates with holistic, field-oriented perception over discrete logic.',
     protocol: {
