@@ -8,7 +8,7 @@ packages = ["nano", "unzip", "psmisc"]
 
 [deployment]
 deploymentTarget = "autoscale"
-build = ["bash", "-c", "cd landing && rm -rf dist && npm install && npm run build"]
+build = ["bash", "-c", "cd landing && rm -rf dist && npm install && npm run build && git rev-parse HEAD > dist/.build-hash"]
 run = ["bash", "-c", "cd landing && npm install && node server.js"]
 
 [workflows]

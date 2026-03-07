@@ -302,18 +302,36 @@ app.use((req, res, next) => {
   }
 })
 
-// Start server FIRST (healthcheck!), then build dist if missing (Replit Autoscale)
+function needsRebuild() {
+  const indexExists = existsSync(join(distDir, 'index.html'))
+  if (!indexExists) return 'dist/ not found'
+  const hashFile = join(distDir, '.build-hash')
+  if (!existsSync(hashFile)) return 'no .build-hash marker'
+  try {
+    const builtHash = readFileSync(hashFile, 'utf-8').trim()
+    const currentHash = execSync('git rev-parse HEAD', { cwd: __dirname }).toString().trim()
+    if (builtHash !== currentHash) return `hash mismatch: dist=${builtHash.slice(0,8)} current=${currentHash.slice(0,8)}`
+  } catch (_) {
+    return 'cannot verify hash'
+  }
+  return null
+}
+
+// Start server FIRST (healthcheck!), then rebuild dist if stale (Replit Autoscale)
 app.listen(port, '0.0.0.0', () => {
   console.log(`Server is running on port ${port}`)
 
-  if (!existsSync(join(distDir, 'index.html'))) {
-    console.log('dist/ not found — running build in background...')
+  const rebuildReason = needsRebuild()
+  if (rebuildReason) {
+    console.log(`Rebuild needed: ${rebuildReason} — running build in background...`)
     import('child_process').then(({ exec }) => {
-      exec('npm run build', { cwd: __dirname }, (err) => {
+      exec('rm -rf dist && npm run build && git rev-parse HEAD > dist/.build-hash', { cwd: __dirname }, (err) => {
         if (err) console.error('Build failed:', err.message)
         else console.log('Background build complete — dist/ ready')
       })
     })
+  } else {
+    console.log('dist/ is up to date — skipping build')
   }
 
   import('./bot.js').then(({ startBot }) => startBot())
