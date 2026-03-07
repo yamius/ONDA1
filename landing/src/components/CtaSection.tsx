@@ -68,12 +68,14 @@ export function CtaSection() {
           <button
             type="button"
             onClick={() => {
+              window.lastPlatform = 'ios'
               setPlatform('ios')
               setIsOpen(true)
             }}
             className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
             aria-label="Download ONDA Life on App Store"
             data-button="apple"
+            data-platform="ios"
           >
             <AppleIcon />
             <div className="text-left">
@@ -84,12 +86,14 @@ export function CtaSection() {
           <button
             type="button"
             onClick={() => {
+              window.lastPlatform = 'android'
               setPlatform('android')
               setIsOpen(true)
             }}
             className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
             aria-label="Download ONDA Life on Google Play"
             data-button="android"
+            data-platform="android"
           >
             <PlayIcon />
             <div className="text-left">
