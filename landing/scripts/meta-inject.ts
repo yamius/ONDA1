@@ -13,7 +13,7 @@ const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
 const DEFAULT_TITLE = 'ONDA Life | Operating System for Your Consciousness'
 const DEFAULT_DESC =
-  'Stop meditating randomly. Start managing your biological code through systematic upgrades. Your body is a biocomputer. ONDA Life is the OS.'
+  'ONDA Life is a biohacking and HRV tracking app that provides a structured 8-level system to upgrade your consciousness, neural hardware, and biological code.'
 
 const ABOUT_TITLE = 'About ONDA Life | Operating System for Your Consciousness & Biohacking'
 const ABOUT_DESC =
