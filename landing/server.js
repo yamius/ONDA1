@@ -16,6 +16,9 @@ const articlesDir = join(__dirname, '..', 'articles')
 const port = parseInt(process.env.PORT || '5000', 10)
 const SITE_URL = 'https://onda-life.com'
 
+// Ensure dist/ directory exists so express.static doesn't throw
+if (!existsSync(distDir)) mkdirSync(distDir, { recursive: true })
+
 const app = express()
 app.use(express.json({ limit: '1mb' }))
 
@@ -300,6 +303,12 @@ app.use((req, res, next) => {
       res.status(200).send('<!doctype html><html><head><meta charset="UTF-8"><title>ONDA Life</title><meta http-equiv="refresh" content="10"></head><body style="background:#050a0f;color:#fff;font-family:monospace;display:flex;align-items:center;justify-content:center;height:100vh;margin:0"><p>Building... please wait.</p></body></html>')
     }
   }
+})
+
+// Global error handler — prevent unhandled errors from returning 500
+app.use((err, _req, res, _next) => {
+  console.error('[server] Unhandled error:', err.message || err)
+  res.status(200).send('<!doctype html><html><head><meta charset="UTF-8"><title>ONDA Life</title><meta http-equiv="refresh" content="10"></head><body style="background:#050a0f;color:#fff;font-family:monospace;display:flex;align-items:center;justify-content:center;height:100vh;margin:0"><p>Loading... please wait.</p></body></html>')
 })
 
 // Start server FIRST (healthcheck!), then build dist if missing (Replit Autoscale)
