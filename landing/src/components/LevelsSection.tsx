@@ -145,7 +145,7 @@ export function LevelsSection() {
   return (
     <section className="relative px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-5xl">
-        <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
+        <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60" aria-hidden="true">
           [ SYSTEM ARCHITECTURE ]
         </div>
         <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">

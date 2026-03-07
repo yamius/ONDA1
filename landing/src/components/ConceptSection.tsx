@@ -2,7 +2,7 @@ export function ConceptSection() {
   return (
     <section id="concept" className="relative -mt-20 px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-4xl">
-        <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
+        <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60 md:mb-6">
           [ CONCEPT ]
         </div>
         <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
@@ -43,7 +43,7 @@ function ConceptCard({ number, title, description }: { number: string; title: st
   return (
     <div className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/10">
       <div className="mb-4 font-mono text-xs text-terminal-green/40">{number}</div>
-      <h3 className="mb-2 text-lg font-semibold">{title}</h3>
+      <h4 className="mb-2 text-lg font-semibold">{title}</h4>
       <p className="font-mono text-xs leading-relaxed text-white/40">{description}</p>
     </div>
   )

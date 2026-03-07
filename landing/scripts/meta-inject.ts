@@ -11,9 +11,9 @@ import { getArticleBySlug } from '../src/data/articles'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
-const DEFAULT_TITLE = 'ONDA Life | Operating System for Your Consciousness'
+const DEFAULT_TITLE = 'ONDA Life | Biohacking App, HRV Tracker, Neural Hardware & Consciousness OS'
 const DEFAULT_DESC =
-  'ONDA Life is a biohacking and HRV tracking app that provides a structured 8-level system to upgrade your consciousness, neural hardware, and biological code.'
+  'ONDA Life is a biohacking and HRV tracking app with a structured 8-level system. Upgrade your consciousness, neural hardware, vagus nerve tone, and biological code. Mindfulness meets neuroscience.'
 
 const ABOUT_TITLE = 'About ONDA Life | Operating System for Your Consciousness & Biohacking'
 const ABOUT_DESC =
