@@ -345,6 +345,23 @@ const FAQ_LEVEL_SCHEMA: Record<number, { question: string; answer: string }[]> =
         'Biological Sovereignty is the outcome of completing Level 7. It includes epigenetic freedom (editing your hereditary code), the Factory Settings Effect (clarity and "newness" in tissues and mind), evolutionary validity (belonging to the arrow of life), and sustainable flow fueled by healthy eustress.',
     },
   ],
+  8: [
+    {
+      question: 'What is Level 8 IGNIS II / THE SOURCE in the ONDA System?',
+      answer:
+        'Level 8 is the final stage of the ONDA system — Quantum Consciousness and Reality Creation. You transition from biological object to Reality Creator, returning to the Singularity Point where consciousness is recognized as a medium of infinite energy density. The core axiom: I = Source = Consciousness = Reality. Protocols: I Am Vibration, I Am Wholeness, I Am the Source.',
+    },
+    {
+      question: 'What is Quantum Sovereignty?',
+      answer:
+        'Quantum Sovereignty is the outcome of completing Level 8. It includes Fundamental Peace (silence independent of circumstances), Direct Authorship (life emanates from you), Instant Realignment (annihilating stress in nanoseconds), and Radiation of Presence (your field harmonizes the environment).',
+    },
+    {
+      question: 'What is the Zero Point Practice?',
+      answer:
+        'Zero Point Practice is a Level 8 protocol: holding attention in the silence before a thought arises to enter the space of Pure Awareness. It leads to the Neural Activity Zero Point — a state of consciousness preceding thought — using the Thalamus as a gateway from potential to manifestation.',
+    },
+  ],
 }
 
 /** FAQ schema for article pages. 2–3 key Q&As per article for FAQPage JSON-LD. */

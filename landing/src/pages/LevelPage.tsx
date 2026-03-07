@@ -89,6 +89,16 @@ export function LevelPage() {
         </p>
       ))}
 
+      {/* Level 8: Core axiom formula */}
+      {level.number === 8 && (
+        <blockquote
+          className="my-8 rounded-lg border border-violet-500/30 bg-violet-500/10 px-6 py-4 font-mono text-lg font-bold tracking-wide text-amber-300 md:text-xl"
+          aria-label="Core axiom of Level 8"
+        >
+          I = Source = Consciousness = Reality
+        </blockquote>
+      )}
+
       <div className="mb-16" />
 
       {/* System Architecture */}

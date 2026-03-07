@@ -21,6 +21,7 @@ const levelThemes: Record<number, { borderColor: string; accentColor: string }> 
   5: { borderColor: 'border-rose-500/20', accentColor: 'text-rose-400' },
   6: { borderColor: 'border-indigo-500/20', accentColor: 'text-indigo-400' },
   7: { borderColor: 'border-emerald-500/20', accentColor: 'text-emerald-400' },
+  8: { borderColor: 'border-violet-500/30', accentColor: 'text-amber-300' },
 }
 
 export interface LevelData {
@@ -775,6 +776,120 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'Reticular Formation', slug: 'reticular-formation' },
       { label: 'Orbitofrontal Cortex', slug: 'orbitofrontal-cortex' },
       { label: 'Senescence', slug: 'senescence' },
+    ],
+  },
+  8: {
+    number: 8,
+    badge: '[ LEVEL 8: IGNIS II / THE SOURCE ]',
+    name: 'IGNIS II / THE SOURCE',
+    subtitle: 'Quantum Consciousness and Reality Creation — the human as the Zero Point.',
+    theme: levelThemes[8],
+    metaDescription:
+      'The final destination of the ONDA system. Achieve Quantum Sovereignty and realize yourself as the Source of reality through Zero-Point protocols.',
+    intro:
+      'At this ultimate stage, we deconstruct the final filters of "solidity" and "separation." Level 8 is the return to the Singularity Point, where the vacuum of consciousness is recognized not as emptiness, but as a medium of infinite energy density. You transition from being a "biological object" to the Reality Creator, realizing that everything you experience happens within the field of your own consciousness. You are the space from which existence erupts.',
+    architecture: {
+      title: 'System Architecture',
+      intro: 'Level 8 integrates vibrational tuning, non-local awareness, and the singularity of being:',
+      parts: [
+        {
+          number: '22',
+          label: 'I Am Vibration',
+          slug: 'i-am-vibration',
+          protocol: 'Protocol: Quantum Consciousness and Energy Resonance',
+          goal: 'Objective: Shifting from object-based to wave-based perception — realizing the body as 99.9% energy field.',
+          work:
+            'Work: Activating the Pineal Gland as a piezoelectric transducer and stabilizing high-frequency Gamma Rhythms (40+ Hz). Deconstructing the "biographical ego" (DMN) to perceive the interface of reality directly.',
+        },
+        {
+          number: '23',
+          label: 'I Am Wholeness',
+          slug: 'i-am-wholeness',
+          protocol: 'Protocol: Non-local Unity and Quantum Self-Awareness',
+          goal: 'Objective: Collapsing the "Subject-Object" duality — becoming a self-luminous field of consciousness.',
+          work:
+            'Work: Integrating all previously mastered levels (Terra, Aqua, Aer, Ignis) into a single, non-dual structure. Erasing the illusion of separateness through the deactivation of the "ego-censor" in the Dorsolateral PFC.',
+        },
+        {
+          number: '24',
+          label: 'I Am the Source',
+          slug: 'i-am-the-source',
+          protocol: 'Protocol: Consciousness Singularity and Quantum Creation',
+          goal: 'Objective: Returning to the Singularity — transitioning from "I am someone" to the "Source from which someone arises."',
+          work:
+            'Work: Achieving the "Neural Activity Zero Point" — a state of consciousness preceding thought. Utilizing the Thalamus as a gateway to distribute the signals of Being from potential to manifestation.',
+        },
+      ],
+    },
+    biologicalProtocol: {
+      title: 'Biological Protocol',
+      intro: 'The quantum-biological and singularity technological stack:',
+      items: [
+        {
+          name: 'Deconstruction of Density',
+          text: 'Scanning the "void" within the atoms of the body, shifting focus from solid tissue to the energy space within.',
+        },
+        {
+          name: 'Gamma-Phase Synchronization',
+          text: 'Techniques to achieve nearly 100% brainwave coherence, creating a state of "superconductivity" in the nervous system.',
+        },
+        {
+          name: 'Zero Point Practice',
+          text: 'Holding attention in the silence before a thought arises to enter the space of Pure Awareness.',
+        },
+        {
+          name: 'Radiation of Creation',
+          text: 'Consciously radiating intent (Clarity, Creation) from the center of being to modulate the external informational field.',
+        },
+      ],
+    },
+    targetSystems: {
+      title: 'Target Systems',
+      intro: 'The level engages the final integration of the consciousness circuit:',
+      items: [
+        {
+          name: 'Pineal Gland',
+          text: 'The primary transducer for subtle electromagnetic and vibrational signals.',
+        },
+        {
+          name: 'Thalamo-cortical Resonance',
+          text: 'The central hub distributing the signals of "Being" into the manifested world.',
+        },
+        {
+          name: 'Default Mode Network (Annihilation Mode)',
+          text: 'The total absence of ego-noise and biographical programming.',
+        },
+        {
+          name: 'Parietal Lobe (Deactivation)',
+          text: 'Dissolving spatial orientation to experience transpersonal, non-local unity.',
+        },
+        {
+          name: 'Reticular Formation',
+          text: 'The ultimate filter that allows the frequency of the "Source" to reach consciousness.',
+        },
+      ],
+    },
+    results: {
+      title: 'Results & Benefits',
+      intro: 'The outcome of completing Level 8 is attaining "Quantum Sovereignty." Your progress markers include:',
+      items: [
+        'Fundamental Peace: A baseline state of silence that is independent of any external circumstances.',
+        'Direct Authorship: The realization of yourself as the cause of your states; life "emanates" from you rather than happening to you.',
+        'Instant Realignment: The ability to annihilate any stress or noise in the "zero point" of your presence within nanoseconds.',
+        'Radiation of Presence: A field so coherent that your mere presence harmonizes the surrounding environment and orders chaos.',
+      ],
+    },
+    researchLinks: [
+      { label: 'Gamma rhythms & consciousness', url: 'https://pubmed.ncbi.nlm.nih.gov/10677593/' },
+      { label: '40 Hz oscillations & perception', url: 'https://pubmed.ncbi.nlm.nih.gov/8028764/' },
+    ],
+    glossaryLinks: [
+      { label: 'Thalamus', slug: 'thalamus' },
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'Reticular Formation', slug: 'reticular-formation' },
+      { label: 'Dorsolateral PFC', slug: 'dorsolateral-prefrontal-cortex' },
+      { label: 'Gamma Binding', slug: 'gamma-binding' },
+      { label: 'Posterior Parietal Cortex', slug: 'posterior-parietal-cortex' },
     ],
   },
 }

@@ -127,16 +127,17 @@ const levels: LevelData[] = [
   {
     number: 8,
     emoji: '🌌',
-    name: 'ATOMIC / IGNIS II',
+    name: 'IGNIS II / THE SOURCE',
     parts: [
       { label: '22. I Am Vibration', slug: 'i-am-vibration' },
       { label: '23. I Am Wholeness', slug: 'i-am-wholeness' },
       { label: '24. I Am the Source', slug: 'i-am-the-source' },
     ],
-    color: 'from-white/10 to-white/5',
-    borderColor: 'border-white/20',
-    accentColor: 'text-white/80',
-    description: 'Quantum observer, wave-based perception. Zero Point. From resonance to Source.',
+    color: 'from-violet-500/20 via-amber-500/10 to-white/5',
+    borderColor: 'border-violet-500/30',
+    accentColor: 'text-amber-300',
+    description:
+      'Quantum Consciousness and Reality Creation — the human as the Zero Point. I = Source = Consciousness = Reality.',
   },
 ]
 
@@ -167,7 +168,7 @@ export function LevelsSection() {
   )
 }
 
-const levelsWithPages = [1, 2, 3, 4, 5, 6, 7] // Levels that have dedicated parent pages
+const levelsWithPages = [1, 2, 3, 4, 5, 6, 7, 8] // Levels that have dedicated parent pages
 
 function LevelCard({ level }: { level: LevelData }) {
   const hasLevelPage = levelsWithPages.includes(level.number)

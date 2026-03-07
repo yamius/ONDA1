@@ -1775,7 +1775,7 @@ export const parts: Record<string, {
     ],
   },
   'i-am-vibration': {
-    badge: '[ PART 22 — LEVEL 8: ATOMIC / IGNIS II ]',
+    badge: '[ PART 22 — LEVEL 8: IGNIS II / THE SOURCE ]',
     title: 'I Am',
     titleHighlight: 'Vibration',
     subtitle: 'Protocol: Quantum Consciousness and Energy Resonance',
@@ -1849,7 +1849,7 @@ export const parts: Record<string, {
     ],
   },
   'i-am-wholeness': {
-    badge: '[ PART 23 — LEVEL 8: ATOMIC / IGNIS II ]',
+    badge: '[ PART 23 — LEVEL 8: IGNIS II / THE SOURCE ]',
     title: 'I Am',
     titleHighlight: 'Wholeness',
     subtitle: 'Protocol: Non-local Unity and Quantum Self-Awareness',
@@ -1922,7 +1922,7 @@ export const parts: Record<string, {
     ],
   },
   'i-am-the-source': {
-    badge: '[ PART 24 — LEVEL 8: ATOMIC / IGNIS II ]',
+    badge: '[ PART 24 — LEVEL 8: IGNIS II / THE SOURCE ]',
     title: 'I Am the',
     titleHighlight: 'Source',
     subtitle: 'Protocol: Consciousness Singularity and Quantum Creation',
