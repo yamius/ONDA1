@@ -145,13 +145,13 @@ export function LevelsSection() {
   return (
     <section className="relative px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-5xl">
-        <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60" aria-hidden="true">
+        <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
           [ SYSTEM ARCHITECTURE ]
-        </div>
-        <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
+        </h2>
+        <h3 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
           <span className="text-terminal-green">Clear Hierarchy.</span>{' '}
           <span className="text-terminal-cyan">No Chaos.</span>
-        </h2>
+        </h3>
         <p className="mb-10 max-w-2xl text-sm leading-relaxed text-white/40 md:mb-16">
           Unlike fragmented meditation apps, ONDA Life provides a structured
           progression through 8 levels of consciousness development. Each level

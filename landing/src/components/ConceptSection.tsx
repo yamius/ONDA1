@@ -2,15 +2,15 @@ export function ConceptSection() {
   return (
     <section id="concept" className="relative -mt-20 px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-4xl">
-        <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60 md:mb-6">
+        <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60 md:mb-6">
           [ CONCEPT ]
-        </div>
-        <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
+        </h2>
+        <h3 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
           Your Body is the Most Complex{' '}
           <span className="bg-gradient-to-r from-terminal-green to-terminal-cyan bg-clip-text text-transparent">
             Computer
           </span>
-        </h2>
+        </h3>
         <p className="max-w-2xl font-mono text-sm leading-relaxed text-white/40 md:text-base">
           Most people use only 10% of their biological potential. ONDA Life provides
           a step-by-step algorithm to upgrade your firmware — from cellular level to

@@ -5,15 +5,15 @@ export function ArticlesSection() {
   return (
     <section className="relative px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-6xl">
-        <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60" aria-hidden="true">
+        <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
           [ DEEP DIVES ]
-        </div>
-        <h2 className="mb-4 text-2xl font-bold tracking-tight md:mb-6 md:text-4xl">
+        </h2>
+        <h3 className="mb-4 text-2xl font-bold tracking-tight md:mb-6 md:text-4xl">
           Flagship{' '}
           <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
             Articles
           </span>
-        </h2>
+        </h3>
         <p className="mb-12 max-w-2xl font-mono text-sm text-white/40">
           Science-backed guides for nervous system optimization. From vagal tone to longevity hardware.
         </p>

@@ -17,7 +17,7 @@ export function HeroSection() {
       {/* Background image with parallax on desktop only (avoids iOS fixed-nav bug on mobile) */}
       <img
         src="/hero-bg.png"
-        alt="ONDA Life app — biohacking and HRV tracker interface"
+        alt="ONDA Life mobile app interface showing HRV tracking"
         className="absolute inset-0 h-full w-full object-cover opacity-40"
         style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         fetchPriority="high"
