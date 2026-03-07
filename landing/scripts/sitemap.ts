@@ -15,6 +15,13 @@ const distDir = join(__dirname, '..', 'dist')
 const SITE_URL = 'https://onda-life.com'
 const buildDate = new Date().toISOString().split('T')[0]
 
+/** Build canonical URL without trailing slash. Ensures https only. */
+function buildLoc(path: string): string {
+  const base = SITE_URL.replace(/\/+$/, '')
+  const cleanPath = (path || '/').replace(/\/+$/, '') || '/'
+  return cleanPath === '/' ? base : `${base}${cleanPath}`
+}
+
 function getPriority(route: string): string {
   if (route === '/') return '1.0'
   if (route === '/glossary') return '0.9'
@@ -45,7 +52,7 @@ function getLastmod(route: string): string {
 const routes = getPrerenderRoutes()
 
 const urls = routes.map((path) => {
-  const loc = `${SITE_URL}${path === '/' ? '' : path}`
+  const loc = buildLoc(path)
   const lastmod = getLastmod(path)
   const priority = getPriority(path)
   const changefreq = path === '/' ? 'weekly' : 'monthly'

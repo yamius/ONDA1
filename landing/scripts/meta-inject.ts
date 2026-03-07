@@ -11,6 +11,13 @@ import { getArticleBySlug } from '../src/data/articles'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
+
+/** Build canonical URL without trailing slash. Google sees only one URL variant. */
+function buildCanonicalUrl(route: string): string {
+  const base = SITE_URL.replace(/\/+$/, '')
+  const cleanPath = (route || '/').replace(/\/+$/, '') || '/'
+  return cleanPath === '/' ? base : `${base}${cleanPath}`
+}
 const DEFAULT_TITLE = 'ONDA Life | Biohacking App, HRV Tracker & Consciousness OS'
 const DEFAULT_DESC =
   'Upgrade your biological code with ONDA Life. A systematic biohacking platform for HRV tracking, neural hardware optimization, and structured 8-level consciousness development.'
@@ -579,7 +586,7 @@ function buildFAQPageJsonLd(
 }
 
 export function getMetaForRoute(route: string): RouteMeta {
-  const url = `${SITE_URL}${route === '/' ? '' : route}`
+  const url = buildCanonicalUrl(route)
 
   const breadcrumbs = buildBreadcrumbs(route)
 
@@ -749,8 +756,9 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
     out = out.replace('</head>', `  ${googleVerification}\n</head>`)
   }
 
-  // Canonical link — replace existing or add before </head>
-  const canonicalTag = `<link rel="canonical" href="${escapedUrl}">`
+  // Canonical link — always without trailing slash; replace existing or add before </head>
+  const canonicalUrl = (meta.url || SITE_URL).replace(/\/+$/, '') || SITE_URL
+  const canonicalTag = `<link rel="canonical" href="${escapeHtmlAttr(canonicalUrl)}">`
   if (out.includes('rel="canonical"')) {
     out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, canonicalTag)
   } else {

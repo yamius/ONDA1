@@ -1,4 +1,52 @@
+import { useState } from 'react'
+import { supabase } from '../lib/supabase'
+
 export function CtaSection() {
+  const [isOpen, setIsOpen] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState<string | null>(null)
+  const [isLoading, setIsLoading] = useState(false)
+
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setError(null)
+    setIsLoading(true)
+
+    const form = e.currentTarget
+    const email = (form.elements.namedItem('email') as HTMLInputElement).value.trim()
+
+    if (!supabase) {
+      setError('Service temporarily unavailable. Please try again later.')
+      setIsLoading(false)
+      return
+    }
+
+    try {
+      const { error: insertError } = await supabase.from('waitlist').insert({ email })
+
+      if (insertError) {
+        if (insertError.code === '23505') {
+          setError('This email is already registered.')
+        } else {
+          setError('Something went wrong. Please try again later.')
+        }
+        setIsLoading(false)
+        return
+      }
+
+      setIsSubmitted(true)
+    } catch {
+      setError('Something went wrong. Please try again later.')
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
+  const handleClose = () => {
+    setIsOpen(false)
+    setError(null)
+  }
+
   return (
     <section id="download" className="relative px-4 py-20 md:px-6 md:py-32">
       <div className="pointer-events-none absolute top-1/2 left-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-terminal-green/5 blur-[100px]" />
@@ -15,8 +63,9 @@ export function CtaSection() {
         </p>
 
         <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
-          <a
-            href="#"
+          <button
+            type="button"
+            onClick={() => setIsOpen(true)}
             className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
             aria-label="Download ONDA Life on App Store"
           >
@@ -25,9 +74,10 @@ export function CtaSection() {
               <div className="text-[9px] text-white/40">Download on the</div>
               <div className="text-sm font-semibold">App Store</div>
             </div>
-          </a>
-          <a
-            href="#"
+          </button>
+          <button
+            type="button"
+            onClick={() => setIsOpen(true)}
             className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
             aria-label="Download ONDA Life on Google Play"
           >
@@ -36,9 +86,71 @@ export function CtaSection() {
               <div className="text-[9px] text-white/40">Get it on</div>
               <div className="text-sm font-semibold">Google Play</div>
             </div>
-          </a>
+          </button>
         </div>
       </div>
+
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
+          onClick={handleClose}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="waitlist-modal-title"
+        >
+          <div
+            className="relative mx-4 max-w-md w-full rounded-2xl border border-terminal-green/20 bg-[#1a1b26] p-8 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={handleClose}
+              className="absolute top-4 right-4 rounded-lg p-1 text-white/50 transition-colors hover:bg-white/10 hover:text-white"
+              aria-label="Close"
+            >
+              ✕
+            </button>
+
+            {!isSubmitted ? (
+              <form id="waitlist-form" onSubmit={handleFormSubmit}>
+                <h2 id="waitlist-modal-title" className="mb-4 text-2xl font-bold text-white">
+                  Join ONDA Life
+                </h2>
+                <p className="mb-6 text-sm text-white/60">
+                  We are putting the finishing touches! Leave your email and we will send you early access.
+                </p>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  placeholder="Your email"
+                  disabled={isLoading}
+                  className="mb-4 w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder-white/40 outline-none transition-colors focus:border-terminal-cyan/50 focus:ring-1 focus:ring-terminal-cyan/30 disabled:opacity-50"
+                />
+                {error && (
+                  <p className="mb-4 text-sm text-rose-400" role="alert">
+                    {error}
+                  </p>
+                )}
+                <button
+                  type="submit"
+                  disabled={isLoading}
+                  className="w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90 disabled:opacity-50"
+                >
+                  {isLoading ? 'Submitting...' : 'Get Early Access'}
+                </button>
+              </form>
+            ) : (
+              <div id="thank-you-message" className="py-12 px-2 text-center">
+                <h2 className="mb-4 text-2xl font-bold text-terminal-green">Thank you!</h2>
+                <p className="text-white/80">
+                  We will contact you as soon as the app is ready to launch.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     </section>
   )
 }

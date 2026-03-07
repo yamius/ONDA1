@@ -105,6 +105,11 @@ app.get('/sitemap.xml', (req, res) => {
   }
 
   const buildDate = new Date().toISOString().split('T')[0]
+  function buildLoc(path) {
+    const base = SITE_URL.replace(/\/+$/, '')
+    const cleanPath = (path || '/').replace(/\/+$/, '') || '/'
+    return cleanPath === '/' ? base : `${base}${cleanPath}`
+  }
   function getPriority(path) {
     if (path === '/') return '1.0'
     if (path === '/glossary') return '0.9'
@@ -122,7 +127,7 @@ app.get('/sitemap.xml', (req, res) => {
   }
 
   const urls = routes.map(({ path, filePath }) => {
-    const loc = `${SITE_URL}${path === '/' ? '' : path}`
+    const loc = buildLoc(path)
     const lastmod = getLastmod(filePath)
     const priority = getPriority(path)
     const changefreq = path === '/' ? 'weekly' : 'monthly'
