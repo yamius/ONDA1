@@ -478,11 +478,24 @@ Sitemap: https://onda-life.com/sitemap.xml
   ```toml
   [deployment]
   deploymentTarget = "autoscale"
-  build = ["bash", "-c", "cd landing && npm install && npm run build"]
+  build = ["bash", "-c", "cd landing && rm -rf dist && npm install && npm run build"]
   run = ["bash", "-c", "cd landing && npm install && node server.js"]
   ```
+- **`rm -rf dist` в build — обязательно.** Без этого Replit может использовать закешированный `dist/` от предыдущей сборки. Если `tsc -b` или `vite build` упадёт, старый `dist/` не подменит свежую сборку.
 - Порты: `[[ports]] localPort = 5000, externalPort = 80` — сервер слушает на `0.0.0.0:5000`.
 - Процесс деплоя: Git → **Pull** (в Replit) → Deployments → **Republish**
+
+> **⚠️ НЕ МЕНЯТЬ конфигурацию деплоя без крайней необходимости.**
+> Эта конфигурация — проверенная и рабочая. Любые изменения в `build`/`run` командах `.replit`, в `server.js` (порядок запуска, healthcheck, fallback) могут сломать деплой. Если деплой перестал работать — сначала проверь, что конфигурация соответствует документации выше.
+
+**Если деплой не подхватывает изменения:**
+
+1. Зайти в Shell на Replit: `cd landing`
+2. Проверить исходники: `grep "КЛЮЧЕВОЕ_СЛОВО" src/components/НужныйФайл.tsx`
+3. Если исходники старые — `git pull origin main`
+4. Принудительная пересборка: `rm -rf dist && npm run build`
+5. Убедиться, что сборка прошла без ошибок (259 routes, `[prerender] Done`)
+6. Нажать **Deploy** / **Republish**
 
 ### Production-сервер (landing/server.js)
 
