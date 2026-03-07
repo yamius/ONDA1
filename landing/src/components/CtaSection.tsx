@@ -153,9 +153,16 @@ export function CtaSection() {
             ) : (
               <div id="thank-you-message" className="py-12 px-2 text-center">
                 <h2 className="mb-4 text-2xl font-bold text-terminal-green">Thank you!</h2>
-                <p className="text-white/80">
+                <p className="mb-6 text-white/80">
                   We will contact you as soon as the app is ready to launch.
                 </p>
+                <button
+                  type="button"
+                  onClick={handleClose}
+                  className="w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90"
+                >
+                  OK
+                </button>
               </div>
             )}
           </div>
