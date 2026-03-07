@@ -155,11 +155,12 @@ export function CtaSection() {
                 </button>
               </form>
             ) : (
-              <div id="thank-you-message" className="py-12 px-2 text-center">
+              <div id="thank-you-message" className="flex flex-col">
                 <h2 className="mb-4 text-2xl font-bold text-terminal-green">Thank you!</h2>
-                <p className="mb-6 text-white/80">
+                <p className="mb-6 text-sm text-white/60">
                   We will contact you as soon as the app is ready to launch.
                 </p>
+                <div className="mb-4 h-[52px]" aria-hidden="true" />
                 <button
                   type="button"
                   onClick={handleClose}
