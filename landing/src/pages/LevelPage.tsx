@@ -92,9 +92,9 @@ export function LevelPage() {
       <div className="mb-16" />
 
       {/* System Architecture */}
-      <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
+      <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
         [ {level.architecture.title.toUpperCase()} ]
-      </div>
+      </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {level.architecture.intro}
       </p>
@@ -116,6 +116,8 @@ export function LevelPage() {
             <Link
               to={`/part/${part.slug}`}
               className="font-mono text-xs text-terminal-cyan transition-colors hover:text-terminal-cyan/80"
+              aria-label={`Open ${part.label} protocol`}
+              title={`Open ${part.label} protocol — ${part.protocol}`}
             >
               → Open {part.label} protocol
             </Link>

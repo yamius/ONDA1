@@ -19,6 +19,8 @@ const levelThemes: Record<number, { borderColor: string; accentColor: string }> 
   3: { borderColor: 'border-sky-500/20', accentColor: 'text-sky-400' },
   4: { borderColor: 'border-amber-500/20', accentColor: 'text-amber-400' },
   5: { borderColor: 'border-rose-500/20', accentColor: 'text-rose-400' },
+  6: { borderColor: 'border-indigo-500/20', accentColor: 'text-indigo-400' },
+  7: { borderColor: 'border-emerald-500/20', accentColor: 'text-emerald-400' },
 }
 
 export interface LevelData {
@@ -567,6 +569,212 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'Body Schema', slug: 'body-schema' },
       { label: 'C-Tactile Fibers', slug: 'c-tactile-fibers' },
       { label: 'Proprioception', slug: 'proprioception' },
+    ],
+  },
+  6: {
+    number: 6,
+    badge: '[ LEVEL 6: BRAIN / AQUA II ]',
+    name: 'BRAIN / AQUA II',
+    subtitle: 'Cognitive Sovereignty and Global Neural Integration — the mind as a high-precision supercomputer.',
+    theme: levelThemes[6],
+    metaDescription:
+      'Level 6 BRAIN / AQUA II: Cognitive sovereignty and neuro-integration. DMN deactivation, metacognition, gamma rhythms. Master the meta-programmer protocol. ONDA Life.',
+    intro:
+      'At this stage, we transition from managing the "biological spacesuit" to mastering the "command deck" of consciousness. We move from sensory intelligence to Cognitive Sovereignty. The objective is to establish neural distance from the internal dialogue, synchronize the entire brain architecture into a unified system, and activate the capacity for collective resonance. You cease to be a participant in the mental storm and become its Architect.',
+    architecture: {
+      title: 'System Architecture',
+      intro: 'Level 6 integrates metacognitive and network-centric protocols:',
+      parts: [
+        {
+          number: '16',
+          label: 'I Witness',
+          slug: 'i-witness',
+          protocol: 'Protocol: Neural Distance and Metacognitive Monitoring',
+          goal: 'Objective: Transitioning from being a hostage of the stream of consciousness to becoming its Meta-Programmer.',
+          work:
+            'Work: Deactivating the Default Mode Network (DMN) and establishing "neural distance." Using sensory anchors to collapse internal dialogue and transform thoughts into transparent electrical impulses.',
+        },
+        {
+          number: '17',
+          label: 'I Integrate',
+          slug: 'i-integrate',
+          protocol: 'Protocol: Global Neural Integration and Experience Synthesis',
+          goal: 'Objective: Achieving maximum neural coherence — the brain as a single, frictionless supercomputer.',
+          work:
+            'Work: Strengthening horizontal (inter-hemispheric) and vertical (cortex-body) connectivity. Utilizing the corpus callosum and mPFC to reconcile cognitive dissonance and unite logic with intuition.',
+        },
+        {
+          number: '18',
+          label: 'I Synchronize',
+          slug: 'i-synchronize',
+          protocol: 'Protocol: Neuroelectric Synchronization and Collective Intelligence',
+          goal: 'Objective: From "I-mode" to "Network Node" — activating inter-brain hyperscanning and collective flow.',
+          work:
+            'Work: Triggering Gamma rhythms (40 Hz) and the Mirror Neuron System. Achieving neuroelectric phase-locking with others to access "oceanic" scale resources and solutions.',
+        },
+      ],
+    },
+    biologicalProtocol: {
+      title: 'Biological Protocol',
+      intro: 'The neuro-integration technological stack:',
+      items: [
+        {
+          name: 'Metacognitive Labeling',
+          text: 'Practices to "tag" mental events, activating the mPFC and stripping thoughts of their emotional charge.',
+        },
+        {
+          name: 'Inter-hemispheric Sync',
+          text: 'Exercises for the corpus callosum to ensure seamless data flow between analytical and intuitive centers.',
+        },
+        {
+          name: 'Gamma-Flow Tuning',
+          text: 'Techniques to stabilize high-frequency (40 Hz) brain activity for collective insight and rapid learning.',
+        },
+        {
+          name: 'Limbic Decoupling',
+          text: 'Training the PFC to register "charged" data without triggering cortisol release or the amygdala.',
+        },
+      ],
+    },
+    targetSystems: {
+      title: 'Target Systems',
+      intro: 'The level engages the following neural structures:',
+      items: [
+        { name: 'Dorsolateral PFC', text: 'The primary filter for separating vital signals from informational noise.' },
+        { name: 'Corpus Callosum', text: 'The bridge for horizontal integration and inter-hemispheric synchronization.' },
+        { name: 'Anterior Cingulate Cortex (ACC)', text: 'The internal monitor for detecting rumination and conflicting signals.' },
+        { name: 'Mirror Neuron Network', text: 'The biological hardware for pre-verbal understanding and collective resonance.' },
+        { name: 'rTPJ (Right Temporoparietal Junction)', text: 'The hub for social navigation and modeling the states of others.' },
+      ],
+    },
+    results: {
+      title: 'Results & Benefits',
+      intro: 'The outcome of completing Level 6 is attaining "Neural Transparency." Your progress markers include:',
+      items: [
+        'Increased Cognitive Gap: The ability to choose your response to any thought or impulse.',
+        'High Heart-Brain Coherence: Total absence of internal conflict and "energy leaks."',
+        'Inter-brain Phase Coherence: The ability to instantly "lock into" the rhythm of a group.',
+        'Alpha/Gamma Stabilization: A calm, silent mind capable of high-intensity informational bursts.',
+      ],
+    },
+    researchLinks: [
+      { label: 'DMN & self-referential processing', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Metacognition & PFC', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
+      { label: 'Gamma oscillations & binding', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
+    ],
+    glossaryLinks: [
+      { label: 'Default Mode Network', slug: 'default-mode-network' },
+      { label: 'Central Executive Network', slug: 'central-executive-network' },
+      { label: 'Dorsolateral Prefrontal Cortex', slug: 'dorsolateral-prefrontal-cortex' },
+      { label: 'Medial Prefrontal Cortex', slug: 'medial-prefrontal-cortex' },
+      { label: 'Anterior Cingulate Cortex', slug: 'anterior-cingulate-cortex' },
+      { label: 'Mirror Neurons', slug: 'mirror-neurons' },
+      { label: 'Gamma Binding', slug: 'gamma-binding' },
+      { label: 'Cognitive Gap', slug: 'cognitive-gap' },
+      { label: 'Inter-brain Synchrony', slug: 'inter-brain-synchrony' },
+      { label: 'rTPJ', slug: 'right-temporoparietal-junction' },
+      { label: 'Neuroplasticity', slug: 'neuroplasticity' },
+    ],
+  },
+  7: {
+    number: 7,
+    badge: '[ LEVEL 7: DNA / AER II ]',
+    name: 'DNA / AER II',
+    subtitle: 'DNA Consciousness and Epigenetic Mastery — the human as a Biological Designer.',
+    theme: levelThemes[7],
+    metaDescription:
+      'Level 7 DNA / AER II: DNA consciousness, epigenetics, cellular regeneration, autophagy. Become the Biological Designer. ONDA Life.',
+    intro:
+      'At this stage, we move beyond thoughts and muscles into the informational core of life. We transition from being "biological objects" to becoming Evolutionary Creators. The objective is to access the billion-year-old library of DNA, activate deep cellular regeneration, and align your personal development with the developmental vector of Life itself. You are no longer a hostage to heredity; you are the architect of your biological future.',
+    architecture: {
+      title: 'System Architecture',
+      intro: 'Level 7 integrates genetic memory, cellular repair, and evolutionary synthesis:',
+      parts: [
+        {
+          number: '19',
+          label: 'I Remember',
+          slug: 'i-remember',
+          protocol: 'Protocol: DNA Consciousness and Evolutionary Memory',
+          goal: 'Objective: Transitioning from the "Self" to the "Species" — accessing the 4-billion-year-old legacy of survival and triumph.',
+          work:
+            'Work: Activating the brainstem and archicortex to transform ancient instincts into conscious resources. Using "Ancestral Breathing" to modulate epigenetic markers and stabilize instinctive calm.',
+        },
+        {
+          number: '20',
+          label: 'I Restore',
+          slug: 'i-restore',
+          protocol: 'Protocol: Cellular Regeneration and DNA Self-Correction',
+          goal: 'Objective: Shifting from "Survival and Attrition" to "Deep Renewal" — the Prefrontal Cortex as a control panel for cellular repair.',
+          work:
+            'Work: Activating autophagy and DNA proofreading enzymes via high Vagal Tone. Modulating telomerase through deep meditative states to restore the system to its "factory settings."',
+        },
+        {
+          number: '21',
+          label: 'I Synthesize',
+          slug: 'i-synthesize',
+          protocol: 'Protocol: Epigenetic Mastery and Planetary Symbiosis',
+          goal: 'Objective: From "Consumer of Life" to "Engineer of Life" — turning personal experience into a healthy update for the planetary field.',
+          work:
+            'Work: Using the Orbitofrontal Cortex and Prospection Networks to model a creative future. Aligning heart-brain coherence with global natural cycles (Schumann frequencies) for planetary resonance.',
+        },
+      ],
+    },
+    biologicalProtocol: {
+      title: 'Biological Protocol',
+      intro: 'The epigenetic and regenerative technological stack:',
+      items: [
+        {
+          name: 'Epigenetic Resonance',
+          text: 'Modulating internal states to influence gene expression related to immunity, stress resilience, and longevity.',
+        },
+        {
+          name: 'Autophagy Triggering',
+          text: 'Conscious deactivation of the "stress axis" (HPA) to allow lysosomes to recycle cellular waste and cleanse the extracellular matrix.',
+        },
+        {
+          name: 'Archaic Recapitulation',
+          text: 'Contacting the oldest layers of the brain to "upcycle" primal fears into instinctive wisdom and biological dignity.',
+        },
+        {
+          name: 'Telomerase Modulation',
+          text: 'Stabilizing genetic integrity through ultra-deep relaxation phases that stimulate growth hormone and anabolic repair.',
+        },
+      ],
+    },
+    targetSystems: {
+      title: 'Target Systems',
+      intro: 'The level engages the following biological and genetic structures:',
+      items: [
+        { name: 'The Genetic Code (Epigenetic Markers)', text: 'The primary site for modulating gene expression through conscious physiological shifts.' },
+        { name: 'Vagus Nerve (Ventral Complex)', text: 'The main lever for switching the body into "Trophotropic" (repair and build) mode.' },
+        { name: 'Brainstem & Reticular Formation', text: 'Access points to archaic survival algorithms and the "reptilian" brain.' },
+        { name: 'Lysosomes & Telomeres', text: 'The cellular hardware for waste recycling and maintaining genetic lifespan.' },
+        { name: 'Orbitofrontal Cortex', text: 'The center for higher ethical synthesis and evolutionary decision-making.' },
+      ],
+    },
+    results: {
+      title: 'Results & Benefits',
+      intro: 'The outcome of completing Level 7 is attaining "Biological Sovereignty." Your progress markers include:',
+      items: [
+        'Epigenetic Freedom: You are no longer a victim of hereditary scripts or family traumas; you are the editor of your code.',
+        'Factory Settings Effect: A palpable sense of clarity, functionality, and "newness" in the tissues and mind.',
+        'Evolutionary Validity: An unshakeable sense of "rightness" and belonging to the billion-year-old arrow of life.',
+        'Sustainable Flow: The ecstasy of creation becomes the baseline frequency, fueled by healthy eustress rather than anxiety.',
+      ],
+    },
+    researchLinks: [
+      { label: 'Epigenetics & gene expression', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+      { label: 'Autophagy & cellular repair', url: 'https://pubmed.ncbi.nlm.nih.gov/28011467/' },
+    ],
+    glossaryLinks: [
+      { label: 'Autophagy', slug: 'autophagy' },
+      { label: 'Vagus Nerve', slug: 'vagus-nerve' },
+      { label: 'Ventral Vagus', slug: 'ventral-vagus' },
+      { label: 'HPA Axis', slug: 'hpa-axis' },
+      { label: 'Brainstem', slug: 'brainstem' },
+      { label: 'Reticular Formation', slug: 'reticular-formation' },
+      { label: 'Orbitofrontal Cortex', slug: 'orbitofrontal-cortex' },
+      { label: 'Senescence', slug: 'senescence' },
     ],
   },
 }

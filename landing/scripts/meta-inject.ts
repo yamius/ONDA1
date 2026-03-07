@@ -90,6 +90,8 @@ export interface RouteMeta {
   faq?: { mainEntity: { question: string; answer: string }[]; url: string }
   contactPage?: { name: string; description: string; url: string; email: string }
   aboutPage?: { name: string; description: string; url: string }
+  creativeWork?: { name: string; description: string; url: string; about: string[] }
+  course?: { name: string; description: string; url: string }
 }
 
 function buildBreadcrumbs(route: string): BreadcrumbItem[] {
@@ -240,6 +242,37 @@ function buildContactPageJsonLd(
   return JSON.stringify(contactPage)
 }
 
+function buildCreativeWorkJsonLd(
+  name: string,
+  description: string,
+  url: string,
+  about: string[]
+): string {
+  const creativeWork = {
+    '@context': 'https://schema.org',
+    '@type': 'CreativeWork',
+    name,
+    description,
+    url,
+    author: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+    about: about.map((item) => ({ '@type': 'Thing', name: item })),
+  }
+  return JSON.stringify(creativeWork)
+}
+
+function buildCourseJsonLd(name: string, description: string, url: string): string {
+  const course = {
+    '@context': 'https://schema.org',
+    '@type': 'Course',
+    name,
+    description,
+    url,
+    provider: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+    courseCode: 'ONDA-L7-DNA',
+  }
+  return JSON.stringify(course)
+}
+
 function buildAboutPageJsonLd(name: string, description: string, url: string): string {
   const aboutPage = {
     '@context': 'https://schema.org',
@@ -274,6 +307,44 @@ function buildHowToJsonLd(name: string, steps: { name: string; text: string }[],
     })),
   }
   return JSON.stringify(howTo)
+}
+
+/** FAQ schema for level pages. 2–3 key Q&As per level for FAQPage JSON-LD. */
+const FAQ_LEVEL_SCHEMA: Record<number, { question: string; answer: string }[]> = {
+  6: [
+    {
+      question: 'What is Level 6 BRAIN / AQUA II in the ONDA System?',
+      answer:
+        'Level 6 is the stage of Cognitive Sovereignty and Global Neural Integration. You transition from managing the body to mastering the "command deck" of consciousness — establishing neural distance from the internal dialogue, synchronizing brain architecture, and activating collective resonance. Protocols: I Witness, I Integrate, I Synchronize.',
+    },
+    {
+      question: 'What is the meta-programmer protocol?',
+      answer:
+        'The meta-programmer is the outcome of Part 16 (I Witness): you cease to be a hostage of the stream of consciousness and become its Architect. Through DMN deactivation and metacognitive monitoring, thoughts become transparent electrical impulses you observe rather than react to.',
+    },
+    {
+      question: 'How does Level 6 improve inter-brain coherence?',
+      answer:
+        'Part 18 (I Synchronize) triggers Gamma rhythms (40 Hz) and the Mirror Neuron System, achieving neuroelectric phase-locking with others. You gain the ability to instantly "lock into" the rhythm of a group — inter-brain phase coherence for collective insight.',
+    },
+  ],
+  7: [
+    {
+      question: 'What is Level 7 DNA / AER II in the ONDA System?',
+      answer:
+        'Level 7 is the stage of DNA Consciousness and Epigenetic Mastery — the human as a Biological Designer. You transition from biological objects to Evolutionary Creators, accessing the billion-year-old library of DNA, activating cellular regeneration, and aligning with the developmental vector of Life. Protocols: I Remember, I Restore, I Synthesize.',
+    },
+    {
+      question: 'What is the I Remember protocol?',
+      answer:
+        'I Remember (Part 19) is the protocol of DNA Consciousness and Evolutionary Memory. It transitions you from "Self" to "Species" by activating the brainstem and archicortex, transforming ancient instincts into conscious resources. Ancestral Breathing modulates epigenetic markers and stabilizes instinctive calm.',
+    },
+    {
+      question: 'What is Biological Sovereignty?',
+      answer:
+        'Biological Sovereignty is the outcome of completing Level 7. It includes epigenetic freedom (editing your hereditary code), the Factory Settings Effect (clarity and "newness" in tissues and mind), evolutionary validity (belonging to the arrow of life), and sustainable flow fueled by healthy eustress.',
+    },
+  ],
 }
 
 /** FAQ schema for article pages. 2–3 key Q&As per article for FAQPage JSON-LD. */
@@ -599,12 +670,39 @@ export function getMetaForRoute(route: string): RouteMeta {
 
   const levelMatch = route.match(/^\/level\/([^/]+)$/)
   if (levelMatch) {
-    const level = levelsData[parseInt(levelMatch[1], 10)]
+    const levelNum = parseInt(levelMatch[1], 10)
+    const level = levelsData[levelNum]
     const title = level
       ? `Level ${level.number}: ${level.name} | ONDA Life`
       : `Level ${levelMatch[1]} | ONDA Life`
     const description = level?.metaDescription ?? level?.subtitle ?? ''
-    return { title, description, url, breadcrumbs }
+    const about =
+      level?.targetSystems?.items?.map((t) => t.name) ??
+      level?.architecture?.parts?.map((p) => p.label) ??
+      []
+    const faqItems = level ? FAQ_LEVEL_SCHEMA[level.number] : undefined
+    const course =
+      level?.number === 7
+        ? {
+            name: 'Epigenetic Design and DNA Consciousness',
+            description:
+              'Level 7 DNA / AER II: DNA consciousness, epigenetic mastery, cellular regeneration, autophagy. Become the Biological Designer. ONDA Life.',
+            url,
+          }
+        : undefined
+    return {
+      title,
+      description,
+      url,
+      breadcrumbs,
+      creativeWork: level
+        ? { name: `Level ${level.number}: ${level.name}`, description, url, about }
+        : undefined,
+      course,
+      faq: faqItems?.length
+        ? { mainEntity: faqItems, url }
+        : undefined,
+    }
   }
 
   return { title: DEFAULT_TITLE, description: DEFAULT_DESC, url, breadcrumbs }
@@ -668,6 +766,18 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (meta.aboutPage) {
     const aboutScript = `<script type="application/ld+json">${buildAboutPageJsonLd(meta.aboutPage.name, meta.aboutPage.description, meta.aboutPage.url)}</script>`
     out = out.replace('</head>', `  ${aboutScript}\n</head>`)
+  }
+
+  // JSON-LD: CreativeWork (level pages)
+  if (meta.creativeWork) {
+    const cwScript = `<script type="application/ld+json">${buildCreativeWorkJsonLd(meta.creativeWork.name, meta.creativeWork.description, meta.creativeWork.url, meta.creativeWork.about)}</script>`
+    out = out.replace('</head>', `  ${cwScript}\n</head>`)
+  }
+
+  // JSON-LD: Course (Level 7 — Epigenetic Design and DNA Consciousness)
+  if (meta.course) {
+    const courseScript = `<script type="application/ld+json">${buildCourseJsonLd(meta.course.name, meta.course.description, meta.course.url)}</script>`
+    out = out.replace('</head>', `  ${courseScript}\n</head>`)
   }
 
   // JSON-LD: HowTo (article pages with protocols)

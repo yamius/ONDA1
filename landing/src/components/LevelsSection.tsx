@@ -106,7 +106,8 @@ const levels: LevelData[] = [
     color: 'from-indigo-500/20 to-indigo-900/10',
     borderColor: 'border-indigo-500/20',
     accentColor: 'text-indigo-400',
-    description: 'Neuroplasticity and hemispheric synchronization.',
+    description:
+      'Cognitive Sovereignty and Global Neural Integration — the mind as a high-precision supercomputer. DMN & metacognition, Gamma rhythms.',
   },
   {
     number: 7,
@@ -120,7 +121,8 @@ const levels: LevelData[] = [
     color: 'from-emerald-500/20 to-emerald-900/10',
     borderColor: 'border-emerald-500/20',
     accentColor: 'text-emerald-400',
-    description: 'Epigenetic modulation, genetic memory, cellular repair. Guardian of the primary code.',
+    description:
+      'DNA consciousness and epigenetic mastery — the human as a Biological Designer. Access the billion-year-old library of DNA, activate cellular regeneration.',
   },
   {
     number: 8,
@@ -165,7 +167,7 @@ export function LevelsSection() {
   )
 }
 
-const levelsWithPages = [1, 2, 3, 4, 5] // Levels that have dedicated parent pages
+const levelsWithPages = [1, 2, 3, 4, 5, 6, 7] // Levels that have dedicated parent pages
 
 function LevelCard({ level }: { level: LevelData }) {
   const hasLevelPage = levelsWithPages.includes(level.number)

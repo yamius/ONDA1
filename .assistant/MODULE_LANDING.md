@@ -587,9 +587,55 @@ cd landing && npm run start
 | 3 | MIND / AER | 7-9 |
 | 4 | SOCIETY / IGNIS | 10-12 |
 | 5 | BODY II / TERRA II | 13-15 |
-| 6 | BRAIN / AQUA II | 16-18 |
+| 6 | BRAIN / AQUA II | 16-18 (**→ /level/6**) |
 | 7 | DNA / AER II | 19-21 |
 | 8 | ATOMIC / IGNIS II | 22-24 |
+
+### Правила оформления описаний уровней
+
+**Источник данных:** `landing/src/data/levels.ts`. Страница уровня: `LevelPage.tsx`, карточка на главной: `LevelsSection.tsx`.
+
+**Структура LevelData (levels.ts):**
+
+| Поле | Назначение |
+|------|------------|
+| `number`, `badge`, `name`, `subtitle` | Идентификация и заголовок |
+| `metaDescription` | SEO meta description (150–160 символов) |
+| `intro` | Вводный текст (абзацы через `\n\n`) |
+| `architecture` | System Architecture: `title`, `intro`, `parts[]` (number, label, slug, protocol, goal, work) |
+| `biologicalProtocol` | Biological Protocol: `intro`, `items[]` (name, text) |
+| `targetSystems` | Target Systems: `intro`, `items[]` (name, text) |
+| `results` | Results & Benefits: `intro`, `items[]` (строки) |
+| `researchLinks` | Ссылки на PubMed (label, url) |
+| `glossaryLinks` | Термины глоссария (label, slug) — slug должен существовать в glossary.ts |
+
+**Семантика:**
+
+- `h1`: Level X + name (LevelPage)
+- `h2`: subtitle, [ SYSTEM ARCHITECTURE ], Biological Protocol, Target Systems, Results & Benefits, Research Basis, Related Terms
+- `h3`: подзаголовки внутри секций (например, items в biologicalProtocol)
+
+**Ссылки на Parts:**
+
+- У каждой ссылки «→ Open X protocol» — `aria-label` и `title` с названием протокола.
+- URL: `/part/:slug` (например `/part/i-sense`).
+
+**SEO:**
+
+- Schema.org: JSON-LD `CreativeWork` с `name`, `description`, `url`, `author`, `about` (Target Systems) — инжектируется в prerender.
+- Meta: title, description, og:*, twitter:* — из `metaDescription` и `subtitle`.
+
+**Карточка на главной (LevelsSection):**
+
+- `name`, `description` — краткое описание уровня.
+- `researchLinks` — опционально; если не нужны отдельные ссылки, включи ключевые термины в `description`.
+
+**Добавление нового уровня:**
+
+1. Добавить `levelThemes[N]` в levels.ts.
+2. Добавить объект уровня в `levelsData`.
+3. Добавить карточку в `LevelsSection.tsx` (levels array).
+4. Добавить `N` в `levelsWithPages`, если нужна отдельная страница `/level/N`.
 
 ---
 
