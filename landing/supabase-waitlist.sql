@@ -4,8 +4,12 @@
 CREATE TABLE IF NOT EXISTS waitlist (
   id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
   email TEXT NOT NULL UNIQUE,
+  platform TEXT,
   created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+-- Add platform column if table already existed without it
+ALTER TABLE waitlist ADD COLUMN IF NOT EXISTS platform TEXT;
 
 -- 2. Enable RLS
 ALTER TABLE waitlist ENABLE ROW LEVEL SECURITY;

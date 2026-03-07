@@ -3,6 +3,7 @@ import { supabase } from '../lib/supabase'
 
 export function CtaSection() {
   const [isOpen, setIsOpen] = useState(false)
+  const [platform, setPlatform] = useState<string>('')
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [isLoading, setIsLoading] = useState(false)
@@ -22,7 +23,7 @@ export function CtaSection() {
     }
 
     try {
-      const { error: insertError } = await supabase.from('waitlist').insert({ email })
+      const { error: insertError } = await supabase.from('waitlist').insert({ email, platform: platform || null })
 
       if (insertError) {
         if (insertError.code === '23505') {
@@ -44,6 +45,7 @@ export function CtaSection() {
 
   const handleClose = () => {
     setIsOpen(false)
+    setPlatform('')
     setError(null)
   }
 
@@ -65,9 +67,13 @@ export function CtaSection() {
         <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
           <button
             type="button"
-            onClick={() => setIsOpen(true)}
+            onClick={() => {
+              setPlatform('ios')
+              setIsOpen(true)
+            }}
             className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
             aria-label="Download ONDA Life on App Store"
+            data-button="apple"
           >
             <AppleIcon />
             <div className="text-left">
@@ -77,9 +83,13 @@ export function CtaSection() {
           </button>
           <button
             type="button"
-            onClick={() => setIsOpen(true)}
+            onClick={() => {
+              setPlatform('android')
+              setIsOpen(true)
+            }}
             className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
             aria-label="Download ONDA Life on Google Play"
+            data-button="android"
           >
             <PlayIcon />
             <div className="text-left">

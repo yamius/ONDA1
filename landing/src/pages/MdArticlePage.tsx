@@ -396,6 +396,7 @@ export function MdArticlePage() {
             href="/#download"
             className="flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold transition-all hover:border-cyan-500/50 hover:bg-white/15 sm:w-auto"
             aria-label="Download ONDA Life on App Store"
+            data-button="apple"
           >
             <AppleIcon />
             <span>App Store</span>
@@ -404,6 +405,7 @@ export function MdArticlePage() {
             href="/#download"
             className="flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold transition-all hover:border-cyan-500/50 hover:bg-white/15 sm:w-auto"
             aria-label="Download ONDA Life on Google Play"
+            data-button="android"
           >
             <PlayIcon />
             <span>Google Play</span>
