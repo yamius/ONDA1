@@ -613,7 +613,7 @@ cd landing && npm run start
 | 5 | BODY II / TERRA II | 13-15 |
 | 6 | BRAIN / AQUA II | 16-18 (**→ /level/6**) |
 | 7 | DNA / AER II | 19-21 (**→ /level/7**) |
-| 8 | IGNIS II / THE SOURCE | 22-24 (**→ /level/8**) |
+| 8 | ATOMIC / IGNIS II | 22-24 (**→ /level/8**) |
 
 ### Правила оформления описаний уровней
 
@@ -661,7 +661,6 @@ cd landing && npm run start
 **Level 8 особенности:**
 - Тема: `border-violet-500/30`, `text-amber-300` (violet + gold)
 - Градиент карточки: `from-violet-500/20 via-amber-500/10 to-white/5`
-- Формула-аксиома «I = Source = Consciousness = Reality» — отдельный `<blockquote>` в LevelPage.tsx (только для level.number === 8)
 
 **Добавление нового уровня:**
 

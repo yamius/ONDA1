@@ -780,8 +780,8 @@ export const levelsData: Record<number, LevelData> = {
   },
   8: {
     number: 8,
-    badge: '[ LEVEL 8: IGNIS II / THE SOURCE ]',
-    name: 'IGNIS II / THE SOURCE',
+    badge: '[ LEVEL 8: ATOMIC / IGNIS II ]',
+    name: 'ATOMIC / IGNIS II',
     subtitle: 'Quantum Consciousness and Reality Creation — the human as the Zero Point.',
     theme: levelThemes[8],
     metaDescription:

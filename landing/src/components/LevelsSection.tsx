@@ -127,7 +127,7 @@ const levels: LevelData[] = [
   {
     number: 8,
     emoji: '🌌',
-    name: 'IGNIS II / THE SOURCE',
+    name: 'ATOMIC / IGNIS II',
     parts: [
       { label: '22. I Am Vibration', slug: 'i-am-vibration' },
       { label: '23. I Am Wholeness', slug: 'i-am-wholeness' },
@@ -137,7 +137,7 @@ const levels: LevelData[] = [
     borderColor: 'border-violet-500/30',
     accentColor: 'text-amber-300',
     description:
-      'Quantum Consciousness and Reality Creation — the human as the Zero Point. I = Source = Consciousness = Reality.',
+      'Quantum Consciousness and Reality Creation — the human as the Zero Point.',
   },
 ]
 

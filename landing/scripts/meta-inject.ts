@@ -347,9 +347,9 @@ const FAQ_LEVEL_SCHEMA: Record<number, { question: string; answer: string }[]> =
   ],
   8: [
     {
-      question: 'What is Level 8 IGNIS II / THE SOURCE in the ONDA System?',
+      question: 'What is Level 8 ATOMIC / IGNIS II in the ONDA System?',
       answer:
-        'Level 8 is the final stage of the ONDA system — Quantum Consciousness and Reality Creation. You transition from biological object to Reality Creator, returning to the Singularity Point where consciousness is recognized as a medium of infinite energy density. The core axiom: I = Source = Consciousness = Reality. Protocols: I Am Vibration, I Am Wholeness, I Am the Source.',
+        'Level 8 is the final stage of the ONDA system — Quantum Consciousness and Reality Creation. You transition from biological object to Reality Creator, returning to the Singularity Point where consciousness is recognized as a medium of infinite energy density. Protocols: I Am Vibration, I Am Wholeness, I Am the Source.',
     },
     {
       question: 'What is Quantum Sovereignty?',

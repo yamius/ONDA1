@@ -1775,7 +1775,7 @@ export const parts: Record<string, {
     ],
   },
   'i-am-vibration': {
-    badge: '[ PART 22 — LEVEL 8: IGNIS II / THE SOURCE ]',
+    badge: '[ PART 22 — LEVEL 8: ATOMIC / IGNIS II ]',
     title: 'I Am',
     titleHighlight: 'Vibration',
     subtitle: 'Protocol: Quantum Consciousness and Energy Resonance',
@@ -1849,7 +1849,7 @@ export const parts: Record<string, {
     ],
   },
   'i-am-wholeness': {
-    badge: '[ PART 23 — LEVEL 8: IGNIS II / THE SOURCE ]',
+    badge: '[ PART 23 — LEVEL 8: ATOMIC / IGNIS II ]',
     title: 'I Am',
     titleHighlight: 'Wholeness',
     subtitle: 'Protocol: Non-local Unity and Quantum Self-Awareness',
@@ -1922,7 +1922,7 @@ export const parts: Record<string, {
     ],
   },
   'i-am-the-source': {
-    badge: '[ PART 24 — LEVEL 8: IGNIS II / THE SOURCE ]',
+    badge: '[ PART 24 — LEVEL 8: ATOMIC / IGNIS II ]',
     title: 'I Am the',
     titleHighlight: 'Source',
     subtitle: 'Protocol: Consciousness Singularity and Quantum Creation',
@@ -1964,7 +1964,7 @@ export const parts: Record<string, {
         { name: 'Thalamo-cortical Resonance', text: 'Central hub distributing Being from potential to manifested.' },
         {
           name: 'Biomarkers',
-          text: 'Superconductivity State (absence of mental and physical resistance), Brainwave Coherence approaching 100%, Instant Autonomic Stabilization. Final formula: I = Source = Consciousness = Reality.',
+          text: 'Superconductivity State (absence of mental and physical resistance), Brainwave Coherence approaching 100%, Instant Autonomic Stabilization.',
         },
       ],
     },
