@@ -125,51 +125,53 @@ export function CtaSection() {
               ✕
             </button>
 
-            {!isSubmitted ? (
-              <form id="waitlist-form" onSubmit={handleFormSubmit}>
-                <h2 id="waitlist-modal-title" className="mb-4 text-2xl font-bold text-white">
-                  Join ONDA Life
-                </h2>
-                <p className="mb-6 text-sm text-white/60">
-                  We are putting the finishing touches! Leave your email and we will send you early access.
-                </p>
-                <input
-                  type="email"
-                  name="email"
-                  required
-                  placeholder="Your email"
-                  disabled={isLoading}
-                  className="mb-4 w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder-white/40 outline-none transition-colors focus:border-terminal-cyan/50 focus:ring-1 focus:ring-terminal-cyan/30 disabled:opacity-50"
-                />
-                {error && (
-                  <p className="mb-4 text-sm text-rose-400" role="alert">
-                    {error}
+            <div className="min-h-[270px] flex flex-col">
+              {!isSubmitted ? (
+                <form id="waitlist-form" onSubmit={handleFormSubmit} className="flex flex-col flex-1">
+                  <h2 id="waitlist-modal-title" className="mb-4 text-2xl font-bold text-white">
+                    Join ONDA Life
+                  </h2>
+                  <p className="mb-6 text-sm text-white/60">
+                    We are putting the finishing touches! Leave your email and we will send you early access.
                   </p>
-                )}
-                <button
-                  type="submit"
-                  disabled={isLoading}
-                  className="w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90 disabled:opacity-50"
-                >
-                  {isLoading ? 'Submitting...' : 'Get Early Access'}
-                </button>
-              </form>
-            ) : (
-              <div id="thank-you-message" className="flex flex-col">
-                <h2 className="mb-4 text-2xl font-bold text-terminal-green">Thank you!</h2>
-                <p className="mb-6 text-sm text-white/60">
-                  We will contact you as soon as the app is ready to launch.
-                </p>
-                <div className="mb-4 h-[52px]" aria-hidden="true" />
-                <button
-                  type="button"
-                  onClick={handleClose}
-                  className="w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90"
-                >
-                  OK
-                </button>
-              </div>
-            )}
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Your email"
+                    disabled={isLoading}
+                    className="mb-4 w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder-white/40 outline-none transition-colors focus:border-terminal-cyan/50 focus:ring-1 focus:ring-terminal-cyan/30 disabled:opacity-50"
+                  />
+                  {error && (
+                    <p className="mb-4 text-sm text-rose-400" role="alert">
+                      {error}
+                    </p>
+                  )}
+                  <button
+                    type="submit"
+                    disabled={isLoading}
+                    className="mt-auto w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90 disabled:opacity-50"
+                  >
+                    {isLoading ? 'Submitting...' : 'Get Early Access'}
+                  </button>
+                </form>
+              ) : (
+                <div id="thank-you-message" className="flex flex-col flex-1">
+                  <h2 className="mb-4 text-2xl font-bold text-terminal-green">Thank you!</h2>
+                  <p className="mb-6 text-sm text-white/60">
+                    We will contact you as soon as the app is ready to launch.
+                  </p>
+                  <div className="flex-1 min-h-0" aria-hidden="true" />
+                  <button
+                    type="button"
+                    onClick={handleClose}
+                    className="w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90"
+                  >
+                    OK
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}
