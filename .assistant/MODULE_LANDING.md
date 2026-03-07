@@ -473,35 +473,59 @@ Sitemap: https://onda-life.com/sitemap.xml
 
 **Если используется Replit:**
 
-- Replit деплоит из **workspace**, не из GitHub. Перед Republish нужно **Pull** в Replit, чтобы подтянуть изменения.
+- Replit Autoscale деплоит из **workspace**, не напрямую из GitHub.
+- Build step содержит `git pull` для автоматической синхронизации с GitHub.
 - Конфигурация `.replit` (рабочие настройки):
   ```toml
   [deployment]
   deploymentTarget = "autoscale"
-  build = ["bash", "-c", "cd landing && rm -rf dist && npm install && npm run build"]
+  build = ["bash", "-c", "git pull origin main --ff-only || true && cd landing && rm -rf dist && npm install && npm run build"]
   run = ["bash", "-c", "cd landing && npm install && node server.js"]
   ```
-- **`rm -rf dist` в build — обязательно.** Без этого Replit может использовать закешированный `dist/` от предыдущей сборки. Если `tsc -b` или `vite build` упадёт, старый `dist/` не подменит свежую сборку.
+- **`git pull` в build** — автоматически подтягивает свежий код из GitHub перед сборкой. `|| true` — чтобы деплой не падал, если pull невозможен (например, diverging branches).
+- **`rm -rf dist` в build — обязательно.** Без этого Replit может использовать закешированный `dist/` от предыдущей сборки.
 - Порты: `[[ports]] localPort = 5000, externalPort = 80` — сервер слушает на `0.0.0.0:5000`.
-- Процесс деплоя: Git → **Pull** (в Replit) → Deployments → **Republish**
+- Процесс деплоя: `git push` из Cursor → нажать **Deploy** в Replit (build step сам сделает `git pull`)
 
 > **⚠️ НЕ МЕНЯТЬ конфигурацию деплоя без крайней необходимости.**
 > Эта конфигурация — проверенная и рабочая. Любые изменения в `build`/`run` командах `.replit`, в `server.js` (порядок запуска, healthcheck, fallback) могут сломать деплой. Если деплой перестал работать — сначала проверь, что конфигурация соответствует документации выше.
 
+> **⚠️ НЕ использовать `git` в runtime (server.js).**
+> В Replit Autoscale deployment-контейнере `git` может быть недоступен или `.git` отсутствует. Любые вызовы `execSync('git ...')` в server.js приведут к 500 ошибкам и бесконечным перезапускам. Git — только в build step.
+
+> **⚠️ `express.static` и несуществующий `distDir`.**
+> Если `dist/` не существует при старте сервера, `express.static` может выбрасывать ошибки → 500 на healthcheck → Replit убивает процесс. Поэтому `server.js` создаёт `dist/` через `mkdirSync` при старте.
+
 **Если деплой не подхватывает изменения:**
 
-1. Зайти в Shell на Replit: `cd landing`
-2. Проверить исходники: `grep "КЛЮЧЕВОЕ_СЛОВО" src/components/НужныйФайл.tsx`
-3. Если исходники старые — `git pull origin main`
-4. Принудительная пересборка: `rm -rf dist && npm run build`
-5. Убедиться, что сборка прошла без ошибок (259 routes, `[prerender] Done`)
-6. Нажать **Deploy** / **Republish**
+1. Зайти в Shell на Replit
+2. Проверить, что код синхронизирован: `git log --oneline -3` (сравнить с GitHub)
+3. Если код старый — синхронизировать вручную:
+   ```bash
+   git stash
+   git rebase origin/main
+   git stash pop
+   ```
+   Или: `git pull origin main --ff-only` (если нет diverging branches)
+4. Нажать **Deploy**
+
+**Если Replit Agent сделал локальные коммиты (diverging branches):**
+
+Replit Agent может автоматически коммитить изменения в workspace. Это создаёт diverging branches, и `git pull --ff-only` не работает. Решение:
+```bash
+git stash                    # сохранить локальные изменения
+git rebase origin/main       # перебазировать поверх свежего main
+git stash pop                # вернуть локальные изменения
+```
 
 ### Production-сервер (landing/server.js)
 
 - Express-сервер, раздаёт статику из `landing/dist/`
+- **Startup safety:** `mkdirSync(distDir)` — гарантирует существование `dist/` до инициализации `express.static`
+- **Healthcheck:** `/health` → 200 OK (Replit также проверяет `/`)
 - **Canonical URLs (no trailing slash):** middleware редиректит `/path/` → `/path` (301); `express.static` с `redirect: false` не добавляет слэш
-- **Fallback-сборка**: если `dist/index.html` не найден — запускает `npm run build` в фоне
+- **Fallback-сборка**: если `dist/index.html` не найден — запускает `npm run build` в фоне, отдаёт заглушку "Building... please wait." с `meta-refresh`
+- **Global error handler:** перехватывает необработанные ошибки и возвращает 200 вместо 500 (критично для healthcheck)
 - **SPA fallback**: маршруты без расширения → `index.html`
 - Статика: `Cache-Control: max-age=31536000, immutable`
 - HTML: `Cache-Control: no-cache`
@@ -588,8 +612,8 @@ cd landing && npm run start
 | 4 | SOCIETY / IGNIS | 10-12 |
 | 5 | BODY II / TERRA II | 13-15 |
 | 6 | BRAIN / AQUA II | 16-18 (**→ /level/6**) |
-| 7 | DNA / AER II | 19-21 |
-| 8 | ATOMIC / IGNIS II | 22-24 |
+| 7 | DNA / AER II | 19-21 (**→ /level/7**) |
+| 8 | IGNIS II / THE SOURCE | 22-24 (**→ /level/8**) |
 
 ### Правила оформления описаний уровней
 
@@ -630,12 +654,23 @@ cd landing && npm run start
 - `name`, `description` — краткое описание уровня.
 - `researchLinks` — опционально; если не нужны отдельные ссылки, включи ключевые термины в `description`.
 
+**Уровни с полными страницами (levelsWithPages):** 1, 2, 3, 4, 5, 6, 7, 8 — все 8 уровней имеют отдельные страницы `/level/N`.
+
+**FAQ-схема (meta-inject.ts → FAQ_LEVEL_SCHEMA):** Уровни 6, 7, 8 имеют FAQ JSON-LD (по 3 вопроса). При добавлении нового уровня — добавить FAQ.
+
+**Level 8 особенности:**
+- Тема: `border-violet-500/30`, `text-amber-300` (violet + gold)
+- Градиент карточки: `from-violet-500/20 via-amber-500/10 to-white/5`
+- Формула-аксиома «I = Source = Consciousness = Reality» — отдельный `<blockquote>` в LevelPage.tsx (только для level.number === 8)
+
 **Добавление нового уровня:**
 
 1. Добавить `levelThemes[N]` в levels.ts.
 2. Добавить объект уровня в `levelsData`.
 3. Добавить карточку в `LevelsSection.tsx` (levels array).
 4. Добавить `N` в `levelsWithPages`, если нужна отдельная страница `/level/N`.
+5. Добавить FAQ в `meta-inject.ts` → `FAQ_LEVEL_SCHEMA[N]`.
+6. Обновить бейджи Parts в `PartPage.tsx`.
 
 ---
 
