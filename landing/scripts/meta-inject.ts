@@ -43,12 +43,19 @@ export interface BreadcrumbItem {
   url: string
 }
 
+/** Optional custom title overrides for articles (default: article.title + " | ONDA Life") */
+const ARTICLE_SEO_TITLES: Record<string, string> = {
+  'dopamine-stacking-preventing-circuit-overload': 'Dopamine Stacking & Circuit Overload | ONDA Biology',
+}
+
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
 const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'vagus-nerve-master-key':
     'Technical protocol on Vagus Nerve optimization for biocomputer upgrade. Hack stress response, unlock deep resilience via parasympathetic access.',
   'dopamine-architecture-mastering-desire':
     'Technical protocol on Dopamine as biological Prediction Error for biocomputer upgrade. Reclaim drive, escape Dopamine Traps.',
+  'dopamine-stacking-preventing-circuit-overload':
+    'Learn how to prevent neural burnout. Master your dopamine baseline and stop glutamate storms with ONDA\'s neurochemical protocols.',
   'circadian-reset-mastering-light':
     'Technical protocol on photic signal and System Clock for biocomputer upgrade. Fix Circadian Drift, insomnia, brain fog.',
   'metabolic-flexibility-dual-fuel-system':
@@ -92,7 +99,14 @@ export interface RouteMeta {
   breadcrumbs: BreadcrumbItem[]
   ogType?: 'article' | 'website'
   definedTerm?: { name: string; description: string; url: string }
-  techArticle?: { name: string; description: string; url: string; datePublished: string }
+  techArticle?: {
+    name: string
+    description: string
+    url: string
+    datePublished: string
+    keywords?: string[]
+    audience?: string
+  }
   howTo?: { name: string; step: { name: string; text: string }[] }
   faq?: { mainEntity: { question: string; answer: string }[]; url: string }
   contactPage?: { name: string; description: string; url: string; email: string }
@@ -204,9 +218,10 @@ function buildTechArticleJsonLd(
   name: string,
   description: string,
   url: string,
-  datePublished: string
+  datePublished: string,
+  opts?: { keywords?: string[]; audience?: string }
 ): string {
-  const article = {
+  const article: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'TechArticle',
     headline: name,
@@ -215,7 +230,7 @@ function buildTechArticleJsonLd(
     datePublished,
     author: {
       '@type': 'Organization',
-      name: 'ONDA Life',
+      name: 'ONDA',
       url: SITE_URL,
     },
     publisher: {
@@ -223,6 +238,13 @@ function buildTechArticleJsonLd(
       name: 'ONDA Life',
       url: SITE_URL,
     },
+  }
+  if (opts?.keywords?.length) article.keywords = opts.keywords.join(', ')
+  if (opts?.audience) {
+    article.audience = {
+      '@type': 'Audience',
+      name: opts.audience,
+    }
   }
   return JSON.stringify(article)
 }
@@ -634,18 +656,33 @@ export function getMetaForRoute(route: string): RouteMeta {
     const article = getArticleBySlug(slug)
     if (article) {
       const seoDesc = ARTICLE_SEO_DESCRIPTIONS[slug] ?? article.description
+      const techArticleBase = {
+        name: article.title,
+        description: seoDesc,
+        url,
+        datePublished: '2025-02-22',
+      }
+      const techArticleExtras =
+        slug === 'dopamine-stacking-preventing-circuit-overload'
+          ? {
+              keywords: [
+                'dopamine baseline',
+                'receptor downregulation',
+                'glutamate excitotoxicity',
+                'neurochemistry optimization',
+                'biohacking focus',
+                'intermittent fasting for brain',
+              ],
+              audience: 'Biohackers, Neuroscientists, High-Performers',
+            }
+          : undefined
       const meta: RouteMeta = {
-        title: `${article.title} | ONDA Life`,
+        title: ARTICLE_SEO_TITLES[slug] ?? `${article.title} | ONDA Life`,
         description: seoDesc,
         url,
         breadcrumbs,
         ogType: 'article',
-        techArticle: {
-          name: article.title,
-          description: seoDesc,
-          url,
-          datePublished: '2025-02-22',
-        },
+        techArticle: { ...techArticleBase, ...techArticleExtras },
       }
       if (article.howToSteps && article.howToSteps.length > 0) {
         meta.howTo = {
@@ -777,7 +814,20 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
 
   // JSON-LD: TechArticle (article pages only)
   if (meta.techArticle) {
-    const techArticleScript = `<script type="application/ld+json">${buildTechArticleJsonLd(meta.techArticle.name, meta.techArticle.description, meta.techArticle.url, meta.techArticle.datePublished)}</script>`
+    const opts =
+      meta.techArticle.keywords || meta.techArticle.audience
+        ? {
+            keywords: meta.techArticle.keywords,
+            audience: meta.techArticle.audience,
+          }
+        : undefined
+    const techArticleScript = `<script type="application/ld+json">${buildTechArticleJsonLd(
+      meta.techArticle.name,
+      meta.techArticle.description,
+      meta.techArticle.url,
+      meta.techArticle.datePublished,
+      opts
+    )}</script>`
     out = out.replace('</head>', `  ${techArticleScript}\n</head>`)
   }
 

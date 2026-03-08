@@ -125,7 +125,7 @@ export function CtaSection() {
               ✕
             </button>
 
-            <div className="min-h-[270px] flex flex-col">
+            <div className="h-[270px] flex flex-col shrink-0">
               {!isSubmitted ? (
                 <form id="waitlist-form" onSubmit={handleFormSubmit} className="flex flex-col flex-1">
                   <h2 id="waitlist-modal-title" className="mb-4 text-2xl font-bold text-white">

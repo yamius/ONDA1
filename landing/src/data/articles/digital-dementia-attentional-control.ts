@@ -27,9 +27,9 @@ const article: Article = {
     '[SIGNAL_RESTORE]: Rebuilding the attentional filter against digital information fragmentation.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Focus requires drive. Recalibrate your reward system with Dopamine Architecture.',
-    link: '/articles/dopamine-architecture-mastering-desire',
-    linkText: 'Dopamine Architecture',
+    text: 'Stacking stimuli fries your receptors. Learn to prevent circuit overload with Dopamine Stacking protocols.',
+    link: '/articles/dopamine-stacking-preventing-circuit-overload',
+    linkText: 'Dopamine Stacking',
   },
   content: `
 ## [ FIREWALL ACTIVATION ]

@@ -15,6 +15,7 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'breathwork-command-line-interface': 'nervous-system',
   'hrv-training-nervous-system-latency': 'nervous-system',
   'dopamine-architecture-mastering-desire': 'reward-logic',
+  'dopamine-stacking-preventing-circuit-overload': 'reward-logic',
   'digital-dementia-attentional-control': 'reward-logic',
   'circadian-reset-mastering-light': 'energy-grid',
   'circadian-lighting-dark-therapy': 'energy-grid',
@@ -42,6 +43,7 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
 const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'vagus-nerve-master-key': '4 min 20 sec',
   'dopamine-architecture-mastering-desire': '5 min 15 sec',
+  'dopamine-stacking-preventing-circuit-overload': '3 min 15 sec',
   'circadian-reset-mastering-light': '3 min 45 sec',
   'metabolic-flexibility-dual-fuel-system': '6 min 10 sec',
   'neuroplasticity-flow-overclocking': '5 min 30 sec',
@@ -157,7 +159,7 @@ export function ArticlePage() {
 
   useEffect(() => {
     if (!article) return
-    const title = `${article.title} | ONDA Life`
+    const title = article.seoTitle ?? `${article.title} | ONDA Life`
     const url = `${SITE_URL}/articles/${article.slug}`
     document.title = title
     setMeta('description', article.description)
@@ -237,6 +239,7 @@ export function ArticlePage() {
       const isHRVProtocol = isProtocol && article.slug === 'hrv-training-nervous-system-latency'
       const isDigitalDementiaProtocol = isProtocol && article.slug === 'digital-dementia-attentional-control'
       const isDopamineProtocol = isProtocol && article.slug === 'dopamine-architecture-mastering-desire'
+      const isDopamineStackingProtocol = isProtocol && article.slug === 'dopamine-stacking-preventing-circuit-overload'
       const isLongevityProtocol = isProtocol && article.slug === 'longevity-hardware-cellular-cleanup'
       const isCognitiveProtocol = isProtocol && article.slug === 'cognitive-architecture-nootropic-stacks'
       const isMitochondrialProtocol = isProtocol && article.slug === 'mitochondrial-biogenesis-cellular-power-grid'
@@ -249,7 +252,7 @@ export function ArticlePage() {
       const isCo2ToleranceProtocol = isProtocol && article.slug === 'co2-tolerance-expanding-oxygen-limit'
       const isFemtechProtocol = isProtocol && article.slug === 'femtech-cyclical-architecture'
       return (
-        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
+        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol || isDopamineStackingProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
           {children}
         </h3>
       )
@@ -661,6 +664,8 @@ export function ArticlePage() {
         <p className="mb-6 font-mono text-base font-semibold text-white/90 md:text-lg">
           {article.slug === 'dopamine-architecture-mastering-desire'
             ? 'System Calibration Ready. Download ONDA Life to optimize your Dopamine baseline and track motivation windows.'
+            : article.slug === 'dopamine-stacking-preventing-circuit-overload'
+              ? 'System Calibration Ready. Download ONDA Life to prevent circuit overload and track your dopamine baseline recovery.'
             : article.slug === 'circadian-reset-mastering-light'
               ? 'System Calibration Ready. Download ONDA Life to sync your Circadian Rhythm and track light exposure.'
               : article.slug === 'metabolic-flexibility-dual-fuel-system'

@@ -20,7 +20,7 @@ const MAIN_LINKS = [
 export function FooterSitemap() {
   return (
     <details className="group mt-8 w-full" aria-label="Full site map for search engines">
-      <summary className="cursor-pointer list-none font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 [&::-webkit-details-marker]:hidden">
+      <summary className="flex cursor-pointer list-none justify-center font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 [&::-webkit-details-marker]:hidden">
         <span className="inline-block border-b border-dotted border-white/10 pb-0.5">Site map</span>
       </summary>
       <nav
@@ -56,7 +56,7 @@ export function FooterSitemap() {
           ))}
           {Object.keys(parts).map((slug) => (
             <Link key={slug} to={`/part/${slug}`} className="block truncate py-0.5 hover:text-white/50">
-              {parts[slug].title}
+              {parts[slug].title} {parts[slug].titleHighlight}
             </Link>
           ))}
         </div>

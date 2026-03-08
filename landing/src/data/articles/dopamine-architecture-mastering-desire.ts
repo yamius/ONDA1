@@ -20,9 +20,9 @@ const article: Article = {
     '[ NEURAL_CURRENCY_FLOW ]: Visualizing the gold-standard reward circuitry and motivational energy distribution. VTA → Nucleus Accumbens → Frontal Cortex.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Drive requires Balance. Learn how to calibrate your recovery with the Vagus Nerve Protocol.',
-    link: '/articles/vagus-nerve-master-key',
-    linkText: 'Vagus Nerve Protocol',
+    text: 'Once you understand the baseline, protect it. Prevent circuit overload with Dopamine Stacking protocols.',
+    link: '/articles/dopamine-stacking-preventing-circuit-overload',
+    linkText: 'Dopamine Stacking',
   },
   content: `
 ## [ ANALYZING REWARD LOGIC ]

@@ -5,6 +5,7 @@ export type { Article } from './types'
 import type { Article } from './types'
 import vagusArticle from './vagus-nerve-master-key'
 import dopamineArticle from './dopamine-architecture-mastering-desire'
+import dopamineStackingArticle from './dopamine-stacking-preventing-circuit-overload'
 import circadianArticle from './circadian-reset-mastering-light'
 import metabolicArticle from './metabolic-flexibility-dual-fuel-system'
 import neuroplasticityArticle from './neuroplasticity-flow-overclocking'
@@ -30,7 +31,7 @@ import cpgArticle from './cpg-neural-autopilot'
 import co2ToleranceArticle from './co2-tolerance-expanding-oxygen-limit'
 import femtechArticle from './femtech-cyclical-architecture'
 
-export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle, ...glp1Article, ...mtDnaRedLightArticle, ...senolyticArticle, ...aiBiomarkerArticle, ...phaseLockedSleepArticle, ...neuralEntrainmentArticle, ...electricMedicineArticle, ...muscleMetabolicArticle, ...chmArticle, ...glymphaticFlushArticle, ...cpgArticle, ...co2ToleranceArticle, ...femtechArticle]
+export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...dopamineStackingArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle, ...glp1Article, ...mtDnaRedLightArticle, ...senolyticArticle, ...aiBiomarkerArticle, ...phaseLockedSleepArticle, ...neuralEntrainmentArticle, ...electricMedicineArticle, ...muscleMetabolicArticle, ...chmArticle, ...glymphaticFlushArticle, ...cpgArticle, ...co2ToleranceArticle, ...femtechArticle]
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug)
