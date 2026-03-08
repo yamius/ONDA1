@@ -48,6 +48,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'dopamine-stacking-preventing-circuit-overload': 'Dopamine Stacking & Circuit Overload | ONDA Biology',
   'cacao-stem-cells': 'Cacao & Stem Cells: Biological Logic | ONDA',
   'cognitive-architecture-neural-throughput': 'Cognitive Architecture: Neural Throughput Optimization | ONDA',
+  'system-feedback-biometric-loop': 'Biometric Feedback Loop: Real-Time Bio-Optimization | ONDA',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -96,6 +97,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Filter the noise. Learn how purified cacao flavonols trigger stem cell production and optimize your regenerative matrix without stimulant overload.',
   'cognitive-architecture-neural-throughput':
     'Upgrade your neural hardware. Master the protocols of cognitive architecture: clear the signal, manage neural noise, and expand bandwidth without external patches.',
+  'system-feedback-biometric-loop':
+    'Stop tracking and start optimizing. Learn how ONDA turns your biometric data into immediate corrective protocols for peak performance.',
 }
 
 export interface RouteMeta {
@@ -626,6 +629,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Red light (660nm) provides mitochondria with ATP to utilize stem cells produced during the day. It completes the regeneration sequence before sleep.',
     },
   ],
+  'system-feedback-biometric-loop': [
+    {
+      question: 'What is the Biometric Feedback Loop?',
+      answer:
+        'A real-time system where HRV, resting heart rate, and sleep data are continuously ingested and used to select the correct protocol. Instead of fixed schedules, the system adapts: low HRV triggers Recovery Mode, high HRV enables Performance Mode.',
+    },
+    {
+      question: 'What is the Delta Analysis in biometric optimization?',
+      answer:
+        'Delta Analysis compares current HRV and body temperature against your 14-day rolling average. Any drop in HRV more than 20% below baseline triggers the System Protection Protocol—replacing high-intensity plans with vagal reset and recovery protocols.',
+    },
+    {
+      question: 'What is the difference between Performance, Maintenance, and Recovery Mode?',
+      answer:
+        'Performance Mode (high HRV): ideal for learning, complex tasks, and high physical load. Maintenance Mode (normal HRV): standard operational cycles. Recovery Mode (low HRV): forced digital detox, CO2 tolerance breathing, and early glymphatic flush.',
+    },
+  ],
   'cognitive-architecture-neural-throughput': [
     {
       question: 'What is the Digital Sunset protocol?',
@@ -759,7 +779,19 @@ export function getMetaForRoute(route: string): RouteMeta {
                   proficiencyLevel: 'Advanced',
                   educationalLevel: 'Advanced',
                 }
-              : undefined
+              : slug === 'system-feedback-biometric-loop'
+                ? {
+                    keywords: [
+                      'Biometric Feedback Loop',
+                      'HRV Guided Training',
+                      'Real-time Biohacking',
+                      'ONDA Adaptive Protocols',
+                      'Predictive Health Adjustment',
+                    ],
+                    audience: 'Biohackers, Athletes, High-Performers',
+                    proficiencyLevel: 'Intermediate',
+                  }
+                : undefined
       const meta: RouteMeta = {
         title: ARTICLE_SEO_TITLES[slug] ?? `${article.title} | ONDA Life`,
         description: seoDesc,

@@ -32,8 +32,9 @@ import co2ToleranceArticle from './co2-tolerance-expanding-oxygen-limit'
 import femtechArticle from './femtech-cyclical-architecture'
 import cacaoStemCellsArticle from './cacao-stem-cells'
 import cognitiveNeuralArticle from './cognitive-architecture-neural-throughput'
+import systemFeedbackArticle from './system-feedback-biometric-loop'
 
-export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...dopamineStackingArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle, ...glp1Article, ...mtDnaRedLightArticle, ...senolyticArticle, ...aiBiomarkerArticle, ...phaseLockedSleepArticle, ...neuralEntrainmentArticle, ...electricMedicineArticle, ...muscleMetabolicArticle, ...chmArticle, ...glymphaticFlushArticle, ...cpgArticle, ...co2ToleranceArticle, ...femtechArticle, ...cacaoStemCellsArticle, ...cognitiveNeuralArticle]
+export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...dopamineStackingArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle, ...glp1Article, ...mtDnaRedLightArticle, ...senolyticArticle, ...aiBiomarkerArticle, ...phaseLockedSleepArticle, ...neuralEntrainmentArticle, ...electricMedicineArticle, ...muscleMetabolicArticle, ...chmArticle, ...glymphaticFlushArticle, ...cpgArticle, ...co2ToleranceArticle, ...femtechArticle, ...cacaoStemCellsArticle, ...cognitiveNeuralArticle, ...systemFeedbackArticle]
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug)

@@ -39,6 +39,7 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'neuroplasticity-flow-overclocking': 'cognitive-engine',
   'cognitive-architecture-nootropic-stacks': 'cognitive-engine',
   'cognitive-architecture-neural-throughput': 'cognitive-engine',
+  'system-feedback-biometric-loop': 'system-forecasting',
   'gut-brain-axis-data-link': 'gut-brain-link',
 }
 
@@ -72,6 +73,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'co2-tolerance-expanding-oxygen-limit': '4 min 50 sec',
   'femtech-cyclical-architecture': '5 min 30 sec',
   'cognitive-architecture-neural-throughput': '3 min 20 sec',
+  'system-feedback-biometric-loop': '4 min 15 sec',
 }
 
 function extractText(node: React.ReactNode): string {
@@ -336,7 +338,9 @@ export function ArticlePage() {
       const isEmeraldIntro = article.introStyle === 'emerald' && content.includes('hybrid engine')
       const isBlueIntro = article.introStyle === 'blue' && content.includes('wetware')
       const isOrangeIntro = article.introStyle === 'orange' && content.includes('second brain')
-      const isCyanIntro = article.introStyle === 'cyan' && content.includes('Command Line Interface')
+      const isCyanIntro =
+        article.introStyle === 'cyan' &&
+        (content.includes('Command Line Interface') || content.includes('Input Signal'))
       const isRoseIntro = article.introStyle === 'rose' && content.includes('diagnostic report')
       const isIndigoIntro = article.introStyle === 'indigo' && content.includes('Attention Leeches')
       const isGoldIntro = article.introStyle === 'gold' && content.includes('Zombie Cells')
@@ -786,6 +790,8 @@ export function ArticlePage() {
                                     ? 'System Calibration Ready. Download ONDA Life to sync your cycle phases and optimize hormonal firmware.'
                                     : article.slug === 'cognitive-architecture-neural-throughput'
                                     ? 'System Calibration Ready. Download ONDA Life to clear neural noise, optimize circadian calibration, and expand cognitive bandwidth without external patches.'
+                                    : article.slug === 'system-feedback-biometric-loop'
+                                    ? 'Stop tracking and start optimizing. Download ONDA Life to turn your biometric data into immediate corrective protocols for peak performance.'
                                     : 'System Calibration Ready. Download ONDA Life to track your Vagus Nerve tone in real-time.'}
         </p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
