@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && tsx scripts/prerender.ts",
+    "favicons": "node scripts/generate-favicons.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "node server.js"
@@ -35,7 +36,9 @@
     "gray-matter": "^4.0.3",
     "react-markdown": "^10.1.0",
     "react-router-dom": "^7.13.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "^4.2.0",
+    "to-ico": "^1.1.5",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.48.0",
     "vite": "^7.3.1"
