@@ -39,9 +39,20 @@ export function ArticlesSection() {
             <Link
               key={article.slug}
               to={`/articles/${article.slug}`}
-              className="glass-card group rounded-xl p-5 transition-all hover:border-terminal-green/10"
+              className="glass-card group flex flex-col overflow-hidden rounded-xl transition-all hover:border-terminal-green/10"
             >
-              <span className="mb-2 block rounded-md border border-white/10 bg-white/5 px-2 py-0.5 font-mono text-[10px] text-white/30">
+              {article.image && (
+                <div className="relative h-24 overflow-hidden rounded-t-xl">
+                  <img
+                    src={article.image}
+                    alt={article.imageAlt ?? article.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover object-center"
+                  />
+                </div>
+              )}
+              <div className="flex flex-1 flex-col p-5">
+              <span className="mb-2 block rounded-md border border-white/10 bg-white/5 px-2 py-0.5 font-mono text-[10px] text-white/30 w-fit">
                 {article.category}
               </span>
               <h3 className="mb-2 text-base font-semibold leading-tight transition-colors group-hover:text-terminal-green">
@@ -53,6 +64,7 @@ export function ArticlesSection() {
               <span className="mt-2 block font-mono text-xs text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
                 →
               </span>
+              </div>
             </Link>
           ))}
         </div>
