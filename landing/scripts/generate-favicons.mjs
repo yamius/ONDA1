@@ -3,8 +3,7 @@
  * Run: node scripts/generate-favicons.mjs
  */
 import sharp from 'sharp'
-import toIco from 'to-ico'
-import { readFile, writeFile } from 'fs/promises'
+import { writeFile } from 'fs/promises'
 import { dirname, join } from 'path'
 import { fileURLToPath } from 'url'
 
@@ -37,12 +36,9 @@ async function main() {
   await resize(512).toFile(join(publicDir, 'icon-512.png'))
   console.log('Created icon-512.png')
 
-  // favicon.ico (16x16, 32x32)
-  const buf16 = await resize(16).toBuffer()
-  const buf32 = await resize(32).toBuffer()
-  const ico = await toIco([buf16, buf32])
-  await writeFile(join(publicDir, 'favicon.ico'), ico)
-  console.log('Created favicon.ico')
+  // favicon.png (32x32) — PNG instead of ICO, supported by all modern browsers
+  await resize(32).toFile(join(publicDir, 'favicon.png'))
+  console.log('Created favicon.png (32x32)')
 
   // favicon.svg — embed 32x32 logo as base64 (uses your actual logo)
   const buf32Png = await resize(32).toBuffer()
