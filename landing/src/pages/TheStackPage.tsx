@@ -64,6 +64,9 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'analog-morning', name: 'ANALOG_MORNING', params: '(60min_NO_DIGITAL)' },
       { id: 'monotasking', name: 'MONOTASKING_BLOCKS', params: '(90min_DEEP_WORK)' },
       { id: 'dopamine-fast', name: 'DOPAMINE_FAST', params: '(4h_SUNDAY)' },
+      { id: 'dopamine-stacking-monotasking', name: 'MONOTASKING_KERNEL', params: '(ONE_ACTIVITY_AT_A_TIME)' },
+      { id: 'dopamine-stacking-zero-input', name: 'ZERO_INPUT_FAST', params: '(90min_NO_SCREENS)' },
+      { id: 'dopamine-stacking-cold-shock', name: 'COLD_SHOCK_BASELINE', params: '(2min_3-10C)' },
     ],
   },
   {

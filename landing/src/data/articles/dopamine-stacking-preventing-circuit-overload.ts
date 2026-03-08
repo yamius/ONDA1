@@ -24,7 +24,7 @@ const article: Article = {
   introStyle: 'purple',
   image: '/images/articles/dopamine-stacking-circuit-overload.png',
   imageAlt:
-    'Neural circuit overload and dopamine receptor downregulation visualization',
+    'Dopamine circuit overload visualization: neural receptor saturation, synaptic downregulation, and glutamate excitotoxicity in reward pathways. ONDA biohacking.',
   imageTitle:
     'Dopamine stacking overload: receptor downregulation and glutamate excitotoxicity in neural circuits.',
   imageCaption:
@@ -67,21 +67,18 @@ When you stack stimuli, you trigger a massive release of Glutamate, the brain's 
 ### PROTOCOL 1: The 'Monotasking' Kernel (Core Stability)
 
 > **The Hack:** Perform one high-dopamine activity at a time. If you eat, eat. If you work, work. Remove the 'Background Stack.'
-> [ DONE ]
 
 **The Logic:** This prevents 'Signal Interference.' By isolating the stimulus, you allow the receptors to process the data without triggering an emergency shutdown (downregulation).
 
 ### PROTOCOL 2: The 'Intermittent Fasting' for Data (Resensitization)
 
 > **The Hack:** 90 minutes of 'Zero-Input' per day. No audio, no screens, no exogenous chemicals. Just the 'System Idle' state.
-> [ DONE ]
 
 **The Logic:** This is **intermittent fasting for brain**—it allows the brain to upregulate receptors. It is the 'Software Patch' that restores your sensitivity to low-level rewards like deep work and meaningful conversation.
 
 ### PROTOCOL 3: The 'Cold Shock' Baseline Boost
 
 > **The Hack:** 2 minutes of Cold Exposure (3°C - 10°C) to trigger a 250% increase in Dopamine.
-> [ DONE ]
 
 **The Logic:** Unlike 'Stacked' digital dopamine, 'Cold Shock' creates a slow, sustained rise in dopamine that lasts for hours without a subsequent crash. It 'Flash-Freezes' the Glutamate Storm and resets the baseline to 'Peak Performance.'
 
@@ -96,7 +93,7 @@ STATUS: BASELINE_RECOVERED
   howToSteps: [
     {
       name: "The 'Monotasking' Kernel (Core Stability)",
-      text: 'Perform one high-dopamine activity at a time. Remove the Background Stack.',
+      text: 'Perform one high-dopamine activity at a time',
       protocolId: 'dopamine-stacking-monotasking',
     },
     {

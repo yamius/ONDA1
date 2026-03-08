@@ -92,7 +92,7 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-import { PROTOCOL_STORAGE_PREFIX, ARTICLE_STORAGE_PREFIX } from '../data/protocol-ids'
+import { getProtocolUniqueId, PROTOCOL_STORAGE_PREFIX, ARTICLE_STORAGE_PREFIX } from '../data/protocol-ids'
 import { ArticleReactions, ArticleValidationArrows } from '../components/ArticleReactions'
 
 const STORAGE_KEY_PREFIX = ARTICLE_STORAGE_PREFIX
@@ -104,9 +104,10 @@ function ProtocolDoneButton({
   protocolId: string
   onToggle: () => void
 }) {
+  const uniqueId = getProtocolUniqueId(protocolId)
   const isActive =
     typeof window !== 'undefined' &&
-    localStorage.getItem(PROTOCOL_STORAGE_PREFIX + protocolId) === 'active'
+    localStorage.getItem(PROTOCOL_STORAGE_PREFIX + uniqueId) === 'active'
 
   return (
     <button
@@ -114,9 +115,9 @@ function ProtocolDoneButton({
       onClick={() => {
         if (typeof window === 'undefined') return
         if (isActive) {
-          localStorage.removeItem(PROTOCOL_STORAGE_PREFIX + protocolId)
+          localStorage.removeItem(PROTOCOL_STORAGE_PREFIX + uniqueId)
         } else {
-          localStorage.setItem(PROTOCOL_STORAGE_PREFIX + protocolId, 'active')
+          localStorage.setItem(PROTOCOL_STORAGE_PREFIX + uniqueId, 'active')
         }
         onToggle()
       }}
@@ -425,6 +426,8 @@ export function ArticlePage() {
           content.includes('Inhale (4s)') ||
           content.includes('breath-holds') ||
           content.includes('Apnea'))
+      const isDopamineStackingProtocol =
+        isHackBlock && article.slug === 'dopamine-stacking-preventing-circuit-overload'
       const isMorningProtocol =
         isHackBlock &&
         !isCognitiveProtocol &&
@@ -478,6 +481,8 @@ export function ArticlePage() {
         blockquoteClass = 'border-l-2 border-rose-500 bg-rose-500/5 pl-6 pr-4'
       } else if (isCo2ToleranceProtocol) {
         blockquoteClass = 'border-l-2 border-cyan-500 bg-cyan-500/5 pl-6 pr-4'
+      } else if (isDopamineStackingProtocol) {
+        blockquoteClass = 'border-l-2 border-purple-500 bg-purple-500/5 pl-6 pr-4'
       } else if (isHackBlock) {
         blockquoteClass = 'border-l-2 border-cyan-500/50 bg-cyan-500/5 pl-6 pr-4'
       } else if (isPurpleIntro) {
@@ -504,6 +509,7 @@ export function ArticlePage() {
         blockquoteClass = 'border border-slate-800 bg-slate-900/50 pl-6 pr-4 rounded-r-lg'
       }
       const protocolId = isHackBlock ? getProtocolIdFromHackBlock(content) : undefined
+      const protocolAnchorId = protocolId ? getProtocolUniqueId(protocolId) : undefined
       if (isHardwareValidation) {
         const lines = content
           .split(/\r?\n/)
@@ -531,7 +537,7 @@ export function ArticlePage() {
       }
       return (
         <blockquote
-          id={protocolId}
+          id={protocolAnchorId}
           className={`my-6 py-4 font-mono text-sm leading-relaxed text-white/70 scroll-mt-24 ${blockquoteClass}`}
         >
           {children}
