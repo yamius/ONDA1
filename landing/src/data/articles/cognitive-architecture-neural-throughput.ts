@@ -6,7 +6,7 @@ import type { Article } from './types'
  */
 const article: Article = {
   slug: 'cognitive-architecture-neural-throughput',
-  title: '[ SYSTEM ANALYSIS: COGNITIVE ARCHITECTURE ]',
+  title: 'System Analysis: Cognitive Architecture',
   subtitle: 'Optimizing Neural Throughput Without External Patches',
   seoTitle: 'Cognitive Architecture: Neural Throughput Optimization | ONDA',
   description:
