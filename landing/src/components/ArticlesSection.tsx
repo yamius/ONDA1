@@ -1,7 +1,23 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { articles } from '../data/articles'
 
+function shuffle<T>(arr: T[]): T[] {
+  const out = [...arr]
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[out[i], out[j]] = [out[j], out[i]]
+  }
+  return out
+}
+
 export function ArticlesSection() {
+  const [displayArticles, setDisplayArticles] = useState(() => articles.slice(0, 3))
+
+  useEffect(() => {
+    setDisplayArticles(shuffle(articles).slice(0, 3))
+  }, [])
+
   return (
     <section className="relative px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-6xl">
@@ -19,7 +35,7 @@ export function ArticlesSection() {
         </p>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {articles.slice(-3).map((article) => (
+          {displayArticles.map((article) => (
             <Link
               key={article.slug}
               to={`/articles/${article.slug}`}

@@ -46,6 +46,7 @@ export interface BreadcrumbItem {
 /** Optional custom title overrides for articles (default: article.title + " | ONDA Life") */
 const ARTICLE_SEO_TITLES: Record<string, string> = {
   'dopamine-stacking-preventing-circuit-overload': 'Dopamine Stacking & Circuit Overload | ONDA Biology',
+  'cacao-stem-cells': 'Cacao & Stem Cells: Biological Logic | ONDA',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -90,6 +91,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Learn how to use phase-locked acoustic stimulation and real-time EEG to amplify deep sleep waves and optimize cognitive recovery.',
   'neural-entrainment-meditation-2':
     'Master your brain\'s operating frequency using EEG-driven AI audio and the Frequency Following Response.',
+  'cacao-stem-cells':
+    'Filter the noise. Learn how purified cacao flavonols trigger stem cell production and optimize your regenerative matrix without stimulant overload.',
 }
 
 export interface RouteMeta {
@@ -98,14 +101,20 @@ export interface RouteMeta {
   url: string
   breadcrumbs: BreadcrumbItem[]
   ogType?: 'article' | 'website'
+  /** Article image for og:image, twitter:image (absolute URL) */
+  image?: string
+  imageAlt?: string
   definedTerm?: { name: string; description: string; url: string }
   techArticle?: {
     name: string
     description: string
     url: string
     datePublished: string
+    image?: string
     keywords?: string[]
     audience?: string
+    dependencies?: string
+    proficiencyLevel?: string
   }
   howTo?: { name: string; step: { name: string; text: string }[] }
   faq?: { mainEntity: { question: string; answer: string }[]; url: string }
@@ -219,7 +228,7 @@ function buildTechArticleJsonLd(
   description: string,
   url: string,
   datePublished: string,
-  opts?: { keywords?: string[]; audience?: string }
+  opts?: { image?: string; keywords?: string[]; audience?: string; dependencies?: string; proficiencyLevel?: string }
 ): string {
   const article: Record<string, unknown> = {
     '@context': 'https://schema.org',
@@ -239,6 +248,7 @@ function buildTechArticleJsonLd(
       url: SITE_URL,
     },
   }
+  if (opts?.image) article.image = opts.image
   if (opts?.keywords?.length) article.keywords = opts.keywords.join(', ')
   if (opts?.audience) {
     article.audience = {
@@ -246,6 +256,8 @@ function buildTechArticleJsonLd(
       name: opts.audience,
     }
   }
+  if (opts?.dependencies) article.dependencies = opts.dependencies
+  if (opts?.proficiencyLevel) article.proficiencyLevel = opts.proficiencyLevel
   return JSON.stringify(article)
 }
 
@@ -585,6 +597,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Water serves as the substrate for the fourth-phase (EZ) structured layer around ATP Synthase. Adequate hydration ensures the viscosity-reducing effect can occur at biological membranes.',
     },
   ],
+  'cacao-stem-cells': [
+    {
+      question: 'Why use decaffeinated cacao for stem cell protocols?',
+      answer:
+        'Caffeine and theobromine create adrenal spikes that conflict with deep recovery states. By filtering them out, polyphenols work directly on blood flow and stem cell mobilization without overclocking the nervous system.',
+    },
+    {
+      question: 'What is the Micro-Circulation Loop protocol?',
+      answer:
+        '20 minutes of low-intensity movement (heart rate < 110 bpm) after cacao ingestion. Physical movement acts as the pump, ensuring cacao-driven signals reach the furthest capillaries of your vascular system.',
+    },
+    {
+      question: 'How does red light therapy close the regeneration loop?',
+      answer:
+        'Red light (660nm) provides mitochondria with ATP to utilize stem cells produced during the day. It completes the regeneration sequence before sleep.',
+    },
+  ],
 }
 
 function buildFAQPageJsonLd(
@@ -675,7 +704,20 @@ export function getMetaForRoute(route: string): RouteMeta {
               ],
               audience: 'Biohackers, Neuroscientists, High-Performers',
             }
-          : undefined
+          : slug === 'cacao-stem-cells'
+            ? {
+                keywords: [
+                  'stem cell mobilization',
+                  'epicatechin biohacking',
+                  'nitric oxide signaling',
+                  'non-stimulant cacao',
+                  'ONDA regeneration loop',
+                ],
+                audience: 'Advanced / High-Performance',
+                dependencies: 'Non-stimulant Cacao Flavonols',
+                proficiencyLevel: 'Advanced / High-Performance',
+              }
+            : undefined
       const meta: RouteMeta = {
         title: ARTICLE_SEO_TITLES[slug] ?? `${article.title} | ONDA Life`,
         description: seoDesc,
@@ -683,6 +725,12 @@ export function getMetaForRoute(route: string): RouteMeta {
         breadcrumbs,
         ogType: 'article',
         techArticle: { ...techArticleBase, ...techArticleExtras },
+      }
+      if (article.image) {
+        const absImage = `${SITE_URL}${article.image}`
+        meta.image = absImage
+        if (article.imageAlt) meta.imageAlt = article.imageAlt
+        if (meta.techArticle) meta.techArticle.image = absImage
       }
       if (article.howToSteps && article.howToSteps.length > 0) {
         meta.howTo = {
@@ -815,10 +863,17 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   // JSON-LD: TechArticle (article pages only)
   if (meta.techArticle) {
     const opts =
-      meta.techArticle.keywords || meta.techArticle.audience
+      meta.techArticle.image ||
+      meta.techArticle.keywords ||
+      meta.techArticle.audience ||
+      meta.techArticle.dependencies ||
+      meta.techArticle.proficiencyLevel
         ? {
+            image: meta.techArticle.image,
             keywords: meta.techArticle.keywords,
             audience: meta.techArticle.audience,
+            dependencies: meta.techArticle.dependencies,
+            proficiencyLevel: meta.techArticle.proficiencyLevel,
           }
         : undefined
     const techArticleScript = `<script type="application/ld+json">${buildTechArticleJsonLd(
@@ -885,20 +940,32 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
 
   // Replace og:* and twitter:* meta tags
   const ogType = meta.ogType ?? 'website'
+  const ogImage = meta.image ?? OG_IMAGE
+  const escapedImageAlt = meta.imageAlt ? escapeHtmlAttr(meta.imageAlt) : ''
   const replacements: [RegExp, string][] = [
     [/<meta\s+property="og:type"\s+content="[^"]*">/gi, `<meta property="og:type" content="${ogType}">`],
     [/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escapedTitle}">`],
     [/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escapedDesc}">`],
     [/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escapedUrl}">`],
-    [/<meta\s+property="og:image"\s+content="[^"]*">/gi, `<meta property="og:image" content="${OG_IMAGE}">`],
+    [/<meta\s+property="og:image"\s+content="[^"]*">/gi, `<meta property="og:image" content="${ogImage}">`],
     [/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escapedUrl}">`],
     [/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escapedTitle}">`],
     [/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escapedDesc}">`],
-    [/<meta\s+property="twitter:image"\s+content="[^"]*">/gi, `<meta property="twitter:image" content="${OG_IMAGE}">`],
+    [/<meta\s+property="twitter:image"\s+content="[^"]*">/gi, `<meta property="twitter:image" content="${ogImage}">`],
   ]
-
   for (const [regex, replacement] of replacements) {
     out = out.replace(regex, replacement)
+  }
+
+  // Add og:image:alt and twitter:image:alt for articles with image (SEO, accessibility)
+  if (escapedImageAlt) {
+    const imageAltTags = `  <meta property="og:image:alt" content="${escapedImageAlt}">\n  <meta property="twitter:image:alt" content="${escapedImageAlt}">`
+    if (!out.includes('og:image:alt')) {
+      out = out.replace(
+        /(<meta\s+property="og:image"\s+content="[^"]*">)/i,
+        `$1\n${imageAltTags}`
+      )
+    }
   }
 
   return out

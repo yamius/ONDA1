@@ -146,7 +146,8 @@ SEO-статьи в стиле «биокомпьютер / протокол». 
 {
   slug: 'article-slug',           // URL: /articles/article-slug
   title: 'Article Title',
-  description: 'SEO description',
+  seoTitle?: 'Custom Title | ONDA',  // переопределение <title>, og:title (иначе: title + " | ONDA Life")
+  description: 'SEO description',  // meta description, og:description (~150–160 символов)
   category: 'Neural Hardware',   // см. ARTICLE_CATEGORIES
   relatedSlugs: ['vagus-nerve', 'hrv'],  // термины глоссария
   content: `## [ SECTION ] ...`,  // Markdown
@@ -157,9 +158,9 @@ SEO-статьи в стиле «биокомпьютер / протокол». 
   neuralSuggestion?: { text: '...', link: '/articles/...', linkText: '...' },
   // Изображение (опционально)
   image?: '/images/articles/keyword-article-name.png',
-  imageAlt?: '...',    // ~125 символов, ключевое слово + описание визуала. SEO-критично.
-  imageTitle?: '...',  // title-атрибут (всплывающая подсказка)
-  imageCaption?: '...', // подпись под картинкой (увеличивает время удержания)
+  imageAlt?: '...',    // ~125 символов, ключевое слово + описание визуала. SEO-критично. Используется для og:image:alt, twitter:image:alt, img alt.
+  imageTitle?: '...',  // title-атрибут img (всплывающая подсказка при hover)
+  imageCaption?: '...', // видимая подпись под картинкой (figcaption). ONDA-голос, keyword-rich.
   imagePlacement?: 'header' | 'content',  // 'header' = под заголовком; 'content' = inline в markdown
 }
 ```
@@ -171,10 +172,10 @@ SEO-статьи в стиле «биокомпьютер / протокол». 
 | Параметр | Роль | Рекомендация |
 |----------|------|--------------|
 | **Имя файла** | Фактор ранжирования | `keyword-topic-onda.png` вместо `IMG_1234.png` |
-| **imageAlt** | Главный SEO-сигнал. Описательный, keyword-rich (e.g. "Dopamine neural reward pathway architecture visual") | ~125 символов |
-| **imageTitle** | Всплывающая подсказка при наведении | Кратко, с ключевым словом |
-| **imageCaption** | Текст при наведении (title). Не отображается — только hover. Оставляет UI чистым | ONDA-голос, суть визуала |
-| **imagePlacement** | Семантика | `'content'` — после intro blockquote (лучший контекст); `'header'` — под заголовком |
+| **imageAlt** | Главный SEO-сигнал. Используется для `img` alt, `og:image:alt`, `twitter:image:alt` | ~125 символов, keyword-rich, описание визуала |
+| **imageTitle** | Атрибут `title` у `img` (всплывающая подсказка при hover) | Кратко, с ключевым словом |
+| **imageCaption** | Видимая подпись под картинкой (`figcaption`). ONDA-голос, keyword-rich | Опционально. Увеличивает dwell time |
+| **imagePlacement** | Семантика | `'header'` — под заголовком (по умолчанию); `'content'` — inline в markdown |
 
 **Размещение в контенте:** при `imagePlacement: 'content'` добавь изображение в markdown после intro blockquote с вводной фразой:
 
@@ -189,17 +190,20 @@ The diagram below maps [концепция] to [метрики].
 ## [ SECTION 1: ... ]
 ```
 
-Файл изображения: `landing/public/images/articles/`. Карточка в списке статей всегда использует `article.image`.
+**Meta-теги для картинки (автоматически):** при наличии `article.image` и `article.imageAlt`:
+- `og:image`, `twitter:image` — полный URL картинки статьи (иначе — общий OG_IMAGE)
+- `og:image:alt`, `twitter:image:alt` — из `imageAlt`
+- JSON-LD TechArticle — поле `image` в схеме
 
-**Минималистичный UI:** видимая подпись (figcaption) не отображается. `imageCaption` уходит в атрибут `title` — показывается только при hover. Alt — основной SEO-сигнал, должен быть описательным и keyword-rich. Абзац сразу после изображения — начинать с сильного ключевого слова для семантической релевантности.
+**Файл изображения:** `landing/public/images/articles/`. Карточка в списке статей всегда использует `article.image`.
 
 **Производительность:** все изображения рендерятся с `loading="lazy"` (уже в ArticlePage).
 
-**Примеры имён файлов:** `vagus-nerve-biohacking-data-highway.png`, `dopamine-reward-system-neural-architecture.png`, `female-cycle-biohacking-onda.png`.
+**Примеры имён файлов:** `vagus-nerve-biohacking-data-highway.png`, `dopamine-stacking-circuit-overload.png`, `onda-cacao-stem-cell-regeneration-matrix.png`.
 
 ### Протоколы и кнопки [ DONE ]
 
-Для привязки кнопки [ DONE ] к блоку «The Hack» поле `howToSteps[].text` **должно совпадать с текстом в blockquote** (матчинг по подстроке `blockquoteContent.includes(s.text)`). Используй тот же текст, что в `**The Hack:** ...` — иначе кнопка не появится.
+Для привязки кнопки [ DONE ] к блоку «The Hack» поле `howToSteps[].text` должно **совпадать по подстроке** с текстом в blockquote (матчинг: `blockquoteContent.includes(s.text)` или `hackText.includes(s.text)`). Можно использовать укороченный текст — например, `"Perform one high-dopamine activity at a time"` вместо полной фразы. **Не добавляй** `[ DONE ]` в markdown — кнопка рендерится автоматически.
 
 ### Чеклист: добавление новой статьи
 
@@ -216,31 +220,38 @@ The diagram below maps [концепция] to [метрики].
    - `howToSteps[].protocolId` = `short-protocolKey` (например `femtech-phase-sync`)
 
 4. **ArticlePage.tsx** (обязательно):
-   - `ARTICLE_SLUG_TO_STACK_SECTION`: slug → id секции The Stack (или убрать, если не нужна ссылка)
-   - `ARTICLE_SYNC_TIMES`: slug → читать время (например `'4 min 45 sec'`)
+   - `ARTICLE_SLUG_TO_STACK_SECTION`: slug → id секции The Stack (см. таблицу «Секции The Stack» ниже)
+   - `ARTICLE_SYNC_TIMES`: slug → время чтения (например `'4 min 45 sec'`). Чтобы **скрыть блок времени** — добавить `article.slug !== 'xxx'` в условие рендера (пример: cacao-stem-cells)
    - CTA-блок: добавить ветку `article.slug === 'xxx'` с текстом призыва
 
-5. **Стили протоколов (ArticlePage)** — при необходимости:
+5. **meta-inject.ts** (для кастомного SEO):
+   - `ARTICLE_SEO_TITLES`: slug → кастомный title (если нужен отличный от `title + " | ONDA Life"`)
+   - `ARTICLE_SEO_DESCRIPTIONS`: slug → кастомный meta description
+   - Для JSON-LD TechArticle с keywords, audience, dependencies, proficiencyLevel — добавить slug в блок `techArticleExtras` (см. dopamine-stacking, cacao-stem-cells)
+   - **FAQ schema:** добавить slug в `FAQ_SCHEMA` с массивом `{ question, answer }[]` для FAQPage JSON-LD
+
+6. **Стили протоколов (ArticlePage)** — при необходимости:
    - `h3`: добавить `isXxxProtocol` и цвет (например `text-violet-400`)
    - `blockquote`: добавить `isXxxProtocol` для бордера (например `border-violet-500`)
 
-6. **TheStackPage.tsx** — если протоколы должны быть в The Stack:
+7. **TheStackPage.tsx** — если протоколы должны быть в The Stack:
    - Добавить в нужную секцию `STACK_COMPONENTS`: `{ id: 'protocol-key', name: 'PROTOCOL_NAME', params: '...' }`
 
-7. **Опционально** `landing/src/data/articles-categories.ts`:
+8. **Опционально** `landing/src/data/articles-categories.ts`:
    - Добавить slug в `FEATURED_ARTICLE_SLUGS` для вывода в Featured
 
-8. **Термины из статьи → глоссарий** (обязательно, если в статье есть новые термины):
+9. **Термины из статьи → глоссарий** (обязательно, если в статье есть новые термины):
    - Добавить каждый термин в `landing/src/data/glossary.ts` (см. правило «Термины из статей» в разделе Глоссарий)
    - Добавить slug в `landing/src/data/glossary-categories.ts` → `SLUG_TO_CATEGORY`
    - При необходимости добавить аббревиатуры в `landing/src/utils/glossaryLinks.ts` → `ARTICLE_ABBREVIATIONS`
    - В тексте статьи использовать те же формулировки/названия — ссылки на глоссарий подставляются автоматически
 
-9. **Если есть изображение:**
+10. **Если есть изображение:**
    - Сохранить в `landing/public/images/articles/` с SEO-именем (keyword-topic-onda.png)
-   - Заполнить `image`, `imageAlt`, `imageTitle`, `imageCaption`
-   - Выбрать `imagePlacement`: `'content'` — inline после intro (лучший контекст); `'header'` — под заголовком
+   - Заполнить `image`, `imageAlt`, `imageTitle`, при необходимости `imageCaption` (видимая подпись)
+   - Выбрать `imagePlacement`: `'header'` — под заголовком; `'content'` — inline в markdown после intro
    - При `'content'` — добавить изображение в markdown с вводной фразой (см. «Изображения: SEO и размещение»)
+   - og:image, twitter:image, og:image:alt, TechArticle.image подставляются автоматически
 
 ### Секции The Stack (id для ARTICLE_SLUG_TO_STACK_SECTION)
 
@@ -250,6 +261,7 @@ The diagram below maps [концепция] to [метрики].
 | `reward-logic` | REWARD_LOGIC |
 | `energy-grid` | ENERGY_GRID |
 | `power-grid` | POWER_GRID |
+| `regeneration-matrix` | REGENERATION_MATRIX |
 | `neural-hardware` | NEURAL_HARDWARE |
 | `cognitive-engine` | COGNITIVE_ENGINE |
 | `gut-brain-link` | GUT_BRAIN_LINK |

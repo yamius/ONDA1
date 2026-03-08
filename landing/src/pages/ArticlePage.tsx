@@ -34,6 +34,7 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'cpg-neural-autopilot': 'nervous-system',
   'co2-tolerance-expanding-oxygen-limit': 'nervous-system',
   'femtech-cyclical-architecture': 'system-forecasting',
+  'cacao-stem-cells': 'regeneration-matrix',
   'longevity-hardware-cellular-cleanup': 'power-grid',
   'neuroplasticity-flow-overclocking': 'cognitive-engine',
   'cognitive-architecture-nootropic-stacks': 'cognitive-engine',
@@ -44,6 +45,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'vagus-nerve-master-key': '4 min 20 sec',
   'dopamine-architecture-mastering-desire': '5 min 15 sec',
   'dopamine-stacking-preventing-circuit-overload': '3 min 15 sec',
+  'cacao-stem-cells': '2 min 45 sec',
   'circadian-reset-mastering-light': '3 min 45 sec',
   'metabolic-flexibility-dual-fuel-system': '6 min 10 sec',
   'neuroplasticity-flow-overclocking': '5 min 30 sec',
@@ -163,16 +165,21 @@ export function ArticlePage() {
     const title = article.seoTitle ?? `${article.title} | ONDA Life`
     const url = `${SITE_URL}/articles/${article.slug}`
     document.title = title
+    const articleImage = article.image ? `${SITE_URL}${article.image}` : OG_IMAGE
     setMeta('description', article.description)
     setMeta('og:title', title, true)
     setMeta('og:description', article.description, true)
     setMeta('og:url', url, true)
-    setMeta('og:image', OG_IMAGE, true)
+    setMeta('og:image', articleImage, true)
+    if (article.imageAlt) {
+      setMeta('og:image:alt', article.imageAlt, true)
+      setMeta('twitter:image:alt', article.imageAlt, true)
+    }
     setMeta('og:type', 'article', true)
     setMeta('twitter:card', 'summary_large_image', true)
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', article.description, true)
-    setMeta('twitter:image', OG_IMAGE, true)
+    setMeta('twitter:image', articleImage, true)
     return () => {
       document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
       setMeta('description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
@@ -180,6 +187,8 @@ export function ArticlePage() {
       setMeta('og:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
       setMeta('og:url', SITE_URL, true)
       setMeta('og:image', OG_IMAGE, true)
+      document.querySelector('meta[property="og:image:alt"]')?.remove()
+      document.querySelector('meta[property="twitter:image:alt"]')?.remove()
       setMeta('og:type', 'website', true)
       setMeta('twitter:card', 'summary_large_image', true)
       setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
@@ -241,6 +250,7 @@ export function ArticlePage() {
       const isDigitalDementiaProtocol = isProtocol && article.slug === 'digital-dementia-attentional-control'
       const isDopamineProtocol = isProtocol && article.slug === 'dopamine-architecture-mastering-desire'
       const isDopamineStackingProtocol = isProtocol && article.slug === 'dopamine-stacking-preventing-circuit-overload'
+      const isCacaoStemCellsProtocol = isProtocol && article.slug === 'cacao-stem-cells'
       const isLongevityProtocol = isProtocol && article.slug === 'longevity-hardware-cellular-cleanup'
       const isCognitiveProtocol = isProtocol && article.slug === 'cognitive-architecture-nootropic-stacks'
       const isMitochondrialProtocol = isProtocol && article.slug === 'mitochondrial-biogenesis-cellular-power-grid'
@@ -253,7 +263,7 @@ export function ArticlePage() {
       const isCo2ToleranceProtocol = isProtocol && article.slug === 'co2-tolerance-expanding-oxygen-limit'
       const isFemtechProtocol = isProtocol && article.slug === 'femtech-cyclical-architecture'
       return (
-        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol || isDopamineStackingProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
+        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol || isDopamineStackingProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isCacaoStemCellsProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
           {children}
         </h3>
       )
@@ -428,6 +438,7 @@ export function ArticlePage() {
           content.includes('Apnea'))
       const isDopamineStackingProtocol =
         isHackBlock && article.slug === 'dopamine-stacking-preventing-circuit-overload'
+      const isCacaoStemCellsProtocol = isHackBlock && article.slug === 'cacao-stem-cells'
       const isMorningProtocol =
         isHackBlock &&
         !isCognitiveProtocol &&
@@ -438,6 +449,7 @@ export function ArticlePage() {
         !isGlymphaticProtocol &&
         !isCpgProtocol &&
         !isFemtechProtocol &&
+        !isCacaoStemCellsProtocol &&
         !isCo2ToleranceProtocol &&
         (content.includes('First Photon') ||
           content.includes('Morning Light') ||
@@ -483,6 +495,8 @@ export function ArticlePage() {
         blockquoteClass = 'border-l-2 border-cyan-500 bg-cyan-500/5 pl-6 pr-4'
       } else if (isDopamineStackingProtocol) {
         blockquoteClass = 'border-l-2 border-purple-500 bg-purple-500/5 pl-6 pr-4'
+      } else if (isCacaoStemCellsProtocol) {
+        blockquoteClass = 'border-l-2 border-emerald-500 bg-emerald-500/5 pl-6 pr-4'
       } else if (isHackBlock) {
         blockquoteClass = 'border-l-2 border-cyan-500/50 bg-cyan-500/5 pl-6 pr-4'
       } else if (isPurpleIntro) {
@@ -623,14 +637,21 @@ export function ArticlePage() {
             loading="lazy"
             className="w-full object-cover"
           />
+          {article.imageCaption && (
+            <figcaption className="mt-2 px-2 font-mono text-[10px] leading-relaxed text-white/40">
+              {article.imageCaption}
+            </figcaption>
+          )}
         </figure>
       )}
       <p className="mb-4 font-mono text-sm leading-relaxed text-white/50">
         {article.description}
       </p>
-      <p className="mb-10 text-right font-mono text-xs text-cyan-500/50">
-        [{ARTICLE_SYNC_TIMES[article.slug] ?? '—'}]
-      </p>
+      {article.slug !== 'cacao-stem-cells' && (
+        <p className="mb-10 text-right font-mono text-xs text-cyan-500/50">
+          [{ARTICLE_SYNC_TIMES[article.slug] ?? '—'}]
+        </p>
+      )}
 
       <article className="prose-onda">
         <Markdown components={markdownComponents} key={protocolRefresh}>
