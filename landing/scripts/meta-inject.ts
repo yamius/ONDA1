@@ -47,6 +47,7 @@ export interface BreadcrumbItem {
 const ARTICLE_SEO_TITLES: Record<string, string> = {
   'dopamine-stacking-preventing-circuit-overload': 'Dopamine Stacking & Circuit Overload | ONDA Biology',
   'cacao-stem-cells': 'Cacao & Stem Cells: Biological Logic | ONDA',
+  'cognitive-architecture-neural-throughput': 'Cognitive Architecture: Neural Throughput Optimization | ONDA',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -93,6 +94,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Master your brain\'s operating frequency using EEG-driven AI audio and the Frequency Following Response.',
   'cacao-stem-cells':
     'Filter the noise. Learn how purified cacao flavonols trigger stem cell production and optimize your regenerative matrix without stimulant overload.',
+  'cognitive-architecture-neural-throughput':
+    'Upgrade your neural hardware. Master the protocols of cognitive architecture: clear the signal, manage neural noise, and expand bandwidth without external patches.',
 }
 
 export interface RouteMeta {
@@ -115,6 +118,7 @@ export interface RouteMeta {
     audience?: string
     dependencies?: string
     proficiencyLevel?: string
+    educationalLevel?: string
   }
   howTo?: { name: string; step: { name: string; text: string }[] }
   faq?: { mainEntity: { question: string; answer: string }[]; url: string }
@@ -228,7 +232,14 @@ function buildTechArticleJsonLd(
   description: string,
   url: string,
   datePublished: string,
-  opts?: { image?: string; keywords?: string[]; audience?: string; dependencies?: string; proficiencyLevel?: string }
+  opts?: {
+    image?: string
+    keywords?: string[]
+    audience?: string
+    dependencies?: string
+    proficiencyLevel?: string
+    educationalLevel?: string
+  }
 ): string {
   const article: Record<string, unknown> = {
     '@context': 'https://schema.org',
@@ -258,6 +269,7 @@ function buildTechArticleJsonLd(
   }
   if (opts?.dependencies) article.dependencies = opts.dependencies
   if (opts?.proficiencyLevel) article.proficiencyLevel = opts.proficiencyLevel
+  if (opts?.educationalLevel) article.educationalLevel = opts.educationalLevel
   return JSON.stringify(article)
 }
 
@@ -614,6 +626,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Red light (660nm) provides mitochondria with ATP to utilize stem cells produced during the day. It completes the regeneration sequence before sleep.',
     },
   ],
+  'cognitive-architecture-neural-throughput': [
+    {
+      question: 'What is the Digital Sunset protocol?',
+      answer:
+        'Initiate a blue-light block 60 minutes before sleep. This prevents Melatonin suppression and ensures the Glymphatic System can flush metabolic waste from neural hardware during deep sleep.',
+    },
+    {
+      question: 'Why does the brain need Omega-3 and antioxidants?',
+      answer:
+        'The brain is 60% fat. Omega-3 fatty acids and structural antioxidants update the lipid layer of neurons, increasing signal conduction speed without insulin spikes—delivering a steady current of ATP.',
+    },
+    {
+      question: 'How does social interaction reduce neural noise?',
+      answer:
+        'Social isolation increases Amygdala hyperactivity (System Noise). In-person group synchronization aligns brain frequencies and lowers baseline stress load, freeing CPU resources for analytical tasks.',
+    },
+  ],
 }
 
 function buildFAQPageJsonLd(
@@ -717,7 +746,20 @@ export function getMetaForRoute(route: string): RouteMeta {
                 dependencies: 'Non-stimulant Cacao Flavonols',
                 proficiencyLevel: 'Advanced / High-Performance',
               }
-            : undefined
+            : slug === 'cognitive-architecture-neural-throughput'
+              ? {
+                  keywords: [
+                    'Cognitive Architecture',
+                    'Neural Throughput',
+                    'Circadian Calibration',
+                    'Digital Sunset',
+                    'Neurogenesis Protocols',
+                  ],
+                  audience: 'Biohackers, High-Performers, Neuroscientists',
+                  proficiencyLevel: 'Advanced',
+                  educationalLevel: 'Advanced',
+                }
+              : undefined
       const meta: RouteMeta = {
         title: ARTICLE_SEO_TITLES[slug] ?? `${article.title} | ONDA Life`,
         description: seoDesc,
@@ -867,13 +909,15 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
       meta.techArticle.keywords ||
       meta.techArticle.audience ||
       meta.techArticle.dependencies ||
-      meta.techArticle.proficiencyLevel
+      meta.techArticle.proficiencyLevel ||
+      meta.techArticle.educationalLevel
         ? {
             image: meta.techArticle.image,
             keywords: meta.techArticle.keywords,
             audience: meta.techArticle.audience,
             dependencies: meta.techArticle.dependencies,
             proficiencyLevel: meta.techArticle.proficiencyLevel,
+            educationalLevel: meta.techArticle.educationalLevel,
           }
         : undefined
     const techArticleScript = `<script type="application/ld+json">${buildTechArticleJsonLd(

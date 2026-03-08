@@ -38,6 +38,7 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'longevity-hardware-cellular-cleanup': 'power-grid',
   'neuroplasticity-flow-overclocking': 'cognitive-engine',
   'cognitive-architecture-nootropic-stacks': 'cognitive-engine',
+  'cognitive-architecture-neural-throughput': 'cognitive-engine',
   'gut-brain-axis-data-link': 'gut-brain-link',
 }
 
@@ -70,6 +71,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'cpg-neural-autopilot': '4 min 40 sec',
   'co2-tolerance-expanding-oxygen-limit': '4 min 50 sec',
   'femtech-cyclical-architecture': '5 min 30 sec',
+  'cognitive-architecture-neural-throughput': '3 min 20 sec',
 }
 
 function extractText(node: React.ReactNode): string {
@@ -81,6 +83,37 @@ function extractText(node: React.ReactNode): string {
   }
   if (Array.isArray(node)) return node.map(extractText).join('')
   return ''
+}
+
+/** Wrap [ BRACKETED ] terms in terminal-style <code> for consistent typography */
+function wrapBracketedTerms(children: React.ReactNode): React.ReactNode {
+  if (typeof children === 'string') {
+    const parts = children.split(/(\[[^\]]+\])/g)
+    return parts.map((p, i) =>
+      p.match(/^\[[^\]]+\]$/) ? (
+        <code key={i} className="font-mono text-terminal-green/70">
+          {p}
+        </code>
+      ) : (
+        p
+      )
+    )
+  }
+  if (Array.isArray(children)) {
+    return children.map((c, i) => (
+      <React.Fragment key={i}>{wrapBracketedTerms(c)}</React.Fragment>
+    ))
+  }
+  if (React.isValidElement(children)) {
+    const props = children.props as { children?: React.ReactNode }
+    if (props?.children) {
+      return React.cloneElement(children, {
+        ...props,
+        children: wrapBracketedTerms(props.children),
+      } as Record<string, unknown>)
+    }
+  }
+  return children
 }
 
 function setMeta(name: string, content: string, isProperty = false) {
@@ -244,6 +277,7 @@ export function ArticlePage() {
     h3: ({ children }: { children?: React.ReactNode }) => {
       const text = typeof children === 'string' ? children : String(children)
       const isProtocol = text.startsWith('PROTOCOL ') || text.startsWith('PROTOCOL_')
+      const isCognitiveNeuralProtocol = isProtocol && article.slug === 'cognitive-architecture-neural-throughput'
       const isGutBrainProtocol = isProtocol && article.slug === 'gut-brain-axis-data-link'
       const isBreathworkProtocol = isProtocol && article.slug === 'breathwork-command-line-interface'
       const isHRVProtocol = isProtocol && article.slug === 'hrv-training-nervous-system-latency'
@@ -263,7 +297,7 @@ export function ArticlePage() {
       const isCo2ToleranceProtocol = isProtocol && article.slug === 'co2-tolerance-expanding-oxygen-limit'
       const isFemtechProtocol = isProtocol && article.slug === 'femtech-cyclical-architecture'
       return (
-        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol || isDopamineStackingProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isCacaoStemCellsProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
+        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol || isDopamineStackingProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isCacaoStemCellsProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isCognitiveNeuralProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
           {children}
         </h3>
       )
@@ -273,7 +307,7 @@ export function ArticlePage() {
       const isCalibrating = text.includes('Calibrating')
       return (
         <p className={`mb-4 font-mono text-sm leading-relaxed ${isCalibrating ? 'text-terminal-green/90 animate-pulse' : 'text-white/50'}`}>
-          {children}
+          {wrapBracketedTerms(children)}
         </p>
       )
     },
@@ -295,6 +329,7 @@ export function ArticlePage() {
     blockquote: ({ children }: { children?: React.ReactNode }) => {
       const content = extractText(children)
       const isHardwareValidation = content.includes('[ HARDWARE_VALIDATION ]')
+      const isFinalizeAnalysis = content.includes('[ FINALIZE_ANALYSIS ]')
       const isHackBlock = content.includes('The Hack:')
       const isPurpleIntro = article.introStyle === 'purple' && content.includes('Prediction Error')
       const isAmberIntro = article.introStyle === 'amber' && content.includes('light code')
@@ -307,7 +342,10 @@ export function ArticlePage() {
       const isGoldIntro = article.introStyle === 'gold' && content.includes('Zombie Cells')
       const isSlateIntro =
         article.introStyle === 'slate' &&
-        (content.includes('pharmacological patches') || content.includes('cellular power plants'))
+        (content.includes('pharmacological patches') ||
+          content.includes('cellular power plants') ||
+          content.includes('temporary patches') ||
+          content.includes('Architectural Optimization'))
       const isLongevityProtocol =
         isHackBlock &&
         (content.includes('36-to-72 hour') ||
@@ -439,6 +477,7 @@ export function ArticlePage() {
       const isDopamineStackingProtocol =
         isHackBlock && article.slug === 'dopamine-stacking-preventing-circuit-overload'
       const isCacaoStemCellsProtocol = isHackBlock && article.slug === 'cacao-stem-cells'
+      const isCognitiveNeuralProtocol = isHackBlock && article.slug === 'cognitive-architecture-neural-throughput'
       const isMorningProtocol =
         isHackBlock &&
         !isCognitiveProtocol &&
@@ -517,9 +556,12 @@ export function ArticlePage() {
         blockquoteClass = 'border-l-2 border-indigo-500 bg-indigo-500/5 pl-6 pr-4 rounded-r-lg'
       } else if (isGoldIntro) {
         blockquoteClass = 'border-l-2 border-amber-500 bg-amber-500/5 pl-6 pr-4 rounded-r-lg'
+      } else if (isFinalizeAnalysis) {
+        blockquoteClass =
+          'border border-slate-600/40 bg-slate-900/20 pl-6 pr-4 rounded-lg font-mono text-xs text-terminal-green/70'
       } else if (isSlateIntro) {
         blockquoteClass = 'border border-slate-800 bg-slate-900/80 pl-6 pr-4 rounded-r-lg'
-      } else if (isCognitiveProtocol || isMitochondrialProtocol) {
+      } else if (isCognitiveProtocol || isCognitiveNeuralProtocol || isMitochondrialProtocol) {
         blockquoteClass = 'border border-slate-800 bg-slate-900/50 pl-6 pr-4 rounded-r-lg'
       }
       const protocolId = isHackBlock ? getProtocolIdFromHackBlock(content) : undefined
@@ -542,7 +584,7 @@ export function ArticlePage() {
                   : 'text-white/60'
               return (
                 <div key={i} className={accentClass}>
-                  {line}
+                  {wrapBracketedTerms(line)}
                 </div>
               )
             })}
@@ -554,7 +596,7 @@ export function ArticlePage() {
           id={protocolAnchorId}
           className={`my-6 py-4 font-mono text-sm leading-relaxed text-white/70 scroll-mt-24 ${blockquoteClass}`}
         >
-          {children}
+          {wrapBracketedTerms(children)}
           {protocolId && (
             <div className="mt-3 flex justify-end">
               <ProtocolDoneButton
@@ -625,9 +667,20 @@ export function ArticlePage() {
         </span>
       </div>
 
-      <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
+      <h1 className="mb-2 text-2xl font-bold tracking-tight md:text-4xl">
         {article.title}
       </h1>
+      {article.subtitle && (
+        <p
+          className={`mb-4 font-mono text-sm leading-relaxed md:text-base ${
+            article.slug === 'cognitive-architecture-neural-throughput'
+              ? 'border-l-2 border-slate-500/60 pl-4 text-slate-300'
+              : 'text-slate-400'
+          }`}
+        >
+          {article.subtitle}
+        </p>
+      )}
       {article.image && article.imagePlacement !== 'content' && (
         <figure className="mb-6 overflow-hidden rounded-xl border border-white/10">
           <img
@@ -731,6 +784,8 @@ export function ArticlePage() {
                                     ? 'System Calibration Ready. Download ONDA Life to track BOLT score and optimize gas exchange.'
                                     : article.slug === 'femtech-cyclical-architecture'
                                     ? 'System Calibration Ready. Download ONDA Life to sync your cycle phases and optimize hormonal firmware.'
+                                    : article.slug === 'cognitive-architecture-neural-throughput'
+                                    ? 'System Calibration Ready. Download ONDA Life to clear neural noise, optimize circadian calibration, and expand cognitive bandwidth without external patches.'
                                     : 'System Calibration Ready. Download ONDA Life to track your Vagus Nerve tone in real-time.'}
         </p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">

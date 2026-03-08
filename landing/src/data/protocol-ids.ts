@@ -6,6 +6,12 @@
 /** MD articles (Telegram): slug -> protocol IDs in order (PROTOCOL_01, PROTOCOL_02, ...) */
 export const ARTICLE_PROTOCOL_ORDER: Record<string, string[]> = {
   'cacao-stem-cells': ['cacao-cellular-ignition', 'cacao-micro-circulation-loop', 'cacao-recovery-firewall'],
+  'cognitive-architecture-neural-throughput': [
+    'cognitive-neural-neural-circuit-digital-sunset',
+    'cognitive-neural-neural-lipid-fuel',
+    'cognitive-neural-neural-co-regulation',
+    'cognitive-neural-neural-photic-anchor',
+  ],
 }
 
 const ARTICLE_SHORT: Record<string, string> = {
@@ -23,6 +29,7 @@ const ARTICLE_SHORT: Record<string, string> = {
   'longevity-hardware-cellular-cleanup': 'longevity',
   'neuroplasticity-flow-overclocking': 'neuro',
   'cognitive-architecture-nootropic-stacks': 'cognitive',
+  'cognitive-architecture-neural-throughput': 'cognitive-neural',
   'gut-brain-axis-data-link': 'gut',
   'glp1-biology-muscle-preservation': 'glp1',
   'mitochondrial-dna-red-light': 'mt-dna',
@@ -115,6 +122,10 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'cellular-ignition': 'cacao-stem-cells',
   'micro-circulation-loop': 'cacao-stem-cells',
   'recovery-firewall': 'cacao-stem-cells',
+  'neural-circuit-digital-sunset': 'cognitive-architecture-neural-throughput',
+  'neural-lipid-fuel': 'cognitive-architecture-neural-throughput',
+  'neural-co-regulation': 'cognitive-architecture-neural-throughput',
+  'neural-photic-anchor': 'cognitive-architecture-neural-throughput',
 }
 
 export const PROTOCOL_STORAGE_PREFIX = 'onda-protocol-'
