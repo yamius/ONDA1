@@ -16,8 +16,11 @@ export function HeroSection() {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-8 md:pt-4">
       {/* Background image with parallax on desktop only (avoids iOS fixed-nav bug on mobile) */}
       <img
-        src="/hero-bg.png"
-        alt="ONDA Life mobile app interface showing HRV tracking"
+        src="/onda-life-hrv-consciousness-hero.png"
+        alt="ONDA Life mobile app interface showing HRV tracking and biocomputer optimization"
+        title="ONDA Life: HRV tracking, consciousness OS, biocomputer interface"
+        width={1920}
+        height={1080}
         className="absolute inset-0 h-full w-full object-cover opacity-40"
         style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         fetchPriority="high"

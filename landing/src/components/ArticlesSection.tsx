@@ -46,7 +46,10 @@ export function ArticlesSection() {
                   <img
                     src={article.image}
                     alt={article.imageAlt ?? article.title}
+                    title={article.imageTitle}
                     loading="lazy"
+                    width={384}
+                    height={96}
                     className="h-full w-full object-cover object-center"
                   />
                 </div>

@@ -57,7 +57,7 @@ landing/
 ├── package.json                  ← Зависимости и скрипты
 ├── public/
 │   ├── favicon.svg               ← Логотип ONDA Life (волна + текст, SVG)
-│   ├── hero-bg.png               ← Фоновое изображение hero-секции
+│   ├── onda-life-hrv-consciousness-hero.png  ← Фоновое изображение hero-секции (SEO-имя)
 │   ├── robots.txt                ← Allow/Disallow, Sitemap (без trailing slash в директивах)
 │   ├── images/articles/          ← Header-изображения статей (SEO-имена: keyword-topic-onda.png)
 │   └── images/parts/             ← Header-изображения Part-страниц (SEO-имена: onda-part-N-slug-*.png)
