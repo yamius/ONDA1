@@ -37,6 +37,7 @@ const ARTICLE_SHORT: Record<string, string> = {
   'cpg-neural-autopilot': 'cpg',
   'co2-tolerance-expanding-oxygen-limit': 'co2',
   'femtech-cyclical-architecture': 'femtech',
+  'system-analysis-cognitive-architecture': 'cognitive-arch',
 }
 
 /** Protocol base id -> article slug (for building unique IDs) */
@@ -115,6 +116,10 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'cellular-ignition': 'cacao-stem-cells',
   'micro-circulation-loop': 'cacao-stem-cells',
   'recovery-firewall': 'cacao-stem-cells',
+  'digital-sunset': 'system-analysis-cognitive-architecture',
+  'lipid-fuel': 'system-analysis-cognitive-architecture',
+  'co-regulation': 'system-analysis-cognitive-architecture',
+  'photic-anchor': 'system-analysis-cognitive-architecture',
 }
 
 export const PROTOCOL_STORAGE_PREFIX = 'onda-protocol-'

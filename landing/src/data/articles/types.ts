@@ -8,6 +8,8 @@ export interface HowToStep {
 export interface Article {
   slug: string
   title: string
+  /** Optional: subtitle with distinctive styling (e.g. "Optimizing Neural Throughput Without External Patches") */
+  subtitle?: string
   /** Optional: custom SEO title override (e.g. "Dopamine Stacking & Circuit Overload | ONDA Biology") */
   seoTitle?: string
   description: string
