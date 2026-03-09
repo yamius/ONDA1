@@ -83,14 +83,31 @@ This eliminates 'Human Error'—the tendency to ignore biological signals in fav
 
 ---
 
-## [ SYSTEM CORRECTION TABLE ]
+## [ SYSTEM CORRECTION LOG ]
 
-| [ DATA_INPUT ] | [ SYSTEM_STATE ] | [ RECOMMENDED_ACTION ] |
-|----------------|------------------|------------------------|
-| ↓ HRV / ↑ RHR | System Overload | PROTOCOL: VAGAL_RESET |
-| ↑ Body Temp | Immune Alert | PROTOCOL: THERMAL_STASIS |
-| ↓ Deep Sleep | Cache Corrupted | PROTOCOL: GLYMPHATIC_PURGE |
-| ↑ Alpha Waves | Peak Focus | PROTOCOL: DEEP_WORK_2.0 |
+> **INPUT_SIGNAL:** ↓ HRV / ↑ RHR
+>
+> **SYSTEM_STATE:** System Overload / High Latency
+>
+> **ACTION:** PROTOCOL: VAGAL_RESET
+
+> **INPUT_SIGNAL:** ↑ Body Temp
+>
+> **SYSTEM_STATE:** Immune Alert / System Heat
+>
+> **ACTION:** PROTOCOL: THERMAL_STASIS
+
+> **INPUT_SIGNAL:** ↓ Deep Sleep
+>
+> **SYSTEM_STATE:** Cache Corrupted / Recovery Failure
+>
+> **ACTION:** PROTOCOL: GLYMPHATIC_PURGE
+
+> **INPUT_SIGNAL:** ↑ Alpha Waves
+>
+> **SYSTEM_STATE:** Peak Focus / Optimal Bandwidth
+>
+> **ACTION:** PROTOCOL: DEEP_WORK_2.0
 
 ---
 
