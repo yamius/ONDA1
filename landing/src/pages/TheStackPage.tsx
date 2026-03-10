@@ -53,6 +53,9 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'bolt-test', name: 'BOLT_TEST', params: '(BODY_OXYGEN_LEVEL)' },
       { id: 'co2-box-calibration', name: 'CO2_BOX_CALIBRATION', params: '(4-4-4-4_10min)' },
       { id: 'apnea-tables', name: 'APNEA_TABLES', params: '(PROGRESSIVE_STRESS)' },
+      { id: 'hpa-forced-deceleration', name: 'FORCED_DECELERATION', params: '(PHYSIOLOGICAL_SIGH)' },
+      { id: 'hpa-micro-loading', name: 'STATIC_DISCHARGE', params: '(MICRO_LOADING)' },
+      { id: 'hpa-cognitive-reframing', name: 'CONTROL_INTERCEPT', params: '(COGNITIVE_REFRAME)' },
     ],
   },
   {
@@ -84,6 +87,13 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'fiber-pre-loading', name: 'FIBER_PRE_LOADING', params: '(10-15g_PRE_MEAL)' },
       { id: 'berberine-pulsing', name: 'BERBERINE_PULSING', params: '(500mg)' },
       { id: 'protein-leverage-16', name: 'PROTEIN_LEVERAGE_1.6', params: '(g/KG)' },
+      { id: 'bitter-signaling', name: 'BITTER_GLP1_SIGNALING', params: '(BITTER_FOODS)' },
+      { id: 'leptin-silence-window', name: 'SILENCE_WINDOW', params: '(14-16h_FAST)' },
+      { id: 'leptin-protein-first', name: 'FIRST_SIGNAL_RULE', params: '(PROTEIN_FIRST)' },
+      { id: 'leptin-thermal-reset', name: 'THERMAL_RESET', params: '(COLD_PLUNGE)' },
+      { id: 'tsh-fuel-check', name: 'FUEL_CHECK', params: '(IODINE_SELENIUM)' },
+      { id: 'tsh-thermal-test', name: 'THERMAL_TEST', params: '(BASAL_TEMP)' },
+      { id: 'tsh-stress-bypass', name: 'STRESS_BYPASS', params: '(BREATHWORK_PM)' },
     ],
   },
   {
@@ -123,6 +133,9 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'focus-baseline', name: 'FOCUS_BASELINE', params: '(CAFFEINE_THEANINE_1:2)' },
       { id: 'memory-encoder', name: 'MEMORY_ENCODER', params: '(ALPHA_GPC_BACOPA)' },
       { id: 'recovery-loop', name: 'RECOVERY_LOOP', params: '(MAGNESIUM_L_THREONATE)' },
+      { id: 'estrogen-phyto-patch', name: 'PHYTO_INQUIRY_PATCH', params: '(DIM_FLAXSEED)' },
+      { id: 'estrogen-resistance-training', name: 'INTENSIVE_RENDERING', params: '(3-4x_WEEK)' },
+      { id: 'estrogen-omega3-shield', name: 'OMEGA3_NEURAL_SHIELD', params: '(2g_DHA_EPA)' },
     ],
   },
   {
@@ -135,6 +148,9 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'phase-sync', name: 'PHASE_SYNCHRONIZATION', params: '(CYCLE_SYNCING_DAYS_7-14)' },
       { id: 'bbt-tracking', name: 'THERMAL_MONITORING', params: '(BBT_OURA_EVIE)' },
       { id: 'micronutrient-load', name: 'NUTRITIONAL_PATCH', params: '(MG_CARBS_PRE_CYCLE)' },
+      { id: 'visual-calibration', name: 'DIRECT_NEURAL_LINK', params: '(DIRECT_EYE_CONTACT)' },
+      { id: 'vocal-resonance', name: 'VOCAL_RESONANCE_MOD', params: '(DEEPER_TONE)' },
+      { id: 'tactile-input', name: 'TACTILE_DATA_INPUT', params: '(INTENTIONAL_TOUCH)' },
     ],
   },
   {
@@ -143,6 +159,9 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'microbiome-patch', name: 'MICROBIOME_PATCH', params: '(30g_FIBER)' },
       { id: 'polyphenol', name: 'POLYPHENOL_BOOST', params: '(DARK_CHOCOLATE_BERRIES)' },
       { id: 'cold-restart', name: 'COLD_RESTART', params: '(24h_FAST_MONTHLY)' },
+      { id: 'serotonin-posture-patch', name: 'STRUCTURAL_ALIGNMENT', params: '(UPRIGHT_STANCE)' },
+      { id: 'serotonin-solar-loading', name: 'PHOTIC_TRIGGER', params: '(MORNING_SUN)' },
+      { id: 'serotonin-prebiotic-input', name: 'SERVER_MAINTENANCE', params: '(FIBER_PREBIOTICS)' },
     ],
   },
 ]
