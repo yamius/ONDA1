@@ -22,7 +22,7 @@ const article: Article = {
     'insulin-sensitivity',
   ],
   introStyle: 'indigo',
-  image: '/images/articles/neural-optimizer-estrogen-hippocampal-plasticity.jpg',
+  image: '/images/articles/neural-optimizer-estrogen.png',
   imageAlt:
     '3D visualization of estrogen-induced synaptic growth in the hippocampus.',
   imageTitle:
