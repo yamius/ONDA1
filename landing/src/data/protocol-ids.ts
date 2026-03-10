@@ -44,6 +44,7 @@ const ARTICLE_SHORT: Record<string, string> = {
   'cpg-neural-autopilot': 'cpg',
   'co2-tolerance-expanding-oxygen-limit': 'co2',
   'femtech-cyclical-architecture': 'femtech',
+  'endocrine-social-drive-oxytocin-testosterone': 'endocrine',
 }
 
 /** Protocol base id -> article slug (for building unique IDs) */
@@ -126,6 +127,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'neural-lipid-fuel': 'cognitive-architecture-neural-throughput',
   'neural-co-regulation': 'cognitive-architecture-neural-throughput',
   'neural-photic-anchor': 'cognitive-architecture-neural-throughput',
+  'visual-calibration': 'endocrine-social-drive-oxytocin-testosterone',
+  'vocal-resonance': 'endocrine-social-drive-oxytocin-testosterone',
+  'tactile-input': 'endocrine-social-drive-oxytocin-testosterone',
 }
 
 export const PROTOCOL_STORAGE_PREFIX = 'onda-protocol-'

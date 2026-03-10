@@ -41,6 +41,7 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'cognitive-architecture-neural-throughput': 'cognitive-engine',
   'system-feedback-biometric-loop': 'system-forecasting',
   'gut-brain-axis-data-link': 'gut-brain-link',
+  'endocrine-social-drive-oxytocin-testosterone': 'system-forecasting',
 }
 
 const ARTICLE_SYNC_TIMES: Record<string, string> = {
@@ -74,6 +75,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'femtech-cyclical-architecture': '5 min 30 sec',
   'cognitive-architecture-neural-throughput': '3 min 20 sec',
   'system-feedback-biometric-loop': '4 min 15 sec',
+  'endocrine-social-drive-oxytocin-testosterone': '4 min 30 sec',
 }
 
 function extractText(node: React.ReactNode): string {

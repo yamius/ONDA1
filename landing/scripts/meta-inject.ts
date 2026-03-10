@@ -49,6 +49,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'cacao-stem-cells': 'Cacao & Stem Cells: Biological Logic | ONDA',
   'cognitive-architecture-neural-throughput': 'Cognitive Architecture: Neural Throughput Optimization | ONDA',
   'system-feedback-biometric-loop': 'Biometric Feedback Loop: Real-Time Bio-Optimization | ONDA',
+  'endocrine-social-drive-oxytocin-testosterone': 'Endocrine Social Drive: Oxytocin vs Testosterone | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -99,6 +100,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Upgrade your neural hardware. Master the protocols of cognitive architecture: clear the signal, manage neural noise, and expand bandwidth without external patches.',
   'system-feedback-biometric-loop':
     'Stop tracking and start optimizing. Learn how ONDA turns your biometric data into immediate corrective protocols for peak performance.',
+  'endocrine-social-drive-oxytocin-testosterone':
+    'Learn to balance the trust protocol (Oxytocin) and the status protocol (Testosterone) for optimal social resonance and charismatic leadership.',
 }
 
 export interface RouteMeta {
@@ -791,7 +794,20 @@ export function getMetaForRoute(route: string): RouteMeta {
                     audience: 'Biohackers, Athletes, High-Performers',
                     proficiencyLevel: 'Intermediate',
                   }
-                : undefined
+                  : slug === 'endocrine-social-drive-oxytocin-testosterone'
+                    ? {
+                        keywords: [
+                          'Oxytocin',
+                          'Testosterone',
+                          'Endocrine System',
+                          'Social Resonance',
+                          'Biohacking Social Skills',
+                          'ONDA Protocol',
+                        ],
+                        audience: 'Biohackers, High-Performers, Human Endocrine Architecture',
+                        proficiencyLevel: 'Intermediate',
+                      }
+                    : undefined
       const meta: RouteMeta = {
         title: ARTICLE_SEO_TITLES[slug] ?? `${article.title} | ONDA Life`,
         description: seoDesc,

@@ -33,8 +33,9 @@ import femtechArticle from './femtech-cyclical-architecture'
 import cacaoStemCellsArticle from './cacao-stem-cells'
 import cognitiveNeuralArticle from './cognitive-architecture-neural-throughput'
 import systemFeedbackArticle from './system-feedback-biometric-loop'
+import endocrineSocialArticle from './endocrine-social-drive-oxytocin-testosterone'
 
-export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...dopamineStackingArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle, ...glp1Article, ...mtDnaRedLightArticle, ...senolyticArticle, ...aiBiomarkerArticle, ...phaseLockedSleepArticle, ...neuralEntrainmentArticle, ...electricMedicineArticle, ...muscleMetabolicArticle, ...chmArticle, ...glymphaticFlushArticle, ...cpgArticle, ...co2ToleranceArticle, ...femtechArticle, ...cacaoStemCellsArticle, ...cognitiveNeuralArticle, ...systemFeedbackArticle]
+export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...dopamineStackingArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle, ...glp1Article, ...mtDnaRedLightArticle, ...senolyticArticle, ...aiBiomarkerArticle, ...phaseLockedSleepArticle, ...neuralEntrainmentArticle, ...electricMedicineArticle, ...muscleMetabolicArticle, ...chmArticle, ...glymphaticFlushArticle, ...cpgArticle, ...co2ToleranceArticle, ...femtechArticle, ...cacaoStemCellsArticle, ...cognitiveNeuralArticle, ...systemFeedbackArticle, ...endocrineSocialArticle]
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug)
