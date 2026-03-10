@@ -205,6 +205,33 @@ The diagram below maps [концепция] to [метрики].
 
 Для привязки кнопки [ DONE ] к блоку «The Hack» поле `howToSteps[].text` должно **совпадать по подстроке** с текстом в blockquote (матчинг: `blockquoteContent.includes(s.text)` или `hackText.includes(s.text)`). Можно использовать укороченный текст — например, `"Perform one high-dopamine activity at a time"` вместо полной фразы. **Не добавляй** `[ DONE ]` в markdown — кнопка рендерится автоматически.
 
+### Система синхронизации протоколов ([ DONE ] ↔ The Stack)
+
+**Правило:** `howToSteps[].protocolId`, ключ в `PROTOCOL_TO_ARTICLE` и `id` в `TheStackPage` должны быть **одинаковыми строками**. Только так кнопка [ DONE ] в статье и тогл в The Stack пишут/читают один и тот же ключ localStorage.
+
+**Формат protocolId:** `{short}-{base}`, где `short` = значение из `ARTICLE_SHORT` для данной статьи. Примеры: `breathwork-box-breathing`, `femtech-phase-sync`, `glymph-sleep-posture`.
+
+**Как работает:**
+```
+protocolId = 'breathwork-box-breathing'                          // в статье и TheStack
+
+PROTOCOL_TO_ARTICLE['breathwork-box-breathing']
+  → 'breathwork-command-line-interface'                          // articleSlug
+
+ARTICLE_SHORT['breathwork-command-line-interface']
+  → 'breathwork'                                                 // short
+
+getProtocolUniqueId('breathwork-box-breathing')
+  → 'breathwork-breathwork-box-breathing'                        // uniqueId
+
+localStorage key
+  → 'onda-protocol-breathwork-breathwork-box-breathing'          // итоговый ключ
+```
+
+**Исключения (не использовать prefix):** `cacao-stem-cells` и `cognitive-architecture-neural-throughput` — у них `protocolId` в статье это просто base-ключ (`cellular-ignition`, `neural-circuit-digital-sunset`). В TheStack и PROTOCOL_TO_ARTICLE тоже base-ключ. Эти статьи не трогать без необходимости.
+
+**`ARTICLE_PROTOCOL_ORDER`** — только для MD-статей, опубликованных через Telegram-бота. На TS-статьи не влияет.
+
 ### Чеклист: добавление новой статьи
 
 1. **Создать файл** `landing/src/data/articles/{slug}.ts`
@@ -215,9 +242,10 @@ The diagram below maps [концепция] to [метрики].
    - Добавить в массив `articles`
 
 3. **Если есть протоколы** — `landing/src/data/protocol-ids.ts`:
-   - `ARTICLE_SHORT`: `'article-slug': 'short'` (short используется в protocolId: `short-protocolKey`)
-   - `PROTOCOL_TO_ARTICLE`: `'protocol-key': 'article-slug'` для каждого протокола
-   - `howToSteps[].protocolId` = `short-protocolKey` (например `femtech-phase-sync`)
+   - `ARTICLE_SHORT`: добавить `'article-slug': 'short'` — выбрать короткий уникальный префикс
+   - `howToSteps[].protocolId` = `'{short}-{base}'` (например `femtech-phase-sync`)
+   - `PROTOCOL_TO_ARTICLE`: для каждого протокола добавить `'тот_же_protocolId': 'article-slug'`
+   - ⚠️ **Ключ в `PROTOCOL_TO_ARTICLE` должен быть идентичен `protocolId` из `howToSteps`** — иначе `[ DONE ]` пишет `unknown-*`
 
 4. **ArticlePage.tsx** (обязательно):
    - `ARTICLE_SLUG_TO_STACK_SECTION`: slug → id секции The Stack (см. таблицу «Секции The Stack» ниже)
@@ -235,7 +263,8 @@ The diagram below maps [концепция] to [метрики].
    - `blockquote`: добавить `isXxxProtocol` для бордера (например `border-violet-500`)
 
 7. **TheStackPage.tsx** — если протоколы должны быть в The Stack:
-   - Добавить в нужную секцию `STACK_COMPONENTS`: `{ id: 'protocol-key', name: 'PROTOCOL_NAME', params: '...' }`
+   - Добавить в нужную секцию `STACK_COMPONENTS`: `{ id: 'тот_же_protocolId', name: 'PROTOCOL_NAME', params: '...' }`
+   - ⚠️ `id` должен совпадать с `protocolId` из статьи и ключом в `PROTOCOL_TO_ARTICLE`
 
 8. **Опционально** `landing/src/data/articles-categories.ts`:
    - Добавить slug в `FEATURED_ARTICLE_SLUGS` для вывода в Featured
