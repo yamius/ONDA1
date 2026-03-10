@@ -22,7 +22,7 @@ const article: Article = {
     'heart-rate-variability',
   ],
   introStyle: 'amber',
-  image: '/images/articles/hpa-axis-control-cortisol-aggression-stress-architecture.jpg',
+  image: '/images/articles/hpa-axis-cortisol-aggression.png',
   imageAlt:
     '3D visualization of the HPA axis and prefrontal cortex shield.',
   imageTitle:
