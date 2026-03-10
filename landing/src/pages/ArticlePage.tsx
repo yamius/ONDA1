@@ -46,6 +46,7 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'system-stability-serotonin': 'gut-brain-link',
   'energy-sensor-leptin': 'energy-grid',
   'neural-optimizer-estrogen': 'cognitive-engine',
+  'energy-governor-tsh': 'energy-grid',
 }
 
 const ARTICLE_SYNC_TIMES: Record<string, string> = {
@@ -84,6 +85,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'system-stability-serotonin': '4 min 15 sec',
   'energy-sensor-leptin': '4 min 30 sec',
   'neural-optimizer-estrogen': '4 min 45 sec',
+  'energy-governor-tsh': '4 min 10 sec',
 }
 
 function extractText(node: React.ReactNode): string {

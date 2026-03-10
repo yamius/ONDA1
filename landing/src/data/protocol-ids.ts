@@ -49,6 +49,7 @@ const ARTICLE_SHORT: Record<string, string> = {
   'system-stability-serotonin': 'serotonin',
   'energy-sensor-leptin': 'leptin',
   'neural-optimizer-estrogen': 'estrogen',
+  'energy-governor-tsh': 'tsh',
 }
 
 /** Protocol base id -> article slug (for building unique IDs) */
@@ -146,6 +147,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'estrogen-phyto-patch': 'neural-optimizer-estrogen',
   'estrogen-resistance-training': 'neural-optimizer-estrogen',
   'estrogen-omega3-shield': 'neural-optimizer-estrogen',
+  'tsh-fuel-check': 'energy-governor-tsh',
+  'tsh-thermal-test': 'energy-governor-tsh',
+  'tsh-stress-bypass': 'energy-governor-tsh',
 }
 
 export const PROTOCOL_STORAGE_PREFIX = 'onda-protocol-'
