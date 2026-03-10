@@ -21,7 +21,7 @@ const article: Article = {
     'autophagy',
   ],
   introStyle: 'amber',
-  image: '/images/articles/energy-sensor-leptin-metabolic-blindness.jpg',
+  image: '/images/articles/energy-sensor-leptin.png',
   imageAlt:
     '3D visualization of the leptin energy sensor between adipose tissue and the brain.',
   imageTitle:
