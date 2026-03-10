@@ -45,6 +45,10 @@ const ARTICLE_SHORT: Record<string, string> = {
   'co2-tolerance-expanding-oxygen-limit': 'co2',
   'femtech-cyclical-architecture': 'femtech',
   'endocrine-social-drive-oxytocin-testosterone': 'endocrine',
+  'hpa-axis-control-cortisol-aggression': 'hpa',
+  'system-stability-serotonin': 'serotonin',
+  'energy-sensor-leptin': 'leptin',
+  'neural-optimizer-estrogen': 'estrogen',
 }
 
 /** Protocol base id -> article slug (for building unique IDs) */
@@ -130,6 +134,18 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'visual-calibration': 'endocrine-social-drive-oxytocin-testosterone',
   'vocal-resonance': 'endocrine-social-drive-oxytocin-testosterone',
   'tactile-input': 'endocrine-social-drive-oxytocin-testosterone',
+  'hpa-forced-deceleration': 'hpa-axis-control-cortisol-aggression',
+  'hpa-micro-loading': 'hpa-axis-control-cortisol-aggression',
+  'hpa-cognitive-reframing': 'hpa-axis-control-cortisol-aggression',
+  'serotonin-posture-patch': 'system-stability-serotonin',
+  'serotonin-solar-loading': 'system-stability-serotonin',
+  'serotonin-prebiotic-input': 'system-stability-serotonin',
+  'leptin-silence-window': 'energy-sensor-leptin',
+  'leptin-protein-first': 'energy-sensor-leptin',
+  'leptin-thermal-reset': 'energy-sensor-leptin',
+  'estrogen-phyto-patch': 'neural-optimizer-estrogen',
+  'estrogen-resistance-training': 'neural-optimizer-estrogen',
+  'estrogen-omega3-shield': 'neural-optimizer-estrogen',
 }
 
 export const PROTOCOL_STORAGE_PREFIX = 'onda-protocol-'

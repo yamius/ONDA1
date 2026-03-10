@@ -42,6 +42,10 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'system-feedback-biometric-loop': 'system-forecasting',
   'gut-brain-axis-data-link': 'gut-brain-link',
   'endocrine-social-drive-oxytocin-testosterone': 'system-forecasting',
+  'hpa-axis-control-cortisol-aggression': 'nervous-system',
+  'system-stability-serotonin': 'gut-brain-link',
+  'energy-sensor-leptin': 'energy-grid',
+  'neural-optimizer-estrogen': 'cognitive-engine',
 }
 
 const ARTICLE_SYNC_TIMES: Record<string, string> = {
@@ -76,6 +80,10 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'cognitive-architecture-neural-throughput': '3 min 20 sec',
   'system-feedback-biometric-loop': '4 min 15 sec',
   'endocrine-social-drive-oxytocin-testosterone': '4 min 30 sec',
+  'hpa-axis-control-cortisol-aggression': '4 min 20 sec',
+  'system-stability-serotonin': '4 min 15 sec',
+  'energy-sensor-leptin': '4 min 30 sec',
+  'neural-optimizer-estrogen': '4 min 45 sec',
 }
 
 function extractText(node: React.ReactNode): string {

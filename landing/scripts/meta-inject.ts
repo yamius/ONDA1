@@ -50,6 +50,10 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'cognitive-architecture-neural-throughput': 'Cognitive Architecture: Neural Throughput Optimization | ONDA',
   'system-feedback-biometric-loop': 'Biometric Feedback Loop: Real-Time Bio-Optimization | ONDA',
   'endocrine-social-drive-oxytocin-testosterone': 'Endocrine Social Drive: Oxytocin vs Testosterone | ONDA Life',
+  'hpa-axis-control-cortisol-aggression': 'HPA Axis Control: Cortisol & Aggression Management | ONDA Life',
+  'system-stability-serotonin': 'Serotonin & System Stability: Managing the Gut-Brain Link | ONDA Life',
+  'energy-sensor-leptin': 'Leptin & Energy Sensing: Fixing Metabolic Blindness | ONDA Life',
+  'neural-optimizer-estrogen': 'Estrogen & Neural Plasticity: Protecting the Cognitive Hardware | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -102,6 +106,14 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Stop tracking and start optimizing. Learn how ONDA turns your biometric data into immediate corrective protocols for peak performance.',
   'endocrine-social-drive-oxytocin-testosterone':
     'Learn to balance the trust protocol (Oxytocin) and the status protocol (Testosterone) for optimal social resonance and charismatic leadership.',
+  'hpa-axis-control-cortisol-aggression':
+    'Master your stress architecture. Learn how to manage the HPA axis, cortisol spikes, and reactive aggression using ONDA neuro-protocols.',
+  'system-stability-serotonin':
+    'Learn how to calibrate your inner status and cognitive calm. Explore the link between posture, gut health, and serotonin production.',
+  'energy-sensor-leptin':
+    'Master your hunger signals. Learn how to recalibrate leptin sensitivity, fix metabolic resistance, and restore energy balance using ONDA protocols.',
+  'neural-optimizer-estrogen':
+    'Discover how estrogen functions as a neural optimizer, enhancing memory and protecting the brain from inflammation and cognitive decline.',
 }
 
 export interface RouteMeta {
@@ -807,7 +819,61 @@ export function getMetaForRoute(route: string): RouteMeta {
                         audience: 'Biohackers, High-Performers, Human Endocrine Architecture',
                         proficiencyLevel: 'Intermediate',
                       }
-                    : undefined
+                    : slug === 'hpa-axis-control-cortisol-aggression'
+                      ? {
+                          keywords: [
+                            'HPA Axis',
+                            'Cortisol',
+                            'Stress Management',
+                            'Physiological Sigh',
+                            'Biohacking Aggression',
+                            'Neuroplasticity',
+                          ],
+                          audience: 'Biohackers, High-Performers, Stress Management',
+                          proficiencyLevel: 'Intermediate',
+                        }
+                      : slug === 'system-stability-serotonin'
+                        ? {
+                            keywords: [
+                              'Serotonin',
+                              'Gut-Brain Axis',
+                              'Posture',
+                              'Biohacking Confidence',
+                              'Tryptophan',
+                              'Social Status',
+                              'ONDA Protocol',
+                            ],
+                            audience: 'Biohackers, High-Performers, Mood Optimization',
+                            proficiencyLevel: 'Intermediate',
+                          }
+                        : slug === 'energy-sensor-leptin'
+                          ? {
+                              keywords: [
+                                'Leptin Resistance',
+                                'Intermittent Fasting',
+                                'Metabolic Health',
+                                'Circadian Rhythm',
+                                'Biohacking Hunger',
+                                'ONDA Protocol',
+                              ],
+                              audience: 'Biohackers, High-Performers, Metabolic Optimization',
+                              proficiencyLevel: 'Intermediate',
+                            }
+                          : slug === 'neural-optimizer-estrogen'
+                            ? {
+                                keywords: [
+                                  'Estrogen',
+                                  'Neuroplasticity',
+                                  'BDNF',
+                                  'Brain Fog',
+                                  'Cognitive Longevity',
+                                  'Biohacking Hormones',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, High-Performers, Cognitive Optimization',
+                                proficiencyLevel: 'Intermediate',
+                              }
+                            : undefined
       const meta: RouteMeta = {
         title: ARTICLE_SEO_TITLES[slug] ?? `${article.title} | ONDA Life`,
         description: seoDesc,
