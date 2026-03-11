@@ -987,7 +987,8 @@ function escapeHtmlAttr(s: string): string {
 export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   const escapedTitle = escapeHtmlAttr(meta.title)
   const escapedDesc = escapeHtmlAttr(meta.description)
-  const escapedUrl = escapeHtmlAttr(meta.url)
+  const canonicalUrl = (meta.url || SITE_URL).replace(/\/+$/, '') || SITE_URL
+  const escapedUrl = escapeHtmlAttr(canonicalUrl)
 
   let out = html
 
@@ -998,8 +999,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   }
 
   // Canonical link — always without trailing slash; replace existing or add before </head>
-  const canonicalUrl = (meta.url || SITE_URL).replace(/\/+$/, '') || SITE_URL
-  const canonicalTag = `<link rel="canonical" href="${escapeHtmlAttr(canonicalUrl)}">`
+  const canonicalTag = `<link rel="canonical" href="${escapedUrl}">`
   if (out.includes('rel="canonical"')) {
     out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, canonicalTag)
   } else {

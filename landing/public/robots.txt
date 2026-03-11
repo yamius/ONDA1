@@ -1,10 +1,12 @@
 User-agent: *
 Allow: /
+Allow: /about
+Allow: /articles
+Allow: /contact
 Allow: /glossary
 Allow: /level
 Allow: /part
-Allow: /about
-Allow: /articles
+Allow: /the-stack
 Disallow: /static/
 
 Sitemap: https://onda-life.com/sitemap.xml
