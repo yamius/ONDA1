@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
 import { articles } from '../data/articles'
 import { FEATURED_ARTICLE_SLUGS, ARTICLE_CATEGORIES } from '../data/articles-categories'
+import { OptimizedImage } from '../components/OptimizedImage'
 
 interface MdArticle {
   slug: string
@@ -214,9 +215,12 @@ export function ArticlesPage() {
           >
             {article.image && (
               <div className="aspect-video w-full overflow-hidden border-b border-white/5">
-                <img
+                <OptimizedImage
                   src={article.image}
                   alt=""
+                  loading="lazy"
+                  width={640}
+                  height={360}
                   className="h-full w-full object-cover transition-transform group-hover:scale-105"
                 />
               </div>

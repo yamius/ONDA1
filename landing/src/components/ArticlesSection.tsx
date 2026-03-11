@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { articles } from '../data/articles'
+import { OptimizedImage } from './OptimizedImage'
 
 function shuffle<T>(arr: T[]): T[] {
   const out = [...arr]
@@ -43,7 +44,7 @@ export function ArticlesSection() {
             >
               {article.image && (
                 <div className="relative h-24 overflow-hidden rounded-t-xl">
-                  <img
+                  <OptimizedImage
                     src={article.image}
                     alt={article.imageAlt ?? article.title}
                     title={article.imageTitle}

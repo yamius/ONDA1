@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { OptimizedImage } from './OptimizedImage'
 
 export function HeroSection() {
   const [scrollY, setScrollY] = useState(0)
@@ -15,15 +16,15 @@ export function HeroSection() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-8 md:pt-4">
       {/* Background image with parallax on desktop only (avoids iOS fixed-nav bug on mobile) */}
-      <img
+      <OptimizedImage
         src="/onda-life-hrv-consciousness-hero.png"
         alt="ONDA Life mobile app interface showing HRV tracking and biocomputer optimization"
         title="ONDA Life: HRV tracking, consciousness OS, biocomputer interface"
         width={1920}
         height={1080}
+        priority
         className="absolute inset-0 h-full w-full object-cover opacity-40"
         style={{ transform: `translateY(${scrollY * 0.5}px)` }}
-        fetchPriority="high"
       />
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />

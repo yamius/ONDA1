@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 import { levelsData } from '../data/levels'
 import { PART_SEO } from '../data/part-seo'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
+import { OptimizedImage } from '../components/OptimizedImage'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
@@ -2090,7 +2091,7 @@ export function PartPage() {
 
       {part.image && (
         <figure className="mb-8 overflow-hidden rounded-xl border border-white/10">
-          <img
+          <OptimizedImage
             src={part.image}
             alt={part.imageAlt ?? ''}
             title={part.imageTitle}

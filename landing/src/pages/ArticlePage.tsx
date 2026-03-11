@@ -3,6 +3,7 @@ import { useParams, useLocation, Link } from 'react-router-dom'
 import Markdown from 'react-markdown'
 import rehypeSlug from 'rehype-slug'
 import { NotFoundPage } from './NotFoundPage'
+import { OptimizedImage } from '../components/OptimizedImage'
 import { getArticleBySlug } from '../data/articles'
 import { glossaryTerms } from '../data/glossary'
 import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
@@ -635,8 +636,8 @@ export function ArticlePage() {
       const isArticleImage = article.image && src?.endsWith(article.image.split('/').pop() ?? '')
       const hoverTitle = isArticleImage ? (article.imageCaption ?? article.imageTitle ?? title) : title
       return (
-        <img
-          src={src}
+        <OptimizedImage
+          src={src ?? ''}
           alt={alt ?? ''}
           title={hoverTitle}
           loading="lazy"
@@ -706,7 +707,7 @@ export function ArticlePage() {
       )}
       {article.image && article.imagePlacement !== 'content' && (
         <figure className="mb-6 overflow-hidden rounded-xl border border-white/10">
-          <img
+          <OptimizedImage
             src={article.image}
             alt={article.imageAlt ?? ''}
             title={article.imageCaption ?? article.imageTitle}

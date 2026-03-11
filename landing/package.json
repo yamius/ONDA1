@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && tsx scripts/prerender.ts",
+    "build": "node scripts/optimize-images.mjs && tsc -b && vite build && tsx scripts/prerender.ts",
     "favicons": "node scripts/generate-favicons.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
