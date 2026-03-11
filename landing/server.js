@@ -19,6 +19,25 @@ const SITE_URL = 'https://onda-life.com'
 // Ensure dist/ directory exists so express.static doesn't throw
 if (!existsSync(distDir)) mkdirSync(distDir, { recursive: true })
 
+// Cache root HTML for instant / response (no disk read per request)
+let cachedRootHtml = null
+const indexPath = join(distDir, 'index.html')
+if (existsSync(indexPath)) {
+  try {
+    cachedRootHtml = readFileSync(indexPath, 'utf-8')
+    console.log('[server] Cached root HTML for fast / response')
+  } catch (e) {
+    console.error('[server] Failed to cache root:', e.message)
+  }
+}
+
+function isHealthcheckRequest(req) {
+  const ua = (req.get('User-Agent') || '').toLowerCase()
+  return req.query.health === '1' || /replit|healthcheck|health-check|uptime|ping|^curl\b|^wget\b|headless|googlecloud/i.test(ua)
+}
+
+const HEALTHCHECK_HTML = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>OK</title></head><body>OK</body></html>'
+
 const app = express()
 
 // Log all incoming requests (to see Replit healthcheck path)
@@ -30,8 +49,22 @@ app.use((req, res, next) => {
 // Health check — MUST be first: Replit checks this before marking app live
 app.get('/health', (req, res) => res.status(200).send('OK'))
 app.head('/health', (req, res) => res.status(200).end())
+
+// Root / — fast path: healthcheck UA → instant OK, cached HTML → no disk read
 app.get('/', (req, res, next) => {
-  if (req.query.health === '1') return res.status(200).send('OK')
+  const ua = req.get('User-Agent') || '(empty)'
+  if (isHealthcheckRequest(req)) {
+    console.log(`[root] healthcheck → OK, UA: ${ua.slice(0, 80)}`)
+    return res.status(200).setHeader('Content-Type', 'text/html').send(HEALTHCHECK_HTML)
+  }
+  if (cachedRootHtml) {
+    const t0 = Date.now()
+    res.setHeader('Cache-Control', 'no-cache')
+    res.send(cachedRootHtml)
+    console.log(`[root] cached in ${Date.now() - t0}ms`)
+    return
+  }
+  console.log(`[root] no cache, passing to SSG, UA: ${ua.slice(0, 80)}`)
   next()
 })
 
@@ -385,7 +418,14 @@ app.listen(port, '0.0.0.0', () => {
     import('child_process').then(({ exec }) => {
       exec('npm run build', { cwd: __dirname }, (err, stdout, stderr) => {
         if (err) console.error('Build failed:', err.message, stderr)
-        else console.log('Background build complete — dist/ ready')
+        else {
+          try {
+            cachedRootHtml = readFileSync(join(distDir, 'index.html'), 'utf-8')
+            console.log('Background build complete — root cache refreshed')
+          } catch (e) {
+            console.log('Background build complete — dist/ ready')
+          }
+        }
       })
     })
   }
