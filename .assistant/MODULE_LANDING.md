@@ -520,9 +520,16 @@ Sitemap: https://onda-life.com/sitemap.xml
   ```toml
   [deployment]
   deploymentTarget = "autoscale"
+  healthcheck = "/health"
   build = ["bash", "-c", "git pull origin main --ff-only || true && cd landing && rm -rf dist && npm install && npm run build"]
-  run = ["bash", "-c", "cd landing && npm install && node server.js"]
+  run = ["bash", "-c", "cd landing && npm install && PORT=5000 node server.js"]
+
+  [[ports]]
+  localPort = 5000
+  externalPort = 80
   ```
+- **`healthcheck = "/health"`** — путь для проверки живости (если Replit поддерживает).
+- **`PORT=5000`** в run — явно совпадает с `localPort` в `[[ports]]`.
 - **`git pull` в build** — автоматически подтягивает свежий код из GitHub перед сборкой. `|| true` — чтобы деплой не падал, если pull невозможен (например, diverging branches).
 - **`rm -rf dist` в build — обязательно.** Без этого Replit может использовать закешированный `dist/` от предыдущей сборки.
 - Порты: `[[ports]] localPort = 5000, externalPort = 80` — сервер слушает на `0.0.0.0:5000`.
@@ -559,18 +566,54 @@ git rebase origin/main       # перебазировать поверх све�
 git stash pop                # вернуть локальные изменения
 ```
 
+**Replit: `signal: terminated` (процесс убивается каждые 2 минуты):**
+
+Replit проверяет живость приложения по HTTP. Если healthcheck не проходит (таймаут >5 сек, 500, или неверный ответ) — процесс завершается с `signal: terminated`.
+
+**Что проверить:**
+1. **Логи** — смотреть `[timestamp] - GET /` и `[root] ...` — по ним видно, какой путь и User-Agent использует Replit
+2. **`/health`** — должен отвечать 200 OK за &lt;1 сек
+3. **`/`** — для healthcheck-запросов (по UA) сервер отдаёт минимальный HTML мгновенно; для обычных — из кэша (без чтения диска)
+4. **Порт** — `localPort = 5000` в `.replit` и `PORT=5000` в run должны совпадать
+5. **`0.0.0.0`** — сервер слушает на `0.0.0.0`, а не `127.0.0.1`
+
+**Если Replit стучится по `/` с неизвестным User-Agent:**
+- Добавить паттерн в `isHealthcheckRequest()` в `server.js` (например, по логам `[root] no cache, passing to SSG, UA: ...`)
+
+**Файлы конфигурации:**
+- `.replit` — `healthcheck = "/health"`, `PORT=5000` в run, `[[ports]] localPort = 5000`
+- `replit.nix` — `pkgs.nodejs_20` (если используется Nix)
+
 ### Production-сервер (landing/server.js)
 
-- Express-сервер, раздаёт статику из `landing/dist/`
-- **Startup safety:** `mkdirSync(distDir)` — гарантирует существование `dist/` до инициализации `express.static`
-- **Healthcheck:** `/health` → 200 OK (Replit также проверяет `/`)
-- **Canonical URLs (no trailing slash):** middleware редиректит `/path/` → `/path` (301); `express.static` с `redirect: false` не добавляет слэш
-- **Fallback-сборка**: если `dist/index.html` не найден — запускает `npm run build` в фоне, отдаёт заглушку "Building... please wait." с `meta-refresh`
-- **Global error handler:** перехватывает необработанные ошибки и возвращает 200 вместо 500 (критично для healthcheck)
-- **SPA fallback**: маршруты без расширения → `index.html`
+Express-сервер, раздаёт статику из `landing/dist/`.
+
+**Порядок обработки (критично для Replit):**
+
+1. **Логирование** — все входящие запросы: `[timestamp] - METHOD /path`
+2. **`/health`** (GET, HEAD) → 200 OK — первый маршрут, максимально быстрый
+3. **`/`** — приоритетный обработчик:
+   - **Healthcheck UA** — если User-Agent содержит `replit`, `healthcheck`, `curl`, `wget`, `headless`, `googlecloud` или `?health=1` → мгновенный ответ с минимальным HTML
+   - **Кэш** — `dist/index.html` загружается в память при старте → ответ без чтения с диска
+   - Иначе → SSG-роутер (sendFile или заглушка)
+4. Остальные маршруты (API, static, SSG)
+
+**Ключевые механизмы:**
+
+| Механизм | Описание |
+|----------|----------|
+| **Startup safety** | `mkdirSync(distDir)` — гарантирует существование `dist/` до `express.static` |
+| **Root cache** | `cachedRootHtml` — `readFileSync` при старте; обновляется после фоновой сборки |
+| **Healthcheck UA** | `isHealthcheckRequest()` — определяет запросы Replit/балансировщика по User-Agent |
+| **Canonical URLs** | middleware редиректит `/path/` → `/path` (301) |
+| **Fallback-сборка** | если `dist/index.html` нет — `npm run build` в фоне, заглушка "Building..." |
+| **Global error handler** | перехватывает ошибки, возвращает 200 вместо 500 (критично для healthcheck) |
+| **Try-catch** | SSG-роутер, loadMdArticles, sendFile — логирование stack trace при ошибках |
+
+**Кэш и порт:**
 - Статика: `Cache-Control: max-age=31536000, immutable`
 - HTML: `Cache-Control: no-cache`
-- Порт: `process.env.PORT || 5000`
+- Порт: `process.env.PORT || 5000` (в Replit run: `PORT=5000`)
 
 ### postcss.config.js
 

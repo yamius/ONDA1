@@ -3,6 +3,16 @@
 > **Лендинг:** https://onda-life.com — основной домен.  
 > **Деплой:** push → хостинг (Replit / Vercel / др.) подтягивает изменения и пересобирает. См. `README.md` и `.assistant/MODULE_LANDING.md`.
 
+### Replit: сервер и healthcheck
+
+Лендинг на Replit Autoscale: `landing/server.js` слушает порт 5000. Критично для стабильности:
+- **`/health`** — первый маршрут, 200 OK
+- **`/`** — кэш `index.html` в памяти; healthcheck по User-Agent → мгновенный ответ
+- **Порт** — `PORT=5000` в run, `localPort = 5000` в `.replit`
+- **Логи** — `[timestamp] - METHOD /path`, `[root] cached in Xms` / `healthcheck → OK`
+
+При `signal: terminated` — см. раздел «Replit: signal: terminated» в `.assistant/MODULE_LANDING.md`.
+
 ## Overview
 
 ONDA is a mobile application for mindfulness and wellness that combines meditation practices with real-time biometric tracking and gamification. The app guides users through progressive "circuits" of consciousness development practices, rewarding completion with virtual currency (OND). It uses real-time health data from Apple Watch, Bluetooth heart rate monitors, and platform health APIs to create adaptive meditation experiences.
