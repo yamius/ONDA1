@@ -20,12 +20,16 @@ const SITE_URL = 'https://onda-life.com'
 if (!existsSync(distDir)) mkdirSync(distDir, { recursive: true })
 
 const app = express()
-app.use(express.json({ limit: '1mb' }))
 
-// Health check: Replit expects fast response (<5s) before marking app live
-app.get('/health', (req, res) => {
-  res.status(200).send('OK')
+// Health check — MUST be first: Replit checks this before marking app live
+app.get('/health', (req, res) => res.status(200).send('OK'))
+app.head('/health', (req, res) => res.status(200).end())
+app.get('/', (req, res, next) => {
+  if (req.query.health === '1') return res.status(200).send('OK')
+  next()
 })
+
+app.use(express.json({ limit: '1mb' }))
 
 // Canonical URLs: no trailing slash. Redirect /articles/ -> /articles (301)
 app.use((req, res, next) => {
