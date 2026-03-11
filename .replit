@@ -8,9 +8,9 @@ packages = ["nano", "unzip", "psmisc"]
 
 [deployment]
 deploymentTarget = "autoscale"
+healthcheck = "/health"
 build = ["bash", "-c", "git pull origin main --ff-only || true && cd landing && rm -rf dist && npm install && npm run build"]
-run = ["bash", "-c", "cd landing && npm install && node server.js"]
-# Healthcheck: Replit checks / by default. Server has /health at top. In Deployments UI, set healthcheck path to /health if available.
+run = ["bash", "-c", "cd landing && npm install && PORT=5000 node server.js"]
 
 [workflows]
 runButton = "Project"

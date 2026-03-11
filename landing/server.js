@@ -21,6 +21,12 @@ if (!existsSync(distDir)) mkdirSync(distDir, { recursive: true })
 
 const app = express()
 
+// Log all incoming requests (to see Replit healthcheck path)
+app.use((req, res, next) => {
+  console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`)
+  next()
+})
+
 // Health check — MUST be first: Replit checks this before marking app live
 app.get('/health', (req, res) => res.status(200).send('OK'))
 app.head('/health', (req, res) => res.status(200).end())
