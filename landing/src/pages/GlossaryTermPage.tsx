@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { NotFoundPage } from './NotFoundPage'
 import Markdown from 'react-markdown'
+import rehypeSlug from 'rehype-slug'
 import { getTermBySlug, glossaryTerms } from '../data/glossary'
 import { injectGlossaryLinks } from '../utils/glossaryLinks'
 import { getArticlesForTerm } from '../data/articles'
@@ -109,14 +110,15 @@ export function GlossaryTermPage() {
       {/* Markdown content */}
       <article className="prose-onda">
         <Markdown
+          rehypePlugins={[rehypeSlug]}
           components={{
-            h2: ({ children }) => (
-              <h2 className="mb-4 mt-10 text-2xl font-bold tracking-tight first:mt-0">
+            h2: ({ children, id, ...props }) => (
+              <h2 id={id} className="mb-4 mt-10 text-2xl font-bold tracking-tight first:mt-0 scroll-mt-24" {...props}>
                 {children}
               </h2>
             ),
-            h3: ({ children }) => (
-              <h3 className="mb-3 mt-8 text-lg font-semibold text-white/90">
+            h3: ({ children, id, ...props }) => (
+              <h3 id={id} className="mb-3 mt-8 text-lg font-semibold text-white/90 scroll-mt-24" {...props}>
                 {children}
               </h3>
             ),

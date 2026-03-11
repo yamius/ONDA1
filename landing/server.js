@@ -3,6 +3,7 @@
  * Serves prerendered HTML from dist/ for each route — crawlers see full content.
  */
 import express from 'express'
+import helmet from 'helmet'
 import { join, resolve } from 'path'
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, unlinkSync, writeFileSync } from 'fs'
 import { fileURLToPath } from 'url'
@@ -39,6 +40,49 @@ function isHealthcheckRequest(req) {
 const HEALTHCHECK_HTML = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>OK</title></head><body>OK</body></html>'
 
 const app = express()
+
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        'default-src': ["'self'"],
+        'script-src': [
+          "'self'",
+          "'unsafe-inline'",
+          'https://www.googletagmanager.com',
+          'https://tagmanager.google.com',
+        ],
+        'style-src': [
+          "'self'",
+          "'unsafe-inline'",
+          'https://fonts.googleapis.com',
+          'https://tagmanager.google.com',
+        ],
+        'img-src': [
+          "'self'",
+          'data:',
+          'https://www.googletagmanager.com',
+          'https://*.google-analytics.com',
+          'https://*.googletagmanager.com',
+          'https://*.midjourney.com',
+          'https://cdn.midjourney.com',
+        ],
+        'font-src': ["'self'", 'https://fonts.gstatic.com', 'data:'],
+        'connect-src': [
+          "'self'",
+          'https://www.googletagmanager.com',
+          'https://*.google-analytics.com',
+          'https://*.analytics.google.com',
+          'https://*.googletagmanager.com',
+          'https://www.google.com',
+        ],
+        'frame-src': ['https://www.googletagmanager.com'],
+        'object-src': ["'none'"],
+        'base-uri': ["'self'"],
+      },
+    },
+  })
+)
 
 // Log all incoming requests (to see Replit healthcheck path)
 app.use((req, res, next) => {
@@ -397,6 +441,16 @@ app.use((req, res, next) => {
     console.error('[server] SSG router error:', err.message, err.stack)
     if (!res.headersSent) res.status(200).send(FALLBACK_HTML)
     next(err)
+  }
+})
+
+// 404 — unknown routes: return 404 + SPA index.html (client router shows NotFoundPage)
+app.use((req, res) => {
+  const indexPath = join(distDir, 'index.html')
+  if (existsSync(indexPath)) {
+    res.status(404).sendFile(resolve(indexPath))
+  } else {
+    res.status(404).send(BUILDING_HTML)
   }
 })
 

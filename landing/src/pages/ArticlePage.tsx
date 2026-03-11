@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useLocation, Link } from 'react-router-dom'
 import Markdown from 'react-markdown'
+import rehypeSlug from 'rehype-slug'
 import { NotFoundPage } from './NotFoundPage'
 import { getArticleBySlug } from '../data/articles'
 import { glossaryTerms } from '../data/glossary'
@@ -267,7 +268,7 @@ export function ArticlePage() {
     .slice(0, 5)
 
   const markdownComponents = {
-    h2: ({ children }: { children?: React.ReactNode }) => {
+    h2: ({ children, id, ...props }: { children?: React.ReactNode; id?: string }) => {
       const text = typeof children === 'string' ? children : String(children)
       const isSystemStatus = text.includes('System Status') && article.slug === 'gut-brain-axis-data-link'
       const isCLIStatus = text.includes('CLI Active') && article.slug === 'breathwork-command-line-interface'
@@ -278,17 +279,19 @@ export function ArticlePage() {
       const isTechIntro = /^\[.*\]$/.test(text.trim()) && !isStatusBlock
       return (
         <h2
-          className={`mb-4 mt-10 text-xl font-bold tracking-tight md:text-2xl first:mt-0 ${
+          id={id}
+          className={`mb-4 mt-10 text-xl font-bold tracking-tight md:text-2xl first:mt-0 scroll-mt-24 ${
             isStatusBlock ? 'font-mono tracking-wider text-terminal-green/90 text-[13.9px] [text-shadow:0_0_12px_rgba(74,222,128,0.76)]' : ''
           } ${
             isTechIntro ? 'font-mono tracking-wider text-terminal-green/90 text-[13.9px] [text-shadow:0_0_12px_rgba(74,222,128,0.76)]' : ''
           }`}
+          {...props}
         >
           {children}
         </h2>
       )
     },
-    h3: ({ children }: { children?: React.ReactNode }) => {
+    h3: ({ children, id, ...props }: { children?: React.ReactNode; id?: string }) => {
       const text = typeof children === 'string' ? children : String(children)
       const isProtocol = text.startsWith('PROTOCOL ') || text.startsWith('PROTOCOL_')
       const isCognitiveNeuralProtocol = isProtocol && article.slug === 'cognitive-architecture-neural-throughput'
@@ -311,7 +314,11 @@ export function ArticlePage() {
       const isCo2ToleranceProtocol = isProtocol && article.slug === 'co2-tolerance-expanding-oxygen-limit'
       const isFemtechProtocol = isProtocol && article.slug === 'femtech-cyclical-architecture'
       return (
-        <h3 className={`mb-3 mt-8 text-lg font-semibold text-white/90 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol || isDopamineStackingProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isCacaoStemCellsProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isCognitiveNeuralProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}>
+        <h3
+          id={id}
+          className={`mb-3 mt-8 text-lg font-semibold text-white/90 scroll-mt-24 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol || isDopamineStackingProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isCacaoStemCellsProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isCognitiveNeuralProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}
+          {...props}
+        >
           {children}
         </h3>
       )
@@ -723,7 +730,7 @@ export function ArticlePage() {
       )}
 
       <article className="prose-onda">
-        <Markdown components={markdownComponents} key={protocolRefresh}>
+        <Markdown rehypePlugins={[rehypeSlug]} components={markdownComponents} key={protocolRefresh}>
           {injectArticleGlossaryLinks(article.content)}
         </Markdown>
       </article>

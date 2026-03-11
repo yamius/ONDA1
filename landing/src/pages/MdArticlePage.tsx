@@ -57,6 +57,30 @@ type Block =
   | { type: 'protocol'; id: string; name: string; lines: string[] }
   | { type: 'text'; lines: string[] }
 
+/** Slugify for heading ids — matches sitemap/navigation (lowercase, hyphens instead of spaces) */
+function slugify(text: string): string {
+  if (!text || typeof text !== 'string') return ''
+  return text
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^\p{L}\p{N}\s-]/gu, '')
+    .trim()
+    .replace(/\s+/g, '-')
+    .replace(/-+/g, '-')
+    .slice(0, 80)
+}
+
+function getHeadingId(block: { type: 'header' | 'subheader'; text: string }, allBlocks: Block[], idx: number): string {
+  const base = slugify(block.text)
+  if (!base) return ''
+  const sameBefore = allBlocks
+    .slice(0, idx)
+    .filter((b): b is { type: 'header' | 'subheader'; text: string } =>
+      (b.type === 'header' || b.type === 'subheader') && slugify(b.text) === base
+    )
+  return sameBefore.length > 0 ? `${base}-${sameBefore.length}` : base
+}
+
 function parseContent(raw: string): Block[] {
   const lines = raw.split('\n')
   const blocks: Block[] = []
@@ -174,19 +198,31 @@ function renderBlock(
     articleProtocolIds?: string[]
   ) {
   switch (block.type) {
-    case 'header':
+    case 'header': {
+      const id = getHeadingId(block, allBlocks, idx)
       return (
-        <h2 key={idx} className="mb-4 mt-10 font-mono text-sm font-bold tracking-widest text-terminal-green/90 [text-shadow:0_0_12px_rgba(74,222,128,0.4)] uppercase first:mt-0">
+        <h2
+          key={idx}
+          id={id || undefined}
+          className="mb-4 mt-10 font-mono text-sm font-bold tracking-widest text-terminal-green/90 [text-shadow:0_0_12px_rgba(74,222,128,0.4)] uppercase first:mt-0 scroll-mt-24"
+        >
           [ {block.text} ]
         </h2>
       )
+    }
 
-    case 'subheader':
+    case 'subheader': {
+      const id = getHeadingId(block, allBlocks, idx)
       return (
-        <h3 key={idx} className="mb-3 mt-8 font-mono text-xs font-bold tracking-widest text-terminal-green/60 uppercase">
+        <h3
+          key={idx}
+          id={id || undefined}
+          className="mb-3 mt-8 font-mono text-xs font-bold tracking-widest text-terminal-green/60 uppercase scroll-mt-24"
+        >
           {block.text}
         </h3>
       )
+    }
 
     case 'quote':
       return (
