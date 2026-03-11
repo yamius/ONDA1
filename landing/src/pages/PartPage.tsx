@@ -2083,10 +2083,7 @@ export function PartPage() {
       </nav>
 
       <h1 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-        {part.title}{' '}
-        <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
-          {part.titleHighlight}
-        </span>
+        {part.title} {part.titleHighlight}
       </h1>
 
       {part.image && (
@@ -2102,8 +2099,7 @@ export function PartPage() {
       )}
 
       <h2 className="mb-8 text-2xl font-bold tracking-tight md:text-4xl">
-        <span className="text-terminal-green">{part.subtitle.split(':')[0]}:</span>
-        {part.subtitle.slice(part.subtitle.indexOf(':') + 1)}
+        {part.subtitle}
       </h2>
 
       {part.introBlocks ? (
@@ -2146,7 +2142,7 @@ export function PartPage() {
 
       {/* Biological Protocol */}
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        <span className="text-terminal-green">Biological</span> Protocol
+        Biological Protocol
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {part.protocol.intro}
@@ -2162,10 +2158,7 @@ export function PartPage() {
 
       {/* Target Systems */}
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        Target{' '}
-        <span className="bg-gradient-to-r from-terminal-green to-terminal-cyan bg-clip-text text-transparent">
-          Systems
-        </span>
+        Target Systems
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {part.targets.intro}
@@ -2181,10 +2174,7 @@ export function PartPage() {
 
       {/* Results */}
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        Results &{' '}
-        <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
-          Benefits
-        </span>
+        Results & Benefits
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {part.results.intro}
@@ -2208,7 +2198,7 @@ export function PartPage() {
       {part.researchLinks && part.researchLinks.length > 0 && (
         <div className="border-t border-white/5 pt-10">
           <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-            <span className="text-terminal-green">Research</span> Basis
+            Research Basis
           </h2>
           <div className="mb-10 flex flex-wrap gap-2">
             {part.researchLinks.map((link) => (
@@ -2229,7 +2219,7 @@ export function PartPage() {
       {/* Glossary Links */}
       <div className="border-t border-white/5 pt-10">
         <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-          <span className="text-terminal-green">Related</span> Terms
+          Related Terms
         </h2>
         <div className="flex flex-wrap gap-2">
           {part.glossaryLinks.map((link) => (
@@ -2247,7 +2237,7 @@ export function PartPage() {
       {part.faq && part.faq.length > 0 && (
         <div className="mt-10 border-t border-white/5 pt-10">
           <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-            <span className="text-terminal-green">People</span> Also Ask
+            People Also Ask
           </h2>
           <div className="space-y-6">
             {part.faq.map((item, i) => (

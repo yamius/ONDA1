@@ -1100,12 +1100,14 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   const ogType = meta.ogType ?? 'website'
   const ogImage = meta.image ?? OG_IMAGE
   const escapedImageAlt = meta.imageAlt ? escapeHtmlAttr(meta.imageAlt) : ''
+  const twitterCard = 'summary_large_image'
   const replacements: [RegExp, string][] = [
     [/<meta\s+property="og:type"\s+content="[^"]*">/gi, `<meta property="og:type" content="${ogType}">`],
     [/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escapedTitle}">`],
     [/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escapedDesc}">`],
     [/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escapedUrl}">`],
     [/<meta\s+property="og:image"\s+content="[^"]*">/gi, `<meta property="og:image" content="${ogImage}">`],
+    [/<meta\s+property="twitter:card"\s+content="[^"]*">/gi, `<meta property="twitter:card" content="${twitterCard}">`],
     [/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escapedUrl}">`],
     [/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escapedTitle}">`],
     [/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escapedDesc}">`],
@@ -1113,6 +1115,14 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   ]
   for (const [regex, replacement] of replacements) {
     out = out.replace(regex, replacement)
+  }
+
+  // Ensure twitter:card exists (add if missing, e.g. on injected pages)
+  if (!out.includes('twitter:card')) {
+    out = out.replace(
+      /(<meta\s+property="og:image"\s+content="[^"]*">)/i,
+      `$1\n  <meta property="twitter:card" content="${twitterCard}">`
+    )
   }
 
   // Add og:image:alt and twitter:image:alt for articles with image (SEO, accessibility)

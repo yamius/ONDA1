@@ -58,7 +58,7 @@ export function CtaSection() {
           [ READY TO UPGRADE? ]
         </div>
         <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-5xl">
-          <span className="text-terminal-green">Initialize</span> Your System
+          Initialize Your System
         </h2>
         <p className="mb-10 text-sm text-white/40">
           You found ONDA... and ONDA found you.

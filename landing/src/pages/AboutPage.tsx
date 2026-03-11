@@ -53,10 +53,7 @@ export function AboutPage() {
       </div>
 
       <h1 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-        What is{' '}
-        <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
-          ONDA Life
-        </span>
+        What is ONDA Life
       </h1>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60 md:text-base">
         ONDA Life — a system of mindfulness and self-development practices for real life.
@@ -81,7 +78,7 @@ export function AboutPage() {
 
       {/* How it works */}
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        <span className="text-terminal-green">How</span> it works
+        How it works
       </h2>
       <p className="mb-4 font-mono text-sm leading-relaxed text-white/60 md:text-base">
         ONDA Life — routes (waves and levels) of simple daily steps.
@@ -109,10 +106,7 @@ export function AboutPage() {
 
       {/* Resources */}
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        Resources, rewards,{' '}
-        <span className="bg-gradient-to-r from-terminal-green to-terminal-cyan bg-clip-text text-transparent">
-          results
-        </span>
+        Resources, rewards, results
       </h2>
       <p className="mb-4 font-mono text-sm leading-relaxed text-white/60 md:text-base">
         We provide routes, tips, and support. For practices and missions you earn OND — game currency:
@@ -135,14 +129,7 @@ export function AboutPage() {
       {/* Details */}
       <div className="space-y-6 border-t border-white/5 pt-10">
         <h2 className="mb-2 text-2xl font-bold tracking-tight md:text-4xl">
-          ONDA Life is a practice of{' '}
-          <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
-            self-awareness
-          </span>{' '}
-          and{' '}
-          <span className="bg-gradient-to-r from-terminal-green to-terminal-cyan bg-clip-text text-transparent">
-            body awareness
-          </span>
+          ONDA Life is a practice of self-awareness and body awareness
         </h2>
         <p className="font-mono text-sm leading-relaxed text-white/60">
           Connect your fitness tracker or smartwatch in settings and watch your vitals change in real time during your practice.

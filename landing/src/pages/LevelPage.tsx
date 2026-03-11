@@ -73,10 +73,7 @@ export function LevelPage() {
       </nav>
 
       <h1 className="mb-2 text-2xl font-bold tracking-tight md:text-4xl">
-        <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
-          Level {level.number}
-        </span>{' '}
-        {level.name}
+        Level {level.number} {level.name}
       </h1>
       <h2 className="mb-10 text-lg font-semibold text-white/60 md:text-xl">
         {level.subtitle}
@@ -127,7 +124,7 @@ export function LevelPage() {
 
       {/* Biological Protocol */}
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        <span className="text-terminal-green">Biological</span> Protocol
+        Biological Protocol
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {level.biologicalProtocol.intro}
@@ -147,10 +144,7 @@ export function LevelPage() {
 
       {/* Target Systems */}
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        Target{' '}
-        <span className="bg-gradient-to-r from-terminal-green to-terminal-cyan bg-clip-text text-transparent">
-          Systems
-        </span>
+        Target Systems
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {level.targetSystems.intro}
@@ -166,10 +160,7 @@ export function LevelPage() {
 
       {/* Results & Benefits */}
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        Results &{' '}
-        <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
-          Benefits
-        </span>
+        Results & Benefits
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {level.results.intro}
@@ -186,7 +177,7 @@ export function LevelPage() {
       {/* Research Basis */}
       <div className="border-t border-white/5 pt-10">
         <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-          <span className="text-terminal-green">Research</span> Basis
+          Research Basis
         </h2>
         <div className="mb-10 flex flex-wrap gap-2">
           {level.researchLinks.map((link) => (
@@ -206,7 +197,7 @@ export function LevelPage() {
       {/* Related Terms */}
       <div className="border-t border-white/5 pt-10">
         <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-          <span className="text-terminal-green">Related</span> Terms
+          Related Terms
         </h2>
         <div className="flex flex-wrap gap-2">
           {level.glossaryLinks.map((link) => (

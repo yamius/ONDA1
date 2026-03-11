@@ -34,6 +34,11 @@ for (const route of routes) {
     if (root) root.innerHTML = html
 
     let out = dom.serialize()
+    // GTM only on main page (index.html); strip from prerendered subpages
+    if (route !== '/') {
+      out = out.replace(/<!-- Google Tag Manager -->[\s\S]*?<!-- End Google Tag Manager -->\s*/g, '')
+      out = out.replace(/<!-- Google Tag Manager \(noscript\) -->[\s\S]*?<!-- End Google Tag Manager \(noscript\) -->\s*/g, '')
+    }
     const meta = getMetaForRoute(route)
     out = injectMetaIntoHtml(out, meta)
     // Build fingerprint for deployment verification (view page source, search "onda-build")
