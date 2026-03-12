@@ -8,7 +8,7 @@
 import { writeFileSync, mkdirSync, statSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPrerenderRoutes } from '../src/config/routes'
+import { getPrerenderRoutes } from './prerender-routes'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')

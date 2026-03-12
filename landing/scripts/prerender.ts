@@ -11,7 +11,7 @@ import { mkdirSync, readFileSync, writeFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { createApp } from '../src/entry-server'
-import { getPrerenderRoutes } from '../src/config/routes'
+import { getPrerenderRoutes } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml } from './meta-inject'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
