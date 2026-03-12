@@ -715,7 +715,7 @@ export function ArticlePage() {
             className="w-full object-cover"
           />
           {article.imageCaption && (
-            <figcaption className="mt-2 px-2 font-mono text-[10px] leading-relaxed text-white/40">
+            <figcaption className="sr-only">
               {article.imageCaption}
             </figcaption>
           )}
