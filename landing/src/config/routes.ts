@@ -9,6 +9,7 @@ import { GlossaryPage } from '../pages/GlossaryPage'
 import { ArticlesPage } from '../pages/ArticlesPage'
 import { ContactPage } from '../pages/ContactPage'
 import { TheStackPage } from '../pages/TheStackPage'
+import { SitemapPage } from '../pages/SitemapPage'
 import { glossaryTerms } from '../data/glossary'
 import { articles } from '../data/articles'
 import { parts } from '../pages/PartPage'
@@ -22,6 +23,7 @@ export const staticRoutes: { path: string; component: ComponentType }[] = [
   { path: '/articles', component: ArticlesPage },
   { path: '/contact', component: ContactPage },
   { path: '/the-stack', component: TheStackPage },
+  { path: '/sitemap', component: SitemapPage },
 ]
 
 /** Все маршруты для prerender — генерируется автоматически из данных */
