@@ -1,18 +1,16 @@
-import { useState, useEffect, useLayoutEffect } from 'react'
+import { useState, useEffect, useLayoutEffect, Suspense } from 'react'
 import { Outlet, Link, useLocation } from 'react-router-dom'
 import { FooterSitemap } from './FooterSitemap'
+import { TransitionLink } from './TransitionLink'
 
 export function Layout() {
   const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
-  const [visible, setVisible] = useState(true)
 
   useLayoutEffect(() => {
-    setVisible(false)
     document.documentElement.scrollTop = 0
     document.body.scrollTop = 0
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' as ScrollBehavior })
-    requestAnimationFrame(() => setVisible(true))
   }, [location.pathname])
 
   useEffect(() => {
@@ -71,15 +69,15 @@ export function Layout() {
         aria-hidden={!menuOpen}
       >
         <nav aria-label="Main navigation" className="mx-4 w-full max-w-sm rounded-lg border border-white/10 bg-[#1a1b26] p-4">
-          <Link
+          <TransitionLink
             to="/"
             onClick={() => setMenuOpen(false)}
             className="mb-4 flex items-center gap-2 font-mono text-lg font-bold"
           >
             <span className="text-cyan-400">ONDA</span>
             <span className="text-green-400"> LIFE</span>
-          </Link>
-          <Link
+          </TransitionLink>
+          <TransitionLink
             to="/about"
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -87,8 +85,8 @@ export function Layout() {
             }`}
           >
             About<span className="sr-only"> ONDA Life — biohacking OS</span>
-          </Link>
-          <Link
+          </TransitionLink>
+          <TransitionLink
             to="/glossary"
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -96,8 +94,8 @@ export function Layout() {
             }`}
           >
             Glossary<span className="sr-only"> of biohacking and neuroscience terms</span>
-          </Link>
-          <Link
+          </TransitionLink>
+          <TransitionLink
             to="/articles"
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -105,7 +103,7 @@ export function Layout() {
             }`}
           >
             Articles<span className="sr-only"> on biohacking and human optimization</span>
-          </Link>
+          </TransitionLink>
           <button
             type="button"
             className="block w-full border-b border-white/5 py-3 text-left text-sm font-medium text-white/70 transition-colors hover:text-white"
@@ -119,7 +117,7 @@ export function Layout() {
           >
             Download<span className="sr-only"> ONDA Life biohacking app</span>
           </a>
-          <Link
+          <TransitionLink
             to="/contact"
             onClick={() => setMenuOpen(false)}
             className={`block py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -127,18 +125,18 @@ export function Layout() {
             }`}
           >
             Contacts<span className="sr-only"> — reach ONDA Life team</span>
-          </Link>
+          </TransitionLink>
         </nav>
       </div>
 
-      <main style={{ opacity: visible ? 1 : 0 }}>
+      <main>
         {/* Scrolling header — logo + download */}
         <header className="border-b border-white/5 bg-[#1a1b26]/70 backdrop-blur-xl pt-[max(env(safe-area-inset-top,0px),8px)] md:pt-2">
           <div className="header-content-center mx-auto flex max-w-7xl items-center justify-between pr-5 py-2 md:py-2 md:pr-6">
-            <Link to="/" className="font-mono text-base font-bold md:text-lg" onClick={() => setMenuOpen(false)}>
+            <TransitionLink to="/" className="font-mono text-base font-bold md:text-lg" onClick={() => setMenuOpen(false)}>
               <span className="text-cyan-400">ONDA</span>
               <span className="text-green-400"> LIFE</span>
-            </Link>
+            </TransitionLink>
             <a
               href="/#download"
               className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-3 py-1.5 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:px-4 md:py-1.5 md:text-sm"
@@ -148,7 +146,9 @@ export function Layout() {
           </div>
         </header>
         <div className="pt-6">
-          <Outlet />
+          <Suspense fallback={<div className="min-h-[60vh]" />}>
+            <Outlet />
+          </Suspense>
         </div>
       </main>
 

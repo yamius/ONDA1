@@ -20,7 +20,7 @@ const ArticlesSlugRouter = lazy(() => import('./components/ArticlesSlugRouter'))
 const app = (
   <StrictMode>
     <BrowserRouter>
-      <Suspense fallback={null}>
+      <Suspense fallback={<div className="min-h-screen bg-[#050a0f]" />}>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/"            element={<HomePage />} />
