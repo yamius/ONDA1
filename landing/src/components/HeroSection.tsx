@@ -20,8 +20,6 @@ export function HeroSection() {
         src="/onda-life-hrv-consciousness-hero.webp"
         alt="ONDA Life mobile app interface showing HRV tracking and biocomputer optimization"
         title="ONDA Life: HRV tracking, consciousness OS, biocomputer interface"
-        width={1920}
-        height={1080}
         priority
         className="absolute inset-0 h-full w-full object-cover opacity-40"
         style={{ transform: `translateY(${scrollY * 0.5}px)` }}

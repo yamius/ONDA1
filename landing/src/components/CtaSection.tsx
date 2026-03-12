@@ -50,7 +50,7 @@ export function CtaSection() {
   }
 
   return (
-    <section id="download" className="relative px-4 py-20 md:px-6 md:py-32">
+    <section id="download" className="relative overflow-hidden px-4 py-20 md:px-6 md:py-32">
       <div className="pointer-events-none absolute top-1/2 left-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-terminal-green/5 blur-[100px]" />
 
       <div className="relative z-10 mx-auto max-w-2xl text-center">
