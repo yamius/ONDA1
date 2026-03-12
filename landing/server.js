@@ -428,9 +428,7 @@ app.use((req, res, next) => {
 
     if (existsSync(indexHtml)) {
       res.setHeader('Cache-Control', 'no-cache')
-      const isInvalidGlossarySlug = /^glossary\/[^/]+$/.test(cleanPath)
-      const status = isInvalidGlossarySlug ? 404 : 200
-      res.status(status)
+      res.status(404)
       const absIndex = resolve(indexHtml)
       res.sendFile(absIndex, (err) => {
         if (err) {
