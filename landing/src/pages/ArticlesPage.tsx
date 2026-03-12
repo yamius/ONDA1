@@ -217,7 +217,7 @@ export function ArticlesPage() {
               <div className="aspect-video w-full overflow-hidden border-b border-white/5">
                 <OptimizedImage
                   src={article.image}
-                  alt=""
+                  alt={article.title}
                   loading="lazy"
                   width={640}
                   height={360}
