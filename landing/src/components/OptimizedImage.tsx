@@ -30,7 +30,8 @@ export function OptimizedImage({
       <img
         src={src}
         alt={alt}
-        loading={loading}
+        loading={priority ? 'eager' : loading}
+        fetchPriority={priority ? 'high' : undefined}
         width={width}
         height={height}
         className={className}
