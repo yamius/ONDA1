@@ -113,7 +113,7 @@ export function Layout() {
             Language
           </button>
           <a
-            href="#download"
+            href="/#download"
             onClick={() => setMenuOpen(false)}
             className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
           >
@@ -140,7 +140,7 @@ export function Layout() {
               <span className="text-green-400"> LIFE</span>
             </Link>
             <a
-              href="#download"
+              href="/#download"
               className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-3 py-1.5 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:px-4 md:py-1.5 md:text-sm"
             >
               Download App
@@ -173,7 +173,7 @@ export function Layout() {
               <Link to="/articles" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 Articles
               </Link>
-              <a href="#download" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <a href="/#download" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 Download
               </a>
               <Link to="/contact" className="text-xs text-white/40 transition-colors hover:text-white/60">
