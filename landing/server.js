@@ -369,6 +369,13 @@ app.delete('/api/article/:filename', (req, res) => {
   }
 })
 
+// Service Worker — must never be cached (browser checks for updates on every load)
+app.get('/sw.js', (req, res) => {
+  res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate')
+  res.setHeader('Content-Type', 'text/javascript')
+  res.sendFile(join(distDir, 'sw.js'))
+})
+
 // 1. Static assets (js, css, images) — HTML served via route below
 app.use(
   express.static(distDir, {
