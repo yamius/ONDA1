@@ -712,6 +712,8 @@ export function ArticlePage() {
             alt={article.imageAlt ?? ''}
             title={article.imageCaption ?? article.imageTitle}
             loading="lazy"
+            width={1024}
+            height={434}
             className="w-full object-cover"
           />
           {article.imageCaption && (

@@ -2093,6 +2093,8 @@ export function PartPage() {
             alt={part.imageAlt ?? ''}
             title={part.imageTitle}
             loading="lazy"
+            width={1024}
+            height={434}
             className="w-full object-cover"
           />
         </figure>
