@@ -11,12 +11,19 @@ import { fileURLToPath } from 'url'
 
 import matter from 'gray-matter'
 import { extractProtocolsFromContent } from './protocol-name-mapping.js'
+import { createClient } from '@supabase/supabase-js'
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url))
 const distDir = join(__dirname, 'dist')
 const articlesDir = join(__dirname, '..', 'articles')
 const port = parseInt(process.env.PORT || '5000', 10)
 const SITE_URL = 'https://onda-life.com'
+
+const SUPABASE_URL = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL || ''
+const SUPABASE_KEY = process.env.VITE_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || ''
+const supa = SUPABASE_URL && SUPABASE_KEY ? createClient(SUPABASE_URL, SUPABASE_KEY) : null
+if (supa) console.log('[server] Supabase client ready')
+else console.warn('[server] Supabase env vars missing — /api/votes, /api/comments, /api/waitlist will return 503')
 
 // Ensure dist/ directory exists so express.static doesn't throw
 if (!existsSync(distDir)) mkdirSync(distDir, { recursive: true })
@@ -78,8 +85,6 @@ app.use(
           'https://*.analytics.google.com',
           'https://*.googletagmanager.com',
           'https://www.google.com',
-          'https://*.supabase.co',
-          'wss://*.supabase.co',
         ],
         'frame-src': ['https://www.googletagmanager.com'],
         'object-src': ["'none'"],
@@ -366,6 +371,101 @@ app.delete('/api/article/:filename', (req, res) => {
     res.json({ ok: true })
   } catch (err) {
     res.status(500).json({ error: String(err.message) })
+  }
+})
+
+// ---- Supabase proxy API routes ----
+
+// GET /api/votes/:slug?fp=<fingerprint>
+app.get('/api/votes/:slug', async (req, res) => {
+  if (!supa) return res.status(503).json({ error: 'Votes service unavailable' })
+  const { slug } = req.params
+  const fp = (req.query.fp || '').toString()
+  try {
+    const { data, error } = await supa
+      .from('article_votes')
+      .select('vote_type,fingerprint')
+      .eq('article_slug', slug)
+    if (error) return res.status(500).json({ error: error.message })
+    const validate = data.filter((r) => r.vote_type === 'validate').length
+    const invalidate = data.filter((r) => r.vote_type === 'invalidate').length
+    const myRow = fp ? data.find((r) => r.fingerprint === fp) : null
+    res.json({ validate, invalidate, myVote: myRow?.vote_type ?? null })
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
+// POST /api/votes  { slug, voteType, fingerprint }
+app.post('/api/votes', async (req, res) => {
+  if (!supa) return res.status(503).json({ error: 'Votes service unavailable' })
+  const { slug, voteType, fingerprint } = req.body || {}
+  if (!slug || !voteType || !fingerprint) return res.status(400).json({ error: 'Missing fields' })
+  if (voteType !== 'validate' && voteType !== 'invalidate') return res.status(400).json({ error: 'Invalid voteType' })
+  try {
+    const { error } = await supa
+      .from('article_votes')
+      .upsert({ article_slug: slug, vote_type: voteType, fingerprint }, { onConflict: 'article_slug,fingerprint' })
+    if (error) return res.status(500).json({ error: error.message })
+    const { data } = await supa.from('article_votes').select('vote_type,fingerprint').eq('article_slug', slug)
+    const validate = (data || []).filter((r) => r.vote_type === 'validate').length
+    const invalidate = (data || []).filter((r) => r.vote_type === 'invalidate').length
+    const myRow = (data || []).find((r) => r.fingerprint === fingerprint)
+    res.json({ ok: true, validate, invalidate, myVote: myRow?.vote_type ?? null })
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
+// GET /api/comments/:slug
+app.get('/api/comments/:slug', async (req, res) => {
+  if (!supa) return res.status(503).json({ error: 'Comments service unavailable' })
+  const { slug } = req.params
+  try {
+    const { data, error } = await supa
+      .from('article_comments')
+      .select('id, text, created_at')
+      .eq('article_slug', slug)
+      .order('created_at', { ascending: false })
+    if (error) return res.status(500).json({ error: error.message })
+    res.json({ comments: data ?? [] })
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
+// POST /api/comments  { slug, text, fingerprint }
+app.post('/api/comments', async (req, res) => {
+  if (!supa) return res.status(503).json({ error: 'Comments service unavailable' })
+  const { slug, text, fingerprint } = req.body || {}
+  if (!slug || !text || !fingerprint) return res.status(400).json({ error: 'Missing fields' })
+  try {
+    const { data, error } = await supa
+      .from('article_comments')
+      .insert({ article_slug: slug, text, fingerprint })
+      .select('id, created_at')
+      .single()
+    if (error) return res.status(500).json({ error: error.message })
+    res.json({ ok: true, comment: data })
+  } catch (err) {
+    res.status(500).json({ error: err.message })
+  }
+})
+
+// POST /api/waitlist  { email, platform }
+app.post('/api/waitlist', async (req, res) => {
+  if (!supa) return res.status(503).json({ error: 'Waitlist service unavailable' })
+  const { email, platform } = req.body || {}
+  if (!email) return res.status(400).json({ error: 'Missing email' })
+  try {
+    const { error } = await supa.from('waitlist').insert({ email, platform: platform || null })
+    if (error) {
+      if (error.code === '23505') return res.status(409).json({ error: 'duplicate' })
+      return res.status(500).json({ error: error.message })
+    }
+    res.json({ ok: true })
+  } catch (err) {
+    res.status(500).json({ error: err.message })
   }
 })
 

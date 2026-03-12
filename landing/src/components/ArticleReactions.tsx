@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react'
-import { supabase, getFingerprint } from '../lib/supabase'
+import { getFingerprint } from '../lib/fingerprint'
 
 const STORAGE_VALIDATE = 'onda_article_validate_'
 const STORAGE_INVALIDATE = 'onda_article_invalidate_'
@@ -11,29 +11,6 @@ export function ArticleValidationArrows({ articleSlug }: { articleSlug: string }
   const [invalidateCount, setInvalidateCount] = useState(0)
   const [vote, setVote] = useState<'validate' | 'invalidate' | null>(null)
   const [loading, setLoading] = useState(false)
-
-  const loadFromSupabase = useCallback(async () => {
-    if (!supabase || !articleSlug) return
-    const { data, error } = await supabase
-      .from('article_votes')
-      .select('vote_type')
-      .eq('article_slug', articleSlug)
-    if (error) return
-    const validate = data?.filter((r) => r.vote_type === 'validate').length ?? 0
-    const invalidate = data?.filter((r) => r.vote_type === 'invalidate').length ?? 0
-    setValidateCount(validate)
-    setInvalidateCount(invalidate)
-    const fp = getFingerprint()
-    const { data: myData } = await supabase
-      .from('article_votes')
-      .select('vote_type')
-      .eq('article_slug', articleSlug)
-      .eq('fingerprint', fp)
-      .maybeSingle()
-    if (myData?.vote_type === 'validate' || myData?.vote_type === 'invalidate') {
-      setVote(myData.vote_type)
-    }
-  }, [articleSlug])
 
   const loadFromStorage = useCallback(() => {
     if (!articleSlug) return
@@ -47,28 +24,42 @@ export function ArticleValidationArrows({ articleSlug }: { articleSlug: string }
     } catch (_) {}
   }, [articleSlug])
 
-  useEffect(() => {
-    if (supabase) {
-      loadFromSupabase()
-    } else {
+  const loadVotes = useCallback(async () => {
+    if (!articleSlug) return
+    const fp = getFingerprint()
+    try {
+      const res = await fetch(`/api/votes/${encodeURIComponent(articleSlug)}?fp=${encodeURIComponent(fp)}`)
+      if (!res.ok) throw new Error('fetch failed')
+      const data = await res.json()
+      setValidateCount(data.validate ?? 0)
+      setInvalidateCount(data.invalidate ?? 0)
+      if (data.myVote === 'validate' || data.myVote === 'invalidate') setVote(data.myVote)
+    } catch {
       loadFromStorage()
     }
-  }, [loadFromSupabase, loadFromStorage])
+  }, [articleSlug, loadFromStorage])
+
+  useEffect(() => {
+    loadVotes()
+  }, [loadVotes])
 
   async function handleValidate() {
     if (!articleSlug || vote === 'validate') return
     setLoading(true)
     const fp = getFingerprint()
-    if (supabase) {
-      const { error } = await supabase.from('article_votes').upsert(
-        { article_slug: articleSlug, vote_type: 'validate', fingerprint: fp },
-        { onConflict: 'article_slug,fingerprint' }
-      )
-      if (!error) {
+    try {
+      const res = await fetch('/api/votes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ slug: articleSlug, voteType: 'validate', fingerprint: fp }),
+      })
+      if (res.ok) {
+        const data = await res.json()
         setVote('validate')
-        await loadFromSupabase()
+        setValidateCount(data.validate ?? validateCount + 1)
+        setInvalidateCount(data.invalidate ?? invalidateCount)
       }
-    } else {
+    } catch {
       const newValidate = validateCount + 1
       const newInvalidate = vote === 'invalidate' ? Math.max(0, invalidateCount - 1) : invalidateCount
       setValidateCount(newValidate)
@@ -85,16 +76,19 @@ export function ArticleValidationArrows({ articleSlug }: { articleSlug: string }
     if (!articleSlug || vote === 'invalidate') return
     setLoading(true)
     const fp = getFingerprint()
-    if (supabase) {
-      const { error } = await supabase.from('article_votes').upsert(
-        { article_slug: articleSlug, vote_type: 'invalidate', fingerprint: fp },
-        { onConflict: 'article_slug,fingerprint' }
-      )
-      if (!error) {
+    try {
+      const res = await fetch('/api/votes', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ slug: articleSlug, voteType: 'invalidate', fingerprint: fp }),
+      })
+      if (res.ok) {
+        const data = await res.json()
         setVote('invalidate')
-        await loadFromSupabase()
+        setInvalidateCount(data.invalidate ?? invalidateCount + 1)
+        setValidateCount(data.validate ?? validateCount)
       }
-    } else {
+    } catch {
       const newInvalidate = invalidateCount + 1
       const newValidate = vote === 'validate' ? Math.max(0, validateCount - 1) : validateCount
       setInvalidateCount(newInvalidate)
@@ -164,23 +158,6 @@ export function ArticleReactions({ articleSlug }: { articleSlug: string }) {
   const [inputValue, setInputValue] = useState('')
   const [submitting, setSubmitting] = useState(false)
 
-  const loadFromSupabase = useCallback(async () => {
-    if (!supabase || !articleSlug) return
-    const { data, error } = await supabase
-      .from('article_comments')
-      .select('id, text, created_at')
-      .eq('article_slug', articleSlug)
-      .order('created_at', { ascending: false })
-    if (error) return
-    const list: Comment[] = (data ?? []).map((r) => ({
-      id: r.id,
-      displayId: r.id.slice(0, 8),
-      timestamp: r.created_at ? new Date(r.created_at).toISOString().replace('T', ' ').slice(0, 19) : '',
-      text: r.text ?? '',
-    }))
-    setComments(list)
-  }, [articleSlug])
-
   const loadFromStorage = useCallback(() => {
     if (!articleSlug) return
     try {
@@ -197,13 +174,27 @@ export function ArticleReactions({ articleSlug }: { articleSlug: string }) {
     } catch (_) {}
   }, [articleSlug])
 
-  useEffect(() => {
-    if (supabase) {
-      loadFromSupabase()
-    } else {
+  const loadComments = useCallback(async () => {
+    if (!articleSlug) return
+    try {
+      const res = await fetch(`/api/comments/${encodeURIComponent(articleSlug)}`)
+      if (!res.ok) throw new Error('fetch failed')
+      const data = await res.json()
+      const list: Comment[] = (data.comments ?? []).map((r: { id: string; text: string; created_at: string }) => ({
+        id: r.id,
+        displayId: r.id.slice(0, 8),
+        timestamp: r.created_at ? new Date(r.created_at).toISOString().replace('T', ' ').slice(0, 19) : '',
+        text: r.text ?? '',
+      }))
+      setComments(list)
+    } catch {
       loadFromStorage()
     }
-  }, [loadFromSupabase, loadFromStorage])
+  }, [articleSlug, loadFromStorage])
+
+  useEffect(() => {
+    loadComments()
+  }, [loadComments])
 
   async function handleSubmitComment(e: React.FormEvent) {
     e.preventDefault()
@@ -212,23 +203,28 @@ export function ArticleReactions({ articleSlug }: { articleSlug: string }) {
     setInputValue('')
     setSubmitting(true)
 
-    if (supabase) {
-      const fp = getFingerprint()
-      const { data, error } = await supabase
-        .from('article_comments')
-        .insert({ article_slug: articleSlug, text, fingerprint: fp })
-        .select('id, created_at')
-        .single()
-      if (!error && data) {
+    const fp = getFingerprint()
+    try {
+      const res = await fetch('/api/comments', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ slug: articleSlug, text, fingerprint: fp }),
+      })
+      if (res.ok) {
+        const data = await res.json()
         const comment: Comment = {
-          id: data.id,
-          displayId: data.id.slice(0, 8),
-          timestamp: data.created_at ? new Date(data.created_at).toISOString().replace('T', ' ').slice(0, 19) : formatTimestamp(),
+          id: data.comment?.id ?? shortId(),
+          displayId: (data.comment?.id ?? shortId()).slice(0, 8),
+          timestamp: data.comment?.created_at
+            ? new Date(data.comment.created_at).toISOString().replace('T', ' ').slice(0, 19)
+            : formatTimestamp(),
           text,
         }
         setComments((prev) => [comment, ...prev])
+      } else {
+        throw new Error('api error')
       }
-    } else {
+    } catch {
       const id = shortId()
       const comment: Comment = { id, displayId: id, timestamp: formatTimestamp(), text }
       const next = [comment, ...comments]

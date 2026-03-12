@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { supabase } from '../lib/supabase'
 
 export function CtaSection() {
   const [isOpen, setIsOpen] = useState(false)
@@ -16,25 +15,20 @@ export function CtaSection() {
     const form = e.currentTarget
     const email = (form.elements.namedItem('email') as HTMLInputElement).value.trim()
 
-    if (!supabase) {
-      setError('Service temporarily unavailable. Please try again later.')
-      setIsLoading(false)
-      return
-    }
-
     try {
-      const { error: insertError } = await supabase.from('waitlist').insert({ email, platform: platform || null })
-
-      if (insertError) {
-        if (insertError.code === '23505') {
-          setError('This email is already registered.')
-        } else {
-          setError('Something went wrong. Please try again later.')
-        }
-        setIsLoading(false)
+      const res = await fetch('/api/waitlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, platform: platform || null }),
+      })
+      if (res.status === 409) {
+        setError('This email is already registered.')
         return
       }
-
+      if (!res.ok) {
+        setError('Something went wrong. Please try again later.')
+        return
+      }
       setIsSubmitted(true)
     } catch {
       setError('Something went wrong. Please try again later.')
