@@ -80,6 +80,14 @@ function injectGlossaryLinksWithPatterns(
     return placeholder
   })
 
+  // 2b. Protect markdown headings (## H2, ### H3, etc.) — no glossary links inside headings
+  const headingMatches: string[] = []
+  protectedContent = protectedContent.replace(/^#{1,6} .+$/gm, (match) => {
+    const placeholder = `${LINK_PLACEHOLDER}HEADING${headingMatches.length}${LINK_PLACEHOLDER}`
+    headingMatches.push(match)
+    return placeholder
+  })
+
   // 3. Replace term mentions with internal links (skip self-linking). Use placeholders so overlapping patterns don't corrupt.
   const createdLinks: string[] = []
   for (const { pattern, slug } of patterns) {
@@ -102,6 +110,12 @@ function injectGlossaryLinksWithPatterns(
   protectedContent = protectedContent.replace(
     new RegExp(`${LINK_PLACEHOLDER}CODE(\\d+)${LINK_PLACEHOLDER}`, 'g'),
     (_, i) => codeMatches[parseInt(i, 10)] ?? ''
+  )
+
+  // 5b. Restore headings
+  protectedContent = protectedContent.replace(
+    new RegExp(`${LINK_PLACEHOLDER}HEADING(\\d+)${LINK_PLACEHOLDER}`, 'g'),
+    (_, i) => headingMatches[parseInt(i, 10)] ?? ''
   )
 
   // 6. Restore original markdown links
