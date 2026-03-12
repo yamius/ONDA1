@@ -77,6 +77,9 @@ export function ContactPage() {
       </p>
 
       {/* Email & Community */}
+      <h2 className="mb-6 font-mono text-xs tracking-widest text-terminal-green/60">
+        CONTACT CHANNELS
+      </h2>
       <div className="mb-16 space-y-6">
         <div className="rounded-lg border border-cyan-500/20 bg-cyan-500/5 p-6">
           <div className="mb-2 flex items-center gap-2 font-mono text-xs tracking-wider text-cyan-400">
