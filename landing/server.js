@@ -75,6 +75,8 @@ app.use(
           'https://*.analytics.google.com',
           'https://*.googletagmanager.com',
           'https://www.google.com',
+          'https://*.supabase.co',
+          'wss://*.supabase.co',
         ],
         'frame-src': ['https://www.googletagmanager.com'],
         'object-src': ["'none'"],
