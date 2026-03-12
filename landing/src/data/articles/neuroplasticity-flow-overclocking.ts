@@ -21,7 +21,7 @@ const article: Article = {
     'hippocampus',
   ],
   introStyle: 'blue',
-  image: '/images/articles/neuroplasticity-brain-overclocking-flow-state.png',
+  image: '/images/articles/neuroplasticity-brain-overclocking-flow-state.webp',
   imageAlt:
     'Neuroplasticity and flow state biohacking: brain overclocking, synaptic rewiring, neural overclock bridge.',
   imageTitle:

@@ -19,7 +19,7 @@ const article: Article = {
     'cortisol',
   ],
   introStyle: 'emerald',
-  image: '/images/articles/muscle-metabolic-marker-longevity-onda.png',
+  image: '/images/articles/muscle-metabolic-marker-longevity-onda.webp',
   imageAlt:
     'Muscle metabolic marker: skeletal muscle health, myokines longevity, metabolic age optimization.',
   imageTitle:

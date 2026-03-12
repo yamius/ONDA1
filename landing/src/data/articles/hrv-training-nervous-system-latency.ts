@@ -22,7 +22,7 @@ const article: Article = {
     'cortisol',
   ],
   introStyle: 'rose',
-  image: '/images/articles/hrv-training-nervous-system-latency-biohacking.png',
+  image: '/images/articles/hrv-training-nervous-system-latency-biohacking.webp',
   imageAlt:
     'HRV training and heart rate variability: nervous system latency, autonomic balance. Biohacking visual.',
   imageTitle:

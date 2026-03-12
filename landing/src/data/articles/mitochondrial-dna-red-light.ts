@@ -17,7 +17,7 @@ const article: Article = {
     'autophagy',
   ],
   introStyle: 'slate',
-  image: '/images/articles/mitochondrial-dna-red-light-photobiomodulation-onda.png',
+  image: '/images/articles/mitochondrial-dna-red-light-photobiomodulation-onda.webp',
   imageAlt:
     'Red light therapy and photobiomodulation biohacking: mitochondrial DNA repair, 660nm wavelength.',
   imageTitle:

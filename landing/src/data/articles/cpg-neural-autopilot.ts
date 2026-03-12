@@ -18,7 +18,7 @@ const article: Article = {
     'flow-state',
   ],
   introStyle: 'blue',
-  image: '/images/articles/cpg-neural-autopilot-spinal-cord-circuits-onda.png',
+  image: '/images/articles/cpg-neural-autopilot-spinal-cord-circuits-onda.webp',
   imageAlt:
     'Central pattern generators and CPG neural autopilot: spinal cord motor control, rhythmic motion biohacking.',
   imageTitle:

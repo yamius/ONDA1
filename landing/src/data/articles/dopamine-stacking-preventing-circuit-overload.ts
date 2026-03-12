@@ -22,7 +22,7 @@ const article: Article = {
     'nucleus-accumbens',
   ],
   introStyle: 'purple',
-  image: '/images/articles/dopamine-stacking-circuit-overload.png',
+  image: '/images/articles/dopamine-stacking-circuit-overload.webp',
   imageAlt:
     'Dopamine circuit overload visualization: neural receptor saturation, synaptic downregulation, and glutamate excitotoxicity in reward pathways. ONDA biohacking.',
   imageTitle:

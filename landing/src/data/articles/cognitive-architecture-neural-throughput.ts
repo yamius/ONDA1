@@ -22,7 +22,7 @@ const article: Article = {
     'biocomputer',
   ],
   introStyle: 'slate',
-  image: '/images/articles/onda-neural-architecture-optimization.png',
+  image: '/images/articles/onda-neural-architecture-optimization.webp',
   imageAlt:
     'Visualizing neural bandwidth expansion and system noise clearing in the prefrontal cortex. Cognitive architecture optimization without external patches.',
   imageTitle:

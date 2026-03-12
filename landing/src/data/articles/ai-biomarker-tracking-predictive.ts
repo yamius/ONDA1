@@ -16,7 +16,7 @@ const article: Article = {
     'homeostasis',
   ],
   introStyle: 'slate',
-  image: '/images/articles/ai-biomarker-tracking-predictive-longevity-model.png',
+  image: '/images/articles/ai-biomarker-tracking-predictive-longevity-model.webp',
   imageAlt:
     'AI biomarker tracking and predictive health: digital twin biohacking, biological age monitoring.',
   imageTitle:

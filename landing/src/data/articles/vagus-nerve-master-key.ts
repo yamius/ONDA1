@@ -11,7 +11,7 @@ const article: Article = {
     "Vagus nerve optimization: hack your biological stress response and unlock deep resilience through neural interface control.",
   category: 'Neural Hardware',
   relatedSlugs: ['vagus-nerve', 'parasympathetic-nervous-system', 'heart-rate-variability', 'polyvagal-theory', 'neuroception'],
-  image: '/images/articles/vagus-nerve-biohacking-data-highway.png',
+  image: '/images/articles/vagus-nerve-biohacking-data-highway.webp',
   imageAlt:
     'Vagus nerve stimulation biohacking visual: neural interface, parasympathetic data highway, brainstem to heart lungs gut pathway.',
   imageTitle: 'Vagus nerve biohacking — master data highway for neural interface and parasympathetic control',

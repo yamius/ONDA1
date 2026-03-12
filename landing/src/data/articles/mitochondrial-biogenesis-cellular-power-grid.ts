@@ -19,7 +19,7 @@ const article: Article = {
     'ketones',
   ],
   introStyle: 'slate',
-  image: '/images/articles/mitochondrial-biogenesis-cellular-power-grid-optimization.png',
+  image: '/images/articles/mitochondrial-biogenesis-cellular-power-grid-optimization.webp',
   imageAlt:
     'Mitochondrial biogenesis and cellular power grid: ATP synthesis, biohacking endurance. Energy optimization.',
   imageTitle:

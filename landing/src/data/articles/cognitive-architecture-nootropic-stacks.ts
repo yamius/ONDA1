@@ -21,7 +21,7 @@ const article: Article = {
     'prefrontal-cortex',
   ],
   introStyle: 'slate',
-  image: '/images/articles/cognitive-architecture-nootropic-stacks-brain-optimization.png',
+  image: '/images/articles/cognitive-architecture-nootropic-stacks-brain-optimization.webp',
   imageAlt:
     'Nootropic stacks and cognitive architecture: brain optimization, neuroenhancement, stack integration.',
   imageTitle:

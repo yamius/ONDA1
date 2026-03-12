@@ -20,7 +20,7 @@ const article: Article = {
     'biocomputer',
   ],
   introStyle: 'emerald',
-  image: '/images/articles/onda-cacao-stem-cell-regeneration-matrix.png',
+  image: '/images/articles/onda-cacao-stem-cell-regeneration-matrix.webp',
   imageAlt:
     'Stem cell mobilization bio-reactor: purified cacao flavonols activating bone marrow, BIO_SYNCHRONIZATION, CACAO_STEM_CELL_ACTIVATION axis. ONDA regeneration protocol.',
   imageTitle:

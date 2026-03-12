@@ -17,7 +17,7 @@ const article: Article = {
     'mitochondria',
   ],
   introStyle: 'gold',
-  image: '/images/articles/senolytic-high-dosing-longevity-zombie-cells-purge.png',
+  image: '/images/articles/senolytic-high-dosing-longevity-zombie-cells-purge.webp',
   imageAlt:
     'Senolytic protocols and longevity biohacking: eliminating zombie cells via selective apoptosis.',
   imageTitle:

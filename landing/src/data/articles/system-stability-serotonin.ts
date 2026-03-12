@@ -21,7 +21,7 @@ const article: Article = {
     'enteric-nervous-system',
   ],
   introStyle: 'emerald',
-  image: '/images/articles/system-stability-serotonin.png',
+  image: '/images/articles/system-stability-serotonin.webp',
   imageAlt:
     '3D visualization of the serotonin anchor radiating from the gut to the brain.',
   imageTitle:

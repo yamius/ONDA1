@@ -12,7 +12,7 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['dopamine', 'ventral-tegmental-area', 'prefrontal-cortex', 'limbic-system', 'homeostasis', 'circadian-rhythm', 'ond-tokens', 'neuroplasticity'],
   introStyle: 'purple',
-  image: '/images/articles/dopamine-reward-system-neural-architecture.png',
+  image: '/images/articles/dopamine-reward-system-neural-architecture.webp',
   imageAlt:
     'Dopamine neural reward pathway architecture visual: mesolimbic pathway, VTA, nucleus accumbens, biohacking dopamine circuitry.',
   imageTitle: 'Dopamine architecture — mesolimbic pathway, reward circuitry, and biohacking dopamine optimization',

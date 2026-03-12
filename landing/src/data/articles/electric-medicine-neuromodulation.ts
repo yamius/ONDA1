@@ -19,7 +19,7 @@ const article: Article = {
     'heart-rate-variability',
   ],
   introStyle: 'cyan',
-  image: '/images/articles/electric-medicine-neuromodulation-vagus-nerve-stimulation.png',
+  image: '/images/articles/electric-medicine-neuromodulation-vagus-nerve-stimulation.webp',
   imageAlt:
     'Electric medicine and neuromodulation: vagus nerve stimulation, bioelectronic medicine.',
   imageTitle:

@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.98.0",
+    "compression": "^1.8.1",
     "express": "^5.2.1",
     "gray-matter": "^4.0.3",
     "helmet": "^8.1.0",

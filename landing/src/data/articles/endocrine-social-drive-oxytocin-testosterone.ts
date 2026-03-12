@@ -22,7 +22,7 @@ const article: Article = {
     'heart-rate-variability',
   ],
   introStyle: 'rose',
-  image: '/images/articles/endocrine-social-drive-oxytocin-testosterone.png',
+  image: '/images/articles/endocrine-social-drive-oxytocin-testosterone.webp',
   imageAlt:
     '3D holographic visualization of endocrine social drive: gold neural node (status/Testosterone) and cyan node (trust/Oxytocin) with biometric overlays (HRV, glucose, cortisol). Social coherence interface. ONDA Life.',
   imageTitle:

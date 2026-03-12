@@ -21,7 +21,7 @@ const article: Article = {
     'autonomic-nervous-system',
   ],
   introStyle: 'orange',
-  image: '/images/articles/gut-brain-axis-vagus-nerve-data-link.png',
+  image: '/images/articles/gut-brain-axis-vagus-nerve-data-link.webp',
   imageAlt:
     'Gut-brain axis and vagus nerve data link: microbiome signaling, biohacking gut health. Bi-directional telemetry.',
   imageTitle:

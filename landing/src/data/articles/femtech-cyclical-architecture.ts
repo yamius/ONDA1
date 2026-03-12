@@ -19,7 +19,7 @@ const article: Article = {
     'deep-sleep',
   ],
   introStyle: 'rose',
-  image: '/images/articles/female-cycle-biohacking-onda.png',
+  image: '/images/articles/female-cycle-biohacking-onda.webp',
   imageAlt:
     'Female cycle biohacking hormonal architecture visual: estrogen progesterone waves, metabolic rate, cognitive load, recovery matrix.',
   imageTitle: 'Female cycle biohacking — ONDA hormonal architecture: estrogen, progesterone, and four work modes',

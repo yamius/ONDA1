@@ -17,7 +17,7 @@ export function HeroSection() {
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-8 md:pt-4">
       {/* Background image with parallax on desktop only (avoids iOS fixed-nav bug on mobile) */}
       <OptimizedImage
-        src="/onda-life-hrv-consciousness-hero.png"
+        src="/onda-life-hrv-consciousness-hero.webp"
         alt="ONDA Life mobile app interface showing HRV tracking and biocomputer optimization"
         title="ONDA Life: HRV tracking, consciousness OS, biocomputer interface"
         width={1920}

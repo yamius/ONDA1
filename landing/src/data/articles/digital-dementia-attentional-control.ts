@@ -20,7 +20,7 @@ const article: Article = {
     'myelin',
   ],
   introStyle: 'indigo',
-  image: '/images/articles/digital-dementia-attentional-control-neural-optimization.png',
+  image: '/images/articles/digital-dementia-attentional-control-neural-optimization.webp',
   imageAlt:
     'Digital dementia and attentional control biohacking: focus optimization, neuroplasticity. Neural filter visual.',
   imageTitle:

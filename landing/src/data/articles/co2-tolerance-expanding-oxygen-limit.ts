@@ -17,7 +17,7 @@ const article: Article = {
     'heart-rate-variability',
   ],
   introStyle: 'cyan',
-  image: '/images/articles/co2-tolerance-oxygen-efficiency-bohr-effect-onda.png',
+  image: '/images/articles/co2-tolerance-oxygen-efficiency-bohr-effect-onda.webp',
   imageAlt:
     'CO2 tolerance training and Bohr effect biohacking: oxygen bioavailability, respiratory efficiency.',
   imageTitle:

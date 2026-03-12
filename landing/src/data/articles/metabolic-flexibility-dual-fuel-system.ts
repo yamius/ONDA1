@@ -21,7 +21,7 @@ const article: Article = {
     'ketones',
   ],
   introStyle: 'emerald',
-  image: '/images/articles/metabolic-flexibility-dual-fuel-glucose-ketones-onda.png',
+  image: '/images/articles/metabolic-flexibility-dual-fuel-glucose-ketones-onda.webp',
   imageAlt:
     'Metabolic flexibility and dual-fuel system: glucose and ketone metabolism, biohacking endurance, hybrid engine.',
   imageTitle:

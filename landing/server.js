@@ -3,6 +3,7 @@
  * Serves prerendered HTML from dist/ for each route — crawlers see full content.
  */
 import express from 'express'
+import compression from 'compression'
 import helmet from 'helmet'
 import { join, resolve } from 'path'
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, unlinkSync, writeFileSync } from 'fs'
@@ -40,6 +41,8 @@ function isHealthcheckRequest(req) {
 const HEALTHCHECK_HTML = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>OK</title></head><body>OK</body></html>'
 
 const app = express()
+
+app.use(compression())
 
 app.use(
   helmet({

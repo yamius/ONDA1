@@ -18,7 +18,7 @@ const article: Article = {
     'insulin-sensitivity',
   ],
   introStyle: 'indigo',
-  image: '/images/articles/glymphatic-flush-brain-detox-neural-cache-onda.png',
+  image: '/images/articles/glymphatic-flush-brain-detox-neural-cache-onda.webp',
   imageAlt:
     'Glymphatic system flush and brain detox: amyloid clearance, neural cache optimization.',
   imageTitle:

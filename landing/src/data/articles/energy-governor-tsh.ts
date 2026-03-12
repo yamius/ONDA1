@@ -22,7 +22,7 @@ const article: Article = {
     'selenium',
   ],
   introStyle: 'blue',
-  image: '/images/articles/tsh-energy-governor.png',
+  image: '/images/articles/tsh-energy-governor.webp',
   imageAlt:
     '3D visualization of the feedback loop between the pituitary gland and the thyroid.',
   imageTitle:

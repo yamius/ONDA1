@@ -18,7 +18,7 @@ const article: Article = {
     'heart-rate-variability',
   ],
   introStyle: 'amber',
-  image: '/images/articles/continuous-hormone-monitoring-chm-biohacking-onda.png',
+  image: '/images/articles/continuous-hormone-monitoring-chm-biohacking-onda.webp',
   imageAlt:
     'Continuous hormone monitoring and CHM biohacking: cortisol tracking, testosterone optimization.',
   imageTitle:

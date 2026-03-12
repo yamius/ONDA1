@@ -21,7 +21,7 @@ const article: Article = {
     'biocomputer',
   ],
   introStyle: 'cyan',
-  image: '/images/articles/onda-system-feedback-biometric-loop.png',
+  image: '/images/articles/onda-system-feedback-biometric-loop.webp',
   imageAlt:
     'Biometric feedback loop visualization: HRV, glucose, cortisol data streams around human figures. Real-time system correction, adaptive protocols. ONDA Life.',
   imageTitle:

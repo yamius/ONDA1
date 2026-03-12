@@ -20,7 +20,7 @@ const article: Article = {
     'lymphatic-system',
   ],
   introStyle: 'slate',
-  image: '/images/articles/circadian-lighting-dark-therapy-melatonin-optimization.png',
+  image: '/images/articles/circadian-lighting-dark-therapy-melatonin-optimization.webp',
   imageAlt:
     'Dark therapy and circadian lighting: melatonin synthesis, blue light blocking. Photonic deprivation.',
   imageTitle:

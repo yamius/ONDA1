@@ -16,7 +16,7 @@ const article: Article = {
     'ketosis',
   ],
   introStyle: 'gold',
-  image: '/images/articles/longevity-autophagy-cellular-cleanup-onda.png',
+  image: '/images/articles/longevity-autophagy-cellular-cleanup-onda.webp',
   imageAlt:
     'Longevity biohacking and cellular autophagy: mTOR vs AMPK balance, sirtuin activation. Cellular cleanup visual.',
   imageTitle:

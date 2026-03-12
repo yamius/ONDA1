@@ -21,7 +21,7 @@ const article: Article = {
     'sympathetic-nervous-system',
   ],
   introStyle: 'cyan',
-  image: '/images/articles/breathwork-command-line-interface-biohacking.png',
+  image: '/images/articles/breathwork-command-line-interface-biohacking.webp',
   imageAlt:
     'Breathwork biohacking and CO2 tolerance: autonomic nervous system control via resonant breathing. CLI visual.',
   imageTitle:

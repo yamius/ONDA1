@@ -21,7 +21,7 @@ const article: Article = {
     'deep-sleep',
   ],
   introStyle: 'amber',
-  image: '/images/articles/circadian-rhythm-light-optimization-onda.png',
+  image: '/images/articles/circadian-rhythm-light-optimization-onda.webp',
   imageAlt:
     'Circadian rhythm reset and blue light biohacking visual: SCN light synchronization, photonic input, biological clock.',
   imageTitle:

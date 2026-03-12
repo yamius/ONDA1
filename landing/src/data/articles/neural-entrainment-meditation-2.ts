@@ -17,7 +17,7 @@ const article: Article = {
     'theta-state',
   ],
   introStyle: 'slate',
-  image: '/images/articles/neural-entrainment-meditation-coherence-onda.png',
+  image: '/images/articles/neural-entrainment-meditation-coherence-onda.webp',
   imageAlt:
     'Neural entrainment and meditation 2.0: brainwave synchronization, gamma wave coherence.',
   imageTitle:
