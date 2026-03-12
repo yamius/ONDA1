@@ -49,19 +49,24 @@ async function convertToWebP(src) {
 
 async function main() {
   const images = await findImages(publicDir)
-  let totalSaved = 0
+  let converted = 0
+  let skipped = 0
   for (const src of images) {
     const webpPath = src.replace(/\.(png|jpg|jpeg)$/i, '.webp')
+    try {
+      await stat(webpPath)
+      skipped++
+      continue
+    } catch {}
     const { buf, origSize, quality } = await convertToWebP(src)
     await writeFile(webpPath, buf)
     const newSize = buf.length
-    const saved = origSize - newSize
-    totalSaved += saved
-    const pct = ((saved / origSize) * 100).toFixed(0)
-    const qNote = quality < 82 ? ` (q${quality})` : ''
+    const pct = (((origSize - newSize) / origSize) * 100).toFixed(0)
+    const qNote = typeof quality === 'string' ? ` (${quality})` : quality < 82 ? ` (q${quality})` : ''
     console.log(`${src.replace(publicDir, '')}: ${(origSize / 1024).toFixed(0)}KB → ${(newSize / 1024).toFixed(0)}KB (-${pct}%)${qNote}`)
+    converted++
   }
-  console.log(`\nDone. ${images.length} images. Total saved: ${(totalSaved / 1024).toFixed(0)} KB`)
+  console.log(`\nDone. ${converted} converted, ${skipped} skipped (webp exists).`)
 }
 
 main().catch((e) => {
