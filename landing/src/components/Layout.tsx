@@ -86,7 +86,7 @@ export function Layout() {
               location.pathname === '/about' ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
-            About
+            About<span className="sr-only"> ONDA Life — biohacking OS</span>
           </Link>
           <Link
             to="/glossary"
@@ -95,7 +95,7 @@ export function Layout() {
               location.pathname.startsWith('/glossary') ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
-            Glossary
+            Glossary<span className="sr-only"> of biohacking and neuroscience terms</span>
           </Link>
           <Link
             to="/articles"
@@ -104,7 +104,7 @@ export function Layout() {
               location.pathname.startsWith('/articles') ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
-            Articles
+            Articles<span className="sr-only"> on biohacking and human optimization</span>
           </Link>
           <button
             type="button"
@@ -117,7 +117,7 @@ export function Layout() {
             onClick={() => setMenuOpen(false)}
             className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
           >
-            Download
+            Download<span className="sr-only"> ONDA Life biohacking app</span>
           </a>
           <Link
             to="/contact"
@@ -126,7 +126,7 @@ export function Layout() {
               location.pathname === '/contact' ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
-            Contacts
+            Contacts<span className="sr-only"> — reach ONDA Life team</span>
           </Link>
         </nav>
       </div>
@@ -165,19 +165,19 @@ export function Layout() {
             </Link>
             <div className="flex flex-wrap justify-center gap-6">
               <Link to="/about" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                About
+                About<span className="sr-only"> ONDA Life — biohacking OS</span>
               </Link>
               <Link to="/glossary" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                Glossary
+                Glossary<span className="sr-only"> of biohacking and neuroscience terms</span>
               </Link>
               <Link to="/articles" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                Articles
+                Articles<span className="sr-only"> on biohacking and human optimization</span>
               </Link>
               <a href="/#download" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                Download
+                Download<span className="sr-only"> ONDA Life biohacking app</span>
               </a>
               <Link to="/contact" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                Contacts
+                Contacts<span className="sr-only"> — reach ONDA Life team</span>
               </Link>
             </div>
             <p className="text-xs text-white/20">
