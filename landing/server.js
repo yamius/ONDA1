@@ -19,6 +19,12 @@ const articlesDir = join(__dirname, '..', 'articles')
 const port = parseInt(process.env.PORT || '5000', 10)
 const SITE_URL = 'https://onda-life.com'
 
+// HTML Cache-Control: browser caches 60s, CDN (Cloudflare) caches 1h,
+// stale-while-revalidate lets browser/CDN serve stale immediately while refreshing in background.
+// Result: repeat visitors get near-zero TTFB; new deploys propagate within ~60s on browsers,
+// ~1h on CDN (add Cache-Control purge to Cloudflare on deploy if needed).
+const HTML_CACHE = 'public, max-age=60, s-maxage=3600, stale-while-revalidate=86400'
+
 const SUPABASE_URL = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL || ''
 const SUPABASE_KEY = process.env.VITE_SUPABASE_ANON_KEY || process.env.SUPABASE_ANON_KEY || ''
 const supa = SUPABASE_URL && SUPABASE_KEY ? createClient(SUPABASE_URL, SUPABASE_KEY) : null
@@ -113,7 +119,7 @@ app.get('/', (req, res, next) => {
   }
   if (cachedRootHtml) {
     const t0 = Date.now()
-    res.setHeader('Cache-Control', 'no-cache')
+    res.setHeader('Cache-Control', HTML_CACHE)
     res.send(cachedRootHtml)
     console.log(`[root] cached in ${Date.now() - t0}ms`)
     return
@@ -522,7 +528,7 @@ app.use((req, res, next) => {
     const indexHtml = join(distDir, 'index.html')
 
     if (existsSync(filePath)) {
-      res.setHeader('Cache-Control', 'no-cache')
+      res.setHeader('Cache-Control', HTML_CACHE)
       const absPath = resolve(filePath)
       res.sendFile(absPath, (err) => {
         if (err) {
