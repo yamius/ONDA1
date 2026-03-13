@@ -9,7 +9,6 @@ const CENTER_ROW = (ROWS - 1) / 2  // 2.5
 const BASE_DELAY  = 80             // ms per distance unit
 const FADE_MS     = 350            // fade duration per cell
 
-// Pre-compute delay for each of the 60 cells (done once at module load, not per render)
 const CELL_DELAYS: number[] = Array.from({ length: ROWS * COLS }, (_, i) => {
   const col  = i % COLS
   const row  = Math.floor(i / COLS)
@@ -18,13 +17,15 @@ const CELL_DELAYS: number[] = Array.from({ length: ROWS * COLS }, (_, i) => {
 })
 const REVEAL_TOTAL_MS = Math.max(...CELL_DELAYS) + FADE_MS + 50
 
+// Tiny 20px LQIP (104 bytes) — inline base64, zero HTTP requests
+const LQIP = 'data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJagCdACFQZJxfdN20QAD+6M6W8D8/SN2cxp6R5Z+EOWdg+v16rxDfqHnRcBUBhR4CndNK85+3BpZ+IAA='
+
 // ── PixelReveal overlay ───────────────────────────────────────────────────────
 function PixelReveal() {
   const [covering, setCovering] = useState(true)
   const [gone,     setGone]     = useState(false)
 
   useEffect(() => {
-    // Start animation on next frame so SSR-hydrated state matches before transition
     const raf   = requestAnimationFrame(() => setCovering(false))
     const timer = setTimeout(() => setGone(true), REVEAL_TOTAL_MS)
     return () => { cancelAnimationFrame(raf); clearTimeout(timer) }
@@ -75,7 +76,22 @@ export function HeroSection() {
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-8 md:pt-4">
-      {/* LCP hero — responsive srcset, fetchpriority=high, parallax desktop-only */}
+
+      {/* LQIP — 104-byte base64 thumbnail, blurred, visible immediately while full-res downloads */}
+      <div
+        aria-hidden="true"
+        style={{
+          position: 'absolute', inset: 0,
+          backgroundImage: `url(${LQIP})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          opacity: 0.4,
+          filter: 'blur(12px)',
+          transform: 'scale(1.06)',
+        }}
+      />
+
+      {/* LCP hero — full-res, loads on top of LQIP, fetchpriority=high, parallax desktop-only */}
       <picture>
         <source
           type="image/webp"
