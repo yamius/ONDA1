@@ -62,8 +62,6 @@ function PixelReveal() {
           key={i}
           style={{
             backgroundColor: '#050a0f',
-            border: '1px solid rgba(6,182,212,0.12)',
-            boxSizing: 'border-box',
             opacity: grid.covering ? 1 : 0,
             transition: `opacity ${FADE_MS}ms ease-out ${delay}ms`,
           }}
