@@ -74,7 +74,7 @@ function PixelReveal() {
 // ── HeroSection ───────────────────────────────────────────────────────────────
 // Parallax speeds: image moves slower than scroll → depth illusion
 const PARALLAX_DESKTOP = 0.35  // 35% of scroll speed on desktop
-const PARALLAX_MOBILE  = 0.15  // 15% — gentler, avoids jank on touch
+const PARALLAX_MOBILE  = 0.30  // 30% — parallax on touch
 
 export function HeroSection() {
   const imgRef = useRef<HTMLImageElement | null>(null)
