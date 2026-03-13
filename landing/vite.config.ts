@@ -11,10 +11,20 @@ function preloadCriticalChunks(names: string[]) {
       order: 'post' as const,
       handler(html: string, ctx: { bundle?: Record<string, { type: string; fileName: string; name?: string }> }) {
         if (!ctx.bundle) return html
-        const tags = Object.values(ctx.bundle)
+
+        // modulepreload for JS chunks
+        const jsTags = Object.values(ctx.bundle)
           .filter(chunk => chunk.type === 'chunk' && names.includes(chunk.name ?? ''))
           .map(chunk => `  <link rel="modulepreload" crossorigin href="/${chunk.fileName}">`)
           .join('\n')
+
+        // preload as="style" for the main CSS bundle — moves it before <script> in discovery order
+        const cssTags = Object.values(ctx.bundle)
+          .filter(chunk => chunk.type === 'asset' && chunk.fileName.endsWith('.css'))
+          .map(chunk => `  <link rel="preload" as="style" href="/${chunk.fileName}">`)
+          .join('\n')
+
+        const tags = [cssTags, jsTags].filter(Boolean).join('\n')
         if (!tags) return html
         return html.replace('</head>', `${tags}\n</head>`)
       },

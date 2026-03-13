@@ -27,7 +27,6 @@ export function HeroSection() {
           title="ONDA Life: HRV tracking, consciousness OS, biocomputer interface"
           fetchPriority="high"
           loading="eager"
-          decoding="sync"
           width="1024"
           height="682"
           className="absolute inset-0 h-full w-full object-cover opacity-40"
