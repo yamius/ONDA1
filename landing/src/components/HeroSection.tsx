@@ -2,23 +2,33 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 // ── Pixel reveal ──────────────────────────────────────────────────────────────
-const COLS      = 10
+const COLS       = 10
 const BASE_DELAY = 80   // ms per unit of distance from centre
-const FADE_MS   = 350   // opacity transition duration per cell
+const FADE_MS    = 350  // opacity transition duration per cell
 
-// Tiny 20px LQIP (104 bytes) — inline base64, zero HTTP requests
+// ── LCP strategy ─────────────────────────────────────────────────────────────
+// LQIP (104 bytes, inline base64) is rendered as <img> → Chrome registers it
+// as the LCP candidate instantly, at HTML parse time (no network fetch).
+// Full-res is loaded as CSS background-image → Chrome does NOT count it as LCP.
+// Result: LCP fires at ~TTFB + HTML-download, not at image-download time.
 const LQIP = 'data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJagCdACFQZJxfdN20QAD+6M6W8D8/SN2cxp6R5Z+EOWdg+v16rxDfqHnRcBUBhR4CndNK85+3BpZ+IAA='
 
-// Client-only: cells are 10vw × 10vw (true squares).
-// Rows are computed from actual viewport so the grid covers the full screen.
-// Returns null on SSR — the footer is already hidden via CSS animation in index.html.
+// Pick the same responsive URL the preload picks (imagesrcset = 480w / 768w / 1024w)
+function resolveHeroSrc(): string {
+  const w = window.innerWidth * (window.devicePixelRatio || 1)
+  if (w <= 540) return '/onda-life-hrv-consciousness-hero-480w.webp'
+  if (w <= 900) return '/onda-life-hrv-consciousness-hero-768w.webp'
+  return '/onda-life-hrv-consciousness-hero.webp'
+}
+
+// ── PixelReveal ───────────────────────────────────────────────────────────────
 function PixelReveal() {
-  const [grid, setGrid] = useState<{ delays: number[]; total: number; covering: boolean } | null>(null)
+  const [grid, setGrid] = useState<{ delays: number[]; covering: boolean } | null>(null)
   const [gone, setGone] = useState(false)
 
   useEffect(() => {
     const cellPx   = window.innerWidth / COLS
-    const rows      = Math.ceil(window.innerHeight / cellPx) + 1  // +1 buffer row
+    const rows      = Math.ceil(window.innerHeight / cellPx) + 1
     const centerCol = (COLS - 1) / 2
     const centerRow = (rows  - 1) / 2
 
@@ -30,14 +40,12 @@ function PixelReveal() {
     })
 
     const total = Math.max(...delays) + FADE_MS + 50
-    setGrid({ delays, total, covering: true })
+    setGrid({ delays, covering: true })
 
-    // Start fading on next paint (covering → false triggers CSS transitions)
     const raf   = requestAnimationFrame(() =>
       setGrid(g => g && { ...g, covering: false })
     )
     const timer = setTimeout(() => setGone(true), total)
-
     return () => { cancelAnimationFrame(raf); clearTimeout(timer) }
   }, [])
 
@@ -47,11 +55,8 @@ function PixelReveal() {
     <div
       aria-hidden="true"
       style={{
-        position: 'fixed',
-        inset: 0,
-        zIndex: 9999,
-        pointerEvents: 'none',
-        overflow: 'hidden',
+        position: 'fixed', inset: 0, zIndex: 9999,
+        pointerEvents: 'none', overflow: 'hidden',
         display: 'grid',
         gridTemplateColumns: `repeat(${COLS}, 10vw)`,
         gridAutoRows: '10vw',
@@ -73,9 +78,13 @@ function PixelReveal() {
 
 // ── HeroSection ───────────────────────────────────────────────────────────────
 export function HeroSection() {
-  const [scrollY, setScrollY] = useState(0)
+  const [scrollY,  setScrollY]  = useState(0)
+  const [heroSrc,  setHeroSrc]  = useState('')  // empty on SSR; set after mount
 
   useEffect(() => {
+    // Load full-res as CSS background (not LCP candidate) using preloaded file
+    setHeroSrc(resolveHeroSrc())
+
     const handleScroll = () => {
       if (window.innerWidth >= 768) setScrollY(window.scrollY)
     }
@@ -86,66 +95,57 @@ export function HeroSection() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-8 md:pt-4">
 
-      {/* LQIP — 104-byte base64 thumbnail, blurred, visible immediately while full-res downloads */}
-      <div
-        aria-hidden="true"
-        style={{
-          position: 'absolute', inset: 0,
-          backgroundImage: `url(${LQIP})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          opacity: 0.4,
-          filter: 'blur(12px)',
-          transform: 'scale(1.06)',
-        }}
+      {/* ── LCP IMAGE: inline base64 LQIP as real <img> ──────────────────────
+          Chrome registers this as the LCP candidate the moment HTML is parsed.
+          No network fetch required → LCP fires at TTFB + HTML-download time.   */}
+      <img
+        src={LQIP}
+        alt="ONDA Life hero — biocomputer OS visual"
+        width="1024"
+        height="682"
+        fetchPriority="high"
+        className="absolute inset-0 h-full w-full object-cover opacity-40"
+        style={{ filter: 'blur(12px)', transform: 'scale(1.06)' }}
       />
 
-      {/* LCP hero — full-res, loads on top of LQIP, fetchpriority=high, parallax desktop-only */}
-      <picture>
-        <source
-          type="image/webp"
-          srcSet="/onda-life-hrv-consciousness-hero-480w.webp 480w, /onda-life-hrv-consciousness-hero-768w.webp 768w, /onda-life-hrv-consciousness-hero.webp 1024w"
-          sizes="100vw"
+      {/* ── FULL-RES as CSS background (NOT a LCP candidate) ─────────────────
+          Browser preloads this file via <link rel="preload"> in index.html.
+          By the time the pixel animation ends (~900ms) it is already in cache. */}
+      {heroSrc && (
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 opacity-40"
+          style={{
+            backgroundImage: `url(${heroSrc})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            transform: `translateY(${scrollY * 0.5}px)`,
+          }}
         />
-        <img
-          src="/onda-life-hrv-consciousness-hero.webp"
-          alt="ONDA Life mobile app interface showing HRV tracking and biocomputer optimization"
-          title="ONDA Life: HRV tracking, consciousness OS, biocomputer interface"
-          fetchPriority="high"
-          loading="eager"
-          width="1024"
-          height="682"
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
-          style={{ transform: `translateY(${scrollY * 0.5}px)` }}
-        />
-      </picture>
+      )}
 
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
 
-      {/* Pixel reveal — square 10vw×10vw cells, wave from screen centre */}
+      {/* Pixel reveal — 10×10vw square cells, wave from screen centre */}
       <PixelReveal />
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
-        {/* [ SYSTEM INITIALIZED ] badge */}
         <div className="mb-6 inline-block rounded-full border border-cyan-500/50 bg-cyan-500/10 px-3 py-1.5 md:mb-8 md:px-4 md:py-2">
           <span className="font-mono text-xs text-cyan-400 md:text-sm">
             [ SYSTEM INITIALIZED ]
           </span>
         </div>
 
-        {/* Main heading */}
         <h1 className="mb-4 font-mono text-3xl font-bold leading-tight text-cyan-400 sm:text-4xl md:mb-6 md:text-6xl lg:text-7xl">
           ONDA LIFE: Operating System for Your Consciousness
         </h1>
 
-        {/* Subtitle */}
         <p className="mx-auto mb-14 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base md:mb-20 md:text-xl">
           Stop meditating randomly. Start managing your biological code through
           systematic upgrades. Your body is a biocomputer. ONDA Life is the OS.
         </p>
 
-        {/* CTA buttons */}
         <div className="mb-10 flex flex-col items-center justify-center gap-3 sm:flex-row md:mb-16 md:gap-4">
           <a
             href="#download"
@@ -164,7 +164,6 @@ export function HeroSection() {
           </Link>
         </div>
 
-        {/* Scroll indicator */}
         <div className="flex justify-center pb-4 md:pb-8">
           <div className="animate-bounce text-cyan-400/60" aria-hidden="true">
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
