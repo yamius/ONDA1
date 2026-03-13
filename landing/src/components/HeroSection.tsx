@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { OptimizedImage } from './OptimizedImage'
 
 export function HeroSection() {
   const [scrollY, setScrollY] = useState(0)
@@ -15,15 +14,26 @@ export function HeroSection() {
 
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-8 md:pt-4">
-      {/* Background image with parallax on desktop only (avoids iOS fixed-nav bug on mobile) */}
-      <OptimizedImage
-        src="/onda-life-hrv-consciousness-hero.webp"
-        alt="ONDA Life mobile app interface showing HRV tracking and biocomputer optimization"
-        title="ONDA Life: HRV tracking, consciousness OS, biocomputer interface"
-        priority
-        className="absolute inset-0 h-full w-full object-cover opacity-40"
-        style={{ transform: `translateY(${scrollY * 0.5}px)` }}
-      />
+      {/* LCP hero — responsive srcset, fetchpriority=high, parallax desktop-only */}
+      <picture>
+        <source
+          type="image/webp"
+          srcSet="/onda-life-hrv-consciousness-hero-480w.webp 480w, /onda-life-hrv-consciousness-hero-768w.webp 768w, /onda-life-hrv-consciousness-hero.webp 1024w"
+          sizes="100vw"
+        />
+        <img
+          src="/onda-life-hrv-consciousness-hero.webp"
+          alt="ONDA Life mobile app interface showing HRV tracking and biocomputer optimization"
+          title="ONDA Life: HRV tracking, consciousness OS, biocomputer interface"
+          fetchPriority="high"
+          loading="eager"
+          decoding="sync"
+          width="1024"
+          height="682"
+          className="absolute inset-0 h-full w-full object-cover opacity-40"
+          style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+        />
+      </picture>
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
 
