@@ -7,19 +7,12 @@ const BASE_DELAY = 80   // ms per unit of distance from centre
 const FADE_MS    = 350  // opacity transition duration per cell
 
 // ── LCP strategy ─────────────────────────────────────────────────────────────
-// LQIP (104 bytes, inline base64) is rendered as <img> → Chrome registers it
-// as the LCP candidate instantly, at HTML parse time (no network fetch).
-// Full-res is loaded as CSS background-image → Chrome does NOT count it as LCP.
-// Result: LCP fires at ~TTFB + HTML-download, not at image-download time.
+// LQIP (104 bytes, inline base64) as <img>: paints at first layout → fast FCP.
+// Full-res hero as <picture><img fetchpriority="high">: in SSR HTML so preload
+// scanner finds it immediately → downloads in parallel with HTML before JS runs.
+// Inline @font-face in index.html: JetBrains Mono known at parse time → no late
+// font-swap LCP update (previously fonts.css loaded async, causing LCP=4.7s).
 const LQIP = 'data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJagCdACFQZJxfdN20QAD+6M6W8D8/SN2cxp6R5Z+EOWdg+v16rxDfqHnRcBUBhR4CndNK85+3BpZ+IAA='
-
-// Pick the same responsive URL the preload picks (imagesrcset = 480w / 768w / 1024w)
-function resolveHeroSrc(): string {
-  const w = window.innerWidth * (window.devicePixelRatio || 1)
-  if (w <= 540) return '/onda-life-hrv-consciousness-hero-480w.webp'
-  if (w <= 900) return '/onda-life-hrv-consciousness-hero-768w.webp'
-  return '/onda-life-hrv-consciousness-hero.webp'
-}
 
 // ── PixelReveal ───────────────────────────────────────────────────────────────
 function PixelReveal() {
@@ -78,13 +71,9 @@ function PixelReveal() {
 
 // ── HeroSection ───────────────────────────────────────────────────────────────
 export function HeroSection() {
-  const [scrollY,  setScrollY]  = useState(0)
-  const [heroSrc,  setHeroSrc]  = useState('')  // empty on SSR; set after mount
+  const [scrollY, setScrollY] = useState(0)
 
   useEffect(() => {
-    // Load full-res as CSS background (not LCP candidate) using preloaded file
-    setHeroSrc(resolveHeroSrc())
-
     const handleScroll = () => {
       if (window.innerWidth >= 768) setScrollY(window.scrollY)
     }
@@ -95,34 +84,36 @@ export function HeroSection() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-8 md:pt-4">
 
-      {/* ── LCP IMAGE: inline base64 LQIP as real <img> ──────────────────────
-          Chrome registers this as the LCP candidate the moment HTML is parsed.
-          No network fetch required → LCP fires at TTFB + HTML-download time.   */}
+      {/* ── LQIP: inline base64, paints at parse time → FCP fires immediately ── */}
       <img
         src={LQIP}
-        alt="ONDA Life hero — biocomputer OS visual"
+        aria-hidden="true"
+        alt=""
         width="1024"
         height="682"
-        fetchPriority="high"
         className="absolute inset-0 h-full w-full object-cover opacity-40"
         style={{ filter: 'blur(12px)', transform: 'scale(1.06)' }}
       />
 
-      {/* ── FULL-RES as CSS background (NOT a LCP candidate) ─────────────────
-          Browser preloads this file via <link rel="preload"> in index.html.
-          By the time the pixel animation ends (~900ms) it is already in cache. */}
-      {heroSrc && (
-        <div
-          aria-hidden="true"
-          className="absolute inset-0 opacity-40"
-          style={{
-            backgroundImage: `url(${heroSrc})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            transform: `translateY(${scrollY * 0.5}px)`,
-          }}
+      {/* ── FULL-RES <img> in SSR HTML — preload scanner finds it before JS runs.
+          fetchpriority=high + <link rel="preload"> → downloaded in parallel with HTML.
+          Preloaded woff2 arrive before first paint → no late font-swap LCP update. */}
+      <picture>
+        <source
+          type="image/webp"
+          srcSet="/onda-life-hrv-consciousness-hero-480w.webp 480w, /onda-life-hrv-consciousness-hero-768w.webp 768w, /onda-life-hrv-consciousness-hero.webp 1024w"
+          sizes="100vw"
         />
-      )}
+        <img
+          src="/onda-life-hrv-consciousness-hero.webp"
+          alt="ONDA Life hero — biocomputer consciousness OS"
+          fetchPriority="high"
+          width="1024"
+          height="682"
+          className="absolute inset-0 h-full w-full object-cover opacity-40"
+          style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+        />
+      </picture>
 
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />

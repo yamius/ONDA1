@@ -51,13 +51,10 @@
       href="/onda-life-hrv-consciousness-hero.webp"
       imagesrcset="/onda-life-hrv-consciousness-hero-480w.webp 480w, /onda-life-hrv-consciousness-hero-768w.webp 768w, /onda-life-hrv-consciousness-hero.webp 1024w"
       imagesizes="100vw" />
-    <!-- Preload critical above-the-fold font files.
-         H1 uses font-bold → browser picks JetBrains Mono weight-500 (nearest available).
-         Badge + body: weight-400. Roboto: body paragraph text. -->
+    <!-- Preload the two fonts actually used above the fold.
+         Extra font preloads compete with the hero image on throttled networks → removed. -->
     <link rel="preload" href="/fonts/JetBrainsMono-latin-400.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/JetBrainsMono-latin-500.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/RobotoMono-latin-400.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/Roboto-latin-400.woff2" as="font" type="font/woff2" crossorigin />
     <!-- @font-face INLINED — previously loaded async (onload trick), which caused
          H1 to repaint when the font arrived ~3s after FCP, updating LCP to 4.4s.
          Inline makes @font-face available at parse time so the preloaded woff2 files
