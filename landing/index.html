@@ -52,6 +52,8 @@
     <link rel="preload" href="/fonts/RobotoMono-latin-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <noscript><link rel="stylesheet" href="/fonts/fonts.css" /></noscript>
+    <!-- Hide footer until pixel-reveal animation finishes (~900ms) -->
+    <style>footer{opacity:0;animation:_ftr .4s ease .85s both}@keyframes _ftr{to{opacity:1}}</style>
   </head>
   <body class="bg-[#050a0f] text-white antialiased">
     <!-- Google Tag Manager (noscript) -->

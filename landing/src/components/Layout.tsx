@@ -146,7 +146,7 @@ export function Layout() {
           </div>
         </header>
         <div className="pt-6">
-          <Suspense fallback={<div className="min-h-[60vh]" />}>
+          <Suspense fallback={<div className="min-h-screen" />}>
             <Outlet />
           </Suspense>
         </div>
