@@ -84,7 +84,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-8 md:pt-4">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-8 md:pt-4 mt-[-24px]">
 
       {/* LQIP — 104-byte base64 thumbnail, blurred, visible immediately while full-res downloads */}
       <div
@@ -115,7 +115,7 @@ export function HeroSection() {
           loading="eager"
           width="1024"
           height="682"
-          className="absolute inset-0 h-full w-full object-cover object-top opacity-40"
+          className="absolute inset-0 h-full w-full object-cover opacity-40 [object-position:50%_-160px] md:[object-position:50%_-60px]"
           style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         />
       </picture>
