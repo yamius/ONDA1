@@ -3,14 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <!-- Hero LCP image — first hint in <head> so browser discovers it before anything else -->
+    <!-- Hero LCP image — first hint in <head> so browser discovers it before any script -->
     <link rel="preload" as="image" type="image/webp"
       href="/onda-life-hrv-consciousness-hero.webp"
       imagesrcset="/onda-life-hrv-consciousness-hero-480w.webp 480w, /onda-life-hrv-consciousness-hero-768w.webp 768w, /onda-life-hrv-consciousness-hero.webp 1024w"
       imagesizes="100vw" />
-    <!-- Preconnect for GTM/GA — TCP+TLS established early so scripts load fast when triggered -->
+    <!-- Preconnect for deferred GTM/GA — establishes TCP+TLS early so scripts load faster when idle fires -->
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <!-- Google Tag Manager: dataLayer init immediate; container deferred until after load+idle -->
+    <script>
+      window.dataLayer=window.dataLayer||[];
+      (function(id){
+        function load(){
+          (function(w,d,s,l,i){
+            w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer',id);
+        }
+        function defer(){
+          'requestIdleCallback' in window
+            ? requestIdleCallback(load,{timeout:3000})
+            : setTimeout(load,1000);
+        }
+        document.readyState==='complete' ? defer() : window.addEventListener('load',defer);
+      })('GTM-NJ7LMQXD');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta name="google-site-verification" content="c03Z3IWjfPCaTwFHUCfgNseJFQiAom56Gsdinec5ZOg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
@@ -39,32 +60,11 @@
     <style>footer{opacity:0;animation:_ftr .4s ease .85s both}@keyframes _ftr{to{opacity:1}}</style>
   </head>
   <body class="bg-[#050a0f] text-white antialiased">
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <!-- Google Tag Manager: interaction-first loading.
-         Fires on first user gesture (scroll/click/touch/key) or after 8s fallback.
-         Lighthouse (no interactions) never triggers it → 286 KiB absent from perf measurement. -->
-    <script>
-      window.dataLayer=window.dataLayer||[];
-      (function(id){
-        var done=false;
-        function load(){
-          if(done)return; done=true;
-          (function(w,d,s,l,i){
-            w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-            var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-            j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-            f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer',id);
-        }
-        var t=setTimeout(load,8000);
-        ['scroll','click','mousemove','touchstart','keydown'].forEach(function(e){
-          document.addEventListener(e,function h(){load();clearTimeout(t);document.removeEventListener(e,h,true);},{once:true,passive:true,capture:true});
-        });
-      })('GTM-NJ7LMQXD');
-    </script>
-    <!-- noscript fallback for GTM -->
+    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NJ7LMQXD"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
