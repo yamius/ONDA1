@@ -18,13 +18,9 @@ function preloadCriticalChunks(names: string[]) {
           .map(chunk => `  <link rel="modulepreload" crossorigin href="/${chunk.fileName}">`)
           .join('\n')
 
-        // preload as="style" for the main CSS bundle — moves it before <script> in discovery order
-        const cssTags = Object.values(ctx.bundle)
-          .filter(chunk => chunk.type === 'asset' && chunk.fileName.endsWith('.css'))
-          .map(chunk => `  <link rel="preload" as="style" href="/${chunk.fileName}">`)
-          .join('\n')
-
-        const tags = [cssTags, jsTags].filter(Boolean).join('\n')
+        // CSS preload removed: Vite already injects <link rel="stylesheet"> which triggers
+        // the download immediately. A preload hint *after* the stylesheet tag is redundant.
+        const tags = [jsTags].filter(Boolean).join('\n')
         if (!tags) return html
         return html.replace('</head>', `${tags}\n</head>`)
       },

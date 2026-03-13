@@ -119,6 +119,13 @@ app.get('/', (req, res, next) => {
   }
   if (cachedRootHtml) {
     const t0 = Date.now()
+    // 103 Early Hints — browser starts fetching hero image before full HTML arrives.
+    // Works over HTTP/2; silently ignored on HTTP/1.1. Wrap in try/catch for safety.
+    try {
+      res.writeEarlyHints({
+        link: '</onda-life-hrv-consciousness-hero.webp>; rel=preload; as=image; imagesrcset="/onda-life-hrv-consciousness-hero-480w.webp 480w, /onda-life-hrv-consciousness-hero-768w.webp 768w, /onda-life-hrv-consciousness-hero.webp 1024w"; imagesizes="100vw"',
+      })
+    } catch (_) {}
     res.setHeader('Cache-Control', HTML_CACHE)
     res.send(cachedRootHtml)
     console.log(`[root] cached in ${Date.now() - t0}ms`)

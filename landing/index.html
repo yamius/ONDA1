@@ -2,6 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- Hero LCP image — first hint in <head> so browser discovers it before any script -->
+    <link rel="preload" as="image" type="image/webp"
+      href="/onda-life-hrv-consciousness-hero.webp"
+      imagesrcset="/onda-life-hrv-consciousness-hero-480w.webp 480w, /onda-life-hrv-consciousness-hero-768w.webp 768w, /onda-life-hrv-consciousness-hero.webp 1024w"
+      imagesizes="100vw" />
+    <!-- Preconnect for deferred GTM/GA — establishes TCP+TLS early so scripts load faster when idle fires -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <!-- Google Tag Manager: dataLayer init immediate; container deferred until after load+idle -->
     <script>
       window.dataLayer=window.dataLayer||[];
@@ -27,7 +36,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="robots" content="index, follow" />
     <meta name="theme-color" content="#0a0a0a" />
     <link rel="canonical" href="https://onda-life.com" />
@@ -44,10 +52,6 @@
     <meta property="twitter:title" content="ONDA Life | Biohacking App, HRV Tracker &amp; Consciousness OS" />
     <meta property="twitter:description" content="Upgrade your biological code with ONDA Life. A systematic biohacking platform for HRV tracking, neural hardware optimization, and structured 8-level consciousness development." />
     <meta property="twitter:image" content="https://onda-life.com/og-preview.png" />
-    <link rel="preload" as="image" type="image/webp"
-      href="/onda-life-hrv-consciousness-hero.webp"
-      imagesrcset="/onda-life-hrv-consciousness-hero-480w.webp 480w, /onda-life-hrv-consciousness-hero-768w.webp 768w, /onda-life-hrv-consciousness-hero.webp 1024w"
-      imagesizes="100vw" />
     <link rel="preload" href="/fonts/JetBrainsMono-latin-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/RobotoMono-latin-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
