@@ -2,15 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Google Tag Manager: fires only on first user interaction (scroll/click/touch/key).
-         Lighthouse never interacts → GTM's 286 KiB never loads during the LCP window.
-         Real users trigger it on their first scroll, so analytics data is complete. -->
+    <!-- Google Tag Manager: dataLayer init immediate; container deferred until after load+idle -->
     <script>
       window.dataLayer=window.dataLayer||[];
       (function(id){
-        var loaded=false;
         function load(){
-          if(loaded)return; loaded=true;
           (function(w,d,s,l,i){
             w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
             var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
@@ -18,12 +14,12 @@
             f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer',id);
         }
-        var events=['scroll','click','touchstart','keydown'];
-        function onInteract(){
-          load();
-          events.forEach(function(e){window.removeEventListener(e,onInteract,{passive:true})});
+        function defer(){
+          'requestIdleCallback' in window
+            ? requestIdleCallback(load,{timeout:3000})
+            : setTimeout(load,1000);
         }
-        events.forEach(function(e){window.addEventListener(e,onInteract,{passive:true})});
+        document.readyState==='complete' ? defer() : window.addEventListener('load',defer);
       })('GTM-NJ7LMQXD');
     </script>
     <!-- End Google Tag Manager -->
@@ -33,10 +29,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#050a0f" />
-    <meta name="theme-color" content="#050a0f" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#050a0f" media="(prefers-color-scheme: dark)" />
-    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0a0a0a" />
     <link rel="canonical" href="https://onda-life.com" />
     <title>ONDA Life | Biohacking App, HRV Tracker &amp; Consciousness OS</title>
     <meta name="title" content="ONDA Life | Biohacking App, HRV Tracker &amp; Consciousness OS" />
@@ -55,40 +48,12 @@
       href="/onda-life-hrv-consciousness-hero.webp"
       imagesrcset="/onda-life-hrv-consciousness-hero-480w.webp 480w, /onda-life-hrv-consciousness-hero-768w.webp 768w, /onda-life-hrv-consciousness-hero.webp 1024w"
       imagesizes="100vw" />
-    <!-- Preload the two fonts actually used above the fold.
-         Extra font preloads compete with the hero image on throttled networks → removed. -->
     <link rel="preload" href="/fonts/JetBrainsMono-latin-400.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/RobotoMono-latin-400.woff2" as="font" type="font/woff2" crossorigin />
-    <!-- @font-face INLINED — previously loaded async (onload trick), which caused
-         H1 to repaint when the font arrived ~3s after FCP, updating LCP to 4.4s.
-         Inline makes @font-face available at parse time so the preloaded woff2 files
-         are matched before first paint → no late swap → LCP ≈ FCP. -->
-    <style>
-/* JetBrains Mono – latin */
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/JetBrainsMono-latin-400.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/JetBrainsMono-latin-500.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-/* JetBrains Mono – cyrillic */
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/JetBrainsMono-cyrillic-400.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/JetBrainsMono-cyrillic-500.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-/* Roboto Mono – latin */
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/RobotoMono-latin-400.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/RobotoMono-latin-500.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/RobotoMono-latin-700.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-/* Roboto Mono – cyrillic */
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/RobotoMono-cyrillic-400.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/RobotoMono-cyrillic-500.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/RobotoMono-cyrillic-700.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-/* Roboto – latin */
-@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/Roboto-latin-400.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/Roboto-latin-500.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/Roboto-latin-700.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
-/* Roboto – cyrillic */
-@font-face{font-family:'Roboto';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/Roboto-cyrillic-400.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Roboto';font-style:normal;font-weight:500;font-display:swap;src:url('/fonts/Roboto-cyrillic-500.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-@font-face{font-family:'Roboto';font-style:normal;font-weight:700;font-display:swap;src:url('/fonts/Roboto-cyrillic-700.woff2') format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
-/* Hide footer until pixel-reveal animation finishes (~900ms) */
-footer{opacity:0;animation:_ftr .4s ease .85s both}@keyframes _ftr{to{opacity:1}}
-    </style>
+    <link rel="preload" href="/fonts/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="/fonts/fonts.css" /></noscript>
+    <!-- Hide footer until pixel-reveal animation finishes (~900ms) -->
+    <style>footer{opacity:0;animation:_ftr .4s ease .85s both}@keyframes _ftr{to{opacity:1}}</style>
   </head>
   <body class="bg-[#050a0f] text-white antialiased">
     <!-- Google Tag Manager (noscript) -->
