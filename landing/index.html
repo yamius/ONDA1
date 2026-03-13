@@ -2,12 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NJ7LMQXD');</script>
+    <!-- Google Tag Manager: dataLayer init immediate; container deferred until after load+idle -->
+    <script>
+      window.dataLayer=window.dataLayer||[];
+      (function(id){
+        function load(){
+          (function(w,d,s,l,i){
+            w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+            var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer',id);
+        }
+        function defer(){
+          'requestIdleCallback' in window
+            ? requestIdleCallback(load,{timeout:3000})
+            : setTimeout(load,1000);
+        }
+        document.readyState==='complete' ? defer() : window.addEventListener('load',defer);
+      })('GTM-NJ7LMQXD');
+    </script>
     <!-- End Google Tag Manager -->
     <meta name="google-site-verification" content="c03Z3IWjfPCaTwFHUCfgNseJFQiAom56Gsdinec5ZOg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
