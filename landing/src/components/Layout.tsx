@@ -152,7 +152,7 @@ export function Layout() {
         </div>
       </main>
 
-      <footer className="border-t border-white/5 bg-[#1a1b26]/70 pb-[env(safe-area-inset-bottom,0px)] backdrop-blur-xl">
+      <footer className="border-t border-white/5 bg-[#050a0f]/95 pb-[env(safe-area-inset-bottom,0px)] backdrop-blur-sm">
         <div className="mx-auto max-w-7xl px-5 py-8 md:px-6 md:py-12">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <Link
