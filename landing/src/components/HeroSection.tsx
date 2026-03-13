@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 // ── Pixel reveal ──────────────────────────────────────────────────────────────
@@ -72,12 +72,20 @@ function PixelReveal() {
 }
 
 // ── HeroSection ───────────────────────────────────────────────────────────────
+// Parallax speeds: image moves slower than scroll → depth illusion
+const PARALLAX_DESKTOP = 0.35  // 35% of scroll speed on desktop
+const PARALLAX_MOBILE  = 0.15  // 15% — gentler, avoids jank on touch
+
 export function HeroSection() {
-  const [scrollY, setScrollY] = useState(0)
+  const imgRef = useRef<HTMLImageElement | null>(null)
 
   useEffect(() => {
+    // Ref-based direct DOM update — zero React re-renders, GPU-accelerated
     const handleScroll = () => {
-      if (window.innerWidth >= 768) setScrollY(window.scrollY)
+      if (!imgRef.current) return
+      const speed  = window.innerWidth >= 768 ? PARALLAX_DESKTOP : PARALLAX_MOBILE
+      const offset = window.scrollY * speed
+      imgRef.current.style.transform = `translate3d(0, ${offset}px, 0)`
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
@@ -108,6 +116,7 @@ export function HeroSection() {
           sizes="100vw"
         />
         <img
+          ref={imgRef}
           src="/onda-life-hrv-consciousness-hero.webp"
           alt="ONDA Life mobile app interface showing HRV tracking and biocomputer optimization"
           title="ONDA Life: HRV tracking, consciousness OS, biocomputer interface"
@@ -116,7 +125,7 @@ export function HeroSection() {
           width="1024"
           height="682"
           className="absolute inset-0 h-full w-full object-cover opacity-40 [object-position:50%_-15px] md:[object-position:50%_-30px]"
-          style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+          style={{ willChange: 'transform' }}
         />
       </picture>
 
