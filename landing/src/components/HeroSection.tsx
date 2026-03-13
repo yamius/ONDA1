@@ -1,6 +1,67 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
+// ── Pixel reveal constants ────────────────────────────────────────────────────
+const COLS = 10
+const ROWS = 6
+const CENTER_COL = (COLS - 1) / 2  // 4.5
+const CENTER_ROW = (ROWS - 1) / 2  // 2.5
+const BASE_DELAY  = 80             // ms per distance unit
+const FADE_MS     = 350            // fade duration per cell
+
+// Pre-compute delay for each of the 60 cells (done once at module load, not per render)
+const CELL_DELAYS: number[] = Array.from({ length: ROWS * COLS }, (_, i) => {
+  const col  = i % COLS
+  const row  = Math.floor(i / COLS)
+  const dist = Math.sqrt((col - CENTER_COL) ** 2 + (row - CENTER_ROW) ** 2)
+  return Math.round(dist * BASE_DELAY)
+})
+const REVEAL_TOTAL_MS = Math.max(...CELL_DELAYS) + FADE_MS + 50
+
+// ── PixelReveal overlay ───────────────────────────────────────────────────────
+function PixelReveal() {
+  const [covering, setCovering] = useState(true)
+  const [gone,     setGone]     = useState(false)
+
+  useEffect(() => {
+    // Start animation on next frame so SSR-hydrated state matches before transition
+    const raf   = requestAnimationFrame(() => setCovering(false))
+    const timer = setTimeout(() => setGone(true), REVEAL_TOTAL_MS)
+    return () => { cancelAnimationFrame(raf); clearTimeout(timer) }
+  }, [])
+
+  if (gone) return null
+
+  return (
+    <div
+      aria-hidden="true"
+      style={{
+        position: 'absolute',
+        inset: 0,
+        zIndex: 5,
+        pointerEvents: 'none',
+        display: 'grid',
+        gridTemplateColumns: `repeat(${COLS}, 1fr)`,
+        gridTemplateRows: `repeat(${ROWS}, 1fr)`,
+      }}
+    >
+      {CELL_DELAYS.map((delay, i) => (
+        <div
+          key={i}
+          style={{
+            backgroundColor: '#050a0f',
+            border: '1px solid rgba(6,182,212,0.12)',
+            boxSizing: 'border-box',
+            opacity: covering ? 1 : 0,
+            transition: `opacity ${FADE_MS}ms ease-out ${delay}ms`,
+          }}
+        />
+      ))}
+    </div>
+  )
+}
+
+// ── HeroSection ───────────────────────────────────────────────────────────────
 export function HeroSection() {
   const [scrollY, setScrollY] = useState(0)
 
@@ -33,8 +94,12 @@ export function HeroSection() {
           style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         />
       </picture>
+
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
+
+      {/* Pixel reveal — 10×6 grid of tiles fading out from centre */}
+      <PixelReveal />
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
         {/* [ SYSTEM INITIALIZED ] badge */}
@@ -96,4 +161,3 @@ function DownloadIcon() {
     </svg>
   )
 }
-
