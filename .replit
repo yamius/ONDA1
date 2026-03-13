@@ -9,8 +9,8 @@ packages = ["nano", "unzip", "psmisc"]
 [deployment]
 deploymentTarget = "autoscale"
 healthcheck = "/health"
-build = ["bash", "-c", "git pull origin main --ff-only || true && cd landing && rm -rf dist && npm install && npm run build"]
-run = ["bash", "-c", "cd landing && npm install && PORT=5000 node server.js"]
+build = ["bash", "-c", "cd landing && npm run build"]
+run = ["bash", "scripts/start-replit.sh"]
 
 [workflows]
 runButton = "Project"

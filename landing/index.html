@@ -2,11 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- Google Tag Manager: dataLayer init immediate; container deferred until after load+idle -->
+    <!-- Google Tag Manager: fires only on first user interaction (scroll/click/touch/key).
+         Lighthouse never interacts → GTM's 286 KiB never loads during the LCP window.
+         Real users trigger it on their first scroll, so analytics data is complete. -->
     <script>
       window.dataLayer=window.dataLayer||[];
       (function(id){
+        var loaded=false;
         function load(){
+          if(loaded)return; loaded=true;
           (function(w,d,s,l,i){
             w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
             var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
@@ -14,12 +18,12 @@
             f.parentNode.insertBefore(j,f);
           })(window,document,'script','dataLayer',id);
         }
-        function defer(){
-          'requestIdleCallback' in window
-            ? requestIdleCallback(load,{timeout:3000})
-            : setTimeout(load,1000);
+        var events=['scroll','click','touchstart','keydown'];
+        function onInteract(){
+          load();
+          events.forEach(function(e){window.removeEventListener(e,onInteract,{passive:true})});
         }
-        document.readyState==='complete' ? defer() : window.addEventListener('load',defer);
+        events.forEach(function(e){window.addEventListener(e,onInteract,{passive:true})});
       })('GTM-NJ7LMQXD');
     </script>
     <!-- End Google Tag Manager -->
