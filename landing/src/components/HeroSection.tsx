@@ -117,7 +117,7 @@ export function HeroSection() {
           loading="eager"
           width="1024"
           height="682"
-          className="absolute inset-0 h-full w-full object-cover opacity-40"
+          className="absolute inset-0 h-full w-full object-cover object-top opacity-40"
           style={{ transform: `translateY(${scrollY * 0.5}px)` }}
         />
       </picture>
