@@ -1,37 +1,47 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-// ── Pixel reveal constants ────────────────────────────────────────────────────
-const COLS = 10
-const ROWS = 6
-const CENTER_COL = (COLS - 1) / 2  // 4.5
-const CENTER_ROW = (ROWS - 1) / 2  // 2.5
-const BASE_DELAY  = 80             // ms per distance unit
-const FADE_MS     = 350            // fade duration per cell
-
-const CELL_DELAYS: number[] = Array.from({ length: ROWS * COLS }, (_, i) => {
-  const col  = i % COLS
-  const row  = Math.floor(i / COLS)
-  const dist = Math.sqrt((col - CENTER_COL) ** 2 + (row - CENTER_ROW) ** 2)
-  return Math.round(dist * BASE_DELAY)
-})
-const REVEAL_TOTAL_MS = Math.max(...CELL_DELAYS) + FADE_MS + 50
+// ── Pixel reveal ──────────────────────────────────────────────────────────────
+const COLS      = 10
+const BASE_DELAY = 80   // ms per unit of distance from centre
+const FADE_MS   = 350   // opacity transition duration per cell
 
 // Tiny 20px LQIP (104 bytes) — inline base64, zero HTTP requests
 const LQIP = 'data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAACwAwCdASoUAA0APzmEuVOvKKWisAgB4CcJagCdACFQZJxfdN20QAD+6M6W8D8/SN2cxp6R5Z+EOWdg+v16rxDfqHnRcBUBhR4CndNK85+3BpZ+IAA='
 
-// ── PixelReveal overlay ───────────────────────────────────────────────────────
+// Client-only: cells are 10vw × 10vw (true squares).
+// Rows are computed from actual viewport so the grid covers the full screen.
+// Returns null on SSR — the footer is already hidden via CSS animation in index.html.
 function PixelReveal() {
-  const [covering, setCovering] = useState(true)
-  const [gone,     setGone]     = useState(false)
+  const [grid, setGrid] = useState<{ delays: number[]; total: number; covering: boolean } | null>(null)
+  const [gone, setGone] = useState(false)
 
   useEffect(() => {
-    const raf   = requestAnimationFrame(() => setCovering(false))
-    const timer = setTimeout(() => setGone(true), REVEAL_TOTAL_MS)
+    const cellPx   = window.innerWidth / COLS
+    const rows      = Math.ceil(window.innerHeight / cellPx) + 1  // +1 buffer row
+    const centerCol = (COLS - 1) / 2
+    const centerRow = (rows  - 1) / 2
+
+    const delays = Array.from({ length: rows * COLS }, (_, i) => {
+      const col  = i % COLS
+      const row  = Math.floor(i / COLS)
+      const dist = Math.sqrt((col - centerCol) ** 2 + (row - centerRow) ** 2)
+      return Math.round(dist * BASE_DELAY)
+    })
+
+    const total = Math.max(...delays) + FADE_MS + 50
+    setGrid({ delays, total, covering: true })
+
+    // Start fading on next paint (covering → false triggers CSS transitions)
+    const raf   = requestAnimationFrame(() =>
+      setGrid(g => g && { ...g, covering: false })
+    )
+    const timer = setTimeout(() => setGone(true), total)
+
     return () => { cancelAnimationFrame(raf); clearTimeout(timer) }
   }, [])
 
-  if (gone) return null
+  if (!grid || gone) return null
 
   return (
     <div
@@ -41,19 +51,20 @@ function PixelReveal() {
         inset: 0,
         zIndex: 9999,
         pointerEvents: 'none',
+        overflow: 'hidden',
         display: 'grid',
-        gridTemplateColumns: `repeat(${COLS}, 1fr)`,
-        gridTemplateRows: `repeat(${ROWS}, 1fr)`,
+        gridTemplateColumns: `repeat(${COLS}, 10vw)`,
+        gridAutoRows: '10vw',
       }}
     >
-      {CELL_DELAYS.map((delay, i) => (
+      {grid.delays.map((delay, i) => (
         <div
           key={i}
           style={{
             backgroundColor: '#050a0f',
             border: '1px solid rgba(6,182,212,0.12)',
             boxSizing: 'border-box',
-            opacity: covering ? 1 : 0,
+            opacity: grid.covering ? 1 : 0,
             transition: `opacity ${FADE_MS}ms ease-out ${delay}ms`,
           }}
         />
@@ -114,7 +125,7 @@ export function HeroSection() {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
 
-      {/* Pixel reveal — 10×6 grid of tiles fading out from centre */}
+      {/* Pixel reveal — square 10vw×10vw cells, wave from screen centre */}
       <PixelReveal />
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
