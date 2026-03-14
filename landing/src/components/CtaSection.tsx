@@ -56,7 +56,7 @@ export function CtaSection() {
           <span className="text-white">Your System</span>
         </h2>
         <p className="mb-10 text-sm text-white/40">
-          You found ONDA... and ONDA found you.
+          Your world is a reflection of your inner self
         </p>
 
         <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
