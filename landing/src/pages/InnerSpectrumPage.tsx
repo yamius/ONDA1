@@ -117,6 +117,63 @@ export function InnerSpectrumPage() {
         </p>
       </div>
 
+      {/* ─── Section divider ─── */}
+      <div className="my-20 border-t border-white/[0.06]" />
+
+      {/* Section label */}
+      <div className="mb-8 font-mono text-xs tracking-widest text-terminal-green/60">
+        [ THE LENS OF PERCEPTION ]
+      </div>
+
+      {/* Header */}
+      <h2 className="mb-12 font-serif text-3xl font-bold leading-snug text-white md:text-5xl">
+        Recalibrate Your Inner Vision
+      </h2>
+
+      {/* Main body */}
+      <div className="space-y-7 text-base leading-relaxed text-white/65 md:text-lg">
+        <p>
+          Your perception is the filter through which reality is rendered. When that filter is
+          clouded by stress, fatigue, or the constant hum of daily noise, the world appears
+          limited—a rigid map of obstacles and binary choices.
+        </p>
+        <p>
+          ONDA Life serves as a precision tool to clear that lens. By aligning your physiological
+          rhythms with your conscious intent, we help you shift from reactive survival to a state of
+          creative presence.
+        </p>
+      </div>
+
+      {/* Insight block */}
+      <div className="my-14 rounded-2xl border border-terminal-green/20 bg-terminal-green/[0.04] px-8 py-10">
+        <p className="mb-6 font-serif text-xl leading-relaxed text-white/90 md:text-2xl">
+          You do not simply observe the world; you broadcast it.
+        </p>
+        <p className="text-base leading-relaxed text-white/55 md:text-lg">
+          Through biofeedback and deep awareness, you begin to detect the "glitches" in your
+          internal architecture. As you smooth out these inner frequencies, the world outside
+          responds in kind—opening doors where there were once walls and revealing brilliance where
+          there was only gray.
+        </p>
+      </div>
+
+      {/* Final Chord */}
+      <div className="relative my-16 overflow-hidden rounded-2xl px-6 py-20 text-center md:px-12">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              'radial-gradient(ellipse at center, rgba(0,255,170,0.09) 0%, transparent 70%)',
+            animation: 'is-breathe 7s ease-in-out infinite',
+          }}
+        />
+        <p className="relative font-serif text-xl leading-relaxed text-white/90 md:text-2xl md:leading-relaxed">
+          ONDA Life helps you clear the noise so your inner vision can finally render the world you
+          deserve.
+        </p>
+      </div>
+
       {/* CTA */}
       <div className="text-center">
         <Link
