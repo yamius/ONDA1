@@ -49,6 +49,7 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'energy-sensor-leptin': 'energy-grid',
   'neural-optimizer-estrogen': 'cognitive-engine',
   'energy-governor-tsh': 'energy-grid',
+  'adaptation-hack-range-fractionation': 'power-grid',
 }
 
 const ARTICLE_SYNC_TIMES: Record<string, string> = {
