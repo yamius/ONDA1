@@ -238,8 +238,51 @@ export function InnerSpectrumPage() {
         </p>
       </div>
 
+      {/* ─── Section divider ─── */}
+      <div className="my-20 border-t border-white/[0.06]" />
+
+      {/* Section label */}
+      <div className="mb-8 font-mono text-xs tracking-widest text-terminal-green/60">
+        [ THE VITAL SIGNAL ]
+      </div>
+
+      {/* Header */}
+      <h2 className="mb-12 font-serif text-3xl font-bold leading-snug text-white md:text-5xl">
+        Emotions: The Fuel of Reality
+      </h2>
+
+      {/* Main body */}
+      <div className="space-y-7 text-base leading-relaxed text-white/65 md:text-lg">
+        <p>
+          We are often taught to view emotions as a distraction from calm. In reality, emotions are
+          the mechanism through which we claim responsibility for our choices. They are what make a
+          moment matter. Without the "noise" of feeling, life is but a flat, sterile render.
+        </p>
+      </div>
+
+      {/* Insight block */}
+      <div className="my-14 rounded-2xl border border-terminal-green/20 bg-terminal-green/[0.04] px-8 py-10">
+        <p className="mb-5 font-serif text-xl leading-relaxed text-white/90 md:text-2xl">
+          Emotions are the way life confirms its own authenticity.
+        </p>
+        <p className="text-base leading-relaxed text-white/55 md:text-lg">
+          They provide the texture, depth, and resonance that transform dry logic into the living
+          architecture of your experience.
+        </p>
+      </div>
+
+      {/* The ONDA Approach */}
+      <div className="space-y-7 text-base leading-relaxed text-white/65 md:text-lg">
+        <p>
+          ONDA Life is not about suppressing your feelings; it's about decoding them. Using
+          biofeedback as a tuning fork, you learn to distinguish between the dissonant hum of stress
+          and the creative vibration of passion. We give you the tools to channel your emotional
+          energy into the very force that shapes your world.
+        </p>
+      </div>
+
       {/* CTA */}
-      <div className="text-center">
+      <div className="mt-20 text-center">
         <Link
           to="/#download"
           className="inline-block font-mono text-sm text-terminal-green/50 transition-colors hover:text-terminal-green"
