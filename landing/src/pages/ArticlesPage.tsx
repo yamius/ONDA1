@@ -137,24 +137,6 @@ export function ArticlesPage() {
         Science-backed guides for nervous system optimization. From vagal tone to consciousness architecture.
       </p>
 
-      {/* Featured Articles */}
-      <div className="mb-12">
-        <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-          [ FEATURED ARTICLES ]
-        </h2>
-        <div className="flex flex-wrap gap-3">
-          {featuredArticles.map((article) => (
-            <Link
-              key={article.slug}
-              to={article.path}
-              className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/40 transition-all hover:border-white/20 hover:text-white/60"
-            >
-              {article.title}
-            </Link>
-          ))}
-        </div>
-      </div>
-
       {/* Search */}
       <div className="mb-8">
         <div className="relative">
@@ -252,6 +234,24 @@ export function ArticlesPage() {
           </p>
         </div>
       )}
+
+      {/* Featured Articles */}
+      <div className="mt-16">
+        <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
+          [ FEATURED ARTICLES ]
+        </h2>
+        <div className="flex flex-wrap gap-3">
+          {featuredArticles.map((article) => (
+            <Link
+              key={article.slug}
+              to={article.path}
+              className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/40 transition-all hover:border-white/20 hover:text-white/60"
+            >
+              {article.title}
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   )
 }
