@@ -51,8 +51,9 @@ export function CtaSection() {
         <div className="mb-6 inline-block rounded-full border border-terminal-green/25 bg-black/40 px-5 py-1.5 font-mono text-[11px] tracking-[0.2em] text-terminal-green">
           [ READY TO UPGRADE? ]
         </div>
-        <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-5xl">
-          Initialize Your System
+        <h2 className="mb-4 font-mono text-2xl font-bold tracking-tight md:text-5xl">
+          <span className="text-terminal-green">Initialize</span>{' '}
+          <span className="text-white">Your System</span>
         </h2>
         <p className="mb-10 text-sm text-white/40">
           You found ONDA... and ONDA found you.
