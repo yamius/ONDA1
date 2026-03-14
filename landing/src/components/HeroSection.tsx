@@ -177,11 +177,16 @@ export function HeroSection() {
 
         {/* Scroll indicator */}
         <div className="flex justify-center pb-4 md:pb-8">
-          <div className="animate-bounce text-cyan-400/60" aria-hidden="true">
+          <button
+            type="button"
+            aria-label="Scroll to download"
+            onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
+            className="animate-bounce text-cyan-400/60 transition-colors hover:text-cyan-400 cursor-pointer bg-transparent border-0 p-0"
+          >
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M12 5v14M5 12l7 7 7-7" />
             </svg>
-          </div>
+          </button>
         </div>
       </div>
     </section>
