@@ -174,6 +174,70 @@ export function InnerSpectrumPage() {
         </p>
       </div>
 
+      {/* ─── Section divider ─── */}
+      <div className="my-20 border-t border-white/[0.06]" />
+
+      {/* Section label */}
+      <div className="mb-8 font-mono text-xs tracking-widest text-terminal-green/60">
+        [ THE WEIGHT OF CHOICE ]
+      </div>
+
+      {/* Header */}
+      <h2 className="mb-12 font-serif text-3xl font-bold leading-snug text-white md:text-5xl">
+        Making Choice Real
+      </h2>
+
+      {/* Main body */}
+      <div className="space-y-7 text-base leading-relaxed text-white/65 md:text-lg">
+        <p>
+          Every decision we make leaves a trace—not only in the world outside but within our very
+          biology. As long as these traces remain invisible, we can ignore the consequences of our
+          actions. We often call this "noise," but in reality, it is an attempt to escape the weight
+          of our own state.
+        </p>
+        <p>
+          Biofeedback turns the invisible into the undeniable. When you see exactly how your body
+          reacts to anger, exhaustion, or joy, the illusion of ignorance vanishes. At that moment,
+          your internal landscape becomes a fact you can no longer ignore.
+        </p>
+      </div>
+
+      {/* Insight block */}
+      <div className="my-14 rounded-2xl border border-terminal-green/20 bg-terminal-green/[0.04] px-8 py-10">
+        <p className="mb-3 font-serif text-xl leading-relaxed text-white/90 md:text-2xl">
+          Responsibility is what makes a choice real.
+        </p>
+        <p className="font-serif text-xl leading-relaxed text-white/70 md:text-2xl">
+          To see your state is to acknowledge your power over it.
+        </p>
+      </div>
+
+      {/* The Role of ONDA Life */}
+      <div className="space-y-7 text-base leading-relaxed text-white/65 md:text-lg">
+        <p>
+          We created ONDA Life so you don't have to carry this weight alone. The app takes on a
+          share of the responsibility for monitoring your life, acting as an external "sense of
+          truth." It doesn't make decisions for you, but it ensures you never miss the moment when
+          your inner world requires your presence.
+        </p>
+      </div>
+
+      {/* Final Chord */}
+      <div className="relative my-16 overflow-hidden rounded-2xl px-6 py-20 text-center md:px-12">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0"
+          style={{
+            background:
+              'radial-gradient(ellipse at center, rgba(0,255,170,0.09) 0%, transparent 70%)',
+            animation: 'is-breathe 7s ease-in-out infinite',
+          }}
+        />
+        <p className="relative font-serif text-xl leading-relaxed text-white/90 md:text-2xl md:leading-relaxed">
+          ONDA Life shares the responsibility for your most important project—your life.
+        </p>
+      </div>
+
       {/* CTA */}
       <div className="text-center">
         <Link
