@@ -5017,6 +5017,109 @@ Part 6 describes the "Mirror Neuron System (Premotor Cortex)" as "your biologica
 `,
     relatedSlugs: ['motor-cortex', 'mirror-neurons', 'prefrontal-cortex', 'sensorimotor-cortex'],
   },
+  {
+    slug: 'range-fractionation',
+    title: 'Range Fractionation',
+    category: 'Biological Software',
+    shortDescription:
+      'A biohacking method that distributes stimulus intensity across extreme ranges instead of targeting a single average point — forcing constant system recalibration and bypassing homeostatic stagnation.',
+    content: `
+
+**Range Fractionation** is a biological adaptation strategy built on one core insight: if you always train, eat, or recover at the same intensity level, your receptors desensitize and your system stops adapting.
+
+## The Core Principle
+
+Instead of operating at one fixed point, Range Fractionation splits your stimulus across multiple distinct "fractions" — extreme ends of the range rather than the middle. The system is forced to constantly recalibrate its internal resources across different signal amplitudes.
+
+## Applications
+
+- **Mechanical (Training):** Fragment load across ultra-heavy (1–3 reps, CNS activation), moderate (8–12 reps, hypertrophy), and light/high-velocity (explosive power). All fiber types upgrade simultaneously.
+- **Thermal:** Alternate between cold (maximal vasoconstriction, norepinephrine surge) and heat (vasodilation, heat shock protein activation). Trains full vascular range.
+- **Amplitude Shift:** Never run two identical days. High Load must be followed by Low Load/High Recovery — biological adaptation requires contrast.
+- **Micro-Fractionation:** Small daily stimulus doses + one massive weekly "Impact" session. Maintains baseline tone while delivering periodic deep structural resets.
+
+## Why It Works
+
+Biological systems adapt to the range they're exposed to. Homeostatic stagnation occurs when the range narrows to a single, predictable zone. Range Fractionation is an **antifragility strategy** — instead of seeking stable averages, it builds efficiency across extremes.
+
+## Key Metric
+
+Heart Rate Variability (HRV) combined with load/endurance progression. Rising HRV + increasing performance = system pulled from stagnation, adaptation protocols active.
+`,
+    relatedSlugs: ['homeostasis', 'heart-rate-variability', 'antifragility'],
+  },
+  {
+    slug: 'heat-shock-proteins',
+    title: 'Heat Shock Proteins',
+    category: 'Biological Software',
+    shortDescription:
+      'Molecular chaperones activated by thermal stress that repair damaged proteins, enhance cellular resilience, and protect the system against heat and cold-induced damage.',
+    content: `
+
+**Heat Shock Proteins (HSPs)** are a family of proteins produced by cells in response to thermal stress. Despite the name, they're activated by both heat exposure (sauna) and cold (ice bath) — any significant temperature shift triggers their release.
+
+## Function
+
+HSPs act as **molecular chaperones**: they repair misfolded proteins, prevent aggregation of damaged cellular components, and support protein homeostasis under stress. They're a core part of the cellular repair system.
+
+## Key Types
+
+- **HSP70** — primary stress response protein; activated by heat, cold, and oxidative stress
+- **HSP90** — regulates hormone receptors and signaling proteins
+- **HSP27** — protects against apoptosis; enhances cytoskeletal stability
+
+## Activation Protocol
+
+| Stimulus | Mechanism | Threshold |
+|----------|-----------|-----------|
+| Sauna (80–100°C) | Direct thermal stress | 15–20 min |
+| Ice bath (4–15°C) | Cold shock response | 3–5 min |
+| Intense exercise | Metabolic heat + mechanical stress | High-intensity bouts |
+
+## In ONDA Life
+
+Heat Shock Proteins are a key outcome of the **Thermal Range Fractionation** protocol — hitting both temperature extremes in sequence maximizes HSP activation and trains the full vascular range simultaneously.
+
+## Practical Signal
+
+Post-sauna or post-cold session: reduced muscle soreness, faster recovery, and improved training adaptation are downstream markers of HSP activity.
+`,
+    relatedSlugs: ['range-fractionation', 'autophagy', 'mitochondria'],
+  },
+  {
+    slug: 'antifragility',
+    title: 'Antifragility',
+    category: 'ONDA Protocol',
+    shortDescription:
+      'A biological property of systems that grow stronger and more adaptive under stress, volatility, and disorder — the functional opposite of fragility.',
+    content: `
+
+**Antifragility** (coined by Nassim Taleb) describes systems that don't merely withstand stress — they actively improve because of it. In biological terms, it's the difference between a system that tolerates damage and one that upgrades from it.
+
+## Fragile vs. Robust vs. Antifragile
+
+| Type | Response to Stress | Biological Analogy |
+|------|-------------------|-------------------|
+| **Fragile** | Breaks | Overtraining without recovery |
+| **Robust** | Withstands, unchanged | Maintaining baseline with no adaptation |
+| **Antifragile** | Grows stronger | Supercompensation after structured load |
+
+## Biological Mechanisms
+
+- **Hormesis** — low-dose stressors trigger disproportionately large adaptive responses
+- **Supercompensation** — post-stress recovery overshoots baseline, building capacity
+- **Neuroplasticity** — the nervous system rewires in response to novel, demanding stimuli
+
+## How to Build It
+
+Antifragility requires **variability**, not just intensity. Constant, predictable stress produces adaptation plateaus. Unpredictable range variation — different loads, temperatures, recovery cycles — keeps the system in a perpetual upgrade loop.
+
+## In ONDA Life
+
+Range Fractionation is the primary antifragility strategy in the ONDA architecture. By distributing stimulus across extreme ranges instead of targeting a stable average, the system learns to operate efficiently across all conditions.
+`,
+    relatedSlugs: ['range-fractionation', 'neuroplasticity', 'homeostasis'],
+  },
 ]
 
 // Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol) (Neural Hardware, Biological Software, OS States, ONDA Protocol)

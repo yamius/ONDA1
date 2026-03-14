@@ -216,4 +216,8 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   tensegrity: 'Neural Hardware',
   vasomotricity: 'Neural Hardware',
   'premotor-cortex': 'Neural Hardware',
+  // From article: adaptation-hack-range-fractionation
+  'range-fractionation': 'Biological Software',
+  'heat-shock-proteins': 'Biological Software',
+  antifragility: 'ONDA Protocol',
 }

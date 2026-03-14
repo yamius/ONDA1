@@ -258,24 +258,20 @@ localStorage key
    - Для JSON-LD TechArticle с keywords, audience, dependencies, proficiencyLevel — добавить slug в блок `techArticleExtras` (см. dopamine-stacking, cacao-stem-cells)
    - **FAQ schema:** добавить slug в `FAQ_SCHEMA` с массивом `{ question, answer }[]` для FAQPage JSON-LD
 
-6. **Стили протоколов (ArticlePage)** — при необходимости:
-   - `h3`: добавить `isXxxProtocol` и цвет (например `text-violet-400`)
-   - `blockquote`: добавить `isXxxProtocol` для бордера (например `border-violet-500`)
-
-7. **TheStackPage.tsx** — если протоколы должны быть в The Stack:
+6. **TheStackPage.tsx** — если протоколы должны быть в The Stack:
    - Добавить в нужную секцию `STACK_COMPONENTS`: `{ id: 'тот_же_protocolId', name: 'PROTOCOL_NAME', params: '...' }`
    - ⚠️ `id` должен совпадать с `protocolId` из статьи и ключом в `PROTOCOL_TO_ARTICLE`
 
-8. **Опционально** `landing/src/data/articles-categories.ts`:
+7. **Опционально** `landing/src/data/articles-categories.ts`:
    - Добавить slug в `FEATURED_ARTICLE_SLUGS` для вывода в Featured
 
-9. **Термины из статьи → глоссарий** (обязательно, если в статье есть новые термины):
+8. **Термины из статьи → глоссарий** (обязательно, если в статье есть новые термины):
    - Добавить каждый термин в `landing/src/data/glossary.ts` (см. правило «Термины из статей» в разделе Глоссарий)
    - Добавить slug в `landing/src/data/glossary-categories.ts` → `SLUG_TO_CATEGORY`
    - При необходимости добавить аббревиатуры в `landing/src/utils/glossaryLinks.ts` → `ARTICLE_ABBREVIATIONS`
    - В тексте статьи использовать те же формулировки/названия — ссылки на глоссарий подставляются автоматически
 
-10. **Если есть изображение:**
+9. **Если есть изображение:**
    - Сохранить в `landing/public/images/articles/` с SEO-именем (keyword-topic-onda.png)
    - Заполнить `image`, `imageAlt`, `imageTitle`, при необходимости `imageCaption` (видимая подпись)
    - Выбрать `imagePlacement`: `'header'` — под заголовком; `'content'` — inline в markdown после intro
