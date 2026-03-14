@@ -88,16 +88,19 @@ export function InnerSpectrumPage() {
   return (
     <div className="relative mx-auto max-w-2xl px-4 pb-32 pt-8 md:px-6">
 
-      {/* Interactive gradient background */}
+      {/* Interactive gradient background — z-[2] sits above the solid Layout bg but below content */}
       <div
         ref={bgRef}
         aria-hidden
-        className="pointer-events-none fixed inset-0 -z-10"
+        className="pointer-events-none fixed inset-0 z-[2]"
         style={{
           background:
-            'radial-gradient(ellipse 60% 50% at var(--gx, 50%) var(--gy, 50%), rgba(0,255,170,0.055) 0%, transparent 70%)',
+            'radial-gradient(ellipse 60% 50% at var(--gx, 50%) var(--gy, 50%), rgba(0,255,170,0.07) 0%, transparent 70%)',
         }}
       />
+
+      {/* All page content sits above the gradient */}
+      <div className="relative z-[3]">
 
       {/* Section label */}
       <div className="mb-8 font-mono text-xs tracking-widest text-terminal-green/60">
@@ -340,6 +343,8 @@ export function InnerSpectrumPage() {
           ← Initialize Your System
         </Link>
       </div>
+
+      </div>{/* end z-[3] content wrapper */}
     </div>
   )
 }
