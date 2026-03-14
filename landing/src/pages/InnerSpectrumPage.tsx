@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 const SITE_URL = 'https://onda-life.com'
@@ -20,6 +20,45 @@ const PAGE_DESC =
   'Beyond the Binary: The Art of Letting Go. Where control ends, true connection with reality begins.'
 
 export function InnerSpectrumPage() {
+  const bgRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const el = bgRef.current
+    if (!el) return
+
+    const isMobile = () => window.matchMedia('(pointer: coarse)').matches
+
+    let raf = 0
+    let tx = 50, ty = 50
+    let cx = 50, cy = 50
+
+    const onMove = (e: MouseEvent) => {
+      tx = (e.clientX / window.innerWidth) * 100
+      ty = (e.clientY / window.innerHeight) * 100
+    }
+
+    const tick = () => {
+      if (isMobile()) {
+        const t = Date.now() / 8000
+        tx = 50 + Math.sin(t) * 20
+        ty = 50 + Math.cos(t * 0.7) * 20
+      }
+      cx += (tx - cx) * 0.04
+      cy += (ty - cy) * 0.04
+      el.style.setProperty('--gx', `${cx.toFixed(2)}%`)
+      el.style.setProperty('--gy', `${cy.toFixed(2)}%`)
+      raf = requestAnimationFrame(tick)
+    }
+
+    window.addEventListener('mousemove', onMove, { passive: true })
+    raf = requestAnimationFrame(tick)
+
+    return () => {
+      window.removeEventListener('mousemove', onMove)
+      cancelAnimationFrame(raf)
+    }
+  }, [])
+
   useEffect(() => {
     document.title = PAGE_TITLE
     setMeta('description', PAGE_DESC)
@@ -47,7 +86,18 @@ export function InnerSpectrumPage() {
   }, [])
 
   return (
-    <div className="mx-auto max-w-2xl px-4 pb-32 pt-8 md:px-6">
+    <div className="relative mx-auto max-w-2xl px-4 pb-32 pt-8 md:px-6">
+
+      {/* Interactive gradient background */}
+      <div
+        ref={bgRef}
+        aria-hidden
+        className="pointer-events-none fixed inset-0 -z-10"
+        style={{
+          background:
+            'radial-gradient(ellipse 60% 50% at var(--gx, 50%) var(--gy, 50%), rgba(0,255,170,0.055) 0%, transparent 70%)',
+        }}
+      />
 
       {/* Section label */}
       <div className="mb-8 font-mono text-xs tracking-widest text-terminal-green/60">
