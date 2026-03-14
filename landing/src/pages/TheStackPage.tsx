@@ -119,6 +119,10 @@ const STACK_COMPONENTS: Component[] = [
       { id: 'muscle-grip-strength', name: 'GRIP_STRENGTH_CALIBRATION', params: '(WEEKLY_DYNAMOMETER)' },
       { id: 'muscle-metabolic-overclocking', name: 'METABOLIC_OVERCLOCKING', params: '(TABATA_4min)' },
       { id: 'muscle-peptide-patch', name: 'RECOVERY_FIRMWARE', params: '(BPC157_TB500)' },
+      { id: 'range-frac-mechanical', name: 'MECHANICAL_RANGE_FRAC', params: '(1-3_8-12_VELOCITY)' },
+      { id: 'range-frac-thermal', name: 'THERMAL_RANGE_FRAC', params: '(ICE_BATH→SAUNA)' },
+      { id: 'range-frac-amplitude-shift', name: 'AMPLITUDE_SHIFT', params: '(HIGH↔LOW_LOAD)' },
+      { id: 'range-frac-micro-dosing', name: 'MICRO_FRACTIONATION', params: '(DAILY_DOSE+WEEKLY_IMPACT)' },
     ],
   },
   {
