@@ -55,9 +55,12 @@ export function CtaSection() {
           <span className="text-terminal-green">Initialize</span>{' '}
           <span className="text-white">Your System</span>
         </h2>
-        <p className="mb-10 text-sm text-white/40">
+        <a
+          href="/inner-spectrum"
+          className="mb-10 block cursor-pointer text-sm text-white/40 transition-colors hover:text-white/70"
+        >
           The world around you becomes how you see it inside yourself.
-        </p>
+        </a>
 
         <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
           <button

@@ -17,6 +17,7 @@ import { MdArticlePage } from './pages/MdArticlePage'
 import { PartPage } from './pages/PartPage'
 import { LevelPage } from './pages/LevelPage'
 import { NotFoundPage } from './pages/NotFoundPage'
+import { InnerSpectrumPage } from './pages/InnerSpectrumPage'
 import { getArticleBySlug } from './data/articles'
 
 function ArticlesSlugRouter() {
@@ -42,6 +43,7 @@ export function createApp(location: string) {
           <Route path="/articles/:slug"  element={<ArticlesSlugRouter />} />
           <Route path="/part/:slug"      element={<PartPage />} />
           <Route path="/level/:number"   element={<LevelPage />} />
+          <Route path="/inner-spectrum" element={<InnerSpectrumPage />} />
           <Route path="*"               element={<NotFoundPage />} />
         </Route>
       </Routes>

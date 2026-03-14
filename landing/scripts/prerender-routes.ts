@@ -15,6 +15,7 @@ const staticPaths = [
   '/contact',
   '/the-stack',
   '/sitemap',
+  '/inner-spectrum',
 ]
 
 export function getPrerenderRoutes(): string[] {
