@@ -50,6 +50,7 @@ const ARTICLE_SHORT: Record<string, string> = {
   'energy-sensor-leptin': 'leptin',
   'neural-optimizer-estrogen': 'estrogen',
   'energy-governor-tsh': 'tsh',
+  'adaptation-hack-range-fractionation': 'range-frac',
 }
 
 /** Protocol base id -> article slug (for building unique IDs) */
@@ -186,6 +187,11 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'tsh-fuel-check': 'energy-governor-tsh',
   'tsh-thermal-test': 'energy-governor-tsh',
   'tsh-stress-bypass': 'energy-governor-tsh',
+  // adaptation-hack-range-fractionation
+  'range-frac-mechanical': 'adaptation-hack-range-fractionation',
+  'range-frac-thermal': 'adaptation-hack-range-fractionation',
+  'range-frac-amplitude-shift': 'adaptation-hack-range-fractionation',
+  'range-frac-micro-dosing': 'adaptation-hack-range-fractionation',
 }
 
 export const PROTOCOL_STORAGE_PREFIX = 'onda-protocol-'

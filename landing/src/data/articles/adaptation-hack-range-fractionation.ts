@@ -41,37 +41,25 @@ const article: Article = {
 
 ### 1. MODULE: PHYSICAL TRAINING (Mechanical Range)
 
-Instead of performing standard 3×10 sets with a fixed weight, you fragment the load:
+Instead of performing standard 3×10 sets with a fixed weight, you fragment the load into three fractions: **Ultra-Heavy (1–3 reps)** for CNS activation and recruitment of high-threshold motor units, **Moderate (8–12 reps)** for hypertrophy and metabolic stress, and **Light/High-Velocity** for explosive power and capillary density optimization.
 
-**Fraction A: Ultra-Heavy (1–3 reps)** — CNS activation and recruitment of high-threshold motor units.
-
-**Fraction B: Moderate (8–12 reps)** — Hypertrophy and metabolic stress.
-
-**Fraction C: Light/High-Velocity** — Explosive power and capillary density optimization.
-
-> Logic: The system receives a composite signal to upgrade all fiber types simultaneously.
+> **The Hack:** Fragment the load: 1–3 reps ultra-heavy (CNS activation), 8–12 reps moderate (hypertrophy), light/high-velocity (explosive power). The system receives a composite signal to upgrade all fiber types simultaneously.
 
 ---
 
 ### 2. MODULE: NUTRITION & HORMONES (Nutritional Fractionation)
 
-Aligning with the protocols for Leptin and Insulin:
+Aligning with the protocols for Leptin and Insulin — alternate **Deep Deficit** (16–24 hour fasting periods) with **Surplus Refeed** windows that signal system safety and resource abundance.
 
-**Range 1: Deep Deficit** — 16–24 hour fasting periods.
-
-**Range 2: Surplus (Refeed)** — Signaling system safety and resource abundance.
-
-> Logic: Prevents the metabolic downclocking that inevitably follows prolonged linear caloric deficits.
+This prevents the metabolic downclocking that inevitably follows prolonged linear caloric deficits.
 
 ---
 
 ### 3. MODULE: THERMAL STRESS (Thermal Range)
 
-**Cold Fraction:** Ice bath — maximal vasoconstriction, norepinephrine surge.
+Train vascular elasticity by hitting both extremes: cold fraction for maximal vasoconstriction and norepinephrine surge, heat fraction for vasodilation and heat shock protein activation.
 
-**Heat Fraction:** Sauna — maximal vasodilation, heat shock protein activation.
-
-> Logic: Training the elasticity of the vascular system and thermoregulatory mechanisms via extreme range endpoints.
+> **The Hack:** Ice bath for maximal vasoconstriction and norepinephrine surge, then sauna for vasodilation and heat shock protein activation. Train vascular elasticity via extreme range endpoints.
 
 ---
 
@@ -83,7 +71,7 @@ Aligning with the protocols for Leptin and Insulin:
 
 **The Logic:** Creating high contrast is the primary driver of biological adaptation.
 
-### PROTOCOL_02 > MICRO-FRACTIONATION (Micro-Dosing vs. Macro-Loading)
+### PROTOCOL_02 > MICRO-FRACTIONATION
 
 > **The Hack:** Alternate between small daily stimulus doses and massive 'Impact' sessions once a week.
 
@@ -123,24 +111,24 @@ Range Fractionation is an Anti-fragility Strategy. Instead of attempting to be '
 `,
   howToSteps: [
     {
-      name: 'Amplitude Shift (Load Contrast)',
-      text: 'Never execute two identical days in a row. If today was High Load, tomorrow must be Low Load/High Recovery. High contrast is the primary driver of biological adaptation.',
-      protocolId: 'range-fractionation-amplitude-shift',
-    },
-    {
-      name: 'Micro-Fractionation (Micro-Dosing vs. Macro-Loading)',
-      text: 'Alternate between small daily stimulus doses and massive Impact sessions once a week. Maintain baseline tone while periodically subjecting the system to deep structural resets.',
-      protocolId: 'range-fractionation-micro-dosing',
-    },
-    {
       name: 'Mechanical Range Fractionation (Training)',
-      text: 'Fragment your sets: 1–3 reps ultra-heavy for CNS activation, 8–12 reps moderate for hypertrophy, light/high-velocity for explosive power. Upgrade all fiber types simultaneously.',
-      protocolId: 'range-fractionation-mechanical',
+      text: "Fragment the load: 1–3 reps ultra-heavy (CNS activation), 8–12 reps moderate (hypertrophy), light/high-velocity (explosive power). The system receives a composite signal to upgrade all fiber types simultaneously.",
+      protocolId: 'range-frac-mechanical',
     },
     {
       name: 'Thermal Range Fractionation (Sauna + Cold)',
-      text: 'Ice bath for maximal vasoconstriction and norepinephrine surge, followed by sauna for vasodilation and heat shock protein activation. Train vascular elasticity across extreme range endpoints.',
-      protocolId: 'range-fractionation-thermal',
+      text: "Ice bath for maximal vasoconstriction and norepinephrine surge, then sauna for vasodilation and heat shock protein activation. Train vascular elasticity via extreme range endpoints.",
+      protocolId: 'range-frac-thermal',
+    },
+    {
+      name: 'Amplitude Shift (Load Contrast)',
+      text: "Never execute two identical days in a row. If today was 'High Load,' tomorrow must be 'Low Load/High Recovery.'",
+      protocolId: 'range-frac-amplitude-shift',
+    },
+    {
+      name: 'Micro-Fractionation (Micro-Dosing vs. Macro-Loading)',
+      text: "Alternate between small daily stimulus doses and massive 'Impact' sessions once a week.",
+      protocolId: 'range-frac-micro-dosing',
     },
   ],
 }

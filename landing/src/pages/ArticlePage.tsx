@@ -89,6 +89,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'energy-sensor-leptin': '4 min 30 sec',
   'neural-optimizer-estrogen': '4 min 45 sec',
   'energy-governor-tsh': '4 min 10 sec',
+  'adaptation-hack-range-fractionation': '4 min 30 sec',
 }
 
 function extractText(node: React.ReactNode): string {
