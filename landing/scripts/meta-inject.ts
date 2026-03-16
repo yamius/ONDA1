@@ -20,7 +20,7 @@ function buildCanonicalUrl(route: string): string {
 }
 const DEFAULT_TITLE = 'ONDA Life | Biohacking App, HRV Tracker & Consciousness OS'
 const DEFAULT_DESC =
-  'Upgrade your biological code with ONDA Life. A systematic biohacking platform for HRV tracking, neural hardware optimization, and structured 8-level consciousness development.'
+  'Your body is a biological computer. ONDA Life is the OS that upgrades it — 8 levels of structured consciousness development, HRV tracking, and neural optimization protocols.'
 
 const ABOUT_TITLE = 'About ONDA Life | Operating System for Your Consciousness & Biohacking'
 const ABOUT_DESC =
@@ -707,6 +707,15 @@ export function getMetaForRoute(route: string): RouteMeta {
 
   if (route === '/') {
     return { title: DEFAULT_TITLE, description: DEFAULT_DESC, url, breadcrumbs, ogType: 'website' }
+  }
+  if (route === '/sitemap') {
+    return {
+      title: 'Site Map | ONDA Life — All Pages & Sections',
+      description: 'Complete index of all ONDA Life pages: articles, glossary terms, 8 levels, practice modules, and main sections. Navigate the full knowledge base.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+    }
   }
   if (route === '/about') {
     return {
