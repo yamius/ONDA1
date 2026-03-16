@@ -5089,6 +5089,50 @@ In the ONDA framework, Leptin is the intersection point between the Photic Signa
     relatedSlugs: ['circadian-rhythm', 'melatonin', 'cortisol'],
   },
   {
+    slug: 'insulin',
+    title: 'Insulin',
+    category: 'Biological Software',
+    shortDescription:
+      'An anabolic hormone secreted by the pancreas, classified in the ONDA architecture as the Master Storage Key. It manages glucose distribution from the bloodstream into cells and governs the system\'s storage vs. oxidation mode.',
+    content: `
+
+**Insulin** is an anabolic hormone secreted by the pancreas. In the ONDA architecture, it is classified as the **Master Storage Key**. Its primary function is to manage the distribution of glucose from the bloodstream into the cells — muscles, liver, and adipose tissue.
+
+## SYSTEM_LOGIC: OPERATING PRINCIPLE
+
+Insulin acts as the system's resource administrator:
+
+- **Glucose Routing:** Upon nutrient ingestion, insulin levels rise, "unlocking" cells to accept glucose.
+- **Storage Activation:** High insulin levels shift the system into storage mode (anabolism). It inhibits lipolysis (fat burning) because the system perceives an abundance of external energy.
+- **Energy Partitioning:** The ideal scenario is "Muscle-First" partitioning — energy is directed toward active hardware (muscles) rather than archival storage (fat).
+
+## METABOLIC_IMPACT_LOG
+
+> **STATUS: HIGH_SENSITIVITY (Optimal)**
+> Signal: Rapid response to food intake and a swift return to baseline levels.
+> Result: High energy availability, effortless fat oxidation between meals, and efficient tissue repair.
+
+> **STATUS: INSULIN_RESISTANCE (Data Corruption)**
+> Signal: Chronically elevated insulin levels, even during fasting states.
+> Result: The "lock" on fat cells is jammed. The organism cannot access its own energy reserves — fatigue despite excess body fat.
+
+> **STATUS: HYPERINSULINEMIA (System Overload)**
+> Signal: Constant glucose and insulin spikes driven by high-glycemic inputs.
+> Result: Systemic inflammation, growth hormone suppression, and vascular degradation.
+
+## ONDA_STRATEGY: KEY CALIBRATION
+
+In the ONDA framework, managing insulin is the foundation of metabolic flexibility:
+
+- **Muscle First:** Resistance training increases receptor sensitivity in muscle tissue, making it the priority destination for glucose.
+- **Nutrient Timing:** Consuming carbohydrates during periods of peak sensitivity (post-workout) prevents them from being written to "archive" (fat).
+- **Low-Insulin Windows:** Implementing feeding pauses (Intermittent Fasting) allows insulin levels to drop low enough to trigger fat-burning protocols.
+
+[Leptin](/glossary/leptin) — The energy-balance partner; insulin resistance often triggers leptin resistance.
+`,
+    relatedSlugs: ['leptin', 'insulin-sensitivity', 'metabolism'],
+  },
+  {
     slug: 'heat-shock-proteins',
     title: 'Heat Shock Proteins',
     category: 'Biological Software',

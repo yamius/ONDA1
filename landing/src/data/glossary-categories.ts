@@ -222,4 +222,5 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   antifragility: 'ONDA Protocol',
   // From article: circadian-reset-mastering-light
   leptin: 'Biological Software',
+  insulin: 'Biological Software',
 }
