@@ -5053,34 +5053,38 @@ Heart Rate Variability (HRV) combined with load/endurance progression. Rising HR
     title: 'Leptin',
     category: 'Biological Software',
     shortDescription:
-      'Гормон насыщения и главный энергетический датчик системы. Его чувствительность напрямую калибруется через циркадные ритмы и световой сигнал.',
+      'A peptide hormone synthesized by fat cells that functions as the Master Energy Sensor of the human architecture. Its receptor sensitivity is directly calibrated by the Photic Signal and circadian rhythm.',
     content: `
 
-**Leptin** (лептин) — гормон, вырабатываемый жировыми клетками и выполняющий роль энергетического датчика всей системы. Он сигнализирует гипоталамусу об уровне энергетических запасов и управляет ощущением насыщения.
+**Leptin** is a peptide hormone synthesized by adipocytes (fat cells) that functions as the Master Energy Sensor of the human architecture. It transmits real-time data regarding energy reserves to the hypothalamus, regulating long-term satiety and metabolic velocity.
 
-## Циркадная калибровка
+## [ CIRCADIAN_CALIBRATION: THE PHOTIC LINK ]
 
-Чувствительность рецепторов к лептину — не константа. Она напрямую зависит от качества светового сигнала и циркадного ритма:
+The sensitivity of leptin receptors is not a constant — it is directly calibrated by the Photic Signal:
 
-- **Ночью** (в темноте): лептин вырабатывается в пике — система получает точный сигнал о насыщении
-- **При нарушении циркадного ритма**: выработка сдвигается, рецепторы десенсибилизируются — возникает **лептиновая резистентность**
-- **Синий свет ночью**: подавляет мелатонин → нарушает циркадный ритм → снижает лептиновую чувствительность
+- **Night Peak (Darkness):** In total darkness, leptin production reaches its zenith. The system receives an accurate "fuel report," suppressing hunger during the sleep cycle.
+- **Signal Noise (Blue Light):** Artificial light at night suppresses melatonin, leading to circadian de-sync. This causes receptor desensitization — the brain becomes "deaf" to the satiety signal despite high hormone levels.
+- **Morning Initialization (Reset):** Exposure to bright light (>10,000 Lux) immediately after waking synchronizes the [SCN](/glossary/suprachiasmatic-nucleus) (Master Clock), restoring leptin sensitivity for the entire 24-hour cycle.
 
-## Лептин и метаболизм
+## [ METABOLIC_IMPACT_LOG ]
 
-| Состояние | Лептин | Следствие |
-|-----------|--------|-----------|
-| Нормальный циркадный ритм | Высокий ночью | Насыщение, нормальный метаболизм |
-| Сдвинутый ритм | Нарушена секреция | Переедание, набор веса |
-| Хронический недосып | Снижен на 18–20% | Постоянный голод, тяга к углеводам |
+> **STATUS: OPTIMAL_RHYTHM**
+> Signal: High nocturnal leptin amplitude.
+> Result: Deep satiety, stable body composition, high metabolic responsiveness.
 
-## Связь со световым сигналом
+> **STATUS: CIRCADIAN_DRIFT**
+> Signal: Blurred secretion patterns due to nocturnal blue light.
+> Result: Chronic overeating, metabolic stagnation, increased adiposity.
 
-Утреннее воздействие яркого света (>10 000 люкс) в течение 30 минут синхронизирует SCN → нормализует циркадный ритм → восстанавливает лептиновую чувствительность. Это одна из ключевых связей между световым протоколом и метаболическим контролем в архитектуре ONDA.
+> **STATUS: SLEEP_DEPRIVATION**
+> Signal: **18–20% drop** in circulating leptin levels.
+> Result: "Emergency hunger" states, intense cravings for simple carbohydrates.
 
-## В системе ONDA
+## [ SYSTEM_LOGIC: ONDA_PROTOCOL ]
 
-Лептин — точка пересечения фотического сигнала и метаболического управления. Правильная работа с circadian reset напрямую влияет на аппетит, энергию и состав тела — без изменения диеты.
+In the ONDA framework, Leptin is the intersection point between the Photic Signal and Metabolic Management.
+
+**The Hack:** Precise execution of the [Circadian Reset](/articles/circadian-reset-mastering-light) allows for the modulation of appetite and body composition directly through lighting protocols — enabling the system to self-regulate energy balance without the friction of traditional restrictive dieting.
 `,
     relatedSlugs: ['circadian-rhythm', 'melatonin', 'cortisol'],
   },
