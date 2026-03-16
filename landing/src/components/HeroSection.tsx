@@ -145,9 +145,9 @@ export function HeroSection() {
 
         {/* Main heading */}
         <h1 className="mb-4 font-mono text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-6xl lg:text-7xl">
-          <span className="text-cyan-400">ONDA LIFE:</span><br />
-          <span className="text-green-400">Operating System</span><br />
-          <span className="text-white">for Your Consciousness</span>
+          <span className="block text-cyan-400">ONDA LIFE:</span>
+          <span className="block text-green-400">Operating System</span>
+          <span className="block text-white">for Your Consciousness</span>
         </h1>
 
         {/* Subtitle */}
