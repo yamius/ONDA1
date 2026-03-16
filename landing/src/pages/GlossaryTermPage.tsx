@@ -8,7 +8,7 @@ import { injectGlossaryLinks } from '../utils/glossaryLinks'
 import { getArticlesForTerm } from '../data/articles'
 
 const SITE_URL = 'https://onda-life.com'
-const OG_IMAGE = `${SITE_URL}/og-preview.png`
+const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 
 function setMeta(name: string, content: string, isProperty = false) {
   const attr = isProperty ? 'property' : 'name'
@@ -29,16 +29,17 @@ export function GlossaryTermPage() {
     if (!term) return
     const title = `${term.title} | ONDA Life Glossary`
     const url = `${SITE_URL}/glossary/${term.slug}`
+    const ogDesc = `${term.title} in the ONDA system: ${term.shortDescription} Learn how this element affects your biocomputer.`
     document.title = title
-    setMeta('description', term.shortDescription)
+    setMeta('description', ogDesc)
     setMeta('og:title', title, true)
-    setMeta('og:description', term.shortDescription, true)
+    setMeta('og:description', ogDesc, true)
     setMeta('og:url', url, true)
     setMeta('og:image', OG_IMAGE, true)
     setMeta('og:type', 'article', true)
     setMeta('twitter:card', 'summary_large_image', true)
     setMeta('twitter:title', title, true)
-    setMeta('twitter:description', term.shortDescription, true)
+    setMeta('twitter:description', ogDesc, true)
     setMeta('twitter:image', OG_IMAGE, true)
     return () => {
       document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'

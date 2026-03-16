@@ -9,7 +9,7 @@ import { glossaryTerms } from '../data/glossary'
 import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 
 const SITE_URL = 'https://onda-life.com'
-const OG_IMAGE = `${SITE_URL}/og-preview.png`
+const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 
 /** Maps article slug to TheStack section id (for /the-stack#section-id anchor) */
 const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
