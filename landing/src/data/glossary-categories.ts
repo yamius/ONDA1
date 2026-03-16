@@ -223,4 +223,5 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   // From article: circadian-reset-mastering-light
   leptin: 'Biological Software',
   insulin: 'Biological Software',
+  glucagon: 'Biological Software',
 }

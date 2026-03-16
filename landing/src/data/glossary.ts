@@ -5133,6 +5133,50 @@ In the ONDA framework, managing insulin is the foundation of metabolic flexibili
     relatedSlugs: ['leptin', 'insulin-sensitivity', 'metabolism'],
   },
   {
+    slug: 'glucagon',
+    title: 'Glucagon',
+    category: 'Biological Software',
+    shortDescription:
+      'A peptide hormone secreted by the pancreas, classified in the ONDA architecture as the Master Retrieval Key. It activates stored energy release and switches the system from Storage Mode to Resource Utilization.',
+    content: `
+
+**Glucagon** is a peptide hormone secreted by the alpha cells of the pancreas. In the ONDA architecture, it is classified as the **Master Retrieval Key**. Its primary function is to prevent critical drops in blood glucose by activating protocols that release stored energy from internal reserves.
+
+## SYSTEM_LOGIC: OPERATING PRINCIPLE
+
+Glucagon acts as the system's resource recovery administrator, engaging whenever "incoming data" (nutrient intake) ceases:
+
+- **Glucose Mobilization:** When glucose levels drop, glucagon triggers the liver to convert stored glycogen back into glucose (Glycogenolysis).
+- **Lipolysis Activation:** Glucagon is a primary signal for initiating fat breakdown. It switches the system from "Storage Mode" to "Resource Utilization."
+- **Gluconeogenesis:** If glycogen stores are depleted, glucagon initiates the synthesis of new glucose from non-carbohydrate sources — amino acids and lactate.
+
+## METABOLIC_IMPACT_LOG
+
+> **STATUS: METABOLIC_FLEXIBILITY (Optimal)**
+> Signal: Adequate glucagon elevation during periods of fasting or exercise.
+> Result: The system seamlessly transitions to fat-burning. Stable energy levels without constant carbohydrate input.
+
+> **STATUS: GLUCAGON_SUPPRESSION (Locked)**
+> Signal: Chronically high insulin levels (Hyperinsulinemia) suppress glucagon secretion.
+> Result: The "lock" on fat cells remains jammed. Despite a calorie deficit, the organism cannot access its own fat reserves — muscle loss and intense hunger.
+
+> **STATUS: EMERGENCY_CATABOLISM (Overload)**
+> Signal: Extremely high glucagon levels coupled with total resource exhaustion.
+> Result: Excessive breakdown of muscle tissue to provide glucose for brain function.
+
+## ONDA_STRATEGY: RETRIEVAL ACTIVATION
+
+In the ONDA framework, we train the system to utilize the Glucagon Key efficiently:
+
+- **Fasting Windows:** Time-restricted feeding (14–16 hours) reduces insulin pressure, allowing glucagon to "broadcast" its signal and initiate lipolysis.
+- **LISS (Low-Intensity Steady State):** Prolonged, low-intensity exercise in a fasted state calibrates the system's responsiveness to glucagon.
+- **Protein Signaling:** Adequate protein intake stimulates moderate glucagon secretion, helping maintain metabolic speed even during calorie restriction.
+
+[Insulin](/glossary/insulin) — The functional antagonist. Metabolic health is the balance between these two keys.
+`,
+    relatedSlugs: ['insulin', 'insulin-sensitivity', 'metabolism'],
+  },
+  {
     slug: 'heat-shock-proteins',
     title: 'Heat Shock Proteins',
     category: 'Biological Software',
