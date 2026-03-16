@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const SITE_URL = 'https://onda-life.com'
-const OG_IMAGE = `${SITE_URL}/og-preview.png`
+const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 const CONTACT_EMAIL = 'hello@onda-life.com'
 
 function setMeta(name: string, content: string, isProperty = false) {

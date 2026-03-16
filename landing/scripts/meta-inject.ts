@@ -10,7 +10,7 @@ import { parts } from '../src/pages/PartPage'
 import { getArticleBySlug } from '../src/data/articles'
 
 const SITE_URL = 'https://onda-life.com'
-const OG_IMAGE = `${SITE_URL}/og-preview.png`
+const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 
 /** Build canonical URL without trailing slash. Google sees only one URL variant. */
 function buildCanonicalUrl(route: string): string {

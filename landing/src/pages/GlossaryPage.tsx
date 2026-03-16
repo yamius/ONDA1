@@ -8,7 +8,7 @@ import {
 } from '../data/glossary-categories'
 
 const SITE_URL = 'https://onda-life.com'
-const OG_IMAGE = `${SITE_URL}/og-preview.png`
+const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 
 function setMeta(name: string, content: string, isProperty = false) {
   const attr = isProperty ? 'property' : 'name'
