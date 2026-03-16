@@ -110,6 +110,16 @@ app.use((req, res, next) => {
 app.get('/health', (req, res) => res.status(200).send('OK'))
 app.head('/health', (req, res) => res.status(200).end())
 
+// WWW → non-WWW redirect (301). Fixes duplicate content: www.onda-life.com → onda-life.com
+app.use((req, res, next) => {
+  if (req.hostname && req.hostname.startsWith('www.')) {
+    const nonWww = req.hostname.slice(4)
+    const protocol = req.headers['x-forwarded-proto'] || req.protocol || 'https'
+    return res.redirect(301, `${protocol}://${nonWww}${req.originalUrl}`)
+  }
+  next()
+})
+
 // Root / — fast path: healthcheck UA → instant OK, cached HTML → no disk read
 app.get('/', (req, res, next) => {
   const ua = req.get('User-Agent') || '(empty)'
