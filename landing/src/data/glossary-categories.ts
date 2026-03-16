@@ -220,4 +220,6 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   'range-fractionation': 'Biological Software',
   'heat-shock-proteins': 'Biological Software',
   antifragility: 'ONDA Protocol',
+  // From article: circadian-reset-mastering-light
+  leptin: 'Biological Software',
 }
