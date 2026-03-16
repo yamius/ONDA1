@@ -5058,7 +5058,7 @@ Heart Rate Variability (HRV) combined with load/endurance progression. Rising HR
 
 **Leptin** is a peptide hormone synthesized by adipocytes (fat cells) that functions as the Master Energy Sensor of the human architecture. It transmits real-time data regarding energy reserves to the hypothalamus, regulating long-term satiety and metabolic velocity.
 
-## [ CIRCADIAN_CALIBRATION: THE PHOTIC LINK ]
+## CIRCADIAN_CALIBRATION: THE PHOTIC LINK
 
 The sensitivity of leptin receptors is not a constant — it is directly calibrated by the Photic Signal:
 
@@ -5066,7 +5066,7 @@ The sensitivity of leptin receptors is not a constant — it is directly calibra
 - **Signal Noise (Blue Light):** Artificial light at night suppresses melatonin, leading to circadian de-sync. This causes receptor desensitization — the brain becomes "deaf" to the satiety signal despite high hormone levels.
 - **Morning Initialization (Reset):** Exposure to bright light (>10,000 Lux) immediately after waking synchronizes the [SCN](/glossary/suprachiasmatic-nucleus) (Master Clock), restoring leptin sensitivity for the entire 24-hour cycle.
 
-## [ METABOLIC_IMPACT_LOG ]
+## METABOLIC_IMPACT_LOG
 
 > **STATUS: OPTIMAL_RHYTHM**
 > Signal: High nocturnal leptin amplitude.
@@ -5080,7 +5080,7 @@ The sensitivity of leptin receptors is not a constant — it is directly calibra
 > Signal: **18–20% drop** in circulating leptin levels.
 > Result: "Emergency hunger" states, intense cravings for simple carbohydrates.
 
-## [ SYSTEM_LOGIC: ONDA_PROTOCOL ]
+## SYSTEM_LOGIC: ONDA_PROTOCOL
 
 In the ONDA framework, Leptin is the intersection point between the Photic Signal and Metabolic Management.
 
