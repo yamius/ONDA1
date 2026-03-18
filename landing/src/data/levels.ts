@@ -369,6 +369,7 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'Reticular Activating System', slug: 'reticular-activating-system' },
       { label: 'Flow State', slug: 'flow-state' },
     ],
+    videoUrl: 'https://www.youtube-nocookie.com/embed/TtqoMQoS4WQ?rel=0',
   },
   4: {
     number: 4,
