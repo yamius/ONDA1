@@ -174,6 +174,22 @@ export function LevelPage() {
         ))}
       </ul>
 
+      {/* Video */}
+      {level.videoUrl && (
+        <div className="mb-16 overflow-hidden rounded-xl border border-white/10">
+          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              src={level.videoUrl}
+              title={`Level ${level.number}: ${level.name} — ONDA Life`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+              className="absolute inset-0 h-full w-full"
+            />
+          </div>
+        </div>
+      )}
+
       {/* Research Basis */}
       <div className="border-t border-white/5 pt-10">
         <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">

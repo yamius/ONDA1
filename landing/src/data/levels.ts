@@ -54,6 +54,7 @@ export interface LevelData {
   researchLinks: { label: string; url: string }[]
   glossaryLinks: { label: string; slug: string }[]
   metaDescription?: string
+  videoUrl?: string
 }
 
 export const levelsData: Record<number, LevelData> = {
@@ -158,6 +159,7 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'HRV', slug: 'heart-rate-variability' },
       { label: 'Neuroplasticity', slug: 'neuroplasticity' },
     ],
+    videoUrl: 'https://www.youtube.com/embed/fZjKE81nIJ0',
   },
   2: {
     number: 2,
