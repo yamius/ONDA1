@@ -264,6 +264,7 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'Emotional Osmosis', slug: 'emotional-osmosis' },
       { label: 'Homeostasis', slug: 'homeostasis' },
     ],
+    videoUrl: 'https://www.youtube-nocookie.com/embed/3HCOCpWwC9Y?rel=0',
   },
   3: {
     number: 3,
