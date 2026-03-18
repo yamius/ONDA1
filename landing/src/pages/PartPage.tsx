@@ -2134,6 +2134,7 @@ export function PartPage() {
               title={`${part.title} ${part.titleHighlight} — video`}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
               className="h-full w-full"
             />
           </div>

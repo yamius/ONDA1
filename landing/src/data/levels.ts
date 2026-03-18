@@ -159,7 +159,7 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'HRV', slug: 'heart-rate-variability' },
       { label: 'Neuroplasticity', slug: 'neuroplasticity' },
     ],
-    videoUrl: 'https://www.youtube-nocookie.com/embed/fZjKE81nIJ0?origin=https://onda-life.com&rel=0',
+    videoUrl: 'https://www.youtube-nocookie.com/embed/fZjKE81nIJ0?rel=0',
   },
   2: {
     number: 2,
