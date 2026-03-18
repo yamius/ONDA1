@@ -92,7 +92,11 @@ app.use(
           'https://*.googletagmanager.com',
           'https://www.google.com',
         ],
-        'frame-src': ['https://www.googletagmanager.com'],
+        'frame-src': [
+          'https://www.googletagmanager.com',
+          'https://www.youtube.com',
+          'https://www.youtube-nocookie.com',
+        ],
         'object-src': ["'none'"],
         'base-uri': ["'self'"],
       },
