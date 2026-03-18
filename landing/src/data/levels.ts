@@ -576,6 +576,7 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'C-Tactile Fibers', slug: 'c-tactile-fibers' },
       { label: 'Proprioception', slug: 'proprioception' },
     ],
+    videoUrl: 'https://www.youtube-nocookie.com/embed/pB1KnFN-I7g?rel=0',
   },
   6: {
     number: 6,
@@ -681,6 +682,7 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'rTPJ', slug: 'right-temporoparietal-junction' },
       { label: 'Neuroplasticity', slug: 'neuroplasticity' },
     ],
+    videoUrl: 'https://www.youtube-nocookie.com/embed/pB1KnFN-I7g?rel=0',
   },
   7: {
     number: 7,
@@ -782,6 +784,7 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'Orbitofrontal Cortex', slug: 'orbitofrontal-cortex' },
       { label: 'Senescence', slug: 'senescence' },
     ],
+    videoUrl: 'https://www.youtube-nocookie.com/embed/pB1KnFN-I7g?rel=0',
   },
   8: {
     number: 8,
@@ -896,5 +899,6 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'Gamma Binding', slug: 'gamma-binding' },
       { label: 'Posterior Parietal Cortex', slug: 'posterior-parietal-cortex' },
     ],
+    videoUrl: 'https://www.youtube-nocookie.com/embed/pB1KnFN-I7g?rel=0',
   },
 }
