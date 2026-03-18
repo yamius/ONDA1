@@ -474,6 +474,7 @@ export const levelsData: Record<number, LevelData> = {
       { label: 'rTPJ', slug: 'right-temporoparietal-junction' },
       { label: 'Endorphins', slug: 'endorphins' },
     ],
+    videoUrl: 'https://www.youtube-nocookie.com/embed/qsDhvNptrZA?rel=0',
   },
   5: {
     number: 5,
