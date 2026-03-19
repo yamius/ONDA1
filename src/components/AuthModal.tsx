@@ -310,6 +310,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
                 isLightTheme ? 'text-gray-400' : 'text-white/40'
               }`} />
               <input
+                id="login_email"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -333,6 +334,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
                 isLightTheme ? 'text-gray-400' : 'text-white/40'
               }`} />
               <input
+                id="login_password"
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -359,6 +361,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
           )}
 
           <button
+            id="login_button"
             type="submit"
             disabled={loading}
             className={`w-full py-3 sm:py-4 px-6 rounded-xl font-medium transition-all text-sm sm:text-base ${
