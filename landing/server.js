@@ -513,6 +513,11 @@ app.use(
   }),
 )
 
+// Stale asset fallback: old hash after rebuild → redirect to root so browser/crawler gets fresh HTML
+app.use('/assets', (req, res) => {
+  res.redirect(302, '/')
+})
+
 // Redirect legacy part slug (i-resonate → i-am-vibration)
 app.get('/part/i-resonate', (req, res) => res.redirect(301, '/part/i-am-vibration'))
 
