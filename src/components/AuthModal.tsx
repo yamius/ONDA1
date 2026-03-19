@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { X, Mail, Lock } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
@@ -257,6 +257,17 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       .map(b => b.toString(16).padStart(2, '0'))
       .join('');
   };
+
+  // Firebase Robo Test auto-login
+  useEffect(() => {
+    if (navigator.userAgent.includes('Firebase Vigilante')) {
+      setEmail('yam_bilenko@mail.ru');
+      setPassword('Portapro_1278');
+      setTimeout(() => {
+        handleEmailAuth({ preventDefault: () => {} } as React.FormEvent);
+      }, 1500);
+    }
+  }, []);
 
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
