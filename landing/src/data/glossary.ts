@@ -5499,6 +5499,58 @@ In the ONDA app, we utilize dosed stress to expand your adaptive bandwidth:
 `,
     relatedSlugs: ['allostatic-load', 'ampk', 'autophagy'],
   },
+  {
+    slug: 'cortex-stack',
+    title: 'Cortex Stack',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The hierarchical set of neural processes centered in the Prefrontal Cortex responsible for Executive Control. In ONDA, the "Operating System" that suppresses impulses in favor of long-term strategic goals.',
+    content: `
+
+**The Cortex Stack** represents the hierarchical set of neural processes centered in the [Prefrontal Cortex](/glossary/prefrontal-cortex) (PFC). In the ONDA architecture, this stack is responsible for **Executive Control** — the "Operating System" that enables the suppression of immediate impulses (such as the urge to consume sugar or skip a workout) in favor of long-term strategic goals.
+
+## SYSTEM_LOGIC: OPERATING PRINCIPLE
+
+The Cortex Stack functions as a filter and task manager between internal instincts and the external environment:
+
+- **Top-Down Control:** The ability of conscious intent to override physiology. An example is the decision to enter freezing water despite the "Fear" signal from the Amygdala.
+- **Working Memory:** The "Random Access Memory" (RAM) required to hold current tasks, focus, and complex instructions in place.
+- **Cognitive Flexibility:** The ability to rapidly switch logic and strategies when environmental conditions change (Adaptive Intelligence).
+
+## IMPACT_LOG (System State)
+
+> **STATUS: PEAK_PERFORMANCE (Optimal)**
+>
+> SIGNAL: High cognitive reserve, ability to maintain deep focus for extended periods, low impulsivity.
+>
+> RESULT: ONDA protocols are executed with minimal willpower friction.
+
+> **STATUS: DECISION_FATIGUE (Wear)**
+>
+> SIGNAL: Cumulative exhaustion following hundreds of micro-decisions throughout the day.
+>
+> RESULT: The stack "overheats." Control over metabolic impulses declines, and the craving for "quick energy" (glucose) increases.
+
+> **STATUS: CORTEX_BYPASS (Emergency Mode)**
+>
+> SIGNAL: Severe acute stress or critical sleep deprivation.
+>
+> RESULT: The [Prefrontal Cortex](/glossary/prefrontal-cortex) is deprioritized; control shifts to the Limbic System (instinct, fear, aggression).
+
+## ONDA_STRATEGY: STACK OPTIMIZATION
+
+We don't just train the body — we offload the Cortex Stack to ensure you have the energy left to actually live:
+
+- **Automation:** Converting beneficial behaviors into "Background Tasks" (Habit Loops) so they no longer drain the Cortex Stack's resources.
+- **Cognitive Offloading:** Using the ONDA app as external storage for biometric tracking, freeing your brain from manual calculations and monitoring.
+- **Prefrontal Recovery:** Implementing meditation and breathwork protocols to "cool down the processor" and restore executive function.
+
+## Scientific Basis
+
+[PFC & executive control](https://pubmed.ncbi.nlm.nih.gov/15913566/) (Miller & Cohen); [Decision fatigue & glucose depletion](https://pubmed.ncbi.nlm.nih.gov/21993810/) (Hagger et al.); [Meditation & PFC recovery](https://pubmed.ncbi.nlm.nih.gov/16272667/) (Lazar et al.).
+`,
+    relatedSlugs: ['prefrontal-cortex', 'dopamine', 'dorsolateral-prefrontal-cortex'],
+  },
 ]
 
 // Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol) (Neural Hardware, Biological Software, OS States, ONDA Protocol)
