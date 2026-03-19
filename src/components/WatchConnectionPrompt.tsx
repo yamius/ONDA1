@@ -71,8 +71,8 @@ export function WatchConnectionPrompt({ visible, onConnected }: WatchConnectionP
     };
   }, [visible, onConnected]);
 
-  // Не показываем если не visible или уже подключен
-  if (!visible || isWatchConnected) {
+  // Не показываем если не visible, уже подключен, или не iOS
+  if (!visible || isWatchConnected || Capacitor.getPlatform() !== 'ios') {
     return null;
   }
 
