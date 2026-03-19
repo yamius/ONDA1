@@ -5294,6 +5294,53 @@ Research on adiponectin and metabolic health: [Adiponectin & insulin sensitivity
 `,
     relatedSlugs: ['insulin-sensitivity', 'allostatic-load', 'metabolic-flexibility'],
   },
+  {
+    slug: 'ampk',
+    title: 'AMPK',
+    category: 'Biological Software',
+    shortDescription:
+      'AMP-activated protein kinase — the internal energy sensor within every cell. In ONDA, classified as the Metabolic Master Switch: when cellular fuel drops, AMPK triggers fat burning, autophagy, and mitochondrial biogenesis.',
+    content: `
+
+**AMPK** (AMP-activated protein kinase) is a critical enzyme that serves as the internal energy sensor within every cell. In the ONDA architecture, it is classified as **The Metabolic Master Switch**. Its primary function is to monitor the ratio of available energy (ATP) to its "waste products" (AMP). When cellular fuel levels drop, AMPK is activated to protect the system from exhaustion.
+
+## SYSTEM_LOGIC: OPERATING PRINCIPLE
+
+AMPK functions as an emergency resource manager: when energy is scarce, it deactivates "expensive" growth processes and prioritizes "budget-friendly" survival protocols:
+
+- **Catabolic Shift:** Activates energy-generating pathways — specifically fatty acid oxidation (fat burning) and increased glucose uptake by muscles.
+- **Anabolic Halt:** Temporarily blocks the synthesis of proteins and fats (growth processes) to conserve resources for core system maintenance.
+- **Autophagy Trigger:** Initiates cellular cleanup protocols ([autophagy](/glossary/autophagy)), recycling damaged components into fresh fuel.
+- **Mitochondrial Biogenesis:** Stimulates the creation of new [mitochondria](/glossary/mitochondria) ("power plants"), increasing the overall energy efficiency of the hardware.
+
+## METABOLIC_IMPACT_LOG
+
+> **STATUS: ACTIVATED (Crisis Mode / Optimal)**
+>
+> SIGNAL: Calorie deficit, high-intensity physical load, or cold stress.
+>
+> RESULT: Oxidation of visceral fat, cellular rejuvenation, enhanced cognitive function, and suppression of systemic inflammation.
+
+> **STATUS: DORMANT (Surplus Mode / Stagnation)**
+>
+> SIGNAL: Constant nutrient influx (high carbohydrates) and absence of physical stressors.
+>
+> RESULT: Accumulation of cellular "garbage," expansion of adipose tissue, decreased [insulin sensitivity](/glossary/insulin-sensitivity), and accelerated biological aging.
+
+## ONDA_STRATEGY: FLIPPING THE SWITCH
+
+In ONDA protocols, we utilize AMPK to "reboot" metabolic efficiency:
+
+- **Intermittent Fasting:** Feeding pauses are the most direct method to raise AMP levels, forcing AMPK to trigger fat burning.
+- **High-Intensity Training (HIIT):** Short bursts of maximum effort rapidly deplete ATP stores, causing a powerful enzymatic response.
+- **Hormetic Stress:** Cold exposure and specific phytonutrients (such as Berberine or Quercetin) mimic an energy-depleted state, activating AMPK without actual starvation.
+
+## Scientific Basis
+
+[AMPK as energy sensor](https://pubmed.ncbi.nlm.nih.gov/11311166/) (Hardie et al.); [AMPK & autophagy](https://pubmed.ncbi.nlm.nih.gov/21205921/) (Kim et al.); [AMPK & mitochondrial biogenesis](https://pubmed.ncbi.nlm.nih.gov/12181338/) (Zong et al.).
+`,
+    relatedSlugs: ['autophagy', 'mitochondria', 'insulin-sensitivity'],
+  },
 ]
 
 // Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol) (Neural Hardware, Biological Software, OS States, ONDA Protocol)

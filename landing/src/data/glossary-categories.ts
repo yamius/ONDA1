@@ -225,4 +225,5 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   insulin: 'Biological Software',
   glucagon: 'Biological Software',
   adiponectin: 'Biological Software',
+  ampk: 'Biological Software',
 }
