@@ -5394,6 +5394,58 @@ In ONDA protocols, we optimize the ghrelin response by correcting external signa
 `,
     relatedSlugs: ['leptin', 'hypothalamus', 'metabolic-flexibility'],
   },
+  {
+    slug: 'allostatic-load',
+    title: 'Allostatic Load',
+    category: 'OS States',
+    shortDescription:
+      'The cumulative "wear and tear" on the body from chronic stress adaptation — defined in ONDA as System Debt. Tracked via HRV as the primary biometric marker of biological bankruptcy risk.',
+    content: `
+
+**Allostatic Load** refers to the cumulative "wear and tear" on the body that results from chronic activation of stress adaptation mechanisms. In the ONDA architecture, this term is defined as **System Debt**. While allostasis is the process of achieving stability through change, allostatic load is the price the biological "hardware" pays for that constant shift.
+
+## SYSTEM_LOGIC: OPERATING PRINCIPLE
+
+Allostatic load accumulates when defense mechanisms (such as [cortisol](/glossary/cortisol) and adrenaline) fail to shut off at the appropriate time:
+
+- **Inadequate Adaptation:** The system fails to efficiently adapt to repeated stressors (social, chemical, or physical).
+- **Failed Shut-off:** Regulatory systems (e.g., the [HPA axis](/glossary/hpa-axis)) remain active even after the threat has been neutralized.
+- **Resource Depletion:** Constant mobilization of resources to combat stress leads to the exhaustion of metabolic and neural reserves.
+
+## METABOLIC_IMPACT_LOG
+
+> **STATUS: RESILIENT (Optimal)**
+>
+> SIGNAL: High [Heart Rate Variability](/glossary/heart-rate-variability) (HRV) and a rapid return of cortisol to baseline levels following a load.
+>
+> RESULT: High antifragility, rapid recovery, and low systemic inflammation.
+
+> **STATUS: HIGH_LOAD (System Strain)**
+>
+> SIGNAL: Decreased HRV, disrupted sleep patterns, and episodic spikes in blood pressure.
+>
+> RESULT: The organism is running at high RPMs. Cognitive flexibility and immune thresholds begin to decline.
+
+> **STATUS: ALLOSTATIC_OVERLOAD (System Failure)**
+>
+> SIGNAL: Chronically low HRV, metabolic syndrome markers, and burnout.
+>
+> RESULT: "Biological Bankruptcy." Development of chronic diseases, accelerated tissue aging, and degradation of neural connectivity.
+
+## ONDA_STRATEGY: DEBT REPAYMENT
+
+In ONDA protocols, we use biometric data to manage and "pay down" this debt:
+
+- **Recovery Loading:** If the Readiness Score (based on HRV) is low, the system suggests reducing training intensity and increasing sleep duration to prevent load accumulation.
+- **Vagal Tone Activation:** Utilizing breathing techniques and cold therapy to activate the [Vagus Nerve](/glossary/vagus-nerve), which serves as the primary "kill switch" for the allostatic response.
+- **Stress Buffering:** Implementing timely micro-breaks throughout the day to prevent the cumulative effect of stress from reaching a tipping point.
+
+## Scientific Basis
+
+[Allostatic load concept](https://pubmed.ncbi.nlm.nih.gov/8571113/) (McEwen & Stellar); [HRV as allostatic marker](https://pubmed.ncbi.nlm.nih.gov/17173570/) (Thayer et al.); [Chronic stress & neural degradation](https://pubmed.ncbi.nlm.nih.gov/11742410/) (McEwen).
+`,
+    relatedSlugs: ['cortisol', 'hpa-axis', 'heart-rate-variability'],
+  },
 ]
 
 // Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol) (Neural Hardware, Biological Software, OS States, ONDA Protocol)

@@ -227,4 +227,5 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   adiponectin: 'Biological Software',
   ampk: 'Biological Software',
   ghrelin: 'Biological Software',
+  'allostatic-load': 'OS States',
 }
