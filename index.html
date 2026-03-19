@@ -12,6 +12,17 @@
     <meta property="og:title" content="ONDA Life" />
     <meta property="og:site_name" content="ONDA Life" />
 
+    <!-- Polyfill: crypto.randomUUID for Android WebView < API 31 -->
+    <script>
+      if (typeof crypto !== 'undefined' && !crypto.randomUUID) {
+        crypto.randomUUID = function() {
+          return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, function(c) {
+            return (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16);
+          });
+        };
+      }
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSLFKSZCD3"></script>
     <script>
