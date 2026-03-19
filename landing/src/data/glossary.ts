@@ -5341,6 +5341,59 @@ In ONDA protocols, we utilize AMPK to "reboot" metabolic efficiency:
 `,
     relatedSlugs: ['autophagy', 'mitochondria', 'insulin-sensitivity'],
   },
+  {
+    slug: 'ghrelin',
+    title: 'Ghrelin',
+    category: 'Biological Software',
+    shortDescription:
+      'A hormone synthesized primarily in the stomach — classified in ONDA as The Hunger Prompt. The primary peripheral signal that stimulates the hypothalamus to seek energy, with a direct link to sleep quality and dopamine reward circuits.',
+    content: `
+
+**Ghrelin** is a hormone synthesized primarily in the stomach. In the ONDA architecture, it is classified as **The Hunger Prompt**. It is the primary peripheral signal that intercepts attentional control and directs it toward sourcing energy resources by stimulating the [hypothalamus](/glossary/hypothalamus).
+
+## SYSTEM_LOGIC: OPERATING PRINCIPLE
+
+Ghrelin functions as a "low-charge" trigger and a modulator of the dopamine reward response:
+
+- **Energy Scanning:** When the stomach is empty, ghrelin levels rise, enhancing olfactory sensitivity and the motivation to seek out calories.
+- **GH Stimulation:** Ghrelin acts as a synergist for Growth Hormone, preparing tissues for repair immediately following nutrient ingestion.
+- **Reward System Link:** The hormone amplifies the neural response to "hyper-palatable" foods (fat + sugar), making them priority targets during a deficit state.
+
+## METABOLIC_IMPACT_LOG
+
+> **STATUS: CIRCADIAN_ALIGNMENT (Optimal)**
+>
+> SIGNAL: Predictable spikes before customary meal times and a rapid decline post-ingestion.
+>
+> RESULT: Clear distinction between hunger and satiety. High levels of weight management control.
+
+> **STATUS: SLEEP_DEBT_ERROR (System Bug)**
+>
+> SIGNAL: Pathological ghrelin increase of 15–30% due to sleep deprivation (even when system energy is sufficient).
+>
+> RESULT: "False Hunger." The brain demands carbohydrate-heavy inputs to compensate for cognitive fatigue caused by lack of sleep.
+
+> **STATUS: CHRONIC_STRESS (Signal Overload)**
+>
+> SIGNAL: Chronically elevated baseline ghrelin ("stress eating").
+>
+> RESULT: Shift in dietary behavior toward emotional consumption and accumulation of visceral fat.
+
+## ONDA_STRATEGY: PROMPT MANAGEMENT
+
+In ONDA protocols, we optimize the ghrelin response by correcting external signals:
+
+- **Sleep Hygiene:** Quality sleep is the primary "patch" for ghrelin. Deep sleep phases naturally suppress excessive hunger prompts.
+- **Protein Anchoring:** Protein suppresses ghrelin more effectively and for longer than carbohydrates, creating a stable window of metabolic rest.
+- **Hydration Patch:** Mechanical stretching of the stomach walls with water can temporarily lower the amplitude of the ghrelin signal, eliminating false hunger cues.
+- **Meal Timing:** Synchronizing meal times trains the system to issue the ghrelin prompt in strictly defined slots, preventing random snacking.
+
+## Scientific Basis
+
+[Ghrelin discovery & hunger signaling](https://pubmed.ncbi.nlm.nih.gov/10604470/) (Kojima et al.); [Sleep deprivation & ghrelin elevation](https://pubmed.ncbi.nlm.nih.gov/15583226/) (Spiegel et al.); [Ghrelin & dopamine reward](https://pubmed.ncbi.nlm.nih.gov/16421571/) (Abizaid et al.).
+`,
+    relatedSlugs: ['leptin', 'hypothalamus', 'metabolic-flexibility'],
+  },
 ]
 
 // Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol) (Neural Hardware, Biological Software, OS States, ONDA Protocol)
