@@ -228,4 +228,5 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   ampk: 'Biological Software',
   ghrelin: 'Biological Software',
   'allostatic-load': 'OS States',
+  hormesis: 'ONDA Protocol',
 }

@@ -5446,6 +5446,59 @@ In ONDA protocols, we use biometric data to manage and "pay down" this debt:
 `,
     relatedSlugs: ['cortisol', 'hpa-axis', 'heart-rate-variability'],
   },
+  {
+    slug: 'hormesis',
+    title: 'Hormesis',
+    category: 'ONDA Protocol',
+    shortDescription:
+      'A biological phenomenon where low-dose stressors exert a stimulating, beneficial effect. In ONDA, classified as System Strengthening Stress — the process of calibrating internal defenses to make cells more resilient.',
+    content: `
+
+**Hormesis** is a biological phenomenon where exposure to low doses of stressors — which would be harmful in high doses — exerts a stimulating and beneficial effect on the organism. In the ONDA architecture, hormesis is classified as **System Strengthening Stress**. It is the process of "calibrating" internal defenses, making cells more resilient to future challenges.
+
+## SYSTEM_LOGIC: OPERATING PRINCIPLE
+
+Hormesis functions by activating survival pathways that typically remain in a "dormant" state during times of ease:
+
+- **Adaptive Response:** Low-level stress mimics a threat, forcing the brain and cells to activate repair protocols (e.g., synthesis of heat shock proteins or antioxidant defenses).
+- **Biphasic Response:** The effect is dose-dependent. A small dose (Hormetic Peak) strengthens the system; an excessive dose leads to increased [Allostatic Load](/glossary/allostatic-load) and tissue damage.
+- **Mitochondrial Priming:** Hormetic stressors stimulate mitochondria to operate more efficiently, raising the overall "energy voltage" of the organism.
+
+## METABOLIC_IMPACT_LOG
+
+> **STATUS: ADAPTIVE_PEAK (Optimal)**
+>
+> SIGNAL: Brief exposure to cold, physical exertion, or intermittent fasting.
+>
+> RESULT: Activation of [AMPK](/glossary/ampk) and Sirtuins (longevity genes). Enhanced cognitive function, a fortified immune system, and reduced systemic inflammation.
+
+> **STATUS: COMFORT_DEGRADATION (Hibernation)**
+>
+> SIGNAL: Total absence of physical or thermal stress (constant temperature comfort, chronic caloric surplus).
+>
+> RESULT: Lowering of the adaptation threshold. The system becomes "fragile," metabolism slows, and cellular repair mechanisms atrophy from disuse.
+
+> **STATUS: TOXIC_OVERLOAD (Failure)**
+>
+> SIGNAL: Stress that is too intense or too prolonged without a sufficient recovery phase.
+>
+> RESULT: Transition from the hormetic zone into the damage zone. Chronic stress, resource exhaustion, and cellular degradation.
+
+## ONDA_STRATEGY: FORGING PROTOCOLS
+
+In the ONDA app, we utilize dosed stress to expand your adaptive bandwidth:
+
+- **Cold/Heat Shock:** Ice baths or saunas are classic examples of thermal hormesis that activate metabolic defense layers.
+- **Intermittent Fasting:** Hunger, acting as a hormetic stressor, triggers [Autophagy](/glossary/autophagy) (cellular cleanup).
+- **Hypoxic Training:** Brief breath-holding exercises train the brain's resilience to oxygen deficits and improve vascular health.
+- **Phytohormetins:** Consumption of specific plants (e.g., broccoli or turmeric) that contain low doses of "toxins" which stimulate our own internal antioxidant systems.
+
+## Scientific Basis
+
+[Hormesis concept & dose-response](https://pubmed.ncbi.nlm.nih.gov/12855239/) (Calabrese & Baldwin); [Cold hormesis & metabolic adaptation](https://pubmed.ncbi.nlm.nih.gov/15489072/); [Dietary hormesis & longevity](https://pubmed.ncbi.nlm.nih.gov/17316213/) (Mattson).
+`,
+    relatedSlugs: ['allostatic-load', 'ampk', 'autophagy'],
+  },
 ]
 
 // Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol) (Neural Hardware, Biological Software, OS States, ONDA Protocol)
