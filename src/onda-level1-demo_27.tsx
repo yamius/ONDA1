@@ -4301,10 +4301,12 @@ const OndaLevel1 = () => {
         branchName={import.meta.env.VITE_BRANCH_NAME}
       />
 
-      {/* TEMPORARY: Visible Debug Banner - DELETE AFTER DEBUGGING */}
-      <div className="fixed top-0 left-0 right-0 z-[200] bg-black/90 text-white text-xs px-3 py-2 text-center font-mono">
-        🔧 DEBUG: {debugInfo}
-      </div>
+      {/* DEBUG: Visible Debug Banner - enable via localStorage.debugMode='true' */}
+      {localStorage.getItem('debugMode') === 'true' && (
+        <div className="fixed top-0 left-0 right-0 z-[200] bg-black/90 text-white text-xs px-3 py-2 text-center font-mono">
+          🔧 DEBUG: {debugInfo}
+        </div>
+      )}
 
       {/* Плавающая кнопка гамбургер меню */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
