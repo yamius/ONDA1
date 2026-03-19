@@ -258,9 +258,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
       .join('');
   };
 
-  // Firebase Robo Test auto-login
+  // Firebase / AppCenter Robo Test auto-login
   useEffect(() => {
-    if (navigator.userAgent.includes('Firebase Vigilante')) {
+    const ua = navigator.userAgent.toLowerCase();
+    const isTestEnv = ua.includes('firebase') || ua.includes('appcenter') || ua.includes('vigilante');
+    if (isTestEnv) {
       setEmail('yam_bilenko@mail.ru');
       setPassword('Portapro_1278');
       setTimeout(() => {
