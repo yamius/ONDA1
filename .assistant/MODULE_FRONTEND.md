@@ -371,3 +371,37 @@ setArtifacts(migratedArtifacts);
 | `src/onda-level1-demo_27.tsx` | Вся логика практик, прогресса, артефактов |
 | `src/utils/ondCalculator.ts` | Расчёт OND награды |
 | `src/lib/supabase.ts` | Типы для `user_game_progress` |
+
+---
+
+## Debug-мониторы
+
+В приложении есть два отладочных монитора — **скрыты по умолчанию** (в том числе в dev-режиме). Включаются только явно через `localStorage`.
+
+### Что это
+
+| Монитор | Файл | Позиция | Что показывает |
+|---------|------|---------|----------------|
+| **Верхняя полоса** | `src/onda-level1-demo_27.tsx` ~4307 | `fixed top-0` | `🔧 DEBUG: ✅ OND: … \| Практик: …` |
+| **DebugMonitor (нижний левый)** | `src/components/DebugMonitor.tsx` | `fixed bottom-4 left-4` | Перехваченные console-логи, build number, commit hash |
+
+`DebugMonitor` также рендерится внутри экрана активной практики (~строка 2823 в `onda-level1-demo_27.tsx`).
+
+### Включить / выключить
+
+```js
+// Включить — выполнить в консоли браузера и перезагрузить страницу
+localStorage.setItem('debugMode', 'true')
+
+// Выключить
+localStorage.removeItem('debugMode')
+```
+
+### Логика видимости
+
+Оба монитора проверяют одно условие:
+```ts
+localStorage.getItem('debugMode') === 'true'
+```
+
+**Не трогать** `shouldShow = true` в `DebugMonitor.tsx` — это нарушает требования App Store (Apple запрещает видимые debug-элементы в production сборках).
