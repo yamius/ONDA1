@@ -785,13 +785,13 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
               {t('connection.bluetooth_desc', 'Connect a Bluetooth heart rate monitor for real-time biofeedback during practices')}
             </p>
 
-            <div className="flex gap-3">
+            <div className="flex gap-3 justify-center">
               {!isScanning && (
                 <>
                   <button
                     onClick={connect}
                     disabled={connected}
-                    className={`${connected ? 'flex-1' : 'w-full'} py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
+                    className={`py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
                       connected
                         ? isLightTheme
                           ? 'bg-green-100 text-green-700'
@@ -809,7 +809,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                   {connected && (
                     <button
                       onClick={disconnect}
-                      className={`flex-1 py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
+                      className={`py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
                         isLightTheme
                           ? 'bg-red-100 hover:bg-red-200 text-red-700'
                           : 'bg-red-500/20 hover:bg-red-500/30 text-red-400'
