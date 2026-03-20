@@ -4856,9 +4856,42 @@ const OndaLevel1 = () => {
                 </>
               )}
               {vitalsData.isScanning && (
-                <div className="w-full py-2.5 px-4 rounded-xl text-sm flex items-center justify-center gap-2 bg-blue-500/10 text-blue-300">
-                  <Bluetooth className="w-4 h-4 animate-pulse" />
-                  Scanning...
+                <div className="flex gap-2">
+                  <div className="flex-1 py-2.5 px-4 rounded-xl text-sm flex items-center justify-center gap-2 bg-blue-500/10 text-blue-300">
+                    <Bluetooth className="w-4 h-4 animate-pulse" />
+                    Scanning...
+                  </div>
+                  {vitalsData.stopScan && (
+                    <button
+                      onClick={vitalsData.stopScan}
+                      data-testid="button-stop-scan-home"
+                      className="py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white/70"
+                    >
+                      {t('settings.scan_stop', 'Stop')}
+                    </button>
+                  )}
+                </div>
+              )}
+              {/* Available devices after scan */}
+              {!vitalsData.isScanning && vitalsData.availableDevices && vitalsData.availableDevices.length > 0 && vitalsData.connectToDevice && (
+                <div className="p-3 rounded-xl bg-white/5 border border-white/10">
+                  <p className="text-xs text-white/60 mb-2">{t('settings.available_devices', 'Available Devices')}:</p>
+                  <div className="space-y-1.5">
+                    {vitalsData.availableDevices.map((device) => (
+                      <button
+                        key={device.id}
+                        onClick={() => vitalsData.connectToDevice!(device.id)}
+                        data-testid={`button-device-home-${device.id}`}
+                        className="w-full py-2 px-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20"
+                      >
+                        <span className="flex items-center gap-2">
+                          <Bluetooth className="w-3.5 h-3.5" />
+                          {device.name}
+                        </span>
+                        <span className="text-xs text-white/50">{t('settings.device_connect', 'Connect')}</span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
               )}
               {/* Connection instructions */}
