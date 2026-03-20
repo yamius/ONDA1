@@ -827,7 +827,7 @@
     "fatigue_desc": "HR above baseline, BR↓, energy↓",
     "flow_desc": "HR slightly above baseline, stable BR",
     "connection_instructions": "Connection instructions:",
-    "instruction_1": "On phone: Close standard tracker app",
+    "instruction_1": "On phone: Close standard tracker app. Turn on Bluetooth",
     "instruction_2": "On tracker: Settings → Share heart rate → Enable",
     "realtime_metrics": "Real-time metrics. Calibrating baseline...",
     "notification_hr_enable": "Enable Notification Heart Rate",
