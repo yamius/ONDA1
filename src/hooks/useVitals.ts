@@ -60,49 +60,27 @@ export function useVitals() {
   const dhrDtRef = useRef(0);
   const calculationCountRef = useRef(0);
 
-  // Debug: Log all HR source states every 5 seconds
-  useEffect(() => {
-    const id = setInterval(() => {
-      console.log('[useVitals] HR sources:', {
-        ble: { connected: bleHR.connected, hr: bleHR.hr },
-        healthKit: { isMonitoring: healthKitHR.isMonitoring, hr: healthKitHR.heartRate },
-        watch: { isConnected: watchHR.isConnected, hr: watchHR.heartRate },
-        notification: { hr: notificationHR.hr }
-      });
-    }, 5000);
-    return () => clearInterval(id);
-  }, [bleHR.connected, bleHR.hr, healthKitHR.isMonitoring, healthKitHR.heartRate, watchHR.isConnected, watchHR.heartRate, notificationHR.hr]);
-
   // Feed notification HR into series when BLE is not connected
   useEffect(() => {
-    console.log('[useVitals] Notification effect:', { bleConnected: bleHR.connected, notificationHR: notificationHR.hr });
     if (!bleHR.connected && notificationHR.hr != null) {
       const now = Date.now() / 1000;
-      // Use heartRateStore directly to ensure data persists across renders
       heartRateStore.addDataPoint(now, notificationHR.hr);
-      console.log('[useVitals] Added Notification HR to series:', notificationHR.hr);
     }
   }, [notificationHR.hr, bleHR.connected]);
 
   // Feed HealthKit HR into series when BLE is not connected (iOS)
   useEffect(() => {
-    console.log('[useVitals] HealthKit effect:', { bleConnected: bleHR.connected, isMonitoring: healthKitHR.isMonitoring, hr: healthKitHR.heartRate });
     if (!bleHR.connected && healthKitHR.isMonitoring && healthKitHR.heartRate != null) {
       const now = Date.now() / 1000;
-      // Use heartRateStore directly to ensure data persists across renders
       heartRateStore.addDataPoint(now, healthKitHR.heartRate);
-      console.log('[useVitals] Added HealthKit HR to series:', healthKitHR.heartRate);
     }
   }, [healthKitHR.heartRate, healthKitHR.isMonitoring, bleHR.connected]);
 
   // Feed Apple Watch HR into series (iOS real-time via WCSession)
   useEffect(() => {
-    console.log('[useVitals] Watch effect:', { bleConnected: bleHR.connected, isConnected: watchHR.isConnected, hr: watchHR.heartRate });
     if (!bleHR.connected && watchHR.isConnected && watchHR.heartRate != null) {
       const now = Date.now() / 1000;
-      // Use heartRateStore directly to ensure data persists across renders
       heartRateStore.addDataPoint(now, watchHR.heartRate);
-      console.log('[useVitals] Added Watch HR to series:', watchHR.heartRate);
     }
   }, [watchHR.heartRate, watchHR.isConnected, bleHR.connected]);
 
@@ -126,12 +104,9 @@ export function useVitals() {
   useEffect(() => { activityRef.current = activity; }, [activity]);
 
   useEffect(() => {
-    console.log('[useVitals] Starting calculation interval');
     const id = setInterval(() => {
-      // Read directly from heartRateStore to ensure we get latest data
       const series = heartRateStore.getBuffer();
       calculationCountRef.current++;
-      console.log('[useVitals] Interval tick #' + calculationCountRef.current + ', series length =', series.length);
       if (series.length < 10) return;
 
       const tNow = series[series.length - 1].t;
@@ -275,8 +250,6 @@ export function useVitals() {
   // Check if vitals data is available from ANY source (BLE, HealthKit, Watch, Notification)
   const hasVitalsData = hasHRSource && stressReady && energyReady;
   
-  // Log state changes for debugging
-  console.log('[useVitals] hasVitalsData:', hasVitalsData, '{ hasHRSource:', hasHRSource, ', stressReady:', stressReady, ', energyReady:', energyReady, ', stress:', stress, ', energy:', energy, '}');
 
   return {
     // BLE Heart Rate
