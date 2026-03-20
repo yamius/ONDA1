@@ -106,6 +106,17 @@
         <meta-data
             android:name="androidx.health.platform.client"
             android:value="true" />
+
+        <!-- Sentry DSN -->
+        <meta-data
+            android:name="io.sentry.dsn"
+            android:value="https://89007b674e33e62ef933bb71670f885f@o451107803417048.ingest.us.sentry.io/4511078050889728" />
+        <meta-data
+            android:name="io.sentry.traces-sample-rate"
+            android:value="0.2" />
+        <meta-data
+            android:name="io.sentry.environment"
+            android:value="production" />
         
         <!-- NotificationListenerService for fitness app heart rate -->
         <service
