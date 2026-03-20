@@ -4821,9 +4821,9 @@ const OndaLevel1 = () => {
         {/* BLE Connect Tracker — Android only, shown above biometrics grid */}
         {platform !== 'ios' && !vitalsData.connected && (
           <div className="mb-4 bg-black/30 backdrop-blur-sm rounded-2xl border border-blue-500/20 p-4 max-w-lg mx-auto w-full">
-            <p className="text-xs font-semibold text-white/70 mb-1">Bluetooth Heart Rate Monitor</p>
+            <p className="text-xs font-semibold text-white/70 mb-1">{t('settings.bluetooth_monitor', 'Bluetooth Heart Rate Monitor')}</p>
             <p className="text-xs text-white/50 mb-3">
-              Connect a Bluetooth heart rate monitor for real-time biofeedback during practices
+              {t('settings.bluetooth_desc', 'Connect a Bluetooth heart rate monitor for real-time biofeedback during practices')}
             </p>
             <div className="flex flex-col gap-2">
               {!vitalsData.isScanning && (
@@ -4840,7 +4840,7 @@ const OndaLevel1 = () => {
                       }`}
                     >
                       <Bluetooth className="w-4 h-4" />
-                      {vitalsData.connected ? 'Tracker Connected' : 'Connect Tracker'}
+                      {vitalsData.connected ? t('settings.tracker_connected', 'Connected') : t('settings.tracker_connect', 'Connect Tracker')}
                     </button>
                     {vitalsData.connected && (
                       <button
@@ -4849,7 +4849,7 @@ const OndaLevel1 = () => {
                         className="flex-1 py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 bg-red-500/20 hover:bg-red-500/30 text-red-400"
                       >
                         <X className="w-4 h-4" />
-                        Disconnect
+                        {t('settings.tracker_disconnect', 'Disconnect')}
                       </button>
                     )}
                   </div>
@@ -4863,10 +4863,10 @@ const OndaLevel1 = () => {
               )}
               {/* Connection instructions */}
               <div className="mt-1 p-3 rounded-xl bg-white/5 border border-white/10">
-                <p className="text-xs font-medium text-white/70 mb-1.5">Connection instructions:</p>
+                <p className="text-xs font-medium text-white/70 mb-1.5">{t('settings.connection_instructions', 'Connection instructions:')}</p>
                 <div className="text-xs text-white/50 space-y-1">
-                  <p>On phone: Close standard tracker app. Turn on Bluetooth</p>
-                  <p>On tracker: Settings → Share heart rate → Enable</p>
+                  <p>{t('settings.instruction_1', 'On phone: Close standard tracker app. Turn on Bluetooth')}</p>
+                  <p>{t('settings.instruction_2', 'On tracker: Settings → Share heart rate → Enable')}</p>
                 </div>
               </div>
             </div>
