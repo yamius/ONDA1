@@ -4833,30 +4833,31 @@ const OndaLevel1 = () => {
                       onClick={vitalsData.connect}
                       disabled={vitalsData.connected}
                       data-testid="button-connect-tracker-home"
-                      className={`${vitalsData.connected ? 'flex-1' : 'w-full'} py-3 px-6 rounded-full text-xl font-light backdrop-blur-sm transition-all border flex items-center justify-center gap-2 ${
+                      className={`${vitalsData.connected ? 'flex-1' : 'w-full'} py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 ${
                         vitalsData.connected
-                          ? 'bg-green-500/20 border-green-500/40 text-green-400 cursor-default'
-                          : 'bg-blue-500/10 hover:bg-blue-500/20 border-blue-400/40 text-blue-300'
+                          ? 'bg-green-500/20 text-green-400 cursor-default'
+                          : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
                       }`}
                     >
-                      <Bluetooth className="w-5 h-5" />
+                      <Bluetooth className="w-4 h-4" />
                       {vitalsData.connected ? 'Tracker Connected' : 'Connect Tracker'}
                     </button>
                     {vitalsData.connected && (
                       <button
                         onClick={vitalsData.disconnect}
                         data-testid="button-disconnect-tracker-home"
-                        className="py-3 px-5 rounded-full text-sm backdrop-blur-sm transition-all border flex items-center justify-center gap-2 bg-red-500/10 hover:bg-red-500/20 border-red-400/40 text-red-400"
+                        className="flex-1 py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 bg-red-500/20 hover:bg-red-500/30 text-red-400"
                       >
                         <X className="w-4 h-4" />
+                        Disconnect
                       </button>
                     )}
                   </div>
                 </>
               )}
               {vitalsData.isScanning && (
-                <div className="w-full py-3 px-6 rounded-full text-xl font-light flex items-center justify-center gap-2 border border-blue-400/40 bg-blue-500/10 text-blue-300">
-                  <Bluetooth className="w-5 h-5 animate-pulse" />
+                <div className="w-full py-2.5 px-4 rounded-xl text-sm flex items-center justify-center gap-2 bg-blue-500/10 text-blue-300">
+                  <Bluetooth className="w-4 h-4 animate-pulse" />
                   Scanning...
                 </div>
               )}
