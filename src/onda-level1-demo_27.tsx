@@ -5494,7 +5494,6 @@ const OndaLevel1 = () => {
               }`}
             >
               <span>{t('part_info.button')}</span>
-              <span>→</span>
             </button>
           </div>
         )}
