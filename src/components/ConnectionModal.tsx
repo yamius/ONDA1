@@ -785,7 +785,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
               {t('connection.bluetooth_desc', 'Connect a Bluetooth heart rate monitor for real-time biofeedback during practices')}
             </p>
 
-            <div className="flex gap-3 justify-center">
+            <div className="flex gap-3 w-fit mx-auto">
               {!isScanning && (
                 <>
                   <button
