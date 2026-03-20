@@ -5459,7 +5459,7 @@ const OndaLevel1 = () => {
 
         {/* Кнопка Part's info — переход на addon-страницу */}
         {t(`part_info.level_${activeCircuit}.title`, { defaultValue: '' }) && (
-          <div className="mb-6">
+          <div className="mb-6 max-w-lg mx-auto w-full">
             <button
               onClick={() => {
                 setActiveView('addon');
