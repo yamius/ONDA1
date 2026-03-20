@@ -4879,22 +4879,22 @@ const OndaLevel1 = () => {
             <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-red-500/30">
               <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
               <div className="text-xl sm:text-2xl font-bold">{displayHeartRate ?? '--'}</div>
-              <div className="text-xs text-gray-400">BPM {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
+              <div className="text-xs text-gray-400">{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
             </div>
             <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-blue-500/30">
               <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
               <div className="text-xl sm:text-2xl font-bold">{vitalsData.br ? `${vitalsData.br.toFixed(1)}` : '--'}</div>
-              <div className="text-xs text-gray-400">/min</div>
+              <div className="text-xs text-gray-400">{t('settings.br_unit', '/min')}</div>
             </div>
             <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-orange-500/30">
               <Activity className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400 mb-2 mx-auto" />
               <div className="text-xl sm:text-2xl font-bold">{vitalsData.stress ?? '--'}%</div>
-              <div className="text-xs text-gray-400">Stress</div>
+              <div className="text-xs text-gray-400">{t('settings.stress_label', 'Stress')}</div>
             </div>
             <div className="bg-black/30 backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center border border-amber-600/30">
               <Zap className="w-5 sm:w-6 h-5 sm:h-6 text-amber-400 mb-2 mx-auto" />
               <div className="text-xl sm:text-2xl font-bold">{vitalsData.energy ?? '--'}%</div>
-              <div className="text-xs text-gray-400">Energy</div>
+              <div className="text-xs text-gray-400">{t('settings.energy_label', 'Energy')}</div>
             </div>
           </div>
         </div>
