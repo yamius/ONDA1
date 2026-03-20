@@ -811,7 +811,7 @@
     "tracker_connect": "Connect Tracker",
     "tracker_disconnect": "Disconnect",
     "bluetooth_monitor": "Bluetooth Heart Rate Monitor",
-    "bluetooth_desc": "Connect a Bluetooth heart rate monitor for real-time biofeedback during practices",
+    "bluetooth_desc": "Connect a heart rate tracker for real-time biofeedback during practices",
     "basic_metrics": "Basic Physiological Metrics",
     "advanced_metrics": "Advanced Physiological Metrics",
     "emotional_metrics": "Emotional State Metrics",
