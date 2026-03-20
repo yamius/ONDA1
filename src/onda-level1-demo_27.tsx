@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
-import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users } from 'lucide-react';
+import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
@@ -4817,6 +4817,51 @@ const OndaLevel1 = () => {
           visible={showWatchPrompt}
           onConnected={() => setShowWatchPrompt(false)}
         />
+
+        {/* BLE Connect Tracker — Android only, shown above biometrics grid */}
+        {platform !== 'ios' && (
+          <div className="mb-4 bg-black/30 backdrop-blur-sm rounded-2xl border border-blue-500/20 p-4">
+            <p className="text-xs font-semibold text-white/70 mb-1">Bluetooth Heart Rate Monitor</p>
+            <p className="text-xs text-white/50 mb-3">
+              Connect a Bluetooth heart rate monitor for real-time biofeedback during practices
+            </p>
+            <div className="flex gap-2">
+              {!vitalsData.isScanning && (
+                <>
+                  <button
+                    onClick={vitalsData.connect}
+                    disabled={vitalsData.connected}
+                    data-testid="button-connect-tracker-home"
+                    className={`${vitalsData.connected ? 'flex-1' : 'w-full'} py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 ${
+                      vitalsData.connected
+                        ? 'bg-green-500/20 text-green-400 cursor-default'
+                        : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
+                    }`}
+                  >
+                    <Bluetooth className="w-4 h-4" />
+                    {vitalsData.connected ? 'Tracker Connected' : 'Connect Tracker'}
+                  </button>
+                  {vitalsData.connected && (
+                    <button
+                      onClick={vitalsData.disconnect}
+                      data-testid="button-disconnect-tracker-home"
+                      className="flex-1 py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 bg-red-500/20 hover:bg-red-500/30 text-red-400"
+                    >
+                      <X className="w-4 h-4" />
+                      Disconnect
+                    </button>
+                  )}
+                </>
+              )}
+              {vitalsData.isScanning && (
+                <div className="w-full py-2.5 px-4 rounded-xl text-sm flex items-center justify-center gap-2 bg-blue-500/10 text-blue-300">
+                  <Bluetooth className="w-4 h-4 animate-pulse" />
+                  Scanning...
+                </div>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* Биометрика */}
         <div className="mb-6">
