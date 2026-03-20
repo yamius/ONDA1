@@ -4825,40 +4825,49 @@ const OndaLevel1 = () => {
             <p className="text-xs text-white/50 mb-3">
               Connect a Bluetooth heart rate monitor for real-time biofeedback during practices
             </p>
-            <div className="flex gap-2">
+            <div className="flex flex-col gap-2">
               {!vitalsData.isScanning && (
                 <>
-                  <button
-                    onClick={vitalsData.connect}
-                    disabled={vitalsData.connected}
-                    data-testid="button-connect-tracker-home"
-                    className={`${vitalsData.connected ? 'flex-1' : 'w-full'} py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 ${
-                      vitalsData.connected
-                        ? 'bg-green-500/20 text-green-400 cursor-default'
-                        : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
-                    }`}
-                  >
-                    <Bluetooth className="w-4 h-4" />
-                    {vitalsData.connected ? 'Tracker Connected' : 'Connect Tracker'}
-                  </button>
-                  {vitalsData.connected && (
+                  <div className="flex gap-2">
                     <button
-                      onClick={vitalsData.disconnect}
-                      data-testid="button-disconnect-tracker-home"
-                      className="flex-1 py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 bg-red-500/20 hover:bg-red-500/30 text-red-400"
+                      onClick={vitalsData.connect}
+                      disabled={vitalsData.connected}
+                      data-testid="button-connect-tracker-home"
+                      className={`${vitalsData.connected ? 'flex-1' : 'w-full'} py-3 px-6 rounded-full text-xl font-light backdrop-blur-sm transition-all border flex items-center justify-center gap-2 ${
+                        vitalsData.connected
+                          ? 'bg-green-500/20 border-green-500/40 text-green-400 cursor-default'
+                          : 'bg-blue-500/10 hover:bg-blue-500/20 border-blue-400/40 text-blue-300'
+                      }`}
                     >
-                      <X className="w-4 h-4" />
-                      Disconnect
+                      <Bluetooth className="w-5 h-5" />
+                      {vitalsData.connected ? 'Tracker Connected' : 'Connect Tracker'}
                     </button>
-                  )}
+                    {vitalsData.connected && (
+                      <button
+                        onClick={vitalsData.disconnect}
+                        data-testid="button-disconnect-tracker-home"
+                        className="py-3 px-5 rounded-full text-sm backdrop-blur-sm transition-all border flex items-center justify-center gap-2 bg-red-500/10 hover:bg-red-500/20 border-red-400/40 text-red-400"
+                      >
+                        <X className="w-4 h-4" />
+                      </button>
+                    )}
+                  </div>
                 </>
               )}
               {vitalsData.isScanning && (
-                <div className="w-full py-2.5 px-4 rounded-xl text-sm flex items-center justify-center gap-2 bg-blue-500/10 text-blue-300">
-                  <Bluetooth className="w-4 h-4 animate-pulse" />
+                <div className="w-full py-3 px-6 rounded-full text-xl font-light flex items-center justify-center gap-2 border border-blue-400/40 bg-blue-500/10 text-blue-300">
+                  <Bluetooth className="w-5 h-5 animate-pulse" />
                   Scanning...
                 </div>
               )}
+              {/* Connection instructions */}
+              <div className="mt-1 p-3 rounded-xl bg-white/5 border border-white/10">
+                <p className="text-xs font-medium text-white/70 mb-1.5">Connection instructions:</p>
+                <div className="text-xs text-white/50 space-y-1">
+                  <p>On phone: Close standard tracker app. Turn on Bluetooth</p>
+                  <p>On tracker: Settings → Share heart rate → Enable</p>
+                </div>
+              </div>
             </div>
           </div>
         )}
