@@ -4819,7 +4819,7 @@ const OndaLevel1 = () => {
         />
 
         {/* BLE Connect Tracker — Android only, shown above biometrics grid */}
-        {platform !== 'ios' && (
+        {platform !== 'ios' && !vitalsData.connected && (
           <div className="mb-4 bg-black/30 backdrop-blur-sm rounded-2xl border border-blue-500/20 p-4 max-w-lg mx-auto w-full">
             <p className="text-xs font-semibold text-white/70 mb-1">Bluetooth Heart Rate Monitor</p>
             <p className="text-xs text-white/50 mb-3">
