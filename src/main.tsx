@@ -6,9 +6,25 @@ import './index.css';
 import './i18n';
 import './bridge/healthConnectBridge';
 import { initializeAnalytics } from './services/analytics';
+import * as Sentry from '@sentry/capacitor';
+import * as SentryReact from '@sentry/react';
+
+Sentry.init(
+  {
+    dsn: 'https://89007b674e33e62ef933bb71670f885f@o451107803417048.ingest.us.sentry.io/4511078050889728',
+    integrations: [
+      SentryReact.browserTracingIntegration(),
+    ],
+    tracesSampleRate: 0.2,
+    environment: import.meta.env.MODE,
+    release: 'onda-life@1.0.0',
+  },
+  SentryReact.init
+);
 
 window.onerror = function(message, source, lineno, colno, error) {
   console.error('[ONDA Global Error]:', { message, source, lineno, colno, error });
+  if (error) Sentry.captureException(error);
   const errorLog = {
     type: 'global',
     timestamp: new Date().toISOString(),
@@ -28,6 +44,7 @@ window.onerror = function(message, source, lineno, colno, error) {
 
 window.onunhandledrejection = function(event) {
   console.error('[ONDA Unhandled Promise]:', event.reason);
+  Sentry.captureException(event.reason);
   const errorLog = {
     type: 'promise',
     timestamp: new Date().toISOString(),
