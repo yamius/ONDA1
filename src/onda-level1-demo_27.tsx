@@ -4827,33 +4827,31 @@ const OndaLevel1 = () => {
             </p>
             <div className="flex flex-col gap-2">
               {!vitalsData.isScanning && (
-                <>
-                  <div className="flex gap-2">
+                <div className="flex gap-2 justify-center">
+                  <button
+                    onClick={vitalsData.connect}
+                    disabled={vitalsData.connected}
+                    data-testid="button-connect-tracker-home"
+                    className={`py-2.5 px-5 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 ${
+                      vitalsData.connected
+                        ? 'bg-green-500/20 text-green-400 cursor-default'
+                        : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
+                    }`}
+                  >
+                    <Bluetooth className="w-4 h-4" />
+                    {vitalsData.connected ? t('settings.tracker_connected', 'Connected') : t('settings.tracker_connect', 'Connect Tracker')}
+                  </button>
+                  {vitalsData.connected && (
                     <button
-                      onClick={vitalsData.connect}
-                      disabled={vitalsData.connected}
-                      data-testid="button-connect-tracker-home"
-                      className={`${vitalsData.connected ? 'flex-1' : 'w-full'} py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 ${
-                        vitalsData.connected
-                          ? 'bg-green-500/20 text-green-400 cursor-default'
-                          : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
-                      }`}
+                      onClick={vitalsData.disconnect}
+                      data-testid="button-disconnect-tracker-home"
+                      className="py-2.5 px-5 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 bg-red-500/20 hover:bg-red-500/30 text-red-400"
                     >
-                      <Bluetooth className="w-4 h-4" />
-                      {vitalsData.connected ? t('settings.tracker_connected', 'Connected') : t('settings.tracker_connect', 'Connect Tracker')}
+                      <X className="w-4 h-4" />
+                      {t('settings.tracker_disconnect', 'Disconnect')}
                     </button>
-                    {vitalsData.connected && (
-                      <button
-                        onClick={vitalsData.disconnect}
-                        data-testid="button-disconnect-tracker-home"
-                        className="flex-1 py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 bg-red-500/20 hover:bg-red-500/30 text-red-400"
-                      >
-                        <X className="w-4 h-4" />
-                        {t('settings.tracker_disconnect', 'Disconnect')}
-                      </button>
-                    )}
-                  </div>
-                </>
+                  )}
+                </div>
               )}
               {vitalsData.isScanning && (
                 <div className="flex gap-2">
