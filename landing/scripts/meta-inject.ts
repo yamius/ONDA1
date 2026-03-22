@@ -737,6 +737,14 @@ export function getMetaForRoute(route: string): RouteMeta {
   if (route === '/the-stack') {
     return { title: THE_STACK_TITLE, description: THE_STACK_DESC, url, breadcrumbs }
   }
+  if (route === '/bio') {
+    return {
+      title: 'Bio OS — Live Biometrics in Your Browser | ONDA Life',
+      description: 'Measure your heart rate, stress, energy and HRV right in the browser — no wearable required. Place your finger on the camera and get real-time biometric analysis.',
+      url,
+      breadcrumbs,
+    }
+  }
   if (route === '/contact') {
     return {
       title: CONTACT_TITLE,

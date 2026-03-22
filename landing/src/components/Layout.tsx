@@ -124,13 +124,15 @@ export function Layout() {
           >
             Language
           </button>
-          <a
-            href="/#download"
+          <TransitionLink
+            to="/bio"
             onClick={() => setMenuOpen(false)}
-            className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
+            className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
+              location.pathname === '/bio' ? 'text-cyan-400' : 'text-white/70'
+            }`}
           >
-            Download<span className="sr-only"> ONDA Life biohacking app</span>
-          </a>
+            Bio OS<span className="sr-only"> — live biometrics measurement</span>
+          </TransitionLink>
           <TransitionLink
             to="/contact"
             onClick={() => setMenuOpen(false)}
@@ -151,12 +153,13 @@ export function Layout() {
               <span className="text-cyan-400">ONDA</span>
               <span className="text-green-400"> LIFE</span>
             </TransitionLink>
-            <a
-              href="/#download"
+            <TransitionLink
+              to="/bio"
+              onClick={() => setMenuOpen(false)}
               className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-3 py-1.5 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:px-4 md:py-1.5 md:text-sm"
             >
-              Download App
-            </a>
+              Bio OS
+            </TransitionLink>
           </div>
         </header>
         <div className="pt-6">
@@ -187,9 +190,9 @@ export function Layout() {
               <Link to="/articles" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 Articles<span className="sr-only"> on biohacking and human optimization</span>
               </Link>
-              <a href="/#download" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                Download<span className="sr-only"> ONDA Life biohacking app</span>
-              </a>
+              <Link to="/bio" className="text-xs text-white/40 transition-colors hover:text-white/60">
+                Bio OS<span className="sr-only"> — live biometrics measurement</span>
+              </Link>
               <Link to="/contact" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 Contacts<span className="sr-only"> — reach ONDA Life team</span>
               </Link>
