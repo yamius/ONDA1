@@ -460,7 +460,7 @@ export function BioPage() {
           {/* Line 1 below circle — changes with state, fixed height */}
           <div className="h-4 flex items-center">
             {measuring ? (
-              <p className={`text-[10px] transition-colors duration-300 ${fingerOn ? 'text-green-400' : 'text-white/30'}`}>
+              <p className={`text-xs transition-colors duration-300 ${fingerOn ? 'text-green-400' : 'text-white/25'}`}>
                 {fingerOn ? '✓ Finger detected' : 'Place finger on camera →'}
               </p>
             ) : (
