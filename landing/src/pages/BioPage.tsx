@@ -432,7 +432,7 @@ export function BioPage() {
           {/* Main circle — always same size, content swaps */}
           {measuring ? (
             /* Measuring: big circle shows camera preview inside */
-            <div className="flex h-24 w-24 items-center justify-center rounded-full ring-2 ring-cyan-400/50 bg-[#1e1540] shadow-[0_0_36px_rgba(6,182,212,0.18)]">
+            <div className="flex h-24 w-24 items-center justify-center rounded-full ring-2 ring-cyan-400/60 bg-[#1e1540] animate-pulse shadow-[0_0_36px_rgba(6,182,212,0.25)]">
               <div
                 className="h-16 w-16 rounded-full ring-1 ring-white/20 shadow-inner transition-colors duration-300"
                 style={{ backgroundColor: cameraColor }}
