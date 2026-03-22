@@ -46,6 +46,7 @@ function movingAvg(arr: number[], win: number): number[] {
   })
 }
 
+// Integer peak positions (for envelope etc.)
 function detectPeaks(signal: number[]): number[] {
   const peaks: number[] = []
   for (let i = 1; i < signal.length - 1; i++) {
@@ -57,13 +58,31 @@ function detectPeaks(signal: number[]): number[] {
   return peaks
 }
 
+// Parabolic interpolation for sub-sample peak positions → more precise RR intervals
+function detectPeaksFractional(signal: number[]): number[] {
+  const peaks: number[] = []
+  for (let i = 1; i < signal.length - 1; i++) {
+    if (signal[i] > signal[i - 1] && signal[i] > signal[i + 1]) {
+      if (!peaks.length || i - Math.floor(peaks[peaks.length - 1]) >= MIN_DIST) {
+        const denom = signal[i - 1] - 2 * signal[i] + signal[i + 1]
+        const frac = denom !== 0
+          ? 0.5 * (signal[i - 1] - signal[i + 1]) / denom
+          : 0
+        peaks.push(i + Math.max(-0.5, Math.min(0.5, frac)))
+      }
+    }
+  }
+  return peaks
+}
+
 // Returns raw (unsmoothed) numeric metric values
 function computeRaw(redBuf: number[]): Record<string, number> | null {
   if (redBuf.length < PPG_FPS * 6) return null
 
   const avg = movingAvg(redBuf, PPG_FPS * 2)
   const detrended = redBuf.map((v, i) => v - avg[i])
-  const peaks = detectPeaks(detrended)
+  // Use fractional peaks for precise RR intervals (avoids 30fps quantization artifacts)
+  const peaks = detectPeaksFractional(detrended)
   if (peaks.length < 4) return null
 
   const rrIntervals: number[] = []
