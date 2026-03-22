@@ -426,52 +426,47 @@ export function BioPage() {
           </p>
         </div>
 
-        {/* Camera button + preview dot — fixed layout to prevent page jump */}
-        <div className="mb-8 flex flex-col items-center gap-3">
+        {/* Camera button — stable layout, nothing shifts */}
+        <div className="mb-8 flex flex-col items-center gap-2">
 
-          {/* Main circle — always same size, content swaps */}
+          {/* Big circle — always same size */}
           {measuring ? (
-            /* Measuring: big circle shows camera preview inside */
-            <div className="flex h-24 w-24 items-center justify-center rounded-full ring-2 ring-cyan-400/60 bg-[#1e1540] animate-pulse shadow-[0_0_36px_rgba(6,182,212,0.25)]">
+            <div
+              onClick={handleStop}
+              className="flex h-24 w-24 cursor-pointer flex-col items-center justify-center gap-2 rounded-full ring-2 ring-cyan-400/60 bg-[#1e1540] animate-pulse shadow-[0_0_36px_rgba(6,182,212,0.25)] active:scale-95 transition-all select-none"
+            >
               <div
                 className="h-16 w-16 rounded-full ring-1 ring-white/20 shadow-inner transition-colors duration-300"
                 style={{ backgroundColor: cameraColor }}
               />
+              <span className="text-[10px] font-semibold text-white/40 leading-none">tap to stop</span>
             </div>
           ) : (
-            /* Idle: big circle is the start button */
             <button
               onClick={handleStart}
-              className="flex h-24 w-24 items-center justify-center rounded-full ring-1 ring-white/15 bg-[#1e1540] transition-all hover:ring-cyan-400/40 hover:shadow-[0_0_40px_rgba(6,182,212,0.12)] active:scale-95"
+              className="flex h-24 w-24 flex-col items-center justify-center gap-1.5 rounded-full ring-1 ring-white/15 bg-[#1e1540] transition-all hover:ring-cyan-400/40 hover:shadow-[0_0_40px_rgba(6,182,212,0.12)] active:scale-95"
             >
-              <span className="text-[11px] font-semibold text-white/50 text-center leading-tight">tap to<br/>start</span>
+              <span className="text-2xl">📷</span>
+              <span className="text-[10px] font-semibold text-white/40 leading-none">tap to start</span>
             </button>
           )}
 
-          {/* Below circle — same height in both states */}
-          <div className="flex flex-col items-center gap-1">
+          {/* Line 1 below circle — changes with state, fixed height */}
+          <div className="h-4 flex items-center">
             {measuring ? (
-              <>
-                <button
-                  onClick={handleStop}
-                  className="flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-white/20 bg-[#1e1540] active:scale-95 transition-all"
-                >
-                  <span className="text-[9px] font-semibold text-white/40 text-center leading-tight">tap<br/>stop</span>
-                </button>
-                <p className={`text-[10px] transition-colors duration-300 ${fingerOn ? 'text-green-400' : 'text-white/30'}`}>
-                  {fingerOn ? '✓ Finger detected' : 'Place finger on camera →'}
-                </p>
-              </>
+              <p className={`text-[10px] transition-colors duration-300 ${fingerOn ? 'text-green-400' : 'text-white/30'}`}>
+                {fingerOn ? '✓ Finger detected' : 'Place finger on camera →'}
+              </p>
             ) : (
-              <>
-                <p className="text-xs text-white/25">Back camera · cover lens with finger</p>
-                <p className="text-xs text-white/20">Hold camera facing a light source</p>
-              </>
+              <p className="text-xs text-white/25">Back camera · cover lens with finger</p>
             )}
           </div>
 
+          {/* Line 2 — always the same */}
+          <p className="text-xs text-white/20">Hold camera facing a light source</p>
+
           {cameraError && (
-            <p className="mt-1 text-center text-xs text-red-400">{cameraError}</p>
+            <p className="text-center text-xs text-red-400">{cameraError}</p>
           )}
         </div>
 
