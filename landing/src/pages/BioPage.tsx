@@ -426,47 +426,50 @@ export function BioPage() {
           </p>
         </div>
 
-        {/* Camera button + preview dot */}
+        {/* Camera button + preview dot — fixed layout to prevent page jump */}
         <div className="mb-8 flex flex-col items-center gap-3">
-          {measuring ? (
-            <>
-              <button
-                onClick={handleStop}
-                className="flex h-24 w-24 flex-col items-center justify-center gap-1 rounded-full ring-2 ring-cyan-400/50 bg-[#1e1540] shadow-[0_0_36px_rgba(6,182,212,0.18)] active:scale-95 transition-all"
-              >
-                {/* Pulsing dot */}
-                <span className="relative flex h-3 w-3">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-60" />
-                  <span className="relative inline-flex h-3 w-3 rounded-full bg-cyan-400" />
-                </span>
-                <span className="text-[11px] text-white/40 mt-1">tap to stop</span>
-              </button>
 
-              {/* Camera preview circle */}
-              <div className="flex flex-col items-center gap-1">
-                <div
-                  className="h-10 w-10 rounded-full ring-2 ring-white/15 shadow-lg transition-colors duration-500"
-                  style={{ backgroundColor: cameraColor }}
-                />
-                <p className={`text-[10px] transition-colors duration-300 ${fingerOn ? 'text-green-400' : 'text-white/30'}`}>
-                  {fingerOn ? '✓ Finger detected — measuring' : 'Place finger on camera →'}
-                </p>
-              </div>
-            </>
+          {/* Main circle — always same size, content swaps */}
+          {measuring ? (
+            /* Measuring: big circle shows camera preview inside */
+            <div className="flex h-24 w-24 items-center justify-center rounded-full ring-2 ring-cyan-400/50 bg-[#1e1540] shadow-[0_0_36px_rgba(6,182,212,0.18)]">
+              <div
+                className="h-16 w-16 rounded-full ring-1 ring-white/20 shadow-inner transition-colors duration-300"
+                style={{ backgroundColor: cameraColor }}
+              />
+            </div>
           ) : (
-            <>
-              <button
-                onClick={handleStart}
-                className="flex h-24 w-24 flex-col items-center justify-center gap-2 rounded-full ring-1 ring-white/15 bg-[#1e1540] transition-all hover:ring-cyan-400/40 hover:shadow-[0_0_40px_rgba(6,182,212,0.12)] active:scale-95"
-              >
-                <span className="text-[11px] font-semibold text-white/50 text-center leading-tight">tap to<br/>start</span>
-              </button>
-              <div className="flex flex-col items-center gap-0.5">
+            /* Idle: big circle is the start button */
+            <button
+              onClick={handleStart}
+              className="flex h-24 w-24 items-center justify-center rounded-full ring-1 ring-white/15 bg-[#1e1540] transition-all hover:ring-cyan-400/40 hover:shadow-[0_0_40px_rgba(6,182,212,0.12)] active:scale-95"
+            >
+              <span className="text-[11px] font-semibold text-white/50 text-center leading-tight">tap to<br/>start</span>
+            </button>
+          )}
+
+          {/* Below circle — same height in both states */}
+          <div className="flex flex-col items-center gap-1">
+            {measuring ? (
+              <>
+                <button
+                  onClick={handleStop}
+                  className="flex h-9 w-9 items-center justify-center rounded-full ring-1 ring-white/20 bg-[#1e1540] active:scale-95 transition-all"
+                >
+                  <span className="text-[9px] font-semibold text-white/40 text-center leading-tight">tap<br/>stop</span>
+                </button>
+                <p className={`text-[10px] transition-colors duration-300 ${fingerOn ? 'text-green-400' : 'text-white/30'}`}>
+                  {fingerOn ? '✓ Finger detected' : 'Place finger on camera →'}
+                </p>
+              </>
+            ) : (
+              <>
                 <p className="text-xs text-white/25">Back camera · cover lens with finger</p>
                 <p className="text-xs text-white/20">Hold camera facing a light source</p>
-              </div>
-            </>
-          )}
+              </>
+            )}
+          </div>
+
           {cameraError && (
             <p className="mt-1 text-center text-xs text-red-400">{cameraError}</p>
           )}
