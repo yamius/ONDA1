@@ -440,8 +440,7 @@ export function BioPage() {
                 onClick={handleStart}
                 className="flex h-24 w-24 flex-col items-center justify-center gap-2 rounded-full ring-1 ring-white/15 bg-[#1e1540] transition-all hover:ring-cyan-400/40 hover:shadow-[0_0_40px_rgba(6,182,212,0.12)] active:scale-95"
               >
-                <span className="text-2xl">📷</span>
-                <span className="text-xs font-semibold text-white/50">Measure</span>
+                <span className="text-[11px] font-semibold text-white/50 text-center leading-tight">tap to<br/>start</span>
               </button>
               <div className="flex flex-col items-center gap-0.5">
                 <p className="text-xs text-white/25">Back camera · cover lens with finger</p>
