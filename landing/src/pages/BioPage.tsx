@@ -122,11 +122,15 @@ function computeRaw(redBuf: number[]): Record<string, number> | null {
     : 0
 
   // Derived scores 0-100
-  const stress = Math.min(100, Math.max(0, csi * 300))
-  const energy = Math.min(100, Math.max(0, (rmssd / 80) * 100))
+  // stress: CSI normalized so typical camera CSI ~0.30 → ~40%
+  const stress = Math.min(100, Math.max(0, csi * 130))
+  // energy: inverse of HR elevation above resting + inverse CSI
+  const energy = Math.min(100, Math.max(10,
+    90 - Math.max(0, bpm - 75) * 1.5 - csi * 80
+  ))
 
   const alarm = Math.min(100, Math.max(0, stress * 0.7 + Math.max(0, br - 15) * 3))
-  const relaxation = Math.min(100, Math.max(0, (1 - csi) * 50 + energy * 0.3))
+  const relaxation = Math.min(100, Math.max(0, (1 - Math.min(1, csi * 1.5)) * 60 + energy * 0.2))
   const focus = Math.min(100, Math.max(0, energy * 0.5 + (100 - stress) * 0.5))
   const excitement = Math.min(100, Math.max(0, (bpm - 60) * 1.5 + br * 0.5))
   const fatigue = Math.min(100, Math.max(0, (1 - energy / 100) * 60 + stress * 0.2))
@@ -255,8 +259,12 @@ export function BioPage() {
   const ppgBuffer = useRef<number[]>([])
   const smoothedRef = useRef<Record<string, number>>({})
   const frameCountRef = useRef(0)
+  const fingerOnRef = useRef(false)
+  const fingerOffFrames = useRef(0)
   // Update display every N frames (~2 seconds at 30fps)
   const UPDATE_EVERY = 60
+  // Clear buffer if finger absent for this many frames (~1.5s)
+  const FINGER_OFF_RESET = 45
 
   useEffect(() => {
     document.title = 'Bio OS — Live Biometrics | ONDA Life'
@@ -298,18 +306,35 @@ export function BioPage() {
     g = Math.round(g / count)
     b = Math.round(b / count)
 
-    // Camera preview color update (throttled to ~10fps for visual smoothness)
+    // Detect finger: dark center = finger covering lens
+    const brightness = r * 0.299 + g * 0.587 + b * 0.114
+    const isFingerOn = brightness < 90
+
+    // Camera preview color update (throttled to ~10fps)
     if (frameCountRef.current % 3 === 0) {
       setCameraColor(`rgb(${r},${g},${b})`)
     }
 
-    ppgBuffer.current.push(r)
-    if (ppgBuffer.current.length > PPG_WINDOW) ppgBuffer.current.shift()
+    if (isFingerOn) {
+      fingerOffFrames.current = 0
+      fingerOnRef.current = true
+      // Add to PPG buffer only when finger is on
+      ppgBuffer.current.push(r)
+      if (ppgBuffer.current.length > PPG_WINDOW) ppgBuffer.current.shift()
+    } else {
+      fingerOffFrames.current++
+      fingerOnRef.current = false
+      // If finger absent long enough, reset buffer so stale data doesn't pollute
+      if (fingerOffFrames.current >= FINGER_OFF_RESET) {
+        ppgBuffer.current = []
+        fingerOffFrames.current = 0
+      }
+    }
 
     frameCountRef.current++
 
-    // Compute & smooth metrics every UPDATE_EVERY frames
-    if (frameCountRef.current % UPDATE_EVERY === 0) {
+    // Compute & smooth metrics every UPDATE_EVERY frames — ONLY when finger is on
+    if (fingerOnRef.current && frameCountRef.current % UPDATE_EVERY === 0) {
       const raw = computeRaw([...ppgBuffer.current])
       if (raw) {
         smoothedRef.current = applyEMA(raw, smoothedRef.current, EMA_ALPHA)
@@ -418,7 +443,10 @@ export function BioPage() {
                 <span className="text-2xl">📷</span>
                 <span className="text-xs font-semibold text-white/50">Measure</span>
               </button>
-              <p className="text-xs text-white/25">Back camera · cover lens with finger</p>
+              <div className="flex flex-col items-center gap-0.5">
+                <p className="text-xs text-white/25">Back camera · cover lens with finger</p>
+                <p className="text-xs text-white/20">Hold camera facing a light source</p>
+              </div>
             </>
           )}
           {cameraError && (
