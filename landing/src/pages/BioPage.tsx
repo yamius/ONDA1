@@ -33,8 +33,11 @@ function fmt(v: MetricValue, suffix = '') {
 // ─── PPG processing ──────────────────────────────────────────────────────────
 
 const PPG_FPS = 30
-const PPG_WINDOW = PPG_FPS * 10  // 10-second buffer
+const PPG_WINDOW = PPG_FPS * 15   // 15-second buffer for stability
 const MIN_DIST = Math.round(PPG_FPS * 0.4)  // 150 BPM max
+
+// EMA alpha — lower = smoother but slower to react
+const EMA_ALPHA = 0.15
 
 function movingAvg(arr: number[], win: number): number[] {
   return arr.map((_, i) => {
@@ -54,91 +57,121 @@ function detectPeaks(signal: number[]): number[] {
   return peaks
 }
 
-function computeMetrics(redBuf: number[]): Partial<BiometricState> {
-  if (redBuf.length < PPG_FPS * 5) return {}
+// Returns raw (unsmoothed) numeric metric values
+function computeRaw(redBuf: number[]): Record<string, number> | null {
+  if (redBuf.length < PPG_FPS * 6) return null
 
   const avg = movingAvg(redBuf, PPG_FPS * 2)
   const detrended = redBuf.map((v, i) => v - avg[i])
   const peaks = detectPeaks(detrended)
-  if (peaks.length < 3) return {}
+  if (peaks.length < 4) return null
 
   const rrIntervals: number[] = []
   for (let i = 1; i < peaks.length; i++)
     rrIntervals.push((peaks[i] - peaks[i - 1]) / PPG_FPS * 1000)
 
   const validRR = rrIntervals.filter(r => r > 400 && r < 1500)
-  if (validRR.length < 2) return {}
+  if (validRR.length < 3) return null
 
   const meanRR = validRR.reduce((s, r) => s + r, 0) / validRR.length
-  const bpm = Math.round(60000 / meanRR)
-  if (bpm < 40 || bpm > 180) return {}
+  const bpm = 60000 / meanRR
+  if (bpm < 40 || bpm > 180) return null
 
-  const hrv = Math.round(
-    Math.sqrt(validRR.map((r, i, a) => i ? (r - a[i-1]) ** 2 : 0)
-      .slice(1).reduce((s, v) => s + v, 0) / (validRR.length - 1))
+  // RMSSD — standard HRV metric
+  const rmssd = Math.sqrt(
+    validRR.map((r, i, a) => i ? (r - a[i - 1]) ** 2 : 0)
+      .slice(1).reduce((s, v) => s + v, 0) / (validRR.length - 1)
   )
 
+  // SDNN / CSI
   const sdRR = Math.sqrt(
     validRR.map(r => (r - meanRR) ** 2).reduce((s, v) => s + v, 0) / validRR.length
   )
-  const csi = parseFloat((sdRR / meanRR).toFixed(3))
+  const csi = sdRR / meanRR
 
-  // Breathing rate from envelope of detrended signal (low-pass ~0.5 Hz)
-  const envelope = movingAvg(detrended.map(Math.abs), PPG_FPS)
+  // Breathing rate from envelope
+  const envelope = movingAvg(detrended.map(v => Math.abs(v)), PPG_FPS)
   const envPeaks = detectPeaks(envelope)
-  let br: number | null = null
-  if (envPeaks.length >= 2) {
-    const envMeanInterval = envPeaks.slice(1).map((p, i) => p - envPeaks[i])
-      .reduce((s, v) => s + v, 0) / (envPeaks.length - 1) / PPG_FPS
-    const brRaw = Math.round(60 / envMeanInterval)
+  let br = 0
+  if (envPeaks.length >= 3) {
+    const intervals = envPeaks.slice(1).map((p, i) => (p - envPeaks[i]) / PPG_FPS)
+    const meanInterval = intervals.reduce((s, v) => s + v, 0) / intervals.length
+    const brRaw = 60 / meanInterval
     if (brRaw >= 6 && brRaw <= 40) br = brRaw
   }
 
-  // HR trend — linear regression slope over last N BPM estimates
-  // (simplified: use difference of first/last RR)
-  const hrTrend = parseFloat(((validRR[validRR.length - 1] - validRR[0]) / validRR.length / 10).toFixed(3))
+  // HR trend: slope via simple linear regression on RR intervals
+  const n = validRR.length
+  const xMean = (n - 1) / 2
+  const slope = validRR.reduce((s, r, i) => s + (i - xMean) * (r - meanRR), 0) /
+    validRR.reduce((s, _, i) => s + (i - xMean) ** 2, 0)
+  const hrTrend = -slope / 100  // positive = HR rising
 
-  // HR acceleration — second derivative approximation
-  const rrDiff = validRR.slice(1).map((r, i) => r - validRR[i])
-  const hrAccel = parseFloat((rrDiff.slice(1).reduce((s, v) => s + v, 0) / Math.max(1, rrDiff.length) / 100).toFixed(3))
+  // HR acceleration (second derivative)
+  const diffs = validRR.slice(1).map((r, i) => r - validRR[i])
+  const hrAccel = diffs.length > 1
+    ? diffs.slice(1).reduce((s, v) => s + v, 0) / (diffs.length - 1) / 100
+    : 0
 
-  // Recovery Rate — how quickly HR returns toward baseline
-  const bpmValues = validRR.map(r => Math.round(60000 / r))
+  // Recovery Rate
+  const bpmValues = validRR.map(r => 60000 / r)
   const bpmMean = bpmValues.reduce((s, v) => s + v, 0) / bpmValues.length
   const bpmMax = Math.max(...bpmValues)
-  const recoveryRate = bpmMax > bpmMean
-    ? parseFloat(((bpmMax - bpmValues[bpmValues.length - 1]) / (bpmMax - bpmMean) * 100).toFixed(0))
-    : null
+  const recoveryRate = bpmMax > bpmMean + 2
+    ? (bpmMax - bpmValues[bpmValues.length - 1]) / (bpmMax - bpmMean) * 100
+    : 0
 
-  // Stress proxy: CSI relative measure → 0-100%
-  const stress = Math.min(100, Math.round(csi * 300))
-  // Energy proxy: HRV relative measure → 0-100%
-  const energy = Math.min(100, Math.round((hrv / 80) * 100))
+  // Derived scores 0-100
+  const stress = Math.min(100, Math.max(0, csi * 300))
+  const energy = Math.min(100, Math.max(0, (rmssd / 80) * 100))
 
-  // Emotional scores (0-100)
-  const alarm = Math.min(100, Math.round(stress * 0.7 + (br !== null ? Math.max(0, br - 15) * 3 : 0)))
-  const relaxation = Math.min(100, Math.round((1 - csi) * 50 + energy * 0.3))
-  const focus = Math.min(100, Math.round(energy * 0.5 + (100 - stress) * 0.5))
-  const excitement = Math.min(100, Math.round((bpm - 60) * 1.5 + (br !== null ? br * 0.5 : 0)))
-  const fatigue = Math.min(100, Math.round((1 - energy / 100) * 60 + stress * 0.2))
-  const flow = Math.min(100, Math.round(focus * 0.6 + relaxation * 0.4))
+  const alarm = Math.min(100, Math.max(0, stress * 0.7 + Math.max(0, br - 15) * 3))
+  const relaxation = Math.min(100, Math.max(0, (1 - csi) * 50 + energy * 0.3))
+  const focus = Math.min(100, Math.max(0, energy * 0.5 + (100 - stress) * 0.5))
+  const excitement = Math.min(100, Math.max(0, (bpm - 60) * 1.5 + br * 0.5))
+  const fatigue = Math.min(100, Math.max(0, (1 - energy / 100) * 60 + stress * 0.2))
+  const flow = Math.min(100, Math.max(0, focus * 0.6 + relaxation * 0.4))
 
   return {
-    bpm: String(bpm),
-    br: br !== null ? String(br) : null,
-    hrv: String(hrv),
-    csi: String(csi),
-    recoveryRate: recoveryRate !== null ? String(recoveryRate) : '0',
-    hrTrend: String(hrTrend),
-    hrAccel: String(hrAccel),
-    stress: String(stress),
-    energy: String(energy),
-    alarm: String(alarm),
-    relaxation: String(relaxation),
-    focus: String(focus),
-    excitement: String(Math.max(0, excitement)),
-    fatigue: String(fatigue),
-    flow: String(flow),
+    bpm, br, hrv: rmssd, csi, recoveryRate, hrTrend, hrAccel,
+    stress, energy, alarm, relaxation, focus, excitement, fatigue, flow,
+  }
+}
+
+// Apply EMA: smoothed = alpha * raw + (1-alpha) * prev
+function applyEMA(
+  raw: Record<string, number>,
+  prev: Record<string, number>,
+  alpha: number,
+): Record<string, number> {
+  const out: Record<string, number> = { ...prev }
+  for (const key of Object.keys(raw)) {
+    const r = raw[key]
+    out[key] = prev[key] !== undefined ? alpha * r + (1 - alpha) * prev[key] : r
+  }
+  return out
+}
+
+function smoothedToState(s: Record<string, number>): Partial<BiometricState> {
+  const r = (k: string, d = 0) =>
+    s[k] !== undefined ? String(Math.round(s[k] * (10 ** d)) / (10 ** d)) : null
+
+  return {
+    bpm: r('bpm'),
+    br: s['br'] > 0 ? r('br') : null,
+    hrv: r('hrv'),
+    csi: s['csi'] !== undefined ? String(Math.round(s['csi'] * 1000) / 1000) : null,
+    recoveryRate: r('recoveryRate'),
+    hrTrend: s['hrTrend'] !== undefined ? String(Math.round(s['hrTrend'] * 1000) / 1000) : null,
+    hrAccel: s['hrAccel'] !== undefined ? String(Math.round(s['hrAccel'] * 1000) / 1000) : null,
+    stress: r('stress'),
+    energy: r('energy'),
+    alarm: r('alarm'),
+    relaxation: r('relaxation'),
+    focus: r('focus'),
+    excitement: r('excitement'),
+    fatigue: r('fatigue'),
+    flow: r('flow'),
   }
 }
 
@@ -212,17 +245,18 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 export function BioPage() {
   const [metrics, setMetrics] = useState<BiometricState>(emptyMetrics)
   const [measuring, setMeasuring] = useState(false)
-  const [countdown, setCountdown] = useState(0)
   const [cameraColor, setCameraColor] = useState<string>('rgb(220,220,220)')
   const [cameraError, setCameraError] = useState<string | null>(null)
 
   const videoRef = useRef<HTMLVideoElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
-  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null)
   const rafRef = useRef<number | null>(null)
   const streamRef = useRef<MediaStream | null>(null)
   const ppgBuffer = useRef<number[]>([])
-  const secondsLeft = useRef(45)
+  const smoothedRef = useRef<Record<string, number>>({})
+  const frameCountRef = useRef(0)
+  // Update display every N frames (~2 seconds at 30fps)
+  const UPDATE_EVERY = 60
 
   useEffect(() => {
     document.title = 'Bio OS — Live Biometrics | ONDA Life'
@@ -231,10 +265,8 @@ export function BioPage() {
 
   function stopAll() {
     if (rafRef.current) cancelAnimationFrame(rafRef.current)
-    if (timerRef.current) clearInterval(timerRef.current)
     if (streamRef.current) streamRef.current.getTracks().forEach(t => t.stop())
     rafRef.current = null
-    timerRef.current = null
     streamRef.current = null
   }
 
@@ -251,10 +283,10 @@ export function BioPage() {
     canvas.height = video.videoHeight || 64
     ctx.drawImage(video, 0, 0, canvas.width, canvas.height)
 
-    // Sample center 32×32 region
+    // Sample center 48×48 region
     const cx = Math.floor(canvas.width / 2)
     const cy = Math.floor(canvas.height / 2)
-    const size = Math.min(32, cx, cy)
+    const size = Math.min(24, cx, cy)
     const imageData = ctx.getImageData(cx - size, cy - size, size * 2, size * 2)
     const pixels = imageData.data
 
@@ -266,17 +298,23 @@ export function BioPage() {
     g = Math.round(g / count)
     b = Math.round(b / count)
 
-    setCameraColor(`rgb(${r},${g},${b})`)
+    // Camera preview color update (throttled to ~10fps for visual smoothness)
+    if (frameCountRef.current % 3 === 0) {
+      setCameraColor(`rgb(${r},${g},${b})`)
+    }
 
-    // PPG: red channel
     ppgBuffer.current.push(r)
-    if (ppgBuffer.current.length > PPG_WINDOW)
-      ppgBuffer.current.shift()
+    if (ppgBuffer.current.length > PPG_WINDOW) ppgBuffer.current.shift()
 
-    if (ppgBuffer.current.length >= PPG_FPS * 5) {
-      const computed = computeMetrics([...ppgBuffer.current])
-      if (Object.keys(computed).length > 0)
-        setMetrics(prev => ({ ...prev, ...computed }))
+    frameCountRef.current++
+
+    // Compute & smooth metrics every UPDATE_EVERY frames
+    if (frameCountRef.current % UPDATE_EVERY === 0) {
+      const raw = computeRaw([...ppgBuffer.current])
+      if (raw) {
+        smoothedRef.current = applyEMA(raw, smoothedRef.current, EMA_ALPHA)
+        setMetrics(prev => ({ ...prev, ...smoothedToState(smoothedRef.current) }))
+      }
     }
 
     rafRef.current = requestAnimationFrame(processFrame)
@@ -286,6 +324,8 @@ export function BioPage() {
     if (measuring) return
     setCameraError(null)
     ppgBuffer.current = []
+    smoothedRef.current = {}
+    frameCountRef.current = 0
 
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
@@ -296,46 +336,35 @@ export function BioPage() {
         videoRef.current.srcObject = stream
         await videoRef.current.play()
       }
-
-      // Try to enable torch if available
+      // Torch
       const track = stream.getVideoTracks()[0]
-      if (track && 'applyConstraints' in track) {
-        try {
-          await track.applyConstraints({ advanced: [{ torch: true } as MediaTrackConstraintSet] })
-        } catch { /* torch not supported */ }
-      }
-    } catch (e) {
+      try {
+        await track.applyConstraints({ advanced: [{ torch: true } as MediaTrackConstraintSet] })
+      } catch { /* not supported */ }
+    } catch {
       setCameraError('Camera access denied. Please allow camera in browser settings.')
       return
     }
 
     setMeasuring(true)
-    secondsLeft.current = 45
-    setCountdown(45)
     setMetrics(emptyMetrics)
-
-    timerRef.current = setInterval(() => {
-      secondsLeft.current -= 1
-      setCountdown(secondsLeft.current)
-      if (secondsLeft.current <= 0) {
-        stopAll()
-        setMeasuring(false)
-      }
-    }, 1000)
-
     rafRef.current = requestAnimationFrame(processFrame)
   }
 
   function handleStop() {
     stopAll()
     setMeasuring(false)
-    setCountdown(0)
     setCameraColor('rgb(220,220,220)')
   }
 
+  const brightness = (() => {
+    const rgb = cameraColor.match(/\d+/g)?.map(Number) ?? [220, 220, 220]
+    return rgb[0] * 0.299 + rgb[1] * 0.587 + rgb[2] * 0.114
+  })()
+  const fingerOn = measuring && brightness < 90
+
   return (
     <div className="min-h-screen text-white" style={{ background: 'linear-gradient(160deg,#1a0a2e 0%,#0d0620 50%,#12082a 100%)' }}>
-      {/* Hidden video + canvas for processing */}
       <video ref={videoRef} playsInline muted className="hidden" />
       <canvas ref={canvasRef} className="hidden" />
 
@@ -353,32 +382,30 @@ export function BioPage() {
           </p>
         </div>
 
-        {/* Camera button + preview indicator */}
+        {/* Camera button + preview dot */}
         <div className="mb-8 flex flex-col items-center gap-3">
           {measuring ? (
             <>
               <button
                 onClick={handleStop}
-                className="flex h-24 w-24 flex-col items-center justify-center gap-1 rounded-full ring-2 ring-cyan-400/60 bg-[#1e1540] shadow-[0_0_40px_rgba(6,182,212,0.2)] active:scale-95 transition-all"
+                className="flex h-24 w-24 flex-col items-center justify-center gap-1 rounded-full ring-2 ring-cyan-400/50 bg-[#1e1540] shadow-[0_0_36px_rgba(6,182,212,0.18)] active:scale-95 transition-all"
               >
-                <span className="font-mono text-4xl font-bold text-cyan-400">{countdown}</span>
-                <span className="text-[10px] text-white/30">tap to stop</span>
+                {/* Pulsing dot */}
+                <span className="relative flex h-3 w-3">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-60" />
+                  <span className="relative inline-flex h-3 w-3 rounded-full bg-cyan-400" />
+                </span>
+                <span className="text-[11px] text-white/40 mt-1">tap to stop</span>
               </button>
 
               {/* Camera preview circle */}
               <div className="flex flex-col items-center gap-1">
                 <div
-                  className="h-10 w-10 rounded-full ring-1 ring-white/20 shadow-lg transition-colors duration-300"
+                  className="h-10 w-10 rounded-full ring-2 ring-white/15 shadow-lg transition-colors duration-500"
                   style={{ backgroundColor: cameraColor }}
                 />
-                <p className="text-[10px] text-white/30">
-                  {(() => {
-                    const rgb = cameraColor.match(/\d+/g)?.map(Number) ?? [220, 220, 220]
-                    const brightness = (rgb[0] * 0.299 + rgb[1] * 0.587 + rgb[2] * 0.114)
-                    return brightness > 100
-                      ? 'Place finger on camera →'
-                      : '✓ Finger detected'
-                  })()}
+                <p className={`text-[10px] transition-colors duration-300 ${fingerOn ? 'text-green-400' : 'text-white/30'}`}>
+                  {fingerOn ? '✓ Finger detected — measuring' : 'Place finger on camera →'}
                 </p>
               </div>
             </>
@@ -391,10 +418,9 @@ export function BioPage() {
                 <span className="text-2xl">📷</span>
                 <span className="text-xs font-semibold text-white/50">Measure</span>
               </button>
-              <p className="text-xs text-white/25">Back camera · 45 sec · cover lens with finger</p>
+              <p className="text-xs text-white/25">Back camera · cover lens with finger</p>
             </>
           )}
-
           {cameraError && (
             <p className="mt-1 text-center text-xs text-red-400">{cameraError}</p>
           )}
@@ -432,7 +458,9 @@ export function BioPage() {
             <MetricRow label="Flow" desc="HR slightly above baseline, stable BR" value={metrics.flow} />
           </div>
           <p className="mt-4 text-center text-xs text-white/30">
-            {measuring ? 'Collecting signal...' : 'Real-time metrics. Calibrating baseline...'}
+            {measuring
+              ? (fingerOn ? 'Measuring... results update every ~2s' : 'Waiting for signal...')
+              : 'Real-time metrics. Calibrating baseline...'}
           </p>
         </div>
 
