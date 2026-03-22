@@ -433,12 +433,15 @@ export function BioPage() {
           {measuring ? (
             <div
               onClick={handleStop}
-              className="flex h-24 w-24 cursor-pointer flex-col items-center justify-center gap-2 rounded-full ring-2 ring-cyan-400/60 bg-[#1e1540] animate-pulse shadow-[0_0_36px_rgba(6,182,212,0.25)] active:scale-95 transition-all select-none"
+              className="flex h-24 w-24 cursor-pointer flex-col items-center justify-center gap-1.5 rounded-full ring-2 ring-cyan-400/60 bg-[#1e1540] animate-pulse shadow-[0_0_36px_rgba(6,182,212,0.25)] active:scale-95 transition-all select-none"
             >
-              <div
-                className="h-16 w-16 rounded-full ring-1 ring-white/20 shadow-inner transition-colors duration-300"
-                style={{ backgroundColor: cameraColor }}
-              />
+              {/* Same height as emoji — h-8 = 32px */}
+              <div className="flex h-8 w-8 items-center justify-center">
+                <div
+                  className="h-8 w-8 rounded-full ring-1 ring-white/20 shadow-inner transition-colors duration-300"
+                  style={{ backgroundColor: cameraColor }}
+                />
+              </div>
               <span className="text-[10px] font-semibold text-white/40 leading-none">tap to stop</span>
             </div>
           ) : (
@@ -446,7 +449,10 @@ export function BioPage() {
               onClick={handleStart}
               className="flex h-24 w-24 flex-col items-center justify-center gap-1.5 rounded-full ring-1 ring-white/15 bg-[#1e1540] transition-all hover:ring-cyan-400/40 hover:shadow-[0_0_40px_rgba(6,182,212,0.12)] active:scale-95"
             >
-              <span className="text-2xl">📷</span>
+              {/* h-8 wrapper keeps icon in same vertical slot */}
+              <div className="flex h-8 w-8 items-center justify-center">
+                <span className="text-2xl leading-none">📷</span>
+              </div>
               <span className="text-[10px] font-semibold text-white/40 leading-none">tap to start</span>
             </button>
           )}
