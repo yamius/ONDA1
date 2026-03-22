@@ -65,7 +65,7 @@ function MainCard({ icon, label, value, suffix }: {
   icon: React.ReactNode; label: string; value: MetricValue; suffix?: string
 }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 rounded-2xl bg-[#1e1540] p-5 ring-1 ring-white/10">
+    <div className="flex flex-col items-center justify-center gap-2 rounded-2xl bg-[#1e1540] py-4 px-5 ring-2 ring-white/20">
       {icon}
       <span className="text-2xl font-bold tracking-tight text-white">
         {fmt(value, suffix)}
@@ -160,7 +160,7 @@ export function BioPage() {
         </div>
 
         {/* 4 main cards */}
-        <div className="mb-8 grid grid-cols-2 gap-3">
+        <div className="mb-8 grid grid-cols-2 gap-6">
           <MainCard icon={<HeartIcon />} label="BPM" value={metrics.bpm} />
           <MainCard icon={<WindIcon />} label="/min" value={metrics.br} />
           <MainCard icon={<ActivityIcon />} label="Stress" value={metrics.stress} suffix="%" />
