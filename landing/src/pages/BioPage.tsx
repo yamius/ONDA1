@@ -46,18 +46,6 @@ function movingAvg(arr: number[], win: number): number[] {
   })
 }
 
-// Integer peak positions (for envelope etc.)
-function detectPeaks(signal: number[]): number[] {
-  const peaks: number[] = []
-  for (let i = 1; i < signal.length - 1; i++) {
-    if (signal[i] > signal[i - 1] && signal[i] > signal[i + 1]) {
-      if (!peaks.length || i - peaks[peaks.length - 1] >= MIN_DIST)
-        peaks.push(i)
-    }
-  }
-  return peaks
-}
-
 // Parabolic interpolation for sub-sample peak positions → more precise RR intervals
 function detectPeaksFractional(signal: number[]): number[] {
   const peaks: number[] = []
@@ -108,15 +96,23 @@ function computeRaw(redBuf: number[]): Record<string, number> | null {
   )
   const csi = sdRR / meanRR
 
-  // Breathing rate from envelope
-  const envelope = movingAvg(detrended.map(v => Math.abs(v)), PPG_FPS)
-  const envPeaks = detectPeaks(envelope)
+  // Breathing rate from amplitude envelope of PPG
+  // Breathing is 0.1–0.5 Hz → need 3s smoothing window and large min-distance between peaks
+  const envelope = movingAvg(detrended.map(v => Math.abs(v)), PPG_FPS * 3)
+  const BR_MIN_DIST = Math.round(PPG_FPS * 1.5) // min 1.5s between breaths (max 40 br/min)
+  const envPeaks: number[] = []
+  for (let i = 1; i < envelope.length - 1; i++) {
+    if (envelope[i] > envelope[i - 1] && envelope[i] > envelope[i + 1]) {
+      if (!envPeaks.length || i - envPeaks[envPeaks.length - 1] >= BR_MIN_DIST)
+        envPeaks.push(i)
+    }
+  }
   let br = 0
-  if (envPeaks.length >= 3) {
+  if (envPeaks.length >= 4) {
     const intervals = envPeaks.slice(1).map((p, i) => (p - envPeaks[i]) / PPG_FPS)
     const meanInterval = intervals.reduce((s, v) => s + v, 0) / intervals.length
-    const brRaw = 60 / meanInterval
-    if (brRaw >= 6 && brRaw <= 40) br = brRaw
+    const brRaw = Math.round(60 / meanInterval)
+    if (brRaw >= 6 && brRaw <= 30) br = brRaw
   }
 
   // HR trend: slope via simple linear regression on RR intervals
