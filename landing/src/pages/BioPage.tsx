@@ -418,11 +418,11 @@ export function BioPage() {
   const fingerOn = measuring && brightness < 90
 
   return (
-    <div className="min-h-screen text-white" style={{ background: 'linear-gradient(160deg,#1a0a2e 0%,#0d0620 50%,#12082a 100%)' }}>
+    <div className="-mt-6 min-h-screen text-white" style={{ background: 'linear-gradient(160deg,#1a0a2e 0%,#0d0620 50%,#12082a 100%)' }}>
       <video ref={videoRef} playsInline muted className="hidden" />
       <canvas ref={canvasRef} className="hidden" />
 
-      <div className="mx-auto max-w-lg px-4 py-10 md:py-14">
+      <div className="mx-auto max-w-lg px-4 pt-4 pb-10 md:pt-6 md:pb-14">
 
         {/* Header */}
         <div className="mb-8 text-center">
