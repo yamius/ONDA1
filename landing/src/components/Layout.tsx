@@ -118,21 +118,22 @@ export function Layout() {
           >
             Articles<span className="sr-only"> on biohacking and human optimization</span>
           </TransitionLink>
-          <button
-            type="button"
-            className="block w-full border-b border-white/5 py-3 text-left text-sm font-medium text-white/70 transition-colors hover:text-white"
-          >
-            Language
-          </button>
-          <TransitionLink
-            to="/bio"
+          <a
+            href="/#download"
             onClick={() => setMenuOpen(false)}
-            className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
-              location.pathname === '/bio' ? 'text-cyan-400' : 'text-white/70'
-            }`}
+            className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
           >
-            Bio OS<span className="sr-only"> — live biometrics measurement</span>
-          </TransitionLink>
+            Download
+          </a>
+          <div className="border-b border-white/5 py-2.5">
+            <TransitionLink
+              to="/bio"
+              onClick={() => setMenuOpen(false)}
+              className="inline-block rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-4 py-1.5 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600"
+            >
+              Bio OS
+            </TransitionLink>
+          </div>
           <TransitionLink
             to="/contact"
             onClick={() => setMenuOpen(false)}
