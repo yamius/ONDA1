@@ -129,7 +129,7 @@ export function Layout() {
             <TransitionLink
               to="/bio"
               onClick={() => setMenuOpen(false)}
-              className="inline-block rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-4 py-1 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600"
+              className="inline-block -ml-4 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-4 py-1 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600"
             >
               Bio OS
             </TransitionLink>
