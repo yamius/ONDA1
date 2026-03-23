@@ -128,7 +128,7 @@ export function Layout() {
           <TransitionLink
             to="/bio"
             onClick={() => setMenuOpen(false)}
-            className="-mx-4 block border-b border-white/5 bg-gradient-to-r from-cyan-500/70 to-transparent px-4 py-3 text-sm font-bold text-white transition-opacity hover:opacity-80"
+            className="-mx-4 block border-b border-white/5 bg-gradient-to-r from-green-400/70 to-transparent px-4 py-3 text-sm font-bold text-white transition-opacity hover:opacity-80"
           >
             Bio OS
           </TransitionLink>
