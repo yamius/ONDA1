@@ -13,6 +13,63 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  excitement: {
+    key: 'excitement',
+    title: 'Excitement: The Energy of Anticipation',
+    shortTitle: '✨ Excitement',
+    sections: [
+      {
+        heading: 'Positive Drive',
+        body: 'Excitement is the state of "bright" mobilization within your system. Much like anxiety, it involves a rise in heart rate and breathing frequency, but with a critical distinction: in ONDA, this index only climbs when your stress scores remain within a healthy range. It is not a threat response, but a readiness for play, creativity, or a significant event.',
+      },
+      {
+        heading: 'What the Values Mean',
+        bullets: [
+          {
+            label: '0–20% · Neutral',
+            text: 'No positive arousal detected. The system is in a resting or low-activation state. Useful for recovery, but not for performance or creative output.',
+          },
+          {
+            label: '20–50% · Mild Charge',
+            text: 'A gentle energizing — the body is warming up with motivation and light anticipation. Ideal for starting tasks that require sustained engagement.',
+          },
+          {
+            label: '50–75% · Drive',
+            text: 'Clear positive mobilization with stable rhythm. HR is elevated but stress is contained. This is the optimal zone for high-performance work, sport, or creative flow.',
+          },
+          {
+            label: '75–100% · Full Surge',
+            text: 'Peak eustress. The system is fully primed. This state is rare and time-limited — use it strategically. It transitions into anxiety if stress scores begin to rise alongside.',
+          },
+        ],
+      },
+      {
+        heading: 'The Biology of Joy',
+        body: 'In a state of Excitement, your body prepares for action, but it does so efficiently:',
+        bullets: [
+          {
+            label: 'Productive Surge',
+            text: 'Your heart beats faster to saturate your muscles and brain with oxygen, yet the rhythm remains stable and confident.',
+          },
+          {
+            label: 'Eustress',
+            text: 'This is "positive stress" — the kind that doesn\'t drain your reserves but instead makes you feel alive and engaged.',
+          },
+          {
+            label: 'Lack of Constraint',
+            text: 'Unlike anxiety, there is no "tunnel vision" here. You maintain a broad perspective and a high capacity for creativity.',
+          },
+        ],
+      },
+      {
+        heading: 'Why is it in ONDA?',
+        body: 'We help you recalibrate your internal signals. Often, people mistake excitement for anxiety and try to suppress it. ONDA reveals the truth: "Your heart rate is high, but your system is stable — you aren\'t afraid, you are simply charged." This insight allows you to use the energy of excitement as fuel for achievement rather than a reason for worry.',
+      },
+      {
+        highlight: 'Excitement is energy directed outward. Embrace the surge; it is a sign that your system is primed for greatness.',
+      },
+    ],
+  },
   focus: {
     key: 'focus',
     title: 'Focus / Concentration: The Physiology of Immersion',

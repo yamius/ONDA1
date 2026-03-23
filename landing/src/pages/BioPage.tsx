@@ -636,7 +636,8 @@ export function BioPage() {
               text="Blend of energy level and inverse stress. Peaks when HR is moderate, rhythm is stable, and stress is low — consistent with sustained attentional effort without overarousal."
               detailKey="focus" />
             <DescCard title="Excitement"
-              text="Rises with HR elevation above resting baseline and higher breathing rate. Distinguishable from alarm by the absence of extreme stress scores — it is positive arousal rather than threat response." />
+              text="Rises with HR elevation above resting baseline and higher breathing rate. Distinguishable from alarm by the absence of extreme stress scores — it is positive arousal rather than threat response."
+              detailKey="excitement" />
             <DescCard title="Fatigue"
               text="Increases when energy is depleted and stress is chronically elevated. Reflects the physiological cost of prolonged effort: reduced HRV, elevated HR at rest, and slow recovery." />
             <DescCard title="Flow"
