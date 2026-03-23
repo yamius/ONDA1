@@ -125,11 +125,11 @@ export function Layout() {
           >
             Download
           </a>
-          <div className="border-b border-white/5 py-2.5">
+          <div className="flex items-center border-b border-white/5 py-3">
             <TransitionLink
               to="/bio"
               onClick={() => setMenuOpen(false)}
-              className="inline-block rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-4 py-1.5 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600"
+              className="inline-block rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-4 py-1 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600"
             >
               Bio OS
             </TransitionLink>
