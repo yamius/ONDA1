@@ -3,6 +3,7 @@ import { articles } from '../data/articles'
 import { glossaryTerms } from '../data/glossary'
 import { parts } from './PartPage'
 import { levelsData } from '../data/levels'
+import { METRIC_DETAILS } from '../data/bioMetrics'
 import { useEffect } from 'react'
 
 const SITE_URL = 'https://onda-life.com'
@@ -122,9 +123,13 @@ export function SitemapPage() {
                 Bio OS — real-time biometrics
               </Link>
             </li>
-            <li className="mt-3 text-xs text-white/25 leading-relaxed">
-              Measure heart rate, HRV, stress, energy and breathing rate directly from your camera — no wearable required.
-            </li>
+            {Object.values(METRIC_DETAILS).map((m) => (
+              <li key={m.key}>
+                <Link to={`/bio/${m.key}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
+                  {m.shortTitle}
+                </Link>
+              </li>
+            ))}
           </ul>
         </section>
 

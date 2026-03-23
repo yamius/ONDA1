@@ -8,6 +8,7 @@ import { levelsData } from '../src/data/levels'
 import { PART_SEO } from '../src/data/part-seo'
 import { parts } from '../src/pages/PartPage'
 import { getArticleBySlug } from '../src/data/articles'
+import { METRIC_DETAILS } from '../src/data/bioMetrics'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -209,6 +210,17 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
     const level = levelsData[parseInt(segments[1], 10)]
     const label = level ? `Level ${level.number}: ${level.name}` : `Level ${segments[1]}`
     items.push({ name: label, url: `${SITE_URL}/level/${segments[1]}` })
+    return items
+  }
+  if (segments[0] === 'bio') {
+    items.push({ name: 'Bio OS', url: `${SITE_URL}/bio` })
+    if (segments[1]) {
+      const metric = METRIC_DETAILS[segments[1]]
+      items.push({
+        name: metric?.shortTitle ?? segments[1],
+        url: `${SITE_URL}/bio/${segments[1]}`,
+      })
+    }
     return items
   }
 
@@ -743,6 +755,19 @@ export function getMetaForRoute(route: string): RouteMeta {
       description: 'Measure your heart rate, stress, energy and HRV right in the browser — no wearable required. Place your finger on the camera and get real-time biometric analysis.',
       url,
       breadcrumbs,
+    }
+  }
+  const bioMetricMatch = route.match(/^\/bio\/([^/]+)$/)
+  if (bioMetricMatch) {
+    const key = bioMetricMatch[1]
+    const metric = METRIC_DETAILS[key]
+    if (metric) {
+      return {
+        title: `${metric.title} | ONDA Life Bio OS`,
+        description: `${metric.title} — learn what this biometric means, how to interpret your score, and how to use it in your daily practice.`,
+        url,
+        breadcrumbs,
+      }
     }
   }
   if (route === '/contact') {
