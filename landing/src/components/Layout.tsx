@@ -125,7 +125,7 @@ export function Layout() {
           >
             Download
           </a>
-          <div className="flex items-center border-b border-white/5 py-3">
+          <div className="flex items-center border-b border-white/5 py-2">
             <TransitionLink
               to="/bio"
               onClick={() => setMenuOpen(false)}
