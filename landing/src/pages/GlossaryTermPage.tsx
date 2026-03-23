@@ -268,6 +268,28 @@ export function GlossaryTermPage() {
           ← Back to Glossary
         </Link>
       </div>
+
+      {/* Explore more — always present for SEO link equity */}
+      <div className="mt-16 border-t border-white/5 pt-10">
+        <h3 className="mb-6 font-mono text-xs tracking-widest text-white/30">EXPLORE MORE</h3>
+        <div className="flex flex-wrap gap-3">
+          <Link to="/glossary" className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+            Full Glossary
+          </Link>
+          <Link to="/articles" className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+            All Articles
+          </Link>
+          <Link to="/bio" className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+            Bio OS
+          </Link>
+          <Link to="/the-stack" className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+            The Stack
+          </Link>
+          <Link to="/" className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+            Home
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }
