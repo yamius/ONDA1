@@ -13,6 +13,63 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  flow: {
+    key: 'flow',
+    title: 'Flow: The State of Biological Resonance',
+    shortTitle: '🌊 Flow',
+    sections: [
+      {
+        heading: 'The Point of Optimum',
+        body: 'Flow is the holy grail of performance. At ONDA, we capture this state when your system reaches perfect synchronization: high attentional focus while maintaining profound internal calm. It is the moment when you are entirely absorbed in a task, yet your body isn\'t paying an excessive price for it.',
+      },
+      {
+        heading: 'What the Values Mean',
+        bullets: [
+          {
+            label: '0–25% · Disconnected',
+            text: 'The conditions for flow are absent — either the Alarm index is elevated, energy is low, or focus is scattered. Attempting deep work here is fighting the biology.',
+          },
+          {
+            label: '25–50% · Approaching',
+            text: 'The system is warming up toward coherence. Focus is beginning to establish itself, stress is declining. A short breathing exercise or a clear intention can push you into the zone.',
+          },
+          {
+            label: '50–75% · In the Zone',
+            text: 'Biometric signature of flow is active: moderate HR, stable rhythm, low alarm. You are fully capable of sustained, high-quality work with minimal cognitive friction.',
+          },
+          {
+            label: '75–100% · Deep Resonance',
+            text: 'Rare and optimal. All three conditions are perfectly aligned — activation, stability, silence. This is the state where hours feel like minutes and output far exceeds effort. Protect it.',
+          },
+        ],
+      },
+      {
+        heading: 'The Formula of Flow',
+        body: 'Unlike an ordinary working state, Flow in ONDA has a distinct biometric signature:',
+        bullets: [
+          {
+            label: 'Moderate Activation',
+            text: 'Your heart rate is slightly above your resting baseline. This provides the brain with the necessary drive and resources without crossing into the alarm stage.',
+          },
+          {
+            label: 'Rhythmic Stability',
+            text: 'Your heart operates like a finely tuned machine — without jerks or chaos. This allows you to hold focus for hours without feeling mental friction.',
+          },
+          {
+            label: 'Absence of Noise',
+            text: 'The Alarm index is at zero. You are engaged but not overwhelmed. You aren\'t fighting the task; you are merging with it.',
+          },
+        ],
+      },
+      {
+        heading: 'Why is it in ONDA?',
+        body: 'The Flow state is the most efficient form of existence. Here, you produce maximum results with minimum attrition. ONDA helps you do more than just "stumble" into this state; it helps you understand which conditions (breathing, time of day, prep level) lead to it. We teach you to find your "zone," where the challenge perfectly meets your skill.',
+      },
+      {
+        highlight: 'Flow is not luck; it is a biophysical skill. Tune your rhythm, remove the excess noise, and the world around you will vanish, leaving only you and your craft.',
+      },
+    ],
+  },
   fatigue: {
     key: 'fatigue',
     title: 'Fatigue: The Physiological Tax on Effort',

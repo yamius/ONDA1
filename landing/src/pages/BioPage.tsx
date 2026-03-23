@@ -642,7 +642,8 @@ export function BioPage() {
               text="Increases when energy is depleted and stress is chronically elevated. Reflects the physiological cost of prolonged effort: reduced HRV, elevated HR at rest, and slow recovery."
               detailKey="fatigue" />
             <DescCard title="Flow"
-              text="The optimal performance state: high focus, moderate relaxation, and HR slightly above resting without alarm. Appears when you are fully engaged but not overwhelmed — the zone." />
+              text="The optimal performance state: high focus, moderate relaxation, and HR slightly above resting without alarm. Appears when you are fully engaged but not overwhelmed — the zone."
+              detailKey="flow" />
           </div>
 
           <p className="pb-6 text-center text-[10px] text-white/20 leading-relaxed">
