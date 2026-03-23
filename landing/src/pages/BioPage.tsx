@@ -266,11 +266,189 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
   return <h2 className="mb-3 text-center text-base font-semibold text-white">{children}</h2>
 }
 
-function DescCard({ title, text }: { title: string; text: string }) {
+// ─── Metric detail content ────────────────────────────────────────────────────
+
+interface DetailSection {
+  heading?: string
+  body?: string
+  bullets?: { label: string; text: string }[]
+  highlight?: string
+}
+
+interface MetricDetail {
+  title: string
+  sections: DetailSection[]
+}
+
+const METRIC_DETAILS: Record<string, MetricDetail> = {
+  bpm: {
+    title: 'BPM: The Rhythm of Your Internal Operating System',
+    sections: [
+      {
+        heading: 'The Biological Metronome',
+        body: 'BPM (Beats Per Minute) is more than just the speed at which your heart pumps blood. Within the ONDA ecosystem, we view the pulse as the primary interface of your Autonomic Nervous System. It is a live graph of how your body allocates resources in response to the challenges of the outside world.',
+      },
+      {
+        heading: 'A Symphony of Two States',
+        body: 'Your heart is constantly balancing between two "conductors":',
+        bullets: [
+          {
+            label: 'Sympathetic Drive',
+            text: 'When your pulse rises, your body enters a high-performance or defensive mode. This is mobilization — essential for a sprint, but toxic when sustained.',
+          },
+          {
+            label: 'Parasympathetic Calm',
+            text: 'A low heart rate is a signal of safety. In this state, the body initiates tissue regeneration, memory consolidation, and deep recovery.',
+          },
+        ],
+      },
+      {
+        heading: 'Why Do We Track the Numbers?',
+        body: 'Your resting heart rate is your baseline biological cost of living.',
+        bullets: [
+          {
+            label: 'High BPM while seated',
+            text: 'You are wasting energy. Your body is "running a marathon" while you are simply answering emails. This is a direct path to cognitive burnout.',
+          },
+          {
+            label: 'Optimal BPM',
+            text: 'This is the "silent cruise" mode — where the system operates at maximum efficiency, leaving a massive reserve for unexpected tasks.',
+          },
+        ],
+      },
+      {
+        heading: 'A Tool for Calibration',
+        body: 'BPM in the ONDA app is a mirror. By noticing an abnormal spike in your pulse, you gain the opportunity to intervene consciously. We don\'t just measure beats; we teach you to master them. A short breathing session or a shift in focus can instantly "drop" your pulse, switching your brain from survival mode to creative flow.',
+      },
+      {
+        highlight: 'A high pulse is expensive. A low pulse is intentional. Manage the rhythm to manage your life.',
+      },
+    ],
+  },
+}
+
+// ─── Metric detail drawer ─────────────────────────────────────────────────────
+
+function MetricDrawer({ detailKey, onClose }: { detailKey: string | null; onClose: () => void }) {
+  const detail = detailKey ? METRIC_DETAILS[detailKey] : null
+  const visible = !!detail
+
+  // Close on backdrop click
+  function handleBackdrop(e: React.MouseEvent<HTMLDivElement>) {
+    if (e.target === e.currentTarget) onClose()
+  }
+
+  // Close on Escape
+  useEffect(() => {
+    if (!visible) return
+    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [visible, onClose])
+
+  // Lock body scroll when open
+  useEffect(() => {
+    if (visible) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [visible])
+
   return (
-    <div className="rounded-xl bg-[#1e1540] px-4 py-3">
-      <p className="mb-1 text-sm font-semibold text-white/80">{title}</p>
-      <p className="text-xs leading-relaxed text-white/40">{text}</p>
+    <div
+      className={`fixed inset-0 z-[80] flex items-end justify-center transition-all duration-300 ${visible ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+      onClick={handleBackdrop}
+    >
+      {/* Backdrop */}
+      <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
+
+      {/* Drawer */}
+      <div
+        className={`relative z-10 w-full max-w-lg rounded-t-2xl transition-transform duration-300 ease-out ${visible ? 'translate-y-0' : 'translate-y-full'}`}
+        style={{ background: 'linear-gradient(160deg,#1a0a2e 0%,#0d0620 100%)', maxHeight: '85dvh' }}
+      >
+        {/* Handle bar */}
+        <div className="flex justify-center pt-3 pb-1">
+          <div className="h-1 w-10 rounded-full bg-white/20" />
+        </div>
+
+        {/* Close button */}
+        <button
+          onClick={onClose}
+          className="absolute right-4 top-4 flex h-7 w-7 items-center justify-center rounded-full bg-white/10 text-white/50 transition-colors hover:bg-white/20 hover:text-white"
+          aria-label="Close"
+        >
+          ✕
+        </button>
+
+        {/* Scrollable content */}
+        <div className="overflow-y-auto px-5 pb-10 pt-2" style={{ maxHeight: 'calc(85dvh - 48px)' }}>
+          {detail && (
+            <>
+              <h2 className="mb-6 pr-8 text-lg font-bold leading-snug text-white">{detail.title}</h2>
+              <div className="flex flex-col gap-5">
+                {detail.sections.map((sec, i) => (
+                  <div key={i}>
+                    {sec.heading && (
+                      <p className="mb-2 text-sm font-semibold text-cyan-400">{sec.heading}</p>
+                    )}
+                    {sec.body && (
+                      <p className="mb-2 text-sm leading-relaxed text-white/60">{sec.body}</p>
+                    )}
+                    {sec.bullets && (
+                      <div className="mt-2 flex flex-col gap-2">
+                        {sec.bullets.map((b, j) => (
+                          <div key={j} className="rounded-lg bg-white/5 px-4 py-3">
+                            <p className="mb-0.5 text-xs font-semibold text-white/80">{b.label}</p>
+                            <p className="text-xs leading-relaxed text-white/45">{b.text}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    {sec.highlight && (
+                      <div className="rounded-xl border border-cyan-500/20 bg-cyan-500/5 px-4 py-3">
+                        <p className="text-sm font-medium italic leading-relaxed text-cyan-300/80">
+                          The ONDA Principle:
+                        </p>
+                        <p className="mt-1 text-sm leading-relaxed text-white/60">{sec.highlight}</p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+// ─── Desc card ────────────────────────────────────────────────────────────────
+
+function DescCard({ title, text, detailKey, onOpen }: {
+  title: string
+  text: string
+  detailKey?: string
+  onOpen?: (key: string) => void
+}) {
+  const hasDetail = detailKey && METRIC_DETAILS[detailKey]
+  return (
+    <div
+      className={`rounded-xl bg-[#1e1540] px-4 py-3 transition-all ${hasDetail ? 'cursor-pointer ring-1 ring-transparent hover:ring-cyan-500/30 active:ring-cyan-500/50' : ''}`}
+      onClick={() => hasDetail && onOpen?.(detailKey!)}
+    >
+      <div className="flex items-center justify-between gap-2">
+        <p className="text-sm font-semibold text-white/80">{title}</p>
+        {hasDetail && (
+          <span className="shrink-0 rounded-full bg-cyan-500/10 px-2 py-0.5 font-mono text-[10px] text-cyan-400">
+            read more →
+          </span>
+        )}
+      </div>
+      <p className="mt-1 text-xs leading-relaxed text-white/40">{text}</p>
     </div>
   )
 }
@@ -282,6 +460,8 @@ export function BioPage() {
   const [measuring, setMeasuring] = useState(false)
   const [cameraColor, setCameraColor] = useState<string>('rgb(220,220,220)')
   const [cameraError, setCameraError] = useState<string | null>(null)
+  const [openDetail, setOpenDetail] = useState<string | null>(null)
+  const closeDetail = useCallback(() => setOpenDetail(null), [])
 
   const videoRef = useRef<HTMLVideoElement>(null)
   const canvasRef = useRef<HTMLCanvasElement>(null)
@@ -432,6 +612,7 @@ export function BioPage() {
 
   return (
     <div className="-mt-6 min-h-screen text-white" style={{ background: 'linear-gradient(160deg,#1a0a2e 0%,#0d0620 50%,#12082a 100%)' }}>
+      <MetricDrawer detailKey={openDetail} onClose={closeDetail} />
       <video ref={videoRef} playsInline muted className="hidden" />
       <canvas ref={canvasRef} className="hidden" />
 
@@ -559,7 +740,8 @@ export function BioPage() {
           {/* Main 4 */}
           <div className="flex flex-col gap-3">
             <DescCard title="❤️ BPM — Heart Rate"
-              text="The number of heartbeats per minute measured from the optical pulse in your fingertip. Normal resting range: 55–90 BPM. Elevated BPM may signal stress, physical exertion, or stimulant intake." />
+              text="The number of heartbeats per minute measured from the optical pulse in your fingertip. Normal resting range: 55–90 BPM. Elevated BPM may signal stress, physical exertion, or stimulant intake."
+              detailKey="bpm" onOpen={setOpenDetail} />
             <DescCard title="🌬️ /min — Breathing Rate"
               text="Respiratory rate derived from the slow amplitude modulation of the PPG signal. Normal range: 12–20 breaths/min. Higher values indicate stress or physical activity; lower values appear during deep relaxation." />
             <DescCard title="⚡ Stress %"
