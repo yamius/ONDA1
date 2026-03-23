@@ -13,6 +13,63 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  relaxation: {
+    key: 'relaxation',
+    title: 'Relaxation / Calmness: The State of Deep Stillness',
+    shortTitle: '🌿 Relaxation / Calmness',
+    sections: [
+      {
+        heading: 'The Art of Presence',
+        body: 'Relaxation / Calmness is not merely the absence of stress; it is an active state of physiological wellbeing. At ONDA, this index is calculated as the inverse of chaos (CSI) combined with your energy reserve. It measures how effectively your system has cleared out biological noise and prepared itself for high-quality rest or deep creativity.',
+      },
+      {
+        heading: 'What the Values Mean',
+        bullets: [
+          {
+            label: '0–25% · Surface Tension',
+            text: 'The system is still carrying biological noise — elevated CSI, shallow breathing, or low energy reserve. True rest is not yet accessible. Intervention (slow breathing, stillness) is needed.',
+          },
+          {
+            label: '25–50% · Settling',
+            text: 'The nervous system is beginning to downshift. Rhythm is stabilizing. This is the transitional zone — the body is on its way to calm but has not arrived yet.',
+          },
+          {
+            label: '50–75% · Active Calm',
+            text: 'Low biological noise, steady breath, sufficient energy headroom. You are in Restful Alertness — fully present and open, without the undertone of vigilance.',
+          },
+          {
+            label: '75–100% · Deep Stillness',
+            text: 'Optimal state for regeneration, creativity, and deep focus. Tissue repair accelerates, immune activity peaks, and the brain shifts into consolidation and insight mode.',
+          },
+        ],
+      },
+      {
+        heading: 'The Signature of "Restful Alertness"',
+        body: 'A high Calmness score is the result of three synchronized factors:',
+        bullets: [
+          {
+            label: 'Rhythmic Purity',
+            text: 'Your heart beats with minimal unjustified fluctuations (low CSI).',
+          },
+          {
+            label: 'Stable Breathing',
+            text: 'A slow, steady rhythm of inhales and exhales that nourishes the brain without overtaxing the system.',
+          },
+          {
+            label: 'Biological Headroom',
+            text: 'Your heart has ample "cardiovascular headroom" (Energy Reserve), allowing you to remain relaxed even as your environment shifts.',
+          },
+        ],
+      },
+      {
+        heading: 'Why Does It Matter for ONDA?',
+        body: 'The Calmness state is the mode where your body shifts from survival to thriving. It is in this zone that maximum tissue regeneration, immune strengthening, and neural "rewiring" occur. We track this metric so you can learn not just to relax, but to achieve Restful Alertness — a state where you are profoundly calm yet entirely present and attentive.',
+      },
+      {
+        highlight: 'Relaxation is not weakness; it is the ultimate form of efficiency. The higher your Calmness index, the less effort it takes to remain yourself.',
+      },
+    ],
+  },
   alarm: {
     key: 'alarm',
     title: 'Alarm / Anxiety: Your System\'s Code Red',

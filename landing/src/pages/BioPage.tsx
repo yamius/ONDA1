@@ -630,7 +630,8 @@ export function BioPage() {
               text="Composite of rising HR and elevated breathing rate. High values indicate a fight-or-flight activation pattern in the autonomic nervous system."
               detailKey="alarm" />
             <DescCard title="Relaxation / Calmness"
-              text="Inverse of CSI plus energy reserve. High score = low HR variability irregularity, slow stable breathing, and ample cardiovascular headroom — the signature of restful alertness." />
+              text="Inverse of CSI plus energy reserve. High score = low HR variability irregularity, slow stable breathing, and ample cardiovascular headroom — the signature of restful alertness."
+              detailKey="relaxation" />
             <DescCard title="Focus / Concentration"
               text="Blend of energy level and inverse stress. Peaks when HR is moderate, rhythm is stable, and stress is low — consistent with sustained attentional effort without overarousal." />
             <DescCard title="Excitement"
