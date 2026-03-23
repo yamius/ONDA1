@@ -13,6 +13,63 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  fatigue: {
+    key: 'fatigue',
+    title: 'Fatigue: The Physiological Tax on Effort',
+    shortTitle: '🪫 Fatigue',
+    sections: [
+      {
+        heading: 'The Cost of Movement',
+        body: 'Fatigue in ONDA is more than just a desire to sleep. It is an objective measurement of the "biological cost" of your recent efforts. We record this metric when your energy reserves are depleted and your stress levels remain chronically elevated. It is a signal that your system has shifted from efficient operation to a state of attrition.',
+      },
+      {
+        heading: 'What the Values Mean',
+        bullets: [
+          {
+            label: '0–20% · Recovered',
+            text: 'Energy reserves are intact, stress is low, HRV is healthy. Your system is operating from a position of abundance — ready for high demands.',
+          },
+          {
+            label: '20–45% · Accumulated Load',
+            text: 'Normal end-of-day wear. Manageable with standard recovery: sleep, nutrition, a pause. Performance is slightly reduced but not yet compromised.',
+          },
+          {
+            label: '45–70% · Depletion Zone',
+            text: 'Energy deficit is significant. HRV is dropping, resting HR is creeping up, recovery after micro-stressors is slow. Continuing to push here increases error rate and burnout risk.',
+          },
+          {
+            label: '70–100% · Biological Red Alert',
+            text: 'The system is in attrition mode. Any attempt to "push through" yields diminishing returns at an accelerating cost. The only productive action is structured rest — sleep, stillness, or deep parasympathetic recovery.',
+          },
+        ],
+      },
+      {
+        heading: 'The Anatomy of Depletion',
+        body: 'Your body reports fatigue through three distinct biometric markers:',
+        bullets: [
+          {
+            label: 'Reduced HRV',
+            text: 'The heart loses its adaptability and fluidity, becoming "rigid" and monotonic.',
+          },
+          {
+            label: 'Elevated Resting HR',
+            text: 'Even while seated, your heart beats faster than usual, struggling to compensate for the deficit in internal resources.',
+          },
+          {
+            label: 'Slow Recovery',
+            text: 'Your ability to return to baseline after any micro-stressor (even a simple phone call) drops significantly.',
+          },
+        ],
+      },
+      {
+        heading: 'Why is it in ONDA?',
+        body: 'Fatigue is insidious because we often get used to it and stop noticing its weight. ONDA makes this invisible burden visible. A high Fatigue index is not a failure; it is a command to shift gears. This is the time when any attempt to "push through" will yield diminishing returns, increasing the risk of burnout and errors.',
+      },
+      {
+        highlight: "Fatigue is your body's way of protecting its assets. Respect this signal. Sometimes, the most productive thing you can do is get a full night's sleep or an hour of silence.",
+      },
+    ],
+  },
   excitement: {
     key: 'excitement',
     title: 'Excitement: The Energy of Anticipation',
