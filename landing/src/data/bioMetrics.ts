@@ -13,6 +13,63 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  focus: {
+    key: 'focus',
+    title: 'Focus / Concentration: The Physiology of Immersion',
+    shortTitle: '🎯 Focus / Concentration',
+    sections: [
+      {
+        heading: 'The Flow State',
+        body: 'Focus / Concentration is not an act of will, but a result of harmony within your system. At ONDA, this index is calculated as the balance between your energy levels and the absence of internal noise (stress). It is the mathematical expression of the "flow" state — where your brain operates at peak capacity without overheating the "processor" with excessive emotional arousal.',
+      },
+      {
+        heading: 'What the Values Mean',
+        bullets: [
+          {
+            label: '0–25% · Scattered',
+            text: 'High internal noise or low energy. Sustained attention is biologically inaccessible in this state. Tasks will demand disproportionate effort with poor output quality.',
+          },
+          {
+            label: '25–50% · Warming Up',
+            text: 'The system is partially available for focus. Surface-level tasks are possible, but deep cognitive work will be fragmented. A short breathing reset can shift you into the next zone.',
+          },
+          {
+            label: '50–75% · Engaged',
+            text: 'Energy is sufficient, stress is moderate. You are capable of sustained concentration. This is the standard working zone for most productive individuals.',
+          },
+          {
+            label: '75–100% · Deep Focus',
+            text: 'Optimal state. Prefrontal cortex is fully in control, amygdala is quiet, rhythm is stable. This is the physiological signature of flow — where effort disappears and performance peaks.',
+          },
+        ],
+      },
+      {
+        heading: 'The Architecture of Attention',
+        body: 'In ONDA, peak concentration occurs when three conditions are met:',
+        bullets: [
+          {
+            label: 'Moderate Heart Rate',
+            text: 'Your heart isn\'t racing, but it isn\'t "sleeping" either. This is the zone of optimal activation, where the brain receives just enough resources for complex tasks.',
+          },
+          {
+            label: 'Stable Rhythm',
+            text: 'The absence of sharp spikes (low CSI) means your nervous system isn\'t being distracted by internal interference.',
+          },
+          {
+            label: 'Low Stress',
+            text: 'Your amygdala is calm, allowing the prefrontal cortex to maintain total control over your attentional focus.',
+          },
+        ],
+      },
+      {
+        heading: 'Why Does It Matter for ONDA?',
+        body: 'We often mistake "busyness" for "productivity." The Focus index reveals the difference. You may be very busy, but if your concentration score is low, you are spending three times more energy on the same task. ONDA helps you capture that exact moment of "Restful Alertness" — where you are profoundly attentive yet biologically serene.',
+      },
+      {
+        highlight: "Focus isn't about what you do; it's about the state you're in. Create silence within your rhythm, and attention will follow naturally.",
+      },
+    ],
+  },
   relaxation: {
     key: 'relaxation',
     title: 'Relaxation / Calmness: The State of Deep Stillness',

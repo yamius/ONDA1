@@ -633,7 +633,8 @@ export function BioPage() {
               text="Inverse of CSI plus energy reserve. High score = low HR variability irregularity, slow stable breathing, and ample cardiovascular headroom — the signature of restful alertness."
               detailKey="relaxation" />
             <DescCard title="Focus / Concentration"
-              text="Blend of energy level and inverse stress. Peaks when HR is moderate, rhythm is stable, and stress is low — consistent with sustained attentional effort without overarousal." />
+              text="Blend of energy level and inverse stress. Peaks when HR is moderate, rhythm is stable, and stress is low — consistent with sustained attentional effort without overarousal."
+              detailKey="focus" />
             <DescCard title="Excitement"
               text="Rises with HR elevation above resting baseline and higher breathing rate. Distinguishable from alarm by the absence of extreme stress scores — it is positive arousal rather than threat response." />
             <DescCard title="Fatigue"
