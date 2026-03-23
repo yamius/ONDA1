@@ -593,7 +593,8 @@ export function BioPage() {
               text="The number of heartbeats per minute measured from the optical pulse in your fingertip. Normal resting range: 55–90 BPM. Elevated BPM may signal stress, physical exertion, or stimulant intake."
               detailKey="bpm" />
             <DescCard title="🌬️ /min — Breathing Rate"
-              text="Respiratory rate derived from the slow amplitude modulation of the PPG signal. Normal range: 12–20 breaths/min. Higher values indicate stress or physical activity; lower values appear during deep relaxation." />
+              text="Respiratory rate derived from the slow amplitude modulation of the PPG signal. Normal range: 12–20 breaths/min. Higher values indicate stress or physical activity; lower values appear during deep relaxation."
+              detailKey="br" />
             <DescCard title="⚡ Stress %"
               text="Derived from the Cardiac Stability Index. High heart rate variability irregularity → higher stress score. A score under 30 % indicates a calm state; 60 %+ suggests acute physiological stress." />
             <DescCard title="🔋 Energy %"

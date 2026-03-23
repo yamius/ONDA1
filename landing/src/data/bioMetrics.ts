@@ -13,6 +13,42 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  br: {
+    key: 'br',
+    title: 'Breathing Rate: The Bridge Between Worlds',
+    shortTitle: '🌬️ /min — Breathing Rate',
+    sections: [
+      {
+        heading: 'The Only Manual Override',
+        body: 'Breathing Rate is a unique biometric parameter. Unlike your heartbeat or digestion, breathing is the only function of the Autonomic Nervous System that you can control directly. It is your "remote control" for your internal state.',
+      },
+      {
+        heading: 'The Rhythm of Calm vs. The Rhythm of Survival',
+        body: 'Your breathing frequency is a live broadcast of how your brain perceives its environment:',
+        bullets: [
+          {
+            label: 'Shallow and Fast Breathing',
+            text: 'An alarm signal. When you breathe from the upper chest more than 16–20 times per minute, you are telling your body: "We are in danger." This sustains high cortisol levels and keeps the brain in a state of constant vigilance.',
+          },
+          {
+            label: 'Deep and Slow Breathing',
+            text: 'A safety signal. Reducing your frequency to 6–10 cycles per minute activates the Vagus Nerve. This instantly shifts the system into a mode of deep focus and emotional stability.',
+          },
+        ],
+      },
+      {
+        heading: 'Biological Feedback',
+        body: 'At ONDA, we track your breathing rate to identify moments of "Screen Apnea"—when you unconsciously hold your breath or breathe erratically while checking emails or performing complex tasks. These micro-pauses trigger a cascade of stress responses that you might not even notice.',
+      },
+      {
+        heading: 'The Art of Slowing Down',
+        body: 'Optimal breathing at rest is a rhythm that is almost invisible. The fewer cycles you need to saturate your blood with oxygen, the more efficiently your metabolic system is functioning. We teach you to "under-breathe"—making each breath rarer but higher in quality, turning every cycle into an act of restoration.',
+      },
+      {
+        highlight: 'Breathing is the only way to speak to your heart in its own language. By slowing the inhale, you dictate peace to your mind.',
+      },
+    ],
+  },
   bpm: {
     key: 'bpm',
     title: 'BPM: The Rhythm of Your Internal Operating System',
