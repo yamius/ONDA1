@@ -439,9 +439,8 @@ export function BioPage() {
 
         {/* Header */}
         <div className="mb-8 text-center">
-          <h1 className="mb-2 font-mono text-3xl font-bold md:text-4xl">
-            <span className="text-cyan-400">Bio</span>
-            <span className="text-green-400"> OS</span>
+          <h1 className="mb-2 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text font-mono text-3xl font-bold text-transparent md:text-4xl">
+            Bio OS
           </h1>
           <p className="text-sm leading-relaxed text-white/40">
             Real-time biometric analysis — no wearable required.<br />
