@@ -619,7 +619,8 @@ export function BioPage() {
               text="Linear regression slope of RR intervals over the measurement window. Negative = heart rate gradually slowing (relaxation response). Positive = HR accelerating (rising arousal or activity)."
               detailKey="slope" />
             <DescCard title="HR Acceleration"
-              text="Second derivative of RR intervals — the rate of change of the trend. Positive = HR is speeding up faster than before. Negative = the rate of change is decelerating, even if HR is still rising." />
+              text="Second derivative of RR intervals — the rate of change of the trend. Positive = HR is speeding up faster than before. Negative = the rate of change is decelerating, even if HR is still rising."
+              detailKey="acceleration" />
           </div>
 
           {/* Emotional */}

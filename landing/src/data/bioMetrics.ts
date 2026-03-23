@@ -13,6 +13,38 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  acceleration: {
+    key: 'acceleration',
+    title: 'HR Acceleration: The Intensity of Biological Response',
+    shortTitle: '⚡ HR Acceleration',
+    sections: [
+      {
+        heading: 'Dynamics Beyond Speed',
+        body: 'HR Acceleration is the second derivative of your heart rhythm. While the Trend Slope shows the direction of your movement, Acceleration measures the intensity with which that movement gains momentum. It is a gauge of how sharply your system "hits the gas" or, conversely, how smoothly it begins to apply the brakes.',
+      },
+      {
+        heading: 'Reading the Impulse',
+        body: 'Acceleration reveals the hidden dynamics of your adaptation:',
+        bullets: [
+          {
+            label: 'Positive Acceleration · The Surge',
+            text: 'Your heart rate is beginning to speed up faster than it was a second ago. This is a sign of an "acute" reaction—such as a sudden startle, a sharp thought about a deadline, or a physical burst. Your sympathetic system is firing at full capacity, mobilizing resources right here and right now.',
+          },
+          {
+            label: 'Negative Acceleration · The Deceleration',
+            text: 'The rate of change in your heart rate is falling. Even if your heart is still beating fast, it has stopped accelerating. This is the first sign that the peak has passed and the system is beginning to stabilize. You are regaining control over the stress.',
+          },
+        ],
+      },
+      {
+        heading: 'Why is it in ONDA?',
+        body: 'HR Acceleration is a detector of your reactivity. Excessively sharp spikes in acceleration can indicate high anxiety or a low stress-tolerance threshold. ONDA tracks these "jerks," helping you develop biological smoothness—the ability to enter high-performance states without the jarring and exhausting surges that drain your system.',
+      },
+      {
+        highlight: 'Power is not in the surge, but in the smoothness of the transition. The fewer sharp accelerations in your rhythm, the more carefully you preserve your vital energy.',
+      },
+    ],
+  },
   slope: {
     key: 'slope',
     title: 'HR Trend Slope: The Vector of Biological Direction',
