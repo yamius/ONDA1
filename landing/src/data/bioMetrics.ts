@@ -13,6 +13,59 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  alarm: {
+    key: 'alarm',
+    title: 'Alarm / Anxiety: Your System\'s Code Red',
+    shortTitle: '🚨 Alarm / Anxiety',
+    sections: [
+      {
+        heading: 'The Invisible Threat Detector',
+        body: 'Alarm / Anxiety is a composite index within ONDA that analyzes the synergy between your heart rate and your breathing. We look for a specific pattern: a simultaneous rise in HR and an increased respiratory rate. This is the classic biological signature of the "Fight-or-Flight" mode. This metric captures the exact moment your autonomic nervous system stops merely functioning and starts preparing for defense.',
+      },
+      {
+        heading: 'What the Values Mean',
+        bullets: [
+          {
+            label: '0–20% · Baseline Calm',
+            text: 'No alarm signals detected. HR and breathing are in a balanced, low-arousal state. Your nervous system is fully in parasympathetic mode.',
+          },
+          {
+            label: '20–50% · Mild Activation',
+            text: 'Low-level arousal — normal during focused work or light activity. The body is alert but not mobilized. Manageable without intervention.',
+          },
+          {
+            label: '50–75% · Elevated Alarm',
+            text: 'Clear fight-or-flight pattern emerging. HR is rising alongside breathing rate. This is the zone of unnoticed chronic stress — you may feel "fine," but your biology disagrees.',
+          },
+          {
+            label: '75–100% · Acute Mobilization',
+            text: 'Full sympathetic surge. The amygdala has taken control. Cortisol and adrenaline are spiking. Immediate intervention — a deep exhale, a pause, breath-hold reset — is highly effective here.',
+          },
+        ],
+      },
+      {
+        heading: 'The Psychosomatic Echo',
+        body: 'High values in this index indicate that your body is in a state of acute mobilization:',
+        bullets: [
+          {
+            label: 'Biological Level',
+            text: 'Blood shifts from digestive organs to muscles, the brain receives a signal of external danger, and cortisol levels spike.',
+          },
+          {
+            label: 'Mental Level',
+            text: 'The prefrontal cortex (responsible for logic) gives way to the amygdala. You begin to experience restlessness, tunnel vision, or cognitive "tightness."',
+          },
+        ],
+      },
+      {
+        heading: 'Why is it in ONDA?',
+        body: 'Anxiety often masks itself as ordinary fatigue or high productivity. The Alarm index allows you to see the truth: you might just be drinking coffee, but your body is acting as if it\'s being hunted by a predator. ONDA gives you the chance to spot this pattern early and use conscious breathing to "cancel" the alarm signal before it turns into a panic attack or total burnout.',
+      },
+      {
+        highlight: 'Your body cannot lie. If the Alarm index is rising, it\'s not a reason to panic — it\'s a reason for a deep exhale. Reclaim control through your body when your mind feels powerless.',
+      },
+    ],
+  },
   acceleration: {
     key: 'acceleration',
     title: 'HR Acceleration: The Intensity of Biological Response',
