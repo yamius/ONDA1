@@ -77,18 +77,23 @@ function computeRaw(redBuf: number[]): Record<string, number> | null {
   for (let i = 1; i < peaks.length; i++)
     rrIntervals.push((peaks[i] - peaks[i - 1]) / PPG_FPS * 1000)
 
-  const validRR = rrIntervals.filter(r => r > 400 && r < 1500)
-  if (validRR.length < 3) return null
+  // Step 1: basic physiological range
+  const rangeFiltered = rrIntervals.filter(r => r > 400 && r < 1500)
+  if (rangeFiltered.length < 4) return null
+
+  // Step 2: median-based outlier rejection — removes false peaks
+  const sorted = [...rangeFiltered].sort((a, b) => a - b)
+  const medianRR = sorted[Math.floor(sorted.length / 2)]
+  const validRR = rangeFiltered.filter(r => Math.abs(r - medianRR) / medianRR < 0.22)
+  if (validRR.length < 4) return null
 
   const meanRR = validRR.reduce((s, r) => s + r, 0) / validRR.length
   const bpm = 60000 / meanRR
   if (bpm < 40 || bpm > 180) return null
 
-  // RMSSD — standard HRV metric
-  const rmssd = Math.sqrt(
-    validRR.map((r, i, a) => i ? (r - a[i - 1]) ** 2 : 0)
-      .slice(1).reduce((s, v) => s + v, 0) / (validRR.length - 1)
-  )
+  // RMSSD — successive differences (cleaned signal)
+  const succDiffs = validRR.slice(1).map((r, i) => (r - validRR[i]) ** 2)
+  const rmssd = Math.min(100, Math.sqrt(succDiffs.reduce((s, v) => s + v, 0) / succDiffs.length))
 
   // SDNN / CSI
   const sdRR = Math.sqrt(
@@ -133,7 +138,7 @@ function computeRaw(redBuf: number[]): Record<string, number> | null {
   const bpmMean = bpmValues.reduce((s, v) => s + v, 0) / bpmValues.length
   const bpmMax = Math.max(...bpmValues)
   const recoveryRate = bpmMax > bpmMean + 2
-    ? (bpmMax - bpmValues[bpmValues.length - 1]) / (bpmMax - bpmMean) * 100
+    ? Math.min(100, Math.max(0, (bpmMax - bpmValues[bpmValues.length - 1]) / (bpmMax - bpmMean) * 100))
     : 0
 
   // Derived scores 0-100
@@ -257,6 +262,15 @@ function MetricRow({ label, desc, value, suffix }: {
 
 function SectionTitle({ children }: { children: React.ReactNode }) {
   return <h2 className="mb-3 text-center text-base font-semibold text-white">{children}</h2>
+}
+
+function DescCard({ title, text }: { title: string; text: string }) {
+  return (
+    <div className="rounded-xl bg-[#1e1540] px-4 py-3">
+      <p className="mb-1 text-sm font-semibold text-white/80">{title}</p>
+      <p className="text-xs leading-relaxed text-white/40">{text}</p>
+    </div>
+  )
 }
 
 // ─── Main page ────────────────────────────────────────────────────────────────
@@ -522,6 +536,62 @@ export function BioPage() {
           >
             Download ONDA Life
           </a>
+        </div>
+
+        {/* Metric descriptions */}
+        <div className="mt-10 flex flex-col gap-6">
+          <h2 className="text-center text-base font-semibold text-white/60 uppercase tracking-widest text-xs">
+            What each metric means
+          </h2>
+
+          {/* Main 4 */}
+          <div className="flex flex-col gap-3">
+            <DescCard title="❤️ BPM — Heart Rate"
+              text="The number of heartbeats per minute measured from the optical pulse in your fingertip. Normal resting range: 55–90 BPM. Elevated BPM may signal stress, physical exertion, or stimulant intake." />
+            <DescCard title="🌬️ /min — Breathing Rate"
+              text="Respiratory rate derived from the slow amplitude modulation of the PPG signal. Normal range: 12–20 breaths/min. Higher values indicate stress or physical activity; lower values appear during deep relaxation." />
+            <DescCard title="⚡ Stress %"
+              text="Derived from the Cardiac Stability Index. High heart rate variability irregularity → higher stress score. A score under 30 % indicates a calm state; 60 %+ suggests acute physiological stress." />
+            <DescCard title="🔋 Energy %"
+              text="Reflects cardiovascular reserve: how far your heart rate is from its elevated ceiling and how stable the rhythm is. Higher score = more physiological capacity left. Drops with fatigue, high BPM, or prolonged stress." />
+          </div>
+
+          {/* Advanced */}
+          <div className="flex flex-col gap-3">
+            <p className="text-xs font-semibold uppercase tracking-widest text-white/30">Advanced Physiological</p>
+            <DescCard title="HRV surrogate (RMSSD)"
+              text="Root Mean Square of Successive Differences between adjacent RR intervals, in milliseconds. Reflects parasympathetic nervous system activity. Higher = more adaptive autonomic regulation. Typical camera-derived range: 15–70 ms." />
+            <DescCard title="Cardiac Stability Index (CSI)"
+              text="Standard deviation of RR intervals divided by mean RR interval. Measures rhythmic consistency independent of heart rate. Lower values (0.03–0.10) indicate a very stable rhythm; values above 0.25 suggest irregular beats or measurement noise." />
+            <DescCard title="Recovery Rate %"
+              text="How completely the heart rate has returned toward its mean after the highest recorded beat in this session. 0 % = HR still at its peak; 100 % = fully recovered to baseline or below." />
+            <DescCard title="HR Trend Slope"
+              text="Linear regression slope of RR intervals over the measurement window. Negative = heart rate gradually slowing (relaxation response). Positive = HR accelerating (rising arousal or activity)." />
+            <DescCard title="HR Acceleration"
+              text="Second derivative of RR intervals — the rate of change of the trend. Positive = HR is speeding up faster than before. Negative = the rate of change is decelerating, even if HR is still rising." />
+          </div>
+
+          {/* Emotional */}
+          <div className="flex flex-col gap-3">
+            <p className="text-xs font-semibold uppercase tracking-widest text-white/30">Emotional State</p>
+            <DescCard title="Alarm / Anxiety"
+              text="Composite of rising HR and elevated breathing rate. High values indicate a fight-or-flight activation pattern in the autonomic nervous system." />
+            <DescCard title="Relaxation / Calmness"
+              text="Inverse of CSI plus energy reserve. High score = low HR variability irregularity, slow stable breathing, and ample cardiovascular headroom — the signature of restful alertness." />
+            <DescCard title="Focus / Concentration"
+              text="Blend of energy level and inverse stress. Peaks when HR is moderate, rhythm is stable, and stress is low — consistent with sustained attentional effort without overarousal." />
+            <DescCard title="Excitement"
+              text="Rises with HR elevation above resting baseline and higher breathing rate. Distinguishable from alarm by the absence of extreme stress scores — it is positive arousal rather than threat response." />
+            <DescCard title="Fatigue"
+              text="Increases when energy is depleted and stress is chronically elevated. Reflects the physiological cost of prolonged effort: reduced HRV, elevated HR at rest, and slow recovery." />
+            <DescCard title="Flow"
+              text="The optimal performance state: high focus, moderate relaxation, and HR slightly above resting without alarm. Appears when you are fully engaged but not overwhelmed — the zone." />
+          </div>
+
+          <p className="pb-6 text-center text-[10px] text-white/20 leading-relaxed">
+            All metrics are derived from the optical PPG signal via the device camera.<br />
+            For medical-grade accuracy use a certified biometric device.
+          </p>
         </div>
 
       </div>
