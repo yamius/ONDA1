@@ -102,9 +102,9 @@ function computeRaw(redBuf: number[]): Record<string, number> | null {
   const csi = sdRR / meanRR
 
   // Breathing rate from amplitude envelope of PPG
-  // Breathing is 0.1–0.5 Hz → need 3s smoothing window and large min-distance between peaks
-  const envelope = movingAvg(detrended.map(v => Math.abs(v)), PPG_FPS * 3)
-  const BR_MIN_DIST = Math.round(PPG_FPS * 1.5) // min 1.5s between breaths (max 40 br/min)
+  // Breathing is 0.1–0.4 Hz → 5s smoothing, ≥2s between peaks (max 30 br/min)
+  const envelope = movingAvg(detrended.map(v => Math.abs(v)), PPG_FPS * 5)
+  const BR_MIN_DIST = Math.round(PPG_FPS * 2) // min 2s between breaths
   const envPeaks: number[] = []
   for (let i = 1; i < envelope.length - 1; i++) {
     if (envelope[i] > envelope[i - 1] && envelope[i] > envelope[i + 1]) {
@@ -113,10 +113,12 @@ function computeRaw(redBuf: number[]): Record<string, number> | null {
     }
   }
   let br = 0
-  if (envPeaks.length >= 4) {
+  if (envPeaks.length >= 5) {
     const intervals = envPeaks.slice(1).map((p, i) => (p - envPeaks[i]) / PPG_FPS)
-    const meanInterval = intervals.reduce((s, v) => s + v, 0) / intervals.length
-    const brRaw = Math.round(60 / meanInterval)
+    // median interval — more robust than mean against spurious peaks
+    const sortedInt = [...intervals].sort((a, b) => a - b)
+    const medianInterval = sortedInt[Math.floor(sortedInt.length / 2)]
+    const brRaw = Math.round(60 / medianInterval)
     if (brRaw >= 6 && brRaw <= 30) br = brRaw
   }
 
@@ -288,6 +290,7 @@ export function BioPage() {
   const ppgBuffer = useRef<number[]>([])
   const smoothedRef = useRef<Record<string, number>>({})
   const frameCountRef = useRef(0)
+  const brCycleRef = useRef(0)   // counts compute cycles; BR displayed every 4th
   const fingerOnRef = useRef(false)
   const fingerOffFrames = useRef(0)
   // Update display every N frames (~2 seconds at 30fps)
@@ -366,7 +369,16 @@ export function BioPage() {
     if (fingerOnRef.current && frameCountRef.current % UPDATE_EVERY === 0) {
       const raw = computeRaw([...ppgBuffer.current])
       if (raw) {
-        smoothedRef.current = applyEMA(raw, smoothedRef.current, EMA_ALPHA)
+        brCycleRef.current++
+        // BR updates 4× slower: freeze it between cycles, use very soft EMA (α=0.04)
+        const prevBr = smoothedRef.current.br ?? raw.br
+        const updatedBr = brCycleRef.current % 4 === 0
+          ? 0.04 * raw.br + 0.96 * prevBr   // soft EMA only on update cycle
+          : prevBr                            // hold value
+        const rawForSmooth = { ...raw, br: updatedBr }
+        smoothedRef.current = applyEMA(rawForSmooth, smoothedRef.current, EMA_ALPHA)
+        // Keep br from our throttled calculation (EMA would dilute it)
+        smoothedRef.current.br = updatedBr
         setMetrics(prev => ({ ...prev, ...smoothedToState(smoothedRef.current) }))
       }
     }
@@ -380,6 +392,7 @@ export function BioPage() {
     ppgBuffer.current = []
     smoothedRef.current = {}
     frameCountRef.current = 0
+    brCycleRef.current = 0
 
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
