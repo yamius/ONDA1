@@ -13,6 +13,42 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  slope: {
+    key: 'slope',
+    title: 'HR Trend Slope: The Vector of Biological Direction',
+    shortTitle: '📈 HR Trend Slope',
+    sections: [
+      {
+        heading: 'The Direction of Flow',
+        body: 'HR Trend Slope is a mathematical indicator of where your system is headed right now. We use linear regression to understand the overall trajectory of your heart rate throughout the measurement window. It\'s not just a number; it\'s a compass needle pointing toward your immediate physiological future.',
+      },
+      {
+        heading: 'Reading the Vector',
+        body: 'The direction of the slope speaks to the dynamics of your adaptation:',
+        bullets: [
+          {
+            label: 'Negative Slope · Descending',
+            text: 'Your heart rate is gradually slowing down. This is the classic "relaxation response." Your nervous system is successfully dampening arousal and shifting into recovery mode. This is the ideal scenario for meditation or winding down after work.',
+          },
+          {
+            label: 'Positive Slope · Ascending',
+            text: 'Your heart rate is accelerating. This signals rising emotional or physical arousal. Your body is preparing for action or reacting to a stressor that emerged during the session.',
+          },
+          {
+            label: 'Zero Slope · Plateau',
+            text: 'A steady state. Your system is in equilibrium, maintaining its current level of activation without sharp fluctuations.',
+          },
+        ],
+      },
+      {
+        heading: 'Why is it in ONDA?',
+        body: 'Trend Slope allows you to see the inertia of your nervous system. If you are trying to relax but the trend remains positive, it means your "braking system" hasn\'t kicked in yet. This metric helps you understand how effectively your chosen practice (breathing, music, a pause) is actually shifting your biological course.',
+      },
+      {
+        highlight: "It's not about where you are, but which way you're moving. A negative trend is your ticket to a state of deep restoration.",
+      },
+    ],
+  },
   recovery: {
     key: 'recovery',
     title: 'Recovery Rate: The Index of Returning to Self',
