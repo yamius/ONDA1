@@ -78,7 +78,14 @@ export function BioMetricPage() {
       </div>
 
       {/* Download CTA */}
-      <div className="mt-16 rounded-2xl border border-cyan-500/15 bg-[#1e1540] p-6 text-center">
+      <div className="mt-16 flex flex-col gap-4">
+        <Link
+          to="/bio"
+          className="inline-flex items-center gap-2 font-mono text-xs text-white/30 transition-colors hover:text-cyan-400/60"
+        >
+          ← Back to Bio OS
+        </Link>
+      <div className="rounded-2xl border border-cyan-500/15 bg-[#1e1540] p-6 text-center">
         <p className="mb-1 text-sm font-semibold text-white/80">Ready to measure?</p>
         <p className="mb-5 text-xs text-white/35">Place your finger on the camera and see this metric live.</p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
@@ -105,6 +112,7 @@ export function BioMetricPage() {
             <span>Google Play</span>
           </a>
         </div>
+      </div>
       </div>
     </div>
   )
