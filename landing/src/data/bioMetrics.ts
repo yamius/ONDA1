@@ -13,6 +13,42 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  csi: {
+    key: 'csi',
+    title: 'CSI: Cardiac Stability Index',
+    shortTitle: '🎯 Cardiac Stability Index (CSI)',
+    sections: [
+      {
+        heading: 'The Architecture of Rhythm',
+        body: 'CSI (Cardiac Stability Index) is a unique coefficient that allows ONDA to look deeper than a regular pulse. We take the standard deviation of your heart cycles and divide it by the mean heart rate. This allows us to measure the pure consistency of your heart, independent of how fast it happens to be beating at the moment.',
+      },
+      {
+        heading: 'Stability vs. Chaos',
+        body: 'CSI is the detector of "biological noise" within your system:',
+        bullets: [
+          {
+            label: '0.03 – 0.10 · Diamond Stability',
+            text: 'Your heart is operating with the precision of a Swiss watch. This is a state of deep physiological confidence. The system wastes no resources on unnecessary fluctuations, operating in a mode of maximum economy and focus.',
+          },
+          {
+            label: '0.11 – 0.24 · Dynamic Balance',
+            text: 'The natural rhythm of a living organism. Your heart fluidly adjusts to external stimuli while maintaining its overall structural integrity.',
+          },
+          {
+            label: '0.25+ · Biological Noise',
+            text: 'A signal of instability. High CSI often indicates "glitches" in nerve impulse transmission, extreme fatigue, or measurement noise. This is a state where the system is losing control over its rhythm.',
+          },
+        ],
+      },
+      {
+        heading: 'Why Does It Matter for ONDA?',
+        body: 'CSI is the foundation upon which your Stress % is built. While HRV tells us about your flexibility, CSI informs us about your structural reliability. A low CSI is a sign that your internal "operating system" is running without errors in the code.',
+      },
+      {
+        highlight: 'True power lies in stability. The less noise in your rhythm, the more clarity in your mind.',
+      },
+    ],
+  },
   hrv: {
     key: 'hrv',
     title: 'HRV: The Index of Your Biological Agility',
