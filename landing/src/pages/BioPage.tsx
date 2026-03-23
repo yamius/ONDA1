@@ -599,7 +599,8 @@ export function BioPage() {
               text="Derived from the Cardiac Stability Index. High heart rate variability irregularity → higher stress score. A score under 30 % indicates a calm state; 60 %+ suggests acute physiological stress."
               detailKey="stress" />
             <DescCard title="🔋 Energy %"
-              text="Reflects cardiovascular reserve: how far your heart rate is from its elevated ceiling and how stable the rhythm is. Higher score = more physiological capacity left. Drops with fatigue, high BPM, or prolonged stress." />
+              text="Reflects cardiovascular reserve: how far your heart rate is from its elevated ceiling and how stable the rhythm is. Higher score = more physiological capacity left. Drops with fatigue, high BPM, or prolonged stress."
+              detailKey="energy" />
           </div>
 
           {/* Advanced */}

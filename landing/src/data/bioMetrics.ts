@@ -13,6 +13,60 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  energy: {
+    key: 'energy',
+    title: 'Energy %: Your Biological Power Reserve',
+    shortTitle: '🔋 Energy %',
+    sections: [
+      {
+        heading: 'Your Internal Battery',
+        body: 'At ONDA, Energy % is not a subjective feeling of alertness; it is an objective measurement of your cardiovascular reserve. It is a mathematical ratio of how far your heart rate is from its elevated ceiling and how stable your cardiac rhythm is at this very second. The higher the score, the more physiological capacity your body has to handle new tasks.',
+      },
+      {
+        heading: 'The Anatomy of Depletion',
+        body: 'Your Energy score inevitably drops under the influence of three factors:',
+        bullets: [
+          {
+            label: 'Accumulated Fatigue',
+            text: 'When the system fails to recover sufficiently during sleep.',
+          },
+          {
+            label: 'High BPM',
+            text: 'Running at "high RPMs" quickly burns through available fuel.',
+          },
+          {
+            label: 'Prolonged Stress',
+            text: 'Constant turbulence in your rhythm (low stability) forces the heart to spend more resources just to maintain basic functions.',
+          },
+        ],
+      },
+      {
+        heading: 'What the Numbers Tell You',
+        body: '',
+        bullets: [
+          {
+            label: '80–100% · Full Charge',
+            text: 'Your system is in a state of abundance. You are ready for intense cognitive loads, demanding workouts, and strategic decision-making.',
+          },
+          {
+            label: '40–70% · Operating Range',
+            text: 'Reserves are beginning to dwindle. It\'s time to pace yourself. Your efficiency is still high, but the "price" of each subsequent effort is rising.',
+          },
+          {
+            label: 'Below 30% · Critical Low',
+            text: 'You are operating "on credit." In this state, your body perceives any new event as a threat. The brain enters a strict power-saving mode, dialing down creativity and empathy.',
+          },
+        ],
+      },
+      {
+        heading: 'The Art of Recharging',
+        body: 'Energy % is our most dynamic metric. It can plummet after a difficult conversation and surge after 10 minutes of deep meditation or a short walk. ONDA helps you see these fluctuations in real-time, turning energy management from guesswork into an exact science.',
+      },
+      {
+        highlight: "Don't wait for the tank to hit empty. A high Energy Score is your insurance against mistakes. If the score is in the red zone, any work will be counterproductive. Charge the system first, then act.",
+      },
+    ],
+  },
   stress: {
     key: 'stress',
     title: 'Stress %: The Biological Turbulence Index',
