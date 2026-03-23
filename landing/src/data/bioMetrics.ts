@@ -13,6 +13,42 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  stress: {
+    key: 'stress',
+    title: 'Stress %: The Biological Turbulence Index',
+    shortTitle: '⚡ Stress %',
+    sections: [
+      {
+        heading: 'Beyond Emotions',
+        body: 'At ONDA, Stress % is not a psychological state; it is a mathematical measurement of chaos within your system. This score is derived from the Cardiac Stability Index. We don\'t just analyze your pulse; we examine the micro-deviations in the rhythm of every single beat. The higher the irregularity and "noise" in these intervals, the higher your biological stress score.',
+      },
+      {
+        heading: 'What Does Your Score Mean?',
+        body: 'Stress is the "spending" of your life force. We\'ve categorized it into three zones:',
+        bullets: [
+          {
+            label: '0 – 30% · The Flow Zone',
+            text: 'Your system is in a state of coherence. Your heart is working rhythmically and efficiently. This is the ideal time for complex decision-making and deep work.',
+          },
+          {
+            label: '30 – 60% · The Adaptive Zone',
+            text: 'You are under a load. This is a normal state during an active day, but if you remain here for too long, your cognitive resources begin to drain.',
+          },
+          {
+            label: '60%+ · The Burnout Zone',
+            text: 'Acute physiological stress. Your nervous system is overwhelmed. In this state, the brain dials down the prefrontal cortex (logic) and shifts control to the amygdala (fear and impulsivity).',
+          },
+        ],
+      },
+      {
+        heading: 'Why Does It Matter?',
+        body: 'The most dangerous stress is the kind you don\'t feel. You might be sitting in silence, yet your Stress % shows 70%. This means an invisible struggle is happening inside: lack of sleep, hidden inflammation, or information overload. ONDA makes the invisible visible, allowing you to hit pause before exhaustion sets in.',
+      },
+      {
+        highlight: 'Stress isn\'t what happens to you; it\'s how your body spends its resources in response. A high percentage is a signal to re-evaluate your priorities in this very moment.',
+      },
+    ],
+  },
   br: {
     key: 'br',
     title: 'Breathing Rate: The Bridge Between Worlds',
