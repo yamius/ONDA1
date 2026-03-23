@@ -607,7 +607,8 @@ export function BioPage() {
           <div className="flex flex-col gap-3">
             <p className="text-xs font-semibold uppercase tracking-widest text-white/30">Advanced Physiological</p>
             <DescCard title="HRV surrogate (RMSSD)"
-              text="Root Mean Square of Successive Differences between adjacent RR intervals, in milliseconds. Reflects parasympathetic nervous system activity. Higher = more adaptive autonomic regulation. Typical camera-derived range: 15–70 ms." />
+              text="Root Mean Square of Successive Differences between adjacent RR intervals, in milliseconds. Reflects parasympathetic nervous system activity. Higher = more adaptive autonomic regulation. Typical camera-derived range: 15–70 ms."
+              detailKey="hrv" />
             <DescCard title="Cardiac Stability Index (CSI)"
               text="Standard deviation of RR intervals divided by mean RR interval. Measures rhythmic consistency independent of heart rate. Lower values (0.03–0.10) indicate a very stable rhythm; values above 0.25 suggest irregular beats or measurement noise." />
             <DescCard title="Recovery Rate %"

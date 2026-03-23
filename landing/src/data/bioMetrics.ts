@@ -13,6 +13,42 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  hrv: {
+    key: 'hrv',
+    title: 'HRV: The Index of Your Biological Agility',
+    shortTitle: '📊 HRV (RMSSD)',
+    sections: [
+      {
+        heading: 'The Internal Microscope',
+        body: 'HRV (Heart Rate Variability) is the most sophisticated and informative metric in the ONDA arsenal. Unlike heart rate, which simply counts beats, HRV measures the microscopic fluctuations in time between those beats in milliseconds. We use the RMSSD algorithm to assess how fluidly your heart responds to every movement, thought, or breath.',
+      },
+      {
+        heading: 'A Mirror of the Vagus Nerve',
+        body: 'HRV is a direct status report on your Vagus Nerve activity:',
+        bullets: [
+          {
+            label: 'High HRV (40–70 ms and above)',
+            text: 'Your heart adapts instantly to changes. This is a sign of a powerful parasympathetic response. You are in a state of high biological resilience: calm, focused, and ready for action.',
+          },
+          {
+            label: 'Low HRV (below 20–25 ms)',
+            text: 'Your autonomic nervous system is "locked." Your heart is beating too metrically, like a robot. This is a signal that your recovery resources are drained, and the system is operating at the edge of its adaptive capacity.',
+          },
+        ],
+      },
+      {
+        heading: 'Why It Matters More Than Pulse',
+        body: 'Two people can have the exact same heart rate, but entirely different health profiles. The difference lies in HRV. High variability means your "internal OS" is constantly scanning the environment and micro-adjusting your rhythm. Low variability is a sign of biological fragility.',
+      },
+      {
+        heading: 'Training with ONDA',
+        body: 'HRV is dynamic. It drops due to alcohol, lack of sleep, or overtraining, but it can be "strengthened." By using the breathing protocols in ONDA, you are essentially exercising your Vagus Nerve, raising your baseline HRV and, consequently, your resilience to life\'s storms.',
+      },
+      {
+        highlight: 'High HRV is your ability to bend without breaking. It is the measure of your life force, expressed in milliseconds.',
+      },
+    ],
+  },
   energy: {
     key: 'energy',
     title: 'Energy %: Your Biological Power Reserve',
