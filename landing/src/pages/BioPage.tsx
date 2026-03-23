@@ -613,7 +613,8 @@ export function BioPage() {
               text="Standard deviation of RR intervals divided by mean RR interval. Measures rhythmic consistency independent of heart rate. Lower values (0.03–0.10) indicate a very stable rhythm; values above 0.25 suggest irregular beats or measurement noise."
               detailKey="csi" />
             <DescCard title="Recovery Rate %"
-              text="How completely the heart rate has returned toward its mean after the highest recorded beat in this session. 0 % = HR still at its peak; 100 % = fully recovered to baseline or below." />
+              text="How completely the heart rate has returned toward its mean after the highest recorded beat in this session. 0 % = HR still at its peak; 100 % = fully recovered to baseline or below."
+              detailKey="recovery" />
             <DescCard title="HR Trend Slope"
               text="Linear regression slope of RR intervals over the measurement window. Negative = heart rate gradually slowing (relaxation response). Positive = HR accelerating (rising arousal or activity)." />
             <DescCard title="HR Acceleration"

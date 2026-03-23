@@ -13,6 +13,38 @@ export interface MetricDetail {
 }
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
+  recovery: {
+    key: 'recovery',
+    title: 'Recovery Rate: The Index of Returning to Self',
+    shortTitle: '🔄 Recovery Rate %',
+    sections: [
+      {
+        heading: 'The Art of the Finish',
+        body: 'Recovery Rate is a measure of how effectively your heart can "downshift" after exertion. At ONDA, we calculate how quickly your heart rate returns from its peak during the current session to your baseline average. It is a measurement of your ability to exit a state of arousal and return to your center of gravity.',
+      },
+      {
+        heading: 'Why Does It Matter?',
+        body: 'In the wild, survival belongs not to the one who runs the fastest, but to the one who calms down the quickest after the chase. In the modern world, it works the same way:',
+        bullets: [
+          {
+            label: '0% · Stuck',
+            text: 'Your heart rate is frozen at its peak. Your body continues to "fight shadows" even after the external trigger is gone. This is a sign of nervous system rigidity and accumulated fatigue.',
+          },
+          {
+            label: '100% · Full Calm',
+            text: 'Your heart has completely returned to its baseline or even lower. This is the gold standard of biological flexibility.',
+          },
+        ],
+      },
+      {
+        heading: 'The Biological Echo',
+        body: 'Your recovery speed depends directly on the tone of your Vagus Nerve. A high Recovery Rate means your "parasympathetic brake" is functioning perfectly. This allows you to switch between tasks without carrying the stress of the previous moment into the next.',
+      },
+      {
+        highlight: "It's not the height of the peak that matters, but the speed of the descent. True power lies in the ability to quickly return to a state of equilibrium.",
+      },
+    ],
+  },
   csi: {
     key: 'csi',
     title: 'CSI: Cardiac Stability Index',
