@@ -17,6 +17,7 @@ const LevelPage          = lazy(() => import('./pages/LevelPage').then(m => ({ d
 const NotFoundPage       = lazy(() => import('./pages/NotFoundPage').then(m => ({ default: m.NotFoundPage })))
 const InnerSpectrumPage  = lazy(() => import('./pages/InnerSpectrumPage').then(m => ({ default: m.InnerSpectrumPage })))
 const BioPage            = lazy(() => import('./pages/BioPage').then(m => ({ default: m.BioPage })))
+const BioMetricPage      = lazy(() => import('./pages/BioMetricPage').then(m => ({ default: m.BioMetricPage })))
 const ArticlesSlugRouter = lazy(() => import('./components/ArticlesSlugRouter'))
 
 const app = (
@@ -38,6 +39,7 @@ const app = (
             <Route path="/level/:number"   element={<LevelPage />} />
             <Route path="/inner-spectrum" element={<InnerSpectrumPage />} />
             <Route path="/bio"            element={<BioPage />} />
+            <Route path="/bio/:metric"    element={<BioMetricPage />} />
             <Route path="*"               element={<NotFoundPage />} />
           </Route>
         </Routes>

@@ -19,6 +19,7 @@ import { LevelPage } from './pages/LevelPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 import { InnerSpectrumPage } from './pages/InnerSpectrumPage'
 import { BioPage } from './pages/BioPage'
+import { BioMetricPage } from './pages/BioMetricPage'
 import { getArticleBySlug } from './data/articles'
 
 function ArticlesSlugRouter() {
@@ -46,6 +47,7 @@ export function createApp(location: string) {
           <Route path="/level/:number"   element={<LevelPage />} />
           <Route path="/inner-spectrum" element={<InnerSpectrumPage />} />
           <Route path="/bio"            element={<BioPage />} />
+          <Route path="/bio/:metric"    element={<BioMetricPage />} />
           <Route path="*"               element={<NotFoundPage />} />
         </Route>
       </Routes>
