@@ -125,15 +125,13 @@ export function Layout() {
           >
             Download
           </a>
-          <div className="flex items-center border-b border-white/5 py-2">
-            <TransitionLink
-              to="/bio"
-              onClick={() => setMenuOpen(false)}
-              className="inline-block -ml-4 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-4 py-1 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600"
-            >
-              Bio OS
-            </TransitionLink>
-          </div>
+          <TransitionLink
+            to="/bio"
+            onClick={() => setMenuOpen(false)}
+            className="-mx-4 block border-b border-white/5 bg-gradient-to-r from-cyan-500/70 to-transparent px-4 py-3 text-sm font-bold text-white transition-opacity hover:opacity-80"
+          >
+            Bio OS
+          </TransitionLink>
           <TransitionLink
             to="/contact"
             onClick={() => setMenuOpen(false)}
