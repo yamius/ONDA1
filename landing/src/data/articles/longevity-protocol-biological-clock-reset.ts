@@ -25,6 +25,14 @@ const article: Article = {
     'hormesis',
   ],
   introStyle: 'gold',
+  image: '/images/articles/longevity-protocol-biological-clock-reset.webp',
+  imageAlt:
+    'DNA helix epigenetic reset visualization: Horvath Clock regressing, epigenetic noise cleaning, cellular system restoring, biological age -1.2 years. ONDA Life longevity protocol.',
+  imageTitle:
+    '[ SYSTEM_RESTORE ]: HORVATH_CLOCK: REGRESSING — EPIGENETIC_NOISE: CLEANING — CELLULAR_SYSTEM: RESTORING — BIOLOGICAL_AGE: -1.2 YRS.',
+  imageCaption:
+    '[ HORVATH_CLOCK: REGRESSING ] — Epigenetic noise: cleaning. Cellular system: restoring. Biological age: -1.2 yrs.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The clock is reset. Now anchor the three primary Zeitgeber signals to keep it from drifting again.',
     link: '/articles/ancestral-sync-circadian-anchors',
