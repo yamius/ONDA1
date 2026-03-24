@@ -58,6 +58,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'protocol-circadian-hard-reset': 'Hard Reset: 72-Hour Circadian Reflash Protocol | ONDA Life',
   'ancestral-sync-circadian-anchors': 'Ancestral Circadian Anchors: 3 Zeitgeber Signals That Fix Your Clock | ONDA Life',
   'longevity-protocol-biological-clock-reset': 'Biological Clock Reset: Reverse Your Cellular Age with Deep Epigenetic Protocols | ONDA Life',
+  'nervous-system-ping-latency': 'Nervous System Latency: HRV Biofeedback & Resonant Frequency Protocol | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -124,6 +125,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Three ancestral Zeitgeber anchors — morning light, thermal reset, and metabolic gate — to lock your circadian clock and prevent epigenetic drift. ONDA Protocol.',
   'longevity-protocol-biological-clock-reset':
     'Reset your epigenetic age with the ONDA Deep Reset stack: 48-hour dark surge, pulsed hormesis, and DFA-guided wind down to optimize the Horvath Clock and slow biological aging.',
+  'nervous-system-ping-latency':
+    'Your ANS has a ping rate. Low HRV = biological packet loss. The ONDA latency audit uses resonant frequency breathing and VNS patching to reduce autonomic lag and upgrade system performance.',
 }
 
 export interface RouteMeta {
@@ -733,6 +736,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
     },
   ],
+  'nervous-system-ping-latency': [
+    {
+      question: 'What is HRV and why does it measure nervous system latency?',
+      answer:
+        'HRV (Heart Rate Variability) measures the millisecond variation between heartbeats (R-R intervals). High variability indicates that the Parasympathetic branch (Vagus Nerve) is actively modulating cardiac rhythm, meaning the system responds fast to incoming signals and returns to baseline quickly — low latency. A metronome-like, low-variability heartbeat signals Sympathetic overactivation: the network is stuck, recovery is slow, and the "ping" is high.',
+    },
+    {
+      question: 'What is resonant frequency breathing and how does it reduce ANS latency?',
+      answer:
+        'Resonant frequency breathing synchronizes the heart, lungs, and baroreflex at a shared oscillation frequency — typically ~0.1 Hz (one full breath cycle every 10 seconds). At this rate, cardiac oscillation, blood pressure waves, and cerebral blood flow phase-lock into a coherent wave, dramatically increasing HRV during the session. The elevated baseline persists for hours. This is not relaxation; it is network synchronization that reduces autonomic response lag.',
+    },
+    {
+      question: 'How long does HRV biofeedback training take to show results?',
+      answer:
+        'Short-term effects (elevated HRV, reduced cortisol, improved cognitive switching) appear within a single 10–20 minute resonant frequency breathing session. Structural improvements in vagal tone and resting HRV baseline become measurable after 4–6 weeks of consistent daily practice. Load-followed-by-recovery training — performing biofeedback immediately after high-stress events — accelerates the adaptation timeline.',
+    },
+  ],
   'longevity-protocol-biological-clock-reset': [
     {
       question: 'What is the Horvath Clock and can it be reversed?',
@@ -1021,6 +1041,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                 audience: 'Longevity Researchers, Biohackers, High-Performers',
                                 proficiencyLevel: 'Advanced',
                                 educationalLevel: 'Advanced',
+                              }
+                          : slug === 'nervous-system-ping-latency'
+                            ? {
+                                keywords: [
+                                  'HRV Biofeedback',
+                                  'Nervous System Latency',
+                                  'Resonant Frequency Breathing',
+                                  'Autonomic Nervous System Optimization',
+                                  'Vagal Tone Training',
+                                  'Heart Rate Variability Protocol',
+                                  'VNS Patching',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Athletes, High-Performers, Neuroscientists',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
                               }
                             : undefined
       const meta: RouteMeta = {

@@ -93,6 +93,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'protocol-circadian-hard-reset': '4 min 30 sec',
   'ancestral-sync-circadian-anchors': '4 min 45 sec',
   'longevity-protocol-biological-clock-reset': '5 min 20 sec',
+  'nervous-system-ping-latency': '4 min 40 sec',
 }
 
 function extractText(node: React.ReactNode): string {
