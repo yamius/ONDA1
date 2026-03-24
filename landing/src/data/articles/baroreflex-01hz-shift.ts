@@ -79,11 +79,11 @@ Clinical data: consistent 0.1 Hz biofeedback training produces systolic reductio
 
 **Target Frequency:** 0.1 Hz — 6 cycles per minute.
 
-**Duty Cycle:** 5 seconds inhale / 5 seconds exhale. Equal ratio. No breath holds — holds break the Mayer Wave synchronization.
+**Duty Cycle (Standard):** 5.0s inhale / 5.0s exhale. Equal ratio. No breath holds — holds break the Mayer Wave synchronization.
 
-**Minimum effective dose:** 5 minutes at 0.1 Hz to initiate vagal capture and measurable HRV response.
+**Duty Cycle (Parasympathetic Bias):** 4.0s inhale / 6.0s exhale. Extended exhale increases vagal efferent output — use when the primary goal is cortisol clearance, anxiety resolution, or sleep-onset acceleration.
 
-**Full calibration session:** 20 minutes — produces lasting baroreflex sensitization that persists 4–6 hours post-session.
+**Minimum required duration:** 10 minutes — the threshold for a complete system "reflash" and measurable baroreflex recalibration.
 
 **Biofeedback monitoring (optional but recommended):** Real-time HRV display showing LF peak confirms you have reached resonance. The LF spectral power surges visibly when phase-lock is achieved — a direct readout of successful baroreflex hooking.
 
@@ -102,7 +102,7 @@ Clinical data: consistent 0.1 Hz biofeedback training produces systolic reductio
 **Systemic:** All downstream systems receiving vagal input — gut, immune, inflammatory — shift toward repair and maintenance mode.
 
 > [ ONDA_STATEMENT ]
-> "The baroreflex isn't a passive safety valve. It is a programmable control loop. 0.1 Hz is the unlock code."
+> "0.1 Hz is not just a rhythm; it is the frequency where your biology speaks the language of physics. It is the point where you stop wasting energy on internal friction."
 `,
   howToSteps: [
     {
