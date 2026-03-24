@@ -55,6 +55,9 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'system-stability-serotonin': 'Serotonin & System Stability: Managing the Gut-Brain Link | ONDA Life',
   'energy-sensor-leptin': 'Leptin & Energy Sensing: Fixing Metabolic Blindness | ONDA Life',
   'neural-optimizer-estrogen': 'Estrogen & Neural Plasticity: Protecting the Cognitive Hardware | ONDA Life',
+  'protocol-circadian-hard-reset': 'Hard Reset: 72-Hour Circadian Reflash Protocol | ONDA Life',
+  'ancestral-sync-circadian-anchors': 'Ancestral Circadian Anchors: 3 Zeitgeber Signals That Fix Your Clock | ONDA Life',
+  'longevity-protocol-biological-clock-reset': 'Biological Clock Reset: Reverse Your Cellular Age with Deep Epigenetic Protocols | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -115,6 +118,12 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Master your hunger signals. Learn how to recalibrate leptin sensitivity, fix metabolic resistance, and restore energy balance using ONDA protocols.',
   'neural-optimizer-estrogen':
     'Discover how estrogen functions as a neural optimizer, enhancing memory and protecting the brain from inflammation and cognitive decline.',
+  'protocol-circadian-hard-reset':
+    'The 72-hour Circadian Hard Reset: three Zeitgeber interventions — Photonic Anchor, Thermal Spike, Metabolic Gate — to reflash a drifted biological clock in under three days.',
+  'ancestral-sync-circadian-anchors':
+    'Three ancestral Zeitgeber anchors — morning light, thermal reset, and metabolic gate — to lock your circadian clock and prevent epigenetic drift. ONDA Protocol.',
+  'longevity-protocol-biological-clock-reset':
+    'Reset your epigenetic age with the ONDA Deep Reset stack: 48-hour dark surge, pulsed hormesis, and DFA-guided wind down to optimize the Horvath Clock and slow biological aging.',
 }
 
 export interface RouteMeta {
@@ -690,6 +699,57 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Social isolation increases Amygdala hyperactivity (System Noise). In-person group synchronization aligns brain frequencies and lowers baseline stress load, freeing CPU resources for analytical tasks.',
     },
   ],
+  'protocol-circadian-hard-reset': [
+    {
+      question: 'How long does a Circadian Hard Reset take?',
+      answer:
+        'The ONDA Circadian Hard Reset runs for 72 hours. Three consecutive days of synchronized Zeitgeber inputs — morning photonic anchor, afternoon thermal spike, and timed metabolic gate — are required to fully reflash a severely drifted biological clock.',
+    },
+    {
+      question: 'What is a Zeitgeber and why does it reset the clock?',
+      answer:
+        'A Zeitgeber (German: "time giver") is any environmental signal that synchronizes the internal biological clock to the external 24-hour cycle. The most powerful are light (photonic anchor), temperature (thermal spike), and food timing (metabolic gate). Applying all three in the correct sequence forces the Suprachiasmatic Nucleus to realign within 72 hours.',
+    },
+    {
+      question: 'Can I do the Hard Reset without cold exposure?',
+      answer:
+        'The thermal spike (cold exposure after morning light) is the second Zeitgeber in the stack. Skipping it reduces the reset speed significantly. A minimum of 60 seconds of face-and-neck cold-water immersion at ≤15°C is sufficient to trigger the norepinephrine pulse that signals "daytime" to the sympathetic nervous system.',
+    },
+  ],
+  'ancestral-sync-circadian-anchors': [
+    {
+      question: 'What are the three ancestral circadian anchors?',
+      answer:
+        'The three ancestral Zeitgeber anchors in the ONDA protocol are: 1) Photonic Trigger — morning light within 30 minutes of waking to set the cortisol pulse and 16-hour melatonin countdown; 2) Thermal Reset — cold exposure in natural light to lock the temperature-circadian axis; 3) Metabolic Gate — first meal no earlier than 90 minutes after waking to synchronize the peripheral clocks in organs.',
+    },
+    {
+      question: 'Why must the first meal be delayed after waking?',
+      answer:
+        'The Metabolic Gate principle states that immediate eating on waking sends an "any-time is feeding time" signal to peripheral liver and gut clocks, decoupling them from the central SCN clock. Delaying the first meal by 90 minutes ensures the cortisol peak has passed and peripheral clocks synchronize with the central rhythm, reducing epigenetic drift.',
+    },
+    {
+      question: 'How quickly do circadian anchors fix disrupted sleep?',
+      answer:
+        'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
+    },
+  ],
+  'longevity-protocol-biological-clock-reset': [
+    {
+      question: 'What is the Horvath Clock and can it be reversed?',
+      answer:
+        'The Horvath Clock is a DNA methylation-based biomarker developed by Steve Horvath that measures biological age independently of chronological age. Research shows that behavioral interventions targeting circadian synchronization — combined with specific hormetic stressors — can slow and in some cases partially reverse the methylation age score.',
+    },
+    {
+      question: 'How does the 48-Hour Dark Surge reset the epigenetic clock?',
+      answer:
+        'The 48-Hour Dark Surge eliminates all artificial blue light after sunset for two consecutive days, maximizing endogenous melatonin production. Beyond its role as a sleep hormone, melatonin functions as the most potent mitochondrial antioxidant — entering mitochondria directly to neutralize reactive oxygen species that drive epigenetic drift and DNA methylation aging.',
+    },
+    {
+      question: 'What is DFA alpha 1 and how is it used in the wind-down protocol?',
+      answer:
+        'DFA alpha 1 (Detrended Fluctuation Analysis) measures the fractal correlation of heart rate, serving as a real-time indicator of autonomic balance. A value above 1.0 signals parasympathetic dominance and readiness for restorative sleep. In the ONDA Deep Reset protocol, DFA alpha 1 is monitored in the evening; if it remains low, a targeted VNS session (paced breathing at 0.1 Hz) forces the transition within 8–12 minutes.',
+    },
+  ],
 }
 
 function buildFAQPageJsonLd(
@@ -914,6 +974,53 @@ export function getMetaForRoute(route: string): RouteMeta {
                                 ],
                                 audience: 'Biohackers, High-Performers, Cognitive Optimization',
                                 proficiencyLevel: 'Intermediate',
+                              }
+                          : slug === 'protocol-circadian-hard-reset'
+                            ? {
+                                keywords: [
+                                  'Circadian Hard Reset',
+                                  'Zeitgeber Protocol',
+                                  'Photonic Anchor',
+                                  'Thermal Spike Biohacking',
+                                  'Metabolic Gate',
+                                  'SCN Synchronization',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, High-Performers, Circadian Optimization',
+                                proficiencyLevel: 'Advanced',
+                                educationalLevel: 'Advanced',
+                              }
+                          : slug === 'ancestral-sync-circadian-anchors'
+                            ? {
+                                keywords: [
+                                  'Ancestral Circadian Rhythm',
+                                  'Zeitgeber Anchors',
+                                  'Morning Sunlight Protocol',
+                                  'Thermal Reset',
+                                  'Metabolic Gate Fasting',
+                                  'Epigenetic Drift Prevention',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Longevity Researchers, High-Performers',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'longevity-protocol-biological-clock-reset'
+                            ? {
+                                keywords: [
+                                  'Horvath Clock',
+                                  'Epigenetic Age Reversal',
+                                  'DNA Methylation Reset',
+                                  'Sirtuin Activation',
+                                  'Dark Surge Melatonin',
+                                  'AMPK Autophagy',
+                                  'DFA Alpha 1',
+                                  'Biological Age Optimization',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Longevity Researchers, Biohackers, High-Performers',
+                                proficiencyLevel: 'Advanced',
+                                educationalLevel: 'Advanced',
                               }
                             : undefined
       const meta: RouteMeta = {
