@@ -60,6 +60,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'longevity-protocol-biological-clock-reset': 'Biological Clock Reset: Reverse Your Cellular Age with Deep Epigenetic Protocols | ONDA Life',
   'nervous-system-ping-latency': 'Nervous System Latency: HRV Biofeedback & Resonant Frequency Protocol | ONDA Life',
   'fault-tolerant-human-hrv-buffer': 'Fault-Tolerant Human: Build Your HRV Buffer & Resilience Architecture | ONDA Life',
+  'resonant-frequency-system-coherence': 'Resonant Frequency Breathing: Find Your HRV Coherence Peak & Tune Your Biology | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -130,6 +131,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Your ANS has a ping rate. Low HRV = biological packet loss. The ONDA latency audit uses resonant frequency breathing and VNS patching to reduce autonomic lag and upgrade system performance.',
   'fault-tolerant-human-hrv-buffer':
     'Low HRV = no headroom — any load triggers cascade failure. The ONDA hardening protocol builds your HRV buffer via hormetic loading, VNS calibration, and predictive morning HRV monitoring.',
+  'resonant-frequency-system-coherence':
+    'Every person has a unique resonant breathing frequency (4.5–6.5 breaths/min) where HRV peaks, vascular resistance drops, and the brain shifts to Alpha/Theta clarity. The ONDA resonance scan finds yours.',
 }
 
 export interface RouteMeta {
@@ -739,6 +742,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
     },
   ],
+  'resonant-frequency-system-coherence': [
+    {
+      question: 'What is resonant frequency breathing and how does it differ from standard breathing exercises?',
+      answer:
+        'Resonant frequency breathing targets the exact individual rhythm (typically 4.5–6.5 breaths/min) where the cardiovascular and respiratory systems enter phase-lock — called baroreflex resonance. Unlike generic "deep breathing" with fixed timing, resonant frequency is identified through a personalized frequency sweep and LF-HRV peak analysis. At this specific frequency, HRV surges to its ceiling, vascular resistance drops, and the Vagus Nerve broadcasts a system-wide safety signal simultaneously.',
+    },
+    {
+      question: 'How long does it take to identify my personal resonant frequency?',
+      answer:
+        'A basic resonance scan takes 20–30 minutes. Test 5.0, 5.5, 6.0, and 6.5 breaths per minute, holding each pattern for 3–4 minutes while monitoring HRV in real time. The frequency producing the highest LF spectral power peak is your resonant frequency. Once identified, it remains stable and becomes a lifelong calibration reference. A starting point before scanning: the 5:5 ratio (5-second inhale, 5-second exhale = 6 breaths/min) is the most common resonant point for adults.',
+    },
+    {
+      question: 'What is "vagal capture" and how does resonant breathing trigger it?',
+      answer:
+        'Vagal capture is the phenomenon where sustained breathing at resonant frequency forces the Vagus Nerve into synchronized, high-amplitude oscillation — increasing efferent vagal output to the heart, gut, and immune system simultaneously. This begins within 90 seconds of reaching resonance and escalates over 5–10 minutes. The result is measurable cortisol reduction, improved gut motility, enhanced immune cell activity, and a brain shift into Alpha/Theta border activity — the state of relaxed alertness optimal for creative work and recovery.',
+    },
+  ],
   'fault-tolerant-human-hrv-buffer': [
     {
       question: 'What is the HRV buffer and how does it relate to resilience?',
@@ -1091,6 +1111,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                   'ONDA Protocol',
                                 ],
                                 audience: 'Biohackers, Athletes, High-Performers, Stress Engineers',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'resonant-frequency-system-coherence'
+                            ? {
+                                keywords: [
+                                  'Resonant Frequency Breathing',
+                                  'HRV Coherence',
+                                  'Baroreflex Resonance',
+                                  'Vagal Capture',
+                                  'System Coherence Biohacking',
+                                  'Heart Rate Variability Optimization',
+                                  'Autonomic Nervous System Tuning',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Athletes, Meditators, High-Performers',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }
