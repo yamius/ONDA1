@@ -25,6 +25,14 @@ const article: Article = {
     'recovery',
   ],
   introStyle: 'cyan',
+  image: '/images/articles/nervous-system-ping-latency.webp',
+  imageAlt:
+    'Neural network human head with HRV waveforms: LATENCY HIGH, LATENCY LOW 15ms, PING_RATE ANALYZING, PACKET_LOSS. Nervous system latency audit visualization. ONDA Life biofeedback protocol.',
+  imageTitle:
+    '[ LATENCY_AUDIT ] — PING_RATE: ANALYZING — LATENCY: LOW — 15ms — PACKET_LOSS: ZERO.',
+  imageCaption:
+    '[ LATENCY_AUDIT ] — Neural ping rate measured. LATENCY: LOW — 15ms. PACKET_LOSS: eliminated. System coherence: active.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Nervous system latency is reduced. Now audit the deeper oscillation layer — the glymphatic flush that clears neural cache during sleep.',
     link: '/articles/glymphatic-flush-clearing-neural-cache',
