@@ -25,6 +25,14 @@ const article: Article = {
     'focus',
   ],
   introStyle: 'blue',
+  image: '/images/articles/baroreflex-01hz-shift.webp',
+  imageAlt:
+    'Cybernetic human profile with glowing neural pathways and orange 0.1 Hz wave — 0.1Hz_TARGET LOCKED, BAROREFLEX_GAIN MAXIMUM, SYSTEM_FRICTION MINIMAL overlays. ONDA Life baroreflex calibration protocol visualization.',
+  imageTitle:
+    '[ 0.1Hz_TARGET: LOCKED ] — Baroreflex gain: maximum. System friction: minimal. Phase-lock achieved.',
+  imageCaption:
+    '[ BAROREFLEX_GAIN: MAXIMUM ] [ SYSTEM_FRICTION: MINIMAL ] — 0.1 Hz locked. The cardiovascular control loop is no longer fighting itself.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Baroreflex calibrated. Find your exact personal resonance frequency — not everyone peaks at exactly 6 breaths/min.',
     link: '/articles/resonant-frequency-system-coherence',
