@@ -24,6 +24,14 @@ const article: Article = {
     'deep-sleep',
   ],
   introStyle: 'amber',
+  image: '/images/articles/ancestral-sync-circadian-anchors.webp',
+  imageAlt:
+    'DNA double helix with three circadian anchors marked: First Anchor (morning light), Second Anchor (thermal), Third Anchor (metabolic nutrients). SIRT stack initializing, System Lag zero. ONDA Life.',
+  imageTitle:
+    '[ CIRCADIAN_ANCHORS ]: FIRST ANCHOR: Pure-Morning-Gold · SECOND ANCHOR: Thermal · THIRD ANCHOR: Metabolic Nutrients. SIRT_STACK: INITIALIZING. SYSTEM_LAG: ZERO.',
+  imageCaption:
+    '[ SIRT_STACK: INITIALIZING ] — Three Zeitgeber anchors activating DNA repair schedule. SYSTEM_LAG: ZERO.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Anchors set. Now execute the full 72-hour clock reflash to deepen synchronization.',
     link: '/articles/protocol-circadian-hard-reset',
