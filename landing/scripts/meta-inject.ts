@@ -61,6 +61,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'nervous-system-ping-latency': 'Nervous System Latency: HRV Biofeedback & Resonant Frequency Protocol | ONDA Life',
   'fault-tolerant-human-hrv-buffer': 'Fault-Tolerant Human: Build Your HRV Buffer & Resilience Architecture | ONDA Life',
   'resonant-frequency-system-coherence': 'Resonant Frequency Breathing: Find Your HRV Coherence Peak & Tune Your Biology | ONDA Life',
+  'baroreflex-01hz-shift': '0.1 Hz Baroreflex Hack: Engineer HRV Coherence & Lower Blood Pressure Without Drugs | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -133,6 +134,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Low HRV = no headroom — any load triggers cascade failure. The ONDA hardening protocol builds your HRV buffer via hormetic loading, VNS calibration, and predictive morning HRV monitoring.',
   'resonant-frequency-system-coherence':
     'Every person has a unique resonant breathing frequency (4.5–6.5 breaths/min) where HRV peaks, vascular resistance drops, and the brain shifts to Alpha/Theta clarity. The ONDA resonance scan finds yours.',
+  'baroreflex-01hz-shift':
+    'At 0.1 Hz your breathing locks with Mayer Waves, hijacking the baroreflex to maximize HRV amplitude, lower blood pressure, and phase-lock the heart-brain coherence signal in under 90 seconds.',
 }
 
 export interface RouteMeta {
@@ -742,6 +745,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
     },
   ],
+  'baroreflex-01hz-shift': [
+    {
+      question: 'What are Mayer Waves and why does 0.1 Hz breathing synchronize with them?',
+      answer:
+        'Mayer Waves are slow oscillations in blood pressure with a natural frequency of approximately 0.1 Hz — one cycle every 10 seconds — produced by the baroreflex feedback loop as it regulates arterial pressure. Normally, breathing runs out of phase with this oscillation, causing partial cancellation of the HRV signal. When breathing frequency matches Mayer Wave frequency at 0.1 Hz (6 breaths per minute), the respiratory and cardiovascular oscillations phase-lock, creating constructive resonance — HRV amplitude surges to its physiological ceiling and baroreflex sensitivity reaches its maximum.',
+    },
+    {
+      question: 'How does 0.1 Hz breathing lower blood pressure without medication?',
+      answer:
+        'Repeated sessions of 0.1 Hz baroreflex resonance training sensitize arterial baroreceptors — they become faster and more precise at detecting pressure deviations and commanding compensatory responses. Over 4–8 weeks of daily 10–20 minute sessions, this produces measurable increases in baroreflex sensitivity (BRS) and arterial elasticity, resulting in systolic blood pressure reductions of 7–15 mmHg in hypertensive individuals. The mechanism is neuroplastic: the brainstem cardiovascular control centers recalibrate their setpoint downward in response to the improved signal-to-noise ratio delivered by resonance breathing.',
+    },
+    {
+      question: 'How quickly does the 0.1 Hz baroreflex hook produce measurable effects?',
+      answer:
+        'The acute effects begin within 90 seconds of reaching resonance: vagal efferent output increases, heart rate variability rises, and cortisol begins dropping. A 5-minute session is the minimum effective dose for measurable parasympathetic activation and cognitive noise reduction. A full 20-minute session produces baroreflex sensitization that persists 4–6 hours post-session, making it practical as a pre-work or pre-decision protocol. Blood pressure reduction accumulates over 4–8 weeks of consistent daily practice.',
+    },
+  ],
   'resonant-frequency-system-coherence': [
     {
       question: 'What is resonant frequency breathing and how does it differ from standard breathing exercises?',
@@ -1127,6 +1147,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                   'ONDA Protocol',
                                 ],
                                 audience: 'Biohackers, Athletes, Meditators, High-Performers',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'baroreflex-01hz-shift'
+                            ? {
+                                keywords: [
+                                  '0.1 Hz Breathing',
+                                  'Baroreflex Optimization',
+                                  'Mayer Waves Synchronization',
+                                  'HRV Amplitude Maximization',
+                                  'Blood Pressure Biofeedback',
+                                  'Vagal Tone Injection',
+                                  'Brain-Heart Coherence',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Athletes, Cardiologists, High-Performers',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }
