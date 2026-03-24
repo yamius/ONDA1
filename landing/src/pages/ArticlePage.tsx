@@ -90,6 +90,9 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'neural-optimizer-estrogen': '4 min 45 sec',
   'energy-governor-tsh': '4 min 10 sec',
   'adaptation-hack-range-fractionation': '4 min 30 sec',
+  'protocol-circadian-hard-reset': '4 min 30 sec',
+  'ancestral-sync-circadian-anchors': '4 min 45 sec',
+  'longevity-protocol-biological-clock-reset': '5 min 20 sec',
 }
 
 function extractText(node: React.ReactNode): string {

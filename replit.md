@@ -134,3 +134,63 @@ Preferred communication style: Simple, everyday language.
 ### Audio Content
 - Practice audio files hosted on Supabase Storage CDN
 - Large files uploaded via TUS protocol (`scripts/upload-large-audio-tus.ts`)
+
+---
+
+## Landing Site: Articles System
+
+### Добавление новой статьи — чеклист
+
+При добавлении новой статьи обязательно заполнить **все** из следующих мест:
+
+#### 1. Файл статьи (`landing/src/data/articles/<slug>.ts`)
+Обязательные поля:
+- `slug` — URL-путь статьи
+- `title` — заголовок
+- `description` — 150–160 символов, SEO-описание
+- `category` — одна из: `'Neural Hardware'`, `'Biological Software'`, `'OS States'`, `'ONDA Protocol'`
+- `content` — markdown-тело статьи
+- `relatedSlugs` — массив slug-ов связанных тем
+
+Рекомендуемые поля:
+- `seoTitle` — кастомный `<title>` тег (если не задан, генерируется автоматически)
+- `subtitle` — подзаголовок под h1
+- `introStyle` — цвет вводной цитаты: `'cyan'|'purple'|'amber'|'emerald'|'blue'|'orange'|'rose'|'indigo'|'gold'|'slate'`
+- `howToSteps` — шаги протокола (генерирует HowTo JSON-LD)
+- `neuralSuggestion` — ссылка на связанную статью внизу
+- `image` — путь к картинке (напр. `/images/articles/<slug>.webp`)
+- `imageAlt` — alt-текст изображения (~125 символов, SEO-critical)
+- `imageTitle` — title-атрибут (tooltip при наведении)
+- `imageCaption` — подпись под изображением
+- `imagePlacement` — `'header'` (под заголовком) или `'content'` (внутри markdown)
+
+#### 2. Регистрация (`landing/src/data/articles/index.ts`)
+Добавить импорт и включить в массив `articles`.
+
+#### 3. Время чтения (`landing/src/pages/ArticlePage.tsx` → `ARTICLE_SYNC_TIMES`)
+Добавить запись вида:
+```ts
+'<slug>': '4 min 30 sec',
+```
+Без этой записи в шапке статьи отображается `[-]` вместо времени.
+Примерные ориентиры: короткая (~2 экрана) ≈ 3 мин, средняя ≈ 4–5 мин, длинная (3+ протокола) ≈ 6–7 мин.
+
+#### 4. SEO-метаданные (`landing/scripts/meta-inject.ts`)
+Четыре блока, все обязательны:
+
+| Блок | Переменная | Что добавить |
+|------|-----------|-------------|
+| SEO title | `ARTICLE_SEO_TITLES` | Уникальный `<title>` ~60 символов |
+| SEO description | `ARTICLE_SEO_DESCRIPTIONS` | 150–160 символов, стиль "Technical protocol for biocomputer upgrade" |
+| JSON-LD keywords | `techArticleExtras` (цепочка `slug === ...`) | `keywords[]`, `audience`, `proficiencyLevel`, `educationalLevel` |
+| FAQ schema | `FAQ_SCHEMA` | 2–3 вопроса + развёрнутые ответы (генерирует FAQPage JSON-LD) |
+
+#### 5. Картинка
+- Скопировать в `landing/public/images/articles/<slug>.png` и `.webp`
+- При пересборке `.webp` копия создаётся автоматически, но если уже есть — скрипт пропустит
+
+#### 6. Пересборка и деплой
+```bash
+cd landing && npm run build
+```
+Статья автоматически пререндерится в `landing/dist/articles/<slug>/index.html`.
