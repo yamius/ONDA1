@@ -25,11 +25,13 @@ const article: Article = {
     'glucose',
   ],
   introStyle: 'amber',
-  image: '/images/articles/circadian-rhythm-light-optimization-onda.webp',
+  image: '/images/articles/protocol-circadian-hard-reset.webp',
   imageAlt:
-    'Circadian hard reset protocol: biological clock recalibration via light, metabolic window, and vagus nerve stimulation. ONDA Life.',
+    'Biological clock hard reset: mechanical gears of the SCN recalibrating with Zeitgeber signals — SYSTEM_CLOCK recalibrating, melatonin terminating, cortisol stack initializing. ONDA Life.',
   imageTitle:
-    '[ HARD_RESET ]: Circadian clock reflash active. Zeitgeber sequence: Light → Metabolic Window → VNS. SCN synchronization in progress.',
+    '[ HARD_RESET ]: SYSTEM_CLOCK: RECALIBRATING — Zeitgeber signal detected. Melatonin synthesis terminating. Cortisol stack initializing.',
+  imageCaption:
+    '[ SYSTEM_CLOCK: RECALIBRATING ] — Zeitgeber signal detected. Melatonin synthesis terminating. Cortisol stack initializing.',
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Clock aligned. Now optimize the recovery architecture — explore the glymphatic flush protocol.',
