@@ -25,6 +25,14 @@ const article: Article = {
     'focus',
   ],
   introStyle: 'indigo',
+  image: '/images/articles/resonant-frequency-system-coherence.webp',
+  imageAlt:
+    'Crystalline heart with golden resonance wave entering the vagal nerve — COHERENCE_SCORE 99% and VAGAL_TUBE TUNED overlays. ONDA Life resonant frequency breathing protocol visualization.',
+  imageTitle:
+    '[ COHERENCE_SCORE: 99% ] — Resonant frequency locked. Vagal Tube: tuned. Heart-brain phase alignment: active.',
+  imageCaption:
+    '[ VAGAL_TUBE: TUNED ] — Resonance locked at 0.1 Hz. Coherence score: 99%. The system is in phase.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Frequency locked. Now stress-test the buffer — build fault tolerance so the coherence holds under load.',
     link: '/articles/fault-tolerant-human-hrv-buffer',
