@@ -26,6 +26,14 @@ const article: Article = {
     'biofeedback',
   ],
   introStyle: 'blue',
+  image: '/images/articles/fault-tolerant-human-hrv-buffer.webp',
+  imageAlt:
+    'Crystalline human figure absorbing lightning strike with HRV waveform monitors — fault-tolerant biological system under stress load. ONDA Life HRV buffer resilience protocol visualization.',
+  imageTitle:
+    '[ SYSTEM_REDUNDANCY ] — HRV buffer active. Lightning absorbed. Cascade failure: prevented. Graceful degradation: engaged.',
+  imageCaption:
+    '[ SYSTEM_REDUNDANCY ] — Stress spike absorbed. HRV buffer: holding. Cascade failure: prevented. Graceful degradation: active.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Buffer is built. Now reduce the baseline ping rate — resonant frequency breathing for lower ANS latency.',
     link: '/articles/nervous-system-ping-latency',
