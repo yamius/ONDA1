@@ -25,6 +25,14 @@ const article: Article = {
     'recovery',
   ],
   introStyle: 'slate',
+  image: '/images/articles/nightly-flush-glymphatic-neural-cache.webp',
+  imageAlt:
+    'Glowing crystalline brain with teal CSF flow stream and system monitor showing DRAINAGE_FLOW OPTIMAL, WASTE_CLEARANCE 94%, SLEEP_STAGE N3_DEEP, NEURAL_ENTROPY DECREASING. ONDA Life glymphatic purge protocol visualization.',
+  imageTitle:
+    '[ GLYMPHATIC_SYSTEM_PURGE ] — Drainage flow: optimal. Waste clearance: 94%. Sleep stage: N3 Deep. Neural entropy: decreasing.',
+  imageCaption:
+    '[ WASTE_CLEARANCE: 94% ] [ SLEEP_STAGE: N3_DEEP ] — The cleanup script is executing. Neural entropy: decreasing.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Cache cleared. Now calibrate the hydraulic pump — 0.1 Hz resonance breathing before sleep primes baroreflex for optimal glymphatic drive.',
     link: '/articles/baroreflex-01hz-shift',
