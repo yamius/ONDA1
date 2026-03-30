@@ -25,6 +25,14 @@ const article: Article = {
     'recovery',
   ],
   introStyle: 'cyan',
+  image: '/images/articles/neural-hydraulics-csf-flow.webp',
+  imageAlt:
+    'Transparent brain cross-section with orange CSF flow arrows and NEURAL_HYDRAULICS_FLOW label — PULSE_AMPLITUDE ACTIVE, HYDRAULIC_RESISTANCE LOW, STAGE_N3 LOCKED, FLOW_COHERENCE DETECTING overlays. ONDA Life brain fluid dynamics visualization.',
+  imageTitle:
+    '[ NEURAL_HYDRAULICS_FLOW ] — Pulse amplitude: active. Hydraulic resistance: low. Stage N3: locked. Flow coherence: detecting.',
+  imageCaption:
+    '[ PULSE_AMPLITUDE: ACTIVE ] [ HYDRAULIC_RESISTANCE: LOW ] [ STAGE_N3: LOCKED ] — CSF flow initiated. The hydraulic purge is running.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Hydraulics primed. Now maximize the overnight purge — 3 patches for glymphatic cache clearance during N3 sleep.',
     link: '/articles/nightly-flush-glymphatic-neural-cache',
