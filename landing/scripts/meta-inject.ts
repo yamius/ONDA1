@@ -63,6 +63,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'resonant-frequency-system-coherence': 'Resonant Frequency Breathing: Find Your HRV Coherence Peak & Tune Your Biology | ONDA Life',
   'baroreflex-01hz-shift': '0.1 Hz Baroreflex Hack: Engineer HRV Coherence & Lower Blood Pressure Without Drugs | ONDA Life',
   'nightly-flush-glymphatic-neural-cache': 'Glymphatic System Optimization: Deep Sleep Brain Flush & Neural Cache Clearance Protocol | ONDA Life',
+  'neural-hydraulics-csf-flow': 'Neural Hydraulics: Engineer CSF Flow, Glymphatic Purge & Mental Clarity via Brain Fluid Dynamics | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -139,6 +140,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'At 0.1 Hz your breathing locks with Mayer Waves, hijacking the baroreflex to maximize HRV amplitude, lower blood pressure, and phase-lock the heart-brain coherence signal in under 90 seconds.',
   'nightly-flush-glymphatic-neural-cache':
     'The glymphatic system only runs during Deep Sleep — flushing beta-amyloids via 60% expanded intercellular space. The ONDA purge protocol maximizes N3 depth, arterial pulsatility, and lateral positioning.',
+  'neural-hydraulics-csf-flow':
+    'The brain is a hydraulic machine — arteries act as pistons, CSF flushes metabolic waste, posture controls pressure. The ONDA hydraulic protocol primes vascular elasticity, gravity, and breath for full nightly purge.',
 }
 
 export interface RouteMeta {
@@ -748,6 +751,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
     },
   ],
+  'neural-hydraulics-csf-flow': [
+    {
+      question: 'How do arteries function as the brain\'s hydraulic pump for CSF clearance?',
+      answer:
+        'With each heartbeat, arteries in the brain expand and contract — generating a pressure wave that physically pushes cerebrospinal fluid (CSF) through the perivascular glymphatic channels surrounding them. This arterial pulsatility is the primary active force driving CSF through brain tissue to flush metabolic byproducts (beta-amyloids, tau proteins, glutamate). Higher HRV = more elastic arterial walls = larger pulsation amplitude = deeper CSF penetration per heartbeat. Low HRV and arterial stiffness reduce this pump stroke, leaving metabolic waste in deeper tissue layers.',
+    },
+    {
+      question: 'What is hydraulic stasis and how does it cause morning brain fog?',
+      answer:
+        'Hydraulic stasis occurs when CSF flow velocity drops below clearance-effective thresholds — due to low HRV, poor sleep architecture, or supine sleep positioning. The result is incomplete overnight metabolic clearance: beta-amyloid and tau proteins accumulate on neuronal membranes, increasing electrical signal latency and raising the synaptic noise floor. This manifests as morning brain fog, heavy-headedness, and slow cognitive boot-up. In chronic cases, repeated stasis nights create the protein accumulation pathway associated with long-term neurodegeneration.',
+    },
+    {
+      question: 'Why does diaphragmatic breathing before sleep improve brain fluid drainage?',
+      answer:
+        'Deep diaphragmatic breathing creates negative intra-thoracic pressure on each inhale — a partial vacuum in the chest cavity that assists venous return from the head via the jugular veins. This reduces cerebral venous congestion and lowers the baseline intracranial pressure entering the sleep window. Lower pre-sleep intracranial pressure creates a wider hydrostatic gradient for CSF outflow, allowing the glymphatic system to initiate flow faster at N3 onset. Extended exhale (6s vs 4s) additionally activates the parasympathetic branch, clearing residual cortisol and accelerating the sleep-onset transition.',
+    },
+  ],
   'nightly-flush-glymphatic-neural-cache': [
     {
       question: 'What is the glymphatic system and why does it only activate during deep sleep?',
@@ -1201,6 +1221,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                 audience: 'Biohackers, Neuroscientists, Longevity Researchers, High-Performers',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'neural-hydraulics-csf-flow'
+                            ? {
+                                keywords: [
+                                  'Neural Hydraulics',
+                                  'Cerebrospinal Fluid Flow',
+                                  'Glymphatic Hydraulics',
+                                  'Intracranial Pressure Optimization',
+                                  'Vascular Pulsatility Brain',
+                                  'CSF Drainage Engineering',
+                                  'Brain Fluid Dynamics',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Neuroscientists, Sleep Optimizers, High-Performers',
+                                proficiencyLevel: 'Advanced',
+                                educationalLevel: 'Advanced',
                               }
                             : undefined
       const meta: RouteMeta = {

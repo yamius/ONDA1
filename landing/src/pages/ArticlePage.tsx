@@ -98,6 +98,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'resonant-frequency-system-coherence': '4 min 50 sec',
   'baroreflex-01hz-shift': '5 min 10 sec',
   'nightly-flush-glymphatic-neural-cache': '5 min 05 sec',
+  'neural-hydraulics-csf-flow': '5 min 15 sec',
 }
 
 function extractText(node: React.ReactNode): string {
