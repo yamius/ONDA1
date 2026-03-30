@@ -64,6 +64,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'baroreflex-01hz-shift': '0.1 Hz Baroreflex Hack: Engineer HRV Coherence & Lower Blood Pressure Without Drugs | ONDA Life',
   'nightly-flush-glymphatic-neural-cache': 'Glymphatic System Optimization: Deep Sleep Brain Flush & Neural Cache Clearance Protocol | ONDA Life',
   'neural-hydraulics-csf-flow': 'Neural Hydraulics: Engineer CSF Flow, Glymphatic Purge & Mental Clarity via Brain Fluid Dynamics | ONDA Life',
+  'anti-entropy-neural-architecture': 'Anti-Entropy Brain Protocol: Prevent Neural Drift, Clear Amyloid & Protect Neural Architecture | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -142,6 +143,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'The glymphatic system only runs during Deep Sleep — flushing beta-amyloids via 60% expanded intercellular space. The ONDA purge protocol maximizes N3 depth, arterial pulsatility, and lateral positioning.',
   'neural-hydraulics-csf-flow':
     'The brain is a hydraulic machine — arteries act as pistons, CSF flushes metabolic waste, posture controls pressure. The ONDA hydraulic protocol primes vascular elasticity, gravity, and breath for full nightly purge.',
+  'anti-entropy-neural-architecture':
+    'Aging is accumulated entropy. The ONDA Anti-Entropy Protocol layers glymphatic clearance, autophagy-sync fasting, and thermal regulation to halt beta-amyloid drift before it crosses the irreversibility threshold.',
 }
 
 export interface RouteMeta {
@@ -751,6 +754,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
     },
   ],
+  'anti-entropy-neural-architecture': [
+    {
+      question: 'What is Neural Drift and how does it relate to neurodegeneration?',
+      answer:
+        'Neural Drift is the gradual accumulation of metabolic entropy in the brain — the progressive buildup of beta-amyloid plaques and tau protein tangles that occurs when glymphatic clearance chronically underperforms. Each night of poor sleep or low HRV adds to a metabolic debt that compounds over years. When the accumulated protein burden crosses recovery thresholds, it begins to impair synaptic plasticity, inhibit axonal transport, and disrupt neural circuitry — the transition from recoverable suboptimality to irreversible neurodegeneration. The ONDA Anti-Entropy Protocol addresses this as an engineering failure, not an inevitable biological process.',
+    },
+    {
+      question: 'How does intermittent fasting synchronize with glymphatic clearance for dual-channel detox?',
+      answer:
+        'Glymphatic flushing clears extracellular waste (beta-amyloid, tau, glutamate) from between neurons. Autophagy — triggered by mTOR suppression during fasting — clears intracellular waste (damaged organelles, misfolded proteins, dysfunctional mitochondria) from inside neurons. A 4-hour pre-sleep fasting window initiates both processes simultaneously: the glymphatic pump activates with N3 sleep onset, while autophagy is already running from the fast. Running both in the same time window creates a dual-channel purge that eliminates waste at both the extracellular and intracellular level — a combinatorial effect no single-mechanism approach achieves.',
+    },
+    {
+      question: 'Why does brain temperature during sleep affect glymphatic clearance efficiency?',
+      answer:
+        'Glymphatic flow velocity is temperature-dependent. At lower brain temperatures (17–18°C ambient), two mechanisms amplify clearance: first, CSF viscosity decreases slightly, reducing hydraulic resistance in the perivascular channels and increasing flow velocity per arterial pump stroke. Second, the hypothalamic thermostat interprets head cooling as a deep-night signal, extending Stage N3 duration and allowing the glymphatic pump to operate longer per sleep cycle. Maintaining cool head temperature throughout the night — via cooling gel pillows and controlled room temperature — sustains both effects for the full glymphatic window.',
+    },
+  ],
   'neural-hydraulics-csf-flow': [
     {
       question: 'How do arteries function as the brain\'s hydraulic pump for CSF clearance?',
@@ -1235,6 +1255,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                   'ONDA Protocol',
                                 ],
                                 audience: 'Biohackers, Neuroscientists, Sleep Optimizers, High-Performers',
+                                proficiencyLevel: 'Advanced',
+                                educationalLevel: 'Advanced',
+                              }
+                          : slug === 'anti-entropy-neural-architecture'
+                            ? {
+                                keywords: [
+                                  'Neural Anti-Entropy Protocol',
+                                  'Amyloid Clearance Optimization',
+                                  'Glymphatic Longevity',
+                                  'Brain Aging Prevention',
+                                  'Autophagy Sleep Sync',
+                                  'Neural Drift Prevention',
+                                  'Neurodegeneration Biohacking',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Longevity Researchers, Biohackers, Neuroscientists, High-Performers',
                                 proficiencyLevel: 'Advanced',
                                 educationalLevel: 'Advanced',
                               }
