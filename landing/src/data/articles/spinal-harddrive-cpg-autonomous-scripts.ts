@@ -25,6 +25,14 @@ const article: Article = {
     'sleep',
   ],
   introStyle: 'cyan',
+  image: '/images/articles/spinal-harddrive-cpg-autonomous-scripts.webp',
+  imageAlt:
+    'Glowing blue-gold digital spine with neural network connections radiating outward. SPINAL_HARDDRIVE_SCRIPT_EXECUTION label. System monitor: CPG_STATUS AUTONOMOUS_ACTIVE, SCRIPT GAIT_PATTERN_07, EXECUTION-FLOW OPTIMAL, COGNITIVE_LOAD LOW. ONDA Life central pattern generator spinal intelligence visualization.',
+  imageTitle:
+    '[ SPINAL_HARDDRIVE_SCRIPT_EXECUTION ] — CPG status: autonomous active. Script: GAIT_PATTERN_07. Execution flow: optimal. Cognitive load: low.',
+  imageCaption:
+    '[ CPG_STATUS: AUTONOMOUS_ACTIVE ] [ COGNITIVE_LOAD: LOW ] — Script running. The brain issued the command once. The harddrive handles the rest.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Harddrive calibrated. Now reduce the cortisol load that forces the brain back into micromanagement — Quiet Mode disengages the override reflex.',
     link: '/articles/quiet-mode-alpha-cortisol-buffer',
