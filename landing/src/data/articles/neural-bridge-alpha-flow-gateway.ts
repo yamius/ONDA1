@@ -25,6 +25,14 @@ const article: Article = {
     'neuroplasticity',
   ],
   introStyle: 'purple',
+  image: '/images/articles/neural-bridge-alpha-flow-gateway.webp',
+  imageAlt:
+    'Meditating silhouette between two glowing neural hemispheres connected by golden-blue wave bridge. System monitor: NEURAL_OSCILLATION 10Hz, SYSTEM_STATUS GATE_OPEN, BANDWIDTH MAXIMUM, FLOW_COHERENCE LOCKED. ONDA Life neural bridge alpha flow state visualization.',
+  imageTitle:
+    '[ NEURAL_BRIDGE_GATEWAY ] — Neural oscillation: 10 Hz. System status: gate open. Bandwidth: maximum. Flow coherence: locked.',
+  imageCaption:
+    '[ SYSTEM_STATUS: GATE_OPEN ] [ BANDWIDTH: MAXIMUM ] [ FLOW_COHERENCE: LOCKED ] — Alpha bridge stabilized. Theta data en route to prefrontal workspace.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Bridge open. Return to the idle baseline — Alpha maintenance protocol between creative sessions prevents gate collapse.',
     link: '/articles/idle-state-alpha-rhythms',
