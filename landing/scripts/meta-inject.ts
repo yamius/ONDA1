@@ -67,6 +67,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'anti-entropy-neural-architecture': 'Anti-Entropy Brain Protocol: Prevent Neural Drift, Clear Amyloid & Protect Neural Architecture | ONDA Life',
   'idle-state-alpha-rhythms': 'Alpha State Brain Optimization: Escape the Beta Trap & Engage the Neural Idle Frequency | ONDA Life',
   'neural-bridge-alpha-flow-gateway': 'Neural Bridge: Alpha-Theta Gateway to Flow State, Insight Delivery & Creative Access | ONDA Life',
+  'quiet-mode-alpha-cortisol-buffer': 'Quiet Mode Protocol: Alpha Rhythms as Cortisol Buffer, Parasympathetic Activation & Stress Recovery | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -151,6 +152,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Alpha waves (8–12 Hz) are the brain\'s neutral gear — noise-cancelled, energy-efficient, globally coherent. The ONDA idle protocol triggers Alpha manually via visual reset, 0.1 Hz coupling, and digital decoupling.',
   'neural-bridge-alpha-flow-gateway':
     'Alpha waves (8–12 Hz) are the network gateway to Theta insight storage and Gamma-bound flow. The ONDA bridge protocol opens cross-frequency coupling via 0.1 Hz resonance, diffused focus, and 90-second system silence.',
+  'quiet-mode-alpha-cortisol-buffer':
+    'Alpha waves (8–12 Hz) are the brain\'s active noise-cancellation layer — suppressing cortisol, filtering amygdala reactivity, and restoring vagal tone. The ONDA Quiet Mode uses exhale extension, peripheral awareness, and the Alpha-Drop.',
 }
 
 export interface RouteMeta {
@@ -760,6 +763,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
     },
   ],
+  'quiet-mode-alpha-cortisol-buffer': [
+    {
+      question: 'How do Alpha waves (8–12 Hz) actively suppress cortisol and sympathetic arousal?',
+      answer:
+        'Alpha dominance interrupts the stress cascade via the prefrontal cortex. Sustained High-Beta neural activity drives tonic CRH (corticotropin-releasing hormone) release through an amygdala-hypothalamus loop. When Alpha power increases, the prefrontal cortex shifts from task-positive to default-mode operation and exerts inhibitory control over amygdala activation — reducing the perceived threat signal forwarded to the hypothalamus. With a diminished HPA axis input signal, CRH and ACTH output decreases, and the adrenal glands deprioritize cortisol production. The suppression is active, not passive: Alpha directly engages the top-down regulatory pathway, not merely the absence of stress.',
+    },
+    {
+      question: 'What is Thermal Runaway in the context of chronic stress and why does it prevent sleep?',
+      answer:
+        'Thermal Runaway is the self-amplifying failure cascade that occurs when the nervous system loses access to the Alpha-state buffer. In this mode, chronic High-Beta entrainment becomes the default state — the brain keeps scanning for threats even after the threat is gone, because the threat-detection loop has decoupled from actual threat input. Sleep latency increases because the Beta-to-Delta sleep transition requires Alpha as the mandatory intermediate state. A brain locked in Beta at bedtime cannot skip the bridge and enter Theta or Delta directly. The result is that more exhaustion without Alpha intervention worsens sleep latency, not improves it — the system needs access to the Alpha bridge, not simply "enough tiredness."',
+    },
+    {
+      question: 'Why does a slight forward head tilt (the Alpha-Drop) enhance Alpha wave generation?',
+      answer:
+        'The slight forward head tilt (~10–15° chin lowering) in the Alpha-Drop protocol works via two physical mechanisms. First, it increases CSF pressure at the occipital pole — the primary location of Alpha generators in the cortex — marginally improving the electrochemical environment for 8–12 Hz oscillation. Second, it reduces activation of the cervical sympathetic chain, which runs adjacent to the cervical vertebrae and contributes to sympathetic tone when the head is in an upright or extended position. The head-forward tilt passively reduces this input. Combined with eyes-closed sensory reduction and exhale-extended breathing, the Alpha-Drop creates three simultaneous hardware conditions that facilitate occipital Alpha generation without requiring willpower or technique mastery.',
+    },
+  ],
   'neural-bridge-alpha-flow-gateway': [
     {
       question: 'What is the Alpha-Theta bridge and how does it enable creative insights?',
@@ -1327,6 +1347,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                   'ONDA Protocol',
                                 ],
                                 audience: 'Biohackers, High-Performers, Knowledge Workers, Athletes',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'quiet-mode-alpha-cortisol-buffer'
+                            ? {
+                                keywords: [
+                                  'Alpha Relaxation Cortisol Buffer',
+                                  'Parasympathetic Activation Protocol',
+                                  'Quiet Mode Stress Recovery',
+                                  'Vagal Tone Alpha Rhythm',
+                                  'Exhale Extension Baroreflex',
+                                  'Amygdala Buffering Technique',
+                                  'Thermal Runaway Prevention',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, High-Performers, Knowledge Workers, Burnout Recovery',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }
