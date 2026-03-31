@@ -69,6 +69,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'neural-bridge-alpha-flow-gateway': 'Neural Bridge: Alpha-Theta Gateway to Flow State, Insight Delivery & Creative Access | ONDA Life',
   'quiet-mode-alpha-cortisol-buffer': 'Quiet Mode Protocol: Alpha Rhythms as Cortisol Buffer, Parasympathetic Activation & Stress Recovery | ONDA Life',
   'spinal-harddrive-cpg-autonomous-scripts': 'Spinal Harddrive: Central Pattern Generators, CPG Motor Intelligence & Cognitive Offloading Protocol | ONDA Life',
+  'rhythmic-entrainment-system-frequencies': 'Rhythmic Entrainment: 0.1 Hz Master Clock, CPG Synchronization & Locomotor-Respiratory Coupling | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -157,6 +158,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Alpha waves (8–12 Hz) are the brain\'s active noise-cancellation layer — suppressing cortisol, filtering amygdala reactivity, and restoring vagal tone. The ONDA Quiet Mode uses exhale extension, peripheral awareness, and the Alpha-Drop.',
   'spinal-harddrive-cpg-autonomous-scripts':
     'CPGs are spinal neural circuits that execute complex movement without brain input. The ONDA Harddrive Protocol uses sensory priming, rhythmic entrainment, and eyes-closed drills to free the prefrontal cortex for strategic thought.',
+  'rhythmic-entrainment-system-frequencies':
+    'Biological oscillators waste energy when out of phase. The ONDA Entrainment Protocol locks breath, heart, CPGs, and brain to a single 0.1 Hz master clock via pacing, locomotor-respiratory coupling, and acoustic entrainment.',
 }
 
 export interface RouteMeta {
@@ -766,6 +769,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
     },
   ],
+  'rhythmic-entrainment-system-frequencies': [
+    {
+      question: 'Why is 0.1 Hz (6 breaths per minute) the specific frequency for maximum biological entrainment?',
+      answer:
+        '0.1 Hz is the resonant frequency of the baroreflex loop — the feedback cycle between blood pressure fluctuations, heart rate adjustments, and the vagus nerve. At this specific frequency, the baroreflex achieves maximum gain: each breath produces the largest possible swing in heart rate variability, and the respiratory, cardiovascular, and autonomic nervous systems reach peak coherence. Below 0.1 Hz, the respiratory drive falls out of sync with the baroreflex cycle. Above 0.1 Hz, each breath is too short for the full baroreflex response to complete. 0.1 Hz is the precise mathematical resonance point of the human cardiovascular system — not an arbitrary wellness target.',
+    },
+    {
+      question: 'What is Phase Desync and how does it produce cognitive tremors and systemic inflammation?',
+      answer:
+        'Phase Desync occurs when the body\'s biological oscillators — respiratory, cardiac, motor, neural — run simultaneously but without phase-locking to each other. The result is constructive and destructive interference between their outputs: signals from different systems arrive at junction points slightly out of phase, producing compensatory micro-corrections that consume energy and generate low-level stress signals at the cellular level. These stress signals elevate inflammatory markers (IL-6, CRP) measurably in chronically desynchronized individuals. The cognitive effect — experienced as diffuse background discomfort without a clear source — is the result of the brain\'s processing budget being partially consumed by arbitrating between conflicting internal timing signals ("cognitive tremors").',
+    },
+    {
+      question: 'What is Locomotor-Respiratory Coupling (LRC) and why does it make movement more efficient?',
+      answer:
+        'Locomotor-Respiratory Coupling (LRC) is the deliberate phase-locking of step rhythm to breath phases during locomotion — typically a 3:3 or 4:4 step-to-breath ratio (inhale for N steps, exhale for N steps). When step and breath are phase-locked, the respiratory muscles contribute to core stabilization (thoracic pressure changes assist trunk stiffness during each stance phase), reducing the metabolic overhead of separate stabilization effort. Simultaneously, the CPG locomotor oscillators receive a consistent phase reference from the respiratory system, reducing the energy cost of autonomous oscillator self-maintenance. The result is measurably lower oxygen consumption per unit of movement output — the physical mechanism behind why trained endurance athletes develop LRC naturally and why it is used in clinical gait rehabilitation.',
+    },
+  ],
   'spinal-harddrive-cpg-autonomous-scripts': [
     {
       question: 'What are Central Pattern Generators (CPGs) and where are they located in the body?',
@@ -1367,6 +1387,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                   'ONDA Protocol',
                                 ],
                                 audience: 'Biohackers, High-Performers, Knowledge Workers, Athletes',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'rhythmic-entrainment-system-frequencies'
+                            ? {
+                                keywords: [
+                                  'Rhythmic Entrainment CPG Synchronization',
+                                  '0.1 Hz Resonance Breathing',
+                                  'Locomotor Respiratory Coupling',
+                                  'Neural Oscillator Synchronization',
+                                  'Phase Desync Biohacking',
+                                  'HRV Coherence Protocol',
+                                  'Acoustic Entrainment Performance',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Athletes, High-Performers, Movement Practitioners',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }

@@ -104,6 +104,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'neural-bridge-alpha-flow-gateway': '5 min 10 sec',
   'quiet-mode-alpha-cortisol-buffer': '5 min 05 sec',
   'spinal-harddrive-cpg-autonomous-scripts': '5 min 20 sec',
+  'rhythmic-entrainment-system-frequencies': '5 min 15 sec',
 }
 
 function extractText(node: React.ReactNode): string {
