@@ -65,6 +65,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'nightly-flush-glymphatic-neural-cache': 'Glymphatic System Optimization: Deep Sleep Brain Flush & Neural Cache Clearance Protocol | ONDA Life',
   'neural-hydraulics-csf-flow': 'Neural Hydraulics: Engineer CSF Flow, Glymphatic Purge & Mental Clarity via Brain Fluid Dynamics | ONDA Life',
   'anti-entropy-neural-architecture': 'Anti-Entropy Brain Protocol: Prevent Neural Drift, Clear Amyloid & Protect Neural Architecture | ONDA Life',
+  'idle-state-alpha-rhythms': 'Alpha State Brain Optimization: Escape the Beta Trap & Engage the Neural Idle Frequency | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -145,6 +146,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'The brain is a hydraulic machine — arteries act as pistons, CSF flushes metabolic waste, posture controls pressure. The ONDA hydraulic protocol primes vascular elasticity, gravity, and breath for full nightly purge.',
   'anti-entropy-neural-architecture':
     'Aging is accumulated entropy. The ONDA Anti-Entropy Protocol layers glymphatic clearance, autophagy-sync fasting, and thermal regulation to halt beta-amyloid drift before it crosses the irreversibility threshold.',
+  'idle-state-alpha-rhythms':
+    'Alpha waves (8–12 Hz) are the brain\'s neutral gear — noise-cancelled, energy-efficient, globally coherent. The ONDA idle protocol triggers Alpha manually via visual reset, 0.1 Hz coupling, and digital decoupling.',
 }
 
 export interface RouteMeta {
@@ -754,6 +757,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
     },
   ],
+  'idle-state-alpha-rhythms': [
+    {
+      question: 'What is the Alpha State (8–12 Hz) and why is it the optimal baseline for high performance?',
+      answer:
+        'The Alpha State (8–12 Hz) is the brain\'s "neutral gear" — a state of synchronized, low-noise neural activity where the thalamocortical system is maximally ready to engage any cognitive mode without residual friction from previous states. Alpha dominance indicates high thalamocortical gating efficiency (irrelevant sensory signals filtered), default mode network activation (strategic, integrative thinking), and inter-regional coherence (prefrontal-limbic coordination). Unlike the popular misconception of Alpha as "relaxation," it is the technical prerequisite for flow state entry — the system cannot enter deep focus from High-Beta; it must transit through Alpha first.',
+    },
+    {
+      question: 'What is the Beta Trap and how does it degrade cognitive performance over the workday?',
+      answer:
+        'The Beta Trap is the state of chronic High-Beta entrainment (15–30 Hz) from which the modern high-demand brain cannot exit without deliberate intervention. Sustained stress, continuous digital input, and context switching maintain constant Amygdala-prefrontal competition — suppressing Alpha and keeping the system in reactive threat-evaluation mode. The cognitive costs compound over the workday: High-Beta neural firing consumes up to 3x more glucose than Alpha baseline, depleting prefrontal resources faster and degrading decision quality progressively from morning to evening. The trap closes completely when the inability to return to Idle prevents restorative sleep, starting the next day from an already-depleted baseline.',
+    },
+    {
+      question: 'How does 0.1 Hz resonance breathing shift the brain from Beta to Alpha?',
+      answer:
+        'At 0.1 Hz baroreflex resonance, the heart generates a coherent oscillation that propagates via vagal afferents to the brainstem nucleus tractus solitarius and then to the thalamus. This pathway shifts thalamic firing from High-Beta gating (high vigilance, high filtering against incoming signals) to Alpha-frequency gating (readiness mode, efficient filtering of irrelevant signals). The thalamic shift propagates to the cortex within 2–3 minutes of sustained resonance breathing. HRV and Alpha amplitude are bidirectionally coupled: high HRV predicts high resting Alpha power, and Alpha entrainment (via visual reset or resonance breathing) measurably increases HRV coherence.',
+    },
+  ],
   'anti-entropy-neural-architecture': [
     {
       question: 'What is Neural Drift and how does it relate to neurodegeneration?',
@@ -1273,6 +1293,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                 audience: 'Longevity Researchers, Biohackers, Neuroscientists, High-Performers',
                                 proficiencyLevel: 'Advanced',
                                 educationalLevel: 'Advanced',
+                              }
+                          : slug === 'idle-state-alpha-rhythms'
+                            ? {
+                                keywords: [
+                                  'Alpha Waves Brain Optimization',
+                                  'Neural Idle State',
+                                  'Beta Trap Burnout Prevention',
+                                  '8-12 Hz Brain Performance',
+                                  'Thalamocortical Alpha Gating',
+                                  'Flow State Prerequisites',
+                                  'Cognitive Baseline Optimization',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, High-Performers, Knowledge Workers, Athletes',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
                               }
                             : undefined
       const meta: RouteMeta = {
