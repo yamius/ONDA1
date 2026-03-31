@@ -25,6 +25,14 @@ const article: Article = {
     'focus',
   ],
   introStyle: 'blue',
+  image: '/images/articles/rhythmic-entrainment-system-frequencies.webp',
+  imageAlt:
+    'Glowing blue-violet human silhouette with spinal energy column and synchronized wave frequencies passing through the body. Multiple colored oscillator waves on the left (orange, violet, blue) converge into a single coherent wave. System monitor: MASTER_FREQUENCY 0.1Hz, SYSTEM_ENTRAINMENT PHASE_LOCKED, COHERENCE_COEFFICIENT 0.99, ENERGY_LOSS MINIMUM. ONDA Life rhythmic entrainment visualization.',
+  imageTitle:
+    '[ RHYTHMIC_SYSTEM_ENTRAINMENT ] — Master frequency: 0.1 Hz. System entrainment: phase locked. Coherence coefficient: 0.99. Energy loss: minimum.',
+  imageCaption:
+    '[ SYSTEM_ENTRAINMENT: PHASE_LOCKED ] [ COHERENCE_COEFFICIENT: 0.99 ] [ ENERGY_LOSS: MINIMUM ] — Multiple oscillators. One clock. Zero internal resistance.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Frequencies locked. The harddrive that runs those locked rhythms lives in the spinal cord — understand how CPGs execute the synchronized scripts.',
     link: '/articles/spinal-harddrive-cpg-autonomous-scripts',
