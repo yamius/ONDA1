@@ -105,6 +105,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'quiet-mode-alpha-cortisol-buffer': '5 min 05 sec',
   'spinal-harddrive-cpg-autonomous-scripts': '5 min 20 sec',
   'rhythmic-entrainment-system-frequencies': '5 min 15 sec',
+  'spinal-intelligence-decentralized-control': '5 min 25 sec',
 }
 
 function extractText(node: React.ReactNode): string {

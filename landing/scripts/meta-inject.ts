@@ -70,6 +70,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'quiet-mode-alpha-cortisol-buffer': 'Quiet Mode Protocol: Alpha Rhythms as Cortisol Buffer, Parasympathetic Activation & Stress Recovery | ONDA Life',
   'spinal-harddrive-cpg-autonomous-scripts': 'Spinal Harddrive: Central Pattern Generators, CPG Motor Intelligence & Cognitive Offloading Protocol | ONDA Life',
   'rhythmic-entrainment-system-frequencies': 'Rhythmic Entrainment: 0.1 Hz Master Clock, CPG Synchronization & Locomotor-Respiratory Coupling | ONDA Life',
+  'spinal-intelligence-decentralized-control': 'Spinal Intelligence: Edge Computing Protocol, CPG Autonomy & Proprioceptive Flow for Peak Motor Mastery | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -160,6 +161,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'CPGs are spinal neural circuits that execute complex movement without brain input. The ONDA Harddrive Protocol uses sensory priming, rhythmic entrainment, and eyes-closed drills to free the prefrontal cortex for strategic thought.',
   'rhythmic-entrainment-system-frequencies':
     'Biological oscillators waste energy when out of phase. The ONDA Entrainment Protocol locks breath, heart, CPGs, and brain to a single 0.1 Hz master clock via pacing, locomotor-respiratory coupling, and acoustic entrainment.',
+  'spinal-intelligence-decentralized-control':
+    'The spinal cord is a distributed processor with motor memory and reflex logic. The ONDA Protocol develops edge-computing movement intelligence via unpredictable loading, proprioceptive focus, and Alpha-state triggers.',
 }
 
 export interface RouteMeta {
@@ -767,6 +770,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
       question: 'How quickly do circadian anchors fix disrupted sleep?',
       answer:
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
+    },
+  ],
+  'spinal-intelligence-decentralized-control': [
+    {
+      question: 'What is spinal intelligence and how does the spinal cord function as an independent processor?',
+      answer:
+        'Spinal intelligence refers to the autonomous sensory-motor processing capacity of the spinal cord — its ability to receive sensory input, integrate it locally via spinal interneuron networks, and generate motor output without transmitting data to the brain. The spinal cord contains approximately 100 million neurons and processes reflex arcs entirely within its own circuitry: sensory input enters at the spinal level, is processed by spinal interneurons (including CPG networks), and motor output exits — all within 30–80 milliseconds, before the brain is even aware of the event. The spinal cord also possesses a form of "motor memory" — learned movement adaptations stored in the synaptic weights of spinal interneuron circuits — that can be demonstrated in spinalized animal preparations that retain locomotor patterns after complete brain separation.',
+    },
+    {
+      question: 'What is the Choke Effect and why does thinking about movement cause errors?',
+      answer:
+        'The Choke Effect is the performance degradation that occurs when the prefrontal cortex becomes actively involved in motor execution rather than leaving execution to subcortical and spinal circuits. Prefrontal cortical involvement introduces 150–300ms of additional latency compared to subcortical-spinal execution of the same movement. At high speeds, this latency window is the interval in which injury, error, or failure occurs. The mechanism is straightforward: the prefrontal cortex processes movement information sequentially and deliberately — it is optimized for planning, not for millisecond-timescale reactive control. When it "takes over" from faster circuits, it imposes its processing speed on a system that was operating faster without it. Elite performers under pressure are characterized by lower, not higher, prefrontal activation during execution.',
+    },
+    {
+      question: 'Why does training on unpredictable surfaces improve spinal intelligence more than stable-surface training?',
+      answer:
+        'Stable, predictable training surfaces allow the cortex to pre-plan motor responses rather than react in real-time. When the environment is predictable, the brain runs movement in "open-loop" mode — pre-selecting motor commands based on prior experience rather than responding to current sensory input. Unpredictable surfaces (unstable ground, shifting weights, varied terrain) force the system into "closed-loop" reactive mode: every step or rep introduces a novel perturbation that the spinal CPGs and reflex interneurons must resolve autonomously in real-time. Each unpredictable perturbation is a micro-learning event for the spinal interneuron network — strengthening the synaptic connections that enable faster, more adaptive future responses. Over weeks, this produces measurably denser, faster, and more adaptive spinal reflex patterns: the physiological substrate of reactive resilience.',
     },
   ],
   'rhythmic-entrainment-system-frequencies': [
@@ -1389,6 +1409,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                 audience: 'Biohackers, High-Performers, Knowledge Workers, Athletes',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'spinal-intelligence-decentralized-control'
+                            ? {
+                                keywords: [
+                                  'Spinal Intelligence Edge Computing',
+                                  'CPG Autonomy Decentralized Control',
+                                  'Proprioceptive Flow Motor Learning',
+                                  'Choke Effect Movement Biohacking',
+                                  'Unpredictable Loading Training',
+                                  'Reactive Resilience Protocol',
+                                  'Motor Learning Spinal Cord',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Athletes, High-Performers, Movement Practitioners',
+                                proficiencyLevel: 'Advanced',
+                                educationalLevel: 'Advanced',
                               }
                           : slug === 'rhythmic-entrainment-system-frequencies'
                             ? {
