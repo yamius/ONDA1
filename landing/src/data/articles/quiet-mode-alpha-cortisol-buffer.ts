@@ -25,6 +25,14 @@ const article: Article = {
     'vagus-nerve',
   ],
   introStyle: 'slate',
+  image: '/images/articles/quiet-mode-alpha-cortisol-buffer.webp',
+  imageAlt:
+    'Two glowing neural hemispheres face each other — left hemisphere in orange-red high-Beta stress waves, right hemisphere in calm blue-purple Alpha waves meeting at a central convergence point. BIOLOGICAL_NOISE_CANCELLATION label. System monitor: NEURAL_OSCILLATION 10Hz, SYSTEM_STATUS QUIET_MODE_ACTIVE, CORTISOL_BUFFER ENGAGED, SYMPATHETIC_NOISE CANCELLED. ONDA Life stress recovery visualization.',
+  imageTitle:
+    '[ BIOLOGICAL_NOISE_CANCELLATION ] — Neural oscillation: 10 Hz. System status: quiet mode active. Cortisol buffer: engaged. Sympathetic noise: cancelled.',
+  imageCaption:
+    '[ CORTISOL_BUFFER: ENGAGED ] [ SYMPATHETIC_NOISE: CANCELLED ] — Beta noise meets the Alpha counter-wave. The collision point is where stress ends and recovery begins.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Quiet Mode engaged. Now understand the bridge that Quiet Mode is protecting — the Alpha gateway to flow and insight delivery.',
     link: '/articles/neural-bridge-alpha-flow-gateway',
