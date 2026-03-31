@@ -26,6 +26,14 @@ const article: Article = {
     'neuroplasticity',
   ],
   introStyle: 'indigo',
+  image: '/images/articles/idle-state-alpha-rhythms.webp',
+  imageAlt:
+    'Golden-purple neural network brain with NEURAL_IDLE_STATE label and system monitor showing NEURAL_OSCILLATION 10Hz, SYSTEM_STATUS ACTIVE_CALM, COGNITIVE_NOISE -60dB, FLOW_COHERENCE LOCKED. ONDA Life alpha state brain optimization visualization.',
+  imageTitle:
+    '[ NEURAL_IDLE_STATE ] — Neural oscillation: 10 Hz. System status: active calm. Cognitive noise: −60 dB. Flow coherence: locked.',
+  imageCaption:
+    '[ COGNITIVE_NOISE: −60dB ] [ FLOW_COHERENCE: LOCKED ] — 10 Hz idle locked. The system is ready. Neutral gear engaged.',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Idle state engaged. Now prime the hydraulic substrate that sustains coherence during the recovery window.',
     link: '/articles/baroreflex-01hz-shift',
