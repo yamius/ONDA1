@@ -68,6 +68,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'idle-state-alpha-rhythms': 'Alpha State Brain Optimization: Escape the Beta Trap & Engage the Neural Idle Frequency | ONDA Life',
   'neural-bridge-alpha-flow-gateway': 'Neural Bridge: Alpha-Theta Gateway to Flow State, Insight Delivery & Creative Access | ONDA Life',
   'quiet-mode-alpha-cortisol-buffer': 'Quiet Mode Protocol: Alpha Rhythms as Cortisol Buffer, Parasympathetic Activation & Stress Recovery | ONDA Life',
+  'spinal-harddrive-cpg-autonomous-scripts': 'Spinal Harddrive: Central Pattern Generators, CPG Motor Intelligence & Cognitive Offloading Protocol | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -154,6 +155,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Alpha waves (8–12 Hz) are the network gateway to Theta insight storage and Gamma-bound flow. The ONDA bridge protocol opens cross-frequency coupling via 0.1 Hz resonance, diffused focus, and 90-second system silence.',
   'quiet-mode-alpha-cortisol-buffer':
     'Alpha waves (8–12 Hz) are the brain\'s active noise-cancellation layer — suppressing cortisol, filtering amygdala reactivity, and restoring vagal tone. The ONDA Quiet Mode uses exhale extension, peripheral awareness, and the Alpha-Drop.',
+  'spinal-harddrive-cpg-autonomous-scripts':
+    'CPGs are spinal neural circuits that execute complex movement without brain input. The ONDA Harddrive Protocol uses sensory priming, rhythmic entrainment, and eyes-closed drills to free the prefrontal cortex for strategic thought.',
 }
 
 export interface RouteMeta {
@@ -763,6 +766,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
     },
   ],
+  'spinal-harddrive-cpg-autonomous-scripts': [
+    {
+      question: 'What are Central Pattern Generators (CPGs) and where are they located in the body?',
+      answer:
+        'Central Pattern Generators (CPGs) are neural networks located primarily in the spinal cord — in the lumbar region for locomotion (walking, running) and the cervical region for respiratory and arm movement coordination. They are "half-center oscillator" networks: pairs of mutually inhibitory interneurons that alternate activity to produce rhythmic, coordinated muscular output. CPGs operate autonomously — once the brain issues an "Execute" command, CPGs continue running the movement sequence without requiring continuous descending input. They receive real-time feedback from proprioceptive sensors in muscles (muscle spindles), tendons (Golgi tendon organs), and joints (mechanoreceptors), adjusting their output to terrain conditions in 30–80 milliseconds — far faster than the conscious reaction window of 200–400ms.',
+    },
+    {
+      question: 'Why does conscious motor control (micromanagement) cause fatigue and discoordination?',
+      answer:
+        'The prefrontal cortex — the seat of conscious motor control — is the most metabolically expensive neural tissue, consuming 20% of brain energy while representing 2% of brain mass. CPG output is rhythmically synchronized via gap junctions and chemical synapses calibrated by evolutionary refinement. When cortical override signals arrive, they are asynchronous — they disrupt the timing of the spinal oscillator network and introduce coordination errors, compensatory muscle tension, and accelerated fatigue. Skilled movers (elite athletes, dancers) are characterized not by greater cortical motor control, but by greater cortical withdrawal from it: they have better-calibrated CPGs and better-developed inhibition of the micromanagement reflex.',
+    },
+    {
+      question: 'How does rhythmic entrainment synchronize CPGs and why does music improve endurance?',
+      answer:
+        'CPGs are oscillator networks that entrain to external rhythmic inputs via the auditory-motor pathway — a direct neural connection between auditory cortex and spinal motor circuits, used clinically in gait rehabilitation for stroke and Parkinson\'s patients. External rhythm provides a phase-locking signal that synchronizes CPG oscillators and shifts them toward maximum efficiency mode — where energy consumption per unit of movement output is minimized. This is the mechanism behind the well-documented ergogenic (performance-enhancing) effect of music during endurance exercise: it is not motivational in origin, it is a CPG synchronization tool. ONDA breathing at 0.1 Hz provides a complementary entrainment signal via the respiratory CPG, which cross-couples with locomotor CPGs and cardiac rhythm.',
+    },
+  ],
   'quiet-mode-alpha-cortisol-buffer': [
     {
       question: 'How do Alpha waves (8–12 Hz) actively suppress cortisol and sympathetic arousal?',
@@ -1347,6 +1367,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                   'ONDA Protocol',
                                 ],
                                 audience: 'Biohackers, High-Performers, Knowledge Workers, Athletes',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'spinal-harddrive-cpg-autonomous-scripts'
+                            ? {
+                                keywords: [
+                                  'Central Pattern Generators CPG',
+                                  'Spinal Cord Motor Intelligence',
+                                  'Cognitive Offloading Movement',
+                                  'Rhythmic Entrainment CPG Sync',
+                                  'Proprioception Sensory Priming',
+                                  'Autonomous Movement Protocol',
+                                  'Neural Efficiency Biohacking',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Athletes, High-Performers, Movement Practitioners',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }
