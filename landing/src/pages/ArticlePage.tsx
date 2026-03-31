@@ -101,6 +101,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'neural-hydraulics-csf-flow': '5 min 15 sec',
   'anti-entropy-neural-architecture': '5 min 30 sec',
   'idle-state-alpha-rhythms': '5 min 00 sec',
+  'neural-bridge-alpha-flow-gateway': '5 min 10 sec',
 }
 
 function extractText(node: React.ReactNode): string {

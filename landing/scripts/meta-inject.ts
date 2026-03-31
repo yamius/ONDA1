@@ -66,6 +66,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'neural-hydraulics-csf-flow': 'Neural Hydraulics: Engineer CSF Flow, Glymphatic Purge & Mental Clarity via Brain Fluid Dynamics | ONDA Life',
   'anti-entropy-neural-architecture': 'Anti-Entropy Brain Protocol: Prevent Neural Drift, Clear Amyloid & Protect Neural Architecture | ONDA Life',
   'idle-state-alpha-rhythms': 'Alpha State Brain Optimization: Escape the Beta Trap & Engage the Neural Idle Frequency | ONDA Life',
+  'neural-bridge-alpha-flow-gateway': 'Neural Bridge: Alpha-Theta Gateway to Flow State, Insight Delivery & Creative Access | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -148,6 +149,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Aging is accumulated entropy. The ONDA Anti-Entropy Protocol layers glymphatic clearance, autophagy-sync fasting, and thermal regulation to halt beta-amyloid drift before it crosses the irreversibility threshold.',
   'idle-state-alpha-rhythms':
     'Alpha waves (8–12 Hz) are the brain\'s neutral gear — noise-cancelled, energy-efficient, globally coherent. The ONDA idle protocol triggers Alpha manually via visual reset, 0.1 Hz coupling, and digital decoupling.',
+  'neural-bridge-alpha-flow-gateway':
+    'Alpha waves (8–12 Hz) are the network gateway to Theta insight storage and Gamma-bound flow. The ONDA bridge protocol opens cross-frequency coupling via 0.1 Hz resonance, diffused focus, and 90-second system silence.',
 }
 
 export interface RouteMeta {
@@ -757,6 +760,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
     },
   ],
+  'neural-bridge-alpha-flow-gateway': [
+    {
+      question: 'What is the Alpha-Theta bridge and how does it enable creative insights?',
+      answer:
+        'The Alpha-Theta bridge is the transitional brain state at the border of Alpha (8–12 Hz) and Theta (4–8 Hz) where the conscious prefrontal workspace becomes permeable to subconscious Theta-stored material — deep memory traces, non-linear associations, and emotional pattern networks. In this state, the prefrontal "censor" that normally filters out divergent ideas partially relaxes, allowing Theta content to surface into Alpha-range awareness. Insights experienced as "Eureka moments" are this bridging event made conscious — the result of Alpha-Gamma coupling propagating Theta-generated associations into prefrontal attention.',
+    },
+    {
+      question: 'What is cross-frequency coupling and why does Alpha act as a carrier for Gamma waves?',
+      answer:
+        'Cross-frequency coupling (CFC) is the mechanism by which oscillations at different frequencies modulate each other. In the neural bridge context, Alpha waves (8–12 Hz) act as the phase carrier for Gamma bursts (30–80 Hz) — a phenomenon called phase-amplitude coupling. Alpha phase determines when Gamma amplitude is high (insight windows) and when it is suppressed. Without a stable Alpha carrier, Gamma bursts occur at random phases and are not coordinated across brain regions — insights are generated but not broadcast to the conscious workspace. A stable Alpha bridge synchronizes the timing of Gamma insight events with prefrontal attention windows, making them accessible.',
+    },
+    {
+      question: 'How does the diffused focus technique open the neural bridge faster than relaxation?',
+      answer:
+        'Narrow screen-focus activates the dorsal attention network and frontal eye fields in High-Beta mode — a target-seeking, threat-scanning posture that actively suppresses Alpha and the default mode network. Switching to panoramic, diffused vision (soft gaze, full peripheral awareness) shifts activation to the ventral attention network and default mode network, which are associated with Alpha dominance and creative synthesis. This visual-posture switch is a direct hardware trigger: it acts on the alpha generators in the occipital cortex within seconds via visuomotor feedback loops — bypassing the slow, top-down cognitive effort required to "try to relax." The bridge opens faster via the eyes than via conscious intention.',
+    },
+  ],
   'idle-state-alpha-rhythms': [
     {
       question: 'What is the Alpha State (8–12 Hz) and why is it the optimal baseline for high performance?',
@@ -1307,6 +1327,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                   'ONDA Protocol',
                                 ],
                                 audience: 'Biohackers, High-Performers, Knowledge Workers, Athletes',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'neural-bridge-alpha-flow-gateway'
+                            ? {
+                                keywords: [
+                                  'Alpha-Theta Bridge Flow State',
+                                  'Neural Gateway Creativity',
+                                  'Cross-Frequency Coupling Brain',
+                                  'Alpha Gamma Coupling Insights',
+                                  'Flow State Biohacking',
+                                  'Diffused Focus Technique',
+                                  'Insight Delivery Protocol',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Creatives, High-Performers, Knowledge Workers',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }
