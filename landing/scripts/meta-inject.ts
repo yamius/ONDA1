@@ -71,6 +71,7 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'spinal-harddrive-cpg-autonomous-scripts': 'Spinal Harddrive: Central Pattern Generators, CPG Motor Intelligence & Cognitive Offloading Protocol | ONDA Life',
   'rhythmic-entrainment-system-frequencies': 'Rhythmic Entrainment: 0.1 Hz Master Clock, CPG Synchronization & Locomotor-Respiratory Coupling | ONDA Life',
   'spinal-intelligence-decentralized-control': 'Spinal Intelligence: Edge Computing Protocol, CPG Autonomy & Proprioceptive Flow for Peak Motor Mastery | ONDA Life',
+  'adrenal-governor-thermal-runaway': 'Adrenal Governor Protocol: Cortisol Precision, HRV Stress Limiter & Thermal Runaway Prevention | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -163,6 +164,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Biological oscillators waste energy when out of phase. The ONDA Entrainment Protocol locks breath, heart, CPGs, and brain to a single 0.1 Hz master clock via pacing, locomotor-respiratory coupling, and acoustic entrainment.',
   'spinal-intelligence-decentralized-control':
     'The spinal cord is a distributed processor with motor memory and reflex logic. The ONDA Protocol develops edge-computing movement intelligence via unpredictable loading, proprioceptive focus, and Alpha-state triggers.',
+  'adrenal-governor-thermal-runaway':
+    'The adrenals inject cortisol on command — the problem is the Beta-mode brain keeps signaling threat. The ONDA Governor uses HRV thresholding, Alpha-buffering, and anticipatory reset to block Redline entry.',
 }
 
 export interface RouteMeta {
@@ -770,6 +773,23 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
       question: 'How quickly do circadian anchors fix disrupted sleep?',
       answer:
         'Consistent application of all three ancestral anchors — Photonic Trigger, Thermal Reset, and Metabolic Gate — typically produces measurable improvement in sleep onset latency and HRV within 5–7 days. Full resynchronization of the biological clock after severe jet lag or shift work takes 10–14 days of consistent anchor implementation.',
+    },
+  ],
+  'adrenal-governor-thermal-runaway': [
+    {
+      question: 'What is the Adrenal Governor and how does it intercept stress signals before cortisol release?',
+      answer:
+        'The Adrenal Governor is the ONDA framework\'s name for the neural filtering layer — primarily the prefrontal cortex exerting inhibitory control over the amygdala-HPA axis loop — that determines whether an incoming stimulus warrants a cortisol and adrenaline injection or constitutes informational noise that should be filtered. In a well-calibrated system operating in Alpha state, the prefrontal cortex\'s inhibitory projection to the amygdala is strong enough to evaluate stress signals before they propagate to the hypothalamus and trigger CRH release. In chronic Beta-mode, this inhibitory capacity is degraded — the amygdala fires unfiltered, the hypothalamus receives the signal, and the adrenals inject. The Governor protocol restores the prefrontal filtering capacity through HRV monitoring, Alpha-state maintenance, and anticipatory priming.',
+    },
+    {
+      question: 'What is the difference between Performance Spiking and Redline cortisol output?',
+      answer:
+        'Performance Spiking is the appropriate, time-limited elevation of cortisol and adrenaline in response to a genuine challenge — a deadline, athletic effort, or acute stressor. The spike is sharp, purposeful, and followed by a rapid recovery as parasympathetic tone reasserts itself. Redline is the pathological state where cortisol is elevated continuously, not in response to specific challenges but as a default background state driven by chronic Beta-mode neural entrainment. The distinction is not in the cortisol level at peak, but in the baseline between peaks and the presence or absence of recovery. Redline is characterized by an elevated floor — basal cortisol never returns to the low range — rather than by higher individual peaks. This elevated floor is what drives receptor desensitization, hippocampal damage, and immune suppression.',
+    },
+    {
+      question: 'Why does morning HRV measurement serve as the most reliable daily Adrenal Governor indicator?',
+      answer:
+        'Morning HRV — measured immediately after waking, before leaving the bed, before caffeine or screen exposure — reflects the overnight recovery state of the autonomic nervous system, free from acute stressors or deliberate interventions. It is the closest available proxy to the baseline autonomous tone of the HPA axis and the sympathovagal balance that will govern the day\'s stress response capacity. A drop below personal baseline HRV indicates that the previous day\'s load exceeded the system\'s recovery capacity — the adrenal-cardiac-neural system is still compensating. Measuring in this window provides a Governor Alert before any new load is added. Post-exercise or midday HRV measurements are more variable and reflect acute conditions rather than systemic recovery state.',
     },
   ],
   'spinal-intelligence-decentralized-control': [
@@ -1407,6 +1427,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                   'ONDA Protocol',
                                 ],
                                 audience: 'Biohackers, High-Performers, Knowledge Workers, Athletes',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'adrenal-governor-thermal-runaway'
+                            ? {
+                                keywords: [
+                                  'Adrenal Fatigue Cortisol Precision',
+                                  'HRV Stress Limiter Protocol',
+                                  'Endocrine Architecture Biohacking',
+                                  'Cortisol Receptor Desensitization',
+                                  'Thermal Runaway Prevention',
+                                  'Anticipatory Reset Breathing',
+                                  'Adrenal Health Optimization',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, High-Performers, Knowledge Workers, Burnout Recovery',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }

@@ -106,6 +106,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'spinal-harddrive-cpg-autonomous-scripts': '5 min 20 sec',
   'rhythmic-entrainment-system-frequencies': '5 min 15 sec',
   'spinal-intelligence-decentralized-control': '5 min 25 sec',
+  'adrenal-governor-thermal-runaway': '5 min 30 sec',
 }
 
 function extractText(node: React.ReactNode): string {
