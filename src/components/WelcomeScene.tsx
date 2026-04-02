@@ -3,7 +3,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Environment } from '@react-three/drei'
 
 function PanoramaControls() {
-  const { camera, gl } = useThree()
+  const { camera } = useThree()
   const isDragging = useRef(false)
   const lastX = useRef(0)
   const lastY = useRef(0)
@@ -11,13 +11,10 @@ function PanoramaControls() {
   const rotX = useRef(0)
 
   useEffect(() => {
-    const el = gl.domElement
-
     const onPointerDown = (e: PointerEvent) => {
       isDragging.current = true
       lastX.current = e.clientX
       lastY.current = e.clientY
-      el.setPointerCapture(e.pointerId)
     }
 
     const onPointerMove = (e: PointerEvent) => {
@@ -33,22 +30,22 @@ function PanoramaControls() {
 
     const onPointerUp = () => { isDragging.current = false }
 
-    el.addEventListener('pointerdown', onPointerDown)
-    el.addEventListener('pointermove', onPointerMove)
-    el.addEventListener('pointerup', onPointerUp)
-    el.addEventListener('pointerleave', onPointerUp)
+    window.addEventListener('pointerdown', onPointerDown)
+    window.addEventListener('pointermove', onPointerMove)
+    window.addEventListener('pointerup', onPointerUp)
+    window.addEventListener('pointercancel', onPointerUp)
 
     return () => {
-      el.removeEventListener('pointerdown', onPointerDown)
-      el.removeEventListener('pointermove', onPointerMove)
-      el.removeEventListener('pointerup', onPointerUp)
-      el.removeEventListener('pointerleave', onPointerUp)
+      window.removeEventListener('pointerdown', onPointerDown)
+      window.removeEventListener('pointermove', onPointerMove)
+      window.removeEventListener('pointerup', onPointerUp)
+      window.removeEventListener('pointercancel', onPointerUp)
     }
-  }, [gl.domElement])
+  }, [])
 
   useFrame((_, delta) => {
     if (!isDragging.current) {
-      rotY.current -= delta * 0.06
+      rotY.current -= delta * 0.04
     }
     camera.rotation.order = 'YXZ'
     camera.rotation.y = rotY.current
