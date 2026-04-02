@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
-import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth } from 'lucide-react';
+import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth, Minimize2, Maximize2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
@@ -121,6 +121,7 @@ const OndaLevel1 = () => {
   const [practiceState, setPracticeState] = useState('intro');
   const [practiceTime, setPracticeTime] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [isMinimalMode, setIsMinimalMode] = useState(false);
   const [qualityScore, setQualityScore] = useState(0);
   const [practiceRating, setPracticeRating] = useState(0);
   const [showJournal, setShowJournal] = useState(false);
@@ -2000,6 +2001,7 @@ const OndaLevel1 = () => {
   };
 
   const finishPractice = async () => {
+    setIsMinimalMode(false);
     const bonus = calculateBonus();
     const baseEarned = Math.floor((activePractice.maxQnt * qualityScore) / 100);
     const earnedQnt = Math.floor(baseEarned * (1 + bonus / 100));
@@ -2177,6 +2179,7 @@ const OndaLevel1 = () => {
   };
 
   const exitPractice = async () => {
+    setIsMinimalMode(false);
     const practiceId = activePractice?.id;
     const practiceName = circuits.flatMap(c => c.practices).find(p => p.id === activePractice?.id)?.name || '';
     
@@ -3538,9 +3541,9 @@ const OndaLevel1 = () => {
         )}
 
         {practiceState === 'active' && (
-          <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-3 sm:p-6">
+          <div className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 ${isMinimalMode ? 'justify-end pb-8' : 'justify-center'}`}>
             {/* Компактный круг с эмодзи и таймером */}
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-1 sm:mt-3">
+            {!isMinimalMode && (<div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-1 sm:mt-3">
               {/* Круговой прогресс */}
               <svg className="w-full h-full transform -rotate-90" viewBox="0 0 256 256">
                 <circle
@@ -3595,9 +3598,9 @@ const OndaLevel1 = () => {
                   {formatTime(practiceTime)}
                 </div>
               </div>
-            </div>
+            </div>)}
 
-            <div className="w-full max-w-md mb-6 sm:mb-12 px-3 sm:px-0">
+            {!isMinimalMode && (<div className="w-full max-w-md mb-6 sm:mb-12 px-3 sm:px-0">
               <div className="flex justify-between text-sm sm:text-base mb-2 sm:mb-3">
                 <span className="font-semibold">{t('practices.quality')}</span>
                 <span className="font-bold text-xl sm:text-2xl">{safeToFixed(qualityScore, 0)}%</span>
@@ -3620,10 +3623,10 @@ const OndaLevel1 = () => {
                 <span>{t('labels.time_label')}: {safeToFixed((practiceTime / activePractice.targetTime) * 100, 0)}%</span>
                 <span>{t('labels.energy')}: {safeToFixed(vitalsData.energy, 0)}%</span>
               </div>
-            </div>
+            </div>)}
 
             {activePractice.guidingTexts && activePractice.guidingTexts.length > 0 && (
-              <div className="w-full max-w-md mb-6 sm:mb-8 px-3 sm:px-0">
+              <div className={`w-full max-w-md px-3 sm:px-0 ${isMinimalMode ? 'mb-4' : 'mb-6 sm:mb-8'}`}>
                 <div className="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-white/20 shadow-xl h-24 sm:h-28 flex items-center justify-center overflow-hidden">
                   <p
                     className={`text-sm sm:text-base text-center italic leading-snug text-white/90 whitespace-pre-line transition-all duration-1000 ${
@@ -3636,7 +3639,7 @@ const OndaLevel1 = () => {
               </div>
             )}
 
-            <div className="grid grid-cols-2 gap-3 sm:gap-6 mb-6 sm:mb-12 px-3 sm:px-0 w-full max-w-md">
+            {!isMinimalMode && (<div className="grid grid-cols-2 gap-3 sm:gap-6 mb-6 sm:mb-12 px-3 sm:px-0 w-full max-w-md">
               <div className="bg-black/30 backdrop-blur-md rounded-2xl p-3 sm:p-6 text-center border border-red-400/30 shadow-xl">
                 <Activity className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-red-400" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{safeToFixed(vitalsData.stress, 0)}%</div>
@@ -3647,7 +3650,7 @@ const OndaLevel1 = () => {
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{safeToFixed(vitalsData.energy, 0)}%</div>
                 <div className="text-xs sm:text-sm text-gray-300">{t('labels.energy')}</div>
               </div>
-            </div>
+            </div>)}
 
             <div className="flex gap-3 sm:gap-6">
               <button
@@ -3661,6 +3664,14 @@ const OndaLevel1 = () => {
                 className="bg-emerald-500/40 hover:bg-emerald-500/60 backdrop-blur-md px-6 py-3 sm:px-10 sm:py-5 rounded-full font-bold text-sm sm:text-lg transition-all hover:scale-105 shadow-xl border border-emerald-400/50"
               >
                 {t('practices.end_practice')}
+              </button>
+              <button
+                onClick={() => setIsMinimalMode(!isMinimalMode)}
+                className="bg-white/30 hover:bg-white/40 backdrop-blur-md p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border border-white/30"
+              >
+                {isMinimalMode
+                  ? <Maximize2 className="w-6 h-6 sm:w-8 sm:h-8" />
+                  : <Minimize2 className="w-6 h-6 sm:w-8 sm:h-8" />}
               </button>
             </div>
           </div>
