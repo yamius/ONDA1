@@ -3458,7 +3458,9 @@ const OndaLevel1 = () => {
           />
         )}
         {practiceState === 'intro' && activePractice.id === 'p1-1' ? (
-          <WelcomeScene />
+          <WelcomeScene files="/hdr/night.hdr" />
+        ) : practiceState === 'active' && activePractice.id === 'p1-1' ? (
+          <WelcomeScene files="/hdr/day.jpg" />
         ) : (
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDuration: '3s' }} />

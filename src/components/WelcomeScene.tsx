@@ -62,7 +62,11 @@ function PanoramaControls() {
   return null
 }
 
-export default function WelcomeScene() {
+interface WelcomeSceneProps {
+  files: string
+}
+
+export default function WelcomeScene({ files }: WelcomeSceneProps) {
   return (
     <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }}>
       <Canvas
@@ -71,7 +75,7 @@ export default function WelcomeScene() {
         frameloop="always"
       >
         <Suspense fallback={null}>
-          <Environment files="/hdr/night.hdr" background />
+          <Environment files={files} background />
         </Suspense>
         <PanoramaControls />
       </Canvas>
