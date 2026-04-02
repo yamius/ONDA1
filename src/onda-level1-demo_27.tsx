@@ -3458,7 +3458,7 @@ const OndaLevel1 = () => {
           />
         )}
         {practiceState === 'intro' && activePractice.id === 'p1-1' ? (
-          <WelcomeScene files="/hdr/night.hdr" />
+          <WelcomeScene files="/hdr/night.hdr" night />
         ) : practiceState === 'active' && activePractice.id === 'p1-1' ? (
           <WelcomeScene files="/hdr/day.jpg" />
         ) : (
