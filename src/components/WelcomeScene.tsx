@@ -1,6 +1,62 @@
-import { Suspense } from 'react'
-import { Canvas } from '@react-three/fiber'
-import { Environment, OrbitControls } from '@react-three/drei'
+import { Suspense, useRef, useEffect } from 'react'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { Environment } from '@react-three/drei'
+
+function PanoramaControls() {
+  const { camera, gl } = useThree()
+  const isDragging = useRef(false)
+  const lastX = useRef(0)
+  const lastY = useRef(0)
+  const rotY = useRef(0)
+  const rotX = useRef(0)
+
+  useEffect(() => {
+    const el = gl.domElement
+
+    const onPointerDown = (e: PointerEvent) => {
+      isDragging.current = true
+      lastX.current = e.clientX
+      lastY.current = e.clientY
+      el.setPointerCapture(e.pointerId)
+    }
+
+    const onPointerMove = (e: PointerEvent) => {
+      if (!isDragging.current) return
+      const dx = e.clientX - lastX.current
+      const dy = e.clientY - lastY.current
+      rotY.current -= dx * 0.003
+      rotX.current -= dy * 0.003
+      rotX.current = Math.max(-0.6, Math.min(0.6, rotX.current))
+      lastX.current = e.clientX
+      lastY.current = e.clientY
+    }
+
+    const onPointerUp = () => { isDragging.current = false }
+
+    el.addEventListener('pointerdown', onPointerDown)
+    el.addEventListener('pointermove', onPointerMove)
+    el.addEventListener('pointerup', onPointerUp)
+    el.addEventListener('pointerleave', onPointerUp)
+
+    return () => {
+      el.removeEventListener('pointerdown', onPointerDown)
+      el.removeEventListener('pointermove', onPointerMove)
+      el.removeEventListener('pointerup', onPointerUp)
+      el.removeEventListener('pointerleave', onPointerUp)
+    }
+  }, [gl.domElement])
+
+  useFrame((_, delta) => {
+    if (!isDragging.current) {
+      rotY.current -= delta * 0.06
+    }
+    camera.rotation.order = 'YXZ'
+    camera.rotation.y = rotY.current
+    camera.rotation.x = rotX.current
+  })
+
+  return null
+}
 
 export default function WelcomeScene() {
   return (
@@ -11,23 +67,9 @@ export default function WelcomeScene() {
         frameloop="always"
       >
         <Suspense fallback={null}>
-          <Environment
-            files="/hdr/night.hdr"
-            background
-          />
+          <Environment files="/hdr/night.hdr" background />
         </Suspense>
-        <OrbitControls
-          enableZoom={false}
-          enablePan={false}
-          autoRotate
-          autoRotateSpeed={0.3}
-          enableDamping
-          dampingFactor={0.05}
-          rotateSpeed={-0.4}
-          minPolarAngle={Math.PI * 0.3}
-          maxPolarAngle={Math.PI * 0.7}
-          makeDefault
-        />
+        <PanoramaControls />
       </Canvas>
     </div>
   )
