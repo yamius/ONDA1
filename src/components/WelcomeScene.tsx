@@ -9,15 +9,18 @@ function PanoramaControls() {
   const lastY = useRef(0)
   const rotY = useRef(0)
   const rotX = useRef(0)
+  const lastActivityTime = useRef(Date.now())
 
   useEffect(() => {
     const onPointerDown = (e: PointerEvent) => {
       isDragging.current = true
       lastX.current = e.clientX
       lastY.current = e.clientY
+      lastActivityTime.current = Date.now()
     }
 
     const onPointerMove = (e: PointerEvent) => {
+      lastActivityTime.current = Date.now()
       if (!isDragging.current) return
       const dx = e.clientX - lastX.current
       const dy = e.clientY - lastY.current
@@ -28,7 +31,10 @@ function PanoramaControls() {
       lastY.current = e.clientY
     }
 
-    const onPointerUp = () => { isDragging.current = false }
+    const onPointerUp = () => {
+      isDragging.current = false
+      lastActivityTime.current = Date.now()
+    }
 
     window.addEventListener('pointerdown', onPointerDown)
     window.addEventListener('pointermove', onPointerMove)
@@ -44,8 +50,9 @@ function PanoramaControls() {
   }, [])
 
   useFrame((_, delta) => {
-    if (!isDragging.current) {
-      rotY.current -= delta * 0.04
+    const idleSeconds = (Date.now() - lastActivityTime.current) / 1000
+    if (!isDragging.current && idleSeconds >= 60) {
+      rotY.current -= delta * 0.02
     }
     camera.rotation.order = 'YXZ'
     camera.rotation.y = rotY.current
