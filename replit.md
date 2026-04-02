@@ -151,3 +151,24 @@ Preferred communication style: Simple, everyday language.
 | 4 | `landing/scripts/meta-inject.ts` | `ARTICLE_SEO_TITLES`, `ARTICLE_SEO_DESCRIPTIONS`, `techArticleExtras`, `FAQ_SCHEMA` |
 | 5 | `landing/public/images/articles/` | Картинка `.png` + `.webp` |
 | 6 | `cd landing && npm run build` | Пересборка + пререндер |
+
+---
+
+## Debug Tools
+
+### DebugMonitor (`src/components/DebugMonitor.tsx`)
+Плавающая панель логов приложения. Перехватывает `console.log/warn/error`, показывает build-инфо (номер сборки, commit hash, branch).
+
+**Скрыт по умолчанию.** Включается через `localStorage`:
+```js
+localStorage.setItem('debugMode', 'true'); location.reload();
+```
+Выключается: `localStorage.removeItem('debugMode'); location.reload();`
+
+Рендерится дважды в `src/onda-level1-demo_27.tsx`:
+- Строка ~2828 — во время активной практики
+- Строка ~4317 — на главном экране
+
+### Debug Banner
+Строка `🔧 DEBUG: ...` вверху экрана (fixed top, z-200). Показывает `debugInfo` и кнопку «Test Sentry».  
+Тоже скрыт — завязан на `localStorage.debugMode === 'true'`. Находится в `src/onda-level1-demo_27.tsx` ~строка 4326.

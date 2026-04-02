@@ -4320,16 +4320,18 @@ const OndaLevel1 = () => {
         branchName={import.meta.env.VITE_BRANCH_NAME}
       />
 
-      {/* DEBUG: Visible Debug Banner */}
-      <div className="fixed top-0 left-0 right-0 z-[200] bg-black/90 text-white text-xs px-3 py-2 text-center font-mono">
-        🔧 DEBUG: {debugInfo}
-        <button
-          onClick={() => { Sentry.captureException(new Error('My first Sentry error!')); alert('Sentry error sent!'); }}
-          className="ml-3 px-2 py-0.5 bg-red-600 rounded text-white text-xs font-bold"
-        >
-          Test Sentry
-        </button>
-      </div>
+      {/* DEBUG: Visible Debug Banner — скрыт, включить через localStorage.debugMode='true' */}
+      {localStorage.getItem('debugMode') === 'true' && (
+        <div className="fixed top-0 left-0 right-0 z-[200] bg-black/90 text-white text-xs px-3 py-2 text-center font-mono">
+          🔧 DEBUG: {debugInfo}
+          <button
+            onClick={() => { Sentry.captureException(new Error('My first Sentry error!')); alert('Sentry error sent!'); }}
+            className="ml-3 px-2 py-0.5 bg-red-600 rounded text-white text-xs font-bold"
+          >
+            Test Sentry
+          </button>
+        </div>
+      )}
 
       {/* Плавающая кнопка гамбургер меню */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
