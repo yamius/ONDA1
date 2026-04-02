@@ -51,7 +51,7 @@ function PanoramaControls() {
 
   useFrame((_, delta) => {
     const idleSeconds = (Date.now() - lastActivityTime.current) / 1000
-    if (!isDragging.current && idleSeconds >= 60) {
+    if (!isDragging.current && idleSeconds >= 4) {
       rotY.current -= delta * 0.02
     }
     camera.rotation.order = 'YXZ'
