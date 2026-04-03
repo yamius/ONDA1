@@ -96,6 +96,10 @@ platform :ios do
   lane :beta do
     # Setup code signing with Match using API Key (no password needed)
     
+    # Clean up auth value (remove any trailing newlines/spaces that break git header)
+    git_auth = ENV['MATCH_GIT_BASIC_AUTHORIZATION']&.strip
+    UI.message("Match git_basic_authorization length: #{git_auth&.length || 0}")
+    
     # Match for iOS app
     match(
       type: "appstore",
@@ -104,7 +108,7 @@ platform :ios do
       readonly: false,
       force: true,
       force_for_new_devices: true,
-      git_basic_authorization: ENV['MATCH_GIT_BASIC_AUTHORIZATION'],
+      git_basic_authorization: git_auth,
       api_key_path: nil,
       keychain_name: ENV['CI'] ? "build.keychain" : nil,
       keychain_password: ENV['CI'] ? "" : nil
@@ -118,7 +122,7 @@ platform :ios do
       readonly: false,
       force: true,
       force_for_new_devices: true,
-      git_basic_authorization: ENV['MATCH_GIT_BASIC_AUTHORIZATION'],
+      git_basic_authorization: git_auth,
       api_key_path: nil,
       keychain_name: ENV['CI'] ? "build.keychain" : nil,
       keychain_password: ENV['CI'] ? "" : nil

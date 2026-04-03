@@ -122,6 +122,52 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions"
 
+      - name: Diagnose Match Git Access
+        run: |
+          echo "=== Checking MATCH_GIT_URL ==="
+          if [ -z "$MATCH_GIT_URL" ]; then
+            echo "ERROR: MATCH_GIT_URL is EMPTY or not set!"
+            exit 1
+          else
+            echo "MATCH_GIT_URL is set (length: ${#MATCH_GIT_URL})"
+          fi
+          
+          echo "=== Checking MATCH_GIT_BASIC_AUTHORIZATION ==="
+          if [ -z "$MATCH_GIT_BASIC_AUTHORIZATION" ]; then
+            echo "ERROR: MATCH_GIT_BASIC_AUTHORIZATION is EMPTY or not set!"
+            echo "Generate it with: echo -n 'github_username:ghp_YOUR_TOKEN' | base64"
+            exit 1
+          else
+            echo "MATCH_GIT_BASIC_AUTHORIZATION is set (length: ${#MATCH_GIT_BASIC_AUTHORIZATION})"
+            # Decode and check format (only show username, not token)
+            DECODED=$(echo "$MATCH_GIT_BASIC_AUTHORIZATION" | base64 -d 2>/dev/null || echo "DECODE_FAILED")
+            if [[ "$DECODED" == "DECODE_FAILED" ]]; then
+              echo "ERROR: MATCH_GIT_BASIC_AUTHORIZATION is not valid base64!"
+              echo "Generate it with: echo -n 'github_username:ghp_YOUR_TOKEN' | base64"
+              exit 1
+            fi
+            USERNAME=$(echo "$DECODED" | cut -d: -f1)
+            echo "Decoded username: $USERNAME"
+            HAS_COLON=$(echo "$DECODED" | grep -c ":" || true)
+            if [ "$HAS_COLON" -eq 0 ]; then
+              echo "ERROR: Decoded value has no colon — format must be 'username:token'"
+              exit 1
+            fi
+          fi
+          
+          echo "=== Testing git access to certificates repo ==="
+          AUTH_HEADER="Authorization: Basic $MATCH_GIT_BASIC_AUTHORIZATION"
+          if git ls-remote -h "$MATCH_GIT_URL" -c "http.extraheader=$AUTH_HEADER" HEAD 2>&1; then
+            echo "SUCCESS: Can access certificates repository!"
+          else
+            echo "ERROR: Cannot access certificates repository!"
+            echo "Check that: 1) The repo exists, 2) The token has 'repo' scope, 3) The token is not expired"
+            exit 1
+          fi
+        env:
+          MATCH_GIT_URL: ${{ secrets.MATCH_GIT_URL }}
+          MATCH_GIT_BASIC_AUTHORIZATION: ${{ secrets.MATCH_GIT_BASIC_AUTHORIZATION }}
+
       - name: Unlock Keychain for codesigning
         run: |
           security create-keychain -p "" build.keychain
