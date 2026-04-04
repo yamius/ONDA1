@@ -129,8 +129,8 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
             backgroundImage: `url(${previewUrl})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'blur(20px)',
-            transform: 'scale(1.08)',
+            filter: 'blur(50px)',
+            transform: 'scale(1.15)',
             opacity: loaded ? 0 : 1,
             transition: 'opacity 2s ease-in-out',
           }}
