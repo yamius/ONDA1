@@ -140,12 +140,12 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
   }, [])
 
   return (
-    <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }}>
+    <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0, overflow: 'hidden' }}>
       {hasPreview && (
-        <div className="absolute inset-0" style={{ pointerEvents: 'none' }}>
+        <div className="absolute inset-0" style={{ pointerEvents: 'none', overflow: 'hidden' }}>
           <Canvas
             camera={CANVAS_CAMERA}
-            style={{ width: '100%', height: '100%' }}
+            style={{ display: 'block', width: '100%', height: '100%' }}
             frameloop="always"
             gl={CANVAS_GL}
           >
@@ -159,13 +159,14 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
       <div
         className="absolute inset-0"
         style={{
+          overflow: 'hidden',
           opacity: hasPreview && !fullReady ? 0 : 1,
           transition: hasPreview ? 'opacity 2000ms ease-in-out' : 'none',
         }}
       >
         <Canvas
           camera={CANVAS_CAMERA}
-          style={{ width: '100%', height: '100%' }}
+          style={{ display: 'block', width: '100%', height: '100%' }}
           frameloop="always"
           gl={CANVAS_GL}
         >
