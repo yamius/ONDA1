@@ -97,7 +97,7 @@ function CleanEnvironment({ url, onReady, addLog }: CleanEnvironmentProps) {
   }, [gl, addLog])
 
   const texture = useLoader(EXRLoader, url, (loader: EXRLoader) => {
-    loader.setDataType(THREE.FloatType)
+    loader.setDataType(THREE.HalfFloatType)
     addLog?.(`fetching EXR...`)
   }) as THREE.DataTexture
 
@@ -106,22 +106,15 @@ function CleanEnvironment({ url, onReady, addLog }: CleanEnvironmentProps) {
 
   useEffect(() => {
     try {
-      const data = texture.image?.data as Float32Array | null
-      addLog?.(`EXR loaded: ${texture.image?.width}x${texture.image?.height}, data: ${data ? data.length : 'null'}`)
-
-      if (data) {
-        for (let i = 0; i < data.length; i++) {
-          const v = data[i]
-          if (isNaN(v) || !isFinite(v) || v < 0) data[i] = 1.0
-        }
-      }
+      const img = texture.image
+      addLog?.(`EXR loaded: ${img?.width}x${img?.height}, type: HalfFloat`)
 
       texture.mapping = THREE.EquirectangularReflectionMapping
       texture.colorSpace = THREE.LinearSRGBColorSpace
       texture.needsUpdate = true
 
       scene.background = texture
-      addLog?.(`bg set (no PMREM)`)
+      addLog?.(`bg set`)
 
       onReadyRef.current?.()
     } catch (e: any) {
