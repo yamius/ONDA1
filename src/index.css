@@ -35,6 +35,13 @@
     /* Edge-to-edge: No padding - content manages its own spacing */
     /* Prevent white background from showing through transparent system bars */
     background: transparent;
+    /* Hide scrollbar — prevents layout shift when scrollbar appears/disappears */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  #root::-webkit-scrollbar {
+    display: none;
   }
 
   input,
