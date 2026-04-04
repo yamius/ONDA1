@@ -1,4 +1,4 @@
-import { Suspense, useRef, useEffect } from 'react'
+import { Suspense, useRef, useEffect, useState, useCallback } from 'react'
 import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber'
 import * as THREE from 'three'
 import { EXRLoader } from 'three/examples/jsm/loaders/EXRLoader.js'
@@ -72,135 +72,59 @@ function PanoramaControls() {
   return null
 }
 
-function cleanEXRData(data: Float32Array) {
-  for (let i = 0; i < data.length; i++) {
-    const v = data[i]
-    if (isNaN(v) || !isFinite(v) || v < 0) {
-      data[i] = 1.0
-    }
-  }
-}
-
-function applyAsBackground(texture: THREE.DataTexture, scene: THREE.Scene, gl: THREE.WebGLRenderer) {
-  const data = texture.image?.data as Float32Array | null
-  if (data) cleanEXRData(data)
-
-  texture.mapping = THREE.EquirectangularReflectionMapping
-  texture.colorSpace = THREE.LinearSRGBColorSpace
-  texture.needsUpdate = true
-
-  const pmrem = new THREE.PMREMGenerator(gl)
-  pmrem.compileEquirectangularShader()
-  const envMap = pmrem.fromEquirectangular(texture).texture
-  pmrem.dispose()
-
-  scene.background = envMap
-  scene.environment = envMap
-
-  return envMap
-}
-
 interface CleanEnvironmentProps {
   url: string
-  previewUrl?: string
+  onReady?: () => void
 }
 
-function CleanEnvironment({ url, previewUrl }: CleanEnvironmentProps) {
+function CleanEnvironment({ url, onReady }: CleanEnvironmentProps) {
   const { scene, gl } = useThree()
-
-  const initialUrl = previewUrl ?? url
-  const texture = useLoader(EXRLoader, initialUrl, (loader: EXRLoader) => {
+  const texture = useLoader(EXRLoader, url, (loader: EXRLoader) => {
     loader.setDataType(THREE.FloatType)
   }) as THREE.DataTexture
 
-  const sphereRef = useRef<THREE.Mesh | null>(null)
-  const fadeProgressRef = useRef(0)
-  const fadeActiveRef = useRef(false)
-  const fullEnvMapRef = useRef<THREE.Texture | null>(null)
-  const previewEnvMapRef = useRef<THREE.Texture | null>(null)
+  const onReadyRef = useRef(onReady)
+  onReadyRef.current = onReady
 
   useEffect(() => {
-    const envMap = applyAsBackground(texture, scene, gl)
-    previewEnvMapRef.current = envMap
+    const data = texture.image?.data as Float32Array | null
+    if (data) {
+      for (let i = 0; i < data.length; i++) {
+        const v = data[i]
+        if (isNaN(v) || !isFinite(v) || v < 0) data[i] = 1.0
+      }
+    }
 
-    if (!previewUrl) return
+    texture.mapping = THREE.EquirectangularReflectionMapping
+    texture.colorSpace = THREE.LinearSRGBColorSpace
+    texture.needsUpdate = true
 
-    const loader = new EXRLoader()
-    loader.setDataType(THREE.FloatType)
+    const pmrem = new THREE.PMREMGenerator(gl)
+    pmrem.compileEquirectangularShader()
+    const envMap = pmrem.fromEquirectangular(texture).texture
+    pmrem.dispose()
 
-    loader.load(url, (fullTex) => {
-      const fullData = fullTex.image?.data as Float32Array | null
-      if (fullData) cleanEXRData(fullData)
+    scene.background = envMap
+    scene.environment = envMap
 
-      fullTex.needsUpdate = true
-
-      const pmrem = new THREE.PMREMGenerator(gl)
-      pmrem.compileEquirectangularShader()
-      const fullEnvMap = pmrem.fromEquirectangular(fullTex).texture
-      pmrem.dispose()
-      fullEnvMapRef.current = fullEnvMap
-
-      const geo = new THREE.SphereGeometry(499, 60, 40)
-      const mat = new THREE.MeshBasicMaterial({
-        map: fullTex,
-        side: THREE.BackSide,
-        transparent: true,
-        opacity: 0,
-        depthWrite: false,
-      })
-      const sphere = new THREE.Mesh(geo, mat)
-      scene.add(sphere)
-      sphereRef.current = sphere
-
-      fadeProgressRef.current = 0
-      fadeActiveRef.current = true
-    })
+    onReadyRef.current?.()
 
     return () => {
-      fadeActiveRef.current = false
-      if (sphereRef.current) {
-        scene.remove(sphereRef.current)
-        sphereRef.current.geometry.dispose()
-        ;(sphereRef.current.material as THREE.MeshBasicMaterial).map?.dispose()
-        ;(sphereRef.current.material as THREE.MeshBasicMaterial).dispose()
-        sphereRef.current = null
-      }
-      if (previewEnvMapRef.current) {
-        previewEnvMapRef.current.dispose()
-        previewEnvMapRef.current = null
-      }
-      if (fullEnvMapRef.current) {
-        fullEnvMapRef.current.dispose()
-        fullEnvMapRef.current = null
-      }
+      envMap.dispose()
       scene.background = null
       scene.environment = null
     }
-  }, [texture, url, previewUrl, scene, gl])
-
-  useFrame((_, delta) => {
-    if (!fadeActiveRef.current || !sphereRef.current) return
-
-    fadeProgressRef.current = Math.min(1, fadeProgressRef.current + delta / 2)
-    const mat = sphereRef.current.material as THREE.MeshBasicMaterial
-    mat.opacity = fadeProgressRef.current
-
-    if (fadeProgressRef.current >= 1) {
-      fadeActiveRef.current = false
-      if (fullEnvMapRef.current) {
-        scene.background = fullEnvMapRef.current
-        scene.environment = fullEnvMapRef.current
-      }
-      scene.remove(sphereRef.current)
-      mat.map?.dispose()
-      mat.dispose()
-      sphereRef.current.geometry.dispose()
-      sphereRef.current = null
-    }
-  })
+  }, [texture, scene, gl])
 
   return null
 }
+
+const CANVAS_GL = {
+  toneMapping: THREE.ACESFilmicToneMapping,
+  toneMappingExposure: 1.0,
+} as const
+
+const CANVAS_CAMERA = { fov: 75, position: [0, 0, 0.001] as [number, number, number] }
 
 interface WelcomeSceneProps {
   url: string
@@ -208,19 +132,52 @@ interface WelcomeSceneProps {
 }
 
 export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
+  const [fullReady, setFullReady] = useState(false)
+  const hasPreview = Boolean(previewUrl)
+
+  const handleFullReady = useCallback(() => {
+    setFullReady(true)
+  }, [])
+
   return (
     <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }}>
-      <Canvas
-        camera={{ fov: 75, position: [0, 0, 0.001] }}
-        style={{ width: '100%', height: '100%' }}
-        frameloop="always"
-        gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.0 }}
+      {hasPreview && (
+        <div className="absolute inset-0" style={{ pointerEvents: 'none' }}>
+          <Canvas
+            camera={CANVAS_CAMERA}
+            style={{ width: '100%', height: '100%' }}
+            frameloop="always"
+            gl={CANVAS_GL}
+          >
+            <Suspense fallback={null}>
+              <CleanEnvironment url={previewUrl!} />
+            </Suspense>
+          </Canvas>
+        </div>
+      )}
+
+      <div
+        className="absolute inset-0"
+        style={{
+          opacity: hasPreview && !fullReady ? 0 : 1,
+          transition: hasPreview ? 'opacity 2000ms ease-in-out' : 'none',
+        }}
       >
-        <Suspense fallback={null}>
-          <CleanEnvironment url={url} previewUrl={previewUrl} />
-        </Suspense>
-        <PanoramaControls />
-      </Canvas>
+        <Canvas
+          camera={CANVAS_CAMERA}
+          style={{ width: '100%', height: '100%' }}
+          frameloop="always"
+          gl={CANVAS_GL}
+        >
+          <Suspense fallback={null}>
+            <CleanEnvironment
+              url={url}
+              onReady={hasPreview ? handleFullReady : undefined}
+            />
+          </Suspense>
+          <PanoramaControls />
+        </Canvas>
+      </div>
     </div>
   )
 }
