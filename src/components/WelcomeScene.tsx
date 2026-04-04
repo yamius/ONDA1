@@ -1,7 +1,8 @@
 import { Suspense, useRef, useEffect } from 'react'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber'
 import { Environment } from '@react-three/drei'
 import * as THREE from 'three'
+import { EXRLoader } from 'three/examples/jsm/loaders/EXRLoader.js'
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string
 const EXR_URL = `${SUPABASE_URL}/storage/v1/object/public/hdr/hdr_p1/exr_p1_01.exr`
@@ -66,6 +67,25 @@ function PanoramaControls() {
   return null
 }
 
+function CleanEnvironment() {
+  const texture = useLoader(EXRLoader, EXR_URL) as THREE.DataTexture
+
+  useEffect(() => {
+    const data = texture.image?.data as Float32Array | null
+    if (!data) return
+    const MAX_VAL = 10000
+    for (let i = 0; i < data.length; i++) {
+      const v = data[i]
+      if (!isFinite(v) || isNaN(v) || v > MAX_VAL) {
+        data[i] = i % 4 === 3 ? 1.0 : MAX_VAL
+      }
+    }
+    texture.needsUpdate = true
+  }, [texture])
+
+  return <Environment map={texture} background intensity={1.0} />
+}
+
 export default function WelcomeScene() {
   return (
     <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }}>
@@ -73,10 +93,10 @@ export default function WelcomeScene() {
         camera={{ fov: 75, position: [0, 0, 0.001] }}
         style={{ width: '100%', height: '100%' }}
         frameloop="always"
-        gl={{ toneMapping: THREE.NeutralToneMapping, toneMappingExposure: 1.0 }}
+        gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.0 }}
       >
         <Suspense fallback={null}>
-          <Environment files={EXR_URL} background intensity={1.2} />
+          <CleanEnvironment />
         </Suspense>
         <PanoramaControls />
       </Canvas>
