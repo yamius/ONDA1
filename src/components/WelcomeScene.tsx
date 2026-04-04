@@ -1,4 +1,4 @@
-import { Suspense, useRef, useEffect } from 'react'
+import { Suspense, useRef, useEffect, useState } from 'react'
 import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber'
 import * as THREE from 'three'
 import { EXRLoader } from 'three/examples/jsm/loaders/EXRLoader.js'
@@ -67,7 +67,7 @@ function PanoramaControls() {
   return null
 }
 
-function CleanEnvironment({ url }: { url: string }) {
+function CleanEnvironment({ url, onReady }: { url: string; onReady: () => void }) {
   const { scene, gl } = useThree()
   const texture = useLoader(EXRLoader, url, (loader: EXRLoader) => {
     loader.setDataType(THREE.FloatType)
@@ -96,6 +96,8 @@ function CleanEnvironment({ url }: { url: string }) {
     scene.background = envMap
     scene.environment = envMap
 
+    onReady()
+
     return () => {
       envMap.dispose()
     }
@@ -109,6 +111,8 @@ interface WelcomeSceneProps {
 }
 
 export default function WelcomeScene({ url }: WelcomeSceneProps) {
+  const [visible, setVisible] = useState(false)
+
   return (
     <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }}>
       <Canvas
@@ -118,10 +122,20 @@ export default function WelcomeScene({ url }: WelcomeSceneProps) {
         gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.0 }}
       >
         <Suspense fallback={null}>
-          <CleanEnvironment url={url} />
+          <CleanEnvironment url={url} onReady={() => setVisible(true)} />
         </Suspense>
         <PanoramaControls />
       </Canvas>
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'black',
+          pointerEvents: 'none',
+          opacity: visible ? 0 : 1,
+          transition: visible ? 'opacity 2000ms ease-in-out' : 'none',
+        }}
+      />
     </div>
   )
 }
