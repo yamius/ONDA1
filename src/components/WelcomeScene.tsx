@@ -1,6 +1,5 @@
 import { Suspense, useRef, useEffect } from 'react'
 import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber'
-import { Environment } from '@react-three/drei'
 import * as THREE from 'three'
 import { EXRLoader } from 'three/examples/jsm/loaders/EXRLoader.js'
 
@@ -23,7 +22,6 @@ function PanoramaControls() {
       lastY.current = e.clientY
       lastActivityTime.current = Date.now()
     }
-
     const onPointerMove = (e: PointerEvent) => {
       lastActivityTime.current = Date.now()
       if (!isDragging.current) return
@@ -35,17 +33,14 @@ function PanoramaControls() {
       lastX.current = e.clientX
       lastY.current = e.clientY
     }
-
     const onPointerUp = () => {
       isDragging.current = false
       lastActivityTime.current = Date.now()
     }
-
     window.addEventListener('pointerdown', onPointerDown)
     window.addEventListener('pointermove', onPointerMove)
     window.addEventListener('pointerup', onPointerUp)
     window.addEventListener('pointercancel', onPointerUp)
-
     return () => {
       window.removeEventListener('pointerdown', onPointerDown)
       window.removeEventListener('pointermove', onPointerMove)
@@ -68,22 +63,41 @@ function PanoramaControls() {
 }
 
 function CleanEnvironment() {
+  const { scene, gl } = useThree()
   const texture = useLoader(EXRLoader, EXR_URL) as THREE.DataTexture
 
   useEffect(() => {
+    // Чистим битые пиксели в raw данных до загрузки на GPU
     const data = texture.image?.data as Float32Array | null
-    if (!data) return
-    const MAX_VAL = 10000
-    for (let i = 0; i < data.length; i++) {
-      const v = data[i]
-      if (!isFinite(v) || isNaN(v) || v > MAX_VAL) {
-        data[i] = i % 4 === 3 ? 1.0 : MAX_VAL
+    if (data) {
+      for (let i = 0; i < data.length; i++) {
+        const v = data[i]
+        if (!isFinite(v) || isNaN(v) || v > 65504) {
+          data[i] = i % 4 === 3 ? 1.0 : 1.0
+        }
       }
     }
-    texture.needsUpdate = true
-  }, [texture])
 
-  return <Environment map={texture} background intensity={1.0} />
+    // Настраиваем маппинг для экваторальной проекции
+    texture.mapping = THREE.EquirectangularReflectionMapping
+    texture.colorSpace = THREE.LinearSRGBColorSpace
+    texture.needsUpdate = true
+
+    // Генерируем PMREM — именно так это делает drei внутри
+    const pmrem = new THREE.PMREMGenerator(gl)
+    pmrem.compileEquirectangularShader()
+    const envMap = pmrem.fromEquirectangular(texture).texture
+    pmrem.dispose()
+
+    scene.background = envMap
+    scene.environment = envMap
+
+    return () => {
+      envMap.dispose()
+    }
+  }, [texture, scene, gl])
+
+  return null
 }
 
 export default function WelcomeScene() {
