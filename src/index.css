@@ -30,25 +30,10 @@
   #root {
     height: 100%;
     width: 100%;
-    overflow-y: scroll;
+    overflow: auto;
     -webkit-overflow-scrolling: touch;
     /* Edge-to-edge: No padding - content manages its own spacing */
     /* Prevent white background from showing through transparent system bars */
-    background: transparent;
-    /* Reserve scrollbar gutter always to prevent layout shift */
-    scrollbar-gutter: stable;
-  }
-
-  #root::-webkit-scrollbar {
-    width: 6px;
-    background: transparent;
-  }
-
-  #root::-webkit-scrollbar-thumb {
-    background: transparent;
-  }
-
-  #root::-webkit-scrollbar-track {
     background: transparent;
   }
 
