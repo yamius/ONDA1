@@ -64,16 +64,20 @@ function PanoramaControls() {
 
 function CleanEnvironment() {
   const { scene, gl } = useThree()
-  const texture = useLoader(EXRLoader, EXR_URL) as THREE.DataTexture
+  // Явно FloatType — иначе данные в Uint16 (half-float) и isNaN не работает
+  const texture = useLoader(EXRLoader, EXR_URL, (loader: EXRLoader) => {
+    loader.setDataType(THREE.FloatType)
+  }) as THREE.DataTexture
 
   useEffect(() => {
-    // Чистим битые пиксели в raw данных до загрузки на GPU
+    // Чистим битые пиксели в raw Float32 данных до загрузки на GPU
     const data = texture.image?.data as Float32Array | null
     if (data) {
       for (let i = 0; i < data.length; i++) {
         const v = data[i]
-        if (!isFinite(v) || isNaN(v) || v > 65504) {
-          data[i] = i % 4 === 3 ? 1.0 : 1.0
+        if (isNaN(v) || !isFinite(v) || v < 0) {
+          // Заменяем плохой пиксель: для RGB ставим 1.0, для alpha — 1.0
+          data[i] = 1.0
         }
       }
     }
