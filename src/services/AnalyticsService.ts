@@ -213,6 +213,11 @@ class AnalyticsService {
         successfulIds.push(...batch.map(e => e.id));
       } else {
         console.error('[Analytics] Failed to flush batch:', error);
+        // Permission/RLS error (42501) — events will never succeed, discard them
+        if (error.code === '42501') {
+          successfulIds.push(...batch.map(e => e.id));
+          console.warn('[Analytics] RLS policy blocked insert — discarding batch. Fix app_events INSERT policy in Supabase.');
+        }
       }
     }
 
@@ -262,8 +267,13 @@ class AnalyticsService {
       });
 
       if (error) {
-        console.warn('[Analytics] Failed to track, queueing:', error);
-        this.addToQueue(event);
+        // Permission/RLS error (42501) — will never succeed, don't queue
+        if (error.code === '42501') {
+          console.warn('[Analytics] RLS policy blocked insert — skipping queue. Fix app_events INSERT policy in Supabase.');
+        } else {
+          console.warn('[Analytics] Failed to track, queueing:', error);
+          this.addToQueue(event);
+        }
       }
     } else {
       // Offline - queue for later

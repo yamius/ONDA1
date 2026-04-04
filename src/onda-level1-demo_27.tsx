@@ -30,7 +30,8 @@ import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
 import * as Sentry from '@sentry/capacitor';
-import WelcomeScene, { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './components/WelcomeScene';
+import WelcomeScene from './components/WelcomeScene';
+import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './constants/practiceAssets';
 
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
