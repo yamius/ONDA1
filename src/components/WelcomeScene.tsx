@@ -139,6 +139,16 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
     setFullReady(true)
   }, [])
 
+  useEffect(() => {
+    const root = document.getElementById('root')
+    if (!root) return
+    const prev = root.style.overflowY
+    root.style.overflowY = 'hidden'
+    return () => {
+      root.style.overflowY = prev
+    }
+  }, [])
+
   return (
     <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0, overflow: 'hidden' }}>
       {hasPreview && (
