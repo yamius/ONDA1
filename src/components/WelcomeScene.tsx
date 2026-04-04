@@ -1,4 +1,4 @@
-import { Suspense, useRef, useEffect, useState, useCallback } from 'react'
+import { Suspense, useRef, useEffect, useState, useCallback, Component, ReactNode } from 'react'
 import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber'
 import * as THREE from 'three'
 import { EXRLoader } from 'three/examples/jsm/loaders/EXRLoader.js'
@@ -126,7 +126,22 @@ function CleanEnvironment({ url, onReady }: CleanEnvironmentProps) {
 const CANVAS_GL = {
   toneMapping: THREE.ACESFilmicToneMapping,
   toneMappingExposure: 1.0,
+  alpha: true,
 } as const
+
+class PanoramaErrorBoundary extends Component<{ children: ReactNode }, { hasError: boolean }> {
+  constructor(props: { children: ReactNode }) {
+    super(props)
+    this.state = { hasError: false }
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true }
+  }
+  render() {
+    if (this.state.hasError) return null
+    return this.props.children
+  }
+}
 
 const CANVAS_CAMERA = { fov: 75, position: [0, 0, 0.001] as [number, number, number] }
 
@@ -154,6 +169,7 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
   }, [])
 
   return (
+    <PanoramaErrorBoundary>
     <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0, overflow: 'hidden' }}>
       {hasPreview && (
         <div
@@ -191,5 +207,6 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
         </Canvas>
       </div>
     </div>
+    </PanoramaErrorBoundary>
   )
 }
