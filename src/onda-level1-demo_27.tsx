@@ -3539,7 +3539,7 @@ const OndaLevel1 = () => {
         )}
 
         {practiceState === 'active' && (
-          <div className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 ${isMinimalMode ? 'justify-end pb-8' : 'justify-center'}`}>
+          <div className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 ${isMinimalMode ? 'justify-center' : 'justify-center'}`}>
             {/* Компактный круг с эмодзи и таймером */}
             {!isMinimalMode && (<div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-1 sm:mt-3">
               {/* Круговой прогресс */}
@@ -3624,8 +3624,15 @@ const OndaLevel1 = () => {
             </div>)}
 
             {activePractice.guidingTexts && activePractice.guidingTexts.length > 0 && (
-              <div className={`w-full max-w-md px-3 sm:px-0 ${isMinimalMode ? 'mb-4' : 'mb-6 sm:mb-8'}`}>
-                <div className="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-white/20 shadow-xl h-24 sm:h-28 flex items-center justify-center overflow-hidden">
+              <div
+                className={`w-full max-w-md px-3 sm:px-0 ${isMinimalMode ? '' : 'mb-6 sm:mb-8'}`}
+                onClick={isMinimalMode ? () => setIsMinimalMode(false) : undefined}
+              >
+                <div className={`bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-6 border shadow-xl flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
+                  isMinimalMode
+                    ? 'border-white/30 h-28 sm:h-32 cursor-pointer hover:bg-black/40 active:scale-95'
+                    : 'border-white/20 h-24 sm:h-28'
+                }`}>
                   <p
                     className={`text-sm sm:text-base text-center italic leading-snug text-white/90 whitespace-pre-line transition-all duration-1000 ${
                       isTextTransitioning ? 'opacity-0 translate-y-[-20px]' : 'opacity-100 translate-y-0'
@@ -3633,6 +3640,11 @@ const OndaLevel1 = () => {
                   >
                     {activePractice.guidingTexts[currentGuidingTextIndex]}
                   </p>
+                  {isMinimalMode && (
+                    <p className="mt-3 text-xs text-white/40 tracking-widest uppercase">
+                      tap to return
+                    </p>
+                  )}
                 </div>
               </div>
             )}
@@ -3650,6 +3662,7 @@ const OndaLevel1 = () => {
               </div>
             </div>)}
 
+            {!isMinimalMode && (
             <div className="flex gap-3 sm:gap-6">
               <button
                 onClick={() => setIsPaused(!isPaused)}
@@ -3667,11 +3680,10 @@ const OndaLevel1 = () => {
                 onClick={() => setIsMinimalMode(!isMinimalMode)}
                 className="bg-white/30 hover:bg-white/40 backdrop-blur-md p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border border-white/30"
               >
-                {isMinimalMode
-                  ? <Maximize2 className="w-6 h-6 sm:w-8 sm:h-8" />
-                  : <Minimize2 className="w-6 h-6 sm:w-8 sm:h-8" />}
+                <Minimize2 className="w-6 h-6 sm:w-8 sm:h-8" />
               </button>
             </div>
+            )}
           </div>
         )}
 
