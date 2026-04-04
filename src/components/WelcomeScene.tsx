@@ -79,53 +79,30 @@ function PanoramaControls() {
 interface CleanEnvironmentProps {
   url: string
   onReady?: () => void
-  addLog?: (msg: string) => void
 }
 
-function CleanEnvironment({ url, onReady, addLog }: CleanEnvironmentProps) {
-  const { scene, gl } = useThree()
-
-  useEffect(() => {
-    const ctx = gl.getContext()
-    const renderer = ctx.getParameter(ctx.RENDERER) || 'unknown'
-    const vendor = ctx.getParameter(ctx.VENDOR) || 'unknown'
-    const floatExt = ctx.getExtension('OES_texture_float') ? 'YES' : 'NO'
-    const halfExt = ctx.getExtension('OES_texture_half_float') ? 'YES' : 'NO'
-    addLog?.(`renderer: ${renderer}`)
-    addLog?.(`vendor: ${vendor}`)
-    addLog?.(`float: ${floatExt}, half: ${halfExt}`)
-  }, [gl, addLog])
+function CleanEnvironment({ url, onReady }: CleanEnvironmentProps) {
+  const { scene } = useThree()
 
   const texture = useLoader(EXRLoader, url, (loader: EXRLoader) => {
     loader.setDataType(THREE.HalfFloatType)
-    addLog?.(`fetching EXR...`)
   }) as THREE.DataTexture
 
   const onReadyRef = useRef(onReady)
   onReadyRef.current = onReady
 
   useEffect(() => {
-    try {
-      const img = texture.image
-      addLog?.(`EXR loaded: ${img?.width}x${img?.height}, type: HalfFloat`)
-
-      texture.mapping = THREE.EquirectangularReflectionMapping
-      texture.colorSpace = THREE.LinearSRGBColorSpace
-      texture.needsUpdate = true
-
-      scene.background = texture
-      addLog?.(`bg set`)
-
-      onReadyRef.current?.()
-    } catch (e: any) {
-      addLog?.(`ERROR: ${e?.message ?? String(e)}`)
-    }
+    texture.mapping = THREE.EquirectangularReflectionMapping
+    texture.colorSpace = THREE.LinearSRGBColorSpace
+    texture.needsUpdate = true
+    scene.background = texture
+    onReadyRef.current?.()
 
     return () => {
       scene.background = null
       scene.environment = null
     }
-  }, [texture, scene, addLog])
+  }, [texture, scene])
 
   return null
 }
@@ -159,12 +136,7 @@ interface WelcomeSceneProps {
 
 export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
   const [fullReady, setFullReady] = useState(false)
-  const [logs, setLogs] = useState<string[]>([])
   const hasPreview = Boolean(previewUrl)
-
-  const addLog = useCallback((msg: string) => {
-    setLogs(prev => [...prev.slice(-8), msg])
-  }, [])
 
   const handleFullReady = useCallback(() => {
     setFullReady(true)
@@ -213,34 +185,12 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
             <CleanEnvironment
               url={url}
               onReady={hasPreview ? handleFullReady : undefined}
-              addLog={addLog}
             />
           </Suspense>
           <PanoramaControls />
         </Canvas>
       </div>
 
-      {logs.length > 0 && (
-        <div
-          style={{
-            position: 'absolute',
-            bottom: 80,
-            left: 8,
-            right: 8,
-            zIndex: 9999,
-            background: 'rgba(0,0,0,0.75)',
-            borderRadius: 8,
-            padding: '6px 10px',
-            pointerEvents: 'none',
-          }}
-        >
-          {logs.map((line, i) => (
-            <div key={i} style={{ color: '#0f0', fontFamily: 'monospace', fontSize: 11, lineHeight: 1.4 }}>
-              {line}
-            </div>
-          ))}
-        </div>
-      )}
     </div>
     </PanoramaErrorBoundary>
   )
