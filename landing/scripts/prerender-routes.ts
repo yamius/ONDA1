@@ -18,6 +18,8 @@ const staticPaths = [
   '/sitemap',
   '/inner-spectrum',
   '/bio',
+  '/privacy',
+  '/terms',
 ]
 
 export function getPrerenderRoutes(): string[] {

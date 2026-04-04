@@ -11,4 +11,6 @@ export const staticPaths: string[] = [
   '/the-stack',
   '/sitemap',
   '/inner-spectrum',
+  '/privacy',
+  '/terms',
 ]

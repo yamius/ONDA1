@@ -1,6 +1,5 @@
 import { useState, useEffect, useLayoutEffect, Suspense } from 'react'
 import { Outlet, Link, useLocation } from 'react-router-dom'
-import { FooterSitemap } from './FooterSitemap'
 import { TransitionLink } from './TransitionLink'
 
 export function Layout() {
@@ -200,7 +199,31 @@ export function Layout() {
               &copy; {new Date().getFullYear()} ONDA Life
             </p>
           </div>
-          <FooterSitemap />
+          <div className="mt-8 grid grid-cols-3 items-center">
+            <div />
+            <div className="flex justify-center">
+              <Link
+                to="/sitemap"
+                className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
+              >
+                Site map
+              </Link>
+            </div>
+            <div className="flex justify-end items-center gap-4">
+              <Link
+                to="/privacy"
+                className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                to="/terms"
+                className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
+              >
+                Terms of Service
+              </Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
