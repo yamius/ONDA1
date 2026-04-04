@@ -21,7 +21,7 @@ export const PRACTICE_JPEG_PREVIEW: Record<string, string> = {
 }
 
 function PanoramaControls() {
-  const { camera } = useThree()
+  const { camera, gl } = useThree()
   const isDragging = useRef(false)
   const lastX = useRef(0)
   const lastY = useRef(0)
@@ -30,11 +30,14 @@ function PanoramaControls() {
   const lastActivityTime = useRef(Date.now())
 
   useEffect(() => {
+    const canvas = gl.domElement
+
     const onPointerDown = (e: PointerEvent) => {
       isDragging.current = true
       lastX.current = e.clientX
       lastY.current = e.clientY
       lastActivityTime.current = Date.now()
+      try { canvas.setPointerCapture(e.pointerId) } catch (_) {}
     }
     const onPointerMove = (e: PointerEvent) => {
       lastActivityTime.current = Date.now()
@@ -47,21 +50,23 @@ function PanoramaControls() {
       lastX.current = e.clientX
       lastY.current = e.clientY
     }
-    const onPointerUp = () => {
+    const onPointerUp = (e: PointerEvent) => {
       isDragging.current = false
       lastActivityTime.current = Date.now()
+      try { canvas.releasePointerCapture(e.pointerId) } catch (_) {}
     }
-    window.addEventListener('pointerdown', onPointerDown)
-    window.addEventListener('pointermove', onPointerMove)
-    window.addEventListener('pointerup', onPointerUp)
-    window.addEventListener('pointercancel', onPointerUp)
+
+    canvas.addEventListener('pointerdown', onPointerDown)
+    canvas.addEventListener('pointermove', onPointerMove)
+    canvas.addEventListener('pointerup', onPointerUp)
+    canvas.addEventListener('pointercancel', onPointerUp)
     return () => {
-      window.removeEventListener('pointerdown', onPointerDown)
-      window.removeEventListener('pointermove', onPointerMove)
-      window.removeEventListener('pointerup', onPointerUp)
-      window.removeEventListener('pointercancel', onPointerUp)
+      canvas.removeEventListener('pointerdown', onPointerDown)
+      canvas.removeEventListener('pointermove', onPointerMove)
+      canvas.removeEventListener('pointerup', onPointerUp)
+      canvas.removeEventListener('pointercancel', onPointerUp)
     }
-  }, [])
+  }, [gl])
 
   useFrame((_, delta) => {
     const idleSeconds = (Date.now() - lastActivityTime.current) / 1000
@@ -171,6 +176,7 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
         className="absolute inset-0"
         style={{
           overflow: 'hidden',
+          touchAction: 'none',
           opacity: hasPreview && !fullReady ? 0 : 1,
           transition: hasPreview ? 'opacity 2000ms ease-in-out' : 'none',
         }}
