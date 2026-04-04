@@ -30,18 +30,26 @@
   #root {
     height: 100%;
     width: 100%;
-    overflow: auto;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     /* Edge-to-edge: No padding - content manages its own spacing */
     /* Prevent white background from showing through transparent system bars */
     background: transparent;
-    /* Hide scrollbar — prevents layout shift when scrollbar appears/disappears */
-    scrollbar-width: none;
-    -ms-overflow-style: none;
+    /* Reserve scrollbar gutter always to prevent layout shift */
+    scrollbar-gutter: stable;
   }
 
   #root::-webkit-scrollbar {
-    display: none;
+    width: 6px;
+    background: transparent;
+  }
+
+  #root::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+
+  #root::-webkit-scrollbar-track {
+    background: transparent;
   }
 
   input,
