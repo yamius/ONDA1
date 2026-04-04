@@ -155,16 +155,41 @@ jobs:
             fi
           fi
           
-          echo "=== Testing git access to certificates repo ==="
-          AUTH_HEADER="Authorization: Basic $MATCH_GIT_BASIC_AUTHORIZATION"
-          # NOTE: -c must come BEFORE the subcommand for git to apply config
-          if git -c "http.extraheader=$AUTH_HEADER" ls-remote -h "$MATCH_GIT_URL" HEAD 2>&1; then
-            echo "SUCCESS: Can access certificates repository!"
+          echo "=== URL info (safe to show) ==="
+          echo "URL length: ${#MATCH_GIT_URL}"
+          echo "URL prefix: ${MATCH_GIT_URL:0:30}"
+          echo "URL suffix: ${MATCH_GIT_URL: -15}"
+          
+          echo "=== Testing token via GitHub API (curl) ==="
+          # Extract repo path from URL (strip https://github.com/ and .git)
+          REPO_PATH=$(echo "$MATCH_GIT_URL" | sed 's|https://github.com/||' | sed 's|\.git$||' | sed 's|/$||')
+          echo "Repo path: $REPO_PATH"
+          HTTP_CODE=$(curl -s -o /tmp/gh_api_response.json -w "%{http_code}" \
+            -H "Authorization: Basic $MATCH_GIT_BASIC_AUTHORIZATION" \
+            "https://api.github.com/repos/$REPO_PATH")
+          echo "GitHub API response code: $HTTP_CODE"
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "SUCCESS: Token has access to the repository!"
+          elif [ "$HTTP_CODE" = "401" ]; then
+            echo "ERROR 401: Token is invalid or base64 encoding is wrong"
+            echo "Regenerate: echo -n 'yamius:ghp_TOKEN' | base64 → update MATCH_GIT_BASIC_AUTHORIZATION"
+            exit 1
+          elif [ "$HTTP_CODE" = "404" ]; then
+            echo "ERROR 404: Repo '$REPO_PATH' not found or token has no access"
+            cat /tmp/gh_api_response.json
+            exit 1
           else
-            echo "ERROR: Cannot access certificates repository!"
-            echo "The token is set but GitHub rejected it (401) or the repo URL is wrong."
-            echo "Fix: regenerate PAT at https://github.com/settings/tokens with 'repo' scope"
-            echo "Then: echo -n 'yamius:NEW_TOKEN' | base64  → update MATCH_GIT_BASIC_AUTHORIZATION secret"
+            echo "ERROR $HTTP_CODE: Unexpected response"
+            cat /tmp/gh_api_response.json
+            exit 1
+          fi
+          
+          echo "=== Testing git clone access ==="
+          AUTH_HEADER="Authorization: Basic $MATCH_GIT_BASIC_AUTHORIZATION"
+          if git -c "http.extraheader=$AUTH_HEADER" ls-remote -h "$MATCH_GIT_URL" HEAD 2>&1; then
+            echo "SUCCESS: git can access certificates repository!"
+          else
+            echo "ERROR: git cannot clone — but API works. Check URL format (try with/without .git)"
             exit 1
           fi
         env:
