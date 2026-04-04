@@ -9,9 +9,8 @@ const config: CapacitorConfig = {
     cleartext: true
   },
   ios: {
-    contentInset: 'always',
-    // iOS-specific configuration
-    backgroundColor: '#111827',
+    contentInset: 'never',
+    backgroundColor: '#000000',
     allowsLinkPreview: false
   },
   plugins: {
