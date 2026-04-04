@@ -1,6 +1,7 @@
 import { Suspense, useRef, useEffect } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Environment } from '@react-three/drei'
+import * as THREE from 'three'
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string
 const EXR_URL = `${SUPABASE_URL}/storage/v1/object/public/hdr/hdr_p1/exr_p1_01.exr`
@@ -72,7 +73,7 @@ export default function WelcomeScene() {
         camera={{ fov: 75, position: [0, 0, 0.001] }}
         style={{ width: '100%', height: '100%' }}
         frameloop="always"
-        gl={{ toneMappingExposure: 1.2 }}
+        gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.0 }}
       >
         <Suspense fallback={null}>
           <Environment files={EXR_URL} background intensity={1.2} />
