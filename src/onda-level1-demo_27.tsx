@@ -30,7 +30,7 @@ import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
 import * as Sentry from '@sentry/capacitor';
-import WelcomeScene from './components/WelcomeScene';
+import WelcomeScene, { PRACTICE_EXR } from './components/WelcomeScene';
 
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
@@ -3460,8 +3460,8 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {(practiceState === 'intro' || practiceState === 'active') && activePractice.id === 'p1-1' ? (
-          <WelcomeScene />
+        {(practiceState === 'intro' || practiceState === 'active') && PRACTICE_EXR[activePractice.id] ? (
+          <WelcomeScene url={PRACTICE_EXR[activePractice.id]} />
         ) : (
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDuration: '3s' }} />

@@ -4,7 +4,12 @@ import * as THREE from 'three'
 import { EXRLoader } from 'three/examples/jsm/loaders/EXRLoader.js'
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string
-const EXR_URL = `${SUPABASE_URL}/storage/v1/object/public/hdr/hdr_p1/exr_p1_01.exr`
+const HDR_BASE = `${SUPABASE_URL}/storage/v1/object/public/hdr/hdr_p1`
+
+export const PRACTICE_EXR: Record<string, string> = {
+  'p1-1': `${HDR_BASE}/exr_p1_01.exr`,
+  'p1-2': `${HDR_BASE}/exr_p1_02.exr`,
+}
 
 function PanoramaControls() {
   const { camera } = useThree()
@@ -62,32 +67,27 @@ function PanoramaControls() {
   return null
 }
 
-function CleanEnvironment() {
+function CleanEnvironment({ url }: { url: string }) {
   const { scene, gl } = useThree()
-  // Явно FloatType — иначе данные в Uint16 (half-float) и isNaN не работает
-  const texture = useLoader(EXRLoader, EXR_URL, (loader: EXRLoader) => {
+  const texture = useLoader(EXRLoader, url, (loader: EXRLoader) => {
     loader.setDataType(THREE.FloatType)
   }) as THREE.DataTexture
 
   useEffect(() => {
-    // Чистим битые пиксели в raw Float32 данных до загрузки на GPU
     const data = texture.image?.data as Float32Array | null
     if (data) {
       for (let i = 0; i < data.length; i++) {
         const v = data[i]
         if (isNaN(v) || !isFinite(v) || v < 0) {
-          // Заменяем плохой пиксель: для RGB ставим 1.0, для alpha — 1.0
           data[i] = 1.0
         }
       }
     }
 
-    // Настраиваем маппинг для экваторальной проекции
     texture.mapping = THREE.EquirectangularReflectionMapping
     texture.colorSpace = THREE.LinearSRGBColorSpace
     texture.needsUpdate = true
 
-    // Генерируем PMREM — именно так это делает drei внутри
     const pmrem = new THREE.PMREMGenerator(gl)
     pmrem.compileEquirectangularShader()
     const envMap = pmrem.fromEquirectangular(texture).texture
@@ -104,7 +104,11 @@ function CleanEnvironment() {
   return null
 }
 
-export default function WelcomeScene() {
+interface WelcomeSceneProps {
+  url: string
+}
+
+export default function WelcomeScene({ url }: WelcomeSceneProps) {
   return (
     <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }}>
       <Canvas
@@ -114,7 +118,7 @@ export default function WelcomeScene() {
         gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.0 }}
       >
         <Suspense fallback={null}>
-          <CleanEnvironment />
+          <CleanEnvironment url={url} />
         </Suspense>
         <PanoramaControls />
       </Canvas>
