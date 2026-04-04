@@ -152,7 +152,7 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
   }, [])
 
   return (
-    <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0, overflow: 'hidden', background: 'black' }}>
+    <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0, overflow: 'hidden' }}>
       {hasPreview && (
         <div className="absolute inset-0" style={{ pointerEvents: 'none', overflow: 'hidden' }}>
           <Canvas
