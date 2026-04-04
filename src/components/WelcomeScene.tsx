@@ -11,6 +11,11 @@ export const PRACTICE_EXR: Record<string, string> = {
   'p1-2': `${HDR_BASE}/exr_p1_02.exr`,
 }
 
+export const PRACTICE_EXR_PREVIEW: Record<string, string> = {
+  'p1-1': '/hdr/exr_p1_01_prev.exr',
+  'p1-2': '/hdr/exr_p1_01_prev.exr',
+}
+
 function PanoramaControls() {
   const { camera } = useThree()
   const isDragging = useRef(false)
@@ -67,48 +72,142 @@ function PanoramaControls() {
   return null
 }
 
-function CleanEnvironment({ url }: { url: string }) {
+function cleanEXRData(data: Float32Array) {
+  for (let i = 0; i < data.length; i++) {
+    const v = data[i]
+    if (isNaN(v) || !isFinite(v) || v < 0) {
+      data[i] = 1.0
+    }
+  }
+}
+
+function applyAsBackground(texture: THREE.DataTexture, scene: THREE.Scene, gl: THREE.WebGLRenderer) {
+  const data = texture.image?.data as Float32Array | null
+  if (data) cleanEXRData(data)
+
+  texture.mapping = THREE.EquirectangularReflectionMapping
+  texture.colorSpace = THREE.LinearSRGBColorSpace
+  texture.needsUpdate = true
+
+  const pmrem = new THREE.PMREMGenerator(gl)
+  pmrem.compileEquirectangularShader()
+  const envMap = pmrem.fromEquirectangular(texture).texture
+  pmrem.dispose()
+
+  scene.background = envMap
+  scene.environment = envMap
+
+  return envMap
+}
+
+interface CleanEnvironmentProps {
+  url: string
+  previewUrl?: string
+}
+
+function CleanEnvironment({ url, previewUrl }: CleanEnvironmentProps) {
   const { scene, gl } = useThree()
-  const texture = useLoader(EXRLoader, url, (loader: EXRLoader) => {
+
+  const initialUrl = previewUrl ?? url
+  const texture = useLoader(EXRLoader, initialUrl, (loader: EXRLoader) => {
     loader.setDataType(THREE.FloatType)
   }) as THREE.DataTexture
 
+  const sphereRef = useRef<THREE.Mesh | null>(null)
+  const fadeProgressRef = useRef(0)
+  const fadeActiveRef = useRef(false)
+  const fullEnvMapRef = useRef<THREE.Texture | null>(null)
+  const previewEnvMapRef = useRef<THREE.Texture | null>(null)
+
   useEffect(() => {
-    const data = texture.image?.data as Float32Array | null
-    if (data) {
-      for (let i = 0; i < data.length; i++) {
-        const v = data[i]
-        if (isNaN(v) || !isFinite(v) || v < 0) {
-          data[i] = 1.0
-        }
-      }
-    }
+    const envMap = applyAsBackground(texture, scene, gl)
+    previewEnvMapRef.current = envMap
 
-    texture.mapping = THREE.EquirectangularReflectionMapping
-    texture.colorSpace = THREE.LinearSRGBColorSpace
-    texture.needsUpdate = true
+    if (!previewUrl) return
 
-    const pmrem = new THREE.PMREMGenerator(gl)
-    pmrem.compileEquirectangularShader()
-    const envMap = pmrem.fromEquirectangular(texture).texture
-    pmrem.dispose()
+    const loader = new EXRLoader()
+    loader.setDataType(THREE.FloatType)
 
-    scene.background = envMap
-    scene.environment = envMap
+    loader.load(url, (fullTex) => {
+      const fullData = fullTex.image?.data as Float32Array | null
+      if (fullData) cleanEXRData(fullData)
+
+      fullTex.needsUpdate = true
+
+      const pmrem = new THREE.PMREMGenerator(gl)
+      pmrem.compileEquirectangularShader()
+      const fullEnvMap = pmrem.fromEquirectangular(fullTex).texture
+      pmrem.dispose()
+      fullEnvMapRef.current = fullEnvMap
+
+      const geo = new THREE.SphereGeometry(499, 60, 40)
+      const mat = new THREE.MeshBasicMaterial({
+        map: fullTex,
+        side: THREE.BackSide,
+        transparent: true,
+        opacity: 0,
+        depthWrite: false,
+      })
+      const sphere = new THREE.Mesh(geo, mat)
+      scene.add(sphere)
+      sphereRef.current = sphere
+
+      fadeProgressRef.current = 0
+      fadeActiveRef.current = true
+    })
 
     return () => {
-      envMap.dispose()
+      fadeActiveRef.current = false
+      if (sphereRef.current) {
+        scene.remove(sphereRef.current)
+        sphereRef.current.geometry.dispose()
+        ;(sphereRef.current.material as THREE.MeshBasicMaterial).map?.dispose()
+        ;(sphereRef.current.material as THREE.MeshBasicMaterial).dispose()
+        sphereRef.current = null
+      }
+      if (previewEnvMapRef.current) {
+        previewEnvMapRef.current.dispose()
+        previewEnvMapRef.current = null
+      }
+      if (fullEnvMapRef.current) {
+        fullEnvMapRef.current.dispose()
+        fullEnvMapRef.current = null
+      }
+      scene.background = null
+      scene.environment = null
     }
-  }, [texture, scene, gl])
+  }, [texture, url, previewUrl, scene, gl])
+
+  useFrame((_, delta) => {
+    if (!fadeActiveRef.current || !sphereRef.current) return
+
+    fadeProgressRef.current = Math.min(1, fadeProgressRef.current + delta / 2)
+    const mat = sphereRef.current.material as THREE.MeshBasicMaterial
+    mat.opacity = fadeProgressRef.current
+
+    if (fadeProgressRef.current >= 1) {
+      fadeActiveRef.current = false
+      if (fullEnvMapRef.current) {
+        scene.background = fullEnvMapRef.current
+        scene.environment = fullEnvMapRef.current
+      }
+      scene.remove(sphereRef.current)
+      mat.map?.dispose()
+      mat.dispose()
+      sphereRef.current.geometry.dispose()
+      sphereRef.current = null
+    }
+  })
 
   return null
 }
 
 interface WelcomeSceneProps {
   url: string
+  previewUrl?: string
 }
 
-export default function WelcomeScene({ url }: WelcomeSceneProps) {
+export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
   return (
     <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }}>
       <Canvas
@@ -118,7 +217,7 @@ export default function WelcomeScene({ url }: WelcomeSceneProps) {
         gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.0 }}
       >
         <Suspense fallback={null}>
-          <CleanEnvironment url={url} />
+          <CleanEnvironment url={url} previewUrl={previewUrl} />
         </Suspense>
         <PanoramaControls />
       </Canvas>
