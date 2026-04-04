@@ -120,15 +120,8 @@ function CleanEnvironment({ url, onReady, addLog }: CleanEnvironmentProps) {
       texture.colorSpace = THREE.LinearSRGBColorSpace
       texture.needsUpdate = true
 
-      addLog?.(`PMREM start...`)
-      const pmrem = new THREE.PMREMGenerator(gl)
-      pmrem.compileEquirectangularShader()
-      const envMap = pmrem.fromEquirectangular(texture).texture
-      pmrem.dispose()
-
-      scene.background = envMap
-      scene.environment = envMap
-      addLog?.(`PMREM done, bg set`)
+      scene.background = texture
+      addLog?.(`bg set (no PMREM)`)
 
       onReadyRef.current?.()
     } catch (e: any) {
@@ -139,7 +132,7 @@ function CleanEnvironment({ url, onReady, addLog }: CleanEnvironmentProps) {
       scene.background = null
       scene.environment = null
     }
-  }, [texture, scene, gl, addLog])
+  }, [texture, scene, addLog])
 
   return null
 }
