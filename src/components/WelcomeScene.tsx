@@ -114,7 +114,14 @@ export default function WelcomeScene({ url }: WelcomeSceneProps) {
   const [visible, setVisible] = useState(false)
 
   return (
-    <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }}>
+    <div
+      className="absolute inset-0 w-full h-full"
+      style={{
+        zIndex: 0,
+        opacity: visible ? 1 : 0,
+        transition: visible ? 'opacity 2000ms ease-in-out' : 'none',
+      }}
+    >
       <Canvas
         camera={{ fov: 75, position: [0, 0, 0.001] }}
         style={{ width: '100%', height: '100%' }}
@@ -126,16 +133,6 @@ export default function WelcomeScene({ url }: WelcomeSceneProps) {
         </Suspense>
         <PanoramaControls />
       </Canvas>
-      <div
-        style={{
-          position: 'absolute',
-          inset: 0,
-          background: 'black',
-          pointerEvents: 'none',
-          opacity: visible ? 0 : 1,
-          transition: visible ? 'opacity 2000ms ease-in-out' : 'none',
-        }}
-      />
     </div>
   )
 }
