@@ -73,7 +73,7 @@ export default function WelcomeScene() {
         camera={{ fov: 75, position: [0, 0, 0.001] }}
         style={{ width: '100%', height: '100%' }}
         frameloop="always"
-        gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.0 }}
+        gl={{ toneMapping: THREE.NeutralToneMapping, toneMappingExposure: 1.0 }}
       >
         <Suspense fallback={null}>
           <Environment files={EXR_URL} background intensity={1.2} />
