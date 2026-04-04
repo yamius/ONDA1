@@ -3539,7 +3539,7 @@ const OndaLevel1 = () => {
         )}
 
         {practiceState === 'active' && (
-          <div className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 ${isMinimalMode ? 'justify-center' : 'justify-center'}`}>
+          <div className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 ${isMinimalMode ? 'justify-end pb-10' : 'justify-center'}`}>
             {/* Компактный круг с эмодзи и таймером */}
             {!isMinimalMode && (<div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-1 sm:mt-3">
               {/* Круговой прогресс */}
@@ -3640,11 +3640,6 @@ const OndaLevel1 = () => {
                   >
                     {activePractice.guidingTexts[currentGuidingTextIndex]}
                   </p>
-                  {isMinimalMode && (
-                    <p className="mt-3 text-xs text-white/40 tracking-widest uppercase">
-                      tap to return
-                    </p>
-                  )}
                 </div>
               </div>
             )}
