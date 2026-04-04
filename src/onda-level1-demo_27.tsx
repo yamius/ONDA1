@@ -3539,7 +3539,10 @@ const OndaLevel1 = () => {
         )}
 
         {practiceState === 'active' && (
-          <div className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 ${isMinimalMode ? 'justify-end pb-10' : 'justify-center'}`}>
+          <div
+            className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 ${isMinimalMode ? 'justify-end' : 'justify-center'}`}
+            style={{ paddingBottom: isMinimalMode ? 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 40px)' : 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 16px)' }}
+          >
             {/* Компактный круг с эмодзи и таймером */}
             {!isMinimalMode && (<div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-1 sm:mt-3">
               {/* Круговой прогресс */}
