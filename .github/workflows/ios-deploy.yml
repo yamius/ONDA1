@@ -157,11 +157,14 @@ jobs:
           
           echo "=== Testing git access to certificates repo ==="
           AUTH_HEADER="Authorization: Basic $MATCH_GIT_BASIC_AUTHORIZATION"
-          if git ls-remote -h "$MATCH_GIT_URL" -c "http.extraheader=$AUTH_HEADER" HEAD 2>&1; then
+          # NOTE: -c must come BEFORE the subcommand for git to apply config
+          if git -c "http.extraheader=$AUTH_HEADER" ls-remote -h "$MATCH_GIT_URL" HEAD 2>&1; then
             echo "SUCCESS: Can access certificates repository!"
           else
             echo "ERROR: Cannot access certificates repository!"
-            echo "Check that: 1) The repo exists, 2) The token has 'repo' scope, 3) The token is not expired"
+            echo "The token is set but GitHub rejected it (401) or the repo URL is wrong."
+            echo "Fix: regenerate PAT at https://github.com/settings/tokens with 'repo' scope"
+            echo "Then: echo -n 'yamius:NEW_TOKEN' | base64  → update MATCH_GIT_BASIC_AUTHORIZATION secret"
             exit 1
           fi
         env:
