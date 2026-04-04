@@ -121,7 +121,7 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
   const handleLoaded = useCallback(() => setLoaded(true), [])
 
   return (
-    <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }}>
+    <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0, overflow: 'hidden' }}>
       {previewUrl && (
         <div
           className="absolute inset-0 w-full h-full"
