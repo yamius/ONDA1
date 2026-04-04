@@ -79,46 +79,67 @@ function PanoramaControls() {
 interface CleanEnvironmentProps {
   url: string
   onReady?: () => void
+  addLog?: (msg: string) => void
 }
 
-function CleanEnvironment({ url, onReady }: CleanEnvironmentProps) {
+function CleanEnvironment({ url, onReady, addLog }: CleanEnvironmentProps) {
   const { scene, gl } = useThree()
+
+  useEffect(() => {
+    const ctx = gl.getContext()
+    const renderer = ctx.getParameter(ctx.RENDERER) || 'unknown'
+    const vendor = ctx.getParameter(ctx.VENDOR) || 'unknown'
+    const floatExt = ctx.getExtension('OES_texture_float') ? 'YES' : 'NO'
+    const halfExt = ctx.getExtension('OES_texture_half_float') ? 'YES' : 'NO'
+    addLog?.(`renderer: ${renderer}`)
+    addLog?.(`vendor: ${vendor}`)
+    addLog?.(`float: ${floatExt}, half: ${halfExt}`)
+  }, [gl, addLog])
+
   const texture = useLoader(EXRLoader, url, (loader: EXRLoader) => {
     loader.setDataType(THREE.FloatType)
+    addLog?.(`fetching EXR...`)
   }) as THREE.DataTexture
 
   const onReadyRef = useRef(onReady)
   onReadyRef.current = onReady
 
   useEffect(() => {
-    const data = texture.image?.data as Float32Array | null
-    if (data) {
-      for (let i = 0; i < data.length; i++) {
-        const v = data[i]
-        if (isNaN(v) || !isFinite(v) || v < 0) data[i] = 1.0
+    try {
+      const data = texture.image?.data as Float32Array | null
+      addLog?.(`EXR loaded: ${texture.image?.width}x${texture.image?.height}, data: ${data ? data.length : 'null'}`)
+
+      if (data) {
+        for (let i = 0; i < data.length; i++) {
+          const v = data[i]
+          if (isNaN(v) || !isFinite(v) || v < 0) data[i] = 1.0
+        }
       }
+
+      texture.mapping = THREE.EquirectangularReflectionMapping
+      texture.colorSpace = THREE.LinearSRGBColorSpace
+      texture.needsUpdate = true
+
+      addLog?.(`PMREM start...`)
+      const pmrem = new THREE.PMREMGenerator(gl)
+      pmrem.compileEquirectangularShader()
+      const envMap = pmrem.fromEquirectangular(texture).texture
+      pmrem.dispose()
+
+      scene.background = envMap
+      scene.environment = envMap
+      addLog?.(`PMREM done, bg set`)
+
+      onReadyRef.current?.()
+    } catch (e: any) {
+      addLog?.(`ERROR: ${e?.message ?? String(e)}`)
     }
 
-    texture.mapping = THREE.EquirectangularReflectionMapping
-    texture.colorSpace = THREE.LinearSRGBColorSpace
-    texture.needsUpdate = true
-
-    const pmrem = new THREE.PMREMGenerator(gl)
-    pmrem.compileEquirectangularShader()
-    const envMap = pmrem.fromEquirectangular(texture).texture
-    pmrem.dispose()
-
-    scene.background = envMap
-    scene.environment = envMap
-
-    onReadyRef.current?.()
-
     return () => {
-      envMap.dispose()
       scene.background = null
       scene.environment = null
     }
-  }, [texture, scene, gl])
+  }, [texture, scene, gl, addLog])
 
   return null
 }
@@ -152,7 +173,12 @@ interface WelcomeSceneProps {
 
 export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
   const [fullReady, setFullReady] = useState(false)
+  const [logs, setLogs] = useState<string[]>([])
   const hasPreview = Boolean(previewUrl)
+
+  const addLog = useCallback((msg: string) => {
+    setLogs(prev => [...prev.slice(-8), msg])
+  }, [])
 
   const handleFullReady = useCallback(() => {
     setFullReady(true)
@@ -201,11 +227,34 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
             <CleanEnvironment
               url={url}
               onReady={hasPreview ? handleFullReady : undefined}
+              addLog={addLog}
             />
           </Suspense>
           <PanoramaControls />
         </Canvas>
       </div>
+
+      {logs.length > 0 && (
+        <div
+          style={{
+            position: 'absolute',
+            bottom: 80,
+            left: 8,
+            right: 8,
+            zIndex: 9999,
+            background: 'rgba(0,0,0,0.75)',
+            borderRadius: 8,
+            padding: '6px 10px',
+            pointerEvents: 'none',
+          }}
+        >
+          {logs.map((line, i) => (
+            <div key={i} style={{ color: '#0f0', fontFamily: 'monospace', fontSize: 11, lineHeight: 1.4 }}>
+              {line}
+            </div>
+          ))}
+        </div>
+      )}
     </div>
     </PanoramaErrorBoundary>
   )
