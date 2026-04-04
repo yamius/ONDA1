@@ -21,7 +21,7 @@ export const PRACTICE_JPEG_PREVIEW: Record<string, string> = {
 }
 
 function PanoramaControls() {
-  const { camera, gl } = useThree()
+  const { camera } = useThree()
   const isDragging = useRef(false)
   const lastX = useRef(0)
   const lastY = useRef(0)
@@ -30,43 +30,66 @@ function PanoramaControls() {
   const lastActivityTime = useRef(Date.now())
 
   useEffect(() => {
-    const canvas = gl.domElement
+    const move = (x: number, y: number) => {
+      const dx = x - lastX.current
+      const dy = y - lastY.current
+      rotY.current -= dx * 0.003
+      rotX.current -= dy * 0.003
+      rotX.current = Math.max(-0.6, Math.min(0.6, rotX.current))
+      lastX.current = x
+      lastY.current = y
+    }
 
-    const onPointerDown = (e: PointerEvent) => {
+    const onTouchStart = (e: TouchEvent) => {
+      if (e.touches.length !== 1) return
+      isDragging.current = true
+      lastX.current = e.touches[0].clientX
+      lastY.current = e.touches[0].clientY
+      lastActivityTime.current = Date.now()
+    }
+    const onTouchMove = (e: TouchEvent) => {
+      lastActivityTime.current = Date.now()
+      if (!isDragging.current || e.touches.length !== 1) return
+      move(e.touches[0].clientX, e.touches[0].clientY)
+    }
+    const onTouchEnd = () => {
+      isDragging.current = false
+      lastActivityTime.current = Date.now()
+    }
+
+    const onMouseDown = (e: MouseEvent) => {
       isDragging.current = true
       lastX.current = e.clientX
       lastY.current = e.clientY
       lastActivityTime.current = Date.now()
-      try { canvas.setPointerCapture(e.pointerId) } catch (_) {}
     }
-    const onPointerMove = (e: PointerEvent) => {
+    const onMouseMove = (e: MouseEvent) => {
       lastActivityTime.current = Date.now()
       if (!isDragging.current) return
-      const dx = e.clientX - lastX.current
-      const dy = e.clientY - lastY.current
-      rotY.current -= dx * 0.003
-      rotX.current -= dy * 0.003
-      rotX.current = Math.max(-0.6, Math.min(0.6, rotX.current))
-      lastX.current = e.clientX
-      lastY.current = e.clientY
+      move(e.clientX, e.clientY)
     }
-    const onPointerUp = (e: PointerEvent) => {
+    const onMouseUp = () => {
       isDragging.current = false
       lastActivityTime.current = Date.now()
-      try { canvas.releasePointerCapture(e.pointerId) } catch (_) {}
     }
 
-    canvas.addEventListener('pointerdown', onPointerDown)
-    canvas.addEventListener('pointermove', onPointerMove)
-    canvas.addEventListener('pointerup', onPointerUp)
-    canvas.addEventListener('pointercancel', onPointerUp)
+    window.addEventListener('touchstart', onTouchStart, { passive: true })
+    window.addEventListener('touchmove', onTouchMove, { passive: true })
+    window.addEventListener('touchend', onTouchEnd)
+    window.addEventListener('touchcancel', onTouchEnd)
+    window.addEventListener('mousedown', onMouseDown)
+    window.addEventListener('mousemove', onMouseMove)
+    window.addEventListener('mouseup', onMouseUp)
     return () => {
-      canvas.removeEventListener('pointerdown', onPointerDown)
-      canvas.removeEventListener('pointermove', onPointerMove)
-      canvas.removeEventListener('pointerup', onPointerUp)
-      canvas.removeEventListener('pointercancel', onPointerUp)
+      window.removeEventListener('touchstart', onTouchStart)
+      window.removeEventListener('touchmove', onTouchMove)
+      window.removeEventListener('touchend', onTouchEnd)
+      window.removeEventListener('touchcancel', onTouchEnd)
+      window.removeEventListener('mousedown', onMouseDown)
+      window.removeEventListener('mousemove', onMouseMove)
+      window.removeEventListener('mouseup', onMouseUp)
     }
-  }, [gl])
+  }, [])
 
   useFrame((_, delta) => {
     const idleSeconds = (Date.now() - lastActivityTime.current) / 1000
