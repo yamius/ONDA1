@@ -32,9 +32,15 @@
     width: 100%;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     /* Edge-to-edge: No padding - content manages its own spacing */
     /* Prevent white background from showing through transparent system bars */
     background: transparent;
+  }
+
+  #root::-webkit-scrollbar {
+    display: none;
   }
 
   input,
