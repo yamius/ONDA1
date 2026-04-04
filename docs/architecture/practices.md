@@ -267,6 +267,103 @@ sequenceDiagram
 
 ---
 
+## Расчёт OND-награды
+
+**Файл:** `src/utils/ondCalculator.ts`  
+**Вызов:** `calculatePracticeOnd(metrics)` при завершении практики.
+
+### Входные данные
+
+```typescript
+interface PracticeMetrics {
+  actualDurationSeconds: number;    // сколько реально прошло
+  expectedDurationSeconds: number;  // targetTime практики
+  stressBefore: number | null;      // стресс в начале (0–100)
+  stressAfter: number | null;       // стресс в конце (лучшее значение за практику)
+  energyBefore: number | null;      // энергия в начале (0–100)
+  energyAfter: number | null;       // энергия в конце (лучшее значение за практику)
+  baseOndReward: number;            // maxQnt из карточки практики
+  hasRealMetrics: boolean;          // true = данные от реального датчика
+}
+```
+
+> **Важно: «лучшие метрики»** — используется не финальное значение, а лучшее за всё время практики:
+> `finalStress = min(bestMetrics.stress, currentStress)` — минимальный стресс  
+> `finalEnergy = max(bestMetrics.energy, currentEnergy)` — максимальная энергия  
+> Это защищает от потери OND при временном ухудшении показателей.
+
+### Формула (одинакова для обоих режимов)
+
+```
+completionOnd  = baseOnd × 0.15 × min(actualTime / targetTime, 1)
+stressOnd      = baseOnd × 0.40 × min((stressBefore - stressAfter) / stressBefore / 0.10, 1)
+energyOnd      = baseOnd × 0.45 × min((energyAfter - energyBefore) / energyBefore / 0.10, 1)
+
+totalOnd = completionOnd + stressOnd + energyOnd
+```
+
+| Составляющая | Вес | За что |
+|--------------|-----|--------|
+| Completion | 15% | Провёл время до конца |
+| Stress | 40% | Снижение стресса (цель: −10%) |
+| Energy | 45% | Рост энергии (цель: +10%) |
+
+Полная награда = totalOnd × (1 + artifactBonus / 100).
+
+### Режим С трекером (`hasRealMetrics = true`)
+
+**Условие:** `vitalsRef.current.hasVitalsData === true` — подключён Apple Watch, Bluetooth HRM или Health Connect и данные поступают.
+
+- `initialStress` / `initialEnergy` — реальные значения из датчика на момент старта
+- `finalStress` / `finalEnergy` — лучшие реальные значения за время практики
+- `isSimulated: false` в результате
+- Даёт максимально точную награду
+
+### Режим БЕЗ трекера (`hasRealMetrics = false`)
+
+**Условие:** нет подключённого датчика.
+
+Два подслучая:
+
+**A. Есть значения из UI-слайдеров** (`stressBefore/energyBefore` заданы, но не от датчика):  
+→ Формула та же, `isSimulated: true`. Пользователь сам задаёт начальные значения (default 50/50).
+
+**B. Нет никаких значений** (null / 0) → `ondCalculator` применяет **fallback-симуляцию**:
+
+```
+stressReduction = 3% × completionRatio ± 0.5%  (случайный разброс)
+energyIncrease  = 3% × completionRatio ± 0.5%
+
+stressScore = min(stressReduction / 10%, 1)
+energyScore = min(energyIncrease  / 10%, 1)
+
+performanceOnd = baseOnd × 0.40 × stressScore + baseOnd × 0.45 × energyScore
+totalOnd = completionOnd + performanceOnd
+isSimulated: true
+```
+
+| Параметр | С трекером | Без трекера (A) | Без трекера (B) |
+|----------|-----------|-----------------|-----------------|
+| Источник данных | Реальный датчик | UI-слайдеры (50/50) | Симуляция в коде |
+| stressBefore | Реальный | 50 | Симулируется |
+| Максимальный OND | Полный | Полный | ~30% от base |
+| `isSimulated` | false | true | true |
+| Запись в БД `has_biometrics` | true | false | false |
+
+### `hasRealMetrics` — как определяется
+
+```typescript
+// При старте
+const hasRealMetrics = vitalsRef.current.hasVitalsData;
+const initialStress = hasRealMetrics ? vitalsRef.current.stress : 50;
+
+// При завершении
+const hasRealMetrics = freshVitals.hasVitalsData && initialVitals.stress !== 50;
+// Оба условия: и сейчас есть данные, и в начале брали от датчика (не default 50)
+```
+
+---
+
 ## Добавление новой базовой практики — чеклист
 
 1. **`practiceSpaces`** в `src/onda-level1-demo_27.tsx` — добавить объект `'pN-M': { ... }`
