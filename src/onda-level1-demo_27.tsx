@@ -3547,7 +3547,7 @@ const OndaLevel1 = () => {
     ? 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 10px)'
     : platform === 'android'
       ? 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 30px)'
-      : 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 60px)'
+      : 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 0px)'
   : 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 16px)' }}
           >
             {/* Компактный круг с эмодзи и таймером */}
