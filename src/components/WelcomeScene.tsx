@@ -1,4 +1,4 @@
-import { Suspense, useRef, useEffect, useState, useCallback } from 'react'
+import { Suspense, useRef, useEffect } from 'react'
 import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber'
 import * as THREE from 'three'
 import { EXRLoader } from 'three/examples/jsm/loaders/EXRLoader.js'
@@ -9,11 +9,6 @@ const HDR_BASE = `${SUPABASE_URL}/storage/v1/object/public/hdr/hdr_p1`
 export const PRACTICE_EXR: Record<string, string> = {
   'p1-1': `${HDR_BASE}/exr_p1_01.exr`,
   'p1-2': `${HDR_BASE}/exr_p1_02.exr`,
-}
-
-export const PRACTICE_PREVIEW: Record<string, string> = {
-  'p1-1': '/hdr_preview/preview_p1_01.jpg',
-  'p1-2': '/hdr_preview/preview_p1_02.jpg',
 }
 
 function PanoramaControls() {
@@ -72,7 +67,7 @@ function PanoramaControls() {
   return null
 }
 
-function CleanEnvironment({ url, onLoaded }: { url: string; onLoaded: () => void }) {
+function CleanEnvironment({ url }: { url: string }) {
   const { scene, gl } = useThree()
   const texture = useLoader(EXRLoader, url, (loader: EXRLoader) => {
     loader.setDataType(THREE.FloatType)
@@ -101,60 +96,32 @@ function CleanEnvironment({ url, onLoaded }: { url: string; onLoaded: () => void
     scene.background = envMap
     scene.environment = envMap
 
-    onLoaded()
-
     return () => {
       envMap.dispose()
     }
-  }, [texture, scene, gl, onLoaded])
+  }, [texture, scene, gl])
 
   return null
 }
 
 interface WelcomeSceneProps {
   url: string
-  previewUrl?: string
 }
 
-export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
-  const [loaded, setLoaded] = useState(false)
-  const handleLoaded = useCallback(() => setLoaded(true), [])
-
+export default function WelcomeScene({ url }: WelcomeSceneProps) {
   return (
-    <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0, overflow: 'hidden' }}>
-      {previewUrl && (
-        <div
-          className="absolute inset-0 w-full h-full"
-          style={{
-            backgroundImage: `url(${previewUrl})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            filter: 'blur(50px)',
-            transform: 'scale(1.15)',
-            opacity: loaded ? 0 : 1,
-            transition: 'opacity 2s ease-in-out',
-          }}
-        />
-      )}
-      <div
-        className="absolute inset-0 w-full h-full"
-        style={{
-          opacity: loaded ? 1 : 0,
-          transition: 'opacity 2s ease-in-out',
-        }}
+    <div className="absolute inset-0 w-full h-full" style={{ zIndex: 0 }}>
+      <Canvas
+        camera={{ fov: 75, position: [0, 0, 0.001] }}
+        style={{ width: '100%', height: '100%' }}
+        frameloop="always"
+        gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.0 }}
       >
-        <Canvas
-          camera={{ fov: 75, position: [0, 0, 0.001] }}
-          style={{ width: '100%', height: '100%' }}
-          frameloop="always"
-          gl={{ toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.0 }}
-        >
-          <Suspense fallback={null}>
-            <CleanEnvironment url={url} onLoaded={handleLoaded} />
-          </Suspense>
-          <PanoramaControls />
-        </Canvas>
-      </div>
+        <Suspense fallback={null}>
+          <CleanEnvironment url={url} />
+        </Suspense>
+        <PanoramaControls />
+      </Canvas>
     </div>
   )
 }

@@ -30,7 +30,7 @@ import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
 import * as Sentry from '@sentry/capacitor';
-import WelcomeScene, { PRACTICE_EXR, PRACTICE_PREVIEW } from './components/WelcomeScene';
+import WelcomeScene, { PRACTICE_EXR } from './components/WelcomeScene';
 
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
@@ -2823,7 +2823,7 @@ const OndaLevel1 = () => {
 
   if (activePractice) {
     return (
-      <div className={`h-screen bg-gradient-to-br ${activePractice.colors} text-white relative overflow-hidden transition-all duration-1000`}>
+      <div className={`min-h-screen bg-gradient-to-br ${activePractice.colors} text-white relative overflow-hidden transition-all duration-1000`}>
         {/* Debug Monitor - also during practice */}
         <DebugMonitor
           buildNumber={import.meta.env.VITE_BUILD_NUMBER}
@@ -3461,7 +3461,7 @@ const OndaLevel1 = () => {
           />
         )}
         {(practiceState === 'intro' || practiceState === 'active') && PRACTICE_EXR[activePractice.id] ? (
-          <WelcomeScene url={PRACTICE_EXR[activePractice.id]} previewUrl={PRACTICE_PREVIEW[activePractice.id]} />
+          <WelcomeScene url={PRACTICE_EXR[activePractice.id]} />
         ) : (
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDuration: '3s' }} />
@@ -3482,7 +3482,7 @@ const OndaLevel1 = () => {
         </button>
 
         {practiceState === 'intro' && (
-          <div className="relative z-10 flex items-center justify-center h-full p-3 sm:p-6">
+          <div className="relative z-10 flex items-center justify-center min-h-screen p-3 sm:p-6">
             <div className="max-w-2xl text-center space-y-4 sm:space-y-8">
               <div className="text-5xl sm:text-9xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '2s' }}>
                 {activePractice.visual}
@@ -3539,7 +3539,7 @@ const OndaLevel1 = () => {
         )}
 
         {practiceState === 'active' && (
-          <div className={`relative z-10 flex flex-col items-center h-full p-3 sm:p-6 transition-all duration-500 ${isMinimalMode ? 'justify-end pb-10' : 'justify-center'}`}>
+          <div className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 ${isMinimalMode ? 'justify-end pb-10' : 'justify-center'}`}>
             {/* Компактный круг с эмодзи и таймером */}
             {!isMinimalMode && (<div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-1 sm:mt-3">
               {/* Круговой прогресс */}
@@ -3683,7 +3683,7 @@ const OndaLevel1 = () => {
         )}
 
         {practiceState === 'complete' && (
-          <div className="relative z-10 flex items-center justify-center h-full p-4 sm:p-6">
+          <div className="relative z-10 flex items-center justify-center min-h-screen p-4 sm:p-6">
             <div className="max-w-2xl w-full text-center space-y-4 sm:space-y-8">
               <div className="text-6xl sm:text-8xl md:text-9xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '1s' }}>✨</div>
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">{t('practices.completed')}</h2>

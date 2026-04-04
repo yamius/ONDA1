@@ -838,18 +838,9 @@ export const PRACTICE_EXR: Record<string, string> = {
 2. **Загрузить** в Supabase Storage: `hdr/hdr_p1/exr_pN_MM.exr`
    - N = номер части, MM = порядковый номер практики (01, 02, ...)
    - Папку для новой части создать при необходимости: `hdr/hdr_pN/`
-3. **Сгенерировать** JPEG-превью (делает агент автоматически):
-   ```bash
-   curl -sL "<supabase_url>/storage/v1/object/public/hdr/hdr_p1/exr_pN_MM.exr" -o /tmp/exr_pN_MM.exr
-   magick /tmp/exr_pN_MM.exr -colorspace sRGB -auto-gamma -resize 512x256! -quality 80 public/hdr_preview/preview_pN_MM.jpg
-   ```
-   Файл кладётся в `public/hdr_preview/` (≈10 КБ, грузится мгновенно).
-4. **Добавить** строки в `PRACTICE_EXR` и `PRACTICE_PREVIEW` в `src/components/WelcomeScene.tsx`:
+3. **Добавить** строку в `PRACTICE_EXR` в `src/components/WelcomeScene.tsx`:
    ```typescript
-   // PRACTICE_EXR:
    'p1-3': `${HDR_BASE}/exr_p1_03.exr`,
-   // PRACTICE_PREVIEW:
-   'p1-3': '/hdr_preview/preview_p1_03.jpg',
    ```
 
 ### Технические детали загрузчика
