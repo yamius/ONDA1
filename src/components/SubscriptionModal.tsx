@@ -45,7 +45,6 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
   const [purchaseError, setPurchaseError] = useState<string | null>(null);
 
   const isIOS = useMemo(() => Capacitor.getPlatform() === 'ios', []);
-  const isNative = useMemo(() => Capacitor.isNativePlatform(), []);
 
   const theme = THEMES[selectedPlan];
 
@@ -293,19 +292,17 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
                 : t('subscription.disclaimer_monthly', 'Totally free for 7 days, then 14.99 USD/month. Cancel anytime.')}
             </p>
 
-            {/* Restore Purchases */}
-            {isNative && (
-              <button
-                onClick={handleRestore}
-                disabled={isLoading || isPurchasing || isRestoring}
-                className="w-full mt-3 text-white/60 hover:text-white/80 text-xs sm:text-sm flex items-center justify-center gap-2 py-2 transition-colors"
-              >
-                <RotateCcw className="w-3 h-3 sm:w-4 sm:h-4" />
-                {isRestoring
-                  ? t('subscription.restoring', 'Restoring...')
-                  : t('subscription.restore', 'Restore Purchases')}
-              </button>
-            )}
+            {/* Restore Purchases — required by App Store */}
+            <button
+              onClick={handleRestore}
+              disabled={isLoading || isPurchasing || isRestoring}
+              className="w-full mt-3 text-white/60 hover:text-white/80 text-xs sm:text-sm flex items-center justify-center gap-2 py-2 transition-colors"
+            >
+              <RotateCcw className="w-3 h-3 sm:w-4 sm:h-4" />
+              {isRestoring
+                ? t('subscription.restoring', 'Restoring...')
+                : t('subscription.restore', 'Restore Purchases')}
+            </button>
 
             {/* Legal Links */}
             <div className="flex items-center justify-center gap-3 mt-4 text-white/40 text-xs">
