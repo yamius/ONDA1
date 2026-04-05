@@ -536,10 +536,30 @@
       "final_phrase": "Con cada inhalación recibes luz, con cada exhalación te conviertes en luz."
     },
     "light_flow": {
-      "name": "Flujo de Luz"
+      "name": "Flujo de Luz",
+      "short_phrase": "Inhala — eleva la luz por la columna, exhala — distribúyela en hombros y brazos.",
+      "guiding_1": "Siéntate verticalmente: corona arriba, sacro se vuelve pesado hacia abajo.",
+      "guiding_2": "Al inhalar imagina luz que sube desde la pelvis al corazón y a la corona.",
+      "guiding_3": "Al exhalar dirige la luz hacia hombros, brazos, palmas — como en lechos de río.",
+      "guiding_4": "Deja que el movimiento permanezca suave; no empujes, sigue la sensación.",
+      "guiding_5": "Nota dónde en el camino la luz encuentra tensión — suaviza ese lugar con respiración.",
+      "guiding_6": "Con cada ciclo siente más espacio en espalda y clavículas.",
+      "guiding_7": "Mantén una mirada interior amable — la luz fluye más fácilmente.",
+      "final_phrase": "Cuando la luz fluye libremente, las acciones se vuelven simples."
     },
     "roots_breath": {
-      "name": "Respiración de las Raíces"
+      "name": "Respiración de las Raíces",
+      "short_phrase": "Inhala — al pecho, exhala — a los pies. Deja que la Tierra tome lo excesivo.",
+      "guiding_1": "Párate o siéntate de manera que los pies toquen el suelo con confianza.",
+      "guiding_2": "Siente el peso — talones, almohadillas, dedos.",
+      "guiding_3": "Inhala durante cuatro — llena el pecho con calidez suave.",
+      "guiding_4": "Exhala durante seis — dirige la atención hacia abajo, a los pies, a la tierra.",
+      "guiding_5": "Imagina raíces que se extienden desde las plantas hacia los lados y en profundidad.",
+      "guiding_6": "En cada exhalación suelta lo excesivo: tensión en vientre, garganta, frente.",
+      "guiding_7": "Si la mente se desvía — regresa al contacto planta ↔ tierra.",
+      "guiding_8": "Respira uniformemente, sin esfuerzo; deja que la gravedad trabaje para ti.",
+      "guiding_9": "Cuanto más profundas las raíces, más libre se vuelve la respiración.",
+      "final_phrase": "La Tierra te sostiene. Con la exhalación la ansiedad baja."
     },
     "inner_spark": {
       "name": "Chispa Interior",
@@ -606,32 +626,6 @@
       "guiding_9": "Cuanto más ancha la esfera, más silencio dentro.",
       "final_phrase": "Cuando la esfera respira, te conviertes en el centro de un mundo tranquilo."
     },
-    "light_flow": {
-      "name": "Flujo de Luz",
-      "short_phrase": "Inhala — eleva la luz por la columna, exhala — distribúyela en hombros y brazos.",
-      "guiding_1": "Siéntate verticalmente: corona arriba, sacro se vuelve pesado hacia abajo.",
-      "guiding_2": "Al inhalar imagina luz que sube desde la pelvis al corazón y a la corona.",
-      "guiding_3": "Al exhalar dirige la luz hacia hombros, brazos, palmas — como en lechos de río.",
-      "guiding_4": "Deja que el movimiento permanezca suave; no empujes, sigue la sensación.",
-      "guiding_5": "Nota dónde en el camino la luz encuentra tensión — suaviza ese lugar con respiración.",
-      "guiding_6": "Con cada ciclo siente más espacio en espalda y clavículas.",
-      "guiding_7": "Mantén una mirada interior amable — la luz fluye más fácilmente.",
-      "final_phrase": "Cuando la luz fluye libremente, las acciones se vuelven simples."
-    },
-    "roots_breath": {
-      "name": "Respiración de las Raíces",
-      "short_phrase": "Inhala — al pecho, exhala — a los pies. Deja que la Tierra tome lo excesivo.",
-      "guiding_1": "Párate o siéntate de manera que los pies toquen el suelo con confianza.",
-      "guiding_2": "Siente el peso — talones, almohadillas, dedos.",
-      "guiding_3": "Inhala durante cuatro — llena el pecho con calidez suave.",
-      "guiding_4": "Exhala durante seis — dirige la atención hacia abajo, a los pies, a la tierra.",
-      "guiding_5": "Imagina raíces que se extienden desde las plantas hacia los lados y en profundidad.",
-      "guiding_6": "En cada exhalación suelta lo excesivo: tensión en vientre, garganta, frente.",
-      "guiding_7": "Si la mente se desvía — regresa al contacto planta ↔ tierra.",
-      "guiding_8": "Respira uniformemente, sin esfuerzo; deja que la gravedad trabaje para ti.",
-      "guiding_9": "Cuanto más profundas las raíces, más libre se vuelve la respiración.",
-      "final_phrase": "La Tierra te sostiene. Con la exhalación la ansiedad baja."
-    },
     "earth_pulse": {
       "name": "Pulso de la Tierra",
       "short_phrase": "Sintoniza con el ritmo bajo de la Tierra. Deja que corazón y respiración se calmen.",
@@ -663,12 +657,15 @@
     "ready": "Tu plan está listo.",
     "unlock": "Desbloquea ONDA gratis",
     "feature1": "Acceso ilimitado gratuito por 7 días",
+    "feature1_yearly": "Acceso ilimitado gratuito por 14 días",
     "feature2": "100+ prácticas de audio para meditación, relajación y crecimiento",
-    "feature3": "Prácticas personalizadas basadas en tu biometría",
     "feature4": "Seguimiento del ritmo cardíaco en tiempo real durante las prácticas",
     "trial_badge": "7 días de prueba gratis",
+    "trial_badge_yearly": "14 días de prueba gratis",
     "yearly": "Anual",
     "monthly": "Mensual",
+    "yearly_tagline": "Mejor valor · Ahorra 64%",
+    "monthly_tagline": "Total flexibilidad · Cancela en cualquier momento",
     "try_free": "Probar 7 días gratis",
     "disclaimer": "Totalmente gratis por 7 días, luego 4.17 EUR/mes, facturado anualmente a 49.99 EUR/año. Cancela en cualquier momento."
   },

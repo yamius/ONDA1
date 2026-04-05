@@ -1060,18 +1060,78 @@
       "Feel boundaries of your space:\n\"Here I stand. Here is my home. Here I can be heavy and real\".",
       "The deeper the roots — the freer the breath,\nthe quieter the mind, the clearer the heart."
     ],
-    "p2_1": ["Enter the rhythm of water.", "Inhale — meet the wave, exhale — follow it.", "Feel how the the breath guides movement.", "Trust the flow."],
-    "p2_2": ["Find the easy line of movement.", "Where body feels lighter — that's right.", "Follow natural direction.", "Let body choose the path."],
-    "p2_3": ["Connect breath and wave.", "Inhale — gather yourself, exhale — glide.", "Synchronize movement with breath.", "Become one with rhythm."],
-    "p2_4": ["Stand softly, knees spring.", "Inhale — axis, exhale — support.", "Maintain balance in flow.", "Water carries but doesn't knock down."],
-    "p2_5": ["Become water.", "Round movements, soften angles.", "Breathe smoothly, move without effort.", "Let form be fluid."],
-    "p2_6": ["Inhale — wave rises.", "Exhale — gentle retreat.", "Listen to ocean inside chest.", "Breathe like sea."],
-    "p2_7": ["Leave mind in silence.", "Let body indicate direction of ease.", "Feel flow with body, not mind.", "Trust body's intuition."],
-    "p2_8": ["Choose one point of gaze.", "Move softly, stay here.", "Attention is anchor.", "Flow guides, doesn't carry away."],
-    "p2_9": ["Maintain center.", "Allow body to adjust trajectory.", "Change direction without losing balance.", "Center calm, direction easy."],
-    "p2_10": ["Reduce movement to almost zero.", "Listen to silence beneath breath wave.", "Inner water becomes smooth.", "Everything seen clearly."],
-    "p2_11": ["Listen not to waves.", "Hear low underwater current.", "It guides from within.", "Depth speaks louder than surface."],
-    "p2_12": ["Inhale — call, exhale — answer.", "Become quieter to hear ocean within.", "Breath calls, body answers.", "Ocean heard from inside."],
+    "p2_1": [
+      "Enter the rhythm of water.",
+      "Inhale — meet the wave, exhale — follow it.",
+      "Feel how the the breath guides movement.",
+      "Trust the flow."
+    ],
+    "p2_2": [
+      "Find the easy line of movement.",
+      "Where body feels lighter — that's right.",
+      "Follow natural direction.",
+      "Let body choose the path."
+    ],
+    "p2_3": [
+      "Connect breath and wave.",
+      "Inhale — gather yourself, exhale — glide.",
+      "Synchronize movement with breath.",
+      "Become one with rhythm."
+    ],
+    "p2_4": [
+      "Stand softly, knees spring.",
+      "Inhale — axis, exhale — support.",
+      "Maintain balance in flow.",
+      "Water carries but doesn't knock down."
+    ],
+    "p2_5": [
+      "Become water.",
+      "Round movements, soften angles.",
+      "Breathe smoothly, move without effort.",
+      "Let form be fluid."
+    ],
+    "p2_6": [
+      "Inhale — wave rises.",
+      "Exhale — gentle retreat.",
+      "Listen to ocean inside chest.",
+      "Breathe like sea."
+    ],
+    "p2_7": [
+      "Leave mind in silence.",
+      "Let body indicate direction of ease.",
+      "Feel flow with body, not mind.",
+      "Trust body's intuition."
+    ],
+    "p2_8": [
+      "Choose one point of gaze.",
+      "Move softly, stay here.",
+      "Attention is anchor.",
+      "Flow guides, doesn't carry away."
+    ],
+    "p2_9": [
+      "Maintain center.",
+      "Allow body to adjust trajectory.",
+      "Change direction without losing balance.",
+      "Center calm, direction easy."
+    ],
+    "p2_10": [
+      "Reduce movement to almost zero.",
+      "Listen to silence beneath breath wave.",
+      "Inner water becomes smooth.",
+      "Everything seen clearly."
+    ],
+    "p2_11": [
+      "Listen not to waves.",
+      "Hear low underwater current.",
+      "It guides from within.",
+      "Depth speaks louder than surface."
+    ],
+    "p2_12": [
+      "Inhale — call, exhale — answer.",
+      "Become quieter to hear ocean within.",
+      "Breath calls, body answers.",
+      "Ocean heard from inside."
+    ],
     "p3_1": [
       "Stand steadily: feet supported, knees soft, axis long.",
       "On inhale imagine cool, flowing water filling sides and back; chest becomes wider.",
@@ -2759,13 +2819,15 @@
     "ready": "Your plan is ready.",
     "unlock": "Unlock ONDA for free",
     "feature1": "Unlimited free access for 7 days",
+    "feature1_yearly": "Unlimited free access for 14 days",
     "feature2": "100+ audio practices for meditation, relaxation and growth",
-    "feature3": "Personalized practices based on your biometrics",
     "feature4": "Real-time heart rate tracking during practices",
     "trial_badge": "7-Day Free Trial",
     "trial_badge_yearly": "14-Day Free Trial",
     "yearly": "Yearly",
     "monthly": "Monthly",
+    "yearly_tagline": "Best value · Save 64%",
+    "monthly_tagline": "Full flexibility · Cancel anytime",
     "try_free": "Try 7 Days Free",
     "try_free_14": "Try 14 Days Free",
     "disclaimer": "Totally free for 7 days, then 4.17 EUR/month, billed annually at 49.99 EUR/year. Cancel anytime.",
