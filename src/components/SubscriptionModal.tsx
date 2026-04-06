@@ -69,16 +69,13 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
   // Debug info for IAP troubleshooting
   const debugInfo = useMemo(() => {
     const prefix = `Y=${!!yearlyPackage} M=${!!monthlyPackage}`;
-    if (error) return `${prefix} | ${error}`;
     if (!offerings) return `${prefix} | no offerings`;
     const all = offerings.all as any;
-    const allKeys = all ? Object.keys(all) : [];
     const def = all?.['default'] ?? all?.default;
-    const defKeys = def ? Object.keys(def) : [];
-    const defPkgs = def?.availablePackages;
-    const defType = typeof def;
-    return `${prefix} | cur=${!!offerings.current} allKeys=[${allKeys}] defType=${defType} defKeys=[${defKeys.join(',')}] pkgs=${Array.isArray(defPkgs) ? defPkgs.length : typeof defPkgs}`;
-  }, [offerings, yearlyPackage, monthlyPackage, error]);
+    const pkgs = def?.availablePackages;
+    const pkgTypes = Array.isArray(pkgs) ? pkgs.map((p: any) => p.packageType || p.identifier).join(',') : String(typeof pkgs);
+    return `${prefix} | def=${!!def} pkgCount=${Array.isArray(pkgs) ? pkgs.length : 0} types=[${pkgTypes}]`;
+  }, [offerings, yearlyPackage, monthlyPackage]);
 
   useEffect(() => {
     if (isPremium && isOpen) {

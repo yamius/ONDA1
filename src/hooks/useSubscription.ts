@@ -207,7 +207,19 @@ export function useSubscription(): UseSubscriptionReturn {
   const getDefaultOffering = useCallback(() => {
     const o = state.offerings;
     if (!o) return null;
-    return o.current ?? o.all?.['default'] ?? null;
+    if (o.current) return o.current;
+    // Capacitor plugin may return all as a plain object or different structure
+    const all = o.all as any;
+    if (!all) return null;
+    // Try direct property access
+    if (all['default']) return all['default'];
+    if (all.default) return all.default;
+    // Try first offering if only one exists
+    const keys = Object.keys(all);
+    if (keys.length === 1) return all[keys[0]];
+    // Last resort: if offerings itself has availablePackages (flat structure)
+    if ((o as any).availablePackages) return o;
+    return null;
   }, [state.offerings]);
 
   // Helper: Get yearly package
