@@ -56,38 +56,27 @@ export function useSubscription(): UseSubscriptionReturn {
         return;
       }
 
+      const steps: string[] = [];
       try {
-        // Initialize RevenueCat
-        console.log('[useSubscription] Initializing RC, platform:', platform);
+        steps.push('1:init');
         await revenueCatService.initialize();
-        console.log('[useSubscription] RC initialized, isInit:', revenueCatService.isInitialized());
+        steps.push(`2:isInit=${revenueCatService.isInitialized()}`);
 
-        // Login with Supabase user ID if authenticated
         const { data: { user } } = await supabase.auth.getUser();
         if (user) {
-          console.log('[useSubscription] Logging in user:', user.id);
+          steps.push('3:login');
           await revenueCatService.login(user.id);
+          steps.push('4:loggedIn');
         } else {
-          console.log('[useSubscription] No Supabase user, skipping login');
+          steps.push('3:noUser');
         }
 
-        // Load offerings and customer info
+        steps.push('5:getOfferings');
         const [offerings, customerInfo] = await Promise.all([
           revenueCatService.getOfferings(),
           revenueCatService.getCustomerInfo(),
         ]);
-
-        // Debug: log what RevenueCat returns
-        console.log('[useSubscription] Offerings result:', JSON.stringify(offerings, null, 2));
-        console.log('[useSubscription] Current offering:', offerings?.current?.identifier);
-        console.log('[useSubscription] Available packages:', 
-          offerings?.current?.availablePackages?.map(p => ({
-            type: p.packageType,
-            id: p.identifier,
-            productId: p.product?.identifier,
-            price: p.product?.priceString,
-          }))
-        );
+        steps.push(`6:off=${!!offerings},cur=${!!offerings?.current},pkgs=${offerings?.current?.availablePackages?.length ?? 0}`);
 
         const isPremium = customerInfo?.entitlements?.active?.[ENTITLEMENT_ID]?.isActive ?? false;
 
@@ -97,14 +86,14 @@ export function useSubscription(): UseSubscriptionReturn {
           offerings,
           customerInfo,
           isPremium,
-          error: null,
+          error: `OK: ${steps.join(' > ')}`,
         }));
       } catch (error: any) {
-        console.error('[useSubscription] Init error:', error);
+        steps.push(`ERR:${error.message || error}`);
         setState(prev => ({
           ...prev,
           isLoading: false,
-          error: `Init failed: ${platform} | ${error.message || error}`,
+          error: steps.join(' > '),
         }));
       }
     };
