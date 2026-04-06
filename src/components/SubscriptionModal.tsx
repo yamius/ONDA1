@@ -71,8 +71,13 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
     const prefix = `Y=${!!yearlyPackage} M=${!!monthlyPackage}`;
     if (error) return `${prefix} | ${error}`;
     if (!offerings) return `${prefix} | no offerings`;
-    const allKeys = Object.keys(offerings.all || {});
-    return `${prefix} | cur=${offerings.current?.identifier ?? 'null'} all=[${allKeys}]`;
+    const all = offerings.all as any;
+    const allKeys = all ? Object.keys(all) : [];
+    const def = all?.['default'] ?? all?.default;
+    const defKeys = def ? Object.keys(def) : [];
+    const defPkgs = def?.availablePackages;
+    const defType = typeof def;
+    return `${prefix} | cur=${!!offerings.current} allKeys=[${allKeys}] defType=${defType} defKeys=[${defKeys.join(',')}] pkgs=${Array.isArray(defPkgs) ? defPkgs.length : typeof defPkgs}`;
   }, [offerings, yearlyPackage, monthlyPackage, error]);
 
   useEffect(() => {
