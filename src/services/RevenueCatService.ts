@@ -103,12 +103,25 @@ class RevenueCatService {
     }
 
     try {
-      const { offerings } = await Purchases.getOfferings();
-      console.log('[RevenueCat] Offerings:', offerings);
-      return offerings;
+      const result = await Purchases.getOfferings();
+      console.log('[RevenueCat] Raw getOfferings result:', JSON.stringify(result));
+      return result.offerings;
     } catch (error) {
       console.error('[RevenueCat] Get offerings error:', error);
       return null;
+    }
+  }
+
+  async getOfferingsRaw(): Promise<string> {
+    if (!this.initialized) return 'not_initialized';
+    try {
+      const result = await Purchases.getOfferings();
+      const o = result.offerings;
+      const allKeys = Object.keys(o?.all || {});
+      const cur = o?.current;
+      return `all:[${allKeys}] cur:${cur?.identifier ?? 'null'} pkgs:${cur?.availablePackages?.length ?? 0} raw:${JSON.stringify(result).substring(0, 300)}`;
+    } catch (error: any) {
+      return `err:${error.message || error}`;
     }
   }
 

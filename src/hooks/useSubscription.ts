@@ -72,11 +72,12 @@ export function useSubscription(): UseSubscriptionReturn {
         }
 
         steps.push('5:getOfferings');
-        const [offerings, customerInfo] = await Promise.all([
+        const [offerings, customerInfo, rawDebug] = await Promise.all([
           revenueCatService.getOfferings(),
           revenueCatService.getCustomerInfo(),
+          revenueCatService.getOfferingsRaw(),
         ]);
-        steps.push(`6:off=${!!offerings},cur=${!!offerings?.current},pkgs=${offerings?.current?.availablePackages?.length ?? 0}`);
+        steps.push(`6:${rawDebug}`);
 
         const isPremium = customerInfo?.entitlements?.active?.[ENTITLEMENT_ID]?.isActive ?? false;
 
