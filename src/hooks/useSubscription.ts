@@ -72,6 +72,18 @@ export function useSubscription(): UseSubscriptionReturn {
           revenueCatService.getCustomerInfo(),
         ]);
 
+        // Debug: log what RevenueCat returns
+        console.log('[useSubscription] Current offering:', offerings?.current?.identifier);
+        console.log('[useSubscription] Available packages:', 
+          offerings?.current?.availablePackages?.map(p => ({
+            type: p.packageType,
+            id: p.identifier,
+            productId: p.product?.identifier,
+            price: p.product?.priceString,
+          }))
+        );
+        console.log('[useSubscription] All offering keys:', offerings ? Object.keys(offerings.all || {}) : 'none');
+
         const isPremium = customerInfo?.entitlements?.active?.[ENTITLEMENT_ID]?.isActive ?? false;
 
         setState(prev => ({

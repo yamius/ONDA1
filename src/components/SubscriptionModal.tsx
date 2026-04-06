@@ -66,6 +66,17 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
   const yearlyPackage = getYearlyPackage();
   const monthlyPackage = getMonthlyPackage();
 
+  // Debug info for IAP troubleshooting
+  const debugInfo = useMemo(() => {
+    if (!offerings) return 'Offerings: null (not loaded)';
+    const current = offerings.current;
+    if (!current) return 'Offerings loaded but current=null';
+    const pkgs = current.availablePackages?.map(p => 
+      `${p.packageType}:${p.product?.identifier}`
+    ).join(', ') || 'no packages';
+    return `Offering: ${current.identifier} | Packages: [${pkgs}] | yearly=${!!yearlyPackage} monthly=${!!monthlyPackage}`;
+  }, [offerings, yearlyPackage, monthlyPackage]);
+
   useEffect(() => {
     if (isPremium && isOpen) {
       onClose();
@@ -303,6 +314,11 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
                 ? t('subscription.restoring', 'Restoring...')
                 : t('subscription.restore', 'Restore Purchases')}
             </button>
+
+            {/* DEBUG: IAP troubleshooting - remove after fix */}
+            <div className="mt-3 p-2 rounded bg-black/40 text-white/60 text-[10px] font-mono break-all leading-relaxed">
+              {debugInfo}
+            </div>
 
             {/* Legal Links */}
             <div className="flex items-center justify-center gap-3 mt-4 text-white/40 text-xs">
