@@ -58,12 +58,17 @@ export function useSubscription(): UseSubscriptionReturn {
 
       try {
         // Initialize RevenueCat
+        console.log('[useSubscription] Initializing RC, platform:', platform);
         await revenueCatService.initialize();
+        console.log('[useSubscription] RC initialized, isInit:', revenueCatService.isInitialized());
 
         // Login with Supabase user ID if authenticated
         const { data: { user } } = await supabase.auth.getUser();
         if (user) {
+          console.log('[useSubscription] Logging in user:', user.id);
           await revenueCatService.login(user.id);
+        } else {
+          console.log('[useSubscription] No Supabase user, skipping login');
         }
 
         // Load offerings and customer info
@@ -73,6 +78,7 @@ export function useSubscription(): UseSubscriptionReturn {
         ]);
 
         // Debug: log what RevenueCat returns
+        console.log('[useSubscription] Offerings result:', JSON.stringify(offerings, null, 2));
         console.log('[useSubscription] Current offering:', offerings?.current?.identifier);
         console.log('[useSubscription] Available packages:', 
           offerings?.current?.availablePackages?.map(p => ({
@@ -82,7 +88,6 @@ export function useSubscription(): UseSubscriptionReturn {
             price: p.product?.priceString,
           }))
         );
-        console.log('[useSubscription] All offering keys:', offerings ? Object.keys(offerings.all || {}) : 'none');
 
         const isPremium = customerInfo?.entitlements?.active?.[ENTITLEMENT_ID]?.isActive ?? false;
 
@@ -99,7 +104,7 @@ export function useSubscription(): UseSubscriptionReturn {
         setState(prev => ({
           ...prev,
           isLoading: false,
-          error: error.message || 'Failed to initialize subscriptions',
+          error: `Init failed: ${platform} | ${error.message || error}`,
         }));
       }
     };
