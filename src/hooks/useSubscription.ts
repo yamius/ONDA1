@@ -204,19 +204,36 @@ export function useSubscription(): UseSubscriptionReturn {
     }
   }, [isNative]);
 
+  const getDefaultOffering = useCallback(() => {
+    const o = state.offerings;
+    if (!o) return null;
+    return o.current ?? o.all?.['default'] ?? null;
+  }, [state.offerings]);
+
   // Helper: Get yearly package
   const getYearlyPackage = useCallback((): PurchasesPackage | undefined => {
-    return state.offerings?.current?.availablePackages.find(
-      pkg => pkg.packageType === 'ANNUAL'
-    );
-  }, [state.offerings]);
+    const offering = getDefaultOffering() as any;
+    if (!offering) return undefined;
+    // Try availablePackages first, then direct property (Capacitor plugin format)
+    if (offering.availablePackages?.length) {
+      return offering.availablePackages.find(
+        (pkg: PurchasesPackage) => pkg.packageType === 'ANNUAL'
+      );
+    }
+    return offering.annual ?? offering.yearly ?? undefined;
+  }, [getDefaultOffering]);
 
   // Helper: Get monthly package
   const getMonthlyPackage = useCallback((): PurchasesPackage | undefined => {
-    return state.offerings?.current?.availablePackages.find(
-      pkg => pkg.packageType === 'MONTHLY'
-    );
-  }, [state.offerings]);
+    const offering = getDefaultOffering() as any;
+    if (!offering) return undefined;
+    if (offering.availablePackages?.length) {
+      return offering.availablePackages.find(
+        (pkg: PurchasesPackage) => pkg.packageType === 'MONTHLY'
+      );
+    }
+    return offering.monthly ?? undefined;
+  }, [getDefaultOffering]);
 
   // Helper: Format price string
   const formatPrice = useCallback((pkg: PurchasesPackage): string => {

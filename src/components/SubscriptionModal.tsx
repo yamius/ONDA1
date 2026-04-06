@@ -68,18 +68,12 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
 
   // Debug info for IAP troubleshooting
   const debugInfo = useMemo(() => {
-    const platform = Capacitor.getPlatform();
-    const isNat = Capacitor.isNativePlatform();
-    const prefix = `P:${platform} N:${isNat} L:${isLoading}`;
-    if (error) return `${prefix} | ERR: ${error}`;
-    if (!offerings) return `${prefix} | Offerings: null`;
-    const current = offerings.current;
-    if (!current) return `${prefix} | current=null, keys:${Object.keys(offerings.all || {}).join(',')}`;
-    const pkgs = current.availablePackages?.map(p => 
-      `${p.packageType}:${p.product?.identifier}`
-    ).join(', ') || 'no packages';
-    return `${prefix} | ${current.identifier} | [${pkgs}] | Y=${!!yearlyPackage} M=${!!monthlyPackage}`;
-  }, [offerings, yearlyPackage, monthlyPackage, error, isLoading]);
+    const prefix = `Y=${!!yearlyPackage} M=${!!monthlyPackage}`;
+    if (error) return `${prefix} | ${error}`;
+    if (!offerings) return `${prefix} | no offerings`;
+    const allKeys = Object.keys(offerings.all || {});
+    return `${prefix} | cur=${offerings.current?.identifier ?? 'null'} all=[${allKeys}]`;
+  }, [offerings, yearlyPackage, monthlyPackage, error]);
 
   useEffect(() => {
     if (isPremium && isOpen) {
