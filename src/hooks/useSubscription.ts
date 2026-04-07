@@ -72,12 +72,12 @@ export function useSubscription(): UseSubscriptionReturn {
         }
 
         steps.push('5:getOfferings');
-        const [offerings, customerInfo, rawDebug] = await Promise.all([
+        const [offerings, customerInfo] = await Promise.all([
           revenueCatService.getOfferings(),
           revenueCatService.getCustomerInfo(),
-          revenueCatService.getOfferingsRaw(),
         ]);
-        steps.push(`6:${rawDebug}`);
+        const oa = offerings as any;
+        steps.push(`6:off=${!!offerings},cur=${!!oa?.current},pkgs=${oa?.current?.availablePackages?.length ?? 0},hasPkgs=${!!oa?.availablePackages}`);
 
         const isPremium = customerInfo?.entitlements?.active?.[ENTITLEMENT_ID]?.isActive ?? false;
 
@@ -205,20 +205,14 @@ export function useSubscription(): UseSubscriptionReturn {
   }, [isNative]);
 
   const getDefaultOffering = useCallback(() => {
-    const o = state.offerings;
+    const o = state.offerings as any;
     if (!o) return null;
+    // Direct current
     if (o.current) return o.current;
-    // Capacitor plugin may return all as a plain object or different structure
-    const all = o.all as any;
-    if (!all) return null;
-    // Try direct property access
-    if (all['default']) return all['default'];
-    if (all.default) return all.default;
-    // Try first offering if only one exists
-    const keys = Object.keys(all);
-    if (keys.length === 1) return all[keys[0]];
-    // Last resort: if offerings itself has availablePackages (flat structure)
-    if ((o as any).availablePackages) return o;
+    // Via all map
+    if (o.all?.['default']) return o.all['default'];
+    // Offerings itself might be the offering (flat structure from Capacitor)
+    if (o.availablePackages) return o;
     return null;
   }, [state.offerings]);
 
