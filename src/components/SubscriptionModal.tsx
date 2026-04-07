@@ -52,7 +52,6 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
     isLoading,
     isPurchasing,
     isRestoring,
-    offerings,
     isPremium,
     error,
     purchase,
@@ -66,16 +65,6 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
   const yearlyPackage = getYearlyPackage();
   const monthlyPackage = getMonthlyPackage();
 
-  // Debug info for IAP troubleshooting
-  const debugInfo = useMemo(() => {
-    const prefix = `Y=${!!yearlyPackage} M=${!!monthlyPackage}`;
-    if (!offerings) return `${prefix} | no offerings`;
-    const all = offerings.all as any;
-    const def = all?.['default'] ?? all?.default;
-    const pkgs = def?.availablePackages;
-    const pkgTypes = Array.isArray(pkgs) ? pkgs.map((p: any) => p.packageType || p.identifier).join(',') : String(typeof pkgs);
-    return `${prefix} | def=${!!def} pkgCount=${Array.isArray(pkgs) ? pkgs.length : 0} types=[${pkgTypes}]`;
-  }, [offerings, yearlyPackage, monthlyPackage]);
 
   useEffect(() => {
     if (isPremium && isOpen) {
@@ -314,11 +303,6 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
                 ? t('subscription.restoring', 'Restoring...')
                 : t('subscription.restore', 'Restore Purchases')}
             </button>
-
-            {/* DEBUG: IAP troubleshooting - remove after fix */}
-            <div className="mt-3 p-2 rounded bg-black/40 text-white/60 text-[10px] font-mono break-all leading-relaxed">
-              {debugInfo}
-            </div>
 
             {/* Legal Links */}
             <div className="flex items-center justify-center gap-3 mt-4 text-white/40 text-xs">

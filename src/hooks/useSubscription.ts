@@ -56,28 +56,18 @@ export function useSubscription(): UseSubscriptionReturn {
         return;
       }
 
-      const steps: string[] = [];
       try {
-        steps.push('1:init');
         await revenueCatService.initialize();
-        steps.push(`2:isInit=${revenueCatService.isInitialized()}`);
 
         const { data: { user } } = await supabase.auth.getUser();
         if (user) {
-          steps.push('3:login');
           await revenueCatService.login(user.id);
-          steps.push('4:loggedIn');
-        } else {
-          steps.push('3:noUser');
         }
 
-        steps.push('5:getOfferings');
         const [offerings, customerInfo] = await Promise.all([
           revenueCatService.getOfferings(),
           revenueCatService.getCustomerInfo(),
         ]);
-        const oa = offerings as any;
-        steps.push(`6:off=${!!offerings},cur=${!!oa?.current},pkgs=${oa?.current?.availablePackages?.length ?? 0},hasPkgs=${!!oa?.availablePackages}`);
 
         const isPremium = customerInfo?.entitlements?.active?.[ENTITLEMENT_ID]?.isActive ?? false;
 
@@ -87,14 +77,14 @@ export function useSubscription(): UseSubscriptionReturn {
           offerings,
           customerInfo,
           isPremium,
-          error: `OK: ${steps.join(' > ')}`,
+          error: null,
         }));
       } catch (error: any) {
-        steps.push(`ERR:${error.message || error}`);
+        console.error('[useSubscription] Init error:', error);
         setState(prev => ({
           ...prev,
           isLoading: false,
-          error: steps.join(' > '),
+          error: error.message || 'Failed to initialize subscriptions',
         }));
       }
     };
