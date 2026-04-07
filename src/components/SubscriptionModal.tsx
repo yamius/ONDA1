@@ -66,12 +66,11 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
   const monthlyPackage = getMonthlyPackage();
 
 
-  // TODO: re-enable auto-close when done testing
-  // useEffect(() => {
-  //   if (isPremium && isOpen) {
-  //     onClose();
-  //   }
-  // }, [isPremium, isOpen, onClose]);
+  useEffect(() => {
+    if (isPremium && isOpen) {
+      onClose();
+    }
+  }, [isPremium, isOpen, onClose]);
 
   const handlePurchase = async () => {
     setPurchaseError(null);
