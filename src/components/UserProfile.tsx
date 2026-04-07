@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { User, LogOut, X } from 'lucide-react';
+import { User, LogOut, Trash2, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
 import type { UserProfile as UserProfileType } from '../lib/supabase';
@@ -14,6 +14,9 @@ interface UserProfileProps {
 export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose, isLightTheme }) => {
   const { t } = useTranslation();
   const [isLoggingOut, setIsLoggingOut] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
+  const [deleteError, setDeleteError] = useState<string | null>(null);
 
   const handleSignOut = async () => {
     setIsLoggingOut(true);
@@ -26,6 +29,29 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
       alert('Ошибка при выходе из аккаунта');
     } finally {
       setIsLoggingOut(false);
+    }
+  };
+
+  const handleDeleteAccount = async () => {
+    setIsDeleting(true);
+    setDeleteError(null);
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session) throw new Error('Not authenticated');
+
+      const { data, error } = await supabase.functions.invoke('delete-account', {
+        headers: { Authorization: `Bearer ${session.access_token}` },
+      });
+
+      if (error) throw error;
+      if (data?.error) throw new Error(data.error);
+
+      await supabase.auth.signOut();
+      window.location.reload();
+    } catch (error: any) {
+      console.error('Error deleting account:', error);
+      setDeleteError(error.message || t('auth.delete_error', 'Failed to delete account'));
+      setIsDeleting(false);
     }
   };
 
@@ -102,7 +128,65 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
           <LogOut className="w-5 h-5" />
           {isLoggingOut ? `${t('auth.sign_out')}...` : t('auth.sign_out')}
         </button>
+
+        <button
+          onClick={() => setShowDeleteConfirm(true)}
+          className={`w-full mt-3 py-2 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-xs sm:text-sm ${
+            isLightTheme
+              ? 'text-gray-400 hover:text-red-500'
+              : 'text-white/30 hover:text-red-400'
+          }`}
+        >
+          <Trash2 className="w-4 h-4" />
+          {t('auth.delete_account', 'Delete Account')}
+        </button>
       </div>
+
+      {showDeleteConfirm && (
+        <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] flex items-center justify-center p-4">
+          <div className={`max-w-sm w-full rounded-2xl p-6 ${
+            isLightTheme ? 'bg-white' : 'bg-gray-900 border border-red-500/30'
+          }`}>
+            <h3 className={`text-lg font-bold mb-2 ${isLightTheme ? 'text-gray-900' : 'text-white'}`}>
+              {t('auth.delete_confirm_title', 'Delete Account?')}
+            </h3>
+            <p className={`text-sm mb-6 ${isLightTheme ? 'text-gray-600' : 'text-white/70'}`}>
+              {t('auth.delete_confirm_message', 'This will permanently delete your account and all associated data. This action cannot be undone.')}
+            </p>
+
+            {deleteError && (
+              <div className="mb-4 p-3 rounded-lg bg-red-500/20 text-red-300 text-sm text-center">
+                {deleteError}
+              </div>
+            )}
+
+            <div className="flex gap-3">
+              <button
+                onClick={() => { setShowDeleteConfirm(false); setDeleteError(null); }}
+                disabled={isDeleting}
+                className={`flex-1 py-3 rounded-xl font-medium text-sm ${
+                  isLightTheme
+                    ? 'bg-gray-100 hover:bg-gray-200 text-gray-700'
+                    : 'bg-white/10 hover:bg-white/20 text-white'
+                }`}
+              >
+                {t('common.cancel', 'Cancel')}
+              </button>
+              <button
+                onClick={handleDeleteAccount}
+                disabled={isDeleting}
+                className={`flex-1 py-3 rounded-xl font-medium text-sm bg-red-600 hover:bg-red-700 text-white ${
+                  isDeleting ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
+              >
+                {isDeleting
+                  ? t('auth.deleting', 'Deleting...')
+                  : t('auth.delete_confirm', 'Delete')}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
