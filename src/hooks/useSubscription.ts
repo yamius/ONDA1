@@ -69,7 +69,10 @@ export function useSubscription(): UseSubscriptionReturn {
           revenueCatService.getCustomerInfo(),
         ]);
 
-        const isPremium = customerInfo?.entitlements?.active?.[ENTITLEMENT_ID]?.isActive ?? false;
+        const entitlement = customerInfo?.entitlements?.active?.[ENTITLEMENT_ID];
+        const isPremium = entitlement?.isActive ?? false;
+
+        const debugCI = `premium=${isPremium} ent=${!!entitlement} active=${JSON.stringify(Object.keys(customerInfo?.entitlements?.active || {})).substring(0, 100)} ciKeys=${Object.keys(customerInfo || {}).join(',')}`;
 
         setState(prev => ({
           ...prev,
@@ -77,7 +80,7 @@ export function useSubscription(): UseSubscriptionReturn {
           offerings,
           customerInfo,
           isPremium,
-          error: null,
+          error: debugCI,
         }));
       } catch (error: any) {
         console.error('[useSubscription] Init error:', error);
