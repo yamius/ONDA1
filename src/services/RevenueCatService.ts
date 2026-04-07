@@ -70,7 +70,8 @@ class RevenueCatService {
     }
 
     try {
-      const { customerInfo } = await Purchases.logIn({ appUserID: userId });
+      const result = await Purchases.logIn({ appUserID: userId });
+      const customerInfo = result.customerInfo ?? (result as any);
       console.log('[RevenueCat] User logged in:', userId);
       return customerInfo;
     } catch (error) {
@@ -122,12 +123,13 @@ class RevenueCatService {
     }
 
     try {
-      const { customerInfo } = await Purchases.purchasePackage({ aPackage: pkg });
-      console.log('[RevenueCat] Purchase successful:', customerInfo);
+      const result = await Purchases.purchasePackage({ aPackage: pkg });
+      // Capacitor plugin may return customerInfo directly or wrapped
+      const customerInfo = result.customerInfo ?? (result as any);
+      console.log('[RevenueCat] Purchase successful');
       return customerInfo;
     } catch (error: any) {
-      // User cancelled
-      if (error.userCancelled) {
+      if (error.userCancelled || error.code === 1) {
         console.log('[RevenueCat] User cancelled purchase');
         return null;
       }
@@ -145,8 +147,9 @@ class RevenueCatService {
     }
 
     try {
-      const { customerInfo } = await Purchases.restorePurchases();
-      console.log('[RevenueCat] Purchases restored:', customerInfo);
+      const result = await Purchases.restorePurchases();
+      const customerInfo = result.customerInfo ?? (result as any);
+      console.log('[RevenueCat] Purchases restored');
       return customerInfo;
     } catch (error) {
       console.error('[RevenueCat] Restore error:', error);
@@ -163,8 +166,8 @@ class RevenueCatService {
     }
 
     try {
-      const { customerInfo } = await Purchases.getCustomerInfo();
-      return customerInfo;
+      const result = await Purchases.getCustomerInfo();
+      return result.customerInfo ?? (result as any);
     } catch (error) {
       console.error('[RevenueCat] Get customer info error:', error);
       return null;
