@@ -66,12 +66,11 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
   const monthlyPackage = getMonthlyPackage();
 
 
-  // Temporarily disabled for debugging
-  // useEffect(() => {
-  //   if (isPremium && isOpen) {
-  //     onClose();
-  //   }
-  // }, [isPremium, isOpen, onClose]);
+  useEffect(() => {
+    if (isPremium && isOpen) {
+      onClose();
+    }
+  }, [isPremium, isOpen, onClose]);
 
   const handlePurchase = async () => {
     setPurchaseError(null);
@@ -304,13 +303,6 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
                 ? t('subscription.restoring', 'Restoring...')
                 : t('subscription.restore', 'Restore Purchases')}
             </button>
-
-            {/* DEBUG */}
-            {error && (
-              <div className="mt-3 p-2 rounded bg-black/40 text-white/60 text-[10px] font-mono break-all leading-relaxed">
-                {error}
-              </div>
-            )}
 
             {/* Legal Links */}
             <div className="flex items-center justify-center gap-3 mt-4 text-white/40 text-xs">
