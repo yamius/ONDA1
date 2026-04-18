@@ -12,6 +12,7 @@ interface SubscriptionModalProps {
   isOpen: boolean;
   onClose: () => void;
   activeCircuit?: number;
+  onSubscribed?: () => void;
 }
 
 const THEMES = {
@@ -41,7 +42,7 @@ const THEMES = {
   },
 } as const;
 
-export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: SubscriptionModalProps) {
+export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscribed }: SubscriptionModalProps) {
   const { t } = useTranslation();
   const { track } = useAnalytics();
   const [selectedPlan, setSelectedPlan] = useState<'yearly' | 'monthly'>('yearly');
@@ -120,6 +121,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
           plan: selectedPlan,
           product_id: pkg.product.identifier,
         });
+        onSubscribed?.();
         onClose();
       } else {
         track('purchase_cancelled', { plan: selectedPlan });
@@ -138,6 +140,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
     try {
       const success = await restore();
       if (success) {
+        onSubscribed?.();
         onClose();
       } else {
         setPurchaseError(t('subscription.error_no_purchases', 'No purchases to restore'));

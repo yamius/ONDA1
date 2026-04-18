@@ -48,8 +48,9 @@ const OndaLevel1 = () => {
   const watchHeartRate = useWatchHeartRate();
   const permissions = usePermissions();
   const { track, trackPractice } = useAnalytics();
-  const { isPremium, isLoading: isSubLoading } = useSubscription();
+  const { isPremium, isLoading: isSubLoading, refresh: refreshSubscription } = useSubscription();
   const platform = Capacitor.getPlatform();
+  const [pendingStartPracticeAfterSubscribe, setPendingStartPracticeAfterSubscribe] = useState(false);
   
   useKeepAwake(true);
   
@@ -57,6 +58,13 @@ const OndaLevel1 = () => {
   useEffect(() => {
     track('app_open', { platform });
   }, []);
+
+  useEffect(() => {
+    if (!pendingStartPracticeAfterSubscribe) return;
+    if (!isPremium) return;
+    setPendingStartPracticeAfterSubscribe(false);
+    beginPractice();
+  }, [pendingStartPracticeAfterSubscribe, isPremium]);
 
   // Track first heart rate from watch (successful connection)
   const hasTrackedWatchConnection = useRef(false);
@@ -3542,6 +3550,7 @@ const OndaLevel1 = () => {
                     practice_id: activePractice?.id,
                     practice_type: 'basic',
                   });
+                  setPendingStartPracticeAfterSubscribe(true);
                   setShowSubscriptionModal(true);
                 }}
                 className="bg-white/30 hover:bg-white/40 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl border border-white/30"
@@ -3815,6 +3824,9 @@ const OndaLevel1 = () => {
           isOpen={showSubscriptionModal}
           onClose={() => setShowSubscriptionModal(false)}
           activeCircuit={activeCircuit}
+          onSubscribed={async () => {
+            await refreshSubscription();
+          }}
         />
       </div>
     );
@@ -6715,6 +6727,9 @@ const OndaLevel1 = () => {
         isOpen={showSubscriptionModal}
         onClose={() => setShowSubscriptionModal(false)}
         activeCircuit={activeCircuit}
+        onSubscribed={async () => {
+          await refreshSubscription();
+        }}
       />
 
       {/* Боковое меню */}

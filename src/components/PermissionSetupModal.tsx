@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Heart, Mic, Check } from 'lucide-react';
+import { X, Heart, Check } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { PermissionStatus } from '../services/PermissionsService';
 
@@ -24,12 +24,6 @@ export function PermissionSetupModal({
   const [requestStatus, setRequestStatus] = useState<PermissionStatus>(currentStatus);
 
   const PERMISSION_INFO = {
-    microphone: {
-      icon: Mic,
-      title: t('permissions.microphone_title'),
-      description: t('permissions.microphone_description'),
-      color: 'blue',
-    },
     healthRead: {
       icon: Heart,
       title: t('permissions.heart_rate_title'),
@@ -48,7 +42,7 @@ export function PermissionSetupModal({
       
       // Если критичные разрешения получены, закрываем модалку и показываем Watch prompt
       // healthWrite не проверяем - capacitor-health не установлен
-      if (status.microphone && status.healthRead) {
+      if (status.healthRead) {
         setTimeout(() => {
           onClose();
           onPermissionsGranted?.();
@@ -98,19 +92,7 @@ export function PermissionSetupModal({
         {/* Content */}
         <div className="flex-1 overflow-y-auto px-6 pb-6 sm:px-8 sm:pb-8 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
           <div className="space-y-4 mt-4">
-            {/* Microphone - ПЕРВЫЙ (проще!) */}
-            {PERMISSION_INFO.microphone && (
-              <PermissionCard
-                icon={PERMISSION_INFO.microphone.icon}
-                title={PERMISSION_INFO.microphone.title}
-                description={PERMISSION_INFO.microphone.description}
-                color={PERMISSION_INFO.microphone.color}
-                granted={requestStatus.microphone}
-                colorClasses={getColorClasses(PERMISSION_INFO.microphone.color)}
-              />
-            )}
-
-            {/* Health Read - ВТОРОЙ */}
+            {/* Heart Rate */}
             {PERMISSION_INFO.healthRead && (
               <PermissionCard
                 icon={PERMISSION_INFO.healthRead.icon}

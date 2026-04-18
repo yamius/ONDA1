@@ -235,14 +235,11 @@ export class PermissionsService {
       notifications: false,
     };
 
-    // 1. Микрофон (проще!) - сначала простое разрешение
-    console.log('[Permissions] Requesting microphone permission...');
-    status.microphone = await this.requestMicrophonePermission();
-    onProgress?.('microphone', status.microphone);
-    
-    await this.delay(500);
+    // Микрофон НЕ запрашиваем на главном экране (чтобы не отпугивать).
+    // Он будет запрошен только в момент, когда реально нужен (эмоциональная проверка).
+    status.microphone = await this.checkMicrophonePermission();
 
-    // 2. HealthKit (только read) - capacitor-health не установлен
+    // HealthKit (только read) - capacitor-health не установлен
     // Пульс работает через нативный HKHealthStore в OndaWatchPlugin
     console.log('[Permissions] HealthKit works via native OndaWatchPlugin');
     status.healthRead = true; // Считаем что разрешение есть (работает нативно)
@@ -300,9 +297,8 @@ export class PermissionsService {
    * Проверяет нужно ли показывать баннер с запросом разрешений
    */
   static needsPermissionSetup(status: PermissionStatus): boolean {
-    // Показываем баннер если НЕТ микрофона
-    // healthRead работает через нативный код (не требует UI запроса)
-    return !status.microphone;
+    // Показываем экран setup только для Heart Rate (микрофон запрашиваем позже, по месту).
+    return !status.healthRead;
   }
 
   /**

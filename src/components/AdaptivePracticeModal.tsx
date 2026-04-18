@@ -523,10 +523,11 @@ type PracticeState = 'intro' | 'practice' | 'complete';
 export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned }: AdaptivePracticeModalProps) {
   const { t } = useTranslation();
   const vitalsData = useVitals();
-  const { isPremium, isLoading: isSubLoading } = useSubscription();
+  const { isPremium, isLoading: isSubLoading, refresh: refreshSubscription } = useSubscription();
   const { track } = useAnalytics();
   const platform = Capacitor.getPlatform();
   const [showPaywall, setShowPaywall] = useState(false);
+  const [pendingStartAfterSubscribe, setPendingStartAfterSubscribe] = useState(false);
   const [practiceState, setPracticeState] = useState<PracticeState>('intro');
   const [isPaused, setIsPaused] = useState(false);
   const [practiceTime, setPracticeTime] = useState(0);
@@ -550,6 +551,14 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   vitalsRef.current = vitalsData;
 
   const practice = adaptivePractices[practiceId];
+
+  useEffect(() => {
+    if (!pendingStartAfterSubscribe) return;
+    if (!isPremium) return;
+    setPendingStartAfterSubscribe(false);
+    setShowPaywall(false);
+    startPractice();
+  }, [pendingStartAfterSubscribe, isPremium]);
 
   useEffect(() => {
     console.log('AdaptivePracticeModal vitalsData:', {
@@ -1039,6 +1048,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   practice_id: practice.id,
                   practice_type: 'adaptive',
                 });
+                setPendingStartAfterSubscribe(true);
                 setShowPaywall(true);
               }}
               className="bg-white/30 hover:bg-white/40 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl border border-white/30"
@@ -1295,6 +1305,9 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       <SubscriptionModal
         isOpen={showPaywall}
         onClose={() => setShowPaywall(false)}
+        onSubscribed={async () => {
+          await refreshSubscription();
+        }}
       />
     </div>
   );
