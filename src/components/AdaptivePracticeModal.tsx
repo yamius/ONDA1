@@ -546,6 +546,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const timerRef = useRef<number | null>(null);
   const prevIsOpenRef = useRef(false);
   const modalOpenedAtRef = useRef<number | null>(null);
+  const [canClose, setCanClose] = useState(true);
   
   // Ref to store CURRENT vitals - updated every render, accessible in async functions
   const vitalsRef = useRef(vitalsData);
@@ -627,6 +628,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     if (isOpen && !wasOpen) {
       // Modal just opened - reset everything to initial state
       modalOpenedAtRef.current = Date.now();
+      setCanClose(false);
+      setTimeout(() => setCanClose(true), 1800);
       console.log('[AdaptivePractice] Modal opened - resetting state to intro');
       setPracticeState('intro');
       setPracticeTime(0);
@@ -967,11 +970,29 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     console.log('[AdaptivePractice] Practice state set to complete');
   };
 
-  const handleClose = async () => {
+  const handleClose = async (eventOrReason?: React.MouseEvent | string) => {
     const msSinceOpen = modalOpenedAtRef.current ? Date.now() - modalOpenedAtRef.current : null;
     const callerStack = new Error().stack?.split('\n').slice(1, 6).join(' | ') ?? 'no-stack';
+
+    let eventInfo: Record<string, unknown> = {};
+    if (eventOrReason && typeof eventOrReason === 'object' && 'nativeEvent' in eventOrReason) {
+      const e = eventOrReason as React.MouseEvent;
+      const ne = e.nativeEvent as MouseEvent & { pointerType?: string };
+      eventInfo = {
+        evt_isTrusted: ne?.isTrusted ?? null,
+        evt_type: ne?.type ?? null,
+        evt_detail: ne?.detail ?? null,
+        evt_x: ne?.clientX ?? null,
+        evt_y: ne?.clientY ?? null,
+        evt_pointerType: ne?.pointerType ?? null,
+        evt_targetTag: (e.target as HTMLElement)?.tagName ?? null,
+      };
+    }
+    const reasonTag = typeof eventOrReason === 'string' ? eventOrReason : 'x_button_click';
+
     const debugSnapshot = {
       surface: 'adaptive',
+      reason: reasonTag,
       msSinceOpen,
       practiceState,
       practiceId,
@@ -981,9 +1002,16 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       isSubLoading,
       platform,
       callerStack,
+      ...eventInfo,
     };
     console.warn('[DEBUG handleClose] called', debugSnapshot);
     track('practice_intro_closed_debug', debugSnapshot);
+
+    // Ghost-tap guard: ignore close attempts in the first 1800ms after modal opened.
+    if (msSinceOpen !== null && msSinceOpen < 1800 && practiceState === 'intro' && practiceTime === 0) {
+      console.warn('[DEBUG handleClose] BLOCKED by 1800ms guard', { msSinceOpen });
+      return;
+    }
 
     if (practiceRating > 0 && practiceTime > 0 && practice) {
       try {
@@ -1046,6 +1074,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
 
       <button
         onClick={handleClose}
+        disabled={!canClose}
+        style={!canClose ? { pointerEvents: 'none', opacity: 0.5 } : undefined}
         className="absolute top-[72px] right-6 z-50 bg-black/40 hover:bg-black/60 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110"
       >
         <X className="w-6 h-6" />

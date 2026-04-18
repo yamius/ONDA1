@@ -138,6 +138,7 @@ const OndaLevel1 = () => {
   const [debugInfo, setDebugInfo] = useState<string>('Loading...');
   const [completedPractices, setCompletedPractices] = useState({});
   const [practiceOpenedAtMs, setPracticeOpenedAtMs] = useState<number | null>(null);
+  const [canExitPractice, setCanExitPractice] = useState(true);
   const [practiceHistory, setPracticeHistory] = useState([]);
   const [activePractice, setActivePractice] = useState(null);
   const [practiceState, setPracticeState] = useState('intro');
@@ -1936,6 +1937,8 @@ const OndaLevel1 = () => {
     if (space) {
       setActivePractice({ ...space, id: practiceId, maxQnt: baseQnt });
       setPracticeOpenedAtMs(Date.now());
+      setCanExitPractice(false);
+      setTimeout(() => setCanExitPractice(true), 1800);
       setPracticeState('intro');
       setPracticeTime(0);
       setQualityScore(0);
@@ -2201,24 +2204,46 @@ const OndaLevel1 = () => {
     }
   };
 
-  const exitPractice = async () => {
+  const exitPractice = async (eventOrReason?: React.MouseEvent | string) => {
     const msSinceOpen = practiceOpenedAtMs ? Date.now() - practiceOpenedAtMs : null;
     const callerStack = new Error().stack?.split('\n').slice(1, 6).join(' | ') ?? 'no-stack';
+
+    // Extract event details if called from onClick (helps distinguish real tap vs synthetic)
+    let eventInfo: Record<string, unknown> = {};
+    if (eventOrReason && typeof eventOrReason === 'object' && 'nativeEvent' in eventOrReason) {
+      const e = eventOrReason as React.MouseEvent;
+      const ne = e.nativeEvent as MouseEvent & { pointerType?: string };
+      eventInfo = {
+        evt_isTrusted: ne?.isTrusted ?? null,
+        evt_type: ne?.type ?? null,
+        evt_detail: ne?.detail ?? null,
+        evt_x: ne?.clientX ?? null,
+        evt_y: ne?.clientY ?? null,
+        evt_pointerType: ne?.pointerType ?? null,
+        evt_targetTag: (e.target as HTMLElement)?.tagName ?? null,
+        evt_currentTargetTag: (e.currentTarget as HTMLElement)?.tagName ?? null,
+      };
+    }
+    const reasonTag = typeof eventOrReason === 'string' ? eventOrReason : 'x_button_click';
+
     const debugSnapshot = {
       surface: 'basic',
+      reason: reasonTag,
       msSinceOpen,
       practiceState,
       practiceId: activePractice?.id ?? null,
       practiceTime,
       platform,
       callerStack,
+      ...eventInfo,
     };
     console.warn('[DEBUG exitPractice] called', debugSnapshot);
     track('practice_intro_closed_debug', debugSnapshot);
 
-    // Prevent accidental immediate close right after opening a practice (iOS click-through)
-    if (practiceOpenedAtMs && Date.now() - practiceOpenedAtMs < 800) {
-      console.warn('[DEBUG exitPractice] BLOCKED by 800ms guard', { msSinceOpen });
+    // Prevent accidental immediate close right after opening a practice (iOS click-through / ghost tap).
+    // Telemetry showed closes at 1.4-1.6s, so the previous 800ms window was insufficient.
+    if (practiceOpenedAtMs && Date.now() - practiceOpenedAtMs < 1800) {
+      console.warn('[DEBUG exitPractice] BLOCKED by 1800ms guard', { msSinceOpen });
       return;
     }
     setIsMinimalMode(false);
@@ -3519,6 +3544,8 @@ const OndaLevel1 = () => {
 
         <button
           onClick={exitPractice}
+          disabled={!canExitPractice}
+          style={!canExitPractice ? { pointerEvents: 'none', opacity: 0.5 } : undefined}
           className="absolute top-[72px] right-6 z-50 bg-black/40 hover:bg-black/60 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110"
         >
           <X className="w-6 h-6" />
