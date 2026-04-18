@@ -3810,6 +3810,12 @@ const OndaLevel1 = () => {
             </div>
           </div>
         )}
+
+        <SubscriptionModal
+          isOpen={showSubscriptionModal}
+          onClose={() => setShowSubscriptionModal(false)}
+          activeCircuit={activeCircuit}
+        />
       </div>
     );
   }

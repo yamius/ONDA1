@@ -61,6 +61,7 @@ Detailed technical guides for specific tasks.
 
 ### Monetization
 - **[In-App Purchase](./guides/in-app-purchase.md)** — RevenueCat subscription integration
+- **[Paywall Implementation & Roadmap](./guides/paywall.md)** — Пэйволл на «Начать практику»: что сделано и roadmap
 
 ### Analytics
 - **[Analytics Views](./guides/analytics-views.md)** — SQL views for product metrics (DAU, retention, funnels)

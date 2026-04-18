@@ -153,9 +153,11 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
         paddingTop: 'env(safe-area-inset-top)',
         paddingBottom: 'env(safe-area-inset-bottom)',
       }}
-      onClick={onClose}
     >
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
+      <div
+        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
+        onClick={onClose}
+      />
 
       <div
         className="relative w-full h-full sm:max-w-sm sm:h-auto sm:max-h-[90vh] sm:rounded-2xl overflow-hidden shadow-2xl flex flex-col transition-all duration-500"
