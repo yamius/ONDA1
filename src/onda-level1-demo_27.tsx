@@ -59,34 +59,8 @@ const OndaLevel1 = () => {
     track('app_open', { platform });
   }, []);
 
-  // Monitor activePractice transitions. Catches ANY path that closes the practice,
-  // including paths that bypass exitPractice (setState via closure, unmount, etc).
   const prevActivePracticeIdRef = useRef<string | null>(null);
   const exitPracticeCalledRecentlyRef = useRef<number>(0);
-  useEffect(() => {
-    const prevId = prevActivePracticeIdRef.current;
-    const currId = activePractice?.id ?? null;
-    prevActivePracticeIdRef.current = currId;
-    // Transition: had practice → now null
-    if (prevId && !currId) {
-      const sinceExit = Date.now() - exitPracticeCalledRecentlyRef.current;
-      const viaExitPractice = sinceExit < 100;
-      track('practice_intro_closed_debug', {
-        surface: 'basic',
-        reason: viaExitPractice ? 'monitor_after_exit' : 'monitor_unknown_source',
-        msSinceOpen: practiceOpenedAtMs ? Date.now() - practiceOpenedAtMs : null,
-        prevPracticeId: prevId,
-        practiceState,
-        practiceTime,
-        sinceExit,
-      });
-      console.warn('[DEBUG monitor] activePractice cleared', {
-        prevId,
-        viaExitPractice,
-        sinceExit,
-      });
-    }
-  }, [activePractice]);
 
   useEffect(() => {
     if (!pendingStartPracticeAfterSubscribe) return;
@@ -168,6 +142,33 @@ const OndaLevel1 = () => {
   const [completedPractices, setCompletedPractices] = useState({});
   const [practiceOpenedAtMs, setPracticeOpenedAtMs] = useState<number | null>(null);
   const [canExitPractice, setCanExitPractice] = useState(true);
+
+  // Monitor activePractice transitions. Catches ANY path that closes the practice,
+  // including paths that bypass exitPractice (setState via closure, unmount, etc).
+  // Must be declared AFTER activePractice/practiceOpenedAtMs useState to avoid TDZ.
+  useEffect(() => {
+    const prevId = prevActivePracticeIdRef.current;
+    const currId = activePractice?.id ?? null;
+    prevActivePracticeIdRef.current = currId;
+    if (prevId && !currId) {
+      const sinceExit = Date.now() - exitPracticeCalledRecentlyRef.current;
+      const viaExitPractice = sinceExit < 100;
+      track('practice_intro_closed_debug', {
+        surface: 'basic',
+        reason: viaExitPractice ? 'monitor_after_exit' : 'monitor_unknown_source',
+        msSinceOpen: practiceOpenedAtMs ? Date.now() - practiceOpenedAtMs : null,
+        prevPracticeId: prevId,
+        practiceState,
+        practiceTime,
+        sinceExit,
+      });
+      console.warn('[DEBUG monitor] activePractice cleared', {
+        prevId,
+        viaExitPractice,
+        sinceExit,
+      });
+    }
+  }, [activePractice]);
   const [practiceHistory, setPracticeHistory] = useState([]);
   const [activePractice, setActivePractice] = useState(null);
   const [practiceState, setPracticeState] = useState('intro');
