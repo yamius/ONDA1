@@ -142,10 +142,14 @@ const OndaLevel1 = () => {
   const [completedPractices, setCompletedPractices] = useState({});
   const [practiceOpenedAtMs, setPracticeOpenedAtMs] = useState<number | null>(null);
   const [canExitPractice, setCanExitPractice] = useState(true);
+  const [practiceHistory, setPracticeHistory] = useState([]);
+  const [activePractice, setActivePractice] = useState(null);
+  const [practiceState, setPracticeState] = useState('intro');
+  const [practiceTime, setPracticeTime] = useState(0);
 
   // Monitor activePractice transitions. Catches ANY path that closes the practice,
   // including paths that bypass exitPractice (setState via closure, unmount, etc).
-  // Must be declared AFTER activePractice/practiceOpenedAtMs useState to avoid TDZ.
+  // Must be declared AFTER activePractice/practiceState/practiceTime useState to avoid TDZ.
   useEffect(() => {
     const prevId = prevActivePracticeIdRef.current;
     const currId = activePractice?.id ?? null;
@@ -169,10 +173,6 @@ const OndaLevel1 = () => {
       });
     }
   }, [activePractice]);
-  const [practiceHistory, setPracticeHistory] = useState([]);
-  const [activePractice, setActivePractice] = useState(null);
-  const [practiceState, setPracticeState] = useState('intro');
-  const [practiceTime, setPracticeTime] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const [isMinimalMode, setIsMinimalMode] = useState(false);
   const [qualityScore, setQualityScore] = useState(0);
