@@ -62,6 +62,16 @@ const OndaLevel1 = () => {
   useEffect(() => {
     if (!pendingStartPracticeAfterSubscribe) return;
     if (!isPremium) return;
+    console.warn('[DEBUG basic] Auto-start firing from pendingStartPracticeAfterSubscribe effect', {
+      practiceId: activePractice?.id ?? null,
+      practiceState,
+    });
+    track('practice_intro_closed_debug', {
+      surface: 'basic',
+      reason: 'auto_start_after_subscribe',
+      practiceId: activePractice?.id ?? null,
+      practiceState,
+    });
     setPendingStartPracticeAfterSubscribe(false);
     beginPractice();
   }, [pendingStartPracticeAfterSubscribe, isPremium]);
@@ -2192,8 +2202,23 @@ const OndaLevel1 = () => {
   };
 
   const exitPractice = async () => {
+    const msSinceOpen = practiceOpenedAtMs ? Date.now() - practiceOpenedAtMs : null;
+    const callerStack = new Error().stack?.split('\n').slice(1, 6).join(' | ') ?? 'no-stack';
+    const debugSnapshot = {
+      surface: 'basic',
+      msSinceOpen,
+      practiceState,
+      practiceId: activePractice?.id ?? null,
+      practiceTime,
+      platform,
+      callerStack,
+    };
+    console.warn('[DEBUG exitPractice] called', debugSnapshot);
+    track('practice_intro_closed_debug', debugSnapshot);
+
     // Prevent accidental immediate close right after opening a practice (iOS click-through)
     if (practiceOpenedAtMs && Date.now() - practiceOpenedAtMs < 800) {
+      console.warn('[DEBUG exitPractice] BLOCKED by 800ms guard', { msSinceOpen });
       return;
     }
     setIsMinimalMode(false);

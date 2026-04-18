@@ -545,6 +545,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const [practiceRating, setPracticeRating] = useState(0);
   const timerRef = useRef<number | null>(null);
   const prevIsOpenRef = useRef(false);
+  const modalOpenedAtRef = useRef<number | null>(null);
   
   // Ref to store CURRENT vitals - updated every render, accessible in async functions
   const vitalsRef = useRef(vitalsData);
@@ -555,6 +556,18 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   useEffect(() => {
     if (!pendingStartAfterSubscribe) return;
     if (!isPremium) return;
+    console.warn('[DEBUG AdaptivePractice] Auto-start firing from pendingStartAfterSubscribe effect', {
+      practiceId,
+      practiceState,
+      msSinceOpen: modalOpenedAtRef.current ? Date.now() - modalOpenedAtRef.current : null,
+    });
+    track('practice_intro_closed_debug', {
+      surface: 'adaptive',
+      reason: 'auto_start_after_subscribe',
+      practiceId,
+      practiceState,
+      msSinceOpen: modalOpenedAtRef.current ? Date.now() - modalOpenedAtRef.current : null,
+    });
     setPendingStartAfterSubscribe(false);
     setShowPaywall(false);
     startPractice();
@@ -613,6 +626,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     
     if (isOpen && !wasOpen) {
       // Modal just opened - reset everything to initial state
+      modalOpenedAtRef.current = Date.now();
       console.log('[AdaptivePractice] Modal opened - resetting state to intro');
       setPracticeState('intro');
       setPracticeTime(0);
@@ -954,6 +968,23 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   };
 
   const handleClose = async () => {
+    const msSinceOpen = modalOpenedAtRef.current ? Date.now() - modalOpenedAtRef.current : null;
+    const callerStack = new Error().stack?.split('\n').slice(1, 6).join(' | ') ?? 'no-stack';
+    const debugSnapshot = {
+      surface: 'adaptive',
+      msSinceOpen,
+      practiceState,
+      practiceId,
+      practiceResolved: !!practice,
+      practiceTime,
+      isPremium,
+      isSubLoading,
+      platform,
+      callerStack,
+    };
+    console.warn('[DEBUG handleClose] called', debugSnapshot);
+    track('practice_intro_closed_debug', debugSnapshot);
+
     if (practiceRating > 0 && practiceTime > 0 && practice) {
       try {
         const { data: { user } } = await supabase.auth.getUser();
@@ -988,6 +1019,19 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     onClose();
   };
 
+  if (isOpen && !practice) {
+    console.warn('[DEBUG AdaptivePractice] Rendering null because practice is missing', {
+      practiceId,
+      availableKeys: Object.keys(adaptivePractices),
+      msSinceOpen: modalOpenedAtRef.current ? Date.now() - modalOpenedAtRef.current : null,
+    });
+    track('practice_intro_closed_debug', {
+      surface: 'adaptive',
+      reason: 'null_render_missing_practice',
+      practiceId,
+      msSinceOpen: modalOpenedAtRef.current ? Date.now() - modalOpenedAtRef.current : null,
+    });
+  }
   if (!isOpen || !practice) return null;
 
   const progress = practice.targetTime > 0 ? (practiceTime / practice.targetTime) * 100 : 0;

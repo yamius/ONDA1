@@ -49,7 +49,9 @@ export type AnalyticsEventName =
   // Errors
   | 'error'
   | 'audio_load_error'
-  | 'api_error';
+  | 'api_error'
+  // Diagnostics
+  | 'practice_intro_closed_debug';
 
 export interface AnalyticsEvent {
   event_name: AnalyticsEventName;
