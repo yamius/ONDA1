@@ -127,6 +127,7 @@ const OndaLevel1 = () => {
   const [artifacts, setArtifacts] = useState([]);
   const [debugInfo, setDebugInfo] = useState<string>('Loading...');
   const [completedPractices, setCompletedPractices] = useState({});
+  const [practiceOpenedAtMs, setPracticeOpenedAtMs] = useState<number | null>(null);
   const [practiceHistory, setPracticeHistory] = useState([]);
   const [activePractice, setActivePractice] = useState(null);
   const [practiceState, setPracticeState] = useState('intro');
@@ -1924,6 +1925,7 @@ const OndaLevel1 = () => {
     const space = practiceSpaces[practiceId];
     if (space) {
       setActivePractice({ ...space, id: practiceId, maxQnt: baseQnt });
+      setPracticeOpenedAtMs(Date.now());
       setPracticeState('intro');
       setPracticeTime(0);
       setQualityScore(0);
@@ -2190,6 +2192,10 @@ const OndaLevel1 = () => {
   };
 
   const exitPractice = async () => {
+    // Prevent accidental immediate close right after opening a practice (iOS click-through)
+    if (practiceOpenedAtMs && Date.now() - practiceOpenedAtMs < 800) {
+      return;
+    }
     setIsMinimalMode(false);
     const practiceId = activePractice?.id;
     const practiceName = circuits.flatMap(c => c.practices).find(p => p.id === activePractice?.id)?.name || '';
@@ -2211,6 +2217,7 @@ const OndaLevel1 = () => {
     }
     
     setActivePractice(null);
+    setPracticeOpenedAtMs(null);
     setPracticeState('intro');
     setPracticeTime(0);
     setQualityScore(0);
