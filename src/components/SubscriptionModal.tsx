@@ -77,6 +77,19 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
     }
   }, [isPremium, isOpen, onClose]);
 
+  useEffect(() => {
+    if (!isOpen) return;
+    if (!showAuthModal) return;
+
+    const { data } = supabase.auth.onAuthStateChange((event) => {
+      if (event === 'SIGNED_IN') {
+        setShowAuthModal(false);
+      }
+    });
+
+    return () => data.subscription.unsubscribe();
+  }, [isOpen, showAuthModal]);
+
   const handlePurchase = async () => {
     setPurchaseError(null);
 
