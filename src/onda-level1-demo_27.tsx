@@ -59,6 +59,35 @@ const OndaLevel1 = () => {
     track('app_open', { platform });
   }, []);
 
+  // Monitor activePractice transitions. Catches ANY path that closes the practice,
+  // including paths that bypass exitPractice (setState via closure, unmount, etc).
+  const prevActivePracticeIdRef = useRef<string | null>(null);
+  const exitPracticeCalledRecentlyRef = useRef<number>(0);
+  useEffect(() => {
+    const prevId = prevActivePracticeIdRef.current;
+    const currId = activePractice?.id ?? null;
+    prevActivePracticeIdRef.current = currId;
+    // Transition: had practice → now null
+    if (prevId && !currId) {
+      const sinceExit = Date.now() - exitPracticeCalledRecentlyRef.current;
+      const viaExitPractice = sinceExit < 100;
+      track('practice_intro_closed_debug', {
+        surface: 'basic',
+        reason: viaExitPractice ? 'monitor_after_exit' : 'monitor_unknown_source',
+        msSinceOpen: practiceOpenedAtMs ? Date.now() - practiceOpenedAtMs : null,
+        prevPracticeId: prevId,
+        practiceState,
+        practiceTime,
+        sinceExit,
+      });
+      console.warn('[DEBUG monitor] activePractice cleared', {
+        prevId,
+        viaExitPractice,
+        sinceExit,
+      });
+    }
+  }, [activePractice]);
+
   useEffect(() => {
     if (!pendingStartPracticeAfterSubscribe) return;
     if (!isPremium) return;
@@ -2205,6 +2234,7 @@ const OndaLevel1 = () => {
   };
 
   const exitPractice = async (eventOrReason?: React.MouseEvent | string) => {
+    exitPracticeCalledRecentlyRef.current = Date.now();
     const msSinceOpen = practiceOpenedAtMs ? Date.now() - practiceOpenedAtMs : null;
     const callerStack = new Error().stack?.split('\n').slice(1, 6).join(' | ') ?? 'no-stack';
 
