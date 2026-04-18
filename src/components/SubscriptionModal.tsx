@@ -3,7 +3,10 @@ import { X, Infinity, Headphones, Heart, RotateCcw } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { useSubscription } from '../hooks/useSubscription';
+import { useAnalytics } from '../hooks/useAnalytics';
+import { supabase } from '../lib/supabase';
 import { LegalModal } from './LegalModal';
+import { AuthModal } from './AuthModal';
 
 interface SubscriptionModalProps {
   isOpen: boolean;
@@ -40,9 +43,11 @@ const THEMES = {
 
 export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: SubscriptionModalProps) {
   const { t } = useTranslation();
+  const { track } = useAnalytics();
   const [selectedPlan, setSelectedPlan] = useState<'yearly' | 'monthly'>('yearly');
   const [legalModal, setLegalModal] = useState<'terms' | 'privacy' | null>(null);
   const [purchaseError, setPurchaseError] = useState<string | null>(null);
+  const [showAuthModal, setShowAuthModal] = useState(false);
 
   const isIOS = useMemo(() => Capacitor.getPlatform() === 'ios', []);
 
@@ -74,15 +79,43 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
 
   const handlePurchase = async () => {
     setPurchaseError(null);
+
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) {
+      track('paywall_auth_required', { plan: selectedPlan });
+      setShowAuthModal(true);
+      return;
+    }
+
     const pkg = selectedPlan === 'yearly' ? yearlyPackage : monthlyPackage;
     if (!pkg) {
       setPurchaseError(t('subscription.error_no_product', 'Product not available'));
       return;
     }
+
+    track('purchase_started', {
+      plan: selectedPlan,
+      product_id: pkg.product.identifier,
+      price: pkg.product.price,
+      currency: pkg.product.currencyCode,
+    });
+
     try {
       const success = await purchase(pkg);
-      if (success) onClose();
+      if (success) {
+        track('purchase_succeeded', {
+          plan: selectedPlan,
+          product_id: pkg.product.identifier,
+        });
+        onClose();
+      } else {
+        track('purchase_cancelled', { plan: selectedPlan });
+      }
     } catch (err: any) {
+      track('purchase_failed', {
+        plan: selectedPlan,
+        error: err?.message ?? 'unknown',
+      });
       setPurchaseError(err.message || t('subscription.error_purchase', 'Purchase failed'));
     }
   };
@@ -328,6 +361,13 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1 }: Subscr
         <LegalModal
           type={legalModal}
           onClose={() => setLegalModal(null)}
+          isLightTheme={false}
+        />
+      )}
+
+      {showAuthModal && (
+        <AuthModal
+          onClose={() => setShowAuthModal(false)}
           isLightTheme={false}
         />
       )}

@@ -29,6 +29,7 @@ import { rhythmStore } from './sleep/rhythm';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
+import { useSubscription } from './hooks/useSubscription';
 import * as Sentry from '@sentry/capacitor';
 import WelcomeScene from './components/WelcomeScene';
 import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './constants/practiceAssets';
@@ -47,6 +48,7 @@ const OndaLevel1 = () => {
   const watchHeartRate = useWatchHeartRate();
   const permissions = usePermissions();
   const { track, trackPractice } = useAnalytics();
+  const { isPremium, isLoading: isSubLoading } = useSubscription();
   const platform = Capacitor.getPlatform();
   
   useKeepAwake(true);
@@ -3530,7 +3532,18 @@ const OndaLevel1 = () => {
                 </span>
               </div>
               <button
-                onClick={beginPractice}
+                onClick={() => {
+                  if (isPremium || isSubLoading || platform !== 'ios') {
+                    beginPractice();
+                    return;
+                  }
+                  track('paywall_viewed', {
+                    source: 'practice_intro',
+                    practice_id: activePractice?.id,
+                    practice_type: 'basic',
+                  });
+                  setShowSubscriptionModal(true);
+                }}
                 className="bg-white/30 hover:bg-white/40 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl border border-white/30"
               >
                 {t('practices.start')}

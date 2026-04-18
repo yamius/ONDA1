@@ -39,6 +39,13 @@ export type AnalyticsEventName =
   | 'ond_earned'
   | 'artifact_unlocked'
   | 'level_up'
+  // Paywall / Monetization
+  | 'paywall_viewed'
+  | 'paywall_auth_required'
+  | 'purchase_started'
+  | 'purchase_succeeded'
+  | 'purchase_failed'
+  | 'purchase_cancelled'
   // Errors
   | 'error'
   | 'audio_load_error'
