@@ -17,7 +17,10 @@ Sentry.init(
     ],
     tracesSampleRate: 0.2,
     environment: import.meta.env.MODE,
-    release: 'onda-life@1.0.1',
+    // Must match SENTRY_RELEASE used during source map upload in CI,
+    // otherwise stacks won't resolve. VITE_SENTRY_RELEASE is injected
+    // at build time (see .github/workflows/ios-deploy.yml).
+    release: import.meta.env.VITE_SENTRY_RELEASE || 'onda-life@1.0.1',
   },
   SentryReact.init
 );

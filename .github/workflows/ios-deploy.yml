@@ -34,6 +34,14 @@ jobs:
           VITE_BUILD_NUMBER: ${{ github.run_number }}
           VITE_COMMIT_HASH: ${{ github.sha }}
           VITE_BRANCH_NAME: ${{ github.ref_name }}
+          # Sentry source map upload — see vite.config.ts
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_PROJECT: capacitor
+          # Unique release per CI build so we can tell versions apart in Sentry.
+          SENTRY_RELEASE: onda-life@1.0.1+${{ github.run_number }}
+          # Same release string gets baked into the JS bundle so runtime
+          # events tag themselves with a release that has source maps.
+          VITE_SENTRY_RELEASE: onda-life@1.0.1+${{ github.run_number }}
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -93,6 +101,24 @@ jobs:
 
       - name: Sync Capacitor
         run: npx cap sync ios
+
+      - name: Ensure Sentry native pod is present
+        # @sentry/capacitor ships a native iOS pod that auto-registers via
+        # `cap sync`. We assert it actually ended up in Podfile.lock, because
+        # without the native layer WebView-OOM crashes (which kill the JS
+        # process before window.onerror can fire) never reach Sentry.
+        run: |
+          cd ios/App
+          echo "=== Podfile after cap sync ==="
+          cat Podfile
+          echo ""
+          echo "=== Podfile.lock Sentry entries ==="
+          grep -i sentry Podfile.lock || true
+          if ! grep -q -i "SentryCapacitor\|Sentry/" Podfile.lock; then
+            echo "::warning::SentryCapacitor pod not detected after cap sync. Native crashes won't reach Sentry until this is fixed. JS-level errors will still work."
+          else
+            echo "SentryCapacitor pod detected ✓"
+          fi
 
       - name: Create App Store Connect API Key
         run: |
