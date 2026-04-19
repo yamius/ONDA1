@@ -40,7 +40,12 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   // iOS WKWebView each `createMediaElementSource` pins the audio decoder in
   // the native graph for the lifetime of the AudioContext. With a singleton
   // context they accumulate and the WebView gets OOM-killed after ~3 opens.
-  const fadeIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  // rAF-driven fade. setInterval(50ms) produced audible stepping on iOS
+  // HTMLAudioElement (internal volume quantization + coarse ticks). rAF runs
+  // ~16ms, and combined with a quadratic curve it sounds close to what the
+  // Web Audio GainNode used to do — without createMediaElementSource (which
+  // pinned decoders and OOM-killed the WebView).
+  const fadeRafRef = useRef<number | null>(null);
   const fadeOutTimerRef = useRef<NodeJS.Timeout | null>(null);
   const isFirstPlayRef = useRef<boolean>(true);
   const trackEndHandledRef = useRef<boolean>(false);
@@ -118,7 +123,9 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
 
     if (!audioRef.current) {
       audioRef.current = new Audio(url);
-      audioRef.current.volume = 0; // start silent; fade-in ramps it up
+      // Start at 0.0001 (not 0) — on iOS a fresh HTMLAudio starting at 0
+      // sometimes snaps audibly on first volume change. Near-silence avoids that.
+      audioRef.current.volume = 0.0001;
       audioRef.current.loop = tracks.length === 1;
 
       console.log('[RemoteAudioPlayer] 🎵 Created audio element', {
@@ -138,33 +145,36 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     }
   }, [url, error, tracks.length, currentTrackIndex]);
 
-  // Linear volume ramp on HTMLAudioElement. Replaces GainNode.linearRampToValueAtTime.
+  // rAF fade with a quadratic curve — perceived loudness is ~logarithmic,
+  // so t² for fade-in (starts whisper-quiet, grows smoothly) and 1-(1-t)²
+  // for fade-out (holds, then tails off). Matches the old GainNode feel.
   const startFade = (target: number, durationMs: number, onComplete?: () => void) => {
     const audio = audioRef.current;
     if (!audio) return;
-    if (fadeIntervalRef.current) {
-      clearInterval(fadeIntervalRef.current);
-      fadeIntervalRef.current = null;
+    if (fadeRafRef.current !== null) {
+      cancelAnimationFrame(fadeRafRef.current);
+      fadeRafRef.current = null;
     }
-    const stepMs = 50;
-    const steps = Math.max(1, Math.round(durationMs / stepMs));
     const startVol = audio.volume;
-    const delta = (target - startVol) / steps;
-    let i = 0;
-    fadeIntervalRef.current = setInterval(() => {
-      i += 1;
-      const next = i >= steps ? target : startVol + delta * i;
+    const isFadeIn = target > startVol;
+    const startTs = performance.now();
+
+    const tick = (now: number) => {
+      const t = Math.min(1, Math.max(0, (now - startTs) / Math.max(1, durationMs)));
+      // Ease-in for fade-in (imperceptible start), ease-out for fade-out.
+      const eased = isFadeIn ? t * t : 1 - (1 - t) * (1 - t);
+      const v = startVol + (target - startVol) * eased;
       try {
-        audio.volume = Math.max(0, Math.min(1, next));
+        audio.volume = Math.max(0, Math.min(1, v));
       } catch (_) { /* ignore */ }
-      if (i >= steps) {
-        if (fadeIntervalRef.current) {
-          clearInterval(fadeIntervalRef.current);
-          fadeIntervalRef.current = null;
-        }
+      if (t < 1) {
+        fadeRafRef.current = requestAnimationFrame(tick);
+      } else {
+        fadeRafRef.current = null;
         onComplete?.();
       }
-    }, stepMs);
+    };
+    fadeRafRef.current = requestAnimationFrame(tick);
   };
 
   useEffect(() => {
@@ -257,9 +267,9 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     
     return () => {
       console.log('[RemoteAudioPlayer] 🛑 Component unmounting');
-      if (fadeIntervalRef.current) {
-        clearInterval(fadeIntervalRef.current);
-        fadeIntervalRef.current = null;
+      if (fadeRafRef.current !== null) {
+        cancelAnimationFrame(fadeRafRef.current);
+        fadeRafRef.current = null;
       }
       if (fadeOutTimerRef.current) {
         clearTimeout(fadeOutTimerRef.current);
