@@ -14,6 +14,9 @@ dist-ssr
 
 .vscode/*
 !.vscode/extensions.json
+
+# Claude Code local/per-user config (permissions, worktrees, launch)
+.claude/
 .idea
 .DS_Store
 *.suo
