@@ -274,7 +274,15 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
         clearInterval(trackEndCheckIntervalRef.current);
       }
       if (audioRef.current) {
-        audioRef.current.pause();
+        // iOS WKWebView keeps a native audio decoder + PCM buffer attached to
+        // HTMLAudioElement until src is cleared and load() is called. Without
+        // these two extra lines, each practice-intro mount leaks ~15-40MB
+        // native memory and the WebView is OOM-killed after ~3 opens.
+        try {
+          audioRef.current.pause();
+          audioRef.current.removeAttribute('src');
+          audioRef.current.load();
+        } catch (_) { /* ignore */ }
         audioRef.current = null;
       }
       if (sourceRef.current) {

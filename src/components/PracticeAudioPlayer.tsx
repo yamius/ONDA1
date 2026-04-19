@@ -75,7 +75,11 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
 
     if (needsReset) {
       if (audioRef.current) {
-        audioRef.current.pause();
+        try {
+          audioRef.current.pause();
+          audioRef.current.removeAttribute('src');
+          audioRef.current.load();
+        } catch (_) { /* ignore */ }
         audioRef.current = null;
       }
       if (sourceRef.current) {
@@ -243,7 +247,13 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
         clearTimeout(fadeOutTimerRef.current);
       }
       if (audioRef.current) {
-        audioRef.current.pause();
+        // iOS WKWebView: must clear src + load() to free native audio decoder.
+        // See RemoteAudioPlayer.tsx for the full explanation.
+        try {
+          audioRef.current.pause();
+          audioRef.current.removeAttribute('src');
+          audioRef.current.load();
+        } catch (_) { /* ignore */ }
         audioRef.current = null;
       }
       if (sourceRef.current) {

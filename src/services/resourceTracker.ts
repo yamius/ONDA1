@@ -28,6 +28,13 @@ interface ResourceStats {
   videoElements: number;
   jsHeapUsedMB: number | null;
   jsHeapTotalMB: number | null;
+  // Counts ALL HTMLAudioElement instances ever created via `new Audio(...)`,
+  // including detached ones that document.getElementsByTagName('audio') misses.
+  totalAudioElementsEver: number;
+  // Counts URL.createObjectURL minus URL.revokeObjectURL — blob URLs leak
+  // native memory on iOS WebKit (they reference a Blob buffer).
+  liveBlobUrls: number;
+  totalBlobUrlsEver: number;
 }
 
 // Per-module mutable counters. Patches below update these.
@@ -38,6 +45,9 @@ const state = {
   totalTimeoutsEver: 0,
   liveAudioContexts: 0,
   totalAudioContextsEver: 0,
+  totalAudioElementsEver: 0,
+  liveBlobUrls: 0,
+  totalBlobUrlsEver: 0,
 };
 
 let patched = false;
@@ -132,6 +142,35 @@ export function installResourceTracker(): void {
       (window as any).webkitAudioContext = PatchedAudioContext as any;
     }
   }
+
+  // --- HTMLAudioElement (new Audio(...)) ---
+  // Each `new Audio(url)` on iOS WebKit allocates a native audio decoder +
+  // buffer. Detached elements (not in DOM) still hold that memory.
+  const OrigAudio = (window as any).Audio;
+  if (OrigAudio) {
+    const PatchedAudio = function patchedAudio(this: any, ...args: any[]) {
+      state.totalAudioElementsEver += 1;
+      return new OrigAudio(...args);
+    };
+    (PatchedAudio as any).prototype = OrigAudio.prototype;
+    (window as any).Audio = PatchedAudio as any;
+  }
+
+  // --- URL.createObjectURL / revokeObjectURL ---
+  // Blob URLs from useAudioCache keep the underlying Blob (decoded mp3 data)
+  // pinned in memory on iOS until revoked. Count live ones.
+  const origCreateObjectURL = URL.createObjectURL.bind(URL);
+  const origRevokeObjectURL = URL.revokeObjectURL.bind(URL);
+  (URL as any).createObjectURL = function patchedCreateObjectURL(obj: any) {
+    const url = origCreateObjectURL(obj);
+    state.liveBlobUrls += 1;
+    state.totalBlobUrlsEver += 1;
+    return url;
+  };
+  (URL as any).revokeObjectURL = function patchedRevokeObjectURL(url: string) {
+    state.liveBlobUrls = Math.max(0, state.liveBlobUrls - 1);
+    return origRevokeObjectURL(url);
+  };
 }
 
 export function snapshotResources(): ResourceStats {
@@ -153,5 +192,8 @@ export function snapshotResources(): ResourceStats {
     jsHeapTotalMB: perfMem?.totalJSHeapSize
       ? Math.round((perfMem.totalJSHeapSize / 1024 / 1024) * 10) / 10
       : null,
+    totalAudioElementsEver: state.totalAudioElementsEver,
+    liveBlobUrls: state.liveBlobUrls,
+    totalBlobUrlsEver: state.totalBlobUrlsEver,
   };
 }
