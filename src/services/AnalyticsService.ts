@@ -51,7 +51,8 @@ export type AnalyticsEventName =
   | 'audio_load_error'
   | 'api_error'
   // Diagnostics
-  | 'practice_intro_closed_debug';
+  | 'practice_intro_closed_debug'
+  | 'app_crash_suspected';
 
 export interface AnalyticsEvent {
   event_name: AnalyticsEventName;
@@ -256,6 +257,41 @@ class AnalyticsService {
     };
 
     console.log(`[Analytics] Track: ${eventName}`, metadata);
+
+    // Crash-detector marker: record last practice_view in localStorage.
+    // If the app dies (iOS WebView OOM-kill) before next heartbeat, the next
+    // app_open will detect a fresh marker and emit app_crash_suspected.
+    if (eventName === 'practice_view') {
+      try {
+        const sessionCountStr = localStorage.getItem('onda_session_practice_count') || '0';
+        const newCount = parseInt(sessionCountStr, 10) + 1;
+        localStorage.setItem('onda_session_practice_count', String(newCount));
+        localStorage.setItem(
+          'onda_last_practice_view',
+          JSON.stringify({
+            practiceId: (metadata as any)?.practice_id ?? null,
+            ts: Date.now(),
+            sessionPracticeCount: newCount,
+            sessionId: this.sessionId,
+          })
+        );
+      } catch (e) {
+        // ignore storage errors
+      }
+    }
+
+    // Clear the marker on any event that proves the app survived past practice_view
+    // (e.g. practice_intro_closed_debug, practice_start, practice_abandon, practice_complete).
+    if (
+      eventName === 'practice_intro_closed_debug' ||
+      eventName === 'practice_start' ||
+      eventName === 'practice_abandon' ||
+      eventName === 'practice_complete'
+    ) {
+      try {
+        localStorage.removeItem('onda_last_practice_view');
+      } catch (e) {}
+    }
 
     if (this.isOnline) {
       // Try to send immediately

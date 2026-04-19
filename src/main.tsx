@@ -59,6 +59,48 @@ window.onunhandledrejection = function(event) {
   } catch (e) {}
 };
 
+// Crash recovery: if the previous session died right after a practice_view
+// (e.g. iOS WebView OOM-kill), emit app_crash_suspected with context.
+// Must happen BEFORE any new practice_view, so we do it synchronously here.
+(async () => {
+  try {
+    const markerRaw = localStorage.getItem('onda_last_practice_view');
+    if (!markerRaw) return;
+    localStorage.removeItem('onda_last_practice_view');
+    const marker = JSON.parse(markerRaw);
+    const sinceLastView = Date.now() - (marker.ts || 0);
+    // Only report if last practice_view was very recent (<10s) — otherwise it's a clean restart.
+    if (sinceLastView > 10000) return;
+    const errorLogsRaw = localStorage.getItem('onda_error_logs') || '[]';
+    const errorLogs = JSON.parse(errorLogsRaw);
+    const { analytics } = await import('./services/AnalyticsService');
+    await analytics.track('app_crash_suspected', {
+      crashed_practice_id: marker.practiceId,
+      ms_since_practice_view: sinceLastView,
+      session_practice_count: marker.sessionPracticeCount,
+      prev_session_id: marker.sessionId,
+      last_error_logs: errorLogs.slice(-5),
+      platform: 'ios',
+    });
+    console.warn('[ONDA] Detected suspected crash after practice_view', {
+      practiceId: marker.practiceId,
+      sinceLastView,
+      sessionPracticeCount: marker.sessionPracticeCount,
+    });
+  } catch (e) {
+    console.error('[ONDA] Crash recovery check failed:', e);
+  }
+})();
+
+// Reset per-session practice counter on fresh app load (page reload / cold start).
+// Note: localStorage survives, so we use a sessionStorage flag to detect fresh session.
+try {
+  if (!sessionStorage.getItem('onda_session_started')) {
+    sessionStorage.setItem('onda_session_started', String(Date.now()));
+    localStorage.setItem('onda_session_practice_count', '0');
+  }
+} catch (e) {}
+
 // Initialize Firebase Analytics
 initializeAnalytics().then(() => {
   console.log('[ONDA] Firebase Analytics initialized');
