@@ -2930,6 +2930,10 @@ const OndaLevel1 = () => {
           branchName={import.meta.env.VITE_BRANCH_NAME}
         />
         
+        {/* Lazy-mount: don't create <audio> + blob URL during intro — iOS
+            WKWebView holds native mp3 decoders even after pause+removeAttribute,
+            and accumulation across intro opens is the current OOM suspect. */}
+        {practiceState === 'active' && (<>
         {activePractice.id === 'p1-1' && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
@@ -3559,6 +3563,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
+        </>)}
         {(practiceState === 'intro' || practiceState === 'active') && PRACTICE_EXR[activePractice.id] ? (
           <WelcomeScene url={PRACTICE_EXR[activePractice.id]} previewUrl={PRACTICE_JPEG_PREVIEW[activePractice.id]} />
         ) : (
