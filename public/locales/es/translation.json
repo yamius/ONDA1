@@ -17,6 +17,7 @@
   "part_name_11": "Intercambio",
   "part_name_12": "Colaboro",
   "quote": "Para moverse hacia la luz<br/>primero hay que echar raíces",
+  "quote_level_1": "Para moverse hacia la luz<br/>primero hay que echar raíces",
   "you": "Tú",
   "nav": {
     "home": "Inicio",
@@ -502,7 +503,61 @@
     "collect": "Recolectar",
     "collect_desc": "recursos simples de comida/calor/confort",
     "react": "Reaccionar",
-    "react_desc": "sistema simple de acercamiento/evitación, confort/incomodidad"
+    "react_desc": "sistema simple de acercamiento/evitación, confort/incomodidad",
+    "level_1": {
+      "explore": "Explorar",
+      "explore_desc": "pequeños espacios seguros (agua/hogar/cuna)",
+      "collect": "Recolectar",
+      "collect_desc": "recursos simples de comida/calor/confort",
+      "react": "Reaccionar",
+      "react_desc": "sistema simple de acercamiento/evitación, confort/incomodidad"
+    }
+  },
+  "philosophy": {
+    "level_1": {
+      "text_1": "No tienes que hacer nada para ser.",
+      "text_2": "Ya eres.",
+      "text_3": "Ser es ya movimiento. Escucha cómo la Tierra respira en ti.",
+      "text_4": "Con cada exhalación, la Tierra te acepta.",
+      "text_5": "Tu respiración conecta el cielo y las raíces.",
+      "text_6": "Cuanto más profundo es tu fundamento, más alto se eleva la luz."
+    }
+  },
+  "level_goal": {
+    "level_1": {
+      "intro": "Aprende a ser consciente de la presencia — a sentir tu existencia como un milagro. Estabiliza la respiración, devuelve la atención al cuerpo, despierta la sensación de \"luz viva\" en tu interior.",
+      "game_task": "Tarea lúdica y energética — activación del biocampo de Presencia.",
+      "principle_1": "No actúas — sientes, escuchas, respiras.",
+      "principle_2": "Cada ejercicio es un paso más profundo en la conciencia:",
+      "principle_3": "de la respiración → al cuerpo → al calor → al silencio → a la quietud.",
+      "story_1": "Despiertas en una luz suave y sin tiempo.",
+      "story_2": "Sin fronteras, sin \"ayer\" — solo la sensación de calor, pulso y respiración.",
+      "story_3": "El mundo alrededor es líquido, vivo, como el comienzo del Universo.",
+      "story_4": "Cada respiración se convierte en tu primer movimiento.",
+      "identity_1": "Eres la Ameba, la primera célula de la conciencia, despertándose a sí misma.",
+      "identity_2": "Aún no sabes quién eres.",
+      "identity_3": "Simplemente sientes: \"Yo soy.\"",
+      "wisdom_1": "Todo lo que se requiere es aprender a ser.",
+      "wisdom_2": "Sin objetivo, sin lucha, sin esfuerzo.",
+      "wisdom_3": "Siente la vida no con la mente, sino con el cuerpo.",
+      "wisdom_4": "Recuerda el antiguo lenguaje de la respiración, el calor y la luz, el lenguaje que habla la Tierra."
+    }
+  },
+  "terra_speaks": {
+    "level_1": {
+      "quote_1": "La respiración es el primer puente entre tú y el mundo.",
+      "quote_2": "No aprendes a existir — recuerdas.",
+      "quote_3": "Cada célula de tu cuerpo sabe cómo ser.",
+      "quote_4": "Permítete simplemente sentir. Lo demás vendrá por sí solo."
+    }
+  },
+  "terra_final": {
+    "level_1": {
+      "line_1": "Has recordado la respiración.",
+      "line_2": "Del silencio nace la vida.",
+      "line_3": "Ahora tus raíces han absorbido la luz,",
+      "line_4": "y la Tierra está lista para liberarte al flujo."
+    }
   },
   "adaptive_practices": {
     "start": "Iniciar práctica",
