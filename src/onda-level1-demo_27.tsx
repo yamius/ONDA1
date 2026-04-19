@@ -3564,8 +3564,26 @@ const OndaLevel1 = () => {
           />
         )}
         </>)}
-        {(practiceState === 'intro' || practiceState === 'active') && PRACTICE_EXR[activePractice.id] ? (
+        {/* Lazy-mount Three.js <Canvas> only when the practice is actually
+            active. On intro we show the static JPEG preview instead — no
+            WebGL context, no HDR decode, nothing for iOS WKWebView to pin
+            in GPU memory for a user who only opens/closes the intro.
+            Once practiceState flips to 'active', WelcomeScene mounts and
+            dissolves from the preview into the HDR panorama via its own
+            preview→full cross-fade. */}
+        {practiceState === 'active' && PRACTICE_EXR[activePractice.id] ? (
           <WelcomeScene url={PRACTICE_EXR[activePractice.id]} previewUrl={PRACTICE_JPEG_PREVIEW[activePractice.id]} />
+        ) : practiceState === 'intro' && PRACTICE_JPEG_PREVIEW[activePractice.id] ? (
+          <div
+            className="absolute inset-0"
+            style={{
+              zIndex: 0,
+              backgroundImage: `url(${PRACTICE_JPEG_PREVIEW[activePractice.id]})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              pointerEvents: 'none',
+            }}
+          />
         ) : (
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDuration: '3s' }} />
