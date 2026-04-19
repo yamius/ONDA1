@@ -11,13 +11,13 @@ import * as SentryReact from '@sentry/react';
 
 Sentry.init(
   {
-    dsn: 'https://89007b674e33e62ef933bb71670f885f@o451107803417048.ingest.us.sentry.io/4511078050889728',
+    dsn: 'https://bea86caf3d64a1f98bcd6e9a50307008@o4511245722386432.ingest.de.sentry.io/4511245753778256',
     integrations: [
       SentryReact.browserTracingIntegration(),
     ],
     tracesSampleRate: 0.2,
     environment: import.meta.env.MODE,
-    release: 'onda-life@1.0.0',
+    release: 'onda-life@1.0.1',
   },
   SentryReact.init
 );
