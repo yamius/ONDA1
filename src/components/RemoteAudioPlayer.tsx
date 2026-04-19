@@ -2,6 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 import { useAudioCache, useAudioPreloader } from '../hooks/useAudioCache';
 import { Loader2 } from 'lucide-react';
 
+// iOS WebKit effectively quantizes HTMLAudioElement.volume below ~0.02
+// (silent bucket). We do all fades in the range [FADE_FLOOR, target] and
+// snap to exact 0 only at the end of a fade-out.
+const FADE_FLOOR = 0.02;
+
 interface RemoteAudioPlayerProps {
   isPlaying: boolean;
   audioPath: string | string[];
@@ -17,8 +22,8 @@ interface RemoteAudioPlayerProps {
 export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   isPlaying,
   audioPath,
-  fadeInDuration = 3000,
-  fadeOutDuration = 3000,
+  fadeInDuration = 4000,
+  fadeOutDuration = 4000,
   volume = 0.7,
   resetKey,
   onTrackChange,
@@ -123,9 +128,12 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
 
     if (!audioRef.current) {
       audioRef.current = new Audio(url);
-      // Start at 0.0001 (not 0) — on iOS a fresh HTMLAudio starting at 0
-      // sometimes snaps audibly on first volume change. Near-silence avoids that.
-      audioRef.current.volume = 0.0001;
+      // iOS WebKit quantizes HTMLAudioElement.volume into ~16-32 internal
+      // buckets. Anything below ~0.02 collapses to "muted", so ramping from
+      // 0 or near-zero spends the first ~300ms in that dead zone and then
+      // snaps audible — what the user heard as "резко появляется". Start
+      // slightly above the dead zone; exponential ramp takes it up smoothly.
+      audioRef.current.volume = FADE_FLOOR;
       audioRef.current.loop = tracks.length === 1;
 
       console.log('[RemoteAudioPlayer] 🎵 Created audio element', {
@@ -145,9 +153,12 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     }
   }, [url, error, tracks.length, currentTrackIndex]);
 
-  // rAF fade with a quadratic curve — perceived loudness is ~logarithmic,
-  // so t² for fade-in (starts whisper-quiet, grows smoothly) and 1-(1-t)²
-  // for fade-out (holds, then tails off). Matches the old GainNode feel.
+  // Exponential (equal-ratio) volume ramp driven by rAF. Web Audio's
+  // exponentialRampToValueAtTime does v(t) = v0 * (v1/v0)^t, which matches
+  // perceptual loudness (each equal time slice is an equal dB change).
+  // Linear/quadratic ramps on HTMLAudioElement.volume sound stepped on iOS
+  // because WebKit quantizes the low end — exponential spends the right
+  // amount of time in each perceptual band instead.
   const startFade = (target: number, durationMs: number, onComplete?: () => void) => {
     const audio = audioRef.current;
     if (!audio) return;
@@ -155,21 +166,24 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
       cancelAnimationFrame(fadeRafRef.current);
       fadeRafRef.current = null;
     }
-    const startVol = audio.volume;
-    const isFadeIn = target > startVol;
+    // Clamp both ends away from 0 so the ratio is well-defined, then snap
+    // to exact 0 at the very end of a fade-out.
+    const startVol = Math.max(FADE_FLOOR, audio.volume);
+    const endVol = Math.max(FADE_FLOOR, target);
+    const ratio = endVol / startVol;
     const startTs = performance.now();
 
     const tick = (now: number) => {
       const t = Math.min(1, Math.max(0, (now - startTs) / Math.max(1, durationMs)));
-      // Ease-in for fade-in (imperceptible start), ease-out for fade-out.
-      const eased = isFadeIn ? t * t : 1 - (1 - t) * (1 - t);
-      const v = startVol + (target - startVol) * eased;
+      const v = startVol * Math.pow(ratio, t);
       try {
         audio.volume = Math.max(0, Math.min(1, v));
       } catch (_) { /* ignore */ }
       if (t < 1) {
         fadeRafRef.current = requestAnimationFrame(tick);
       } else {
+        // Snap to exact target (including hard 0 for fade-out-to-silence).
+        try { audio.volume = Math.max(0, Math.min(1, target)); } catch (_) { /* ignore */ }
         fadeRafRef.current = null;
         onComplete?.();
       }

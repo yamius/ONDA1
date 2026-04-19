@@ -2938,8 +2938,8 @@ const OndaLevel1 = () => {
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-1_Breath of Life/p1-1_Breath of Life-1.mp3"
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -2952,8 +2952,8 @@ const OndaLevel1 = () => {
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-2_Sense of Being/p1-2_Sense of Being-1.mp3"
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -2966,8 +2966,8 @@ const OndaLevel1 = () => {
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-3_Warm Pulse/p1-3_Warm Pulse-1.mp3"
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -2980,8 +2980,8 @@ const OndaLevel1 = () => {
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-4_Still Wave/p1-4_Still Wave-1.mp3"
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -2994,8 +2994,8 @@ const OndaLevel1 = () => {
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-5_Inner Listening/p1-5_Inner Listening-1.mp3"
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3008,8 +3008,8 @@ const OndaLevel1 = () => {
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-6_First Light/p1-6_First Light-1.mp3"
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3022,8 +3022,8 @@ const OndaLevel1 = () => {
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-7_Liquid Presence/p1-7_Liquid Presence-1.mp3"
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3039,8 +3039,8 @@ const OndaLevel1 = () => {
               "p1/p1-8_Breath Count/p1-8_Breath Count-1.mp3",
               "p1/p1-8_Breath Count/p1-8_Breath Count-2.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3053,8 +3053,8 @@ const OndaLevel1 = () => {
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-9_Point of Stillness/p1-9_Point of Stillness-1.mp3"
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3070,8 +3070,8 @@ const OndaLevel1 = () => {
               "p1/p1-10_I Am Silence/p1-10_I Am Silence-1.mp3",
               "p1/p1-10_I Am Silence/p1-10_I Am Silence-2.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3084,8 +3084,8 @@ const OndaLevel1 = () => {
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-11_Ground Flow/p1-11_Ground Flow-1.mp3"
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3098,8 +3098,8 @@ const OndaLevel1 = () => {
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-12_Body Root/p1-12_Body Root-1.mp3"
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3117,8 +3117,8 @@ const OndaLevel1 = () => {
               "p2/p2-1_Flow Rhythm/p2-1_Flow Rhythm-2.mp3",
               "p2/p2-1_Flow Rhythm/p2-1_Flow Rhythm-3.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3136,8 +3136,8 @@ const OndaLevel1 = () => {
               "p2/p2-2_Sense of Direction/p2-2_Sense of Direction-3.mp3",
               "p2/p2-2_Sense of Direction/p2-2_Sense of Direction-4.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3154,8 +3154,8 @@ const OndaLevel1 = () => {
               "p2/p2-3_Rhythm of Movement/p2-3_Rhythm of Movement-2.mp3",
               "p2/p2-3_Rhythm of Movement/p2-3_Rhythm of Movement-3.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3171,8 +3171,8 @@ const OndaLevel1 = () => {
               "p2/p2-4_Water Balance/p2-4_Water Balance-1.mp3",
               "p2/p2-4_Water Balance/p2-4_Water Balance-2.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3192,8 +3192,8 @@ const OndaLevel1 = () => {
               "p2/p2-5_Fluid Form/p2-5_Fluid Form-5.mp3",
               "p2/p2-5_Fluid Form/p2-5_Fluid Form-6.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3210,8 +3210,8 @@ const OndaLevel1 = () => {
               "p2/p2-6_Wave Breath/p2-6_Wave Breath-2.mp3",
               "p2/p2-6_Wave Breath/p2-6_Wave Breath-3.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3227,8 +3227,8 @@ const OndaLevel1 = () => {
               "p2/p2-7_Intuition of Flow/p2-7_Intuition of Flow-1.mp3",
               "p2/p2-7_Intuition of Flow/p2-7_Intuition of Flow-2.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3245,8 +3245,8 @@ const OndaLevel1 = () => {
               "p2/p2-8_Focus in Motion/p2-8_Focus in Motion-2.mp3",
               "p2/p2-8_Focus in Motion/p2-8_Focus in Motion-3.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3263,8 +3263,8 @@ const OndaLevel1 = () => {
               "p2/p2-9_Flexible Response/p2-9_Flexible Response-2.mp3",
               "p2/p2-9_Flexible Response/p2-9_Flexible Response-3.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3280,8 +3280,8 @@ const OndaLevel1 = () => {
               "p2/p2-10_Still Water/p2-10_Still Water-1.mp3",
               "p2/p2-10_Still Water/p2-10_Still Water-2.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3298,8 +3298,8 @@ const OndaLevel1 = () => {
               "p2/p2-11_Deep Current/p2-11_Deep Current-2.mp3",
               "p2/p2-11_Deep Current/p2-11_Deep Current-3.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3317,8 +3317,8 @@ const OndaLevel1 = () => {
               "p2/p2-12_Echo of Ocean/p2-12_Echo of Ocean-3.mp3",
               "p2/p2-12_Echo of Ocean/p2-12_Echo of Ocean-4.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3338,8 +3338,8 @@ const OndaLevel1 = () => {
               "p3/p3-1_Breath of Transition/p3-1_Breath of Transition-5.mp3",
               "p3/p3-1_Breath of Transition/p3-1_Breath of Transition-6.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3357,8 +3357,8 @@ const OndaLevel1 = () => {
               "p3/p3-2_Point of Stability/p3-2_Point of Stability-3.mp3",
               "p3/p3-2_Point of Stability/p3-2_Point of Stability-4.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3375,8 +3375,8 @@ const OndaLevel1 = () => {
               "p3/p3-3_Form Plasticity/p3-3_Form Plasticity-2.mp3",
               "p3/p3-3_Form Plasticity/p3-3_Form Plasticity-3.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3395,8 +3395,8 @@ const OndaLevel1 = () => {
               "p3/p3-4_Earth and Air Breath/p3-4_Earth and Air Breath-4.mp3",
               "p3/p3-4_Earth and Air Breath/p3-4_Earth and Air Breath-5.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3414,8 +3414,8 @@ const OndaLevel1 = () => {
               "p3/p3-5_First Step of Stability/p3-5_First Step of Stability-3.mp3",
               "p3/p3-5_First Step of Stability/p3-5_First Step of Stability-4.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3434,8 +3434,8 @@ const OndaLevel1 = () => {
               "p3/p3-6_Wave of Breath/p3-6_Wave of Breath-4.mp3",
               "p3/p3-6_Wave of Breath/p3-6_Wave of Breath-5.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3454,8 +3454,8 @@ const OndaLevel1 = () => {
               "p3/p3-7_Breath Bridge/p3-7_Breath Bridge-4.mp3",
               "p3/p3-7_Breath Bridge/p3-7_Breath Bridge-5.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3473,8 +3473,8 @@ const OndaLevel1 = () => {
               "p3/p3-8_Center of Gravity/p3-8_Center of Gravity-3.mp3",
               "p3/p3-8_Center of Gravity/p3-8_Center of Gravity-4.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3491,8 +3491,8 @@ const OndaLevel1 = () => {
               "p3/p3-9_Shape Shift/p3-9_Shape Shift-2.mp3",
               "p3/p3-9_Shape Shift/p3-9_Shape Shift-3.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3511,8 +3511,8 @@ const OndaLevel1 = () => {
               "p3/p3-10_Resonant Stillness/p3-10_Resonant Stillness-4.mp3",
               "p3/p3-10_Resonant Stillness/p3-10_Resonant Stillness-5.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3533,8 +3533,8 @@ const OndaLevel1 = () => {
               "p3/p3-11_Pulse of Earth/p3-11_Pulse of Earth-6.mp3",
               "p3/p3-11_Pulse of Earth/p3-11_Pulse of Earth-7.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
@@ -3553,8 +3553,8 @@ const OndaLevel1 = () => {
               "p3/p3-12_Breath of Adaptation/p3-12_Breath of Adaptation-4.mp3",
               "p3/p3-12_Breath of Adaptation/p3-12_Breath of Adaptation-5.mp3"
             ]}
-            fadeInDuration={3000}
-            fadeOutDuration={3000}
+            fadeInDuration={4000}
+            fadeOutDuration={4000}
             volume={0.6}
             resetKey={audioResetKey}
             onTrackChange={(current, total) => {
