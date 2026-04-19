@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { getAudioContext } from '../services/audioContextSingleton';
 
 interface PracticeAudioPlayerProps {
   isPlaying: boolean;
@@ -86,7 +87,7 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
         gainNodeRef.current = null;
       }
       if (audioContextRef.current && needsReset) {
-        audioContextRef.current.close();
+        // Shared singleton — do NOT close(). See audioContextSingleton.ts.
         audioContextRef.current = null;
       }
       currentAudioSrcRef.current = audioSrc;
@@ -107,11 +108,13 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
     }
 
     if (!audioContextRef.current) {
-      const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
-      audioContextRef.current = new AudioContext();
-      gainNodeRef.current = audioContextRef.current.createGain();
-      gainNodeRef.current.connect(audioContextRef.current.destination);
-      gainNodeRef.current.gain.value = 0;
+      // Shared singleton — see audioContextSingleton.ts (iOS native-leak fix).
+      audioContextRef.current = getAudioContext();
+      if (audioContextRef.current) {
+        gainNodeRef.current = audioContextRef.current.createGain();
+        gainNodeRef.current.connect(audioContextRef.current.destination);
+        gainNodeRef.current.gain.value = 0;
+      }
     }
 
     if (!audioRef.current) {
@@ -251,10 +254,8 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
         gainNodeRef.current.disconnect();
         gainNodeRef.current = null;
       }
-      if (audioContextRef.current) {
-        audioContextRef.current.close();
-        audioContextRef.current = null;
-      }
+      // Shared singleton — do NOT close(). See audioContextSingleton.ts.
+      audioContextRef.current = null;
     };
   }, []);
 

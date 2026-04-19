@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useAudioCache, useAudioPreloader } from '../hooks/useAudioCache';
 import { Loader2 } from 'lucide-react';
+import { getAudioContext } from '../services/audioContextSingleton';
 
 interface RemoteAudioPlayerProps {
   isPlaying: boolean;
@@ -113,11 +114,15 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
 
   useEffect(() => {
     if (!audioContextRef.current) {
-      const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
-      audioContextRef.current = new AudioContext();
-      gainNodeRef.current = audioContextRef.current.createGain();
-      gainNodeRef.current.connect(audioContextRef.current.destination);
-      gainNodeRef.current.gain.value = 0;
+      // Shared singleton AudioContext — see audioContextSingleton.ts.
+      // iOS WebKit leaks native buffer memory on every `new AudioContext()`;
+      // reusing one instance avoids the OOM-kill after ~3 practice opens.
+      audioContextRef.current = getAudioContext();
+      if (audioContextRef.current) {
+        gainNodeRef.current = audioContextRef.current.createGain();
+        gainNodeRef.current.connect(audioContextRef.current.destination);
+        gainNodeRef.current.gain.value = 0;
+      }
     }
 
     if (!url || error) return;
@@ -280,10 +285,10 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
         gainNodeRef.current.disconnect();
         gainNodeRef.current = null;
       }
-      if (audioContextRef.current) {
-        audioContextRef.current.close();
-        audioContextRef.current = null;
-      }
+      // NOTE: do NOT call audioContextRef.current.close() — the AudioContext
+      // is a process-wide singleton (see audioContextSingleton.ts). Closing it
+      // would defeat the purpose and still leak native memory on iOS.
+      audioContextRef.current = null;
     };
   }, []);
 
