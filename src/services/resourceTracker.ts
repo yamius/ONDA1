@@ -47,6 +47,11 @@ interface ResourceStats {
   // and can't be freed while the AudioContext lives. With a singleton
   // context (never closed), they accumulate.
   totalMediaElementSourcesEver: number;
+  // Every WebGL(2) context ever acquired via canvas.getContext. iOS WKWebView
+  // caps live contexts (~8-16) and GPU memory per context — HDR textures from
+  // Three.js <Canvas> unmounts can pin tens of MB each if not disposed.
+  totalWebGLContextsEver: number;
+  liveWebGLContexts: number;
 }
 
 // Per-module mutable counters. Patches below update these.
@@ -65,6 +70,8 @@ const state = {
   totalFetchesEver: 0,
   liveFetches: 0,
   totalMediaElementSourcesEver: 0,
+  totalWebGLContextsEver: 0,
+  liveWebGLContexts: 0,
 };
 
 let patched = false;
@@ -220,6 +227,51 @@ export function installResourceTracker(): void {
     (window as any).Blob = PatchedBlob as any;
   }
 
+  // --- HTMLCanvasElement.getContext (WebGL / WebGL2) ---
+  // Three.js <Canvas> creates a WebGLRenderer per mount. On iOS WKWebView,
+  // GL contexts + their bound textures/renderbuffers consume native GPU
+  // memory that JS heap counters don't see. Patch getContext to count
+  // acquisitions; patch WEBGL_lose_context / renderer disposal is not
+  // directly observable, but we can approximate "live" by counting
+  // returned contexts whose canvas is still connected to the DOM at
+  // snapshot time — handled in snapshotResources() instead of here.
+  const origGetContext = HTMLCanvasElement.prototype.getContext;
+  const glContexts = new WeakSet<object>();
+  (HTMLCanvasElement.prototype as any).getContext = function patchedGetContext(
+    this: HTMLCanvasElement,
+    contextType: string,
+    ...args: any[]
+  ) {
+    const ctx = (origGetContext as any).call(this, contextType, ...args);
+    if (
+      ctx &&
+      (contextType === 'webgl' ||
+        contextType === 'webgl2' ||
+        contextType === 'experimental-webgl') &&
+      !glContexts.has(ctx)
+    ) {
+      glContexts.add(ctx);
+      state.totalWebGLContextsEver += 1;
+      state.liveWebGLContexts += 1;
+      // Best-effort decrement when the GL context is lost (manual or driver).
+      try {
+        const ext = (ctx as any).getExtension?.('WEBGL_lose_context');
+        const canvas = this;
+        canvas.addEventListener(
+          'webglcontextlost',
+          () => {
+            state.liveWebGLContexts = Math.max(0, state.liveWebGLContexts - 1);
+          },
+          { once: true }
+        );
+        // Keep reference to ext so it's not immediately GC'd (some WebKit
+        // versions drop the extension if no strong ref is held).
+        (ctx as any).__onda_lose_context_ext = ext;
+      } catch (_) { /* ignore */ }
+    }
+    return ctx;
+  };
+
   // --- fetch ---
   // An in-flight fetch with a large ReadableStream ties up native buffers.
   const origFetch = window.fetch.bind(window);
@@ -259,6 +311,8 @@ export function snapshotResources(): ResourceStats {
     totalFetchesEver: state.totalFetchesEver,
     liveFetches: state.liveFetches,
     totalMediaElementSourcesEver: state.totalMediaElementSourcesEver,
+    totalWebGLContextsEver: state.totalWebGLContextsEver,
+    liveWebGLContexts: state.liveWebGLContexts,
   };
 }
 

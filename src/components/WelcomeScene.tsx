@@ -93,7 +93,7 @@ interface CleanEnvironmentProps {
 }
 
 function CleanEnvironment({ url, onReady }: CleanEnvironmentProps) {
-  const { scene } = useThree()
+  const { scene, gl } = useThree()
 
   const texture = useLoader(EXRLoader, url, (loader: EXRLoader) => {
     loader.setDataType(THREE.HalfFloatType)
@@ -112,8 +112,25 @@ function CleanEnvironment({ url, onReady }: CleanEnvironmentProps) {
     return () => {
       scene.background = null
       scene.environment = null
+      // CRITICAL on iOS WKWebView: HDR DataTexture (HalfFloat equirectangular)
+      // sits in GPU memory — tens of MB per EXR. r3f's useLoader caches by URL
+      // in THREE.Cache, so without an explicit dispose + cache remove the GPU
+      // allocation accumulates across intro opens and the WebView is
+      // OOM-killed (invisible to Sentry / JS-heap counters).
+      try {
+        texture.dispose()
+      } catch (_) { /* ignore */ }
+      try {
+        // Drop r3f/THREE's cached loader result so the next mount reloads
+        // fresh (and prior GPU memory can actually be reclaimed).
+        THREE.Cache.remove(url)
+      } catch (_) { /* ignore */ }
+      try {
+        // Flush WebGL texture bindings so the driver can release.
+        gl.state?.reset?.()
+      } catch (_) { /* ignore */ }
     }
-  }, [texture, scene])
+  }, [texture, scene, gl, url])
 
   return null
 }
