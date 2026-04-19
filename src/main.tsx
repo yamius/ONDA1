@@ -1,5 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+// Install resource tracker BEFORE any module that might schedule timers.
+// Must be the very first import so monkey-patches are in place when App.tsx
+// and its deps initialize setInterval / new AudioContext at module load.
+import { installResourceTracker } from './services/resourceTracker';
+installResourceTracker();
 import App from './App.tsx';
 import ErrorBoundary from './components/ErrorBoundary';
 import './index.css';
