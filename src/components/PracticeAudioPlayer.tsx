@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import { getAudioContext } from '../services/audioContextSingleton';
 
 interface PracticeAudioPlayerProps {
   isPlaying: boolean;
@@ -11,6 +10,12 @@ interface PracticeAudioPlayerProps {
   onTrackChange?: (currentTrack: number, totalTracks: number) => void;
 }
 
+/**
+ * Pure HTMLAudioElement player with volume-based fades.
+ * No Web Audio / createMediaElementSource: see RemoteAudioPlayer.tsx for why
+ * that path is unsafe on iOS WKWebView (native source nodes pin decoders for
+ * the life of the AudioContext and OOM-kill the WebView).
+ */
 export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
   isPlaying,
   audioSrc,
@@ -21,53 +26,67 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
   onTrackChange
 }) => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const audioContextRef = useRef<AudioContext | null>(null);
-  const gainNodeRef = useRef<GainNode | null>(null);
-  const sourceRef = useRef<MediaElementAudioSourceNode | null>(null);
+  const fadeIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const fadeOutTimerRef = useRef<NodeJS.Timeout | null>(null);
   const currentAudioSrcRef = useRef<string>('');
   const isFirstPlayRef = useRef<boolean>(true);
   const availableTracksRef = useRef<string[]>([]);
   const currentTrackIndexRef = useRef<number>(0);
 
+  const startFade = (target: number, durationMs: number) => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (fadeIntervalRef.current) {
+      clearInterval(fadeIntervalRef.current);
+      fadeIntervalRef.current = null;
+    }
+    const stepMs = 50;
+    const steps = Math.max(1, Math.round(durationMs / stepMs));
+    const startVol = audio.volume;
+    const delta = (target - startVol) / steps;
+    let i = 0;
+    fadeIntervalRef.current = setInterval(() => {
+      i += 1;
+      const next = i >= steps ? target : startVol + delta * i;
+      try {
+        audio.volume = Math.max(0, Math.min(1, next));
+      } catch (_) { /* ignore */ }
+      if (i >= steps && fadeIntervalRef.current) {
+        clearInterval(fadeIntervalRef.current);
+        fadeIntervalRef.current = null;
+      }
+    }, stepMs);
+  };
+
   useEffect(() => {
     const detectAvailableTracks = async (baseSrc: string): Promise<string[]> => {
       const tracks: string[] = [];
       const maxTracks = 10;
-
       const basePattern = baseSrc.replace(/-1\.mp3$/, '');
 
       for (let i = 1; i <= maxTracks; i++) {
         const trackUrl = `${basePattern}-${i}.mp3`;
         try {
-          const response = await fetch(trackUrl, {
-            method: 'HEAD'
-          });
-
+          const response = await fetch(trackUrl, { method: 'HEAD' });
           if (response.ok) {
             const contentType = response.headers.get('content-type');
             const contentLength = response.headers.get('content-length');
-
             if (contentType && (contentType.includes('audio') || contentType.includes('mpeg') || contentType.includes('octet-stream'))) {
               if (!contentLength || parseInt(contentLength) > 100) {
                 tracks.push(trackUrl);
-                console.log(`Track ${i} found:`, trackUrl);
                 continue;
               }
             }
           }
           break;
         } catch (error) {
-          console.log(`Track ${i} not found, stopping detection`);
           break;
         }
       }
 
       if (tracks.length === 0) {
-        console.log('No tracks detected, using base source:', baseSrc);
         tracks.push(baseSrc);
       }
-
       return tracks;
     };
 
@@ -82,43 +101,19 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
         } catch (_) { /* ignore */ }
         audioRef.current = null;
       }
-      if (sourceRef.current) {
-        sourceRef.current.disconnect();
-        sourceRef.current = null;
-      }
-      if (gainNodeRef.current && needsReset) {
-        gainNodeRef.current.disconnect();
-        gainNodeRef.current = null;
-      }
-      if (audioContextRef.current && needsReset) {
-        // Shared singleton — do NOT close(). See audioContextSingleton.ts.
-        audioContextRef.current = null;
-      }
       currentAudioSrcRef.current = audioSrc;
       isFirstPlayRef.current = true;
       currentTrackIndexRef.current = 0;
 
       detectAvailableTracks(audioSrc).then(tracks => {
         availableTracksRef.current = tracks;
-        console.log('Detected tracks:', tracks);
         if (audioRef.current) {
           audioRef.current.loop = tracks.length === 1;
-          console.log('Set loop to:', tracks.length === 1);
         }
         if (onTrackChange) {
           onTrackChange(1, tracks.length);
         }
       });
-    }
-
-    if (!audioContextRef.current) {
-      // Shared singleton — see audioContextSingleton.ts (iOS native-leak fix).
-      audioContextRef.current = getAudioContext();
-      if (audioContextRef.current) {
-        gainNodeRef.current = audioContextRef.current.createGain();
-        gainNodeRef.current.connect(audioContextRef.current.destination);
-        gainNodeRef.current.gain.value = 0;
-      }
     }
 
     if (!audioRef.current) {
@@ -127,105 +122,60 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
         : audioSrc;
 
       audioRef.current = new Audio(initialTrack);
-      audioRef.current.volume = 1;
+      audioRef.current.volume = 0; // fade-in ramps it
       audioRef.current.loop = availableTracksRef.current.length === 1;
 
       const handleEnded = async () => {
-        console.log('[PracticeAudioPlayer] 🎵 Track ended', {
-          availableTracks: availableTracksRef.current.length,
-          currentIndex: currentTrackIndexRef.current,
-          loop: audioRef.current?.loop,
-          trackUrls: availableTracksRef.current
-        });
-
         if (availableTracksRef.current.length > 1) {
-          const prevIndex = currentTrackIndexRef.current;
-          currentTrackIndexRef.current = (currentTrackIndexRef.current + 1) % availableTracksRef.current.length;
+          currentTrackIndexRef.current =
+            (currentTrackIndexRef.current + 1) % availableTracksRef.current.length;
           const nextTrack = availableTracksRef.current[currentTrackIndexRef.current];
-
-          console.log('[PracticeAudioPlayer] 🔄 Switching track', {
-            from: prevIndex,
-            to: currentTrackIndexRef.current,
-            isLooping: currentTrackIndexRef.current === 0 && prevIndex === availableTracksRef.current.length - 1,
-            nextTrackUrl: nextTrack
-          });
-
-          if (audioRef.current && gainNodeRef.current && audioContextRef.current) {
+          if (audioRef.current) {
             audioRef.current.src = nextTrack;
             audioRef.current.load();
-            console.log('[PracticeAudioPlayer] ⏳ Loading next track...');
-
             try {
               await audioRef.current.play();
-              console.log('[PracticeAudioPlayer] ▶️ Playing next track successfully');
-              const currentTime = audioContextRef.current.currentTime;
-              gainNodeRef.current.gain.cancelScheduledValues(currentTime);
-              gainNodeRef.current.gain.setValueAtTime(volume, currentTime);
+              audioRef.current.volume = volume;
             } catch (err) {
               console.error('[PracticeAudioPlayer] ❌ Track change play error:', err);
             }
           }
-
           if (onTrackChange) {
             onTrackChange(currentTrackIndexRef.current + 1, availableTracksRef.current.length);
           }
-        } else {
-          console.log('[PracticeAudioPlayer] 🔁 Single track with loop=true, should auto-restart');
         }
       };
 
       audioRef.current.addEventListener('ended', handleEnded);
-
-      if (audioContextRef.current && gainNodeRef.current && !sourceRef.current) {
-        sourceRef.current = audioContextRef.current.createMediaElementSource(audioRef.current);
-        sourceRef.current.connect(gainNodeRef.current);
-      }
     }
 
     const audio = audioRef.current;
-    const gainNode = gainNodeRef.current;
-    const audioContext = audioContextRef.current;
-
-    if (!gainNode || !audioContext || !audio) return;
+    if (!audio) return;
 
     const fadeIn = async () => {
       if (fadeOutTimerRef.current) {
         clearTimeout(fadeOutTimerRef.current);
         fadeOutTimerRef.current = null;
       }
-
-      if (audioContext.state === 'suspended') {
-        await audioContext.resume();
-      }
-
       if (isFirstPlayRef.current) {
         audio.currentTime = 0;
         isFirstPlayRef.current = false;
       }
-
       try {
         await audio.play();
-        const currentTime = audioContext.currentTime;
-        gainNode.gain.cancelScheduledValues(currentTime);
-        gainNode.gain.setValueAtTime(gainNode.gain.value, currentTime);
-        gainNode.gain.linearRampToValueAtTime(volume, currentTime + fadeInDuration / 1000);
+        startFade(volume, fadeInDuration);
       } catch (err) {
         console.error('Audio play error:', err);
       }
     };
 
     const fadeOut = () => {
-      const currentTime = audioContext.currentTime;
-      gainNode.gain.cancelScheduledValues(currentTime);
-      gainNode.gain.setValueAtTime(gainNode.gain.value, currentTime);
-      gainNode.gain.linearRampToValueAtTime(0.001, currentTime + fadeOutDuration / 1000);
-
+      startFade(0, fadeOutDuration);
       if (fadeOutTimerRef.current) {
         clearTimeout(fadeOutTimerRef.current);
       }
-
       fadeOutTimerRef.current = setTimeout(() => {
-        audio.pause();
+        try { audio.pause(); } catch (_) { /* ignore */ }
         fadeOutTimerRef.current = null;
       }, fadeOutDuration);
     };
@@ -243,12 +193,15 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
 
   useEffect(() => {
     return () => {
+      if (fadeIntervalRef.current) {
+        clearInterval(fadeIntervalRef.current);
+        fadeIntervalRef.current = null;
+      }
       if (fadeOutTimerRef.current) {
         clearTimeout(fadeOutTimerRef.current);
+        fadeOutTimerRef.current = null;
       }
       if (audioRef.current) {
-        // iOS WKWebView: must clear src + load() to free native audio decoder.
-        // See RemoteAudioPlayer.tsx for the full explanation.
         try {
           audioRef.current.pause();
           audioRef.current.removeAttribute('src');
@@ -256,16 +209,6 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
         } catch (_) { /* ignore */ }
         audioRef.current = null;
       }
-      if (sourceRef.current) {
-        sourceRef.current.disconnect();
-        sourceRef.current = null;
-      }
-      if (gainNodeRef.current) {
-        gainNodeRef.current.disconnect();
-        gainNodeRef.current = null;
-      }
-      // Shared singleton — do NOT close(). See audioContextSingleton.ts.
-      audioContextRef.current = null;
     };
   }, []);
 

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useAudioCache, useAudioPreloader } from '../hooks/useAudioCache';
 import { Loader2 } from 'lucide-react';
-import { getAudioContext } from '../services/audioContextSingleton';
 
 interface RemoteAudioPlayerProps {
   isPlaying: boolean;
@@ -37,9 +36,11 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   const preloader = useAudioPreloader();
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  const audioContextRef = useRef<AudioContext | null>(null);
-  const gainNodeRef = useRef<GainNode | null>(null);
-  const sourceRef = useRef<MediaElementAudioSourceNode | null>(null);
+  // Pure HTMLAudioElement.volume-based fade: no Web Audio graph, because on
+  // iOS WKWebView each `createMediaElementSource` pins the audio decoder in
+  // the native graph for the lifetime of the AudioContext. With a singleton
+  // context they accumulate and the WebView gets OOM-killed after ~3 opens.
+  const fadeIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const fadeOutTimerRef = useRef<NodeJS.Timeout | null>(null);
   const isFirstPlayRef = useRef<boolean>(true);
   const trackEndHandledRef = useRef<boolean>(false);
@@ -113,75 +114,72 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   }, [currentTrackIndex, tracks.length, currentTrackPath]);
 
   useEffect(() => {
-    if (!audioContextRef.current) {
-      // Shared singleton AudioContext — see audioContextSingleton.ts.
-      // iOS WebKit leaks native buffer memory on every `new AudioContext()`;
-      // reusing one instance avoids the OOM-kill after ~3 practice opens.
-      audioContextRef.current = getAudioContext();
-      if (audioContextRef.current) {
-        gainNodeRef.current = audioContextRef.current.createGain();
-        gainNodeRef.current.connect(audioContextRef.current.destination);
-        gainNodeRef.current.gain.value = 0;
-      }
-    }
-
     if (!url || error) return;
 
     if (!audioRef.current) {
       audioRef.current = new Audio(url);
-      audioRef.current.volume = 1;
-      // Set loop=false for multi-track playlists so 'ended' event fires
+      audioRef.current.volume = 0; // start silent; fade-in ramps it up
       audioRef.current.loop = tracks.length === 1;
-      
+
       console.log('[RemoteAudioPlayer] 🎵 Created audio element', {
         tracksLength: tracks.length,
         loop: audioRef.current.loop,
         url: url.substring(0, 50)
       });
-
-      // Note: We don't use onended because:
-      // 1. It's unreliable on iOS with Web Audio API
-      // 2. It causes double-triggering with our setInterval polling
-      // setInterval polling (below) is the primary and only method for track switching
-
-      if (audioContextRef.current && gainNodeRef.current && !sourceRef.current) {
-        sourceRef.current = audioContextRef.current.createMediaElementSource(audioRef.current);
-        sourceRef.current.connect(gainNodeRef.current);
-      }
+      // Intentionally no createMediaElementSource / GainNode: pure HTMLAudio.
     } else if (audioRef.current.src !== url) {
       console.log('[RemoteAudioPlayer] 🔄 Updating audio src', {
         trackIndex: currentTrackIndex,
         newUrl: url.substring(0, 50)
       });
-      // Reset flag for new track
       trackEndHandledRef.current = false;
       audioRef.current.src = url;
       audioRef.current.load();
     }
   }, [url, error, tracks.length, currentTrackIndex]);
 
+  // Linear volume ramp on HTMLAudioElement. Replaces GainNode.linearRampToValueAtTime.
+  const startFade = (target: number, durationMs: number, onComplete?: () => void) => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (fadeIntervalRef.current) {
+      clearInterval(fadeIntervalRef.current);
+      fadeIntervalRef.current = null;
+    }
+    const stepMs = 50;
+    const steps = Math.max(1, Math.round(durationMs / stepMs));
+    const startVol = audio.volume;
+    const delta = (target - startVol) / steps;
+    let i = 0;
+    fadeIntervalRef.current = setInterval(() => {
+      i += 1;
+      const next = i >= steps ? target : startVol + delta * i;
+      try {
+        audio.volume = Math.max(0, Math.min(1, next));
+      } catch (_) { /* ignore */ }
+      if (i >= steps) {
+        if (fadeIntervalRef.current) {
+          clearInterval(fadeIntervalRef.current);
+          fadeIntervalRef.current = null;
+        }
+        onComplete?.();
+      }
+    }, stepMs);
+  };
+
   useEffect(() => {
     const audio = audioRef.current;
-    const gainNode = gainNodeRef.current;
-    const audioContext = audioContextRef.current;
-
-    if (!gainNode || !audioContext || !audio || !url) return;
+    if (!audio || !url) return;
 
     const fadeIn = async () => {
       if (fadeOutTimerRef.current) {
         clearTimeout(fadeOutTimerRef.current);
         fadeOutTimerRef.current = null;
       }
-
-      if (audioContext.state === 'suspended') {
-        await audioContext.resume();
-      }
-
       if (isFirstPlayRef.current) {
         audio.currentTime = 0;
         isFirstPlayRef.current = false;
       }
-
       try {
         await audio.play();
         console.log('[RemoteAudioPlayer] ▶️ Play started', {
@@ -189,10 +187,7 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
           duration: audio.duration,
           loop: audio.loop
         });
-        const currentTime = audioContext.currentTime;
-        gainNode.gain.cancelScheduledValues(currentTime);
-        gainNode.gain.setValueAtTime(gainNode.gain.value, currentTime);
-        gainNode.gain.linearRampToValueAtTime(volume, currentTime + fadeInDuration / 1000);
+        startFade(volume, fadeInDuration);
       } catch (err) {
         console.error('[RemoteAudioPlayer] ❌ Play error:', err);
       }
@@ -200,17 +195,12 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
 
     const fadeOut = () => {
       console.log('[RemoteAudioPlayer] ⏸️ FadeOut started');
-      const currentTime = audioContext.currentTime;
-      gainNode.gain.cancelScheduledValues(currentTime);
-      gainNode.gain.setValueAtTime(gainNode.gain.value, currentTime);
-      gainNode.gain.linearRampToValueAtTime(0.001, currentTime + fadeOutDuration / 1000);
-
+      startFade(0, fadeOutDuration);
       if (fadeOutTimerRef.current) {
         clearTimeout(fadeOutTimerRef.current);
       }
-
       fadeOutTimerRef.current = setTimeout(() => {
-        audio.pause();
+        try { audio.pause(); } catch (_) { /* ignore */ }
         fadeOutTimerRef.current = null;
       }, fadeOutDuration);
     };
@@ -267,17 +257,21 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     
     return () => {
       console.log('[RemoteAudioPlayer] 🛑 Component unmounting');
+      if (fadeIntervalRef.current) {
+        clearInterval(fadeIntervalRef.current);
+        fadeIntervalRef.current = null;
+      }
       if (fadeOutTimerRef.current) {
         clearTimeout(fadeOutTimerRef.current);
+        fadeOutTimerRef.current = null;
       }
       if (trackEndCheckIntervalRef.current) {
         clearInterval(trackEndCheckIntervalRef.current);
+        trackEndCheckIntervalRef.current = null;
       }
       if (audioRef.current) {
         // iOS WKWebView keeps a native audio decoder + PCM buffer attached to
-        // HTMLAudioElement until src is cleared and load() is called. Without
-        // these two extra lines, each practice-intro mount leaks ~15-40MB
-        // native memory and the WebView is OOM-killed after ~3 opens.
+        // HTMLAudioElement until src is cleared and load() is called.
         try {
           audioRef.current.pause();
           audioRef.current.removeAttribute('src');
@@ -285,18 +279,6 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
         } catch (_) { /* ignore */ }
         audioRef.current = null;
       }
-      if (sourceRef.current) {
-        sourceRef.current.disconnect();
-        sourceRef.current = null;
-      }
-      if (gainNodeRef.current) {
-        gainNodeRef.current.disconnect();
-        gainNodeRef.current = null;
-      }
-      // NOTE: do NOT call audioContextRef.current.close() — the AudioContext
-      // is a process-wide singleton (see audioContextSingleton.ts). Closing it
-      // would defeat the purpose and still leak native memory on iOS.
-      audioContextRef.current = null;
     };
   }, []);
 

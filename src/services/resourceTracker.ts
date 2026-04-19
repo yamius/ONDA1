@@ -42,6 +42,11 @@ interface ResourceStats {
   // Every fetch() call; in-flight ones can pin a large ReadableStream/buffer.
   totalFetchesEver: number;
   liveFetches: number;
+  // Every MediaElementAudioSourceNode created in any AudioContext. On iOS
+  // these pin the HTMLAudioElement's decoder inside the native audio graph
+  // and can't be freed while the AudioContext lives. With a singleton
+  // context (never closed), they accumulate.
+  totalMediaElementSourcesEver: number;
 }
 
 // Per-module mutable counters. Patches below update these.
@@ -59,6 +64,7 @@ const state = {
   totalBlobBytesEver: 0,
   totalFetchesEver: 0,
   liveFetches: 0,
+  totalMediaElementSourcesEver: 0,
 };
 
 let patched = false;
@@ -152,6 +158,19 @@ export function installResourceTracker(): void {
     if ((window as any).webkitAudioContext) {
       (window as any).webkitAudioContext = PatchedAudioContext as any;
     }
+
+    // Patch createMediaElementSource on the prototype so ALL instances count.
+    const proto = OrigAudioContext.prototype;
+    const origCreateMES = proto.createMediaElementSource;
+    if (typeof origCreateMES === 'function') {
+      proto.createMediaElementSource = function patchedCreateMES(
+        this: any,
+        ...args: any[]
+      ) {
+        state.totalMediaElementSourcesEver += 1;
+        return origCreateMES.apply(this, args);
+      };
+    }
   }
 
   // --- HTMLAudioElement (new Audio(...)) ---
@@ -239,6 +258,7 @@ export function snapshotResources(): ResourceStats {
     totalBlobBytesEver: state.totalBlobBytesEver,
     totalFetchesEver: state.totalFetchesEver,
     liveFetches: state.liveFetches,
+    totalMediaElementSourcesEver: state.totalMediaElementSourcesEver,
   };
 }
 
