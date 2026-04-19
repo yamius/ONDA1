@@ -2,10 +2,10 @@ import { useEffect, useRef, useState } from 'react';
 import { useAudioCache, useAudioPreloader } from '../hooks/useAudioCache';
 import { Loader2 } from 'lucide-react';
 
-// iOS WebKit effectively quantizes HTMLAudioElement.volume below ~0.02
-// (silent bucket). We do all fades in the range [FADE_FLOOR, target] and
-// snap to exact 0 only at the end of a fade-out.
-const FADE_FLOOR = 0.02;
+// Minimum gain for exponentialRampToValueAtTime (0 is forbidden — it
+// requires a strictly positive endpoint). We snap to exact 0 at the end
+// of a fade-out via setValueAtTime.
+const GAIN_FLOOR = 0.0001;
 
 interface RemoteAudioPlayerProps {
   isPlaying: boolean;
@@ -33,29 +33,33 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   const tracks = Array.isArray(audioPath) ? audioPath : [audioPath];
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const currentTrackPath = tracks[currentTrackIndex];
-  
+
   // Stable key for audioPath to avoid reset on every render (arrays create new references)
   const audioPathKey = Array.isArray(audioPath) ? audioPath.join('|') : audioPath;
 
   const { url, loading, progress, error } = useAudioCache(currentTrackPath);
   const preloader = useAudioPreloader();
 
+  // --- Web Audio graph, per RemoteAudioPlayer instance ---
+  // Previously we used a singleton AudioContext, which made every
+  // createMediaElementSource accumulate (iOS pins the HTMLAudio decoder
+  // in the native audio graph for the life of the context). Root OOM
+  // cause turned out to be WebGL/HDR textures, not Web Audio — and with
+  // lazy-mount of RemoteAudioPlayer (only while practiceState==='active'),
+  // we get exactly one AudioContext per practice session. On unmount we
+  // explicitly ctx.close() which tears down the graph and releases
+  // decoders. This gives us back sample-rate-smooth exponential fades
+  // without reintroducing the old OOM footprint.
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  // Pure HTMLAudioElement.volume-based fade: no Web Audio graph, because on
-  // iOS WKWebView each `createMediaElementSource` pins the audio decoder in
-  // the native graph for the lifetime of the AudioContext. With a singleton
-  // context they accumulate and the WebView gets OOM-killed after ~3 opens.
-  // rAF-driven fade. setInterval(50ms) produced audible stepping on iOS
-  // HTMLAudioElement (internal volume quantization + coarse ticks). rAF runs
-  // ~16ms, and combined with a quadratic curve it sounds close to what the
-  // Web Audio GainNode used to do — without createMediaElementSource (which
-  // pinned decoders and OOM-killed the WebView).
-  const fadeRafRef = useRef<number | null>(null);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const sourceNodeRef = useRef<MediaElementAudioSourceNode | null>(null);
+  const gainNodeRef = useRef<GainNode | null>(null);
+
   const fadeOutTimerRef = useRef<NodeJS.Timeout | null>(null);
   const isFirstPlayRef = useRef<boolean>(true);
   const trackEndHandledRef = useRef<boolean>(false);
   const trackEndCheckIntervalRef = useRef<NodeJS.Timeout | null>(null);
-  
+
   // Stable handler ref that always has current values
   const handleEndedRef = useRef<() => void>(() => {});
 
@@ -98,9 +102,9 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
         return;
       }
       trackEndHandledRef.current = true;
-      
+
       const totalTracks = tracks.length;
-      
+
       console.log('[RemoteAudioPlayer] 🎵 Track ended (via ref)', {
         currentIndex: currentTrackIndex,
         totalTracks,
@@ -127,21 +131,36 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     if (!url || error) return;
 
     if (!audioRef.current) {
-      audioRef.current = new Audio(url);
-      // iOS WebKit quantizes HTMLAudioElement.volume into ~16-32 internal
-      // buckets. Anything below ~0.02 collapses to "muted", so ramping from
-      // 0 or near-zero spends the first ~300ms in that dead zone and then
-      // snaps audible — what the user heard as "резко появляется". Start
-      // slightly above the dead zone; exponential ramp takes it up smoothly.
-      audioRef.current.volume = FADE_FLOOR;
-      audioRef.current.loop = tracks.length === 1;
+      const audio = new Audio(url);
+      // HTMLAudio.volume stays at 1. All gain control happens in the
+      // GainNode (sample-rate smooth, no iOS quantization).
+      audio.volume = 1;
+      audio.loop = tracks.length === 1;
+      // iOS: setting crossOrigin before createMediaElementSource avoids
+      // a tainted-media security error on blob/URL-cached audio.
+      try { audio.crossOrigin = 'anonymous'; } catch (_) { /* ignore */ }
+      audioRef.current = audio;
 
-      console.log('[RemoteAudioPlayer] 🎵 Created audio element', {
-        tracksLength: tracks.length,
-        loop: audioRef.current.loop,
-        url: url.substring(0, 50)
-      });
-      // Intentionally no createMediaElementSource / GainNode: pure HTMLAudio.
+      // Create the Web Audio graph once per instance.
+      try {
+        const Ctor: typeof AudioContext =
+          (window as any).AudioContext || (window as any).webkitAudioContext;
+        const ctx = new Ctor();
+        const source = ctx.createMediaElementSource(audio);
+        const gain = ctx.createGain();
+        gain.gain.value = GAIN_FLOOR; // silent-ish; fade-in ramps up
+        source.connect(gain);
+        gain.connect(ctx.destination);
+        audioContextRef.current = ctx;
+        sourceNodeRef.current = source;
+        gainNodeRef.current = gain;
+        console.log('[RemoteAudioPlayer] 🎵 Web Audio graph created', {
+          state: ctx.state,
+          sampleRate: ctx.sampleRate,
+        });
+      } catch (err) {
+        console.error('[RemoteAudioPlayer] ❌ Web Audio init failed:', err);
+      }
     } else if (audioRef.current.src !== url) {
       console.log('[RemoteAudioPlayer] 🔄 Updating audio src', {
         trackIndex: currentTrackIndex,
@@ -153,42 +172,31 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
     }
   }, [url, error, tracks.length, currentTrackIndex]);
 
-  // Exponential (equal-ratio) volume ramp driven by rAF. Web Audio's
-  // exponentialRampToValueAtTime does v(t) = v0 * (v1/v0)^t, which matches
-  // perceptual loudness (each equal time slice is an equal dB change).
-  // Linear/quadratic ramps on HTMLAudioElement.volume sound stepped on iOS
-  // because WebKit quantizes the low end — exponential spends the right
-  // amount of time in each perceptual band instead.
-  const startFade = (target: number, durationMs: number, onComplete?: () => void) => {
-    const audio = audioRef.current;
-    if (!audio) return;
-    if (fadeRafRef.current !== null) {
-      cancelAnimationFrame(fadeRafRef.current);
-      fadeRafRef.current = null;
-    }
-    // Clamp both ends away from 0 so the ratio is well-defined, then snap
-    // to exact 0 at the very end of a fade-out.
-    const startVol = Math.max(FADE_FLOOR, audio.volume);
-    const endVol = Math.max(FADE_FLOOR, target);
-    const ratio = endVol / startVol;
-    const startTs = performance.now();
-
-    const tick = (now: number) => {
-      const t = Math.min(1, Math.max(0, (now - startTs) / Math.max(1, durationMs)));
-      const v = startVol * Math.pow(ratio, t);
-      try {
-        audio.volume = Math.max(0, Math.min(1, v));
-      } catch (_) { /* ignore */ }
-      if (t < 1) {
-        fadeRafRef.current = requestAnimationFrame(tick);
-      } else {
-        // Snap to exact target (including hard 0 for fade-out-to-silence).
-        try { audio.volume = Math.max(0, Math.min(1, target)); } catch (_) { /* ignore */ }
-        fadeRafRef.current = null;
-        onComplete?.();
+  // Sample-rate smooth exponential ramp via GainNode.
+  // exponentialRampToValueAtTime(v, t) matches perceived loudness (equal
+  // time = equal dB). Endpoint must be strictly > 0, so we clamp to
+  // GAIN_FLOOR during the ramp and schedule a hard setValueAtTime(0) at
+  // the end for fade-out-to-silence.
+  const startFade = (target: number, durationMs: number) => {
+    const ctx = audioContextRef.current;
+    const gain = gainNodeRef.current;
+    if (!ctx || !gain) return;
+    const now = ctx.currentTime;
+    const durationSec = Math.max(0.001, durationMs / 1000);
+    const rampTarget = Math.max(GAIN_FLOOR, target);
+    try {
+      // Anchor current value so the ramp starts from exactly where we are.
+      gain.gain.cancelScheduledValues(now);
+      const currentVal = Math.max(GAIN_FLOOR, gain.gain.value);
+      gain.gain.setValueAtTime(currentVal, now);
+      gain.gain.exponentialRampToValueAtTime(rampTarget, now + durationSec);
+      if (target <= 0) {
+        // Snap to exact 0 slightly after the ramp ends.
+        gain.gain.setValueAtTime(0, now + durationSec + 0.01);
       }
-    };
-    fadeRafRef.current = requestAnimationFrame(tick);
+    } catch (err) {
+      console.error('[RemoteAudioPlayer] ❌ startFade error:', err);
+    }
   };
 
   useEffect(() => {
@@ -205,6 +213,12 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
         isFirstPlayRef.current = false;
       }
       try {
+        // iOS: AudioContext starts suspended until a user gesture. play()
+        // is triggered from a click handler, so resume() here is in-gesture.
+        const ctx = audioContextRef.current;
+        if (ctx && ctx.state === 'suspended') {
+          try { await ctx.resume(); } catch (_) { /* ignore */ }
+        }
         await audio.play();
         console.log('[RemoteAudioPlayer] ▶️ Play started', {
           trackIndex: currentTrackIndex,
@@ -226,7 +240,7 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
       fadeOutTimerRef.current = setTimeout(() => {
         try { audio.pause(); } catch (_) { /* ignore */ }
         fadeOutTimerRef.current = null;
-      }, fadeOutDuration);
+      }, fadeOutDuration + 50);
     };
 
     if (isPlaying && !loading) {
@@ -237,10 +251,8 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
   }, [isPlaying, url, loading, fadeInDuration, fadeOutDuration, volume]);
 
   // Reliable polling for track end detection (iOS workaround)
-  // Events like 'ended' and 'timeupdate' may not fire with Web Audio API on iOS
   useEffect(() => {
     if (!isPlaying || tracks.length <= 1) {
-      // Clear interval if not playing or single track (loop handles it)
       if (trackEndCheckIntervalRef.current) {
         clearInterval(trackEndCheckIntervalRef.current);
         trackEndCheckIntervalRef.current = null;
@@ -248,12 +260,10 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
       return;
     }
 
-    // Check every 500ms if track is near end
     trackEndCheckIntervalRef.current = setInterval(() => {
       const audio = audioRef.current;
       if (!audio || audio.paused || audio.loop) return;
-      
-      // Check if we're very close to the end (within 0.5 seconds)
+
       if (audio.duration > 0 && audio.currentTime >= audio.duration - 0.5) {
         console.log('[RemoteAudioPlayer] ⏱️ Interval check: near end detected', {
           currentTime: audio.currentTime.toFixed(2),
@@ -278,13 +288,9 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
       tracksCount: tracks.length,
       firstTrack: tracks[0]?.split('/').pop()
     });
-    
+
     return () => {
       console.log('[RemoteAudioPlayer] 🛑 Component unmounting');
-      if (fadeRafRef.current !== null) {
-        cancelAnimationFrame(fadeRafRef.current);
-        fadeRafRef.current = null;
-      }
       if (fadeOutTimerRef.current) {
         clearTimeout(fadeOutTimerRef.current);
         fadeOutTimerRef.current = null;
@@ -293,9 +299,21 @@ export const RemoteAudioPlayer: React.FC<RemoteAudioPlayerProps> = ({
         clearInterval(trackEndCheckIntervalRef.current);
         trackEndCheckIntervalRef.current = null;
       }
+      // Teardown order matters: disconnect the Web Audio graph BEFORE
+      // detaching the HTMLAudio source, then ctx.close() releases all
+      // native decoders that createMediaElementSource pinned.
+      try { gainNodeRef.current?.disconnect(); } catch (_) { /* ignore */ }
+      try { sourceNodeRef.current?.disconnect(); } catch (_) { /* ignore */ }
+      gainNodeRef.current = null;
+      sourceNodeRef.current = null;
+      const ctx = audioContextRef.current;
+      audioContextRef.current = null;
+      if (ctx) {
+        try { ctx.close().catch(() => {}); } catch (_) { /* ignore */ }
+      }
       if (audioRef.current) {
-        // iOS WKWebView keeps a native audio decoder + PCM buffer attached to
-        // HTMLAudioElement until src is cleared and load() is called.
+        // iOS WKWebView keeps a native audio decoder + PCM buffer attached
+        // to HTMLAudioElement until src is cleared and load() is called.
         try {
           audioRef.current.pause();
           audioRef.current.removeAttribute('src');
