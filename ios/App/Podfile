@@ -17,6 +17,10 @@ def capacitor_pods
   pod 'CapacitorApp', :path => '../../node_modules/@capacitor/app'
   pod 'CapacitorBrowser', :path => '../../node_modules/@capacitor/browser'
   pod 'CapacitorHealth', :path => '../../node_modules/capacitor-health'
+  # Native iOS crash reporting — catches WebView OOM-kills that kill the
+  # JS process before window.onerror can fire. Pod is shipped by
+  # @sentry/capacitor (SentryCapacitor.podspec).
+  pod 'SentryCapacitor', :path => '../../node_modules/@sentry/capacitor'
 end
 
 target 'App' do
