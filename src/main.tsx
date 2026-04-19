@@ -3,8 +3,11 @@ import { createRoot } from 'react-dom/client';
 // Install resource tracker BEFORE any module that might schedule timers.
 // Must be the very first import so monkey-patches are in place when App.tsx
 // and its deps initialize setInterval / new AudioContext at module load.
-import { installResourceTracker } from './services/resourceTracker';
+import { installResourceTracker, startHeartbeat, getHeartbeats, clearHeartbeats } from './services/resourceTracker';
 installResourceTracker();
+// 500ms rolling ring-buffer of resource snapshots, so the post-mortem can
+// show what was growing in the 10 seconds before the iOS WebView OOM-kill.
+startHeartbeat(500);
 import App from './App.tsx';
 import ErrorBoundary from './components/ErrorBoundary';
 import './index.css';
@@ -81,6 +84,10 @@ window.onunhandledrejection = function(event) {
     if (sinceLastView > 10000) return;
     const errorLogsRaw = localStorage.getItem('onda_error_logs') || '[]';
     const errorLogs = JSON.parse(errorLogsRaw);
+    // Fetch the heartbeat ring buffer BEFORE clearing — it holds the last
+    // ~10 seconds of resource snapshots leading up to the crash.
+    const heartbeats = getHeartbeats();
+    clearHeartbeats();
     const { analytics } = await import('./services/AnalyticsService');
     await analytics.track('app_crash_suspected', {
       crashed_practice_id: marker.practiceId,
@@ -88,6 +95,8 @@ window.onunhandledrejection = function(event) {
       session_practice_count: marker.sessionPracticeCount,
       prev_session_id: marker.sessionId,
       last_error_logs: errorLogs.slice(-5),
+      // Only send last 10 heartbeats to stay under payload limits.
+      pre_crash_heartbeats: heartbeats.slice(-10),
       platform: 'ios',
     });
     console.warn('[ONDA] Detected suspected crash after practice_view', {

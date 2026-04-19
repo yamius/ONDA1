@@ -262,15 +262,20 @@ class AnalyticsService {
     // Resource snapshot diagnostics: emit a parallel event whenever
     // practice_view fires, so we can correlate memory growth with the
     // iOS WebView OOM crash pattern (see app_crash_suspected).
-    if (eventName === 'practice_view') {
+    if (eventName === 'practice_view' || eventName === 'practice_intro_closed_debug') {
       try {
         // Dynamic import to keep the core analytics bundle independent.
         const { snapshotResources } = await import('./resourceTracker');
         const snap = snapshotResources();
         // Fire-and-forget — don't block the outer track() on this.
         this.track('resource_snapshot', {
-          at_event: 'practice_view',
-          practice_id: (metadata as any)?.practice_id ?? null,
+          at_event: eventName,
+          practice_id:
+            (metadata as any)?.practice_id ??
+            (metadata as any)?.practiceId ??
+            (metadata as any)?.prevPracticeId ??
+            null,
+          close_reason: (metadata as any)?.reason ?? null,
           ...snap,
         }).catch(() => {});
       } catch (e) {

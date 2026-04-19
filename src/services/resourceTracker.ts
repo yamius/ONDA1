@@ -35,6 +35,13 @@ interface ResourceStats {
   // native memory on iOS WebKit (they reference a Blob buffer).
   liveBlobUrls: number;
   totalBlobUrlsEver: number;
+  // Every `new Blob(...)` created — blob data sits in native memory even
+  // without a URL assigned. IndexedDB writes of large audio blobs count too.
+  totalBlobsEver: number;
+  totalBlobBytesEver: number;
+  // Every fetch() call; in-flight ones can pin a large ReadableStream/buffer.
+  totalFetchesEver: number;
+  liveFetches: number;
 }
 
 // Per-module mutable counters. Patches below update these.
@@ -48,6 +55,10 @@ const state = {
   totalAudioElementsEver: 0,
   liveBlobUrls: 0,
   totalBlobUrlsEver: 0,
+  totalBlobsEver: 0,
+  totalBlobBytesEver: 0,
+  totalFetchesEver: 0,
+  liveFetches: 0,
 };
 
 let patched = false;
@@ -171,6 +182,35 @@ export function installResourceTracker(): void {
     state.liveBlobUrls = Math.max(0, state.liveBlobUrls - 1);
     return origRevokeObjectURL(url);
   };
+
+  // --- Blob constructor ---
+  // useAudioCache does `new Blob(chunks, { type: 'audio/mpeg' })` which pins
+  // the decoded mp3 (~20-30MB per track) in native memory independently of
+  // whether URL.createObjectURL is ever called on it.
+  const OrigBlob = (window as any).Blob;
+  if (OrigBlob) {
+    const PatchedBlob = function patchedBlob(this: any, parts?: any[], options?: any) {
+      state.totalBlobsEver += 1;
+      const instance = new OrigBlob(parts, options);
+      try {
+        state.totalBlobBytesEver += instance.size || 0;
+      } catch (_) { /* ignore */ }
+      return instance;
+    };
+    (PatchedBlob as any).prototype = OrigBlob.prototype;
+    (window as any).Blob = PatchedBlob as any;
+  }
+
+  // --- fetch ---
+  // An in-flight fetch with a large ReadableStream ties up native buffers.
+  const origFetch = window.fetch.bind(window);
+  (window as any).fetch = function patchedFetch(...args: any[]) {
+    state.totalFetchesEver += 1;
+    state.liveFetches += 1;
+    return origFetch(...args).finally(() => {
+      state.liveFetches = Math.max(0, state.liveFetches - 1);
+    });
+  };
 }
 
 export function snapshotResources(): ResourceStats {
@@ -195,5 +235,49 @@ export function snapshotResources(): ResourceStats {
     totalAudioElementsEver: state.totalAudioElementsEver,
     liveBlobUrls: state.liveBlobUrls,
     totalBlobUrlsEver: state.totalBlobUrlsEver,
+    totalBlobsEver: state.totalBlobsEver,
+    totalBlobBytesEver: state.totalBlobBytesEver,
+    totalFetchesEver: state.totalFetchesEver,
+    liveFetches: state.liveFetches,
   };
+}
+
+const HEARTBEAT_KEY = 'onda_resource_heartbeats';
+const HEARTBEAT_MAX = 20;
+let heartbeatInterval: ReturnType<typeof setInterval> | null = null;
+
+/**
+ * Start a rolling ring-buffer of resource snapshots in localStorage.
+ * If the WebView is OOM-killed, the post-mortem in main.tsx can ship the last
+ * N snapshots so we can see what was growing in the seconds before the crash
+ * (instead of only the snapshot at practice_view).
+ */
+export function startHeartbeat(intervalMs = 500): void {
+  if (heartbeatInterval) return;
+  heartbeatInterval = setInterval(() => {
+    try {
+      const snap = snapshotResources();
+      const now = Date.now();
+      const raw = localStorage.getItem(HEARTBEAT_KEY);
+      const list: any[] = raw ? JSON.parse(raw) : [];
+      list.push({ ts: now, ...snap });
+      while (list.length > HEARTBEAT_MAX) list.shift();
+      localStorage.setItem(HEARTBEAT_KEY, JSON.stringify(list));
+    } catch (_) { /* ignore */ }
+  }, intervalMs);
+}
+
+export function getHeartbeats(): any[] {
+  try {
+    const raw = localStorage.getItem(HEARTBEAT_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (_) {
+    return [];
+  }
+}
+
+export function clearHeartbeats(): void {
+  try {
+    localStorage.removeItem(HEARTBEAT_KEY);
+  } catch (_) { /* ignore */ }
 }
