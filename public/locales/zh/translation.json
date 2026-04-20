@@ -1425,5 +1425,38 @@
       "保持对话的感觉：吸气在问，呼气在懂。",
       "以几次温暖的呼气收束，把注意力放在胸膛中心——回响化作了光。"
     ]
+  },
+  "onboarding": {
+    "screen1_title": "什么是 ONDA Life",
+    "screen1_subtitle": "",
+    "screen1_text1": "ONDA Life 是一套用于现实生活的正念与自我成长练习系统。",
+    "screen1_list1": "呼吸、身体与冥想类的练习步骤；",
+    "screen1_list2": "关卡：从身体的根基，到更高的意识状态；",
+    "screen1_list3": "短时形式，1–12 分钟；",
+    "screen1_list4": "内置货币 OND，用于奖励练习与任务。",
+    "screen1_conclusion": "一条路径：从感受身体，走向清晰、灵感与力量。",
+    "screen2_title": "它是如何运作的",
+    "screen2_subtitle": "",
+    "screen2_text1": "ONDA Life 是由简单的日常步骤组成的路径（波浪与关卡）。",
+    "screen2_text2": "你将学会：",
+    "screen2_list1": "把身体作为能量之源，在其上安住；",
+    "screen2_list2": "把情绪当作连接的语言去体验；",
+    "screen2_list3": "运用心智作出精准的行动；",
+    "screen2_list4": "通过支持他人，点亮自己的心。",
+    "screen2_text3": "",
+    "screen2_list5": "",
+    "screen2_list6": "",
+    "screen2_list7": "",
+    "screen2_conclusion": "每一次练习，都是一段短短的呼吸、一次对身体的关注、一个微小的动作或一次凝视。",
+    "screen3_title": "资源、奖励、结果",
+    "screen3_subtitle": "",
+    "screen3_text1": "我们提供路径、提示与支持。完成练习与任务，你会获得 OND——游戏内的货币：",
+    "screen3_list1": "连接心率设备，可以获得更多奖励；",
+    "screen3_list2": "从第 3 关起，OND 可兑换为真实货币；",
+    "screen3_list3": "早期关卡所练的技能，是后续成长的地基。",
+    "screen3_conclusion": "结果：稳定的临在、平静、清明，以及生活中的内在支撑。",
+    "continue": "继续",
+    "start_journey": "开启 ONDA Life 之旅",
+    "replay": "重播引导介绍"
   }
 }
