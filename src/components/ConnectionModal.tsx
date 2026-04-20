@@ -346,7 +346,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       }`}>
                         <div>
                           <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
-                            {t('settings.hrv_surrogate', 'HRV surrogate')}
+                            {t('settings.hrv_surrogate', 'HRV (estimate)')}
                           </div>
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
@@ -992,7 +992,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     }`}>
                       <div>
                         <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
-                          {t('settings.hrv_surrogate', 'HRV surrogate')}
+                          {t('settings.hrv_surrogate', 'HRV (estimate)')}
                         </div>
                         <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
                           {t('settings.hrv_desc', 'HR variability over time')}

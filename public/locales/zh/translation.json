@@ -54,7 +54,7 @@
     "permission_not_determined_title": "你在 Apple Watch 上跳过了心率授权",
     "permission_not_determined_body": "请打开 Apple Watch 上的 ONDA，点击「Allow Access」以允许共享心率。",
     "permission_denied_title": "Apple Watch 上的心率访问已关闭",
-    "permission_denied_body": "在 iPhone 上：打开「Watch」App → 我的手表 → 隐私 → 健康 → ONDA → 开启「心率」。\n或直接在手表上：设置 → 隐私与安全性 → 健康 → ONDA → 开启「心率」。"
+    "permission_denied_body": "在 iPhone 上：设置 → 隐私与安全性 → 健康 → ONDA → 允许。\n在手表上：设置 → 健康 → App → ONDA Life → 全部开启。"
   },
   "health": {
     "activity": "活动",
@@ -394,7 +394,7 @@
     "breathing": "呼吸",
     "stress": "压力",
     "energy": "能量",
-    "hrv_surrogate": "HRV（替代指标）",
+    "hrv_surrogate": "HRV（估算）",
     "cardiac_stability": "心脏稳定性指数",
     "recovery_rate": "恢复速度",
     "hr_trend_slope": "心率趋势斜率",

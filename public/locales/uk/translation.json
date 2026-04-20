@@ -54,7 +54,7 @@
     "permission_not_determined_title": "Дозвіл на пульс пропущено на годиннику",
     "permission_not_determined_body": "Відкрий додаток ONDA на Apple Watch і натисни «Allow Access», щоб дозволити доступ до пульсу.",
     "permission_denied_title": "Доступ до пульсу на годиннику вимкнено",
-    "permission_denied_body": "На iPhone: відкрий додаток Watch → Мій годинник → Конфіденційність → Здоров’я → ONDA → увімкни «Пульс».\nАбо просто на годиннику: Налаштування → Конфіденційність і безпека → Здоров’я → ONDA → увімкни «Пульс»."
+    "permission_denied_body": "На iPhone: Параметри → Приватність і безпека → Здоров’я → ОНДА → дозволити.\nНа годиннику: Параметри → Здоров’я → Програми → ONDA Life → увімкнути все."
   },
   "health": {
     "activity": "Активність",
@@ -552,7 +552,7 @@
     "breathing": "Дихання",
     "stress": "Стрес",
     "energy": "Енергія",
-    "hrv_surrogate": "HRV (сурогат)",
+    "hrv_surrogate": "HRV (оцінка)",
     "cardiac_stability": "Індекс стабільності серця",
     "recovery_rate": "Швидкість відновлення",
     "hr_trend_slope": "Нахил тренду пульсу",

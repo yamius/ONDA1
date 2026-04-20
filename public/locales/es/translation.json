@@ -55,7 +55,7 @@
     "permission_not_determined_title": "Falta el permiso de frecuencia cardíaca en tu Watch",
     "permission_not_determined_body": "Abre ONDA en tu Apple Watch y toca «Allow Access» para compartir la frecuencia cardíaca.",
     "permission_denied_title": "El acceso a la frecuencia cardíaca está desactivado en tu Watch",
-    "permission_denied_body": "En el iPhone: abre la app Watch → Mi Reloj → Privacidad → Salud → ONDA → activa «Frecuencia cardíaca».\nO directamente en el Watch: Ajustes → Privacidad y seguridad → Salud → ONDA → activa «Frecuencia cardíaca»."
+    "permission_denied_body": "En el iPhone: Ajustes → Privacidad y seguridad → Salud → ONDA → permitir.\nEn el reloj: Ajustes → Salud → Apps → ONDA Life → activar todo."
   },
   "health": {
     "activity": "Actividad",
@@ -444,7 +444,7 @@
     "breathing": "Respiración",
     "stress": "Estrés",
     "energy": "Energía",
-    "hrv_surrogate": "HRV (sustituto)",
+    "hrv_surrogate": "HRV (estimación)",
     "cardiac_stability": "Índice de estabilidad cardíaca",
     "recovery_rate": "Velocidad de recuperación",
     "hr_trend_slope": "Pendiente de tendencia de FC",
