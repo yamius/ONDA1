@@ -1942,5 +1942,163 @@
     "connect_button": "Conectar",
     "platform_label": "Plataforma"
   },
-  "quote_level_3": "La forma nace donde<br/>la tierra y el agua se encuentran"
+  "quote_level_3": "La forma nace donde<br/>la tierra y el agua se encuentran",
+  "liza": {
+    "name": "Liza",
+    "subtitle": "Tu compañera de apoyo emocional",
+    "greeting": "¡Hola! Soy Liza y estoy aquí para escucharte y apoyarte. ¿Cómo te sientes ahora?",
+    "emotion_prompt": "He notado que estás experimentando {{emotion}}. ¿Quieres hablar de ello?",
+    "choose_exercise": "Elige un ejercicio guiado o simplemente habla:",
+    "input_placeholder": "Escribe tu mensaje...",
+    "flows": {
+      "anxiety": "Trabajar con la ansiedad",
+      "panic": "Ejercicio de enraizamiento",
+      "body": "Escaneo corporal",
+      "loneliness": "Sentir conexión",
+      "free_talk": "Hablar libremente"
+    },
+    "free_talk_response": "Claro, estoy aquí para escucharte. Cuéntame qué tienes en mente y lo exploraremos juntos."
+  },
+  "eliza": {
+    "empty": [
+      "Estoy aquí y escuchando. Puedes empezar por donde te resulte más fácil.",
+      "A veces empezar es lo más difícil. ¿Qué tienes en mente ahora mismo?",
+      "Tómate tu tiempo. Cuando estés listo, cuéntame un poco sobre lo que está pasando."
+    ],
+    "greeting": [
+      "Hola. ¿De qué te gustaría hablar hoy?",
+      "Hola. ¿Cómo te has sentido últimamente, aunque la respuesta sea complicada?",
+      "Hola. ¿Hay algo que se te ha quedado dando vueltas más de lo que debería?"
+    ],
+    "thanks": [
+      "De nada. ¿Hay algo más que quieras explorar?",
+      "Me alegra si esto ayuda aunque sea un poco. ¿En qué estás pensando ahora?",
+      "Cuando quieras. Si te apetece, podemos seguir mirando lo que te viene."
+    ],
+    "tired": [
+      "El agotamiento te quita mucho. ¿Qué exactamente te está desgastando tanto?",
+      "Parece que necesitas descanso. ¿Qué te exige tanta energía?",
+      "¿Cuándo fue la última vez que te sentiste de verdad descansado?",
+      "A veces el cansancio es una señal. ¿Qué intenta decirte tu cuerpo?",
+      "¿Cuánto tiempo llevas sintiendo este agotamiento?"
+    ],
+    "work": [
+      "El trabajo puede afectar mucho tu estado. ¿Qué te molesta en concreto?",
+      "¿Cómo afecta esta situación laboral a tu bienestar?",
+      "¿Qué te gustaría cambiar de la situación laboral?",
+      "¿Hay algo en el trabajo que te dé satisfacción?",
+      "¿Cómo sueles recuperarte tras un día duro de trabajo?"
+    ],
+    "want": [
+      "¿Qué te impide conseguir lo que quieres?",
+      "Este deseo parece importante para ti. Cuéntame más.",
+      "¿Desde cuándo lo quieres?",
+      "¿Qué va a ocurrir cuando lo consigas?",
+      "¿Cuál sería el paso más pequeño que te acercaría a ello?"
+    ],
+    "need": [
+      "Eso suena a mucha presión. ¿De dónde viene esa obligación?",
+      "Cargar con todo eso debe de cansar. ¿Cómo te hace sentir?",
+      "¿Qué pasará si no haces lo que «tienes que» hacer?",
+      "¿De quién son en realidad esas expectativas: tuyas o de otra persona?",
+      "¿Cómo sería tu vida si ese «tengo que» no existiera?"
+    ],
+    "stress": [
+      "El estrés puede ser abrumador. ¿Cuál es la fuente principal ahora mismo?",
+      "Hagamos una pausa. ¿Qué está creando esta tensión?",
+      "¿Cómo reacciona tu cuerpo a este estrés?",
+      "¿Qué suele ayudarte a lidiar con el estrés?",
+      "Si pudieras quitar una causa de estrés, ¿cuál sería?"
+    ],
+    "anxiety": [
+      "La ansiedad puede absorberlo todo. ¿Qué dispara estas sensaciones en ti?",
+      "¿Cuándo notaste por primera vez esta ansiedad?",
+      "¿Qué te ayuda a calmarte cuando llega la ansiedad?",
+      "¿Qué es concretamente lo que más te preocupa?",
+      "¿Cómo aparece la ansiedad en tu cuerpo?"
+    ],
+    "sad": [
+      "Oigo tristeza en tus palabras. ¿Qué pesa sobre tu corazón?",
+      "La tristeza es un sentimiento importante. ¿Qué la provocó?",
+      "¿Cuándo sientes esta tristeza con más fuerza?",
+      "¿Hay algo que echas de menos?",
+      "¿Qué suele ayudarte cuando estás triste?"
+    ],
+    "angry": [
+      "El enfado suele señalar algo importante. ¿Qué hay detrás de este sentimiento?",
+      "Está bien enfadarse. ¿Qué lo disparó?",
+      "¿Cómo sueles manejar el enfado?",
+      "¿Qué ocurrió antes de que apareciera este enfado?",
+      "¿Qué necesidad hay detrás de esta rabia?"
+    ],
+    "fear": [
+      "El miedo puede proteger, pero también limitar. ¿A qué tienes miedo?",
+      "Cuéntame más sobre este miedo. ¿Cuándo aparece?",
+      "¿Qué harías si no tuvieras miedo?",
+      "¿Cómo afecta este miedo a tu vida?",
+      "¿Hubo un momento en que superaste un miedo parecido?"
+    ],
+    "lonely": [
+      "La soledad duele. ¿Qué tipo de conexión echas más de menos?",
+      "Sentirse aislado es duro. ¿Cuándo empezó esta soledad?",
+      "¿Con quién querrías estar ahora mismo?",
+      "¿Qué te impide sentirte conectado con los demás?",
+      "¿Cuándo sentiste cercanía verdadera por última vez?"
+    ],
+    "difficult": [
+      "Eso sí que suena duro. ¿Qué hace que la situación sea especialmente difícil?",
+      "Cuando todo parece duro, los pasos pequeños ayudan. ¿Qué es lo más difícil?",
+      "Ya has superado situaciones difíciles antes. ¿Qué te ayudó entonces?",
+      "¿Qué parte de esto te cuesta más?",
+      "¿Quién podría apoyarte en esta situación?"
+    ],
+    "cant": [
+      "¿Qué cambiaría si pudieras?",
+      "A veces «no puedo» significa que se necesita otro enfoque. ¿Qué has probado ya?",
+      "¿Qué es lo que más te bloquea?",
+      "Ese «no puedo», ¿es una creencia o una barrera real?",
+      "¿Qué es lo más pequeño que podrías hacer ahora mismo?"
+    ],
+    "why": [
+      "Es una buena pregunta. ¿Cuál crees que podría ser la razón?",
+      "Pregunta interesante. ¿Qué te dice tu intuición?",
+      "Buscar el «por qué» puede ser importante. ¿Qué has ido descubriendo?"
+    ],
+    "how": [
+      "Vale la pena explorarlo. ¿Qué ideas se te vienen?",
+      "Buena pregunta. ¿Qué has considerado ya?",
+      "Pensémoslo juntos. ¿Por dónde querrías empezar?"
+    ],
+    "fallback": [
+      "Cuéntame más sobre eso.",
+      "¿Cómo te hace sentir eso?",
+      "¿Qué crees que significa para ti?",
+      "¿Puedes decir algo más?",
+      "¿Cómo se vería, en la práctica, sentirte aunque sea un 5% mejor sobre «{{fragment}}»?"
+    ],
+    "feelings": [
+      "¿Qué se siente en tu cuerpo cuando experimentas {{fragment}}?",
+      "¿Cuándo empezaste a sentirte así por primera vez?",
+      "¿Qué te ayuda, aunque sea un poco, cuando sientes {{fragment}}?"
+    ],
+    "thinking": [
+      "¿Cuál es el pensamiento principal que te da vueltas sobre esto?",
+      "Si tuvieras que nombrar una cosa que vuelve una y otra vez, ¿cuál sería?",
+      "¿Qué cambiaría si lo pensaras de otra manera?"
+    ]
+  },
+  "emotional_states": {
+    "calmness": "Calma",
+    "calmness_desc": "Estás en un estado de paz interior",
+    "joy": "Alegría",
+    "joy_desc": "Tu energía irradia positividad",
+    "anxiety": "Ansiedad",
+    "anxiety_desc": "Se percibe tensión interna",
+    "fatigue": "Fatiga",
+    "fatigue_desc": "Tu cuerpo necesita descanso y recuperación",
+    "inspiration": "Inspiración",
+    "inspiration_desc": "Estás lleno de energía creativa",
+    "contemplation": "Contemplación",
+    "contemplation_desc": "Tu mente busca respuestas más profundas"
+  }
 }
