@@ -618,6 +618,14 @@
       "collect_desc": "recursos simples de comida/calor/confort",
       "react": "Reaccionar",
       "react_desc": "sistema simple de acercamiento/evitación, confort/incomodidad"
+    },
+    "level_2": {
+      "explore": "Explorar",
+      "explore_desc": "líneas de corriente y remansos tranquilos (agua/hondonadas/umbrales de luz)",
+      "collect": "Reunir",
+      "collect_desc": "un ritmo estable de respiración y trayectorias de bienestar (cadencia/pausas/fluidez)",
+      "react": "Reaccionar",
+      "react_desc": "acercamiento a zonas cálidas/luminosas y evitación de zonas frías/ruidosas (seguir/esquivar, acelerar/frenar)"
     }
   },
   "philosophy": {
@@ -628,6 +636,13 @@
       "text_4": "Con cada exhalación, la Tierra te acepta.",
       "text_5": "Tu respiración conecta el cielo y las raíces.",
       "text_6": "Cuanto más profundo es tu fundamento, más alto se eleva la luz."
+    },
+    "level_2": {
+      "text_1": "Sales del reposo en el que vivías hasta ahora.",
+      "text_2": "El mundo en torno a ti es un océano de luz, un tiempo líquido.",
+      "text_3": "Respiras y sientes cómo las olas te guían.",
+      "text_4": "No hay camino: hay corriente.",
+      "text_5": "Tú eres el movimiento mismo, y cada inhalación se vuelve dirección."
     }
   },
   "level_goal": {
@@ -648,6 +663,24 @@
       "wisdom_2": "Sin objetivo, sin lucha, sin esfuerzo.",
       "wisdom_3": "Siente la vida no con la mente, sino con el cuerpo.",
       "wisdom_4": "Recuerda el antiguo lenguaje de la respiración, el calor y la luz, el lenguaje que habla la Tierra."
+    },
+    "level_2": {
+      "intro": "Aprender a percibir el movimiento: sentir la dirección a través del cuerpo y del flujo. Sincronizar la respiración con el paso de la ola, confiar en la corriente, encontrar el equilibrio en un medio cambiante.",
+      "game_task": "Tarea lúdica y energética: activación del campo del Flujo (conexión sensomotriz).",
+      "principle_1": "No mandas: sientes, sigues, respiras.",
+      "principle_2": "Cada práctica es un paso hacia la fluidez:",
+      "principle_3": "del reposo → al impulso → a la ola → a la dirección → al silencio dentro del movimiento.",
+      "story_1": "Despiertas en un mundo líquido, donde los límites se han vuelto suaves.",
+      "story_2": "El agua roza la piel y la respiración se convierte en corriente.",
+      "story_3": "Aquí no hay rutas ni mapas, sólo un ritmo que llama hacia delante.",
+      "story_4": "Cada inhalación se vuelve tu primer movimiento.",
+      "identity_1": "Eres Pez, el primer navegante de la conciencia.",
+      "identity_2": "Aún no planeas: te sintonizas.",
+      "identity_3": "No buscas un camino, sino una resonancia: donde el cuerpo se siente ligero, allí está lo verdadero.",
+      "wisdom_1": "La inhalación te recoge en una sola línea. La exhalación te deja entrar en la ola y te devuelve al centro.",
+      "wisdom_2": "Con cada ciclo surge una trayectoria natural: no inventada por la mente, sino hallada por los sentidos.",
+      "wisdom_3": "Todo lo que se pide es permitir que el movimiento nazca de la respiración. Sin lucha, sin prisa, sin tensión.",
+      "wisdom_4": "Sentir el mundo no con los ojos, sino con la piel; escuchar la dirección no con los oídos, sino con el corazón. Recordar el antiguo idioma de las corrientes, la fluidez y la hondura, con el que habla el Agua."
     }
   },
   "terra_speaks": {
@@ -656,6 +689,13 @@
       "quote_2": "No aprendes a existir — recuerdas.",
       "quote_3": "Cada célula de tu cuerpo sabe cómo ser.",
       "quote_4": "Permítete simplemente sentir. Lo demás vendrá por sí solo."
+    },
+    "title": "💬 TERRA habla:",
+    "level_2": {
+      "quote_1": "Mientras te mueves, estás vivo.",
+      "quote_2": "No gobiernes el mar: escucha su ritmo.",
+      "quote_3": "Cada agua conoce su orilla.",
+      "quote_4": "Confía en la corriente y te llevará a casa."
     }
   },
   "terra_final": {
@@ -667,6 +707,13 @@
       "line_2": "Del silencio nace la vida.",
       "line_3": "Ahora tus raíces han absorbido la luz,",
       "line_4": "y la Tierra está lista para liberarte al flujo."
+    },
+    "level_2": {
+      "line_1": "Has aprendido a moverte sin perder el silencio.",
+      "line_2": "En ti el agua ha tomado conciencia, y la calma se ha vuelto canción.",
+      "line_3": "Cada inhalación tuya es una ola,",
+      "line_4": "cada exhalación, un regreso a la hondura.",
+      "line_5": "Ahora tu fluidez está lista para encontrar la tierra."
     }
   },
   "adaptive_practices": {
@@ -1419,6 +1466,171 @@
       "Inhala — reúne la fuerza en el centro del pecho.\nExhala — dirígela hacia abajo, fortalece las raíces, confía en la tierra.",
       "Siente los límites de tu espacio:\n\"Aquí estoy. Aquí está mi casa. Aquí puedo ser pesado y real\".",
       "Cuanto más profundas son las raíces — más libre es la respiración,\nmás silenciosa la mente, más clara el corazón."
+    ],
+    "p2_1": [
+      "Siéntate o ponte de pie con soltura; hombros y mandíbula, suaves.",
+      "Siente la «corriente» alrededor del cuerpo, como si el agua rozara tu piel.",
+      "Inhala: el pecho se eleva apenas, la ola viene a tu encuentro.",
+      "Exhala: permite que el cuerpo ceda suavemente hacia el flujo (micromovimiento de 1–2°).",
+      "Respira con fluidez: inhalación y exhalación casi iguales; si aparece resistencia, alarga la exhalación.",
+      "Explora tres direcciones: adelante/atrás, derecha/izquierda, arriba/abajo: ve hacia donde sea más fácil.",
+      "Que rodillas y codos estén elásticos; la columna, como una varilla flexible.",
+      "No dirijas la corriente. Escúchala con la piel, la espalda, el vientre, y responde apenas.",
+      "Al inhalar, recógete al centro; al exhalar, deslízate tras la ola.",
+      "Mantén la mirada suave, como bajo el agua; los movimientos, casi invisibles.",
+      "Cuando encuentres el ritmo, reduce la amplitud hasta «casi inmóvil», conservando la sensación de corriente dentro.",
+      "Guarda contigo esta frase: «Respiro y sigo la ola»."
+    ],
+    "p2_2": [
+      "Ponte de pie o siéntate con soltura; la mirada suave, como bajo el agua.",
+      "Siente la «corriente» alrededor: una atracción apenas perceptible hacia un lado.",
+      "Al inhalar, recoge el eje (coronilla hacia arriba, base hacia abajo).",
+      "Al exhalar, deja que el cuerpo ceda un poco hacia la menor resistencia.",
+      "Haz un «barrido de brújula»: izquierda ↔ derecha, adelante ↔ atrás, un poco arriba ↔ abajo.",
+      "Donde la respiración se vuelva más libre y la exhalación más larga, detente un segundo.",
+      "Verifica tres referencias: pies firmes en el suelo, vientre cálido, nuca suave.",
+      "Si aparece la duda, vuelve al centro con la inhalación y escucha de nuevo la exhalación.",
+      "La mente no elige: elige el cuerpo; sigue la sensación de ligereza y calor.",
+      "Reduce la amplitud hasta «casi inmóvil», guardando el vector dentro, como la aguja callada de una brújula.",
+      "Fija el rumbo con la respiración: la inhalación te recoge en línea, la exhalación confirma el curso."
+    ],
+    "p2_3": [
+      "Ponte de pie con suavidad: rodillas elásticas, columna como eje flexible, hombros y mandíbula relajados.",
+      "Elige un movimiento continuo apenas visible: un micro-balanceo o un «ocho» con el torso.",
+      "Respira parejo: inhalación = exhalación (por ejemplo, 4–4). Si aparece tensión, alarga la exhalación 1–2 tiempos.",
+      "Al inhalar, el cuerpo recoge la línea y se eleva un poco; al exhalar, suelta y se desliza en arco.",
+      "Deja la amplitud al 5–10%: el movimiento es casi invisible, pero se siente por dentro.",
+      "Mira con «ojos suaves», como bajo el agua; la cabeza se mueve la última y menos que nada.",
+      "Permite que el movimiento parta del centro del vientre, suba por la columna y llegue a hombros y pelvis.",
+      "Encuentra tu tempo: 2–2 → 3–3 → 4–4; donde respire con más facilidad, allí está lo cierto.",
+      "Nota la pausa diminuta en el punto de giro: es la respiración de la forma.",
+      "Si se pierde el ritmo, vuelve a la exhalación y el movimiento se ajustará solo.",
+      "Simplifica lo superfluo: queda sólo «inhalación-línea / exhalación-ola».",
+      "Conserva la sensación de que el agua te lleva y tú sólo te sintonizas."
+    ],
+    "p2_4": [
+      "Pon los pies al ancho de la pelvis; halla el «triángulo del pie»: talón — base del dedo gordo — base del meñique.",
+      "Rodillas suaves, pelvis neutra, coronilla alargándose hacia arriba, como un eje flexible.",
+      "Inhala: alarga levemente la columna; exhala: suelta el peso hacia los pies.",
+      "Inicia un balanceo apenas perceptible, como sobre el agua: 5–10% de amplitud.",
+      "Verifica cuatro vectores: adelante/atrás, izquierda/derecha; donde la respiración sea más pareja, allí está el centro verdadero.",
+      "Mantén la mirada suave sobre la línea del «horizonte» o en un punto tranquilo.",
+      "Si el equilibrio se va, reduce la amplitud y alarga la exhalación (4–6).",
+      "Que los hombros desciendan con peso, la mandíbula se suelte y el vientre se vuelva cálido.",
+      "Siente cómo el centro de gravedad flota sobre la mitad del pie, sin irse a las puntas ni a los talones.",
+      "Imagina un hilo: coronilla ↔ talones. La respiración hace el hilo vivo y firme el apoyo.",
+      "Mantén el ritmo: la inhalación recoge el eje; la exhalación amplía el contacto con la tierra.",
+      "Reduce el movimiento poco a poco hasta «casi inmóvil», conservando la sensación de la ola dentro."
+    ],
+    "p2_5": [
+      "Ponte de pie con soltura: rodillas suaves, pelvis neutra, coronilla alargándose hacia arriba.",
+      "Inhala lento y halla el centro en el vientre; exhala y suelta hombros y mandíbula.",
+      "Comienza un deslizamiento del torso apenas visible, como bajo el agua (amplitud 5–10%).",
+      "Une movimiento y respiración: inhalación — ligera subida/recogimiento; exhalación — un fluir y un ensanchamiento suaves.",
+      "Imagina que dentro de las articulaciones hay un líquido cálido: lubrica rodillas, pelvis, hombros y cuello.",
+      "Quita las trayectorias «angulosas»: conviértelas en arcos y ochos.",
+      "Muévete desde el centro: primero vientre y pelvis, luego pecho y hombros; al final, manos y mirada.",
+      "Si sientes un «freno» en alguna zona, detente en la exhalación y derrite ese lugar con la atención.",
+      "Mantén la respiración pareja (4–4); si quieres más suavidad, alarga la exhalación (4–6).",
+      "Conserva la continuidad: cada movimiento engendra el siguiente, como ola tras ola.",
+      "Reduce la amplitud poco a poco hasta «casi inmóvil», conservando la sensación de fluidez dentro.",
+      "Recuerda la cualidad: no más rápido, más suave; no con más fuerza, con más fluidez."
+    ],
+    "p2_6": [
+      "Siéntate o ponte de pie con soltura; hombros y mandíbula suaves, vientre cálido.",
+      "Siente las costillas laterales y la espalda: respira «ancho», no sólo hacia delante.",
+      "Al inhalar, la caja torácica se expande a los lados y hacia atrás: la ola sube a la orilla.",
+      "Al exhalar, todo desciende con suavidad: la ola se retira hacia el mar.",
+      "Mantén el ritmo 4–4; si quieres más calma, 4–6, alargando la exhalación.",
+      "Haz la exhalación como un «ha» susurrado o por la nariz: elige lo que te resulte más suave.",
+      "Imagina una línea del horizonte dentro del pecho: no corras hacia la cresta ni temas la pausa en la orilla.",
+      "Si la atención se pierde, vuelve a las costillas laterales: su expansión es la señal de la ola verdadera.",
+      "Reduce el esfuerzo hasta «casi sin movimiento»: deja sólo la fluidez.",
+      "Que la respiración se vuelva un flujo y reflujo continuos, sin bordes bruscos.",
+      "Observa cómo la exhalación se lleva la tensión sobrante y devuelve la claridad.",
+      "Confía en el agua que hay en ti: ella conoce su ritmo."
+    ],
+    "p2_7": [
+      "Ponte de pie con suavidad: rodillas elásticas, columna como eje flexible, hombros y mandíbula relajados.",
+      "Traza un círculo de atención de 360°: izquierda, derecha, adelante, atrás, arriba, abajo. ¿Dónde respira con más facilidad?",
+      "La señal del vector correcto: exhalación más larga, más calor, el cuerpo va solo hacia allí.",
+      "Permítete una microcesión: al exhalar, deja que el torso se desplace apenas hacia la ligereza (1–2°).",
+      "Mantén el contacto con los pies; que el apoyo siga siendo ancho y cálido.",
+      "Si aparece la duda, vuelve al centro con la inhalación y escucha de nuevo la exhalación.",
+      "Reconoce las zonas de «resistencia»: allí hay menos aire, más frío, el movimiento «se rompe». No insistas.",
+      "Sigue las sensaciones: ligereza, calor, fluidez — ése es el idioma del agua en ti.",
+      "Reduce la amplitud: conserva la sensación del vector dentro, como la aguja callada de una brújula.",
+      "Abandona la meta; encuentra el ritmo justo: la inhalación recoge, la exhalación confirma la dirección.",
+      "Mantén la mirada suave y el cuello libre: la intuición fluye por el eje.",
+      "Fija la sensación con esta frase: «Donde es más fácil, allí está lo verdadero»."
+    ],
+    "p2_8": [
+      "Apoya la mirada en un punto tranquilo a la altura de los ojos; que sea suave, con la periferia abierta.",
+      "Halla un micromovimiento continuo y ligero: un balanceo o un «ocho» con el torso (amplitud 5–10%).",
+      "Respira parejo: inhalación y exhalación iguales (4–4); si la atención se rompe, alarga la exhalación (4–6).",
+      "Une la atención a la respiración: al inhalar, dentro di en silencio «aquí»; al exhalar, «ahora».",
+      "Sostén el «hilo de la atención» desde el centro del pecho al punto elegido: fino, pero firme.",
+      "Que los hombros y la mandíbula estén sueltos; el cuello largo, la coronilla hacia el cielo.",
+      "Si los pensamientos te llevan, vuelve al punto de la mirada, a las plantas de los pies y a la exhalación larga.",
+      "Rastrea tres apoyos: pies cálidos → vientre suave → corazón en calma.",
+      "Que el movimiento siga siendo continuo, aunque cada vez menos visible: la atención permanece, la amplitud se derrite.",
+      "Deja fluir la ola de fuera, mientras el centro interior permanece quieto.",
+      "Repite la frase-sintonía: «Me muevo y permanezco aquí»."
+    ],
+    "p2_9": [
+      "Ponte de pie firme: pies al ancho de la pelvis, rodillas suaves, eje largo.",
+      "Empieza con un micromovimiento fluido adelante-atrás o un «ocho» ligero con el torso.",
+      "Marca el centro: un vientre cálido. Permanece en calma con cualquier cambio de vector.",
+      "Al inhalar, recógete en el eje; al exhalar, cambia de dirección 5–10°, apenas visible.",
+      "Escucha la cualidad: si aparece un «tirón», reduce la amplitud y alarga la exhalación.",
+      "Explora los cambios: izquierda ↔ derecha, adelante ↔ atrás, arriba ↔ abajo — donde respire con más facilidad, allí está lo cierto.",
+      "Traslada el peso por la «mitad del pie»: no caigas ni en las puntas ni en los talones.",
+      "Hombros y mandíbula, relajados; mirada suave, periferia abierta.",
+      "Haz una serie de «microgiros»: al inhalar, recoges; al exhalar, cambias la trayectoria y estabilizas enseguida.",
+      "Mantén la continuidad: el nuevo vector nace de la exhalación del anterior.",
+      "Si pierdes el equilibrio, vuelve al centro con la inhalación y al contacto de los pies con el suelo.",
+      "Simplifica hasta «casi inmóvil»: conserva dentro la sensación de que la trayectoria se cambia con facilidad cuando la pidas."
+    ],
+    "p2_10": [
+      "Siéntate o ponte de pie cómodamente; elige la postura estable más sencilla.",
+      "Deja que el micromovimiento previo se vaya derritiendo poco a poco.",
+      "Respira con suavidad: al inhalar, el pecho se expande apenas; al exhalar, todo desciende y se apacigua.",
+      "Alarga la exhalación (4–6) y nota la breve pausa natural que aparece después.",
+      "Imagina la superficie de un lago dentro del pecho: cada inhalación, una leve ondulación; cada exhalación, un espejo.",
+      "Suaviza la mirada y la frente, baja los hombros, relaja la lengua; que la mandíbula quede pesada y libre.",
+      "Mantén la atención en tres apoyos: pies/isquiones → vientre cálido → corazón en calma.",
+      "Si un pensamiento levanta una «ola», reconócelo y vuelve a la pausa después de la exhalación.",
+      "Reduce la amplitud hasta «casi inmóvil», dejando sólo la respiración como una leve marea bajo la superficie.",
+      "Siente cómo dentro de la quietud la vida sigue latiendo con suavidad, sin esfuerzo, con naturalidad.",
+      "Quédate en esta cualidad unas respiraciones más, hasta que el silencio se vuelva palpable como un peso."
+    ],
+    "p2_11": [
+      "Cierra los ojos o suaviza la mirada; permite que los movimientos superficiales casi desaparezcan.",
+      "Lleva la atención al bajo vientre y a la espalda: allí empieza el flujo profundo.",
+      "Al inhalar, siente cómo dentro sube una fuerza callada; al exhalar, ella fluye hacia abajo, a los pies.",
+      "Imagina un «río subterráneo» bajo el pecho: lento, pesado, seguro.",
+      "Respira por abajo: expande los costados y la zona lumbar; la parte alta queda libre y ligera.",
+      "Suelta hombros y mandíbula; que el peso caiga suavemente hacia el apoyo.",
+      "Si la mente se va a la superficie (pensamientos, ruido), regresa al flujo bajo y cálido del vientre.",
+      "Une el paso del flujo con la inhalación y la exhalación: es el movimiento del cauce hacia lo profundo.",
+      "Verifica el eje: coronilla arriba, sacro abajo; el flujo corre a lo largo de la columna.",
+      "Reduce todos los movimientos visibles hasta «casi cero», conservando sólo la sensación del curso profundo.",
+      "Permite que este flujo «lleve» la atención: sin esfuerzo, pero con firmeza.",
+      "Mantén el contacto con los pies: la hondura siempre encuentra el camino hacia la tierra."
+    ],
+    "p2_12": [
+      "Siéntate o recuéstate cómodamente; suaviza hombros, mandíbula y mirada.",
+      "Imagina un horizonte lejano: la respiración va hacia él y vuelve.",
+      "Al inhalar, una «llamada» callada del cuerpo al espacio; al exhalar, la «respuesta» suave del espacio dentro del pecho.",
+      "Escucha el eco en las costillas y la espalda: donde suene más cálido y ancho, allí está tu centro.",
+      "Permite que la exhalación sea más larga; nota la pausa: en ella se oye mejor.",
+      "Si los pensamientos levantan «ruido», vuelve al roce del aire en las fosas nasales y a la respuesta en el pecho.",
+      "Abre el oído a 360°: los sonidos lejanos, como el mar; los cercanos, como la orilla del corazón.",
+      "Respira sin esfuerzo; deja que la respuesta encuentre sola su camino por el cuerpo: del pecho al vientre, a la pelvis, a los pies.",
+      "Reduce los movimientos externos hasta «casi inmóvil», conservando sólo la ola de la respuesta dentro.",
+      "Conserva la sensación del diálogo: la inhalación pregunta, la exhalación comprende.",
+      "Termina con unas cuantas exhalaciones cálidas, con la atención en el centro del pecho: el eco se vuelve luz."
     ]
-  }
+  },
+  "quote_level_2": "El movimiento es la respiración<br/>hecha cuerpo"
 }
