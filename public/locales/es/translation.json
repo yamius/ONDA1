@@ -285,7 +285,13 @@
     "quality_chart": "📈 Gráfico de Calidad de Práctica",
     "last_20_practices": "Últimas 20 prácticas",
     "last_4_weeks": "Últimas 4 semanas",
-    "practices_tooltip": "prácticas"
+    "practices_tooltip": "prácticas",
+    "achievements_section": "🏆 Logros ({{unlocked}}/{{total}})",
+    "rank_novice": "Novato",
+    "rank_student": "Estudiante",
+    "rank_practitioner": "Practicante",
+    "rank_master": "Maestro",
+    "rank_guru": "Gurú"
   },
   "achievements": {
     "first_step": {
@@ -349,7 +355,10 @@
     "time": "Tiempo",
     "pulse": "Pulso",
     "reward": "Recompensa",
-    "record": "Récord"
+    "record": "Récord",
+    "no_records": "Aún no hay registros",
+    "duration": "Duración",
+    "qnt": "OND"
   },
   "leaderboard": {
     "title": "Tabla de Líderes",
@@ -384,7 +393,47 @@
     "notification_hr_info": "Recibe actualizaciones periódicas de frecuencia cardíaca de tu app de fitness (Mi Fitness, Fitbit, Samsung Health, etc.)",
     "notification_hr_seconds_ago": "hace {{count}}s",
     "notification_hr_minutes_ago": "hace {{count}}m",
-    "notification_hr_hours_ago": "hace {{count}}h"
+    "notification_hr_hours_ago": "hace {{count}}h",
+    "customize_profile": "Personaliza tu perfil",
+    "your_name": "Tu nombre (se muestra en la clasificación)",
+    "enter_name": "Introduce tu nombre",
+    "characters": "caracteres",
+    "name_required": "El nombre no puede estar vacío",
+    "name_too_long": "El nombre no puede tener más de 30 caracteres",
+    "save_error": "No se pudieron guardar los cambios",
+    "name_updated": "¡Nombre actualizado con éxito!",
+    "saving": "Guardando",
+    "name_info": "💡 Tu nombre se mostrará en la clasificación de jugadores. Elige un nombre que te represente en la comunidad ONDA.",
+    "tracker_connected": "Conectado",
+    "tracker_connect": "Conectar rastreador",
+    "tracker_disconnect": "Desconectar",
+    "bluetooth_monitor": "Monitor de frecuencia cardíaca Bluetooth",
+    "bluetooth_desc": "Conecta un rastreador de frecuencia cardíaca para biofeedback en tiempo real durante las prácticas",
+    "bpm": "BPM",
+    "br_unit": "/min",
+    "stress_label": "Estrés",
+    "energy_label": "Energía",
+    "available_devices": "Dispositivos disponibles",
+    "device_connect": "Conectar",
+    "scan_stop": "Detener",
+    "basic_metrics": "Métricas fisiológicas básicas",
+    "advanced_metrics": "Métricas fisiológicas avanzadas",
+    "emotional_metrics": "Métricas del estado emocional",
+    "hrv_desc": "variabilidad de la FC en el tiempo",
+    "csi_desc": "qué tan uniformemente late el corazón",
+    "recovery_rate_desc": "velocidad de normalización de la FC tras el estrés",
+    "hr_trend_desc": "tendencia en 30-60 s",
+    "hr_acceleration_desc": "qué tan rápido sube la FC",
+    "arousal_desc": "subida de FC + subida de FR",
+    "calm_desc": "FC baja + FR estable",
+    "focus_desc": "FC media + baja variabilidad",
+    "excitement_desc": "FC↑↑ momento brusco",
+    "fatigue_desc": "FC por encima del umbral, FR↓, energía↓",
+    "flow_desc": "FC ligeramente por encima del umbral, FR estable",
+    "connection_instructions": "Instrucciones de conexión:",
+    "instruction_1": "En el teléfono: cierra la app estándar del rastreador. Activa el Bluetooth",
+    "instruction_2": "En el rastreador: Ajustes → Compartir frecuencia cardíaca → Activar",
+    "realtime_metrics": "Métricas en tiempo real. Calibrando línea base..."
   },
   "profile": {
     "title": "Perfil",
@@ -407,7 +456,13 @@
     "qnt_balance": "Balance de OND",
     "min_short": "m",
     "time_label": "Tiempo",
-    "stability_label": "Estabilidad"
+    "stability_label": "Estabilidad",
+    "hours_ago": "h atrás",
+    "complete_all_practices": "Completa todas las prácticas del circuito",
+    "track_label": "Pista",
+    "of_label": "de",
+    "stress": "Nivel de estrés",
+    "energy": "Nivel de energía"
   },
   "progress": {
     "level_progress": "Progreso de la parte",
@@ -479,7 +534,8 @@
     "no": "No",
     "loading": "Cargando...",
     "error": "Error",
-    "success": "Éxito"
+    "success": "Éxito",
+    "other_or_not_sure": "Otro / No estoy seguro"
   },
   "time": {
     "just_now": "ahora mismo",
@@ -711,6 +767,99 @@
       "guiding_5": "Si aparece duda — ríndete a una exhalación larga y regresa a las frases.",
       "guiding_6": "Mantén postura suave y vientre cálido — allí nace la determinación sin tensión.",
       "final_phrase": "La posibilidad respira contigo — y cada exhalación hace el paso más real."
+    },
+    "inner_smile": {
+      "name": "Sonrisa interior",
+      "short_phrase": "Sonríe con el corazón — sin mover el rostro, desde dentro.",
+      "guiding_1": "Deja caer los hombros, relaja la mandíbula, que la lengua descanse libre.",
+      "guiding_2": "Siente un punto cálido en el pecho y deja que 'sonría'.",
+      "guiding_3": "Permite que una ola de sonrisa suave recorra tu rostro, ojos y garganta.",
+      "guiding_4": "Envía esta sonrisa al vientre, al plexo solar y a la columna.",
+      "guiding_5": "Al inhalar reúne la sensación cálida, al exhalar compártela con todo el cuerpo.",
+      "guiding_6": "Si aparece una sonrisa real en tu cara — no la retengas, solo suavízala.",
+      "guiding_7": "Respira como si agradecieras a tu cuerpo por su trabajo.",
+      "guiding_8": "Mantente amable contigo mismo — esa es la fuente de la alegría.",
+      "final_phrase": "Cuando el corazón sonríe, el mundo responde con calidez."
+    },
+    "amoeba_dance": {
+      "name": "Danza de ameba",
+      "short_phrase": "Deja que la alegría mueva tu cuerpo apenas perceptiblemente — sobre la ola de la respiración.",
+      "guiding_1": "Mantén el eje: coronilla hacia arriba, coxis hacia abajo, respiración libre.",
+      "guiding_2": "Comienza con un balanceo apenas perceptible — 5% de amplitud.",
+      "guiding_3": "Inhala — microelevación, exhala — microdescenso.",
+      "guiding_4": "Explora tres direcciones: adelante-atrás, izquierda-derecha, espiral suave.",
+      "guiding_5": "Palmas y hombros permanecen relajados, rostro cálido y ligero.",
+      "guiding_6": "Deja que el movimiento surja desde el centro del vientre y se desvanezca solo.",
+      "guiding_7": "Si la velocidad aumenta — vuelve a 'casi inmóvil'.",
+      "guiding_8": "Nota cómo la alegría aparece en el cuerpo sin esfuerzo — como un pulso suave.",
+      "final_phrase": "La alegría es el movimiento que respira por sí mismo."
+    },
+    "warm_sphere": {
+      "name": "Esfera cálida",
+      "short_phrase": "Crea una esfera cálida en el vientre y nutre con ella todo tu cuerpo.",
+      "guiding_1": "Lleva la atención a la zona del ombligo / plexo solar.",
+      "guiding_2": "Al inhalar reúne calidez allí — como en manos ahuecadas por dentro.",
+      "guiding_3": "Al exhalar deja que la esfera se expanda: a la zona lumbar, pecho, pelvis y muslos.",
+      "guiding_4": "Imagina que la fatiga se derrite y fluye hacia los pies.",
+      "guiding_5": "Respira despacio, sin esfuerzo; mantén el rostro suave y la garganta libre.",
+      "guiding_6": "Si los pensamientos vuelven — encuentra de nuevo los bordes de la esfera cálida.",
+      "guiding_7": "Deja que se vuelva firme y estable, como una linterna nocturna dentro del cuerpo.",
+      "final_phrase": "La esfera cálida te sostiene desde dentro, y la fuerza regresa con suavidad."
+    },
+    "rest_breath": {
+      "name": "Respiración de descanso",
+      "short_phrase": "Una exhalación lenta se lleva la fatiga. Deja que el cuerpo se hunda en el apoyo.",
+      "guiding_1": "Acuéstate o siéntate con la espalda completamente apoyada.",
+      "guiding_2": "Inhala suavemente por la nariz, llenando el vientre.",
+      "guiding_3": "Exhala despacio por los labios ligeramente entreabiertos — el doble de largo que la inhalación.",
+      "guiding_4": "Con cada exhalación, deja que tu cuerpo se vuelva más pesado.",
+      "guiding_5": "Libera la tensión del rostro, los hombros y las manos.",
+      "guiding_6": "Imagina que la respiración disuelve la fatiga como agua tibia.",
+      "guiding_7": "Permanece en este ritmo lento sin esfuerzo.",
+      "final_phrase": "El descanso no es debilidad — es sabiduría del cuerpo."
+    },
+    "silence_point": {
+      "name": "Punto de quietud",
+      "short_phrase": "Encuentra un punto inmóvil dentro y respira a su alrededor.",
+      "guiding_1": "Cierra los ojos. Deja que tu respiración se vuelva apenas perceptible.",
+      "guiding_2": "Nota un punto de quietud — en lo profundo del vientre o en el centro del pecho.",
+      "guiding_3": "No lo toques con esfuerzo; respira a su alrededor, como el agua alrededor de una piedra.",
+      "guiding_4": "Al inhalar, la atención se reúne en el eje; al exhalar — disuelve lo sobrante.",
+      "guiding_5": "Los pensamientos flotan como nubes: nótalos — y déjalos ir.",
+      "guiding_6": "Los oídos escuchan el silencio, la piel escucha el aire, el corazón se escucha a sí mismo.",
+      "guiding_7": "Deja que los límites del 'yo' se vuelvan suaves, como la luz en la niebla.",
+      "guiding_8": "Permanece cerca del punto — no necesita nada y ya está en calma.",
+      "final_phrase": "En el punto de quietud, todo ya ha sucedido — solo queda ser."
+    },
+    "listen_space": {
+      "name": "Escuchar el espacio",
+      "short_phrase": "No escuches los sonidos — escucha el espacio entre ellos.",
+      "guiding_1": "Deja que la respiración sea natural; permite que la escucha se abra 360 grados.",
+      "guiding_2": "Nota los sonidos cercanos y los lejanos — sin nombrarlos.",
+      "guiding_3": "Escucha las pausas de las que nace cada sonido y a las que regresa.",
+      "guiding_4": "Expande la atención: cuerpo → habitación → calle → aún más lejos.",
+      "guiding_5": "Deja que cada sonido te atraviese sin aferrarse.",
+      "guiding_6": "Si aparece un juicio — 'me gusta / no me gusta' — suéltalo con la exhalación.",
+      "guiding_7": "Nota cómo el espacio también te escucha — a través del silencio alrededor de la respiración.",
+      "guiding_8": "Vuélvete transparente para el mundo, para que el mundo se vuelva transparente para ti.",
+      "final_phrase": "Cuando escuchas el espacio, el espacio empieza a escucharte."
+    },
+    "still_form": {
+      "name": "Forma inmóvil",
+      "short_phrase": "Congélate en una postura estable. La respiración fluye sola. Sé una forma de paz.",
+      "guiding_1": "Siéntate o ponte de pie cómodamente; elige una postura simple y estable.",
+      "guiding_2": "Siente el apoyo: pies / isquiones y el peso de la pelvis.",
+      "guiding_3": "Endereza la columna; la coronilla se eleva suavemente, la barbilla está libre.",
+      "guiding_4": "Deja caer los hombros, relaja la mandíbula, la lengua está libre, la mirada es suave.",
+      "guiding_5": "Inhala — el eje se alarga; exhala — el peso desciende a la tierra.",
+      "guiding_6": "Deja la respiración natural; no la controles, solo obsérvala.",
+      "guiding_7": "Nota los micromovimientos dentro de la quietud: pulso, olas de calor, inhalación apenas audible.",
+      "guiding_8": "No fijes nada — deja que la forma permanezca, y que la vida se mueva en silencio dentro.",
+      "guiding_9": "Mantén la atención en tres puntos: apoyo abajo, vientre cálido, corazón en calma.",
+      "guiding_10": "Si la mente divaga — regresa a la sensación de peso y contacto con la tierra.",
+      "guiding_11": "Deja que el silencio llene gradualmente la forma desde dentro, como la luz llena el agua.",
+      "guiding_12": "Permanece inmóvil un poco más de lo que deseas — allí comienza la paz.",
+      "final_phrase": "Cuando la forma se congela, el silencio nace dentro de ella."
     }
   },
   "subscription": {
@@ -728,7 +877,18 @@
     "yearly_tagline": "Mejor valor · Ahorra 64%",
     "monthly_tagline": "Total flexibilidad · Cancela en cualquier momento",
     "try_free": "Probar 7 días gratis",
-    "disclaimer": "Totalmente gratis por 7 días, luego 4.17 EUR/mes, facturado anualmente a 49.99 EUR/año. Cancela en cualquier momento."
+    "disclaimer": "Totalmente gratis por 7 días, luego 4.17 EUR/mes, facturado anualmente a 49.99 EUR/año. Cancela en cualquier momento.",
+    "try_free_14": "Prueba 14 días gratis",
+    "disclaimer_yearly": "Totalmente gratis durante 14 días, luego 5,42 USD/mes, facturado anualmente a 64,99 USD/año. Cancela cuando quieras.",
+    "disclaimer_monthly": "Totalmente gratis durante 7 días, luego 14,99 USD/mes. Cancela cuando quieras.",
+    "restore": "Restaurar compras",
+    "restoring": "Restaurando...",
+    "processing": "Procesando...",
+    "loading": "Cargando...",
+    "error_no_product": "Producto no disponible",
+    "error_purchase": "Error al realizar la compra",
+    "error_restore": "Error al restaurar",
+    "error_no_purchases": "No hay compras para restaurar"
   },
   "legal": {
     "terms_of_use": "Términos de uso",
@@ -736,7 +896,7 @@
     "load_error": "No se pudo cargar el documento. Inténtalo más tarde."
   },
   "part_info": {
-    "button": "Part's info",
+    "button": "Info de la parte",
     "back_to_part": "← Volver a Parte {{part}}",
     "level_1": {
       "title": "PARTE 1: YO SOY",
