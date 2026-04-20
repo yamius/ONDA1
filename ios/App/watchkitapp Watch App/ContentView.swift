@@ -91,19 +91,121 @@ struct ContentView: View {
         .padding(.horizontal, 8)
     }
     
-    // Start button — shown after 30 sec without HR
+    // Helper: перезапустить попытку подключения (кнопка Retry / Allow Access)
+    private func retryFromStartView() {
+        showStartButton = false
+        hasStartedInit = false
+        startInitialization()
+        startTimeoutTimer()
+    }
+
+    // Shown after 30 sec without HR.
+    // Выбираем UI в зависимости от того, что сделал пользователь с системным
+    // листом разрешений HealthKit:
+    //  • .notDetermined  → диалог ещё можно показать — кнопка «Allow Access»
+    //  • .sharingDenied  → диалог больше не покажется — нужна пошаговая инструкция
+    //  • .sharingAuthorized → разрешения есть, HR просто не пришёл — обычный Retry
     private var startView: some View {
+        let status = workoutManager.permissionDecisionStatus
+        return ScrollView {
+            VStack(spacing: 10) {
+                switch status {
+                case .notDetermined:
+                    permissionNotDeterminedView
+                case .sharingDenied:
+                    permissionDeniedView
+                default:
+                    retryView
+                }
+            }
+            .padding(.horizontal, 8)
+            .padding(.top, 8)
+            .padding(.bottom, 8)
+        }
+    }
+
+    // Пользователь смахнул/не ответил на системный лист — можно показать ещё раз
+    private var permissionNotDeterminedView: some View {
         VStack(spacing: 10) {
             Image(systemName: "heart.circle")
                 .font(.system(size: 36))
                 .foregroundColor(.cyan)
-            
+
+            Text("Heart rate access needed")
+                .font(.footnote)
+                .fontWeight(.semibold)
+                .multilineTextAlignment(.center)
+
+            Button(action: {
+                print("[ContentView] 🔓 Allow Access tapped — re-requesting authorization")
+                retryFromStartView()
+            }) {
+                HStack {
+                    Image(systemName: "lock.open.fill")
+                    Text("Allow Access")
+                }
+                .font(.body)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.cyan)
+
+            Text("Tap to open the permission prompt")
+                .font(.caption2)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.secondary)
+        }
+    }
+
+    // Пользователь явно отклонил — больше системный лист не появится, нужна инструкция
+    private var permissionDeniedView: some View {
+        VStack(spacing: 10) {
+            Image(systemName: "exclamationmark.triangle.fill")
+                .font(.system(size: 34))
+                .foregroundColor(.orange)
+
+            Text("Heart rate is off")
+                .font(.footnote)
+                .fontWeight(.semibold)
+                .multilineTextAlignment(.center)
+
+            Text("Enable it on this Watch:")
+                .font(.caption2)
+                .foregroundColor(.secondary)
+                .multilineTextAlignment(.center)
+
+            VStack(alignment: .leading, spacing: 3) {
+                Text("1. Settings")
+                Text("2. Privacy & Security")
+                Text("3. Health → ONDA")
+                Text("4. Turn on Heart Rate")
+            }
+            .font(.caption2)
+            .foregroundColor(.primary)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, 4)
+
+            Button(action: {
+                print("[ContentView] 🔄 Retry after denied status")
+                retryFromStartView()
+            }) {
+                Text("Retry")
+                    .font(.caption)
+            }
+            .buttonStyle(.bordered)
+            .tint(.gray)
+        }
+    }
+
+    // Разрешения есть, но HR не пришёл — временная проблема, просто Retry
+    private var retryView: some View {
+        VStack(spacing: 10) {
+            Image(systemName: "heart.circle")
+                .font(.system(size: 36))
+                .foregroundColor(.cyan)
+
             Button(action: {
                 print("[ContentView] 🚀 Start button pressed")
-                showStartButton = false
-                hasStartedInit = false
-                startInitialization()
-                startTimeoutTimer()
+                retryFromStartView()
             }) {
                 HStack {
                     Image(systemName: "play.fill")
@@ -113,16 +215,12 @@ struct ContentView: View {
             }
             .buttonStyle(.borderedProminent)
             .tint(.cyan)
-            
-            Spacer()
-            
-            Text("Settings → Health → ONDA → Heart Rate")
+
+            Text("Can't read heart rate — tap to try again")
                 .font(.caption2)
                 .multilineTextAlignment(.center)
                 .foregroundColor(.secondary)
         }
-        .padding(.horizontal, 8)
-        .padding(.top, 8)
     }
     
     private var mainView: some View {

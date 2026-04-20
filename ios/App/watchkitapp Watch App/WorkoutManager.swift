@@ -241,6 +241,17 @@ class WorkoutManager: NSObject, ObservableObject {
         // ✅ Возвращаем true ТОЛЬКО если реально разрешено (не .notDetermined и не .sharingDenied)
         return status == .sharingAuthorized
     }
+
+    // 🔥 Проксируем статус через WRITE-тип (workoutType): для read-типов
+    // watchOS/iOS всегда возвращают denied/notDetermined из-за приватности,
+    // а статус share-типа отражает реальное решение пользователя.
+    // Используется в ContentView чтобы показать правильный UI:
+    // - .notDetermined → «Разрешить доступ» (системный лист ещё можно показать)
+    // - .sharingDenied → инструкция «Настройки → Здоровье → ONDA…»
+    // - .sharingAuthorized → обычный Retry (что-то временно пошло не так)
+    var permissionDecisionStatus: HKAuthorizationStatus {
+        return healthStore.authorizationStatus(for: HKObjectType.workoutType())
+    }
     
     func startWorkout() {
         logDiagnostic("🏃 startWorkout() called", important: true)
