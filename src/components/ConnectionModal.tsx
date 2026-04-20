@@ -223,7 +223,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     <Zap className="w-5 h-5" />
                     <span className="text-sm">{t('connection.healthkit_realtime', 'Real-time')}</span>
                     <span className={`text-[10px] ${isLightTheme ? 'text-green-600' : 'text-green-300'}`}>
-                      instant
+                      {t('connection.instant', 'instant')}
                     </span>
                   </button>
                 </div>
@@ -235,7 +235,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     {hkMode === 'realtime' ? <Zap className="w-5 h-5" /> : 
                      hkMode === 'direct' ? <Heart className="w-5 h-5" /> : <Activity className="w-5 h-5" />}
                     <span className="font-medium">
-                      {hkMode === 'realtime' ? 'Real-time' : hkMode === 'direct' ? 'Direct' : 'Workout'}
+                      {hkMode === 'realtime' ? t('connection.mode_realtime', 'Real-time') : hkMode === 'direct' ? t('connection.mode_direct', 'Direct') : t('connection.mode_workout', 'Workout')}
                     </span>
                   </div>
                   <button
@@ -834,7 +834,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                   data-testid="button-stop-scan"
                 >
                   <Bluetooth className="w-5 h-5 animate-pulse" />
-                  {t('settings.scanning', 'Scanning...')} - Click to Stop
+                  {t('settings.scanning', 'Scanning...')} – {t('connection.click_to_stop', 'Click to Stop')}
                 </button>
               )}
             </div>
@@ -864,7 +864,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                 <p className={`text-sm mb-3 ${
                   isLightTheme ? 'text-gray-700' : 'text-white/70'
                 }`}>
-                  {t('settings.available_devices', 'Available Devices')} {isScanning && '(Scanning...)'}:
+                  {t('settings.available_devices', 'Available Devices')} {isScanning && `(${t('settings.scanning', 'Scanning...')})`}:
                 </p>
                 <div className="space-y-2">
                   {availableDevices.map((device) => (
@@ -885,7 +885,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       <span className={`text-xs ${
                         isLightTheme ? 'text-gray-500' : 'text-white/50'
                       }`}>
-                        Connect
+                        {t('connection.connect_button', 'Connect')}
                       </span>
                     </button>
                   ))}
@@ -898,7 +898,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
               <div className={`mt-2 text-xs text-center ${
                 isLightTheme ? 'text-gray-500' : 'text-white/40'
               }`}>
-                Platform: {vitalsPlat === 'android' ? 'Android WebView' : 'Web Bluetooth API'}
+                {t('connection.platform_label', 'Platform')}: {vitalsPlat === 'android' ? 'Android WebView' : 'Web Bluetooth API'}
               </div>
             )}
 
@@ -920,7 +920,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     <div>
                       <div className={`text-xs ${
                         isLightTheme ? 'text-gray-600' : 'text-white/60'
-                      }`}>Heart Rate</div>
+                      }`}>{t('settings.heart_rate', 'Heart Rate')}</div>
                       <div className="text-lg font-semibold">
                         {isIOS ? (hkHeartRate ?? hr ?? '--') : (hr ?? '--')} bpm
                         {isIOS && hkIsMonitoring && (
@@ -948,7 +948,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     <div>
                       <div className={`text-xs ${
                         isLightTheme ? 'text-gray-600' : 'text-white/60'
-                      }`}>Breathing</div>
+                      }`}>{t('settings.breathing', 'Breathing')}</div>
                       <div className="text-lg font-semibold">{hr && br ? `${br.toFixed(1)}` : '--'} /min</div>
                     </div>
                   </div>
@@ -960,7 +960,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     <div>
                       <div className={`text-xs ${
                         isLightTheme ? 'text-gray-600' : 'text-white/60'
-                      }`}>Stress</div>
+                      }`}>{t('settings.stress', 'Stress')}</div>
                       <div className="text-lg font-semibold">{hr && stress !== null ? `${stress}%` : '--%'}</div>
                     </div>
                   </div>
@@ -972,7 +972,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     <div>
                       <div className={`text-xs ${
                         isLightTheme ? 'text-gray-600' : 'text-white/60'
-                      }`}>Energy</div>
+                      }`}>{t('settings.energy', 'Energy')}</div>
                       <div className="text-lg font-semibold">{hr && energy !== null ? `${energy}%` : '--%'}</div>
                     </div>
                   </div>
