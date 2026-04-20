@@ -672,6 +672,14 @@
       "collect_desc": "un ritmo estable de respiración y trayectorias de bienestar (cadencia/pausas/fluidez)",
       "react": "Reaccionar",
       "react_desc": "acercamiento a zonas cálidas/luminosas y evitación de zonas frías/ruidosas (seguir/esquivar, acelerar/frenar)"
+    },
+    "level_3": {
+      "explore": "Explorar",
+      "explore_desc": "el límite entre agua y tierra (orilla / bajío / islotes secos), la textura del suelo, la dirección del viento y la ola",
+      "collect": "Recoger",
+      "collect_desc": "puntos de apoyo estables, trayectorias seguras, ciclos respiratorios «agua↔aire», posiciones de equilibrio (centro de gravedad)",
+      "react": "Reaccionar",
+      "react_desc": "cambio de medio (inmersión / salida), transferencia de peso, ralentizar / acelerar, enraizarse en la exhalación manteniendo la plasticidad"
     }
   },
   "philosophy": {
@@ -689,6 +697,13 @@
       "text_3": "Respiras y sientes cómo las olas te guían.",
       "text_4": "No hay camino: hay corriente.",
       "text_5": "Tú eres el movimiento mismo, y cada inhalación se vuelve dirección."
+    },
+    "level_3": {
+      "text_1": "La tierra se vuelve firme bajo tus pies.",
+      "text_2": "El agua se retira y revela los límites.",
+      "text_3": "Aprendes a sostener y a soltar.",
+      "text_4": "La forma nace donde los elementos se encuentran.",
+      "text_5": "Tu cuerpo conoce el lenguaje de la supervivencia."
     }
   },
   "level_goal": {
@@ -727,6 +742,23 @@
       "wisdom_2": "Con cada ciclo surge una trayectoria natural: no inventada por la mente, sino hallada por los sentidos.",
       "wisdom_3": "Todo lo que se pide es permitir que el movimiento nazca de la respiración. Sin lucha, sin prisa, sin tensión.",
       "wisdom_4": "Sentir el mundo no con los ojos, sino con la piel; escuchar la dirección no con los oídos, sino con el corazón. Recordar el antiguo idioma de las corrientes, la fluidez y la hondura, con el que habla el Agua."
+    },
+    "level_3": {
+      "intro": "Aprender a adaptarte: unir la fluidez del agua con el soporte de la tierra. Estabilizar tu centro en medio del cambio, respirar entre dos mundos y encontrar el equilibrio allí donde el entorno se transforma.",
+      "game_task": "Tarea lúdica y energética: activación del campo de Adaptación (estabilidad de la forma TERRA).",
+      "principle_1": "No eliges «agua o tierra»: te conviertes en el puente.",
+      "principle_2": "Cada respiración es un paso: la inhalación reconoce lo nuevo, la exhalación afirma el apoyo.",
+      "principle_3": "Cada ejercicio es un paso hacia la estabilidad: del agua → a la orilla → al paso → al equilibrio → a la plasticidad.",
+      "story_1": "Sales al umbral. El aire es más denso, la tierra más pesada, la gravedad más sonora.",
+      "story_2": "Los pulmones aprenden a beber el aire, los músculos buscan un ritmo nuevo, la atención pulsa entre «deslizarse» y «mantenerse en pie».",
+      "story_3": "Sientes bajo ti el peso del mundo y comprendes por primera vez que la pesadez puede ser apoyo.",
+      "identity_1": "Eres el Anfibio, una forma de transición.",
+      "identity_2": "Aún recuerdas la suavidad de las olas, pero ya oyes en tus pies el pulso de la Tierra.",
+      "identity_3": "Los errores se vuelven movimiento, las caídas entrenamiento del equilibrio, y las pausas respiración de la forma.",
+      "wisdom_1": "La inhalación te recoge en el centro. La exhalación echa raíces por las piernas hacia la tierra.",
+      "wisdom_2": "Respira como si unieras el océano y la piedra dentro del cuerpo.",
+      "wisdom_3": "Solo se requiere esto: cambiar sin perderte. Sentir el mundo como flujo y como sostén al mismo tiempo.",
+      "wisdom_4": "Recordar el antiguo lenguaje de los umbrales y las transiciones que habla la orilla: en él nace tu estabilidad."
     }
   },
   "terra_speaks": {
@@ -742,6 +774,12 @@
       "quote_2": "No gobiernes el mar: escucha su ritmo.",
       "quote_3": "Cada agua conoce su orilla.",
       "quote_4": "Confía en la corriente y te llevará a casa."
+    },
+    "level_3": {
+      "quote_1": "La tierra otorga forma a quien está listo para sostenerse.",
+      "quote_2": "Elige no por fuerza, sino por sabiduría.",
+      "quote_3": "Un límite no es un muro, es un maestro.",
+      "quote_4": "Tu cuerpo recuerda cómo sobrevivir y florecer."
     }
   },
   "terra_final": {
@@ -760,6 +798,12 @@
       "line_3": "Cada inhalación tuya es una ola,",
       "line_4": "cada exhalación, un regreso a la hondura.",
       "line_5": "Ahora tu fluidez está lista para encontrar la tierra."
+    },
+    "level_3": {
+      "line_1": "Ahora te alzas entre los elementos: tu respiración une cielo y suelo, y tu cuerpo se ha vuelto un puente para la vida.",
+      "line_2": "Cada inhalación tuya engendra un nuevo equilibrio, cada exhalación una nueva forma.",
+      "line_3": "La estabilidad no es quietud, sino la capacidad de respirar dentro del cambio.",
+      "line_4": "Estás listo para seguir: AQUA te espera."
     }
   },
   "adaptive_practices": {
@@ -1676,6 +1720,169 @@
       "Reduce los movimientos externos hasta «casi inmóvil», conservando sólo la ola de la respuesta dentro.",
       "Conserva la sensación del diálogo: la inhalación pregunta, la exhalación comprende.",
       "Termina con unas cuantas exhalaciones cálidas, con la atención en el centro del pecho: el eco se vuelve luz."
+    ],
+    "p3_1": [
+      "Ponte de pie firme: pies apoyados, rodillas blandas, eje largo.",
+      "Al inhalar imagina agua fresca y fluida llenando los costados y la espalda; el pecho se ensancha.",
+      "Al exhalar dirige la atención hacia abajo —a través del vientre, la pelvis y las piernas— un peso cálido desciende a la tierra.",
+      "Mantén el ritmo 4–6: inhalación más corta, exhalación más larga; así la transición se estabiliza.",
+      "Siente cómo el agua da fluidez al inhalar y la tierra da apoyo al exhalar.",
+      "Si aparece tensión en la garganta o los hombros, suaviza la exhalación y devuelve el peso a los pies.",
+      "Haz varios ciclos «agua → tierra», luego reduce el esfuerzo a un movimiento casi imperceptible, dejando solo la sensación del cambio de elemento.",
+      "Revisa el centro: vientre cálido, zona lumbar blanda, mirada tranquila.",
+      "Termina con tres exhalaciones acentuadas hacia abajo: afirma el apoyo."
+    ],
+    "p3_2": [
+      "Ponte de pie blando: pies al ancho de caderas. Encuentra el «triángulo del pie»: talón — base del dedo gordo — base del meñique.",
+      "Las rodillas flexibles, pelvis neutra, la coronilla se alarga hacia arriba, como un hilo elástico.",
+      "Coloca la palma en el bajo vientre y marca el punto central cálido (un poco debajo del ombligo).",
+      "Haz un micro-escaneo adelante / atrás e izquierda / derecha —amplitud del 5%.",
+      "Donde la exhalación sea más larga y cálida: ahí está tu «cero».",
+      "Inhalación: el eje se alarga; exhalación: el peso se distribuye uniforme sobre el triángulo de los pies.",
+      "Revisa el equilibrio de presión: talón ↔ almohadilla del dedo gordo ↔ almohadilla del meñique, sin inclinaciones.",
+      "Suaviza hombros y mandíbula, lengua libre; mirada suave, hacia el «horizonte».",
+      "Si te balanceas, reduce la amplitud y alarga la exhalación (4–6), devuelve la atención a los pies.",
+      "Mantén un 1% de movimiento vivo: el equilibrio no se congela, respira.",
+      "Repite el ancla: centro del vientre cálido, columna larga, pies anchos. Aquí está tu estabilidad."
+    ],
+    "p3_3": [
+      "Ponte blando: pies al ancho de caderas, rodillas flexibles, vientre cálido: este es tu centro.",
+      "Inhalación: reúne el eje; exhalación: suaviza los bordes del movimiento.",
+      "Imagina las articulaciones llenas de líquido cálido: derrite las rodillas, la pelvis, los hombros, el cuello.",
+      "Explora tres formas básicas: elongación (más larga), redondeo (más blanda), espiral (más plástica).",
+      "Al inhalar, elongate en la forma elegida; al exhalar, redondéate y regresa al centro.",
+      "Cambia de forma según la señal del cuerpo / entorno: donde se respire más fácil, ahí está la adaptación.",
+      "Mantén la amplitud 5–10%: el movimiento es casi invisible, pero se siente desde dentro.",
+      "El centro no se extravía: la palma en el vientre recuerda: el eje permanece, solo cambian los contornos.",
+      "Si aparece un «ángulo rígido», detente en la exhalación y derrítelo con la atención.",
+      "Combina formas: elongación → espiral → redondeo → centro (un ciclo respiratorio por fase).",
+      "Con cada ciclo simplifica: menos fuerza, más fluidez; menos velocidad, más sentir.",
+      "Termina con varias respiraciones en postura neutra: la plasticidad permanece, el centro sereno."
+    ],
+    "p3_4": [
+      "De pie o sentado firme: pies apoyados, la coronilla se alarga, hombros blandos.",
+      "Coloca una palma en el pecho y la otra en el bajo vientre.",
+      "Inhala: siente aire fresco y ligero; pecho y clavículas se expanden hacia arriba y a los lados.",
+      "Exhala: dirige la atención hacia abajo —a través del vientre, la pelvis y las piernas hacia la tierra—; el peso se vuelve más cálido y pesado.",
+      "Mantén el ritmo 4–6: inhalación más corta, exhalación más larga; esto aporta estabilidad.",
+      "Permanece varios ciclos en la imagen: «el cielo llena, la tierra recibe».",
+      "Revisa el eje: al inhalar se alarga, al exhalar se asienta hacia los pies.",
+      "Si la respiración se vuelve ruidosa, suaviza la inhalación y conserva la exhalación larga y cálida.",
+      "Nota cómo con cada exhalación se calman mandíbula, hombros y vientre.",
+      "Reduce el esfuerzo: inhala como una pluma, exhala como una raíz.",
+      "Al final haz tres exhalaciones tranquilas con énfasis en los pies: afirma el apoyo."
+    ],
+    "p3_5": [
+      "Ponte firme: pies al ancho de caderas, rodillas blandas, eje largo.",
+      "Siente el peso del cuerpo: pelvis pesada, columna vertical, coronilla hacia el cielo.",
+      "Inhalación: reúne el eje; exhalación: envía el peso hacia abajo por una pierna.",
+      "En una exhalación larga transfiere el peso al 100% sobre un pie, lento, como crece una raíz.",
+      "La pierna libre se vuelve ligera; levántala un poco del suelo, 2–3 cm, no más.",
+      "Sostén el equilibrio: inhalación — estabiliza el eje; exhalación — refuerza el apoyo.",
+      "Coloca el pie libre adelante o al lado: suave, primero la punta y luego el talón.",
+      "Transfiere el peso al nuevo pie en la exhalación: fluido, enlazado, sin prisa.",
+      "Repite: el paso nace de la exhalación, el apoyo, de la inhalación.",
+      "Si el equilibrio tiembla, detente, alarga la exhalación, devuelve la atención al pie de apoyo.",
+      "Haz 5–7 pasos lentos manteniendo el centro cálido en el vientre.",
+      "Termina de pie sobre ambos pies: siente cómo la tierra te sostiene."
+    ],
+    "p3_6": [
+      "Ponte blando: pies al ancho de caderas, rodillas blandas, coronilla arriba.",
+      "Al inhalar imagina una ola cálida que asciende desde el cóccix por la columna hasta la coronilla.",
+      "Al exhalar la ola desciende: por vientre, pelvis, piernas hasta los pies.",
+      "Mantén el ritmo 4–6: la inhalación alza la ola, la exhalación la envía hacia abajo.",
+      "Siente la columna como un canal flexible: la respiración fluye por ella como agua.",
+      "Suaviza los hombros, libera la mandíbula; deja que la ola mueva la columna con naturalidad.",
+      "Si la zona lumbar se contrae, reduce la amplitud, respira hacia el vientre.",
+      "Imagina: inhalación, la columna es un río que asciende; exhalación, una cascada que desciende.",
+      "Mantén los pies como raíces: cálidos, anchos, profundamente ligados a la tierra.",
+      "Con cada exhalación las raíces descienden más; el apoyo se vuelve más firme.",
+      "Repite 7–10 ciclos, luego simplifica hasta una ola casi imperceptible.",
+      "Termina con tres exhalaciones hacia los pies: afirma la estabilidad."
+    ],
+    "p3_7": [
+      "De pie o sentado cómodamente: columna vertical, pies ligados a la tierra.",
+      "Al inhalar imagina agua ligera y fluida que llena pecho y espalda: fluidez.",
+      "Al exhalar dirige la atención hacia abajo: por vientre y piernas hacia la tierra: densidad.",
+      "Mantén el ritmo 4–6: la inhalación reúne como agua, la exhalación enraíza como tierra.",
+      "Siente el punto de transición: donde el agua se encuentra con la tierra, ahí está tu centro.",
+      "Respira de modo que cada fase sea clara: inhalación — ligereza, exhalación — peso.",
+      "Si aparece confusión, detente en la exhalación, siente los pies, luego continúa.",
+      "Imagina un puente entre dos mundos: el superior — fluido, el inferior — estable.",
+      "Tu cuerpo es el punto de encuentro: la respiración une lo que parece separado.",
+      "Suaviza mandíbula y hombros; deja que el puente sea natural, no forzado.",
+      "Repite 7–10 ciclos, advierte cómo ambos elementos viven en ti al mismo tiempo.",
+      "Termina con tres exhalaciones hacia abajo: refuerza el lado terrestre del puente."
+    ],
+    "p3_8": [
+      "Ponte de pie: pies al ancho de caderas, rodillas blandas.",
+      "Coloca la atención en el bajo vientre (dos dedos por debajo del ombligo): tu centro de gravedad.",
+      "Al inhalar siente cómo el centro se entibia y se estabiliza.",
+      "Al exhalar envía el peso hacia abajo por las piernas: siente cómo se asienta en el medio del pie.",
+      "Comprueba que el peso no se desplace a las puntas ni a los talones: permanece en el centro.",
+      "Mantén el ritmo 4–6: la exhalación larga refuerza la estabilidad.",
+      "Imagina una plomada desde la coronilla por el centro del vientre hasta el medio del pie.",
+      "Si te balanceas, reduce la amplitud, respira hacia el vientre, conéctate a los pies.",
+      "Suaviza hombros y mandíbula; mirada suave en el horizonte.",
+      "Siente cómo con cada exhalación el centro desciende y se estabiliza.",
+      "Haz una prueba de micro-balanceo: si el centro es justo, cualquier dirección se siente igual de fácil.",
+      "Termina con la palma en el vientre: memoriza este lugar de estabilidad."
+    ],
+    "p3_9": [
+      "Ponte de pie con el centro cálido en el vientre, eje largo.",
+      "Inhalación: reúne el eje; exhalación: permite que la forma se desplace un poco.",
+      "Explora el cambio de orientación: gira el tronco a izquierda / derecha, inclínate adelante / atrás, 5–10°.",
+      "Mantén el centro inmóvil: la palma en el vientre recuerda: aquí está tu ancla.",
+      "Cambia la forma en la exhalación: fluido, sin sacudidas.",
+      "Vuelve a la neutralidad en la inhalación: recógete de nuevo hacia el eje.",
+      "Si el equilibrio oscila, reduce la amplitud, alarga la exhalación.",
+      "Respira: inhalación — estabilidad, exhalación — adaptación.",
+      "Prueba distintas formas: agáchate un poco, estírate hacia arriba, dibuja una espiral; el centro permanece.",
+      "Suaviza la mandíbula, mantén los pies anchos y cálidos.",
+      "Repite: la forma sirve a la tarea, pero el centro nunca abandona su casa.",
+      "Termina de pie en neutralidad: siente cómo el centro ha permanecido inmóvil."
+    ],
+    "p3_10": [
+      "Adopta la postura más estable, de pie o sentado.",
+      "Reduce todo movimiento externo casi a cero.",
+      "Respira en silencio: inhalación mínima, exhalación un poco más larga (4–6).",
+      "Advierte la pausa natural tras la exhalación: ahí vive la quietud.",
+      "Suaviza rostro, mandíbula, hombros; deja que la lengua sea pesada.",
+      "Coloca la atención en tres apoyos: pies / isquiones → vientre → corazón.",
+      "Si un pensamiento crea movimiento, obsérvalo y regresa a la pausa tras la exhalación.",
+      "Siente que dentro de la quietud la vida sigue pulsando suavemente.",
+      "No persigas el silencio: deja que se asiente a tu alrededor como la nieve.",
+      "Escucha el micro-pulso: latido del corazón, eco de la respiración, vibración sutil.",
+      "Permanece varios minutos: la quietud se vuelve tangible, casi una sustancia.",
+      "Termina despacio: primero profundiza la respiración, luego permite un pequeño movimiento."
+    ],
+    "p3_11": [
+      "De pie o sentado, pies ligados al suelo / tierra.",
+      "Coloca la atención en las plantas de los pies y el bajo vientre.",
+      "Al inhalar imagina una corriente lenta y profunda que asciende desde la tierra.",
+      "Al exhalar la corriente desciende por ti de nuevo a la profundidad.",
+      "Respira bajo: expande costados y zona lumbar; la parte alta del cuerpo libre.",
+      "Suaviza hombros y mandíbula; deja que el peso escurra hacia el apoyo.",
+      "Si la mente sube a la superficie (pensamientos, ruido), regresa a la corriente baja y cálida del vientre.",
+      "Mantén el ritmo 4–6 o más lento: el pulso de la Tierra es pausado.",
+      "Revisa el eje: coronilla arriba, sacro abajo; la corriente recorre la columna.",
+      "Reduce el movimiento visible casi a cero, conserva la sensación de flujo profundo.",
+      "Deja que esa corriente «lleve» la atención: sin esfuerzo, pero firme.",
+      "Mantén el contacto con los pies: la profundidad siempre encuentra camino hacia la tierra."
+    ],
+    "p3_12": [
+      "Permanece en tu entorno actual: no busques condiciones ideales.",
+      "Al inhalar acepta lo que hay: temperatura, sonidos, sensaciones.",
+      "Al exhalar envía el peso hacia abajo, refuerza el vínculo con la tierra.",
+      "Respira al ritmo del entorno: si hay ruido, exhalación más larga; si hace frío, respira hacia el vientre.",
+      "No luches contra las condiciones: ajusta la forma manteniendo el centro.",
+      "Si hay incomodidad, haz un micro-ajuste de posición en la exhalación; encuentra una nueva estabilidad.",
+      "Mantén los pies cálidos y anchos; deja que la tierra sea constante mientras todo lo demás cambia.",
+      "Suaviza mandíbula y hombros; la adaptación ocurre por soltar, no por tensar.",
+      "Repite: la inhalación acepta, la exhalación afirma: este es tu ritmo de trabajo.",
+      "Advierte cómo el cuerpo encuentra soluciones cuando dejas de insistir.",
+      "Permanece varios minutos, deja que la nueva forma se asiente.",
+      "Termina con esta comprensión: el entorno no es un obstáculo, es información para la adaptación."
     ]
   },
   "quote_level_2": "El movimiento es la respiración<br/>hecha cuerpo",
@@ -1734,5 +1941,6 @@
     "click_to_stop": "Toca para detener",
     "connect_button": "Conectar",
     "platform_label": "Plataforma"
-  }
+  },
+  "quote_level_3": "La forma nace donde<br/>la tierra y el agua se encuentran"
 }
