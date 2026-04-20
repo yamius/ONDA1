@@ -1,10 +1,25 @@
 import { registerPlugin, PluginListenerHandle } from '@capacitor/core';
 
+/**
+ * Статус разрешения HealthKit на Apple Watch. Часы сообщают это значение
+ * iPhone'у через applicationContext (см. WorkoutManager.sendPermissionStatus).
+ * - "notDetermined": пользователь не ответил (или смахнул системный лист)
+ * - "denied": пользователь явно отказал — диалог больше не появится
+ * - "authorized": доступ выдан
+ * - "unknown": часы ещё ничего не сообщили (приложение на часах не запускалось)
+ */
+export type WatchHealthAuthStatus =
+  | 'notDetermined'
+  | 'denied'
+  | 'authorized'
+  | 'unknown';
+
 export interface WatchStatus {
   supported: boolean;
   paired?: boolean;
   watchAppInstalled?: boolean;
   reachable?: boolean;
+  healthAuthStatus?: WatchHealthAuthStatus;
 }
 
 export interface HeartRateEvent {
@@ -23,6 +38,7 @@ export interface DebugLogEvent {
 export interface WatchConnectionStatus {
   isWatchConnected: boolean;
   timestamp: number;
+  healthAuthStatus?: WatchHealthAuthStatus;
 }
 
 export interface OndaWatchPlugin {

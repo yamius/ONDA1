@@ -92,6 +92,12 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     private var anchoredQuery: HKAnchoredObjectQuery?
     private var isHealthKitObserverActive = false
 
+    // 🔐 Кеш статуса разрешений HealthKit на часах. Часы присылают это
+    // значение через updateApplicationContext при старте, после ответа
+    // пользователя на системный лист и при активации WCSession.
+    // Возможные значения: "notDetermined" | "denied" | "authorized" | "unknown"
+    private var watchHealthAuthStatus: String = "unknown"
+
     private var session: WCSession? {
         WCSession.isSupported() ? WCSession.default : nil
     }
@@ -137,7 +143,8 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
             "supported": WCSession.isSupported(),
             "paired": session.isPaired,
             "watchAppInstalled": session.isWatchAppInstalled,
-            "reachable": session.isReachable
+            "reachable": session.isReachable,
+            "healthAuthStatus": watchHealthAuthStatus
         ]
     }
 
@@ -258,7 +265,16 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
                 p.notifyListeners("reachabilityChanged", data: [
                     "reachable": reachable,
                     "paired": session.isPaired,
-                    "watchAppInstalled": session.isWatchAppInstalled
+                    "watchAppInstalled": session.isWatchAppInstalled,
+                    "healthAuthStatus": self.watchHealthAuthStatus
+                ])
+                // Также продублируем через watchConnectionChanged, на который
+                // подписан WatchConnectionPrompt — чтобы баннер реагировал
+                // на возвращение часов в эфир.
+                p.notifyListeners("watchConnectionChanged", data: [
+                    "isWatchConnected": reachable,
+                    "healthAuthStatus": self.watchHealthAuthStatus,
+                    "timestamp": Date().timeIntervalSince1970
                 ])
             }
         }
@@ -291,7 +307,28 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
     func session(_ session: WCSession,
                  didReceiveApplicationContext applicationContext: [String : Any]) {
         addDebugLog("📋 Context: \(applicationContext.keys.joined(separator: ","))")
-        
+
+        // 🔐 Статус разрешений HealthKit на часах
+        if let authStatus = applicationContext["watchHealthAuthStatus"] as? String {
+            let prev = self.watchHealthAuthStatus
+            self.watchHealthAuthStatus = authStatus
+            if prev != authStatus {
+                addDebugLog("🔐 Watch health auth: \(prev) → \(authStatus)")
+                DispatchQueue.main.async {
+                    if let p = self.plugin {
+                        // Доставляем в React через watchConnectionChanged с
+                        // расширенной полезной нагрузкой. Существующий
+                        // слушатель в WatchConnectionPrompt уже подписан.
+                        p.notifyListeners("watchConnectionChanged", data: [
+                            "isWatchConnected": session.isReachable,
+                            "healthAuthStatus": authStatus,
+                            "timestamp": Date().timeIntervalSince1970
+                        ])
+                    }
+                }
+            }
+        }
+
         // Извлекаем последний HR из контекста
         if let latestHR = applicationContext["lastHeartRate"] as? Double {
             let data: [String: Any] = [

@@ -70,6 +70,12 @@ class WorkoutManager: NSObject, ObservableObject {
             print("[WorkoutManager] ⏳ First launch or permissions not confirmed - ContentView will handle")
             // НЕ запускаем workout здесь - пусть ContentView сначала запросит разрешения
         }
+
+        // Отчитаться перед iPhone о текущем статусе разрешений (с небольшой
+        // задержкой, чтобы WCSession успел активироваться).
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+            self.sendPermissionStatus()
+        }
     }
     
     deinit {
@@ -220,11 +226,14 @@ class WorkoutManager: NSObject, ObservableObject {
                 if success {
                     print("[WorkoutManager] ✅ Authorization request processed (dialog shown or was shown before)")
                     self.permissionJustGranted = true
+                    // Сообщаем iPhone свежий статус (authorized / denied / notDetermined)
+                    self.sendPermissionStatus()
                     completion(true)
                     // ContentView вызовет recreateWorkoutSession() который запустит workout
                     // Если разрешения есть - HR придёт, если нет - останется 0
                 } else {
                     print("[WorkoutManager] ❌ Authorization request failed: \(error?.localizedDescription ?? "unknown")")
+                    self.sendPermissionStatus()
                     // Всё равно возвращаем true чтобы попробовать запустить workout
                     // Возможно разрешения уже были даны ранее
                     completion(true)
@@ -251,6 +260,41 @@ class WorkoutManager: NSObject, ObservableObject {
     // - .sharingAuthorized → обычный Retry (что-то временно пошло не так)
     var permissionDecisionStatus: HKAuthorizationStatus {
         return healthStore.authorizationStatus(for: HKObjectType.workoutType())
+    }
+
+    // Строковое представление для передачи на iPhone в applicationContext
+    var permissionDecisionStatusString: String {
+        switch permissionDecisionStatus {
+        case .notDetermined: return "notDetermined"
+        case .sharingDenied: return "denied"
+        case .sharingAuthorized: return "authorized"
+        @unknown default: return "unknown"
+        }
+    }
+
+    // Отправляет текущий статус разрешений HealthKit на iPhone.
+    // Вызывается: при старте (preWarmHealthKit), после ответа пользователя
+    // на системный лист, при активации WCSession. iPhone читает это
+    // в didReceiveApplicationContext и показывает адекватный UI в банере
+    // WatchConnectionPrompt ("не выдал разрешения" / "отклонил" / ...).
+    func sendPermissionStatus() {
+        let wcSession = WCSession.default
+        guard wcSession.activationState == .activated else {
+            print("[WorkoutManager] sendPermissionStatus skipped — WCSession not activated")
+            return
+        }
+
+        let statusString = permissionDecisionStatusString
+
+        do {
+            var ctx = wcSession.applicationContext
+            ctx["watchHealthAuthStatus"] = statusString
+            ctx["watchHealthAuthStatusTs"] = Date().timeIntervalSince1970
+            try wcSession.updateApplicationContext(ctx)
+            print("[WorkoutManager] 🔐 Pushed health auth status to iPhone: \(statusString)")
+        } catch {
+            print("[WorkoutManager] ⚠️ sendPermissionStatus failed: \(error.localizedDescription)")
+        }
     }
     
     func startWorkout() {
@@ -726,6 +770,11 @@ extension WorkoutManager: WCSessionDelegate {
         if state == .activated && isActive && heartRate > 0 {
             print("[WorkoutManager] Sending current HR after activation: \(Int(heartRate)) bpm")
             sendHeartRateToPhone(heartRate, immediate: true)
+        }
+
+        // Отдаём iPhone актуальный статус разрешений сразу после активации
+        if state == .activated {
+            sendPermissionStatus()
         }
     }
     

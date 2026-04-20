@@ -50,7 +50,11 @@
   },
   "watch": {
     "open_app_prompt": "打开Apple Watch上的应用程序以追踪心率",
-    "waiting_connection": "等待连接"
+    "waiting_connection": "等待连接",
+    "permission_not_determined_title": "你在 Apple Watch 上跳过了心率授权",
+    "permission_not_determined_body": "请打开 Apple Watch 上的 ONDA，点击「Allow Access」以允许共享心率。",
+    "permission_denied_title": "Apple Watch 上的心率访问已关闭",
+    "permission_denied_body": "在 iPhone 上：打开「Watch」App → 我的手表 → 隐私 → 健康 → ONDA → 开启「心率」。\n或直接在手表上：设置 → 隐私与安全性 → 健康 → ONDA → 开启「心率」。"
   },
   "health": {
     "activity": "活动",
