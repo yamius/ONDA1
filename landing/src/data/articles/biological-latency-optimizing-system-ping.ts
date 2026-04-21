@@ -3,6 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'biological-latency-optimizing-system-ping',
   title: 'Biological Latency: Optimizing the System Ping',
+  seoTitle: 'Biological Latency: Optimizing the System Ping | ONDA Biology',
   description:
     'Reduce biological latency by training predictive coding, myelin integrity, and alpha-synchronization for faster real-time processing and lower reaction delay.',
   category: 'Neural Hardware',

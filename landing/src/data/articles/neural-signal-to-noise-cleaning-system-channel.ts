@@ -3,6 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'neural-signal-to-noise-cleaning-system-channel',
   title: 'Neural Signal-to-Noise Ratio: Cleaning the System Channel',
+  seoTitle: 'Neural Signal-to-Noise Ratio: Cleaning the System Channel | ONDA Biology',
   description:
     'Your brain is a bio-electrical transceiver. Lowering neural noise improves focus, reduces cognitive load, and restores high-fidelity thought.',
   category: 'Neural Hardware',
