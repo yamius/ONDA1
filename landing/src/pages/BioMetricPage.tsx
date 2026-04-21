@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { METRIC_DETAILS } from '../data/bioMetrics'
 import { NotFoundPage } from './NotFoundPage'
+import { appStoreUrl } from '../config/appStore'
 
 const SITE_URL = 'https://onda-life.com'
 
@@ -119,9 +120,11 @@ export function BioMetricPage() {
           <p className="mb-1 text-sm font-semibold text-white/80">Ready to measure?</p>
           <p className="mb-5 text-xs text-white/35">Connect a Bluetooth tracker for continuous precise biofeedback.</p>
           <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
-            <button
-              type="button"
-              onClick={() => { (window as any).lastPlatform = 'ios'; setPlatform('ios'); setIsOpen(true) }}
+            <a
+              href={appStoreUrl('bio_metric')}
+              target="_blank"
+              rel="noopener"
+              onClick={() => { (window as any).lastPlatform = 'ios' }}
               className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
               aria-label="Download ONDA Life on App Store"
               data-button="apple"
@@ -132,7 +135,7 @@ export function BioMetricPage() {
                 <div className="text-[9px] text-white/40">Download on the</div>
                 <div className="text-sm font-semibold">App Store</div>
               </div>
-            </button>
+            </a>
             <button
               type="button"
               onClick={() => { (window as any).lastPlatform = 'android'; setPlatform('android'); setIsOpen(true) }}

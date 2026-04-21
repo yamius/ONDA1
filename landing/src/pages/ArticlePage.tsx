@@ -164,6 +164,7 @@ function setMeta(name: string, content: string, isProperty = false) {
 
 import { getProtocolUniqueId, PROTOCOL_STORAGE_PREFIX, ARTICLE_STORAGE_PREFIX } from '../data/protocol-ids'
 import { ArticleReactions, ArticleValidationArrows } from '../components/ArticleReactions'
+import { appStoreUrl } from '../config/appStore'
 
 const STORAGE_KEY_PREFIX = ARTICLE_STORAGE_PREFIX
 
@@ -837,7 +838,9 @@ export function ArticlePage() {
         </p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
           <a
-            href="/#download"
+            href={appStoreUrl(`article_${article.slug}`)}
+            target="_blank"
+            rel="noopener"
             onClick={() => { window.lastPlatform = 'ios' }}
             className="flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold transition-all hover:border-cyan-500/50 hover:bg-white/15 sm:w-auto"
             aria-label="Download ONDA Life on App Store"
