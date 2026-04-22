@@ -95,7 +95,7 @@ A calibrated acetylcholine lens delivers measurable upgrades.
 ---
 
 > **ONDA_STATEMENT:** "Your attention is not a resource to be spent; it is a tool to be focused. Acetylcholine is the mechanical core of that focus. Sharpen your lens, and the world becomes crystalline."
-`,`
+`,
   howToSteps: [
     {
       name: 'Visual Anchor Drill',
