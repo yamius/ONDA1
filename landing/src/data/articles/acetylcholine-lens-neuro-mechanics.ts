@@ -9,7 +9,7 @@ const article: Article = {
   category: 'Neural Hardware',
   introStyle: 'indigo',
   relatedSlugs: ['acetylcholine', 'neuromodulation', 'synaptic-gain', 'signal-enhancement', 'visual-system', 'cognitive-load'],
-  image: '/images/articles/the-acetylcholine-shader.png',
+  image: '@assets/THE_ACETYLCHOLINE_SHADER_1776847042184.png',
   imageAlt:
     'Acetylcholine lens visual with a human head, cyan focus beams, purple neural fibers, and a high-resolution cortical shader interface.',
   imageTitle: 'The Acetylcholine Lens — technical deep dive',
@@ -95,7 +95,7 @@ A calibrated acetylcholine lens delivers measurable upgrades.
 ---
 
 > **ONDA_STATEMENT:** "Your attention is not a resource to be spent; it is a tool to be focused. Acetylcholine is the mechanical core of that focus. Sharpen your lens, and the world becomes crystalline."
-`,
+`,`
   howToSteps: [
     {
       name: 'Visual Anchor Drill',

@@ -9,7 +9,7 @@ const article: Article = {
   category: 'Neural Hardware',
   introStyle: 'indigo',
   relatedSlugs: ['acetylcholine', 'norepinephrine', 'dopamine', 'flow-state', 'co2-tolerance', 'visual-system'],
-  image: '/images/articles/physiological-concentration-flow-state-hardwired.png',
+  image: '@assets/Physiological_Concentration_The_Flow_State_Hardwired_1776843727636.png',
   imageAlt:
     'Physiological concentration visual with a human head, blue laser focus beam, purple neural currents, and a locked flow-state interface.',
   imageTitle: 'Physiological Concentration — the flow state hardwired',
