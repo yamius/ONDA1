@@ -99,12 +99,40 @@
                 <data android:host="callback" />
             </intent-filter>
 
-            <!-- Deep link для Airbridge атрибуции -->
+            <!-- Deep link для Airbridge атрибуции — URI scheme -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 <data android:scheme="ondalife" />
+            </intent-filter>
+
+            <!-- Airbridge App Links — короткие ссылки abr.ge -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="ondalife.abr.ge" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="ondalife.abr.ge" />
+            </intent-filter>
+
+            <!-- Airbridge App Links — длинные ссылки airbridge.io -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="ondalife.airbridge.io" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="ondalife.airbridge.io" />
             </intent-filter>
             
             <!-- CRITICAL: Health Connect permission dialog -->

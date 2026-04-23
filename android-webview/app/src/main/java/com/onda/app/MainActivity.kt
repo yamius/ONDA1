@@ -17,7 +17,7 @@ import android.view.WindowManager
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
-import io.airbridge.sdk.android.Airbridge
+import io.airbridge.Airbridge
 import android.webkit.ConsoleMessage
 import android.webkit.JavascriptInterface
 import android.webkit.PermissionRequest
@@ -446,19 +446,35 @@ class MainActivity : AppCompatActivity() {
         if (data.scheme == "ondalife") {
             Log.d("WebViewConsole", "[Airbridge] Deep link received: $data")
 
-            // Передаём deep link в нативный Airbridge SDK для атрибуции
+            // Передаём deep link в нативный Airbridge SDK v4 для атрибуции
+            // handleDeeplink возвращает true если это Airbridge-ссылка и вызывает callback
+            val rawUrl = data.toString()
             if (intent != null) {
-                Airbridge.handleDeeplink(intent)
-                Log.d("WebViewConsole", "[Airbridge] Deep link forwarded to native SDK")
+                Airbridge.handleDeeplink(intent) { convertedUrl ->
+                    Log.d("WebViewConsole", "[Airbridge] Converted deep link URL: $convertedUrl")
+                    val escapedUrl = convertedUrl.toString()
+                        .replace("\\", "\\\\")
+                        .replace("\"", "\\\"")
+                    webView.post {
+                        val script = """
+                            (function() {
+                                console.log('[Airbridge] Converted deep link:', "$escapedUrl");
+                                window.dispatchEvent(new CustomEvent('airbridge-deeplink', {
+                                    detail: { url: "$escapedUrl" }
+                                }));
+                            })();
+                        """.trimIndent()
+                        webView.evaluateJavascript(script, null)
+                    }
+                }
             }
 
+            // Также диспатчим исходный URL в WebView для Web SDK
             webView.post {
-                val encodedUrl = data.toString()
-                    .replace("\\", "\\\\")
-                    .replace("\"", "\\\"")
+                val encodedUrl = rawUrl.replace("\\", "\\\\").replace("\"", "\\\"")
                 val script = """
                     (function() {
-                        console.log('[Airbridge] Deep link received: ${'$'}{decodeURIComponent("${encodedUrl}")}');
+                        console.log('[Airbridge] Raw deep link received:', "$encodedUrl");
                         window.dispatchEvent(new CustomEvent('airbridge-deeplink', {
                             detail: { url: "$encodedUrl" }
                         }));
