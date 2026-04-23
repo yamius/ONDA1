@@ -2,8 +2,8 @@ package com.onda.app
 
 import android.app.Application
 import android.util.Log
-import io.airbridge.Airbridge
-import io.airbridge.AirbridgeOptionBuilder
+import co.ab180.airbridge.Airbridge
+import co.ab180.airbridge.AirbridgeOptionBuilder
 
 class OndaApplication : Application() {
 
