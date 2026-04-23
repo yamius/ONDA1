@@ -102,22 +102,32 @@ jobs:
       - name: Sync Capacitor
         run: npx cap sync ios
 
-      - name: Ensure Sentry native pod is present
-        # @sentry/capacitor ships a native iOS pod that auto-registers via
-        # `cap sync`. We assert it actually ended up in Podfile.lock, because
-        # without the native layer WebView-OOM crashes (which kill the JS
-        # process before window.onerror can fire) never reach Sentry.
+      - name: Install CocoaPods dependencies
+        # Запускаем pod install явно, чтобы гарантировать установку:
+        # - airbridge-ios-sdk 4.1.3 (нативная атрибуция Airbridge)
+        # - SentryCapacitor (нативный перехват OOM-краш-репортов)
         run: |
           cd ios/App
-          echo "=== Podfile after cap sync ==="
-          cat Podfile
-          echo ""
-          echo "=== Podfile.lock Sentry entries ==="
-          grep -i sentry Podfile.lock || true
+          echo "=== Updating CocoaPods repo and installing pods ==="
+          pod install --repo-update
+          echo "=== Podfile.lock contents after install ==="
+          cat Podfile.lock | head -60
+
+      - name: Verify native pods are present
+        run: |
+          cd ios/App
+          echo "=== Checking Sentry pod ==="
           if ! grep -q -i "SentryCapacitor\|Sentry/" Podfile.lock; then
-            echo "::warning::SentryCapacitor pod not detected after cap sync. Native crashes won't reach Sentry until this is fixed. JS-level errors will still work."
+            echo "::warning::SentryCapacitor pod not detected. Native crashes won't reach Sentry."
           else
             echo "SentryCapacitor pod detected ✓"
+          fi
+          echo "=== Checking Airbridge pod ==="
+          if ! grep -q -i "airbridge-ios-sdk" Podfile.lock; then
+            echo "::error::airbridge-ios-sdk pod NOT found in Podfile.lock — attribution will not work!"
+            exit 1
+          else
+            echo "airbridge-ios-sdk pod detected ✓"
           fi
 
       - name: Create App Store Connect API Key

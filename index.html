@@ -78,6 +78,22 @@
         utmParsing: true,
         cookieWindow: 30
       });
+
+      // Ранний обработчик deep link событий от Android WebView bridge.
+      // Необходим здесь (в HTML, до загрузки бандла) потому что Android
+      // может диспатчить событие до полной инициализации JS-бандла.
+      window.addEventListener('airbridge-deeplink', function(e) {
+        var url = e.detail && e.detail.url;
+        if (!url) return;
+        console.log('[Airbridge] Deep link received (early handler):', url);
+        try {
+          if (typeof window.airbridge === 'function') {
+            window.airbridge('event', { category: 'airbridge', action: 'app_open', deeplink: url });
+          }
+        } catch(err) {
+          console.warn('[Airbridge] Failed to forward deep link:', err);
+        }
+      });
     </script>
   </head>
   <body>
