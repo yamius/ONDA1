@@ -65,9 +65,10 @@ dependencies {
     implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
-    // Firebase Analytics
+    // Firebase Analytics + Messaging (для Airbridge uninstall tracking)
     implementation platform('com.google.firebase:firebase-bom:32.7.0')
     implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
 
     // Health Connect
     implementation 'androidx.health.connect:connect-client:1.1.0-alpha07'

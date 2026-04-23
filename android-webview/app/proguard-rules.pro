@@ -1,4 +1,8 @@
 # Add project specific ProGuard rules here.
+
+# Airbridge SDK — FCM используется опционально для uninstall tracking
+-dontwarn com.google.firebase.messaging.**
+-keep class co.ab180.airbridge.** { *; }
 # You can control the set of applied configuration files using the
 # proguardFiles setting in build.gradle.
 
