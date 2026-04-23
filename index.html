@@ -59,6 +59,26 @@
         document.head.appendChild(script);
       }
     </script>
+
+    <!-- Airbridge Web SDK -->
+    <script>
+      (function(a,i,r,b){
+        if(typeof a[b]==='function') return;
+        a[b]=function(){a[b].queue.push(arguments)};
+        a[b].queue=[];
+        a[b]._i=Date.now();
+        var s=i.createElement('script');
+        s.src=r;
+        s.async=true;
+        i.getElementsByTagName('head')[0].appendChild(s);
+      })(window,document,'https://sdk-scripts.airbridge.io/airbridge.js','airbridge');
+      window.airbridge('init', {
+        app: 'ondalife',
+        webToken: '1efbd0e8973f417f9dd9b7f47ac6e7c9',
+        utmParsing: true,
+        cookieWindow: 30
+      });
+    </script>
   </head>
   <body>
     <!-- Meta Pixel noscript -->

@@ -125,6 +125,14 @@ initializeAnalytics().then(() => {
   console.error('[ONDA] Failed to initialize Firebase Analytics:', error);
 });
 
+// Initialize Airbridge deep link handler (captures ondalife:// deep links from Android/iOS)
+import('./lib/airbridge').then(({ initAirbridgeDeepLinkHandler }) => {
+  initAirbridgeDeepLinkHandler();
+  console.log('[ONDA] Airbridge deep link handler initialized');
+}).catch((e) => {
+  console.warn('[ONDA] Airbridge initialization failed:', e);
+});
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ErrorBoundary>
