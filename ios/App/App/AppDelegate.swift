@@ -63,8 +63,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        // Передаём deep link (ondalife://) в Airbridge SDK для атрибуции
-        if Airbridge.handleDeeplink(url) {
+        // Передаём deep link (ondalife://) в Airbridge SDK v4 для атрибуции
+        let isAirbridgeDeeplink = Airbridge.handleDeeplink(url: url) { convertedUrl in
+            print("[ONDA] Airbridge converted deep link: \(convertedUrl)")
+        }
+        if isAirbridgeDeeplink {
             print("[ONDA] Airbridge handled deep link: \(url)")
             return true
         }
@@ -72,10 +75,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        // Передаём Universal Links в Airbridge SDK для атрибуции
-        if let url = userActivity.webpageURL, Airbridge.handleDeeplink(url) {
-            print("[ONDA] Airbridge handled Universal Link: \(url)")
-            return true
+        // Передаём Universal Links в Airbridge SDK v4 для атрибуции
+        if let universalLinkUrl = userActivity.webpageURL {
+            let isAirbridgeLink = Airbridge.handleDeeplink(url: universalLinkUrl) { convertedUrl in
+                print("[ONDA] Airbridge converted Universal Link: \(convertedUrl)")
+            }
+            if isAirbridgeLink {
+                print("[ONDA] Airbridge handled Universal Link: \(universalLinkUrl)")
+                return true
+            }
         }
         return ApplicationDelegateProxy.shared.application(application, continue: userActivity, restorationHandler: restorationHandler)
     }
