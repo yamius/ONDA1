@@ -439,8 +439,29 @@ class MainActivity : AppCompatActivity() {
     }
     
     private fun handleDeepLink(intent: Intent?) {
-        val data = intent?.data
-        if (data != null && data.scheme == "com.onda.app" && data.host == "callback") {
+        val data = intent?.data ?: return
+
+        // Airbridge attribution deep link
+        if (data.scheme == "ondalife") {
+            Log.d("WebViewConsole", "[Airbridge] Deep link received: $data")
+            webView.post {
+                val encodedUrl = data.toString()
+                    .replace("\\", "\\\\")
+                    .replace("\"", "\\\"")
+                val script = """
+                    (function() {
+                        console.log('[Airbridge] Deep link received: ${'$'}{decodeURIComponent("${encodedUrl}")}');
+                        window.dispatchEvent(new CustomEvent('airbridge-deeplink', {
+                            detail: { url: "$encodedUrl" }
+                        }));
+                    })();
+                """.trimIndent()
+                webView.evaluateJavascript(script, null)
+            }
+            return
+        }
+
+        if (data.scheme == "com.onda.app" && data.host == "callback") {
             Log.d("WebViewConsole", "[OAuth] Deep link received: $data")
             
             // Получаем фрагмент URL с токеном (например: access_token=...&expires_at=...)

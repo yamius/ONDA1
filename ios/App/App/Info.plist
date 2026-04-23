@@ -53,6 +53,7 @@
                                 <string>capacitor</string>
                                 <string>com.onda.app</string>
                                 <string>com.onda-life.ios</string>
+                                <string>ondalife</string>
                         </array>
                         <key>CFBundleURLName</key>
                         <string>com.onda-life.ios</string>
@@ -64,10 +65,10 @@
         <string>ONDA uses your heart rate data to provide personalized meditation and breathing exercises that adapt to your stress levels and wellness state.</string>
         <key>NSHealthUpdateUsageDescription</key>
         <string>ONDA tracks your mindfulness sessions and workout data in Apple Health to help you monitor your wellness progress.</string>
-	<key>UIBackgroundModes</key>
-	<array>
-		<string>fetch</string>
-		<string>remote-notification</string>
-	</array>
+        <key>UIBackgroundModes</key>
+        <array>
+                <string>fetch</string>
+                <string>remote-notification</string>
+        </array>
 </dict>
 </plist>

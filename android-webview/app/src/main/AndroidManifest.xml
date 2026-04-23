@@ -94,6 +94,14 @@
                 <data android:scheme="com.onda.app" />
                 <data android:host="callback" />
             </intent-filter>
+
+            <!-- Deep link для Airbridge атрибуции -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="ondalife" />
+            </intent-filter>
             
             <!-- CRITICAL: Health Connect permission dialog -->
             <intent-filter>

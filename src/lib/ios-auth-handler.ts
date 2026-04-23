@@ -36,6 +36,15 @@ async function handleOAuthCallback(urlString: string): Promise<void> {
   try {
     console.log('[iOS Auth] Handling OAuth callback:', urlString);
     
+    // Airbridge deep link — передаём событие в WebView и выходим
+    if (urlString.startsWith('ondalife://')) {
+      console.log('[Airbridge] Deep link received:', urlString);
+      window.dispatchEvent(new CustomEvent('airbridge-deeplink', {
+        detail: { url: urlString }
+      }));
+      return;
+    }
+
     // Проверяем разные схемы URL (capacitor://, com.onda.app://, com.onda-life.ios://)
     const isOAuthCallback = 
       urlString.startsWith('capacitor://') ||
