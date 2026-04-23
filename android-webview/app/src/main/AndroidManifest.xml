@@ -64,7 +64,11 @@
         <package android:name="com.huawei.health" />
     </queries>
 
+    <!-- Airbridge: required for Google Advertising ID collection -->
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
     <application
+        android:name=".OndaApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher"

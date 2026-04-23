@@ -86,6 +86,9 @@ dependencies {
     // Sentry crash reporting
     implementation 'io.sentry:sentry-android:7.+'
 
+    // Airbridge native SDK — for install attribution (Google Play Referrer)
+    implementation 'io.airbridge:sdk-android:4.9.4'
+
     // Testing
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

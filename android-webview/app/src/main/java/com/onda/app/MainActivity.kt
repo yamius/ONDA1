@@ -17,6 +17,7 @@ import android.view.WindowManager
 import com.google.firebase.analytics.FirebaseAnalytics
 import com.google.firebase.analytics.ktx.analytics
 import com.google.firebase.ktx.Firebase
+import io.airbridge.sdk.android.Airbridge
 import android.webkit.ConsoleMessage
 import android.webkit.JavascriptInterface
 import android.webkit.PermissionRequest
@@ -444,6 +445,13 @@ class MainActivity : AppCompatActivity() {
         // Airbridge attribution deep link
         if (data.scheme == "ondalife") {
             Log.d("WebViewConsole", "[Airbridge] Deep link received: $data")
+
+            // Передаём deep link в нативный Airbridge SDK для атрибуции
+            if (intent != null) {
+                Airbridge.handleDeeplink(intent)
+                Log.d("WebViewConsole", "[Airbridge] Deep link forwarded to native SDK")
+            }
+
             webView.post {
                 val encodedUrl = data.toString()
                     .replace("\\", "\\\\")
