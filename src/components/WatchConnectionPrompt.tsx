@@ -142,7 +142,7 @@ export function WatchConnectionPrompt({ visible, onConnected }: WatchConnectionP
               <p className="text-sm font-semibold text-amber-200 leading-relaxed mb-1">
                 {t('watch.permission_not_determined_title')}
               </p>
-              <p className="text-sm text-gray-300 leading-relaxed">
+              <p className="text-sm text-gray-300 leading-relaxed whitespace-pre-line">
                 {t('watch.permission_not_determined_body')}
               </p>
             </div>
