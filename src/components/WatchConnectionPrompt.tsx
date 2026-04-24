@@ -28,6 +28,8 @@ export function WatchConnectionPrompt({ visible, onConnected }: WatchConnectionP
   const { t } = useTranslation();
   const [reachable, setReachable] = useState(false);
   const [authStatus, setAuthStatus] = useState<WatchHealthAuthStatus>('unknown');
+  const [paired, setPaired] = useState<boolean | null>(null);
+  const [watchAppInstalled, setWatchAppInstalled] = useState<boolean | null>(null);
 
   useEffect(() => {
     if (!visible || Capacitor.getPlatform() !== 'ios') {
@@ -45,6 +47,8 @@ export function WatchConnectionPrompt({ visible, onConnected }: WatchConnectionP
 
         setReachable(isReachable);
         setAuthStatus(nextAuth);
+        setPaired(status.paired ?? null);
+        setWatchAppInstalled(status.watchAppInstalled ?? null);
 
         // Часы считаются готовыми, только если они видимы И пульс реально разрешён
         if (isReachable && nextAuth === 'authorized') {
@@ -96,6 +100,31 @@ export function WatchConnectionPrompt({ visible, onConnected }: WatchConnectionP
   }
   if (reachable && authStatus === 'authorized') {
     return null;
+  }
+
+  // Часы сопряжены, но приложение не установлено → инструкция по установке
+  if (paired === true && watchAppInstalled === false) {
+    return (
+      <div className="mb-6 bg-gradient-to-r from-indigo-500/10 to-blue-500/10 rounded-2xl border border-indigo-500/30 overflow-hidden backdrop-blur-sm">
+        <div className="p-5">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center">
+                <Watch className="w-6 h-6 text-indigo-400" />
+              </div>
+            </div>
+            <div className="flex-1 min-w-0">
+              <p className="text-sm font-semibold text-indigo-200 leading-relaxed mb-1">
+                {t('watch.not_installed_title')}
+              </p>
+              <p className="text-sm text-gray-300 leading-relaxed whitespace-pre-line">
+                {t('watch.not_installed_body')}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   // Выбираем конкретную форму баннера
