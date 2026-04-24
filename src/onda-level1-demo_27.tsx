@@ -2077,8 +2077,13 @@ const OndaLevel1 = () => {
     const minQualityRequired = hasRealMetricsAtFinish ? 70 : 33;
     const isValidForArtifact = timePercent >= 0.8 && qualityScore >= minQualityRequired;
 
-    // Track practice completion
-    trackAirbridgePractice('Finish', getPracticeName(activePractice.id));
+    // Track practice completion — Finish only if practice passed the valid threshold
+    // (≥80% of target time AND quality ≥ minQualityRequired). Otherwise user pressed
+    // Complete early → Stop.
+    trackAirbridgePractice(
+      isValidForArtifact ? 'Finish' : 'Stop',
+      getPracticeName(activePractice.id)
+    );
     trackPractice('complete', activePractice.id, {
       practice_name: activePractice.name,
       duration_seconds: practiceTime,
@@ -2285,8 +2290,8 @@ const OndaLevel1 = () => {
     const practiceId = activePractice?.id;
     const practiceName = circuits.flatMap(c => c.practices).find(p => p.id === activePractice?.id)?.name || '';
 
-    // Airbridge: fire Stop only if user quit during the active practice
-    // (not from the intro screen and not after natural completion).
+    // Airbridge: X during practice = Stop. Skip if user is on intro (never started)
+    // or on the 'complete' result screen (Finish/Stop already fired in finishPractice).
     if (practiceState === 'active' && practiceId) {
       trackAirbridgePractice('Stop', practiceName || getPracticeName(practiceId));
     }

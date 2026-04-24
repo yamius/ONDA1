@@ -869,6 +869,11 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       return;
     }
 
+    // Completion threshold: user must have spent at least 80% of target time.
+    // Mirrors the `timePercent >= 0.8` rule used for basic practices' isValidForArtifact.
+    // If the user hits Complete earlier — it's a Stop, not a Finish.
+    const isValidForCompletion = practiceTime >= practice.targetTime * 0.8;
+
     // Use vitalsRef.current for FRESH values (not stale closure)
     const freshVitals = vitalsRef.current;
     const currentStress = freshVitals.hasVitalsData && freshVitals.stress !== null ? freshVitals.stress : simulatedVitals.stress;
@@ -919,7 +924,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       if (!user) {
         console.log('[AdaptivePractice] No user found, skipping save');
         setPracticeState('complete');
-        trackAirbridgePractice('Finish', t(practice.name));
+        trackAirbridgePractice(isValidForCompletion ? 'Finish' : 'Stop', t(practice.name));
         return;
       }
       console.log('[AdaptivePractice] User found:', user.id);
@@ -977,7 +982,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     console.log('[AdaptivePractice] Setting practice state to complete...');
     setPracticeState('complete');
     console.log('[AdaptivePractice] Practice state set to complete');
-    trackAirbridgePractice('Finish', t(practice.name));
+    trackAirbridgePractice(isValidForCompletion ? 'Finish' : 'Stop', t(practice.name));
   };
 
   const handleClose = async (eventOrReason?: React.MouseEvent | string) => {
