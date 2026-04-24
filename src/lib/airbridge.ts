@@ -22,6 +22,32 @@ export function trackAirbridgeEvent(
   }
 }
 
+/**
+ * Track practice lifecycle events: View / Start / Stop / Finish.
+ * Safe to call when Airbridge SDK is not loaded — silently no-ops.
+ *
+ * @param action   One of: 'View' | 'Start' | 'Stop' | 'Finish'
+ * @param practiceName Human-readable name (localized). Used as the event label.
+ */
+export function trackAirbridgePractice(
+  action: 'View' | 'Start' | 'Stop' | 'Finish',
+  practiceName: string | undefined | null
+): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    const label = (practiceName ?? '').toString();
+    window.airbridge('event', {
+      category: 'practice',
+      action: `${action} Practice`,
+      label,
+    });
+    console.log('[Airbridge] Practice event:', `${action} Practice`, label);
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track practice event:', action, e);
+  }
+}
+
 export function identifyAirbridgeUser(params: {
   id?: string;
   email?: string;

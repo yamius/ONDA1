@@ -10,6 +10,7 @@ import { useAnalytics } from '../hooks/useAnalytics';
 import { heartRateStore } from '../hooks/heartRateStore';
 import { supabase } from '../lib/supabase';
 import { calculatePracticeOnd } from '../utils/ondCalculator';
+import { trackAirbridgePractice } from '../lib/airbridge';
 
 interface AdaptivePracticeModalProps {
   isOpen: boolean;
@@ -554,6 +555,12 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
 
   const practice = adaptivePractices[practiceId];
 
+  // Airbridge: fire "View Practice" once each time the intro screen opens.
+  useEffect(() => {
+    if (!isOpen || !practice) return;
+    trackAirbridgePractice('View', t(practice.name));
+  }, [isOpen, practice?.id]);
+
   useEffect(() => {
     if (!pendingStartAfterSubscribe) return;
     if (!isPremium) return;
@@ -815,6 +822,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     setIsPaused(false);
     setQualityScore(0);
     setMaxQualityScore(0);
+    if (practice) trackAirbridgePractice('Start', t(practice.name));
   };
 
   const togglePause = () => {
@@ -911,6 +919,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       if (!user) {
         console.log('[AdaptivePractice] No user found, skipping save');
         setPracticeState('complete');
+        trackAirbridgePractice('Finish', t(practice.name));
         return;
       }
       console.log('[AdaptivePractice] User found:', user.id);
@@ -968,6 +977,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     console.log('[AdaptivePractice] Setting practice state to complete...');
     setPracticeState('complete');
     console.log('[AdaptivePractice] Practice state set to complete');
+    trackAirbridgePractice('Finish', t(practice.name));
   };
 
   const handleClose = async (eventOrReason?: React.MouseEvent | string) => {
@@ -1011,6 +1021,11 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     if (msSinceOpen !== null && msSinceOpen < 1800 && practiceState === 'intro' && practiceTime === 0) {
       console.warn('[DEBUG handleClose] BLOCKED by 1800ms guard', { msSinceOpen });
       return;
+    }
+
+    // Airbridge: fire Stop only when user quit mid-practice (not from intro, not after natural Finish).
+    if (practiceState === 'practice' && practice) {
+      trackAirbridgePractice('Stop', t(practice.name));
     }
 
     if (practiceRating > 0 && practiceTime > 0 && practice) {

@@ -29,6 +29,7 @@ import { rhythmStore } from './sleep/rhythm';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
+import { trackAirbridgePractice } from './lib/airbridge';
 import { useSubscription } from './hooks/useSubscription';
 import * as Sentry from '@sentry/capacitor';
 import WelcomeScene from './components/WelcomeScene';
@@ -1980,6 +1981,7 @@ const OndaLevel1 = () => {
         target_duration: space.duration,
         base_ond: baseQnt,
       });
+      trackAirbridgePractice('View', getPracticeName(practiceId));
 
       // Scroll to practice after a short delay
       setTimeout(() => {
@@ -2025,6 +2027,7 @@ const OndaLevel1 = () => {
         initial_stress: initialStress,
         initial_energy: initialEnergy,
       });
+      trackAirbridgePractice('Start', getPracticeName(activePractice.id));
     }
 
     console.log('Starting basic practice with initial metrics:', { 
@@ -2075,6 +2078,7 @@ const OndaLevel1 = () => {
     const isValidForArtifact = timePercent >= 0.8 && qualityScore >= minQualityRequired;
 
     // Track practice completion
+    trackAirbridgePractice('Finish', getPracticeName(activePractice.id));
     trackPractice('complete', activePractice.id, {
       practice_name: activePractice.name,
       duration_seconds: practiceTime,
@@ -2280,6 +2284,12 @@ const OndaLevel1 = () => {
     setIsMinimalMode(false);
     const practiceId = activePractice?.id;
     const practiceName = circuits.flatMap(c => c.practices).find(p => p.id === activePractice?.id)?.name || '';
+
+    // Airbridge: fire Stop only if user quit during the active practice
+    // (not from the intro screen and not after natural completion).
+    if (practiceState === 'active' && practiceId) {
+      trackAirbridgePractice('Stop', practiceName || getPracticeName(practiceId));
+    }
     
     // Save rating if user rated the practice
     if (practiceRating > 0 && user && practiceTime > 0) {
