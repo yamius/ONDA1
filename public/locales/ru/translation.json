@@ -63,8 +63,8 @@
   "watch": {
     "open_app_prompt": "Откройте приложение на Apple Watch для отслеживания пульса",
     "waiting_connection": "Ожидание подключения",
-    "permission_not_determined_title": "Разрешение на пульс пропущено на часах",
-    "permission_not_determined_body": "Открой приложение ONDA на Apple Watch и нажми «Allow Access», чтобы разрешить доступ к пульсу.",
+    "permission_not_determined_title": "Разрешение на пульс не выдано",
+    "permission_not_determined_body": "На часах: Настройки → Конфиденциальность → Здоровье → ONDA Life → включи доступ к пульсу.",
     "permission_denied_title": "Доступ к пульсу на часах отключён",
     "permission_denied_body": "На iPhone: Настройки → Конфиденциальность и безопасность → Здоровье → ONDA → разрешить.\nНа часах: Настройки → Здоровье → Приложения → ONDA Life → включить всё.",
     "not_installed_title": "ONDA не установлена на Apple Watch",

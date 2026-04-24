@@ -63,8 +63,8 @@
   "watch": {
     "open_app_prompt": "Open the app on your Apple Watch to track your heart rate",
     "waiting_connection": "Waiting for connection",
-    "permission_not_determined_title": "Heart rate permission was skipped on your Watch",
-    "permission_not_determined_body": "Open ONDA on your Apple Watch and tap \"Allow Access\" to share heart rate.",
+    "permission_not_determined_title": "Heart rate permission not granted",
+    "permission_not_determined_body": "On Watch: Settings → Privacy → Health → ONDA Life → enable heart rate access.",
     "permission_denied_title": "Heart rate access is off on your Watch",
     "permission_denied_body": "On iPhone: Settings → Privacy & Security → Health → ONDA → Allow.\nOn Watch: Settings → Health → Apps → ONDA Life → Turn on all.",
     "not_installed_title": "ONDA is not installed on Apple Watch",
