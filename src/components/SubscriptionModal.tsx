@@ -7,6 +7,11 @@ import { useAnalytics } from '../hooks/useAnalytics';
 import { supabase } from '../lib/supabase';
 import { LegalModal } from './LegalModal';
 import { AuthModal } from './AuthModal';
+import {
+  trackAirbridgePaywallView,
+  trackAirbridgePaywallClick,
+  trackAirbridgeSubscribe,
+} from '../lib/airbridge';
 
 interface SubscriptionModalProps {
   isOpen: boolean;
@@ -78,6 +83,14 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     }
   }, [isPremium, isOpen, onClose]);
 
+  // Airbridge: fire "View Paywall" once each time the paywall opens to a
+  // non-premium user (skip auto-close case above where premium users are
+  // dismissed immediately).
+  useEffect(() => {
+    if (!isOpen || isPremium) return;
+    trackAirbridgePaywallView();
+  }, [isOpen, isPremium]);
+
   useEffect(() => {
     if (!isOpen) return;
     if (!showAuthModal) return;
@@ -93,6 +106,9 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
 
   const handlePurchase = async () => {
     setPurchaseError(null);
+    // Airbridge: fire on every tap of the purchase CTA, before any gating
+    // (auth / product availability). The label is the subscription type.
+    trackAirbridgePaywallClick(selectedPlan);
 
     const { data: { user } } = await supabase.auth.getUser();
     if (!user) {
@@ -120,6 +136,12 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
         track('purchase_succeeded', {
           plan: selectedPlan,
           product_id: pkg.product.identifier,
+        });
+        trackAirbridgeSubscribe({
+          value: pkg.product.price,
+          currency: pkg.product.currencyCode ?? 'USD',
+          productId: pkg.product.identifier,
+          plan: selectedPlan,
         });
         onSubscribed?.();
         onClose();

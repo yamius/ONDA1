@@ -93,6 +93,71 @@ export function trackAirbridgeEmotionalCheck(
   }
 }
 
+/**
+ * Paywall: fired once each time the subscription screen opens.
+ */
+export function trackAirbridgePaywallView(): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    window.airbridge('event', {
+      category: 'paywall',
+      action: 'View Paywall',
+    });
+    console.log('[Airbridge] Paywall event: View Paywall');
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track paywall view:', e);
+  }
+}
+
+/**
+ * Paywall: fired when the user taps a purchase button.
+ * @param subscriptionType e.g. 'monthly' | 'yearly'
+ */
+export function trackAirbridgePaywallClick(subscriptionType: string): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    window.airbridge('event', {
+      category: 'paywall',
+      action: 'Click Paywall Button',
+      label: subscriptionType,
+    });
+    console.log('[Airbridge] Paywall event: Click Paywall Button', subscriptionType);
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track paywall click:', e);
+  }
+}
+
+/**
+ * Paywall: fired after a successful purchase.
+ * Uses Airbridge's standard semantic fields (value, currency) so the
+ * revenue dashboard picks it up without extra mapping.
+ */
+export function trackAirbridgeSubscribe(params: {
+  value: number;
+  currency?: string;
+  productId?: string;
+  plan?: string;
+}): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    const payload: Record<string, unknown> = {
+      category: 'paywall',
+      action: 'Subscribe',
+      value: params.value,
+      currency: params.currency ?? 'USD',
+    };
+    if (params.productId) payload.product_id = params.productId;
+    if (params.plan) payload.label = params.plan;
+    window.airbridge('event', payload);
+    console.log('[Airbridge] Paywall event: Subscribe', payload);
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track subscribe:', e);
+  }
+}
+
 export function identifyAirbridgeUser(params: {
   id?: string;
   email?: string;
