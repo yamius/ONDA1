@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 import { LizaChatModal } from './LizaChatModal';
+import { trackAirbridgeEmotionalCheck } from '../lib/airbridge';
 
 interface EmotionalCheckModalProps {
   isOpen: boolean;
@@ -110,6 +111,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       mediaRecorder.start(100); // Request data every 100ms
       setRecordingState('recording');
       setRecordingTime(0);
+      trackAirbridgeEmotionalCheck('Start');
       console.log('[EmotionalCheck] MediaRecorder started');
 
       timerRef.current = window.setInterval(() => {
@@ -255,6 +257,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       const result = await response!.json();
       console.log('[EmotionalCheck] 📦 API result received');
 
+      let resolvedEmotionKey: string;
       if (result.useMock) {
         console.warn('Using mock emotion detection:', result.error || 'API key not configured');
 
@@ -268,6 +271,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
         ];
 
         const randomEmotion = emotions[Math.floor(Math.random() * emotions.length)];
+        resolvedEmotionKey = randomEmotion.name;
 
         setEmotionalResult({
           primaryEmotion: randomEmotion.name,
@@ -276,6 +280,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
           recommendation: randomEmotion.rec
         });
       } else {
+        resolvedEmotionKey = result.primaryEmotion;
         setEmotionalResult({
           primaryEmotion: result.primaryEmotion,
           confidence: result.confidence,
@@ -285,6 +290,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       }
 
       setRecordingState('result');
+      trackAirbridgeEmotionalCheck('Finish', t(resolvedEmotionKey));
       console.log('[EmotionalCheck] ✅ Analysis complete, showing results');
     } catch (error: any) {
       console.error('[EmotionalCheck] ❌ Error analyzing voice:', error);
@@ -328,6 +334,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       });
 
       setRecordingState('result');
+      trackAirbridgeEmotionalCheck('Finish', t(randomEmotion.name));
       console.log('[EmotionalCheck] ✅ Fallback analysis complete, showing mock results');
     }
   };

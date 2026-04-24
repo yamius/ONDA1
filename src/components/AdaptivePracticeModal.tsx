@@ -558,7 +558,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   // Airbridge: fire "View Practice" once each time the intro screen opens.
   useEffect(() => {
     if (!isOpen || !practice) return;
-    trackAirbridgePractice('View', t(practice.name));
+    trackAirbridgePractice('View', t(practice.name), { surface: 'adaptive' });
   }, [isOpen, practice?.id]);
 
   useEffect(() => {
@@ -822,7 +822,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     setIsPaused(false);
     setQualityScore(0);
     setMaxQualityScore(0);
-    if (practice) trackAirbridgePractice('Start', t(practice.name));
+    if (practice) trackAirbridgePractice('Start', t(practice.name), { surface: 'adaptive' });
   };
 
   const togglePause = () => {
@@ -924,7 +924,24 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       if (!user) {
         console.log('[AdaptivePractice] No user found, skipping save');
         setPracticeState('complete');
-        trackAirbridgePractice(isValidForCompletion ? 'Finish' : 'Stop', t(practice.name));
+        trackAirbridgePractice(
+          isValidForCompletion ? 'Finish' : 'Stop',
+          t(practice.name),
+          {
+            surface: 'adaptive',
+            extra: isValidForCompletion
+              ? {
+                  duration_seconds: practiceTime,
+                  stress_before: initialMetrics.stress,
+                  stress_after: Math.round(finalStress),
+                  energy_before: initialMetrics.energy,
+                  energy_after: Math.round(finalEnergy),
+                  has_real_metrics: hasRealMetrics,
+                  ond_earned: ondReward.totalOnd,
+                }
+              : undefined,
+          }
+        );
         return;
       }
       console.log('[AdaptivePractice] User found:', user.id);
@@ -982,7 +999,24 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     console.log('[AdaptivePractice] Setting practice state to complete...');
     setPracticeState('complete');
     console.log('[AdaptivePractice] Practice state set to complete');
-    trackAirbridgePractice(isValidForCompletion ? 'Finish' : 'Stop', t(practice.name));
+    trackAirbridgePractice(
+      isValidForCompletion ? 'Finish' : 'Stop',
+      t(practice.name),
+      {
+        surface: 'adaptive',
+        extra: isValidForCompletion
+          ? {
+              duration_seconds: practiceTime,
+              stress_before: initialMetrics.stress,
+              stress_after: Math.round(finalStress),
+              energy_before: initialMetrics.energy,
+              energy_after: Math.round(finalEnergy),
+              has_real_metrics: hasRealMetrics,
+              ond_earned: ondReward.totalOnd,
+            }
+          : undefined,
+      }
+    );
   };
 
   const handleClose = async (eventOrReason?: React.MouseEvent | string) => {
@@ -1030,7 +1064,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
 
     // Airbridge: fire Stop only when user quit mid-practice (not from intro, not after natural Finish).
     if (practiceState === 'practice' && practice) {
-      trackAirbridgePractice('Stop', t(practice.name));
+      trackAirbridgePractice('Stop', t(practice.name), { surface: 'adaptive' });
     }
 
     if (practiceRating > 0 && practiceTime > 0 && practice) {

@@ -26,25 +26,70 @@ export function trackAirbridgeEvent(
  * Track practice lifecycle events: View / Start / Stop / Finish.
  * Safe to call when Airbridge SDK is not loaded — silently no-ops.
  *
- * @param action   One of: 'View' | 'Start' | 'Stop' | 'Finish'
+ * Event names (per Airbridge mapping):
+ *   - basic    → "View Practice"          / "Start Practice"          / …
+ *   - adaptive → "View Adaptive Practice" / "Start Adaptive Practice" / …
+ *
+ * @param action       One of: 'View' | 'Start' | 'Stop' | 'Finish'
  * @param practiceName Human-readable name (localized). Used as the event label.
+ * @param opts.surface 'basic' (default) | 'adaptive' — controls event name prefix
+ * @param opts.extra   Additional fields to merge into the event payload
+ *                     (e.g. stress/energy for Finish Adaptive Practice).
  */
 export function trackAirbridgePractice(
   action: 'View' | 'Start' | 'Stop' | 'Finish',
-  practiceName: string | undefined | null
+  practiceName: string | undefined | null,
+  opts?: {
+    surface?: 'basic' | 'adaptive';
+    extra?: Record<string, unknown>;
+  }
 ): void {
   try {
     if (typeof window === 'undefined') return;
     if (typeof window.airbridge !== 'function') return;
     const label = (practiceName ?? '').toString();
+    const surface = opts?.surface ?? 'basic';
+    const eventAction =
+      surface === 'adaptive' ? `${action} Adaptive Practice` : `${action} Practice`;
     window.airbridge('event', {
       category: 'practice',
-      action: `${action} Practice`,
+      action: eventAction,
       label,
+      ...(opts?.extra ?? {}),
     });
-    console.log('[Airbridge] Practice event:', `${action} Practice`, label);
+    console.log('[Airbridge] Practice event:', eventAction, label, opts?.extra ?? '');
   } catch (e) {
     console.warn('[Airbridge] Failed to track practice event:', action, e);
+  }
+}
+
+/**
+ * Track emotional check-in events.
+ *
+ * Event names:
+ *   - Start  → "Start Emotional Check"   (no label — user just tapped record)
+ *   - Finish → "Finish Emotional Check"  (label = resolved emotion name)
+ *
+ * @param action       'Start' | 'Finish'
+ * @param emotionName  Localized emotion label (only for Finish)
+ */
+export function trackAirbridgeEmotionalCheck(
+  action: 'Start' | 'Finish',
+  emotionName?: string | null
+): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    const eventAction = `${action} Emotional Check`;
+    const label = (emotionName ?? '').toString();
+    window.airbridge('event', {
+      category: 'emotional_check',
+      action: eventAction,
+      label,
+    });
+    console.log('[Airbridge] EmotionalCheck event:', eventAction, label);
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track emotional check event:', action, e);
   }
 }
 
