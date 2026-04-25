@@ -52,6 +52,40 @@ if (_useNativeAirbridge) {
   console.log('[Airbridge] Using Web SDK fallback (platform:', Capacitor.getPlatform(), ')');
 }
 
+// Diagnostic beacon: emit a Firebase event the moment this module loads,
+// telling us which Airbridge path is active in this running binary. We use
+// Firebase because we already know that pipeline works end-to-end —
+// `app_open_js` etc. arrive in Realtime within ~30s. So if we see
+// `airbridge_path_native` in Firebase Realtime but no events in the
+// Airbridge App Real-time Log, we know the native plugin is registered
+// AND being called from JS, but Airbridge.trackEvent isn't delivering.
+// If we see `airbridge_path_web`, the plugin failed to register and we're
+// falling back to the broken Web SDK path.
+//
+// Fired here at module-load time (one event per app session, no PII), so
+// the user just needs to open the app to make this visible.
+(async () => {
+  try {
+    if (Capacitor.getPlatform() !== 'ios') return;
+    const plugins =
+      typeof (Capacitor as any).getPlugins === 'function'
+        ? Object.keys((Capacitor as any).getPlugins?.() ?? {})
+        : [];
+    if (typeof FirebaseAnalytics?.logEvent === 'function') {
+      await FirebaseAnalytics.logEvent({
+        name: _useNativeAirbridge ? 'airbridge_path_native' : 'airbridge_path_web',
+        params: {
+          platform: Capacitor.getPlatform(),
+          // Truncate plugin list to fit Firebase's 100-char string limit.
+          registered_plugins: plugins.join(',').slice(0, 100),
+        },
+      });
+    }
+  } catch (e) {
+    console.warn('[Airbridge] diagnostic beacon failed:', e);
+  }
+})();
+
 function _sendAirbridge(payload: {
   category: string;
   action?: string;
