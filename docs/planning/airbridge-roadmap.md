@@ -92,12 +92,64 @@ To keep the event stream clean, we deliberately do **not** send these to Airbrid
 1. ~~**Sprint 1 — close the funnel.** `Sign Up`, `Sign In`, `App Open`, `Complete Onboarding`, `First Practice Complete`.~~ ✅ Shipped.
 2. ~~**Sprint 2 — paywall detail.** `source` extra on `View Paywall`, `Dismiss Paywall`.~~ ✅ Shipped.
 3. ~~**Sprint 3 — permissions & progression.** HealthKit + Watch Connected, then `Level Unlocked` / `Circuit Complete` / `Artifact Earned`.~~ ✅ Shipped (Bluetooth + Notifications deferred — no JS-layer callsite yet).
+4. ~~**Sprint 4 — iOS native bridge.** `OndaAirbridge` Capacitor plugin so custom events land in the App Real-time Log under the same IDFA as Install/Open.~~ ✅ Shipped (iOS only).
+5. **Sprint 5 — Android native bridge.** Same problem on Android: `window.airbridge('event', …)` in the WebView never reaches the App stream. Build the Android half of `OndaAirbridge`. **Not started.** See §6 below.
 
 After each sprint: update [`docs/architecture/airbridge.md`](../architecture/airbridge.md) §9 and remove the shipped items from this roadmap.
 
 ---
 
-## 6. Implementation checklist for a new event
+## 6. Sprint 5 plan — Android native bridge for `OndaAirbridge`
+
+iOS shipped a thin Capacitor plugin (`OndaAirbridgePlugin.swift` +
+`.m`) that delegates `trackEvent` / `setUserID` / `setUserEmail` /
+`setUserAlias` / `clearUser` to the native Airbridge iOS SDK. Android
+needs the symmetric implementation. Once it lands, the JS selector in
+`src/lib/airbridge.ts` will pick the native path on Android too:
+
+```ts
+const _useNativeAirbridge: boolean =
+  (Capacitor.getPlatform() === 'ios' || Capacitor.getPlatform() === 'android') &&
+  Capacitor.isPluginAvailable('OndaAirbridge');
+```
+
+(today only the iOS branch is true; the platform check just needs to
+be widened.)
+
+### Files to add
+
+| File | What |
+|---|---|
+| `android/app/src/main/java/com/onda/app/OndaAirbridgePlugin.kt` (new) | Kotlin class extending `com.getcapacitor.Plugin`, annotated `@CapacitorPlugin(name = "OndaAirbridge")`. Methods: `trackEvent`, `setUserID`, `setUserEmail`, `setUserAlias`, `clearUser`. Each delegates to `co.ab180.airbridge.Airbridge` (or `AirbridgeKotlin` extensions). |
+| `android/app/src/main/java/com/onda/app/MainActivity.java` (edit) | Register `OndaAirbridgePlugin::class.java` in `bridge.add()` — same pattern Capacitor docs show. Verify that an existing `registerPlugin` block already exists (used for the Firebase Analytics bridge). |
+| `android/app/build.gradle` (edit) | Add the Airbridge Android SDK dependency: `implementation "co.ab180.airbridge:airbridge:4.x.x"`. Pin to the same major version line as the iOS pod (`airbridge-ios-sdk` 4.1.3) so dashboard schemas line up. |
+| `android/app/src/main/AndroidManifest.xml` (edit) | If the SDK requires init metadata (app token, name) declare them under `<application>` — mirror the iOS Info.plist setup. Token: `fc2c61f82d7640bd8ec514a26e8a6926`, app name: `ondalife`. |
+| `android/app/src/main/.../OndaApplication.kt` or wherever the app's `Application` class lives (edit, or new) | Call `Airbridge.initializeSDK(application, app, token)` in `onCreate()`. **Order:** Firebase first, then Airbridge — same rule as iOS so `first_open` lands cleanly for Google Ads. |
+| `src/lib/airbridge.ts` (edit) | Widen the `_useNativeAirbridge` platform check from `'ios'` to also accept `'android'`. No other changes — the public helpers route through `_sendAirbridge()` which already calls the right path. |
+| `docs/architecture/airbridge.md` (edit) | Mention Android in §1 (the SDK section). |
+
+### Things to watch for
+
+- **Deep link handling.** Android already routes `ondalife://` and Universal Links through `MainActivity`. Same rule as iOS: don't let one SDK eat the URL — pass it to both Airbridge (`Airbridge.trackDeeplink(intent)`) and the existing Capacitor handler.
+- **Install Referrer.** Airbridge Android relies on Google Play Install Referrer for organic-vs-paid attribution. Add the dependency `implementation "com.android.installreferrer:installreferrer:2.x"` if the SDK doesn't pull it transitively. Verify the AndroidManifest includes the `<receiver>` for `INSTALL_REFERRER` (modern SDK does this automatically).
+- **ProGuard / R8.** If release builds shrink, add Airbridge keep rules to `android/app/proguard-rules.pro`. The SDK ships its own `consumer-rules.pro`, but verify with a Play Internal Testing build that events fire.
+- **Existing Firebase Analytics Android bridge.** The Kotlin code already exposes a `(window as any).Android` interface for Firebase events (`src/lib/analytics-bridge.ts`). Don't reuse that channel — `OndaAirbridge` should be its own Capacitor plugin so the JS selector in `src/lib/airbridge.ts` can probe `Capacitor.isPluginAvailable('OndaAirbridge')` symmetrically with iOS.
+
+### Verification
+
+1. Android Studio → Logcat shows `[OndaAirbridge] Plugin loaded` on app start.
+2. After Sign In, Logcat shows `[OndaAirbridge] trackEvent: auth action=Sign In label=email`.
+3. Airbridge dashboard → **App Real-time Log** filtered to OS = `Android` shows the event under the same `GAID` as the install.
+4. Deep-link smoke test: open `https://onda.life/?airbridge_referrer=...` from another app; both Airbridge attribution and Capacitor JS handler fire.
+
+### Non-goals for Sprint 5
+
+- No new event types — just port the existing iOS coverage to Android.
+- No Web SDK changes — the Web SDK in `index.html` keeps serving browser/PWA traffic.
+
+---
+
+## 7. Implementation checklist for a new event
 
 Copy-paste template when promoting an item from this doc to production:
 
