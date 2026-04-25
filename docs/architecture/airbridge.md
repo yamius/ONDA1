@@ -131,9 +131,23 @@ Both code paths that resolve an emotion emit exactly one `Finish Emotional Check
 
 | Event | Trigger | `label` | Extra |
 |---|---|---|---|
-| `View Paywall` | `useEffect` on `isOpen && !isPremium` — paywall opens to a user who actually needs to convert | — | — |
+| `View Paywall` | `useEffect` on `isOpen && !isPremium` — paywall opens to a user who actually needs to convert | — | `source` |
 | `Click Paywall Button` | start of `handlePurchase()`, **before** auth check and product availability check | `selectedPlan` ∈ `{'yearly', 'monthly'}` | — |
 | `Subscribe` | `if (success)` branch of `await purchase(pkg)` — revenue-qualified event | plan | see below |
+| `Dismiss Paywall` | Modal closes WITHOUT a successful Subscribe or Restore. Auto-close-when-already-premium does NOT count. | `selectedPlan` at close time | `source`, `time_on_screen_seconds` |
+
+### `source` values
+
+Propagated from each call site via the `<SubscriptionModal source="…" />` prop.
+
+| Value | Where the user came from |
+|---|---|
+| `practice_gate_basic` | Locked basic-practice intro CTA in `onda-level1-demo_27.tsx` |
+| `practice_gate_adaptive` | Locked adaptive-practice CTA in `AdaptivePracticeModal.tsx` |
+| `cta_button` | Floating top-of-screen subscribe button (`onda-level1-demo_27.tsx`) |
+| _(unset)_ | Legacy / future entry point — appears in dashboards as no-source |
+
+When adding a new entry point, pick a snake_case slug, set it via `setPaywallSource()` (or `source="…"` directly on the modal), and add a row above.
 
 ### `Subscribe` payload
 
@@ -206,9 +220,10 @@ Links pre-auth attribution events (deep-link clicks, Store visits) to the authen
 | `Stop Adaptive Practice` | `practice` | practice name | — | `AdaptivePracticeModal.tsx` |
 | `Start Emotional Check` | `emotional_check` | — | — | `EmotionalCheckModal.tsx` |
 | `Finish Emotional Check` | `emotional_check` | emotion name | — | `EmotionalCheckModal.tsx` |
-| `View Paywall` | `paywall` | — | — | `SubscriptionModal.tsx` |
+| `View Paywall` | `paywall` | — | `source` | `SubscriptionModal.tsx` |
 | `Click Paywall Button` | `paywall` | plan | — | `SubscriptionModal.tsx` |
 | `Subscribe` | `paywall` | plan | value, currency, product_id | `SubscriptionModal.tsx` |
+| `Dismiss Paywall` | `paywall` | plan | `source`, `time_on_screen_seconds` | `SubscriptionModal.tsx` |
 | `app_open` (deep-link) | `airbridge` | url | deeplink + query params | `airbridge.ts` |
 
 ---

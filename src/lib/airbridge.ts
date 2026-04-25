@@ -95,18 +95,53 @@ export function trackAirbridgeEmotionalCheck(
 
 /**
  * Paywall: fired once each time the subscription screen opens.
+ *
+ * @param source UX surface that opened the paywall, e.g.
+ *   `'practice_gate_basic'`, `'practice_gate_adaptive'`, `'cta_button'`,
+ *   `'settings'`, `'onboarding'`, `'deeplink'`. Lets the dashboard slice
+ *   conversion by entry point.
  */
-export function trackAirbridgePaywallView(): void {
+export function trackAirbridgePaywallView(source?: string): void {
   try {
     if (typeof window === 'undefined') return;
     if (typeof window.airbridge !== 'function') return;
-    window.airbridge('event', {
+    const payload: Record<string, unknown> = {
       category: 'paywall',
       action: 'View Paywall',
-    });
-    console.log('[Airbridge] Paywall event: View Paywall');
+    };
+    if (source) payload.source = source;
+    window.airbridge('event', payload);
+    console.log('[Airbridge] Paywall event: View Paywall', source ?? '');
   } catch (e) {
     console.warn('[Airbridge] Failed to track paywall view:', e);
+  }
+}
+
+/**
+ * Paywall: fired when the modal closes WITHOUT a successful Subscribe.
+ * Restored sessions and auto-close-on-already-premium do NOT count as dismiss.
+ */
+export function trackAirbridgePaywallDismiss(opts?: {
+  source?: string;
+  plan?: 'yearly' | 'monthly' | string;
+  timeOnScreenSeconds?: number;
+}): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    const payload: Record<string, unknown> = {
+      category: 'paywall',
+      action: 'Dismiss Paywall',
+    };
+    if (opts?.plan) payload.label = opts.plan;
+    if (opts?.source) payload.source = opts.source;
+    if (typeof opts?.timeOnScreenSeconds === 'number') {
+      payload.time_on_screen_seconds = opts.timeOnScreenSeconds;
+    }
+    window.airbridge('event', payload);
+    console.log('[Airbridge] Paywall event: Dismiss Paywall', payload);
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track paywall dismiss:', e);
   }
 }
 

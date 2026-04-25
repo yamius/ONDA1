@@ -234,6 +234,10 @@ const OndaLevel1 = () => {
   const [isLoadingUser, setIsLoadingUser] = useState(true);
   const [showInfoModal, setShowInfoModal] = useState(false);
   const [showSubscriptionModal, setShowSubscriptionModal] = useState(false);
+  // UX surface that opened the paywall — propagated to Airbridge as the
+  // `source` field on View Paywall / Dismiss Paywall. Set right next to
+  // each setShowSubscriptionModal(true) call.
+  const [paywallSource, setPaywallSource] = useState<string | null>(null);
   const [infoModalMessage, setInfoModalMessage] = useState('');
   const [showMenu, setShowMenu] = useState(false);
   const [activeView, setActiveView] = useState<'main' | 'addon'>('main');
@@ -3737,6 +3741,7 @@ const OndaLevel1 = () => {
                     practice_type: 'basic',
                   });
                   setPendingStartPracticeAfterSubscribe(true);
+                  setPaywallSource('practice_gate_basic');
                   setShowSubscriptionModal(true);
                 }}
                 className="bg-white/30 hover:bg-white/40 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl border border-white/30"
@@ -4010,6 +4015,7 @@ const OndaLevel1 = () => {
           isOpen={showSubscriptionModal}
           onClose={() => setShowSubscriptionModal(false)}
           activeCircuit={activeCircuit}
+          source={paywallSource ?? undefined}
           onSubscribed={async () => {
             await refreshSubscription();
           }}
@@ -4615,7 +4621,10 @@ const OndaLevel1 = () => {
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
        !showQntShop && !showEmotionalCheck && !showInfoModal && !showMenu && !showSubscriptionModal && (
         <button
-          onClick={() => setShowSubscriptionModal(true)}
+          onClick={() => {
+            setPaywallSource('cta_button');
+            setShowSubscriptionModal(true);
+          }}
           className={`fixed top-12 z-[100] text-white transition-all w-10 h-10 rounded-full shadow-2xl backdrop-blur-md flex items-center justify-center ${
             activeCircuit === 2
               ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
@@ -6917,6 +6926,7 @@ const OndaLevel1 = () => {
         isOpen={showSubscriptionModal}
         onClose={() => setShowSubscriptionModal(false)}
         activeCircuit={activeCircuit}
+        source={paywallSource ?? undefined}
         onSubscribed={async () => {
           await refreshSubscription();
         }}

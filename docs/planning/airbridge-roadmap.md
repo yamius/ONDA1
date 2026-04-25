@@ -24,12 +24,12 @@ Principles we apply when deciding whether to add an event:
 
 ### Paywall funnel
 
-| Event | Trigger | Label | Extras |
-|---|---|---|---|
-| `Dismiss Paywall` | `SubscriptionModal` closes without `Subscribe` having fired in the same lifecycle | `selectedPlan` (last-selected plan at time of dismiss) | `source`, `time_on_screen_seconds` |
-| `Paywall Trigger` | Just before `View Paywall` — captures *where* the paywall was invoked from | `source` ∈ `{'onboarding', 'practice_gate', 'settings', 'artifact_unlock', 'deeplink'}` | — |
-
-Rationale: `View Paywall` alone can't tell us which UX surface drives conversions. Adding `source` to `View Paywall` itself (as an extra) is an acceptable alternative to a separate `Paywall Trigger` event — decide based on whether the dashboard team wants it as a filter (extra) or as a standalone funnel step (event).
+> **Status: shipped in Sprint 2.** `Dismiss Paywall` is live, and `source`
+> is attached as an extra on both `View Paywall` and `Dismiss Paywall`
+> (we went with the "filter on existing event" route — no separate
+> `Paywall Trigger` event). See
+> [`docs/architecture/airbridge.md`](../architecture/airbridge.md) §6 for
+> the source-value table.
 
 ### Permissions
 
@@ -91,7 +91,7 @@ To keep the event stream clean, we deliberately do **not** send these to Airbrid
 ## 5. Suggested rollout order
 
 1. ~~**Sprint 1 — close the funnel.** `Sign Up`, `Sign In`, `App Open`, `Complete Onboarding`, `First Practice Complete`.~~ ✅ Shipped.
-2. **Sprint 2 — paywall detail.** `Paywall Trigger` / `source` extra on `View Paywall`, `Dismiss Paywall`. Lets growth identify which surfaces convert.
+2. ~~**Sprint 2 — paywall detail.** `source` extra on `View Paywall`, `Dismiss Paywall`.~~ ✅ Shipped.
 3. **Sprint 3 — permissions & progression.** HealthKit / Bluetooth / Notifications / Watch, then `Level Unlocked` / `Circuit Complete` / `Artifact Earned`. Feeds retention cohorts.
 
 After each sprint: update [`docs/architecture/airbridge.md`](../architecture/airbridge.md) §9 and remove the shipped items from this roadmap.

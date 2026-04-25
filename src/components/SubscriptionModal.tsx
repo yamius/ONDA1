@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { X, Infinity, Headphones, Heart, RotateCcw } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
@@ -10,6 +10,7 @@ import { AuthModal } from './AuthModal';
 import {
   trackAirbridgePaywallView,
   trackAirbridgePaywallClick,
+  trackAirbridgePaywallDismiss,
   trackAirbridgeSubscribe,
 } from '../lib/airbridge';
 
@@ -18,6 +19,13 @@ interface SubscriptionModalProps {
   onClose: () => void;
   activeCircuit?: number;
   onSubscribed?: () => void;
+  /**
+   * UX surface that triggered the paywall — propagated to Airbridge
+   * `View Paywall` and `Dismiss Paywall` as the `source` field. Common
+   * values: `practice_gate_basic`, `practice_gate_adaptive`, `cta_button`,
+   * `settings`, `onboarding`, `deeplink`.
+   */
+  source?: string;
 }
 
 const THEMES = {
@@ -47,7 +55,7 @@ const THEMES = {
   },
 } as const;
 
-export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscribed }: SubscriptionModalProps) {
+export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscribed, source }: SubscriptionModalProps) {
   const { t } = useTranslation();
   const { track } = useAnalytics();
   const [selectedPlan, setSelectedPlan] = useState<'yearly' | 'monthly'>('yearly');
@@ -83,13 +91,40 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     }
   }, [isPremium, isOpen, onClose]);
 
-  // Airbridge: fire "View Paywall" once each time the paywall opens to a
-  // non-premium user (skip auto-close case above where premium users are
-  // dismissed immediately).
+  // Airbridge paywall lifecycle.
+  // - View Paywall: once each time the modal opens to a non-premium user.
+  // - Dismiss Paywall: when the modal closes WITHOUT a successful Subscribe
+  //   (and not via the auto-close-when-already-premium branch above).
+  // Refs stay outside the effect so the success path of handlePurchase can
+  // flip subscribeFiredRef before onClose triggers the dismiss-effect cleanup.
+  const paywallOpenedAtRef = useRef<number | null>(null);
+  const subscribeFiredRef = useRef<boolean>(false);
+  const wasPremiumOnCloseRef = useRef<boolean>(false);
+  const selectedPlanRef = useRef<'yearly' | 'monthly'>(selectedPlan);
+  // Mirror current values into refs so the cleanup function below sees the
+  // LATEST values (effect closures snapshot at attach time by default).
+  wasPremiumOnCloseRef.current = isPremium;
+  selectedPlanRef.current = selectedPlan;
   useEffect(() => {
     if (!isOpen || isPremium) return;
-    trackAirbridgePaywallView();
-  }, [isOpen, isPremium]);
+    paywallOpenedAtRef.current = Date.now();
+    subscribeFiredRef.current = false;
+    trackAirbridgePaywallView(source);
+    return () => {
+      // Effect cleanup runs when isOpen flips to false or isPremium becomes
+      // true. Treat "became premium during this session" as Subscribe (already
+      // emitted in handlePurchase) — not a dismiss.
+      if (subscribeFiredRef.current) return;
+      if (wasPremiumOnCloseRef.current) return;
+      const openedAt = paywallOpenedAtRef.current;
+      const seconds = openedAt ? Math.round((Date.now() - openedAt) / 1000) : undefined;
+      trackAirbridgePaywallDismiss({
+        source,
+        plan: selectedPlanRef.current,
+        timeOnScreenSeconds: seconds,
+      });
+    };
+  }, [isOpen, isPremium, source]);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -143,6 +178,8 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
           productId: pkg.product.identifier,
           plan: selectedPlan,
         });
+        // Mark before onClose() so the dismiss-effect cleanup skips firing.
+        subscribeFiredRef.current = true;
         onSubscribed?.();
         onClose();
       } else {
@@ -162,6 +199,9 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     try {
       const success = await restore();
       if (success) {
+        // Treat successful restore the same as a successful subscribe for
+        // dismiss-tracking purposes — the user did NOT bail on the paywall.
+        subscribeFiredRef.current = true;
         onSubscribed?.();
         onClose();
       } else {
