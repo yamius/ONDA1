@@ -13,17 +13,10 @@ Principles we apply when deciding whether to add an event:
 
 ## 1. High priority — activation & core funnel
 
-These close the acquisition funnel between deep-link click (already tracked) and first revenue (already tracked).
-
-| Event | Trigger | Label | Extras | Why |
-|---|---|---|---|---|
-| `Sign Up` | Successful account creation (email or OAuth), after Supabase returns the new user row | `method` ∈ `{'email', 'apple', 'google'}` | — | Airbridge's canonical conversion anchor. Lets every upstream channel compute CPA. |
-| `Sign In` | Successful login of an **existing** user | `method` | — | Distinguishes returning users from new ones in dashboards. Emit exactly once per session. |
-| `App Open` | App foregrounds (`App.addListener('appStateChange', …)`) | — | `cold_start: boolean` | Retention cohorts. Don't fire on in-app modal transitions. |
-| `Complete Onboarding` | User finishes the final onboarding step and lands on the main screen for the first time | — | `duration_seconds` | Primary activation milestone — "did the user get into the app?" |
-| `First Practice Complete` | `Finish Practice` or `Finish Adaptive Practice` fires **and** `practices_completed_total` just transitioned 0 → 1 | practice name | — | The magic-moment metric. Emit once per user, ever. |
-
-Implementation note: `First Practice Complete` needs a persistent flag (Supabase column or secure storage) to ensure once-per-user semantics across sessions.
+> **Status: shipped in Sprint 1.** `Sign Up`, `Sign In`, `App Open`,
+> `Complete Onboarding`, `First Practice Complete` are all wired up.
+> See [`docs/architecture/airbridge.md`](../architecture/airbridge.md) §2
+> for triggers, payloads, and gotchas.
 
 ---
 
@@ -97,11 +90,11 @@ To keep the event stream clean, we deliberately do **not** send these to Airbrid
 
 ## 5. Suggested rollout order
 
-1. **Sprint 1 — close the funnel.** `Sign Up`, `Sign In`, `App Open`, `Complete Onboarding`, `First Practice Complete`. Unlocks CPA + activation reporting end-to-end.
+1. ~~**Sprint 1 — close the funnel.** `Sign Up`, `Sign In`, `App Open`, `Complete Onboarding`, `First Practice Complete`.~~ ✅ Shipped.
 2. **Sprint 2 — paywall detail.** `Paywall Trigger` / `source` extra on `View Paywall`, `Dismiss Paywall`. Lets growth identify which surfaces convert.
 3. **Sprint 3 — permissions & progression.** HealthKit / Bluetooth / Notifications / Watch, then `Level Unlocked` / `Circuit Complete` / `Artifact Earned`. Feeds retention cohorts.
 
-After each sprint: update [`docs/architecture/airbridge.md`](../architecture/airbridge.md) §8 and remove the shipped items from this roadmap.
+After each sprint: update [`docs/architecture/airbridge.md`](../architecture/airbridge.md) §9 and remove the shipped items from this roadmap.
 
 ---
 

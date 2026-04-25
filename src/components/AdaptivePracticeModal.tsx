@@ -10,7 +10,7 @@ import { useAnalytics } from '../hooks/useAnalytics';
 import { heartRateStore } from '../hooks/heartRateStore';
 import { supabase } from '../lib/supabase';
 import { calculatePracticeOnd } from '../utils/ondCalculator';
-import { trackAirbridgePractice } from '../lib/airbridge';
+import { trackAirbridgePractice, trackAirbridgeFirstPracticeComplete } from '../lib/airbridge';
 
 interface AdaptivePracticeModalProps {
   isOpen: boolean;
@@ -942,6 +942,9 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
               : undefined,
           }
         );
+        if (isValidForCompletion) {
+          trackAirbridgeFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
+        }
         return;
       }
       console.log('[AdaptivePractice] User found:', user.id);
@@ -1017,6 +1020,9 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
           : undefined,
       }
     );
+    if (isValidForCompletion) {
+      trackAirbridgeFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
+    }
   };
 
   const handleClose = async (eventOrReason?: React.MouseEvent | string) => {

@@ -29,7 +29,14 @@ import { rhythmStore } from './sleep/rhythm';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
-import { trackAirbridgePractice } from './lib/airbridge';
+import {
+  trackAirbridgePractice,
+  trackAirbridgeSignUp,
+  trackAirbridgeSignIn,
+  trackAirbridgeOnboardingComplete,
+  trackAirbridgeFirstPracticeComplete,
+  initAirbridgeAppOpenTracking,
+} from './lib/airbridge';
 import { useSubscription } from './hooks/useSubscription';
 import * as Sentry from '@sentry/capacitor';
 import WelcomeScene from './components/WelcomeScene';
@@ -58,10 +65,16 @@ const OndaLevel1 = () => {
   // Track app open on mount
   useEffect(() => {
     track('app_open', { platform });
+    // Airbridge App Open (cold start + resume). Safe no-op on web / before SDK attaches.
+    initAirbridgeAppOpenTracking();
   }, []);
 
   const prevActivePracticeIdRef = useRef<string | null>(null);
   const exitPracticeCalledRecentlyRef = useRef<number>(0);
+  // Tracks which user id we've already emitted Sign Up / Sign In for this
+  // session so SIGNED_IN repeats (rare edge: re-login without logout) don't
+  // double-fire. Reset on SIGNED_OUT.
+  const lastAuthFiredForUserRef = useRef<string | null>(null);
 
   useEffect(() => {
     if (!pendingStartPracticeAfterSubscribe) return;
@@ -231,6 +244,12 @@ const OndaLevel1 = () => {
     return true;
   });
   const [onboardingScreen, setOnboardingScreen] = useState(1);
+  // Timestamp of the first render while onboarding is visible — used to
+  // attach `duration_seconds` to the Airbridge `Complete Onboarding` event.
+  const onboardingStartRef = useRef<number | null>(null);
+  if (showOnboarding && onboardingStartRef.current === null) {
+    onboardingStartRef.current = Date.now();
+  }
 
   const [bioMetrics, setBioMetrics] = useState({
     heartRate: 72,
@@ -621,9 +640,41 @@ const OndaLevel1 = () => {
 
     const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
       if (session?.user) {
+        // Airbridge Sign Up / Sign In — fire only on actual sign-in transitions,
+        // not on INITIAL_SESSION / TOKEN_REFRESHED / USER_UPDATED (those fire
+        // every cold start and every hour-ish and would double-count).
+        if (_event === 'SIGNED_IN') {
+          try {
+            const u = session.user;
+            const rawMethod = (u.app_metadata?.provider as string | undefined) ?? 'email';
+            const method: 'email' | 'apple' | 'google' =
+              rawMethod === 'apple' ? 'apple' : rawMethod === 'google' ? 'google' : 'email';
+            // New user heuristic: on first sign-in Supabase sets last_sign_in_at
+            // ≈ created_at. On subsequent sign-ins last_sign_in_at > created_at
+            // by the elapsed gap. 5s tolerance covers confirmation round-trip.
+            const createdAt = Date.parse(u.created_at ?? '');
+            const lastSignIn = Date.parse(u.last_sign_in_at ?? u.created_at ?? '');
+            const isNewUser =
+              Number.isFinite(createdAt) &&
+              Number.isFinite(lastSignIn) &&
+              Math.abs(lastSignIn - createdAt) < 5000;
+            // Guard against double-fire from rapid re-entries with the same user id.
+            if (lastAuthFiredForUserRef.current !== u.id) {
+              lastAuthFiredForUserRef.current = u.id;
+              if (isNewUser) {
+                trackAirbridgeSignUp(method);
+              } else {
+                trackAirbridgeSignIn(method);
+              }
+            }
+          } catch (e) {
+            console.warn('[Airbridge] auth-event tracking failed:', e);
+          }
+        }
         setUser(session.user);
         loadUserData();
       } else {
+        lastAuthFiredForUserRef.current = null;
         setUser(null);
         setUserProfile(null);
         setGameProgress(null);
@@ -2084,6 +2135,13 @@ const OndaLevel1 = () => {
       isValidForArtifact ? 'Finish' : 'Stop',
       getPracticeName(activePractice.id)
     );
+    // Magic-moment activation event — helper is idempotent across sessions
+    // via localStorage flag, so it's safe to call on every valid Finish.
+    if (isValidForArtifact) {
+      trackAirbridgeFirstPracticeComplete(getPracticeName(activePractice.id), {
+        surface: 'basic',
+      });
+    }
     trackPractice('complete', activePractice.id, {
       practice_name: activePractice.name,
       duration_seconds: practiceTime,
@@ -3966,6 +4024,10 @@ const OndaLevel1 = () => {
         setOnboardingScreen(onboardingScreen + 1);
       } else {
         localStorage.setItem('onda_onboarding_completed', 'true');
+        const durationSeconds = onboardingStartRef.current
+          ? Math.round((Date.now() - onboardingStartRef.current) / 1000)
+          : undefined;
+        trackAirbridgeOnboardingComplete(durationSeconds);
         setShowOnboarding(false);
         setShowAuthModal(true);
       }

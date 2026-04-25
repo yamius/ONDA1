@@ -158,6 +158,145 @@ export function trackAirbridgeSubscribe(params: {
   }
 }
 
+/**
+ * Initialize App Open tracking.
+ *
+ * Fires `App Open` (category: `lifecycle`) once with `cold_start: true` on the
+ * first call of the session, then subscribes to Capacitor's `appStateChange`
+ * event and fires `App Open` with `cold_start: false` each time the app
+ * returns to the foreground.
+ *
+ * Safe to call multiple times — subsequent calls are no-ops.
+ */
+let _airbridgeAppOpenInitialized = false;
+export async function initAirbridgeAppOpenTracking(): Promise<void> {
+  if (_airbridgeAppOpenInitialized) return;
+  _airbridgeAppOpenInitialized = true;
+  try {
+    trackAirbridgeAppOpen({ cold_start: true });
+    // Lazy-import Capacitor App plugin so web builds don't choke when the
+    // plugin isn't registered.
+    const { App } = await import('@capacitor/app');
+    App.addListener('appStateChange', ({ isActive }) => {
+      if (isActive) trackAirbridgeAppOpen({ cold_start: false });
+    });
+    console.log('[Airbridge] App Open tracking initialized');
+  } catch (e) {
+    console.warn('[Airbridge] Failed to init app-open tracking:', e);
+  }
+}
+
+/**
+ * Sign Up: fired ONCE per new account, regardless of method.
+ * Method is normalized to 'email' | 'apple' | 'google' for consistent dashboard slicing.
+ */
+export function trackAirbridgeSignUp(
+  method: 'email' | 'apple' | 'google' | string,
+): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    window.airbridge('event', {
+      category: 'auth',
+      action: 'Sign Up',
+      label: method,
+    });
+    console.log('[Airbridge] Auth event: Sign Up', method);
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track sign up:', e);
+  }
+}
+
+/**
+ * Sign In: fired for returning users (existing account) on successful session start.
+ */
+export function trackAirbridgeSignIn(
+  method: 'email' | 'apple' | 'google' | string,
+): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    window.airbridge('event', {
+      category: 'auth',
+      action: 'Sign In',
+      label: method,
+    });
+    console.log('[Airbridge] Auth event: Sign In', method);
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track sign in:', e);
+  }
+}
+
+/**
+ * App Open: cold start (app launch) or warm resume from background.
+ * Call once on module init for cold start; subsequent resumes set cold_start=false.
+ */
+export function trackAirbridgeAppOpen(opts?: { cold_start?: boolean }): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    window.airbridge('event', {
+      category: 'lifecycle',
+      action: 'App Open',
+      cold_start: !!opts?.cold_start,
+    });
+    console.log('[Airbridge] Lifecycle event: App Open', { cold_start: !!opts?.cold_start });
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track app open:', e);
+  }
+}
+
+/**
+ * Complete Onboarding: user finished the last onboarding step.
+ * @param durationSeconds optional time spent in onboarding
+ */
+export function trackAirbridgeOnboardingComplete(durationSeconds?: number): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    const payload: Record<string, unknown> = {
+      category: 'onboarding',
+      action: 'Complete Onboarding',
+    };
+    if (typeof durationSeconds === 'number') payload.duration_seconds = durationSeconds;
+    window.airbridge('event', payload);
+    console.log('[Airbridge] Onboarding event: Complete Onboarding', payload);
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track onboarding complete:', e);
+  }
+}
+
+/**
+ * First Practice Complete: magic-moment activation event.
+ * Fires ONLY the first time a user validly completes any practice — ever.
+ * Idempotency is guarded by a localStorage flag set in this helper, so callers
+ * can safely invoke it from every Finish site without double-counting.
+ *
+ * @param practiceName Localized practice name (same label used on Finish Practice)
+ * @param opts.surface 'basic' | 'adaptive'
+ */
+const FIRST_PRACTICE_FLAG = 'onda_airbridge_first_practice_tracked';
+export function trackAirbridgeFirstPracticeComplete(
+  practiceName: string | undefined | null,
+  opts?: { surface?: 'basic' | 'adaptive' },
+): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    if (localStorage.getItem(FIRST_PRACTICE_FLAG) === '1') return;
+    localStorage.setItem(FIRST_PRACTICE_FLAG, '1');
+    window.airbridge('event', {
+      category: 'activation',
+      action: 'First Practice Complete',
+      label: (practiceName ?? '').toString(),
+      surface: opts?.surface ?? 'basic',
+    });
+    console.log('[Airbridge] Activation event: First Practice Complete', practiceName, opts?.surface);
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track first practice complete:', e);
+  }
+}
+
 export function identifyAirbridgeUser(params: {
   id?: string;
   email?: string;

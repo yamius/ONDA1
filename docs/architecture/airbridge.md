@@ -22,7 +22,28 @@ All strings are in the user's current locale — we translate via `t(key)` at em
 
 ---
 
-## 2. Practice Lifecycle — Basic Practices (Parts 1–4)
+## 2. Lifecycle & Activation
+
+Sprint 1 funnel events. All helpers live in `src/lib/airbridge.ts`.
+
+| Event | Category | Trigger | Label | Extras | Source |
+|---|---|---|---|---|---|
+| `App Open` | `lifecycle` | **Cold start:** first render of the root view (`initAirbridgeAppOpenTracking()`). **Resume:** Capacitor `App.appStateChange` with `isActive: true`. | — | `cold_start: boolean` | `onda-level1-demo_27.tsx` |
+| `Sign Up` | `auth` | Supabase `onAuthStateChange` event `SIGNED_IN`, **and** `\|last_sign_in_at − created_at\| < 5s` (new-user heuristic) | `'email'` \| `'apple'` \| `'google'` | — | `onda-level1-demo_27.tsx` |
+| `Sign In` | `auth` | Same listener, same event — returning-user branch of the heuristic | `'email'` \| `'apple'` \| `'google'` | — | `onda-level1-demo_27.tsx` |
+| `Complete Onboarding` | `onboarding` | `handleOnboardingNext()` when `onboardingScreen === 3` — fires right before `setShowOnboarding(false)` | — | `duration_seconds` | `onda-level1-demo_27.tsx` |
+| `First Practice Complete` | `activation` | Fires next to **every** valid `Finish Practice` / `Finish Adaptive Practice` (basic + adaptive). Helper is idempotent via `localStorage.onda_airbridge_first_practice_tracked` so only the first one actually emits. | localized practice name | `surface: 'basic' \| 'adaptive'` | `onda-level1-demo_27.tsx`, `AdaptivePracticeModal.tsx` |
+
+### Gotchas
+
+- **INITIAL_SESSION / TOKEN_REFRESHED** fire on every cold start and hourly token refresh. The auth listener filters on `_event === 'SIGNED_IN'` to avoid double-counting.
+- **OAuth method** is read from `session.user.app_metadata.provider` (normalized to `email` / `apple` / `google`). Unknown providers collapse to `email`.
+- **First Practice flag is per-device** (localStorage). If a user reinstalls, we'll re-emit — acceptable because Airbridge dedupes by install anyway.
+- **Onboarding duration** uses a ref captured on first render while `showOnboarding === true`, so it's accurate for single-session completion but reads as `undefined` if the user kills the app mid-onboarding and resumes later (we don't persist the start time).
+
+---
+
+## 3. Practice Lifecycle — Basic Practices (Parts 1–4)
 
 **Source:** `src/onda-level1-demo_27.tsx` (`completePractice`, `startPractice`, `finishPractice`, `exitPractice`).
 
@@ -50,7 +71,7 @@ const isValidForArtifact = timePercent >= 0.8 && qualityScore >= minQualityRequi
 
 ---
 
-## 3. Practice Lifecycle — Adaptive Practices
+## 4. Practice Lifecycle — Adaptive Practices
 
 **Source:** `src/components/AdaptivePracticeModal.tsx`.
 
@@ -91,7 +112,7 @@ Session result, added for cohort/outcome analysis in the dashboard:
 
 ---
 
-## 4. Emotional Check-In
+## 5. Emotional Check-In
 
 **Source:** `src/components/EmotionalCheckModal.tsx`.
 
@@ -104,7 +125,7 @@ Both code paths that resolve an emotion emit exactly one `Finish Emotional Check
 
 ---
 
-## 5. Paywall — Subscription
+## 6. Paywall — Subscription
 
 **Source:** `src/components/SubscriptionModal.tsx`.
 
@@ -134,7 +155,7 @@ Uses Airbridge's standard semantic fields `value` + `currency` so the **Revenue*
 
 ---
 
-## 6. Deep Links (informational)
+## 7. Deep Links (informational)
 
 Handled by `initAirbridgeDeepLinkHandler()` — when an Airbridge deep-link event fires on the native layer, the handler forwards it to the SDK as:
 
@@ -152,7 +173,7 @@ Not triggered from product code — pure attribution plumbing.
 
 ---
 
-## 7. User identification
+## 8. User identification
 
 **Source:** `identifyAirbridgeUser()` in `src/lib/airbridge.ts`, called from the auth flow.
 
@@ -166,10 +187,15 @@ Links pre-auth attribution events (deep-link clicks, Store visits) to the authen
 
 ---
 
-## 8. Full event reference (one-page table)
+## 9. Full event reference (one-page table)
 
 | `event_name` | Category | Label | Extras | Source file |
 |---|---|---|---|---|
+| `App Open` | `lifecycle` | — | `cold_start` | `onda-level1-demo_27.tsx` |
+| `Sign Up` | `auth` | method | — | `onda-level1-demo_27.tsx` |
+| `Sign In` | `auth` | method | — | `onda-level1-demo_27.tsx` |
+| `Complete Onboarding` | `onboarding` | — | `duration_seconds` | `onda-level1-demo_27.tsx` |
+| `First Practice Complete` | `activation` | practice name | `surface` | `onda-level1-demo_27.tsx`, `AdaptivePracticeModal.tsx` |
 | `View Practice` | `practice` | practice name | — | `onda-level1-demo_27.tsx` |
 | `Start Practice` | `practice` | practice name | — | `onda-level1-demo_27.tsx` |
 | `Finish Practice` | `practice` | practice name | — | `onda-level1-demo_27.tsx` |
@@ -187,11 +213,11 @@ Links pre-auth attribution events (deep-link clicks, Store visits) to the authen
 
 ---
 
-## 9. How to add a new event
+## 10. How to add a new event
 
 1. **Add a helper** in `src/lib/airbridge.ts` following the existing pattern (guard `typeof window.airbridge !== 'function'`, wrap in `try/catch`, log to console on emit).
 2. **Call it** from the component at the exact UX moment — not inside analytics queues or debounced handlers (that's what the Supabase analytics is for).
-3. **Update this document**, both the relevant section and the one-page reference table in §8.
+3. **Update this document**, both the relevant section and the one-page reference table in §9.
 4. **Verify on device.** In the browser console you should see `[Airbridge] … event: <name> <label>` on every emit. On iOS, check Xcode console for the native bridge call.
 
 For the planned additions (sign-up / activation / paywall dismiss / HealthKit permission / …), see [`docs/planning/airbridge-roadmap.md`](../planning/airbridge-roadmap.md).
