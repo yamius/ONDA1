@@ -38,6 +38,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Airbridge.initializeSDK(option: airbridgeOption)
         print("[ONDA] Airbridge iOS SDK v4 initialized ✅ (bare init)")
 
+        // SYNCHRONOUS sanity probe — fires immediately on the main thread,
+        // no async dispatch, no ATT callback wait. Most direct possible
+        // trackEvent call. If this doesn't reach App Real-time Log, the
+        // SDK simply isn't delivering custom events on iOS 26.4.1 with
+        // SDK version 4.1.3 — likely a compatibility regression — and
+        // the only fix is bumping the pod version.
+        Airbridge.trackEvent(
+            category: "Sync.SanityProbe",
+            semanticAttributes: [:],
+            customAttributes: [
+                "source": "didFinishLaunching_sync",
+                "v": "1.0.6",
+                "ios": "iOS26",
+            ]
+        )
+        print("[ONDA] Airbridge SYNC sanity probe sent")
+
         // Запрашиваем ATT (App Tracking Transparency) — нужно для IDFA на iOS 14+
         attObserver = NotificationCenter.default.addObserver(
             forName: UIApplication.didBecomeActiveNotification,
@@ -60,7 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         customAttributes: [
                             "source": "att_callback",
                             "att_status": "\(status.rawValue)",
-                            "v": "1.0.5",
+                            "v": "1.0.6",
                         ]
                     )
                     print("[ONDA] Airbridge sanity probe sent post-ATT")
