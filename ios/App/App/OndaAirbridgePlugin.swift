@@ -26,9 +26,11 @@ public class OndaAirbridgePlugin: CAPPlugin {
         // delivers from this build. If you see `OndaAirbridge.PluginLoaded`
         // in App Real-time Log, the bridge works end-to-end and any missing
         // events afterwards are JS-side issues, not native.
+        // NOTE: SDK v4 trackEvent expects non-optional dicts — pass empty
+        // [:] for the semantic side instead of nil.
         Airbridge.trackEvent(
             category: "OndaAirbridge.PluginLoaded",
-            semanticAttributes: nil,
+            semanticAttributes: [:],
             customAttributes: ["source": "self_test"]
         )
     }
@@ -56,8 +58,10 @@ public class OndaAirbridgePlugin: CAPPlugin {
         let action = call.getString("action")
         let label = call.getString("label")
         let value = call.getDouble("value")
-        let semanticAttributes = call.getObject("semanticAttributes")
-        var customAttributes = call.getObject("customAttributes") ?? [:]
+        // SDK v4 trackEvent requires non-optional [String: Any] for both
+        // attribute dicts. Coerce JSObject? down via empty defaults.
+        let semanticAttributes: [String: Any] = call.getObject("semanticAttributes") ?? [:]
+        var customAttributes: [String: Any] = call.getObject("customAttributes") ?? [:]
 
         if let action = action { customAttributes["action"] = action }
         if let label = label { customAttributes["label"] = label }
