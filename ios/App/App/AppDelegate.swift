@@ -29,24 +29,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let airbridgeOption = AirbridgeOptionBuilder(
             name: "ondalife",
             token: "fc2c61f82d7640bd8ec514a26e8a6926"
-        ).build()
+        )
+        .setLogLevel(.debug)
+        .setAutoStartTrackingEnabled(true)
+        .build()
         Airbridge.initializeSDK(option: airbridgeOption)
-        print("[ONDA] Airbridge iOS SDK v4 initialized ✅")
-
-        // Sanity probe: fire one event from the main app target right after
-        // SDK init. If this doesn't appear in App Real-time Log, the SDK
-        // itself isn't delivering custom events — and our plugin can't fix
-        // that. If it DOES appear but events from OndaAirbridgePlugin don't,
-        // the bug is somewhere between Capacitor's plugin context and the
-        // SDK's tracking pipeline.
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-            Airbridge.trackEvent(
-                category: "AppDelegate.SanityProbe",
-                semanticAttributes: [:],
-                customAttributes: ["source": "did_finish_launching", "v": "0b38265"]
-            )
-            print("[ONDA] Airbridge sanity probe sent")
-        }
+        print("[ONDA] Airbridge iOS SDK v4 initialized ✅ (logLevel=debug, autoStart=true)")
 
         // Запрашиваем ATT (App Tracking Transparency) — нужно для IDFA на iOS 14+
         attObserver = NotificationCenter.default.addObserver(
@@ -57,6 +45,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if #available(iOS 14, *) {
                 ATTrackingManager.requestTrackingAuthorization { status in
                     print("[ONDA] ATT status: \(status.rawValue)")
+                    // Sanity probe: fire one event from the main app target
+                    // ONLY after the user has resolved the ATT prompt. Events
+                    // queued before ATT decision can be silently buffered or
+                    // dropped by the SDK depending on consent state. If this
+                    // probe doesn't show up in App Real-time Log even after
+                    // ATT=Authorized, the SDK isn't delivering custom events
+                    // for this account at all — bug isn't in our code.
+                    Airbridge.trackEvent(
+                        category: "AppDelegate.SanityProbe",
+                        semanticAttributes: [:],
+                        customAttributes: [
+                            "source": "att_callback",
+                            "att_status": "\(status.rawValue)",
+                            "v": "1.0.4",
+                        ]
+                    )
+                    print("[ONDA] Airbridge sanity probe sent post-ATT")
                 }
             }
             if let observer = self?.attObserver {
