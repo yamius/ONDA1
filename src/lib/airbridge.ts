@@ -7,6 +7,94 @@ declare global {
   }
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Parallel Firebase Analytics mirror.
+//
+// Every Airbridge event we fire is also mirrored into Firebase Analytics so
+// Google Ads campaigns can keep optimising on the same conversion signals.
+// Naming convention: Airbridge action ("Sign Up", "Finish Practice") →
+// snake_case Firebase event name ("sign_up", "finish_practice"). The two SDKs
+// run side-by-side; neither is the source of truth for the other.
+//
+// iOS:    @capacitor-community/firebase-analytics (lazy-loaded on first event).
+// Android: existing native bridge in src/lib/analytics-bridge.ts.
+// Web:    no-op (Firebase JS SDK is not initialized in this app).
+// ─────────────────────────────────────────────────────────────────────────────
+
+let _firebaseAnalytics: {
+  logEvent: (opts: { name: string; params?: Record<string, any> }) => Promise<void>;
+} | null = null;
+let _firebaseInitPromise: Promise<void> | null = null;
+
+async function _ensureFirebase(): Promise<void> {
+  if (_firebaseInitPromise) return _firebaseInitPromise;
+  _firebaseInitPromise = (async () => {
+    try {
+      const { Capacitor } = await import('@capacitor/core');
+      if (Capacitor.getPlatform() !== 'ios') return;
+      // Indirect import keeps Vite from trying to resolve the dep at build
+      // time on web — same trick used in src/services/analytics.ts.
+      const pkgName = '@capacitor-community' + '/firebase-analytics';
+      const mod = await (new Function('p', 'return import(p)'))(pkgName);
+      _firebaseAnalytics = mod.FirebaseAnalytics;
+      console.log('[Firebase] Analytics ready (iOS)');
+    } catch (e) {
+      console.warn('[Firebase] init failed (analytics will no-op):', e);
+    }
+  })();
+  return _firebaseInitPromise;
+}
+
+function _toSnake(s: string): string {
+  return s
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '')
+    .slice(0, 40); // Firebase event-name limit
+}
+
+// Sanitize params for Firebase: strip nullish, coerce booleans to strings,
+// truncate string values to 100 chars (Firebase limit).
+function _sanitizeFirebaseParams(p?: Record<string, unknown>): Record<string, any> {
+  if (!p) return {};
+  const out: Record<string, any> = {};
+  for (const [k, v] of Object.entries(p)) {
+    if (v === null || v === undefined) continue;
+    const key = _toSnake(k);
+    if (typeof v === 'string') out[key] = v.slice(0, 100);
+    else if (typeof v === 'number' || typeof v === 'boolean') out[key] = v;
+    else out[key] = String(v).slice(0, 100);
+  }
+  return out;
+}
+
+function _logFirebase(eventName: string, params?: Record<string, unknown>): void {
+  // Fire-and-forget; never block the Airbridge call site.
+  (async () => {
+    try {
+      const name = _toSnake(eventName);
+      const safeParams = _sanitizeFirebaseParams(params);
+      const { Capacitor } = await import('@capacitor/core');
+      const platform = Capacitor.getPlatform();
+      if (platform === 'android') {
+        const { trackEventAndroid, isAndroidBridgeAvailable } = await import('./analytics-bridge');
+        if (isAndroidBridgeAvailable()) {
+          trackEventAndroid(name, safeParams);
+        }
+      } else if (platform === 'ios') {
+        await _ensureFirebase();
+        if (_firebaseAnalytics) {
+          await _firebaseAnalytics.logEvent({ name, params: safeParams });
+        }
+      }
+      console.log('[Firebase] Event mirrored:', name, safeParams);
+    } catch (e) {
+      console.warn('[Firebase] mirror failed:', eventName, e);
+    }
+  })();
+}
+
 export function trackAirbridgeEvent(
   category: string,
   action: string,
@@ -17,6 +105,7 @@ export function trackAirbridgeEvent(
       window.airbridge('event', { category, action, ...data });
       console.log('[Airbridge] Event tracked:', category, action);
     }
+    _logFirebase(action, { category, ...(data ?? {}) });
   } catch (e) {
     console.warn('[Airbridge] Failed to track event:', category, action, e);
   }
@@ -58,6 +147,7 @@ export function trackAirbridgePractice(
       ...(opts?.extra ?? {}),
     });
     console.log('[Airbridge] Practice event:', eventAction, label, opts?.extra ?? '');
+    _logFirebase(eventAction, { category: 'practice', label, ...(opts?.extra ?? {}) });
   } catch (e) {
     console.warn('[Airbridge] Failed to track practice event:', action, e);
   }
@@ -88,6 +178,7 @@ export function trackAirbridgeEmotionalCheck(
       label,
     });
     console.log('[Airbridge] EmotionalCheck event:', eventAction, label);
+    _logFirebase(eventAction, { category: 'emotional_check', label });
   } catch (e) {
     console.warn('[Airbridge] Failed to track emotional check event:', action, e);
   }
@@ -112,6 +203,7 @@ export function trackAirbridgePaywallView(source?: string): void {
     if (source) payload.source = source;
     window.airbridge('event', payload);
     console.log('[Airbridge] Paywall event: View Paywall', source ?? '');
+    _logFirebase('View Paywall', { category: 'paywall', source });
   } catch (e) {
     console.warn('[Airbridge] Failed to track paywall view:', e);
   }
@@ -140,6 +232,7 @@ export function trackAirbridgePaywallDismiss(opts?: {
     }
     window.airbridge('event', payload);
     console.log('[Airbridge] Paywall event: Dismiss Paywall', payload);
+    _logFirebase('Dismiss Paywall', payload);
   } catch (e) {
     console.warn('[Airbridge] Failed to track paywall dismiss:', e);
   }
@@ -159,6 +252,7 @@ export function trackAirbridgePaywallClick(subscriptionType: string): void {
       label: subscriptionType,
     });
     console.log('[Airbridge] Paywall event: Click Paywall Button', subscriptionType);
+    _logFirebase('Click Paywall Button', { category: 'paywall', label: subscriptionType });
   } catch (e) {
     console.warn('[Airbridge] Failed to track paywall click:', e);
   }
@@ -188,6 +282,14 @@ export function trackAirbridgeSubscribe(params: {
     if (params.plan) payload.label = params.plan;
     window.airbridge('event', payload);
     console.log('[Airbridge] Paywall event: Subscribe', payload);
+    // Mirror as Firebase `purchase` so Google Ads picks it up via the
+    // standard ecommerce event schema (value + currency are required).
+    _logFirebase('purchase', {
+      value: params.value,
+      currency: params.currency ?? 'USD',
+      product_id: params.productId,
+      plan: params.plan,
+    });
   } catch (e) {
     console.warn('[Airbridge] Failed to track subscribe:', e);
   }
@@ -237,6 +339,7 @@ export function trackAirbridgeSignUp(
       label: method,
     });
     console.log('[Airbridge] Auth event: Sign Up', method);
+    _logFirebase('sign_up', { method });
   } catch (e) {
     console.warn('[Airbridge] Failed to track sign up:', e);
   }
@@ -257,6 +360,9 @@ export function trackAirbridgeSignIn(
       label: method,
     });
     console.log('[Airbridge] Auth event: Sign In', method);
+    // Use Firebase reserved `login` event for Sign In so audiences/funnels
+    // line up with Google's recommended schema.
+    _logFirebase('login', { method });
   } catch (e) {
     console.warn('[Airbridge] Failed to track sign in:', e);
   }
@@ -276,6 +382,10 @@ export function trackAirbridgeAppOpen(opts?: { cold_start?: boolean }): void {
       cold_start: !!opts?.cold_start,
     });
     console.log('[Airbridge] Lifecycle event: App Open', { cold_start: !!opts?.cold_start });
+    // NOTE: Firebase auto-fires its own `app_open` (and `session_start`,
+    // `first_open`) at the native layer. Mirror under a distinct name so we
+    // don't pollute Google's automatic event with our cold_start extra.
+    _logFirebase('app_open_js', { cold_start: !!opts?.cold_start });
   } catch (e) {
     console.warn('[Airbridge] Failed to track app open:', e);
   }
@@ -296,6 +406,11 @@ export function trackAirbridgeOnboardingComplete(durationSeconds?: number): void
     if (typeof durationSeconds === 'number') payload.duration_seconds = durationSeconds;
     window.airbridge('event', payload);
     console.log('[Airbridge] Onboarding event: Complete Onboarding', payload);
+    // Map to Firebase reserved `tutorial_complete` so the Google Ads
+    // recommended-events list lines up out of the box.
+    _logFirebase('tutorial_complete', {
+      duration_seconds: durationSeconds,
+    });
   } catch (e) {
     console.warn('[Airbridge] Failed to track onboarding complete:', e);
   }
@@ -327,6 +442,10 @@ export function trackAirbridgeFirstPracticeComplete(
       surface: opts?.surface ?? 'basic',
     });
     console.log('[Airbridge] Activation event: First Practice Complete', practiceName, opts?.surface);
+    _logFirebase('first_practice_complete', {
+      label: (practiceName ?? '').toString(),
+      surface: opts?.surface ?? 'basic',
+    });
   } catch (e) {
     console.warn('[Airbridge] Failed to track first practice complete:', e);
   }
@@ -359,6 +478,7 @@ export function trackAirbridgePermission(
       label: granted ? 'granted' : 'denied',
     });
     console.log('[Airbridge] Permission event:', action, granted ? 'granted' : 'denied');
+    _logFirebase(action, { scope, granted });
   } catch (e) {
     console.warn('[Airbridge] Failed to track permission:', scope, e);
   }
@@ -382,6 +502,7 @@ export function trackAirbridgeWatchConnected(watchModel?: string | null): void {
     if (watchModel) payload.label = watchModel;
     window.airbridge('event', payload);
     console.log('[Airbridge] Device event: Watch Connected', watchModel ?? '');
+    _logFirebase('watch_connected', { label: watchModel ?? undefined });
   } catch (e) {
     console.warn('[Airbridge] Failed to track watch connected:', e);
   }
@@ -430,6 +551,8 @@ export function trackAirbridgeLevelUnlocked(level: number): void {
       level,
     });
     console.log('[Airbridge] Progression event: Level Unlocked', level);
+    // Map to Firebase reserved `level_up` for Google Ads recommended events.
+    _logFirebase('level_up', { level, label: `level_${level}` });
   } catch (e) {
     console.warn('[Airbridge] Failed to track level unlocked:', e);
   }
@@ -455,6 +578,10 @@ export function trackAirbridgeCircuitComplete(
       ...(extra ?? {}),
     });
     console.log('[Airbridge] Progression event: Circuit Complete', circuitId, extra ?? '');
+    _logFirebase('circuit_complete', {
+      label: String(circuitId),
+      ...(extra ?? {}),
+    });
   } catch (e) {
     console.warn('[Airbridge] Failed to track circuit complete:', e);
   }
@@ -480,6 +607,11 @@ export function trackAirbridgeArtifactEarned(
       ...(extra ?? {}),
     });
     console.log('[Airbridge] Progression event: Artifact Earned', circuitId, extra ?? '');
+    // Map to Firebase reserved `unlock_achievement` for Google Ads.
+    _logFirebase('unlock_achievement', {
+      achievement_id: String(circuitId),
+      ...(extra ?? {}),
+    });
   } catch (e) {
     console.warn('[Airbridge] Failed to track artifact earned:', e);
   }
@@ -496,6 +628,29 @@ export function identifyAirbridgeUser(params: {
       if (params.email) window.airbridge('setUserEmail', params.email);
       if (params.alias) window.airbridge('setUserAlias', params.alias);
       console.log('[Airbridge] User identified:', params.id);
+    }
+    // Mirror the userId to Firebase Analytics so cross-device & ad attribution
+    // joins line up. Fire-and-forget (does not block Airbridge).
+    if (params.id) {
+      (async () => {
+        try {
+          const { Capacitor } = await import('@capacitor/core');
+          const platform = Capacitor.getPlatform();
+          if (platform === 'android') {
+            const { setUserIdAndroid, isAndroidBridgeAvailable } = await import('./analytics-bridge');
+            if (isAndroidBridgeAvailable()) setUserIdAndroid(params.id!);
+          } else if (platform === 'ios') {
+            await _ensureFirebase();
+            // setUserId lives on the same plugin module the analytics service uses.
+            const pkgName = '@capacitor-community' + '/firebase-analytics';
+            const mod = await (new Function('p', 'return import(p)'))(pkgName);
+            await mod.FirebaseAnalytics.setUserId({ userId: params.id });
+          }
+          console.log('[Firebase] setUserId mirrored:', params.id);
+        } catch (e) {
+          console.warn('[Firebase] setUserId mirror failed:', e);
+        }
+      })();
     }
   } catch (e) {
     console.warn('[Airbridge] Failed to identify user:', e);

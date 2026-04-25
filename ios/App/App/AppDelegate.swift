@@ -12,15 +12,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private var attObserver: Any?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // ⚠️ Order matters: Firebase MUST initialize before Airbridge.
+        // Firebase fires `first_open` (the conversion event Google Ads keys
+        // off) on its first configure call. If Airbridge starts first it can
+        // intercept the launch URL or the lifecycle hook and Firebase ends up
+        // never seeing a clean cold-start, which is what broke ad attribution.
         FirebaseApp.configure()
+        if FirebaseApp.app() != nil {
+            print("[ONDA] Firebase configured ✅")
+        } else {
+            print("[ONDA] ❌ Firebase configuration failed — GoogleService-Info.plist missing?")
+        }
 
-        // Airbridge iOS SDK v4 — атрибуция установок через SKAN и Universal Links
+        // Airbridge iOS SDK v4 — атрибуция установок через SKAN и Universal Links.
+        // Initialized AFTER Firebase so first_open lands cleanly.
         let airbridgeOption = AirbridgeOptionBuilder(
             name: "ondalife",
             token: "fc2c61f82d7640bd8ec514a26e8a6926"
         ).build()
         Airbridge.initializeSDK(option: airbridgeOption)
-        print("[ONDA] Airbridge iOS SDK v4 initialized")
+        print("[ONDA] Airbridge iOS SDK v4 initialized ✅")
 
         // Запрашиваем ATT (App Tracking Transparency) — нужно для IDFA на iOS 14+
         attObserver = NotificationCenter.default.addObserver(
@@ -63,28 +74,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        // Передаём deep link (ondalife://) в Airbridge SDK v4 для атрибуции
+        // Both SDKs must see the launch URL — neither is allowed to "eat" it.
+        // Airbridge needs it for attribution, Firebase Dynamic Links / Capacitor
+        // routing need it to forward the URL into the JS layer. Previously we
+        // returned early on `isAirbridgeDeeplink == true` which blocked
+        // Capacitor (and therefore Firebase / WebView routing) from seeing
+        // ondalife:// links at all.
         let isAirbridgeDeeplink = Airbridge.handleDeeplink(url: url) { convertedUrl in
             print("[ONDA] Airbridge converted deep link: \(convertedUrl)")
         }
         if isAirbridgeDeeplink {
-            print("[ONDA] Airbridge handled deep link: \(url)")
-            return true
+            print("[ONDA] Airbridge captured deep link for attribution: \(url)")
         }
-        return ApplicationDelegateProxy.shared.application(app, open: url, options: options)
+        // Always pass through so Capacitor + Firebase get the URL too.
+        let capacitorHandled = ApplicationDelegateProxy.shared.application(app, open: url, options: options)
+        return isAirbridgeDeeplink || capacitorHandled
     }
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        // Передаём Universal Links в Airbridge SDK v4 для атрибуции
+        // Same rule for Universal Links: forward to both SDKs.
+        var airbridgeHandled = false
         if let universalLinkUrl = userActivity.webpageURL {
-            let isAirbridgeLink = Airbridge.handleDeeplink(url: universalLinkUrl) { convertedUrl in
+            airbridgeHandled = Airbridge.handleDeeplink(url: universalLinkUrl) { convertedUrl in
                 print("[ONDA] Airbridge converted Universal Link: \(convertedUrl)")
             }
-            if isAirbridgeLink {
-                print("[ONDA] Airbridge handled Universal Link: \(universalLinkUrl)")
-                return true
+            if airbridgeHandled {
+                print("[ONDA] Airbridge captured Universal Link for attribution: \(universalLinkUrl)")
             }
         }
-        return ApplicationDelegateProxy.shared.application(application, continue: userActivity, restorationHandler: restorationHandler)
+        let capacitorHandled = ApplicationDelegateProxy.shared.application(application, continue: userActivity, restorationHandler: restorationHandler)
+        return airbridgeHandled || capacitorHandled
     }
 }
