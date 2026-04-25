@@ -30,6 +30,68 @@ declare global {
 // to the native FirebaseAnalytics SDK pod that's already in our Podfile.
 import { FirebaseAnalytics } from '@capacitor-community/firebase-analytics';
 import { Capacitor } from '@capacitor/core';
+import OndaAirbridge from '../plugins/ondaAirbridge';
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Native Airbridge bridge selector.
+//
+// On iOS we route every custom event through the OndaAirbridge Capacitor
+// plugin → native Airbridge SDK v4 → App Real-time Log under the same IDFA
+// as Install/Open. On other platforms we fall back to the Web SDK loaded
+// in `index.html`. Without this split, custom events fired through
+// `window.airbridge('event', …)` from inside the iOS WebView either never
+// flush their queue or land in a separate Web stream that can't be
+// stitched to App-stream attribution.
+// ─────────────────────────────────────────────────────────────────────────────
+const _useNativeAirbridge: boolean =
+  Capacitor.getPlatform() === 'ios' && Capacitor.isPluginAvailable('OndaAirbridge');
+
+if (_useNativeAirbridge) {
+  console.log('[Airbridge] Using native iOS plugin');
+} else {
+  console.log('[Airbridge] Using Web SDK fallback (platform:', Capacitor.getPlatform(), ')');
+}
+
+function _sendAirbridge(payload: {
+  category: string;
+  action?: string;
+  label?: string;
+  value?: number;
+  semanticAttributes?: Record<string, unknown>;
+  customAttributes?: Record<string, unknown>;
+}): void {
+  const { category, action, label, value, semanticAttributes, customAttributes } = payload;
+
+  if (_useNativeAirbridge) {
+    OndaAirbridge.trackEvent({
+      category,
+      action,
+      label,
+      value,
+      semanticAttributes,
+      customAttributes,
+    }).catch((e) => console.warn('[OndaAirbridge] native trackEvent failed:', e));
+    console.log('[Airbridge][native] event:', category, action ?? '', label ?? '');
+    return;
+  }
+
+  // Web SDK fallback (browser / PWA / web preview).
+  try {
+    if (typeof window !== 'undefined' && typeof window.airbridge === 'function') {
+      const flat: Record<string, unknown> = {
+        category,
+        ...(action !== undefined ? { action } : {}),
+        ...(label !== undefined ? { label } : {}),
+        ...(value !== undefined ? { value } : {}),
+        ...(customAttributes ?? {}),
+      };
+      window.airbridge('event', flat);
+      console.log('[Airbridge][web] event:', category, action ?? '', label ?? '');
+    }
+  } catch (e) {
+    console.warn('[Airbridge] web SDK send failed:', e);
+  }
+}
 
 const _firebaseReady: boolean = (() => {
   try {
@@ -98,10 +160,7 @@ export function trackAirbridgeEvent(
   data?: Record<string, unknown>
 ): void {
   try {
-    if (typeof window.airbridge === 'function') {
-      window.airbridge('event', { category, action, ...data });
-      console.log('[Airbridge] Event tracked:', category, action);
-    }
+    _sendAirbridge({ category, action, customAttributes: data });
     _logFirebase(action, { category, ...(data ?? {}) });
   } catch (e) {
     console.warn('[Airbridge] Failed to track event:', category, action, e);
@@ -131,19 +190,16 @@ export function trackAirbridgePractice(
   }
 ): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
     const label = (practiceName ?? '').toString();
     const surface = opts?.surface ?? 'basic';
     const eventAction =
       surface === 'adaptive' ? `${action} Adaptive Practice` : `${action} Practice`;
-    window.airbridge('event', {
+    _sendAirbridge({
       category: 'practice',
       action: eventAction,
       label,
-      ...(opts?.extra ?? {}),
+      customAttributes: opts?.extra,
     });
-    console.log('[Airbridge] Practice event:', eventAction, label, opts?.extra ?? '');
     _logFirebase(eventAction, { category: 'practice', label, ...(opts?.extra ?? {}) });
   } catch (e) {
     console.warn('[Airbridge] Failed to track practice event:', action, e);
@@ -165,16 +221,9 @@ export function trackAirbridgeEmotionalCheck(
   emotionName?: string | null
 ): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
     const eventAction = `${action} Emotional Check`;
     const label = (emotionName ?? '').toString();
-    window.airbridge('event', {
-      category: 'emotional_check',
-      action: eventAction,
-      label,
-    });
-    console.log('[Airbridge] EmotionalCheck event:', eventAction, label);
+    _sendAirbridge({ category: 'emotional_check', action: eventAction, label });
     _logFirebase(eventAction, { category: 'emotional_check', label });
   } catch (e) {
     console.warn('[Airbridge] Failed to track emotional check event:', action, e);
@@ -191,15 +240,11 @@ export function trackAirbridgeEmotionalCheck(
  */
 export function trackAirbridgePaywallView(source?: string): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
-    const payload: Record<string, unknown> = {
+    _sendAirbridge({
       category: 'paywall',
       action: 'View Paywall',
-    };
-    if (source) payload.source = source;
-    window.airbridge('event', payload);
-    console.log('[Airbridge] Paywall event: View Paywall', source ?? '');
+      customAttributes: source ? { source } : undefined,
+    });
     _logFirebase('View Paywall', { category: 'paywall', source });
   } catch (e) {
     console.warn('[Airbridge] Failed to track paywall view:', e);
@@ -216,20 +261,18 @@ export function trackAirbridgePaywallDismiss(opts?: {
   timeOnScreenSeconds?: number;
 }): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
-    const payload: Record<string, unknown> = {
+    const custom: Record<string, unknown> = {};
+    if (opts?.source) custom.source = opts.source;
+    if (typeof opts?.timeOnScreenSeconds === 'number') {
+      custom.time_on_screen_seconds = opts.timeOnScreenSeconds;
+    }
+    _sendAirbridge({
       category: 'paywall',
       action: 'Dismiss Paywall',
-    };
-    if (opts?.plan) payload.label = opts.plan;
-    if (opts?.source) payload.source = opts.source;
-    if (typeof opts?.timeOnScreenSeconds === 'number') {
-      payload.time_on_screen_seconds = opts.timeOnScreenSeconds;
-    }
-    window.airbridge('event', payload);
-    console.log('[Airbridge] Paywall event: Dismiss Paywall', payload);
-    _logFirebase('Dismiss Paywall', payload);
+      label: opts?.plan,
+      customAttributes: Object.keys(custom).length ? custom : undefined,
+    });
+    _logFirebase('Dismiss Paywall', { category: 'paywall', label: opts?.plan, ...custom });
   } catch (e) {
     console.warn('[Airbridge] Failed to track paywall dismiss:', e);
   }
@@ -241,14 +284,11 @@ export function trackAirbridgePaywallDismiss(opts?: {
  */
 export function trackAirbridgePaywallClick(subscriptionType: string): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
-    window.airbridge('event', {
+    _sendAirbridge({
       category: 'paywall',
       action: 'Click Paywall Button',
       label: subscriptionType,
     });
-    console.log('[Airbridge] Paywall event: Click Paywall Button', subscriptionType);
     _logFirebase('Click Paywall Button', { category: 'paywall', label: subscriptionType });
   } catch (e) {
     console.warn('[Airbridge] Failed to track paywall click:', e);
@@ -267,18 +307,23 @@ export function trackAirbridgeSubscribe(params: {
   plan?: string;
 }): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
-    const payload: Record<string, unknown> = {
-      category: 'paywall',
-      action: 'Subscribe',
-      value: params.value,
+    const custom: Record<string, unknown> = {
       currency: params.currency ?? 'USD',
     };
-    if (params.productId) payload.product_id = params.productId;
-    if (params.plan) payload.label = params.plan;
-    window.airbridge('event', payload);
-    console.log('[Airbridge] Paywall event: Subscribe', payload);
+    if (params.productId) custom.product_id = params.productId;
+    // Use Airbridge semantic attributes for revenue so the Revenue dashboard
+    // picks it up automatically (totalValue + currency are reserved keys).
+    _sendAirbridge({
+      category: 'paywall',
+      action: 'Subscribe',
+      label: params.plan,
+      value: params.value,
+      semanticAttributes: {
+        totalValue: params.value,
+        currency: params.currency ?? 'USD',
+      },
+      customAttributes: custom,
+    });
     // Mirror as Firebase `purchase` so Google Ads picks it up via the
     // standard ecommerce event schema (value + currency are required).
     _logFirebase('purchase', {
@@ -328,14 +373,7 @@ export function trackAirbridgeSignUp(
   method: 'email' | 'apple' | 'google' | string,
 ): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
-    window.airbridge('event', {
-      category: 'auth',
-      action: 'Sign Up',
-      label: method,
-    });
-    console.log('[Airbridge] Auth event: Sign Up', method);
+    _sendAirbridge({ category: 'auth', action: 'Sign Up', label: method });
     _logFirebase('sign_up', { method });
   } catch (e) {
     console.warn('[Airbridge] Failed to track sign up:', e);
@@ -349,14 +387,7 @@ export function trackAirbridgeSignIn(
   method: 'email' | 'apple' | 'google' | string,
 ): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
-    window.airbridge('event', {
-      category: 'auth',
-      action: 'Sign In',
-      label: method,
-    });
-    console.log('[Airbridge] Auth event: Sign In', method);
+    _sendAirbridge({ category: 'auth', action: 'Sign In', label: method });
     // Use Firebase reserved `login` event for Sign In so audiences/funnels
     // line up with Google's recommended schema.
     _logFirebase('login', { method });
@@ -371,14 +402,11 @@ export function trackAirbridgeSignIn(
  */
 export function trackAirbridgeAppOpen(opts?: { cold_start?: boolean }): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
-    window.airbridge('event', {
+    _sendAirbridge({
       category: 'lifecycle',
       action: 'App Open',
-      cold_start: !!opts?.cold_start,
+      customAttributes: { cold_start: !!opts?.cold_start },
     });
-    console.log('[Airbridge] Lifecycle event: App Open', { cold_start: !!opts?.cold_start });
     // NOTE: Firebase auto-fires its own `app_open` (and `session_start`,
     // `first_open`) at the native layer. Mirror under a distinct name so we
     // don't pollute Google's automatic event with our cold_start extra.
@@ -394,20 +422,16 @@ export function trackAirbridgeAppOpen(opts?: { cold_start?: boolean }): void {
  */
 export function trackAirbridgeOnboardingComplete(durationSeconds?: number): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
-    const payload: Record<string, unknown> = {
+    _sendAirbridge({
       category: 'onboarding',
       action: 'Complete Onboarding',
-    };
-    if (typeof durationSeconds === 'number') payload.duration_seconds = durationSeconds;
-    window.airbridge('event', payload);
-    console.log('[Airbridge] Onboarding event: Complete Onboarding', payload);
+      customAttributes: typeof durationSeconds === 'number'
+        ? { duration_seconds: durationSeconds }
+        : undefined,
+    });
     // Map to Firebase reserved `tutorial_complete` so the Google Ads
     // recommended-events list lines up out of the box.
-    _logFirebase('tutorial_complete', {
-      duration_seconds: durationSeconds,
-    });
+    _logFirebase('tutorial_complete', { duration_seconds: durationSeconds });
   } catch (e) {
     console.warn('[Airbridge] Failed to track onboarding complete:', e);
   }
@@ -428,21 +452,17 @@ export function trackAirbridgeFirstPracticeComplete(
   opts?: { surface?: 'basic' | 'adaptive' },
 ): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
-    if (localStorage.getItem(FIRST_PRACTICE_FLAG) === '1') return;
-    localStorage.setItem(FIRST_PRACTICE_FLAG, '1');
-    window.airbridge('event', {
+    if (typeof localStorage !== 'undefined' && localStorage.getItem(FIRST_PRACTICE_FLAG) === '1') return;
+    if (typeof localStorage !== 'undefined') localStorage.setItem(FIRST_PRACTICE_FLAG, '1');
+    const label = (practiceName ?? '').toString();
+    const surface = opts?.surface ?? 'basic';
+    _sendAirbridge({
       category: 'activation',
       action: 'First Practice Complete',
-      label: (practiceName ?? '').toString(),
-      surface: opts?.surface ?? 'basic',
+      label,
+      customAttributes: { surface },
     });
-    console.log('[Airbridge] Activation event: First Practice Complete', practiceName, opts?.surface);
-    _logFirebase('first_practice_complete', {
-      label: (practiceName ?? '').toString(),
-      surface: opts?.surface ?? 'basic',
-    });
+    _logFirebase('first_practice_complete', { label, surface });
   } catch (e) {
     console.warn('[Airbridge] Failed to track first practice complete:', e);
   }
@@ -459,8 +479,6 @@ export function trackAirbridgePermission(
   granted: boolean,
 ): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
     const action =
       scope === 'healthkit'
         ? 'HealthKit Permission'
@@ -469,12 +487,11 @@ export function trackAirbridgePermission(
         : scope === 'notifications'
         ? 'Notifications Permission'
         : `${scope} Permission`;
-    window.airbridge('event', {
+    _sendAirbridge({
       category: 'permission',
       action,
       label: granted ? 'granted' : 'denied',
     });
-    console.log('[Airbridge] Permission event:', action, granted ? 'granted' : 'denied');
     _logFirebase(action, { scope, granted });
   } catch (e) {
     console.warn('[Airbridge] Failed to track permission:', scope, e);
@@ -490,15 +507,11 @@ export function trackAirbridgePermission(
  */
 export function trackAirbridgeWatchConnected(watchModel?: string | null): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
-    const payload: Record<string, unknown> = {
+    _sendAirbridge({
       category: 'device',
       action: 'Watch Connected',
-    };
-    if (watchModel) payload.label = watchModel;
-    window.airbridge('event', payload);
-    console.log('[Airbridge] Device event: Watch Connected', watchModel ?? '');
+      label: watchModel ?? undefined,
+    });
     _logFirebase('watch_connected', { label: watchModel ?? undefined });
   } catch (e) {
     console.warn('[Airbridge] Failed to track watch connected:', e);
@@ -537,17 +550,14 @@ const ARTIFACT_EARNED_KEY = 'onda_airbridge_artifact_earned';
  */
 export function trackAirbridgeLevelUnlocked(level: number): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
     if (_hasMilestoneFired(LEVEL_UNLOCKED_KEY, level)) return;
     _markMilestoneFired(LEVEL_UNLOCKED_KEY, level);
-    window.airbridge('event', {
+    _sendAirbridge({
       category: 'progression',
       action: 'Level Unlocked',
       label: `level_${level}`,
-      level,
+      customAttributes: { level },
     });
-    console.log('[Airbridge] Progression event: Level Unlocked', level);
     // Map to Firebase reserved `level_up` for Google Ads recommended events.
     _logFirebase('level_up', { level, label: `level_${level}` });
   } catch (e) {
@@ -564,17 +574,14 @@ export function trackAirbridgeCircuitComplete(
   extra?: { has_artifact?: boolean; practices_count?: number },
 ): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
     if (_hasMilestoneFired(CIRCUIT_COMPLETE_KEY, circuitId)) return;
     _markMilestoneFired(CIRCUIT_COMPLETE_KEY, circuitId);
-    window.airbridge('event', {
+    _sendAirbridge({
       category: 'progression',
       action: 'Circuit Complete',
       label: String(circuitId),
-      ...(extra ?? {}),
+      customAttributes: extra,
     });
-    console.log('[Airbridge] Progression event: Circuit Complete', circuitId, extra ?? '');
     _logFirebase('circuit_complete', {
       label: String(circuitId),
       ...(extra ?? {}),
@@ -593,17 +600,14 @@ export function trackAirbridgeArtifactEarned(
   extra?: { bonus?: number; quality_score?: number },
 ): void {
   try {
-    if (typeof window === 'undefined') return;
-    if (typeof window.airbridge !== 'function') return;
     if (_hasMilestoneFired(ARTIFACT_EARNED_KEY, circuitId)) return;
     _markMilestoneFired(ARTIFACT_EARNED_KEY, circuitId);
-    window.airbridge('event', {
+    _sendAirbridge({
       category: 'progression',
       action: 'Artifact Earned',
       label: String(circuitId),
-      ...(extra ?? {}),
+      customAttributes: extra,
     });
-    console.log('[Airbridge] Progression event: Artifact Earned', circuitId, extra ?? '');
     // Map to Firebase reserved `unlock_achievement` for Google Ads.
     _logFirebase('unlock_achievement', {
       achievement_id: String(circuitId),
@@ -620,11 +624,28 @@ export function identifyAirbridgeUser(params: {
   alias?: string;
 }): void {
   try {
-    if (typeof window.airbridge === 'function') {
+    if (_useNativeAirbridge) {
+      OndaAirbridge.setUserID({ id: params.id ?? null }).catch((e) =>
+        console.warn('[OndaAirbridge] native setUserID failed:', e),
+      );
+      if (params.email) {
+        OndaAirbridge.setUserEmail({ email: params.email }).catch((e) =>
+          console.warn('[OndaAirbridge] native setUserEmail failed:', e),
+        );
+      }
+      if (params.alias) {
+        // Treat the alias string as a generic key/value pair under the
+        // 'alias' key — if callers later need a richer schema we'll extend.
+        OndaAirbridge.setUserAlias({ key: 'alias', value: params.alias }).catch((e) =>
+          console.warn('[OndaAirbridge] native setUserAlias failed:', e),
+        );
+      }
+      console.log('[Airbridge][native] User identified:', params.id);
+    } else if (typeof window !== 'undefined' && typeof window.airbridge === 'function') {
       window.airbridge('setUserID', params.id ?? null);
       if (params.email) window.airbridge('setUserEmail', params.email);
       if (params.alias) window.airbridge('setUserAlias', params.alias);
-      console.log('[Airbridge] User identified:', params.id);
+      console.log('[Airbridge][web] User identified:', params.id);
     }
     // Mirror the userId to Firebase Analytics so cross-device & ad attribution
     // joins line up. Fire-and-forget (does not block Airbridge).
@@ -662,15 +683,12 @@ export function initAirbridgeDeepLinkHandler(): void {
       const params: Record<string, string> = {};
       parsed.searchParams.forEach((v, k) => { params[k] = v; });
 
-      if (typeof window.airbridge === 'function') {
-        window.airbridge('event', {
-          category: 'airbridge',
-          action: 'app_open',
-          label: url,
-          deeplink: url,
-          ...params,
-        });
-      }
+      _sendAirbridge({
+        category: 'airbridge',
+        action: 'app_open',
+        label: url,
+        customAttributes: { deeplink: url, ...params },
+      });
 
       console.log('[Airbridge] Deep link forwarded to SDK, params:', params);
     } catch (e) {

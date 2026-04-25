@@ -19,6 +19,8 @@
                 F84CE7232EE24BEA00A41804 /* watchkitapp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F84CE7192EE24BE900A41804 /* watchkitapp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
                 F8DA16282EE06AB5009EBE0B /* OndaWatchPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DA16272EE06AB5009EBE0B /* OndaWatchPlugin.swift */; };
                 F8DA16292EE06AB5009EBE0B /* OndaWatchPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = F8DA16262EE06AB5009EBE0B /* OndaWatchPlugin.m */; };
+                ONDAAIRBR001ABCDEF012345 /* OndaAirbridgePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = ONDAAIRBR003ABCDEF012345 /* OndaAirbridgePlugin.swift */; };
+                ONDAAIRBR002ABCDEF012345 /* OndaAirbridgePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = ONDAAIRBR004ABCDEF012345 /* OndaAirbridgePlugin.m */; };
                 F8DA162C2EE06C0A009EBE0B /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8DA162B2EE06C0A009EBE0B /* WatchConnectivity.framework */; };
                 HEALTHKIT001ABCDEF0123456 /* HealthKitHeartRatePlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = HEALTHKIT002ABCDEF0123456 /* HealthKitHeartRatePlugin.swift */; };
                 GOOGLESERVICE002ABC123456 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = GOOGLESERVICE001ABC123456 /* GoogleService-Info.plist */; };
@@ -65,6 +67,8 @@
                 F84CE7192EE24BE900A41804 /* watchkitapp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchkitapp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
                 F8DA16262EE06AB5009EBE0B /* OndaWatchPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OndaWatchPlugin.m; sourceTree = "<group>"; };
                 F8DA16272EE06AB5009EBE0B /* OndaWatchPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OndaWatchPlugin.swift; sourceTree = "<group>"; };
+                ONDAAIRBR003ABCDEF012345 /* OndaAirbridgePlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OndaAirbridgePlugin.swift; sourceTree = "<group>"; };
+                ONDAAIRBR004ABCDEF012345 /* OndaAirbridgePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OndaAirbridgePlugin.m; sourceTree = "<group>"; };
                 F8DA162A2EE06AFD009EBE0B /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
                 F8DA162B2EE06C0A009EBE0B /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = System/Library/Frameworks/WatchConnectivity.framework; sourceTree = SDKROOT; };
                 FC68EB0AF532CFC21C3344DD /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
                         children = (
                                 F8DA16262EE06AB5009EBE0B /* OndaWatchPlugin.m */,
                                 F8DA16272EE06AB5009EBE0B /* OndaWatchPlugin.swift */,
+                                ONDAAIRBR003ABCDEF012345 /* OndaAirbridgePlugin.swift */,
+                                ONDAAIRBR004ABCDEF012345 /* OndaAirbridgePlugin.m */,
                                 50379B222058CBB4000EE86E /* capacitor.config.json */,
                                 504EC3071FED79650016851F /* AppDelegate.swift */,
                                 HEALTHKIT002ABCDEF0123456 /* HealthKitHeartRatePlugin.swift */,
@@ -327,6 +333,8 @@
                         files = (
                                 F8DA16282EE06AB5009EBE0B /* OndaWatchPlugin.swift in Sources */,
                                 F8DA16292EE06AB5009EBE0B /* OndaWatchPlugin.m in Sources */,
+                                ONDAAIRBR001ABCDEF012345 /* OndaAirbridgePlugin.swift in Sources */,
+                                ONDAAIRBR002ABCDEF012345 /* OndaAirbridgePlugin.m in Sources */,
                                 504EC3081FED79650016851F /* AppDelegate.swift in Sources */,
                                 HEALTHKIT001ABCDEF0123456 /* HealthKitHeartRatePlugin.swift in Sources */,
                                 CUSTOMBR001ABCDEF0123456 /* CustomBridgeViewController.swift in Sources */,
