@@ -21,28 +21,28 @@ declare global {
 // Web:    no-op (Firebase JS SDK is not initialized in this app).
 // ─────────────────────────────────────────────────────────────────────────────
 
-let _firebaseAnalytics: {
-  logEvent: (opts: { name: string; params?: Record<string, any> }) => Promise<void>;
-} | null = null;
-let _firebaseInitPromise: Promise<void> | null = null;
+// Static import — Vite must actually bundle the plugin so it resolves at
+// runtime inside the iOS WebView. The previous indirect-string trick
+// (`new Function('p', 'return import(p)')(pkgName)`) prevented Vite from
+// detecting the dependency, so the import always failed silently and
+// every JS-side Firebase event no-op'd. The Capacitor plugin module
+// itself does the right thing on web (returns mocks) and on iOS bridges
+// to the native FirebaseAnalytics SDK pod that's already in our Podfile.
+import { FirebaseAnalytics } from '@capacitor-community/firebase-analytics';
+import { Capacitor } from '@capacitor/core';
 
-async function _ensureFirebase(): Promise<void> {
-  if (_firebaseInitPromise) return _firebaseInitPromise;
-  _firebaseInitPromise = (async () => {
-    try {
-      const { Capacitor } = await import('@capacitor/core');
-      if (Capacitor.getPlatform() !== 'ios') return;
-      // Indirect import keeps Vite from trying to resolve the dep at build
-      // time on web — same trick used in src/services/analytics.ts.
-      const pkgName = '@capacitor-community' + '/firebase-analytics';
-      const mod = await (new Function('p', 'return import(p)'))(pkgName);
-      _firebaseAnalytics = mod.FirebaseAnalytics;
-      console.log('[Firebase] Analytics ready (iOS)');
-    } catch (e) {
-      console.warn('[Firebase] init failed (analytics will no-op):', e);
-    }
-  })();
-  return _firebaseInitPromise;
+const _firebaseReady: boolean = (() => {
+  try {
+    // The plugin object exists on every platform; calls just no-op on web.
+    return typeof FirebaseAnalytics?.logEvent === 'function';
+  } catch {
+    return false;
+  }
+})();
+if (_firebaseReady) {
+  console.log('[Firebase] Analytics module loaded (platform:', Capacitor.getPlatform(), ')');
+} else {
+  console.warn('[Firebase] Analytics module unavailable — events will no-op');
 }
 
 function _toSnake(s: string): string {
@@ -75,20 +75,17 @@ function _logFirebase(eventName: string, params?: Record<string, unknown>): void
     try {
       const name = _toSnake(eventName);
       const safeParams = _sanitizeFirebaseParams(params);
-      const { Capacitor } = await import('@capacitor/core');
       const platform = Capacitor.getPlatform();
       if (platform === 'android') {
         const { trackEventAndroid, isAndroidBridgeAvailable } = await import('./analytics-bridge');
         if (isAndroidBridgeAvailable()) {
           trackEventAndroid(name, safeParams);
+          console.log('[Firebase][android] Event mirrored:', name, safeParams);
         }
-      } else if (platform === 'ios') {
-        await _ensureFirebase();
-        if (_firebaseAnalytics) {
-          await _firebaseAnalytics.logEvent({ name, params: safeParams });
-        }
+      } else if (platform === 'ios' && _firebaseReady) {
+        await FirebaseAnalytics.logEvent({ name, params: safeParams });
+        console.log('[Firebase][ios] Event mirrored:', name, safeParams);
       }
-      console.log('[Firebase] Event mirrored:', name, safeParams);
     } catch (e) {
       console.warn('[Firebase] mirror failed:', eventName, e);
     }
@@ -634,17 +631,12 @@ export function identifyAirbridgeUser(params: {
     if (params.id) {
       (async () => {
         try {
-          const { Capacitor } = await import('@capacitor/core');
           const platform = Capacitor.getPlatform();
           if (platform === 'android') {
             const { setUserIdAndroid, isAndroidBridgeAvailable } = await import('./analytics-bridge');
             if (isAndroidBridgeAvailable()) setUserIdAndroid(params.id!);
-          } else if (platform === 'ios') {
-            await _ensureFirebase();
-            // setUserId lives on the same plugin module the analytics service uses.
-            const pkgName = '@capacitor-community' + '/firebase-analytics';
-            const mod = await (new Function('p', 'return import(p)'))(pkgName);
-            await mod.FirebaseAnalytics.setUserId({ userId: params.id });
+          } else if (platform === 'ios' && _firebaseReady) {
+            await FirebaseAnalytics.setUserId({ userId: params.id! });
           }
           console.log('[Firebase] setUserId mirrored:', params.id);
         } catch (e) {

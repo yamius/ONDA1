@@ -16,8 +16,10 @@ import {
   setUserPropertyAndroid,
   isAndroidBridgeAvailable,
 } from '../lib/analytics-bridge';
+// Static import — see comment in src/lib/airbridge.ts. Without this Vite
+// strips the dependency from the bundle and the iOS plugin never loads.
+import { FirebaseAnalytics as FirebaseAnalyticsPlugin } from '@capacitor-community/firebase-analytics';
 
-// Firebase Analytics types (matches @capacitor-community/firebase-analytics)
 interface FirebaseAnalytics {
   logEvent(options: { name: string; params?: Record<string, any> }): Promise<void>;
   setUserId(options: { userId: string }): Promise<void>;
@@ -65,10 +67,7 @@ export async function initializeAnalytics() {
   // iOS uses Capacitor plugin
   if (isIOS) {
     try {
-      const pkgName = '@capacitor-community' + '/firebase-analytics';
-      const mod = await (new Function('p', 'return import(p)'))(pkgName);
-      firebaseAnalytics = mod.FirebaseAnalytics;
-      
+      firebaseAnalytics = FirebaseAnalyticsPlugin as unknown as FirebaseAnalytics;
       console.log('[Analytics] Firebase Analytics initialized for iOS');
     } catch (error) {
       console.error('[Analytics] Failed to initialize Firebase Analytics for iOS:', error);
