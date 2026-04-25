@@ -21,7 +21,16 @@ public class OndaAirbridgePlugin: CAPPlugin {
 
     public override func load() {
         super.load()
-        print("[OndaAirbridge] Plugin loaded")
+        print("[OndaAirbridge] Plugin loaded — firing self-test event")
+        // Self-test: prove the plugin is alive AND that Airbridge.trackEvent
+        // delivers from this build. If you see `OndaAirbridge.PluginLoaded`
+        // in App Real-time Log, the bridge works end-to-end and any missing
+        // events afterwards are JS-side issues, not native.
+        Airbridge.trackEvent(
+            category: "OndaAirbridge.PluginLoaded",
+            semanticAttributes: nil,
+            customAttributes: ["source": "self_test"]
+        )
     }
 
     /// Track an event via the native Airbridge SDK.
@@ -33,6 +42,12 @@ public class OndaAirbridgePlugin: CAPPlugin {
     ///     value?: number,
     ///     semanticAttributes?: object,
     ///     customAttributes?: object }
+    ///
+    /// Action and label are mirrored into `customAttributes` because the
+    /// Airbridge iOS SDK v4 trackEvent signature only takes
+    /// `(category, semanticAttributes, customAttributes)`. The dashboard's
+    /// Action / Label columns are populated from inside customAttributes
+    /// when those keys are present (`action`, `label`).
     @objc func trackEvent(_ call: CAPPluginCall) {
         guard let category = call.getString("category"), !category.isEmpty else {
             call.reject("category is required")
@@ -41,12 +56,9 @@ public class OndaAirbridgePlugin: CAPPlugin {
         let action = call.getString("action")
         let label = call.getString("label")
         let value = call.getDouble("value")
-        let semanticAttributes = call.getObject("semanticAttributes") ?? [:]
+        let semanticAttributes = call.getObject("semanticAttributes")
         var customAttributes = call.getObject("customAttributes") ?? [:]
 
-        // Mirror action/label/value into customAttributes so they remain
-        // searchable in the Airbridge dashboard even on SDK builds where
-        // the legacy positional fields aren't first-class columns.
         if let action = action { customAttributes["action"] = action }
         if let label = label { customAttributes["label"] = label }
         if let value = value { customAttributes["value"] = value }
@@ -57,7 +69,7 @@ public class OndaAirbridgePlugin: CAPPlugin {
             customAttributes: customAttributes
         )
 
-        print("[OndaAirbridge] trackEvent: \(category) action=\(action ?? "-") label=\(label ?? "-")")
+        print("[OndaAirbridge] trackEvent: category=\(category) action=\(action ?? "-") label=\(label ?? "-")")
         call.resolve(["ok": true])
     }
 
