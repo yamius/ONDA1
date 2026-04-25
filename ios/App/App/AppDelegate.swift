@@ -26,15 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         // Airbridge iOS SDK v4 — атрибуция установок через SKAN и Universal Links.
         // Initialized AFTER Firebase so first_open lands cleanly.
+        // BARE INIT: do not chain extra builder methods. v1.0.4 added
+        // .setLogLevel(.debug).setAutoStartTrackingEnabled(true) and Open
+        // events stopped flowing entirely on TestFlight, suggesting the
+        // chained builder produced an option object the SDK didn't accept.
+        // Reverting to the same call that v1.0.3 used (where Open did fire).
         let airbridgeOption = AirbridgeOptionBuilder(
             name: "ondalife",
             token: "fc2c61f82d7640bd8ec514a26e8a6926"
-        )
-        .setLogLevel(.debug)
-        .setAutoStartTrackingEnabled(true)
-        .build()
+        ).build()
         Airbridge.initializeSDK(option: airbridgeOption)
-        print("[ONDA] Airbridge iOS SDK v4 initialized ✅ (logLevel=debug, autoStart=true)")
+        print("[ONDA] Airbridge iOS SDK v4 initialized ✅ (bare init)")
 
         // Запрашиваем ATT (App Tracking Transparency) — нужно для IDFA на iOS 14+
         attObserver = NotificationCenter.default.addObserver(
@@ -58,7 +60,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         customAttributes: [
                             "source": "att_callback",
                             "att_status": "\(status.rawValue)",
-                            "v": "1.0.4",
+                            "v": "1.0.5",
                         ]
                     )
                     print("[ONDA] Airbridge sanity probe sent post-ATT")
