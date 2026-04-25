@@ -33,6 +33,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Airbridge.initializeSDK(option: airbridgeOption)
         print("[ONDA] Airbridge iOS SDK v4 initialized ✅")
 
+        // Sanity probe: fire one event from the main app target right after
+        // SDK init. If this doesn't appear in App Real-time Log, the SDK
+        // itself isn't delivering custom events — and our plugin can't fix
+        // that. If it DOES appear but events from OndaAirbridgePlugin don't,
+        // the bug is somewhere between Capacitor's plugin context and the
+        // SDK's tracking pipeline.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            Airbridge.trackEvent(
+                category: "AppDelegate.SanityProbe",
+                semanticAttributes: [:],
+                customAttributes: ["source": "did_finish_launching", "v": "0b38265"]
+            )
+            print("[ONDA] Airbridge sanity probe sent")
+        }
+
         // Запрашиваем ATT (App Tracking Transparency) — нужно для IDFA на iOS 14+
         attObserver = NotificationCenter.default.addObserver(
             forName: UIApplication.didBecomeActiveNotification,
