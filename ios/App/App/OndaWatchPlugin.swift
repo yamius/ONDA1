@@ -374,12 +374,37 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
         case "heartRate":
             if let value = data["value"] as? Double {
                 receivedCount += 1
-                
+
                 let timestamp = data["timestamp"] as? TimeInterval ?? Date().timeIntervalSince1970
                 let timeAgo = Date().timeIntervalSince1970 - timestamp
-                
+
                 addDebugLog("💗 HR#\(receivedCount): \(Int(value)) bpm (\(String(format: "%.1f", timeAgo))s ago)")
-                
+
+                // 🔐 Receiving an HR sample is empirical proof that HealthKit
+                // authorization was granted on the watch. The watch-side
+                // `permissionDecisionStatus` checks the workout-share type, which
+                // can lag or stay `.notDetermined` even when HR read access is
+                // live (HR is read-only; iOS deliberately hides its true auth
+                // state). So we upgrade the cached status here. Without this,
+                // the WatchConnectionPrompt banner stays on screen forever even
+                // while the BPM tile shows live values — see the bug report
+                // where users granted permission on the watch but the banner
+                // never went away.
+                if self.watchHealthAuthStatus != "authorized" {
+                    let prev = self.watchHealthAuthStatus
+                    self.watchHealthAuthStatus = "authorized"
+                    self.addDebugLog("🔐 Auth upgraded by HR sample: \(prev) → authorized")
+                    DispatchQueue.main.async {
+                        if let p = self.plugin, let session = self.session {
+                            p.notifyListeners("watchConnectionChanged", data: [
+                                "isWatchConnected": session.isReachable,
+                                "healthAuthStatus": "authorized",
+                                "timestamp": Date().timeIntervalSince1970
+                            ])
+                        }
+                    }
+                }
+
                 DispatchQueue.main.async {
                     if let p = self.plugin {
                         let eventData: [String: Any] = [
