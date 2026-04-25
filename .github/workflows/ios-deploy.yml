@@ -6,6 +6,9 @@ on:
 jobs:
   build-ios:
     name: Build and Deploy iOS App
+    # macos-15 (Sequoia) has Xcode 26 pre-installed in 2026 GitHub Actions
+    # runner images. If the build fails finding Xcode 26, switch to
+    # `macos-26` once that label is GA on GitHub-hosted runners.
     runs-on: macos-15
     timeout-minutes: 90
     
@@ -52,9 +55,13 @@ jobs:
         run: gem install fastlane
 
       - name: Setup Xcode
+        # ITMS-90725: starting 2026-04-28 App Store Connect requires
+        # binaries built with Xcode 26 / iOS 26 SDK. Pinned to '26.0'
+        # so we don't accidentally drift back to an older minor that
+        # ships an older SDK.
         uses: maxim-lobanov/setup-xcode@v1
         with:
-          xcode-version: '16.1'
+          xcode-version: '26.0'
 
       - name: Download iOS and watchOS Platforms with retry
         run: |
@@ -94,7 +101,13 @@ jobs:
 
       - name: Fix Xcode project format for CocoaPods
         run: |
-          sed -i '' 's/objectVersion = 70/objectVersion = 56/' ios/App/App.xcodeproj/project.pbxproj || true
+          # Older xcodeproj/cocoapods couldn't read Xcode 15+ project format
+          # (objectVersion 70+), so we used to sed it back to 56. Modern
+          # cocoapods + xcodeproj gems handle objectVersion 70 and beyond
+          # natively, so the rewrite is now best-effort: if any high
+          # objectVersion is present and the gems still trip on it, drop to
+          # 56 — but normally this is a no-op.
+          sed -i '' -E 's/objectVersion = (7[0-9]|8[0-9]|9[0-9])/objectVersion = 56/' ios/App/App.xcodeproj/project.pbxproj || true
           gem update xcodeproj
           gem install cocoapods
           pod --version
@@ -104,7 +117,8 @@ jobs:
 
       - name: Install CocoaPods dependencies
         # Запускаем pod install явно, чтобы гарантировать установку:
-        # - airbridge-ios-sdk 4.1.3 (нативная атрибуция Airbridge)
+        # - airbridge-ios-sdk (~> 4.1) — нативная атрибуция Airbridge,
+        #   подтягивается последний 4.x для совместимости с iOS 26.
         # - SentryCapacitor (нативный перехват OOM-краш-репортов)
         run: |
           cd ios/App
