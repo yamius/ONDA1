@@ -33,24 +33,23 @@ Principles we apply when deciding whether to add an event:
 
 ### Permissions
 
-| Event | Trigger | Label | Extras |
-|---|---|---|---|
-| `HealthKit Permission` | After the system prompt resolves | `granted` \| `denied` | `requested_types` (flat string, comma-joined) |
-| `Bluetooth Permission` | Same pattern | `granted` \| `denied` | — |
-| `Notifications Permission` | Same pattern | `granted` \| `denied` | — |
-| `Watch Connected` | First successful handshake with paired Apple Watch companion in a given session | — | `watch_model` if available |
-
-These gate downstream feature usage (HRV, push re-engagement, watch sessions) so we want to see their grant rate in attribution cohorts.
+> **Status: shipped in Sprint 3 (HealthKit + Watch Connected).**
+> `HealthKit Permission` fires from `useHealthKitData` /
+> `useHealthKitHeartRate` after the system prompt resolves.
+> `Watch Connected` fires once per app session on the first
+> `paired && watchAppInstalled` reading. `Bluetooth Permission` and
+> `Notifications Permission` are **deferred** — neither plugin is
+> currently invoked from the JS layer, so there's no resolution
+> callback to hook into. Revisit when those flows ship. See
+> [`docs/architecture/airbridge.md`](../architecture/airbridge.md) §7.
 
 ### Progression milestones
 
-| Event | Trigger | Label | Extras |
-|---|---|---|---|
-| `Level Unlocked` | User advances from Level N → Level N+1 | `level_${N+1}` | `practices_completed_to_unlock` |
-| `Circuit Complete` | All practices in a circuit finished | circuit id | `duration_seconds_total` |
-| `Artifact Earned` | Artifact validity threshold met and artifact persisted | artifact id | `quality_score` |
-
-One event per milestone per user per unit — idempotent on repeat triggers.
+> **Status: shipped in Sprint 3.** `Level Unlocked`, `Circuit Complete`,
+> and `Artifact Earned` are wired with localStorage-backed idempotency
+> (one event per milestone per device). See
+> [`docs/architecture/airbridge.md`](../architecture/airbridge.md) §7
+> for the storage keys and rationale.
 
 ### Recommendations
 
@@ -92,7 +91,7 @@ To keep the event stream clean, we deliberately do **not** send these to Airbrid
 
 1. ~~**Sprint 1 — close the funnel.** `Sign Up`, `Sign In`, `App Open`, `Complete Onboarding`, `First Practice Complete`.~~ ✅ Shipped.
 2. ~~**Sprint 2 — paywall detail.** `source` extra on `View Paywall`, `Dismiss Paywall`.~~ ✅ Shipped.
-3. **Sprint 3 — permissions & progression.** HealthKit / Bluetooth / Notifications / Watch, then `Level Unlocked` / `Circuit Complete` / `Artifact Earned`. Feeds retention cohorts.
+3. ~~**Sprint 3 — permissions & progression.** HealthKit + Watch Connected, then `Level Unlocked` / `Circuit Complete` / `Artifact Earned`.~~ ✅ Shipped (Bluetooth + Notifications deferred — no JS-layer callsite yet).
 
 After each sprint: update [`docs/architecture/airbridge.md`](../architecture/airbridge.md) §9 and remove the shipped items from this roadmap.
 

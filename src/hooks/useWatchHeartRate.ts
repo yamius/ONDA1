@@ -3,6 +3,7 @@ import { Capacitor } from '@capacitor/core';
 import { App } from '@capacitor/app';
 import OndaWatch, { WatchStatus, HeartRateEvent, DebugLogEvent } from '../plugins/ondaWatch';
 import type { PluginListenerHandle } from '@capacitor/core';
+import { trackAirbridgeWatchConnected } from '../lib/airbridge';
 
 interface UseWatchHeartRateReturn {
   heartRate: number | null;
@@ -29,6 +30,9 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   const heartbeatIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const isAutoManagedRef = useRef(false);
   const lastHrUpdateRef = useRef<number>(0);
+  // Airbridge: fire `Watch Connected` once per app session on the first
+  // false→true transition of `isConnected`.
+  const hasFiredWatchConnectedRef = useRef<boolean>(false);
 
   // isConnected = часы сопряжены и приложение установлено
   // НЕ зависит от reachable (который скачет true/false)
@@ -81,6 +85,12 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
         }
         
         prevReachableRef.current = status.reachable;
+        // Airbridge: first session-level handshake (paired + app installed).
+        const nowConnected = status.paired === true && status.watchAppInstalled === true;
+        if (nowConnected && !hasFiredWatchConnectedRef.current) {
+          hasFiredWatchConnectedRef.current = true;
+          trackAirbridgeWatchConnected(null);
+        }
         setWatchStatus(status);
         
         if (!status.paired) {

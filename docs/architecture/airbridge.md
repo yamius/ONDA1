@@ -169,7 +169,55 @@ Uses Airbridge's standard semantic fields `value` + `currency` so the **Revenue*
 
 ---
 
-## 7. Deep Links (informational)
+## 7. Permissions, Device & Progression
+
+Sprint 3 events. Every helper here is idempotent (localStorage-backed
+where relevant) so callers can fire from React effects that run on every
+state change.
+
+### Permissions
+
+| Event | Trigger | Label | Source |
+|---|---|---|---|
+| `HealthKit Permission` | iOS HealthKit `requestAuthorization` / `requestFullAuthorization` resolves | `'granted'` \| `'denied'` | `useHealthKitData.ts`, `useHealthKitHeartRate.ts` |
+
+> **Not yet tracked.** `Bluetooth Permission` and `Notifications Permission`
+> aren't wired — the corresponding plugins aren't installed on the web side
+> (Bluetooth lives in the Android native bridge only; PushNotifications
+> isn't currently invoked). Add tracking when those flows ship.
+
+### Device
+
+| Event | Trigger | Label | Source |
+|---|---|---|---|
+| `Watch Connected` | First false→true transition of `paired && watchAppInstalled` per app session | (optional watch model) | `useWatchHeartRate.ts` |
+
+Session-scoped, not device-scoped — if the user reopens the app, we
+re-emit `Watch Connected` once. That's intentional: it's a useful
+retention signal.
+
+### Progression milestones
+
+All three are **once per device, ever** — guarded by localStorage Sets:
+
+- `onda_airbridge_level_unlocked` (set of level ids)
+- `onda_airbridge_circuit_complete` (set of circuit ids)
+- `onda_airbridge_artifact_earned` (set of circuit ids)
+
+| Event | Trigger | Label | Extras |
+|---|---|---|---|
+| `Level Unlocked` | `useEffect` over `completedPractices`/`isPartUnlocked` — fires for each Part 2…12 that just becomes available | `level_${N}` | `level: N` |
+| `Circuit Complete` | All practices in a circuit pass `isValidForArtifact === true`. Fires regardless of whether the circuit carries an artifact. | circuit id | `has_artifact`, `practices_count` |
+| `Artifact Earned` | Same trigger as Circuit Complete, but only if `circuit.artifact` is set. Fires immediately, before the artifact actually persists to state (the state push is wrapped in `setTimeout(…, 1000)` for animation). | circuit id | `bonus`, `quality_score` |
+
+> **Why localStorage and not Supabase.** Airbridge milestones are device
+> attribution events; we want them tied to the install. If a user reinstalls
+> we *want* the events to re-fire so the new install gets credited. A
+> Supabase-backed flag would suppress re-attribution.
+
+---
+
+## 8. Deep Links (informational)
 
 Handled by `initAirbridgeDeepLinkHandler()` — when an Airbridge deep-link event fires on the native layer, the handler forwards it to the SDK as:
 
@@ -187,7 +235,7 @@ Not triggered from product code — pure attribution plumbing.
 
 ---
 
-## 8. User identification
+## 9. User identification
 
 **Source:** `identifyAirbridgeUser()` in `src/lib/airbridge.ts`, called from the auth flow.
 
@@ -201,7 +249,7 @@ Links pre-auth attribution events (deep-link clicks, Store visits) to the authen
 
 ---
 
-## 9. Full event reference (one-page table)
+## 10. Full event reference (one-page table)
 
 | `event_name` | Category | Label | Extras | Source file |
 |---|---|---|---|---|
@@ -224,15 +272,20 @@ Links pre-auth attribution events (deep-link clicks, Store visits) to the authen
 | `Click Paywall Button` | `paywall` | plan | — | `SubscriptionModal.tsx` |
 | `Subscribe` | `paywall` | plan | value, currency, product_id | `SubscriptionModal.tsx` |
 | `Dismiss Paywall` | `paywall` | plan | `source`, `time_on_screen_seconds` | `SubscriptionModal.tsx` |
+| `HealthKit Permission` | `permission` | `granted` \| `denied` | — | `useHealthKitData.ts`, `useHealthKitHeartRate.ts` |
+| `Watch Connected` | `device` | watch model (optional) | — | `useWatchHeartRate.ts` |
+| `Level Unlocked` | `progression` | `level_${N}` | `level` | `onda-level1-demo_27.tsx` |
+| `Circuit Complete` | `progression` | circuit id | `has_artifact`, `practices_count` | `onda-level1-demo_27.tsx` |
+| `Artifact Earned` | `progression` | circuit id | `bonus`, `quality_score` | `onda-level1-demo_27.tsx` |
 | `app_open` (deep-link) | `airbridge` | url | deeplink + query params | `airbridge.ts` |
 
 ---
 
-## 10. How to add a new event
+## 11. How to add a new event
 
 1. **Add a helper** in `src/lib/airbridge.ts` following the existing pattern (guard `typeof window.airbridge !== 'function'`, wrap in `try/catch`, log to console on emit).
 2. **Call it** from the component at the exact UX moment — not inside analytics queues or debounced handlers (that's what the Supabase analytics is for).
-3. **Update this document**, both the relevant section and the one-page reference table in §9.
+3. **Update this document**, both the relevant section and the one-page reference table in §10.
 4. **Verify on device.** In the browser console you should see `[Airbridge] … event: <name> <label>` on every emit. On iOS, check Xcode console for the native bridge call.
 
 For the planned additions (sign-up / activation / paywall dismiss / HealthKit permission / …), see [`docs/planning/airbridge-roadmap.md`](../planning/airbridge-roadmap.md).

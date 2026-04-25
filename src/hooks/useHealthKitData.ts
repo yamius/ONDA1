@@ -2,6 +2,7 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import { Capacitor } from '@capacitor/core';
 import HealthKitHeartRate, { HealthKitDataResult } from '../plugins/healthKitHeartRate';
 import { rhythmStore } from '../sleep/rhythm';
+import { trackAirbridgePermission } from '../lib/airbridge';
 
 interface UseHealthKitDataReturn {
   data: HealthKitDataResult | null;
@@ -58,6 +59,8 @@ export function useHealthKitData(): UseHealthKitDataReturn {
       setIsLoading(true);
       const result = await HealthKitHeartRate.requestFullAuthorization();
       setIsAuthorized(result.authorized);
+      // Airbridge attribution: every system-prompt resolution.
+      trackAirbridgePermission('healthkit', !!result.authorized);
       
       if (!result.authorized) {
         setError('HealthKit permission denied');

@@ -35,6 +35,9 @@ import {
   trackAirbridgeSignIn,
   trackAirbridgeOnboardingComplete,
   trackAirbridgeFirstPracticeComplete,
+  trackAirbridgeLevelUnlocked,
+  trackAirbridgeCircuitComplete,
+  trackAirbridgeArtifactEarned,
   initAirbridgeAppOpenTracking,
 } from './lib/airbridge';
 import { useSubscription } from './hooks/useSubscription';
@@ -1993,6 +1996,17 @@ const OndaLevel1 = () => {
     return true;
   }, [circuits, completedPractices]);
 
+  // Airbridge: fire `Level Unlocked` for every level that just became
+  // available. Helper is idempotent via localStorage so repeated runs of
+  // this effect (every completedPractices change) only emit once per level.
+  useEffect(() => {
+    for (let part = 2; part <= 12; part++) {
+      if (isPartUnlocked(part)) {
+        trackAirbridgeLevelUnlocked(part);
+      }
+    }
+  }, [completedPractices, isPartUnlocked]);
+
   // Проверка доступности части после загрузки / обновления completedPractices
   useEffect(() => {
     if (!isPartUnlocked(activeCircuit)) {
@@ -2295,13 +2309,26 @@ const OndaLevel1 = () => {
       return completedPractices[p.id]?.isValidForArtifact;
     });
 
-    if (allValidated && circuit.artifact && !artifacts.some(a => a.circuitId === circuit.id)) {
-      setTimeout(() => {
-        setArtifacts(prev => [...prev, {
-          ...circuit.artifact,
-          circuitId: circuit.id
-        }]);
-      }, 1000);
+    if (allValidated && !artifacts.some(a => a.circuitId === circuit.id)) {
+      // Airbridge progression — fired regardless of whether the circuit
+      // actually carries an artifact (some Parts have artifact: null).
+      // Helpers are idempotent across sessions via localStorage flags.
+      trackAirbridgeCircuitComplete(circuit.id, {
+        has_artifact: !!circuit.artifact,
+        practices_count: circuit.practices.length,
+      });
+      if (circuit.artifact) {
+        trackAirbridgeArtifactEarned(circuit.id, {
+          bonus: circuit.artifact.bonus,
+          quality_score: qualityScore,
+        });
+        setTimeout(() => {
+          setArtifacts(prev => [...prev, {
+            ...circuit.artifact,
+            circuitId: circuit.id
+          }]);
+        }, 1000);
+      }
     }
   };
 

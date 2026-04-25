@@ -332,6 +332,159 @@ export function trackAirbridgeFirstPracticeComplete(
   }
 }
 
+/**
+ * Permission events. Fired once per system-prompt resolution.
+ *
+ * @param scope         'healthkit' | 'bluetooth' | 'notifications' | …
+ * @param granted       true → user granted, false → user denied / restricted
+ */
+export function trackAirbridgePermission(
+  scope: 'healthkit' | 'bluetooth' | 'notifications' | string,
+  granted: boolean,
+): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    const action =
+      scope === 'healthkit'
+        ? 'HealthKit Permission'
+        : scope === 'bluetooth'
+        ? 'Bluetooth Permission'
+        : scope === 'notifications'
+        ? 'Notifications Permission'
+        : `${scope} Permission`;
+    window.airbridge('event', {
+      category: 'permission',
+      action,
+      label: granted ? 'granted' : 'denied',
+    });
+    console.log('[Airbridge] Permission event:', action, granted ? 'granted' : 'denied');
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track permission:', scope, e);
+  }
+}
+
+/**
+ * Watch Connected: fired the first time per app session that the paired
+ * Apple Watch reports both `paired` and `watchAppInstalled`. Caller is
+ * responsible for transition detection — this helper does not deduplicate.
+ *
+ * @param watchModel Optional model string from `OndaWatch.getStatus()`.
+ */
+export function trackAirbridgeWatchConnected(watchModel?: string | null): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    const payload: Record<string, unknown> = {
+      category: 'device',
+      action: 'Watch Connected',
+    };
+    if (watchModel) payload.label = watchModel;
+    window.airbridge('event', payload);
+    console.log('[Airbridge] Device event: Watch Connected', watchModel ?? '');
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track watch connected:', e);
+  }
+}
+
+// Helper: persistent set kept in localStorage, used to dedupe milestone events
+// (Level Unlocked, Circuit Complete, Artifact Earned) across sessions.
+function _hasMilestoneFired(key: string, id: string | number): boolean {
+  try {
+    const raw = localStorage.getItem(key);
+    if (!raw) return false;
+    const set = new Set<string>(JSON.parse(raw));
+    return set.has(String(id));
+  } catch {
+    return false;
+  }
+}
+function _markMilestoneFired(key: string, id: string | number): void {
+  try {
+    const raw = localStorage.getItem(key);
+    const set = new Set<string>(raw ? JSON.parse(raw) : []);
+    set.add(String(id));
+    localStorage.setItem(key, JSON.stringify([...set]));
+  } catch {}
+}
+
+const LEVEL_UNLOCKED_KEY = 'onda_airbridge_level_unlocked';
+const CIRCUIT_COMPLETE_KEY = 'onda_airbridge_circuit_complete';
+const ARTIFACT_EARNED_KEY = 'onda_airbridge_artifact_earned';
+
+/**
+ * Level Unlocked: fires the first time per device that a given level
+ * becomes available. Idempotent via localStorage — safe to call from a
+ * useEffect that recomputes max-unlocked-level on every progress change.
+ */
+export function trackAirbridgeLevelUnlocked(level: number): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    if (_hasMilestoneFired(LEVEL_UNLOCKED_KEY, level)) return;
+    _markMilestoneFired(LEVEL_UNLOCKED_KEY, level);
+    window.airbridge('event', {
+      category: 'progression',
+      action: 'Level Unlocked',
+      label: `level_${level}`,
+      level,
+    });
+    console.log('[Airbridge] Progression event: Level Unlocked', level);
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track level unlocked:', e);
+  }
+}
+
+/**
+ * Circuit Complete: fires the first time a user finishes every practice in
+ * a circuit (`isValidForArtifact === true` for all). Idempotent per circuit.
+ */
+export function trackAirbridgeCircuitComplete(
+  circuitId: string | number,
+  extra?: { has_artifact?: boolean; practices_count?: number },
+): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    if (_hasMilestoneFired(CIRCUIT_COMPLETE_KEY, circuitId)) return;
+    _markMilestoneFired(CIRCUIT_COMPLETE_KEY, circuitId);
+    window.airbridge('event', {
+      category: 'progression',
+      action: 'Circuit Complete',
+      label: String(circuitId),
+      ...(extra ?? {}),
+    });
+    console.log('[Airbridge] Progression event: Circuit Complete', circuitId, extra ?? '');
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track circuit complete:', e);
+  }
+}
+
+/**
+ * Artifact Earned: fires the first time a user persists an artifact for a
+ * given circuit. Idempotent per circuit (artifacts are 1:1 with circuits).
+ */
+export function trackAirbridgeArtifactEarned(
+  circuitId: string | number,
+  extra?: { bonus?: number; quality_score?: number },
+): void {
+  try {
+    if (typeof window === 'undefined') return;
+    if (typeof window.airbridge !== 'function') return;
+    if (_hasMilestoneFired(ARTIFACT_EARNED_KEY, circuitId)) return;
+    _markMilestoneFired(ARTIFACT_EARNED_KEY, circuitId);
+    window.airbridge('event', {
+      category: 'progression',
+      action: 'Artifact Earned',
+      label: String(circuitId),
+      ...(extra ?? {}),
+    });
+    console.log('[Airbridge] Progression event: Artifact Earned', circuitId, extra ?? '');
+  } catch (e) {
+    console.warn('[Airbridge] Failed to track artifact earned:', e);
+  }
+}
+
 export function identifyAirbridgeUser(params: {
   id?: string;
   email?: string;
