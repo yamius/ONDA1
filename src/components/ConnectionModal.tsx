@@ -5,6 +5,7 @@ import { Capacitor } from '@capacitor/core';
 import { HealthConnectCompactPanel } from './HealthConnectCompactPanel';
 import type { HealthConnectHook } from '../hooks/useHealthConnect';
 import { useLifeRhythm } from '../hooks/useLifeRhythm';
+import { MetricInfoModal } from './MetricInfoModal';
 
 interface HealthKitHeartRateData {
   heartRate: number | null;
@@ -108,6 +109,9 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
   } = healthKitDataFull;
   
   const [hkConnecting, setHkConnecting] = useState(false);
+  // Which metric description is currently open. `null` = no popup. Keys
+  // match `METRIC_DETAILS` in src/data/bioMetrics.ts.
+  const [selectedMetric, setSelectedMetric] = useState<string | null>(null);
   const [hkAttempted, setHkAttempted] = useState(false);
   
   const { metrics: lifeRhythmMetrics, syncFromHealthKit, history: sleepHistory } = useLifeRhythm();
@@ -282,9 +286,13 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     {t('settings.basic_metrics', 'Basic Metrics')}
                   </h4>
                   <div className="grid grid-cols-2 gap-3">
-                    <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                      isLightTheme ? 'bg-white' : 'bg-white/5'
-                    }`}>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedMetric('bpm')}
+                      className={`flex items-center gap-2 p-3 rounded-lg text-left transition-colors active:scale-[0.98] cursor-pointer ${
+                        isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                      }`}
+                    >
                       <Heart className={`w-5 h-5 ${hr ? 'text-red-500 animate-pulse' : 'text-red-500'}`} />
                       <div>
                         <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
@@ -294,11 +302,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           {hr ?? '--'} bpm
                         </div>
                       </div>
-                    </div>
+                    </button>
 
-                    <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                      isLightTheme ? 'bg-white' : 'bg-white/5'
-                    }`}>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedMetric('br')}
+                      className={`flex items-center gap-2 p-3 rounded-lg text-left transition-colors active:scale-[0.98] cursor-pointer ${
+                        isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                      }`}
+                    >
                       <Wind className="w-5 h-5 text-blue-500" />
                       <div>
                         <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
@@ -306,11 +318,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         </div>
                         <div className="text-lg font-semibold">{hkHeartRate && br ? `${br.toFixed(1)}` : '--'} /min</div>
                       </div>
-                    </div>
+                    </button>
 
-                    <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                      isLightTheme ? 'bg-white' : 'bg-white/5'
-                    }`}>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedMetric('stress')}
+                      className={`flex items-center gap-2 p-3 rounded-lg text-left transition-colors active:scale-[0.98] cursor-pointer ${
+                        isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                      }`}
+                    >
                       <Activity className="w-5 h-5 text-orange-500" />
                       <div>
                         <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
@@ -318,11 +334,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         </div>
                         <div className="text-lg font-semibold">{hkHeartRate && stress !== null ? `${stress}%` : '--%'}</div>
                       </div>
-                    </div>
+                    </button>
 
-                    <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                      isLightTheme ? 'bg-white' : 'bg-white/5'
-                    }`}>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedMetric('energy')}
+                      className={`flex items-center gap-2 p-3 rounded-lg text-left transition-colors active:scale-[0.98] cursor-pointer ${
+                        isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                      }`}
+                    >
                       <Zap className="w-5 h-5 text-yellow-500" />
                       <div>
                         <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
@@ -330,7 +350,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         </div>
                         <div className="text-lg font-semibold">{hkHeartRate && energy !== null ? `${energy}%` : '--%'}</div>
                       </div>
-                    </div>
+                    </button>
                   </div>
 
                   {/* Advanced Physiological Metrics for iOS */}
@@ -341,9 +361,13 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       {t('settings.advanced_metrics', 'Advanced Physiological Metrics')}
                     </h4>
                     <div className="space-y-2">
-                      <div className={`flex items-center justify-between p-4 rounded-xl ${
-                        isLightTheme ? 'bg-white' : 'bg-white/5'
-                      }`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMetric('hrv')}
+                        className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
+                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
                         <div>
                           <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
                             {t('settings.hrv_surrogate', 'HRV (estimate)')}
@@ -352,11 +376,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
                           {hkHeartRate && hrv !== null ? `${hrv}` : '--'}
                         </div>
-                      </div>
+                      </button>
 
-                      <div className={`flex items-center justify-between p-4 rounded-xl ${
-                        isLightTheme ? 'bg-white' : 'bg-white/5'
-                      }`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMetric('csi')}
+                        className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
+                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
                         <div>
                           <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
                             {t('settings.cardiac_stability', 'Cardiac Stability Index')}
@@ -365,11 +393,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
                           {hkHeartRate && csi !== null ? csi.toFixed(2) : '--'}
                         </div>
-                      </div>
+                      </button>
 
-                      <div className={`flex items-center justify-between p-4 rounded-xl ${
-                        isLightTheme ? 'bg-white' : 'bg-white/5'
-                      }`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMetric('recovery')}
+                        className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
+                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
                         <div>
                           <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
                             {t('settings.recovery_rate', 'Recovery Rate')}
@@ -378,11 +410,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
                           {hkHeartRate && recoveryRate !== null ? `${(recoveryRate * 100).toFixed(0)}%` : '--'}
                         </div>
-                      </div>
+                      </button>
 
-                      <div className={`flex items-center justify-between p-4 rounded-xl ${
-                        isLightTheme ? 'bg-white' : 'bg-white/5'
-                      }`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMetric('slope')}
+                        className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
+                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
                         <div>
                           <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
                             {t('settings.hr_trend_slope', 'HR trend slope')}
@@ -391,11 +427,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
                           {hkHeartRate && hrTrendSlope !== null ? hrTrendSlope.toFixed(2) : '--'}
                         </div>
-                      </div>
+                      </button>
 
-                      <div className={`flex items-center justify-between p-4 rounded-xl ${
-                        isLightTheme ? 'bg-white' : 'bg-white/5'
-                      }`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMetric('acceleration')}
+                        className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
+                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
                         <div>
                           <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
                             {t('settings.hr_acceleration', 'HR Acceleration')}
@@ -404,7 +444,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
                           {hkHeartRate && hrAcceleration !== null ? hrAcceleration.toFixed(2) : '--'}
                         </div>
-                      </div>
+                      </button>
                     </div>
                   </div>
 
@@ -416,71 +456,95 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       {t('settings.emotional_metrics', 'Emotional State Metrics')}
                     </h4>
                     <div className="space-y-2">
-                      <div className={`flex items-center justify-between p-4 rounded-xl ${
-                        isLightTheme ? 'bg-white' : 'bg-white/5'
-                      }`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMetric('alarm')}
+                        className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
+                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
                         <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
                           {t('settings.alarm_anxiety', 'Alarm / Anxiety')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
                           {hkHeartRate && arousal !== null ? `${arousal}%` : '--'}
                         </div>
-                      </div>
+                      </button>
 
-                      <div className={`flex items-center justify-between p-4 rounded-xl ${
-                        isLightTheme ? 'bg-white' : 'bg-white/5'
-                      }`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMetric('relaxation')}
+                        className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
+                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
                         <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
                           {t('settings.relaxation_calmness', 'Relaxation / Calmness')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
                           {hkHeartRate && calm !== null ? `${calm}%` : '--'}
                         </div>
-                      </div>
+                      </button>
 
-                      <div className={`flex items-center justify-between p-4 rounded-xl ${
-                        isLightTheme ? 'bg-white' : 'bg-white/5'
-                      }`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMetric('focus')}
+                        className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
+                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
                         <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
                           {t('settings.focus_concentration', 'Focus / Concentration')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
                           {hkHeartRate && focus !== null ? `${focus}%` : '--'}
                         </div>
-                      </div>
+                      </button>
 
-                      <div className={`flex items-center justify-between p-4 rounded-xl ${
-                        isLightTheme ? 'bg-white' : 'bg-white/5'
-                      }`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMetric('excitement')}
+                        className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
+                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
                         <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
                           {t('settings.excitement', 'Excitement')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
                           {hkHeartRate && excitement !== null ? `${excitement}%` : '--'}
                         </div>
-                      </div>
+                      </button>
 
-                      <div className={`flex items-center justify-between p-4 rounded-xl ${
-                        isLightTheme ? 'bg-white' : 'bg-white/5'
-                      }`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMetric('fatigue')}
+                        className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
+                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
                         <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
                           {t('settings.fatigue_label', 'Fatigue')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
                           {hkHeartRate && fatigue !== null ? `${fatigue}%` : '--'}
                         </div>
-                      </div>
+                      </button>
 
-                      <div className={`flex items-center justify-between p-4 rounded-xl ${
-                        isLightTheme ? 'bg-white' : 'bg-white/5'
-                      }`}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMetric('flow')}
+                        className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
+                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        }`}
+                      >
                         <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
                           {t('settings.flow_label', 'Flow')}
                         </div>
                         <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
                           {hkHeartRate && flow !== null ? `${flow}%` : '--'}
                         </div>
-                      </div>
+                      </button>
                     </div>
 
                     <div className={`mt-4 text-center text-xs ${
@@ -1212,6 +1276,14 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
           </div>
         </div>
       </div>
+
+      {/* Per-metric description popup. Sits at z-[60] so it overlays the
+          ConnectionModal (z-50) when a card is tapped. */}
+      <MetricInfoModal
+        metricKey={selectedMetric}
+        onClose={() => setSelectedMetric(null)}
+        isLightTheme={isLightTheme}
+      />
     </div>
   );
 };
