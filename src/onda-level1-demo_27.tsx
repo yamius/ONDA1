@@ -632,8 +632,28 @@ const OndaLevel1 = () => {
             stability: 100
           });
           setSleepTracking(progress.sleep_tracking || { day: 0, lastCheck: null });
-          setSelectedLanguage('EN');
-          i18n.changeLanguage('en');
+          // Restore the user's saved language. Earlier this branch
+          // unconditionally set EN here, which was the second of two
+          // force-English bugs (the first being src/i18n.ts wiping
+          // localStorage on init). Now we only override if Supabase has
+          // a saved choice — and we trust the language detector / user's
+          // last manual pick if Supabase is empty.
+          if (progress.selected_language) {
+            const supaLang = String(progress.selected_language).toUpperCase();
+            const i18nLang = supaLang.toLowerCase();
+            const supportedUpper = ['EN', 'ES', 'RU', 'UK', 'ZH'];
+            if (supportedUpper.includes(supaLang)) {
+              setSelectedLanguage(supaLang);
+              if (i18n.language !== i18nLang) {
+                i18n.changeLanguage(i18nLang);
+              }
+            }
+          } else {
+            // No saved choice — sync the local state to whatever the
+            // detector picked so the picker UI shows the right one.
+            const detected = (i18n.language || 'en').slice(0, 2).toUpperCase();
+            setSelectedLanguage(detected);
+          }
           setSelectedLevel(progress.selected_level || 1);
           setSelectedChapter(progress.selected_chapter || 1);
           setIsLightTheme(progress.is_light_theme || false);
