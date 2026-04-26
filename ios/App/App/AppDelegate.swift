@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             semanticAttributes: [:],
             customAttributes: [
                 "source": "didFinishLaunching_sync",
-                "v": "1.0.7",
+                "v": "1.0.8",
                 "ios": "iOS26",
             ]
         )

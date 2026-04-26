@@ -12,6 +12,15 @@
     <meta property="og:title" content="ONDA Life" />
     <meta property="og:site_name" content="ONDA Life" />
 
+    <!-- Match the iOS WebView/native background (capacitor.config.ts → ios.backgroundColor: #000000)
+         so the WebView's first frame is dark instead of white. On iOS 26 + WKWebView,
+         the WebView sometimes won't render its first frame until user interaction —
+         a white <body> made that look like a stuck white screen until tap. -->
+    <style>
+      html, body { background: #000; margin: 0; }
+      #root { background: #000; min-height: 100vh; }
+    </style>
+
     <!-- Polyfill: crypto.randomUUID for Android WebView < API 31 -->
     <script>
       if (typeof crypto !== 'undefined' && !crypto.randomUUID) {
