@@ -3,13 +3,11 @@ import Capacitor
 import WatchConnectivity
 import FirebaseCore
 import Airbridge
-import AppTrackingTransparency
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    private var attObserver: Any?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // ⚠️ Order matters: Firebase MUST initialize before Airbridge.
@@ -49,45 +47,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             semanticAttributes: [:],
             customAttributes: [
                 "source": "didFinishLaunching_sync",
-                "v": "1.0.6",
+                "v": "1.0.7",
                 "ios": "iOS26",
             ]
         )
         print("[ONDA] Airbridge SYNC sanity probe sent")
-
-        // Запрашиваем ATT (App Tracking Transparency) — нужно для IDFA на iOS 14+
-        attObserver = NotificationCenter.default.addObserver(
-            forName: UIApplication.didBecomeActiveNotification,
-            object: nil,
-            queue: nil
-        ) { [weak self] _ in
-            if #available(iOS 14, *) {
-                ATTrackingManager.requestTrackingAuthorization { status in
-                    print("[ONDA] ATT status: \(status.rawValue)")
-                    // Sanity probe: fire one event from the main app target
-                    // ONLY after the user has resolved the ATT prompt. Events
-                    // queued before ATT decision can be silently buffered or
-                    // dropped by the SDK depending on consent state. If this
-                    // probe doesn't show up in App Real-time Log even after
-                    // ATT=Authorized, the SDK isn't delivering custom events
-                    // for this account at all — bug isn't in our code.
-                    Airbridge.trackEvent(
-                        category: "AppDelegate.SanityProbe",
-                        semanticAttributes: [:],
-                        customAttributes: [
-                            "source": "att_callback",
-                            "att_status": "\(status.rawValue)",
-                            "v": "1.0.6",
-                        ]
-                    )
-                    print("[ONDA] Airbridge sanity probe sent post-ATT")
-                }
-            }
-            if let observer = self?.attObserver {
-                NotificationCenter.default.removeObserver(observer)
-                self?.attObserver = nil
-            }
-        }
 
         // Активируем WCSession рано для получения данных с часов
         if WCSession.isSupported() {
