@@ -89,7 +89,10 @@ export function useHealthKitData(): UseHealthKitDataReturn {
       if (result?.sleep?.main) {
         const { sleepStart, wakeTime, durationMin } = result.sleep.main;
         if (sleepStart && wakeTime && durationMin) {
-          const today = new Date().toISOString().split('T')[0];
+          // Local-timezone YYYY-MM-DD — must match the native plugin key.
+          // toISOString() is UTC and breaks the streak around local midnight.
+          const now = new Date();
+          const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
           rhythmStore.addDay({
             date: today,
             sleepStart,

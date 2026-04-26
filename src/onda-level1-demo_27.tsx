@@ -311,13 +311,17 @@ const OndaLevel1 = () => {
     
     syncRhythm();
 
-    // Периодическое обновление UI и синхронизация (каждые 30 секунд)
+    // Periodic UI refresh + HealthKit re-sync.
+    // Every 30 seconds was overkill — sleep data only updates once per day
+    // (after the user's morning sync from Apple Watch). Pulling 14 days of
+    // history twice a minute drains battery for no benefit. 10-minute
+    // cadence is plenty to catch the morning sync, and an explicit foreground
+    // sync still happens on app open above.
     const id = setInterval(() => {
-      // Пересинхронизируем из HealthKit периодически
       rhythmStore.syncFromHealthKit().catch(() => {});
       setRhythmProgress(rhythmStore.progress());
       setRhythmLog(rhythmStore.getLog());
-    }, 30000); // Обновляем раз в 30 секунд
+    }, 10 * 60 * 1000); // 10 minutes
     return () => clearInterval(id);
   }, []);
 

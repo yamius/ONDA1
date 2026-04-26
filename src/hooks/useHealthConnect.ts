@@ -114,7 +114,11 @@ export function useHealthConnect(): HealthConnectHook {
         },
         sleep: {
           main: {
-            date: new Date().toISOString().split('T')[0],
+            // Local-timezone YYYY-MM-DD to match the native plugin / rhythmStore.
+            date: (() => {
+              const n = new Date();
+              return `${n.getFullYear()}-${String(n.getMonth() + 1).padStart(2, '0')}-${String(n.getDate()).padStart(2, '0')}`;
+            })(),
             sleepStart: "23:40",
             wakeTime: "07:05",
             durationMin: 445

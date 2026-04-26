@@ -40,6 +40,20 @@ const OPTIMAL_SLEEP_MAX = 540;   // Максимум 9 часов
 
 // === Утилиты ===
 
+/**
+ * Local-timezone YYYY-MM-DD. Critical: never use Date.toISOString() for the
+ * date key here — that returns UTC and disagrees with the native iOS plugin,
+ * which keys sleep records by Calendar.current.startOfDay (local). The
+ * mismatch eats up to a full streak day for users east/west of UTC who
+ * check the dashboard around midnight local time.
+ */
+function localDateKey(d: Date): string {
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
 function hmToMin(x: string): number {
   const [h, m] = x.split(":").map(Number);
   return h * 60 + m;
@@ -122,9 +136,18 @@ export const rhythmStore = {
   /**
    * Рассчитать прогресс артефакта (0-7)
    * Возвращает количество "хороших" дней подряд
-   * 
-   * Условие "хорошего" дня: сон от 7 до 9 часов (420-540 мин)
-   * Время засыпания/пробуждения НЕ учитывается
+   *
+   * Условие "хорошего" дня: сон от 7 до 9 часов (420-540 мин).
+   * Время засыпания/пробуждения НЕ учитывается.
+   *
+   * Streak считается от **самой свежей записи** (не строго от "сегодня"),
+   * но только если эта запись = сегодня или вчера. Это нужно потому что
+   * пользователь может смотреть дашборд днём — до того как поспал и
+   * проснулся «сегодня» — и записи за сегодняшнюю ночь в HealthKit ещё
+   * нет. В таком случае мы стартуем со вчерашнего дня и продолжаем назад.
+   *
+   * Если самая свежая запись старше вчерашнего дня → streak реально
+   * сломан, возвращаем 0.
    */
   progress(): number {
     const days = load();
@@ -132,33 +155,45 @@ export const rhythmStore = {
 
     // Сортируем по дате (новые первые)
     const sorted = [...days].sort((a, b) => b.date.localeCompare(a.date));
-    
-    // Считаем streak от сегодня назад
-    let streak = 0;
+
     const today = new Date();
-    
+    const todayKey = localDateKey(today);
+    const yesterday = new Date(today);
+    yesterday.setDate(today.getDate() - 1);
+    const yesterdayKey = localDateKey(yesterday);
+
+    // Latest record must be today or yesterday — otherwise the streak
+    // is genuinely broken (more than one day missing).
+    const latest = sorted[0];
+    if (latest.date !== todayKey && latest.date !== yesterdayKey) {
+      return 0;
+    }
+
+    // Anchor on the latest record's date and walk backwards day by day.
+    const anchor = new Date(`${latest.date}T00:00:00`);
+
+    let streak = 0;
     for (let i = 0; i < sorted.length && i < 14; i++) {
       const record = sorted[i];
-      const expectedDate = new Date(today);
-      expectedDate.setDate(today.getDate() - i);
-      
-      // Проверяем что это последовательный день
-      const expectedStr = expectedDate.toISOString().split('T')[0];
-      
-      if (record.date !== expectedStr) {
-        break; // Пропуск дня - streak прерывается
+      const expectedDate = new Date(anchor);
+      expectedDate.setDate(anchor.getDate() - i);
+      const expectedKey = localDateKey(expectedDate);
+
+      if (record.date !== expectedKey) {
+        break; // gap in days
       }
-      
-      // Проверяем только длительность сна: 7-9 часов (420-540 мин)
-      const durationOK = record.durationMin >= OPTIMAL_SLEEP_MIN && record.durationMin <= OPTIMAL_SLEEP_MAX;
-      
+
+      const durationOK =
+        record.durationMin >= OPTIMAL_SLEEP_MIN &&
+        record.durationMin <= OPTIMAL_SLEEP_MAX;
+
       if (durationOK) {
         streak++;
       } else {
-        break; // Недостаточный или избыточный сон - streak прерывается
+        break; // bad sleep day breaks streak
       }
     }
-    
+
     return Math.min(streak, 7);
   },
 
