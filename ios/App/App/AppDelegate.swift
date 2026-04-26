@@ -36,23 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Airbridge.initializeSDK(option: airbridgeOption)
         print("[ONDA] Airbridge iOS SDK v4 initialized ✅ (bare init)")
 
-        // SYNCHRONOUS sanity probe — fires immediately on the main thread,
-        // no async dispatch, no ATT callback wait. Most direct possible
-        // trackEvent call. If this doesn't reach App Real-time Log, the
-        // SDK simply isn't delivering custom events on iOS 26.4.1 with
-        // SDK version 4.1.3 — likely a compatibility regression — and
-        // the only fix is bumping the pod version.
-        Airbridge.trackEvent(
-            category: "Sync.SanityProbe",
-            semanticAttributes: [:],
-            customAttributes: [
-                "source": "didFinishLaunching_sync",
-                "v": "1.0.8",
-                "ios": "iOS26",
-            ]
-        )
-        print("[ONDA] Airbridge SYNC sanity probe sent")
-
         // Активируем WCSession рано для получения данных с часов
         if WCSession.isSupported() {
             print("[ONDA] WCSession supported, activating via OndaWatchManager")
