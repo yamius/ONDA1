@@ -4517,14 +4517,23 @@ const OndaLevel1 = () => {
 
               {activeCircuit >= 1 && activeCircuit <= 12 && (
                 <div className="mt-6 rounded-xl overflow-hidden" style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+                  {/*
+                    youtube-nocookie.com is YouTube's privacy-enhanced embed
+                    domain. We had switched to plain youtube.com for SEO of
+                    the landing page (which has its own embeds), but inside
+                    the Capacitor WebView the embeds get YouTube error 153
+                    on iOS 26 — the privacy-enhanced host doesn't trigger
+                    that gate. The SEO concern doesn't apply here: this is
+                    the iOS app bundle, not a crawlable web page.
+                  */}
                   <iframe
                     src={activeCircuit >= 10 && activeCircuit <= 12
-                      ? "https://www.youtube.com/embed/qsDhvNptrZA"
+                      ? "https://www.youtube-nocookie.com/embed/qsDhvNptrZA"
                       : activeCircuit >= 7 && activeCircuit <= 9
-                      ? "https://www.youtube.com/embed/TtqoMQoS4WQ"
+                      ? "https://www.youtube-nocookie.com/embed/TtqoMQoS4WQ"
                       : activeCircuit >= 4 && activeCircuit <= 6
-                      ? "https://www.youtube.com/embed/3HCOCpWwC9Y"
-                      : "https://www.youtube.com/embed/fZjKE81nIJ0"}
+                      ? "https://www.youtube-nocookie.com/embed/3HCOCpWwC9Y"
+                      : "https://www.youtube-nocookie.com/embed/fZjKE81nIJ0"}
                     title="ONDA Video"
                     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', borderRadius: '0.75rem' }}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
