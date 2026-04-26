@@ -789,14 +789,14 @@
     "confirmation_message": "Мы отправили вам ссылку для подтверждения. Пожалуйста, проверьте свою почту и перейдите по ссылке, чтобы подтвердить адрес электронной почты."
   },
   "labels": {
-    "quality": "Quality",
+    "quality": "Качество",
     "time": "Время",
     "pulse": "Пульс",
-    "reward": "Reward",
+    "reward": "Награда",
     "progress": "Прогресс",
     "pulse_bpm": "Пульс (BPM)",
     "stability": "Стабильность",
-    "bonus": "Bonus",
+    "bonus": "Бонус",
     "to_qnt_generation": "к генерации OND",
     "hours_ago": "ч назад",
     "complete_all_practices": "Выполнить все практики уровня",

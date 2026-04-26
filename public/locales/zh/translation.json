@@ -892,7 +892,7 @@
     "load_error": "无法加载文档，请稍后再试。"
   },
   "part_info": {
-    "button": "Part's info",
+    "button": "部分详情",
     "back_to_part": "← 返回第{{part}}部分",
     "level_1": {
       "title": "第一部分：我存在",
