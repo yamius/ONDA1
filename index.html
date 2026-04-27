@@ -62,66 +62,95 @@
       }
     </script>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LSLFKSZCD3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <!-- Web-only analytics SDKs (gtag, Meta Pixel, AdSense, Airbridge web).
+         These ONLY make sense when ONDA is served as a web page; in the
+         Capacitor iOS/Android app they're duplicates of native plugins
+         (Firebase Analytics, Airbridge native SDK 4.x) and just burn
+         cold-start time on DNS+TLS+fetch for scripts that never have
+         anything to do. WKWebView holds first paint until those finish
+         loading — that was the real source of the 6-second cold-start
+         black screen, not the JS bundle.
 
-      gtag('config', 'G-LSLFKSZCD3');
-    </script>
-
-    <!-- Meta Pixel Code -->
+         The Capacitor WebView serves index.html from `capacitor://localhost`
+         (iOS) or `https://localhost` (Android), so we use that to detect
+         a native build and skip the web SDKs entirely. The same SDKs run
+         normally on the public web build (vercel/netlify/etc.) where
+         hostname is the real domain. -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '2615262235497922');
-    fbq('track', 'PageView');
-    </script>
-    <!-- End Meta Pixel Code -->
+      (function () {
+        var host = window.location.hostname || '';
+        var proto = window.location.protocol || '';
+        var isCapacitor =
+          proto === 'capacitor:' ||
+          host === 'localhost' ||
+          host === '127.0.0.1';
+        if (isCapacitor) {
+          // Stub so any code that references window.airbridge() doesn't throw.
+          // Native Airbridge plugin handles the actual events on iOS/Android.
+          if (typeof window.airbridge !== 'function') {
+            window.airbridge = function () {};
+            window.airbridge.queue = [];
+          }
+          // Same stubs for gtag/fbq.
+          window.dataLayer = window.dataLayer || [];
+          window.gtag = window.gtag || function () {};
+          window.fbq = window.fbq || function () {};
+          return;
+        }
 
-    <!-- Google AdSense -->
-    <script>
-      // Загружаем AdSense только в продакшене
-      if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
-        const script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3662704213347646';
-        script.crossOrigin = 'anonymous';
-        document.head.appendChild(script);
-      }
-    </script>
+        // Web build only — load the SDKs.
+        // Google Analytics (gtag).
+        var gtagSrc = document.createElement('script');
+        gtagSrc.async = true;
+        gtagSrc.src = 'https://www.googletagmanager.com/gtag/js?id=G-LSLFKSZCD3';
+        document.head.appendChild(gtagSrc);
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', 'G-LSLFKSZCD3');
 
-    <!-- Airbridge Web SDK -->
-    <script>
-      (function(a,i,r,b){
-        if(typeof a[b]==='function') return;
-        a[b]=function(){a[b].queue.push(arguments)};
-        a[b].queue=[];
-        a[b]._i=Date.now();
-        var s=i.createElement('script');
-        s.src=r;
-        s.async=true;
-        i.getElementsByTagName('head')[0].appendChild(s);
-      })(window,document,'https://sdk-scripts.airbridge.io/airbridge.js','airbridge');
-      window.airbridge('init', {
-        app: 'ondalife',
-        webToken: '1efbd0e8973f417f9dd9b7f47ac6e7c9',
-        utmParsing: true,
-        cookieWindow: 30
-      });
+        // Meta Pixel.
+        !(function (f, b, e, v, n, t, s) {
+          if (f.fbq) return; n = f.fbq = function () {
+            n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+          };
+          if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+          n.queue = []; t = b.createElement(e); t.async = !0;
+          t.src = v; s = b.getElementsByTagName(e)[0];
+          s.parentNode.insertBefore(t, s);
+        })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        window.fbq('init', '2615262235497922');
+        window.fbq('track', 'PageView');
+
+        // Google AdSense.
+        var ads = document.createElement('script');
+        ads.async = true;
+        ads.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3662704213347646';
+        ads.crossOrigin = 'anonymous';
+        document.head.appendChild(ads);
+
+        // Airbridge web SDK.
+        (function (a, i, r, b) {
+          if (typeof a[b] === 'function') return;
+          a[b] = function () { a[b].queue.push(arguments); };
+          a[b].queue = []; a[b]._i = Date.now();
+          var s = i.createElement('script');
+          s.src = r; s.async = true;
+          i.getElementsByTagName('head')[0].appendChild(s);
+        })(window, document, 'https://sdk-scripts.airbridge.io/airbridge.js', 'airbridge');
+        window.airbridge('init', {
+          app: 'ondalife',
+          webToken: '1efbd0e8973f417f9dd9b7f47ac6e7c9',
+          utmParsing: true,
+          cookieWindow: 30,
+        });
+      })();
 
       // Ранний обработчик deep link событий от Android WebView bridge.
       // Необходим здесь (в HTML, до загрузки бандла) потому что Android
-      // может диспатчить событие до полной инициализации JS-бандла.
-      window.addEventListener('airbridge-deeplink', function(e) {
+      // может диспатчить событие до полной инициализации JS-бандла. Stub
+      // выше гарантирует что window.airbridge() не упадёт в нативной сборке.
+      window.addEventListener('airbridge-deeplink', function (e) {
         var url = e.detail && e.detail.url;
         if (!url) return;
         console.log('[Airbridge] Deep link received (early handler):', url);
@@ -129,7 +158,7 @@
           if (typeof window.airbridge === 'function') {
             window.airbridge('event', { category: 'airbridge', action: 'app_open', deeplink: url });
           }
-        } catch(err) {
+        } catch (err) {
           console.warn('[Airbridge] Failed to forward deep link:', err);
         }
       });
