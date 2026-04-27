@@ -5,22 +5,11 @@ import ErrorBoundary from './components/ErrorBoundary';
 import './index.css';
 import './i18n';
 
-// Each milestone is stamped onto the on-screen splash overlay so a tester
-// can see exactly where cold-start time is going without needing Safari
-// Web Inspector. Defined in index.html.
-declare global {
-  interface Window {
-    ondaBootMark?: (label: string) => void;
-  }
-}
-window.ondaBootMark?.('main_tsx_parsed');
-
 // Render IMMEDIATELY. Everything that isn't required to paint the first
 // frame — Sentry, resourceTracker, crash detector, analytics, deep-link
 // handlers — used to be loaded as static imports at module init, dragging
 // each one's module-evaluation cost into the cold-start critical path.
 // They now run via runWhenIdle() below, after React has mounted.
-window.ondaBootMark?.('before_createRoot');
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ErrorBoundary>
@@ -28,7 +17,6 @@ createRoot(document.getElementById('root')!).render(
     </ErrorBoundary>
   </StrictMode>
 );
-window.ondaBootMark?.('after_createRoot');
 // Boot splash (index.html → #onda-boot-splash) is removed by the MainScene
 // wrapper inside App.tsx after the lazy onda-level1-demo_27 chunk mounts.
 
