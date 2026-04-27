@@ -37,6 +37,19 @@
         width: 56px; height: 56px;
         display: flex; align-items: center; justify-content: center;
       }
+      /* Boot timing diagnostic — shown beneath the spinner so the user can
+         literally read where the cold-start time is going. Removed when
+         the splash fades out. */
+      .onda-boot-timing {
+        position: absolute;
+        top: calc(50% + 60px);
+        left: 0; right: 0;
+        text-align: center;
+        font: 10px/1.4 -apple-system, ui-monospace, monospace;
+        color: rgba(127, 227, 196, 0.85);
+        white-space: pre;
+        pointer-events: none;
+      }
       .onda-boot-logo {
         width: 47px; height: 47px;
         border-radius: 50%;
@@ -175,6 +188,7 @@
          on the WebView's very first frame. main.tsx fades it out once React
          has committed its initial render. -->
     <div id="onda-boot-splash" aria-hidden="true">
+      <div id="onda-boot-timing" class="onda-boot-timing"></div>
       <div class="onda-boot-stage">
         <img class="onda-boot-logo" src="/onda-logo.png" alt="" />
         <svg class="onda-boot-ring" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
@@ -197,10 +211,25 @@
     </div>
     <div id="root"></div>
     <script>
-      // Early debug logging for iOS white screen debugging
+      // Boot timing — append a stamped line for each milestone, both to
+      // the on-screen timing div and to console / window.ondaBootLog. The
+      // app's first script tag fires "html_parsed", main.tsx adds more.
       console.log('[ONDA] HTML loaded, starting app...');
+      window.ondaBootStart = window.ondaBootStart || performance.now();
       window.ondaBootLog = [];
-      window.ondaBootLog.push({ t: Date.now(), msg: 'HTML loaded' });
+      window.ondaBootMark = function (label) {
+        var t = Math.round(performance.now() - window.ondaBootStart);
+        window.ondaBootLog.push({ t: t, msg: label });
+        console.log('[ONDA boot]', t + 'ms', label);
+        var el = document.getElementById('onda-boot-timing');
+        if (el) {
+          var lines = window.ondaBootLog.map(function (l) {
+            return String(l.t).padStart(5) + 'ms  ' + l.msg;
+          });
+          el.textContent = lines.join('\n');
+        }
+      };
+      window.ondaBootMark('html_parsed');
       
       window.onerror = function(msg, url, line, col, error) {
         window.ondaBootLog.push({ t: Date.now(), msg: 'ERROR: ' + msg, url: url, line: line });
