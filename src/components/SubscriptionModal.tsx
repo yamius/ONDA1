@@ -158,11 +158,16 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
       return;
     }
 
+    // Use Google Analytics' standard ecommerce param names (`value`,
+    // `currency`, `transaction_id`, `items`) so GA4 / Google Ads can do
+    // ROAS-style optimization on these conversions instead of treating
+    // them as opaque custom events. RevenueCat exposes the localized price
+    // and ISO currency right on the package, so we forward both verbatim.
     track('purchase_started', {
       plan: selectedPlan,
       product_id: pkg.product.identifier,
-      price: pkg.product.price,
-      currency: pkg.product.currencyCode,
+      value: pkg.product.price,
+      currency: pkg.product.currencyCode ?? 'USD',
     });
 
     try {
@@ -171,6 +176,10 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
         track('purchase_succeeded', {
           plan: selectedPlan,
           product_id: pkg.product.identifier,
+          // Critical for Google Ads ROAS bidding — the `value` + `currency`
+          // pair is what the optimizer scores conversions on.
+          value: pkg.product.price,
+          currency: pkg.product.currencyCode ?? 'USD',
         });
         trackAirbridgeSubscribe({
           value: pkg.product.price,
