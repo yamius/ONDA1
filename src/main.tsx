@@ -140,3 +140,14 @@ createRoot(document.getElementById('root')!).render(
     </ErrorBoundary>
   </StrictMode>
 );
+
+// Remove the boot splash from index.html once React has committed its first
+// render. requestAnimationFrame fires after the layout/paint following the
+// initial mount, so the live UI is on screen before the splash fades out —
+// no flash of empty <body> between the two.
+requestAnimationFrame(() => {
+  const splash = document.getElementById('onda-boot-splash');
+  if (!splash) return;
+  splash.classList.add('onda-fade-out');
+  setTimeout(() => splash.remove(), 300);
+});

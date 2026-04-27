@@ -12,13 +12,27 @@
     <meta property="og:title" content="ONDA Life" />
     <meta property="og:site_name" content="ONDA Life" />
 
-    <!-- Match the iOS WebView/native background (capacitor.config.ts → ios.backgroundColor: #000000)
-         so the WebView's first frame is dark instead of white. On iOS 26 + WKWebView,
-         the WebView sometimes won't render its first frame until user interaction —
-         a white <body> made that look like a stuck white screen until tap. -->
+    <!-- Cold-start visual continuity:
+         iOS shows LaunchScreen.storyboard (Splash image, logo on white) until
+         the WebView is ready. Then the WebView appears with empty <body> while
+         the JS bundle loads, parses and the React tree mounts — that's the
+         6-second "black screen" users see on first cold start. We mask it with
+         an inline HTML splash that mirrors the native one (same logo, same
+         layout). main.tsx removes it once React has rendered.
+
+         The fade-out keeps the seam invisible: storyboard → HTML splash →
+         live app, all on the same canvas, no jarring background flash. -->
     <style>
       html, body { background: #000; margin: 0; }
       #root { background: #000; min-height: 100vh; }
+      #onda-boot-splash {
+        position: fixed; inset: 0; z-index: 2147483647;
+        background: #000;
+        display: flex; align-items: center; justify-content: center;
+        transition: opacity 250ms ease-out;
+      }
+      #onda-boot-splash.onda-fade-out { opacity: 0; pointer-events: none; }
+      #onda-boot-splash svg { width: 96px; height: 96px; }
     </style>
 
     <!-- Polyfill: crypto.randomUUID for Android WebView < API 31 -->
@@ -111,6 +125,24 @@
     src="https://www.facebook.com/tr?id=2615262235497922&ev=PageView&noscript=1"
     /></noscript>
 
+    <!-- Boot splash — mirrors the native LaunchScreen.storyboard layout
+         (centered logo on dark background) so users keep seeing the same
+         visual until React renders. main.tsx removes this once #root has
+         children. SVG mirrors the blue cross/plus mark in splash-2732x2732.png. -->
+    <div id="onda-boot-splash" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="onda-splash-grad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#7CC8FF"/>
+            <stop offset="100%" stop-color="#2E9BE6"/>
+          </linearGradient>
+        </defs>
+        <g transform="rotate(45 100 100)" fill="url(#onda-splash-grad)">
+          <rect x="84" y="30" width="32" height="140" rx="6"/>
+          <rect x="30" y="84" width="140" height="32" rx="6"/>
+        </g>
+      </svg>
+    </div>
     <div id="root"></div>
     <script>
       // Early debug logging for iOS white screen debugging
