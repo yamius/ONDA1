@@ -7,6 +7,11 @@
 
 import { supabase } from '../lib/supabase';
 import { Capacitor } from '@capacitor/core';
+// Static import — Vite bundles the plugin so it actually resolves at runtime
+// inside the iOS WebView. The plugin object exists on every platform;
+// FirebaseAnalytics.logEvent on web is a no-op, on iOS it bridges to the
+// native Firebase pod, on Android we use our own analytics-bridge instead.
+import { FirebaseAnalytics } from '@capacitor-community/firebase-analytics';
 
 // Event types for type safety
 export type AnalyticsEventName =
@@ -69,6 +74,80 @@ interface StoredEvent extends AnalyticsEvent {
 const QUEUE_KEY = 'onda_analytics_queue';
 const SESSION_KEY = 'onda_session_id';
 const ANONYMOUS_ID_KEY = 'onda_anonymous_id';
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Firebase mirror.
+//
+// Every event tracked through this service is also fired into Firebase
+// Analytics (and from there into GA4 → Google Ads conversions). Until this
+// commit, AnalyticsService.track() only wrote to Supabase, so GA4's "key
+// events" list filled up with `No stream data detected` for every custom
+// event the app emits. Mirroring here puts every track() call onto both
+// pipelines.
+//
+// iOS    → @capacitor-community/firebase-analytics → native Firebase pod.
+// Android → src/lib/analytics-bridge.ts (existing native bridge).
+// Web    → FirebaseAnalytics.logEvent is a no-op stub.
+//
+// Naming: GA4 event names must be snake_case, ≤ 40 chars; param string
+// values are clamped to 100 chars and nullish values dropped.
+// ─────────────────────────────────────────────────────────────────────────────
+
+const _firebaseReady: boolean = (() => {
+  try {
+    return typeof FirebaseAnalytics?.logEvent === 'function';
+  } catch {
+    return false;
+  }
+})();
+
+function _toSnake(s: string): string {
+  return s
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '')
+    .slice(0, 40);
+}
+
+function _sanitizeFirebaseParams(p?: Record<string, unknown>): Record<string, any> {
+  if (!p) return {};
+  const out: Record<string, any> = {};
+  for (const [k, v] of Object.entries(p)) {
+    if (v === null || v === undefined) continue;
+    const key = _toSnake(k);
+    if (typeof v === 'string') out[key] = v.slice(0, 100);
+    else if (typeof v === 'number' || typeof v === 'boolean') out[key] = v;
+    else out[key] = String(v).slice(0, 100);
+  }
+  return out;
+}
+
+function _mirrorToFirebase(eventName: string, metadata?: Record<string, unknown>): void {
+  // Fire-and-forget — Firebase delivery must never block analytics.track()
+  // or the offline queue path.
+  (async () => {
+    try {
+      const name = _toSnake(eventName);
+      const safeParams = _sanitizeFirebaseParams(metadata);
+      const platform = Capacitor.getPlatform();
+      if (platform === 'android') {
+        const { trackEventAndroid, isAndroidBridgeAvailable } = await import(
+          '../lib/analytics-bridge'
+        );
+        if (isAndroidBridgeAvailable()) {
+          trackEventAndroid(name, safeParams);
+          console.log('[Firebase][android] Event mirrored:', name, safeParams);
+        }
+      } else if (platform === 'ios' && _firebaseReady) {
+        await FirebaseAnalytics.logEvent({ name, params: safeParams });
+        console.log('[Firebase][ios] Event mirrored:', name, safeParams);
+      }
+    } catch (e) {
+      console.warn('[Firebase] mirror failed:', eventName, e);
+    }
+  })();
+}
 
 class AnalyticsService {
   private sessionId: string;
@@ -258,6 +337,11 @@ class AnalyticsService {
     };
 
     console.log(`[Analytics] Track: ${eventName}`, metadata);
+
+    // Mirror to Firebase Analytics so the same event flows into GA4 and is
+    // available as a Google Ads conversion. Fire-and-forget, never blocks
+    // the Supabase write path below.
+    _mirrorToFirebase(eventName, metadata);
 
     // Resource snapshot diagnostics: emit a parallel event whenever
     // practice_view fires, so we can correlate memory growth with the
