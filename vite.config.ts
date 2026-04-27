@@ -33,6 +33,28 @@ export default defineConfig(({ mode }) => {
   build: {
     // Needed so Sentry can map minified stacks back to source.
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        // Split big vendor libraries into their own chunks so the initial
+        // bundle (main.tsx + App.tsx + i18n) stays small. Each chunk is
+        // cached separately by the WebView and parsed only when its
+        // dynamic import fires — Three.js, Sentry, Supabase, etc. all live
+        // outside the cold-start path now.
+        manualChunks: (id) => {
+          if (!id.includes("node_modules")) return undefined;
+          if (id.includes("three")) return "vendor-three";
+          if (id.includes("@sentry")) return "vendor-sentry";
+          if (id.includes("@supabase")) return "vendor-supabase";
+          if (id.includes("@capacitor")) return "vendor-capacitor";
+          if (id.includes("firebase")) return "vendor-firebase";
+          if (id.includes("react-i18next") || id.includes("i18next")) return "vendor-i18n";
+          if (id.includes("lottie")) return "vendor-lottie";
+          if (id.includes("framer-motion")) return "vendor-motion";
+          if (id.includes("react-dom") || id.includes("react/")) return "vendor-react";
+          return undefined;
+        },
+      },
+    },
   },
   resolve: {
     alias: {
