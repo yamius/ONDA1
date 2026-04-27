@@ -34,18 +34,18 @@
       #onda-boot-splash.onda-fade-out { opacity: 0; pointer-events: none; }
       .onda-boot-stage {
         position: relative;
-        width: 168px; height: 168px;
+        width: 112px; height: 112px;
         display: flex; align-items: center; justify-content: center;
       }
       .onda-boot-logo {
-        width: 140px; height: 140px;
+        width: 94px; height: 94px;
         border-radius: 50%;
         object-fit: cover;
-        box-shadow: 0 6px 32px rgba(20, 130, 110, 0.45);
+        box-shadow: 0 4px 22px rgba(20, 130, 110, 0.45);
       }
       .onda-boot-ring {
         position: absolute; inset: 0;
-        width: 168px; height: 168px;
+        width: 112px; height: 112px;
         animation: onda-spin 1.2s linear infinite;
       }
       @keyframes onda-spin { to { transform: rotate(360deg); } }
@@ -177,7 +177,7 @@
     <div id="onda-boot-splash" aria-hidden="true">
       <div class="onda-boot-stage">
         <img class="onda-boot-logo" src="/onda-logo.png" alt="" />
-        <svg class="onda-boot-ring" viewBox="0 0 168 168" xmlns="http://www.w3.org/2000/svg">
+        <svg class="onda-boot-ring" viewBox="0 0 112 112" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="onda-ring-grad" x1="0" y1="0" x2="1" y2="1">
               <stop offset="0%" stop-color="#7FE3C4" stop-opacity="1"/>
@@ -185,12 +185,12 @@
             </linearGradient>
           </defs>
           <circle
-            cx="84" cy="84" r="78"
+            cx="56" cy="56" r="52"
             fill="none"
             stroke="url(#onda-ring-grad)"
-            stroke-width="3"
+            stroke-width="2.5"
             stroke-linecap="round"
-            stroke-dasharray="140 350"
+            stroke-dasharray="95 235"
           />
         </svg>
       </div>
