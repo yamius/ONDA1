@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
+import { useState, useEffect, useRef, useMemo, useCallback, lazy, Suspense } from 'react';
 import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth, Minimize2, Maximize2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
@@ -42,7 +42,13 @@ import {
 } from './lib/airbridge';
 import { useSubscription } from './hooks/useSubscription';
 import * as Sentry from '@sentry/capacitor';
-import WelcomeScene from './components/WelcomeScene';
+// WelcomeScene is the only consumer of three.js in the codebase. It only
+// mounts when the user starts a practice (`practiceState === 'active'`),
+// not on cold start. Loading it lazily moves three.js + EXR loaders into
+// a separate chunk that streams in when the practice begins, instead of
+// sitting in the cold-start path. That's the chunk that was making the
+// boot splash visible for ~6 seconds even after main-scene code-splitting.
+const WelcomeScene = lazy(() => import('./components/WelcomeScene'));
 import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './constants/practiceAssets';
 
 const OndaLevel1 = () => {
@@ -3700,7 +3706,12 @@ const OndaLevel1 = () => {
             dissolves from the preview into the HDR panorama via its own
             preview→full cross-fade. */}
         {practiceState === 'active' && PRACTICE_EXR[activePractice.id] ? (
-          <WelcomeScene url={PRACTICE_EXR[activePractice.id]} previewUrl={PRACTICE_JPEG_PREVIEW[activePractice.id]} />
+          // Suspense fallback={null} — three.js chunk streams while the
+          // user sees whatever the parent renders behind it (JPEG preview).
+          // Local boundary so suspending here doesn't blank the whole app.
+          <Suspense fallback={null}>
+            <WelcomeScene url={PRACTICE_EXR[activePractice.id]} previewUrl={PRACTICE_JPEG_PREVIEW[activePractice.id]} />
+          </Suspense>
         ) : practiceState === 'intro' && PRACTICE_JPEG_PREVIEW[activePractice.id] ? (
           <div
             className="absolute inset-0"
