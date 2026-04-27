@@ -140,14 +140,8 @@ createRoot(document.getElementById('root')!).render(
     </ErrorBoundary>
   </StrictMode>
 );
-
-// Remove the boot splash from index.html once React has committed its first
-// render. requestAnimationFrame fires after the layout/paint following the
-// initial mount, so the live UI is on screen before the splash fades out —
-// no flash of empty <body> between the two.
-requestAnimationFrame(() => {
-  const splash = document.getElementById('onda-boot-splash');
-  if (!splash) return;
-  splash.classList.add('onda-fade-out');
-  setTimeout(() => splash.remove(), 300);
-});
+// The boot splash (index.html → #onda-boot-splash) is removed by the
+// MainScene wrapper inside App.tsx, after the lazy onda-level1-demo_27
+// chunk has actually mounted. Removing it here would hide the splash while
+// Suspense was still streaming the chunk in, leaving an empty black screen
+// for those seconds.
