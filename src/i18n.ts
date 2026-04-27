@@ -2,19 +2,22 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import HttpBackend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
-
-// Persistence rule:
-//   1. If the user previously picked a language, use it (i18next-browser-
-//      languagedetector reads it from localStorage under `i18nextLng`).
-//   2. Otherwise fall back to navigator.language.
-//   3. Final fallback is English.
+// Bundle the English translation into the initial JS bundle.
 //
-// Earlier this file did `localStorage.removeItem('i18nextLng')` followed by
-// `lng: "en"` on every init, which wiped the user's choice on every cold
-// start, every WebView reload after a permission prompt, and every error-
-// recovery boot. The two lines together produced the bug where switching to
-// (say) Ukrainian in Settings, then backgrounding the app, snapped the UI
-// back to English. Both removed below.
+// The previous setup loaded ALL languages via HttpBackend on first paint —
+// that's a 244 KB HTTP fetch + JSON parse for English alone. Combined with
+// react-i18next's default `useSuspense: true`, the WHOLE React tree was
+// suspended until translation.json arrived. On a fresh cold start this is
+// what made the boot splash visible for 6 seconds (warm starts hit the
+// HTTP cache and finished in ~1 second — the cold-vs-warm asymmetry was
+// the giveaway).
+//
+// Bundling EN means cold-start renders translated text from byte zero, no
+// fetch, no Suspense stall. Other languages are still streamed via
+// HttpBackend when the user actually switches to them — `partialBundled-
+// Languages: true` is the i18next flag that says "trust resources for
+// what's there, fall through to backend for what isn't".
+import enTranslation from "../public/locales/en/translation.json";
 
 i18n
   .use(HttpBackend)
@@ -25,6 +28,13 @@ i18n
     supportedLngs: ["en", "es", "ru", "uk", "zh"],
     nonExplicitSupportedLngs: true, // accept "en-US" → "en" etc.
     debug: false,
+    // Pre-bundled English so cold-start has translations immediately.
+    // partialBundledLanguages tells i18next that `resources` is incomplete
+    // (only `en`); for any other language it falls through to HttpBackend.
+    resources: {
+      en: { translation: enTranslation },
+    },
+    partialBundledLanguages: true,
     interpolation: {
       escapeValue: false,
     },
@@ -39,6 +49,14 @@ i18n
       order: ["localStorage", "navigator"],
       lookupLocalStorage: "i18nextLng",
       caches: ["localStorage"],
+    },
+    react: {
+      // Don't suspend the React tree while translations stream in. With
+      // EN bundled above, components mount with real strings on first
+      // paint; for any other language the fetch happens in parallel
+      // with the rest of mount and useTranslation() rerenders when it
+      // resolves. Suspense=true was the actual cold-start blocker.
+      useSuspense: false,
     },
   });
 
