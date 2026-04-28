@@ -12,43 +12,14 @@
     <meta property="og:title" content="ONDA Life" />
     <meta property="og:site_name" content="ONDA Life" />
 
-    <!-- Cold-start visual continuity:
-         iOS shows LaunchScreen.storyboard (Splash image, logo on white) until
-         the WebView is ready. Then the WebView appears with empty <body> while
-         the JS bundle loads, parses and the React tree mounts — that's the
-         6-second "black screen" users see on first cold start. We mask it with
-         an inline HTML splash that mirrors the native one (same logo, same
-         layout). main.tsx removes it once React has rendered.
-
-         The fade-out keeps the seam invisible: storyboard → HTML splash →
-         live app, all on the same canvas, no jarring background flash. -->
+    <!-- Match the iOS WebView/native background (capacitor.config.ts →
+         ios.backgroundColor: #000000) so the WebView's first frame is dark
+         instead of white. Cold start is now ~100ms (since the i18n Suspense
+         fix in 1.2.6), so we just need a solid background to bridge the
+         storyboard → app handoff — no logo/spinner needed. -->
     <style>
       html, body { background: #000; margin: 0; }
       #root { background: #000; min-height: 100vh; }
-      #onda-boot-splash {
-        position: fixed; inset: 0; z-index: 2147483647;
-        background: #000;
-        display: flex; align-items: center; justify-content: center;
-        transition: opacity 350ms ease-out;
-      }
-      #onda-boot-splash.onda-fade-out { opacity: 0; pointer-events: none; }
-      .onda-boot-stage {
-        position: relative;
-        width: 56px; height: 56px;
-        display: flex; align-items: center; justify-content: center;
-      }
-      .onda-boot-logo {
-        width: 47px; height: 47px;
-        border-radius: 50%;
-        object-fit: cover;
-        box-shadow: 0 2px 14px rgba(20, 130, 110, 0.45);
-      }
-      .onda-boot-ring {
-        position: absolute; inset: 0;
-        width: 56px; height: 56px;
-        animation: onda-spin 1.2s linear infinite;
-      }
-      @keyframes onda-spin { to { transform: rotate(360deg); } }
     </style>
 
     <!-- Polyfill: crypto.randomUUID for Android WebView < API 31 -->
@@ -170,31 +141,6 @@
     src="https://www.facebook.com/tr?id=2615262235497922&ev=PageView&noscript=1"
     /></noscript>
 
-    <!-- Boot splash — circular ONDA disc with a thin orbiting arc that spins
-         around it while the JS bundle loads. Pure HTML+CSS, zero deps, paints
-         on the WebView's very first frame. main.tsx fades it out once React
-         has committed its initial render. -->
-    <div id="onda-boot-splash" aria-hidden="true">
-      <div class="onda-boot-stage">
-        <img class="onda-boot-logo" src="/onda-logo.png" alt="" />
-        <svg class="onda-boot-ring" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="onda-ring-grad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#7FE3C4" stop-opacity="1"/>
-              <stop offset="100%" stop-color="#2EAA88" stop-opacity="0"/>
-            </linearGradient>
-          </defs>
-          <circle
-            cx="28" cy="28" r="26"
-            fill="none"
-            stroke="url(#onda-ring-grad)"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-dasharray="48 117"
-          />
-        </svg>
-      </div>
-    </div>
     <div id="root"></div>
     <script>
       // Early debug logging for iOS white screen debugging
