@@ -1,0 +1,100 @@
+{
+  "menu": {
+    "about": "Acerca de",
+    "aboutSr": " ONDA Life — SO de biohacking",
+    "glossary": "Glosario",
+    "glossarySr": " de términos de biohacking y neurociencia",
+    "articles": "Artículos",
+    "articlesSr": " sobre biohacking y optimización humana",
+    "download": "Descargar",
+    "bio": "Bio OS",
+    "contacts": "Contactos",
+    "contactsSr": " — contacta con el equipo de ONDA Life",
+    "languagesLabel": "Idioma"
+  },
+  "hero": {
+    "badge": "[ SISTEMA INICIALIZADO ]",
+    "titleLine1": "ONDA LIFE:",
+    "titleLine2": "El sistema operativo",
+    "titleLine3": "de tu consciencia",
+    "subtitle": "Deja de meditar al azar. Empieza a gestionar tu código biológico con actualizaciones sistemáticas. Tu cuerpo es un biocomputador. ONDA Life es el SO.",
+    "ctaDownload": "Descargar ahora",
+    "ctaDownloadAria": "Descargar la app ONDA Life",
+    "ctaLearn": "Saber más",
+    "scrollAria": "Desplazar para descargar"
+  },
+  "concept": {
+    "tag": "[ CONCEPTO ]",
+    "titlePrefix": "Tu cuerpo es el más complejo",
+    "titleHighlight": "computador",
+    "subtitle": "La mayoría usa solo el 10% de su potencial biológico. ONDA Life ofrece un algoritmo paso a paso para actualizar tu firmware — desde el nivel celular hasta la consciencia superior.",
+    "cards": [
+      { "title": "Sistemático", "description": "No son meditaciones aleatorias. Un protocolo estructurado basado en biología evolutiva y neurociencia." },
+      { "title": "Progresivo", "description": "Cada nivel se construye sobre el anterior. Desde la consciencia corporal básica hasta la inteligencia social." },
+      { "title": "Medible", "description": "Sigue tu progreso con datos biométricos. HRV, calidad del sueño, niveles de estrés — métricas reales." }
+    ]
+  },
+  "levels": {
+    "tag": "[ ARQUITECTURA DEL SISTEMA ]",
+    "titleLeft": "Jerarquía clara.",
+    "titleRight": "Cero caos.",
+    "subtitle": "A diferencia de las apps de meditación fragmentadas, ONDA Life ofrece una progresión estructurada a través de 8 niveles de desarrollo de la consciencia. Cada nivel se construye sobre el anterior.",
+    "levelLabel": "Nivel {{n}}",
+    "items": [
+      { "name": "CUERPO / TERRA", "description": "Respiración, diafragma y HRV — el fundamento de la activación parasimpática.", "parts": ["1) Yo soy", "2) Yo me muevo", "3) Yo me adapto"] },
+      { "name": "EMOCIONES / AQUA", "description": "Eje HPA, DHEA y neuronas espejo — la arquitectura de la maestría emocional.", "parts": ["4) Yo maniobro", "5) Yo guardo el territorio", "6) Soy parte de la manada"] },
+      { "name": "MENTE / AER", "description": "PFC, noradrenalina y vinculación gamma — el combustible de la claridad cognitiva.", "parts": ["7. Yo distingo", "8. Yo me enfoco", "9. Yo doy forma a la visión"] },
+      { "name": "SOCIEDAD / IGNIS", "description": "Oxitocina, neuronas espejo y vago ventral — el combustible de la resonancia social.", "parts": ["10. Yo expreso", "11. Yo interactúo", "12. Yo co-creo"] },
+      { "name": "CUERPO II / TERRA II", "description": "El cuerpo como conductor. Yo siento → Yo canalizo → Yo sintonizo: fluidez informacional, estados de flujo, fusión neurosomática.", "parts": ["13. Yo siento", "14. Yo canalizo", "15. Yo sintonizo"] },
+      { "name": "CEREBRO / AQUA II", "description": "Soberanía cognitiva e integración neuronal global — la mente como supercomputador de alta precisión. DMN y metacognición, ritmos gamma.", "parts": ["16. Yo observo", "17. Yo integro", "18. Yo sincronizo"] },
+      { "name": "ADN / AER II", "description": "Consciencia del ADN y maestría epigenética — el humano como diseñador biológico. Accede a la biblioteca milenaria del ADN, activa la regeneración celular.", "parts": ["19. Yo recuerdo", "20. Yo restauro", "21. Yo sintetizo"] },
+      { "name": "ATÓMICO / IGNIS II", "description": "Consciencia cuántica y creación de realidad — el humano como Punto Cero.", "parts": ["22. Yo soy vibración", "23. Yo soy plenitud", "24. Yo soy la fuente"] }
+    ]
+  },
+  "features": {
+    "tag": "[ CARACTERÍSTICAS ]",
+    "titlePrefix": "Bio-sincronización",
+    "titleHighlight": "en tiempo real",
+    "items": [
+      { "title": "Integración de wearables", "description": "Conecta Apple Watch, Oura Ring, Garmin. Observa cómo tu HRV, sueño y métricas de estrés se transforman en tiempo real.", "iconAlt": "Icono de sincronización de datos biométricos" },
+      { "title": "Progresión gamificada", "description": "Gana tokens OND por cada práctica completada. Convierte tu consciencia en valor real desde el Nivel 3.", "iconAlt": "Icono de progresión gamificada" },
+      { "title": "Sistema estructurado", "description": "Sin meditaciones al azar. Cada práctica es una actualización de firmware para un sistema concreto: respiración, emociones, mente, ADN.", "iconAlt": "Icono de sistema estructurado" }
+    ]
+  },
+  "articles": {
+    "tag": "[ ANÁLISIS PROFUNDOS ]",
+    "titlePrefix": "Artículos",
+    "titleHighlight": "destacados",
+    "subtitle": "Guías con base científica para optimizar el sistema nervioso. Del tono vagal al hardware de la longevidad.",
+    "viewAll": "Ver los {{count}} artículos"
+  },
+  "cta": {
+    "badge": "[ ¿LISTO PARA ACTUALIZAR? ]",
+    "title": "Inicializa tu sistema",
+    "subtitle": "El mundo a tu alrededor se vuelve como te ves a ti mismo por dentro.",
+    "appStoreSup": "Descargar en",
+    "appStoreLabel": "App Store",
+    "appStoreAria": "Descargar ONDA Life en App Store",
+    "googlePlaySup": "Disponible en",
+    "googlePlayLabel": "Google Play",
+    "googlePlayAria": "Descargar ONDA Life en Google Play",
+    "modal": {
+      "title": "Únete a ONDA Life",
+      "subtitle": "¡Estamos dando los últimos toques! Deja tu email y te enviaremos acceso anticipado.",
+      "placeholder": "Tu email",
+      "submit": "Obtener acceso anticipado",
+      "submitting": "Enviando...",
+      "thankTitle": "¡Gracias!",
+      "thankSubtitle": "Te contactaremos en cuanto la app esté lista para lanzarse.",
+      "ok": "OK",
+      "errorDuplicate": "Este email ya está registrado.",
+      "errorGeneric": "Algo salió mal. Inténtalo de nuevo más tarde.",
+      "close": "Cerrar"
+    }
+  },
+  "meta": {
+    "title": "ONDA Life | App de biohacking, monitor HRV y SO de la consciencia",
+    "description": "Tu cuerpo es un computador biológico. ONDA Life es el SO que lo actualiza — 8 niveles de desarrollo estructurado de la consciencia, monitorización de HRV y protocolos de optimización neuronal.",
+    "ogImageAlt": "ONDA Life — App de biohacking y SO de la consciencia. Monitorización de HRV y optimización neuronal."
+  }
+}

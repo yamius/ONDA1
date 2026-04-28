@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 // ── Pixel reveal ──────────────────────────────────────────────────────────────
 const COLS      = 10
@@ -78,6 +79,7 @@ const PARALLAX_MOBILE  = 0.30  // 30% — parallax on touch
 
 export function HeroSection() {
   const imgRef = useRef<HTMLImageElement | null>(null)
+  const { t } = useTranslation('home')
 
   useEffect(() => {
     // Ref-based direct DOM update — zero React re-renders, GPU-accelerated
@@ -139,21 +141,20 @@ export function HeroSection() {
         {/* [ SYSTEM INITIALIZED ] badge */}
         <div className="mb-6 inline-block rounded-full border border-cyan-500/50 bg-cyan-500/10 px-3 py-1.5 md:mb-8 md:px-4 md:py-2">
           <span className="font-mono text-xs text-cyan-400 md:text-sm">
-            [ SYSTEM INITIALIZED ]
+            {t('hero.badge')}
           </span>
         </div>
 
         {/* Main heading */}
         <h1 className="mb-4 font-mono text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-6xl lg:text-7xl">
-          <span className="block text-cyan-400">ONDA LIFE:</span>
-          <span className="block text-green-400">Operating System</span>
-          <span className="block text-white">for Your Consciousness</span>
+          <span className="block text-cyan-400">{t('hero.titleLine1')}</span>
+          <span className="block text-green-400">{t('hero.titleLine2')}</span>
+          <span className="block text-white">{t('hero.titleLine3')}</span>
         </h1>
 
         {/* Subtitle */}
         <p className="mx-auto mb-14 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base md:mb-20 md:text-xl">
-          Stop meditating randomly. Start managing your biological code through
-          systematic upgrades. Your body is a biocomputer. ONDA Life is the OS.
+          {t('hero.subtitle')}
         </p>
 
         {/* CTA buttons */}
@@ -161,16 +162,16 @@ export function HeroSection() {
           <a
             href="#download"
             className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-2 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 sm:w-auto"
-            aria-label="Download ONDA Life app"
+            aria-label={t('hero.ctaDownloadAria')}
           >
             <DownloadIcon />
-            <span>Download Now</span>
+            <span>{t('hero.ctaDownload')}</span>
           </a>
           <Link
             to="/about"
             className="flex w-full items-center justify-center gap-2 rounded-lg border border-cyan-500/50 px-6 py-2 text-sm text-cyan-400 transition-all hover:bg-cyan-500/10 sm:w-auto"
           >
-            <span>Learn More</span>
+            <span>{t('hero.ctaLearn')}</span>
             <span>&rarr;</span>
           </Link>
         </div>
@@ -179,7 +180,7 @@ export function HeroSection() {
         <div className="flex justify-center pb-4 md:pb-8">
           <button
             type="button"
-            aria-label="Scroll to download"
+            aria-label={t('hero.scrollAria')}
             onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
             className="animate-bounce text-cyan-400/60 transition-colors hover:text-cyan-400 cursor-pointer bg-transparent border-0 p-0"
           >

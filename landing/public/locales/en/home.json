@@ -1,0 +1,100 @@
+{
+  "menu": {
+    "about": "About",
+    "aboutSr": " ONDA Life — biohacking OS",
+    "glossary": "Glossary",
+    "glossarySr": " of biohacking and neuroscience terms",
+    "articles": "Articles",
+    "articlesSr": " on biohacking and human optimization",
+    "download": "Download",
+    "bio": "Bio OS",
+    "contacts": "Contacts",
+    "contactsSr": " — reach ONDA Life team",
+    "languagesLabel": "Language"
+  },
+  "hero": {
+    "badge": "[ SYSTEM INITIALIZED ]",
+    "titleLine1": "ONDA LIFE:",
+    "titleLine2": "Operating System",
+    "titleLine3": "for Your Consciousness",
+    "subtitle": "Stop meditating randomly. Start managing your biological code through systematic upgrades. Your body is a biocomputer. ONDA Life is the OS.",
+    "ctaDownload": "Download Now",
+    "ctaDownloadAria": "Download ONDA Life app",
+    "ctaLearn": "Learn More",
+    "scrollAria": "Scroll to download"
+  },
+  "concept": {
+    "tag": "[ CONCEPT ]",
+    "titlePrefix": "Your Body is the Most Complex",
+    "titleHighlight": "Computer",
+    "subtitle": "Most people use only 10% of their biological potential. ONDA Life provides a step-by-step algorithm to upgrade your firmware — from cellular level to higher consciousness.",
+    "cards": [
+      { "title": "Systematic", "description": "Not random meditations. A structured protocol based on evolutionary biology and neuroscience." },
+      { "title": "Progressive", "description": "Each level builds upon the previous one. From basic body awareness to social intelligence." },
+      { "title": "Measurable", "description": "Track your progress with biometric data. HRV, sleep quality, stress levels — real metrics." }
+    ]
+  },
+  "levels": {
+    "tag": "[ SYSTEM ARCHITECTURE ]",
+    "titleLeft": "Clear Hierarchy.",
+    "titleRight": "No Chaos.",
+    "subtitle": "Unlike fragmented meditation apps, ONDA Life provides a structured progression through 8 levels of consciousness development. Each level builds upon the previous one.",
+    "levelLabel": "Level {{n}}",
+    "items": [
+      { "name": "BODY / TERRA", "description": "Breathing, diaphragm, and HRV — the foundation of parasympathetic activation.", "parts": ["1) I Am", "2) I Move", "3) I Adapt"] },
+      { "name": "EMOTIONS / AQUA", "description": "HPA axis, DHEA, and Mirror Neurons — the architecture of emotional mastery.", "parts": ["4) I Maneuver", "5) I Guard Territory", "6) I'm Part of the Pack"] },
+      { "name": "MIND / AER", "description": "PFC, Norepinephrine, and Gamma Binding — the fuel of cognitive clarity.", "parts": ["7. I Distinguish", "8. I Focus", "9. I Shape the Vision"] },
+      { "name": "SOCIETY / IGNIS", "description": "Oxytocin, Mirror Neurons, and Ventral Vagus — the fuel of social resonance.", "parts": ["10. I Express", "11. I Interact", "12. I Co-Create"] },
+      { "name": "BODY II / TERRA II", "description": "The body as conductor. I Sense → I Channel → I Attune: informational fluidity, flow states, neurosomatic fusion.", "parts": ["13. I Sense", "14. I Channel", "15. I Attune"] },
+      { "name": "BRAIN / AQUA II", "description": "Cognitive Sovereignty and Global Neural Integration — the mind as a high-precision supercomputer. DMN & metacognition, Gamma rhythms.", "parts": ["16. I Witness", "17. I Integrate", "18. I Synchronize"] },
+      { "name": "DNA / AER II", "description": "DNA consciousness and epigenetic mastery — the human as a Biological Designer. Access the billion-year-old library of DNA, activate cellular regeneration.", "parts": ["19. I Remember", "20. I Restore", "21. I Synthesize"] },
+      { "name": "ATOMIC / IGNIS II", "description": "Quantum Consciousness and Reality Creation — the human as the Zero Point.", "parts": ["22. I Am Vibration", "23. I Am Wholeness", "24. I Am the Source"] }
+    ]
+  },
+  "features": {
+    "tag": "[ FEATURES ]",
+    "titlePrefix": "Real-Time",
+    "titleHighlight": "Bio-Sync",
+    "items": [
+      { "title": "Tracker Integration", "description": "Connect Apple Watch, Oura Ring, Garmin. Watch your HRV, sleep, and stress metrics transform in real-time.", "iconAlt": "Biometric data sync icon" },
+      { "title": "Gamified Progression", "description": "Earn OND tokens for each completed practice. Convert your consciousness into real value starting at Level 3.", "iconAlt": "Gamification progression icon" },
+      { "title": "Structured System", "description": "No random meditations. Each practice is a firmware update for a specific system: breathing, emotions, mind, DNA.", "iconAlt": "Structured system icon" }
+    ]
+  },
+  "articles": {
+    "tag": "[ DEEP DIVES ]",
+    "titlePrefix": "Flagship",
+    "titleHighlight": "Articles",
+    "subtitle": "Science-backed guides for nervous system optimization. From vagal tone to longevity hardware.",
+    "viewAll": "View all {{count}} articles"
+  },
+  "cta": {
+    "badge": "[ READY TO UPGRADE? ]",
+    "title": "Initialize Your System",
+    "subtitle": "The world around you becomes how you see it inside yourself.",
+    "appStoreSup": "Download on the",
+    "appStoreLabel": "App Store",
+    "appStoreAria": "Download ONDA Life on App Store",
+    "googlePlaySup": "Get it on",
+    "googlePlayLabel": "Google Play",
+    "googlePlayAria": "Download ONDA Life on Google Play",
+    "modal": {
+      "title": "Join ONDA Life",
+      "subtitle": "We are putting the finishing touches! Leave your email and we will send you early access.",
+      "placeholder": "Your email",
+      "submit": "Get Early Access",
+      "submitting": "Submitting...",
+      "thankTitle": "Thank you!",
+      "thankSubtitle": "We will contact you as soon as the app is ready to launch.",
+      "ok": "OK",
+      "errorDuplicate": "This email is already registered.",
+      "errorGeneric": "Something went wrong. Please try again later.",
+      "close": "Close"
+    }
+  },
+  "meta": {
+    "title": "ONDA Life | Biohacking App, HRV Tracker & Consciousness OS",
+    "description": "Your body is a biological computer. ONDA Life is the OS that upgrades it — 8 levels of structured consciousness development, HRV tracking, and neural optimization protocols.",
+    "ogImageAlt": "ONDA Life — Biohacking App & Consciousness OS. HRV tracking and neural optimization."
+  }
+}

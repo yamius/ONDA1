@@ -1,0 +1,100 @@
+{
+  "menu": {
+    "about": "关于",
+    "aboutSr": " ONDA Life — 生物黑客操作系统",
+    "glossary": "术语表",
+    "glossarySr": " 生物黑客与神经科学术语",
+    "articles": "文章",
+    "articlesSr": " 生物黑客与人体优化",
+    "download": "下载",
+    "bio": "Bio OS",
+    "contacts": "联系",
+    "contactsSr": " — 联系 ONDA Life 团队",
+    "languagesLabel": "语言"
+  },
+  "hero": {
+    "badge": "[ 系统已初始化 ]",
+    "titleLine1": "ONDA LIFE：",
+    "titleLine2": "意识的",
+    "titleLine3": "操作系统",
+    "subtitle": "停止随机冥想。开始通过系统化升级管理你的生物代码。你的身体是生物计算机，ONDA Life 是它的操作系统。",
+    "ctaDownload": "立即下载",
+    "ctaDownloadAria": "下载 ONDA Life 应用",
+    "ctaLearn": "了解更多",
+    "scrollAria": "向下滚动以下载"
+  },
+  "concept": {
+    "tag": "[ 核心概念 ]",
+    "titlePrefix": "你的身体是最复杂的",
+    "titleHighlight": "计算机",
+    "subtitle": "大多数人只用了不到 10% 的生物潜能。ONDA Life 提供逐步算法，从细胞层面到更高意识，全面升级你的固件。",
+    "cards": [
+      { "title": "系统化", "description": "不是随机冥想，而是基于进化生物学与神经科学的结构化协议。" },
+      { "title": "渐进式", "description": "每一层级建立在前一层级之上：从基础身体觉知到社会智能。" },
+      { "title": "可衡量", "description": "用生物特征数据追踪进度：HRV、睡眠质量、压力水平 — 真实指标。" }
+    ]
+  },
+  "levels": {
+    "tag": "[ 系统架构 ]",
+    "titleLeft": "层级清晰。",
+    "titleRight": "毫无混乱。",
+    "subtitle": "不同于碎片化的冥想 App，ONDA Life 提供贯穿 8 个意识发展层级的结构化进阶路径。每一层都建立在前一层之上。",
+    "levelLabel": "第 {{n}} 层",
+    "items": [
+      { "name": "身体 / TERRA", "description": "呼吸、横膈膜与 HRV — 副交感激活的基础。", "parts": ["1) 我存在", "2) 我移动", "3) 我适应"] },
+      { "name": "情绪 / AQUA", "description": "HPA 轴、DHEA 与镜像神经元 — 情绪掌控的架构。", "parts": ["4) 我应变", "5) 我守护领地", "6) 我属于族群"] },
+      { "name": "心智 / AER", "description": "前额叶皮层、去甲肾上腺素与伽马同步 — 认知清晰度的燃料。", "parts": ["7. 我辨别", "8. 我专注", "9. 我塑造愿景"] },
+      { "name": "社会 / IGNIS", "description": "催产素、镜像神经元与腹侧迷走神经 — 社会共振的燃料。", "parts": ["10. 我表达", "11. 我互动", "12. 我共创"] },
+      { "name": "身体 II / TERRA II", "description": "身体作为导体。我感知 → 我导引 → 我谐振：信息的流动性、心流状态、神经躯体融合。", "parts": ["13. 我感知", "14. 我导引", "15. 我谐振"] },
+      { "name": "大脑 / AQUA II", "description": "认知主权与全局神经整合 — 心智作为高精度超级计算机。DMN 与元认知，伽马节律。", "parts": ["16. 我见证", "17. 我整合", "18. 我同步"] },
+      { "name": "DNA / AER II", "description": "DNA 意识与表观遗传学掌控 — 人作为生物设计师。访问亿万年的 DNA 库，激活细胞再生。", "parts": ["19. 我记忆", "20. 我修复", "21. 我合成"] },
+      { "name": "原子 / IGNIS II", "description": "量子意识与现实创造 — 人作为零点。", "parts": ["22. 我即振动", "23. 我即整全", "24. 我即源头"] }
+    ]
+  },
+  "features": {
+    "tag": "[ 核心功能 ]",
+    "titlePrefix": "实时",
+    "titleHighlight": "Bio-Sync",
+    "items": [
+      { "title": "穿戴设备整合", "description": "连接 Apple Watch、Oura Ring、Garmin。实时观察你的 HRV、睡眠与压力指标的变化。", "iconAlt": "生物特征数据同步图标" },
+      { "title": "游戏化进阶", "description": "每完成一项练习获得 OND 代币。从第 3 层开始，将意识转化为真实价值。", "iconAlt": "游戏化进阶图标" },
+      { "title": "结构化系统", "description": "没有随机冥想。每一项练习都是针对特定系统的固件更新：呼吸、情绪、心智、DNA。", "iconAlt": "结构化系统图标" }
+    ]
+  },
+  "articles": {
+    "tag": "[ 深度解读 ]",
+    "titlePrefix": "旗舰",
+    "titleHighlight": "文章",
+    "subtitle": "基于科学的神经系统优化指南。从迷走神经张力到长寿硬件。",
+    "viewAll": "查看全部 {{count}} 篇文章"
+  },
+  "cta": {
+    "badge": "[ 准备升级了吗？ ]",
+    "title": "初始化你的系统",
+    "subtitle": "你周围的世界，将变成你内在所看见的样子。",
+    "appStoreSup": "下载于",
+    "appStoreLabel": "App Store",
+    "appStoreAria": "在 App Store 下载 ONDA Life",
+    "googlePlaySup": "获取于",
+    "googlePlayLabel": "Google Play",
+    "googlePlayAria": "在 Google Play 下载 ONDA Life",
+    "modal": {
+      "title": "加入 ONDA Life",
+      "subtitle": "我们正在做最后的调整！留下您的邮箱，我们会发送提前体验邀请。",
+      "placeholder": "您的邮箱",
+      "submit": "获取提前体验",
+      "submitting": "提交中...",
+      "thankTitle": "感谢！",
+      "thankSubtitle": "应用准备就绪即将上线时，我们会立刻联系您。",
+      "ok": "好的",
+      "errorDuplicate": "此邮箱已注册。",
+      "errorGeneric": "出了点问题，请稍后重试。",
+      "close": "关闭"
+    }
+  },
+  "meta": {
+    "title": "ONDA Life | 生物黑客 App、HRV 监测与意识操作系统",
+    "description": "你的身体是生物计算机。ONDA Life 是升级它的操作系统 — 8 层结构化的意识发展、HRV 追踪与神经优化协议。",
+    "ogImageAlt": "ONDA Life — 生物黑客 App 与意识操作系统。HRV 追踪与神经优化。"
+  }
+}

@@ -1,10 +1,27 @@
-import { useState, useEffect, useLayoutEffect, Suspense } from 'react'
-import { Outlet, Link, useLocation } from 'react-router-dom'
+import { useState, useEffect, useLayoutEffect, Suspense, useMemo } from 'react'
+import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { TransitionLink } from './TransitionLink'
+import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, type Lang } from '../i18n'
 
 export function Layout() {
   const location = useLocation()
+  const navigate = useNavigate()
   const [menuOpen, setMenuOpen] = useState(false)
+  const { t } = useTranslation('home')
+
+  // Derive language from URL — single source of truth.
+  const currentLang: Lang = useMemo(() => langFromPath(location.pathname), [location.pathname])
+
+  // Keep i18n + <html lang> in sync with the URL on every navigation
+  useLayoutEffect(() => {
+    if (i18n.language !== currentLang) {
+      void i18n.changeLanguage(currentLang)
+    }
+    if (typeof document !== 'undefined') {
+      document.documentElement.lang = currentLang
+    }
+  }, [currentLang])
 
   useLayoutEffect(() => {
     if (location.hash) {
@@ -52,6 +69,13 @@ export function Layout() {
     }
   }, [menuOpen])
 
+  const switchLang = (lang: Lang) => {
+    setMenuOpen(false)
+    // Phase 1 only localizes the home page — language buttons always navigate
+    // to the home of the chosen locale. Other pages can be wired up later.
+    navigate(homePathFor(lang))
+  }
+
   return (
     <div className="min-h-screen bg-[#050a0f] text-white">
       {/* Fixed burger */}
@@ -83,7 +107,7 @@ export function Layout() {
       >
         <nav aria-label="Main navigation" className="mx-4 w-full max-w-sm rounded-lg border border-white/10 bg-[#1a1b26] p-4">
           <TransitionLink
-            to="/"
+            to={homePathFor(currentLang)}
             onClick={() => setMenuOpen(false)}
             className="mb-4 flex items-center gap-2 font-mono text-lg font-bold"
           >
@@ -97,7 +121,7 @@ export function Layout() {
               location.pathname === '/about' ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
-            About<span className="sr-only"> ONDA Life — biohacking OS</span>
+            {t('menu.about')}<span className="sr-only">{t('menu.aboutSr')}</span>
           </TransitionLink>
           <TransitionLink
             to="/glossary"
@@ -106,7 +130,7 @@ export function Layout() {
               location.pathname.startsWith('/glossary') ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
-            Glossary<span className="sr-only"> of biohacking and neuroscience terms</span>
+            {t('menu.glossary')}<span className="sr-only">{t('menu.glossarySr')}</span>
           </TransitionLink>
           <TransitionLink
             to="/articles"
@@ -115,21 +139,46 @@ export function Layout() {
               location.pathname.startsWith('/articles') ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
-            Articles<span className="sr-only"> on biohacking and human optimization</span>
+            {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
           </TransitionLink>
           <a
-            href="/#download"
+            href={`${homePathFor(currentLang)}#download`.replace('//', '/')}
             onClick={() => setMenuOpen(false)}
             className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
           >
-            Download
+            {t('menu.download')}
           </a>
+          {/* Language picker — between Download and Bio OS */}
+          <div
+            role="group"
+            aria-label={t('menu.languagesLabel')}
+            className="flex items-center justify-between gap-1 border-b border-white/5 py-2"
+          >
+            {SUPPORTED_LANGS.map(lang => {
+              const active = lang === currentLang
+              return (
+                <button
+                  key={lang}
+                  type="button"
+                  onClick={() => switchLang(lang)}
+                  aria-current={active ? 'true' : undefined}
+                  className={`flex-1 rounded-md py-1.5 font-mono text-xs font-semibold tracking-wider transition-colors ${
+                    active
+                      ? 'bg-cyan-500/10 text-cyan-400'
+                      : 'text-white/50 hover:bg-white/5 hover:text-white'
+                  }`}
+                >
+                  {LANG_LABELS[lang]}
+                </button>
+              )
+            })}
+          </div>
           <TransitionLink
             to="/bio"
             onClick={() => setMenuOpen(false)}
             className="-mx-4 block border-b border-white/5 bg-gradient-to-r from-green-400/70 to-transparent px-4 py-3 text-sm font-bold text-white transition-opacity hover:opacity-80"
           >
-            Bio OS
+            {t('menu.bio')}
           </TransitionLink>
           <TransitionLink
             to="/contact"
@@ -138,7 +187,7 @@ export function Layout() {
               location.pathname === '/contact' ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
-            Contacts<span className="sr-only"> — reach ONDA Life team</span>
+            {t('menu.contacts')}<span className="sr-only">{t('menu.contactsSr')}</span>
           </TransitionLink>
         </nav>
       </div>
@@ -147,7 +196,7 @@ export function Layout() {
         {/* Scrolling header — logo + download */}
         <header className="border-b border-white/5 bg-[#1a1b26]/70 backdrop-blur-xl pt-[max(env(safe-area-inset-top,0px),8px)] md:pt-2">
           <div className="header-content-center mx-auto flex max-w-7xl items-center justify-between pr-5 py-2 md:py-2 md:pr-6">
-            <TransitionLink to="/" className="font-mono text-base font-bold md:text-lg" onClick={() => setMenuOpen(false)}>
+            <TransitionLink to={homePathFor(currentLang)} className="font-mono text-base font-bold md:text-lg" onClick={() => setMenuOpen(false)}>
               <span className="text-cyan-400">ONDA</span>
               <span className="text-green-400"> LIFE</span>
             </TransitionLink>
@@ -156,7 +205,7 @@ export function Layout() {
               onClick={() => setMenuOpen(false)}
               className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-3 py-1.5 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:px-4 md:py-1.5 md:text-sm"
             >
-              Bio OS
+              {t('menu.bio')}
             </TransitionLink>
           </div>
         </header>
@@ -171,7 +220,7 @@ export function Layout() {
         <div className="mx-auto max-w-7xl px-5 py-8 md:px-6 md:py-12">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <Link
-              to="/"
+              to={homePathFor(currentLang)}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               className="flex items-center gap-1 font-mono text-lg font-bold transition-colors hover:text-cyan-400/90"
             >
@@ -180,19 +229,19 @@ export function Layout() {
             </Link>
             <div className="flex flex-wrap justify-center gap-6">
               <Link to="/about" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                About<span className="sr-only"> ONDA Life — biohacking OS</span>
+                {t('menu.about')}<span className="sr-only">{t('menu.aboutSr')}</span>
               </Link>
               <Link to="/glossary" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                Glossary<span className="sr-only"> of biohacking and neuroscience terms</span>
+                {t('menu.glossary')}<span className="sr-only">{t('menu.glossarySr')}</span>
               </Link>
               <Link to="/articles" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                Articles<span className="sr-only"> on biohacking and human optimization</span>
+                {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
               </Link>
               <Link to="/bio" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                Bio OS<span className="sr-only"> — live biometrics measurement</span>
+                {t('menu.bio')}<span className="sr-only"> — live biometrics measurement</span>
               </Link>
               <Link to="/contact" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                Contacts<span className="sr-only"> — reach ONDA Life team</span>
+                {t('menu.contacts')}<span className="sr-only">{t('menu.contactsSr')}</span>
               </Link>
             </div>
             <p className="text-xs text-white/20">

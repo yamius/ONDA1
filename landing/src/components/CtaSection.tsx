@@ -1,7 +1,9 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import { appStoreUrl } from '../config/appStore'
 
 export function CtaSection() {
+  const { t } = useTranslation('home')
   const [isOpen, setIsOpen] = useState(false)
   const [platform, setPlatform] = useState<string>('')
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -23,16 +25,16 @@ export function CtaSection() {
         body: JSON.stringify({ email, platform: platform || null }),
       })
       if (res.status === 409) {
-        setError('This email is already registered.')
+        setError(t('cta.modal.errorDuplicate'))
         return
       }
       if (!res.ok) {
-        setError('Something went wrong. Please try again later.')
+        setError(t('cta.modal.errorGeneric'))
         return
       }
       setIsSubmitted(true)
     } catch {
-      setError('Something went wrong. Please try again later.')
+      setError(t('cta.modal.errorGeneric'))
     } finally {
       setIsLoading(false)
     }
@@ -50,16 +52,16 @@ export function CtaSection() {
 
       <div className="relative z-10 mx-auto max-w-2xl text-center">
         <div className="mb-6 inline-block rounded-full border border-terminal-green/25 bg-black/40 px-5 py-1.5 font-mono text-[11px] tracking-[0.2em] text-terminal-green">
-          [ READY TO UPGRADE? ]
+          {t('cta.badge')}
         </div>
         <h2 className="mb-4 bg-gradient-to-r from-terminal-green to-white bg-clip-text text-2xl font-bold tracking-tight text-transparent md:text-5xl">
-          Initialize Your System
+          {t('cta.title')}
         </h2>
         <a
           href="/inner-spectrum"
           className="mb-10 block cursor-pointer text-sm text-white/40 transition-colors hover:text-white/70"
         >
-          The world around you becomes how you see it inside yourself.
+          {t('cta.subtitle')}
         </a>
 
         <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
@@ -69,14 +71,14 @@ export function CtaSection() {
             rel="noopener"
             onClick={() => { window.lastPlatform = 'ios' }}
             className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
-            aria-label="Download ONDA Life on App Store"
+            aria-label={t('cta.appStoreAria')}
             data-button="apple"
             data-platform="ios"
           >
             <AppleIcon />
             <div className="text-left">
-              <div className="text-[9px] text-white/40">Download on the</div>
-              <div className="text-sm font-semibold">App Store</div>
+              <div className="text-[9px] text-white/40">{t('cta.appStoreSup')}</div>
+              <div className="text-sm font-semibold">{t('cta.appStoreLabel')}</div>
             </div>
           </a>
           <button
@@ -87,14 +89,14 @@ export function CtaSection() {
               setIsOpen(true)
             }}
             className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
-            aria-label="Download ONDA Life on Google Play"
+            aria-label={t('cta.googlePlayAria')}
             data-button="android"
             data-platform="android"
           >
             <PlayIcon />
             <div className="text-left">
-              <div className="text-[9px] text-white/40">Get it on</div>
-              <div className="text-sm font-semibold">Google Play</div>
+              <div className="text-[9px] text-white/40">{t('cta.googlePlaySup')}</div>
+              <div className="text-sm font-semibold">{t('cta.googlePlayLabel')}</div>
             </div>
           </button>
         </div>
@@ -116,7 +118,7 @@ export function CtaSection() {
               type="button"
               onClick={handleClose}
               className="absolute top-4 right-4 rounded-lg p-1 text-white/50 transition-colors hover:bg-white/10 hover:text-white"
-              aria-label="Close"
+              aria-label={t('cta.modal.close')}
             >
               ✕
             </button>
@@ -125,16 +127,16 @@ export function CtaSection() {
               {!isSubmitted ? (
                 <form id="waitlist-form" onSubmit={handleFormSubmit} className="flex flex-col flex-1">
                   <h2 id="waitlist-modal-title" className="mb-4 text-2xl font-bold text-white">
-                    Join ONDA Life
+                    {t('cta.modal.title')}
                   </h2>
                   <p className="mb-6 text-sm text-white/60">
-                    We are putting the finishing touches! Leave your email and we will send you early access.
+                    {t('cta.modal.subtitle')}
                   </p>
                   <input
                     type="email"
                     name="email"
                     required
-                    placeholder="Your email"
+                    placeholder={t('cta.modal.placeholder')}
                     disabled={isLoading}
                     className="mb-4 w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder-white/40 outline-none transition-colors focus:border-terminal-cyan/50 focus:ring-1 focus:ring-terminal-cyan/30 disabled:opacity-50"
                   />
@@ -148,14 +150,14 @@ export function CtaSection() {
                     disabled={isLoading}
                     className="mt-auto w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90 disabled:opacity-50"
                   >
-                    {isLoading ? 'Submitting...' : 'Get Early Access'}
+                    {isLoading ? t('cta.modal.submitting') : t('cta.modal.submit')}
                   </button>
                 </form>
               ) : (
                 <div id="thank-you-message" className="flex flex-col flex-1">
-                  <h2 className="mb-4 text-2xl font-bold text-terminal-green">Thank you!</h2>
+                  <h2 className="mb-4 text-2xl font-bold text-terminal-green">{t('cta.modal.thankTitle')}</h2>
                   <p className="mb-6 text-sm text-white/60">
-                    We will contact you as soon as the app is ready to launch.
+                    {t('cta.modal.thankSubtitle')}
                   </p>
                   <div className="flex-1 min-h-0" aria-hidden="true" />
                   <button
@@ -163,7 +165,7 @@ export function CtaSection() {
                     onClick={handleClose}
                     className="w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90"
                   >
-                    OK
+                    {t('cta.modal.ok')}
                   </button>
                 </div>
               )}

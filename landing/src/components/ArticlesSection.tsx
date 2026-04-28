@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { articles } from '../data/articles'
 import { OptimizedImage } from './OptimizedImage'
 
@@ -13,6 +14,7 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export function ArticlesSection() {
+  const { t } = useTranslation('home')
   const [displayArticles, setDisplayArticles] = useState(() => articles.slice(0, 3))
 
   useEffect(() => {
@@ -23,16 +25,16 @@ export function ArticlesSection() {
     <section className="relative px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-6xl">
         <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-          [ DEEP DIVES ]
+          {t('articles.tag')}
         </h2>
         <h3 className="mb-4 text-2xl font-bold tracking-tight md:mb-6 md:text-4xl">
-          Flagship{' '}
+          {t('articles.titlePrefix')}{' '}
           <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
-            Articles
+            {t('articles.titleHighlight')}
           </span>
         </h3>
         <p className="mb-12 max-w-2xl font-mono text-sm text-white/40">
-          Science-backed guides for nervous system optimization. From vagal tone to longevity hardware.
+          {t('articles.subtitle')}
         </p>
 
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -78,7 +80,7 @@ export function ArticlesSection() {
             to="/articles"
             className="inline-flex items-center gap-2 rounded-lg border border-terminal-green/20 bg-terminal-green/5 px-5 py-2.5 font-mono text-sm text-terminal-green transition-all hover:border-terminal-green/40 hover:bg-terminal-green/10"
           >
-            View all {articles.length} articles
+            {t('articles.viewAll', { count: articles.length })}
             <span aria-hidden>→</span>
           </Link>
         </div>

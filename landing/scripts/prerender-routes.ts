@@ -8,8 +8,12 @@ import { parts } from '../src/pages/PartPage'
 import { levelsData } from '../src/data/levels'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 
+// Home is localized: /, /es, /ru, /uk, /zh — each gets its own prerendered HTML.
+// Other pages stay EN-only for now (Phase 1 of i18n rollout).
+const LOCALIZED_HOME_PATHS = ['/', '/es', '/ru', '/uk', '/zh']
+
 const staticPaths = [
-  '/',
+  ...LOCALIZED_HOME_PATHS,
   '/about',
   '/glossary',
   '/articles',
@@ -21,6 +25,8 @@ const staticPaths = [
   '/privacy',
   '/terms',
 ]
+
+export const HOME_LANG_PATHS = LOCALIZED_HOME_PATHS
 
 export function getPrerenderRoutes(): string[] {
   return [

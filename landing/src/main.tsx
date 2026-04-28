@@ -3,6 +3,10 @@ import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import { Layout } from './components/Layout'
+import i18n, { langFromPath, SUPPORTED_LANGS } from './i18n'
+
+// Sync language with URL before hydration so first paint matches the prerendered HTML
+void i18n.changeLanguage(langFromPath(window.location.pathname))
 
 const HomePage           = lazy(() => import('./pages/HomePage').then(m => ({ default: m.HomePage })))
 const AboutPage          = lazy(() => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })))
@@ -29,6 +33,9 @@ const app = (
         <Routes>
           <Route element={<Layout />}>
             <Route path="/"            element={<HomePage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={l} path={`/${l}`} element={<HomePage />} />
+            ))}
             <Route path="/about"       element={<AboutPage />} />
             <Route path="/glossary"    element={<GlossaryPage />} />
             <Route path="/articles"    element={<ArticlesPage />} />

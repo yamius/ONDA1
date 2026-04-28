@@ -8,7 +8,8 @@
 import { writeFileSync, mkdirSync, statSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPrerenderRoutes } from './prerender-routes'
+import { getPrerenderRoutes, HOME_LANG_PATHS } from './prerender-routes'
+import { SUPPORTED_LANGS } from '../src/i18n'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
@@ -24,6 +25,7 @@ function buildLoc(path: string): string {
 
 function getPriority(route: string): string {
   if (route === '/') return '1.0'
+  if (HOME_LANG_PATHS.includes(route)) return '0.9'
   if (route === '/glossary') return '0.9'
   if (route === '/articles') return '0.9'
   if (route === '/contact') return '0.8'
@@ -49,23 +51,32 @@ function getLastmod(route: string): string {
   return buildDate
 }
 
+const homeLangSet = new Set(HOME_LANG_PATHS)
 const routes = getPrerenderRoutes()
+
+// Pre-build hreflang alternate links shared by every home language variant
+const homeAlternates = SUPPORTED_LANGS.map(l => {
+  const href = l === 'en' ? SITE_URL : `${SITE_URL}/${l}`
+  return `    <xhtml:link rel="alternate" hreflang="${l}" href="${href}"/>`
+}).join('\n')
+const xDefaultAlt = `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}"/>`
 
 const urls = routes.map((path) => {
   const loc = buildLoc(path)
   const lastmod = getLastmod(path)
   const priority = getPriority(path)
   const changefreq = path === '/' ? 'weekly' : 'monthly'
+  const alternates = homeLangSet.has(path) ? `\n${homeAlternates}\n${xDefaultAlt}` : ''
   return `  <url>
     <loc>${loc}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>
+    <priority>${priority}</priority>${alternates}
   </url>`
 })
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 ${urls.join('\n')}
 </urlset>`
 

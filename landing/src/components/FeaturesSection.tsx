@@ -1,49 +1,38 @@
-const features = [
-  {
-    icon: '📊',
-    iconAlt: 'Biometric data sync icon',
-    title: 'Tracker Integration',
-    description:
-      'Connect Apple Watch, Oura Ring, Garmin. Watch your HRV, sleep, and stress metrics transform in real-time.',
-  },
-  {
-    icon: '🎮',
-    iconAlt: 'Gamification progression icon',
-    title: 'Gamified Progression',
-    description:
-      'Earn OND tokens for each completed practice. Convert your consciousness into real value starting at Level 3.',
-  },
-  {
-    icon: '⚙️',
-    iconAlt: 'Structured system icon',
-    title: 'Structured System',
-    description:
-      'No random meditations. Each practice is a firmware update for a specific system: breathing, emotions, mind, DNA.',
-  },
-]
+import { useTranslation } from 'react-i18next'
+
+const FEATURE_ICONS = ['📊', '🎮', '⚙️']
+
+interface FeatureItem {
+  title: string
+  description: string
+  iconAlt: string
+}
 
 export function FeaturesSection() {
+  const { t } = useTranslation('home')
+  const items = t('features.items', { returnObjects: true }) as FeatureItem[]
+
   return (
     <section className="relative px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-5xl">
         <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-          [ FEATURES ]
+          {t('features.tag')}
         </h2>
         <h3 className="mb-10 text-2xl font-bold tracking-tight md:mb-16 md:text-4xl">
-          Real-Time{' '}
+          {t('features.titlePrefix')}{' '}
           <span className="bg-gradient-to-r from-terminal-cyan to-terminal-green bg-clip-text text-transparent">
-            Bio-Sync
+            {t('features.titleHighlight')}
           </span>
         </h3>
 
         <div className="grid gap-4 md:gap-8 md:grid-cols-3">
-          {features.map((feature) => (
+          {items.map((feature, i) => (
             <div
-              key={feature.title}
+              key={i}
               className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/10 md:p-8"
             >
               <span className="mb-6 block text-4xl" role="img" aria-label={feature.iconAlt}>
-                {feature.icon}
+                {FEATURE_ICONS[i]}
               </span>
               <h3 className="mb-3 text-lg font-semibold">{feature.title}</h3>
               <p className="font-mono text-xs leading-relaxed text-white/40">

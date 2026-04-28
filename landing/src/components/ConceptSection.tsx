@@ -1,38 +1,39 @@
+import { useTranslation } from 'react-i18next'
+
+interface ConceptCardData {
+  title: string
+  description: string
+}
+
 export function ConceptSection() {
+  const { t } = useTranslation('home')
+  const cards = t('concept.cards', { returnObjects: true }) as ConceptCardData[]
+
   return (
     <section id="concept" className="relative -mt-20 px-4 py-16 md:px-6 md:py-24">
       <div className="mx-auto max-w-4xl">
         <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60 md:mb-6">
-          [ CONCEPT ]
+          {t('concept.tag')}
         </h2>
         <h3 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-          Your Body is the Most Complex{' '}
+          {t('concept.titlePrefix')}{' '}
           <span className="bg-gradient-to-r from-terminal-green to-terminal-cyan bg-clip-text text-transparent">
-            Computer
+            {t('concept.titleHighlight')}
           </span>
         </h3>
         <p className="max-w-2xl font-mono text-sm leading-relaxed text-white/40 md:text-base">
-          Most people use only 10% of their biological potential. ONDA Life provides
-          a step-by-step algorithm to upgrade your firmware — from cellular level to
-          higher consciousness.
+          {t('concept.subtitle')}
         </p>
 
         <div className="mt-10 grid gap-4 md:mt-16 md:gap-6 md:grid-cols-3">
-          <ConceptCard
-            number="01"
-            title="Systematic"
-            description="Not random meditations. A structured protocol based on evolutionary biology and neuroscience."
-          />
-          <ConceptCard
-            number="02"
-            title="Progressive"
-            description="Each level builds upon the previous one. From basic body awareness to social intelligence."
-          />
-          <ConceptCard
-            number="03"
-            title="Measurable"
-            description="Track your progress with biometric data. HRV, sleep quality, stress levels — real metrics."
-          />
+          {cards.map((card, i) => (
+            <ConceptCard
+              key={i}
+              number={String(i + 1).padStart(2, '0')}
+              title={card.title}
+              description={card.description}
+            />
+          ))}
         </div>
       </div>
     </section>

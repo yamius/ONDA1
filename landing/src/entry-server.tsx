@@ -4,6 +4,7 @@
  */
 import { StaticRouter, Routes, Route, useParams } from 'react-router-dom'
 import { Layout } from './components/Layout'
+import i18n, { langFromPath, SUPPORTED_LANGS, type Lang } from './i18n'
 import { HomePage } from './pages/HomePage'
 import { AboutPage } from './pages/AboutPage'
 import { GlossaryPage } from './pages/GlossaryPage'
@@ -31,12 +32,20 @@ function ArticlesSlugRouter() {
   return <MdArticlePage />
 }
 
-export function createApp(location: string) {
+export function createApp(location: string, lang?: Lang) {
+  // Synchronously set the i18n language before render so renderToString sees translated strings.
+  const resolved = lang ?? langFromPath(location)
+  if (i18n.language !== resolved) {
+    void i18n.changeLanguage(resolved)
+  }
   return (
     <StaticRouter location={location}>
       <Routes>
         <Route element={<Layout />}>
           <Route path="/"            element={<HomePage />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={l} path={`/${l}`} element={<HomePage />} />
+          ))}
           <Route path="/about"       element={<AboutPage />} />
           <Route path="/glossary"    element={<GlossaryPage />} />
           <Route path="/articles"    element={<ArticlesPage />} />
