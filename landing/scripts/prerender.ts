@@ -11,8 +11,15 @@ import { mkdirSync, readFileSync, writeFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { createApp } from '../src/entry-server'
-import { SUPPORTED_LANGS, langFromPath, type Lang } from '../src/i18n'
-import { getPrerenderRoutes, HOME_LANG_PATHS } from './prerender-routes'
+import {
+  SUPPORTED_LANGS,
+  LOCALIZED_PAGES,
+  langFromPath,
+  stripLangPrefix,
+  localizedPathFor,
+  type Lang,
+} from '../src/i18n'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml } from './meta-inject'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -26,61 +33,70 @@ const template = readFileSync(join(distDir, 'index.html'), 'utf-8')
 
 const SITE_URL = 'https://onda-life.com'
 
-// Load all locale JSON once for SEO metadata + hreflang generation
-const localesDir = join(projectRoot, 'public', 'locales')
-const homeLocales = Object.fromEntries(
-  SUPPORTED_LANGS.map(l => [
-    l,
-    JSON.parse(readFileSync(join(localesDir, l, 'home.json'), 'utf-8')) as Record<string, unknown>,
-  ]),
-) as Record<Lang, { meta: { title: string; description: string; ogImageAlt: string } }>
+interface PageMeta { title: string; description: string; ogImageAlt: string }
 
-function homeUrlFor(lang: Lang): string {
-  return lang === 'en' ? SITE_URL : `${SITE_URL}/${lang}`
+// Load every localized namespace for every language so prerender can swap meta
+// per (page, language) without doing async i18n during render.
+const localesDir = join(projectRoot, 'public', 'locales')
+const localizedMeta: Record<string, Record<Lang, PageMeta>> = {}
+for (const [, ns] of Object.entries(LOCALIZED_PAGES)) {
+  const byLang: Record<Lang, PageMeta> = {} as Record<Lang, PageMeta>
+  for (const lang of SUPPORTED_LANGS) {
+    const file = JSON.parse(readFileSync(join(localesDir, lang, `${ns}.json`), 'utf-8')) as { meta: PageMeta }
+    byLang[lang] = file.meta
+  }
+  localizedMeta[ns] = byLang
 }
 
-/** Build hreflang alternate <link> tags for the localized home pages. */
-function buildHreflangLinks(): string {
+function pageUrlFor(basePath: string, lang: Lang): string {
+  return `${SITE_URL}${localizedPathFor(basePath, lang)}`.replace(/\/+$/, '') || SITE_URL
+}
+
+/** Build hreflang alternate <link> tags for one localized page group. */
+function buildHreflangLinksFor(basePath: string): string {
   const tags: string[] = []
   for (const lang of SUPPORTED_LANGS) {
-    tags.push(`<link rel="alternate" hreflang="${lang}" href="${homeUrlFor(lang)}">`)
+    tags.push(`<link rel="alternate" hreflang="${lang}" href="${pageUrlFor(basePath, lang)}">`)
   }
-  // x-default points to EN root — Google's recommended fallback for unmatched locales.
-  tags.push(`<link rel="alternate" hreflang="x-default" href="${SITE_URL}">`)
+  // x-default → EN version of this page (Google's recommended fallback).
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${pageUrlFor(basePath, 'en')}">`)
   return tags.join('\n  ')
 }
 
-const HREFLANG_BLOCK = buildHreflangLinks()
+const OG_LOCALE_MAP: Record<Lang, string> = {
+  en: 'en_US',
+  es: 'es_ES',
+  ru: 'ru_RU',
+  uk: 'uk_UA',
+  zh: 'zh_CN',
+}
 
 function escAttr(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 }
 
 /**
- * For localized home pages, replace <html lang>, swap title/description/og:* with
- * locale-specific values, and inject hreflang alternates. Other pages are unchanged.
+ * Replace title/description/og:* with locale-specific values, set <html lang>,
+ * inject hreflang alternates + og:locale. Used for every page in LOCALIZED_PAGES.
  */
-function applyLocalizedHomeMeta(html: string, lang: Lang): string {
-  const t = homeLocales[lang].meta
+function applyLocalizedMeta(html: string, basePath: string, lang: Lang): string {
+  const ns = LOCALIZED_PAGES[basePath]
+  if (!ns) return html
+  const m = localizedMeta[ns][lang]
   let out = html
 
-  // <html lang="..">
   out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
 
-  const title = escAttr(t.title)
-  const desc = escAttr(t.description)
-  const ogAlt = escAttr(t.ogImageAlt)
-  const url = homeUrlFor(lang)
+  const title = escAttr(m.title)
+  const desc = escAttr(m.description)
+  const ogAlt = escAttr(m.ogImageAlt)
+  const url = pageUrlFor(basePath, lang)
   const escUrl = escAttr(url)
 
-  // Replace <title>
   out = out.replace(/<title>[^<]*<\/title>/i, `<title>${title}</title>`)
-  // Replace meta name=description / name=title
   out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${desc}">`)
   out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${title}">`)
-  // Replace canonical to localized URL
   out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
-  // og + twitter
   out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${title}">`)
   out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${desc}">`)
   out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
@@ -90,28 +106,20 @@ function applyLocalizedHomeMeta(html: string, lang: Lang): string {
   out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${desc}">`)
   out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
 
-  // Inject hreflang alternates + og:locale before </head> (only once)
-  const ogLocaleMap: Record<Lang, string> = {
-    en: 'en_US',
-    es: 'es_ES',
-    ru: 'ru_RU',
-    uk: 'uk_UA',
-    zh: 'zh_CN',
-  }
-  const ogLocale = `<meta property="og:locale" content="${ogLocaleMap[lang]}">`
-  out = out.replace('</head>', `  ${HREFLANG_BLOCK}\n  ${ogLocale}\n</head>`)
+  const hreflang = buildHreflangLinksFor(basePath)
+  const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[lang]}">`
+  out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
 
   return out
 }
 
 console.log('[prerender] Using renderToString + JSDOM (no Puppeteer) —', routes.length, 'routes')
 
-const homeLangSet = new Set(HOME_LANG_PATHS)
-
 for (const route of routes) {
   try {
-    const isLocalizedHome = homeLangSet.has(route)
-    const lang: Lang = isLocalizedHome ? langFromPath(route) : 'en'
+    const isLocalized = LOCALIZED_ROUTE_SET.has(route)
+    const lang: Lang = isLocalized ? langFromPath(route) : 'en'
+    const basePath = isLocalized ? stripLangPrefix(route) : route
 
     const html = renderToString(createApp(route, lang))
     const dom = new JSDOM(template)
@@ -120,7 +128,7 @@ for (const route of routes) {
     if (root) root.innerHTML = html
 
     let out = dom.serialize()
-    // GTM only on EN main page (/index.html); strip from prerendered subpages and other lang homes.
+    // GTM only on EN main page (/index.html); strip from prerendered subpages.
     if (route !== '/') {
       out = out.replace(/<!-- Google Tag Manager -->[\s\S]*?<!-- End Google Tag Manager -->\s*/g, '')
       out = out.replace(/<!-- Google Tag Manager \(noscript\) -->[\s\S]*?<!-- End Google Tag Manager \(noscript\) -->\s*/g, '')
@@ -128,16 +136,14 @@ for (const route of routes) {
     const meta = getMetaForRoute(route)
     out = injectMetaIntoHtml(out, meta)
 
-    // For localized home pages, override meta with locale-specific copy + hreflang.
-    if (isLocalizedHome) {
-      out = applyLocalizedHomeMeta(out, lang)
+    if (isLocalized) {
+      out = applyLocalizedMeta(out, basePath, lang)
     }
 
     // Build fingerprint for deployment verification (view page source, search "onda-build")
     const buildStamp = `<!-- onda-build: ${new Date().toISOString()} -->`
     out = out.replace('</head>', `  ${buildStamp}\n</head>`)
 
-    // Main page -> dist/index.html; others -> dist/route/index.html (Express static lookup)
     const outDir = route === '/' ? distDir : join(distDir, route.slice(1))
     mkdirSync(outDir, { recursive: true })
     const outPath = join(outDir, 'index.html')

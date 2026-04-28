@@ -7,26 +7,27 @@ import { articles } from '../src/data/articles'
 import { parts } from '../src/pages/PartPage'
 import { levelsData } from '../src/data/levels'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
+import { localizedRouteVariants, LOCALIZED_PAGES } from '../src/i18n'
 
-// Home is localized: /, /es, /ru, /uk, /zh — each gets its own prerendered HTML.
-// Other pages stay EN-only for now (Phase 1 of i18n rollout).
-const LOCALIZED_HOME_PATHS = ['/', '/es', '/ru', '/uk', '/zh']
+// Pages localized into all 5 languages — each gets its own prerendered HTML
+// per language. Generated from LOCALIZED_PAGES (single source of truth in i18n.ts).
+const localizedRoutes = localizedRouteVariants()
 
-const staticPaths = [
-  ...LOCALIZED_HOME_PATHS,
-  '/about',
+// Pages that stay EN-only for now (Phase 2 stops at home/about/bio/inner-spectrum).
+const nonLocalizedStaticPaths = [
   '/glossary',
   '/articles',
   '/contact',
   '/the-stack',
   '/sitemap',
-  '/inner-spectrum',
-  '/bio',
   '/privacy',
   '/terms',
 ]
 
-export const HOME_LANG_PATHS = LOCALIZED_HOME_PATHS
+const staticPaths = [
+  ...localizedRoutes,
+  ...nonLocalizedStaticPaths,
+]
 
 export function getPrerenderRoutes(): string[] {
   return [
@@ -38,3 +39,12 @@ export function getPrerenderRoutes(): string[] {
     ...Object.keys(METRIC_DETAILS).map((k) => `/bio/${k}`),
   ]
 }
+
+/** Set of all routes that are localized variants — used by prerender + sitemap. */
+export const LOCALIZED_ROUTE_SET = new Set(localizedRoutes)
+
+/** EN base paths that have localized variants — used by sitemap for hreflang grouping. */
+export const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)
+
+// Backwards compat for prerender.ts (kept so the diff to caller is minimal).
+export const HOME_LANG_PATHS = ['/', '/es', '/ru', '/uk', '/zh']

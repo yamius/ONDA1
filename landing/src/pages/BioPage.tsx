@@ -1,7 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { METRIC_DETAILS } from '../data/bioMetrics'
 import { appStoreUrl } from '../config/appStore'
+import { langFromPath } from '../i18n'
 
 type MetricValue = string | null
 
@@ -271,10 +273,11 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 
 // ─── Desc card ────────────────────────────────────────────────────────────────
 
-function DescCard({ title, text, detailKey }: {
+function DescCard({ title, text, detailKey, readMoreLabel }: {
   title: string
   text: string
   detailKey?: string
+  readMoreLabel: string
 }) {
   const hasDetail = detailKey && METRIC_DETAILS[detailKey]
   const inner = (
@@ -283,7 +286,7 @@ function DescCard({ title, text, detailKey }: {
         <p className="text-sm font-semibold text-white/80">{title}</p>
         {hasDetail && (
           <span className="shrink-0 rounded-full bg-cyan-500/10 px-2 py-0.5 font-mono text-[10px] text-cyan-400">
-            read more →
+            {readMoreLabel}
           </span>
         )}
       </div>
@@ -307,9 +310,18 @@ function DescCard({ title, text, detailKey }: {
   )
 }
 
+interface MetricDescItem {
+  title: string
+  text: string
+  key?: string
+}
+
 // ─── Main page ────────────────────────────────────────────────────────────────
 
 export function BioPage() {
+  const { t } = useTranslation('bio')
+  const location = useLocation()
+  const lang = langFromPath(location.pathname)
   const [metrics, setMetrics] = useState<BiometricState>(emptyMetrics)
   const [measuring, setMeasuring] = useState(false)
   const [cameraColor, setCameraColor] = useState<string>('rgb(220,220,220)')
@@ -332,11 +344,11 @@ export function BioPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, platform: dlPlatform || null }),
       })
-      if (res.status === 409) { setDlError('This email is already registered.'); return }
-      if (!res.ok) { setDlError('Something went wrong. Please try again later.'); return }
+      if (res.status === 409) { setDlError(t('modal.errorDuplicate')); return }
+      if (!res.ok) { setDlError(t('modal.errorGeneric')); return }
       setDlSubmitted(true)
     } catch {
-      setDlError('Something went wrong. Please try again later.')
+      setDlError(t('modal.errorGeneric'))
     } finally {
       setDlLoading(false)
     }
@@ -360,9 +372,9 @@ export function BioPage() {
   const FINGER_OFF_RESET = 45
 
   useEffect(() => {
-    document.title = 'Bio OS — Live Biometrics | ONDA Life'
+    document.title = t('meta.title')
     return () => stopAll()
-  }, [])
+  }, [t])
 
   function stopAll() {
     if (rafRef.current) cancelAnimationFrame(rafRef.current)
@@ -470,7 +482,7 @@ export function BioPage() {
         await track.applyConstraints({ advanced: [{ torch: true } as MediaTrackConstraintSet] })
       } catch { /* not supported */ }
     } catch {
-      setCameraError('Camera access denied. Please allow camera in browser settings.')
+      setCameraError(t('cameraDenied'))
       return
     }
 
@@ -501,11 +513,11 @@ export function BioPage() {
         {/* Header */}
         <div className="mb-8 text-center">
           <h1 className="mb-2 bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text font-mono text-3xl font-bold text-transparent md:text-4xl">
-            Bio OS
+            {t('title')}
           </h1>
           <p className="text-sm leading-relaxed text-white/40">
-            Real-time biometric analysis — no wearable required.<br />
-            Place your finger on the back camera to begin.
+            {t('subtitle')}<br />
+            {t('subtitle2')}
           </p>
         </div>
 
@@ -525,7 +537,7 @@ export function BioPage() {
                   style={{ backgroundColor: cameraColor }}
                 />
               </div>
-              <span className="text-[10px] font-semibold text-white/40 leading-none">tap to stop</span>
+              <span className="text-[10px] font-semibold text-white/40 leading-none">{t('tapStop')}</span>
             </div>
           ) : (
             <button
@@ -536,7 +548,7 @@ export function BioPage() {
               <div className="flex h-8 w-8 items-center justify-center">
                 <span className="text-2xl leading-none">📷</span>
               </div>
-              <span className="text-[10px] font-semibold text-white/40 leading-none">tap to start</span>
+              <span className="text-[10px] font-semibold text-white/40 leading-none">{t('tapStart')}</span>
             </button>
           )}
 
@@ -544,15 +556,15 @@ export function BioPage() {
           <div className="h-4 flex items-center">
             {measuring ? (
               <p className={`text-xs transition-colors duration-300 ${fingerOn ? 'text-green-400' : 'text-white/25'}`}>
-                {fingerOn ? '✓ Finger detected' : 'Place finger on camera →'}
+                {fingerOn ? t('fingerDetected') : t('placeFinger')}
               </p>
             ) : (
-              <p className="text-xs text-white/25">Back camera · cover lens with finger</p>
+              <p className="text-xs text-white/25">{t('backCameraHint')}</p>
             )}
           </div>
 
           {/* Line 2 — always the same */}
-          <p className="text-xs text-white/20">Hold camera facing a light source</p>
+          <p className="text-xs text-white/20">{t('lightHint')}</p>
 
           {cameraError && (
             <p className="text-center text-xs text-red-400">{cameraError}</p>
@@ -561,131 +573,98 @@ export function BioPage() {
 
         {/* 4 main cards */}
         <div className="mb-8 grid grid-cols-2 gap-6">
-          <MainCard icon={<HeartIcon />} label="BPM" value={metrics.bpm} />
-          <MainCard icon={<WindIcon />} label="/min" value={metrics.br} />
-          <MainCard icon={<ActivityIcon />} label="Stress" value={metrics.stress} suffix="%" />
-          <MainCard icon={<ZapIcon />} label="Energy" value={metrics.energy} suffix="%" />
+          <MainCard icon={<HeartIcon />} label={t('main.bpm')} value={metrics.bpm} />
+          <MainCard icon={<WindIcon />} label={t('main.br')} value={metrics.br} />
+          <MainCard icon={<ActivityIcon />} label={t('main.stress')} value={metrics.stress} suffix="%" />
+          <MainCard icon={<ZapIcon />} label={t('main.energy')} value={metrics.energy} suffix="%" />
         </div>
 
         {/* Advanced Physiological Metrics */}
         <div className="mb-3">
-          <SectionTitle>Advanced Physiological Metrics</SectionTitle>
+          <SectionTitle>{t('sections.advanced')}</SectionTitle>
           <div className="flex flex-col gap-2">
-            <MetricRow label="HRV surrogate" desc="HR variability over time" value={metrics.hrv} />
-            <MetricRow label="Cardiac Stability Index" desc="how evenly the heart beats" value={metrics.csi} />
-            <MetricRow label="Recovery Rate" desc="HR normalization speed after stress" value={metrics.recoveryRate} />
-            <MetricRow label="HR trend slope" desc="trend over 30-60s" value={metrics.hrTrend} />
-            <MetricRow label="HR Acceleration" desc="how fast HR rises" value={metrics.hrAccel} />
+            <MetricRow label={t('rows.hrv.label')} desc={t('rows.hrv.desc')} value={metrics.hrv} />
+            <MetricRow label={t('rows.csi.label')} desc={t('rows.csi.desc')} value={metrics.csi} />
+            <MetricRow label={t('rows.recovery.label')} desc={t('rows.recovery.desc')} value={metrics.recoveryRate} />
+            <MetricRow label={t('rows.trend.label')} desc={t('rows.trend.desc')} value={metrics.hrTrend} />
+            <MetricRow label={t('rows.accel.label')} desc={t('rows.accel.desc')} value={metrics.hrAccel} />
           </div>
         </div>
 
         {/* Emotional State Metrics */}
         <div className="mb-3">
-          <SectionTitle>Emotional State Metrics</SectionTitle>
+          <SectionTitle>{t('sections.emotional')}</SectionTitle>
           <div className="flex flex-col gap-2">
-            <MetricRow label="Alarm / Anxiety" desc="HR rise + BR rise" value={metrics.alarm} />
-            <MetricRow label="Relaxation / Calmness" desc="low HR + stable BR" value={metrics.relaxation} />
-            <MetricRow label="Focus / Concentration" desc="average HR + low variability" value={metrics.focus} />
-            <MetricRow label="Excitement" desc="HR↑↑ sharp moment" value={metrics.excitement} />
-            <MetricRow label="Fatigue" desc="HR above baseline, BR↓, energy↓" value={metrics.fatigue} />
-            <MetricRow label="Flow" desc="HR slightly above baseline, stable BR" value={metrics.flow} />
+            <MetricRow label={t('rows.alarm.label')} desc={t('rows.alarm.desc')} value={metrics.alarm} />
+            <MetricRow label={t('rows.relaxation.label')} desc={t('rows.relaxation.desc')} value={metrics.relaxation} />
+            <MetricRow label={t('rows.focus.label')} desc={t('rows.focus.desc')} value={metrics.focus} />
+            <MetricRow label={t('rows.excitement.label')} desc={t('rows.excitement.desc')} value={metrics.excitement} />
+            <MetricRow label={t('rows.fatigue.label')} desc={t('rows.fatigue.desc')} value={metrics.fatigue} />
+            <MetricRow label={t('rows.flow.label')} desc={t('rows.flow.desc')} value={metrics.flow} />
           </div>
           <p className="mt-4 text-center text-xs text-white/30">
             {measuring
-              ? (fingerOn ? 'Measuring... results update every ~2s' : 'Waiting for signal...')
-              : 'Real-time metrics. Calibrating baseline...'}
+              ? (fingerOn ? t('status.measuring') : t('status.waiting'))
+              : t('status.calibrating')}
           </p>
         </div>
 
         {/* CTA */}
         <div className="mt-8 rounded-2xl ring-1 ring-cyan-500/20 bg-[#1e1540] p-6 text-center">
-          <p className="mb-1 text-sm font-semibold text-white/80">Want 24/7 monitoring?</p>
+          <p className="mb-1 text-sm font-semibold text-white/80">{t('ctaPrimary.title')}</p>
           <p className="mb-4 text-xs text-white/40">
-            Connect a Bluetooth tracker for continuous precise biofeedback.
+            {t('ctaPrimary.subtitle')}
           </p>
           <a
-            href="/#download"
+            href={`${lang === 'en' ? '' : '/' + lang}/#download`}
             className="inline-block rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-2.5 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600"
           >
-            Download ONDA Life
+            {t('ctaPrimary.button')}
           </a>
         </div>
 
         {/* Metric descriptions */}
         <div className="mt-10 flex flex-col gap-6">
           <h2 className="text-center text-base font-semibold text-white/60 uppercase tracking-widest text-xs">
-            What each metric means
+            {t('descriptions.heading')}
           </h2>
 
           {/* Main 4 */}
           <div className="flex flex-col gap-3">
-            <DescCard title="❤️ BPM — Heart Rate"
-              text="The number of heartbeats per minute measured from the optical pulse in your fingertip. Normal resting range: 55–90 BPM. Elevated BPM may signal stress, physical exertion, or stimulant intake."
-              detailKey="bpm" />
-            <DescCard title="🌬️ /min — Breathing Rate"
-              text="Respiratory rate derived from the slow amplitude modulation of the PPG signal. Normal range: 12–20 breaths/min. Higher values indicate stress or physical activity; lower values appear during deep relaxation."
-              detailKey="br" />
-            <DescCard title="⚡ Stress %"
-              text="Derived from the Cardiac Stability Index. High heart rate variability irregularity → higher stress score. A score under 30 % indicates a calm state; 60 %+ suggests acute physiological stress."
-              detailKey="stress" />
-            <DescCard title="🔋 Energy %"
-              text="Reflects cardiovascular reserve: how far your heart rate is from its elevated ceiling and how stable the rhythm is. Higher score = more physiological capacity left. Drops with fatigue, high BPM, or prolonged stress."
-              detailKey="energy" />
+            {(t('descriptions.main', { returnObjects: true }) as MetricDescItem[]).map((item, i) => (
+              <DescCard key={i} title={item.title} text={item.text} detailKey={item.key}
+                readMoreLabel={t('descriptions.readMore')} />
+            ))}
           </div>
 
           {/* Advanced */}
           <div className="flex flex-col gap-3">
-            <p className="text-xs font-semibold uppercase tracking-widest text-white/30">Advanced Physiological</p>
-            <DescCard title="HRV surrogate (RMSSD)"
-              text="Root Mean Square of Successive Differences between adjacent RR intervals, in milliseconds. Reflects parasympathetic nervous system activity. Higher = more adaptive autonomic regulation. Typical camera-derived range: 15–70 ms."
-              detailKey="hrv" />
-            <DescCard title="Cardiac Stability Index (CSI)"
-              text="Standard deviation of RR intervals divided by mean RR interval. Measures rhythmic consistency independent of heart rate. Lower values (0.03–0.10) indicate a very stable rhythm; values above 0.25 suggest irregular beats or measurement noise."
-              detailKey="csi" />
-            <DescCard title="Recovery Rate %"
-              text="How completely the heart rate has returned toward its mean after the highest recorded beat in this session. 0 % = HR still at its peak; 100 % = fully recovered to baseline or below."
-              detailKey="recovery" />
-            <DescCard title="HR Trend Slope"
-              text="Linear regression slope of RR intervals over the measurement window. Negative = heart rate gradually slowing (relaxation response). Positive = HR accelerating (rising arousal or activity)."
-              detailKey="slope" />
-            <DescCard title="HR Acceleration"
-              text="Second derivative of RR intervals — the rate of change of the trend. Positive = HR is speeding up faster than before. Negative = the rate of change is decelerating, even if HR is still rising."
-              detailKey="acceleration" />
+            <p className="text-xs font-semibold uppercase tracking-widest text-white/30">{t('sections.advancedTag')}</p>
+            {(t('descriptions.advanced', { returnObjects: true }) as MetricDescItem[]).map((item, i) => (
+              <DescCard key={i} title={item.title} text={item.text} detailKey={item.key}
+                readMoreLabel={t('descriptions.readMore')} />
+            ))}
           </div>
 
           {/* Emotional */}
           <div className="flex flex-col gap-3">
-            <p className="text-xs font-semibold uppercase tracking-widest text-white/30">Emotional State</p>
-            <DescCard title="Alarm / Anxiety"
-              text="Composite of rising HR and elevated breathing rate. High values indicate a fight-or-flight activation pattern in the autonomic nervous system."
-              detailKey="alarm" />
-            <DescCard title="Relaxation / Calmness"
-              text="Inverse of CSI plus energy reserve. High score = low HR variability irregularity, slow stable breathing, and ample cardiovascular headroom — the signature of restful alertness."
-              detailKey="relaxation" />
-            <DescCard title="Focus / Concentration"
-              text="Blend of energy level and inverse stress. Peaks when HR is moderate, rhythm is stable, and stress is low — consistent with sustained attentional effort without overarousal."
-              detailKey="focus" />
-            <DescCard title="Excitement"
-              text="Rises with HR elevation above resting baseline and higher breathing rate. Distinguishable from alarm by the absence of extreme stress scores — it is positive arousal rather than threat response."
-              detailKey="excitement" />
-            <DescCard title="Fatigue"
-              text="Increases when energy is depleted and stress is chronically elevated. Reflects the physiological cost of prolonged effort: reduced HRV, elevated HR at rest, and slow recovery."
-              detailKey="fatigue" />
-            <DescCard title="Flow"
-              text="The optimal performance state: high focus, moderate relaxation, and HR slightly above resting without alarm. Appears when you are fully engaged but not overwhelmed — the zone."
-              detailKey="flow" />
+            <p className="text-xs font-semibold uppercase tracking-widest text-white/30">{t('sections.emotionalTag')}</p>
+            {(t('descriptions.emotional', { returnObjects: true }) as MetricDescItem[]).map((item, i) => (
+              <DescCard key={i} title={item.title} text={item.text} detailKey={item.key}
+                readMoreLabel={t('descriptions.readMore')} />
+            ))}
           </div>
 
           <p className="pb-6 text-center text-[10px] text-white/20 leading-relaxed">
-            All metrics are derived from the optical PPG signal via the device camera.<br />
-            For medical-grade accuracy use a certified biometric device.
+            {t('descriptions.footnote1')}<br />
+            {t('descriptions.footnote2')}
           </p>
         </div>
 
         {/* Download CTA */}
         <div className="mt-8 rounded-2xl border border-cyan-500/15 bg-[#1e1540] p-6 text-center">
-          <p className="mb-1 text-sm font-semibold text-white/80">Ready to measure?</p>
-          <p className="mb-5 text-xs text-white/35">Connect a Bluetooth tracker for continuous precise biofeedback.</p>
+          <p className="mb-1 text-sm font-semibold text-white/80">{t('ctaDownload.title')}</p>
+          <p className="mb-5 text-xs text-white/35">{t('ctaDownload.subtitle')}</p>
           <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
             <a
               href={appStoreUrl('bio_page')}
@@ -693,28 +672,28 @@ export function BioPage() {
               rel="noopener"
               onClick={() => { (window as any).lastPlatform = 'ios' }}
               className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
-              aria-label="Download ONDA Life on App Store"
+              aria-label={t('ctaDownload.appStoreAria')}
               data-button="apple"
               data-platform="ios"
             >
               <BioAppleIcon />
               <div className="text-left">
-                <div className="text-[9px] text-white/40">Download on the</div>
-                <div className="text-sm font-semibold">App Store</div>
+                <div className="text-[9px] text-white/40">{t('ctaDownload.appStoreSup')}</div>
+                <div className="text-sm font-semibold">{t('ctaDownload.appStoreLabel')}</div>
               </div>
             </a>
             <button
               type="button"
               onClick={() => { (window as any).lastPlatform = 'android'; setDlPlatform('android'); setDlOpen(true) }}
               className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
-              aria-label="Download ONDA Life on Google Play"
+              aria-label={t('ctaDownload.googlePlayAria')}
               data-button="android"
               data-platform="android"
             >
               <BioPlayIcon />
               <div className="text-left">
-                <div className="text-[9px] text-white/40">Get it on</div>
-                <div className="text-sm font-semibold">Google Play</div>
+                <div className="text-[9px] text-white/40">{t('ctaDownload.googlePlaySup')}</div>
+                <div className="text-sm font-semibold">{t('ctaDownload.googlePlayLabel')}</div>
               </div>
             </button>
           </div>
@@ -739,22 +718,22 @@ export function BioPage() {
             type="button"
             onClick={handleDlClose}
             className="absolute top-4 right-4 rounded-lg p-1 text-white/50 transition-colors hover:bg-white/10 hover:text-white"
-            aria-label="Close"
+            aria-label={t('modal.close')}
           >
             ✕
           </button>
           <div className="h-[270px] flex flex-col shrink-0">
             {!dlSubmitted ? (
               <form onSubmit={handleDlSubmit} className="flex flex-col flex-1">
-                <h2 id="bio-waitlist-title" className="mb-4 text-2xl font-bold text-white">Join ONDA Life</h2>
+                <h2 id="bio-waitlist-title" className="mb-4 text-2xl font-bold text-white">{t('modal.title')}</h2>
                 <p className="mb-6 text-sm text-white/60">
-                  We are putting the finishing touches! Leave your email and we will send you early access.
+                  {t('modal.subtitle')}
                 </p>
                 <input
                   type="email"
                   name="email"
                   required
-                  placeholder="Your email"
+                  placeholder={t('modal.placeholder')}
                   disabled={dlLoading}
                   className="mb-4 w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder-white/40 outline-none transition-colors focus:border-terminal-cyan/50 focus:ring-1 focus:ring-terminal-cyan/30 disabled:opacity-50"
                 />
@@ -764,20 +743,20 @@ export function BioPage() {
                   disabled={dlLoading}
                   className="mt-auto w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90 disabled:opacity-50"
                 >
-                  {dlLoading ? 'Submitting...' : 'Get Early Access'}
+                  {dlLoading ? t('modal.submitting') : t('modal.submit')}
                 </button>
               </form>
             ) : (
               <div className="flex flex-col flex-1">
-                <h2 className="mb-4 text-2xl font-bold text-terminal-green">Thank you!</h2>
-                <p className="mb-6 text-sm text-white/60">We will contact you as soon as the app is ready to launch.</p>
+                <h2 className="mb-4 text-2xl font-bold text-terminal-green">{t('modal.thankTitle')}</h2>
+                <p className="mb-6 text-sm text-white/60">{t('modal.thankSubtitle')}</p>
                 <div className="flex-1 min-h-0" aria-hidden="true" />
                 <button
                   type="button"
                   onClick={handleDlClose}
                   className="w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90"
                 >
-                  OK
+                  {t('modal.ok')}
                 </button>
               </div>
             )}

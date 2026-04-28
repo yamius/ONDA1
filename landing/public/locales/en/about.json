@@ -1,0 +1,46 @@
+{
+  "tag": "[ ABOUT ]",
+  "title1": "What is ONDA Life",
+  "intro1": "ONDA Life — a system of mindfulness and self-development practices for real life.",
+  "introList": [
+    "breathing, body, and meditation steps;",
+    "levels: from body support to higher states of consciousness;",
+    "short formats 1–12 minutes;",
+    "internal currency OND for practices and missions."
+  ],
+  "intro2": "Path: from body sensation — to clarity, inspiration, and strength.",
+  "title2": "How it works",
+  "how1": "ONDA Life — routes (waves and levels) of simple daily steps.",
+  "howLead": "You learn to:",
+  "howList": [
+    "rely on body as a source of energy;",
+    "experience emotions as a language of connection;",
+    "use the mind for precise action;",
+    "kindle the soul by supporting others."
+  ],
+  "how2": "Each practice — short breathing, attention to body, micro-movements, or contemplation.",
+  "title3": "Resources, rewards, results",
+  "rewards1": "We provide routes, tips, and support. For practices and missions you earn OND — game currency:",
+  "rewardsList": [
+    "OND accumulates for regularity;",
+    "from level 3, it can be converted to real money;",
+    "early level skills — foundation for further growth."
+  ],
+  "rewards2": "Result: stable presence, calm, clarity, and inner support in life.",
+  "details": {
+    "heading": "ONDA Life is a practice of self-awareness and body awareness",
+    "p1": "Connect your fitness tracker or smartwatch in settings and watch your vitals change in real time during your practice.",
+    "p2": "The more successful you are — measured by time in practice and improvements in your state — the more OND you earn. Connecting a tracker or smartwatch will boost your earnings for completing practices.",
+    "p3": "Once you complete all practices in a part with over 40% success, you'll unlock the next level.",
+    "p4": "At the start of each part, you'll find general guidance before the Main Practices. At the end, there's a more detailed attunement to help you assess your current state.",
+    "p5": "In the Emotional Check window, you can discover your current emotional state and can complete an Adaptive practice.",
+    "p6": "Remember: the ONDA level system is a journey of realizations — experiencing yourself as an amoeba, fish, animal, primate, human, brain cell, DNA, and finally, an atom. Give each stage the attention it deserves, and your path will be effortless and fulfilling.",
+    "goodLuck": "Good luck on your journey!"
+  },
+  "back": "← Back to Home",
+  "meta": {
+    "title": "About ONDA Life | Operating System for Your Consciousness & Biohacking",
+    "description": "Discover how ONDA Life upgrades your biological firmware through systematic HRV tracking, neural hardware optimization, and 8 levels of consciousness development.",
+    "ogImageAlt": "ONDA Life — Biohacking App & Consciousness OS. HRV tracking and neural optimization."
+  }
+}

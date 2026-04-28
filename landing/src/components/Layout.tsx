@@ -2,7 +2,7 @@ import { useState, useEffect, useLayoutEffect, Suspense, useMemo } from 'react'
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { TransitionLink } from './TransitionLink'
-import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, type Lang } from '../i18n'
+import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, type Lang } from '../i18n'
 
 export function Layout() {
   const location = useLocation()
@@ -71,9 +71,10 @@ export function Layout() {
 
   const switchLang = (lang: Lang) => {
     setMenuOpen(false)
-    // Phase 1 only localizes the home page — language buttons always navigate
-    // to the home of the chosen locale. Other pages can be wired up later.
-    navigate(homePathFor(lang))
+    // Try to keep the user on the same page in the new language. For pages not
+    // yet localized (Articles, Glossary, etc) localizedPathFor falls back to
+    // the home of the chosen locale.
+    navigate(localizedPathFor(location.pathname, lang))
   }
 
   return (
@@ -115,10 +116,10 @@ export function Layout() {
             <span className="text-green-400"> LIFE</span>
           </TransitionLink>
           <TransitionLink
-            to="/about"
+            to={localizedPathFor('/about', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
-              location.pathname === '/about' ? 'text-cyan-400' : 'text-white/70'
+              location.pathname.endsWith('/about') ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
             {t('menu.about')}<span className="sr-only">{t('menu.aboutSr')}</span>
@@ -174,7 +175,7 @@ export function Layout() {
             })}
           </div>
           <TransitionLink
-            to="/bio"
+            to={localizedPathFor('/bio', currentLang)}
             onClick={() => setMenuOpen(false)}
             className="-mx-4 block border-b border-white/5 bg-gradient-to-r from-green-400/70 to-transparent px-4 py-3 text-sm font-bold text-white transition-opacity hover:opacity-80"
           >
@@ -201,7 +202,7 @@ export function Layout() {
               <span className="text-green-400"> LIFE</span>
             </TransitionLink>
             <TransitionLink
-              to="/bio"
+              to={localizedPathFor('/bio', currentLang)}
               onClick={() => setMenuOpen(false)}
               className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-3 py-1.5 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:px-4 md:py-1.5 md:text-sm"
             >
@@ -228,7 +229,7 @@ export function Layout() {
               <span className="text-green-400"> LIFE</span>
             </Link>
             <div className="flex flex-wrap justify-center gap-6">
-              <Link to="/about" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link to={localizedPathFor('/about', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.about')}<span className="sr-only">{t('menu.aboutSr')}</span>
               </Link>
               <Link to="/glossary" className="text-xs text-white/40 transition-colors hover:text-white/60">
@@ -237,7 +238,7 @@ export function Layout() {
               <Link to="/articles" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
               </Link>
-              <Link to="/bio" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link to={localizedPathFor('/bio', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.bio')}<span className="sr-only"> — live biometrics measurement</span>
               </Link>
               <Link to="/contact" className="text-xs text-white/40 transition-colors hover:text-white/60">
