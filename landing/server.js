@@ -521,6 +521,11 @@ app.use('/assets', (req, res) => {
 // Redirect legacy part slug (i-resonate → i-am-vibration)
 app.get('/part/i-resonate', (req, res) => res.redirect(301, '/part/i-am-vibration'))
 
+// Redirect dead article URL (Google indexed an unmerged preview of the same content
+// that ships at /articles/cognitive-architecture-neural-throughput).
+app.get('/articles/system-analysis-cognitive-architecture',
+  (req, res) => res.redirect(301, '/articles/cognitive-architecture-neural-throughput'))
+
 // Redirect legacy /articles/telegram/:slug to /articles/:slug
 app.get('/articles/telegram/:slug', (req, res, next) => {
   try {
