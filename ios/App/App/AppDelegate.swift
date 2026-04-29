@@ -3,11 +3,13 @@ import Capacitor
 import WatchConnectivity
 import FirebaseCore
 import Airbridge
+import AppTrackingTransparency
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    private var attObserver: Any?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // ⚠️ Order matters: Firebase MUST initialize before Airbridge.
@@ -40,6 +42,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ).build()
             Airbridge.initializeSDK(option: airbridgeOption)
             print("[ONDA] Airbridge iOS SDK v4 initialized ✅ (deferred)")
+        }
+
+        // App Tracking Transparency.
+        //
+        // Apple's review team rejected build 1.0.3 (Submission ID 08145570…)
+        // on iOS 26.4.1 because the ATT prompt never appeared. Earlier we
+        // assumed Airbridge SDK 4.9.x would surface the prompt itself —
+        // either it doesn't, or its trigger doesn't fire on iOS 26. Either
+        // way, the app links AppTrackingTransparency.framework and ships
+        // NSUserTrackingUsageDescription in Info.plist, so Apple expects
+        // the request to be shown before any tracking-relevant data is
+        // collected.
+        //
+        // Anchored to didBecomeActive because requestTrackingAuthorization
+        // only displays the system sheet while the app is foreground-
+        // active (iOS will silently no-op the call otherwise). Single-shot
+        // — observer is removed inside the handler.
+        attObserver = NotificationCenter.default.addObserver(
+            forName: UIApplication.didBecomeActiveNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            // Slight delay so the request lands after the WebView's first
+            // frame, not during launch animations — looks less abrupt and
+            // is the pattern Apple's own samples use.
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                if #available(iOS 14, *) {
+                    ATTrackingManager.requestTrackingAuthorization { status in
+                        print("[ONDA] ATT status: \(status.rawValue)")
+                    }
+                }
+            }
+            if let observer = self?.attObserver {
+                NotificationCenter.default.removeObserver(observer)
+                self?.attObserver = nil
+            }
         }
 
         // Активируем WCSession рано для получения данных с часов
