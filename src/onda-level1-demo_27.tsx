@@ -4526,32 +4526,73 @@ const OndaLevel1 = () => {
                 activeCircuit === 2 ? 'text-cyan-200/80 border-cyan-500/40' : activeCircuit === 3 ? 'text-amber-200/80 border-amber-500/40' : activeCircuit === 4 ? 'text-teal-200/80 border-teal-500/40' : activeCircuit === 5 ? 'text-yellow-200/80 border-yellow-600/40' : activeCircuit === 6 ? 'text-emerald-200/80 border-emerald-500/40' : activeCircuit === 7 ? 'text-sky-200/80 border-sky-500/40' : activeCircuit === 8 ? 'text-indigo-200/80 border-indigo-500/40' : activeCircuit === 9 ? 'text-cyan-200/80 border-cyan-500/40' : activeCircuit === 10 ? 'text-orange-200/80 border-orange-500/40' : activeCircuit === 11 ? 'text-rose-200/80 border-rose-500/40' : activeCircuit === 12 ? 'text-fuchsia-200/80 border-fuchsia-500/40' : 'text-purple-200/80 border-purple-500/40'
               }`}>{t(`part_info.level_${activeCircuit}.result_outro`)}</p>
 
-              {activeCircuit >= 1 && activeCircuit <= 12 && (
-                <div className="mt-6 rounded-xl overflow-hidden" style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
-                  {/*
-                    youtube-nocookie.com is YouTube's privacy-enhanced embed
-                    domain. We had switched to plain youtube.com for SEO of
-                    the landing page (which has its own embeds), but inside
-                    the Capacitor WebView the embeds get YouTube error 153
-                    on iOS 26 — the privacy-enhanced host doesn't trigger
-                    that gate. The SEO concern doesn't apply here: this is
-                    the iOS app bundle, not a crawlable web page.
-                  */}
-                  <iframe
-                    src={activeCircuit >= 10 && activeCircuit <= 12
-                      ? "https://www.youtube-nocookie.com/embed/qsDhvNptrZA"
-                      : activeCircuit >= 7 && activeCircuit <= 9
-                      ? "https://www.youtube-nocookie.com/embed/TtqoMQoS4WQ"
-                      : activeCircuit >= 4 && activeCircuit <= 6
-                      ? "https://www.youtube-nocookie.com/embed/3HCOCpWwC9Y"
-                      : "https://www.youtube-nocookie.com/embed/fZjKE81nIJ0"}
-                    title="ONDA Video"
-                    style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', borderRadius: '0.75rem' }}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
-                </div>
-              )}
+              {activeCircuit >= 1 && activeCircuit <= 12 && (() => {
+                // Map circuit → YouTube video ID. iOS 26's WKWebView tightened
+                // cross-origin iframe rules and YouTube's embed gate now
+                // returns error 153 when the iframe is loaded from
+                // capacitor://localhost — the scheme isn't on YouTube's
+                // allow-list and no `?origin=` param can fix that. Older
+                // iOS releases were lenient about this; that's why the
+                // iframe approach worked in the 1.0.2 build.
+                //
+                // Workaround: render a clickable YouTube-style thumbnail
+                // and open the real video in SFSafariViewController via
+                // @capacitor/browser. Native player, full quality, picture-
+                // in-picture, no embed gate. Apple endorses this pattern.
+                const videoId =
+                  activeCircuit >= 10 && activeCircuit <= 12 ? 'qsDhvNptrZA' :
+                  activeCircuit >= 7  && activeCircuit <= 9  ? 'TtqoMQoS4WQ' :
+                  activeCircuit >= 4  && activeCircuit <= 6  ? '3HCOCpWwC9Y' :
+                  'fZjKE81nIJ0';
+                const watchUrl = `https://www.youtube.com/watch?v=${videoId}`;
+                // hqdefault is the most reliably-served public thumbnail.
+                const thumb = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+                return (
+                  <button
+                    type="button"
+                    aria-label={t('part_info.watch_on_youtube', 'Watch on YouTube')}
+                    className="mt-6 rounded-xl overflow-hidden block w-full text-left"
+                    style={{ position: 'relative', paddingBottom: '56.25%', height: 0, background: '#000', border: 'none', padding: 0, cursor: 'pointer' }}
+                    onClick={async () => {
+                      try {
+                        const { Browser } = await import('@capacitor/browser');
+                        await Browser.open({ url: watchUrl });
+                      } catch {
+                        // Web fallback — desktop preview, etc.
+                        window.open(watchUrl, '_blank', 'noopener');
+                      }
+                    }}
+                  >
+                    <img
+                      src={thumb}
+                      alt=""
+                      style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', borderRadius: '0.75rem' }}
+                    />
+                    {/* Play-button overlay so the thumbnail reads as a video. */}
+                    <div
+                      style={{
+                        position: 'absolute', inset: 0,
+                        display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        background: 'rgba(0,0,0,0.18)',
+                        borderRadius: '0.75rem',
+                      }}
+                    >
+                      <div
+                        style={{
+                          width: 68, height: 48,
+                          background: 'rgba(0,0,0,0.7)',
+                          borderRadius: 12,
+                          display: 'flex', alignItems: 'center', justifyContent: 'center',
+                        }}
+                      >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </button>
+                );
+              })()}
             </div>
           )}
 
