@@ -4552,7 +4552,13 @@ const OndaLevel1 = () => {
                     type="button"
                     aria-label={t('part_info.watch_on_youtube', 'Watch on YouTube')}
                     className="mt-6 rounded-xl overflow-hidden block w-full text-left"
-                    style={{ position: 'relative', paddingBottom: '56.25%', height: 0, background: '#000', border: 'none', padding: 0, cursor: 'pointer' }}
+                    // Order matters: `padding: 0` is the user-agent button
+                    // padding reset and MUST come before `paddingBottom`,
+                    // otherwise the shorthand wipes out the 56.25% aspect-
+                    // ratio padding and the button collapses to 0 height —
+                    // which is what made the entire video block disappear
+                    // in the previous attempt.
+                    style={{ background: '#000', border: 'none', padding: 0, cursor: 'pointer', position: 'relative', paddingBottom: '56.25%', height: 0 }}
                     onClick={async () => {
                       try {
                         const { Browser } = await import('@capacitor/browser');
