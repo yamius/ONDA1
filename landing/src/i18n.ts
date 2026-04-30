@@ -172,6 +172,27 @@ export function localizedPathFor(pathname: string, lang: Lang): string {
     return lang === 'en' ? `/part/${partMatch[1]}` : `/${lang}/part/${partMatch[1]}`
   }
 
+  // Article detail page: preserve slug across language switches.
+  const articleMatch = basePath.match(/^\/articles\/([^/]+)$/)
+  if (articleMatch) {
+    return lang === 'en' ? `/articles/${articleMatch[1]}` : `/${lang}/articles/${articleMatch[1]}`
+  }
+
+  // Glossary detail page: preserve slug across language switches.
+  const glossaryMatch = basePath.match(/^\/glossary\/([^/]+)$/)
+  if (glossaryMatch) {
+    return lang === 'en' ? `/glossary/${glossaryMatch[1]}` : `/${lang}/glossary/${glossaryMatch[1]}`
+  }
+
+  // Pages with /:lang/ variants but no per-slug data — keep the user in their
+  // language. Without this, switching to e.g. "UK" from /glossary would dump
+  // the user back on /glossary (EN) since localizedPathFor's default branch
+  // strips the lang prefix.
+  const flatLocalized = ['/glossary', '/articles', '/contact', '/sitemap', '/privacy', '/terms']
+  if (flatLocalized.includes(basePath)) {
+    return lang === 'en' ? basePath : `/${lang}${basePath}`
+  }
+
   if (LOCALIZED_BASE_PATHS.includes(basePath)) {
     if (lang === 'en') return basePath
     return basePath === '/' ? `/${lang}` : `/${lang}${basePath}`
