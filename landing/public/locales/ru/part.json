@@ -1,0 +1,15 @@
+{
+  "ui": {
+    "breadcrumbHome": "Главная",
+    "back": "← На главную",
+    "biologicalProtocol": "Биологический протокол",
+    "targetSystems": "Целевые системы",
+    "resultsBenefits": "Результаты и эффекты",
+    "researchBasis": "Научная основа",
+    "relatedTerms": "Связанные термины",
+    "peopleAlsoAsk": "Часто спрашивают",
+    "videoTitleTpl": "{{title}} {{titleHighlight}} — видео",
+    "notFound": "Раздел не найден.",
+    "levelLabelTpl": "Уровень {{number}}: {{name}}"
+  }
+}

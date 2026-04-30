@@ -21,9 +21,10 @@ import {
   levelPathFor,
   parseMetricRoute,
   parseLevelRoute,
+  parsePartRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml } from './meta-inject'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -244,12 +245,15 @@ for (const route of routes) {
     const isLocalized = LOCALIZED_ROUTE_SET.has(route)
     const isMetricLocalized = LOCALIZED_METRIC_ROUTE_SET.has(route)
     const isLevelLocalized = LOCALIZED_LEVEL_ROUTE_SET.has(route)
+    const isPartLocalized = LOCALIZED_PART_ROUTE_SET.has(route)
     const metricInfo = isMetricLocalized ? parseMetricRoute(route) : null
     const levelInfo = isLevelLocalized ? parseLevelRoute(route) : null
+    const partInfo = isPartLocalized ? parsePartRoute(route) : null
     const lang: Lang = isLocalized
       ? langFromPath(route)
       : metricInfo ? metricInfo.lang
       : levelInfo ? levelInfo.lang
+      : partInfo ? partInfo.lang
       : 'en'
     const basePath = isLocalized ? stripLangPrefix(route) : route
 
@@ -274,6 +278,12 @@ for (const route of routes) {
       out = applyMetricLocalizedMeta(out, metricInfo.metric, metricInfo.lang)
     } else if (levelInfo) {
       out = applyLevelLocalizedMeta(out, levelInfo.levelNum, levelInfo.lang)
+    } else if (partInfo && partInfo.lang !== 'en') {
+      // Part body content is still EN-only — only set <html lang> + canonical
+      // back to the EN URL so Google doesn't treat translated routes as duplicates.
+      const enUrl = `${SITE_URL}/part/${partInfo.slug}`
+      out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${partInfo.lang}"`)
+      out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${enUrl}">`)
     }
 
     // Build fingerprint for deployment verification (view page source, search "onda-build")

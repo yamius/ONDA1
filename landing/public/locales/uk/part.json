@@ -1,0 +1,15 @@
+{
+  "ui": {
+    "breadcrumbHome": "Головна",
+    "back": "← На головну",
+    "biologicalProtocol": "Біологічний протокол",
+    "targetSystems": "Цільові системи",
+    "resultsBenefits": "Результати та ефекти",
+    "researchBasis": "Наукова основа",
+    "relatedTerms": "Пов'язані терміни",
+    "peopleAlsoAsk": "Часто запитують",
+    "videoTitleTpl": "{{title}} {{titleHighlight}} — відео",
+    "notFound": "Розділ не знайдено.",
+    "levelLabelTpl": "Рівень {{number}}: {{name}}"
+  }
+}

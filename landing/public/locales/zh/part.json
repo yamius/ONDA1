@@ -1,0 +1,15 @@
+{
+  "ui": {
+    "breadcrumbHome": "首页",
+    "back": "← 返回首页",
+    "biologicalProtocol": "生物协议",
+    "targetSystems": "目标系统",
+    "resultsBenefits": "结果与效益",
+    "researchBasis": "研究基础",
+    "relatedTerms": "相关术语",
+    "peopleAlsoAsk": "常见问题",
+    "videoTitleTpl": "{{title}} {{titleHighlight}} — 视频",
+    "notFound": "未找到该部分。",
+    "levelLabelTpl": "第 {{number}} 层：{{name}}"
+  }
+}

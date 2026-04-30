@@ -1,9 +1,11 @@
 import { useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { levelsData } from '../data/levels'
 import { PART_SEO } from '../data/part-seo'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
 import { OptimizedImage } from '../components/OptimizedImage'
+import { langFromPath, localizedPathFor, partPathFor, levelPathFor } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -2000,6 +2002,9 @@ export const parts: Record<string, {
 export function PartPage() {
   const { slug } = useParams<{ slug: string }>()
   const part = slug ? parts[slug] : undefined
+  const location = useLocation()
+  const lang = langFromPath(location.pathname)
+  const { t } = useTranslation('part')
 
   useEffect(() => {
     if (!part) return
@@ -2010,7 +2015,7 @@ export function PartPage() {
     setMeta('description', desc)
     setMeta('og:title', title, true)
     setMeta('og:description', desc, true)
-    setMeta('og:url', `${SITE_URL}/part/${slug}`, true)
+    setMeta('og:url', `${SITE_URL}${slug ? partPathFor(slug, lang) : ''}`, true)
     setMeta('og:image', OG_IMAGE, true)
     setMeta('twitter:card', 'summary_large_image', true)
     setMeta('twitter:title', title, true)
@@ -2050,14 +2055,14 @@ export function PartPage() {
       const faqEl = document.querySelector('script[data-faq-schema]')
       if (faqEl) faqEl.remove()
     }
-  }, [part, slug])
+  }, [part, slug, lang])
 
   if (!part) {
     return (
       <div className="mx-auto max-w-3xl px-4 pb-16 md:px-6">
-        <p className="font-mono text-white/60">Part not found.</p>
-        <Link to="/" className="mt-4 inline-block font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60">
-          ← Back to Home
+        <p className="font-mono text-white/60">{t('ui.notFound')}</p>
+        <Link to={localizedPathFor('/', lang)} className="mt-4 inline-block font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60">
+          {t('ui.back')}
         </Link>
       </div>
     )
@@ -2069,14 +2074,14 @@ export function PartPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16 md:px-6">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to="/" className="transition-colors hover:text-white/50">
-          Home
+        <Link to={localizedPathFor('/', lang)} className="transition-colors hover:text-white/50">
+          {t('ui.breadcrumbHome')}
         </Link>
         {level && (
           <>
             <span>/</span>
-            <Link to={`/level/${level.number}`} className="transition-colors hover:text-white/50">
-              Level {level.number}: {level.name}
+            <Link to={levelPathFor(level.number, lang)} className="transition-colors hover:text-white/50">
+              {t('ui.levelLabelTpl', { number: level.number, name: level.name })}
             </Link>
           </>
         )}
@@ -2131,7 +2136,7 @@ export function PartPage() {
           <div className="aspect-[9/16] max-h-[500px] w-full max-w-[280px] overflow-hidden rounded-lg border border-white/10">
             <iframe
               src={part.videoUrl}
-              title={`${part.title} ${part.titleHighlight} — video`}
+              title={t('ui.videoTitleTpl', { title: part.title, titleHighlight: part.titleHighlight })}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               referrerPolicy="strict-origin-when-cross-origin"
@@ -2145,7 +2150,7 @@ export function PartPage() {
 
       {/* Biological Protocol */}
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        Biological Protocol
+        {t('ui.biologicalProtocol')}
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {part.protocol.intro}
@@ -2161,7 +2166,7 @@ export function PartPage() {
 
       {/* Target Systems */}
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        Target Systems
+        {t('ui.targetSystems')}
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {part.targets.intro}
@@ -2177,7 +2182,7 @@ export function PartPage() {
 
       {/* Results */}
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        Results & Benefits
+        {t('ui.resultsBenefits')}
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {part.results.intro}
@@ -2201,7 +2206,7 @@ export function PartPage() {
       {part.researchLinks && part.researchLinks.length > 0 && (
         <div className="border-t border-white/5 pt-10">
           <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-            Research Basis
+            {t('ui.researchBasis')}
           </h2>
           <div className="mb-10 flex flex-wrap gap-2">
             {part.researchLinks.map((link) => (
@@ -2222,7 +2227,7 @@ export function PartPage() {
       {/* Glossary Links */}
       <div className="border-t border-white/5 pt-10">
         <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-          Related Terms
+          {t('ui.relatedTerms')}
         </h2>
         <div className="flex flex-wrap gap-2">
           {part.glossaryLinks.map((link) => (
@@ -2240,7 +2245,7 @@ export function PartPage() {
       {part.faq && part.faq.length > 0 && (
         <div className="mt-10 border-t border-white/5 pt-10">
           <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
-            People Also Ask
+            {t('ui.peopleAlsoAsk')}
           </h2>
           <div className="space-y-6">
             {part.faq.map((item, i) => (
@@ -2255,10 +2260,10 @@ export function PartPage() {
 
       <div className="mt-12">
         <Link
-          to="/"
+          to={localizedPathFor('/', lang)}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
-          ← Back to Home
+          {t('ui.back')}
         </Link>
       </div>
     </div>

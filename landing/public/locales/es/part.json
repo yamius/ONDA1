@@ -1,0 +1,15 @@
+{
+  "ui": {
+    "breadcrumbHome": "Inicio",
+    "back": "← Volver al inicio",
+    "biologicalProtocol": "Protocolo biológico",
+    "targetSystems": "Sistemas objetivo",
+    "resultsBenefits": "Resultados y efectos",
+    "researchBasis": "Base científica",
+    "relatedTerms": "Términos relacionados",
+    "peopleAlsoAsk": "Preguntas frecuentes",
+    "videoTitleTpl": "{{title}} {{titleHighlight}} — vídeo",
+    "notFound": "Sección no encontrada.",
+    "levelLabelTpl": "Nivel {{number}}: {{name}}"
+  }
+}

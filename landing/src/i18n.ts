@@ -30,6 +30,11 @@ import esLevel from '../public/locales/es/level.json'
 import ruLevel from '../public/locales/ru/level.json'
 import ukLevel from '../public/locales/uk/level.json'
 import zhLevel from '../public/locales/zh/level.json'
+import enPart from '../public/locales/en/part.json'
+import esPart from '../public/locales/es/part.json'
+import ruPart from '../public/locales/ru/part.json'
+import ukPart from '../public/locales/uk/part.json'
+import zhPart from '../public/locales/zh/part.json'
 
 export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh'] as const
 export type Lang = (typeof SUPPORTED_LANGS)[number]
@@ -48,13 +53,13 @@ if (!i18n.isInitialized) {
     fallbackLng: 'en',
     supportedLngs: SUPPORTED_LANGS as unknown as string[],
     resources: {
-      en: { home: en, about: enAbout, 'inner-spectrum': enIs, bio: enBio, 'bio-metric': enBioMetric, level: enLevel },
-      es: { home: es, about: esAbout, 'inner-spectrum': esIs, bio: esBio, 'bio-metric': esBioMetric, level: esLevel },
-      ru: { home: ru, about: ruAbout, 'inner-spectrum': ruIs, bio: ruBio, 'bio-metric': ruBioMetric, level: ruLevel },
-      uk: { home: uk, about: ukAbout, 'inner-spectrum': ukIs, bio: ukBio, 'bio-metric': ukBioMetric, level: ukLevel },
-      zh: { home: zh, about: zhAbout, 'inner-spectrum': zhIs, bio: zhBio, 'bio-metric': zhBioMetric, level: zhLevel },
+      en: { home: en, about: enAbout, 'inner-spectrum': enIs, bio: enBio, 'bio-metric': enBioMetric, level: enLevel, part: enPart },
+      es: { home: es, about: esAbout, 'inner-spectrum': esIs, bio: esBio, 'bio-metric': esBioMetric, level: esLevel, part: esPart },
+      ru: { home: ru, about: ruAbout, 'inner-spectrum': ruIs, bio: ruBio, 'bio-metric': ruBioMetric, level: ruLevel, part: ruPart },
+      uk: { home: uk, about: ukAbout, 'inner-spectrum': ukIs, bio: ukBio, 'bio-metric': ukBioMetric, level: ukLevel, part: ukPart },
+      zh: { home: zh, about: zhAbout, 'inner-spectrum': zhIs, bio: zhBio, 'bio-metric': zhBioMetric, level: zhLevel, part: zhPart },
     },
-    ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level'],
+    ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part'],
     defaultNS: 'home',
     interpolation: { escapeValue: false },
     react: { useSuspense: false },
@@ -131,6 +136,12 @@ export function localizedPathFor(pathname: string, lang: Lang): string {
     return lang === 'en' ? `/level/${levelMatch[1]}` : `/${lang}/level/${levelMatch[1]}`
   }
 
+  // Part detail page: preserve slug across language switches.
+  const partMatch = basePath.match(/^\/part\/([^/]+)$/)
+  if (partMatch) {
+    return lang === 'en' ? `/part/${partMatch[1]}` : `/${lang}/part/${partMatch[1]}`
+  }
+
   if (LOCALIZED_BASE_PATHS.includes(basePath)) {
     if (lang === 'en') return basePath
     return basePath === '/' ? `/${lang}` : `/${lang}${basePath}`
@@ -199,6 +210,30 @@ export function parseLevelRoute(route: string): { lang: Lang; levelNum: number }
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, levelNum: parseInt(m[2], 10) }
+}
+
+/** Build the localized URL for a part page. */
+export function partPathFor(slug: string, lang: Lang): string {
+  return lang === 'en' ? `/part/${slug}` : `/${lang}/part/${slug}`
+}
+
+/** All variants of /part/:slug — one per (slug, lang). */
+export function partRouteVariants(slugs: string[]): string[] {
+  const out: string[] = []
+  for (const slug of slugs) {
+    for (const lang of SUPPORTED_LANGS) {
+      out.push(partPathFor(slug, lang))
+    }
+  }
+  return out
+}
+
+/** Parse a part URL — returns { lang, slug } or null. */
+export function parsePartRoute(route: string): { lang: Lang; slug: string } | null {
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/part\/([^/]+)$/)
+  if (!m) return null
+  const lang = (m[1] as Lang | undefined) ?? 'en'
+  return { lang, slug: m[2] }
 }
 
 export default i18n

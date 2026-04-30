@@ -8,8 +8,8 @@
 import { writeFileSync, mkdirSync, statSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS } from './prerender-routes'
-import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, parseMetricRoute, parseLevelRoute } from '../src/i18n'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET } from './prerender-routes'
+import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute } from '../src/i18n'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
@@ -53,7 +53,16 @@ function getLastmod(route: string): string {
   return buildDate
 }
 
-const routes = getPrerenderRoutes()
+// Skip non-EN /part/:slug URLs from sitemap — body content is still EN, so
+// each /:lang/part/:slug renders the same as the EN canonical. Listing them
+// would create duplicate-content signals. They'll re-enter sitemap once the
+// part body is translated and hreflang alternates are emitted.
+const allRoutes = getPrerenderRoutes()
+const routes = allRoutes.filter(r => {
+  if (!LOCALIZED_PART_ROUTE_SET.has(r)) return true
+  const info = parsePartRoute(r)
+  return info?.lang === 'en'
+})
 
 /** Pre-build hreflang alternates for each localized base path. */
 const altsByBase: Record<string, string> = {}

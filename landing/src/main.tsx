@@ -48,6 +48,9 @@ const app = (
             <Route path="/glossary/:slug"  element={<GlossaryTermPage />} />
             <Route path="/articles/:slug"  element={<ArticlesSlugRouter />} />
             <Route path="/part/:slug"      element={<PartPage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`pt-${l}`} path={`/${l}/part/:slug`} element={<PartPage />} />
+            ))}
             <Route path="/level/:number"   element={<LevelPage />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`lvl-${l}`} path={`/${l}/level/:number`} element={<LevelPage />} />

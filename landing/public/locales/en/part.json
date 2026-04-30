@@ -1,0 +1,15 @@
+{
+  "ui": {
+    "breadcrumbHome": "Home",
+    "back": "← Back to Home",
+    "biologicalProtocol": "Biological Protocol",
+    "targetSystems": "Target Systems",
+    "resultsBenefits": "Results & Benefits",
+    "researchBasis": "Research Basis",
+    "relatedTerms": "Related Terms",
+    "peopleAlsoAsk": "People Also Ask",
+    "videoTitleTpl": "{{title}} {{titleHighlight}} — video",
+    "notFound": "Part not found.",
+    "levelLabelTpl": "Level {{number}}: {{name}}"
+  }
+}
