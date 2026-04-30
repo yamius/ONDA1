@@ -43,6 +43,7 @@ export function SitemapPage() {
   const mainLinks = [
     { to: lang === 'en' ? '/' : `/${lang}`, label: t('main.home') },
     { to: lang === 'en' ? '/about' : `/${lang}/about`, label: t('main.about') },
+    { to: lang === 'en' ? '/inner-spectrum' : `/${lang}/inner-spectrum`, label: t('main.philosophy') },
     { to: `${langPrefix}/articles`, label: t('main.articles') },
     { to: `${langPrefix}/glossary`, label: t('main.glossary') },
     { to: `${langPrefix}/the-stack`, label: t('main.stack') },
