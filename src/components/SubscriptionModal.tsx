@@ -8,11 +8,11 @@ import { supabase } from '../lib/supabase';
 import { LegalModal } from './LegalModal';
 import { AuthModal } from './AuthModal';
 import {
-  trackAirbridgePaywallView,
-  trackAirbridgePaywallClick,
-  trackAirbridgePaywallDismiss,
-  trackAirbridgeSubscribe,
-} from '../lib/airbridge';
+  trackTenjinPaywallView,
+  trackTenjinPaywallClick,
+  trackTenjinPaywallDismiss,
+  trackTenjinSubscribe,
+} from '../lib/tenjin';
 
 interface SubscriptionModalProps {
   isOpen: boolean;
@@ -109,7 +109,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     if (!isOpen || isPremium) return;
     paywallOpenedAtRef.current = Date.now();
     subscribeFiredRef.current = false;
-    trackAirbridgePaywallView(source);
+    trackTenjinPaywallView(source);
     return () => {
       // Effect cleanup runs when isOpen flips to false or isPremium becomes
       // true. Treat "became premium during this session" as Subscribe (already
@@ -118,7 +118,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
       if (wasPremiumOnCloseRef.current) return;
       const openedAt = paywallOpenedAtRef.current;
       const seconds = openedAt ? Math.round((Date.now() - openedAt) / 1000) : undefined;
-      trackAirbridgePaywallDismiss({
+      trackTenjinPaywallDismiss({
         source,
         plan: selectedPlanRef.current,
         timeOnScreenSeconds: seconds,
@@ -143,7 +143,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     setPurchaseError(null);
     // Airbridge: fire on every tap of the purchase CTA, before any gating
     // (auth / product availability). The label is the subscription type.
-    trackAirbridgePaywallClick(selectedPlan);
+    trackTenjinPaywallClick(selectedPlan);
 
     const { data: { user } } = await supabase.auth.getUser();
     if (!user) {
@@ -181,7 +181,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
           value: pkg.product.price,
           currency: pkg.product.currencyCode ?? 'USD',
         });
-        trackAirbridgeSubscribe({
+        trackTenjinSubscribe({
           value: pkg.product.price,
           currency: pkg.product.currencyCode ?? 'USD',
           productId: pkg.product.identifier,

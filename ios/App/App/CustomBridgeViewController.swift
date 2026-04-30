@@ -16,9 +16,11 @@ class CustomBridgeViewController: CAPBridgeViewController {
         bridge?.registerPluginInstance(ondaWatchPlugin)
         print("[ONDA] OndaWatchPlugin registered")
 
-        // Native Airbridge bridge — without this, src/lib/airbridge.ts falls
-        // back to the Web SDK and custom events never reach App Real-time Log.
-        bridge?.registerPluginInstance(OndaAirbridgePlugin())
-        print("[ONDA] OndaAirbridgePlugin registered")
+        // Native Tenjin bridge — exposes TenjinSDK.sendEvent / .transaction
+        // to JS via src/lib/tenjin.ts. Without this registration the JS
+        // helpers fall through to a no-op (web build behavior) and Tenjin
+        // gets no events on iOS.
+        bridge?.registerPluginInstance(OndaTenjinPlugin())
+        print("[ONDA] OndaTenjinPlugin registered")
     }
 }

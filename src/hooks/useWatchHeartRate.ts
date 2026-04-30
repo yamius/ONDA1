@@ -3,7 +3,7 @@ import { Capacitor } from '@capacitor/core';
 import { App } from '@capacitor/app';
 import OndaWatch, { WatchStatus, HeartRateEvent, DebugLogEvent } from '../plugins/ondaWatch';
 import type { PluginListenerHandle } from '@capacitor/core';
-import { trackAirbridgeWatchConnected } from '../lib/airbridge';
+import { trackTenjinWatchConnected } from '../lib/tenjin';
 
 interface UseWatchHeartRateReturn {
   heartRate: number | null;
@@ -89,7 +89,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
         const nowConnected = status.paired === true && status.watchAppInstalled === true;
         if (nowConnected && !hasFiredWatchConnectedRef.current) {
           hasFiredWatchConnectedRef.current = true;
-          trackAirbridgeWatchConnected(null);
+          trackTenjinWatchConnected(null);
         }
         setWatchStatus(status);
         

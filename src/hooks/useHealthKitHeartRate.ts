@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback, useRef } from 'react';
 import { Capacitor } from '@capacitor/core';
 import HealthKitHeartRate, { HeartRateUpdateEvent } from '../plugins/healthKitHeartRate';
 import type { PluginListenerHandle } from '@capacitor/core';
-import { trackAirbridgePermission } from '../lib/airbridge';
+import { trackTenjinPermission } from '../lib/tenjin';
 
 export type MonitoringMode = 'direct' | 'workout' | 'realtime' | null;
 
@@ -89,7 +89,7 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
       console.log('[HealthKit] Authorization result:', result);
       setIsAuthorized(result.authorized);
       // Airbridge attribution: every system-prompt resolution.
-      trackAirbridgePermission('healthkit', !!result.authorized);
+      trackTenjinPermission('healthkit', !!result.authorized);
       
       if (!result.authorized) {
         setError('HealthKit permission denied');

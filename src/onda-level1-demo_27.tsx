@@ -30,16 +30,16 @@ import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
 import {
-  trackAirbridgePractice,
-  trackAirbridgeSignUp,
-  trackAirbridgeSignIn,
-  trackAirbridgeOnboardingComplete,
-  trackAirbridgeFirstPracticeComplete,
-  trackAirbridgeLevelUnlocked,
-  trackAirbridgeCircuitComplete,
-  trackAirbridgeArtifactEarned,
-  initAirbridgeAppOpenTracking,
-} from './lib/airbridge';
+  trackTenjinPractice,
+  trackTenjinSignUp,
+  trackTenjinSignIn,
+  trackTenjinOnboardingComplete,
+  trackTenjinFirstPracticeComplete,
+  trackTenjinLevelUnlocked,
+  trackTenjinCircuitComplete,
+  trackTenjinArtifactEarned,
+  initTenjinAppOpenTracking,
+} from './lib/tenjin';
 import { useSubscription } from './hooks/useSubscription';
 import * as Sentry from '@sentry/capacitor';
 // WelcomeScene is the only consumer of three.js in the codebase. It only
@@ -75,7 +75,7 @@ const OndaLevel1 = () => {
   useEffect(() => {
     track('app_open', { platform });
     // Airbridge App Open (cold start + resume). Safe no-op on web / before SDK attaches.
-    initAirbridgeAppOpenTracking();
+    initTenjinAppOpenTracking();
   }, []);
 
   const prevActivePracticeIdRef = useRef<string | null>(null);
@@ -699,9 +699,9 @@ const OndaLevel1 = () => {
             if (lastAuthFiredForUserRef.current !== u.id) {
               lastAuthFiredForUserRef.current = u.id;
               if (isNewUser) {
-                trackAirbridgeSignUp(method);
+                trackTenjinSignUp(method);
               } else {
-                trackAirbridgeSignIn(method);
+                trackTenjinSignIn(method);
               }
             }
           } catch (e) {
@@ -2032,7 +2032,7 @@ const OndaLevel1 = () => {
   useEffect(() => {
     for (let part = 2; part <= 12; part++) {
       if (isPartUnlocked(part)) {
-        trackAirbridgeLevelUnlocked(part);
+        trackTenjinLevelUnlocked(part);
       }
     }
   }, [completedPractices, isPartUnlocked]);
@@ -2080,7 +2080,7 @@ const OndaLevel1 = () => {
         target_duration: space.duration,
         base_ond: baseQnt,
       });
-      trackAirbridgePractice('View', getPracticeName(practiceId));
+      trackTenjinPractice('View', getPracticeName(practiceId));
 
       // Scroll to practice after a short delay
       setTimeout(() => {
@@ -2126,7 +2126,7 @@ const OndaLevel1 = () => {
         initial_stress: initialStress,
         initial_energy: initialEnergy,
       });
-      trackAirbridgePractice('Start', getPracticeName(activePractice.id));
+      trackTenjinPractice('Start', getPracticeName(activePractice.id));
     }
 
     console.log('Starting basic practice with initial metrics:', { 
@@ -2179,14 +2179,14 @@ const OndaLevel1 = () => {
     // Track practice completion — Finish only if practice passed the valid threshold
     // (≥80% of target time AND quality ≥ minQualityRequired). Otherwise user pressed
     // Complete early → Stop.
-    trackAirbridgePractice(
+    trackTenjinPractice(
       isValidForArtifact ? 'Finish' : 'Stop',
       getPracticeName(activePractice.id)
     );
     // Magic-moment activation event — helper is idempotent across sessions
     // via localStorage flag, so it's safe to call on every valid Finish.
     if (isValidForArtifact) {
-      trackAirbridgeFirstPracticeComplete(getPracticeName(activePractice.id), {
+      trackTenjinFirstPracticeComplete(getPracticeName(activePractice.id), {
         surface: 'basic',
       });
     }
@@ -2343,12 +2343,12 @@ const OndaLevel1 = () => {
       // Airbridge progression — fired regardless of whether the circuit
       // actually carries an artifact (some Parts have artifact: null).
       // Helpers are idempotent across sessions via localStorage flags.
-      trackAirbridgeCircuitComplete(circuit.id, {
+      trackTenjinCircuitComplete(circuit.id, {
         has_artifact: !!circuit.artifact,
         practices_count: circuit.practices.length,
       });
       if (circuit.artifact) {
-        trackAirbridgeArtifactEarned(circuit.id, {
+        trackTenjinArtifactEarned(circuit.id, {
           bonus: circuit.artifact.bonus,
           quality_score: qualityScore,
         });
@@ -2412,7 +2412,7 @@ const OndaLevel1 = () => {
     // Airbridge: X during practice = Stop. Skip if user is on intro (never started)
     // or on the 'complete' result screen (Finish/Stop already fired in finishPractice).
     if (practiceState === 'active' && practiceId) {
-      trackAirbridgePractice('Stop', practiceName || getPracticeName(practiceId));
+      trackTenjinPractice('Stop', practiceName || getPracticeName(practiceId));
     }
     
     // Save rating if user rated the practice
@@ -4095,7 +4095,7 @@ const OndaLevel1 = () => {
         const durationSeconds = onboardingStartRef.current
           ? Math.round((Date.now() - onboardingStartRef.current) / 1000)
           : undefined;
-        trackAirbridgeOnboardingComplete(durationSeconds);
+        trackTenjinOnboardingComplete(durationSeconds);
         setShowOnboarding(false);
         setShowAuthModal(true);
       }

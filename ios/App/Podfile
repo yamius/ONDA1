@@ -25,12 +25,14 @@ end
 
 target 'App' do
   capacitor_pods
-  # Airbridge iOS native SDK — for install attribution (SKAN) and event tracking.
-  # `~> 4.1` allows CocoaPods to pull the latest 4.x patch release. Pinned at
-  # 4.1.3 previously, but we're testing on iOS 26.4.1 which post-dates that
-  # release; lifecycle observers and trackEvent delivery look broken on this OS,
-  # so we want any patches Airbridge has shipped since.
-  pod 'airbridge-ios-sdk', '~> 4.1'
+  # Tenjin iOS native SDK — install attribution (SKAdNetwork) and event
+  # tracking. Replaces Airbridge as our MMP because:
+  #   1. Airbridge free tier delivered Install/Open only, and the paid tier
+  #      they wanted was $5,000/mo for <100 installs — pricing not aligned
+  #      with our scale.
+  #   2. Tenjin includes AppLovin Axon integration, which Airbridge does not.
+  # No version pin: CocoaPods picks the latest 1.x release.
+  pod 'TenjinSDK'
 end
 
 post_install do |installer|

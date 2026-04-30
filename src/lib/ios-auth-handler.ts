@@ -36,12 +36,13 @@ async function handleOAuthCallback(urlString: string): Promise<void> {
   try {
     console.log('[iOS Auth] Handling OAuth callback:', urlString);
     
-    // Airbridge deep link — передаём событие в WebView и выходим
+    // Custom-scheme deep links (ondalife://) used to be forwarded to
+    // Airbridge for attribution via a CustomEvent listener. With the
+    // Tenjin migration that listener is gone — Tenjin doesn't ship a
+    // JS-side deep-link API; install attribution comes from SKAdNetwork.
+    // We just log and fall through so any future routing can hook in.
     if (urlString.startsWith('ondalife://')) {
-      console.log('[Airbridge] Deep link received:', urlString);
-      window.dispatchEvent(new CustomEvent('airbridge-deeplink', {
-        detail: { url: urlString }
-      }));
+      console.log('[ONDA] Custom-scheme deep link received:', urlString);
       return;
     }
 

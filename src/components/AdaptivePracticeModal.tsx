@@ -10,7 +10,7 @@ import { useAnalytics } from '../hooks/useAnalytics';
 import { heartRateStore } from '../hooks/heartRateStore';
 import { supabase } from '../lib/supabase';
 import { calculatePracticeOnd } from '../utils/ondCalculator';
-import { trackAirbridgePractice, trackAirbridgeFirstPracticeComplete } from '../lib/airbridge';
+import { trackTenjinPractice, trackTenjinFirstPracticeComplete } from '../lib/tenjin';
 
 interface AdaptivePracticeModalProps {
   isOpen: boolean;
@@ -558,7 +558,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   // Airbridge: fire "View Practice" once each time the intro screen opens.
   useEffect(() => {
     if (!isOpen || !practice) return;
-    trackAirbridgePractice('View', t(practice.name), { surface: 'adaptive' });
+    trackTenjinPractice('View', t(practice.name), { surface: 'adaptive' });
   }, [isOpen, practice?.id]);
 
   useEffect(() => {
@@ -822,7 +822,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     setIsPaused(false);
     setQualityScore(0);
     setMaxQualityScore(0);
-    if (practice) trackAirbridgePractice('Start', t(practice.name), { surface: 'adaptive' });
+    if (practice) trackTenjinPractice('Start', t(practice.name), { surface: 'adaptive' });
   };
 
   const togglePause = () => {
@@ -924,7 +924,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       if (!user) {
         console.log('[AdaptivePractice] No user found, skipping save');
         setPracticeState('complete');
-        trackAirbridgePractice(
+        trackTenjinPractice(
           isValidForCompletion ? 'Finish' : 'Stop',
           t(practice.name),
           {
@@ -943,7 +943,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
           }
         );
         if (isValidForCompletion) {
-          trackAirbridgeFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
+          trackTenjinFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
         }
         return;
       }
@@ -1002,7 +1002,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     console.log('[AdaptivePractice] Setting practice state to complete...');
     setPracticeState('complete');
     console.log('[AdaptivePractice] Practice state set to complete');
-    trackAirbridgePractice(
+    trackTenjinPractice(
       isValidForCompletion ? 'Finish' : 'Stop',
       t(practice.name),
       {
@@ -1021,7 +1021,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       }
     );
     if (isValidForCompletion) {
-      trackAirbridgeFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
+      trackTenjinFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
     }
   };
 
@@ -1070,7 +1070,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
 
     // Airbridge: fire Stop only when user quit mid-practice (not from intro, not after natural Finish).
     if (practiceState === 'practice' && practice) {
-      trackAirbridgePractice('Stop', t(practice.name), { surface: 'adaptive' });
+      trackTenjinPractice('Stop', t(practice.name), { surface: 'adaptive' });
     }
 
     if (practiceRating > 0 && practiceTime > 0 && practice) {

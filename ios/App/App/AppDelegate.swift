@@ -2,7 +2,7 @@ import UIKit
 import Capacitor
 import WatchConnectivity
 import FirebaseCore
-import Airbridge
+import TenjinSDK
 import AppTrackingTransparency
 
 @UIApplicationMain
@@ -12,11 +12,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private var attObserver: Any?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // ⚠️ Order matters: Firebase MUST initialize before Airbridge.
+        // ⚠️ Order matters: Firebase MUST initialize before any MMP.
         // Firebase fires `first_open` (the conversion event Google Ads keys
-        // off) on its first configure call. If Airbridge starts first it can
-        // intercept the launch URL or the lifecycle hook and Firebase ends up
-        // never seeing a clean cold-start, which is what broke ad attribution.
+        // off) on its first configure call. If a tracking SDK starts first
+        // it can intercept the launch URL or the lifecycle hook and Firebase
+        // ends up never seeing a clean cold-start, which breaks attribution.
         FirebaseApp.configure()
         if FirebaseApp.app() != nil {
             print("[ONDA] Firebase configured ✅")
@@ -24,49 +24,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("[ONDA] ❌ Firebase configuration failed — GoogleService-Info.plist missing?")
         }
 
-        // Airbridge iOS SDK v4 — атрибуция установок через SKAN и Universal Links.
-        // Initialized AFTER Firebase so first_open lands cleanly.
+        // Tenjin SDK — replaces Airbridge as our MMP. Tracks installs via
+        // SKAdNetwork, custom events via the Tenjin event API, and gives us
+        // AppLovin Axon integration which Airbridge couldn't.
         //
-        // DEFERRED via DispatchQueue.main.async: SDK 4.9.x does noticeably
-        // more setup work in initializeSDK than 4.1 did (lifecycle observers,
-        // network queue, device-id resolution). Calling it inline here was
-        // adding ~6 seconds to cold-start before WKWebView got its first
-        // paint. async-dispatching to the main queue moves the call to the
-        // next runloop tick, after the system has handed the WebView time
-        // to render. Still on the main thread, still in the first ~ms after
-        // launch — attribution is not affected.
+        // DEFERRED via DispatchQueue.main.async (same pattern we used for
+        // Airbridge): the SDK does lifecycle setup and a connect() postback
+        // inline; running that on the next runloop tick lets WKWebView paint
+        // its first frame before the MMP work starts. Still on the main
+        // thread, still in the first ~ms, so attribution is unaffected.
         DispatchQueue.main.async {
-            let airbridgeOption = AirbridgeOptionBuilder(
-                name: "ondalife",
-                token: "fc2c61f82d7640bd8ec514a26e8a6926"
-            ).build()
-            Airbridge.initializeSDK(option: airbridgeOption)
-            print("[ONDA] Airbridge iOS SDK v4 initialized ✅ (deferred)")
+            TenjinSDK.getInstance("AD2VCZNVQ9HQSDTFKSINIBSWGUVPSBHJ")
+            // connect() must run on every launch (cold + warm) so Tenjin can
+            // track sessions and refresh attribution. Reading the ATT status
+            // is Tenjin's responsibility; it queries ATTrackingManager itself
+            // and falls back to IDFV-only when authorization is denied.
+            TenjinSDK.connect()
+            print("[ONDA] Tenjin iOS SDK initialized ✅ (deferred)")
         }
 
         // App Tracking Transparency.
         //
         // Apple's review team rejected build 1.0.3 (Submission ID 08145570…)
-        // on iOS 26.4.1 because the ATT prompt never appeared. Earlier we
-        // assumed Airbridge SDK 4.9.x would surface the prompt itself —
-        // either it doesn't, or its trigger doesn't fire on iOS 26. Either
-        // way, the app links AppTrackingTransparency.framework and ships
-        // NSUserTrackingUsageDescription in Info.plist, so Apple expects
-        // the request to be shown before any tracking-relevant data is
-        // collected.
+        // on iOS 26.4.1 because the ATT prompt never appeared. The app links
+        // AppTrackingTransparency.framework and ships
+        // NSUserTrackingUsageDescription in Info.plist, so Apple expects the
+        // request to be shown before any tracking-relevant data is collected.
         //
         // Anchored to didBecomeActive because requestTrackingAuthorization
-        // only displays the system sheet while the app is foreground-
-        // active (iOS will silently no-op the call otherwise). Single-shot
-        // — observer is removed inside the handler.
+        // only displays the system sheet while the app is foreground-active
+        // (iOS will silently no-op the call otherwise). Single-shot — the
+        // observer is removed inside the handler.
         attObserver = NotificationCenter.default.addObserver(
             forName: UIApplication.didBecomeActiveNotification,
             object: nil,
             queue: .main
         ) { [weak self] _ in
             // Slight delay so the request lands after the WebView's first
-            // frame, not during launch animations — looks less abrupt and
-            // is the pattern Apple's own samples use.
+            // frame, not during launch animations.
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                 if #available(iOS 14, *) {
                     ATTrackingManager.requestTrackingAuthorization { status in
@@ -104,35 +99,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
-        // Both SDKs must see the launch URL — neither is allowed to "eat" it.
-        // Airbridge needs it for attribution, Firebase Dynamic Links / Capacitor
-        // routing need it to forward the URL into the JS layer. Previously we
-        // returned early on `isAirbridgeDeeplink == true` which blocked
-        // Capacitor (and therefore Firebase / WebView routing) from seeing
-        // ondalife:// links at all.
-        let isAirbridgeDeeplink = Airbridge.handleDeeplink(url: url) { convertedUrl in
-            print("[ONDA] Airbridge converted deep link: \(convertedUrl)")
-        }
-        if isAirbridgeDeeplink {
-            print("[ONDA] Airbridge captured deep link for attribution: \(url)")
-        }
-        // Always pass through so Capacitor + Firebase get the URL too.
-        let capacitorHandled = ApplicationDelegateProxy.shared.application(app, open: url, options: options)
-        return isAirbridgeDeeplink || capacitorHandled
+        // Capacitor + Firebase Dynamic Links handle the launch URL. Tenjin's
+        // attribution model doesn't require the app delegate to forward the
+        // URL — install attribution lives in SKAdNetwork postbacks, not deep
+        // links. So we just hand off to Capacitor and let it route the URL
+        // into the JS layer / Firebase as before.
+        return ApplicationDelegateProxy.shared.application(app, open: url, options: options)
     }
 
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-        // Same rule for Universal Links: forward to both SDKs.
-        var airbridgeHandled = false
-        if let universalLinkUrl = userActivity.webpageURL {
-            airbridgeHandled = Airbridge.handleDeeplink(url: universalLinkUrl) { convertedUrl in
-                print("[ONDA] Airbridge converted Universal Link: \(convertedUrl)")
-            }
-            if airbridgeHandled {
-                print("[ONDA] Airbridge captured Universal Link for attribution: \(universalLinkUrl)")
-            }
-        }
-        let capacitorHandled = ApplicationDelegateProxy.shared.application(application, continue: userActivity, restorationHandler: restorationHandler)
-        return airbridgeHandled || capacitorHandled
+        // Universal Links pass through unchanged to Capacitor.
+        return ApplicationDelegateProxy.shared.application(application, continue: userActivity, restorationHandler: restorationHandler)
     }
 }

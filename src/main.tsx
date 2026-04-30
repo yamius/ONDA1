@@ -78,13 +78,12 @@ runWhenIdle(() => {
     .then(() => console.log('[ONDA] Firebase Analytics initialized'))
     .catch((error) => console.error('[ONDA] Failed to initialize Firebase Analytics:', error));
 
-  // Airbridge deep-link handler.
-  import('./lib/airbridge')
-    .then(({ initAirbridgeDeepLinkHandler }) => {
-      initAirbridgeDeepLinkHandler();
-      console.log('[ONDA] Airbridge deep link handler initialized');
-    })
-    .catch((e) => console.warn('[ONDA] Airbridge initialization failed:', e));
+  // Tenjin doesn't ship a JS-side deep-link handler — install attribution
+  // lives in SKAdNetwork postbacks, not deep-link parameters. Capacitor +
+  // Firebase Dynamic Links handle the launch URL themselves, so there's
+  // nothing to register from main.tsx for the MMP path. (Airbridge had a
+  // web SDK that needed a forwarding listener; that whole pipeline is
+  // gone now.)
 
   // Health Connect bridge — Android-only side-effect registration.
   import('./bridge/healthConnectBridge').catch(() => {});

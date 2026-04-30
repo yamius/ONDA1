@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 import { LizaChatModal } from './LizaChatModal';
-import { trackAirbridgeEmotionalCheck } from '../lib/airbridge';
+import { trackTenjinEmotionalCheck } from '../lib/tenjin';
 
 interface EmotionalCheckModalProps {
   isOpen: boolean;
@@ -111,7 +111,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       mediaRecorder.start(100); // Request data every 100ms
       setRecordingState('recording');
       setRecordingTime(0);
-      trackAirbridgeEmotionalCheck('Start');
+      trackTenjinEmotionalCheck('Start');
       console.log('[EmotionalCheck] MediaRecorder started');
 
       timerRef.current = window.setInterval(() => {
@@ -290,7 +290,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       }
 
       setRecordingState('result');
-      trackAirbridgeEmotionalCheck('Finish', t(resolvedEmotionKey));
+      trackTenjinEmotionalCheck('Finish', t(resolvedEmotionKey));
       console.log('[EmotionalCheck] ✅ Analysis complete, showing results');
     } catch (error: any) {
       console.error('[EmotionalCheck] ❌ Error analyzing voice:', error);
@@ -334,7 +334,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       });
 
       setRecordingState('result');
-      trackAirbridgeEmotionalCheck('Finish', t(randomEmotion.name));
+      trackTenjinEmotionalCheck('Finish', t(randomEmotion.name));
       console.log('[EmotionalCheck] ✅ Fallback analysis complete, showing mock results');
     }
   };
