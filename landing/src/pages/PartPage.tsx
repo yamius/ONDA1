@@ -2006,11 +2006,25 @@ export function PartPage() {
   const lang = langFromPath(location.pathname)
   const { t } = useTranslation('part')
 
+  // Pull translated body fields with fallback to the EN parts data registry.
+  const tSubtitle = (t(`parts.${slug}.subtitle`, { defaultValue: part?.subtitle ?? '' }) as string)
+  const tIntro = (t(`parts.${slug}.intro`, { defaultValue: part?.intro ?? '' }) as string)
+  const tImageAlt = (t(`parts.${slug}.imageAlt`, { defaultValue: part?.imageAlt ?? '' }) as string)
+  const tImageTitle = (t(`parts.${slug}.imageTitle`, { defaultValue: part?.imageTitle ?? '' }) as string)
+  const tProtoIntro = (t(`parts.${slug}.protocol.intro`, { defaultValue: part?.protocol.intro ?? '' }) as string)
+  const tProtoItems = (t(`parts.${slug}.protocol.items`, { returnObjects: true, defaultValue: part?.protocol.items ?? [] }) as Array<{ name: string; text: string }>)
+  const tTargetIntro = (t(`parts.${slug}.targets.intro`, { defaultValue: part?.targets.intro ?? '' }) as string)
+  const tTargetItems = (t(`parts.${slug}.targets.items`, { returnObjects: true, defaultValue: part?.targets.items ?? [] }) as Array<{ name: string; text: string }>)
+  const tResultsIntro = (t(`parts.${slug}.results.intro`, { defaultValue: part?.results.intro ?? '' }) as string)
+  const tResultsItems = (t(`parts.${slug}.results.items`, { returnObjects: true, defaultValue: part?.results.items ?? [] }) as string[])
+  const tOutro = (t(`parts.${slug}.outro`, { defaultValue: part?.outro ?? '' }) as string)
+  const tMetaDesc = (t(`parts.${slug}.metaDescription`, { defaultValue: part?.metaDescription ?? '' }) as string)
+
   useEffect(() => {
     if (!part) return
     const seo = slug ? PART_SEO[slug] : undefined
     const title = seo?.title ?? `${part.title} ${part.titleHighlight} | ONDA Life`
-    const desc = seo?.description ?? part.metaDescription ?? DEFAULT_DESCRIPTION
+    const desc = seo?.description ?? tMetaDesc ?? DEFAULT_DESCRIPTION
     document.title = title
     setMeta('description', desc)
     setMeta('og:title', title, true)
@@ -2055,7 +2069,7 @@ export function PartPage() {
       const faqEl = document.querySelector('script[data-faq-schema]')
       if (faqEl) faqEl.remove()
     }
-  }, [part, slug, lang])
+  }, [part, slug, lang, tMetaDesc])
 
   if (!part) {
     return (
@@ -2095,8 +2109,8 @@ export function PartPage() {
         <figure className="mb-8 overflow-hidden rounded-xl border border-white/10">
           <OptimizedImage
             src={part.image}
-            alt={part.imageAlt ?? ''}
-            title={part.imageTitle}
+            alt={tImageAlt}
+            title={tImageTitle}
             loading="lazy"
             width={1024}
             height={434}
@@ -2106,10 +2120,12 @@ export function PartPage() {
       )}
 
       <h2 className="mb-8 text-2xl font-bold tracking-tight md:text-4xl">
-        {part.subtitle}
+        {tSubtitle}
       </h2>
 
-      {part.introBlocks ? (
+      {/* introBlocks (rich-content variant for some parts) only renders for EN.
+          For non-EN we fall back to the plain translated intro string. */}
+      {lang === 'en' && part.introBlocks ? (
         part.introBlocks.map((blocks, i) => (
           <p key={i} className="mb-6 font-mono text-sm leading-relaxed text-white/60 md:text-base">
             {blocks.map((b, j) =>
@@ -2124,7 +2140,7 @@ export function PartPage() {
           </p>
         ))
       ) : (
-        part.intro.split('\n\n').map((paragraph, i) => (
+        tIntro.split('\n\n').map((paragraph, i) => (
           <p key={i} className="mb-6 font-mono text-sm leading-relaxed text-white/60 md:text-base">
             {paragraph}
           </p>
@@ -2153,15 +2169,18 @@ export function PartPage() {
         {t('ui.biologicalProtocol')}
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
-        {part.protocol.intro}
+        {tProtoIntro}
       </p>
       <div className="mb-16 space-y-6">
-        {part.protocol.items.map((item) => (
-          <div key={item.name}>
-            <h3 className="mb-1 font-mono text-sm font-bold text-white/80">{item.name}</h3>
-            <p className="font-mono text-sm leading-relaxed text-white/50">{item.text}</p>
-          </div>
-        ))}
+        {part.protocol.items.map((item, i) => {
+          const tItem = tProtoItems[i] ?? item
+          return (
+            <div key={item.name}>
+              <h3 className="mb-1 font-mono text-sm font-bold text-white/80">{tItem.name}</h3>
+              <p className="font-mono text-sm leading-relaxed text-white/50">{tItem.text}</p>
+            </div>
+          )
+        })}
       </div>
 
       {/* Target Systems */}
@@ -2169,15 +2188,18 @@ export function PartPage() {
         {t('ui.targetSystems')}
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
-        {part.targets.intro}
+        {tTargetIntro}
       </p>
       <ul className="mb-16 space-y-3 pl-1">
-        {part.targets.items.map((t) => (
-          <li key={t.name} className="font-mono text-sm leading-relaxed text-white/50">
-            <span className="mr-2 text-terminal-green/40">•</span>
-            <span className="font-bold text-white/70">{t.name}:</span> {t.text}
-          </li>
-        ))}
+        {part.targets.items.map((target, i) => {
+          const tItem = tTargetItems[i] ?? target
+          return (
+            <li key={target.name} className="font-mono text-sm leading-relaxed text-white/50">
+              <span className="mr-2 text-terminal-green/40">•</span>
+              <span className="font-bold text-white/70">{tItem.name}:</span> {tItem.text}
+            </li>
+          )
+        })}
       </ul>
 
       {/* Results */}
@@ -2185,17 +2207,17 @@ export function PartPage() {
         {t('ui.resultsBenefits')}
       </h2>
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
-        {part.results.intro}
+        {tResultsIntro}
       </p>
       <ul className="mb-8 space-y-2 pl-1">
         {part.results.items.map((r, i) => (
           <li key={i} className="font-mono text-sm leading-relaxed text-white/50">
-            <span className="mr-2 text-terminal-green/40">•</span>{r}
+            <span className="mr-2 text-terminal-green/40">•</span>{tResultsItems[i] ?? r}
           </li>
         ))}
       </ul>
       <div className="mb-16 space-y-4">
-        {part.outro.split('\n\n').map((p, i) => (
+        {tOutro.split('\n\n').map((p, i) => (
           <p key={i} className="font-mono text-sm leading-relaxed text-white/60">
             {p}
           </p>

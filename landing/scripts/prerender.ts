@@ -73,6 +73,27 @@ for (const lang of SUPPORTED_LANGS) {
   levelByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'level.json'), 'utf-8')) as LevelFile
 }
 
+interface PartFile {
+  parts?: Record<string, { metaDescription?: string; subtitle?: string }>
+}
+// Part translations per language. The `parts` block is empty for languages
+// whose body content hasn't been translated yet — we use this presence check
+// to decide whether to apply localized meta + hreflang or fall back to EN.
+const partByLang: Record<Lang, PartFile> = {} as Record<Lang, PartFile>
+for (const lang of SUPPORTED_LANGS) {
+  partByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'part.json'), 'utf-8')) as PartFile
+}
+
+/** Languages (incl. EN) for which a part has fully translated body content. */
+function partLangsWithTranslation(slug: string): Lang[] {
+  const out: Lang[] = ['en']
+  for (const lang of SUPPORTED_LANGS) {
+    if (lang === 'en') continue
+    if (partByLang[lang].parts && partByLang[lang].parts![slug]) out.push(lang)
+  }
+  return out
+}
+
 function pageUrlFor(basePath: string, lang: Lang): string {
   return `${SITE_URL}${localizedPathFor(basePath, lang)}`.replace(/\/+$/, '') || SITE_URL
 }
@@ -111,6 +132,20 @@ function buildHreflangLinksForLevel(levelNum: number): string {
     tags.push(`<link rel="alternate" hreflang="${lang}" href="${levelUrlFor(levelNum, lang)}">`)
   }
   tags.push(`<link rel="alternate" hreflang="x-default" href="${levelUrlFor(levelNum, 'en')}">`)
+  return tags.join('\n  ')
+}
+
+function partUrlFor(slug: string, lang: Lang): string {
+  return `${SITE_URL}${lang === 'en' ? `/part/${slug}` : `/${lang}/part/${slug}`}`
+}
+
+/** Hreflang cluster for a part — only includes languages that have a body translation. */
+function buildHreflangLinksForPart(slug: string, langs: Lang[]): string {
+  const tags: string[] = []
+  for (const lang of langs) {
+    tags.push(`<link rel="alternate" hreflang="${lang}" href="${partUrlFor(slug, lang)}">`)
+  }
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${partUrlFor(slug, 'en')}">`)
   return tags.join('\n  ')
 }
 
@@ -278,12 +313,41 @@ for (const route of routes) {
       out = applyMetricLocalizedMeta(out, metricInfo.metric, metricInfo.lang)
     } else if (levelInfo) {
       out = applyLevelLocalizedMeta(out, levelInfo.levelNum, levelInfo.lang)
-    } else if (partInfo && partInfo.lang !== 'en') {
-      // Part body content is still EN-only — only set <html lang> + canonical
-      // back to the EN URL so Google doesn't treat translated routes as duplicates.
-      const enUrl = `${SITE_URL}/part/${partInfo.slug}`
+    } else if (partInfo) {
+      const translatedLangs = partLangsWithTranslation(partInfo.slug)
+      const hasTranslation = translatedLangs.includes(partInfo.lang)
       out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${partInfo.lang}"`)
-      out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${enUrl}">`)
+
+      if (hasTranslation && partInfo.lang !== 'en') {
+        // Translated body — apply localized meta and hreflang cluster (only
+        // includes languages that actually have translations so far).
+        const partFile = partByLang[partInfo.lang]
+        const partData = partFile.parts?.[partInfo.slug]
+        const desc = partData?.metaDescription ?? ''
+        const url = partUrlFor(partInfo.slug, partInfo.lang)
+        const escDesc = escAttr(desc)
+        const escUrl = escAttr(url)
+        out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
+        if (desc) {
+          out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escDesc}">`)
+        }
+        out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+        const hreflang = buildHreflangLinksForPart(partInfo.slug, translatedLangs)
+        const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[partInfo.lang]}">`
+        out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
+      } else if (partInfo.lang !== 'en') {
+        // No translation yet — canonical points to EN to avoid duplicate-content.
+        const enUrl = partUrlFor(partInfo.slug, 'en')
+        out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${enUrl}">`)
+      } else if (translatedLangs.length > 1) {
+        // EN URL with siblings translated — emit hreflang cluster from EN side too.
+        const hreflang = buildHreflangLinksForPart(partInfo.slug, translatedLangs)
+        out = out.replace('</head>', `  ${hreflang}\n</head>`)
+      }
     }
 
     // Build fingerprint for deployment verification (view page source, search "onda-build")

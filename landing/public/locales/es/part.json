@@ -11,5 +11,862 @@
     "videoTitleTpl": "{{title}} {{titleHighlight}} — vídeo",
     "notFound": "Sección no encontrada.",
     "levelLabelTpl": "Nivel {{number}}: {{name}}"
+  },
+  "parts": {
+    "i-am": {
+      "badge": "[ PARTE 1 — NIVEL 1: CUERPO / TERRA ]",
+      "subtitle": "Protocolo: Homeostasis e interocepción primaria",
+      "metaDescription": "Parte 1: Homeostasis e interocepción primaria. Calibra tu cero biológico — HRV, tono vagal, liberación diafragmática. ONDA Life.",
+      "imageAlt": "Arquitectura de la consciencia humana, biología de la auto-conciencia, identidad ONDA YO SOY, retícula neural coherente visualizada.",
+      "imageTitle": "[I_AM]: Visualización de la retícula neural coherente que da origen a la auto-conciencia fundamental.",
+      "intro": "Descendemos al cimiento mismo: el «cero biológico». Es el nivel de la supervivencia celular, donde la consciencia aún no se separa de los procesos metabólicos. El objetivo principal de esta etapa es pasar el sistema del modo de «anticipación ansiosa» y déficit a un modo de «ser seguro».\n\nEn este nivel trabajamos con las estructuras cerebrales más antiguas que rigen la vida antes de que empecemos a pensar en ella: interocepción primaria (la conexión entre el tronco encefálico y la ínsula), tono vagal (salida de las respuestas de «congelación» o «huida»), navegación sensorial (calibración talámica) y la activación de la proto-consciencia mediante el contacto con los ritmos fisiológicos.",
+      "protocol": {
+        "intro": "Este protocolo busca calibrar los ajustes base de la supervivencia, transformando el cuerpo de «fortaleza sitiada» en «hogar seguro»:",
+        "items": [
+          { "name": "Alineación homeostática", "text": "Trabajo con el hipotálamo para establecer equilibrio interno y asegurar la distribución eficiente de los recursos del cuerpo." },
+          { "name": "Calibración interoceptiva", "text": "Prácticas para desarrollar la capacidad de sentir pulsación, presión y movimiento de los órganos internos como base del autoconocimiento." },
+          { "name": "Filtrado sensorial y psiconeuroinmunología (PNI)", "text": "Entrenar al tálamo para filtrar estímulos redundantes y reducir la carga del sistema nervioso. Aprovechar la neuroplasticidad para fortalecer el vínculo entre estados mentales y respuestas inmunes a nivel celular." },
+          { "name": "Liberación diafragmática", "text": "Liberar espasmos del músculo respiratorio principal para liberar el nervio vago y disparar una recuperación parasimpática profunda." }
+        ]
+      },
+      "targets": {
+        "intro": "El objetivo principal es la activación de la «proto-consciencia» y la creación de una sensación incondicional de seguridad.",
+        "items": [
+          { "name": "Ínsula", "text": "Hub principal para la interocepción y la auto-percepción." },
+          { "name": "Tronco encefálico e hipotálamo", "text": "Centros de control para el soporte vital y la homeostasis." },
+          { "name": "Nervio vago y diafragma", "text": "La autopista del sistema parasimpático y el motor de la respiración." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado de completar la Parte 1 es el descubrimiento del «punto de quietud». Tus marcadores biológicos de progreso:",
+        "items": [
+          "Aumento de la variabilidad cardíaca (HRV).",
+          "Reducción del cortisol basal (la «hormona del estrés»).",
+          "Restauración de la peristalsis rítmica y respiración profunda y estable."
+        ]
+      },
+      "outro": "Estás enseñando a tu sistema nervioso a percibir seguridad y el puro hecho de existir sin condiciones externas. Es el estado desde el cual cualquier movimiento intencional («Yo me muevo») y cualquier transformación («Yo me adapto») se vuelven posibles."
+    },
+    "i-move": {
+      "badge": "[ PARTE 2 — NIVEL 1: CUERPO / TERRA ]",
+      "subtitle": "Protocolo: Coherencia rítmica y locomoción primaria",
+      "metaDescription": "Parte 2: Coherencia rítmica y CPG. Despierta la motricidad primaria — cuerpo fluido, movimiento sin esfuerzo. ONDA Life.",
+      "imageAlt": "Arquitectura cinética humana, biología de la auto-conciencia, identidad ONDA YO ME MUEVO, retícula neural coherente visualizada.",
+      "imageTitle": "[I_MOVE]: Visualización de la retícula neural coherente que da origen a la conciencia cinética fundamental.",
+      "intro": "Transición del estado estático «Yo soy» al dinámico «Yo fluyo». En esta etapa despertamos las habilidades motrices primarias y dominamos la navegación dentro del flujo. Es la ingeniería del «cuerpo fluido», donde el movimiento no requiere un esfuerzo agotador, sino que nace de la resonancia con el entorno.\n\nDescendemos al nivel de la «inteligencia del pez» — activando estructuras antiguas del tronco encefálico y circuitos de la médula responsables de la gracia automática y la supervivencia: activación de los CPG (Central Pattern Generators), implicación de circuitos motores primarios del tronco encefálico, trabajo con micromovimientos espinales y aprendizaje para navegar a través del flujo de estímulos entrantes.",
+      "protocol": {
+        "intro": "Este protocolo transforma la metáfora del «pez» en una secuencia precisa para afinar la fluidez neural:",
+        "items": [
+          { "name": "Patrones espinales (CPG)", "text": "Activación de centros en la médula para crear locomoción natural en «piloto automático». El movimiento se vuelve tan sin esfuerzo como nadar." },
+          { "name": "Reflejo vestíbulo-ocular (VOR)", "text": "Estabilización de la mirada con la cabeza en movimiento. Es el fundamento de la navegación visual y la sensación de estabilidad dentro del flujo." },
+          { "name": "Coherencia rítmica", "text": "Aumento de la HRV mediante la sincronización de movimientos axiales con el ciclo respiratorio." },
+          { "name": "Coordinación intermuscular y eficiencia energética", "text": "Transferencia de fuerza por las cadenas fasciales, permitiendo que todo el cuerpo se mueva como un único vector. Entrenar al cerebro a usar el impulso eléctrico mínimo para obtener el máximo resultado biomecánico." }
+        ]
+      },
+      "targets": {
+        "intro": "El objetivo principal es activar la dinámica ondulatoria del cuerpo y reducir radicalmente el coeficiente de resistencia interna.",
+        "items": [
+          { "name": "Columna vertebral", "text": "El esqueleto axial como guía de onda principal del movimiento." },
+          { "name": "Circuitos espinales y cerebelo", "text": "Centros del movimiento rítmico; modulan la suavidad y eliminan el «ruido»." },
+          { "name": "Sistema vestibular", "text": "El giroscopio principal para la orientación dentro del flujo." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado de completar la Parte 2 es alcanzar la «fluidez neural». Marcadores biológicos de progreso:",
+        "items": [
+          "Desaparición de los movimientos «bruscos» (microcoordinación).",
+          "Mejora del deslizamiento fascial y la lubricación sinovial articular.",
+          "Sincronización de respiración y movimiento en un único ciclo."
+        ]
+      },
+      "outro": "Dejas de «empujarte» a través del espacio y empiezas a moverte dentro de él, usando inercia, ritmo y las curvas naturales de la columna. El cuerpo se vuelve receptivo, la navegación se vuelve intuitiva."
+    },
+    "i-adapt": {
+      "badge": "[ PARTE 3 — NIVEL 1: CUERPO / TERRA ]",
+      "subtitle": "Protocolo: Maestría de la gravedad e interocepción",
+      "metaDescription": "Parte 3: Maestría de la gravedad y liberación de la armadura corporal. De nadar a apoyarse — interocepción y eficiencia energética. ONDA Life.",
+      "imageAlt": "Adaptación biológica, biohacking de resiliencia al estrés, ONDA YO ME ADAPTO, optimización de la homeostasis visualizada.",
+      "imageTitle": "[I_ADAPT]: Visualización de la conversión del estrés externo en fuerza sistémica interna mediante coherencia homeostática.",
+      "intro": "Esta etapa se dedica a dominar la gravedad y pasar del estado de «nadar» (dependencia total del entorno) al de «apoyarse» (autonomía interna). Aquí establecemos el fundamento de cómo el cuerpo interactúa con el mundo físico. Pasamos de la supervivencia pasiva a la gestión activa de nuestra posición en el espacio.\n\nDesde la perspectiva neurofisiológica, trabajamos con los procesos más profundos y automatizados. El objetivo principal es afinar el tronco encefálico y la formación reticular, así como activar la corteza sensoriomotora primaria: gestionar el tono muscular (optimizar el equilibrio entre flexores y extensores), aprender a alternar rápidamente entre estados de «relajación/fluidez» y «tono/estabilidad», y activar los generadores de patrón espinal para una locomoción natural.",
+      "protocol": {
+        "intro": "El protocolo busca una alineación profunda del cuerpo con las constantes físicas de la Tierra. Cada práctica de esta etapa tiene una base científica clara:",
+        "items": [
+          { "name": "Coherencia rítmica", "text": "Sincronizar ciclos respiratorios con micromovimientos para afinar la resonancia cardiovascular." },
+          { "name": "Patrones espinales (CPG)", "text": "Trabajo con los Central Pattern Generators de la médula. Transformamos la metáfora de «nadar en el océano» en un algoritmo para un movimiento ligero y eficiente." },
+          { "name": "Reflejo vestíbulo-ocular (VOR)", "text": "Entrenar el acoplamiento entre los movimientos del ojo y la cabeza para estabilizar la mirada y la orientación." },
+          { "name": "Interocepción y eficiencia energética", "text": "Desarrollar la capacidad de percibir estados internos (señales de los órganos, presión, latido) como base de la inteligencia emocional. Entrenar al sistema nervioso a realizar las tareas con el mínimo esfuerzo muscular necesario, eliminando la tensión parasitaria." }
+        ]
+      },
+      "targets": {
+        "intro": "El «stack tecnológico» de la Parte 3 está dirigido a optimizar el bucle de retroalimentación propioceptiva (la cadena cerebro-músculo-cerebro).",
+        "items": [
+          { "name": "Aparato vestibular", "text": "Estabilización y navegación espacial." },
+          { "name": "Cerebelo", "text": "Coordinación y precisión del movimiento." },
+          { "name": "Nervio vago (rama ventral)", "text": "Compromiso social y sensación biológica de seguridad." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado de completar la Parte 3 es la adaptación profunda del cuerpo al mundo físico. Marcadores biológicos de progreso:",
+        "items": [
+          "Reducción de la tensión muscular (la «armadura corporal»).",
+          "Estabilización de los ritmos respiratorios bajo esfuerzo físico.",
+          "Aumento de la variabilidad cardíaca (HRV)."
+        ]
+      },
+      "outro": "Pasas de «nadar» (respuesta caótica a estímulos externos) a «apoyarte» (capacidad de mantener centro y estabilidad en cualquier entorno cambiante). Transformas tu cuerpo de objeto sobre el que actúa la gravedad en sujeto que la utiliza como recurso."
+    },
+    "i-maneuver": {
+      "badge": "[ PARTE 4 — NIVEL 2: EMOCIONES / AQUA ]",
+      "subtitle": "Protocolo: La maniobrabilidad del «pequeño mamífero»",
+      "metaDescription": "Parte 4: Neurocepción y deriva polivagal. Maniobrabilidad del pequeño mamífero — cortisol y adrenalina como combustible. ONDA Life.",
+      "imageAlt": "Maniobra cognitiva, biohacking de toma de decisiones estratégicas, ONDA YO MANIOBRO, función ejecutiva neural visualizada.",
+      "imageTitle": "[I_MANEUVER]: Visualización de la matriz multidimensional de decisión y la sincronización de la inteligencia táctica.",
+      "intro": "Bienvenido a la etapa donde la flexibilidad biológica se transforma en maestría aplicada. Si las etapas anteriores eran sobre aprender simplemente a «ser», aquí aprendemos a ser en movimiento.\n\nEn el corazón de la Parte 4 está el regalo evolutivo de los pequeños mamíferos: la capacidad de evasión instantánea, navegación sutil y micro-evasión de amenazas sin caer en estrés paralizante. Traducimos la maniobrabilidad de cuestión de «suerte» a habilidad biológica medible.",
+      "protocol": {
+        "intro": "Nuestras prácticas se basan en los cuatro pilares de la ciencia moderna:",
+        "items": [
+          { "name": "Teoría polivagal", "text": "Entrenar al sistema nervioso a «derivar» suavemente entre el vago ventral (estado de compromiso social y seguridad) y el sistema simpático (energía para la acción). Usar el tono simpático para una maniobra sin caer en pánico o rabia." },
+          { "name": "Neurobiología y neurocepción", "text": "Entrenamos la cadena: Formación reticular → Tálamo → Corteza motora. Esto permite al cerebro leer cambios del entorno (neurocepción) y emitir una reacción «antes del pensamiento», sorteando filtros cognitivos lentos." },
+          { "name": "Neuroendocrinología", "text": "Impacto directo sobre el eje HPA (hipotálamo-hipófisis-suprarrenales). Enseñamos al cuerpo a controlar la liberación de cortisol y adrenalina, convirtiéndolos de veneno en combustible para la precisión." },
+          { "name": "Linfología", "text": "Usar el tono muscular como bomba natural para limpiar el cuerpo de los metabolitos del estrés, asegurando frescura física incluso bajo cargas altas." }
+        ]
+      },
+      "targets": {
+        "intro": "En lugar de reflejos rígidos, desarrollamos reactividad emocional sensoriomotora.",
+        "items": [
+          { "name": "Aparato vestibular", "text": "Orientación precisa dentro del caos." },
+          { "name": "Propiocepción", "text": "Sentido de la trayectoria y de los límites de la propia «burbuja de seguridad»." },
+          { "name": "Percepción difusa", "text": "«Atención polar» de 360°, que permite ver el mundo como un flujo de oportunidades en vez de obstáculos." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado de completar la Parte 4 es alta selectividad cognitiva. Adquieres la capacidad de:",
+        "items": [
+          "Reducir la impulsividad, sustituyéndola por velocidad consciente.",
+          "Ejecutar transiciones suaves y rápidas en la vida y el trabajo.",
+          "Usar micromovimientos y respiración para auto-calmarte en tiempo real."
+        ]
+      },
+      "outro": "La navegación emocional en esta etapa no es un cálculo cognitivo sino un proceso sensorial. No piensas cómo evadir — sientes la trayectoria y fluyes a través de ella."
+    },
+    "i-guard-territory": {
+      "badge": "[ PARTE 5 — NIVEL 2: EMOCIONES / AQUA ]",
+      "subtitle": "Protocolo: La fuerza del «gran mamífero»",
+      "metaDescription": "Parte 5: DHEA, vago ventral, dominio sereno. Fuerza del gran mamífero — densidad de presencia. ONDA Life.",
+      "imageAlt": "Seguridad del sistema inmune, defensa biológica del territorio, ONDA YO GUARDO EL TERRITORIO, integridad del microbioma visualizada.",
+      "imageTitle": "[I_GUARD]: Visualización del perímetro inmune multicapa y el mantenimiento de la soberanía biológica.",
+      "intro": "En esta etapa dejamos de maniobrar y comenzamos a ocupar espacio. Pasamos a trabajar con el reactor bioquímico del cuerpo a nivel del «gran mamífero». Aquí la emoción se ve no como un sentimiento abstracto, sino como un proceso de bioingeniería con firma hormonal, patrón neuromotor y perfil vegetativo.\n\nEn la Parte 5, el foco es la homeostasis. Es la capacidad de mantener la estabilidad del medio interno, la densidad de presencia y un estado de «calma de estatus», independientemente de la presión externa.",
+      "protocol": {
+        "intro": "Reconfiguramos el cuerpo a través de cuatro sistemas clave:",
+        "items": [
+          { "name": "Sistema endocrino (circuito hormonal del dominio)", "text": "Las suprarrenales pasan de la liberación de emergencia de cortisol a la producción de DHEA — la hormona de la vitalidad y la longevidad. El eje hipófisis-gónadas forma el «estado del ganador» mediante una estimulación moderada de testosterona. El timo restaura el vínculo entre seguridad social y respuesta inmune potente." },
+          { "name": "Sistema nervioso autónomo (parasimpática inteligente)", "text": "Apoyándonos en la teoría polivagal de Stephen Porges, activamos el vago ventral. Es un estado de «alerta tranquila», donde el corazón late con potencia y firmeza, y el cerebro está listo para un dominio efectivo en lugar de pánico." },
+          { "name": "Sistema linfático (limpieza mecánica)", "text": "El estrés crónico bloquea diafragma y suelo pélvico. Nuestras prácticas de «peso» y «volumen» actúan como drenaje linfático profundo, exprimiendo literalmente los metabolitos del estrés de los tejidos." },
+          { "name": "Biología cuántica (coherencia)", "text": "Trabajamos sobre la «densidad de presencia». Desde la biofotónica, es un estado de alta coherencia en el campo electromagnético de las células. Tu presencia se vuelve palpable a nivel físico para los demás." }
+        ]
+      },
+      "targets": {
+        "intro": "El protocolo de la Parte 5 implica las capas profundas de la regulación:",
+        "items": [
+          { "name": "Hipotálamo", "text": "Control del comportamiento territorial y el dominio." },
+          { "name": "Ganglios basales", "text": "Formación de posturas estables, «inquebrantables»." },
+          { "name": "Musculatura postural profunda", "text": "Creación de un marco interno de fuerza." }
+        ]
+      },
+      "results": {
+        "intro": "Resultados neurobiológicos:",
+        "items": [
+          "Bucle de retroalimentación: activación del hipotálamo → aumento de testosterona → reducción del cortisol. Esto da un estado de dominio sereno sin agresión.",
+          "Neuro-señalización: difundes estatus a través de señales neuromotoras.",
+          "Influencia límbica: los demás registran tu estabilidad y seguridad límbica antes de que pronuncies tu primera palabra."
+        ]
+      },
+      "outro": "Tu cuerpo no es solo una cáscara; es tu territorio. Es hora de ocuparlo.\n\nEl dominio sereno es un estado biológico. No requiere esfuerzo cuando tu perfil hormonal y tu tono vegetativo están afinados correctamente."
+    },
+    "i-am-part-of-the-pack": {
+      "badge": "[ PARTE 6 — NIVEL 2: EMOCIONES / AQUA ]",
+      "subtitle": "Protocolo: La resonancia social del «primate superior»",
+      "metaDescription": "Parte 6: Neuronas espejo, oxitocina, resonancia social. Primate superior — co-regulación y dinámica de manada. ONDA Life.",
+      "imageAlt": "Sincronización del cerebro social, biohacking de inteligencia colectiva, ONDA SOY PARTE DE LA MANADA, resonancia neural visualizada.",
+      "imageTitle": "[PACK_MODE_ACTIVE]: Visualización de la sincronización neural y hormonal coherente en un colectivo social de alto rendimiento.",
+      "intro": "Bienvenido a la cima del Nivel 2. Mientras las etapas anteriores se centraron en construir maniobrabilidad y límites personales, la Parte 6 nos lleva a la interfaz biológica más compleja: la resonancia social.\n\nBiológicamente, es la etapa del «primate superior». Nuestra tarea es transformar la supervivencia individual en poder colectivo. Aprendemos a sincronizar nuestros ritmos biológicos con los de los demás sin perder nuestro propio «centro coherente». No solo existimos junto a la gente — entramos en resonancia con ella.",
+      "protocol": {
+        "intro": "Este protocolo se basa en la activación del «cerebro social»:",
+        "items": [
+          { "name": "Sistema de neuronas espejo (corteza premotora)", "text": "Tu Wi-Fi biológico. Entrenamos la capacidad de leer al instante intenciones y estados ajenos a través de microexpresiones y gestos, convirtiendo la intuición en una herramienta precisa de navegación." },
+          { "name": "Perfil de oxitocina (hipotálamo)", "text": "Trabajo con la hormona de la confianza y la pertenencia. La meta es entrenar al sistema a producir oxitocina en respuesta al contacto social seguro, reduciendo automáticamente la ansiedad y la agresión basales." },
+          { "name": "Vago ventral (compromiso social)", "text": "Activación de la «parasimpática inteligente». Es un estado donde músculos faciales y oído se afinan a la voz y el rostro humanos, proporcionando co-regulación — la capacidad de calmarte a través del otro y de calmar al otro a cambio." },
+          { "name": "Corteza cingulada anterior (sensado social)", "text": "Entrenar el detector de errores y señales sociales. Aprendemos «ósmosis emocional» — el intercambio de estados — manteniendo la autonomía y evitando ser arrastrados al caos del otro." }
+        ]
+      },
+      "targets": {
+        "intro": "El protocolo de la Parte 6 se orienta a la resonancia límbica:",
+        "items": [
+          { "name": "Sincronización", "text": "La habilidad de alinear ritmos respiratorios y cardíacos con un grupo para crear un campo de acción único." },
+          { "name": "Movilidad micro-mímica", "text": "Lectura y emisión de señales de seguridad y estatus a través de los movimientos faciales más sutiles." },
+          { "name": "Co-regulación autónoma", "text": "Capacidad de influir en el campo emocional del grupo manteniéndote en un estado de vago ventral." }
+        ]
+      },
+      "results": {
+        "intro": "Resultados neurobiológicos:",
+        "items": [
+          "Bucle de retroalimentación: Neuronas espejo + Vago ventral + Oxitocina. Resultado: compromiso social sin ansiedad.",
+          "Dinámica grupal: ganas la capacidad de sentir la «manada», influir en ella y aprovechar recursos colectivos para alcanzar metas.",
+          "Integración social: tu presencia se vuelve el «pegamento» que une al grupo y el «vector» que lo dirige."
+        ]
+      },
+      "outro": "Eres parte del todo y, al mismo tiempo, sigues siendo tú.\n\nEs hora de entrar en resonancia."
+    },
+    "i-distinguish": {
+      "badge": "[ PARTE 7 — NIVEL 3: MENTE / AER ]",
+      "subtitle": "Protocolo: Control cognitivo y optimización S/N (Señal-Ruido)",
+      "metaDescription": "Parte 7: Optimización S/N — hueco cognitivo entre estímulo y reacción. Ajuste del tálamo. ONDA Life.",
+      "intro": "En esta etapa nos elevamos por encima de las reacciones límbicas y los instintos. El foco está en el fundamento de la inteligencia: la capacidad del cerebro para extraer la «señal» del «ruido». Entrenamos a la mente no para «pensar pensamientos», sino para percibir puramente la discreción del mundo — sus formas, contornos y estructuras.\n\nEs el primer nivel donde el sistema cognitivo asume el papel de director principal. El reto biológico clave es aumentar la claridad cognitiva y pasar de la reactividad a la observación.",
+      "protocol": {
+        "intro": "Activamos las «herramientas» de orden superior:",
+        "items": [
+          { "name": "El tálamo — el guardián supremo", "text": "El filtro de los flujos sensoriales. Afinar el tálamo para separar la información críticamente importante del «ruido blanco» de fondo." },
+          { "name": "Corteza prefrontal (PFC)", "text": "Centro de mando para la atención y las funciones ejecutivas. Activación del enlace entre la PFC y la corteza cingulada anterior para detectar inconsistencias al instante." },
+          { "name": "Claridad neural (noradrenalina)", "text": "Usar la modulación de noradrenalina para mejorar la alerta y el control inhibitorio sobre las reacciones impulsivas. Monitorización metacognitiva — entrenar a la PFC medial para separar hechos objetivos de interpretaciones subjetivas." },
+          { "name": "Integración sensoriomotora", "text": "Desarrollar la capacidad de aislar señales clave en un flujo denso de estímulos externos. Procesamiento profundo de contornos, formas y vectores de movimiento mediante la corteza visual (V1–V5)." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "Corteza prefrontal dorsolateral (dlPFC)", "text": "Claridad cognitiva y retención del foco." },
+          { "name": "Corteza cingulada anterior (ACC)", "text": "Un «detector de errores» de alta precisión y discriminador de diferencias." },
+          { "name": "Aumento de la amplitud P300", "text": "Biomarcador que indica con qué rapidez y eficiencia el cerebro reconoce un estímulo significativo." },
+          { "name": "Estabilidad sacádica", "text": "Precisión y control de los micromovimientos oculares al escanear el espacio." },
+          { "name": "Estabilización perceptiva", "text": "Entrar en estados Theta/Alpha para anclar la mente." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado es la creación de un «hueco cognitivo» entre estímulo y reacción.",
+        "items": [
+          "Reconocimiento de patrones: capacidad de reconocer patrones antes de que secuestren tu atención.",
+          "Claridad bajo presión: mantener pensamiento cristalino incluso bajo sobrecarga informativa.",
+          "Afinamiento perceptivo: ver el mundo tal como es, libre de ruido mental innecesario.",
+          "Reducción de carga: drástica disminución del coste cognitivo al «afilar» las herramientas de la percepción."
+        ]
+      },
+      "outro": "El discernimiento es el primer paso hacia la verdadera autonomía mental."
+    },
+    "i-focus": {
+      "badge": "[ PARTE 8 — NIVEL 3: MENTE / AER ]",
+      "subtitle": "Protocolo: Control cognitivo y resiliencia neural",
+      "metaDescription": "Parte 8: Deep Work y resiliencia neural. Atención voluntaria, retención del foco — dlPFC y supresión del DMN. ONDA Life.",
+      "intro": "La Parte 8 es el corazón del nivel cognitivo. Aquí la atención deja de ser una respuesta reactiva a estímulos externos y se vuelve un instrumento controlado. Aprendemos a elegir lo importante en el momento y mantener ese foco mientras ignoramos el ruido. Es la etapa de transformar la atención de caótica a voluntaria.\n\nEn esta etapa trabajamos con la arquitectura de la atención y los mecanismos para suprimir el «ruido interno». El reto biológico clave es la retención del objetivo y la distribución eficiente de la energía cognitiva.",
+      "protocol": {
+        "intro": "Sistemas objetivo y mecanismos para el trabajo profundo:",
+        "items": [
+          { "name": "dlPFC y control ejecutivo", "text": "La corteza prefrontal dorsolateral es el principal controlador de la retención de objetivos. Fortalecer el enlace entre PFC y ganglios basales para un retorno fluido al objetivo y el filtrado de impulsos." },
+          { "name": "Red de Atención Dorsal (DAN) y supresión del DMN", "text": "Activación de la red de atención voluntaria y dirigida. Entrenar al cerebro a desactivar a tiempo la Default Mode Network (DMN) — el «modo de mente errante» — para una inmersión profunda en la tarea." },
+          { "name": "Vinculación gamma y modulación colinérgica", "text": "Sincronizar neuronas en frecuencia gamma para ensamblar elementos dispersos de la percepción en una imagen única y coherente. Trabajo con acetilcolina, que literalmente «ilumina» las conexiones neurales necesarias." },
+          { "name": "Locus Coeruleus", "text": "Regular los niveles de alerta mediante noradrenalina. La corteza cingulada anterior (ACC) monitoriza distracciones y detecta errores." }
+        ]
+      },
+      "targets": {
+        "intro": "Afinar el cerebro para el modo «Deep Work» y prevenir el burnout cognitivo:",
+        "items": [
+          { "name": "Estabilización neural", "text": "Estabilizar la dlPFC para un control rígido sobre el foco." },
+          { "name": "Calibración dopaminérgica", "text": "Usar microrrecompensas para mantener alta motivación y capacidad de memoria de trabajo." },
+          { "name": "Optimización ultradiana", "text": "Trabajar dentro de ritmos naturales (ciclos 90/20 minutos) para la oportuna restauración de neurotransmisores." },
+          { "name": "Retorno metacognitivo", "text": "Una redirección suave y sin esfuerzo de la atención de vuelta al objeto del foco." },
+          { "name": "Freno vagal", "text": "Usar la respiración para mantener la calma somática durante el foco mental de alta intensidad." }
+        ]
+      },
+      "results": {
+        "intro": "El alcance de la «resiliencia neural».",
+        "items": [
+          "Propiedad de la atención: no solo te concentras — te conviertes en dueño de tu atención.",
+          "Foco sin esfuerzo: el cerebro aprende a entrar en estado de foco profundo sin tensión excesiva, manteniendo claridad y conservando energía biológica.",
+          "Inhibición cognitiva: optimización de la capacidad del sistema de ignorar activamente estímulos irrelevantes.",
+          "Marcadores biológicos: aumento de la potencia del ritmo beta en lóbulos frontales, estabilización del ritmo cardíaco y reducción del tiempo de reacción al cambiar de tarea."
+        ]
+      },
+      "outro": "No solo te concentras — te conviertes en dueño de tu atención."
+    },
+    "i-shape-the-vision": {
+      "badge": "[ PARTE 9 — NIVEL 3: MENTE / AER ]",
+      "subtitle": "Protocolo: Simulación mental y plasticidad neural",
+      "metaDescription": "Parte 9: Simulación mental y predictive coding. Imaginación como software — hipocampo, RAS. ONDA Life.",
+      "intro": "La Parte 9 es el momento en que lanzamos el «render» interno. Aquí la imaginación se ve no como una fantasía ociosa, sino como una poderosa herramienta biológica para la ingeniería del comportamiento. Pasamos de analizar el presente a modelar el futuro, creando prototipos mentales de la realidad.\n\nEn este nivel implicamos los sistemas integrativos superiores del cerebro para ensamblar fragmentos dispersos de experiencia en una imagen unificada. El reto biológico clave es crear un modelo preciso de Predictive Coding de la realidad.",
+      "protocol": {
+        "intro": "Entrenar al cerebro a usar la imaginación como un programa para reescribir la realidad:",
+        "items": [
+          { "name": "Visualización sensorial", "text": "Activar la corteza sensorial primaria para crear una experiencia interna profunda y «tangible»." },
+          { "name": "Modelado mental", "text": "Vincular el hipocampo y la PFC medial (mPFC) para representar escenarios futuros." },
+          { "name": "Programación proactiva (RAS)", "text": "Afinar el Sistema Activador Reticular para buscar automáticamente oportunidades que coincidan con la visión interna." },
+          { "name": "Reframing neural", "text": "Usar metáforas cognitivas para alterar conexiones sinápticas." },
+          { "name": "Resonancia bioquímica", "text": "Entrenar al hipotálamo a generar el «estado de victoria» antes incluso de que comience la acción real." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y mecanismos del modelado mental:",
+        "items": [
+          { "name": "Corteza prefrontal (dlPFC + vmPFC)", "text": "La arquitectura y evaluación de estrategias futuras. El director que dirige el proceso creativo. El hipotálamo traduce la imagen mental en respuesta química (hormonas y neurotransmisores)." },
+          { "name": "Hipocampo y Default Mode Network (DMN)", "text": "Reconstrucción de experiencias pasadas para modelar nuevos escenarios. La DMN es responsable del insight creativo y la visualización." },
+          { "name": "Corteza occipital (V1–V4) y γ-sincronización", "text": "Visualizar y renderizar imágenes en ausencia de estímulos externos. Unificación instantánea de conjuntos neurales para un «destello» de comprensión e integridad de la imagen." },
+          { "name": "Corteza parietal posterior (PPC)", "text": "Ensamblaje de mapas espaciales y ubicación de la imagen dentro del contexto del entorno. Sincronización del boceto mental con la respuesta fisiológica del cuerpo." }
+        ]
+      },
+      "results": {
+        "intro": "Transformar la imaginación en una herramienta para gestionar la realidad.",
+        "items": [
+          "Maestría proactiva: capacidad no solo de reaccionar a los eventos sino de «pre-escribirlos» a nivel neural.",
+          "Eficiencia operacional: la visión se vuelve programa y el cerebro actúa como ejecutor eficiente, encontrando los caminos más cortos hacia el objetivo.",
+          "Estado de flujo: predominancia de ritmos Alpha y Theta, característicos del flujo creativo y el insight.",
+          "Creencia biológica: cambios en la respuesta galvánica de la piel (GSR) — indicador de que el cuerpo «cree» en la imagen creada como si fuera real."
+        ]
+      },
+      "outro": "La visión se vuelve programa, y el cerebro actúa como ejecutor eficiente. Adquieres la capacidad no solo de reaccionar a los eventos, sino de «pre-escribirlos» a nivel neural."
+    },
+    "i-express": {
+      "badge": "[ PARTE 10 — NIVEL 4: SOCIEDAD / IGNIS ]",
+      "subtitle": "Protocolo: Neuroendocrinología de la influencia y resonancia vocal",
+      "metaDescription": "Parte 10: Resonancia vocal y manifestación social. Neuroendocrinología de la influencia — de la simulación a la expresión. ONDA Life.",
+      "intro": "Es la etapa de la realización social y el temple. Aquí, el «boceto interno» creado a nivel Mente debe pasar por el filtro del entorno externo. La meta de esta etapa es sincronizar el corazón (sentimientos), el cerebro (visión) y la garganta (instrumento de manifestación). Transformamos la auto-expresión en un acto soberano.\n\nEn este nivel ocurre un salto poderoso: el cerebro implica sistemas para la monitorización social y la producción del habla. El reto biológico clave es superar la ansiedad social y pasar de la simulación interna a la manifestación en el mundo real.",
+      "protocol": {
+        "intro": "Transformar el cuerpo en un transmisor potente de ideas mediante mecanismos neuroquímicos:",
+        "items": [
+          { "name": "Ingeniería hormonal", "text": "«Power posing» y patrones respiratorios para bajar el cortisol y aumentar la testosterona." },
+          { "name": "Estimulación vagal", "text": "Ejercicios vocales para activar el vago ventral." },
+          { "name": "Reevaluación cognitiva", "text": "Técnica de control prefrontal que amortigua fisiológicamente la actividad de la amígdala, sustituyendo el miedo por la excitación." },
+          { "name": "Bucles de oxitocina", "text": "Gestionar contacto visual y microexpresiones para construir confianza social." },
+          { "name": "Encarnación de la personalidad", "text": "Prácticas centradas en la sensación somática de «Yo hablo», donde la voz se sostiene en todo el cuerpo — diafragma, pies y columna." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y mecanismos de manifestación social:",
+        "items": [
+          { "name": "Áreas de Broca y Wernicke, y vago ventral", "text": "Centros para ensamblar y entregar estructuras de habla. El vago ventral actúa como «freno social», asegurando un estado de compromiso tranquilo y amistosidad." },
+          { "name": "Amígdala y neuronas espejo", "text": "Reducir la reactividad de la amígdala para suprimir el miedo social paralizante. Las neuronas espejo permiten leer las reacciones del público y ajustarse al contexto al instante." },
+          { "name": "Ínsula y aparato vocal", "text": "La ínsula proporciona la sensación de autenticidad — cuánto se alinean tus palabras con tu estado interno. El nervio laríngeo y el aparato vocal sirven como herramientas de resonancia sonora." },
+          { "name": "Glándula tiroides y PFC", "text": "La tiroides actúa como motor del tempo metabólico y de la energía de manifestación. La corteza prefrontal (PFC) maneja el modelado social y el control de impulsos." }
+        ]
+      },
+      "results": {
+        "intro": "Salir del estado de «parálisis social» y entrar en el estado del Maestro de la Manifestación.",
+        "items": [
+          "Expresión soberana: tu voz gana peso, tus palabras ganan precisión y tu auto-expresión se vuelve clara y auténtica.",
+          "Transformación energética: ya no temes ser notado; usas la atención como combustible para tu manifestación.",
+          "Marcadores biológicos: ratio testosterona-cortisol optimizado; cambios en el timbre y amplitud vocal.",
+          "Presencia resonante: eliminación de filtros sociales y afinamiento del sonido resonante de la personalidad. Ausencia de tensión en la mandíbula y constricción en la garganta."
+        ]
+      },
+      "outro": "Tu voz gana peso, tus palabras ganan precisión. Transformas la auto-expresión en un acto soberano — ya no temes la atención, la usas como combustible para la manifestación."
+    },
+    "i-interact": {
+      "badge": "[ PARTE 11 — NIVEL 4: SOCIEDAD / IGNIS ]",
+      "subtitle": "Protocolo: Cognición social y regulación empática",
+      "metaDescription": "Parte 11: Cognición social y regulación empática. Theory of Mind, predictive coding social. ONDA Life.",
+      "intro": "La Parte 11 es la transición de la auto-expresión a la interferencia. En física, es el momento en que dos ondas se solapan creando un patrón nuevo y complejo. En ONDA, es el ajuste de tu «Wi-Fi neural». Aprendemos a estar con el otro de manera que la interacción no se convierta en conflicto de intereses ni manipulación.\n\nEn este nivel se activa el «cerebro social» — una red sofisticada responsable de la sincronización interpersonal. El reto biológico clave es el equilibrio entre mantener la autonomía («Yo») y la conexión profunda («Nosotros»).",
+      "protocol": {
+        "intro": "Afinar las herramientas de navegación interpersonal al máximo nivel de precisión:",
+        "items": [
+          { "name": "Calibración empática", "text": "Activar neuronas espejo y la corteza cingulada anterior (ACC) para leer microseñales emocionales sutiles." },
+          { "name": "Flexibilidad cognitiva (ToM)", "text": "Entrenar la capacidad de «ponerse en los zapatos del otro»." },
+          { "name": "Predictive Coding social", "text": "Entrenar al cerebro a prever las reacciones del partner, reduciendo así el ruido social." },
+          { "name": "Estimulación de bucles de oxitocina", "text": "Pasar el sistema a un modo de cooperación profunda." },
+          { "name": "Interocepción en contacto", "text": "Usar la ínsula para sentir los propios límites y los del otro en tiempo real, evitando la fusión total y el alejamiento." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y mecanismos de la interacción interpersonal:",
+        "items": [
+          { "name": "Neuronas espejo y red de Theory of Mind (ToM)", "text": "Resonancia directa de acciones y emociones — base de la empatía instantánea. La capacidad de la PFC medial (mPFC) de comprender perspectivas, intenciones y creencias del otro." },
+          { "name": "Corteza orbitofrontal y vago ventral", "text": "Asegurar la armonía social y las elecciones éticas en el momento. El vago ventral crea un «contenedor» fisiológico de seguridad para la comunicación abierta." },
+          { "name": "mPFC y rTPJ (unión témporo-parietal derecha)", "text": "La mPFC es el centro para comprender el «Yo» del otro. La rTPJ es un nodo clave para leer señales no verbales y gestionar el «modelo mental» del otro." },
+          { "name": "Sistema oxitocina-vasopresina e inter-brain synchrony", "text": "El equilibrio bioquímico entre confianza y protección de límites. La inter-brain synchrony es el fenómeno por el cual los ritmos cerebrales de los partners empiezan a operar en modo coherente." }
+        ]
+      },
+      "results": {
+        "intro": "Maestría del «espacio entre».",
+        "items": [
+          "Co-resonancia: aprendes a crear una resonancia que potencia a ambos participantes del proceso.",
+          "Interacción nutricia: la interacción se vuelve ligera, productiva y biológicamente nutritiva.",
+          "Marcadores biológicos: sincronización de la HRV entre partners y coherencia cerebral en ritmo Alpha.",
+          "Estrategia de resonancia: pasar de estrategias de «supervivencia social» a «resonancia social». Relajación del diafragma pélvico y liberación de bloqueos corporales profundos."
+        ]
+      },
+      "outro": "Aprendes a crear una resonancia que potencia a ambos participantes. La interacción se vuelve ligera, productiva y biológicamente nutricia — maestría del «espacio entre»."
+    },
+    "i-co-create": {
+      "badge": "[ PARTE 12 — NIVEL 4: SOCIEDAD / IGNIS ]",
+      "subtitle": "Protocolo: Sincronización neural e inteligencia colectiva",
+      "metaDescription": "Parte 12: Neural coupling e inteligencia colectiva. Sincronía gamma, coherencia entre cerebros. ONDA Life.",
+      "intro": "La Parte 12 es la culminación de la evolución social del sistema ONDA. Pasamos de «Yo» a «NOSOTROS» sin pérdida de individualidad, entrando en un estado de neural coupling. Es el punto donde la inteligencia, las emociones y los significados de un grupo se sincronizan, creando un flujo colectivo.\n\nEn este nivel el cerebro demuestra la forma más alta de coordinación interpersonal: el funcionamiento síncrono de ritmos a través de varios individuos. El reto biológico clave es la integración de la consciencia individual en una red neural colectiva.",
+      "protocol": {
+        "intro": "Transformar el «trabajo en equipo» en un proceso medible de alineación biológica:",
+        "items": [
+          { "name": "Neural Coupling", "text": "Prácticas para sincronizar atención y ritmos respiratorios para entrar en un campo neural compartido." },
+          { "name": "Despersonalización de las ideas", "text": "Reducir la actividad de las redes ego-céntricas (DMN)." },
+          { "name": "Resonancia de oxitocina", "text": "Bajar la reactividad de la amígdala dentro del grupo a través de una atmósfera de confianza radical." },
+          { "name": "Sincronización intencional", "text": "Sistemas espejo de orden superior para la ejecución «sin fisuras» de tareas conjuntas." },
+          { "name": "Refuerzo dopaminérgico", "text": "Protocolos para celebrar victorias colectivas y formar circuitos neurales estables de comportamiento cooperativo." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y mecanismos de la co-creación colectiva:",
+        "items": [
+          { "name": "Brain-to-Brain Coupling y sincronización gamma", "text": "Sincronización entre cerebros donde los patrones neurales de los participantes se reflejan mutuamente. El ritmo gamma (40+ Hz) es responsable del insight colectivo y la síntesis instantánea de ideas." },
+          { "name": "Inhibición del DMN y atención conjunta", "text": "Suprimir la «red del ego» del cerebro para pasar de proteger los límites personales a realizar un objetivo común. La atención conjunta forma un foco único como centro de sinergia del grupo." },
+          { "name": "dlPFC y ACC", "text": "El coordinador de acciones conjuntas y estrategias compartidas. La corteza cingulada anterior (ACC) suaviza microconflictos y afina el tempo del grupo." },
+          { "name": "TPJ y sistemas endorfina-oxitocina", "text": "La unión témporo-parietal (TPJ) ofrece comprensión profunda de las intenciones de cada participante. Los sistemas de endorfinas y oxitocina actúan como «pegamento hormonal» de la cohesión colectiva." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar el nivel de «Homo Creativus» (el humano creativo).",
+        "items": [
+          "Maestría sinérgica: ganas la habilidad de integrarte en procesos grupales de cualquier complejidad, manteniendo soberanía mientras amplificas exponencialmente el resultado.",
+          "Red viva: el grupo se transforma en una red neural viva capaz de resolver tareas inaccesibles a la mente individual.",
+          "Marcadores biológicos: coherencia entre cerebros, alineación grupal de la HRV y oleadas de dopamina colectivas.",
+          "Consciencia-Nosotros: crear un entorno hiperproductivo donde las ideas se auto-organizan en resultados a través de un campo unificado de consciencia."
+        ]
+      },
+      "outro": "El grupo se transforma en una red neural viva. Mantienes soberanía mientras amplificas exponencialmente el resultado — el nivel de Homo Creativus."
+    },
+    "i-sense": {
+      "badge": "[ PARTE 13 — NIVEL 5: MENTE NEURO-SOMÁTICA / INTELIGENCIA SENSORIAL ]",
+      "subtitle": "Protocolo: Precisión interoceptiva y expansión sensorial",
+      "metaDescription": "Parte 13: Inteligencia sensorial. Interocepción, ínsula, fibras C-táctiles. Convierte el cuerpo en una antena de alta precisión. ONDA Life.",
+      "intro": "En esta etapa volvemos al «traje espacial biológico» — no como pasajeros pasivos, sino como pilotos expertos. Pasamos de la simple auto-observación a una Inteligencia Sensorial de alta precisión. El objetivo es convertir el cuerpo de un objeto que requiere mantenimiento en una «antena» perfecta capaz de leer los datos más sutiles del entorno interno y externo. Aquí aprendemos a separar la señal eléctrica cruda del sistema nervioso de la interpretación mental automática.\n\nReto biológico clave: sincronizar el «esquema corporal» (dónde estoy) y la «imagen corporal» (cómo me siento) en un único flujo de datos ultra-precisos.",
+      "protocol": {
+        "intro": "Este protocolo convierte el cuerpo en un instrumento de medición sensible listo para gestionar flujos internos:",
+        "items": [
+          { "name": "Precisión interoceptiva", "text": "Prácticas para activar la ínsula, permitiéndote oír pulsación, peristaltismo y micromovimientos bajo la piel sin miedo ni juicio." },
+          { "name": "Discriminación sensorial", "text": "Ejercicios para afinar la exterocepción (oído, tacto, olfato) mediante el manejo consciente de los filtros talámicos." },
+          { "name": "Supresión del DMN vía sensorial", "text": "Trasladar la atención al «cable directo» de las sensaciones, lo que desactiva fisiológicamente la rumiación mental y reduce el estrés." },
+          { "name": "Calibración neuro-vegetativa", "text": "Afinar la capacidad del cerebro para reconocer al instante cambios en el fondo químico interno (p. ej., una subida de adrenalina) antes de que se convierta en emoción." },
+          { "name": "Embodiment Clarity", "text": "Eliminar el retraso entre la señal corporal y su realización («Siento — Sé — Actúo»)." }
+        ]
+      },
+      "targets": {
+        "intro": "Activamos sistemas responsables de la presencia profunda y la decodificación de los códigos corporales:",
+        "items": [
+          { "name": "Interocepción (ínsula)", "text": "Activar la ínsula — el hub de nuestra autoconsciencia corporal que procesa señales de los órganos internos." },
+          { "name": "Corteza somatosensorial (S1/S2)", "text": "Afinamiento de la percepción táctil y la discriminación de estímulos." },
+          { "name": "Puerta sensorial (tálamo)", "text": "Bajar los umbrales de filtrado para permitir información más detallada sobre texturas, sonidos y olores." },
+          { "name": "Integración propioceptiva", "text": "Implicar al cerebelo y la corteza parietal para crear un «mapa corporal» ultra-preciso en el espacio." },
+          { "name": "Fibras C-táctiles", "text": "Activar las vías del tacto «emocional» que conectan la piel con los centros del bienestar del cerebro." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar la «transparencia corporal».",
+        "items": [
+          "Empiezas a percibir el cuerpo no como ruido, sino como un flujo de datos de alta precisión.",
+          "Es el estado de un «piloto» que siente la mínima vibración del ala del avión.",
+          "Biomarcadores de progreso: aumento de la densidad de materia gris en la ínsula, reducción del tono muscular en reposo, normalización de la respuesta galvánica de la piel (GSR).",
+          "Transición del «modo supervivencia» al «modo presencia» total mediante anclas sensoriales."
+        ]
+      },
+      "outro": "Estás listo para el siguiente paso: gestionar los flujos energéticos internos y la regulación profunda de estados."
+    },
+    "i-channel": {
+      "badge": "[ PARTE 14 — NIVEL 5: MENTE NEURO-SOMÁTICA / INTELIGENCIA SENSORIAL ]",
+      "subtitle": "Protocolo: Conductividad neurodinámica y flujo fascial",
+      "metaDescription": "Parte 14: El cuerpo como conductor. Tono vagal, neurodinámica, flujo fascial. Maestro de los estados de flujo. ONDA Life.",
+      "imageAlt": "El cuerpo como conductor neurodinámico, flujo fascial, ONDA YO CANALIZO.",
+      "imageTitle": "[I_CHANNEL]: Visualización de la conductividad informacional sin fricción a través del organismo.",
+      "intro": "En esta etapa trabajamos con la «fluidez informacional» del organismo. La meta es entrenar al sistema nervioso y a los tejidos a no bloquear los impulsos entrantes o internos (estrés, dolor, emociones intensas), sino dejarlos pasar sin obstrucción. Dejamos de ser una «forma» que resiste la presión y nos volvemos un «proceso» que transforma cualquier impulso en recurso manteniendo la homeostasis.\n\nReto biológico clave: eliminar las «congestiones» — bloqueos musculares, vasculares y neurales — para la libre distribución de energía y señales.",
+      "protocol": {
+        "intro": "La Conductividad Neurodinámica y el Flujo Fascial transforman el cuerpo en un canal abierto:",
+        "items": [
+          { "name": "Descarga neurodinámica", "text": "Modular reflejos espinales para hacer pasar la excitación excesiva por el cuerpo sin convertirla en bloqueo crónico." },
+          { "name": "Deslizamiento fascial", "text": "Trabajo con mecanorreceptores fasciales para mejorar la transmisión de información mecánica y energética a través de toda la estructura «tensegrítica»." },
+          { "name": "Control vasomotor", "text": "Gestión consciente de la microcirculación y el flujo de calor a través de la atención, afectando directamente la conductividad del tejido." },
+          { "name": "Puente vagal", "text": "Usar técnicas respiratorias y vocales para aumentar el «ancho de banda» del nervio vago durante cargas pico." },
+          { "name": "Integración del flujo", "text": "Reducir la actividad del DMN mediante la presencia somática total, donde la acción nace de la conductividad y no del esfuerzo." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "Sistema nervioso periférico", "text": "Conductividad fibras sin «ruido»." },
+          { "name": "Cadenas fasciales (tensegridad)", "text": "Tejido conjuntivo como red informativa global del cuerpo." },
+          { "name": "Canal espinal", "text": "Autopista principal para la transmisión de impulsos." },
+          { "name": "Eje HPA", "text": "Regulación de la respuesta al estrés." },
+          { "name": "Biomarcadores", "text": "Reducción de la impedancia eléctrica de la piel; estabilización del tono vascular; desaparición de zonas de «amnesia sensorial»." }
+        ]
+      },
+      "results": {
+        "intro": "Lograr libertad somática y «alta conductividad».",
+        "items": [
+          "El cuerpo deja de acumular estrés y empieza a transmitirlo, procesándolo en energía cinética o creativa.",
+          "Te conviertes en maestro de los estados de flujo, capaz de mantener suavidad interna y conductividad incluso bajo influencias externas extremas.",
+          "Transición a fricción interna mínima: armonización del SNA, optimización del tono vagal, neurodinámica, vasomotricidad, dinámica del LCR."
+        ]
+      },
+      "outro": "Ya no eres una forma que resiste — eres un proceso que transforma. Cada impulso se vuelve recurso."
+    },
+    "i-attune": {
+      "badge": "[ PARTE 15 — NIVEL 5: MENTE NEURO-SOMÁTICA / INTELIGENCIA SENSORIAL ]",
+      "subtitle": "Protocolo: Fusión neurosomática y éxtasis colectivo",
+      "metaDescription": "Parte 15: Fusión neurosomática. Oxitocina, neuronas espejo, vagal ventral. De la conductividad individual a la resonancia colectiva — el humano conectado. ONDA Life.",
+      "imageAlt": "Fusión neurosomática, resonancia colectiva, ONDA YO SINTONIZO.",
+      "imageTitle": "[I_ATTUNE]: Visualización del circuito neurosomático único formado entre dos organismos sintonizados.",
+      "intro": "La Parte 15 trata sobre la transición de la conductividad individual a la resonancia colectiva. No es solo «contacto»; es la creación de un circuito neurosomático único («estado-Nosotros»). Usamos potentes palancas neuroquímicas — oxitocina, dopamina y endorfinas — no para mera descarga, sino para expandir capacidades cognitivas y sensoriales a través de otro ser humano. En esta etapa, el cuerpo se convierte en un instrumento de alta tecnología para explorar al «otro» y al «yo» simultáneamente.\n\nReto biológico clave: disolver los límites de la «cápsula del ego» para crear un campo fisiológico sincronizado.",
+      "protocol": {
+        "intro": "Fusión Neurosomática y Éxtasis Colectivo transforma la intimidad en un método preciso de programación neurobiológica:",
+        "items": [
+          { "name": "Sincronización fisiológica", "text": "Prácticas con respiración sincronizada, micromovimientos y entrainment del ritmo cardíaco para activar el «puente neurosomático»." },
+          { "name": "Bioquímica de la confianza", "text": "Usar contacto visual prolongado y estimulación táctil específica para inundar el sistema con oxitocina y vasopresina, estabilizando el vínculo." },
+          { "name": "Expansión del campo sensorial", "text": "Técnicas para modular el lóbulo parietal, difuminando los bordes físicos del cuerpo para experimentar las sensaciones del partner como propias." },
+          { "name": "Alquimia de los estados", "text": "Transformar el estrés y la tensión biológica en energía de acción y placer (convirtiendo estados impulsados por cortisol en flujo de dopamina/endorfinas)." },
+          { "name": "Éxtasis consciente", "text": "Entrenar a la PFC para permanecer «en línea» durante experiencias pico, permitiendo integrar estados extáticos en neuroplasticidad a largo plazo." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "Vías oxitocinérgicas", "text": "Centros del vínculo y reducción del estrés." },
+          { "name": "Corteza somatosensorial", "text": "Para mapeo sensorial expandido." },
+          { "name": "Corteza prefrontal (PFC)", "text": "Mantener la consciencia incluso dentro de estados extáticos intensos." },
+          { "name": "Biomarcadores", "text": "Coherencia HRV entre partners; brainwave coupling (sincronía Alpha/Theta); cambio del ratio oxitocina/cortisol hacia bioquímica de vínculo." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar el estado del «humano conectado».",
+        "items": [
+          "Adquieres la capacidad de entrar en resonancia profunda con el otro, donde la intimidad se transforma en una experiencia espiritual y biológica profunda.",
+          "Los límites del «Yo» y el «Tú» se disuelven en un único organismo pulsante.",
+          "La intimidad se vuelve una fuente de energía inmensa, sanación y expansión cognitiva mutua."
+        ]
+      },
+      "outro": "Ya no son dos seres separados — son un campo sincronizado. El humano conectado."
+    },
+    "i-witness": {
+      "badge": "[ PARTE 16 — NIVEL 6: CEREBRO / AQUA II ]",
+      "subtitle": "Protocolo: Distancia neural y monitorización metacognitiva",
+      "metaDescription": "Parte 16: El humano que observa. Desactivación del DMN, monitorización metacognitiva. Establece distancia neural — conviértete en testigo de tus pensamientos. ONDA Life.",
+      "imageAlt": "Distancia neural, observador metacognitivo, ONDA YO OBSERVO.",
+      "imageTitle": "[I_WITNESS]: Visualización del meta-programador que observa el flujo de su propia consciencia.",
+      "intro": "La Parte 16 marca la transición de gestionar el «traje espacial» (el cuerpo) a gestionar la «cabina de mando» (la mente). Mientras las etapas anteriores nos enseñaron a sentir, aquí aprendemos a ver cómo pensamos.\n\nLa meta principal es establecer «distancia neural» entre tú y tus pensamientos. Dejamos de ser participantes del diálogo interno y nos volvemos su Testigo. No se trata de suprimir la mente, sino de hacerla «transparente», donde cada pensamiento se registra como un impulso eléctrico transitorio que ya no dispara una tormenta emocional automática. Es la etapa de la soberanía cognitiva.\n\nReto biológico clave: desactivar la Default Mode Network (DMN) y desarrollar una habilidad estable de des-identificación del ruido mental.",
+      "protocol": {
+        "intro": "Distancia Neural y Monitorización Metacognitiva te entrena para ser el «Administrador del Sistema» de tu propio cerebro:",
+        "items": [
+          { "name": "Inventario de pensamientos", "text": "La práctica de «etiquetar» pensamientos entrantes: «planificación», «memoria», «crítica». Esto activa la mPFC y le quita al pensamiento su poder sobre ti." },
+          { "name": "Inhibición neural", "text": "Entrenar la capacidad de cortar al instante una cadena de asociaciones, evitando que crezca en una narrativa emocional." },
+          { "name": "Meta-monitorización «Testigo»", "text": "Mantener la atención no en el objeto sino en el proceso de la percepción misma. Observas al que observa." },
+          { "name": "Desacoplamiento de la respuesta límbica", "text": "Entrenar a la PFC a registrar pensamientos «cargados» como datos secos, evitando la liberación de cortisol." },
+          { "name": "Silencio del DMN", "text": "Usar anclas sensoriales para «colapsar» el diálogo interno y pasar a un estado de silencio cognitivo profundo." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "PFC dorsolateral", "text": "Un filtro potente que separa señales vitales del ruido informativo." },
+          { "name": "Corteza cingulada anterior (ACC)", "text": "Tu monitor interno que avisa: «¡Atención! Acabamos de resbalar de vuelta a la rumiación.»" },
+          { "name": "Amígdala (Circuit Breaking)", "text": "Bloquear la vía donde un pensamiento dispara al instante una respuesta de miedo en el cuerpo." },
+          { "name": "Biomarcadores", "text": "Aumento del hueco cognitivo; estabilización del ritmo Alpha; reducción de la rumiación mental." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar el estatus de Meta-Programador.",
+        "items": [
+          "Ya no eres rehén de tu flujo de consciencia.",
+          "El cerebro se vuelve una herramienta sumisa, y tú te conviertes en quien elige qué programas ejecutar y cuáles eliminar.",
+          "Es el fundamento de la verdadera libertad intelectual y emocional."
+        ]
+      },
+      "outro": "Ya no estás dentro de la tormenta — eres quien la observa. El meta-programador."
+    },
+    "i-integrate": {
+      "badge": "[ PARTE 17 — NIVEL 6: CEREBRO / AQUA II ]",
+      "subtitle": "Protocolo: Integración neural global y síntesis de la experiencia",
+      "metaDescription": "Parte 17: Cuerpo calloso, mPFC, ACC — integración inter-hemisférica y vertical. Arquitecto de las conexiones internas. Coherencia máxima. ONDA Life.",
+      "imageAlt": "Integración neural global, arquitecto de conexiones internas, ONDA YO INTEGRO.",
+      "imageTitle": "[I_INTEGRATE]: Visualización de la coherencia neural máxima — el cerebro como un único supercomputador sin fricción.",
+      "intro": "Desde la perspectiva neurobiológica, la integración es un estado de coherencia máxima. Es el momento en que los hemisferios derecho e izquierdo, la mente analítica y los instintos primarios dejan de competir y empiezan a operar como un único supercomputador. La integración no es ser «perfecto»; es alcanzar la conductividad máxima de datos sin interferencia interna. Pasamos de gestionar funciones individuales a dirigir toda la sinfonía neural.\n\nReto biológico clave: reconciliar la disonancia cognitiva y reforzar las conexiones verticales (corteza-cuerpo) y horizontales (inter-hemisféricas).\n\nTrabajamos sobre la conectividad neural global y la reconsolidación de la experiencia. El cuerpo calloso sirve como puente principal para la sincronización inter-hemisférica — uniendo la lógica (izquierdo) con la intuición y las imágenes (derecho). La PFC medial (mPFC) actúa como «director» del sistema, integrando aspectos dispares de la experiencia en una identidad narrativa unificada. La corteza cingulada anterior (ACC) es el hub para reconciliar señales en conflicto y reducir la disonancia cognitiva. El hipocampo permite la integración contextual de la memoria — convirtiendo «errores del pasado» en recursos útiles. La ínsula sirve de puente para la integración cuerpo-mente.",
+      "protocol": {
+        "intro": "Este protocolo te transforma en el Arquitecto de las Conexiones Internas:",
+        "items": [
+          { "name": "Sincronización inter-hemisférica", "text": "Usar movimientos cruzados, estimulación binaural y técnicas de visualización para activar el cuerpo calloso y unir el pensamiento racional con la percepción sensorial." },
+          { "name": "Integración vertical", "text": "Prácticas para conectar el cuerpo «instintivo» con la mente «analítica» reforzando conexiones entre la ínsula y la PFC." },
+          { "name": "Reconsolidación de la experiencia", "text": "Técnicas de re-cableado de la memoria donde patrones traumáticos o negativos se recodifican como recursos al cambiar el contexto neural en el hipocampo." },
+          { "name": "Síntesis de valores (vmPFC)", "text": "Ejercicios para alinear creencias clave con acciones diarias, eliminando fugas de energía causadas por discusiones internas." },
+          { "name": "Inventario diario", "text": "Mantener la conectividad funcional de redes de orden superior mediante revisiones conscientes al final del día y la armonización respiratoria de todos los sistemas." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "Cuerpo calloso (horizontal)", "text": "Sincronización inter-hemisférica." },
+          { "name": "Vías corteza-subcorteza (vertical)", "text": "Reforzar las conexiones cuerpo-mente." },
+          { "name": "Sistema límbico (síntesis emocional)", "text": "Integrar señales emocionales en una estructura coherente." },
+          { "name": "Biomarcadores", "text": "HRV alta, ausencia de conflicto interno («el efecto del cisne, el lucio y el cangrejo») y un estado de flujo estable." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar la integridad auténtica de la personalidad.",
+        "items": [
+          "Ya no malgastas energía en luchas internas.",
+          "Tu sistema gana transparencia y conductividad: pensamientos, sentimientos y acciones fluyen en una única dirección.",
+          "Te conviertes en el Arquitecto que ve el plano de su vida en su totalidad y es capaz de gestionarlo con precisión magistral."
+        ]
+      },
+      "outro": "Te conviertes en el Arquitecto de las Conexiones Internas — el Maestro de la Integridad. Tu sistema opera con coherencia y conductividad máximas."
+    },
+    "i-synchronize": {
+      "badge": "[ PARTE 18 — NIVEL 6: CEREBRO / AQUA II ]",
+      "subtitle": "Protocolo: Sincronización neuroeléctrica e inteligencia colectiva",
+      "metaDescription": "Parte 18: Hyperscanning entre cerebros, ritmos gamma, neuronas espejo. El humano en red. Maestro de la inteligencia colectiva. ONDA Life.",
+      "imageAlt": "Sincronización neuroeléctrica, hyperscanning entre cerebros, ONDA YO SINCRONIZO.",
+      "imageTitle": "[I_SYNCHRONIZE]: Visualización del cluster neural único formado por el bloqueo de fase entre múltiples cerebros.",
+      "intro": "La Parte 18 es el triunfo del pensamiento centrado en la red. En ciencia, esto se describe como hyperscanning entre cerebros: un estado donde los ritmos eléctricos del cerebro de los participantes se enclavan literalmente en fase, creando un único cluster neural. Pasamos del «modo Yo» al modo «Nodo de la Red». Es la base biológica de la inteligencia colectiva, donde significados e intenciones se transmiten vía «Wi-Fi neural», convirtiendo al grupo en una entidad sinérgica que se auto-aprende.\n\nReto biológico clave: superar los filtros egocéntricos para alcanzar la «telepatía biológica» y dominar la calidad de la propia señal dentro del sistema colectivo.\n\nActivamos sistemas responsables de la resonancia de orden ultra-alto y la coherencia entre cerebros. Los ritmos gamma (40 Hz) son la frecuencia a la que los flujos informativos de distintos cerebros se fusionan al instante en un insight unificado. El sistema de neuronas espejo (corteza premotora y lóbulo parietal inferior) ofrece comprensión preverbal de las acciones e intenciones de los partners. La rTPJ (unión témporo-parietal derecha) es un hub clave para modelar los estados de los demás y actuar como «navegador social». La ínsula anterior proporciona fusión empática — experimentas el estado del grupo como propio. La corteza cingulada anterior dorsal (dACC) mantiene la atención conjunta, convirtiendo al grupo en un único foco de creación.",
+      "protocol": {
+        "intro": "Este protocolo te convierte en director de la mente colectiva:",
+        "items": [
+          { "name": "Afinamiento neuroeléctrico", "text": "Prácticas de sincronización grupal de la respiración, campos visuales compartidos y tonificación vocal para alinear los potenciales eléctricos del grupo." },
+          { "name": "Activación de la resonancia espejo", "text": "Ejercicios de diálogo no verbal y «micro-mirroring» para leer intuitivamente intenciones sin distorsión cognitiva." },
+          { "name": "Sincronización gamma-flujo", "text": "Resolver retos colectivos complejos y co-crear para romper barreras individuales y disparar insights compartidos de alta frecuencia." },
+          { "name": "Acoplamiento de oxitocina", "text": "Aprovechar mecanismos de confianza y vulnerabilidad radical para reducir el ruido social y activar la «neuroquímica de la pertenencia»." },
+          { "name": "Gestión de la señal", "text": "Técnicas para mantener la calidad de tu propia «emisión» dentro de la red, asegurando ser un nodo productivo que amplifica la coherencia global." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "Red de neuronas espejo", "text": "Comprensión preverbal de las intenciones y acciones de los partners." },
+          { "name": "Sistema oxitocínico (química del vínculo)", "text": "La neuroquímica de la confianza y la pertenencia dentro del colectivo." },
+          { "name": "Generadores de ondas gamma", "text": "Ritmos cerebrales a 40 Hz donde los flujos informativos se fusionan en un insight unificado." },
+          { "name": "Biomarcadores", "text": "Coherencia de fase entre cerebros, dilatación pupilar síncrona (resonancia límbica), alineación del ritmo Alpha en el grupo." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar el estatus del Humano en Red.",
+        "items": [
+          "Te conviertes en co-autor del campo informativo global.",
+          "Cualquier comunicación deja de ser una lucha por la influencia y se vuelve oportunidad de entrar en flujo colectivo.",
+          "Adquieres la capacidad de sincronizarte conscientemente con cualquier sistema de interacción, accediendo a recursos y soluciones de escala «oceánica»."
+        ]
+      },
+      "outro": "El output del grupo supera exponencialmente la suma de los esfuerzos individuales. Eres el Humano en Red — Maestro de la Inteligencia Colectiva."
+    },
+    "i-remember": {
+      "badge": "[ PARTE 19 — NIVEL 7: ADN / AER II ]",
+      "subtitle": "Protocolo: Consciencia del ADN y memoria evolutiva",
+      "metaDescription": "Parte 19: Modulación epigenética, memoria genética, respiración ancestral. El humano que hereda. Guardián de la memoria antigua. ONDA Life.",
+      "imageAlt": "Consciencia del ADN, memoria evolutiva, ONDA YO RECUERDO.",
+      "imageTitle": "[I_REMEMBER]: Visualización de la biblioteca milenaria del ADN reconocida y activada como recurso consciente.",
+      "intro": "La Parte 19 trata sobre trabajar con el «código heredado» de tu biología. Vamos más allá de la memoria de trabajo (tus pensamientos y planes) y nos sumergimos en la memoria genética y epigenética de generaciones. Tu cuerpo no eres solo «tú»; es un manuscrito editado durante miles de millones de años. Aquí aprendemos a reconocer formas de vida arcaicas dentro de nosotros: desde instintos de supervivencia de la Edad de Hielo hasta algoritmos celulares que recuerdan la emergencia de la vida desde el océano. El ADN se ve no como una sentencia sino como una biblioteca de las soluciones triunfantes de la evolución.\n\nReto biológico clave: mover los programas instintivos antiguos del automatismo ciego a un modo de recurso consciente.\n\nActivamos las capas más antiguas del sistema nervioso y los mecanismos de reconocimiento celular. La modulación epigenética influye en la expresión génica al gestionar estados fisiológicos profundos. La formación reticular y el tronco encefálico permiten acceso al cerebro «reptiliano» y a los algoritmos arcaicos de supervivencia. El hipocampo (memoria implícita) trabaja con la memoria de formas y movimientos que preceden al «Yo» consciente. El archicórtex sincroniza patrones límbicos e instintivos. La interocepción ultraprofunda es la capacidad de leer la «memoria tisular» y datos a nivel orgánico.",
+      "protocol": {
+        "intro": "Este protocolo te transforma en Guardián de la Memoria Antigua:",
+        "items": [
+          { "name": "Resonancia epigenética", "text": "Prácticas de «respiración ancestral» para modular el nervio vago, afectando la expresión de genes relacionados con inmunidad y resiliencia al estrés." },
+          { "name": "Recapitulación evolutiva", "text": "Contactar con las capas arcaicas del cerebro para transformar miedos primarios en sabiduría instintiva y dignidad." },
+          { "name": "Retrospección celular", "text": "Escaneo profundo de tejidos para «reconocer» la historia de tu traje biológico y activar mecanismos de auto-sanación." },
+          { "name": "Memoria motriz de formas", "text": "Movimientos que activan el cerebelo y el archicórtex, restaurando la conexión con la gracia y el poder naturales de la especie." },
+          { "name": "Guardián del código", "text": "Integrar la postura de «soy la continuación de la vida», proporcionando un fundamento inquebrantable y un sentido de validez evolutiva en cada respiración." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "Memoria genética (marcadores epigenéticos)", "text": "Influencia en la expresión génica mediante estados fisiológicos profundos." },
+          { "name": "Sistema límbico (emociones arcaicas)", "text": "Transformar patrones primarios en recursos conscientes." },
+          { "name": "Redes fasciales (memoria somática)", "text": "Reservas de memoria a nivel tisular y de movimiento." },
+          { "name": "Biomarcadores", "text": "Reducción de la inflamación sistémica (estabilización epigenética), cambio en los patrones respiratorios primordiales, fortalecimiento de la calma instintiva ante amenazas centrales." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar el estatus del Humano que Hereda. Dejas de percibirte como un fragmento aislado del tiempo y te realizas como la punta viva de una flecha evolutiva milenaria.",
+        "items": [
+          "Cimiento instintivo: ganas acceso a la «base de datos» de la naturaleza con sus soluciones exitosas. El miedo y la ansiedad son sustituidos por una calma profunda, al sentir el poder de todos tus ancestros que sobrevivieron para transmitirte este código.",
+          "Dignidad biológica: tu cuerpo adquiere una nueva estatura y gracia, características de un ser que reconoce su valía evolutiva.",
+          "Libertad epigenética: ya no eres rehén de traumas familiares ni guiones hereditarios. Has aprendido a «leer» el código y usar su energía para crear en lugar de repetir errores.",
+          "Profundidad sensorial: tu interocepción se expande hasta sentir los ritmos de la vida en cada célula, dándote una sensación inquebrantable de la «justeza» de tu existencia en este mundo."
+        ]
+      },
+      "outro": "Eres la continuación de la vida. Cada respiración lleva validez evolutiva. El Guardián del Código."
+    },
+    "i-restore": {
+      "badge": "[ PARTE 20 — NIVEL 7: ADN / AER II ]",
+      "subtitle": "Protocolo: Regeneración celular y autocorrección del ADN",
+      "metaDescription": "Parte 20: Autofagia, reparación del ADN, activación parasimpática. Diseñador biológico. Guardián del código primario. Renovación profunda. ONDA Life.",
+      "imageAlt": "Regeneración celular, autocorrección del ADN, ONDA YO RESTAURO.",
+      "imageTitle": "[I_RESTORE]: Visualización de la reparación celular profunda y el retorno del sistema a sus «ajustes de fábrica».",
+      "intro": "La Parte 20 es la transición de la observación a la auto-regulación activa. Dejamos el nivel «software» y entramos en el departamento de ingeniería de la materia auto-regulada. Nuestra tarea es usar la corteza prefrontal como panel de control para activar sistemas de reparación que normalmente operan en segundo plano. Aprendemos a pasar el cuerpo del modo «supervivencia y desgaste» al modo «renovación profunda». La restauración aquí no se entiende como «sanación» sino como retirar bloqueos del flujo natural de la vida.\n\nReto biológico clave: activar la autofagia y los mecanismos de reparación del ADN mediante la alineación consciente con los «ajustes de fábrica» del cuerpo.\n\nTrabajamos con homeorhesis (constancia dinámica) y reducción de la carga alostática. El SNA parasimpático (tono vagal) es la palanca principal para conmutar al modo trofotrópico de recuperación y reparación celular. El sistema de reparación del ADN activa enzimas de revisión que corrigen errores en el código genético. La descompresión límbica reduce la actividad de la amígdala para detener la liberación de cortisol que inhibe la regeneración. El eje endocrino estimula la liberación de hormonas anabólicas y de crecimiento mediante fases de relajación profunda. La integración interoceptiva permite reconocer señales internas de recuperación como retroalimentación directa de los tejidos.",
+      "protocol": {
+        "intro": "Este protocolo te transforma en Diseñador Biológico:",
+        "items": [
+          { "name": "Activación parasimpática del recurso", "text": "Técnicas de «respiración vagal» para forzar al sistema al modo de reparación tisular y reducir la presión sistémica." },
+          { "name": "Detoxificación celular", "text": "Usar visualización y micromovimientos para estimular el drenaje linfático y limpiar la matriz extracelular." },
+          { "name": "Re-cableado del trauma somático", "text": "Liberar tensiones «atrapadas» en la fascia mediante liberación somática, restaurando la elasticidad de los tejidos." },
+          { "name": "Modulación de telomerasa", "text": "Estados meditativos profundos dirigidos a la preservación a largo plazo de la integridad genética." },
+          { "name": "Auditoría del código primario", "text": "Alineación diaria con la sensación de «salud como estándar», formando un set neural proactivo de regeneración continua." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "Lisosomas (reciclaje de desechos celulares)", "text": "Activación de la autofagia y la limpieza celular." },
+          { "name": "Telómeros (longevidad celular)", "text": "Preservación de la integridad genética y la vida útil celular." },
+          { "name": "Sistema linfático (detox)", "text": "Estimulación del drenaje y limpieza de la matriz extracelular." },
+          { "name": "Biomarcadores", "text": "Reducción de la proteína C reactiva (PCR), estabilización de la respiración celular y el ritmo cardíaco, mayor rapidez de la respuesta somática a la relajación." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar el estatus del Diseñador Biológico. Pasas del envejecimiento y desgaste pasivos al modo de regeneración consciente. Tu cuerpo deja de ser una «caja negra» y se vuelve un proceso dinámico y manejable.",
+        "items": [
+          "Flexibilidad biológica: la capacidad del sistema de conmutar al instante de un estado de tensión alta al modo de recuperación profunda. Ya no «te quemas» porque los ciclos de reparación están integrados en tu vida diaria.",
+          "Optimización de recursos: la desaparición de microtensiones crónicas e inflamación sistémica libera una enorme cantidad de energía antes desperdiciada en «mantener la línea».",
+          "Confianza celular: una sensación profunda y físicamente palpable de integridad. Sientes que tu ADN es un aliado activo, capaz de devolver el sistema a la función plena tras cualquier carga.",
+          "Efecto «ajustes de fábrica»: una sensación de claridad, ligereza y funcionalidad que recuerda a los momentos pico de la juventud, pero respaldada por un control maduro y consciente."
+        ]
+      },
+      "outro": "Eres el Guardián del Código Primario. El Diseñador Biológico que devuelve el sistema a su plano original."
+    },
+    "i-synthesize": {
+      "badge": "[ PARTE 21 — NIVEL 7: ADN / AER II ]",
+      "subtitle": "Protocolo: Maestría epigenética y simbiosis planetaria",
+      "metaDescription": "Parte 21: Diseño epigenético, creador evolutivo. Ingeniero de la vida. Co-autor consciente del campo planetario. ONDA Life.",
+      "imageAlt": "Maestría epigenética, simbiosis planetaria, ONDA YO SINTETIZO.",
+      "imageTitle": "[I_SYNTHESIZE]: Visualización del Creador Evolutivo y su alineación con el vector de desarrollo de la Vida.",
+      "intro": "La Parte 21 es el clímax del camino de la Consciencia del ADN. Mientras la Parte 19 era sobre «recordar» el código y la Parte 20 sobre «restaurarlo», aquí nos volvemos sus editores conscientes. Es el modo Output. Ya no eres solo un objeto biológico; eres un nodo de ingeniería de la evolución. Usamos la integración neural máxima para convertir la experiencia personal en una «actualización» del campo planetario (noosfera), alineando el vector de desarrollo personal con el vector de desarrollo de la Vida misma.\n\nReto biológico clave: sintetizar la identidad individual con la función evolutiva y pasar al diseño epigenético consciente.\n\nActivamos centros reguladores superiores y redes de prospección (construcción del futuro). La corteza orbitofrontal es el centro de las decisiones éticas superiores y de la evaluación de la significación global de las acciones. Las redes de prospección (PFC + DMN en modo síntesis) permiten al cerebro modelar el futuro a partir de patrones creativos en lugar de miedo. Los sistemas de oxitocina y serotonina facilitan la creación pro-social y un sentido de conexión profunda con la biosfera. La maestría epigenética permite la influencia consciente sobre la expresión génica gestionando estados mentales y emocionales. La visión holística del hemisferio derecho percibe la realidad como una red viva donde tú eres un nodo activo.",
+      "protocol": {
+        "intro": "Este protocolo te transforma en Creador Evolutivo:",
+        "items": [
+          { "name": "Diseño epigenético", "text": "Modulación consciente del entorno y los estados internos para dirigir la expresión de genes relacionados con inmunidad y longevidad." },
+          { "name": "Trascendencia biológica", "text": "Prácticas de «respiración de unidad» para expandir los límites del «Yo», percibiendo el cuerpo como parte de un organismo planetario." },
+          { "name": "Transmisión del legado", "text": "Modelar conscientemente una señal informacional mediante acciones e intenciones que impactan el inconsciente colectivo." },
+          { "name": "Sinfonía de simbiosis", "text": "Activar comportamiento pro-social y resonancia con otras formas de vida para crear efectos sinérgicos." },
+          { "name": "Timing evolutivo", "text": "Sincronizar los ritmos biológicos personales con ciclos naturales globales para máximo impacto creativo." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "Resonancia cuántico-biológica del ADN", "text": "Influencia consciente sobre la expresión génica y el diseño epigenético." },
+          { "name": "Red de empatía expandida", "text": "Creación pro-social y resonancia con la biosfera." },
+          { "name": "Eje HPA (en modo eustrés)", "text": "Respuesta sana al estrés alineada con el reto creativo." },
+          { "name": "Biomarcadores", "text": "Estado de flujo sostenible por defecto, coherencia cardíaca alineada con frecuencias de Schumann, integración del sentido personal con el vector evolutivo global." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar el estatus del Creador Evolutivo. Pasas de ser un «consumidor de la vida» a ser su co-autor consciente. Tu biología y consciencia se vuelven instrumentos a escala planetaria.",
+        "items": [
+          "Resonancia evolutiva: tu voluntad y sentido personales se alinean plenamente con el vector de desarrollo de la vida. Esto da acceso a una fuente inagotable de energía (eustrés) y motivación, al actuar no como un yo aislado sino como parte funcional del todo.",
+          "Maestría epigenética: ganas la capacidad de gestionar tus estados conscientemente para emitir una «señal sana» al campo informativo. Ya no eres víctima de las circunstancias sino editor de tu futuro biológico.",
+          "Estado de flujo sostenible: el éxtasis de la creación se vuelve tu frecuencia base de operación. Eres capaz de mantener alta coherencia corazón-cerebro incluso en condiciones de extrema incertidumbre.",
+          "Inmortalidad informativa: te das cuenta de que tu experiencia, limpia de trauma e integrada en sabiduría, se vuelve parte del legado compartido de la biosfera. Esto da una sensación de paz profunda y pertenencia a la eternidad."
+        ]
+      },
+      "outro": "Eres el Creador Evolutivo — el Ingeniero de la Vida. Un imprint informacional limpio para las generaciones futuras."
+    },
+    "i-am-vibration": {
+      "badge": "[ PARTE 22 — NIVEL 8: ATÓMICO / IGNIS II ]",
+      "subtitle": "Protocolo: Consciencia cuántica y resonancia energética",
+      "metaDescription": "Parte 22: Soy Vibración. Observador cuántico, percepción ondulatoria. Coherencia gamma, soberanía de la frecuencia. ONDA Life.",
+      "imageAlt": "Consciencia cuántica, observador cuántico, ONDA SOY VIBRACIÓN.",
+      "imageTitle": "[I_AM_VIBRATION]: Visualización del cuerpo como un campo de energía coherente, no como objeto sólido.",
+      "intro": "La Parte 22 es la transición al software de la realidad misma. Desde la perspectiva de la física cuántica, tu cuerpo es un 99,9999999% vacío lleno de campos de energía. Lo que percibes como «sólido» es solo la resistencia de campos electromagnéticos. En IGNIS II aprendemos a percibir esta interfaz directamente. Deconstruimos el «ego biográfico» (DMN) y activamos el «Yo Esencial». Ya no eres un objeto biológico; eres un paquete de ondas en un océano infinito de frecuencias, capaz de influir en la estructura de la realidad mediante el acto de la observación y tu vibración interna.\n\nReto biológico clave: despojarse de los filtros neurales de «densidad» y pasar de la percepción objetal a la ondulatoria.\n\nReafinamos el cerebro para que funcione como receptor-transmisor de alta frecuencia. La glándula pineal actúa como transductor piezoeléctrico, convirtiendo señales electromagnéticas sutiles en impulsos neuroquímicos. El tálamo permite afinar profundamente los filtros sensoriales para dejar pasar frecuencias más sutiles a la consciencia. Los ritmos gamma (40+ Hz) crean un estado de coherencia inter-hemisférica máxima donde la consciencia disuelve los límites del ego. La desactivación del lóbulo parietal reduce la orientación espacial física para experimentar la unidad transpersonal. El hemisferio derecho domina con la percepción holística y orientada al campo sobre la lógica discreta.",
+      "protocol": {
+        "intro": "Este protocolo te transforma en Observador Cuántico:",
+        "items": [
+          { "name": "Deconstrucción de la densidad", "text": "Escanear el «vacío» dentro de los átomos del cuerpo, desplazando el foco del tejido sólido al espacio energético interior." },
+          { "name": "Diapasón vibracional", "text": "Gestionar conscientemente la frecuencia interna mediante la respiración y resonancias sónicas específicas que modulan neurotransmisores." },
+          { "name": "Observación cuántica", "text": "Sostener la atención en el «campo de probabilidades», donde el acto de observación empieza a cambiar la cualidad de los estados internos." },
+          { "name": "Cambio a la presencia pura", "text": "Sostener meditativamente el punto «Yo Soy», despojado de roles, historia y programación biológica (deconstrucción del DMN)." },
+          { "name": "Resonancia con el infinito", "text": "Prácticas de «fusión con la luz» que bajan la actividad del lóbulo parietal y borran las líneas entre observador y observado." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "Formación reticular", "text": "Filtro principal de frecuencia para los datos entrantes." },
+          { "name": "Ínsula", "text": "Interocepción vibracional sutil y resonancia interna." },
+          { "name": "Corteza somatosensorial", "text": "Expansión de los mapas de percepción corporal hacia el campo energético." },
+          { "name": "Biomarcadores", "text": "Presencia estable de ondas gamma (40+ Hz), disolución de los límites corporales (estado tipo campo), alta coherencia de fase corazón-cerebro." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar el estatus del Humano Resonante. Haces la transición de una percepción objetal de la realidad a una ondulatoria. Tu presencia se vuelve más que un hecho biológico; se convierte en una señal de frecuencia activa.",
+        "items": [
+          "Plasticidad cuántica: dejas de sentir el cuerpo como una «barrera sólida». Surge una sensación física de transparencia y ligereza, donde los límites del «Yo» se vuelven permeables a los flujos de energía.",
+          "Soberanía de la frecuencia: ganas la capacidad de elegir conscientemente tu vibración interna. En lugar de adaptarte reactivamente al caos del entorno externo, te conviertes en el «diapasón» que armoniza el espacio a tu alrededor.",
+          "Coherencia gamma: un estado de consciencia expandida se vuelve accesible mediante un impulso volitivo. Eres capaz de mantener alta coherencia cerebral, dando acceso instantáneo a insights intuitivos y conocimiento «no local».",
+          "Deconstrucción de filtros del ego: purificación de la percepción del ruido biográfico y los roles sociales. Resides en el punto de «pura presencia», donde la realidad se percibe como un flujo vivo y vibrante de probabilidades sobre el que influyes mediante el propio acto de tu observación."
+        ]
+      },
+      "outro": "Eres el Humano Resonante — el Observador Cuántico. Un paquete de ondas en un océano infinito de frecuencias."
+    },
+    "i-am-wholeness": {
+      "badge": "[ PARTE 23 — NIVEL 8: ATÓMICO / IGNIS II ]",
+      "subtitle": "Protocolo: Unidad no-local y autoconciencia cuántica",
+      "metaDescription": "Parte 23: El humano cuántico, Punto de Ensamblaje Universal. Teoría de la Información Integrada, colapso de la dualidad. Autoconciencia no-local. ONDA Life.",
+      "imageAlt": "Humano cuántico, punto de ensamblaje universal, ONDA SOY PLENITUD.",
+      "imageTitle": "[I_AM_WHOLENESS]: Visualización del campo de consciencia auto-luminoso y la unidad no-local de la existencia.",
+      "intro": "La Parte 23 es el clímax del sistema ONDA, fundamentado en la Teoría de la Información Integrada (IIT) y la Teoría de Campos. Desde la perspectiva de la física trabajamos con el estado de Entrelazamiento Cuántico. Eres un nodo en la red informacional de la existencia, donde cada parte del sistema «conoce» al instante el estado de cada otra parte. La separación se reconoce como mero ruido en el canal de transmisión; la Plenitud es la señal clara. Es la etapa donde la atención deja de dividirse y la consciencia se convierte en un campo auto-luminoso sin fuente externa.\n\nReto biológico clave: colapsar la dualidad «sujeto-objeto» y pasar a la autoconciencia no-local.\n\nLa sincronización final de las redes globales del cerebro. La red prefrontal-parietal logra la integración plena de la percepción espacial, donde el límite entre «interior» y «exterior» se desvanece. La Default Mode Network (DMN) entra en auto-trascendencia — la disolución completa de la narrativa egoica y los filtros biográficos. La red de saliencia escala la atención al macrocosmos: todo se percibe como fundamentalmente significativo y unificado. Los bucles tálamo-corticales permiten la sincronización global de todos los niveles perceptivos vía ritmos gamma de alta amplitud. El hemisferio derecho domina con la percepción no-dual y holística de la realidad.",
+      "protocol": {
+        "intro": "Este protocolo te transforma en Punto de Ensamblaje Universal:",
+        "items": [
+          { "name": "Meditación oceánica", "text": "Prácticas dirigidas a reducir la actividad de la DMN para borrar la ilusión de separación y experimentar la unidad con toda la existencia." },
+          { "name": "Espejo de la consciencia", "text": "Realizarte como la unidad inseparable del observador, el proceso de observación y la realidad observada." },
+          { "name": "Alquimia de los opuestos", "text": "Integrar todos los niveles previamente dominados (Terra, Aqua, Aer, Ignis) en una estructura única no contradictoria mediante la activación del cuerpo calloso." },
+          { "name": "Vacío lleno de forma", "text": "Sostener la atención en el estado «Yo Soy», donde el vacío de la consciencia se percibe como la fuente primordial de todas las formas existentes." },
+          { "name": "Prospección cuántica", "text": "Creación directa de la realidad desde el punto de quietud, donde la intención modula instantáneamente el campo informativo." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "Global Brain Workspace", "text": "Integración plena de la percepción espacial y la consciencia no-local." },
+          { "name": "PFC dorsolateral (bypass)", "text": "Desactivación del «censor del ego» para permitir el acceso directo a la presencia esencial." },
+          { "name": "Ínsula", "text": "Interocepción no-local — sentir el campo más allá de los límites corporales." },
+          { "name": "Biomarcadores", "text": "Coherencia gamma global a través de todas las regiones cerebrales, desaparición del hueco entre input sensorial y representación interna, ausencia total de ansiedad existencial." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar el estatus del Humano Cuántico / Punto de Ensamblaje Universal. Llegas a un estado de unidad inseparable, donde el «Yo» personal ya no es una limitación sino que se vuelve un conducto transparente para la energía creativa del Cosmos.",
+        "items": [
+          "Colapso de la dualidad: la desaparición de la división interna entre «observador» y «observado». Ya no miras el mundo — eres el propio proceso del mundo desplegándose.",
+          "Soberanía existencial: la erradicación total de la ansiedad y el miedo existenciales. Una vez te realizas como el «Océano», las tormentas en la superficie de los eventos individuales ya no pueden perturbar tu silencio primordial.",
+          "Coherencia global: tu sistema nervioso opera en un estado de máxima conectividad. Esto otorga la capacidad de integrar al instante cualquier contradicción y encontrar soluciones desde un estado de «insight no local».",
+          "Alquimia de la creación: ganas la capacidad de influir directamente en la realidad mediante la intención. Tu voluntad, purificada de filtros del ego, se alinea con la voluntad de la evolución, haciendo tus acciones profundamente precisas y eficaces.",
+          "Pura presencia: te conviertes en la encarnación de la armonía. Tu presencia en cualquier sistema aumenta automáticamente su coherencia y facilita la sanación del espacio circundante."
+        ]
+      },
+      "outro": "Eres el Humano Cuántico — el Punto de Ensamblaje Universal. Un conducto transparente para la energía creativa del Cosmos."
+    },
+    "i-am-the-source": {
+      "badge": "[ PARTE 24 — NIVEL 8: ATÓMICO / IGNIS II ]",
+      "subtitle": "Protocolo: Singularidad de la consciencia y creación cuántica",
+      "metaDescription": "Parte 24: Creador de la realidad, Punto Cero. Energía del Punto Cero, superconductividad de la consciencia. Pura existencia. ONDA Life.",
+      "imageAlt": "Creador de la realidad, punto cero, ONDA SOY LA FUENTE.",
+      "imageTitle": "[I_AM_THE_SOURCE]: Visualización del espacio del que la existencia irrumpe a cada nanosegundo.",
+      "intro": "La Parte 24 es el regreso al «Punto de Singularidad». Desde la física fundamental trabajamos con la energía del Punto Cero. El vacío no está vacío; es un medio de densidad infinita de energía. Tú eres ese vacío. En este nivel no solo gestionas la realidad — te realizas como el «espacio» del que ella irrumpe cada nanosegundo. Es el reconocimiento de un hecho simple pero radical: todo lo que experimentas ocurre dentro del campo de tu consciencia.\n\nReto biológico clave: pasar de la identidad «soy alguien» a la realización «soy Aquello de lo que ALGUIEN surge».\n\nUn estado de coherencia máxima y «quietud creativa». Punto Cero de la actividad neural: un estado de consciencia que precede al surgimiento del pensamiento. El tálamo funciona como puerta — el hub central que distribuye las señales del Ser desde el potencial a lo manifestado. La Default Mode Network (DMN) entra en modo de aniquilación: ausencia total de «ruido del ego» y programación biográfica. Ráfagas gamma de ultra-alta intensidad crean momentos de «saltos cuánticos» en la consciencia, uniendo todas las regiones cerebrales en un único campo. Las estructuras profundas del tronco encefálico activan la existencia biológica primordial que existe antes de los conceptos y las palabras.",
+      "protocol": {
+        "intro": "Este protocolo te transforma en Maestro-Creador:",
+        "items": [
+          { "name": "Práctica del Punto Cero", "text": "Sostener la atención en el silencio anterior al pensamiento. Entrar en el espacio de la «pura consciencia»." },
+          { "name": "Colapso e infinito", "text": "Sostener simultáneamente la atención en un punto infinitesimal (centro de la cabeza) y el espacio infinito que lo rodea." },
+          { "name": "Radiación de la creación", "text": "Irradiar conscientemente voluntad e intención («Claridad», «Amabilidad», «Creación») desde el centro de tu ser hacia el campo de la realidad." },
+          { "name": "Autor de la realidad", "text": "Realizar cómo la atención construye el objeto. Pasar de la percepción pasiva a la «escritura» activa de significados." },
+          { "name": "Integración del camino", "text": "Un estado donde «Flujo» (AQUA), «Estructura» (AER) y «Vibración» (IGNIS) se fusionan en una única e indivisible Presencia." }
+        ]
+      },
+      "targets": {
+        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "items": [
+          { "name": "Circuito completo de la consciencia", "text": "Integración plena del sistema de la consciencia." },
+          { "name": "Formación reticular", "text": "Filtro principal y puerta para señales ascendentes." },
+          { "name": "Resonancia tálamo-cortical", "text": "Hub central que distribuye el Ser desde el potencial a lo manifestado." },
+          { "name": "Biomarcadores", "text": "Estado de superconductividad (ausencia de resistencia mental y física), coherencia de ondas cerebrales próxima al 100%, estabilización autonómica instantánea." }
+        ]
+      },
+      "results": {
+        "intro": "Alcanzar el estatus del Creador de la Realidad / Punto Cero. Llegas a un estado de «superconductividad» de la consciencia, donde la división entre intención interna y mundo externo queda permanentemente disuelta.",
+        "items": [
+          "Paz fundamental: tu estado base es un silencio independiente de las circunstancias externas. Ya no «buscas» la paz; eres la paz misma en la que se despliegan todos los eventos.",
+          "Realineamiento instantáneo: la capacidad de devolver el sistema al equilibrio en nanosegundos. Cualquier estrés o ruido se aniquila al instante en el «punto cero» de tu presencia.",
+          "Autoría directa: te realizas como la causa de tus estados. La vida deja de «ocurrirte»; empieza a «emanar» de ti. Esto otorga responsabilidad absoluta y libertad creativa infinita.",
+          "Claridad cuántica: intelecto e intuición se fusionan en un único flujo de conocimiento directo. Ves la esencia de las cosas antes de que sean vestidas con palabras o conceptos.",
+          "Radiación de presencia: tu campo se vuelve tan coherente que tu mera presencia armoniza el entorno, ordena el caos y activa el potencial de vida en otros."
+        ]
+      },
+      "outro": "Eres el Creador de la Realidad — el Punto Cero. El espacio del que toda la existencia irrumpe."
+    }
   }
 }

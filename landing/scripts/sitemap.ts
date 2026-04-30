@@ -8,8 +8,9 @@
 import { writeFileSync, mkdirSync, statSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET } from './prerender-routes'
-import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute } from '../src/i18n'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS } from './prerender-routes'
+import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, type Lang } from '../src/i18n'
+import { readFileSync } from 'fs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
@@ -53,15 +54,29 @@ function getLastmod(route: string): string {
   return buildDate
 }
 
-// Skip non-EN /part/:slug URLs from sitemap — body content is still EN, so
-// each /:lang/part/:slug renders the same as the EN canonical. Listing them
-// would create duplicate-content signals. They'll re-enter sitemap once the
-// part body is translated and hreflang alternates are emitted.
+// Per-language part translations table. Used to:
+//   1. include /:lang/part/:slug URLs in sitemap only when that language has
+//      a translation (otherwise canonical points to EN, sitemap entry would
+//      duplicate the EN URL).
+//   2. build hreflang clusters per part with only the langs that have body.
+const localesDir = join(__dirname, '..', 'public', 'locales')
+const partTranslated: Record<string, Lang[]> = {}
+for (const slug of PART_SLUGS) {
+  partTranslated[slug] = ['en']
+  for (const lang of SUPPORTED_LANGS) {
+    if (lang === 'en') continue
+    const file = JSON.parse(readFileSync(join(localesDir, lang, 'part.json'), 'utf-8')) as { parts?: Record<string, unknown> }
+    if (file.parts && file.parts[slug]) partTranslated[slug].push(lang)
+  }
+}
+
 const allRoutes = getPrerenderRoutes()
 const routes = allRoutes.filter(r => {
   if (!LOCALIZED_PART_ROUTE_SET.has(r)) return true
   const info = parsePartRoute(r)
-  return info?.lang === 'en'
+  if (!info) return false
+  // Include EN always; non-EN only if translated.
+  return partTranslated[info.slug]?.includes(info.lang)
 })
 
 /** Pre-build hreflang alternates for each localized base path. */
@@ -98,6 +113,19 @@ for (const n of LEVEL_NUMBERS) {
   altsByLevel[n] = tags.join('\n')
 }
 
+/** Pre-build hreflang alternates for each part — only languages with translations. */
+const altsByPart: Record<string, string> = {}
+for (const slug of PART_SLUGS) {
+  const langs = partTranslated[slug]
+  if (langs.length <= 1) continue // EN-only — no alternates
+  const tags = langs.map(l => {
+    const href = `${SITE_URL}${partPathFor(slug, l)}`
+    return `    <xhtml:link rel="alternate" hreflang="${l}" href="${href}"/>`
+  })
+  tags.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${partPathFor(slug, 'en')}"/>`)
+  altsByPart[slug] = tags.join('\n')
+}
+
 const urls = routes.map((path) => {
   const loc = buildLoc(path)
   const lastmod = getLastmod(path)
@@ -113,6 +141,9 @@ const urls = routes.map((path) => {
   } else if (LOCALIZED_LEVEL_ROUTE_SET.has(path)) {
     const info = parseLevelRoute(path)
     if (info) alternates = `\n${altsByLevel[info.levelNum] ?? ''}`
+  } else if (LOCALIZED_PART_ROUTE_SET.has(path)) {
+    const info = parsePartRoute(path)
+    if (info && altsByPart[info.slug]) alternates = `\n${altsByPart[info.slug]}`
   }
   return `  <url>
     <loc>${loc}</loc>
