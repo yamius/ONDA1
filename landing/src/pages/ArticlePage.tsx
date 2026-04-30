@@ -237,6 +237,15 @@ export function ArticlePage() {
         }))
       })()
     : article?.howToSteps
+  const tNeuralSuggestion = article?.neuralSuggestion
+    ? {
+        text: tField('neuralSuggestion.text', article.neuralSuggestion.text),
+        linkText: tField('neuralSuggestion.linkText', article.neuralSuggestion.linkText),
+        link: lang === 'en' || !article.neuralSuggestion.link.startsWith('/articles/')
+          ? article.neuralSuggestion.link
+          : `/${lang}${article.neuralSuggestion.link}`,
+      }
+    : article?.neuralSuggestion
 
   const [isCompleted, setIsCompleted] = useState(false)
   const [protocolRefresh, setProtocolRefresh] = useState(0)
@@ -898,16 +907,16 @@ export function ArticlePage() {
       {/* Reactions & Comments */}
       <ArticleReactions articleSlug={article.slug} />
 
-      {article.neuralSuggestion && (
+      {tNeuralSuggestion && (
         <div className="mt-12 rounded-xl border border-purple-500/30 bg-purple-500/5 p-6">
           <p className="mb-3 font-mono text-sm text-white/70">
-            {article.neuralSuggestion.text}
+            {tNeuralSuggestion.text}
           </p>
           <Link
-            to={article.neuralSuggestion.link}
+            to={tNeuralSuggestion.link}
             className="font-mono text-sm font-semibold text-purple-400 underline decoration-purple-400/30 underline-offset-2 transition-colors hover:text-purple-300 hover:decoration-purple-300/50"
           >
-            → {article.neuralSuggestion.linkText}
+            → {tNeuralSuggestion.linkText}
           </Link>
         </div>
       )}
