@@ -558,7 +558,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   // Airbridge: fire "View Practice" once each time the intro screen opens.
   useEffect(() => {
     if (!isOpen || !practice) return;
-    trackTenjinPractice('View', t(practice.name), { surface: 'adaptive' });
+    trackTenjinPractice('View', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
   }, [isOpen, practice?.id]);
 
   useEffect(() => {
@@ -822,7 +822,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     setIsPaused(false);
     setQualityScore(0);
     setMaxQualityScore(0);
-    if (practice) trackTenjinPractice('Start', t(practice.name), { surface: 'adaptive' });
+    if (practice) trackTenjinPractice('Start', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
   };
 
   const togglePause = () => {
@@ -929,6 +929,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
           t(practice.name),
           {
             surface: 'adaptive',
+            practiceId: practice.id,
             extra: isValidForCompletion
               ? {
                   duration_seconds: practiceTime,
@@ -1007,6 +1008,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       t(practice.name),
       {
         surface: 'adaptive',
+        practiceId: practice.id,
         extra: isValidForCompletion
           ? {
               duration_seconds: practiceTime,
@@ -1068,9 +1070,16 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       return;
     }
 
-    // Airbridge: fire Stop only when user quit mid-practice (not from intro, not after natural Finish).
-    if (practiceState === 'practice' && practice) {
-      trackTenjinPractice('Stop', t(practice.name), { surface: 'adaptive' });
+    // Tenjin practice lifecycle on close:
+    //   - mid-practice (practiceState === 'practice') → Stop
+    //   - intro screen, user never started → Close
+    //   - 'complete' result screen → no-op (Finish/Stop already fired)
+    if (practice) {
+      if (practiceState === 'practice') {
+        trackTenjinPractice('Stop', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
+      } else if (practiceState !== 'complete') {
+        trackTenjinPractice('Close', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
+      }
     }
 
     if (practiceRating > 0 && practiceTime > 0 && practice) {

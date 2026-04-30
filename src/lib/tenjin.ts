@@ -132,17 +132,40 @@ export function trackTenjinEvent(
 }
 
 /**
- * Practice lifecycle events: View / Start / Stop / Finish.
+ * Practice lifecycle events: View / Close / Start / Stop / Finish.
  *
- * Tenjin event names (snake_case):
- *   - basic    → view_practice          / start_practice          / …
- *   - adaptive → view_adaptive_practice / start_adaptive_practice / …
+ *   View   → user opened the practice intro screen
+ *   Close  → user closed the intro WITHOUT pressing Start (caller is
+ *            responsible for the practiceState !== 'active' guard)
+ *   Start  → user pressed the Start button
+ *   Stop   → user exited mid-practice (practiceState was 'active')
+ *   Finish → timer ran out / practice completed naturally
+ *
+ * Tenjin doesn't accept arbitrary string params on sendEvent, so we send
+ * TWO events per call when `practiceId` is provided:
+ *
+ *   1. The generic event (`view_practice`, `start_practice`, …) — feeds
+ *      ad-network optimization signals (AppLovin Axon, Google Ads). All
+ *      installs are pooled under one event name, which is what the bid
+ *      models want.
+ *
+ *   2. A practice-specific event with the ID slug appended
+ *      (`view_practice_p1_1`, `start_practice_p2_3`, …) — feeds Tenjin
+ *      dashboard slicing. Use this in Tenjin's Live Event Tool / Data
+ *      Exporter when you want to know *which* practice the user
+ *      interacted with.
+ *
+ * Firebase Analytics receives the same event with `label` (localized
+ * practice name) and `practice_id` (stable slug) as params, so GA4
+ * already gives per-practice slicing without event-name explosion.
  */
 export function trackTenjinPractice(
-  action: 'View' | 'Start' | 'Stop' | 'Finish',
+  action: 'View' | 'Close' | 'Start' | 'Stop' | 'Finish',
   practiceName: string | undefined | null,
   opts?: {
     surface?: 'basic' | 'adaptive';
+    /** Stable slug like `p1-1` — appended to the Tenjin event name. */
+    practiceId?: string | null;
     extra?: Record<string, unknown>;
   },
 ): void {
@@ -151,8 +174,19 @@ export function trackTenjinPractice(
     const surface = opts?.surface ?? 'basic';
     const eventAction =
       surface === 'adaptive' ? `${action} Adaptive Practice` : `${action} Practice`;
-    _tenjinEvent(_toSnake(eventAction));
-    _logFirebase(eventAction, { category: 'practice', label, ...(opts?.extra ?? {}) });
+    const genericName = _toSnake(eventAction);
+    _tenjinEvent(genericName);
+    if (opts?.practiceId) {
+      // _toSnake handles dashes/punctuation: "p1-1" → "p1_1" → name "view_practice_p1_1".
+      const slug = _toSnake(opts.practiceId);
+      if (slug) _tenjinEvent(`${genericName}_${slug}`);
+    }
+    _logFirebase(eventAction, {
+      category: 'practice',
+      label,
+      practice_id: opts?.practiceId ?? undefined,
+      ...(opts?.extra ?? {}),
+    });
   } catch (e) {
     console.warn('[Tenjin] Failed to track practice event:', action, e);
   }

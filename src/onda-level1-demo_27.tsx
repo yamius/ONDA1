@@ -2080,7 +2080,7 @@ const OndaLevel1 = () => {
         target_duration: space.duration,
         base_ond: baseQnt,
       });
-      trackTenjinPractice('View', getPracticeName(practiceId));
+      trackTenjinPractice('View', getPracticeName(practiceId), { practiceId });
 
       // Scroll to practice after a short delay
       setTimeout(() => {
@@ -2126,7 +2126,7 @@ const OndaLevel1 = () => {
         initial_stress: initialStress,
         initial_energy: initialEnergy,
       });
-      trackTenjinPractice('Start', getPracticeName(activePractice.id));
+      trackTenjinPractice('Start', getPracticeName(activePractice.id), { practiceId: activePractice.id });
     }
 
     console.log('Starting basic practice with initial metrics:', { 
@@ -2181,7 +2181,8 @@ const OndaLevel1 = () => {
     // Complete early → Stop.
     trackTenjinPractice(
       isValidForArtifact ? 'Finish' : 'Stop',
-      getPracticeName(activePractice.id)
+      getPracticeName(activePractice.id),
+      { practiceId: activePractice.id }
     );
     // Magic-moment activation event — helper is idempotent across sessions
     // via localStorage flag, so it's safe to call on every valid Finish.
@@ -2409,10 +2410,17 @@ const OndaLevel1 = () => {
     const practiceId = activePractice?.id;
     const practiceName = circuits.flatMap(c => c.practices).find(p => p.id === activePractice?.id)?.name || '';
 
-    // Airbridge: X during practice = Stop. Skip if user is on intro (never started)
-    // or on the 'complete' result screen (Finish/Stop already fired in finishPractice).
-    if (practiceState === 'active' && practiceId) {
-      trackTenjinPractice('Stop', practiceName || getPracticeName(practiceId));
+    // Tenjin practice lifecycle. Three exit paths from the practice screen:
+    //   - X during practice (practiceState === 'active') → Stop
+    //   - X on intro screen, never pressed Start → Close
+    //   - X on the result/complete screen → no-op (Finish/Stop already
+    //     fired inside finishPractice; we'd double-count otherwise)
+    if (practiceId) {
+      if (practiceState === 'active') {
+        trackTenjinPractice('Stop', practiceName || getPracticeName(practiceId), { practiceId });
+      } else if (practiceState !== 'complete') {
+        trackTenjinPractice('Close', practiceName || getPracticeName(practiceId), { practiceId });
+      }
     }
     
     // Save rating if user rated the practice
