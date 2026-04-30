@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams, useLocation, Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
 import rehypeSlug from 'rehype-slug'
 import { NotFoundPage } from './NotFoundPage'
@@ -7,6 +8,7 @@ import { OptimizedImage } from '../components/OptimizedImage'
 import { getArticleBySlug } from '../data/articles'
 import { glossaryTerms } from '../data/glossary'
 import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
+import { langFromPath } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -206,8 +208,36 @@ function ProtocolDoneButton({
 
 export function ArticlePage() {
   const { slug } = useParams<{ slug: string }>()
-  const { hash } = useLocation()
+  const { hash, pathname } = useLocation()
+  const lang = langFromPath(pathname)
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
+  const { t: tArticles } = useTranslation('articles')
   const article = slug ? getArticleBySlug(slug) : undefined
+
+  // Translation helpers — fall back to original EN field if no translation exists.
+  const tField = (key: string, fallback: string): string =>
+    tArticles(`bodies.${slug}.${key}`, { defaultValue: fallback }) as string
+  const tTitle = article ? tField('title', article.title) : ''
+  const tDescription = article ? tField('description', article.description) : ''
+  const tImageAlt = article?.imageAlt ? tField('imageAlt', article.imageAlt) : article?.imageAlt
+  const tImageTitle = article?.imageTitle ? tField('imageTitle', article.imageTitle) : article?.imageTitle
+  const tImageCaption = article?.imageCaption ? tField('imageCaption', article.imageCaption) : article?.imageCaption
+  const tContent = article ? tField('content', article.content) : ''
+  const tHowToSteps = article?.howToSteps
+    ? (() => {
+        const fromI18n = tArticles(`bodies.${slug}.howToSteps`, {
+          returnObjects: true,
+          defaultValue: null,
+        }) as Array<{ name: string; text: string }> | null
+        if (!fromI18n || !Array.isArray(fromI18n)) return article.howToSteps
+        return article.howToSteps.map((s, i) => ({
+          ...s,
+          name: fromI18n[i]?.name ?? s.name,
+          text: fromI18n[i]?.text ?? s.text,
+        }))
+      })()
+    : article?.howToSteps
+
   const [isCompleted, setIsCompleted] = useState(false)
   const [protocolRefresh, setProtocolRefresh] = useState(0)
 
@@ -231,23 +261,23 @@ export function ArticlePage() {
 
   useEffect(() => {
     if (!article) return
-    const title = article.seoTitle ?? `${article.title} | ONDA Life`
-    const url = `${SITE_URL}/articles/${article.slug}`
+    const title = lang === 'en' && article.seoTitle ? article.seoTitle : `${tTitle} | ONDA Life`
+    const url = `${SITE_URL}${langPrefix}/articles/${article.slug}`
     document.title = title
     const articleImage = article.image ? `${SITE_URL}${article.image}` : OG_IMAGE
-    setMeta('description', article.description)
+    setMeta('description', tDescription)
     setMeta('og:title', title, true)
-    setMeta('og:description', article.description, true)
+    setMeta('og:description', tDescription, true)
     setMeta('og:url', url, true)
     setMeta('og:image', articleImage, true)
-    if (article.imageAlt) {
-      setMeta('og:image:alt', article.imageAlt, true)
-      setMeta('twitter:image:alt', article.imageAlt, true)
+    if (tImageAlt) {
+      setMeta('og:image:alt', tImageAlt, true)
+      setMeta('twitter:image:alt', tImageAlt, true)
     }
     setMeta('og:type', 'article', true)
     setMeta('twitter:card', 'summary_large_image', true)
     setMeta('twitter:title', title, true)
-    setMeta('twitter:description', article.description, true)
+    setMeta('twitter:description', tDescription, true)
     setMeta('twitter:image', articleImage, true)
     return () => {
       document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
@@ -272,9 +302,9 @@ export function ArticlePage() {
 
   /** Match "The Hack" blockquote content to howToSteps (for [ DONE ] button placement) */
   function getProtocolIdFromHackBlock(blockquoteContent: string): string | undefined {
-    if (!article?.howToSteps?.length) return undefined
+    if (!tHowToSteps?.length) return undefined
     const hackText = blockquoteContent.replace(/.*The Hack:\s*/s, '').trim()
-    const step = article.howToSteps.find(
+    const step = tHowToSteps.find(
       (s) =>
         blockquoteContent.includes(s.text) ||
         s.text.includes(hackText) ||
@@ -654,7 +684,7 @@ export function ArticlePage() {
     },
     img: ({ src, alt, title }: { src?: string; alt?: string; title?: string }) => {
       const isArticleImage = article.image && src?.endsWith(article.image.split('/').pop() ?? '')
-      const hoverTitle = isArticleImage ? (article.imageCaption ?? article.imageTitle ?? title) : title
+      const hoverTitle = isArticleImage ? (tImageCaption ?? tImageTitle ?? title) : title
       return (
         <OptimizedImage
           src={src ?? ''}
@@ -692,16 +722,16 @@ export function ArticlePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 pb-16 md:px-6">
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to="/" className="transition-colors hover:text-white/50">
-          Home
+        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">
+          {tArticles('breadcrumb.home')}
         </Link>
         <span>/</span>
-        <Link to="/articles" className="transition-colors hover:text-white/50">
-          Articles
+        <Link to={`${langPrefix}/articles`} className="transition-colors hover:text-white/50">
+          {tArticles('breadcrumb.current')}
         </Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">
-          {article.title}
+          {tTitle}
         </span>
       </nav>
 
@@ -712,7 +742,7 @@ export function ArticlePage() {
       </div>
 
       <h1 className="mb-2 text-2xl font-bold tracking-tight md:text-4xl">
-        {article.title}
+        {tTitle}
       </h1>
       {article.subtitle && (
         <p
@@ -729,22 +759,22 @@ export function ArticlePage() {
         <figure className="mb-6 overflow-hidden rounded-xl border border-white/10">
           <OptimizedImage
             src={article.image}
-            alt={article.imageAlt ?? ''}
-            title={article.imageCaption ?? article.imageTitle}
+            alt={tImageAlt ?? ''}
+            title={tImageCaption ?? tImageTitle}
             loading="lazy"
             width={1024}
             height={434}
             className="w-full object-cover"
           />
-          {article.imageCaption && (
+          {tImageCaption && (
             <figcaption className="sr-only">
-              {article.imageCaption}
+              {tImageCaption}
             </figcaption>
           )}
         </figure>
       )}
       <p className="mb-4 font-mono text-sm leading-relaxed text-white/50">
-        {article.description}
+        {tDescription}
       </p>
       {article.slug !== 'cacao-stem-cells' && (
         <p className="mb-10 text-right font-mono text-xs text-cyan-500/50">
@@ -754,7 +784,7 @@ export function ArticlePage() {
 
       <article className="prose-onda">
         <Markdown rehypePlugins={[rehypeSlug]} components={markdownComponents} key={protocolRefresh}>
-          {injectArticleGlossaryLinks(article.content)}
+          {injectArticleGlossaryLinks(tContent)}
         </Markdown>
       </article>
 
