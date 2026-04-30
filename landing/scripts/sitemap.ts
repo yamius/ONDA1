@@ -8,8 +8,8 @@
 import { writeFileSync, mkdirSync, statSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS } from './prerender-routes'
-import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor } from '../src/i18n'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS } from './prerender-routes'
+import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, parseMetricRoute } from '../src/i18n'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
@@ -26,6 +26,7 @@ function buildLoc(path: string): string {
 function getPriority(route: string): string {
   if (route === '/') return '1.0'
   if (LOCALIZED_ROUTE_SET.has(route)) return '0.9'
+  if (LOCALIZED_METRIC_ROUTE_SET.has(route)) return '0.7'
   if (route === '/glossary') return '0.9'
   if (route === '/articles') return '0.9'
   if (route === '/contact') return '0.8'
@@ -65,6 +66,17 @@ for (const base of LOCALIZED_BASE_PATHS) {
   altsByBase[base] = tags.join('\n')
 }
 
+/** Pre-build hreflang alternates for each metric. */
+const altsByMetric: Record<string, string> = {}
+for (const key of METRIC_KEYS) {
+  const tags = SUPPORTED_LANGS.map(l => {
+    const href = `${SITE_URL}${metricPathFor(key, l)}`
+    return `    <xhtml:link rel="alternate" hreflang="${l}" href="${href}"/>`
+  })
+  tags.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${metricPathFor(key, 'en')}"/>`)
+  altsByMetric[key] = tags.join('\n')
+}
+
 const urls = routes.map((path) => {
   const loc = buildLoc(path)
   const lastmod = getLastmod(path)
@@ -74,6 +86,9 @@ const urls = routes.map((path) => {
   if (LOCALIZED_ROUTE_SET.has(path)) {
     const base = stripLangPrefix(path)
     alternates = `\n${altsByBase[base] ?? ''}`
+  } else if (LOCALIZED_METRIC_ROUTE_SET.has(path)) {
+    const info = parseMetricRoute(path)
+    if (info) alternates = `\n${altsByMetric[info.metric] ?? ''}`
   }
   return `  <url>
     <loc>${loc}</loc>

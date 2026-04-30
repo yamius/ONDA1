@@ -1,14 +1,30 @@
 import { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
-import { METRIC_DETAILS } from '../data/bioMetrics'
+import { useParams, Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import { METRIC_DETAILS, type DetailSection } from '../data/bioMetrics'
 import { NotFoundPage } from './NotFoundPage'
 import { appStoreUrl } from '../config/appStore'
+import { langFromPath, localizedPathFor } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 
+interface TranslatedMetric {
+  title: string
+  shortTitle: string
+  sections: DetailSection[]
+}
+
 export function BioMetricPage() {
   const { metric } = useParams<{ metric: string }>()
-  const detail = metric ? METRIC_DETAILS[metric] : undefined
+  const { t } = useTranslation('bio-metric')
+  const location = useLocation()
+  const lang = langFromPath(location.pathname)
+
+  const exists = !!(metric && METRIC_DETAILS[metric])
+  // Pull translated metric content from i18n; fall back to EN data file if missing.
+  const detail: TranslatedMetric | undefined = exists
+    ? (t(`metrics.${metric}`, { returnObjects: true, defaultValue: METRIC_DETAILS[metric!] as unknown }) as TranslatedMetric)
+    : undefined
 
   const [isOpen, setIsOpen] = useState(false)
   const [platform, setPlatform] = useState<string>('')
@@ -28,11 +44,11 @@ export function BioMetricPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, platform: platform || null }),
       })
-      if (res.status === 409) { setError('This email is already registered.'); return }
-      if (!res.ok) { setError('Something went wrong. Please try again later.'); return }
+      if (res.status === 409) { setError(t('ui.modal.errorDuplicate')); return }
+      if (!res.ok) { setError(t('ui.modal.errorGeneric')); return }
       setIsSubmitted(true)
     } catch {
-      setError('Something went wrong. Please try again later.')
+      setError(t('ui.modal.errorGeneric'))
     } finally {
       setIsLoading(false)
     }
@@ -41,7 +57,7 @@ export function BioMetricPage() {
   const handleClose = () => { setIsOpen(false); setPlatform(''); setError(null) }
 
   useEffect(() => {
-    if (!detail) return
+    if (!detail || !metric) return
     const title = `${detail.title} | ONDA Life Bio OS`
     document.title = title
     const setMeta = (name: string, content: string, prop = false) => {
@@ -50,23 +66,29 @@ export function BioMetricPage() {
       if (!el) { el = document.createElement('meta'); el.setAttribute(attr, name); document.head.appendChild(el) }
       el.content = content
     }
-    setMeta('description', `${detail.title} — learn what this biometric means and how to use it in your daily practice.`)
+    const desc = t('ui.metaDescriptionTpl', { title: detail.title })
+    const url = `${SITE_URL}${localizedPathFor('/bio', lang)}/${metric}`
+    setMeta('description', desc)
     setMeta('og:title', title, true)
-    setMeta('og:url', `${SITE_URL}/bio/${metric}`, true)
+    setMeta('og:description', desc, true)
+    setMeta('og:url', url, true)
     let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')
     if (!canonical) { canonical = document.createElement('link'); canonical.rel = 'canonical'; document.head.appendChild(canonical) }
-    canonical.href = `${SITE_URL}/bio/${metric}`
-  }, [detail, metric])
+    canonical.href = url
+  }, [detail, metric, t, lang])
 
   if (!detail) return <NotFoundPage />
+
+  const bioPath = localizedPathFor('/bio', lang)
+  const homePath = localizedPathFor('/', lang)
 
   return (
     <div className="mx-auto max-w-2xl px-4 pb-20 md:px-6">
       {/* Breadcrumb */}
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to="/" className="transition-colors hover:text-white/50">Home</Link>
+        <Link to={homePath} className="transition-colors hover:text-white/50">{t('ui.breadcrumbHome')}</Link>
         <span>/</span>
-        <Link to="/bio" className="transition-colors hover:text-white/50">Bio OS</Link>
+        <Link to={bioPath} className="transition-colors hover:text-white/50">{t('ui.breadcrumbBio')}</Link>
         <span>/</span>
         <span className="text-cyan-400/60" aria-current="page">{detail.shortTitle}</span>
       </nav>
@@ -99,7 +121,7 @@ export function BioMetricPage() {
             {sec.highlight && (
               <div className="rounded-xl border border-cyan-500/20 bg-cyan-500/5 px-5 py-4">
                 <p className="mb-1 font-mono text-xs font-semibold uppercase tracking-widest text-cyan-400/60">
-                  The ONDA Principle
+                  {t('ui.ondaPrinciple')}
                 </p>
                 <p className="text-sm leading-relaxed text-white/70 italic">{sec.highlight}</p>
               </div>
@@ -111,14 +133,14 @@ export function BioMetricPage() {
       {/* Download CTA */}
       <div className="mt-16 flex flex-col gap-4">
         <Link
-          to="/bio"
+          to={bioPath}
           className="inline-flex items-center gap-2 font-mono text-xs text-white/30 transition-colors hover:text-cyan-400/60"
         >
-          ← Back to Bio OS
+          {t('ui.back')}
         </Link>
         <div className="rounded-2xl border border-cyan-500/15 bg-[#1e1540] p-6 text-center">
-          <p className="mb-1 text-sm font-semibold text-white/80">Ready to measure?</p>
-          <p className="mb-5 text-xs text-white/35">Connect a Bluetooth tracker for continuous precise biofeedback.</p>
+          <p className="mb-1 text-sm font-semibold text-white/80">{t('ui.ctaReady')}</p>
+          <p className="mb-5 text-xs text-white/35">{t('ui.ctaSubtitle')}</p>
           <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
             <a
               href={appStoreUrl('bio_metric')}
@@ -126,28 +148,28 @@ export function BioMetricPage() {
               rel="noopener"
               onClick={() => { (window as any).lastPlatform = 'ios' }}
               className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
-              aria-label="Download ONDA Life on App Store"
+              aria-label={t('ui.appStoreAria')}
               data-button="apple"
               data-platform="ios"
             >
               <AppleIcon />
               <div className="text-left">
-                <div className="text-[9px] text-white/40">Download on the</div>
-                <div className="text-sm font-semibold">App Store</div>
+                <div className="text-[9px] text-white/40">{t('ui.appStoreSup')}</div>
+                <div className="text-sm font-semibold">{t('ui.appStoreLabel')}</div>
               </div>
             </a>
             <button
               type="button"
               onClick={() => { (window as any).lastPlatform = 'android'; setPlatform('android'); setIsOpen(true) }}
               className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
-              aria-label="Download ONDA Life on Google Play"
+              aria-label={t('ui.googlePlayAria')}
               data-button="android"
               data-platform="android"
             >
               <PlayIcon />
               <div className="text-left">
-                <div className="text-[9px] text-white/40">Get it on</div>
-                <div className="text-sm font-semibold">Google Play</div>
+                <div className="text-[9px] text-white/40">{t('ui.googlePlaySup')}</div>
+                <div className="text-sm font-semibold">{t('ui.googlePlayLabel')}</div>
               </div>
             </button>
           </div>
@@ -171,7 +193,7 @@ export function BioMetricPage() {
               type="button"
               onClick={handleClose}
               className="absolute top-4 right-4 rounded-lg p-1 text-white/50 transition-colors hover:bg-white/10 hover:text-white"
-              aria-label="Close"
+              aria-label={t('ui.modal.close')}
             >
               ✕
             </button>
@@ -179,16 +201,16 @@ export function BioMetricPage() {
               {!isSubmitted ? (
                 <form id="waitlist-form" onSubmit={handleFormSubmit} className="flex flex-col flex-1">
                   <h2 id="waitlist-modal-title" className="mb-4 text-2xl font-bold text-white">
-                    Join ONDA Life
+                    {t('ui.modal.title')}
                   </h2>
                   <p className="mb-6 text-sm text-white/60">
-                    We are putting the finishing touches! Leave your email and we will send you early access.
+                    {t('ui.modal.subtitle')}
                   </p>
                   <input
                     type="email"
                     name="email"
                     required
-                    placeholder="Your email"
+                    placeholder={t('ui.modal.placeholder')}
                     disabled={isLoading}
                     className="mb-4 w-full rounded-lg border border-white/20 bg-white/5 px-4 py-3 text-white placeholder-white/40 outline-none transition-colors focus:border-terminal-cyan/50 focus:ring-1 focus:ring-terminal-cyan/30 disabled:opacity-50"
                   />
@@ -200,14 +222,14 @@ export function BioMetricPage() {
                     disabled={isLoading}
                     className="mt-auto w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90 disabled:opacity-50"
                   >
-                    {isLoading ? 'Submitting...' : 'Get Early Access'}
+                    {isLoading ? t('ui.modal.submitting') : t('ui.modal.submit')}
                   </button>
                 </form>
               ) : (
                 <div id="thank-you-message" className="flex flex-col flex-1">
-                  <h2 className="mb-4 text-2xl font-bold text-terminal-green">Thank you!</h2>
+                  <h2 className="mb-4 text-2xl font-bold text-terminal-green">{t('ui.modal.thankTitle')}</h2>
                   <p className="mb-6 text-sm text-white/60">
-                    We will contact you as soon as the app is ready to launch.
+                    {t('ui.modal.thankSubtitle')}
                   </p>
                   <div className="flex-1 min-h-0" aria-hidden="true" />
                   <button
@@ -215,7 +237,7 @@ export function BioMetricPage() {
                     onClick={handleClose}
                     className="w-full rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 py-3 font-bold text-black transition-opacity hover:opacity-90"
                   >
-                    OK
+                    {t('ui.modal.ok')}
                   </button>
                 </div>
               )}

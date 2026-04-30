@@ -17,9 +17,11 @@ import {
   langFromPath,
   stripLangPrefix,
   localizedPathFor,
+  metricPathFor,
+  parseMetricRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml } from './meta-inject'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -34,6 +36,10 @@ const template = readFileSync(join(distDir, 'index.html'), 'utf-8')
 const SITE_URL = 'https://onda-life.com'
 
 interface PageMeta { title: string; description: string; ogImageAlt: string }
+interface BioMetricFile {
+  ui: { metaDescriptionTpl: string }
+  metrics: Record<string, { title: string; shortTitle: string }>
+}
 
 // Load every localized namespace for every language so prerender can swap meta
 // per (page, language) without doing async i18n during render.
@@ -48,6 +54,12 @@ for (const [, ns] of Object.entries(LOCALIZED_PAGES)) {
   localizedMeta[ns] = byLang
 }
 
+// Bio metric translations per language (for /bio/:metric pages).
+const bioMetricByLang: Record<Lang, BioMetricFile> = {} as Record<Lang, BioMetricFile>
+for (const lang of SUPPORTED_LANGS) {
+  bioMetricByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'bio-metric.json'), 'utf-8')) as BioMetricFile
+}
+
 function pageUrlFor(basePath: string, lang: Lang): string {
   return `${SITE_URL}${localizedPathFor(basePath, lang)}`.replace(/\/+$/, '') || SITE_URL
 }
@@ -60,6 +72,19 @@ function buildHreflangLinksFor(basePath: string): string {
   }
   // x-default → EN version of this page (Google's recommended fallback).
   tags.push(`<link rel="alternate" hreflang="x-default" href="${pageUrlFor(basePath, 'en')}">`)
+  return tags.join('\n  ')
+}
+
+function metricUrlFor(metric: string, lang: Lang): string {
+  return `${SITE_URL}${metricPathFor(metric, lang)}`
+}
+
+function buildHreflangLinksForMetric(metric: string): string {
+  const tags: string[] = []
+  for (const lang of SUPPORTED_LANGS) {
+    tags.push(`<link rel="alternate" hreflang="${lang}" href="${metricUrlFor(metric, lang)}">`)
+  }
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${metricUrlFor(metric, 'en')}">`)
   return tags.join('\n  ')
 }
 
@@ -113,12 +138,53 @@ function applyLocalizedMeta(html: string, basePath: string, lang: Lang): string 
   return out
 }
 
+/**
+ * Same idea as applyLocalizedMeta but for /bio/:metric pages — title and
+ * description come from bio-metric.json instead of a flat page meta block.
+ */
+function applyMetricLocalizedMeta(html: string, metric: string, lang: Lang): string {
+  const file = bioMetricByLang[lang]
+  const m = file.metrics[metric]
+  if (!m) return html
+
+  const title = `${m.title} | ONDA Life Bio OS`
+  const desc = file.ui.metaDescriptionTpl.replace('{{title}}', m.title)
+  const url = metricUrlFor(metric, lang)
+  const escTitle = escAttr(title)
+  const escDesc = escAttr(desc)
+  const escUrl = escAttr(url)
+
+  let out = html
+  out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
+  out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
+  out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
+  out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+
+  const hreflang = buildHreflangLinksForMetric(metric)
+  const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[lang]}">`
+  out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
+
+  return out
+}
+
 console.log('[prerender] Using renderToString + JSDOM (no Puppeteer) —', routes.length, 'routes')
 
 for (const route of routes) {
   try {
     const isLocalized = LOCALIZED_ROUTE_SET.has(route)
-    const lang: Lang = isLocalized ? langFromPath(route) : 'en'
+    const isMetricLocalized = LOCALIZED_METRIC_ROUTE_SET.has(route)
+    const metricInfo = isMetricLocalized ? parseMetricRoute(route) : null
+    const lang: Lang = isLocalized
+      ? langFromPath(route)
+      : metricInfo ? metricInfo.lang : 'en'
     const basePath = isLocalized ? stripLangPrefix(route) : route
 
     const html = renderToString(createApp(route, lang))
@@ -138,6 +204,8 @@ for (const route of routes) {
 
     if (isLocalized) {
       out = applyLocalizedMeta(out, basePath, lang)
+    } else if (metricInfo) {
+      out = applyMetricLocalizedMeta(out, metricInfo.metric, metricInfo.lang)
     }
 
     // Build fingerprint for deployment verification (view page source, search "onda-build")

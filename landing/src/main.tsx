@@ -60,6 +60,9 @@ const app = (
               <Route key={`bio-${l}`} path={`/${l}/bio`} element={<BioPage />} />
             ))}
             <Route path="/bio/:metric"    element={<BioMetricPage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />
+            ))}
             <Route path="*"               element={<NotFoundPage />} />
           </Route>
         </Routes>

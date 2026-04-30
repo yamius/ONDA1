@@ -20,6 +20,11 @@ import esBio from '../public/locales/es/bio.json'
 import ruBio from '../public/locales/ru/bio.json'
 import ukBio from '../public/locales/uk/bio.json'
 import zhBio from '../public/locales/zh/bio.json'
+import enBioMetric from '../public/locales/en/bio-metric.json'
+import esBioMetric from '../public/locales/es/bio-metric.json'
+import ruBioMetric from '../public/locales/ru/bio-metric.json'
+import ukBioMetric from '../public/locales/uk/bio-metric.json'
+import zhBioMetric from '../public/locales/zh/bio-metric.json'
 
 export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh'] as const
 export type Lang = (typeof SUPPORTED_LANGS)[number]
@@ -38,13 +43,13 @@ if (!i18n.isInitialized) {
     fallbackLng: 'en',
     supportedLngs: SUPPORTED_LANGS as unknown as string[],
     resources: {
-      en: { home: en, about: enAbout, 'inner-spectrum': enIs, bio: enBio },
-      es: { home: es, about: esAbout, 'inner-spectrum': esIs, bio: esBio },
-      ru: { home: ru, about: ruAbout, 'inner-spectrum': ruIs, bio: ruBio },
-      uk: { home: uk, about: ukAbout, 'inner-spectrum': ukIs, bio: ukBio },
-      zh: { home: zh, about: zhAbout, 'inner-spectrum': zhIs, bio: zhBio },
+      en: { home: en, about: enAbout, 'inner-spectrum': enIs, bio: enBio, 'bio-metric': enBioMetric },
+      es: { home: es, about: esAbout, 'inner-spectrum': esIs, bio: esBio, 'bio-metric': esBioMetric },
+      ru: { home: ru, about: ruAbout, 'inner-spectrum': ruIs, bio: ruBio, 'bio-metric': ruBioMetric },
+      uk: { home: uk, about: ukAbout, 'inner-spectrum': ukIs, bio: ukBio, 'bio-metric': ukBioMetric },
+      zh: { home: zh, about: zhAbout, 'inner-spectrum': zhIs, bio: zhBio, 'bio-metric': zhBioMetric },
     },
-    ns: ['home', 'about', 'inner-spectrum', 'bio'],
+    ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric'],
     defaultNS: 'home',
     interpolation: { escapeValue: false },
     react: { useSuspense: false },
@@ -115,6 +120,30 @@ export function localizedRouteVariants(): string[] {
     }
   }
   return out
+}
+
+/** Build the localized URL for a metric detail page. */
+export function metricPathFor(metricKey: string, lang: Lang): string {
+  return lang === 'en' ? `/bio/${metricKey}` : `/${lang}/bio/${metricKey}`
+}
+
+/** All variants of /bio/:metric — one per (metric, lang). */
+export function metricRouteVariants(metricKeys: string[]): string[] {
+  const out: string[] = []
+  for (const key of metricKeys) {
+    for (const lang of SUPPORTED_LANGS) {
+      out.push(metricPathFor(key, lang))
+    }
+  }
+  return out
+}
+
+/** Parse a metric URL — returns { lang, metric } or null. */
+export function parseMetricRoute(route: string): { lang: Lang; metric: string } | null {
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/bio\/([^/]+)$/)
+  if (!m) return null
+  const lang = (m[1] as Lang | undefined) ?? 'en'
+  return { lang, metric: m[2] }
 }
 
 export default i18n

@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { METRIC_DETAILS } from '../data/bioMetrics'
 import { appStoreUrl } from '../config/appStore'
-import { langFromPath } from '../i18n'
+import { langFromPath, localizedPathFor } from '../i18n'
 
 type MetricValue = string | null
 
@@ -273,11 +273,12 @@ function SectionTitle({ children }: { children: React.ReactNode }) {
 
 // ─── Desc card ────────────────────────────────────────────────────────────────
 
-function DescCard({ title, text, detailKey, readMoreLabel }: {
+function DescCard({ title, text, detailKey, readMoreLabel, bioBasePath }: {
   title: string
   text: string
   detailKey?: string
   readMoreLabel: string
+  bioBasePath: string
 }) {
   const hasDetail = detailKey && METRIC_DETAILS[detailKey]
   const inner = (
@@ -296,7 +297,7 @@ function DescCard({ title, text, detailKey, readMoreLabel }: {
   if (hasDetail) {
     return (
       <Link
-        to={`/bio/${detailKey}`}
+        to={`${bioBasePath}/${detailKey}`}
         className="block rounded-xl bg-[#1e1540] px-4 py-3 transition-all ring-1 ring-transparent hover:ring-cyan-500/30 active:ring-cyan-500/50"
       >
         {inner}
@@ -633,7 +634,7 @@ export function BioPage() {
           <div className="flex flex-col gap-3">
             {(t('descriptions.main', { returnObjects: true }) as MetricDescItem[]).map((item, i) => (
               <DescCard key={i} title={item.title} text={item.text} detailKey={item.key}
-                readMoreLabel={t('descriptions.readMore')} />
+                readMoreLabel={t('descriptions.readMore')} bioBasePath={localizedPathFor('/bio', lang)} />
             ))}
           </div>
 
@@ -642,7 +643,7 @@ export function BioPage() {
             <p className="text-xs font-semibold uppercase tracking-widest text-white/30">{t('sections.advancedTag')}</p>
             {(t('descriptions.advanced', { returnObjects: true }) as MetricDescItem[]).map((item, i) => (
               <DescCard key={i} title={item.title} text={item.text} detailKey={item.key}
-                readMoreLabel={t('descriptions.readMore')} />
+                readMoreLabel={t('descriptions.readMore')} bioBasePath={localizedPathFor('/bio', lang)} />
             ))}
           </div>
 
@@ -651,7 +652,7 @@ export function BioPage() {
             <p className="text-xs font-semibold uppercase tracking-widest text-white/30">{t('sections.emotionalTag')}</p>
             {(t('descriptions.emotional', { returnObjects: true }) as MetricDescItem[]).map((item, i) => (
               <DescCard key={i} title={item.title} text={item.text} detailKey={item.key}
-                readMoreLabel={t('descriptions.readMore')} />
+                readMoreLabel={t('descriptions.readMore')} bioBasePath={localizedPathFor('/bio', lang)} />
             ))}
           </div>
 
