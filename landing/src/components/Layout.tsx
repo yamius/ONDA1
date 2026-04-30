@@ -244,16 +244,16 @@ export function Layout() {
               <Link to={localizedPathFor('/inner-spectrum', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.philosophy')}<span className="sr-only">{t('menu.philosophySr')}</span>
               </Link>
-              <Link to="/glossary" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link to={currentLang === 'en' ? '/glossary' : `/${currentLang}/glossary`} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.glossary')}<span className="sr-only">{t('menu.glossarySr')}</span>
               </Link>
-              <Link to="/articles" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link to={currentLang === 'en' ? '/articles' : `/${currentLang}/articles`} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
               </Link>
               <Link to={localizedPathFor('/bio', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.bio')}<span className="sr-only">{t('menu.bioSr')}</span>
               </Link>
-              <Link to="/contact" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link to={currentLang === 'en' ? '/contact' : `/${currentLang}/contact`} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.contacts')}<span className="sr-only">{t('menu.contactsSr')}</span>
               </Link>
             </div>
@@ -265,7 +265,7 @@ export function Layout() {
             <div />
             <div className="flex justify-center">
               <Link
-                to="/sitemap"
+                to={currentLang === 'en' ? '/sitemap' : `/${currentLang}/sitemap`}
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >
                 {t('footer.sitemap')}
@@ -273,13 +273,13 @@ export function Layout() {
             </div>
             <div className="flex justify-end items-center gap-4">
               <Link
-                to="/privacy"
+                to={currentLang === 'en' ? '/privacy' : `/${currentLang}/privacy`}
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >
                 {t('footer.privacy')}
               </Link>
               <Link
-                to="/terms"
+                to={currentLang === 'en' ? '/terms' : `/${currentLang}/terms`}
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >
                 {t('footer.terms')}

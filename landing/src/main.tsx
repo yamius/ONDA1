@@ -41,10 +41,22 @@ const app = (
               <Route key={`about-${l}`} path={`/${l}/about`} element={<AboutPage />} />
             ))}
             <Route path="/glossary"    element={<GlossaryPage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`glossary-${l}`} path={`/${l}/glossary`} element={<GlossaryPage />} />
+            ))}
             <Route path="/articles"    element={<ArticlesPage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`articles-${l}`} path={`/${l}/articles`} element={<ArticlesPage />} />
+            ))}
             <Route path="/contact"     element={<ContactPage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`contact-${l}`} path={`/${l}/contact`} element={<ContactPage />} />
+            ))}
             <Route path="/the-stack"   element={<TheStackPage />} />
             <Route path="/sitemap"     element={<SitemapPage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`sitemap-${l}`} path={`/${l}/sitemap`} element={<SitemapPage />} />
+            ))}
             <Route path="/glossary/:slug"  element={<GlossaryTermPage />} />
             <Route path="/articles/:slug"  element={<ArticlesSlugRouter />} />
             <Route path="/part/:slug"      element={<PartPage />} />
@@ -60,7 +72,13 @@ const app = (
               <Route key={`is-${l}`} path={`/${l}/inner-spectrum`} element={<InnerSpectrumPage />} />
             ))}
             <Route path="/privacy"        element={<PrivacyPage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`priv-${l}`} path={`/${l}/privacy`} element={<PrivacyPage />} />
+            ))}
             <Route path="/terms"          element={<TermsPage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`terms-${l}`} path={`/${l}/terms`} element={<TermsPage />} />
+            ))}
             <Route path="/bio"            element={<BioPage />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`bio-${l}`} path={`/${l}/bio`} element={<BioPage />} />
