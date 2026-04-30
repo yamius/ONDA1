@@ -1,0 +1,350 @@
+{
+  "ui": {
+    "breadcrumbHome": "Inicio",
+    "back": "← Volver al inicio",
+    "openProtocolPrefix": "→ Abrir protocolo de ",
+    "openProtocolSuffix": "",
+    "openProtocolAria": "Abrir protocolo de {{label}}",
+    "openProtocolTitle": "Abrir protocolo de {{label}} — {{protocol}}",
+    "biologicalProtocol": "Protocolo biológico",
+    "targetSystems": "Sistemas objetivo",
+    "resultsBenefits": "Resultados y efectos",
+    "researchBasis": "Base científica",
+    "relatedTerms": "Términos relacionados",
+    "videoTitleTpl": "Nivel {{number}}: {{name}} — ONDA Life",
+    "metaTitleTpl": "Nivel {{number}}: {{name}} | ONDA Life"
+  },
+  "levels": {
+    "1": {
+      "name": "CUERPO / TERRA",
+      "subtitle": "Arquitectura del biocomputador: de la supervivencia a la autonomía",
+      "metaDescription": "Nivel 1: homeostasis, interocepción, HRV. Respiración, diafragma, tono vagal — el fundamento de la activación parasimpática. Calibra tu cero biológico.",
+      "intro": "El Nivel 1 es una inspección y calibración profundas de tu «hardware». En esta etapa descendemos al «cero biológico» — los ajustes base de la supervivencia — para transformar el cuerpo de una «fortaleza sitiada» en un hogar seguro y eficiente.\n\nEs el cimiento de todo el ecosistema de ONDA Life. Aquí la consciencia aún no está separada de los procesos metabólicos; nuestra tarea es optimizar el rendimiento de las estructuras cerebrales más antiguas.",
+      "architecture": {
+        "intro": "El Nivel 1 se divide en tres protocolos de calibración:",
+        "parts": [
+          { "label": "Yo soy", "protocol": "Protocolo: Homeostasis", "goal": "Objetivo: pasar el sistema de la «anticipación ansiosa» a un estado de «ser seguro».", "work": "Trabajo: ajustar la conexión entre el tronco encefálico y la ínsula. Activar la interocepción primaria — la capacidad de sentir tu pulso, ritmos de los órganos y respiración como base del autoconocimiento." },
+          { "label": "Yo me muevo", "protocol": "Protocolo: Coherencia rítmica", "goal": "Objetivo: pasar de la existencia estática a la dinámica del «cuerpo fluido».", "work": "Trabajo: activar los CPG (Central Pattern Generators) — circuitos espinales responsables de la gracia automática. Despertamos la «inteligencia del pez»: movimiento sin esfuerzo, nacido de la resonancia con la gravedad." },
+          { "label": "Yo me adapto", "protocol": "Protocolo: Maestría de la gravedad", "goal": "Objetivo: autonomía interna y soporte estructural.", "work": "Trabajo: ajustar la formación reticular y la corteza sensoriomotora. Entrenamos al sistema a alternar rápidamente entre «fluidez» y «estabilidad», usando la gravedad como recurso, no como carga." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "El stack tecnológico del nivel:",
+        "items": [
+          { "name": "Calibración interoceptiva", "text": "Desarrollar la habilidad de detectar las «señales del biocomputador» antes de que se traduzcan en emociones o pensamientos." },
+          { "name": "Tono vagal (V2)", "text": "Salir de los estados de «congelación» liberando el diafragma y activando el nervio vago." },
+          { "name": "Reflejo vestíbulo-ocular (VOR)", "text": "Estabilizar la mirada y la navegación en el flujo de estímulos entrantes." },
+          { "name": "Eficiencia energética", "text": "Entrenar al sistema nervioso a realizar tareas con el mínimo impulso eléctrico, eliminando la «armadura corporal» (tensión crónica)." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "El nivel involucra las siguientes estructuras neuronales:",
+        "items": [
+          { "name": "Ínsula", "text": "Hub principal de la autopercepción y la interocepción." },
+          { "name": "Tronco encefálico e hipotálamo", "text": "Centros de control para el soporte vital y la homeostasis." },
+          { "name": "Cerebelo", "text": "Asegura precisión, coordinación y eliminación del «ruido» en el movimiento." },
+          { "name": "Nervio vago", "text": "Autopista del sistema parasimpático, responsable de la sensación biológica de seguridad." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado del Nivel 1 es alcanzar el «punto de quietud» y la «fluidez neural». Tus marcadores biológicos de progreso:",
+        "items": [
+          "HRV elevado: aumento de la variabilidad cardíaca como marcador de flexibilidad nerviosa.",
+          "Reducción del cortisol basal: eliminación del estrés de fondo a nivel celular.",
+          "Disolución de la «armadura corporal»: liberación de espasmos crónicos y restauración de una respiración profunda y rítmica."
+        ]
+      }
+    },
+    "2": {
+      "name": "EMOCIONES / AQUA",
+      "subtitle": "Bioquímica de la energía: de la maniobrabilidad al poder social",
+      "metaDescription": "Nivel 2: maestría emocional. Eje HPA, DHEA, neuronas espejo — neurocepción, vago ventral, resonancia social. De la maniobrabilidad al dominio sereno.",
+      "intro": "El Nivel 2 es la etapa de dominar tu sistema emocional como un reactor de alta tecnología. Dejamos de percibir las emociones como simples «estados de ánimo» y empezamos a tratarlas como protocolos biológicos: con firma hormonal, patrones neuromotores y perfiles vegetativos específicos.\n\nEn este nivel seguimos la senda de la evolución de los mamíferos: desde las reacciones instantáneas del pequeño animal a la calma inquebrantable del gran depredador y la resonancia compleja del primate superior.",
+      "architecture": {
+        "intro": "El Nivel 2 integra tres estrategias de gestión de recursos:",
+        "parts": [
+          { "label": "Yo maniobro", "protocol": "Protocolo: la maniobrabilidad del «pequeño mamífero»", "goal": "Objetivo: flexibilidad biológica y aceleración instantánea sin estrés paralizante.", "work": "Mecanismo: entrenar la neurocepción (la capacidad del cerebro para detectar amenazas antes de la consciencia). Enseñamos al sistema a «derivar» suavemente entre el reposo y la acción, convirtiendo cortisol y adrenalina de toxinas en combustible de precisión." },
+          { "label": "Yo guardo el territorio", "protocol": "Protocolo: la fuerza del «gran mamífero»", "goal": "Objetivo: calma de estatus y densidad de presencia.", "work": "Mecanismo: reconfigurar el sistema endocrino. Pasamos las suprarrenales de la liberación de emergencia de cortisol a la producción de DHEA (la hormona de la vitalidad). Es un estado de «dominio sereno», donde tu estabilidad la siente el resto a nivel límbico antes de que hables." },
+          { "label": "Soy parte de la manada", "protocol": "Protocolo: Resonancia social", "goal": "Objetivo: transformar la supervivencia individual en poder colectivo.", "work": "Mecanismo: activar el «cerebro social» — el sistema de neuronas espejo y el perfil de oxitocina. Aprendemos a sincronizar nuestro ritmo con el grupo (co-regulación) manteniendo un centro autónomo. Tu presencia se convierte en el «pegamento» que une el campo." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "El stack tecnológico de gestión de la energía:",
+        "items": [
+          { "name": "Teoría polivagal (vago ventral)", "text": "Uso de la «parasimpática inteligente» para mantener el compromiso social incluso bajo cargas altas." },
+          { "name": "Control del eje HPA", "text": "Influencia directa sobre la cadena hipotálamo-hipófisis-suprarrenales para gestionar la respuesta hormonal." },
+          { "name": "Ósmosis emocional", "text": "Habilidad de intercambiar estados con otros sin ser absorbido por su caos." },
+          { "name": "Bombeo linfático", "text": "Usar el tono muscular como bomba para limpiar el cuerpo de los metabolitos del estrés." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "El nivel involucra las siguientes estructuras neuronales:",
+        "items": [
+          { "name": "Hipotálamo", "text": "Centro de control del comportamiento territorial y el equilibrio hormonal." },
+          { "name": "Ganglios basales", "text": "Formación de posturas «inquebrantables» y hábitos de dominio." },
+          { "name": "Neuronas espejo", "text": "Tu Wi-Fi biológico para leer al instante las intenciones de otros." },
+          { "name": "Corteza cingulada anterior", "text": "Detector de señales sociales y precisión emocional." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado del Nivel 2 es alta selectividad cognitiva y control sobre el campo límbico. Marcadores de progreso:",
+        "items": [
+          "Sustituir la impulsividad por velocidad consciente: sientes la trayectoria del movimiento, no solo reaccionas.",
+          "Perfil hormonal de «ganador»: DHEA elevado, testosterona estable y cortisol bajo.",
+          "Densidad social: capacidad de influir en el estado emocional del grupo manteniéndote en el «vago ventral» (seguridad y claridad)."
+        ]
+      }
+    },
+    "3": {
+      "name": "MENTE / AER",
+      "subtitle": "Arquitectura de la mente: de la reactividad al diseño",
+      "metaDescription": "Nivel 3: Deep Work y productividad. PFC, noradrenalina, vinculación gamma — claridad cognitiva. Entrena foco, reconocimiento de patrones y simulación mental para emprendedores y profesionales IT.",
+      "intro": "El Nivel 3 es el nivel de la soberanía cognitiva. Nos elevamos por encima de los instintos y las reacciones límbicas para transformar la atención de un proceso caótico en un instrumento controlado. Aquí la mente asume el papel de director principal del biocomputador.\n\nEn esta etapa entrenamos al cerebro a extraer la «señal» del «ruido», sostener el foco bajo sobrecarga informativa y usar la imaginación como software biológico para reescribir la realidad.",
+      "architecture": {
+        "intro": "El Nivel 3 integra tres algoritmos de gestión de la consciencia:",
+        "parts": [
+          { "label": "Yo distingo", "protocol": "Protocolo: optimización S/N", "goal": "Objetivo: crear un «hueco cognitivo» entre estímulo y reacción.", "work": "Mecanismo: ajustar el tálamo — el guardián principal de los flujos sensoriales. Entrenamos al cerebro a separar hechos objetivos del ruido subjetivo, alcanzando claridad perceptiva cristalina." },
+          { "label": "Yo me enfoco", "protocol": "Protocolo: Resiliencia neural", "goal": "Objetivo: pasar de la atención reactiva a la gestión voluntaria del recurso.", "work": "Mecanismo: activar la Dorsal Attention Network (DAN) y suprimir la Default Mode Network (DMN — «mente errante»). Es el modo Deep Work, que permite inmersión profunda sin gastar energía en distracciones." },
+          { "label": "Yo doy forma a la visión", "protocol": "Protocolo: Simulación mental", "goal": "Objetivo: ingeniería del futuro a nivel neural.", "work": "Mecanismo: lanzar el «render» interno. Usamos el hipocampo y la corteza prefrontal para crear modelos predictivos (Predictive Coding). La imaginación aquí no es fantasía sino programa de acción para el RAS (Sistema Activador Reticular)." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "El stack tecnológico del control cognitivo:",
+        "items": [
+          { "name": "Hueco cognitivo", "text": "Aumentar la pausa entre evento y reacción automática para permitir libertad de elección." },
+          { "name": "Modulación colinérgica", "text": "Usar acetilcolina para «iluminar» literalmente las conexiones neurales necesarias durante el foco." },
+          { "name": "Vinculación gamma", "text": "Sincronizar neuronas en frecuencia gamma para ensamblar fragmentos dispersos de la experiencia en un solo insight." },
+          { "name": "Programación proactiva (RAS)", "text": "Ajustar los filtros del cerebro para buscar automáticamente oportunidades alineadas con tu visión interna." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "El nivel involucra las siguientes estructuras neuronales:",
+        "items": [
+          { "name": "DLPFC (PFC dorsolateral)", "text": "Centro de mando para la atención y la memoria de trabajo." },
+          { "name": "Tálamo", "text": "Guardián de los flujos sensoriales, descarta lo redundante." },
+          { "name": "ACC (corteza cingulada anterior)", "text": "Detector de errores y diferencias de alta precisión." },
+          { "name": "Locus Coeruleus", "text": "Regulador de la alerta y la neuroplasticidad vía noradrenalina." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado del Nivel 3 es la autonomía mental y la «resiliencia neural». Marcadores de progreso:",
+        "items": [
+          "Reconocimiento de patrones: capacidad de detectar la estructura de los eventos antes de que secuestren tu atención.",
+          "Eficiencia Deep Work: foco sostenido en ciclos 90/20 sin burnout cognitivo.",
+          "Creencia biológica: cambios en el GSR (respuesta galvánica de la piel) — el cuerpo empieza a «creer» en la imagen mental como si fuera real.",
+          "Reducción de carga: drástico recorte del coste cognitivo al «afilar» las herramientas de la percepción."
+        ]
+      }
+    },
+    "4": {
+      "name": "SOCIEDAD / IGNIS",
+      "subtitle": "Oxitocina, neuronas espejo y vago ventral — el combustible de la resonancia social.",
+      "metaDescription": "Nivel 4: inteligencia social, biología del liderazgo, sinergia de equipo. Oxitocina, neuronas espejo, vago ventral — neurobiología de la empatía. De la auto-expresión a la mente colectiva.",
+      "intro": "Inteligencia social: de la auto-expresión a la mente colectiva\n\nEl Nivel 4 es la etapa de realización social y temple. Aquí el «boceto interno» creado a nivel Mente atraviesa el filtro del entorno externo. Convertimos el cuerpo en un transmisor potente de ideas y la interacción humana en arte de la resonancia.\n\nEn este nivel dominamos la biología de la influencia, la empatía y la sinergia grupal, pasando de la supervivencia personal al estado de Homo Creativus (el humano creativo).",
+      "architecture": {
+        "intro": "El Nivel 4 integra tres etapas de la evolución social:",
+        "parts": [
+          { "label": "Yo expreso", "protocol": "Protocolo: Neuroendocrinología de la influencia", "goal": "Objetivo: superar la parálisis social y obtener una voz soberana.", "work": "Mecanismo: sincronizar corazón (sentimiento), cerebro (visión) y garganta (instrumento de manifestación). Usamos la reevaluación cognitiva para convertir el miedo escénico en empuje y la voz en herramienta de resonancia física." },
+          { "label": "Yo interactúo", "protocol": "Protocolo: Regulación empática", "goal": "Objetivo: dominio del «espacio entre». Pasar del conflicto a la interferencia.", "work": "Mecanismo: activar el «cerebro social» (Theory of Mind). Aprendemos a sentir los límites — los nuestros y los de los demás — en tiempo real, creando una interacción nutricia que potencia a ambos." },
+          { "label": "Yo co-creo", "protocol": "Protocolo: Inteligencia colectiva", "goal": "Objetivo: convertir el grupo en una red neural viva.", "work": "Mecanismo: alcanzar el Neural Coupling. Aprendemos a sincronizar respiración y ritmos cerebrales dentro del equipo, llegando a insights y sinergias colectivas inaccesibles a la mente individual." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "El stack tecnológico de la interacción social:",
+        "items": [
+          { "name": "Reevaluación cognitiva", "text": "Técnica del PFC para amortiguar fisiológicamente la actividad de la amígdala (miedo) y reemplazarla por entusiasmo." },
+          { "name": "Bucles de oxitocina", "text": "Gestionar contacto visual y microexpresiones para construir confianza biológica instantánea." },
+          { "name": "Inter-brain Synchrony", "text": "Fenómeno por el cual los ritmos cerebrales de los partners se alinean para ejecutar tareas conjuntas sin fisuras." },
+          { "name": "Inhibición de DMN", "text": "Suprimir la «red del ego» del cerebro para pasar de proteger los límites personales a realizar un objetivo común." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "El nivel involucra las siguientes estructuras neuronales:",
+        "items": [
+          { "name": "Áreas de Broca y Wernicke", "text": "Centros de ensamblaje y entrega de la estructura del habla." },
+          { "name": "Neuronas espejo", "text": "Base biológica de la empatía y la lectura intuitiva de intenciones." },
+          { "name": "Corteza orbitofrontal", "text": "Modulador de elecciones éticas y armonía social en el momento." },
+          { "name": "rTPJ (unión témporo-parietal derecha)", "text": "Nodo clave para gestionar el «modelo mental» del otro." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado del Nivel 4 es entrar en un espacio de libertad social y co-creación. Marcadores de progreso:",
+        "items": [
+          "Expresión soberana: tu voz gana peso, tu auto-expresión se vuelve clara y auténtica, libre de tensión en mandíbula y garganta.",
+          "Precisión empática: capacidad de «leer» el estado del partner antes de que sea verbalizado.",
+          "Maestría sinérgica: habilidad de integrarte en procesos grupales de cualquier complejidad sin perder tu soberanía.",
+          "Pegamento hormonal: bucles de recompensa estables de oxitocina y endorfinas para las actividades colectivas."
+        ]
+      }
+    },
+    "5": {
+      "name": "MENTE NEURO-SOMÁTICA / INTELIGENCIA SENSORIAL",
+      "subtitle": "Precisión interoceptiva y expansión sensorial — el cuerpo como una antena de alta precisión.",
+      "metaDescription": "Nivel 5: inteligencia sensorial. Interocepción, ínsula, fibras C-táctiles. Convierte el cuerpo en una antena de alta precisión para datos internos y externos.",
+      "intro": "En esta etapa volvemos al «traje espacial biológico» — no como pasajeros pasivos, sino como pilotos expertos. Pasamos de la simple auto-observación a una Inteligencia Sensorial de alta precisión. El objetivo es convertir el cuerpo de un objeto que requiere mantenimiento en una «antena» perfecta capaz de leer los datos más sutiles del entorno interno y externo.",
+      "architecture": {
+        "intro": "El Nivel 5 integra protocolos de precisión sensorial:",
+        "parts": [
+          { "label": "Yo siento", "protocol": "Protocolo: Precisión interoceptiva y expansión sensorial", "goal": "Objetivo: pasar del «modo supervivencia» al «modo presencia» total a través de anclas sensoriales.", "work": "Trabajo: activar la ínsula, la corteza somatosensorial y los filtros talámicos. Implicar fibras C-táctiles e integración propioceptiva para crear un mapa corporal ultraprecíso." },
+          { "label": "Yo canalizo", "protocol": "Protocolo: Conductividad neurodinámica y flujo fascial", "goal": "Objetivo: el cuerpo como conductor — convertir los impulsos en recurso manteniendo la homeostasis.", "work": "Trabajo: eliminar congestiones musculares, vasculares y neurales. Entrenar al sistema nervioso y a los tejidos a dejar pasar estrés, dolor y emociones intensas sin obstrucción. Alcanzar libertad somática y alta conductividad." },
+          { "label": "Yo sintonizo", "protocol": "Protocolo: Fusión neurosomática y éxtasis colectivo", "goal": "Objetivo: de la conductividad individual a la resonancia colectiva — crear un circuito neurosomático único («estado-Nosotros»).", "work": "Trabajo: disolver los límites de la cápsula del ego. Activar oxitocina, neuronas espejo, complejo vagal ventral y modulación parietal. Alcanzar el acoplamiento neurosomático donde dos organismos funcionan como uno." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "El stack tecnológico de expansión sensorial:",
+        "items": [
+          { "name": "Precisión interoceptiva", "text": "Prácticas para activar la ínsula, permitiéndote oír pulsación, peristaltismo y micro-movimientos bajo la piel." },
+          { "name": "Discriminación sensorial", "text": "Ejercicios para afinar la exterocepción mediante el manejo consciente de los filtros talámicos." },
+          { "name": "Supresión del DMN vía sensorial", "text": "Trasladar la atención al «cable directo» de las sensaciones para desactivar la rumiación mental." },
+          { "name": "Embodiment Clarity", "text": "Eliminar el retraso entre la señal corporal y su realización." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "El nivel involucra las siguientes estructuras neuronales:",
+        "items": [
+          { "name": "Ínsula", "text": "Centro de traducción de señales fisiológicas en sensaciones conscientes." },
+          { "name": "Sistema nervioso parasimpático", "text": "Crear un fondo de seguridad para máxima sensibilidad." },
+          { "name": "Hemisferio derecho", "text": "Percepción holística y unificada de la experiencia corporal." },
+          { "name": "Corteza somatosensorial (S1/S2)", "text": "Afinamiento de la percepción táctil y la discriminación de estímulos." },
+          { "name": "Tálamo", "text": "Puerta sensorial — bajada de umbrales de filtrado para información detallada." },
+          { "name": "Fibras C-táctiles", "text": "Vías del tacto «emocional» que conectan piel y centros de bienestar." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado del Nivel 5 es alcanzar la «transparencia corporal». Marcadores de progreso:",
+        "items": [
+          "Aumento de la densidad de materia gris en la ínsula.",
+          "Reducción del tono muscular en reposo.",
+          "Normalización del GSR (respuesta galvánica de la piel) para estabilidad autonómica.",
+          "El cuerpo percibido no como ruido sino como un flujo de datos de alta precisión."
+        ]
+      }
+    },
+    "6": {
+      "name": "CEREBRO / AQUA II",
+      "subtitle": "Soberanía cognitiva e integración neural global — la mente como supercomputador de alta precisión.",
+      "metaDescription": "Nivel 6 CEREBRO / AQUA II: soberanía cognitiva y neuro-integración. Desactivación del DMN, metacognición, ritmos gamma. Domina el protocolo del meta-programador. ONDA Life.",
+      "intro": "En esta etapa pasamos de gestionar el «traje espacial biológico» a dominar la «cabina de mando» de la consciencia. Avanzamos de la inteligencia sensorial a la soberanía cognitiva. El objetivo es establecer distancia neural respecto al diálogo interno, sincronizar toda la arquitectura cerebral en un sistema único y activar la capacidad de resonancia colectiva. Dejas de ser participante de la tormenta mental y te conviertes en su arquitecto.",
+      "architecture": {
+        "intro": "El Nivel 6 integra protocolos metacognitivos y de red:",
+        "parts": [
+          { "label": "Yo observo", "protocol": "Protocolo: Distancia neural y monitorización metacognitiva", "goal": "Objetivo: pasar de rehén del flujo de la consciencia a su Meta-Programador.", "work": "Trabajo: desactivar la Default Mode Network (DMN) y establecer «distancia neural». Usar anclas sensoriales para colapsar el diálogo interno y convertir los pensamientos en impulsos eléctricos transparentes." },
+          { "label": "Yo integro", "protocol": "Protocolo: Integración neural global y síntesis de la experiencia", "goal": "Objetivo: alcanzar la máxima coherencia neural — el cerebro como un supercomputador único, sin fricción.", "work": "Trabajo: reforzar la conectividad horizontal (interhemisférica) y vertical (corteza-cuerpo). Usar el cuerpo calloso y el mPFC para reconciliar disonancia cognitiva y unir lógica con intuición." },
+          { "label": "Yo sincronizo", "protocol": "Protocolo: Sincronización neuroeléctrica e inteligencia colectiva", "goal": "Objetivo: del «modo Yo» al «nodo de la red» — activar el hiperscaneo entre cerebros y el flujo colectivo.", "work": "Trabajo: disparar ritmos gamma (40 Hz) y el sistema de neuronas espejo. Lograr el bloqueo de fase neuroeléctrico con otros para acceder a recursos y soluciones de escala «oceánica»." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "El stack tecnológico de neuro-integración:",
+        "items": [
+          { "name": "Etiquetado metacognitivo", "text": "Prácticas para «etiquetar» eventos mentales, activando el mPFC y quitando la carga emocional al pensamiento." },
+          { "name": "Sincronía interhemisférica", "text": "Ejercicios para el cuerpo calloso que aseguran un flujo de datos sin fisuras entre centros analíticos e intuitivos." },
+          { "name": "Ajuste del flujo gamma", "text": "Técnicas para estabilizar la actividad cerebral de alta frecuencia (40 Hz) para insights colectivos y aprendizaje rápido." },
+          { "name": "Desacoplamiento límbico", "text": "Entrenar al PFC a registrar datos «cargados» sin desencadenar liberación de cortisol ni de la amígdala." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "El nivel involucra las siguientes estructuras neuronales:",
+        "items": [
+          { "name": "PFC dorsolateral", "text": "Filtro principal que separa señales vitales del ruido informativo." },
+          { "name": "Cuerpo calloso", "text": "Puente para la integración horizontal y la sincronización interhemisférica." },
+          { "name": "Corteza cingulada anterior (ACC)", "text": "Monitor interno para detectar rumiación y señales en conflicto." },
+          { "name": "Red de neuronas espejo", "text": "Hardware biológico para la comprensión preverbal y la resonancia colectiva." },
+          { "name": "rTPJ (unión témporo-parietal derecha)", "text": "Hub para la navegación social y modelado de los estados de los demás." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado del Nivel 6 es alcanzar la «transparencia neural». Marcadores de progreso:",
+        "items": [
+          "Hueco cognitivo ampliado: capacidad de elegir tu respuesta a cualquier pensamiento o impulso.",
+          "Alta coherencia corazón-cerebro: ausencia total de conflicto interno y «fugas de energía».",
+          "Coherencia de fase entre cerebros: capacidad de «engancharse» al instante al ritmo del grupo.",
+          "Estabilización alfa/gamma: una mente tranquila y silenciosa, capaz de ráfagas informativas de alta intensidad."
+        ]
+      }
+    },
+    "7": {
+      "name": "ADN / AER II",
+      "subtitle": "Consciencia del ADN y maestría epigenética — el humano como diseñador biológico.",
+      "metaDescription": "Nivel 7 ADN / AER II: consciencia del ADN, epigenética, regeneración celular, autofagia. Conviértete en el diseñador biológico. ONDA Life.",
+      "intro": "En esta etapa pasamos más allá de los pensamientos y los músculos al núcleo informativo de la vida. Pasamos de ser «objetos biológicos» a Creadores Evolutivos. El objetivo es acceder a la biblioteca milenaria del ADN, activar la regeneración celular profunda y alinear tu desarrollo personal con el vector de desarrollo de la propia Vida. Ya no eres rehén de la herencia; eres el arquitecto de tu futuro biológico.",
+      "architecture": {
+        "intro": "El Nivel 7 integra memoria genética, reparación celular y síntesis evolutiva:",
+        "parts": [
+          { "label": "Yo recuerdo", "protocol": "Protocolo: Consciencia del ADN y memoria evolutiva", "goal": "Objetivo: pasar del «Yo» a la «Especie» — acceder al legado de 4 mil millones de años de supervivencia y triunfo.", "work": "Trabajo: activar el tronco encefálico y el archicórtex para transformar instintos antiguos en recursos conscientes. Usar la «respiración ancestral» para modular marcadores epigenéticos y estabilizar la calma instintiva." },
+          { "label": "Yo restauro", "protocol": "Protocolo: Regeneración celular y autocorrección del ADN", "goal": "Objetivo: pasar de «supervivencia y desgaste» a «renovación profunda» — la corteza prefrontal como panel de control de la reparación celular.", "work": "Trabajo: activar la autofagia y las enzimas de revisión del ADN vía alto tono vagal. Modular la telomerasa mediante estados meditativos profundos para devolver el sistema a sus «ajustes de fábrica»." },
+          { "label": "Yo sintetizo", "protocol": "Protocolo: Maestría epigenética y simbiosis planetaria", "goal": "Objetivo: del «consumidor de la vida» al «ingeniero de la vida» — convertir la experiencia personal en una actualización sana del campo planetario.", "work": "Trabajo: usar la corteza orbitofrontal y las redes de prospección para modelar un futuro creativo. Alinear la coherencia corazón-cerebro con los ciclos naturales globales (resonancias de Schumann) para la resonancia planetaria." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "El stack tecnológico epigenético y regenerativo:",
+        "items": [
+          { "name": "Resonancia epigenética", "text": "Modular estados internos para influir en la expresión génica relacionada con inmunidad, resiliencia al estrés y longevidad." },
+          { "name": "Disparo de la autofagia", "text": "Desactivar conscientemente el «eje del estrés» (HPA) para que los lisosomas reciclen el desecho celular y limpien la matriz extracelular." },
+          { "name": "Recapitulación arcaica", "text": "Contactar las capas más antiguas del cerebro para «reciclar» miedos primarios en sabiduría instintiva y dignidad biológica." },
+          { "name": "Modulación de la telomerasa", "text": "Estabilizar la integridad genética mediante fases de relajación ultraprofunda que estimulan la hormona del crecimiento y la reparación anabólica." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "El nivel involucra las siguientes estructuras biológicas y genéticas:",
+        "items": [
+          { "name": "Código genético (marcadores epigenéticos)", "text": "Lugar principal para modular la expresión génica mediante cambios fisiológicos conscientes." },
+          { "name": "Nervio vago (complejo ventral)", "text": "Palanca principal para conmutar el cuerpo al modo «trofotrópico» (reparación y construcción)." },
+          { "name": "Tronco encefálico y formación reticular", "text": "Puntos de acceso a algoritmos arcaicos de supervivencia y al cerebro «reptiliano»." },
+          { "name": "Lisosomas y telómeros", "text": "Hardware celular para reciclar desechos y mantener la longevidad genética." },
+          { "name": "Corteza orbitofrontal", "text": "Centro de la síntesis ética superior y la toma de decisiones evolutivas." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado del Nivel 7 es alcanzar la «soberanía biológica». Marcadores de progreso:",
+        "items": [
+          "Libertad epigenética: ya no eres víctima de guiones hereditarios o traumas familiares; eres el editor de tu código.",
+          "Efecto «ajustes de fábrica»: una sensación palpable de claridad, funcionalidad y «novedad» en tejidos y mente.",
+          "Validez evolutiva: una sensación inquebrantable de «justeza» y pertenencia a la flecha milenaria de la vida.",
+          "Flujo sostenible: el éxtasis de la creación se convierte en la frecuencia base, alimentado por eustrés sano y no por ansiedad."
+        ]
+      }
+    },
+    "8": {
+      "name": "ATÓMICO / IGNIS II",
+      "subtitle": "Consciencia cuántica y creación de realidad — el humano como Punto Cero.",
+      "metaDescription": "Destino final del sistema ONDA. Logra la soberanía cuántica y reconócete como la Fuente de la realidad mediante protocolos de Punto Cero.",
+      "intro": "En esta etapa final deconstruimos los últimos filtros de «solidez» y «separación». El Nivel 8 es el regreso al Punto de Singularidad, donde el vacío de la consciencia se reconoce no como ausencia sino como un medio de densidad infinita de energía. Pasas de ser un «objeto biológico» al Creador de la Realidad, dándote cuenta de que todo lo que experimentas ocurre dentro del campo de tu propia consciencia. Eres el espacio del que la existencia irrumpe.",
+      "architecture": {
+        "intro": "El Nivel 8 integra ajuste vibracional, consciencia no-local y la singularidad del ser:",
+        "parts": [
+          { "label": "Soy vibración", "protocol": "Protocolo: Consciencia cuántica y resonancia energética", "goal": "Objetivo: pasar de la percepción objetal a la ondulatoria — reconocer el cuerpo como 99,9% campo de energía.", "work": "Trabajo: activar la glándula pineal como transductor piezoeléctrico y estabilizar ritmos gamma de alta frecuencia (40+ Hz). Deconstruir el «ego biográfico» (DMN) para percibir directamente el interfaz de la realidad." },
+          { "label": "Soy plenitud", "protocol": "Protocolo: Unidad no-local y autoconciencia cuántica", "goal": "Objetivo: colapsar la dualidad «sujeto-objeto» — convertirte en un campo de consciencia auto-luminoso.", "work": "Trabajo: integrar todos los niveles previamente dominados (Terra, Aqua, Aer, Ignis) en una estructura única no-dual. Borrar la ilusión de separación mediante la desactivación del «censor del ego» en el PFC dorsolateral." },
+          { "label": "Soy la fuente", "protocol": "Protocolo: Singularidad de la consciencia y creación cuántica", "goal": "Objetivo: regresar a la Singularidad — pasar de «soy alguien» a la «Fuente de la que alguien surge».", "work": "Trabajo: alcanzar el «Punto Cero de actividad neural» — un estado de consciencia anterior al pensamiento. Usar el tálamo como puerta para distribuir las señales del Ser desde el potencial a la manifestación." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "El stack tecnológico cuántico-biológico y de singularidad:",
+        "items": [
+          { "name": "Deconstrucción de la densidad", "text": "Escanear el «vacío» dentro de los átomos del cuerpo, desplazando el foco del tejido sólido al espacio energético interior." },
+          { "name": "Sincronización de fase gamma", "text": "Técnicas para alcanzar casi el 100% de coherencia de ondas cerebrales, creando un estado de «superconductividad» en el sistema nervioso." },
+          { "name": "Práctica del Punto Cero", "text": "Sostener la atención en el silencio anterior al pensamiento para entrar en el espacio de la Pura Consciencia." },
+          { "name": "Radiación de la creación", "text": "Irradiar conscientemente la intención (Claridad, Creación) desde el centro del ser para modular el campo informativo externo." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "El nivel involucra la integración final del circuito de la consciencia:",
+        "items": [
+          { "name": "Glándula pineal", "text": "Transductor principal de señales electromagnéticas y vibracionales sutiles." },
+          { "name": "Resonancia tálamo-cortical", "text": "Hub central que distribuye las señales del «Ser» en el mundo manifestado." },
+          { "name": "Default Mode Network (modo de aniquilación)", "text": "Ausencia total de ruido del ego y programación biográfica." },
+          { "name": "Lóbulo parietal (desactivación)", "text": "Disolver la orientación espacial para experimentar la unidad transpersonal y no-local." },
+          { "name": "Formación reticular", "text": "Filtro definitivo que permite que la frecuencia de la «Fuente» llegue a la consciencia." }
+        ]
+      },
+      "results": {
+        "intro": "El resultado del Nivel 8 es alcanzar la «soberanía cuántica». Marcadores de progreso:",
+        "items": [
+          "Paz fundamental: estado base de silencio, independiente de cualquier circunstancia externa.",
+          "Autoría directa: la realización de ti mismo como causa de tus estados; la vida «emana» de ti, en vez de ocurrirte.",
+          "Realineamiento instantáneo: capacidad de aniquilar cualquier estrés o ruido en el «punto cero» de tu presencia en nanosegundos.",
+          "Radiación de presencia: un campo tan coherente que tu mera presencia armoniza el entorno y ordena el caos."
+        ]
+      }
+    }
+  }
+}

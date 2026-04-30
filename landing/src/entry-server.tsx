@@ -59,6 +59,9 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/articles/:slug"  element={<ArticlesSlugRouter />} />
           <Route path="/part/:slug"      element={<PartPage />} />
           <Route path="/level/:number"   element={<LevelPage />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`lvl-${l}`} path={`/${l}/level/:number`} element={<LevelPage />} />
+          ))}
           <Route path="/inner-spectrum" element={<InnerSpectrumPage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`is-${l}`} path={`/${l}/inner-spectrum`} element={<InnerSpectrumPage />} />

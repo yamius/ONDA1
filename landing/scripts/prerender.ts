@@ -18,10 +18,12 @@ import {
   stripLangPrefix,
   localizedPathFor,
   metricPathFor,
+  levelPathFor,
   parseMetricRoute,
+  parseLevelRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml } from './meta-inject'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -60,6 +62,16 @@ for (const lang of SUPPORTED_LANGS) {
   bioMetricByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'bio-metric.json'), 'utf-8')) as BioMetricFile
 }
 
+interface LevelFile {
+  ui: { metaTitleTpl: string }
+  levels: Record<string, { name: string; metaDescription?: string; subtitle?: string }>
+}
+// Level translations per language (for /level/:n pages).
+const levelByLang: Record<Lang, LevelFile> = {} as Record<Lang, LevelFile>
+for (const lang of SUPPORTED_LANGS) {
+  levelByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'level.json'), 'utf-8')) as LevelFile
+}
+
 function pageUrlFor(basePath: string, lang: Lang): string {
   return `${SITE_URL}${localizedPathFor(basePath, lang)}`.replace(/\/+$/, '') || SITE_URL
 }
@@ -85,6 +97,19 @@ function buildHreflangLinksForMetric(metric: string): string {
     tags.push(`<link rel="alternate" hreflang="${lang}" href="${metricUrlFor(metric, lang)}">`)
   }
   tags.push(`<link rel="alternate" hreflang="x-default" href="${metricUrlFor(metric, 'en')}">`)
+  return tags.join('\n  ')
+}
+
+function levelUrlFor(levelNum: number, lang: Lang): string {
+  return `${SITE_URL}${levelPathFor(levelNum, lang)}`
+}
+
+function buildHreflangLinksForLevel(levelNum: number): string {
+  const tags: string[] = []
+  for (const lang of SUPPORTED_LANGS) {
+    tags.push(`<link rel="alternate" hreflang="${lang}" href="${levelUrlFor(levelNum, lang)}">`)
+  }
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${levelUrlFor(levelNum, 'en')}">`)
   return tags.join('\n  ')
 }
 
@@ -175,16 +200,57 @@ function applyMetricLocalizedMeta(html: string, metric: string, lang: Lang): str
   return out
 }
 
+/**
+ * Same idea as applyMetricLocalizedMeta but for /level/:n pages — title and
+ * description come from level.json keyed by level number.
+ */
+function applyLevelLocalizedMeta(html: string, levelNum: number, lang: Lang): string {
+  const file = levelByLang[lang]
+  const lvl = file.levels[String(levelNum)]
+  if (!lvl) return html
+
+  const title = file.ui.metaTitleTpl.replace('{{number}}', String(levelNum)).replace('{{name}}', lvl.name)
+  const desc = lvl.metaDescription ?? lvl.subtitle ?? ''
+  const url = levelUrlFor(levelNum, lang)
+  const escTitle = escAttr(title)
+  const escDesc = escAttr(desc)
+  const escUrl = escAttr(url)
+
+  let out = html
+  out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
+  out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
+  out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
+  out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+
+  const hreflang = buildHreflangLinksForLevel(levelNum)
+  const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[lang]}">`
+  out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
+
+  return out
+}
+
 console.log('[prerender] Using renderToString + JSDOM (no Puppeteer) —', routes.length, 'routes')
 
 for (const route of routes) {
   try {
     const isLocalized = LOCALIZED_ROUTE_SET.has(route)
     const isMetricLocalized = LOCALIZED_METRIC_ROUTE_SET.has(route)
+    const isLevelLocalized = LOCALIZED_LEVEL_ROUTE_SET.has(route)
     const metricInfo = isMetricLocalized ? parseMetricRoute(route) : null
+    const levelInfo = isLevelLocalized ? parseLevelRoute(route) : null
     const lang: Lang = isLocalized
       ? langFromPath(route)
-      : metricInfo ? metricInfo.lang : 'en'
+      : metricInfo ? metricInfo.lang
+      : levelInfo ? levelInfo.lang
+      : 'en'
     const basePath = isLocalized ? stripLangPrefix(route) : route
 
     const html = renderToString(createApp(route, lang))
@@ -206,6 +272,8 @@ for (const route of routes) {
       out = applyLocalizedMeta(out, basePath, lang)
     } else if (metricInfo) {
       out = applyMetricLocalizedMeta(out, metricInfo.metric, metricInfo.lang)
+    } else if (levelInfo) {
+      out = applyLevelLocalizedMeta(out, levelInfo.levelNum, levelInfo.lang)
     }
 
     // Build fingerprint for deployment verification (view page source, search "onda-build")
