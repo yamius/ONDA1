@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "Biohacking & Neuroscience Glossary | ONDA Life Knowledge Base",
+    "description": "Explore 100+ key terms in molecular psychology, neurophysiology, and consciousness architecture. Your comprehensive guide to the ONDA Life system."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Glossary"
+  },
+  "badge": "[ KNOWLEDGE BASE ]",
+  "h1": "Glossary",
+  "subtitle": "Key concepts, terms, and scientific foundations behind the ONDA Life system. From molecular psychology to consciousness architecture.",
+  "featuredHeader": "[ FEATURED TERMS ]",
+  "searchPlaceholder": "search terms...",
+  "allLabel": "All",
+  "noResults": "No terms found. Try a different search."
+}

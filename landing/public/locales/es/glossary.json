@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "Glosario de biohacking y neurociencia | Base de conocimientos de ONDA Life",
+    "description": "Explora más de 100 términos clave de psicología molecular, neurofisiología y arquitectura de la consciencia. Tu guía completa del sistema ONDA Life."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Glosario"
+  },
+  "badge": "[ BASE DE CONOCIMIENTOS ]",
+  "h1": "Glosario",
+  "subtitle": "Conceptos clave, términos y fundamentos científicos del sistema ONDA Life. De la psicología molecular a la arquitectura de la consciencia.",
+  "featuredHeader": "[ TÉRMINOS DESTACADOS ]",
+  "searchPlaceholder": "buscar términos...",
+  "allLabel": "Todos",
+  "noResults": "No se encontraron términos. Prueba con otra búsqueda."
+}

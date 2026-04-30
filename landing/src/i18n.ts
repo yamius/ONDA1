@@ -55,6 +55,16 @@ import esTerms from '../public/locales/es/terms.json'
 import ruTerms from '../public/locales/ru/terms.json'
 import ukTerms from '../public/locales/uk/terms.json'
 import zhTerms from '../public/locales/zh/terms.json'
+import enGlossary from '../public/locales/en/glossary.json'
+import esGlossary from '../public/locales/es/glossary.json'
+import ruGlossary from '../public/locales/ru/glossary.json'
+import ukGlossary from '../public/locales/uk/glossary.json'
+import zhGlossary from '../public/locales/zh/glossary.json'
+import enArticles from '../public/locales/en/articles.json'
+import esArticles from '../public/locales/es/articles.json'
+import ruArticles from '../public/locales/ru/articles.json'
+import ukArticles from '../public/locales/uk/articles.json'
+import zhArticles from '../public/locales/zh/articles.json'
 
 export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh'] as const
 export type Lang = (typeof SUPPORTED_LANGS)[number]
@@ -73,13 +83,13 @@ if (!i18n.isInitialized) {
     fallbackLng: 'en',
     supportedLngs: SUPPORTED_LANGS as unknown as string[],
     resources: {
-      en: { home: en, about: enAbout, 'inner-spectrum': enIs, bio: enBio, 'bio-metric': enBioMetric, level: enLevel, part: enPart, contact: enContact, sitemap: enSitemap, privacy: enPrivacy, terms: enTerms },
-      es: { home: es, about: esAbout, 'inner-spectrum': esIs, bio: esBio, 'bio-metric': esBioMetric, level: esLevel, part: esPart, contact: esContact, sitemap: esSitemap, privacy: esPrivacy, terms: esTerms },
-      ru: { home: ru, about: ruAbout, 'inner-spectrum': ruIs, bio: ruBio, 'bio-metric': ruBioMetric, level: ruLevel, part: ruPart, contact: ruContact, sitemap: ruSitemap, privacy: ruPrivacy, terms: ruTerms },
-      uk: { home: uk, about: ukAbout, 'inner-spectrum': ukIs, bio: ukBio, 'bio-metric': ukBioMetric, level: ukLevel, part: ukPart, contact: ukContact, sitemap: ukSitemap, privacy: ukPrivacy, terms: ukTerms },
-      zh: { home: zh, about: zhAbout, 'inner-spectrum': zhIs, bio: zhBio, 'bio-metric': zhBioMetric, level: zhLevel, part: zhPart, contact: zhContact, sitemap: zhSitemap, privacy: zhPrivacy, terms: zhTerms },
+      en: { home: en, about: enAbout, 'inner-spectrum': enIs, bio: enBio, 'bio-metric': enBioMetric, level: enLevel, part: enPart, contact: enContact, sitemap: enSitemap, privacy: enPrivacy, terms: enTerms, glossary: enGlossary, articles: enArticles },
+      es: { home: es, about: esAbout, 'inner-spectrum': esIs, bio: esBio, 'bio-metric': esBioMetric, level: esLevel, part: esPart, contact: esContact, sitemap: esSitemap, privacy: esPrivacy, terms: esTerms, glossary: esGlossary, articles: esArticles },
+      ru: { home: ru, about: ruAbout, 'inner-spectrum': ruIs, bio: ruBio, 'bio-metric': ruBioMetric, level: ruLevel, part: ruPart, contact: ruContact, sitemap: ruSitemap, privacy: ruPrivacy, terms: ruTerms, glossary: ruGlossary, articles: ruArticles },
+      uk: { home: uk, about: ukAbout, 'inner-spectrum': ukIs, bio: ukBio, 'bio-metric': ukBioMetric, level: ukLevel, part: ukPart, contact: ukContact, sitemap: ukSitemap, privacy: ukPrivacy, terms: ukTerms, glossary: ukGlossary, articles: ukArticles },
+      zh: { home: zh, about: zhAbout, 'inner-spectrum': zhIs, bio: zhBio, 'bio-metric': zhBioMetric, level: zhLevel, part: zhPart, contact: zhContact, sitemap: zhSitemap, privacy: zhPrivacy, terms: zhTerms, glossary: zhGlossary, articles: zhArticles },
     },
-    ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part', 'contact', 'sitemap', 'privacy', 'terms'],
+    ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part', 'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles'],
     defaultNS: 'home',
     interpolation: { escapeValue: false },
     react: { useSuspense: false },

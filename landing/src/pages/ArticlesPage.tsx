@@ -1,8 +1,10 @@
 import { useEffect, useState, useMemo } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { articles } from '../data/articles'
 import { FEATURED_ARTICLE_SLUGS, ARTICLE_CATEGORIES } from '../data/articles-categories'
 import { OptimizedImage } from '../components/OptimizedImage'
+import { langFromPath, homePathFor } from '../i18n'
 
 interface MdArticle {
   slug: string
@@ -35,11 +37,11 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-const ARTICLES_TITLE = 'Articles | ONDA Life — Biohacking & Neuroscience'
-const ARTICLES_DESC =
-  'Deep-dive articles on vagal tone, nervous system optimization, and consciousness architecture. Science-backed guides for your biocomputer upgrade.'
-
 export function ArticlesPage() {
+  const { t } = useTranslation('articles')
+  const location = useLocation()
+  const lang = langFromPath(location.pathname)
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
   const [mdArticles, setMdArticles] = useState<MdArticle[]>([])
   const [search, setSearch] = useState('')
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
@@ -57,7 +59,7 @@ export function ArticlesPage() {
       title: a.title,
       description: a.description,
       category: a.category,
-      path: `/articles/${a.slug}`,
+      path: `${langPrefix}/articles/${a.slug}`,
       image: a.image,
     })),
     ...mdArticles.map((a) => ({
@@ -70,10 +72,10 @@ export function ArticlesPage() {
         .join(' ')
         .slice(0, 180) + '…',
       category: 'Biological Software',
-      path: `/articles/${a.slug}`,
+      path: `${langPrefix}/articles/${a.slug}`,
       isMd: true as const,
     })),
-  ], [mdArticles])
+  ], [mdArticles, langPrefix])
 
   const filtered = useMemo(() => allArticles.filter((article) => {
     const matchesSearch =
@@ -92,49 +94,39 @@ export function ArticlesPage() {
   )
 
   useEffect(() => {
-    document.title = ARTICLES_TITLE
-    setMeta('description', ARTICLES_DESC)
-    setMeta('og:title', ARTICLES_TITLE, true)
-    setMeta('og:description', ARTICLES_DESC, true)
-    setMeta('og:url', `${SITE_URL}/articles`, true)
+    const title = t('meta.title')
+    const desc = t('meta.description')
+    document.title = title
+    setMeta('description', desc)
+    setMeta('og:title', title, true)
+    setMeta('og:description', desc, true)
+    setMeta('og:url', `${SITE_URL}${langPrefix}/articles`, true)
     setMeta('og:image', OG_IMAGE, true)
     setMeta('twitter:card', 'summary_large_image', true)
-    setMeta('twitter:title', ARTICLES_TITLE, true)
-    setMeta('twitter:description', ARTICLES_DESC, true)
+    setMeta('twitter:title', title, true)
+    setMeta('twitter:description', desc, true)
     setMeta('twitter:image', OG_IMAGE, true)
-    return () => {
-      document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
-      setMeta('description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
-      setMeta('og:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
-      setMeta('og:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
-      setMeta('og:url', SITE_URL, true)
-      setMeta('og:image', OG_IMAGE, true)
-      setMeta('twitter:card', 'summary_large_image', true)
-      setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
-      setMeta('twitter:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
-      setMeta('twitter:image', OG_IMAGE, true)
-    }
-  }, [])
+  }, [t, langPrefix])
 
   return (
     <div className="mx-auto max-w-5xl px-4 pb-16 md:px-6">
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to="/" className="transition-colors hover:text-white/50">
-          Home
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">
+          {t('breadcrumb.home')}
         </Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">
-          Articles
+          {t('breadcrumb.current')}
         </span>
       </nav>
       <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-        [ DEEP DIVES ]
+        {t('badge')}
       </div>
       <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-5xl">
-        Articles
+        {t('h1')}
       </h1>
       <p className="mb-12 max-w-2xl font-mono text-sm text-white/40">
-        Science-backed guides for nervous system optimization. From vagal tone to consciousness architecture.
+        {t('subtitle')}
       </p>
 
       {/* Search */}
@@ -147,7 +139,7 @@ export function ArticlesPage() {
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="search articles..."
+            placeholder={t('searchPlaceholder')}
             className="w-full rounded-lg border border-white/10 bg-surface px-4 py-3 pl-8 font-mono text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-terminal-green/30"
           />
         </div>
@@ -164,7 +156,7 @@ export function ArticlesPage() {
                 : 'border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
             }`}
           >
-            All ({allArticles.length})
+            {t('allLabel')} ({allArticles.length})
           </button>
           {ARTICLE_CATEGORIES.map((cat) => {
             const count = allArticles.filter((a) => a.category === cat).length
@@ -230,7 +222,7 @@ export function ArticlesPage() {
       {filtered.length === 0 && (
         <div className="py-20 text-center">
           <p className="font-mono text-sm text-white/30">
-            No articles found. Try a different search.
+            {t('noResults')}
           </p>
         </div>
       )}
@@ -238,7 +230,7 @@ export function ArticlesPage() {
       {/* Featured Articles */}
       <div className="mt-16">
         <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-          [ FEATURED ARTICLES ]
+          {t('featuredHeader')}
         </h2>
         <div className="flex flex-wrap gap-3">
           {featuredArticles.map((article) => (

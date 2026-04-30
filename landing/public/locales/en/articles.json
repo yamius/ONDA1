@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "Articles | ONDA Life — Biohacking & Neuroscience",
+    "description": "Deep-dive articles on vagal tone, nervous system optimization, and consciousness architecture. Science-backed guides for your biocomputer upgrade."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Articles"
+  },
+  "badge": "[ DEEP DIVES ]",
+  "h1": "Articles",
+  "subtitle": "Science-backed guides for nervous system optimization. From vagal tone to consciousness architecture.",
+  "searchPlaceholder": "search articles...",
+  "allLabel": "All",
+  "noResults": "No articles found. Try a different search.",
+  "featuredHeader": "[ FEATURED ARTICLES ]"
+}

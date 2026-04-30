@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "Artículos | ONDA Life — Biohacking y neurociencia",
+    "description": "Artículos en profundidad sobre tono vagal, optimización del sistema nervioso y arquitectura de la consciencia. Guías con base científica para actualizar tu biocomputador."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Artículos"
+  },
+  "badge": "[ INMERSIONES PROFUNDAS ]",
+  "h1": "Artículos",
+  "subtitle": "Guías con base científica para optimizar el sistema nervioso. Del tono vagal a la arquitectura de la consciencia.",
+  "searchPlaceholder": "buscar artículos...",
+  "allLabel": "Todos",
+  "noResults": "No se encontraron artículos. Prueba con otra búsqueda.",
+  "featuredHeader": "[ ARTÍCULOS DESTACADOS ]"
+}

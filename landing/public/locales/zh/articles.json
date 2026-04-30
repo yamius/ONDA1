@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "文章 | ONDA Life — 生物黑客与神经科学",
+    "description": "关于迷走神经张力、神经系统优化和意识架构的深度文章。基于科学的指南，助你升级生物计算机。"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "current": "文章"
+  },
+  "badge": "[ 深度探索 ]",
+  "h1": "文章",
+  "subtitle": "基于科学的神经系统优化指南。从迷走神经张力到意识架构。",
+  "searchPlaceholder": "搜索文章...",
+  "allLabel": "全部",
+  "noResults": "未找到文章。请尝试其他搜索。",
+  "featuredHeader": "[ 精选文章 ]"
+}

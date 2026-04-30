@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { glossaryTerms } from '../data/glossary'
 import {
   CATEGORY_DESCRIPTIONS,
   FEATURED_TERM_SLUGS,
   GLOSSARY_CATEGORIES,
 } from '../data/glossary-categories'
+import { langFromPath, homePathFor } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -21,35 +23,26 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-const GLOSSARY_TITLE = 'Biohacking & Neuroscience Glossary | ONDA Life Knowledge Base'
-const GLOSSARY_DESC =
-  'Explore 100+ key terms in molecular psychology, neurophysiology, and consciousness architecture. Your comprehensive guide to the ONDA Life system.'
-
 export function GlossaryPage() {
+  const { t } = useTranslation('glossary')
+  const location = useLocation()
+  const lang = langFromPath(location.pathname)
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
+
   useEffect(() => {
-    document.title = GLOSSARY_TITLE
-    setMeta('description', GLOSSARY_DESC)
-    setMeta('og:title', GLOSSARY_TITLE, true)
-    setMeta('og:description', GLOSSARY_DESC, true)
-    setMeta('og:url', `${SITE_URL}/glossary`, true)
+    const title = t('meta.title')
+    const desc = t('meta.description')
+    document.title = title
+    setMeta('description', desc)
+    setMeta('og:title', title, true)
+    setMeta('og:description', desc, true)
+    setMeta('og:url', `${SITE_URL}${langPrefix}/glossary`, true)
     setMeta('og:image', OG_IMAGE, true)
     setMeta('twitter:card', 'summary_large_image', true)
-    setMeta('twitter:title', GLOSSARY_TITLE, true)
-    setMeta('twitter:description', GLOSSARY_DESC, true)
+    setMeta('twitter:title', title, true)
+    setMeta('twitter:description', desc, true)
     setMeta('twitter:image', OG_IMAGE, true)
-    return () => {
-      document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
-      setMeta('description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
-      setMeta('og:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
-      setMeta('og:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
-      setMeta('og:url', SITE_URL, true)
-      setMeta('og:image', OG_IMAGE, true)
-      setMeta('twitter:card', 'summary_large_image', true)
-      setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
-      setMeta('twitter:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
-      setMeta('twitter:image', OG_IMAGE, true)
-    }
-  }, [])
+  }, [t, langPrefix])
 
   const [search, setSearch] = useState('')
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
@@ -66,29 +59,28 @@ export function GlossaryPage() {
   return (
     <div className="mx-auto max-w-5xl px-4 pb-16 md:px-6">
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to="/" className="transition-colors hover:text-white/50">
-          Home
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">
+          {t('breadcrumb.home')}
         </Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">
-          Glossary
+          {t('breadcrumb.current')}
         </span>
       </nav>
       <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-        [ KNOWLEDGE BASE ]
+        {t('badge')}
       </div>
       <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-5xl">
-        Glossary
+        {t('h1')}
       </h1>
       <p className="mb-12 max-w-2xl font-mono text-sm text-white/40">
-        Key concepts, terms, and scientific foundations behind the ONDA Life system.
-        From molecular psychology to consciousness architecture.
+        {t('subtitle')}
       </p>
 
       {/* Featured Terms */}
       <div className="mb-12">
         <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-          [ FEATURED TERMS ]
+          {t('featuredHeader')}
         </h2>
         <div className="flex flex-wrap gap-3">
           {FEATURED_TERM_SLUGS.map((slug) => {
@@ -97,7 +89,7 @@ export function GlossaryPage() {
             return (
               <Link
                 key={slug}
-                to={`/glossary/${slug}`}
+                to={`${langPrefix}/glossary/${slug}`}
                 className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/40 transition-all hover:border-white/20 hover:text-white/60"
               >
                 {term.title}
@@ -117,7 +109,7 @@ export function GlossaryPage() {
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="search terms..."
+            placeholder={t('searchPlaceholder')}
             className="w-full rounded-lg border border-white/10 bg-surface px-4 py-3 pl-8 font-mono text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-terminal-green/30"
           />
         </div>
@@ -134,7 +126,7 @@ export function GlossaryPage() {
                 : 'border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
             }`}
           >
-            All ({glossaryTerms.length})
+            {t('allLabel')} ({glossaryTerms.length})
           </button>
           {GLOSSARY_CATEGORIES.map((cat) => {
             const count = glossaryTerms.filter((t) => t.category === cat).length
@@ -165,7 +157,7 @@ export function GlossaryPage() {
         {filtered.map((term) => (
           <Link
             key={term.slug}
-            to={`/glossary/${term.slug}`}
+            to={`${langPrefix}/glossary/${term.slug}`}
             className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/10"
           >
             <div className="mb-2 flex items-center justify-between">
@@ -189,7 +181,7 @@ export function GlossaryPage() {
       {filtered.length === 0 && (
         <div className="py-20 text-center">
           <p className="font-mono text-sm text-white/30">
-            No terms found. Try a different search.
+            {t('noResults')}
           </p>
         </div>
       )}
