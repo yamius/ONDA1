@@ -251,7 +251,7 @@ export function Layout() {
                 {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
               </Link>
               <Link to={localizedPathFor('/bio', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
-                {t('menu.bio')}<span className="sr-only"> — live biometrics measurement</span>
+                {t('menu.bio')}<span className="sr-only">{t('menu.bioSr')}</span>
               </Link>
               <Link to="/contact" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.contacts')}<span className="sr-only">{t('menu.contactsSr')}</span>
@@ -268,7 +268,7 @@ export function Layout() {
                 to="/sitemap"
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >
-                Site map
+                {t('footer.sitemap')}
               </Link>
             </div>
             <div className="flex justify-end items-center gap-4">
@@ -276,13 +276,13 @@ export function Layout() {
                 to="/privacy"
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >
-                Privacy Policy
+                {t('footer.privacy')}
               </Link>
               <Link
                 to="/terms"
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >
-                Terms of Service
+                {t('footer.terms')}
               </Link>
             </div>
           </div>

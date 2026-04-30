@@ -12,6 +12,7 @@
     "bio": "Bio OS",
     "contacts": "Contacts",
     "contactsSr": " — reach ONDA Life team",
+    "bioSr": " — live biometrics measurement",
     "languagesLabel": "Language"
   },
   "hero": {
@@ -93,6 +94,11 @@
       "errorGeneric": "Something went wrong. Please try again later.",
       "close": "Close"
     }
+  },
+  "footer": {
+    "sitemap": "Site map",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   },
   "meta": {
     "title": "ONDA Life | Biohacking App, HRV Tracker & Consciousness OS",

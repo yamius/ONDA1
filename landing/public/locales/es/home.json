@@ -12,6 +12,7 @@
     "bio": "Bio OS",
     "contacts": "Contactos",
     "contactsSr": " — contacta con el equipo de ONDA Life",
+    "bioSr": " — medición de biometría en vivo",
     "languagesLabel": "Idioma"
   },
   "hero": {
@@ -93,6 +94,11 @@
       "errorGeneric": "Algo salió mal. Inténtalo de nuevo más tarde.",
       "close": "Cerrar"
     }
+  },
+  "footer": {
+    "sitemap": "Mapa del sitio",
+    "privacy": "Política de privacidad",
+    "terms": "Términos del servicio"
   },
   "meta": {
     "title": "ONDA Life | App de biohacking, monitor HRV y SO de la consciencia",

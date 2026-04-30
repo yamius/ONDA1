@@ -12,6 +12,7 @@
     "bio": "Bio OS",
     "contacts": "联系",
     "contactsSr": " — 联系 ONDA Life 团队",
+    "bioSr": " — 实时生物特征测量",
     "languagesLabel": "语言"
   },
   "hero": {
@@ -93,6 +94,11 @@
       "errorGeneric": "出了点问题，请稍后重试。",
       "close": "关闭"
     }
+  },
+  "footer": {
+    "sitemap": "网站地图",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
   },
   "meta": {
     "title": "ONDA Life | 生物黑客 App、HRV 监测与意识操作系统",
