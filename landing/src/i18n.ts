@@ -100,15 +100,35 @@ export function stripLangPrefix(pathname: string): string {
 }
 
 /**
- * Given the current pathname and a target language, return the localized URL
- * for the same page. Falls back to the language home if the current page is not
- * in the localized set (e.g. /articles, /glossary — Phase 2 stops at Bio/About/IS).
+ * Given the current pathname and a target language, return the URL the language
+ * switcher should navigate to.
+ *
+ * - Pages localized into all 5 languages (home, about, bio, inner-spectrum):
+ *   navigate to the localized variant.
+ * - Metric detail routes (/bio/:metric): also localized → /:lang/bio/:metric.
+ * - Pages still EN-only (Articles, Glossary, Contact, /part/, /level/, …):
+ *   stay on the same URL rather than dumping the user to the home page. The
+ *   page itself renders the only translation it has (EN), but the user keeps
+ *   their context.
  */
 export function localizedPathFor(pathname: string, lang: Lang): string {
   const basePath = stripLangPrefix(pathname)
-  if (!LOCALIZED_BASE_PATHS.includes(basePath)) return homePathFor(lang)
-  if (lang === 'en') return basePath
-  return basePath === '/' ? `/${lang}` : `/${lang}${basePath}`
+
+  // Metric detail page: preserve the metric slug across language switches.
+  const metricMatch = basePath.match(/^\/bio\/([^/]+)$/)
+  if (metricMatch) {
+    return lang === 'en' ? `/bio/${metricMatch[1]}` : `/${lang}/bio/${metricMatch[1]}`
+  }
+
+  if (LOCALIZED_BASE_PATHS.includes(basePath)) {
+    if (lang === 'en') return basePath
+    return basePath === '/' ? `/${lang}` : `/${lang}${basePath}`
+  }
+
+  // Non-localized page (Articles, Glossary, etc) — keep the user on the same
+  // URL. The base path is already EN-only since these pages have no /:lang/
+  // variants registered.
+  return basePath
 }
 
 /** All prerender route variants for localized pages: 4 base paths × 5 langs = 20. */
