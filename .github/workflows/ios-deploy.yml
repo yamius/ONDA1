@@ -117,9 +117,8 @@ jobs:
 
       - name: Install CocoaPods dependencies
         # Запускаем pod install явно, чтобы гарантировать установку:
-        # - airbridge-ios-sdk (~> 4.1) — нативная атрибуция Airbridge,
-        #   подтягивается последний 4.x для совместимости с iOS 26.
-        # - SentryCapacitor (нативный перехват OOM-краш-репортов)
+        # - TenjinSDK — нативная атрибуция, заменила Airbridge в 1.4.0.
+        # - SentryCapacitor (нативный перехват OOM-краш-репортов).
         run: |
           cd ios/App
           echo "=== Updating CocoaPods repo and installing pods ==="
@@ -136,12 +135,12 @@ jobs:
           else
             echo "SentryCapacitor pod detected ✓"
           fi
-          echo "=== Checking Airbridge pod ==="
-          if ! grep -q -i "airbridge-ios-sdk" Podfile.lock; then
-            echo "::error::airbridge-ios-sdk pod NOT found in Podfile.lock — attribution will not work!"
+          echo "=== Checking Tenjin pod ==="
+          if ! grep -q -i "TenjinSDK" Podfile.lock; then
+            echo "::error::TenjinSDK pod NOT found in Podfile.lock — attribution will not work!"
             exit 1
           else
-            echo "airbridge-ios-sdk pod detected ✓"
+            echo "TenjinSDK pod detected ✓"
           fi
 
       - name: Create App Store Connect API Key
