@@ -324,10 +324,19 @@ for (const route of routes) {
         const partFile = partByLang[partInfo.lang]
         const partData = partFile.parts?.[partInfo.slug]
         const desc = partData?.metaDescription ?? ''
+        const subtitle = partData?.subtitle ?? ''
         const url = partUrlFor(partInfo.slug, partInfo.lang)
         const escDesc = escAttr(desc)
         const escUrl = escAttr(url)
         out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
+        if (subtitle) {
+          const title = `${subtitle} | ONDA Life`
+          const escTitle = escAttr(title)
+          out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
+          out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escTitle}">`)
+        }
         if (desc) {
           out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${escDesc}">`)
           out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escDesc}">`)

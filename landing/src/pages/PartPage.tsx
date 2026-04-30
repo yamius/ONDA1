@@ -2023,8 +2023,9 @@ export function PartPage() {
   useEffect(() => {
     if (!part) return
     const seo = slug ? PART_SEO[slug] : undefined
-    const title = seo?.title ?? `${part.title} ${part.titleHighlight} | ONDA Life`
-    const desc = seo?.description ?? tMetaDesc ?? DEFAULT_DESCRIPTION
+    const enTitle = seo?.title ?? `${part.title} ${part.titleHighlight} | ONDA Life`
+    const title = lang === 'en' ? enTitle : (tSubtitle ? `${tSubtitle} | ONDA Life` : enTitle)
+    const desc = (lang !== 'en' && tMetaDesc) ? tMetaDesc : (seo?.description ?? tMetaDesc ?? DEFAULT_DESCRIPTION)
     document.title = title
     setMeta('description', desc)
     setMeta('og:title', title, true)
@@ -2056,20 +2057,10 @@ export function PartPage() {
       el.textContent = JSON.stringify(faqSchema)
     }
     return () => {
-      document.title = 'ONDA Life | Operating System for Your Consciousness'
-      setMeta('description', DEFAULT_DESCRIPTION)
-      setMeta('og:title', 'ONDA Life | Operating System for Your Consciousness', true)
-      setMeta('og:description', DEFAULT_DESCRIPTION, true)
-      setMeta('og:url', SITE_URL, true)
-      setMeta('og:image', OG_IMAGE, true)
-      setMeta('twitter:card', 'summary_large_image', true)
-      setMeta('twitter:title', 'ONDA Life | Operating System for Your Consciousness', true)
-      setMeta('twitter:description', DEFAULT_DESCRIPTION, true)
-      setMeta('twitter:image', OG_IMAGE, true)
       const faqEl = document.querySelector('script[data-faq-schema]')
       if (faqEl) faqEl.remove()
     }
-  }, [part, slug, lang, tMetaDesc])
+  }, [part, slug, lang, tMetaDesc, tSubtitle])
 
   if (!part) {
     return (

@@ -125,6 +125,15 @@ export function Layout() {
             {t('menu.about')}<span className="sr-only">{t('menu.aboutSr')}</span>
           </TransitionLink>
           <TransitionLink
+            to={localizedPathFor('/inner-spectrum', currentLang)}
+            onClick={() => setMenuOpen(false)}
+            className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
+              location.pathname.endsWith('/inner-spectrum') ? 'text-cyan-400' : 'text-white/70'
+            }`}
+          >
+            {t('menu.philosophy')}<span className="sr-only">{t('menu.philosophySr')}</span>
+          </TransitionLink>
+          <TransitionLink
             to="/glossary"
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -231,6 +240,9 @@ export function Layout() {
             <div className="flex flex-wrap justify-center gap-6">
               <Link to={localizedPathFor('/about', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.about')}<span className="sr-only">{t('menu.aboutSr')}</span>
+              </Link>
+              <Link to={localizedPathFor('/inner-spectrum', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
+                {t('menu.philosophy')}<span className="sr-only">{t('menu.philosophySr')}</span>
               </Link>
               <Link to="/glossary" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.glossary')}<span className="sr-only">{t('menu.glossarySr')}</span>
