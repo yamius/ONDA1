@@ -1,26 +1,25 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { articles } from '../data/articles'
 import { glossaryTerms } from '../data/glossary'
 import { parts } from './PartPage'
 import { levelsData } from '../data/levels'
 import { METRIC_DETAILS } from '../data/bioMetrics'
 import { useEffect } from 'react'
+import { langFromPath } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 
-const MAIN_LINKS = [
-  { to: '/', label: 'Home — ONDA Life biohacking OS' },
-  { to: '/about', label: 'About ONDA Life' },
-  { to: '/articles', label: 'Articles on biohacking and human optimization' },
-  { to: '/glossary', label: 'Glossary of biohacking and neuroscience terms' },
-  { to: '/the-stack', label: 'The Stack — protocol system' },
-  { to: '/contact', label: 'Contacts — reach ONDA Life team' },
-  { to: '/bio', label: 'Bio OS — live biometrics measurement' },
-]
-
 export function SitemapPage() {
+  const { t } = useTranslation('sitemap')
+  const location = useLocation()
+  const lang = langFromPath(location.pathname)
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
+
   useEffect(() => {
-    document.title = 'Sitemap — ONDA Life'
+    const title = t('meta.title')
+    const desc = t('meta.description')
+    document.title = title
     const setMeta = (name: string, content: string) => {
       let el = document.querySelector<HTMLMetaElement>(`meta[name="${name}"]`)
       if (!el) { el = document.createElement('meta'); el.name = name; document.head.appendChild(el) }
@@ -31,29 +30,39 @@ export function SitemapPage() {
       if (!el) { el = document.createElement('meta'); el.setAttribute('property', prop); document.head.appendChild(el) }
       el.content = content
     }
-    setMeta('description', 'Full sitemap of ONDA Life — all articles, glossary terms, levels, parts and main pages.')
+    setMeta('description', desc)
     setMeta('robots', 'index, follow')
-    setOg('og:title', 'Sitemap — ONDA Life')
-    setOg('og:description', 'Full sitemap of ONDA Life — all articles, glossary terms, levels, parts and main pages.')
-    setOg('og:url', `${SITE_URL}/sitemap`)
+    setOg('og:title', title)
+    setOg('og:description', desc)
+    setOg('og:url', `${SITE_URL}${langPrefix}/sitemap`)
     let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')
     if (!canonical) { canonical = document.createElement('link'); canonical.rel = 'canonical'; document.head.appendChild(canonical) }
-    canonical.href = `${SITE_URL}/sitemap`
-  }, [])
+    canonical.href = `${SITE_URL}${langPrefix}/sitemap`
+  }, [t, langPrefix])
+
+  const mainLinks = [
+    { to: lang === 'en' ? '/' : `/${lang}`, label: t('main.home') },
+    { to: lang === 'en' ? '/about' : `/${lang}/about`, label: t('main.about') },
+    { to: `${langPrefix}/articles`, label: t('main.articles') },
+    { to: `${langPrefix}/glossary`, label: t('main.glossary') },
+    { to: `${langPrefix}/the-stack`, label: t('main.stack') },
+    { to: `${langPrefix}/contact`, label: t('main.contact') },
+    { to: lang === 'en' ? '/bio' : `/${lang}/bio`, label: t('main.bio') },
+  ]
 
   return (
     <div className="mx-auto max-w-7xl px-5 py-16 md:px-6 md:py-24">
-      <h1 className="mb-2 font-mono text-2xl font-bold text-cyan-400 md:text-3xl">Site Map</h1>
-      <p className="mb-12 text-sm text-white/40">All pages on onda-life.com</p>
+      <h1 className="mb-2 font-mono text-2xl font-bold text-cyan-400 md:text-3xl">{t('title')}</h1>
+      <p className="mb-12 text-sm text-white/40">{t('subtitle')}</p>
 
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
 
         {/* Column 1: Main + Glossary below */}
         <div className="flex flex-col gap-10">
           <section>
-            <h2 className="mb-4 font-mono text-xs font-semibold uppercase tracking-widest text-white/30">Main</h2>
+            <h2 className="mb-4 font-mono text-xs font-semibold uppercase tracking-widest text-white/30">{t('sections.main')}</h2>
             <ul className="space-y-2">
-              {MAIN_LINKS.map(({ to, label }) => (
+              {mainLinks.map(({ to, label }) => (
                 <li key={to}>
                   <Link to={to} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
                     {label}
@@ -64,12 +73,12 @@ export function SitemapPage() {
           </section>
 
           <section>
-            <h2 className="mb-4 font-mono text-xs font-semibold uppercase tracking-widest text-white/30">Glossary</h2>
+            <h2 className="mb-4 font-mono text-xs font-semibold uppercase tracking-widest text-white/30">{t('sections.glossary')}</h2>
             <ul className="space-y-2">
-              {glossaryTerms.map((t) => (
-                <li key={t.slug}>
-                  <Link to={`/glossary/${t.slug}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
-                    {t.title}
+              {glossaryTerms.map((term) => (
+                <li key={term.slug}>
+                  <Link to={`${langPrefix}/glossary/${term.slug}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
+                    {term.title}
                   </Link>
                 </li>
               ))}
@@ -79,11 +88,11 @@ export function SitemapPage() {
 
         {/* Column 2: Articles */}
         <section>
-          <h2 className="mb-4 font-mono text-xs font-semibold uppercase tracking-widest text-white/30">Articles</h2>
+          <h2 className="mb-4 font-mono text-xs font-semibold uppercase tracking-widest text-white/30">{t('sections.articles')}</h2>
           <ul className="space-y-2">
             {articles.map((a) => (
               <li key={a.slug}>
-                <Link to={`/articles/${a.slug}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
+                <Link to={`${langPrefix}/articles/${a.slug}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
                   {a.title}
                 </Link>
               </li>
@@ -93,12 +102,12 @@ export function SitemapPage() {
 
         {/* Column 3: Levels & Parts */}
         <section>
-          <h2 className="mb-4 font-mono text-xs font-semibold uppercase tracking-widest text-white/30">Levels & Parts</h2>
+          <h2 className="mb-4 font-mono text-xs font-semibold uppercase tracking-widest text-white/30">{t('sections.levelsParts')}</h2>
           <ul className="space-y-2">
             {Object.entries(levelsData).map(([num, level]) => (
               <li key={num}>
-                <Link to={`/level/${num}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
-                  Level {num} — {level.name}
+                <Link to={`${langPrefix}/level/${num}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
+                  {t('levelLabel', { n: num, name: level.name })}
                 </Link>
               </li>
             ))}
@@ -106,7 +115,7 @@ export function SitemapPage() {
           <ul className="mt-4 space-y-2">
             {Object.entries(parts).map(([slug, part]) => (
               <li key={slug}>
-                <Link to={`/part/${slug}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
+                <Link to={`${langPrefix}/part/${slug}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
                   {part.title} {part.titleHighlight}
                 </Link>
               </li>
@@ -116,16 +125,16 @@ export function SitemapPage() {
 
         {/* Column 4: Bio OS */}
         <section>
-          <h2 className="mb-4 font-mono text-xs font-semibold uppercase tracking-widest text-white/30">Bio OS</h2>
+          <h2 className="mb-4 font-mono text-xs font-semibold uppercase tracking-widest text-white/30">{t('sections.bio')}</h2>
           <ul className="space-y-2">
             <li>
-              <Link to="/bio" className="text-sm text-white/50 transition-colors hover:text-cyan-400">
-                Bio OS — real-time biometrics
+              <Link to={lang === 'en' ? '/bio' : `/${lang}/bio`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
+                {t('bioRoot')}
               </Link>
             </li>
             {Object.values(METRIC_DETAILS).map((m) => (
               <li key={m.key}>
-                <Link to={`/bio/${m.key}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
+                <Link to={lang === 'en' ? `/bio/${m.key}` : `/${lang}/bio/${m.key}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
                   {m.shortTitle}
                 </Link>
               </li>

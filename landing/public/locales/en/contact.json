@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Contact ONDA Life | Support & Community",
+    "description": "Need technical support for your biological upgrade? Connect with the ONDA Core Team. Email, Telegram, Discord — we respond."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Contact"
+  },
+  "badge": "[ NEURAL UPLINK ]",
+  "title": "Initialize Direct Contact",
+  "subtitle": "Need technical support for your biological upgrade? Connect with the ONDA Core Team.",
+  "channelsTitle": "CONTACT CHANNELS",
+  "emailLabel": "EMAIL",
+  "communityLabel": "COMMUNITY",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "namePlaceholder": "Your identifier",
+    "emailPlaceholder": "contact@example.com",
+    "messagePlaceholder": "Transmit your query...",
+    "submit": "[ SEND DATA PACKET ]"
+  },
+  "back": "← Back to Home"
+}

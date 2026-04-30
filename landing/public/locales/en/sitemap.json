@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Sitemap — ONDA Life",
+    "description": "Full sitemap of ONDA Life — all articles, glossary terms, levels, parts and main pages."
+  },
+  "title": "Site Map",
+  "subtitle": "All pages on onda-life.com",
+  "sections": {
+    "main": "Main",
+    "glossary": "Glossary",
+    "articles": "Articles",
+    "levelsParts": "Levels & Parts",
+    "bio": "Bio OS"
+  },
+  "main": {
+    "home": "Home — ONDA Life biohacking OS",
+    "about": "About ONDA Life",
+    "articles": "Articles on biohacking and human optimization",
+    "glossary": "Glossary of biohacking and neuroscience terms",
+    "stack": "The Stack — protocol system",
+    "contact": "Contacts — reach ONDA Life team",
+    "bio": "Bio OS — live biometrics measurement"
+  },
+  "levelLabel": "Level {{n}} — {{name}}",
+  "bioRoot": "Bio OS — real-time biometrics"
+}

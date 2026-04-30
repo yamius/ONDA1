@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "网站地图 — ONDA Life",
+    "description": "ONDA Life 完整网站地图 — 所有文章、术语表、层级、部分与主要页面。"
+  },
+  "title": "网站地图",
+  "subtitle": "onda-life.com 所有页面",
+  "sections": {
+    "main": "主要",
+    "glossary": "术语表",
+    "articles": "文章",
+    "levelsParts": "层级与部分",
+    "bio": "Bio OS"
+  },
+  "main": {
+    "home": "首页 — ONDA Life 生物黑客操作系统",
+    "about": "关于 ONDA Life",
+    "articles": "关于生物黑客与人体优化的文章",
+    "glossary": "生物黑客与神经科学术语表",
+    "stack": "The Stack — 协议系统",
+    "contact": "联系 — 联系 ONDA Life 团队",
+    "bio": "Bio OS — 实时生物特征测量"
+  },
+  "levelLabel": "第 {{n}} 层 — {{name}}",
+  "bioRoot": "Bio OS — 实时生物特征"
+}

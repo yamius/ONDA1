@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import { langFromPath, homePathFor } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -16,37 +18,26 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-const CONTACT_TITLE = 'Contact ONDA Life | Support & Community'
-const CONTACT_DESC =
-  'Need technical support for your biological upgrade? Connect with the ONDA Core Team. Email, Telegram, Discord — we respond.'
-
 export function ContactPage() {
+  const { t } = useTranslation('contact')
+  const location = useLocation()
+  const lang = langFromPath(location.pathname)
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
 
   useEffect(() => {
-    document.title = CONTACT_TITLE
-    setMeta('description', CONTACT_DESC)
-    setMeta('og:title', CONTACT_TITLE, true)
-    setMeta('og:description', CONTACT_DESC, true)
-    setMeta('og:url', `${SITE_URL}/contact`, true)
+    const title = t('meta.title')
+    const desc = t('meta.description')
+    document.title = title
+    setMeta('description', desc)
+    setMeta('og:title', title, true)
+    setMeta('og:description', desc, true)
+    setMeta('og:url', `${SITE_URL}${lang === 'en' ? '/contact' : `/${lang}/contact`}`, true)
     setMeta('og:image', OG_IMAGE, true)
     setMeta('twitter:card', 'summary_large_image', true)
-    setMeta('twitter:title', CONTACT_TITLE, true)
-    setMeta('twitter:description', CONTACT_DESC, true)
+    setMeta('twitter:title', title, true)
+    setMeta('twitter:description', desc, true)
     setMeta('twitter:image', OG_IMAGE, true)
-    return () => {
-      document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
-      setMeta('description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
-      setMeta('og:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
-      setMeta('og:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
-      setMeta('og:url', SITE_URL, true)
-      setMeta('og:image', OG_IMAGE, true)
-      setMeta('twitter:card', 'summary_large_image', true)
-      setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
-      setMeta('twitter:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
-      setMeta('twitter:image', OG_IMAGE, true)
-    }
-  }, [])
+  }, [t, lang])
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
@@ -56,35 +47,35 @@ export function ContactPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 pb-16 md:px-6">
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to="/" className="transition-colors hover:text-white/50">
-          Home
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">
+          {t('breadcrumb.home')}
         </Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">
-          Contact
+          {t('breadcrumb.current')}
         </span>
       </nav>
 
       <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-        [ NEURAL UPLINK ]
+        {t('badge')}
       </div>
 
       <h1 className="mb-3 text-2xl font-bold tracking-tight font-mono md:text-4xl">
-        Initialize Direct Contact
+        {t('title')}
       </h1>
       <p className="mb-12 font-mono text-sm leading-relaxed text-white/50">
-        Need technical support for your biological upgrade? Connect with the ONDA Core Team.
+        {t('subtitle')}
       </p>
 
       {/* Email & Community */}
       <h2 className="mb-6 font-mono text-xs tracking-widest text-terminal-green/60">
-        CONTACT CHANNELS
+        {t('channelsTitle')}
       </h2>
       <div className="mb-16 space-y-6">
         <div className="rounded-lg border border-cyan-500/20 bg-cyan-500/5 p-6">
           <div className="mb-2 flex items-center gap-2 font-mono text-xs tracking-wider text-cyan-400">
             <EmailIcon />
-            <span>EMAIL</span>
+            <span>{t('emailLabel')}</span>
           </div>
           <a
             href={`mailto:${CONTACT_EMAIL}`}
@@ -96,7 +87,7 @@ export function ContactPage() {
 
         <div className="rounded-lg border border-terminal-green/20 bg-terminal-green/5 p-6">
           <div className="mb-4 font-mono text-xs tracking-wider text-terminal-green">
-            COMMUNITY
+            {t('communityLabel')}
           </div>
           <div className="flex flex-wrap gap-4">
             <span className="flex items-center gap-2 font-mono text-sm text-white/40">
@@ -115,7 +106,7 @@ export function ContactPage() {
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
           <label htmlFor="name" className="mb-2 block font-mono text-xs text-white/40">
-            Name
+            {t('form.name')}
           </label>
           <input
             id="name"
@@ -124,12 +115,12 @@ export function ContactPage() {
             value={formData.name}
             onChange={(e) => setFormData((d) => ({ ...d, name: e.target.value }))}
             className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 font-mono text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-cyan-500/50"
-            placeholder="Your identifier"
+            placeholder={t('form.namePlaceholder')}
           />
         </div>
         <div>
           <label htmlFor="email" className="mb-2 block font-mono text-xs text-white/40">
-            Email
+            {t('form.email')}
           </label>
           <input
             id="email"
@@ -138,12 +129,12 @@ export function ContactPage() {
             value={formData.email}
             onChange={(e) => setFormData((d) => ({ ...d, email: e.target.value }))}
             className="w-full rounded-lg border border-white/10 bg-white/5 px-4 py-3 font-mono text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-cyan-500/50"
-            placeholder="contact@example.com"
+            placeholder={t('form.emailPlaceholder')}
           />
         </div>
         <div>
           <label htmlFor="message" className="mb-2 block font-mono text-xs text-white/40">
-            Message
+            {t('form.message')}
           </label>
           <textarea
             id="message"
@@ -152,23 +143,23 @@ export function ContactPage() {
             value={formData.message}
             onChange={(e) => setFormData((d) => ({ ...d, message: e.target.value }))}
             className="w-full resize-none rounded-lg border border-white/10 bg-white/5 px-4 py-3 font-mono text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-cyan-500/50"
-            placeholder="Transmit your query..."
+            placeholder={t('form.messagePlaceholder')}
           />
         </div>
         <button
           type="submit"
           className="w-full rounded-lg border border-cyan-500/50 bg-cyan-500/10 py-3 font-mono text-sm font-medium text-cyan-400 transition-colors hover:bg-cyan-500/20 hover:border-cyan-500/70"
         >
-          [ SEND DATA PACKET ]
+          {t('form.submit')}
         </button>
       </form>
 
       <div className="mt-12">
         <Link
-          to="/"
+          to={homePathFor(lang)}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
-          ← Back to Home
+          {t('back')}
         </Link>
       </div>
     </div>

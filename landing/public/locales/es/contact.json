@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Contacto ONDA Life | Soporte y Comunidad",
+    "description": "¿Necesitas soporte técnico para tu actualización biológica? Conecta con el ONDA Core Team. Email, Telegram, Discord — respondemos."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "Contacto"
+  },
+  "badge": "[ ENLACE NEURONAL ]",
+  "title": "Inicializa Contacto Directo",
+  "subtitle": "¿Necesitas soporte técnico para tu actualización biológica? Conecta con el ONDA Core Team.",
+  "channelsTitle": "CANALES DE CONTACTO",
+  "emailLabel": "EMAIL",
+  "communityLabel": "COMUNIDAD",
+  "form": {
+    "name": "Nombre",
+    "email": "Email",
+    "message": "Mensaje",
+    "namePlaceholder": "Tu identificador",
+    "emailPlaceholder": "contacto@ejemplo.com",
+    "messagePlaceholder": "Transmite tu consulta...",
+    "submit": "[ ENVIAR PAQUETE DE DATOS ]"
+  },
+  "back": "← Volver al inicio"
+}

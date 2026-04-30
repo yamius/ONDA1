@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Контакти ONDA Life | Підтримка та спільнота",
+    "description": "Потрібна технічна підтримка біологічного апгрейду? Зв'яжіться з ONDA Core Team. Email, Telegram, Discord — ми відповідаємо."
+  },
+  "breadcrumb": {
+    "home": "Головна",
+    "current": "Контакти"
+  },
+  "badge": "[ НЕЙРОННИЙ КАНАЛ ]",
+  "title": "Ініціалізувати прямий контакт",
+  "subtitle": "Потрібна технічна підтримка біологічного апгрейду? Зв'яжіться з ONDA Core Team.",
+  "channelsTitle": "КАНАЛИ ЗВ'ЯЗКУ",
+  "emailLabel": "EMAIL",
+  "communityLabel": "СПІЛЬНОТА",
+  "form": {
+    "name": "Ім'я",
+    "email": "Email",
+    "message": "Повідомлення",
+    "namePlaceholder": "Ваш ідентифікатор",
+    "emailPlaceholder": "contact@example.com",
+    "messagePlaceholder": "Передайте ваш запит...",
+    "submit": "[ НАДІСЛАТИ ПАКЕТ ДАНИХ ]"
+  },
+  "back": "← Назад на головну"
+}
