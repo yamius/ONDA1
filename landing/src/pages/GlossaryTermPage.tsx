@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useParams, Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { NotFoundPage } from './NotFoundPage'
 import Markdown from 'react-markdown'
 import rehypeSlug from 'rehype-slug'
@@ -24,12 +25,19 @@ function setMeta(name: string, content: string, isProperty = false) {
 export function GlossaryTermPage() {
   const { slug } = useParams<{ slug: string }>()
   const term = slug ? getTermBySlug(slug) : undefined
+  const { t: tGloss } = useTranslation('glossary')
+  const tField = (termSlug: string, key: string, fallback: string): string =>
+    tGloss(`bodies.${termSlug}.${key}`, { defaultValue: fallback }) as string
+
+  const tTitle = term ? tField(term.slug, 'title', term.title) : ''
+  const tShortDescription = term ? tField(term.slug, 'shortDescription', term.shortDescription) : ''
+  const tContent = term ? tField(term.slug, 'content', term.content) : ''
 
   useEffect(() => {
     if (!term) return
-    const title = `${term.title} | ONDA Life Glossary`
+    const title = `${tTitle} | ONDA Life Glossary`
     const url = `${SITE_URL}/glossary/${term.slug}`
-    const ogDesc = `${term.title} in the ONDA system: ${term.shortDescription} Learn how this element affects your biocomputer.`
+    const ogDesc = `${tTitle} in the ONDA system: ${tShortDescription} Learn how this element affects your biocomputer.`
     document.title = title
     setMeta('description', ogDesc)
     setMeta('og:title', title, true)
@@ -54,7 +62,7 @@ export function GlossaryTermPage() {
       setMeta('twitter:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
       setMeta('twitter:image', OG_IMAGE, true)
     }
-  }, [term])
+  }, [term, tTitle, tShortDescription])
 
   if (!term) {
     return <NotFoundPage />
@@ -90,7 +98,7 @@ export function GlossaryTermPage() {
           Glossary
         </Link>
         <span>/</span>
-        <span className="text-terminal-green/60" aria-current="page">{term.title}</span>
+        <span className="text-terminal-green/60" aria-current="page">{tTitle}</span>
       </nav>
 
       {/* Category badge */}
@@ -102,10 +110,10 @@ export function GlossaryTermPage() {
 
       {/* Title */}
       <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
-        {term.title}
+        {tTitle}
       </h1>
       <p className="mb-10 font-mono text-sm leading-relaxed text-white/50">
-        {term.shortDescription}
+        {tShortDescription}
       </p>
 
       {/* Markdown content */}
@@ -192,7 +200,7 @@ export function GlossaryTermPage() {
             },
           }}
         >
-          {injectGlossaryLinks(term.content, term.slug)}
+          {injectGlossaryLinks(tContent, term.slug)}
         </Markdown>
       </article>
 
@@ -217,7 +225,7 @@ export function GlossaryTermPage() {
                     {article.title}
                   </h4>
                   <p className="font-mono text-xs text-white/40">
-                    Upgrade your knowledge: Learn how to optimize {term.title} in our full guide.
+                    Upgrade your knowledge: Learn how to optimize {tTitle} in our full guide.
                   </p>
                 </div>
                 <span className="shrink-0 font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
@@ -244,10 +252,10 @@ export function GlossaryTermPage() {
               >
                 <div>
                   <h4 className="font-semibold transition-colors group-hover:text-terminal-green">
-                    {related.title}
+                    {tField(related.slug, 'title', related.title)}
                   </h4>
                   <p className="mt-1 font-mono text-xs text-white/30">
-                    {related.shortDescription.slice(0, 80)}...
+                    {tField(related.slug, 'shortDescription', related.shortDescription).slice(0, 80)}...
                   </p>
                 </div>
                 <span className="font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">

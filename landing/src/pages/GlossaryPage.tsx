@@ -47,9 +47,16 @@ export function GlossaryPage() {
   const [search, setSearch] = useState('')
   const [activeCategory, setActiveCategory] = useState<string | null>(null)
 
+  const tField = (slug: string, key: string, fallback: string): string =>
+    t(`bodies.${slug}.${key}`, { defaultValue: fallback }) as string
+
   const filtered = glossaryTerms.filter((term) => {
+    const tTitle = tField(term.slug, 'title', term.title)
+    const tShort = tField(term.slug, 'shortDescription', term.shortDescription)
     const matchesSearch =
       !search ||
+      tTitle.toLowerCase().includes(search.toLowerCase()) ||
+      tShort.toLowerCase().includes(search.toLowerCase()) ||
       term.title.toLowerCase().includes(search.toLowerCase()) ||
       term.shortDescription.toLowerCase().includes(search.toLowerCase())
     const matchesCategory = !activeCategory || term.category === activeCategory
@@ -92,7 +99,7 @@ export function GlossaryPage() {
                 to={`${langPrefix}/glossary/${slug}`}
                 className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/40 transition-all hover:border-white/20 hover:text-white/60"
               >
-                {term.title}
+                {tField(term.slug, 'title', term.title)}
               </Link>
             )
           })}
@@ -169,10 +176,10 @@ export function GlossaryPage() {
               </span>
             </div>
             <h3 className="mb-2 text-lg font-semibold transition-colors group-hover:text-terminal-green">
-              {term.title}
+              {tField(term.slug, 'title', term.title)}
             </h3>
             <p className="font-mono text-xs leading-relaxed text-white/40">
-              {term.shortDescription}
+              {tField(term.slug, 'shortDescription', term.shortDescription)}
             </p>
           </Link>
         ))}
