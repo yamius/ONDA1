@@ -109,6 +109,13 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'rhythmic-entrainment-system-frequencies': '5 min 15 sec',
   'spinal-intelligence-decentralized-control': '5 min 25 sec',
   'adrenal-governor-thermal-runaway': '5 min 30 sec',
+  'ventral-tegmental-core-motivational-salience': '5 min 10 sec',
+  'fascial-tensegrity-protocol-myofascial-noise': '4 min 25 sec',
+  'vascular-tensegrity-microvascular-mechanics': '4 min 50 sec',
+  'bohr-effect-oxygen-telemetry': '4 min 40 sec',
+  'anterior-cingulate-core-coherence-monitoring': '4 min 55 sec',
+  'acc-calibration-protocol-cognitive-control': '4 min 30 sec',
+  'hydraulic-viscosity-onda-transport-bus': '4 min 35 sec',
 }
 
 function extractText(node: React.ReactNode): string {

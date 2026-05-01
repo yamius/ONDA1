@@ -72,6 +72,13 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'rhythmic-entrainment-system-frequencies': 'Rhythmic Entrainment: 0.1 Hz Master Clock, CPG Synchronization & Locomotor-Respiratory Coupling | ONDA Life',
   'spinal-intelligence-decentralized-control': 'Spinal Intelligence: Edge Computing Protocol, CPG Autonomy & Proprioceptive Flow for Peak Motor Mastery | ONDA Life',
   'adrenal-governor-thermal-runaway': 'Adrenal Governor Protocol: Cortisol Precision, HRV Stress Limiter & Thermal Runaway Prevention | ONDA Life',
+  'ventral-tegmental-core-motivational-salience': 'Ventral Tegmental Core: Reactor of Motivational Salience, Dopamine Telemetry & Prediction Error | ONDA Life',
+  'fascial-tensegrity-protocol-myofascial-noise': 'Fascial Tensegrity Protocol: Trapezius Release, Vagal Activation & Myofascial Noise Clearing | ONDA Life',
+  'vascular-tensegrity-microvascular-mechanics': 'Vascular Tensegrity & Microvascular Mechanics: Hydraulics, Hypoxia and Zero-Impedance Cerebral Delivery | ONDA Life',
+  'bohr-effect-oxygen-telemetry': 'The Bohr Effect & Oxygen Telemetry: CO2 Tolerance, Hemoglobin Affinity and Ventilation Calibration | ONDA Life',
+  'anterior-cingulate-core-coherence-monitoring': 'Anterior Cingulate Core: System Arbiter, Conflict Monitoring & Cognitive Flexibility | ONDA Life',
+  'acc-calibration-protocol-cognitive-control': 'ACC Calibration Protocol: Monotasking, Mindfulness Alignment & Cognitive Control Training | ONDA Life',
+  'hydraulic-viscosity-onda-transport-bus': 'Hydraulic Viscosity & the ONDA Transport Bus: Hagen–Poiseuille Cerebral Flow, Thermal Control and Zero Impedance | ONDA Life',
 }
 
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
@@ -166,6 +173,20 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'The spinal cord is a distributed processor with motor memory and reflex logic. The ONDA Protocol develops edge-computing movement intelligence via unpredictable loading, proprioceptive focus, and Alpha-state triggers.',
   'adrenal-governor-thermal-runaway':
     'The adrenals inject cortisol on command — the problem is the Beta-mode brain keeps signaling threat. The ONDA Governor uses HRV thresholding, Alpha-buffering, and anticipatory reset to block Redline entry.',
+  'ventral-tegmental-core-motivational-salience':
+    'The VTA is the reactor of motivational salience. ONDA recalibrates dopamine telemetry via system reset, hormetic stress and delayed-reward deep work to restore drive without external triggers.',
+  'fascial-tensegrity-protocol-myofascial-noise':
+    'Trapezius lock and cervical compression strangle cerebral blood flow. The ONDA Fascial Tensegrity Protocol pairs targeted myofascial release with humming vagal exhale to restore structural balance.',
+  'vascular-tensegrity-microvascular-mechanics':
+    'The vascular network is a tensegrity transport bus, not a pipeline. Balanced fascial tension delivers oxygen and nutrients to the cortex with zero impedance and absorbs mechanical shocks.',
+  'bohr-effect-oxygen-telemetry':
+    'Hemoglobin needs CO2 to release oxygen. ONDA calibrates the Bohr trigger via slow breathing and vasodilation cycles to end cellular hypoxia and stabilize prefrontal processing speed.',
+  'anterior-cingulate-core-coherence-monitoring':
+    'The anterior cingulate cortex arbitrates conflict between focus and distraction. dACC handles task-switching, vACC handles autonomic load — together they keep cognitive flexibility coherent.',
+  'acc-calibration-protocol-cognitive-control':
+    'Cool the system arbiter. The ONDA ACC Calibration Protocol pairs 50-minute monotasking blocks with a mindfulness pause gate to clear the dACC error buffer and lock focus.',
+  'hydraulic-viscosity-onda-transport-bus':
+    'Blood viscosity is the resistance of the cerebral transport bus. ONDA treats viscosity as a tunable parameter — thermal control and vascular tone keep impedance at zero point.',
 }
 
 export interface RouteMeta {
@@ -1030,6 +1051,115 @@ const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
         'DFA alpha 1 (Detrended Fluctuation Analysis) measures the fractal correlation of heart rate, serving as a real-time indicator of autonomic balance. A value above 1.0 signals parasympathetic dominance and readiness for restorative sleep. In the ONDA Deep Reset protocol, DFA alpha 1 is monitored in the evening; if it remains low, a targeted VNS session (paced breathing at 0.1 Hz) forces the transition within 8–12 minutes.',
     },
   ],
+  'ventral-tegmental-core-motivational-salience': [
+    {
+      question: 'What does the Ventral Tegmental Area (VTA) actually do?',
+      answer:
+        'The VTA is the brain\'s reactor of motivational salience. It houses dopaminergic neurons (~60%), GABAergic dampeners (~35%) and glutamatergic burst neurons (~5%), and decides where to allocate computational and physical resources by releasing dopamine as a prediction-error signal — not as a reward chemical.',
+    },
+    {
+      question: 'Why does scrolling and sugar break my motivation baseline?',
+      answer:
+        'High-frequency low-grade stimuli (notifications, refined sugar) overdrive the VTA reactor and trigger receptor desensitization. The dopamine baseline drops, you need exponentially more input for the same drive, and the Acetylcholine Lens loses focal lock — what feels like apathy is reactor jitter.',
+    },
+    {
+      question: 'How do I recalibrate the VTA without medication?',
+      answer:
+        'Three ONDA protocols: a 24-hour System Reset to remove high-frequency pulse stimuli, hormetic overclocking via cold plunge or intense training to deliver a clean baseline signal, and bypassing external grids by shifting to long deep-work cycles where reward is delayed.',
+    },
+  ],
+  'fascial-tensegrity-protocol-myofascial-noise': [
+    {
+      question: 'Why does neck and shoulder tension cause brain fog?',
+      answer:
+        'Trapezius lock and cervical compression strangle the major vascular pathways supplying the brain. The microvasculature constricts, cerebral blood flow drops, and the prefrontal cortex receives less oxygen — degrading the focal definition of the Acetylcholine Lens.',
+    },
+    {
+      question: 'How long should I hold pressure during the trapezius release?',
+      answer:
+        'Apply moderate, sustained pressure with fingertips or a massage ball for 30 to 45 seconds on each high-tension point along the neck and upper shoulders, until the tissue tension subsides. Combine with the humming exhale for full parasympathetic shift.',
+    },
+    {
+      question: 'Why is humming on the exhale used to activate the vagus nerve?',
+      answer:
+        'A long, low-frequency humming exhale (8–10 seconds after a 4-second nasal inhale) creates vibration around the vagus pathway and lowers system jitter. It stimulates the vagus, drops resting heart rate and releases residual tension in the jaw and neck.',
+    },
+  ],
+  'vascular-tensegrity-microvascular-mechanics': [
+    {
+      question: 'What is vascular tensegrity in plain language?',
+      answer:
+        'It is the principle that vascular walls, cell membranes and skeletal structures are rigid elements floating inside a continuous tension network of fascia, intracellular hydraulic pressure and elastin fibers. When the network is balanced, blood and nutrients reach the cortex with minimal energy and minimal resistance.',
+    },
+    {
+      question: 'How does myofascial tension translate into cerebral hypoxia?',
+      answer:
+        'Locked masticatory and trapezius muscles compress microvessels, raise hydraulic impedance and slow cerebral blood flow. The cortex becomes starved of oxygen and acetylcholine, and the Acetylcholine Lens loses focal definition — focus collapses before any "mental" cause appears.',
+    },
+  ],
+  'bohr-effect-oxygen-telemetry': [
+    {
+      question: 'What is the Bohr Effect?',
+      answer:
+        'The Bohr Effect describes how the binding affinity of hemoglobin depends on the surrounding CO2 concentration. Hemoglobin only releases oxygen to tissues in the presence of CO2 — without enough CO2 it retains oxygen, creating cellular hypoxia even when blood oxygen is high.',
+    },
+    {
+      question: 'Why does shallow stress breathing cause brain fog?',
+      answer:
+        'Hyperventilation washes out CO2. Without the CO2 trigger, hemoglobin will not unload oxygen at high-demand neural nodes, so the prefrontal cortex slows down. The body also misreads low CO2 as a threat signal and increases adrenaline — producing micro-panic and fog.',
+    },
+    {
+      question: 'How do I train CO2 tolerance safely?',
+      answer:
+        'Slow, measured breathing with extended exhales and patient pauses before the next inhale. Add brief controlled breath holds (post-exhale or post-inhale) in cycles to gently spike CO2 — this dilates cerebral vessels and stabilizes oxygen delivery to active networks.',
+    },
+  ],
+  'anterior-cingulate-core-coherence-monitoring': [
+    {
+      question: 'What does the anterior cingulate cortex (ACC) do?',
+      answer:
+        'The ACC is the system arbiter — it monitors conflict between expected and actual outcomes (prediction error), runs cost–benefit analysis on cognitive control, and signals when a recalibration is needed. It is the node that decides whether to keep pushing or to switch tasks.',
+    },
+    {
+      question: 'What is the difference between dorsal and ventral ACC?',
+      answer:
+        'The dorsal ACC (dACC) handles cognitive control, action selection and task-switching, keeping the system locked onto deep work. The ventral ACC (vACC) handles emotional appraisal and autonomic regulation, lowering stress and preventing overload during difficult operations.',
+    },
+  ],
+  'acc-calibration-protocol-cognitive-control': [
+    {
+      question: 'Why does multitasking feel exhausting?',
+      answer:
+        'Frequent task-switching loads the dorsal ACC heavily — every switch is a conflict the arbiter has to resolve. Over an hour of context-switching the dACC overheats, the error buffer fills with false triggers, and the felt cost is fatigue and frustration even when output is small.',
+    },
+    {
+      question: 'How long should a monotasking block be?',
+      answer:
+        'In the ONDA ACC Calibration Protocol, set a single Core Vector task and a 50-minute timer of deep work, with notifications off and unnecessary tabs closed. This window is long enough to fully suppress conflict processing and short enough to keep the arbiter inside its working temperature.',
+    },
+    {
+      question: 'What do I do with the urge to check notifications mid-block?',
+      answer:
+        'Run the Mindfulness Alignment gate: when the urge appears, do not react immediately — pause for 15 to 30 seconds, acknowledge the impulse without acting on it, and return focus to the core task. This trains the vACC to lower its emotional reaction to triggers.',
+    },
+  ],
+  'hydraulic-viscosity-onda-transport-bus': [
+    {
+      question: 'Why does blood viscosity matter for cognitive performance?',
+      answer:
+        'According to the Hagen–Poiseuille law, hydraulic resistance is directly proportional to fluid viscosity. The lower the viscosity of blood, the less energy the heart and vascular tone need to spend to deliver oxygen and nutrients to the cortex — and the lower the cerebral perfusion latency.',
+    },
+    {
+      question: 'How does temperature change blood viscosity?',
+      answer:
+        'At standard body temperature (37 °C) the dynamic viscosity of water is around 0.69 cP, significantly lower than at room temperature. Local warming through metabolism and deep controlled breathing weakens hydrogen bonds in water, drops viscosity and facilitates oxygen delivery — thermal control is a tunable system parameter.',
+    },
+    {
+      question: 'What raises apparent viscosity in real life?',
+      answer:
+        'Spasms in the masticatory or trapezius muscles compress microvessels, slow local blood flow and cool the surrounding tissue. The combination raises apparent viscosity, increases impedance and delays nutrient delivery to the brain — releasing structural tension is the most direct viscosity hack.',
+    },
+  ],
 }
 
 function buildFAQPageJsonLd(
@@ -1525,6 +1655,118 @@ export function getMetaForRoute(route: string): RouteMeta {
                                 audience: 'Biohackers, Creatives, High-Performers, Knowledge Workers',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'ventral-tegmental-core-motivational-salience'
+                            ? {
+                                keywords: [
+                                  'Ventral Tegmental Area VTA',
+                                  'Motivational Salience',
+                                  'Dopamine Telemetry',
+                                  'Mesolimbic Circuit',
+                                  'Prediction Error Biohacking',
+                                  'Receptor Sensitivity Reset',
+                                  'Hormetic Stress Recalibration',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, High-Performers, Neuroscientists',
+                                proficiencyLevel: 'Advanced',
+                                educationalLevel: 'Advanced',
+                              }
+                          : slug === 'fascial-tensegrity-protocol-myofascial-noise'
+                            ? {
+                                keywords: [
+                                  'Fascial Tensegrity Protocol',
+                                  'Myofascial Release Trapezius',
+                                  'Vagus Nerve Humming Activation',
+                                  'Cervical Decompression',
+                                  'Structural Balance Recalibration',
+                                  'Cerebral Blood Flow Biohacking',
+                                  'Parasympathetic Shift',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Knowledge Workers, High-Performers, Movement Practitioners',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'vascular-tensegrity-microvascular-mechanics'
+                            ? {
+                                keywords: [
+                                  'Vascular Tensegrity',
+                                  'Microvascular Mechanics',
+                                  'Hagen-Poiseuille Cerebral Flow',
+                                  'Myofascial Vascular Compression',
+                                  'Low Impedance Delivery',
+                                  'Cerebral Hypoxia Prevention',
+                                  'Structural Integrity Biohacking',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, High-Performers, Movement Practitioners, Neuroscientists',
+                                proficiencyLevel: 'Advanced',
+                                educationalLevel: 'Advanced',
+                              }
+                          : slug === 'bohr-effect-oxygen-telemetry'
+                            ? {
+                                keywords: [
+                                  'Bohr Effect',
+                                  'Oxygen Telemetry CO2',
+                                  'Hemoglobin Binding Affinity',
+                                  'CO2 Tolerance Calibration',
+                                  'BOLT Score Biohacking',
+                                  'Cerebral Vasodilation Breathwork',
+                                  'Cellular Hypoxia Prevention',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Athletes, High-Performers, Freedivers',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'anterior-cingulate-core-coherence-monitoring'
+                            ? {
+                                keywords: [
+                                  'Anterior Cingulate Cortex ACC',
+                                  'Conflict Monitoring Brain',
+                                  'Prediction Error dACC vACC',
+                                  'Cognitive Flexibility Task Switching',
+                                  'System Arbiter Cognitive Control',
+                                  'Jitter Suppression Focus',
+                                  'Coherence Monitoring Protocol',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Knowledge Workers, High-Performers, Neuroscientists',
+                                proficiencyLevel: 'Advanced',
+                                educationalLevel: 'Advanced',
+                              }
+                          : slug === 'acc-calibration-protocol-cognitive-control'
+                            ? {
+                                keywords: [
+                                  'ACC Calibration Protocol',
+                                  'Cognitive Control Training',
+                                  'Monotasking Deep Work',
+                                  'Mindfulness Impulse Pause',
+                                  'dACC Error Buffer Reset',
+                                  'Focus Retention Biohacking',
+                                  'Distraction Resilience',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, Knowledge Workers, High-Performers, Mindfulness Practitioners',
+                                proficiencyLevel: 'Intermediate',
+                                educationalLevel: 'Intermediate',
+                              }
+                          : slug === 'hydraulic-viscosity-onda-transport-bus'
+                            ? {
+                                keywords: [
+                                  'Blood Viscosity Cerebral Flow',
+                                  'Hagen-Poiseuille Hydraulics',
+                                  'Hydraulic Impedance Brain',
+                                  'Thermal Control Vascular Tone',
+                                  'Microcirculation Resistance',
+                                  'Cerebral Perfusion Latency',
+                                  'Centipoise Body Temperature',
+                                  'ONDA Protocol',
+                                ],
+                                audience: 'Biohackers, High-Performers, Neuroscientists, Movement Practitioners',
+                                proficiencyLevel: 'Advanced',
+                                educationalLevel: 'Advanced',
                               }
                             : undefined
       const meta: RouteMeta = {

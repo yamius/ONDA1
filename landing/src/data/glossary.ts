@@ -5551,6 +5551,144 @@ We don't just train the body — we offload the Cortex Stack to ensure you have 
 `,
     relatedSlugs: ['prefrontal-cortex', 'dopamine', 'dorsolateral-prefrontal-cortex'],
   },
+  {
+    slug: 'motivational-salience',
+    title: 'Motivational Salience',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The signal that decides where computational and physical resources are allocated — generated primarily by the Ventral Tegmental Area.',
+    content: `
+
+**Motivational salience** is the property that makes a stimulus or goal "stand out" enough to recruit attention, energy and motor resources. In the ONDA model the [Ventral Tegmental Area](/glossary/ventral-tegmental-area) is the reactor that produces this signal via dopamine telemetry.
+
+## How It Works
+
+- **Anticipation** — baseline dopamine keeps the system locked onto the predicted reward
+- **Reward beat** — a positive prediction error fires extra dopamine and strengthens the pathway
+- **Suppression** — GABAergic dampeners and the [Acetylcholine Lens](/glossary/acetylcholine-lens) filter out competing low-value targets
+
+## Failure Modes
+
+- **Receptor desensitization** — overdriven by notifications and refined sugar, requiring exponentially more input for the same drive
+- **Context switching** — the reactor scans for fast fuel, scattering focus
+- **Voltage drop** — apathy and fatigue even with full glycogen reserves
+
+## In ONDA Life
+
+The Ventral Tegmental Core protocol recalibrates motivational salience via 24-hour high-fidelity input fasting, hormetic stress overclocking, and delayed-reward deep work cycles.
+`,
+    relatedSlugs: ['ventral-tegmental-area', 'dopamine', 'prediction-error'],
+  },
+  {
+    slug: 'prediction-error',
+    title: 'Prediction Error',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The neural delta between expected and actual outcomes — the core signal driving dopamine release and ACC conflict monitoring.',
+    content: `
+
+**Prediction error** is the brain's measurement of the gap between what was expected and what actually happened. It is not a generic "reward" signal — it is a delta. In the ONDA model two systems live on this signal: the [Ventral Tegmental Area](/glossary/ventral-tegmental-area) (motivational salience) and the [anterior cingulate cortex](/glossary/anterior-cingulate-cortex) (conflict and error monitoring).
+
+## Three States
+
+- **Match** — outcome equals prediction, baseline dopamine, no learning trigger
+- **Positive error** — reality exceeds the model, dopamine spike, pathway strengthens
+- **Negative error** — reality undershoots the model, dopamine dip, pathway weakens
+
+## Why It Matters
+
+The ACC uses prediction error to flag conflicts (focus task vs. easy distraction), run cost–benefit on cognitive control, and trigger recalibration when drift from the protocol is detected.
+
+## In ONDA Life
+
+Both the VTA Reactor and ACC Calibration protocols treat prediction error as a tunable signal — by controlling the input cadence (notifications, sugar, deep-work blocks) you control how the delta is generated and learned from.
+`,
+    relatedSlugs: ['ventral-tegmental-area', 'anterior-cingulate-cortex', 'dopamine'],
+  },
+  {
+    slug: 'acetylcholine-lens',
+    title: 'Acetylcholine Lens',
+    category: 'Neural Hardware',
+    shortDescription:
+      'The biological lens of attention — acetylcholine modifies synaptic gain so relevant signals brighten and background noise fades.',
+    content: `
+
+The **Acetylcholine Lens** is the ONDA name for the cortical effect of acetylcholine release: target amplification of attended neurons combined with background suppression of everything else. It does not carry data — it modifies synaptic gain so that the signal-to-noise ratio of cognition rises.
+
+## Two Hardware Effects
+
+- **Target amplification** — neurons responsible for the object of attention become hyper-sensitive
+- **Background suppression** — neurons outside the lens are dampened, jitter falls
+
+## Why the Lens Blurs
+
+- **Choline scarcity** — insufficient precursor for [acetylcholine](/glossary/acetylcholine) synthesis
+- **Receptor desensitization** — caffeine or nicotine overdrive
+- **Conductivity breakdown** — sodium/potassium/calcium imbalance disrupts signal travel
+- **Cerebral hypoxia** — when blood flow drops (myofascial compression, low CO2 tolerance), the lens defocuses regardless of intent
+
+## In ONDA Life
+
+A sharp Acetylcholine Lens depends on stable [vascular tensegrity](/articles/vascular-tensegrity-microvascular-mechanics), calibrated CO2 tolerance via the [Bohr Effect](/glossary/bohr-effect), and a quiet ACC arbiter — fix these layers first, and the lens sharpens by itself.
+`,
+    relatedSlugs: ['acetylcholine', 'anterior-cingulate-cortex', 'prediction-error'],
+  },
+  {
+    slug: 'system-jitter',
+    title: 'System Jitter',
+    category: 'OS States',
+    shortDescription:
+      'Background neural noise that lowers signal-to-noise ratio across cognition — generated by overdriven reward circuitry, low CO2 or structural compression.',
+    content: `
+
+**System jitter** is the ONDA term for unstable, high-frequency background noise inside the nervous system. It is not a single physiological variable — it is the aggregate destabilization that appears when the [VTA reactor](/glossary/ventral-tegmental-area), the ventilation layer or the structural matrix run out of calibration.
+
+## Sources
+
+- **Reward jitter** — overdriven VTA from notifications and sugar generates chaotic dopamine impulses
+- **Ventilation jitter** — low CO2 from shallow breathing is misread as a threat signal, raising adrenaline
+- **Structural jitter** — myofascial compression spikes vascular impedance, starving cortex of oxygen
+
+## Effects
+
+- The [Acetylcholine Lens](/glossary/acetylcholine-lens) loses focal lock
+- The [ACC](/glossary/anterior-cingulate-cortex) fires false conflict triggers
+- Subjective state — micro-panic, brain fog, fragmented focus
+
+## In ONDA Life
+
+Every ONDA protocol is in some way a jitter-suppression layer: vagal humming exhale, monotasking with mindfulness gate, CO2 tolerance training, fascial release. The goal is the same — restore a clean baseline so the signal can travel.
+`,
+    relatedSlugs: ['acetylcholine-lens', 'anterior-cingulate-cortex', 'bohr-effect'],
+  },
+  {
+    slug: 'hydraulic-viscosity',
+    title: 'Hydraulic Viscosity',
+    category: 'Neural Hardware',
+    shortDescription:
+      'Internal friction of blood — the parameter that governs how much energy the heart and vascular tone spend to push nutrients to the cortex.',
+    content: `
+
+**Hydraulic viscosity** (μ) is the internal friction of a fluid. In the ONDA model blood viscosity is the resistance of the cerebral transport bus: the higher it is, the more energy the heart and vascular tone must spend to deliver oxygen and nutrients to the cortex.
+
+## Numbers That Matter
+
+- At standard body temperature (37 °C) the dynamic viscosity of water is approximately 0.69 cP (centipoise)
+- Significantly lower than at room temperature — local warming weakens hydrogen bonds and drops viscosity
+- By the Hagen–Poiseuille law, flow resistance is directly proportional to viscosity
+
+## Why It Spikes
+
+- Myofascial compression of microvessels slows local blood flow
+- Slowed flow + local cooling raise apparent viscosity
+- The result is an Impedance spike and increased cerebral perfusion latency
+
+## In ONDA Life
+
+The Hydraulic Viscosity article and the [Fascial Tensegrity Protocol](/articles/fascial-tensegrity-protocol-myofascial-noise) treat viscosity as a tunable parameter — controlled deep breathing and trapezius release lower it in real time, restoring zero-impedance delivery to the [Acetylcholine Lens](/glossary/acetylcholine-lens).
+`,
+    relatedSlugs: ['tensegrity', 'acetylcholine-lens', 'bohr-effect'],
+  },
 ]
 
 // Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol) (Neural Hardware, Biological Software, OS States, ONDA Protocol)

@@ -230,4 +230,10 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   'allostatic-load': 'OS States',
   hormesis: 'ONDA Protocol',
   'cortex-stack': 'Neural Hardware',
+  // From neuro_mechanics article series
+  'motivational-salience': 'Neural Hardware',
+  'prediction-error': 'Neural Hardware',
+  'acetylcholine-lens': 'Neural Hardware',
+  'system-jitter': 'OS States',
+  'hydraulic-viscosity': 'Neural Hardware',
 }

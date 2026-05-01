@@ -232,6 +232,48 @@ localStorage key
 
 **`ARTICLE_PROTOCOL_ORDER`** — только для MD-статей, опубликованных через Telegram-бота. На TS-статьи не влияет.
 
+### Локализация статьи (5 языков сразу)
+
+Новая статья **должна добавляться сразу на все 5 поддерживаемых языков**: `en` (исходник), `ru`, `uk`, `es`, `zh`.
+
+**Раскладка по файлам:**
+
+| Язык | Где живёт контент |
+|------|-------------------|
+| `en` | Исходный TS-файл `landing/src/data/articles/{slug}.ts` (это и есть английская версия — `title`, `description`, `content`, `imageAlt`, `imageTitle`, `imageCaption`, `howToSteps`, `neuralSuggestion`) |
+| `ru` | `landing/public/locales/ru/articles.json` → `bodies.{slug}` |
+| `uk` | `landing/public/locales/uk/articles.json` → `bodies.{slug}` |
+| `es` | `landing/public/locales/es/articles.json` → `bodies.{slug}` |
+| `zh` | `landing/public/locales/zh/articles.json` → `bodies.{slug}` |
+
+**Структура `bodies.{slug}` (одинакова для всех языков, кроме `en`):**
+
+```json
+{
+  "title": "Локализованный заголовок",
+  "description": "Локализованный SEO description",
+  "imageAlt": "Локализованный alt (~125 символов, keyword-rich)",
+  "imageTitle": "Локализованный title-атрибут картинки",
+  "imageCaption": "Локализованная подпись (figcaption) — если есть в EN",
+  "neuralSuggestion": { "text": "...", "linkText": "..." },
+  "content": "\n## ...markdown...\n",
+  "howToSteps": [
+    { "name": "...", "text": "..." }
+  ]
+}
+```
+
+**Правила перевода (из практики Phase 5a):**
+
+- Перевод выполняется вручную, не машинным.
+- ALL CAPS технические лейблы (`STATUS:`, `PROTOCOL_*`, `HARDWARE_VALIDATION`, `REACTOR_ACTIVE`, `SIGNAL_LATENCY`, `SALIENCE_OUTPUT_LOCKED`) — **остаются как есть**, не переводятся.
+- ONDA brand markers, аббревиатуры (HRV, ATP, ACh, mtDNA, BAT, NIR, VTA, GABA, BDNF, SNR, jitter, prediction error, deep work, hybrid engine и т.д.) — **остаются verbatim**, чтобы триггеры `introStyle` и поиск по ключевым словам работали единообразно.
+- Слаг (`slug`) **не переводится** — это ключ в `bodies` и URL.
+- Научная терминология — в каноническом виде целевого языка (русский: «вентральная тегментальная область», «дофамин», «глутамат»; украинский: «вентральна тегментальна ділянка»; китайский: «腹侧被盖区»; испанский: «área tegmental ventral»).
+- Если у статьи есть `introStyle` с триггерной фразой (например `'emerald'` срабатывает на «hybrid engine») — фраза-триггер должна остаться в переведённом тексте verbatim.
+
+**Файлы со старым контентом (`uk`, `zh`):** на момент написания этих правил содержат всего 5 переведённых статей в `bodies`. Это нормально — добавляй новую запись в `bodies` независимо, фронт фолбэчится на английский TS-источник, если ключа нет.
+
 ### Чеклист: добавление новой статьи
 
 1. **Создать файл** `landing/src/data/articles/{slug}.ts`
@@ -271,7 +313,13 @@ localStorage key
    - При необходимости добавить аббревиатуры в `landing/src/utils/glossaryLinks.ts` → `ARTICLE_ABBREVIATIONS`
    - В тексте статьи использовать те же формулировки/названия — ссылки на глоссарий подставляются автоматически
 
-9. **Если есть изображение:**
+9. **Локализация на 5 языков (обязательно):**
+   - Добавить `bodies.{slug}` в каждый из четырёх JSON: `landing/public/locales/{ru,uk,es,zh}/articles.json`
+   - Поля: `title`, `description`, `imageAlt`, `imageTitle`, `imageCaption` (если есть в EN), `neuralSuggestion` (если есть в EN), `content`, `howToSteps[].name/text`
+   - **Не переводить:** slug, ALL CAPS technical labels (`STATUS:`, `PROTOCOL_*`, `REACTOR_ACTIVE` и т.п.), аббревиатуры (HRV, VTA, ACh, BDNF, SNR, ATP), brand markers ONDA и триггер-фразы `introStyle` (например `"hybrid engine"` для emerald)
+   - См. раздел «Локализация статьи (5 языков сразу)» выше
+
+10. **Если есть изображение:**
    - Сохранить в `landing/public/images/articles/` с SEO-именем (keyword-topic-onda.png)
    - Заполнить `image`, `imageAlt`, `imageTitle`, при необходимости `imageCaption` (видимая подпись)
    - Выбрать `imagePlacement`: `'header'` — под заголовком; `'content'` — inline в markdown после intro

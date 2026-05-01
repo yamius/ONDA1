@@ -51,6 +51,10 @@ const ARTICLE_SHORT: Record<string, string> = {
   'neural-optimizer-estrogen': 'estrogen',
   'energy-governor-tsh': 'tsh',
   'adaptation-hack-range-fractionation': 'range-frac',
+  'ventral-tegmental-core-motivational-salience': 'vta',
+  'fascial-tensegrity-protocol-myofascial-noise': 'fascia',
+  'bohr-effect-oxygen-telemetry': 'bohr',
+  'acc-calibration-protocol-cognitive-control': 'acccal',
 }
 
 /** Protocol base id -> article slug (for building unique IDs) */
@@ -192,6 +196,19 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'range-frac-thermal': 'adaptation-hack-range-fractionation',
   'range-frac-amplitude-shift': 'adaptation-hack-range-fractionation',
   'range-frac-micro-dosing': 'adaptation-hack-range-fractionation',
+  // ventral-tegmental-core-motivational-salience
+  'vta-system-reset': 'ventral-tegmental-core-motivational-salience',
+  'vta-stress-overclock': 'ventral-tegmental-core-motivational-salience',
+  'vta-delayed-reward': 'ventral-tegmental-core-motivational-salience',
+  // fascial-tensegrity-protocol-myofascial-noise
+  'fascia-trapezius-release': 'fascial-tensegrity-protocol-myofascial-noise',
+  'fascia-vagus-humming': 'fascial-tensegrity-protocol-myofascial-noise',
+  // bohr-effect-oxygen-telemetry
+  'bohr-co2-tolerance': 'bohr-effect-oxygen-telemetry',
+  'bohr-vasodilation-cycles': 'bohr-effect-oxygen-telemetry',
+  // acc-calibration-protocol-cognitive-control
+  'acccal-monotasking-check': 'acc-calibration-protocol-cognitive-control',
+  'acccal-mindfulness-pause': 'acc-calibration-protocol-cognitive-control',
 }
 
 export const PROTOCOL_STORAGE_PREFIX = 'onda-protocol-'

@@ -109,6 +109,107 @@
         { "name": "高强度认知爆发（BDNF 触发器）", "text": "在密集学习课程之前进行 3 分钟的高强度运动（短跑或波比跳）。" },
         { "name": "『非睡眠深度休息』（NSDR）恢复", "text": "在密集学习时期之后进行 20 分钟的瑜伽休息术（Yoga Nidra）或引导的 NSDR。" }
       ]
+    },
+    "ventral-tegmental-core-motivational-salience": {
+      "title": "Ventral Tegmental Core：动机显著性的反应堆",
+      "description": "腹侧被盖区作为动机显著性的反应堆。多巴胺遥测、prediction error，以及用于校准核心的 ONDA 协议。",
+      "imageAlt": "Ventral Tegmental Core — 动机显著性反应堆：多巴胺遥测、中脑边缘回路、ONDA 生物 void 接口中的 prediction error。",
+      "imageTitle": "Ventral Tegmental Core — 动机显著性与多巴胺遥测的反应堆",
+      "imageCaption": "[ VTA_REACTOR_CORE ]: REACTOR_ACTIVE。PRECISION_COEFFICIENT 1.00。SIGNAL_LATENCY BYPASSED。SALIENCE_OUTPUT_LOCKED。",
+      "neuralSuggestion": {
+        "text": "稳定的反应堆需要锐利的镜头。将 VTA 校准与 Acetylcholine Lens 配对，让注意力锁定在信号上。",
+        "linkText": "Acetylcholine Lens →"
+      },
+      "content": "\n## [ STATUS: REACTOR_ACTIVE ]\n\n> 「Ventral Tegmental Core：动机显著性的反应堆」\n>\n> 在 ONDA 架构中，我们将腹侧被盖区（VTA）视为不仅仅是隐喻意义上的『快乐中心』，而是 Ventral Tegmental Core — 管理动机显著性的中央处理器。它是主反应堆，决定将你的计算与物理资源分配到哪里。\n\n---\n\n## 第 1 节：Ventral Tegmental Core — 反应堆运作\n\n该核心由三种主要神经元组成。\n\n### 多巴胺能神经元（约 60%）\n\n构成『多巴胺遥测』通道，绘制通往高优先级目标的路径。\n\n### GABA 能神经元（约 35%）\n\n作为系统阻尼器与制动器，防止溢出与混乱的上下文切换。\n\n### 谷氨酸能神经元（约 5%）\n\n当检测到真正关键的信号时，提供高速兴奋脉冲。\n\n---\n\n## 第 2 节：多巴胺信号 — 系统遥测\n\nVTA 中的多巴胺并不是任务完成后释放的『奖励化学物』。在 ONDA 中，我们将其定义为 prediction error 信号。\n\n### Anticipation（zero-latency 信号）\n\n当系统预测一个结果时，VTA 释放刚好足够的基线多巴胺，使系统保持锁定在任务上。\n\n### Reward\n\n如果现实超出系统模型，会出现额外的尖峰，强化神经通路。\n\n### Noise（jitter）\n\n当反应堆被低质量刺激（社交媒体通知或即时碳水高峰）淹没时，它会产生混乱脉冲，降低 SNR 并分散你的焦点。\n\n---\n\n## 第 3 节：关键错误 — 动机泄漏\n\n当 VTA 反应堆过载时，会触发动机泄漏。\n\n**奖励脱敏：** 受体下调。即使是简单的任务，你也需要指数级更多的输入。\n\n**Context switching（背景静电）：** VTA 持续扫描快速燃料，使 Acetylcholine Lens 失去焦距锁定。\n\n**Voltage drop：** 即使糖原储备仍然充足，也会出现身体疲劳与冷漠。\n\n---\n\n## 第 4 节：ONDA_PROTOCOL — 校准反应堆\n\n根据 ONDA 协议稳定 VTA。\n\n### 协议 1：System Reset（仅 high-fidelity 输入）\n\n> **The Hack：** 至少 24 小时内消除高频脉冲刺激。这让 VTA 恢复受体敏感性。\n\n**逻辑：** 整整一天移除通知、信息流和精制糖，让多巴胺基线恢复。反应堆退出持续 firing 模式，受体开始 upregulate。\n\n### 协议 2：通过压力超频\n\n> **The Hack：** 受控暴露于压力源 — 如 ONDA 冷水浸泡或高强度训练 — 产生干净、强烈的基线信号。\n\n**逻辑：** 适应性压力（hormesis）重置多巴胺敏感性，而不留氧化煤灰。冷水与重负荷给出 VTA 读作 high-fidelity 事件而非空洞 jitter 的宽阔慢脉冲。\n\n### 协议 3：绕过外部电网\n\n> **The Hack：** 转向奖励延迟的长工作周期。\n\n**逻辑：** VTA 学会从处理阶段本身 — deep work 循环 — 提取价值。反应堆停止追逐微奖励，锁定在长形式的任务信号上。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: 主观驱动日志 / 焦点块计时器\n> METRIC: time-to-task、任务后能量、基线情绪\n> STATUS: REACTOR_STABLE\n\n---\n\n## IMPACT_LOG: 稳定的反应堆运行\n\nVTA Core 的正确校准带来可衡量的升级。\n\n**稳定的系统电压：** 你的能量不再依赖外部电网（每 3 小时进食或不断喝咖啡）。\n\n**显著性控制：** 你决定什么是关键任务数据，什么只是背景噪声。\n\n**韧性：** 一个稳定的动机源，致力于组织修复与认知恢复。\n\n---\n\n> **ONDA_STATEMENT：** 「你的动机不应依赖外部触发器。VTA 是反应堆，而不是快速燃料的倾倒场。当你掌控多巴胺遥测时，你成为运营者，而不是算法的受害者。」\n",
+      "howToSteps": [
+        { "name": "System Reset（仅 high-fidelity 输入）", "text": "至少 24 小时内消除高频脉冲刺激。这让 VTA 恢复受体敏感性。" },
+        { "name": "通过压力超频", "text": "受控暴露于压力源 — 如 ONDA 冷水浸泡或高强度训练 — 产生干净、强烈的基线信号。" },
+        { "name": "绕过外部电网", "text": "转向奖励延迟的长工作周期。" }
+      ]
+    },
+    "fascial-tensegrity-protocol-myofascial-noise": {
+      "title": "Fascial Tensegrity Protocol：清除筋膜噪声",
+      "description": "释放物理压缩，清除筋膜噪声并重新校准 tensegrity 矩阵。ONDA 协议：斜方肌释放 + 迷走神经激活。",
+      "imageAlt": "筋膜 tensegrity 重新校准：人体形态嵌入发光的筋膜矩阵，迷走神经激活，氧气流动与 CO2 遥测，位于 ONDA 生物 void 接口。",
+      "imageTitle": "Fascial Tensegrity Protocol — 结构平衡重新校准与筋膜噪声释放",
+      "imageCaption": "[ TENSEGRITY_BALANCE_RECALIBRATION ]: STRUCTURAL_BALANCE。COHERENCE_COEFFICIENT 1.00。SIGNAL_LATENCY BYPASSED。INTERNAL_MODEL: TENSEGRITY_MATRIX。",
+      "neuralSuggestion": {
+        "text": "结构噪声清除后，注意力之镜变得更锐利。将此协议与 Acetylcholine Lens 深度解析配对。",
+        "linkText": "Acetylcholine Lens →"
+      },
+      "content": "\n## [ STATUS: ACTIVE ]\n\n> 「Fascial Tensegrity Protocol：清除筋膜噪声」\n>\n> 在 ONDA 架构中，你的身体作为一个统一的 tensegrity 矩阵运作。在压力下或长时间久坐时，斜方肌与颈部（cervical）区域会锁紧，造成结构性压缩，挤压血管通路。\n\n---\n\n## 第 1 节：逻辑 — 清除物理压缩\n\n矩阵锁紧时出现三种故障。\n\n### Impedance Spikes\n\n物理收缩限制微血管血流，产生机械与代谢阻力。\n\n### 通气与能量阻断\n\n输送到前额叶皮层的氧气减少，削弱 Acetylcholine Lens 的焦距清晰度。\n\n### 目标\n\n移除机械收缩、释放筋膜张力，并激活副交感神经系统，恢复健康的全身血流。\n\n---\n\n## 第 2 节：ONDA 协议 — 恢复结构平衡\n\n该协议将局部筋膜释放与迷走神经激活配对，将系统切换到 [ SYSTEM_COOLING: ACTIVE ] 状态。\n\n`[RELEASE] ---> Tissue Release (Clear Tension) ---> Vagus Activation (Parasympathetic Shift)`\n\n### 步骤 A：tissue release（斜方肌与颈部减压）\n\n此步骤缓解为大脑供血的主要血管通路周围的结构性压缩。\n\n> **The Hack：** 以挺立、平衡的姿势坐或站。将肩膀下沉并略向后拉，拉长斜方肌。用指尖（或按摩球/滚筒）对颈部与肩部上方的高张力点施加适度持续的压力。每个点保持 30 到 45 秒，直至组织张力消退。\n\n**System Effect：** 放松紧绷的肌肉组织，为氧气与营养恢复一条清晰的运输路径。\n\n### 步骤 B：迷走神经激活（down-regulating system noise）\n\n此步骤降低系统 jitter，并将身体从「战或逃」状态切换到最佳恢复状态。\n\n> **The Hack：** 通过鼻子顺畅深吸气 4 秒。在 8 到 10 秒内缓慢呼气，同时发出低频共振的哼鸣声（或通过抿起的嘴唇做长而受控的呼气）。重复 5 个完整循环。\n\n**System Effect：** 刺激迷走神经，降低静息心率，并释放下颌与颈部的剩余张力。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: HRV 监测器 / 主观张力扫描\n> METRIC: rMSSD、颈/肩张力指数、呼吸节奏\n> STATUS: STRUCTURAL_BALANCE\n\n---\n\n## 第 3 节：Impact Log — 系统输出\n\n规律执行此协议带来以下结果。\n\n**阻抗降低：** 恢复无阻碍的血液与氧气流向活跃神经网络。\n\n**相干性提升：** 优化 Acetylcholine Lens 的性能。\n\n**结构内聚：** 身体重新作为一个弹簧式 tensegrity 网络运作，而不是一组紧绷孤立的杠杆。\n\n---\n\n> **ONDA_STATEMENT：** 「你的身体是 tensegrity 矩阵，而不是一组紧绷的杠杆。释放物理噪声，恢复结构平衡 — 处理信号将无阻力传递。」\n",
+      "howToSteps": [
+        { "name": "Tissue release（斜方肌与颈部减压）", "text": "将肩膀下沉并略向后拉，拉长斜方肌。用指尖或按摩球对颈部与肩部上方的张力点施加适度持续压力，每个点保持 30 到 45 秒直至张力消退。" },
+        { "name": "迷走神经激活（共振哼鸣呼气）", "text": "通过鼻子吸气 4 秒。呼气 8 到 10 秒，同时发出低频哼鸣声或通过抿起的嘴唇做受控呼气。5 个循环。" }
+      ]
+    },
+    "vascular-tensegrity-microvascular-mechanics": {
+      "title": "Vascular Tensegrity 与微血管力学",
+      "description": "血管 tensegrity 作为微循环的结构完整性。流体力学、筋膜张力，以及以零阻抗向前额叶皮层输送。",
+      "imageAlt": "血管 tensegrity：被氧气与 CO2 遥测照亮的人体形态、血红蛋白簇，以及向高需求神经节点供能的氧气桥，位于 ONDA 生物 void 接口。",
+      "imageTitle": "Vascular Tensegrity — 微血管力学、氧气桥校准与零阻抗输送",
+      "imageCaption": "[ OXYGEN_BRIDGE_CALIBRATION ]: VENTILATION_ACTIVE。O2_FLOW OPTIMAL。SIGNAL_LATENCY BYPASSED。INTERNAL_MODEL: SYSTEM_COOLING。",
+      "neuralSuggestion": {
+        "text": "理论奠定升级 — Fascial Tensegrity Protocol 是清除筋膜噪声的操作性练习。",
+        "linkText": "Fascial Tensegrity Protocol →"
+      },
+      "content": "\n## [ STATUS: PROTOTYPE_STAGED ]\n\n> 「Vascular Tensegrity 与微血管力学」\n>\n> 在经典工程中，稳定性通过相互压缩的刚性重元素实现（例如砌体）。Tensegrity（张力完整性）在完全不同的框架下运作：刚性元素互不接触，而是「漂浮」在一张连续的张力网络之中。\n\n---\n\n## 第 1 节：逻辑 — 结构完整性\n\n在人体中，这一原理位于微循环系统的核心。\n\n### 刚性元素\n\n血管壁、细胞膜与骨骼结构。\n\n### 张力网络\n\n肌筋膜鞘、细胞内液压与弹性蛋白纤维。\n\n当这张网络处于最佳平衡时，内外力均匀分布于矩阵之上。这只需要最少的能量消耗即可维持结构形态并促进流体的连续流动。\n\n---\n\n## 第 2 节：架构 — 流体力学与张力\n\n在 ONDA 架构中，血管系统被评估为一个传输网络，而非标准管道。\n\n### 压缩与张力\n\n内部流体压力（血压）将血管壁向外推（compression），而周围组织（筋膜与平滑肌）提供反向的外部张力。\n\n### 低阻抗输送\n\n这种平衡让氧气与营养以最小阻力被送达皮层。\n\n### 机械阻尼\n\nTensegrity 矩阵吸收生化与物理冲击，保护脆弱的微血管免于微创伤。\n\n---\n\n## 第 3 节：ONDA 洞察 — 消除筋膜噪声\n\n长时间的久坐工作或心理压力会使颈部、肩部与咀嚼肌（jaw）锁紧。这会造成结构性张力失衡并压迫血管通路。\n\n**Impedance Spikes：** 微血管系统被收缩，脑血流减少。\n\n**脑缺氧：** 皮层缺氧并缺乙酰胆碱，Acetylcholine Lens 失去焦点清晰度。\n\n> [ ONDA_PROTOCOL ]：释放筋膜张力，将系统恢复到低阻抗状态，让核心（VTA 与 Acetylcholine Lens）在不浪费基线能量的情况下以最大效率运作。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: HRV 监测器、毛细血管再充盈、主观头部清晰度\n> METRIC: 脑灌注指数、颈/颌张力、专注持续时间\n> STATUS: STRUCTURAL_INTEGRITY\n\n---\n\n## IMPACT_LOG: 稳定的结构完整性\n\n维持血管 tensegrity 带来以下结果。\n\n**无阻碍的营养流动：** 关键代谢物无延迟地输送到活跃神经节点。\n\n**系统电压优化：** 从前额叶皮层抽走计算能力的物理张力被中和。\n\n**负载下的韧性：** 身体作为一根连贯且有韧性的弹簧运作，而不是一组孤立紧绷的杠杆。\n\n---\n\n> **ONDA_STATEMENT：** 「你的血管网络是一张活的结构矩阵。释放张力，恢复平衡 — 你的信号将以零阻抗到达前额叶皮层。」\n"
+    },
+    "bohr-effect-oxygen-telemetry": {
+      "title": "玻尔效应与氧气遥测",
+      "description": "玻尔效应作为氧气输送的力学。CO2 遥测、血红蛋白结合亲和力，以及用于校准通气的 ONDA 协议。",
+      "imageAlt": "玻尔效应：tensegrity bio-matrix 人体，包含血红蛋白、CO2 触发器、氧气层流以及为高需求神经节点供能的氧气桥，位于 ONDA 生物 void 接口。",
+      "imageTitle": "玻尔效应 — 氧气遥测、CO2 触发器与血红蛋白输送力学",
+      "imageCaption": "[ THE_TENSEGRITY_BIO_MATRIX ]: STRUCTURAL_BALANCE。COHERENCE_COEFFICIENT 1.00。SIGNAL_LATENCY BYPASSED。INTERNAL_MODEL: TENSEGRITY_MATRIX。",
+      "neuralSuggestion": {
+        "text": "校准 CO2 耐受度后，用专门的 CO2 Tolerance 协议把上限再推高。",
+        "linkText": "CO2 Tolerance：拓展氧气极限 →"
+      },
+      "content": "\n## [ STATUS: VENTILATION_ACTIVE ]\n\n> 「玻尔效应与氧气遥测」\n>\n> 从技术角度，玻尔效应描述的是血红蛋白结合亲和力与周围二氧化碳（CO2）浓度之间的关系。常见的误解是：只要多吸气，组织获得的氧气就更多。生物学机制并非如此。\n\n---\n\n## 第 1 节：玻尔效应 — 氧气输送的力学\n\n两个结构性事实定义这个系统。\n\n### 结合亲和力\n\n血红蛋白不会自动向组织释放氧气（O2）；需要 CO2 的存在来触发释放。\n\n### 缺氧循环\n\n压力下呼吸变得浅而快（过度换气），CO2 被冲走。没有足够的二氧化碳，血红蛋白就会扣住氧分子，造成细胞缺氧（缺氧饥饿）—— 即便血氧水平很高。\n\n---\n\n## 第 2 节：架构 — 通气系统\n\n在 ONDA 模型中，呼吸系统作为进气与冷却基础设施运作。\n\n### System Intake\n\n空气进入肺部，将氧气加载到血液网络。\n\n### Telemetry Delivery\n\nCO2 作为数据标记，向血红蛋白发出信号，告知氧气交付的具体位置（高代谢活动区域）。\n\n### Low-Impedance Cooling\n\n受控的深呼吸带走代谢热量，防止系统在长时间 deep work 中过热。\n\n---\n\n## 第 3 节：关键错误 — 浅层数据缓冲\n\n在沉重的认知负荷下若依赖浅呼吸，会发生两类系统错误。\n\n**内部窒息：** 大脑获得的氧气不足，前额叶皮层的处理速度下降。\n\n**Jitter 生成：** 身体把低 CO2 误读为压力信号，增加肾上腺素分泌，引发微恐慌或迷雾感。\n\n---\n\n## 第 4 节：ONDA_PROTOCOL — 通气校准\n\n为了确保不间断的处理性能，重新校准通气层。\n\n### 协议 1：CO2 耐受度校准\n\n> **The Hack：** 通过缓慢、有节制的呼吸提高对二氧化碳的耐受度 — 拉长呼气，并耐心地在下次吸气前保持暂停。\n\n**逻辑：** 更高的 CO2 耐受度让血红蛋白输送系统保持稳定。玻尔触发器可靠激发，氧气在代谢需求所在之处卸载。\n\n### 协议 2：血管扩张循环\n\n> **The Hack：** 短暂、受控的呼吸保持（呼气后或吸气后）按循环重复，以温和地提高 CO2。\n\n**逻辑：** 受控的 CO2 升高扩张脑血管，确保养分与氧气平稳、持续地流向活跃神经网络。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: BOLT score / 脉搏血氧仪 / 呼吸节奏\n> METRIC: CO2 耐受度、屏息时长、专注持续时间\n> STATUS: VENTILATION_STABLE\n\n---\n\n## IMPACT_LOG: 稳定的通气\n\n正确管理玻尔效应带来以下结果。\n\n**High-Altitude 认知输出：** 持续 10 小时以上的脑力专注而无认知疲劳。\n\n**稳定的系统电压：** 没有脑雾或局部肌肉紧张的体感。\n\n---\n\n> **ONDA_STATEMENT：** 「你的肺活量是硬件管道。控制气体交换 — 你的大脑就能无延迟地处理信号。」\n",
+      "howToSteps": [
+        { "name": "CO2 耐受度校准", "text": "通过缓慢、有节制的呼吸提高对二氧化碳的耐受度 — 拉长呼气，并耐心地在下次吸气前保持暂停。" },
+        { "name": "血管扩张循环", "text": "短暂、受控的呼吸保持（呼气后或吸气后）按循环重复，以温和地提高 CO2 并扩张脑血管。" }
+      ]
+    },
+    "anterior-cingulate-core-coherence-monitoring": {
+      "title": "Anterior Cingulate Core 与相干性监控",
+      "description": "前扣带皮层作为系统仲裁者 — ONDA 架构中的冲突监控、prediction error 与认知灵活性。",
+      "imageAlt": "Anterior cingulate core：发光的 ACC 节点在 jitter 与相干性之间仲裁；杏仁核、腹侧纹状体、海马体、岛叶与背外侧 PFC 映射于 ONDA 生物 void 接口。",
+      "imageTitle": "Anterior Cingulate Core — 系统仲裁者、冲突监控与相干流的建立",
+      "imageCaption": "[ THE_ACC_CORE ]: CONFLICT_MONITORING ACTIVE。COHERENCE_COEFFICIENT 0.95。ERROR_RATE LOW。INTERNAL_MODEL: SYSTEM_ARBITER。",
+      "neuralSuggestion": {
+        "text": "仲裁者的锐度取决于它所监控的镜头。将此地图与 Acetylcholine Lens 深度解析配对。",
+        "linkText": "Acetylcholine Lens →"
+      },
+      "content": "\n## [ STATUS: PROPOSED ]\n\n> 「Anterior Cingulate Core 与相干性监控」\n>\n> 在 ONDA 系统中，前扣带皮层（ACC）作为冲突与错误的监视器运作。其主要功能是评估流程运行的顺畅程度，并检测预期结果与现实之间的偏差（prediction error）。\n\n---\n\n## 第 1 节：逻辑 — 系统仲裁者与错误监视器\n\nACC 仲裁三类决策。\n\n### Conflict Monitoring\n\n当操作者面临在执行需要高强度专注的复杂任务与选择轻松干扰（如查看通知）之间做选择时，ACC 标记该冲突。\n\n### Cost-Benefit Analysis\n\n仲裁者权衡认知控制的成本。当神经递质水平下降，维持专注需要太多能量时，节点发出 task-switching 的需求信号。\n\n### Error Prevention\n\n检测到偏离目标 ONDA 协议时，节点发出 malfunction 信号，要求启动系统重新校准。\n\n---\n\n## 第 2 节：架构 — 控制的两个分支\n\nACC 架构分为两个功能区，各自管理特定的系统任务。\n\n### Dorsal Component (dACC)\n\n负责认知控制、动作选择与 task-switching。确保系统不偏离 deep work，锁定在核心向量上。\n\n### Ventral Component (vACC)\n\n负责情绪评估与自主调节。其作用是降低压力，防止系统在复杂操作中过载。\n\n---\n\n## 第 3 节：ONDA 洞察 — 管理系统噪声（jitter）\n\n当 Acetylcholine Lens 由于缺氧或多巴胺下降开始失去焦点清晰度时，系统中会出现背景噪声（jitter）。\n\n此时前扣带皮层被激活。\n\n**Overload Detection：** 噪声水平的提高触发要求执行校准协议的信号。\n\n**Attention Management：** 若维持控制的成本超过阈值，ACC 发出休息、运行通气协议或进行筋膜释放的需求信号。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: 焦点块计时器 / 主观错误日志 / HRV 监测器\n> METRIC: 错误率、task-switch 延迟、冲突挫败感指数\n> STATUS: ARBITER_STABLE\n\n---\n\n## IMPACT_LOG: 仲裁者稳定运行\n\n正确管理前扣带皮层的功能带来以下结果。\n\n**认知灵活性提升：** 能够快速、流畅地在任务间切换，而不出现系统降级。\n\n**高控制保持力：** 能够抵抗瞬时干扰，坚持长期 ONDA 协议。\n\n**心理负担降低：** 处理困难、非标准任务时的挫败感被消除。\n\n---\n\n> **ONDA_STATEMENT：** 「ACC 是你认知稳定性的仲裁者。当噪声与专注之间发生冲突时，这个节点决定如何重新分配计算资源。」\n"
+    },
+    "acc-calibration-protocol-cognitive-control": {
+      "title": "ACC Calibration Protocol：认知控制训练",
+      "description": "为系统仲裁者降温。ONDA 协议：单任务 + 正念对齐，清除 dACC 的错误缓冲区并锁定专注。",
+      "imageAlt": "ACC 校准协议：冥想者形象，标注前额叶皮层、前扣带皮层、膝下扣带、杏仁核与海马体；校准波在 ONDA 生物 void 接口中将 jitter 平滑为相干性。",
+      "imageTitle": "ACC Calibration Protocol — 神经仲裁与系统相干性",
+      "imageCaption": "[ THE_ACC_CALIBRATION ]: ACC_CALIBRATION ACTIVE。COHERENCE_COEFFICIENT 1.00。PREDICTION_ERROR ZERO_POINT。INTERNAL_MODEL: SYSTEM_ARBITER。",
+      "neuralSuggestion": {
+        "text": "当你理解仲裁者监控的内容时，它就会平静下来。阅读 Anterior Cingulate Core 的深度解析。",
+        "linkText": "Anterior Cingulate Core →"
+      },
+      "content": "\n## [ STATUS: ACTIVE ]\n\n> 「ACC Calibration Protocol：认知控制训练」\n>\n> 在 ONDA 架构中，ACC 的背侧部分负责动作选择与认知控制。在多任务环境中长时间执行复杂操作时，该节点会过热，导致性能退化。\n\n---\n\n## 第 1 节：逻辑 — 处理器卸载\n\n三条结构性杠杆定义本次校准。\n\n### Thermal Control\n\n频繁的 task-switching 给 ACC 带来沉重的计算负载。\n\n### Noise Suppression\n\n限制输入数据流可减少冲突监控系统中的虚假触发。\n\n### 目标\n\n降低节点负载，将认知灵活性恢复到 FOCUS_LOCKED 状态。\n\n---\n\n## 第 2 节：ONDA 协议 — 恢复仲裁者\n\n该协议将单任务执行与正念门配对，将系统切换到 [ FOCUS_LOCKED ] 状态。\n\n`[CALIBRATE] ---> Monotasking Check (Halt Conflict) ---> Mindfulness Alignment (Quiet vACC)`\n\n### 阶段 A：Monotasking Check\n\n此阶段消除多余的 task-switching，防止给 dACC 带来压力的冲突。\n\n> **The Hack：** 选择一个任务（Core Vector）。设置 50 分钟的 deep work 计时器。隔离所有外部干扰 — 关闭通知，关掉不必要的标签页。\n\n**System Effect：** ACC 节点进入稳定的任务执行状态，停止冲突处理。\n\n### 阶段 B：Mindfulness Alignment\n\n降低 ACC 对背景系统噪声与小型干扰物的敏感度。\n\n> **The Hack：** 当工作中出现切换任务或查看通知的冲动时，不要立刻反应。停顿 15 到 30 秒。承认冲动，但不依其行动。把焦点拉回核心任务。\n\n**System Effect：** 降低 vACC 对触发事件的情绪反应，节省系统资源。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: 焦点块计时器 / 冲动日志 / HRV 监测器\n> METRIC: 不间断专注时长、冲动/行动比率、块后清晰度\n> STATUS: FOCUS_LOCKED\n\n---\n\n## 第 3 节：Impact Log — 系统输出\n\n规律执行 ACC 校准协议带来以下结果。\n\n**专注保持：** 主要任务上的不间断专注时长增加。\n\n**心理疲劳降低：** 在复杂操作中消除系统紧张。\n\n**抗干扰韧性：** 在背景噪声下保持结构稳定。\n\n---\n\n> **ONDA_STATEMENT：** 「为你的系统仲裁者降温。单任务与正念对齐是清除错误缓冲区、把专注恢复到最大潜力的最有效方式。」\n",
+      "howToSteps": [
+        { "name": "Monotasking Check（Core Vector + 50 分钟 deep work）", "text": "选择一个任务（Core Vector），设置 50 分钟计时器，关闭通知与不必要的标签页，停止 dACC 的冲突处理。" },
+        { "name": "Mindfulness Alignment（15–30 秒冲动暂停）", "text": "出现切换冲动时，暂停 15 到 30 秒。承认冲动，不依其行动 — 把焦点拉回核心任务。" }
+      ]
+    },
+    "hydraulic-viscosity-onda-transport-bus": {
+      "title": "液压粘度与 ONDA 传输总线",
+      "description": "血液粘度作为脑部传输总线的阻力。Hagen–Poiseuille 力学、热控制以及 ONDA 的零阻抗输送逻辑。",
+      "imageAlt": "液压粘度：连接到液压总线的发光人体；viscosity coefficient 0.69 cP、vascular impedance 处于 zero-point，以及 ONDA 生物 void 接口中的 thermal pulse induction。",
+      "imageTitle": "液压粘度 — ONDA 传输总线、Hagen–Poiseuille 阻力与热控制",
+      "imageCaption": "[ HYDRAULIC_BUS: ACTIVE ]: VISCOSITY_COEFFICIENT 0.69 cP。VASCULAR_IMPEDANCE ZERO_POINT。THERMAL_CONTROL ACTIVE。",
+      "neuralSuggestion": {
+        "text": "理论描述总线 — Fascial Tensegrity Protocol 实时清除推高粘度的结构性压缩。",
+        "linkText": "Fascial Tensegrity Protocol →"
+      },
+      "content": "\n## [ STATUS: PROPOSED ]\n\n> 「液压粘度与 ONDA 传输总线」\n>\n> 在经典流体力学中，微血管内的阻力（Impedance）由方程支配，其中流体粘度是关键参数。在人体中，传输网络遵循相同的物理 — 是粘度决定了心脏与血管张力将血液推送到皮层所需消耗的能量。\n\n---\n\n## 第 1 节：逻辑 — 微循环与阻力\n\n两个结构变量定义了这条总线。\n\n### 介质（流体）\n\n含有溶解的代谢物与蛋白质的水。\n\n### 粘度（μ）\n\n内部摩擦，决定心脏与血管张力将血液泵送到皮层所需的能量。在标准体温（37 °C）下，水的动态粘度约为 0.69 cP（厘泊）— 显著低于室温下的值。\n\n当颈部与肩部出现筋膜张力时，血管被压缩，局部血流减速会使表观粘度上升。结果就是 Impedance spike。\n\n---\n\n## 第 2 节：架构 — 热力学与液压\n\n在 ONDA 架构中，我们将水的粘度视为可动态调节的系统参数。\n\n### Thermal Control\n\n当局部温度上升（通过提高代谢与深度受控呼吸），水分子之间的氢键被削弱。粘度下降，氧气输送被促进。\n\n### Energy Balance (Low Impedance)\n\n通过维持适当的血管张力与温度来降低粘度，可减少养分输送所需的能量。\n\n### Hydraulic Resistance\n\n根据 Hagen–Poiseuille 定律，流动阻力与流体粘度成正比。最小化粘度，即可最大化脑反应堆的效率。\n\n---\n\n## 第 3 节：ONDA 洞察 — 管理液压噪声\n\n当结构性张力（如咀嚼肌或斜方肌的痉挛）压迫微血管时，血液流速下降与局部组织冷却使粘度升高。结果就是养分送达大脑被延迟 — 延迟增加。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: 外周皮肤温度、毛细血管再充盈、主观头部清晰度\n> METRIC: 脑灌注延迟、颌/颈张力指数、专注持续时间\n> STATUS: BUS_OPTIMIZED\n\n---\n\n## IMPACT_LOG: 优化传输总线\n\n维持最佳粘度带来以下结果。\n\n**即时响应：** 关键代谢物无延迟地输送到神经节点。\n\n**系统能效：** 维持脑血流的基线能量被最小化。\n\n**信号稳定性：** 防止系统降级，让 Acetylcholine Lens 保持锐利对焦。\n\n---\n\n> **ONDA_STATEMENT：** 「粘度是你传输总线的阻力。保持最佳的热与肌肉平衡，你的信号将以零阻抗传播。」\n"
     }
   },
   "detail": {
