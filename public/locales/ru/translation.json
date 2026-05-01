@@ -507,7 +507,8 @@
     "last_20_practices": "Последние 20 практик",
     "activity_calendar": "📅 Календарь активности",
     "last_4_weeks": "Последние 4 недели",
-    "practices_tooltip": "практик"
+    "practices_tooltip": "практик",
+    "achievements": "Достижения"
   },
   "achievements": {
     "first_step": {
@@ -3107,7 +3108,8 @@
   "common": {
     "yes": "Да",
     "no": "Нет",
-    "other_or_not_sure": "Другое / Не уверен"
+    "other_or_not_sure": "Другое / Не уверен",
+    "cancel": "Отмена"
   },
   "eliza": {
     "empty": [

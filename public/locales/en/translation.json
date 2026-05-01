@@ -507,7 +507,8 @@
     "last_20_practices": "Last 20 practices",
     "activity_calendar": "📅 Activity Calendar",
     "last_4_weeks": "Last 4 weeks",
-    "practices_tooltip": "practices"
+    "practices_tooltip": "practices",
+    "achievements": "Achievements"
   },
   "achievements": {
     "first_step": {
@@ -3022,7 +3023,8 @@
   "common": {
     "yes": "Yes",
     "no": "No",
-    "other_or_not_sure": "Other / Not sure"
+    "other_or_not_sure": "Other / Not sure",
+    "cancel": "Cancel"
   },
   "eliza": {
     "empty": [
