@@ -157,7 +157,10 @@
     "session_history": "会话历史",
     "journal_title": "练习日志",
     "journal_empty": "您的日志为空",
-    "journal_empty_hint": "开始练习以创建第一条记录"
+    "journal_empty_hint": "开始练习以创建第一条记录",
+    "elemental": "元素",
+    "practice_time": "练习时间",
+    "bonus": "奖励"
   },
   "elements": {
     "breath": "🫁 呼吸",
@@ -362,7 +365,13 @@
     "quality_chart": "📈 练习质量图表",
     "last_20_practices": "最近20次练习",
     "last_4_weeks": "最近4周",
-    "practices_tooltip": "次练习"
+    "practices_tooltip": "次练习",
+    "achievements_section": "🏆 成就 ({{unlocked}}/{{total}})",
+    "rank_novice": "新手",
+    "rank_student": "学生",
+    "rank_practitioner": "修习者",
+    "rank_master": "大师",
+    "rank_guru": "导师"
   },
   "achievements": {
     "first_step": {
@@ -426,7 +435,10 @@
     "time": "时间",
     "pulse": "脉搏",
     "reward": "奖励",
-    "record": "纪录"
+    "record": "纪录",
+    "no_records": "暂无记录",
+    "duration": "时长",
+    "qnt": "OND"
   },
   "leaderboard": {
     "title": "排行榜",
@@ -519,7 +531,31 @@
     "focus_desc": "平均心率 + 低变异性",
     "excitement_desc": "心率急升时刻",
     "fatigue_desc": "心率高于基线，呼吸低，能量低",
-    "flow_desc": "心率略高于基线，呼吸稳定"
+    "flow_desc": "心率略高于基线，呼吸稳定",
+    "customize_profile": "个性化您的档案",
+    "your_name": "您的名字（显示在排行榜上）",
+    "enter_name": "请输入您的名字",
+    "characters": "字符",
+    "name_required": "名字不能为空",
+    "name_too_long": "名字不能超过30个字符",
+    "save_error": "保存更改失败",
+    "name_updated": "名字更新成功！",
+    "saving": "保存中",
+    "name_info": "💡 您的名字将显示在玩家排行榜上。选择一个能代表您的名字",
+    "bluetooth_monitor": "蓝牙心率监测器",
+    "bluetooth_desc": "连接心率追踪器，在练习期间获得实时生物反馈",
+    "bpm": "BPM",
+    "br_unit": "/分钟",
+    "stress_label": "压力",
+    "energy_label": "能量",
+    "device_connect": "连接",
+    "scan_stop": "停止",
+    "recovery_rate_desc": "压力后心率恢复正常的速度",
+    "hr_acceleration_desc": "心率上升的速度",
+    "connection_instructions": "连接说明：",
+    "instruction_1": "手机上：关闭标准追踪器应用。开启蓝牙",
+    "instruction_2": "追踪器上：设置 → 共享心率 → 启用",
+    "realtime_metrics": "实时指标。正在校准基线…"
   },
   "profile": {
     "title": "个人资料",
@@ -542,7 +578,13 @@
     "qnt_balance": "OND余额",
     "min_short": "分",
     "time_label": "时间",
-    "stability_label": "稳定性"
+    "stability_label": "稳定性",
+    "hours_ago": "小时前",
+    "complete_all_practices": "完成所有回路练习",
+    "track_label": "追踪",
+    "of_label": "/",
+    "stress": "压力水平",
+    "energy": "能量水平"
   },
   "progress": {
     "level_progress": "部分进度",
@@ -627,7 +669,8 @@
     "no": "否",
     "loading": "加载中...",
     "error": "错误",
-    "success": "成功"
+    "success": "成功",
+    "other_or_not_sure": "其他 / 不确定"
   },
   "emotional_check": {
     "start_dialog_terra": "与Liza开始对话",
@@ -867,6 +910,99 @@
       "guiding_5": "如果出现怀疑——屈服于长长的呼气并回到短语。",
       "guiding_6": "保持柔软的姿势和温暖的腹部——那里产生没有紧张的决心。",
       "final_phrase": "可能与你一起呼吸——每次呼气使步伐更真实。"
+    },
+    "inner_smile": {
+      "name": "内在微笑",
+      "short_phrase": "用心微笑——不动面容，由内而生。",
+      "guiding_1": "放松双肩，松弛下颌，让舌头自然安放。",
+      "guiding_2": "感受胸中一处温暖之点，让它\"微笑\"。",
+      "guiding_3": "让一波柔和的微笑流过你的面部、眼睛和喉咙。",
+      "guiding_4": "将这微笑送往腹部、太阳神经丛和脊柱。",
+      "guiding_5": "吸气时聚集温暖之感，呼气时与全身分享。",
+      "guiding_6": "若真实的微笑浮现于脸上——不必抑制，只需让它柔化。",
+      "guiding_7": "呼吸如同感谢身体的工作。",
+      "guiding_8": "善待自己——这是喜悦的源泉。",
+      "final_phrase": "当心微笑时，世界以温暖回应。"
+    },
+    "amoeba_dance": {
+      "name": "阿米巴之舞",
+      "short_phrase": "让喜悦在呼吸的波浪上轻微地推动身体。",
+      "guiding_1": "保持中轴：头顶向上，尾骨向下，呼吸自如。",
+      "guiding_2": "从几乎察觉不到的摇摆开始——5%的幅度。",
+      "guiding_3": "吸气——微微上提，呼气——微微下沉。",
+      "guiding_4": "探索三个方向：前后、左右、柔和的螺旋。",
+      "guiding_5": "手掌和肩膀保持放松，面容温暖轻盈。",
+      "guiding_6": "让动作从腹部中心生起，自然消逝。",
+      "guiding_7": "若速度加快——回到\"几乎静止\"的状态。",
+      "guiding_8": "觉察喜悦如何在身体中毫不费力地浮现——如同温柔的脉动。",
+      "final_phrase": "喜悦是自我呼吸的运动。"
+    },
+    "warm_sphere": {
+      "name": "温暖之球",
+      "short_phrase": "在腹部创造一个温暖之球，以它滋养全身。",
+      "guiding_1": "将注意力放在肚脐/太阳神经丛区域。",
+      "guiding_2": "吸气时将温暖聚集在那里——如同捧在内在的双手中。",
+      "guiding_3": "呼气时让球体扩展：到下背部、胸部、骨盆、大腿。",
+      "guiding_4": "想象疲劳融化并流向双脚。",
+      "guiding_5": "缓慢呼吸，毫不费力；保持面容柔和，喉咙松弛。",
+      "guiding_6": "若思绪回来——再次找到温暖之球的边界。",
+      "guiding_7": "让它变得稳定坚实，如同身体内的夜灯。",
+      "final_phrase": "温暖之球从内在支撑你，力量温柔地回归。"
+    },
+    "rest_breath": {
+      "name": "休息之息",
+      "short_phrase": "缓慢的呼气带走疲劳。让身体沉入支撑。",
+      "guiding_1": "躺下或坐着，让背部得到完全支撑。",
+      "guiding_2": "用鼻子轻轻吸气，充满腹部。",
+      "guiding_3": "通过微微张开的双唇缓慢呼气——是吸气时间的两倍。",
+      "guiding_4": "每次呼气，让身体变得更重。",
+      "guiding_5": "释放面部、肩膀、双手的紧张。",
+      "guiding_6": "想象呼吸如温水般化解疲劳。",
+      "guiding_7": "毫不费力地保持这缓慢的节奏。",
+      "final_phrase": "休息不是软弱——而是身体的智慧。"
+    },
+    "silence_point": {
+      "name": "静止之点",
+      "short_phrase": "在内在找到一个静止之点，绕着它呼吸。",
+      "guiding_1": "闭上双眼。让呼吸变得几乎察觉不到。",
+      "guiding_2": "觉察一个静止之点——在腹部深处或胸部中央。",
+      "guiding_3": "不要用力触碰它；绕着它呼吸，如水绕石。",
+      "guiding_4": "吸气时注意力聚集于中轴；呼气时——化解多余之物。",
+      "guiding_5": "思绪如云飘过：觉察——然后放下。",
+      "guiding_6": "耳朵倾听寂静，皮肤倾听空气，心倾听自己。",
+      "guiding_7": "让\"我\"的边界变得柔软，如雾中之光。",
+      "guiding_8": "留在这点附近——它一无所求，本已宁静。",
+      "final_phrase": "在静止之点中，一切已然发生——剩下的只是存在。"
+    },
+    "listen_space": {
+      "name": "聆听空间",
+      "short_phrase": "不要聆听声音——聆听声音之间的空间。",
+      "guiding_1": "让呼吸自然；让听觉向360度敞开。",
+      "guiding_2": "觉察近处和远处的声音——不去命名它们。",
+      "guiding_3": "聆听每个声音由之诞生并归于其中的间隙。",
+      "guiding_4": "扩展注意力：身体 → 房间 → 街道 → 更远处。",
+      "guiding_5": "让每个声音穿过你而不执著。",
+      "guiding_6": "若判断浮现——\"喜欢/不喜欢\"——随呼气释放。",
+      "guiding_7": "觉察空间如何回应你的聆听——通过呼吸周围的寂静。",
+      "guiding_8": "对世界变得透明，世界也对你变得透明。",
+      "final_phrase": "当你聆听空间时，空间也开始聆听你。"
+    },
+    "still_form": {
+      "name": "静止之形",
+      "short_phrase": "在稳定的姿势中静止。呼吸自行流动。成为宁静之形。",
+      "guiding_1": "舒适地坐着或站着；选择一个简单、稳定的姿势。",
+      "guiding_2": "感受支撑：双脚/坐骨和骨盆的重量。",
+      "guiding_3": "伸直脊柱；头顶轻柔向上，下巴自由。",
+      "guiding_4": "放下肩膀，松弛下颌，舌头自由，目光柔和。",
+      "guiding_5": "吸气——中轴延展；呼气——重量沉入大地。",
+      "guiding_6": "让呼吸自然；不去控制，只是觉察。",
+      "guiding_7": "觉察静止中的微小动态：脉搏、温暖的波浪、几乎听不见的吸气。",
+      "guiding_8": "不要固定任何东西——让形式立着，生命在内安静地流动。",
+      "guiding_9": "注意力保持在三点：下方的支撑、温暖的腹部、宁静的心。",
+      "guiding_10": "若心思游离——回到重量和与大地接触的感觉。",
+      "guiding_11": "让寂静从内在逐渐充满形体，如光充满水。",
+      "guiding_12": "比想要的多停留一会——宁静从那里开始。",
+      "final_phrase": "当形体静止时，寂静在其中诞生。"
     }
   },
   "subscription": {
@@ -884,7 +1020,18 @@
     "yearly_tagline": "最佳价值 · 节省64%",
     "monthly_tagline": "完全灵活 · 随时取消",
     "try_free": "免费试用7天",
-    "disclaimer": "7天完全免费，之后每月4.17欧元，按年计费49.99欧元/年。随时取消。"
+    "disclaimer": "7天完全免费，之后每月4.17欧元，按年计费49.99欧元/年。随时取消。",
+    "try_free_14": "免费试用14天",
+    "disclaimer_yearly": "14天完全免费，之后每月5.42美元，按年计费64.99美元/年。随时取消。",
+    "disclaimer_monthly": "7天完全免费，之后每月14.99美元。随时取消。",
+    "restore": "恢复购买",
+    "restoring": "恢复中…",
+    "processing": "处理中…",
+    "loading": "加载中…",
+    "error_no_product": "产品不可用",
+    "error_purchase": "购买失败",
+    "error_restore": "恢复失败",
+    "error_no_purchases": "没有可恢复的购买"
   },
   "legal": {
     "terms_of_use": "使用条款",
