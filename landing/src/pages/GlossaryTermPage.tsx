@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { NotFoundPage } from './NotFoundPage'
 import Markdown from 'react-markdown'
@@ -7,6 +7,7 @@ import rehypeSlug from 'rehype-slug'
 import { getTermBySlug, glossaryTerms } from '../data/glossary'
 import { injectGlossaryLinks } from '../utils/glossaryLinks'
 import { getArticlesForTerm } from '../data/articles'
+import { langFromPath } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -26,6 +27,9 @@ export function GlossaryTermPage() {
   const { slug } = useParams<{ slug: string }>()
   const term = slug ? getTermBySlug(slug) : undefined
   const { t: tGloss } = useTranslation('glossary')
+  const { pathname } = useLocation()
+  const lang = langFromPath(pathname)
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
   const tField = (termSlug: string, key: string, fallback: string): string =>
     tGloss(`bodies.${termSlug}.${key}`, { defaultValue: fallback }) as string
 
@@ -90,12 +94,12 @@ export function GlossaryTermPage() {
     <div className="mx-auto max-w-3xl px-4 pb-16 md:px-6">
       {/* Breadcrumb */}
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to="/" className="transition-colors hover:text-white/50">
-          Home
+        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">
+          {tGloss('breadcrumb.home')}
         </Link>
         <span>/</span>
-        <Link to="/glossary" className="transition-colors hover:text-white/50">
-          Glossary
+        <Link to={`${langPrefix}/glossary`} className="transition-colors hover:text-white/50">
+          {tGloss('breadcrumb.current')}
         </Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">{tTitle}</span>
@@ -181,8 +185,15 @@ export function GlossaryTermPage() {
               const className =
                 'text-terminal-cyan underline decoration-terminal-cyan/30 underline-offset-2 transition-colors hover:text-terminal-cyan/80 hover:decoration-terminal-cyan/50'
               if (href && !isExternal && href.startsWith('/')) {
+                const needsPrefix =
+                  langPrefix &&
+                  (href.startsWith('/articles/') ||
+                    href.startsWith('/glossary/') ||
+                    href === '/articles' ||
+                    href === '/glossary')
+                const to = needsPrefix ? `${langPrefix}${href}` : href
                 return (
-                  <Link to={href} className={className}>
+                  <Link to={to} className={className}>
                     {children}
                   </Link>
                 )
@@ -208,13 +219,13 @@ export function GlossaryTermPage() {
       {relatedArticles.length > 0 && (
         <div className="mt-16 border-t border-white/5 pt-10">
           <h3 className="mb-6 font-mono text-xs tracking-widest text-white/30">
-            RELATED DEEP DIVES
+            {tGloss('term.relatedDeepDives')}
           </h3>
           <div className="grid gap-3">
             {relatedArticles.map((article) => (
               <Link
                 key={article.slug}
-                to={`/articles/${article.slug}`}
+                to={`${langPrefix}/articles/${article.slug}`}
                 className="glass-card group flex items-start gap-4 rounded-lg p-5 transition-all hover:border-cyan-500/20"
               >
                 <span className="text-2xl" aria-hidden="true">
@@ -225,7 +236,7 @@ export function GlossaryTermPage() {
                     {article.title}
                   </h4>
                   <p className="font-mono text-xs text-white/40">
-                    Upgrade your knowledge: Learn how to optimize {tTitle} in our full guide.
+                    {tGloss('term.upgradeKnowledge', { term: tTitle })}
                   </p>
                 </div>
                 <span className="shrink-0 font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
@@ -241,13 +252,13 @@ export function GlossaryTermPage() {
       {relatedTerms.length > 0 && (
         <div className="mt-16 border-t border-white/5 pt-10">
           <h3 className="mb-6 font-mono text-xs tracking-widest text-white/30">
-            RELATED TERMS
+            {tGloss('term.relatedTerms')}
           </h3>
           <div className="grid gap-3">
             {relatedTerms.map((related) => (
               <Link
                 key={related.slug}
-                to={`/glossary/${related.slug}`}
+                to={`${langPrefix}/glossary/${related.slug}`}
                 className="glass-card group flex items-center justify-between rounded-lg p-4 transition-all hover:border-terminal-green/10"
               >
                 <div>
@@ -270,31 +281,31 @@ export function GlossaryTermPage() {
       {/* Back to glossary */}
       <div className="mt-12">
         <Link
-          to="/glossary"
+          to={`${langPrefix}/glossary`}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
-          ← Back to Glossary
+          {tGloss('term.backToGlossary')}
         </Link>
       </div>
 
       {/* Explore more — always present for SEO link equity */}
       <div className="mt-16 border-t border-white/5 pt-10">
-        <h3 className="mb-6 font-mono text-xs tracking-widest text-white/30">EXPLORE MORE</h3>
+        <h3 className="mb-6 font-mono text-xs tracking-widest text-white/30">{tGloss('term.exploreMore')}</h3>
         <div className="flex flex-wrap gap-3">
-          <Link to="/glossary" className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
-            Full Glossary
+          <Link to={`${langPrefix}/glossary`} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+            {tGloss('term.links.fullGlossary')}
           </Link>
-          <Link to="/articles" className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
-            All Articles
+          <Link to={`${langPrefix}/articles`} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+            {tGloss('term.links.allArticles')}
           </Link>
-          <Link to="/bio" className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
-            Bio OS
+          <Link to={`${langPrefix}/bio`} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+            {tGloss('term.links.bioOs')}
           </Link>
-          <Link to="/the-stack" className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
-            The Stack
+          <Link to={`${langPrefix}/the-stack`} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+            {tGloss('term.links.theStack')}
           </Link>
-          <Link to="/" className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
-            Home
+          <Link to={lang === 'en' ? '/' : `/${lang}`} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+            {tGloss('term.links.home')}
           </Link>
         </div>
       </div>

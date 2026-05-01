@@ -110,5 +110,10 @@
         { "name": "Відновлення NSDR (Non-Sleep Deep Rest)", "text": "20 хвилин йога-нідри або керованого NSDR після періоду інтенсивного навчання." }
       ]
     }
+  },
+  "detail": {
+    "backToArticles": "← Назад до статей",
+    "relatedGlossaryTerms": "ПОВ’ЯЗАНІ ТЕРМІНИ ГЛОСАРІЯ",
+    "browseFullGlossary": "→ Відкрити повний глосарій"
   }
 }

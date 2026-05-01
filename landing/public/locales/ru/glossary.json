@@ -13,5 +13,19 @@
   "featuredHeader": "[ КЛЮЧЕВЫЕ ТЕРМИНЫ ]",
   "searchPlaceholder": "поиск терминов...",
   "allLabel": "Все",
-  "noResults": "Терминов не найдено. Попробуйте другой запрос."
+  "noResults": "Терминов не найдено. Попробуйте другой запрос.",
+  "term": {
+    "relatedDeepDives": "СВЯЗАННЫЕ СТАТЬИ",
+    "relatedTerms": "СВЯЗАННЫЕ ТЕРМИНЫ",
+    "upgradeKnowledge": "Обнови знания: узнай, как оптимизировать {{term}}, в полном руководстве.",
+    "backToGlossary": "← Назад к глоссарию",
+    "exploreMore": "ИЗУЧИТЬ ЕЩЁ",
+    "links": {
+      "fullGlossary": "Полный глоссарий",
+      "allArticles": "Все статьи",
+      "bioOs": "Bio OS",
+      "theStack": "The Stack",
+      "home": "Главная"
+    }
+  }
 }

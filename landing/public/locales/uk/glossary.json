@@ -13,5 +13,19 @@
   "featuredHeader": "[ КЛЮЧОВІ ТЕРМІНИ ]",
   "searchPlaceholder": "пошук термінів...",
   "allLabel": "Усі",
-  "noResults": "Термінів не знайдено. Спробуйте інший запит."
+  "noResults": "Термінів не знайдено. Спробуйте інший запит.",
+  "term": {
+    "relatedDeepDives": "ПОВ’ЯЗАНІ СТАТТІ",
+    "relatedTerms": "ПОВ’ЯЗАНІ ТЕРМІНИ",
+    "upgradeKnowledge": "Онови знання: дізнайся, як оптимізувати {{term}}, у повному путівнику.",
+    "backToGlossary": "← Назад до глосарія",
+    "exploreMore": "ДОСЛІДЖУЙ ДАЛІ",
+    "links": {
+      "fullGlossary": "Повний глосарій",
+      "allArticles": "Усі статті",
+      "bioOs": "Bio OS",
+      "theStack": "The Stack",
+      "home": "Головна"
+    }
+  }
 }

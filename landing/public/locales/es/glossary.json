@@ -1065,5 +1065,19 @@
       "shortDescription": "El conjunto jerárquico de procesos neurales centrados en la corteza prefrontal responsables del control ejecutivo. En ONDA, el \"sistema operativo\" que suprime los impulsos en favor de los objetivos estratégicos a largo plazo.",
       "content": "\n\nEl **Cortex Stack** representa el conjunto jerárquico de procesos neurales centrados en la [corteza prefrontal](/glossary/prefrontal-cortex) (PFC). En la arquitectura ONDA, este stack es responsable del **control ejecutivo** — el \"sistema operativo\" que permite la supresión de los impulsos inmediatos (como el deseo de consumir azúcar o saltarse un entrenamiento) en favor de los objetivos estratégicos a largo plazo.\n\n## SYSTEM_LOGIC: PRINCIPIO OPERATIVO\n\nEl Cortex Stack funciona como un filtro y gestor de tareas entre los instintos internos y el entorno externo:\n\n- **Control top-down:** la capacidad de la intención consciente para anular la fisiología. Un ejemplo es la decisión de entrar en agua helada pese a la señal de \"miedo\" desde la amígdala.\n- **Memoria de trabajo:** la \"memoria de acceso aleatorio\" (RAM) requerida para mantener en su lugar las tareas actuales, el enfoque y las instrucciones complejas.\n- **Flexibilidad cognitiva:** la capacidad de cambiar rápidamente la lógica y las estrategias cuando cambian las condiciones del entorno (inteligencia adaptativa).\n\n## IMPACT_LOG (estado del sistema)\n\n> **STATUS: PEAK_PERFORMANCE (óptimo)**\n>\n> SEÑAL: alta reserva cognitiva, capacidad para mantener un enfoque profundo durante períodos prolongados, baja impulsividad.\n>\n> RESULTADO: los protocolos ONDA se ejecutan con mínima fricción de fuerza de voluntad.\n\n> **STATUS: DECISION_FATIGUE (desgaste)**\n>\n> SEÑAL: agotamiento acumulativo tras cientos de microdecisiones a lo largo del día.\n>\n> RESULTADO: el stack se \"sobrecalienta\". El control sobre los impulsos metabólicos disminuye y aumenta el antojo de \"energía rápida\" (glucosa).\n\n> **STATUS: CORTEX_BYPASS (modo emergencia)**\n>\n> SEÑAL: estrés agudo severo o privación de sueño crítica.\n>\n> RESULTADO: la [corteza prefrontal](/glossary/prefrontal-cortex) se desprioriza; el control cambia al sistema límbico (instinto, miedo, agresión).\n\n## ONDA_STRATEGY: OPTIMIZACIÓN DEL STACK\n\nNo solo entrenamos el cuerpo — descargamos el Cortex Stack para asegurar que tienes la energía sobrante para realmente vivir:\n\n- **Automatización:** convertir comportamientos beneficiosos en \"tareas en segundo plano\" (bucles de hábitos) para que ya no drenen los recursos del Cortex Stack.\n- **Descarga cognitiva:** usar la app ONDA como almacenamiento externo para el seguimiento biométrico, liberando a tu cerebro de los cálculos y la monitorización manual.\n- **Recuperación prefrontal:** implementar protocolos de meditación y breathwork para \"enfriar el procesador\" y restaurar la función ejecutiva.\n\n## Base científica\n\n[PFC y control ejecutivo](https://pubmed.ncbi.nlm.nih.gov/15913566/) (Miller & Cohen); [fatiga de decisión y agotamiento de glucosa](https://pubmed.ncbi.nlm.nih.gov/21993810/) (Hagger et al.); [meditación y recuperación de la PFC](https://pubmed.ncbi.nlm.nih.gov/16272667/) (Lazar et al.).\n"
     }
+  },
+  "term": {
+    "relatedDeepDives": "INMERSIONES RELACIONADAS",
+    "relatedTerms": "TÉRMINOS RELACIONADOS",
+    "upgradeKnowledge": "Actualiza tu conocimiento: aprende a optimizar {{term}} en nuestra guía completa.",
+    "backToGlossary": "← Volver al glosario",
+    "exploreMore": "EXPLORAR MÁS",
+    "links": {
+      "fullGlossary": "Glosario completo",
+      "allArticles": "Todos los artículos",
+      "bioOs": "Bio OS",
+      "theStack": "The Stack",
+      "home": "Inicio"
+    }
   }
 }

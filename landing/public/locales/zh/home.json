@@ -104,5 +104,11 @@
     "title": "ONDA Life | 生物黑客 App、HRV 监测与意识操作系统",
     "description": "你的身体是生物计算机。ONDA Life 是升级它的操作系统 — 8 层结构化的意识发展、HRV 追踪与神经优化协议。",
     "ogImageAlt": "ONDA Life — 生物黑客 App 与意识操作系统。HRV 追踪与神经优化。"
+  },
+  "notFound": {
+    "title": "未找到页面 | ONDA Life",
+    "message": "系统错误：您要寻找的神经路径不存在。让我们重新校准。",
+    "backHome": "← 返回首页",
+    "exploreGlossary": "探索术语表 →"
   }
 }

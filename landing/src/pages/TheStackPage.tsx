@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { getProtocolUniqueId, PROTOCOL_STORAGE_PREFIX, PROTOCOL_TO_ARTICLE } from '../data/protocol-ids'
+import { langFromPath } from '../i18n'
 
 const PAGE_TITLE = 'The Stack | System Configuration | ONDA Life'
 const PAGE_DESC =
@@ -187,6 +189,10 @@ function getActiveProtocolIds(): Set<string> {
 
 export function TheStackPage() {
   const [activeProtocolIds, setActiveProtocolIds] = useState<Set<string>>(getActiveProtocolIds)
+  const { pathname } = useLocation()
+  const lang = langFromPath(pathname)
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
+  const { t: tArticles } = useTranslation('articles')
 
   useEffect(() => {
     document.title = PAGE_TITLE
@@ -294,10 +300,10 @@ export function TheStackPage() {
 
       <div className="mt-16 border-t border-white/5 pt-8">
         <Link
-          to="/articles"
+          to={`${langPrefix}/articles`}
           className="text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
-          ← Back to Articles
+          {tArticles('detail.backToArticles', { defaultValue: '← Back to Articles' })}
         </Link>
       </div>
     </div>

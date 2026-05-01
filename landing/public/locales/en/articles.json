@@ -13,5 +13,10 @@
   "searchPlaceholder": "search articles...",
   "allLabel": "All",
   "noResults": "No articles found. Try a different search.",
-  "featuredHeader": "[ FEATURED ARTICLES ]"
+  "featuredHeader": "[ FEATURED ARTICLES ]",
+  "detail": {
+    "backToArticles": "← Back to Articles",
+    "relatedGlossaryTerms": "RELATED GLOSSARY TERMS",
+    "browseFullGlossary": "→ Browse full Glossary"
+  }
 }

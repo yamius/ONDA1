@@ -13,5 +13,19 @@
   "featuredHeader": "[ 精选术语 ]",
   "searchPlaceholder": "搜索术语...",
   "allLabel": "全部",
-  "noResults": "未找到术语。请尝试其他搜索。"
+  "noResults": "未找到术语。请尝试其他搜索。",
+  "term": {
+    "relatedDeepDives": "相关深度文章",
+    "relatedTerms": "相关术语",
+    "upgradeKnowledge": "提升知识：在我们的完整指南中学习如何优化 {{term}}。",
+    "backToGlossary": "← 返回术语表",
+    "exploreMore": "探索更多",
+    "links": {
+      "fullGlossary": "完整术语表",
+      "allArticles": "所有文章",
+      "bioOs": "Bio OS",
+      "theStack": "The Stack",
+      "home": "首页"
+    }
+  }
 }

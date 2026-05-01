@@ -709,8 +709,15 @@ export function ArticlePage() {
       const className =
         'text-terminal-cyan underline decoration-terminal-cyan/30 underline-offset-2 transition-colors hover:text-terminal-cyan/80 hover:decoration-terminal-cyan/50'
       if (href && !isExternal && href.startsWith('/')) {
+        const needsPrefix =
+          langPrefix &&
+          (href.startsWith('/articles/') ||
+            href.startsWith('/glossary/') ||
+            href === '/articles' ||
+            href === '/glossary')
+        const to = needsPrefix ? `${langPrefix}${href}` : href
         return (
-          <Link to={href} className={className}>
+          <Link to={to} className={className}>
             {children}
           </Link>
         )
@@ -952,10 +959,10 @@ export function ArticlePage() {
 
       <div className="mt-12">
         <Link
-          to="/articles"
+          to={`${langPrefix}/articles`}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
-          ← Back to Articles
+          {tArticles('detail.backToArticles', { defaultValue: '← Back to Articles' })}
         </Link>
       </div>
     </div>

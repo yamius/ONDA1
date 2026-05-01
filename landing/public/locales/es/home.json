@@ -104,5 +104,11 @@
     "title": "ONDA Life | App de biohacking, monitor HRV y SO de la consciencia",
     "description": "Tu cuerpo es un computador biológico. ONDA Life es el SO que lo actualiza — 8 niveles de desarrollo estructurado de la consciencia, monitorización de HRV y protocolos de optimización neuronal.",
     "ogImageAlt": "ONDA Life — App de biohacking y SO de la consciencia. Monitorización de HRV y optimización neuronal."
+  },
+  "notFound": {
+    "title": "Página no encontrada | ONDA Life",
+    "message": "Error del sistema: la vía neural que buscas no existe. Recalibremos.",
+    "backHome": "← Volver al inicio",
+    "exploreGlossary": "Explorar el glosario →"
   }
 }

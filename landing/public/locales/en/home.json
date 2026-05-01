@@ -104,5 +104,11 @@
     "title": "ONDA Life | Biohacking App, HRV Tracker & Consciousness OS",
     "description": "Your body is a biological computer. ONDA Life is the OS that upgrades it — 8 levels of structured consciousness development, HRV tracking, and neural optimization protocols.",
     "ogImageAlt": "ONDA Life — Biohacking App & Consciousness OS. HRV tracking and neural optimization."
+  },
+  "notFound": {
+    "title": "Page Not Found | ONDA Life",
+    "message": "System Error: The neural path you’re looking for doesn’t exist. Let’s recalibrate.",
+    "backHome": "← Back to Home",
+    "exploreGlossary": "Explore Glossary →"
   }
 }

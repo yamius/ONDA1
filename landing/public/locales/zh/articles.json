@@ -110,5 +110,10 @@
         { "name": "『非睡眠深度休息』（NSDR）恢复", "text": "在密集学习时期之后进行 20 分钟的瑜伽休息术（Yoga Nidra）或引导的 NSDR。" }
       ]
     }
+  },
+  "detail": {
+    "backToArticles": "← 返回文章列表",
+    "relatedGlossaryTerms": "相关术语",
+    "browseFullGlossary": "→ 浏览完整术语表"
   }
 }
