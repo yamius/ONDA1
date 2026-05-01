@@ -46,3 +46,4 @@ attached_assets/*.log
 
 # Bot: topics already used for generation (local state)
 scripts/used_topics.txt
+.tmp/

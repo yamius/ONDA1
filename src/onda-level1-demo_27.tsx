@@ -51,6 +51,12 @@ import * as Sentry from '@sentry/capacitor';
 const WelcomeScene = lazy(() => import('./components/WelcomeScene'));
 import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './constants/practiceAssets';
 
+// Free-tier sampler. The first three basic practices of Part 1 are open to
+// every visitor — no auth, no paywall — so the user can try the app before
+// committing. Every other practice still goes through the paywall in
+// `practice_gate_basic` (see the Start button below).
+const FREE_PRACTICE_IDS = new Set(['p1-1', 'p1-2', 'p1-3']);
+
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
   const vitalsData = useVitals();
@@ -3801,7 +3807,15 @@ const OndaLevel1 = () => {
               </div>
               <button
                 onClick={() => {
-                  if (isPremium || isSubLoading || platform !== 'ios') {
+                  // Free-tier sampler bypass: the first three Part-1 basic
+                  // practices (p1-1, p1-2, p1-3) are accessible without
+                  // subscription AND without authentication. Every other
+                  // practice still goes through the paywall on iOS for
+                  // non-premium users.
+                  const isFreePractice = activePractice?.id
+                    ? FREE_PRACTICE_IDS.has(activePractice.id)
+                    : false;
+                  if (isFreePractice || isPremium || isSubLoading || platform !== 'ios') {
                     beginPractice();
                     return;
                   }
