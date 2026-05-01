@@ -585,6 +585,266 @@ TRANS['terra_final.level_12.line_2'] = 'Tu camino social está completo — has 
 TRANS['terra_final.level_12.line_3'] = 'Pero más allá del límite del reino social, se abre algo más.';
 TRANS['terra_final.level_12.line_4'] = 'Estás listo para volver la atención hacia adentro — a la conciencia del CUERPO mismo. TERRA II te espera.';
 
+// ─── flows (94) — chatbot dialogue scenarios ────────────────────────────
+TRANS['flows.common.end_thanks'] = 'Gracias por compartir. Recuerda que siempre puedes volver para hablar cuando lo necesites.';
+
+TRANS['flows.anxiety_basic.title'] = 'Trabajar con la ansiedad';
+TRANS['flows.anxiety_basic.intro'] = 'Me gustaría ayudarte a trabajar con algunos sentimientos de ansiedad. ¿Quieres probar un ejercicio rápido?';
+TRANS['flows.anxiety_basic.situation'] = '¿Qué situación o pensamiento te está provocando ansiedad ahora mismo?';
+TRANS['flows.anxiety_basic.thought'] = '¿Cuál es el pensamiento principal que pasa por tu mente sobre esto?';
+TRANS['flows.anxiety_basic.feeling'] = 'En una escala del 1 al 10, ¿qué tan intensa es tu ansiedad ahora mismo?';
+TRANS['flows.anxiety_basic.distortion'] = 'A veces nuestros pensamientos pueden distorsionarse un poco. ¿Cuál de estos patrones podría aplicar?';
+TRANS['flows.anxiety_basic.alternative_thought'] = '¿Cuál sería una manera más equilibrada de ver esta situación?';
+TRANS['flows.anxiety_basic.plan'] = '¿Qué pequeño paso podría ayudarte a sentirte mejor ahora mismo?';
+TRANS['flows.anxiety_basic.plan.tiny_action'] = 'Realizar una pequeña acción';
+TRANS['flows.anxiety_basic.plan.write_down'] = 'Escribir mis pensamientos';
+TRANS['flows.anxiety_basic.plan.self_care'] = 'Hacer algo amable conmigo mismo';
+TRANS['flows.anxiety_basic.plan.do_nothing'] = 'Solo reconocer la sensación';
+TRANS['flows.anxiety_basic.summary'] = 'Has hecho un gran trabajo explorando tu ansiedad. Recuerda: {{situation}} desencadenó el pensamiento "{{thought}}", pero encontraste una perspectiva más equilibrada. Tu nivel de ansiedad fue {{anxiety_level}}/10. Cuídate.';
+TRANS['flows.anxiety_basic.end_normalize'] = 'Eso está totalmente bien. A veces no estamos listos para profundizar, y está bien. Estoy aquí cuando quieras hablar.';
+
+TRANS['flows.panic_grounding.title'] = 'Anclaje para el pánico';
+TRANS['flows.panic_grounding.intro'] = 'Trabajemos esto juntos. ¿Estás teniendo un ataque de pánico ahora mismo, o lo tuviste hace poco?';
+TRANS['flows.panic_grounding.intro.now'] = 'Estoy en pánico ahora';
+TRANS['flows.panic_grounding.intro.recent'] = 'Fue hace poco';
+TRANS['flows.panic_grounding.recent_panic'] = '¿Puedes describir brevemente qué pasó?';
+TRANS['flows.panic_grounding.body_symptoms'] = '¿Qué sensaciones físicas notas en tu cuerpo?';
+TRANS['flows.panic_grounding.fear_thoughts'] = '¿Qué pensamientos o miedos están surgiendo en ti?';
+TRANS['flows.panic_grounding.reality_check'] = 'A menudo el pánico nos hace temer algo concreto. ¿Cuál es el miedo principal?';
+TRANS['flows.panic_grounding.reality_check.health'] = 'Miedo por mi salud';
+TRANS['flows.panic_grounding.reality_check.control'] = 'Miedo a perder el control';
+TRANS['flows.panic_grounding.grounding'] = 'Probemos una técnica de anclaje. ¿Cuál sientes que es la adecuada para ti?';
+TRANS['flows.panic_grounding.grounding.5senses'] = 'Ejercicio de los 5 sentidos';
+TRANS['flows.panic_grounding.grounding.breathing'] = 'Respiración lenta';
+TRANS['flows.panic_grounding.grounding.body'] = 'Conciencia corporal';
+TRANS['flows.panic_grounding.safety_plan'] = '¿Qué es una cosa que puedes hacer ahora mismo para sentirte un poco más seguro?';
+TRANS['flows.panic_grounding.summary'] = 'Has trabajado este momento de pánico. Notaste {{panic_body}} en tu cuerpo y temiste {{panic_fear_thoughts}}. Elegiste {{grounding_choice}} como anclaje. Recuerda: el pánico pasa. Estás a salvo.';
+
+TRANS['flows.body_scan.title'] = 'Conciencia corporal';
+TRANS['flows.body_scan.intro'] = 'Sintonicemos con tu cuerpo. ¿Estás listo para dedicar unos minutos a notar las sensaciones físicas?';
+TRANS['flows.body_scan.intro.ready'] = 'Sí, estoy listo';
+TRANS['flows.body_scan.intro.not_ready'] = 'Ahora no';
+TRANS['flows.body_scan.location'] = '¿En qué parte de tu cuerpo notas la sensación más fuerte ahora mismo?';
+TRANS['flows.body_scan.sensation_quality'] = '¿Cómo describirías esta sensación? (apretada, cálida, pesada, hormigueo…)';
+TRANS['flows.body_scan.intensity'] = 'En una escala del 1 al 10, ¿qué tan intensa es esta sensación?';
+TRANS['flows.body_scan.associated_thought'] = '¿Hay algún pensamiento o emoción conectado a esta sensación corporal?';
+TRANS['flows.body_scan.need'] = '¿Qué necesita esta parte de tu cuerpo ahora mismo?';
+TRANS['flows.body_scan.need.rest'] = 'Descanso';
+TRANS['flows.body_scan.need.movement'] = 'Movimiento';
+TRANS['flows.body_scan.need.warmth'] = 'Calor';
+TRANS['flows.body_scan.need.care'] = 'Cuidado suave';
+TRANS['flows.body_scan.micro_action'] = '¿Qué pequeña cosa podrías hacer para responder a esta necesidad?';
+TRANS['flows.body_scan.summary'] = 'Notaste en {{body_location}} una sensación {{body_quality}} con intensidad {{body_intensity}}/10. Esto se conecta con: {{body_thought}}. Tu cuerpo necesita {{body_need}}. Escúchalo.';
+TRANS['flows.body_scan.end_normalize'] = 'Está bien. A veces necesitamos espacio. Estoy aquí cuando estés listo.';
+
+TRANS['flows.fear_basic.title'] = 'Trabajar con el miedo';
+TRANS['flows.fear_basic.intro'] = '¿Qué miedo o preocupación te gustaría explorar hoy?';
+TRANS['flows.fear_basic.situation'] = '¿En qué situaciones aparece más este miedo?';
+TRANS['flows.fear_basic.worst_case'] = '¿Cuál es lo peor que imaginas que podría pasar?';
+TRANS['flows.fear_basic.probability'] = 'Realistamente, ¿qué probabilidad (0-100 %) hay de que esto suceda?';
+TRANS['flows.fear_basic.resources'] = '¿Qué recursos o apoyo tendrías si pasara algo difícil?';
+TRANS['flows.fear_basic.small_step'] = '¿Qué pequeño paso podrías dar para enfrentar este miedo con suavidad?';
+TRANS['flows.fear_basic.summary'] = 'Exploraste tu miedo a {{fear_topic}}. El peor caso ({{fear_worst_case}}) tiene aproximadamente {{fear_probability}} % de probabilidad. Tienes recursos: {{fear_resources}}. Tu pequeño paso: {{fear_small_step}}.';
+
+TRANS['flows.pain_reflection.title'] = 'Reflexionar sobre el dolor';
+TRANS['flows.pain_reflection.intro'] = '¿Qué tipo de dolor estás experimentando?';
+TRANS['flows.pain_reflection.intro.emotional'] = 'Dolor emocional';
+TRANS['flows.pain_reflection.intro.physical'] = 'Dolor físico';
+TRANS['flows.pain_reflection.intro.both'] = 'Ambos';
+TRANS['flows.pain_reflection.description'] = '¿Puedes describir cómo se siente este dolor?';
+TRANS['flows.pain_reflection.intensity'] = 'En una escala del 1 al 10, ¿qué tan intenso es este dolor?';
+TRANS['flows.pain_reflection.triggers'] = '¿Qué parece desencadenar o empeorar este dolor?';
+TRANS['flows.pain_reflection.relief'] = '¿Qué te alivia, aunque sea un poco?';
+TRANS['flows.pain_reflection.support'] = '¿Quién o qué podría apoyarte con este dolor?';
+TRANS['flows.pain_reflection.summary'] = 'Compartiste sobre tu dolor {{pain_type}}: {{pain_description}} con intensidad {{pain_intensity}}/10. Detonadores: {{pain_triggers}}. Lo que ayuda: {{pain_relief}}. Apoyo: {{pain_support}}.';
+
+TRANS['flows.loneliness_connection.title'] = 'Encontrar conexión';
+TRANS['flows.loneliness_connection.intro'] = '¿Puedes contarme un poco cómo se siente la soledad para ti ahora mismo?';
+TRANS['flows.loneliness_connection.hardest_moment'] = '¿Cuándo es más difícil la soledad?';
+TRANS['flows.loneliness_connection.needs'] = '¿Qué tipo de conexión anhelas más?';
+TRANS['flows.loneliness_connection.needs.being_seen'] = 'Ser visto de verdad';
+TRANS['flows.loneliness_connection.needs.support'] = 'Tener apoyo';
+TRANS['flows.loneliness_connection.needs.shared_activity'] = 'Compartir actividades';
+TRANS['flows.loneliness_connection.person_option'] = '¿Hay alguien, aunque sea una conexión pequeña, a quien podrías acercarte?';
+TRANS['flows.loneliness_connection.small_reach_out_step'] = '¿Cuál es un pequeño paso hacia la conexión que podrías dar?';
+TRANS['flows.loneliness_connection.self_compassion'] = '¿Qué palabras amables le dirías a un amigo que se siente así?';
+TRANS['flows.loneliness_connection.summary'] = 'Estás experimentando soledad, especialmente {{lonely_moment}}. Anhelas {{lonely_need}}. Podrías acercarte a {{lonely_person}} mediante {{lonely_action}}. Auto-compasión: {{lonely_self_compassion}}.';
+
+TRANS['flows.anger_boundaries.title'] = 'Ira y límites';
+TRANS['flows.anger_boundaries.intro'] = '¿Qué te está haciendo sentir enojado o frustrado ahora mismo?';
+TRANS['flows.anger_boundaries.trigger'] = '¿Qué fue lo que específicamente desencadenó este sentimiento?';
+TRANS['flows.anger_boundaries.expression_style'] = '¿Cómo sueles manejar la ira?';
+TRANS['flows.anger_boundaries.expression_style.express'] = 'La expreso abiertamente';
+TRANS['flows.anger_boundaries.expression_style.suppress'] = 'La contengo';
+TRANS['flows.anger_boundaries.expression_style.both'] = 'Depende';
+TRANS['flows.anger_boundaries.need_underneath'] = 'A menudo la ira protege una necesidad. ¿Qué podría haber debajo de tu ira?';
+TRANS['flows.anger_boundaries.need_underneath.respect'] = 'Necesidad de respeto';
+TRANS['flows.anger_boundaries.need_underneath.fairness'] = 'Necesidad de justicia';
+TRANS['flows.anger_boundaries.need_underneath.space'] = 'Necesidad de espacio';
+TRANS['flows.anger_boundaries.need_underneath.being_heard'] = 'Necesidad de ser escuchado';
+TRANS['flows.anger_boundaries.constructive_action'] = '¿Cuál es una manera constructiva de abordar esta situación?';
+TRANS['flows.anger_boundaries.summary'] = 'Tu ira por {{anger_topic}} fue desencadenada por {{anger_trigger}}. Debajo hay una necesidad de {{anger_need}}. Tu acción constructiva: {{anger_action}}.';
+
+TRANS['flows.distortions.catastrophizing'] = 'Catastrofizar';
+TRANS['flows.distortions.mind_reading'] = 'Lectura mental';
+TRANS['flows.distortions.all_or_nothing'] = 'Pensamiento todo o nada';
+
+// ─── level_goal (136) ───────────────────────────────────────────────────
+TRANS['level_goal.title'] = 'OBJETIVOS y TAREAS';
+
+// level_4
+TRANS['level_goal.level_4.intro'] = 'Aprende a maniobrar — siente la distancia con tu cuerpo. Mantén el centro incluso cuando la forma cambie. Elige el movimiento sin perder el equilibrio.';
+TRANS['level_goal.level_4.game_task'] = 'Tarea de juego y energética — activación del campo de la Agilidad (movilidad AQUA).';
+TRANS['level_goal.level_4.principle_1'] = 'No empujas — rodeas.';
+TRANS['level_goal.level_4.principle_2'] = 'No resistes — te deslizas.';
+TRANS['level_goal.level_4.principle_3'] = 'La flexibilidad es una forma de supervivencia.';
+TRANS['level_goal.level_4.story_1'] = 'El mundo se abre como un campo de trayectorias.';
+TRANS['level_goal.level_4.story_2'] = 'Sabes cuándo acercarte. Sabes cuándo desplazarte.';
+TRANS['level_goal.level_4.story_3'] = 'Y sabes que a veces un paso al lado es el paso más preciso hacia adelante.';
+TRANS['level_goal.level_4.identity_1'] = 'Eres el Pequeño Mamífero, una forma de agilidad en la tierra.';
+TRANS['level_goal.level_4.identity_2'] = 'La respiración se vuelve rápida y silenciosa.';
+TRANS['level_goal.level_4.identity_3'] = 'La inhalación recoge la atención. La exhalación te permite cambiar de dirección.';
+TRANS['level_goal.level_4.wisdom_1'] = 'No hace falta empujar. No hace falta congelarse.';
+TRANS['level_goal.level_4.wisdom_2'] = 'Basta con ser móvil y atento.';
+TRANS['level_goal.level_4.wisdom_3'] = 'En esta movilidad nace la seguridad. En esta flexibilidad — la estabilidad.';
+TRANS['level_goal.level_4.wisdom_4'] = 'En esta elección — la vida.';
+
+// level_5
+TRANS['level_goal.level_5.intro'] = 'Aprende a sostener el territorio — siente los límites con tu cuerpo. Estabiliza el centro de poder, soporta la presión y mantén la dignidad sin agresión.';
+TRANS['level_goal.level_5.game_task'] = 'Tarea de juego y energética — activación del campo del Poder (presencia AQUA).';
+TRANS['level_goal.level_5.principle_1'] = 'La fuerza ya no es un destello — es fondo, densidad, presencia.';
+TRANS['level_goal.level_5.principle_2'] = 'Las emociones se vuelven guías: dónde está el límite, dónde el contacto, dónde retroceder.';
+TRANS['level_goal.level_5.principle_3'] = 'La masa no es una carga — es estabilidad.';
+TRANS['level_goal.level_5.story_1'] = 'El mundo ya no parece caótico.';
+TRANS['level_goal.level_5.story_2'] = 'Se divide en zonas de cercanía y distancia, calidez y tensión.';
+TRANS['level_goal.level_5.story_3'] = 'Sientes el peso de tu cuerpo y comprendes: la masa es estabilidad.';
+TRANS['level_goal.level_5.identity_1'] = 'Eres el Gran Mamífero, una forma de poder en la tierra.';
+TRANS['level_goal.level_5.identity_2'] = 'La respiración se vuelve más baja. La inhalación recoge la fuerza en el centro.';
+TRANS['level_goal.level_5.identity_3'] = 'La exhalación marca tranquilamente los límites.';
+TRANS['level_goal.level_5.wisdom_1'] = 'No hace falta probar. No hace falta atacar.';
+TRANS['level_goal.level_5.wisdom_2'] = 'Basta con estar de pie y sentir la tierra bajo ti.';
+TRANS['level_goal.level_5.wisdom_3'] = 'En esta calma nace el estatus. En este peso — la confianza.';
+TRANS['level_goal.level_5.wisdom_4'] = 'En este silencio — el poder.';
+
+// level_6
+TRANS['level_goal.level_6.intro'] = 'Aprende a estar en la manada — lee el campo. Siente dónde se te necesita. Dónde retroceder. Y dónde — fortalecer la presencia.';
+TRANS['level_goal.level_6.game_task'] = 'Tarea de juego y energética — activación del campo de la Conexión (resonancia AQUA).';
+TRANS['level_goal.level_6.principle_1'] = 'La conexión no son palabras. Es una sintonía sutil.';
+TRANS['level_goal.level_6.principle_2'] = 'Las emociones dejan de ser destellos personales — se convierten en medios de contacto.';
+TRANS['level_goal.level_6.principle_3'] = 'El mundo se vuelve una red viva donde cada respuesta cambia el movimiento colectivo.';
+TRANS['level_goal.level_6.story_1'] = 'El mundo deja de ser un conjunto de figuras separadas.';
+TRANS['level_goal.level_6.story_2'] = 'Sientes: te ven. Tú ves.';
+TRANS['level_goal.level_6.story_3'] = 'Y entre esto, surge la confianza.';
+TRANS['level_goal.level_6.identity_1'] = 'Eres el Primate, una forma de conexión en la tierra.';
+TRANS['level_goal.level_6.identity_2'] = 'La respiración se sincroniza. La inhalación expande el campo de atención.';
+TRANS['level_goal.level_6.identity_3'] = 'La exhalación te sintoniza con los demás.';
+TRANS['level_goal.level_6.wisdom_1'] = 'No hace falta atraer hacia ti. No hace falta desaparecer.';
+TRANS['level_goal.level_6.wisdom_2'] = 'Basta con estar en resonancia.';
+TRANS['level_goal.level_6.wisdom_3'] = 'En esta conexión nace la seguridad. En esta sintonía — la pertenencia.';
+TRANS['level_goal.level_6.wisdom_4'] = 'En este campo — la vida.';
+
+// level_7
+TRANS['level_goal.level_7.intro'] = 'Aprende a discernir — ver sin prisa. Notar los límites sin destruir la totalidad. Separar uno de otro permaneciendo en contacto con el todo.';
+TRANS['level_goal.level_7.game_task'] = 'Tarea de juego y energética — activación del campo de la Claridad (discernimiento AER).';
+TRANS['level_goal.level_7.principle_1'] = 'El discernimiento no es división. Es clarificación.';
+TRANS['level_goal.level_7.principle_2'] = 'El mundo se despliega como una multitud de elementos, cada uno con su lugar y significado.';
+TRANS['level_goal.level_7.principle_3'] = 'La claridad es el primer paso hacia la elección.';
+TRANS['level_goal.level_7.story_1'] = 'Sientes cómo el pensamiento se vuelve preciso.';
+TRANS['level_goal.level_7.story_2'] = 'Cómo la atención deja de difuminarse.';
+TRANS['level_goal.level_7.story_3'] = 'Cómo la claridad trae calma.';
+TRANS['level_goal.level_7.identity_1'] = 'Eres la Mente que Clarifica, una forma de discernimiento.';
+TRANS['level_goal.level_7.identity_2'] = 'La respiración se vuelve ligera. La inhalación expande el campo de la percepción.';
+TRANS['level_goal.level_7.identity_3'] = 'La exhalación destaca lo que importa.';
+TRANS['level_goal.level_7.wisdom_1'] = 'No hace falta entender todo. Basta con ver las diferencias.';
+TRANS['level_goal.level_7.wisdom_2'] = 'En esta claridad nace la orientación.';
+TRANS['level_goal.level_7.wisdom_3'] = 'En este discernimiento — el cimiento del pensar.';
+TRANS['level_goal.level_7.wisdom_4'] = 'En esta mirada — la libertad del caos.';
+
+// level_8
+TRANS['level_goal.level_8.intro'] = 'Aprende a enfocarte — sostener la atención en el tiempo. Volver a lo elegido una y otra vez. No regañándote por la distracción, sino reuniéndote con suavidad.';
+TRANS['level_goal.level_8.game_task'] = 'Tarea de juego y energética — activación del campo del Foco (concentración AER).';
+TRANS['level_goal.level_8.principle_1'] = 'El foco no es rigidez. Es elección.';
+TRANS['level_goal.level_8.principle_2'] = 'De muchas señales conservas una — porque sabes adónde mirar.';
+TRANS['level_goal.level_8.principle_3'] = 'La atención es un recurso. Se cansa y se recupera.';
+TRANS['level_goal.level_8.story_1'] = 'Notas: cuanto más limpio el foco, menos esfuerzo se requiere.';
+TRANS['level_goal.level_8.story_2'] = 'El foco nace de la calma.';
+TRANS['level_goal.level_8.story_3'] = 'En este foco aparece el poder.';
+TRANS['level_goal.level_8.identity_1'] = 'Eres la Mente que Reúne, una forma de concentración.';
+TRANS['level_goal.level_8.identity_2'] = 'La respiración se vuelve uniforme. La inhalación apoya la presencia.';
+TRANS['level_goal.level_8.identity_3'] = 'La exhalación elimina lo excesivo.';
+TRANS['level_goal.level_8.wisdom_1'] = 'No hace falta sostenerlo todo. Basta con sostener lo que importa.';
+TRANS['level_goal.level_8.wisdom_2'] = 'En esta concentración — la efectividad.';
+TRANS['level_goal.level_8.wisdom_3'] = 'En esta elección — la dirección.';
+TRANS['level_goal.level_8.wisdom_4'] = 'En este foco — el poder.';
+
+// level_9
+TRANS['level_goal.level_9.intro'] = 'Aprende a crear imagen — deja de actuar "a ciegas". Mantén la inspiración incluso en la rutina, viendo la meta final. Elige el movimiento basándote en un boceto interior de belleza.';
+TRANS['level_goal.level_9.game_task'] = 'Tarea de juego y energética — activación del campo de la Imagen (visualización AER).';
+TRANS['level_goal.level_9.principle_1'] = 'Crear una imagen no es huir de la realidad. Es programarla.';
+TRANS['level_goal.level_9.principle_2'] = 'Los símbolos se vuelven tu lenguaje: un pensamiento claro cambia el estado del cuerpo.';
+TRANS['level_goal.level_9.principle_3'] = 'Una imagen clara es la distancia más corta entre el sueño y el hecho.';
+TRANS['level_goal.level_9.story_1'] = 'El mundo se despliega como un lienzo.';
+TRANS['level_goal.level_9.story_2'] = 'Ya no eres rehén de las circunstancias — eres el autor de tu percepción.';
+TRANS['level_goal.level_9.story_3'] = 'No solo un observador — sino el director de tus estados internos.';
+TRANS['level_goal.level_9.identity_1'] = 'Eres el Humano Creador, dueño del espacio mental.';
+TRANS['level_goal.level_9.identity_2'] = 'La respiración se vuelve profunda y rítmica. La inhalación llena la imagen de luz.';
+TRANS['level_goal.level_9.identity_3'] = 'La exhalación permite que la imagen ocupe su lugar en la realidad.';
+TRANS['level_goal.level_9.wisdom_1'] = 'No hace falta apresurarse. No hace falta luchar.';
+TRANS['level_goal.level_9.wisdom_2'] = 'Basta con ver — y permitir que sea.';
+TRANS['level_goal.level_9.wisdom_3'] = 'En esta visión — tu poder verdadero.';
+TRANS['level_goal.level_9.wisdom_4'] = 'En esta imagen — tu libertad.';
+
+// level_10
+TRANS['level_goal.level_10.intro'] = 'Aprende a expresarte — supera el miedo al juicio y permite que tu yo interior se vuelva visible. Mantén la dignidad cuando te observen. Elige la sinceridad como estrategia.';
+TRANS['level_goal.level_10.game_task'] = 'Tarea de juego y energética — activación del campo de la Expresión (manifestación IGNIS).';
+TRANS['level_goal.level_10.principle_1'] = 'La expresión no es ruido. Es la precisión de tu presencia.';
+TRANS['level_goal.level_10.principle_2'] = 'Tu voz, tus gestos y tus actos se convierten en tu firma en el mundo de las personas.';
+TRANS['level_goal.level_10.principle_3'] = 'Expresarse significa dejar que la vida ocurra a través de ti.';
+TRANS['level_goal.level_10.story_1'] = 'El mundo se despliega como un gran escenario.';
+TRANS['level_goal.level_10.story_2'] = 'Ya no eres una sombra — eres un participante activo.';
+TRANS['level_goal.level_10.story_3'] = 'No solo un oyente — sino alguien cuya opinión tiene peso.';
+TRANS['level_goal.level_10.identity_1'] = 'Eres el Humano Social, dueño de la manifestación en el fuego de las conexiones humanas.';
+TRANS['level_goal.level_10.identity_2'] = 'La respiración se vuelve poderosa y abierta. La inhalación recoge la fuerza de la intención.';
+TRANS['level_goal.level_10.identity_3'] = 'La exhalación lleva tu voz y voluntad al mundo.';
+TRANS['level_goal.level_10.wisdom_1'] = 'No hace falta gritar. No hace falta probar.';
+TRANS['level_goal.level_10.wisdom_2'] = 'Basta con sonar claro y abierto.';
+TRANS['level_goal.level_10.wisdom_3'] = 'En este sonido nace el reconocimiento.';
+TRANS['level_goal.level_10.wisdom_4'] = 'En esta expresión — la vida.';
+
+// level_11
+TRANS['level_goal.level_11.intro'] = 'Aprende a interactuar — ver en el otro no un obstáculo ni un medio, sino un espejo vivo. Mantén el interés por la otredad del otro, convirtiendo las diferencias en oportunidades.';
+TRANS['level_goal.level_11.game_task'] = 'Tarea de juego y energética — activación del campo de la Interacción (resonancia IGNIS).';
+TRANS['level_goal.level_11.principle_1'] = 'La interacción no es compromiso. Es el arte de la amplificación mutua.';
+TRANS['level_goal.level_11.principle_2'] = 'Tus límites se vuelven flexibles: sabes dónde dejar entrar al otro y dónde dejar espacio para ti.';
+TRANS['level_goal.level_11.principle_3'] = 'La apertura es el camino más corto al entendimiento.';
+TRANS['level_goal.level_11.story_1'] = 'El mundo se despliega como una red de diálogos.';
+TRANS['level_goal.level_11.story_2'] = 'Ya no eres una isla solitaria — eres parte de un archipiélago.';
+TRANS['level_goal.level_11.story_3'] = 'No solo una unidad — sino un multiplicador de fuerza en la asociación.';
+TRANS['level_goal.level_11.identity_1'] = 'Eres el Humano Social, dueño de la sintonía fina en el fuego de las relaciones.';
+TRANS['level_goal.level_11.identity_2'] = 'La respiración se vuelve sincrónica y tranquila. La inhalación absorbe la atención del compañero.';
+TRANS['level_goal.level_11.identity_3'] = 'La exhalación dirige tu impulso hacia él.';
+TRANS['level_goal.level_11.wisdom_1'] = 'No hace falta defender. No hace falta manipular.';
+TRANS['level_goal.level_11.wisdom_2'] = 'Basta con ser sincero y atento a la respuesta.';
+TRANS['level_goal.level_11.wisdom_3'] = 'En este intercambio nace la confianza.';
+TRANS['level_goal.level_11.wisdom_4'] = 'En este encuentro — la vida.';
+
+// level_12
+TRANS['level_goal.level_12.intro'] = 'Aprende a co-crear — confía en el talento del otro tanto como en el tuyo. Mantén la inspiración en el flujo común, convirtiendo la voluntad colectiva en forma tangible.';
+TRANS['level_goal.level_12.game_task'] = 'Tarea de juego y energética — activación del campo de la Cocreación (sinergia IGNIS).';
+TRANS['level_goal.level_12.principle_1'] = 'La cocreación no es solo trabajo en equipo. Es un estado donde uno más uno equivale al infinito.';
+TRANS['level_goal.level_12.principle_2'] = 'Tu ego retrocede, dejando espacio para un resultado compartido mayor que la suma de sus partes.';
+TRANS['level_goal.level_12.principle_3'] = 'La creación es la forma más alta de expresar el potencial humano.';
+TRANS['level_goal.level_12.story_1'] = 'El mundo se despliega como un gran proyecto colaborativo.';
+TRANS['level_goal.level_12.story_2'] = 'Ya no estás solo en el vacío — eres co-autor de la realidad.';
+TRANS['level_goal.level_12.story_3'] = 'No solo desempeñas un rol — sino que creas nuevos códigos culturales.';
+TRANS['level_goal.level_12.identity_1'] = 'Eres el Humano Cultural, dueño de la sinergia en el fuego del propósito común.';
+TRANS['level_goal.level_12.identity_2'] = 'La respiración se vuelve amplia y libre. La inhalación absorbe la energía compartida del grupo.';
+TRANS['level_goal.level_12.identity_3'] = 'La exhalación la transforma en acción y resultado.';
+TRANS['level_goal.level_12.wisdom_1'] = 'No hace falta acaparar el escenario. No hace falta temer perderse.';
+TRANS['level_goal.level_12.wisdom_2'] = 'Basta con ser parte de un flujo vivo y creador.';
+TRANS['level_goal.level_12.wisdom_3'] = 'En esta unidad nacen los milagros.';
+TRANS['level_goal.level_12.wisdom_4'] = 'En este legado — la vida.';
+
 // ─── More sections appended in subsequent edits ──────────────────────────
 
 // ─── Apply ────────────────────────────────────────────────────────────────
@@ -603,14 +863,38 @@ function flatten(obj, prefix = '') {
 }
 const fEn = flatten(en);
 
-function setKey(obj, key, value) {
-  const parts = key.split('.');
-  let cur = obj;
-  for (let i = 0; i < parts.length - 1; i++) {
-    if (typeof cur[parts[i]] !== 'object' || cur[parts[i]] === null) cur[parts[i]] = {};
-    cur = cur[parts[i]];
+// Structure-aware setKey. The EN file mixes two styles:
+//   - Truly nested objects (chapters.chapter_1_element → en.chapters.chapter_1_element)
+//   - Flat keys with literal dots in the name
+//     (flows.anxiety_basic.plan.tiny_action → en.flows.anxiety_basic["plan.tiny_action"])
+// A naïve split-and-nest creates the wrong structure for the flat-with-dots
+// case and breaks i18next lookup. Instead, walk EN to find where the key
+// actually lives, then set the same path on the target.
+function setKey(target, en, fullKey, value) {
+  const parts = fullKey.split('.');
+  // Try every possible split: first i parts as nested, rest as flat key name.
+  // Take the LONGEST nested prefix that matches an actual leaf in EN.
+  for (let i = parts.length; i >= 1; i--) {
+    const nestedKeys = parts.slice(0, i - 1);
+    const leafKey = parts.slice(i - 1).join('.');
+    let curEn = en;
+    let ok = true;
+    for (const p of nestedKeys) {
+      if (curEn && typeof curEn === 'object' && p in curEn) curEn = curEn[p];
+      else { ok = false; break; }
+    }
+    if (ok && curEn && typeof curEn === 'object' && leafKey in curEn) {
+      // Found the leaf in EN at this nesting. Mirror to target.
+      let tgt = target;
+      for (const p of nestedKeys) {
+        if (typeof tgt[p] !== 'object' || tgt[p] === null) tgt[p] = {};
+        tgt = tgt[p];
+      }
+      tgt[leafKey] = value;
+      return true;
+    }
   }
-  cur[parts[parts.length - 1]] = value;
+  return false; // not found in EN — script will warn
 }
 
 let added = 0, skipped = 0;
@@ -620,7 +904,11 @@ for (const [key, value] of Object.entries(TRANS)) {
     skipped++;
     continue;
   }
-  setKey(es, key, value);
+  if (!setKey(es, en, key, value)) {
+    console.warn(`SKIP (structure mismatch with EN): ${key}`);
+    skipped++;
+    continue;
+  }
   added++;
 }
 
