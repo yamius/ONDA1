@@ -217,6 +217,8 @@ export interface RouteMeta {
   aboutPage?: { name: string; description: string; url: string }
   creativeWork?: { name: string; description: string; url: string; about: string[] }
   course?: { name: string; description: string; url: string }
+  /** Emit Organization + WebSite schema (homepage only). */
+  emitSiteSchema?: boolean
 }
 
 function buildBreadcrumbs(route: string): BreadcrumbItem[] {
@@ -311,6 +313,59 @@ function buildBreadcrumbListJsonLd(breadcrumbs: BreadcrumbItem[]): string {
     })),
   }
   return JSON.stringify(list)
+}
+
+/**
+ * Organization schema — emitted on the homepage. sameAs lists every owned
+ * social/profile URL. Add new ones as they go live; omit anything that
+ * doesn't actually exist (Google penalizes fabricated sameAs entries).
+ */
+function buildOrganizationJsonLd(): string {
+  const org = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'ONDA Life',
+    legalName: 'ONDA Life',
+    url: SITE_URL,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/icon-512.png`,
+      width: 512,
+      height: 512,
+    },
+    description: DEFAULT_DESC,
+    foundingDate: '2024',
+    sameAs: [
+      // Add real profile URLs as they ship — Google rejects fabricated ones.
+      // 'https://twitter.com/ondalife',
+      // 'https://www.linkedin.com/company/onda-life',
+      // 'https://github.com/yamius',
+    ].filter(Boolean),
+    contactPoint: {
+      '@type': 'ContactPoint',
+      email: 'hello@onda-life.com',
+      contactType: 'customer support',
+      availableLanguage: ['English', 'Spanish', 'Russian', 'Ukrainian', 'Chinese'],
+    },
+  }
+  return JSON.stringify(org)
+}
+
+/**
+ * WebSite schema. SearchAction is intentionally omitted — the site has no
+ * dedicated search endpoint that returns query results, and Google rejects
+ * SearchAction pointing at non-functional URLs.
+ */
+function buildWebSiteJsonLd(): string {
+  const site = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'ONDA Life',
+    url: SITE_URL,
+    publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+    inLanguage: ['en', 'es', 'ru', 'uk', 'zh'],
+  }
+  return JSON.stringify(site)
 }
 
 function buildDefinedTermJsonLd(name: string, description: string, url: string): string {
@@ -1188,7 +1243,34 @@ export function getMetaForRoute(route: string): RouteMeta {
   const breadcrumbs = buildBreadcrumbs(route)
 
   if (route === '/') {
-    return { title: DEFAULT_TITLE, description: DEFAULT_DESC, url, breadcrumbs, ogType: 'website' }
+    return { title: DEFAULT_TITLE, description: DEFAULT_DESC, url, breadcrumbs, ogType: 'website', emitSiteSchema: true }
+  }
+  if (route === '/articles') {
+    return {
+      title: 'Articles | ONDA Life — Biohacking & Neuroscience Long-Form Library',
+      description: '67 deep-dive articles on HRV training, vagal tone, neuroplasticity, circadian alignment, metabolic flexibility, breathwork, and consciousness firmware. New protocols and original research from ONDA Life.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+    }
+  }
+  if (route === '/privacy') {
+    return {
+      title: 'Privacy Policy | ONDA Life — Data Handling & GDPR',
+      description: 'How ONDA Life collects, processes, and protects your personal and biometric data. GDPR/CCPA-aligned privacy practices for the consciousness OS and HRV tracking platform.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+    }
+  }
+  if (route === '/terms') {
+    return {
+      title: 'Terms of Service | ONDA Life — Usage & Disclaimers',
+      description: 'Terms governing use of ONDA Life, the biohacking and consciousness operating system. Includes medical disclaimer, content licensing, and acceptable-use policy.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+    }
   }
   if (route === '/sitemap') {
     return {
@@ -1896,7 +1978,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   // Canonical link — always without trailing slash; replace existing or add before </head>
   const canonicalTag = `<link rel="canonical" href="${escapedUrl}">`
   if (out.includes('rel="canonical"')) {
-    out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, canonicalTag)
+    out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, canonicalTag)
   } else {
     out = out.replace('</head>', `  ${canonicalTag}\n</head>`)
   }
@@ -1904,6 +1986,15 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   // JSON-LD: BreadcrumbList (always)
   const breadcrumbScript = `<script type="application/ld+json">${buildBreadcrumbListJsonLd(meta.breadcrumbs)}</script>`
   out = out.replace('</head>', `  ${breadcrumbScript}\n</head>`)
+
+  // JSON-LD: Organization + WebSite (homepage only — emitting on every page
+  // would inflate every prerendered HTML by ~1KB without SEO benefit;
+  // Google Knowledge Graph only needs to see them on the canonical home).
+  if (meta.emitSiteSchema) {
+    const orgScript = `<script type="application/ld+json">${buildOrganizationJsonLd()}</script>`
+    const siteScript = `<script type="application/ld+json">${buildWebSiteJsonLd()}</script>`
+    out = out.replace('</head>', `  ${orgScript}\n  ${siteScript}\n</head>`)
+  }
 
   // JSON-LD: DefinedTerm (glossary pages only)
   if (meta.definedTerm) {
@@ -1980,13 +2071,13 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
 
   // Replace meta name="title" if present
   if (out.includes('name="title"')) {
-    out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escapedTitle}">`)
+    out = out.replace(/<meta\s+name="title"\s+content="[^"]*"\s*\/?>/i, `<meta name="title" content="${escapedTitle}">`)
   }
 
   // Replace or add meta name="description"
   const descMeta = `<meta name="description" content="${escapedDesc}">`
   if (out.includes('name="description"')) {
-    out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, descMeta)
+    out = out.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, descMeta)
   } else {
     out = out.replace('</head>', `  ${descMeta}\n</head>`)
   }
@@ -1997,16 +2088,16 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   const escapedImageAlt = meta.imageAlt ? escapeHtmlAttr(meta.imageAlt) : ''
   const twitterCard = 'summary_large_image'
   const replacements: [RegExp, string][] = [
-    [/<meta\s+property="og:type"\s+content="[^"]*">/gi, `<meta property="og:type" content="${ogType}">`],
-    [/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escapedTitle}">`],
-    [/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escapedDesc}">`],
-    [/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escapedUrl}">`],
-    [/<meta\s+property="og:image"\s+content="[^"]*">/gi, `<meta property="og:image" content="${ogImage}">`],
-    [/<meta\s+property="twitter:card"\s+content="[^"]*">/gi, `<meta property="twitter:card" content="${twitterCard}">`],
-    [/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escapedUrl}">`],
-    [/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escapedTitle}">`],
-    [/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escapedDesc}">`],
-    [/<meta\s+property="twitter:image"\s+content="[^"]*">/gi, `<meta property="twitter:image" content="${ogImage}">`],
+    [/<meta\s+property="og:type"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:type" content="${ogType}">`],
+    [/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:title" content="${escapedTitle}">`],
+    [/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:description" content="${escapedDesc}">`],
+    [/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:url" content="${escapedUrl}">`],
+    [/<meta\s+property="og:image"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:image" content="${ogImage}">`],
+    [/<meta\s+property="twitter:card"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:card" content="${twitterCard}">`],
+    [/<meta\s+property="twitter:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:url" content="${escapedUrl}">`],
+    [/<meta\s+property="twitter:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:title" content="${escapedTitle}">`],
+    [/<meta\s+property="twitter:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:description" content="${escapedDesc}">`],
+    [/<meta\s+property="twitter:image"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:image" content="${ogImage}">`],
   ]
   for (const [regex, replacement] of replacements) {
     out = out.replace(regex, replacement)
@@ -2015,7 +2106,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   // Ensure twitter:card exists (add if missing, e.g. on injected pages)
   if (!out.includes('twitter:card')) {
     out = out.replace(
-      /(<meta\s+property="og:image"\s+content="[^"]*">)/i,
+      /(<meta\s+property="og:image"\s+content="[^"]*"\s*\/?>)/i,
       `$1\n  <meta property="twitter:card" content="${twitterCard}">`
     )
   }
@@ -2025,7 +2116,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
     const imageAltTags = `  <meta property="og:image:alt" content="${escapedImageAlt}">\n  <meta property="twitter:image:alt" content="${escapedImageAlt}">`
     if (!out.includes('og:image:alt')) {
       out = out.replace(
-        /(<meta\s+property="og:image"\s+content="[^"]*">)/i,
+        /(<meta\s+property="og:image"\s+content="[^"]*"\s*\/?>)/i,
         `$1\n${imageAltTags}`
       )
     }

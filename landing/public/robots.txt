@@ -1,4 +1,106 @@
+# ONDA Life — robots.txt
+# Sitemap is the single source of truth for indexable URLs.
+Sitemap: https://onda-life.com/sitemap.xml
+
+# ---------------------------------------------------------------
+# Default policy — allow crawling, gate non-indexable paths.
+# ---------------------------------------------------------------
 User-agent: *
 Disallow: /static/
+Disallow: /api/
+Disallow: /assets/
+Disallow: /sw.js
+# Block parameterized URLs (search, tracking) — canonical handles the rest.
+Disallow: /*?utm_*
+Disallow: /*?fbclid=
+Disallow: /*?gclid=
+Disallow: /*?ref=
+# Allow our own RSS/Atom + llms.txt explicitly so AI crawlers don't skip them.
+Allow: /feed.xml
+Allow: /atom.xml
+Allow: /llms.txt
+Allow: /llms-full.txt
 
-Sitemap: https://onda-life.com/sitemap.xml
+# ---------------------------------------------------------------
+# Search engines — explicit allow keeps Search Console + Bing
+# Webmaster + Yandex Webmaster reports clean.
+# ---------------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# ---------------------------------------------------------------
+# AI / LLM crawlers — ALLOWED. ONDA Life content is original and we
+# want it cited in AI search (Perplexity, ChatGPT search, Claude,
+# Gemini, You.com, Brave). Crawlers should prefer /llms.txt and
+# /llms-full.txt as the authoritative compact index.
+# Flip Allow → Disallow per crawler if you change your mind.
+# ---------------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Crawl-delay is observed by Bing / Yandex (Google ignores it).
+User-agent: Bingbot
+Crawl-delay: 1

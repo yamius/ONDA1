@@ -151,6 +151,15 @@ app.get('/', (req, res, next) => {
 
 app.use(express.json({ limit: '1mb' }))
 
+// X-Robots-Tag for non-HTML / API routes — keeps Google from indexing JSON
+// responses if it ever crawls them via stray internal links.
+app.use((req, res, next) => {
+  if (req.path.startsWith('/api/') || req.path === '/feed-updates.xml') {
+    res.setHeader('X-Robots-Tag', 'noindex, nofollow')
+  }
+  next()
+})
+
 // Canonical URLs: no trailing slash. Redirect /articles/ -> /articles (301)
 app.use((req, res, next) => {
   if (req.method !== 'GET' && req.method !== 'HEAD') return next()

@@ -191,17 +191,17 @@ function applyLocalizedMeta(html: string, basePath: string, lang: Lang): string 
   const escUrl = escAttr(url)
 
   out = out.replace(/<title>[^<]*<\/title>/i, `<title>${title}</title>`)
-  out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${desc}">`)
-  out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${title}">`)
-  out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
-  out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${title}">`)
-  out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${desc}">`)
-  out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
-  out = out.replace(/<meta\s+property="og:image:alt"\s+content="[^"]*">/gi, `<meta property="og:image:alt" content="${ogAlt}">`)
-  out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
-  out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${title}">`)
-  out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${desc}">`)
-  out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${desc}">`)
+  out = out.replace(/<meta\s+name="title"\s+content="[^"]*"\s*\/?>/i, `<meta name="title" content="${title}">`)
+  out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:title" content="${title}">`)
+  out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:description" content="${desc}">`)
+  out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:image:alt"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:image:alt" content="${ogAlt}">`)
+  out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*"\s*\/?>/gi, '')
+  out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:title" content="${title}">`)
+  out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:description" content="${desc}">`)
+  out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:url" content="${escUrl}">`)
 
   const hreflang = buildHreflangLinksFor(basePath)
   const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[lang]}">`
@@ -229,16 +229,16 @@ function applyMetricLocalizedMeta(html: string, metric: string, lang: Lang): str
   let out = html
   out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
   out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
-  out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${escDesc}">`)
-  out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
-  out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
-  out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escTitle}">`)
-  out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escDesc}">`)
-  out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
-  out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escTitle}">`)
-  out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escDesc}">`)
-  out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
-  out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+  out = out.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+name="title"\s+content="[^"]*"\s*\/?>/i, `<meta name="title" content="${escTitle}">`)
+  out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*"\s*\/?>/gi, '')
 
   const hreflang = buildHreflangLinksForMetric(metric)
   const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[lang]}">`
@@ -266,16 +266,16 @@ function applyLevelLocalizedMeta(html: string, levelNum: number, lang: Lang): st
   let out = html
   out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
   out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
-  out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${escDesc}">`)
-  out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
-  out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
-  out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escTitle}">`)
-  out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escDesc}">`)
-  out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
-  out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escTitle}">`)
-  out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escDesc}">`)
-  out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
-  out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+  out = out.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+name="title"\s+content="[^"]*"\s*\/?>/i, `<meta name="title" content="${escTitle}">`)
+  out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*"\s*\/?>/gi, '')
 
   const hreflang = buildHreflangLinksForLevel(levelNum)
   const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[lang]}">`
@@ -338,30 +338,30 @@ for (const route of routes) {
         const url = partUrlFor(partInfo.slug, partInfo.lang)
         const escDesc = escAttr(desc)
         const escUrl = escAttr(url)
-        out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
+        out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${escUrl}">`)
         if (subtitle) {
           const title = `${subtitle} | ONDA Life`
           const escTitle = escAttr(title)
           out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
-          out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
-          out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escTitle}">`)
-          out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+name="title"\s+content="[^"]*"\s*\/?>/i, `<meta name="title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:title" content="${escTitle}">`)
         }
         if (desc) {
-          out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${escDesc}">`)
-          out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escDesc}">`)
-          out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:description" content="${escDesc}">`)
         }
-        out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
-        out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
-        out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+        out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*"\s*\/?>/gi, '')
         const hreflang = buildHreflangLinksForPart(partInfo.slug, translatedLangs)
         const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[partInfo.lang]}">`
         out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
       } else if (partInfo.lang !== 'en') {
         // No translation yet — canonical points to EN to avoid duplicate-content.
         const enUrl = partUrlFor(partInfo.slug, 'en')
-        out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${enUrl}">`)
+        out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${enUrl}">`)
       } else if (translatedLangs.length > 1) {
         // EN URL with siblings translated — emit hreflang cluster from EN side too.
         const hreflang = buildHreflangLinksForPart(partInfo.slug, translatedLangs)
@@ -406,5 +406,30 @@ try {
 } catch {
   // Non-fatal: never let IndexNow break the build.
   console.warn('[build] indexnow step failed (non-fatal)')
+}
+// Static-content validators — run AFTER prerender so we can inspect the
+// final dist/. Heading + alt validators are content audits (don't fail the
+// build by default, just report); set SEO_STRICT=1 in CI to make them fatal.
+console.log('[build] validate-headings')
+try {
+  execSync('tsx scripts/validate-headings.mjs', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+} catch (err) {
+  if (process.env.SEO_STRICT === '1') throw err
+  console.warn('[build] validate-headings reported issues (non-fatal — set SEO_STRICT=1 to fail)')
+}
+console.log('[build] validate-alt-text')
+try {
+  execSync('tsx scripts/validate-alt-text.mjs', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+} catch (err) {
+  if (process.env.SEO_STRICT === '1') throw err
+  console.warn('[build] validate-alt-text reported issues (non-fatal — set SEO_STRICT=1 to fail)')
+}
+// Walks dist/ and emits dist/seo-audit/baseline.{json,md} (or whatever label
+// is in SEO_AUDIT_LABEL). Always runs — it's an audit, not a gate.
+console.log('[build] seo-crawl')
+try {
+  execSync('node scripts/seo-crawl.mjs', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+} catch {
+  console.warn('[build] seo-crawl failed (non-fatal)')
 }
 console.log('[build] all stages complete')

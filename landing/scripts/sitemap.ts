@@ -54,11 +54,18 @@ function getLastmod(route: string): string {
   return buildDate
 }
 
-// Per-language part translations table. Used to:
-//   1. include /:lang/part/:slug URLs in sitemap only when that language has
-//      a translation (otherwise canonical points to EN, sitemap entry would
-//      duplicate the EN URL).
-//   2. build hreflang clusters per part with only the langs that have body.
+// Per-language translation tables. Used to:
+//   1. include /:lang/part|articles|glossary/:slug URLs in sitemap only when
+//      that language has a translated body (otherwise canonical points to EN,
+//      sitemap entry would duplicate the EN URL and trigger duplicate-content).
+//   2. build hreflang clusters with only the langs that have body content.
+//
+// Part: gated since launch.
+// Article: preventive — articles aren't currently emitted per-locale in
+//   prerender-routes (EN-only), so this is a no-op today but guarantees we
+//   never ship broken localized URLs once /lang/articles/<slug> goes live.
+// Glossary: same logic. ES has 210 terms translated, RU/UK/ZH have 0 — so if
+//   localized glossary routes ever ship, ES gets included and the rest skipped.
 const localesDir = join(__dirname, '..', 'public', 'locales')
 const partTranslated: Record<string, Lang[]> = {}
 for (const slug of PART_SLUGS) {
@@ -70,13 +77,56 @@ for (const slug of PART_SLUGS) {
   }
 }
 
+// Articles localization gate (preventive — see comment above).
+interface BodiesFile { bodies?: Record<string, unknown> }
+const articlesByLang: Partial<Record<Lang, Set<string>>> = {}
+for (const lang of SUPPORTED_LANGS) {
+  if (lang === 'en') continue
+  try {
+    const file = JSON.parse(readFileSync(join(localesDir, lang, 'articles.json'), 'utf-8')) as BodiesFile
+    articlesByLang[lang] = new Set(Object.keys(file.bodies ?? {}))
+  } catch {
+    articlesByLang[lang] = new Set()
+  }
+}
+/** Returns true if the localized URL `/${lang}/articles/${slug}` should be in sitemap. */
+export function articleHasLocalizedBody(slug: string, lang: Lang): boolean {
+  if (lang === 'en') return true
+  return articlesByLang[lang]?.has(slug) ?? false
+}
+
+// Glossary localization gate.
+const glossaryByLang: Partial<Record<Lang, Set<string>>> = {}
+for (const lang of SUPPORTED_LANGS) {
+  if (lang === 'en') continue
+  try {
+    const file = JSON.parse(readFileSync(join(localesDir, lang, 'glossary.json'), 'utf-8')) as BodiesFile
+    glossaryByLang[lang] = new Set(Object.keys(file.bodies ?? {}))
+  } catch {
+    glossaryByLang[lang] = new Set()
+  }
+}
+/** Returns true if the localized URL `/${lang}/glossary/${slug}` should be in sitemap. */
+export function glossaryHasLocalizedBody(slug: string, lang: Lang): boolean {
+  if (lang === 'en') return true
+  return glossaryByLang[lang]?.has(slug) ?? false
+}
+
 const allRoutes = getPrerenderRoutes()
 const routes = allRoutes.filter(r => {
-  if (!LOCALIZED_PART_ROUTE_SET.has(r)) return true
-  const info = parsePartRoute(r)
-  if (!info) return false
-  // Include EN always; non-EN only if translated.
-  return partTranslated[info.slug]?.includes(info.lang)
+  // Part routes: gate by part.json translation table.
+  if (LOCALIZED_PART_ROUTE_SET.has(r)) {
+    const info = parsePartRoute(r)
+    if (!info) return false
+    return partTranslated[info.slug]?.includes(info.lang)
+  }
+  // Localized article URLs (defensive — EN-only today, but guard for future).
+  const am = r.match(/^\/(es|ru|uk|zh)\/articles\/([^/]+)$/)
+  if (am) return articleHasLocalizedBody(am[2], am[1] as Lang)
+  // Localized glossary URLs (defensive).
+  const gm = r.match(/^\/(es|ru|uk|zh)\/glossary\/([^/]+)$/)
+  if (gm) return glossaryHasLocalizedBody(gm[2], gm[1] as Lang)
+  return true
 })
 
 /** Pre-build hreflang alternates for each localized base path. */
