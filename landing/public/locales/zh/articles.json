@@ -731,6 +731,98 @@
           "text": "一系列屏息练习,休息时间固定且渐进缩短。"
         }
       ]
+    },
+    "femtech-cyclical-architecture": {
+      "title": "FEMTECH:周期架构",
+      "description": "女性身体是动态的 28 天架构。四种独特工作模式、阶段同步与代谢灵活性,把生物学从混乱变成精调机器。",
+      "imageAlt": "女性周期生物黑客的激素架构视觉:雌激素孕酮波、代谢率、认知负荷、恢复矩阵。",
+      "imageTitle": "女性周期生物黑客 — ONDA 激素架构:雌激素、孕酮与四种工作模式",
+      "imageCaption": "你的激素固件映射到系统指标。雌激素与孕酮波驱动代谢率、认知负荷与恢复——把你的输出与当前阶段同步。",
+      "content": "\n## [ ANALYZING_SYSTEM_DYNAMICS ]\n\n> 「大多数生物黑客协议是为线性系统设计的。但女性身体是动态的 28 天架构。每天都尝试以最大时钟运行是导致硬件倦怠的系统错误。\n>\n> 在 ONDA 模型中,女性周期不是限制——而是四种独特工作模式的序列。每个阶段对营养、认知负荷与计算强度有特定的系统需求。让你的输出与当前『固件版本』同步,把你的生物学从混乱变成精调机器。」\n\n下图把激素固件映射到四种工作模式:代谢率、认知负荷与恢复矩阵。\n\n![女性周期生物黑客激素架构视觉:雌激素孕酮波、代谢率、认知负荷、恢复矩阵。](/images/articles/female-cycle-biohacking-onda.png \"女性周期生物黑客 — ONDA 激素架构:雌激素、孕酮与四种工作模式\")\n\n---\n\n## [ 第 1 节:激素固件更新 ]\n\n激素固件每周更新。在卵泡期(MAX_PERFORMANCE_MODE),大脑为神经可塑性与快速学习优化。在黄体期(SYSTEM_MAINTENANCE_MODE),优先级转向资源保存与体温调节。忽视这些切换是违反系统基础代码。\n\n---\n\n## [ 第 2 节:代谢灵活性 ]\n\n胰岛素敏感性与氨基酸需求随雌激素水平波动。我们不只『数卡路里』——我们校准燃料组合以匹配当前代谢请求。这让你能维护体成分,而不对内分泌轴施加过度压力。\n\n---\n\n## [ EXECUTION_PROTOCOLS ]\n\n### PROTOCOL_01 > 阶段同步(CYCLE_SYNCING)\n\n> **The Hack:** 在周期第 7–14 天(雌激素峰)安排重要谈判与高强度间歇训练(HIIT)。\n>\n> **逻辑:** 雌激素增强语言流畅度与韧带韧性。这是系统最大正常运行时间的窗口。\n\n### PROTOCOL_02 > 热监测(BBT_TRACKING)\n\n> **The Hack:** 使用智能戒指(Oura/Evie)进行每日基础体温(BBT)追踪,精确识别阶段过渡。\n>\n> **逻辑:** 体温升高 0.3–0.5°C 信号切换到 RECOVERY 模式,系统需要更高的睡眠优先级与更低的皮质醇诱发负荷。\n\n### PROTOCOL_03 > 营养补丁(MICRONUTRIENT_LOAD)\n\n> **The Hack:** 在新周期开始前 5 天(『孕酮下降』)增加镁与复合碳水化合物的摄入。\n>\n> **逻辑:** 主动神经系统支持预防情绪『故障』与血清素崩溃,稳定认知处理器。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> PRIMARY_DEVICE: [TRACKER: OURA_RING_GEN4 / NATURAL_CYCLES_INTEGRATION]\n> METRIC: 周期阶段对齐。活动日程与生物节律的关联程度。\n> SECONDARY_DEVICE: [CGM: CONTINUOUS_GLUCOSE_MONITOR]\n> METRIC: 胰岛素敏感性指数。追踪碳水耐受度如何随周期周变化。\n> SYSTEM_DATA: [BIO_MARKERS: PROGESTERONE_PEAK]\n> METRIC: 确认排卵作为整体系统健康与长寿的主要指标。\n> STATUS: FEMALE_OS_OPTIMIZED.\n\n---\n\n## [ FINALIZE_ANALYSIS ]\n\nCyclical Integrity: Verified.\nPower Management: Adaptive.\n",
+      "howToSteps": [
+        {
+          "name": "阶段同步(Cycle Syncing)",
+          "text": "在周期第 7–14 天(雌激素峰)安排重要谈判与高强度间歇训练(HIIT)。"
+        },
+        {
+          "name": "热监测(BBT Tracking)",
+          "text": "使用智能戒指(Oura/Evie)进行每日基础体温(BBT)追踪,精确识别阶段过渡。"
+        },
+        {
+          "name": "营养补丁(Micronutrient Load)",
+          "text": "在新周期开始前 5 天(『孕酮下降』)增加镁与复合碳水化合物的摄入。"
+        }
+      ]
+    },
+    "cacao-stem-cells": {
+      "title": "可可与干细胞",
+      "description": "过滤噪声。学习纯化可可类黄醇如何触发干细胞生产并优化你的再生矩阵,而无需刺激物过载。",
+      "imageAlt": "干细胞动员生物反应器:纯化可可类黄醇激活骨髓,BIO_SYNCHRONIZATION,CACAO_STEM_CELL_ACTIVATION 轴。ONDA 再生协议。",
+      "imageTitle": "[ STEM_CELL_MOBILIZATION ]:可可类黄醇触发骨髓中干细胞释放——非刺激性再生矩阵。",
+      "imageCaption": "[ BIO_SYNCHRONIZATION: ACTIVE ]:纯化可可信号激活骨髓中的干细胞动员。骨髓激活、干细胞外流、动态流。ONDA Life。",
+      "neuralSuggestion": {
+        "text": "延长你的硬件寿命。探索细胞清理协议以优化长寿。",
+        "linkText": "Longevity Hardware"
+      },
+      "content": "\n## [ ANALYZING BIOLOGICAL LOGIC ]\n\n> 「可可不只是营养素;它是细胞基础设施的复杂化学驱动器。在 ONDA 模型中,我们把咖啡因与可可碱的去除视为『频率过滤器』,而非损失。\n>\n> 把纯类黄醇与刺激性同伴隔离,我们消除『系统噪声』(肾上腺峰),同时最大化干细胞生产的信号。这就是不让神经系统超频的内部再生实验室校准方式。」\n\n---\n\n## [ 第 1 节:再生矩阵 ]\n\n干细胞是身体修复系统的『主代码』。它们的生产决定神经可塑性与组织恢复的效率。可可在非刺激性形式下作为信号分子,从骨髓触发这些细胞的动员,有效在毛细血管层启动『硬件修复』序列。\n\n---\n\n## [ 第 2 节:移除刺激层 ]\n\n咖啡因与可可碱是药理加速器。虽然对『处理速度』有用,但它们常与干细胞优化所需的深度恢复状态冲突。过滤掉它们,我们让多酚直接作用于血流与氧合,确保系统保持在『再生循环』中而非『紧急警报』模式。\n\n---\n\n## [ 第 3 节:再生协议 ]\n\n### 协议 1:细胞点火(脱因可可)\n\n> **The Hack:** 30 g 高类黄醇、脱咖啡因可可基质溶于 70°C 水。\n\n**逻辑:** 这提供集中剂量的表儿茶素,触发一氧化氮的释放。这是告诉骨髓向血流释放新建筑模块的『软件更新』。\n\n### 协议 2:微循环回路(Zone 1)\n\n> **The Hack:** 摄入后 20 分钟低强度运动(心率 < 110 bpm)。\n\n**逻辑:** 体力运动作为泵,确保可可驱动的信号到达血管系统的最远『数据端口』。这关乎分发效率。\n\n### 协议 3:恢复防火墙(红光)\n\n> **The Hack:** 睡眠周期前 10 分钟红光疗法(660nm)。\n\n**逻辑:** 光疗为线粒体提供必要的 ATP 来利用日间产生的干细胞。它闭合再生序列的回路。\n\n---\n\n## [ HARDWARE_VALIDATION ]\n\nVALIDATION_DEVICE: Oura Ring / Whoop\nMETRIC: HRV(心率变异性)与睡眠质量\nSTATUS: REGENERATION_OPTIMIZED\n\n---\n\n## System Reference\n\n- [ONDA Manifesto](/about) — 意识的操作系统\n- [The Science of Rest](/articles/longevity-hardware-cellular-cleanup) — 细胞清理与恢复协议\n",
+      "howToSteps": [
+        {
+          "name": "细胞点火(脱因可可)",
+          "text": "30 g 高类黄醇、脱咖啡因可可基质溶于 70°C 水。"
+        },
+        {
+          "name": "微循环回路(Zone 1)",
+          "text": "摄入后 20 分钟低强度运动(心率 < 110 bpm)。"
+        },
+        {
+          "name": "恢复防火墙(红光)",
+          "text": "睡眠周期前 10 分钟红光疗法(660nm)。"
+        }
+      ]
+    },
+    "cognitive-architecture-neural-throughput": {
+      "title": "系统分析:认知架构",
+      "subtitle": "无需外部补丁优化神经吞吐量",
+      "description": "升级你的神经硬件。掌握认知架构协议:清理信号、管理神经噪声、扩展带宽——无需外部补丁。",
+      "imageAlt": "可视化前额叶皮层中的神经带宽扩展与系统噪声清理。无需外部补丁的认知架构优化。",
+      "imageTitle": "[ NEURAL_ARCHITECTURE ]:前额叶皮层中的带宽扩展与信号清理。ONDA 认知协议。",
+      "imageCaption": "[ BIO_SYNCHRONIZATION: ACTIVE ]:神经带宽扩展、胶质淋巴流优化、系统噪声清理。PFC 核心、迷走驱动、线粒体效率。ONDA Life。",
+      "neuralSuggestion": {
+        "text": "化学补丁是临时的。用 nootropic 协议建立稳定堆栈。",
+        "linkText": "认知架构:Nootropic 堆栈"
+      },
+      "content": "\n## [ ANALYZING COGNITIVE LOGIC ]\n\n> 「大多数化学认知增强剂(nootropics)是临时补丁,常引入『系统噪声』并导致受体退化。在 ONDA 模型中,真正的智力放大不是关于刺激——而是关于架构优化。\n>\n> 我们不把大脑看作要用化学填满的容器,而是视作其性能受热限制、燃料输入差与背景干扰所限的处理器。我们的目标:通过行为协议清理信号并扩展神经网络带宽。」\n\n---\n\n## [ 第 1 节:神经噪声管理 ]\n\n任何认知负荷都需要『硬件』状态完美。如果皮质醇飙升,睡眠碎片化,任何学习尝试相当于把数据写入损坏的磁盘扇区。我们从校准基础节律开始,创建神经发生与稳定工作记忆的基质。\n\n---\n\n## [ 第 2 节:光子与代谢校准 ]\n\n你的眼睛是数据输入端口。它们接收的光直接编程你的激素输出。优化太阳窗口与『燃料输入』(营养),我们消除代谢延迟——通常被感受为『脑雾』——它扰乱高级处理。\n\n---\n\n## [ EXECUTION_PROTOCOLS ]\n\n### PROTOCOL_01 > 神经回路稳定化\n\n> **The Hack:** 在系统恢复模式(睡眠)前 60 分钟启动『Digital Sunset』。\n>\n> **逻辑:** 阻断蓝光光谱防止褪黑素抑制。这确保胶质淋巴系统冲洗神经硬件代谢废物所需的深度睡眠阶段。\n\n### PROTOCOL_02 > 脂质燃料输入\n\n> **The Hack:** 用 Omega-3 脂肪酸与结构性抗氧化剂替代高升糖输入。\n>\n> **逻辑:** 大脑 60% 是脂肪。我们更新神经元的『脂质层』以提高信号传导速度。无胰岛素峰——只有稳定的 ATP 流。\n\n### PROTOCOL_03 > 神经共调节\n\n> **The Hack:** 安排高保真社交校准(面对面互动)。\n>\n> **逻辑:** 社交隔离增加『系统噪声』(杏仁核过度活跃)。群体同步对齐脑频率并降低基础压力负荷,为分析任务释放 CPU 资源。\n\n### PROTOCOL_04 > 光子锚\n\n> **The Hack:** 在『系统启动』(醒来)的前 30 分钟内暴露于 10,000+ LUX。\n\n> **逻辑:** 昼夜振荡器校准。这设定接下来 24 小时周期内神经递质释放的倒计时。\n\n---\n\n## [ HARDWARE_VALIDATION ]\n\nVALIDATION_DEVICE: [Oura_Ring] / [Whoop]\nMETRIC: HRV(心率变异性)与深睡比例。\nSECONDARY_DEVICE: [Muse_Headband] 用于在专注会话期间检测 α 波频率。\nSTATUS: Cognitive Architecture Stable. Interference Minimized.\n\n---\n\n> [ FINALIZE_ANALYSIS ]\n> System Integrity: Optimal. Cognition Flow: Unlocked.\n",
+      "howToSteps": [
+        {
+          "name": "NEURAL CIRCUIT STABILIZATION",
+          "text": "在系统恢复模式(睡眠)前 60 分钟启动『Digital Sunset』。"
+        },
+        {
+          "name": "LIPID FUEL INPUT",
+          "text": "用 Omega-3 脂肪酸与结构性抗氧化剂替代高升糖输入。"
+        },
+        {
+          "name": "NEURAL CO-REGULATION",
+          "text": "安排高保真社交校准(面对面互动)。"
+        },
+        {
+          "name": "PHOTIC ANCHOR",
+          "text": "在『系统启动』(醒来)的前 30 分钟内暴露于 10,000+ LUX。"
+        }
+      ]
+    },
+    "system-feedback-biometric-loop": {
+      "title": "系统反馈:生物特征回路",
+      "subtitle": "从静态快照过渡到实时系统调整",
+      "description": "停止追踪,开始优化。学习 ONDA 如何把你的生物特征数据转化为立即纠正协议以达到峰值表现。",
+      "imageAlt": "生物特征反馈回路可视化:HRV、葡萄糖、皮质醇数据流环绕人形。实时系统纠正、自适应协议。ONDA Life。",
+      "imageTitle": "[ BIOMETRIC_FEEDBACK_LOOP ]:HRV、葡萄糖、皮质醇信号驱动实时系统调整。ONDA 自适应协议。",
+      "imageCaption": "[ SIGNAL: BIOMETRIC_LOOP_ACTIVE ]:HRV、葡萄糖、皮质醇数据流驱动实时系统纠正。自适应协议、动态校准。ONDA Life。",
+      "neuralSuggestion": {
+        "text": "在症状前预测。探索 AI 驱动的生物标志物预报。",
+        "linkText": "AI Biomarker Tracking"
+      },
+      "content": "\n## [ ANALYZING CAUSAL LOGIC ]\n\n> 「大多数用户把生物特征(HRV、静息心率、睡眠阶段)当作被动报告——系统给昨日的『分数』。在 ONDA 模型中,数据不是分数;它是即时操作系统调整的输入信号。\n>\n> 我们把生物特征周期视作 Feedback Loop。如果『硬件』发出高延迟(低 HRV)或过热(高 RHR)信号,继续按标准『日计划』走相当于故意把错误写入你的代码。我们的目标:教系统实时适应当前资源可用性。」\n\n---\n\n## 延迟问题\n\nHRV 是测量系统延迟的主要诊断工具。高 HRV 表明你的神经系统灵活且准备好高带宽数据处理。低 HRV 信号 CPU 资源被后台进程(压力、炎症或恢复不足)占用。在这种状态下,任何『超频』尝试都会导致热限制。\n\n---\n\n### 协议:动态校准\n\n我们不用固定日程,而是实施 Adaptive Protocols。这是应用于生物学的编程 IF-THEN 逻辑。\n\n**IF** RECOVERY_SCORE < 40%,**THEN** 系统自动用 VAGAL_TONE_RESET 替换 HIGH_INTENSITY 协议。\n\n这消除『人为错误』——为人造表现目标忽视生物信号的倾向。\n\n---\n\n## [ EXECUTION_PROTOCOL: DYNAMIC_LOOP ]\n\n### STEP_01 > 数据摄入(系统启动)\n\n**操作:** 醒来后立即从可穿戴设备(Oura、Whoop、Apple Watch)同步数据。\n\n**目标:** 确定当前 24 小时周期的基线就绪水平。\n\n### STEP_02 > 增量分析\n\n**操作:** 将当前 HRV 与体温与你的 14 天滚动平均值进行比较。\n\n**逻辑:** 我们寻找增量(偏离),而非绝对数字。HRV 比基线下降超过 20% 触发 System Protection Protocol。\n\n### STEP_03 > 执行协议选择\n\n**The Hack:** 根据生物特征输入选择模式:\n\n- **[ PERFORMANCE_MODE ]**(高 HRV)— 学习、复杂分析任务与高体力负荷的理想窗口。\n- **[ MAINTENANCE_MODE ]**(正常 HRV)— 标准操作周期;维持当前进度。\n- **[ RECOVERY_MODE ]**(低 HRV)— 强制『Digital Detox』、CO2_TOLERANCE 呼吸与提早 GLYMPHATIC_FLUSH。\n\n---\n\n## [ SYSTEM CORRECTION LOG ]\n\n> **INPUT_SIGNAL:** ↓ HRV / ↑ RHR\n>\n> **SYSTEM_STATE:** 系统过载 / 高延迟\n>\n> **ACTION:** PROTOCOL: VAGAL_RESET\n\n> **INPUT_SIGNAL:** ↑ 体温\n>\n> **SYSTEM_STATE:** 免疫警报 / 系统过热\n>\n> **ACTION:** PROTOCOL: THERMAL_STASIS\n\n> **INPUT_SIGNAL:** ↓ 深睡\n>\n> **SYSTEM_STATE:** 缓存损坏 / 恢复失败\n>\n> **ACTION:** PROTOCOL: GLYMPHATIC_PURGE\n\n> **INPUT_SIGNAL:** ↑ α 波\n>\n> **SYSTEM_STATE:** 峰值专注 / 最佳带宽\n>\n> **ACTION:** PROTOCOL: DEEP_WORK_2.0\n\n---\n\n## [ HARDWARE_VALIDATION ]\n\nDEVICE: ONDA App(Apple Health / Google Fit 集成)。\nMETRIC: 准备度评分与负荷平衡。\nSTATUS: Feedback Loop Closed. Optimization Continuous.\n\n---\n\n> [ FINALIZE_ANALYSIS ]\n> 系统不再盲目运行。每个动作都由生物特征请求支持。\n> [ CYCLE COMPLETE ]\n"
     }
   },
   "detail": {
