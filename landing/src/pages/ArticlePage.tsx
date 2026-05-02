@@ -899,7 +899,7 @@ export function ArticlePage() {
 
       <article className="prose-onda">
         <Markdown rehypePlugins={[rehypeSlug]} components={markdownComponents} key={protocolRefresh}>
-          {injectArticleGlossaryLinks(tContent)}
+          {injectArticleGlossaryLinks(tContent, langPrefix)}
         </Markdown>
       </article>
 

@@ -269,7 +269,7 @@ export function GlossaryTermPage() {
             },
           }}
         >
-          {injectGlossaryLinks(tContent, term.slug)}
+          {injectGlossaryLinks(tContent, term.slug, langPrefix)}
         </Markdown>
       </article>
 

@@ -50,19 +50,29 @@ const LINK_PLACEHOLDER = '\x00GLOSSARY_LINK_PLACEHOLDER\x00'
 const CREATED_LINK_PREFIX = '\x01GLOSSARY_CREATED_'
 
 /**
+ * Maximum number of times a single glossary slug is linked per page.
+ * Google has stated repeatedly that linking every occurrence of the same
+ * anchor adds no SEO value and can read as keyword stuffing. Linking the
+ * first mention preserves discoverability without diluting PageRank flow.
+ */
+const MAX_LINKS_PER_SLUG = 1
+
+/**
  * Injects glossary links into markdown content.
  * Uses placeholders for created links so overlapping patterns (e.g. "prefrontal" vs "prefrontal cortex") don't corrupt output.
  * @param content Raw markdown
  * @param currentSlug Slug of the term being viewed — self-mentions are not linked
+ * @param langPrefix Locale prefix for outgoing /glossary URLs (e.g. '/ru', '' for EN)
  */
-export function injectGlossaryLinks(content: string, currentSlug: string): string {
-  return injectGlossaryLinksWithPatterns(content, currentSlug, TERM_PATTERNS)
+export function injectGlossaryLinks(content: string, currentSlug: string, langPrefix = ''): string {
+  return injectGlossaryLinksWithPatterns(content, currentSlug, TERM_PATTERNS, langPrefix)
 }
 
 function injectGlossaryLinksWithPatterns(
   content: string,
   currentSlug: string,
-  patterns: { pattern: RegExp; slug: string }[]
+  patterns: { pattern: RegExp; slug: string }[],
+  langPrefix: string,
 ): string {
   // 1. Protect existing markdown links [text](url) - replace with placeholders
   const linkMatches: string[] = []
@@ -88,12 +98,17 @@ function injectGlossaryLinksWithPatterns(
     return placeholder
   })
 
-  // 3. Replace term mentions with internal links (skip self-linking). Use placeholders so overlapping patterns don't corrupt.
+  // 3. Replace term mentions with internal links (skip self-linking, cap per slug).
+  //    Use placeholders so overlapping patterns don't corrupt.
   const createdLinks: string[] = []
+  const linkedSlugs = new Map<string, number>() // slug -> count of links emitted
   for (const { pattern, slug } of patterns) {
     if (slug === currentSlug) continue
     protectedContent = protectedContent.replace(pattern, (match) => {
-      const link = `[${match}](/glossary/${slug})`
+      const used = linkedSlugs.get(slug) ?? 0
+      if (used >= MAX_LINKS_PER_SLUG) return match
+      linkedSlugs.set(slug, used + 1)
+      const link = `[${match}](${langPrefix}/glossary/${slug})`
       const idx = createdLinks.length
       createdLinks.push(link)
       return `${CREATED_LINK_PREFIX}${idx}\x01`
@@ -130,7 +145,9 @@ function injectGlossaryLinksWithPatterns(
 /**
  * Injects glossary links into article content. Uses all glossary terms for auto-linking.
  * For articles there is no "self" to skip — all term mentions become links.
+ * @param content Raw markdown
+ * @param langPrefix Locale prefix for outgoing /glossary URLs (e.g. '/ru', '' for EN)
  */
-export function injectArticleGlossaryLinks(content: string): string {
-  return injectGlossaryLinksWithPatterns(content, '__no_self__', buildArticleTermPatterns())
+export function injectArticleGlossaryLinks(content: string, langPrefix = ''): string {
+  return injectGlossaryLinksWithPatterns(content, '__no_self__', buildArticleTermPatterns(), langPrefix)
 }
