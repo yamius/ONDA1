@@ -929,6 +929,111 @@
         }
       ],
       "content": "\n## [ ANALYZING SYSTEM OVERHEATING ]\n\n> 「在 ONDA 架构中,攻击性不是性格缺陷;它是 Emergency Resource Activation Protocol。当外部压力超过系统当前带宽时,下丘脑—垂体—肾上腺(HPA)轴启动皮质醇与肾上腺素的大规模释放。\n>\n> 主要系统错误是这一协议『卡』在 ON 位置。慢性高皮质醇水平退化前额叶皮层——负责逻辑与抑制的系统主『处理器』。结果是切换到反应管理模式,每个外部事件都被误解为直接攻击。」\n\n---\n\n## [ 第 1 节:皮质醇——生存货币 ]\n\n`皮质醇` 是负责葡萄糖动员的主要糖皮质激素。它的使命:为肌肉提供即时能量涌升,同时关闭『非必要』过程(免疫、消化、再生)。然而,在社交压力背景下,这种能量常常没有被身体消耗,变成表现为焦虑或不受控攻击的系统噪声。\n\n---\n\n## [ 第 2 节:攻击性作为扩张工具 ]\n\n攻击性是高能状态。管理得当时,它成为突破与边界保护的燃料。错误发生在攻击性变成 Unmanaged Vector 时。我们的任务不是抑制皮质醇,而是学会驾驭其势头执行任务,同时保持对『命令行』(前额叶皮层)的控制。\n\n---\n\n## [ EXECUTION_PROTOCOLS: STRESS_BYPASS ]\n\n### PROTOCOL_01 > FORCED DECELERATION(生理性叹息)\n\n> **The Hack:** 通过鼻吸气两次(一次长、一次短),然后通过口长缓慢呼气。重复 3 次。\n\n**逻辑:** 这是激活迷走神经最快的硬件级方法。它向脑干发送直接信号:『系统安全』。肾上腺素水平瞬间下降。\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n### PROTOCOL_02 > DISCHARGING STATIC LOAD(微负荷)\n\n> **The Hack:** 30–60 秒爆发性体力消耗(俯卧撑、空气深蹲或重物携带)。\n\n**逻辑:** 皮质醇要求体力行动。给肌肉负荷,你『烧掉』多余信号,防止它累积为精神紧张。\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n### PROTOCOL_03 > INTERCEPTING CONTROL(认知重构)\n\n> **The Hack:** 口头标记状态:『我现在处于 HPA_AXIS_OVERLOAD』。\n\n**逻辑:** 把过程从自动(杏仁核)转移到意识(前额叶皮层)。命名过程,你创造距离,恢复对行为控制的 root access。\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n## [ SYSTEM CORRECTION LOG ]\n\n- `INPUT_SIGNAL:` ↑ 皮质醇 / ↑ 肌肉紧张\n  - `SYSTEM_STATE:` 高压 / 反应模式\n  - `ACTION:` PROTOCOL: PHYSIOLOGICAL_SIGH\n\n- `INPUT_SIGNAL:` ↓ 决策质量 / ↑ 易怒\n  - `SYSTEM_STATE:` 前额叶皮层节流\n  - `ACTION:` PROTOCOL: SENSORY_DEPRIVATION(5 分钟静默)\n\n- `INPUT_SIGNAL:` 慢性压力 / 失眠\n  - `SYSTEM_STATE:` HPA 轴功能障碍\n  - `ACTION:` PROTOCOL: MAGNESIUM_RELOAD + DARK_THERAPY\n\n---\n\n## [ HARDWARE_VALIDATION ]\n\nMETRIC: 晨间皮质醇水平 + HRV。\n`STATUS: Stress Architecture Under Control. Reactivity Reduced.`\n\n---\n\n> [ FINALIZE_ANALYSIS ]\n> 攻击管理不是抑制问题,而是 Energy Management。一旦你理解 HPA 轴的机制,你就停止成为激素峰的人质,成为生物力量的操作员。\n"
+    },
+    "system-stability-serotonin": {
+      "title": "System Stability:血清素",
+      "subtitle": "管理内在地位与认知平静",
+      "description": "学习如何校准内在地位与认知平静。探索姿势、肠道健康与血清素生产之间的联系。",
+      "imageAlt": "从肠道向大脑辐射的血清素锚的 3D 可视化。",
+      "imageTitle": "[ SYSTEM_STABILITY: SEROTONIN ]:肠脑血清素合成与内在地位校准。ONDA 协议。",
+      "neuralSuggestion": {
+        "text": "优化你的微生物群与肠脑数据链路。掌握情绪与认知协议。",
+        "linkText": "Gut-Brain Axis"
+      },
+      "howToSteps": [
+        {
+          "name": "PROTOCOL_01 > STRUCTURAL ALIGNMENT(姿势补丁)",
+          "text": "肩膀向后,微微抬下巴,头顶向上对齐。"
+        },
+        {
+          "name": "PROTOCOL_02 > PHOTIC TRIGGER(太阳加载)",
+          "text": "确保至少 15–20 分钟眼睛接受直射晨光(不戴眼镜)。"
+        },
+        {
+          "name": "PROTOCOL_03 > SERVER MAINTENANCE(益生元输入)",
+          "text": "摄入富含色氨酸的复合碳水(火鸡、奶酪、坚果)与高纤维结合。"
+        }
+      ],
+      "content": "\n## [ ANALYZING THE STABILITY PROTOCOL ]\n\n> 「在 ONDA 架构中,血清素不只是『幸福激素』。它是负责系统满足度与资源安全的主要生化调节器。其主要功能是向大脑发出『资源充足』与『地位安全』的信号。\n>\n> 在硬件层面,血清素作为多巴胺的功能拮抗剂。多巴胺驱动系统寻找新输入(搜索),血清素则处理现有数据的高效整合与欣赏。低血清素水平把系统切换到稀缺模式,任何奖励延迟都触发冲动、易怒,以及长期记忆中的『写错误』。」\n\n---\n\n## [ 第 1 节:等级与信心 ]\n\n`血清素` 与对自身社会地位的感知直接关联。当系统检测到高地位位置,血清素水平上升,自动伸展姿势并放松面部肌肉。这创造正反馈循环:你看起来自信 → 别人感知你的地位 → 你的血清素进一步上升。\n\n---\n\n## [ 第 2 节:肠道作为血清素服务器 ]\n\n至关重要:你 90% 的血清素在肠道中合成。这不只是生物学事实,而是微生物群与你的情绪之间的 Data Link。如果『服务器』(消化道)被炎症或低质量燃料超载,无论你冥想多少,认知系统都不会收到『稳定信号』。\n\n---\n\n## [ EXECUTION_PROTOCOLS: STABILITY_CALIBRATION ]\n\n### PROTOCOL_01 > STRUCTURAL ALIGNMENT(姿势补丁)\n\n> **The Hack:** 肩膀向后,微微抬下巴,头顶向上对齐。\n\n**逻辑:** 本体感受反馈环路。大脑读取『胜利者』姿势并启动血清素释放。这是即时硬件级信心补丁。\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n### PROTOCOL_02 > PHOTIC TRIGGER(太阳加载)\n\n> **The Hack:** 确保至少 15–20 分钟眼睛接受直射晨光(不戴眼镜)。\n\n**逻辑:** 通过视网膜光感受器从色氨酸激活血清素合成。这也为后来傍晚的褪黑素生产奠定基础。\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n### PROTOCOL_03 > SERVER MAINTENANCE(益生元输入)\n\n> **The Hack:** 摄入富含色氨酸的复合碳水(火鸡、奶酪、坚果)与高纤维结合。\n\n**逻辑:** 为肠道中的血清素生产提供原材料。没有必要营养,系统将继续在『资源赤字』模式下运行。\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n## [ SYSTEM CORRECTION LOG ]\n\n- `INPUT_SIGNAL:` ↑ 冲动 / ↓ 自尊\n  - `SYSTEM_STATE:` 血清素耗尽 / 地位警报\n  - `ACTION:` PROTOCOL: STRUCTURAL_ALIGNMENT / POSTURE_FIX\n\n- `INPUT_SIGNAL:` 季节性抑郁 / 低能量\n  - `SYSTEM_STATE:` 光信号不足\n  - `ACTION:` PROTOCOL: SOLAR_LOADING(晨阳)\n\n- `INPUT_SIGNAL:` 易激肠 / 情绪波动\n  - `SYSTEM_STATE:` 肠脑数据链路损坏\n  - `ACTION:` PROTOCOL: MICROBIOME_RELOAD(益生菌)\n\n---\n\n## [ HARDWARE_VALIDATION ]\n\nMETRIC: 深睡质量 + 强迫性思维(反刍)的减少。\n`STATUS: System Stability Confirmed. Serotonin Stack Active.`\n\n---\n\n> [ FINALIZE_ANALYSIS ]\n> 血清素是你的内在锚。管理它,你从混乱寻求外部认可的状态过渡到内在不可动摇的状态,成为具有高处理能力的自治节点。\n"
+    },
+    "nervous-system-ping-latency": {
+      "title": "超越脉搏:你的神经系统在延迟吗?",
+      "subtitle": "HRV 作为系统 ping —— 诊断并降低自主延迟",
+      "description": "你的自主神经系统有 ping rate。高 HRV = 低延迟,快速恢复。低 HRV = 生物 packet loss。ONDA latency audit 使用共振呼吸与 VNS 重写网络协议。",
+      "imageAlt": "带 HRV 波形的神经网络头部:LATENCY HIGH、LATENCY LOW 15ms、PING_RATE ANALYZING、PACKET_LOSS。神经系统延迟审计可视化。ONDA Life 生物反馈协议。",
+      "imageTitle": "[ LATENCY_AUDIT ] — PING_RATE: ANALYZING — LATENCY: LOW — 15ms — PACKET_LOSS: ZERO。",
+      "imageCaption": "[ LATENCY_AUDIT ] — 神经 ping 已测量。LATENCY: LOW — 15ms。PACKET_LOSS: 已消除。系统相干性:活跃。",
+      "neuralSuggestion": {
+        "text": "神经系统延迟已降低。现在审计更深的振荡层——睡眠期间清理神经缓存的胶质淋巴冲洗。",
+        "linkText": "胶质淋巴冲洗协议"
+      },
+      "content": "\n## [ 生命的 PING RATE ]\n\n> 「在任何高负载网络中,延迟(ping)是终极瓶颈。如果延迟太高,数据延迟到达,系统就执行错误命令。\n>\n> 你的自主神经系统(ANS)是身体的内部数据网络。HRV(心率变异性)是连接质量的主要指标。」\n\n---\n\n## 诊断:测量延迟\n\n我们不只数每分钟跳数。我们分析 **R–R 间隔** —— 每次心跳之间的毫秒。这些间隔的模式讲述网络当前状态的整个故事。\n\n**静态信号——高延迟:**\n如果你的心脏像节拍器一样跳动(完美规律),你的 HRV 低。这表明交感神经系统『超频』并主导网络。系统被锁定在单一模式。你的 ping 在飙升。\n\n**动态信号——低延迟:**\n心跳之间的高变异性意味着副交感分支——迷走神经——正在实时调制节律。系统灵活、双向、响应迅速。响应时间已优化。\n\n目标状态不是传统意义上的『冷静』。它是 **相干性**:心脏、肺与大脑以相同频率在相位锁定振荡中运行。这就是从内部看到的全带宽处理。\n\n---\n\n## 网络的两种状态\n\n| 指标 | 高 HRV(低延迟) | 低 HRV(高延迟) |\n|--------|----------------------|----------------------|\n| **ANS 平衡** | 副交感主导 | 交感主导 |\n| **压力恢复** | 快速回到基线 | 持续激活 |\n| **认知切换** | 干净、无残留 | 缓慢、易出错 |\n| **情绪拦截** | 前意识 | 反应后 |\n| **身体恢复** | 加速 downtime | 延长 downtime |\n\n永久交感超驱运行的系统不会突然『崩溃』。它退化。缓慢地,跨越数周与数月——处理速度下降、情绪反应性上升、恢复窗口延长。ping 一直在飙升。\n\n---\n\n## 优化:重写网络协议\n\n降低系统延迟的三层干预:\n\n### 协议 1:共振频率呼吸\n\n> **操作:** 识别你独特的共振频率——通常约 0.1 Hz(每 10 秒一个完整呼吸周期)。以这速度呼吸 10–20 分钟。\n\n**逻辑:** 在共振频率呼吸将心脏振荡、压力反射活动与脑血流同步为单一相干波。心脏与大脑开始在同一时钟运行。HRV 在会话期间急剧上升,基线在数小时后仍保持升高。这不是放松——这是网络同步。\n\n### 协议 2:VNS Patching\n\n> **操作:** 通过持续共振呼吸、冷暴露或哼唱/漱口应用迷走神经刺激——至少 2–3 分钟直接迷走激活。\n\n**逻辑:** VNS 就像为副交感神经系统安装专用高速光纤线。每次会话强化传入迷走通路,永久提升基线迷走张力。在数周持续应用中,静息 HRV 基线上升,交感『恢复斜率』变陡——意味着系统每次迭代后更快退出压力状态。\n\n### 协议 3:压力缓冲(负荷训练)\n\n> **操作:** 在高负荷事件(高强度运动、高风险会议、冲突)后立即进行 HRV 生物反馈会话。训练回到相干性,而不只是相干性本身。\n\n**逻辑:** 定期负荷后恢复训练教你的处理器处理峰值而不会崩溃成永久 panic mode。你训练过渡,而不只是基线。ONDA 应用在这些会话期间实时跟踪 DFA alpha 1——当值超过 1.0 时,系统已完成恢复周期。\n\n---\n\n## Impact Log:系统性能\n\n降低神经系统的 ping 在所有核心指标上提供直接升级:\n\n**认知处理:** 在复杂任务之间更快切换,无『认知残留』——即无法心理上离开先前上下文的能力。每次状态过渡都变得干净。\n\n**情绪稳定:** 在前意识水平拦截冲动反应的能力,在它们劫持系统控制之前。高 HRV 直接关联前额叶皮层覆盖信号的速度。\n\n**身体正常运行时间:** 在剧烈训练或高风险会议后加速恢复(减少 downtime)。身体更快退出分解代谢状态,更早进入修复窗口。\n\n> [ ONDA_STATEMENT ]\n> 「高 HRV 是终极竞争优势。它是对世界做出反应与预测之间的差异。」\n",
+      "howToSteps": [
+        {
+          "name": "共振频率呼吸",
+          "text": "以约 0.1 Hz(每 10 秒一个完整周期)呼吸 10–20 分钟,以将心脏与神经振荡同步为相干性。"
+        },
+        {
+          "name": "VNS Patching",
+          "text": "通过持续共振呼吸、冷暴露或哼唱 2–3 分钟应用迷走神经刺激,以强化副交感通路。"
+        },
+        {
+          "name": "压力缓冲(负荷训练)",
+          "text": "在高负荷事件后立即进行 HRV 生物反馈。监测 DFA alpha 1——当值超过 1.0 时恢复完成。"
+        }
+      ]
+    },
+    "physiological-concentration-flow-state-hardwired": {
+      "title": "生理性专注:Flow State 硬接线",
+      "description": "专注不是意志力。它是去甲肾上腺素、乙酰胆碱与多巴胺对齐创造高强度 flow 与降低认知噪声的生理锁定状态。",
+      "imageAlt": "生理性专注视觉:人类头部、蓝色激光专注束、紫色神经流与锁定的 flow-state 接口。",
+      "imageTitle": "生理性专注 — flow state 硬接线",
+      "imageCaption": "[ FOCUS_LOCKED ]: VISUAL_TUNNELING_ACTIVE. COGNITIVE_LOAD_REDUCED. OUTPUT_COHERENCE_MAXIMIZED.",
+      "neuralSuggestion": {
+        "text": "当内部信号已经干净时,专注会改善。",
+        "linkText": "神经信噪比 →"
+      },
+      "content": "\n## [ STATUS: FOCUS_LOCKED ]\n\n> 「生理性专注:Flow State 硬接线」\n>\n> 在 ONDA 生态系统中,专注不是心理努力。它是机械必然——硬件校准与高强度输出相遇的相位锁定状态。\n>\n> 大多数生产力建议给软件打补丁,忽略过热的硬件。生理性专注是神经化学突出一个任务网络并抑制所有竞争通道的状态。这不是选择。这是 target lock。\n\n---\n\n## 第 1 节:认知三联\n\n要进入 FOCUS_LOCKED 模式,大脑同时部署三个协议。\n\n### 唤醒(去甲肾上腺素)\n\n这是电源。没有唤醒,专注无法稳定。太多则产生噪声与恐慌。\n\n### 选择(乙酰胆碱)\n\n这是镜头。乙酰胆碱标记活动任务网络并提升其信号灵敏度,使其比周围噪声更亮。\n\n### 奖励(多巴胺)\n\n这是坚持的燃料。多巴胺信号系统正朝正确方向移动,防止过早上下文切换。\n\n---\n\n## 第 2 节:弥散注意\n\n当生理学受损时,焦点镜头变得不透明,注意力扩散到整个系统。\n\n### 焦点漂移\n\n光束滑离目标,系统浪费能量回到目标。\n\n### 感官泄漏\n\n空调嗡鸣、椅子不适与每个通知都泄漏到意识中。丘脑门户开得太宽,SNR 崩溃。\n\n### 疲劳墙\n\n仅靠意志力无法保持状态。没有神经化学支持,前额叶皮层在数分钟内烧毁。\n\n> [ SYSTEM_ALERT ]:专注失败常常是硬件不匹配,而不是道德弱点。\n\n---\n\n## 第 3 节:专注的硬接线\n\nONDA 不要求大脑专注。它强制创造专注的条件。\n\n### Visual Tunneling\n\n认知专注跟随视觉专注。把视野限制到屏幕或书,触发去甲肾上腺素与乙酰胆碱的局部释放。\n\n### CO2 Loading\n\n短暂屏息周期支持二氧化碳耐受度与脑血管扩张,把更多氧气送到活跃神经节点。\n\n### 电解质启动\n\n特定的钠钾比例支持深度工作前的传导性。专注是电过程,信号损失必须最小化。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Apple Watch / focus timer\n> METRIC: 持续注意、反应稳定性、主观 flow\n> STATUS: OUTPUT_STABLE\n\n---\n\n## 第 4 节:相干运营商\n\n生理性专注提供可测量的升级。\n\n**时间膨胀:** 任务感觉更快,因为大脑每秒处理更多帧。\n\n**完全沉浸式 Flow:** 操作员消失,成为任务本身。\n\n**毫不费力的输出:** 当系统为共振校准时,复杂问题自行解决。\n\n---\n\n> **ONDA_STATEMENT:** 「专注不是与分心的斗争。它是创造内部信号亮度如此强烈,以至于外部世界褪入阴影。对齐传感器,flow 就成为唯一可能的状态。」\n",
+      "howToSteps": [
+        {
+          "name": "Visual Tunneling 设置",
+          "text": "选择单一任务并移除外围视觉杂乱。仅保留活动屏幕或页面在视野中 25 分钟,触发局部 focus lock。"
+        },
+        {
+          "name": "CO2 耐受度训练",
+          "text": "缓慢鼻吸气,然后短暂暂停后呼气。重复 3 至 5 分钟以减少呼吸紧迫感并改善任务稳定性。"
+        },
+        {
+          "name": "电解质启动",
+          "text": "在深度工作前有意识地补水,确保钠与钾摄入充足。稳定的传导性支持更干净的认知输出。"
+        }
+      ]
+    },
+    "neural-signal-to-noise-cleaning-system-channel": {
+      "title": "神经信噪比:清理系统通道",
+      "description": "你的大脑是生物电收发器。降低神经噪声改善专注、减少认知负荷、恢复高保真思维。",
+      "imageAlt": "神经信噪比插图:人形、紫色干扰、青色信号波与干净通道接口。",
+      "imageTitle": "神经信噪比 — 清理系统通道",
+      "imageCaption": "[ SIGNAL_STABILIZED ]: ACTIVE NOISE CANCELLATION. PRECISION_COHERENCE: HIGH. COGNITIVE_STATIC: REDUCED.",
+      "neuralSuggestion": {
+        "text": "干净信号改善内部传感的精度。",
+        "linkText": "Interoceptive Precision →"
+      },
+      "content": "\n## [ STATUS: SIGNAL_STABILIZED ]\n\n> 「神经信噪比:清理系统通道」\n>\n> 在无线电工程与音频处理中,信噪比(SNR)决定数据传输质量。如果背景噪声太强,有用信息被掩埋,完整性丧失。\n>\n> 你的大脑是生物电收发器。有用信号——思想、专注或创造性洞察——不断与神经白噪声竞争。该噪声由混乱放电、神经炎症、电解质失衡与兴奋性神经递质过量产生。SNR 越低,大脑浪费在仅仅听到自己上的能量越多。\n\n---\n\n## 第 1 节:阻尼系统\n\n在 ONDA 架构中,降噪层是多级过滤器。\n\n### 抑制缓冲(GABA)\n\nGABA 是主要抑制性神经递质——系统的降噪器。它在多余电放电变成信息碎片之前接地。当 GABA 张力低时,通道充满静电。\n\n### 丘脑门\n\n丘脑作为网络网关运作,决定哪些信号值得皮层,哪些应作为背景静电丢弃。调谐良好的门保留有用流并阻塞垃圾。\n\n### Alpha-Shield\n\nAlpha 节律(8–12 Hz)作为空闲频率运作,主动抑制不相关的感官活动。它为专注创造干净画布,让皮层只在重要的地方花费计算。\n\n---\n\n## 第 2 节:随机共振\n\n当 SNR 降到关键水平时,系统进入 **随机共振**——噪声开始主导控制。\n\n### 认知静电\n\n思维不受控跳跃的脑雾状态。试图集中精神感觉像在雷暴中调谐收音机。\n\n### Jitter\n\n信号不稳定。你能保持注意 5 秒,然后系统因相邻神经回路中的虚假触发而重置。\n\n### 能量泄漏\n\n大脑消耗多达 20% 的身体能量。在低 SNR 下,这能量大部分作为热量浪费——产生无计算的无用电活动。\n\n> [ SYSTEM_ALERT ]:低 SNR 不意味着低智力。它意味着通道被干扰过载。\n\n---\n\n## 第 3 节:主动降噪\n\nONDA 通过生物过滤算法提升 SNR。\n\n### 抑制调谐\n\n深呼气与特定视觉模式刺激迷走神经,后者实时抽吸 GABA 系统并抑制神经噪声。\n\n### 感官门控\n\n我们限制传入数据流。系统学会关闭端口、降低 CPU 负载、为内部计算清理通道。\n\n### 频率锁定\n\n把大脑切换到 Alpha 状态作为带通滤波器:目标频率通过,焦虑的高频 beta 噪声被切断。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Apple Watch / HRV Monitor\n> METRIC: Alpha 相干性、HRV、主观专注\n> STATUS: CLEAN_CHANNEL\n\n---\n\n## 第 4 节:高保真认知\n\n优化神经 SNR 提供可测量的升级。\n\n**深度专注:** 复杂逻辑链更易维持,因为信号通过干净通道传输。\n\n**降低认知负荷:** 同样任务以更少能量执行。处理器不再过热。\n\n**创造性清晰度:** 在清理通道的寂静中,微妙的直觉信号再次变得可听。\n\n---\n\n> **ONDA_STATEMENT:** 「天才不是信号的力量。天才是信号响起的寂静。清除通道中的干扰,你思想的真实架构就会显现。」\n",
+      "howToSteps": [
+        {
+          "name": "抑制调谐呼吸",
+          "text": "进行 4–6 次缓慢呼气,呼气比吸气更长。注意身体如何降挡,精神通道变得不那么拥堵。"
+        },
+        {
+          "name": "感官门控重置",
+          "text": "10 分钟内移除一个活动输入流:通知、背景音频或视觉杂乱。观察当噪声底降低时多少信号回归。"
+        },
+        {
+          "name": "Alpha 状态锁定",
+          "text": "安静坐着,放松眼睛,使用缓慢鼻节律 3–5 分钟。目标不是睡眠——而是降低高频 beta 噪声并增加干净专注。"
+        }
+      ]
     }
   },
   "detail": {
