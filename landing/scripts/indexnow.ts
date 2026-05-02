@@ -29,6 +29,8 @@ const KEY = '1918e61cfd9da62111b3ad204c79f12e'
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`
 const ENDPOINT = 'https://api.indexnow.org/indexnow'
 const BATCH_SIZE = 10000 // IndexNow per-request URL limit
+const FETCH_TIMEOUT_MS = 15000 // hard ceiling per batch; never let a hanging
+//                                socket block the deploy pipeline
 
 if (process.env.INDEXNOW_DISABLED === '1') {
   console.log('[indexnow] disabled via INDEXNOW_DISABLED=1, skipping')
@@ -89,11 +91,15 @@ for (let i = 0; i < changed.length; i += BATCH_SIZE) {
     keyLocation: KEY_LOCATION,
     urlList: batch,
   })
+  // AbortController guard so a hanging socket can never block the deploy.
+  const ctl = new AbortController()
+  const timer = setTimeout(() => ctl.abort(), FETCH_TIMEOUT_MS)
   try {
     const res = await fetch(ENDPOINT, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json; charset=utf-8' },
       body,
+      signal: ctl.signal,
     })
     // 200 = accepted, 202 = accepted but processing, 422 = unprocessable
     // (e.g. unknown URLs), 429 = rate limit, 4xx = client error.
@@ -105,7 +111,11 @@ for (let i = 0; i < changed.length; i += BATCH_SIZE) {
       console.warn(`[indexnow] batch ${i / BATCH_SIZE + 1} failed: ${res.status} ${text.slice(0, 200)}`)
     }
   } catch (err) {
-    console.warn(`[indexnow] batch ${i / BATCH_SIZE + 1} network error:`, (err as Error).message)
+    const e = err as Error
+    const msg = e.name === 'AbortError' ? `timed out after ${FETCH_TIMEOUT_MS}ms` : e.message
+    console.warn(`[indexnow] batch ${i / BATCH_SIZE + 1} network error: ${msg}`)
+  } finally {
+    clearTimeout(timer)
   }
 }
 
