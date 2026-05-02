@@ -631,6 +631,106 @@
           "text": "在高强度训练周期内整合 BPC-157 / TB-500 协议。"
         }
       ]
+    },
+    "chm-continuous-hormone-monitoring": {
+      "title": "CHM:连续激素监测",
+      "description": "你内部化学的实时流:从静态血检快照到带实时皮质醇与激素追踪的动态内分泌仪表盘。",
+      "imageAlt": "连续激素监测与 CHM 生物黑客:皮质醇追踪、睾酮优化。",
+      "imageTitle": "[HORMONE_STREAM_ACTIVE]:实时捕获内分泌数据以消除代谢盲点。",
+      "neuralSuggestion": {
+        "text": "对于在症状出现前预测异常的生物标志物分析,见 AI Biomarker Tracking。",
+        "linkText": "AI Biomarker Tracking: Predictive"
+      },
+      "content": "\n## [ CHM: CONTINUOUS_HORMONE_MONITORING ]\n\n> 「传统医学每六个月通过一次『快照』评估你的激素健康。在 ONDA 模型中,这相当于试图通过一张截图理解复杂的软件架构。CHM(连续激素监测)是你内部化学的实时流。\n>\n> 你的睾酮、皮质醇与孕酮水平不是常数;它们是波动变量。它们对每封邮件、每次锻炼、每个睡眠阶段做出反应。理解它们的动态意味着以百分点级精度管理你的能量。我们停止猜测『为什么我累』,开始实时看到系统电压下降。」\n\n---\n\n## [ 第 1 节:皮质醇——系统压力图 ]\n\n连续皮质醇监测使我们能检测『隐性能量泄漏』。如果到傍晚你的图没有下降,你的生物计算机正以过热模式运行,烧穿神经资源并阻断脂肪分解。CHM 补丁让你识别压力从适应性(有益)转向破坏性的确切时刻。\n\n---\n\n## [ 第 2 节:睾酮与周期性输出 ]\n\n无论男女,激素周期决定认知带宽。实时监测让你能在激素峰值窗口安排『高强度任务』,在水平下降时切换至『深度恢复』。这是生物节律的终极优化:让工作量与系统的化学容量对齐。\n\n---\n\n## [ EXECUTION_PROTOCOLS ]\n\n### PROTOCOL_01 > 压力反应校准(CORTISOL_SYNC)\n\n> **The Hack:** 使用 CHM 传感器(如 Know Labs 原型或 2026 代生物传感器)将皮质醇峰值与日常压力源交叉参考。\n>\n> **逻辑:** 识别引起异常压力激增的特定触发因素。这允许在检测到关键峰值时立即部署 Vagus Reset 协议。\n\n### PROTOCOL_02 > 表现窗口优化\n\n> **The Hack:** 将任务日历与追踪器捕获的游离睾酮/雌激素峰值水平同步。\n>\n> **逻辑:** 在最大激素支持期间执行最具挑战性的战略目标。这降低认知摩擦并预防倦怠。\n\n### PROTOCOL_03 > 激素崩溃预防\n\n> **The Hack:** 配置自动系统通知,当激素水平下降到基线阈值以下时触发。\n>\n> **逻辑:** 在身体疲惫之前主动减少负荷。在距离 Emergency Shutdown 一步之遥处停止系统。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> PRIMARY_DEVICE: [CHM_PATCH: PROTOTYPE_X / BIOSENSOR_GEN3]\n> METRIC: 游离激素指数。激素波动的 24 小时动态图。\n> SECONDARY_DEVICE: [SYSTEM_DASHBOARD: ONDA_APP_INTEGRATION]\n> METRIC: 关联评分。你的行为(营养、睡眠、工作)与最佳激素特征的契合程度。\n> SYSTEM_DATA: [BIO_MARKERS: SALIVA_STEROID_CONFIRMATION]\n> METRIC: 通过唾液周期性验证以校准可穿戴传感器精度。\n> STATUS: ENDOCRINE_DASHBOARD_STABLE.\n\n---\n\n## [ FINALIZE_ANALYSIS ]\n\nSystem Visibility: Absolute.\nControl Level: Operator.\n",
+      "howToSteps": [
+        {
+          "name": "压力反应校准(Cortisol Sync)",
+          "text": "使用 CHM 传感器(如 Know Labs 原型或 2026 代生物传感器)将皮质醇峰值与日常压力源交叉参考。"
+        },
+        {
+          "name": "表现窗口优化",
+          "text": "将任务日历与追踪器捕获的游离睾酮/雌激素峰值水平同步。"
+        },
+        {
+          "name": "激素崩溃预防",
+          "text": "配置自动系统通知,当激素水平下降到基线阈值以下时触发。"
+        }
+      ]
+    },
+    "glymphatic-flush-clearing-neural-cache": {
+      "title": "Glymphatic Flush:清理神经缓存",
+      "description": "深睡期间大脑的『缓存清理』:为 β-淀粉样蛋白清除与神经清晰度优化胶质淋巴通路。",
+      "imageAlt": "胶质淋巴系统冲洗与大脑排毒:淀粉样蛋白清除、神经缓存优化。",
+      "imageTitle": "[FLUSH_SEQUENCE_ACTIVE]:优化间质液交换以清除脑组织内的代谢废物。",
+      "neuralSuggestion": {
+        "text": "对于 δ 波的相位锁定声学放大与深睡,见 Phase-Locked Acoustic Sleep。",
+        "linkText": "Phase-Locked Acoustic Sleep"
+      },
+      "content": "\n## [ GLYMPHATIC_FLUSH: CLEARING_NEURAL_CACHE ]\n\n> 「你的大脑没有标准的淋巴系统。相反,它使用胶质淋巴通路——一种仅在深睡模式下激活的专门清除机制。\n>\n> 在 ONDA 模型中,我们把这一过程视为『清理缓存』,在工作周期后删除临时文件。如果清除系统效率低下,蛋白质沉积会在硬件中累积,造成 System Lag(脑雾)与长期神经退化。有效睡眠不仅是休息;这是对中央处理器的加压冲洗。」\n\n---\n\n## [ 第 1 节:意识的水力学 ]\n\n在深睡阶段,大脑间质空间增加多达 60%。这让脑脊液(CSF)冲走代谢残骸,如 β-淀粉样蛋白。该过程的质量取决于身体姿势、颅内温度,以及关机前血液中胰岛素的缺失。\n\n---\n\n## [ 第 2 节:体位引流 ]\n\n研究表明胶质淋巴清除在特定身体方向上最高效。我们把重力当作盟友:正确的倾斜与体位优化液体外流,把普通睡眠变成高科技排毒过程。\n\n---\n\n## [ EXECUTION_PROTOCOLS ]\n\n### PROTOCOL_01 > 重力引流(SLEEP_POSTURE)\n\n> **The Hack:** 以侧卧位睡眠(优选右侧),床头略微抬高(10–15 度)。\n>\n> **逻辑:** 改善静脉回流并促进 CSF 循环。这优化颅内的水力压力以最大化残骸移除。\n\n### PROTOCOL_02 > 热冲洗(SYSTEM COOL-DOWN)\n\n> **The Hack:** 睡前 90 分钟洗热水浴,然后将卧室冷却至 17–18°C(63–65°F)。\n>\n> **逻辑:** 触发核心体温的快速下降。这向系统发出启动 DEEP_MAINTENANCE 模式的信号,激活胶质淋巴泵。\n\n### PROTOCOL_03 > 饮食防火墙(INSULIN_BLOCK)\n\n> **The Hack:** 系统关机前 3–4 小时零热量摄入。\n>\n> **逻辑:** 高胰岛素水平抑制生长激素(GH)的释放,而 GH 是胶质淋巴清除的关键调节器。干净的睡前窗口确保排毒过程不被代谢处理打断。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> PRIMARY_DEVICE: [SLEEP_TRACKER: OURA_GEN3 / DREEM_3 / EIGHT_SLEEP]\n> METRIC: 深睡延迟与时长。我们追踪进入深度阶段的时机——90% 的清除发生于此。\n> SECONDARY_DEVICE: [BIO_SENSOR: CORE_BODY_TEMP_TRACKER]\n> METRIC: 温度下降曲线。体温下降速率作为清除准备的标志。\n> SYSTEM_DATA: [COGNITIVE_TEST: BRAIN_FOG_INDEX]\n> METRIC: 晨间反应速度与数据处理精度(通过 Quantified Mind 等认知堆栈)。\n> STATUS: NEURAL_CLARITY_VERIFIED.\n\n---\n\n## [ FINALIZE_ANALYSIS ]\n\nSystem Maintenance: Complete.\nNeural Debris: Removed.\n",
+      "howToSteps": [
+        {
+          "name": "重力引流(Sleep Posture)",
+          "text": "以侧卧位睡眠(优选右侧),床头略微抬高(10–15 度)。"
+        },
+        {
+          "name": "热冲洗(System Cool-Down)",
+          "text": "睡前 90 分钟洗热水浴,然后将卧室冷却至 17–18°C(63–65°F)。"
+        },
+        {
+          "name": "饮食防火墙(Insulin Block)",
+          "text": "系统关机前 3–4 小时零热量摄入。"
+        }
+      ]
+    },
+    "cpg-neural-autopilot": {
+      "title": "CPG:神经自动驾驶",
+      "description": "中枢模式发生器作为运动 ASIC:优化脊髓微控制器以实现毫不费力的运动并夺回心智带宽。",
+      "imageAlt": "中枢模式发生器与 CPG 神经自动驾驶:脊髓运动控制、节律运动生物黑客。",
+      "imageTitle": "[LOW_LEVEL_PROCESSOR_ACTIVE]:把节律性运动任务委托给脊髓 CPG 回路以优化认知带宽。",
+      "neuralSuggestion": {
+        "text": "对于呼吸节律与 5.5 秒相干性,见 Breathwork Command Line Interface。",
+        "linkText": "Breathwork: CLI"
+      },
+      "content": "\n## [ CPG: THE_NEURAL_AUTOPILOT ]\n\n> 「大多数人相信每个动作都由大脑指挥。这是系统级的误解。对于循环活动——走路、跑步、呼吸——你的中枢模式发生器(CPG)主导。这是位于脊髓的自治神经回路,无需大脑皮层持续输入即可生成复杂的节律模式。\n>\n> 在 ONDA 模型中,CPG 是你的集成微控制器(ASIC)。校准好时,运动节能且无缝。由于久坐生活方式或受伤造成错误时,『自动驾驶』出故障,迫使主处理器(大脑)将认知资源浪费在基本机械上。优化你的 CPG 是夺回原始优雅与释放心智带宽的关键。」\n\n---\n\n## [ 第 1 节:硬件节律 ]\n\nCPG 基于神经元间相互抑制的原理工作。这是钟摆或 CPU 时钟发生器的生物学类比。它们让我们能在『后台模式』执行复杂的机械工作。黑入 CPG 让运动员与生物黑客达到『毫不费力运动』状态。\n\n---\n\n## [ 第 2 节:重启模式 ]\n\n现代环境『破坏』CPG 固件。单调的运动与缺乏感官多样性导致节律回路退化。要恢复它们,我们必须输入非标准信号,迫使这些神经回路在新负荷条件下重新校准。\n\n---\n\n## [ EXECUTION_PROTOCOLS ]\n\n### PROTOCOL_01 > CROSS-LATERAL RESET\n\n> **The Hack:** 每天 5 分钟做交叉协调练习(如四肢爬行、Bear Crawl 或 Dead Bug)。\n>\n> **逻辑:** 这些动作启用通过脊髓连接左右半球的古老 CPG 回路。这恢复人类运动的基础固件。\n\n### PROTOCOL_02 > 节律夹带(CADENCE HACK)\n\n> **The Hack:** 走路或跑步时使用具有特定 BPM(120–140)的节拍器或音乐。\n>\n> **逻辑:** 外部声学信号与 CPG 的放电频率同步,降低运动的代谢成本。大脑实际上把控制『卸载』给节律控制器。\n\n### PROTOCOL_03 > SENSORY OVERRIDE\n\n> **The Hack:** 在不平表面(石头、沙、草)上行走或转用赤足/极简鞋。\n>\n> **逻辑:** 不可预测的输入数据迫使 CPG 持续调整模式。这防止系统『卡』在僵硬、易伤的运动周期中。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> PRIMARY_DEVICE: [GAIT_ANALYZER: RUNSCRIBE / GARMIN_DYNAMICS_POD]\n> METRIC: 步态对称与触地时间。评估你的『自动驾驶』平衡运行情况。\n> SECONDARY_DEVICE: [METABOLIC_TRACKER: LUMEN / PNOE]\n> METRIC: 氧经济性。同速下氧消耗的下降是 CPG 优化的直接指标。\n> SYSTEM_DATA: [COGNITIVE_LOAD_ASSESSMENT]\n> METRIC: 运动中解决复杂心智任务的能力。CPG 越高效,大脑可用于思考的资源越多。\n> STATUS: AUTOPILOT_CALIBRATED.\n\n---\n\n## [ FINALIZE_ANALYSIS ]\n\nMovement Efficiency: Optimized.\nSystem Overhead: Reduced.\n",
+      "howToSteps": [
+        {
+          "name": "Cross-Lateral Reset",
+          "text": "每天 5 分钟做交叉协调练习(如四肢爬行、Bear Crawl 或 Dead Bug)。"
+        },
+        {
+          "name": "节律夹带(Cadence Hack)",
+          "text": "走路或跑步时使用具有特定 BPM(120–140)的节拍器或音乐。"
+        },
+        {
+          "name": "Sensory Override",
+          "text": "在不平表面(石头、沙、草)上行走或转用赤足/极简鞋。"
+        }
+      ]
+    },
+    "co2-tolerance-expanding-oxygen-limit": {
+      "title": "CO2 耐受度:扩展氧气极限",
+      "description": "大多数呼吸冲动来自 CO2 敏感性,而非缺氧。训练 Bohr 效应以解锁血红蛋白的『货物』并最大化组织氧合。",
+      "imageAlt": "CO2 耐受度训练与 Bohr 效应生物黑客:氧气生物利用度、呼吸效率。",
+      "imageTitle": "[GAS_EXCHANGE_OPTIMIZED]:利用 CO2 作为最大化细胞氧输送的主要催化剂。",
+      "neuralSuggestion": {
+        "text": "对于共振呼吸与 5.5 秒相干性,见 Breathwork Command Line Interface。",
+        "linkText": "Breathwork: CLI"
+      },
+      "content": "\n## [ CO2_TOLERANCE: EXPANDING_THE_OXYGEN_LIMIT ]\n\n> 「大多数人感到呼吸冲动并非因为氧(O₂)不足,而是因为对二氧化碳(CO₂)累积的敏感性。大脑的呼吸中心远在你的氧水平实际触底之前就发出『呼吸!』信号。\n>\n> 在 ONDA 模型中,CO₂ 耐受度是 System Thermostat。如果设得太低,你就一直在『排放』系统(过度呼吸),冲走 CO₂。没有 CO₂,血红蛋白拒绝把氧释放给组织——一个称为 Bohr 效应的生理瓶颈。提升 CO₂ 耐受度就像升级冷却系统,让处理器在不触发误警的情况下运行在峰值速度。」\n\n---\n\n## [ 第 1 节:HEMOGLOBIN LOCK ]\n\n氧通过血红蛋白在血液中运输,就像货物在卡车上一样。但要把货物『卸』到肌肉或大脑,你需要钥匙:二氧化碳。如果系统缺 CO₂,卡车就只是从细胞旁经过。通过训练耐受度,我们教系统保留这把钥匙,解锁隐藏的能量储备。\n\n---\n\n## [ 第 2 节:化学感受器校准 ]\n\n脑干内的感受器是对血液酸化(低 pH)做出反应的传感器。我们可以程序化地改变它们的『激活阈值』。逐步让系统暴露于受控的高碳酸血症应激(高 CO₂),我们重写呼吸中心的软件,使其不易恐慌。\n\n---\n\n## [ EXECUTION_PROTOCOLS ]\n\n### PROTOCOL_01 > BOLT TEST(BODY OXYGEN LEVEL TEST)\n\n> **The Hack:** 正常呼气后,屏住呼吸直到第一次明显的呼吸冲动(不要到绝对极限!)。\n>\n> **逻辑:** 这是你的诊断软件。低于 25 秒表示生物计算机以低效气体交换运行。ONDA 操作员的目标是 40+ 秒。\n\n### PROTOCOL_02 > BOX BREATHING(SYSTEM CALIBRATION)\n\n> **The Hack:** 吸气(4 秒)— 屏息(4 秒)— 呼气(4 秒)— 屏息(4 秒)。重复 10 分钟。\n>\n> **逻辑:** 强制节律性减速提高 CO₂ 分压。这是软校准,训练大脑在更高的『氧合货币』浓度下保持稳定。\n\n### PROTOCOL_03 > APNEA TABLES(STRESS TEST)\n\n> **The Hack:** 一系列屏息练习,休息时间固定且渐进缩短。\n>\n> **逻辑:** 这是 Hardware Stress Test。我们制造渐进 CO₂ 累积的环境,迫使化学感受器适应较低血液 pH 而不触发『System Panic』反应。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> PRIMARY_DEVICE: [SPO2_MONITOR: OXYMETER / APPLE_WATCH / OURA]\n> METRIC: 氧饱和度。屏息期间 O₂ 应保持稳定而 CO₂ 上升——高效适应的标志。\n> SECONDARY_DEVICE: [DASHBOARD: BOLT_SCORE_TRACKER]\n> METRIC: BOLT 分数进展。与系统冷静度与体能耐力直接关联。\n> SYSTEM_DATA: [HRV_DURING_APNEA]\n> METRIC: 屏息期间维持高 HRV。高 HRV = 系统在高 CO₂ 下不进入『Fight or Flight』状态。\n> STATUS: GAS_EXCHANGE_OPTIMIZED.\n\n---\n\n## [ FINALIZE_ANALYSIS ]\n\nCellular Oxygenation: Peak.\nBreathing Efficiency: High.\n",
+      "howToSteps": [
+        {
+          "name": "BOLT Test (Body Oxygen Level Test)",
+          "text": "正常呼气后,屏住呼吸直到第一次明显的呼吸冲动(不要到绝对极限!)。"
+        },
+        {
+          "name": "Box Breathing(系统校准)",
+          "text": "吸气(4 秒)— 屏息(4 秒)— 呼气(4 秒)— 屏息(4 秒)。重复 10 分钟。"
+        },
+        {
+          "name": "Apnea Tables(压力测试)",
+          "text": "一系列屏息练习,休息时间固定且渐进缩短。"
+        }
+      ]
     }
   },
   "detail": {
