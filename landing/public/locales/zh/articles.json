@@ -391,6 +391,106 @@
           "text": "每周日 4 小时无任何数字设备。只做模拟活动(阅读、散步、交谈)。"
         }
       ]
+    },
+    "longevity-hardware-cellular-cleanup": {
+      "title": "Longevity Hardware:Senolytics 与细胞清理序列",
+      "description": "衰老是未修正系统错误的累积。触发自噬与 Senolysis,延长硬件运行寿命。",
+      "imageAlt": "衰老生物黑客与细胞自噬:mTOR 与 AMPK 平衡、sirtuin 激活。细胞清理视觉。",
+      "imageTitle": "[SYSTEM_MAINTENANCE]:启动自噬回收以恢复细胞硬件完整性。",
+      "neuralSuggestion": {
+        "text": "长寿需要能量。用代谢灵活性为未来供能。",
+        "linkText": "代谢灵活性协议"
+      },
+      "content": "\n## [ MAINTENANCE & CLEANUP SEQUENCE ]\n\n> 「衰老不是谜题;它是未修正系统错误的累积。随时间推移,细胞经历『基因组不稳定』并进入称为衰老的状态。这些『僵尸细胞』停止分裂但拒绝死亡,泄漏炎症信号污染相邻健康组织。\n>\n> 在 ONDA 模型中,衰老是 System Maintenance 的失败。要延长硬件运行寿命,必须触发两个关键过程:自噬(自我吞噬/清理)与 Senolysis(对僵尸细胞的定向删除)。是时候从被动修复转向主动系统升级。」\n\n---\n\n## [ SYSTEM LIFESPAN: EXTENDED ]\n\n自噬与 senolytics 是你的细胞清理小队。延长禁食、槲皮素/漆黄素以及兴奋效应应激,共同保护线粒体免受僵尸细胞侵害。\n\n---\n\n## 第 1 节:僵尸细胞问题\n\n细胞衰老是一种走偏的保护机制。当细胞过度受损无法工作时,它本应进入凋亡(程序性死亡)。然而某些细胞徘徊不去,分泌称为 SASP 的『毒性鸡尾酒』。这制造系统性『噪声』(炎症),加速整个 CPU 与电网的衰老。\n\n---\n\n## 第 2 节:自噬——回收脚本\n\n自噬是身体内部的回收程序。在营养匮乏期间,细胞开始分解旧的、错误折叠的蛋白质和受损的细胞器以创造新能量。这种『深度清理』对维护线粒体健康与防止生物『垃圾数据』堆积至关重要。\n\n---\n\n## 第 4 节:Longevity 固件升级\n\n### 协议 1:3 天 System Flush(延长禁食)\n\n> **The Hack:** 每季度一次 36–72 小时的水禁食。\n\n**逻辑:** 这最大化 AMPK 通路并触发大规模自噬。这是免疫系统的终极『重置按钮』,清除受损白细胞并刺激高性能新细胞的生成。\n\n### 协议 2:天然 senolytics(槲皮素/漆黄素补丁)\n\n> **The Hack:** 大量摄入草莓(漆黄素)与刺山柑或红洋葱(槲皮素)。\n\n**逻辑:** 这些植物化合物作为『定向删除工具』。它们选择性地诱导衰老细胞凋亡,而不触动健康细胞。把它当作组织的『恶意软件扫描器』。\n\n### 协议 3:兴奋效应应激(桑拿—冷循环)\n\n> **The Hack:** 20 分钟高温(桑拿),紧接 3 分钟冷暴露。\n\n**逻辑:** 这触发『热休克蛋白』与『冷休克蛋白』。这些分子伴侣进入蛋白质『代码』,帮助它们正确折叠并防止导致神经退行性疾病的『位腐烂』。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: DNA Methylation Kit\n> METRIC: Epigenetic Aging Rate (DunedinPACE)\n> STATUS: HARDWARE_LIFESPAN_EXTENDED\n",
+      "howToSteps": [
+        {
+          "name": "3 天 System Flush(延长禁食)",
+          "text": "每季度一次 36–72 小时的水禁食。"
+        },
+        {
+          "name": "天然 senolytics(槲皮素/漆黄素补丁)",
+          "text": "大量摄入草莓(漆黄素)与刺山柑或红洋葱(槲皮素)。"
+        },
+        {
+          "name": "兴奋效应应激(桑拿—冷循环)",
+          "text": "20 分钟高温(桑拿),紧接 3 分钟冷暴露。"
+        }
+      ]
+    },
+    "cognitive-architecture-nootropic-stacks": {
+      "title": "认知架构:编程 Nootropic 堆栈",
+      "description": "Nootropics 是你神经递质系统的药理补丁。掌握神经保护、神经传递与脑血流,构建高性能认知堆栈。",
+      "imageAlt": "Nootropic 堆栈与认知架构:大脑优化、神经增强、堆栈集成。",
+      "imageTitle": "[STACK_ACTIVE]:通过定向神经化学优化神经带宽与突触精度。",
+      "neuralSuggestion": {
+        "text": "没有控制的架构毫无用处。安装 Attentional Firewall。",
+        "linkText": "数字痴呆:Attentional Firewall"
+      },
+      "content": "\n## [ ANALYZING CHEMICAL LOGIC ]\n\n> 「Nootropics 不是魔法;它们是你神经递质系统的药理补丁。在 ONDA 模型中,这是『内存管理』。理解特定化合物的半衰期与受体亲和力,你可以优化大脑处理速度与记忆保留,而不触发系统崩溃。\n>\n> 要构建稳定堆栈,必须解决三个变量:神经保护、神经传递与脑血流。这是高性能认知架构的蓝图。」\n\n---\n\n## [ 第 1 节:乙酰胆碱上传 ]\n\n乙酰胆碱是执行功能、专注与记忆编码的主要神经递质。技术上讲,它决定大脑的『写入速度』。大多数认知滞后由胆碱(乙酰胆碱原料)耗尽引起。给系统提供高生物利用度的前体,可确保神经回路有必要资源支持神经可塑性。\n\n---\n\n## [ 第 2 节:平滑信号(Alpha 波)]\n\n高性能状态常因『系统噪声』——焦虑或过度刺激——而失败。完美堆栈不只踩油门;它还稳定信号。使用提升 Alpha 波的化合物,让大脑在保持强烈专注的同时进入『放松警觉』状态,防止杏仁核劫持你的认知资源。\n\n---\n\n## [ 第 3 节:神经化学协议 ]\n\n### PROTOCOL_01 > 『Focus』基线(咖啡因/茶氨酸)\n\n> **The Hack:** 1:2 比例的咖啡因(100 mg)与 L-茶氨酸(200 mg)。\n>\n> **逻辑:** 咖啡因提升多巴胺并阻断腺苷,但产生『抖动』(系统噪声)。L-茶氨酸穿过血脑屏障提升 Alpha 波活动,平滑刺激效应。这是消除咖啡因崩溃与抖动的标准补丁。\n\n### PROTOCOL_02 > 『Memory Encoder』(胆碱能堆栈)\n\n> **The Hack:** 300 mg α-GPC 搭配 150 mg 假马齿苋(Bacopa Monnieri)。\n>\n> **逻辑:** α-GPC 提供乙酰胆碱合成所需的胆碱。Bacopa Monnieri 通过促进神经末梢(树突)生长,上调神经系统通信速度。这是记忆的长期『固件更新』。\n\n### PROTOCOL_03 > 『Recovery』循环(L-苏糖酸镁)\n\n> **The Hack:** 睡前 144 mg 元素镁,以 L-苏糖酸形式。\n\n> **逻辑:** L-苏糖酸镁是唯一能有效穿过血脑屏障的镁形式。它增加突触密度并重置受体灵敏度,确保你的硬件为次日的高负荷处理做好准备。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Cognitive Testing Apps\n> METRIC: 工作记忆与反应时间\n> STATUS: PATCH_SUCCESSFUL\n",
+      "howToSteps": [
+        {
+          "name": "『Focus』基线(咖啡因/茶氨酸)",
+          "text": "1:2 比例的咖啡因(100 mg)与 L-茶氨酸(200 mg)。"
+        },
+        {
+          "name": "『Memory Encoder』(胆碱能堆栈)",
+          "text": "300 mg α-GPC 搭配 150 mg 假马齿苋(Bacopa Monnieri)。"
+        },
+        {
+          "name": "『Recovery』循环(L-苏糖酸镁)",
+          "text": "睡前 144 mg 元素镁,以 L-苏糖酸形式。"
+        }
+      ]
+    },
+    "mitochondrial-biogenesis-cellular-power-grid": {
+      "title": "细胞电网:工程线粒体生物发生",
+      "description": "线粒体是细胞电厂。触发线粒体生物发生,创造新的高密度动力单元,提升整体功率。",
+      "imageAlt": "线粒体生物发生与细胞电网:ATP 合成、耐力生物黑客。能量优化。",
+      "imageTitle": "[GRID_EXPANSION]:增加线粒体密度以扩展系统能量产出。",
+      "neuralSuggestion": {
+        "text": "电力需要稳定时钟。用 Circadian Reset 同步你的能量周期。",
+        "linkText": "Circadian Reset 协议"
+      },
+      "content": "\n## [ ANALYZING POWER INFRASTRUCTURE ]\n\n> 「你的线粒体是负责生产 ATP 的细胞电厂——生物硬件的通用能量货币。大多数慢性系统滞后并非软件问题,而是受损、低效线粒体造成的『电网』故障。\n>\n> 要优化输出,必须触发线粒体生物发生:在回收旧单元的同时创造新的高密度动力单元的过程。这是提升整体功率的方法。」\n\n---\n\n## [ 第 1 节:ATP 与电压差 ]\n\n人体机器中的能量是电势的问题。线粒体通过将质子泵过膜来产生 ATP,创造驱动细胞工作的『电压』。当线粒体『漏电』或稀疏时,系统会经历断电——脑雾、疲劳和恢复缓慢。增加线粒体密度,实际上提升了系统应对体力与认知任务的『RAM』。\n\n---\n\n## [ 第 2 节:PGC-1α 主开关 ]\n\n构建新线粒体的主要命令是 PGC-1α 蛋白的激活。这是线粒体生物发生的『主开关』。在 ONDA 模型中,PGC-1α 由特定应激源触发,这些信号告诉硬件扩展其能量容量。没有这些信号,系统就停留在低功耗『传统』状态。\n\n---\n\n## [ 第 3 节:电网协议 ]\n\n### PROTOCOL_01 > 热冲击(线粒体刺激)\n\n> **The Hack:** 高温桑拿(80°C+),每周 3 次,每次 20 分钟。\n>\n> **逻辑:** 热应激触发『热休克蛋白』,迫使线粒体更高效地处理热能。这一急性应激上调 PGC-1α,导致肌肉与脑组织中动力单元数量增加。\n\n### PROTOCOL_02 > 光子充电(红光疗法)\n\n> **The Hack:** 每天 10 分钟暴露于 660nm(红)与 850nm(近红外)光。\n>\n> **逻辑:** 近红外光穿透皮肤并被线粒体中的细胞色素 c 氧化酶吸收。这『启动』ATP 生产周期至高速并降低氧化压力,有效清除细胞引擎上的『煤烟』。\n\n### PROTOCOL_03 > 『NAD+』燃料电池(分子修复)\n\n> **The Hack:** 补充 NAD+ 前体或进行高强度间歇训练(HIIT)。\n>\n> **逻辑:** NAD+ 是能量传递的关键辅酶。NAD+ 水平低意味着线粒体无法高效处理燃料。HIIT 制造巨大的『能量负债』,迫使身体回收旧线粒体(自噬)并构建更新、更有韧性的电网。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: VO2 Max 面罩\n> METRIC: 峰值氧消耗量\n> STATUS: WATTAGE_INCREASED\n",
+      "howToSteps": [
+        {
+          "name": "热冲击(线粒体刺激)",
+          "text": "高温桑拿(80°C+),每周 3 次,每次 20 分钟。"
+        },
+        {
+          "name": "光子充电(红光疗法)",
+          "text": "每天 10 分钟暴露于 660nm(红)与 850nm(近红外)光。"
+        },
+        {
+          "name": "『NAD+』燃料电池(分子修复)",
+          "text": "补充 NAD+ 前体或进行高强度间歇训练(HIIT)。"
+        }
+      ]
+    },
+    "circadian-lighting-dark-therapy": {
+      "title": "信号稳定性:昼夜节律照明与黑暗疗法",
+      "description": "光是生物时钟的主要编程语言。掌握 Circadian Lighting 与 Dark Therapy,恢复激素完整性并消除光子噪声。",
+      "imageAlt": "黑暗疗法与昼夜节律照明:褪黑素合成、蓝光阻断。光子剥夺。",
+      "imageTitle": "[DARK_MODE_ACTIVE]:通过绝对光子剥夺触发内源性褪黑素合成。",
+      "neuralSuggestion": {
+        "text": "环境就是你的操作系统。用 Circadian Reset Guide 掌握基础。",
+        "linkText": "Circadian Reset 协议"
+      },
+      "content": "\n## [ CALIBRATING OPTICAL INPUTS ]\n\n> 「光是生物时钟的主要编程语言。眼睛不只是视觉的相机;它们是同步全身每个细胞过程的光子数据端口。\n>\n> 在 ONDA 模型中,『信号稳定性』就是管理光的光谱质量。现代环境充满『光子噪声』(夜间蓝光),它腐蚀你的激素代码。要恢复系统完整性,必须掌握昼夜节律照明与 Dark Therapy 的艺术。」\n\n---\n\n## [ 第 1 节:光感受器缺口 ]\n\n视网膜内有一组专门的感受器(mRGCs)检测蓝光,向视交叉上核(SCN)——CPU 的主时钟——发送信号。日落后这些感受器被高频蓝光击中时,系统无法启动 MELATONIN_UPLOAD 序列。这导致碎片化睡眠与系统性『时钟漂移』。\n\n---\n\n## [ 第 2 节:Dark Therapy——系统冷却 ]\n\nDark Therapy 是有意限制短波长光,以实现完整的神经恢复。在傍晚创造『光子防火墙』,保护大脑通过 Glymphatic System 清除代谢废物的能力。没有真正的生物黑暗时段,硬件永远无法完全进入『深度睡眠』模式。\n\n---\n\n## [ 第 3 节:照明协议 ]\n\n### PROTOCOL_01 > 光子锚(晨间 Lux)\n\n> **The Hack:** 醒来 30 分钟内暴露于 10,000+ LUX 自然阳光。\n>\n> **逻辑:** 这触发高振幅皮质醇峰,设定 14–16 小时后释放褪黑素的定时器。它将『系统时钟』锚定到本地太阳周期,消除午间脑雾。\n\n### PROTOCOL_02 > 光谱转换(傍晚校准)\n\n> **The Hack:** 晚上 8 点后将所有环境照明切换到红/琥珀波长(低于 2000K)。\n>\n> **逻辑:** 红光对褪黑素生成无抑制作用。通过转换光谱,你保持可见度,同时不向 SCN 发送『紧急醒来』信号。\n\n### PROTOCOL_03 > 光子防火墙(蓝光阻断)\n\n> **The Hack:** 日落后使用数字屏幕时戴 100% 蓝光阻断眼镜(橙色镜片)。\n>\n> **逻辑:** 这过滤掉抑制褪黑素的特定 450–480nm 频率。它允许『数字输入』,同时维持『激素完整性』,在现代世界与古老生物学之间架起软件桥梁。\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Lux Meter / Spectrometer\n> METRIC: Melanopic Lux < 10(日落后)\n> STATUS: SIGNAL_NOISE_REDUCED\n",
+      "howToSteps": [
+        {
+          "name": "光子锚(晨间 Lux)",
+          "text": "醒来 30 分钟内暴露于 10,000+ LUX 自然阳光。"
+        },
+        {
+          "name": "光谱转换(傍晚校准)",
+          "text": "晚上 8 点后将所有环境照明切换到红/琥珀波长(低于 2000K)。"
+        },
+        {
+          "name": "光子防火墙(蓝光阻断)",
+          "text": "日落后使用数字屏幕时戴 100% 蓝光阻断眼镜(橙色镜片)。"
+        }
+      ]
     }
   },
   "detail": {
