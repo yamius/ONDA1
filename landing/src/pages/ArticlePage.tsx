@@ -9,6 +9,7 @@ import { getArticleBySlug } from '../data/articles'
 import { glossaryTerms } from '../data/glossary'
 import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
+import { ARTICLE_DATES } from '../data/article-dates.generated'
 import { langFromPath } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
@@ -312,6 +313,7 @@ export function ArticlePage() {
     const removeLd = (id: string) =>
       document.querySelector(`script[data-ld="${id}"]`)?.remove()
 
+    const dateInfo = ARTICLE_DATES[article.slug]
     const articleLd = {
       '@context': 'https://schema.org',
       '@type': 'Article',
@@ -322,6 +324,12 @@ export function ArticlePage() {
       mainEntityOfPage: url,
       inLanguage: lang,
       articleSection: article.category,
+      ...(dateInfo
+        ? {
+            datePublished: dateInfo.published,
+            dateModified: dateInfo.modified,
+          }
+        : {}),
       author: {
         '@type': 'Organization',
         name: 'ONDA Life',
@@ -338,6 +346,11 @@ export function ArticlePage() {
       },
     }
     setLd('article', articleLd)
+    setMeta('author', 'ONDA Life')
+    if (dateInfo) {
+      setMeta('article:published_time', dateInfo.published, true)
+      setMeta('article:modified_time', dateInfo.modified, true)
+    }
 
     const breadcrumbLd = {
       '@context': 'https://schema.org',

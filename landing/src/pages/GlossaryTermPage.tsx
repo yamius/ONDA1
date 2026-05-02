@@ -7,6 +7,7 @@ import rehypeSlug from 'rehype-slug'
 import { getTermBySlug, glossaryTerms } from '../data/glossary'
 import { injectGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
+import { ARTICLE_DATES } from '../data/article-dates.generated'
 import { getArticlesForTerm } from '../data/articles'
 import { langFromPath } from '../i18n'
 
@@ -70,6 +71,7 @@ export function GlossaryTermPage() {
     const removeLd = (id: string) =>
       document.querySelector(`script[data-ld="${id}"]`)?.remove()
 
+    const glossaryDates = ARTICLE_DATES.__glossary
     const definedTermLd = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTerm',
@@ -77,6 +79,12 @@ export function GlossaryTermPage() {
       description: tShortDescription,
       url,
       inLanguage: lang,
+      ...(glossaryDates
+        ? {
+            datePublished: glossaryDates.published,
+            dateModified: glossaryDates.modified,
+          }
+        : {}),
       inDefinedTermSet: {
         '@type': 'DefinedTermSet',
         name: 'ONDA Life Glossary',
@@ -84,6 +92,11 @@ export function GlossaryTermPage() {
       },
     }
     setLd('term', definedTermLd)
+    setMeta('author', 'ONDA Life')
+    if (glossaryDates) {
+      setMeta('article:published_time', glossaryDates.published, true)
+      setMeta('article:modified_time', glossaryDates.modified, true)
+    }
 
     const breadcrumbLd = {
       '@context': 'https://schema.org',
