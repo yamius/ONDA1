@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { levelsData } from '../data/levels'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
 import { langFromPath, localizedPathFor, levelPathFor } from '../i18n'
-
+import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 
@@ -61,6 +61,7 @@ export function LevelPage() {
       setMeta('twitter:title', title, true)
       setMeta('twitter:description', tMetaDesc, true)
       setMeta('twitter:image', OG_IMAGE, true)
+    syncOgLocale(lang)
     }
     return () => {
       const homeTitle = tHome('meta.title')

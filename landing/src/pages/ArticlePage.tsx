@@ -8,6 +8,7 @@ import { OptimizedImage } from '../components/OptimizedImage'
 import { getArticleBySlug } from '../data/articles'
 import { glossaryTerms } from '../data/glossary'
 import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
+import { syncOgLocale } from '../utils/ogLocale'
 import { langFromPath } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
@@ -295,6 +296,7 @@ export function ArticlePage() {
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', tDescription, true)
     setMeta('twitter:image', articleImage, true)
+    syncOgLocale(lang)
 
     // --- JSON-LD structured data (Article + BreadcrumbList + optional HowTo) ---
     const setLd = (id: string, payload: object) => {

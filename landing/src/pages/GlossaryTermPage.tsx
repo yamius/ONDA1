@@ -6,6 +6,7 @@ import Markdown from 'react-markdown'
 import rehypeSlug from 'rehype-slug'
 import { getTermBySlug, glossaryTerms } from '../data/glossary'
 import { injectGlossaryLinks } from '../utils/glossaryLinks'
+import { syncOgLocale } from '../utils/ogLocale'
 import { getArticlesForTerm } from '../data/articles'
 import { langFromPath } from '../i18n'
 
@@ -53,6 +54,7 @@ export function GlossaryTermPage() {
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', ogDesc, true)
     setMeta('twitter:image', OG_IMAGE, true)
+    syncOgLocale(lang)
 
     // --- JSON-LD: DefinedTerm + BreadcrumbList ---
     const setLd = (id: string, payload: object) => {

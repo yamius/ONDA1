@@ -6,7 +6,7 @@ import { ArticleReactions, ArticleValidationArrows } from '../components/Article
 import { ProtocolToggle } from '../components/ProtocolToggle'
 import { ARTICLE_PROTOCOL_ORDER } from '../data/protocol-ids'
 import { langFromPath } from '../i18n'
-
+import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
 const DONE_PREFIX = 'md_done_'
 const FINALIZE_PREFIX = 'md_final_'
@@ -337,6 +337,7 @@ export function MdArticlePage() {
     document.title = title
     setMeta('og:title', title, true)
     setMeta('og:url', `${SITE_URL}/articles/${article.slug}`, true)
+    syncOgLocale(lang)
     return () => {
       document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
     }

@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { langFromPath, localizedPathFor } from '../i18n'
+import { syncOgLocale } from '../utils/ogLocale'
 import { useLocation } from 'react-router-dom'
 
 const SITE_URL = 'https://onda-life.com'
@@ -39,6 +40,7 @@ export function AboutPage() {
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', desc, true)
     setMeta('twitter:image', OG_IMAGE, true)
+    syncOgLocale(lang)
     return () => {
       // On SPA nav away, restore home defaults in current language so the next
       // page (which may not set meta) doesn't show stale About copy.

@@ -5,7 +5,7 @@ import { METRIC_DETAILS, type DetailSection } from '../data/bioMetrics'
 import { NotFoundPage } from './NotFoundPage'
 import { appStoreUrl } from '../config/appStore'
 import { langFromPath, localizedPathFor } from '../i18n'
-
+import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
 
 interface TranslatedMetric {
@@ -72,6 +72,7 @@ export function BioMetricPage() {
     setMeta('og:title', title, true)
     setMeta('og:description', desc, true)
     setMeta('og:url', url, true)
+    syncOgLocale(lang)
     let canonical = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')
     if (!canonical) { canonical = document.createElement('link'); canonical.rel = 'canonical'; document.head.appendChild(canonical) }
     canonical.href = url

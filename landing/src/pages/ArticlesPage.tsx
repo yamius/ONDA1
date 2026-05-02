@@ -5,7 +5,7 @@ import { articles } from '../data/articles'
 import { FEATURED_ARTICLE_SLUGS, ARTICLE_CATEGORIES } from '../data/articles-categories'
 import { OptimizedImage } from '../components/OptimizedImage'
 import { langFromPath, homePathFor } from '../i18n'
-
+import { syncOgLocale } from '../utils/ogLocale'
 interface MdArticle {
   slug: string
   filename: string
@@ -106,6 +106,7 @@ export function ArticlesPage() {
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', desc, true)
     setMeta('twitter:image', OG_IMAGE, true)
+    syncOgLocale(lang)
   }, [t, langPrefix])
 
   return (

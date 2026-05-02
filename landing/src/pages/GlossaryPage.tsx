@@ -8,7 +8,7 @@ import {
   GLOSSARY_CATEGORIES,
 } from '../data/glossary-categories'
 import { langFromPath, homePathFor } from '../i18n'
-
+import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 
@@ -42,6 +42,7 @@ export function GlossaryPage() {
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', desc, true)
     setMeta('twitter:image', OG_IMAGE, true)
+    syncOgLocale(lang)
   }, [t, langPrefix])
 
   const [search, setSearch] = useState('')

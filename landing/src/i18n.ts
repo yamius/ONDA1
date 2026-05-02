@@ -77,6 +77,15 @@ export const LANG_LABELS: Record<Lang, string> = {
   zh: 'ZH',
 }
 
+/** OpenGraph locale codes (BCP-47 with underscore). Used in og:locale meta tags. */
+export const OG_LOCALES: Record<Lang, string> = {
+  en: 'en_US',
+  es: 'es_ES',
+  ru: 'ru_RU',
+  uk: 'uk_UA',
+  zh: 'zh_CN',
+}
+
 if (!i18n.isInitialized) {
   void i18n.use(initReactI18next).init({
     lng: 'en',

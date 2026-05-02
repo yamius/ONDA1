@@ -6,6 +6,7 @@ import { PART_SEO } from '../data/part-seo'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
 import { OptimizedImage } from '../components/OptimizedImage'
 import { langFromPath, localizedPathFor, partPathFor, levelPathFor } from '../i18n'
+import { syncOgLocale } from '../utils/ogLocale'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -2036,6 +2037,7 @@ export function PartPage() {
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', desc, true)
     setMeta('twitter:image', OG_IMAGE, true)
+    syncOgLocale(lang)
     // FAQ schema for "People also ask"
     if (part.faq && part.faq.length > 0) {
       const faqSchema = {

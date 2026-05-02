@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { langFromPath } from '../i18n'
-
+import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
 
 function setMeta(name: string, content: string, isProperty = false) {
@@ -31,6 +31,7 @@ export function PrivacyPage() {
     setMeta('og:description', desc, true)
     setMeta('og:url', `${SITE_URL}${langPrefix}/privacy`, true)
     setMeta('og:type', 'website', true)
+    syncOgLocale(lang)
     window.scrollTo({ top: 0 })
   }, [t, langPrefix])
 
