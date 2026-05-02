@@ -5,7 +5,7 @@
 import express from 'express'
 import compression from 'compression'
 import helmet from 'helmet'
-import { join, resolve } from 'path'
+import { join, resolve, sep } from 'path'
 import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, unlinkSync, writeFileSync } from 'fs'
 import { fileURLToPath } from 'url'
 
@@ -503,13 +503,33 @@ app.get('/sw.js', (req, res) => {
   res.sendFile(join(distDir, 'sw.js'))
 })
 
-// 1. Static assets (js, css, images) — HTML served via route below
+// 1. Static assets — fingerprinted JS/CSS/fonts get long immutable cache,
+// non-fingerprinted assets (favicon.png, og images, sitemap.xml, etc.) get
+// a shorter cache + ETag so updates propagate within the hour.
+const ONE_YEAR = 60 * 60 * 24 * 365
+const ONE_HOUR = 60 * 60
 app.use(
   express.static(distDir, {
-    maxAge: '1y',
-    immutable: true,
-    index: false, // disable default index.html so we control SSG routing
-    redirect: false, // no trailing-slash redirect: /articles stays /articles (canonical)
+    index: false,    // SSG router below controls index.html
+    redirect: false, // /articles stays canonical (no trailing slash)
+    etag: true,
+    lastModified: true,
+    setHeaders(res, filePath) {
+      // /assets/* are emitted by Vite with a content hash → safe to cache forever.
+      if (filePath.includes(`${sep}assets${sep}`)) {
+        res.setHeader('Cache-Control', `public, max-age=${ONE_YEAR}, immutable`)
+        return
+      }
+      // Fonts & pre-compressed brotli: also long cache (filename rarely changes).
+      if (/\.(woff2?|ttf|otf|eot|br)$/i.test(filePath)) {
+        res.setHeader('Cache-Control', `public, max-age=${ONE_YEAR}, immutable`)
+        return
+      }
+      // Generated SSG HTML files (in nested dirs) — let HTML cache header take over via SSG router.
+      // Anything else (favicon, og images, sitemap.xml, robots.txt, sw.js, manifest):
+      // moderate cache + revalidation via ETag.
+      res.setHeader('Cache-Control', `public, max-age=${ONE_HOUR}, must-revalidate`)
+    },
   }),
 )
 

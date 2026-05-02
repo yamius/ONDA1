@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { articles } from '../data/articles'
+import { articlesMeta as articles } from '../data/articles/articles-meta.generated'
 import { OptimizedImage } from './OptimizedImage'
 
 function shuffle<T>(arr: T[]): T[] {

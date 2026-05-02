@@ -4,7 +4,7 @@
  */
 import { StaticRouter, Routes, Route, useParams } from 'react-router-dom'
 import { Layout } from './components/Layout'
-import i18n, { langFromPath, SUPPORTED_LANGS, type Lang } from './i18n'
+import i18n, { langFromPath, SUPPORTED_LANGS, type Lang } from './i18n-server'
 import { HomePage } from './pages/HomePage'
 import { AboutPage } from './pages/AboutPage'
 import { GlossaryPage } from './pages/GlossaryPage'

@@ -137,6 +137,20 @@ Preferred communication style: Simple, everyday language.
 
 ---
 
+## Landing Site: Performance Architecture (Sprint 2026-05)
+
+**Main client bundle: 19 KB / 5.5 KB gzip** (was 3.3 MB / 954 KB before sprint).
+
+Two big wins:
+1. **Article body split** — `landing/scripts/articles-meta.ts` runs in the build pipeline (before `tsc -b`) and emits `landing/src/data/articles/articles-meta.generated.ts` (Article minus `content`/`howToSteps`) + `term-articles.generated.ts` (precomputed glossary-term → article-slug map). HomePage's `ArticlesSection`, `ArticlesPage`, `SitemapPage`, `GlossaryTermPage` import from the generated meta. The full `data/articles/index.ts` (with content) stays sync only for `ArticlePage` (lazy chunk on client) and `entry-server.tsx` (build-time SSR).
+
+2. **Per-language i18n lazy-load** — `landing/src/i18n.ts` now initializes i18next with empty resources and exposes `loadLocale(lang)` which fetches `/locales/${lang}/${ns}.json` from the public folder. `main.tsx` awaits the active language (and EN fallback) before `hydrateRoot()` so SSR-translated HTML matches React's first render. Layout's URL-driven language switch awaits `loadLocale` before flipping `i18n.changeLanguage`. SSR uses `landing/src/i18n-server.ts`, which statically imports every `public/locales/**/*.json` and registers them on the shared i18next instance — never reachable from `main.tsx`, so it stays out of the client bundle.
+
+Other sprint changes:
+- `vite.config.ts` — `manualChunks` splits vendor-react / vendor-router / vendor-i18n / vendor-markdown / vendor-supabase / vendor; `cssCodeSplit: true`; `assetsInlineLimit: 2048`. `package.json` build script prefixes every step with `NODE_OPTIONS='--max-old-space-size=4096'`.
+- `landing/scripts/prerender.ts` — JSDOM removed; template pre-split once around `<div id="root"></div>` (`TEMPLATE_HEAD`/`TEMPLATE_TAIL` constants), per-route is string concat. 544 routes prerendered in ~16 s.
+- `landing/server.js` — static middleware sets `max-age=31536000 immutable` for `/assets/*` + fonts, `max-age=3600 must-revalidate` for the rest (incl. `/locales/*`), ETag enabled.
+
 ## Landing Site: Articles System
 
 Полный чеклист добавления новой статьи — в **`.assistant/MODULE_LANDING.md`**, раздел «Чеклист: добавление новой статьи».

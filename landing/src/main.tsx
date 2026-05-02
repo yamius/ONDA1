@@ -3,10 +3,11 @@ import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import { Layout } from './components/Layout'
-import i18n, { langFromPath, SUPPORTED_LANGS } from './i18n'
+import i18n, { langFromPath, loadLocale, SUPPORTED_LANGS } from './i18n'
 
-// Sync language with URL before hydration so first paint matches the prerendered HTML
-void i18n.changeLanguage(langFromPath(window.location.pathname))
+// Resolve language from URL up front so we know which locale chunk to fetch
+// before React renders. We always need EN as the i18next fallback.
+const initialLang = langFromPath(window.location.pathname)
 
 const HomePage           = lazy(() => import('./pages/HomePage').then(m => ({ default: m.HomePage })))
 const AboutPage          = lazy(() => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })))
@@ -102,11 +103,24 @@ const app = (
 )
 
 const container = document.getElementById('root')!
-if (container.hasChildNodes()) {
-  hydrateRoot(container, app)
-} else {
-  createRoot(container).render(app)
-}
+
+// Wait for the active locale (and EN fallback) before hydrating so the React
+// tree's translated text matches the prerendered HTML byte-for-byte. Without
+// this, react-i18next would emit translation keys instead of strings on first
+// render and React would discard the SSR DOM with a hydration mismatch.
+const localeReady = Promise.all(
+  initialLang === 'en' ? [loadLocale('en')] : [loadLocale('en'), loadLocale(initialLang)],
+).then(() => {
+  if (i18n.language !== initialLang) void i18n.changeLanguage(initialLang)
+})
+
+void localeReady.then(() => {
+  if (container.hasChildNodes()) {
+    hydrateRoot(container, app)
+  } else {
+    createRoot(container).render(app)
+  }
+})
 
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   window.addEventListener('load', () => {

@@ -8,7 +8,15 @@ import { getTermBySlug, glossaryTerms } from '../data/glossary'
 import { injectGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
-import { getArticlesForTerm } from '../data/articles'
+import { articlesMeta } from '../data/articles/articles-meta.generated'
+import { termArticleSlugs } from '../data/articles/term-articles.generated'
+
+function getArticlesForTerm(termSlug: string) {
+  const slugs = termArticleSlugs[termSlug] ?? []
+  return slugs
+    .map((s) => articlesMeta.find((a) => a.slug === s))
+    .filter((a): a is NonNullable<typeof a> => a != null)
+}
 import { langFromPath } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
@@ -145,7 +153,7 @@ export function GlossaryTermPage() {
     return <NotFoundPage />
   }
 
-  const relatedArticles = getArticlesForTerm(term.slug, term.title)
+  const relatedArticles = getArticlesForTerm(term.slug)
 
   const relatedTerms = term.relatedSlugs
     ? term.relatedSlugs

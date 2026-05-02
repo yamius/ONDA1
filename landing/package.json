@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/optimize-images.mjs && node scripts/article-dates.mjs && tsc -b && vite build && tsx scripts/prerender.ts",
+    "build": "NODE_OPTIONS='--max-old-space-size=4096' node scripts/optimize-images.mjs && NODE_OPTIONS='--max-old-space-size=4096' node scripts/article-dates.mjs && NODE_OPTIONS='--max-old-space-size=4096' tsx scripts/articles-meta.ts && NODE_OPTIONS='--max-old-space-size=4096' tsc -b && NODE_OPTIONS='--max-old-space-size=4096' vite build && NODE_OPTIONS='--max-old-space-size=4096' tsx scripts/prerender.ts",
     "favicons": "node scripts/generate-favicons.mjs",
     "lint": "eslint .",
     "preview": "vite preview",

@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { articles } from '../data/articles'
+import { articlesMeta as articles } from '../data/articles/articles-meta.generated'
 import { FEATURED_ARTICLE_SLUGS, ARTICLE_CATEGORIES } from '../data/articles-categories'
 import { OptimizedImage } from '../components/OptimizedImage'
 import { langFromPath, homePathFor } from '../i18n'

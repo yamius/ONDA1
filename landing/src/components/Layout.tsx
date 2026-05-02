@@ -2,7 +2,7 @@ import { useState, useEffect, useLayoutEffect, Suspense, useMemo } from 'react'
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { TransitionLink } from './TransitionLink'
-import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, type Lang } from '../i18n'
+import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, loadLocale, type Lang } from '../i18n'
 
 export function Layout() {
   const location = useLocation()
@@ -13,13 +13,17 @@ export function Layout() {
   // Derive language from URL — single source of truth.
   const currentLang: Lang = useMemo(() => langFromPath(location.pathname), [location.pathname])
 
-  // Keep i18n + <html lang> in sync with the URL on every navigation
+  // Keep i18n + <html lang> in sync with the URL on every navigation. Locale
+  // resources are loaded lazily per-language; await the load before flipping
+  // i18next so views don't render translation keys for one frame.
   useLayoutEffect(() => {
-    if (i18n.language !== currentLang) {
-      void i18n.changeLanguage(currentLang)
-    }
     if (typeof document !== 'undefined') {
       document.documentElement.lang = currentLang
+    }
+    if (i18n.language !== currentLang) {
+      void loadLocale(currentLang).then(() => {
+        if (i18n.language !== currentLang) void i18n.changeLanguage(currentLang)
+      })
     }
   }, [currentLang])
 
