@@ -377,6 +377,8 @@ console.log('[prerender] Done')
 
 const { execSync } = await import('child_process')
 execSync('tsx scripts/sitemap.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+// RSS + Atom feeds for aggregators (Bing News, Inoreader, Feedly).
+execSync('tsx scripts/feed.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
 // llms.txt + llms-full.txt for AI search (Perplexity, ChatGPT, Claude).
 execSync('tsx scripts/llms-txt.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
 // IndexNow ping (Bing/Yandex/Seznam/Naver). Skipped automatically when
