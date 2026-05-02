@@ -60,19 +60,22 @@ async function findImages(dir, files = []) {
 /** Walk down the quality ladder until output fits under MAX_KB. */
 async function encodeWebP(pipeline) {
   for (const q of QUALITIES_WEBP) {
-    const buf = await pipeline.clone().webp({ quality: q, effort: 6 }).toBuffer()
+    const buf = await pipeline.clone().webp({ quality: q, effort: 4 }).toBuffer()
     if (buf.length <= MAX_KB * 1024) return { buf, quality: q }
   }
-  const buf = await pipeline.clone().webp({ quality: 38, effort: 6 }).toBuffer()
+  const buf = await pipeline.clone().webp({ quality: 38, effort: 4 }).toBuffer()
   return { buf, quality: 38 }
 }
 
 async function encodeAvif(pipeline) {
+  // effort: 2 is sharp's default and 3-5x faster than effort: 4 with negligible
+  // quality difference at our target file sizes. Higher effort is only worth it
+  // for offline batch encoding, not per-deploy builds.
   for (const q of QUALITIES_AVIF) {
-    const buf = await pipeline.clone().avif({ quality: q, effort: 4 }).toBuffer()
+    const buf = await pipeline.clone().avif({ quality: q, effort: 2 }).toBuffer()
     if (buf.length <= MAX_KB * 1024) return { buf, quality: q }
   }
-  const buf = await pipeline.clone().avif({ quality: 24, effort: 4 }).toBuffer()
+  const buf = await pipeline.clone().avif({ quality: 24, effort: 2 }).toBuffer()
   return { buf, quality: 24 }
 }
 
