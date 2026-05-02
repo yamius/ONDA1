@@ -295,6 +295,95 @@ export function ArticlePage() {
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', tDescription, true)
     setMeta('twitter:image', articleImage, true)
+
+    // --- JSON-LD structured data (Article + BreadcrumbList + optional HowTo) ---
+    const setLd = (id: string, payload: object) => {
+      let el = document.querySelector<HTMLScriptElement>(`script[data-ld="${id}"]`)
+      if (!el) {
+        el = document.createElement('script')
+        el.setAttribute('type', 'application/ld+json')
+        el.setAttribute('data-ld', id)
+        document.head.appendChild(el)
+      }
+      el.textContent = JSON.stringify(payload)
+    }
+    const removeLd = (id: string) =>
+      document.querySelector(`script[data-ld="${id}"]`)?.remove()
+
+    const articleLd = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: tTitle,
+      description: tDescription,
+      image: articleImage,
+      url,
+      mainEntityOfPage: url,
+      inLanguage: lang,
+      articleSection: article.category,
+      author: {
+        '@type': 'Organization',
+        name: 'ONDA Life',
+        url: SITE_URL,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'ONDA Life',
+        url: SITE_URL,
+        logo: {
+          '@type': 'ImageObject',
+          url: `${SITE_URL}/onda-life-logo.png`,
+        },
+      },
+    }
+    setLd('article', articleLd)
+
+    const breadcrumbLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: tArticles('breadcrumb.home', { defaultValue: 'Home' }),
+          item: lang === 'en' ? `${SITE_URL}/` : `${SITE_URL}/${lang}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: tArticles('breadcrumb.current', { defaultValue: 'Articles' }),
+          item: `${SITE_URL}${langPrefix}/articles`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: tTitle,
+          item: url,
+        },
+      ],
+    }
+    setLd('breadcrumb', breadcrumbLd)
+
+    if (tHowToSteps && tHowToSteps.length > 0) {
+      const howToLd = {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: tTitle,
+        description: tDescription,
+        image: articleImage,
+        inLanguage: lang,
+        step: tHowToSteps.map((s, i) => ({
+          '@type': 'HowToStep',
+          position: i + 1,
+          name: s.name,
+          text: s.text,
+          url: s.protocolId ? `${url}#${s.protocolId}` : undefined,
+        })),
+      }
+      setLd('howto', howToLd)
+    } else {
+      removeLd('howto')
+    }
+
     return () => {
       document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
       setMeta('description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
@@ -309,6 +398,9 @@ export function ArticlePage() {
       setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
       setMeta('twitter:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
       setMeta('twitter:image', OG_IMAGE, true)
+      removeLd('article')
+      removeLd('breadcrumb')
+      removeLd('howto')
     }
   }, [article])
 

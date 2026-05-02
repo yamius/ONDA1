@@ -40,7 +40,7 @@ export function GlossaryTermPage() {
   useEffect(() => {
     if (!term) return
     const title = `${tTitle} | ONDA Life Glossary`
-    const url = `${SITE_URL}/glossary/${term.slug}`
+    const url = `${SITE_URL}${langPrefix}/glossary/${term.slug}`
     const ogDesc = `${tTitle} in the ONDA system: ${tShortDescription} Learn how this element affects your biocomputer.`
     document.title = title
     setMeta('description', ogDesc)
@@ -53,6 +53,62 @@ export function GlossaryTermPage() {
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', ogDesc, true)
     setMeta('twitter:image', OG_IMAGE, true)
+
+    // --- JSON-LD: DefinedTerm + BreadcrumbList ---
+    const setLd = (id: string, payload: object) => {
+      let el = document.querySelector<HTMLScriptElement>(`script[data-ld="${id}"]`)
+      if (!el) {
+        el = document.createElement('script')
+        el.setAttribute('type', 'application/ld+json')
+        el.setAttribute('data-ld', id)
+        document.head.appendChild(el)
+      }
+      el.textContent = JSON.stringify(payload)
+    }
+    const removeLd = (id: string) =>
+      document.querySelector(`script[data-ld="${id}"]`)?.remove()
+
+    const definedTermLd = {
+      '@context': 'https://schema.org',
+      '@type': 'DefinedTerm',
+      name: tTitle,
+      description: tShortDescription,
+      url,
+      inLanguage: lang,
+      inDefinedTermSet: {
+        '@type': 'DefinedTermSet',
+        name: 'ONDA Life Glossary',
+        url: `${SITE_URL}${langPrefix}/glossary`,
+      },
+    }
+    setLd('term', definedTermLd)
+
+    const breadcrumbLd = {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: tGloss('breadcrumb.home', { defaultValue: 'Home' }),
+          item: lang === 'en' ? `${SITE_URL}/` : `${SITE_URL}/${lang}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: tGloss('breadcrumb.current', { defaultValue: 'Glossary' }),
+          item: `${SITE_URL}${langPrefix}/glossary`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: tTitle,
+          item: url,
+        },
+      ],
+    }
+    setLd('breadcrumb', breadcrumbLd)
+
     return () => {
       document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
       setMeta('description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
@@ -65,8 +121,10 @@ export function GlossaryTermPage() {
       setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
       setMeta('twitter:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
       setMeta('twitter:image', OG_IMAGE, true)
+      removeLd('term')
+      removeLd('breadcrumb')
     }
-  }, [term, tTitle, tShortDescription])
+  }, [term, tTitle, tShortDescription, lang, langPrefix, tGloss])
 
   if (!term) {
     return <NotFoundPage />
