@@ -79,7 +79,7 @@ export function SitemapPage() {
               {glossaryTerms.map((term) => (
                 <li key={term.slug}>
                   <Link to={`${langPrefix}/glossary/${term.slug}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
-                    {term.title}
+                    {t(`bodies.${term.slug}.title`, { ns: 'glossary', defaultValue: term.title }) as string}
                   </Link>
                 </li>
               ))}
@@ -94,7 +94,7 @@ export function SitemapPage() {
             {articles.map((a) => (
               <li key={a.slug}>
                 <Link to={`${langPrefix}/articles/${a.slug}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
-                  {a.title}
+                  {t(`bodies.${a.slug}.title`, { ns: 'articles', defaultValue: a.title }) as string}
                 </Link>
               </li>
             ))}
@@ -108,7 +108,7 @@ export function SitemapPage() {
             {Object.entries(levelsData).map(([num, level]) => (
               <li key={num}>
                 <Link to={`${langPrefix}/level/${num}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
-                  {t('levelLabel', { n: num, name: level.name })}
+                  {t('levelLabel', { n: num, name: t(`levels.${num}.name`, { ns: 'level', defaultValue: level.name }) as string })}
                 </Link>
               </li>
             ))}
@@ -136,7 +136,7 @@ export function SitemapPage() {
             {Object.values(METRIC_DETAILS).map((m) => (
               <li key={m.key}>
                 <Link to={lang === 'en' ? `/bio/${m.key}` : `/${lang}/bio/${m.key}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
-                  {m.shortTitle}
+                  {t(`metrics.${m.key}.shortTitle`, { ns: 'bio-metric', defaultValue: m.shortTitle }) as string}
                 </Link>
               </li>
             ))}
