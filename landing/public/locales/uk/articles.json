@@ -1632,5 +1632,11 @@
     "backToArticles": "← Назад до статей",
     "relatedGlossaryTerms": "ПОВ’ЯЗАНІ ТЕРМІНИ ГЛОСАРІЯ",
     "browseFullGlossary": "→ Відкрити повний глосарій"
+  },
+  "categories": {
+    "Neural Hardware": "Нейронне залізо",
+    "Biological Software": "Біологічний софт",
+    "OS States": "Стани ОС",
+    "ONDA Protocol": "Протокол ONDA"
   }
 }

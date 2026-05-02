@@ -18,5 +18,11 @@
     "backToArticles": "← Back to Articles",
     "relatedGlossaryTerms": "RELATED GLOSSARY TERMS",
     "browseFullGlossary": "→ Browse full Glossary"
+  },
+  "categories": {
+    "Neural Hardware": "Neural Hardware",
+    "Biological Software": "Biological Software",
+    "OS States": "OS States",
+    "ONDA Protocol": "ONDA Protocol"
   }
 }

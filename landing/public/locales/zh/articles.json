@@ -1633,5 +1633,11 @@
     "backToArticles": "← 返回文章列表",
     "relatedGlossaryTerms": "相关术语",
     "browseFullGlossary": "→ 浏览完整术语表"
+  },
+  "categories": {
+    "Neural Hardware": "神经硬件",
+    "Biological Software": "生物软件",
+    "OS States": "OS 状态",
+    "ONDA Protocol": "ONDA 协议"
   }
 }

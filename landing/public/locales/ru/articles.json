@@ -1632,5 +1632,11 @@
     "backToArticles": "← Назад к статьям",
     "relatedGlossaryTerms": "СВЯЗАННЫЕ ТЕРМИНЫ ГЛОССАРИЯ",
     "browseFullGlossary": "→ Открыть полный глоссарий"
+  },
+  "categories": {
+    "Neural Hardware": "Нейронное железо",
+    "Biological Software": "Биологический софт",
+    "OS States": "Состояния ОС",
+    "ONDA Protocol": "Протокол ONDA"
   }
 }

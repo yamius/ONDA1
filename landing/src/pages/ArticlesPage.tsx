@@ -56,8 +56,8 @@ export function ArticlesPage() {
   const allArticles: ArticleCard[] = useMemo(() => [
     ...articles.map((a) => ({
       slug: a.slug,
-      title: a.title,
-      description: a.description,
+      title: t(`bodies.${a.slug}.title`, { defaultValue: a.title }) as string,
+      description: t(`bodies.${a.slug}.description`, { defaultValue: a.description }) as string,
       category: a.category,
       path: `${langPrefix}/articles/${a.slug}`,
       image: a.image,
@@ -75,7 +75,7 @@ export function ArticlesPage() {
       path: `${langPrefix}/articles/${a.slug}`,
       isMd: true as const,
     })),
-  ], [mdArticles, langPrefix])
+  ], [mdArticles, langPrefix, t])
 
   const filtered = useMemo(() => allArticles.filter((article) => {
     const matchesSearch =
@@ -161,6 +161,7 @@ export function ArticlesPage() {
           {ARTICLE_CATEGORIES.map((cat) => {
             const count = allArticles.filter((a) => a.category === cat).length
             if (count === 0) return null
+            const label = t(`categories.${cat}`, { defaultValue: cat }) as string
             return (
               <button
                 key={cat}
@@ -171,7 +172,7 @@ export function ArticlesPage() {
                     : 'border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
                 }`}
               >
-                {cat} ({count})
+                {label} ({count})
               </button>
             )
           })}
@@ -202,7 +203,7 @@ export function ArticlesPage() {
             <div className="p-6">
               <div className="mb-2 flex items-center justify-between">
                 <span className="rounded-md border border-white/10 bg-white/5 px-3 py-0.5 font-mono text-[10px] text-white/30">
-                  {article.category}
+                  {t(`categories.${article.category}`, { defaultValue: article.category }) as string}
                 </span>
                 <span className="font-mono text-xs text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
                   →
