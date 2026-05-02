@@ -54,6 +54,7 @@ const ALLOWLIST = {
     es: new Set([
       'nav.intro',          // "Intro" is also informal Spanish
       'shop.popular',       // "POPULAR" exists as Spanish word
+      'practices.elemental', // "Elemental" is the same word in Spanish
     ]),
   },
 
