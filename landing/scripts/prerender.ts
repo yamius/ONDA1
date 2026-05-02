@@ -377,3 +377,11 @@ console.log('[prerender] Done')
 
 const { execSync } = await import('child_process')
 execSync('tsx scripts/sitemap.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+// IndexNow ping (Bing/Yandex/Seznam/Naver). Skipped automatically when
+// INDEXNOW_DISABLED=1 or when nothing changed since last submission.
+try {
+  execSync('tsx scripts/indexnow.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+} catch {
+  // Non-fatal: never let IndexNow break the build.
+  console.warn('[prerender] indexnow step failed (non-fatal)')
+}
