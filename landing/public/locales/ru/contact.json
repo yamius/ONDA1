@@ -11,11 +11,11 @@
   "title": "Инициализировать прямой контакт",
   "subtitle": "Нужна техническая поддержка биологического апгрейда? Свяжитесь с ONDA Core Team.",
   "channelsTitle": "КАНАЛЫ СВЯЗИ",
-  "emailLabel": "EMAIL",
+  "emailLabel": "ПОЧТА",
   "communityLabel": "СООБЩЕСТВО",
   "form": {
     "name": "Имя",
-    "email": "Email",
+    "email": "Эл. почта",
     "message": "Сообщение",
     "namePlaceholder": "Ваш идентификатор",
     "emailPlaceholder": "contact@example.com",

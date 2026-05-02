@@ -154,7 +154,7 @@
         "items": [
           { "name": "Reevaluación cognitiva", "text": "Técnica del PFC para amortiguar fisiológicamente la actividad de la amígdala (miedo) y reemplazarla por entusiasmo." },
           { "name": "Bucles de oxitocina", "text": "Gestionar contacto visual y microexpresiones para construir confianza biológica instantánea." },
-          { "name": "Inter-brain Synchrony", "text": "Fenómeno por el cual los ritmos cerebrales de los partners se alinean para ejecutar tareas conjuntas sin fisuras." },
+          { "name": "Sincronía interneural", "text": "Fenómeno por el cual los ritmos cerebrales de los partners se alinean para ejecutar tareas conjuntas sin fisuras." },
           { "name": "Inhibición de DMN", "text": "Suprimir la «red del ego» del cerebro para pasar de proteger los límites personales a realizar un objetivo común." }
         ]
       },
@@ -196,7 +196,7 @@
           { "name": "Precisión interoceptiva", "text": "Prácticas para activar la ínsula, permitiéndote oír pulsación, peristaltismo y micro-movimientos bajo la piel." },
           { "name": "Discriminación sensorial", "text": "Ejercicios para afinar la exterocepción mediante el manejo consciente de los filtros talámicos." },
           { "name": "Supresión del DMN vía sensorial", "text": "Trasladar la atención al «cable directo» de las sensaciones para desactivar la rumiación mental." },
-          { "name": "Embodiment Clarity", "text": "Eliminar el retraso entre la señal corporal y su realización." }
+          { "name": "Claridad encarnada", "text": "Eliminar el retraso entre la señal corporal y su realización." }
         ]
       },
       "targetSystems": {

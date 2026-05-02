@@ -11,11 +11,11 @@
   "title": "Inicializa Contacto Directo",
   "subtitle": "¿Necesitas soporte técnico para tu actualización biológica? Conecta con el ONDA Core Team.",
   "channelsTitle": "CANALES DE CONTACTO",
-  "emailLabel": "EMAIL",
+  "emailLabel": "CORREO",
   "communityLabel": "COMUNIDAD",
   "form": {
     "name": "Nombre",
-    "email": "Email",
+    "email": "Correo electrónico",
     "message": "Mensaje",
     "namePlaceholder": "Tu identificador",
     "emailPlaceholder": "contacto@ejemplo.com",
