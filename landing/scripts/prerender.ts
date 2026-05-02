@@ -273,8 +273,11 @@ function applyLevelLocalizedMeta(html: string, levelNum: number, lang: Lang): st
   return out
 }
 
-console.log('[prerender] Using renderToString + JSDOM (no Puppeteer) —', routes.length, 'routes')
+console.log(`[prerender] start — ${routes.length} routes, renderToString + JSDOM`)
 
+let done = 0
+let failed = 0
+const HEARTBEAT_EVERY = 100
 for (const route of routes) {
   try {
     const isLocalized = LOCALIZED_ROUTE_SET.has(route)
@@ -367,25 +370,34 @@ for (const route of routes) {
     mkdirSync(outDir, { recursive: true })
     const outPath = join(outDir, 'index.html')
     writeFileSync(outPath, out)
-    console.log('[prerender]', route, '->', outPath)
+    done++
+    if (done % HEARTBEAT_EVERY === 0) {
+      console.log(`[prerender] ... ${done}/${routes.length}`)
+    }
   } catch (err) {
-    console.error('[prerender] Failed', route, (err as Error).message)
+    failed++
+    console.error('[prerender] FAIL', route, '—', (err as Error).message)
   }
 }
 
-console.log('[prerender] Done')
+console.log(`[prerender] done — ${done} rendered, ${failed} failed (of ${routes.length})`)
 
 const { execSync } = await import('child_process')
+console.log('[build] sitemap')
 execSync('tsx scripts/sitemap.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
 // RSS + Atom feeds for aggregators (Bing News, Inoreader, Feedly).
+console.log('[build] feed')
 execSync('tsx scripts/feed.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
 // llms.txt + llms-full.txt for AI search (Perplexity, ChatGPT, Claude).
+console.log('[build] llms-txt')
 execSync('tsx scripts/llms-txt.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
 // IndexNow ping (Bing/Yandex/Seznam/Naver). Skipped automatically when
 // INDEXNOW_DISABLED=1 or when nothing changed since last submission.
+console.log('[build] indexnow')
 try {
   execSync('tsx scripts/indexnow.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
 } catch {
   // Non-fatal: never let IndexNow break the build.
-  console.warn('[prerender] indexnow step failed (non-fatal)')
+  console.warn('[build] indexnow step failed (non-fatal)')
 }
+console.log('[build] all stages complete')
