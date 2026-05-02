@@ -491,6 +491,70 @@
           "text": "日落后使用数字屏幕时戴 100% 蓝光阻断眼镜(橙色镜片)。"
         }
       ]
+    },
+    "glp1-biology-muscle-preservation": {
+      "title": "GLP-1 生物学与肌肉保留",
+      "description": "使用小檗碱与 Protein Leverage 的天然 GLP-1 激活协议,在不流失肌肉的前提下优化代谢。",
+      "imageAlt": "GLP-1 生物学与肌肉保留:代谢健康与体成分优化。",
+      "imageTitle": "[RESOURCE_PROTECT]:在代谢状态过渡期间维护瘦组织完整性。",
+      "content": "\n## [ ARTICLE: GLP-1_AGONISM // METABOLIC_RECODE ]\n\n胰高血糖素样肽-1(GLP-1)远不止是饱腹激素;它是系统代谢调节器。合成激动剂的主要缺陷在于『懒惰减重』,常导致骨骼肌耗损。我们的目标是利用 Protein Leverage 假说激活内源性(内部)GLP-1,确保系统燃烧脂肪同时保留『硬件』(肌肉)。\n\n---\n\n## The Hack: [ PROTOCOL_GLP_SYNC ]\n\n### 协议 1:纤维优先启动\n\n> **The Hack:** 餐前 20 分钟摄入 10–15 g 可溶性纤维(车前子壳、菊粉)。这机械刺激肠道 L 细胞释放内源性 GLP-1。\n\n**逻辑:** 纤维制造机械扩张信号,触发肠道上皮中的 L 细胞激活,在无需药物干预的情况下促进 GLP-1 自然释放。\n\n### 协议 2:小檗碱脉冲\n\n> **The Hack:** 富含碳水的餐前 30 分钟服用 500 mg 小檗碱(天然 AMPK 激活剂)。这种拟态物提升胰岛素敏感性与葡萄糖利用。\n\n**逻辑:** 小檗碱拨动细胞能量开关(AMPK),迫使细胞优先氧化脂肪酸,在不下调蛋白质合成的前提下改善葡萄糖利用。\n\n### 协议 3:1.6 g 阈值\n\n> **The Hack:** 每日蛋白质摄入维持在至少 1.6 g/kg 体重。这是热量赤字期间防止肌肉减少症(肌肉萎缩)的关键阈值。\n\n**逻辑:** Protein Leverage 假说指出,人体会持续发出饥饿信号,直到满足特定氨基酸需求。优先蛋白质从源头停止系统性『渴求』,并保留肌肉量。\n\n### 协议 4:苦味信号\n\n> **The Hack:** 餐前使用苦味剂(苦艾、蒲公英根)。肠道中的苦味受体直接关联 GLP-1 的快速释放。\n\n**逻辑:** 苦味化合物激活肠道中的 T2R 受体,触发快速 GLP-1 反应,在用餐开始前就启动饱腹感。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: BIA Scale (InBody) / DEXA\n> METRIC: Skeletal Muscle Mass Index (SMMI)\n> STATUS: BIO-MIMETIC_ACTIVE\n\n---\n\n## FAQ\n\n**Q:小檗碱能取代力量训练吗?**\n\nA:不能。小檗碱管理燃料效率(软件),但力量训练是唯一告诉身体保留肌肉量(硬件)的信号。\n\n**Q:为什么不直接用药?**\n\nA:内源性刺激保留代谢的天然反馈环路,防止『Ozempic 脸』(面部脂肪垫与肌肉张力流失)与体重反弹。\n",
+      "howToSteps": [
+        {
+          "name": "纤维优先启动",
+          "text": "餐前 20 分钟摄入 10–15 g 可溶性纤维(车前子壳、菊粉)。"
+        },
+        {
+          "name": "小檗碱脉冲",
+          "text": "富含碳水的餐前 30 分钟服用 500 mg 小檗碱(天然 AMPK 激活剂)。"
+        },
+        {
+          "name": "1.6 g 阈值(Protein Leverage)",
+          "text": "每日蛋白质摄入维持在至少 1.6 g/kg 体重。"
+        },
+        {
+          "name": "苦味信号",
+          "text": "餐前使用苦味剂(苦艾、蒲公英根)。肠道中的苦味受体直接关联 GLP-1 的快速释放。"
+        }
+      ]
+    },
+    "mitochondrial-dna-red-light": {
+      "title": "线粒体 DNA 与红光 2.0",
+      "description": "NIR 光如何降低水的粘度并提升 ATP 合酶效率。深入线粒体光子学。",
+      "imageAlt": "红光疗法与光生物调节生物黑客:线粒体 DNA 修复、660nm 波长。",
+      "imageTitle": "[PHOTONIC_INPUT]:通过 660nm/850nm 光吸收优化线粒体 DNA 稳定性与 ATP 输出。",
+      "content": "\n## [ ARTICLE: MTDNA_PHOTONICS // THE_LIGHT_DRIVE ]\n\n线粒体远不止是『动力工厂』;它们作为量子传感器运作。细胞能量生产的关键阶段是 ATP 合酶蛋白的物理旋转。新兴数据证实近红外(NIR)光降低这一分子马达周围水的粘度,使其旋转更快并产生更多 ATP,而无需额外热量『燃料』。\n\n---\n\n## The Hack: [ PROTOCOL_PHOTONIC_CHARGING ]\n\n> **The Hack:** [ PROTOCOL_PHOTONIC_CHARGING ]\n>\n> **NIR_Exposure (660nm/850nm):** 在医用级红光面板前进行 10–15 分钟会话。距离:距裸露皮肤 15–30 厘米。\n>\n> **Morning_Window:** 在醒来后头 2 小时执行会话以同步线粒体昼夜节律。\n>\n> **Hydration_Link:** 会话前饮用 300 ml 纯水。水是形成『结构化』界面层的主要底物。\n>\n> **Target_Areas:** 聚焦高线粒体密度区域:前额叶皮层(额头)、心脏、肝脏与主要肌群。\n\n---\n\n## 逻辑:深入解析\n\n为什么光驱动能量?线粒体内 ATP 合酶是一个旋转速度高达 9,000 RPM 的纳米马达。这个马达浸没在线粒体水中。\n\n**Structured Water (EZ Water):** 在特定频率(670nm 与 810nm)下,生物膜附近的水转变为『第四相』。它变得粘度更低(更具流动性)。\n\n**降低阻力:** 这种粘度降低减少了 ATP 合酶转子遭遇的『摩擦』。马达以更高效率旋转,以更低代谢成本生产 ATP。\n\n**mtDNA 保护:** 光生物调节(PBM)降低系统性氧化压力,保护脆弱的环状线粒体 DNA(mtDNA)免受结构性损伤。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Red Light Rising / Joovv (医用级 LED)\n> SPECTRUM_CHECK: 660nm(表面)+ 850nm(深层组织)\n> METRIC: 握力提升 / 恢复速度(通过 HRV)\n> STATUS: PHOTONIC_FLOW_ACTIVE\n",
+      "howToSteps": [
+        {
+          "name": "PROTOCOL_PHOTONIC_CHARGING",
+          "text": "在医用级红光面板前进行 10–15 分钟会话。距离:距裸露皮肤 15–30 厘米。"
+        }
+      ]
+    },
+    "senolytic-high-dosing-longevity": {
+      "title": "Senolytic 高剂量:长寿开关",
+      "description": "学习使用槲皮素、达沙替尼与漆黄素的 Hit and Run 协议,清除衰老『僵尸』细胞,减缓生物衰老。",
+      "imageAlt": "Senolytic 协议与长寿生物黑客:通过选择性凋亡消除僵尸细胞。",
+      "imageTitle": "[PURGE_MODE]:选择性消除衰老细胞以降低系统性 SASP 负荷并重置生物年龄。",
+      "content": "\n## [ ARTICLE: SENOLYTIC_SWITCH // CELLULAR_CLEANUP ]\n\n衰老不仅是健康细胞的丧失;它是『僵尸细胞』——科学上称为衰老细胞——的累积。这些细胞停止分裂但拒绝死亡,分泌炎症信号(SASP),『感染』相邻健康硬件。Senolytics 是一类被设计来在这些流氓单位中触发凋亡(程序性细胞死亡)的化合物,有效重置细胞环境。\n\n---\n\n## The Hack: [ PROTOCOL_HIT_AND_RUN ]\n\n> **The Hack:** [ PROTOCOL_HIT_AND_RUN ]\n>\n> 与标准补充剂不同,senolytics 在『脉冲式』或『Hit and Run』方式下最有效。这模拟系统级清扫,而非持续抑制。\n>\n> **化合物选择:** 『Mayo Clinic』堆栈包括达沙替尼(酪氨酸激酶抑制剂)与槲皮素(植物类黄酮)。纯植物方案中,高剂量漆黄素是当前行业金标准。\n>\n> **剂量循环:** 连续 2–3 天给予高剂量,然后 30 天『关闭』时间。这防止系统适应,确保只针对脆弱的衰老细胞。\n>\n> **自噬协同:** 在 16–24 小时禁食窗口内执行协议,以最大化细胞『搜索与摧毁』机制。\n>\n> **清扫后恢复:** 3 天打击后,优先摄入高亮氨酸蛋白质与睡眠,以刺激清除的细胞被新的、功能性单位替换。\n\n---\n\n## 逻辑:系统维护\n\n**为什么『Hit and Run』?**\n\n**选择性凋亡:** 健康细胞拥有强大的抗凋亡通路。衰老细胞已『准备好』死亡但卡住了。Senolytics 移除刹车,让『僵尸』终于停用。\n\n**SASP 中和:** Senescent Associated Secretory Phenotype(SASP)是生物网络中的『噪声』。清除这些细胞降低系统性炎症(inflammaging),恢复信号清晰度。\n\n**Niche 清除:** 移除旧细胞,你为局部干细胞分裂与组织再生创造物理与生化『空间』。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: DNA Methylation Kit (TruDiagnostic)\n> METRIC: Epigenetic Aging Rate (DunedinPACE) / 炎症标志物 (hs-CRP)\n> STATUS: HARDWARE_LIFESPAN_EXTENDED\n",
+      "howToSteps": [
+        {
+          "name": "PROTOCOL_HIT_AND_RUN",
+          "text": "连续 2–3 天给予高剂量,然后 30 天『关闭』时间。"
+        }
+      ]
+    },
+    "ai-biomarker-tracking-predictive": {
+      "title": "AI 集成生物标志物追踪 | 预测性健康",
+      "description": "超越静态追踪。学习 AI 驱动的预测分析如何在症状出现前预报疾病与倦怠。",
+      "imageAlt": "AI 生物标志物追踪与预测性健康:数字孪生生物黑客、生物年龄监测。",
+      "imageTitle": "[AI_SIMULATION_ACTIVE]:分析生物标志物轨迹以预测并优化生物衰老。",
+      "content": "\n## [ ARTICLE: PREDICTIVE_BIOMETRICS // SYSTEM_STABILITY ]\n\n大多数追踪器告诉你昨晚睡得如何。预测分析告诉你三天后表现会怎样。把原始遥测(HRV、RHR、皮温、呼吸率)输入专门的 AI 模型,我们超越静态数据点进入 System Stability Forecasting。我们不只追踪崩溃;我们在『生物重启』发生前计算其概率。\n\n---\n\n## The Hack: [ PROTOCOL_PREDICTIVE_SYNC ]\n\n> **The Hack:** [ PROTOCOL_PREDICTIVE_SYNC ]\n>\n> **基线校准:** 用高保真可穿戴设备建立 21 天『干净信号』期。AI 绘制你独特的生物特征与标准偏差。\n>\n> **异常检测:** 系统监测『微漂移』——肉眼不可见的 RHR 或 HRV 延迟微小变化,但预示着即将到来的系统故障(疾病或倦怠)。\n>\n> **稳定性阈值:** 定义你的『操作 Redline』。当 AI 检测到偏离基线特征 15% 时,触发 Soft Reboot Command(强制立即恢复协议)。\n>\n> **关联映射:** 标记主观输入(压力、营养),观察它们 48–72 小时后如何影响 System Stability Score。\n\n---\n\n## 逻辑:从被动到预测\n\n**3 天窗口:** 生理标志物常在临床疾病或过度训练症状出现前 48–72 小时开始退化。\n\n**信号 vs 噪声:** AI 过滤掉『正常抖动』(随机波动),聚焦『趋势波动率』。\n\n**熵管理:** 生物系统自然走向熵(无序)。预测追踪允许『预期校正』,将系统维持在高性能稳态。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: ONDA_CORE(专有 AI 引擎)/ API 集成\n> METRIC: 预测准确率(System Downtime Probability)\n> STATUS: PREDICTIVE_ALGORITHMS_ACTIVE\n",
+      "howToSteps": [
+        {
+          "name": "PROTOCOL_PREDICTIVE_SYNC",
+          "text": "用高保真可穿戴设备建立 21 天『干净信号』期。AI 绘制你独特的生物特征与标准偏差。"
+        }
+      ]
     }
   },
   "detail": {
