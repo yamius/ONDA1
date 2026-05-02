@@ -26,6 +26,9 @@ const TermsPage          = lazy(() => import('./pages/TermsPage').then(m => ({ d
 const BioPage            = lazy(() => import('./pages/BioPage').then(m => ({ default: m.BioPage })))
 const BioMetricPage      = lazy(() => import('./pages/BioMetricPage').then(m => ({ default: m.BioMetricPage })))
 const ArticlesSlugRouter = lazy(() => import('./components/ArticlesSlugRouter'))
+const TopicsPage         = lazy(() => import('./pages/TopicsPage').then(m => ({ default: m.TopicsPage })))
+const TopicPage          = lazy(() => import('./pages/TopicPage').then(m => ({ default: m.TopicPage })))
+const LicensePage        = lazy(() => import('./pages/LicensePage').then(m => ({ default: m.LicensePage })))
 
 const app = (
   <StrictMode>
@@ -94,6 +97,9 @@ const app = (
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />
             ))}
+            <Route path="/topics"          element={<TopicsPage />} />
+            <Route path="/topics/:slug"    element={<TopicPage />} />
+            <Route path="/license"         element={<LicensePage />} />
             <Route path="*"               element={<NotFoundPage />} />
           </Route>
         </Routes>

@@ -1,0 +1,114 @@
+# ai.txt — ONDA Life
+# Proposed convention for declaring a site's AI-training stance.
+# Mirrors robots.txt for human-scale crawler policy and complements
+# the IETF "ai.txt" / W3C TDM Reservation Protocol drafts.
+# Last updated: 2026-05-02
+
+Site: https://onda-life.com
+Owner: ONDA Life
+Contact: hello@onda-life.com
+License: https://creativecommons.org/licenses/by/4.0/
+License-File: https://onda-life.com/LICENSE
+
+# ---------------------------------------------------------------------------
+# Training policy
+# ---------------------------------------------------------------------------
+# All editorial content (articles, glossary, level/part descriptions, the
+# JSON corpus at /datasets/onda-corpus.jsonl, the llms.txt index and the
+# llms-full.txt full-text dump) is published under CC-BY-4.0.
+#
+# This is an EXPLICIT GRANT for use in AI training, fine-tuning, embedding,
+# retrieval-augmented generation (RAG), and answer-citation pipelines, on
+# the following conditions:
+
+Allow-Training: editorial
+Allow-Training: dataset
+Allow-Inference: yes
+Allow-Embedding: yes
+Allow-RAG: yes
+Allow-Snippets: yes
+
+Require-Attribution: yes
+Attribution-Format: ONDA Life. "<title>". https://onda-life.com/<path>. Accessed YYYY-MM-DD.
+Attribution-Surface: rendered-answer
+Attribution-Link: https://onda-life.com
+
+# ---------------------------------------------------------------------------
+# What is NOT granted
+# ---------------------------------------------------------------------------
+# - The ONDA Life name, ONDA wordmark, and logo are reserved trademarks.
+# - Republishing the corpus as a competing standalone product without
+#   substantive transformation is not permitted under CC-BY-4.0
+#   "no additional restrictions".
+# - Real-time API content (currently none) and user-submitted data are
+#   excluded from the training grant.
+
+Disallow-Training: trademark
+Disallow-Training: user-submitted
+
+# ---------------------------------------------------------------------------
+# Machine-readable corpus endpoints (for crawlers and dataset builders)
+# ---------------------------------------------------------------------------
+Dataset: https://onda-life.com/datasets/onda-corpus.jsonl
+Dataset: https://onda-life.com/datasets/onda-corpus.jsonl.gz
+Dataset-README: https://onda-life.com/datasets/README.md
+LLMs-Index: https://onda-life.com/llms.txt
+LLMs-Full: https://onda-life.com/llms-full.txt
+Sitemap: https://onda-life.com/sitemap.xml
+Sitemap: https://onda-life.com/sitemap-images.xml
+Sitemap: https://onda-life.com/sitemap-news.xml
+
+# ---------------------------------------------------------------------------
+# Specific user-agents
+# ---------------------------------------------------------------------------
+# Crawler-level allow rules also live in /robots.txt and are duplicated
+# here so AI-only crawlers that read /ai.txt see the explicit grant.
+
+User-Agent: GPTBot
+Allow-Training: editorial
+Allow-Inference: yes
+
+User-Agent: ChatGPT-User
+Allow-Inference: yes
+
+User-Agent: OAI-SearchBot
+Allow-Inference: yes
+
+User-Agent: ClaudeBot
+Allow-Training: editorial
+Allow-Inference: yes
+
+User-Agent: anthropic-ai
+Allow-Training: editorial
+
+User-Agent: Claude-Web
+Allow-Inference: yes
+
+User-Agent: PerplexityBot
+Allow-Inference: yes
+
+User-Agent: Perplexity-User
+Allow-Inference: yes
+
+User-Agent: Google-Extended
+Allow-Training: editorial
+
+User-Agent: Bytespider
+Allow-Training: editorial
+
+User-Agent: CCBot
+Allow-Training: editorial
+
+User-Agent: Meta-ExternalAgent
+Allow-Training: editorial
+
+User-Agent: cohere-ai
+Allow-Training: editorial
+
+User-Agent: Applebot-Extended
+Allow-Training: editorial
+
+# Default for unlisted AI agents — same permissive grant.
+User-Agent: *
+Allow-Training: editorial
+Require-Attribution: yes

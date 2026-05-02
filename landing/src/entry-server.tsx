@@ -23,6 +23,9 @@ import { PrivacyPage } from './pages/PrivacyPage'
 import { TermsPage } from './pages/TermsPage'
 import { BioPage } from './pages/BioPage'
 import { BioMetricPage } from './pages/BioMetricPage'
+import { TopicsPage } from './pages/TopicsPage'
+import { TopicPage } from './pages/TopicPage'
+import { LicensePage } from './pages/LicensePage'
 import { getArticleBySlug } from './data/articles'
 
 function ArticlesSlugRouter() {
@@ -79,6 +82,9 @@ export function createApp(location: string, lang?: Lang) {
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />
           ))}
+          <Route path="/topics"          element={<TopicsPage />} />
+          <Route path="/topics/:slug"    element={<TopicPage />} />
+          <Route path="/license"         element={<LicensePage />} />
           <Route path="*"               element={<NotFoundPage />} />
         </Route>
       </Routes>

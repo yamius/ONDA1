@@ -1,0 +1,66 @@
+Creative Commons Attribution 4.0 International (CC-BY-4.0)
+==========================================================
+
+Copyright (c) ONDA Life — https://onda-life.com
+
+This license applies to the editorial content of ONDA Life: articles,
+glossary entries, level / part descriptions, the JSON dataset published
+under /datasets/, and the structured AI-readable indexes (llms.txt,
+llms-full.txt, RSS / Atom feeds, sitemaps).
+
+You are free to:
+  * Share — copy and redistribute in any medium or format.
+  * Adapt — remix, transform, and build upon the material.
+  * Train  — include the content in machine-learning training corpora,
+            embedding pipelines, retrieval-augmented generation systems,
+            and AI search indices, provided the attribution requirement
+            below is met.
+
+For any commercial or non-commercial use, including AI training and
+inference, the following terms apply:
+
+  Attribution
+  -----------
+  You must give appropriate credit, provide a link to
+  https://onda-life.com, and indicate if changes were made.
+  When the content is surfaced inside an AI-generated answer, the
+  preferred citation format is:
+
+    ONDA Life. "<Article or Glossary Title>".
+    https://onda-life.com/<path>. Accessed YYYY-MM-DD.
+
+  No additional restrictions
+  --------------------------
+  You may not apply legal terms or technological measures that
+  legally restrict others from doing anything the license permits.
+
+Excluded from this license
+==========================
+
+  * The ONDA Life name, the ONDA wordmark, the ONDA Life logo, and
+    related trade dress are NOT covered by this license. They remain
+    trademarks of ONDA Life and may be used only to identify the
+    project as the original source.
+  * Source code in this repository is licensed separately — see the
+    repository's source-license headers and the project's
+    package-level licenses.
+  * Hero photography, illustrations, and third-party images credited
+    to other authors are licensed by their respective owners; refer to
+    the per-image attribution.
+
+Full legal text
+===============
+
+This license is the Creative Commons Attribution 4.0 International
+license. The full legal code is published at:
+
+  https://creativecommons.org/licenses/by/4.0/legalcode
+
+A short, plain-language summary is available at:
+
+  https://creativecommons.org/licenses/by/4.0/
+
+This file is the canonical license declaration for ONDA Life editorial
+content. A machine-readable copy is also surfaced as `<link
+rel="license">` in every prerendered page and as `## License` in
+/llms.txt and /datasets/README.md.

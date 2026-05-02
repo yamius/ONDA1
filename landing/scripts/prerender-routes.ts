@@ -6,6 +6,7 @@ import { glossaryTerms } from '../src/data/glossary'
 import { articles } from '../src/data/articles'
 import { parts } from '../src/pages/PartPage'
 import { levelsData } from '../src/data/levels'
+import { TOPICS } from '../src/data/topics'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRouteVariants, LOCALIZED_PAGES } from '../src/i18n'
 
@@ -34,6 +35,8 @@ const nonLocalizedStaticPaths = [
   '/sitemap',
   '/privacy',
   '/terms',
+  '/topics',
+  '/license',
 ]
 
 const staticPaths = [
@@ -46,6 +49,7 @@ export function getPrerenderRoutes(): string[] {
     ...staticPaths,
     ...glossaryTerms.map((t) => `/glossary/${t.slug}`),
     ...articles.map((a) => `/articles/${a.slug}`),
+    ...TOPICS.map((t) => `/topics/${t.slug}`),
     ...localizedPartRoutes,
     ...localizedLevelRoutes,
     ...localizedMetricRoutes,

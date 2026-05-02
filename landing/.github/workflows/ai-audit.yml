@@ -1,0 +1,76 @@
+name: ai-audit
+
+# Stage 14 — continuous AI visibility audit. Runs the same 50 seed
+# prompts as the local script against each AI/search engine that has a
+# secret configured. Appends to the immutable history log and rebuilds
+# the dashboard. Fails the workflow when visibility drops >20% week
+# over week so the team gets a Slack/email notification through GitHub
+# Actions' built-in alerting.
+
+on:
+  schedule:
+    # Weekly Monday 06:00 UTC. Adjust to daily by uncommenting the
+    # second cron entry; daily burns ~5x more API quota.
+    - cron: '0 6 * * 1'
+    # - cron: '0 6 * * *'
+  workflow_dispatch: {}
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: landing/package-lock.json
+
+      - name: Install dependencies
+        working-directory: landing
+        run: npm ci
+
+      - name: Run AI audit
+        working-directory: landing
+        env:
+          AI_AUDIT_LABEL: scheduled
+          PERPLEXITY_API_KEY:    ${{ secrets.PERPLEXITY_API_KEY }}
+          OPENAI_API_KEY:        ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY:     ${{ secrets.ANTHROPIC_API_KEY }}
+          BRAVE_SEARCH_API_KEY:  ${{ secrets.BRAVE_SEARCH_API_KEY }}
+          BING_SEARCH_API_KEY:   ${{ secrets.BING_SEARCH_API_KEY }}
+        run: |
+          mkdir -p dist/ai-audit
+          npx tsx scripts/ai-audit.mjs
+
+      - name: Append history + render dashboard
+        working-directory: landing
+        env:
+          AI_AUDIT_LABEL: scheduled
+        run: npx tsx scripts/ai-audit-history.mjs
+
+      - name: Commit history + dashboard
+        working-directory: landing
+        run: |
+          if [ -n "$(git status --porcelain dist/ai-audit/)" ]; then
+            git config user.email "ai-audit-bot@onda-life.com"
+            git config user.name  "ai-audit-bot"
+            git add dist/ai-audit/history.jsonl dist/ai-audit/dashboard.md dist/ai-audit/scheduled.json dist/ai-audit/scheduled.md
+            git commit -m "chore(ai-audit): scheduled run $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "no audit changes to commit"
+          fi
+
+      - name: Upload audit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-audit-${{ github.run_number }}
+          path: landing/dist/ai-audit/
