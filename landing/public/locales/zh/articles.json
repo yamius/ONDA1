@@ -555,6 +555,82 @@
           "text": "用高保真可穿戴设备建立 21 天『干净信号』期。AI 绘制你独特的生物特征与标准偏差。"
         }
       ]
+    },
+    "phase-locked-acoustic-sleep": {
+      "title": "Phase-Locked Sleep:声学深睡刺激",
+      "description": "学习如何利用相位锁定声学刺激与实时 EEG 来放大深睡波,优化认知恢复。",
+      "imageAlt": "用于深睡增强的相位锁定声学刺激:δ 波同步、睡眠生物黑客。",
+      "imageTitle": "[RESONANCE_ENGAGED]:通过实时声学相位锁定增强慢波睡眠振幅。",
+      "content": "\n## [ ARTICLE: PHASE_LOCKED_SLEEP // DEEP_RECOVERY_HACK ]\n\n数十年来,睡眠被视为黑盒——你闭眼,期望最好。今天,我们把睡眠当作 Phase-Locked 资源对待。借助实时 EEG 或高保真活动记录,我们现在可以与大脑的『慢波』(δ)架构互动。通过相位锁定声学刺激,我们能放大这些波的振幅,把 8 小时的恢复价值压缩到 6 小时窗口。\n\n---\n\n## The Hack: [ PROTOCOL_DELTA_AMPLIFICATION ]\n\n> **The Hack:** [ PROTOCOL_DELTA_AMPLIFICATION ]\n>\n> **实时检测:** 使用临床级追踪器(Oura Gen 4+、Dreem 或 Whoop 5.0)精确识别慢波睡眠(SWS)的起始。\n>\n> **声学粉红噪声:** 当系统检测到 δ 振荡(0.5–4 Hz)时,通过骨传导或定位扬声器触发亚阈值的粉红噪声『脉冲』。\n>\n> **相位锁定:** 脉冲的时间被调整以击中脑波的『上态』。这种共振增加波峰,加深睡眠状态而不唤醒用户。\n>\n> **温度转换:** 将刺激与热冷却协议(核心温度 -1.5°C)同步,确保系统在深睡区停留最长时间。\n\n---\n\n## 逻辑:压缩与质量\n\n**δ 马达:** 深睡期间,大脑的胶质淋巴系统冲走代谢废物(β-淀粉样蛋白)。放大 δ 波,你加速这种『细胞清理』。\n\n**声学共振:** 把它想象成推秋千上的孩子——如果你恰好在弧顶(上态)推,秋千会更高。如果我们在恰当时刻用声音『推』你的脑波,它们就会更强。\n\n**效率比:** 重要的不是你睡多久,而是你产生多少高振幅慢波。高质量 SWS 实现更快的认知恢复与激素恢复(生长激素释放)。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Oura Ring Gen 4+ / Somnee Headband\n> METRIC: 深睡时长(>90 分钟)与 δ 波振幅\n> STATUS: DEEP_SLEEP_ENHANCEMENT_ACTIVE\n",
+      "howToSteps": [
+        {
+          "name": "PROTOCOL_DELTA_AMPLIFICATION",
+          "text": "使用临床级追踪器(Oura Gen 4+、Dreem 或 Whoop 5.0)精确识别慢波睡眠(SWS)的起始。"
+        }
+      ]
+    },
+    "neural-entrainment-meditation-2": {
+      "title": "Neural Entrainment:冥想 2.0",
+      "description": "通过 EEG 驱动的 AI 音频与频率跟随响应(FFR),掌握你大脑的工作频率。",
+      "imageAlt": "Neural entrainment 与冥想 2.0:脑波同步、γ 波相干性。",
+      "imageTitle": "[SYNC_ACTIVE]:通过相位锁定频率夹带实现全局神经相干性。",
+      "content": "\n## [ ARTICLE: NEURAL_ENTRAINMENT // BRAIN_FREQUENCY_TUNING ]\n\n传统冥想长期是『黑盒』操作——主观、不一致、难以量化。Neural Entrainment 2.0 把这一实践转化为闭环工程过程。借助实时 EEG(脑电图)与 AI 生成的双耳音频,我们现在可以绕过『僧侣级』专注所需的多年训练,通过频率跟随响应(FFR)直接诱导特定脑波状态。\n\n---\n\n## The Hack: [ PROTOCOL_CLOSED_LOOP_SYNC ]\n\n> **The Hack:** [ PROTOCOL_CLOSED_LOOP_SYNC ]\n>\n> **EEG 校准:** 连接消费级 EEG(如 Muse 2、Flowtime),测量你的基线功率谱密度(PSD)。\n>\n> **AI 生成刺激:** 系统生成嵌入差分音的听觉『载波频率』。如果目标是深度专注(α),差分设为约 10 Hz。\n>\n> **实时调制:** 当脑波漂入高 β(压力)时,AI 动态调整音频音量、纹理或频率,把大脑『锚定』回目标 α 或 θ 区。\n>\n> **验证:** 仅当累积『状态停留时间』指标达到预编程的稳定阈值时,会话才结束。\n\n---\n\n## 逻辑:频率跟随响应\n\n其背后的生物学机制是频率跟随响应(FFR)。\n\n**振荡耦合:** 当大脑暴露于节律性感官刺激(听觉或视觉)时,听觉皮层的神经元开始以与刺激相同的频率放电。\n\n**网络同步:** 这种局部放电在皮层中扩散,有效『调谐』整个系统的 CPU 频率。\n\n**神经可塑性:** 反复『迫使』大脑进入 α(8–12 Hz)以专注或 θ(4–8 Hz)以创造,加强这些状态相关的神经通路,使其随时间更易访问,无需硬件。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Muse 2 / Flowtime EEG Headband\n> METRIC: α-θ 相干性与状态停留时间(分钟)\n> STATUS: NEURAL_SYNC_ACTIVE\n",
+      "howToSteps": [
+        {
+          "name": "PROTOCOL_CLOSED_LOOP_SYNC",
+          "text": "连接消费级 EEG(如 Muse 2、Flowtime),测量你的基线功率谱密度(PSD)。"
+        }
+      ]
+    },
+    "electric-medicine-neuromodulation": {
+      "title": "Electric Medicine:神经调制",
+      "description": "直接接入大脑命令行:迷走神经刺激、tDCS 用于专注、CES 用于通过电磁输入校准睡眠。",
+      "imageAlt": "电医学与神经调制:迷走神经刺激、生物电子医学。",
+      "imageTitle": "[SIGNAL_INJECTION]:通过精确调谐的生物电子脉冲调节系统稳态。",
+      "neuralSuggestion": {
+        "text": "对于带实时 EEG 反馈的闭环神经调节,见 Neural Entrainment。",
+        "linkText": "Neural Entrainment:冥想 2.0"
+      },
+      "content": "\n## [ ELECTRIC_MEDICINE: NEUROMODULATION ]\n\n> 「生物神经系统是一个复杂的电化学网络。大多数传统优化方法——补充剂、营养、生活方式——都通过缓慢的化学路径作用。神经调制是直接接入大脑『命令行』的入口。\n>\n> 在 ONDA 模型中,我们把迷走神经与大脑皮层视为数据总线。利用定向的低频电脉冲,我们可以强行抑制『系统噪声』(压力)、重启睡眠周期或瞬时触发深度专注状态。这不是经典意义上的医学——这是对意识硬件的直接管理。」\n\n---\n\n## [ 第 1 节:数据总线(迷走神经)]\n\n迷走神经是 CPU(大脑)与系统其余部分(器官)之间的主要通信渠道。调制这一神经允许从『紧急模式』(交感)即时全系统切换到『系统恢复』(副交感)。在 2026 年,这不再需要植入物;针对耳支或颈部的非侵入式可穿戴模块就足以绕过标准激素延迟。\n\n---\n\n## [ 第 2 节:神经超频(tDCS)]\n\n经颅直流电刺激(tDCS)允许操控神经元兴奋性阈值。这相当于对特定脑区进行『超频』:我们对前额叶皮层施加电流以加速数据处理,或对运动皮层施加电流以加快新身体技能的编码。\n\n---\n\n## [ EXECUTION_PROTOCOLS ]\n\n### PROTOCOL_01 > VAGUS NERVE RESET\n\n> **The Hack:** 使用经皮刺激设备(如 Pulsetto 或 Nurosym)在迷走神经左支上 10 分钟。\n>\n> **逻辑:** 低频脉冲模拟深度放松信号。这是欺骗大脑相信身体处于完全安全的『硬件 Hack』,覆盖压力反应。\n\n### PROTOCOL_02 > 认知专注(神经熵)\n\n> **The Hack:** 在深度工作前对 F3 区(左前额叶皮层)施加 tDCS 协议(1.5–2 mA)。\n>\n> **逻辑:** 降低决策中枢神经元的激活阈值。这扩展『RAM』带宽并过滤分散外部信号。\n\n### PROTOCOL_03 > 电气睡眠校准(CES)\n\n> **The Hack:** 系统关机(睡眠)前 30 分钟进行颅电治疗刺激(CES)。\n>\n> **逻辑:** 协调 α 与 δ 波频率。这帮助系统退出『循环思维』周期,将硬件过渡到准备 MELATONIN_UPLOAD 的状态。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> PRIMARY_DEVICE: [EEG_MONITOR: MUSE_S / FLOWTIME]\n> METRIC: α/β 比率。确认 α 波(放松警觉)增加同时 β 波(焦虑/噪声)下降。\n> SECONDARY_DEVICE: [SENSORS: NEUVANA_SIGNAL_APP]\n> METRIC: 迷走张力指数。通过心搏间期分析验证副交感激活。\n> SYSTEM_CHECK: [HRV_RECOVERY_SCORE]\n> METRIC: 协议后 30 分钟内 HRV 提升 15–25%。\n> STATUS: NEURAL_INTERFACE_READY. SYSTEM_CALIBRATED.\n\n---\n\n## [ FINALIZE_ANALYSIS ]\n\nSystem Integrity: High.\nSignal Quality: Stable.\n",
+      "howToSteps": [
+        {
+          "name": "Vagus Nerve Reset",
+          "text": "使用经皮刺激设备(如 Pulsetto 或 Nurosym)在迷走神经左支上 10 分钟。"
+        },
+        {
+          "name": "认知专注(神经熵)",
+          "text": "在深度工作前对 F3 区(左前额叶皮层)施加 tDCS 协议(1.5–2 mA)。"
+        },
+        {
+          "name": "电气睡眠校准(CES)",
+          "text": "系统关机(睡眠)前 30 分钟进行颅电治疗刺激(CES)。"
+        }
+      ]
+    },
+    "muscle-metabolic-marker": {
+      "title": "肌肉作为代谢标志物",
+      "description": "你最大的代谢器官:肌肉作为葡萄糖蓄电池、肌动蛋白枢纽与生物年龄的最佳预测指标。",
+      "imageAlt": "肌肉代谢标志物:骨骼肌健康、长寿肌动蛋白、代谢年龄优化。",
+      "imageTitle": "[ENGINE_STATUS]:利用肌肉组织作为系统性代谢稳定的主要驱动器。",
+      "neuralSuggestion": {
+        "text": "对于代谢燃料切换与葡萄糖优化,见 Metabolic Flexibility。",
+        "linkText": "Metabolic Flexibility:Dual-Fuel System"
+      },
+      "content": "\n## [ MUSCLE_AS_METABOLIC_MARKER ]\n\n> 「在传统生物学中,肌肉仅被视为运动工具。在 ONDA 系统中,肌肉是你最大的代谢器官——主要的葡萄糖『蓄电池』,以及激素青春的首要驱动器。\n>\n> 肌肉作为代谢缓冲区:组织质量越高,你的『能量电网』(血糖水平、胰岛素敏感性)越稳定。肌肉量下降(肌肉减少症)是生物计算机中电池退化的等价物。截至 2026 年,肌肉力量被官方认定为生物年龄的最佳单一预测指标。」\n\n---\n\n## [ 第 1 节:肌动蛋白——执行神经代码 ]\n\n每一次承重肌肉收缩都触发肌动蛋白的释放——直接与大脑通信的信号分子(数据包)。一种特定的肌动蛋白,BDNF,直接刺激新神经元的生长。因此,训练肌肉就是对认知软件的直接固件更新。\n\n---\n\n## [ 第 2 节:激素与系统修复 ]\n\n将肽协议(如 BPC-157)与抗阻应激整合,带来不仅仅是肥大——而是 Systemic Repair。肌肉组织成为『海绵』,吸收系统性炎症并优化激素堆栈(睾酮/皮质醇比)。\n\n---\n\n## [ EXECUTION_PROTOCOLS ]\n\n### PROTOCOL_01 > 握力校准\n\n> **The Hack:** 每周用数字握力计测量握力。\n>\n> **逻辑:** 握力是中枢神经系统(CNS)状态与整体『硬件』密度的直接代理。下降 10% 或以上信号系统需进入恢复模式。\n\n### PROTOCOL_02 > 代谢超频(HIIT)\n\n> **The Hack:** 每周两次短时间高强度应激(如 4 分钟 Tabata 间歇)。\n>\n> **逻辑:** 黑入肌肉纤维内的线粒体密度。这扩展系统利用葡萄糖的带宽,防止血管被过量糖『污染』。\n\n### PROTOCOL_03 > 恢复固件(肽补丁)\n\n> **The Hack:** 在高强度训练周期内整合 BPC-157 / TB-500 协议。\n>\n> **逻辑:** 加速组织内血管生成。这确保『燃料』快速输送与『代谢废物』移除,允许硬件维持峰值强度而不冒结构性故障的风险。\n\n---\n\n> [ HARDWARE_VALIDATION ]\n> PRIMARY_DEVICE: [BIO_IMPEDANCE: INBODY / WITHINGS_BODY_SCAN]\n> METRIC: Skeletal Muscle Mass (SMM)。我们追踪净『代谢硬件』量,而非总体重。\n> SECONDARY_DEVICE: [DYNAMOMETER: DIGITAL_GRIP_TEST]\n> METRIC: 握力。力量与体重的相关性作为生物耐久性的标志。\n> SYSTEM_DATA: [BLOOD_PANEL: IGF-1 & HbA1c]\n> METRIC: 平均血糖(HbA1c)降低,同时优化生长因子。\n> STATUS: STRUCTURAL_INTEGRITY_STABLE.\n\n---\n\n## [ FINALIZE_ANALYSIS ]\n\nSystem Integrity: Robust.\nMetabolic Throughput: High.\n",
+      "howToSteps": [
+        {
+          "name": "握力校准",
+          "text": "每周用数字握力计测量握力。"
+        },
+        {
+          "name": "代谢超频(HIIT)",
+          "text": "每周两次短时间高强度应激(如 4 分钟 Tabata 间歇)。"
+        },
+        {
+          "name": "恢复固件(肽补丁)",
+          "text": "在高强度训练周期内整合 BPC-157 / TB-500 协议。"
+        }
+      ]
     }
   },
   "detail": {
