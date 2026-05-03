@@ -11,6 +11,7 @@ import { writeFile, mkdir } from 'fs/promises'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { createApp } from '../src/entry-server'
+import { trimDescription } from './meta-inject'
 import {
   SUPPORTED_LANGS,
   LOCALIZED_PAGES,
@@ -186,7 +187,7 @@ function applyLocalizedMeta(html: string, basePath: string, lang: Lang): string 
   out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
 
   const title = escAttr(m.title)
-  const desc = escAttr(m.description)
+  const desc = escAttr(trimDescription(m.description))
   const ogAlt = escAttr(m.ogImageAlt)
   const url = pageUrlFor(basePath, lang)
   const escUrl = escAttr(url)
@@ -224,7 +225,7 @@ function applyMetricLocalizedMeta(html: string, metric: string, lang: Lang): str
   const desc = file.ui.metaDescriptionTpl.replace('{{title}}', m.title)
   const url = metricUrlFor(metric, lang)
   const escTitle = escAttr(title)
-  const escDesc = escAttr(desc)
+  const escDesc = escAttr(trimDescription(desc))
   const escUrl = escAttr(url)
 
   let out = html
@@ -261,7 +262,7 @@ function applyLevelLocalizedMeta(html: string, levelNum: number, lang: Lang): st
   const desc = lvl.metaDescription ?? lvl.subtitle ?? ''
   const url = levelUrlFor(levelNum, lang)
   const escTitle = escAttr(title)
-  const escDesc = escAttr(desc)
+  const escDesc = escAttr(trimDescription(desc))
   const escUrl = escAttr(url)
 
   let out = html
@@ -369,7 +370,7 @@ for (const route of routes) {
         const desc = partData?.metaDescription ?? ''
         const subtitle = partData?.subtitle ?? ''
         const url = partUrlFor(partInfo.slug, partInfo.lang)
-        const escDesc = escAttr(desc)
+        const escDesc = escAttr(trimDescription(desc))
         const escUrl = escAttr(url)
         out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${escUrl}">`)
         if (subtitle) {

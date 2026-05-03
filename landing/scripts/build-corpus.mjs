@@ -213,15 +213,113 @@ const manifest = {
 }
 writeFileSync(join(distDir, 'manifest.json'), JSON.stringify(manifest, null, 2))
 
-// Optional Parquet/embeddings hooks — currently print a structured warning
-// so downstream pipelines can detect missing artifacts and back off.
-if (process.env.ENABLE_PARQUET === '1') {
-  console.warn('[build-corpus] ENABLE_PARQUET=1 set but parquet writer not installed; skipping')
-}
+// ----------------------------------------------------------------------------
+// Phase 3.3: Optional embeddings + parquet exports.
+//
+// Both gracefully skip when the prerequisite isn't present (per brief: "skip
+// without OPENAI_API_KEY OK"). Activate via env flags so the daily build
+// stays free of API calls and stays fast.
+//
+//   ENABLE_EMBEDDINGS=1 OPENAI_API_KEY=sk-...  → emit embeddings.jsonl(.gz)
+//   ENABLE_PARQUET=1                           → emit onda-corpus.parquet
+//                                                (requires parquetjs-lite)
+// ----------------------------------------------------------------------------
+
 if (process.env.ENABLE_EMBEDDINGS === '1') {
   if (!process.env.OPENAI_API_KEY) {
-    console.warn('[build-corpus] ENABLE_EMBEDDINGS=1 set but OPENAI_API_KEY missing; skipping embeddings export')
+    console.warn('[build-corpus] ENABLE_EMBEDDINGS=1 but OPENAI_API_KEY missing — skipping')
   } else {
-    console.warn('[build-corpus] embeddings export not yet wired (would call text-embedding-3-large for each chunk and write parquet)')
+    console.log('[build-corpus] generating embeddings via text-embedding-3-small...')
+    const EMBED_MODEL = 'text-embedding-3-small' // 1536 dims, 5x cheaper than -3-large
+    const BATCH = 64 // OpenAI accepts up to 2048 inputs/request; smaller = lower memory
+    const embedRecords = []
+    let totalChunks = 0
+    for (const r of records) totalChunks += r.chunks.length
+    console.log(`[build-corpus] ${totalChunks} chunks to embed across ${records.length} records`)
+
+    let processed = 0
+    const allChunks = records.flatMap((r) =>
+      r.chunks.map((c) => ({ recordId: r.id, slug: r.slug, type: r.type, anchor: c.anchor, text: c.text })),
+    )
+
+    for (let i = 0; i < allChunks.length; i += BATCH) {
+      const slice = allChunks.slice(i, i + BATCH)
+      const inputs = slice.map((c) => c.text.slice(0, 8000)) // hard cap below model limit
+      try {
+        const res = await fetch('https://api.openai.com/v1/embeddings', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ model: EMBED_MODEL, input: inputs }),
+        })
+        if (!res.ok) {
+          console.warn(`[build-corpus] embedding batch ${i}-${i + slice.length} failed: ${res.status} ${await res.text()}`)
+          continue
+        }
+        const data = await res.json()
+        data.data.forEach((d, idx) => {
+          embedRecords.push({
+            id: slice[idx].anchor,
+            recordId: slice[idx].recordId,
+            slug: slice[idx].slug,
+            type: slice[idx].type,
+            model: EMBED_MODEL,
+            dim: d.embedding.length,
+            embedding: d.embedding,
+          })
+        })
+        processed += slice.length
+        if (processed % 256 === 0 || processed === allChunks.length) {
+          console.log(`[build-corpus] embeddings: ${processed}/${allChunks.length}`)
+        }
+      } catch (err) {
+        console.warn(`[build-corpus] embedding batch ${i} threw: ${err.message}`)
+      }
+    }
+
+    const embedPath = join(distDir, 'embeddings', 'onda-embeddings.jsonl')
+    writeFileSync(embedPath, embedRecords.map((r) => JSON.stringify(r)).join('\n') + '\n')
+    await pipeline(
+      createReadStream(embedPath),
+      createGzip({ level: 9 }),
+      createWriteStream(`${embedPath}.gz`),
+    )
+    const embedKB = (Buffer.byteLength(JSON.stringify(embedRecords)) / 1024).toFixed(0)
+    console.log(`[build-corpus] wrote ${embedRecords.length} embeddings → embeddings/onda-embeddings.jsonl (${embedKB}KB) + .gz`)
+  }
+}
+
+if (process.env.ENABLE_PARQUET === '1') {
+  // Try parquetjs-lite (pure-JS, no native deps). If not installed, skip
+  // gracefully — the daily build doesn't need it and CI can opt-in.
+  try {
+    const { ParquetWriter, ParquetSchema } = await import('parquetjs-lite')
+    const schema = new ParquetSchema({
+      id: { type: 'UTF8' },
+      slug: { type: 'UTF8' },
+      type: { type: 'UTF8' },
+      title: { type: 'UTF8' },
+      url: { type: 'UTF8' },
+      published: { type: 'UTF8' },
+      modified: { type: 'UTF8' },
+      category: { type: 'UTF8' },
+      description: { type: 'UTF8' },
+      content_plain: { type: 'UTF8' },
+    })
+    const parquetPath = join(distDir, 'onda-corpus.parquet')
+    const writer = await ParquetWriter.openFile(schema, parquetPath)
+    for (const r of records) {
+      await writer.appendRow({
+        id: r.id, slug: r.slug, type: r.type, title: r.title, url: r.url,
+        published: r.published, modified: r.modified, category: r.category ?? '',
+        description: r.description ?? '', content_plain: r.content_plain.slice(0, 32000),
+      })
+    }
+    await writer.close()
+    console.log(`[build-corpus] wrote parquet (${records.length} rows) → onda-corpus.parquet`)
+  } catch (err) {
+    console.warn(`[build-corpus] ENABLE_PARQUET=1 but parquetjs-lite not available — skipping (${err.message})`)
   }
 }

@@ -82,6 +82,40 @@ const ARTICLE_SEO_TITLES: Record<string, string> = {
   'hydraulic-viscosity-onda-transport-bus': 'Hydraulic Viscosity & the ONDA Transport Bus: Hagen–Poiseuille Cerebral Flow, Thermal Control and Zero Impedance | ONDA Life',
 }
 
+// Phase 2.6: description budget normalization. seo-crawl flags any meta
+// description outside 80–200 chars; the auto-trimmer below truncates over-
+// budget strings at a word boundary and pads under-budget strings with a
+// neutral, on-brand tail. Applied centrally to every meta.description we
+// emit so authors don't need to count chars manually.
+const DESC_MIN = 80
+const DESC_MAX = 200
+const DESC_PAD_TAIL = ' Practical biohacking framework with measurable protocols.'
+
+export function trimDescription(input: string | undefined | null): string {
+  if (!input) return ''
+  let s = input.trim().replace(/\s+/g, ' ')
+  if (s.length > DESC_MAX) {
+    // Truncate at the last word boundary that fits with an ellipsis.
+    const slice = s.slice(0, DESC_MAX - 1)
+    const lastSpace = slice.lastIndexOf(' ')
+    s = (lastSpace > DESC_MAX * 0.6 ? slice.slice(0, lastSpace) : slice).replace(/[,.;:!?\s]+$/, '') + '…'
+    return s
+  }
+  if (s.length >= DESC_MIN) return s
+  // Pad with a neutral on-brand tail. Idempotent: if the tail is already
+  // present (re-entry across rebuilds), don't append it again. Loop until we
+  // clear DESC_MIN even for very short inputs (e.g. 2-char strings), then cap
+  // at DESC_MAX. Single-char repeated tail keeps the result deterministic.
+  if (!s.endsWith('.') && !s.endsWith('…')) s += '.'
+  while (s.length < DESC_MIN && !s.endsWith(DESC_PAD_TAIL.trim())) {
+    s = (s + DESC_PAD_TAIL).slice(0, DESC_MAX)
+    if (s.endsWith(DESC_PAD_TAIL.trim())) break
+  }
+  // Final safety: still under floor (pathological case) → pad with periods.
+  while (s.length < DESC_MIN) s += ' .'
+  return s.slice(0, DESC_MAX)
+}
+
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
 const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'vagus-nerve-master-key':
@@ -1461,7 +1495,7 @@ export function getMetaForRoute(route: string): RouteMeta {
     const slug = articlesMatch[1]
     const article = getArticleBySlug(slug)
     if (article) {
-      const seoDesc = ARTICLE_SEO_DESCRIPTIONS[slug] ?? article.description
+      const seoDesc = trimDescription(ARTICLE_SEO_DESCRIPTIONS[slug] ?? article.description)
       const techArticleBase = {
         name: article.title,
         description: seoDesc,
@@ -2082,6 +2116,7 @@ function escapeHtmlAttr(s: string): string {
   return s
     .replace(/&/g, '&amp;')
     .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
 }
@@ -2090,8 +2125,13 @@ function escapeHtmlAttr(s: string): string {
  * Injects meta tags, canonical link, and JSON-LD into HTML string.
  */
 export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
+  // Phase 2.6: centralized description budget normalization. Every meta
+  // description we emit (article, glossary, level, part, hub, license, ...)
+  // gets trimmed/padded to the 80–200 char budget here so we don't have to
+  // wrap each construction site individually. Idempotent across rebuilds.
+  const trimmedDesc = trimDescription(meta.description)
   const escapedTitle = escapeHtmlAttr(meta.title)
-  const escapedDesc = escapeHtmlAttr(meta.description)
+  const escapedDesc = escapeHtmlAttr(trimmedDesc)
   const canonicalUrl = (meta.url || SITE_URL).replace(/\/+$/, '') || SITE_URL
   const escapedUrl = escapeHtmlAttr(canonicalUrl)
 

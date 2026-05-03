@@ -15,6 +15,8 @@
 | Phase | Тема | Статус |
 |---|---|---|
 | **Phase 1** | Performance | 🟢 ~80% (lazy-load, parallel I/O, image ladder, manifest, Lighthouse CI ✓; bundle <80KB pending) |
+| **Phase 2.6** | Description budget | 🟢 100% (centralized trimDescription, escapeHtmlAttr fix, audit regex fix → descriptionOutsideBudget 106→0) |
+| **Phase 3.3** | Embeddings + parquet | 🟢 100% (ENABLE_EMBEDDINGS / ENABLE_PARQUET wired, skip-without-prereq) |
 | **Phase 2** | SEO | 🟢 ~85% (рейлы, валидаторы, OG-генератор, JSON-LD, hreflang ✓; budget-trim pending) |
 | **Phase 3** | AI Visibility / GEO | 🟢 ~95% (всё кроме parquet+embeddings) |
 | **Phase 4** | Auto-publishing | 🟢 100% |
@@ -63,7 +65,43 @@
 
 ---
 
-## Sprint E — Phase 1 Performance ✓ ОТГРУЖЕНО (текущая сессия)
+## Sprint F — Phase 1/2.6/3.3 финал + SSR-регрессия ✓ ОТГРУЖЕНО (текущая сессия)
+
+**Phase 2.6 — description budget полностью закрыт:**
+- `trimDescription()` (DESC_MIN=80 / DESC_MAX=200) применён централизованно в `injectMetaIntoHtml`
+- + 4 точках в `prerender.ts` (`applyLocalizedMeta` / metric / level / part) — все локализованные пути
+- `escapeHtmlAttr` теперь кодирует `'` → `&#39;` (защита от обрыва атрибута парсерами)
+- `seo-crawl.mjs metaContent`: regex обрывался на апострофе в `brain's` → длина = 10 вместо 130. Исправлено отдельным разбором `content="…"` vs `content='…'` + декодирование сущностей.
+- Результат: `descriptionOutsideBudget: 106 → 96 → 86 → 34 → 0`
+
+**Phase 3.3 — embeddings + parquet:**
+- `ENABLE_EMBEDDINGS=1`: реальный fetch к OpenAI `text-embedding-3-small`, BATCH=64, output `embeddings/onda-embeddings.jsonl(.gz)`. Skip-без-ключа.
+- `ENABLE_PARQUET=1`: динамический import `parquetjs-lite`. Skip-без-пакета.
+
+**Phase 1 follow-up + SSR-регрессия (откат):**
+- `ArticlesSection` lazy-load (useEffect+import) сломал SSR — `articles is not defined` → React fallback на client → 0 `<h1>` на 5 home-страницах (`/`, `/es`, `/ru`, `/uk`, `/zh`)
+- Откатил на static import + useMemo: bundle не изменился (articles-meta уже отдельный chunk), `missingH1: 5 → 0`
+
+**Visualizer config:**
+- `vite.config.ts`: `ANALYZE=1` гейтит `rollup-plugin-visualizer` через try/catch — skip-без-пакета.
+
+**Architect-review фиксы (3 регрессии):**
+- `trimDescription` idempotency: для очень коротких входов (`'Hi'`) старый код добавлял tail один раз → 61ch (под floor), повторный вызов добавлял ещё раз. Новая версия: цикл pad до >=DESC_MIN, детект уже-присутствующего tail (`endsWith(DESC_PAD_TAIL.trim())`), pathological-fallback ` .`. Проверено на 5 кейсах: пустая, 'Hi', 'Short text.', 130ch, 250ch — все idem=true, 80–200ch.
+- `ArticlesSection` SSR детерминизм: `Math.random` shuffle в render-path → server/client рисовали разные карточки (hydration mismatch + нестабильный prerender hash). Заменил на `articles.slice(0, 3)`. Ротация (если нужна) — build-time с deterministic seed.
+- `vite.config.ts` ANALYZE=1: `require()` undefined в ESM-контексте → catch срабатывал всегда, даже с установленным пакетом. Заменил на top-level `await import('rollup-plugin-visualizer')`.
+
+**Финальный аудит (phase1-final8):**
+- 558 routes, 0 failed, 7.2s
+- descriptionOutsideBudget: **0** ✓
+- missingH1: **0** ✓
+- hreflang violations: **0** ✓
+- jsonld errors: **0** ✓
+- titleOutsideBudget: 174 (titles рукописные — отдельная задача, риск SEO)
+- hreflangMissing: 302 (отдельный skim, не входит в этот батч)
+
+---
+
+## Sprint E — Phase 1 Performance ✓ ОТГРУЖЕНО
 
 | Задача | Файл | Результат |
 |---|---|---|

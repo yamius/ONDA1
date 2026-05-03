@@ -82,8 +82,20 @@ function metaContent(html, kind, name) {
   )
   const m = html.match(re)
   if (!m) return null
-  const c = m[0].match(/\bcontent=["']([^"']*)["']/i)
-  return c ? c[1] : null
+  // Match content="..." OR content='...' separately so an apostrophe inside a
+  // double-quoted value (e.g. "brain's cache") doesn't terminate the capture
+  // and produce a falsely-truncated description length.
+  const c = m[0].match(/\bcontent="([^"]*)"|content='([^']*)'/i)
+  if (!c) return null
+  const raw = c[1] != null ? c[1] : c[2]
+  // Decode the most common entities we emit so length budgets match the
+  // human-readable string, not the encoded bytes.
+  return raw
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
 }
 
 function linkHref(html, rel, hreflang) {

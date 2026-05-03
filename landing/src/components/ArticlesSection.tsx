@@ -1,25 +1,18 @@
-import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { articlesMeta as articles } from '../data/articles/articles-meta.generated'
 import { OptimizedImage } from './OptimizedImage'
 
-function shuffle<T>(arr: T[]): T[] {
-  const out = [...arr]
-  for (let i = out.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1))
-    ;[out[i], out[j]] = [out[j], out[i]]
-  }
-  return out
-}
-
 export function ArticlesSection() {
   const { t } = useTranslation('home')
-  const [displayArticles, setDisplayArticles] = useState(() => articles.slice(0, 3))
-
-  useEffect(() => {
-    setDisplayArticles(shuffle(articles).slice(0, 3))
-  }, [])
+  // Static import + deterministic slice: vite code-splits articles-meta into
+  // its own chunk (75KB gzip), and a runtime Math.random shuffle would
+  // produce different cards on server vs client → SSR/hydration mismatch +
+  // unstable prerender output across rebuilds. Pinning to first 3 keeps the
+  // HomePage hash stable for CDN cache and lets crawlers see consistent
+  // featured articles. Rotation, if desired later, should be done at build
+  // time with a deterministic seed (e.g. day-of-year), not at render time.
+  const displayArticles = articles.slice(0, 3)
 
   return (
     <section className="relative px-4 py-16 md:px-6 md:py-24">
