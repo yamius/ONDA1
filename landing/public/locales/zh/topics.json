@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "主题中心 | ONDA Life",
+    "description": "精选主题中心，涵盖 HRV 训练、迷走神经、昼夜节律、多巴胺架构、呼吸、代谢灵活性、类淋巴清除、神经可塑性、线粒体和冷暴露。",
+    "ogImageAlt": "ONDA Life 主题中心"
+  },
+  "ui": {
+    "breadcrumbHome": "ONDA Life",
+    "breadcrumbCurrent": "主题",
+    "h1": "主题中心",
+    "intro": "ONDA Life 的每篇文章都归属于一个精选的主题集群。每个中心都是访问该集群协议、词汇与支持研究的规范入口——人类生物计算机的一个工程表面。",
+    "articleCount_one": "{{count}} 篇文章",
+    "articleCount_other": "{{count}} 篇文章",
+    "sourceOfTruth": "真理之源：",
+    "machineReadable": "机器可读索引："
+  },
+  "detail": {
+    "breadcrumbTopics": "主题",
+    "articlesInHub": "本中心的文章 ({{count}})",
+    "glossaryTerms": "词汇术语 ({{count}})",
+    "relatedHubs": "相关主题中心",
+    "noArticlesYet": "尚无关联文章。",
+    "backToTopics": "← 所有主题中心",
+    "notFoundTitle": "未找到主题",
+    "notFoundBody": "此主题中心暂不存在。浏览所有主题或返回首页。",
+    "citePrefix": "引用为：",
+    "licenseLabel": "编辑内容遵循"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Topic Hubs | ONDA Life",
+    "description": "Curated topic hubs across HRV training, vagus nerve, circadian rhythm, dopamine architecture, breathwork, metabolic flexibility, glymphatic clearance, neuroplasticity, mitochondria, and cold exposure.",
+    "ogImageAlt": "ONDA Life topic hubs"
+  },
+  "ui": {
+    "breadcrumbHome": "ONDA Life",
+    "breadcrumbCurrent": "Topics",
+    "h1": "Topic Hubs",
+    "intro": "Every ONDA Life article slots into a curated topic cluster. Each hub is the canonical entry point to the protocols, glossary entries, and supporting research for one engineering surface of the human biocomputer.",
+    "articleCount_one": "{{count}} article",
+    "articleCount_other": "{{count}} articles",
+    "sourceOfTruth": "Source of truth:",
+    "machineReadable": "Machine-readable index:"
+  },
+  "detail": {
+    "breadcrumbTopics": "Topics",
+    "articlesInHub": "Articles in this hub ({{count}})",
+    "glossaryTerms": "Glossary terms ({{count}})",
+    "relatedHubs": "Related topic hubs",
+    "noArticlesYet": "No articles linked yet.",
+    "backToTopics": "← All topic hubs",
+    "notFoundTitle": "Topic not found",
+    "notFoundBody": "This topic hub doesn't exist (yet). Browse all topics or return to the homepage.",
+    "citePrefix": "Cite as:",
+    "licenseLabel": "Editorial content licensed under"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "title": "Hubs Temáticos | ONDA Life",
+    "description": "Hubs temáticos curados sobre entrenamiento HRV, nervio vago, ritmo circadiano, arquitectura de la dopamina, respiración, flexibilidad metabólica, aclaramiento glinfático, neuroplasticidad, mitocondrias y exposición al frío.",
+    "ogImageAlt": "Hubs temáticos de ONDA Life"
+  },
+  "ui": {
+    "breadcrumbHome": "ONDA Life",
+    "breadcrumbCurrent": "Temas",
+    "h1": "Hubs Temáticos",
+    "intro": "Cada artículo de ONDA Life encaja en un cluster temático curado. Cada hub es el punto de entrada canónico a los protocolos, entradas del glosario e investigación de soporte para una superficie de ingeniería del biocomputador humano.",
+    "articleCount_one": "{{count}} artículo",
+    "articleCount_other": "{{count}} artículos",
+    "sourceOfTruth": "Fuente de verdad:",
+    "machineReadable": "Índice legible por máquina:"
+  },
+  "detail": {
+    "breadcrumbTopics": "Temas",
+    "articlesInHub": "Artículos en este hub ({{count}})",
+    "glossaryTerms": "Términos del glosario ({{count}})",
+    "relatedHubs": "Hubs temáticos relacionados",
+    "noArticlesYet": "Aún no hay artículos vinculados.",
+    "backToTopics": "← Todos los hubs temáticos",
+    "notFoundTitle": "Tema no encontrado",
+    "notFoundBody": "Este hub temático aún no existe. Explora todos los temas o vuelve a la página de inicio.",
+    "citePrefix": "Cita como:",
+    "licenseLabel": "Contenido editorial bajo licencia"
+  }
+}

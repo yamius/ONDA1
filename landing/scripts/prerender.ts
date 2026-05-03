@@ -20,12 +20,15 @@ import {
   localizedPathFor,
   metricPathFor,
   levelPathFor,
+  topicPathFor,
   parseMetricRoute,
   parseLevelRoute,
   parsePartRoute,
+  parseTopicRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_TOPIC_ROUTE_SET } from './prerender-routes'
+import { getTopicBySlug, getLocalizedTopic } from '../src/data/topics'
 import { getMetaForRoute, injectMetaIntoHtml } from './meta-inject'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -286,6 +289,55 @@ function applyLevelLocalizedMeta(html: string, levelNum: number, lang: Lang): st
   return out
 }
 
+function topicUrlFor(slug: string, lang: Lang): string {
+  return `${SITE_URL}${topicPathFor(slug, lang)}`
+}
+
+function buildHreflangLinksForTopic(slug: string): string {
+  const tags: string[] = []
+  for (const lang of SUPPORTED_LANGS) {
+    tags.push(`<link rel="alternate" hreflang="${lang}" href="${topicUrlFor(slug, lang)}">`)
+  }
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${topicUrlFor(slug, 'en')}">`)
+  return tags.join('\n  ')
+}
+
+/**
+ * Per-language meta for /topics/:slug — title/description come from
+ * topics.ts i18n field via getLocalizedTopic.
+ */
+function applyTopicLocalizedMeta(html: string, slug: string, lang: Lang): string {
+  const topic = getTopicBySlug(slug)
+  if (!topic) return html
+  const copy = getLocalizedTopic(topic, lang)
+  const title = `${copy.title} | ONDA Life`
+  const desc = copy.description
+  const url = topicUrlFor(slug, lang)
+  const escTitle = escAttr(title)
+  const escDesc = escAttr(trimDescription(desc))
+  const escUrl = escAttr(url)
+
+  let out = html
+  out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
+  out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
+  out = out.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+name="title"\s+content="[^"]*"\s*\/?>/i, `<meta name="title" content="${escTitle}">`)
+  out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*"\s*\/?>/gi, '')
+
+  const hreflang = buildHreflangLinksForTopic(slug)
+  const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[lang]}">`
+  out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
+
+  return out
+}
+
 console.log(`[prerender] start — ${routes.length} routes, renderToString + batched async I/O`)
 const startTs = Date.now()
 
@@ -329,14 +381,17 @@ for (const route of routes) {
     const isMetricLocalized = LOCALIZED_METRIC_ROUTE_SET.has(route)
     const isLevelLocalized = LOCALIZED_LEVEL_ROUTE_SET.has(route)
     const isPartLocalized = LOCALIZED_PART_ROUTE_SET.has(route)
+    const isTopicLocalized = LOCALIZED_TOPIC_ROUTE_SET.has(route)
     const metricInfo = isMetricLocalized ? parseMetricRoute(route) : null
     const levelInfo = isLevelLocalized ? parseLevelRoute(route) : null
     const partInfo = isPartLocalized ? parsePartRoute(route) : null
+    const topicInfo = isTopicLocalized ? parseTopicRoute(route) : null
     const lang: Lang = isLocalized
       ? langFromPath(route)
       : metricInfo ? metricInfo.lang
       : levelInfo ? levelInfo.lang
       : partInfo ? partInfo.lang
+      : topicInfo ? topicInfo.lang
       : 'en'
     const basePath = isLocalized ? stripLangPrefix(route) : route
 
@@ -357,6 +412,8 @@ for (const route of routes) {
       out = applyMetricLocalizedMeta(out, metricInfo.metric, metricInfo.lang)
     } else if (levelInfo) {
       out = applyLevelLocalizedMeta(out, levelInfo.levelNum, levelInfo.lang)
+    } else if (topicInfo) {
+      out = applyTopicLocalizedMeta(out, topicInfo.slug, topicInfo.lang)
     } else if (partInfo) {
       const translatedLangs = partLangsWithTranslation(partInfo.slug)
       const hasTranslation = translatedLangs.includes(partInfo.lang)

@@ -8,7 +8,7 @@ import { parts } from '../src/pages/PartPage'
 import { levelsData } from '../src/data/levels'
 import { TOPICS } from '../src/data/topics'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
-import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRouteVariants, LOCALIZED_PAGES } from '../src/i18n'
+import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRouteVariants, topicRouteVariants, LOCALIZED_PAGES } from '../src/i18n'
 
 // Pages localized into all 5 languages — each gets its own prerendered HTML
 // per language. Generated from LOCALIZED_PAGES (single source of truth in i18n.ts).
@@ -26,6 +26,10 @@ const localizedLevelRoutes = levelRouteVariants(levelNumbers)
 const partSlugs = Object.keys(parts)
 const localizedPartRoutes = partRouteVariants(partSlugs)
 
+// /topics/:slug variants × 5 languages.
+const topicSlugs = TOPICS.map((t) => t.slug)
+const localizedTopicRoutes = topicRouteVariants(topicSlugs)
+
 // Pages that stay EN-only for now (Articles, Glossary, etc).
 const nonLocalizedStaticPaths = [
   '/glossary',
@@ -35,7 +39,6 @@ const nonLocalizedStaticPaths = [
   '/sitemap',
   '/privacy',
   '/terms',
-  '/topics',
   '/license',
 ]
 
@@ -49,7 +52,7 @@ export function getPrerenderRoutes(): string[] {
     ...staticPaths,
     ...glossaryTerms.map((t) => `/glossary/${t.slug}`),
     ...articles.map((a) => `/articles/${a.slug}`),
-    ...TOPICS.map((t) => `/topics/${t.slug}`),
+    ...localizedTopicRoutes,
     ...localizedPartRoutes,
     ...localizedLevelRoutes,
     ...localizedMetricRoutes,
@@ -67,6 +70,12 @@ export const LOCALIZED_LEVEL_ROUTE_SET = new Set(localizedLevelRoutes)
 
 /** Set of all routes that are localized part detail pages. */
 export const LOCALIZED_PART_ROUTE_SET = new Set(localizedPartRoutes)
+
+/** Set of all routes that are localized topic detail pages. */
+export const LOCALIZED_TOPIC_ROUTE_SET = new Set(localizedTopicRoutes)
+
+/** All topic slugs (for sitemap hreflang per topic). */
+export const TOPIC_SLUGS = topicSlugs
 
 /** EN base paths that have localized variants — used by sitemap for hreflang grouping. */
 export const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)

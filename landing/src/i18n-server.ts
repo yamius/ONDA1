@@ -77,13 +77,18 @@ import esArticles from '../public/locales/es/articles.json'
 import ruArticles from '../public/locales/ru/articles.json'
 import ukArticles from '../public/locales/uk/articles.json'
 import zhArticles from '../public/locales/zh/articles.json'
+import enTopics from '../public/locales/en/topics.json'
+import esTopics from '../public/locales/es/topics.json'
+import ruTopics from '../public/locales/ru/topics.json'
+import ukTopics from '../public/locales/uk/topics.json'
+import zhTopics from '../public/locales/zh/topics.json'
 
 const RESOURCES = {
-  en: { home: en, about: enAbout, 'inner-spectrum': enIs, bio: enBio, 'bio-metric': enBioMetric, level: enLevel, part: enPart, contact: enContact, sitemap: enSitemap, privacy: enPrivacy, terms: enTerms, glossary: enGlossary, articles: enArticles },
-  es: { home: es, about: esAbout, 'inner-spectrum': esIs, bio: esBio, 'bio-metric': esBioMetric, level: esLevel, part: esPart, contact: esContact, sitemap: esSitemap, privacy: esPrivacy, terms: esTerms, glossary: esGlossary, articles: esArticles },
-  ru: { home: ru, about: ruAbout, 'inner-spectrum': ruIs, bio: ruBio, 'bio-metric': ruBioMetric, level: ruLevel, part: ruPart, contact: ruContact, sitemap: ruSitemap, privacy: ruPrivacy, terms: ruTerms, glossary: ruGlossary, articles: ruArticles },
-  uk: { home: uk, about: ukAbout, 'inner-spectrum': ukIs, bio: ukBio, 'bio-metric': ukBioMetric, level: ukLevel, part: ukPart, contact: ukContact, sitemap: ukSitemap, privacy: ukPrivacy, terms: ukTerms, glossary: ukGlossary, articles: ukArticles },
-  zh: { home: zh, about: zhAbout, 'inner-spectrum': zhIs, bio: zhBio, 'bio-metric': zhBioMetric, level: zhLevel, part: zhPart, contact: zhContact, sitemap: zhSitemap, privacy: zhPrivacy, terms: zhTerms, glossary: zhGlossary, articles: zhArticles },
+  en: { home: en, about: enAbout, 'inner-spectrum': enIs, bio: enBio, 'bio-metric': enBioMetric, level: enLevel, part: enPart, contact: enContact, sitemap: enSitemap, privacy: enPrivacy, terms: enTerms, glossary: enGlossary, articles: enArticles, topics: enTopics },
+  es: { home: es, about: esAbout, 'inner-spectrum': esIs, bio: esBio, 'bio-metric': esBioMetric, level: esLevel, part: esPart, contact: esContact, sitemap: esSitemap, privacy: esPrivacy, terms: esTerms, glossary: esGlossary, articles: esArticles, topics: esTopics },
+  ru: { home: ru, about: ruAbout, 'inner-spectrum': ruIs, bio: ruBio, 'bio-metric': ruBioMetric, level: ruLevel, part: ruPart, contact: ruContact, sitemap: ruSitemap, privacy: ruPrivacy, terms: ruTerms, glossary: ruGlossary, articles: ruArticles, topics: ruTopics },
+  uk: { home: uk, about: ukAbout, 'inner-spectrum': ukIs, bio: ukBio, 'bio-metric': ukBioMetric, level: ukLevel, part: ukPart, contact: ukContact, sitemap: ukSitemap, privacy: ukPrivacy, terms: ukTerms, glossary: ukGlossary, articles: ukArticles, topics: ukTopics },
+  zh: { home: zh, about: zhAbout, 'inner-spectrum': zhIs, bio: zhBio, 'bio-metric': zhBioMetric, level: zhLevel, part: zhPart, contact: zhContact, sitemap: zhSitemap, privacy: zhPrivacy, terms: zhTerms, glossary: zhGlossary, articles: zhArticles, topics: zhTopics },
 } as const
 
 let registered = false

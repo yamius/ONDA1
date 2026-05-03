@@ -23,7 +23,7 @@ export const OG_LOCALES: Record<Lang, string> = {
 
 export const I18N_NAMESPACES = [
   'home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part',
-  'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles',
+  'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles', 'topics',
 ] as const
 
 if (!i18n.isInitialized) {
@@ -107,6 +107,7 @@ export const LOCALIZED_PAGES: Record<string, string> = {
   '/about': 'about',
   '/bio': 'bio',
   '/inner-spectrum': 'inner-spectrum',
+  '/topics': 'topics',
 }
 
 const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)
@@ -154,6 +155,11 @@ export function localizedPathFor(pathname: string, lang: Lang): string {
   const glossaryMatch = basePath.match(/^\/glossary\/([^/]+)$/)
   if (glossaryMatch) {
     return lang === 'en' ? `/glossary/${glossaryMatch[1]}` : `/${lang}/glossary/${glossaryMatch[1]}`
+  }
+
+  const topicMatch = basePath.match(/^\/topics\/([^/]+)$/)
+  if (topicMatch) {
+    return lang === 'en' ? `/topics/${topicMatch[1]}` : `/${lang}/topics/${topicMatch[1]}`
   }
 
   const flatLocalized = ['/glossary', '/articles', '/contact', '/sitemap', '/privacy', '/terms']
@@ -247,6 +253,30 @@ export function partRouteVariants(slugs: string[]): string[] {
 /** Parse a part URL — returns { lang, slug } or null. */
 export function parsePartRoute(route: string): { lang: Lang; slug: string } | null {
   const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/part\/([^/]+)$/)
+  if (!m) return null
+  const lang = (m[1] as Lang | undefined) ?? 'en'
+  return { lang, slug: m[2] }
+}
+
+/** Build the localized URL for a topic detail page. */
+export function topicPathFor(slug: string, lang: Lang): string {
+  return lang === 'en' ? `/topics/${slug}` : `/${lang}/topics/${slug}`
+}
+
+/** All variants of /topics/:slug — one per (slug, lang). */
+export function topicRouteVariants(slugs: string[]): string[] {
+  const out: string[] = []
+  for (const slug of slugs) {
+    for (const lang of SUPPORTED_LANGS) {
+      out.push(topicPathFor(slug, lang))
+    }
+  }
+  return out
+}
+
+/** Parse a topic detail URL — returns { lang, slug } or null. */
+export function parseTopicRoute(route: string): { lang: Lang; slug: string } | null {
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/topics\/([^/]+)$/)
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, slug: m[2] }
