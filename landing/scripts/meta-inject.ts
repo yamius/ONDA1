@@ -430,6 +430,54 @@ function buildTechArticleJsonLd(
 }
 
 /**
+ * Organization JSON-LD for the brand. Emitted on homepage so Google
+ * can build a Knowledge Graph entity around "ONDA Life". Founder
+ * references the canonical Person by @id, completing the graph
+ * Organization → Person.
+ */
+function buildOrganizationJsonLd(): string {
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
+    name: 'ONDA Life',
+    url: SITE_URL,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/onda-logo-source.png`,
+      width: 1024,
+      height: 1024,
+    },
+    sameAs: AUTHOR_SAME_AS,
+    founder: {
+      '@id': AUTHOR_ID,
+    },
+  })
+}
+
+/**
+ * WebSite JSON-LD anchors the domain as a brand entity and links to
+ * its publisher Organization. We deliberately do not declare a
+ * SearchAction: the site has no server-side search endpoint that
+ * would honour ?q=… — claiming one without a real implementation
+ * is misleading and Google ignores SearchAction it cannot verify.
+ */
+function buildWebSiteJsonLd(): string {
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
+    url: SITE_URL,
+    name: 'ONDA Life',
+    description: 'Operating system for the biocomputer — biohacking, HRV tracking, and consciousness optimization protocols.',
+    publisher: {
+      '@id': `${SITE_URL}/#organization`,
+    },
+    inLanguage: ['en', 'es', 'ru', 'uk', 'zh'],
+  })
+}
+
+/**
  * Person JSON-LD for the canonical author. Emitted on homepage and /about
  * so Google has one rich Person entity to crawl; per-article TechArticle
  * blocks reference it by @id.
@@ -2086,6 +2134,15 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (canonicalUrl === SITE_URL || meta.aboutPage) {
     const personScript = `<script type="application/ld+json">${buildPersonJsonLd()}</script>`
     out = out.replace('</head>', `  ${personScript}\n</head>`)
+  }
+
+  // Organization + WebSite JSON-LD on homepage only. Together with the
+  // Person record on the same page they form a connected Knowledge
+  // Graph (WebSite → publisher → Organization → founder → Person).
+  if (canonicalUrl === SITE_URL) {
+    const orgScript = `<script type="application/ld+json">${buildOrganizationJsonLd()}</script>`
+    const siteScript = `<script type="application/ld+json">${buildWebSiteJsonLd()}</script>`
+    out = out.replace('</head>', `  ${orgScript}\n  ${siteScript}\n</head>`)
   }
 
   // Replace og:* and twitter:* meta tags
