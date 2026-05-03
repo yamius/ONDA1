@@ -362,6 +362,24 @@ for (const route of routes) {
       }
     }
 
+    // Self-referencing hreflang fallback for pages that didn't get a localized
+    // cluster from the branches above (EN-only pages: glossary terms, articles,
+    // license, privacy, terms, contact, etc). Reads the canonical URL injected
+    // by injectMetaIntoHtml and emits hreflang="en" + hreflang="x-default"
+    // pointing to the same canonical. Idempotent — gated on the absence of any
+    // existing hreflang= attribute.
+    if (!/hreflang=/.test(out)) {
+      const canonMatch = out.match(/<link\s+rel="canonical"\s+href="([^"]+)"/i)
+      if (canonMatch) {
+        const canonUrl = canonMatch[1]
+        const selfHreflang = [
+          `<link rel="alternate" hreflang="en" href="${canonUrl}">`,
+          `<link rel="alternate" hreflang="x-default" href="${canonUrl}">`,
+        ].join('\n  ')
+        out = out.replace('</head>', `  ${selfHreflang}\n</head>`)
+      }
+    }
+
     // Build fingerprint for deployment verification (view page source, search "onda-build")
     const buildStamp = `<!-- onda-build: ${new Date().toISOString()} -->`
     out = out.replace('</head>', `  ${buildStamp}\n</head>`)
