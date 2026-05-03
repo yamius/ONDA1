@@ -362,6 +362,20 @@ function buildDefinedTermJsonLd(name: string, description: string, url: string):
       '@type': 'DefinedTermSet',
       name: 'ONDA Life Glossary',
       url: `${SITE_URL}/glossary`,
+      // E-E-A-T: link the glossary set to its canonical author so every
+      // term page inherits an author signal via the @id reference.
+      // Full Person record lives on the homepage and /about.
+      author: {
+        '@type': 'Person',
+        '@id': AUTHOR_ID,
+        name: AUTHOR_NAME,
+        url: AUTHOR_URL,
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'ONDA Life',
+        url: SITE_URL,
+      },
     },
   }
   return JSON.stringify(term)
