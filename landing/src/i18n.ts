@@ -307,4 +307,28 @@ export function parseGlossarySlugRoute(route: string): { lang: Lang; slug: strin
   return { lang, slug: m[2] }
 }
 
+/** Build the localized URL for an article detail page. */
+export function articleSlugPathFor(slug: string, lang: Lang): string {
+  return lang === 'en' ? `/articles/${slug}` : `/${lang}/articles/${slug}`
+}
+
+/** All variants of /articles/:slug — one per (slug, lang). */
+export function articleSlugRouteVariants(slugs: string[]): string[] {
+  const out: string[] = []
+  for (const slug of slugs) {
+    for (const lang of SUPPORTED_LANGS) {
+      out.push(articleSlugPathFor(slug, lang))
+    }
+  }
+  return out
+}
+
+/** Parse an article detail URL — returns { lang, slug } or null. */
+export function parseArticleSlugRoute(route: string): { lang: Lang; slug: string } | null {
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/articles\/([^/]+)$/)
+  if (!m) return null
+  const lang = (m[1] as Lang | undefined) ?? 'en'
+  return { lang, slug: m[2] }
+}
+
 export default i18n

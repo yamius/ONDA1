@@ -22,16 +22,19 @@ import {
   levelPathFor,
   topicPathFor,
   glossarySlugPathFor,
+  articleSlugPathFor,
   parseMetricRoute,
   parseLevelRoute,
   parsePartRoute,
   parseTopicRoute,
   parseGlossarySlugRoute,
+  parseArticleSlugRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_TOPIC_ROUTE_SET, LOCALIZED_GLOSSARY_SLUG_ROUTE_SET } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_TOPIC_ROUTE_SET, LOCALIZED_GLOSSARY_SLUG_ROUTE_SET, LOCALIZED_ARTICLE_SLUG_ROUTE_SET } from './prerender-routes'
 import { getTopicBySlug, getLocalizedTopic } from '../src/data/topics'
 import { getTermBySlug } from '../src/data/glossary'
+import { getArticleBySlug } from '../src/data/articles'
 import i18n from '../src/i18n-server'
 import { getMetaForRoute, injectMetaIntoHtml } from './meta-inject'
 
@@ -378,6 +381,104 @@ function buildHreflangLinksForGlossary(slug: string, langs: Lang[]): string {
   return tags.join('\n  ')
 }
 
+function articleUrlFor(slug: string, lang: Lang): string {
+  return `${SITE_URL}${articleSlugPathFor(slug, lang)}`
+}
+
+// Per-language presence of bodies.{slug} entries in articles.json.
+const articleByLangPrerender: Partial<Record<Lang, Set<string>>> = {}
+for (const lang of SUPPORTED_LANGS) {
+  if (lang === 'en') continue
+  try {
+    const file = JSON.parse(readFileSync(join(localesDir, lang, 'articles.json'), 'utf-8')) as { bodies?: Record<string, unknown> }
+    articleByLangPrerender[lang] = new Set(Object.keys(file.bodies ?? {}))
+  } catch {
+    articleByLangPrerender[lang] = new Set()
+  }
+}
+
+function articleLangsWithTranslation(slug: string): Lang[] {
+  const out: Lang[] = ['en']
+  for (const lang of SUPPORTED_LANGS) {
+    if (lang === 'en') continue
+    if (articleByLangPrerender[lang]?.has(slug)) out.push(lang)
+  }
+  return out
+}
+
+function buildHreflangLinksForArticle(slug: string, langs: Lang[]): string {
+  const tags: string[] = []
+  for (const lang of langs) {
+    tags.push(`<link rel="alternate" hreflang="${lang}" href="${articleUrlFor(slug, lang)}">`)
+  }
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${articleUrlFor(slug, 'en')}">`)
+  return tags.join('\n  ')
+}
+
+/**
+ * Per-language meta for /articles/:slug — title/description come from
+ * locale JSON bodies.{slug}.{title,description} with EN fallback to the
+ * underlying article so partially-translated batches don't break SEO.
+ * Mirrors applyGlossarySlugLocalizedMeta.
+ */
+function applyArticleSlugLocalizedMeta(html: string, slug: string, lang: Lang): string {
+  const article = getArticleBySlug(slug)
+  if (!article) return html
+  const translatedLangs = articleLangsWithTranslation(slug)
+  const hasTranslation = translatedLangs.includes(lang)
+
+  let out = html
+  out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${lang}"`)
+
+  if (lang !== 'en' && !hasTranslation) {
+    // No body translation yet — canonical points to EN. Always emit hreflang
+    // cluster so global self-fallback doesn't fire and break reciprocity.
+    const enUrl = articleUrlFor(slug, 'en')
+    out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${enUrl}">`)
+    const hreflang = buildHreflangLinksForArticle(slug, translatedLangs)
+    out = out.replace('</head>', `  ${hreflang}\n</head>`)
+    return out
+  }
+
+  // Translated body (or EN) — apply localized title/desc and full hreflang cluster.
+  const titleKey = `bodies.${slug}.title`
+  const descKey = `bodies.${slug}.description`
+  const fixedT = i18n.getFixedT(lang, 'articles')
+  const tTitle = fixedT(titleKey)
+  const tDesc = fixedT(descKey)
+  const title = tTitle && tTitle !== titleKey ? tTitle : article.title
+  const description = tDesc && tDesc !== descKey ? tDesc : article.description
+
+  const fullTitle = `${title} | ONDA Life`
+  const url = articleUrlFor(slug, lang)
+  const escTitle = escAttr(fullTitle)
+  const escDesc = escAttr(trimDescription(description))
+  const escUrl = escAttr(url)
+
+  out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
+  out = out.replace(/<meta\s+name="description"\s+content="[^"]*"\s*\/?>/i, `<meta name="description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+name="title"\s+content="[^"]*"\s*\/?>/i, `<meta name="title" content="${escTitle}">`)
+  out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*"\s*\/?>/i, `<link rel="canonical" href="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="og:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:title" content="${escTitle}">`)
+  out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:description" content="${escDesc}">`)
+  out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*"\s*\/?>/gi, `<meta property="twitter:url" content="${escUrl}">`)
+  out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*"\s*\/?>/gi, '')
+
+  if (translatedLangs.length > 1) {
+    const hreflang = buildHreflangLinksForArticle(slug, translatedLangs)
+    const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[lang]}">`
+    out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
+  } else {
+    const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[lang]}">`
+    out = out.replace('</head>', `  ${ogLocale}\n</head>`)
+  }
+
+  return out
+}
+
 /**
  * Per-language meta for /glossary/:slug — title/description come from
  * locale JSON bodies.{slug}.{title,shortDescription} with EN fallback to the
@@ -492,11 +593,13 @@ for (const route of routes) {
     const isPartLocalized = LOCALIZED_PART_ROUTE_SET.has(route)
     const isTopicLocalized = LOCALIZED_TOPIC_ROUTE_SET.has(route)
     const isGlossarySlugLocalized = LOCALIZED_GLOSSARY_SLUG_ROUTE_SET.has(route)
+    const isArticleSlugLocalized = LOCALIZED_ARTICLE_SLUG_ROUTE_SET.has(route)
     const metricInfo = isMetricLocalized ? parseMetricRoute(route) : null
     const levelInfo = isLevelLocalized ? parseLevelRoute(route) : null
     const partInfo = isPartLocalized ? parsePartRoute(route) : null
     const topicInfo = isTopicLocalized ? parseTopicRoute(route) : null
     const glossarySlugInfo = isGlossarySlugLocalized ? parseGlossarySlugRoute(route) : null
+    const articleSlugInfo = isArticleSlugLocalized ? parseArticleSlugRoute(route) : null
     const lang: Lang = isLocalized
       ? langFromPath(route)
       : metricInfo ? metricInfo.lang
@@ -504,6 +607,7 @@ for (const route of routes) {
       : partInfo ? partInfo.lang
       : topicInfo ? topicInfo.lang
       : glossarySlugInfo ? glossarySlugInfo.lang
+      : articleSlugInfo ? articleSlugInfo.lang
       : 'en'
     const basePath = isLocalized ? stripLangPrefix(route) : route
 
@@ -528,6 +632,8 @@ for (const route of routes) {
       out = applyTopicLocalizedMeta(out, topicInfo.slug, topicInfo.lang)
     } else if (glossarySlugInfo) {
       out = applyGlossarySlugLocalizedMeta(out, glossarySlugInfo.slug, glossarySlugInfo.lang)
+    } else if (articleSlugInfo) {
+      out = applyArticleSlugLocalizedMeta(out, articleSlugInfo.slug, articleSlugInfo.lang)
     } else if (partInfo) {
       const translatedLangs = partLangsWithTranslation(partInfo.slug)
       const hasTranslation = translatedLangs.includes(partInfo.lang)
