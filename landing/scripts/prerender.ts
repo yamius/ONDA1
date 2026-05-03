@@ -403,6 +403,22 @@ for (const route of routes) {
       }
     }
 
+    // Self-referencing hreflang fallback for EN-only pages (glossary,
+    // articles, topics, license, privacy, terms, contact, the-stack — pages
+    // without translation siblings). Google recommends emitting at least a
+    // self-hreflang + x-default even for single-language pages so crawlers
+    // understand the page is intentionally available only in EN. Localized
+    // pages already got their cluster from applyLocalizedMeta etc., so we
+    // only inject when no hreflang link exists yet. Idempotent across
+    // rebuilds because we gate on presence.
+    if (!out.includes('hreflang=')) {
+      const selfUrl = (SITE_URL + (route === '/' ? '' : route)).replace(/\/+$/, '') || SITE_URL
+      const tags =
+        `<link rel="alternate" hreflang="en" href="${selfUrl}">\n` +
+        `  <link rel="alternate" hreflang="x-default" href="${selfUrl}">`
+      out = out.replace('</head>', `  ${tags}\n</head>`)
+    }
+
     // Build fingerprint for deployment verification (view page source, search "onda-build")
     const buildStamp = `<!-- onda-build: ${new Date().toISOString()} -->`
     out = out.replace('</head>', `  ${buildStamp}\n</head>`)

@@ -97,7 +97,11 @@
 - hreflang violations: **0** ✓
 - jsonld errors: **0** ✓
 - titleOutsideBudget: 174 (titles рукописные — отдельная задача, риск SEO)
-- hreflangMissing: 302 (отдельный skim, не входит в этот батч)
+
+**Bonus: hreflangMissing 302 → 0:**
+- Добавил self-referencing hreflang fallback в конец prerender pipeline для EN-only страниц (glossary 216, articles 70, topics 11, license/privacy/terms/contact/the-stack)
+- Гейт `!out.includes('hreflang=')` — localized страницы (ru/es/uk/zh/en homepage, level, metric, part-with-translation) уже получили полный кластер раньше, не дублируем
+- 558 routes, 0 hreflang violations, идемпотентно
 
 ---
 
