@@ -2065,6 +2065,32 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
       opts
     )}</script>`
     out = out.replace('</head>', `  ${techArticleScript}\n</head>`)
+
+    // Highwire Press citation_* meta tags. Read by Google Scholar AND
+    // most academic AI agents (Semantic Scholar, Elicit, Consensus.app,
+    // ResearchGate, Connected Papers). Lightweight academic-citation
+    // surface — does not affect Google web search.
+    const datePublished = meta.techArticle.datePublished
+    // Highwire prefers YYYY/MM/DD (slashes), but YYYY-MM-DD also accepted.
+    const citationDate = datePublished ? datePublished.split('T')[0].replace(/-/g, '/') : ''
+    const citationAuthor = escapeHtmlAttr(AUTHOR_NAME)
+    const citationTitle = escapeHtmlAttr(meta.techArticle.name)
+    const citationAbstract = escapeHtmlAttr(meta.techArticle.description)
+    const citationUrl = escapeHtmlAttr(meta.techArticle.url)
+    const citationTags = [
+      `<meta name="citation_title" content="${citationTitle}">`,
+      `<meta name="citation_author" content="${citationAuthor}">`,
+      `<meta name="citation_author_institution" content="ONDA Life">`,
+      citationDate ? `<meta name="citation_publication_date" content="${citationDate}">` : '',
+      citationDate ? `<meta name="citation_online_date" content="${citationDate}">` : '',
+      `<meta name="citation_fulltext_html_url" content="${citationUrl}">`,
+      `<meta name="citation_abstract_html_url" content="${citationUrl}">`,
+      `<meta name="citation_abstract" content="${citationAbstract}">`,
+      `<meta name="citation_journal_title" content="ONDA Life">`,
+      `<meta name="citation_publisher" content="ONDA Life">`,
+      `<meta name="citation_language" content="en">`,
+    ].filter(Boolean).join('\n  ')
+    out = out.replace('</head>', `  ${citationTags}\n</head>`)
   }
 
   // JSON-LD: ContactPage
