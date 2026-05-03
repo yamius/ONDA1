@@ -28,6 +28,29 @@ const AUTHOR_NAME = 'Yakiv'
 const AUTHOR_URL = 'https://www.linkedin.com/in/yamius'
 const AUTHOR_SAME_AS = ['https://www.linkedin.com/in/yamius']
 
+export const TITLE_MAX = 60
+export const DESC_MAX = 160
+
+/**
+ * Trim text to fit within Google's SERP slot, preserving word boundary.
+ *
+ * - Pass-through when already within budget.
+ * - Otherwise cut at the last space before (max - 1) and append `…`.
+ * - Idempotent: text already ending in `…` is left alone.
+ *
+ * Intentionally does not pad short texts — padded descriptions look like
+ * keyword stuffing to Google and provide no SEO benefit. Short titles and
+ * descriptions are fine; Google will use them as-is or rewrite slightly.
+ */
+export function truncateForBudget(text: string, max: number): string {
+  if (text.length <= max) return text
+  if (text.endsWith('…')) return text
+  const slice = text.slice(0, max - 1)
+  const lastSpace = slice.lastIndexOf(' ')
+  const cut = lastSpace > Math.floor(max * 0.6) ? slice.slice(0, lastSpace) : slice
+  return `${cut.replace(/[\s,;:.!?\-—…]+$/, '')}…`
+}
+
 /** Build canonical URL without trailing slash. Google sees only one URL variant. */
 function buildCanonicalUrl(route: string): string {
   const base = SITE_URL.replace(/\/+$/, '')
@@ -1919,8 +1942,12 @@ function escapeHtmlAttr(s: string): string {
  * Injects meta tags, canonical link, and JSON-LD into HTML string.
  */
 export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
-  const escapedTitle = escapeHtmlAttr(meta.title)
-  const escapedDesc = escapeHtmlAttr(meta.description)
+  // Truncate to SERP budgets BEFORE escaping — escapeHtmlAttr can turn one
+  // character into a 5-char entity which would skew length math.
+  const trimmedTitle = truncateForBudget(meta.title, TITLE_MAX)
+  const trimmedDesc = truncateForBudget(meta.description, DESC_MAX)
+  const escapedTitle = escapeHtmlAttr(trimmedTitle)
+  const escapedDesc = escapeHtmlAttr(trimmedDesc)
   const canonicalUrl = (meta.url || SITE_URL).replace(/\/+$/, '') || SITE_URL
   const escapedUrl = escapeHtmlAttr(canonicalUrl)
 

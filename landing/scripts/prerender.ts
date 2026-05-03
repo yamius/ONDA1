@@ -25,7 +25,7 @@ import {
   type Lang,
 } from '../src/i18n'
 import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET } from './prerender-routes'
-import { getMetaForRoute, injectMetaIntoHtml } from './meta-inject'
+import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, TITLE_MAX, DESC_MAX } from './meta-inject'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const projectRoot = join(__dirname, '..')
@@ -361,6 +361,17 @@ for (const route of routes) {
         out = out.replace('</head>', `  ${hreflang}\n</head>`)
       }
     }
+
+    // Final-pass title + description truncate. Catches localized branches
+    // (applyLocalizedMeta, metric, level, part) that write <title> and
+    // <meta description> directly without going through injectMetaIntoHtml.
+    // Idempotent: a value already within budget is returned unchanged.
+    out = out.replace(/<title>([^<]*)<\/title>/i, (_m, t: string) => `<title>${truncateForBudget(t, TITLE_MAX)}</title>`)
+    out = out.replace(/<meta\s+name="description"\s+content="([^"]*)">/i, (_m, d: string) => `<meta name="description" content="${truncateForBudget(d, DESC_MAX)}">`)
+    out = out.replace(/<meta\s+property="og:title"\s+content="([^"]*)">/gi, (_m, t: string) => `<meta property="og:title" content="${truncateForBudget(t, TITLE_MAX)}">`)
+    out = out.replace(/<meta\s+property="og:description"\s+content="([^"]*)">/gi, (_m, d: string) => `<meta property="og:description" content="${truncateForBudget(d, DESC_MAX)}">`)
+    out = out.replace(/<meta\s+property="twitter:title"\s+content="([^"]*)">/gi, (_m, t: string) => `<meta property="twitter:title" content="${truncateForBudget(t, TITLE_MAX)}">`)
+    out = out.replace(/<meta\s+property="twitter:description"\s+content="([^"]*)">/gi, (_m, d: string) => `<meta property="twitter:description" content="${truncateForBudget(d, DESC_MAX)}">`)
 
     // Self-referencing hreflang fallback for pages that didn't get a localized
     // cluster from the branches above (EN-only pages: glossary terms, articles,
