@@ -47,3 +47,11 @@ attached_assets/*.log
 # Bot: topics already used for generation (local state)
 scripts/used_topics.txt
 .tmp/
+
+# Build artifacts from landing/scripts/optimize-images.mjs.
+# Source PNGs and the 480w/768w hero WebP variants are committed (they're
+# referenced as <link rel=preload> from index.html and need to exist on
+# first build). Everything else is regenerated on every npm run build —
+# Replit deploy runs the same script, so these don't need to ship in git.
+landing/public/**/*.avif
+landing/public/**/*-640w.webp
