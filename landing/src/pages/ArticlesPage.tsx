@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { articlesMeta as articles } from '../data/articles/articles-meta.generated'
+import { ARTICLE_DATES } from '../data/article-dates.generated'
 import { FEATURED_ARTICLE_SLUGS, ARTICLE_CATEGORIES } from '../data/articles-categories'
 import { OptimizedImage } from '../components/OptimizedImage'
 import { langFromPath, homePathFor } from '../i18n'
@@ -92,6 +93,16 @@ export function ArticlesPage() {
       .filter((a): a is ArticleCard => !!a),
     [allArticles]
   )
+
+  // Recently updated rail (Phase 2.5): sort by ARTICLE_DATES.modified desc,
+  // skip MD articles (they don't appear in the dates registry), take 5.
+  const recentlyUpdated = useMemo(() => {
+    return allArticles
+      .filter((a) => !a.isMd && ARTICLE_DATES[a.slug])
+      .map((a) => ({ ...a, modified: ARTICLE_DATES[a.slug].modified }))
+      .sort((a, b) => Date.parse(b.modified) - Date.parse(a.modified))
+      .slice(0, 5)
+  }, [allArticles])
 
   useEffect(() => {
     const title = t('meta.title')
@@ -226,6 +237,32 @@ export function ArticlesPage() {
           <p className="font-mono text-sm text-white/30">
             {t('noResults')}
           </p>
+        </div>
+      )}
+
+      {/* Recently Updated rail (Phase 2.5) */}
+      {recentlyUpdated.length > 0 && (
+        <div className="mt-16" data-testid="rail-recently-updated">
+          <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
+            RECENTLY UPDATED
+          </h2>
+          <div className="grid gap-3 md:grid-cols-5">
+            {recentlyUpdated.map((article) => (
+              <Link
+                key={article.slug}
+                to={article.path}
+                className="glass-card group flex flex-col rounded-lg p-4 transition-all hover:border-terminal-green/20"
+                data-testid={`link-recently-updated-${article.slug}`}
+              >
+                <span className="mb-2 font-mono text-[10px] uppercase tracking-widest text-white/30">
+                  {new Date(article.modified).toISOString().slice(0, 10)}
+                </span>
+                <h4 className="font-semibold leading-snug transition-colors group-hover:text-terminal-green line-clamp-3">
+                  {article.title}
+                </h4>
+              </Link>
+            ))}
+          </div>
         </div>
       )}
 

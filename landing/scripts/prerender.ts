@@ -457,6 +457,14 @@ try {
 } catch {
   console.warn('[build] seo-crawl failed (non-fatal)')
 }
+// OG-card generator — fills hero-image-less articles with branded share
+// cards. Runs after prerender so dist/ exists. Idempotent.
+console.log('[build] og-image-generator')
+try {
+  execSync('node scripts/og-image-generator.mjs', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+} catch {
+  console.warn('[build] og-image-generator failed (non-fatal)')
+}
 // GEO content audits — flagged non-fatal so a single content gap never breaks
 // the build. Set SEO_STRICT=1 in CI to make any of these fatal.
 const geoAudits: { label: string; cmd: string }[] = [
@@ -465,6 +473,8 @@ const geoAudits: { label: string; cmd: string }[] = [
   { label: 'validate-glossary-definition', cmd: 'tsx scripts/validate-glossary-definition.mjs' },
   { label: 'validate-keyword-position', cmd: 'node scripts/validate-keyword-position.mjs' },
   { label: 'validate-brand-reinforcement', cmd: 'node scripts/validate-brand-reinforcement.mjs' },
+  { label: 'validate-hreflang', cmd: 'node scripts/validate-hreflang.mjs' },
+  { label: 'validate-jsonld', cmd: 'node scripts/validate-jsonld.mjs' },
 ]
 for (const audit of geoAudits) {
   console.log(`[build] ${audit.label}`)

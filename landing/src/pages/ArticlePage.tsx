@@ -6,6 +6,7 @@ import rehypeSlug from 'rehype-slug'
 import { NotFoundPage } from './NotFoundPage'
 import { OptimizedImage } from '../components/OptimizedImage'
 import { getArticleBySlug } from '../data/articles'
+import { articlesMeta } from '../data/articles/articles-meta.generated'
 import { glossaryTerms } from '../data/glossary'
 import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
@@ -445,6 +446,18 @@ export function ArticlePage() {
     .map((s) => glossaryTerms.find((t) => t.slug === s))
     .filter((t): t is NonNullable<typeof t> => t != null)
     .slice(0, 5)
+
+  // Related articles rail (Phase 2.5): siblings in the same category,
+  // excluding self. Prefer those whose slug is in this article's
+  // relatedSlugs (deeper topical match) before falling back to category
+  // siblings. Always max 3 cards. Pure derivation — no extra fetches.
+  const relatedArticles = (() => {
+    const siblings = articlesMeta.filter((a) => a.slug !== article.slug && a.category === article.category)
+    const slugSet = new Set(article.relatedSlugs)
+    const preferred = siblings.filter((a) => slugSet.has(a.slug))
+    const rest = siblings.filter((a) => !slugSet.has(a.slug))
+    return [...preferred, ...rest].slice(0, 3)
+  })()
 
   const markdownComponents = {
     h2: ({ children, id, ...props }: { children?: React.ReactNode; id?: string }) => {
@@ -1044,6 +1057,37 @@ export function ArticlePage() {
           >
             → {tNeuralSuggestion.linkText}
           </Link>
+        </div>
+      )}
+
+      {relatedArticles.length > 0 && (
+        <div className="mt-16 border-t border-white/5 pt-10">
+          <h3 className="mb-6 font-mono text-xs tracking-widest text-white/30">
+            RELATED ARTICLES
+          </h3>
+          <div className="grid gap-3 md:grid-cols-3" data-testid="rail-related-articles">
+            {relatedArticles.map((rel) => (
+              <Link
+                key={rel.slug}
+                to={lang === 'en' ? `/articles/${rel.slug}` : `/${lang}/articles/${rel.slug}`}
+                className="glass-card group flex flex-col rounded-lg p-4 transition-all hover:border-terminal-green/20"
+                data-testid={`link-related-article-${rel.slug}`}
+              >
+                <span className="mb-2 font-mono text-[10px] uppercase tracking-widest text-terminal-green/60">
+                  {rel.category}
+                </span>
+                <h4 className="font-semibold leading-snug transition-colors group-hover:text-terminal-green">
+                  {rel.title}
+                </h4>
+                <p className="mt-2 line-clamp-3 font-mono text-xs text-white/40">
+                  {rel.description}
+                </p>
+                <span className="mt-3 font-mono text-xs text-terminal-green/30 transition-colors group-hover:text-terminal-green/70">
+                  → READ
+                </span>
+              </Link>
+            ))}
+          </div>
         </div>
       )}
 

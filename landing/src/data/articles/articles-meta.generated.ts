@@ -1724,5 +1724,47 @@ export const articlesMeta: ArticleMeta[] = [
       "link": "/articles/fascial-tensegrity-protocol-myofascial-noise",
       "linkText": "Fascial Tensegrity Protocol →"
     }
+  },
+  {
+    "slug": "zone-2-cardio-mitochondrial-bandwidth",
+    "title": "Zone 2 Cardio: Expanding Mitochondrial Bandwidth",
+    "subtitle": "Low-intensity steady-state as the throughput upgrade for your cellular power grid",
+    "seoTitle": "Zone 2 Cardio: Mitochondrial Bandwidth Protocol | ONDA Biology",
+    "description": "Zone 2 cardio is the bandwidth upgrade for your mitochondria. Train at the lactate threshold to expand fat-burning throughput, raise VO₂max ceiling, and lock in clean fuel switching.",
+    "category": "ONDA Protocol",
+    "introStyle": "emerald",
+    "relatedSlugs": [
+      "metabolic-flexibility-dual-fuel-system",
+      "mitochondrial-biogenesis-cellular-power-grid",
+      "metabolic-redundancy-hybrid-power-architecture",
+      "heart-rate-variability",
+      "lactate"
+    ],
+    "neuralSuggestion": {
+      "text": "Mitochondrial bandwidth handles steady throughput. Now audit the burst-mode ceiling — VO₂max as the cardiorespiratory peak channel.",
+      "link": "/articles/vo2-max-cardiorespiratory-ceiling",
+      "linkText": "VO₂max — the burst-mode ceiling →"
+    }
+  },
+  {
+    "slug": "cold-thermogenesis-adaptation-curve",
+    "title": "Cold Thermogenesis: The Adaptation Curve",
+    "subtitle": "Dose, duration, and the slope from cold-shock panic to brown-fat reactor activation",
+    "seoTitle": "Cold Thermogenesis Protocol: Dose, Duration & UCP1 | ONDA Biology",
+    "description": "Cold thermogenesis is a dose-response system, not a willpower contest. Map the adaptation curve from cold-shock to brown-adipose ignition with measured exposure windows.",
+    "category": "ONDA Protocol",
+    "introStyle": "cyan",
+    "relatedSlugs": [
+      "vagus-nerve",
+      "heart-rate-variability",
+      "mitochondrial-biogenesis-cellular-power-grid",
+      "norepinephrine",
+      "brown-adipose-tissue"
+    ],
+    "neuralSuggestion": {
+      "text": "Cold trains the thermogenic reactor at the surface. Now zoom into the cellular heater itself — the brown adipose tissue UCP1 furnace.",
+      "link": "/articles/brown-adipose-thermogenic-reactor",
+      "linkText": "Brown Adipose: the cellular furnace →"
+    }
   }
 ]

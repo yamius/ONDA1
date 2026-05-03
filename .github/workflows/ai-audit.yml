@@ -1,0 +1,95 @@
+# AI Visibility audit cron.
+#
+# Runs landing/scripts/ai-audit.mjs daily at 03:00 UTC against the seed
+# prompts in landing/docs/ai-audit-prompts.md, queries every configured AI
+# search engine (Perplexity, OpenAI web-search, Brave, Bing), and appends
+# the result to dist/ai-audit/history.jsonl. The dashboard markdown is
+# regenerated from the rolling history.
+#
+# Without API keys, the audit script writes a "skipped" row instead of
+# failing — the workflow is non-fatal by design so a quota outage on a
+# single engine doesn't break the cron.
+#
+# Outputs:
+#   - dist/ai-audit/run-<timestamp>.json (per-run snapshot)
+#   - dist/ai-audit/history.jsonl (append-only history)
+#   - dist/ai-audit/dashboard.md (regenerated trend dashboard)
+
+name: AI visibility audit
+
+on:
+  schedule:
+    - cron: '0 3 * * *'  # 03:00 UTC daily
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: 'Fail on >20% week-over-week drop'
+        required: false
+        default: 'false'
+        type: choice
+        options: [false, true]
+
+permissions:
+  contents: write   # to push history.jsonl back to main
+
+concurrency:
+  group: ai-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: landing
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: landing/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run AI visibility audit
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+          BING_SEARCH_API_KEY: ${{ secrets.BING_SEARCH_API_KEY }}
+          AI_AUDIT_STRICT: ${{ inputs.strict || 'false' }}
+        run: |
+          mkdir -p dist/ai-audit
+          node scripts/ai-audit.mjs || echo "[ai-audit] script returned non-zero (continuing for history append)"
+
+      - name: Append history + regenerate dashboard
+        run: node scripts/ai-audit-history.mjs
+
+      - name: Upload audit artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ai-audit-${{ github.run_number }}
+          path: landing/dist/ai-audit/
+          retention-days: 90
+
+      - name: Commit history.jsonl + dashboard.md
+        # Only commit if files actually changed. Use a bot identity to avoid
+        # polluting human author history.
+        run: |
+          git config user.name "ai-audit-bot"
+          git config user.email "ai-audit-bot@users.noreply.github.com"
+          if [ -f dist/ai-audit/history.jsonl ]; then
+            mkdir -p docs/ai-audit
+            cp dist/ai-audit/history.jsonl docs/ai-audit/history.jsonl
+            cp dist/ai-audit/dashboard.md docs/ai-audit/dashboard.md 2>/dev/null || true
+            git add docs/ai-audit/history.jsonl docs/ai-audit/dashboard.md 2>/dev/null || true
+            git diff --cached --quiet || git commit -m "ai-audit: $(date -u +%FT%TZ) snapshot"
+            git push || echo "[ai-audit] nothing to push"
+          fi
+        working-directory: landing

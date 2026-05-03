@@ -44,7 +44,8 @@ export const termArticleSlugs: Record<string, string[]> = {
     "neural-optimizer-estrogen",
     "energy-governor-tsh",
     "adrenal-governor-thermal-runaway",
-    "hydraulic-viscosity-onda-transport-bus"
+    "hydraulic-viscosity-onda-transport-bus",
+    "zone-2-cardio-mitochondrial-bandwidth"
   ],
   "metabolic-flexibility": [
     "metabolic-flexibility-dual-fuel-system",
@@ -53,7 +54,8 @@ export const termArticleSlugs: Record<string, string[]> = {
     "mitochondrial-dna-red-light",
     "femtech-cyclical-architecture",
     "energy-sensor-leptin",
-    "metabolic-redundancy-hybrid-power-architecture"
+    "metabolic-redundancy-hybrid-power-architecture",
+    "zone-2-cardio-mitochondrial-bandwidth"
   ],
   "insulin-sensitivity": [
     "metabolic-flexibility-dual-fuel-system",
@@ -90,7 +92,8 @@ export const termArticleSlugs: Record<string, string[]> = {
     "ancestral-sync-circadian-anchors",
     "longevity-protocol-biological-clock-reset",
     "anti-entropy-neural-architecture",
-    "metabolic-redundancy-hybrid-power-architecture"
+    "metabolic-redundancy-hybrid-power-architecture",
+    "zone-2-cardio-mitochondrial-bandwidth"
   ],
   "atp": [
     "circadian-reset-mastering-light",
@@ -99,7 +102,8 @@ export const termArticleSlugs: Record<string, string[]> = {
     "mitochondrial-dna-red-light",
     "cacao-stem-cells",
     "cognitive-architecture-neural-throughput",
-    "ancestral-sync-circadian-anchors"
+    "ancestral-sync-circadian-anchors",
+    "zone-2-cardio-mitochondrial-bandwidth"
   ],
   "ketosis": [
     "metabolic-flexibility-dual-fuel-system",
@@ -216,10 +220,12 @@ export const termArticleSlugs: Record<string, string[]> = {
     "fascial-tensegrity-protocol-myofascial-noise",
     "vascular-tensegrity-microvascular-mechanics",
     "bohr-effect-oxygen-telemetry",
-    "hydraulic-viscosity-onda-transport-bus"
+    "hydraulic-viscosity-onda-transport-bus",
+    "cold-thermogenesis-adaptation-curve"
   ],
   "mammalian-dive-reflex": [
-    "vagus-nerve-master-key"
+    "vagus-nerve-master-key",
+    "cold-thermogenesis-adaptation-curve"
   ],
   "thalamus": [
     "circadian-reset-mastering-light",
@@ -230,14 +236,16 @@ export const termArticleSlugs: Record<string, string[]> = {
     "neural-bridge-alpha-flow-gateway",
     "quiet-mode-alpha-cortisol-buffer",
     "rhythmic-entrainment-system-frequencies",
-    "neural-signal-to-noise-cleaning-system-channel"
+    "neural-signal-to-noise-cleaning-system-channel",
+    "cold-thermogenesis-adaptation-curve"
   ],
   "hypothalamus": [
     "circadian-reset-mastering-light",
     "energy-sensor-leptin",
     "neural-optimizer-estrogen",
     "ancestral-sync-circadian-anchors",
-    "quiet-mode-alpha-cortisol-buffer"
+    "quiet-mode-alpha-cortisol-buffer",
+    "cold-thermogenesis-adaptation-curve"
   ],
   "diaphragm": [
     "breathwork-command-line-interface",
@@ -301,7 +309,8 @@ export const termArticleSlugs: Record<string, string[]> = {
     "quiet-mode-alpha-cortisol-buffer",
     "spinal-harddrive-cpg-autonomous-scripts",
     "spinal-intelligence-decentralized-control",
-    "adrenal-governor-thermal-runaway"
+    "adrenal-governor-thermal-runaway",
+    "cold-thermogenesis-adaptation-curve"
   ],
   "heart-rate-variability": [
     "vagus-nerve-master-key",
@@ -335,7 +344,9 @@ export const termArticleSlugs: Record<string, string[]> = {
     "spinal-intelligence-decentralized-control",
     "adrenal-governor-thermal-runaway",
     "interoceptive-precision-sensor-calibration",
-    "neural-signal-to-noise-cleaning-system-channel"
+    "neural-signal-to-noise-cleaning-system-channel",
+    "zone-2-cardio-mitochondrial-bandwidth",
+    "cold-thermogenesis-adaptation-curve"
   ],
   "central-pattern-generators": [
     "cpg-neural-autopilot",
@@ -501,7 +512,8 @@ export const termArticleSlugs: Record<string, string[]> = {
   "norepinephrine": [
     "adaptation-hack-range-fractionation",
     "quiet-mode-alpha-cortisol-buffer",
-    "physiological-concentration-flow-state-hardwired"
+    "physiological-concentration-flow-state-hardwired",
+    "cold-thermogenesis-adaptation-curve"
   ],
   "prefrontal-cortex": [
     "dopamine-architecture-mastering-desire",
@@ -587,7 +599,8 @@ export const termArticleSlugs: Record<string, string[]> = {
     "physiological-concentration-flow-state-hardwired",
     "ventral-tegmental-core-motivational-salience",
     "anterior-cingulate-core-coherence-monitoring",
-    "acc-calibration-protocol-cognitive-control"
+    "acc-calibration-protocol-cognitive-control",
+    "cold-thermogenesis-adaptation-curve"
   ],
   "ventral-tegmental-area": [
     "dopamine-architecture-mastering-desire",
@@ -665,7 +678,8 @@ export const termArticleSlugs: Record<string, string[]> = {
     "spinal-harddrive-cpg-autonomous-scripts",
     "rhythmic-entrainment-system-frequencies",
     "spinal-intelligence-decentralized-control",
-    "neural-signal-to-noise-cleaning-system-channel"
+    "neural-signal-to-noise-cleaning-system-channel",
+    "cold-thermogenesis-adaptation-curve"
   ],
   "feelings": [
     "gut-brain-axis-data-link",
@@ -852,7 +866,9 @@ export const termArticleSlugs: Record<string, string[]> = {
     "vascular-tensegrity-microvascular-mechanics",
     "bohr-effect-oxygen-telemetry",
     "anterior-cingulate-core-coherence-monitoring",
-    "acc-calibration-protocol-cognitive-control"
+    "acc-calibration-protocol-cognitive-control",
+    "zone-2-cardio-mitochondrial-bandwidth",
+    "cold-thermogenesis-adaptation-curve"
   ],
   "f3-zone": [
     "electric-medicine-neuromodulation"

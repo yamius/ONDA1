@@ -1983,6 +1983,15 @@ export function getMetaForRoute(route: string): RouteMeta {
         meta.image = absImage
         if (article.imageAlt) meta.imageAlt = article.imageAlt
         if (meta.techArticle) meta.techArticle.image = absImage
+      } else {
+        // Fallback: reference the auto-generated branded OG card emitted
+        // by scripts/og-image-generator.mjs in the same build. The file
+        // is created post-prerender but exists at deploy time, so the
+        // og:image URL resolves correctly when crawlers fetch the page.
+        const fallbackOg = `${SITE_URL}/og-images/${slug}.png`
+        meta.image = fallbackOg
+        meta.imageAlt = `${article.title} — ONDA Life`
+        if (meta.techArticle) meta.techArticle.image = fallbackOg
       }
       if (article.howToSteps && article.howToSteps.length > 0) {
         meta.howTo = {
