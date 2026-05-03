@@ -13,6 +13,21 @@ import { METRIC_DETAILS } from '../src/data/bioMetrics'
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 
+/**
+ * Canonical author identity. Used in:
+ *  - <meta name="author"> on every page
+ *  - JSON-LD Person block on homepage + /about
+ *  - JSON-LD TechArticle.author reference (by @id) on every article
+ *
+ * The @id is what links the per-article reference to the full Person
+ * description on the homepage. Google walks the graph and treats them
+ * as the same entity.
+ */
+const AUTHOR_ID = `${SITE_URL}/#author`
+const AUTHOR_NAME = 'Yakiv'
+const AUTHOR_URL = 'https://www.linkedin.com/in/yamius'
+const AUTHOR_SAME_AS = ['https://www.linkedin.com/in/yamius']
+
 /** Build canonical URL without trailing slash. Google sees only one URL variant. */
 function buildCanonicalUrl(route: string): string {
   const base = SITE_URL.replace(/\/+$/, '')
@@ -351,9 +366,11 @@ function buildTechArticleJsonLd(
     url,
     datePublished,
     author: {
-      '@type': 'Organization',
-      name: 'ONDA',
-      url: SITE_URL,
+      '@type': 'Person',
+      '@id': AUTHOR_ID,
+      name: AUTHOR_NAME,
+      url: AUTHOR_URL,
+      sameAs: AUTHOR_SAME_AS,
     },
     publisher: {
       '@type': 'Organization',
@@ -373,6 +390,28 @@ function buildTechArticleJsonLd(
   if (opts?.proficiencyLevel) article.proficiencyLevel = opts.proficiencyLevel
   if (opts?.educationalLevel) article.educationalLevel = opts.educationalLevel
   return JSON.stringify(article)
+}
+
+/**
+ * Person JSON-LD for the canonical author. Emitted on homepage and /about
+ * so Google has one rich Person entity to crawl; per-article TechArticle
+ * blocks reference it by @id.
+ */
+function buildPersonJsonLd(): string {
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': AUTHOR_ID,
+    name: AUTHOR_NAME,
+    url: AUTHOR_URL,
+    sameAs: AUTHOR_SAME_AS,
+    jobTitle: 'Founder, ONDA Life',
+    worksFor: {
+      '@type': 'Organization',
+      name: 'ONDA Life',
+      url: SITE_URL,
+    },
+  })
 }
 
 function buildContactPageJsonLd(
@@ -1989,6 +2028,23 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
     out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, descMeta)
   } else {
     out = out.replace('</head>', `  ${descMeta}\n</head>`)
+  }
+
+  // E-E-A-T: meta name="author" on every page. The full Person identity is
+  // emitted as JSON-LD on homepage + /about (below); this meta tag is the
+  // lightweight signal Google scans on every URL.
+  const authorMeta = `<meta name="author" content="${escapeHtmlAttr(AUTHOR_NAME)}">`
+  if (out.includes('name="author"')) {
+    out = out.replace(/<meta\s+name="author"\s+content="[^"]*">/i, authorMeta)
+  } else {
+    out = out.replace('</head>', `  ${authorMeta}\n</head>`)
+  }
+
+  // Person JSON-LD on homepage and /about — Google links per-article
+  // TechArticle.author (which uses @id) to this full Person record.
+  if (canonicalUrl === SITE_URL || meta.aboutPage) {
+    const personScript = `<script type="application/ld+json">${buildPersonJsonLd()}</script>`
+    out = out.replace('</head>', `  ${personScript}\n</head>`)
   }
 
   // Replace og:* and twitter:* meta tags
