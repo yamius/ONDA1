@@ -398,6 +398,31 @@ execSync('tsx scripts/feed.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' }
 // llms.txt + llms-full.txt for AI search (Perplexity, ChatGPT, Claude).
 console.log('[build] llms-txt')
 execSync('tsx scripts/llms-txt.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+// Google News sitemap (last-48h) — must run AFTER sitemap.ts and after
+// llms-txt so dates and URLs match the rest of the build artifacts.
+console.log('[build] sitemap-news')
+try {
+  execSync('tsx scripts/sitemap-news.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+} catch (err) {
+  if (process.env.SEO_STRICT === '1') throw err
+  console.warn('[build] sitemap-news failed (non-fatal)')
+}
+// Image sitemap — one <url> per page with <image:image> children + license.
+console.log('[build] sitemap-images')
+try {
+  execSync('tsx scripts/sitemap-images.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+} catch (err) {
+  if (process.env.SEO_STRICT === '1') throw err
+  console.warn('[build] sitemap-images failed (non-fatal)')
+}
+// RAG-friendly JSONL corpus + manifest + .gz variant.
+console.log('[build] build-corpus')
+try {
+  execSync('tsx scripts/build-corpus.mjs', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+} catch (err) {
+  if (process.env.SEO_STRICT === '1') throw err
+  console.warn('[build] build-corpus failed (non-fatal)')
+}
 // IndexNow ping (Bing/Yandex/Seznam/Naver). Skipped automatically when
 // INDEXNOW_DISABLED=1 or when nothing changed since last submission.
 console.log('[build] indexnow')
@@ -431,5 +456,23 @@ try {
   execSync('node scripts/seo-crawl.mjs', { cwd: join(__dirname, '..'), stdio: 'inherit' })
 } catch {
   console.warn('[build] seo-crawl failed (non-fatal)')
+}
+// GEO content audits — flagged non-fatal so a single content gap never breaks
+// the build. Set SEO_STRICT=1 in CI to make any of these fatal.
+const geoAudits: { label: string; cmd: string }[] = [
+  { label: 'research-citation-audit', cmd: 'node scripts/research-citation-audit.mjs' },
+  { label: 'audit-faq-coverage', cmd: 'tsx scripts/audit-faq-coverage.mjs' },
+  { label: 'validate-glossary-definition', cmd: 'tsx scripts/validate-glossary-definition.mjs' },
+  { label: 'validate-keyword-position', cmd: 'node scripts/validate-keyword-position.mjs' },
+  { label: 'validate-brand-reinforcement', cmd: 'node scripts/validate-brand-reinforcement.mjs' },
+]
+for (const audit of geoAudits) {
+  console.log(`[build] ${audit.label}`)
+  try {
+    execSync(audit.cmd, { cwd: join(__dirname, '..'), stdio: 'inherit' })
+  } catch (err) {
+    if (process.env.SEO_STRICT === '1') throw err
+    console.warn(`[build] ${audit.label} reported issues (non-fatal — set SEO_STRICT=1 to fail)`)
+  }
 }
 console.log('[build] all stages complete')

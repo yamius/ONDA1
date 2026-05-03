@@ -85,6 +85,21 @@ function articleSourceMtime(slug: string): Date {
   return buildDate
 }
 
+/**
+ * Effective publication date for feeds. When `publishedAt` is set on the
+ * Article (auto-publish sprint), it wins — the article was scheduled and
+ * we want feeds to advertise that exact moment, not the file's mtime which
+ * could be much later if the registry was edited again post-publish. Falls
+ * back to the source file mtime so legacy articles keep working unchanged.
+ */
+function articlePubDate(a: typeof articles[number]): Date {
+  if (a.publishedAt) {
+    const parsed = new Date(a.publishedAt)
+    if (!Number.isNaN(parsed.getTime())) return parsed
+  }
+  return articleSourceMtime(a.slug)
+}
+
 function rfc822(d: Date): string { return d.toUTCString() }
 function iso(d: Date): string { return d.toISOString() }
 
@@ -120,7 +135,7 @@ function buildItems(lang: Lang, items: typeof articles): FeedItem[] {
       description,
       category: a.category,
       url: `${SITE_URL}/articles/${a.slug}`,
-      date: articleSourceMtime(a.slug),
+      date: articlePubDate(a),
       imageUrl: a.image ? `${SITE_URL}${a.image}` : undefined,
       imageAlt: a.imageAlt,
       alternates,

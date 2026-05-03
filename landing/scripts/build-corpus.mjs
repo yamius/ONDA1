@@ -95,7 +95,11 @@ function chunkContent(slug, type, md, charBudget = 16000) {
 function articleToRecord(a) {
   const url = `${SITE_URL}/articles/${a.slug}`
   const dates = articleDates[a.slug] ?? {}
-  const published = dates.publishedAt ?? dates.modifiedAt ?? '2025-01-01'
+  // Auto-publish: a per-article `publishedAt` field (Article.publishedAt) is
+  // the canonical scheduling timestamp. When present it wins over git
+  // history so the JSONL corpus advertises the exact moment the article
+  // went live, matching what RSS/Atom and JSON-LD report on the page.
+  const published = a.publishedAt ?? dates.publishedAt ?? dates.modifiedAt ?? '2025-01-01'
   const modified = dates.modifiedAt ?? published
   const md = a.content
   return {

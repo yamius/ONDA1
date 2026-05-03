@@ -1,0 +1,68 @@
+name: Scheduled article publish
+
+# Runs daily at 06:00 UTC. Any article whose `publishedAt` ISO timestamp has
+# passed since the previous run becomes visible automatically because the
+# `articles` registry filters by `Date.now()` at module load. The build then
+# regenerates the sitemap, sitemap-news, RSS/Atom feeds, llms.txt variants,
+# the JSONL corpus and the SEO audit. Manual `workflow_dispatch` is also
+# wired so maintainers can force a republish (e.g. after editing a slug).
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      strict:
+        description: 'Set SEO_STRICT=1 to fail the build on any audit warning'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: landing
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history so article-dates.generated.ts uses git
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: landing/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Sanity — list scheduled articles due in next 24h
+        # `check` exits 1 when items are due. Soft-warning here so the build
+        # itself decides what to do; flip to a hard fail by removing `|| true`.
+        run: node scripts/schedule-articles.mjs check || true
+
+      - name: Build site
+        env:
+          # IndexNow + ai-audit must not run live in scheduled CI without
+          # explicit credentials. The scripts already respect these flags.
+          INDEXNOW_DISABLED: '1'
+          AI_AUDIT_DISABLED: '1'
+          SEO_AUDIT_LABEL: scheduled-publish
+          SEO_STRICT: ${{ github.event.inputs.strict == 'true' && '1' || '' }}
+        run: |
+          npx vite build
+          npx tsx scripts/prerender.ts
+
+      - name: Upload audit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scheduled-publish-audit
+          path: |
+            landing/dist/seo-audit/scheduled-publish.json
+            landing/dist/seo-audit/scheduled-publish.md
+          if-no-files-found: ignore

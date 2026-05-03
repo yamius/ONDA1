@@ -71,7 +71,27 @@ import accCoreArticle from './anterior-cingulate-core-coherence-monitoring'
 import accCalibrationArticle from './acc-calibration-protocol-cognitive-control'
 import hydraulicViscosityArticle from './hydraulic-viscosity-onda-transport-bus'
 
-export const articles: Article[] = [...vagusArticle, ...dopamineArticle, ...dopamineStackingArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle, ...glp1Article, ...mtDnaRedLightArticle, ...senolyticArticle, ...aiBiomarkerArticle, ...phaseLockedSleepArticle, ...neuralEntrainmentArticle, ...electricMedicineArticle, ...muscleMetabolicArticle, ...chmArticle, ...glymphaticFlushArticle, ...cpgArticle, ...co2ToleranceArticle, ...femtechArticle, ...cacaoStemCellsArticle, ...cognitiveNeuralArticle, ...systemFeedbackArticle, ...endocrineSocialArticle, ...hpaAxisArticle, ...serotoninArticle, ...leptinArticle, ...estrogenArticle, ...tshArticle, ...adaptationHackRangeFractionationArticle, ...protocolCircadianHardResetArticle, ...ancestralSyncCircadianAnchorsArticle, ...longevityProtocolBiologicalClockResetArticle, ...nervousSystemPingLatencyArticle, ...faultTolerantHumanHrvBufferArticle, ...resonantFrequencySystemCoherenceArticle, ...baroreflex01hzShiftArticle, ...nightlyFlushGlymphaticNeuralCacheArticle, ...neuralHydraulicsCsfFlowArticle, ...antiEntropyNeuralArchitectureArticle, ...idleStateAlphaRhythmsArticle, ...neuralBridgeAlphaFlowGatewayArticle, ...quietModeAlphaCortisol, ...spinalHarddriveCpgArticle, ...rhythmicEntrainmentArticle, ...spinalIntelligenceArticle, ...adrenalGovernorArticle, ...interoceptivePrecisionArticle, ...neuralSignalToNoiseArticle, ...biologicalLatencyArticle, ...metabolicRedundancyArticle, ...physiologicalConcentrationArticle, ...acetylcholineLensArticle, ...vtaReactorArticle, ...fascialTensegrityArticle, ...vascularTensegrityArticle, ...bohrEffectArticle, ...accCoreArticle, ...accCalibrationArticle, ...hydraulicViscosityArticle]
+/**
+ * Auto-publishing gate. An article with `publishedAt` in the future is
+ * filtered out at module load so EVERY downstream consumer (article index,
+ * sitemap, sitemap-news, sitemap-images, RSS/Atom feeds, llms.txt, JSONL
+ * corpus, prerender route registry, glossary back-links) sees the exact
+ * same trimmed list. The next build that runs after the timestamp passes
+ * brings the article live without any content edit.
+ *
+ * `now` is captured once at module load — this is fine because every
+ * consumer re-imports the registry per build (Node module cache resets
+ * between `npm run build` invocations).
+ */
+const NOW = Date.now()
+function isPublished(a: Article): boolean {
+  if (!a.publishedAt) return true
+  const t = Date.parse(a.publishedAt)
+  if (Number.isNaN(t)) return true
+  return t <= NOW
+}
+
+export const articles: Article[] = ([...vagusArticle, ...dopamineArticle, ...dopamineStackingArticle, ...circadianArticle, ...metabolicArticle, ...neuroplasticityArticle, ...gutBrainArticle, ...breathworkArticle, ...hrvArticle, ...digitalDementiaArticle, ...longevityArticle, ...cognitiveArticle, ...mitochondrialArticle, ...circadianLightingArticle, ...glp1Article, ...mtDnaRedLightArticle, ...senolyticArticle, ...aiBiomarkerArticle, ...phaseLockedSleepArticle, ...neuralEntrainmentArticle, ...electricMedicineArticle, ...muscleMetabolicArticle, ...chmArticle, ...glymphaticFlushArticle, ...cpgArticle, ...co2ToleranceArticle, ...femtechArticle, ...cacaoStemCellsArticle, ...cognitiveNeuralArticle, ...systemFeedbackArticle, ...endocrineSocialArticle, ...hpaAxisArticle, ...serotoninArticle, ...leptinArticle, ...estrogenArticle, ...tshArticle, ...adaptationHackRangeFractionationArticle, ...protocolCircadianHardResetArticle, ...ancestralSyncCircadianAnchorsArticle, ...longevityProtocolBiologicalClockResetArticle, ...nervousSystemPingLatencyArticle, ...faultTolerantHumanHrvBufferArticle, ...resonantFrequencySystemCoherenceArticle, ...baroreflex01hzShiftArticle, ...nightlyFlushGlymphaticNeuralCacheArticle, ...neuralHydraulicsCsfFlowArticle, ...antiEntropyNeuralArchitectureArticle, ...idleStateAlphaRhythmsArticle, ...neuralBridgeAlphaFlowGatewayArticle, ...quietModeAlphaCortisol, ...spinalHarddriveCpgArticle, ...rhythmicEntrainmentArticle, ...spinalIntelligenceArticle, ...adrenalGovernorArticle, ...interoceptivePrecisionArticle, ...neuralSignalToNoiseArticle, ...biologicalLatencyArticle, ...metabolicRedundancyArticle, ...physiologicalConcentrationArticle, ...acetylcholineLensArticle, ...vtaReactorArticle, ...fascialTensegrityArticle, ...vascularTensegrityArticle, ...bohrEffectArticle, ...accCoreArticle, ...accCalibrationArticle, ...hydraulicViscosityArticle] as Article[]).filter(isPublished)
 
 export function getArticleBySlug(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug)

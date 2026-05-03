@@ -7,8 +7,9 @@ import { GLOSSARY_SEO } from '../src/data/glossary-seo'
 import { levelsData } from '../src/data/levels'
 import { PART_SEO } from '../src/data/part-seo'
 import { parts } from '../src/pages/PartPage'
-import { getArticleBySlug } from '../src/data/articles'
+import { getArticleBySlug, articles } from '../src/data/articles'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
+import { TOPICS, getTopicBySlug } from '../src/data/topics'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -219,6 +220,54 @@ export interface RouteMeta {
   course?: { name: string; description: string; url: string }
   /** Emit Organization + WebSite schema (homepage only). */
   emitSiteSchema?: boolean
+  /** CollectionPage + ItemList JSON-LD (e.g. /topics, /topics/:slug). */
+  collectionPage?: {
+    name: string
+    description: string
+    url: string
+    items: { name: string; url: string }[]
+  }
+  /** Plain WebPage JSON-LD (e.g. /license). */
+  webPage?: { name: string; description: string; url: string }
+}
+
+function buildCollectionPageJsonLd(name: string, description: string, url: string, items: { name: string; url: string }[]): string {
+  const payload = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name,
+    description,
+    url,
+    isPartOf: { '@type': 'WebSite', name: 'ONDA Life', url: SITE_URL },
+    publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+    inLanguage: 'en',
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListOrder: 'https://schema.org/ItemListOrderAscending',
+      numberOfItems: items.length,
+      itemListElement: items.map((it, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: it.name,
+        url: it.url,
+      })),
+    },
+  }
+  return JSON.stringify(payload)
+}
+
+function buildWebPageJsonLd(name: string, description: string, url: string): string {
+  const payload = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name,
+    description,
+    url,
+    isPartOf: { '@type': 'WebSite', name: 'ONDA Life', url: SITE_URL },
+    publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+    inLanguage: 'en',
+  }
+  return JSON.stringify(payload)
 }
 
 function buildBreadcrumbs(route: string): BreadcrumbItem[] {
@@ -295,6 +344,21 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
         url: `${SITE_URL}/bio/${segments[1]}`,
       })
     }
+    return items
+  }
+  if (segments[0] === 'topics') {
+    items.push({ name: 'Topics', url: `${SITE_URL}/topics` })
+    if (segments[1]) {
+      const topic = getTopicBySlug(segments[1])
+      items.push({
+        name: topic?.title ?? segments[1],
+        url: `${SITE_URL}/topics/${segments[1]}`,
+      })
+    }
+    return items
+  }
+  if (segments[0] === 'license') {
+    items.push({ name: 'License', url: `${SITE_URL}/license` })
     return items
   }
 
@@ -1242,6 +1306,61 @@ export function getMetaForRoute(route: string): RouteMeta {
 
   const breadcrumbs = buildBreadcrumbs(route)
 
+  if (route === '/topics') {
+    const items = TOPICS.map((t) => ({
+      name: t.title,
+      url: `${SITE_URL}/topics/${t.slug}`,
+    }))
+    return {
+      title: 'Topic hubs — ONDA Life',
+      description: 'Topical hubs grouping ONDA Life articles, glossary terms and protocols by domain (HRV, vagus nerve, dopamine, circadian, mitochondria, neuroplasticity, glymphatics and more).',
+      url,
+      breadcrumbs,
+      collectionPage: {
+        name: 'Topic hubs — ONDA Life',
+        description: 'Topical hubs grouping ONDA Life content by domain.',
+        url,
+        items,
+      },
+    }
+  }
+  if (route.startsWith('/topics/')) {
+    const slug = route.slice('/topics/'.length)
+    const topic = getTopicBySlug(slug)
+    if (topic) {
+      const articleMap = new Map(articles.map((a) => [a.slug, a]))
+      const items = topic.articleSlugs
+        .map((s) => articleMap.get(s))
+        .filter((a): a is NonNullable<typeof a> => Boolean(a))
+        .map((a) => ({ name: a.title, url: `${SITE_URL}/articles/${a.slug}` }))
+      return {
+        title: `${topic.title} | ONDA Life`,
+        description: topic.description,
+        url,
+        breadcrumbs,
+        collectionPage: {
+          name: topic.title,
+          description: topic.description,
+          url,
+          items,
+        },
+      }
+    }
+  }
+  if (route === '/license') {
+    return {
+      title: 'Editorial Content License — CC-BY-4.0 | ONDA Life',
+      description: 'ONDA Life editorial content (articles, glossary, datasets) is released under the Creative Commons Attribution 4.0 International license. Use, quote and redistribute with attribution to onda-life.com.',
+      url,
+      breadcrumbs,
+      webPage: {
+        name: 'Editorial Content License — CC-BY-4.0',
+        description: 'Articles, glossary entries and datasets on onda-life.com are licensed CC-BY-4.0. App code, brand and trademarks are excluded.',
+        url,
+      },
+    }
+  }
+
   if (route === '/') {
     return { title: DEFAULT_TITLE, description: DEFAULT_DESC, url, breadcrumbs, ogType: 'website', emitSiteSchema: true }
   }
@@ -2000,6 +2119,20 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (meta.definedTerm) {
     const definedTermScript = `<script type="application/ld+json">${buildDefinedTermJsonLd(meta.definedTerm.name, meta.definedTerm.description, meta.definedTerm.url)}</script>`
     out = out.replace('</head>', `  ${definedTermScript}\n</head>`)
+  }
+
+  // JSON-LD: CollectionPage + ItemList (e.g. /topics, /topics/:slug)
+  if (meta.collectionPage) {
+    const cp = meta.collectionPage
+    const cpScript = `<script type="application/ld+json">${buildCollectionPageJsonLd(cp.name, cp.description, cp.url, cp.items)}</script>`
+    out = out.replace('</head>', `  ${cpScript}\n</head>`)
+  }
+
+  // JSON-LD: WebPage (e.g. /license)
+  if (meta.webPage) {
+    const wp = meta.webPage
+    const wpScript = `<script type="application/ld+json">${buildWebPageJsonLd(wp.name, wp.description, wp.url)}</script>`
+    out = out.replace('</head>', `  ${wpScript}\n</head>`)
   }
 
   // JSON-LD: TechArticle (article pages only)

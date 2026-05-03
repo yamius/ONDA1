@@ -13,6 +13,13 @@ import { fileURLToPath } from 'url'
 import { articles } from '../src/data/articles'
 import { ARTICLE_DATES } from '../src/data/article-dates.generated'
 
+/** Map slug -> auto-publish ISO timestamp (when set). Wins over git history
+ *  so a scheduled article shows up in the news sitemap on the exact build
+ *  immediately after its `publishedAt` passes. */
+const PUBLISHED_AT: Record<string, string> = Object.fromEntries(
+  articles.filter((a) => a.publishedAt).map((a) => [a.slug, a.publishedAt!]),
+)
+
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
 const SITE_URL = 'https://onda-life.com'
@@ -27,7 +34,7 @@ interface DateEntry { publishedAt?: string; modifiedAt?: string }
 const dates = ARTICLE_DATES as Record<string, DateEntry>
 
 function fresh(slug: string): { iso: string; date: Date } | null {
-  const d = dates[slug]?.publishedAt ?? dates[slug]?.modifiedAt
+  const d = PUBLISHED_AT[slug] ?? dates[slug]?.publishedAt ?? dates[slug]?.modifiedAt
   if (!d) return null
   const parsed = new Date(d)
   if (Number.isNaN(parsed.getTime())) return null

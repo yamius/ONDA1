@@ -314,6 +314,11 @@ export function ArticlePage() {
       document.querySelector(`script[data-ld="${id}"]`)?.remove()
 
     const dateInfo = ARTICLE_DATES[article.slug]
+    // Auto-publish: when Article.publishedAt is set, it overrides the git-
+    // derived `datePublished` so JSON-LD, OG metadata and feeds all agree on
+    // the moment the article became public. dateModified still tracks git.
+    const effectivePublished = article.publishedAt ?? dateInfo?.published
+    const effectiveModified = dateInfo?.modified ?? effectivePublished
     const articleLd = {
       '@context': 'https://schema.org',
       '@type': 'Article',
@@ -324,10 +329,10 @@ export function ArticlePage() {
       mainEntityOfPage: url,
       inLanguage: lang,
       articleSection: article.category,
-      ...(dateInfo
+      ...(effectivePublished
         ? {
-            datePublished: dateInfo.published,
-            dateModified: dateInfo.modified,
+            datePublished: effectivePublished,
+            dateModified: effectiveModified,
           }
         : {}),
       author: {
@@ -347,9 +352,9 @@ export function ArticlePage() {
     }
     setLd('article', articleLd)
     setMeta('author', 'ONDA Life')
-    if (dateInfo) {
-      setMeta('article:published_time', dateInfo.published, true)
-      setMeta('article:modified_time', dateInfo.modified, true)
+    if (effectivePublished) {
+      setMeta('article:published_time', effectivePublished, true)
+      setMeta('article:modified_time', effectiveModified ?? effectivePublished, true)
     }
 
     const breadcrumbLd = {

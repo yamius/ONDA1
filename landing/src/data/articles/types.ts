@@ -32,4 +32,19 @@ export interface Article {
   imageCaption?: string
   /** Optional: 'header' = under title; 'content' = inline in markdown (better semantic flow) */
   imagePlacement?: 'header' | 'content'
+  /**
+   * Optional ISO 8601 timestamp at which the article should become public.
+   * - When unset, the article is treated as published immediately (legacy behavior).
+   * - When set to a future timestamp, the article is filtered out of the
+   *   public registry (`articles`) and therefore disappears from the article
+   *   index, sitemap, sitemap-news, sitemap-images, RSS/Atom feeds, llms.txt
+   *   variants and the JSONL corpus.
+   * - Once `publishedAt <= now`, the article is included again automatically
+   *   on the next build (e.g. nightly GitHub Actions cron). No content edit
+   *   is needed to flip the article live.
+   * - The same value is consumed by ArticlePage.tsx and build-corpus.mjs as
+   *   the canonical `datePublished` for JSON-LD, RSS pubDate and the corpus
+   *   `published` field, keeping all surfaces in lockstep.
+   */
+  publishedAt?: string
 }

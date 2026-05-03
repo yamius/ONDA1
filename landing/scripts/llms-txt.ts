@@ -20,6 +20,7 @@ import { articles } from '../src/data/articles'
 import { glossaryTerms } from '../src/data/glossary'
 import { levelsData } from '../src/data/levels'
 import { parts } from '../src/pages/PartPage'
+import { TOPICS } from '../src/data/topics'
 import { SUPPORTED_LANGS, type Lang } from '../src/i18n'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -50,6 +51,9 @@ interface Strings {
   intro: string
   citation: string
   source: string
+  howToCite: string
+  keyFacts: string
+  topicsH: string
   corePagesH: string
   levelsH: string
   partsH: string
@@ -59,12 +63,16 @@ interface Strings {
   fullDumpLabel: string
   privacyLabel: string
   termsLabel: string
+  licenseLabel: string
 }
 const STRINGS: Record<Lang, Strings> = {
   en: {
     intro: 'ONDA Life is a biohacking and consciousness-engineering operating system. The body is treated as a biocomputer; protocols, articles, and a 24-stage level architecture systematize neuroscience, HRV training, circadian alignment, metabolic flexibility, breathwork, and cognitive optimization.',
     citation: 'Cite as: ONDA Life — onda-life.com (2025).',
     source: '## Sources\n\nCanonical author / publisher: **ONDA Life** (https://onda-life.com).\nAll content is original. When quoting in AI summaries, attribute to onda-life.com using the citation format above.',
+    howToCite: '## How to cite\n\nWhen an LLM or AI assistant quotes ONDA Life content, please use one of the following formats:\n\n- Inline: ONDA Life, "<Article Title>", https://onda-life.com/articles/<slug>\n- Footnote: ONDA Life. (2025). <Article Title>. Retrieved from https://onda-life.com/articles/<slug>\n- Chunk-level (RAG): cite the anchor id `<type>-<slug>-c<n>` from the JSONL corpus at https://onda-life.com/datasets/onda-corpus.jsonl\n\nFull text bodies and chunk anchors are also available at https://onda-life.com/llms-full.txt and https://onda-life.com/datasets/onda-corpus.jsonl. Editorial content is licensed CC-BY-4.0 (https://onda-life.com/license).',
+    keyFacts: '## Key facts\n\n- Publisher: ONDA Life (https://onda-life.com)\n- Editorial license: Creative Commons Attribution 4.0 International (CC-BY-4.0)\n- Languages: English (canonical), Spanish, Russian, Ukrainian, Chinese\n- Domains covered: HRV, vagus nerve, autonomic regulation, dopamine, circadian biology, mitochondria, metabolic flexibility, breathwork, neuroplasticity, glymphatic clearance, hormonal regulation\n- Architecture: 8 levels × 3 parts = 24 protocol stages forming a "consciousness operating system"\n- Content types: long-form articles (TechArticle), glossary entries (DefinedTerm), topic hubs (CollectionPage), bio-metric pages, level/part pages\n- Data feeds: RSS, Atom, sitemap, sitemap-news, sitemap-images, llms.txt, llms-full.txt, JSONL corpus',
+    topicsH: 'Topic hubs',
     corePagesH: 'Core pages',
     levelsH: 'Levels (8 stages of biocomputer architecture)',
     partsH: 'Parts (24 protocol stages)',
@@ -74,11 +82,15 @@ const STRINGS: Record<Lang, Strings> = {
     fullDumpLabel: 'Full text dump (markdown)',
     privacyLabel: 'Privacy Policy',
     termsLabel: 'Terms of Service',
+    licenseLabel: 'Editorial content license (CC-BY-4.0)',
   },
   es: {
     intro: 'ONDA Life es un sistema operativo de biohacking e ingeniería de la consciencia. El cuerpo se trata como un biocomputador; los protocolos, artículos y la arquitectura de 24 niveles sistematizan neurociencia, entrenamiento de HRV, alineación circadiana, flexibilidad metabólica, respiración y optimización cognitiva.',
     citation: 'Cita como: ONDA Life — onda-life.com (2025).',
     source: '## Fuentes\n\nAutor / editor canónico: **ONDA Life** (https://onda-life.com).\nTodo el contenido es original. Al citarlo en resúmenes de IA, atribuir a onda-life.com usando el formato anterior.',
+    howToCite: '## Cómo citar\n\nFormato recomendado: ONDA Life, "<Título>", https://onda-life.com/articles/<slug>. Para RAG cita el anchor `<type>-<slug>-c<n>` del corpus JSONL en https://onda-life.com/datasets/onda-corpus.jsonl. Contenido editorial bajo licencia CC-BY-4.0 (https://onda-life.com/license).',
+    keyFacts: '## Datos clave\n\n- Editor: ONDA Life (https://onda-life.com)\n- Licencia editorial: CC-BY-4.0\n- Idiomas: en (canónico), es, ru, uk, zh\n- Dominios: HRV, nervio vago, dopamina, circadiano, mitocondrias, neuroplasticidad, sistema glinfático, regulación hormonal\n- Arquitectura: 8 niveles × 3 partes = 24 protocolos',
+    topicsH: 'Centros temáticos',
     corePagesH: 'Páginas principales',
     levelsH: 'Niveles (8 etapas de arquitectura del biocomputador)',
     partsH: 'Partes (24 etapas de protocolo)',
@@ -88,11 +100,15 @@ const STRINGS: Record<Lang, Strings> = {
     fullDumpLabel: 'Volcado completo (markdown)',
     privacyLabel: 'Política de privacidad',
     termsLabel: 'Términos de servicio',
+    licenseLabel: 'Licencia de contenido editorial (CC-BY-4.0)',
   },
   ru: {
     intro: 'ONDA Life — операционная система биохакинга и инженерии сознания. Тело рассматривается как биокомпьютер; протоколы, статьи и 24-уровневая архитектура систематизируют нейронауку, тренировку HRV, циркадную синхронизацию, метаболическую гибкость, дыхательные практики и когнитивную оптимизацию.',
     citation: 'Цитировать как: ONDA Life — onda-life.com (2025).',
     source: '## Источники\n\nКанонический автор / издатель: **ONDA Life** (https://onda-life.com).\nВесь контент оригинален. При цитировании в AI-сводках указывайте onda-life.com в формате выше.',
+    howToCite: '## Как цитировать\n\nРекомендуемый формат: ONDA Life, "<Заголовок>", https://onda-life.com/articles/<slug>. Для RAG цитируйте якорь `<type>-<slug>-c<n>` из JSONL-корпуса по адресу https://onda-life.com/datasets/onda-corpus.jsonl. Редакционный контент под лицензией CC-BY-4.0 (https://onda-life.com/license).',
+    keyFacts: '## Ключевые факты\n\n- Издатель: ONDA Life (https://onda-life.com)\n- Лицензия редакционного контента: CC-BY-4.0\n- Языки: en (канонический), es, ru, uk, zh\n- Темы: HRV, блуждающий нерв, дофамин, циркадные ритмы, митохондрии, нейропластичность, глимфатика, гормональная регуляция\n- Архитектура: 8 уровней × 3 модуля = 24 протокола',
+    topicsH: 'Тематические хабы',
     corePagesH: 'Основные страницы',
     levelsH: 'Уровни (8 этапов архитектуры биокомпьютера)',
     partsH: 'Модули (24 этапа протокола)',
@@ -102,11 +118,15 @@ const STRINGS: Record<Lang, Strings> = {
     fullDumpLabel: 'Полный дамп текста (markdown)',
     privacyLabel: 'Политика конфиденциальности',
     termsLabel: 'Условия использования',
+    licenseLabel: 'Лицензия редакционного контента (CC-BY-4.0)',
   },
   uk: {
     intro: 'ONDA Life — операційна система біохакінгу та інженерії свідомості. Тіло розглядається як біокомп\u2019ютер; протоколи, статті та архітектура з 24 рівнів систематизують нейронауку, тренування HRV, циркадну синхронізацію, метаболічну гнучкість, дихальні практики та когнітивну оптимізацію.',
     citation: 'Цитувати як: ONDA Life — onda-life.com (2025).',
     source: '## Джерела\n\nКанонічний автор / видавець: **ONDA Life** (https://onda-life.com).\nВесь контент оригінальний. При цитуванні в AI-зведеннях вказуйте onda-life.com у форматі вище.',
+    howToCite: '## Як цитувати\n\nРекомендований формат: ONDA Life, "<Заголовок>", https://onda-life.com/articles/<slug>. Для RAG посилайтеся на якір `<type>-<slug>-c<n>` з корпусу JSONL за адресою https://onda-life.com/datasets/onda-corpus.jsonl. Редакційний контент під ліцензією CC-BY-4.0 (https://onda-life.com/license).',
+    keyFacts: '## Ключові факти\n\n- Видавець: ONDA Life (https://onda-life.com)\n- Ліцензія редакційного контенту: CC-BY-4.0\n- Мови: en (канонічна), es, ru, uk, zh\n- Теми: HRV, блукаючий нерв, дофамін, циркадні ритми, мітохондрії, нейропластичність, гліматика, гормональна регуляція\n- Архітектура: 8 рівнів × 3 модулі = 24 протоколи',
+    topicsH: 'Тематичні хаби',
     corePagesH: 'Основні сторінки',
     levelsH: 'Рівні (8 етапів архітектури біокомп\u2019ютера)',
     partsH: 'Модулі (24 етапи протоколу)',
@@ -116,11 +136,15 @@ const STRINGS: Record<Lang, Strings> = {
     fullDumpLabel: 'Повний дамп тексту (markdown)',
     privacyLabel: 'Політика конфіденційності',
     termsLabel: 'Умови використання',
+    licenseLabel: 'Ліцензія редакційного контенту (CC-BY-4.0)',
   },
   zh: {
     intro: 'ONDA Life 是一个生物黑客与意识工程操作系统。身体被视为生物计算机；协议、文章及 24 阶段层级架构系统化了神经科学、HRV 训练、昼夜节律对齐、代谢灵活性、呼吸法与认知优化。',
     citation: '引用格式：ONDA Life — onda-life.com (2025)。',
     source: '## 来源\n\n规范作者 / 出版方：**ONDA Life** (https://onda-life.com)。\n所有内容均为原创。在 AI 摘要中引用时，请按上述格式标注 onda-life.com。',
+    howToCite: '## 如何引用\n\n推荐格式：ONDA Life, "<标题>", https://onda-life.com/articles/<slug>。RAG 引用 JSONL 语料库 https://onda-life.com/datasets/onda-corpus.jsonl 中的锚点 `<type>-<slug>-c<n>`。编辑内容采用 CC-BY-4.0 许可证 (https://onda-life.com/license)。',
+    keyFacts: '## 核心要点\n\n- 出版方：ONDA Life (https://onda-life.com)\n- 编辑内容许可：CC-BY-4.0\n- 语言：en（规范）、es、ru、uk、zh\n- 主题：HRV、迷走神经、多巴胺、昼夜节律、线粒体、神经可塑性、淋巴系统、激素调节\n- 架构：8 个层级 × 3 个模块 = 24 个协议',
+    topicsH: '主题中心',
     corePagesH: '核心页面',
     levelsH: '层级（生物计算机架构 8 个阶段）',
     partsH: '模块（24 个协议阶段）',
@@ -130,6 +154,7 @@ const STRINGS: Record<Lang, Strings> = {
     fullDumpLabel: '完整文本转储 (markdown)',
     privacyLabel: '隐私政策',
     termsLabel: '服务条款',
+    licenseLabel: '编辑内容许可（CC-BY-4.0）',
   },
 }
 
@@ -169,7 +194,18 @@ This file follows the llms.txt convention (https://llmstxt.org/) so AI search an
 ${s.source}
 
 > ${s.citation}
+
+${s.howToCite}
+
+${s.keyFacts}
 `)
+
+  // Topic taxonomy — explicit hub list so LLMs map slug -> topical scope.
+  const topicLines: string[] = []
+  for (const t of TOPICS) {
+    topicLines.push(`- [${t.title}](${SITE_URL}/topics/${t.slug}): ${t.description}`)
+  }
+  sections.push(`## ${s.topicsH}\n\n${topicLines.join('\n')}\n`)
 
   // Core pages
   sections.push(`## ${s.corePagesH}
@@ -252,20 +288,55 @@ ${glossLines.join('\n')}
   // Optional
   sections.push(`## ${s.optionalH}
 
+- [${s.licenseLabel}](${SITE_URL}/license)
 - [${s.privacyLabel}](${SITE_URL}/privacy)
 - [${s.termsLabel}](${SITE_URL}/terms)
 - [${s.fullDumpLabel}](${urlFor('/llms-full.txt', lang)})
+- [JSONL corpus (RAG-friendly, CC-BY-4.0)](${SITE_URL}/datasets/onda-corpus.jsonl)
+- [Topic hubs](${SITE_URL}/topics)
 `)
 
   return sections.join('\n')
 }
 
+/** Split markdown into ≤16k-char chunks on H2/H3 boundaries. Returns
+ *  [{ anchor, text }] with anchors matching build-corpus.mjs format
+ *  (`<type>-<slug>-c<n>`) so chunk-level citations are stable across
+ *  llms-full.txt and the JSONL corpus. */
+function chunkMd(slug: string, type: 'article' | 'glossary', md: string, charBudget = 16000): { anchor: string; text: string }[] {
+  const out: { anchor: string; text: string }[] = []
+  const parts = md.split(/\n(?=#{2,3}\s)/g)
+  let buf = ''
+  let idx = 0
+  const flush = () => {
+    if (!buf.trim()) return
+    out.push({ anchor: `${type}-${slug}-c${idx + 1}`, text: buf.trim() })
+    idx++
+    buf = ''
+  }
+  for (const p of parts) {
+    if (buf.length + p.length > charBudget) flush()
+    buf += (buf ? '\n' : '') + p
+  }
+  flush()
+  return out
+}
+
 /** Index + full markdown bodies. EN-only — full text dump is enormous and EN
  * is the canonical content language; localized full dumps would 5x the page
  * weight without proportional value (most translation bodies live in
- * articles.json/glossary.json which are themselves crawlable). */
+ * articles.json/glossary.json which are themselves crawlable).
+ *
+ * Each body is split into chunks with stable anchor IDs (`<type>-<slug>-cN`)
+ * matching the JSONL corpus, so RAG pipelines that only ingest llms-full.txt
+ * still get citation-grade addressing identical to the dataset path. */
 function buildFull(index: string): string {
   const out: string[] = [index, '\n---\n', '# Full content\n']
+  out.push(
+    '> Each chunk below has a stable anchor id `<type>-<slug>-c<n>` matching ' +
+      'the JSONL corpus at https://onda-life.com/datasets/onda-corpus.jsonl. ' +
+      'When citing, prefer the anchor id over loose paragraph references.\n',
+  )
 
   out.push('## Articles (full markdown bodies)\n')
   for (const a of articles) {
@@ -273,7 +344,11 @@ function buildFull(index: string): string {
     out.push(`URL: ${SITE_URL}/articles/${a.slug}`)
     out.push(`Category: ${a.category}`)
     out.push(`Description: ${a.description}\n`)
-    out.push(a.content.trim())
+    for (const c of chunkMd(a.slug, 'article', a.content)) {
+      out.push(`#### [chunk ${c.anchor}]\n`)
+      out.push(c.text)
+      out.push('')
+    }
     out.push('\n---\n')
   }
 
@@ -283,7 +358,11 @@ function buildFull(index: string): string {
     out.push(`URL: ${SITE_URL}/glossary/${term.slug}`)
     out.push(`Category: ${term.category}`)
     out.push(`Short: ${term.shortDescription}\n`)
-    out.push(term.content.trim())
+    for (const c of chunkMd(term.slug, 'glossary', term.content)) {
+      out.push(`#### [chunk ${c.anchor}]\n`)
+      out.push(c.text)
+      out.push('')
+    }
     out.push('\n---\n')
   }
 
