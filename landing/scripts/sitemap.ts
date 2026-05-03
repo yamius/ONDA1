@@ -12,7 +12,37 @@ import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZE
 import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, type Lang } from '../src/i18n'
 import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
 import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
+import { getArticleBySlug } from '../src/data/articles'
 import { readFileSync } from 'fs'
+
+/** Minimal XML attribute/text escaper. Order matters: ampersand first. */
+function escapeXml(s: string): string {
+  return s
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;')
+}
+
+/**
+ * Per-article image:image block for Google Image Search (Image Sitemap
+ * extension). Empty string if the article has no hero image. Title and
+ * caption fall back through (imageTitle -> title) and (imageCaption ->
+ * imageAlt -> title) so we always emit useful text.
+ */
+function buildImageBlockForArticle(slug: string): string {
+  const article = getArticleBySlug(slug)
+  if (!article || !article.image) return ''
+  const loc = `${SITE_URL}${article.image}`
+  const title = article.imageTitle || article.title
+  const caption = article.imageCaption || article.imageAlt || article.title
+  return `\n    <image:image>
+      <image:loc>${escapeXml(loc)}</image:loc>
+      <image:title>${escapeXml(title)}</image:title>
+      <image:caption>${escapeXml(caption)}</image:caption>
+    </image:image>`
+}
 
 // Featured slugs get higher priority + weekly changefreq so Google
 // re-crawls them more often. Regular articles/terms drop one tier
@@ -160,6 +190,10 @@ const urls = routes.map((path) => {
   const lastmod = getLastmod(path)
   const priority = getPriority(path)
   const changefreq = getChangefreq(path)
+  // Image Sitemap extension: list the article's hero image so Google
+  // Image Search can index it with our title + caption metadata.
+  const articleSlug = articleSlugFromRoute(path)
+  const images = articleSlug ? buildImageBlockForArticle(articleSlug) : ''
   let alternates = ''
   if (LOCALIZED_ROUTE_SET.has(path)) {
     const base = stripLangPrefix(path)
@@ -178,12 +212,12 @@ const urls = routes.map((path) => {
     <loc>${loc}</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>${alternates}
+    <priority>${priority}</priority>${alternates}${images}
   </url>`
 })
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urls.join('\n')}
 </urlset>`
 
