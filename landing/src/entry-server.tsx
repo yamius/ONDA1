@@ -54,11 +54,17 @@ export function createApp(location: string, lang?: Lang) {
             <Route key={`about-${l}`} path={`/${l}/about`} element={<AboutPage />} />
           ))}
           <Route path="/glossary"    element={<GlossaryPage />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`glossary-${l}`} path={`/${l}/glossary`} element={<GlossaryPage />} />
+          ))}
           <Route path="/articles"    element={<ArticlesPage />} />
           <Route path="/contact"     element={<ContactPage />} />
           <Route path="/the-stack"   element={<TheStackPage />} />
           <Route path="/sitemap"     element={<SitemapPage />} />
           <Route path="/glossary/:slug"  element={<GlossaryTermPage />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`gloss-${l}`} path={`/${l}/glossary/:slug`} element={<GlossaryTermPage />} />
+          ))}
           <Route path="/articles/:slug"  element={<ArticlesSlugRouter />} />
           <Route path="/part/:slug"      element={<PartPage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (

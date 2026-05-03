@@ -1,7 +1,8 @@
 {
   "meta": {
     "title": "生物黑客与神经科学术语表 | ONDA Life 知识库",
-    "description": "探索分子心理学、神经生理学和意识架构中的 100 多个关键术语。ONDA Life 系统的全面指南。"
+    "description": "探索分子心理学、神经生理学和意识架构中的 100 多个关键术语。ONDA Life 系统的全面指南。",
+    "ogImageAlt": "ONDA Life 词汇表"
   },
   "breadcrumb": {
     "home": "首页",

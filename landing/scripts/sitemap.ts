@@ -8,8 +8,8 @@
 import { writeFileSync, mkdirSync, statSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_TOPIC_ROUTE_SET, TOPIC_SLUGS } from './prerender-routes'
-import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, topicPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, parseTopicRoute, type Lang } from '../src/i18n'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_TOPIC_ROUTE_SET, TOPIC_SLUGS, LOCALIZED_GLOSSARY_SLUG_ROUTE_SET, GLOSSARY_TERM_SLUGS } from './prerender-routes'
+import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, topicPathFor, glossarySlugPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, parseTopicRoute, parseGlossarySlugRoute, type Lang } from '../src/i18n'
 import { readFileSync } from 'fs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -174,6 +174,23 @@ for (const slug of TOPIC_SLUGS) {
   altsByTopic[slug] = tags.join('\n')
 }
 
+/** Pre-build hreflang alternates for each glossary term — only translated langs. */
+const altsByGlossary: Record<string, string> = {}
+for (const slug of GLOSSARY_TERM_SLUGS) {
+  const langs: Lang[] = ['en']
+  for (const l of SUPPORTED_LANGS) {
+    if (l === 'en') continue
+    if (glossaryHasLocalizedBody(slug, l)) langs.push(l)
+  }
+  if (langs.length <= 1) continue // EN-only — no alternates
+  const tags = langs.map(l => {
+    const href = `${SITE_URL}${glossarySlugPathFor(slug, l)}`
+    return `    <xhtml:link rel="alternate" hreflang="${l}" href="${href}"/>`
+  })
+  tags.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${glossarySlugPathFor(slug, 'en')}"/>`)
+  altsByGlossary[slug] = tags.join('\n')
+}
+
 /** Pre-build hreflang alternates for each part — only languages with translations. */
 const altsByPart: Record<string, string> = {}
 for (const slug of PART_SLUGS) {
@@ -208,6 +225,9 @@ const urls = routes.map((path) => {
   } else if (LOCALIZED_TOPIC_ROUTE_SET.has(path)) {
     const info = parseTopicRoute(path)
     if (info) alternates = `\n${altsByTopic[info.slug] ?? ''}`
+  } else if (LOCALIZED_GLOSSARY_SLUG_ROUTE_SET.has(path)) {
+    const info = parseGlossarySlugRoute(path)
+    if (info && altsByGlossary[info.slug]) alternates = `\n${altsByGlossary[info.slug]}`
   }
   return `  <url>
     <loc>${loc}</loc>

@@ -1,7 +1,8 @@
 {
   "meta": {
     "title": "Biohacking & Neuroscience Glossary | ONDA Life Knowledge Base",
-    "description": "Explore 100+ key terms in molecular psychology, neurophysiology, and consciousness architecture. Your comprehensive guide to the ONDA Life system."
+    "description": "Explore 100+ key terms in molecular psychology, neurophysiology, and consciousness architecture. Your comprehensive guide to the ONDA Life system.",
+    "ogImageAlt": "ONDA Life Glossary"
   },
   "breadcrumb": {
     "home": "Home",

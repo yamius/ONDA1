@@ -8,7 +8,7 @@ import { parts } from '../src/pages/PartPage'
 import { levelsData } from '../src/data/levels'
 import { TOPICS } from '../src/data/topics'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
-import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRouteVariants, topicRouteVariants, LOCALIZED_PAGES } from '../src/i18n'
+import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRouteVariants, topicRouteVariants, glossarySlugRouteVariants, LOCALIZED_PAGES } from '../src/i18n'
 
 // Pages localized into all 5 languages — each gets its own prerendered HTML
 // per language. Generated from LOCALIZED_PAGES (single source of truth in i18n.ts).
@@ -30,9 +30,12 @@ const localizedPartRoutes = partRouteVariants(partSlugs)
 const topicSlugs = TOPICS.map((t) => t.slug)
 const localizedTopicRoutes = topicRouteVariants(topicSlugs)
 
-// Pages that stay EN-only for now (Articles, Glossary, etc).
+// /glossary/:slug variants × 5 languages.
+const glossarySlugs = glossaryTerms.map((t) => t.slug)
+const localizedGlossarySlugRoutes = glossarySlugRouteVariants(glossarySlugs)
+
+// Pages that stay EN-only for now (Articles, etc).
 const nonLocalizedStaticPaths = [
-  '/glossary',
   '/articles',
   '/contact',
   '/the-stack',
@@ -50,7 +53,7 @@ const staticPaths = [
 export function getPrerenderRoutes(): string[] {
   return [
     ...staticPaths,
-    ...glossaryTerms.map((t) => `/glossary/${t.slug}`),
+    ...localizedGlossarySlugRoutes,
     ...articles.map((a) => `/articles/${a.slug}`),
     ...localizedTopicRoutes,
     ...localizedPartRoutes,
@@ -76,6 +79,12 @@ export const LOCALIZED_TOPIC_ROUTE_SET = new Set(localizedTopicRoutes)
 
 /** All topic slugs (for sitemap hreflang per topic). */
 export const TOPIC_SLUGS = topicSlugs
+
+/** Set of all routes that are localized glossary detail pages. */
+export const LOCALIZED_GLOSSARY_SLUG_ROUTE_SET = new Set(localizedGlossarySlugRoutes)
+
+/** All glossary term slugs (for sitemap hreflang per term). */
+export const GLOSSARY_TERM_SLUGS = glossarySlugs
 
 /** EN base paths that have localized variants — used by sitemap for hreflang grouping. */
 export const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)

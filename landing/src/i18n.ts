@@ -108,6 +108,7 @@ export const LOCALIZED_PAGES: Record<string, string> = {
   '/bio': 'bio',
   '/inner-spectrum': 'inner-spectrum',
   '/topics': 'topics',
+  '/glossary': 'glossary',
 }
 
 const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)
@@ -162,7 +163,7 @@ export function localizedPathFor(pathname: string, lang: Lang): string {
     return lang === 'en' ? `/topics/${topicMatch[1]}` : `/${lang}/topics/${topicMatch[1]}`
   }
 
-  const flatLocalized = ['/glossary', '/articles', '/contact', '/sitemap', '/privacy', '/terms']
+  const flatLocalized = ['/articles', '/contact', '/sitemap', '/privacy', '/terms']
   if (flatLocalized.includes(basePath)) {
     return lang === 'en' ? basePath : `/${lang}${basePath}`
   }
@@ -277,6 +278,30 @@ export function topicRouteVariants(slugs: string[]): string[] {
 /** Parse a topic detail URL — returns { lang, slug } or null. */
 export function parseTopicRoute(route: string): { lang: Lang; slug: string } | null {
   const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/topics\/([^/]+)$/)
+  if (!m) return null
+  const lang = (m[1] as Lang | undefined) ?? 'en'
+  return { lang, slug: m[2] }
+}
+
+/** Build the localized URL for a glossary detail page. */
+export function glossarySlugPathFor(slug: string, lang: Lang): string {
+  return lang === 'en' ? `/glossary/${slug}` : `/${lang}/glossary/${slug}`
+}
+
+/** All variants of /glossary/:slug — one per (slug, lang). */
+export function glossarySlugRouteVariants(slugs: string[]): string[] {
+  const out: string[] = []
+  for (const slug of slugs) {
+    for (const lang of SUPPORTED_LANGS) {
+      out.push(glossarySlugPathFor(slug, lang))
+    }
+  }
+  return out
+}
+
+/** Parse a glossary detail URL — returns { lang, slug } or null. */
+export function parseGlossarySlugRoute(route: string): { lang: Lang; slug: string } | null {
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/glossary\/([^/]+)$/)
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, slug: m[2] }

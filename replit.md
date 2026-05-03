@@ -186,3 +186,32 @@ localStorage.setItem('debugMode', 'true'); location.reload();
 ### Debug Banner
 Строка `🔧 DEBUG: ...` вверху экрана (fixed top, z-200). Показывает `debugInfo` и кнопку «Test Sentry».  
 Тоже скрыт — завязан на `localStorage.debugMode === 'true'`. Находится в `src/onda-level1-demo_27.tsx` ~строка 4326.
+## Glossary Localization (Phase 2 — in progress, started May 2026)
+
+**Goal:** 215 glossary terms × 4 langs (es/ru/uk/zh) ≈ 860 localized pages, max-quality human-style translation.
+
+**Status:**
+- Infrastructure: ✅ DONE. Localized routes `/glossary` + `/glossary/:slug`, prerender per-lang meta with EN-fallback canonical for un-translated bodies, sitemap gating via `glossaryHasLocalizedBody()`, hreflang clusters limited to translated langs only. Build clean: 1466 HTML, 0 hreflang violations, 0 jsonld errors.
+- Content (`bodies.{slug}.{title,shortDescription,content}` in `public/locales/<lang>/glossary.json`):
+  - **EN**: 0 (uses `glossary.ts` as source-of-truth via tField fallback)
+  - **ES**: 210/215 (5 gaps: acetylcholine-lens, hydraulic-viscosity, motivational-salience, prediction-error, system-jitter)
+  - **RU**: 5/215 (featured: biocomputer, vagus-nerve, neuroplasticity, dopamine, flow-state)
+  - **UK**: 0/215
+  - **ZH**: 0/215
+
+**Pipeline (per batch):**
+1. Read source EN block from `landing/src/data/glossary.ts` (slug located via `rg -n "slug: ['\"]<slug>['\"]"`).
+2. Translate title/shortDescription/content (markdown preserved — headings, lists, tables, links, citations).
+3. Stage as `/tmp/<lang>_batchN.json` `{ "bodies": { "<slug>": {...} } }`.
+4. Merge: `jq -s '.[0] * .[1]' public/locales/<lang>/glossary.json /tmp/<lang>_batchN.json > /tmp/m.json && mv /tmp/m.json public/locales/<lang>/glossary.json`.
+5. Build: background `(vite build && tsx scripts/prerender.ts) > /tmp/onda-buildN.log 2>&1 &`, poll with pgrep.
+6. Verify: 0 hreflang/jsonld violations, sample `dist/<lang>/glossary/<slug>/index.html` has localized `<title>` + canonical to self.
+
+**Priority order (RU → UK → ZH):** featured 5 → ONDA Protocol category (~22 terms) → Core Concepts → Neuroscience → Body Systems → remaining categories. Featured/categories listed in `landing/src/data/glossary-categories.ts`.
+
+**Files:**
+- Source terms: `landing/src/data/glossary.ts` (215 terms, 5704 lines)
+- Translations: `landing/public/locales/{en,es,ru,uk,zh}/glossary.json`
+- Prerender meta: `applyGlossarySlugLocalizedMeta` in `landing/scripts/prerender.ts` (uses i18next `getFixedT(lang, 'glossary')` + EN term fallback; canonical→EN when body absent)
+- Sitemap gate: `glossaryHasLocalizedBody()` + `altsByGlossary` in `landing/scripts/sitemap.ts`
+
