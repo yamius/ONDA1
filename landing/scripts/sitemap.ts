@@ -10,7 +10,25 @@ import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS } from './prerender-routes'
 import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, type Lang } from '../src/i18n'
+import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
+import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
 import { readFileSync } from 'fs'
+
+// Featured slugs get higher priority + weekly changefreq so Google
+// re-crawls them more often. Regular articles/terms drop one tier
+// below to make the relative weighting visible to crawlers.
+const FEATURED_ARTICLE_SET = new Set<string>(FEATURED_ARTICLE_SLUGS)
+const FEATURED_TERM_SET = new Set<string>(FEATURED_TERM_SLUGS)
+
+function articleSlugFromRoute(route: string): string | null {
+  const m = route.match(/^\/articles\/([^/]+)$/)
+  return m ? m[1] : null
+}
+
+function glossarySlugFromRoute(route: string): string | null {
+  const m = route.match(/^\/glossary\/([^/]+)$/)
+  return m ? m[1] : null
+}
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
@@ -33,9 +51,20 @@ function getPriority(route: string): string {
   if (route === '/articles') return '0.9'
   if (route === '/contact') return '0.8'
   if (route.startsWith('/level/')) return '0.8'
-  if (route.startsWith('/glossary/')) return '0.7'
-  if (route.startsWith('/articles/')) return '0.8'
+  const articleSlug = articleSlugFromRoute(route)
+  if (articleSlug) return FEATURED_ARTICLE_SET.has(articleSlug) ? '0.9' : '0.7'
+  const termSlug = glossarySlugFromRoute(route)
+  if (termSlug) return FEATURED_TERM_SET.has(termSlug) ? '0.8' : '0.6'
   return '0.8'
+}
+
+function getChangefreq(route: string): string {
+  if (route === '/') return 'weekly'
+  const articleSlug = articleSlugFromRoute(route)
+  if (articleSlug && FEATURED_ARTICLE_SET.has(articleSlug)) return 'weekly'
+  const termSlug = glossarySlugFromRoute(route)
+  if (termSlug && FEATURED_TERM_SET.has(termSlug)) return 'weekly'
+  return 'monthly'
 }
 
 function getLastmod(route: string): string {
@@ -130,7 +159,7 @@ const urls = routes.map((path) => {
   const loc = buildLoc(path)
   const lastmod = getLastmod(path)
   const priority = getPriority(path)
-  const changefreq = path === '/' ? 'weekly' : 'monthly'
+  const changefreq = getChangefreq(path)
   let alternates = ''
   if (LOCALIZED_ROUTE_SET.has(path)) {
     const base = stripLangPrefix(path)
