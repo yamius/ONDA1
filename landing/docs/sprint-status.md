@@ -14,7 +14,7 @@
 
 | Phase | Тема | Статус |
 |---|---|---|
-| **Phase 1** | Performance | 🟡 ~25% (NODE_OPTIONS=4096 ✓; всё остальное pending) |
+| **Phase 1** | Performance | 🟢 ~80% (lazy-load, parallel I/O, image ladder, manifest, Lighthouse CI ✓; bundle <80KB pending) |
 | **Phase 2** | SEO | 🟢 ~85% (рейлы, валидаторы, OG-генератор, JSON-LD, hreflang ✓; budget-trim pending) |
 | **Phase 3** | AI Visibility / GEO | 🟢 ~95% (всё кроме parquet+embeddings) |
 | **Phase 4** | Auto-publishing | 🟢 100% |
@@ -63,7 +63,30 @@
 
 ---
 
-## Sprint C — Infrastructure gap-fix (Phase 1+2 partial) ✓ ОТГРУЖЕНО (текущая сессия)
+## Sprint E — Phase 1 Performance ✓ ОТГРУЖЕНО (текущая сессия)
+
+| Задача | Файл | Результат |
+|---|---|---|
+| 1.1 Lazy-load всех 19 страниц | `src/main.tsx` (предсуществующее) | ✓ HomePage/About/Articles/Glossary/Topics/Bio/etc — все через `lazy()` |
+| 1.1 Manual chunks vendor split | `vite.config.ts` (предсуществующее) | ✓ vendor-react/router/i18n/markdown/supabase |
+| 1.2 NODE_OPTIONS=4096 | `package.json` (предсуществующее) | ✓ `--max-old-space-size=4096` в build script |
+| 1.4 Parallel prerender I/O | `scripts/prerender.ts` | ✓ batch 16, async writeFile/mkdir + Promise.all + flush, timing log |
+| 1.6 Responsive image ladder | `scripts/optimize-images.mjs` | ✓ 480w/640w/960w/1920w (skip-if-source-too-small), всего 68 источников × до 8 файлов |
+| 1.6 Image manifest | `scripts/optimize-images.mjs` → `public/image-manifest.json` | ✓ 68 entries с width/height/variants для CLS=0 |
+| 1.6 OptimizedImage srcset | `src/components/OptimizedImage.tsx` | ✓ `480w, 640w, 960w, 1920w, 2400w` в `<source>` srcset |
+| 1.7 Node ≥20 pin | `.replit`, `replit.nix` (предсуществующее) | ✓ `nodejs-20` + `pkgs.nodejs_20` |
+| 1.8 Lighthouse CI script | `scripts/lighthouse.mjs` | ✓ skip-if-no-Chrome, skip-if-not-installed, 10 routes, mobile profile, P/A11y/BP/SEO thresholds |
+| 1.8 Lighthouse GitHub Action | `.github/workflows/lighthouse.yml` | ✓ build → preview server → npx lighthouse on demand → upload artifact |
+
+**Текущий bundle (после Phase 1):**
+- index.js 426KB / **135KB gzip** (over 80KB target — Phase 1.1 follow-up: разбить i18n/articles-meta из main chunk)
+- vendor-react 192KB / 60KB gzip
+- vendor-i18n 52KB / 16KB gzip
+- HomePage 20KB / 6KB gzip ✓
+- PartPage 120KB / 34KB gzip ✓
+- glossary chunk 278KB / 76KB gzip ✓ (loaded only on /glossary)
+
+## Sprint C — Infrastructure gap-fix (Phase 1+2 partial) ✓ ОТГРУЖЕНО
 
 Закрытие пробелов из брифа, найденных при ретро-аудите.
 
@@ -117,15 +140,12 @@
 
 ## Что ещё PENDING из брифа
 
-### Phase 1 (Performance) — pending почти полностью
+### Phase 1 (Performance) — single follow-up
 
 | # | Задача | Сложность | Why pending |
 |---|---|---|---|
-| 1.1 | Bundle visualizer + React.lazy для PartPage/AboutPage/Privacy/Terms | M | Требует осторожной работы с SSR + i18n preloading |
-| 1.4 | Parallel prerender (Promise.all batches of 8) | S | Низкорискованно, чисто рефактор |
-| 1.6 | Image manifest + 480w/960w/1920w варианты | M | Расширение `optimize-images.mjs` + обновление OptimizedImage |
-| 1.7 | Pin Node ≥20 в .replit/replit.nix | S | Verify-only, скорее всего уже OK |
-| 1.8 | Lighthouse CI (`scripts/lighthouse.mjs`) | L | Требует Chrome в runtime — usable только в GitHub Actions, не локально |
+| 1.1 | Initial JS <80KB gzip | L | Требует разбить i18n/articles-meta/index из main chunk; сейчас 135KB. Возможные пути: dynamic import articles-meta только на /articles, lazy i18n loading per-locale, route-level code split на уровне Layout |
+| 1.1 | Bundle visualizer (`rollup-plugin-visualizer`) | S | One-off audit tool — install on demand: `npx rollup-plugin-visualizer dist/stats.html` |
 
 ### Phase 2 (SEO) — мелкие добивки
 
@@ -175,3 +195,5 @@ SEO_STRICT=1 npm run build
 - `dist/seo-audit/keyword-position.json` — early-keyword position
 - `dist/ai-audit/history.jsonl` — AI visibility trend (CI cron)
 - `dist/og-images/manifest.json` — generated OG cards inventory
+- `dist/lighthouse/summary.{md,json}` — Lighthouse scorecard (CI only, skip locally)
+- `public/image-manifest.json` — image dimensions + responsive variants inventory

@@ -7,6 +7,7 @@
 import React from 'react'
 import { renderToString } from 'react-dom/server'
 import { mkdirSync, readFileSync, writeFileSync } from 'fs'
+import { writeFile, mkdir } from 'fs/promises'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { createApp } from '../src/entry-server'
@@ -284,11 +285,43 @@ function applyLevelLocalizedMeta(html: string, levelNum: number, lang: Lang): st
   return out
 }
 
-console.log(`[prerender] start — ${routes.length} routes, renderToString + JSDOM`)
+console.log(`[prerender] start — ${routes.length} routes, renderToString + batched async I/O`)
+const startTs = Date.now()
 
 let done = 0
 let failed = 0
 const HEARTBEAT_EVERY = 100
+
+// Phase 1.4: batched parallel I/O. renderToString is CPU-sync (single
+// thread), so we keep that in a tight loop, but writeFile + mkdir are I/O
+// and DO benefit from concurrency. We accumulate up to BATCH_SIZE
+// (route, content) tuples, flush via Promise.all, then continue. Memory
+// bounded at ~3MB per batch (16 × ~180KB avg).
+const BATCH_SIZE = 16
+type PendingWrite = { dir: string; path: string; content: string; route: string }
+let pending: PendingWrite[] = []
+
+async function flush() {
+  if (pending.length === 0) return
+  const batch = pending
+  pending = []
+  // mkdir + writeFile in parallel — recursive mkdir is idempotent so dup
+  // dirs in the batch don't conflict.
+  await Promise.all(batch.map(async (w) => {
+    try {
+      await mkdir(w.dir, { recursive: true })
+      await writeFile(w.path, w.content)
+      done++
+      if (done % HEARTBEAT_EVERY === 0) {
+        console.log(`[prerender] ... ${done}/${routes.length}`)
+      }
+    } catch (err) {
+      failed++
+      console.error('[prerender] FAIL', w.route, '—', (err as Error).message)
+    }
+  }))
+}
+
 for (const route of routes) {
   try {
     const isLocalized = LOCALIZED_ROUTE_SET.has(route)
@@ -374,20 +407,21 @@ for (const route of routes) {
     out = out.replace('</head>', `  ${buildStamp}\n</head>`)
 
     const outDir = route === '/' ? distDir : join(distDir, route.slice(1))
-    mkdirSync(outDir, { recursive: true })
     const outPath = join(outDir, 'index.html')
-    writeFileSync(outPath, out)
-    done++
-    if (done % HEARTBEAT_EVERY === 0) {
-      console.log(`[prerender] ... ${done}/${routes.length}`)
+    pending.push({ dir: outDir, path: outPath, content: out, route })
+    if (pending.length >= BATCH_SIZE) {
+      await flush()
     }
   } catch (err) {
     failed++
-    console.error('[prerender] FAIL', route, '—', (err as Error).message)
+    console.error('[prerender] FAIL', route, '— (render)', (err as Error).message)
   }
 }
+// Drain remaining writes.
+await flush()
 
-console.log(`[prerender] done — ${done} rendered, ${failed} failed (of ${routes.length})`)
+const elapsed = ((Date.now() - startTs) / 1000).toFixed(1)
+console.log(`[prerender] done — ${done} rendered, ${failed} failed (of ${routes.length}) in ${elapsed}s`)
 
 const { execSync } = await import('child_process')
 console.log('[build] sitemap')

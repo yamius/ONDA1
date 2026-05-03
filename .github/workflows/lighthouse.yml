@@ -1,0 +1,57 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        working-directory: landing
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: landing/package-lock.json
+
+      - run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+          INDEXNOW_DISABLED: '1'
+
+      - name: Start preview server
+        run: |
+          npx vite preview --host 0.0.0.0 --port 4173 &
+          for i in {1..30}; do
+            curl -sf http://localhost:4173/ > /dev/null && break
+            sleep 1
+          done
+
+      - name: Install Lighthouse on demand
+        run: npm install --no-save lighthouse@latest chrome-launcher@latest
+
+      - name: Run Lighthouse
+        run: node scripts/lighthouse.mjs
+        env:
+          PREVIEW_URL: http://localhost:4173
+          CHROME_PATH: /usr/bin/google-chrome
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-reports
+          path: landing/dist/lighthouse/
+          retention-days: 14

@@ -1,0 +1,580 @@
+{
+  "/images/articles/adaptation-hack-range-fractionation.png": {
+    "width": 1584,
+    "height": 672,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/adrenal-governor-thermal-runaway.png": {
+    "width": 2752,
+    "height": 1536,
+    "variants": [
+      480,
+      640,
+      960,
+      1920
+    ]
+  },
+  "/images/articles/ai-biomarker-tracking-predictive-longevity-model.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/ancestral-sync-circadian-anchors.png": {
+    "width": 1168,
+    "height": 496,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/anti-entropy-neural-architecture.png": {
+    "width": 1168,
+    "height": 784,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/baroreflex-01hz-shift.png": {
+    "width": 1536,
+    "height": 652,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/biological-latency-optimizing-system-ping.png": {
+    "width": 3168,
+    "height": 1344,
+    "variants": [
+      480,
+      640,
+      960,
+      1920
+    ]
+  },
+  "/images/articles/breathwork-command-line-interface-biohacking.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/circadian-lighting-dark-therapy-melatonin-optimization.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/circadian-rhythm-light-optimization-onda.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/co2-tolerance-oxygen-efficiency-bohr-effect-onda.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/cognitive-architecture-nootropic-stacks-brain-optimization.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/continuous-hormone-monitoring-chm-biohacking-onda.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/cpg-neural-autopilot-spinal-cord-circuits-onda.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/digital-dementia-attentional-control-neural-optimization.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/dopamine-reward-system-neural-architecture.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/dopamine-stacking-circuit-overload.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/electric-medicine-neuromodulation-vagus-nerve-stimulation.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/endocrine-social-drive-oxytocin-testosterone.png": {
+    "width": 1584,
+    "height": 672,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/energy-sensor-leptin.png": {
+    "width": 1584,
+    "height": 672,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/fault-tolerant-human-hrv-buffer.png": {
+    "width": 1168,
+    "height": 495,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/female-cycle-biohacking-onda.png": {
+    "width": 1024,
+    "height": 422,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/glp-1-biology-muscle-preservation-metabolism.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/glymphatic-flush-brain-detox-neural-cache-onda.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/gut-brain-axis-vagus-nerve-data-link.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/hpa-axis-cortisol-aggression.png": {
+    "width": 1584,
+    "height": 672,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/hrv-training-nervous-system-latency-biohacking.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/idle-state-alpha-rhythms.png": {
+    "width": 1168,
+    "height": 784,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/interoceptive-precision-sensor-calibration.png": {
+    "width": 1584,
+    "height": 672,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/longevity-autophagy-cellular-cleanup-onda.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/longevity-protocol-biological-clock-reset.png": {
+    "width": 1168,
+    "height": 496,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/metabolic-flexibility-dual-fuel-glucose-ketones-onda.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/metabolic-redundancy-hybrid-power-architecture.png": {
+    "width": 1408,
+    "height": 768,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/mitochondrial-biogenesis-cellular-power-grid-optimization.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/mitochondrial-dna-red-light-photobiomodulation-onda.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/muscle-metabolic-marker-longevity-onda.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/nervous-system-ping-latency.png": {
+    "width": 1168,
+    "height": 496,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/neural-bridge-alpha-flow-gateway.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/neural-entrainment-meditation-coherence-onda.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/neural-hydraulics-csf-flow.png": {
+    "width": 1168,
+    "height": 784,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/neural-optimizer-estrogen.png": {
+    "width": 1584,
+    "height": 672,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/neural-signal-to-noise-system-channel.png": {
+    "width": 1584,
+    "height": 672,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/neuroplasticity-brain-overclocking-flow-state.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/nightly-flush-glymphatic-neural-cache.png": {
+    "width": 1168,
+    "height": 784,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/onda-cacao-stem-cell-regeneration-matrix.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/onda-neural-architecture-optimization.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/onda-system-feedback-biometric-loop.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/phase-locked-acoustic-sleep-delta-wave-stimulation.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/physiological-concentration-flow-state-hardwired.png": {
+    "width": 1584,
+    "height": 672,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/protocol-circadian-hard-reset.png": {
+    "width": 1168,
+    "height": 496,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/quiet-mode-alpha-cortisol-buffer.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/resonant-frequency-system-coherence.png": {
+    "width": 1168,
+    "height": 496,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/rhythmic-entrainment-system-frequencies.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/senolytic-high-dosing-longevity-zombie-cells-purge.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/articles/spinal-harddrive-cpg-autonomous-scripts.png": {
+    "width": 1536,
+    "height": 1024,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/spinal-intelligence-decentralized-control.png": {
+    "width": 2560,
+    "height": 1440,
+    "variants": [
+      480,
+      640,
+      960,
+      1920
+    ]
+  },
+  "/images/articles/system-stability-serotonin.png": {
+    "width": 1584,
+    "height": 672,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/the-acetylcholine-shader.png": {
+    "width": 1584,
+    "height": 672,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/tsh-energy-governor.png": {
+    "width": 1584,
+    "height": 672,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/images/articles/vagus-nerve-biohacking-data-highway.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/parts/onda-part-1-i-am-conscious-architecture.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/parts/onda-part-2-i-move-kinetic-architecture.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/parts/onda-part-3-i-adapt-biological-resilience.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/parts/onda-part-4-i-maneuver-cognitive-strategy-matrix.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/parts/onda-part-5-i-guard-territory-immune-security.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/images/parts/onda-part-6-pack-synchronization-social-intelligence.png": {
+    "width": 1024,
+    "height": 434,
+    "variants": [
+      480,
+      640
+    ]
+  },
+  "/og-preview.png": {
+    "width": 1200,
+    "height": 630,
+    "variants": [
+      480,
+      640,
+      960
+    ]
+  },
+  "/onda-life-hrv-consciousness-hero.png": {
+    "width": 1024,
+    "height": 682,
+    "variants": [
+      480,
+      640
+    ]
+  }
+}

@@ -31,7 +31,11 @@ const SKIP = new Set([
   'onda-logo-source.png',
 ])
 const MAX_KB = 99
-const RESPONSIVE_WIDTH = 640
+// Phase 1.6: full responsive ladder. Brief calls for 480/640/960/1920w
+// variants on top of the source. We only emit a variant if the source is
+// meaningfully wider than the target — otherwise upscaling produces files
+// larger than the original at no quality benefit.
+const RESPONSIVE_WIDTHS = [480, 640, 960, 1920]
 const QUALITIES_WEBP = [82, 72, 60, 48, 38]
 const QUALITIES_AVIF = [60, 50, 40, 32, 24]
 
@@ -82,14 +86,17 @@ async function encodeAvif(pipeline) {
 async function processOne(src) {
   const meta = await sharp(src).metadata()
   const variants = [
-    { suffix: '', pipeline: () => sharp(src) },
+    { suffix: '', width: meta.width, pipeline: () => sharp(src) },
   ]
-  // Add a responsive 640w variant only when the source is meaningfully wider.
-  if (meta.width && meta.width > RESPONSIVE_WIDTH * 1.2) {
-    variants.push({
-      suffix: '-640w',
-      pipeline: () => sharp(src).resize({ width: RESPONSIVE_WIDTH }),
-    })
+  // Add each responsive width only when the source is meaningfully wider.
+  for (const w of RESPONSIVE_WIDTHS) {
+    if (meta.width && meta.width > w * 1.2) {
+      variants.push({
+        suffix: `-${w}w`,
+        width: w,
+        pipeline: () => sharp(src).resize({ width: w }),
+      })
+    }
   }
 
   const reports = []
@@ -112,6 +119,37 @@ async function processOne(src) {
   return reports
 }
 
+async function buildManifest(images) {
+  // Phase 1.6: emit a manifest mapping each source image to its width/height
+  // and the responsive variants that exist on disk. OptimizedImage uses this
+  // (via inlined data) to set <img width/height> for CLS=0 and to build
+  // srcset only with widths that actually exist (avoids 404s).
+  const manifest = {}
+  for (const src of images) {
+    const meta = await sharp(src).metadata()
+    const rel = src.replace(publicDir, '').replace(/\\/g, '/')
+    const variants = []
+    for (const w of RESPONSIVE_WIDTHS) {
+      if (meta.width && meta.width > w * 1.2) variants.push(w)
+    }
+    manifest[rel] = {
+      width: meta.width ?? null,
+      height: meta.height ?? null,
+      variants,
+    }
+  }
+  // Write to BOTH locations:
+  //   - public/image-manifest.json   for runtime/debug fetch
+  //   - src/data/image-manifest.generated.json   for OptimizedImage to import
+  //     at build time (tree-shaken into a ~5KB lookup, no extra round-trip).
+  const publicOut = join(publicDir, 'image-manifest.json')
+  const srcOut = join(__dirname, '..', 'src', 'data', 'image-manifest.generated.json')
+  const json = JSON.stringify(manifest, null, 2)
+  await writeFile(publicOut, json)
+  await writeFile(srcOut, json)
+  console.log(`[manifest] wrote ${Object.keys(manifest).length} entries → public/ + src/data/`)
+}
+
 async function main() {
   const images = await findImages(publicDir)
   let processed = 0
@@ -127,6 +165,7 @@ async function main() {
     processed++
   }
   console.log(`\nDone. ${processed} processed, ${untouched} already up to date.`)
+  await buildManifest(images)
 }
 
 main().catch((e) => {
