@@ -1,11 +1,15 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import { langFromPath } from '../i18n'
 
 const TITLE = 'License (CC-BY-4.0) | ONDA Life'
 const DESC =
   'ONDA Life editorial content — articles, glossary, llms.txt, and the public corpus — is licensed under Creative Commons Attribution 4.0 International. Free to use, including for AI training, with attribution.'
 
 export function LicensePage() {
+  const location = useLocation()
+  const lang = langFromPath(location.pathname)
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
   useEffect(() => {
     document.title = TITLE
     const setMeta = (name: string, content: string) => {
@@ -24,7 +28,7 @@ export function LicensePage() {
     <main className="min-h-screen bg-[#050a0f] text-white" data-testid="page-license">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16 sm:py-24 prose prose-invert prose-cyan">
         <nav className="text-xs uppercase tracking-widest text-cyan-400/70 mb-4 not-prose" aria-label="Breadcrumb">
-          <Link to="/" className="hover:text-cyan-300" data-testid="link-breadcrumb-home">
+          <Link to={langPrefix || '/'} className="hover:text-cyan-300" data-testid="link-breadcrumb-home">
             ONDA Life
           </Link>
           <span className="mx-2 text-white/30">/</span>

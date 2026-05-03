@@ -1100,7 +1100,7 @@ export function ArticlePage() {
             {relatedTerms.map((related) => (
               <Link
                 key={related.slug}
-                to={`/glossary/${related.slug}`}
+                to={`${langPrefix}/glossary/${related.slug}`}
                 className="glass-card group flex items-center justify-between rounded-lg p-4 transition-all hover:border-terminal-green/10"
               >
                 <div>

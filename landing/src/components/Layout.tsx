@@ -138,19 +138,19 @@ export function Layout() {
             {t('menu.philosophy')}<span className="sr-only">{t('menu.philosophySr')}</span>
           </TransitionLink>
           <TransitionLink
-            to="/glossary"
+            to={localizedPathFor('/glossary', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
-              location.pathname.startsWith('/glossary') ? 'text-cyan-400' : 'text-white/70'
+              location.pathname.replace(/^\/(es|ru|uk|zh)(?=\/|$)/, '').startsWith('/glossary') ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
             {t('menu.glossary')}<span className="sr-only">{t('menu.glossarySr')}</span>
           </TransitionLink>
           <TransitionLink
-            to="/articles"
+            to={localizedPathFor('/articles', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
-              location.pathname.startsWith('/articles') ? 'text-cyan-400' : 'text-white/70'
+              location.pathname.replace(/^\/(es|ru|uk|zh)(?=\/|$)/, '').startsWith('/articles') ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
             {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
@@ -195,10 +195,10 @@ export function Layout() {
             {t('menu.bio')}
           </TransitionLink>
           <TransitionLink
-            to="/contact"
+            to={localizedPathFor('/contact', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block py-3 text-sm font-medium transition-colors hover:text-white ${
-              location.pathname === '/contact' ? 'text-cyan-400' : 'text-white/70'
+              location.pathname.replace(/^\/(es|ru|uk|zh)(?=\/|$)/, '') === '/contact' ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
             {t('menu.contacts')}<span className="sr-only">{t('menu.contactsSr')}</span>

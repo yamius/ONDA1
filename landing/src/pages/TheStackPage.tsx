@@ -226,7 +226,7 @@ export function TheStackPage() {
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16 font-mono md:px-6">
       <nav className="mb-8 flex items-center gap-2 text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to="/" className="transition-colors hover:text-white/50">
+        <Link to={langPrefix || '/'} className="transition-colors hover:text-white/50">
           Home
         </Link>
         <span>/</span>
@@ -259,7 +259,7 @@ export function TheStackPage() {
                       <span className="text-white/50">&gt;</span>
                       {articleSlug ? (
                         <Link
-                          to={`/articles/${articleSlug}#${getProtocolUniqueId(p.id)}`}
+                          to={`${langPrefix}/articles/${articleSlug}#${getProtocolUniqueId(p.id)}`}
                           className="group/link flex cursor-pointer items-center gap-1 truncate transition-colors hover:text-white hover:underline"
                         >
                           {p.name}

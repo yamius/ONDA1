@@ -99,7 +99,7 @@ export function TopicPage() {
               {articleList.map((a) => (
                 <li key={a.slug} className="rounded-lg border border-white/10 bg-white/[0.02] p-5">
                   <Link
-                    to={`/articles/${a.slug}`}
+                    to={`${langPrefix}/articles/${a.slug}`}
                     className="block group"
                     data-testid={`link-topic-article-${a.slug}`}
                   >
@@ -126,7 +126,7 @@ export function TopicPage() {
               {glossaryList.map((g) => (
                 <li key={g.slug}>
                   <Link
-                    to={`/glossary/${g.slug}`}
+                    to={`${langPrefix}/glossary/${g.slug}`}
                     className="text-cyan-200 hover:text-cyan-100 underline-offset-4 hover:underline"
                     data-testid={`link-topic-term-${g.slug}`}
                   >
@@ -164,7 +164,7 @@ export function TopicPage() {
         <footer className="border-t border-white/10 pt-6 text-xs text-white/40">
           {t('detail.citePrefix')} ONDA Life. &ldquo;{copy.title}&rdquo;. {SITE_URL}{langPrefix}/topics/{topic.slug}.{' '}
           {t('detail.licenseLabel')}{' '}
-          <Link to="/license" className="underline hover:text-white/70" data-testid="link-license">
+          <Link to={`${langPrefix}/license`} className="underline hover:text-white/70" data-testid="link-license">
             CC-BY-4.0
           </Link>
           .

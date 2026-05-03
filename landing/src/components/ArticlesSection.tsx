@@ -1,10 +1,14 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { articlesMeta as articles } from '../data/articles/articles-meta.generated'
 import { OptimizedImage } from './OptimizedImage'
+import { langFromPath } from '../i18n'
 
 export function ArticlesSection() {
   const { t } = useTranslation('home')
+  const location = useLocation()
+  const lang = langFromPath(location.pathname)
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
   // Static import + deterministic slice: vite code-splits articles-meta into
   // its own chunk (75KB gzip), and a runtime Math.random shuffle would
   // produce different cards on server vs client → SSR/hydration mismatch +
@@ -34,7 +38,7 @@ export function ArticlesSection() {
           {displayArticles.map((article) => (
             <Link
               key={article.slug}
-              to={`/articles/${article.slug}`}
+              to={`${langPrefix}/articles/${article.slug}`}
               className="glass-card group flex flex-col overflow-hidden rounded-xl transition-all hover:border-terminal-green/10"
             >
               {article.image && (
@@ -70,7 +74,7 @@ export function ArticlesSection() {
 
         <div className="mt-10 text-center">
           <Link
-            to="/articles"
+            to={`${langPrefix}/articles`}
             className="inline-flex items-center gap-2 rounded-lg border border-terminal-green/20 bg-terminal-green/5 px-5 py-2.5 font-mono text-sm text-terminal-green transition-all hover:border-terminal-green/40 hover:bg-terminal-green/10"
           >
             {t('articles.viewAll', { count: articles.length })}
