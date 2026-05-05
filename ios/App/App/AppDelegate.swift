@@ -10,6 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     private var attObserver: Any?
+    private var hasConnectedTenjin = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // ⚠️ Order matters: Firebase MUST initialize before any MMP.
@@ -24,23 +25,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("[ONDA] ❌ Firebase configuration failed — GoogleService-Info.plist missing?")
         }
 
-        // Tenjin SDK — replaces Airbridge as our MMP. Tracks installs via
-        // SKAdNetwork, custom events via the Tenjin event API, and gives us
-        // AppLovin Axon integration which Airbridge couldn't.
+        // Tenjin SDK — replaces Airbridge as our MMP.
         //
-        // DEFERRED via DispatchQueue.main.async (same pattern we used for
-        // Airbridge): the SDK does lifecycle setup and a connect() postback
-        // inline; running that on the next runloop tick lets WKWebView paint
-        // its first frame before the MMP work starts. Still on the main
-        // thread, still in the first ~ms, so attribution is unaffected.
+        // ⚠️ ATT ordering: TenjinSDK.connect() MUST run AFTER the ATT prompt
+        // resolves (.authorized / .denied), not before. If connect() fires
+        // while ATT status is .notDetermined, the install postback goes out
+        // without IDFA — Tenjin can't device-match the click and every
+        // install lands in Organic. We saw this in production: 19/19 installs
+        // mis-attributed across AppLovin + Google Ads.
+        //
+        // So here we ONLY init the singleton. The actual connect() call
+        // happens inside the ATT completion handler below.
         DispatchQueue.main.async {
             TenjinSDK.getInstance("AD2VCZNVQ9HQSDTFKSINIBSWGUVPSBHJ")
-            // connect() must run on every launch (cold + warm) so Tenjin can
-            // track sessions and refresh attribution. Reading the ATT status
-            // is Tenjin's responsibility; it queries ATTrackingManager itself
-            // and falls back to IDFV-only when authorization is denied.
-            TenjinSDK.connect()
-            print("[ONDA] Tenjin iOS SDK initialized ✅ (deferred)")
+            print("[ONDA] Tenjin iOS SDK initialized ✅ (connect deferred until ATT resolves)")
         }
 
         // App Tracking Transparency.
@@ -66,7 +64,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 if #available(iOS 14, *) {
                     ATTrackingManager.requestTrackingAuthorization { status in
                         print("[ONDA] ATT status: \(status.rawValue)")
+                        // Now that ATT is resolved, fire Tenjin connect() —
+                        // on the main thread, once per process. On 2nd+ cold
+                        // launches the system returns the cached status
+                        // synchronously, so connect() still happens promptly.
+                        DispatchQueue.main.async {
+                            self?.connectTenjinOnce()
+                        }
                     }
+                } else {
+                    // iOS < 14: no ATT, IDFA available unconditionally.
+                    self?.connectTenjinOnce()
                 }
             }
             if let observer = self?.attObserver {
@@ -96,6 +104,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
+    }
+
+    /// Calls TenjinSDK.connect() at most once per process lifetime, after the
+    /// ATT prompt has been resolved. This is what actually fires the install
+    /// postback to Tenjin — and through Tenjin to AppLovin / Google Ads /
+    /// Meta. Calling it before ATT resolves means IDFA is unavailable and
+    /// every install ends up Organic.
+    private func connectTenjinOnce() {
+        guard !hasConnectedTenjin else { return }
+        hasConnectedTenjin = true
+        TenjinSDK.connect()
+        print("[ONDA] Tenjin connect() fired post-ATT ✅")
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
