@@ -124,6 +124,23 @@ app.use((req, res, next) => {
   next()
 })
 
+// Replit preview hostnames → canonical onda-life.com (301).
+// Surfaced in GSC 2026-04-29: Google was indexing ondalife.replit.app
+// alongside onda-life.com and choosing the Replit URL as canonical for
+// /glossary/microbiome (and likely other pages). Without redirect all
+// SEO juice accrues to the *.replit.app subdomain instead of the brand.
+//
+// Skipped for healthcheck pings (UA-based) so Replit's own monitoring
+// keeps getting 200 on / and never sees a 301.
+const REPLIT_HOST_RE = /\.(replit\.(app|dev)|repl\.co)$/i
+app.use((req, res, next) => {
+  if (req.hostname && REPLIT_HOST_RE.test(req.hostname) && !isHealthcheckRequest(req)) {
+    const protocol = req.headers['x-forwarded-proto'] || req.protocol || 'https'
+    return res.redirect(301, `${protocol}://onda-life.com${req.originalUrl}`)
+  }
+  next()
+})
+
 // Root / — fast path: healthcheck UA → instant OK, cached HTML → no disk read
 app.get('/', (req, res, next) => {
   const ua = req.get('User-Agent') || '(empty)'
