@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Opening App Store… — ONDA Life</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- Tracking redirect: should never be indexed by search engines -->
+<meta name="robots" content="noindex, nofollow" />
+<!-- Belt-and-braces redirect: HTTP-equiv refresh fires even with JS disabled -->
+<meta http-equiv="refresh" content="1;url=https://apps.apple.com/us/app/onda-life/id6755912529" />
+<link rel="canonical" href="https://onda-life.com/go" />
+<style>
+  html, body { background: #050a0f; color: #eaeaea; font-family: 'JetBrains Mono', ui-monospace, monospace; margin: 0; min-height: 100vh; }
+  body { display: flex; align-items: center; justify-content: center; padding: 24px; text-align: center; }
+  main { max-width: 360px; }
+  h1 { font-size: 18px; font-weight: 500; letter-spacing: 0.04em; margin: 0 0 12px; }
+  p { font-size: 13px; color: #9aa4b2; margin: 0 0 18px; line-height: 1.5; }
+  a { color: #6ee7b7; text-decoration: none; border-bottom: 1px dashed currentColor; }
+  .dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #6ee7b7; margin: 0 3px; animation: blink 1.2s infinite; }
+  .dot:nth-child(2) { animation-delay: .2s; }
+  .dot:nth-child(3) { animation-delay: .4s; }
+  @keyframes blink { 0%, 80%, 100% { opacity: .3; } 40% { opacity: 1; } }
+</style>
+<!-- Meta Pixel — base code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2615262235497922');
+fbq('track', 'PageView');
+fbq('track', 'InitiateCheckout', {
+  content_name: 'ONDA Life iOS App',
+  content_category: 'app_install',
+  source: 'quiz_cta'
+});
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://www.facebook.com/tr?id=2615262235497922&ev=InitiateCheckout&noscript=1"
+       alt="" />
+</noscript>
+<!-- JS redirect with a small delay so the pixel beacon has time to fire.
+     The <meta refresh> above is the no-JS fallback. -->
+<script>
+  setTimeout(function () {
+    window.location.replace('https://apps.apple.com/us/app/onda-life/id6755912529');
+  }, 700);
+</script>
+</head>
+<body>
+<main>
+  <h1>OPENING APP STORE<span class="dot"></span><span class="dot"></span><span class="dot"></span></h1>
+  <p>Redirecting to ONDA Life on the App Store. If nothing happens, <a href="https://apps.apple.com/us/app/onda-life/id6755912529">tap here</a>.</p>
+</main>
+</body>
+</html>
