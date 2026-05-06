@@ -8,7 +8,7 @@
 import { writeFileSync, mkdirSync, statSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ES_PILOT_ARTICLE_SLUGS, articleLocalizedLangs } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs } from './prerender-routes'
 import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, type Lang } from '../src/i18n'
 import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
 import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
@@ -172,9 +172,9 @@ for (const n of LEVEL_NUMBERS) {
   altsByLevel[n] = tags.join('\n')
 }
 
-/** Pre-build hreflang alternates for each pilot article — emitted on EN URL and on the localised sibling. */
+/** Pre-build hreflang alternates for each pilot article — emitted on EN URL and on every localised sibling. */
 const altsByArticle: Record<string, string> = {}
-for (const slug of ES_PILOT_ARTICLE_SLUGS) {
+for (const slug of ALL_PILOT_ARTICLE_SLUGS) {
   const langs = articleLocalizedLangs(slug)
   if (langs.length <= 1) continue
   const tags = langs.map((l) => {

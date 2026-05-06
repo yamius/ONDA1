@@ -39,6 +39,24 @@ const localizedPartRoutes = partRouteVariants(partSlugs)
  * Roadmap for expansion: review remaining 45 ES translations, then
  * gate RU activation behind a Russian reviewer, etc.
  */
+export const RU_PILOT_ARTICLE_SLUGS: readonly string[] = [
+  // 11 featured pillar articles (same set as ES — overlapping pilots is
+  // intentional so we can compare ES vs RU SERP performance per slug).
+  'vagus-nerve-master-key',
+  'neuroplasticity-flow-overclocking',
+  'neural-entrainment-meditation-2',
+  'electric-medicine-neuromodulation',
+  'muscle-metabolic-marker',
+  'chm-continuous-hormone-monitoring',
+  'glymphatic-flush-clearing-neural-cache',
+  'cpg-neural-autopilot',
+  'co2-tolerance-expanding-oxygen-limit',
+  'dopamine-architecture-mastering-desire',
+  'gut-brain-axis-data-link',
+  // +1 high-volume Russian search topic (циркадные ритмы / биохакинг сна).
+  'circadian-reset-mastering-light',
+] as const
+
 export const ES_PILOT_ARTICLE_SLUGS: readonly string[] = [
   // 11 featured pillar articles (FEATURED_ARTICLE_SLUGS).
   'vagus-nerve-master-key',
@@ -67,12 +85,22 @@ export const ES_PILOT_ARTICLE_SLUGS: readonly string[] = [
 ] as const
 
 const localizedEsArticleRoutes = ES_PILOT_ARTICLE_SLUGS.map((s) => `/es/articles/${s}`)
+const localizedRuArticleRoutes = RU_PILOT_ARTICLE_SLUGS.map((s) => `/ru/articles/${s}`)
 const ES_PILOT_ARTICLE_SET = new Set<string>(ES_PILOT_ARTICLE_SLUGS)
+const RU_PILOT_ARTICLE_SET = new Set<string>(RU_PILOT_ARTICLE_SLUGS)
 
 /** Languages that have a localised URL prerendered for an article slug. */
 export function articleLocalizedLangs(slug: string): readonly string[] {
-  return ES_PILOT_ARTICLE_SET.has(slug) ? ['en', 'es'] : ['en']
+  const langs: string[] = ['en']
+  if (ES_PILOT_ARTICLE_SET.has(slug)) langs.push('es')
+  if (RU_PILOT_ARTICLE_SET.has(slug)) langs.push('ru')
+  return langs
 }
+
+/** Union of all article slugs that have at least one localised URL prerendered. */
+export const ALL_PILOT_ARTICLE_SLUGS: readonly string[] = Array.from(
+  new Set<string>([...ES_PILOT_ARTICLE_SLUGS, ...RU_PILOT_ARTICLE_SLUGS]),
+)
 
 // Pages that stay EN-only for now (Articles, Glossary, etc).
 const nonLocalizedStaticPaths = [
@@ -96,6 +124,7 @@ export function getPrerenderRoutes(): string[] {
     ...glossaryTerms.map((t) => `/glossary/${t.slug}`),
     ...articles.map((a) => `/articles/${a.slug}`),
     ...localizedEsArticleRoutes,
+    ...localizedRuArticleRoutes,
     ...localizedPartRoutes,
     ...localizedLevelRoutes,
     ...localizedMetricRoutes,
@@ -114,8 +143,11 @@ export const LOCALIZED_LEVEL_ROUTE_SET = new Set(localizedLevelRoutes)
 /** Set of all routes that are localized part detail pages. */
 export const LOCALIZED_PART_ROUTE_SET = new Set(localizedPartRoutes)
 
-/** Set of localized article routes (only ES pilot for now). */
-export const LOCALIZED_ARTICLE_ROUTE_SET = new Set(localizedEsArticleRoutes)
+/** Set of localized article routes (ES + RU pilots). */
+export const LOCALIZED_ARTICLE_ROUTE_SET = new Set([
+  ...localizedEsArticleRoutes,
+  ...localizedRuArticleRoutes,
+])
 
 /** EN base paths that have localized variants — used by sitemap for hreflang grouping. */
 export const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)
