@@ -24,7 +24,7 @@ import {
   parsePartRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, articleLocalizedLangs } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, TITLE_MAX, DESC_MAX } from './meta-inject'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -75,6 +75,41 @@ for (const lang of SUPPORTED_LANGS) {
 
 interface PartFile {
   parts?: Record<string, { metaDescription?: string; subtitle?: string }>
+}
+
+/**
+ * Subset of the per-locale articles.json shape we read at prerender time.
+ * Keys are article slugs; values carry the localised title + description
+ * we splice into <title>, og:title and meta description when prerendering
+ * the localised /<lang>/articles/<slug> URL.
+ */
+interface ArticlesFile {
+  bodies?: Record<string, { title?: string; description?: string }>
+}
+const articlesByLang: Record<Lang, ArticlesFile> = {} as Record<Lang, ArticlesFile>
+for (const lang of SUPPORTED_LANGS) {
+  articlesByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'articles.json'), 'utf-8')) as ArticlesFile
+}
+
+/** Parse /<lang>/articles/<slug> or /articles/<slug> into {lang, slug}. */
+function parseArticleRoute(route: string): { lang: Lang; slug: string } | null {
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/articles\/([^/]+)$/)
+  if (!m) return null
+  return { lang: ((m[1] as Lang) ?? 'en'), slug: m[2] }
+}
+
+function articleUrlFor(slug: string, lang: Lang): string {
+  return lang === 'en' ? `${SITE_URL}/articles/${slug}` : `${SITE_URL}/${lang}/articles/${slug}`
+}
+
+/** Hreflang cluster for an article — only includes languages with a localised URL. */
+function buildHreflangLinksForArticle(slug: string, langs: readonly string[]): string {
+  const tags: string[] = []
+  for (const lang of langs) {
+    tags.push(`<link rel="alternate" hreflang="${lang}" href="${articleUrlFor(slug, lang as Lang)}">`)
+  }
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${articleUrlFor(slug, 'en')}">`)
+  return tags.join('\n  ')
 }
 // Part translations per language. The `parts` block is empty for languages
 // whose body content hasn't been translated yet — we use this presence check
@@ -284,14 +319,20 @@ for (const route of routes) {
     const isMetricLocalized = LOCALIZED_METRIC_ROUTE_SET.has(route)
     const isLevelLocalized = LOCALIZED_LEVEL_ROUTE_SET.has(route)
     const isPartLocalized = LOCALIZED_PART_ROUTE_SET.has(route)
+    const isArticleLocalized = LOCALIZED_ARTICLE_ROUTE_SET.has(route)
     const metricInfo = isMetricLocalized ? parseMetricRoute(route) : null
     const levelInfo = isLevelLocalized ? parseLevelRoute(route) : null
     const partInfo = isPartLocalized ? parsePartRoute(route) : null
+    // articleInfo also fires for the EN /articles/<slug> route — used to
+    // emit a hreflang cluster on the EN side when the slug has a
+    // localised sibling. parseArticleRoute returns lang='en' for the EN URL.
+    const articleInfo = parseArticleRoute(route)
     const lang: Lang = isLocalized
       ? langFromPath(route)
       : metricInfo ? metricInfo.lang
       : levelInfo ? levelInfo.lang
       : partInfo ? partInfo.lang
+      : isArticleLocalized && articleInfo ? articleInfo.lang
       : 'en'
     const basePath = isLocalized ? stripLangPrefix(route) : route
 
@@ -307,7 +348,12 @@ for (const route of routes) {
       out = out.replace(/<!-- Google Tag Manager -->[\s\S]*?<!-- End Google Tag Manager -->\s*/g, '')
       out = out.replace(/<!-- Google Tag Manager \(noscript\) -->[\s\S]*?<!-- End Google Tag Manager \(noscript\) -->\s*/g, '')
     }
-    const meta = getMetaForRoute(route)
+    // For /<lang>/articles/<slug>, ask getMetaForRoute about the EN
+    // equivalent so injectMetaIntoHtml emits the proper TechArticle
+    // JSON-LD, FAQPage, HowTo, breadcrumbs etc. Localised strings are
+    // patched in the article branch below.
+    const metaRoute = isArticleLocalized && articleInfo ? `/articles/${articleInfo.slug}` : route
+    const meta = getMetaForRoute(metaRoute)
     out = injectMetaIntoHtml(out, meta)
 
     if (isLocalized) {
@@ -358,6 +404,48 @@ for (const route of routes) {
       } else if (translatedLangs.length > 1) {
         // EN URL with siblings translated — emit hreflang cluster from EN side too.
         const hreflang = buildHreflangLinksForPart(partInfo.slug, translatedLangs)
+        out = out.replace('</head>', `  ${hreflang}\n</head>`)
+      }
+    } else if (articleInfo) {
+      // Article route — either /articles/<slug> (EN) or /<lang>/articles/<slug>
+      // (currently only ES, gated by ES_PILOT_ARTICLE_SLUGS in prerender-routes.ts).
+      const articleLangs = articleLocalizedLangs(articleInfo.slug)
+      const hasLocalizedSibling = articleLangs.length > 1
+      out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${articleInfo.lang}"`)
+
+      if (articleInfo.lang !== 'en') {
+        // Localised article URL — patch title, description, canonical,
+        // og:url, og:locale to the localised values, then emit the cluster.
+        const body = articlesByLang[articleInfo.lang].bodies?.[articleInfo.slug]
+        const subtitle = body?.title ?? ''
+        const desc = body?.description ?? ''
+        const url = articleUrlFor(articleInfo.slug, articleInfo.lang)
+        const escUrl = escAttr(url)
+        out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
+        if (subtitle) {
+          const title = `${subtitle} — ONDA Life`
+          const escTitle = escAttr(title)
+          out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
+          out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escTitle}">`)
+        }
+        if (desc) {
+          const escDesc = escAttr(desc)
+          out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escDesc}">`)
+        }
+        out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+        const hreflang = buildHreflangLinksForArticle(articleInfo.slug, articleLangs)
+        const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[articleInfo.lang]}">`
+        out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
+      } else if (hasLocalizedSibling) {
+        // EN URL whose slug has a localised sibling — emit cluster from EN side
+        // so Google/Bing find the alt-language URLs from the EN page too.
+        const hreflang = buildHreflangLinksForArticle(articleInfo.slug, articleLangs)
         out = out.replace('</head>', `  ${hreflang}\n</head>`)
       }
     }

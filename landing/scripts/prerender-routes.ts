@@ -25,6 +25,55 @@ const localizedLevelRoutes = levelRouteVariants(levelNumbers)
 const partSlugs = Object.keys(parts)
 const localizedPartRoutes = partRouteVariants(partSlugs)
 
+/**
+ * Pilot list: 22 articles where the Spanish localised URL goes live.
+ * Listed slugs get a prerendered /es/articles/<slug> page plus an
+ * en+es+x-default hreflang cluster on both the EN and ES URLs (and
+ * matching <xhtml:link> entries in sitemap.xml).
+ *
+ * Adding a slug here is the single trigger — only do it once the ES
+ * translation in public/locales/es/articles.json has been reviewed
+ * end-to-end. Raw LLM-translated YMYL content shipped as fresh URLs
+ * at scale risks Google's "scaled content abuse" classifier.
+ *
+ * Roadmap for expansion: review remaining 45 ES translations, then
+ * gate RU activation behind a Russian reviewer, etc.
+ */
+export const ES_PILOT_ARTICLE_SLUGS: readonly string[] = [
+  // 11 featured pillar articles (FEATURED_ARTICLE_SLUGS).
+  'vagus-nerve-master-key',
+  'neuroplasticity-flow-overclocking',
+  'neural-entrainment-meditation-2',
+  'electric-medicine-neuromodulation',
+  'muscle-metabolic-marker',
+  'chm-continuous-hormone-monitoring',
+  'glymphatic-flush-clearing-neural-cache',
+  'cpg-neural-autopilot',
+  'co2-tolerance-expanding-oxygen-limit',
+  'dopamine-architecture-mastering-desire',
+  'gut-brain-axis-data-link',
+  // 11 high-value follow-ups (sleep / breathwork / metabolism / HRV).
+  'circadian-reset-mastering-light',
+  'metabolic-flexibility-dual-fuel-system',
+  'breathwork-command-line-interface',
+  'dopamine-stacking-preventing-circuit-overload',
+  'nightly-flush-glymphatic-neural-cache',
+  'nervous-system-ping-latency',
+  'fault-tolerant-human-hrv-buffer',
+  'resonant-frequency-system-coherence',
+  'baroreflex-01hz-shift',
+  'idle-state-alpha-rhythms',
+  'interoceptive-precision-sensor-calibration',
+] as const
+
+const localizedEsArticleRoutes = ES_PILOT_ARTICLE_SLUGS.map((s) => `/es/articles/${s}`)
+const ES_PILOT_ARTICLE_SET = new Set<string>(ES_PILOT_ARTICLE_SLUGS)
+
+/** Languages that have a localised URL prerendered for an article slug. */
+export function articleLocalizedLangs(slug: string): readonly string[] {
+  return ES_PILOT_ARTICLE_SET.has(slug) ? ['en', 'es'] : ['en']
+}
+
 // Pages that stay EN-only for now (Articles, Glossary, etc).
 const nonLocalizedStaticPaths = [
   '/glossary',
@@ -46,6 +95,7 @@ export function getPrerenderRoutes(): string[] {
     ...staticPaths,
     ...glossaryTerms.map((t) => `/glossary/${t.slug}`),
     ...articles.map((a) => `/articles/${a.slug}`),
+    ...localizedEsArticleRoutes,
     ...localizedPartRoutes,
     ...localizedLevelRoutes,
     ...localizedMetricRoutes,
@@ -63,6 +113,9 @@ export const LOCALIZED_LEVEL_ROUTE_SET = new Set(localizedLevelRoutes)
 
 /** Set of all routes that are localized part detail pages. */
 export const LOCALIZED_PART_ROUTE_SET = new Set(localizedPartRoutes)
+
+/** Set of localized article routes (only ES pilot for now). */
+export const LOCALIZED_ARTICLE_ROUTE_SET = new Set(localizedEsArticleRoutes)
 
 /** EN base paths that have localized variants — used by sitemap for hreflang grouping. */
 export const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)
