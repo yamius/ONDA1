@@ -2,6 +2,7 @@
  * Meta data for build-time injection into prerendered HTML.
  * Single source of truth for title/description per route.
  */
+import { IMAGE_DIMENSIONS } from '../src/data/image-manifest.generated'
 import { getTermBySlug } from '../src/data/glossary'
 import { GLOSSARY_SEO } from '../src/data/glossary-seo'
 import { levelsData } from '../src/data/levels'
@@ -2207,6 +2208,41 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
       out = out.replace(
         /(<meta\s+property="og:image"\s+content="[^"]*">)/i,
         `$1\n${imageAltTags}`
+      )
+    }
+  }
+
+  // og:image:width / og:image:height / og:image:type — keep them in sync
+  // with the actual ogImage URL (template defaults match the homepage hero;
+  // article pages override og:image to article.image so the dimensions need
+  // to follow). Looked up in the build-time IMAGE_DIMENSIONS manifest.
+  const ogImagePath = ogImage.replace(/^https?:\/\/[^/]+/, '')
+  const ogImageDims = IMAGE_DIMENSIONS[ogImagePath]
+  if (ogImageDims) {
+    out = out.replace(
+      /<meta\s+property="og:image:width"\s+content="[^"]*">/gi,
+      `<meta property="og:image:width" content="${ogImageDims.width}">`
+    )
+    out = out.replace(
+      /<meta\s+property="og:image:height"\s+content="[^"]*">/gi,
+      `<meta property="og:image:height" content="${ogImageDims.height}">`
+    )
+  }
+  const ogImageType =
+    ogImagePath.endsWith('.webp') ? 'image/webp' :
+    ogImagePath.endsWith('.avif') ? 'image/avif' :
+    ogImagePath.endsWith('.png')  ? 'image/png'  :
+    /\.(jpe?g)$/i.test(ogImagePath) ? 'image/jpeg' : null
+  if (ogImageType) {
+    if (out.includes('og:image:type')) {
+      out = out.replace(
+        /<meta\s+property="og:image:type"\s+content="[^"]*">/gi,
+        `<meta property="og:image:type" content="${ogImageType}">`
+      )
+    } else {
+      out = out.replace(
+        /(<meta\s+property="og:image"\s+content="[^"]*">)/i,
+        `$1\n  <meta property="og:image:type" content="${ogImageType}">`
       )
     }
   }
