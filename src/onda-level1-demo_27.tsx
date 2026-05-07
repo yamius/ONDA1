@@ -3749,14 +3749,16 @@ const OndaLevel1 = () => {
           backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.3) 100%)'
         }} />
 
-        <button
-          onClick={exitPractice}
-          disabled={!canExitPractice}
-          style={!canExitPractice ? { pointerEvents: 'none', opacity: 0.5 } : undefined}
-          className="absolute top-[72px] right-6 z-50 bg-black/40 hover:bg-black/60 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110"
-        >
-          <X className="w-6 h-6" />
-        </button>
+        {!isMinimalMode && (
+          <button
+            onClick={exitPractice}
+            disabled={!canExitPractice}
+            style={!canExitPractice ? { pointerEvents: 'none', opacity: 0.5 } : undefined}
+            className="absolute top-[72px] right-6 z-50 bg-black/40 hover:bg-black/60 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        )}
 
         {practiceState === 'intro' && (
           <div className="relative z-10 flex items-center justify-center min-h-screen p-3 sm:p-6">
