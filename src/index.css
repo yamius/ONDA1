@@ -15,6 +15,16 @@
     width: 100%;
   }
 
+  /* Пропорциональное сжатие UI на низких экранах (iPhone SE 2020 = 667pt и т.п.).
+     Tailwind использует rem, поэтому уменьшение корневого font-size
+     пропорционально сжимает все размеры/отступы/шрифты без правки классов. */
+  @media (max-height: 700px) {
+    html { font-size: 14px; }
+  }
+  @media (max-height: 600px) {
+    html { font-size: 12.5px; }
+  }
+
   body {
     overscroll-behavior: none;
     -webkit-overflow-scrolling: touch;
