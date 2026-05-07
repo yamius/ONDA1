@@ -15,6 +15,8 @@
  * Pass `priority` for above-the-fold / LCP images: disables lazy loading
  * and sets fetchpriority=high.
  */
+import { IMAGE_DIMENSIONS } from '../data/image-manifest.generated'
+
 interface OptimizedImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string
   alt: string
@@ -44,6 +46,14 @@ export function OptimizedImage({
   className,
   ...rest
 }: OptimizedImageProps) {
+  // Auto-fill width/height from the build-time manifest if the caller did not
+  // pass them. Browser then reserves the right amount of vertical space at
+  // first paint, eliminating CLS without every caller needing to hand-write
+  // dimensions. Caller-supplied values always win.
+  const dims = IMAGE_DIMENSIONS[src]
+  const finalWidth = width ?? dims?.width
+  const finalHeight = height ?? dims?.height
+
   const isRaster = /\.(png|jpg|jpeg)$/i.test(src)
 
   // Fallback for non-raster sources (svg, already-encoded webp/avif passed directly).
@@ -54,8 +64,8 @@ export function OptimizedImage({
         alt={alt}
         loading={priority ? 'eager' : loading}
         fetchPriority={priority ? 'high' : undefined}
-        width={width}
-        height={height}
+        width={finalWidth}
+        height={finalHeight}
         className={className}
         {...rest}
       />
@@ -80,8 +90,8 @@ export function OptimizedImage({
         alt={alt}
         loading={priority ? 'eager' : loading}
         fetchPriority={priority ? 'high' : undefined}
-        width={width}
-        height={height}
+        width={finalWidth}
+        height={finalHeight}
         className={className}
         {...rest}
       />
