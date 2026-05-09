@@ -238,6 +238,8 @@ export interface RouteMeta {
   image?: string
   imageAlt?: string
   definedTerm?: { name: string; description: string; url: string }
+  /** Extracted "The Hack" blockquote bodies — emitted as Quotation JSON-LD. */
+  hackQuotes?: string[]
   techArticle?: {
     name: string
     description: string
@@ -352,6 +354,56 @@ function buildBreadcrumbListJsonLd(breadcrumbs: BreadcrumbItem[]): string {
   return JSON.stringify(list)
 }
 
+/**
+ * Extract every "The Hack" protocol blockquote from an article's markdown
+ * body. Matches a blockquote that starts with `> **The Hack:**` and walks
+ * forward through subsequent `>` lines so multi-paragraph hacks come out
+ * as a single string. Markdown is stripped of leading `>` markers and the
+ * `**The Hack:**` label.
+ *
+ * Each returned string becomes a schema.org/Quotation JSON-LD blob — AI
+ * quote-extraction (Perplexity citations, Bing AI snippets, You.com
+ * cite-in-line) prefers explicit Quotation markers when deciding what
+ * text to surface and attribute.
+ */
+function extractHackQuotes(content: string): string[] {
+  const quotes: string[] = []
+  const lines = content.split('\n')
+  let current: string | null = null
+  const close = () => {
+    if (current === null) return
+    const trimmed = current.replace(/\s+/g, ' ').trim()
+    if (trimmed) quotes.push(trimmed)
+    current = null
+  }
+  for (const line of lines) {
+    const bq = line.match(/^>\s?(.*)$/)
+    if (bq) {
+      const text = bq[1]
+      if (current === null) {
+        const hm = text.match(/^\*\*The Hack:\*\*\s*(.*)/)
+        if (hm) current = hm[1]
+      } else {
+        current = current + ' ' + text
+      }
+    } else {
+      close()
+    }
+  }
+  close()
+  return quotes
+}
+
+function buildQuotationJsonLd(text: string, articleUrl: string): string {
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Quotation',
+    text,
+    creator: { '@id': AUTHOR_ID },
+    isPartOf: { '@id': `${articleUrl}#article` },
+  })
+}
+
 function buildDefinedTermJsonLd(name: string, description: string, url: string): string {
   const term = {
     '@context': 'https://schema.org',
@@ -399,6 +451,7 @@ function buildTechArticleJsonLd(
   const article: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'TechArticle',
+    '@id': `${url}#article`,
     headline: name,
     description,
     url,
@@ -1471,6 +1524,7 @@ export function getMetaForRoute(route: string): RouteMeta {
         url,
         datePublished: '2025-02-22',
       }
+      const hackQuotes = extractHackQuotes(article.content)
       const techArticleExtras =
         slug === 'dopamine-stacking-preventing-circuit-overload'
           ? {
@@ -1980,6 +2034,7 @@ export function getMetaForRoute(route: string): RouteMeta {
         breadcrumbs,
         ogType: 'article',
         techArticle: { ...techArticleBase, ...techArticleExtras },
+        hackQuotes: hackQuotes.length ? hackQuotes : undefined,
       }
       if (article.image) {
         const absImage = `${SITE_URL}${article.image}`
@@ -2145,6 +2200,16 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
       opts
     )}</script>`
     out = out.replace('</head>', `  ${techArticleScript}\n</head>`)
+
+    // Quotation JSON-LD per "The Hack" blockquote — references the
+    // TechArticle by @id so the graph stays connected. Empty array =
+    // no emission, no harm done.
+    if (meta.hackQuotes?.length) {
+      const quotationScripts = meta.hackQuotes
+        .map((q) => `<script type="application/ld+json">${buildQuotationJsonLd(q, meta.techArticle!.url)}</script>`)
+        .join('\n  ')
+      out = out.replace('</head>', `  ${quotationScripts}\n</head>`)
+    }
 
     // Highwire Press citation_* meta tags. Read by Google Scholar AND
     // most academic AI agents (Semantic Scholar, Elicit, Consensus.app,
