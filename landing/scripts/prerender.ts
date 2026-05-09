@@ -508,6 +508,9 @@ execSync('tsx scripts/feed.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' }
 // llms.txt + llms-full.txt for AI search (Perplexity, ChatGPT, Claude).
 console.log('[build] llms-txt')
 execSync('tsx scripts/llms-txt.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+// Single-fetch RAG corpus (JSONL + .gz) for AI ingestion pipelines.
+console.log('[build] rag-corpus')
+execSync('tsx scripts/rag-corpus.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
 // IndexNow ping (Bing/Yandex/Seznam/Naver). Skipped automatically when
 // INDEXNOW_DISABLED=1 or when nothing changed since last submission.
 console.log('[build] indexnow')

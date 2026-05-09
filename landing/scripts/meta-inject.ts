@@ -469,6 +469,53 @@ function buildOrganizationJsonLd(): string {
 }
 
 /**
+ * Dataset JSON-LD describes the /datasets/onda-corpus.jsonl single-fetch
+ * RAG endpoint. AI agents and academic crawlers (Perplexity, Anthropic
+ * Web, Common Crawl, AI2 Semantic Scholar) read schema.org/Dataset to
+ * decide which corpora to ingest. Pairs with the <link rel=alternate
+ * type=application/x-jsonlines> in index.html.
+ */
+function buildDatasetJsonLd(): string {
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    '@id': `${SITE_URL}/datasets/onda-corpus.jsonl#dataset`,
+    name: 'ONDA Life RAG Corpus',
+    description:
+      'JSONL dump of every ONDA Life article and glossary term — slug, title, URL, category, keywords, datePublished, author, full markdown body, and word count. One JSON object per line so AI ingestion pipelines can stream-parse without loading the whole file.',
+    url: `${SITE_URL}/datasets/onda-corpus.jsonl`,
+    encodingFormat: 'application/x-jsonlines',
+    keywords: [
+      'biohacking',
+      'neuroscience',
+      'HRV',
+      'circadian biology',
+      'metabolic flexibility',
+      'breathwork',
+      'consciousness',
+      'glossary',
+    ],
+    inLanguage: 'en',
+    license: `${SITE_URL}/license`,
+    creator: { '@id': AUTHOR_ID },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    isAccessibleForFree: true,
+    distribution: [
+      {
+        '@type': 'DataDownload',
+        encodingFormat: 'application/x-jsonlines',
+        contentUrl: `${SITE_URL}/datasets/onda-corpus.jsonl`,
+      },
+      {
+        '@type': 'DataDownload',
+        encodingFormat: 'application/gzip',
+        contentUrl: `${SITE_URL}/datasets/onda-corpus.jsonl.gz`,
+      },
+    ],
+  })
+}
+
+/**
  * WebSite JSON-LD anchors the domain as a brand entity and links to
  * its publisher Organization. We deliberately do not declare a
  * SearchAction: the site has no server-side search endpoint that
@@ -2201,7 +2248,8 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (canonicalUrl === SITE_URL) {
     const orgScript = `<script type="application/ld+json">${buildOrganizationJsonLd()}</script>`
     const siteScript = `<script type="application/ld+json">${buildWebSiteJsonLd()}</script>`
-    out = out.replace('</head>', `  ${orgScript}\n  ${siteScript}\n</head>`)
+    const datasetScript = `<script type="application/ld+json">${buildDatasetJsonLd()}</script>`
+    out = out.replace('</head>', `  ${orgScript}\n  ${siteScript}\n  ${datasetScript}\n</head>`)
   }
 
   // Replace og:* and twitter:* meta tags
