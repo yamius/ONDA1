@@ -476,8 +476,8 @@
     "requirement": "Complete all circuit practices",
     "your_artifacts": "Your Artifacts",
     "life_rhythm": "Life Rhythm",
-    "life_rhythm_desc": "Sleep 7-9 hours for 7 days in a row",
-    "life_rhythm_alert": "Activate the Sleep app on your watch and the biotracker will monitor your sleep automatically. Sleep 7-9 hours for 7 days in a row to unlock the artifact.",
+    "life_rhythm_desc": "Sleep 6-8 hours for 7 days in a row",
+    "life_rhythm_alert": "Activate the Sleep app on your watch and the biotracker will monitor your sleep automatically. Sleep 6-8 hours for 7 days in a row to unlock the artifact.",
     "progress": "Progress",
     "days": "days"
   },
