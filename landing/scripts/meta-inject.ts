@@ -492,8 +492,28 @@ function buildPersonJsonLd(): string {
     url: AUTHOR_URL,
     sameAs: AUTHOR_SAME_AS,
     jobTitle: 'Founder, ONDA Life',
+    description:
+      'Founder of ONDA Life — a biohacking and consciousness OS that treats the body as a biocomputer. Writes long-form articles on neurophysiology, HRV training, circadian biology, metabolic flexibility, and structured consciousness development.',
+    // knowsAbout populates the topical signal AI agents read when ranking
+    // experts for a query. Mirrors the major article clusters on the site.
+    knowsAbout: [
+      'biohacking',
+      'neuroscience',
+      'heart rate variability',
+      'autonomic nervous system',
+      'vagus nerve',
+      'neuroplasticity',
+      'circadian biology',
+      'metabolic flexibility',
+      'breathwork',
+      'dopamine regulation',
+      'glymphatic system',
+      'flow state',
+      'consciousness studies',
+    ],
     worksFor: {
       '@type': 'Organization',
+      '@id': `${SITE_URL}/#organization`,
       name: 'ONDA Life',
       url: SITE_URL,
     },
