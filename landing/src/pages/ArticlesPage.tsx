@@ -2,7 +2,8 @@ import { useEffect, useState, useMemo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { articles } from '../data/articles'
-import { FEATURED_ARTICLE_SLUGS, ARTICLE_CATEGORIES } from '../data/articles-categories'
+import { FEATURED_ARTICLE_SLUGS } from '../data/articles-categories'
+import { TOPICS } from '../data/topics'
 import { OptimizedImage } from '../components/OptimizedImage'
 import { langFromPath, homePathFor } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
@@ -44,7 +45,9 @@ export function ArticlesPage() {
   const langPrefix = lang === 'en' ? '' : `/${lang}`
   const [mdArticles, setMdArticles] = useState<MdArticle[]>([])
   const [search, setSearch] = useState('')
-  const [activeCategory, setActiveCategory] = useState<string | null>(null)
+  // activeCategory remains as harmless state for now (read by matchesCategory
+  // below) — kept null. Category chips were replaced by topic-hub links.
+  const [activeCategory] = useState<string | null>(null)
 
   useEffect(() => {
     fetch('/api/md-articles')
@@ -146,35 +149,38 @@ export function ArticlesPage() {
         </div>
       </div>
 
-      {/* Categories */}
+      {/* Browse by topic — chips link to pillar hubs (pillar-cluster strategy).
+          Each chip is a hard link, not an inline filter, so internal link
+          equity flows to the hub pages and Google sees a clean topical
+          hierarchy from /articles into /topics/<slug>. */}
       <div className="mb-10">
+        <div className="mb-3 flex items-baseline justify-between">
+          <h2 className="font-mono text-[10px] uppercase tracking-widest text-terminal-cyan/60">
+            [ BROWSE_BY_TOPIC ]
+          </h2>
+          <span className="font-mono text-[10px] tracking-wider text-white/30">
+            {allArticles.length} articles total
+          </span>
+        </div>
         <div className="flex flex-wrap gap-2 overflow-x-auto pb-2">
-          <button
-            onClick={() => setActiveCategory(null)}
-            className={`rounded-lg border px-4 py-1.5 font-mono text-xs transition-all ${
-              !activeCategory
-                ? 'border-terminal-green/30 bg-terminal-green/10 text-terminal-green'
-                : 'border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
-            }`}
-          >
-            {t('allLabel')} ({allArticles.length})
-          </button>
-          {ARTICLE_CATEGORIES.map((cat) => {
-            const count = allArticles.filter((a) => a.category === cat).length
+          {TOPICS.map((topic) => {
+            const count = topic.articleSlugs.length
             if (count === 0) return null
-            const label = t(`categories.${cat}`, { defaultValue: cat }) as string
+            const live = !!topic.pillar
+            const shortName = topic.name.split(' — ')[0]
             return (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(activeCategory === cat ? null : cat)}
+              <Link
+                key={topic.slug}
+                to={`/topics/${topic.slug}`}
                 className={`rounded-lg border px-4 py-1.5 font-mono text-xs transition-all ${
-                  activeCategory === cat
-                    ? 'border-terminal-green/30 bg-terminal-green/10 text-terminal-green'
+                  live
+                    ? 'border-white/10 text-white/60 hover:border-terminal-green/30 hover:text-terminal-green'
                     : 'border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
                 }`}
+                title={live ? topic.tagline : `${topic.tagline} — pillar coming soon`}
               >
-                {label} ({count})
-              </button>
+                {shortName} ({count})
+              </Link>
             )
           })}
         </div>
