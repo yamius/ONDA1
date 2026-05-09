@@ -8,7 +8,7 @@
 import { writeFileSync, mkdirSync, statSync, existsSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs, INDEXED_TOPIC_SLUGS } from './prerender-routes'
 import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, type Lang } from '../src/i18n'
 import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
 import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
@@ -79,6 +79,8 @@ function getPriority(route: string): string {
   if (LOCALIZED_LEVEL_ROUTE_SET.has(route)) return '0.8'
   if (route === '/glossary') return '0.9'
   if (route === '/articles') return '0.9'
+  if (route === '/topics') return '0.9'
+  if (route.startsWith('/topics/')) return '0.85'
   if (route === '/contact') return '0.8'
   if (route.startsWith('/level/')) return '0.8'
   const articleSlug = articleSlugFromRoute(route)
@@ -130,12 +132,18 @@ for (const slug of PART_SLUGS) {
 }
 
 const allRoutes = getPrerenderRoutes()
-const routes = allRoutes.filter(r => {
-  if (!LOCALIZED_PART_ROUTE_SET.has(r)) return true
-  const info = parsePartRoute(r)
-  if (!info) return false
-  // Include EN always; non-EN only if translated.
-  return partTranslated[info.slug]?.includes(info.lang)
+const INDEXED_TOPIC_SET = new Set<string>(INDEXED_TOPIC_SLUGS)
+const routes = allRoutes.filter((r) => {
+  if (LOCALIZED_PART_ROUTE_SET.has(r)) {
+    const info = parsePartRoute(r)
+    if (!info) return false
+    // Include EN always; non-EN only if translated.
+    return partTranslated[info.slug]?.includes(info.lang)
+  }
+  // Topic hubs: only include hubs that have a pillar (rest are noindex).
+  const tm = r.match(/^\/topics\/([^/]+)$/)
+  if (tm) return INDEXED_TOPIC_SET.has(tm[1])
+  return true
 })
 
 /** Pre-build hreflang alternates for each localized base path. */

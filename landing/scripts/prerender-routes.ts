@@ -4,6 +4,7 @@
  */
 import { glossaryTerms } from '../src/data/glossary'
 import { articles } from '../src/data/articles'
+import { TOPIC_SLUGS, INDEXED_TOPIC_SLUGS } from '../src/data/topics'
 import { parts } from '../src/pages/PartPage'
 import { levelsData } from '../src/data/levels'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
@@ -111,7 +112,15 @@ const nonLocalizedStaticPaths = [
   '/sitemap',
   '/privacy',
   '/terms',
+  '/topics',
 ]
+
+// Every topic hub URL is prerendered. Hubs without a pillar render
+// with <meta name=robots content=noindex> so the placeholder never
+// pollutes Google's index — the URL still resolves for direct navigation
+// from /topics. INDEXED_TOPIC_SLUGS is the subset that actually goes
+// into sitemap.xml + hreflang (driven by data/topics.ts).
+const topicHubRoutes = TOPIC_SLUGS.map((s) => `/topics/${s}`)
 
 const staticPaths = [
   ...localizedRoutes,
@@ -128,8 +137,12 @@ export function getPrerenderRoutes(): string[] {
     ...localizedPartRoutes,
     ...localizedLevelRoutes,
     ...localizedMetricRoutes,
+    ...topicHubRoutes,
   ]
 }
+
+/** Slugs that should appear in sitemap.xml (i.e. have a pillar). */
+export { INDEXED_TOPIC_SLUGS }
 
 /** Set of all routes that are localized variants of static pages — used by prerender + sitemap. */
 export const LOCALIZED_ROUTE_SET = new Set(localizedRoutes)

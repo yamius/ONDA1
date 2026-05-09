@@ -4,6 +4,7 @@
  */
 import { IMAGE_DIMENSIONS } from '../src/data/image-manifest.generated'
 import { getTermBySlug } from '../src/data/glossary'
+import { getTopicBySlug, TOPICS } from '../src/data/topics'
 import { GLOSSARY_SEO } from '../src/data/glossary-seo'
 import { levelsData } from '../src/data/levels'
 import { PART_SEO } from '../src/data/part-seo'
@@ -234,6 +235,17 @@ export interface RouteMeta {
   url: string
   breadcrumbs: BreadcrumbItem[]
   ogType?: 'article' | 'website'
+  /** Force <meta name=robots content="noindex, nofollow"> on the page.
+   *  Used for placeholder topic hubs that haven't been reviewed yet. */
+  noindex?: boolean
+  /** Topic hub data — for /topics/:slug pages with pillar in place. */
+  topicHub?: {
+    name: string
+    description: string
+    url: string
+    articleSlugs: readonly string[]
+    glossarySlugs: readonly string[]
+  }
   /** Article image for og:image, twitter:image (absolute URL) */
   image?: string
   imageAlt?: string
@@ -628,6 +640,50 @@ function buildPersonJsonLd(): string {
       '@id': `${SITE_URL}/#organization`,
       name: 'ONDA Life',
       url: SITE_URL,
+    },
+  })
+}
+
+/**
+ * CollectionPage + ItemList JSON-LD for a topic hub. Search engines and
+ * AI agents read ItemList as the curated, ordered table of contents for
+ * a cluster — turns the hub into a Google rich-result candidate.
+ */
+function buildTopicHubJsonLd(
+  name: string,
+  description: string,
+  url: string,
+  articleSlugs: readonly string[],
+  glossarySlugs: readonly string[],
+): string {
+  let position = 1
+  const items: Record<string, unknown>[] = []
+  for (const s of articleSlugs) {
+    items.push({
+      '@type': 'ListItem',
+      position: position++,
+      url: `${SITE_URL}/articles/${s}`,
+    })
+  }
+  for (const s of glossarySlugs) {
+    items.push({
+      '@type': 'ListItem',
+      position: position++,
+      url: `${SITE_URL}/glossary/${s}`,
+    })
+  }
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name,
+    description,
+    url,
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    author: { '@id': AUTHOR_ID },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: items.length,
+      itemListElement: items,
     },
   })
 }
@@ -2124,6 +2180,44 @@ export function getMetaForRoute(route: string): RouteMeta {
     }
   }
 
+  // /topics — index of all topic hubs.
+  if (route === '/topics') {
+    return {
+      title: 'Topic Hubs | ONDA Life — Articles by Cluster',
+      description:
+        'Articles and glossary terms grouped by semantic cluster: HRV, Circadian, Dopamine, Metabolic, Breathwork, Neuroplasticity, Cognitive, Spinal, Hormones, Longevity.',
+      url,
+      breadcrumbs,
+    }
+  }
+
+  // /topics/:slug — single hub. Hubs without `pillar` ship with noindex
+  // so half-finished placeholders never enter Google's index. Hubs WITH
+  // pillar emit topicHub data for CollectionPage + ItemList JSON-LD.
+  const topicMatch = route.match(/^\/topics\/([^/]+)$/)
+  if (topicMatch) {
+    const topic = getTopicBySlug(topicMatch[1])
+    if (topic) {
+      const live = !!topic.pillar
+      return {
+        title: `${topic.name} | ONDA Life`,
+        description: topic.shortDescription,
+        url,
+        breadcrumbs,
+        noindex: !live,
+        topicHub: live
+          ? {
+              name: topic.name,
+              description: topic.shortDescription,
+              url,
+              articleSlugs: topic.articleSlugs,
+              glossarySlugs: topic.glossarySlugs,
+            }
+          : undefined,
+      }
+    }
+  }
+
   return { title: DEFAULT_TITLE, description: DEFAULT_DESC, url, breadcrumbs }
 }
 
@@ -2172,6 +2266,28 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (meta.definedTerm) {
     const definedTermScript = `<script type="application/ld+json">${buildDefinedTermJsonLd(meta.definedTerm.name, meta.definedTerm.description, meta.definedTerm.url)}</script>`
     out = out.replace('</head>', `  ${definedTermScript}\n</head>`)
+  }
+
+  // JSON-LD: Topic hub CollectionPage + ItemList (only when pillar is live).
+  if (meta.topicHub) {
+    const topicScript = `<script type="application/ld+json">${buildTopicHubJsonLd(
+      meta.topicHub.name,
+      meta.topicHub.description,
+      meta.topicHub.url,
+      meta.topicHub.articleSlugs,
+      meta.topicHub.glossarySlugs,
+    )}</script>`
+    out = out.replace('</head>', `  ${topicScript}\n</head>`)
+  }
+
+  // Force noindex for placeholder topic hubs (and any future page that opts in).
+  // Replaces the default <meta name="robots" content="index, follow, …">
+  // shipped in index.html so Google never adds the placeholder to its index.
+  if (meta.noindex) {
+    out = out.replace(
+      /<meta\s+name="robots"\s+content="[^"]*">/i,
+      '<meta name="robots" content="noindex, nofollow">',
+    )
   }
 
   // JSON-LD: TechArticle (article pages only)
