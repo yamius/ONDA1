@@ -1968,7 +1968,7 @@ const OndaLevel1 = () => {
       name: t('circuits.circuit_9_name'),
       subtitle: t('circuits.circuit_9_subtitle'),
       element: 'AER',
-      color: 'from-cyan-600 to-sky-400',
+      color: 'from-amber-700 to-yellow-400',
       icon: Wind,
       practices: [],  // Ждём данные от пользователя
       artifact: null  // Ждём данные от пользователя
@@ -4292,7 +4292,7 @@ const OndaLevel1 = () => {
   // ADDON VIEW — полноэкранная страница расширенной информации о части
   // ═══════════════════════════════════════════════════════
   if (activeView === 'addon') {
-    const accentColor = activeCircuit === 2 ? 'cyan' : activeCircuit === 3 ? 'amber' : activeCircuit === 4 ? 'teal' : activeCircuit === 5 ? 'yellow' : activeCircuit === 6 ? 'emerald' : activeCircuit === 7 ? 'sky' : activeCircuit === 8 ? 'indigo' : activeCircuit === 9 ? 'cyan' : activeCircuit === 10 ? 'orange' : activeCircuit === 11 ? 'rose' : activeCircuit === 12 ? 'fuchsia' : 'purple';
+    const accentColor = activeCircuit === 2 ? 'cyan' : activeCircuit === 3 ? 'amber' : activeCircuit === 4 ? 'teal' : activeCircuit === 5 ? 'yellow' : activeCircuit === 6 ? 'emerald' : activeCircuit === 7 ? 'sky' : activeCircuit === 8 ? 'indigo' : activeCircuit === 9 ? 'amber' : activeCircuit === 10 ? 'orange' : activeCircuit === 11 ? 'rose' : activeCircuit === 12 ? 'fuchsia' : 'purple';
 
     return (
       <div className={`h-full text-white overflow-x-hidden pb-6 pt-8 transition-all duration-1000 ${
@@ -4311,7 +4311,7 @@ const OndaLevel1 = () => {
           : activeCircuit === 8
           ? 'bg-gradient-to-br from-indigo-950 via-violet-900 to-indigo-950'
           : activeCircuit === 9
-          ? 'bg-gradient-to-br from-cyan-900 via-sky-800 to-cyan-900'
+          ? 'bg-gradient-to-br from-amber-900 via-yellow-700 to-amber-900'
           : activeCircuit === 10
           ? 'bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950'
           : activeCircuit === 11
@@ -4346,7 +4346,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'bg-indigo-800/40 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-700/50'
                 : activeCircuit === 9
-                ? 'bg-cyan-800/40 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-700/50'
+                ? 'bg-amber-800/40 border border-yellow-500/40 text-yellow-200 hover:bg-amber-700/50'
                 : activeCircuit === 10
                 ? 'bg-orange-800/40 border border-orange-500/30 text-orange-300 hover:bg-orange-700/50'
                 : activeCircuit === 11
@@ -4377,7 +4377,7 @@ const OndaLevel1 = () => {
               : activeCircuit === 8
               ? 'bg-gradient-to-br from-indigo-800/40 via-violet-700/30 to-indigo-800/40 border-indigo-500/40'
               : activeCircuit === 9
-              ? 'bg-gradient-to-br from-cyan-800/40 via-sky-700/30 to-cyan-800/40 border-cyan-500/40'
+              ? 'bg-gradient-to-br from-amber-800/40 via-yellow-600/30 to-amber-800/40 border-yellow-500/50'
               : activeCircuit === 10
               ? 'bg-gradient-to-br from-orange-800/40 via-amber-700/30 to-orange-800/40 border-orange-500/40'
               : activeCircuit === 11
@@ -4388,10 +4388,10 @@ const OndaLevel1 = () => {
           }`}>
             <div className="text-center mb-6">
               <h1 className={`text-2xl font-bold mb-3 ${
-                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-yellow-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
               }`}>{t(`part_info.level_${activeCircuit}.title`)}</h1>
               <p className={`text-base italic ${
-                activeCircuit === 2 ? 'text-teal-300/80' : activeCircuit === 3 ? 'text-orange-300/80' : activeCircuit === 4 ? 'text-cyan-300/80' : activeCircuit === 5 ? 'text-yellow-300/80' : activeCircuit === 6 ? 'text-teal-300/80' : activeCircuit === 7 ? 'text-blue-300/80' : activeCircuit === 8 ? 'text-violet-300/80' : activeCircuit === 9 ? 'text-sky-300/80' : activeCircuit === 10 ? 'text-amber-300/80' : activeCircuit === 11 ? 'text-pink-300/80' : activeCircuit === 12 ? 'text-red-300/80' : 'text-purple-300/80'
+                activeCircuit === 2 ? 'text-teal-300/80' : activeCircuit === 3 ? 'text-orange-300/80' : activeCircuit === 4 ? 'text-cyan-300/80' : activeCircuit === 5 ? 'text-yellow-300/80' : activeCircuit === 6 ? 'text-teal-300/80' : activeCircuit === 7 ? 'text-blue-300/80' : activeCircuit === 8 ? 'text-violet-300/80' : activeCircuit === 9 ? 'text-amber-300/80' : activeCircuit === 10 ? 'text-amber-300/80' : activeCircuit === 11 ? 'text-pink-300/80' : activeCircuit === 12 ? 'text-red-300/80' : 'text-purple-300/80'
               }`}>{t(`part_info.level_${activeCircuit}.protocol`)}</p>
             </div>
 
@@ -4420,7 +4420,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'bg-gradient-to-br from-indigo-800/30 via-violet-700/20 to-indigo-800/30 border-indigo-500/30'
                 : activeCircuit === 9
-                ? 'bg-gradient-to-br from-cyan-800/30 via-sky-700/20 to-cyan-800/30 border-cyan-500/30'
+                ? 'bg-gradient-to-br from-amber-800/30 via-yellow-600/20 to-amber-800/30 border-yellow-500/40'
                 : activeCircuit === 10
                 ? 'bg-gradient-to-br from-orange-800/30 via-amber-700/20 to-orange-800/30 border-orange-500/30'
                 : activeCircuit === 11
@@ -4430,7 +4430,7 @@ const OndaLevel1 = () => {
                 : 'bg-gradient-to-br from-indigo-900/20 via-purple-900/10 to-pink-900/20 border-indigo-500/20'
             }`}>
               <h2 className={`text-xl font-bold mb-3 ${
-                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-yellow-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
               }`}>{t(`part_info.level_${activeCircuit}.architecture_title`)}</h2>
               <p className="text-gray-400 mb-5">{t(`part_info.level_${activeCircuit}.architecture_intro`)}</p>
 
@@ -4440,10 +4440,10 @@ const OndaLevel1 = () => {
                   if (!pillarTitle) return null;
                   return (
                     <div key={i} className={`bg-black/25 rounded-xl p-5 border ${
-                      activeCircuit === 2 ? 'border-cyan-500/20' : activeCircuit === 3 ? 'border-amber-600/20' : activeCircuit === 4 ? 'border-teal-500/20' : activeCircuit === 5 ? 'border-yellow-600/20' : activeCircuit === 6 ? 'border-emerald-500/20' : activeCircuit === 7 ? 'border-sky-500/20' : activeCircuit === 8 ? 'border-indigo-500/20' : activeCircuit === 9 ? 'border-cyan-500/20' : activeCircuit === 10 ? 'border-orange-500/20' : activeCircuit === 11 ? 'border-rose-500/20' : activeCircuit === 12 ? 'border-fuchsia-500/20' : 'border-purple-500/20'
+                      activeCircuit === 2 ? 'border-cyan-500/20' : activeCircuit === 3 ? 'border-amber-600/20' : activeCircuit === 4 ? 'border-teal-500/20' : activeCircuit === 5 ? 'border-yellow-600/20' : activeCircuit === 6 ? 'border-emerald-500/20' : activeCircuit === 7 ? 'border-sky-500/20' : activeCircuit === 8 ? 'border-indigo-500/20' : activeCircuit === 9 ? 'border-yellow-500/30' : activeCircuit === 10 ? 'border-orange-500/20' : activeCircuit === 11 ? 'border-rose-500/20' : activeCircuit === 12 ? 'border-fuchsia-500/20' : 'border-purple-500/20'
                     }`}>
                       <h3 className={`font-semibold mb-2 ${
-                        activeCircuit === 2 ? 'text-cyan-400' : activeCircuit === 3 ? 'text-amber-400' : activeCircuit === 4 ? 'text-teal-400' : activeCircuit === 5 ? 'text-yellow-300' : activeCircuit === 6 ? 'text-emerald-400' : activeCircuit === 7 ? 'text-sky-400' : activeCircuit === 8 ? 'text-indigo-400' : activeCircuit === 9 ? 'text-cyan-400' : activeCircuit === 10 ? 'text-orange-400' : activeCircuit === 11 ? 'text-rose-400' : activeCircuit === 12 ? 'text-fuchsia-400' : 'text-purple-400'
+                        activeCircuit === 2 ? 'text-cyan-400' : activeCircuit === 3 ? 'text-amber-400' : activeCircuit === 4 ? 'text-teal-400' : activeCircuit === 5 ? 'text-yellow-300' : activeCircuit === 6 ? 'text-emerald-400' : activeCircuit === 7 ? 'text-sky-400' : activeCircuit === 8 ? 'text-indigo-400' : activeCircuit === 9 ? 'text-yellow-400' : activeCircuit === 10 ? 'text-orange-400' : activeCircuit === 11 ? 'text-rose-400' : activeCircuit === 12 ? 'text-fuchsia-400' : 'text-purple-400'
                       }`}>{i}. {pillarTitle}</h3>
                       <p className="text-gray-300 leading-relaxed">{t(`part_info.level_${activeCircuit}.pillar_${i}_text`)}</p>
                     </div>
@@ -4471,7 +4471,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'bg-gradient-to-br from-indigo-800/30 via-violet-700/20 to-indigo-800/30 border-indigo-500/30'
                 : activeCircuit === 9
-                ? 'bg-gradient-to-br from-cyan-800/30 via-sky-700/20 to-cyan-800/30 border-cyan-500/30'
+                ? 'bg-gradient-to-br from-amber-800/30 via-yellow-600/20 to-amber-800/30 border-yellow-500/40'
                 : activeCircuit === 10
                 ? 'bg-gradient-to-br from-orange-800/30 via-amber-700/20 to-orange-800/30 border-orange-500/30'
                 : activeCircuit === 11
@@ -4481,7 +4481,7 @@ const OndaLevel1 = () => {
                 : 'bg-gradient-to-br from-indigo-900/20 via-purple-900/10 to-pink-900/20 border-indigo-500/20'
             }`}>
               <h2 className={`text-xl font-bold mb-3 ${
-                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-yellow-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
               }`}>{t(`part_info.level_${activeCircuit}.bio_focus_title`)}</h2>
               <p className="text-gray-400 mb-4">{t(`part_info.level_${activeCircuit}.bio_focus_intro`)}</p>
               <ul className="space-y-3">
@@ -4491,7 +4491,7 @@ const OndaLevel1 = () => {
                   return (
                     <li key={i} className="flex items-start gap-3 text-gray-200">
                       <span className={`mt-2 w-2 h-2 rounded-full flex-shrink-0 ${
-                        activeCircuit === 2 ? 'bg-cyan-400' : activeCircuit === 3 ? 'bg-amber-400' : activeCircuit === 4 ? 'bg-teal-400' : activeCircuit === 5 ? 'bg-yellow-600' : activeCircuit === 6 ? 'bg-emerald-400' : activeCircuit === 7 ? 'bg-sky-400' : activeCircuit === 8 ? 'bg-indigo-400' : activeCircuit === 9 ? 'bg-cyan-400' : activeCircuit === 10 ? 'bg-orange-400' : activeCircuit === 11 ? 'bg-rose-400' : activeCircuit === 12 ? 'bg-fuchsia-400' : 'bg-purple-400'
+                        activeCircuit === 2 ? 'bg-cyan-400' : activeCircuit === 3 ? 'bg-amber-400' : activeCircuit === 4 ? 'bg-teal-400' : activeCircuit === 5 ? 'bg-yellow-600' : activeCircuit === 6 ? 'bg-emerald-400' : activeCircuit === 7 ? 'bg-sky-400' : activeCircuit === 8 ? 'bg-indigo-400' : activeCircuit === 9 ? 'bg-yellow-400' : activeCircuit === 10 ? 'bg-orange-400' : activeCircuit === 11 ? 'bg-rose-400' : activeCircuit === 12 ? 'bg-fuchsia-400' : 'bg-purple-400'
                       }`} />
                       <span className="leading-relaxed">{item}</span>
                     </li>
@@ -4519,7 +4519,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'bg-gradient-to-br from-indigo-800/40 via-violet-700/30 to-indigo-800/40 border-indigo-500/40'
                 : activeCircuit === 9
-                ? 'bg-gradient-to-br from-cyan-800/40 via-sky-700/30 to-cyan-800/40 border-cyan-500/40'
+                ? 'bg-gradient-to-br from-amber-800/40 via-yellow-600/30 to-amber-800/40 border-yellow-500/50'
                 : activeCircuit === 10
                 ? 'bg-gradient-to-br from-orange-800/40 via-amber-700/30 to-orange-800/40 border-orange-500/40'
                 : activeCircuit === 11
@@ -4529,7 +4529,7 @@ const OndaLevel1 = () => {
                 : 'bg-gradient-to-br from-indigo-900/30 via-purple-900/20 to-pink-900/30 border-indigo-500/30'
             }`}>
               <h2 className={`text-xl font-bold mb-3 ${
-                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-yellow-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
               }`}>{t(`part_info.level_${activeCircuit}.result_title`)}</h2>
               <p className="text-gray-400 mb-4">{t(`part_info.level_${activeCircuit}.result_intro`)}</p>
               <ul className="space-y-3 mb-5">
@@ -4539,7 +4539,7 @@ const OndaLevel1 = () => {
                   return (
                     <li key={i} className="flex items-start gap-3 text-gray-200">
                       <span className={`mt-2 w-2 h-2 rounded-full flex-shrink-0 ${
-                        activeCircuit === 2 ? 'bg-cyan-400' : activeCircuit === 3 ? 'bg-amber-400' : activeCircuit === 4 ? 'bg-teal-400' : activeCircuit === 5 ? 'bg-yellow-600' : activeCircuit === 6 ? 'bg-emerald-400' : activeCircuit === 7 ? 'bg-sky-400' : activeCircuit === 8 ? 'bg-indigo-400' : activeCircuit === 9 ? 'bg-cyan-400' : activeCircuit === 10 ? 'bg-orange-400' : activeCircuit === 11 ? 'bg-rose-400' : activeCircuit === 12 ? 'bg-fuchsia-400' : 'bg-purple-400'
+                        activeCircuit === 2 ? 'bg-cyan-400' : activeCircuit === 3 ? 'bg-amber-400' : activeCircuit === 4 ? 'bg-teal-400' : activeCircuit === 5 ? 'bg-yellow-600' : activeCircuit === 6 ? 'bg-emerald-400' : activeCircuit === 7 ? 'bg-sky-400' : activeCircuit === 8 ? 'bg-indigo-400' : activeCircuit === 9 ? 'bg-yellow-400' : activeCircuit === 10 ? 'bg-orange-400' : activeCircuit === 11 ? 'bg-rose-400' : activeCircuit === 12 ? 'bg-fuchsia-400' : 'bg-purple-400'
                       }`} />
                       <span className="leading-relaxed">{item}</span>
                     </li>
@@ -4547,7 +4547,7 @@ const OndaLevel1 = () => {
                 })}
               </ul>
               <p className={`leading-relaxed italic border-l-2 pl-4 ${
-                activeCircuit === 2 ? 'text-cyan-200/80 border-cyan-500/40' : activeCircuit === 3 ? 'text-amber-200/80 border-amber-500/40' : activeCircuit === 4 ? 'text-teal-200/80 border-teal-500/40' : activeCircuit === 5 ? 'text-yellow-200/80 border-yellow-600/40' : activeCircuit === 6 ? 'text-emerald-200/80 border-emerald-500/40' : activeCircuit === 7 ? 'text-sky-200/80 border-sky-500/40' : activeCircuit === 8 ? 'text-indigo-200/80 border-indigo-500/40' : activeCircuit === 9 ? 'text-cyan-200/80 border-cyan-500/40' : activeCircuit === 10 ? 'text-orange-200/80 border-orange-500/40' : activeCircuit === 11 ? 'text-rose-200/80 border-rose-500/40' : activeCircuit === 12 ? 'text-fuchsia-200/80 border-fuchsia-500/40' : 'text-purple-200/80 border-purple-500/40'
+                activeCircuit === 2 ? 'text-cyan-200/80 border-cyan-500/40' : activeCircuit === 3 ? 'text-amber-200/80 border-amber-500/40' : activeCircuit === 4 ? 'text-teal-200/80 border-teal-500/40' : activeCircuit === 5 ? 'text-yellow-200/80 border-yellow-600/40' : activeCircuit === 6 ? 'text-emerald-200/80 border-emerald-500/40' : activeCircuit === 7 ? 'text-sky-200/80 border-sky-500/40' : activeCircuit === 8 ? 'text-indigo-200/80 border-indigo-500/40' : activeCircuit === 9 ? 'text-yellow-200/80 border-yellow-500/50' : activeCircuit === 10 ? 'text-orange-200/80 border-orange-500/40' : activeCircuit === 11 ? 'text-rose-200/80 border-rose-500/40' : activeCircuit === 12 ? 'text-fuchsia-200/80 border-fuchsia-500/40' : 'text-purple-200/80 border-purple-500/40'
               }`}>{t(`part_info.level_${activeCircuit}.result_outro`)}</p>
 
               {activeCircuit >= 1 && activeCircuit <= 12 && (() => {
@@ -4650,7 +4650,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'bg-indigo-800/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-700/50'
                 : activeCircuit === 9
-                ? 'bg-cyan-800/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-700/50'
+                ? 'bg-amber-800/40 border border-yellow-500/50 text-yellow-200 hover:bg-amber-700/50'
                 : activeCircuit === 10
                 ? 'bg-orange-800/40 border border-orange-500/40 text-orange-300 hover:bg-orange-700/50'
                 : activeCircuit === 11
@@ -4688,7 +4688,7 @@ const OndaLevel1 = () => {
         : activeCircuit === 8
         ? 'bg-gradient-to-br from-indigo-950 via-violet-900 to-indigo-950'
         : activeCircuit === 9
-        ? 'bg-gradient-to-br from-cyan-900 via-sky-800 to-cyan-900'
+        ? 'bg-gradient-to-br from-amber-900 via-yellow-700 to-amber-900'
         : activeCircuit === 10
         ? 'bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950'
         : activeCircuit === 11
@@ -4739,7 +4739,7 @@ const OndaLevel1 = () => {
               : activeCircuit === 8
               ? 'bg-indigo-500/40 hover:bg-indigo-500/60 border border-indigo-400/30'
               : activeCircuit === 9
-              ? 'bg-cyan-500/40 hover:bg-cyan-500/60 border border-cyan-400/30'
+              ? 'bg-yellow-500/40 hover:bg-yellow-500/60 border border-yellow-400/40'
               : activeCircuit === 10
               ? 'bg-orange-500/40 hover:bg-orange-500/60 border border-amber-400/30'
               : activeCircuit === 11
@@ -4783,7 +4783,7 @@ const OndaLevel1 = () => {
               : activeCircuit === 8
               ? 'bg-indigo-500/40 hover:bg-indigo-500/60 border border-indigo-400/30'
               : activeCircuit === 9
-              ? 'bg-cyan-500/40 hover:bg-cyan-500/60 border border-cyan-400/30'
+              ? 'bg-yellow-500/40 hover:bg-yellow-500/60 border border-yellow-400/40'
               : activeCircuit === 10
               ? 'bg-orange-500/40 hover:bg-orange-500/60 border border-amber-400/30'
               : activeCircuit === 11
@@ -4928,7 +4928,7 @@ const OndaLevel1 = () => {
                       : activeCircuit === 8
                       ? 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/50'
                       : activeCircuit === 9
-                      ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
+                      ? 'bg-yellow-500/20 hover:bg-yellow-500/30 border-yellow-400/50'
                       : activeCircuit === 10
                       ? 'bg-orange-500/20 hover:bg-orange-500/30 border-amber-400/50'
                       : activeCircuit === 11
@@ -4961,7 +4961,7 @@ const OndaLevel1 = () => {
                       : activeCircuit === 8
                       ? 'bg-indigo-500/30 border-indigo-400/60'
                       : activeCircuit === 9
-                      ? 'bg-cyan-500/30 border-cyan-400/60'
+                      ? 'bg-yellow-500/30 border-yellow-400/60'
                       : activeCircuit === 10
                       ? 'bg-orange-500/30 border-amber-400/60'
                       : activeCircuit === 11
@@ -5003,7 +5003,7 @@ const OndaLevel1 = () => {
                               : activeCircuit === 8
                               ? selectedChapter === chapter ? 'bg-indigo-500/50 text-white' : 'hover:bg-indigo-500/40'
                               : activeCircuit === 9
-                              ? selectedChapter === chapter ? 'bg-cyan-500/50 text-white' : 'hover:bg-cyan-500/40'
+                              ? selectedChapter === chapter ? 'bg-yellow-500/50 text-white' : 'hover:bg-yellow-500/40'
                               : activeCircuit === 10
                               ? selectedChapter === chapter ? 'bg-orange-500/50 text-white' : 'hover:bg-orange-500/40'
                               : activeCircuit === 11
@@ -5048,7 +5048,7 @@ const OndaLevel1 = () => {
                       : activeCircuit === 8
                       ? 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/50'
                       : activeCircuit === 9
-                      ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
+                      ? 'bg-yellow-500/20 hover:bg-yellow-500/30 border-yellow-400/50'
                       : activeCircuit === 10
                       ? 'bg-orange-500/20 hover:bg-orange-500/30 border-amber-400/50'
                       : activeCircuit === 11
@@ -5084,7 +5084,7 @@ const OndaLevel1 = () => {
                       : activeCircuit === 8
                       ? 'bg-indigo-500/30 border-indigo-400/60'
                       : activeCircuit === 9
-                      ? 'bg-cyan-500/30 border-cyan-400/60'
+                      ? 'bg-yellow-500/30 border-yellow-400/60'
                       : activeCircuit === 10
                       ? 'bg-orange-500/30 border-amber-400/60'
                       : activeCircuit === 11
@@ -5126,7 +5126,7 @@ const OndaLevel1 = () => {
                               : activeCircuit === 8
                               ? level === selectedLevel ? 'bg-indigo-500/50 text-white' : 'hover:bg-indigo-500/40'
                               : activeCircuit === 9
-                              ? level === selectedLevel ? 'bg-cyan-500/50 text-white' : 'hover:bg-cyan-500/40'
+                              ? level === selectedLevel ? 'bg-yellow-500/50 text-white' : 'hover:bg-yellow-500/40'
                               : activeCircuit === 10
                               ? level === selectedLevel ? 'bg-orange-500/50 text-white' : 'hover:bg-orange-500/40'
                               : activeCircuit === 11
@@ -5195,7 +5195,7 @@ const OndaLevel1 = () => {
               : activeCircuit === 8
               ? 'border-indigo-500/40'
               : activeCircuit === 9
-              ? 'border-cyan-500/40'
+              ? 'border-yellow-500/50'
               : activeCircuit === 10
               ? 'border-orange-500/40'
               : activeCircuit === 11
@@ -5360,7 +5360,7 @@ const OndaLevel1 = () => {
               : activeCircuit === 8
               ? 'border-indigo-500/40'
               : activeCircuit === 9
-              ? 'border-cyan-500/40'
+              ? 'border-yellow-500/50'
               : activeCircuit === 10
               ? 'border-orange-500/40'
               : activeCircuit === 11
@@ -5400,7 +5400,7 @@ const OndaLevel1 = () => {
               : activeCircuit === 8
               ? 'bg-gradient-to-br from-indigo-800/30 to-violet-700/30 border-indigo-500/40'
               : activeCircuit === 9
-              ? 'bg-gradient-to-br from-cyan-800/30 to-sky-700/30 border-cyan-500/40'
+              ? 'bg-gradient-to-br from-amber-800/30 to-yellow-600/30 border-yellow-500/50'
               : activeCircuit === 10
               ? 'bg-gradient-to-br from-orange-800/30 to-amber-700/30 border-orange-500/40'
               : activeCircuit === 11
@@ -5449,7 +5449,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'border-indigo-500/30'
                 : activeCircuit === 9
-                ? 'border-cyan-500/30'
+                ? 'border-yellow-500/40'
                 : activeCircuit === 10
                 ? 'border-orange-500/30'
                 : activeCircuit === 11
@@ -5477,7 +5477,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'border-indigo-500/30'
                 : activeCircuit === 9
-                ? 'border-cyan-500/30'
+                ? 'border-yellow-500/40'
                 : activeCircuit === 10
                 ? 'border-orange-500/30'
                 : activeCircuit === 11
@@ -5507,7 +5507,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'border-indigo-500/30'
                 : activeCircuit === 9
-                ? 'border-cyan-500/30'
+                ? 'border-yellow-500/40'
                 : activeCircuit === 10
                 ? 'border-orange-500/30'
                 : activeCircuit === 11
@@ -5535,7 +5535,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'border-indigo-500/30'
                 : activeCircuit === 9
-                ? 'border-cyan-500/30'
+                ? 'border-yellow-500/40'
                 : activeCircuit === 10
                 ? 'border-orange-500/30'
                 : activeCircuit === 11
@@ -5757,7 +5757,7 @@ const OndaLevel1 = () => {
                     : activeCircuit === 8
                     ? 'border-indigo-500/40 hover:border-indigo-400/60'
                     : activeCircuit === 9
-                    ? 'border-cyan-500/40 hover:border-cyan-400/60'
+                    ? 'border-yellow-500/50 hover:border-yellow-400/70'
                     : activeCircuit === 10
                     ? 'border-orange-500/40 hover:border-orange-400/60'
                     : activeCircuit === 11
@@ -5926,7 +5926,7 @@ const OndaLevel1 = () => {
                   : activeCircuit === 8
                   ? 'bg-indigo-800/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-700/50 hover:border-indigo-400/60'
                   : activeCircuit === 9
-                  ? 'bg-cyan-800/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-700/50 hover:border-cyan-400/60'
+                  ? 'bg-amber-800/40 border border-yellow-500/50 text-yellow-200 hover:bg-amber-700/50 hover:border-yellow-400/70'
                   : activeCircuit === 10
                   ? 'bg-orange-800/40 border border-orange-500/40 text-orange-300 hover:bg-orange-700/50 hover:border-orange-400/60'
                   : activeCircuit === 11
@@ -5957,7 +5957,7 @@ const OndaLevel1 = () => {
             : activeCircuit === 8
             ? 'bg-gradient-to-br from-indigo-800/40 via-violet-700/30 to-indigo-800/40 border-indigo-500/40'
             : activeCircuit === 9
-            ? 'bg-gradient-to-br from-cyan-800/40 via-sky-700/30 to-cyan-800/40 border-cyan-500/40'
+            ? 'bg-gradient-to-br from-amber-800/40 via-yellow-600/30 to-amber-800/40 border-yellow-500/50'
             : activeCircuit === 10
             ? 'bg-gradient-to-br from-orange-800/40 via-amber-700/30 to-orange-800/40 border-orange-500/40'
             : activeCircuit === 11
@@ -5978,13 +5978,13 @@ const OndaLevel1 = () => {
 
             <div className="text-center py-4">
               <p className={`text-xl font-bold mb-2 ${
-                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-cyan-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
+                activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-yellow-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-rose-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_1`)}</p>
               <p className={`text-lg ${
-                activeCircuit === 2 ? 'text-teal-300' : activeCircuit === 3 ? 'text-orange-300' : activeCircuit === 4 ? 'text-cyan-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-teal-300' : activeCircuit === 7 ? 'text-blue-300' : activeCircuit === 8 ? 'text-violet-300' : activeCircuit === 9 ? 'text-sky-300' : activeCircuit === 10 ? 'text-amber-300' : activeCircuit === 11 ? 'text-pink-300' : activeCircuit === 12 ? 'text-red-300' : 'text-purple-300'
+                activeCircuit === 2 ? 'text-teal-300' : activeCircuit === 3 ? 'text-orange-300' : activeCircuit === 4 ? 'text-cyan-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-teal-300' : activeCircuit === 7 ? 'text-blue-300' : activeCircuit === 8 ? 'text-violet-300' : activeCircuit === 9 ? 'text-amber-300' : activeCircuit === 10 ? 'text-amber-300' : activeCircuit === 11 ? 'text-pink-300' : activeCircuit === 12 ? 'text-red-300' : 'text-purple-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_2`)}</p>
               <p className={`text-lg ${
-                activeCircuit === 2 ? 'text-blue-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-200' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-200' : activeCircuit === 7 ? 'text-sky-200' : activeCircuit === 8 ? 'text-indigo-200' : activeCircuit === 9 ? 'text-cyan-200' : activeCircuit === 10 ? 'text-amber-200' : activeCircuit === 11 ? 'text-pink-200' : activeCircuit === 12 ? 'text-red-200' : 'text-indigo-300'
+                activeCircuit === 2 ? 'text-blue-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-200' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-200' : activeCircuit === 7 ? 'text-sky-200' : activeCircuit === 8 ? 'text-indigo-200' : activeCircuit === 9 ? 'text-yellow-200' : activeCircuit === 10 ? 'text-amber-200' : activeCircuit === 11 ? 'text-pink-200' : activeCircuit === 12 ? 'text-red-200' : 'text-indigo-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_3`)}</p>
             </div>
             
