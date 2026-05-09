@@ -10,13 +10,54 @@
  *
  * Run order: prerender.ts -> sitemap.ts -> indexnow.ts -> llms-txt.ts
  */
-import { writeFileSync } from 'fs'
+import { writeFileSync, mkdirSync, readFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { articles } from '../src/data/articles'
 import { glossaryTerms } from '../src/data/glossary'
 import { levelsData } from '../src/data/levels'
 import { parts } from '../src/pages/PartPage'
+import { ES_PILOT_ARTICLE_SLUGS, RU_PILOT_ARTICLE_SLUGS } from './prerender-routes'
+
+type Lang = 'en' | 'es' | 'ru' | 'uk' | 'zh'
+const NON_EN_LANGS: Lang[] = ['es', 'ru', 'uk', 'zh']
+
+interface ArticlesLocale {
+  bodies?: Record<string, { title?: string; description?: string }>
+}
+
+// Eagerly load all locale article maps so per-language llms.txt can
+// substitute localised titles + descriptions where translations exist.
+const localesDir = join(dirname(fileURLToPath(import.meta.url)), '..', 'public', 'locales')
+const articlesByLang: Record<Lang, ArticlesLocale> = {
+  en: { bodies: {} },
+  es: JSON.parse(readFileSync(join(localesDir, 'es', 'articles.json'), 'utf-8')),
+  ru: JSON.parse(readFileSync(join(localesDir, 'ru', 'articles.json'), 'utf-8')),
+  uk: JSON.parse(readFileSync(join(localesDir, 'uk', 'articles.json'), 'utf-8')),
+  zh: JSON.parse(readFileSync(join(localesDir, 'zh', 'articles.json'), 'utf-8')),
+}
+
+const ES_PILOT_SET = new Set<string>(ES_PILOT_ARTICLE_SLUGS)
+const RU_PILOT_SET = new Set<string>(RU_PILOT_ARTICLE_SLUGS)
+
+/**
+ * URL of an article for a given locale. Returns the localised /<lang>/articles
+ * path only when that lang has a prerendered pilot URL; otherwise falls back
+ * to the EN canonical so the link is always valid.
+ */
+function articleUrl(slug: string, lang: Lang): string {
+  if (lang === 'es' && ES_PILOT_SET.has(slug)) return `${SITE_URL}/es/articles/${slug}`
+  if (lang === 'ru' && RU_PILOT_SET.has(slug)) return `${SITE_URL}/ru/articles/${slug}`
+  return `${SITE_URL}/articles/${slug}`
+}
+
+function articleTitle(slug: string, lang: Lang, fallback: string): string {
+  return articlesByLang[lang].bodies?.[slug]?.title ?? fallback
+}
+
+function articleDescription(slug: string, lang: Lang, fallback: string): string {
+  return articlesByLang[lang].bodies?.[slug]?.description ?? fallback
+}
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
@@ -34,17 +75,23 @@ This file follows the llms.txt convention (https://llmstxt.org/) so AI search an
 `
 
 /** Short, link-only index. */
-function buildIndex(): string {
-  const sections: string[] = [HEADER]
+function buildIndex(lang: Lang = 'en'): string {
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
+  const langNote = lang === 'en'
+    ? ''
+    : `\nThis is the ${lang.toUpperCase()} locale index. Localised article URLs are listed where available; pages without a translation point to the EN canonical, which has hreflang back to this locale.\n`
+  const sections: string[] = [HEADER + langNote]
 
-  // Core pages
+  // Core pages — localised paths for the major hubs that have /<lang>/<page>
+  // prerendered HTML; flat hubs (glossary, articles index, sitemap, contact)
+  // stay EN-canonical because their content is not localised page-by-page.
   sections.push(`## Core pages
 
-- [Home](${SITE_URL}/): biohacking OS, 24 stages of consciousness firmware
-- [About](${SITE_URL}/about): philosophy and team
-- [Inner Spectrum](${SITE_URL}/inner-spectrum): the philosophy layer
+- [Home](${SITE_URL}${langPrefix === '' ? '/' : langPrefix}): biohacking OS, 24 stages of consciousness firmware
+- [About](${SITE_URL}${langPrefix}/about): philosophy and team
+- [Inner Spectrum](${SITE_URL}${langPrefix}/inner-spectrum): the philosophy layer
 - [The Stack](${SITE_URL}/the-stack): protocol architecture overview
-- [Bio OS](${SITE_URL}/bio): real-time biometric dashboard
+- [Bio OS](${SITE_URL}${langPrefix}/bio): real-time biometric dashboard
 - [Articles](${SITE_URL}/articles): SEO long-form content index
 - [Glossary](${SITE_URL}/glossary): defined terms with cross-links
 - [Sitemap](${SITE_URL}/sitemap): all pages
@@ -84,7 +131,9 @@ ${partLines.join('\n')}
     if (!list || list.length === 0) continue
     articlesBlock.push(`### ${cat}\n`)
     for (const a of list) {
-      articlesBlock.push(`- [${a.title}](${SITE_URL}/articles/${a.slug}): ${a.description}`)
+      const t = articleTitle(a.slug, lang, a.title)
+      const d = articleDescription(a.slug, lang, a.description)
+      articlesBlock.push(`- [${t}](${articleUrl(a.slug, lang)}): ${d}`)
     }
     articlesBlock.push('')
   }
@@ -93,7 +142,9 @@ ${partLines.join('\n')}
     if (categoryOrder.includes(cat)) continue
     articlesBlock.push(`### ${cat}\n`)
     for (const a of list) {
-      articlesBlock.push(`- [${a.title}](${SITE_URL}/articles/${a.slug}): ${a.description}`)
+      const t = articleTitle(a.slug, lang, a.title)
+      const d = articleDescription(a.slug, lang, a.description)
+      articlesBlock.push(`- [${t}](${articleUrl(a.slug, lang)}): ${d}`)
     }
     articlesBlock.push('')
   }
@@ -147,12 +198,28 @@ function buildFull(index: string): string {
   return out.join('\n')
 }
 
-const index = buildIndex()
-const full = buildFull(index)
+const enIndex = buildIndex('en')
+const full = buildFull(enIndex)
 
-writeFileSync(join(distDir, 'llms.txt'), index)
+writeFileSync(join(distDir, 'llms.txt'), enIndex)
 writeFileSync(join(distDir, 'llms-full.txt'), full)
 
+// Per-locale index files. We do NOT emit a per-locale llms-full.txt because
+// glossary bodies and most articles' content fields are still EN-only —
+// shipping a half-translated full dump would be misleading for AI agents.
+// Once full localised bodies exist a follow-up PR can add /<lang>/llms-full.txt.
+const sizesByLang: Record<string, number> = { en: enIndex.length }
+for (const lang of NON_EN_LANGS) {
+  const localised = buildIndex(lang)
+  const localeDir = join(distDir, lang)
+  mkdirSync(localeDir, { recursive: true })
+  writeFileSync(join(localeDir, 'llms.txt'), localised)
+  sizesByLang[lang] = localised.length
+}
+
+const sizesPretty = Object.entries(sizesByLang)
+  .map(([l, n]) => `${l}=${(n / 1024).toFixed(1)}KB`)
+  .join(', ')
 console.log(
-  `[llms-txt] Generated llms.txt (${(index.length / 1024).toFixed(1)} KB) and llms-full.txt (${(full.length / 1024).toFixed(1)} KB)`,
+  `[llms-txt] Generated llms.txt (${sizesPretty}) and llms-full.txt (${(full.length / 1024).toFixed(1)} KB)`,
 )
