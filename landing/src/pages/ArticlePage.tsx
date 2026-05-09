@@ -918,6 +918,35 @@ export function ArticlePage() {
         </Markdown>
       </article>
 
+      {/* How to cite — academic-style citation block. Helps human researchers
+          copy-paste a clean reference and signals "this is citable scientific
+          content" to AI agents that scrape pages for quote attribution. */}
+      {(() => {
+        const citeYear = (ARTICLE_DATES[article.slug]?.published ?? '').slice(0, 4) || '2026'
+        const citeUrl = `https://onda-life.com${langPrefix}/articles/${article.slug}`
+        const citeTitle = tTitle.replace(/_/g, ' ').replace(/"/g, '\\"')
+        const bibKey = `onda${citeYear}${article.slug.replace(/-/g, '').slice(0, 16)}`
+        const apa = `Yakiv (${citeYear}). ${tTitle}. ONDA Life. ${citeUrl}`
+        const bibtex = `@article{${bibKey},
+  author  = {Yakiv},
+  title   = {${citeTitle}},
+  journal = {ONDA Life},
+  year    = {${citeYear}},
+  url     = {${citeUrl}}
+}`
+        return (
+          <aside className="mb-8 border border-slate-700 bg-slate-900/40 p-5 font-mono text-xs">
+            <div className="mb-3 tracking-wider text-terminal-green/80">[ CITE_THIS_ARTICLE ]</div>
+            <div className="mb-2 text-white/60">APA-style</div>
+            <p className="mb-4 break-words text-white/85">{apa}</p>
+            <div className="mb-2 text-white/60">BibTeX</div>
+            <pre className="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-black/40 p-3 text-[11px] leading-relaxed text-white/85">
+              <code>{bibtex}</code>
+            </pre>
+          </aside>
+        )
+      })()}
+
       {/* Control block: MARK_COMPLETED + OPEN_SYSTEM_STACK */}
       <div className="mb-8 flex flex-col items-center justify-center gap-2 sm:flex-row">
         <button
