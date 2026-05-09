@@ -3165,7 +3165,13 @@
       "¿Cómo te hace sentir eso?",
       "¿Qué crees que significa para ti?",
       "¿Puedes decir algo más?",
-      "¿Cómo se vería, en la práctica, sentirte aunque sea un 5% mejor sobre «{{fragment}}»?"
+      "¿Cómo se vería, en la práctica, sentirte aunque sea un 5% mejor sobre «{{fragment}}»?",
+      "¿Qué más te viene a la mente cuando piensas en esto?",
+      "Esto te importa. Continúa.",
+      "Te escucho. ¿Qué más quieres decir?",
+      "Entiendo. ¿Y cómo te sientes al respecto?",
+      "Interesante. ¿Cómo afecta esto a tu vida diaria?",
+      "¿Cuánto tiempo llevas pensando en esto?"
     ],
     "feelings": [
       "¿Qué se siente en tu cuerpo cuando experimentas {{fragment}}?",
