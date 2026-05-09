@@ -55,47 +55,49 @@ TAGS: HRV, Vagal_Tone, Biometrics, System_Resilience, ONDA_Hardware
 
 ## 1. The Logic: Rhythm as a Flexibility Indicator
 
-Heart Rate Variability (HRV) is your nervous system's signal-to-noise ratio.
+Heart Rate Variability (HRV) is the signal-to-noise ratio of your nervous system.
 
-Every heartbeat arrives microseconds early or late, governed by a continuous dialogue between sympathetic activation (PUSH / gas) and parasympathetic recovery (PULL / brake). The amount of variability is the direct readout of how flexibly the autonomic system switches between modes — and how much energy buffer it has left.
+Every cardiac cycle arrives microseconds early or late, governed by a continuous dialogue between sympathetic activation (PUSH / gas) and parasympathetic recovery (PULL / brake). The width of that variability is a direct readout of how flexibly the autonomic system switches between modes — and how much "energy buffer" it has left in reserve.
 
-**The Signature:** Inhale accelerates the system; exhale slows it. The vagus nerve writes its digital signature on each cardiac cycle.
+**The Signature:** Inhale accelerates the rhythm; exhale slows it. The Vagus Nerve writes its digital signature on every heartbeat — the cleanest non-invasive view of parasympathetic tone we currently have.
 
-**The Collapse:** Chronic load shrinks the variability window. Fixed pacing, zero slack, zero recovery margin.
+**The Collapse:** Under chronic load the variability window narrows. Fixed pacing replaces dynamic adjustment. Zero slack, zero reserve, zero room to absorb the next stressor.
 
-**Healthy Biocomputer:** Wide HRV. Pulse irregular by design. The system absorbs perturbation without losing baseline.
+**Healthy Biocomputer:** Wide HRV. Pulse irregular by design. The system absorbs perturbation without losing baseline; recovery is silent and fast.
 
-**Degraded System:** Narrow HRV. Compressed range. Any small disturbance shows up as a full-day baseline drop.
+**Degraded System:** Narrow HRV. Compressed range. Any small disturbance — a poor night, a missed meal, a difficult conversation — shows up as a full-day baseline drop.
 
-> **ONDA_ALERT:** A monitor reading LOW_HRV three days in a row is the earliest detectable signal of overload — sleep debt, overtraining, or hidden infection. It surfaces days before symptoms become physical.
+> **ONDA_ALERT:** A wearable reading LOW_HRV three days in a row is the earliest detectable signal of system overload — sleep debt, overtraining, or hidden infection. It surfaces days before symptoms become physically apparent. Ignoring it is letting the system page itself out.
 
 ## 2. The ONDA Protocol: Control Hierarchy
 
-The stack progresses from real-time intervention to long-term reserve building.
+The stack progresses from real-time correction to long-term reserve building.
 
 **[ START_HERE ]**
 
-**Vagus Nerve: Master Key.** The central node in the architecture. The vagus carries roughly 80% of parasympathetic traffic and gates every HRV-relevant signal. Read this first; the rest of the cluster builds on its anatomy.
+**Vagus Nerve: Master Key.** The central node of the entire architecture. The Vagus carries roughly 80% of all parasympathetic traffic and gates every HRV-relevant signal. Study this node first; the rest of the cluster is built on its anatomy.
 
 **[ DEEP_DIVES ]**
 
-**Resonant Frequency Breathing.** The single most efficient way to drive HRV up in real time. 5.5 s inhale / 5.5 s exhale. Daily calibration that aligns cardiac rhythm with the baroreflex loop.
+**Resonant Frequency Breathing.** The single most efficient method for driving HRV up in real time. 5.5 s inhale / 5.5 s exhale. The daily calibration that locks the cardiac rhythm onto the baroreflex loop.
 
-**0.1 Hz Baroreflex Hack.** The neurochemical mechanism behind coherent breathing. An ancient pressure-sensor loop entrained to amplify parasympathetic gain.
+**0.1 Hz Baroreflex Hack.** The neurochemical mechanism behind coherent breathing. An ancient pressure-sensor loop entrained at 0.1 Hz to amplify parasympathetic gain.
 
-**Nervous System Ping Latency.** Measuring switching speed, not just variability. HRV shows resting flexibility; latency shows mode-shift time under load.
+**NS Ping Latency.** Measuring switching speed, not just variability. HRV shows resting flexibility; the "ping" shows how fast the system returns to recovery mode under load.
 
-**Fault-Tolerant Human.** Building HRV reserve so the system absorbs shocks without breaking baseline.
+**Fault-Tolerant Human.** Building HRV reserve so the system absorbs shocks without breaking baseline. The unit of resilience here is the buffer.
 
-**HRV Training & Biofeedback.** The closed-loop protocol. 10-minute coherence sessions training both vagal tone and conscious parasympathetic access.
+**HRV Training & Biofeedback.** The closed-loop protocol — 10-minute coherence sessions that train both vagal tone and conscious parasympathetic access.
 
-**Biological Latency Optimization.** The operating model that ties latency, HRV, and recovery into one frame.
+**Biological Latency Optimization.** The unified operating model. Signal latency, HRV, and recovery on a single frame.
 
 ## 3. Hardware Validation: Telemetry Capture
 
+ONDA protocols require hardware verification.
+
 **Devices:** Polar H10 (reference standard). Whoop, Oura, Garmin Fenix. Any sensor with native rMSSD reporting.
 
-**Metrics:** rMSSD (preferred) or the device's own HRV score. Track a 30-day rolling baseline before drawing conclusions.
+**Protocol:** Track a 30-day rolling baseline. Don't draw conclusions from a single morning reading.
 
 **Context:** Alcohol, sleep, and training load matter more than the raw number. One bad day is noise. Three in a row is a STOP signal.
 
@@ -265,7 +267,7 @@ The stack rebuilds mitochondrial density, restores the metabolic switch, and opt
 > **ONDA_STATEMENT:** «Metabolic flexibility is the ultimate insurance policy. If your reactor can only burn one type of fuel, you are always one missed meal away from a system crash.»
 `
 
-const BREATHWORK_PILLAR = `The breath is the only system you can debug from outside the kernel. Use it.
+const BREATHWORK_PILLAR = `Breath is the only system you can debug from outside the kernel. Skip the protocol and you let the autonomic state run in production without observability.
 
 ID: breathwork_pillar_05
 
@@ -275,19 +277,19 @@ TAGS: Breathwork, CO2_Tolerance, Bohr_Effect, Vagal_Activation, ONDA_Software
 
 ## 1. The Logic: The Autonomic CLI
 
-Breath is the only autonomic process under voluntary control. Heart rate is regulated by the brainstem; insulin by the pancreas; cortisol by the HPA axis. Breath alone has a direct command-line interface to the autonomic state.
+Breath is the only autonomic process under direct voluntary control. Heart rate is regulated by the brainstem. Insulin is metered by the pancreas. Cortisol is dispatched by the HPA axis. They run as opaque background daemons. Breath alone exposes a Command-Line Interface to the autonomic state.
 
-**The Long Exhale:** Activates the vagus nerve and shifts the system to parasympathetic.
+**The Long Exhale:** Activates the Vagus Nerve through parasympathetic afferents. The system drops into recovery within 4–6 cycles.
 
-**The Breath Hold:** Raises CO2, expands the Bohr effect, releases more O2 to tissue.
+**The Breath Hold:** Raises CO2 partial pressure, expands the Bohr Effect, releases more O2 into tissue. Counterintuitive but biochemically clean.
 
-**The Box Pattern:** Stabilizes the entire autonomic arc.
+**The Box Pattern:** Equal-length inhale / hold / exhale / hold. Stabilizes the entire autonomic arc. High-altitude pilots and combat-sports operators discovered this loop independently for the same reason — it works under load.
 
 **Healthy Biocomputer:** Nasal breathing at rest. 6 breaths/minute resting rate. 30+ second exhale-hold (BOLT score). High CO2 tolerance.
 
 **Degraded System:** Mouth breathing at rest. 14+ breaths/minute. BOLT under 20 s. Hyperventilation under mild stress; chronic mild alkalosis.
 
-> **ONDA_ALERT:** A BOLT score under 20 seconds means the system is chronically over-breathing. Energy yield per breath drops; HRV narrows; sleep apnea risk rises.
+> **ONDA_ALERT:** A BOLT score under 20 seconds means the system is chronically over-breathing. Energy yield per breath drops, HRV narrows, sleep-apnea risk rises. The "more air" instinct is exactly wrong; the fix is to tolerate more CO2, not move more volume.
 
 ## 2. The ONDA Protocol: Breath Programming
 
@@ -299,7 +301,7 @@ The stack starts with awareness, moves to volume control, ends with CO2 toleranc
 
 **[ DEEP_DIVES ]**
 
-**CO2 Tolerance: Expanding the Oxygen Limit.** Counterintuitive truth: O2 delivery depends on CO2, not on how much air you move. Protocol for raising the CO2 setpoint.
+**CO2 Tolerance: Expanding the Oxygen Limit.** The counterintuitive truth — O2 delivery depends on CO2 setpoint, not on how much air you move. The protocol for raising the tolerance ceiling.
 
 **Bohr Effect: Oxygen Telemetry.** The biochemical mechanism. Why hemoglobin releases O2 only when CO2 is present. The acid-base math behind every breath protocol.
 
@@ -307,14 +309,14 @@ The stack starts with awareness, moves to volume control, ends with CO2 toleranc
 
 **Devices:** Pulse oximeter for SpO2. Simple stopwatch for BOLT. Optional CO2 monitor (Aranet4) for inspired-air audit.
 
-**Metrics:** Morning BOLT score. Resting respiratory rate (weekly). Re-baseline after every 30-day intervention.
+**Protocol:** Measure BOLT first thing in the morning. Track resting respiratory rate weekly. Re-baseline after every 30-day intervention.
 
 **Context:** Caffeine, anxiety, and altitude all spike respiratory rate. Don't compare across context shifts.
 
-> **ONDA_STATEMENT:** «The breath is the only system you can debug from outside the kernel. Use it.»
+> **ONDA_STATEMENT:** «Breath is the only autonomic daemon you can attach a debugger to. Skip the CLI and you've ceded control of the system to silent background processes.»
 `
 
-const NEUROPLASTICITY_PILLAR = `The cortex rewrites only when the system gives it permission. Flow is the permission.
+const NEUROPLASTICITY_PILLAR = `The cortex rewrites only when the system grants permission. Flow is the permission token.
 
 ID: neuroplasticity_pillar_06
 
@@ -324,17 +326,19 @@ TAGS: Neuroplasticity, Flow_State, Alpha_Rhythm, BDNF, ONDA_Software
 
 ## 1. The Logic: The Cortex Rewriting Itself
 
-The brain is not fixed hardware. Synapses strengthen with use, weaken with disuse, and the cortex re-allocates territory under load. Plasticity is the substrate of every skill, every recovery, every behavior change.
+The brain is not fixed hardware. Synapses strengthen with use, weaken with disuse, and the cortex re-allocates cortical territory under load. Plasticity is the substrate of every skill, every recovery, every behavior change. It is the system's primary update mechanism.
 
-**The Precondition:** Plasticity requires the right neurochemical state. Beta dominance (high arousal, narrow focus) blocks rewriting. Alpha–theta dominance (low arousal, wide attention, present-tense) unlocks it.
+**The Precondition:** Plasticity is gated by neurochemical state. Beta dominance (high arousal, narrow focus, locked attention) blocks rewriting — the system refuses writes while busy. Alpha–theta dominance (low arousal, wide attention, present-tense) unlocks the gate.
 
-**The Engineered State:** Flow is a controlled merge of alpha + theta with norepinephrine and dopamine modulation that triples learning rate.
+**The Engineered State:** Flow is a controlled merge of alpha + theta with norepinephrine and dopamine modulation. Learning rate triples. The cortex accepts new patterns into long-term storage at a rate that beta-dominant grinding cannot match.
 
-**Healthy Biocomputer:** Can shift between beta (work mode) and alpha (rest / integration) at will. Daily flow access available with appropriate task. New skill acquisition fast.
+**The Substrate:** BDNF (Brain-Derived Neurotrophic Factor) is the fertilizer. Exercise, fasting, cold, and novelty all spike BDNF. Without substrate, even perfect state produces no consolidation.
 
-**Degraded System:** Stuck in beta. Cannot wind down. Sleep onset insomnia. Skills refuse to consolidate; memory weak.
+**Healthy Biocomputer:** Shifts between beta (work mode) and alpha (rest / integration) at will. Daily flow access available with appropriate task. New skill acquisition fast.
 
-> **ONDA_ALERT:** If you cannot remember what you read yesterday, the consolidation pathway is broken. Flow access is both the diagnostic and the protocol.
+**Degraded System:** Stuck in beta. Cannot wind down. Sleep-onset insomnia. Skills refuse to consolidate; memory weak.
+
+> **ONDA_ALERT:** If you cannot remember what you read yesterday, the consolidation pathway is broken. Flow access is both the diagnostic and the protocol — without it, every "learning" cycle is a write that never commits.
 
 ## 2. The ONDA Protocol: Plasticity Unlock
 
@@ -342,34 +346,34 @@ The stack starts with state engineering, moves to flow access, ends with plastic
 
 **[ START_HERE ]**
 
-**Neuroplasticity & Flow Overclocking.** Maps BDNF cascades, the four pillars of plasticity, and the flow-state diagnostic.
+**Neuroplasticity & Flow Overclocking.** The canonical foundation. Maps the BDNF cascade, the four pillars of plasticity, and the flow-state diagnostic.
 
 **[ DEEP_DIVES ]**
 
-**Physiological Concentration: Flow State Hardwired.** Concentration as a physiological state, not a willpower act. Vagal pre-conditioning + breath bracketing.
+**Physiological Concentration: Flow State Hardwired.** Concentration as a physiological state, not a willpower act. Vagal pre-conditioning + breath bracketing as the entry ritual.
 
-**Neural Bridge: Alpha-Flow Gateway.** The alpha–theta crossover. Why insight emerges only at the edge.
+**Neural Bridge: Alpha-Flow Gateway.** The alpha–theta crossover. Why insight emerges only at the edge between awake and unconscious processing.
 
-**Neural Entrainment: Meditation Practice.** Driving brainwave dominance via audio, movement, and breath. The training protocol.
+**Neural Entrainment: Meditation Practice.** Driving brainwave dominance via audio, movement, and breath. The training protocol that builds repeatable access.
 
-**Idle State: Alpha Rhythms.** The default-mode network. Why doing nothing is the most productive thing you can do.
+**Idle State: Alpha Rhythms.** The default-mode network. Why "doing nothing" is the most productive thing the cortex can do — consolidation runs in the gaps.
 
-**Quiet Mode: Alpha-Cortisol Buffer.** Using alpha to absorb stress instead of accumulating it. The everyday protocol.
+**Quiet Mode: Alpha-Cortisol Buffer.** Using alpha rhythms to absorb stress instead of accumulating it. The everyday protocol.
 
-**Anti-Entropy: Neural Architecture.** Preventing neural drift in midlife. The maintenance protocol.
+**Anti-Entropy: Neural Architecture.** Preventing neural drift in midlife. The maintenance protocol that keeps the substrate viable into the third act.
 
 ## 3. Hardware Validation: Telemetry Capture
 
 **Devices:** Muse or Mendi for at-home EEG. HRV monitor for vagal pre-condition check. Simple time-tracker for flow duration.
 
-**Metrics:** Number of flow sessions per week and total flow minutes. 30-day baseline. Tag context — sleep score, exercise, diet.
+**Protocol:** Track flow sessions per week and total flow minutes. Establish a 30-day baseline. Tag every session with context — sleep score, exercise, diet, caffeine load.
 
-**Context:** Caffeine over 200 mg blocks alpha access. So does scrolling within 30 minutes of work. The single biggest plasticity destroyer is sleep debt.
+**Context:** Caffeine over 200 mg blocks alpha access. So does scrolling within 30 minutes of starting work. The single biggest plasticity destroyer, however, is sleep debt — no flow, no consolidation, no rewrite.
 
-> **ONDA_STATEMENT:** «The cortex rewrites only when the system gives it permission. Flow is the permission.»
+> **ONDA_STATEMENT:** «The cortex updates only with permission. Flow is the permission token. Without it, every learning cycle is a write to /dev/null.»
 `
 
-const COGNITIVE_PILLAR = `Focus is not willpower. It is the cholinergic pattern your nervous system can sustain. Train the pattern.
+const COGNITIVE_PILLAR = `Focus is not willpower. It is the cholinergic pattern your nervous system can sustain. Train the pattern, not the effort.
 
 ID: cognitive_pillar_07
 
@@ -379,19 +383,21 @@ TAGS: Cognitive_Control, ACC, Acetylcholine, Attention, ONDA_Software
 
 ## 1. The Logic: The Acetylcholine Lens
 
-Attention is not effort. It is a pattern of acetylcholine release that sharpens cortical signal-to-noise — the Acetylcholine Lens.
+Attention is not effort. It is a pattern of acetylcholine release projected from the basal forebrain across the cortex, sharpening signal-to-noise on the moment-to-moment input stream. We call this the Acetylcholine Lens.
 
-**Wide Mode:** The lens scans for novelty. Fast switching. Low resolution.
+**Wide Mode:** The lens scans for novelty. Fast switching. Low resolution. Useful in unfamiliar terrain.
 
-**Narrow Mode:** The lens carves a single signal out of noise. Slow switching. High resolution.
+**Narrow Mode:** The lens carves a single signal out of noise. Slow switching. High resolution. The mode that produces deep work.
 
-**The Arbiter:** The anterior cingulate cortex (ACC) monitors goal-vs-stimulus conflict, raises the cognitive cost when attention drifts, and triggers focal lock or release. ACC integrity = control bandwidth.
+**The Arbiter:** The Anterior Cingulate Cortex (ACC) monitors goal-vs-stimulus conflict, raises the cognitive cost whenever attention drifts, and triggers focal lock or release. ACC integrity equals control bandwidth.
 
-**Healthy Biocomputer:** Holds a single task for 90 minutes without involuntary drift. Recovers focal lock within 5 seconds of distraction. Working memory holds 4–7 items.
+**The Cost:** Sustained narrow focus is metabolically expensive. The lens fatigues. Without scheduled wide-mode rest the ACC degrades, and the system reverts to involuntary task-switching as a survival mode.
+
+**Healthy Biocomputer:** Holds a single task for 90 minutes without involuntary drift. Recovers focal lock within 5 seconds of distraction. Working memory holds 4–7 items in active rotation.
 
 **Degraded System:** Task-switches every 90 seconds. Cannot read a paragraph without re-reading. Working memory overflows on a grocery list.
 
-> **ONDA_ALERT:** If you cannot read a long-form article without 3+ tab switches, the ACC is in degraded mode. Acetylcholine signaling weak; default-mode network bleeding into work mode.
+> **ONDA_ALERT:** If you cannot read a long-form article without 3+ tab switches, the ACC is in degraded mode. Acetylcholine signaling is weak; the default-mode network is bleeding into work mode. The system is processing every distraction as a salience event.
 
 ## 2. The ONDA Protocol: Lens Calibration
 
@@ -399,32 +405,32 @@ The stack starts with ACC training, moves through neurochemical support, ends wi
 
 **[ START_HERE ]**
 
-**Acetylcholine Lens: Neuro-Mechanics.** Maps the cholinergic pathways, defines the focal-lock loop, walks through the daily lens drill.
+**Acetylcholine Lens: Neuro-Mechanics.** Maps the cholinergic pathways from the basal forebrain to the cortex, defines the focal-lock loop, walks through the daily lens drill.
 
 **[ DEEP_DIVES ]**
 
-**ACC Calibration Protocol: Cognitive Control Training.** The monotasking drill. The 25-minute uninterrupted work block.
+**ACC Calibration Protocol: Cognitive Control Training.** The monotasking drill. The 25-minute uninterrupted work block as the unit of training.
 
-**Anterior Cingulate Core: Coherence Monitoring.** The arbiter mechanism. How to read ACC fatigue and when to rest.
+**Anterior Cingulate Core: Coherence Monitoring.** The arbiter mechanism. How to read ACC fatigue and when to schedule rest.
 
 **Cognitive Architecture: Neural Throughput.** The bandwidth model. Working-memory ladder, chunking discipline, attention reservoir.
 
-**Cognitive Architecture: Nootropic Stacks.** Pharmacology that supports the lens, never substitutes for training. The minimal stack.
+**Cognitive Architecture: Nootropic Stacks.** Pharmacology that supports the lens — never substitutes for training. The minimal stack.
 
-**Neural Signal-to-Noise: Cleaning the System Channel.** Environmental and digital noise budget. The pre-flight checklist.
+**Neural Signal-to-Noise: Cleaning the System Channel.** Environmental and digital noise budget. The pre-flight checklist that determines whether the lens can lock at all.
 
 ## 3. Hardware Validation: Telemetry Capture
 
 **Devices:** Simple timer (Pomodoro). Sustained-attention task (PVT app). Optional EEG focus monitor (Mendi).
 
-**Metrics:** Daily count of completed 25-minute focused blocks. Interruption count per block. Re-baseline weekly.
+**Protocol:** Daily count of completed 25-minute focused blocks. Interruption count per block. Re-baseline weekly. Compare across weeks under identical sleep + caffeine context.
 
-**Context:** Sleep debt and unprocessed emotional load are the two biggest ACC destroyers. Don't try to outwork either.
+**Context:** Sleep debt and unprocessed emotional load are the two biggest ACC destroyers. Don't try to outwork either; the lens can't lock on a fatigued substrate.
 
-> **ONDA_STATEMENT:** «Focus is not willpower. It is the cholinergic pattern your nervous system can sustain. Train the pattern.»
+> **ONDA_STATEMENT:** «Focus is the cholinergic pattern the system can hold. Willpower is not a substitute for substrate. Train the lens, or the lens trains you.»
 `
 
-const SPINAL_PILLAR = `The cortex is the strategist. The spinal cord is the executor. Keep them on separate threads.
+const SPINAL_PILLAR = `The cortex is the strategist. The spinal cord is the executor. Keep them on separate threads, or the strategist drowns in tactical interrupts.
 
 ID: spinal_pillar_08
 
@@ -434,17 +440,19 @@ TAGS: CPG, Spinal_Cord, Motor_Autopilot, Rhythmic_Entrainment, ONDA_Hardware
 
 ## 1. The Logic: Decentralised Motor Compute
 
-The spinal cord is not a cable. It is an autonomous compute node. Central pattern generators (CPGs) — neural circuits in the lumbar and cervical cord — run rhythmic motor scripts (walking, breathing, swimming) without cortical command.
+The spinal cord is not a cable. It is an autonomous compute node. Central Pattern Generators (CPGs) — neural circuits in the lumbar and cervical cord — run rhythmic motor scripts (walking, breathing, swimming, chewing) without cortical command.
 
-**The Edge Compute:** The cortex hands off the loop. CPGs execute. Sensors return correction. The cortex is freed for higher-order tasks.
+**The Edge Compute:** The cortex hands off the loop. CPGs execute. Sensors return real-time correction. The cortex is freed for higher-order tasks.
 
-**The Collapse:** When CPGs degrade — chronic immobility, neurological damage, disrupted proprioception — the cortex must micromanage every step. Cognitive bandwidth collapses; movement quality drops.
+**The Latency Argument:** Round-trip from spinal CPG to cortex and back is ~120 ms. Round-trip from CPG to local muscle is under 20 ms. Decentralisation isn't an architectural preference; it's a survival requirement under load.
+
+**The Collapse:** When CPGs degrade — chronic immobility, neurological damage, disrupted proprioception — the cortex must micromanage every step. Cognitive bandwidth collapses; movement quality drops; both fatigue.
 
 **Healthy Biocomputer:** Smooth gait without conscious command. Cervical–respiratory coupling intact. Locomotor rhythm modulates HRV positively.
 
-**Degraded System:** Cognitive load on every step. Asymmetric gait. Breath–step decoupled.
+**Degraded System:** Cognitive load on every step. Asymmetric gait. Breath–step decoupled. Walking becomes "thinking."
 
-> **ONDA_ALERT:** If walking requires conscious attention to balance or step rhythm, the CPG is being micromanaged. The cortex is doing the spinal cord's job.
+> **ONDA_ALERT:** If walking requires conscious attention to balance or step rhythm, the CPG is being micromanaged. The cortex is doing the spinal cord's job — and paying for it with focus, decision-making, and recovery.
 
 ## 2. The ONDA Protocol: Edge-Compute Restoration
 
@@ -456,21 +464,21 @@ The stack starts with awareness, moves to entrainment, ends with rhythm-locked p
 
 **[ DEEP_DIVES ]**
 
-**Spinal Harddrive: CPG Autonomous Scripts.** The script library. How walking, breathing, and posture run as separate threads.
+**Spinal Harddrive: CPG Autonomous Scripts.** The script library. How walking, breathing, and posture run as separate background threads.
 
-**Spinal Intelligence: Decentralized Control.** The engineering analogy. Edge compute vs. cloud; why decentralisation is faster and more resilient.
+**Spinal Intelligence: Decentralized Control.** The engineering analogy. Edge compute vs. cloud; why decentralisation is faster and more resilient under load.
 
-**Rhythmic Entrainment: System Frequencies.** Synchronizing breath, gait, and heart rhythm. The 0.1 Hz master clock.
+**Rhythmic Entrainment: System Frequencies.** Synchronizing breath, gait, and heart rhythm. The 0.1 Hz master clock that ties all three loops together.
 
 ## 3. Hardware Validation: Telemetry Capture
 
-**Devices:** Wearable with cadence (any running watch). HRV monitor for breath-coupling check. Video capture for gait asymmetry analysis.
+**Devices:** Wearable with cadence (any running watch). HRV monitor for breath-coupling check. Video capture for gait-asymmetry analysis.
 
-**Metrics:** Cadence, asymmetry index, and breath-step lock-in (steps per breath at walking pace).
+**Protocol:** Track cadence, asymmetry index, and breath-step lock-in (steps per breath at walking pace). Re-baseline monthly.
 
-**Context:** Fatigue, footwear, and surface all change gait pattern. Compare like-to-like across days.
+**Context:** Fatigue, footwear, and surface all change gait pattern. Compare like-to-like across days; don't draw conclusions across surface changes.
 
-> **ONDA_STATEMENT:** «The cortex is the strategist. The spinal cord is the executor. Keep them on separate threads.»
+> **ONDA_STATEMENT:** «The cortex is the strategist. The spinal cord is the executor. Keep them on separate threads — or every step becomes a context switch the strategist cannot afford.»
 `
 
 const HORMONES_PILLAR = `Hormones are the slow protocol. Compensation is silent. Monitor, or you will not see the crash coming.
