@@ -415,6 +415,18 @@ function buildTechArticleJsonLd(
       name: 'ONDA Life',
       url: SITE_URL,
     },
+    // SpeakableSpecification — Google Assistant, Siri and Alexa read the
+    // marked sections aloud when the user voice-queries a related topic.
+    // We point xpath at the prerendered <title> and meta description: both
+    // always exist, are concise (~20–30 second read) and contain the
+    // canonical headline + protocol summary.
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      xpath: [
+        '/html/head/title',
+        "/html/head/meta[@name='description']/@content",
+      ],
+    },
   }
   if (opts?.image) article.image = opts.image
   if (opts?.keywords?.length) article.keywords = opts.keywords.join(', ')
