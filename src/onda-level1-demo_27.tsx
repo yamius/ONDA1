@@ -4311,7 +4311,7 @@ const OndaLevel1 = () => {
           : activeCircuit === 8
           ? 'bg-gradient-to-br from-indigo-950 via-violet-900 to-indigo-950'
           : activeCircuit === 9
-          ? 'bg-gradient-to-br from-amber-900 via-yellow-700 to-amber-900'
+          ? 'bg-gradient-to-br from-amber-800 via-yellow-600 to-amber-800 shadow-[inset_0_0_180px_rgba(253,224,71,0.7)]'
           : activeCircuit === 10
           ? 'bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950'
           : activeCircuit === 11
@@ -4346,7 +4346,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'bg-indigo-800/40 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-700/50'
                 : activeCircuit === 9
-                ? 'bg-amber-800/40 border border-yellow-500/40 text-yellow-200 hover:bg-amber-700/50'
+                ? 'bg-amber-800/40 border border-yellow-300/70 text-yellow-100 hover:bg-amber-700/50 shadow-[0_0_18px_rgba(253,224,71,0.35)]'
                 : activeCircuit === 10
                 ? 'bg-orange-800/40 border border-orange-500/30 text-orange-300 hover:bg-orange-700/50'
                 : activeCircuit === 11
@@ -4377,7 +4377,7 @@ const OndaLevel1 = () => {
               : activeCircuit === 8
               ? 'bg-gradient-to-br from-indigo-800/40 via-violet-700/30 to-indigo-800/40 border-indigo-500/40'
               : activeCircuit === 9
-              ? 'bg-gradient-to-br from-amber-800/40 via-yellow-600/30 to-amber-800/40 border-yellow-500/50'
+              ? 'bg-gradient-to-br from-amber-800/40 via-yellow-600/30 to-amber-800/40 border-yellow-300/60 ring-1 ring-yellow-300/40 shadow-[0_0_30px_rgba(253,224,71,0.45)]'
               : activeCircuit === 10
               ? 'bg-gradient-to-br from-orange-800/40 via-amber-700/30 to-orange-800/40 border-orange-500/40'
               : activeCircuit === 11
@@ -4420,7 +4420,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'bg-gradient-to-br from-indigo-800/30 via-violet-700/20 to-indigo-800/30 border-indigo-500/30'
                 : activeCircuit === 9
-                ? 'bg-gradient-to-br from-amber-800/30 via-yellow-600/20 to-amber-800/30 border-yellow-500/40'
+                ? 'bg-gradient-to-br from-amber-800/30 via-yellow-600/20 to-amber-800/30 border-yellow-300/50 ring-1 ring-yellow-300/30 shadow-[0_0_22px_rgba(253,224,71,0.35)]'
                 : activeCircuit === 10
                 ? 'bg-gradient-to-br from-orange-800/30 via-amber-700/20 to-orange-800/30 border-orange-500/30'
                 : activeCircuit === 11
@@ -4471,7 +4471,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'bg-gradient-to-br from-indigo-800/30 via-violet-700/20 to-indigo-800/30 border-indigo-500/30'
                 : activeCircuit === 9
-                ? 'bg-gradient-to-br from-amber-800/30 via-yellow-600/20 to-amber-800/30 border-yellow-500/40'
+                ? 'bg-gradient-to-br from-amber-800/30 via-yellow-600/20 to-amber-800/30 border-yellow-300/50 ring-1 ring-yellow-300/30 shadow-[0_0_22px_rgba(253,224,71,0.35)]'
                 : activeCircuit === 10
                 ? 'bg-gradient-to-br from-orange-800/30 via-amber-700/20 to-orange-800/30 border-orange-500/30'
                 : activeCircuit === 11
@@ -4519,7 +4519,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'bg-gradient-to-br from-indigo-800/40 via-violet-700/30 to-indigo-800/40 border-indigo-500/40'
                 : activeCircuit === 9
-                ? 'bg-gradient-to-br from-amber-800/40 via-yellow-600/30 to-amber-800/40 border-yellow-500/50'
+                ? 'bg-gradient-to-br from-amber-800/40 via-yellow-600/30 to-amber-800/40 border-yellow-300/60 ring-1 ring-yellow-300/40 shadow-[0_0_30px_rgba(253,224,71,0.45)]'
                 : activeCircuit === 10
                 ? 'bg-gradient-to-br from-orange-800/40 via-amber-700/30 to-orange-800/40 border-orange-500/40'
                 : activeCircuit === 11
@@ -4650,7 +4650,7 @@ const OndaLevel1 = () => {
                 : activeCircuit === 8
                 ? 'bg-indigo-800/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-700/50'
                 : activeCircuit === 9
-                ? 'bg-amber-800/40 border border-yellow-500/50 text-yellow-200 hover:bg-amber-700/50'
+                ? 'bg-amber-800/40 border border-yellow-300/70 text-yellow-100 hover:bg-amber-700/50 shadow-[0_0_18px_rgba(253,224,71,0.35)]'
                 : activeCircuit === 10
                 ? 'bg-orange-800/40 border border-orange-500/40 text-orange-300 hover:bg-orange-700/50'
                 : activeCircuit === 11
@@ -4688,7 +4688,7 @@ const OndaLevel1 = () => {
         : activeCircuit === 8
         ? 'bg-gradient-to-br from-indigo-950 via-violet-900 to-indigo-950'
         : activeCircuit === 9
-        ? 'bg-gradient-to-br from-amber-900 via-yellow-700 to-amber-900'
+        ? 'bg-gradient-to-br from-amber-800 via-yellow-600 to-amber-800 shadow-[inset_0_0_180px_rgba(253,224,71,0.7)]'
         : activeCircuit === 10
         ? 'bg-gradient-to-br from-orange-950 via-amber-900 to-orange-950'
         : activeCircuit === 11
@@ -5926,7 +5926,7 @@ const OndaLevel1 = () => {
                   : activeCircuit === 8
                   ? 'bg-indigo-800/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-700/50 hover:border-indigo-400/60'
                   : activeCircuit === 9
-                  ? 'bg-amber-800/40 border border-yellow-500/50 text-yellow-200 hover:bg-amber-700/50 hover:border-yellow-400/70'
+                  ? 'bg-amber-800/40 border border-yellow-300/70 text-yellow-100 hover:bg-amber-700/50 hover:border-yellow-200/90 shadow-[0_0_20px_rgba(253,224,71,0.4)]'
                   : activeCircuit === 10
                   ? 'bg-orange-800/40 border border-orange-500/40 text-orange-300 hover:bg-orange-700/50 hover:border-orange-400/60'
                   : activeCircuit === 11
@@ -5957,7 +5957,7 @@ const OndaLevel1 = () => {
             : activeCircuit === 8
             ? 'bg-gradient-to-br from-indigo-800/40 via-violet-700/30 to-indigo-800/40 border-indigo-500/40'
             : activeCircuit === 9
-            ? 'bg-gradient-to-br from-amber-800/40 via-yellow-600/30 to-amber-800/40 border-yellow-500/50'
+            ? 'bg-gradient-to-br from-amber-800/40 via-yellow-600/30 to-amber-800/40 border-yellow-300/60 ring-1 ring-yellow-300/40 shadow-[0_0_30px_rgba(253,224,71,0.45)]'
             : activeCircuit === 10
             ? 'bg-gradient-to-br from-orange-800/40 via-amber-700/30 to-orange-800/40 border-orange-500/40'
             : activeCircuit === 11
