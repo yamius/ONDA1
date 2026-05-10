@@ -131,3 +131,12 @@ if (okCount > 0) {
   console.warn('[indexnow] all batches failed, state not updated')
   process.exit(1)
 }
+
+// Note (2026-05): the deprecated google.com/ping?sitemap and bing.com/ping?sitemap
+// endpoints empirically return 404 / 410 now — both engines have fully retired
+// them. Sitemap submission is currently only honoured via:
+//   - Google Search Console (manual or API w/ OAuth)
+//   - Bing Webmaster Tools (manual or API)
+//   - IndexNow protocol (already wired above) — covers Bing/Yandex/Seznam/Naver
+// We deliberately don't ship dead pings; <link rel="sitemap"> in HEAD remains
+// as a discoverability nudge that costs nothing.
