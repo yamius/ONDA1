@@ -248,17 +248,34 @@ console.log(`[gsc-audit] ⚫ Excluded (other / blocked): ${stats.excludedOther}/
 console.log(`[gsc-audit] ❓ Other: ${stats.errors}/${total} (${pct(stats.errors)}%)`)
 if (failures > 0) console.log(`[gsc-audit] ⚠ API failures: ${failures}`)
 
-// 5. Write outputs
+// 5. Write outputs — current snapshot in dist/seo-audit/, plus a dated
+//    archival copy in .cache/gsc-history/ so weekly trend comparison
+//    has the per-URL detail across runs (dist is gitignored, .cache too,
+//    both stay local-only). The aggregate stats line should be appended
+//    to landing/docs/seo-baselines/gsc-trend.md by the operator after
+//    each run — that one is committed for cross-machine trend tracking.
 mkdirSync(auditDir, { recursive: true })
+const historyDir = join(__dirname, '..', '.cache', 'gsc-history')
+mkdirSync(historyDir, { recursive: true })
+
+const snapshot = {
+  stats,
+  results,
+  generatedAt: new Date().toISOString(),
+  property: SITE_PROPERTY,
+}
 
 writeFileSync(
   join(auditDir, 'gsc-coverage.json'),
-  JSON.stringify(
-    { stats, results, generatedAt: new Date().toISOString(), property: SITE_PROPERTY },
-    null,
-    2,
-  ),
+  JSON.stringify(snapshot, null, 2),
 )
+
+const dateStamp = new Date().toISOString().slice(0, 10)
+writeFileSync(
+  join(historyDir, `${dateStamp}.json`),
+  JSON.stringify(snapshot, null, 2),
+)
+console.log(`[gsc-audit] archived snapshot: .cache/gsc-history/${dateStamp}.json`)
 
 const md = buildMarkdown(stats, buckets, total)
 writeFileSync(join(auditDir, 'gsc-coverage.md'), md)
