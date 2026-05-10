@@ -184,9 +184,12 @@ for (let i = 0; i < urls.length; i++) {
 
 // 4. Bucket by GSC coverageState. The strings are user-facing labels and
 //    Google has changed them historically — match loosely on substrings.
+//    Order matters: 'unknown to google' must come BEFORE the catch-all
+//    so it lands in its own bucket rather than the unmatched pile.
 const buckets = {
   indexed: [],
   discoveredNotIndexed: [],
+  unknownToGoogle: [],
   crawledNotIndexed: [],
   excludedCanonical: [],
   excludedOther: [],
@@ -200,6 +203,13 @@ for (const r of results) {
     c === 'valid'
   ) {
     buckets.indexed.push(r)
+  } else if (c.includes('unknown to google')) {
+    // "URL is unknown to Google" — Google has never crawled this URL.
+    // Different from 'discovered' (where Google knows the URL but chose
+    // not to index yet). Common causes: sitemap not yet refetched after
+    // a deploy, no internal links from indexed pages, or recent
+    // domain/path changes that haven't propagated.
+    buckets.unknownToGoogle.push(r)
   } else if (c.includes('discovered')) {
     buckets.discoveredNotIndexed.push(r)
   } else if (c.includes('crawled')) {
@@ -218,6 +228,7 @@ const stats = {
   total,
   indexed: buckets.indexed.length,
   discoveredNotIndexed: buckets.discoveredNotIndexed.length,
+  unknownToGoogle: buckets.unknownToGoogle.length,
   crawledNotIndexed: buckets.crawledNotIndexed.length,
   excludedCanonical: buckets.excludedCanonical.length,
   excludedOther: buckets.excludedOther.length,
@@ -230,6 +241,7 @@ const pct = (n) => (total ? Math.round((n / total) * 100) : 0)
 console.log('')
 console.log(`[gsc-audit] ✅ Indexed: ${stats.indexed}/${total} (${pct(stats.indexed)}%)`)
 console.log(`[gsc-audit] 🟡 Discovered, not indexed: ${stats.discoveredNotIndexed}/${total} (${pct(stats.discoveredNotIndexed)}%)`)
+console.log(`[gsc-audit] 🔵 Unknown to Google: ${stats.unknownToGoogle}/${total} (${pct(stats.unknownToGoogle)}%)`)
 console.log(`[gsc-audit] 🔴 Crawled, not indexed: ${stats.crawledNotIndexed}/${total} (${pct(stats.crawledNotIndexed)}%)`)
 console.log(`[gsc-audit] ⚪ Excluded (canonical / duplicate): ${stats.excludedCanonical}/${total} (${pct(stats.excludedCanonical)}%)`)
 console.log(`[gsc-audit] ⚫ Excluded (other / blocked): ${stats.excludedOther}/${total} (${pct(stats.excludedOther)}%)`)
@@ -278,6 +290,7 @@ function buildMarkdown(stats, buckets, total) {
   out.push(`|---|---:|---:|`)
   out.push(`| ✅ Indexed | ${stats.indexed} | ${pct(stats.indexed)}% |`)
   out.push(`| 🟡 Discovered, not indexed | ${stats.discoveredNotIndexed} | ${pct(stats.discoveredNotIndexed)}% |`)
+  out.push(`| 🔵 Unknown to Google | ${stats.unknownToGoogle} | ${pct(stats.unknownToGoogle)}% |`)
   out.push(`| 🔴 Crawled, not indexed | ${stats.crawledNotIndexed} | ${pct(stats.crawledNotIndexed)}% |`)
   out.push(`| ⚪ Excluded (canonical / duplicate) | ${stats.excludedCanonical} | ${pct(stats.excludedCanonical)}% |`)
   out.push(`| ⚫ Excluded (other / blocked) | ${stats.excludedOther} | ${pct(stats.excludedOther)}% |`)
@@ -288,6 +301,21 @@ function buildMarkdown(stats, buckets, total) {
     out.push(`> ⚠ ${stats.apiFailures} API call(s) failed — those URLs are excluded from the totals above. Re-run when quota resets.`)
   }
   out.push(``)
+
+  if (buckets.unknownToGoogle.length > 0) {
+    out.push(`## 🔵 Unknown to Google — never crawled`)
+    out.push(``)
+    out.push(`Google has never seen these URLs. Different from "Discovered, not indexed" — Google here does not even know the URL exists. Typical causes:`)
+    out.push(``)
+    out.push(`- Sitemap.xml not yet refetched after the most recent deploy (Google fetches on its own schedule, typically every 1–7 days)`)
+    out.push(`- No internal links from indexed pages — Google has no way to reach the URL through crawl`)
+    out.push(`- Recently added URLs (topic hubs, image sitemap entries, locale variants) before the next sitemap refresh`)
+    out.push(``)
+    out.push(`**Action:** open Search Console → Sitemaps and click "View report" on /sitemap.xml. If "Last read" is older than the last deploy, click "Submit a refreshed copy". Then re-run this audit in 24–48 hours; most should flip to Discovered or Indexed without further action.`)
+    out.push(``)
+    for (const r of buckets.unknownToGoogle) out.push(`- ${r.url}`)
+    out.push(``)
+  }
 
   if (buckets.discoveredNotIndexed.length > 0) {
     out.push(`## 🟡 Discovered, not indexed — top priority for manual submission`)
