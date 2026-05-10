@@ -48,8 +48,9 @@ const auditDir = join(distDir, 'seo-audit')
 // Search Console URL Inspection accepts EITHER:
 //   - URL-prefix property:  'https://onda-life.com/'
 //   - Domain property:      'sc-domain:onda-life.com'
-// Pick whichever is verified for your account. Override at runtime via env.
-const SITE_PROPERTY = process.env.GSC_SITE_PROPERTY || 'sc-domain:onda-life.com'
+// onda-life.com is verified as a URL-prefix property; default matches that.
+// Override at runtime via env (e.g. when adding a new sc-domain property).
+const SITE_PROPERTY = process.env.GSC_SITE_PROPERTY || 'https://onda-life.com/'
 const REQUEST_DELAY_MS = 200
 const ENDPOINT = 'https://searchconsole.googleapis.com/v1/urlInspection/index:inspect'
 
