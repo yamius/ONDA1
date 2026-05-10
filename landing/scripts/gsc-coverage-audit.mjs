@@ -92,21 +92,31 @@ if (urls.length === 0) {
 console.log(`[gsc-audit] property: ${SITE_PROPERTY}`)
 console.log(`[gsc-audit] inspecting ${urls.length} URL(s) — paced at ${REQUEST_DELAY_MS}ms/request, ETA ~${Math.ceil((urls.length * REQUEST_DELAY_MS) / 1000)}s`)
 
-const tokenResponse = await auth.getAccessToken()
-const accessToken =
-  typeof tokenResponse === 'string' ? tokenResponse : tokenResponse?.token
-if (!accessToken) {
-  console.error('[gsc-audit] failed to obtain access token from JWT — check credentials')
-  process.exit(1)
+/**
+ * Fetch a fresh-or-cached access token from the JWT client. google-auth-
+ * library caches the token internally and auto-refreshes when expired,
+ * so calling this per request is cheap — the cache hit path is ~microseconds.
+ * Empirically the old code (cache token once at start) saw 401s after
+ * ~500 requests despite the JWT being valid for 1h — possibly Google's
+ * rate-window invalidating reused tokens, possibly a Replit/Windows
+ * environment quirk. Calling getAccessToken() each time sidesteps it.
+ */
+async function bearerToken() {
+  const t = await auth.getAccessToken()
+  const tok = typeof t === 'string' ? t : t?.token
+  if (!tok) throw new Error('failed to obtain access token from JWT — check credentials')
+  return tok
 }
 
+// Smoke check at startup — fail fast if the JSON is invalid before we
+// fire 589 requests at the API.
+await bearerToken()
+
 // 3. Inspect each URL. Tolerate per-URL failures so one 4xx doesn't
-//    abort the whole run.
-const results = []
-let failures = 0
-for (let i = 0; i < urls.length; i++) {
-  const url = urls[i]
-  try {
+//    abort the whole run. Auto-retry once on 401/429 with a fresh token.
+async function inspectOne(url) {
+  for (let attempt = 0; attempt < 2; attempt++) {
+    const accessToken = await bearerToken()
     const res = await fetch(ENDPOINT, {
       method: 'POST',
       headers: {
@@ -119,18 +129,35 @@ for (let i = 0; i < urls.length; i++) {
         languageCode: 'en-US',
       }),
     })
-    const data = await res.json()
-    if (!res.ok) {
+    if (res.ok) return { ok: true, data: await res.json() }
+    // Retry once on auth / rate hiccups; treat anything else as final.
+    if (attempt === 0 && (res.status === 401 || res.status === 429)) {
+      await new Promise((r) => setTimeout(r, 1000))
+      continue
+    }
+    return { ok: false, status: res.status, data: await res.json().catch(() => ({})) }
+  }
+  return { ok: false, status: 0, data: {} } // unreachable
+}
+
+const results = []
+let failures = 0
+for (let i = 0; i < urls.length; i++) {
+  const url = urls[i]
+  try {
+    const r = await inspectOne(url)
+    if (!r.ok) {
       failures++
       if (failures <= 5) {
         console.warn(
-          `[gsc-audit] ${url} -> ${res.status} ${(data?.error?.message || '').slice(0, 120)}`,
+          `[gsc-audit] ${url} -> ${r.status} ${(r.data?.error?.message || '').slice(0, 120)}`,
         )
       } else if (failures === 6) {
         console.warn('[gsc-audit] ... further per-URL failures suppressed (will summarise at end)')
       }
       continue
     }
+    const data = r.data
     const idx = data.inspectionResult?.indexStatusResult || {}
     results.push({
       url,
