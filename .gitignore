@@ -48,6 +48,10 @@ attached_assets/*.log
 scripts/used_topics.txt
 .tmp/
 
+# Local-only state for build scripts (IndexNow seen-URLs cache, GSC service
+# account credentials, etc.). Never commit — secrets and per-machine state.
+landing/.cache/
+
 # Build artifacts from landing/scripts/optimize-images.mjs.
 # Source PNGs and the 480w/768w hero WebP variants are committed (they're
 # referenced as <link rel=preload> from index.html and need to exist on
