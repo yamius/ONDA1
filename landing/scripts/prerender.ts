@@ -502,6 +502,10 @@ console.log(`[prerender] done — ${done} rendered, ${failed} failed (of ${route
 const { execSync } = await import('child_process')
 console.log('[build] sitemap')
 execSync('tsx scripts/sitemap.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
+// Google News sitemap — articles modified in the last 48h. Crawled at a
+// significantly higher cadence than the main sitemap.
+console.log('[build] sitemap-news')
+execSync('tsx scripts/sitemap-news.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
 // RSS + Atom feeds for aggregators (Bing News, Inoreader, Feedly).
 console.log('[build] feed')
 execSync('tsx scripts/feed.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
