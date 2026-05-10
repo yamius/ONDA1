@@ -5,6 +5,7 @@ import { ConceptSection } from '../components/ConceptSection'
 import { LevelsSection } from '../components/LevelsSection'
 import { FeaturesSection } from '../components/FeaturesSection'
 import { ArticlesSection } from '../components/ArticlesSection'
+import { RecentLog } from '../components/RecentLog'
 import { CtaSection } from '../components/CtaSection'
 
 export function HomePage() {
@@ -32,6 +33,7 @@ export function HomePage() {
       <ConceptSection />
       <LevelsSection />
       <FeaturesSection />
+      <RecentLog />
       <ArticlesSection />
       <CtaSection />
     </>
