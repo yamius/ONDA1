@@ -23,7 +23,7 @@ const article: Article = {
   introStyle: 'emerald',
   image: '/images/articles/system-stability-serotonin.webp',
   imageAlt:
-    '3D visualization of the serotonin anchor radiating from the gut to the brain.',
+    'Serotonin system stability visualization — gut-brain axis 5-HT synthesis with vagal afferents linking enterochromaffin cells to dorsal raphe and limbic mood regulation. ONDA Life inner status calibration and cognitive calm protocol.',
   imageTitle:
     '[ SYSTEM_STABILITY: SEROTONIN ]: Gut-brain serotonin synthesis and inner status calibration. ONDA Protocol.',
   imagePlacement: 'header',

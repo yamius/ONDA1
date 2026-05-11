@@ -21,7 +21,7 @@ const article: Article = {
   introStyle: 'emerald',
   image: '/images/articles/muscle-metabolic-marker-longevity-onda.webp',
   imageAlt:
-    'Muscle metabolic marker: skeletal muscle health, myokines longevity, metabolic age optimization.',
+    'Muscle as metabolic marker visualization — skeletal muscle as glucose sink and myokine hub releasing irisin, IL-6 and BDNF across systemic organs for biological age regulation. ONDA Life metabolic engine optimization and longevity protocol.',
   imageTitle:
     '[ENGINE_STATUS]: Leveraging muscle tissue as the primary driver for systemic metabolic stability.',
   imagePlacement: 'header',

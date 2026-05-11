@@ -19,7 +19,7 @@ const article: Article = {
   introStyle: 'cyan',
   image: '/images/articles/co2-tolerance-oxygen-efficiency-bohr-effect-onda.webp',
   imageAlt:
-    'CO2 tolerance training and Bohr effect biohacking: oxygen bioavailability, respiratory efficiency.',
+    'CO2 tolerance training visualization — Bohr effect shifting oxyhemoglobin dissociation curve with chemoreceptor adaptation, BOLT score expansion and tissue oxygen delivery optimization. ONDA Life respiratory limit and breath urgency protocol.',
   imageTitle:
     '[GAS_EXCHANGE_OPTIMIZED]: Utilizing CO2 as the primary catalyst for maximum cellular oxygen delivery.',
   imagePlacement: 'header',

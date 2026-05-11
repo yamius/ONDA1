@@ -20,7 +20,7 @@ const article: Article = {
   introStyle: 'amber',
   image: '/images/articles/continuous-hormone-monitoring-chm-biohacking-onda.webp',
   imageAlt:
-    'Continuous hormone monitoring and CHM biohacking: cortisol tracking, testosterone optimization.',
+    'CHM continuous hormone monitoring visualization — wearable endocrine dashboard streaming real-time cortisol, testosterone, estrogen and DHEA from interstitial fluid sensors. ONDA Life dynamic hormone tracking and metabolic blind-spot elimination protocol.',
   imageTitle:
     '[HORMONE_STREAM_ACTIVE]: Capturing real-time endocrine data to eliminate metabolic blind spots.',
   imagePlacement: 'header',

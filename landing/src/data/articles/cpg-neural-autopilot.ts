@@ -20,7 +20,7 @@ const article: Article = {
   introStyle: 'blue',
   image: '/images/articles/cpg-neural-autopilot-spinal-cord-circuits-onda.webp',
   imageAlt:
-    'Central pattern generators and CPG neural autopilot: spinal cord motor control, rhythmic motion biohacking.',
+    'Central pattern generator neural autopilot visualization — spinal cord CPG microcontrollers driving rhythmic locomotion with reciprocal inhibition circuits and supraspinal modulation. ONDA Life motor delegation and cognitive bandwidth reclamation protocol.',
   imageTitle:
     '[LOW_LEVEL_PROCESSOR_ACTIVE]: Delegating rhythmic motor tasks to spinal CPG circuits to optimize cognitive bandwidth.',
   imagePlacement: 'header',

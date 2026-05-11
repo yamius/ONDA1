@@ -20,7 +20,7 @@ const article: Article = {
   introStyle: 'indigo',
   image: '/images/articles/glymphatic-flush-brain-detox-neural-cache-onda.webp',
   imageAlt:
-    'Glymphatic system flush and brain detox: amyloid clearance, neural cache optimization.',
+    'Glymphatic flush system visualization — deep N3 sleep CSF-interstitial fluid exchange clearing beta-amyloid and tau proteins, aquaporin-4 channels and meningeal lymphatics for brain detox. ONDA Life neural cache clearing protocol.',
   imageTitle:
     '[FLUSH_SEQUENCE_ACTIVE]: Optimizing interstitial fluid exchange to clear metabolic waste from brain tissue.',
   imagePlacement: 'header',

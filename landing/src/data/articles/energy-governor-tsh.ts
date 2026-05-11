@@ -24,7 +24,7 @@ const article: Article = {
   introStyle: 'blue',
   image: '/images/articles/tsh-energy-governor.webp',
   imageAlt:
-    '3D visualization of the feedback loop between the pituitary gland and the thyroid.',
+    'TSH energy governor visualization — pituitary-thyroid HPT axis feedback loop with TRH dispatcher, T3/T4 conversion and metabolic voltage calibration. ONDA Life basal energy regulation and brain fog resolution protocol.',
   imageTitle:
     '[ ENERGY_GOVERNOR: TSH ]: Pituitary-thyroid feedback loop and metabolic voltage calibration. ONDA Protocol.',
   imageCaption:

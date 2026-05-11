@@ -23,7 +23,7 @@ const article: Article = {
   introStyle: 'amber',
   image: '/images/articles/energy-sensor-leptin.webp',
   imageAlt:
-    '3D visualization of the leptin energy sensor between adipose tissue and the brain.',
+    'Leptin energy sensor visualization — adipose-hypothalamus signaling axis with arcuate nucleus leptin receptors, satiety circuit and metabolic resistance pathway. ONDA Life saturation sensor recalibration and energy balance protocol.',
   imageTitle:
     '[ ENERGY_SENSOR: LEPTIN ]: Adipose-hypothalamus leptin signaling and metabolic calibration. ONDA Protocol.',
   imagePlacement: 'header',

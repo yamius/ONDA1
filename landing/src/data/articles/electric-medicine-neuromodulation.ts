@@ -21,7 +21,7 @@ const article: Article = {
   introStyle: 'cyan',
   image: '/images/articles/electric-medicine-neuromodulation-vagus-nerve-stimulation.webp',
   imageAlt:
-    'Electric medicine and neuromodulation: vagus nerve stimulation, bioelectronic medicine.',
+    'Electric medicine neuromodulation visualization — transcutaneous vagus nerve stimulation (tVNS), tDCS prefrontal cortex targeting and CES cranial electrotherapy pathways. ONDA Life bioelectronic precision input and brain command-line protocol.',
   imageTitle:
     '[SIGNAL_INJECTION]: Modulating systemic homeostasis through precision-tuned bioelectronic impulses.',
   imagePlacement: 'header',

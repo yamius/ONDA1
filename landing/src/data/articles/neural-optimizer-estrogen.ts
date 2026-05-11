@@ -24,7 +24,7 @@ const article: Article = {
   introStyle: 'indigo',
   image: '/images/articles/neural-optimizer-estrogen.webp',
   imageAlt:
-    '3D visualization of estrogen-induced synaptic growth in the hippocampus.',
+    'Estrogen neural optimizer visualization — estradiol-driven synaptic density and BDNF expression in hippocampus, dendritic spine growth and memory consolidation pathways. ONDA Life cognitive hardware protection and neuroplasticity programming protocol.',
   imageTitle:
     '[ NEURAL_OPTIMIZER: ESTROGEN ]: Estradiol-driven synaptic density and hippocampal BDNF. ONDA Protocol.',
   imagePlacement: 'header',

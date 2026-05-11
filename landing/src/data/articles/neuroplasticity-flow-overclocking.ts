@@ -23,7 +23,7 @@ const article: Article = {
   introStyle: 'blue',
   image: '/images/articles/neuroplasticity-brain-overclocking-flow-state.webp',
   imageAlt:
-    'Neuroplasticity and flow state biohacking: brain overclocking, synaptic rewiring, neural overclock bridge.',
+    'Neuroplasticity and flow state overclocking visualization — BDNF-driven synaptic rewiring with myelinated high-performance pathways and transient hypofrontality during flow. ONDA Life brain overclocking and peak cognitive performance protocol.',
   imageTitle:
     '[SYSTEM_RE_WIRING]: Accelerating synaptic formation via high-bandwidth flow states.',
   imagePlacement: 'header',

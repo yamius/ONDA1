@@ -19,7 +19,7 @@ const article: Article = {
   introStyle: 'slate',
   image: '/images/articles/neural-entrainment-meditation-coherence-onda.webp',
   imageAlt:
-    'Neural entrainment and meditation 2.0: brainwave synchronization, gamma wave coherence.',
+    'Neural entrainment meditation 2.0 visualization — EEG-driven binaural and isochronic audio inducing Frequency Following Response, gamma-theta phase locking and global brain coherence. ONDA Life brainwave synchronization and meditation 2.0 protocol.',
   imageTitle:
     '[SYNC_ACTIVE]: Achieving global neural coherence through phase-locked frequency entrainment.',
   imagePlacement: 'header',

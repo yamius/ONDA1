@@ -24,7 +24,7 @@ const article: Article = {
   introStyle: 'amber',
   image: '/images/articles/hpa-axis-cortisol-aggression.webp',
   imageAlt:
-    '3D visualization of the HPA axis and prefrontal cortex shield.',
+    'HPA axis cortisol regulation visualization — hypothalamus-pituitary-adrenal stress feedback loop with prefrontal cortex shield deflecting reactive aggression. ONDA Life neuro-protocol for stress architecture management and biochemistry of expansion.',
   imageTitle:
     '[ HPA_AXIS_CONTROL ]: Cortisol stress architecture and prefrontal cortex behavioral override. ONDA neuro-protocols.',
   imagePlacement: 'header',
