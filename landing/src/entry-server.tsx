@@ -75,7 +75,13 @@ export function createApp(location: string, lang?: Lang) {
             <Route key={`is-${l}`} path={`/${l}/inner-spectrum`} element={<InnerSpectrumPage />} />
           ))}
           <Route path="/privacy"        element={<PrivacyPage />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`priv-${l}`} path={`/${l}/privacy`} element={<PrivacyPage />} />
+          ))}
           <Route path="/terms"          element={<TermsPage />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`terms-${l}`} path={`/${l}/terms`} element={<TermsPage />} />
+          ))}
           <Route path="/bio"            element={<BioPage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`bio-${l}`} path={`/${l}/bio`} element={<BioPage />} />

@@ -210,7 +210,9 @@ function applyLocalizedMeta(html: string, basePath: string, lang: Lang): string 
 
   const title = escAttr(m.title)
   const desc = escAttr(m.description)
-  const ogAlt = escAttr(m.ogImageAlt)
+  // Pages added later (privacy/terms) ship without an explicit ogImageAlt —
+  // fall back to title so the og:image:alt tag is never undefined.
+  const ogAlt = escAttr(m.ogImageAlt ?? m.title)
   const url = pageUrlFor(basePath, lang)
   const escUrl = escAttr(url)
 

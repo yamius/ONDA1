@@ -104,14 +104,15 @@ export const ALL_PILOT_ARTICLE_SLUGS: readonly string[] = Array.from(
 )
 
 // Pages that stay EN-only for now (Articles, Glossary, etc).
+// NOTE: /privacy + /terms moved to LOCALIZED_PAGES (i18n.ts) — they now ship
+// in all 5 langs via localizedRoutes. JSON translations already exist in
+// public/locales/*/{privacy,terms}.json.
 const nonLocalizedStaticPaths = [
   '/glossary',
   '/articles',
   '/contact',
   '/the-stack',
   '/sitemap',
-  '/privacy',
-  '/terms',
   '/topics',
 ]
 
