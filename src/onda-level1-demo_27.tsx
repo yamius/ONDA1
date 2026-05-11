@@ -3082,7 +3082,7 @@ const OndaLevel1 = () => {
             WKWebView holds native mp3 decoders even after pause+removeAttribute,
             and accumulation across intro opens is the current OOM suspect. */}
         {practiceState === 'active' && (<>
-        {activePractice.id === 'p1-1' && (
+        {(activePractice.id === 'p1-1' || activePractice.id === 'p4-1') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-1_Breath of Life/p1-1_Breath of Life-1.mp3"
@@ -3096,7 +3096,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p1-2' && (
+        {(activePractice.id === 'p1-2' || activePractice.id === 'p4-2') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-2_Sense of Being/p1-2_Sense of Being-1.mp3"
@@ -3110,7 +3110,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p1-3' && (
+        {(activePractice.id === 'p1-3' || activePractice.id === 'p4-3') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-3_Warm Pulse/p1-3_Warm Pulse-1.mp3"
@@ -3124,7 +3124,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p1-4' && (
+        {(activePractice.id === 'p1-4' || activePractice.id === 'p4-4') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-4_Still Wave/p1-4_Still Wave-1.mp3"
@@ -3138,7 +3138,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p1-5' && (
+        {(activePractice.id === 'p1-5' || activePractice.id === 'p4-5') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-5_Inner Listening/p1-5_Inner Listening-1.mp3"
@@ -3152,7 +3152,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p1-6' && (
+        {(activePractice.id === 'p1-6' || activePractice.id === 'p4-6') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-6_First Light/p1-6_First Light-1.mp3"
@@ -3166,7 +3166,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p1-7' && (
+        {(activePractice.id === 'p1-7' || activePractice.id === 'p4-7') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-7_Liquid Presence/p1-7_Liquid Presence-1.mp3"
@@ -3180,7 +3180,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p1-8' && (
+        {(activePractice.id === 'p1-8' || activePractice.id === 'p4-8') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3197,7 +3197,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p1-9' && (
+        {(activePractice.id === 'p1-9' || activePractice.id === 'p4-9') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-9_Point of Stillness/p1-9_Point of Stillness-1.mp3"
@@ -3211,7 +3211,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p1-10' && (
+        {(activePractice.id === 'p1-10' || activePractice.id === 'p4-10') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3228,7 +3228,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p1-11' && (
+        {(activePractice.id === 'p1-11' || activePractice.id === 'p4-11') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-11_Ground Flow/p1-11_Ground Flow-1.mp3"
@@ -3242,7 +3242,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p1-12' && (
+        {(activePractice.id === 'p1-12' || activePractice.id === 'p4-12') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath="p1/p1-12_Body Root/p1-12_Body Root-1.mp3"
@@ -3257,7 +3257,7 @@ const OndaLevel1 = () => {
           />
         )}
         {/* Part 2 Audio Players */}
-        {activePractice.id === 'p2-1' && (
+        {(activePractice.id === 'p2-1' || activePractice.id === 'p5-1') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3275,7 +3275,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p2-2' && (
+        {(activePractice.id === 'p2-2' || activePractice.id === 'p5-2') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3294,7 +3294,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p2-3' && (
+        {(activePractice.id === 'p2-3' || activePractice.id === 'p5-3') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3312,7 +3312,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p2-4' && (
+        {(activePractice.id === 'p2-4' || activePractice.id === 'p5-4') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3329,7 +3329,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p2-5' && (
+        {(activePractice.id === 'p2-5' || activePractice.id === 'p5-5') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3350,7 +3350,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p2-6' && (
+        {(activePractice.id === 'p2-6' || activePractice.id === 'p5-6') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3368,7 +3368,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p2-7' && (
+        {(activePractice.id === 'p2-7' || activePractice.id === 'p5-7') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3385,7 +3385,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p2-8' && (
+        {(activePractice.id === 'p2-8' || activePractice.id === 'p5-8') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3403,7 +3403,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p2-9' && (
+        {(activePractice.id === 'p2-9' || activePractice.id === 'p5-9') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3421,7 +3421,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p2-10' && (
+        {(activePractice.id === 'p2-10' || activePractice.id === 'p5-10') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3438,7 +3438,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p2-11' && (
+        {(activePractice.id === 'p2-11' || activePractice.id === 'p5-11') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3456,7 +3456,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p2-12' && (
+        {(activePractice.id === 'p2-12' || activePractice.id === 'p5-12') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3475,7 +3475,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-1' && (
+        {(activePractice.id === 'p3-1' || activePractice.id === 'p6-1') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3496,7 +3496,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-2' && (
+        {(activePractice.id === 'p3-2' || activePractice.id === 'p6-2') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3515,7 +3515,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-3' && (
+        {(activePractice.id === 'p3-3' || activePractice.id === 'p6-3') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3533,7 +3533,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-4' && (
+        {(activePractice.id === 'p3-4' || activePractice.id === 'p6-4') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3553,7 +3553,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-5' && (
+        {(activePractice.id === 'p3-5' || activePractice.id === 'p6-5') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3572,7 +3572,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-6' && (
+        {(activePractice.id === 'p3-6' || activePractice.id === 'p6-6') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3592,7 +3592,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-7' && (
+        {(activePractice.id === 'p3-7' || activePractice.id === 'p6-7') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3612,7 +3612,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-8' && (
+        {(activePractice.id === 'p3-8' || activePractice.id === 'p6-8') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3631,7 +3631,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-9' && (
+        {(activePractice.id === 'p3-9' || activePractice.id === 'p6-9') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3649,7 +3649,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-10' && (
+        {(activePractice.id === 'p3-10' || activePractice.id === 'p6-10') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3669,7 +3669,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-11' && (
+        {(activePractice.id === 'p3-11' || activePractice.id === 'p6-11') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
@@ -3691,7 +3691,7 @@ const OndaLevel1 = () => {
             }}
           />
         )}
-        {activePractice.id === 'p3-12' && (
+        {(activePractice.id === 'p3-12' || activePractice.id === 'p6-12') && (
           <RemoteAudioPlayer
             isPlaying={practiceState === 'active' && !isPaused}
             audioPath={[
