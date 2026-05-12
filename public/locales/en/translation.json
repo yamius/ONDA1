@@ -1,4 +1,23 @@
 {
+  "reminders": {
+    "daily_title": "ONDA",
+    "streak_title": "ONDA",
+    "daily_body": [
+      "Time for a pause. Your rhythm begins with a single breath.",
+      "Three minutes to come back to yourself.",
+      "Your body remembers stillness. Drop in.",
+      "A breath, a pause — your practice is waiting.",
+      "Notice the space between thoughts.",
+      "One mindful breath. That's enough to begin.",
+      "Return to the centre. The practice will meet you there."
+    ],
+    "streak_body": [
+      "Your {{streak}}-day rhythm is alive. One practice keeps it.",
+      "Tonight is part of the streak too.",
+      "{{streak}} days in a row — that's already a habit. Don't let it break.",
+      "The day is almost over. Save your progress?"
+    ]
+  },
   "language_select": "Select Language",
   "app_title": "ONDA LIFE",
   "body_title": "BODY",
@@ -809,6 +828,11 @@
     "energy": "Energy Level"
   },
   "settings": {
+    "reminders_section": "Reminders",
+    "daily_reminder": "Daily practice reminder",
+    "streak_reminder": "Streak protection",
+    "streak_reminder_hint": "Evening nudge at 20:00 when today's practice is missing.",
+    "reminders_permission_denied": "Notifications are off. Enable them in iOS Settings → Notifications → ONDA.",
     "customize_profile": "Personalize your profile",
     "your_name": "Your name (shown in leaderboard)",
     "enter_name": "Enter your name",

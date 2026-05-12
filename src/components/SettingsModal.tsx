@@ -1,9 +1,19 @@
-import React, { useState } from 'react';
-import { X, Save, User as UserIcon, Activity } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { X, Save, User as UserIcon, Activity, Bell } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
 import type { UserProfile } from '../lib/supabase';
 import { VitalsDiagnostics } from './VitalsDiagnostics';
+import {
+  checkPermission,
+  requestPermission,
+  getDailyEnabled,
+  getDailyTime,
+  scheduleDailyReminder,
+  disableDailyReminder,
+  getStreakEnabled,
+  setStreakEnabled as setStreakEnabledSvc,
+} from '../services/notifications';
 
 interface SettingsModalProps {
   user: any;
@@ -26,6 +36,52 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
   const [showDiagnostics, setShowDiagnostics] = useState(false);
+  const [dailyEnabled, setDailyEnabled] = useState<boolean>(() => getDailyEnabled());
+  const [dailyTime, setDailyTime] = useState<string>(() => getDailyTime());
+  const [streakEnabled, setStreakEnabled] = useState<boolean>(() => getStreakEnabled());
+  const [permDenied, setPermDenied] = useState(false);
+
+  useEffect(() => {
+    checkPermission().then((p) => {
+      if (p === 'denied') setPermDenied(true);
+    });
+  }, []);
+
+  const handleDailyToggle = async (next: boolean) => {
+    if (next) {
+      const perm = await requestPermission();
+      if (perm !== 'granted') {
+        setPermDenied(perm === 'denied');
+        setDailyEnabled(false);
+        return;
+      }
+      setPermDenied(false);
+      setDailyEnabled(true);
+      await scheduleDailyReminder(dailyTime);
+    } else {
+      setDailyEnabled(false);
+      await disableDailyReminder();
+    }
+  };
+
+  const handleDailyTimeChange = async (next: string) => {
+    setDailyTime(next);
+    if (dailyEnabled) await scheduleDailyReminder(next);
+  };
+
+  const handleStreakToggle = async (next: boolean) => {
+    if (next) {
+      const perm = await requestPermission();
+      if (perm !== 'granted') {
+        setPermDenied(perm === 'denied');
+        setStreakEnabled(false);
+        return;
+      }
+      setPermDenied(false);
+    }
+    setStreakEnabled(next);
+    await setStreakEnabledSvc(next);
+  };
 
   // Hide Vitals Diagnostics in production unless debug mode is enabled
   const isProduction = import.meta.env.PROD;
@@ -196,6 +252,96 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               >
                 {t('settings.name_info')}
               </p>
+            </div>
+          </div>
+
+          {/* Reminders — local notifications (Sprint 1) */}
+          <div className="pt-4 border-t border-white/10">
+            <div className={`flex items-center gap-2 mb-3 ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+              <Bell className="w-4 h-4" />
+              <span className="text-sm font-medium">{t('settings.reminders_section', 'Reminders')}</span>
+            </div>
+
+            <div className={`p-3 rounded-xl ${isLightTheme ? 'bg-gray-100' : 'bg-white/5'} space-y-3`}>
+              {/* Daily reminder */}
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex-1 min-w-0">
+                  <div className={`text-sm ${isLightTheme ? 'text-gray-800' : 'text-white/90'}`}>
+                    {t('settings.daily_reminder', 'Daily practice reminder')}
+                  </div>
+                  {dailyEnabled && (
+                    <input
+                      type="time"
+                      value={dailyTime}
+                      onChange={(e) => handleDailyTimeChange(e.target.value)}
+                      className={`mt-2 px-3 py-1.5 rounded-lg text-sm focus:outline-none focus:ring-2 ${
+                        isLightTheme
+                          ? 'bg-white border border-gray-300 text-gray-900 focus:ring-gray-400'
+                          : 'bg-white/10 border border-white/20 text-white focus:ring-purple-500/50'
+                      }`}
+                      data-testid="input-daily-reminder-time"
+                    />
+                  )}
+                </div>
+                <button
+                  type="button"
+                  role="switch"
+                  aria-checked={dailyEnabled}
+                  onClick={() => handleDailyToggle(!dailyEnabled)}
+                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full transition-colors ${
+                    dailyEnabled
+                      ? 'bg-gradient-to-r from-purple-500 to-pink-500'
+                      : isLightTheme
+                        ? 'bg-gray-300'
+                        : 'bg-white/20'
+                  }`}
+                  data-testid="toggle-daily-reminder"
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                      dailyEnabled ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {/* Streak reminder */}
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex-1 min-w-0">
+                  <div className={`text-sm ${isLightTheme ? 'text-gray-800' : 'text-white/90'}`}>
+                    {t('settings.streak_reminder', 'Streak protection')}
+                  </div>
+                  <div className={`text-xs mt-0.5 ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                    {t('settings.streak_reminder_hint', 'Evening nudge at 20:00 when today\'s practice is missing.')}
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  role="switch"
+                  aria-checked={streakEnabled}
+                  onClick={() => handleStreakToggle(!streakEnabled)}
+                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full transition-colors ${
+                    streakEnabled
+                      ? 'bg-gradient-to-r from-purple-500 to-pink-500'
+                      : isLightTheme
+                        ? 'bg-gray-300'
+                        : 'bg-white/20'
+                  }`}
+                  data-testid="toggle-streak-reminder"
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                      streakEnabled ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {permDenied && (
+                <div className={`text-xs p-2 rounded-lg ${isLightTheme ? 'bg-amber-100 text-amber-800' : 'bg-amber-500/10 text-amber-300'}`}>
+                  {t('settings.reminders_permission_denied', 'Notifications are off. Enable them in iOS Settings → Notifications → ONDA.')}
+                </div>
+              )}
             </div>
           </div>
 

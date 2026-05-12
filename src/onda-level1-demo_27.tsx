@@ -25,7 +25,13 @@ import { useKeepAwake } from './hooks/useKeepAwake';
 import { useWatchHeartRate } from './hooks/useWatchHeartRate';
 import { usePermissions } from './hooks/usePermissions';
 import { Capacitor } from '@capacitor/core';
+import { App as CapApp } from '@capacitor/app';
 import { rhythmStore } from './sleep/rhythm';
+import {
+  reconcileStreakNudge,
+  onNotificationOpened,
+  getStreakEnabled,
+} from './services/notifications';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
@@ -2942,6 +2948,44 @@ const OndaLevel1 = () => {
   const getTotalTime = () => {
     return practiceHistory.reduce((sum, s) => sum + (s.duration || 0), 0);
   };
+
+  // ── Local notifications (Sprint 1) ──
+  // Reconcile the streak nudge on mount, on resume from background, and
+  // whenever practiceHistory changes (so completing a practice cancels
+  // tonight's nudge immediately, without waiting for the next app open).
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+    if (!getStreakEnabled()) return;
+
+    const reconcile = () => {
+      const today = new Date();
+      const todayKey = new Date(today.getFullYear(), today.getMonth(), today.getDate()).getTime();
+      const practicedToday = practiceHistory.some((p) => {
+        if (!p?.date) return false;
+        const d = new Date(p.date);
+        return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime() === todayKey;
+      });
+      reconcileStreakNudge({ streak: getStreak(), practicedToday });
+    };
+
+    reconcile();
+
+    let stateSub: { remove: () => void } | null = null;
+    CapApp.addListener('appStateChange', ({ isActive }) => {
+      if (isActive) reconcile();
+    }).then((h) => { stateSub = h; }).catch(() => undefined);
+
+    const offOpened = onNotificationOpened((info) => {
+      // Tenjin/analytics hook-point — extend in Sprint 2.
+      console.log('[notifications] opened', info);
+    });
+
+    return () => {
+      stateSub?.remove();
+      offOpened();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [practiceHistory]);
 
   const getAverageQuality = () => {
     if (practiceHistory.length === 0) return 0;
