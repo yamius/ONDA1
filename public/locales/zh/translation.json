@@ -1,4 +1,23 @@
 {
+  "reminders": {
+    "daily_title": "ONDA",
+    "streak_title": "ONDA",
+    "daily_body": [
+      "停顿片刻，节奏始于一次呼吸。",
+      "用三分钟回到自己。",
+      "你的身体记得宁静。进入吧。",
+      "一次呼吸，一次停顿——你的练习在等你。",
+      "留意念头之间的空隙。",
+      "一次有意识的呼吸，足以开始。",
+      "回到中心，练习会在那里与你相遇。"
+    ],
+    "streak_body": [
+      "你 {{streak}} 天的节奏仍在延续。一次练习就能保持。",
+      "今晚也是这串纪录的一部分。",
+      "连续 {{streak}} 天——已经成为习惯，别让它中断。",
+      "今天快结束了。要保存你的进度吗？"
+    ]
+  },
   "language_select": "选择语言",
   "app_title": "ONDA LIFE",
   "body_title": "身体",
@@ -617,6 +636,11 @@
     "no_practice_ratings": "暂无评分。完成练习并评价它们！"
   },
   "settings": {
+    "reminders_section": "提醒",
+    "daily_reminder": "每日练习提醒",
+    "streak_reminder": "连续记录保护",
+    "streak_reminder_hint": "若今日尚未练习，将于晚上 20:00 轻轻提醒。",
+    "reminders_permission_denied": "通知已关闭。请在 iOS 设置 → 通知 → ONDA 中开启。",
     "title": "设置",
     "language": "语言",
     "theme": "主题",

@@ -1,4 +1,23 @@
 {
+  "reminders": {
+    "daily_title": "ONDA",
+    "streak_title": "ONDA",
+    "daily_body": [
+      "Tiempo para una pausa. Tu ritmo empieza con una sola respiración.",
+      "Tres minutos para regresar a ti mismo.",
+      "Tu cuerpo recuerda la quietud. Entra.",
+      "Una respiración, una pausa — tu práctica espera.",
+      "Nota el espacio entre los pensamientos.",
+      "Una respiración consciente. Es suficiente para empezar.",
+      "Vuelve al centro. La práctica te encontrará allí."
+    ],
+    "streak_body": [
+      "Tu ritmo de {{streak}} días sigue vivo. Una práctica lo mantiene.",
+      "Esta noche también es parte de la serie.",
+      "{{streak}} días seguidos — ya es un hábito. No lo dejes romper.",
+      "El día casi termina. ¿Salvamos tu progreso?"
+    ]
+  },
   "language_select": "Seleccionar idioma",
   "app_title": "ONDA LIFE",
   "body_title": "CUERPO",
@@ -577,6 +596,11 @@
     "no_practice_ratings": "Aún no hay calificaciones. ¡Completa las prácticas y califícalas!"
   },
   "settings": {
+    "reminders_section": "Recordatorios",
+    "daily_reminder": "Recordatorio diario de práctica",
+    "streak_reminder": "Protección de racha",
+    "streak_reminder_hint": "Aviso vespertino a las 20:00 si falta la práctica de hoy.",
+    "reminders_permission_denied": "Las notificaciones están desactivadas. Actívalas en iOS Settings → Notifications → ONDA.",
     "save": "Guardar",
     "notification_hr_enable": "Activar frecuencia cardíaca por notificaciones",
     "notification_hr_enabled": "Notificaciones de FC activadas",
