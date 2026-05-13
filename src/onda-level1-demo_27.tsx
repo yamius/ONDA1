@@ -7089,7 +7089,7 @@ const OndaLevel1 = () => {
         />
       )}
 
-      {showSettingsModal && user && (
+      {showSettingsModal && (
         <SettingsModal
           user={user}
           profile={userProfile}
@@ -7320,11 +7320,11 @@ const OndaLevel1 = () => {
             {/* Настройки */}
             <button
               onClick={() => {
-                if (user) {
-                  setShowSettingsModal(true);
-                } else {
-                  setShowAuthModal(true);
-                }
+                // Settings is reachable without an account so anonymous
+                // free-tier users can still configure local notifications
+                // (Reminders section). Profile-section gracefully degrades
+                // when user is null.
+                setShowSettingsModal(true);
                 setShowMenu(false);
               }}
               className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${

@@ -16,7 +16,9 @@ import {
 } from '../services/notifications';
 
 interface SettingsModalProps {
-  user: any;
+  // null when the visitor is anonymous (free-tier sampler). Reminders
+  // section still works — profile-edit section just hides.
+  user: any | null;
   profile: UserProfile | null;
   onClose: () => void;
   onProfileUpdate: (profile: UserProfile) => void;
@@ -158,6 +160,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
         </div>
 
         <div className="space-y-6">
+          {user && (<>
           <div>
             <label
               className={`block text-sm mb-2 ${
@@ -254,9 +257,10 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
               </p>
             </div>
           </div>
+          </>)}
 
           {/* Reminders — local notifications (Sprint 1) */}
-          <div className="pt-4 border-t border-white/10">
+          <div className={user ? 'pt-4 border-t border-white/10' : 'pt-2'}>
             <div className={`flex items-center gap-2 mb-3 ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
               <Bell className="w-4 h-4" />
               <span className="text-sm font-medium">{t('settings.reminders_section', 'Reminders')}</span>
