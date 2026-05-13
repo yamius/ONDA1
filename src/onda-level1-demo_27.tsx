@@ -130,18 +130,37 @@ const OndaLevel1 = () => {
   // have to hunt for the orange "Set Up Now" banner. Shown exactly once
   // per install — after the user dismisses it (Grant or Set Up Later)
   // we mark it seen and rely on the banner for re-entry.
+  //
+  // Timing: we want the modal to appear THE MOMENT the iOS ATT sheet
+  // dismisses, never overlapping it. While ATT (or any other system
+  // sheet) is on screen the app is in 'inactive' state; the user's
+  // tap on Allow/Don't Allow returns us to 'active'. We listen for
+  // that transition. A 2.5 s fallback handles cold starts where ATT
+  // never shows (2nd launch — system has the cached answer).
   useEffect(() => {
     if (!Capacitor.isNativePlatform()) return;
     if (!permissions.needsSetup) return;
     if (localStorage.getItem('onda_permission_prompt_shown') === 'true') return;
-    // Short delay so the iOS ATT sheet (triggered by Tenjin init) has
-    // a chance to come up first — stacking system + React modals at the
-    // same instant looks broken.
-    const t = setTimeout(() => {
+
+    let opened = false;
+    const open = () => {
+      if (opened) return;
+      opened = true;
       setShowPermissionModal(true);
       localStorage.setItem('onda_permission_prompt_shown', 'true');
-    }, 1200);
-    return () => clearTimeout(t);
+    };
+
+    let appSub: { remove: () => void } | null = null;
+    CapApp.addListener('appStateChange', ({ isActive }) => {
+      if (isActive) open();
+    }).then((h) => { appSub = h; }).catch(() => undefined);
+
+    const fallback = setTimeout(open, 2500);
+
+    return () => {
+      clearTimeout(fallback);
+      appSub?.remove();
+    };
   }, [permissions.needsSetup]);
 
   // Автозапуск HR мониторинга на втором и последующих запусках (когда разрешения уже есть)
