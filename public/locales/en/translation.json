@@ -837,6 +837,9 @@
     "energy": "Energy Level"
   },
   "settings": {
+    "contact_developers": "Write to developers",
+    "contact_subject": "ONDA — Feedback",
+    "contact_body_hint": "Hi ONDA team,",
     "reminders_section": "Reminders",
     "daily_reminder": "Daily practice reminder",
     "streak_reminder": "Streak protection",

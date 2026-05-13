@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { X, Activity, Bell } from 'lucide-react';
+import { X, Activity, Bell, Mail } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Capacitor } from '@capacitor/core';
 import { VitalsDiagnostics } from './VitalsDiagnostics';
 import {
   checkPermission,
@@ -188,6 +189,30 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                 </div>
               )}
             </div>
+          </div>
+
+          {/* Contact developers — simple mailto with diagnostics pre-filled */}
+          <div className="pt-4 border-t border-white/10">
+            <button
+              onClick={() => {
+                const subject = encodeURIComponent(t('settings.contact_subject', 'ONDA — Feedback'));
+                const version = import.meta.env.VITE_BUILD_NUMBER || '';
+                const platform = Capacitor.getPlatform();
+                const lang = (typeof navigator !== 'undefined' && navigator.language) || 'unknown';
+                const diag = `\n\n---\nApp: ONDA\nPlatform: ${platform}\nBuild: ${version}\nLocale: ${lang}`;
+                const body = encodeURIComponent(t('settings.contact_body_hint', 'Hi ONDA team,') + diag);
+                window.location.href = `mailto:hello@onda-life.com?subject=${subject}&body=${body}`;
+              }}
+              className={`w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm ${
+                isLightTheme
+                  ? 'bg-gray-200 hover:bg-gray-300 text-gray-700'
+                  : 'bg-white/10 hover:bg-white/20 text-white/80'
+              }`}
+              data-testid="button-contact-developers"
+            >
+              <Mail className="w-4 h-4" />
+              {t('settings.contact_developers', 'Write to developers')}
+            </button>
           </div>
 
           {/* Diagnostics Button - Hidden in production for App Store compliance */}

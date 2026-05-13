@@ -846,6 +846,9 @@
     "energy": "Рівень енергії"
   },
   "settings": {
+    "contact_developers": "Написати розробникам",
+    "contact_subject": "ONDA — Зворотний зв'язок",
+    "contact_body_hint": "Привіт, команда ONDA!",
     "reminders_section": "Нагадування",
     "daily_reminder": "Щоденне нагадування про практику",
     "streak_reminder": "Захист streak",

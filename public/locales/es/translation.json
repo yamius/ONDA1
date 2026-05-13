@@ -605,6 +605,9 @@
     "no_practice_ratings": "Aún no hay calificaciones. ¡Completa las prácticas y califícalas!"
   },
   "settings": {
+    "contact_developers": "Escribir a los desarrolladores",
+    "contact_subject": "ONDA — Comentarios",
+    "contact_body_hint": "Hola equipo de ONDA,",
     "reminders_section": "Recordatorios",
     "daily_reminder": "Recordatorio diario de práctica",
     "streak_reminder": "Protección de racha",

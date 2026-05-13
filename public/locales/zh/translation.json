@@ -645,6 +645,9 @@
     "no_practice_ratings": "暂无评分。完成练习并评价它们！"
   },
   "settings": {
+    "contact_developers": "联系开发者",
+    "contact_subject": "ONDA — 反馈",
+    "contact_body_hint": "ONDA 团队你好，",
     "reminders_section": "提醒",
     "daily_reminder": "每日练习提醒",
     "streak_reminder": "连续记录保护",
