@@ -1,4 +1,11 @@
 {
+  "notification_primer": {
+    "title": "Stay in rhythm",
+    "body": "We'll send a gentle daily nudge so you don't lose your streak. You choose the time inside Settings — and you can turn it off anytime.",
+    "allow": "Enable reminders",
+    "skip": "Maybe later",
+    "requesting": "Requesting..."
+  },
   "reminders": {
     "daily_title": "ONDA",
     "streak_title": "ONDA",

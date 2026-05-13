@@ -14,6 +14,7 @@ import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
 import { PermissionWarningBanner } from './components/PermissionWarningBanner';
 import { PermissionSetupModal } from './components/PermissionSetupModal';
+import { NotificationPrimerModal } from './components/NotificationPrimerModal';
 import { WatchConnectionPrompt } from './components/WatchConnectionPrompt';
 import { DebugMonitor } from './components/DebugMonitor';
 import type { UserProfile as UserProfileType } from './lib/supabase';
@@ -126,28 +127,26 @@ const OndaLevel1 = () => {
     }
   }, [watchHeartRate.heartRate]);
   
-  // Auto-open Permission Setup modal on first cold start so users don't
-  // have to hunt for the orange "Set Up Now" banner. Shown exactly once
-  // per install — after the user dismisses it (Grant or Set Up Later)
-  // we mark it seen and rely on the banner for re-entry.
+  // Auto-open Notification Primer on first cold start. This is the only
+  // permission we proactively ask for at launch — it's the retention
+  // hook (without notifications we can't bring back a user who installed
+  // and forgot). HealthKit/Heart-Rate is left to the orange 'Set Up Now'
+  // banner — users who actually want Watch tracking will tap it.
   //
-  // Timing: we want the modal to appear THE MOMENT the iOS ATT sheet
-  // dismisses, never overlapping it. While ATT (or any other system
-  // sheet) is on screen the app is in 'inactive' state; the user's
-  // tap on Allow/Don't Allow returns us to 'active'. We listen for
-  // that transition. A 2.5 s fallback handles cold starts where ATT
-  // never shows (2nd launch — system has the cached answer).
+  // Timing: opens the moment the iOS ATT sheet (Tenjin) dismisses, so we
+  // never stack two modals. While ATT is up the app is 'inactive'; user
+  // tap returns us to 'active'. A 2.5 s fallback handles 2nd cold starts
+  // where ATT doesn't reappear.
   useEffect(() => {
     if (!Capacitor.isNativePlatform()) return;
-    if (!permissions.needsSetup) return;
-    if (localStorage.getItem('onda_permission_prompt_shown') === 'true') return;
+    if (localStorage.getItem('onda_notification_primer_shown') === 'true') return;
 
     let opened = false;
     const open = () => {
       if (opened) return;
       opened = true;
-      setShowPermissionModal(true);
-      localStorage.setItem('onda_permission_prompt_shown', 'true');
+      setShowNotificationPrimer(true);
+      localStorage.setItem('onda_notification_primer_shown', 'true');
     };
 
     let appSub: { remove: () => void } | null = null;
@@ -161,7 +160,7 @@ const OndaLevel1 = () => {
       clearTimeout(fallback);
       appSub?.remove();
     };
-  }, [permissions.needsSetup]);
+  }, []);
 
   // Автозапуск HR мониторинга на втором и последующих запусках (когда разрешения уже есть)
   useEffect(() => {
@@ -287,6 +286,7 @@ const OndaLevel1 = () => {
   const [showConnectionModal, setShowConnectionModal] = useState(false);
   const [showLanguageModal, setShowLanguageModal] = useState(false);
   const [showPermissionModal, setShowPermissionModal] = useState(false);
+  const [showNotificationPrimer, setShowNotificationPrimer] = useState(false);
   const [showWatchPrompt, setShowWatchPrompt] = useState(false);
   const [showQntShop, setShowQntShop] = useState(false);
   const [isLoadingUser, setIsLoadingUser] = useState(true);
@@ -7109,6 +7109,13 @@ const OndaLevel1 = () => {
           currentStatus={permissions.permissionStatus}
           isRequesting={permissions.isRequesting}
           onPermissionsGranted={() => setShowWatchPrompt(true)}
+        />
+      )}
+
+      {showNotificationPrimer && (
+        <NotificationPrimerModal
+          isOpen={showNotificationPrimer}
+          onClose={() => setShowNotificationPrimer(false)}
         />
       )}
 

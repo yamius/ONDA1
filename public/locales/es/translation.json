@@ -1,4 +1,11 @@
 {
+  "notification_primer": {
+    "title": "Mantén tu ritmo",
+    "body": "Te enviaremos un aviso diario suave para que no pierdas tu racha. Eliges la hora en Ajustes — puedes desactivarlo en cualquier momento.",
+    "allow": "Activar recordatorios",
+    "skip": "Más tarde",
+    "requesting": "Solicitando..."
+  },
   "reminders": {
     "daily_title": "ONDA",
     "streak_title": "ONDA",

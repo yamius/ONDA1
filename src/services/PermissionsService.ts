@@ -243,12 +243,12 @@ export class PermissionsService {
     status.healthWrite = false; // Не используем
     onProgress?.('healthRead', true);
     
-    // 3. Уведомления — запрашиваем через @capacitor/local-notifications.
-    //    Пользователь увидит этот системный prompt после HealthKit-prompt
-    //    на том же первом онбординг-экране. UX-инвариант: prompt только
-    //    после клика "Grant all", никогда при холодном старте.
-    status.notifications = await this.requestNotificationPermission();
-    onProgress?.('notifications', status.notifications);
+    // 3. Уведомления — НЕ запрашиваем здесь.
+    //    Notifications обрабатываются отдельным NotificationPrimerModal
+    //    на cold start (retention play). HealthKit-флоу — про "часы и
+    //    пульс", о нём пользователь думает осознанно, поэтому два
+    //    разрешения разнесены по разным экранам.
+    status.notifications = await this.checkNotificationPermission();
 
     console.log('[Permissions] All permissions requested:', status);
     

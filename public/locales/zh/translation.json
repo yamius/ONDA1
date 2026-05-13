@@ -1,4 +1,11 @@
 {
+  "notification_primer": {
+    "title": "保持你的节奏",
+    "body": "我们会每天温和地提醒你，让你的连续记录不中断。时间可在「设置」中选择——随时可以关闭。",
+    "allow": "开启提醒",
+    "skip": "稍后再说",
+    "requesting": "请求中..."
+  },
   "reminders": {
     "daily_title": "ONDA",
     "streak_title": "ONDA",
