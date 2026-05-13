@@ -126,6 +126,24 @@ const OndaLevel1 = () => {
     }
   }, [watchHeartRate.heartRate]);
   
+  // Auto-open Permission Setup modal on first cold start so users don't
+  // have to hunt for the orange "Set Up Now" banner. Shown exactly once
+  // per install — after the user dismisses it (Grant or Set Up Later)
+  // we mark it seen and rely on the banner for re-entry.
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+    if (!permissions.needsSetup) return;
+    if (localStorage.getItem('onda_permission_prompt_shown') === 'true') return;
+    // Short delay so the iOS ATT sheet (triggered by Tenjin init) has
+    // a chance to come up first — stacking system + React modals at the
+    // same instant looks broken.
+    const t = setTimeout(() => {
+      setShowPermissionModal(true);
+      localStorage.setItem('onda_permission_prompt_shown', 'true');
+    }, 1200);
+    return () => clearTimeout(t);
+  }, [permissions.needsSetup]);
+
   // Автозапуск HR мониторинга на втором и последующих запусках (когда разрешения уже есть)
   useEffect(() => {
     const autoStartMonitoring = async () => {
