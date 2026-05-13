@@ -32,6 +32,7 @@ import {
   reconcileStreakNudge,
   onNotificationOpened,
   getStreakEnabled,
+  requestPermission as requestNotificationPermission,
 } from './services/notifications';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
@@ -4192,7 +4193,22 @@ const OndaLevel1 = () => {
   }
 
   if (showOnboarding) {
-    const handleOnboardingNext = () => {
+    const handleOnboardingNext = async () => {
+      if (onboardingScreen === 2) {
+        // Screen 2 → 3 transition is the moment we ask for the iOS
+        // notifications permission. We've spent screen 2's text bridge
+        // explaining why; now the system prompt lands on top of our
+        // branded onboarding background.
+        try {
+          await requestNotificationPermission();
+        } catch (e) {
+          console.warn('[onboarding] notifications permission error', e);
+        }
+        // Snapshot so the standalone NotificationPrimerModal auto-open
+        // never fires on top of this — onboarding owns the prompt now.
+        localStorage.setItem('onda_notification_primer_shown', 'true');
+      }
+
       if (onboardingScreen < 3) {
         setOnboardingScreen(onboardingScreen + 1);
       } else {
@@ -4206,59 +4222,23 @@ const OndaLevel1 = () => {
       }
     };
 
-    const handleOnboardingPrev = () => {
-      if (onboardingScreen > 1) {
-        setOnboardingScreen(onboardingScreen - 1);
-      }
-    };
-
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    const handleTouchStart = (e: React.TouchEvent) => {
-      touchStartX = e.touches[0].clientX;
-    };
-
-    const handleTouchMove = (e: React.TouchEvent) => {
-      touchEndX = e.touches[0].clientX;
-    };
-
-    const handleTouchEnd = () => {
-      const swipeThreshold = 50;
-      const diff = touchStartX - touchEndX;
-      
-      if (Math.abs(diff) > swipeThreshold) {
-        if (diff > 0) {
-          // Свайп влево - следующий экран
-          if (onboardingScreen < 3) {
-            setOnboardingScreen(onboardingScreen + 1);
-          }
-        } else {
-          // Свайп вправо - предыдущий экран
-          if (onboardingScreen > 1) {
-            setOnboardingScreen(onboardingScreen - 1);
-          }
-        }
-      }
-    };
-
     return (
       <div className="h-full text-white overflow-x-hidden bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950">
-        <div 
+        <div
           className="min-h-screen flex flex-col justify-between px-6 py-8 max-w-2xl mx-auto"
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
         >
+          {/* Forward-only flow: dots are now a non-interactive progress
+              indicator. We can't re-prompt for permissions if the user
+              taps a previous dot, so back-navigation in this flow is
+              functionally broken — better to remove it entirely. */}
           <div className="flex justify-center gap-3 pt-4">
             {[1, 2, 3].map((dot) => (
-              <button
+              <div
                 key={dot}
-                onClick={() => setOnboardingScreen(dot)}
                 className={`w-3 h-3 rounded-full transition-all ${
                   onboardingScreen === dot
                     ? 'bg-violet-400 scale-125'
-                    : 'bg-white/30 hover:bg-white/50'
+                    : 'bg-white/30'
                 }`}
                 data-testid={`onboarding-dot-${dot}`}
               />
@@ -4291,6 +4271,14 @@ const OndaLevel1 = () => {
                   </li>
                 </ul>
                 <p className="text-violet-300 italic text-lg text-center pt-4">{t('onboarding.screen1_conclusion')}</p>
+
+                {/* Bridge to the iOS ATT prompt that fires after Continue */}
+                <div className="mt-6 rounded-xl border border-violet-500/30 bg-violet-500/10 p-4 flex items-start gap-3">
+                  <span aria-hidden className="mt-0.5 text-violet-300 text-base">ℹ️</span>
+                  <p className="text-sm text-violet-100/90 italic leading-relaxed">
+                    {t('onboarding.screen1_bridge')}
+                  </p>
+                </div>
               </div>
             )}
 
@@ -4320,6 +4308,14 @@ const OndaLevel1 = () => {
                   </li>
                 </ul>
                 <p className="text-cyan-300 italic text-lg text-center pt-4">{t('onboarding.screen2_conclusion')}</p>
+
+                {/* Bridge to the iOS notifications prompt that fires after Continue */}
+                <div className="mt-6 rounded-xl border border-cyan-500/30 bg-cyan-500/10 p-4 flex items-start gap-3">
+                  <span aria-hidden className="mt-0.5 text-cyan-300 text-base">🔔</span>
+                  <p className="text-sm text-cyan-100/90 italic leading-relaxed">
+                    {t('onboarding.screen2_bridge')}
+                  </p>
+                </div>
               </div>
             )}
 

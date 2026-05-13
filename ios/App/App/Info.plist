@@ -60,7 +60,7 @@
                 </dict>
         </array>
         <key>NSUserTrackingUsageDescription</key>
-        <string>ONDA uses your advertising identifier to measure the effectiveness of our campaigns and provide personalized content recommendations.</string>
+        <string>Helps us understand which campaigns reach people who genuinely need ONDA.</string>
         <key>NSMicrophoneUsageDescription</key>
         <string>ONDA uses the microphone during emotional check-ins to analyze your voice and provide personalized wellness recommendations.</string>
         <key>NSHealthShareUsageDescription</key>
