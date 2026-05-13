@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { User, LogOut, Trash2, X } from 'lucide-react';
+import { User, LogOut, Trash2, X, Save, User as UserIcon } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from '../lib/supabase';
 import type { UserProfile as UserProfileType } from '../lib/supabase';
@@ -9,14 +9,53 @@ interface UserProfileProps {
   profile: UserProfileType | null;
   onClose: () => void;
   isLightTheme: boolean;
+  // Bubbles the updated profile up so the parent can refresh its cached
+  // userProfile state (used by leaderboard / greeting).
+  onProfileUpdate?: (profile: UserProfileType) => void;
 }
 
-export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose, isLightTheme }) => {
+export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose, isLightTheme, onProfileUpdate }) => {
   const { t } = useTranslation();
   const [isLoggingOut, setIsLoggingOut] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
   const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
   const [deleteError, setDeleteError] = useState<string | null>(null);
+  const [displayName, setDisplayName] = useState(profile?.display_name || '');
+  const [isSavingName, setIsSavingName] = useState(false);
+  const [nameError, setNameError] = useState('');
+  const [nameSuccess, setNameSuccess] = useState(false);
+
+  const handleSaveName = async () => {
+    if (!user) return;
+    if (!displayName.trim()) {
+      setNameError(t('settings.name_required'));
+      return;
+    }
+    if (displayName.length > 30) {
+      setNameError(t('settings.name_too_long'));
+      return;
+    }
+    setNameError('');
+    setIsSavingName(true);
+    try {
+      const { data, error } = await supabase
+        .from('user_profiles')
+        .upsert({ id: user.id, display_name: displayName.trim() })
+        .select()
+        .single();
+      if (error) throw error;
+      if (data) {
+        onProfileUpdate?.(data);
+        setNameSuccess(true);
+        setTimeout(() => setNameSuccess(false), 1800);
+      }
+    } catch (err: any) {
+      console.error('Error updating profile:', err);
+      setNameError(err.message || t('settings.save_error'));
+    } finally {
+      setIsSavingName(false);
+    }
+  };
 
   const handleSignOut = async () => {
     setIsLoggingOut(true);
@@ -93,6 +132,55 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
           <p className={`text-xs sm:text-sm ${isLightTheme ? 'text-gray-600' : 'text-white/70'} break-all px-4`}>
             {user.email}
           </p>
+        </div>
+
+        {/* Display name editor */}
+        <div className="mb-4">
+          <label className={`block text-sm mb-2 ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+            {t('settings.your_name')}
+          </label>
+          <div className="relative">
+            <UserIcon className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 ${isLightTheme ? 'text-gray-400' : 'text-white/40'}`} />
+            <input
+              type="text"
+              value={displayName}
+              onChange={(e) => { setDisplayName(e.target.value); setNameError(''); setNameSuccess(false); }}
+              maxLength={30}
+              placeholder={t('settings.enter_name')}
+              className={`w-full pl-11 pr-4 py-3 rounded-xl border transition-all focus:outline-none focus:ring-2 ${
+                isLightTheme
+                  ? 'bg-gray-100 border-gray-300 focus:ring-gray-400 text-gray-900'
+                  : 'bg-white/10 border-white/20 focus:ring-purple-500/50 text-white placeholder-white/40'
+              }`}
+            />
+          </div>
+          <p className={`text-xs mt-1 ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+            {displayName.length}/30 {t('settings.characters')}
+          </p>
+
+          {nameError && (
+            <div className={`text-sm p-2 mt-2 rounded-lg ${isLightTheme ? 'bg-red-100 text-red-700' : 'bg-red-500/20 text-red-400'}`}>
+              {nameError}
+            </div>
+          )}
+          {nameSuccess && (
+            <div className={`text-sm p-2 mt-2 rounded-lg ${isLightTheme ? 'bg-green-100 text-green-700' : 'bg-green-500/20 text-green-400'}`}>
+              {t('settings.name_updated')}
+            </div>
+          )}
+
+          <button
+            onClick={handleSaveName}
+            disabled={isSavingName || !displayName.trim() || displayName === (profile?.display_name || '')}
+            className={`w-full mt-3 py-2.5 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm ${
+              isLightTheme
+                ? 'bg-gray-900 hover:bg-gray-800 text-white disabled:bg-gray-400'
+                : 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 disabled:opacity-50'
+            } ${isSavingName || !displayName.trim() ? 'cursor-not-allowed' : ''}`}
+          >
+            <Save className="w-4 h-4" />
+            {isSavingName ? `${t('settings.saving')}...` : t('settings.save')}
+          </button>
         </div>
 
         <div className={`rounded-xl p-4 mb-6 ${

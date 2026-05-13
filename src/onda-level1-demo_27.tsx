@@ -7086,17 +7086,15 @@ const OndaLevel1 = () => {
           profile={userProfile}
           onClose={() => setShowProfileModal(false)}
           isLightTheme={isLightTheme}
+          onProfileUpdate={(updatedProfile) => {
+            setUserProfile(updatedProfile);
+          }}
         />
       )}
 
       {showSettingsModal && (
         <SettingsModal
-          user={user}
-          profile={userProfile}
           onClose={() => setShowSettingsModal(false)}
-          onProfileUpdate={(updatedProfile) => {
-            setUserProfile(updatedProfile);
-          }}
           isLightTheme={isLightTheme}
         />
       )}
