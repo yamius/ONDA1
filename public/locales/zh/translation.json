@@ -63,6 +63,8 @@
     "microphone_description": "当您想进行情绪检查时，我们将录制您的声音",
     "heart_rate_title": "心率",
     "heart_rate_description": "为了在练习中查看您的进度，我们会监测您的心率",
+    "notifications_title": "练习提醒",
+    "notifications_description": "温和的每日提醒与连续记录保护。两者都在「设置」中手动启用——此处授权只是为了解锁这两个开关。",
     "grant_all": "授予所有权限",
     "requesting": "正在请求权限...",
     "setup_later": "稍后设置"

@@ -75,6 +75,8 @@
     "microphone_description": "We'll record your voice when you complete an Emotional Check-In",
     "heart_rate_title": "Heart Rate",
     "heart_rate_description": "We monitor your heart rate to track your progress during practices",
+    "notifications_title": "Practice reminders",
+    "notifications_description": "Gentle daily nudge and streak protection. Both are opt-in inside Settings — granting permission now just unlocks the toggles.",
     "grant_all": "Grant All Permissions",
     "requesting": "Requesting permissions...",
     "setup_later": "Set Up Later"

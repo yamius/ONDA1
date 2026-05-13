@@ -64,6 +64,8 @@
     "microphone_description": "Cuando quieras hacer un Chequeo Emocional, grabaremos tu voz",
     "heart_rate_title": "Frecuencia cardíaca",
     "heart_rate_description": "Para ver tu progreso durante las prácticas, monitoreamos tu frecuencia cardíaca",
+    "notifications_title": "Recordatorios de práctica",
+    "notifications_description": "Un suave aviso diario y protección de racha. Ambos se activan manualmente en Ajustes — conceder el permiso ahora solo desbloquea los interruptores.",
     "grant_all": "Otorgar todos los permisos",
     "requesting": "Solicitando permisos...",
     "setup_later": "Configurar después"

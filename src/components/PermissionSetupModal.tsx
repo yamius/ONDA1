@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Heart, Check } from 'lucide-react';
+import { X, Heart, Check, Bell } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { PermissionStatus } from '../services/PermissionsService';
 
@@ -29,6 +29,15 @@ export function PermissionSetupModal({
       title: t('permissions.heart_rate_title'),
       description: t('permissions.heart_rate_description'),
       color: 'red',
+    },
+    notifications: {
+      icon: Bell,
+      title: t('permissions.notifications_title', 'Practice reminders'),
+      description: t(
+        'permissions.notifications_description',
+        'Gentle daily nudge and streak protection. Both are opt-in inside Settings — granting permission now just unlocks the toggles.',
+      ),
+      color: 'purple',
     },
   } as const;
 
@@ -101,6 +110,18 @@ export function PermissionSetupModal({
                 color={PERMISSION_INFO.healthRead.color}
                 granted={requestStatus.healthRead}
                 colorClasses={getColorClasses(PERMISSION_INFO.healthRead.color)}
+              />
+            )}
+
+            {/* Notifications — local reminders, not push */}
+            {PERMISSION_INFO.notifications && (
+              <PermissionCard
+                icon={PERMISSION_INFO.notifications.icon}
+                title={PERMISSION_INFO.notifications.title}
+                description={PERMISSION_INFO.notifications.description}
+                color={PERMISSION_INFO.notifications.color}
+                granted={requestStatus.notifications}
+                colorClasses={getColorClasses(PERMISSION_INFO.notifications.color)}
               />
             )}
 

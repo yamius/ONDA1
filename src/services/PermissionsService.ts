@@ -1,4 +1,5 @@
 import { Capacitor } from '@capacitor/core';
+import { LocalNotifications } from '@capacitor/local-notifications';
 import OndaWatch from '../plugins/ondaWatch';
 
 export interface PermissionStatus {
@@ -124,15 +125,10 @@ export class PermissionsService {
    * Проверяет разрешение на уведомления
    */
   static async checkNotificationPermission(): Promise<boolean> {
+    if (!Capacitor.isNativePlatform()) return false;
     try {
-      // Проверяем через Capacitor Notifications
-      const PushNotifications = (window as any).PushNotifications;
-      if (!PushNotifications) {
-        return false;
-      }
-
-      const result = await PushNotifications.checkPermissions();
-      return result.receive === 'granted';
+      const result = await LocalNotifications.checkPermissions();
+      return result.display === 'granted';
     } catch (error) {
       console.error('[Permissions] Error checking notification permission:', error);
       return false;
@@ -208,14 +204,15 @@ export class PermissionsService {
    * Запрашивает разрешение на уведомления
    */
   static async requestNotificationPermission(): Promise<boolean> {
+    if (!Capacitor.isNativePlatform()) return false;
     try {
-      const PushNotifications = (window as any).PushNotifications;
-      if (!PushNotifications) {
-        return false;
-      }
-
-      const result = await PushNotifications.requestPermissions();
-      return result.receive === 'granted';
+      const result = await LocalNotifications.requestPermissions();
+      const granted = result.display === 'granted';
+      // Snapshot for service-level helpers (e.g. notifications.ts streak
+      // reconciliation logic that reads localStorage to know whether to
+      // proceed before re-checking with the OS).
+      localStorage.setItem('onda_reminders_last_permission', granted ? 'granted' : 'denied');
+      return granted;
     } catch (error) {
       console.error('[Permissions] Error requesting notification permission:', error);
       return false;
@@ -246,8 +243,12 @@ export class PermissionsService {
     status.healthWrite = false; // Не используем
     onProgress?.('healthRead', true);
     
-    // 3. Уведомления пока не запрашиваем (пакет не установлен)
-    status.notifications = false;
+    // 3. Уведомления — запрашиваем через @capacitor/local-notifications.
+    //    Пользователь увидит этот системный prompt после HealthKit-prompt
+    //    на том же первом онбординг-экране. UX-инвариант: prompt только
+    //    после клика "Grant all", никогда при холодном старте.
+    status.notifications = await this.requestNotificationPermission();
+    onProgress?.('notifications', status.notifications);
 
     console.log('[Permissions] All permissions requested:', status);
     
