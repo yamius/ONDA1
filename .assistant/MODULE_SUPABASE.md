@@ -95,6 +95,41 @@ revoke all on internal.app_events from anon, authenticated;
 | `public` | Данные, которые клиент читает/пишет через RLS |
 | `internal` | Аналитика, логи, внутренние данные, бэкенд-only |
 
+### ⚠️ Supabase policy change — Oct 30, 2026
+
+С **30 октября 2026** Supabase **перестаёт** автоматически давать grants ролям `anon` / `authenticated` / `service_role` на новые таблицы в `public`. Существующие таблицы свои текущие grants сохраняют — ничего не сломается.
+
+Для **любой новой** таблицы в `public`, созданной после этой даты, нужно явно прописывать `GRANT`-ы в миграции — иначе PostgREST вернёт `42501 permission denied`.
+
+Канонический шаблон новой миграции в `public` (используй вместо «голого» `create table` — см. также `supabase/migrations/_TEMPLATE.sql`):
+
+```sql
+create table public.<your_table> (
+  id uuid primary key default gen_random_uuid(),
+  user_id uuid references auth.users on delete cascade,
+  -- ... колонки ...
+  created_at timestamptz default now()
+);
+
+-- Grants — ОБЯЗАТЕЛЬНО для новых таблиц после 2026-10-30
+grant select, insert, update, delete on public.<your_table> to authenticated;
+grant all on public.<your_table> to service_role;
+-- grant select on public.<your_table> to anon;  -- только если правда нужен анонимный доступ
+
+-- RLS
+alter table public.<your_table> enable row level security;
+
+create policy "Users read own rows" on public.<your_table>
+  for select to authenticated using (auth.uid() = user_id);
+
+create policy "Users insert own rows" on public.<your_table>
+  for insert to authenticated with check (auth.uid() = user_id);
+
+-- ... остальные policies (update / delete) по необходимости
+```
+
+Для **internal** таблиц логика обратная — там grants по умолчанию не дают, и наоборот, надо явно `revoke` (см. секцию выше).
+
 ## Edge Functions
 
 Расположение: `supabase/functions/`
