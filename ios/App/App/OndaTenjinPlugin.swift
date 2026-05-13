@@ -21,9 +21,36 @@ import TenjinSDK
 @objc(OndaTenjinPlugin)
 public class OndaTenjinPlugin: CAPPlugin {
 
+    /// Process-wide guard so connect() fires at most once per launch, even
+    /// if both onboarding (post-ATT) and the cold-start mount effect try
+    /// to call it. Mirrors the behaviour the old AppDelegate code had
+    /// before ATT got moved into the JS onboarding flow.
+    private static var hasConnected = false
+
     public override func load() {
         super.load()
         print("[OndaTenjin] Plugin loaded")
+    }
+
+    /// Fire TenjinSDK.connect() — the install postback that drives Tenjin's
+    /// attribution to AppLovin / Google Ads / Meta.
+    ///
+    /// This MUST be called AFTER the ATT prompt has been resolved (any
+    /// outcome). Calling it earlier means IDFA isn't available yet and
+    /// every install lands as Organic. We saw this in production
+    /// (19/19 mis-attributed installs across networks).
+    ///
+    /// Idempotent: subsequent calls within the same process are no-ops.
+    @objc func connect(_ call: CAPPluginCall) {
+        if OndaTenjinPlugin.hasConnected {
+            print("[OndaTenjin] connect() — already fired this process, skipping")
+            call.resolve(["ok": true, "alreadyConnected": true])
+            return
+        }
+        OndaTenjinPlugin.hasConnected = true
+        TenjinSDK.connect()
+        print("[OndaTenjin] connect() fired ✅")
+        call.resolve(["ok": true, "alreadyConnected": false])
     }
 
     /// Track a custom event.

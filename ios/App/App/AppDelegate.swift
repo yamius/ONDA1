@@ -3,14 +3,11 @@ import Capacitor
 import WatchConnectivity
 import FirebaseCore
 import TenjinSDK
-import AppTrackingTransparency
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    private var attObserver: Any?
-    private var hasConnectedTenjin = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // ⚠️ Order matters: Firebase MUST initialize before any MMP.
@@ -38,50 +35,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // happens inside the ATT completion handler below.
         DispatchQueue.main.async {
             TenjinSDK.getInstance("AD2VCZNVQ9HQSDTFKSINIBSWGUVPSBHJ")
-            print("[ONDA] Tenjin iOS SDK initialized ✅ (connect deferred until ATT resolves)")
+            print("[ONDA] Tenjin iOS SDK initialized ✅ (connect deferred until JS calls OndaTenjin.connect after ATT)")
         }
 
-        // App Tracking Transparency.
-        //
-        // Apple's review team rejected build 1.0.3 (Submission ID 08145570…)
-        // on iOS 26.4.1 because the ATT prompt never appeared. The app links
-        // AppTrackingTransparency.framework and ships
-        // NSUserTrackingUsageDescription in Info.plist, so Apple expects the
-        // request to be shown before any tracking-relevant data is collected.
-        //
-        // Anchored to didBecomeActive because requestTrackingAuthorization
-        // only displays the system sheet while the app is foreground-active
-        // (iOS will silently no-op the call otherwise). Single-shot — the
-        // observer is removed inside the handler.
-        attObserver = NotificationCenter.default.addObserver(
-            forName: UIApplication.didBecomeActiveNotification,
-            object: nil,
-            queue: .main
-        ) { [weak self] _ in
-            // Slight delay so the request lands after the WebView's first
-            // frame, not during launch animations.
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                if #available(iOS 14, *) {
-                    ATTrackingManager.requestTrackingAuthorization { status in
-                        print("[ONDA] ATT status: \(status.rawValue)")
-                        // Now that ATT is resolved, fire Tenjin connect() —
-                        // on the main thread, once per process. On 2nd+ cold
-                        // launches the system returns the cached status
-                        // synchronously, so connect() still happens promptly.
-                        DispatchQueue.main.async {
-                            self?.connectTenjinOnce()
-                        }
-                    }
-                } else {
-                    // iOS < 14: no ATT, IDFA available unconditionally.
-                    self?.connectTenjinOnce()
-                }
-            }
-            if let observer = self?.attObserver {
-                NotificationCenter.default.removeObserver(observer)
-                self?.attObserver = nil
-            }
-        }
+        // ATT prompt is no longer fired from the AppDelegate. The JS
+        // onboarding flow (screen 1 → Continue) now calls the
+        // `AppTrackingTransparency` Capacitor plugin to surface the prompt,
+        // then immediately invokes `OndaTenjin.connect()` so the install
+        // postback goes out with IDFA when granted. On 2nd+ cold launches
+        // (after the user already answered ATT once) the React layer also
+        // calls `OndaTenjin.connect()` on mount once it detects the cached
+        // status is determined — so attribution still fires every launch.
 
         // Активируем WCSession рано для получения данных с часов
         if WCSession.isSupported() {
@@ -104,18 +68,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-    }
-
-    /// Calls TenjinSDK.connect() at most once per process lifetime, after the
-    /// ATT prompt has been resolved. This is what actually fires the install
-    /// postback to Tenjin — and through Tenjin to AppLovin / Google Ads /
-    /// Meta. Calling it before ATT resolves means IDFA is unavailable and
-    /// every install ends up Organic.
-    private func connectTenjinOnce() {
-        guard !hasConnectedTenjin else { return }
-        hasConnectedTenjin = true
-        TenjinSDK.connect()
-        print("[ONDA] Tenjin connect() fired post-ATT ✅")
     }
 
     func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {

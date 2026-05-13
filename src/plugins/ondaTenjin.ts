@@ -37,6 +37,12 @@ export interface OndaTenjinTrackTransactionPayload {
 }
 
 export interface OndaTenjinPlugin {
+  /**
+   * Fire TenjinSDK.connect() — the install postback to AppLovin / Google
+   * Ads / Meta. MUST be called AFTER the ATT prompt has resolved (any
+   * outcome). Idempotent: subsequent calls in the same process no-op.
+   */
+  connect(): Promise<{ ok: boolean; alreadyConnected: boolean }>;
   trackEvent(payload: OndaTenjinTrackEventPayload): Promise<{ ok: boolean }>;
   trackTransaction(payload: OndaTenjinTrackTransactionPayload): Promise<{ ok: boolean }>;
 }

@@ -44,6 +44,7 @@
     "@types/node": "^24.10.1",
     "@vitest/ui": "^4.0.9",
     "capacitor-health": "^7.0.0",
+    "capacitor-plugin-app-tracking-transparency": "^3.0.0",
     "clsx": "^2.1.1",
     "fastlane": "^0.0.9",
     "happy-dom": "^20.0.10",

@@ -16,11 +16,11 @@ def capacitor_pods
   pod 'CapacitorCommunityKeepAwake', :path => '../../node_modules/@capacitor-community/keep-awake'
   pod 'CapacitorApp', :path => '../../node_modules/@capacitor/app'
   pod 'CapacitorBrowser', :path => '../../node_modules/@capacitor/browser'
-  pod 'CapacitorHealth', :path => '../../node_modules/capacitor-health'
-  # Native iOS crash reporting — catches WebView OOM-kills that kill the
-  # JS process before window.onerror can fire. Pod is shipped by
-  # @sentry/capacitor (SentryCapacitor.podspec).
+  pod 'CapacitorLocalNotifications', :path => '../../node_modules/@capacitor/local-notifications'
+  pod 'RevenuecatPurchasesCapacitor', :path => '../../node_modules/@revenuecat/purchases-capacitor'
   pod 'SentryCapacitor', :path => '../../node_modules/@sentry/capacitor'
+  pod 'CapacitorHealth', :path => '../../node_modules/capacitor-health'
+  pod 'CapacitorPluginAppTrackingTransparency', :path => '../../node_modules/capacitor-plugin-app-tracking-transparency'
 end
 
 target 'App' do

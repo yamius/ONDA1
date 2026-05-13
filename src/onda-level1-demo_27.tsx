@@ -27,6 +27,8 @@ import { useWatchHeartRate } from './hooks/useWatchHeartRate';
 import { usePermissions } from './hooks/usePermissions';
 import { Capacitor } from '@capacitor/core';
 import { App as CapApp } from '@capacitor/app';
+import { AppTrackingTransparency } from 'capacitor-plugin-app-tracking-transparency';
+import OndaTenjin from './plugins/ondaTenjin';
 import { rhythmStore } from './sleep/rhythm';
 import {
   reconcileStreakNudge,
@@ -90,6 +92,31 @@ const OndaLevel1 = () => {
     track('app_open', { platform });
     // Airbridge App Open (cold start + resume). Safe no-op on web / before SDK attaches.
     initTenjinAppOpenTracking();
+
+    // 2nd+ cold-start Tenjin connect.
+    //
+    // ATT has been moved into the onboarding flow (screen 1 → 2 transition).
+    // On the very first install the onboarding fires both the ATT prompt
+    // AND OndaTenjin.connect() back-to-back. But on every subsequent
+    // launch the onboarding doesn't show — so we'd never call connect()
+    // again. Tenjin needs connect() on each session for it to register
+    // the open and attribute it properly.
+    //
+    // Strategy: read ATT status (no prompt — getStatus only). If it's
+    // 'authorized', 'denied', or 'restricted' (i.e. user has answered
+    // already), fire OndaTenjin.connect() — the plugin is idempotent so
+    // doubled calls within the same process are no-ops. If status is
+    // 'notDetermined', stay silent — the onboarding flow will own it.
+    if (Capacitor.isNativePlatform()) {
+      AppTrackingTransparency.getStatus()
+        .then(({ status }) => {
+          if (status !== 'notDetermined') {
+            return OndaTenjin.connect();
+          }
+          return undefined;
+        })
+        .catch((e) => console.warn('[boot] Tenjin auto-connect skipped', e));
+    }
   }, []);
 
   const prevActivePracticeIdRef = useRef<string | null>(null);
@@ -4194,6 +4221,28 @@ const OndaLevel1 = () => {
 
   if (showOnboarding) {
     const handleOnboardingNext = async () => {
+      if (onboardingScreen === 1) {
+        // Screen 1 → 2 is where ATT lives in the new flow. The native side
+        // (AppDelegate) no longer auto-fires it. We request → wait for any
+        // outcome → fire Tenjin connect() with whatever IDFA state we now
+        // have. Errors are non-fatal: on iOS < 14 or if the plugin fails
+        // for whatever reason, we still call connect() so attribution
+        // doesn't get stuck waiting for an answer that never comes.
+        if (Capacitor.isNativePlatform()) {
+          try {
+            const result = await AppTrackingTransparency.requestPermission();
+            console.log('[onboarding] ATT result:', result.status);
+          } catch (e) {
+            console.warn('[onboarding] ATT prompt error', e);
+          }
+          try {
+            await OndaTenjin.connect();
+          } catch (e) {
+            console.warn('[onboarding] Tenjin connect failed', e);
+          }
+        }
+      }
+
       if (onboardingScreen === 2) {
         // Screen 2 → 3 transition is the moment we ask for the iOS
         // notifications permission. We've spent screen 2's text bridge
