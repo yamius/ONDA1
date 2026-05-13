@@ -155,18 +155,22 @@ const OndaLevel1 = () => {
     }
   }, [watchHeartRate.heartRate]);
   
-  // Auto-open Notification Primer on first cold start. This is the only
-  // permission we proactively ask for at launch — it's the retention
-  // hook (without notifications we can't bring back a user who installed
-  // and forgot). HealthKit/Heart-Rate is left to the orange 'Set Up Now'
-  // banner — users who actually want Watch tracking will tap it.
+  // Auto-open Notification Primer — ONLY for legacy users who completed
+  // an older onboarding that didn't ask for notifications. Fresh installs
+  // go through the new 3-screen intro where screen 2 → Continue triggers
+  // the iOS notifications prompt natively (no extra modal needed).
   //
-  // Timing: opens the moment the iOS ATT sheet (Tenjin) dismisses, so we
-  // never stack two modals. While ATT is up the app is 'inactive'; user
-  // tap returns us to 'active'. A 2.5 s fallback handles 2nd cold starts
-  // where ATT doesn't reappear.
+  // Gating:
+  //   1. Native only (no point on web).
+  //   2. Onboarding ALREADY completed in the past (legacy install).
+  //   3. Primer not shown yet (avoid repeat).
+  //
+  // Without #2 the primer would auto-fire on ATT dismissal during the
+  // very first onboarding session — landing on top of screen 2 or 3 —
+  // which is what regressed in 1.5.0 cold start.
   useEffect(() => {
     if (!Capacitor.isNativePlatform()) return;
+    if (localStorage.getItem('onda_onboarding_completed') !== 'true') return;
     if (localStorage.getItem('onda_notification_primer_shown') === 'true') return;
 
     let opened = false;
