@@ -612,6 +612,8 @@
     "daily_reminder": "Recordatorio diario de práctica",
     "streak_reminder": "Protección de racha",
     "streak_reminder_hint": "Aviso vespertino a las 20:00 si falta la práctica de hoy.",
+    "promotional_reminder": "Notificaciones promocionales",
+    "promotional_reminder_hint": "Noticias, novedades y ofertas especiales de ONDA.",
     "reminders_permission_denied": "Las notificaciones están desactivadas. Actívalas en iOS Settings → Notifications → ONDA.",
     "save": "Guardar",
     "notification_hr_enable": "Activar frecuencia cardíaca por notificaciones",

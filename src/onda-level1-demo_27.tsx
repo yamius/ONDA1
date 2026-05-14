@@ -29,6 +29,14 @@ import { Capacitor } from '@capacitor/core';
 import { App as CapApp } from '@capacitor/app';
 import { AppTrackingTransparency } from 'capacitor-plugin-app-tracking-transparency';
 import OndaTenjin from './plugins/ondaTenjin';
+import {
+  initOneSignal,
+  linkUserToOneSignal,
+  unlinkUser as unlinkOneSignalUser,
+  onPushOpened,
+  setMarketingOptIn,
+  getMarketingOptIn,
+} from './services/pushNotifications';
 import { rhythmStore } from './sleep/rhythm';
 import {
   reconcileStreakNudge,
@@ -116,6 +124,22 @@ const OndaLevel1 = () => {
           return undefined;
         })
         .catch((e) => console.warn('[boot] Tenjin auto-connect skipped', e));
+
+      // OneSignal SDK bootstrap. Safe to call on every cold start —
+      // init is internally idempotent. We init regardless of ATT so the
+      // device gets a subscription_id; what we DON'T do is collect any
+      // analytics until consent (set via setConsentGiven inside the
+      // service).
+      initOneSignal();
+
+      // Wire push-open handler once. Bridge to Tenjin / Sentry breadcrumb
+      // later — for now we just log for visibility.
+      const offPushOpened = onPushOpened((info) => {
+        console.log('[push] notification opened →', info);
+      });
+      return () => {
+        offPushOpened();
+      };
     }
   }, []);
 
@@ -790,12 +814,17 @@ const OndaLevel1 = () => {
           }
         }
         setUser(session.user);
+        // Link the device to this Supabase user inside OneSignal so
+        // server-side pushes can target by user id (not just device).
+        // Cheap and idempotent — safe to call on every auth event.
+        try { linkUserToOneSignal(session.user.id); } catch {}
         loadUserData();
       } else {
         lastAuthFiredForUserRef.current = null;
         setUser(null);
         setUserProfile(null);
         setGameProgress(null);
+        try { unlinkOneSignalUser(); } catch {}
       }
     });
 

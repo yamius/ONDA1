@@ -844,6 +844,8 @@
     "daily_reminder": "Daily practice reminder",
     "streak_reminder": "Streak protection",
     "streak_reminder_hint": "Evening nudge at 20:00 when today's practice is missing.",
+    "promotional_reminder": "Promotional notifications",
+    "promotional_reminder_hint": "News, updates, and special offers from ONDA.",
     "reminders_permission_denied": "Notifications are off. Enable them in iOS Settings → Notifications → ONDA.",
     "customize_profile": "Personalize your profile",
     "your_name": "Your name (shown in leaderboard)",

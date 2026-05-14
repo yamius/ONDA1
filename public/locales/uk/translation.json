@@ -853,6 +853,8 @@
     "daily_reminder": "Щоденне нагадування про практику",
     "streak_reminder": "Захист streak",
     "streak_reminder_hint": "Вечірній nudge о 20:00, якщо практики сьогодні не було.",
+    "promotional_reminder": "Маркетингові сповіщення",
+    "promotional_reminder_hint": "Новини, оновлення та спеціальні пропозиції від ONDA.",
     "reminders_permission_denied": "Сповіщення вимкнено. Увімкни їх у iOS Settings → Notifications → ONDA.",
     "customize_profile": "Персоналізуйте свій профіль",
     "your_name": "Ваше ім'я (відображається в рейтингу)",

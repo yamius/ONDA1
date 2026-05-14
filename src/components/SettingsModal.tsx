@@ -13,6 +13,7 @@ import {
   getStreakEnabled,
   setStreakEnabled as setStreakEnabledSvc,
 } from '../services/notifications';
+import { getMarketingOptIn, setMarketingOptIn } from '../services/pushNotifications';
 
 interface SettingsModalProps {
   onClose: () => void;
@@ -28,6 +29,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
   const [dailyEnabled, setDailyEnabled] = useState<boolean>(() => getDailyEnabled());
   const [dailyTime, setDailyTime] = useState<string>(() => getDailyTime());
   const [streakEnabled, setStreakEnabled] = useState<boolean>(() => getStreakEnabled());
+  const [marketingEnabled, setMarketingEnabled] = useState<boolean>(() => getMarketingOptIn());
   const [permDenied, setPermDenied] = useState(false);
 
   useEffect(() => {
@@ -70,6 +72,24 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
     }
     setStreakEnabled(next);
     await setStreakEnabledSvc(next);
+  };
+
+  // Marketing (OneSignal-side tag). Does NOT request a separate iOS
+  // permission — uses the same base notification permission. The toggle
+  // just flips a server-side tag that the Edge Function checks before
+  // sending anything promotional. Apple compliance: default OFF.
+  const handleMarketingToggle = async (next: boolean) => {
+    if (next) {
+      const perm = await requestPermission();
+      if (perm !== 'granted') {
+        setPermDenied(perm === 'denied');
+        setMarketingEnabled(false);
+        return;
+      }
+      setPermDenied(false);
+    }
+    setMarketingEnabled(next);
+    setMarketingOptIn(next);
   };
 
   // Hide Vitals Diagnostics in production unless debug mode is enabled
@@ -178,6 +198,38 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
                   <span
                     className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
                       streakEnabled ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {/* Promotional / marketing — OneSignal tag. Default OFF (Apple compliance). */}
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex-1 min-w-0">
+                  <div className={`text-sm ${isLightTheme ? 'text-gray-800' : 'text-white/90'}`}>
+                    {t('settings.promotional_reminder', 'Promotional notifications')}
+                  </div>
+                  <div className={`text-xs mt-0.5 ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                    {t('settings.promotional_reminder_hint', 'News, updates, and special offers from ONDA.')}
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  role="switch"
+                  aria-checked={marketingEnabled}
+                  onClick={() => handleMarketingToggle(!marketingEnabled)}
+                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full transition-colors ${
+                    marketingEnabled
+                      ? 'bg-gradient-to-r from-purple-500 to-pink-500'
+                      : isLightTheme
+                        ? 'bg-gray-300'
+                        : 'bg-white/20'
+                  }`}
+                  data-testid="toggle-promotional-reminder"
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                      marketingEnabled ? 'translate-x-6' : 'translate-x-1'
                     }`}
                   />
                 </button>

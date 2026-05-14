@@ -652,6 +652,8 @@
     "daily_reminder": "每日练习提醒",
     "streak_reminder": "连续记录保护",
     "streak_reminder_hint": "若今日尚未练习，将于晚上 20:00 轻轻提醒。",
+    "promotional_reminder": "营销通知",
+    "promotional_reminder_hint": "来自 ONDA 的新闻、更新和特别优惠。",
     "reminders_permission_denied": "通知已关闭。请在 iOS 设置 → 通知 → ONDA 中开启。",
     "title": "设置",
     "language": "语言",
