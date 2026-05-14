@@ -61,6 +61,16 @@
         </array>
         <key>NSUserTrackingUsageDescription</key>
         <string>Helps us understand which campaigns reach people who genuinely need ONDA.</string>
+        <!--
+            ONDA itself does NOT use the device location. This usage string
+            is here only because Apple's static analyzer requires it: the
+            OneSignal SDK we use for push notifications links CoreLocation
+            internally even though we never request authorization or read
+            coordinates. Without this key the App Store upload throws
+            ITMS-90683 'Missing purpose string'.
+        -->
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <string>ONDA does not request your location. This entry is required by Apple because a push-notification SDK links the location framework.</string>
         <key>NSMicrophoneUsageDescription</key>
         <string>ONDA uses the microphone during emotional check-ins to analyze your voice and provide personalized wellness recommendations.</string>
         <key>NSHealthShareUsageDescription</key>
