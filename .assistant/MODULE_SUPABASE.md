@@ -132,6 +132,35 @@ create policy "Users insert own rows" on public.<your_table>
 
 ## Edge Functions
 
+### `send-engagement-push`
+
+Server-driven re-engagement push via OneSignal. Targets users with last
+`app_open` between 7 and 14 days ago (local on-device reminders cover
+0–6 days). Audience query lives in the RPC
+`lapsed_users_for_reengagement` to keep SQL server-side.
+
+**Required secrets** (set via `supabase secrets set`):
+- `ONESIGNAL_APP_ID` — public, same as in `src/services/pushNotifications.ts`
+- `ONESIGNAL_REST_API_KEY` — secret, from OneSignal Dashboard → Settings → Keys & IDs
+
+**Deploy:**
+```bash
+supabase functions deploy send-engagement-push
+supabase secrets set ONESIGNAL_APP_ID=9b019431-372e-4adb-9d85-e1d0f4010433
+supabase secrets set ONESIGNAL_REST_API_KEY=<your-secret-key>
+```
+
+**Schedule (cron daily at 14:00 UTC):**
+Configure via Supabase Dashboard → Edge Functions → `send-engagement-push` → Schedule, cron expression `0 14 * * *`.
+
+Manual smoke test:
+```bash
+curl -X POST https://<project-ref>.functions.supabase.co/send-engagement-push \
+  -H "Authorization: Bearer $SUPABASE_ANON_KEY"
+```
+
+## (legacy) Edge Functions
+
 Расположение: `supabase/functions/`
 
 | Функция | Назначение |
