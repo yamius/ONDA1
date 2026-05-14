@@ -79,8 +79,56 @@ export function initOneSignal(): void {
     initialized = true;
     localStorage.setItem(LS_INITIALIZED, 'true');
     console.log('[push] OneSignal initialized with app id', ONESIGNAL_APP_ID);
+
+    // Best-effort: if the OS already has notifications authorized (because
+    // the user said yes on a previous launch — or just now in onboarding
+    // by the time this re-init runs on a future cold start), tell the
+    // SDK so it registers the subscription. Without this call OneSignal's
+    // dashboard reports 'failed to be subscribed' even though notif
+    // permission is granted.
+    registerOneSignalSubscription();
   } catch (e) {
     console.warn('[push] OneSignal init failed', e);
+  }
+}
+
+/**
+ * Tell the OneSignal SDK to register the device as a push subscriber.
+ *
+ * MUST be called AFTER iOS notification permission is granted (either
+ * via our @capacitor/local-notifications prompt in onboarding screen 2
+ * or via a manual toggle in Settings). On iOS this never re-shows the
+ * system prompt — Apple only displays it once. The call is what flips
+ * the user from 'unsubscribed' to 'subscribed' inside OneSignal so the
+ * dashboard can target them.
+ *
+ * Idempotent: safe to call multiple times. The native plugin guards
+ * against double registration.
+ */
+export function registerOneSignalSubscription(): void {
+  const os = oneSignal();
+  if (!os) return;
+  try {
+    // SDK 5.x: OneSignal.Notifications.requestPermission(fallbackToSettings, callback)
+    if (os.Notifications && typeof os.Notifications.requestPermission === 'function') {
+      os.Notifications.requestPermission(false, (accepted: boolean) => {
+        console.log('[push] OneSignal subscription registered, accepted=', accepted);
+      });
+      return;
+    }
+    // SDK 5.x alt path: explicitly opt-in the push subscription.
+    if (os.User?.pushSubscription && typeof os.User.pushSubscription.optIn === 'function') {
+      os.User.pushSubscription.optIn();
+      console.log('[push] OneSignal pushSubscription.optIn() called');
+      return;
+    }
+    // Legacy v4 fallback — older Cordova plugin builds expose this name.
+    if (typeof os.registerForPushNotifications === 'function') {
+      os.registerForPushNotifications();
+      console.log('[push] OneSignal legacy registerForPushNotifications() called');
+    }
+  } catch (e) {
+    console.warn('[push] registerOneSignalSubscription failed', e);
   }
 }
 

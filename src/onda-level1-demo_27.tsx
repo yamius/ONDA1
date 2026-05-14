@@ -36,6 +36,7 @@ import {
   onPushOpened,
   setMarketingOptIn,
   getMarketingOptIn,
+  registerOneSignalSubscription,
 } from './services/pushNotifications';
 import { rhythmStore } from './sleep/rhythm';
 import {
@@ -4285,6 +4286,15 @@ const OndaLevel1 = () => {
           await requestNotificationPermission();
         } catch (e) {
           console.warn('[onboarding] notifications permission error', e);
+        }
+        // Tell the OneSignal SDK to register the subscription. iOS won't
+        // re-prompt (permission is already decided one way or another),
+        // but without this call OneSignal stays in 'unsubscribed' state
+        // and the dashboard can't target the device.
+        try {
+          registerOneSignalSubscription();
+        } catch (e) {
+          console.warn('[onboarding] OneSignal register failed', e);
         }
         // Snapshot so the standalone NotificationPrimerModal auto-open
         // never fires on top of this — onboarding owns the prompt now.
