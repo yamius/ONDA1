@@ -80,15 +80,41 @@ export function initOneSignal(): void {
     localStorage.setItem(LS_INITIALIZED, 'true');
     console.log('[push] OneSignal initialized with app id', ONESIGNAL_APP_ID);
 
-    // Best-effort: if the OS already has notifications authorized (because
-    // the user said yes on a previous launch — or just now in onboarding
-    // by the time this re-init runs on a future cold start), tell the
-    // SDK so it registers the subscription. Without this call OneSignal's
-    // dashboard reports 'failed to be subscribed' even though notif
-    // permission is granted.
-    registerOneSignalSubscription();
+    // IMPORTANT: do NOT call registerOneSignalSubscription() here.
+    // OneSignal's requestPermission() prompts iOS when status is
+    // notDetermined — on a fresh install that surfaces the system
+    // sheet immediately after launch, before the user can even read
+    // onboarding screen 1. The previous build did exactly that.
+    //
+    // Permission requests live in two places only:
+    //   1. Onboarding screen 2 → 3 transition (fresh install path).
+    //   2. registerIfAlreadyGranted() below, called from the main
+    //      component AFTER it confirms iOS permission is granted
+    //      (2nd+ cold start path).
   } catch (e) {
     console.warn('[push] OneSignal init failed', e);
+  }
+}
+
+/**
+ * Register the OneSignal subscription ONLY if iOS notification permission
+ * is already granted. Safe to call on every cold start — won't prompt the
+ * user, because we gate on the current permission state first.
+ *
+ * Used by the main component's boot useEffect for 2nd+ cold-start paths
+ * where onboarding doesn't run again.
+ */
+export async function registerIfAlreadyGranted(): Promise<void> {
+  if (!Capacitor.isNativePlatform()) return;
+  try {
+    // Dynamic import so we don't ship the plugin to web bundles.
+    const { LocalNotifications } = await import('@capacitor/local-notifications');
+    const { display } = await LocalNotifications.checkPermissions();
+    if (display === 'granted') {
+      registerOneSignalSubscription();
+    }
+  } catch (e) {
+    console.warn('[push] registerIfAlreadyGranted check failed', e);
   }
 }
 

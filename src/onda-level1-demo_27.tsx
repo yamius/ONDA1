@@ -37,6 +37,7 @@ import {
   setMarketingOptIn,
   getMarketingOptIn,
   registerOneSignalSubscription,
+  registerIfAlreadyGranted,
 } from './services/pushNotifications';
 import { rhythmStore } from './sleep/rhythm';
 import {
@@ -132,6 +133,14 @@ const OndaLevel1 = () => {
       // analytics until consent (set via setConsentGiven inside the
       // service).
       initOneSignal();
+
+      // If iOS notification permission is ALREADY granted (2nd+ cold
+      // start, or user toggled it on in Settings between sessions),
+      // sync OneSignal's subscription state. This will not prompt —
+      // it's gated on `display === 'granted'` inside the helper. On a
+      // fresh install where permission is still 'notDetermined', this
+      // no-ops and the onboarding flow owns the prompt instead.
+      registerIfAlreadyGranted();
 
       // Wire push-open handler once. Bridge to Tenjin / Sentry breadcrumb
       // later — for now we just log for visibility.
