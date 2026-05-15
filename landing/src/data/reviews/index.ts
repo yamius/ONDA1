@@ -23,12 +23,16 @@ export type {
 export { CRITERIA, getCriteria, getCriterion } from './criteria'
 
 import type { ToolReview, Comparison } from './types'
+import ouraRing4 from './oura-ring-4'
+import whoop5 from './whoop-5-0'
+import appleWatchSeries11 from './apple-watch-series-11'
+import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 
 /** All published product reviews. */
-export const reviews: ToolReview[] = []
+export const reviews: ToolReview[] = [ouraRing4, whoop5, appleWatchSeries11]
 
 /** All published comparison / round-up pages. */
-export const comparisons: Comparison[] = []
+export const comparisons: Comparison[] = [bestHrvTrackers2026]
 
 export function getReviewBySlug(slug: string): ToolReview | undefined {
   return reviews.find((r) => r.slug === slug)
