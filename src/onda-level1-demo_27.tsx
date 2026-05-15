@@ -328,6 +328,23 @@ const OndaLevel1 = () => {
   const [emotionalCheckUsed, setEmotionalCheckUsed] = useState<boolean>(
     () => typeof localStorage !== 'undefined' && localStorage.getItem('onda_emotional_check_used') === 'true',
   );
+  // Free practices the user has already tapped Start on — drives the
+  // one-time FREE badge. Persisted; the badge disappears the moment the
+  // practice is opened, not when it's finished.
+  const [tappedFreePractices, setTappedFreePractices] = useState<Set<string>>(() => {
+    try {
+      return new Set<string>(JSON.parse(localStorage.getItem('onda_tapped_free_practices') || '[]'));
+    } catch {
+      return new Set<string>();
+    }
+  });
+  const markFreePracticeTapped = (id: string) => {
+    if (!FREE_PRACTICE_IDS.has(id) || tappedFreePractices.has(id)) return;
+    const next = new Set(tappedFreePractices);
+    next.add(id);
+    setTappedFreePractices(next);
+    localStorage.setItem('onda_tapped_free_practices', JSON.stringify([...next]));
+  };
   const [isRecording, setIsRecording] = useState(false);
   const [recordingMode, setRecordingMode] = useState('voice');
   const [audioLevel, setAudioLevel] = useState(0);
@@ -5398,7 +5415,7 @@ const OndaLevel1 = () => {
           >
             {t('nav.emotional_check')}
             {!emotionalCheckUsed && (
-              <span className="absolute right-4 top-1/2 -translate-y-1/2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
+              <span className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
                 {t('labels.free')}
               </span>
             )}
@@ -6093,7 +6110,10 @@ const OndaLevel1 = () => {
                     )}
                   </div>
                   <button
-                    onClick={() => completePractice(practice.id, practice.maxQnt)}
+                    onClick={() => {
+                      markFreePracticeTapped(practice.id);
+                      completePractice(practice.id, practice.maxQnt);
+                    }}
                     className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
                       activeCircuit === 2
                         ? isCompleted
@@ -6121,7 +6141,7 @@ const OndaLevel1 = () => {
                     }`}
                   >
                     {isCompleted ? t('practices.improve') : t('practices.start')}
-                    {FREE_PRACTICE_IDS.has(practice.id) && !isCompleted && (
+                    {FREE_PRACTICE_IDS.has(practice.id) && !tappedFreePractices.has(practice.id) && (
                       <span className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
                         {t('labels.free')}
                       </span>
