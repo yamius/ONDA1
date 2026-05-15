@@ -59,3 +59,6 @@ landing/.cache/
 # Replit deploy runs the same script, so these don't need to ship in git.
 landing/public/**/*.avif
 landing/public/**/*-640w.webp
+
+# Supabase CLI local cache — regenerated on every CLI run, never commit
+supabase/.temp/
