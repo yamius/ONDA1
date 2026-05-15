@@ -834,7 +834,8 @@
     "track_label": "Трек",
     "of_label": "из",
     "stress": "Уровень Стресса",
-    "energy": "Уровень Энергии"
+    "energy": "Уровень Энергии",
+    "free": "Бесплатно"
   },
   "settings": {
     "contact_developers": "Написать разработчикам",

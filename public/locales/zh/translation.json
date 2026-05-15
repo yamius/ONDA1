@@ -785,7 +785,8 @@
     "track_label": "追踪",
     "of_label": "/",
     "stress": "压力水平",
-    "energy": "能量水平"
+    "energy": "能量水平",
+    "free": "免费"
   },
   "progress": {
     "level_progress": "部分进度",

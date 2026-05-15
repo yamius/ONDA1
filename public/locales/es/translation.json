@@ -726,7 +726,8 @@
     "track_label": "Pista",
     "of_label": "de",
     "stress": "Nivel de estrés",
-    "energy": "Nivel de energía"
+    "energy": "Nivel de energía",
+    "free": "Gratis"
   },
   "progress": {
     "level_progress": "Progreso de la parte",

@@ -834,7 +834,8 @@
     "track_label": "Track",
     "of_label": "of",
     "stress": "Stress Level",
-    "energy": "Energy Level"
+    "energy": "Energy Level",
+    "free": "Free"
   },
   "settings": {
     "contact_developers": "Write to developers",

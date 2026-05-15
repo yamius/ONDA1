@@ -5372,7 +5372,7 @@ const OndaLevel1 = () => {
           {/* Эмоциональная сверка */}
           <button
             onClick={() => setShowEmotionalCheck(true)}
-            className={`backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
+            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
               activeCircuit === 2
                 ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                 : activeCircuit === 3
@@ -5385,6 +5385,9 @@ const OndaLevel1 = () => {
             }`}
           >
             {t('nav.emotional_check')}
+            <span className="absolute bottom-1.5 right-3 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] font-semibold uppercase tracking-wide">
+              {t('labels.free')}
+            </span>
           </button>
         </div>
 
@@ -5950,7 +5953,7 @@ const OndaLevel1 = () => {
               <div
                 key={practice.id}
                 ref={el => practiceRefs.current[practice.id] = el}
-                className={`bg-black/40 backdrop-blur-sm rounded-lg p-6 border transition-all ${
+                className={`relative bg-black/40 backdrop-blur-sm rounded-lg p-6 border transition-all ${
                   isCompleted
                     ? 'border-emerald-500/50 bg-emerald-500/10'
                     : activeCircuit === 2
@@ -5978,6 +5981,11 @@ const OndaLevel1 = () => {
                     : 'border-purple-500/30 hover:border-purple-400/50'
                 }`}
               >
+                {FREE_PRACTICE_IDS.has(practice.id) && (
+                  <span className="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] font-semibold uppercase tracking-wide">
+                    {t('labels.free')}
+                  </span>
+                )}
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold mb-1">{getPracticeName(practice.id)}</h3>

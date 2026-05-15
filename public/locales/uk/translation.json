@@ -843,7 +843,8 @@
     "track_label": "Трек",
     "of_label": "з",
     "stress": "Рівень стресу",
-    "energy": "Рівень енергії"
+    "energy": "Рівень енергії",
+    "free": "Безкоштовно"
   },
   "settings": {
     "contact_developers": "Написати розробникам",
