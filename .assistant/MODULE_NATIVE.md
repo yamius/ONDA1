@@ -81,6 +81,34 @@ Tenjin SDK линкует IDFA/ATT-фреймворки на уровне под
 **Вывод:** пока Tenjin в стеке — ATT-prompt обязателен. Выбор бинарный:
 либо Tenjin + ATT, либо ни того ни другого.
 
+### Revenue → Tenjin (через RevenueCat, не client-side)
+
+Выручка в Tenjin идёт **серверно**, через интеграцию RevenueCat → Tenjin
+(настраивается в дашборде RevenueCat → Integrations → Tenjin).
+
+Почему не client-side:
+- Подписки ONDA с триалом (14 дней годовая / 7 дней месячная). На старте
+  триала денег $0 — реальный платёж через 7-14 дней (или никогда, если
+  отменили). Client-side событие видит только старт триала и зарепортило
+  бы полную цену в день 0 — неверно.
+- Server-side RevenueCat шлёт revenue в правильные моменты жизненного
+  цикла: trial→paid conversion, renewal, refund.
+- `src/lib/tenjin.ts` → `trackTenjinSubscribe()` больше **НЕ** шлёт
+  Tenjin-транзакцию (убрано, чтобы не дублировать). Шлёт только Firebase
+  mirror для Google Ads. `OndaTenjin.trackEvent` (не-revenue события) —
+  работает как раньше.
+
+### Subscription lifecycle → app_events
+
+`supabase/functions/revenuecat-webhook` ловит вебхуки RevenueCat и:
+1. Пишет каждое lifecycle-событие в `app_events` (`subscription_started`,
+   `subscription_renewed`, `subscription_cancelled`, `subscription_expired`,
+   `subscription_billing_issue` и т.д.) — для воронок и churn-аналитики.
+   Логируются и анонимные покупатели (через `anonymous_id`).
+2. Обновляет таблицу `user_subscriptions` (текущее состояние) — только
+   для идентифицированных юзеров (FK на `auth.users`).
+SANDBOX-события в `app_events` не пишутся.
+
 ---
 
 ## Android (WebView)

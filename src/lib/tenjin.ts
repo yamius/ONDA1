@@ -43,17 +43,14 @@ function _tenjinEvent(name: string, value?: number): void {
   );
 }
 
-function _tenjinTransaction(params: {
-  productName: string;
-  currencyCode: string;
-  quantity: number;
-  unitPrice: number;
-}): void {
-  if (!_useNativeTenjin) return;
-  OndaTenjin.trackTransaction(params).catch((e) =>
-    console.warn('[OndaTenjin] trackTransaction failed:', params.productName, e),
-  );
-}
+// NOTE: client-side Tenjin transaction reporting was removed. Revenue now
+// flows to Tenjin via the server-side RevenueCat → Tenjin integration
+// (configured in the RevenueCat dashboard). The server integration fires
+// revenue at the correct subscription lifecycle moments — trial→paid
+// conversion, renewal, refund — whereas the client could only ever see
+// the initial trial start and would report the full price on day 0,
+// before any money actually changed hands. Keeping both would also
+// double-count. OndaTenjin.trackEvent (non-revenue events) is unaffected.
 
 // ─── Firebase mirror (unchanged from airbridge.ts era) ──────────────────────
 
@@ -267,12 +264,10 @@ export function trackTenjinSubscribe(params: {
   plan?: string;
 }): void {
   try {
-    _tenjinTransaction({
-      productName: params.productId ?? params.plan ?? 'subscription',
-      currencyCode: params.currency ?? 'USD',
-      quantity: 1,
-      unitPrice: params.value,
-    });
+    // Tenjin revenue is handled server-side via the RevenueCat → Tenjin
+    // integration (see note above). Here we only mirror to Firebase /
+    // GA4 — that pipeline drives Google Ads conversion optimization and
+    // is independent of the MMP.
     _logFirebase('purchase', {
       value: params.value,
       currency: params.currency ?? 'USD',

@@ -115,11 +115,58 @@ serve(async (req) => {
 
     // The app_user_id should be the Supabase user ID (we set this in RevenueCatService.login)
     const userId = event.app_user_id;
+    const isAnonymous = userId.startsWith('$RCAnonymousID:');
 
-    // Skip anonymous users (start with $RCAnonymousID:)
-    if (userId.startsWith('$RCAnonymousID:')) {
-      console.log('[RevenueCat Webhook] Skipping anonymous user');
-      return new Response(JSON.stringify({ success: true, message: 'Skipped anonymous user' }), {
+    // ── Analytics trail ──────────────────────────────────────────────
+    // Log every subscription lifecycle event into app_events so churn /
+    // cancellation / renewal can be counted in funnels. user_subscriptions
+    // only holds the CURRENT state — it can't answer "how many cancelled
+    // last week". Logged for anonymous purchasers too (via anonymous_id),
+    // since post-auth-wall-removal most buyers start anonymous.
+    const eventNameMap: Record<string, string> = {
+      INITIAL_PURCHASE: 'subscription_started',
+      RENEWAL: 'subscription_renewed',
+      CANCELLATION: 'subscription_cancelled',
+      UNCANCELLATION: 'subscription_uncancelled',
+      EXPIRATION: 'subscription_expired',
+      BILLING_ISSUE: 'subscription_billing_issue',
+      PRODUCT_CHANGE: 'subscription_product_change',
+      NON_RENEWING_PURCHASE: 'subscription_started',
+      SUBSCRIPTION_PAUSED: 'subscription_paused',
+    };
+    const analyticsEventName = eventNameMap[event.type];
+    if (analyticsEventName && event.environment !== 'SANDBOX') {
+      try {
+        await supabase.from('app_events').insert({
+          user_id: isAnonymous ? null : userId,
+          anonymous_id: isAnonymous ? userId : null,
+          event_name: analyticsEventName,
+          platform: event.store === 'PLAY_STORE' ? 'android' : 'ios',
+          metadata: {
+            rc_event_type: event.type,
+            product_id: event.product_id,
+            is_trial: event.period_type === 'TRIAL',
+            is_trial_conversion: event.is_trial_conversion ?? false,
+            cancel_reason: event.cancel_reason ?? null,
+            expires_at: event.expiration_at_ms
+              ? new Date(event.expiration_at_ms).toISOString()
+              : null,
+            store: event.store,
+          },
+        });
+      } catch (logErr) {
+        // Non-fatal — analytics logging must never break the webhook's
+        // primary job (keeping user_subscriptions in sync).
+        console.warn('[RevenueCat Webhook] app_events log failed:', logErr);
+      }
+    }
+
+    // Anonymous users can't be written to user_subscriptions (its user_id
+    // is a FK to auth.users). The analytics event above is already logged,
+    // so we stop here.
+    if (isAnonymous) {
+      console.log('[RevenueCat Webhook] Anonymous user — event logged, skipping user_subscriptions upsert');
+      return new Response(JSON.stringify({ success: true, message: 'Anonymous user — event logged' }), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       });
     }
