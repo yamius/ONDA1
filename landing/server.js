@@ -219,80 +219,22 @@ app.post('/api/save-article', (req, res) => {
   }
 })
 
-// Dynamic sitemap: static routes from dist/ + Telegram articles from articles/
+// sitemap.xml — served from the build artifact (scripts/sitemap.ts), which
+// emits hreflang <xhtml:link> alternates + <image:image> blocks and derives
+// <lastmod> from real article dates. An explicit route (rather than letting
+// express.static serve it) keeps a short, crawl-friendly Cache-Control —
+// express.static would otherwise stamp it 1-year immutable.
 app.get('/sitemap.xml', (req, res) => {
-  try {
-    const routes = []
-
-    // 1. Scan dist/ for prerendered index.html
-    if (existsSync(distDir)) {
-      try {
-        const entries = readdirSync(distDir, { recursive: true })
-        for (const rel of entries) {
-          if (typeof rel === 'string' && rel.endsWith('index.html')) {
-            const path = rel === 'index.html' ? '/' : '/' + rel.replace(/\/index\.html$/, '').replace(/\\/g, '/')
-            routes.push({ path, filePath: join(distDir, rel) })
-          }
-        }
-      } catch (_) { /* ignore */ }
-    }
-
-    // 2. Add md (Telegram) articles — same path as static articles
-    const mdArticles = loadMdArticles()
-    for (const a of mdArticles) {
-      routes.push({
-        path: `/articles/${a.slug}`,
-        filePath: join(articlesDir, a.filename),
-      })
-    }
-
-    const buildDate = new Date().toISOString().split('T')[0]
-    function buildLoc(path) {
-      const base = SITE_URL.replace(/\/+$/, '')
-      const cleanPath = (path || '/').replace(/\/+$/, '') || '/'
-      return cleanPath === '/' ? base : `${base}${cleanPath}`
-    }
-    function getPriority(path) {
-      if (path === '/') return '1.0'
-      if (path === '/glossary') return '0.9'
-      if (path === '/articles') return '0.9'
-      if (path.startsWith('/level/')) return '0.8'
-      if (path.startsWith('/glossary/')) return '0.7'
-      if (path.startsWith('/articles/')) return '0.8'
-      return '0.8'
-    }
-    function getLastmod(filePath) {
-      try {
-        if (existsSync(filePath)) return statSync(filePath).mtime.toISOString().split('T')[0]
-      } catch (_) {}
-      return buildDate
-    }
-
-    const urls = routes.map(({ path, filePath }) => {
-      const loc = buildLoc(path)
-      const lastmod = getLastmod(filePath)
-      const priority = getPriority(path)
-      const changefreq = path === '/' ? 'weekly' : 'monthly'
-      return `  <url>
-    <loc>${loc}</loc>
-    <lastmod>${lastmod}</lastmod>
-    <changefreq>${changefreq}</changefreq>
-    <priority>${priority}</priority>
-  </url>`
-    })
-
-    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.join('\n')}
-</urlset>`
-
-    res.setHeader('Content-Type', 'application/xml')
-    res.setHeader('Cache-Control', 'public, max-age=300')
-    res.send(sitemap)
-  } catch (err) {
-    console.error('[sitemap]', err.message, err.stack)
-    res.status(500).send('<?xml version="1.0"?><error>Sitemap temporarily unavailable</error>')
+  const sitemapPath = join(distDir, 'sitemap.xml')
+  if (!existsSync(sitemapPath)) {
+    return res
+      .status(404)
+      .type('application/xml')
+      .send('<?xml version="1.0"?><error>Sitemap not built yet</error>')
   }
+  res.setHeader('Content-Type', 'application/xml')
+  res.setHeader('Cache-Control', 'public, max-age=3600')
+  res.sendFile(resolve(sitemapPath))
 })
 
 // API: raw list of all .md files (for debugging duplicates)

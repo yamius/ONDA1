@@ -3,9 +3,9 @@
  * Run after: npm run build (prerender calls this at the end)
  *
  * Priority: Main 1.0, /glossary (hub) 0.9, /level/ 0.8, /glossary/:slug 0.7
- * Lastmod: file mtime when available, else build date
+ * Lastmod: real git-history date for article/glossary pages; omitted otherwise
  */
-import { writeFileSync, mkdirSync, statSync, existsSync } from 'fs'
+import { writeFileSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs, INDEXED_TOPIC_SLUGS } from './prerender-routes'
@@ -13,6 +13,7 @@ import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, leve
 import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
 import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
 import { getArticleBySlug } from '../src/data/articles'
+import { ARTICLE_DATES } from '../src/data/article-dates.generated'
 import { readFileSync } from 'fs'
 
 /** Minimal XML attribute/text escaper. Order matters: ampersand first. */
@@ -63,7 +64,6 @@ function glossarySlugFromRoute(route: string): string | null {
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
 const SITE_URL = 'https://onda-life.com'
-const buildDate = new Date().toISOString().split('T')[0]
 
 /** Build canonical URL without trailing slash. Ensures https only. */
 function buildLoc(path: string): string {
@@ -99,20 +99,26 @@ function getChangefreq(route: string): string {
   return 'monthly'
 }
 
-function getLastmod(route: string): string {
-  const filePath =
-    route === '/'
-      ? join(distDir, 'index.html')
-      : join(distDir, route.slice(1), 'index.html')
-  try {
-    if (existsSync(filePath)) {
-      const mtime = statSync(filePath).mtime
-      return mtime.toISOString().split('T')[0]
-    }
-  } catch {
-    /* ignore */
+/**
+ * Real content-modification date for a route as YYYY-MM-DD, or null.
+ *
+ * Only article and glossary pages carry a tracked modification date
+ * (ARTICLE_DATES, derived from git history). Every other route returns
+ * null so <lastmod> is omitted: stamping the build date on 500+ URLs
+ * each deploy reads as a mass content refresh — a known search-spam
+ * signal — whereas a missing <lastmod> is spec-valid and honest.
+ */
+function getLastmod(route: string): string | null {
+  const slug = route.match(/^(?:\/(?:es|ru|uk|zh))?\/articles\/([^/]+)$/)?.[1]
+  if (slug) {
+    const d = ARTICLE_DATES[slug]
+    return d ? (d.modified || d.published).slice(0, 10) : null
   }
-  return buildDate
+  if (/^(?:\/(?:es|ru|uk|zh))?\/glossary\/[^/]+$/.test(route)) {
+    const d = ARTICLE_DATES['__glossary']
+    return d ? (d.modified || d.published).slice(0, 10) : null
+  }
+  return null
 }
 
 // Per-language part translations table. Used to:
@@ -236,9 +242,9 @@ const urls = routes.map((path) => {
     // EN /articles/<slug> for a slug that has a localised sibling.
     alternates = `\n${altsByArticle[articleSlug]}`
   }
+  const lastmodTag = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''
   return `  <url>
-    <loc>${loc}</loc>
-    <lastmod>${lastmod}</lastmod>
+    <loc>${loc}</loc>${lastmodTag}
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>${alternates}${images}
   </url>`
