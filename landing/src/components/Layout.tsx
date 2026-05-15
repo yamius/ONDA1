@@ -261,8 +261,8 @@ export function Layout() {
               &copy; {new Date().getFullYear()} ONDA Life
             </p>
           </div>
-          <div className="mt-8 grid grid-cols-3 items-center">
-            <div />
+          <div className="mt-8 flex flex-col items-center gap-2 md:grid md:grid-cols-3 md:items-center md:gap-0">
+            <div className="hidden md:block" />
             <div className="flex justify-center">
               <Link
                 to={currentLang === 'en' ? '/sitemap' : `/${currentLang}/sitemap`}
@@ -271,7 +271,7 @@ export function Layout() {
                 {t('footer.sitemap')}
               </Link>
             </div>
-            <div className="flex justify-end items-center gap-4">
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 md:justify-end">
               <Link
                 to={currentLang === 'en' ? '/privacy' : `/${currentLang}/privacy`}
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
