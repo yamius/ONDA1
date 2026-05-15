@@ -41,8 +41,19 @@ import healthyMindsProgram from './healthy-minds-program'
 import smilingMind from './smiling-mind'
 import happierMeditation from './happier-meditation'
 import medito from './medito'
+import sleepCycle from './sleep-cycle'
+import sleepio from './sleepio'
+import sleepscore from './sleepscore'
+import sleepAsAndroid from './sleep-as-android'
+import bettersleep from './bettersleep'
+import pillow from './pillow'
+import rise from './rise'
+import pzizz from './pzizz'
+import autosleep from './autosleep'
+import endel from './endel'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
+import bestSleepApps2026 from './best-sleep-apps-2026'
 
 /** All published product reviews. Ordered best-scored first for the hub grid. */
 export const reviews: ToolReview[] = [
@@ -64,10 +75,20 @@ export const reviews: ToolReview[] = [
   wakingUp,
   happierMeditation,
   medito,
+  sleepio,
+  sleepCycle,
+  sleepscore,
+  sleepAsAndroid,
+  bettersleep,
+  pillow,
+  rise,
+  pzizz,
+  autosleep,
+  endel,
 ]
 
 /** All published comparison / round-up pages. */
-export const comparisons: Comparison[] = [bestHrvTrackers2026, bestMeditationApps2026]
+export const comparisons: Comparison[] = [bestHrvTrackers2026, bestMeditationApps2026, bestSleepApps2026]
 
 export function getReviewBySlug(slug: string): ToolReview | undefined {
   return reviews.find((r) => r.slug === slug)

@@ -115,20 +115,77 @@ const MEDITATION_APP_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Sleep apps: trackers and wind-down tools. Tracking accuracy and
+ *  wind-down content carry the most weight — a sleep app is judged on
+ *  whether it measures sleep, helps you get it, or both. */
+const SLEEP_APP_CRITERIA: Criterion[] = [
+  {
+    id: 'tracking-accuracy',
+    label: 'Sleep tracking accuracy',
+    weight: 0.2,
+    description:
+      'How accurately the app measures sleep — timing, stages and disturbances — by accelerometer, microphone, sonar or a paired wearable.',
+  },
+  {
+    id: 'wind-down-content',
+    label: 'Wind-down content',
+    weight: 0.2,
+    description:
+      'Breadth and quality of content for falling asleep — soundscapes, sleep stories, guided audio and white noise.',
+  },
+  {
+    id: 'sleep-science',
+    label: 'Sleep science',
+    weight: 0.15,
+    description:
+      'Grounding in real sleep science — circadian methods, CBT-I, smart-wake timing — rather than vague relaxation claims.',
+  },
+  {
+    id: 'insights',
+    label: 'Insights and guidance',
+    weight: 0.15,
+    description:
+      'Quality of the analysis the app gives back — trends, explanations and actionable recommendations, not just a score.',
+  },
+  {
+    id: 'app-experience',
+    label: 'App experience',
+    weight: 0.1,
+    description:
+      'Clarity and friction of the app — interface, navigation and how easily it fits a nightly routine.',
+  },
+  {
+    id: 'free-tier',
+    label: 'Free tier',
+    weight: 0.1,
+    description:
+      'How much is genuinely usable without paying — a working free tier versus a locked sample.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.1,
+    description:
+      'Price — one-time or subscription — weighed against what the app delivers.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
   'meditation-app': MEDITATION_APP_CRITERIA,
+  'sleep-app': SLEEP_APP_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
 export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   'hrv-wearable': 'HRV trackers',
   'meditation-app': 'Meditation apps',
+  'sleep-app': 'Sleep apps',
 }
 
 /** Review categories in display order. */
-export const REVIEW_CATEGORIES: ReviewCategory[] = ['hrv-wearable', 'meditation-app']
+export const REVIEW_CATEGORIES: ReviewCategory[] = ['hrv-wearable', 'meditation-app', 'sleep-app']
 
 /** All scoring criteria for a category, in display order. */
 export function getCriteria(category: ReviewCategory): Criterion[] {
