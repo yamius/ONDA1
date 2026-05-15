@@ -4,9 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { useSubscription } from '../hooks/useSubscription';
 import { useAnalytics } from '../hooks/useAnalytics';
-import { supabase } from '../lib/supabase';
 import { LegalModal } from './LegalModal';
-import { AuthModal } from './AuthModal';
 import {
   trackTenjinPaywallView,
   trackTenjinPaywallClick,
@@ -61,7 +59,6 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
   const [selectedPlan, setSelectedPlan] = useState<'yearly' | 'monthly'>('yearly');
   const [legalModal, setLegalModal] = useState<'terms' | 'privacy' | null>(null);
   const [purchaseError, setPurchaseError] = useState<string | null>(null);
-  const [showAuthModal, setShowAuthModal] = useState(false);
 
   const isIOS = useMemo(() => Capacitor.getPlatform() === 'ios', []);
 
@@ -126,31 +123,20 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     };
   }, [isOpen, isPremium, source]);
 
-  useEffect(() => {
-    if (!isOpen) return;
-    if (!showAuthModal) return;
-
-    const { data } = supabase.auth.onAuthStateChange((event) => {
-      if (event === 'SIGNED_IN') {
-        setShowAuthModal(false);
-      }
-    });
-
-    return () => data.subscription.unsubscribe();
-  }, [isOpen, showAuthModal]);
-
   const handlePurchase = async () => {
     setPurchaseError(null);
     // Airbridge: fire on every tap of the purchase CTA, before any gating
-    // (auth / product availability). The label is the subscription type.
+    // (product availability). The label is the subscription type.
     trackTenjinPaywallClick(selectedPlan);
 
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) {
-      track('paywall_auth_required', { plan: selectedPlan });
-      setShowAuthModal(true);
-      return;
-    }
+    // No account required to purchase. RevenueCat is configured in
+    // anonymous mode, so purchasePackage() ties the entitlement to the
+    // current $RCAnonymousID + the Apple ID receipt. If the user signs
+    // up later, useSubscription's SIGNED_IN handler calls
+    // revenueCatService.login(), which aliases the anonymous ID to the
+    // Supabase user — the subscription transfers automatically. Forcing
+    // sign-up before purchase was killing conversion (analytics: ~12 of
+    // 18 paywall-CTA taps lost at the auth wall).
 
     const pkg = selectedPlan === 'yearly' ? yearlyPackage : monthlyPackage;
     if (!pkg) {
@@ -454,12 +440,6 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
         />
       )}
 
-      {showAuthModal && (
-        <AuthModal
-          onClose={() => setShowAuthModal(false)}
-          isLightTheme={false}
-        />
-      )}
     </div>
   );
 }
