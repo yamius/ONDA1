@@ -26,10 +26,20 @@ import type { ToolReview, Comparison } from './types'
 import ouraRing4 from './oura-ring-4'
 import whoop5 from './whoop-5-0'
 import appleWatchSeries11 from './apple-watch-series-11'
+import polarH10 from './polar-h10'
+import garminVenu4 from './garmin-venu-4'
+import samsungGalaxyRing from './samsung-galaxy-ring'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 
-/** All published product reviews. */
-export const reviews: ToolReview[] = [ouraRing4, whoop5, appleWatchSeries11]
+/** All published product reviews. Ordered best-scored first for the hub grid. */
+export const reviews: ToolReview[] = [
+  ouraRing4,
+  whoop5,
+  polarH10,
+  garminVenu4,
+  samsungGalaxyRing,
+  appleWatchSeries11,
+]
 
 /** All published comparison / round-up pages. */
 export const comparisons: Comparison[] = [bestHrvTrackers2026]
