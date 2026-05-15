@@ -8,11 +8,9 @@
  * from the scores it explains.
  */
 import { Link } from 'react-router-dom'
-import { getCriteria } from '../data/reviews'
+import { REVIEW_CATEGORIES, CATEGORY_LABELS, getCriteria } from '../data/reviews'
 
 export function ReviewMethodologyPage() {
-  const criteria = getCriteria('hrv-wearable')
-
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16 pt-6 md:px-6">
       <nav
@@ -46,24 +44,28 @@ export function ReviewMethodologyPage() {
         rating, not an aggregate of many.
       </p>
 
-      <h2 className="mb-4 text-xl font-bold tracking-tight">
-        Scoring criteria — HRV wearables
-      </h2>
-      <div className="mb-10 divide-y divide-white/5 border-y border-white/5">
-        {criteria.map((c) => (
-          <div key={c.id} className="py-4">
-            <div className="mb-1 flex items-baseline justify-between gap-4">
-              <h3 className="font-semibold">{c.label}</h3>
-              <span className="shrink-0 font-mono text-xs font-bold text-terminal-green">
-                {Math.round(c.weight * 100)}%
-              </span>
-            </div>
-            <p className="font-mono text-xs leading-relaxed text-white/50">
-              {c.description}
-            </p>
+      {REVIEW_CATEGORIES.map((cat) => (
+        <div key={cat}>
+          <h2 className="mb-4 text-xl font-bold tracking-tight">
+            Scoring criteria — {CATEGORY_LABELS[cat]}
+          </h2>
+          <div className="mb-10 divide-y divide-white/5 border-y border-white/5">
+            {getCriteria(cat).map((c) => (
+              <div key={c.id} className="py-4">
+                <div className="mb-1 flex items-baseline justify-between gap-4">
+                  <h3 className="font-semibold">{c.label}</h3>
+                  <span className="shrink-0 font-mono text-xs font-bold text-terminal-green">
+                    {Math.round(c.weight * 100)}%
+                  </span>
+                </div>
+                <p className="font-mono text-xs leading-relaxed text-white/50">
+                  {c.description}
+                </p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
 
       <h2 className="mb-3 text-xl font-bold tracking-tight">
         Hands-on tested vs evidence-based

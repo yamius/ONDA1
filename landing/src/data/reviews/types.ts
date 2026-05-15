@@ -13,7 +13,7 @@
 
 /** Niche a review belongs to. Kept narrow on purpose — extend only when a
  *  category gains its own criteria set in criteria.ts. */
-export type ReviewCategory = 'hrv-wearable'
+export type ReviewCategory = 'hrv-wearable' | 'meditation-app'
 
 /** How a verdict link is treated. 'affiliate' flips rel="sponsored nofollow"
  *  plus a visible disclosure badge in the UI. v1 ships everything 'official'. */

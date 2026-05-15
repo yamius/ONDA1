@@ -61,10 +61,74 @@ const HRV_WEARABLE_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Meditation and mindfulness apps. Library breadth and teaching quality
+ *  carry the most weight — they are what a daily practice is built on. */
+const MEDITATION_APP_CRITERIA: Criterion[] = [
+  {
+    id: 'content-library',
+    label: 'Content library',
+    weight: 0.25,
+    description:
+      'Breadth, depth and quality of the guided library — meditations, courses and series across topics and levels.',
+  },
+  {
+    id: 'teaching',
+    label: 'Teaching quality',
+    weight: 0.2,
+    description:
+      'Calibre of the instructors and the teaching itself — how clearly and credibly practice is taught, from beginner to advanced.',
+  },
+  {
+    id: 'personalization',
+    label: 'Personalisation',
+    weight: 0.15,
+    description:
+      'How well the app adapts to you — structured courses, progress tracking, recommendations and daily guidance.',
+  },
+  {
+    id: 'app-experience',
+    label: 'App experience',
+    weight: 0.15,
+    description:
+      'Clarity and friction of the app itself — interface, navigation and how easily a session starts.',
+  },
+  {
+    id: 'free-tier',
+    label: 'Free tier',
+    weight: 0.1,
+    description:
+      'How much genuine practice is possible without paying — a usable free tier versus a locked product tour.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.1,
+    description:
+      'Subscription price weighed against what the library and the teaching deliver.',
+  },
+  {
+    id: 'evidence',
+    label: 'Evidence base',
+    weight: 0.05,
+    description:
+      'How far the app is grounded in research and credible teaching lineages rather than vague wellness claims.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
+  'meditation-app': MEDITATION_APP_CRITERIA,
 }
+
+/** Human-readable category labels for the hub and the methodology page. */
+export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
+  'hrv-wearable': 'HRV trackers',
+  'meditation-app': 'Meditation apps',
+}
+
+/** Review categories in display order. */
+export const REVIEW_CATEGORIES: ReviewCategory[] = ['hrv-wearable', 'meditation-app']
 
 /** All scoring criteria for a category, in display order. */
 export function getCriteria(category: ReviewCategory): Criterion[] {
