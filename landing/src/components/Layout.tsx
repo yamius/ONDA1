@@ -151,6 +151,15 @@ export function Layout() {
           >
             {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
           </TransitionLink>
+          <TransitionLink
+            to="/reviews"
+            onClick={() => setMenuOpen(false)}
+            className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
+              location.pathname.startsWith('/reviews') ? 'text-cyan-400' : 'text-white/70'
+            }`}
+          >
+            {t('menu.reviews')}<span className="sr-only">{t('menu.reviewsSr')}</span>
+          </TransitionLink>
           <a
             href={`${homePathFor(currentLang)}#download`.replace('//', '/')}
             onClick={() => setMenuOpen(false)}
@@ -249,6 +258,9 @@ export function Layout() {
               </Link>
               <Link to={currentLang === 'en' ? '/articles' : `/${currentLang}/articles`} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
+              </Link>
+              <Link to="/reviews" className="text-xs text-white/40 transition-colors hover:text-white/60">
+                {t('menu.reviews')}<span className="sr-only">{t('menu.reviewsSr')}</span>
               </Link>
               <Link to={localizedPathFor('/bio', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.bio')}<span className="sr-only">{t('menu.bioSr')}</span>
