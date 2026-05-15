@@ -322,6 +322,12 @@ const OndaLevel1 = () => {
   const [unlockedAchievements, setUnlockedAchievements] = useState([]);
   const [showEmotionalCheck, setShowEmotionalCheck] = useState(false);
   const [emotionalState, setEmotionalState] = useState(null);
+  // Whether the user has ever opened the Emotional Check — drives the
+  // one-time FREE badge on its button. Persisted so it stays hidden
+  // across sessions once used.
+  const [emotionalCheckUsed, setEmotionalCheckUsed] = useState<boolean>(
+    () => typeof localStorage !== 'undefined' && localStorage.getItem('onda_emotional_check_used') === 'true',
+  );
   const [isRecording, setIsRecording] = useState(false);
   const [recordingMode, setRecordingMode] = useState('voice');
   const [audioLevel, setAudioLevel] = useState(0);
@@ -5371,7 +5377,13 @@ const OndaLevel1 = () => {
         <div className="flex flex-col items-center gap-3 sm:gap-4 mb-6 sm:mb-12 w-full max-w-lg mx-auto px-4">
           {/* Эмоциональная сверка */}
           <button
-            onClick={() => setShowEmotionalCheck(true)}
+            onClick={() => {
+              setShowEmotionalCheck(true);
+              if (!emotionalCheckUsed) {
+                setEmotionalCheckUsed(true);
+                localStorage.setItem('onda_emotional_check_used', 'true');
+              }
+            }}
             className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
               activeCircuit === 2
                 ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
@@ -5385,9 +5397,11 @@ const OndaLevel1 = () => {
             }`}
           >
             {t('nav.emotional_check')}
-            <span className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
-              {t('labels.free')}
-            </span>
+            {!emotionalCheckUsed && (
+              <span className="absolute right-4 top-1/2 -translate-y-1/2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
+                {t('labels.free')}
+              </span>
+            )}
           </button>
         </div>
 
@@ -6107,7 +6121,7 @@ const OndaLevel1 = () => {
                     }`}
                   >
                     {isCompleted ? t('practices.improve') : t('practices.start')}
-                    {FREE_PRACTICE_IDS.has(practice.id) && (
+                    {FREE_PRACTICE_IDS.has(practice.id) && !isCompleted && (
                       <span className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
                         {t('labels.free')}
                       </span>
