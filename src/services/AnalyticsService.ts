@@ -26,6 +26,7 @@ export type AnalyticsEventName =
   | 'health_permission_request'
   | 'health_permission_granted'
   | 'health_permission_denied'
+  | 'att_prompt_result'
   | 'watch_connection_attempt'
   | 'watch_connection_success'
   | 'watch_connection_failed'

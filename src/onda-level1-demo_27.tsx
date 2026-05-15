@@ -375,6 +375,24 @@ const OndaLevel1 = () => {
   // Timestamp of the first render while onboarding is visible — used to
   // attach `duration_seconds` to the Airbridge `Complete Onboarding` event.
   const onboardingStartRef = useRef<number | null>(null);
+
+  // A/B test for the ATT rationale copy on onboarding screen 1.
+  //   variant 'a' — original ("...помогаешь нам расти...")
+  //   variant 'b' — "...показывать ONDA людям, которым она реально нужна..."
+  // Assigned once per install, 50/50, persisted so the user always sees
+  // the same copy. The att_prompt_result event carries the variant so
+  // we can compare ATT opt-in rate per variant in Supabase later.
+  const attCopyVariantRef = useRef<'a' | 'b'>(
+    (() => {
+      if (typeof localStorage === 'undefined') return 'a';
+      let v = localStorage.getItem('onda_att_copy_variant');
+      if (v !== 'a' && v !== 'b') {
+        v = Math.random() < 0.5 ? 'a' : 'b';
+        localStorage.setItem('onda_att_copy_variant', v);
+      }
+      return v as 'a' | 'b';
+    })(),
+  );
   if (showOnboarding && onboardingStartRef.current === null) {
     onboardingStartRef.current = Date.now();
   }
@@ -4275,6 +4293,12 @@ const OndaLevel1 = () => {
           try {
             const result = await AppTrackingTransparency.requestPermission();
             console.log('[onboarding] ATT result:', result.status);
+            // A/B telemetry — which rationale copy the user saw and how
+            // they answered. Query later: opt-in rate per variant.
+            track('att_prompt_result', {
+              variant: attCopyVariantRef.current,
+              result: result.status,
+            });
           } catch (e) {
             console.warn('[onboarding] ATT prompt error', e);
           }
@@ -4382,7 +4406,9 @@ const OndaLevel1 = () => {
                 <div className="mt-6 rounded-xl border border-violet-500/30 bg-violet-500/10 p-4 flex items-start gap-3">
                   <span aria-hidden className="mt-0.5 text-violet-300 text-base">ℹ️</span>
                   <p className="text-sm text-violet-100/90 italic leading-relaxed">
-                    {t('onboarding.screen1_bridge')}
+                    {attCopyVariantRef.current === 'b'
+                      ? t('onboarding.screen1_bridge_b')
+                      : t('onboarding.screen1_bridge')}
                   </p>
                 </div>
               </div>
