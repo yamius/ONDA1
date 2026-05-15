@@ -5385,7 +5385,7 @@ const OndaLevel1 = () => {
             }`}
           >
             {t('nav.emotional_check')}
-            <span className="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] font-semibold uppercase tracking-wide">
+            <span className="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide">
               {t('labels.free')}
             </span>
           </button>
@@ -5982,7 +5982,7 @@ const OndaLevel1 = () => {
                 }`}
               >
                 {FREE_PRACTICE_IDS.has(practice.id) && (
-                  <span className="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] font-semibold uppercase tracking-wide">
+                  <span className="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide">
                     {t('labels.free')}
                   </span>
                 )}
