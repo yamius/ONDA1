@@ -4319,7 +4319,12 @@ const OndaLevel1 = () => {
           : undefined;
         trackTenjinOnboardingComplete(durationSeconds);
         setShowOnboarding(false);
-        setShowAuthModal(true);
+        // Intentionally NOT opening the Auth modal here. The free-tier
+        // sampler (p1-1, p1-2, p1-3) runs without an account, so the
+        // shortest path from onboarding → first practice should have
+        // zero friction. Sign-up is still mandatory later, at the
+        // subscription paywall — that's where we ask, in context.
+        // Users who want to sign in early can still do so via the menu.
       }
     };
 
