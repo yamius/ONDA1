@@ -3,7 +3,7 @@
  * Run after: npm run build (prerender calls this at the end)
  *
  * Priority: Main 1.0, /glossary (hub) 0.9, /level/ 0.8, /glossary/:slug 0.7
- * Lastmod: real git-history date for article/glossary pages; omitted otherwise
+ * Lastmod: real date for article/glossary/review pages; omitted otherwise
  */
 import { writeFileSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
@@ -14,6 +14,7 @@ import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
 import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
 import { getArticleBySlug } from '../src/data/articles'
 import { ARTICLE_DATES } from '../src/data/article-dates.generated'
+import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
 import { readFileSync } from 'fs'
 
 /** Minimal XML attribute/text escaper. Order matters: ampersand first. */
@@ -117,6 +118,16 @@ function getLastmod(route: string): string | null {
   if (/^(?:\/(?:es|ru|uk|zh))?\/glossary\/[^/]+$/.test(route)) {
     const d = ARTICLE_DATES['__glossary']
     return d ? (d.modified || d.published).slice(0, 10) : null
+  }
+  const cmpSlug = route.match(/^\/reviews\/compare\/([^/]+)$/)?.[1]
+  if (cmpSlug) {
+    const c = getComparisonBySlug(cmpSlug)
+    return c ? c.dateModified.slice(0, 10) : null
+  }
+  const revSlug = route.match(/^\/reviews\/([^/]+)$/)?.[1]
+  if (revSlug) {
+    const r = getReviewBySlug(revSlug)
+    return r ? r.dateModified.slice(0, 10) : null
   }
   return null
 }

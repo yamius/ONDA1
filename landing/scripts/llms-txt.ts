@@ -18,6 +18,7 @@ import { glossaryTerms } from '../src/data/glossary'
 import { levelsData } from '../src/data/levels'
 import { parts } from '../src/pages/PartPage'
 import { ES_PILOT_ARTICLE_SLUGS, RU_PILOT_ARTICLE_SLUGS } from './prerender-routes'
+import { reviews, comparisons } from '../src/data/reviews'
 
 type Lang = 'en' | 'es' | 'ru' | 'uk' | 'zh'
 const NON_EN_LANGS: Lang[] = ['es', 'ru', 'uk', 'zh']
@@ -160,6 +161,24 @@ ${partLines.join('\n')}
 ${glossLines.join('\n')}
 `)
 
+  // Reviews — independent biohacking-tool reviews. EN-only; the same EN
+  // URLs appear in every locale index, like Articles and Glossary.
+  if (comparisons.length > 0 || reviews.length > 0) {
+    const reviewLines: string[] = []
+    for (const c of comparisons) {
+      reviewLines.push(`- [${c.title}](${SITE_URL}/reviews/compare/${c.slug}): ${c.description}`)
+    }
+    for (const r of reviews) {
+      reviewLines.push(`- [${r.name} review](${SITE_URL}/reviews/${r.slug}): ${r.verdict}`)
+    }
+    sections.push(`## Reviews
+
+Independent, criteria-based reviews of biohacking tools. Scoring methodology: ${SITE_URL}/reviews/methodology
+
+${reviewLines.join('\n')}
+`)
+  }
+
   // Optional / long-tail
   sections.push(`## Optional
 
@@ -193,6 +212,29 @@ function buildFull(index: string): string {
     out.push(`Short: ${term.shortDescription}\n`)
     out.push(term.content.trim())
     out.push('\n---\n')
+  }
+
+  if (reviews.length > 0) {
+    out.push('## Reviews (full markdown bodies)\n')
+    for (const r of reviews) {
+      out.push(`### ${r.name} review\n`)
+      out.push(`URL: ${SITE_URL}/reviews/${r.slug}`)
+      out.push(`Score: ${r.overallScore.toFixed(1)}/10`)
+      out.push(`Verdict: ${r.verdict}\n`)
+      out.push(r.content.trim())
+      out.push('\n---\n')
+    }
+  }
+
+  if (comparisons.length > 0) {
+    out.push('## Comparisons (full markdown bodies)\n')
+    for (const c of comparisons) {
+      out.push(`### ${c.title}\n`)
+      out.push(`URL: ${SITE_URL}/reviews/compare/${c.slug}`)
+      out.push(`Intro: ${c.intro}\n`)
+      out.push(c.content.trim())
+      out.push('\n---\n')
+    }
   }
 
   return out.join('\n')

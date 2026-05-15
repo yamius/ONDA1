@@ -27,6 +27,10 @@ const BioMetricPage      = lazy(() => import('./pages/BioMetricPage').then(m => 
 const TopicsPage         = lazy(() => import('./pages/TopicsPage').then(m => ({ default: m.TopicsPage })))
 const TopicPage          = lazy(() => import('./pages/TopicPage').then(m => ({ default: m.TopicPage })))
 const ArticlesSlugRouter = lazy(() => import('./components/ArticlesSlugRouter'))
+const ReviewsPage           = lazy(() => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
+const ReviewMethodologyPage = lazy(() => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
+const ReviewPage            = lazy(() => import('./pages/ReviewPage').then(m => ({ default: m.ReviewPage })))
+const ComparisonPage        = lazy(() => import('./pages/ComparisonPage').then(m => ({ default: m.ComparisonPage })))
 
 const app = (
   <StrictMode>
@@ -97,6 +101,10 @@ const app = (
             ))}
             <Route path="/topics"         element={<TopicsPage />} />
             <Route path="/topics/:slug"   element={<TopicPage />} />
+            <Route path="/reviews"               element={<ReviewsPage />} />
+            <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
+            <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />
+            <Route path="/reviews/:slug"         element={<ReviewPage />} />
             <Route path="*"               element={<NotFoundPage />} />
           </Route>
         </Routes>

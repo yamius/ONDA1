@@ -25,6 +25,7 @@ import { fileURLToPath } from 'url'
 import { articles } from '../src/data/articles'
 import { glossaryTerms } from '../src/data/glossary'
 import { ARTICLE_DATES } from '../src/data/article-dates.generated'
+import { reviews, comparisons } from '../src/data/reviews'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
@@ -37,7 +38,7 @@ const AUTHOR = {
 
 interface CorpusRecord {
   id: string
-  type: 'article' | 'glossary'
+  type: 'article' | 'glossary' | 'review' | 'comparison'
   language: 'en'
   url: string
   title: string
@@ -92,11 +93,52 @@ for (const t of glossaryTerms) {
   })
 }
 
-// Stable ordering: articles first, then glossary, both by slug. Helps
-// downstream diffs across builds — Perplexity and friends can detect
-// "what changed since last fetch" without hashing the whole file.
+for (const r of reviews) {
+  records.push({
+    id: r.slug,
+    type: 'review',
+    language: 'en',
+    url: `${SITE_URL}/reviews/${r.slug}`,
+    title: `${r.name} review`,
+    description: r.verdict,
+    category: r.category,
+    relatedSlugs: r.relatedSlugs,
+    datePublished: r.datePublished,
+    dateModified: r.dateModified,
+    wordCount: wordCount(r.content),
+    author: { name: AUTHOR.name, url: AUTHOR.url },
+    body: r.content.trim(),
+  })
+}
+
+for (const c of comparisons) {
+  records.push({
+    id: c.slug,
+    type: 'comparison',
+    language: 'en',
+    url: `${SITE_URL}/reviews/compare/${c.slug}`,
+    title: c.title,
+    description: c.description,
+    category: c.category,
+    datePublished: c.datePublished,
+    dateModified: c.dateModified,
+    wordCount: wordCount(c.content),
+    author: { name: AUTHOR.name, url: AUTHOR.url },
+    body: c.content.trim(),
+  })
+}
+
+// Stable ordering: articles, glossary, reviews, comparisons — each group
+// by slug. Helps downstream diffs across builds — Perplexity and friends
+// can detect "what changed since last fetch" without hashing the file.
+const TYPE_ORDER: Record<CorpusRecord['type'], number> = {
+  article: 0,
+  glossary: 1,
+  review: 2,
+  comparison: 3,
+}
 records.sort((a, b) => {
-  if (a.type !== b.type) return a.type === 'article' ? -1 : 1
+  if (a.type !== b.type) return TYPE_ORDER[a.type] - TYPE_ORDER[b.type]
   return a.id.localeCompare(b.id)
 })
 
@@ -112,6 +154,8 @@ writeFileSync(join(datasetsDir, 'onda-corpus.jsonl.gz'), gz)
 
 const articleCount = records.filter((r) => r.type === 'article').length
 const glossaryCount = records.filter((r) => r.type === 'glossary').length
+const reviewCount = records.filter((r) => r.type === 'review').length
+const comparisonCount = records.filter((r) => r.type === 'comparison').length
 console.log(
-  `[rag-corpus] Generated /datasets/onda-corpus.jsonl (${(jsonl.length / 1024).toFixed(0)} KB, ${(gz.length / 1024).toFixed(0)} KB gz) — ${articleCount} articles + ${glossaryCount} glossary terms`,
+  `[rag-corpus] Generated /datasets/onda-corpus.jsonl (${(jsonl.length / 1024).toFixed(0)} KB, ${(gz.length / 1024).toFixed(0)} KB gz) — ${articleCount} articles + ${glossaryCount} glossary terms + ${reviewCount} reviews + ${comparisonCount} comparisons`,
 )

@@ -8,6 +8,7 @@ import { TOPIC_SLUGS, INDEXED_TOPIC_SLUGS } from '../src/data/topics'
 import { parts } from '../src/pages/PartPage'
 import { levelsData } from '../src/data/levels'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
+import { reviews, comparisons } from '../src/data/reviews'
 import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRouteVariants, LOCALIZED_PAGES } from '../src/i18n'
 
 // Pages localized into all 5 languages — each gets its own prerendered HTML
@@ -114,6 +115,8 @@ const nonLocalizedStaticPaths = [
   '/the-stack',
   '/sitemap',
   '/topics',
+  '/reviews',
+  '/reviews/methodology',
 ]
 
 // Every topic hub URL is prerendered. Hubs without a pillar render
@@ -139,6 +142,8 @@ export function getPrerenderRoutes(): string[] {
     ...localizedLevelRoutes,
     ...localizedMetricRoutes,
     ...topicHubRoutes,
+    ...reviews.map((r) => `/reviews/${r.slug}`),
+    ...comparisons.map((c) => `/reviews/compare/${c.slug}`),
   ]
 }
 

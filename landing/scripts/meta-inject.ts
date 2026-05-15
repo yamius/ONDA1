@@ -11,6 +11,7 @@ import { PART_SEO } from '../src/data/part-seo'
 import { parts } from '../src/pages/PartPage'
 import { getArticleBySlug } from '../src/data/articles'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
+import { getReviewBySlug, getComparisonBySlug, getReviewsForComparison } from '../src/data/reviews'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
@@ -270,6 +271,28 @@ export interface RouteMeta {
   aboutPage?: { name: string; description: string; url: string }
   creativeWork?: { name: string; description: string; url: string; about: string[] }
   course?: { name: string; description: string; url: string }
+  /** Individual product review — emitted as schema.org/Review with an
+   *  itemReviewed Product and a single editorial reviewRating. */
+  review?: {
+    name: string
+    productName: string
+    brand: string
+    reviewBody: string
+    ratingValue: number
+    datePublished: string
+    dateModified: string
+    image?: string
+    pros: string[]
+    cons: string[]
+    url: string
+  }
+  /** Comparison round-up — emitted as CollectionPage + ItemList. */
+  itemList?: {
+    name: string
+    description: string
+    url: string
+    items: { url: string; name: string }[]
+  }
 }
 
 function buildBreadcrumbs(route: string): BreadcrumbItem[] {
@@ -345,6 +368,19 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
         name: metric?.shortTitle ?? segments[1],
         url: `${SITE_URL}/bio/${segments[1]}`,
       })
+    }
+    return items
+  }
+  if (segments[0] === 'reviews') {
+    items.push({ name: 'Reviews', url: `${SITE_URL}/reviews` })
+    if (segments[1] === 'methodology') {
+      items.push({ name: 'Methodology', url: `${SITE_URL}/reviews/methodology` })
+    } else if (segments[1] === 'compare' && segments[2]) {
+      const cmp = getComparisonBySlug(segments[2])
+      items.push({ name: cmp?.title ?? segments[2], url: `${SITE_URL}/reviews/compare/${segments[2]}` })
+    } else if (segments[1]) {
+      const rev = getReviewBySlug(segments[1])
+      items.push({ name: rev ? `${rev.name} review` : segments[1], url: `${SITE_URL}/reviews/${segments[1]}` })
     }
     return items
   }
@@ -1495,6 +1531,77 @@ function buildFAQPageJsonLd(
   return JSON.stringify(faqPage)
 }
 
+/**
+ * schema.org/Review for an individual product review. itemReviewed is a
+ * Product; the score is a single editorial reviewRating (0–10), never an
+ * aggregateRating. Pros/cons map to positiveNotes/negativeNotes.
+ */
+function buildReviewJsonLd(r: NonNullable<RouteMeta['review']>): string {
+  const review: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'Review',
+    url: r.url,
+    name: r.name,
+    datePublished: r.datePublished,
+    dateModified: r.dateModified,
+    author: { '@id': AUTHOR_ID },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    reviewBody: r.reviewBody,
+    itemReviewed: {
+      '@type': 'Product',
+      name: r.productName,
+      brand: { '@type': 'Brand', name: r.brand },
+      ...(r.image ? { image: r.image } : {}),
+    },
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: r.ratingValue,
+      bestRating: 10,
+      worstRating: 0,
+    },
+  }
+  if (r.pros.length) {
+    review.positiveNotes = {
+      '@type': 'ItemList',
+      itemListElement: r.pros.map((p, i) => ({ '@type': 'ListItem', position: i + 1, name: p })),
+    }
+  }
+  if (r.cons.length) {
+    review.negativeNotes = {
+      '@type': 'ItemList',
+      itemListElement: r.cons.map((c, i) => ({ '@type': 'ListItem', position: i + 1, name: c })),
+    }
+  }
+  return JSON.stringify(review)
+}
+
+/**
+ * CollectionPage + ItemList for a comparison round-up — the ranked list
+ * of reviewed products. AI answer engines read ItemList as the curated
+ * answer to a "best X" query.
+ */
+function buildComparisonItemListJsonLd(il: NonNullable<RouteMeta['itemList']>): string {
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: il.name,
+    description: il.description,
+    url: il.url,
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    author: { '@id': AUTHOR_ID },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: il.items.length,
+      itemListElement: il.items.map((it, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: it.url,
+        name: it.name,
+      })),
+    },
+  })
+}
+
 export function getMetaForRoute(route: string): RouteMeta {
   const url = buildCanonicalUrl(route)
 
@@ -2218,6 +2325,78 @@ export function getMetaForRoute(route: string): RouteMeta {
     }
   }
 
+  // /reviews — biohacking-tool review hub.
+  if (route === '/reviews') {
+    return {
+      title: 'HRV Trackers & Wearables — Independent Reviews | ONDA Life',
+      description:
+        'Independent, criteria-based reviews of HRV trackers and wearables — scored on measurement accuracy, data access and real-world use. The scoring methodology is public.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+    }
+  }
+  if (route === '/reviews/methodology') {
+    return {
+      title: 'Review Methodology — How We Score Tools | ONDA Life',
+      description:
+        'The fixed scoring rubric behind ONDA reviews: weighted criteria, the 0–10 scale, and how hands-on testing is distinguished from evidence-based assessment.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+    }
+  }
+  const comparisonMatch = route.match(/^\/reviews\/compare\/([^/]+)$/)
+  if (comparisonMatch) {
+    const comparison = getComparisonBySlug(comparisonMatch[1])
+    if (comparison) {
+      const items = getReviewsForComparison(comparison).map((r) => ({
+        url: `${SITE_URL}/reviews/${r.slug}`,
+        name: r.name,
+      }))
+      return {
+        title: `${comparison.title} | ONDA Life`,
+        description: comparison.description,
+        url,
+        breadcrumbs,
+        ogType: 'article',
+        itemList: { name: comparison.title, description: comparison.description, url, items },
+        faq: comparison.faq.length
+          ? { mainEntity: comparison.faq.map((f) => ({ question: f.q, answer: f.a })), url }
+          : undefined,
+      }
+    }
+  }
+  const reviewMatch = route.match(/^\/reviews\/([^/]+)$/)
+  if (reviewMatch) {
+    const review = getReviewBySlug(reviewMatch[1])
+    if (review) {
+      const absImage = review.image ? `${SITE_URL}${review.image}` : undefined
+      return {
+        title: `${review.name} Review — Scored ${review.overallScore.toFixed(1)}/10 | ONDA Life`,
+        description: review.description,
+        url,
+        breadcrumbs,
+        ogType: 'article',
+        image: absImage,
+        imageAlt: review.imageAlt,
+        review: {
+          name: `${review.name} review`,
+          productName: review.name,
+          brand: review.brand,
+          reviewBody: review.summary,
+          ratingValue: review.overallScore,
+          datePublished: review.datePublished,
+          dateModified: review.dateModified,
+          image: absImage,
+          pros: review.pros,
+          cons: review.cons,
+          url,
+        },
+      }
+    }
+  }
+
   return { title: DEFAULT_TITLE, description: DEFAULT_DESC, url, breadcrumbs }
 }
 
@@ -2388,6 +2567,18 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (meta.faq) {
     const faqScript = `<script type="application/ld+json">${buildFAQPageJsonLd(meta.faq.mainEntity, meta.faq.url)}</script>`
     out = out.replace('</head>', `  ${faqScript}\n</head>`)
+  }
+
+  // JSON-LD: Review (individual product review pages)
+  if (meta.review) {
+    const reviewScript = `<script type="application/ld+json">${buildReviewJsonLd(meta.review)}</script>`
+    out = out.replace('</head>', `  ${reviewScript}\n</head>`)
+  }
+
+  // JSON-LD: CollectionPage + ItemList (comparison round-ups)
+  if (meta.itemList) {
+    const itemListScript = `<script type="application/ld+json">${buildComparisonItemListJsonLd(meta.itemList)}</script>`
+    out = out.replace('</head>', `  ${itemListScript}\n</head>`)
   }
 
   // Replace <title>...</title>
