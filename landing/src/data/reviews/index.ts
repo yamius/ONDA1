@@ -36,6 +36,11 @@ import calm from './calm'
 import headspace from './headspace'
 import insightTimer from './insight-timer'
 import wakingUp from './waking-up'
+import balance from './balance'
+import healthyMindsProgram from './healthy-minds-program'
+import smilingMind from './smiling-mind'
+import happierMeditation from './happier-meditation'
+import medito from './medito'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
 
@@ -51,9 +56,14 @@ export const reviews: ToolReview[] = [
   ringconnGen2,
   fitbitCharge6,
   insightTimer,
+  healthyMindsProgram,
   headspace,
   calm,
+  smilingMind,
+  balance,
   wakingUp,
+  happierMeditation,
+  medito,
 ]
 
 /** All published comparison / round-up pages. */
