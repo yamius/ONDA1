@@ -264,10 +264,21 @@ export function trackTenjinSubscribe(params: {
   plan?: string;
 }): void {
   try {
-    // Tenjin revenue is handled server-side via the RevenueCat → Tenjin
-    // integration (see note above). Here we only mirror to Firebase /
-    // GA4 — that pipeline drives Google Ads conversion optimization and
-    // is independent of the MMP.
+    // Tenjin SDK custom event `start_trial` — maps to SKAdNetwork
+    // conversion value 6 in our Tenjin CV schema (onda_cv_mapping.csv).
+    // Every ONDA paywall purchase begins with a free trial (14-day
+    // yearly / 7-day monthly), so a successful purchase() === trial
+    // start. This fires on day 0, inside the SKAN measurement window —
+    // it's the strongest install-quality signal we can hand AppLovin
+    // Axon from the client. The later trial→paid conversion (CV 7-10)
+    // happens off-device days later and is covered by the server-side
+    // RevenueCat → Tenjin integration, not here.
+    _tenjinEvent('start_trial');
+
+    // Tenjin revenue itself is handled server-side via the RevenueCat →
+    // Tenjin integration. Here we only mirror to Firebase / GA4 — that
+    // pipeline drives Google Ads conversion optimization and is
+    // independent of the MMP.
     _logFirebase('purchase', {
       value: params.value,
       currency: params.currency ?? 'USD',
