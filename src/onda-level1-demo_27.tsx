@@ -420,6 +420,22 @@ const OndaLevel1 = () => {
     onboardingStartRef.current = Date.now();
   }
 
+  // Track views of the two permission-rationale screens of onboarding.
+  // Screen 1 precedes the ATT prompt, screen 2 precedes the iOS
+  // notifications prompt. Combined with att_prompt_result /
+  // notification_prompt_result this gives a full permission funnel:
+  // screen seen → system prompt answered.
+  useEffect(() => {
+    if (!showOnboarding) return;
+    if (onboardingScreen !== 1 && onboardingScreen !== 2) return;
+    track('onboarding_permission_screen_view', {
+      screen: onboardingScreen,
+      permission: onboardingScreen === 1 ? 'att' : 'notifications',
+      att_copy_variant: attCopyVariantRef.current,
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showOnboarding, onboardingScreen]);
+
   const [bioMetrics, setBioMetrics] = useState({
     heartRate: 72,
     hrv: 45,
@@ -4338,11 +4354,13 @@ const OndaLevel1 = () => {
         // notifications permission. We've spent screen 2's text bridge
         // explaining why; now the system prompt lands on top of our
         // branded onboarding background.
+        let notifResult: string = 'unknown';
         try {
-          await requestNotificationPermission();
+          notifResult = await requestNotificationPermission();
         } catch (e) {
           console.warn('[onboarding] notifications permission error', e);
         }
+        track('notification_prompt_result', { result: notifResult });
         // Tell the OneSignal SDK to register the subscription. iOS won't
         // re-prompt (permission is already decided one way or another),
         // but without this call OneSignal stays in 'unsubscribed' state
