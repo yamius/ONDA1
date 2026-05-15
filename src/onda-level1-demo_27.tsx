@@ -5385,7 +5385,7 @@ const OndaLevel1 = () => {
             }`}
           >
             {t('nav.emotional_check')}
-            <span className="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide">
+            <span className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
               {t('labels.free')}
             </span>
           </button>
@@ -5981,11 +5981,6 @@ const OndaLevel1 = () => {
                     : 'border-purple-500/30 hover:border-purple-400/50'
                 }`}
               >
-                {FREE_PRACTICE_IDS.has(practice.id) && (
-                  <span className="absolute bottom-2 right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide">
-                    {t('labels.free')}
-                  </span>
-                )}
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex-1">
                     <h3 className="text-xl font-semibold mb-1">{getPracticeName(practice.id)}</h3>
@@ -6085,7 +6080,7 @@ const OndaLevel1 = () => {
                   </div>
                   <button
                     onClick={() => completePractice(practice.id, practice.maxQnt)}
-                    className={`px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                    className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
                       activeCircuit === 2
                         ? isCompleted
                           ? 'bg-cyan-600/50 hover:bg-cyan-600/70 border border-cyan-400/50'
@@ -6112,6 +6107,11 @@ const OndaLevel1 = () => {
                     }`}
                   >
                     {isCompleted ? t('practices.improve') : t('practices.start')}
+                    {FREE_PRACTICE_IDS.has(practice.id) && (
+                      <span className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
+                        {t('labels.free')}
+                      </span>
+                    )}
                   </button>
                 </div>
               </div>
