@@ -38,6 +38,14 @@
     "goodLuck": "Good luck on your journey!"
   },
   "back": "← Back to Home",
+  "author": {
+    "heading": "The person behind ONDA Life",
+    "lead": "ONDA Life was founded by Yakiv Bilenko — an architect and a psychologist.",
+    "p1": "For over 20 years he has designed physical environments — homes, commercial and industrial buildings, interiors, and the planning of entire territories. For over 10 years, in parallel, he has practised as a Gestalt therapist and coach, building structured programs for the recovery of people's mental, physical and emotional resources.",
+    "p2": "His work runs along the seam between those two fields — how the environment around a person and the environment inside them shape one another. ONDA Life is that question turned into a product: a system for working on your inner architecture with the same intent an architect brings to a building.",
+    "p3": "ONDA Life is a Spanish company based in Avilés. Its protocols and articles are educational tools for self-directed practice, grounded in applied psychology and systems design — not medical advice or a substitute for professional care.",
+    "linkedin": "Yakiv Bilenko on LinkedIn →"
+  },
   "meta": {
     "title": "About ONDA Life | Operating System for Your Consciousness & Biohacking",
     "description": "Discover how ONDA Life upgrades your biological firmware through systematic HRV tracking, neural hardware optimization, and 8 levels of consciousness development.",

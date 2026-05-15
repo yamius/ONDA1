@@ -137,6 +137,26 @@ export function AboutPage() {
         </p>
       </div>
 
+      <section className="mt-12 space-y-4 border-t border-white/5 pt-10">
+        <h2 className="mb-2 text-2xl font-bold tracking-tight md:text-4xl">
+          {t('author.heading')}
+        </h2>
+        <p className="font-mono text-sm font-semibold leading-relaxed text-white/80 md:text-base">
+          {t('author.lead')}
+        </p>
+        <p className="font-mono text-sm leading-relaxed text-white/60">{t('author.p1')}</p>
+        <p className="font-mono text-sm leading-relaxed text-white/60">{t('author.p2')}</p>
+        <p className="font-mono text-sm leading-relaxed text-white/50">{t('author.p3')}</p>
+        <a
+          href="https://www.linkedin.com/in/yamius"
+          target="_blank"
+          rel="me noopener noreferrer"
+          className="inline-block font-mono text-xs text-terminal-green/70 transition-colors hover:text-terminal-green"
+        >
+          {t('author.linkedin')}
+        </a>
+      </section>
+
       <div className="mt-12">
         <Link
           to={localizedPathFor('/', lang)}

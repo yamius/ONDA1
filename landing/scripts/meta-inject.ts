@@ -13,7 +13,7 @@ import { getArticleBySlug } from '../src/data/articles'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 
 const SITE_URL = 'https://onda-life.com'
-const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
+const OG_IMAGE = `${SITE_URL}/og-preview.png`
 
 /**
  * Canonical author identity. Used in:
@@ -26,7 +26,7 @@ const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
  * as the same entity.
  */
 const AUTHOR_ID = `${SITE_URL}/#author`
-const AUTHOR_NAME = 'Yakiv'
+const AUTHOR_NAME = 'Yakiv Bilenko'
 const AUTHOR_URL = 'https://www.linkedin.com/in/yamius'
 const AUTHOR_SAME_AS = ['https://www.linkedin.com/in/yamius']
 
@@ -615,9 +615,9 @@ function buildPersonJsonLd(): string {
     name: AUTHOR_NAME,
     url: AUTHOR_URL,
     sameAs: AUTHOR_SAME_AS,
-    jobTitle: 'Founder, ONDA Life',
+    jobTitle: 'Founder & Lead Architect, ONDA Life',
     description:
-      'Founder of ONDA Life — a biohacking and consciousness OS that treats the body as a biocomputer. Writes long-form articles on neurophysiology, HRV training, circadian biology, metabolic flexibility, and structured consciousness development.',
+      'Yakiv Bilenko — architect and psychologist, founder of ONDA Life. Over 20 years designing physical environments and 10 years of psychological practice as a Gestalt therapist; his work researches how people\'s external and internal environments shape one another. Author of ONDA Life\'s biohacking and consciousness articles.',
     // knowsAbout populates the topical signal AI agents read when ranking
     // experts for a query. Mirrors the major article clusters on the site.
     knowsAbout: [
@@ -2474,7 +2474,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   }
 
   // og:image:width / og:image:height / og:image:type — keep them in sync
-  // with the actual ogImage URL (template defaults match the homepage hero;
+  // with the actual ogImage URL (template defaults match the homepage OG card;
   // article pages override og:image to article.image so the dimensions need
   // to follow). Looked up in the build-time IMAGE_DIMENSIONS manifest.
   const ogImagePath = ogImage.replace(/^https?:\/\/[^/]+/, '')
