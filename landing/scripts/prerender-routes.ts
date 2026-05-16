@@ -97,7 +97,7 @@ const localizedRuArticleRoutes = RU_PILOT_ARTICLE_SLUGS.map((s) => `/ru/articles
  * cluster. Expand category by category once each RU translation block is
  * reviewed end-to-end — same gating discipline as the article pilots.
  */
-const RU_PILOT_REVIEW_CATEGORIES = new Set<string>(['sleep-app'])
+const RU_PILOT_REVIEW_CATEGORIES = new Set<string>(['sleep-app', 'hrv-wearable'])
 const ruPilotReviews = reviews.filter((r) => RU_PILOT_REVIEW_CATEGORIES.has(r.category))
 const ruPilotComparisons = comparisons.filter((c) => RU_PILOT_REVIEW_CATEGORIES.has(c.category))
 const localizedRuReviewRoutes = [
