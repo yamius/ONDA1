@@ -6,6 +6,8 @@ import { useState, useEffect, lazy, Suspense } from 'react';
 // streams the heavy chunk in parallel.
 const OndaLevel1 = lazy(() => import('./onda-level1-demo_27'));
 const AudioTest = lazy(() => import('./pages/AudioTest'));
+// Dev-спайк проверки eye-scan (getUserMedia + MediaPipe), роут /eye-scan
+const EyeScanSpike = lazy(() => import('./pages/EyeScanSpike'));
 // Регистрируем Android bridge для OAuth callback
 import './lib/android-bridge';
 // Инициализируем iOS auth handler
@@ -15,6 +17,12 @@ function App() {
   const [showTest, setShowTest] = useState(
     window.location.pathname === '/audio-test' || window.location.search.includes('test=audio')
   );
+  // TEMP: для TestFlight-проверки eye-scan спайк показывается всегда.
+  // Откатить после теста — вернуть строку из закомментированной ниже.
+  const [showEyeScan] = useState(true);
+  // const [showEyeScan] = useState(
+  //   window.location.pathname === '/eye-scan' || window.location.search.includes('test=eyescan')
+  // );
 
   useEffect(() => {
     initIOSAuthHandler();
@@ -38,6 +46,14 @@ function App() {
           </div>
           <AudioTest />
         </div>
+      </Suspense>
+    );
+  }
+
+  if (showEyeScan) {
+    return (
+      <Suspense fallback={null}>
+        <EyeScanSpike />
       </Suspense>
     );
   }
