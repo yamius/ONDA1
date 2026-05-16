@@ -51,6 +51,7 @@ import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
 import {
   trackTenjinPractice,
+  trackTenjinAttResult,
   trackTenjinSignUp,
   trackTenjinSignIn,
   trackTenjinOnboardingComplete,
@@ -432,6 +433,27 @@ const OndaLevel1 = () => {
       screen: onboardingScreen,
       permission: onboardingScreen === 1 ? 'att' : 'notifications',
       att_copy_variant: attCopyVariantRef.current,
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showOnboarding, onboardingScreen]);
+
+  // Onboarding funnel. onboarding_start fires once on first show;
+  // onboarding_step fires for every screen (1 → 2 → 3) so the Supabase
+  // app_events funnel shows exactly which screen users drop off on.
+  // Tenjin / Axon already get the completion signal via tutorial_complete,
+  // so these stay product-analytics only — no MMP event-name fan-out.
+  const onboardingStartTrackedRef = useRef(false);
+  useEffect(() => {
+    if (!showOnboarding) return;
+    if (!onboardingStartTrackedRef.current) {
+      onboardingStartTrackedRef.current = true;
+      track('onboarding_start', { att_copy_variant: attCopyVariantRef.current });
+    }
+    track('onboarding_step', {
+      step: onboardingScreen,
+      total: 3,
+      permission:
+        onboardingScreen === 1 ? 'att' : onboardingScreen === 2 ? 'notifications' : 'none',
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showOnboarding, onboardingScreen]);
@@ -4338,6 +4360,9 @@ const OndaLevel1 = () => {
               variant: attCopyVariantRef.current,
               result: result.status,
             });
+            // MMP side: distinct att_authorized / att_denied events so
+            // AppLovin Axon can optimize toward the IDFA opt-in cohort.
+            trackTenjinAttResult(result.status);
           } catch (e) {
             console.warn('[onboarding] ATT prompt error', e);
           }

@@ -406,6 +406,27 @@ export function trackTenjinPermission(
   }
 }
 
+/**
+ * ATT (App Tracking Transparency) prompt outcome → Tenjin only.
+ *
+ * Authorized installs are the high-attribution-quality cohort: IDFA is
+ * readable, so Tenjin / AppLovin Axon get deterministic attribution
+ * instead of SKAN-only estimation. Firing distinct event names per
+ * outcome (`att_authorized` vs `att_denied`) — rather than one event for
+ * everyone — lets Axon optimize toward the opt-in segment.
+ *
+ * No Firebase mirror here on purpose: the GA4 side is already covered by
+ * AnalyticsService's `att_prompt_result` event, and a second mirror would
+ * double-count it.
+ */
+export function trackTenjinAttResult(status: string): void {
+  try {
+    _tenjinEvent(status === 'authorized' ? 'att_authorized' : 'att_denied');
+  } catch (e) {
+    console.warn('[Tenjin] Failed to track ATT result:', e);
+  }
+}
+
 /** Watch Connected: first time per session that the paired Apple Watch reports paired+installed. */
 export function trackTenjinWatchConnected(watchModel?: string | null): void {
   try {

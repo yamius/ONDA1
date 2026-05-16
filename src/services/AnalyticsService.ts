@@ -152,6 +152,38 @@ function _mirrorToFirebase(eventName: string, metadata?: Record<string, unknown>
   })();
 }
 
+/**
+ * Analytics readiness check — called once from main.tsx after first paint.
+ *
+ * Firebase's native SDK auto-initializes from GoogleService-Info.plist /
+ * google-services.json, so there is nothing to "start" from JS; this only
+ * logs which pipeline is live. Kept as a named export because main.tsx
+ * awaits it — it absorbs the only live function of the old, now-deleted
+ * standalone `services/analytics.ts` (whose other exports were dead code,
+ * including a `trackEvent` that wrote to non-existent app_events columns).
+ */
+export async function initializeAnalytics(): Promise<void> {
+  const platform = Capacitor.getPlatform();
+  if (!Capacitor.isNativePlatform()) {
+    console.log('[Analytics] Web — Firebase unavailable; Supabase app_events still active');
+    return;
+  }
+  if (platform === 'android') {
+    const { isAndroidBridgeAvailable } = await import('../lib/analytics-bridge');
+    console.log(
+      isAndroidBridgeAvailable()
+        ? '[Analytics] Firebase ready (Android native bridge)'
+        : '[Analytics] Android bridge unavailable — Firebase events will no-op',
+    );
+    return;
+  }
+  console.log(
+    _firebaseReady
+      ? '[Analytics] Firebase ready (iOS Capacitor plugin)'
+      : '[Analytics] Firebase plugin unavailable — events will no-op',
+  );
+}
+
 class AnalyticsService {
   private sessionId: string;
   private anonymousId: string;

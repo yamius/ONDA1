@@ -73,7 +73,7 @@ runWhenIdle(() => {
 
   // Firebase Analytics — already wraps the native plugin, very light JS,
   // but the dynamic import keeps it off the initial chunk.
-  import('./services/analytics')
+  import('./services/AnalyticsService')
     .then(({ initializeAnalytics }) => initializeAnalytics())
     .then(() => console.log('[ONDA] Firebase Analytics initialized'))
     .catch((error) => console.error('[ONDA] Failed to initialize Firebase Analytics:', error));
