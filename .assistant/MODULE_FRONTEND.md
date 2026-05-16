@@ -30,7 +30,14 @@ src/
 │   └── ...
 ├── lib/                 # Библиотеки
 │   ├── supabase.ts                 # Supabase клиент
+│   ├── tenjin.ts                   # Tenjin MMP события + Firebase mirror
 │   └── ...
+├── services/            # Сервисы (не React-хуки)
+│   ├── notifications.ts            # Локальные уведомления (daily/streak)
+│   ├── pushNotifications.ts        # OneSignal remote push
+│   ├── PermissionsService.ts       # iOS permissions (HealthKit/notif)
+│   ├── AnalyticsService.ts         # app_events + Firebase
+│   └── RevenueCatService.ts        # Подписки RevenueCat
 ├── pages/               # Страницы (если используется роутинг)
 ├── types/               # TypeScript типы
 │   └── android.d.ts                # Типы для Android bridge
@@ -405,3 +412,77 @@ localStorage.getItem('debugMode') === 'true'
 ```
 
 **Не трогать** `shouldShow = true` в `DebugMonitor.tsx` — это нарушает требования App Store (Apple запрещает видимые debug-элементы в production сборках).
+
+## Онбординг (3 экрана) и permission-флоу
+
+Онбординг — `onda-level1-demo_27.tsx`, ветка `if (showOnboarding)`. Показывается
+один раз (флаг `onda_onboarding_completed` в `localStorage`).
+
+**3 экрана, forward-only** (точки-индикаторы некликабельны, свайпа назад нет —
+permission-prompt'ы iOS нельзя переспросить, навигация назад сломала бы флоу):
+
+| Экран | Контент | Тап Continue вызывает |
+|-------|---------|----------------------|
+| 1/3 | «что такое ONDA» + bridge-карточка | **ATT prompt** (`AppTrackingTransparency.requestPermission()`) → затем `OndaTenjin.connect()` |
+| 2/3 | «как работает» + bridge-карточка | **iOS Notifications prompt** (`@capacitor/local-notifications`) → затем `registerOneSignalSubscription()` |
+| 3/3 | финал | закрывает онбординг → главный экран (БЕЗ auth-модалки) |
+
+- Bridge-карточки (`onboarding.screen1_bridge` / `screen2_bridge`) — текст-rationale
+  ПЕРЕД системным prompt'ом (Apple HIG, +15-30% к opt-in).
+- `screen1_bridge` имеет A/B-вариант `screen1_bridge_b` — выбирается 50/50,
+  пишется в `onda_att_copy_variant`. Событие `att_prompt_result` несёт variant.
+- После онбординга auth-модалка НЕ открывается — путь до первой практики без
+  трения (первые 3 практики бесплатны без аккаунта).
+
+## Уведомления
+
+Два независимых слоя — оба опираются на одно системное permission iOS.
+
+### Локальные — `src/services/notifications.ts`
+
+`@capacitor/local-notifications`. Расписываются на устройстве, работают офлайн.
+
+| Тип | Default | Поведение |
+|-----|---------|-----------|
+| Daily reminder | OFF | юзер включает в Settings + выбирает время |
+| Streak protection | ON | 20:00, если streak ≥ 2 и сегодня нет практики |
+
+API: `requestPermission`, `scheduleDailyReminder`, `disableDailyReminder`,
+`reconcileStreakNudge`, `getDailyEnabled/getStreakEnabled` и т.д.
+Streak-nudge пересчитывается на маунте + на `appStateChange` (resume).
+
+### Удалённые (OneSignal) — `src/services/pushNotifications.ts`
+
+`onesignal-cordova-plugin` (v5). Серверные push'и: контент-анонсы,
+re-engagement, маркетинг. App ID захардкожен в сервисе.
+
+API: `initOneSignal` (бут), `linkUserToOneSignal(supabaseUserId)` /
+`unlinkUser` (на login/logout), `registerOneSignalSubscription` /
+`registerIfAlreadyGranted`, `setMarketingOptIn` / `getMarketingOptIn`,
+`onPushOpened`.
+
+⚠️ `initOneSignal()` НЕ запрашивает permission (иначе prompt вылезет на
+cold start). Запрос — только в онбординге (экран 2). Для 2-го+ запуска
+`registerIfAlreadyGranted()` регистрирует подписку без prompt'а.
+
+### Settings → Reminders
+
+В `SettingsModal.tsx` секция Reminders с тремя toggle:
+- Daily practice reminder (local) — default OFF
+- Streak protection (local) — default ON
+- **Promotional notifications** — default OFF. Apple Guideline 4.5.4:
+  маркетинг строго opt-in. Toggle ставит tag `marketing_optin` в OneSignal;
+  серверные Edge Functions фильтруют по нему перед promo-рассылкой.
+
+`SettingsModal` открывается без логина (анонимы настраивают reminders).
+Редактор display name переехал из Settings в `UserProfile` (рядом с
+Sign Out / Delete Account).
+
+## Покупка без аккаунта
+
+`SubscriptionModal.handlePurchase` НЕ требует Supabase-аккаунта. RevenueCat
+сконфигурирован в анонимном режиме — `purchasePackage()` привязывает
+entitlement к `$RCAnonymousID` + Apple-чеку. `isPremium` берётся только из
+RevenueCat entitlements, не из `user`. При логине `useSubscription`
+вызывает `revenueCatService.login()` → анонимный ID алиасится на user.id,
+подписка переезжает. Никакой auth-стены перед Apple payment sheet.
