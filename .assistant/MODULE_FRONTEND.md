@@ -486,3 +486,53 @@ entitlement к `$RCAnonymousID` + Apple-чеку. `isPremium` берётся т�
 RevenueCat entitlements, не из `user`. При логине `useSubscription`
 вызывает `revenueCatService.login()` → анонимный ID алиасится на user.id,
 подписка переезжает. Никакой auth-стены перед Apple payment sheet.
+
+## Аналитика и трекинг
+
+Три независимых пайплайна — событие может уходить в один, два или все три.
+
+| Пайплайн | Файл | Куда ведёт | Назначение |
+|----------|------|-----------|------------|
+| Tenjin (MMP) | `src/lib/tenjin.ts` → нативный плагин `OndaTenjin` (iOS-only) | install-атрибуция → **AppLovin Axon**, SKAdNetwork | оптимизация платного трафика |
+| Product analytics | `src/services/AnalyticsService.ts` (синглтон `analytics`) | Supabase `app_events` | продуктовые воронки, дашборды |
+| Firebase Analytics | зеркало обоих пайплайнов | GA4 → Google Ads | конверсии Google Ads |
+
+### Tenjin → Axon — `src/lib/tenjin.ts`
+
+`trackTenjin*`-хелперы. Каждый шлёт событие в Tenjin SDK (только iOS — на
+Android/web no-op) И зеркалит в Firebase. События: практики
+(`view/start/stop/finish/close_practice` + per-practice slug), пейволл
+(`view/click/dismiss_paywall`), `start_trial`, `sign_up/in`,
+`tutorial_complete`, `first_practice_complete`, пермишены,
+`att_authorized`/`att_denied`, `watch_connected`, `level_up`,
+`circuit_complete`, `unlock_achievement`.
+
+- Имя события — единица оптимизации Axon. Дженерик-события (`view_practice`)
+  кормят бид-модель; slug-варианты (`view_practice_p1_1`) — для срезов в
+  дашборде Tenjin.
+- **SKAN**: `start_trial` шлётся клиентом на day 0 (каждая покупка ONDA
+  начинается с триала) — это conversion value в Tenjin CV-схеме. Реальная
+  выручка и trial→paid — серверно, через RevenueCat → Tenjin интеграцию,
+  НЕ из клиента. `_tenjinTransaction` намеренно не используется.
+- ATT: `trackTenjinAttResult()` шлёт `att_authorized` / `att_denied` —
+  разные имена, чтобы Axon оптимизировался на IDFA-opt-in когорту. Без
+  Firebase-зеркала: GA4 уже получает `att_prompt_result` из AnalyticsService.
+
+### Product analytics — `src/services/AnalyticsService.ts`
+
+Класс `AnalyticsService` (синглтон `analytics`, хук `useAnalytics`). Пишет в
+Supabase `app_events`, зеркалит в Firebase. Офлайн-очередь в `localStorage`,
+`anonymous_id` / `session_id` / UTM. Таксономия — union `AnalyticsEventName`
+(онбординг, пермишены, практики, пейволл, ошибки, диагностика). Бутстрап —
+`initializeAnalytics()` из `main.tsx` (только лог готовности, нативный
+Firebase SDK инициализируется сам).
+
+- `app_events` — миграция `20260105160000`, колонки: `event_name`,
+  `metadata` (jsonb), `created_at`, `user_id`, `anonymous_id`, `session_id`,
+  `platform`, `app_version`, `utm_*`. RLS: insert разрешён если `user_id` =
+  `auth.uid()` ИЛИ `null` (анонимы).
+- Воронка онбординга: `onboarding_start` (раз) + `onboarding_step` (на
+  каждый из 3 экранов) — видно, на каком экране отваливаются.
+
+⚠️ Это единственный модуль аналитики. Старый `src/services/analytics.ts`
+удалён (дубль с почти тем же именем и битыми именами колонок) — не воскрешать.
