@@ -62,7 +62,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "circadian-lighting-dark-therapy": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -74,7 +74,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "co2-tolerance-expanding-oxygen-limit": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "cognitive-architecture-neural-throughput": {
     "published": "2026-03-08T13:29:07+01:00",
@@ -86,7 +86,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cpg-neural-autopilot": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "digital-dementia-attentional-control": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -102,7 +102,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "electric-medicine-neuromodulation": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "endocrine-social-drive-oxytocin-testosterone": {
     "published": "2026-03-10T13:31:48Z",
@@ -110,11 +110,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "energy-governor-tsh": {
     "published": "2026-03-10T22:24:32Z",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "energy-sensor-leptin": {
     "published": "2026-03-10T14:37:54Z",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "fascial-tensegrity-protocol-myofascial-noise": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -134,7 +134,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glymphatic-flush-clearing-neural-cache": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "gut-brain-axis-data-link": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -142,7 +142,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "hrv-training-nervous-system-latency": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -186,7 +186,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "muscle-metabolic-marker": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "nervous-system-ping-latency": {
     "published": "2026-03-24T10:43:38Z",
@@ -198,7 +198,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "neural-entrainment-meditation-2": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "neural-hydraulics-csf-flow": {
     "published": "2026-03-30T20:30:05Z",
@@ -206,7 +206,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "neural-optimizer-estrogen": {
     "published": "2026-03-10T14:37:54Z",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "neural-signal-to-noise-cleaning-system-channel": {
     "published": "2026-04-21T12:43:38Z",
@@ -214,7 +214,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "neuroplasticity-flow-overclocking": {
     "published": "2026-02-26T15:36:15+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "nightly-flush-glymphatic-neural-cache": {
     "published": "2026-03-30T20:04:48Z",
@@ -262,7 +262,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "system-stability-serotonin": {
     "published": "2026-03-10T14:37:54Z",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-11T17:14:36+02:00"
   },
   "vagus-nerve-master-key": {
     "published": "2026-02-26T14:26:34+01:00",
