@@ -20,6 +20,14 @@ export function initSentry(): void {
       // a Capacitor WebView didn't earn its keep.
       integrations: [],
       tracesSampleRate: 0,
+      // The native Sentry-Cocoa SDK auto-captures every failed HTTP request
+      // (4xx/5xx) as an `HTTPClientError` event. In practice that's pure
+      // noise: transient 5xx from third-party SDKs (Firebase Installations,
+      // Google, OneSignal, Tenjin, Supabase, RevenueCat) — all auto-retried
+      // by those SDKs, none user-facing, none our bug. Real app failures
+      // surface as crashes / unhandled exceptions, which are still captured.
+      // Disabling this kills the noise category without losing signal.
+      enableCaptureFailedRequests: false,
       environment: import.meta.env.MODE,
       release: import.meta.env.VITE_SENTRY_RELEASE || 'onda-life@1.0.1',
     },
