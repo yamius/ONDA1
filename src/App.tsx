@@ -17,12 +17,9 @@ function App() {
   const [showTest, setShowTest] = useState(
     window.location.pathname === '/audio-test' || window.location.search.includes('test=audio')
   );
-  // TEMP: для TestFlight-проверки eye-scan спайк показывается всегда.
-  // Откатить после теста — вернуть строку из закомментированной ниже.
-  const [showEyeScan] = useState(true);
-  // const [showEyeScan] = useState(
-  //   window.location.pathname === '/eye-scan' || window.location.search.includes('test=eyescan')
-  // );
+  const [showEyeScan] = useState(
+    window.location.pathname === '/eye-scan' || window.location.search.includes('test=eyescan')
+  );
 
   useEffect(() => {
     initIOSAuthHandler();
