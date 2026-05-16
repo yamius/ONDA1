@@ -30,6 +30,11 @@ const bestHrvTrackers2026: Comparison = {
       takeaway: 'The Garmin training ecosystem plus competent HRV and multi-day battery, with no subscription.',
     },
     {
+      reviewSlug: 'withings-scanwatch',
+      award: 'Best hybrid watch',
+      takeaway: 'A discreet analog watch with medical-grade ECG and a ~30-day battery — clinical screening, no subscription.',
+    },
+    {
       reviewSlug: 'samsung-galaxy-ring',
       award: 'Best for Android',
       takeaway: 'Oura-style ring tracking for Android users, with no subscription — if you live in Samsung Health.',
@@ -85,7 +90,7 @@ All of them were assessed from manufacturer specifications, independent 2026 rev
 
 The scores cluster tightly — every device here is genuinely capable, and the right pick is mostly about how you want to wear it. The Oura Ring 4 wins because it does the core job, overnight HRV and sleep, better than anything else you can wear around the clock. The Polar H10 would top a pure-accuracy ranking, but a chest strap is a deliberate instrument, not a lifestyle wearable. From there it splits by need: Whoop for athletes, RingConn for value, Samsung for Android, Garmin and Apple for an all-day do-everything device, Fitbit for a budget start — and the Ultrahuman Ring Air only with its battery-reliability caveat firmly in mind.`,
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-05-16',
 }
 
 export default bestHrvTrackers2026

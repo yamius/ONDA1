@@ -32,6 +32,7 @@ import samsungGalaxyRing from './samsung-galaxy-ring'
 import ultrahumanRingAir from './ultrahuman-ring-air'
 import ringconnGen2 from './ringconn-gen-2'
 import fitbitCharge6 from './fitbit-charge-6'
+import withingsScanwatch from './withings-scanwatch'
 import calm from './calm'
 import headspace from './headspace'
 import insightTimer from './insight-timer'
@@ -41,6 +42,7 @@ import healthyMindsProgram from './healthy-minds-program'
 import smilingMind from './smiling-mind'
 import happierMeditation from './happier-meditation'
 import medito from './medito'
+import buddhify from './buddhify'
 import sleepCycle from './sleep-cycle'
 import sleepio from './sleepio'
 import sleepscore from './sleepscore'
@@ -66,6 +68,7 @@ export const reviews: ToolReview[] = [
   appleWatchSeries11,
   ringconnGen2,
   fitbitCharge6,
+  withingsScanwatch,
   insightTimer,
   healthyMindsProgram,
   headspace,
@@ -75,6 +78,7 @@ export const reviews: ToolReview[] = [
   wakingUp,
   happierMeditation,
   medito,
+  buddhify,
   sleepio,
   sleepCycle,
   sleepscore,

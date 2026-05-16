@@ -54,6 +54,11 @@ const bestMeditationApps2026: Comparison = {
       award: 'Best fully free',
       takeaway: 'Open-source, ad-free and free forever, with no account — the no-strings choice.',
     },
+    {
+      reviewSlug: 'buddhify',
+      award: 'Best one-time purchase',
+      takeaway: 'Pay once and own it — meditations organised around what you are actually doing, no subscription.',
+    },
   ],
   verdict:
     'Insight Timer wins overall — an unmatched library and a free tier you can genuinely build a practice on. But the field below it is close and splits cleanly by what you want. For evidence above all, the free Healthy Minds Program is the standout. Beginners should start with Headspace; Calm owns sleep; Smiling Mind fits families; Balance adapts to you. Waking Up and Happier Meditation are the depth-and-teaching picks for practitioners past the basics, and Medito is the no-strings, free-forever option. Notably, three of the strongest apps here — Healthy Minds, Smiling Mind and Medito — cost nothing at all.',
@@ -85,7 +90,7 @@ Each app was assessed from public information, app-store data and independent 20
 
 The apps are close, and the right answer depends on where you are — and on your budget. Insight Timer wins for range and for being genuinely free. The free, science-based apps punch hard: the Healthy Minds Program lands second overall. Headspace is the cleanest start for a beginner, Calm owns sleep, Smiling Mind fits families, Balance adapts to you, and Waking Up and Happier Meditation go deepest on teaching. Medito is the open-source, free-forever pick. Start with the row that matches your stage and your wallet, not the highest number.`,
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-05-16',
 }
 
 export default bestMeditationApps2026
