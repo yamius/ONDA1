@@ -4,22 +4,40 @@
  * Renders the editorial score, the per-criterion breakdown, pros/cons,
  * price snapshot, the markdown body and references. JSON-LD (Review +
  * itemReviewed Product) is injected at build time by meta-inject.ts.
+ *
+ * Body content is localised via the `reviews` i18n namespace
+ * (bodies.<slug>.*), falling back to the English fields in the data file.
  */
-import { useParams, Link } from 'react-router-dom'
+import { useParams, useLocation, Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
 import { getReviewBySlug, getCriterion } from '../data/reviews'
-import type { TestStatus } from '../data/reviews'
-
-const TEST_STATUS_LABEL: Record<TestStatus, string> = {
-  'hands-on': 'Hands-on tested',
-  'evidence-based': 'Evidence-based assessment',
-}
+import { langFromPath } from '../i18n'
 
 export function ReviewPage() {
   const { slug } = useParams<{ slug: string }>()
+  const { pathname } = useLocation()
+  const lang = langFromPath(pathname)
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
+  const { t: tReviews } = useTranslation('reviews')
   const review = slug ? getReviewBySlug(slug) : undefined
   if (!review) return <NotFoundPage />
+
+  // Translation helpers — fall back to the original EN field if no translation.
+  const tField = (key: string, fallback: string): string =>
+    tReviews(`bodies.${slug}.${key}`, { defaultValue: fallback }) as string
+  const tList = (key: string, fallback: string[]): string[] => {
+    const v = tReviews(`bodies.${slug}.${key}`, { returnObjects: true, defaultValue: fallback })
+    return Array.isArray(v) ? (v as string[]) : fallback
+  }
+  const tVerdict = tField('verdict', review.verdict)
+  const tSummary = tField('summary', review.summary)
+  const tBestFor = tField('bestFor', review.bestFor)
+  const tTestNote = tField('testNote', review.testNote)
+  const tContent = tField('content', review.content)
+  const tPros = tList('pros', review.pros)
+  const tCons = tList('cons', review.cons)
 
   const related = (review.relatedSlugs ?? [])
     .map((s) => getReviewBySlug(s))
@@ -31,9 +49,9 @@ export function ReviewPage() {
         className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30"
         aria-label="Breadcrumb"
       >
-        <Link to="/" className="transition-colors hover:text-white/50">Home</Link>
+        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
         <span>/</span>
-        <Link to="/reviews" className="transition-colors hover:text-white/50">Reviews</Link>
+        <Link to={`${langPrefix}/reviews`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">{review.name}</span>
       </nav>
@@ -46,7 +64,7 @@ export function ReviewPage() {
           {review.productType}
         </span>
         <span className="rounded-md border border-terminal-cyan/20 bg-terminal-cyan/5 px-3 py-0.5 font-mono text-[10px] text-terminal-cyan/80">
-          {TEST_STATUS_LABEL[review.testStatus]}
+          {tReviews(`testStatus.${review.testStatus}`)}
         </span>
       </div>
 
@@ -54,7 +72,7 @@ export function ReviewPage() {
         {review.name} review
       </h1>
       <p className="mb-6 font-mono text-xs text-white/30">
-        Updated {review.dateModified}
+        {tReviews('ui.updated')} {review.dateModified}
       </p>
 
       {/* Score + verdict */}
@@ -66,17 +84,17 @@ export function ReviewPage() {
           <div className="font-mono text-[10px] tracking-widest text-white/30">/ 10</div>
         </div>
         <div>
-          <p className="mb-1 font-semibold text-white/90">{review.verdict}</p>
-          <p className="font-mono text-xs text-white/40">{review.bestFor}</p>
+          <p className="mb-1 font-semibold text-white/90">{tVerdict}</p>
+          <p className="font-mono text-xs text-white/40">{tBestFor}</p>
         </div>
       </div>
 
       <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
-        {review.summary}
+        {tSummary}
       </p>
       <p className="mb-8 font-mono text-xs leading-relaxed text-white/40">
-        <span className="text-white/60">How we tested: </span>
-        {review.testNote}
+        <span className="text-white/60">{tReviews('ui.howWeTested')} </span>
+        {tTestNote}
       </p>
 
       <a
@@ -89,18 +107,18 @@ export function ReviewPage() {
         }
         className="mb-3 inline-block rounded-lg border border-terminal-green/30 px-5 py-2 font-mono text-xs text-terminal-green transition-colors hover:bg-terminal-green/10"
       >
-        Visit {review.brand} official site →
+        {tReviews('ui.visitSite', { brand: review.brand })}
       </a>
       {review.linkType === 'affiliate' && (
         <p className="mb-10 font-mono text-[10px] text-white/30">
-          Affiliate link — ONDA may earn a commission. It does not affect the score.
+          {tReviews('ui.affiliateNote')}
         </p>
       )}
       {review.linkType !== 'affiliate' && <div className="mb-10" />}
 
       {/* Criterion breakdown */}
       <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-green/90">
-        [ SCORE_BREAKDOWN ]
+        {tReviews('ui.scoreBreakdown')}
       </h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">
         {review.scores.map((s) => {
@@ -109,7 +127,7 @@ export function ReviewPage() {
             <div key={s.criterionId} className="py-4">
               <div className="mb-1 flex items-baseline justify-between gap-4">
                 <h3 className="font-semibold">
-                  {criterion?.label ?? s.criterionId}
+                  {tReviews(`criteria.${s.criterionId}`, { defaultValue: criterion?.label ?? s.criterionId })}
                 </h3>
                 <span className="shrink-0 font-mono text-xs font-bold text-terminal-green">
                   {s.score.toFixed(1)}
@@ -121,7 +139,9 @@ export function ReviewPage() {
                   style={{ width: `${Math.max(0, Math.min(100, s.score * 10))}%` }}
                 />
               </div>
-              <p className="font-mono text-xs leading-relaxed text-white/50">{s.note}</p>
+              <p className="font-mono text-xs leading-relaxed text-white/50">
+                {tReviews(`bodies.${slug}.scoreNotes.${s.criterionId}`, { defaultValue: s.note })}
+              </p>
             </div>
           )
         })}
@@ -131,10 +151,10 @@ export function ReviewPage() {
       <div className="mb-10 grid gap-6 md:grid-cols-2">
         <div>
           <h2 className="mb-3 font-mono text-xs font-bold uppercase tracking-widest text-terminal-green/80">
-            Pros
+            {tReviews('ui.pros')}
           </h2>
           <ul className="space-y-2">
-            {review.pros.map((p, i) => (
+            {tPros.map((p, i) => (
               <li key={i} className="font-mono text-xs leading-relaxed text-white/60">
                 <span className="mr-2 text-terminal-green/60">+</span>{p}
               </li>
@@ -143,10 +163,10 @@ export function ReviewPage() {
         </div>
         <div>
           <h2 className="mb-3 font-mono text-xs font-bold uppercase tracking-widest text-rose-400/70">
-            Cons
+            {tReviews('ui.cons')}
           </h2>
           <ul className="space-y-2">
-            {review.cons.map((c, i) => (
+            {tCons.map((c, i) => (
               <li key={i} className="font-mono text-xs leading-relaxed text-white/60">
                 <span className="mr-2 text-rose-400/60">−</span>{c}
               </li>
@@ -157,23 +177,23 @@ export function ReviewPage() {
 
       {review.price && (
         <p className="mb-10 font-mono text-xs text-white/50">
-          <span className="text-white/70">Price: </span>
+          <span className="text-white/70">{tReviews('ui.price')} </span>
           ${review.price.usd}
           {review.price.note ? ` ${review.price.note}` : ''}
-          <span className="text-white/30"> (as of {review.price.asOf})</span>
+          <span className="text-white/30"> ({tReviews('ui.asOf')} {review.price.asOf})</span>
         </p>
       )}
 
-      {review.content && (
+      {tContent && (
         <article className="prose-onda mb-10">
-          <Markdown>{review.content}</Markdown>
+          <Markdown>{tContent}</Markdown>
         </article>
       )}
 
       {review.references && review.references.length > 0 && (
         <section className="mb-10">
           <h2 className="mb-3 font-mono text-xs font-bold uppercase tracking-widest text-white/40">
-            References
+            {tReviews('ui.references')}
           </h2>
           <ol className="list-decimal space-y-1 pl-5">
             {review.references.map((ref, i) => (
@@ -195,13 +215,13 @@ export function ReviewPage() {
       {related.length > 0 && (
         <section className="mb-10">
           <h2 className="mb-3 font-mono text-xs font-bold uppercase tracking-widest text-terminal-green/80">
-            Related reviews
+            {tReviews('ui.relatedReviews')}
           </h2>
           <div className="grid gap-3">
             {related.map((r) => (
               <Link
                 key={r.slug}
-                to={`/reviews/${r.slug}`}
+                to={`${langPrefix}/reviews/${r.slug}`}
                 className="glass-card group flex items-center justify-between gap-4 rounded-lg p-4 transition-all hover:border-terminal-green/20"
               >
                 <span className="font-semibold transition-colors group-hover:text-terminal-green">
@@ -218,10 +238,10 @@ export function ReviewPage() {
 
       <div className="mt-4">
         <Link
-          to="/reviews"
+          to={`${langPrefix}/reviews`}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
-          ← All reviews
+          {tReviews('ui.allReviews')}
         </Link>
       </div>
     </div>

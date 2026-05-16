@@ -2,57 +2,65 @@
  * /reviews — hub for ONDA's biohacking-tool reviews and comparisons.
  * Lists comparison round-ups and individual product reviews, and links
  * to the public scoring methodology.
+ *
+ * Localised via the `reviews` i18n namespace, falling back to English.
  */
-import { Link } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { reviews, comparisons, REVIEW_CATEGORIES, CATEGORY_LABELS } from '../data/reviews'
+import { langFromPath } from '../i18n'
 
 export function ReviewsPage() {
+  const { pathname } = useLocation()
+  const lang = langFromPath(pathname)
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
+  const { t: tReviews } = useTranslation('reviews')
+
   return (
     <div className="mx-auto max-w-5xl px-4 pb-16 pt-6 md:px-6">
       <nav
         className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30"
         aria-label="Breadcrumb"
       >
-        <Link to="/" className="transition-colors hover:text-white/50">Home</Link>
+        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
         <span>/</span>
-        <span className="text-terminal-green/60" aria-current="page">Reviews</span>
+        <span className="text-terminal-green/60" aria-current="page">{tReviews('breadcrumb.reviews')}</span>
       </nav>
 
       <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
         [ REVIEWS ]
       </div>
       <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-5xl">
-        Biohacking Tool Reviews
+        {tReviews('hub.h1')}
       </h1>
       <p className="mb-6 max-w-2xl font-mono text-sm leading-relaxed text-white/50">
-        Independent, criteria-based reviews of biohacking tools — HRV trackers and
-        meditation apps — scored against a fixed, public rubric, not on hype.
+        {tReviews('hub.intro')}
       </p>
       <Link
-        to="/reviews/methodology"
+        to={`${langPrefix}/reviews/methodology`}
         className="mb-12 inline-block font-mono text-xs text-terminal-cyan/70 transition-colors hover:text-terminal-cyan"
       >
-        → How we score (methodology)
+        {tReviews('hub.methodologyLink')}
       </Link>
 
       {comparisons.length > 0 && (
         <section className="mb-14">
           <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-green/90">
-            [ COMPARISONS ]
+            {tReviews('ui.comparisonsHeading')}
           </h2>
           <div className="grid gap-3">
             {comparisons.map((c) => (
               <Link
                 key={c.slug}
-                to={`/reviews/compare/${c.slug}`}
+                to={`${langPrefix}/reviews/compare/${c.slug}`}
                 className="glass-card group flex items-start justify-between gap-4 rounded-lg p-5 transition-all hover:border-terminal-green/20"
               >
                 <div className="min-w-0">
                   <h3 className="font-semibold transition-colors group-hover:text-terminal-green">
-                    {c.title}
+                    {tReviews(`comparisons.${c.slug}.title`, { defaultValue: c.title })}
                   </h3>
                   <p className="mt-1 font-mono text-xs text-white/40 line-clamp-2">
-                    {c.description}
+                    {tReviews(`comparisons.${c.slug}.description`, { defaultValue: c.description })}
                   </p>
                 </div>
                 <span className="font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
@@ -70,13 +78,13 @@ export function ReviewsPage() {
         return (
           <section key={cat} className="mb-12">
             <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-cyan/80">
-              [ {CATEGORY_LABELS[cat].toUpperCase()} ]
+              [ {tReviews(`categories.${cat}`, { defaultValue: CATEGORY_LABELS[cat] }).toUpperCase()} ]
             </h2>
             <div className="grid gap-6 md:grid-cols-2">
               {catReviews.map((r) => (
                 <Link
                   key={r.slug}
-                  to={`/reviews/${r.slug}`}
+                  to={`${langPrefix}/reviews/${r.slug}`}
                   className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/20"
                 >
                   <div className="mb-2 flex items-center justify-between">
@@ -92,7 +100,7 @@ export function ReviewsPage() {
                     {r.name}
                   </h3>
                   <p className="font-mono text-xs leading-relaxed text-white/40">
-                    {r.verdict}
+                    {tReviews(`bodies.${r.slug}.verdict`, { defaultValue: r.verdict })}
                   </p>
                 </Link>
               ))}

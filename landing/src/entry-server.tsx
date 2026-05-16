@@ -100,6 +100,18 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />
           <Route path="/reviews/:slug"         element={<ReviewPage />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`reviews-${l}`} path={`/${l}/reviews`} element={<ReviewsPage />} />
+          ))}
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`rev-method-${l}`} path={`/${l}/reviews/methodology`} element={<ReviewMethodologyPage />} />
+          ))}
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`rev-cmp-${l}`} path={`/${l}/reviews/compare/:slug`} element={<ComparisonPage />} />
+          ))}
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`rev-${l}`} path={`/${l}/reviews/:slug`} element={<ReviewPage />} />
+          ))}
           <Route path="*"               element={<NotFoundPage />} />
         </Route>
       </Routes>

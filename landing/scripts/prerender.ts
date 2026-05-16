@@ -24,8 +24,9 @@ import {
   parsePartRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, articleLocalizedLangs } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, TITLE_MAX, DESC_MAX } from './meta-inject'
+import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const projectRoot = join(__dirname, '..')
@@ -111,6 +112,55 @@ function buildHreflangLinksForArticle(slug: string, langs: readonly string[]): s
   tags.push(`<link rel="alternate" hreflang="x-default" href="${articleUrlFor(slug, 'en')}">`)
   return tags.join('\n  ')
 }
+
+/**
+ * Subset of the per-locale reviews.json shape read at prerender time.
+ * Carries the localised SEO description for review pages, plus the
+ * hub intro and per-comparison title/description.
+ */
+interface ReviewsFile {
+  hub?: { h1?: string; intro?: string }
+  bodies?: Record<string, { description?: string }>
+  comparisons?: Record<string, { title?: string; description?: string }>
+}
+const reviewsByLang: Record<Lang, ReviewsFile> = {} as Record<Lang, ReviewsFile>
+for (const lang of SUPPORTED_LANGS) {
+  reviewsByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'reviews.json'), 'utf-8')) as ReviewsFile
+}
+
+/** Parse a review hub / review / comparison route into {lang, kind, slug}. */
+function parseReviewRoute(
+  route: string,
+): { lang: Lang; kind: 'hub' | 'review' | 'comparison'; slug: string } | null {
+  let m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews$/)
+  if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'hub', slug: '' }
+  m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/compare\/([^/]+)$/)
+  if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'comparison', slug: m[2] }
+  m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/([^/]+)$/)
+  if (m && m[2] !== 'methodology') return { lang: ((m[1] as Lang) ?? 'en'), kind: 'review', slug: m[2] }
+  return null
+}
+
+function reviewUrlFor(kind: 'hub' | 'review' | 'comparison', slug: string, lang: Lang): string {
+  const base =
+    kind === 'hub' ? '/reviews' : kind === 'comparison' ? `/reviews/compare/${slug}` : `/reviews/${slug}`
+  return lang === 'en' ? `${SITE_URL}${base}` : `${SITE_URL}/${lang}${base}`
+}
+
+/** Hreflang cluster for a review/comparison — only languages with a localised URL. */
+function buildHreflangLinksForReview(
+  kind: 'hub' | 'review' | 'comparison',
+  slug: string,
+  langs: readonly string[],
+): string {
+  const tags: string[] = []
+  for (const lang of langs) {
+    tags.push(`<link rel="alternate" hreflang="${lang}" href="${reviewUrlFor(kind, slug, lang as Lang)}">`)
+  }
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${reviewUrlFor(kind, slug, 'en')}">`)
+  return tags.join('\n  ')
+}
+
 // Part translations per language. The `parts` block is empty for languages
 // whose body content hasn't been translated yet — we use this presence check
 // to decide whether to apply localized meta + hreflang or fall back to EN.
@@ -322,6 +372,7 @@ for (const route of routes) {
     const isLevelLocalized = LOCALIZED_LEVEL_ROUTE_SET.has(route)
     const isPartLocalized = LOCALIZED_PART_ROUTE_SET.has(route)
     const isArticleLocalized = LOCALIZED_ARTICLE_ROUTE_SET.has(route)
+    const isReviewLocalized = LOCALIZED_REVIEW_ROUTE_SET.has(route)
     const metricInfo = isMetricLocalized ? parseMetricRoute(route) : null
     const levelInfo = isLevelLocalized ? parseLevelRoute(route) : null
     const partInfo = isPartLocalized ? parsePartRoute(route) : null
@@ -329,12 +380,16 @@ for (const route of routes) {
     // emit a hreflang cluster on the EN side when the slug has a
     // localised sibling. parseArticleRoute returns lang='en' for the EN URL.
     const articleInfo = parseArticleRoute(route)
+    // reviewInfo fires for EN review/comparison/hub routes too — used to
+    // emit a hreflang cluster on the EN side when a RU sibling exists.
+    const reviewInfo = parseReviewRoute(route)
     const lang: Lang = isLocalized
       ? langFromPath(route)
       : metricInfo ? metricInfo.lang
       : levelInfo ? levelInfo.lang
       : partInfo ? partInfo.lang
       : isArticleLocalized && articleInfo ? articleInfo.lang
+      : isReviewLocalized && reviewInfo ? reviewInfo.lang
       : 'en'
     const basePath = isLocalized ? stripLangPrefix(route) : route
 
@@ -354,7 +409,15 @@ for (const route of routes) {
     // equivalent so injectMetaIntoHtml emits the proper TechArticle
     // JSON-LD, FAQPage, HowTo, breadcrumbs etc. Localised strings are
     // patched in the article branch below.
-    const metaRoute = isArticleLocalized && articleInfo ? `/articles/${articleInfo.slug}` : route
+    const metaRoute = isArticleLocalized && articleInfo
+      ? `/articles/${articleInfo.slug}`
+      : isReviewLocalized && reviewInfo
+        ? (reviewInfo.kind === 'hub'
+            ? '/reviews'
+            : reviewInfo.kind === 'comparison'
+              ? `/reviews/compare/${reviewInfo.slug}`
+              : `/reviews/${reviewInfo.slug}`)
+        : route
     const meta = getMetaForRoute(metaRoute)
     out = injectMetaIntoHtml(out, meta)
 
@@ -448,6 +511,59 @@ for (const route of routes) {
         // EN URL whose slug has a localised sibling — emit cluster from EN side
         // so Google/Bing find the alt-language URLs from the EN page too.
         const hreflang = buildHreflangLinksForArticle(articleInfo.slug, articleLangs)
+        out = out.replace('</head>', `  ${hreflang}\n</head>`)
+      }
+    } else if (reviewInfo) {
+      // Review hub / review / comparison route — either the EN URL or a
+      // localised /<lang>/reviews/... URL (RU pilot: sleep-app category).
+      const reviewLangs =
+        reviewInfo.kind === 'hub' ? ['en', 'ru'] : reviewLocalizedLangs(reviewInfo.slug)
+      const hasLocalizedSibling = reviewLangs.length > 1
+      out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${reviewInfo.lang}"`)
+
+      if (reviewInfo.lang !== 'en') {
+        const rf = reviewsByLang[reviewInfo.lang]
+        let title = ''
+        let desc = ''
+        if (reviewInfo.kind === 'hub') {
+          title = rf.hub?.h1 ? `${rf.hub.h1} | ONDA Life` : ''
+          desc = rf.hub?.intro ?? ''
+        } else if (reviewInfo.kind === 'comparison') {
+          const c = rf.comparisons?.[reviewInfo.slug]
+          title = c?.title ? `${c.title} | ONDA Life` : ''
+          desc = c?.description ?? ''
+        } else {
+          const review = getReviewBySlug(reviewInfo.slug)
+          if (review) {
+            title = `${review.name} — обзор и оценка ${review.overallScore.toFixed(1)}/10 | ONDA Life`
+          }
+          desc = rf.bodies?.[reviewInfo.slug]?.description ?? ''
+        }
+        const url = reviewUrlFor(reviewInfo.kind, reviewInfo.slug, reviewInfo.lang)
+        const escUrl = escAttr(url)
+        out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
+        if (title) {
+          const escTitle = escAttr(title)
+          out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
+          out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escTitle}">`)
+        }
+        if (desc) {
+          const escDesc = escAttr(desc)
+          out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escDesc}">`)
+        }
+        out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+        const hreflang = buildHreflangLinksForReview(reviewInfo.kind, reviewInfo.slug, reviewLangs)
+        const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[reviewInfo.lang]}">`
+        out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
+      } else if (hasLocalizedSibling) {
+        // EN URL whose slug has a localised sibling — emit cluster from EN side.
+        const hreflang = buildHreflangLinksForReview(reviewInfo.kind, reviewInfo.slug, reviewLangs)
         out = out.replace('</head>', `  ${hreflang}\n</head>`)
       }
     }

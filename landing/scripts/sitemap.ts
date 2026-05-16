@@ -8,7 +8,7 @@
 import { writeFileSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs, INDEXED_TOPIC_SLUGS } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs, RU_PILOT_REVIEW_SLUGS, RU_PILOT_COMPARISON_SLUGS, INDEXED_TOPIC_SLUGS } from './prerender-routes'
 import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, type Lang } from '../src/i18n'
 import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
 import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
@@ -119,13 +119,13 @@ function getLastmod(route: string): string | null {
     const d = ARTICLE_DATES['__glossary']
     return d ? (d.modified || d.published).slice(0, 10) : null
   }
-  const cmpSlug = route.match(/^\/reviews\/compare\/([^/]+)$/)?.[1]
+  const cmpSlug = route.match(/^(?:\/(?:es|ru|uk|zh))?\/reviews\/compare\/([^/]+)$/)?.[1]
   if (cmpSlug) {
     const c = getComparisonBySlug(cmpSlug)
     return c ? c.dateModified.slice(0, 10) : null
   }
-  const revSlug = route.match(/^\/reviews\/([^/]+)$/)?.[1]
-  if (revSlug) {
+  const revSlug = route.match(/^(?:\/(?:es|ru|uk|zh))?\/reviews\/([^/]+)$/)?.[1]
+  if (revSlug && revSlug !== 'methodology') {
     const r = getReviewBySlug(revSlug)
     return r ? r.dateModified.slice(0, 10) : null
   }
@@ -210,6 +210,32 @@ for (const slug of ALL_PILOT_ARTICLE_SLUGS) {
   altsByArticle[slug] = tags.join('\n')
 }
 
+/** Pre-build hreflang alternates for review/comparison/hub pages with a RU
+ *  sibling (RU pilot — Sleep apps category). Emitted on EN and RU URLs. */
+function reviewCluster(enPath: string): string {
+  const tags = ['en', 'ru'].map((l) => {
+    const href = l === 'en' ? `${SITE_URL}${enPath}` : `${SITE_URL}/${l}${enPath}`
+    return `    <xhtml:link rel="alternate" hreflang="${l}" href="${href}"/>`
+  })
+  tags.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${enPath}"/>`)
+  return tags.join('\n')
+}
+const altsByReviewSlug: Record<string, string> = {}
+for (const slug of RU_PILOT_REVIEW_SLUGS) altsByReviewSlug[slug] = reviewCluster(`/reviews/${slug}`)
+const altsByComparisonSlug: Record<string, string> = {}
+for (const slug of RU_PILOT_COMPARISON_SLUGS) altsByComparisonSlug[slug] = reviewCluster(`/reviews/compare/${slug}`)
+const reviewHubAlts = reviewCluster('/reviews')
+
+/** Hreflang cluster for a review hub / review / comparison route, or '' . */
+function reviewAlternates(path: string): string {
+  if (path === '/reviews' || path === '/ru/reviews') return reviewHubAlts
+  let m = path.match(/^(?:\/ru)?\/reviews\/compare\/([^/]+)$/)
+  if (m) return altsByComparisonSlug[m[1]] ?? ''
+  m = path.match(/^(?:\/ru)?\/reviews\/([^/]+)$/)
+  if (m && m[1] !== 'methodology') return altsByReviewSlug[m[1]] ?? ''
+  return ''
+}
+
 /** Pre-build hreflang alternates for each part — only languages with translations. */
 const altsByPart: Record<string, string> = {}
 for (const slug of PART_SLUGS) {
@@ -252,6 +278,10 @@ const urls = routes.map((path) => {
   } else if (articleSlug && altsByArticle[articleSlug]) {
     // EN /articles/<slug> for a slug that has a localised sibling.
     alternates = `\n${altsByArticle[articleSlug]}`
+  } else {
+    // Review hub / review / comparison — EN or RU (pilot: Sleep apps).
+    const revAlts = reviewAlternates(path)
+    if (revAlts) alternates = `\n${revAlts}`
   }
   const lastmodTag = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''
   return `  <url>

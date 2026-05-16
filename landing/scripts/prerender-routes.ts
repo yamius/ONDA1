@@ -88,6 +88,35 @@ export const ES_PILOT_ARTICLE_SLUGS: readonly string[] = [
 
 const localizedEsArticleRoutes = ES_PILOT_ARTICLE_SLUGS.map((s) => `/es/articles/${s}`)
 const localizedRuArticleRoutes = RU_PILOT_ARTICLE_SLUGS.map((s) => `/ru/articles/${s}`)
+
+/**
+ * RU review-localisation pilot. The Sleep apps category is the first
+ * review category to ship a reviewed Russian translation (bodies live in
+ * public/locales/ru/reviews.json). Each slug listed here gets a
+ * prerendered /ru/reviews/<slug> page plus an en+ru+x-default hreflang
+ * cluster. Expand category by category once each RU translation block is
+ * reviewed end-to-end — same gating discipline as the article pilots.
+ */
+const RU_PILOT_REVIEW_CATEGORIES = new Set<string>(['sleep-app'])
+const ruPilotReviews = reviews.filter((r) => RU_PILOT_REVIEW_CATEGORIES.has(r.category))
+const ruPilotComparisons = comparisons.filter((c) => RU_PILOT_REVIEW_CATEGORIES.has(c.category))
+const localizedRuReviewRoutes = [
+  '/ru/reviews',
+  ...ruPilotReviews.map((r) => `/ru/reviews/${r.slug}`),
+  ...ruPilotComparisons.map((c) => `/ru/reviews/compare/${c.slug}`),
+]
+
+/** Review slugs with a localised RU URL prerendered. */
+export const RU_PILOT_REVIEW_SLUGS: readonly string[] = ruPilotReviews.map((r) => r.slug)
+/** Comparison slugs with a localised RU URL prerendered. */
+export const RU_PILOT_COMPARISON_SLUGS: readonly string[] = ruPilotComparisons.map((c) => c.slug)
+
+/** Languages that have a localised URL prerendered for a review/comparison slug. */
+export function reviewLocalizedLangs(slug: string): readonly string[] {
+  const langs: string[] = ['en']
+  if (RU_PILOT_REVIEW_SLUGS.includes(slug) || RU_PILOT_COMPARISON_SLUGS.includes(slug)) langs.push('ru')
+  return langs
+}
 const ES_PILOT_ARTICLE_SET = new Set<string>(ES_PILOT_ARTICLE_SLUGS)
 const RU_PILOT_ARTICLE_SET = new Set<string>(RU_PILOT_ARTICLE_SLUGS)
 
@@ -144,6 +173,7 @@ export function getPrerenderRoutes(): string[] {
     ...topicHubRoutes,
     ...reviews.map((r) => `/reviews/${r.slug}`),
     ...comparisons.map((c) => `/reviews/compare/${c.slug}`),
+    ...localizedRuReviewRoutes,
   ]
 }
 
@@ -167,6 +197,9 @@ export const LOCALIZED_ARTICLE_ROUTE_SET = new Set([
   ...localizedEsArticleRoutes,
   ...localizedRuArticleRoutes,
 ])
+
+/** Set of localized review/comparison routes (RU pilot). */
+export const LOCALIZED_REVIEW_ROUTE_SET = new Set(localizedRuReviewRoutes)
 
 /** EN base paths that have localized variants — used by sitemap for hreflang grouping. */
 export const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)

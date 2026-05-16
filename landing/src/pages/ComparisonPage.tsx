@@ -3,8 +3,12 @@
  * ToolReviews into one round-up. The ranked picks and the comparison
  * table are the artifact AI answer engines extract for "best X" queries.
  * ItemList + FAQPage JSON-LD is injected at build time by meta-inject.ts.
+ *
+ * Body content is localised via the `reviews` i18n namespace
+ * (comparisons.<slug>.*), falling back to the English data file.
  */
-import { useParams, Link } from 'react-router-dom'
+import { useParams, useLocation, Link } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
 import {
@@ -13,11 +17,23 @@ import {
   getReviewBySlug,
   getCriteria,
 } from '../data/reviews'
+import { langFromPath } from '../i18n'
 
 export function ComparisonPage() {
   const { slug } = useParams<{ slug: string }>()
+  const { pathname } = useLocation()
+  const lang = langFromPath(pathname)
+  const langPrefix = lang === 'en' ? '' : `/${lang}`
+  const { t: tReviews } = useTranslation('reviews')
   const comparison = slug ? getComparisonBySlug(slug) : undefined
   if (!comparison) return <NotFoundPage />
+
+  const tField = (key: string, fallback: string): string =>
+    tReviews(`comparisons.${slug}.${key}`, { defaultValue: fallback }) as string
+  const tTitle = tField('title', comparison.title)
+  const tIntro = tField('intro', comparison.intro)
+  const tVerdict = tField('verdict', comparison.verdict)
+  const tContent = tField('content', comparison.content)
 
   const tableReviews = getReviewsForComparison(comparison)
   const criteria = getCriteria(comparison.category)
@@ -28,30 +44,30 @@ export function ComparisonPage() {
         className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30"
         aria-label="Breadcrumb"
       >
-        <Link to="/" className="transition-colors hover:text-white/50">Home</Link>
+        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
         <span>/</span>
-        <Link to="/reviews" className="transition-colors hover:text-white/50">Reviews</Link>
+        <Link to={`${langPrefix}/reviews`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
         <span>/</span>
-        <span className="text-terminal-green/60" aria-current="page">{comparison.title}</span>
+        <span className="text-terminal-green/60" aria-current="page">{tTitle}</span>
       </nav>
 
       <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-        [ COMPARISON ]
+        {tReviews('ui.comparisonTag')}
       </div>
       <h1 className="mb-2 text-2xl font-bold tracking-tight md:text-4xl">
-        {comparison.title}
+        {tTitle}
       </h1>
       <p className="mb-6 font-mono text-xs text-white/30">
-        Updated {comparison.dateModified}
+        {tReviews('ui.updated')} {comparison.dateModified}
       </p>
       <p className="mb-12 font-mono text-sm leading-relaxed text-white/60">
-        {comparison.intro}
+        {tIntro}
       </p>
 
       {/* Ranked picks */}
       <section className="mb-12">
         <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-green/90">
-          [ TOP_PICKS ]
+          {tReviews('ui.topPicks')}
         </h2>
         <div className="grid gap-3">
           {comparison.picks.map((pick, i) => {
@@ -67,12 +83,12 @@ export function ComparisonPage() {
                     #{i + 1}
                   </span>
                   <span className="rounded-md border border-terminal-green/20 bg-terminal-green/5 px-3 py-0.5 font-mono text-[10px] tracking-wider text-terminal-green">
-                    {pick.award}
+                    {tReviews(`comparisons.${slug}.picks.${pick.reviewSlug}.award`, { defaultValue: pick.award })}
                   </span>
                 </div>
                 <div className="mb-1 flex items-baseline justify-between gap-4">
                   <Link
-                    to={`/reviews/${r.slug}`}
+                    to={`${langPrefix}/reviews/${r.slug}`}
                     className="font-semibold transition-colors hover:text-terminal-green"
                   >
                     {r.name}
@@ -83,7 +99,7 @@ export function ComparisonPage() {
                   </span>
                 </div>
                 <p className="font-mono text-xs leading-relaxed text-white/50">
-                  {pick.takeaway}
+                  {tReviews(`comparisons.${slug}.picks.${pick.reviewSlug}.takeaway`, { defaultValue: pick.takeaway })}
                 </p>
               </div>
             )
@@ -95,17 +111,17 @@ export function ComparisonPage() {
       {tableReviews.length > 0 && (
         <section className="mb-12">
           <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-cyan/80">
-            [ COMPARISON_TABLE ]
+            {tReviews('ui.comparisonTable')}
           </h2>
           <div className="overflow-x-auto">
             <table className="w-full border-collapse font-mono text-xs">
               <thead>
                 <tr className="border-b border-white/10 text-left text-white/40">
-                  <th scope="col" className="py-2 pr-4 font-semibold">Product</th>
-                  <th scope="col" className="px-3 py-2 font-semibold">Overall</th>
+                  <th scope="col" className="py-2 pr-4 font-semibold">{tReviews('ui.product')}</th>
+                  <th scope="col" className="px-3 py-2 font-semibold">{tReviews('ui.overall')}</th>
                   {criteria.map((c) => (
                     <th key={c.id} scope="col" className="px-3 py-2 font-semibold">
-                      {c.label}
+                      {tReviews(`criteria.${c.id}`, { defaultValue: c.label })}
                     </th>
                   ))}
                 </tr>
@@ -114,7 +130,7 @@ export function ComparisonPage() {
                 {tableReviews.map((r) => (
                   <tr key={r.slug} className="border-b border-white/5">
                     <th scope="row" className="py-3 pr-4 text-left font-semibold text-white/80">
-                      <Link to={`/reviews/${r.slug}`} className="hover:text-terminal-green">
+                      <Link to={`${langPrefix}/reviews/${r.slug}`} className="hover:text-terminal-green">
                         {r.name}
                       </Link>
                     </th>
@@ -140,29 +156,33 @@ export function ComparisonPage() {
       {/* Verdict */}
       <section className="mb-12 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5">
         <h2 className="mb-2 font-mono text-xs font-bold uppercase tracking-widest text-terminal-green/90">
-          Verdict
+          {tReviews('ui.verdict')}
         </h2>
         <p className="font-mono text-sm leading-relaxed text-white/70">
-          {comparison.verdict}
+          {tVerdict}
         </p>
       </section>
 
-      {comparison.content && (
+      {tContent && (
         <article className="prose-onda mb-12">
-          <Markdown>{comparison.content}</Markdown>
+          <Markdown>{tContent}</Markdown>
         </article>
       )}
 
       {comparison.faq.length > 0 && (
         <section className="mb-10">
           <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-cyan/80">
-            [ FAQ ]
+            {tReviews('ui.faq')}
           </h2>
           <div className="divide-y divide-white/5 border-y border-white/5">
             {comparison.faq.map((f, i) => (
               <div key={i} className="py-4">
-                <h3 className="mb-1 font-semibold text-white/90">{f.q}</h3>
-                <p className="font-mono text-xs leading-relaxed text-white/50">{f.a}</p>
+                <h3 className="mb-1 font-semibold text-white/90">
+                  {tReviews(`comparisons.${slug}.faq.${i}.q`, { defaultValue: f.q })}
+                </h3>
+                <p className="font-mono text-xs leading-relaxed text-white/50">
+                  {tReviews(`comparisons.${slug}.faq.${i}.a`, { defaultValue: f.a })}
+                </p>
               </div>
             ))}
           </div>
@@ -171,10 +191,10 @@ export function ComparisonPage() {
 
       <div className="mt-4">
         <Link
-          to="/reviews"
+          to={`${langPrefix}/reviews`}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
-          ← All reviews
+          {tReviews('ui.allReviews')}
         </Link>
       </div>
     </div>

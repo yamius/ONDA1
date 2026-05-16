@@ -1,0 +1,39 @@
+{
+  "hub": {
+    "h1": "Biohacking Tool Reviews",
+    "intro": "Independent, criteria-based reviews of biohacking tools — HRV trackers, meditation apps and sleep apps — scored against a fixed, public rubric, not on hype.",
+    "methodologyLink": "→ How we score (methodology)"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "reviews": "Reviews"
+  },
+  "ui": {
+    "updated": "Updated",
+    "howWeTested": "How we tested:",
+    "pros": "Pros",
+    "cons": "Cons",
+    "price": "Price:",
+    "asOf": "as of",
+    "references": "References",
+    "relatedReviews": "Related reviews",
+    "allReviews": "← All reviews",
+    "visitSite": "Visit {{brand}} official site →",
+    "affiliateNote": "Affiliate link — ONDA may earn a commission. It does not affect the score.",
+    "scoreBreakdown": "[ SCORE_BREAKDOWN ]",
+    "comparisonsHeading": "[ COMPARISONS ]",
+    "comparisonTag": "[ COMPARISON ]",
+    "topPicks": "[ TOP_PICKS ]",
+    "comparisonTable": "[ COMPARISON_TABLE ]",
+    "verdict": "Verdict",
+    "faq": "[ FAQ ]",
+    "product": "Product",
+    "overall": "Overall"
+  },
+  "testStatus": {
+    "hands-on": "Hands-on tested",
+    "evidence-based": "Evidence-based assessment"
+  },
+  "bodies": {},
+  "comparisons": {}
+}
