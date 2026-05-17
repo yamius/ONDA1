@@ -18,7 +18,7 @@ const WASM_PATH = `https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@${MP_VER
 const MODEL_PATH =
   'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task';
 
-const SCAN_DURATION_MS = 45_000;
+export const SCAN_DURATION_MS = 30_000;
 
 export type EyeScanStatus = 'idle' | 'preparing' | 'scanning' | 'done' | 'error';
 
