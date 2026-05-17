@@ -743,15 +743,6 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         }
       }
       
-      // Start HealthKit monitoring if available
-      if (vitalsData.healthKitHR.isAvailable && !vitalsData.healthKitHR.isMonitoring) {
-        try {
-          await vitalsData.healthKitHR.startMonitoring('realtime');
-          console.log('[AdaptivePractice] HealthKit monitoring started');
-        } catch (err) {
-          console.error('[AdaptivePractice] HealthKit start error:', err);
-        }
-      }
       
       // Check if vitals are already available (displayed on screen)
       const alreadyHasVitals = vitalsRef.current.hasVitalsData;
