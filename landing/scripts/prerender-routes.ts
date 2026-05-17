@@ -90,21 +90,57 @@ const localizedEsArticleRoutes = ES_PILOT_ARTICLE_SLUGS.map((s) => `/es/articles
 const localizedRuArticleRoutes = RU_PILOT_ARTICLE_SLUGS.map((s) => `/ru/articles/${s}`)
 
 /**
- * Review-localisation pilots, gated per language and per category. A
- * category is added to a language's Set only once its translation block
- * in public/locales/<lang>/reviews.json has been reviewed end-to-end —
- * the same drip-publishing discipline as the article pilots, so fresh
- * translated URLs never ship faster than Google reads as organic.
+ * Review-localisation rollout schedule. Each entry is one language ×
+ * one review category, with the date its localised /<lang>/reviews/*
+ * URLs go live. A category's routes are prerendered — and enter the
+ * sitemap and hreflang clusters — only once its publishOn date has been
+ * reached at BUILD TIME. So a finished translation can sit fully in the
+ * repo yet stay invisible to crawlers (no prerendered HTML, not in the
+ * sitemap, not linked anywhere) until its day arrives.
  *
- * Rollout cadence: one category per deploy, ~1–2 weeks apart, with a
- * Search Console indexation check between batches.
+ * Operating model: the site is rebuilt and redeployed manually every
+ * Monday. Each Monday, the entries dated that day or earlier come live.
+ * One category (~11 pages) per week reads to Google as organic growth
+ * rather than a scaled-content dump. Only add an entry here once its
+ * translation block in public/locales/<lang>/reviews.json is reviewed
+ * end-to-end — the date gate controls *when* it ships, not whether it
+ * is ready.
  */
-const REVIEW_PILOTS: Record<string, ReadonlySet<string>> = {
-  ru: new Set(['sleep-app', 'hrv-wearable', 'meditation-app']),
-  es: new Set(['sleep-app']),
+interface ReviewPilotEntry {
+  lang: string
+  category: string
+  /** ISO date (YYYY-MM-DD) the localised URLs go live. */
+  publishOn: string
 }
 
-/** Languages with at least one piloted review category. */
+const REVIEW_ROLLOUT: ReviewPilotEntry[] = [
+  // Russian — full hub, already live.
+  { lang: 'ru', category: 'sleep-app', publishOn: '2026-05-16' },
+  { lang: 'ru', category: 'hrv-wearable', publishOn: '2026-05-16' },
+  { lang: 'ru', category: 'meditation-app', publishOn: '2026-05-16' },
+  // Spanish — drip-published one category per Monday. Add hrv-wearable
+  // and meditation-app entries here as each ES translation lands.
+  { lang: 'es', category: 'sleep-app', publishOn: '2026-05-16' },
+]
+
+/** Build date (UTC) — the gate the rollout schedule is compared against. */
+const REVIEW_BUILD_DATE = new Date().toISOString().slice(0, 10)
+
+/**
+ * Live pilots: language → set of categories whose publishOn date has
+ * been reached. Everything downstream (prerendered routes, hreflang,
+ * sitemap) derives from this, so a future-dated entry is fully inert.
+ */
+const REVIEW_PILOTS: Record<string, Set<string>> = (() => {
+  const out: Record<string, Set<string>> = {}
+  for (const e of REVIEW_ROLLOUT) {
+    if (e.publishOn > REVIEW_BUILD_DATE) continue
+    ;(out[e.lang] ??= new Set<string>()).add(e.category)
+  }
+  return out
+})()
+
+/** Languages with at least one review category already live. */
 export const REVIEW_PILOT_LANGS: readonly string[] = Object.keys(REVIEW_PILOTS)
 
 /** Prerendered review routes for one language pilot — hub, methodology,
