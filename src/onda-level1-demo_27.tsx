@@ -332,6 +332,10 @@ const OndaLevel1 = () => {
   const [emotionalCheckUsed, setEmotionalCheckUsed] = useState<boolean>(
     () => typeof localStorage !== 'undefined' && localStorage.getItem('onda_emotional_check_used') === 'true',
   );
+  // One-time FREE badge on the «Взгляд на себя» (eye-scan) button.
+  const [nervousScanUsed, setNervousScanUsed] = useState<boolean>(
+    () => typeof localStorage !== 'undefined' && localStorage.getItem('onda_nervous_scan_used') === 'true',
+  );
   // Free practices the user has already tapped Start on — drives the
   // one-time FREE badge. Persisted; the badge disappears the moment the
   // practice is opened, not when it's finished.
@@ -5467,12 +5471,23 @@ const OndaLevel1 = () => {
             )}
           </button>
 
-          {/* Скан нервной системы (eye-scan) */}
+          {/* Взгляд на себя (eye-scan) */}
           <button
-            onClick={() => setShowNervousScan(true)}
-            className="backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full bg-white/10 hover:bg-white/20 border-white/30"
+            onClick={() => {
+              setShowNervousScan(true);
+              if (!nervousScanUsed) {
+                setNervousScanUsed(true);
+                localStorage.setItem('onda_nervous_scan_used', 'true');
+              }
+            }}
+            className="relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full bg-white/10 hover:bg-white/20 border-white/30"
           >
             {t('eye_scan.nav_button')}
+            {!nervousScanUsed && (
+              <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
+                {t('labels.free')}
+              </span>
+            )}
           </button>
         </div>
 
