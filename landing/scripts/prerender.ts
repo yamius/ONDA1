@@ -24,7 +24,7 @@ import {
   parsePartRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, REVIEW_PILOT_LANGS } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, glossaryLocalizedLangs, REVIEW_PILOT_LANGS, ES_GLOSSARY_LIVE } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, TITLE_MAX, DESC_MAX } from './meta-inject'
 import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
 
@@ -167,6 +167,44 @@ function buildHreflangLinksForReview(
     tags.push(`<link rel="alternate" hreflang="${lang}" href="${reviewUrlFor(kind, slug, lang as Lang)}">`)
   }
   tags.push(`<link rel="alternate" hreflang="x-default" href="${reviewUrlFor(kind, slug, 'en')}">`)
+  return tags.join('\n  ')
+}
+
+/** Subset of public/locales/<lang>/glossary.json read at prerender time. */
+interface GlossaryFile {
+  meta?: { title?: string; description?: string }
+  bodies?: Record<string, { title?: string; shortDescription?: string }>
+}
+const glossaryByLang: Record<Lang, GlossaryFile> = {} as Record<Lang, GlossaryFile>
+for (const lang of SUPPORTED_LANGS) {
+  glossaryByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'glossary.json'), 'utf-8')) as GlossaryFile
+}
+
+/** Parse a glossary index / term route into {lang, kind, slug}. */
+function parseGlossaryRoute(
+  route: string,
+): { lang: Lang; kind: 'index' | 'term'; slug: string } | null {
+  let m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/glossary$/)
+  if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'index', slug: '' }
+  m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/glossary\/([^/]+)$/)
+  if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'term', slug: m[2] }
+  return null
+}
+function glossaryUrlFor(kind: 'index' | 'term', slug: string, lang: Lang): string {
+  const base = kind === 'index' ? '/glossary' : `/glossary/${slug}`
+  return lang === 'en' ? `${SITE_URL}${base}` : `${SITE_URL}/${lang}${base}`
+}
+/** Hreflang cluster for a glossary index/term — only languages with a localised URL. */
+function buildHreflangLinksForGlossary(
+  kind: 'index' | 'term',
+  slug: string,
+  langs: readonly string[],
+): string {
+  const tags: string[] = []
+  for (const lang of langs) {
+    tags.push(`<link rel="alternate" hreflang="${lang}" href="${glossaryUrlFor(kind, slug, lang as Lang)}">`)
+  }
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${glossaryUrlFor(kind, slug, 'en')}">`)
   return tags.join('\n  ')
 }
 
@@ -382,6 +420,7 @@ for (const route of routes) {
     const isPartLocalized = LOCALIZED_PART_ROUTE_SET.has(route)
     const isArticleLocalized = LOCALIZED_ARTICLE_ROUTE_SET.has(route)
     const isReviewLocalized = LOCALIZED_REVIEW_ROUTE_SET.has(route)
+    const isGlossaryLocalized = LOCALIZED_GLOSSARY_ROUTE_SET.has(route)
     const metricInfo = isMetricLocalized ? parseMetricRoute(route) : null
     const levelInfo = isLevelLocalized ? parseLevelRoute(route) : null
     const partInfo = isPartLocalized ? parsePartRoute(route) : null
@@ -392,6 +431,9 @@ for (const route of routes) {
     // reviewInfo fires for EN review/comparison/hub routes too — used to
     // emit a hreflang cluster on the EN side when a RU sibling exists.
     const reviewInfo = parseReviewRoute(route)
+    // glossaryInfo fires for EN /glossary[/<slug>] too — emits a hreflang
+    // cluster on the EN side when an ES sibling is live.
+    const glossaryInfo = parseGlossaryRoute(route)
     const lang: Lang = isLocalized
       ? langFromPath(route)
       : metricInfo ? metricInfo.lang
@@ -399,6 +441,7 @@ for (const route of routes) {
       : partInfo ? partInfo.lang
       : isArticleLocalized && articleInfo ? articleInfo.lang
       : isReviewLocalized && reviewInfo ? reviewInfo.lang
+      : isGlossaryLocalized && glossaryInfo ? glossaryInfo.lang
       : 'en'
     const basePath = isLocalized ? stripLangPrefix(route) : route
 
@@ -428,7 +471,9 @@ for (const route of routes) {
               : reviewInfo.kind === 'comparison'
                 ? `/reviews/compare/${reviewInfo.slug}`
                 : `/reviews/${reviewInfo.slug}`)
-        : route
+        : isGlossaryLocalized && glossaryInfo
+          ? (glossaryInfo.kind === 'index' ? '/glossary' : `/glossary/${glossaryInfo.slug}`)
+          : route
     const meta = getMetaForRoute(metaRoute)
     out = injectMetaIntoHtml(out, meta)
 
@@ -583,6 +628,54 @@ for (const route of routes) {
       } else if (hasLocalizedSibling) {
         // EN URL whose slug has a localised sibling — emit cluster from EN side.
         const hreflang = buildHreflangLinksForReview(reviewInfo.kind, reviewInfo.slug, reviewLangs)
+        out = out.replace('</head>', `  ${hreflang}\n</head>`)
+      }
+    } else if (glossaryInfo) {
+      // Glossary index / term — either the EN URL or a localised
+      // /es/glossary[/<slug>] URL (ES rollout, date-gated).
+      const glossaryLangs = glossaryInfo.kind === 'index'
+        ? (ES_GLOSSARY_LIVE ? ['en', 'es'] : ['en'])
+        : glossaryLocalizedLangs(glossaryInfo.slug)
+      const hasLocalizedSibling = glossaryLangs.length > 1
+      out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${glossaryInfo.lang}"`)
+
+      if (glossaryInfo.lang !== 'en') {
+        const gf = glossaryByLang[glossaryInfo.lang]
+        let title = ''
+        let desc = ''
+        if (glossaryInfo.kind === 'index') {
+          title = gf.meta?.title ?? ''
+          desc = gf.meta?.description ?? ''
+        } else {
+          const body = gf.bodies?.[glossaryInfo.slug]
+          if (body?.title) title = `${body.title} | ONDA Life Glossary`
+          desc = body?.shortDescription ?? ''
+        }
+        const url = glossaryUrlFor(glossaryInfo.kind, glossaryInfo.slug, glossaryInfo.lang)
+        const escUrl = escAttr(url)
+        out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
+        if (title) {
+          const escTitle = escAttr(title)
+          out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
+          out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="og:title"\s+content="[^"]*">/gi, `<meta property="og:title" content="${escTitle}">`)
+          out = out.replace(/<meta\s+property="twitter:title"\s+content="[^"]*">/gi, `<meta property="twitter:title" content="${escTitle}">`)
+        }
+        if (desc) {
+          const escDesc = escAttr(desc)
+          out = out.replace(/<meta\s+name="description"\s+content="[^"]*">/i, `<meta name="description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="og:description"\s+content="[^"]*">/gi, `<meta property="og:description" content="${escDesc}">`)
+          out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escDesc}">`)
+        }
+        out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
+        out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+        const hreflang = buildHreflangLinksForGlossary(glossaryInfo.kind, glossaryInfo.slug, glossaryLangs)
+        const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[glossaryInfo.lang]}">`
+        out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
+      } else if (hasLocalizedSibling) {
+        // EN URL whose glossary slug has a localised ES sibling.
+        const hreflang = buildHreflangLinksForGlossary(glossaryInfo.kind, glossaryInfo.slug, glossaryLangs)
         out = out.replace('</head>', `  ${hreflang}\n</head>`)
       }
     }

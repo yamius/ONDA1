@@ -2,6 +2,9 @@
  * Route list for prerender. Used only at build time.
  * Imports all data to enumerate every URL that needs an HTML file.
  */
+import { readFileSync } from 'fs'
+import { dirname, join } from 'path'
+import { fileURLToPath } from 'url'
 import { glossaryTerms } from '../src/data/glossary'
 import { articles } from '../src/data/articles'
 import { TOPIC_SLUGS, INDEXED_TOPIC_SLUGS } from '../src/data/topics'
@@ -168,6 +171,53 @@ const localizedEsArticleRoutes = ES_PILOT_ARTICLE_SLUGS.map((s) => `/es/articles
 const localizedRuArticleRoutes = RU_PILOT_ARTICLE_SLUGS.map((s) => `/ru/articles/${s}`)
 
 /**
+ * Spanish glossary rollout. Every reviewed ES term translation lives in
+ * public/locales/es/glossary.json; the GlossaryTermPage component already
+ * reads it. Terms are drip-published ~21 per Monday from 2026-07-20,
+ * gated at BUILD TIME — same discipline as the article and review
+ * rollouts. The /es/glossary index ships with the first batch.
+ */
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const ES_GLOSSARY_BATCH = 21
+const ES_GLOSSARY_START = '2026-07-20'
+const esGlossaryBodies: Record<string, unknown> = (() => {
+  try {
+    const f = JSON.parse(
+      readFileSync(join(__dirname, '..', 'public', 'locales', 'es', 'glossary.json'), 'utf-8'),
+    ) as { bodies?: Record<string, unknown> }
+    return f.bodies ?? {}
+  } catch {
+    return {}
+  }
+})()
+/** Glossary slugs with a reviewed ES translation, in stable sorted order. */
+const esGlossarySlugs: string[] = glossaryTerms
+  .map((t) => t.slug)
+  .filter((s) => s in esGlossaryBodies)
+  .sort()
+function glossaryPublishDate(index: number): string {
+  const d = new Date(`${ES_GLOSSARY_START}T00:00:00Z`)
+  d.setUTCDate(d.getUTCDate() + Math.floor(index / ES_GLOSSARY_BATCH) * 7)
+  return d.toISOString().slice(0, 10)
+}
+/** ES glossary term slugs whose publishOn Monday has been reached at build time. */
+const liveEsGlossarySlugs: string[] = esGlossarySlugs.filter(
+  (_s, i) => glossaryPublishDate(i) <= BUILD_DATE,
+)
+const liveEsGlossarySet = new Set(liveEsGlossarySlugs)
+const localizedEsGlossaryRoutes: string[] = liveEsGlossarySlugs.length
+  ? ['/es/glossary', ...liveEsGlossarySlugs.map((s) => `/es/glossary/${s}`)]
+  : []
+
+/** True once at least one ES glossary term is live — gates the /es/glossary index. */
+export const ES_GLOSSARY_LIVE: boolean = liveEsGlossarySlugs.length > 0
+
+/** Languages with a localised URL prerendered for a glossary term. */
+export function glossaryLocalizedLangs(slug: string): readonly string[] {
+  return liveEsGlossarySet.has(slug) ? ['en', 'es'] : ['en']
+}
+
+/**
  * Review-localisation rollout schedule. Each entry is one language ×
  * one review category, with the date its localised /<lang>/reviews/*
  * URLs go live. A category's routes are prerendered — and enter the
@@ -311,6 +361,7 @@ export function getPrerenderRoutes(): string[] {
     ...reviews.map((r) => `/reviews/${r.slug}`),
     ...comparisons.map((c) => `/reviews/compare/${c.slug}`),
     ...localizedReviewRoutes,
+    ...localizedEsGlossaryRoutes,
   ]
 }
 
@@ -337,6 +388,9 @@ export const LOCALIZED_ARTICLE_ROUTE_SET = new Set([
 
 /** Set of localized review/comparison/hub/methodology routes (all pilots). */
 export const LOCALIZED_REVIEW_ROUTE_SET = new Set(localizedReviewRoutes)
+
+/** Set of localized glossary routes (ES rollout — index + due term pages). */
+export const LOCALIZED_GLOSSARY_ROUTE_SET = new Set(localizedEsGlossaryRoutes)
 
 /** EN base paths that have localized variants — used by sitemap for hreflang grouping. */
 export const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)
