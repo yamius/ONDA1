@@ -581,15 +581,6 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     if (isOpen && isIOS) {
       console.log('[AdaptivePractice] Modal opened on iOS, starting health monitoring...');
       
-      // Start HealthKit monitoring early so data accumulates before practice starts
-      if (vitalsData.healthKitHR.isAvailable && !vitalsData.healthKitHR.isMonitoring) {
-        vitalsData.healthKitHR.startMonitoring('realtime').then(() => {
-          console.log('[AdaptivePractice] HealthKit auto-started on modal open');
-        }).catch(err => {
-          console.error('[AdaptivePractice] HealthKit auto-start error:', err);
-        });
-      }
-      
       // Start Watch monitoring if connected
       if (vitalsData.watchHR.isConnected && !vitalsData.watchHR.isMonitoring) {
         vitalsData.watchHR.startRealtime().then(() => {
@@ -602,7 +593,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     
     // ❌ НЕ ОСТАНАВЛИВАЕМ мониторинг при закрытии модалки
     // Мониторинг должен продолжаться в фоне для других практик
-  }, [isOpen, vitalsData.healthKitHR.isAvailable, vitalsData.watchHR.isConnected]);
+  }, [isOpen, vitalsData.watchHR.isConnected]);
 
   useEffect(() => {
     // Reset state when modal OPENS (transition from closed to open)
