@@ -2,7 +2,7 @@
   "eye_scan": {
     "nav_button": "A look at yourself",
     "title": "A look at yourself",
-    "subtitle": "State analysis from gaze and blinking",
+    "subtitle": "Analysis of emotional state by gaze and facial expression",
     "intro": "Look into the camera and stay calm for about {{sec}} seconds. It reads your blinking, gaze and micro-movements. Frames are never saved.",
     "start": "Start scan",
     "preparing": "Preparing the camera…",
