@@ -8,7 +8,7 @@
 import { writeFileSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs, reviewLocalizedLangs, REVIEW_PILOT_LANGS, glossaryLocalizedLangs, ES_GLOSSARY_LIVE, INDEXED_TOPIC_SLUGS } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs, reviewLocalizedLangs, REVIEW_PILOT_LANGS, glossaryLocalizedLangs, GLOSSARY_INDEX_LANGS, INDEXED_TOPIC_SLUGS } from './prerender-routes'
 import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, type Lang } from '../src/i18n'
 import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
 import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
@@ -253,7 +253,7 @@ function reviewAlternates(path: string): string {
   return `\n${tags.join('\n')}`
 }
 
-/** Hreflang alternates for a glossary index / term URL (ES rollout). */
+/** Hreflang alternates for a glossary index / term URL (ES + RU rollouts). */
 function glossarySitemapUrl(kind: string, slug: string, lang: string): string {
   const base = kind === 'index' ? '/glossary' : `/glossary/${slug}`
   return lang === 'en' ? `${SITE_URL}${base}` : `${SITE_URL}/${lang}${base}`
@@ -266,7 +266,7 @@ function glossaryAlternates(path: string): string {
   else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh))?\/glossary\/([^/]+)$/))) { kind = 'term'; slug = m[1] }
   else return ''
   const langs = kind === 'index'
-    ? (ES_GLOSSARY_LIVE ? ['en', 'es'] : ['en'])
+    ? GLOSSARY_INDEX_LANGS
     : glossaryLocalizedLangs(slug)
   if (langs.length <= 1) return ''
   const tags = langs.map(

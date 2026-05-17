@@ -171,50 +171,89 @@ const localizedEsArticleRoutes = ES_PILOT_ARTICLE_SLUGS.map((s) => `/es/articles
 const localizedRuArticleRoutes = RU_PILOT_ARTICLE_SLUGS.map((s) => `/ru/articles/${s}`)
 
 /**
- * Spanish glossary rollout. Every reviewed ES term translation lives in
- * public/locales/es/glossary.json; the GlossaryTermPage component already
- * reads it. Terms are drip-published ~21 per Monday from 2026-07-20,
- * gated at BUILD TIME — same discipline as the article and review
- * rollouts. The /es/glossary index ships with the first batch.
+ * Glossary localisation rollout. Every reviewed term translation lives in
+ * public/locales/<lang>/glossary.json; the GlossaryTermPage component
+ * already reads it. Terms are drip-published GLOSSARY_BATCH per Monday
+ * from each language's `start` date, gated at BUILD TIME — same discipline
+ * as the article and review rollouts. Each /<lang>/glossary index ships
+ * with that language's first batch.
+ *
+ * ES and RU schedules are staggered so a Monday redeploy never surfaces
+ * two full-language batches at once: ES runs 2026-07-20 → 2026-09-28,
+ * RU picks up the week after ES completes.
  */
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const ES_GLOSSARY_BATCH = 21
-const ES_GLOSSARY_START = '2026-07-20'
-const esGlossaryBodies: Record<string, unknown> = (() => {
+const GLOSSARY_BATCH = 21
+
+interface GlossaryRollout {
+  lang: string
+  /** First Monday (YYYY-MM-DD) the language's drip schedule begins. */
+  start: string
+}
+
+const GLOSSARY_ROLLOUTS: readonly GlossaryRollout[] = [
+  { lang: 'es', start: '2026-07-20' },
+  { lang: 'ru', start: '2026-10-05' },
+]
+
+function loadGlossaryBodies(lang: string): Record<string, unknown> {
   try {
     const f = JSON.parse(
-      readFileSync(join(__dirname, '..', 'public', 'locales', 'es', 'glossary.json'), 'utf-8'),
+      readFileSync(join(__dirname, '..', 'public', 'locales', lang, 'glossary.json'), 'utf-8'),
     ) as { bodies?: Record<string, unknown> }
     return f.bodies ?? {}
   } catch {
     return {}
   }
-})()
-/** Glossary slugs with a reviewed ES translation, in stable sorted order. */
-const esGlossarySlugs: string[] = glossaryTerms
-  .map((t) => t.slug)
-  .filter((s) => s in esGlossaryBodies)
-  .sort()
-function glossaryPublishDate(index: number): string {
-  const d = new Date(`${ES_GLOSSARY_START}T00:00:00Z`)
-  d.setUTCDate(d.getUTCDate() + Math.floor(index / ES_GLOSSARY_BATCH) * 7)
+}
+
+function glossaryPublishDate(start: string, index: number): string {
+  const d = new Date(`${start}T00:00:00Z`)
+  d.setUTCDate(d.getUTCDate() + Math.floor(index / GLOSSARY_BATCH) * 7)
   return d.toISOString().slice(0, 10)
 }
-/** ES glossary term slugs whose publishOn Monday has been reached at build time. */
-const liveEsGlossarySlugs: string[] = esGlossarySlugs.filter(
-  (_s, i) => glossaryPublishDate(i) <= BUILD_DATE,
-)
-const liveEsGlossarySet = new Set(liveEsGlossarySlugs)
-const localizedEsGlossaryRoutes: string[] = liveEsGlossarySlugs.length
-  ? ['/es/glossary', ...liveEsGlossarySlugs.map((s) => `/es/glossary/${s}`)]
-  : []
 
-/** True once at least one ES glossary term is live — gates the /es/glossary index. */
-export const ES_GLOSSARY_LIVE: boolean = liveEsGlossarySlugs.length > 0
+/** lang → ordered list of glossary slugs whose publishOn Monday has been
+ *  reached at build time. A future-dated language is simply absent. */
+const liveGlossaryByLang: Record<string, string[]> = (() => {
+  const out: Record<string, string[]> = {}
+  for (const { lang, start } of GLOSSARY_ROLLOUTS) {
+    const bodies = loadGlossaryBodies(lang)
+    const slugs = glossaryTerms
+      .map((t) => t.slug)
+      .filter((s) => s in bodies)
+      .sort()
+    const live = slugs.filter((_s, i) => glossaryPublishDate(start, i) <= BUILD_DATE)
+    if (live.length) out[lang] = live
+  }
+  return out
+})()
+
+const liveGlossarySetByLang: Record<string, Set<string>> = Object.fromEntries(
+  Object.entries(liveGlossaryByLang).map(([lang, slugs]) => [lang, new Set(slugs)]),
+)
+
+const localizedGlossaryRoutes: string[] = Object.entries(liveGlossaryByLang).flatMap(
+  ([lang, slugs]) => [`/${lang}/glossary`, ...slugs.map((s) => `/${lang}/glossary/${s}`)],
+)
+
+/** Languages with at least one glossary term live — gates each /<lang>/glossary index. */
+export const GLOSSARY_LIVE_LANGS: readonly string[] = Object.keys(liveGlossaryByLang)
+
+/** Backwards-compat flag: true once at least one ES glossary term is live. */
+export const ES_GLOSSARY_LIVE: boolean = (liveGlossaryByLang['es']?.length ?? 0) > 0
+
+/** Hreflang cluster for the glossary index — EN plus every language whose
+ *  /<lang>/glossary index is live. */
+export const GLOSSARY_INDEX_LANGS: readonly string[] = ['en', ...GLOSSARY_LIVE_LANGS]
 
 /** Languages with a localised URL prerendered for a glossary term. */
 export function glossaryLocalizedLangs(slug: string): readonly string[] {
-  return liveEsGlossarySet.has(slug) ? ['en', 'es'] : ['en']
+  const langs: string[] = ['en']
+  for (const [lang, set] of Object.entries(liveGlossarySetByLang)) {
+    if (set.has(slug)) langs.push(lang)
+  }
+  return langs
 }
 
 /**
@@ -361,7 +400,7 @@ export function getPrerenderRoutes(): string[] {
     ...reviews.map((r) => `/reviews/${r.slug}`),
     ...comparisons.map((c) => `/reviews/compare/${c.slug}`),
     ...localizedReviewRoutes,
-    ...localizedEsGlossaryRoutes,
+    ...localizedGlossaryRoutes,
   ]
 }
 
@@ -389,8 +428,8 @@ export const LOCALIZED_ARTICLE_ROUTE_SET = new Set([
 /** Set of localized review/comparison/hub/methodology routes (all pilots). */
 export const LOCALIZED_REVIEW_ROUTE_SET = new Set(localizedReviewRoutes)
 
-/** Set of localized glossary routes (ES rollout — index + due term pages). */
-export const LOCALIZED_GLOSSARY_ROUTE_SET = new Set(localizedEsGlossaryRoutes)
+/** Set of localized glossary routes (ES + RU rollouts — index + due term pages). */
+export const LOCALIZED_GLOSSARY_ROUTE_SET = new Set(localizedGlossaryRoutes)
 
 /** EN base paths that have localized variants — used by sitemap for hreflang grouping. */
 export const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)

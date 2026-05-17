@@ -24,7 +24,7 @@ import {
   parsePartRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, glossaryLocalizedLangs, REVIEW_PILOT_LANGS, ES_GLOSSARY_LIVE } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, glossaryLocalizedLangs, REVIEW_PILOT_LANGS, GLOSSARY_INDEX_LANGS } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, TITLE_MAX, DESC_MAX } from './meta-inject'
 import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
 
@@ -632,9 +632,9 @@ for (const route of routes) {
       }
     } else if (glossaryInfo) {
       // Glossary index / term — either the EN URL or a localised
-      // /es/glossary[/<slug>] URL (ES rollout, date-gated).
+      // /<lang>/glossary[/<slug>] URL (ES + RU rollouts, date-gated).
       const glossaryLangs = glossaryInfo.kind === 'index'
-        ? (ES_GLOSSARY_LIVE ? ['en', 'es'] : ['en'])
+        ? GLOSSARY_INDEX_LANGS
         : glossaryLocalizedLangs(glossaryInfo.slug)
       const hasLocalizedSibling = glossaryLangs.length > 1
       out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${glossaryInfo.lang}"`)
