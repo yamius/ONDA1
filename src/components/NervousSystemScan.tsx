@@ -67,7 +67,7 @@ export default function NervousSystemScan({
               autoPlay
               style={{ transform: 'scaleX(-1)' }}
               className={
-                status === 'scanning'
+                status === 'scanning' || status === 'preparing'
                   ? 'w-full rounded-2xl border border-white/10'
                   : 'hidden'
               }
@@ -91,9 +91,7 @@ export default function NervousSystemScan({
             )}
 
             {status === 'preparing' && (
-              <div className="bg-slate-800/50 rounded-xl p-6 border border-white/10 text-center">
-                <p className="text-white/80 text-base">{t('eye_scan.preparing')}</p>
-              </div>
+              <p className="text-white/80 text-sm text-center">{t('eye_scan.preparing')}</p>
             )}
 
             {status === 'scanning' && (

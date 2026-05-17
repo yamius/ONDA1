@@ -169,7 +169,9 @@ export function useEyeScan(): UseEyeScan {
     lastProgressTsRef.current = 0;
     setStatus('preparing');
     try {
-      await ensureLandmarker();
+      // Камеру и MediaPipe грузим параллельно — камера появляется сразу,
+      // не дожидаясь компиляции модели.
+      const landmarkerPromise = ensureLandmarker();
 
       const stream = await navigator.mediaDevices.getUserMedia({
         video: { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } },
@@ -182,6 +184,8 @@ export function useEyeScan(): UseEyeScan {
       video.srcObject = stream;
       await video.play();
 
+      // Камера уже видна (status 'preparing'); ждём готовности модели.
+      await landmarkerPromise;
       startTsRef.current = performance.now();
       setStatus('scanning');
       rafRef.current = requestAnimationFrame(loop);
