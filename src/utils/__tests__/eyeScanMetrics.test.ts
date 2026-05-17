@@ -2,6 +2,8 @@ import { describe, it, expect } from 'vitest';
 import {
   aggregateSamples,
   computeScores,
+  recommendState,
+  recommendedPractices,
   type ScanSample,
   type ScanAggregate,
 } from '../eyeScanMetrics';
@@ -131,5 +133,27 @@ describe('computeScores', () => {
       eyeOpennessAvg: 0.9,
     });
     expect(s.quality).toBeLessThan(40);
+  });
+});
+
+describe('recommendState / recommendedPractices', () => {
+  const base = { calm: 80, focus: 80, fatigue: 10, quality: 90 };
+
+  it('усталость → fatigue', () => {
+    expect(recommendState({ ...base, fatigue: 60 })).toBe('fatigue');
+  });
+
+  it('низкое спокойствие → anxiety', () => {
+    expect(recommendState({ ...base, calm: 30, fatigue: 10 })).toBe('anxiety');
+  });
+
+  it('всё в норме → calmness', () => {
+    expect(recommendState(base)).toBe('calmness');
+  });
+
+  it('recommendedPractices возвращает 3 практики под состояние', () => {
+    const list = recommendedPractices({ ...base, fatigue: 70 });
+    expect(list).toHaveLength(3);
+    expect(list[0]!.id).toBe('slow_glow');
   });
 });

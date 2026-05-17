@@ -124,3 +124,39 @@ export function computeScores(agg: ScanAggregate): NervousSystemScores {
 
   return { calm, focus, fatigue, quality };
 }
+
+/** Состояние для подбора практик (совпадает с эмоциями адаптивных практик). */
+export type RecommendedState = 'calmness' | 'anxiety' | 'fatigue';
+
+/** Маппит баллы скана в состояние для подбора практик. Эвристика. */
+export function recommendState(scores: NervousSystemScores): RecommendedState {
+  if (scores.fatigue >= 50) return 'fatigue';
+  if (scores.calm < 50) return 'anxiety';
+  return 'calmness';
+}
+
+// Наборы практик по состояниям — id совпадают с каталогом AdaptivePracticeModal.
+const PRACTICE_SETS: Record<RecommendedState, { id: string; labelKey: string }[]> = {
+  calmness: [
+    { id: 'earth_breath', labelKey: 'emotional_check.earth_breath' },
+    { id: 'wave_pulse', labelKey: 'emotional_check.wave_pulse' },
+    { id: 'still_form', labelKey: 'emotional_check.still_form' },
+  ],
+  anxiety: [
+    { id: 'roots_breath', labelKey: 'emotional_check.roots_breath' },
+    { id: 'earth_pulse', labelKey: 'emotional_check.earth_pulse' },
+    { id: 'body_cocoon', labelKey: 'emotional_check.body_cocoon' },
+  ],
+  fatigue: [
+    { id: 'slow_glow', labelKey: 'emotional_check.slow_glow' },
+    { id: 'rest_breath', labelKey: 'emotional_check.rest_breath' },
+    { id: 'warm_sphere', labelKey: 'emotional_check.warm_sphere' },
+  ],
+};
+
+/** Рекомендованные практики по результату скана. */
+export function recommendedPractices(
+  scores: NervousSystemScores,
+): { id: string; labelKey: string }[] {
+  return PRACTICE_SETS[recommendState(scores)];
+}

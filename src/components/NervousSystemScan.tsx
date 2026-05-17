@@ -1,5 +1,8 @@
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useEyeScan, type EyeScanResult, SCAN_DURATION_MS } from '../hooks/useEyeScan';
+import { recommendedPractices } from '../utils/eyeScanMetrics';
+import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 
 // Экран «Сканирование нервной системы» — гид-UX поверх контроллера useEyeScan.
 // Названия метрик — плейсхолдеры MVP, финальные задаст бренд.
@@ -13,7 +16,13 @@ const PANEL_BG = 'rgba(0,0,0,0.82)';
 const ACCENT = '#5ac8ff';
 const SCAN_SEC = Math.round(SCAN_DURATION_MS / 1000);
 
-export default function NervousSystemScan({ onClose }: { onClose?: () => void }) {
+export default function NervousSystemScan({
+  onClose,
+  onOndEarned,
+}: {
+  onClose?: () => void;
+  onOndEarned?: (amount: number) => void;
+}) {
   const scan = useEyeScan();
   const status = scan.status;
 
@@ -108,7 +117,7 @@ export default function NervousSystemScan({ onClose }: { onClose?: () => void })
       )}
 
       {status === 'done' && scan.result && (
-        <ResultView result={scan.result} onAgain={scan.reset} />
+        <ResultView result={scan.result} onAgain={scan.reset} onOndEarned={onOndEarned} />
       )}
 
       {status === 'error' && (
@@ -149,7 +158,19 @@ export default function NervousSystemScan({ onClose }: { onClose?: () => void })
   );
 }
 
-function ResultView({ result, onAgain }: { result: EyeScanResult; onAgain: () => void }) {
+function ResultView({
+  result,
+  onAgain,
+  onOndEarned,
+}: {
+  result: EyeScanResult;
+  onAgain: () => void;
+  onOndEarned?: (amount: number) => void;
+}) {
+  const { t } = useTranslation();
+  const [practiceId, setPracticeId] = useState<string | null>(null);
+  const practices = recommendedPractices(result.scores);
+
   return (
     <Centered>
       <h1 style={{ fontSize: 22, marginBottom: 20 }}>Результат скана</h1>
@@ -158,22 +179,53 @@ function ResultView({ result, onAgain }: { result: EyeScanResult; onAgain: () =>
           <ScoreRow key={m.key} label={m.label} value={result.scores[m.key]} />
         ))}
       </div>
-      <p style={{ fontSize: 12, opacity: 0.55, marginTop: 8 }}>
+      <p style={{ fontSize: 12, opacity: 0.55, marginTop: 8, marginBottom: 20 }}>
         Достоверность скана: {result.scores.quality}%
       </p>
+
+      <p style={{ fontSize: 14, opacity: 0.85, marginBottom: 10 }}>Рекомендуем практику</p>
+      <div
+        style={{ display: 'flex', flexDirection: 'column', gap: 8, width: 300, maxWidth: '80vw' }}
+      >
+        {practices.map((p) => (
+          <button
+            key={p.id}
+            onClick={() => setPracticeId(p.id)}
+            style={{
+              padding: '10px 16px',
+              background: 'rgba(255,255,255,0.1)',
+              color: '#fff',
+              border: '1px solid rgba(255,255,255,0.2)',
+              borderRadius: 12,
+              fontSize: 15,
+              cursor: 'pointer',
+            }}
+          >
+            {t(p.labelKey)}
+          </button>
+        ))}
+      </div>
+
       <p
         style={{
           fontSize: 12,
           opacity: 0.55,
           maxWidth: 300,
           textAlign: 'center',
-          marginTop: 4,
+          marginTop: 16,
           marginBottom: 24,
         }}
       >
         Это wellness-оценка, не медицинская диагностика.
       </p>
       <PrimaryButton onClick={onAgain}>Сканировать снова</PrimaryButton>
+
+      <AdaptivePracticeModal
+        isOpen={practiceId !== null}
+        onClose={() => setPracticeId(null)}
+        practiceId={practiceId ?? ''}
+        onOndEarned={onOndEarned}
+      />
     </Centered>
   );
 }
@@ -214,6 +266,7 @@ function Centered({ children }: { children: ReactNode }) {
         justifyContent: 'center',
         textAlign: 'center',
         padding: 24,
+        overflowY: 'auto',
       }}
     >
       {children}

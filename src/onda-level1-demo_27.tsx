@@ -7372,7 +7372,10 @@ const OndaLevel1 = () => {
 
       {showNervousScan && (
         <Suspense fallback={null}>
-          <NervousSystemScan onClose={() => setShowNervousScan(false)} />
+          <NervousSystemScan
+            onClose={() => setShowNervousScan(false)}
+            onOndEarned={(amount) => setQnt(prev => prev + amount)}
+          />
         </Suspense>
       )}
 
