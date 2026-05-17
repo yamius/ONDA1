@@ -122,10 +122,10 @@ const REVIEW_ROLLOUT: ReviewPilotEntry[] = [
   { lang: 'es', category: 'sleep-app', publishOn: '2026-05-16' },
   { lang: 'es', category: 'hrv-wearable', publishOn: '2026-05-18' },
   { lang: 'es', category: 'meditation-app', publishOn: '2026-05-25' },
-  // Ukrainian — drip-published one category per Monday. Add meditation-app
-  // here once its UK translation lands.
+  // Ukrainian — drip-published one category per Monday.
   { lang: 'uk', category: 'sleep-app', publishOn: '2026-06-01' },
   { lang: 'uk', category: 'hrv-wearable', publishOn: '2026-06-08' },
+  { lang: 'uk', category: 'meditation-app', publishOn: '2026-06-15' },
 ]
 
 /** Build date (UTC) — the gate the rollout schedule is compared against. */
