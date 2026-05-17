@@ -1182,18 +1182,9 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             </div>
             <button
               onClick={() => {
-                if (isPremium || isSubLoading || platform !== 'ios') {
-                  startPractice();
-                  return;
-                }
-                track('paywall_viewed', {
-                  source: 'practice_intro',
-                  practice_id: practice.id,
-                  practice_type: 'adaptive',
-                });
-                setPendingStartAfterSubscribe(true);
-                setShowPaywall(true);
-                // Source is constant for this entry path; set on the modal below.
+                // Адаптивные практики бесплатны (FREE-бейджи на «Эмоциональной
+                // сверке» и «Взгляд на себя») — без пэйвола.
+                startPractice();
               }}
               className="bg-white/30 hover:bg-white/40 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl border border-white/30"
             >
