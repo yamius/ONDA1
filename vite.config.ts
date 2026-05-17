@@ -24,7 +24,7 @@ export default defineConfig(({ mode }) => {
             assets: "./dist/**",
           },
           release: {
-            name: env.SENTRY_RELEASE || process.env.SENTRY_RELEASE || "onda-life@1.0.1",
+            name: env.SENTRY_RELEASE || process.env.SENTRY_RELEASE || "onda-life@1.7.1",
           },
         })
       : null,
