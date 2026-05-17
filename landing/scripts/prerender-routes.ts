@@ -90,31 +90,49 @@ const localizedEsArticleRoutes = ES_PILOT_ARTICLE_SLUGS.map((s) => `/es/articles
 const localizedRuArticleRoutes = RU_PILOT_ARTICLE_SLUGS.map((s) => `/ru/articles/${s}`)
 
 /**
- * RU review-localisation pilot. The Sleep apps category is the first
- * review category to ship a reviewed Russian translation (bodies live in
- * public/locales/ru/reviews.json). Each slug listed here gets a
- * prerendered /ru/reviews/<slug> page plus an en+ru+x-default hreflang
- * cluster. Expand category by category once each RU translation block is
- * reviewed end-to-end — same gating discipline as the article pilots.
+ * Review-localisation pilots, gated per language and per category. A
+ * category is added to a language's Set only once its translation block
+ * in public/locales/<lang>/reviews.json has been reviewed end-to-end —
+ * the same drip-publishing discipline as the article pilots, so fresh
+ * translated URLs never ship faster than Google reads as organic.
+ *
+ * Rollout cadence: one category per deploy, ~1–2 weeks apart, with a
+ * Search Console indexation check between batches.
  */
-const RU_PILOT_REVIEW_CATEGORIES = new Set<string>(['sleep-app', 'hrv-wearable', 'meditation-app'])
-const ruPilotReviews = reviews.filter((r) => RU_PILOT_REVIEW_CATEGORIES.has(r.category))
-const ruPilotComparisons = comparisons.filter((c) => RU_PILOT_REVIEW_CATEGORIES.has(c.category))
-const localizedRuReviewRoutes = [
-  '/ru/reviews',
-  ...ruPilotReviews.map((r) => `/ru/reviews/${r.slug}`),
-  ...ruPilotComparisons.map((c) => `/ru/reviews/compare/${c.slug}`),
-]
+const REVIEW_PILOTS: Record<string, ReadonlySet<string>> = {
+  ru: new Set(['sleep-app', 'hrv-wearable', 'meditation-app']),
+  es: new Set(['sleep-app']),
+}
 
-/** Review slugs with a localised RU URL prerendered. */
-export const RU_PILOT_REVIEW_SLUGS: readonly string[] = ruPilotReviews.map((r) => r.slug)
-/** Comparison slugs with a localised RU URL prerendered. */
-export const RU_PILOT_COMPARISON_SLUGS: readonly string[] = ruPilotComparisons.map((c) => c.slug)
+/** Languages with at least one piloted review category. */
+export const REVIEW_PILOT_LANGS: readonly string[] = Object.keys(REVIEW_PILOTS)
+
+/** Prerendered review routes for one language pilot — hub, methodology,
+ *  every review and comparison in the piloted categories. */
+function pilotReviewRoutes(lang: string, cats: ReadonlySet<string>): string[] {
+  return [
+    `/${lang}/reviews`,
+    `/${lang}/reviews/methodology`,
+    ...reviews.filter((r) => cats.has(r.category)).map((r) => `/${lang}/reviews/${r.slug}`),
+    ...comparisons.filter((c) => cats.has(c.category)).map((c) => `/${lang}/reviews/compare/${c.slug}`),
+  ]
+}
+
+const localizedReviewRoutes = Object.entries(REVIEW_PILOTS).flatMap(([lang, cats]) =>
+  pilotReviewRoutes(lang, cats),
+)
 
 /** Languages that have a localised URL prerendered for a review/comparison slug. */
 export function reviewLocalizedLangs(slug: string): readonly string[] {
+  const rev = reviews.find((r) => r.slug === slug)
+  const cmp = comparisons.find((c) => c.slug === slug)
+  const cat = rev?.category ?? cmp?.category
   const langs: string[] = ['en']
-  if (RU_PILOT_REVIEW_SLUGS.includes(slug) || RU_PILOT_COMPARISON_SLUGS.includes(slug)) langs.push('ru')
+  if (cat) {
+    for (const [lang, cats] of Object.entries(REVIEW_PILOTS)) {
+      if (cats.has(cat)) langs.push(lang)
+    }
+  }
   return langs
 }
 const ES_PILOT_ARTICLE_SET = new Set<string>(ES_PILOT_ARTICLE_SLUGS)
@@ -173,7 +191,7 @@ export function getPrerenderRoutes(): string[] {
     ...topicHubRoutes,
     ...reviews.map((r) => `/reviews/${r.slug}`),
     ...comparisons.map((c) => `/reviews/compare/${c.slug}`),
-    ...localizedRuReviewRoutes,
+    ...localizedReviewRoutes,
   ]
 }
 
@@ -198,8 +216,8 @@ export const LOCALIZED_ARTICLE_ROUTE_SET = new Set([
   ...localizedRuArticleRoutes,
 ])
 
-/** Set of localized review/comparison routes (RU pilot). */
-export const LOCALIZED_REVIEW_ROUTE_SET = new Set(localizedRuReviewRoutes)
+/** Set of localized review/comparison/hub/methodology routes (all pilots). */
+export const LOCALIZED_REVIEW_ROUTE_SET = new Set(localizedReviewRoutes)
 
 /** EN base paths that have localized variants — used by sitemap for hreflang grouping. */
 export const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)

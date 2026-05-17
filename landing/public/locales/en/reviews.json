@@ -6,7 +6,22 @@
   },
   "breadcrumb": {
     "home": "Home",
-    "reviews": "Reviews"
+    "reviews": "Reviews",
+    "methodology": "Methodology"
+  },
+  "methodology": {
+    "h1": "How ONDA scores tools",
+    "intro": "Every review on ONDA is a single, named editorial assessment — not a crowd average and not an algorithm. This page is the fixed rubric behind those scores, so you can judge the judgement.",
+    "scoreHeading": "The score",
+    "scoreBody": "Each tool gets an overall score from 0 to 10 (one decimal). It is the weighted mean of the criteria below — never a round number picked by feel. A single reviewer assigns it, so it is published as one editorial rating, not an aggregate of many.",
+    "criteriaHeading": "Scoring criteria — {{category}}",
+    "testHeading": "Hands-on tested vs evidence-based",
+    "testBody": "Every review carries one of two labels. Hands-on tested means ONDA physically wore and used the device, with the test period stated. Evidence-based assessment means the tool was scored from spec sheets and peer-reviewed validation studies, each cited in the review references. We never present an assessment as hands-on testing.",
+    "independenceHeading": "Independence",
+    "independenceBody": "No vendor pays for placement or for a score. Product links are plain links to official sites and ONDA earns no commission from them. If that ever changes, affiliate links will be clearly labelled and disclosed on the page.",
+    "authorHeading": "Who writes the reviews",
+    "authorBody": "Reviews are written by Yakiv Bilenko, founder of ONDA Life.",
+    "authorLink": "About the author"
   },
   "ui": {
     "updated": "Updated",
@@ -28,7 +43,8 @@
     "verdict": "Verdict",
     "faq": "[ FAQ ]",
     "product": "Product",
-    "overall": "Overall"
+    "overall": "Overall",
+    "metaReviewTitle": "{{name}} review — scored {{score}}/10"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",

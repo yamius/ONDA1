@@ -8,7 +8,7 @@
 import { writeFileSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs, RU_PILOT_REVIEW_SLUGS, RU_PILOT_COMPARISON_SLUGS, INDEXED_TOPIC_SLUGS } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs, reviewLocalizedLangs, REVIEW_PILOT_LANGS, INDEXED_TOPIC_SLUGS } from './prerender-routes'
 import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, type Lang } from '../src/i18n'
 import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
 import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
@@ -210,32 +210,6 @@ for (const slug of ALL_PILOT_ARTICLE_SLUGS) {
   altsByArticle[slug] = tags.join('\n')
 }
 
-/** Pre-build hreflang alternates for review/comparison/hub pages with a RU
- *  sibling (RU pilot — Sleep apps category). Emitted on EN and RU URLs. */
-function reviewCluster(enPath: string): string {
-  const tags = ['en', 'ru'].map((l) => {
-    const href = l === 'en' ? `${SITE_URL}${enPath}` : `${SITE_URL}/${l}${enPath}`
-    return `    <xhtml:link rel="alternate" hreflang="${l}" href="${href}"/>`
-  })
-  tags.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${enPath}"/>`)
-  return tags.join('\n')
-}
-const altsByReviewSlug: Record<string, string> = {}
-for (const slug of RU_PILOT_REVIEW_SLUGS) altsByReviewSlug[slug] = reviewCluster(`/reviews/${slug}`)
-const altsByComparisonSlug: Record<string, string> = {}
-for (const slug of RU_PILOT_COMPARISON_SLUGS) altsByComparisonSlug[slug] = reviewCluster(`/reviews/compare/${slug}`)
-const reviewHubAlts = reviewCluster('/reviews')
-
-/** Hreflang cluster for a review hub / review / comparison route, or '' . */
-function reviewAlternates(path: string): string {
-  if (path === '/reviews' || path === '/ru/reviews') return reviewHubAlts
-  let m = path.match(/^(?:\/ru)?\/reviews\/compare\/([^/]+)$/)
-  if (m) return altsByComparisonSlug[m[1]] ?? ''
-  m = path.match(/^(?:\/ru)?\/reviews\/([^/]+)$/)
-  if (m && m[1] !== 'methodology') return altsByReviewSlug[m[1]] ?? ''
-  return ''
-}
-
 /** Pre-build hreflang alternates for each part — only languages with translations. */
 const altsByPart: Record<string, string> = {}
 for (const slug of PART_SLUGS) {
@@ -247,6 +221,36 @@ for (const slug of PART_SLUGS) {
   })
   tags.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}${partPathFor(slug, 'en')}"/>`)
   altsByPart[slug] = tags.join('\n')
+}
+
+/** Hreflang alternates for a review hub / methodology / review / comparison URL. */
+const SITEMAP_REVIEW_LANGS = ['en', ...REVIEW_PILOT_LANGS]
+function reviewSitemapUrl(kind: string, slug: string, lang: string): string {
+  const base =
+    kind === 'hub' ? '/reviews'
+    : kind === 'methodology' ? '/reviews/methodology'
+    : kind === 'comparison' ? `/reviews/compare/${slug}`
+    : `/reviews/${slug}`
+  return lang === 'en' ? `${SITE_URL}${base}` : `${SITE_URL}/${lang}${base}`
+}
+function reviewAlternates(path: string): string {
+  let kind = ''
+  let slug = ''
+  let m: RegExpMatchArray | null
+  if (/^(?:\/(?:es|ru|uk|zh))?\/reviews$/.test(path)) kind = 'hub'
+  else if (/^(?:\/(?:es|ru|uk|zh))?\/reviews\/methodology$/.test(path)) kind = 'methodology'
+  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh))?\/reviews\/compare\/([^/]+)$/))) { kind = 'comparison'; slug = m[1] }
+  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh))?\/reviews\/([^/]+)$/))) { kind = 'review'; slug = m[1] }
+  else return ''
+  const langs = kind === 'hub' || kind === 'methodology'
+    ? SITEMAP_REVIEW_LANGS
+    : reviewLocalizedLangs(slug)
+  if (langs.length <= 1) return ''
+  const tags = langs.map(
+    (l) => `    <xhtml:link rel="alternate" hreflang="${l}" href="${reviewSitemapUrl(kind, slug, l)}"/>`,
+  )
+  tags.push(`    <xhtml:link rel="alternate" hreflang="x-default" href="${reviewSitemapUrl(kind, slug, 'en')}"/>`)
+  return `\n${tags.join('\n')}`
 }
 
 const urls = routes.map((path) => {
@@ -279,9 +283,8 @@ const urls = routes.map((path) => {
     // EN /articles/<slug> for a slug that has a localised sibling.
     alternates = `\n${altsByArticle[articleSlug]}`
   } else {
-    // Review hub / review / comparison — EN or RU (pilot: Sleep apps).
-    const revAlts = reviewAlternates(path)
-    if (revAlts) alternates = `\n${revAlts}`
+    // Review hub / methodology / review / comparison — EN or localised.
+    alternates = reviewAlternates(path)
   }
   const lastmodTag = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : ''
   return `  <url>

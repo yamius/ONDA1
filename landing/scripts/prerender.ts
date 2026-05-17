@@ -24,7 +24,7 @@ import {
   parsePartRoute,
   type Lang,
 } from '../src/i18n'
-import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs } from './prerender-routes'
+import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, REVIEW_PILOT_LANGS } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, TITLE_MAX, DESC_MAX } from './meta-inject'
 import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
 
@@ -120,6 +120,8 @@ function buildHreflangLinksForArticle(slug: string, langs: readonly string[]): s
  */
 interface ReviewsFile {
   hub?: { h1?: string; intro?: string }
+  methodology?: { h1?: string; intro?: string }
+  ui?: { metaReviewTitle?: string }
   bodies?: Record<string, { description?: string }>
   comparisons?: Record<string, { title?: string; description?: string }>
 }
@@ -128,28 +130,35 @@ for (const lang of SUPPORTED_LANGS) {
   reviewsByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'reviews.json'), 'utf-8')) as ReviewsFile
 }
 
-/** Parse a review hub / review / comparison route into {lang, kind, slug}. */
+type ReviewKind = 'hub' | 'methodology' | 'review' | 'comparison'
+
+/** Parse a review hub / methodology / review / comparison route into {lang, kind, slug}. */
 function parseReviewRoute(
   route: string,
-): { lang: Lang; kind: 'hub' | 'review' | 'comparison'; slug: string } | null {
+): { lang: Lang; kind: ReviewKind; slug: string } | null {
   let m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'hub', slug: '' }
+  m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/methodology$/)
+  if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'methodology', slug: '' }
   m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/compare\/([^/]+)$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'comparison', slug: m[2] }
   m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/([^/]+)$/)
-  if (m && m[2] !== 'methodology') return { lang: ((m[1] as Lang) ?? 'en'), kind: 'review', slug: m[2] }
+  if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'review', slug: m[2] }
   return null
 }
 
-function reviewUrlFor(kind: 'hub' | 'review' | 'comparison', slug: string, lang: Lang): string {
+function reviewUrlFor(kind: ReviewKind, slug: string, lang: Lang): string {
   const base =
-    kind === 'hub' ? '/reviews' : kind === 'comparison' ? `/reviews/compare/${slug}` : `/reviews/${slug}`
+    kind === 'hub' ? '/reviews'
+    : kind === 'methodology' ? '/reviews/methodology'
+    : kind === 'comparison' ? `/reviews/compare/${slug}`
+    : `/reviews/${slug}`
   return lang === 'en' ? `${SITE_URL}${base}` : `${SITE_URL}/${lang}${base}`
 }
 
 /** Hreflang cluster for a review/comparison — only languages with a localised URL. */
 function buildHreflangLinksForReview(
-  kind: 'hub' | 'review' | 'comparison',
+  kind: ReviewKind,
   slug: string,
   langs: readonly string[],
 ): string {
@@ -414,9 +423,11 @@ for (const route of routes) {
       : isReviewLocalized && reviewInfo
         ? (reviewInfo.kind === 'hub'
             ? '/reviews'
-            : reviewInfo.kind === 'comparison'
-              ? `/reviews/compare/${reviewInfo.slug}`
-              : `/reviews/${reviewInfo.slug}`)
+            : reviewInfo.kind === 'methodology'
+              ? '/reviews/methodology'
+              : reviewInfo.kind === 'comparison'
+                ? `/reviews/compare/${reviewInfo.slug}`
+                : `/reviews/${reviewInfo.slug}`)
         : route
     const meta = getMetaForRoute(metaRoute)
     out = injectMetaIntoHtml(out, meta)
@@ -517,7 +528,9 @@ for (const route of routes) {
       // Review hub / review / comparison route — either the EN URL or a
       // localised /<lang>/reviews/... URL (RU pilot: sleep-app category).
       const reviewLangs =
-        reviewInfo.kind === 'hub' ? ['en', 'ru'] : reviewLocalizedLangs(reviewInfo.slug)
+        reviewInfo.kind === 'hub' || reviewInfo.kind === 'methodology'
+          ? ['en', ...REVIEW_PILOT_LANGS]
+          : reviewLocalizedLangs(reviewInfo.slug)
       const hasLocalizedSibling = reviewLangs.length > 1
       out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${reviewInfo.lang}"`)
 
@@ -528,6 +541,9 @@ for (const route of routes) {
         if (reviewInfo.kind === 'hub') {
           title = rf.hub?.h1 ? `${rf.hub.h1} | ONDA Life` : ''
           desc = rf.hub?.intro ?? ''
+        } else if (reviewInfo.kind === 'methodology') {
+          title = rf.methodology?.h1 ? `${rf.methodology.h1} | ONDA Life` : ''
+          desc = rf.methodology?.intro ?? ''
         } else if (reviewInfo.kind === 'comparison') {
           const c = rf.comparisons?.[reviewInfo.slug]
           title = c?.title ? `${c.title} | ONDA Life` : ''
@@ -535,7 +551,10 @@ for (const route of routes) {
         } else {
           const review = getReviewBySlug(reviewInfo.slug)
           if (review) {
-            title = `${review.name} — обзор и оценка ${review.overallScore.toFixed(1)}/10 | ONDA Life`
+            const tpl = rf.ui?.metaReviewTitle ?? '{{name}} review — scored {{score}}/10'
+            title = `${tpl
+              .replace('{{name}}', review.name)
+              .replace('{{score}}', review.overallScore.toFixed(1))} | ONDA Life`
           }
           desc = rf.bodies?.[reviewInfo.slug]?.description ?? ''
         }

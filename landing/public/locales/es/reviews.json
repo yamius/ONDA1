@@ -1,39 +1,471 @@
 {
   "hub": {
-    "h1": "Biohacking Tool Reviews",
-    "intro": "Independent, criteria-based reviews of biohacking tools — HRV trackers, meditation apps and sleep apps — scored against a fixed, public rubric, not on hype.",
-    "methodologyLink": "→ How we score (methodology)"
+    "h1": "Reseñas de herramientas de biohacking",
+    "intro": "Reseñas independientes y basadas en criterios de herramientas de biohacking — monitores de HRV, apps de meditación y apps de sueño — puntuadas con una rúbrica fija y pública, no con el bombo publicitario.",
+    "methodologyLink": "→ Cómo puntuamos (metodología)"
   },
   "breadcrumb": {
-    "home": "Home",
-    "reviews": "Reviews"
+    "home": "Inicio",
+    "reviews": "Reseñas",
+    "methodology": "Metodología"
+  },
+  "methodology": {
+    "h1": "Cómo ONDA puntúa las herramientas",
+    "intro": "Cada reseña en ONDA es una valoración editorial única y con autor — no un promedio de la multitud ni un algoritmo. Esta página es la rúbrica fija que hay detrás de esas puntuaciones, para que puedas juzgar el juicio.",
+    "scoreHeading": "La puntuación",
+    "scoreBody": "Cada herramienta recibe una puntuación global de 0 a 10 (con un decimal). Es la media ponderada de los criterios de abajo — nunca un número redondo elegido a ojo. La asigna un único reseñador, así que se publica como una valoración editorial, no como el agregado de muchas.",
+    "criteriaHeading": "Criterios de puntuación — {{category}}",
+    "testHeading": "Probado en persona frente a evaluación basada en evidencia",
+    "testBody": "Cada reseña lleva una de dos etiquetas. «Probado en persona» significa que ONDA llevó y usó físicamente el dispositivo, indicando el periodo de prueba. «Evaluación basada en evidencia» significa que la herramienta se puntuó a partir de fichas técnicas y estudios de validación revisados por pares, cada uno citado en las fuentes de la reseña. Nunca presentamos una evaluación como una prueba en persona.",
+    "independenceHeading": "Independencia",
+    "independenceBody": "Ningún fabricante paga por aparecer ni por una puntuación. Los enlaces a productos son enlaces normales a sitios oficiales y ONDA no gana comisión con ellos. Si eso cambiara alguna vez, los enlaces de afiliado se etiquetarán y se divulgarán claramente en la página.",
+    "authorHeading": "Quién escribe las reseñas",
+    "authorBody": "Las reseñas las escribe Yakiv Bilenko, fundador de ONDA Life.",
+    "authorLink": "Sobre el autor",
+    "criteriaDesc": {
+      "hrv-wearable": {
+        "hrv-accuracy": "Concordancia del HRV medido (RMSSD) con una banda pectoral de ECG de referencia, a partir de estudios de validación revisados por pares y pruebas comparativas.",
+        "sensor": "Tipo de sensor (PPG óptico frente a ECG eléctrico), enfoque de muestreo y cómo de bien se mantiene una señal limpia en movimiento y de noche.",
+        "sleep-accuracy": "Cómo de cerca siguen las fases del sueño y el tiempo total de sueño a la polisomnografía o a referencias validadas — el HRV se lee sobre todo durante el sueño.",
+        "data-access": "Acceso a datos en bruto y detallados: exportación, una API abierta e integración con herramientas de terceros en lugar de una app cerrada.",
+        "wearability": "Comodidad y formato para llevarlo 24/7, además de la autonomía y cuánto interrumpe la carga la medición continua.",
+        "app-ux": "Claridad de la app, calidad de la orientación y si las métricas se explican en lugar de reducirse a una única puntuación opaca.",
+        "value": "Precio del hardware junto con cualquier suscripción obligatoria, sopesado frente a lo que ofrece el dispositivo."
+      },
+      "meditation-app": {
+        "content-library": "Amplitud, profundidad y calidad de la biblioteca guiada — meditaciones, cursos y series por temas y niveles.",
+        "teaching": "Nivel de los instructores y de la enseñanza en sí — con qué claridad y credibilidad se enseña la práctica, de principiante a avanzado.",
+        "personalization": "Cómo de bien se adapta la app a ti — cursos estructurados, seguimiento del progreso, recomendaciones y guía diaria.",
+        "app-experience": "Claridad y fricción de la propia app — interfaz, navegación y con qué facilidad se inicia una sesión.",
+        "free-tier": "Cuánta práctica real es posible sin pagar — un plan gratuito utilizable frente a un recorrido de demostración bloqueado.",
+        "value": "Precio de la suscripción sopesado frente a lo que ofrecen la biblioteca y la enseñanza.",
+        "evidence": "Hasta qué punto la app se apoya en investigación y en linajes de enseñanza creíbles en lugar de en vagas afirmaciones de bienestar."
+      },
+      "sleep-app": {
+        "tracking-accuracy": "Con qué precisión mide la app el sueño — horarios, fases y alteraciones — mediante acelerómetro, micrófono, sónar o un dispositivo emparejado.",
+        "wind-down-content": "Amplitud y calidad del contenido para conciliar el sueño — paisajes sonoros, cuentos para dormir, audio guiado y ruido blanco.",
+        "sleep-science": "Fundamento en ciencia real del sueño — métodos circadianos, TCC-I, despertar inteligente — en lugar de vagas afirmaciones de relajación.",
+        "insights": "Calidad del análisis que devuelve la app — tendencias, explicaciones y recomendaciones accionables, no solo una puntuación.",
+        "app-experience": "Claridad y fricción de la app — interfaz, navegación y con qué facilidad encaja en una rutina nocturna.",
+        "free-tier": "Cuánto es realmente utilizable sin pagar — un plan gratuito funcional frente a una muestra bloqueada.",
+        "value": "Precio — pago único o suscripción — sopesado frente a lo que ofrece la app."
+      }
+    }
   },
   "ui": {
-    "updated": "Updated",
-    "howWeTested": "How we tested:",
-    "pros": "Pros",
-    "cons": "Cons",
-    "price": "Price:",
-    "asOf": "as of",
-    "references": "References",
-    "relatedReviews": "Related reviews",
-    "allReviews": "← All reviews",
-    "visitSite": "Visit {{brand}} official site →",
-    "affiliateNote": "Affiliate link — ONDA may earn a commission. It does not affect the score.",
+    "updated": "Actualizado",
+    "howWeTested": "Cómo lo evaluamos:",
+    "pros": "A favor",
+    "cons": "En contra",
+    "price": "Precio:",
+    "asOf": "a fecha de",
+    "references": "Fuentes",
+    "relatedReviews": "Reseñas relacionadas",
+    "allReviews": "← Todas las reseñas",
+    "visitSite": "Visitar el sitio oficial de {{brand}} →",
+    "affiliateNote": "Enlace de afiliado — ONDA puede recibir una comisión. No afecta a la puntuación.",
     "scoreBreakdown": "[ SCORE_BREAKDOWN ]",
     "comparisonsHeading": "[ COMPARISONS ]",
     "comparisonTag": "[ COMPARISON ]",
     "topPicks": "[ TOP_PICKS ]",
     "comparisonTable": "[ COMPARISON_TABLE ]",
-    "verdict": "Verdict",
+    "verdict": "Veredicto",
     "faq": "[ FAQ ]",
-    "product": "Product",
-    "overall": "Overall"
+    "product": "Producto",
+    "overall": "Total",
+    "metaReviewTitle": "{{name}} — reseña y puntuación {{score}}/10"
   },
   "testStatus": {
-    "hands-on": "Hands-on tested",
-    "evidence-based": "Evidence-based assessment"
+    "hands-on": "Probado en persona",
+    "evidence-based": "Evaluación basada en evidencia"
   },
-  "bodies": {},
-  "comparisons": {}
+  "categories": {
+    "hrv-wearable": "Monitores de HRV",
+    "meditation-app": "Apps de meditación",
+    "sleep-app": "Apps de sueño"
+  },
+  "criteria": {
+    "tracking-accuracy": "Precisión del seguimiento del sueño",
+    "wind-down-content": "Contenido para conciliar el sueño",
+    "sleep-science": "Base científica del sueño",
+    "insights": "Análisis y recomendaciones",
+    "app-experience": "Experiencia de la app",
+    "free-tier": "Plan gratuito",
+    "value": "Precio y valor",
+    "hrv-accuracy": "Precisión de la medición de HRV",
+    "sensor": "Calidad del sensor y la señal",
+    "sleep-accuracy": "Precisión del seguimiento del sueño",
+    "data-access": "Acceso a los datos y exportación",
+    "wearability": "Comodidad y batería",
+    "app-ux": "App y software",
+    "content-library": "Biblioteca de contenido",
+    "teaching": "Calidad de la enseñanza",
+    "personalization": "Personalización",
+    "evidence": "Base de evidencia"
+  },
+  "bodies": {
+    "sleep-cycle": {
+      "verdict": "El monitor de sueño convencional más pulido — alarma inteligente y análisis claro, con un plan gratuito de verdad útil.",
+      "summary": "Sleep Cycle es el monitor de sueño más popular por buenos motivos: mide tu noche, te despierta en sueño ligero para que te levantes menos atontado y te devuelve un análisis claro y legible. Su plan gratuito es de verdad útil y el plan de pago se mantiene económico.",
+      "description": "Reseña de ONDA de Sleep Cycle — el monitor de sueño convencional más pulido, con alarma inteligente. Puntuado por seguimiento, análisis, plan gratuito y precio.",
+      "bestFor": "Lo mejor si quieres un monitor de sueño pulido y de bajo esfuerzo con alarma inteligente.",
+      "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "pros": [
+        "La alarma inteligente te despierta en sueño ligero",
+        "Plan gratuito de verdad útil",
+        "Análisis del sueño claro y legible",
+        "Pulida y fácil de usar"
+      ],
+      "cons": [
+        "El contenido para conciliar el sueño es escaso",
+        "El seguimiento con el teléfono en la cama es menos preciso que un wearable",
+        "Los mejores datos — ronquidos, frecuencia cardiaca — requieren Premium o un reloj",
+        "No es una ayuda para conciliar el sueño"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Mide con micrófono y acelerómetro, o por frecuencia cardiaca con un Apple Watch — sólido para un monitor basado en el teléfono.",
+        "wind-down-content": "Algunos sonidos para dormir y contenido de ayuda, aunque conciliar el sueño no es su foco principal.",
+        "sleep-science": "La ventana de despertar inteligente — levantarte en sueño más ligero — es su idea de fondo, con base científica y de larga trayectoria.",
+        "insights": "Análisis nocturno claro y tendencias a largo plazo, legibles en lugar de abrumadores.",
+        "app-experience": "Pulida y fácil — la más refinada de las apps de sueño convencionales.",
+        "free-tier": "Un plan gratuito de verdad utilizable; muchos usuarios nunca necesitan pagar.",
+        "value": "Unos 50 USD al año por Premium — económico para lo que añade."
+      },
+      "content": "## En qué destaca\n\nSleep Cycle es el monitor de sueño más popular por una razón: hace lo esencial con limpieza. Mide tu noche con el micrófono y el acelerómetro del teléfono — o por frecuencia cardiaca si llevas un Apple Watch — y su idea de siempre, la alarma inteligente, te levanta dentro de una ventana cuando estás en sueño más ligero, para que despiertes menos atontado. El análisis que devuelve es legible: tendencias y un desglose nocturno, no un muro de cifras.\n\n## En qué se queda corta\n\nEs ante todo un monitor. El contenido para conciliar el sueño — sonidos, audio de ayuda — existe, pero es escaso frente a una app de relajación dedicada, y el seguimiento con el teléfono en la cama es por naturaleza menos preciso que un wearable en la muñeca. Los mejores datos, del ronquido a la frecuencia cardiaca y a las tendencias más profundas, quedan tras el plan Premium.\n\n## Para quién es\n\nElige Sleep Cycle si quieres un monitor pulido y de bajo esfuerzo con alarma inteligente y un plan gratuito con el que de verdad puedes vivir. Si sobre todo necesitas ayuda para conciliar el sueño, una app de relajación te servirá mejor; si quieres precisión de nivel clínico, lo hará un wearable."
+    },
+    "sleepio": {
+      "verdict": "La app clínicamente más seria de la selección — un curso validado de TCC-I que trata el insomnio, no un monitor ni una biblioteca de sonidos; la mejor opción si tienes un problema de sueño real.",
+      "summary": "Sleepio no es un monitor ni una app de paisajes sonoros. Es un curso digital de terapia cognitivo-conductual para el insomnio (TCC-I) — el tratamiento clínico de primera línea. Se realiza en sesiones semanales, está respaldado por estudios publicados y es la única app aquí creada para tratar de verdad un trastorno del sueño.",
+      "description": "Reseña de ONDA de Sleepio — un programa digital de TCC-I clínicamente validado que trata el insomnio en lugar de solo seguir el sueño. Puntuado por base científica y resultados.",
+      "bestFor": "Lo mejor para quien tiene un insomnio real y quiere tratamiento, no seguimiento.",
+      "testNote": "Evaluación basada en evidencia — a partir de información pública, estudios publicados y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "pros": [
+        "Un programa de TCC-I genuino y clínicamente validado",
+        "Trata el insomnio en lugar de solo medirlo",
+        "Sólida evidencia de estudios publicados",
+        "Gratis en algunas regiones a través de la salud pública o el empleador"
+      ],
+      "cons": [
+        "No es un monitor ni una biblioteca de sonidos",
+        "Pide un compromiso real durante varias semanas",
+        "Sin un plan gratuito significativo si pagas directamente",
+        "Excesivo si duermes bien y solo quieres estadísticas"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Un diario del sueño en lugar de seguimiento por sensores — los datos que alimentan el programa de TCC-I.",
+        "wind-down-content": "Hay algunas herramientas de relajación, pero el contenido no es el objetivo — lo es el curso terapéutico.",
+        "sleep-science": "Un programa de TCC-I genuino — el tratamiento clínico de primera línea para el insomnio — con evidencia de estudios publicados.",
+        "insights": "El progreso se sigue respecto al curso; basado en el diario y centrado en el tratamiento.",
+        "app-experience": "Un curso estructurado semana a semana — pide compromiso, no hojear.",
+        "free-tier": "No hay un plan gratuito real — pero en algunas regiones está disponible gratis a través del sistema de salud.",
+        "value": "Caro si se paga directamente, pero gratis a través de algunos empleadores y sistemas de salud — y trata un trastorno."
+      },
+      "content": "## En qué destaca\n\nSleepio es la única app aquí que se propone tratar un trastorno del sueño en lugar de medirlo o calmarlo. Imparte terapia cognitivo-conductual para el insomnio (TCC-I) — el tratamiento clínico de primera línea — como un curso estructurado semana a semana, guiado por un diario del sueño. Está respaldada por ensayos aleatorizados publicados y, en algunas regiones, se ofrece gratis a través del sistema de salud o del empleador. Si tienes un insomnio real, esta es la opción clínicamente seria.\n\n## En qué se queda corta\n\nNo es un monitor ni una biblioteca de sonidos — si quieres estadísticas nocturnas o paisajes sonoros, es la app equivocada. El curso pide un compromiso real durante varias semanas y, pagado directamente, es caro. Para alguien que duerme bien y solo quiere datos, es excesivo.\n\n## Para quién es\n\nElige Sleepio si tienes un problema de sueño real y persistente y quieres un tratamiento basado en evidencia. Si duermes lo suficiente y quieres medición o relajación, un monitor como Sleep Cycle o una biblioteca como BetterSleep encaja mejor."
+    },
+    "sleepscore": {
+      "verdict": "Un monitor sin contacto y orientado a la investigación — el más fuerte aquí para convertir tus datos de sueño en algo sobre lo que de verdad actuar.",
+      "summary": "SleepScore viene de una empresa orientada a la investigación y se nota. Mide sin contacto, descompone la noche en docenas de parámetros y lo convierte en recomendaciones personalizadas en lugar de solo un número — el monitor convencional más fuerte para decirte qué cambiar.",
+      "description": "Reseña de ONDA de SleepScore — un monitor de sueño sin contacto y orientado a la investigación que convierte los datos en recomendaciones. Puntuado por seguimiento, ciencia y análisis.",
+      "bestFor": "Lo mejor si quieres un monitor que convierte los datos de sueño en recomendaciones concretas y con base científica.",
+      "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "pros": [
+        "Seguimiento sin contacto — nada que llevar ni cargar",
+        "Las recomendaciones más fuertes y accionables de la selección",
+        "Orientado a la investigación, con docenas de parámetros medidos",
+        "Precisión de seguimiento sólida para una app basada en el teléfono"
+      ],
+      "cons": [
+        "El sónar del teléfono sigue siendo una estimación, no de nivel wearable",
+        "El contenido para conciliar el sueño es escaso",
+        "El análisis útil queda tras Premium",
+        "Menos pulida que Sleep Cycle"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Seguimiento por sónar sin contacto a través del altavoz y el micrófono del teléfono — un enfoque ingenioso y bien valorado.",
+        "wind-down-content": "Escaso — hay algo de contenido, pero el foco es la medición y los consejos.",
+        "sleep-science": "Creado por una empresa orientada a la investigación; la noche se descompone en docenas de parámetros medidos.",
+        "insights": "Su punto fuerte — recomendaciones personalizadas y con base científica, no solo una puntuación.",
+        "app-experience": "Bastante clara, aunque menos pulida que Sleep Cycle.",
+        "free-tier": "Existe un plan gratuito, pero el análisis útil y el historial necesitan Premium.",
+        "value": "Unos 50 USD al año por la experiencia completa."
+      },
+      "content": "## En qué destaca\n\nSleepScore viene de una empresa orientada a la investigación, y se nota. Mide sin contacto — usando sónar a través del altavoz y el micrófono del teléfono — descompone la noche en docenas de parámetros y, lo más importante, lo convierte en recomendaciones personalizadas en lugar de solo un número. De los monitores convencionales aquí, es el más fuerte para decirte qué cambiar de verdad.\n\n## En qué se queda corta\n\nEl enfoque del sónar sin contacto es ingenioso, pero sigue siendo una estimación basada en el teléfono, no de nivel wearable. El contenido para conciliar el sueño es escaso, y el análisis y el historial de verdad útiles quedan tras el plan de pago.\n\n## Para quién es\n\nElige SleepScore si quieres un monitor que haga algo con los datos — recomendaciones concretas y con base científica — y prefieres no llevar nada en la cama. Si quieres el seguimiento en bruto más profundo, una app emparejada con un wearable como Pillow o AutoSleep llega más lejos."
+    },
+    "sleep-as-android": {
+      "verdict": "La app de sueño más completa en Android — seguimiento, alarma inteligente y sonidos para conciliar el sueño en una sola — si no te importa una interfaz densa en funciones.",
+      "summary": "Sleep as Android es la app de sueño más completa de su plataforma: sigue tu noche, te despierta con una alarma inteligente por ciclos de sueño e incorpora sonidos para conciliar el sueño, detección de ronquidos y amplia compatibilidad con wearables. El precio de todas esas funciones es una interfaz que se siente técnica y densa.",
+      "description": "Reseña de ONDA de Sleep as Android — la app de sueño más completa en Android, con seguimiento, alarma inteligente y sonidos para conciliar el sueño. Puntuado por seguimiento y precio.",
+      "bestFor": "Lo mejor para usuarios de Android que quieren una app de sueño todo-en-uno potente y configurable.",
+      "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "pros": [
+        "La app de sueño más completa en Android",
+        "Seguimiento, alarma inteligente y sonidos para conciliar el sueño juntos",
+        "Grabación de ronquidos y de hablar dormido",
+        "Amplia integración con wearables; bajo coste"
+      ],
+      "cons": [
+        "Solo Android",
+        "Densa en funciones — recompensa al que trastea",
+        "El seguimiento basado en el teléfono es una estimación sin un wearable",
+        "Menos pulida que las apps de iOS convencionales"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Seguimiento sólido basado en el teléfono, más preciso emparejado con un wearable compatible.",
+        "wind-down-content": "Nanas, sonidos de la naturaleza y audio binaural — más contenido para conciliar el sueño que los monitores puros de aquí.",
+        "sleep-science": "Una alarma inteligente por ciclos de sueño y seguimiento de ronquidos, con funciones sensatas de higiene del sueño.",
+        "insights": "Estadísticas y tendencias profundas, además de grabaciones de ronquidos y de hablar dormido.",
+        "app-experience": "Potente y configurable, pero densa en funciones — recompensa al que trastea.",
+        "free-tier": "Una prueba gratuita y luego un desbloqueo de bajo coste; freemium en la práctica.",
+        "value": "Un coste bajo, casi de pago único, por un conjunto de funciones inusualmente completo."
+      },
+      "content": "## En qué destaca\n\nSleep as Android es la app de sueño más completa en Android. Sigue tu noche, te despierta con una alarma inteligente por ciclos de sueño e incorpora una profundidad de funciones inusual — nanas y sonidos de la naturaleza, grabación de ronquidos y de hablar dormido, avisos antirronquidos e integración con toda una gama de wearables. Para un usuario de Android que quiere una sola app que haga casi todo, nada más en la plataforma la iguala.\n\n## En qué se queda corta\n\nTodas esas funciones hacen que se sienta técnica y densa — recompensa al que trastea más que las pulidas apps convencionales. El seguimiento basado en el teléfono es una estimación salvo que emparejes un wearable, y la app es solo para Android.\n\n## Para quién es\n\nElige Sleep as Android si usas Android y quieres un todo-en-uno potente y configurable — seguimiento, alarma inteligente y sonidos para conciliar el sueño juntos. Los usuarios de iPhone, o cualquiera que prefiera la simplicidad a las opciones, deberían mirar otra cosa."
+    },
+    "bettersleep": {
+      "verdict": "La biblioteca de contenido para conciliar el sueño más rica de cualquier app de sueño — paisajes sonoros, cuentos y meditaciones — con un seguimiento ligero añadido; ante todo una app de relajación, y un monitor después.",
+      "summary": "BetterSleep destaca en lo que la mayoría de las apps de sueño tratan como una idea de última hora: ayudarte a dormir. Su biblioteca de contenido — paisajes sonoros mezclables, SleepTales, meditaciones y respiración — es la más profunda de aquí. También sigue tu noche, pero el seguimiento es la mitad más ligera de la app.",
+      "description": "Reseña de ONDA de BetterSleep — la biblioteca de contenido para conciliar el sueño más profunda de cualquier app de sueño, con paisajes sonoros, SleepTales y seguimiento. Puntuado por contenido y precio.",
+      "bestFor": "Lo mejor para quien su problema principal es conciliar el sueño, no medirlo.",
+      "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "pros": [
+        "La biblioteca de contenido para conciliar el sueño más profunda de aquí",
+        "Paisajes sonoros mezclables que puedes ajustar a tu gusto",
+        "SleepTales, meditaciones y respiración en una sola app",
+        "Pulida y agradable de usar"
+      ],
+      "cons": [
+        "El seguimiento es ligero — no es una herramienta de medición seria",
+        "El volumen de contenido puede abrumar",
+        "La biblioteca completa necesita una suscripción",
+        "Sin un método clínico del sueño distintivo"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Seguimiento por sonido y movimiento basado en el teléfono — presente, pero una función secundaria, no el foco.",
+        "wind-down-content": "La biblioteca para conciliar el sueño más profunda de aquí — paisajes sonoros mezclables, SleepTales, meditaciones y respiración.",
+        "sleep-science": "Buen contenido de higiene del sueño y rutinas, sin un método clínico distintivo.",
+        "insights": "Estadísticas nocturnas básicas — adecuadas, pero no el motivo para elegirla.",
+        "app-experience": "Pulida y agradable, aunque el puro volumen de contenido puede abrumar.",
+        "free-tier": "Existe un plan gratuito; la biblioteca completa y el seguimiento necesitan la suscripción.",
+        "value": "Unos 60 USD al año — justo para una biblioteca tan grande."
+      },
+      "content": "## En qué destaca\n\nBetterSleep está construida en torno a la parte de la noche que la mayoría de los monitores ignora — la preparación para dormir. Su biblioteca de contenido es la más profunda de cualquier app de sueño de aquí: paisajes sonoros mezclables que ajustas tú mismo, SleepTales, meditaciones guiadas y ejercicios de respiración. Si tu problema es estar despierto en la cama, y no desconocer tus estadísticas, esta es la app que lo aborda de frente.\n\n## En qué se queda corta\n\nEl seguimiento existe, pero es la mitad más ligera de la app — basado en el teléfono, básico, no una herramienta de medición seria. El volumen de contenido puede abrumar, y la biblioteca completa queda tras una suscripción. No hay un método clínico distintivo, solo contenido de relajación bien hecho.\n\n## Para quién es\n\nElige BetterSleep si sobre todo necesitas ayuda para conciliar el sueño y quieres para ello la biblioteca de sonidos e historias más rica posible. Si quieres un seguimiento preciso o un programa clínico, un monitor dedicado o Sleepio te servirá mejor."
+    },
+    "pillow": {
+      "verdict": "Un monitor de sueño detallado y bien presentado para el Apple Watch — excelente si usas iOS, irrelevante si no.",
+      "summary": "Pillow es el monitor de sueño construido en torno al Apple Watch. Llevado de noche, el reloj le permite seguir el sueño de forma automática y detallada, y la app convierte eso en un análisis de verdad útil y bien presentado. Además es una de las apps de sueño más fáciles de navegar — pero es solo para iOS.",
+      "description": "Reseña de ONDA de Pillow — el monitor de sueño detallado para Apple Watch en iOS. Puntuado por precisión del seguimiento, análisis, experiencia de la app y precio.",
+      "bestFor": "Lo mejor para dueños de iPhone y Apple Watch que quieren un análisis del sueño detallado y bien presentado.",
+      "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "pros": [
+        "Seguimiento detallado y preciso con el Apple Watch",
+        "Análisis bien presentado con vistas de semana a año",
+        "Comparación de métricas para explicar una mala noche",
+        "Fácil de navegar"
+      ],
+      "cons": [
+        "Solo iOS — sin Android",
+        "Depende mucho de tener un Apple Watch",
+        "Contenido para conciliar el sueño mínimo",
+        "Las funciones más completas necesitan una suscripción"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Seguimiento automático con el sensor de frecuencia cardiaca y el acelerómetro del Apple Watch — más preciso que un teléfono en la mesilla.",
+        "wind-down-content": "Mínimo — una app de medición, no una ayuda para conciliar el sueño.",
+        "sleep-science": "Buena detección de fases y horarios, sin un método propio con base científica distintiva.",
+        "insights": "Cada métrica se abre en vistas semanales, mensuales y anuales; comparar métricas ayuda a explicar una mala noche.",
+        "app-experience": "Clara y de verdad fácil de navegar.",
+        "free-tier": "Una app freemium — el conjunto de funciones más completo necesita la suscripción.",
+        "value": "Una suscripción sumada a necesitar un Apple Watch y un iPhone reduce para quién compensa."
+      },
+      "content": "## En qué destaca\n\nPillow es el monitor de sueño construido en torno al Apple Watch. Llevado de noche, el reloj le permite seguir el sueño de forma automática y con más detalle que un teléfono en la mesilla, y la app convierte eso en un análisis de verdad útil — cada métrica se abre en vistas semanales, mensuales y anuales, y puedes comparar métricas para averiguar qué arruinó una noche concreta. Además es una de las apps de sueño más fáciles de navegar.\n\n## En qué se queda corta\n\nEs solo para iOS y depende mucho del Apple Watch — sin uno pierdes gran parte de lo que la hace buena. El contenido para conciliar el sueño es mínimo; esta es una app de medición, no una ayuda para dormir. Y el conjunto de funciones más completo queda tras una suscripción.\n\n## Para quién es\n\nElige Pillow si usas iPhone, llevas un Apple Watch a la cama y quieres un análisis del sueño detallado y bien presentado. Los usuarios de Android, o cualquiera sin reloj, deberían mirar otra cosa."
+    },
+    "rise": {
+      "verdict": "Una app de sueño que replantea el objetivo como la energía diurna — sigue la deuda de sueño y tu ritmo circadiano y te dice cuándo hacer las cosas, no solo cómo dormiste.",
+      "summary": "RISE toma un ángulo distinto al de los monitores de aquí. En lugar de calificar la noche anterior, sigue dos cosas — tu deuda de sueño acumulada y tu ritmo circadiano — y las convierte en un horario diario de energía: cuándo tendrás un pico, cuándo un bajón, cuándo prepararte para dormir. El foco es qué hacer con tu día.",
+      "description": "Reseña de ONDA de RISE — una app de sueño construida en torno a la deuda de sueño y el ritmo circadiano, centrada en la energía diurna en lugar de en estadísticas nocturnas. Puntuado por ciencia y análisis.",
+      "bestFor": "Lo mejor para quien le importa la energía diurna y el momento, no las puntuaciones nocturnas.",
+      "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "pros": [
+        "Replantea el sueño en torno a la energía diurna, no solo estadísticas",
+        "Sigue la deuda de sueño y el ritmo circadiano de forma coherente",
+        "Un horario diario de energía de verdad útil",
+        "Interfaz clara y enfocada"
+      ],
+      "cons": [
+        "La deuda de sueño es un modelo, no una medición",
+        "Escasa en contenido para conciliar el sueño",
+        "Plan gratuito pobre",
+        "Una app de un solo ángulo — hace una sola cosa"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Sigue los horarios de sueño con datos del teléfono o de un wearable — sólido, pero la deuda de sueño es una estimación.",
+        "wind-down-content": "Escaso — hay algunas herramientas de relajación, pero el contenido no es el foco.",
+        "sleep-science": "Construida sobre dos conceptos reales — la deuda de sueño y el ritmo circadiano — aplicados de forma coherente.",
+        "insights": "Su punto fuerte — un horario diario de energía con picos, bajones y una ventana óptima para prepararte para dormir.",
+        "app-experience": "Clara y enfocada, organizada en torno a la línea de tiempo de energía.",
+        "free-tier": "Una prueba corta y luego una suscripción — poco utilizable gratis.",
+        "value": "Unos 60 USD al año por una app distintiva pero de un solo ángulo."
+      },
+      "content": "## En qué destaca\n\nRISE hace una pregunta distinta a la del resto del campo. No «¿cómo dormiste?», sino «¿qué deberías hacer hoy?». Sigue dos cosas — tu deuda de sueño acumulada y tu ritmo circadiano — y las convierte en un horario diario de energía: cuándo tendrás un pico, cuándo llegará un bajón de tarde, cuándo se abre tu ventana óptima para prepararte para dormir. Para quien le importa la energía y el momento, y no una nota nocturna, ese enfoque es de verdad útil.\n\n## En qué se queda corta\n\nLa deuda de sueño es un modelo, no una medición directa, así que toma las cifras como una estimación bien razonada. El contenido para conciliar el sueño es escaso, el plan gratuito es una prueba corta y RISE hace una sola cosa: si quieres una biblioteca de sonidos o una alarma inteligente, no es esa app.\n\n## Para quién es\n\nElige RISE si quieres gestionar la energía diurna y organizar tu día en torno a tu ritmo. Si sobre todo quieres estadísticas de seguimiento nocturno o ayuda para conciliar el sueño, un monitor o una app de relajación encaja mejor."
+    },
+    "pzizz": {
+      "verdict": "Una app de audio para dormir enfocada — su algoritmo crea un paisaje sonoro nuevo cada noche para que nunca canse — pero hace una sola cosa y no hace seguimiento.",
+      "summary": "Pzizz hace una sola cosa: te duerme con su audio. Su algoritmo «dreamscape» genera cada sesión una mezcla única de música, voz y efectos, de modo que el audio nunca se vuelve demasiado familiar para funcionar. No sigue el sueño ni tiene análisis — es una pura ayuda para conciliar el sueño.",
+      "description": "Reseña de ONDA de Pzizz — una app de audio enfocada para dormir y echar una cabezada cuyo algoritmo genera un paisaje sonoro nuevo cada sesión. Puntuado por contenido para conciliar el sueño y precio.",
+      "bestFor": "Lo mejor para quien solo quiere que lo duerman con audio, sin seguimiento.",
+      "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "pros": [
+        "Un paisaje sonoro nuevo y sin repeticiones en cada sesión",
+        "Módulos dedicados de cabezada y concentración, no solo para dormir",
+        "Sencilla, despejada y rápida de iniciar",
+        "Existe una opción de desbloqueo de pago único"
+      ],
+      "cons": [
+        "Sin seguimiento del sueño alguno",
+        "Sin análisis — por diseño",
+        "Hace una sola cosa",
+        "El conjunto completo de módulos necesita una suscripción"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Sin seguimiento alguno — Pzizz reproduce audio, no mide tu noche.",
+        "wind-down-content": "Todo su sentido — un algoritmo que genera un paisaje sonoro nuevo para dormir o echar una cabezada cada sesión.",
+        "sleep-science": "Construida sobre investigación de ruido, música y voz; módulos para dormir, cabezadas y concentración.",
+        "insights": "Ninguno — no hay nada que analizar, por diseño.",
+        "app-experience": "Sencilla y despejada — eliges un módulo, pones un temporizador, duermes.",
+        "free-tier": "Una versión gratuita limitada; el conjunto completo de módulos necesita la suscripción.",
+        "value": "Unos 70 USD al año, o un desbloqueo de pago único — razonable para una herramienta de uso nocturno."
+      },
+      "content": "## En qué destaca\n\nPzizz hace una sola cosa y la hace bien: te duerme con su audio. Su algoritmo «dreamscape» crea cada sesión una mezcla única de música, voz en off y efectos de sonido, de modo que el audio nunca se vuelve lo bastante familiar como para dejar de funcionar — el fallo habitual de una lista de reproducción fija. Los módulos dedicados de cabezada y concentración llevan la misma idea al día. La app es de una simplicidad refrescante: eliges un módulo, pones un temporizador, duermes.\n\n## En qué se queda corta\n\nEs una ayuda para conciliar el sueño y nada más. No hay seguimiento, ni análisis, ni una mirada a tu noche — por diseño, pero eso significa que Pzizz no puede decirte si algo está mejorando. El conjunto completo de módulos necesita una suscripción.\n\n## Para quién es\n\nElige Pzizz si solo quieres que te duerman con audio y no te interesa el seguimiento. Si quieres medir tu noche, o quieres una biblioteca de relajación más amplia, un monitor o BetterSleep encaja mejor."
+    },
+    "autosleep": {
+      "verdict": "El monitor de sueño purista para el Apple Watch — preciso, automático y sin suscripción — pero solo mide el sueño, no te ayuda a conseguirlo.",
+      "summary": "AutoSleep es el monitor de sueño purista para el Apple Watch. Sigue el sueño de forma automática y precisa, es detallado y es una rara compra de pago único sin suscripción. La contrapartida es el foco total: mide el sueño y no hace nada más — ningún contenido para conciliar el sueño.",
+      "description": "Reseña de ONDA de AutoSleep — el monitor de sueño purista para Apple Watch, una compra de pago único sin suscripción. Puntuado por seguimiento, análisis y precio.",
+      "bestFor": "Lo mejor para dueños de Apple Watch que quieren datos de sueño precisos y nada de suscripción.",
+      "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "pros": [
+        "Seguimiento preciso y automático con el Apple Watch",
+        "Una compra de pago único — sin suscripción",
+        "Análisis y tendencias detallados",
+        "Sin botones — simplemente hace el seguimiento"
+      ],
+      "cons": [
+        "Ningún contenido para conciliar el sueño",
+        "Solo iOS y Apple Watch",
+        "Una interfaz densa que recompensa la configuración",
+        "Mide el sueño pero no hace nada por mejorarlo"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Seguimiento automático y detallado con el Apple Watch — preciso, con seguidores devotos entre los dueños del reloj.",
+        "wind-down-content": "Ninguno — ni sonidos ni cuentos; AutoSleep no intenta ayudarte a conciliar el sueño.",
+        "sleep-science": "Buenas métricas y un concepto de «banco de sueño», sin un método de investigación distintivo.",
+        "insights": "Análisis y tendencias detallados — preparación, deuda y constancia — para quien quiere los datos.",
+        "app-experience": "Potente pero densa — recompensa la configuración más que las pulidas apps convencionales.",
+        "free-tier": "No hay un plan gratuito real — pero es una compra de pago único barata, no una suscripción.",
+        "value": "Unos pocos dólares, una vez, sin suscripción — un valor excepcional en una categoría llena de cuotas recurrentes."
+      },
+      "content": "## En qué destaca\n\nAutoSleep es el monitor de sueño purista para el Apple Watch. Sigue el sueño de forma automática — sin botones, sin «me voy a la cama» — y es detallado y preciso, con seguidores devotos entre los dueños del Apple Watch. Y lo mejor: es una compra de pago único — unos pocos dólares, una vez, sin suscripción alguna, lo cual en una categoría llena de cuotas recurrentes es raro.\n\n## En qué se queda corta\n\nEs seguimiento y nada más. No hay contenido alguno para conciliar el sueño — ni sonidos ni cuentos — así que no hace nada por ayudarte a dormir, solo por medir una vez que lo haces. Es solo para iOS y Apple Watch, la interfaz es densa y no hay un plan gratuito real.\n\n## Para quién es\n\nElige AutoSleep si tienes un Apple Watch, solo quieres datos y estás cansado de las suscripciones. Si quieres ayuda para conciliar el sueño, o usas Android, es la app equivocada."
+    },
+    "endel": {
+      "verdict": "Una app de paisajes sonoros con IA que adapta su audio a la hora del día y a las entradas en tiempo real — bonita y distintiva, pero reproduce sonido, no sigue el sueño.",
+      "summary": "Endel genera paisajes sonoros con un motor de IA que se adapta en tiempo real a entradas como la hora del día, el tiempo y — emparejado con un wearable — la frecuencia cardiaca. El resultado es audio ambiental para dormir, concentrarse y relajarse que es de verdad distintivo. Aun así, es una app de audio; no sigue tu noche.",
+      "description": "Reseña de ONDA de Endel — una app con IA que genera paisajes sonoros adaptativos para dormir, concentrarse y relajarse en tiempo real. Puntuado por contenido para conciliar el sueño y precio.",
+      "bestFor": "Lo mejor para quien quiere audio ambiental adaptativo y distintivo para dormir.",
+      "testNote": "Evaluación basada en evidencia — a partir de información pública, datos de las tiendas de apps y reseñas independientes de 2026. No se basa en una prueba prolongada en persona por parte de ONDA.",
+      "pros": [
+        "Paisajes sonoros adaptativos con IA, distintos de una lista fija",
+        "El audio cambia con la hora del día y otras entradas",
+        "Diseño bonito y sereno",
+        "Abarca concentración y relajación además del sueño"
+      ],
+      "cons": [
+        "Sin seguimiento del sueño",
+        "Sin análisis",
+        "Plan gratuito pobre",
+        "Una suscripción por una app de un solo propósito"
+      ],
+      "scoreNotes": {
+        "tracking-accuracy": "Sin un seguimiento del sueño real — Endel lee entradas para dar forma al audio, no mide tu sueño.",
+        "wind-down-content": "Paisajes sonoros adaptativos y generativos para dormir y relajarse — distintivos y bien hechos.",
+        "sleep-science": "Fundamentada en investigación de sonido y ritmos circadianos; los paisajes sonoros cambian con la hora del día.",
+        "insights": "Ninguno — Endel produce audio, no análisis.",
+        "app-experience": "De diseño bonito y sereno, aunque escasa en opciones.",
+        "free-tier": "Una prueba corta y luego una suscripción — poco utilizable gratis.",
+        "value": "Unos 60 USD al año por una app de audio de un solo propósito."
+      },
+      "content": "## En qué destaca\n\nEndel genera sus paisajes sonoros en lugar de reproducir pistas fijas. Un motor de IA adapta el audio en tiempo real a las entradas — la hora del día, el tiempo y, emparejado con un wearable, la frecuencia cardiaca — de modo que un paisaje sonoro para dormir a medianoche no es el mismo que al anochecer. Es distintivo, de diseño bonito y abarca la concentración y la relajación además del sueño.\n\n## En qué se queda corta\n\nEs una app de audio, punto. Endel lee entradas para dar forma al sonido; no sigue ni mide tu sueño, y no hay análisis que revisar. El plan gratuito es una prueba corta, así que la experiencia requiere en la práctica una suscripción.\n\n## Para quién es\n\nElige Endel si quieres audio ambiental generativo y adaptativo y la estética te importa. Si quieres saber cómo dormiste de verdad, empárejalo con un monitor — o elige uno en su lugar."
+    }
+  },
+  "comparisons": {
+    "best-sleep-apps-2026": {
+      "title": "Mejores apps de sueño (2026)",
+      "description": "ONDA clasifica las mejores apps de sueño de 2026 — monitores, bibliotecas de sonido y programas de TCC-I — por seguimiento, contenido para conciliar el sueño, ciencia del sueño, análisis y precio.",
+      "intro": "«App de sueño» abarca tres trabajos distintos: medir tu noche, dormirte con audio y tratar un problema de sueño. Puntuamos las apps de sueño más usadas de 2026 con una sola rúbrica — precisión del seguimiento, contenido para conciliar el sueño, ciencia del sueño, análisis, experiencia de la app, plan gratuito y precio. Así quedan clasificadas, y para qué trabajo es cada una.",
+      "verdict": "Sleep Cycle gana en conjunto — el monitor convencional más pulido, con alarma inteligente y un plan gratuito que la mayoría nunca necesita abandonar. Pero «la mejor» depende por completo del trabajo. Si tienes un insomnio real, Sleepio es la opción clínicamente seria: trata el problema en lugar de medirlo. SleepScore convierte los datos en los consejos más accionables; Sleep as Android es el todo-en-uno para Android; Pillow y AutoSleep son las opciones para Apple Watch, con AutoSleep como la elección por precio si quieres evitar suscripciones. Si el problema es simplemente conciliar el sueño, BetterSleep, Pzizz y Endel son apps centradas en el sonido, y RISE es la que replantea todo en torno a la energía diurna. Elige por el trabajo, no por la puntuación.",
+      "content": "## Cómo las clasificamos\n\nCada app se puntuó con la [metodología de reseñas](/reviews/methodology) publicada por ONDA: siete criterios ponderados, con la precisión del seguimiento y el contenido para conciliar el sueño con más peso, porque son los dos trabajos para los que la mayoría compra una app de sueño. La puntuación global es la media ponderada.\n\nCada app se evaluó a partir de información pública, datos de las tiendas de apps, estudios publicados y reseñas independientes de 2026 en lugar de una prueba prolongada en persona, así que toma las puntuaciones como un punto de partida basado en evidencia.\n\n## La versión corta\n\nEstas apps no son realmente competidoras — hacen tres trabajos distintos. Los monitores (Sleep Cycle, SleepScore, Pillow, AutoSleep, Sleep as Android) miden tu noche. Las bibliotecas de sonido (BetterSleep, Pzizz, Endel) te duermen con su audio. Sleepio trata el insomnio como una condición clínica, y RISE replantea todo en torno a la energía diurna. Sleep Cycle encabeza la tabla como la opción más equilibrada, pero la respuesta correcta es la fila que coincide con el trabajo que necesitas hacer — y con tu plataforma.",
+      "picks": {
+        "sleep-cycle": {
+          "award": "Mejor en conjunto",
+          "takeaway": "El monitor convencional más pulido, con alarma inteligente y un plan gratuito con el que se puede vivir."
+        },
+        "sleepio": {
+          "award": "Mejor para el insomnio",
+          "takeaway": "Un curso de TCC-I clínicamente validado — la única app aquí que trata un trastorno del sueño, no solo lo sigue."
+        },
+        "sleepscore": {
+          "award": "Mejores recomendaciones",
+          "takeaway": "Orientado a la investigación y sin contacto, el más fuerte para convertir los datos de sueño en algo sobre lo que actuar."
+        },
+        "sleep-as-android": {
+          "award": "Mejor para Android",
+          "takeaway": "El todo-en-uno más completo en Android — seguimiento, alarma inteligente y sonidos para conciliar el sueño juntos."
+        },
+        "bettersleep": {
+          "award": "Mejor contenido para conciliar el sueño",
+          "takeaway": "La biblioteca más profunda de paisajes sonoros, SleepTales y meditaciones — para cuando el problema es conciliar el sueño."
+        },
+        "pillow": {
+          "award": "Mejor para Apple Watch",
+          "takeaway": "Seguimiento del Apple Watch detallado y bien presentado, de verdad fácil de navegar."
+        },
+        "rise": {
+          "award": "Mejor para la energía diurna",
+          "takeaway": "Replantea el sueño en torno a la deuda de sueño y tu ritmo, en un horario diario de energía útil."
+        },
+        "pzizz": {
+          "award": "Mejor audio para conciliar el sueño",
+          "takeaway": "Un algoritmo que crea un paisaje sonoro nuevo y sin repeticiones cada noche para que nunca canse."
+        },
+        "autosleep": {
+          "award": "Mejor precio",
+          "takeaway": "Seguimiento del Apple Watch preciso y automático como compra de pago único — sin suscripción alguna."
+        },
+        "endel": {
+          "award": "Mejores paisajes sonoros adaptativos",
+          "takeaway": "Audio generado por IA que cambia con la hora del día — distintivo y de diseño bonito."
+        }
+      },
+      "faq": [
+        {
+          "q": "¿Cuál es la mejor app de sueño?",
+          "a": "Para la mayoría, Sleep Cycle — un monitor pulido con alarma inteligente y un plan gratuito utilizable. Pero depende del trabajo: Sleepio para el insomnio real, BetterSleep para conciliar el sueño, AutoSleep o Pillow para dueños de Apple Watch, Sleep as Android para Android."
+        },
+        {
+          "q": "¿De verdad las apps de sueño miden el sueño con precisión?",
+          "a": "El seguimiento basado en el teléfono (Sleep Cycle, SleepScore, Sleep as Android) es una estimación razonable, no de nivel clínico. Las apps emparejadas con un wearable — AutoSleep y Pillow con un Apple Watch — son más precisas. Las apps solo de sonido como Pzizz y Endel no hacen seguimiento alguno."
+        },
+        {
+          "q": "¿Qué app de sueño de verdad ayuda a conciliar el sueño?",
+          "a": "BetterSleep tiene la biblioteca para conciliar el sueño más profunda; Pzizz genera un paisaje sonoro nuevo cada noche; Endel produce audio adaptativo con IA. Los monitores como Sleep Cycle miden el sueño pero hacen menos por ayudarte a conseguirlo. Para problemas de sueño persistentes, Sleepio trata la causa."
+        },
+        {
+          "q": "¿Hay alguna app de sueño sin suscripción?",
+          "a": "AutoSleep es una compra de pago único sin suscripción. Sleep as Android tiene un coste bajo, casi de pago único. La mayoría de las demás — Sleep Cycle, SleepScore, Pillow, BetterSleep, Pzizz, Endel, RISE — dependen de una suscripción, aunque varias tienen un plan gratuito utilizable."
+        },
+        {
+          "q": "¿Cuál es la diferencia entre un monitor de sueño y una app de TCC-I?",
+          "a": "Un monitor (Sleep Cycle, Pillow, AutoSleep) mide tu sueño y te informa de él. Una app de TCC-I como Sleepio imparte terapia cognitivo-conductual para el insomnio — el tratamiento clínico de primera línea — para cambiar de verdad cómo duermes. Si tienes un problema de sueño real, la TCC-I es la opción basada en evidencia."
+        }
+      ]
+    }
+  }
 }
