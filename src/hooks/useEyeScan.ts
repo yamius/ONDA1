@@ -12,11 +12,9 @@ import {
   type NervousSystemScores,
 } from '../utils/eyeScanMetrics';
 
-// MediaPipe-ассеты пока с CDN. MVP-B позже забандлит их локально (офлайн).
-const MP_VERSION = '0.10.35';
-const WASM_PATH = `https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@${MP_VERSION}/wasm`;
-const MODEL_PATH =
-  'https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task';
+// MediaPipe-ассеты забандлены локально (public/mediapipe/) — без CDN, офлайн.
+const WASM_PATH = '/mediapipe/wasm';
+const MODEL_PATH = '/mediapipe/face_landmarker.task';
 
 export const SCAN_DURATION_MS = 30_000;
 
@@ -71,9 +69,9 @@ function extractSample(result: FaceLandmarkerResult, t: number): ScanSample {
 }
 
 /**
- * Контроллер eye-scan: открывает камеру + MediaPipe, ведёт 45-секундную
- * сессию, собирает кадры и считает wellness-баллы. UI-агностичен — экран
- * привязывает videoRef к своему <video> и вызывает start().
+ * Контроллер eye-scan: камера + MediaPipe, 30-секундная сессия, сбор кадров
+ * и подсчёт wellness-баллов. MediaPipe предзагружается на маунте, чтобы скан
+ * стартовал без ожидания.
  */
 export function useEyeScan(): UseEyeScan {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -82,14 +80,47 @@ export function useEyeScan(): UseEyeScan {
   const [result, setResult] = useState<EyeScanResult | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  // Состояние сессии вне реактивности React.
   const landmarkerRef = useRef<FaceLandmarker | null>(null);
+  const landmarkerPromiseRef = useRef<Promise<FaceLandmarker> | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const rafRef = useRef(0);
   const samplesRef = useRef<ScanSample[]>([]);
   const startTsRef = useRef(0);
   const lastVideoTimeRef = useRef(-1);
   const lastProgressTsRef = useRef(0);
+
+  // Загрузка MediaPipe — один раз; параллельные вызовы ждут один промис.
+  const ensureLandmarker = useCallback(async (): Promise<FaceLandmarker> => {
+    if (landmarkerRef.current) return landmarkerRef.current;
+    if (!landmarkerPromiseRef.current) {
+      landmarkerPromiseRef.current = (async () => {
+        const fileset = await FilesetResolver.forVisionTasks(WASM_PATH);
+        let lm: FaceLandmarker;
+        try {
+          lm = await FaceLandmarker.createFromOptions(fileset, {
+            baseOptions: { modelAssetPath: MODEL_PATH, delegate: 'GPU' },
+            runningMode: 'VIDEO',
+            numFaces: 1,
+            outputFaceBlendshapes: true,
+          });
+        } catch {
+          // GPU-делегат доступен не везде — откатываемся на CPU.
+          lm = await FaceLandmarker.createFromOptions(fileset, {
+            baseOptions: { modelAssetPath: MODEL_PATH, delegate: 'CPU' },
+            runningMode: 'VIDEO',
+            numFaces: 1,
+            outputFaceBlendshapes: true,
+          });
+        }
+        landmarkerRef.current = lm;
+        return lm;
+      })().catch((e) => {
+        landmarkerPromiseRef.current = null; // позволяем повторить при ошибке
+        throw e;
+      });
+    }
+    return landmarkerPromiseRef.current;
+  }, []);
 
   const stopStream = useCallback(() => {
     cancelAnimationFrame(rafRef.current);
@@ -138,25 +169,7 @@ export function useEyeScan(): UseEyeScan {
     lastProgressTsRef.current = 0;
     setStatus('preparing');
     try {
-      if (!landmarkerRef.current) {
-        const fileset = await FilesetResolver.forVisionTasks(WASM_PATH);
-        try {
-          landmarkerRef.current = await FaceLandmarker.createFromOptions(fileset, {
-            baseOptions: { modelAssetPath: MODEL_PATH, delegate: 'GPU' },
-            runningMode: 'VIDEO',
-            numFaces: 1,
-            outputFaceBlendshapes: true,
-          });
-        } catch {
-          // GPU-делегат доступен не везде — откатываемся на CPU.
-          landmarkerRef.current = await FaceLandmarker.createFromOptions(fileset, {
-            baseOptions: { modelAssetPath: MODEL_PATH, delegate: 'CPU' },
-            runningMode: 'VIDEO',
-            numFaces: 1,
-            outputFaceBlendshapes: true,
-          });
-        }
-      }
+      await ensureLandmarker();
 
       const stream = await navigator.mediaDevices.getUserMedia({
         video: { facingMode: 'user', width: { ideal: 1280 }, height: { ideal: 720 } },
@@ -177,7 +190,7 @@ export function useEyeScan(): UseEyeScan {
       setError(e instanceof Error ? `${e.name}: ${e.message}` : String(e));
       setStatus('error');
     }
-  }, [loop, stopStream]);
+  }, [ensureLandmarker, loop, stopStream]);
 
   const reset = useCallback(() => {
     stopStream();
@@ -188,14 +201,24 @@ export function useEyeScan(): UseEyeScan {
     setStatus('idle');
   }, [stopStream]);
 
-  // Очистка при размонтировании.
+  // Предзагрузка MediaPipe на маунте + очистка при размонтировании.
   useEffect(() => {
+    ensureLandmarker().catch(() => {
+      /* ошибку покажет start() при попытке скана */
+    });
     return () => {
       stopStream();
-      landmarkerRef.current?.close();
+      const lm = landmarkerRef.current;
+      const pending = landmarkerPromiseRef.current;
       landmarkerRef.current = null;
+      landmarkerPromiseRef.current = null;
+      if (lm) {
+        lm.close();
+      } else if (pending) {
+        pending.then((l) => l.close()).catch(() => {});
+      }
     };
-  }, [stopStream]);
+  }, [ensureLandmarker, stopStream]);
 
   return { videoRef, status, progress, result, error, start, reset };
 }
