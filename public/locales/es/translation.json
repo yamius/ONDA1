@@ -2,6 +2,7 @@
   "eye_scan": {
     "nav_button": "Una mirada a ti mismo",
     "title": "Una mirada a ti mismo",
+    "subtitle": "Análisis del estado por la mirada y el parpadeo",
     "intro": "Mira a la cámara y mantén la calma durante unos {{sec}} segundos. Analiza tu parpadeo, mirada y micromovimientos. Los fotogramas no se guardan.",
     "start": "Iniciar escaneo",
     "preparing": "Preparando la cámara…",

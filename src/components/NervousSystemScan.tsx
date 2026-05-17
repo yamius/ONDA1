@@ -48,9 +48,10 @@ export default function NervousSystemScan({
             >
               <X className="w-6 h-6" />
             </button>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white text-center">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-0.5">
               {t('eye_scan.title')}
             </h2>
+            <p className="text-indigo-100 text-sm text-center">{t('eye_scan.subtitle')}</p>
           </div>
 
           {/* Тело */}
