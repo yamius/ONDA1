@@ -59,7 +59,16 @@ export const RU_PILOT_ARTICLE_SLUGS: readonly string[] = [
   'circadian-reset-mastering-light',
 ] as const
 
-export const ES_PILOT_ARTICLE_SLUGS: readonly string[] = [
+/**
+ * Spanish article pilot. The 22 base slugs below are already live. The
+ * remaining 45 reviewed ES translations are drip-published via
+ * ES_ARTICLE_ROLLOUT — each slug carries the date its /es/articles/<slug>
+ * URL goes live, gated at BUILD TIME. Same discipline as REVIEW_ROLLOUT:
+ * a finished translation sits in the repo yet stays invisible to crawlers
+ * until its day. One ~11-article batch per Monday redeploy reads to
+ * Google as organic growth, not a scaled-content dump.
+ */
+const ES_ARTICLE_PILOT_BASE: readonly string[] = [
   // 11 featured pillar articles (FEATURED_ARTICLE_SLUGS).
   'vagus-nerve-master-key',
   'neuroplasticity-flow-overclocking',
@@ -84,7 +93,76 @@ export const ES_PILOT_ARTICLE_SLUGS: readonly string[] = [
   'baroreflex-01hz-shift',
   'idle-state-alpha-rhythms',
   'interoceptive-precision-sensor-calibration',
-] as const
+]
+
+interface ArticleRolloutEntry {
+  slug: string
+  /** ISO date (YYYY-MM-DD) the /es/articles/<slug> URL goes live. */
+  publishOn: string
+}
+
+/** Remaining 45 reviewed ES article translations, ~11 per Monday. */
+const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
+  // Batch 1 — 2026-06-22
+  { slug: 'acc-calibration-protocol-cognitive-control', publishOn: '2026-06-22' },
+  { slug: 'acetylcholine-lens-neuro-mechanics', publishOn: '2026-06-22' },
+  { slug: 'adaptation-hack-range-fractionation', publishOn: '2026-06-22' },
+  { slug: 'adrenal-governor-thermal-runaway', publishOn: '2026-06-22' },
+  { slug: 'ai-biomarker-tracking-predictive', publishOn: '2026-06-22' },
+  { slug: 'ancestral-sync-circadian-anchors', publishOn: '2026-06-22' },
+  { slug: 'anterior-cingulate-core-coherence-monitoring', publishOn: '2026-06-22' },
+  { slug: 'anti-entropy-neural-architecture', publishOn: '2026-06-22' },
+  { slug: 'biological-latency-optimizing-system-ping', publishOn: '2026-06-22' },
+  { slug: 'bohr-effect-oxygen-telemetry', publishOn: '2026-06-22' },
+  { slug: 'cacao-stem-cells', publishOn: '2026-06-22' },
+  { slug: 'circadian-lighting-dark-therapy', publishOn: '2026-06-22' },
+  // Batch 2 — 2026-06-29
+  { slug: 'cognitive-architecture-neural-throughput', publishOn: '2026-06-29' },
+  { slug: 'cognitive-architecture-nootropic-stacks', publishOn: '2026-06-29' },
+  { slug: 'digital-dementia-attentional-control', publishOn: '2026-06-29' },
+  { slug: 'endocrine-social-drive-oxytocin-testosterone', publishOn: '2026-06-29' },
+  { slug: 'energy-governor-tsh', publishOn: '2026-06-29' },
+  { slug: 'energy-sensor-leptin', publishOn: '2026-06-29' },
+  { slug: 'fascial-tensegrity-protocol-myofascial-noise', publishOn: '2026-06-29' },
+  { slug: 'femtech-cyclical-architecture', publishOn: '2026-06-29' },
+  { slug: 'glp1-biology-muscle-preservation', publishOn: '2026-06-29' },
+  { slug: 'hpa-axis-control-cortisol-aggression', publishOn: '2026-06-29' },
+  { slug: 'hrv-training-nervous-system-latency', publishOn: '2026-06-29' },
+  // Batch 3 — 2026-07-06
+  { slug: 'hydraulic-viscosity-onda-transport-bus', publishOn: '2026-07-06' },
+  { slug: 'longevity-hardware-cellular-cleanup', publishOn: '2026-07-06' },
+  { slug: 'longevity-protocol-biological-clock-reset', publishOn: '2026-07-06' },
+  { slug: 'metabolic-redundancy-hybrid-power-architecture', publishOn: '2026-07-06' },
+  { slug: 'mitochondrial-biogenesis-cellular-power-grid', publishOn: '2026-07-06' },
+  { slug: 'mitochondrial-dna-red-light', publishOn: '2026-07-06' },
+  { slug: 'neural-bridge-alpha-flow-gateway', publishOn: '2026-07-06' },
+  { slug: 'neural-hydraulics-csf-flow', publishOn: '2026-07-06' },
+  { slug: 'neural-optimizer-estrogen', publishOn: '2026-07-06' },
+  { slug: 'neural-signal-to-noise-cleaning-system-channel', publishOn: '2026-07-06' },
+  { slug: 'phase-locked-acoustic-sleep', publishOn: '2026-07-06' },
+  // Batch 4 — 2026-07-13
+  { slug: 'physiological-concentration-flow-state-hardwired', publishOn: '2026-07-13' },
+  { slug: 'protocol-circadian-hard-reset', publishOn: '2026-07-13' },
+  { slug: 'quiet-mode-alpha-cortisol-buffer', publishOn: '2026-07-13' },
+  { slug: 'rhythmic-entrainment-system-frequencies', publishOn: '2026-07-13' },
+  { slug: 'senolytic-high-dosing-longevity', publishOn: '2026-07-13' },
+  { slug: 'spinal-harddrive-cpg-autonomous-scripts', publishOn: '2026-07-13' },
+  { slug: 'spinal-intelligence-decentralized-control', publishOn: '2026-07-13' },
+  { slug: 'system-feedback-biometric-loop', publishOn: '2026-07-13' },
+  { slug: 'system-stability-serotonin', publishOn: '2026-07-13' },
+  { slug: 'vascular-tensegrity-microvascular-mechanics', publishOn: '2026-07-13' },
+  { slug: 'ventral-tegmental-core-motivational-salience', publishOn: '2026-07-13' },
+]
+
+/** Build date (UTC) — the gate every rollout schedule compares against. */
+const BUILD_DATE = new Date().toISOString().slice(0, 10)
+
+/** Article slugs with a live /es/articles/<slug> URL — the base pilot plus
+ *  rollout entries whose publishOn date has been reached at build time. */
+export const ES_PILOT_ARTICLE_SLUGS: readonly string[] = [
+  ...ES_ARTICLE_PILOT_BASE,
+  ...ES_ARTICLE_ROLLOUT.filter((e) => e.publishOn <= BUILD_DATE).map((e) => e.slug),
+]
 
 const localizedEsArticleRoutes = ES_PILOT_ARTICLE_SLUGS.map((s) => `/es/articles/${s}`)
 const localizedRuArticleRoutes = RU_PILOT_ARTICLE_SLUGS.map((s) => `/ru/articles/${s}`)
@@ -129,7 +207,7 @@ const REVIEW_ROLLOUT: ReviewPilotEntry[] = [
 ]
 
 /** Build date (UTC) — the gate the rollout schedule is compared against. */
-const REVIEW_BUILD_DATE = new Date().toISOString().slice(0, 10)
+const REVIEW_BUILD_DATE = BUILD_DATE
 
 /**
  * Live pilots: language → set of categories whose publishOn date has
