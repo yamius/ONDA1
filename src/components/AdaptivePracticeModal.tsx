@@ -758,33 +758,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       console.log('[AdaptivePractice] iOS check: hasVitalsData=' + alreadyHasVitals + 
         ', stress=' + vitalsRef.current.stress + ', energy=' + vitalsRef.current.energy);
       
-      // Only wait if vitals are NOT ready yet
-      if (!alreadyHasVitals) {
-        console.log('[AdaptivePractice] iOS: Waiting for hasVitalsData to become TRUE...');
-        await new Promise<void>((resolve) => {
-          let attempts = 0;
-          const maxAttempts = 20; // 10 seconds total
-          const checkInterval = setInterval(() => {
-            attempts++;
-            const nowHasVitals = vitalsRef.current.hasVitalsData;
-            const stress = vitalsRef.current.stress;
-            const energy = vitalsRef.current.energy;
-            console.log(`[AdaptivePractice] Wait #${attempts}: hasVitals=${nowHasVitals}, stress=${stress}, energy=${energy}`);
-            
-            if (nowHasVitals || attempts >= maxAttempts) {
-              clearInterval(checkInterval);
-              if (nowHasVitals) {
-                console.log('[AdaptivePractice] Vitals ready! stress=' + stress + ', energy=' + energy);
-              } else {
-                console.log('[AdaptivePractice] Timeout waiting for vitals, using fallback');
-              }
-              resolve();
-            }
-          }, 500);
-        });
-      } else {
-        console.log('[AdaptivePractice] iOS: Vitals already available, using them directly!');
-      }
+      // Практику не блокируем ожиданием пульса (раньше — зависание до 10 с
+      // без Apple Watch). Мониторинг запущен выше, метрики подтянутся в фоне.
     }
 
     // Use vitalsRef.current for FRESH values after any async wait
