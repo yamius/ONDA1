@@ -393,6 +393,296 @@
         "value": "Unos 60 USD al año por una app de audio de un solo propósito."
       },
       "content": "## En qué destaca\n\nEndel genera sus paisajes sonoros en lugar de reproducir pistas fijas. Un motor de IA adapta el audio en tiempo real a las entradas — la hora del día, el tiempo y, emparejado con un wearable, la frecuencia cardiaca — de modo que un paisaje sonoro para dormir a medianoche no es el mismo que al anochecer. Es distintivo, de diseño bonito y abarca la concentración y la relajación además del sueño.\n\n## En qué se queda corta\n\nEs una app de audio, punto. Endel lee entradas para dar forma al sonido; no sigue ni mide tu sueño, y no hay análisis que revisar. El plan gratuito es una prueba corta, así que la experiencia requiere en la práctica una suscripción.\n\n## Para quién es\n\nElige Endel si quieres audio ambiental generativo y adaptativo y la estética te importa. Si quieres saber cómo dormiste de verdad, empárejalo con un monitor — o elige uno en su lugar."
+    },
+    "oura-ring-4": {
+      "verdict": "El monitor de HRV nocturno y de sueño más preciso de 2026 — si aceptas la suscripción obligatoria.",
+      "summary": "El Oura Ring 4 es el dispositivo a batir para la variabilidad de la frecuencia cardíaca nocturna y el sueño. Combina el formato 24/7 más pequeño de la categoría con la validación de fases de sueño más sólida, y su HRV nocturno sigue de cerca a una banda pectoral de ECG. La pega es una membresía recurrente sin la cual la app solo muestra datos básicos.",
+      "description": "Reseña de ONDA del Oura Ring 4 — el monitor de HRV nocturno y de sueño más preciso de 2026, puntuado por precisión, acceso a los datos, comodidad y precio.",
+      "bestFor": "Lo mejor para los datos de HRV nocturno y de sueño más precisos en el formato más pequeño.",
+      "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "pros": [
+        "La coincidencia más cercana al HRV nocturno de nivel ECG entre los dispositivos de consumo",
+        "La validación de fases de sueño más sólida de los tres",
+        "El formato 24/7 más pequeño y cómodo",
+        "App clara y didáctica"
+      ],
+      "cons": [
+        "Los datos avanzados requieren una membresía mensual recurrente",
+        "El HRV diurno y de ejercicio no es fiable con el movimiento",
+        "Acceso limitado a los datos en bruto",
+        "Sin pantalla — cada vistazo implica coger el teléfono"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "El RMSSD nocturno sigue a una banda pectoral de ECG con unos pocos milisegundos de margen; las lecturas diurnas se desvían con el movimiento.",
+        "sensor": "El PPG óptico desde el dedo mantiene una señal limpia toda la noche — la ventana que más importa para el HRV.",
+        "sleep-accuracy": "La mejor detección de fases de sueño de su clase; la validación independiente sitúa la concordancia por épocas con la polisomnografía clínica cerca del 79 %.",
+        "data-access": "Existe una API para desarrolladores, pero los datos en bruto latido a latido son limitados y el análisis más profundo queda tras la membresía.",
+        "wearability": "El formato always-on más pequeño de la categoría; entre 4 y 7 días de batería con cargas breves.",
+        "app-ux": "Una app pulida que explica la Preparación y el HRV en lugar de reducirlo todo a un único número opaco.",
+        "value": "Hardware en torno a 349 USD más una suscripción mensual obligatoria — capaz, pero nunca del todo en propiedad."
+      },
+      "content": "## En qué destaca\n\nPara la única tarea que más le importa a ONDA — una señal limpia de HRV nocturno — el Oura Ring 4 es el dispositivo de consumo más fuerte de 2026. Llevado en el dedo, su sensor óptico mantiene una lectura estable durante toda la noche, y el trabajo Bland–Altman publicado sitúa su RMSSD nocturno a unos pocos milisegundos de una banda pectoral de ECG. La detección de fases de sueño es la otra mitad de la historia: la validación independiente frente a la polisomnografía clínica alcanza una concordancia por épocas cercana al 79 % — la mejor de los tres dispositivos de aquí.\n\n## En qué se queda corto\n\nDos cosas le impiden una nota más alta. Primero, la cifra diurna: fuera del reposo, el movimiento perturba la señal óptica, así que cualquier lectura de HRV tomada durante la actividad debe tratarse como una estimación aproximada, no como un dato. Segundo, el modelo de negocio. El anillo es solo la mitad de la compra — sin la membresía mensual la app se reduce a puntuaciones básicas, y los datos en bruto latido a latido nunca se exponen del todo ni siquiera con ella.\n\n## Para quién es\n\nElige el Oura Ring 4 si tu prioridad es el registro de HRV nocturno y de sueño más preciso en la cosa más pequeña que puedas llevar a todas horas, y la suscripción es un coste aceptable. Si quieres tener tu dispositivo en plena propiedad, o entrenas con la carga diurna, las contrapartidas pueden empujarte a otra opción."
+    },
+    "whoop-5-0": {
+      "verdict": "Un entrenador de recuperación en la muñeca: HRV nocturno continuo y un análisis de esfuerzo nítido, encerrados tras una membresía perpetua.",
+      "summary": "El Whoop 5.0 está construido en torno a la recuperación. Muestrea el HRV de forma continua durante la noche e informa de una media de sueño completo en lugar de una comprobación puntual matinal, lo que hace que su señal diaria de recuperación sea la más limpia de los tres. La contrapartida es el modelo: no hay hardware en propiedad, solo una membresía continua.",
+      "description": "Reseña de ONDA del Whoop 5.0 — un monitor de recuperación con HRV continuo para deportistas, puntuado por precisión, calidad del sensor, acceso a los datos y precio.",
+      "bestFor": "Lo mejor para deportistas que entrenan con las señales diarias de recuperación y esfuerzo.",
+      "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "pros": [
+        "HRV nocturno continuo, no una única lectura matinal",
+        "Coaching de recuperación y esfuerzo nítido y accionable",
+        "Sin pantalla y cómodo; ~14 días de batería, se carga en el cuerpo",
+        "El coste más bajo del primer año de los tres"
+      ],
+      "cons": [
+        "Solo por suscripción — si dejas de pagar, la banda deja de funcionar",
+        "Un coste anual perpetuo, no una compra de pago único",
+        "App densa que puede abrumar a usuarios ocasionales",
+        "Acceso limitado a los datos en bruto"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "El muestreo continuo durante la noche construye una media de HRV de toda la noche a partir de cientos de lecturas, no de una comprobación puntual.",
+        "sensor": "Una banda óptica con varias longitudes de onda que mantiene bien la frecuencia cardíaca cuando se lleva ajustada.",
+        "sleep-accuracy": "Seguimiento del sueño de nivel recuperación, justo por detrás de Oura y muy por delante de un smartwatch de uso general.",
+        "data-access": "Existe una API para desarrolladores, pero, como en Oura, el flujo de datos en bruto latido a latido permanece en gran parte cerrado.",
+        "wearability": "Sin pantalla y fácil de olvidar; ~14 días de batería, y el módulo deslizante la carga sin quitarla.",
+        "app-ux": "Esfuerzo, Recuperación y un entrenador de IA recompensan a los usuarios analíticos pero pueden abrumar al resto.",
+        "value": "Solo por suscripción — unos 239 USD al año, para siempre, sin un dispositivo que llegues a poseer."
+      },
+      "content": "## En qué destaca\n\nEl Whoop 5.0 está construido en torno a una idea: la recuperación. En lugar de una comprobación puntual matinal, muestrea el HRV de forma continua durante la noche e informa de una media de sueño completo extraída de cientos de lecturas — la base más limpia para una señal diaria de recuperación de los tres dispositivos de aquí. La banda sin pantalla es fácil de olvidar que la llevas puesta, la generación actual amplió la autonomía a unas dos semanas, y el módulo de batería deslizante hace que nunca tenga que salir de tu muñeca para cargarse.\n\n## En qué se queda corto\n\nWhoop se vende como una membresía, no como un producto. No hay hardware en propiedad — si dejas de pagar, la banda deja de funcionar — y los aproximadamente 239 USD del primer año son un coste continuo, no una compra de pago único. La app es potente pero densa: Esfuerzo, Recuperación y el entrenador de IA recompensan a quien quiere estudiar sus datos y pueden abrumar a quien no. El acceso a los datos en bruto, como en Oura, es limitado.\n\n## Para quién es\n\nElige el Whoop 5.0 si eres deportista o te entrenas en serio y tomas decisiones a partir de una puntuación diaria de recuperación, y quieres HRV nocturno continuo sin una pantalla en la muñeca. Si te disgustan las suscripciones perpetuas, o quieres un dispositivo que además dé la hora, las alternativas encajarán mejor."
+    },
+    "apple-watch-series-11": {
+      "verdict": "Un smartwatch completísimo, pero una herramienta de HRV casual — hace comprobaciones puntuales en lugar de seguimiento.",
+      "summary": "El Apple Watch Series 11 es el dispositivo más capaz de esta comparativa y el único sin suscripción. Como monitor de HRV dedicado, sin embargo, es el más débil de los tres: registra el HRV en comprobaciones puntuales irregulares en segundo plano en lugar de con un protocolo nocturno estructurado.",
+      "description": "Reseña de ONDA del Apple Watch Series 11 como monitor de HRV — un smartwatch completísimo, pero una herramienta de recuperación casual. Puntuado por precisión, datos y precio.",
+      "bestFor": "Lo mejor para un único dispositivo que lo hace todo — con el HRV como métrica secundaria.",
+      "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "pros": [
+        "El hardware más capaz de aquí — sensor óptico más un ECG real",
+        "Sin suscripción; el dispositivo es tuyo en plena propiedad",
+        "Datos abiertos vía HealthKit y un profundo ecosistema de terceros",
+        "Un dispositivo genuinamente multiusos, no un monitor de una sola tarea"
+      ],
+      "cons": [
+        "El HRV se comprueba de forma puntual, no se sigue de forma continua durante la noche",
+        "Apple no trata el HRV como una métrica principal",
+        "Una batería de un día hace incómodo el uso nocturno constante",
+        "El seguimiento del sueño va por detrás de los dispositivos dedicados"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "El HRV se capta en comprobaciones puntuales irregulares en segundo plano, no con un protocolo nocturno continuo — un registro escaso e irregular.",
+        "sensor": "Hardware potente: un sensor óptico junto a un ECG de una sola derivación genuino.",
+        "sleep-accuracy": "El seguimiento del sueño es aceptable, pero por detrás de los monitores dedicados, y la autonomía desincentiva llevarlo toda la noche.",
+        "data-access": "HealthKit es comparativamente abierto — amplio soporte de apps de terceros y exportación sencilla.",
+        "wearability": "Una batería de aproximadamente un día implica una carga diaria, lo que va en contra de una medición nocturna constante.",
+        "app-ux": "Software excelente en conjunto, pero el HRV queda enterrado — la vista de Constantes Vitales no lo destaca como métrica principal.",
+        "value": "Una compra de pago único sin suscripción, y un dispositivo genuinamente multiusos por el dinero."
+      },
+      "content": "## En qué destaca\n\nComo pieza de hardware, el Apple Watch Series 11 es el dispositivo más capaz de esta comparativa: un sensor óptico junto a un ECG de una sola derivación genuino, una pantalla brillante y el ecosistema de terceros más profundo a través de HealthKit. Es también el único de aquí sin suscripción — el precio de compra adquiere el dispositivo en plena propiedad. Para quien quiere un único wearable que gestione notificaciones, entrenamientos, pagos y salud, nada más de aquí compite.\n\n## En qué se queda corto\n\nPara el trabajo de HRV dedicado es el más débil de los tres. El reloj registra el HRV en comprobaciones puntuales irregulares en segundo plano en lugar de con un protocolo nocturno estructurado, y la propia vista de Constantes Vitales de Apple ni siquiera destaca el HRV como métrica principal. Combinado con una batería que en la práctica necesita una carga diaria — incómodo para un uso nocturno constante — produce un registro de HRV escaso e irregular frente a Oura o Whoop.\n\n## Para quién es\n\nElige el Apple Watch Series 11 si quieres un único y excelente smartwatch para todo y tratas el HRV como un extra útil más que como el objetivo. Si el HRV nocturno y la recuperación son tu razón principal para comprar, un monitor dedicado te dará una señal mucho más limpia."
+    },
+    "polar-h10": {
+      "verdict": "El dispositivo de HRV más preciso que puedes comprar — un instrumento de referencia, no un wearable de uso diario.",
+      "summary": "El Polar H10 es la banda pectoral con la que se mide el resto de esta categoría. Su sensor de ECG eléctrico ofrece una precisión de HRV que ningún wearable óptico iguala, y transmite datos en bruto a cualquier app. La pega es por diseño — es una herramienta de medición deliberada, no algo que lleves a todas horas.",
+      "description": "Reseña de ONDA del Polar H10 — la banda pectoral de ECG que marca la referencia de precisión de HRV. Puntuado por precisión, acceso a los datos, comodidad y precio.",
+      "bestFor": "Lo mejor para una precisión de HRV de referencia — un instrumento de medición, no un wearable de uso diario.",
+      "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "pros": [
+        "Precisión de nivel ECG — el estándar de referencia para el HRV",
+        "Totalmente abierto: datos RR en bruto por Bluetooth y ANT+, cualquier app",
+        "El dispositivo más barato de aquí, sin suscripción",
+        "Fiable durante años de uso"
+      ],
+      "cons": [
+        "Una banda pectoral — no se lleva a todas horas",
+        "Sin seguimiento del sueño ni datos pasivos de todo el día",
+        "Necesita una app de terceros para un análisis de HRV real",
+        "Debe quedar ajustado contra la piel para leer con limpieza"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "ECG eléctrico leído directamente del pecho; el trabajo revisado por pares encuentra una concordancia casi perfecta con el ECG clínico en reposo.",
+        "sensor": "Un verdadero par de electrodos de ECG — el tipo de sensor de referencia, no una inferencia óptica a partir del flujo sanguíneo.",
+        "sleep-accuracy": "No es un dispositivo de sueño — una banda pectoral no detecta fases de sueño y no se lleva de noche.",
+        "data-access": "Emite los intervalos en bruto latido a latido (RR) por Bluetooth y ANT+; se empareja con prácticamente cualquier app de HRV.",
+        "wearability": "Una banda pectoral que se lleva para una medición o un entrenamiento — no un seguimiento pasivo 24/7.",
+        "app-ux": "Polar Flow es aceptable, pero el H10 rinde mejor emparejado con apps de HRV de terceros dedicadas.",
+        "value": "En torno a 90 USD, sin suscripción, y fiable durante años — el dispositivo más barato de esta comparativa."
+      },
+      "content": "## En qué destaca\n\nEl Polar H10 no es realmente un wearable — es un instrumento de medición, y dentro de esta comparativa es la referencia con la que se juzga a los demás. Su sensor de ECG eléctrico lee la señal del corazón directamente en lugar de inferirla del flujo sanguíneo, y la validación revisada por pares encuentra una concordancia casi perfecta con el ECG clínico para el HRV en reposo. Además emite los intervalos en bruto latido a latido (RR) tanto por Bluetooth como por ANT+, así que se empareja con prácticamente cualquier app de HRV. A unos 90 USD y sin suscripción, nada más de aquí es tan preciso ni tan abierto.\n\n## En qué se queda corto\n\nLa contrapartida es deliberada. Una banda pectoral no es algo que lleves a todas horas — no hay seguimiento pasivo de todo el día, y no detecta fases de sueño en absoluto, lo que le cuesta caro en los dos criterios construidos en torno al uso 24/7. Para una medición ortostática matinal o una sesión de entrenamiento es ideal; como monitor de recuperación continuo, es la herramienta equivocada.\n\n## Para quién es\n\nElige el Polar H10 si quieres un HRV de referencia — una señal limpia e independiente de la app para un protocolo matinal estructurado, o para validar otro dispositivo — y estás dispuesto a ponerte una banda para conseguirlo. Si quieres que el HRV se recoja de forma pasiva mientras duermes, empárejalo con uno de los anillos o bandas de aquí, o elige uno de ellos."
+    },
+    "garmin-venu-4": {
+      "verdict": "Un todoterreno capaz y sin suscripción, con la autonomía para seguir el HRV durante toda la noche — el mejor en nada, competente en todo.",
+      "summary": "El Garmin Venu 4 es la opción con forma de smartwatch más completa de aquí: HRV nocturno sólido, el mejor seguimiento del sueño de Garmin hasta la fecha, batería de varios días y sin suscripción. Es un generalista fuerte que no es el más afilado en ninguna cosa concreta que mide esta comparativa.",
+      "description": "Reseña de ONDA del Garmin Venu 4 como monitor de HRV — un todoterreno sin suscripción con batería de varios días. Puntuado por precisión, sueño, datos y precio.",
+      "bestFor": "Lo mejor para un único dispositivo sin suscripción que hace entrenamiento, salud y HRV con competencia.",
+      "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "pros": [
+        "Batería de varios días — fácil de llevar durante toda la noche",
+        "Sin suscripción; todas las funciones desbloqueadas al comprar",
+        "Un monitor de salud y entrenamiento todoterreno fuerte",
+        "Datos razonablemente abiertos vía Garmin Connect y su API"
+      ],
+      "cons": [
+        "Ninguna métrica concreta de aquí lidera su clase",
+        "Garmin Connect se siente recargado y anticuado",
+        "El HRV está menos enfocado en la noche que un monitor de recuperación dedicado",
+        "Solo sensor óptico — sin ECG"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "Garmin HRV Status sigue el HRV nocturno frente a una línea base personal construida en unas tres semanas — sólido, aunque no especializado en la noche.",
+        "sensor": "Sensor óptico Garmin Elevate — un conjunto de PPG capaz, sin hardware de nivel ECG.",
+        "sleep-accuracy": "El Venu 4 lleva el seguimiento del sueño de Garmin más avanzado hasta la fecha, con métricas de alineación circadiana.",
+        "data-access": "Garmin Connect más una API para desarrolladores — razonablemente abierto para exportar y para herramientas de terceros.",
+        "wearability": "Es un reloj, pero una batería de varios días hace que llevarlo de noche de forma constante sea de verdad práctico.",
+        "app-ux": "Garmin Connect es profundo pero recargado y anticuado frente a Oura o Apple.",
+        "value": "Una compra de pago único sin suscripción y con amplia capacidad todoterreno."
+      },
+      "content": "## En qué destaca\n\nEl Garmin Venu 4 es la opción con forma de smartwatch más completa de esta comparativa. Garmin HRV Status construye una línea base nocturna en unas tres semanas y luego señala si estás equilibrado o desequilibrado, y el Venu 4 lleva el seguimiento del sueño de Garmin más avanzado hasta la fecha. La autonomía supera con holgura a un smartwatch de uso general, y eso importa: un monitor que puedes llevar varias noches entre cargas produce un registro de HRV más continuo. No hay suscripción — el precio compra todo.\n\n## En qué se queda corto\n\nNinguna de las métricas individuales lidera su clase. El HRV es sólido pero no tan limpiamente enfocado en la noche como un monitor de recuperación dedicado, y Garmin Connect, pese a su profundidad, es una experiencia recargada y anticuada frente al software de Oura o de Apple. Es un generalista fuerte más que un especialista — capaz en todos los frentes, el mejor en nada de lo que mide esta comparativa.\n\n## Para quién es\n\nElige el Garmin Venu 4 si quieres un único dispositivo sin suscripción que gestione el entrenamiento, la salud cotidiana y el HRV con competencia, con la autonomía para de verdad llevarlo durante toda la noche. Si la precisión del HRV nocturno es lo único que te importa, un anillo o una banda lo superarán."
+    },
+    "samsung-galaxy-ring": {
+      "verdict": "La alternativa a Oura sin suscripción para Android — cómoda y competente, aunque atada al ecosistema de Samsung.",
+      "summary": "El Samsung Galaxy Ring es lo más parecido a un Oura Ring 4 sin la suscripción. Es un anillo cómodo con HRV nocturno y seguimiento del sueño competentes — pero está atado a Samsung Health y a Android, y su precisión va por detrás de Oura.",
+      "description": "Reseña de ONDA del Samsung Galaxy Ring — la alternativa a Oura sin suscripción para Android. Puntuado por precisión de HRV, sueño, acceso a los datos y precio.",
+      "bestFor": "Lo mejor para usuarios de Android que quieren un seguimiento de anillo estilo Oura sin suscripción.",
+      "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "pros": [
+        "Sin suscripción — todas las funciones desbloqueadas al comprar",
+        "Un anillo cómodo con batería de varios días",
+        "Integración limpia para usuarios de Samsung y Android",
+        "HRV nocturno y seguimiento del sueño competentes"
+      ],
+      "cons": [
+        "Solo Android y Samsung Health — sin soporte para iPhone",
+        "Datos cerrados: sin API abierta, exportación limitada",
+        "La precisión va por detrás del Oura Ring 4",
+        "El mejor valor solo se materializa dentro del ecosistema de Samsung"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV óptico nocturno desde el anillo — competente, aunque la validación independiente sigue favoreciendo al Oura Ring 4.",
+        "sensor": "PPG óptico en formato de anillo; una señal nocturna limpia.",
+        "sleep-accuracy": "Buen seguimiento del sueño, un pequeño paso por detrás del líder de la categoría, Oura.",
+        "data-access": "Construido en torno a Samsung Health, sin API abierta y con exportación limitada — los datos se quedan en gran parte dentro de la app.",
+        "wearability": "Un anillo cómodo para llevar a todas horas, con batería de varios días.",
+        "app-ux": "Samsung Health es bastante claro, pero atado al ecosistema de Samsung y Android.",
+        "value": "399 USD sin suscripción — la ventaja de coste permanente frente al Oura Ring 4."
+      },
+      "content": "## En qué destaca\n\nEl Samsung Galaxy Ring es la alternativa más directa al Oura Ring 4, y su ventaja principal es simple: sin suscripción. La compra desbloquea todas las funciones para siempre, mientras que Oura sigue cobrando cada mes. Como hardware es un anillo cómodo y bien hecho, con batería de varios días y HRV nocturno y seguimiento del sueño competentes — para un usuario de un teléfono Samsung ya dentro de Samsung Health, es una elección natural y sin fricción.\n\n## En qué se queda corto\n\nEl anillo está atado a su ecosistema. Está construido en torno a Samsung Health y Android — no hay soporte para iPhone — y el acceso a los datos es comparativamente cerrado: sin API abierta para desarrolladores, exportación limitada, tus cifras se quedan en gran parte dentro de la app de Samsung. En precisión pura va por detrás del Oura Ring 4, que sigue teniendo la validación independiente de fases de sueño más sólida en la categoría de anillos.\n\n## Para quién es\n\nElige el Samsung Galaxy Ring si eres usuario de Android — idealmente de Samsung — y quieres un seguimiento de anillo estilo Oura sin una suscripción perpetua, y te conformas con mantener tus datos dentro de Samsung Health. Los usuarios de iPhone, o cualquiera que quiera el anillo más preciso o datos abiertos, deberían mirar el Oura Ring 4."
+    },
+    "ultrahuman-ring-air": {
+      "verdict": "Un anillo ligerísimo y sin suscripción con un seguimiento del sueño sólido — socavado por informes generalizados de baterías que fallan en pocos meses.",
+      "summary": "El Ultrahuman Ring Air hace bien lo fundamental — ligero, sin suscripción, HRV continuo y seguimiento del sueño sólido. Pero es difícil de recomendar sin reservas: a lo largo de 2026, el fallo de baterías en pocos meses ha sido un problema ampliamente documentado.",
+      "description": "Reseña de ONDA del Ultrahuman Ring Air — un anillo de HRV ligerísimo y sin suscripción con una salvedad real de fiabilidad. Puntuado por precisión, datos y precio.",
+      "bestFor": "Lo mejor para un anillo ligerísimo y sin suscripción — si aceptas el riesgo de fiabilidad de la batería.",
+      "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "pros": [
+        "Ligerísimo, muy cómodo para llevar a todas horas",
+        "Sin suscripción — acceso de por vida a tus datos",
+        "HRV continuo y seguimiento del sueño sólido",
+        "App capaz y ampliable"
+      ],
+      "cons": [
+        "Fallos de batería ampliamente documentados en pocos meses",
+        "Las dudas de fiabilidad socavan el valor a 350 USD",
+        "El acceso a los datos es mediocre — sin una API totalmente abierta",
+        "Sin pantalla"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV continuo (SDNN y RMSSD), actualizado cada par de minutos en reposo — una señal nocturna genuinamente continua.",
+        "sensor": "PPG óptico en un anillo muy ligero; una señal limpia en reposo.",
+        "sleep-accuracy": "Seguimiento del sueño sólido — las primeras comprobaciones de terceros sitúan alta la concordancia de fases de sueño, entre los mejores anillos.",
+        "data-access": "Acceso de por vida a tus propios datos más algo de exportación, pero sin una API realmente abierta.",
+        "wearability": "Ligerísimo y cómodo — pero los fallos de batería ampliamente documentados en pocos meses socavan su fiabilidad como dispositivo 24/7.",
+        "app-ux": "Una app capaz, ampliable mediante complementos «PowerPlugs».",
+        "value": "La ausencia de suscripción es una ventaja real, pero los informes sobre la fiabilidad de la batería erosionan el argumento a 350 USD."
+      },
+      "content": "## En qué destaca\n\nEl Ultrahuman Ring Air acierta en lo fundamental. Es uno de los anillos más ligeros que puedes llevar, muestrea el HRV de forma continua — actualizándose cada par de minutos en reposo — y no hay suscripción: la compra adquiere el acceso de por vida al anillo y a tus propios datos. Las primeras comprobaciones de terceros sitúan alta su concordancia de fases de sueño, y la app, construida en torno a complementos «PowerPlugs», es genuinamente capaz.\n\n## En qué se queda corto\n\nUn problema es difícil de dejar de lado. A lo largo de 2026, reseñadores y propietarios han informado de baterías del Ultrahuman Ring Air que se degradan o fallan en pocos meses — y un wearable de recuperación en el que no puedes confiar que dure es un problema serio, por buenas que parezcan sus lecturas en un buen día. El acceso a los datos también es mediocre: mejor que un ecosistema totalmente cerrado, pero lejos de uno realmente abierto.\n\n## Para quién es\n\nElige el Ultrahuman Ring Air si lo que quieres es justo un anillo ligerísimo y sin suscripción con un seguimiento del sueño sólido — y hazlo consciente de los informes sobre la fiabilidad de la batería, idealmente comprando en un sitio con una vía clara de devolución y garantía. Si la fiabilidad a largo plazo es innegociable, el Oura Ring 4 o el RingConn Gen 2 son anillos más seguros."
+    },
+    "ringconn-gen-2": {
+      "verdict": "El anillo inteligente que da más por tu dinero — una batería de ~12 días, sin suscripción y un seguimiento sólido por aproximadamente la mitad del coste a largo plazo de un Oura.",
+      "summary": "El RingConn Gen 2 es la opción de mejor relación calidad-precio del campo de los anillos inteligentes — una batería de ~12 días, sin suscripción y una precisión en la misma conversación que anillos más caros, por aproximadamente la mitad del coste a largo plazo. La contrapartida es un software más simple y datos más cerrados.",
+      "description": "Reseña de ONDA del RingConn Gen 2 — el anillo inteligente con mejor relación calidad-precio: batería de ~12 días, sin suscripción, HRV sólido. Puntuado por precisión, sueño, acceso a los datos y precio.",
+      "bestFor": "Lo mejor para la mayor autonomía y el mejor valor en un anillo inteligente, sin suscripción.",
+      "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "pros": [
+        "Unos 12 días de batería — la más larga de esta comparativa",
+        "Sin suscripción, y mucho más barato a largo plazo que un Oura",
+        "Construcción ligera de titanio, totalmente sumergible",
+        "Añade el cribado de apnea del sueño"
+      ],
+      "cons": [
+        "App funcional más que pulida",
+        "Datos cerrados — sin API abierta, exportación limitada",
+        "Ninguna métrica concreta lidera su clase",
+        "Ecosistema menos refinado que el de Oura o Samsung"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV óptico nocturno que los reseñadores independientes valoran como comparable al de anillos más caros — bueno, no líder de su clase.",
+        "sensor": "PPG óptico en un ligero anillo de titanio.",
+        "sleep-accuracy": "Seguimiento del sueño competente, y añade el cribado de apnea del sueño.",
+        "data-access": "Una app cerrada — sin API abierta y con exportación limitada; los datos se quedan con RingConn.",
+        "wearability": "Unos 12 días de batería — la mejor de esta comparativa — en un anillo de titanio de 2 mm, totalmente sumergible.",
+        "app-ux": "Una app funcional más que pulida.",
+        "value": "Aproximadamente la mitad del coste a largo plazo de un Oura, sin suscripción — el líder en valor de aquí."
+      },
+      "content": "## En qué destaca\n\nEl RingConn Gen 2 es la opción de mejor relación calidad-precio del campo de los anillos inteligentes. A largo plazo cuesta aproximadamente la mitad que un Oura Ring 4, no requiere suscripción, y su batería es la cifra que sobresale en toda esta comparativa — unos doce días por carga, con un estuche que lo extiende a meses. Es ligero, de titanio, debidamente sumergible, e incluso añade el cribado de apnea del sueño. En HRV y sueño su precisión se sitúa con solidez en la misma conversación que los anillos más caros.\n\n## En qué se queda corto\n\nEl presupuesto se nota en el software y en los datos. La app es funcional más que pulida, no hay API abierta, y tus datos se quedan en gran parte dentro de la app de RingConn. Ninguna de las métricas individuales lidera su clase — es un dispositivo bueno en todo y el mejor, en este campo, solo en autonomía y precio.\n\n## Para quién es\n\nElige el RingConn Gen 2 si quieres la mayor parte de lo que hace un anillo premium — HRV nocturno, sueño, estrés — por bastante menos dinero y sin cuota recurrente, y te importa más la autonomía que un software pulido o unos datos abiertos. Si quieres el anillo más preciso o la app más profunda, el Oura Ring 4 sigue por delante."
+    },
+    "fitbit-charge-6": {
+      "verdict": "La rampa de acceso asequible al seguimiento de HRV — una banda barata y fiable, pero una herramienta de recuperación básica con una insistente venta de Premium.",
+      "summary": "El Fitbit Charge 6 es la forma asequible de entrar en el seguimiento de HRV — una banda barata y cómoda con HRV nocturno (ahora gratuito) y el seguimiento del sueño por el que Fitbit lleva tiempo siendo conocido. Aun así, es un monitor de gran público, no un instrumento de recuperación.",
+      "description": "Reseña de ONDA del Fitbit Charge 6 como monitor de HRV — la banda asequible y de gran público. Puntuado por precisión de HRV, sueño, acceso a los datos y precio.",
+      "bestFor": "Lo mejor para una banda asequible y de gran público que cubre el HRV y el sueño suficientemente bien.",
+      "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "pros": [
+        "El dispositivo más barato de esta comparativa",
+        "Las tendencias de HRV ahora son gratuitas — no hace falta Premium",
+        "Seguimiento del sueño fiable y afinado desde hace tiempo",
+        "Pequeña, ligera y con batería de varios días"
+      ],
+      "cons": [
+        "El HRV es básico — válido para tendencias, no para entrenar",
+        "Insistente venta de Premium y Google Health Premium",
+        "Ecosistema cerrado de Google Fitbit, exportación limitada",
+        "Un monitor de gran público, no un instrumento de recuperación"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "El HRV nocturno se informa como una cifra básica — válido para tendencias, sin la profundidad de un monitor de recuperación dedicado.",
+        "sensor": "PPG óptico en una banda pequeña.",
+        "sleep-accuracy": "El seguimiento del sueño de Fitbit está afinado desde hace tiempo y es fiable para el precio.",
+        "data-access": "Los datos viven dentro del ecosistema de Google Fitbit, con exportación limitada.",
+        "wearability": "Una banda pequeña y ligera con batería de varios días — fácil de llevar cada noche.",
+        "app-ux": "Una app limpia, pero con una insistente venta de Premium y Google Health Premium.",
+        "value": "Barato, y las tendencias de HRV ahora son gratuitas — aunque el análisis más completo sigue empujando a Premium."
+      },
+      "content": "## En qué destaca\n\nEl Fitbit Charge 6 es la rampa de acceso asequible al seguimiento de HRV. Por bastante menos de la mitad del precio de la mayoría de los dispositivos de aquí te da HRV nocturno, frecuencia respiratoria, SpO2 y el seguimiento del sueño de Fitbit, afinado desde hace tiempo — y, desde un cambio de 2026, las tendencias de HRV son gratuitas en lugar de quedar tras Premium. Como banda pequeña y ligera con batería de varios días, es fácil de llevar cada noche.\n\n## En qué se queda corto\n\nEs un monitor de gran público, no un instrumento de recuperación. El HRV se informa como una cifra nocturna básica sin la profundidad ni el enfoque de un Oura o un Whoop, los datos viven dentro del ecosistema de Google Fitbit con exportación limitada, y la app empuja a Premium y al más reciente nivel Google Health Premium de forma insistente. Las cifras están bien; el techo es bajo.\n\n## Para quién es\n\nElige el Fitbit Charge 6 si quieres una banda barata, fiable y cómoda que cubra el HRV y el sueño suficientemente bien para seguir tus tendencias, y no estás intentando entrenar con los datos. Si el HRV es la razón principal de tu compra, un anillo o una banda dedicados te darán mucho más con lo que trabajar."
+    },
+    "withings-scanwatch": {
+      "verdict": "Un reloj analógico híbrido con ECG de grado médico y una batería de ~30 días — fuerte en métricas clínicas de salud, competente más que líder como monitor de HRV dedicado.",
+      "summary": "El Withings ScanWatch 2 es la opción clínica de salud de aquí — un reloj analógico híbrido con un ECG de una sola derivación con autorización regulatoria, SpO2, temperatura y detección de apnea del sueño, una batería de aproximadamente 30 días y sin suscripción. Como monitor de HRV puro es competente más que líder de su clase.",
+      "description": "Reseña de ONDA del Withings ScanWatch 2 como monitor de HRV — un reloj analógico híbrido con ECG de grado médico. Puntuado por precisión, sueño, datos y precio.",
+      "bestFor": "Lo mejor para un reloj híbrido discreto con cribado de salud de grado clínico y sin suscripción.",
+      "testNote": "Evaluación basada en evidencia — puntuado a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada. No probado en persona por ONDA.",
+      "pros": [
+        "ECG de una sola derivación con autorización regulatoria en la muñeca",
+        "Un diseño analógico híbrido discreto con batería de ~30 días",
+        "Sin suscripción — funciones clínicas desbloqueadas al comprar",
+        "Cribado de apnea del sueño y SpO2 integrados"
+      ],
+      "cons": [
+        "El HRV continuo es óptico, no eléctrico — no de nivel de referencia",
+        "Menos enfocado en la recuperación que Oura o Whoop",
+        "Una esfera pequeña y sin pantalla táctil completa",
+        "El HRV es una métrica secundaria, no la principal"
+      ],
+      "scoreNotes": {
+        "hrv-accuracy": "HRV óptico nocturno más un ECG de una sola derivación a demanda — sólido, aunque la señal continua es óptica, no eléctrica.",
+        "sensor": "PPG óptico junto a un ECG de una sola derivación con autorización regulatoria, SpO2 y un sensor de temperatura.",
+        "sleep-accuracy": "Seguimiento del sueño competente con una puntuación de calidad del sueño y detección de alteraciones respiratorias (apnea).",
+        "data-access": "La app Withings Health Mate, con una exportación razonable y una API para desarrolladores.",
+        "wearability": "Una batería de aproximadamente 30 días en un reloj analógico híbrido discreto — el dispositivo más fácil de aquí de simplemente llevar y olvidar.",
+        "app-ux": "Health Mate es limpia y clara, aunque menos enfocada en la recuperación que Oura o Whoop.",
+        "value": "Una compra de pago único en torno a 350 USD, sin suscripción, con funciones genuinas de grado clínico."
+      },
+      "content": "## En qué destaca\n\nEl Withings ScanWatch 2 es la opción clínica de salud de esta comparativa. Parece un reloj analógico corriente, pero lleva un ECG de una sola derivación con autorización regulatoria, SpO2, un sensor de temperatura y detección de alteraciones respiratorias — y funciona alrededor de un mes con una carga. Es el dispositivo más fácil de aquí de simplemente llevar y olvidar, y no hay suscripción: las funciones clínicas se desbloquean al comprar.\n\n## En qué se queda corto\n\nPara el trabajo de HRV dedicado es competente más que líder de su clase. El ECG es una lectura puntual a demanda, no un protocolo continuo, así que la señal de HRV de toda la noche sigue siendo óptica — válida para tendencias, lejos de la precisión de referencia de una banda pectoral. Además está menos enfocado en la recuperación que Oura o Whoop: aquí el HRV es una métrica de salud entre muchas, no la principal.\n\n## Para quién es\n\nElige el Withings ScanWatch 2 si quieres un reloj discreto y de larga duración con un cribado clínico genuino — ECG, SpO2, apnea — y sin suscripción, y tratas el HRV como una señal entre varias. Si el HRV nocturno y la recuperación son todo el objetivo, un anillo o una banda dedicados los seguirán más de cerca."
     }
   },
   "comparisons": {
@@ -464,6 +754,73 @@
         {
           "q": "¿Cuál es la diferencia entre un monitor de sueño y una app de TCC-I?",
           "a": "Un monitor (Sleep Cycle, Pillow, AutoSleep) mide tu sueño y te informa de él. Una app de TCC-I como Sleepio imparte terapia cognitivo-conductual para el insomnio — el tratamiento clínico de primera línea — para cambiar de verdad cómo duermes. Si tienes un problema de sueño real, la TCC-I es la opción basada en evidencia."
+        }
+      ]
+    },
+    "best-hrv-trackers-2026": {
+      "title": "Mejores monitores de HRV (2026)",
+      "description": "ONDA clasifica los mejores monitores de HRV de 2026 — anillos, bandas, smartwatches y bandas pectorales — por precisión de medición, sueño, acceso a los datos y precio.",
+      "intro": "La variabilidad de la frecuencia cardíaca solo es tan útil como el dispositivo que la mide. Puntuamos los wearables de HRV de consumo más buscados de 2026 con la misma rúbrica — precisión de medición, calidad del sensor, seguimiento del sueño, acceso a los datos, comodidad, experiencia de la app y precio. Así quedan clasificados.",
+      "verdict": "Para la señal de HRV nocturno y de sueño más limpia en algo que puedas llevar a todas horas, el Oura Ring 4 gana en conjunto. Los deportistas que entrenan con una puntuación diaria de recuperación deberían mirar el Whoop 5.0, y quien quiera una precisión de referencia debería recurrir a la banda pectoral Polar H10. Por debajo de ellos el campo está apretado, y la respuesta correcta es sobre todo cuestión de encaje: el RingConn Gen 2 por valor y autonomía, el Samsung Galaxy Ring para usuarios de Android, Garmin y Apple para un dispositivo de uso diario que lo hace todo, el Withings ScanWatch 2 para un cribado clínico discreto, y el Fitbit Charge 6 como rampa de acceso económica. El único dispositivo al que acercarse con cautela es el Ultrahuman Ring Air — excelente sobre el papel, pero ensombrecido por informes generalizados sobre la fiabilidad de la batería.",
+      "content": "## Cómo los clasificamos\n\nCada dispositivo se puntuó con la [metodología de reseñas](/reviews/methodology) publicada por ONDA: siete criterios ponderados, con la precisión de la medición de HRV con el mayor peso porque es la métrica para la que existe esta categoría. La puntuación global es la media ponderada — no un número elegido a ojo.\n\nTodos se evaluaron a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada en lugar de pruebas en persona, así que toma las puntuaciones como un punto de partida basado en evidencia.\n\n## La versión corta\n\nLas puntuaciones se agrupan de forma muy ajustada — cada dispositivo de aquí es genuinamente capaz, y la elección correcta es sobre todo cuestión de cómo quieres llevarlo. El Oura Ring 4 gana porque hace la tarea central, el HRV nocturno y el sueño, mejor que cualquier otra cosa que puedas llevar a todas horas. El Polar H10 encabezaría una clasificación de precisión pura, pero una banda pectoral es un instrumento deliberado, no un wearable de estilo de vida. A partir de ahí se divide por necesidad: Whoop para deportistas, RingConn por valor, Samsung para Android, Garmin y Apple para un dispositivo de uso diario que lo hace todo, Withings para un cribado clínico discreto, Fitbit para empezar con poco presupuesto — y el Ultrahuman Ring Air solo con su salvedad de fiabilidad de la batería firmemente en mente.",
+      "picks": {
+        "oura-ring-4": {
+          "award": "Mejor en conjunto",
+          "takeaway": "Los datos de HRV nocturno y de sueño más precisos, en el formato más pequeño — si aceptas la suscripción."
+        },
+        "whoop-5-0": {
+          "award": "Mejor para deportistas",
+          "takeaway": "HRV nocturno continuo y el coaching de recuperación más nítido, para quien entrena con la señal."
+        },
+        "polar-h10": {
+          "award": "Mejor en precisión",
+          "takeaway": "Precisión de nivel ECG y datos totalmente abiertos — un instrumento de referencia, no un wearable de uso diario."
+        },
+        "garmin-venu-4": {
+          "award": "Mejor para entrenar",
+          "takeaway": "El ecosistema de entrenamiento de Garmin más un HRV competente y batería de varios días, sin suscripción."
+        },
+        "withings-scanwatch": {
+          "award": "Mejor reloj híbrido",
+          "takeaway": "Un reloj analógico discreto con ECG de grado médico y batería de ~30 días — cribado clínico, sin suscripción."
+        },
+        "samsung-galaxy-ring": {
+          "award": "Mejor para Android",
+          "takeaway": "Seguimiento de anillo estilo Oura para usuarios de Android, sin suscripción — si vives en Samsung Health."
+        },
+        "ultrahuman-ring-air": {
+          "award": "Anillo más cómodo",
+          "takeaway": "Un anillo ligerísimo y sin suscripción con un seguimiento del sueño sólido — ensombrecido por informes de fiabilidad de la batería."
+        },
+        "apple-watch-series-11": {
+          "award": "Mejor smartwatch todoterreno",
+          "takeaway": "El smartwatch más capaz de aquí, pero hace comprobaciones puntuales del HRV en lugar de seguirlo."
+        },
+        "ringconn-gen-2": {
+          "award": "Mejor autonomía",
+          "takeaway": "Una batería de ~12 días y funciones de anillo premium por aproximadamente la mitad del coste a largo plazo — la opción de valor."
+        },
+        "fitbit-charge-6": {
+          "award": "Mejor opción económica",
+          "takeaway": "La rampa de acceso barata y fiable al seguimiento de HRV — válida para tendencias, no un instrumento de recuperación."
+        }
+      },
+      "faq": [
+        {
+          "q": "¿Qué monitor de HRV es el más preciso?",
+          "a": "Para una precisión de referencia, la banda pectoral Polar H10 es insuperable — lee el corazón eléctricamente, igual que un ECG clínico. Entre los dispositivos que puedes llevar todo el día, el Oura Ring 4 es el más cercano, con el Whoop 5.0 justo por detrás."
+        },
+        {
+          "q": "¿Necesito una banda pectoral para el HRV?",
+          "a": "No — anillos y bandas como el Oura Ring 4 y el Whoop 5.0 miden el HRV nocturno suficientemente bien para seguir tendencias y recuperación. Una banda pectoral como la Polar H10 solo merece la pena si quieres cifras de nivel de referencia o estás validando otro dispositivo."
+        },
+        {
+          "q": "¿Qué monitores de HRV no tienen suscripción?",
+          "a": "La mayoría. El Polar H10, el Garmin Venu 4, el Samsung Galaxy Ring, el Apple Watch, el Ultrahuman Ring Air, el RingConn Gen 2, el Withings ScanWatch 2 y el Fitbit Charge 6 son todos compras de pago único. Solo el Oura Ring 4 (una membresía mensual) y Whoop (solo por suscripción) cobran una cuota continua."
+        },
+        {
+          "q": "¿Cuál es el mejor monitor de HRV económico?",
+          "a": "El Fitbit Charge 6 es la forma más barata de entrar y cubre el HRV y el sueño suficientemente bien para seguir tendencias. Para un anillo inteligente económico, el RingConn Gen 2 ofrece la mayor parte de un anillo premium — y la batería más larga de aquí — por mucho menos."
         }
       ]
     }
