@@ -13,7 +13,7 @@ const PANEL_BG = 'rgba(0,0,0,0.82)';
 const ACCENT = '#5ac8ff';
 const SCAN_SEC = Math.round(SCAN_DURATION_MS / 1000);
 
-export default function NervousSystemScan() {
+export default function NervousSystemScan({ onClose }: { onClose?: () => void }) {
   const scan = useEyeScan();
   const status = scan.status;
 
@@ -26,6 +26,7 @@ export default function NervousSystemScan() {
         color: '#fff',
         fontFamily: 'system-ui, -apple-system, sans-serif',
         overflow: 'hidden',
+        zIndex: 9999,
       }}
     >
       {/* Камера всегда в DOM, чтобы videoRef был готов к моменту start(). */}
@@ -128,9 +129,7 @@ export default function NervousSystemScan() {
       )}
 
       <button
-        onClick={() => {
-          window.location.href = '/';
-        }}
+        onClick={onClose ?? (() => { window.location.href = '/'; })}
         style={{
           position: 'absolute',
           top: 12,

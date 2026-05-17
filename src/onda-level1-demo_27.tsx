@@ -70,6 +70,8 @@ import * as Sentry from '@sentry/capacitor';
 // sitting in the cold-start path. That's the chunk that was making the
 // boot splash visible for ~6 seconds even after main-scene code-splitting.
 const WelcomeScene = lazy(() => import('./components/WelcomeScene'));
+// Экран eye-scan лениво — чтобы MediaPipe не попал в холодный старт.
+const NervousSystemScan = lazy(() => import('./components/NervousSystemScan'));
 import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './constants/practiceAssets';
 
 // Free-tier sampler. The first three basic practices of Part 1 are open to
@@ -322,6 +324,7 @@ const OndaLevel1 = () => {
   const [expandedPractice, setExpandedPractice] = useState(null);
   const [unlockedAchievements, setUnlockedAchievements] = useState([]);
   const [showEmotionalCheck, setShowEmotionalCheck] = useState(false);
+  const [showNervousScan, setShowNervousScan] = useState(false);
   const [emotionalState, setEmotionalState] = useState(null);
   // Whether the user has ever opened the Emotional Check — drives the
   // one-time FREE badge on its button. Persisted so it stays hidden
@@ -5463,6 +5466,14 @@ const OndaLevel1 = () => {
               </span>
             )}
           </button>
+
+          {/* Скан нервной системы (eye-scan) */}
+          <button
+            onClick={() => setShowNervousScan(true)}
+            className="backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full bg-white/10 hover:bg-white/20 border-white/30"
+          >
+            Скан нервной системы
+          </button>
         </div>
 
         {/* Центральный блок с описанием контура */}
@@ -7358,6 +7369,12 @@ const OndaLevel1 = () => {
         onClose={() => setShowEmotionalCheck(false)}
         onOndEarned={(amount) => setQnt(prev => prev + amount)}
       />
+
+      {showNervousScan && (
+        <Suspense fallback={null}>
+          <NervousSystemScan onClose={() => setShowNervousScan(false)} />
+        </Suspense>
+      )}
 
       <InfoModal
         isOpen={showInfoModal}
