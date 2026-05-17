@@ -6,10 +6,6 @@ import { useState, useEffect, lazy, Suspense } from 'react';
 // streams the heavy chunk in parallel.
 const OndaLevel1 = lazy(() => import('./onda-level1-demo_27'));
 const AudioTest = lazy(() => import('./pages/AudioTest'));
-// Dev-спайк проверки eye-scan (getUserMedia + MediaPipe), роут /eye-scan
-const EyeScanSpike = lazy(() => import('./pages/EyeScanSpike'));
-// Экран «Сканирование нервной системы», роут /scan
-const NervousSystemScan = lazy(() => import('./components/NervousSystemScan'));
 // Регистрируем Android bridge для OAuth callback
 import './lib/android-bridge';
 // Инициализируем iOS auth handler
@@ -18,12 +14,6 @@ import { initIOSAuthHandler } from './lib/ios-auth-handler';
 function App() {
   const [showTest, setShowTest] = useState(
     window.location.pathname === '/audio-test' || window.location.search.includes('test=audio')
-  );
-  const [showEyeScan] = useState(
-    window.location.pathname === '/eye-scan' || window.location.search.includes('test=eyescan')
-  );
-  const [showScan] = useState(
-    window.location.pathname === '/scan' || window.location.search.includes('test=scan')
   );
 
   useEffect(() => {
@@ -48,22 +38,6 @@ function App() {
           </div>
           <AudioTest />
         </div>
-      </Suspense>
-    );
-  }
-
-  if (showEyeScan) {
-    return (
-      <Suspense fallback={null}>
-        <EyeScanSpike />
-      </Suspense>
-    );
-  }
-
-  if (showScan) {
-    return (
-      <Suspense fallback={null}>
-        <NervousSystemScan />
       </Suspense>
     );
   }
