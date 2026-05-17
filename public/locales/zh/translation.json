@@ -1,4 +1,24 @@
 {
+  "eye_scan": {
+    "nav_button": "神经系统扫描",
+    "title": "神经系统扫描",
+    "intro": "请注视摄像头并保持平静约 {{sec}} 秒。系统会分析你的眨眼、视线和细微动作。画面不会被保存。",
+    "start": "开始扫描",
+    "preparing": "正在准备摄像头…",
+    "hold_still": "注视摄像头并保持平静",
+    "remaining": "剩余约 {{sec}} 秒",
+    "result_title": "扫描结果",
+    "quality": "扫描可靠度：{{value}}%",
+    "recommend": "推荐练习",
+    "disclaimer": "这是健康参考评估，并非医学诊断。",
+    "again": "重新扫描",
+    "error": "扫描失败：{{error}}",
+    "retry": "重试",
+    "back": "返回应用",
+    "metric_calm": "神经系统平静度",
+    "metric_focus": "专注力",
+    "metric_fatigue": "疲劳度"
+  },
   "notification_primer": {
     "title": "保持你的节奏",
     "body": "我们会每天温和地提醒你，让你的连续记录不中断。时间可在「设置」中选择——随时可以关闭。",

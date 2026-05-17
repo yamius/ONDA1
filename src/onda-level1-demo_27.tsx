@@ -5472,7 +5472,7 @@ const OndaLevel1 = () => {
             onClick={() => setShowNervousScan(true)}
             className="backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full bg-white/10 hover:bg-white/20 border-white/30"
           >
-            Скан нервной системы
+            {t('eye_scan.nav_button')}
           </button>
         </div>
 

@@ -5,11 +5,10 @@ import { recommendedPractices } from '../utils/eyeScanMetrics';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 
 // Экран «Сканирование нервной системы» — гид-UX поверх контроллера useEyeScan.
-// Названия метрик — плейсхолдеры MVP, финальные задаст бренд.
-const METRICS: { key: 'calm' | 'focus' | 'fatigue'; label: string }[] = [
-  { key: 'calm', label: 'Спокойствие НС' },
-  { key: 'focus', label: 'Фокус' },
-  { key: 'fatigue', label: 'Усталость' },
+const METRICS: { key: 'calm' | 'focus' | 'fatigue'; labelKey: string }[] = [
+  { key: 'calm', labelKey: 'eye_scan.metric_calm' },
+  { key: 'focus', labelKey: 'eye_scan.metric_focus' },
+  { key: 'fatigue', labelKey: 'eye_scan.metric_fatigue' },
 ];
 
 const PANEL_BG = 'rgba(0,0,0,0.82)';
@@ -23,6 +22,7 @@ export default function NervousSystemScan({
   onClose?: () => void;
   onOndEarned?: (amount: number) => void;
 }) {
+  const { t } = useTranslation();
   const scan = useEyeScan();
   const status = scan.status;
 
@@ -57,18 +57,17 @@ export default function NervousSystemScan({
 
       {status === 'idle' && (
         <Centered>
-          <h1 style={{ fontSize: 22, marginBottom: 12 }}>Сканирование нервной системы</h1>
+          <h1 style={{ fontSize: 22, marginBottom: 12 }}>{t('eye_scan.title')}</h1>
           <p style={{ fontSize: 15, lineHeight: 1.5, opacity: 0.8, maxWidth: 320, marginBottom: 24 }}>
-            Посмотри в камеру и держись спокойно около {SCAN_SEC} секунд. Камера
-            оценит моргание, взгляд и микродвижения. Кадры никуда не сохраняются.
+            {t('eye_scan.intro', { sec: SCAN_SEC })}
           </p>
-          <PrimaryButton onClick={scan.start}>Начать скан</PrimaryButton>
+          <PrimaryButton onClick={scan.start}>{t('eye_scan.start')}</PrimaryButton>
         </Centered>
       )}
 
       {status === 'preparing' && (
         <Centered>
-          <p style={{ fontSize: 16, opacity: 0.85 }}>Подготовка камеры…</p>
+          <p style={{ fontSize: 16, opacity: 0.85 }}>{t('eye_scan.preparing')}</p>
         </Centered>
       )}
 
@@ -86,7 +85,7 @@ export default function NervousSystemScan({
               background: 'linear-gradient(rgba(0,0,0,0.6), transparent)',
             }}
           >
-            Смотри в камеру и держись спокойно
+            {t('eye_scan.hold_still')}
           </div>
           <div
             style={{
@@ -110,7 +109,9 @@ export default function NervousSystemScan({
               />
             </div>
             <div style={{ textAlign: 'center', fontSize: 13, opacity: 0.8, marginTop: 8 }}>
-              Осталось ~{Math.max(0, Math.ceil(SCAN_SEC * (1 - scan.progress)))} с
+              {t('eye_scan.remaining', {
+                sec: Math.max(0, Math.ceil(SCAN_SEC * (1 - scan.progress))),
+              })}
             </div>
           </div>
         </>
@@ -131,9 +132,9 @@ export default function NervousSystemScan({
               marginBottom: 20,
             }}
           >
-            Не удалось выполнить скан: {scan.error}
+            {t('eye_scan.error', { error: scan.error ?? '' })}
           </p>
-          <PrimaryButton onClick={scan.start}>Повторить</PrimaryButton>
+          <PrimaryButton onClick={scan.start}>{t('eye_scan.retry')}</PrimaryButton>
         </Centered>
       )}
 
@@ -152,7 +153,7 @@ export default function NervousSystemScan({
           cursor: 'pointer',
         }}
       >
-        ← В приложение
+        ← {t('eye_scan.back')}
       </button>
     </div>
   );
@@ -173,17 +174,17 @@ function ResultView({
 
   return (
     <Centered>
-      <h1 style={{ fontSize: 22, marginBottom: 20 }}>Результат скана</h1>
+      <h1 style={{ fontSize: 22, marginBottom: 20 }}>{t('eye_scan.result_title')}</h1>
       <div style={{ width: 300, maxWidth: '80vw' }}>
         {METRICS.map((m) => (
-          <ScoreRow key={m.key} label={m.label} value={result.scores[m.key]} />
+          <ScoreRow key={m.key} label={t(m.labelKey)} value={result.scores[m.key]} />
         ))}
       </div>
       <p style={{ fontSize: 12, opacity: 0.55, marginTop: 8, marginBottom: 20 }}>
-        Достоверность скана: {result.scores.quality}%
+        {t('eye_scan.quality', { value: result.scores.quality })}
       </p>
 
-      <p style={{ fontSize: 14, opacity: 0.85, marginBottom: 10 }}>Рекомендуем практику</p>
+      <p style={{ fontSize: 14, opacity: 0.85, marginBottom: 10 }}>{t('eye_scan.recommend')}</p>
       <div
         style={{ display: 'flex', flexDirection: 'column', gap: 8, width: 300, maxWidth: '80vw' }}
       >
@@ -216,9 +217,9 @@ function ResultView({
           marginBottom: 24,
         }}
       >
-        Это wellness-оценка, не медицинская диагностика.
+        {t('eye_scan.disclaimer')}
       </p>
-      <PrimaryButton onClick={onAgain}>Сканировать снова</PrimaryButton>
+      <PrimaryButton onClick={onAgain}>{t('eye_scan.again')}</PrimaryButton>
 
       <AdaptivePracticeModal
         isOpen={practiceId !== null}
@@ -245,9 +246,7 @@ function ScoreRow({ label, value }: { label: string; value: number }) {
         <span style={{ fontWeight: 600 }}>{value}</span>
       </div>
       <div style={{ height: 6, background: 'rgba(255,255,255,0.15)', borderRadius: 3 }}>
-        <div
-          style={{ height: '100%', width: `${value}%`, background: ACCENT, borderRadius: 3 }}
-        />
+        <div style={{ height: '100%', width: `${value}%`, background: ACCENT, borderRadius: 3 }} />
       </div>
     </div>
   );

@@ -1,4 +1,24 @@
 {
+  "eye_scan": {
+    "nav_button": "Nervous System Scan",
+    "title": "Nervous System Scan",
+    "intro": "Look into the camera and stay calm for about {{sec}} seconds. It reads your blinking, gaze and micro-movements. Frames are never saved.",
+    "start": "Start scan",
+    "preparing": "Preparing the camera…",
+    "hold_still": "Look into the camera and stay calm",
+    "remaining": "~{{sec}} s left",
+    "result_title": "Scan result",
+    "quality": "Scan reliability: {{value}}%",
+    "recommend": "Recommended practice",
+    "disclaimer": "This is a wellness estimate, not a medical diagnosis.",
+    "again": "Scan again",
+    "error": "Scan failed: {{error}}",
+    "retry": "Retry",
+    "back": "Back to app",
+    "metric_calm": "Nervous system calm",
+    "metric_focus": "Focus",
+    "metric_fatigue": "Fatigue"
+  },
   "notification_primer": {
     "title": "Stay in rhythm",
     "body": "We'll send a gentle daily nudge so you don't lose your streak. You choose the time inside Settings — and you can turn it off anytime.",

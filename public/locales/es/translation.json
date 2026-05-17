@@ -1,4 +1,24 @@
 {
+  "eye_scan": {
+    "nav_button": "Escaneo del sistema nervioso",
+    "title": "Escaneo del sistema nervioso",
+    "intro": "Mira a la cámara y mantén la calma durante unos {{sec}} segundos. Analiza tu parpadeo, mirada y micromovimientos. Los fotogramas no se guardan.",
+    "start": "Iniciar escaneo",
+    "preparing": "Preparando la cámara…",
+    "hold_still": "Mira a la cámara y mantén la calma",
+    "remaining": "Quedan ~{{sec}} s",
+    "result_title": "Resultado del escaneo",
+    "quality": "Fiabilidad del escaneo: {{value}}%",
+    "recommend": "Práctica recomendada",
+    "disclaimer": "Es una estimación de bienestar, no un diagnóstico médico.",
+    "again": "Escanear de nuevo",
+    "error": "El escaneo falló: {{error}}",
+    "retry": "Reintentar",
+    "back": "Volver a la app",
+    "metric_calm": "Calma del sistema nervioso",
+    "metric_focus": "Concentración",
+    "metric_fatigue": "Fatiga"
+  },
   "notification_primer": {
     "title": "Mantén tu ritmo",
     "body": "Te enviaremos un aviso diario suave para que no pierdas tu racha. Eliges la hora en Ajustes — puedes desactivarlo en cualquier momento.",
