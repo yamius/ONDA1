@@ -5485,7 +5485,7 @@ const OndaLevel1 = () => {
             {t('eye_scan.nav_button')}
             {!nervousScanUsed && (
               <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
-                {t('labels.free')}
+                {t('eye_scan.badge')}
               </span>
             )}
           </button>
