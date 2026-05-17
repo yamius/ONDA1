@@ -212,6 +212,10 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       let response: Response;
       let lastError: Error | null = null;
       const maxRetries = 2;
+      // Ответ ждём не дольше 5 с — иначе сразу в fallback (случайная эмоция),
+      // чтобы запись не «думала» по 15 секунд.
+      const controller = new AbortController();
+      const analysisTimeout = setTimeout(() => controller.abort(), 5000);
       
       for (let attempt = 1; attempt <= maxRetries; attempt++) {
         try {
@@ -219,6 +223,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
           
           response = await fetch(apiUrl, {
             method: 'POST',
+            signal: controller.signal,
             headers: {
               'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
               'Content-Type': 'application/json',
@@ -234,12 +239,15 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
         } catch (e) {
           lastError = e as Error;
           console.warn(`[EmotionalCheck] ⚠️ Attempt ${attempt} failed:`, lastError.message);
+          if (controller.signal.aborted) break; // 5 с истекли — уходим в fallback
           if (attempt < maxRetries) {
             await new Promise(r => setTimeout(r, 1000)); // Wait 1s before retry
           }
         }
       }
       
+      clearTimeout(analysisTimeout);
+
       if (lastError) {
         throw lastError;
       }
