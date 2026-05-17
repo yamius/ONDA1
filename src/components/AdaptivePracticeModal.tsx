@@ -3,7 +3,6 @@ import { X, Play, Pause, Activity, Zap, Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { RemoteAudioPlayer } from './RemoteAudioPlayer';
-import { SubscriptionModal } from './SubscriptionModal';
 import { useVitals } from '../hooks/useVitals';
 import { useSubscription } from '../hooks/useSubscription';
 import { useAnalytics } from '../hooks/useAnalytics';
@@ -524,11 +523,9 @@ type PracticeState = 'intro' | 'practice' | 'complete';
 export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned }: AdaptivePracticeModalProps) {
   const { t } = useTranslation();
   const vitalsData = useVitals();
-  const { isPremium, isLoading: isSubLoading, refresh: refreshSubscription } = useSubscription();
+  const { isPremium, isLoading: isSubLoading } = useSubscription();
   const { track } = useAnalytics();
   const platform = Capacitor.getPlatform();
-  const [showPaywall, setShowPaywall] = useState(false);
-  const [pendingStartAfterSubscribe, setPendingStartAfterSubscribe] = useState(false);
   const [practiceState, setPracticeState] = useState<PracticeState>('intro');
   const [isPaused, setIsPaused] = useState(false);
   const [practiceTime, setPracticeTime] = useState(0);
@@ -560,26 +557,6 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     if (!isOpen || !practice) return;
     trackTenjinPractice('View', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
   }, [isOpen, practice?.id]);
-
-  useEffect(() => {
-    if (!pendingStartAfterSubscribe) return;
-    if (!isPremium) return;
-    console.warn('[DEBUG AdaptivePractice] Auto-start firing from pendingStartAfterSubscribe effect', {
-      practiceId,
-      practiceState,
-      msSinceOpen: modalOpenedAtRef.current ? Date.now() - modalOpenedAtRef.current : null,
-    });
-    track('practice_intro_closed_debug', {
-      surface: 'adaptive',
-      reason: 'auto_start_after_subscribe',
-      practiceId,
-      practiceState,
-      msSinceOpen: modalOpenedAtRef.current ? Date.now() - modalOpenedAtRef.current : null,
-    });
-    setPendingStartAfterSubscribe(false);
-    setShowPaywall(false);
-    startPractice();
-  }, [pendingStartAfterSubscribe, isPremium]);
 
   useEffect(() => {
     console.log('AdaptivePracticeModal vitalsData:', {
@@ -1403,14 +1380,6 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         />
       )}
 
-      <SubscriptionModal
-        isOpen={showPaywall}
-        onClose={() => setShowPaywall(false)}
-        source="practice_gate_adaptive"
-        onSubscribed={async () => {
-          await refreshSubscription();
-        }}
-      />
     </div>
   );
 }
