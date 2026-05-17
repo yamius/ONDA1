@@ -5002,7 +5002,7 @@ const OndaLevel1 = () => {
       {/* Плавающая кнопка гамбургер меню */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
-       !showQntShop && !showEmotionalCheck && !showInfoModal && (
+       !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && (
         <button
           onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
           className={`menu-container fixed top-12 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
@@ -5043,7 +5043,7 @@ const OndaLevel1 = () => {
       {/* Кнопка подписки */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
-       !showQntShop && !showEmotionalCheck && !showInfoModal && !showMenu && !showSubscriptionModal && (
+       !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && !showMenu && !showSubscriptionModal && (
         <button
           onClick={() => {
             setPaywallSource('cta_button');
