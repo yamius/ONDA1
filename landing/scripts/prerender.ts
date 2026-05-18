@@ -7,11 +7,11 @@
 import React from 'react'
 import { JSDOM } from 'jsdom'
 import { renderToString } from 'react-dom/server'
-import { mkdirSync, readFileSync, writeFileSync } from 'fs'
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { createApp } from '../src/entry-server'
-import {
+import i18n, {
   SUPPORTED_LANGS,
   LOCALIZED_PAGES,
   langFromPath,
@@ -48,6 +48,25 @@ interface BioMetricFile {
 // Load every localized namespace for every language so prerender can swap meta
 // per (page, language) without doing async i18n during render.
 const localesDir = join(projectRoot, 'public', 'locales')
+
+// Register every locale namespace on the shared i18n instance before any
+// renderToString call. The client bundle only ships the 'home' namespace
+// eagerly and loads the rest on demand (ensureNamespace in i18n.ts); the SSR
+// path needs them all up front, so the prerender process loads them from disk.
+for (const lng of readdirSync(localesDir)) {
+  let nsFiles: string[]
+  try {
+    nsFiles = readdirSync(join(localesDir, lng))
+  } catch {
+    continue
+  }
+  for (const nsFile of nsFiles) {
+    if (!nsFile.endsWith('.json')) continue
+    const data = JSON.parse(readFileSync(join(localesDir, lng, nsFile), 'utf-8'))
+    i18n.addResourceBundle(lng, nsFile.slice(0, -5), data, true, true)
+  }
+}
+
 const localizedMeta: Record<string, Record<Lang, PageMeta>> = {}
 for (const [, ns] of Object.entries(LOCALIZED_PAGES)) {
   const byLang: Record<Lang, PageMeta> = {} as Record<Lang, PageMeta>

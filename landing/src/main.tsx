@@ -8,10 +8,12 @@ import i18n, { langFromPath, SUPPORTED_LANGS, ensureNamespace } from './i18n'
 // Sync language with URL before hydration so first paint matches the prerendered HTML
 void i18n.changeLanguage(langFromPath(window.location.pathname))
 
-// Lazy route whose factory also loads a heavy i18n namespace (glossary /
-// articles / reviews) for the active language before the component mounts.
-// React keeps the prerendered HTML behind <Suspense> until both resolve, so
-// the page never renders before its translations are present.
+// Lazy route whose factory also loads its i18n namespace for the active
+// language before the component mounts. Only the 'home' namespace ships in
+// the eager bundle; every other namespace is fetched on demand here. React
+// keeps the prerendered HTML behind <Suspense> until both the page chunk and
+// the namespace resolve, so the page never renders before its translations
+// are present — no hydration mismatch, no flash of translation keys.
 function lazyNs(ns: string, load: () => Promise<{ default: ComponentType }>) {
   return lazy(() =>
     Promise.all([load(), ensureNamespace(langFromPath(window.location.pathname), ns)]).then(
@@ -21,21 +23,21 @@ function lazyNs(ns: string, load: () => Promise<{ default: ComponentType }>) {
 }
 
 const HomePage           = lazy(() => import('./pages/HomePage').then(m => ({ default: m.HomePage })))
-const AboutPage          = lazy(() => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })))
+const AboutPage          = lazyNs('about', () => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })))
 const GlossaryPage       = lazyNs('glossary', () => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })))
 const ArticlesPage       = lazyNs('articles', () => import('./pages/ArticlesPage').then(m => ({ default: m.ArticlesPage })))
-const ContactPage        = lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })))
+const ContactPage        = lazyNs('contact', () => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })))
 const TheStackPage       = lazyNs('articles', () => import('./pages/TheStackPage').then(m => ({ default: m.TheStackPage })))
-const SitemapPage        = lazy(() => import('./pages/SitemapPage').then(m => ({ default: m.SitemapPage })))
+const SitemapPage        = lazyNs('sitemap', () => import('./pages/SitemapPage').then(m => ({ default: m.SitemapPage })))
 const GlossaryTermPage   = lazyNs('glossary', () => import('./pages/GlossaryTermPage').then(m => ({ default: m.GlossaryTermPage })))
-const PartPage           = lazy(() => import('./pages/PartPage').then(m => ({ default: m.PartPage })))
-const LevelPage          = lazy(() => import('./pages/LevelPage').then(m => ({ default: m.LevelPage })))
+const PartPage           = lazyNs('part', () => import('./pages/PartPage').then(m => ({ default: m.PartPage })))
+const LevelPage          = lazyNs('level', () => import('./pages/LevelPage').then(m => ({ default: m.LevelPage })))
 const NotFoundPage       = lazy(() => import('./pages/NotFoundPage').then(m => ({ default: m.NotFoundPage })))
-const InnerSpectrumPage  = lazy(() => import('./pages/InnerSpectrumPage').then(m => ({ default: m.InnerSpectrumPage })))
-const PrivacyPage        = lazy(() => import('./pages/PrivacyPage').then(m => ({ default: m.PrivacyPage })))
-const TermsPage          = lazy(() => import('./pages/TermsPage').then(m => ({ default: m.TermsPage })))
-const BioPage            = lazy(() => import('./pages/BioPage').then(m => ({ default: m.BioPage })))
-const BioMetricPage      = lazy(() => import('./pages/BioMetricPage').then(m => ({ default: m.BioMetricPage })))
+const InnerSpectrumPage  = lazyNs('inner-spectrum', () => import('./pages/InnerSpectrumPage').then(m => ({ default: m.InnerSpectrumPage })))
+const PrivacyPage        = lazyNs('privacy', () => import('./pages/PrivacyPage').then(m => ({ default: m.PrivacyPage })))
+const TermsPage          = lazyNs('terms', () => import('./pages/TermsPage').then(m => ({ default: m.TermsPage })))
+const BioPage            = lazyNs('bio', () => import('./pages/BioPage').then(m => ({ default: m.BioPage })))
+const BioMetricPage      = lazyNs('bio-metric', () => import('./pages/BioMetricPage').then(m => ({ default: m.BioMetricPage })))
 const TopicsPage         = lazy(() => import('./pages/TopicsPage').then(m => ({ default: m.TopicsPage })))
 const TopicPage          = lazy(() => import('./pages/TopicPage').then(m => ({ default: m.TopicPage })))
 const ArticlesSlugRouter = lazyNs('articles', () => import('./components/ArticlesSlugRouter'))

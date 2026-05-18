@@ -30,37 +30,13 @@ import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
 import { ComparisonPage } from './pages/ComparisonPage'
 import { getArticleBySlug } from './data/articles'
-// Heavy i18n namespaces — registered synchronously on the SSR path only.
-// These imports live in the server bundle and never reach the client entry
-// chunk (the client loads them on demand via ensureNamespace; see i18n.ts).
-import enGlossary from '../public/locales/en/glossary.json'
-import esGlossary from '../public/locales/es/glossary.json'
-import ruGlossary from '../public/locales/ru/glossary.json'
-import ukGlossary from '../public/locales/uk/glossary.json'
-import zhGlossary from '../public/locales/zh/glossary.json'
-import enArticles from '../public/locales/en/articles.json'
-import esArticles from '../public/locales/es/articles.json'
-import ruArticles from '../public/locales/ru/articles.json'
-import ukArticles from '../public/locales/uk/articles.json'
-import zhArticles from '../public/locales/zh/articles.json'
-import enReviews from '../public/locales/en/reviews.json'
-import esReviews from '../public/locales/es/reviews.json'
-import ruReviews from '../public/locales/ru/reviews.json'
-import ukReviews from '../public/locales/uk/reviews.json'
-import zhReviews from '../public/locales/zh/reviews.json'
 
-const SSR_HEAVY_RESOURCES: Record<Lang, Record<string, unknown>> = {
-  en: { glossary: enGlossary, articles: enArticles, reviews: enReviews },
-  es: { glossary: esGlossary, articles: esArticles, reviews: esReviews },
-  ru: { glossary: ruGlossary, articles: ruArticles, reviews: ruReviews },
-  uk: { glossary: ukGlossary, articles: ukArticles, reviews: ukReviews },
-  zh: { glossary: zhGlossary, articles: zhArticles, reviews: zhReviews },
-}
-for (const [lng, bundles] of Object.entries(SSR_HEAVY_RESOURCES)) {
-  for (const [ns, data] of Object.entries(bundles)) {
-    i18n.addResourceBundle(lng, ns, data, true, true)
-  }
-}
+// NOTE: the heavy/lazy i18n namespaces (glossary, articles, reviews + the
+// localised light namespaces) are NOT statically imported here — that would
+// be impossible to keep out of the bundle. The prerender script registers
+// every locale bundle on the shared i18n instance before calling createApp
+// (see registerAllLocales in scripts/prerender.ts). The client loads each
+// namespace on demand via ensureNamespace() in i18n.ts.
 
 function ArticlesSlugRouter() {
   const { slug } = useParams<{ slug: string }>()

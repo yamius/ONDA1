@@ -1,65 +1,16 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+// Only the 'home' namespace is statically imported — it is the one namespace
+// the eager entry chunk needs (Layout nav + the homepage). Every other
+// namespace (about, bio, level, part, glossary, articles, reviews, …) is left
+// out of the bundle and loaded on demand via ensureNamespace() below, gated
+// through the lazy route factory in main.tsx. The SSR/prerender path registers
+// all of them from disk before rendering (see scripts/prerender.ts).
 import en from '../public/locales/en/home.json'
 import es from '../public/locales/es/home.json'
 import ru from '../public/locales/ru/home.json'
 import uk from '../public/locales/uk/home.json'
 import zh from '../public/locales/zh/home.json'
-import enAbout from '../public/locales/en/about.json'
-import esAbout from '../public/locales/es/about.json'
-import ruAbout from '../public/locales/ru/about.json'
-import ukAbout from '../public/locales/uk/about.json'
-import zhAbout from '../public/locales/zh/about.json'
-import enIs from '../public/locales/en/inner-spectrum.json'
-import esIs from '../public/locales/es/inner-spectrum.json'
-import ruIs from '../public/locales/ru/inner-spectrum.json'
-import ukIs from '../public/locales/uk/inner-spectrum.json'
-import zhIs from '../public/locales/zh/inner-spectrum.json'
-import enBio from '../public/locales/en/bio.json'
-import esBio from '../public/locales/es/bio.json'
-import ruBio from '../public/locales/ru/bio.json'
-import ukBio from '../public/locales/uk/bio.json'
-import zhBio from '../public/locales/zh/bio.json'
-import enBioMetric from '../public/locales/en/bio-metric.json'
-import esBioMetric from '../public/locales/es/bio-metric.json'
-import ruBioMetric from '../public/locales/ru/bio-metric.json'
-import ukBioMetric from '../public/locales/uk/bio-metric.json'
-import zhBioMetric from '../public/locales/zh/bio-metric.json'
-import enLevel from '../public/locales/en/level.json'
-import esLevel from '../public/locales/es/level.json'
-import ruLevel from '../public/locales/ru/level.json'
-import ukLevel from '../public/locales/uk/level.json'
-import zhLevel from '../public/locales/zh/level.json'
-import enPart from '../public/locales/en/part.json'
-import esPart from '../public/locales/es/part.json'
-import ruPart from '../public/locales/ru/part.json'
-import ukPart from '../public/locales/uk/part.json'
-import zhPart from '../public/locales/zh/part.json'
-import enContact from '../public/locales/en/contact.json'
-import esContact from '../public/locales/es/contact.json'
-import ruContact from '../public/locales/ru/contact.json'
-import ukContact from '../public/locales/uk/contact.json'
-import zhContact from '../public/locales/zh/contact.json'
-import enSitemap from '../public/locales/en/sitemap.json'
-import esSitemap from '../public/locales/es/sitemap.json'
-import ruSitemap from '../public/locales/ru/sitemap.json'
-import ukSitemap from '../public/locales/uk/sitemap.json'
-import zhSitemap from '../public/locales/zh/sitemap.json'
-import enPrivacy from '../public/locales/en/privacy.json'
-import esPrivacy from '../public/locales/es/privacy.json'
-import ruPrivacy from '../public/locales/ru/privacy.json'
-import ukPrivacy from '../public/locales/uk/privacy.json'
-import zhPrivacy from '../public/locales/zh/privacy.json'
-import enTerms from '../public/locales/en/terms.json'
-import esTerms from '../public/locales/es/terms.json'
-import ruTerms from '../public/locales/ru/terms.json'
-import ukTerms from '../public/locales/uk/terms.json'
-import zhTerms from '../public/locales/zh/terms.json'
-// Heavy namespaces (glossary, articles, reviews — ~1 MB across 5 locales) are
-// intentionally NOT statically imported here. Static imports would land in the
-// eager client entry chunk. They are loaded on demand via ensureNamespace()
-// below — gated through the lazy route factory — and statically on the SSR
-// path by entry-server.tsx (server bundle only, never shipped to the client).
 
 export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh'] as const
 export type Lang = (typeof SUPPORTED_LANGS)[number]
@@ -87,11 +38,11 @@ if (!i18n.isInitialized) {
     fallbackLng: 'en',
     supportedLngs: SUPPORTED_LANGS as unknown as string[],
     resources: {
-      en: { home: en, about: enAbout, 'inner-spectrum': enIs, bio: enBio, 'bio-metric': enBioMetric, level: enLevel, part: enPart, contact: enContact, sitemap: enSitemap, privacy: enPrivacy, terms: enTerms },
-      es: { home: es, about: esAbout, 'inner-spectrum': esIs, bio: esBio, 'bio-metric': esBioMetric, level: esLevel, part: esPart, contact: esContact, sitemap: esSitemap, privacy: esPrivacy, terms: esTerms },
-      ru: { home: ru, about: ruAbout, 'inner-spectrum': ruIs, bio: ruBio, 'bio-metric': ruBioMetric, level: ruLevel, part: ruPart, contact: ruContact, sitemap: ruSitemap, privacy: ruPrivacy, terms: ruTerms },
-      uk: { home: uk, about: ukAbout, 'inner-spectrum': ukIs, bio: ukBio, 'bio-metric': ukBioMetric, level: ukLevel, part: ukPart, contact: ukContact, sitemap: ukSitemap, privacy: ukPrivacy, terms: ukTerms },
-      zh: { home: zh, about: zhAbout, 'inner-spectrum': zhIs, bio: zhBio, 'bio-metric': zhBioMetric, level: zhLevel, part: zhPart, contact: zhContact, sitemap: zhSitemap, privacy: zhPrivacy, terms: zhTerms },
+      en: { home: en },
+      es: { home: es },
+      ru: { home: ru },
+      uk: { home: uk },
+      zh: { home: zh },
     },
     ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part', 'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles', 'reviews'],
     defaultNS: 'home',
@@ -106,7 +57,7 @@ export function isLang(s: string | undefined | null): s is Lang {
 }
 
 /**
- * On-demand loader for the heavy namespaces (glossary / articles / reviews).
+ * On-demand loader for any i18n namespace not in the eager bundle.
  * Dynamically imports the locale JSON — Vite emits one cacheable chunk per
  * file — and registers it with i18next. Loads the requested language plus the
  * 'en' fallback. Cached so each language/namespace is fetched at most once.
@@ -114,7 +65,7 @@ export function isLang(s: string | undefined | null): s is Lang {
  * The client calls this from the lazy route factory (main.tsx) so the page
  * component never renders before its translations are present — no hydration
  * mismatch, no flash of translation keys. The SSR path does not use this:
- * entry-server.tsx registers the heavy bundles synchronously at build time.
+ * scripts/prerender.ts registers every bundle from disk before rendering.
  */
 const _nsCache = new Map<string, Promise<void>>()
 export function ensureNamespace(lng: Lang, ns: string): Promise<void> {
