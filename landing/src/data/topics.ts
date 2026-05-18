@@ -819,6 +819,7 @@ export const TOPICS: readonly Topic[] = [
       'The endocrine system runs the slow protocol clock. Nine protocols across HPA axis, sex hormones, leptin, TSH, and cyclical architecture.',
     pillar: HORMONES_PILLAR,
     articleSlugs: [
+      'molecular-psychology-hormonal-firmware',
       'chm-continuous-hormone-monitoring',
       'endocrine-social-drive-oxytocin-testosterone',
       'hpa-axis-control-cortisol-aggression',
