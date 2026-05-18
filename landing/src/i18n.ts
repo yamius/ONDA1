@@ -55,21 +55,11 @@ import esTerms from '../public/locales/es/terms.json'
 import ruTerms from '../public/locales/ru/terms.json'
 import ukTerms from '../public/locales/uk/terms.json'
 import zhTerms from '../public/locales/zh/terms.json'
-import enGlossary from '../public/locales/en/glossary.json'
-import esGlossary from '../public/locales/es/glossary.json'
-import ruGlossary from '../public/locales/ru/glossary.json'
-import ukGlossary from '../public/locales/uk/glossary.json'
-import zhGlossary from '../public/locales/zh/glossary.json'
-import enArticles from '../public/locales/en/articles.json'
-import esArticles from '../public/locales/es/articles.json'
-import ruArticles from '../public/locales/ru/articles.json'
-import ukArticles from '../public/locales/uk/articles.json'
-import zhArticles from '../public/locales/zh/articles.json'
-import enReviews from '../public/locales/en/reviews.json'
-import esReviews from '../public/locales/es/reviews.json'
-import ruReviews from '../public/locales/ru/reviews.json'
-import ukReviews from '../public/locales/uk/reviews.json'
-import zhReviews from '../public/locales/zh/reviews.json'
+// Heavy namespaces (glossary, articles, reviews — ~1 MB across 5 locales) are
+// intentionally NOT statically imported here. Static imports would land in the
+// eager client entry chunk. They are loaded on demand via ensureNamespace()
+// below — gated through the lazy route factory — and statically on the SSR
+// path by entry-server.tsx (server bundle only, never shipped to the client).
 
 export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh'] as const
 export type Lang = (typeof SUPPORTED_LANGS)[number]
@@ -97,11 +87,11 @@ if (!i18n.isInitialized) {
     fallbackLng: 'en',
     supportedLngs: SUPPORTED_LANGS as unknown as string[],
     resources: {
-      en: { home: en, about: enAbout, 'inner-spectrum': enIs, bio: enBio, 'bio-metric': enBioMetric, level: enLevel, part: enPart, contact: enContact, sitemap: enSitemap, privacy: enPrivacy, terms: enTerms, glossary: enGlossary, articles: enArticles, reviews: enReviews },
-      es: { home: es, about: esAbout, 'inner-spectrum': esIs, bio: esBio, 'bio-metric': esBioMetric, level: esLevel, part: esPart, contact: esContact, sitemap: esSitemap, privacy: esPrivacy, terms: esTerms, glossary: esGlossary, articles: esArticles, reviews: esReviews },
-      ru: { home: ru, about: ruAbout, 'inner-spectrum': ruIs, bio: ruBio, 'bio-metric': ruBioMetric, level: ruLevel, part: ruPart, contact: ruContact, sitemap: ruSitemap, privacy: ruPrivacy, terms: ruTerms, glossary: ruGlossary, articles: ruArticles, reviews: ruReviews },
-      uk: { home: uk, about: ukAbout, 'inner-spectrum': ukIs, bio: ukBio, 'bio-metric': ukBioMetric, level: ukLevel, part: ukPart, contact: ukContact, sitemap: ukSitemap, privacy: ukPrivacy, terms: ukTerms, glossary: ukGlossary, articles: ukArticles, reviews: ukReviews },
-      zh: { home: zh, about: zhAbout, 'inner-spectrum': zhIs, bio: zhBio, 'bio-metric': zhBioMetric, level: zhLevel, part: zhPart, contact: zhContact, sitemap: zhSitemap, privacy: zhPrivacy, terms: zhTerms, glossary: zhGlossary, articles: zhArticles, reviews: zhReviews },
+      en: { home: en, about: enAbout, 'inner-spectrum': enIs, bio: enBio, 'bio-metric': enBioMetric, level: enLevel, part: enPart, contact: enContact, sitemap: enSitemap, privacy: enPrivacy, terms: enTerms },
+      es: { home: es, about: esAbout, 'inner-spectrum': esIs, bio: esBio, 'bio-metric': esBioMetric, level: esLevel, part: esPart, contact: esContact, sitemap: esSitemap, privacy: esPrivacy, terms: esTerms },
+      ru: { home: ru, about: ruAbout, 'inner-spectrum': ruIs, bio: ruBio, 'bio-metric': ruBioMetric, level: ruLevel, part: ruPart, contact: ruContact, sitemap: ruSitemap, privacy: ruPrivacy, terms: ruTerms },
+      uk: { home: uk, about: ukAbout, 'inner-spectrum': ukIs, bio: ukBio, 'bio-metric': ukBioMetric, level: ukLevel, part: ukPart, contact: ukContact, sitemap: ukSitemap, privacy: ukPrivacy, terms: ukTerms },
+      zh: { home: zh, about: zhAbout, 'inner-spectrum': zhIs, bio: zhBio, 'bio-metric': zhBioMetric, level: zhLevel, part: zhPart, contact: zhContact, sitemap: zhSitemap, privacy: zhPrivacy, terms: zhTerms },
     },
     ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part', 'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles', 'reviews'],
     defaultNS: 'home',
@@ -114,6 +104,48 @@ if (!i18n.isInitialized) {
 export function isLang(s: string | undefined | null): s is Lang {
   return !!s && (SUPPORTED_LANGS as readonly string[]).includes(s)
 }
+
+/**
+ * On-demand loader for the heavy namespaces (glossary / articles / reviews).
+ * Dynamically imports the locale JSON — Vite emits one cacheable chunk per
+ * file — and registers it with i18next. Loads the requested language plus the
+ * 'en' fallback. Cached so each language/namespace is fetched at most once.
+ *
+ * The client calls this from the lazy route factory (main.tsx) so the page
+ * component never renders before its translations are present — no hydration
+ * mismatch, no flash of translation keys. The SSR path does not use this:
+ * entry-server.tsx registers the heavy bundles synchronously at build time.
+ */
+const _nsCache = new Map<string, Promise<void>>()
+export function ensureNamespace(lng: Lang, ns: string): Promise<void> {
+  const langs: Lang[] = lng === 'en' ? ['en'] : [lng, 'en']
+  return Promise.all(
+    langs.map((l) => {
+      const key = `${l}:${ns}`
+      let p = _nsCache.get(key)
+      if (!p) {
+        p = import(`../public/locales/${l}/${ns}.json`)
+          .then((m: { default: Record<string, unknown> }) => {
+            i18n.addResourceBundle(l, ns, m.default, true, true)
+          })
+          .catch(() => {
+            /* missing locale file — i18next falls back to the 'en' bundle */
+          })
+        _nsCache.set(key, p)
+      }
+      return p
+    }),
+  ).then(() => undefined)
+}
+
+// When the user switches language, re-fetch every heavy namespace that has
+// already been loaded so the new language is populated for SPA navigation.
+i18n.on('languageChanged', (lng: string) => {
+  if (!isLang(lng)) return
+  const loaded = new Set<string>()
+  for (const key of _nsCache.keys()) loaded.add(key.split(':')[1])
+  loaded.forEach((ns) => void ensureNamespace(lng, ns))
+})
 
 /** Extract language from a path like /ru, /ru/about, / → 'en'. */
 export function langFromPath(pathname: string): Lang {

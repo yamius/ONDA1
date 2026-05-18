@@ -1,21 +1,33 @@
-import { StrictMode, lazy, Suspense } from 'react'
+import { StrictMode, lazy, Suspense, type ComponentType } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
 import { Layout } from './components/Layout'
-import i18n, { langFromPath, SUPPORTED_LANGS } from './i18n'
+import i18n, { langFromPath, SUPPORTED_LANGS, ensureNamespace } from './i18n'
 
 // Sync language with URL before hydration so first paint matches the prerendered HTML
 void i18n.changeLanguage(langFromPath(window.location.pathname))
 
+// Lazy route whose factory also loads a heavy i18n namespace (glossary /
+// articles / reviews) for the active language before the component mounts.
+// React keeps the prerendered HTML behind <Suspense> until both resolve, so
+// the page never renders before its translations are present.
+function lazyNs(ns: string, load: () => Promise<{ default: ComponentType }>) {
+  return lazy(() =>
+    Promise.all([load(), ensureNamespace(langFromPath(window.location.pathname), ns)]).then(
+      ([m]) => m,
+    ),
+  )
+}
+
 const HomePage           = lazy(() => import('./pages/HomePage').then(m => ({ default: m.HomePage })))
 const AboutPage          = lazy(() => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })))
-const GlossaryPage       = lazy(() => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })))
-const ArticlesPage       = lazy(() => import('./pages/ArticlesPage').then(m => ({ default: m.ArticlesPage })))
+const GlossaryPage       = lazyNs('glossary', () => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })))
+const ArticlesPage       = lazyNs('articles', () => import('./pages/ArticlesPage').then(m => ({ default: m.ArticlesPage })))
 const ContactPage        = lazy(() => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })))
-const TheStackPage       = lazy(() => import('./pages/TheStackPage').then(m => ({ default: m.TheStackPage })))
+const TheStackPage       = lazyNs('articles', () => import('./pages/TheStackPage').then(m => ({ default: m.TheStackPage })))
 const SitemapPage        = lazy(() => import('./pages/SitemapPage').then(m => ({ default: m.SitemapPage })))
-const GlossaryTermPage   = lazy(() => import('./pages/GlossaryTermPage').then(m => ({ default: m.GlossaryTermPage })))
+const GlossaryTermPage   = lazyNs('glossary', () => import('./pages/GlossaryTermPage').then(m => ({ default: m.GlossaryTermPage })))
 const PartPage           = lazy(() => import('./pages/PartPage').then(m => ({ default: m.PartPage })))
 const LevelPage          = lazy(() => import('./pages/LevelPage').then(m => ({ default: m.LevelPage })))
 const NotFoundPage       = lazy(() => import('./pages/NotFoundPage').then(m => ({ default: m.NotFoundPage })))
@@ -26,11 +38,11 @@ const BioPage            = lazy(() => import('./pages/BioPage').then(m => ({ def
 const BioMetricPage      = lazy(() => import('./pages/BioMetricPage').then(m => ({ default: m.BioMetricPage })))
 const TopicsPage         = lazy(() => import('./pages/TopicsPage').then(m => ({ default: m.TopicsPage })))
 const TopicPage          = lazy(() => import('./pages/TopicPage').then(m => ({ default: m.TopicPage })))
-const ArticlesSlugRouter = lazy(() => import('./components/ArticlesSlugRouter'))
-const ReviewsPage           = lazy(() => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
-const ReviewMethodologyPage = lazy(() => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
-const ReviewPage            = lazy(() => import('./pages/ReviewPage').then(m => ({ default: m.ReviewPage })))
-const ComparisonPage        = lazy(() => import('./pages/ComparisonPage').then(m => ({ default: m.ComparisonPage })))
+const ArticlesSlugRouter = lazyNs('articles', () => import('./components/ArticlesSlugRouter'))
+const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
+const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
+const ReviewPage            = lazyNs('reviews', () => import('./pages/ReviewPage').then(m => ({ default: m.ReviewPage })))
+const ComparisonPage        = lazyNs('reviews', () => import('./pages/ComparisonPage').then(m => ({ default: m.ComparisonPage })))
 
 const app = (
   <StrictMode>
