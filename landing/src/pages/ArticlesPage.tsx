@@ -156,10 +156,10 @@ export function ArticlesPage() {
       <div className="mb-10">
         <div className="mb-3 flex items-baseline justify-between">
           <h2 className="font-mono text-[10px] uppercase tracking-widest text-terminal-cyan/60">
-            [ BROWSE_BY_TOPIC ]
+            {t('browse.heading', { defaultValue: '[ BROWSE_BY_TOPIC ]' })}
           </h2>
           <span className="font-mono text-[10px] tracking-wider text-white/30">
-            {allArticles.length} articles total
+            {t('browse.total', { count: allArticles.length, defaultValue: '{{count}} articles total' })}
           </span>
         </div>
         <div className="flex flex-wrap gap-2 overflow-x-auto pb-2">
@@ -179,7 +179,7 @@ export function ArticlesPage() {
                 }`}
                 title={live ? topic.tagline : `${topic.tagline} — pillar coming soon`}
               >
-                {shortName} ({count})
+                {t(`topics.${topic.slug}`, { defaultValue: shortName })} ({count})
               </Link>
             )
           })}

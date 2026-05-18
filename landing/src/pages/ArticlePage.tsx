@@ -221,6 +221,7 @@ export function ArticlePage() {
   const lang = langFromPath(pathname)
   const langPrefix = lang === 'en' ? '' : `/${lang}`
   const { t: tArticles } = useTranslation('articles')
+  const { t: tGloss } = useTranslation('glossary')
   const article = slug ? getArticleBySlug(slug) : undefined
 
   // Translation helpers — fall back to original EN field if no translation exists.
@@ -1067,7 +1068,7 @@ export function ArticlePage() {
       {relatedTerms.length > 0 && (
         <div className="mt-16 border-t border-white/5 pt-10">
           <h3 className="mb-6 font-mono text-xs tracking-widest text-white/30">
-            RELATED GLOSSARY TERMS
+            {tArticles('detail.relatedGlossaryTerms', { defaultValue: 'RELATED GLOSSARY TERMS' })}
           </h3>
           <div className="grid gap-3">
             {relatedTerms.map((related) => (
@@ -1078,10 +1079,10 @@ export function ArticlePage() {
               >
                 <div>
                   <h4 className="font-semibold transition-colors group-hover:text-terminal-green">
-                    {related.title}
+                    {tGloss(`bodies.${related.slug}.title`, { defaultValue: related.title })}
                   </h4>
                   <p className="mt-1 font-mono text-xs text-white/30">
-                    {related.shortDescription.slice(0, 80)}...
+                    {(tGloss(`bodies.${related.slug}.shortDescription`, { defaultValue: related.shortDescription }) as string).slice(0, 80)}...
                   </p>
                 </div>
                 <span className="font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">

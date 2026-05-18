@@ -1639,5 +1639,21 @@
     "Biological Software": "生物软件",
     "OS States": "OS 状态",
     "ONDA Protocol": "ONDA 协议"
+  },
+  "browse": {
+    "heading": "[ 按主题浏览 ]",
+    "total": "共 {{count}} 篇文章"
+  },
+  "topics": {
+    "hrv": "HRV",
+    "circadian": "昼夜节律",
+    "dopamine": "多巴胺",
+    "metabolic": "代谢",
+    "breathwork": "呼吸训练",
+    "neuroplasticity": "神经可塑性",
+    "cognitive": "认知",
+    "spinal": "脊髓",
+    "hormones": "激素",
+    "longevity": "长寿"
   }
 }

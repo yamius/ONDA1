@@ -1638,5 +1638,21 @@
     "Biological Software": "Біологічний софт",
     "OS States": "Стани ОС",
     "ONDA Protocol": "Протокол ONDA"
+  },
+  "browse": {
+    "heading": "[ ОГЛЯД ЗА ТЕМАМИ ]",
+    "total": "усього статей: {{count}}"
+  },
+  "topics": {
+    "hrv": "HRV",
+    "circadian": "Циркадні ритми",
+    "dopamine": "Дофамін",
+    "metabolic": "Метаболізм",
+    "breathwork": "Дихання",
+    "neuroplasticity": "Нейропластичність",
+    "cognitive": "Когнітивне",
+    "spinal": "Спинний мозок",
+    "hormones": "Гормони",
+    "longevity": "Довголіття"
   }
 }

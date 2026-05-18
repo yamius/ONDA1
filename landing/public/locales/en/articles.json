@@ -24,5 +24,21 @@
     "Biological Software": "Biological Software",
     "OS States": "OS States",
     "ONDA Protocol": "ONDA Protocol"
+  },
+  "browse": {
+    "heading": "[ BROWSE_BY_TOPIC ]",
+    "total": "{{count}} articles total"
+  },
+  "topics": {
+    "hrv": "HRV",
+    "circadian": "Circadian",
+    "dopamine": "Dopamine",
+    "metabolic": "Metabolic",
+    "breathwork": "Breathwork",
+    "neuroplasticity": "Neuroplasticity",
+    "cognitive": "Cognitive",
+    "spinal": "Spinal",
+    "hormones": "Hormones",
+    "longevity": "Longevity"
   }
 }

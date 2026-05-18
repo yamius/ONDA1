@@ -14,12 +14,12 @@ void i18n.changeLanguage(langFromPath(window.location.pathname))
 // keeps the prerendered HTML behind <Suspense> until both the page chunk and
 // the namespace resolve, so the page never renders before its translations
 // are present — no hydration mismatch, no flash of translation keys.
-function lazyNs(ns: string, load: () => Promise<{ default: ComponentType }>) {
-  return lazy(() =>
-    Promise.all([load(), ensureNamespace(langFromPath(window.location.pathname), ns)]).then(
-      ([m]) => m,
-    ),
-  )
+function lazyNs(ns: string | string[], load: () => Promise<{ default: ComponentType }>) {
+  const list = Array.isArray(ns) ? ns : [ns]
+  return lazy(() => {
+    const lang = langFromPath(window.location.pathname)
+    return Promise.all([load(), ...list.map((n) => ensureNamespace(lang, n))]).then(([m]) => m)
+  })
 }
 
 const HomePage           = lazy(() => import('./pages/HomePage').then(m => ({ default: m.HomePage })))
@@ -40,7 +40,7 @@ const BioPage            = lazyNs('bio', () => import('./pages/BioPage').then(m 
 const BioMetricPage      = lazyNs('bio-metric', () => import('./pages/BioMetricPage').then(m => ({ default: m.BioMetricPage })))
 const TopicsPage         = lazy(() => import('./pages/TopicsPage').then(m => ({ default: m.TopicsPage })))
 const TopicPage          = lazy(() => import('./pages/TopicPage').then(m => ({ default: m.TopicPage })))
-const ArticlesSlugRouter = lazyNs('articles', () => import('./components/ArticlesSlugRouter'))
+const ArticlesSlugRouter = lazyNs(['articles', 'glossary'], () => import('./components/ArticlesSlugRouter'))
 const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
 const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
 const ReviewPage            = lazyNs('reviews', () => import('./pages/ReviewPage').then(m => ({ default: m.ReviewPage })))
