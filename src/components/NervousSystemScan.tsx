@@ -68,7 +68,7 @@ export default function NervousSystemScan({
               style={{ transform: 'scaleX(-1)' }}
               className={
                 status === 'scanning' || status === 'preparing'
-                  ? 'w-full rounded-2xl border border-white/10'
+                  ? 'w-full aspect-[4/3] object-cover rounded-2xl border border-white/10'
                   : 'hidden'
               }
             />
