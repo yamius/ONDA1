@@ -6,6 +6,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'longevity-hardware-cellular-cleanup',
   title: 'Longevity Hardware: Senolytics and the Cellular Cleanup Sequence',
+  seoTitle: 'Longevity Hardware: The Cellular Cleanup | ONDA Life',
   description:
     'Aging is the accumulation of uncorrected system errors. Trigger Autophagy and Senolysis to extend your hardware operational lifespan.',
   category: 'Biological Software',

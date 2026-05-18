@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'quiet-mode-alpha-cortisol-buffer',
   title: 'Quiet Mode Protocol: Alpha Rhythms as a Biological Damper',
   subtitle: 'System Recovery — Alpha-State Active Noise Cancellation, Cortisol Buffering, and Parasympathetic Switching as Hardware-Level Stress Recovery',
-  seoTitle: 'Quiet Mode Protocol: Alpha Rhythms as Cortisol Buffer, Parasympathetic Activation & Stress Recovery | ONDA Life',
+  seoTitle: 'Quiet Mode: Alpha Rhythms as Cortisol Buffer | ONDA Life',
   description:
     'Alpha waves (8–12 Hz) are the brain\'s active noise-cancellation system — suppressing sympathetic arousal, buffering cortisol, and filtering amygdala reactivity. The ONDA Quiet Mode Protocol uses exhale extension, peripheral awareness, and the Alpha-Drop to reset the system before thermal runaway.',
   category: 'OS States',

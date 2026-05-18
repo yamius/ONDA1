@@ -3,7 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'acc-calibration-protocol-cognitive-control',
   title: 'ACC Calibration Protocol: Cognitive Control Training',
-  seoTitle: 'ACC Calibration Protocol: Cognitive Control Training | ONDA Biology',
+  seoTitle: 'ACC Calibration: Cognitive Control Training | ONDA Life',
   description:
     'Cool down the system arbiter. ONDA protocol pairing monotasking and mindfulness alignment to clear the dACC error buffer and lock focus.',
   category: 'ONDA Protocol',

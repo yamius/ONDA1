@@ -7,6 +7,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'hrv-training-nervous-system-latency',
   title: 'HRV Training: Measuring the Latency of Your Nervous System',
+  seoTitle: 'HRV Training: Cut Nervous System Latency | ONDA Life',
   description:
     'Heart Rate Variability is the real-time diagnostic of your Autonomic Nervous System. Learn to read the pulse of your code and optimize recovery.',
   category: 'OS States',

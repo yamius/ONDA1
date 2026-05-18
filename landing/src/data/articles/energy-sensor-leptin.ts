@@ -8,7 +8,7 @@ const article: Article = {
   slug: 'energy-sensor-leptin',
   title: 'Energy Sensor: Leptin',
   subtitle: 'Calibrating Saturation Sensors and Metabolic Truth',
-  seoTitle: 'Leptin & Energy Sensing: Fixing Metabolic Blindness | ONDA Life',
+  seoTitle: 'Leptin: The Energy Sensor Protocol | ONDA Life',
   description:
     'Master your hunger signals. Learn how to recalibrate leptin sensitivity, fix metabolic resistance, and restore energy balance using ONDA protocols.',
   category: 'Biological Software',

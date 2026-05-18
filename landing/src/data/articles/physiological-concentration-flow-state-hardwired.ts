@@ -3,7 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'physiological-concentration-flow-state-hardwired',
   title: 'Physiological Concentration: The Flow State Hardwired',
-  seoTitle: 'Physiological Concentration: The Flow State Hardwired | ONDA Biology',
+  seoTitle: 'Physiological Concentration: Hardwired Flow | ONDA Life',
   description:
     'Concentration is not willpower. It is a physiological lock state where norepinephrine, acetylcholine, and dopamine align to create high-intensity flow and reduced cognitive noise.',
   category: 'Neural Hardware',

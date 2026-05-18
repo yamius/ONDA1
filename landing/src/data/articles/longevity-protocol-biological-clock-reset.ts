@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'longevity-protocol-biological-clock-reset',
   title: 'Biological Clock Reset: Can You Actually Reverse Your Cellular Age?',
   subtitle: 'From Circadian Fragmentation to Epigenetic Restoration — The Deep Reset Stack',
-  seoTitle: 'Biological Clock Reset: Reverse Cellular Age with Epigenetic Protocols | ONDA',
+  seoTitle: 'Biological Clock Reset: Reverse Cellular Age | ONDA Life',
   description:
     'Aging is circadian fragmentation. When internal clocks desync, Sirtuin-governed repair loses its timing and epigenetic age accelerates. The ONDA Deep Reset stack — dark surge, pulsed hormesis, and data-driven wind down — targets the Horvath Clock directly.',
   category: 'ONDA Protocol',

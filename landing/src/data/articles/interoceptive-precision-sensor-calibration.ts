@@ -3,6 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'interoceptive-precision-sensor-calibration',
   title: 'Interoceptive Precision: Calibrating the Internal Sensors',
+  seoTitle: 'Interoceptive Precision: Sensor Calibration | ONDA Life',
   description:
     'Your body transmits millions of real-time signals. Most people never read them. ONDA upgrades your interoceptive resolution from blurry static to a high-definition 4K data stream.',
   category: 'Neural Hardware',

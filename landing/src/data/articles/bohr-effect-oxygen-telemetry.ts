@@ -3,7 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'bohr-effect-oxygen-telemetry',
   title: 'The Bohr Effect and Oxygen Telemetry',
-  seoTitle: 'The Bohr Effect and Oxygen Telemetry | ONDA Biology',
+  seoTitle: 'The Bohr Effect and Oxygen Telemetry | ONDA Life',
   description:
     'The Bohr Effect as the mechanics of oxygen delivery. CO2 telemetry, hemoglobin binding affinity and ONDA protocols for ventilation calibration.',
   category: 'Neural Hardware',

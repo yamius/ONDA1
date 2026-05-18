@@ -3,7 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'acetylcholine-lens-neuro-mechanics',
   title: 'Technical Deep Dive: The Acetylcholine Lens',
-  seoTitle: 'Technical Deep Dive: The Acetylcholine Lens | ONDA Biology',
+  seoTitle: 'Technical Deep Dive: The Acetylcholine Lens | ONDA Life',
   description:
     'Acetylcholine acts as the biological lens of attention. Sharpen synaptic gain, reduce cognitive blur, and lock the cortex onto high-resolution signal.',
   category: 'Neural Hardware',

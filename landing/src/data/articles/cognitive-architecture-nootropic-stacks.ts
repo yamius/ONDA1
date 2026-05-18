@@ -7,6 +7,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'cognitive-architecture-nootropic-stacks',
   title: 'Cognitive Architecture: Programming the Nootropic Stack',
+  seoTitle: 'Cognitive Architecture: Nootropic Stacks | ONDA Life',
   description:
     'Nootropics are pharmacological patches for your neurotransmitter systems. Master Neuroprotection, Neurotransmission, and Cerebral Blood Flow to build a high-performance cognitive stack.',
   category: 'Biological Software',

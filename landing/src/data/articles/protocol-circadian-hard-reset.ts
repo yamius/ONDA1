@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'protocol-circadian-hard-reset',
   title: 'Hard Reset: How to Recalibrate Your Biological Clock',
   subtitle: 'A 72-Hour System Reflash for Circadian Desynchronization',
-  seoTitle: 'Circadian Hard Reset Protocol: Recalibrate Your Biological Clock | ONDA',
+  seoTitle: 'Circadian Hard Reset: Recalibrate the Clock | ONDA Life',
   description:
     'Circadian desynchronization is System Lag. Use the ONDA Hard Reset protocol — three Zeitgebers in 72 hours — to reflash your biological clock and restore deep sleep, HRV, and metabolic timing.',
   category: 'ONDA Protocol',

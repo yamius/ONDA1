@@ -3,7 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'fascial-tensegrity-protocol-myofascial-noise',
   title: 'Fascial Tensegrity Protocol: Clearing Myofascial Noise',
-  seoTitle: 'Fascial Tensegrity Protocol: Clearing Myofascial Noise | ONDA Biology',
+  seoTitle: 'Fascial Tensegrity: Clear Myofascial Noise | ONDA Life',
   description:
     'Release physical compression, clear myofascial noise and recalibrate the tensegrity matrix. ONDA protocol pairing trapezius release with vagal activation.',
   category: 'ONDA Protocol',

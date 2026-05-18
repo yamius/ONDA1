@@ -7,6 +7,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'mitochondrial-biogenesis-cellular-power-grid',
   title: 'Cellular Power Grid: Engineering Mitochondrial Biogenesis',
+  seoTitle: 'Mitochondrial Biogenesis: Cellular Power Grid | ONDA Life',
   description:
     'Your mitochondria are the cellular power plants. Trigger Mitochondrial Biogenesis to create new, high-density power units and increase the total wattage of your organism.',
   category: 'Biological Software',

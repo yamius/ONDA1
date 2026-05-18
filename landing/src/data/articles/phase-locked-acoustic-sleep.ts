@@ -7,6 +7,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'phase-locked-acoustic-sleep',
   title: 'Phase-Locked Sleep: Acoustic Deep Sleep Stimulation',
+  seoTitle: 'Phase-Locked Sleep: Acoustic Deep-Sleep Boost | ONDA Life',
   description:
     'Learn how to use phase-locked acoustic stimulation and real-time EEG to amplify deep sleep waves and optimize cognitive recovery.',
   category: 'Neural Hardware',

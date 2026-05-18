@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'adrenal-governor-thermal-runaway',
   title: 'The Adrenal Governor: Protecting the System from Thermal Runaway',
   subtitle: 'Limiter Active — Cortisol Precision Architecture, HRV-Based Load Thresholding, and the Anticipatory Reset Protocol for Endocrine Longevity',
-  seoTitle: 'Adrenal Governor Protocol: Cortisol Precision, HRV Stress Limiter & Thermal Runaway Prevention | ONDA Life',
+  seoTitle: 'Adrenal Governor: Cortisol Precision Protocol | ONDA Life',
   description:
     'The adrenals are fuel injectors for cortisol and adrenaline — the problem is the brain keeps its foot on the gas. The ONDA Adrenal Governor uses HRV thresholding, Alpha-buffering, and anticipatory reset to filter stress signals before they reach the Redline and exhaust the endocrine system.',
   category: 'Biological Software',

@@ -7,6 +7,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'circadian-reset-mastering-light',
   title: 'The Circadian Reset: Programming Your Biological System Clock',
+  seoTitle: 'Circadian Reset: Program Your Body Clock | ONDA Life',
   description:
     'Circadian rhythm reset: master the photic signal and resync your hardware with the solar cycle. Fix Circadian Drift, insomnia, and chronic brain fog.',
   category: 'Neural Hardware',

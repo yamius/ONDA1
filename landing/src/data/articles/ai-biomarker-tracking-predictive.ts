@@ -7,6 +7,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'ai-biomarker-tracking-predictive',
   title: 'AI-Integrated Biomarker Tracking | Predictive Health',
+  seoTitle: 'AI Biomarker Tracking: Predictive Health | ONDA Life',
   description:
     'Move beyond static tracking. Learn how AI-driven predictive analytics can forecast illness and burnout before symptoms appear.',
   category: 'Biological Software',

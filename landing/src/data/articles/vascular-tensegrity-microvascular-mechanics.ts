@@ -3,7 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'vascular-tensegrity-microvascular-mechanics',
   title: 'Vascular Tensegrity and Microvascular Mechanics',
-  seoTitle: 'Vascular Tensegrity and Microvascular Mechanics | ONDA Biology',
+  seoTitle: 'Vascular Tensegrity and Microvascular Mechanics | ONDA Life',
   description:
     'Vascular tensegrity as the structural integrity of the microcirculation. Hydraulics, fascial tension and zero-impedance delivery to the prefrontal cortex.',
   category: 'Neural Hardware',

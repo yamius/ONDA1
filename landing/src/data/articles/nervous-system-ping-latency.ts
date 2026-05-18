@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'nervous-system-ping-latency',
   title: 'Beyond the Pulse: Is Your Nervous System Lagging?',
   subtitle: 'HRV as System Ping — Diagnosing and Reducing Autonomic Latency',
-  seoTitle: 'Nervous System Latency: HRV Biofeedback & Resonant Frequency Protocol | ONDA Life',
+  seoTitle: 'Nervous System Latency: The HRV Ping Rate | ONDA Life',
   description:
     'Your autonomic nervous system has a ping rate. High HRV = low latency, fast recovery. Low HRV = biological packet loss. The ONDA latency audit uses resonant frequency breathing and VNS to rewrite the network protocol.',
   category: 'Neural Hardware',

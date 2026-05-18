@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'resonant-frequency-system-coherence',
   title: "Resonant Frequency: Finding Your System's Natural Rhythm",
   subtitle: 'Coherence Optimization — Scanning Your Personal Resonance Frequency and Locking In System Harmony',
-  seoTitle: "Resonant Frequency Breathing: Find Your HRV Coherence Peak & Tune Your Biology | ONDA Life",
+  seoTitle: 'Resonant Frequency: Find Your HRV Peak | ONDA Life',
   description:
     'Every person has a unique resonant breathing frequency (4.5–6.5 breaths/min) where heart, brain, and lungs phase-lock into coherence and HRV peaks. The ONDA resonance scan identifies your exact frequency and calibrates it for life.',
   category: 'Biological Software',

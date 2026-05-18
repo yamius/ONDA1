@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'idle-state-alpha-rhythms',
   title: 'The Idle State: Alpha Rhythms as the Foundation of Peak Performance',
   subtitle: 'Operational Baseline — Engaging the 8–12 Hz Idle Frequency to Eliminate the Beta Trap and Unlock Flow',
-  seoTitle: 'Alpha State Brain Optimization: Escape the Beta Trap & Engage the Neural Idle Frequency | ONDA Life',
+  seoTitle: 'Alpha State: Escape the Beta Trap | ONDA Life',
   description:
     'Alpha waves (8–12 Hz) are the brain\'s neutral gear — noise-cancelled, energy-efficient, coherence-ready. The ONDA idle protocol triggers Alpha manually via visual reset, 0.1 Hz coupling, and digital decoupling to eliminate Beta Trap burnout.',
   category: 'Neural Hardware',

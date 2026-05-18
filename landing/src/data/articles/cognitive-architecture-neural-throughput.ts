@@ -8,7 +8,7 @@ const article: Article = {
   slug: 'cognitive-architecture-neural-throughput',
   title: 'System Analysis: Cognitive Architecture',
   subtitle: 'Optimizing Neural Throughput Without External Patches',
-  seoTitle: 'Cognitive Architecture: Neural Throughput Optimization | ONDA',
+  seoTitle: 'Cognitive Architecture: Neural Throughput | ONDA Life',
   description:
     'Upgrade your neural hardware. Master the protocols of cognitive architecture: clear the signal, manage neural noise, and expand bandwidth without external patches.',
   category: 'Neural Hardware',

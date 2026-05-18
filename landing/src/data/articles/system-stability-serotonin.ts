@@ -8,7 +8,7 @@ const article: Article = {
   slug: 'system-stability-serotonin',
   title: 'System Stability: Serotonin',
   subtitle: 'Managing Inner Status and Cognitive Calm',
-  seoTitle: 'Serotonin & System Stability: Managing the Gut-Brain Link | ONDA Life',
+  seoTitle: 'Serotonin: The System Stability Protocol | ONDA Life',
   description:
     'Learn how to calibrate your inner status and cognitive calm. Explore the link between posture, gut health, and serotonin production.',
   category: 'Biological Software',

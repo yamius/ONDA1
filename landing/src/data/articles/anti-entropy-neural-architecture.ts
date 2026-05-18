@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'anti-entropy-neural-architecture',
   title: 'The Anti-Entropy Protocol: Safeguarding Neural Architecture',
   subtitle: 'Degradation Control — Active Resistance Against Neural Drift via Glymphatic Optimization, Autophagy Sync, and Thermal Regulation',
-  seoTitle: 'Anti-Entropy Brain Protocol: Prevent Neural Drift, Clear Amyloid & Protect Neural Architecture | ONDA Life',
+  seoTitle: 'Anti-Entropy Brain: Prevent Neural Drift | ONDA Life',
   description:
     'Aging is accumulated entropy. The ONDA Anti-Entropy Protocol maximizes glymphatic throughput, syncs nocturnal fasting with autophagy, and uses thermal regulation to halt beta-amyloid drift before it becomes irreversible neurodegeneration.',
   category: 'ONDA Protocol',

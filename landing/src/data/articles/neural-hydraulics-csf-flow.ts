@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'neural-hydraulics-csf-flow',
   title: 'Neural Hydraulics: Engineering Flow and Mental Clarity',
   subtitle: 'Hydraulic Optimization — Engineering CSF Flow, Vascular Pulsatility, and Intracranial Pressure for Peak Brain Performance',
-  seoTitle: 'Neural Hydraulics: Engineer CSF Flow, Glymphatic Purge & Mental Clarity via Brain Fluid Dynamics | ONDA Life',
+  seoTitle: 'Neural Hydraulics: Engineering CSF Flow | ONDA Life',
   description:
     'The brain is a hydraulic machine — arteries act as pistons, CSF flushes metabolic waste, and posture controls hydrostatic pressure. The ONDA hydraulic protocol primes vascular elasticity, optimizes gravity, and modulates breath for full nightly purge.',
   category: 'OS States',

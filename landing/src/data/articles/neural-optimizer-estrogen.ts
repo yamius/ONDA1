@@ -8,7 +8,7 @@ const article: Article = {
   slug: 'neural-optimizer-estrogen',
   title: 'Neural Optimizer: Estrogen',
   subtitle: 'Programming Neuroplasticity and Protecting the Cognitive Hardware',
-  seoTitle: 'Estrogen & Neural Plasticity: Protecting the Cognitive Hardware | ONDA Life',
+  seoTitle: 'Estrogen: Neural Optimizer & Plasticity | ONDA Life',
   description:
     'Discover how estrogen functions as a neural optimizer, enhancing memory and protecting the brain from inflammation and cognitive decline.',
   category: 'Biological Software',

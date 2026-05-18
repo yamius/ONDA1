@@ -7,7 +7,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'dopamine-stacking-preventing-circuit-overload',
   title: 'Dopamine Stacking & Circuit Overload',
-  seoTitle: 'Dopamine Stacking & Circuit Overload | ONDA Biology',
+  seoTitle: 'Dopamine Stacking & Circuit Overload | ONDA Life',
   description:
     'Learn how to prevent neural burnout. Master your dopamine baseline and stop glutamate storms with ONDA\'s neurochemical protocols.',
   category: 'Biological Software',

@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'spinal-harddrive-cpg-autonomous-scripts',
   title: 'The Spinal Harddrive: Autonomous Scripts and Neural Freedom',
   subtitle: 'Autonomous Execution — Central Pattern Generators, Spinal Motor Intelligence, and Cognitive Offloading Through Hardware-Level Movement Delegation',
-  seoTitle: 'Spinal Harddrive: Central Pattern Generators, CPG Motor Intelligence & Cognitive Offloading Protocol | ONDA Life',
+  seoTitle: 'Spinal Harddrive: CPG Autonomous Scripts | ONDA Life',
   description:
     'Central Pattern Generators (CPGs) are spinal neural circuits that execute complex movement without brain input. The ONDA Harddrive Protocol uses sensory priming, rhythmic entrainment, and eyes-closed drills to delegate motor control downward — freeing the prefrontal cortex for strategic thought.',
   category: 'Neural Hardware',

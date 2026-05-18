@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'fault-tolerant-human-hrv-buffer',
   title: 'Building a Fault-Tolerant Human: The HRV Buffer',
   subtitle: 'Stress Engineering for Operational Resilience — Capacity, Redundancy, Graceful Degradation',
-  seoTitle: 'Fault-Tolerant Human: Build Your HRV Buffer & Stress Resilience Architecture | ONDA Life',
+  seoTitle: 'Fault-Tolerant Human: The HRV Buffer | ONDA Life',
   description:
     'Low HRV = no headroom — any stress triggers cascade failure. High HRV = operational buffer. The ONDA hardening protocol uses hormetic loading, VNS calibration, and predictive HRV monitoring to build a fault-tolerant biological system.',
   category: 'Neural Hardware',

@@ -3,7 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'anterior-cingulate-core-coherence-monitoring',
   title: 'Anterior Cingulate Core and Coherence Monitoring',
-  seoTitle: 'Anterior Cingulate Core and Coherence Monitoring | ONDA Biology',
+  seoTitle: 'Anterior Cingulate Core: Coherence Monitoring | ONDA Life',
   description:
     'The anterior cingulate cortex as the system arbiter — conflict monitoring, prediction error and cognitive flexibility inside the ONDA architecture.',
   category: 'Neural Hardware',

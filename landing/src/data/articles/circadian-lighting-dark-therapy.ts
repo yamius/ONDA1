@@ -7,6 +7,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'circadian-lighting-dark-therapy',
   title: 'Signal Stability: Circadian Lighting and Dark Therapy',
+  seoTitle: 'Circadian Lighting & Dark Therapy | ONDA Life',
   description:
     'Light is the primary programming language for your biological clock. Master Circadian Lighting and Dark Therapy to restore hormonal integrity and eliminate photic noise.',
   category: 'Neural Hardware',

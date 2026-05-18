@@ -7,6 +7,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'breathwork-command-line-interface',
   title: 'Breathwork: The Command Line Interface (CLI) of Biology',
+  seoTitle: 'Breathwork: The Command Line of Biology | ONDA Life',
   description:
     'Breathing is the only autonomic function you can control voluntarily. Master the CLI of your nervous system—Box Breathing, Physiological Sigh, and Nasal Breathing for instant Root Access.',
   category: 'Neural Hardware',

@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'ancestral-sync-circadian-anchors',
   title: "Circadian Anchors: 3 Signals That Tell Your DNA It's Time to Heal",
   subtitle: 'The Heritage Stack — Restoring the Input Data Biology Was Designed For',
-  seoTitle: "Circadian Anchors: 3 Signals Your DNA Needs to Repair Itself | ONDA",
+  seoTitle: 'Ancestral Circadian Anchors: 3 Zeitgebers | ONDA Life',
   description:
     'Your DNA only understands Zeitgebers — external synchronization signals. When these conflict, the body stops repairing and starts resolving conflicts instead. Three anchors reset the system: photonic trigger, thermal reset, and metabolic gate.',
   category: 'ONDA Protocol',

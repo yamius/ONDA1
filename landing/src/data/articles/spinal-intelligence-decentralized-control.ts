@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'spinal-intelligence-decentralized-control',
   title: 'Spinal Intelligence: The Decentralized Control Protocol',
   subtitle: 'Decentralized Control — Edge Computing Architecture of the Spinal Cord, Proprioceptive Autonomy, and Cognitive Interference Elimination for Reactive Mastery',
-  seoTitle: 'Spinal Intelligence: Edge Computing Protocol, CPG Autonomy & Proprioceptive Flow for Peak Motor Mastery | ONDA Life',
+  seoTitle: 'Spinal Intelligence: Decentralized Control | ONDA Life',
   description:
     'The spinal cord is not a cable — it is a distributed processor with its own motor memory and reflex logic. The ONDA Spinal Intelligence Protocol uses unpredictable loading, proprioceptive focus, and Alpha-state triggers to eliminate cognitive interference and activate decentralized edge computing in movement.',
   category: 'Neural Hardware',

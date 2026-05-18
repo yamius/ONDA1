@@ -85,43 +85,6 @@ export interface BreadcrumbItem {
   url: string
 }
 
-/** Optional custom title overrides for articles (default: article.title + " | ONDA Life") */
-const ARTICLE_SEO_TITLES: Record<string, string> = {
-  'dopamine-stacking-preventing-circuit-overload': 'Dopamine Stacking & Circuit Overload | ONDA Biology',
-  'cacao-stem-cells': 'Cacao & Stem Cells: Biological Logic | ONDA',
-  'cognitive-architecture-neural-throughput': 'Cognitive Architecture: Neural Throughput Optimization | ONDA',
-  'system-feedback-biometric-loop': 'Biometric Feedback Loop: Real-Time Bio-Optimization | ONDA',
-  'endocrine-social-drive-oxytocin-testosterone': 'Endocrine Social Drive: Oxytocin vs Testosterone | ONDA Life',
-  'hpa-axis-control-cortisol-aggression': 'HPA Axis Control: Cortisol & Aggression Management | ONDA Life',
-  'system-stability-serotonin': 'Serotonin & System Stability: Managing the Gut-Brain Link | ONDA Life',
-  'energy-sensor-leptin': 'Leptin & Energy Sensing: Fixing Metabolic Blindness | ONDA Life',
-  'neural-optimizer-estrogen': 'Estrogen & Neural Plasticity: Protecting the Cognitive Hardware | ONDA Life',
-  'protocol-circadian-hard-reset': 'Hard Reset: 72-Hour Circadian Reflash Protocol | ONDA Life',
-  'ancestral-sync-circadian-anchors': 'Ancestral Circadian Anchors: 3 Zeitgeber Signals That Fix Your Clock | ONDA Life',
-  'longevity-protocol-biological-clock-reset': 'Biological Clock Reset: Reverse Your Cellular Age with Deep Epigenetic Protocols | ONDA Life',
-  'nervous-system-ping-latency': 'Nervous System Latency: HRV Biofeedback & Resonant Frequency Protocol | ONDA Life',
-  'fault-tolerant-human-hrv-buffer': 'Fault-Tolerant Human: Build Your HRV Buffer & Resilience Architecture | ONDA Life',
-  'resonant-frequency-system-coherence': 'Resonant Frequency Breathing: Find Your HRV Coherence Peak & Tune Your Biology | ONDA Life',
-  'baroreflex-01hz-shift': '0.1 Hz Baroreflex Hack: Engineer HRV Coherence & Lower Blood Pressure Without Drugs | ONDA Life',
-  'nightly-flush-glymphatic-neural-cache': 'Glymphatic System Optimization: Deep Sleep Brain Flush & Neural Cache Clearance Protocol | ONDA Life',
-  'neural-hydraulics-csf-flow': 'Neural Hydraulics: Engineer CSF Flow, Glymphatic Purge & Mental Clarity via Brain Fluid Dynamics | ONDA Life',
-  'anti-entropy-neural-architecture': 'Anti-Entropy Brain Protocol: Prevent Neural Drift, Clear Amyloid & Protect Neural Architecture | ONDA Life',
-  'idle-state-alpha-rhythms': 'Alpha State Brain Optimization: Escape the Beta Trap & Engage the Neural Idle Frequency | ONDA Life',
-  'neural-bridge-alpha-flow-gateway': 'Neural Bridge: Alpha-Theta Gateway to Flow State, Insight Delivery & Creative Access | ONDA Life',
-  'quiet-mode-alpha-cortisol-buffer': 'Quiet Mode Protocol: Alpha Rhythms as Cortisol Buffer, Parasympathetic Activation & Stress Recovery | ONDA Life',
-  'spinal-harddrive-cpg-autonomous-scripts': 'Spinal Harddrive: Central Pattern Generators, CPG Motor Intelligence & Cognitive Offloading Protocol | ONDA Life',
-  'rhythmic-entrainment-system-frequencies': 'Rhythmic Entrainment: 0.1 Hz Master Clock, CPG Synchronization & Locomotor-Respiratory Coupling | ONDA Life',
-  'spinal-intelligence-decentralized-control': 'Spinal Intelligence: Edge Computing Protocol, CPG Autonomy & Proprioceptive Flow for Peak Motor Mastery | ONDA Life',
-  'adrenal-governor-thermal-runaway': 'Adrenal Governor Protocol: Cortisol Precision, HRV Stress Limiter & Thermal Runaway Prevention | ONDA Life',
-  'ventral-tegmental-core-motivational-salience': 'Ventral Tegmental Core: Reactor of Motivational Salience, Dopamine Telemetry & Prediction Error | ONDA Life',
-  'fascial-tensegrity-protocol-myofascial-noise': 'Fascial Tensegrity Protocol: Trapezius Release, Vagal Activation & Myofascial Noise Clearing | ONDA Life',
-  'vascular-tensegrity-microvascular-mechanics': 'Vascular Tensegrity & Microvascular Mechanics: Hydraulics, Hypoxia and Zero-Impedance Cerebral Delivery | ONDA Life',
-  'bohr-effect-oxygen-telemetry': 'The Bohr Effect & Oxygen Telemetry: CO2 Tolerance, Hemoglobin Affinity and Ventilation Calibration | ONDA Life',
-  'anterior-cingulate-core-coherence-monitoring': 'Anterior Cingulate Core: System Arbiter, Conflict Monitoring & Cognitive Flexibility | ONDA Life',
-  'acc-calibration-protocol-cognitive-control': 'ACC Calibration Protocol: Monotasking, Mindfulness Alignment & Cognitive Control Training | ONDA Life',
-  'hydraulic-viscosity-onda-transport-bus': 'Hydraulic Viscosity & the ONDA Transport Bus: Hagen–Poiseuille Cerebral Flow, Thermal Control and Zero Impedance | ONDA Life',
-}
-
 /** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
 const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'vagus-nerve-master-key':
@@ -2208,7 +2171,7 @@ export function getMetaForRoute(route: string): RouteMeta {
                               }
                             : undefined
       const meta: RouteMeta = {
-        title: ARTICLE_SEO_TITLES[slug] ?? `${article.title} | ONDA Life`,
+        title: article.seoTitle ?? `${article.title} | ONDA Life`,
         description: seoDesc,
         url,
         breadcrumbs,

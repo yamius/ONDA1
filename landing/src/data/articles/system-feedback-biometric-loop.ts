@@ -8,7 +8,7 @@ const article: Article = {
   slug: 'system-feedback-biometric-loop',
   title: 'System Feedback: The Biometric Loop',
   subtitle: 'Transitioning from Static Snapshots to Real-Time System Adjustments',
-  seoTitle: 'Biometric Feedback Loop: Real-Time Bio-Optimization | ONDA',
+  seoTitle: 'Biometric Feedback Loop: Real-Time Optimization | ONDA Life',
   description:
     'Stop tracking and start optimizing. Learn how ONDA turns your biometric data into immediate corrective protocols for peak performance.',
   category: 'System Forecasting',

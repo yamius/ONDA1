@@ -8,7 +8,7 @@ const article: Article = {
   slug: 'energy-governor-tsh',
   title: 'Energy Governor: TSH',
   subtitle: 'Managing Basal Voltage and Metabolic Response',
-  seoTitle: 'TSH & Metabolic Voltage: Calibrating the Energy Governor | ONDA Life',
+  seoTitle: 'TSH: Calibrating Your Energy Governor | ONDA Life',
   description:
     'Learn how TSH regulates your metabolic speed. Discover how to optimize thyroid function, resolve brain fog, and manage stress-induced underclocking.',
   category: 'Biological Software',

@@ -7,7 +7,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'cacao-stem-cells',
   title: 'Cacao & Stem Cells',
-  seoTitle: 'Cacao & Stem Cells: Biological Logic | ONDA',
+  seoTitle: 'Cacao & Stem Cells: Biological Logic | ONDA Life',
   description:
     'Filter the noise. Learn how purified cacao flavonols trigger stem cell production and optimize your regenerative matrix without stimulant overload.',
   category: 'Regeneration Matrix',

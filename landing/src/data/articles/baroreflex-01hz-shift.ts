@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'baroreflex-01hz-shift',
   title: 'The 0.1 Hz Shift: Engineering the Baroreflex Hook',
   subtitle: 'Hardware Calibration — Hijacking the Cardiovascular Control Loop for Peak Operational Efficiency',
-  seoTitle: '0.1 Hz Baroreflex Hack: Engineer HRV Coherence & Lower Blood Pressure Without Drugs | ONDA Life',
+  seoTitle: '0.1 Hz Baroreflex Hack: HRV Coherence | ONDA Life',
   description:
     'At exactly 0.1 Hz (6 breaths/min) your breathing syncs with Mayer Waves, hijacking the baroreflex loop to maximize HRV amplitude, lower blood pressure, and phase-lock the heart-brain coherence signal.',
   category: 'Biological Software',

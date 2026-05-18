@@ -3,7 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'hydraulic-viscosity-onda-transport-bus',
   title: 'Hydraulic Viscosity and the ONDA Transport Bus',
-  seoTitle: 'Hydraulic Viscosity and the ONDA Transport Bus | ONDA Biology',
+  seoTitle: 'Hydraulic Viscosity and the ONDA Transport Bus | ONDA Life',
   description:
     'Blood viscosity as the resistance of the cerebral transport bus. Hagen–Poiseuille mechanics, thermal control and the ONDA logic for zero-impedance delivery.',
   category: 'Neural Hardware',

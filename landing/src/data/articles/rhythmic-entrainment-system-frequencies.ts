@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'rhythmic-entrainment-system-frequencies',
   title: 'Rhythmic Entrainment: Synchronizing System Frequencies',
   subtitle: 'Frequency Locked — 0.1 Hz Master Clock, Locomotor-Respiratory Coupling, and the Elimination of Phase Desync for Coherent Flow',
-  seoTitle: 'Rhythmic Entrainment: 0.1 Hz Master Clock, CPG Synchronization & Locomotor-Respiratory Coupling | ONDA Life',
+  seoTitle: 'Rhythmic Entrainment: The 0.1 Hz Master Clock | ONDA Life',
   description:
     'Biological oscillators — CPGs, lungs, heart, brain — waste energy when out of phase. The ONDA Entrainment Protocol uses 0.1 Hz pacing, locomotor-respiratory coupling (LRC), and acoustic entrainment to lock all system frequencies into a single coherent rhythm and eliminate internal resistance.',
   category: 'ONDA Protocol',

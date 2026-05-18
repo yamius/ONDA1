@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'neural-bridge-alpha-flow-gateway',
   title: 'The Neural Bridge: The Alpha Gateway to Flow',
   subtitle: 'Gate Open — Alpha-Theta Cross-Frequency Coupling as the Hardware Access Route to Flow State and Insight Delivery',
-  seoTitle: 'Neural Bridge: Alpha-Theta Gateway to Flow State, Insight Delivery & Creative Access | ONDA Life',
+  seoTitle: 'Neural Bridge: The Alpha-Theta Flow Gateway | ONDA Life',
   description:
     'Alpha waves (8–12 Hz) are the network gateway between Beta cognition and deep Theta insight storage. The ONDA bridge protocol uses 0.1 Hz coupling, diffused focus, and system silence to open the cross-frequency channel and deliver flow on demand.',
   category: 'Neural Hardware',

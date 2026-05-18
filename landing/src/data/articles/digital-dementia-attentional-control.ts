@@ -6,6 +6,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'digital-dementia-attentional-control',
   title: 'Digital Dementia: Installing a Firewall for Your Attention',
+  seoTitle: 'Digital Dementia: A Firewall for Attention | ONDA Life',
   description:
     'Your attention is a limited bandwidth resource. Learn to install a protective firewall against digital fragmentation and reclaim cognitive sovereignty.',
   category: 'ONDA Protocol',

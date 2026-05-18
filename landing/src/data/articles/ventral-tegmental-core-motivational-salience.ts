@@ -3,7 +3,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'ventral-tegmental-core-motivational-salience',
   title: 'Ventral Tegmental Core: The Reactor of Motivational Salience',
-  seoTitle: 'Ventral Tegmental Core: Reactor of Motivational Salience | ONDA Biology',
+  seoTitle: 'Ventral Tegmental Core: Motivational Salience | ONDA Life',
   description:
     'The Ventral Tegmental Area as the reactor of motivational salience. Dopamine telemetry, prediction error, and ONDA protocols to recalibrate the core.',
   category: 'Neural Hardware',

@@ -7,6 +7,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'gut-brain-axis-data-link',
   title: 'The Second Brain: Managing Your Gut-Brain Data Link',
+  seoTitle: "Gut-Brain Axis: Your Second Brain's Data Link | ONDA Life",
   description:
     'Your gut is your second brain. With 500M+ neurons and the Vagus Nerve as a biological modem, the microbiome modulates mood, immunity, and cognition. Optimize your Data Link.',
   category: 'Neural Hardware',

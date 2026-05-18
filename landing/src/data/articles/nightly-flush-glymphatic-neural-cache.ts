@@ -9,7 +9,7 @@ const article: Article = {
   slug: 'nightly-flush-glymphatic-neural-cache',
   title: 'The Nightly Flush: Glymphatic System and Neural Cache Clearance',
   subtitle: 'System Purge — Activating the Brain\'s Hydraulic Cleanup Script for Zero-Latency Morning Cognition',
-  seoTitle: 'Glymphatic System Optimization: Deep Sleep Brain Flush & Neural Cache Clearance Protocol | ONDA Life',
+  seoTitle: 'Glymphatic Flush: The Nightly Neural Cache | ONDA Life',
   description:
     'The glymphatic system runs only during Deep Sleep — flushing beta-amyloids and tau proteins via a 60% expanded intercellular space. The ONDA purge protocol maximizes N3 entry, arterial pulsatility, and lateral sleep positioning.',
   category: 'OS States',
