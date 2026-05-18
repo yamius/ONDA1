@@ -74,7 +74,7 @@ Three interventions to stress-test the system and expand the HRV buffer:
 
 > **Action:** 2–3 sessions per week of controlled, short-duration stress spikes: cold exposure (≤15°C, 2–3 minutes), hypoxic breathing (CO₂ tolerance training), or HIIT intervals (80–90% max HR, ≤20 min).
 
-**Logic:** Hormetic loading — stress below the damage threshold — forces the regulatory system to practice recovery. Each controlled spike followed by complete recovery trains the system to exit stress states faster. Over weeks, the HRV buffer expands: the baseline rises and the recovery slope steepens. The system doesn't just tolerate more — it recovers from more, faster.
+**Logic:** Hormetic loading — stress below the damage threshold — forces the regulatory system to practice recovery. Each controlled spike followed by complete recovery trains the system to exit stress states faster. Over weeks, the HRV buffer expands: the baseline rises and the recovery slope steepens. The system doesn't just tolerate more — it recovers from more, faster. Distributing those spikes across extreme ranges — [range fractionation](/articles/adaptation-hack-range-fractionation) — keeps the adaptation from plateauing.
 
 ### Protocol 2: VNS Calibration
 

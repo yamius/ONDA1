@@ -31,7 +31,7 @@ Three failure modes appear when the matrix locks up.
 
 ### Impedance Spikes
 
-The physical constriction limits microvascular blood flow, creating mechanical and metabolic resistance.
+The physical constriction limits microvascular blood flow, creating mechanical and metabolic resistance. The [vascular tensegrity](/articles/vascular-tensegrity-microvascular-mechanics) of the microvessels is what this constriction degrades.
 
 ### Ventilation and Energy Blockade
 

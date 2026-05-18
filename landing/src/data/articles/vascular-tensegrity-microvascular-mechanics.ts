@@ -63,7 +63,7 @@ The tensegrity matrix absorbs biochemical and physical shocks, protecting fragil
 
 Prolonged sedentary work or psychological stress causes the neck, shoulder, and masticatory (jaw) muscles to lock up. This creates an imbalance in structural tension and compresses the vascular pathways.
 
-**Impedance Spikes:** The microvasculature is constricted, reducing cerebral blood flow.
+**Impedance Spikes:** The microvasculature is constricted, reducing cerebral blood flow. Slowed flow also raises blood [hydraulic viscosity](/articles/hydraulic-viscosity-onda-transport-bus), compounding the resistance.
 
 **Cerebral Hypoxia:** The cortex becomes starved of oxygen and acetylcholine, causing the Acetylcholine Lens to lose its focal definition.
 

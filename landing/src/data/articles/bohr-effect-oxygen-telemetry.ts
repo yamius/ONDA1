@@ -53,7 +53,7 @@ CO2 acts as a data marker, signaling the hemoglobin exactly where oxygen deliver
 
 ### Low-Impedance Cooling
 
-Controlled and deep respiration removes metabolic heat and prevents the system from overheating during extended deep work.
+Controlled and deep respiration removes metabolic heat and prevents the system from overheating during extended deep work. Local warmth also thins the blood — see [hydraulic viscosity](/articles/hydraulic-viscosity-onda-transport-bus).
 
 ---
 

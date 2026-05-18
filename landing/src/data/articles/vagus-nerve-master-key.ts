@@ -37,7 +37,7 @@ const article: Article = {
 
 The parasympathetic branch of your autonomic nervous system is what allows you to recover. When activated, it slows your heart rate, deepens your breath, and turns on digestion. The primary neurotransmitter of this "calm" state is acetylcholine, released by vagal fibers. Unlike the sympathetic system's adrenaline rush, acetylcholine promotes rest, repair, and social engagement.
 
-The parasympathetic nervous system doesn't just make you feel relaxed — it literally changes your physiology. Cortisol drops. Inflammation pathways quiet down. Your gut starts moving. Your face becomes more expressive. You can actually listen to another person instead of scanning for threats. This is the biological foundation of resilience.
+The parasympathetic nervous system doesn't just make you feel relaxed — it literally changes your physiology. Cortisol drops. Inflammation pathways quiet down. Your gut starts moving. Your face becomes more expressive. You can actually listen to another person instead of scanning for threats. This is the biological foundation of resilience. The same parasympathetic switch can also be reached through targeted [electrical neuromodulation](/articles/electric-medicine-neuromodulation).
 
 ---
 

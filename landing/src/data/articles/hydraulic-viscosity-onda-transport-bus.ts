@@ -37,7 +37,7 @@ Water containing dissolved metabolites and proteins.
 
 Internal friction, determining the amount of energy required by the heart and vascular tone to pump blood to the cortex. At standard human body temperature (37 °C), the dynamic viscosity of water is approximately 0.69 cP (centipoise) — significantly lower than its value at room temperature.
 
-When myofascial tension develops in the neck and shoulder area, vessels become compressed, and local blood flow deceleration can cause an increase in apparent fluid viscosity. The result is an Impedance spike.
+When myofascial tension develops in the neck and shoulder area, vessels become compressed, and local blood flow deceleration can cause an increase in apparent fluid viscosity. The result is an Impedance spike — the failure mode mapped in detail by [vascular tensegrity](/articles/vascular-tensegrity-microvascular-mechanics).
 
 ---
 

@@ -47,7 +47,7 @@ Every load-bearing muscle contraction triggers the release of Myokines—signali
 
 ## [ SECTION 2: HORMESIS AND SYSTEMIC REPAIR ]
 
-Integrating peptide protocols (such as BPC-157) with resistance-based stress allows for more than just hypertrophy—it enables Systemic Repair. Muscle tissue becomes a 'sponge,' absorbing systemic inflammation and optimizing your hormonal stack (Testosterone/Cortisol ratio).
+Integrating peptide protocols (such as BPC-157) with resistance-based stress allows for more than just hypertrophy—it enables Systemic Repair. Muscle tissue becomes a 'sponge,' absorbing systemic inflammation and optimizing your hormonal stack (Testosterone/Cortisol ratio). Systemic repair like this depends on *varied* stress rather than repetition — see [range fractionation](/articles/adaptation-hack-range-fractionation).
 
 ---
 
