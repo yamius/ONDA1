@@ -833,6 +833,361 @@ const FAQ_LEVEL_SCHEMA: Record<number, { question: string; answer: string }[]> =
 
 /** FAQ schema for article pages. 2–3 key Q&As per article for FAQPage JSON-LD. */
 const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
+  "acetylcholine-lens-neuro-mechanics": [
+    {
+      question: "What does acetylcholine do for focus?",
+      answer:
+        "Acetylcholine acts as the brain\u2019s attention lens. When the basal forebrain releases it, neurons handling your target become hyper-sensitive while everything else is dampened \u2014 raising the signal-to-noise ratio of cognition. It does not carry information itself; it sharpens which signals get amplified.",
+    },
+    {
+      question: "Why does my focus feel blurry even when I am rested?",
+      answer:
+        "A blurry attention lens is usually a calibration problem, not fatigue. The three common causes are choline scarcity (not enough precursor to synthesise acetylcholine), receptor desensitisation from caffeine or nicotine overdrive, and poor electrical conductivity from sodium, potassium and calcium imbalance.",
+    },
+    {
+      question: "How can I sharpen acetylcholine-driven focus naturally?",
+      answer:
+        "Use a visual anchor \u2014 fix your gaze on one point for 2\u20133 minutes before deep work to lock the lens onto a single target. Keep choline precursor intake consistent through food, and use a short burst of strong inhales to prime arousal before a demanding task.",
+    },
+  ],
+  "adaptation-hack-range-fractionation": [
+    {
+      question: "Why do I stop seeing results from the same workout?",
+      answer:
+        "When you train, eat or recover at one fixed intensity, the system adapts to that narrow range and receptors desensitise \u2014 a state of homeostatic stagnation. The fix is not more of the same; it is widening the range the system is exposed to.",
+    },
+    {
+      question: "What is range fractionation?",
+      answer:
+        "Range fractionation is distributing a stimulus across extreme ends of a range instead of a single average point \u2014 ultra-heavy and light loads, hot and cold exposure, micro-doses and macro-loading. The constant recalibration forces continued adaptation and bypasses plateaus.",
+    },
+    {
+      question: "How do I apply range fractionation in practice?",
+      answer:
+        "Never run two identical days: follow high load with low load and high recovery. Alternate sauna and cold to train the full vascular range. Combine small daily stimulus doses with one large weekly session. Track HRV \u2014 rising HRV alongside rising performance means the protocol is working.",
+    },
+  ],
+  "ai-biomarker-tracking-predictive": [
+    {
+      question: "Can wearables predict illness before symptoms appear?",
+      answer:
+        "Yes. Resting heart rate, HRV and temperature often drift 24\u201372 hours before you feel sick. AI-driven analysis detects this micro-drift against your personal baseline and flags the anomaly early, while a corrective intervention is still cheap.",
+    },
+    {
+      question: "What is the difference between reactive and predictive health tracking?",
+      answer:
+        "Reactive tracking logs what already happened \u2014 a static snapshot you review after the fact. Predictive tracking uses historical biomarker data and machine learning to forecast future states, so you intervene before burnout or illness rather than after.",
+    },
+  ],
+  "biological-latency-optimizing-system-ping": [
+    {
+      question: "What is biological latency?",
+      answer:
+        "Biological latency is the delay between a stimulus arriving and your nervous system producing a processed response \u2014 your internal \"ping rate\". High latency shows up as slow reactions, decision ghosting and a feeling of always being a step behind.",
+    },
+    {
+      question: "How do I improve my reaction time and processing speed?",
+      answer:
+        "Three levers: protect myelin integrity with consistent deep sleep (myelin sets raw conduction speed), use alpha-synchronisation breathing to lower neural jitter, and train predictive coding so the brain pre-loads likely outcomes instead of computing them from scratch.",
+    },
+  ],
+  "chm-continuous-hormone-monitoring": [
+    {
+      question: "What is continuous hormone monitoring?",
+      answer:
+        "Continuous hormone monitoring (CHM) replaces occasional static bloodwork with a dynamic, ongoing read of your internal chemistry \u2014 tracking patterns like the daily cortisol curve and cyclical testosterone output rather than a single isolated data point.",
+    },
+    {
+      question: "How can I track my cortisol rhythm without constant lab tests?",
+      answer:
+        "Cortisol follows a predictable daily curve \u2014 a sharp morning rise and a gradual evening fall. You can read its pattern through proxy signals: wake energy, afternoon dips, sleep onset and HRV. A disrupted curve (flat mornings, wired evenings) is the signal to recalibrate.",
+    },
+    {
+      question: "How do I optimise my performance window with hormone data?",
+      answer:
+        "Map demanding cognitive and physical work onto your natural hormonal peaks rather than fighting them. Schedule high-stakes effort when cortisol and testosterone output is highest, and protect recovery windows when they fall \u2014 this prevents the hormonal crash that follows chronic mistiming.",
+    },
+  ],
+  "co2-tolerance-expanding-oxygen-limit": [
+    {
+      question: "Is the urge to breathe caused by low oxygen?",
+      answer:
+        "No. The air hunger you feel is driven mainly by rising CO2, not falling oxygen. Chemoreceptors trigger breath urgency long before oxygen is actually low \u2014 which means CO2 tolerance, not lung capacity, is usually the real limiter.",
+    },
+    {
+      question: "What is the BOLT score?",
+      answer:
+        "The BOLT (Body Oxygen Level Test) measures CO2 tolerance: after a normal exhale you time how long until the first definite urge to breathe. A low score signals oversensitive chemoreceptors; a rising score over weeks of training reflects calmer, more efficient breathing.",
+    },
+    {
+      question: "How do I improve CO2 tolerance?",
+      answer:
+        "Train it gradually with box breathing to calibrate the chemoreceptors, then progress to structured apnea tables as a controlled stress test. Higher CO2 tolerance also improves oxygen delivery via the Bohr effect \u2014 hemoglobin releases oxygen more readily into the tissues.",
+    },
+  ],
+  "cpg-neural-autopilot": [
+    {
+      question: "What are central pattern generators?",
+      answer:
+        "Central pattern generators (CPGs) are circuits in the spinal cord that produce rhythmic movement \u2014 walking, running, swimming \u2014 without continuous input from the brain. They act as locomotion microcontrollers, freeing cortical bandwidth for higher-order thought.",
+    },
+    {
+      question: "How do I make movement feel effortless?",
+      answer:
+        "Hand rhythmic movement back to the CPGs instead of micromanaging it consciously. A cross-lateral reset re-establishes clean left-right coordination, cadence entrainment locks a steady rhythm, and sensory override (varying terrain or surface) retunes the pattern \u2014 turning effortful motion into flow.",
+    },
+  ],
+  "dopamine-stacking-preventing-circuit-overload": [
+    {
+      question: "What is dopamine stacking?",
+      answer:
+        "Dopamine stacking is layering several stimulating inputs at once \u2014 music plus scrolling plus snacking plus a screen. Each adds a spike, and together they overdrive the reward circuit, flattening your baseline so ordinary tasks start to feel grey and effortful.",
+    },
+    {
+      question: "How do I prevent dopamine burnout?",
+      answer:
+        "Protect the baseline rather than chasing spikes. Monotask to give the reward circuit one input at a time, run periodic \"data fasts\" from hyper-stimulating inputs to let receptors resensitise, and use cold exposure to raise baseline dopamine slowly and cleanly instead of with a crash-prone spike.",
+    },
+  ],
+  "electric-medicine-neuromodulation": [
+    {
+      question: "What is neuromodulation?",
+      answer:
+        "Neuromodulation is the use of targeted electrical or sensory signals to shift the activity of the nervous system \u2014 calming an overactive stress state, sharpening focus, or improving sleep. It works with the body\u2019s existing electrical bus rather than through drugs.",
+    },
+    {
+      question: "How can I stimulate the vagus nerve?",
+      answer:
+        "The vagus nerve responds to both natural and device-based input. Slow extended exhales, humming, gargling and cold exposure all activate it without hardware; dedicated vagus-nerve stimulators apply a gentle electrical signal. Either way the goal is a shift into the parasympathetic recovery state.",
+    },
+    {
+      question: "Is tDCS safe to use?",
+      answer:
+        "Transcranial direct current stimulation uses very low current and is generally well tolerated in research settings, but it is not a casual consumer tool. Dose, electrode placement and timing matter, and it should be approached cautiously and ideally with informed guidance.",
+    },
+  ],
+  "endocrine-social-drive-oxytocin-testosterone": [
+    {
+      question: "How do oxytocin and testosterone shape social behaviour?",
+      answer:
+        "They run two complementary protocols. Oxytocin is the trust code \u2014 it builds belonging, safety and connection. Testosterone is the status code \u2014 it drives assertiveness and presence. Charismatic, grounded social behaviour comes from balancing the two, not maxing either.",
+    },
+    {
+      question: "How do I build natural presence and charisma?",
+      answer:
+        "Presence is largely physiological. Steady, calm eye contact calibrates the trust signal, lower and slower vocal resonance projects status without aggression, and appropriate, confident body language reinforces both \u2014 letting others\u2019 nervous systems read you as safe and grounded.",
+    },
+  ],
+  "energy-governor-tsh": [
+    {
+      question: "What does TSH tell you about your metabolism?",
+      answer:
+        "TSH (thyroid-stimulating hormone) is the signal that sets your metabolic clock speed. It governs how fast cells produce energy \u2014 affecting body temperature, cognitive sharpness and stamina. A drifting TSH often shows up first as brain fog and cold extremities.",
+    },
+    {
+      question: "Can stress cause low thyroid function and brain fog?",
+      answer:
+        "Yes. Chronic stress and elevated cortisol can suppress thyroid signalling and the conversion of thyroid hormone to its active form \u2014 an effect this article calls \"underclocking\". The result is fatigue and brain fog even when standard markers look borderline-normal.",
+    },
+    {
+      question: "How do I support thyroid function naturally?",
+      answer:
+        "Ensure adequate iodine and selenium, the raw materials for thyroid hormone. Track basal body temperature as a low-cost proxy for metabolic rate, and address chronic stress directly \u2014 because cortisol control is often the missing lever behind a sluggish thyroid.",
+    },
+  ],
+  "energy-sensor-leptin": [
+    {
+      question: "What is leptin resistance?",
+      answer:
+        "Leptin is the hormone fat cells use to report energy reserves to the brain. In leptin resistance the brain stops \"hearing\" that signal \u2014 so it perceives scarcity despite full stores, driving persistent hunger, cravings and a stalled metabolism.",
+    },
+    {
+      question: "How do I restore leptin sensitivity?",
+      answer:
+        "Give the sensor quiet windows: a consistent overnight fasting window so leptin signalling can reset, protein at the start of meals to blunt the spike, and morning light plus solid sleep \u2014 leptin sensitivity is tightly tied to circadian rhythm. Cold exposure adds a further reset.",
+    },
+  ],
+  "femtech-cyclical-architecture": [
+    {
+      question: "What is cycle syncing?",
+      answer:
+        "Cycle syncing means aligning training, nutrition and workload to the four phases of the roughly 28-day hormonal cycle. Instead of treating the cycle as noise, it treats each phase as a distinct operating mode with its own strengths.",
+    },
+    {
+      question: "How do hormones change across the menstrual cycle?",
+      answer:
+        "Estrogen and progesterone rise and fall through four phases, shifting energy, strength, insulin sensitivity and mood. Higher-estrogen phases favour intensity and social output; later phases favour steadier effort and recovery. Tracking basal body temperature helps map where you are.",
+    },
+  ],
+  "glymphatic-flush-clearing-neural-cache": [
+    {
+      question: "What is the glymphatic system?",
+      answer:
+        "The glymphatic system is the brain\u2019s waste-clearance network. During deep sleep, cerebrospinal fluid flushes through brain tissue and carries away metabolic by-products \u2014 the equivalent of clearing a cache. Poor deep sleep leaves that waste uncleared.",
+    },
+    {
+      question: "How do I improve glymphatic clearance overnight?",
+      answer:
+        "Three levers: sleep on your side to assist gravitational drainage, keep the room cool so the brain can complete its cool-down, and avoid an insulin spike late at night \u2014 a heavy late meal blunts the deep-sleep flush. Protecting deep sleep is the foundation of all three.",
+    },
+  ],
+  "hpa-axis-control-cortisol-aggression": [
+    {
+      question: "What is the HPA axis?",
+      answer:
+        "The HPA (hypothalamic-pituitary-adrenal) axis is the body\u2019s stress-response chain. It releases cortisol to mobilise energy under threat. The system is healthy when it switches off cleanly afterwards \u2014 problems come from cortisol that stays elevated.",
+    },
+    {
+      question: "How do I calm a cortisol spike quickly?",
+      answer:
+        "Use the physiological sigh \u2014 a double inhale through the nose followed by a long, slow exhale. It is the fastest physiological brake on acute stress arousal, forcing a rapid shift from sympathetic activation back toward the recovery state.",
+    },
+    {
+      question: "How do I stop reacting with anger under stress?",
+      answer:
+        "Reactive aggression is undischarged stress load. Intercept it with cognitive reframing \u2014 relabelling the trigger before it escalates \u2014 and discharge accumulated static load through short bursts of physical effort, so the charge does not surface as a hair-trigger response.",
+    },
+  ],
+  "interoceptive-precision-sensor-calibration": [
+    {
+      question: "What is interoception?",
+      answer:
+        "Interoception is the sense of your body\u2019s internal state \u2014 heartbeat, breath, hunger, tension, temperature. It is the raw data stream beneath emotion and intuition. Most people read it as blurry static rather than a clear signal.",
+    },
+    {
+      question: "How do I improve interoceptive awareness?",
+      answer:
+        "Train resolution deliberately: pair attention with objective HRV data to calibrate what you feel against what is measured, run a slow, structured body scan to map sensations, and use graded interoceptive exposure \u2014 noticing uncomfortable internal signals without reacting \u2014 to widen tolerance.",
+    },
+  ],
+  "metabolic-redundancy-hybrid-power-architecture": [
+    {
+      question: "What is metabolic flexibility?",
+      answer:
+        "Metabolic flexibility is the ability to switch cleanly between fuel sources \u2014 glucose for high-octane bursts and fat or ketones for stable baseline energy. A flexible system has a redundancy layer, so a dip in one fuel does not crash performance.",
+    },
+    {
+      question: "How do I stop the afternoon energy crash?",
+      answer:
+        "Crashes come from running on glucose alone. Build dual-fuel capacity with periodic glycogen-depletion cycles that train fat-burning, order meals to smooth the glucose curve (protein and fibre before starch), and add mild thermal stress \u2014 together they remove the spike-and-crash pattern.",
+    },
+  ],
+  "muscle-metabolic-marker": [
+    {
+      question: "Why is muscle considered a marker of biological age?",
+      answer:
+        "Muscle is your largest metabolic organ. It acts as a glucose sink that buffers blood sugar, secretes signalling molecules called myokines, and its strength \u2014 grip strength in particular \u2014 is one of the strongest physical predictors of biological age and healthspan.",
+    },
+    {
+      question: "What are myokines?",
+      answer:
+        "Myokines are signalling molecules released by muscle during contraction. They communicate with the brain, immune system and other organs \u2014 influencing neuroplasticity, fat metabolism and inflammation. This is why muscle contraction acts almost like running biological code system-wide.",
+    },
+    {
+      question: "How do I train muscle as a longevity marker?",
+      answer:
+        "Track grip strength as a simple calibration metric, use brief high-intensity intervals to drive metabolic adaptation, and prioritise recovery \u2014 muscle benefit comes from the repair phase, not the load alone. Consistency over intensity is what compounds.",
+    },
+  ],
+  "neural-entrainment-meditation-2": [
+    {
+      question: "What is neural entrainment?",
+      answer:
+        "Neural entrainment is nudging brainwave activity toward a target frequency using a rhythmic external stimulus \u2014 sound, light or pulsed signal. The brain tends to fall into step with the rhythm, a phenomenon known as the frequency-following response.",
+    },
+    {
+      question: "Do binaural beats actually work?",
+      answer:
+        "Binaural beats can shift the dominant EEG frequency via the frequency-following response, with effects that vary between individuals. Closed-loop systems \u2014 which read your brain state in real time and adapt the stimulus \u2014 are more reliable than fixed, open-loop tracks.",
+    },
+  ],
+  "neural-optimizer-estrogen": [
+    {
+      question: "How does estrogen affect the brain?",
+      answer:
+        "Estrogen is a powerful neural optimiser. It supports hippocampal architecture and memory, promotes synaptic plasticity, improves cerebral blood flow and acts as an anti-inflammatory and metabolic guardian for neural tissue \u2014 well beyond its reproductive role.",
+    },
+    {
+      question: "Why does cognition change when estrogen drops?",
+      answer:
+        "As estrogen declines \u2014 for example through perimenopause \u2014 its protective and metabolic support for the brain weakens, which can surface as brain fog, slower recall and lower stress resilience. The hardware is intact; the optimiser signal has faded.",
+    },
+    {
+      question: "How can I support estrogen-related brain health?",
+      answer:
+        "Resistance training drives plasticity and supports hormonal and metabolic health, omega-3 fatty acids provide an anti-inflammatory shield for neural tissue, and dietary phytoestrogens may offer mild support. Significant symptoms warrant a conversation with a clinician.",
+    },
+  ],
+  "neural-signal-to-noise-cleaning-system-channel": [
+    {
+      question: "What causes mental noise and scattered thinking?",
+      answer:
+        "Scattered thinking is a low signal-to-noise ratio in the brain\u2019s electrical channel. It rises when the inhibitory buffer (GABA) is weak, the thalamic gate lets in irrelevant input, and the alpha-shield that suppresses distraction is thin \u2014 leaving cognitive static and jitter.",
+    },
+    {
+      question: "How do I reduce cognitive noise and think more clearly?",
+      answer:
+        "Strengthen the damping system: use slow inhibitory breathwork to raise calming tone, practise sensory gating by deliberately reducing competing inputs, and train an alpha-dominant state \u2014 relaxed, alert focus \u2014 which acts as an active noise-cancellation layer for thought.",
+    },
+  ],
+  "phase-locked-acoustic-sleep": [
+    {
+      question: "What is phase-locked acoustic stimulation?",
+      answer:
+        "It is the delivery of quiet sound pulses precisely timed to the slow brainwaves of deep sleep. By syncing the stimulus to the wave\u2019s phase, the technique reinforces the wave and amplifies deep-sleep amplitude without waking you.",
+    },
+    {
+      question: "Can sound actually improve deep sleep quality?",
+      answer:
+        "Yes. Stimulation phase-locked to slow-wave sleep can increase delta-wave amplitude, which is linked to better memory consolidation and physical recovery. The key is precise timing \u2014 the sound must lock to the wave\u2019s phase, which is why real-time EEG matters.",
+    },
+  ],
+  "physiological-concentration-flow-state-hardwired": [
+    {
+      question: "Is concentration a matter of willpower?",
+      answer:
+        "No. Concentration is a physiological lock state, not a moral effort. It appears when three neurochemicals align \u2014 norepinephrine for arousal, acetylcholine for selection, and dopamine for reward. When the triad is aligned, focus feels automatic; when it is not, willpower cannot force it.",
+    },
+    {
+      question: "How do I get into a flow state on demand?",
+      answer:
+        "Engineer the inputs rather than forcing the output: narrow the visual field (visual tunnelling) to cue selective attention, use mild CO2 loading through slow breathing to steady arousal, and prime electrolytes so neural firing stays clean. The triad then locks far more reliably.",
+    },
+  ],
+  "senolytic-high-dosing-longevity": [
+    {
+      question: "What are senolytics?",
+      answer:
+        "Senolytics are compounds that selectively clear senescent \"zombie\" cells \u2014 cells that have stopped dividing but stay metabolically active and leak inflammatory signals that damage surrounding tissue and drive aging.",
+    },
+    {
+      question: "What is the \"hit and run\" senolytic protocol?",
+      answer:
+        "Because senescent cells are slow to re-accumulate, senolytics are studied as intermittent high-dose pulses \u2014 a short \"hit\" followed by a long break \u2014 rather than daily dosing. The pulse clears the cells; the gap avoids constant exposure.",
+    },
+    {
+      question: "Are senolytics safe to take?",
+      answer:
+        "Senolytic dosing is still an emerging research area. Agents such as quercetin, fisetin and dasatinib are under active study, and protocols, doses and long-term safety are not settled. This is firmly a topic to approach with medical supervision, not self-experimentation.",
+    },
+  ],
+  "system-stability-serotonin": [
+    {
+      question: "How do I raise serotonin naturally?",
+      answer:
+        "Three reliable levers: morning sunlight exposure as a photic trigger, a healthy gut \u2014 since most serotonin precursor activity happens there \u2014 supported by prebiotic fibre, and upright, open posture, which feeds the sense of stable status that underlies serotonin balance.",
+    },
+    {
+      question: "Is most serotonin made in the gut?",
+      answer:
+        "Yes \u2014 roughly 90% of the body\u2019s serotonin is produced in the gut, not the brain. This is why gut health and microbiome quality have a direct line to mood stability, and why the article treats the gut as the \"serotonin server\".",
+    },
+    {
+      question: "How does posture affect mood?",
+      answer:
+        "Posture is a two-way signal. Upright, expanded posture feeds back to the nervous system as a cue of stable status and safety, supporting serotonin balance and calm confidence \u2014 while a chronically collapsed posture reinforces the opposite state.",
+    },
+  ],
   'molecular-psychology-hormonal-firmware': [
     {
       question: 'What is molecular psychology?',
