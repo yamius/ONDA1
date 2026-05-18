@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Eye, X, RefreshCw } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { useEyeScan, type EyeScanResult, SCAN_DURATION_MS } from '../hooks/useEyeScan';
@@ -25,7 +25,19 @@ export default function NervousSystemScan({
   const scan = useEyeScan();
   const status = scan.status;
   const [practiceId, setPracticeId] = useState<string | null>(null);
+  const [videoVisible, setVideoVisible] = useState(false);
   const close = onClose ?? (() => { window.location.href = '/'; });
+
+  // Плавное появление камеры: после входа в 'scanning' даём кадру
+  // устаканиться, затем запускаем fade-in (opacity 0 → 100).
+  useEffect(() => {
+    if (status !== 'scanning') {
+      setVideoVisible(false);
+      return;
+    }
+    const id = window.setTimeout(() => setVideoVisible(true), 350);
+    return () => window.clearTimeout(id);
+  }, [status]);
 
   return (
     <>
@@ -73,7 +85,9 @@ export default function NervousSystemScan({
               style={{ transform: 'scaleX(-1)' }}
               className={
                 status === 'scanning'
-                  ? 'w-full aspect-[4/3] object-cover rounded-2xl border border-white/10'
+                  ? `w-full aspect-[4/3] object-cover rounded-2xl border border-white/10 transition-opacity duration-700 ${
+                      videoVisible ? 'opacity-100' : 'opacity-0'
+                    }`
                   : 'hidden'
               }
             />
