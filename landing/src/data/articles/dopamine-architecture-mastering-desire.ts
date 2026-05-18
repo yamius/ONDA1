@@ -38,7 +38,7 @@ const article: Article = {
 
 ## Section 1: The Reward Circuitry
 
-The dopamine pathway begins in the Ventral Tegmental Area (VTA) and projects to the Nucleus Accumbens. This is the core of your motivation engine. When this circuit is active, your Prefrontal Cortex shifts into 'High-Focus' mode, directing all system resources toward a specific goal. However, if this circuit is overstimulated by synthetic triggers, the Limbic System overrides your rational OS, leading to compulsive behaviors and "Brain Fog."
+The dopamine pathway begins in the [Ventral Tegmental Area (VTA)](/articles/ventral-tegmental-core-motivational-salience) and projects to the Nucleus Accumbens. This is the core of your motivation engine. When this circuit is active, your Prefrontal Cortex shifts into 'High-Focus' mode, directing all system resources toward a specific goal. However, if this circuit is overstimulated by synthetic triggers, the Limbic System overrides your rational OS, leading to compulsive behaviors and "Brain Fog."
 
 ---
 

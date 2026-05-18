@@ -43,7 +43,7 @@ const article: Article = {
 
 ## [ FIREWALL: ACTIVE ]
 
-Your attention is protected. Analog morning, monotasking blocks, and dopamine fasts defend your Prefrontal Cortex from digital fragmentation.
+Your attention is protected. Analog morning, [monotasking blocks](/articles/acc-calibration-protocol-cognitive-control), and dopamine fasts defend your Prefrontal Cortex from digital fragmentation.
 
 ---
 

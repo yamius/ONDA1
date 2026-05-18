@@ -66,7 +66,7 @@ const article: Article = {
 
 ## [ SECTION 2: THE GUT AS THE SEROTONIN SERVER ]
 
-Crucially, 90% of your serotonin is synthesized in the gut. This is not just a biological fact, but a Data Link between your microbiome and your mood. If the 'Server' (the gastrointestinal tract) is overloaded with inflammation or low-quality fuel, the cognitive system will never receive the 'Stability Signal,' regardless of how much you meditate.
+Crucially, 90% of your serotonin is synthesized in the gut. This is not just a biological fact, but a Data Link between your microbiome and your mood — the [gut-brain axis](/articles/gut-brain-axis-data-link). If the 'Server' (the gastrointestinal tract) is overloaded with inflammation or low-quality fuel, the cognitive system will never receive the 'Stability Signal,' regardless of how much you meditate.
 
 ---
 
@@ -76,7 +76,7 @@ Crucially, 90% of your serotonin is synthesized in the gut. This is not just a b
 
 > **The Hack:** Roll shoulders back, lift the chin slightly, and align the crown of the head upward.
 
-**The Logic:** Proprioceptive feedback loop. The brain reads the 'Victor' posture and initiates a serotonin release. It is an immediate hardware-level patch for confidence.
+**The Logic:** Proprioceptive feedback loop. The brain reads the 'Victor' posture and initiates a serotonin release. Refining that proprioceptive channel is the core of [spinal intelligence](/articles/spinal-intelligence-decentralized-control). It is an immediate hardware-level patch for confidence.
 
 \`[ STATUS: ACTIVE ]\`
 

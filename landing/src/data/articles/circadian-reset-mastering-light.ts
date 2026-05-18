@@ -39,7 +39,7 @@ const article: Article = {
 
 > "Your biology doesn't run on clock time; it runs on light code. Deep inside your hypothalamus lies the Suprachiasmatic Nucleus (SCN)—a master oscillator that synchronizes every cellular clock in your body. In the ONDA model, this is your System Clock.
 >
-> Modern life is a 'Signal Jammer.' Artificial blue light at night and a lack of photons in the morning create 'Circadian Drift.' This is the equivalent of trying to run high-performance software while your CPU thinks it's 3 AM. The result? Insomnia, metabolic lag, and chronic brain fog.
+> Modern life is a 'Signal Jammer.' Artificial [blue light at night](/articles/circadian-lighting-dark-therapy) and a lack of photons in the morning create 'Circadian Drift.' This is the equivalent of trying to run high-performance software while your CPU thinks it's 3 AM. The result? Insomnia, metabolic lag, and chronic brain fog.
 >
 > To fix the machine, you must master the photic signal. It's time to resync your hardware with the solar cycle."
 

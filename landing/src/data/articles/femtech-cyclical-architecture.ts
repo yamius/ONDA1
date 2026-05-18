@@ -33,7 +33,7 @@ const article: Article = {
 >
 > In the ONDA model, the female cycle is not a limitation—it is a series of Four Unique Work Modes. Each phase has specific system requirements for nutrients, cognitive load, and computational intensity. Synchronizing your output with the current 'Firmware Version' transforms your biology from chaos into a perfectly tuned machine."
 
-The diagram below maps your hormonal firmware to the four work modes: Metabolic Rate, Cognitive Load, and Recovery Matrix.
+The diagram below maps your [hormonal firmware](/articles/molecular-psychology-hormonal-firmware) to the four work modes: Metabolic Rate, Cognitive Load, and Recovery Matrix.
 
 ![Female cycle biohacking hormonal architecture visual: estrogen progesterone waves, metabolic rate, cognitive load, recovery matrix.](/images/articles/female-cycle-biohacking-onda.png "Female cycle biohacking — ONDA hormonal architecture: estrogen, progesterone, and four work modes")
 

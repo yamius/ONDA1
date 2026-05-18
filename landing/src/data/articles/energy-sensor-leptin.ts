@@ -54,7 +54,7 @@ const article: Article = {
 
 > "Leptin is the primary messenger hormone transmitting data from adipose tissue (fat) to the Hypothalamus. Its mission: inform the processor that 'Energy is sufficient; resources can be allocated to cognitive growth, reproduction, and physical expansion.'
 >
-> The primary system error is Leptin Resistance. This occurs when the signal from the 'Batteries' (fat) fails to reach the Hypothalamus due to systemic noise (inflammation). Consequently, the brain is 'blind': it cannot see the stored energy and forces the system into Low Power Mode, slowing metabolism and triggering constant hunger signals."
+> The primary system error is Leptin Resistance. This occurs when the signal from the 'Batteries' (fat) fails to reach the Hypothalamus due to systemic noise (inflammation). Consequently, the brain is 'blind': it cannot see the stored energy and forces the system into Low Power Mode, slowing metabolism and triggering constant hunger signals. Metabolic clock speed itself is set upstream by the thyroid — see the [energy governor](/articles/energy-governor-tsh)."
 
 ---
 

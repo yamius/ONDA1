@@ -101,7 +101,7 @@ Three hardware-level synchronization techniques to activate the Neural Bridge on
 
 **Effortless Synthesis:** The ability to connect disparate data points into a single, elegant architecture. Synthesis — the highest cognitive function — is exclusively an Alpha-Theta border phenomenon. It cannot be forced from Beta. It can only be accessed by building a bridge stable enough to hold the cross-frequency coupling that makes novel associations possible.
 
-**Cognitive Fluidity:** A state where the work feels like it is "doing itself" — the definition of the true Flow State. This is not mystical. It is the predictable result of sustained Alpha-Gamma coupling, sufficient cortical inhibition to suppress distraction, and a clear channel between the conscious workspace and the subconscious archive.
+**Cognitive Fluidity:** A state where the work feels like it is "doing itself" — the definition of the true [Flow State](/articles/physiological-concentration-flow-state-hardwired). This is not mystical. It is the predictable result of sustained Alpha-Gamma coupling, sufficient cortical inhibition to suppress distraction, and a clear channel between the conscious workspace and the subconscious archive.
 
 > [ ONDA_STATEMENT ]
 > "Your best ideas are not born from the effort of Beta mode. They already exist within the system. Your job is to build a bridge stable enough for them to cross."

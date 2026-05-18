@@ -49,7 +49,7 @@ Instead of performing standard 3×10 sets with a fixed weight, you fragment the 
 
 ### 2. MODULE: NUTRITION & HORMONES (Nutritional Fractionation)
 
-Aligning with the protocols for Leptin and Insulin — alternate **Deep Deficit** (16–24 hour fasting periods) with **Surplus Refeed** windows that signal system safety and resource abundance.
+Aligning with the protocols for [Leptin](/articles/energy-sensor-leptin) and Insulin — alternate **Deep Deficit** (16–24 hour fasting periods) with **Surplus Refeed** windows that signal system safety and resource abundance.
 
 This prevents the metabolic downclocking that inevitably follows prolonged linear caloric deficits.
 

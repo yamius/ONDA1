@@ -47,7 +47,7 @@ Glucagon-like peptide-1 (GLP-1) is far more than a satiety hormone; it is a syst
 
 ### PROTOCOL 3: The 1.6g Threshold
 
-> **The Hack:** Maintain a daily protein intake of at least 1.6g/kg of body weight. This is the critical threshold required to prevent sarcopenia (muscle wasting) during caloric deficits.
+> **The Hack:** Maintain a daily protein intake of at least 1.6g/kg of body weight. This is the critical threshold required to prevent [sarcopenia](/articles/muscle-metabolic-marker) (muscle wasting) during caloric deficits.
 
 **The Logic:** The Protein Leverage Hypothesis states that the human organism will signal hunger until it meets its specific amino acid requirement. Prioritizing protein stops systemic "cravings" at the source and preserves muscle mass.
 

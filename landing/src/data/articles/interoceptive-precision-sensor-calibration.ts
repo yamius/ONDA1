@@ -78,7 +78,7 @@ ONDA updates the interoceptive firmware through directed attention and data-matc
 
 > **The Method:** In the ONDA app, correlate your subjective sensations with Apple Watch metrics — HRV and heart rate in real time.
 
-**The Logic:** This trains the brain to map an internal feeling to an objective metric. When you feel "tense" and simultaneously see your HRV drop, the brain builds a new association: tension = measurable physiological state. Over weeks, this mapping becomes automatic. Intuition becomes calibrated data.
+**The Logic:** This trains the brain to map an internal feeling to an objective metric. Closing that read-adjust-recheck cycle is the [biometric feedback loop](/articles/system-feedback-biometric-loop). When you feel "tense" and simultaneously see your HRV drop, the brain builds a new association: tension = measurable physiological state. Over weeks, this mapping becomes automatic. Intuition becomes calibrated data.
 
 ### PROTOCOL 2: Body Scanning 2.0
 

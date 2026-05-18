@@ -33,7 +33,7 @@ const article: Article = {
 
 > "Most people feel the urge to breathe not because of an oxygen (O₂) deficiency, but because of a sensitivity to carbon dioxide (CO₂) buildup. Your brain's respiratory center signals 'Breathe!' long before your oxygen levels actually hit a critical low.
 >
-> In the ONDA model, CO₂ tolerance is the System Thermostat. If set too low, you are constantly 'venting' the system (over-breathing), washing out CO₂. Without CO₂, hemoglobin refuses to release oxygen to your tissues—a physiological bottleneck known as the Bohr Effect. Increasing your CO₂ tolerance is like upgrading your cooling system, allowing the processor to run at peak speeds without triggering a false alarm."
+> In the ONDA model, CO₂ tolerance is the System Thermostat. If set too low, you are constantly 'venting' the system (over-breathing), washing out CO₂. Without CO₂, hemoglobin refuses to release oxygen to your tissues—a physiological bottleneck known as the [Bohr Effect](/articles/bohr-effect-oxygen-telemetry). Increasing your CO₂ tolerance is like upgrading your cooling system, allowing the processor to run at peak speeds without triggering a false alarm."
 
 ---
 

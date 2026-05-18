@@ -43,7 +43,7 @@ const article: Article = {
 
 > "In computing, the main CPU doesn't render every single pixel — that is the job of the GPU and specialized drivers. In your body, the spinal cord acts as this dedicated 'micro-controller.'
 >
-> Central Pattern Generators (CPG) are biological neural networks capable of producing complex rhythmic movements — walking, running, breathing — **without constant input from the brain**. When you walk, your brain doesn't command every individual muscle; it simply hits the 'Execute' button, and the spinal 'harddrive' runs the corresponding script."
+> [Central Pattern Generators (CPG)](/articles/cpg-neural-autopilot) are biological neural networks capable of producing complex rhythmic movements — walking, running, breathing — **without constant input from the brain**. When you walk, your brain doesn't command every individual muscle; it simply hits the 'Execute' button, and the spinal 'harddrive' runs the corresponding script."
 
 ---
 

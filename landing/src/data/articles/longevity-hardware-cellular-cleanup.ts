@@ -39,7 +39,7 @@ const article: Article = {
 
 ## [ SYSTEM LIFESPAN: EXTENDED ]
 
-Autophagy and senolytics are your cellular cleanup crew. Extended fasting, quercetin/fisetin, and hormetic stress defend your mitochondria from zombie cells.
+Autophagy and [senolytics](/articles/senolytic-high-dosing-longevity) are your cellular cleanup crew. Extended fasting, quercetin/fisetin, and hormetic stress defend your mitochondria from zombie cells.
 
 ---
 

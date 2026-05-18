@@ -73,7 +73,7 @@ To move beyond basic alignment and into Age Deceleration, implement the three-la
 
 > **Action:** Fasted exercise in natural morning light, followed immediately by cold exposure (≤ 15°C, 2–3 minutes).
 
-**Logic:** This dual-signal triggers AMPK activation — the cellular energy sensor that initiates autophagy. AMPK tells the body to recycle old, "laggy" cells and recalibrate the metabolic clock to peak efficiency. The fasted state amplifies the signal: without glucose available, the system accelerates into repair mode. The cold exposure adds a hormetic stressor that further activates mitochondrial biogenesis via PGC-1α, the master regulator of cellular energy capacity.
+**Logic:** This dual-signal triggers AMPK activation — the cellular energy sensor that initiates autophagy. The same AMPK signal drives [mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — the build-out of new cellular power plants. AMPK tells the body to recycle old, "laggy" cells and recalibrate the metabolic clock to peak efficiency. The fasted state amplifies the signal: without glucose available, the system accelerates into repair mode. The cold exposure adds a hormetic stressor that further activates mitochondrial biogenesis via PGC-1α, the master regulator of cellular energy capacity.
 
 ### Protocol 3: Data-Driven Wind Down
 

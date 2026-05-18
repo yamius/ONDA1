@@ -54,7 +54,7 @@ Aging is not just the loss of healthy cells; it is the accumulation of "Zombie C
 
 **SASP Neutralization:** Senescent Associated Secretory Phenotype (SASP) is the "noise" in your biological network. Clearing these cells reduces systemic inflammation (inflammaging) and restores signal clarity.
 
-**Niche Clearance:** By removing old cells, you create physical and biochemical "space" for local stem cells to divide and regenerate the tissue.
+**Niche Clearance:** By removing old cells, you create physical and biochemical "space" for local stem cells to divide and regenerate the tissue — the regeneration logic explored in [cacao & stem cells](/articles/cacao-stem-cells).
 
 ---
 

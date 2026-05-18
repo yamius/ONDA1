@@ -37,7 +37,7 @@ const article: Article = {
 
 > "Your body is a hybrid engine designed to run on two distinct fuel sources: Glucose (Sugar) and Ketones (Fats). In the modern world, most biological systems are 'Glucose-Locked'—trapped in a perpetual cycle of insulin spikes and energy crashes. This is inefficient hardware management.
 >
-> Metabolic Flexibility is the ability of your Mitochondria to seamlessly switch between these fuel sources based on availability and demand. In the ONDA model, this is 'Power Management 2.0.' When you unlock this flexibility, you eliminate 'Brain Fog,' stabilize your mood, and access a near-limitless reserve of stored metabolic energy.
+> Metabolic Flexibility is the ability of your Mitochondria to seamlessly switch between these fuel sources based on availability and demand. Engineering that switch as a true backup system is the [metabolic redundancy](/articles/metabolic-redundancy-hybrid-power-architecture) protocol. In the ONDA model, this is 'Power Management 2.0.' When you unlock this flexibility, you eliminate 'Brain Fog,' stabilize your mood, and access a near-limitless reserve of stored metabolic energy.
 >
 > It's time to upgrade your fuel logic and unlock stable power."
 

@@ -67,7 +67,7 @@ Estrogen literally 'builds' connections. It promotes the production of BDNF (Bra
 
 ## [ SECTION 2: THE METABOLIC GUARDIAN ]
 
-\`Estrogen\` manages resource allocation. It increases sensitivity to insulin and leptin, preventing 'system overheating' (inflammation). Keeping estrogen within the optimal range is the key to ensuring that stored energy is directed toward cognitive expansion rather than being stored as ballast.
+\`Estrogen\` manages resource allocation. It increases sensitivity to insulin and leptin, preventing 'system overheating' (inflammation). Across the menstrual month these estrogen swings define four distinct work modes — see [cyclical architecture](/articles/femtech-cyclical-architecture). Keeping estrogen within the optimal range is the key to ensuring that stored energy is directed toward cognitive expansion rather than being stored as ballast.
 
 ---
 

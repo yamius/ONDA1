@@ -64,7 +64,7 @@ Three mechanisms explain why Alpha rhythm is the critical hardware foundation fo
 
 Most high-demand environments create and sustain the Beta Trap — chronic High-Beta entrainment from which the system cannot exit without deliberate intervention:
 
-**High Latency:** Constant sympathetic activation and cortisol elevation create measurable lag in decision-making and creative output. The Amygdala hijacks prefrontal processing bandwidth, slowing complex reasoning by routing everything through a threat-evaluation filter that most inputs do not require.
+**High Latency:** Constant sympathetic activation and cortisol elevation create measurable lag in decision-making and creative output — the [biological latency](/articles/biological-latency-optimizing-system-ping) that separates reaction from anticipation. The Amygdala hijacks prefrontal processing bandwidth, slowing complex reasoning by routing everything through a threat-evaluation filter that most inputs do not require.
 
 **Energy Bleed:** Attempting to innovate from a state of sustained stress consumes up to **3x more glucose** than working from an Alpha baseline. High-Beta neural firing is metabolically expensive. The system burns through its glucose and adenosine reserves faster, reaching cognitive fatigue earlier while producing lower-quality output per unit of energy spent.
 
@@ -98,7 +98,7 @@ Three targeted triggers to engage Alpha manually — without waiting for it to "
 
 ## Impact Log: The Alpha Advantage
 
-**Rapid Response:** The ability to switch between complex tasks without cognitive "ghosting" — the residual activation from a previous task that degrades performance on the next. Alpha baseline clears the working memory buffer between tasks, enabling clean context switching at full processing speed.
+**Rapid Response:** The ability to switch between complex tasks without cognitive "ghosting" — the residual activation from a previous task that degrades performance on the next. Alpha baseline clears the working memory buffer between tasks, enabling clean context switching at full processing speed. Raising that ceiling further is the aim of [cognitive throughput optimization](/articles/cognitive-architecture-neural-throughput).
 
 **Clarity of Intent:** You see the architectural "big picture" rather than just the immediate technical fires. Strategic clarity is an Alpha-state emergent property — it is not achievable from sustained High-Beta, regardless of intelligence or experience. The system literally cannot access this perspective while in threat-response mode.
 

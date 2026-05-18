@@ -63,7 +63,7 @@ When an operator relies on shallow respiration under heavy cognitive load, two s
 
 **Internal Suffocation:** The brain receives insufficient oxygen, dropping the processing speed of the prefrontal cortex.
 
-**Jitter Generation:** The body misinterprets low CO2 as a stress signal, increasing the production of adrenaline and inducing micro-panic or a fog of confusion.
+**Jitter Generation:** The body misinterprets low CO2 as a stress signal, increasing the production of adrenaline and inducing micro-panic or a fog of confusion. Reading that signal accurately instead of misfiring is a matter of [interoceptive precision](/articles/interoceptive-precision-sensor-calibration).
 
 ---
 

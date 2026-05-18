@@ -54,13 +54,13 @@ For both men and women, hormonal cycles dictate cognitive bandwidth. Real-time m
 
 ### PROTOCOL_01 > STRESS-RESPONSE CALIBRATION (CORTISOL_SYNC)
 
-> **The Hack:** Use a CHM sensor (e.g., prototypes from Know Labs or 2026-gen biosensors) to cross-reference cortisol spikes with daily stressors.
+> **The Hack:** Use a CHM sensor (e.g., prototypes from Know Labs or 2026-gen biosensors) to cross-reference cortisol spikes with daily stressors. A cortisol curve that never switches off is the failure the [adrenal governor](/articles/adrenal-governor-thermal-runaway) protocol catches.
 >
 > **The Logic:** Identifying specific triggers that cause abnormal stress surges. This allows for the immediate deployment of a Vagus Reset protocol upon detecting a critical peak.
 
 ### PROTOCOL_02 > PERFORMANCE WINDOW OPTIMIZATION
 
-> **The Hack:** Synchronize your task calendar with peak levels of free Testosterone/Estrogen as captured by the tracker.
+> **The Hack:** Synchronize your task calendar with peak levels of free Testosterone/[Estrogen](/articles/neural-optimizer-estrogen) as captured by the tracker.
 >
 > **The Logic:** Executing the most demanding strategic objectives during periods of maximum hormonal support. This reduces cognitive friction and prevents burnout.
 

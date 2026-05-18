@@ -35,7 +35,7 @@ const article: Article = {
   content: `
 ## [ CALIBRATING OPTICAL INPUTS ]
 
-> "Light is the primary programming language for your biological clock. Your eyes are not just cameras for vision; they are data ports for photons that synchronize every cellular process in your body.
+> "Light is the primary programming language for your [biological clock](/articles/longevity-protocol-biological-clock-reset). Your eyes are not just cameras for vision; they are data ports for photons that synchronize every cellular process in your body.
 >
 > In the ONDA model, 'Signal Stability' is about managing the spectral quality of light. Modern environments are filled with 'Photonic Noise' (blue light at night), which corrupts your hormonal code. To restore system integrity, you must master the art of Circadian Lighting and Dark Therapy."
 
@@ -65,7 +65,7 @@ Dark Therapy is the intentional restriction of short-wavelength light to allow f
 
 > **The Hack:** Switch all environmental lighting to red/amber wavelengths (below 2000K) after 8:00 PM.
 >
-> **The Logic:** Red light has no inhibitory effect on Melatonin production. By shifting the spectrum, you maintain visibility without sending an 'Emergency Wake' signal to the SCN.
+> **The Logic:** Red light has no inhibitory effect on Melatonin production. Red and near-infrared light also reach the mitochondria directly — see [mitochondrial DNA & red light](/articles/mitochondrial-dna-red-light). By shifting the spectrum, you maintain visibility without sending an 'Emergency Wake' signal to the SCN.
 
 ### PROTOCOL_03 > The Photic Firewall (Blue Light Blocking)
 

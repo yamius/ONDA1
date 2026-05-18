@@ -46,7 +46,7 @@ For decades, sleep was treated as a black box—you closed your eyes and hoped f
 
 ## The Logic: Compression & Quality
 
-**The Delta Motor:** During Deep Sleep, your brain's glymphatic system flushes out metabolic waste (beta-amyloid). By amplifying Delta waves, you accelerate this "Cellular Cleanup."
+**The Delta Motor:** During Deep Sleep, your brain's glymphatic system flushes out metabolic waste (beta-amyloid). Left uncleared, that residue is the [neural entropy](/articles/anti-entropy-neural-architecture) that slowly degrades cognitive architecture. By amplifying Delta waves, you accelerate this "Cellular Cleanup."
 
 **Acoustic Resonance:** Think of it like pushing a child on a swing—if you push at the exact peak of the arc (the up-state), the swing goes higher. If we "push" your brain waves with sound at the right time, they become more powerful.
 
