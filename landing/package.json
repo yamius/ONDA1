@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "node server.js",
-    "audit:gsc": "node scripts/gsc-coverage-audit.mjs"
+    "audit:gsc": "node scripts/gsc-coverage-audit.mjs",
+    "audit:ai": "node scripts/ai-audit.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.98.0",
