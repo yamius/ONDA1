@@ -59,7 +59,12 @@ export default function NervousSystemScan({
             className="p-4 space-y-4 overflow-y-auto flex-1"
             style={{ paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}
           >
-            {/* Камера всегда в DOM ради videoRef; видна только при сканировании. */}
+            {/*
+              Камера всегда в DOM ради videoRef. Видна только в 'scanning':
+              в 'preparing' поток уже крутится скрыто и успевает пройти
+              авто-фокус/авто-кроп фронталки iPhone, поэтому к моменту показа
+              картинка стабильна — без скачка зума.
+            */}
             <video
               ref={scan.videoRef}
               playsInline
@@ -67,7 +72,7 @@ export default function NervousSystemScan({
               autoPlay
               style={{ transform: 'scaleX(-1)' }}
               className={
-                status === 'scanning' || status === 'preparing'
+                status === 'scanning'
                   ? 'w-full aspect-[4/3] object-cover rounded-2xl border border-white/10'
                   : 'hidden'
               }
