@@ -140,8 +140,10 @@ export const LOCALIZED_PAGES: Record<string, string> = {
   '/about': 'about',
   '/articles': 'articles',
   '/bio': 'bio',
+  '/contact': 'contact',
   '/inner-spectrum': 'inner-spectrum',
   '/privacy': 'privacy',
+  '/sitemap': 'sitemap',
   '/terms': 'terms',
 }
 
@@ -209,9 +211,11 @@ export function localizedPathFor(pathname: string, lang: Lang): string {
   // language. Without this, switching to e.g. "UK" from /glossary would dump
   // the user back on /glossary (EN) since localizedPathFor's default branch
   // strips the lang prefix.
-  // /privacy, /terms and /articles are now in LOCALIZED_PAGES — handled by the
-  // LOCALIZED_BASE_PATHS branch below, not here.
-  const flatLocalized = ['/glossary', '/contact', '/sitemap']
+  // Only /glossary still rides this shim — its localized index is gated
+  // behind the glossary rollout, so it is not in LOCALIZED_PAGES. Everything
+  // else (/articles, /contact, /sitemap, /privacy, /terms…) is handled by the
+  // LOCALIZED_BASE_PATHS branch below.
+  const flatLocalized = ['/glossary']
   if (flatLocalized.includes(basePath)) {
     return lang === 'en' ? basePath : `/${lang}${basePath}`
   }

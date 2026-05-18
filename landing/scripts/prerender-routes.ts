@@ -365,9 +365,7 @@ export const ALL_PILOT_ARTICLE_SLUGS: readonly string[] = Array.from(
 // public/locales/*/{privacy,terms}.json.
 const nonLocalizedStaticPaths = [
   '/glossary',
-  '/contact',
   '/the-stack',
-  '/sitemap',
   '/topics',
   '/reviews',
   '/reviews/methodology',
