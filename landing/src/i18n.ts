@@ -138,6 +138,7 @@ export function langHref(path: string, lang: Lang): string {
 export const LOCALIZED_PAGES: Record<string, string> = {
   '/': 'home',
   '/about': 'about',
+  '/articles': 'articles',
   '/bio': 'bio',
   '/inner-spectrum': 'inner-spectrum',
   '/privacy': 'privacy',
@@ -208,9 +209,9 @@ export function localizedPathFor(pathname: string, lang: Lang): string {
   // language. Without this, switching to e.g. "UK" from /glossary would dump
   // the user back on /glossary (EN) since localizedPathFor's default branch
   // strips the lang prefix.
-  // /privacy and /terms are now in LOCALIZED_PAGES — they're handled by the
+  // /privacy, /terms and /articles are now in LOCALIZED_PAGES — handled by the
   // LOCALIZED_BASE_PATHS branch below, not here.
-  const flatLocalized = ['/glossary', '/articles', '/contact', '/sitemap']
+  const flatLocalized = ['/glossary', '/contact', '/sitemap']
   if (flatLocalized.includes(basePath)) {
     return lang === 'en' ? basePath : `/${lang}${basePath}`
   }
