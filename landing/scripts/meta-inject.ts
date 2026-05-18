@@ -870,6 +870,23 @@ const FAQ_LEVEL_SCHEMA: Record<number, { question: string; answer: string }[]> =
 
 /** FAQ schema for article pages. 2–3 key Q&As per article for FAQPage JSON-LD. */
 const FAQ_SCHEMA: Record<string, { question: string; answer: string }[]> = {
+  'molecular-psychology-hormonal-firmware': [
+    {
+      question: 'What is molecular psychology?',
+      answer:
+        'Molecular Psychology is the framework that treats every psychological state — mood, confidence, anxiety, calm — as the runtime output of measurable molecules: hormones and neurotransmitters binding to receptors. Instead of analyzing feelings as abstract narrative, it identifies the chemical signal underneath and the physical inputs that produced it.',
+    },
+    {
+      question: 'Can you actually change your emotional baseline?',
+      answer:
+        'Yes, but not by intention alone. Baselines are defended by set points and receptor density, so they resist single interventions. They respond to repeated physical input: consistent light timing, movement, sleep, and social contact shift the molecular profile over weeks. Consistency rewrites the firmware; intensity does not.',
+    },
+    {
+      question: "Why doesn't positive thinking change how I feel?",
+      answer:
+        'Because thought sits on the application layer, and emotion is set by the firmware layer below it. When hormones and neurotransmitters have already biased the system toward threat, conscious reframing cannot override the chemistry — it can only narrate it. Durable change works bottom-up: fix the molecular inputs first, and the thoughts follow.',
+    },
+  ],
   'vagus-nerve-master-key': [
     {
       question: 'How can I stimulate my Vagus Nerve?',
