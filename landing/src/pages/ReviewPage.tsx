@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
 import { getReviewBySlug, getCriterion } from '../data/reviews'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 
 export function ReviewPage() {
   const { slug } = useParams<{ slug: string }>()
@@ -186,7 +186,31 @@ export function ReviewPage() {
 
       {tContent && (
         <article className="prose-onda mb-10">
-          <Markdown>{tContent}</Markdown>
+          <Markdown
+            components={{
+              a: ({ href, children }) => {
+                const ext = href?.startsWith('http')
+                const cls =
+                  'text-terminal-green underline decoration-terminal-green/30 underline-offset-2 transition-colors hover:text-terminal-green/80'
+                return href && !ext && href.startsWith('/') ? (
+                  <Link to={langHref(href, lang)} className={cls}>
+                    {children}
+                  </Link>
+                ) : (
+                  <a
+                    href={href}
+                    target={ext ? '_blank' : undefined}
+                    rel={ext ? 'noopener noreferrer' : undefined}
+                    className={cls}
+                  >
+                    {children}
+                  </a>
+                )
+              },
+            }}
+          >
+            {tContent}
+          </Markdown>
         </article>
       )}
 

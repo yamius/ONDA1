@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { langFromPath, langHref } from '../i18n'
 
 interface LevelTranslated {
   name: string
@@ -116,6 +117,7 @@ const levelsWithPages = [1, 2, 3, 4, 5, 6, 7, 8]
 
 function LevelCard({ style, data }: { style: LevelStyle; data: LevelTranslated }) {
   const { t } = useTranslation('home')
+  const lang = langFromPath(useLocation().pathname)
   const hasLevelPage = levelsWithPages.includes(style.number)
   return (
     <div
@@ -124,7 +126,7 @@ function LevelCard({ style, data }: { style: LevelStyle; data: LevelTranslated }
       <div className="mb-3 flex items-center justify-between">
         <span className={`font-mono text-xs font-semibold ${style.accentColor}`}>
           {hasLevelPage ? (
-            <Link to={`/level/${style.number}`} className="transition-colors hover:opacity-80">
+            <Link to={langHref(`/level/${style.number}`, lang)} className="transition-colors hover:opacity-80">
               {t('levels.levelLabel', { n: style.number })} →
             </Link>
           ) : (
@@ -147,7 +149,7 @@ function LevelCard({ style, data }: { style: LevelStyle; data: LevelTranslated }
           return slug ? (
             <Link
               key={idx}
-              to={`/part/${slug}`}
+              to={langHref(`/part/${slug}`, lang)}
               className={`rounded px-1 py-0.5 transition-colors hover:bg-white/5 hover:text-white/70 ${style.accentColor}`}
             >
               {label} →

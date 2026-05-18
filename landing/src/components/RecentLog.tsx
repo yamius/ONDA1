@@ -16,9 +16,10 @@
  * Once glossary terms acquire their own dates this component picks them
  * up via the same helper.
  */
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { articles } from '../data/articles'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
+import { langFromPath, langHref } from '../i18n'
 
 interface LogItem {
   slug: string
@@ -64,6 +65,7 @@ function fmtDate(d: Date): string {
 
 export function RecentLog() {
   const items = recentItems(ITEMS_LIMIT)
+  const lang = langFromPath(useLocation().pathname)
   if (items.length === 0) return null
 
   return (
@@ -73,7 +75,7 @@ export function RecentLog() {
           [ RECENT_LOG ]
         </h2>
         <Link
-          to="/articles"
+          to={langHref('/articles', lang)}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
           latest →
@@ -83,7 +85,7 @@ export function RecentLog() {
         {items.map((item) => (
           <Link
             key={item.slug}
-            to={`/articles/${item.slug}`}
+            to={langHref(`/articles/${item.slug}`, lang)}
             className="group block border-l-2 border-white/10 pl-4 transition-colors hover:border-terminal-green/40"
           >
             <div className="mb-1 flex items-center gap-3 font-mono text-[10px] tracking-wider text-white/40">

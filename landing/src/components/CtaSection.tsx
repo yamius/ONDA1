@@ -1,9 +1,12 @@
 import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { appStoreUrl } from '../config/appStore'
+import { langFromPath, langHref } from '../i18n'
 
 export function CtaSection() {
   const { t } = useTranslation('home')
+  const lang = langFromPath(useLocation().pathname)
   const [isOpen, setIsOpen] = useState(false)
   const [platform, setPlatform] = useState<string>('')
   const [isSubmitted, setIsSubmitted] = useState(false)
@@ -57,12 +60,12 @@ export function CtaSection() {
         <h2 className="mb-4 bg-gradient-to-r from-terminal-green to-white bg-clip-text text-2xl font-bold tracking-tight text-transparent md:text-5xl">
           {t('cta.title')}
         </h2>
-        <a
-          href="/inner-spectrum"
+        <Link
+          to={langHref('/inner-spectrum', lang)}
           className="mb-10 block cursor-pointer text-sm text-white/40 transition-colors hover:text-white/70"
         >
           {t('cta.subtitle')}
-        </a>
+        </Link>
 
         <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
           <a

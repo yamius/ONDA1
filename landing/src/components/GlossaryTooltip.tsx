@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { getTermBySlug } from '../data/glossary'
+import { langFromPath, langHref } from '../i18n'
 
 interface GlossaryTooltipProps {
   label: string
@@ -16,6 +17,7 @@ export function GlossaryTooltip({ label, slug, className }: GlossaryTooltipProps
   const [show, setShow] = useState(false)
   const term = getTermBySlug(slug)
   const description = term?.shortDescription ?? null
+  const lang = langFromPath(useLocation().pathname)
 
   return (
     <span
@@ -23,7 +25,7 @@ export function GlossaryTooltip({ label, slug, className }: GlossaryTooltipProps
       onMouseEnter={() => description && setShow(true)}
       onMouseLeave={() => setShow(false)}
     >
-      <Link to={`/glossary/${slug}`} className={className}>
+      <Link to={langHref(`/glossary/${slug}`, lang)} className={className}>
         {label}
       </Link>
       {show && description && (

@@ -2,7 +2,7 @@ import { useState, useEffect, useLayoutEffect, Suspense, useMemo } from 'react'
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { TransitionLink } from './TransitionLink'
-import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, type Lang } from '../i18n'
+import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, langHref, type Lang } from '../i18n'
 
 export function Layout() {
   const location = useLocation()
@@ -134,7 +134,7 @@ export function Layout() {
             {t('menu.philosophy')}<span className="sr-only">{t('menu.philosophySr')}</span>
           </TransitionLink>
           <TransitionLink
-            to="/glossary"
+            to={langHref('/glossary', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
               location.pathname.startsWith('/glossary') ? 'text-cyan-400' : 'text-white/70'
@@ -143,7 +143,7 @@ export function Layout() {
             {t('menu.glossary')}<span className="sr-only">{t('menu.glossarySr')}</span>
           </TransitionLink>
           <TransitionLink
-            to="/articles"
+            to={langHref('/articles', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
               location.pathname.startsWith('/articles') ? 'text-cyan-400' : 'text-white/70'
@@ -152,7 +152,7 @@ export function Layout() {
             {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
           </TransitionLink>
           <TransitionLink
-            to="/reviews"
+            to={langHref('/reviews', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
               location.pathname.startsWith('/reviews') ? 'text-cyan-400' : 'text-white/70'
@@ -200,7 +200,7 @@ export function Layout() {
             {t('menu.bio')}
           </TransitionLink>
           <TransitionLink
-            to="/contact"
+            to={langHref('/contact', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block py-3 text-sm font-medium transition-colors hover:text-white ${
               location.pathname === '/contact' ? 'text-cyan-400' : 'text-white/70'
@@ -259,7 +259,7 @@ export function Layout() {
               <Link to={currentLang === 'en' ? '/articles' : `/${currentLang}/articles`} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
               </Link>
-              <Link to="/reviews" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link to={langHref('/reviews', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.reviews')}<span className="sr-only">{t('menu.reviewsSr')}</span>
               </Link>
               <Link to={localizedPathFor('/bio', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">

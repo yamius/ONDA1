@@ -9,7 +9,7 @@ import { injectGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
 import { getArticlesForTerm } from '../data/articles'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -258,15 +258,8 @@ export function GlossaryTermPage() {
               const className =
                 'text-terminal-cyan underline decoration-terminal-cyan/30 underline-offset-2 transition-colors hover:text-terminal-cyan/80 hover:decoration-terminal-cyan/50'
               if (href && !isExternal && href.startsWith('/')) {
-                const needsPrefix =
-                  langPrefix &&
-                  (href.startsWith('/articles/') ||
-                    href.startsWith('/glossary/') ||
-                    href === '/articles' ||
-                    href === '/glossary')
-                const to = needsPrefix ? `${langPrefix}${href}` : href
                 return (
-                  <Link to={to} className={className}>
+                  <Link to={langHref(href, lang)} className={className}>
                     {children}
                   </Link>
                 )

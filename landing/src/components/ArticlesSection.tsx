@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { articles } from '../data/articles'
 import { OptimizedImage } from './OptimizedImage'
+import { langFromPath, langHref } from '../i18n'
 
 function shuffle<T>(arr: T[]): T[] {
   const out = [...arr]
@@ -15,6 +16,7 @@ function shuffle<T>(arr: T[]): T[] {
 
 export function ArticlesSection() {
   const { t } = useTranslation('home')
+  const lang = langFromPath(useLocation().pathname)
   const [displayArticles, setDisplayArticles] = useState(() => articles.slice(0, 3))
 
   useEffect(() => {
@@ -41,7 +43,7 @@ export function ArticlesSection() {
           {displayArticles.map((article) => (
             <Link
               key={article.slug}
-              to={`/articles/${article.slug}`}
+              to={langHref(`/articles/${article.slug}`, lang)}
               className="glass-card group flex flex-col overflow-hidden rounded-xl transition-all hover:border-terminal-green/10"
             >
               {article.image && (
@@ -77,7 +79,7 @@ export function ArticlesSection() {
 
         <div className="mt-10 text-center">
           <Link
-            to="/articles"
+            to={langHref('/articles', lang)}
             className="inline-flex items-center gap-2 rounded-lg border border-terminal-green/20 bg-terminal-green/5 px-5 py-2.5 font-mono text-sm text-terminal-green transition-all hover:border-terminal-green/40 hover:bg-terminal-green/10"
           >
             {t('articles.viewAll', { count: articles.length })}

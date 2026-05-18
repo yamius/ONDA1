@@ -10,7 +10,7 @@ import { glossaryTerms } from '../data/glossary'
 import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -823,15 +823,8 @@ export function ArticlePage() {
       const className =
         'text-terminal-cyan underline decoration-terminal-cyan/30 underline-offset-2 transition-colors hover:text-terminal-cyan/80 hover:decoration-terminal-cyan/50'
       if (href && !isExternal && href.startsWith('/')) {
-        const needsPrefix =
-          langPrefix &&
-          (href.startsWith('/articles/') ||
-            href.startsWith('/glossary/') ||
-            href === '/articles' ||
-            href === '/glossary')
-        const to = needsPrefix ? `${langPrefix}${href}` : href
         return (
-          <Link to={to} className={className}>
+          <Link to={langHref(href, lang)} className={className}>
             {children}
           </Link>
         )
@@ -1063,7 +1056,7 @@ export function ArticlePage() {
             {tNeuralSuggestion.text}
           </p>
           <Link
-            to={tNeuralSuggestion.link}
+            to={langHref(tNeuralSuggestion.link, lang)}
             className="font-mono text-sm font-semibold text-purple-400 underline decoration-purple-400/30 underline-offset-2 transition-colors hover:text-purple-300 hover:decoration-purple-300/50"
           >
             → {tNeuralSuggestion.linkText}
@@ -1080,7 +1073,7 @@ export function ArticlePage() {
             {relatedTerms.map((related) => (
               <Link
                 key={related.slug}
-                to={`/glossary/${related.slug}`}
+                to={langHref(`/glossary/${related.slug}`, lang)}
                 className="glass-card group flex items-center justify-between rounded-lg p-4 transition-all hover:border-terminal-green/10"
               >
                 <div>

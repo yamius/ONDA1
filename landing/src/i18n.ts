@@ -109,6 +109,27 @@ export function homePathFor(lang: Lang): string {
   return lang === 'en' ? '/' : `/${lang}`
 }
 
+/** Routes that have no per-language variant — never prefix these. */
+const NON_LOCALIZED_PREFIXES = ['/the-stack', '/topics']
+
+/**
+ * Prefix an internal path with the active language so navigation keeps the
+ * user in their chosen language. EN returns the path unchanged (bare root);
+ * already-prefixed paths and non-localized routes (/the-stack, /topics) are
+ * returned as-is. Idempotent — safe to apply more than once.
+ *
+ * Every internal <Link to> / markdown link rendered inside the app must run
+ * through this, otherwise a bare "/articles/x" silently drops a /ru/ user
+ * back to the English version of the site.
+ */
+export function langHref(path: string, lang: Lang): string {
+  if (lang === 'en' || !path.startsWith('/')) return path
+  const first = path.split('/').filter(Boolean)[0]
+  if (isLang(first)) return path
+  if (NON_LOCALIZED_PREFIXES.some((p) => path === p || path.startsWith(p + '/'))) return path
+  return `/${lang}${path}`
+}
+
 /**
  * Pages that exist in every language. Keys are EN base paths, values are i18n
  * namespaces. Add a new entry here + matching JSON files + meta override in

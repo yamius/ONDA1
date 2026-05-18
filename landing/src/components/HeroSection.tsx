@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
+import { langFromPath, langHref } from '../i18n'
 
 // ── Pixel reveal ──────────────────────────────────────────────────────────────
 const COLS      = 10
@@ -80,6 +81,7 @@ const PARALLAX_MOBILE  = 0.30  // 30% — parallax on touch
 export function HeroSection() {
   const imgRef = useRef<HTMLImageElement | null>(null)
   const { t } = useTranslation('home')
+  const lang = langFromPath(useLocation().pathname)
 
   useEffect(() => {
     // Ref-based direct DOM update — zero React re-renders, GPU-accelerated
@@ -168,7 +170,7 @@ export function HeroSection() {
             <span>{t('hero.ctaDownload')}</span>
           </a>
           <Link
-            to="/about"
+            to={langHref('/about', lang)}
             className="flex w-full items-center justify-center gap-2 rounded-lg border border-cyan-500/50 px-6 py-2 text-sm text-cyan-400 transition-all hover:bg-cyan-500/10 sm:w-auto"
           >
             <span>{t('hero.ctaLearn')}</span>
