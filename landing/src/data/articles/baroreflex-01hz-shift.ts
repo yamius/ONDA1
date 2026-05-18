@@ -103,7 +103,7 @@ Clinical data: consistent 0.1 Hz biofeedback training produces systolic reductio
 
 **Cardiovascular:** Blood pressure stabilizes. Vessel elasticity increases. Baroreflex sensitivity (BRS) rises — the metric that best predicts cardiac risk and recovery capacity.
 
-**Autonomic:** Sympathetic/Parasympathetic oscillation becomes coordinated instead of competitive. The system operates as a single regulated unit.
+**Autonomic:** Sympathetic/Parasympathetic oscillation becomes coordinated instead of competitive. The system operates as a single regulated unit. Sustained over weeks, this widened oscillation is what expands the [fault-tolerant HRV buffer](/articles/fault-tolerant-human-hrv-buffer) — the resilience headroom that absorbs stress without cascade failure.
 
 **Cognitive:** Working memory expands. Emotional reactivity decreases. The prefrontal override is online.
 

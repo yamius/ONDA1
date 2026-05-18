@@ -71,7 +71,7 @@ The target state is not "calm" in the conventional sense. It is **coherence**: t
 | **Emotional interception** | Pre-conscious | Post-reaction |
 | **Physical recovery** | Accelerated downtime | Extended downtime |
 
-A system running in permanent sympathetic overdrive does not "break down" suddenly. It degrades. Slowly, across weeks and months — processing speed drops, emotional reactivity rises, recovery windows extend. The ping was spiking the whole time.
+Engineering deliberate headroom into the system — a [fault-tolerant HRV buffer](/articles/fault-tolerant-human-hrv-buffer) — is what stops this slow degradation before it starts. A system running in permanent sympathetic overdrive does not "break down" suddenly. It degrades. Slowly, across weeks and months — processing speed drops, emotional reactivity rises, recovery windows extend. The ping was spiking the whole time.
 
 ---
 

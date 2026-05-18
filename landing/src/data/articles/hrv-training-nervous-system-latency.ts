@@ -56,7 +56,7 @@ Your heart rate is a constant negotiation between the Sympathetic (Gas pedal) an
 
 ## Section 2: HRV as a Recovery Indicator
 
-Think of HRV as your 'Battery Health' percentage. If you wake up with an HRV significantly below your baseline, your Central Nervous System (CNS) has not finished clearing the 'Cache' from yesterday's stress. Training hard or making big decisions in this state is like trying to run 4K video on a 1% charge—it leads to a 'System Crash' (Burnout).
+Think of HRV as your 'Battery Health' percentage. If you wake up with an HRV significantly below your baseline, your Central Nervous System (CNS) has not finished clearing the 'Cache' from yesterday's stress. Training hard or making big decisions in this state is like trying to run 4K video on a 1% charge—it leads to a 'System Crash' (Burnout). A consistently high HRV baseline is what builds the [fault-tolerant buffer](/articles/fault-tolerant-human-hrv-buffer) — the operational headroom that absorbs stress spikes before they cascade into a crash.
 
 ---
 
