@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useEyeScan, type EyeScanResult, SCAN_DURATION_MS } from '../hooks/useEyeScan';
 import { recommendedPractices } from '../utils/eyeScanMetrics';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
+import { useTheme } from '../theme/ThemeProvider';
 
 // Экран «Сканирование нервной системы». Оформление — в стиле EmotionalCheckModal.
 const METRICS: { key: 'calm' | 'focus' | 'fatigue'; labelKey: string }[] = [
@@ -22,6 +23,7 @@ export default function NervousSystemScan({
   onOndEarned?: (amount: number) => void;
 }) {
   const { t } = useTranslation();
+  const isLight = useTheme().resolved === 'light';
   const scan = useEyeScan();
   const status = scan.status;
   const [practiceId, setPracticeId] = useState<string | null>(null);
@@ -52,18 +54,18 @@ export default function NervousSystemScan({
       >
         <div className="bg-gradient-to-br from-bg to-surface rounded-3xl max-w-lg w-full shadow-2xl border border-border/10 overflow-hidden max-h-full flex flex-col my-auto">
           {/* Шапка */}
-          <div className="relative bg-gradient-to-r from-accent to-accent-2 p-4 flex-shrink-0">
+          <div className={`relative p-4 flex-shrink-0 ${isLight ? 'bg-gradient-to-r from-indigo-100 to-violet-100' : 'bg-gradient-to-r from-accent to-accent-2'}`}>
             <button
               onClick={close}
-              className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
+              className={`absolute top-4 right-4 transition-colors ${isLight ? 'text-slate-500 hover:text-slate-800' : 'text-white/80 hover:text-white'}`}
               aria-label={t('eye_scan.back')}
             >
               <X className="w-6 h-6" />
             </button>
-            <h2 className="text-2xl sm:text-3xl font-bold text-white text-center mb-0.5">
+            <h2 className={`text-2xl sm:text-3xl font-bold text-center mb-0.5 ${isLight ? 'text-slate-800' : 'text-white'}`}>
               {t('eye_scan.title')}
             </h2>
-            <p className="text-indigo-100 text-sm text-center">{t('eye_scan.subtitle')}</p>
+            <p className={`text-sm text-center ${isLight ? 'text-slate-500' : 'text-indigo-100'}`}>{t('eye_scan.subtitle')}</p>
           </div>
 
           {/* Тело */}
@@ -102,7 +104,7 @@ export default function NervousSystemScan({
                 </div>
                 <button
                   onClick={scan.start}
-                  className="w-full bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white font-semibold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-base"
+                  className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-base ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white'}`}
                 >
                   {t('eye_scan.start')}
                 </button>
@@ -143,7 +145,7 @@ export default function NervousSystemScan({
                 </div>
                 <button
                   onClick={scan.start}
-                  className="w-full bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white font-semibold py-3.5 px-6 rounded-xl transition-all text-base"
+                  className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all text-base ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white'}`}
                 >
                   {t('eye_scan.retry')}
                 </button>
