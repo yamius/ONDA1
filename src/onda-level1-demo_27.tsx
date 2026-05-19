@@ -4970,6 +4970,16 @@ const OndaLevel1 = () => {
   }
 
   const glow = CIRCUIT_GLOW_LIGHT[activeCircuit] ?? CIRCUIT_GLOW_DEFAULT;
+  // Палитра кнопки эмоциональной сверки — translucent-тинт контура.
+  const emoTint = activeCircuit === 2
+    ? 'bg-cyan-500/10 border border-cyan-400/40'
+    : activeCircuit === 3
+    ? 'bg-amber-600/10 border border-amber-500/40'
+    : activeCircuit === 4
+    ? 'bg-teal-500/10 border border-teal-400/40'
+    : activeCircuit === 9
+    ? 'bg-black/35 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+    : 'bg-indigo-500/10 border border-indigo-400/40';
 
   return (
     <div
@@ -5651,22 +5661,22 @@ const OndaLevel1 = () => {
         {/* Биометрика */}
         <div className="mb-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-            <div className={`${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-rose-200' : `${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-red-500/30'} backdrop-blur-sm`} rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
               <div className="text-xl sm:text-2xl font-bold">{displayHeartRate ?? '--'}</div>
               <div className="text-xs text-gray-400">{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
             </div>
-            <div className={`${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-sky-200' : `${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-blue-500/30'} backdrop-blur-sm`} rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
               <div className="text-xl sm:text-2xl font-bold">{vitalsData.br ? `${vitalsData.br.toFixed(1)}` : '--'}</div>
               <div className="text-xs text-gray-400">{t('settings.br_unit', '/min')}</div>
             </div>
-            <div className={`${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-orange-200' : `${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-orange-500/30'} backdrop-blur-sm`} rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Activity className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400 mb-2 mx-auto" />
               <div className="text-xl sm:text-2xl font-bold">{vitalsData.stress ?? '--'}%</div>
               <div className="text-xs text-gray-400">{t('settings.stress_label', 'Stress')}</div>
             </div>
-            <div className={`${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-amber-200' : `${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-amber-600/30'} backdrop-blur-sm`} rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Zap className="w-5 sm:w-6 h-5 sm:h-6 text-amber-400 mb-2 mx-auto" />
               <div className="text-xl sm:text-2xl font-bold">{vitalsData.energy ?? '--'}%</div>
               <div className="text-xs text-gray-400">{t('settings.energy_label', 'Energy')}</div>
