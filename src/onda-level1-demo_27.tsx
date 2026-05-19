@@ -4195,10 +4195,10 @@ const OndaLevel1 = () => {
                 className={`w-full max-w-md px-3 sm:px-0 ${isMinimalMode ? '' : 'mb-6 sm:mb-8'}`}
                 onClick={isMinimalMode ? () => setIsMinimalMode(false) : undefined}
               >
-                <div className={`bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-6 border shadow-xl flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
+                <div className={`bg-white/10 backdrop-blur-2xl rounded-2xl p-4 sm:p-6 border shadow-xl flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
                   isMinimalMode
-                    ? 'border-white/30 h-28 sm:h-32 cursor-pointer hover:bg-black/40 active:scale-95'
-                    : 'border-white/20 h-24 sm:h-28'
+                    ? 'border-white/30 h-28 sm:h-32 cursor-pointer hover:bg-white/20 active:scale-95'
+                    : 'border-white/25 h-24 sm:h-28'
                 }`}>
                   <p
                     className={`text-sm sm:text-base text-center italic leading-snug text-white/90 whitespace-pre-line transition-all duration-1000 ${
@@ -4212,12 +4212,12 @@ const OndaLevel1 = () => {
             )}
 
             {!isMinimalMode && (<div className="grid grid-cols-2 gap-3 sm:gap-6 mb-6 sm:mb-12 px-3 sm:px-0 w-full max-w-md">
-              <div className="bg-black/30 backdrop-blur-md rounded-2xl p-3 sm:p-6 text-center border border-red-400/30 shadow-xl">
+              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-3 sm:p-6 text-center border border-white/25 shadow-xl">
                 <Activity className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-red-400" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{safeToFixed(vitalsData.stress, 0)}%</div>
                 <div className="text-xs sm:text-sm text-gray-300">{t('labels.stress')}</div>
               </div>
-              <div className="bg-black/30 backdrop-blur-md rounded-2xl p-3 sm:p-6 text-center border border-blue-400/30 shadow-xl">
+              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-3 sm:p-6 text-center border border-white/25 shadow-xl">
                 <Zap className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-blue-400" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{safeToFixed(vitalsData.energy, 0)}%</div>
                 <div className="text-xs sm:text-sm text-gray-300">{t('labels.energy')}</div>
@@ -4228,19 +4228,19 @@ const OndaLevel1 = () => {
             <div className="flex gap-3 sm:gap-6">
               <button
                 onClick={() => setIsPaused(!isPaused)}
-                className="bg-white/30 hover:bg-white/40 backdrop-blur-md p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border border-white/30"
+                className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border border-white/25"
               >
                 {isPaused ? <Play className="w-6 h-6 sm:w-8 sm:h-8" /> : <Pause className="w-6 h-6 sm:w-8 sm:h-8" />}
               </button>
               <button
                 onClick={finishPractice}
-                className="bg-emerald-500/40 hover:bg-emerald-500/60 backdrop-blur-md px-6 py-3 sm:px-10 sm:py-5 rounded-full font-bold text-sm sm:text-lg transition-all hover:scale-105 shadow-xl border border-emerald-400/50"
+                className="bg-emerald-500/25 hover:bg-emerald-500/40 backdrop-blur-2xl px-6 py-3 sm:px-10 sm:py-5 rounded-full font-bold text-sm sm:text-lg transition-all hover:scale-105 shadow-xl border border-emerald-400/50"
               >
                 {t('practices.end_practice')}
               </button>
               <button
                 onClick={() => setIsMinimalMode(!isMinimalMode)}
-                className="bg-white/30 hover:bg-white/40 backdrop-blur-md p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border border-white/30"
+                className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border border-white/25"
               >
                 <Minimize2 className="w-6 h-6 sm:w-8 sm:h-8" />
               </button>
