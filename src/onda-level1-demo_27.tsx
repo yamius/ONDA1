@@ -5116,17 +5116,7 @@ const OndaLevel1 = () => {
        !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && (
         <button
           onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
-          className={`menu-container fixed top-12 z-[100] transition-all px-3 py-3 rounded-xl backdrop-blur-md border ${isLight ? 'text-slate-700' : 'text-white'} ${
-            activeCircuit === 2
-              ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-              : activeCircuit === 3
-              ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-              : activeCircuit === 4
-              ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-              : activeCircuit === 9
-              ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-              : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-          }`}
+          className={`menu-container fixed top-12 z-[100] transition-all px-3 py-3 rounded-xl backdrop-blur-md ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
           style={{
             boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)',
             left: 'max(28px, calc(50% - 256px + 16px))'
@@ -6280,17 +6270,7 @@ const OndaLevel1 = () => {
                       markFreePracticeTapped(practice.id);
                       completePractice(practice.id, practice.maxQnt);
                     }}
-                    className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all border backdrop-blur-sm ${
-                      activeCircuit === 2
-                        ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                        : activeCircuit === 3
-                        ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                        : activeCircuit === 4
-                        ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                        : activeCircuit === 9
-                        ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                        : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-                    }`}
+                    className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all backdrop-blur-sm ${emoTint}`}
                   >
                     {isCompleted ? t('practices.improve') : t('practices.start')}
                     {FREE_PRACTICE_IDS.has(practice.id) && !tappedFreePractices.has(practice.id) && (
