@@ -7189,7 +7189,7 @@ const OndaLevel1 = () => {
                         key={idx}
                         className={`flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all ${
                           isCurrentPlayer
-                            ? 'bg-cyan-500/10 border-cyan-500/50 shadow-lg shadow-cyan-500/20'
+                            ? 'bg-indigo-500/15 border-indigo-400/50 shadow-lg shadow-indigo-500/20'
                             : isLight ? 'bg-white/70 border-slate-200 hover:border-slate-300' : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
                         }`}
                       >
@@ -7219,7 +7219,7 @@ const OndaLevel1 = () => {
                         key={idx}
                         className={`flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all ${
                           isCurrentPlayer
-                            ? 'bg-cyan-500/10 border-cyan-500/50 shadow-lg shadow-cyan-500/20'
+                            ? 'bg-indigo-500/15 border-indigo-400/50 shadow-lg shadow-indigo-500/20'
                             : isLight ? 'bg-white/70 border-slate-200 hover:border-slate-300' : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
                         }`}
                       >
@@ -7252,7 +7252,7 @@ const OndaLevel1 = () => {
                         key={idx}
                         className={`flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all ${
                           isCurrentPlayer
-                            ? 'bg-cyan-500/10 border-cyan-500/50 shadow-lg shadow-cyan-500/20'
+                            ? 'bg-indigo-500/15 border-indigo-400/50 shadow-lg shadow-indigo-500/20'
                             : isLight ? 'bg-white/70 border-slate-200 hover:border-slate-300' : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
                         }`}
                       >
