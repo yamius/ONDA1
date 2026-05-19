@@ -3328,7 +3328,7 @@ const OndaLevel1 = () => {
     // Светлый экран завершения только в светлой теме; в тёмной — космический.
     const completeLight = practiceState === 'complete' && isLight;
     return (
-      <div className={`fixed inset-0 overflow-hidden transition-colors duration-1000 ${isLight ? 'bg-gradient-to-br from-indigo-50 via-white to-violet-100 text-slate-800' : `bg-gradient-to-br ${activePractice.colors} text-white`}`}>
+      <div className={`fixed inset-0 overflow-hidden transition-colors duration-1000 ${isLight ? 'bg-gradient-to-br from-indigo-50 via-white to-violet-100 text-slate-700' : `bg-gradient-to-br ${activePractice.colors} text-white`}`}>
         {/* Debug Monitor - also during practice */}
         <DebugMonitor
           buildNumber={import.meta.env.VITE_BUILD_NUMBER}
@@ -4028,7 +4028,7 @@ const OndaLevel1 = () => {
               <div className="text-5xl sm:text-9xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '2s' }}>
                 {activePractice.visual}
               </div>
-              <h1 className="text-xl sm:text-6xl font-bold mb-2 sm:mb-4 drop-shadow-2xl leading-tight px-2">
+              <h1 className={`text-xl sm:text-6xl font-bold mb-2 sm:mb-4 leading-tight px-2 ${isLight ? '' : 'drop-shadow-2xl'}`}>
                 {getPracticeName(activePractice.id)}
               </h1>
               <div className={`rounded-2xl p-4 sm:p-8 mb-3 sm:mb-6 border shadow-2xl ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
@@ -4092,7 +4092,7 @@ const OndaLevel1 = () => {
                   setPaywallSource('practice_gate_basic');
                   setShowSubscriptionModal(true);
                 }}
-                className={`backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl border ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border-white/25'}`}
+                className={`backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 border ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-700 shadow-sm shadow-indigo-200/40' : 'bg-white/10 hover:bg-white/20 border-white/25 shadow-2xl'}`}
               >
                 {t('practices.start')}
               </button>
