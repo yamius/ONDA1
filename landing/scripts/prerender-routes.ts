@@ -60,6 +60,8 @@ export const RU_PILOT_ARTICLE_SLUGS: readonly string[] = [
   'gut-brain-axis-data-link',
   // +1 high-volume Russian search topic (циркадные ритмы / биохакинг сна).
   'circadian-reset-mastering-light',
+  // Molecular Psychology pillar — RU translation reviewed, ships with the pilot.
+  'molecular-psychology-hormonal-firmware',
 ] as const
 
 /**
@@ -155,6 +157,8 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'system-stability-serotonin', publishOn: '2026-07-13' },
   { slug: 'vascular-tensegrity-microvascular-mechanics', publishOn: '2026-07-13' },
   { slug: 'ventral-tegmental-core-motivational-salience', publishOn: '2026-07-13' },
+  // Molecular Psychology pillar — joins the final ES batch.
+  { slug: 'molecular-psychology-hormonal-firmware', publishOn: '2026-07-13' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
