@@ -833,7 +833,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     className={`py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
                       connected
                         ? 'bg-green-500/15 text-green-400'
-                        : 'bg-blue-500/15 hover:bg-blue-500/25 text-blue-400'
+                        : 'bg-indigo-500/15 hover:bg-indigo-500/25 text-indigo-400 border border-indigo-400/40'
                     } ${connected ? 'cursor-default' : ''}`}
                     data-testid="button-connect-tracker"
                   >
