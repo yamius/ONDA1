@@ -3670,5 +3670,11 @@
     "instructions_tracker": "On tracker: Settings → Share heart rate → Enable",
     "connect_button": "Connect",
     "platform_label": "Platform"
+  },
+  "theme": {
+    "title": "Appearance",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
   }
 }

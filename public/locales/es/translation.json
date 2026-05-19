@@ -3670,5 +3670,11 @@
       "mind_reading": "Lectura mental",
       "all_or_nothing": "Pensamiento todo o nada"
     }
+  },
+  "theme": {
+    "title": "Apariencia",
+    "system": "Sistema",
+    "light": "Clara",
+    "dark": "Oscura"
   }
 }

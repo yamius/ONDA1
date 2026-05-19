@@ -3670,5 +3670,11 @@
       "mind_reading": "读心术",
       "all_or_nothing": "非黑即白思维"
     }
+  },
+  "theme": {
+    "title": "外观",
+    "system": "跟随系统",
+    "light": "浅色",
+    "dark": "深色"
   }
 }
