@@ -5040,7 +5040,7 @@ const OndaLevel1 = () => {
     : activeCircuit === 10 ? 'text-orange-700'
     : activeCircuit === 11 ? 'text-cyan-700'
     : activeCircuit === 12 ? 'text-fuchsia-700'
-    : 'text-violet-700';
+    : 'text-indigo-800';
 
   return (
     <div
