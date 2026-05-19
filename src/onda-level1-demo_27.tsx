@@ -373,7 +373,6 @@ const OndaLevel1 = () => {
     avg_rating: number;
     total_sessions: number;
   }>>([]);
-  const [isLightTheme, setIsLightTheme] = useState(false);
   const [user, setUser] = useState<any>(null);
   const [userProfile, setUserProfile] = useState<UserProfileType | null>(null);
   const [gameProgress, setGameProgress] = useState<UserGameProgress | null>(null);
@@ -784,8 +783,7 @@ const OndaLevel1 = () => {
               sleep_tracking: { day: 0, lastCheck: null },
               selected_language: 'EN',
               selected_level: 1,
-              selected_chapter: 1,
-              is_light_theme: false
+              selected_chapter: 1
             })
             .select()
             .single();
@@ -863,7 +861,6 @@ const OndaLevel1 = () => {
           }
           setSelectedLevel(progress.selected_level || 1);
           setSelectedChapter(progress.selected_chapter || 1);
-          setIsLightTheme(progress.is_light_theme || false);
         } else {
           console.warn('[ONDA Debug] No progress data loaded for user:', user.id);
         }
@@ -1007,7 +1004,6 @@ const OndaLevel1 = () => {
           selected_language: selectedLanguage,
           selected_level: selectedLevel,
           selected_chapter: selectedChapter,
-          is_light_theme: isLightTheme,
           updated_at: new Date().toISOString()
         }).eq('user_id', user.id);
         
@@ -1034,8 +1030,7 @@ const OndaLevel1 = () => {
     sleepTracking,
     selectedLanguage,
     selectedLevel,
-    selectedChapter,
-    isLightTheme
+    selectedChapter
   ]);
 
   useEffect(() => {
@@ -5131,9 +5126,7 @@ const OndaLevel1 = () => {
               <button
                 onClick={() => setShowProfileModal(true)}
                 className={`flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
-                  isLightTheme
-                    ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
-                    : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
+                  'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
                 }`}
               >
                 <User className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
@@ -5143,9 +5136,7 @@ const OndaLevel1 = () => {
               <button
                 onClick={() => setShowAuthModal(true)}
                 className={`text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
-                  isLightTheme
-                    ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
-                    : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
+                  'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
                 }`}
               >
                 {t('nav.login')}
@@ -5156,9 +5147,7 @@ const OndaLevel1 = () => {
             <button
               onClick={() => setShowQntShop(true)}
               className={`text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
-                isLightTheme
-                  ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
-                  : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
+                'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
               }`}
               title="Click to open OND Shop"
             >
@@ -5167,9 +5156,7 @@ const OndaLevel1 = () => {
             <button
               onClick={() => setShowRatingModal(true)}
               className={`text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
-                isLightTheme
-                  ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
-                  : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
+                'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
               }`}
             >
               {t('nav.rating')}
@@ -7315,7 +7302,6 @@ const OndaLevel1 = () => {
       {showAuthModal && (
         <AuthModal
           onClose={() => setShowAuthModal(false)}
-          isLightTheme={isLightTheme}
         />
       )}
 
@@ -7324,7 +7310,6 @@ const OndaLevel1 = () => {
           user={user}
           profile={userProfile}
           onClose={() => setShowProfileModal(false)}
-          isLightTheme={isLightTheme}
           onProfileUpdate={(updatedProfile) => {
             setUserProfile(updatedProfile);
           }}
@@ -7334,7 +7319,6 @@ const OndaLevel1 = () => {
       {showSettingsModal && (
         <SettingsModal
           onClose={() => setShowSettingsModal(false)}
-          isLightTheme={isLightTheme}
         />
       )}
 
@@ -7359,7 +7343,6 @@ const OndaLevel1 = () => {
       {showConnectionModal && (
         <ConnectionModal
           onClose={() => setShowConnectionModal(false)}
-          isLightTheme={isLightTheme}
           vitalsData={vitalsData}
           healthConnectData={healthConnectData}
           healthKitHeartRateData={healthKitHeartRate}
@@ -7376,7 +7359,6 @@ const OndaLevel1 = () => {
         isOpen={showQntShop}
         onClose={() => setShowQntShop(false)}
         currentOnd={qnt}
-        isLightTheme={isLightTheme}
       />
 
       <EmotionalCheckModal
