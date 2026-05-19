@@ -5008,7 +5008,7 @@ const OndaLevel1 = () => {
     : activeCircuit === 8
     ? 'bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-400/40'
     : activeCircuit === 9
-    ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+    ? 'bg-yellow-300/20 hover:bg-yellow-300/30 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
     : activeCircuit === 10
     ? 'bg-orange-500/10 hover:bg-orange-500/20 border border-orange-400/40'
     : activeCircuit === 11
