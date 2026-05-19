@@ -62,10 +62,10 @@ export default function LanguageModal({ isOpen, onClose }: LanguageModalProps) {
               className={`w-full text-left px-4 py-3 rounded-xl transition-all border ${
                 i18n.language === lang.code
                   ? isLight
-                    ? 'bg-indigo-500/15 border-indigo-400/40 text-slate-800'
+                    ? 'bg-indigo-500/25 border-indigo-400/60 text-slate-800'
                     : 'bg-purple-600/40 border-purple-400/50 text-white'
                   : isLight
-                    ? 'bg-white/60 border-slate-200 text-slate-600 hover:bg-white/80'
+                    ? 'bg-indigo-500/15 border-indigo-400/40 text-slate-800 hover:bg-indigo-500/25'
                     : 'bg-white/5 border-white/10 text-gray-300 hover:bg-white/10'
               }`}
               data-testid={`button-language-${lang.code}`}
