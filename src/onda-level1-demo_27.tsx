@@ -4012,7 +4012,7 @@ const OndaLevel1 = () => {
             onClick={exitPractice}
             disabled={!canExitPractice}
             style={!canExitPractice ? { pointerEvents: 'none', opacity: 0.5 } : undefined}
-            className="absolute top-[72px] right-6 z-50 bg-black/40 hover:bg-black/60 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110"
+            className={`absolute top-[72px] right-6 z-50 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110 ${practiceState === 'complete' ? 'bg-white/60 hover:bg-white/80 border border-violet-200 text-slate-600' : 'bg-black/40 hover:bg-black/60'}`}
           >
             <X className="w-6 h-6" />
           </button>
@@ -4346,7 +4346,7 @@ const OndaLevel1 = () => {
                 </button>
                 <button
                   onClick={exitPractice}
-                  className="bg-indigo-500/15 hover:bg-indigo-500/25 backdrop-blur-xl px-8 sm:px-10 py-3 sm:py-4 rounded-full text-lg sm:text-xl font-bold transition-all border border-indigo-400/40 text-slate-800"
+                  className="bg-indigo-500/15 hover:bg-indigo-500/25 backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border border-indigo-400/40 text-slate-800"
                 >
                   {t('practices.back_to_practices')}
                 </button>
