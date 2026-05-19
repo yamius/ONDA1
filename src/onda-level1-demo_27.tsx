@@ -4086,7 +4086,7 @@ const OndaLevel1 = () => {
                   setPaywallSource('practice_gate_basic');
                   setShowSubscriptionModal(true);
                 }}
-                className="bg-white/30 hover:bg-white/40 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl border border-white/30"
+                className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl border border-white/25"
               >
                 {t('practices.start')}
               </button>
