@@ -5,8 +5,6 @@ import { useTranslation } from 'react-i18next';
 interface LegalModalProps {
   type: 'terms' | 'privacy';
   onClose: () => void;
-  /** Устаревший проп — тема теперь через ThemeProvider. Не используется. */
-  isLightTheme?: boolean;
 }
 
 export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {

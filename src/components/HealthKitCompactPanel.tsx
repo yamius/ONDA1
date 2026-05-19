@@ -3,8 +3,6 @@ import { useTranslation } from "react-i18next";
 import type { HealthKitDataResult } from "../plugins/healthKitHeartRate";
 
 interface HealthKitCompactPanelProps {
-  /** Устаревший проп — тема теперь через ThemeProvider. Не используется. */
-  isLightTheme?: boolean;
   data: HealthKitDataResult | null;
 }
 

@@ -3,8 +3,6 @@ import { useTranslation } from "react-i18next";
 import type { HcUpdatePayload } from "../bridge/healthConnectBridge";
 
 interface HealthConnectCompactPanelProps {
-  /** Устаревший проп — тема теперь через ThemeProvider. Не используется. */
-  isLightTheme?: boolean;
   data: HcUpdatePayload | null;
 }
 

@@ -33,8 +33,6 @@ interface HealthKitDataFull {
 
 interface ConnectionModalProps {
   onClose: () => void;
-  /** Устаревший проп — тема теперь через ThemeProvider. Не используется. */
-  isLightTheme?: boolean;
   vitalsData: {
     connected: boolean;
     connect: () => void;

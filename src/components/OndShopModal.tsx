@@ -5,8 +5,6 @@ interface OndShopModalProps {
   isOpen: boolean;
   onClose: () => void;
   currentOnd: number;
-  /** Устаревший проп — тема теперь через ThemeProvider. Не используется. */
-  isLightTheme?: boolean;
 }
 
 const OND_PRICE = 0.33;

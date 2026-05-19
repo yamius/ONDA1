@@ -5,8 +5,6 @@ import { METRIC_DETAILS, type MetricDetail } from '../data/bioMetrics';
 interface MetricInfoModalProps {
   metricKey: string | null;
   onClose: () => void;
-  /** Устаревший проп — тема теперь через ThemeProvider. Не используется. */
-  isLightTheme?: boolean;
 }
 
 /**

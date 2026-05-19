@@ -9,8 +9,6 @@ import { LegalModal } from './LegalModal';
 
 interface AuthModalProps {
   onClose: () => void;
-  /** Устаревший проп — тема теперь через ThemeProvider. Не используется. */
-  isLightTheme?: boolean;
 }
 
 export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {

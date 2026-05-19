@@ -18,10 +18,6 @@ import { getMarketingOptIn, setMarketingOptIn } from '../services/pushNotificati
 
 interface SettingsModalProps {
   onClose: () => void;
-  /** Устаревший проп — тема теперь через ThemeProvider. Принимается ради
-   *  обратной совместимости с вызовом из onda-level1-demo_27 (уберём в фазе
-   *  миграции главного экрана). Не используется. */
-  isLightTheme?: boolean;
 }
 
 export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {

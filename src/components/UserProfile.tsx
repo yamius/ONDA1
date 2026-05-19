@@ -8,8 +8,6 @@ interface UserProfileProps {
   user: any;
   profile: UserProfileType | null;
   onClose: () => void;
-  /** Устаревший проп — тема теперь через ThemeProvider. Не используется. */
-  isLightTheme?: boolean;
   // Bubbles the updated profile up so the parent can refresh its cached
   // userProfile state (used by leaderboard / greeting).
   onProfileUpdate?: (profile: UserProfileType) => void;
