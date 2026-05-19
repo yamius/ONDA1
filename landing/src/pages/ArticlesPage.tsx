@@ -44,7 +44,11 @@ export function ArticlesPage() {
   const lang = langFromPath(location.pathname)
   const langPrefix = lang === 'en' ? '' : `/${lang}`
   const [mdArticles, setMdArticles] = useState<MdArticle[]>([])
-  const [search, setSearch] = useState('')
+  // Seed the filter from ?q= so the SearchAction target (/articles?q=...) and
+  // any shared search URLs land on a pre-filtered list.
+  const [search, setSearch] = useState(
+    () => new URLSearchParams(location.search).get('q') ?? '',
+  )
   // activeCategory remains as harmless state for now (read by matchesCategory
   // below) — kept null. Category chips were replaced by topic-hub links.
   const [activeCategory] = useState<string | null>(null)

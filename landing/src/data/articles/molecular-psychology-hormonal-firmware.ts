@@ -163,17 +163,6 @@ You do not patch molecular firmware from the application layer — talking to yo
 
 ---
 
-## 7. Common Questions
-
-**What is molecular psychology?**
-Molecular Psychology is the framework that treats every psychological state — mood, confidence, anxiety, calm — as the runtime output of measurable molecules: hormones and neurotransmitters binding to receptors. Instead of analyzing feelings as abstract narrative, it identifies the chemical signal underneath and the physical inputs that produced it.
-
-**Can you actually change your emotional baseline?**
-Yes — but not by intention alone. Baselines are defended by set points and receptor density, so they resist single interventions. They respond to *repeated physical input*: consistent light timing, movement, sleep, and social contact shift the molecular profile over weeks. Consistency rewrites the firmware; intensity does not.
-
-**Why doesn't positive thinking change how I feel?**
-Because thought sits on the application layer, and emotion is set by the firmware layer below it. When hormones and neurotransmitters have already biased the system toward threat, conscious reframing cannot override the chemistry — it can only narrate it. Durable change works bottom-up: fix the molecular inputs first, and the thoughts follow.
-
 > ONDA_STATEMENT: «You are not your moods. You are the operator with access to the panel that produces them. Molecular Psychology is simply the decision to read the code before you blame the self.»
 `,
   howToSteps: [

@@ -10,6 +10,7 @@ import { glossaryTerms } from '../data/glossary'
 import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
+import { ARTICLE_FAQ } from '../data/article-faq'
 import { langFromPath, langHref } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
@@ -1050,6 +1051,29 @@ export function ArticlePage() {
 
       {/* Reactions & Comments */}
       <ArticleReactions articleSlug={article.slug} />
+
+      {lang === 'en' && ARTICLE_FAQ[article.slug] && ARTICLE_FAQ[article.slug].length > 0 && (
+        <div className="mt-16 border-t border-white/5 pt-10">
+          <h2 className="mb-6 font-mono text-xs tracking-widest text-white/30">
+            COMMON QUESTIONS
+          </h2>
+          <div className="grid gap-4">
+            {ARTICLE_FAQ[article.slug].map((faq) => (
+              <details
+                key={faq.question}
+                className="group rounded-xl border border-white/10 bg-white/[0.02] p-5 transition-colors hover:border-cyan-500/30"
+              >
+                <summary className="cursor-pointer font-mono text-sm font-semibold text-white/90 marker:text-cyan-400">
+                  {faq.question}
+                </summary>
+                <p className="mt-3 text-sm leading-relaxed text-white/70">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
+          </div>
+        </div>
+      )}
 
       {tNeuralSuggestion && (
         <div className="mt-12 rounded-xl border border-purple-500/30 bg-purple-500/5 p-6">
