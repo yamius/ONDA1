@@ -4573,10 +4573,17 @@ const OndaLevel1 = () => {
           >
             <button
               onClick={handleOnboardingNext}
-              className={`w-full py-4 rounded-xl text-lg font-semibold transition-all border bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              className={`grid mx-auto px-8 py-4 rounded-xl text-lg font-semibold transition-all border bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               data-testid="button-onboarding-next"
             >
-              {onboardingScreen === 3 ? t('onboarding.start_journey') : t('onboarding.continue')}
+              {/* Невидимый дублёр самой длинной надписи задаёт фикс. ширину —
+                  кнопка не «прыгает» по ширине между экранами онбординга. */}
+              <span className="col-start-1 row-start-1 text-center">
+                {onboardingScreen === 3 ? t('onboarding.start_journey') : t('onboarding.continue')}
+              </span>
+              <span className="col-start-1 row-start-1 invisible h-0 overflow-hidden" aria-hidden="true">
+                {t('onboarding.start_journey')}
+              </span>
             </button>
           </div>
         </div>
