@@ -150,7 +150,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
                   onClick={() => handleDailyToggle(!dailyEnabled)}
                   className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full transition-colors ${
                     dailyEnabled
-                      ? 'bg-gradient-to-r from-purple-500 to-pink-500'
+                      ? 'bg-indigo-500'
                       : 'bg-border/20'
                   }`}
                   data-testid="toggle-daily-reminder"
@@ -180,7 +180,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
                   onClick={() => handleStreakToggle(!streakEnabled)}
                   className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full transition-colors ${
                     streakEnabled
-                      ? 'bg-gradient-to-r from-purple-500 to-pink-500'
+                      ? 'bg-indigo-500'
                       : 'bg-border/20'
                   }`}
                   data-testid="toggle-streak-reminder"
@@ -210,7 +210,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
                   onClick={() => handleMarketingToggle(!marketingEnabled)}
                   className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full transition-colors ${
                     marketingEnabled
-                      ? 'bg-gradient-to-r from-purple-500 to-pink-500'
+                      ? 'bg-indigo-500'
                       : 'bg-border/20'
                   }`}
                   data-testid="toggle-promotional-reminder"
@@ -243,7 +243,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
                 const body = encodeURIComponent(t('settings.contact_body_hint', 'Hi ONDA team,') + diag);
                 window.location.href = `mailto:hello@onda-life.com?subject=${subject}&body=${body}`;
               }}
-              className="w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-surface-2 hover:opacity-80 text-text-secondary"
+              className="w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-indigo-500/15 hover:bg-indigo-500/25 text-text-secondary border border-indigo-400/40"
               data-testid="button-contact-developers"
             >
               <Mail className="w-4 h-4" />
@@ -256,7 +256,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
             <div className="pt-4 border-t border-border/10">
               <button
                 onClick={() => setShowDiagnostics(true)}
-                className="w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-surface-2 hover:opacity-80 text-text-secondary"
+                className="w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-indigo-500/15 hover:bg-indigo-500/25 text-text-secondary border border-indigo-400/40"
                 data-testid="button-open-diagnostics"
               >
                 <Activity className="w-4 h-4" />
