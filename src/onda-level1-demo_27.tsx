@@ -7052,17 +7052,17 @@ const OndaLevel1 = () => {
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4">{t('stats.rewards_section')}</h3>
                 <div className="grid md:grid-cols-3 gap-4">
-                  <div className="bg-gradient-to-br from-yellow-900/20 to-orange-900/20 rounded-lg p-4 border border-amber-600/30">
+                  <div className={`rounded-lg p-4 border ${isLight ? 'bg-indigo-500/15 border-indigo-400/40' : 'bg-gradient-to-br from-yellow-900/20 to-orange-900/20 border-amber-600/30'}`}>
                     <div className="text-3xl mb-2">💰</div>
                     <p className="text-sm text-gray-400 mb-1">{t('stats.bonus_qnt')}</p>
                     <p className="text-2xl font-bold text-amber-400">+{unlockedAchievements.length * 50} OND</p>
                   </div>
-                  <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg p-4 border border-purple-500/30">
+                  <div className={`rounded-lg p-4 border ${isLight ? 'bg-indigo-500/15 border-indigo-400/40' : 'bg-gradient-to-br from-purple-900/20 to-pink-900/20 border-purple-500/30'}`}>
                     <div className="text-3xl mb-2">⭐</div>
                     <p className="text-sm text-gray-400 mb-1">{t('stats.special_artifacts')}</p>
                     <p className="text-2xl font-bold text-purple-400">{artifacts.length}/{circuits.length}</p>
                   </div>
-                  <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 rounded-lg p-4 border border-blue-500/30">
+                  <div className={`rounded-lg p-4 border ${isLight ? 'bg-indigo-500/15 border-indigo-400/40' : 'bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border-blue-500/30'}`}>
                     <div className="text-3xl mb-2">🎯</div>
                     <p className="text-sm text-gray-400 mb-1">{t('stats.achievements_progress')}</p>
                     <p className="text-2xl font-bold text-cyan-400">{Math.round((unlockedAchievements.length / achievements.length) * 100)}%</p>
@@ -7089,7 +7089,7 @@ const OndaLevel1 = () => {
                       { name: t('stats.rank_master'), min: 100, icon: '💎' },
                       { name: t('stats.rank_guru'), min: 200, icon: '🌟' }
                     ].map((rank, idx) => (
-                      <div key={idx} className={`text-center p-3 rounded border transition-all ${practiceHistory.length >= rank.min ? 'bg-purple-500/20 border-purple-400/50' : 'bg-black/20 border-gray-600/20 opacity-40'}`}>
+                      <div key={idx} className={`text-center p-3 rounded border transition-all ${practiceHistory.length >= rank.min ? 'bg-indigo-500/15 border-indigo-400/40' : isLight ? 'bg-slate-100 border-slate-200 opacity-50' : 'bg-black/20 border-gray-600/20 opacity-40'}`}>
                         <div className="text-2xl mb-1">{rank.icon}</div>
                         <div className="text-xs">{rank.name}</div>
                       </div>
