@@ -97,8 +97,8 @@ export default function NervousSystemScan({
             {status === 'idle' && (
               <div className="text-center space-y-4">
                 <div className={`rounded-2xl p-6 border ${isLight ? 'bg-white/60 border-violet-200' : 'bg-gradient-to-br from-accent/20 to-accent-2/20 border-accent/30'}`}>
-                  <div className="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-accent to-accent-2 rounded-full flex items-center justify-center">
-                    <Eye className="w-10 h-10 text-white" />
+                  <div className={`w-20 h-20 mx-auto mb-3 rounded-full flex items-center justify-center ${isLight ? 'bg-gradient-to-br from-indigo-200 to-violet-200' : 'bg-gradient-to-br from-accent to-accent-2'}`}>
+                    <Eye className={`w-10 h-10 ${isLight ? 'text-indigo-600' : 'text-white'}`} />
                   </div>
                   <p className="text-text-primary/80 text-base">{t('eye_scan.intro', { sec: SCAN_SEC })}</p>
                 </div>
