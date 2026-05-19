@@ -6392,7 +6392,9 @@ const OndaLevel1 = () => {
 
         <div className="mt-8 p-4 sm:p-8">
           <h3 className={`text-2xl font-bold mb-6 transition-colors duration-1000 text-center ${
-            activeCircuit === 2
+            isLight
+              ? partTextStrong
+              : activeCircuit === 2
               ? 'text-cyan-300'
               : activeCircuit === 3
               ? 'text-gray-300'
@@ -6417,7 +6419,9 @@ const OndaLevel1 = () => {
               "{t(`terra_speaks.level_${activeCircuit}.quote_3`)}"
             </p>
             <p className={`text-lg leading-relaxed italic font-semibold text-center transition-colors duration-1000 ${
-              activeCircuit === 2
+              isLight
+                ? partTextMid
+                : activeCircuit === 2
                 ? 'text-cyan-200'
                 : activeCircuit === 3
                 ? 'text-gray-200'
@@ -6437,7 +6441,9 @@ const OndaLevel1 = () => {
         {/* Заголовок секции артефактов */}
         <div className="mt-12 mb-6">
           <h2 className={`text-3xl font-bold text-center transition-colors duration-1000 ${
-            activeCircuit === 2
+            isLight
+              ? partTextStrong
+              : activeCircuit === 2
               ? 'text-cyan-300'
               : activeCircuit === 3
               ? 'text-gray-300'
@@ -6793,7 +6799,9 @@ const OndaLevel1 = () => {
 
         <div className="mt-8 p-4 sm:p-8">
           <h3 className={`text-2xl font-bold mb-6 transition-colors duration-1000 text-center ${
-            activeCircuit === 2
+            isLight
+              ? partTextStrong
+              : activeCircuit === 2
               ? 'text-cyan-300'
               : activeCircuit === 3
               ? 'text-gray-300'
@@ -6822,13 +6830,15 @@ const OndaLevel1 = () => {
                 <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
                   {t('terra_final.level_2.line_4')}
                 </p>
-                <p className={`text-sm sm:text-lg leading-relaxed text-center italic font-semibold transition-colors duration-1000 text-cyan-200`}>
+                <p className={`text-sm sm:text-lg leading-relaxed text-center italic font-semibold transition-colors duration-1000 ${isLight ? partTextMid : 'text-cyan-200'}`}>
                   {t('terra_final.level_2.line_5')}
                 </p>
               </>
             ) : (activeCircuit === 1 || activeCircuit === 3) ? (
               <p className={`text-sm sm:text-lg leading-relaxed text-center italic font-semibold transition-colors duration-1000 ${
-                activeCircuit === 3
+                isLight
+                  ? partTextMid
+                  : activeCircuit === 3
                   ? 'text-gray-200'
                   : 'text-amber-200'
               }`}>
