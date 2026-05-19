@@ -301,104 +301,17 @@ export function ArticlePage() {
     setMeta('twitter:image', articleImage, true)
     syncOgLocale(lang)
 
-    // --- JSON-LD structured data (Article + BreadcrumbList + optional HowTo) ---
-    const setLd = (id: string, payload: object) => {
-      let el = document.querySelector<HTMLScriptElement>(`script[data-ld="${id}"]`)
-      if (!el) {
-        el = document.createElement('script')
-        el.setAttribute('type', 'application/ld+json')
-        el.setAttribute('data-ld', id)
-        document.head.appendChild(el)
-      }
-      el.textContent = JSON.stringify(payload)
-    }
-    const removeLd = (id: string) =>
-      document.querySelector(`script[data-ld="${id}"]`)?.remove()
-
+    // JSON-LD (TechArticle, BreadcrumbList, HowTo) is emitted server-side
+    // into every prerendered page by scripts/meta-inject.ts — the single
+    // source of truth, with the canonical Person author + speakable graph.
+    // We deliberately do NOT re-inject schema here: each article URL is
+    // crawled as its own prerendered HTML, so a client-side copy would
+    // only add a conflicting, lower-fidelity second node.
     const dateInfo = ARTICLE_DATES[article.slug]
-    const articleLd = {
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: tTitle,
-      description: tDescription,
-      image: articleImage,
-      url,
-      mainEntityOfPage: url,
-      inLanguage: lang,
-      articleSection: article.category,
-      ...(dateInfo
-        ? {
-            datePublished: dateInfo.published,
-            dateModified: dateInfo.modified,
-          }
-        : {}),
-      author: {
-        '@type': 'Organization',
-        name: 'ONDA Life',
-        url: SITE_URL,
-      },
-      publisher: {
-        '@type': 'Organization',
-        name: 'ONDA Life',
-        url: SITE_URL,
-        logo: {
-          '@type': 'ImageObject',
-          url: `${SITE_URL}/onda-life-logo.png`,
-        },
-      },
-    }
-    setLd('article', articleLd)
     setMeta('author', 'ONDA Life')
     if (dateInfo) {
       setMeta('article:published_time', dateInfo.published, true)
       setMeta('article:modified_time', dateInfo.modified, true)
-    }
-
-    const breadcrumbLd = {
-      '@context': 'https://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: tArticles('breadcrumb.home', { defaultValue: 'Home' }),
-          item: lang === 'en' ? `${SITE_URL}/` : `${SITE_URL}/${lang}`,
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: tArticles('breadcrumb.current', { defaultValue: 'Articles' }),
-          item: `${SITE_URL}${langPrefix}/articles`,
-        },
-        {
-          '@type': 'ListItem',
-          position: 3,
-          name: tTitle,
-          item: url,
-        },
-      ],
-    }
-    setLd('breadcrumb', breadcrumbLd)
-
-    if (tHowToSteps && tHowToSteps.length > 0) {
-      const howToLd = {
-        '@context': 'https://schema.org',
-        '@type': 'HowTo',
-        name: tTitle,
-        description: tDescription,
-        image: articleImage,
-        inLanguage: lang,
-        step: tHowToSteps.map((s, i) => ({
-          '@type': 'HowToStep',
-          position: i + 1,
-          name: s.name,
-          text: s.text,
-          url: s.protocolId ? `${url}#${s.protocolId}` : undefined,
-        })),
-      }
-      setLd('howto', howToLd)
-    } else {
-      removeLd('howto')
     }
 
     return () => {
@@ -415,9 +328,6 @@ export function ArticlePage() {
       setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
       setMeta('twitter:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
       setMeta('twitter:image', OG_IMAGE, true)
-      removeLd('article')
-      removeLd('breadcrumb')
-      removeLd('howto')
     }
   }, [article])
 
@@ -886,7 +796,7 @@ export function ArticlePage() {
             src={article.image}
             alt={tImageAlt ?? ''}
             title={tImageCaption ?? tImageTitle}
-            loading="lazy"
+            priority
             width={1024}
             height={434}
             className="w-full object-cover"
@@ -901,11 +811,26 @@ export function ArticlePage() {
       <p className="mb-4 font-mono text-sm leading-relaxed text-white/50">
         {tDescription}
       </p>
-      {article.slug !== 'cacao-stem-cells' && (
-        <p className="mb-10 text-right font-mono text-xs text-cyan-500/50">
-          [{ARTICLE_SYNC_TIMES[article.slug] ?? '—'}]
-        </p>
-      )}
+      <div className="mb-10 flex items-center justify-between gap-3 font-mono text-xs">
+        {(() => {
+          const d = ARTICLE_DATES[article.slug]
+          if (!d) return <span />
+          const label = new Date(d.modified).toLocaleDateString('en-US', {
+            year: 'numeric', month: 'short', day: 'numeric',
+          })
+          return (
+            <p className="text-white/35">
+              {tArticles('detail.updated', { defaultValue: 'Updated' })}{' '}
+              <time dateTime={d.modified} className="text-white/55">{label}</time>
+            </p>
+          )
+        })()}
+        {article.slug !== 'cacao-stem-cells' && (
+          <p className="text-right text-cyan-500/50">
+            [{ARTICLE_SYNC_TIMES[article.slug] ?? '—'}]
+          </p>
+        )}
+      </div>
 
       <article className="prose-onda">
         <Markdown rehypePlugins={[rehypeSlug]} components={markdownComponents} key={protocolRefresh}>
