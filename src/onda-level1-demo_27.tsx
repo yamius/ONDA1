@@ -4642,7 +4642,7 @@ const OndaLevel1 = () => {
               if (rootEl) rootEl.scrollTop = 0;
               window.scrollTo(0, 0);
             }}
-            className={`mb-6 mt-2 flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all backdrop-blur-md ${
+            className={`mb-6 mt-2 mx-auto flex items-center justify-center px-4 py-2.5 rounded-xl text-sm font-medium transition-all backdrop-blur-md ${
               isLight
                 ? `bg-white/60 ${glowA.panelBorder} border text-slate-600 hover:bg-white/80 shadow-lg shadow-indigo-100/60`
                 : activeCircuit === 2
@@ -4670,8 +4670,7 @@ const OndaLevel1 = () => {
                 : 'bg-indigo-900/40 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-800/50'
             }`}
           >
-            <span>←</span>
-            <span>{t('part_info.back_to_part', { part: activeCircuit })}</span>
+            <span>{t('part_info.back_to_part', { part: activeCircuit }).replace(/←/g, '').trim()}</span>
           </button>
 
           {/* Заголовок и протокол */}
@@ -4957,7 +4956,7 @@ const OndaLevel1 = () => {
               if (rootEl) rootEl.scrollTop = 0;
               window.scrollTo(0, 0);
             }}
-            className={`w-full py-3.5 px-6 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md mb-8 ${
+            className={`mx-auto py-3.5 px-6 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center backdrop-blur-md mb-8 ${
               isLight
                 ? `bg-white/60 ${glowA.panelBorder} border text-slate-600 hover:bg-white/80 shadow-lg shadow-indigo-100/60`
                 : activeCircuit === 2
@@ -4985,8 +4984,7 @@ const OndaLevel1 = () => {
                 : 'bg-indigo-900/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-800/50'
             }`}
           >
-            <span>←</span>
-            <span>{t('part_info.back_to_part', { part: activeCircuit })}</span>
+            <span>{t('part_info.back_to_part', { part: activeCircuit }).replace(/←/g, '').trim()}</span>
           </button>
 
         </div>
