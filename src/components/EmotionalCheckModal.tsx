@@ -557,7 +557,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                     <button
                       key={index}
                       onClick={() => setSelectedPractice(practice.id)}
-                      className="bg-surface-2/50 hover:bg-surface-2/80 text-text-primary text-sm py-2.5 px-3 rounded-lg transition-all border border-border/10 hover:border-border/20 hover:scale-105"
+                      className={`text-sm py-2.5 px-3 rounded-lg transition-all border hover:scale-105 ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-surface-2/50 hover:bg-surface-2/80 text-text-primary border-border/10 hover:border-border/20'}`}
                       title={t(`emotional_check.${practice.label}`)}
                     >
                       {t(`emotional_check.${practice.label}`)}
