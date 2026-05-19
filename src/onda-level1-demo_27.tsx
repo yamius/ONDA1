@@ -3328,7 +3328,7 @@ const OndaLevel1 = () => {
     // Светлый экран завершения только в светлой теме; в тёмной — космический.
     const completeLight = practiceState === 'complete' && isLight;
     return (
-      <div className={`fixed inset-0 overflow-hidden transition-colors duration-1000 ${completeLight ? 'bg-gradient-to-br from-indigo-50 via-white to-violet-100 text-slate-800' : `bg-gradient-to-br ${activePractice.colors} text-white`}`}>
+      <div className={`fixed inset-0 overflow-hidden transition-colors duration-1000 ${isLight ? 'bg-gradient-to-br from-indigo-50 via-white to-violet-100 text-slate-800' : `bg-gradient-to-br ${activePractice.colors} text-white`}`}>
         {/* Debug Monitor - also during practice */}
         <DebugMonitor
           buildNumber={import.meta.env.VITE_BUILD_NUMBER}
@@ -3979,12 +3979,14 @@ const OndaLevel1 = () => {
             preview→full cross-fade. */}
         {practiceState === 'active' && PRACTICE_EXR[activePractice.id] ? (
           // Suspense fallback={null} — three.js chunk streams while the
-          // user sees whatever the parent renders behind it (JPEG preview).
-          // Local boundary so suspending here doesn't blank the whole app.
+          // user sees whatever the parent renders behind it (JPEG preview
+          // in тёмной теме, светлый фон в светлой). В светлой теме
+          // previewUrl не передаём — HDR-панорама плавно «проявится»
+          // через её собственный fade-in поверх светлого фона.
           <Suspense fallback={null}>
-            <WelcomeScene url={PRACTICE_EXR[activePractice.id]} previewUrl={PRACTICE_JPEG_PREVIEW[activePractice.id]} />
+            <WelcomeScene url={PRACTICE_EXR[activePractice.id]} previewUrl={isLight ? undefined : PRACTICE_JPEG_PREVIEW[activePractice.id]} />
           </Suspense>
-        ) : practiceState === 'intro' && PRACTICE_JPEG_PREVIEW[activePractice.id] ? (
+        ) : practiceState === 'intro' && PRACTICE_JPEG_PREVIEW[activePractice.id] && !isLight ? (
           <div
             className="absolute inset-0"
             style={{
@@ -3995,15 +3997,15 @@ const OndaLevel1 = () => {
               pointerEvents: 'none',
             }}
           />
-        ) : (
+        ) : !isLight ? (
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDuration: '3s' }} />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s', animationDuration: '3s' }} />
             <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-300 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '0.75s', animationDuration: '4s' }} />
           </div>
-        )}
+        ) : null}
 
-        {!completeLight && (
+        {!isLight && (
         <div className="absolute inset-0 bg-black/10" style={{
           backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.3) 100%)'
         }} />
