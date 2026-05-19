@@ -4012,7 +4012,7 @@ const OndaLevel1 = () => {
             onClick={exitPractice}
             disabled={!canExitPractice}
             style={!canExitPractice ? { pointerEvents: 'none', opacity: 0.5 } : undefined}
-            className={`absolute top-[72px] right-6 z-50 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110 ${practiceState === 'complete' ? 'bg-white/60 hover:bg-white/80 border border-violet-200 text-slate-600' : 'bg-black/40 hover:bg-black/60'}`}
+            className={`absolute top-[72px] right-6 z-50 p-3 rounded-full transition-all hover:scale-110 border ${practiceState === 'complete' ? 'bg-white/60 hover:bg-white/80 backdrop-blur-md border-violet-200 text-slate-600' : 'bg-white/10 hover:bg-white/20 backdrop-blur-2xl border-white/25'}`}
           >
             <X className="w-6 h-6" />
           </button>
