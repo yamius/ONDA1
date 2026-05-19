@@ -4254,14 +4254,14 @@ const OndaLevel1 = () => {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">{t('practices.completed')}</h2>
 
               {activePractice.finalPhrase && (
-                <div className="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-white/30 shadow-xl mb-4 sm:mb-6">
+                <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-4 sm:p-6 border border-white/25 shadow-xl mb-4 sm:mb-6">
                   <p className="text-base sm:text-lg md:text-xl italic leading-relaxed text-white/90 whitespace-pre-line">
                     {activePractice.finalPhrase}
                   </p>
                 </div>
               )}
 
-              <div className="bg-black/40 backdrop-blur-md rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border border-white/20 shadow-2xl">
+              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border border-white/25 shadow-2xl">
                 {/* Row 1: OND Amount */}
                 <div className="text-4xl sm:text-5xl md:text-7xl font-mono text-amber-400 drop-shadow-2xl animate-pulse">
                   +{Math.floor((activePractice.maxQnt * qualityScore) / 100)} OND
@@ -4338,13 +4338,13 @@ const OndaLevel1 = () => {
                     setIsPaused(false);
                     setAudioResetKey(prev => prev + 1);
                   }}
-                  className="bg-purple-500/30 hover:bg-purple-500/50 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border border-purple-400/50"
+                  className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border border-white/25"
                 >
                   {t('practices.try_again')}
                 </button>
                 <button
                   onClick={exitPractice}
-                  className="bg-white/30 hover:bg-white/40 backdrop-blur-md px-8 sm:px-10 py-3 sm:py-4 rounded-full text-lg sm:text-xl font-bold transition-all border border-white/30"
+                  className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl px-8 sm:px-10 py-3 sm:py-4 rounded-full text-lg sm:text-xl font-bold transition-all border border-white/25"
                 >
                   {t('practices.back_to_practices')}
                 </button>
