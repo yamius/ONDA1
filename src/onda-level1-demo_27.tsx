@@ -5015,6 +5015,32 @@ const OndaLevel1 = () => {
     : activeCircuit === 11 ? 'text-cyan-300'
     : activeCircuit === 12 ? 'text-fuchsia-300'
     : 'text-violet-300';
+  // Читаемые акцентные тексты «в тон контура» для светлой темы:
+  // partTextMid — средний тон, partTextStrong — насыщеннее (заголовки).
+  const partTextMid = activeCircuit === 2 ? 'text-cyan-600'
+    : activeCircuit === 3 ? 'text-amber-600'
+    : activeCircuit === 4 ? 'text-teal-600'
+    : activeCircuit === 5 ? 'text-yellow-600'
+    : activeCircuit === 6 ? 'text-emerald-600'
+    : activeCircuit === 7 ? 'text-sky-600'
+    : activeCircuit === 8 ? 'text-indigo-600'
+    : activeCircuit === 9 ? 'text-amber-600'
+    : activeCircuit === 10 ? 'text-orange-600'
+    : activeCircuit === 11 ? 'text-cyan-600'
+    : activeCircuit === 12 ? 'text-fuchsia-600'
+    : 'text-violet-600';
+  const partTextStrong = activeCircuit === 2 ? 'text-cyan-700'
+    : activeCircuit === 3 ? 'text-amber-700'
+    : activeCircuit === 4 ? 'text-teal-700'
+    : activeCircuit === 5 ? 'text-yellow-700'
+    : activeCircuit === 6 ? 'text-emerald-700'
+    : activeCircuit === 7 ? 'text-sky-700'
+    : activeCircuit === 8 ? 'text-indigo-700'
+    : activeCircuit === 9 ? 'text-amber-700'
+    : activeCircuit === 10 ? 'text-orange-700'
+    : activeCircuit === 11 ? 'text-cyan-700'
+    : activeCircuit === 12 ? 'text-fuchsia-700'
+    : 'text-violet-700';
 
   return (
     <div
@@ -6336,17 +6362,20 @@ const OndaLevel1 = () => {
             <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.story_2`)}</p>
             <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.story_3`)}</p>
             {activeCircuit === 1 && (
-              <p className="text-cyan-300 leading-relaxed italic">{t('level_goal.level_1.story_4')}</p>
+              <p className={`leading-relaxed italic ${isLight ? partTextMid : 'text-cyan-300'}`}>{t('level_goal.level_1.story_4')}</p>
             )}
 
             <div className="text-center py-4">
               <p className={`text-xl font-bold mb-2 ${
+                isLight ? partTextStrong :
                 activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-yellow-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-cyan-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_1`)}</p>
               <p className={`text-lg ${
+                isLight ? partTextMid :
                 activeCircuit === 2 ? 'text-teal-300' : activeCircuit === 3 ? 'text-orange-300' : activeCircuit === 4 ? 'text-cyan-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-teal-300' : activeCircuit === 7 ? 'text-blue-300' : activeCircuit === 8 ? 'text-violet-300' : activeCircuit === 9 ? 'text-amber-300' : activeCircuit === 10 ? 'text-amber-300' : activeCircuit === 11 ? 'text-pink-300' : activeCircuit === 12 ? 'text-red-300' : 'text-purple-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_2`)}</p>
               <p className={`text-lg ${
+                isLight ? partTextMid :
                 activeCircuit === 2 ? 'text-blue-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-200' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-200' : activeCircuit === 7 ? 'text-sky-200' : activeCircuit === 8 ? 'text-indigo-200' : activeCircuit === 9 ? 'text-yellow-200' : activeCircuit === 10 ? 'text-amber-200' : activeCircuit === 11 ? 'text-cyan-200' : activeCircuit === 12 ? 'text-red-200' : 'text-indigo-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_3`)}</p>
             </div>
@@ -6355,6 +6384,7 @@ const OndaLevel1 = () => {
             <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.wisdom_2`)}</p>
             <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.wisdom_3`)}</p>
             <p className={`leading-relaxed italic ${
+              isLight ? partTextMid :
               activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : 'text-cyan-300'
             }`}>{t(`level_goal.level_${activeCircuit}.wisdom_4`)}</p>
           </div>
