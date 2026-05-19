@@ -6,6 +6,7 @@ import { Capacitor } from '@capacitor/core';
 import { Browser } from '@capacitor/browser';
 import { SignInWithApple, SignInWithAppleOptions, SignInWithAppleResponse } from '@capacitor-community/apple-sign-in';
 import { LegalModal } from './LegalModal';
+import { useTheme } from '../theme/ThemeProvider';
 
 interface AuthModalProps {
   onClose: () => void;
@@ -13,6 +14,7 @@ interface AuthModalProps {
 
 export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
   const { t } = useTranslation();
+  const isLight = useTheme().resolved === 'light';
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -360,8 +362,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
             id="login_button"
             type="submit"
             disabled={loading}
-            className={`w-full py-3 sm:py-4 px-6 rounded-xl font-medium transition-all text-sm sm:text-base ${
-              'bg-accent hover:opacity-90 text-white disabled:opacity-50'
+            className={`w-full py-3 sm:py-4 px-6 rounded-xl font-medium transition-all text-sm sm:text-base disabled:opacity-50 ${
+              isLight
+                ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800'
+                : 'bg-accent hover:opacity-90 text-white'
             } ${loading ? 'cursor-not-allowed' : ''}`}
           >
             {loading ? t('auth.loading') : isLogin ? t('auth.sign_in') : t('auth.sign_up')}
