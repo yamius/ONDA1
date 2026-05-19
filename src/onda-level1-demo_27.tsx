@@ -17,6 +17,7 @@ import { PermissionSetupModal } from './components/PermissionSetupModal';
 import { NotificationPrimerModal } from './components/NotificationPrimerModal';
 import { WatchConnectionPrompt } from './components/WatchConnectionPrompt';
 import { DebugMonitor } from './components/DebugMonitor';
+import { useTheme } from './theme/ThemeProvider';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
 import { useHealthConnect } from './hooks/useHealthConnect';
@@ -80,8 +81,30 @@ import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './constants/practiceAssets'
 // `practice_gate_basic` (see the Start button below).
 const FREE_PRACTICE_IDS = new Set(['p1-1', 'p1-2', 'p1-3']);
 
+// Светлая тема «матовое свечение» (frosted glow) — прототип хаба.
+// Космическая сцена по определению тёмная, прямой токен-свап невозможен,
+// поэтому у каждого контура есть параллельная пастельная палитра: два
+// мягких цветных блика (rgba) для люминесцентного фона + tailwind-класс
+// рамки frosted-панели. Ключ — activeCircuit (2..12), иначе CIRCUIT_GLOW_DEFAULT.
+const CIRCUIT_GLOW_LIGHT: Record<number, { orbA: string; orbB: string; panelBorder: string }> = {
+  2:  { orbA: 'rgba(165,243,252,0.55)', orbB: 'rgba(186,230,253,0.45)', panelBorder: 'border-cyan-200/70' },
+  3:  { orbA: 'rgba(253,230,138,0.55)', orbB: 'rgba(254,215,170,0.45)', panelBorder: 'border-amber-200/70' },
+  4:  { orbA: 'rgba(153,246,228,0.55)', orbB: 'rgba(165,243,252,0.45)', panelBorder: 'border-teal-200/70' },
+  5:  { orbA: 'rgba(254,240,138,0.55)', orbB: 'rgba(253,230,138,0.45)', panelBorder: 'border-amber-200/70' },
+  6:  { orbA: 'rgba(167,243,208,0.55)', orbB: 'rgba(153,246,228,0.45)', panelBorder: 'border-emerald-200/70' },
+  7:  { orbA: 'rgba(186,230,253,0.55)', orbB: 'rgba(191,219,254,0.45)', panelBorder: 'border-sky-200/70' },
+  8:  { orbA: 'rgba(199,210,254,0.55)', orbB: 'rgba(221,214,254,0.45)', panelBorder: 'border-indigo-200/70' },
+  9:  { orbA: 'rgba(254,240,138,0.65)', orbB: 'rgba(254,243,199,0.50)', panelBorder: 'border-yellow-300/80' },
+  10: { orbA: 'rgba(254,215,170,0.55)', orbB: 'rgba(253,230,138,0.45)', panelBorder: 'border-orange-200/70' },
+  11: { orbA: 'rgba(165,243,252,0.55)', orbB: 'rgba(153,246,228,0.45)', panelBorder: 'border-cyan-200/70' },
+  12: { orbA: 'rgba(245,208,254,0.55)', orbB: 'rgba(251,207,232,0.45)', panelBorder: 'border-fuchsia-200/70' },
+};
+const CIRCUIT_GLOW_DEFAULT = { orbA: 'rgba(221,214,254,0.55)', orbB: 'rgba(199,210,254,0.45)', panelBorder: 'border-violet-200/70' };
+
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
+  const { resolved } = useTheme();
+  const isLight = resolved === 'light';
   const vitalsData = useVitals();
   
   // Ref to store CURRENT vitals - updated every render, accessible in async functions
@@ -4946,11 +4969,15 @@ const OndaLevel1 = () => {
     );
   }
 
+  const glow = CIRCUIT_GLOW_LIGHT[activeCircuit] ?? CIRCUIT_GLOW_DEFAULT;
+
   return (
-    <div 
+    <div
       data-main-container
-      className={`h-full text-white overflow-x-hidden pb-6 pt-8 transition-all duration-1000 ${
-      activeCircuit === 2
+      className={`h-full overflow-x-hidden pb-6 pt-8 transition-all duration-1000 ${isLight ? 'text-slate-800' : 'text-white'} ${
+      isLight
+        ? ''
+        : activeCircuit === 2
         ? 'bg-gradient-to-br from-teal-900 via-cyan-900 to-blue-900'
         : activeCircuit === 3
         ? 'bg-gradient-to-br from-amber-950 via-orange-900 to-amber-950'
@@ -4973,7 +5000,11 @@ const OndaLevel1 = () => {
         : activeCircuit === 12
         ? 'bg-gradient-to-br from-fuchsia-950 via-red-900 to-fuchsia-950'
         : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
-    }`}>
+    }`}
+      style={isLight ? {
+        background: `radial-gradient(900px circle at 12% 18%, ${glow.orbA}, transparent 60%), radial-gradient(820px circle at 88% 82%, ${glow.orbB}, transparent 58%), linear-gradient(135deg, #eef2ff 0%, #ffffff 52%, #f5f3ff 100%)`,
+      } : undefined}
+    >
       {/* Debug Monitor - ПЕРВЫМ для захвата всех логов */}
       <DebugMonitor
         buildNumber={import.meta.env.VITE_BUILD_NUMBER}
@@ -5422,7 +5453,7 @@ const OndaLevel1 = () => {
             </div>
           </div>
           <div className="flex flex-col items-center flex-1 justify-center my-4 sm:my-6">
-            <div className="text-base sm:text-xl text-white/80 italic max-w-md text-center px-4 sm:px-0" dangerouslySetInnerHTML={{__html: `«${t(`quote_level_${activeCircuit}`)}»`}}>
+            <div className={`text-base sm:text-xl italic max-w-md text-center px-4 sm:px-0 ${isLight ? 'text-slate-500' : 'text-white/80'}`} dangerouslySetInnerHTML={{__html: `«${t(`quote_level_${activeCircuit}`)}»`}}>
             </div>
           </div>
         </div>
@@ -5480,7 +5511,10 @@ const OndaLevel1 = () => {
 
         {/* Центральный блок с описанием контура */}
         <div className="mb-12">
-          <div className={`backdrop-blur-sm rounded-2xl border py-4 sm:py-8 px-4 sm:px-8 transition-all duration-1000 ${activeCircuit === 9 ? 'bg-black/35' : 'bg-black/20'} ${
+          <div className={`rounded-2xl border py-4 sm:py-8 px-4 sm:px-8 transition-all duration-1000 ${
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-xl shadow-indigo-200/40 ${glow.panelBorder}`
+              : `backdrop-blur-sm ${activeCircuit === 9 ? 'bg-black/35' : 'bg-black/20'} ${
             activeCircuit === 2
               ? 'border-cyan-500/30'
               : activeCircuit === 3
@@ -5504,13 +5538,14 @@ const OndaLevel1 = () => {
               : activeCircuit === 12
               ? 'border-fuchsia-500/40'
               : 'border-purple-500/30'
+          }`
           }`}>
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center justify-between mb-6">
                 <div className="text-4xl sm:text-6xl font-light tracking-wider">{t(`circuits.circuit_${activeCircuit}_title`)}</div>
               </div>
               <h3 className="text-2xl font-light mb-4">{t(`circuits.circuit_${activeCircuit}_subtitle`)}</h3>
-              <p className="text-white/70 leading-relaxed" dangerouslySetInnerHTML={{__html: t(`circuits.circuit_${activeCircuit}_desc`)}}>
+              <p className={`leading-relaxed ${isLight ? 'text-slate-500' : 'text-white/70'}`} dangerouslySetInnerHTML={{__html: t(`circuits.circuit_${activeCircuit}_desc`)}}>
               </p>
             </div>
           </div>
