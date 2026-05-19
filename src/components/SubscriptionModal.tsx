@@ -436,7 +436,6 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
         <LegalModal
           type={legalModal}
           onClose={() => setLegalModal(null)}
-          isLightTheme={false}
         />
       )}
 
