@@ -5565,8 +5565,8 @@ const OndaLevel1 = () => {
         {/* BLE Connect Tracker — Android only, shown above biometrics grid */}
         {platform !== 'ios' && !vitalsData.connected && (
           <div className={`mb-4 rounded-2xl p-4 max-w-lg mx-auto w-full ${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-sky-200' : 'bg-black/30 backdrop-blur-sm border border-blue-500/20'}`}>
-            <p className={`text-xs font-semibold mb-1 ${isLight ? 'text-slate-500' : 'text-white/70'}`}>{t('settings.bluetooth_monitor', 'Bluetooth Heart Rate Monitor')}</p>
-            <p className={`text-xs mb-3 ${isLight ? 'text-slate-400' : 'text-white/50'}`}>
+            <p className={`text-base font-semibold mb-1 ${isLight ? 'text-sky-800' : 'text-white/70'}`}>{t('settings.bluetooth_monitor', 'Bluetooth Heart Rate Monitor')}</p>
+            <p className={`text-sm mb-3 ${isLight ? 'text-sky-700' : 'text-white/50'}`}>
               {t('settings.bluetooth_desc', 'Connect a Bluetooth heart rate monitor for real-time biofeedback during practices')}
             </p>
             <div className="flex flex-col gap-2">
@@ -5617,7 +5617,7 @@ const OndaLevel1 = () => {
               {/* Available devices after scan */}
               {!vitalsData.isScanning && vitalsData.availableDevices && vitalsData.availableDevices.length > 0 && vitalsData.connectToDevice && (
                 <div className={`p-3 rounded-xl ${isLight ? 'bg-slate-100/80 border border-slate-200' : 'bg-white/5 border border-white/10'}`}>
-                  <p className={`text-xs mb-2 ${isLight ? 'text-slate-400' : 'text-white/60'}`}>{t('settings.available_devices', 'Available Devices')}:</p>
+                  <p className={`text-sm mb-2 ${isLight ? 'text-sky-700' : 'text-white/60'}`}>{t('settings.available_devices', 'Available Devices')}:</p>
                   <div className="space-y-1.5">
                     {vitalsData.availableDevices.map((device) => (
                       <button
@@ -5638,8 +5638,8 @@ const OndaLevel1 = () => {
               )}
               {/* Connection instructions */}
               <div className={`mt-1 p-3 rounded-xl ${isLight ? 'bg-slate-100/80 border border-slate-200' : 'bg-white/5 border border-white/10'}`}>
-                <p className={`text-xs font-medium mb-1.5 ${isLight ? 'text-slate-500' : 'text-white/70'}`}>{t('settings.connection_instructions', 'Connection instructions:')}</p>
-                <div className={`text-xs space-y-1 ${isLight ? 'text-slate-400' : 'text-white/50'}`}>
+                <p className={`text-sm font-medium mb-1.5 ${isLight ? 'text-sky-800' : 'text-white/70'}`}>{t('settings.connection_instructions', 'Connection instructions:')}</p>
+                <div className={`text-sm space-y-1 ${isLight ? 'text-sky-700' : 'text-white/50'}`}>
                   <p>{t('settings.instruction_1', 'On phone: Close standard tracker app. Turn on Bluetooth')}</p>
                   <p>{t('settings.instruction_2', 'On tracker: Settings → Share heart rate → Enable')}</p>
                 </div>
