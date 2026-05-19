@@ -4344,13 +4344,13 @@ const OndaLevel1 = () => {
                     setIsPaused(false);
                     setAudioResetKey(prev => prev + 1);
                   }}
-                  className={`backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
+                  className={`flex-1 sm:flex-none sm:min-w-[15rem] backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                 >
                   {t('practices.try_again')}
                 </button>
                 <button
                   onClick={exitPractice}
-                  className={`backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
+                  className={`flex-1 sm:flex-none sm:min-w-[15rem] backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                 >
                   {t('practices.back_to_practices')}
                 </button>
