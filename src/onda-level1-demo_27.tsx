@@ -6252,7 +6252,7 @@ const OndaLevel1 = () => {
 
         {/* Кнопка Part's info — переход на addon-страницу */}
         {t(`part_info.level_${activeCircuit}.title`, { defaultValue: '' }) && (
-          <div className="mb-6 max-w-lg mx-auto w-full">
+          <div className="mb-6 flex justify-center">
             <button
               onClick={() => {
                 setActiveView('addon');
@@ -6260,33 +6260,7 @@ const OndaLevel1 = () => {
                 if (rootEl) rootEl.scrollTop = 0;
                 window.scrollTo(0, 0);
               }}
-              className={`w-full py-3.5 px-6 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md ${
-                isLight
-                  ? `bg-white/60 ${glow.panelBorder} border text-slate-600 hover:bg-white/80 shadow-lg shadow-indigo-100/60`
-                  : activeCircuit === 2
-                  ? 'bg-cyan-900/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-800/50 hover:border-cyan-400/60'
-                  : activeCircuit === 3
-                  ? 'bg-amber-900/40 border border-amber-600/40 text-amber-300 hover:bg-amber-800/50 hover:border-amber-500/60'
-                  : activeCircuit === 4
-                  ? 'bg-teal-900/40 border border-teal-500/40 text-teal-300 hover:bg-teal-800/50 hover:border-teal-400/60'
-                  : activeCircuit === 5
-                  ? 'bg-yellow-800/40 border border-yellow-600/40 text-yellow-200 hover:bg-yellow-700/50 hover:border-yellow-500/60'
-                  : activeCircuit === 6
-                  ? 'bg-emerald-800/40 border border-emerald-500/40 text-emerald-300 hover:bg-emerald-700/50 hover:border-emerald-400/60'
-                  : activeCircuit === 7
-                  ? 'bg-sky-800/40 border border-sky-500/40 text-sky-300 hover:bg-sky-700/50 hover:border-sky-400/60'
-                  : activeCircuit === 8
-                  ? 'bg-indigo-800/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-700/50 hover:border-indigo-400/60'
-                  : activeCircuit === 9
-                  ? 'bg-amber-800/40 border border-yellow-300/70 text-yellow-100 hover:bg-amber-700/50 hover:border-yellow-200/90 shadow-[0_0_20px_rgba(253,224,71,0.4)]'
-                  : activeCircuit === 10
-                  ? 'bg-orange-800/40 border border-orange-500/40 text-orange-300 hover:bg-orange-700/50 hover:border-orange-400/60'
-                  : activeCircuit === 11
-                  ? 'bg-teal-800/40 border border-cyan-500/40 text-cyan-200 hover:bg-teal-700/50 hover:border-cyan-400/60'
-                  : activeCircuit === 12
-                  ? 'bg-fuchsia-800/40 border border-fuchsia-500/40 text-fuchsia-300 hover:bg-fuchsia-700/50 hover:border-fuchsia-400/60'
-                  : 'bg-indigo-900/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-800/50 hover:border-indigo-400/60'
-              }`}
+              className={`py-3.5 px-8 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md ${emoTint}`}
             >
               <span>{t('part_info.button')}</span>
             </button>
