@@ -6092,7 +6092,7 @@ const OndaLevel1 = () => {
               <div
                 key={practice.id}
                 ref={el => practiceRefs.current[practice.id] = el}
-                className={`relative rounded-lg p-6 border transition-all ${
+                className={`relative rounded-lg p-6 border transition-all flex flex-col ${
                   isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'
                 } ${
                   isCompleted
@@ -6216,7 +6216,7 @@ const OndaLevel1 = () => {
                   </div>
                 )}
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mt-auto pt-2">
                   <div className="text-amber-400 font-mono">
                     <div>{t('practices.up_to')} {earnedQnt} OND</div>
                     {bonus > 0 && (
