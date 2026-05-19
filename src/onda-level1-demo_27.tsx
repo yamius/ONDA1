@@ -6873,12 +6873,12 @@ const OndaLevel1 = () => {
       {/* Модальное окно дневника */}
       {showJournalModal && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
-          <div className="bg-gradient-to-br from-gray-900 to-black max-w-4xl w-full max-h-[90vh] rounded-2xl border border-indigo-500/30 shadow-2xl my-4 flex flex-col">
-            <div className="sticky top-0 bg-gray-900/95 backdrop-blur-sm border-b border-indigo-500/30 p-4 sm:p-6 flex items-center justify-between">
+          <div className={`max-w-4xl w-full max-h-[90vh] rounded-2xl border shadow-2xl my-4 flex flex-col ${isLight ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-indigo-500/30'}`}>
+            <div className={`sticky top-0 backdrop-blur-sm border-b p-4 sm:p-6 flex items-center justify-between ${isLight ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-indigo-500/30'}`}>
               <h2 className="text-lg sm:text-2xl font-bold">📖 {t('practices.journal_title')}</h2>
               <button
                 onClick={() => setShowJournalModal(false)}
-                className="text-gray-400 hover:text-white transition-all"
+                className={`transition-all ${isLight ? 'text-slate-400 hover:text-slate-700' : 'text-gray-400 hover:text-white'}`}
               >
                 <X className="w-6 h-6" />
               </button>
@@ -6894,7 +6894,7 @@ const OndaLevel1 = () => {
                   {practiceHistory.map((session) => (
                     <div
                       key={session.id}
-                      className="bg-black/30 rounded-lg p-3 sm:p-4 border border-purple-500/20 hover:border-purple-400/40 transition-all"
+                      className={`rounded-lg p-3 sm:p-4 border transition-all ${isLight ? 'bg-white/70 border-violet-200 hover:border-violet-300' : 'bg-black/30 border-purple-500/20 hover:border-purple-400/40'}`}
                     >
                       <div className="flex items-start justify-between mb-2">
                         <div>
@@ -6941,33 +6941,33 @@ const OndaLevel1 = () => {
       {/* Модальное окно статистики */}
       {showStatsModal && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
-          <div className="bg-gradient-to-br from-gray-900 to-black max-w-6xl w-full max-h-[90vh] overflow-y-auto no-scrollbar rounded-2xl border border-cyan-500/30 shadow-2xl my-4">
-            <div className="sticky top-0 bg-gray-900/95 backdrop-blur-sm border-b border-cyan-500/30 p-4 sm:p-6 flex items-center justify-between">
+          <div className={`max-w-6xl w-full max-h-[90vh] overflow-y-auto no-scrollbar rounded-2xl border shadow-2xl my-4 ${isLight ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-cyan-500/30'}`}>
+            <div className={`sticky top-0 backdrop-blur-sm border-b p-4 sm:p-6 flex items-center justify-between ${isLight ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-cyan-500/30'}`}>
               <h2 className="text-lg sm:text-2xl font-bold">{t('stats.title')}</h2>
               <button
                 onClick={() => setShowStatsModal(false)}
-                className="text-gray-400 hover:text-white transition-all"
+                className={`transition-all ${isLight ? 'text-slate-400 hover:text-slate-700' : 'text-gray-400 hover:text-white'}`}
               >
                 <X className="w-6 h-6" />
               </button>
             </div>
             <div className="p-4 sm:p-6">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
-                <div className="bg-black/30 rounded-lg p-4 border border-purple-500/20">
+                <div className={`rounded-lg p-4 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <p className="text-gray-400 text-sm mb-1">{t('stats.total_qnt')}</p>
                   <p className="text-3xl font-bold">{practiceHistory.length}</p>
                 </div>
-                <div className="bg-black/30 rounded-lg p-4 border border-purple-500/20">
+                <div className={`rounded-lg p-4 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <p className="text-gray-400 text-sm mb-1">{t('stats.time_in_practices')}</p>
                   <p className="text-3xl font-bold">
                     {Math.floor(getTotalTime() / 3600)}{t('stats.hours_short')} {Math.floor((getTotalTime() % 3600) / 60)}{t('stats.minutes_short')}
                   </p>
                 </div>
-                <div className="bg-black/30 rounded-lg p-4 border border-purple-500/20">
+                <div className={`rounded-lg p-4 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <p className="text-gray-400 text-sm mb-1">{t('stats.avg_quality')}</p>
                   <p className="text-3xl font-bold text-emerald-400">{safeToFixed(getAverageQuality(), 0)}%</p>
                 </div>
-                <div className="bg-black/30 rounded-lg p-4 border border-purple-500/20">
+                <div className={`rounded-lg p-4 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <p className="text-gray-400 text-sm mb-1">{t('stats.day_streak')}</p>
                   <p className="text-3xl font-bold text-orange-400">{getStreak()} 🔥</p>
                 </div>
@@ -6986,8 +6986,8 @@ const OndaLevel1 = () => {
                         key={achievement.id}
                         className={`rounded-lg p-4 border transition-all ${
                           isUnlocked
-                            ? 'bg-yellow-500/10 border-amber-600/30'
-                            : 'bg-black/30 border-gray-600/20'
+                            ? isLight ? 'bg-amber-50 border-amber-300' : 'bg-yellow-500/10 border-amber-600/30'
+                            : isLight ? 'bg-white/70 border-slate-200' : 'bg-black/30 border-gray-600/20'
                         }`}
                       >
                         <div className="flex items-start gap-3">
@@ -7051,12 +7051,12 @@ const OndaLevel1 = () => {
               {/* Звания игрока */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4">🏅 {t('stats.player_title')}</h3>
-                <div className="bg-black/30 rounded-lg p-6 border border-purple-500/20">
+                <div className={`rounded-lg p-6 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <div className="flex items-center gap-4 mb-6">
                     <div className="text-6xl">{getPlayerRank().icon}</div>
                     <div>
                       <h4 className="text-3xl font-bold mb-2">{getPlayerRank().name}</h4>
-                      <p className="text-white/80">{t('stats.practices_count')}: {practiceHistory.length} | {t('stats.time_short')}: {Math.floor(getTotalTime() / 3600)}{t('stats.hours_short')}</p>
+                      <p className={isLight ? 'text-slate-500' : 'text-white/80'}>{t('stats.practices_count')}: {practiceHistory.length} | {t('stats.time_short')}: {Math.floor(getTotalTime() / 3600)}{t('stats.hours_short')}</p>
                     </div>
                   </div>
                   <div className="grid grid-cols-5 gap-2">
@@ -7079,7 +7079,7 @@ const OndaLevel1 = () => {
               {/* График качества по времени */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4">{t('stats.quality_chart')}</h3>
-                <div className="bg-black/30 rounded-lg p-6 border border-purple-500/20">
+                <div className={`rounded-lg p-6 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   {practiceHistory.length > 0 ? (
                     <div className="h-48 flex items-end gap-2">
                       {practiceHistory.slice(-20).map((session, idx) => {
@@ -7105,7 +7105,7 @@ const OndaLevel1 = () => {
               {/* Календарь активности */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4">{t('stats.activity_calendar')}</h3>
-                <div className="bg-black/30 rounded-lg p-6 border border-purple-500/20">
+                <div className={`rounded-lg p-6 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <div className="grid grid-cols-7 gap-2">
                     {Array.from({length: 28}, (_, i) => {
                       const date = new Date();
@@ -7122,7 +7122,7 @@ const OndaLevel1 = () => {
                           <div className="text-xs text-gray-500 h-4">{dateStr}</div>
                           <div
                             className={`aspect-square w-full rounded ${
-                              dayPractices === 0 ? 'bg-gray-800' :
+                              dayPractices === 0 ? (isLight ? 'bg-slate-200' : 'bg-gray-800') :
                               dayPractices === 1 ? 'bg-green-900' :
                               dayPractices === 2 ? 'bg-green-700' :
                               'bg-green-500'
@@ -7144,12 +7144,12 @@ const OndaLevel1 = () => {
       {/* Модальное окно рейтинга */}
       {showRatingModal && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
-          <div className="bg-gradient-to-br from-gray-900 to-black max-w-6xl w-full max-h-[90vh] overflow-y-auto no-scrollbar rounded-2xl border border-cyan-500/30 shadow-2xl my-4">
-            <div className="sticky top-0 bg-gray-900/95 backdrop-blur-sm border-b border-cyan-500/30 p-4 sm:p-6 flex items-center justify-between">
+          <div className={`max-w-6xl w-full max-h-[90vh] overflow-y-auto no-scrollbar rounded-2xl border shadow-2xl my-4 ${isLight ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-cyan-500/30'}`}>
+            <div className={`sticky top-0 backdrop-blur-sm border-b p-4 sm:p-6 flex items-center justify-between ${isLight ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-cyan-500/30'}`}>
               <h2 className="text-lg sm:text-2xl font-bold">{t('leaderboard.title')}</h2>
               <button
                 onClick={() => setShowRatingModal(false)}
-                className="text-gray-400 hover:text-white transition-all"
+                className={`transition-all ${isLight ? 'text-slate-400 hover:text-slate-700' : 'text-gray-400 hover:text-white'}`}
               >
                 <X className="w-6 h-6" />
               </button>
@@ -7167,7 +7167,7 @@ const OndaLevel1 = () => {
                         className={`flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all ${
                           isCurrentPlayer
                             ? 'bg-cyan-500/10 border-cyan-500/50 shadow-lg shadow-cyan-500/20'
-                            : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
+                            : isLight ? 'bg-white/70 border-slate-200 hover:border-slate-300' : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
                         }`}
                       >
                         <div className={`text-lg sm:text-2xl font-bold w-6 sm:w-8 ${idx === 0 ? 'text-amber-400' : idx === 1 ? 'text-gray-300' : idx === 2 ? 'text-orange-400' : 'text-gray-500'}`}>
@@ -7197,7 +7197,7 @@ const OndaLevel1 = () => {
                         className={`flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all ${
                           isCurrentPlayer
                             ? 'bg-cyan-500/10 border-cyan-500/50 shadow-lg shadow-cyan-500/20'
-                            : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
+                            : isLight ? 'bg-white/70 border-slate-200 hover:border-slate-300' : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
                         }`}
                       >
                         <div className={`text-lg sm:text-2xl font-bold w-6 sm:w-8 ${idx === 0 ? 'text-amber-400' : idx === 1 ? 'text-gray-300' : idx === 2 ? 'text-orange-400' : 'text-gray-500'}`}>
@@ -7230,7 +7230,7 @@ const OndaLevel1 = () => {
                         className={`flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all ${
                           isCurrentPlayer
                             ? 'bg-cyan-500/10 border-cyan-500/50 shadow-lg shadow-cyan-500/20'
-                            : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
+                            : isLight ? 'bg-white/70 border-slate-200 hover:border-slate-300' : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
                         }`}
                       >
                         <div className={`text-lg sm:text-2xl font-bold w-6 sm:w-8 ${idx === 0 ? 'text-amber-400' : idx === 1 ? 'text-gray-300' : idx === 2 ? 'text-orange-400' : 'text-gray-500'}`}>
@@ -7259,7 +7259,7 @@ const OndaLevel1 = () => {
                       return (
                         <div
                           key={practice.practice_id}
-                          className="flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all bg-black/30 border-gray-700/30 hover:border-gray-600/50"
+                          className={`flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all ${isLight ? 'bg-white/70 border-slate-200 hover:border-slate-300' : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'}`}
                         >
                           <div className={`text-lg sm:text-2xl font-bold w-6 sm:w-8 ${idx === 0 ? 'text-amber-400' : idx === 1 ? 'text-gray-300' : idx === 2 ? 'text-orange-400' : 'text-gray-500'}`}>
                             {idx + 1}
