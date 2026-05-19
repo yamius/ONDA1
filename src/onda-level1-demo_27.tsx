@@ -5332,7 +5332,7 @@ const OndaLevel1 = () => {
               <div className="relative dropdown-container w-full">
                 <button
                   onClick={() => { setShowLevelDropdown(!showLevelDropdown); setShowChapterDropdown(false); }}
-                  className={`backdrop-blur-sm font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full min-h-[56px] sm:min-h-[64px] ${
+                  className={`backdrop-blur-sm font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
                     activeCircuit === 2
                       ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                       : activeCircuit === 3
@@ -5498,7 +5498,17 @@ const OndaLevel1 = () => {
                 localStorage.setItem('onda_nervous_scan_used', 'true');
               }
             }}
-            className="relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full bg-white/10 hover:bg-white/20 border-white/30"
+            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
+              activeCircuit === 2
+                ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
+                : activeCircuit === 3
+                ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                : activeCircuit === 4
+                ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                : activeCircuit === 9
+                ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
+            }`}
           >
             {t('eye_scan.nav_button')}
             {!nervousScanUsed && (
@@ -7455,14 +7465,18 @@ const OndaLevel1 = () => {
                 setShowInfoModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
                 activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                   : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                  : activeCircuit === 4
+                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                  : activeCircuit === 9
+                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
               }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-home"
             >
               <Mountain className="w-6 h-6 text-purple-400" />
@@ -7477,14 +7491,18 @@ const OndaLevel1 = () => {
                 setShowOnboarding(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
                 activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                   : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                  : activeCircuit === 4
+                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                  : activeCircuit === 9
+                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
               }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-intro"
             >
               <RotateCcw className="w-6 h-6 text-gray-400" />
@@ -7497,14 +7515,18 @@ const OndaLevel1 = () => {
                 setShowJournalModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
                 activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                   : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                  : activeCircuit === 4
+                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                  : activeCircuit === 9
+                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
               }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-diary"
             >
               <Circle className="w-6 h-6 text-cyan-400" />
@@ -7517,14 +7539,18 @@ const OndaLevel1 = () => {
                 setShowStatsModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
                 activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                   : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                  : activeCircuit === 4
+                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                  : activeCircuit === 9
+                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
               }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-statistics"
             >
               <Activity className="w-6 h-6 text-emerald-400" />
@@ -7537,14 +7563,18 @@ const OndaLevel1 = () => {
                 setShowQntShop(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
                 activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                   : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                  : activeCircuit === 4
+                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                  : activeCircuit === 9
+                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
               }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-ond-balance"
             >
               <Star className="w-6 h-6 text-amber-400" />
@@ -7558,14 +7588,18 @@ const OndaLevel1 = () => {
                 setShowRatingModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
                 activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                   : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                  : activeCircuit === 4
+                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                  : activeCircuit === 9
+                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
               }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-leaderboard"
             >
               <Zap className="w-6 h-6 text-orange-400" />
@@ -7578,14 +7612,18 @@ const OndaLevel1 = () => {
                 setShowLanguageModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
                 activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                   : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                  : activeCircuit === 4
+                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                  : activeCircuit === 9
+                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
               }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-language"
             >
               <Languages className="w-6 h-6 text-indigo-400" />
@@ -7608,14 +7646,18 @@ const OndaLevel1 = () => {
                 setShowSettingsModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
                 activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                   : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                  : activeCircuit === 4
+                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                  : activeCircuit === 9
+                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
               }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-settings"
             >
               <Settings className="w-6 h-6 text-blue-400" />
@@ -7628,14 +7670,18 @@ const OndaLevel1 = () => {
                 setShowConnectionModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
                 activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                   : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                  : activeCircuit === 4
+                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                  : activeCircuit === 9
+                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
               }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-connection"
             >
               <Heart className="w-6 h-6 text-pink-400" />
@@ -7652,14 +7698,18 @@ const OndaLevel1 = () => {
                   setShowAuthModal(true);
                   setShowMenu(false);
                 }}
-                className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
                   activeCircuit === 2
-                    ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                    ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                     : activeCircuit === 3
-                    ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                    : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                    ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                    : activeCircuit === 4
+                    ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                    : activeCircuit === 9
+                    ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                    : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
                 }`}
-                style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+                style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
                 data-testid="menu-item-login"
               >
                 <User className="w-6 h-6 text-purple-400" />
@@ -7674,14 +7724,18 @@ const OndaLevel1 = () => {
                   setShowProfileModal(true);
                   setShowMenu(false);
                 }}
-                className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
+                className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
                   activeCircuit === 2
-                    ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+                    ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                     : activeCircuit === 3
-                    ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                    : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+                    ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
+                    : activeCircuit === 4
+                    ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                    : activeCircuit === 9
+                    ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                    : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
                 }`}
-                style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+                style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
                 data-testid="menu-item-profile"
               >
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center flex-shrink-0">
