@@ -6157,7 +6157,7 @@ const OndaLevel1 = () => {
                       <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
                     </div>
                   ) : (
-                    <Circle className="w-6 h-6 text-gray-600" />
+                    <Circle className={`w-6 h-6 ${isLight ? 'text-indigo-300' : 'text-gray-600'}`} />
                   )}
                 </div>
                 <p className={`text-sm mb-4 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{getPracticeDesc(practice.id)}</p>
