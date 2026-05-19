@@ -5066,8 +5066,8 @@ const OndaLevel1 = () => {
         </button>
       )}
 
-      {/* Кнопка подписки */}
-      {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
+      {/* Кнопка подписки ($) — временно скрыта по просьбе владельца, пока не нужна. */}
+      {false && !showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal &&
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
        !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && !showMenu && !showSubscriptionModal && (
         <button
@@ -5200,7 +5200,7 @@ const OndaLevel1 = () => {
         {/* Центральный заголовок */}
         <div className="text-center mb-6 sm:mb-12 pt-0">
           {/* Логотип по центру */}
-          <div className="flex items-center justify-center gap-2 text-white/80 mb-8 sm:mb-10">
+          <div className={`flex items-center justify-center gap-2 mb-8 sm:mb-10 ${isLight ? 'text-slate-400' : 'text-white/80'}`}>
             <span className="text-lg sm:text-xl font-light">ONDA</span>
             <span className="text-sm sm:text-base font-light">~</span>
             <span className="text-lg sm:text-xl font-light">LIFE</span>
@@ -5568,9 +5568,9 @@ const OndaLevel1 = () => {
 
         {/* BLE Connect Tracker — Android only, shown above biometrics grid */}
         {platform !== 'ios' && !vitalsData.connected && (
-          <div className="mb-4 bg-black/30 backdrop-blur-sm rounded-2xl border border-blue-500/20 p-4 max-w-lg mx-auto w-full">
-            <p className="text-xs font-semibold text-white/70 mb-1">{t('settings.bluetooth_monitor', 'Bluetooth Heart Rate Monitor')}</p>
-            <p className="text-xs text-white/50 mb-3">
+          <div className={`mb-4 rounded-2xl p-4 max-w-lg mx-auto w-full ${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-sky-200' : 'bg-black/30 backdrop-blur-sm border border-blue-500/20'}`}>
+            <p className={`text-xs font-semibold mb-1 ${isLight ? 'text-slate-500' : 'text-white/70'}`}>{t('settings.bluetooth_monitor', 'Bluetooth Heart Rate Monitor')}</p>
+            <p className={`text-xs mb-3 ${isLight ? 'text-slate-400' : 'text-white/50'}`}>
               {t('settings.bluetooth_desc', 'Connect a Bluetooth heart rate monitor for real-time biofeedback during practices')}
             </p>
             <div className="flex flex-col gap-2">
@@ -5611,7 +5611,7 @@ const OndaLevel1 = () => {
                     <button
                       onClick={vitalsData.stopScan}
                       data-testid="button-stop-scan-home"
-                      className="py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white/70"
+                      className={`py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 ${isLight ? 'bg-slate-100 hover:bg-slate-200 text-slate-500' : 'bg-white/10 hover:bg-white/20 text-white/70'}`}
                     >
                       {t('settings.scan_stop', 'Stop')}
                     </button>
@@ -5620,30 +5620,30 @@ const OndaLevel1 = () => {
               )}
               {/* Available devices after scan */}
               {!vitalsData.isScanning && vitalsData.availableDevices && vitalsData.availableDevices.length > 0 && vitalsData.connectToDevice && (
-                <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-                  <p className="text-xs text-white/60 mb-2">{t('settings.available_devices', 'Available Devices')}:</p>
+                <div className={`p-3 rounded-xl ${isLight ? 'bg-slate-100/80 border border-slate-200' : 'bg-white/5 border border-white/10'}`}>
+                  <p className={`text-xs mb-2 ${isLight ? 'text-slate-400' : 'text-white/60'}`}>{t('settings.available_devices', 'Available Devices')}:</p>
                   <div className="space-y-1.5">
                     {vitalsData.availableDevices.map((device) => (
                       <button
                         key={device.id}
                         onClick={() => vitalsData.connectToDevice!(device.id)}
                         data-testid={`button-device-home-${device.id}`}
-                        className="w-full py-2 px-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20"
+                        className={`w-full py-2 px-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between gap-2 ${isLight ? 'bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 shadow-sm' : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'}`}
                       >
                         <span className="flex items-center gap-2">
                           <Bluetooth className="w-3.5 h-3.5" />
                           {device.name}
                         </span>
-                        <span className="text-xs text-white/50">{t('settings.device_connect', 'Connect')}</span>
+                        <span className={`text-xs ${isLight ? 'text-slate-400' : 'text-white/50'}`}>{t('settings.device_connect', 'Connect')}</span>
                       </button>
                     ))}
                   </div>
                 </div>
               )}
               {/* Connection instructions */}
-              <div className="mt-1 p-3 rounded-xl bg-white/5 border border-white/10">
-                <p className="text-xs font-medium text-white/70 mb-1.5">{t('settings.connection_instructions', 'Connection instructions:')}</p>
-                <div className="text-xs text-white/50 space-y-1">
+              <div className={`mt-1 p-3 rounded-xl ${isLight ? 'bg-slate-100/80 border border-slate-200' : 'bg-white/5 border border-white/10'}`}>
+                <p className={`text-xs font-medium mb-1.5 ${isLight ? 'text-slate-500' : 'text-white/70'}`}>{t('settings.connection_instructions', 'Connection instructions:')}</p>
+                <div className={`text-xs space-y-1 ${isLight ? 'text-slate-400' : 'text-white/50'}`}>
                   <p>{t('settings.instruction_1', 'On phone: Close standard tracker app. Turn on Bluetooth')}</p>
                   <p>{t('settings.instruction_2', 'On tracker: Settings → Share heart rate → Enable')}</p>
                 </div>
@@ -5655,22 +5655,22 @@ const OndaLevel1 = () => {
         {/* Биометрика */}
         <div className="mb-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-            <div className={`${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-red-500/30'} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-rose-200' : `${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-red-500/30'} backdrop-blur-sm`} rounded-2xl p-3 sm:p-4 text-center`}>
               <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
               <div className="text-xl sm:text-2xl font-bold">{displayHeartRate ?? '--'}</div>
               <div className="text-xs text-gray-400">{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
             </div>
-            <div className={`${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-blue-500/30'} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-sky-200' : `${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-blue-500/30'} backdrop-blur-sm`} rounded-2xl p-3 sm:p-4 text-center`}>
               <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
               <div className="text-xl sm:text-2xl font-bold">{vitalsData.br ? `${vitalsData.br.toFixed(1)}` : '--'}</div>
               <div className="text-xs text-gray-400">{t('settings.br_unit', '/min')}</div>
             </div>
-            <div className={`${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-orange-500/30'} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-orange-200' : `${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-orange-500/30'} backdrop-blur-sm`} rounded-2xl p-3 sm:p-4 text-center`}>
               <Activity className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400 mb-2 mx-auto" />
               <div className="text-xl sm:text-2xl font-bold">{vitalsData.stress ?? '--'}%</div>
               <div className="text-xs text-gray-400">{t('settings.stress_label', 'Stress')}</div>
             </div>
-            <div className={`${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-amber-600/30'} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-amber-200' : `${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-amber-600/30'} backdrop-blur-sm`} rounded-2xl p-3 sm:p-4 text-center`}>
               <Zap className="w-5 sm:w-6 h-5 sm:h-6 text-amber-400 mb-2 mx-auto" />
               <div className="text-xl sm:text-2xl font-bold">{vitalsData.energy ?? '--'}%</div>
               <div className="text-xs text-gray-400">{t('settings.energy_label', 'Energy')}</div>
@@ -5680,7 +5680,10 @@ const OndaLevel1 = () => {
 
         {/* Прогресс уровня */}
         <div className="mb-8">
-          <div className={`bg-black/20 backdrop-blur-sm rounded-2xl p-4 border transition-all duration-1000 ${
+          <div className={`rounded-2xl p-4 border transition-all duration-1000 ${
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+              : `bg-black/20 backdrop-blur-sm ${
             activeCircuit === 2
               ? 'border-cyan-500/30'
               : activeCircuit === 3
@@ -5704,12 +5707,13 @@ const OndaLevel1 = () => {
               : activeCircuit === 12
               ? 'border-fuchsia-500/40'
               : 'border-purple-500/30'
+          }`
           }`}>
             <div className="flex justify-between mb-2 text-sm">
               <span>{t('progress.level_progress')}</span>
               <span>{completedCount}/{totalPractices} {t('progress.practices')}</span>
             </div>
-            <div className="w-full h-3 bg-black/50 rounded-full overflow-hidden">
+            <div className={`w-full h-3 rounded-full overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-black/50'}`}>
               <div
                 className="h-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500"
                 style={{ width: `${progress}%` }}
@@ -5721,7 +5725,9 @@ const OndaLevel1 = () => {
         {/* Философский текст */}
         <div className="mb-8 sm:mb-12">
           <div className={`backdrop-blur-sm rounded-2xl p-4 sm:p-8 border transition-all duration-1000 ${
-            activeCircuit === 2
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+              : activeCircuit === 2
               ? 'bg-gradient-to-br from-teal-900/20 to-cyan-900/20 border-cyan-500/30'
               : activeCircuit === 3
               ? 'bg-gradient-to-br from-amber-900/20 to-orange-900/20 border-amber-600/30'
@@ -5745,7 +5751,7 @@ const OndaLevel1 = () => {
               ? 'bg-gradient-to-br from-fuchsia-800/30 to-red-700/30 border-fuchsia-500/40'
               : 'bg-gradient-to-br from-purple-900/20 to-indigo-900/20 border-purple-500/30'
           }`}>
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               {t(`philosophy.level_${activeCircuit}.text_1`)}<br/>
               {t(`philosophy.level_${activeCircuit}.text_2`)}<br/>
               {t(`philosophy.level_${activeCircuit}.text_3`)}<br/>
@@ -6043,12 +6049,12 @@ const OndaLevel1 = () => {
         {/* Подсказка для активации Watch - показываем когда мониторинг включен но HR не приходит */}
         {platform === 'ios' && watchHeartRate.watchStatus?.paired && watchHeartRate.isMonitoring && !watchHeartRate.watchStatus?.reachable && (
           <div className="mb-6 px-4">
-            <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-2xl p-4 text-center">
+            <div className={`rounded-2xl p-4 text-center ${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-cyan-200' : 'bg-cyan-500/10 border border-cyan-500/30'}`}>
               <div className="flex items-center justify-center gap-2 text-cyan-400 mb-2">
                 <Watch className="w-5 h-5" />
                 <span className="font-medium">{t('nav.watch_activate_title')}</span>
               </div>
-              <p className="text-white/70 text-sm">
+              <p className={`text-sm ${isLight ? 'text-slate-500' : 'text-white/70'}`}>
                 {t('nav.watch_activate_text')}
               </p>
             </div>
@@ -6075,9 +6081,13 @@ const OndaLevel1 = () => {
               <div
                 key={practice.id}
                 ref={el => practiceRefs.current[practice.id] = el}
-                className={`relative bg-black/40 backdrop-blur-sm rounded-lg p-6 border transition-all ${
+                className={`relative rounded-lg p-6 border transition-all ${
+                  isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'
+                } ${
                   isCompleted
-                    ? 'border-emerald-500/50 bg-emerald-500/10'
+                    ? isLight ? 'border-emerald-300 bg-emerald-50/70' : 'border-emerald-500/50 bg-emerald-500/10'
+                    : isLight
+                    ? glow.panelBorder
                     : activeCircuit === 2
                     ? 'border-cyan-500/30 hover:border-cyan-400/50'
                     : activeCircuit === 3
@@ -6150,8 +6160,12 @@ const OndaLevel1 = () => {
                         {sessions.map((session) => (
                           <div 
                             key={session.id}
-                            className={`bg-black/30 rounded p-3 border text-xs transition-all duration-1000 ${
-                              activeCircuit === 2
+                            className={`rounded p-3 border text-xs transition-all duration-1000 ${
+                              isLight ? 'bg-slate-100/80' : 'bg-black/30'
+                            } ${
+                              isLight
+                              ? 'border-slate-200'
+                              : activeCircuit === 2
                                 ? 'border-cyan-500/20'
                                 : activeCircuit === 3
                                 ? 'border-amber-600/20'
@@ -6255,7 +6269,9 @@ const OndaLevel1 = () => {
                 window.scrollTo(0, 0);
               }}
               className={`w-full py-3.5 px-6 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md ${
-                activeCircuit === 2
+                isLight
+                  ? `bg-white/60 ${glow.panelBorder} border text-slate-600 hover:bg-white/80 shadow-lg shadow-indigo-100/60`
+                  : activeCircuit === 2
                   ? 'bg-cyan-900/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-800/50 hover:border-cyan-400/60'
                   : activeCircuit === 3
                   ? 'bg-amber-900/40 border border-amber-600/40 text-amber-300 hover:bg-amber-800/50 hover:border-amber-500/60'
@@ -6286,7 +6302,9 @@ const OndaLevel1 = () => {
         )}
 
         <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl transition-all duration-1000 ${
-          activeCircuit === 2
+          isLight
+            ? `bg-white/55 backdrop-blur-xl shadow-xl shadow-indigo-100/50 ${glow.panelBorder}`
+            : activeCircuit === 2
             ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-blue-900/30 border-cyan-500/30'
             : activeCircuit === 3
             ? 'bg-gradient-to-br from-amber-900/30 via-orange-900/20 to-amber-900/30 border-amber-600/30'
@@ -6310,12 +6328,12 @@ const OndaLevel1 = () => {
             ? 'bg-gradient-to-br from-fuchsia-800/40 via-red-700/30 to-fuchsia-800/40 border-fuchsia-500/40'
             : 'bg-gradient-to-br from-indigo-900/30 via-purple-900/20 to-pink-900/30 border-indigo-500/30'
         }`}>
-          <div className="space-y-4 text-gray-200">
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.intro`)}</p>
-            
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_1`)}</p>
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_2`)}</p>
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_3`)}</p>
+          <div className={`space-y-4 ${isLight ? '[&_p.story]:text-slate-600' : 'text-gray-200'}`}>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.intro`)}</p>
+
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.story_1`)}</p>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.story_2`)}</p>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.story_3`)}</p>
             {activeCircuit === 1 && (
               <p className="text-cyan-300 leading-relaxed italic">{t('level_goal.level_1.story_4')}</p>
             )}
@@ -6332,9 +6350,9 @@ const OndaLevel1 = () => {
               }`}>{t(`level_goal.level_${activeCircuit}.identity_3`)}</p>
             </div>
             
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_1`)}</p>
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_2`)}</p>
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_3`)}</p>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.wisdom_1`)}</p>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.wisdom_2`)}</p>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.wisdom_3`)}</p>
             <p className={`leading-relaxed italic ${
               activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : 'text-cyan-300'
             }`}>{t(`level_goal.level_${activeCircuit}.wisdom_4`)}</p>
@@ -6358,13 +6376,13 @@ const OndaLevel1 = () => {
             {t('terra_speaks.title')}
           </h3>
           <div className="space-y-4">
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               "{t(`terra_speaks.level_${activeCircuit}.quote_1`)}"
             </p>
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               "{t(`terra_speaks.level_${activeCircuit}.quote_2`)}"
             </p>
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               "{t(`terra_speaks.level_${activeCircuit}.quote_3`)}"
             </p>
             <p className={`text-lg leading-relaxed italic font-semibold text-center transition-colors duration-1000 ${
@@ -6408,10 +6426,10 @@ const OndaLevel1 = () => {
         <div className="space-y-4 mb-12">
           {/* Артефакт контура (Roots of Being и т.д.) */}
           {currentCircuit.artifact && (
-          <div className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+          <div className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
             artifacts.some(a => a.circuitId === currentCircuit.id)
-              ? 'border-amber-600/50 bg-yellow-500/10'
-              : 'border-purple-500/50 bg-purple-500/10'
+              ? isLight ? 'border-amber-300 bg-amber-50/70' : 'border-amber-600/50 bg-yellow-500/10'
+              : isLight ? 'border-violet-300 bg-violet-50/70' : 'border-purple-500/50 bg-purple-500/10'
           }`}>
             <div className="flex items-center gap-4">
               {artifacts.some(a => a.circuitId === currentCircuit.id) ? (
@@ -6435,10 +6453,10 @@ const OndaLevel1 = () => {
             const hasClearWill = artifacts.some(a => a.id === 'clear-will');
             return (
               <div
-                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
                   hasClearWill
-                    ? 'border-amber-600/50 bg-yellow-500/10'
-                    : 'border-purple-500/50 bg-purple-500/10'
+                    ? isLight ? 'border-amber-300 bg-amber-50/70' : 'border-amber-600/50 bg-yellow-500/10'
+                    : isLight ? 'border-violet-300 bg-violet-50/70' : 'border-purple-500/50 bg-purple-500/10'
                 }`}
               >
                 <div className="flex items-center gap-4">
@@ -6480,10 +6498,10 @@ const OndaLevel1 = () => {
             const hasInnerWave = artifacts.some(a => a.id === 'inner-wave');
             return (
               <div
-                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
                   hasInnerWave
-                    ? 'border-amber-600/50 bg-yellow-500/10'
-                    : 'border-purple-500/50 bg-purple-500/10'
+                    ? isLight ? 'border-amber-300 bg-amber-50/70' : 'border-amber-600/50 bg-yellow-500/10'
+                    : isLight ? 'border-violet-300 bg-violet-50/70' : 'border-purple-500/50 bg-purple-500/10'
                 }`}
               >
                 <div className="flex items-center gap-4">
@@ -6525,10 +6543,10 @@ const OndaLevel1 = () => {
             const hasTransformationPulse = artifacts.some(a => a.id === 'transformation-pulse');
             return (
               <div
-                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
                   hasTransformationPulse
-                    ? 'border-amber-600/50 bg-yellow-500/10'
-                    : 'border-purple-500/50 bg-purple-500/10'
+                    ? isLight ? 'border-amber-300 bg-amber-50/70' : 'border-amber-600/50 bg-yellow-500/10'
+                    : isLight ? 'border-violet-300 bg-violet-50/70' : 'border-purple-500/50 bg-purple-500/10'
                 }`}
               >
                 <div className="flex items-center gap-4">
@@ -6569,7 +6587,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-violet-50/70' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6599,7 +6617,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-violet-50/70' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6629,7 +6647,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-violet-50/70' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6659,7 +6677,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-violet-50/70' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6689,7 +6707,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-violet-50/70' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6759,18 +6777,18 @@ const OndaLevel1 = () => {
             {t('terra_final.title')}
           </h3>
           <div className="space-y-4">
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               {t(`terra_final.level_${activeCircuit}.line_1`)}
             </p>
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               {t(`terra_final.level_${activeCircuit}.line_2`)}
             </p>
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               {t(`terra_final.level_${activeCircuit}.line_3`)}
             </p>
             {activeCircuit === 2 ? (
               <>
-                <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+                <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
                   {t('terra_final.level_2.line_4')}
                 </p>
                 <p className={`text-sm sm:text-lg leading-relaxed text-center italic font-semibold transition-colors duration-1000 text-cyan-200`}>
@@ -6894,7 +6912,7 @@ const OndaLevel1 = () => {
                 return (
                   <div
                     key={idx}
-                    className="bg-gradient-to-br from-yellow-900/30 to-orange-900/30 rounded-2xl p-6 border border-amber-600/50"
+                    className={`rounded-2xl p-6 border ${isLight ? 'bg-amber-50/70 backdrop-blur-xl shadow-lg shadow-amber-100/70 border-amber-300' : 'bg-gradient-to-br from-yellow-900/30 to-orange-900/30 border-amber-600/50'}`}
                   >
                     <Star className="w-8 h-8 text-amber-400 fill-yellow-400 mb-3" />
                     <h4 className="text-lg font-bold mb-1">{artifactName}</h4>
