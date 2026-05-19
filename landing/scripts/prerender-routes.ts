@@ -257,6 +257,61 @@ export function glossaryLocalizedLangs(slug: string): readonly string[] {
 }
 
 /**
+ * Programmatic article-localisation rollout for UK and ZH. Their
+ * articles.json carries the full reviewed article translation; this
+ * drip-publishes ARTICLE_ROLLOUT_BATCH articles per Monday from each
+ * language's start date, gated at BUILD TIME — the same anti-scaled-content
+ * discipline as the ES article rollout and the glossary rollout.
+ *
+ * Staggered so no Monday redeploy surfaces two full-locale batches at once:
+ * ES articles finish 2026-07-13, so UK starts 2026-08-03; ZH starts
+ * 2026-11-02, after the RU glossary rollout has settled.
+ *
+ * ES and RU keep their existing hand-curated pilot lists above — this block
+ * only adds UK and ZH.
+ */
+const ARTICLE_ROLLOUT_BATCH = 11
+const ARTICLE_LOCALE_ROLLOUTS: readonly { lang: string; start: string }[] = [
+  { lang: 'uk', start: '2026-08-03' },
+  { lang: 'zh', start: '2026-11-02' },
+]
+function articleRolloutDate(start: string, index: number): string {
+  const d = new Date(`${start}T00:00:00Z`)
+  d.setUTCDate(d.getUTCDate() + Math.floor(index / ARTICLE_ROLLOUT_BATCH) * 7)
+  return d.toISOString().slice(0, 10)
+}
+function loadArticleBodies(lang: string): Record<string, unknown> {
+  try {
+    const f = JSON.parse(
+      readFileSync(join(__dirname, '..', 'public', 'locales', lang, 'articles.json'), 'utf-8'),
+    ) as { bodies?: Record<string, unknown> }
+    return f.bodies ?? {}
+  } catch {
+    return {}
+  }
+}
+/** lang → article slugs whose publishOn Monday has been reached at build time. */
+const liveLocaleArticles: Record<string, string[]> = (() => {
+  const out: Record<string, string[]> = {}
+  for (const { lang, start } of ARTICLE_LOCALE_ROLLOUTS) {
+    const bodies = loadArticleBodies(lang)
+    const slugs = articles
+      .map((a) => a.slug)
+      .filter((s) => s in bodies)
+      .sort()
+    const live = slugs.filter((_s, i) => articleRolloutDate(start, i) <= BUILD_DATE)
+    if (live.length) out[lang] = live
+  }
+  return out
+})()
+const liveLocaleArticleSetByLang: Record<string, Set<string>> = Object.fromEntries(
+  Object.entries(liveLocaleArticles).map(([lang, slugs]) => [lang, new Set(slugs)]),
+)
+const localizedLocaleArticleRoutes: string[] = Object.entries(liveLocaleArticles).flatMap(
+  ([lang, slugs]) => slugs.map((s) => `/${lang}/articles/${s}`),
+)
+
+/**
  * Review-localisation rollout schedule. Each entry is one language ×
  * one review category, with the date its localised /<lang>/reviews/*
  * URLs go live. A category's routes are prerendered — and enter the
@@ -351,12 +406,19 @@ export function articleLocalizedLangs(slug: string): readonly string[] {
   const langs: string[] = ['en']
   if (ES_PILOT_ARTICLE_SET.has(slug)) langs.push('es')
   if (RU_PILOT_ARTICLE_SET.has(slug)) langs.push('ru')
+  for (const [lang, set] of Object.entries(liveLocaleArticleSetByLang)) {
+    if (set.has(slug)) langs.push(lang)
+  }
   return langs
 }
 
 /** Union of all article slugs that have at least one localised URL prerendered. */
 export const ALL_PILOT_ARTICLE_SLUGS: readonly string[] = Array.from(
-  new Set<string>([...ES_PILOT_ARTICLE_SLUGS, ...RU_PILOT_ARTICLE_SLUGS]),
+  new Set<string>([
+    ...ES_PILOT_ARTICLE_SLUGS,
+    ...RU_PILOT_ARTICLE_SLUGS,
+    ...Object.values(liveLocaleArticles).flat(),
+  ]),
 )
 
 // Pages that stay EN-only for now (Articles, Glossary, etc).
@@ -390,6 +452,7 @@ export function getPrerenderRoutes(): string[] {
     ...articles.map((a) => `/articles/${a.slug}`),
     ...localizedEsArticleRoutes,
     ...localizedRuArticleRoutes,
+    ...localizedLocaleArticleRoutes,
     ...localizedPartRoutes,
     ...localizedLevelRoutes,
     ...localizedMetricRoutes,
@@ -420,6 +483,7 @@ export const LOCALIZED_PART_ROUTE_SET = new Set(localizedPartRoutes)
 export const LOCALIZED_ARTICLE_ROUTE_SET = new Set([
   ...localizedEsArticleRoutes,
   ...localizedRuArticleRoutes,
+  ...localizedLocaleArticleRoutes,
 ])
 
 /** Set of localized review/comparison/hub/methodology routes (all pilots). */
