@@ -18,14 +18,13 @@ import { getMarketingOptIn, setMarketingOptIn } from '../services/pushNotificati
 
 interface SettingsModalProps {
   onClose: () => void;
-  /** Транзитный проп — пока нужен только для VitalsDiagnostics (мигрирует позже). */
-  isLightTheme: boolean;
+  /** Устаревший проп — тема теперь через ThemeProvider. Принимается ради
+   *  обратной совместимости с вызовом из onda-level1-demo_27 (уберём в фазе
+   *  миграции главного экрана). Не используется. */
+  isLightTheme?: boolean;
 }
 
-export const SettingsModal: React.FC<SettingsModalProps> = ({
-  onClose,
-  isLightTheme,
-}) => {
+export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
   const { t } = useTranslation();
   const [showDiagnostics, setShowDiagnostics] = useState(false);
   const [dailyEnabled, setDailyEnabled] = useState<boolean>(() => getDailyEnabled());
@@ -273,10 +272,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({
       </div>
 
       {showDiagnostics && (
-        <VitalsDiagnostics
-          onClose={() => setShowDiagnostics(false)}
-          isLightTheme={isLightTheme}
-        />
+        <VitalsDiagnostics onClose={() => setShowDiagnostics(false)} />
       )}
     </div>
   );
