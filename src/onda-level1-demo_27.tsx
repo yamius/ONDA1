@@ -4573,15 +4573,7 @@ const OndaLevel1 = () => {
           >
             <button
               onClick={handleOnboardingNext}
-              className={`w-full py-4 rounded-full text-lg font-semibold transition-all border ${
-                onboardingScreen === 3
-                  ? isLight
-                    ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800 shadow-lg shadow-indigo-200/50'
-                    : 'bg-violet-600 hover:bg-violet-700 text-white border-transparent shadow-lg shadow-violet-500/30'
-                  : isLight
-                    ? 'bg-white/60 hover:bg-white/80 text-slate-700 border-violet-200'
-                    : 'bg-white/20 hover:bg-white/30 text-white border-white/30'
-              }`}
+              className={`w-full py-4 rounded-xl text-lg font-semibold transition-all border bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               data-testid="button-onboarding-next"
             >
               {onboardingScreen === 3 ? t('onboarding.start_journey') : t('onboarding.continue')}
