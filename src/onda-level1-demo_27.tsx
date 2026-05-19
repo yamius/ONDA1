@@ -6160,7 +6160,7 @@ const OndaLevel1 = () => {
                     <Circle className="w-6 h-6 text-gray-600" />
                   )}
                 </div>
-                <p className="text-sm text-gray-300 mb-4">{getPracticeDesc(practice.id)}</p>
+                <p className={`text-sm mb-4 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{getPracticeDesc(practice.id)}</p>
                 
                 {sessions.length > 0 && (
                   <div className="mb-4">
