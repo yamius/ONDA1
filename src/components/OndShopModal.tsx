@@ -19,10 +19,10 @@ export const OndShopModal: React.FC<OndShopModalProps> = ({
   if (!isOpen) return null;
 
   const packages = [
-    { ond: 100, bonus: 0, icon: Sparkles, color: 'from-blue-500 to-cyan-500', popular: false },
-    { ond: 500, bonus: 10, icon: Zap, color: 'from-purple-500 to-pink-500', popular: true },
-    { ond: 1000, bonus: 20, icon: Crown, color: 'from-yellow-500 to-orange-500', popular: false },
-    { ond: 2500, bonus: 30, icon: Crown, color: 'from-emerald-500 to-teal-500', popular: false },
+    { ond: 100, bonus: 0, icon: Sparkles, color: 'from-sky-200 to-cyan-200', popular: false },
+    { ond: 500, bonus: 10, icon: Zap, color: 'from-violet-200 to-fuchsia-200', popular: true },
+    { ond: 1000, bonus: 20, icon: Crown, color: 'from-amber-200 to-orange-200', popular: false },
+    { ond: 2500, bonus: 30, icon: Crown, color: 'from-emerald-200 to-teal-200', popular: false },
   ];
 
   const calculatePrice = (ond: number) => {
@@ -92,7 +92,7 @@ export const OndShopModal: React.FC<OndShopModalProps> = ({
 
                   <div className="flex items-start justify-between mb-3">
                     <div className={`p-2.5 rounded-xl bg-gradient-to-br ${pkg.color}`}>
-                      <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
+                      <Icon className="w-6 h-6 sm:w-7 sm:h-7 text-slate-700" />
                     </div>
                     {pkg.bonus > 0 && (
                       <div className="bg-emerald-500 text-white text-xs font-bold px-2.5 py-1 rounded-full">
@@ -124,11 +124,7 @@ export const OndShopModal: React.FC<OndShopModalProps> = ({
                   </div>
 
                   <button
-                    className={`w-full py-2.5 sm:py-3 rounded-xl font-bold transition-all text-sm sm:text-base ${
-                      pkg.popular
-                        ? 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white'
-                        : 'bg-surface hover:opacity-80 text-text-primary'
-                    }`}
+                    className="w-full py-2.5 sm:py-3 rounded-xl font-bold transition-all text-sm sm:text-base bg-sky-100 hover:bg-sky-200 text-sky-700 border border-sky-200"
                     data-testid={`button-buy-${pkg.ond}`}
                   >
                     {t('shop.buy_now', 'Buy Now')}

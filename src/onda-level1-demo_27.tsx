@@ -4444,7 +4444,7 @@ const OndaLevel1 = () => {
     };
 
     return (
-      <div className="h-full text-white overflow-x-hidden bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950">
+      <div className={`h-full overflow-x-hidden ${isLight ? 'text-slate-800 bg-gradient-to-br from-indigo-50 via-white to-violet-100' : 'text-white bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950'}`}>
         <div
           className="min-h-screen flex flex-col justify-between px-6 py-8 max-w-2xl mx-auto"
         >
@@ -4459,7 +4459,7 @@ const OndaLevel1 = () => {
                 className={`w-3 h-3 rounded-full transition-all ${
                   onboardingScreen === dot
                     ? 'bg-violet-400 scale-125'
-                    : 'bg-white/30'
+                    : isLight ? 'bg-slate-300' : 'bg-white/30'
                 }`}
                 data-testid={`onboarding-dot-${dot}`}
               />
@@ -4472,8 +4472,8 @@ const OndaLevel1 = () => {
                 <div className="text-center mb-6">
                   <h1 className="text-2xl sm:text-3xl font-bold">{t('onboarding.screen1_title')}</h1>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg">{t('onboarding.screen1_text1')}</p>
-                <ul className="space-y-3 text-white/80">
+                <p className={`leading-relaxed text-lg ${isLight ? 'text-slate-700' : 'text-white/90'}`}>{t('onboarding.screen1_text1')}</p>
+                <ul className={`space-y-3 ${isLight ? 'text-slate-600' : 'text-white/80'}`}>
                   <li className="flex items-start gap-3">
                     <span className="text-violet-400 mt-1">•</span>
                     <span>{t('onboarding.screen1_list1')}</span>
@@ -4496,7 +4496,7 @@ const OndaLevel1 = () => {
                 {/* Bridge to the iOS ATT prompt that fires after Continue */}
                 <div className="mt-6 rounded-xl border border-violet-500/30 bg-violet-500/10 p-4 flex items-start gap-3">
                   <span aria-hidden className="mt-0.5 text-violet-300 text-base">ℹ️</span>
-                  <p className="text-sm text-violet-100/90 italic leading-relaxed">
+                  <p className={`text-sm italic leading-relaxed ${isLight ? 'text-violet-700' : 'text-violet-100/90'}`}>
                     {attCopyVariantRef.current === 'b'
                       ? t('onboarding.screen1_bridge_b')
                       : t('onboarding.screen1_bridge')}
@@ -4510,9 +4510,9 @@ const OndaLevel1 = () => {
                 <div className="text-center mb-6">
                   <h1 className="text-2xl sm:text-3xl font-bold">{t('onboarding.screen2_title')}</h1>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg">{t('onboarding.screen2_text1')}</p>
-                <p className="text-white/80 font-medium">{t('onboarding.screen2_text2')}</p>
-                <ul className="space-y-3 text-white/80">
+                <p className={`leading-relaxed text-lg ${isLight ? 'text-slate-700' : 'text-white/90'}`}>{t('onboarding.screen2_text1')}</p>
+                <p className={`font-medium ${isLight ? 'text-slate-600' : 'text-white/80'}`}>{t('onboarding.screen2_text2')}</p>
+                <ul className={`space-y-3 ${isLight ? 'text-slate-600' : 'text-white/80'}`}>
                   <li className="flex items-start gap-3">
                     <span className="text-cyan-400 mt-1">•</span>
                     <span>{t('onboarding.screen2_list1')}</span>
@@ -4535,7 +4535,7 @@ const OndaLevel1 = () => {
                 {/* Bridge to the iOS notifications prompt that fires after Continue */}
                 <div className="mt-6 rounded-xl border border-cyan-500/30 bg-cyan-500/10 p-4 flex items-start gap-3">
                   <span aria-hidden className="mt-0.5 text-cyan-300 text-base">🔔</span>
-                  <p className="text-sm text-cyan-100/90 italic leading-relaxed">
+                  <p className={`text-sm italic leading-relaxed ${isLight ? 'text-cyan-700' : 'text-cyan-100/90'}`}>
                     {t('onboarding.screen2_bridge')}
                   </p>
                 </div>
@@ -4547,8 +4547,8 @@ const OndaLevel1 = () => {
                 <div className="text-center mb-6">
                   <h1 className="text-2xl sm:text-3xl font-bold">{t('onboarding.screen3_title')}</h1>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg">{t('onboarding.screen3_text1')}</p>
-                <ul className="space-y-3 text-white/80">
+                <p className={`leading-relaxed text-lg ${isLight ? 'text-slate-700' : 'text-white/90'}`}>{t('onboarding.screen3_text1')}</p>
+                <ul className={`space-y-3 ${isLight ? 'text-slate-600' : 'text-white/80'}`}>
                   <li className="flex items-start gap-3">
                     <span className="text-amber-400 mt-1">•</span>
                     <span>{t('onboarding.screen3_list1')}</span>
@@ -4573,10 +4573,14 @@ const OndaLevel1 = () => {
           >
             <button
               onClick={handleOnboardingNext}
-              className={`w-full py-4 rounded-full text-lg font-semibold transition-all ${
+              className={`w-full py-4 rounded-full text-lg font-semibold transition-all border ${
                 onboardingScreen === 3
-                  ? 'bg-violet-600 hover:bg-violet-700 text-white shadow-lg shadow-violet-500/30'
-                  : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
+                  ? isLight
+                    ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800 shadow-lg shadow-indigo-200/50'
+                    : 'bg-violet-600 hover:bg-violet-700 text-white border-transparent shadow-lg shadow-violet-500/30'
+                  : isLight
+                    ? 'bg-white/60 hover:bg-white/80 text-slate-700 border-violet-200'
+                    : 'bg-white/20 hover:bg-white/30 text-white border-white/30'
               }`}
               data-testid="button-onboarding-next"
             >
@@ -6894,7 +6898,7 @@ const OndaLevel1 = () => {
       {/* Модальное окно дневника */}
       {showJournalModal && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
-          <div className={`max-w-4xl w-full max-h-[90vh] rounded-2xl border shadow-2xl my-4 flex flex-col ${isLight ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-indigo-500/30'}`}>
+          <div className={`max-w-4xl w-full max-h-[90vh] rounded-2xl border shadow-2xl my-4 flex flex-col overflow-hidden ${isLight ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-indigo-500/30'}`}>
             <div className={`sticky top-0 backdrop-blur-sm border-b p-4 sm:p-6 flex items-center justify-between ${isLight ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-indigo-500/30'}`}>
               <h2 className="text-lg sm:text-2xl font-bold">📖 {t('practices.journal_title')}</h2>
               <button

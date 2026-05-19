@@ -5,6 +5,7 @@ import { Capacitor } from '@capacitor/core';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 import { LizaChatModal } from './LizaChatModal';
 import { trackTenjinEmotionalCheck } from '../lib/tenjin';
+import { useTheme } from '../theme/ThemeProvider';
 
 interface EmotionalCheckModalProps {
   isOpen: boolean;
@@ -26,6 +27,7 @@ interface EmotionalResult {
 
 export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalCheckModalProps) {
   const { t } = useTranslation();
+  const isLight = useTheme().resolved === 'light';
   const [recordingState, setRecordingState] = useState<RecordingState>('idle');
   const [recordingTime, setRecordingTime] = useState(0);
   const [selectedPractice, setSelectedPractice] = useState<string | null>(null);
@@ -384,15 +386,15 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       style={{ paddingTop: 'max(20px, env(safe-area-inset-top))', paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}
     >
       <div className="bg-gradient-to-br from-bg to-surface text-text-primary rounded-3xl max-w-lg w-full shadow-2xl border border-border/10 overflow-hidden max-h-full flex flex-col my-auto">
-        <div className="relative bg-gradient-to-r from-accent to-accent-2 p-4 flex-shrink-0">
+        <div className={`relative p-4 flex-shrink-0 ${isLight ? 'bg-gradient-to-r from-indigo-100 to-violet-100' : 'bg-gradient-to-r from-accent to-accent-2'}`}>
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
+            className={`absolute top-4 right-4 transition-colors ${isLight ? 'text-slate-500 hover:text-slate-800' : 'text-white/80 hover:text-white'}`}
           >
             <X className="w-6 h-6" />
           </button>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-0.5 text-center">{t('emotional_check.title')}</h2>
-          <p className="text-indigo-100 text-sm text-center">{t('emotional_check.subtitle')}</p>
+          <h2 className={`text-2xl sm:text-3xl font-bold mb-0.5 text-center ${isLight ? 'text-slate-800' : 'text-white'}`}>{t('emotional_check.title')}</h2>
+          <p className={`text-sm text-center ${isLight ? 'text-slate-500' : 'text-indigo-100'}`}>{t('emotional_check.subtitle')}</p>
         </div>
 
         <div className="p-4 space-y-4 overflow-y-auto flex-1" style={{ paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}>
@@ -407,7 +409,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
               </div>
               <button
                 onClick={startRecording}
-                className="w-full bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white font-semibold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-base"
+                className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-base ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white'}`}
               >
                 {t('emotional_check.start_recording')}
               </button>
@@ -476,7 +478,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                 </button>
                 <button
                   onClick={analyzeVoice}
-                  className="flex-1 bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white font-semibold py-3 px-4 rounded-xl transition-all text-base"
+                  className={`flex-1 font-semibold py-3 px-4 rounded-xl transition-all text-base ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white'}`}
                 >
                   {t('emotional_check.analyze')}
                 </button>
