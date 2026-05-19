@@ -12,7 +12,7 @@ import { parts } from '../src/pages/PartPage'
 import { getArticleBySlug } from '../src/data/articles'
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
-import { getReviewBySlug, getComparisonBySlug, getReviewsForComparison } from '../src/data/reviews'
+import { reviews, comparisons, getReviewBySlug, getComparisonBySlug, getReviewsForComparison } from '../src/data/reviews'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
@@ -249,6 +249,10 @@ export interface RouteMeta {
     pros: string[]
     cons: string[]
     url: string
+    /** Form factor, e.g. "Smart ring" — Product.category. */
+    productType?: string
+    /** Most-recent verified USD price — emitted as an Offer on the Product. */
+    priceUsd?: number
   }
   /** Comparison round-up — emitted as CollectionPage + ItemList. */
   itemList?: {
@@ -881,7 +885,18 @@ function buildReviewJsonLd(r: NonNullable<RouteMeta['review']>): string {
       '@type': 'Product',
       name: r.productName,
       brand: { '@type': 'Brand', name: r.brand },
+      ...(r.productType ? { category: r.productType } : {}),
       ...(r.image ? { image: r.image } : {}),
+      ...(r.priceUsd
+        ? {
+            offers: {
+              '@type': 'Offer',
+              price: r.priceUsd,
+              priceCurrency: 'USD',
+              availability: 'https://schema.org/InStock',
+            },
+          }
+        : {}),
     },
     reviewRating: {
       '@type': 'Rating',
@@ -1657,13 +1672,31 @@ export function getMetaForRoute(route: string): RouteMeta {
 
   // /reviews — biohacking-tool review hub.
   if (route === '/reviews') {
+    const hubDesc =
+      'Independent, criteria-based reviews of HRV trackers and wearables — scored on measurement accuracy, data access and real-world use. The scoring methodology is public.'
     return {
       title: 'HRV Trackers & Wearables — Independent Reviews | ONDA Life',
-      description:
-        'Independent, criteria-based reviews of HRV trackers and wearables — scored on measurement accuracy, data access and real-world use. The scoring methodology is public.',
+      description: hubDesc,
       url,
       breadcrumbs,
       ogType: 'website',
+      // CollectionPage + ItemList: the full catalogue of scored tools, so
+      // search and AI engines read /reviews as the curated index of reviews.
+      itemList: {
+        name: 'ONDA Life — Biohacking Tool Reviews',
+        description: hubDesc,
+        url,
+        items: [
+          ...comparisons.map((c) => ({
+            url: `${SITE_URL}/reviews/compare/${c.slug}`,
+            name: c.title,
+          })),
+          ...reviews.map((r) => ({
+            url: `${SITE_URL}/reviews/${r.slug}`,
+            name: `${r.name} review`,
+          })),
+        ],
+      },
     }
   }
   if (route === '/reviews/methodology') {
@@ -1722,6 +1755,8 @@ export function getMetaForRoute(route: string): RouteMeta {
           pros: review.pros,
           cons: review.cons,
           url,
+          productType: review.productType,
+          priceUsd: review.price?.usd,
         },
       }
     }
