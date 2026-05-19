@@ -401,8 +401,8 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
           {recordingState === 'idle' && (
             <div className="text-center space-y-4">
               <div className="bg-gradient-to-br from-accent/20 to-accent-2/20 rounded-2xl p-6 border border-accent/30">
-                <div className="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-accent to-accent-2 rounded-full flex items-center justify-center">
-                  <Mic className="w-10 h-10 text-white" />
+                <div className={`w-20 h-20 mx-auto mb-3 rounded-full flex items-center justify-center ${isLight ? 'bg-gradient-to-br from-indigo-200 to-violet-200' : 'bg-gradient-to-br from-accent to-accent-2'}`}>
+                  <Mic className={`w-10 h-10 ${isLight ? 'text-indigo-600' : 'text-white'}`} />
                 </div>
                 <p className="text-text-primary/80 mb-2 text-base">{t('emotional_check.instruction')}</p>
                 <p className="text-text-muted text-sm">{t('emotional_check.instruction_detail')}</p>
@@ -432,7 +432,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
               <p className="text-text-secondary text-sm">{t('emotional_check.recording_in_progress')}</p>
               <button
                 onClick={stopRecording}
-                className="w-full bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
+                className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base ${isLight ? 'bg-rose-100 hover:bg-rose-200 text-rose-700 border border-rose-300' : 'bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white'}`}
               >
                 <Square className="w-5 h-5" />
                 {t('emotional_check.stop_recording')}
@@ -502,22 +502,22 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
           {recordingState === 'result' && emotionalResult && (
             <div className="space-y-3">
-              <div className={`bg-gradient-to-br ${getEmotionColor(emotionalResult.primaryEmotion)} rounded-2xl p-5 text-white`}>
+              <div className={`rounded-2xl p-5 ${isLight ? 'bg-gradient-to-br from-indigo-100 to-violet-100 text-slate-700' : `bg-gradient-to-br ${getEmotionColor(emotionalResult.primaryEmotion)} text-white`}`}>
                 <div className="text-center mb-3">
                   <div className="text-5xl mb-2">🎭</div>
                   <h3 className="text-2xl font-bold mb-1">{t(emotionalResult.primaryEmotion)}</h3>
-                  <p className="text-white/90 text-sm">{t('emotional_check.detected_state')}</p>
+                  <p className={`text-sm ${isLight ? 'text-slate-500' : 'text-white/90'}`}>{t('emotional_check.detected_state')}</p>
                 </div>
 
-                <div className="space-y-3 bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                <div className={`space-y-3 backdrop-blur-sm rounded-xl p-4 ${isLight ? 'bg-white/60' : 'bg-white/10'}`}>
                   <div>
                     <div className="flex justify-between text-sm mb-1 gap-2">
                       <span>{t('emotional_check.confidence')}</span>
                       <span className="font-semibold">{Math.round(emotionalResult.confidence * 100)}%</span>
                     </div>
-                    <div className="bg-white/20 rounded-full h-2.5 overflow-hidden">
+                    <div className={`rounded-full h-2.5 overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-white/20'}`}>
                       <div
-                        className="bg-white h-full rounded-full transition-all duration-1000"
+                        className={`h-full rounded-full transition-all duration-1000 ${isLight ? 'bg-indigo-500' : 'bg-white'}`}
                         style={{ width: `${emotionalResult.confidence * 100}%` }}
                       />
                     </div>
@@ -528,9 +528,9 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                       <span>{t('emotional_check.energy_level')}</span>
                       <span className="font-semibold">{Math.round(emotionalResult.energyLevel * 100)}%</span>
                     </div>
-                    <div className="bg-white/20 rounded-full h-2.5 overflow-hidden">
+                    <div className={`rounded-full h-2.5 overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-white/20'}`}>
                       <div
-                        className="bg-yellow-300 h-full rounded-full transition-all duration-1000"
+                        className={`h-full rounded-full transition-all duration-1000 ${isLight ? 'bg-amber-400' : 'bg-yellow-300'}`}
                         style={{ width: `${emotionalResult.energyLevel * 100}%` }}
                       />
                     </div>
@@ -568,7 +568,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
               <button
                 onClick={() => setIsLizaChatOpen(true)}
-                className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
+                className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base ${isLight ? 'bg-sky-100 hover:bg-sky-200 text-sky-700 border border-sky-200' : 'bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white'}`}
                 data-testid="button-start-liza-chat"
               >
                 <MessageCircle className="w-5 h-5" />
