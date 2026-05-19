@@ -362,7 +362,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
             id="login_button"
             type="submit"
             disabled={loading}
-            className={`w-full py-3 sm:py-4 px-6 rounded-xl font-medium transition-all text-sm sm:text-base disabled:opacity-50 ${
+            className={`w-full py-2.5 sm:py-3 px-6 rounded-xl font-medium transition-all text-sm sm:text-base disabled:opacity-50 ${
               isLight
                 ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800'
                 : 'bg-accent hover:opacity-90 text-white'
@@ -399,9 +399,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
         <div className="space-y-4 sm:space-y-6">
           <button
             onClick={handleGoogleSignIn}
-            className={`w-full py-2.5 sm:py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 text-sm sm:text-base ${
-              'bg-surface-2 hover:opacity-80 text-text-primary border border-border/15'
-            }`}
+            className="w-full py-2.5 sm:py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 text-sm sm:text-base bg-indigo-500/15 hover:bg-indigo-500/25 text-text-primary border border-indigo-400/40"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24">
               <path
