@@ -5274,29 +5274,7 @@ const OndaLevel1 = () => {
                 <button
                   onClick={() => { setShowChapterDropdown(!showChapterDropdown); setShowLevelDropdown(false); }}
                   className={`backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
-                    activeCircuit === 2
-                      ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                      : activeCircuit === 3
-                      ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                      : activeCircuit === 4
-                      ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                      : activeCircuit === 5
-                      ? 'bg-yellow-700/20 hover:bg-yellow-700/30 border-yellow-600/50'
-                      : activeCircuit === 6
-                      ? 'bg-emerald-500/20 hover:bg-emerald-500/30 border-emerald-400/50'
-                      : activeCircuit === 7
-                      ? 'bg-sky-500/20 hover:bg-sky-500/30 border-sky-400/50'
-                      : activeCircuit === 8
-                      ? 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/50'
-                      : activeCircuit === 9
-                      ? 'bg-yellow-500/20 hover:bg-yellow-500/30 border-yellow-400/50'
-                      : activeCircuit === 10
-                      ? 'bg-orange-500/20 hover:bg-orange-500/30 border-amber-400/50'
-                      : activeCircuit === 11
-                      ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
-                      : activeCircuit === 12
-                      ? 'bg-fuchsia-500/20 hover:bg-fuchsia-500/30 border-red-400/50'
-                      : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
+                    emoTint
                   }`}
                 >
                   <div className="flex items-center justify-center">
@@ -5394,29 +5372,7 @@ const OndaLevel1 = () => {
                 <button
                   onClick={() => { setShowLevelDropdown(!showLevelDropdown); setShowChapterDropdown(false); }}
                   className={`backdrop-blur-sm font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
-                    activeCircuit === 2
-                      ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                      : activeCircuit === 3
-                      ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                      : activeCircuit === 4
-                      ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                      : activeCircuit === 5
-                      ? 'bg-yellow-700/20 hover:bg-yellow-700/30 border-yellow-600/50'
-                      : activeCircuit === 6
-                      ? 'bg-emerald-500/20 hover:bg-emerald-500/30 border-emerald-400/50'
-                      : activeCircuit === 7
-                      ? 'bg-sky-500/20 hover:bg-sky-500/30 border-sky-400/50'
-                      : activeCircuit === 8
-                      ? 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/50'
-                      : activeCircuit === 9
-                      ? 'bg-yellow-500/20 hover:bg-yellow-500/30 border-yellow-400/50'
-                      : activeCircuit === 10
-                      ? 'bg-orange-500/20 hover:bg-orange-500/30 border-amber-400/50'
-                      : activeCircuit === 11
-                      ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
-                      : activeCircuit === 12
-                      ? 'bg-fuchsia-500/20 hover:bg-fuchsia-500/30 border-red-400/50'
-                      : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
+                    emoTint
                   }`}
                 >
                   <div className="flex items-center justify-center">
