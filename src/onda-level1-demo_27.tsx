@@ -4994,14 +4994,28 @@ const OndaLevel1 = () => {
   const glow = CIRCUIT_GLOW_LIGHT[activeCircuit] ?? CIRCUIT_GLOW_DEFAULT;
   // Палитра кнопки эмоциональной сверки — translucent-тинт контура.
   const emoTint = activeCircuit === 2
-    ? 'bg-cyan-500/10 border border-cyan-400/40'
+    ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-400/40'
     : activeCircuit === 3
-    ? 'bg-amber-600/10 border border-amber-500/40'
+    ? 'bg-amber-600/10 hover:bg-amber-600/20 border border-amber-500/40'
     : activeCircuit === 4
-    ? 'bg-teal-500/10 border border-teal-400/40'
+    ? 'bg-teal-500/10 hover:bg-teal-500/20 border border-teal-400/40'
+    : activeCircuit === 5
+    ? 'bg-yellow-500/10 hover:bg-yellow-500/20 border border-yellow-500/40'
+    : activeCircuit === 6
+    ? 'bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-400/40'
+    : activeCircuit === 7
+    ? 'bg-sky-500/10 hover:bg-sky-500/20 border border-sky-400/40'
+    : activeCircuit === 8
+    ? 'bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-400/40'
     : activeCircuit === 9
-    ? 'bg-black/35 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-    : 'bg-indigo-500/10 border border-indigo-400/40';
+    ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+    : activeCircuit === 10
+    ? 'bg-orange-500/10 hover:bg-orange-500/20 border border-orange-400/40'
+    : activeCircuit === 11
+    ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-400/40'
+    : activeCircuit === 12
+    ? 'bg-fuchsia-500/10 hover:bg-fuchsia-500/20 border border-fuchsia-400/40'
+    : 'bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-400/40';
   // Пастельный цвет «в тон контура» — для мелких акцентов в светлой теме.
   const partTint = activeCircuit === 2 ? 'text-cyan-300'
     : activeCircuit === 3 ? 'text-amber-300'
@@ -5526,17 +5540,7 @@ const OndaLevel1 = () => {
                 localStorage.setItem('onda_emotional_check_used', 'true');
               }
             }}
-            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
-              activeCircuit === 2
-                ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                : activeCircuit === 3
-                ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                : activeCircuit === 4
-                ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                : activeCircuit === 9
-                ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-            }`}
+            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
           >
             {t('nav.emotional_check')}
             {!emotionalCheckUsed && (
@@ -5555,17 +5559,7 @@ const OndaLevel1 = () => {
                 localStorage.setItem('onda_nervous_scan_used', 'true');
               }
             }}
-            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
-              activeCircuit === 2
-                ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                : activeCircuit === 3
-                ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                : activeCircuit === 4
-                ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                : activeCircuit === 9
-                ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-            }`}
+            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
           >
             {t('eye_scan.nav_button')}
             {!nervousScanUsed && (
