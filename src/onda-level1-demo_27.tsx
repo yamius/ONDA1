@@ -6394,8 +6394,8 @@ const OndaLevel1 = () => {
           {currentCircuit.artifact && (
           <div className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
             artifacts.some(a => a.circuitId === currentCircuit.id)
-              ? isLight ? 'border-amber-300 bg-amber-50/70' : 'border-amber-600/50 bg-yellow-500/10'
-              : isLight ? 'border-violet-300 bg-violet-50/70' : 'border-purple-500/50 bg-purple-500/10'
+              ? isLight ? 'border-amber-300 bg-white/55' : 'border-amber-600/50 bg-yellow-500/10'
+              : isLight ? 'border-violet-300 bg-white/55' : 'border-purple-500/50 bg-purple-500/10'
           }`}>
             <div className="flex items-center gap-4">
               {artifacts.some(a => a.circuitId === currentCircuit.id) ? (
@@ -6421,8 +6421,8 @@ const OndaLevel1 = () => {
               <div
                 className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
                   hasClearWill
-                    ? isLight ? 'border-amber-300 bg-amber-50/70' : 'border-amber-600/50 bg-yellow-500/10'
-                    : isLight ? 'border-violet-300 bg-violet-50/70' : 'border-purple-500/50 bg-purple-500/10'
+                    ? isLight ? 'border-amber-300 bg-white/55' : 'border-amber-600/50 bg-yellow-500/10'
+                    : isLight ? 'border-violet-300 bg-white/55' : 'border-purple-500/50 bg-purple-500/10'
                 }`}
               >
                 <div className="flex items-center gap-4">
@@ -6466,8 +6466,8 @@ const OndaLevel1 = () => {
               <div
                 className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
                   hasInnerWave
-                    ? isLight ? 'border-amber-300 bg-amber-50/70' : 'border-amber-600/50 bg-yellow-500/10'
-                    : isLight ? 'border-violet-300 bg-violet-50/70' : 'border-purple-500/50 bg-purple-500/10'
+                    ? isLight ? 'border-amber-300 bg-white/55' : 'border-amber-600/50 bg-yellow-500/10'
+                    : isLight ? 'border-violet-300 bg-white/55' : 'border-purple-500/50 bg-purple-500/10'
                 }`}
               >
                 <div className="flex items-center gap-4">
@@ -6511,8 +6511,8 @@ const OndaLevel1 = () => {
               <div
                 className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
                   hasTransformationPulse
-                    ? isLight ? 'border-amber-300 bg-amber-50/70' : 'border-amber-600/50 bg-yellow-500/10'
-                    : isLight ? 'border-violet-300 bg-violet-50/70' : 'border-purple-500/50 bg-purple-500/10'
+                    ? isLight ? 'border-amber-300 bg-white/55' : 'border-amber-600/50 bg-yellow-500/10'
+                    : isLight ? 'border-violet-300 bg-white/55' : 'border-purple-500/50 bg-purple-500/10'
                 }`}
               >
                 <div className="flex items-center gap-4">
@@ -6553,7 +6553,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-violet-50/70' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6583,7 +6583,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-violet-50/70' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6613,7 +6613,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-violet-50/70' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6643,7 +6643,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-violet-50/70' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6673,7 +6673,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-violet-50/70' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6703,7 +6703,7 @@ const OndaLevel1 = () => {
                 setInfoModalMessage(t('artifacts.life_rhythm_alert'));
                 setShowInfoModal(true);
               }}
-              className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+              className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
             >
               <div className="flex items-center gap-4">
                 <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6790,33 +6790,9 @@ const OndaLevel1 = () => {
                     setShowInfoModal(true);
                   }
                 }}
-                className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg ${
+                className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg backdrop-blur-md ${
                   isPartUnlocked(activeCircuit + 1)
-                    ? 'hover:scale-105 active:scale-95 ' + (
-                      activeCircuit + 1 === 2
-                        ? 'bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white border-2 border-cyan-300/50'
-                        : activeCircuit + 1 === 3
-                        ? 'bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white border-2 border-amber-300/50'
-                        : activeCircuit + 1 === 4
-                        ? 'bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white border-2 border-teal-300/50'
-                        : activeCircuit + 1 === 5
-                        ? 'bg-gradient-to-r from-yellow-800 to-yellow-700 hover:from-yellow-700 hover:to-yellow-600 text-white border-2 border-yellow-600/50'
-                        : activeCircuit + 1 === 6
-                        ? 'bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white border-2 border-emerald-300/50'
-                        : activeCircuit + 1 === 7
-                        ? 'bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white border-2 border-sky-300/50'
-                        : activeCircuit + 1 === 8
-                        ? 'bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white border-2 border-indigo-300/50'
-                        : activeCircuit + 1 === 9
-                        ? 'bg-gradient-to-r from-cyan-500 to-sky-500 hover:from-cyan-400 hover:to-sky-400 text-white border-2 border-cyan-300/50'
-                        : activeCircuit + 1 === 10
-                        ? 'bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white border-2 border-orange-300/50'
-                        : activeCircuit + 1 === 11
-                        ? 'bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-400 hover:to-pink-400 text-white border-2 border-rose-300/50'
-                        : activeCircuit + 1 === 12
-                        ? 'bg-gradient-to-r from-fuchsia-500 to-red-500 hover:from-fuchsia-400 hover:to-red-400 text-white border-2 border-fuchsia-300/50'
-                        : 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-2 border-purple-300/50'
-                    )
+                    ? `hover:scale-105 active:scale-95 ${emoTint}`
                     : 'bg-gray-600/60 text-gray-400 border-2 border-gray-500/50 cursor-not-allowed'
                 }`}
               >
@@ -6878,7 +6854,7 @@ const OndaLevel1 = () => {
                 return (
                   <div
                     key={idx}
-                    className={`rounded-2xl p-6 border ${isLight ? 'bg-amber-50/70 backdrop-blur-xl shadow-lg shadow-amber-100/70 border-amber-300' : 'bg-gradient-to-br from-yellow-900/30 to-orange-900/30 border-amber-600/50'}`}
+                    className={`rounded-2xl p-6 border ${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-amber-300' : 'bg-gradient-to-br from-yellow-900/30 to-orange-900/30 border-amber-600/50'}`}
                   >
                     <Star className="w-8 h-8 text-amber-400 fill-yellow-400 mb-3" />
                     <h4 className="text-lg font-bold mb-1">{artifactName}</h4>
