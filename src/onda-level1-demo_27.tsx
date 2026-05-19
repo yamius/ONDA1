@@ -3325,8 +3325,10 @@ const OndaLevel1 = () => {
   const progress = (completedCount / totalPractices) * 100;
 
   if (activePractice) {
+    // Светлый экран завершения только в светлой теме; в тёмной — космический.
+    const completeLight = practiceState === 'complete' && isLight;
     return (
-      <div className={`fixed inset-0 overflow-hidden transition-colors duration-1000 ${practiceState === 'complete' ? 'bg-gradient-to-br from-indigo-50 via-white to-violet-100 text-slate-800' : `bg-gradient-to-br ${activePractice.colors} text-white`}`}>
+      <div className={`fixed inset-0 overflow-hidden transition-colors duration-1000 ${completeLight ? 'bg-gradient-to-br from-indigo-50 via-white to-violet-100 text-slate-800' : `bg-gradient-to-br ${activePractice.colors} text-white`}`}>
         {/* Debug Monitor - also during practice */}
         <DebugMonitor
           buildNumber={import.meta.env.VITE_BUILD_NUMBER}
@@ -4001,7 +4003,7 @@ const OndaLevel1 = () => {
           </div>
         )}
 
-        {practiceState !== 'complete' && (
+        {!completeLight && (
         <div className="absolute inset-0 bg-black/10" style={{
           backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.3) 100%)'
         }} />
@@ -4012,7 +4014,7 @@ const OndaLevel1 = () => {
             onClick={exitPractice}
             disabled={!canExitPractice}
             style={!canExitPractice ? { pointerEvents: 'none', opacity: 0.5 } : undefined}
-            className={`absolute top-[72px] right-6 z-50 p-3 rounded-full transition-all hover:scale-110 border ${practiceState === 'complete' ? 'bg-white/60 hover:bg-white/80 backdrop-blur-md border-violet-200 text-slate-600' : 'bg-white/10 hover:bg-white/20 backdrop-blur-2xl border-white/25'}`}
+            className={`absolute top-[72px] right-6 z-50 p-3 rounded-full transition-all hover:scale-110 border ${completeLight ? 'bg-white/60 hover:bg-white/80 backdrop-blur-md border-violet-200 text-slate-600' : 'bg-white/10 hover:bg-white/20 backdrop-blur-2xl border-white/25'}`}
           >
             <X className="w-6 h-6" />
           </button>
@@ -4256,54 +4258,54 @@ const OndaLevel1 = () => {
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">{t('practices.completed')}</h2>
 
               {activePractice.finalPhrase && (
-                <div className="bg-white/55 backdrop-blur-xl rounded-2xl p-4 sm:p-6 border border-violet-200 shadow-xl shadow-indigo-100/60 mb-4 sm:mb-6">
-                  <p className="text-base sm:text-lg md:text-xl italic leading-relaxed text-slate-700 whitespace-pre-line">
+                <div className={`rounded-2xl p-4 sm:p-6 border shadow-xl mb-4 sm:mb-6 ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
+                  <p className={`text-base sm:text-lg md:text-xl italic leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-700' : 'text-white/90'}`}>
                     {activePractice.finalPhrase}
                   </p>
                 </div>
               )}
 
-              <div className="bg-white/55 backdrop-blur-xl rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border border-violet-200 shadow-2xl shadow-indigo-100/60">
+              <div className={`rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border shadow-2xl ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
                 {/* Row 1: OND Amount */}
-                <div className="text-4xl sm:text-5xl md:text-7xl font-mono text-amber-500 animate-pulse">
+                <div className={`text-4xl sm:text-5xl md:text-7xl font-mono animate-pulse ${completeLight ? 'text-amber-500' : 'text-amber-400 drop-shadow-2xl'}`}>
                   +{Math.floor((activePractice.maxQnt * qualityScore) / 100)} OND
                 </div>
-                
+
                 {/* Row 2: Quality + Time - symmetric: numbers in center */}
                 <div className="flex justify-center items-center text-sm sm:text-base">
                   <div className="flex items-center justify-end gap-2 w-[140px]">
-                    <span className="text-slate-500">{t('practices.quality')}</span>
-                    <span className="font-bold text-lg sm:text-xl text-emerald-500">{safeToFixed(qualityScore, 0)}%</span>
+                    <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.quality')}</span>
+                    <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-emerald-500' : 'text-emerald-400'}`}>{safeToFixed(qualityScore, 0)}%</span>
                   </div>
-                  <div className="w-px h-6 bg-slate-300 mx-3" />
+                  <div className={`w-px h-6 mx-3 ${completeLight ? 'bg-slate-300' : 'bg-white/30'}`} />
                   <div className="flex items-center justify-start gap-2 w-[140px]">
-                    <span className="font-bold text-lg sm:text-xl text-slate-700">{formatTime(practiceTime)}</span>
-                    <span className="text-slate-500">{t('practices.time')}</span>
+                    <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-slate-700' : 'text-white'}`}>{formatTime(practiceTime)}</span>
+                    <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.time')}</span>
                   </div>
                 </div>
-                
+
                 {/* Row 3: Stress + Energy - symmetric: numbers in center */}
                 <div className="flex justify-center items-start text-sm sm:text-base">
                   <div className="flex flex-col items-end w-[140px]">
                     <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className="text-slate-500">{t('labels.stress')}</span>
-                      <span className="font-bold text-red-500">{safeToFixed(vitalsData.stress, 0)}%</span>
+                      <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('labels.stress')}</span>
+                      <span className={`font-bold ${completeLight ? 'text-red-500' : 'text-red-400'}`}>{safeToFixed(vitalsData.stress, 0)}%</span>
                     </div>
-                    <Activity className="w-4 h-4 text-red-500 mt-1" />
+                    <Activity className={`w-4 h-4 mt-1 ${completeLight ? 'text-red-500' : 'text-red-400'}`} />
                   </div>
-                  <div className="w-px h-10 bg-slate-300 mx-3" />
+                  <div className={`w-px h-10 mx-3 ${completeLight ? 'bg-slate-300' : 'bg-white/30'}`} />
                   <div className="flex flex-col items-start w-[140px]">
                     <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className="font-bold text-blue-500">{safeToFixed(vitalsData.energy, 0)}%</span>
-                      <span className="text-slate-500">{t('labels.energy')}</span>
+                      <span className={`font-bold ${completeLight ? 'text-blue-500' : 'text-blue-400'}`}>{safeToFixed(vitalsData.energy, 0)}%</span>
+                      <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('labels.energy')}</span>
                     </div>
-                    <Zap className="w-4 h-4 text-blue-400 mt-1" />
+                    <Zap className={`w-4 h-4 mt-1 ${completeLight ? 'text-blue-500' : 'text-blue-400'}`} />
                   </div>
                 </div>
-                
+
                 {/* Row 4: Star Rating */}
                 <div className="pt-2">
-                  <p className="text-sm text-slate-500 mb-2">{t('practices.rate_practice') || 'Rate this practice'}</p>
+                  <p className={`text-sm mb-2 ${completeLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('practices.rate_practice') || 'Rate this practice'}</p>
                   <div className="flex justify-center gap-2">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <button
@@ -4312,20 +4314,20 @@ const OndaLevel1 = () => {
                         className="transition-all hover:scale-110"
                         data-testid={`button-star-${star}`}
                       >
-                        <Star 
+                        <Star
                           className={`w-8 h-8 sm:w-10 sm:h-10 ${
                             star <= practiceRating
                               ? 'text-amber-400 fill-yellow-400'
-                              : 'text-slate-300'
-                          }`} 
+                              : completeLight ? 'text-slate-300' : 'text-gray-500'
+                          }`}
                         />
                       </button>
                     ))}
                   </div>
                 </div>
-                
+
                 {completedPractices[activePractice.id] && completedPractices[activePractice.id].quality < qualityScore && (
-                  <div className="bg-emerald-500/15 border border-emerald-400/50 rounded-lg p-3 sm:p-4 text-sm sm:text-base text-emerald-700">
+                  <div className={`bg-emerald-500/15 border border-emerald-400/50 rounded-lg p-3 sm:p-4 text-sm sm:text-base ${completeLight ? 'text-emerald-700' : 'text-emerald-200'}`}>
                     {t('practices.new_record')}: {safeToFixed(completedPractices[activePractice.id]?.quality, 0)}%
                   </div>
                 )}
@@ -4340,13 +4342,13 @@ const OndaLevel1 = () => {
                     setIsPaused(false);
                     setAudioResetKey(prev => prev + 1);
                   }}
-                  className="bg-indigo-500/15 hover:bg-indigo-500/25 backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border border-indigo-400/40 text-slate-800"
+                  className={`backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                 >
                   {t('practices.try_again')}
                 </button>
                 <button
                   onClick={exitPractice}
-                  className="bg-indigo-500/15 hover:bg-indigo-500/25 backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border border-indigo-400/40 text-slate-800"
+                  className={`backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                 >
                   {t('practices.back_to_practices')}
                 </button>
