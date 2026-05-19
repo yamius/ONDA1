@@ -4025,7 +4025,7 @@ const OndaLevel1 = () => {
               <h1 className="text-xl sm:text-6xl font-bold mb-2 sm:mb-4 drop-shadow-2xl leading-tight px-2">
                 {getPracticeName(activePractice.id)}
               </h1>
-              <div className="bg-black/40 backdrop-blur-md rounded-2xl p-4 sm:p-8 mb-3 sm:mb-6 border border-white/20 shadow-2xl">
+              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-4 sm:p-8 mb-3 sm:mb-6 border border-white/25 shadow-2xl">
                 <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
                   <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
                   <p className="text-sm text-purple-200 font-semibold tracking-wide">
@@ -4055,11 +4055,11 @@ const OndaLevel1 = () => {
                 </div>
               )}
               <div className="flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base text-gray-200">
-                <span className="bg-black/30 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-sm text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center">
+                <span className="bg-white/10 border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center">
                   {activePractice.targetTime ? `${Math.floor(activePractice.targetTime / 60)} ${t('practice_items.duration_min')}` : activePractice.duration}
                 </span>
                 <span className="text-gray-400">•</span>
-                <span className="bg-black/30 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-sm text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center">
+                <span className="bg-white/10 border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center">
                   {t('practices.up_to')} {activePractice.maxQnt} OND
                 </span>
               </div>
