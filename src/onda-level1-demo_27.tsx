@@ -5002,6 +5002,19 @@ const OndaLevel1 = () => {
     : activeCircuit === 9
     ? 'bg-black/35 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
     : 'bg-indigo-500/10 border border-indigo-400/40';
+  // Пастельный цвет «в тон контура» — для мелких акцентов в светлой теме.
+  const partTint = activeCircuit === 2 ? 'text-cyan-300'
+    : activeCircuit === 3 ? 'text-amber-300'
+    : activeCircuit === 4 ? 'text-teal-300'
+    : activeCircuit === 5 ? 'text-yellow-400'
+    : activeCircuit === 6 ? 'text-emerald-300'
+    : activeCircuit === 7 ? 'text-sky-300'
+    : activeCircuit === 8 ? 'text-indigo-300'
+    : activeCircuit === 9 ? 'text-yellow-400'
+    : activeCircuit === 10 ? 'text-orange-300'
+    : activeCircuit === 11 ? 'text-cyan-300'
+    : activeCircuit === 12 ? 'text-fuchsia-300'
+    : 'text-violet-300';
 
   return (
     <div
@@ -6157,7 +6170,7 @@ const OndaLevel1 = () => {
                       <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
                     </div>
                   ) : (
-                    <Circle className={`w-6 h-6 ${isLight ? 'text-indigo-300' : 'text-gray-600'}`} />
+                    <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
                   )}
                 </div>
                 <p className={`text-sm mb-4 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{getPracticeDesc(practice.id)}</p>
