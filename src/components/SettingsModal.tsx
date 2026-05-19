@@ -232,7 +232,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
           </div>
 
           {/* Contact developers + diagnostics — две кнопки в ряд */}
-          <div className="pt-4 border-t border-border/10 flex gap-3">
+          <div className="pt-4 border-t border-border/10 flex flex-col gap-3">
             <button
               onClick={() => {
                 const subject = encodeURIComponent(t('settings.contact_subject', 'ONDA — Feedback'));
@@ -243,7 +243,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
                 const body = encodeURIComponent(t('settings.contact_body_hint', 'Hi ONDA team,') + diag);
                 window.location.href = `mailto:hello@onda-life.com?subject=${subject}&body=${body}`;
               }}
-              className="flex-1 py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-indigo-500/15 hover:bg-indigo-500/25 text-text-secondary border border-indigo-400/40"
+              className="w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-indigo-500/15 hover:bg-indigo-500/25 text-text-secondary border border-indigo-400/40"
               data-testid="button-contact-developers"
             >
               <Mail className="w-4 h-4" />
@@ -254,7 +254,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
             {showDiagnosticsButton && (
               <button
                 onClick={() => setShowDiagnostics(true)}
-                className="flex-1 py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-indigo-500/15 hover:bg-indigo-500/25 text-text-secondary border border-indigo-400/40"
+                className="w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-indigo-500/15 hover:bg-indigo-500/25 text-text-secondary border border-indigo-400/40"
                 data-testid="button-open-diagnostics"
               >
                 <Activity className="w-4 h-4" />
