@@ -4102,7 +4102,7 @@ const OndaLevel1 = () => {
 
         {practiceState === 'active' && (
           <div
-            className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 ${isMinimalMode ? 'justify-end' : 'justify-center'}`}
+            className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 text-white ${isMinimalMode ? 'justify-end' : 'justify-center'}`}
             style={{ paddingBottom: isMinimalMode
   ? platform === 'ios'
     ? 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 10px)'
@@ -4120,7 +4120,7 @@ const OndaLevel1 = () => {
                   cy="128"
                   r="110"
                   fill="none"
-                  stroke={isLight ? 'rgba(99,102,241,0.15)' : 'rgba(255,255,255,0.1)'}
+                  stroke="rgba(255,255,255,0.18)"
                   strokeWidth="12"
                 />
                 <circle
@@ -4174,7 +4174,7 @@ const OndaLevel1 = () => {
                 <span className="font-semibold">{t('practices.quality')}</span>
                 <span className="font-bold text-xl sm:text-2xl">{safeToFixed(qualityScore, 0)}%</span>
               </div>
-              <div className={`w-full h-5 sm:h-6 rounded-full overflow-hidden backdrop-blur-sm border shadow-inner ${isLight ? 'bg-slate-200 border-slate-300' : 'bg-black/40 border-white/20'}`}>
+              <div className="w-full h-5 sm:h-6 rounded-full overflow-hidden backdrop-blur-sm border border-white/20 bg-black/30 shadow-inner">
                 <div
                   className={`h-full transition-all duration-[12500ms] relative ${
                     qualityScore >= 100
@@ -4188,7 +4188,7 @@ const OndaLevel1 = () => {
                   <div className="absolute inset-0 bg-white/30 animate-pulse" />
                 </div>
               </div>
-              <div className={`mt-2 sm:mt-3 text-xs sm:text-sm flex justify-between ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>
+              <div className="mt-2 sm:mt-3 text-xs sm:text-sm flex justify-between text-white/80">
                 <span>{t('labels.time_label')}: {safeToFixed((practiceTime / activePractice.targetTime) * 100, 0)}%</span>
                 <span>{t('labels.energy')}: {safeToFixed(vitalsData.energy, 0)}%</span>
               </div>
@@ -4199,19 +4199,13 @@ const OndaLevel1 = () => {
                 className={`w-full max-w-md px-3 sm:px-0 ${isMinimalMode ? '' : 'mb-6 sm:mb-8'}`}
                 onClick={isMinimalMode ? () => setIsMinimalMode(false) : undefined}
               >
-                <div className={`rounded-2xl p-4 sm:p-6 border shadow-xl flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
-                  isLight ? 'bg-white/55 backdrop-blur-xl shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl'
-                } ${
+                <div className={`bg-white/10 backdrop-blur-2xl rounded-2xl p-4 sm:p-6 border flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
                   isMinimalMode
-                    ? isLight
-                      ? 'border-violet-200 h-28 sm:h-32 cursor-pointer hover:bg-white/70 active:scale-95'
-                      : 'border-white/30 h-28 sm:h-32 cursor-pointer hover:bg-white/20 active:scale-95'
-                    : isLight
-                    ? 'border-violet-200 h-24 sm:h-28'
+                    ? 'border-white/30 h-28 sm:h-32 cursor-pointer hover:bg-white/20 active:scale-95'
                     : 'border-white/25 h-24 sm:h-28'
                 }`}>
                   <p
-                    className={`text-sm sm:text-base text-center italic leading-snug whitespace-pre-line transition-all duration-1000 ${isLight ? 'text-slate-700' : 'text-white/90'} ${
+                    className={`text-sm sm:text-base text-center italic leading-snug text-white/90 whitespace-pre-line transition-all duration-1000 ${
                       isTextTransitioning ? 'opacity-0 translate-y-[-20px]' : 'opacity-100 translate-y-0'
                     }`}
                   >
@@ -4222,15 +4216,15 @@ const OndaLevel1 = () => {
             )}
 
             {!isMinimalMode && (<div className="grid grid-cols-2 gap-3 sm:gap-6 mb-6 sm:mb-12 px-3 sm:px-0 w-full max-w-md">
-              <div className={`rounded-2xl p-3 sm:p-6 text-center border shadow-xl ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
-                <Activity className={`w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 ${isLight ? 'text-red-500' : 'text-red-400'}`} />
+              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-3 sm:p-6 text-center border border-white/25">
+                <Activity className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-red-300" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{safeToFixed(vitalsData.stress, 0)}%</div>
-                <div className={`text-xs sm:text-sm ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{t('labels.stress')}</div>
+                <div className="text-xs sm:text-sm text-white/70">{t('labels.stress')}</div>
               </div>
-              <div className={`rounded-2xl p-3 sm:p-6 text-center border shadow-xl ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
-                <Zap className={`w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 ${isLight ? 'text-blue-500' : 'text-blue-400'}`} />
+              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-3 sm:p-6 text-center border border-white/25">
+                <Zap className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-blue-300" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{safeToFixed(vitalsData.energy, 0)}%</div>
-                <div className={`text-xs sm:text-sm ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{t('labels.energy')}</div>
+                <div className="text-xs sm:text-sm text-white/70">{t('labels.energy')}</div>
               </div>
             </div>)}
 
@@ -4238,19 +4232,19 @@ const OndaLevel1 = () => {
             <div className="flex gap-3 sm:gap-6">
               <button
                 onClick={() => setIsPaused(!isPaused)}
-                className={`backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border-white/25'}`}
+                className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 border border-white/25 text-white"
               >
                 {isPaused ? <Play className="w-6 h-6 sm:w-8 sm:h-8" /> : <Pause className="w-6 h-6 sm:w-8 sm:h-8" />}
               </button>
               <button
                 onClick={finishPractice}
-                className="bg-emerald-500/25 hover:bg-emerald-500/40 backdrop-blur-2xl px-6 py-3 sm:px-10 sm:py-5 rounded-full font-bold text-sm sm:text-lg transition-all hover:scale-105 shadow-xl border border-emerald-400/50"
+                className="bg-emerald-500/25 hover:bg-emerald-500/40 backdrop-blur-2xl px-6 py-3 sm:px-10 sm:py-5 rounded-full font-bold text-sm sm:text-lg transition-all hover:scale-105 border border-emerald-400/50 text-white"
               >
                 {t('practices.end_practice')}
               </button>
               <button
                 onClick={() => setIsMinimalMode(!isMinimalMode)}
-                className={`backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border-white/25'}`}
+                className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 border border-white/25 text-white"
               >
                 <Minimize2 className="w-6 h-6 sm:w-8 sm:h-8" />
               </button>
