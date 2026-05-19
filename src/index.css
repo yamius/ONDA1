@@ -18,8 +18,8 @@
   --color-text: 255 255 255;       /* основной текст */
   --color-text-secondary: 203 213 225; /* slate-300 — вторичный текст */
   --color-text-muted: 148 163 184; /* slate-400 — приглушённый текст */
-  --color-accent: 99 102 241;      /* indigo-500 — акцент */
-  --color-accent-2: 168 85 247;    /* purple-500 — второй акцент */
+  --color-accent: 79 70 229;       /* indigo-600 — акцент (доминирующий цвет кнопок) */
+  --color-accent-2: 147 51 234;    /* purple-600 — второй акцент */
 }
 
 [data-theme='light'] {

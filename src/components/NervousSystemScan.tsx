@@ -50,9 +50,9 @@ export default function NervousSystemScan({
           paddingBottom: 'max(16px, env(safe-area-inset-bottom))',
         }}
       >
-        <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl max-w-lg w-full shadow-2xl border border-white/10 overflow-hidden max-h-full flex flex-col my-auto">
+        <div className="bg-gradient-to-br from-bg to-surface rounded-3xl max-w-lg w-full shadow-2xl border border-border/10 overflow-hidden max-h-full flex flex-col my-auto">
           {/* Шапка */}
-          <div className="relative bg-gradient-to-r from-indigo-600 to-purple-600 p-4 flex-shrink-0">
+          <div className="relative bg-gradient-to-r from-accent to-accent-2 p-4 flex-shrink-0">
             <button
               onClick={close}
               className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
@@ -85,7 +85,7 @@ export default function NervousSystemScan({
               style={{ transform: 'scaleX(-1)' }}
               className={
                 status === 'scanning'
-                  ? `w-full aspect-[4/3] object-cover rounded-2xl border border-white/10 transition-opacity duration-700 ${
+                  ? `w-full aspect-[4/3] object-cover rounded-2xl border border-border/10 transition-opacity duration-700 ${
                       videoVisible ? 'opacity-100' : 'opacity-0'
                     }`
                   : 'hidden'
@@ -94,15 +94,15 @@ export default function NervousSystemScan({
 
             {status === 'idle' && (
               <div className="text-center space-y-4">
-                <div className="bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-2xl p-6 border border-indigo-500/30">
-                  <div className="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
+                <div className="bg-gradient-to-br from-accent/20 to-accent-2/20 rounded-2xl p-6 border border-accent/30">
+                  <div className="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-accent to-accent-2 rounded-full flex items-center justify-center">
                     <Eye className="w-10 h-10 text-white" />
                   </div>
-                  <p className="text-white/80 text-base">{t('eye_scan.intro', { sec: SCAN_SEC })}</p>
+                  <p className="text-text-primary/80 text-base">{t('eye_scan.intro', { sec: SCAN_SEC })}</p>
                 </div>
                 <button
                   onClick={scan.start}
-                  className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-base"
+                  className="w-full bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white font-semibold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-base"
                 >
                   {t('eye_scan.start')}
                 </button>
@@ -110,19 +110,19 @@ export default function NervousSystemScan({
             )}
 
             {status === 'preparing' && (
-              <p className="text-white/80 text-sm text-center">{t('eye_scan.preparing')}</p>
+              <p className="text-text-primary/80 text-sm text-center">{t('eye_scan.preparing')}</p>
             )}
 
             {status === 'scanning' && (
               <div className="space-y-3">
-                <p className="text-white/80 text-sm text-center">{t('eye_scan.hold_still')}</p>
-                <div className="bg-white/20 rounded-full h-2.5 overflow-hidden">
+                <p className="text-text-primary/80 text-sm text-center">{t('eye_scan.hold_still')}</p>
+                <div className="bg-border/15 rounded-full h-2.5 overflow-hidden">
                   <div
-                    className="bg-gradient-to-r from-indigo-400 to-purple-400 h-full rounded-full transition-all duration-200"
+                    className="bg-gradient-to-r from-accent to-accent-2 h-full rounded-full transition-all duration-200"
                     style={{ width: `${Math.round(scan.progress * 100)}%` }}
                   />
                 </div>
-                <p className="text-white/60 text-sm text-center">
+                <p className="text-text-muted text-sm text-center">
                   {t('eye_scan.remaining', {
                     sec: Math.max(0, Math.ceil(SCAN_SEC * (1 - scan.progress))),
                   })}
@@ -137,13 +137,13 @@ export default function NervousSystemScan({
             {status === 'error' && (
               <div className="space-y-4">
                 <div className="bg-red-500/15 rounded-xl p-4 border border-red-500/30">
-                  <p className="text-red-200 text-sm">
+                  <p className="text-red-400 text-sm">
                     {t('eye_scan.error', { error: scan.error ?? '' })}
                   </p>
                 </div>
                 <button
                   onClick={scan.start}
-                  className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all text-base"
+                  className="w-full bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white font-semibold py-3.5 px-6 rounded-xl transition-all text-base"
                 >
                   {t('eye_scan.retry')}
                 </button>
@@ -178,23 +178,23 @@ function ResultView({
   return (
     <div className="space-y-3">
       {/* Карточка результата */}
-      <div className="bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-2xl p-5 border border-indigo-500/30">
-        <h3 className="text-xl font-bold text-white text-center mb-3">
+      <div className="bg-gradient-to-br from-accent/20 to-accent-2/20 rounded-2xl p-5 border border-accent/30">
+        <h3 className="text-xl font-bold text-text-primary text-center mb-3">
           {t('eye_scan.result_title')}
         </h3>
-        <div className="space-y-3 bg-white/10 backdrop-blur-sm rounded-xl p-4">
+        <div className="space-y-3 bg-border/10 backdrop-blur-sm rounded-xl p-4">
           {METRICS.map((m) => (
             <ScoreRow key={m.key} label={t(m.labelKey)} value={result.scores[m.key]} />
           ))}
         </div>
-        <p className="text-white/60 text-xs text-center mt-3">
+        <p className="text-text-muted text-xs text-center mt-3">
           {t('eye_scan.quality', { value: result.scores.quality })}
         </p>
       </div>
 
       {/* Рекомендованные практики */}
       <div className="space-y-2">
-        <h5 className="text-white/70 text-sm font-semibold text-center">
+        <h5 className="text-text-secondary text-sm font-semibold text-center">
           {t('eye_scan.recommend')}
         </h5>
         <div className="grid grid-cols-3 gap-2">
@@ -202,7 +202,7 @@ function ResultView({
             <button
               key={p.id}
               onClick={() => onPick(p.id)}
-              className="bg-slate-800/50 hover:bg-slate-700/50 text-white text-sm py-2.5 px-3 rounded-lg transition-all border border-white/10 hover:border-white/20 hover:scale-105"
+              className="bg-surface-2/50 hover:bg-surface-2/80 text-text-primary text-sm py-2.5 px-3 rounded-lg transition-all border border-border/10 hover:border-border/20 hover:scale-105"
             >
               {t(p.labelKey)}
             </button>
@@ -210,13 +210,13 @@ function ResultView({
         </div>
       </div>
 
-      <p className="text-white/50 text-xs text-center leading-relaxed">
+      <p className="text-text-muted text-xs text-center leading-relaxed">
         {t('eye_scan.disclaimer')}
       </p>
 
       <button
         onClick={onAgain}
-        className="w-full bg-gradient-to-r from-slate-700 to-slate-600 hover:from-slate-600 hover:to-slate-500 text-white font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
+        className="w-full bg-surface-2 hover:opacity-90 text-text-primary font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
       >
         <RefreshCw className="w-5 h-5" />
         {t('eye_scan.again')}
@@ -228,13 +228,13 @@ function ResultView({
 function ScoreRow({ label, value }: { label: string; value: number }) {
   return (
     <div>
-      <div className="flex justify-between text-sm mb-1 gap-2 text-white">
+      <div className="flex justify-between text-sm mb-1 gap-2 text-text-primary">
         <span>{label}</span>
         <span className="font-semibold">{value}</span>
       </div>
-      <div className="bg-white/20 rounded-full h-2.5 overflow-hidden">
+      <div className="bg-border/15 rounded-full h-2.5 overflow-hidden">
         <div
-          className="bg-white h-full rounded-full transition-all duration-1000"
+          className="bg-accent h-full rounded-full transition-all duration-1000"
           style={{ width: `${value}%` }}
         />
       </div>
