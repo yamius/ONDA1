@@ -5031,33 +5031,19 @@ const OndaLevel1 = () => {
        !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && (
         <button
           onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
-          className={`menu-container fixed top-12 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
+          className={`menu-container fixed top-12 z-[100] transition-all px-3 py-3 rounded-xl backdrop-blur-md border ${isLight ? 'text-slate-700' : 'text-white'} ${
             activeCircuit === 2
-              ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
+              ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
               : activeCircuit === 3
-              ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
+              ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
               : activeCircuit === 4
-              ? 'bg-teal-600/40 hover:bg-teal-600/60 border border-teal-400/30'
-              : activeCircuit === 5
-              ? 'bg-yellow-700/40 hover:bg-yellow-700/60 border border-yellow-600/30'
-              : activeCircuit === 6
-              ? 'bg-emerald-500/40 hover:bg-emerald-500/60 border border-emerald-400/30'
-              : activeCircuit === 7
-              ? 'bg-sky-500/40 hover:bg-sky-500/60 border border-sky-400/30'
-              : activeCircuit === 8
-              ? 'bg-indigo-500/40 hover:bg-indigo-500/60 border border-indigo-400/30'
+              ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
               : activeCircuit === 9
-              ? 'bg-yellow-500/40 hover:bg-yellow-500/60 border border-yellow-400/40'
-              : activeCircuit === 10
-              ? 'bg-orange-500/40 hover:bg-orange-500/60 border border-amber-400/30'
-              : activeCircuit === 11
-              ? 'bg-cyan-500/40 hover:bg-cyan-500/60 border border-cyan-400/30'
-              : activeCircuit === 12
-              ? 'bg-fuchsia-500/40 hover:bg-fuchsia-500/60 border border-red-400/30'
-              : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
+              ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+              : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
           }`}
-          style={{ 
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
+          style={{
+            boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)',
             left: 'max(28px, calc(50% - 256px + 16px))'
           }}
           data-testid="button-menu"
@@ -6229,30 +6215,16 @@ const OndaLevel1 = () => {
                       markFreePracticeTapped(practice.id);
                       completePractice(practice.id, practice.maxQnt);
                     }}
-                    className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
+                    className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all border backdrop-blur-sm ${
                       activeCircuit === 2
-                        ? isCompleted
-                          ? 'bg-cyan-600/50 hover:bg-cyan-600/70 border border-cyan-400/50'
-                          : 'bg-cyan-600 hover:bg-cyan-700'
+                        ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
                         : activeCircuit === 3
-                        ? isCompleted
-                          ? 'bg-amber-600/50 hover:bg-amber-600/70 border border-amber-400/50'
-                          : 'bg-amber-600 hover:bg-amber-700'
+                        ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
                         : activeCircuit === 4
-                        ? isCompleted
-                          ? 'bg-teal-600/50 hover:bg-teal-600/70 border border-teal-400/50'
-                          : 'bg-teal-600 hover:bg-teal-700'
-                        : activeCircuit === 5
-                        ? isCompleted
-                          ? 'bg-amber-600/50 hover:bg-amber-600/70 border border-amber-400/50'
-                          : 'bg-amber-600 hover:bg-amber-700'
-                        : activeCircuit === 6
-                        ? isCompleted
-                          ? 'bg-emerald-600/50 hover:bg-emerald-600/70 border border-emerald-400/50'
-                          : 'bg-emerald-600 hover:bg-emerald-700'
-                        : isCompleted
-                          ? 'bg-purple-600/50 hover:bg-purple-600/70 border border-purple-400/50'
-                          : 'bg-purple-600 hover:bg-purple-700'
+                        ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
+                        : activeCircuit === 9
+                        ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+                        : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
                     }`}
                   >
                     {isCompleted ? t('practices.improve') : t('practices.start')}
