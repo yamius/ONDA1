@@ -216,6 +216,42 @@ function ProtocolDoneButton({
   )
 }
 
+/**
+ * Extract level-2 headings from article markdown for an on-page Table of
+ * Contents. Slugs mirror rehype-slug / github-slugger output so the anchors
+ * resolve to the <h2 id> elements React-Markdown renders. Unicode-aware,
+ * so localized (Cyrillic/CJK) headings still produce valid anchors.
+ * Code-fence content is skipped so a `## ` inside a code block is ignored.
+ */
+function extractToc(markdown: string): { id: string; text: string }[] {
+  const out: { id: string; text: string }[] = []
+  const seen = new Map<string, number>()
+  let inFence = false
+  for (const raw of markdown.split('\n')) {
+    if (/^(```|~~~)/.test(raw.trim())) {
+      inFence = !inFence
+      continue
+    }
+    if (inFence) continue
+    const m = /^##\s+(.+?)\s*#*\s*$/.exec(raw)
+    if (!m) continue
+    const text = m[1]
+      .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1') // [label](url) -> label
+      .replace(/[*_`]/g, '')
+      .trim()
+    if (!text) continue
+    let id = text
+      .toLowerCase()
+      .replace(/[^\p{L}\p{N}\p{M}\p{Pc}\- ]/gu, '')
+      .replace(/ /g, '-')
+    const n = seen.get(id) ?? 0
+    seen.set(id, n + 1)
+    if (n > 0) id = `${id}-${n}`
+    out.push({ id, text })
+  }
+  return out
+}
+
 export function ArticlePage() {
   const { slug } = useParams<{ slug: string }>()
   const { hash, pathname } = useLocation()
@@ -808,7 +844,7 @@ export function ArticlePage() {
           )}
         </figure>
       )}
-      <p className="mb-4 font-mono text-sm leading-relaxed text-white/50">
+      <p id="article-intro" className="mb-4 font-mono text-sm leading-relaxed text-white/50">
         {tDescription}
       </p>
       <div className="mb-10 flex items-center justify-between gap-3 font-mono text-xs">
@@ -831,6 +867,34 @@ export function ArticlePage() {
           </p>
         )}
       </div>
+
+      {(() => {
+        const toc = extractToc(tContent)
+        if (toc.length < 4) return null
+        return (
+          <nav
+            aria-label={tArticles('detail.toc', { defaultValue: 'On this page' })}
+            className="mb-10 rounded-xl border border-white/10 bg-white/[0.02] p-5"
+          >
+            <p className="mb-3 font-mono text-xs tracking-widest text-white/30">
+              {tArticles('detail.toc', { defaultValue: 'ON THIS PAGE' })}
+            </p>
+            <ol className="grid gap-2">
+              {toc.map((h, i) => (
+                <li key={h.id}>
+                  <a
+                    href={`#${h.id}`}
+                    className="font-mono text-sm text-white/55 transition-colors hover:text-terminal-cyan"
+                  >
+                    <span className="text-white/25">{String(i + 1).padStart(2, '0')}</span>{' '}
+                    {h.text}
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )
+      })()}
 
       <article className="prose-onda">
         <Markdown rehypePlugins={[rehypeSlug]} components={markdownComponents} key={protocolRefresh}>

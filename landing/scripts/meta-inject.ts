@@ -3,7 +3,7 @@
  * Single source of truth for title/description per route.
  */
 import { IMAGE_DIMENSIONS } from '../src/data/image-manifest.generated'
-import { getTermBySlug } from '../src/data/glossary'
+import { getTermBySlug, glossaryTerms } from '../src/data/glossary'
 import { getTopicBySlug, TOPICS } from '../src/data/topics'
 import { GLOSSARY_SEO } from '../src/data/glossary-seo'
 import { levelsData } from '../src/data/levels'
@@ -223,13 +223,22 @@ export interface RouteMeta {
     url: string
     datePublished: string
     image?: string
+    imageAlt?: string
+    imageCaption?: string
     keywords?: string[]
     audience?: string
     dependencies?: string
     proficiencyLevel?: string
     educationalLevel?: string
   }
-  howTo?: { name: string; step: { name: string; text: string }[] }
+  howTo?: {
+    name: string
+    description?: string
+    step: { name: string; text: string; protocolId?: string }[]
+    url: string
+  }
+  /** Glossary index — emitted as a DefinedTermSet listing every term. */
+  definedTermSet?: { url: string; terms: { name: string; url: string }[] }
   faq?: { mainEntity: { question: string; answer: string }[]; url: string }
   contactPage?: { name: string; description: string; url: string; email: string }
   aboutPage?: { name: string; description: string; url: string }
@@ -429,6 +438,7 @@ function buildDefinedTermJsonLd(name: string, description: string, url: string):
     url,
     inDefinedTermSet: {
       '@type': 'DefinedTermSet',
+      '@id': `${SITE_URL}/glossary#glossary`,
       name: 'ONDA Life Glossary',
       url: `${SITE_URL}/glossary`,
       // E-E-A-T: link the glossary set to its canonical author so every
@@ -457,6 +467,8 @@ function buildTechArticleJsonLd(
   datePublished: string,
   opts?: {
     image?: string
+    imageAlt?: string
+    imageCaption?: string
     keywords?: string[]
     audience?: string
     dependencies?: string
@@ -486,18 +498,27 @@ function buildTechArticleJsonLd(
     },
     // SpeakableSpecification — Google Assistant, Siri and Alexa read the
     // marked sections aloud when the user voice-queries a related topic.
-    // We point xpath at the prerendered <title> and meta description: both
-    // always exist, are concise (~20–30 second read) and contain the
-    // canonical headline + protocol summary.
+    // cssSelector targets the on-page H1 and the lead intro paragraph
+    // (#article-intro), so the spoken answer is the real article opening
+    // (~20–30 second read), not just the <title>/meta-description echo.
     speakable: {
       '@type': 'SpeakableSpecification',
-      xpath: [
-        '/html/head/title',
-        "/html/head/meta[@name='description']/@content",
-      ],
+      cssSelector: ['h1', '#article-intro'],
     },
   }
-  if (opts?.image) article.image = opts.image
+  if (opts?.image) {
+    // Hero image as a full ImageObject — gives Google Images and AI
+    // answer engines a caption + credit to attribute, not just a bare URL.
+    article.image = {
+      '@type': 'ImageObject',
+      url: opts.image,
+      ...(opts.imageCaption ? { caption: opts.imageCaption } : {}),
+      ...(opts.imageAlt ? { description: opts.imageAlt } : {}),
+      creditText: 'ONDA Life',
+      creator: { '@id': AUTHOR_ID },
+      copyrightNotice: '© ONDA Life',
+    }
+  }
   if (opts?.keywords?.length) article.keywords = opts.keywords.join(', ')
   if (opts?.audience) {
     article.audience = {
@@ -652,6 +673,19 @@ function buildPersonJsonLd(): string {
       name: 'ONDA Life',
       url: SITE_URL,
     },
+    // hasOccupation states the author's professional roles explicitly —
+    // an E-E-A-T "Experience/Expertise" signal that pairs with knowsAbout.
+    hasOccupation: [
+      {
+        '@type': 'Occupation',
+        name: 'Founder & Lead Architect, ONDA Life',
+      },
+      {
+        '@type': 'Occupation',
+        name: 'Gestalt therapist',
+        occupationalCategory: 'Psychologist',
+      },
+    ],
   })
 }
 
@@ -772,20 +806,56 @@ function buildAboutPageJsonLd(name: string, description: string, url: string): s
   return JSON.stringify(aboutPage)
 }
 
-function buildHowToJsonLd(name: string, steps: { name: string; text: string }[], url: string): string {
-  const howTo = {
+/**
+ * HowTo JSON-LD for an article's practical protocols. Each HowToStep
+ * carries a deep-link `url` to its anchored protocol block on the page,
+ * so Google's HowTo rich result can jump straight to a single step.
+ *
+ * We intentionally omit totalTime / tool / supply: ONDA protocols have
+ * no fixed duration or equipment list in the content model, and inventing
+ * placeholder values would be misleading structured data.
+ */
+function buildHowToJsonLd(h: NonNullable<RouteMeta['howTo']>): string {
+  const howTo: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name,
-    url,
-    step: steps.map((s, i) => ({
+    name: h.name,
+    url: h.url,
+    step: h.step.map((s, i) => ({
       '@type': 'HowToStep',
       position: i + 1,
       name: s.name,
       text: s.text,
+      ...(s.protocolId ? { url: `${h.url}#${s.protocolId}` } : {}),
     })),
   }
+  if (h.description) howTo.description = h.description
   return JSON.stringify(howTo)
+}
+
+/**
+ * DefinedTermSet JSON-LD for the /glossary index — the canonical schema
+ * for a glossary. Lists every term as a DefinedTerm child so search and
+ * AI engines read /glossary as the structured vocabulary of the site.
+ */
+function buildDefinedTermSetJsonLd(dts: NonNullable<RouteMeta['definedTermSet']>): string {
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'DefinedTermSet',
+    '@id': `${SITE_URL}/glossary#glossary`,
+    name: 'ONDA Life Glossary',
+    description: GLOSSARY_DESC,
+    url: dts.url,
+    inLanguage: 'en',
+    author: { '@id': AUTHOR_ID },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    hasDefinedTerm: dts.terms.map((t) => ({
+      '@type': 'DefinedTerm',
+      name: t.name,
+      url: t.url,
+      inDefinedTermSet: { '@id': `${SITE_URL}/glossary#glossary` },
+    })),
+  })
 }
 
 /** FAQ schema for level pages. 2–3 key Q&As per level for FAQPage JSON-LD. */
@@ -979,7 +1049,19 @@ export function getMetaForRoute(route: string): RouteMeta {
     }
   }
   if (route === '/glossary') {
-    return { title: GLOSSARY_TITLE, description: GLOSSARY_DESC, url, breadcrumbs }
+    return {
+      title: GLOSSARY_TITLE,
+      description: GLOSSARY_DESC,
+      url,
+      breadcrumbs,
+      definedTermSet: {
+        url,
+        terms: glossaryTerms.map((t) => ({
+          name: t.title,
+          url: `${SITE_URL}/glossary/${t.slug}`,
+        })),
+      },
+    }
   }
   if (route === '/the-stack') {
     return { title: THE_STACK_TITLE, description: THE_STACK_DESC, url, breadcrumbs }
@@ -1548,12 +1630,21 @@ export function getMetaForRoute(route: string): RouteMeta {
         const absImage = `${SITE_URL}${article.image}`
         meta.image = absImage
         if (article.imageAlt) meta.imageAlt = article.imageAlt
-        if (meta.techArticle) meta.techArticle.image = absImage
+        if (meta.techArticle) {
+          meta.techArticle.image = absImage
+          if (article.imageAlt) meta.techArticle.imageAlt = article.imageAlt
+          if (article.imageCaption) meta.techArticle.imageCaption = article.imageCaption
+        }
       }
       if (article.howToSteps && article.howToSteps.length > 0) {
         meta.howTo = {
           name: `${article.title} — Practical Protocols`,
-          step: article.howToSteps.map((s) => ({ name: s.name, text: s.text })),
+          description: `Step-by-step protocols from "${article.title}".`,
+          step: article.howToSteps.map((s) => ({
+            name: s.name,
+            text: s.text,
+            protocolId: s.protocolId,
+          })),
           url,
         }
       }
@@ -1812,6 +1903,12 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
     out = out.replace('</head>', `  ${definedTermScript}\n</head>`)
   }
 
+  // JSON-LD: DefinedTermSet (the /glossary index)
+  if (meta.definedTermSet) {
+    const definedTermSetScript = `<script type="application/ld+json">${buildDefinedTermSetJsonLd(meta.definedTermSet)}</script>`
+    out = out.replace('</head>', `  ${definedTermSetScript}\n</head>`)
+  }
+
   // JSON-LD: Topic hub CollectionPage + ItemList (only when pillar is live).
   if (meta.topicHub) {
     const topicScript = `<script type="application/ld+json">${buildTopicHubJsonLd(
@@ -1845,6 +1942,8 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
       meta.techArticle.educationalLevel
         ? {
             image: meta.techArticle.image,
+            imageAlt: meta.techArticle.imageAlt,
+            imageCaption: meta.techArticle.imageCaption,
             keywords: meta.techArticle.keywords,
             audience: meta.techArticle.audience,
             dependencies: meta.techArticle.dependencies,
@@ -1924,7 +2023,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
 
   // JSON-LD: HowTo (article pages with protocols)
   if (meta.howTo) {
-    const howToScript = `<script type="application/ld+json">${buildHowToJsonLd(meta.howTo.name, meta.howTo.step, meta.howTo.url)}</script>`
+    const howToScript = `<script type="application/ld+json">${buildHowToJsonLd(meta.howTo)}</script>`
     out = out.replace('</head>', `  ${howToScript}\n</head>`)
   }
 
