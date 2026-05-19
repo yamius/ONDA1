@@ -400,7 +400,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
         <div className="p-4 space-y-4 overflow-y-auto flex-1" style={{ paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}>
           {recordingState === 'idle' && (
             <div className="text-center space-y-4">
-              <div className="bg-gradient-to-br from-accent/20 to-accent-2/20 rounded-2xl p-6 border border-accent/30">
+              <div className={`rounded-2xl p-6 border ${isLight ? 'bg-white/60 border-violet-200' : 'bg-gradient-to-br from-accent/20 to-accent-2/20 border-accent/30'}`}>
                 <div className={`w-20 h-20 mx-auto mb-3 rounded-full flex items-center justify-center ${isLight ? 'bg-gradient-to-br from-indigo-200 to-violet-200' : 'bg-gradient-to-br from-accent to-accent-2'}`}>
                   <Mic className={`w-10 h-10 ${isLight ? 'text-indigo-600' : 'text-white'}`} />
                 </div>

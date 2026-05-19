@@ -1075,8 +1075,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const completeLight = practiceState === 'complete' && isLight;
 
   return (
-    <div className={`fixed inset-0 flex items-center justify-center z-50 p-3 sm:p-6 transition-colors duration-1000 ${completeLight ? 'bg-gradient-to-br from-indigo-50 via-white to-violet-100 text-slate-800' : 'bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900 text-white'}`}>
-      {!completeLight && (
+    <div className={`fixed inset-0 flex items-center justify-center z-50 p-3 sm:p-6 transition-colors duration-1000 ${isLight ? 'bg-gradient-to-br from-indigo-50 via-white to-violet-100 text-slate-800' : 'bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900 text-white'}`}>
+      {!isLight && (
       <div className="absolute inset-0" style={{
         backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.3) 100%)'
       }} />
@@ -1086,7 +1086,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         onClick={handleClose}
         disabled={!canClose}
         style={!canClose ? { pointerEvents: 'none', opacity: 0.5 } : undefined}
-        className={`absolute top-[72px] right-6 z-50 p-3 rounded-full transition-all hover:scale-110 backdrop-blur-2xl ${completeLight ? 'bg-white/60 hover:bg-white/80 border border-violet-200 text-slate-600' : 'bg-white/10 hover:bg-white/20 border border-white/25'}`}
+        className={`absolute top-[72px] right-6 z-50 p-3 rounded-full transition-all hover:scale-110 backdrop-blur-2xl ${isLight ? 'bg-white/60 hover:bg-white/80 border border-violet-200 text-slate-600' : 'bg-white/10 hover:bg-white/20 border border-white/25'}`}
       >
         <X className="w-6 h-6" />
       </button>
@@ -1097,27 +1097,27 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             <div className="text-4xl sm:text-6xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '2s' }}>
               {practice.visual}
             </div>
-            <h1 className="text-3xl sm:text-6xl font-bold mb-2 sm:mb-4 drop-shadow-2xl">
+            <h1 className={`text-3xl sm:text-6xl font-bold mb-2 sm:mb-4 drop-shadow-2xl ${isLight ? 'text-slate-800' : ''}`}>
               {t(practice.name)}
             </h1>
-            <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-4 sm:p-8 mb-3 sm:mb-6 border border-white/25 shadow-2xl">
+            <div className={`rounded-2xl p-4 sm:p-8 mb-3 sm:mb-6 shadow-2xl ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
               <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
                 <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
-                <p className="text-sm text-purple-200 font-semibold tracking-wide">
+                <p className={`text-sm font-semibold tracking-wide ${isLight ? 'text-violet-600' : 'text-purple-200'}`}>
                   {practice.element}
                 </p>
                 <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
               </div>
-              <p className="text-base sm:text-2xl leading-relaxed italic font-light">
+              <p className={`text-base sm:text-2xl leading-relaxed italic font-light ${isLight ? 'text-slate-700' : ''}`}>
                 "{t(practice.shortPhrase)}"
               </p>
             </div>
-            <div className="flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base text-gray-200">
-              <span className="bg-white/10 border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center">
+            <div className={`flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
+              <span className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center ${isLight ? 'bg-white/70 border border-violet-200' : 'bg-white/10 border border-white/20'}`}>
                 {formatTime(practice.targetTime)}
               </span>
-              <span className="text-gray-400">•</span>
-              <span className="bg-white/10 border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center">
+              <span className={isLight ? 'text-slate-500' : 'text-gray-400'}>•</span>
+              <span className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center ${isLight ? 'bg-white/70 border border-violet-200' : 'bg-white/10 border border-white/20'}`}>
                 {t('practices.up_to')} {practice.maxOnd} OND
               </span>
             </div>
@@ -1127,7 +1127,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                 // сверке» и «Взгляд на себя») — без пэйвола.
                 startPractice();
               }}
-              className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl border border-white/25"
+              className={`backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border border-white/25'}`}
             >
               {t('practices.start')}
             </button>
@@ -1145,7 +1145,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   cy="128"
                   r="110"
                   fill="none"
-                  stroke="rgba(255,255,255,0.1)"
+                  stroke={isLight ? 'rgba(99,102,241,0.15)' : 'rgba(255,255,255,0.1)'}
                   strokeWidth="12"
                 />
                 <circle
@@ -1199,7 +1199,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                 <span className="font-semibold">{t('practices.quality')}</span>
                 <span className="font-bold text-xl sm:text-2xl">{Math.round(calculateCurrentQuality())}%</span>
               </div>
-              <div className="w-full h-5 sm:h-6 bg-black/40 rounded-full overflow-hidden backdrop-blur-sm border border-white/20 shadow-inner">
+              <div className={`w-full h-5 sm:h-6 rounded-full overflow-hidden backdrop-blur-sm shadow-inner ${isLight ? 'bg-slate-200 border border-violet-200' : 'bg-black/40 border border-white/20'}`}>
                 <div
                   className="h-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-300 transition-all duration-[12500ms] relative"
                   style={{ width: `${calculateCurrentQuality()}%` }}
@@ -1207,7 +1207,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   <div className="absolute inset-0 bg-white/30 animate-pulse" />
                 </div>
               </div>
-              <div className="mt-2 sm:mt-3 text-xs sm:text-sm text-gray-300 flex justify-between">
+              <div className={`mt-2 sm:mt-3 text-xs sm:text-sm flex justify-between ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>
                 <span>{t('labels.time_label')}: {Math.round((practiceTime / practice.targetTime) * 100)}%</span>
                 <span>{t('labels.energy')}: {vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</span>
               </div>
@@ -1215,9 +1215,9 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
 
             {practice.guidingTexts && practice.guidingTexts.length > 0 && (
               <div className="w-full max-w-md mb-6 sm:mb-8 px-3 sm:px-0">
-                <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-4 sm:p-6 border border-white/25 shadow-xl h-24 sm:h-28 flex items-center justify-center overflow-hidden">
+                <div className={`rounded-2xl p-4 sm:p-6 shadow-xl h-24 sm:h-28 flex items-center justify-center overflow-hidden ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
                   <p
-                    className={`text-sm sm:text-base text-center italic leading-snug text-white/90 whitespace-pre-line transition-all duration-1000 ${
+                    className={`text-sm sm:text-base text-center italic leading-snug whitespace-pre-line transition-all duration-1000 ${isLight ? 'text-slate-700' : 'text-white/90'} ${
                       isTextTransitioning ? 'opacity-0 translate-y-[-20px]' : 'opacity-100 translate-y-0'
                     }`}
                   >
@@ -1228,22 +1228,22 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             )}
 
             <div className="grid grid-cols-2 gap-3 sm:gap-6 mb-6 sm:mb-12 px-3 sm:px-0 w-full max-w-md">
-              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-3 sm:p-6 text-center border border-white/25 shadow-xl">
+              <div className={`rounded-2xl p-3 sm:p-6 text-center shadow-xl ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
                 <Activity className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-red-400" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{vitalsData.stress !== null ? Math.round(vitalsData.stress) : '--'}%</div>
-                <div className="text-xs sm:text-sm text-gray-300">{t('labels.stress')}</div>
+                <div className={`text-xs sm:text-sm ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>{t('labels.stress')}</div>
               </div>
-              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-3 sm:p-6 text-center border border-white/25 shadow-xl">
+              <div className={`rounded-2xl p-3 sm:p-6 text-center shadow-xl ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
                 <Zap className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-blue-400" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</div>
-                <div className="text-xs sm:text-sm text-gray-300">{t('labels.energy')}</div>
+                <div className={`text-xs sm:text-sm ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>{t('labels.energy')}</div>
               </div>
             </div>
             
             <div className="flex gap-3 sm:gap-6">
               <button
                 onClick={togglePause}
-                className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border border-white/25"
+                className={`backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border border-white/25'}`}
               >
                 {isPaused ? <Play className="w-6 h-6 sm:w-8 sm:h-8" /> : <Pause className="w-6 h-6 sm:w-8 sm:h-8" />}
               </button>
