@@ -5445,7 +5445,7 @@ const OndaLevel1 = () => {
         </div>
 
         {/* Кнопки навигации */}
-        <div className="flex flex-col items-center gap-3 sm:gap-4 mb-6 sm:mb-12 w-full max-w-lg mx-auto px-4">
+        <div className="flex flex-col items-center gap-2 mb-6 sm:mb-12 w-full max-w-lg mx-auto px-4">
           {/* Эмоциональная сверка */}
           <button
             onClick={() => {
