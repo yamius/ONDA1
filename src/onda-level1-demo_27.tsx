@@ -5581,7 +5581,7 @@ const OndaLevel1 = () => {
 
         {/* Permission Warning Banner */}
         {permissions.needsSetup && (
-          <div className="mb-6">
+          <div className="mb-6 max-w-lg mx-auto w-full">
             <PermissionWarningBanner
               onSetupClick={() => setShowPermissionModal(true)}
             />
