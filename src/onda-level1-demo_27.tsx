@@ -7397,17 +7397,7 @@ const OndaLevel1 = () => {
                 setShowInfoModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
-                activeCircuit === 2
-                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                  : activeCircuit === 3
-                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                  : activeCircuit === 4
-                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                  : activeCircuit === 9
-                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-              }`}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-home"
             >
@@ -7423,17 +7413,7 @@ const OndaLevel1 = () => {
                 setShowOnboarding(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
-                activeCircuit === 2
-                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                  : activeCircuit === 3
-                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                  : activeCircuit === 4
-                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                  : activeCircuit === 9
-                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-              }`}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-intro"
             >
@@ -7447,17 +7427,7 @@ const OndaLevel1 = () => {
                 setShowJournalModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
-                activeCircuit === 2
-                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                  : activeCircuit === 3
-                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                  : activeCircuit === 4
-                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                  : activeCircuit === 9
-                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-              }`}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-diary"
             >
@@ -7471,17 +7441,7 @@ const OndaLevel1 = () => {
                 setShowStatsModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
-                activeCircuit === 2
-                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                  : activeCircuit === 3
-                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                  : activeCircuit === 4
-                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                  : activeCircuit === 9
-                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-              }`}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-statistics"
             >
@@ -7495,17 +7455,7 @@ const OndaLevel1 = () => {
                 setShowQntShop(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
-                activeCircuit === 2
-                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                  : activeCircuit === 3
-                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                  : activeCircuit === 4
-                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                  : activeCircuit === 9
-                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-              }`}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-ond-balance"
             >
@@ -7520,17 +7470,7 @@ const OndaLevel1 = () => {
                 setShowRatingModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
-                activeCircuit === 2
-                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                  : activeCircuit === 3
-                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                  : activeCircuit === 4
-                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                  : activeCircuit === 9
-                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-              }`}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-leaderboard"
             >
@@ -7544,17 +7484,7 @@ const OndaLevel1 = () => {
                 setShowLanguageModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
-                activeCircuit === 2
-                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                  : activeCircuit === 3
-                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                  : activeCircuit === 4
-                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                  : activeCircuit === 9
-                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-              }`}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-language"
             >
@@ -7578,17 +7508,7 @@ const OndaLevel1 = () => {
                 setShowSettingsModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
-                activeCircuit === 2
-                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                  : activeCircuit === 3
-                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                  : activeCircuit === 4
-                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                  : activeCircuit === 9
-                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-              }`}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-settings"
             >
@@ -7602,17 +7522,7 @@ const OndaLevel1 = () => {
                 setShowConnectionModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
-                activeCircuit === 2
-                  ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                  : activeCircuit === 3
-                  ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                  : activeCircuit === 4
-                  ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                  : activeCircuit === 9
-                  ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                  : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-              }`}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-connection"
             >
@@ -7630,17 +7540,7 @@ const OndaLevel1 = () => {
                   setShowAuthModal(true);
                   setShowMenu(false);
                 }}
-                className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
-                  activeCircuit === 2
-                    ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                    : activeCircuit === 3
-                    ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                    : activeCircuit === 4
-                    ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                    : activeCircuit === 9
-                    ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                    : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-                }`}
+                className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
                 style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
                 data-testid="menu-item-login"
               >
@@ -7656,17 +7556,7 @@ const OndaLevel1 = () => {
                   setShowProfileModal(true);
                   setShowMenu(false);
                 }}
-                className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full ${isLight ? 'text-slate-700' : 'text-white'} ${
-                  activeCircuit === 2
-                    ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                    : activeCircuit === 3
-                    ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                    : activeCircuit === 4
-                    ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                    : activeCircuit === 9
-                    ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                    : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-                }`}
+                className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
                 style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
                 data-testid="menu-item-profile"
               >
