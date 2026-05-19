@@ -231,8 +231,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
             </div>
           </div>
 
-          {/* Contact developers — simple mailto with diagnostics pre-filled */}
-          <div className="pt-4 border-t border-border/10">
+          {/* Contact developers + diagnostics — две кнопки в ряд */}
+          <div className="pt-4 border-t border-border/10 flex gap-3">
             <button
               onClick={() => {
                 const subject = encodeURIComponent(t('settings.contact_subject', 'ONDA — Feedback'));
@@ -243,27 +243,25 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
                 const body = encodeURIComponent(t('settings.contact_body_hint', 'Hi ONDA team,') + diag);
                 window.location.href = `mailto:hello@onda-life.com?subject=${subject}&body=${body}`;
               }}
-              className="w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-indigo-500/15 hover:bg-indigo-500/25 text-text-secondary border border-indigo-400/40"
+              className="flex-1 py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-indigo-500/15 hover:bg-indigo-500/25 text-text-secondary border border-indigo-400/40"
               data-testid="button-contact-developers"
             >
               <Mail className="w-4 h-4" />
               {t('settings.contact_developers', 'Write to developers')}
             </button>
-          </div>
 
-          {/* Diagnostics Button - Hidden in production for App Store compliance */}
-          {showDiagnosticsButton && (
-            <div className="pt-4 border-t border-border/10">
+            {/* Diagnostics Button - Hidden in production for App Store compliance */}
+            {showDiagnosticsButton && (
               <button
                 onClick={() => setShowDiagnostics(true)}
-                className="w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-indigo-500/15 hover:bg-indigo-500/25 text-text-secondary border border-indigo-400/40"
+                className="flex-1 py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-indigo-500/15 hover:bg-indigo-500/25 text-text-secondary border border-indigo-400/40"
                 data-testid="button-open-diagnostics"
               >
                 <Activity className="w-4 h-4" />
                 Vitals Diagnostics
               </button>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
 
