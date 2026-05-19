@@ -4257,11 +4257,11 @@ const OndaLevel1 = () => {
           <div className="relative z-10 flex items-center justify-center min-h-screen p-4 sm:p-6">
             <div className="max-w-2xl w-full text-center space-y-4 sm:space-y-8">
               <div className="text-6xl sm:text-8xl md:text-9xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '1s' }}>✨</div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">{t('practices.completed')}</h2>
+              <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 ${completeLight ? 'text-slate-500' : ''}`}>{t('practices.completed')}</h2>
 
               {activePractice.finalPhrase && (
                 <div className={`rounded-2xl p-4 sm:p-6 border shadow-xl mb-4 sm:mb-6 ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
-                  <p className={`text-base sm:text-lg md:text-xl italic leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-700' : 'text-white/90'}`}>
+                  <p className={`text-base sm:text-lg md:text-xl italic leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-500' : 'text-white/90'}`}>
                     {activePractice.finalPhrase}
                   </p>
                 </div>
@@ -4281,7 +4281,7 @@ const OndaLevel1 = () => {
                   </div>
                   <div className={`w-px h-6 mx-3 ${completeLight ? 'bg-slate-300' : 'bg-white/30'}`} />
                   <div className="flex items-center justify-start gap-2 w-[140px]">
-                    <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-slate-700' : 'text-white'}`}>{formatTime(practiceTime)}</span>
+                    <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-slate-500' : 'text-white'}`}>{formatTime(practiceTime)}</span>
                     <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.time')}</span>
                   </div>
                 </div>
@@ -4344,13 +4344,13 @@ const OndaLevel1 = () => {
                     setIsPaused(false);
                     setAudioResetKey(prev => prev + 1);
                   }}
-                  className={`backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
+                  className={`backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                 >
                   {t('practices.try_again')}
                 </button>
                 <button
                   onClick={exitPractice}
-                  className={`backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
+                  className={`backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                 >
                   {t('practices.back_to_practices')}
                 </button>
