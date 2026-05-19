@@ -124,7 +124,7 @@ export const OndShopModal: React.FC<OndShopModalProps> = ({
                   </div>
 
                   <button
-                    className="w-full py-2.5 sm:py-3 rounded-xl font-bold transition-all text-sm sm:text-base bg-sky-100 hover:bg-sky-200 text-sky-700 border border-sky-200"
+                    className="w-full py-2.5 sm:py-3 rounded-xl font-bold transition-all text-sm sm:text-base bg-indigo-500/15 hover:bg-indigo-500/25 text-slate-800 border border-indigo-400/40"
                     data-testid={`button-buy-${pkg.ond}`}
                   >
                     {t('shop.buy_now', 'Buy Now')}
