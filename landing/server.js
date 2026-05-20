@@ -477,6 +477,22 @@ app.use('/assets', (req, res) => {
   res.redirect(302, '/')
 })
 
+// Branded short links for investor/partner pitch decks.
+// Pattern: onda-life.com/p/<campaign> → 302 to the real PDF under /decks/.
+// Adding a new campaign = add one line below; no template/HTML changes.
+// 302 (not 301) so we can repoint a slug at a new PDF version without
+// browsers caching the old target indefinitely.
+const DECK_SHORT_LINKS = {
+  mundi: '/decks/onda-pitch-mundi-x9k4.pdf',
+  eurostar: '/decks/onda-eurostar-framework-r3p8.pdf',
+}
+app.get('/p/:slug', (req, res, next) => {
+  const target = DECK_SHORT_LINKS[req.params.slug]
+  if (!target) return next()
+  res.set('X-Robots-Tag', 'noindex, nofollow')
+  return res.redirect(302, target)
+})
+
 // Redirect legacy part slug (i-resonate → i-am-vibration)
 app.get('/part/i-resonate', (req, res) => res.redirect(301, '/part/i-am-vibration'))
 
