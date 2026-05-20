@@ -157,23 +157,23 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
     >
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" />
       
-      <div className="relative w-full sm:max-w-lg h-[90vh] sm:h-[80vh] bg-gradient-to-b from-slate-900 to-slate-800 rounded-t-3xl sm:rounded-2xl flex flex-col overflow-hidden shadow-2xl border border-white/10">
-        <div className="flex items-center justify-between p-4 border-b border-white/10 bg-slate-900/50">
+      <div className="relative w-full sm:max-w-lg h-[90vh] sm:h-[80vh] bg-gradient-to-b from-bg to-surface text-text-primary rounded-t-3xl sm:rounded-2xl flex flex-col overflow-hidden shadow-2xl border border-border/10">
+        <div className="flex items-center justify-between p-4 border-b border-border/10 bg-surface/50">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 flex items-center justify-center">
               <Sparkles className="w-5 h-5 text-white" />
             </div>
             <div>
-              <h3 className="text-white font-semibold">{t('liza.name')}</h3>
-              <p className="text-white/50 text-xs">{t('liza.subtitle')}</p>
+              <h3 className="text-text-primary font-semibold">{t('liza.name')}</h3>
+              <p className="text-text-muted text-xs">{t('liza.subtitle')}</p>
             </div>
           </div>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors"
+            className="w-8 h-8 rounded-full bg-border/10 hover:bg-border/20 flex items-center justify-center transition-colors"
             data-testid="button-close-liza-chat"
           >
-            <X className="w-4 h-4 text-white" />
+            <X className="w-4 h-4 text-text-primary" />
           </button>
         </div>
 
@@ -187,7 +187,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
                 className={`max-w-[85%] rounded-2xl px-4 py-3 ${
                   msg.from === 'user'
                     ? 'bg-blue-600 text-white rounded-br-md'
-                    : 'bg-slate-700/80 text-white/90 rounded-bl-md'
+                    : 'bg-surface-2 text-text-primary/90 rounded-bl-md'
                 }`}
               >
                 <p className="text-sm whitespace-pre-wrap">{msg.text}</p>
@@ -220,7 +220,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
                         sendUserValue(val, `${val}`);
                       }}
                     />
-                    <div className="flex justify-between text-xs text-white/50 mt-1">
+                    <div className="flex justify-between text-xs text-text-muted mt-1">
                       <span>{msg.ui.min}</span>
                       <span>{msg.ui.max}</span>
                     </div>
@@ -232,7 +232,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
           
           {isTyping && (
             <div className="flex justify-start">
-              <div className="bg-slate-700/80 rounded-2xl rounded-bl-md px-4 py-3">
+              <div className="bg-surface-2 rounded-2xl rounded-bl-md px-4 py-3">
                 <div className="flex items-center gap-1.5">
                   <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
                   <span className="w-2 h-2 bg-cyan-400 rounded-full typing-dot" />
@@ -245,7 +245,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
           <div ref={messagesEndRef} />
         </div>
 
-        <div className="p-4 border-t border-white/10 bg-slate-900/50">
+        <div className="p-4 border-t border-border/10 bg-surface/50">
           <div className="flex gap-2">
             <input
               ref={inputRef}
@@ -254,13 +254,13 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
               onChange={(e) => setInputText(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder={t('liza.input_placeholder')}
-              className="flex-1 bg-slate-700/50 text-white placeholder-white/40 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 border border-white/10"
+              className="flex-1 bg-surface-2 text-text-primary placeholder-text-muted rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/50 border border-border/10"
               data-testid="input-liza-message"
             />
             <button
               onClick={() => sendUserText(inputText)}
               disabled={!inputText.trim() || isTyping}
-              className="w-12 h-12 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:bg-slate-600 disabled:opacity-50 flex items-center justify-center transition-colors"
+              className="w-12 h-12 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:bg-surface-2 disabled:opacity-50 flex items-center justify-center transition-colors"
               data-testid="button-send-liza-message"
             >
               <Send className="w-5 h-5 text-white" />

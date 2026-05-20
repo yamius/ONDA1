@@ -29,7 +29,7 @@ export function initSentry(): void {
       // Disabling this kills the noise category without losing signal.
       enableCaptureFailedRequests: false,
       environment: import.meta.env.MODE,
-      release: import.meta.env.VITE_SENTRY_RELEASE || 'onda-life@1.0.1',
+      release: import.meta.env.VITE_SENTRY_RELEASE || 'onda-life@1.7.1',
     },
     SentryReact.init,
   );

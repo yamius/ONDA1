@@ -5,10 +5,9 @@ import { useTranslation } from 'react-i18next';
 interface LegalModalProps {
   type: 'terms' | 'privacy';
   onClose: () => void;
-  isLightTheme: boolean;
 }
 
-export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose, isLightTheme }) => {
+export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose }) => {
   const { i18n, t } = useTranslation();
   const [content, setContent] = useState<string>('');
   const [loading, setLoading] = useState(true);
@@ -69,37 +68,25 @@ export const LegalModal: React.FC<LegalModalProps> = ({ type, onClose, isLightTh
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
       onClick={(e) => e.target === e.currentTarget && onClose()}
     >
-      <div className={`relative w-full max-w-2xl max-h-[85vh] rounded-2xl shadow-xl overflow-hidden ${
-        isLightTheme ? 'bg-white' : 'bg-gray-900'
-      }`}>
+      <div className="relative w-full max-w-2xl max-h-[85vh] rounded-2xl shadow-xl overflow-hidden bg-bg">
         {/* Header */}
-        <div className={`sticky top-0 z-10 flex items-center justify-between p-4 border-b ${
-          isLightTheme ? 'bg-white border-gray-200' : 'bg-gray-900 border-white/10'
-        }`}>
-          <h2 className={`text-lg font-semibold ${isLightTheme ? 'text-gray-900' : 'text-white'}`}>
+        <div className="sticky top-0 z-10 flex items-center justify-between p-4 border-b bg-bg border-border/10">
+          <h2 className="text-lg font-semibold text-text-primary">
             {type === 'terms' ? t('legal.terms_of_use') : t('legal.privacy_policy')}
           </h2>
-          <button 
+          <button
             onClick={onClose}
-            className={`p-2 rounded-full transition-colors ${
-              isLightTheme 
-                ? 'hover:bg-gray-100 text-gray-500' 
-                : 'hover:bg-white/10 text-white/70'
-            }`}
+            className="p-2 rounded-full transition-colors hover:bg-border/10 text-text-muted"
           >
             <X className="w-5 h-5" />
           </button>
         </div>
 
         {/* Content */}
-        <div className={`p-6 overflow-y-auto max-h-[calc(85vh-80px)] ${
-          isLightTheme ? 'text-gray-700' : 'text-white/90'
-        }`}>
+        <div className="p-6 overflow-y-auto max-h-[calc(85vh-80px)] text-text-secondary">
           {loading ? (
             <div className="flex justify-center py-8">
-              <div className={`animate-spin rounded-full h-8 w-8 border-b-2 ${
-                isLightTheme ? 'border-gray-900' : 'border-white'
-              }`} />
+              <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-accent" />
             </div>
           ) : (
             <div 

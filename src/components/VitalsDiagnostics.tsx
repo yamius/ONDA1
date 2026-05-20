@@ -8,20 +8,19 @@ import { useVitals } from '../hooks/useVitals';
 
 interface DiagnosticsProps {
   onClose: () => void;
-  isLightTheme?: boolean;
 }
 
 // Platform detection
 const isAndroidWebView = typeof window !== 'undefined' && window.Android !== undefined;
 const hasWindowAndroid = typeof window !== 'undefined' && !!window.Android;
 
-export function VitalsDiagnostics({ onClose, isLightTheme = false }: DiagnosticsProps) {
+export function VitalsDiagnostics({ onClose }: DiagnosticsProps) {
   const bleHR = useHeartRate();
   const healthKitHR = useHealthKitHeartRate();
   const watchHR = useWatchHeartRate();
   const notificationHR = useNotificationHeartRate();
   const vitals = useVitals();
-  
+
   const [bufferLength, setBufferLength] = useState(0);
   const [lastSamples, setLastSamples] = useState<Array<{t: number, hr: number}>>([]);
   const [updateCount, setUpdateCount] = useState(0);
@@ -85,8 +84,8 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
 
   const StatusBadge = ({ ok, label }: { ok: boolean, label: string }) => (
     <span className={`px-2 py-1 rounded text-xs font-mono ${
-      ok 
-        ? 'bg-green-500/20 text-green-400 border border-green-500/30' 
+      ok
+        ? 'bg-green-500/20 text-green-400 border border-green-500/30'
         : 'bg-red-500/20 text-red-400 border border-red-500/30'
     }`}>
       {label}: {ok ? 'YES' : 'NO'}
@@ -95,12 +94,10 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
 
   return (
     <div className="fixed inset-0 bg-black/90 z-[100] overflow-auto p-4">
-      <div className={`max-w-lg mx-auto rounded-xl p-4 ${
-        isLightTheme ? 'bg-white text-black' : 'bg-gray-900 text-white'
-      }`}>
+      <div className="max-w-lg mx-auto rounded-xl p-4 bg-bg text-text-primary">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-bold">Vitals Diagnostics</h2>
-          <button 
+          <button
             onClick={onClose}
             className="p-2 rounded-lg bg-red-500/20 text-red-400"
           >
@@ -109,7 +106,7 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
         </div>
 
         {/* Platform Info */}
-        <div className={`p-3 rounded-lg mb-3 ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+        <div className="p-3 rounded-lg mb-3 bg-surface-2">
           <h3 className="font-semibold mb-2">Platform</h3>
           <div className="flex flex-wrap gap-2 mb-2">
             <StatusBadge ok={isAndroidWebView} label="Android WebView" />
@@ -121,14 +118,14 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
         </div>
 
         {/* Event Log */}
-        <div className={`p-3 rounded-lg mb-3 ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+        <div className="p-3 rounded-lg mb-3 bg-surface-2">
           <h3 className="font-semibold mb-2">Event Log (last 10)</h3>
           <div className="font-mono text-xs space-y-1 max-h-32 overflow-y-auto">
             {eventLog.length === 0 ? (
-              <div className="text-gray-500">No events yet...</div>
+              <div className="text-text-muted">No events yet...</div>
             ) : (
               eventLog.map((log, i) => (
-                <div key={i} className={i === 0 ? 'text-green-400' : 'text-gray-400'}>
+                <div key={i} className={i === 0 ? 'text-green-400' : 'text-text-muted'}>
                   {log}
                 </div>
               ))
@@ -137,11 +134,11 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
         </div>
 
         {/* Vitals Gate - CRITICAL FOR PRACTICE REWARDS */}
-        <div className={`p-3 rounded-lg mb-3 border-2 ${
-          vitals.hasVitalsData 
-            ? 'border-green-500' 
+        <div className={`p-3 rounded-lg mb-3 border-2 bg-surface-2 ${
+          vitals.hasVitalsData
+            ? 'border-green-500'
             : 'border-red-500'
-        } ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+        }`}>
           <h3 className="font-semibold mb-2">Vitals Gate (Practice Rewards)</h3>
           <div className="grid grid-cols-2 gap-2 font-mono text-sm mb-2">
             <div className="col-span-2 text-lg">
@@ -154,17 +151,17 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
             <div>energyReady: <StatusBadge ok={vitals.energyReady} label={vitals.energyReady ? 'YES' : 'NO'} /></div>
             <div>hrSource: <span className="text-blue-400">{vitals.hrSource ?? 'null'}</span></div>
           </div>
-          <div className="text-xs text-gray-400">
+          <div className="text-xs text-text-muted">
             All 3 conditions must be TRUE for practice to use real metrics
           </div>
         </div>
 
         {/* Calculated Vitals - THIS IS THE KEY SECTION */}
-        <div className={`p-3 rounded-lg mb-3 border-2 ${
-          vitals.stress !== null 
-            ? 'border-green-500/50' 
+        <div className={`p-3 rounded-lg mb-3 border-2 bg-surface-2 ${
+          vitals.stress !== null
+            ? 'border-green-500/50'
             : 'border-red-500/50'
-        } ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+        }`}>
           <h3 className="font-semibold mb-2">Calculated Vitals (realtime)</h3>
           <div className="grid grid-cols-2 gap-2 font-mono text-sm">
             <div>Stress: <span className={vitals.stress !== null ? 'text-green-400' : 'text-red-400'}>{vitals.stress ?? 'null'}</span></div>
@@ -174,18 +171,18 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
             <div>Calm: <span className="text-blue-400">{vitals.calm ?? 'null'}</span></div>
             <div>Focus: <span className="text-blue-400">{vitals.focus ?? 'null'}</span></div>
           </div>
-          <div className="mt-2 text-xs text-gray-400">
+          <div className="mt-2 text-xs text-text-muted">
             Last update: <span className={vitalsUpdateTime !== '—' ? 'text-green-400' : 'text-red-400'}>{vitalsUpdateTime}</span>
           </div>
         </div>
 
         {/* Buffer Status */}
-        <div className={`p-3 rounded-lg mb-3 ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+        <div className="p-3 rounded-lg mb-3 bg-surface-2">
           <h3 className="font-semibold mb-2">HeartRate Buffer</h3>
           <div className="font-mono text-2xl mb-2">
             Length: <span className={bufferLength > 0 ? 'text-green-400' : 'text-red-400'}>{bufferLength}</span>
           </div>
-          <div className="text-xs text-gray-400">
+          <div className="text-xs text-text-muted">
             Need 10+ samples for vitals calculation
           </div>
           {lastSamples.length > 0 && (
@@ -194,7 +191,7 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
               {lastSamples.map((s, i) => {
                 const delta = i > 0 ? (s.t - lastSamples[i-1].t).toFixed(2) : '—';
                 return (
-                  <div key={i} className="text-gray-300">
+                  <div key={i} className="text-text-secondary">
                     {formatTime(s.t)} → {s.hr} BPM (Δ{delta}s)
                   </div>
                 );
@@ -204,7 +201,7 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
         </div>
 
         {/* BLE Status */}
-        <div className={`p-3 rounded-lg mb-3 ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+        <div className="p-3 rounded-lg mb-3 bg-surface-2">
           <h3 className="font-semibold mb-2">BLE (Bluetooth)</h3>
           <div className="flex flex-wrap gap-2 mb-2">
             <StatusBadge ok={bleHR.connected} label="Connected" />
@@ -215,7 +212,7 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
         </div>
 
         {/* HealthKit Status */}
-        <div className={`p-3 rounded-lg mb-3 ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+        <div className="p-3 rounded-lg mb-3 bg-surface-2">
           <h3 className="font-semibold mb-2">HealthKit (iOS)</h3>
           <div className="flex flex-wrap gap-2 mb-2">
             <StatusBadge ok={healthKitHR.isAvailable === true} label="Available" />
@@ -231,7 +228,7 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
         </div>
 
         {/* Watch Status */}
-        <div className={`p-3 rounded-lg mb-3 ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+        <div className="p-3 rounded-lg mb-3 bg-surface-2">
           <h3 className="font-semibold mb-2">Apple Watch</h3>
           <div className="flex flex-wrap gap-2 mb-2">
             <StatusBadge ok={watchHR.isConnected} label="Connected" />
@@ -242,7 +239,7 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
         </div>
 
         {/* Notification HR Status (Android) */}
-        <div className={`p-3 rounded-lg mb-3 ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+        <div className="p-3 rounded-lg mb-3 bg-surface-2">
           <h3 className="font-semibold mb-2">Notification HR (Android)</h3>
           <div className="font-mono">
             HR: {notificationHR.hr ?? 'null'}
@@ -250,9 +247,9 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
         </div>
 
         {/* Priority Logic */}
-        <div className={`p-3 rounded-lg mb-3 ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+        <div className="p-3 rounded-lg mb-3 bg-surface-2">
           <h3 className="font-semibold mb-2">Active Source Priority</h3>
-          <div className="text-xs text-gray-400 mb-2">
+          <div className="text-xs text-text-muted mb-2">
             1. BLE → 2. Watch → 3. HealthKit → 4. Notification
           </div>
           <div className="font-mono">
@@ -266,7 +263,7 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
         </div>
 
         {/* Conditions Check */}
-        <div className={`p-3 rounded-lg ${isLightTheme ? 'bg-gray-100' : 'bg-gray-800'}`}>
+        <div className="p-3 rounded-lg bg-surface-2">
           <h3 className="font-semibold mb-2">Data Flow Check</h3>
           <div className="text-xs space-y-1 font-mono">
             <div className={bleHR.connected ? 'text-yellow-400' : 'text-green-400'}>
@@ -281,7 +278,7 @@ export function VitalsDiagnostics({ onClose, isLightTheme = false }: Diagnostics
           </div>
         </div>
 
-        <div className="text-xs text-gray-500 mt-4 text-center">
+        <div className="text-xs text-text-muted mt-4 text-center">
           Update #{updateCount} | Refresh: 1s
         </div>
       </div>

@@ -71,19 +71,19 @@ export function PermissionSetupModal({
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 pt-[calc(env(safe-area-inset-top)+0.75rem)]">
       {/* Modal */}
-      <div className="max-w-md w-full h-auto max-h-[calc(100vh-env(safe-area-inset-top)-env(safe-area-inset-bottom)-3rem)] rounded-2xl border border-purple-500/30 relative flex flex-col bg-gradient-to-br from-gray-900 to-black">
+      <div className="max-w-md w-full h-auto max-h-[calc(100vh-env(safe-area-inset-top)-env(safe-area-inset-bottom)-3rem)] rounded-2xl border border-border/15 relative flex flex-col bg-bg text-text-primary">
         {/* Header */}
-        <div className="sticky top-0 z-10 pt-6 px-6 sm:pt-8 sm:px-8 pb-4 rounded-t-2xl bg-gradient-to-br from-gray-900 to-gray-900">
+        <div className="sticky top-0 z-10 pt-6 px-6 sm:pt-8 sm:px-8 pb-4 rounded-t-2xl bg-bg">
           <button
             onClick={onClose}
-            className="absolute right-4 top-4 p-2 rounded-full transition-all hover:bg-white/10"
+            className="absolute right-4 top-4 p-2 rounded-full transition-all hover:bg-border/10"
           >
             <X className="w-5 h-5" />
           </button>
 
           <div className="text-center">
             <h2 className="text-2xl sm:text-3xl font-light mb-2">🔐 {t('permissions.modal_title')}</h2>
-            <p className="text-xs sm:text-sm text-white/70">
+            <p className="text-xs sm:text-sm text-text-secondary">
               {t('permissions.modal_description')}
             </p>
           </div>
@@ -110,11 +110,11 @@ export function PermissionSetupModal({
               <button
                 onClick={handleRequestAll}
                 disabled={isRequesting}
-                className="w-full bg-green-500/20 hover:bg-green-500/30 disabled:bg-green-500/10 text-green-400 disabled:text-green-400/50 font-medium py-3 px-6 rounded-xl transition-all disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full bg-indigo-500/15 hover:bg-indigo-500/25 disabled:bg-indigo-500/5 text-text-primary disabled:opacity-50 font-medium py-3 px-6 rounded-xl transition-all disabled:cursor-not-allowed flex items-center justify-center gap-2 border border-indigo-400/40"
               >
                 {isRequesting ? (
                   <>
-                    <div className="w-4 h-4 border-2 border-green-400/30 border-t-green-400 rounded-full animate-spin" />
+                    <div className="w-4 h-4 border-2 border-indigo-400/30 border-t-indigo-500 rounded-full animate-spin" />
                     {t('permissions.requesting')}
                   </>
                 ) : (
@@ -128,7 +128,7 @@ export function PermissionSetupModal({
               {/* Setup later button */}
               <button
                 onClick={onClose}
-                className="w-full bg-white/5 hover:bg-white/10 text-white/70 hover:text-white font-medium py-3 px-6 rounded-xl transition-all"
+                className="w-full bg-indigo-500/15 hover:bg-indigo-500/25 text-text-primary font-medium py-3 px-6 rounded-xl transition-all border border-indigo-400/40"
               >
                 {t('permissions.setup_later')}
               </button>
@@ -152,19 +152,19 @@ interface PermissionCardProps {
 function PermissionCard({ icon: Icon, title, description, granted, colorClasses }: PermissionCardProps) {
   return (
     <div className={`border rounded-xl p-4 transition-all ${
-      granted 
-        ? 'bg-green-500/10 border-green-500/30' 
-        : 'bg-white/5 border-white/10'
+      granted
+        ? 'bg-green-500/10 border-green-500/30'
+        : 'bg-surface-2 border-border/10'
     }`}>
       <div className="flex items-start gap-4">
-        <div className={`flex-shrink-0 ${granted ? 'text-green-400' : 'text-white/70'}`}>
+        <div className={`flex-shrink-0 ${granted ? 'text-green-400' : 'text-text-secondary'}`}>
           <Icon className="w-6 h-6" />
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className={`font-medium mb-1 ${granted ? 'text-green-400' : 'text-white'}`}>
+          <h3 className={`font-medium mb-1 ${granted ? 'text-green-400' : 'text-text-primary'}`}>
             {title}
           </h3>
-          <p className="text-sm text-white/60 leading-relaxed">
+          <p className="text-sm text-text-muted leading-relaxed">
             {description}
           </p>
         </div>
@@ -174,7 +174,7 @@ function PermissionCard({ icon: Icon, title, description, granted, colorClasses 
               <Check className="w-4 h-4 text-white" />
             </div>
           ) : (
-            <div className="w-6 h-6 bg-white/10 rounded-full border border-white/20" />
+            <div className="w-6 h-6 bg-border/10 rounded-full border border-border/20" />
           )}
         </div>
       </div>

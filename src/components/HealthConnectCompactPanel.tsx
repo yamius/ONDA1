@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import type { HcUpdatePayload } from "../bridge/healthConnectBridge";
 
 interface HealthConnectCompactPanelProps {
-  isLightTheme?: boolean;
   data: HcUpdatePayload | null;
 }
 
@@ -20,7 +19,7 @@ interface MetricGroup {
   metrics: MetricItem[];
 }
 
-export function HealthConnectCompactPanel({ isLightTheme = false, data }: HealthConnectCompactPanelProps) {
+export function HealthConnectCompactPanel({ data }: HealthConnectCompactPanelProps) {
   const { t, i18n } = useTranslation();
 
   if (!data) {
@@ -276,30 +275,22 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
   }
 
   return (
-    <div className={`mt-4 p-4 rounded-xl ${
-      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
-    }`}>
+    <div className="mt-4 p-4 rounded-xl bg-surface-2">
       <div className="space-y-4">
         {filteredGroups.map((group, groupIdx) => (
           <div key={groupIdx}>
-            <h4 className={`text-xs font-semibold mb-2 ${
-              isLightTheme ? 'text-gray-600' : 'text-white/60'
-            }`}>
+            <h4 className="text-xs font-semibold mb-2 text-text-muted">
               {group.title}
             </h4>
             <div className="space-y-2">
               {group.metrics.map((metric, metricIdx) => (
                 <div
                   key={metricIdx}
-                  className={`flex items-center justify-between p-2.5 rounded-lg ${
-                    isLightTheme ? 'bg-white' : 'bg-white/5'
-                  }`}
+                  className="flex items-center justify-between p-2.5 rounded-lg bg-surface"
                 >
                   <div className="flex items-center gap-2.5 flex-1 min-w-0">
                     <metric.icon className={`w-4 h-4 flex-shrink-0 ${metric.color}`} />
-                    <span className={`text-sm ${
-                      isLightTheme ? 'text-gray-700' : 'text-white/80'
-                    }`}>
+                    <span className="text-sm text-text-primary/80">
                       {metric.label}
                     </span>
                   </div>
@@ -312,21 +303,15 @@ export function HealthConnectCompactPanel({ isLightTheme = false, data }: Health
           </div>
         ))}
       </div>
-      
-      <div className="flex items-center justify-between mt-3 pt-3 border-t border-white/10">
-        <p className={`text-xs ${
-          isLightTheme ? 'text-gray-500' : 'text-white/50'
-        }`}>
+
+      <div className="flex items-center justify-between mt-3 pt-3 border-t border-border/10">
+        <p className="text-xs text-text-muted">
           Last update: {data.ts ? new Date(data.ts).toLocaleString() : 'N/A'}
         </p>
-        
+
         <div className={`flex items-center gap-1.5 px-2 py-1 rounded-md text-xs font-medium ${
           data.source === 'health_connect'
-            ? isLightTheme
-              ? 'bg-green-100 text-green-700'
-              : 'bg-green-500/20 text-green-400'
-            : isLightTheme
-            ? 'bg-yellow-100 text-yellow-700'
+            ? 'bg-green-500/20 text-green-400'
             : 'bg-yellow-500/20 text-yellow-400'
         }`}>
           {data.source === 'health_connect' ? (

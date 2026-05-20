@@ -200,8 +200,10 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
         style={{
           overflow: 'hidden',
           touchAction: 'none',
-          opacity: hasPreview && !fullReady ? 0 : 1,
-          transition: hasPreview ? 'opacity 2000ms ease-in-out' : 'none',
+          // HDR-канвас всегда фейдится из прозрачного: в тёмной теме —
+          // поверх JPEG-превью, в светлой — поверх люминесцентного фона.
+          opacity: fullReady ? 1 : 0,
+          transition: 'opacity 2000ms ease-in-out',
         }}
       >
         <Canvas
@@ -213,7 +215,7 @@ export default function WelcomeScene({ url, previewUrl }: WelcomeSceneProps) {
           <Suspense fallback={null}>
             <CleanEnvironment
               url={url}
-              onReady={hasPreview ? handleFullReady : undefined}
+              onReady={handleFullReady}
             />
           </Suspense>
           <PanoramaControls />

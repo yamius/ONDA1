@@ -33,7 +33,6 @@ interface HealthKitDataFull {
 
 interface ConnectionModalProps {
   onClose: () => void;
-  isLightTheme: boolean;
   vitalsData: {
     connected: boolean;
     connect: () => void;
@@ -67,7 +66,6 @@ interface ConnectionModalProps {
 
 export const ConnectionModal: React.FC<ConnectionModalProps> = ({
   onClose,
-  isLightTheme,
   vitalsData,
   healthConnectData,
   healthKitHeartRateData,
@@ -158,24 +156,14 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
 
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 pt-[calc(env(safe-area-inset-top)+0.75rem)]">
-      <div
-        className={`max-w-md w-full h-[calc(100vh-env(safe-area-inset-top)-env(safe-area-inset-bottom)-3rem)] rounded-2xl border relative flex flex-col ${
-          isLightTheme
-            ? 'bg-white border-gray-300'
-            : 'bg-gradient-to-br from-gray-900 to-black border-purple-500/30'
-        }`}
-      >
-        <div className={`sticky top-0 z-10 pt-6 px-6 sm:pt-8 sm:px-8 pb-4 rounded-t-2xl ${
-          isLightTheme
-            ? 'bg-white'
-            : 'bg-gradient-to-br from-gray-900 to-gray-900'
-        }`}>
+      <div className="max-w-md w-full h-[calc(100vh-env(safe-area-inset-top)-env(safe-area-inset-bottom)-3rem)] rounded-2xl border border-border/15 relative flex flex-col bg-bg text-text-primary">
+        <div className="sticky top-0 z-10 pt-6 px-6 sm:pt-8 sm:px-8 pb-4 rounded-t-2xl bg-bg">
           <button
             onClick={onClose}
             className={`absolute right-4 p-2 rounded-full transition-all ${
               isAndroid ? 'top-8' : 'top-4'
             } ${
-              isLightTheme ? 'hover:bg-gray-200' : 'hover:bg-white/10'
+              'hover:bg-border/10'
             }`}
           >
             <X className="w-5 h-5" />
@@ -183,7 +171,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
 
           <div className="text-center">
             <h2 className="text-2xl sm:text-3xl font-light mb-2">{t('connection.title', 'Connection')}</h2>
-            <p className={`text-xs sm:text-sm ${isLightTheme ? 'text-gray-600' : 'text-white/70'}`}>
+            <p className={`text-xs sm:text-sm ${'text-text-secondary'}`}>
               {t('connection.subtitle', 'Connect your health devices and trackers')}
             </p>
           </div>
@@ -198,12 +186,12 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
           {isIOS && (
             <div>
               <h3 className={`text-sm font-semibold mb-3 ${
-                isLightTheme ? 'text-gray-700' : 'text-white/80'
+                'text-text-primary/80'
               }`}>
                 {t('connection.healthkit', 'Apple HealthKit')}
               </h3>
               <p className={`text-xs mb-3 ${
-                isLightTheme ? 'text-gray-600' : 'text-white/60'
+                'text-text-muted'
               }`}>
                 {t('connection.healthkit_desc', 'Connect Apple Watch and fitness trackers via HealthKit for heart rate monitoring')}
               </p>
@@ -215,18 +203,14 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     disabled={hkConnecting}
                     className={`flex-1 py-3 px-3 rounded-xl font-medium transition-all flex flex-col items-center justify-center gap-1 ${
                       hkConnecting
-                        ? isLightTheme
-                          ? 'bg-gray-100 text-gray-500'
-                          : 'bg-white/10 text-white/50'
-                        : isLightTheme
-                        ? 'bg-green-100 hover:bg-green-200 text-green-700'
-                        : 'bg-green-500/20 hover:bg-green-500/30 text-green-400'
+                        ? 'bg-surface-2 text-text-muted'
+                        : 'bg-green-500/15 hover:bg-green-500/25 text-green-400'
                     }`}
                     data-testid="button-connect-healthkit-realtime"
                   >
                     <Zap className="w-5 h-5" />
                     <span className="text-sm">{t('connection.healthkit_realtime', 'Real-time')}</span>
-                    <span className={`text-[10px] ${isLightTheme ? 'text-green-600' : 'text-green-300'}`}>
+                    <span className={`text-[10px] ${'text-green-400'}`}>
                       {t('connection.instant', 'instant')}
                     </span>
                   </button>
@@ -234,7 +218,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
               ) : (
                 <div className="flex gap-2 mb-3">
                   <div className={`flex-1 py-3 px-4 rounded-xl flex items-center justify-center gap-2 ${
-                    isLightTheme ? 'bg-green-100 text-green-700' : 'bg-green-500/20 text-green-400'
+                    'bg-green-500/15 text-green-400'
                   }`}>
                     {hkMode === 'realtime' ? <Zap className="w-5 h-5" /> : 
                      hkMode === 'direct' ? <Heart className="w-5 h-5" /> : <Activity className="w-5 h-5" />}
@@ -245,9 +229,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                   <button
                     onClick={handleHealthKitDisconnect}
                     className={`py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
-                      isLightTheme
-                        ? 'bg-red-100 hover:bg-red-200 text-red-700'
-                        : 'bg-red-500/20 hover:bg-red-500/30 text-red-400'
+                      'bg-red-500/15 hover:bg-red-500/25 text-red-400'
                     }`}
                     data-testid="button-disconnect-healthkit"
                   >
@@ -259,7 +241,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
 
               {hkError && (
                 <div className={`flex items-center gap-2 p-3 rounded-lg mb-3 ${
-                  isLightTheme ? 'bg-red-100 text-red-700' : 'bg-red-500/20 text-red-400'
+                  'bg-red-500/15 text-red-400'
                 }`}>
                   <AlertCircle className="w-4 h-4 flex-shrink-0" />
                   <span className="text-xs">{hkError}</span>
@@ -268,7 +250,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
 
               {hkShowSuccess && (
                 <div className={`flex items-center gap-2 p-3 rounded-lg mb-3 ${
-                  isLightTheme ? 'bg-green-100 text-green-700' : 'bg-green-500/20 text-green-400'
+                  'bg-green-500/15 text-green-400'
                 }`}>
                   <CheckCircle className="w-4 h-4 flex-shrink-0" />
                   <span className="text-xs">{t('connection.healthkit_success', 'Successfully connected to HealthKit')}</span>
@@ -278,10 +260,10 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
               {/* Show iOS Vitals Panel when monitoring */}
               {hkIsMonitoring && (
                 <div className={`mt-4 p-4 rounded-xl ${
-                  isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                  'bg-surface-2'
                 }`}>
                   <h4 className={`text-sm font-semibold mb-3 text-center ${
-                    isLightTheme ? 'text-gray-700' : 'text-white/70'
+                    'text-text-secondary'
                   }`}>
                     {t('settings.basic_metrics', 'Basic Metrics')}
                   </h4>
@@ -290,12 +272,12 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       type="button"
                       onClick={() => setSelectedMetric('bpm')}
                       className={`flex items-center gap-2 p-3 rounded-lg text-left transition-colors active:scale-[0.98] cursor-pointer ${
-                        isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        'bg-surface hover:bg-surface-2'
                       }`}
                     >
                       <Heart className={`w-5 h-5 ${hr ? 'text-red-500 animate-pulse' : 'text-red-500'}`} />
                       <div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.heart_rate', 'Heart Rate')}
                         </div>
                         <div className="text-lg font-semibold">
@@ -308,12 +290,12 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       type="button"
                       onClick={() => setSelectedMetric('br')}
                       className={`flex items-center gap-2 p-3 rounded-lg text-left transition-colors active:scale-[0.98] cursor-pointer ${
-                        isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        'bg-surface hover:bg-surface-2'
                       }`}
                     >
                       <Wind className="w-5 h-5 text-blue-500" />
                       <div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.breathing', 'Breathing')}
                         </div>
                         <div className="text-lg font-semibold">{hkHeartRate && br ? `${br.toFixed(1)}` : '--'} /min</div>
@@ -324,12 +306,12 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       type="button"
                       onClick={() => setSelectedMetric('stress')}
                       className={`flex items-center gap-2 p-3 rounded-lg text-left transition-colors active:scale-[0.98] cursor-pointer ${
-                        isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        'bg-surface hover:bg-surface-2'
                       }`}
                     >
                       <Activity className="w-5 h-5 text-orange-500" />
                       <div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.stress', 'Stress')}
                         </div>
                         <div className="text-lg font-semibold">{hkHeartRate && stress !== null ? `${stress}%` : '--%'}</div>
@@ -340,12 +322,12 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       type="button"
                       onClick={() => setSelectedMetric('energy')}
                       className={`flex items-center gap-2 p-3 rounded-lg text-left transition-colors active:scale-[0.98] cursor-pointer ${
-                        isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                        'bg-surface hover:bg-surface-2'
                       }`}
                     >
                       <Zap className="w-5 h-5 text-yellow-500" />
                       <div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-600' : 'text-white/60'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.energy', 'Energy')}
                         </div>
                         <div className="text-lg font-semibold">{hkHeartRate && energy !== null ? `${energy}%` : '--%'}</div>
@@ -356,7 +338,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                   {/* Advanced Physiological Metrics for iOS */}
                   <div className="mt-6">
                     <h4 className={`text-base font-semibold mb-4 text-center ${
-                      isLightTheme ? 'text-gray-800' : 'text-white'
+                      'text-text-primary'
                     }`}>
                       {t('settings.advanced_metrics', 'Advanced Physiological Metrics')}
                     </h4>
@@ -365,15 +347,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         type="button"
                         onClick={() => setSelectedMetric('hrv')}
                         className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
-                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                          'bg-surface hover:bg-surface-2'
                         }`}
                       >
                         <div>
-                          <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          <div className={`font-medium ${'text-text-primary'}`}>
                             {t('settings.hrv_surrogate', 'HRV (estimate)')}
                           </div>
                         </div>
-                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        <div className={`font-semibold ${'text-text-primary/80'}`}>
                           {hkHeartRate && hrv !== null ? `${hrv}` : '--'}
                         </div>
                       </button>
@@ -382,15 +364,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         type="button"
                         onClick={() => setSelectedMetric('csi')}
                         className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
-                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                          'bg-surface hover:bg-surface-2'
                         }`}
                       >
                         <div>
-                          <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          <div className={`font-medium ${'text-text-primary'}`}>
                             {t('settings.cardiac_stability', 'Cardiac Stability Index')}
                           </div>
                         </div>
-                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        <div className={`font-semibold ${'text-text-primary/80'}`}>
                           {hkHeartRate && csi !== null ? csi.toFixed(2) : '--'}
                         </div>
                       </button>
@@ -399,15 +381,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         type="button"
                         onClick={() => setSelectedMetric('recovery')}
                         className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
-                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                          'bg-surface hover:bg-surface-2'
                         }`}
                       >
                         <div>
-                          <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          <div className={`font-medium ${'text-text-primary'}`}>
                             {t('settings.recovery_rate', 'Recovery Rate')}
                           </div>
                         </div>
-                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        <div className={`font-semibold ${'text-text-primary/80'}`}>
                           {hkHeartRate && recoveryRate !== null ? `${(recoveryRate * 100).toFixed(0)}%` : '--'}
                         </div>
                       </button>
@@ -416,15 +398,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         type="button"
                         onClick={() => setSelectedMetric('slope')}
                         className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
-                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                          'bg-surface hover:bg-surface-2'
                         }`}
                       >
                         <div>
-                          <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          <div className={`font-medium ${'text-text-primary'}`}>
                             {t('settings.hr_trend_slope', 'HR trend slope')}
                           </div>
                         </div>
-                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        <div className={`font-semibold ${'text-text-primary/80'}`}>
                           {hkHeartRate && hrTrendSlope !== null ? hrTrendSlope.toFixed(2) : '--'}
                         </div>
                       </button>
@@ -433,15 +415,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         type="button"
                         onClick={() => setSelectedMetric('acceleration')}
                         className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
-                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                          'bg-surface hover:bg-surface-2'
                         }`}
                       >
                         <div>
-                          <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                          <div className={`font-medium ${'text-text-primary'}`}>
                             {t('settings.hr_acceleration', 'HR Acceleration')}
                           </div>
                         </div>
-                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        <div className={`font-semibold ${'text-text-primary/80'}`}>
                           {hkHeartRate && hrAcceleration !== null ? hrAcceleration.toFixed(2) : '--'}
                         </div>
                       </button>
@@ -451,7 +433,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                   {/* Emotional State Metrics for iOS */}
                   <div className="mt-6">
                     <h4 className={`text-base font-semibold mb-4 text-center ${
-                      isLightTheme ? 'text-gray-800' : 'text-white'
+                      'text-text-primary'
                     }`}>
                       {t('settings.emotional_metrics', 'Emotional State Metrics')}
                     </h4>
@@ -460,13 +442,13 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         type="button"
                         onClick={() => setSelectedMetric('alarm')}
                         className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
-                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                          'bg-surface hover:bg-surface-2'
                         }`}
                       >
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.alarm_anxiety', 'Alarm / Anxiety')}
                         </div>
-                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        <div className={`font-semibold ${'text-text-primary/80'}`}>
                           {hkHeartRate && arousal !== null ? `${arousal}%` : '--'}
                         </div>
                       </button>
@@ -475,13 +457,13 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         type="button"
                         onClick={() => setSelectedMetric('relaxation')}
                         className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
-                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                          'bg-surface hover:bg-surface-2'
                         }`}
                       >
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.relaxation_calmness', 'Relaxation / Calmness')}
                         </div>
-                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        <div className={`font-semibold ${'text-text-primary/80'}`}>
                           {hkHeartRate && calm !== null ? `${calm}%` : '--'}
                         </div>
                       </button>
@@ -490,13 +472,13 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         type="button"
                         onClick={() => setSelectedMetric('focus')}
                         className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
-                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                          'bg-surface hover:bg-surface-2'
                         }`}
                       >
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.focus_concentration', 'Focus / Concentration')}
                         </div>
-                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        <div className={`font-semibold ${'text-text-primary/80'}`}>
                           {hkHeartRate && focus !== null ? `${focus}%` : '--'}
                         </div>
                       </button>
@@ -505,13 +487,13 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         type="button"
                         onClick={() => setSelectedMetric('excitement')}
                         className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
-                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                          'bg-surface hover:bg-surface-2'
                         }`}
                       >
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.excitement', 'Excitement')}
                         </div>
-                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        <div className={`font-semibold ${'text-text-primary/80'}`}>
                           {hkHeartRate && excitement !== null ? `${excitement}%` : '--'}
                         </div>
                       </button>
@@ -520,13 +502,13 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         type="button"
                         onClick={() => setSelectedMetric('fatigue')}
                         className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
-                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                          'bg-surface hover:bg-surface-2'
                         }`}
                       >
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.fatigue_label', 'Fatigue')}
                         </div>
-                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        <div className={`font-semibold ${'text-text-primary/80'}`}>
                           {hkHeartRate && fatigue !== null ? `${fatigue}%` : '--'}
                         </div>
                       </button>
@@ -535,20 +517,20 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         type="button"
                         onClick={() => setSelectedMetric('flow')}
                         className={`w-full flex items-center justify-between p-4 rounded-xl text-left transition-colors active:scale-[0.99] cursor-pointer ${
-                          isLightTheme ? 'bg-white hover:bg-gray-50' : 'bg-white/5 hover:bg-white/10'
+                          'bg-surface hover:bg-surface-2'
                         }`}
                       >
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.flow_label', 'Flow')}
                         </div>
-                        <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                        <div className={`font-semibold ${'text-text-primary/80'}`}>
                           {hkHeartRate && flow !== null ? `${flow}%` : '--'}
                         </div>
                       </button>
                     </div>
 
                     <div className={`mt-4 text-center text-xs ${
-                      isLightTheme ? 'text-gray-500' : 'text-white/40'
+                      'text-text-muted'
                     }`}>
                       {t('settings.calibrating', 'Real-time metrics. Calibrating baseline...')}
                     </div>
@@ -557,20 +539,20 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                   {/* Life Rhythm Section */}
                   <div className="mt-6">
                     <h4 className={`text-base font-semibold mb-4 text-center ${
-                      isLightTheme ? 'text-gray-800' : 'text-white'
+                      'text-text-primary'
                     }`}>
                       {t('settings.life_rhythm', 'Life Rhythm')}
                     </h4>
                     
                     {sleepHistory.length === 0 ? (
                       <div className={`p-4 rounded-xl text-center ${
-                        isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                        'bg-surface-2'
                       }`}>
                         <Moon className={`w-8 h-8 mx-auto mb-2 ${
-                          isLightTheme ? 'text-gray-400' : 'text-white/40'
+                          'text-text-muted'
                         }`} />
                         <p className={`text-sm ${
-                          isLightTheme ? 'text-gray-600' : 'text-white/60'
+                          'text-text-muted'
                         }`}>
                           {t('settings.no_sleep_data', 'No sleep data yet. Wear your Apple Watch while sleeping to track your rhythm.')}
                         </p>
@@ -579,14 +561,14 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       <div className="space-y-2">
                         {/* Overall Score */}
                         <div className={`flex items-center justify-between p-4 rounded-xl ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                          'bg-surface'
                         }`}>
                           <div className="flex items-center gap-3">
                             <TrendingUp className={`w-5 h-5 ${
                               (lifeRhythmMetrics?.overallScore ?? 0) >= 70 ? 'text-green-500' :
                               (lifeRhythmMetrics?.overallScore ?? 0) >= 40 ? 'text-yellow-500' : 'text-red-500'
                             }`} />
-                            <span className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                            <span className={`font-medium ${'text-text-primary'}`}>
                               {t('settings.rhythm_score', 'Rhythm Score')}
                             </span>
                           </div>
@@ -600,55 +582,55 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
 
                         {/* Sleep Regularity */}
                         <div className={`flex items-center justify-between p-4 rounded-xl ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                          'bg-surface'
                         }`}>
                           <div className="flex items-center gap-3">
                             <Moon className="w-5 h-5 text-indigo-500" />
                             <div>
-                              <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                              <div className={`font-medium ${'text-text-primary'}`}>
                                 {t('settings.sleep_regularity', 'Sleep Regularity')}
                               </div>
-                              <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                              <div className={`text-xs ${'text-text-muted'}`}>
                                 {t('settings.avg_bedtime', 'Avg bedtime')}: {lifeRhythmMetrics?.avgSleepTime ?? '--:--'}
                               </div>
                             </div>
                           </div>
-                          <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          <div className={`font-semibold ${'text-text-primary/80'}`}>
                             {lifeRhythmMetrics?.sleepRegularity ?? '--'}%
                           </div>
                         </div>
 
                         {/* Wake Regularity */}
                         <div className={`flex items-center justify-between p-4 rounded-xl ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                          'bg-surface'
                         }`}>
                           <div className="flex items-center gap-3">
                             <Clock className="w-5 h-5 text-orange-500" />
                             <div>
-                              <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                              <div className={`font-medium ${'text-text-primary'}`}>
                                 {t('settings.wake_regularity', 'Wake Regularity')}
                               </div>
-                              <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                              <div className={`text-xs ${'text-text-muted'}`}>
                                 {t('settings.avg_wake', 'Avg wake')}: {lifeRhythmMetrics?.avgWakeTime ?? '--:--'}
                               </div>
                             </div>
                           </div>
-                          <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          <div className={`font-semibold ${'text-text-primary/80'}`}>
                             {lifeRhythmMetrics?.wakeRegularity ?? '--'}%
                           </div>
                         </div>
 
                         {/* Duration Score */}
                         <div className={`flex items-center justify-between p-4 rounded-xl ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                          'bg-surface'
                         }`}>
                           <div className="flex items-center gap-3">
                             <Activity className="w-5 h-5 text-blue-500" />
                             <div>
-                              <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                              <div className={`font-medium ${'text-text-primary'}`}>
                                 {t('settings.duration_score', 'Sleep Duration')}
                               </div>
-                              <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                              <div className={`text-xs ${'text-text-muted'}`}>
                                 {t('settings.avg_duration', 'Avg')}
                               </div>
                             </div>
@@ -663,15 +645,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
 
                         {/* Streak */}
                         <div className={`flex items-center justify-between p-4 rounded-xl ${
-                          isLightTheme ? 'bg-white' : 'bg-white/5'
+                          'bg-surface'
                         }`}>
                           <div className="flex items-center gap-3">
                             <Calendar className="w-5 h-5 text-purple-500" />
-                            <span className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                            <span className={`font-medium ${'text-text-primary'}`}>
                               {t('settings.streak', 'Streak')}
                             </span>
                           </div>
-                          <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                          <div className={`font-semibold ${'text-text-primary/80'}`}>
                             {lifeRhythmMetrics?.streak ?? 0} {t('settings.days', 'days')}
                           </div>
                         </div>
@@ -679,9 +661,9 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         {/* Last Night Quality */}
                         {lifeRhythmMetrics?.lastNightQuality && (
                           <div className={`flex items-center justify-between p-4 rounded-xl ${
-                            isLightTheme ? 'bg-white' : 'bg-white/5'
+                            'bg-surface'
                           }`}>
-                            <span className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                            <span className={`font-medium ${'text-text-primary'}`}>
                               {t('settings.last_night', 'Last Night')}
                             </span>
                             <div className={`px-3 py-1 rounded-full text-sm font-medium ${
@@ -699,7 +681,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         )}
 
                         <div className={`mt-2 text-center text-xs ${
-                          isLightTheme ? 'text-gray-500' : 'text-white/40'
+                          'text-text-muted'
                         }`}>
                           {t('settings.sleep_history_count', 'Based on {{count}} nights', { count: sleepHistory.length })}
                         </div>
@@ -708,7 +690,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         {sleepHistory.length > 0 && (
                           <div className="mt-4 space-y-2">
                             <h5 className={`text-sm font-medium mb-2 ${
-                              isLightTheme ? 'text-gray-700' : 'text-white/70'
+                              'text-text-secondary'
                             }`}>
                               {t('settings.recent_nights', 'Recent Nights')}
                             </h5>
@@ -727,12 +709,12 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                                 <div 
                                   key={day.date} 
                                   className={`p-3 rounded-xl ${
-                                    isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                                    'bg-surface-2'
                                   }`}
                                 >
                                   <div className="flex justify-between items-center mb-2">
                                     <span className={`text-sm font-medium ${
-                                      isLightTheme ? 'text-gray-800' : 'text-white'
+                                      'text-text-primary'
                                     }`}>
                                       {formattedDate}
                                     </span>
@@ -744,7 +726,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                                     </span>
                                   </div>
                                   <div className={`flex justify-between text-xs ${
-                                    isLightTheme ? 'text-gray-500' : 'text-white/50'
+                                    'text-text-muted'
                                   }`}>
                                     <div className="flex items-center gap-1">
                                       <Moon className="w-3 h-3" />
@@ -769,7 +751,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
 
               {hkAvailabilityChecked && hkIsAvailable === false && (
                 <div className={`p-3 rounded-lg text-xs ${
-                  isLightTheme ? 'bg-yellow-100 text-yellow-700' : 'bg-yellow-500/20 text-yellow-400'
+                  'bg-yellow-500/15 text-yellow-400'
                 }`}>
                   {t('connection.healthkit_not_available', 'HealthKit is not available on this device')}
                 </div>
@@ -781,12 +763,12 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
           {isAndroid && (
             <div>
               <h3 className={`text-sm font-semibold mb-3 ${
-                isLightTheme ? 'text-gray-700' : 'text-white/80'
+                'text-text-primary/80'
               }`}>
                 {t('connection.health_connect', 'Health Connect')}
               </h3>
               <p className={`text-xs mb-3 ${
-                isLightTheme ? 'text-gray-600' : 'text-white/60'
+                'text-text-muted'
               }`}>
                 {t('connection.health_connect_desc', 'Read health data from Google Health Connect')}
               </p>
@@ -797,12 +779,8 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                   disabled={hcConnected}
                   className={`${hcConnected ? 'flex-1' : 'w-full'} py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
                     hcConnected
-                      ? isLightTheme
-                        ? 'bg-green-100 text-green-700'
-                        : 'bg-green-500/20 text-green-400'
-                      : isLightTheme
-                      ? 'bg-purple-100 hover:bg-purple-200 text-purple-700'
-                      : 'bg-purple-500/20 hover:bg-purple-500/30 text-purple-400'
+                      ? 'bg-green-500/15 text-green-400'
+                      : 'bg-accent-2/15 hover:bg-accent-2/25 text-accent-2'
                   } ${hcConnected ? 'cursor-default' : ''}`}
                   data-testid="button-connect-health-connect"
                 >
@@ -816,9 +794,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                   <button
                     onClick={hcDisconnect}
                     className={`flex-1 py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
-                      isLightTheme
-                        ? 'bg-red-100 hover:bg-red-200 text-red-700'
-                        : 'bg-red-500/20 hover:bg-red-500/30 text-red-400'
+                      'bg-red-500/15 hover:bg-red-500/25 text-red-400'
                     }`}
                     data-testid="button-disconnect-health-connect"
                   >
@@ -828,8 +804,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                 )}
               </div>
 
-              <HealthConnectCompactPanel 
-                isLightTheme={isLightTheme} 
+              <HealthConnectCompactPanel
                 data={healthConnectData.lastUpdate}
               />
             </div>
@@ -839,12 +814,12 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
           {showBluetooth && (
           <div>
             <h3 className={`text-sm font-semibold mb-3 ${
-              isLightTheme ? 'text-gray-700' : 'text-white/80'
+              'text-text-primary/80'
             }`}>
               {t('connection.bluetooth_monitor', 'Bluetooth Heart Rate Monitor')}
             </h3>
             <p className={`text-xs mb-3 ${
-              isLightTheme ? 'text-gray-600' : 'text-white/60'
+              'text-text-muted'
             }`}>
               {t('connection.bluetooth_desc', 'Connect a Bluetooth heart rate monitor for real-time biofeedback during practices')}
             </p>
@@ -857,12 +832,8 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     disabled={connected}
                     className={`py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
                       connected
-                        ? isLightTheme
-                          ? 'bg-green-100 text-green-700'
-                          : 'bg-green-500/20 text-green-400'
-                        : isLightTheme
-                        ? 'bg-blue-100 hover:bg-blue-200 text-blue-700'
-                        : 'bg-blue-500/20 hover:bg-blue-500/30 text-blue-400'
+                        ? 'bg-green-500/15 text-green-400'
+                        : 'bg-indigo-500/15 hover:bg-indigo-500/25 text-indigo-400 border border-indigo-400/40'
                     } ${connected ? 'cursor-default' : ''}`}
                     data-testid="button-connect-tracker"
                   >
@@ -874,9 +845,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                     <button
                       onClick={disconnect}
                       className={`py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 ${
-                        isLightTheme
-                          ? 'bg-red-100 hover:bg-red-200 text-red-700'
-                          : 'bg-red-500/20 hover:bg-red-500/30 text-red-400'
+                        'bg-red-500/15 hover:bg-red-500/25 text-red-400'
                       }`}
                       data-testid="button-disconnect-tracker"
                     >
@@ -891,9 +860,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                 <button
                   onClick={stopScan}
                   className={`w-full py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 ${
-                    isLightTheme
-                      ? 'bg-orange-100 hover:bg-orange-200 text-orange-700'
-                      : 'bg-orange-500/20 hover:bg-orange-500/30 text-orange-400'
+                    'bg-orange-500/15 hover:bg-orange-500/25 text-orange-400'
                   }`}
                   data-testid="button-stop-scan"
                 >
@@ -905,15 +872,15 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
 
             {/* Connection instructions */}
             <div className={`mt-3 p-3 rounded-lg ${
-              isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+              'bg-surface-2'
             }`}>
               <p className={`text-xs font-medium mb-2 ${
-                isLightTheme ? 'text-gray-700' : 'text-white/80'
+                'text-text-primary/80'
               }`}>
                 {t('connection.instructions_title', 'Connection instructions:')}
               </p>
               <div className={`text-xs space-y-1 ${
-                isLightTheme ? 'text-gray-600' : 'text-white/60'
+                'text-text-muted'
               }`}>
                 <p>{t('connection.instructions_phone', 'On phone: Close standard tracker app. Turn on Bluetooth')}</p>
                 <p>{t('connection.instructions_tracker', 'On tracker: Settings → Share heart rate → Enable')}</p>
@@ -923,10 +890,10 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
             {/* Show available devices after scan completes (Android only) - hide when already connected */}
             {!connected && availableDevices && availableDevices.length > 0 && connectToDevice && (
               <div className={`mt-4 p-4 rounded-xl ${
-                isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                'bg-surface-2'
               }`}>
                 <p className={`text-sm mb-3 ${
-                  isLightTheme ? 'text-gray-700' : 'text-white/70'
+                  'text-text-secondary'
                 }`}>
                   {t('settings.available_devices', 'Available Devices')} {isScanning && `(${t('settings.scanning', 'Scanning...')})`}:
                 </p>
@@ -936,9 +903,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                       key={device.id}
                       onClick={() => connectToDevice(device.id)}
                       className={`w-full py-2 px-4 rounded-lg font-medium transition-all flex items-center justify-between gap-3 ${
-                        isLightTheme
-                          ? 'bg-white hover:bg-gray-50 text-gray-900 border border-gray-300'
-                          : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'
+                        'bg-surface-2 hover:opacity-80 text-text-primary border border-border/15'
                       }`}
                       data-testid={`button-device-${device.id}`}
                     >
@@ -947,7 +912,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         {device.name}
                       </span>
                       <span className={`text-xs ${
-                        isLightTheme ? 'text-gray-500' : 'text-white/50'
+                        'text-text-muted'
                       }`}>
                         {t('connection.connect_button', 'Connect')}
                       </span>
@@ -960,7 +925,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
             {/* Show platform info for debugging */}
             {vitalsPlat && (
               <div className={`mt-2 text-xs text-center ${
-                isLightTheme ? 'text-gray-500' : 'text-white/40'
+                'text-text-muted'
               }`}>
                 {t('connection.platform_label', 'Platform')}: {vitalsPlat === 'android' ? 'Android WebView' : 'Web Bluetooth API'}
               </div>
@@ -969,34 +934,34 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
             {/* Show basic metrics when connected via BLE (Android) or HealthKit/Watch (iOS) */}
             {(connected || (isIOS && hkIsMonitoring)) && (
               <div className={`mt-4 p-4 rounded-xl ${
-                isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                'bg-surface-2'
               }`}>
                 <h4 className={`text-sm font-semibold mb-3 text-center ${
-                  isLightTheme ? 'text-gray-700' : 'text-white/70'
+                  'text-text-secondary'
                 }`}>
                   {t('settings.basic_metrics')}
                 </h4>
                 <div className="grid grid-cols-2 gap-3">
                   <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                    isLightTheme ? 'bg-white' : 'bg-white/5'
+                    'bg-surface'
                   }`}>
                     <Heart className="w-5 h-5 text-red-500" />
                     <div>
                       <div className={`text-xs ${
-                        isLightTheme ? 'text-gray-600' : 'text-white/60'
+                        'text-text-muted'
                       }`}>{t('settings.heart_rate', 'Heart Rate')}</div>
                       <div className="text-lg font-semibold">
                         {isIOS ? (hkHeartRate ?? hr ?? '--') : (hr ?? '--')} bpm
                         {isIOS && hkIsMonitoring && (
                           <span className={`ml-2 text-xs font-normal ${
-                            isLightTheme ? 'text-gray-500' : 'text-white/50'
+                            'text-text-muted'
                           }`}>
                             (HealthKit)
                           </span>
                         )}
                         {!isIOS && hrSource && (
                           <span className={`ml-2 text-xs font-normal ${
-                            isLightTheme ? 'text-gray-500' : 'text-white/50'
+                            'text-text-muted'
                           }`}>
                             ({hrSource === 'ble' ? 'BLE' : 'Notify'})
                           </span>
@@ -1006,36 +971,36 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                   </div>
 
                   <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                    isLightTheme ? 'bg-white' : 'bg-white/5'
+                    'bg-surface'
                   }`}>
                     <Wind className="w-5 h-5 text-blue-500" />
                     <div>
                       <div className={`text-xs ${
-                        isLightTheme ? 'text-gray-600' : 'text-white/60'
+                        'text-text-muted'
                       }`}>{t('settings.breathing', 'Breathing')}</div>
                       <div className="text-lg font-semibold">{hr && br ? `${br.toFixed(1)}` : '--'} /min</div>
                     </div>
                   </div>
 
                   <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                    isLightTheme ? 'bg-white' : 'bg-white/5'
+                    'bg-surface'
                   }`}>
                     <Activity className="w-5 h-5 text-orange-500" />
                     <div>
                       <div className={`text-xs ${
-                        isLightTheme ? 'text-gray-600' : 'text-white/60'
+                        'text-text-muted'
                       }`}>{t('settings.stress', 'Stress')}</div>
                       <div className="text-lg font-semibold">{hr && stress !== null ? `${stress}%` : '--%'}</div>
                     </div>
                   </div>
 
                   <div className={`flex items-center gap-2 p-3 rounded-lg ${
-                    isLightTheme ? 'bg-white' : 'bg-white/5'
+                    'bg-surface'
                   }`}>
                     <Zap className="w-5 h-5 text-yellow-500" />
                     <div>
                       <div className={`text-xs ${
-                        isLightTheme ? 'text-gray-600' : 'text-white/60'
+                        'text-text-muted'
                       }`}>{t('settings.energy', 'Energy')}</div>
                       <div className="text-lg font-semibold">{hr && energy !== null ? `${energy}%` : '--%'}</div>
                     </div>
@@ -1045,92 +1010,92 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                 {/* Advanced Physiological Metrics - Extended Format */}
                 <div className="mt-6">
                   <h4 className={`text-base font-semibold mb-4 text-center ${
-                    isLightTheme ? 'text-gray-800' : 'text-white'
+                    'text-text-primary'
                   }`}>
                     {t('settings.advanced_metrics', 'Advanced Physiological Metrics')}
                   </h4>
                   <div className="space-y-2">
                     {/* HRV surrogate */}
                     <div className={`flex items-center justify-between p-4 rounded-xl ${
-                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      'bg-surface-2'
                     }`}>
                       <div>
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.hrv_surrogate', 'HRV (estimate)')}
                         </div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.hrv_desc', 'HR variability over time')}
                         </div>
                       </div>
-                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                      <div className={`font-semibold ${'text-text-primary/80'}`}>
                         {hr && hrv !== null ? `${hrv}` : '--'}
                       </div>
                     </div>
 
                     {/* Cardiac Stability Index */}
                     <div className={`flex items-center justify-between p-4 rounded-xl ${
-                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      'bg-surface-2'
                     }`}>
                       <div>
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.cardiac_stability', 'Cardiac Stability Index')}
                         </div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.csi_desc', 'how evenly the heart beats')}
                         </div>
                       </div>
-                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                      <div className={`font-semibold ${'text-text-primary/80'}`}>
                         {hr && csi !== null ? csi.toFixed(2) : '--'}
                       </div>
                     </div>
 
                     {/* Recovery Rate */}
                     <div className={`flex items-center justify-between p-4 rounded-xl ${
-                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      'bg-surface-2'
                     }`}>
                       <div>
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.recovery_rate', 'Recovery Rate')}
                         </div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.recovery_desc', 'HR normalization speed after stress')}
                         </div>
                       </div>
-                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                      <div className={`font-semibold ${'text-text-primary/80'}`}>
                         {hr && recoveryRate !== null ? `${(recoveryRate * 100).toFixed(0)}%` : '--'}
                       </div>
                     </div>
 
                     {/* HR trend slope */}
                     <div className={`flex items-center justify-between p-4 rounded-xl ${
-                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      'bg-surface-2'
                     }`}>
                       <div>
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.hr_trend_slope', 'HR trend slope')}
                         </div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.hr_trend_desc', 'trend over 30-60s')}
                         </div>
                       </div>
-                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                      <div className={`font-semibold ${'text-text-primary/80'}`}>
                         {hr && hrTrendSlope !== null ? hrTrendSlope.toFixed(2) : '--'}
                       </div>
                     </div>
 
                     {/* HR Acceleration */}
                     <div className={`flex items-center justify-between p-4 rounded-xl ${
-                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      'bg-surface-2'
                     }`}>
                       <div>
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.hr_acceleration', 'HR Acceleration')}
                         </div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.hr_accel_desc', 'how fast HR rises')}
                         </div>
                       </div>
-                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                      <div className={`font-semibold ${'text-text-primary/80'}`}>
                         {hr && hrAcceleration !== null ? hrAcceleration.toFixed(2) : '--'}
                       </div>
                     </div>
@@ -1140,109 +1105,109 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                 {/* Emotional State Metrics - Extended Format */}
                 <div className="mt-6">
                   <h4 className={`text-base font-semibold mb-4 text-center ${
-                    isLightTheme ? 'text-gray-800' : 'text-white'
+                    'text-text-primary'
                   }`}>
                     {t('settings.emotional_metrics', 'Emotional State Metrics')}
                   </h4>
                   <div className="space-y-2">
                     {/* Alarm / Anxiety */}
                     <div className={`flex items-center justify-between p-4 rounded-xl ${
-                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      'bg-surface-2'
                     }`}>
                       <div>
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.alarm_anxiety', 'Alarm / Anxiety')}
                         </div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.arousal_desc', 'HR rise + BR rise')}
                         </div>
                       </div>
-                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                      <div className={`font-semibold ${'text-text-primary/80'}`}>
                         {hr && arousal !== null ? `${arousal}%` : '--'}
                       </div>
                     </div>
 
                     {/* Relaxation / Calmness */}
                     <div className={`flex items-center justify-between p-4 rounded-xl ${
-                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      'bg-surface-2'
                     }`}>
                       <div>
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.relaxation_calmness', 'Relaxation / Calmness')}
                         </div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.calm_desc', 'low HR + stable BR')}
                         </div>
                       </div>
-                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                      <div className={`font-semibold ${'text-text-primary/80'}`}>
                         {hr && calm !== null ? `${calm}%` : '--'}
                       </div>
                     </div>
 
                     {/* Focus / Concentration */}
                     <div className={`flex items-center justify-between p-4 rounded-xl ${
-                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      'bg-surface-2'
                     }`}>
                       <div>
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.focus_concentration', 'Focus / Concentration')}
                         </div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.focus_desc', 'average HR + low variability')}
                         </div>
                       </div>
-                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                      <div className={`font-semibold ${'text-text-primary/80'}`}>
                         {hr && focus !== null ? `${focus}%` : '--'}
                       </div>
                     </div>
 
                     {/* Excitement */}
                     <div className={`flex items-center justify-between p-4 rounded-xl ${
-                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      'bg-surface-2'
                     }`}>
                       <div>
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.excitement', 'Excitement')}
                         </div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.excitement_desc', 'HR sharp moment')}
                         </div>
                       </div>
-                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                      <div className={`font-semibold ${'text-text-primary/80'}`}>
                         {hr && excitement !== null ? `${excitement}%` : '--'}
                       </div>
                     </div>
 
                     {/* Fatigue */}
                     <div className={`flex items-center justify-between p-4 rounded-xl ${
-                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      'bg-surface-2'
                     }`}>
                       <div>
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.fatigue_label', 'Fatigue / Fatigue')}
                         </div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.fatigue_desc', 'HR above baseline, BR low, energy low')}
                         </div>
                       </div>
-                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                      <div className={`font-semibold ${'text-text-primary/80'}`}>
                         {hr && fatigue !== null ? `${fatigue}%` : '--'}
                       </div>
                     </div>
 
                     {/* Flow */}
                     <div className={`flex items-center justify-between p-4 rounded-xl ${
-                      isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+                      'bg-surface-2'
                     }`}>
                       <div>
-                        <div className={`font-medium ${isLightTheme ? 'text-gray-800' : 'text-white'}`}>
+                        <div className={`font-medium ${'text-text-primary'}`}>
                           {t('settings.flow_label', 'Flow')}
                         </div>
-                        <div className={`text-xs ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+                        <div className={`text-xs ${'text-text-muted'}`}>
                           {t('settings.flow_desc', 'HR slightly above baseline, stable BR')}
                         </div>
                       </div>
-                      <div className={`font-semibold ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+                      <div className={`font-semibold ${'text-text-primary/80'}`}>
                         {hr && flow !== null ? `${flow}%` : '--'}
                       </div>
                     </div>
@@ -1250,7 +1215,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
 
                   {/* Calibration notice */}
                   <div className={`mt-4 text-center text-xs ${
-                    isLightTheme ? 'text-gray-500' : 'text-white/40'
+                    'text-text-muted'
                   }`}>
                     {t('settings.calibrating', 'Real-time metrics. Calibrating baseline...')}
                   </div>
@@ -1261,12 +1226,11 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
             {isAndroid && healthConnectData.lastUpdate && (
               <div className="mt-4">
                 <h4 className={`text-sm font-semibold mb-3 ${
-                  isLightTheme ? 'text-gray-700' : 'text-white/70'
+                  'text-text-secondary'
                 }`}>
                   {t('settings.health_connect_data', 'Health Connect Data')}
                 </h4>
-                <HealthConnectCompactPanel 
-                  isLightTheme={isLightTheme} 
+                <HealthConnectCompactPanel
                   data={healthConnectData.lastUpdate}
                 />
               </div>
@@ -1282,7 +1246,6 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
       <MetricInfoModal
         metricKey={selectedMetric}
         onClose={() => setSelectedMetric(null)}
-        isLightTheme={isLightTheme}
       />
     </div>
   );

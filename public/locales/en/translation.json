@@ -1,4 +1,25 @@
 {
+  "eye_scan": {
+    "nav_button": "A look at yourself",
+    "title": "A look at yourself",
+    "subtitle": "Analysis of emotional state by gaze and facial expression",
+    "intro": "Look into the camera and stay calm for about {{sec}} seconds. It reads your blinking, gaze and micro-movements. Frames are never saved.",
+    "start": "Start scan",
+    "preparing": "Preparing the camera…",
+    "hold_still": "Look into the camera and stay calm",
+    "remaining": "~{{sec}} s left",
+    "result_title": "Scan result",
+    "quality": "Scan reliability: {{value}}%",
+    "recommend": "Recommended practice",
+    "disclaimer": "This is a wellness estimate, not a medical diagnosis.",
+    "again": "Scan again",
+    "error": "Scan failed: {{error}}",
+    "retry": "Retry",
+    "back": "Back to app",
+    "metric_calm": "Nervous system calm",
+    "metric_focus": "Focus",
+    "metric_fatigue": "Fatigue"
+  },
   "notification_primer": {
     "title": "Stay in rhythm",
     "body": "We'll send a gentle daily nudge so you don't lose your streak. You choose the time inside Settings — and you can turn it off anytime.",
@@ -74,7 +95,7 @@
     "watch_activate_text": "Open the app on your watch for accurate practice tracking"
   },
   "permissions": {
-    "description": "For ONDA to work properly, please grant access to your microphone, heart rate, and sleep data.",
+    "description": "For ONDA to work properly, connect a watch and grant access to your heart rate data.",
     "setup_button": "Set Up Now",
     "modal_title": "Permission Setup",
     "modal_description": "Grant access for the app to function properly",
@@ -84,7 +105,7 @@
     "heart_rate_description": "We monitor your heart rate to track your progress during practices",
     "notifications_title": "Practice reminders",
     "notifications_description": "Gentle daily nudge and streak protection. Both are opt-in inside Settings — granting permission now just unlocks the toggles.",
-    "grant_all": "Grant All Permissions",
+    "grant_all": "Allow",
     "requesting": "Requesting permissions...",
     "setup_later": "Set Up Later"
   },
@@ -3649,5 +3670,11 @@
     "instructions_tracker": "On tracker: Settings → Share heart rate → Enable",
     "connect_button": "Connect",
     "platform_label": "Platform"
+  },
+  "theme": {
+    "title": "Appearance",
+    "system": "System",
+    "light": "Light",
+    "dark": "Dark"
   }
 }

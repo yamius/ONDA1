@@ -1,4 +1,25 @@
 {
+  "eye_scan": {
+    "nav_button": "看看自己",
+    "title": "看看自己",
+    "subtitle": "通过视线和面部表情分析情绪状态",
+    "intro": "请注视摄像头并保持平静约 {{sec}} 秒。系统会分析你的眨眼、视线和细微动作。画面不会被保存。",
+    "start": "开始扫描",
+    "preparing": "正在准备摄像头…",
+    "hold_still": "注视摄像头并保持平静",
+    "remaining": "剩余约 {{sec}} 秒",
+    "result_title": "扫描结果",
+    "quality": "扫描可靠度：{{value}}%",
+    "recommend": "推荐练习",
+    "disclaimer": "这是健康参考评估，并非医学诊断。",
+    "again": "重新扫描",
+    "error": "扫描失败：{{error}}",
+    "retry": "重试",
+    "back": "返回应用",
+    "metric_calm": "神经系统平静度",
+    "metric_focus": "专注力",
+    "metric_fatigue": "疲劳度"
+  },
   "notification_primer": {
     "title": "保持你的节奏",
     "body": "我们会每天温和地提醒你，让你的连续记录不中断。时间可在「设置」中选择——随时可以关闭。",
@@ -62,7 +83,7 @@
     "watch_activate_text": "打开手表上的应用以准确跟踪练习"
   },
   "permissions": {
-    "description": "为了让ONDA正常工作，请授予麦克风、心率和睡眠数据的访问权限。",
+    "description": "为了让ONDA正常工作，请连接手表并授予心率数据的访问权限。",
     "setup_button": "立即设置",
     "modal_title": "权限设置",
     "modal_description": "授予访问权限以使应用程序正常工作",
@@ -72,7 +93,7 @@
     "heart_rate_description": "为了在练习中查看您的进度，我们会监测您的心率",
     "notifications_title": "练习提醒",
     "notifications_description": "温和的每日提醒与连续记录保护。两者都在「设置」中手动启用——此处授权只是为了解锁这两个开关。",
-    "grant_all": "授予所有权限",
+    "grant_all": "允许",
     "requesting": "正在请求权限...",
     "setup_later": "稍后设置"
   },
@@ -3649,5 +3670,11 @@
       "mind_reading": "读心术",
       "all_or_nothing": "非黑即白思维"
     }
+  },
+  "theme": {
+    "title": "外观",
+    "system": "跟随系统",
+    "light": "浅色",
+    "dark": "深色"
   }
 }

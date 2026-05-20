@@ -2,6 +2,38 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ============================================================
+   Семантические токены тем (light / dark).
+   Значения — каналы "R G B" (без rgb()), чтобы Tailwind мог
+   применять модификаторы прозрачности: bg-surface/10 и т.п.
+   :root = тёмная тема (по умолчанию). [data-theme="light"]
+   переопределяет её. ThemeProvider выставляет data-theme на <html>.
+   ============================================================ */
+:root,
+[data-theme='dark'] {
+  --color-bg: 15 23 42;            /* slate-900 — фон приложения */
+  --color-surface: 30 41 59;       /* slate-800 — карточки/панели */
+  --color-surface-2: 51 65 85;     /* slate-700 — приподнятые блоки */
+  --color-border: 255 255 255;     /* белый — границы (через /10../20) */
+  --color-text: 255 255 255;       /* основной текст */
+  --color-text-secondary: 203 213 225; /* slate-300 — вторичный текст */
+  --color-text-muted: 148 163 184; /* slate-400 — приглушённый текст */
+  --color-accent: 79 70 229;       /* indigo-600 — акцент (доминирующий цвет кнопок) */
+  --color-accent-2: 147 51 234;    /* purple-600 — второй акцент */
+}
+
+[data-theme='light'] {
+  --color-bg: 248 250 252;         /* slate-50 */
+  --color-surface: 255 255 255;    /* white */
+  --color-surface-2: 241 245 249;  /* slate-100 */
+  --color-border: 15 23 42;        /* slate-900 — границы (через /10../20) */
+  --color-text: 15 23 42;          /* slate-900 */
+  --color-text-secondary: 71 85 105;   /* slate-600 */
+  --color-text-muted: 100 116 139; /* slate-500 */
+  --color-accent: 79 70 229;       /* indigo-600 — чуть темнее для контраста */
+  --color-accent-2: 147 51 234;    /* purple-600 */
+}
+
 @layer base {
   * {
     -webkit-tap-highlight-color: transparent;

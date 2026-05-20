@@ -8,13 +8,12 @@ interface UserProfileProps {
   user: any;
   profile: UserProfileType | null;
   onClose: () => void;
-  isLightTheme: boolean;
   // Bubbles the updated profile up so the parent can refresh its cached
   // userProfile state (used by leaderboard / greeting).
   onProfileUpdate?: (profile: UserProfileType) => void;
 }
 
-export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose, isLightTheme, onProfileUpdate }) => {
+export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose, onProfileUpdate }) => {
   const { t } = useTranslation();
   const [isLoggingOut, setIsLoggingOut] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -96,19 +95,11 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
 
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
-      <div
-        className={`max-w-md w-full rounded-2xl border p-6 sm:p-8 relative my-4 ${
-          isLightTheme
-            ? 'bg-white border-gray-300'
-            : 'bg-gradient-to-br from-gray-900 to-black border-purple-500/30'
-        }`}
-      >
+      <div className="max-w-md w-full rounded-2xl border border-border/15 p-6 sm:p-8 relative my-4 bg-bg text-text-primary">
         <button
           onClick={onClose}
           className={`absolute top-4 right-4 p-2 rounded-full transition-all ${
-            isLightTheme
-              ? 'hover:bg-gray-200'
-              : 'hover:bg-white/10'
+            'hover:bg-border/10'
           }`}
         >
           <X className="w-5 h-5" />
@@ -129,18 +120,18 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
           <h2 className="text-xl sm:text-2xl font-light mb-1">
             {profile?.display_name || 'Пользователь'}
           </h2>
-          <p className={`text-xs sm:text-sm ${isLightTheme ? 'text-gray-600' : 'text-white/70'} break-all px-4`}>
+          <p className={`text-xs sm:text-sm ${'text-text-secondary'} break-all px-4`}>
             {user.email}
           </p>
         </div>
 
         {/* Display name editor */}
         <div className="mb-4">
-          <label className={`block text-sm mb-2 ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+          <label className={`block text-sm mb-2 ${'text-text-primary/80'}`}>
             {t('settings.your_name')}
           </label>
           <div className="relative">
-            <UserIcon className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 ${isLightTheme ? 'text-gray-400' : 'text-white/40'}`} />
+            <UserIcon className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 ${'text-text-muted'}`} />
             <input
               type="text"
               value={displayName}
@@ -148,23 +139,21 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
               maxLength={30}
               placeholder={t('settings.enter_name')}
               className={`w-full pl-11 pr-4 py-3 rounded-xl border transition-all focus:outline-none focus:ring-2 ${
-                isLightTheme
-                  ? 'bg-gray-100 border-gray-300 focus:ring-gray-400 text-gray-900'
-                  : 'bg-white/10 border-white/20 focus:ring-purple-500/50 text-white placeholder-white/40'
+                'bg-surface border border-border/20 focus:ring-accent/50 text-text-primary placeholder-text-muted'
               }`}
             />
           </div>
-          <p className={`text-xs mt-1 ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+          <p className={`text-xs mt-1 ${'text-text-muted'}`}>
             {displayName.length}/30 {t('settings.characters')}
           </p>
 
           {nameError && (
-            <div className={`text-sm p-2 mt-2 rounded-lg ${isLightTheme ? 'bg-red-100 text-red-700' : 'bg-red-500/20 text-red-400'}`}>
+            <div className={`text-sm p-2 mt-2 rounded-lg ${'bg-red-500/15 text-red-400'}`}>
               {nameError}
             </div>
           )}
           {nameSuccess && (
-            <div className={`text-sm p-2 mt-2 rounded-lg ${isLightTheme ? 'bg-green-100 text-green-700' : 'bg-green-500/20 text-green-400'}`}>
+            <div className={`text-sm p-2 mt-2 rounded-lg ${'bg-green-500/15 text-green-400'}`}>
               {t('settings.name_updated')}
             </div>
           )}
@@ -173,9 +162,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
             onClick={handleSaveName}
             disabled={isSavingName || !displayName.trim() || displayName === (profile?.display_name || '')}
             className={`w-full mt-3 py-2.5 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm ${
-              isLightTheme
-                ? 'bg-gray-900 hover:bg-gray-800 text-white disabled:bg-gray-400'
-                : 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 disabled:opacity-50'
+              'bg-accent hover:opacity-90 text-white disabled:opacity-50'
             } ${isSavingName || !displayName.trim() ? 'cursor-not-allowed' : ''}`}
           >
             <Save className="w-4 h-4" />
@@ -184,10 +171,10 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
         </div>
 
         <div className={`rounded-xl p-4 mb-6 ${
-          isLightTheme ? 'bg-gray-100' : 'bg-white/5'
+          'bg-surface-2'
         }`}>
           <div className="flex justify-between items-center mb-2">
-            <span className={`text-sm ${isLightTheme ? 'text-gray-600' : 'text-white/70'}`}>
+            <span className={`text-sm ${'text-text-secondary'}`}>
               {t('auth.account_created')}
             </span>
             <span className="text-sm font-medium">
@@ -195,7 +182,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
             </span>
           </div>
           <div className="flex justify-between items-center">
-            <span className={`text-sm ${isLightTheme ? 'text-gray-600' : 'text-white/70'}`}>
+            <span className={`text-sm ${'text-text-secondary'}`}>
               {t('auth.provider')}
             </span>
             <span className="text-sm font-medium capitalize">
@@ -208,9 +195,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
           onClick={handleSignOut}
           disabled={isLoggingOut}
           className={`w-full py-3 sm:py-4 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 text-sm sm:text-base ${
-            isLightTheme
-              ? 'bg-red-100 hover:bg-red-200 text-red-700'
-              : 'bg-red-500/20 hover:bg-red-500/30 border border-red-500/50 text-red-400'
+            'bg-red-500/15 hover:bg-red-500/25 border border-red-500/40 text-red-400'
           } ${isLoggingOut ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
           <LogOut className="w-5 h-5" />
@@ -220,9 +205,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
         <button
           onClick={() => setShowDeleteConfirm(true)}
           className={`w-full mt-3 py-2 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-xs sm:text-sm ${
-            isLightTheme
-              ? 'text-gray-400 hover:text-red-500'
-              : 'text-white/30 hover:text-red-400'
+            'text-text-muted hover:text-red-400'
           }`}
         >
           <Trash2 className="w-4 h-4" />
@@ -233,12 +216,12 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
       {showDeleteConfirm && (
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[60] flex items-center justify-center p-4">
           <div className={`max-w-sm w-full rounded-2xl p-6 ${
-            isLightTheme ? 'bg-white' : 'bg-gray-900 border border-red-500/30'
+            'bg-bg border border-red-500/30'
           }`}>
-            <h3 className={`text-lg font-bold mb-2 ${isLightTheme ? 'text-gray-900' : 'text-white'}`}>
+            <h3 className={`text-lg font-bold mb-2 ${'text-text-primary'}`}>
               {t('auth.delete_confirm_title', 'Delete Account?')}
             </h3>
-            <p className={`text-sm mb-6 ${isLightTheme ? 'text-gray-600' : 'text-white/70'}`}>
+            <p className={`text-sm mb-6 ${'text-text-secondary'}`}>
               {t('auth.delete_confirm_message', 'This will permanently delete your account and all associated data. This action cannot be undone.')}
             </p>
 
@@ -253,9 +236,7 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
                 onClick={() => { setShowDeleteConfirm(false); setDeleteError(null); }}
                 disabled={isDeleting}
                 className={`flex-1 py-3 rounded-xl font-medium text-sm ${
-                  isLightTheme
-                    ? 'bg-gray-100 hover:bg-gray-200 text-gray-700'
-                    : 'bg-white/10 hover:bg-white/20 text-white'
+                  'bg-surface-2 hover:opacity-80 text-text-primary'
                 }`}
               >
                 {t('common.cancel', 'Cancel')}

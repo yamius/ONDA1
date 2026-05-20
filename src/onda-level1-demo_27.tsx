@@ -17,6 +17,7 @@ import { PermissionSetupModal } from './components/PermissionSetupModal';
 import { NotificationPrimerModal } from './components/NotificationPrimerModal';
 import { WatchConnectionPrompt } from './components/WatchConnectionPrompt';
 import { DebugMonitor } from './components/DebugMonitor';
+import { useTheme } from './theme/ThemeProvider';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
 import { useHealthConnect } from './hooks/useHealthConnect';
@@ -70,6 +71,8 @@ import * as Sentry from '@sentry/capacitor';
 // sitting in the cold-start path. That's the chunk that was making the
 // boot splash visible for ~6 seconds even after main-scene code-splitting.
 const WelcomeScene = lazy(() => import('./components/WelcomeScene'));
+// Экран eye-scan лениво — чтобы MediaPipe не попал в холодный старт.
+const NervousSystemScan = lazy(() => import('./components/NervousSystemScan'));
 import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './constants/practiceAssets';
 
 // Free-tier sampler. The first three basic practices of Part 1 are open to
@@ -78,8 +81,30 @@ import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './constants/practiceAssets'
 // `practice_gate_basic` (see the Start button below).
 const FREE_PRACTICE_IDS = new Set(['p1-1', 'p1-2', 'p1-3']);
 
+// Светлая тема «матовое свечение» (frosted glow) — прототип хаба.
+// Космическая сцена по определению тёмная, прямой токен-свап невозможен,
+// поэтому у каждого контура есть параллельная пастельная палитра: два
+// мягких цветных блика (rgba) для люминесцентного фона + tailwind-класс
+// рамки frosted-панели. Ключ — activeCircuit (2..12), иначе CIRCUIT_GLOW_DEFAULT.
+const CIRCUIT_GLOW_LIGHT: Record<number, { orbA: string; orbB: string; panelBorder: string }> = {
+  2:  { orbA: 'rgba(165,243,252,0.55)', orbB: 'rgba(186,230,253,0.45)', panelBorder: 'border-cyan-200/70' },
+  3:  { orbA: 'rgba(253,230,138,0.55)', orbB: 'rgba(254,215,170,0.45)', panelBorder: 'border-amber-200/70' },
+  4:  { orbA: 'rgba(153,246,228,0.55)', orbB: 'rgba(165,243,252,0.45)', panelBorder: 'border-teal-200/70' },
+  5:  { orbA: 'rgba(254,240,138,0.55)', orbB: 'rgba(253,230,138,0.45)', panelBorder: 'border-amber-200/70' },
+  6:  { orbA: 'rgba(167,243,208,0.55)', orbB: 'rgba(153,246,228,0.45)', panelBorder: 'border-emerald-200/70' },
+  7:  { orbA: 'rgba(186,230,253,0.55)', orbB: 'rgba(191,219,254,0.45)', panelBorder: 'border-sky-200/70' },
+  8:  { orbA: 'rgba(199,210,254,0.55)', orbB: 'rgba(221,214,254,0.45)', panelBorder: 'border-indigo-200/70' },
+  9:  { orbA: 'rgba(254,240,138,0.65)', orbB: 'rgba(254,243,199,0.50)', panelBorder: 'border-yellow-300/80' },
+  10: { orbA: 'rgba(254,215,170,0.55)', orbB: 'rgba(253,230,138,0.45)', panelBorder: 'border-orange-200/70' },
+  11: { orbA: 'rgba(165,243,252,0.55)', orbB: 'rgba(153,246,228,0.45)', panelBorder: 'border-cyan-200/70' },
+  12: { orbA: 'rgba(245,208,254,0.55)', orbB: 'rgba(251,207,232,0.45)', panelBorder: 'border-fuchsia-200/70' },
+};
+const CIRCUIT_GLOW_DEFAULT = { orbA: 'rgba(221,214,254,0.55)', orbB: 'rgba(199,210,254,0.45)', panelBorder: 'border-violet-200/70' };
+
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
+  const { resolved } = useTheme();
+  const isLight = resolved === 'light';
   const vitalsData = useVitals();
   
   // Ref to store CURRENT vitals - updated every render, accessible in async functions
@@ -322,12 +347,17 @@ const OndaLevel1 = () => {
   const [expandedPractice, setExpandedPractice] = useState(null);
   const [unlockedAchievements, setUnlockedAchievements] = useState([]);
   const [showEmotionalCheck, setShowEmotionalCheck] = useState(false);
+  const [showNervousScan, setShowNervousScan] = useState(false);
   const [emotionalState, setEmotionalState] = useState(null);
   // Whether the user has ever opened the Emotional Check — drives the
   // one-time FREE badge on its button. Persisted so it stays hidden
   // across sessions once used.
   const [emotionalCheckUsed, setEmotionalCheckUsed] = useState<boolean>(
     () => typeof localStorage !== 'undefined' && localStorage.getItem('onda_emotional_check_used') === 'true',
+  );
+  // One-time FREE badge on the «Взгляд на себя» (eye-scan) button.
+  const [nervousScanUsed, setNervousScanUsed] = useState<boolean>(
+    () => typeof localStorage !== 'undefined' && localStorage.getItem('onda_nervous_scan_used') === 'true',
   );
   // Free practices the user has already tapped Start on — drives the
   // one-time FREE badge. Persisted; the badge disappears the moment the
@@ -366,7 +396,6 @@ const OndaLevel1 = () => {
     avg_rating: number;
     total_sessions: number;
   }>>([]);
-  const [isLightTheme, setIsLightTheme] = useState(false);
   const [user, setUser] = useState<any>(null);
   const [userProfile, setUserProfile] = useState<UserProfileType | null>(null);
   const [gameProgress, setGameProgress] = useState<UserGameProgress | null>(null);
@@ -777,8 +806,7 @@ const OndaLevel1 = () => {
               sleep_tracking: { day: 0, lastCheck: null },
               selected_language: 'EN',
               selected_level: 1,
-              selected_chapter: 1,
-              is_light_theme: false
+              selected_chapter: 1
             })
             .select()
             .single();
@@ -856,7 +884,6 @@ const OndaLevel1 = () => {
           }
           setSelectedLevel(progress.selected_level || 1);
           setSelectedChapter(progress.selected_chapter || 1);
-          setIsLightTheme(progress.is_light_theme || false);
         } else {
           console.warn('[ONDA Debug] No progress data loaded for user:', user.id);
         }
@@ -1000,7 +1027,6 @@ const OndaLevel1 = () => {
           selected_language: selectedLanguage,
           selected_level: selectedLevel,
           selected_chapter: selectedChapter,
-          is_light_theme: isLightTheme,
           updated_at: new Date().toISOString()
         }).eq('user_id', user.id);
         
@@ -1027,8 +1053,7 @@ const OndaLevel1 = () => {
     sleepTracking,
     selectedLanguage,
     selectedLevel,
-    selectedChapter,
-    isLightTheme
+    selectedChapter
   ]);
 
   useEffect(() => {
@@ -3300,8 +3325,10 @@ const OndaLevel1 = () => {
   const progress = (completedCount / totalPractices) * 100;
 
   if (activePractice) {
+    // Светлый экран завершения только в светлой теме; в тёмной — космический.
+    const completeLight = practiceState === 'complete' && isLight;
     return (
-      <div className={`fixed inset-0 bg-gradient-to-br ${activePractice.colors} text-white overflow-hidden transition-colors duration-1000`}>
+      <div className={`fixed inset-0 overflow-hidden transition-colors duration-1000 ${isLight ? 'bg-gradient-to-br from-indigo-50 via-white to-violet-100 text-slate-700' : `bg-gradient-to-br ${activePractice.colors} text-white`}`}>
         {/* Debug Monitor - also during practice */}
         <DebugMonitor
           buildNumber={import.meta.env.VITE_BUILD_NUMBER}
@@ -3952,12 +3979,14 @@ const OndaLevel1 = () => {
             preview→full cross-fade. */}
         {practiceState === 'active' && PRACTICE_EXR[activePractice.id] ? (
           // Suspense fallback={null} — three.js chunk streams while the
-          // user sees whatever the parent renders behind it (JPEG preview).
-          // Local boundary so suspending here doesn't blank the whole app.
+          // user sees whatever the parent renders behind it (JPEG preview
+          // in тёмной теме, светлый фон в светлой). В светлой теме
+          // previewUrl не передаём — HDR-панорама плавно «проявится»
+          // через её собственный fade-in поверх светлого фона.
           <Suspense fallback={null}>
-            <WelcomeScene url={PRACTICE_EXR[activePractice.id]} previewUrl={PRACTICE_JPEG_PREVIEW[activePractice.id]} />
+            <WelcomeScene url={PRACTICE_EXR[activePractice.id]} previewUrl={isLight ? undefined : PRACTICE_JPEG_PREVIEW[activePractice.id]} />
           </Suspense>
-        ) : practiceState === 'intro' && PRACTICE_JPEG_PREVIEW[activePractice.id] ? (
+        ) : practiceState === 'intro' && PRACTICE_JPEG_PREVIEW[activePractice.id] && !isLight ? (
           <div
             className="absolute inset-0"
             style={{
@@ -3968,24 +3997,26 @@ const OndaLevel1 = () => {
               pointerEvents: 'none',
             }}
           />
-        ) : (
+        ) : !isLight ? (
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDuration: '3s' }} />
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1.5s', animationDuration: '3s' }} />
             <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-purple-300 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '0.75s', animationDuration: '4s' }} />
           </div>
-        )}
+        ) : null}
 
+        {!isLight && (
         <div className="absolute inset-0 bg-black/10" style={{
           backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.3) 100%)'
         }} />
+        )}
 
         {!isMinimalMode && (
           <button
             onClick={exitPractice}
             disabled={!canExitPractice}
             style={!canExitPractice ? { pointerEvents: 'none', opacity: 0.5 } : undefined}
-            className="absolute top-[72px] right-6 z-50 bg-black/40 hover:bg-black/60 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110"
+            className={`absolute top-[72px] right-6 z-50 p-3 rounded-full transition-all hover:scale-110 border ${completeLight ? 'bg-white/60 hover:bg-white/80 backdrop-blur-md border-violet-200 text-slate-600' : 'bg-white/10 hover:bg-white/20 backdrop-blur-2xl border-white/25'}`}
           >
             <X className="w-6 h-6" />
           </button>
@@ -3997,13 +4028,13 @@ const OndaLevel1 = () => {
               <div className="text-5xl sm:text-9xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '2s' }}>
                 {activePractice.visual}
               </div>
-              <h1 className="text-xl sm:text-6xl font-bold mb-2 sm:mb-4 drop-shadow-2xl leading-tight px-2">
+              <h1 className={`text-xl sm:text-6xl font-bold mb-2 sm:mb-4 leading-tight px-2 ${isLight ? '' : 'drop-shadow-2xl'}`}>
                 {getPracticeName(activePractice.id)}
               </h1>
-              <div className="bg-black/40 backdrop-blur-md rounded-2xl p-4 sm:p-8 mb-3 sm:mb-6 border border-white/20 shadow-2xl">
+              <div className={`rounded-2xl p-4 sm:p-8 mb-3 sm:mb-6 border shadow-2xl ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
                 <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
                   <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
-                  <p className="text-sm text-purple-200 font-semibold tracking-wide">
+                  <p className={`text-sm font-semibold tracking-wide ${isLight ? 'text-violet-600' : 'text-purple-200'}`}>
                     {activePractice.element}
                   </p>
                   <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
@@ -4013,7 +4044,7 @@ const OndaLevel1 = () => {
                 </p>
               </div>
               {activePractice.scienceInfo && activePractice.scienceInfo.length > 0 && (
-                <div className="text-sm sm:text-base text-gray-200 space-y-2 mb-4 sm:mb-6 px-4 max-w-lg text-justify">
+                <div className={`text-sm sm:text-base space-y-2 mb-4 sm:mb-6 px-4 max-w-lg text-justify ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
                   {activePractice.scienceInfo.map((info: string, idx: number) => {
                     const colonIndex = info.indexOf(':');
                     if (colonIndex > -1) {
@@ -4029,12 +4060,12 @@ const OndaLevel1 = () => {
                   })}
                 </div>
               )}
-              <div className="flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base text-gray-200">
-                <span className="bg-black/30 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-sm text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center">
+              <div className={`flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
+                <span className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-white/10 border-white/20'}`}>
                   {activePractice.targetTime ? `${Math.floor(activePractice.targetTime / 60)} ${t('practice_items.duration_min')}` : activePractice.duration}
                 </span>
-                <span className="text-gray-400">•</span>
-                <span className="bg-black/30 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-sm text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center">
+                <span className={isLight ? 'text-slate-400' : 'text-gray-400'}>•</span>
+                <span className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-white/10 border-white/20'}`}>
                   {t('practices.up_to')} {activePractice.maxQnt} OND
                 </span>
               </div>
@@ -4061,7 +4092,7 @@ const OndaLevel1 = () => {
                   setPaywallSource('practice_gate_basic');
                   setShowSubscriptionModal(true);
                 }}
-                className="bg-white/30 hover:bg-white/40 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl border border-white/30"
+                className={`backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 border ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-700 shadow-sm shadow-indigo-200/40' : 'bg-white/10 hover:bg-white/20 border-white/25 shadow-2xl'}`}
               >
                 {t('practices.start')}
               </button>
@@ -4071,7 +4102,7 @@ const OndaLevel1 = () => {
 
         {practiceState === 'active' && (
           <div
-            className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 ${isMinimalMode ? 'justify-end' : 'justify-center'}`}
+            className={`relative z-10 flex flex-col items-center min-h-screen p-3 sm:p-6 transition-all duration-500 text-white ${isMinimalMode ? 'justify-end' : 'justify-center'}`}
             style={{ paddingBottom: isMinimalMode
   ? platform === 'ios'
     ? 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 10px)'
@@ -4089,7 +4120,7 @@ const OndaLevel1 = () => {
                   cy="128"
                   r="110"
                   fill="none"
-                  stroke="rgba(255,255,255,0.1)"
+                  stroke="rgba(255,255,255,0.18)"
                   strokeWidth="12"
                 />
                 <circle
@@ -4143,7 +4174,7 @@ const OndaLevel1 = () => {
                 <span className="font-semibold">{t('practices.quality')}</span>
                 <span className="font-bold text-xl sm:text-2xl">{safeToFixed(qualityScore, 0)}%</span>
               </div>
-              <div className="w-full h-5 sm:h-6 bg-black/40 rounded-full overflow-hidden backdrop-blur-sm border border-white/20 shadow-inner">
+              <div className="w-full h-5 sm:h-6 rounded-full overflow-hidden backdrop-blur-sm border border-white/20 bg-black/30 shadow-inner">
                 <div
                   className={`h-full transition-all duration-[12500ms] relative ${
                     qualityScore >= 100
@@ -4157,7 +4188,7 @@ const OndaLevel1 = () => {
                   <div className="absolute inset-0 bg-white/30 animate-pulse" />
                 </div>
               </div>
-              <div className="mt-2 sm:mt-3 text-xs sm:text-sm text-gray-300 flex justify-between">
+              <div className="mt-2 sm:mt-3 text-xs sm:text-sm flex justify-between text-white/80">
                 <span>{t('labels.time_label')}: {safeToFixed((practiceTime / activePractice.targetTime) * 100, 0)}%</span>
                 <span>{t('labels.energy')}: {safeToFixed(vitalsData.energy, 0)}%</span>
               </div>
@@ -4168,10 +4199,10 @@ const OndaLevel1 = () => {
                 className={`w-full max-w-md px-3 sm:px-0 ${isMinimalMode ? '' : 'mb-6 sm:mb-8'}`}
                 onClick={isMinimalMode ? () => setIsMinimalMode(false) : undefined}
               >
-                <div className={`bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-6 border shadow-xl flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
+                <div className={`bg-white/10 backdrop-blur-2xl rounded-2xl p-4 sm:p-6 border flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
                   isMinimalMode
-                    ? 'border-white/30 h-28 sm:h-32 cursor-pointer hover:bg-black/40 active:scale-95'
-                    : 'border-white/20 h-24 sm:h-28'
+                    ? 'border-white/30 h-28 sm:h-32 cursor-pointer hover:bg-white/20 active:scale-95'
+                    : 'border-white/25 h-24 sm:h-28'
                 }`}>
                   <p
                     className={`text-sm sm:text-base text-center italic leading-snug text-white/90 whitespace-pre-line transition-all duration-1000 ${
@@ -4185,15 +4216,15 @@ const OndaLevel1 = () => {
             )}
 
             {!isMinimalMode && (<div className="grid grid-cols-2 gap-3 sm:gap-6 mb-6 sm:mb-12 px-3 sm:px-0 w-full max-w-md">
-              <div className="bg-black/30 backdrop-blur-md rounded-2xl p-3 sm:p-6 text-center border border-red-400/30 shadow-xl">
-                <Activity className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-red-400" />
+              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-3 sm:p-6 text-center border border-white/25">
+                <Activity className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-red-300" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{safeToFixed(vitalsData.stress, 0)}%</div>
-                <div className="text-xs sm:text-sm text-gray-300">{t('labels.stress')}</div>
+                <div className="text-xs sm:text-sm text-white/70">{t('labels.stress')}</div>
               </div>
-              <div className="bg-black/30 backdrop-blur-md rounded-2xl p-3 sm:p-6 text-center border border-blue-400/30 shadow-xl">
-                <Zap className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-blue-400" />
+              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-3 sm:p-6 text-center border border-white/25">
+                <Zap className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-blue-300" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{safeToFixed(vitalsData.energy, 0)}%</div>
-                <div className="text-xs sm:text-sm text-gray-300">{t('labels.energy')}</div>
+                <div className="text-xs sm:text-sm text-white/70">{t('labels.energy')}</div>
               </div>
             </div>)}
 
@@ -4201,19 +4232,19 @@ const OndaLevel1 = () => {
             <div className="flex gap-3 sm:gap-6">
               <button
                 onClick={() => setIsPaused(!isPaused)}
-                className="bg-white/30 hover:bg-white/40 backdrop-blur-md p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border border-white/30"
+                className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 border border-white/25 text-white"
               >
                 {isPaused ? <Play className="w-6 h-6 sm:w-8 sm:h-8" /> : <Pause className="w-6 h-6 sm:w-8 sm:h-8" />}
               </button>
               <button
                 onClick={finishPractice}
-                className="bg-emerald-500/40 hover:bg-emerald-500/60 backdrop-blur-md px-6 py-3 sm:px-10 sm:py-5 rounded-full font-bold text-sm sm:text-lg transition-all hover:scale-105 shadow-xl border border-emerald-400/50"
+                className="bg-emerald-500/25 hover:bg-emerald-500/40 backdrop-blur-2xl px-6 py-3 sm:px-10 sm:py-5 rounded-full font-bold text-sm sm:text-lg transition-all hover:scale-105 border border-emerald-400/50 text-white"
               >
                 {t('practices.end_practice')}
               </button>
               <button
                 onClick={() => setIsMinimalMode(!isMinimalMode)}
-                className="bg-white/30 hover:bg-white/40 backdrop-blur-md p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border border-white/30"
+                className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 border border-white/25 text-white"
               >
                 <Minimize2 className="w-6 h-6 sm:w-8 sm:h-8" />
               </button>
@@ -4226,57 +4257,57 @@ const OndaLevel1 = () => {
           <div className="relative z-10 flex items-center justify-center min-h-screen p-4 sm:p-6">
             <div className="max-w-2xl w-full text-center space-y-4 sm:space-y-8">
               <div className="text-6xl sm:text-8xl md:text-9xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '1s' }}>✨</div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">{t('practices.completed')}</h2>
+              <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 ${completeLight ? 'text-slate-500' : ''}`}>{t('practices.completed')}</h2>
 
               {activePractice.finalPhrase && (
-                <div className="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-white/30 shadow-xl mb-4 sm:mb-6">
-                  <p className="text-base sm:text-lg md:text-xl italic leading-relaxed text-white/90 whitespace-pre-line">
+                <div className={`rounded-2xl p-4 sm:p-6 border shadow-xl mb-4 sm:mb-6 ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
+                  <p className={`text-base sm:text-lg md:text-xl italic leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-500' : 'text-white/90'}`}>
                     {activePractice.finalPhrase}
                   </p>
                 </div>
               )}
 
-              <div className="bg-black/40 backdrop-blur-md rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border border-white/20 shadow-2xl">
+              <div className={`rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border shadow-2xl ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
                 {/* Row 1: OND Amount */}
-                <div className="text-4xl sm:text-5xl md:text-7xl font-mono text-amber-400 drop-shadow-2xl animate-pulse">
+                <div className={`text-4xl sm:text-5xl md:text-7xl font-mono animate-pulse ${completeLight ? 'text-amber-500' : 'text-amber-400 drop-shadow-2xl'}`}>
                   +{Math.floor((activePractice.maxQnt * qualityScore) / 100)} OND
                 </div>
-                
+
                 {/* Row 2: Quality + Time - symmetric: numbers in center */}
                 <div className="flex justify-center items-center text-sm sm:text-base">
                   <div className="flex items-center justify-end gap-2 w-[140px]">
-                    <span className="text-gray-300">{t('practices.quality')}</span>
-                    <span className="font-bold text-lg sm:text-xl text-emerald-400">{safeToFixed(qualityScore, 0)}%</span>
+                    <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.quality')}</span>
+                    <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-emerald-500' : 'text-emerald-400'}`}>{safeToFixed(qualityScore, 0)}%</span>
                   </div>
-                  <div className="w-px h-6 bg-white/30 mx-3" />
+                  <div className={`w-px h-6 mx-3 ${completeLight ? 'bg-slate-300' : 'bg-white/30'}`} />
                   <div className="flex items-center justify-start gap-2 w-[140px]">
-                    <span className="font-bold text-lg sm:text-xl text-white">{formatTime(practiceTime)}</span>
-                    <span className="text-gray-300">{t('practices.time')}</span>
+                    <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-slate-500' : 'text-white'}`}>{formatTime(practiceTime)}</span>
+                    <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.time')}</span>
                   </div>
                 </div>
-                
+
                 {/* Row 3: Stress + Energy - symmetric: numbers in center */}
                 <div className="flex justify-center items-start text-sm sm:text-base">
                   <div className="flex flex-col items-end w-[140px]">
                     <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className="text-gray-300">{t('labels.stress')}</span>
-                      <span className="font-bold text-red-400">{safeToFixed(vitalsData.stress, 0)}%</span>
+                      <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('labels.stress')}</span>
+                      <span className={`font-bold ${completeLight ? 'text-red-500' : 'text-red-400'}`}>{safeToFixed(vitalsData.stress, 0)}%</span>
                     </div>
-                    <Activity className="w-4 h-4 text-red-400 mt-1" />
+                    <Activity className={`w-4 h-4 mt-1 ${completeLight ? 'text-red-500' : 'text-red-400'}`} />
                   </div>
-                  <div className="w-px h-10 bg-white/30 mx-3" />
+                  <div className={`w-px h-10 mx-3 ${completeLight ? 'bg-slate-300' : 'bg-white/30'}`} />
                   <div className="flex flex-col items-start w-[140px]">
                     <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className="font-bold text-blue-400">{safeToFixed(vitalsData.energy, 0)}%</span>
-                      <span className="text-gray-300">{t('labels.energy')}</span>
+                      <span className={`font-bold ${completeLight ? 'text-blue-500' : 'text-blue-400'}`}>{safeToFixed(vitalsData.energy, 0)}%</span>
+                      <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('labels.energy')}</span>
                     </div>
-                    <Zap className="w-4 h-4 text-blue-400 mt-1" />
+                    <Zap className={`w-4 h-4 mt-1 ${completeLight ? 'text-blue-500' : 'text-blue-400'}`} />
                   </div>
                 </div>
-                
+
                 {/* Row 4: Star Rating */}
                 <div className="pt-2">
-                  <p className="text-sm text-gray-400 mb-2">{t('practices.rate_practice') || 'Rate this practice'}</p>
+                  <p className={`text-sm mb-2 ${completeLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('practices.rate_practice') || 'Rate this practice'}</p>
                   <div className="flex justify-center gap-2">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <button
@@ -4285,20 +4316,20 @@ const OndaLevel1 = () => {
                         className="transition-all hover:scale-110"
                         data-testid={`button-star-${star}`}
                       >
-                        <Star 
+                        <Star
                           className={`w-8 h-8 sm:w-10 sm:h-10 ${
-                            star <= practiceRating 
-                              ? 'text-amber-400 fill-yellow-400' 
-                              : 'text-gray-500'
-                          }`} 
+                            star <= practiceRating
+                              ? 'text-amber-400 fill-yellow-400'
+                              : completeLight ? 'text-slate-300' : 'text-gray-500'
+                          }`}
                         />
                       </button>
                     ))}
                   </div>
                 </div>
-                
+
                 {completedPractices[activePractice.id] && completedPractices[activePractice.id].quality < qualityScore && (
-                  <div className="bg-emerald-500/20 border border-emerald-400/50 rounded-lg p-3 sm:p-4 text-sm sm:text-base text-emerald-200">
+                  <div className={`bg-emerald-500/15 border border-emerald-400/50 rounded-lg p-3 sm:p-4 text-sm sm:text-base ${completeLight ? 'text-emerald-700' : 'text-emerald-200'}`}>
                     {t('practices.new_record')}: {safeToFixed(completedPractices[activePractice.id]?.quality, 0)}%
                   </div>
                 )}
@@ -4313,13 +4344,13 @@ const OndaLevel1 = () => {
                     setIsPaused(false);
                     setAudioResetKey(prev => prev + 1);
                   }}
-                  className="bg-purple-500/30 hover:bg-purple-500/50 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border border-purple-400/50"
+                  className={`flex-1 sm:flex-none sm:min-w-[15rem] backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                 >
                   {t('practices.try_again')}
                 </button>
                 <button
                   onClick={exitPractice}
-                  className="bg-white/30 hover:bg-white/40 backdrop-blur-md px-8 sm:px-10 py-3 sm:py-4 rounded-full text-lg sm:text-xl font-bold transition-all border border-white/30"
+                  className={`flex-1 sm:flex-none sm:min-w-[15rem] backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                 >
                   {t('practices.back_to_practices')}
                 </button>
@@ -4419,7 +4450,7 @@ const OndaLevel1 = () => {
     };
 
     return (
-      <div className="h-full text-white overflow-x-hidden bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950">
+      <div className={`h-full overflow-x-hidden ${isLight ? 'text-slate-800 bg-gradient-to-br from-indigo-50 via-white to-violet-100' : 'text-white bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950'}`}>
         <div
           className="min-h-screen flex flex-col justify-between px-6 py-8 max-w-2xl mx-auto"
         >
@@ -4434,7 +4465,7 @@ const OndaLevel1 = () => {
                 className={`w-3 h-3 rounded-full transition-all ${
                   onboardingScreen === dot
                     ? 'bg-violet-400 scale-125'
-                    : 'bg-white/30'
+                    : isLight ? 'bg-slate-300' : 'bg-white/30'
                 }`}
                 data-testid={`onboarding-dot-${dot}`}
               />
@@ -4447,8 +4478,8 @@ const OndaLevel1 = () => {
                 <div className="text-center mb-6">
                   <h1 className="text-2xl sm:text-3xl font-bold">{t('onboarding.screen1_title')}</h1>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg">{t('onboarding.screen1_text1')}</p>
-                <ul className="space-y-3 text-white/80">
+                <p className={`leading-relaxed text-lg ${isLight ? 'text-slate-700' : 'text-white/90'}`}>{t('onboarding.screen1_text1')}</p>
+                <ul className={`space-y-3 ${isLight ? 'text-slate-600' : 'text-white/80'}`}>
                   <li className="flex items-start gap-3">
                     <span className="text-violet-400 mt-1">•</span>
                     <span>{t('onboarding.screen1_list1')}</span>
@@ -4471,7 +4502,7 @@ const OndaLevel1 = () => {
                 {/* Bridge to the iOS ATT prompt that fires after Continue */}
                 <div className="mt-6 rounded-xl border border-violet-500/30 bg-violet-500/10 p-4 flex items-start gap-3">
                   <span aria-hidden className="mt-0.5 text-violet-300 text-base">ℹ️</span>
-                  <p className="text-sm text-violet-100/90 italic leading-relaxed">
+                  <p className={`text-sm italic leading-relaxed ${isLight ? 'text-violet-700' : 'text-violet-100/90'}`}>
                     {attCopyVariantRef.current === 'b'
                       ? t('onboarding.screen1_bridge_b')
                       : t('onboarding.screen1_bridge')}
@@ -4485,9 +4516,9 @@ const OndaLevel1 = () => {
                 <div className="text-center mb-6">
                   <h1 className="text-2xl sm:text-3xl font-bold">{t('onboarding.screen2_title')}</h1>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg">{t('onboarding.screen2_text1')}</p>
-                <p className="text-white/80 font-medium">{t('onboarding.screen2_text2')}</p>
-                <ul className="space-y-3 text-white/80">
+                <p className={`leading-relaxed text-lg ${isLight ? 'text-slate-700' : 'text-white/90'}`}>{t('onboarding.screen2_text1')}</p>
+                <p className={`font-medium ${isLight ? 'text-slate-600' : 'text-white/80'}`}>{t('onboarding.screen2_text2')}</p>
+                <ul className={`space-y-3 ${isLight ? 'text-slate-600' : 'text-white/80'}`}>
                   <li className="flex items-start gap-3">
                     <span className="text-cyan-400 mt-1">•</span>
                     <span>{t('onboarding.screen2_list1')}</span>
@@ -4510,7 +4541,7 @@ const OndaLevel1 = () => {
                 {/* Bridge to the iOS notifications prompt that fires after Continue */}
                 <div className="mt-6 rounded-xl border border-cyan-500/30 bg-cyan-500/10 p-4 flex items-start gap-3">
                   <span aria-hidden className="mt-0.5 text-cyan-300 text-base">🔔</span>
-                  <p className="text-sm text-cyan-100/90 italic leading-relaxed">
+                  <p className={`text-sm italic leading-relaxed ${isLight ? 'text-cyan-700' : 'text-cyan-100/90'}`}>
                     {t('onboarding.screen2_bridge')}
                   </p>
                 </div>
@@ -4522,8 +4553,8 @@ const OndaLevel1 = () => {
                 <div className="text-center mb-6">
                   <h1 className="text-2xl sm:text-3xl font-bold">{t('onboarding.screen3_title')}</h1>
                 </div>
-                <p className="text-white/90 leading-relaxed text-lg">{t('onboarding.screen3_text1')}</p>
-                <ul className="space-y-3 text-white/80">
+                <p className={`leading-relaxed text-lg ${isLight ? 'text-slate-700' : 'text-white/90'}`}>{t('onboarding.screen3_text1')}</p>
+                <ul className={`space-y-3 ${isLight ? 'text-slate-600' : 'text-white/80'}`}>
                   <li className="flex items-start gap-3">
                     <span className="text-amber-400 mt-1">•</span>
                     <span>{t('onboarding.screen3_list1')}</span>
@@ -4548,14 +4579,17 @@ const OndaLevel1 = () => {
           >
             <button
               onClick={handleOnboardingNext}
-              className={`w-full py-4 rounded-full text-lg font-semibold transition-all ${
-                onboardingScreen === 3
-                  ? 'bg-violet-600 hover:bg-violet-700 text-white shadow-lg shadow-violet-500/30'
-                  : 'bg-white/20 hover:bg-white/30 text-white border border-white/30'
-              }`}
+              className={`grid mx-auto px-8 py-4 rounded-xl text-lg font-semibold transition-all border bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               data-testid="button-onboarding-next"
             >
-              {onboardingScreen === 3 ? t('onboarding.start_journey') : t('onboarding.continue')}
+              {/* Невидимый дублёр самой длинной надписи задаёт фикс. ширину —
+                  кнопка не «прыгает» по ширине между экранами онбординга. */}
+              <span className="col-start-1 row-start-1 text-center">
+                {onboardingScreen === 3 ? t('onboarding.start_journey') : t('onboarding.continue')}
+              </span>
+              <span className="col-start-1 row-start-1 invisible h-0 overflow-hidden" aria-hidden="true">
+                {t('onboarding.start_journey')}
+              </span>
             </button>
           </div>
         </div>
@@ -4568,10 +4602,14 @@ const OndaLevel1 = () => {
   // ═══════════════════════════════════════════════════════
   if (activeView === 'addon') {
     const accentColor = activeCircuit === 2 ? 'cyan' : activeCircuit === 3 ? 'amber' : activeCircuit === 4 ? 'teal' : activeCircuit === 5 ? 'yellow' : activeCircuit === 6 ? 'emerald' : activeCircuit === 7 ? 'sky' : activeCircuit === 8 ? 'indigo' : activeCircuit === 9 ? 'amber' : activeCircuit === 10 ? 'orange' : activeCircuit === 11 ? 'cyan' : activeCircuit === 12 ? 'fuchsia' : 'purple';
+    const glowA = CIRCUIT_GLOW_LIGHT[activeCircuit] ?? CIRCUIT_GLOW_DEFAULT;
 
     return (
-      <div className={`h-full text-white overflow-x-hidden pb-6 pt-8 transition-all duration-1000 ${
-        activeCircuit === 2
+      <div
+        className={`h-full overflow-x-hidden pb-6 pt-8 transition-all duration-1000 ${isLight ? 'text-slate-800' : 'text-white'} ${
+        isLight
+          ? ''
+          : activeCircuit === 2
           ? 'bg-gradient-to-br from-teal-900 via-cyan-900 to-blue-900'
           : activeCircuit === 3
           ? 'bg-gradient-to-br from-amber-950 via-orange-900 to-amber-950'
@@ -4594,7 +4632,11 @@ const OndaLevel1 = () => {
           : activeCircuit === 12
           ? 'bg-gradient-to-br from-fuchsia-950 via-red-900 to-fuchsia-950'
           : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
-      }`}>
+      }`}
+        style={isLight ? {
+          background: `radial-gradient(900px circle at 12% 18%, ${glowA.orbA}, transparent 60%), radial-gradient(820px circle at 88% 82%, ${glowA.orbB}, transparent 58%), linear-gradient(135deg, #eef2ff 0%, #ffffff 52%, #f5f3ff 100%)`,
+        } : undefined}
+      >
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
 
           {/* Кнопка возврата к основной странице части */}
@@ -4605,8 +4647,10 @@ const OndaLevel1 = () => {
               if (rootEl) rootEl.scrollTop = 0;
               window.scrollTo(0, 0);
             }}
-            className={`mb-6 mt-2 flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-all backdrop-blur-md ${
-              activeCircuit === 2
+            className={`mb-6 mt-2 mx-auto flex items-center justify-center px-4 py-2.5 rounded-xl text-sm font-medium transition-all backdrop-blur-md ${
+              isLight
+                ? `bg-white/60 ${glowA.panelBorder} border text-slate-600 hover:bg-white/80 shadow-lg shadow-indigo-100/60`
+                : activeCircuit === 2
                 ? 'bg-cyan-900/40 border border-cyan-500/30 text-cyan-300 hover:bg-cyan-800/50'
                 : activeCircuit === 3
                 ? 'bg-amber-900/40 border border-amber-600/30 text-amber-300 hover:bg-amber-800/50'
@@ -4631,13 +4675,14 @@ const OndaLevel1 = () => {
                 : 'bg-indigo-900/40 border border-indigo-500/30 text-indigo-300 hover:bg-indigo-800/50'
             }`}
           >
-            <span>←</span>
-            <span>{t('part_info.back_to_part', { part: activeCircuit })}</span>
+            <span>{t('part_info.back_to_part', { part: activeCircuit }).replace(/←/g, '').trim()}</span>
           </button>
 
           {/* Заголовок и протокол */}
           <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl mb-6 transition-all duration-500 ${
-            activeCircuit === 2
+            isLight
+            ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glowA.panelBorder}`
+            : activeCircuit === 2
               ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-blue-900/30 border-cyan-500/30'
               : activeCircuit === 3
               ? 'bg-gradient-to-br from-amber-900/30 via-orange-900/20 to-amber-900/30 border-amber-600/30'
@@ -4672,15 +4717,17 @@ const OndaLevel1 = () => {
 
             {/* Введение */}
             <div className="space-y-4 mb-2">
-              <p className="text-gray-200 leading-relaxed">{t(`part_info.level_${activeCircuit}.intro`)}</p>
-              <p className="text-gray-300 leading-relaxed">{t(`part_info.level_${activeCircuit}.basis`)}</p>
+              <p className={`leading-relaxed ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>{t(`part_info.level_${activeCircuit}.intro`)}</p>
+              <p className={`leading-relaxed ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{t(`part_info.level_${activeCircuit}.basis`)}</p>
             </div>
           </div>
 
           {/* Архитектура Протокола */}
           {t(`part_info.level_${activeCircuit}.architecture_title`, { defaultValue: '' }) && (
             <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl mb-6 ${
-              activeCircuit === 2
+              isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glowA.panelBorder}`
+              : activeCircuit === 2
                 ? 'bg-gradient-to-br from-teal-900/20 via-cyan-900/10 to-blue-900/20 border-cyan-500/20'
                 : activeCircuit === 3
                 ? 'bg-gradient-to-br from-amber-900/20 via-orange-900/10 to-amber-900/20 border-amber-600/20'
@@ -4714,13 +4761,13 @@ const OndaLevel1 = () => {
                   const pillarTitle = t(`part_info.level_${activeCircuit}.pillar_${i}_title`, { defaultValue: '' });
                   if (!pillarTitle) return null;
                   return (
-                    <div key={i} className={`bg-black/25 rounded-xl p-5 border ${
+                    <div key={i} className={`${isLight ? 'bg-white/60' : 'bg-black/25'} rounded-xl p-5 border ${
                       activeCircuit === 2 ? 'border-cyan-500/20' : activeCircuit === 3 ? 'border-amber-600/20' : activeCircuit === 4 ? 'border-teal-500/20' : activeCircuit === 5 ? 'border-yellow-600/20' : activeCircuit === 6 ? 'border-emerald-500/20' : activeCircuit === 7 ? 'border-sky-500/20' : activeCircuit === 8 ? 'border-indigo-500/20' : activeCircuit === 9 ? 'border-yellow-500/30' : activeCircuit === 10 ? 'border-orange-500/20' : activeCircuit === 11 ? 'border-cyan-500/20' : activeCircuit === 12 ? 'border-fuchsia-500/20' : 'border-purple-500/20'
                     }`}>
                       <h3 className={`font-semibold mb-2 ${
                         activeCircuit === 2 ? 'text-cyan-400' : activeCircuit === 3 ? 'text-amber-400' : activeCircuit === 4 ? 'text-teal-400' : activeCircuit === 5 ? 'text-yellow-300' : activeCircuit === 6 ? 'text-emerald-400' : activeCircuit === 7 ? 'text-sky-400' : activeCircuit === 8 ? 'text-indigo-400' : activeCircuit === 9 ? 'text-yellow-400' : activeCircuit === 10 ? 'text-orange-400' : activeCircuit === 11 ? 'text-cyan-400' : activeCircuit === 12 ? 'text-fuchsia-400' : 'text-purple-400'
                       }`}>{i}. {pillarTitle}</h3>
-                      <p className="text-gray-300 leading-relaxed">{t(`part_info.level_${activeCircuit}.pillar_${i}_text`)}</p>
+                      <p className={`leading-relaxed ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>{t(`part_info.level_${activeCircuit}.pillar_${i}_text`)}</p>
                     </div>
                   );
                 })}
@@ -4731,7 +4778,9 @@ const OndaLevel1 = () => {
           {/* Биологический фокус */}
           {t(`part_info.level_${activeCircuit}.bio_focus_title`, { defaultValue: '' }) && (
             <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl mb-6 ${
-              activeCircuit === 2
+              isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glowA.panelBorder}`
+              : activeCircuit === 2
                 ? 'bg-gradient-to-br from-teal-900/20 via-cyan-900/10 to-blue-900/20 border-cyan-500/20'
                 : activeCircuit === 3
                 ? 'bg-gradient-to-br from-amber-900/20 via-orange-900/10 to-amber-900/20 border-amber-600/20'
@@ -4764,7 +4813,7 @@ const OndaLevel1 = () => {
                   const item = t(`part_info.level_${activeCircuit}.bio_focus_${i}`, { defaultValue: '' });
                   if (!item) return null;
                   return (
-                    <li key={i} className="flex items-start gap-3 text-gray-200">
+                    <li key={i} className={`flex items-start gap-3 ${isLight ? 'text-slate-700' : 'text-gray-200'}`}>
                       <span className={`mt-2 w-2 h-2 rounded-full flex-shrink-0 ${
                         activeCircuit === 2 ? 'bg-cyan-400' : activeCircuit === 3 ? 'bg-amber-400' : activeCircuit === 4 ? 'bg-teal-400' : activeCircuit === 5 ? 'bg-yellow-600' : activeCircuit === 6 ? 'bg-emerald-400' : activeCircuit === 7 ? 'bg-sky-400' : activeCircuit === 8 ? 'bg-indigo-400' : activeCircuit === 9 ? 'bg-yellow-400' : activeCircuit === 10 ? 'bg-orange-400' : activeCircuit === 11 ? 'bg-cyan-400' : activeCircuit === 12 ? 'bg-fuchsia-400' : 'bg-purple-400'
                       }`} />
@@ -4779,7 +4828,9 @@ const OndaLevel1 = () => {
           {/* Что это даёт? */}
           {t(`part_info.level_${activeCircuit}.result_title`, { defaultValue: '' }) && (
             <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl mb-6 ${
-              activeCircuit === 2
+              isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glowA.panelBorder}`
+              : activeCircuit === 2
                 ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-blue-900/30 border-cyan-500/30'
                 : activeCircuit === 3
                 ? 'bg-gradient-to-br from-amber-900/30 via-orange-900/20 to-amber-900/30 border-amber-600/30'
@@ -4812,7 +4863,7 @@ const OndaLevel1 = () => {
                   const item = t(`part_info.level_${activeCircuit}.result_${i}`, { defaultValue: '' });
                   if (!item) return null;
                   return (
-                    <li key={i} className="flex items-start gap-3 text-gray-200">
+                    <li key={i} className={`flex items-start gap-3 ${isLight ? 'text-slate-700' : 'text-gray-200'}`}>
                       <span className={`mt-2 w-2 h-2 rounded-full flex-shrink-0 ${
                         activeCircuit === 2 ? 'bg-cyan-400' : activeCircuit === 3 ? 'bg-amber-400' : activeCircuit === 4 ? 'bg-teal-400' : activeCircuit === 5 ? 'bg-yellow-600' : activeCircuit === 6 ? 'bg-emerald-400' : activeCircuit === 7 ? 'bg-sky-400' : activeCircuit === 8 ? 'bg-indigo-400' : activeCircuit === 9 ? 'bg-yellow-400' : activeCircuit === 10 ? 'bg-orange-400' : activeCircuit === 11 ? 'bg-cyan-400' : activeCircuit === 12 ? 'bg-fuchsia-400' : 'bg-purple-400'
                       }`} />
@@ -4822,6 +4873,7 @@ const OndaLevel1 = () => {
                 })}
               </ul>
               <p className={`leading-relaxed italic border-l-2 pl-4 ${
+                isLight ? 'text-slate-600 border-violet-300' :
                 activeCircuit === 2 ? 'text-cyan-200/80 border-cyan-500/40' : activeCircuit === 3 ? 'text-amber-200/80 border-amber-500/40' : activeCircuit === 4 ? 'text-teal-200/80 border-teal-500/40' : activeCircuit === 5 ? 'text-yellow-200/80 border-yellow-600/40' : activeCircuit === 6 ? 'text-emerald-200/80 border-emerald-500/40' : activeCircuit === 7 ? 'text-sky-200/80 border-sky-500/40' : activeCircuit === 8 ? 'text-indigo-200/80 border-indigo-500/40' : activeCircuit === 9 ? 'text-yellow-200/80 border-yellow-500/50' : activeCircuit === 10 ? 'text-orange-200/80 border-orange-500/40' : activeCircuit === 11 ? 'text-cyan-200/80 border-cyan-500/40' : activeCircuit === 12 ? 'text-fuchsia-200/80 border-fuchsia-500/40' : 'text-purple-200/80 border-purple-500/40'
               }`}>{t(`part_info.level_${activeCircuit}.result_outro`)}</p>
 
@@ -4909,8 +4961,10 @@ const OndaLevel1 = () => {
               if (rootEl) rootEl.scrollTop = 0;
               window.scrollTo(0, 0);
             }}
-            className={`w-full py-3.5 px-6 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md mb-8 ${
-              activeCircuit === 2
+            className={`mx-auto py-3.5 px-6 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center backdrop-blur-md mb-8 ${
+              isLight
+                ? `bg-white/60 ${glowA.panelBorder} border text-slate-600 hover:bg-white/80 shadow-lg shadow-indigo-100/60`
+                : activeCircuit === 2
                 ? 'bg-cyan-900/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-800/50'
                 : activeCircuit === 3
                 ? 'bg-amber-900/40 border border-amber-600/40 text-amber-300 hover:bg-amber-800/50'
@@ -4935,8 +4989,7 @@ const OndaLevel1 = () => {
                 : 'bg-indigo-900/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-800/50'
             }`}
           >
-            <span>←</span>
-            <span>{t('part_info.back_to_part', { part: activeCircuit })}</span>
+            <span>{t('part_info.back_to_part', { part: activeCircuit }).replace(/←/g, '').trim()}</span>
           </button>
 
         </div>
@@ -4944,11 +4997,78 @@ const OndaLevel1 = () => {
     );
   }
 
+  const glow = CIRCUIT_GLOW_LIGHT[activeCircuit] ?? CIRCUIT_GLOW_DEFAULT;
+  // Палитра кнопки эмоциональной сверки — translucent-тинт контура.
+  const emoTint = activeCircuit === 2
+    ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-400/40'
+    : activeCircuit === 3
+    ? 'bg-amber-600/10 hover:bg-amber-600/20 border border-amber-500/40'
+    : activeCircuit === 4
+    ? 'bg-teal-500/10 hover:bg-teal-500/20 border border-teal-400/40'
+    : activeCircuit === 5
+    ? 'bg-yellow-500/10 hover:bg-yellow-500/20 border border-yellow-500/40'
+    : activeCircuit === 6
+    ? 'bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-400/40'
+    : activeCircuit === 7
+    ? 'bg-sky-500/10 hover:bg-sky-500/20 border border-sky-400/40'
+    : activeCircuit === 8
+    ? 'bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-400/40'
+    : activeCircuit === 9
+    ? 'bg-yellow-300/20 hover:bg-yellow-300/30 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
+    : activeCircuit === 10
+    ? 'bg-orange-500/10 hover:bg-orange-500/20 border border-orange-400/40'
+    : activeCircuit === 11
+    ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-400/40'
+    : activeCircuit === 12
+    ? 'bg-fuchsia-500/10 hover:bg-fuchsia-500/20 border border-fuchsia-400/40'
+    : 'bg-indigo-500/10 hover:bg-indigo-500/20 border border-indigo-400/40';
+  // Пастельный цвет «в тон контура» — для мелких акцентов в светлой теме.
+  const partTint = activeCircuit === 2 ? 'text-cyan-300'
+    : activeCircuit === 3 ? 'text-amber-300'
+    : activeCircuit === 4 ? 'text-teal-300'
+    : activeCircuit === 5 ? 'text-yellow-400'
+    : activeCircuit === 6 ? 'text-emerald-300'
+    : activeCircuit === 7 ? 'text-sky-300'
+    : activeCircuit === 8 ? 'text-indigo-300'
+    : activeCircuit === 9 ? 'text-yellow-400'
+    : activeCircuit === 10 ? 'text-orange-300'
+    : activeCircuit === 11 ? 'text-cyan-300'
+    : activeCircuit === 12 ? 'text-fuchsia-300'
+    : 'text-violet-300';
+  // Читаемые акцентные тексты «в тон контура» для светлой темы:
+  // partTextMid — средний тон, partTextStrong — насыщеннее (заголовки).
+  const partTextMid = activeCircuit === 2 ? 'text-cyan-600'
+    : activeCircuit === 3 ? 'text-amber-600'
+    : activeCircuit === 4 ? 'text-teal-600'
+    : activeCircuit === 5 ? 'text-yellow-600'
+    : activeCircuit === 6 ? 'text-emerald-600'
+    : activeCircuit === 7 ? 'text-sky-600'
+    : activeCircuit === 8 ? 'text-indigo-600'
+    : activeCircuit === 9 ? 'text-amber-600'
+    : activeCircuit === 10 ? 'text-orange-600'
+    : activeCircuit === 11 ? 'text-cyan-600'
+    : activeCircuit === 12 ? 'text-fuchsia-600'
+    : 'text-violet-600';
+  const partTextStrong = activeCircuit === 2 ? 'text-cyan-700'
+    : activeCircuit === 3 ? 'text-amber-700'
+    : activeCircuit === 4 ? 'text-teal-700'
+    : activeCircuit === 5 ? 'text-yellow-700'
+    : activeCircuit === 6 ? 'text-emerald-700'
+    : activeCircuit === 7 ? 'text-sky-700'
+    : activeCircuit === 8 ? 'text-indigo-700'
+    : activeCircuit === 9 ? 'text-amber-700'
+    : activeCircuit === 10 ? 'text-orange-700'
+    : activeCircuit === 11 ? 'text-cyan-700'
+    : activeCircuit === 12 ? 'text-fuchsia-700'
+    : 'text-indigo-800';
+
   return (
-    <div 
+    <div
       data-main-container
-      className={`h-full text-white overflow-x-hidden pb-6 pt-8 transition-all duration-1000 ${
-      activeCircuit === 2
+      className={`h-full overflow-x-hidden pb-6 pt-8 transition-all duration-1000 ${isLight ? 'text-slate-800' : 'text-white'} ${
+      isLight
+        ? ''
+        : activeCircuit === 2
         ? 'bg-gradient-to-br from-teal-900 via-cyan-900 to-blue-900'
         : activeCircuit === 3
         ? 'bg-gradient-to-br from-amber-950 via-orange-900 to-amber-950'
@@ -4971,7 +5091,11 @@ const OndaLevel1 = () => {
         : activeCircuit === 12
         ? 'bg-gradient-to-br from-fuchsia-950 via-red-900 to-fuchsia-950'
         : 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900'
-    }`}>
+    }`}
+      style={isLight ? {
+        background: `radial-gradient(900px circle at 12% 18%, ${glow.orbA}, transparent 60%), radial-gradient(820px circle at 88% 82%, ${glow.orbB}, transparent 58%), linear-gradient(135deg, #eef2ff 0%, #ffffff 52%, #f5f3ff 100%)`,
+      } : undefined}
+    >
       {/* Debug Monitor - ПЕРВЫМ для захвата всех логов */}
       <DebugMonitor
         buildNumber={import.meta.env.VITE_BUILD_NUMBER}
@@ -4995,36 +5119,12 @@ const OndaLevel1 = () => {
       {/* Плавающая кнопка гамбургер меню */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
-       !showQntShop && !showEmotionalCheck && !showInfoModal && (
+       !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && (
         <button
           onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
-          className={`menu-container fixed top-12 z-[100] text-white transition-all px-3 py-3 rounded-xl shadow-2xl backdrop-blur-md ${
-            activeCircuit === 2
-              ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-              : activeCircuit === 3
-              ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-              : activeCircuit === 4
-              ? 'bg-teal-600/40 hover:bg-teal-600/60 border border-teal-400/30'
-              : activeCircuit === 5
-              ? 'bg-yellow-700/40 hover:bg-yellow-700/60 border border-yellow-600/30'
-              : activeCircuit === 6
-              ? 'bg-emerald-500/40 hover:bg-emerald-500/60 border border-emerald-400/30'
-              : activeCircuit === 7
-              ? 'bg-sky-500/40 hover:bg-sky-500/60 border border-sky-400/30'
-              : activeCircuit === 8
-              ? 'bg-indigo-500/40 hover:bg-indigo-500/60 border border-indigo-400/30'
-              : activeCircuit === 9
-              ? 'bg-yellow-500/40 hover:bg-yellow-500/60 border border-yellow-400/40'
-              : activeCircuit === 10
-              ? 'bg-orange-500/40 hover:bg-orange-500/60 border border-amber-400/30'
-              : activeCircuit === 11
-              ? 'bg-cyan-500/40 hover:bg-cyan-500/60 border border-cyan-400/30'
-              : activeCircuit === 12
-              ? 'bg-fuchsia-500/40 hover:bg-fuchsia-500/60 border border-red-400/30'
-              : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-          }`}
-          style={{ 
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
+          className={`menu-container fixed top-12 z-[100] transition-all px-3 py-3 rounded-xl backdrop-blur-md ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
+          style={{
+            boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)',
             left: 'max(28px, calc(50% - 256px + 16px))'
           }}
           data-testid="button-menu"
@@ -5033,10 +5133,10 @@ const OndaLevel1 = () => {
         </button>
       )}
 
-      {/* Кнопка подписки */}
-      {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
+      {/* Кнопка подписки ($) — временно скрыта по просьбе владельца, пока не нужна. */}
+      {false && !showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal &&
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
-       !showQntShop && !showEmotionalCheck && !showInfoModal && !showMenu && !showSubscriptionModal && (
+       !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && !showMenu && !showSubscriptionModal && (
         <button
           onClick={() => {
             setPaywallSource('cta_button');
@@ -5124,9 +5224,7 @@ const OndaLevel1 = () => {
               <button
                 onClick={() => setShowProfileModal(true)}
                 className={`flex items-center gap-1.5 sm:gap-2 text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
-                  isLightTheme
-                    ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
-                    : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
+                  'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
                 }`}
               >
                 <User className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
@@ -5136,9 +5234,7 @@ const OndaLevel1 = () => {
               <button
                 onClick={() => setShowAuthModal(true)}
                 className={`text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
-                  isLightTheme
-                    ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
-                    : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
+                  'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
                 }`}
               >
                 {t('nav.login')}
@@ -5149,9 +5245,7 @@ const OndaLevel1 = () => {
             <button
               onClick={() => setShowQntShop(true)}
               className={`text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
-                isLightTheme
-                  ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
-                  : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
+                'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
               }`}
               title="Click to open OND Shop"
             >
@@ -5160,9 +5254,7 @@ const OndaLevel1 = () => {
             <button
               onClick={() => setShowRatingModal(true)}
               className={`text-xs sm:text-sm transition-all px-2 sm:px-4 py-1.5 sm:py-2 rounded-full ${
-                isLightTheme
-                  ? 'text-amber-900 hover:text-amber-950 bg-amber-300 hover:bg-amber-400'
-                  : 'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
+                'text-white/80 hover:text-white bg-black/30 hover:bg-black/50'
               }`}
             >
               {t('nav.rating')}
@@ -5175,7 +5267,7 @@ const OndaLevel1 = () => {
         {/* Центральный заголовок */}
         <div className="text-center mb-6 sm:mb-12 pt-0">
           {/* Логотип по центру */}
-          <div className="flex items-center justify-center gap-2 text-white/80 mb-8 sm:mb-10">
+          <div className={`flex items-center justify-center gap-2 mb-8 sm:mb-10 ${isLight ? 'text-slate-400' : 'text-white/80'}`}>
             <span className="text-lg sm:text-xl font-light">ONDA</span>
             <span className="text-sm sm:text-base font-light">~</span>
             <span className="text-lg sm:text-xl font-light">LIFE</span>
@@ -5188,29 +5280,7 @@ const OndaLevel1 = () => {
                 <button
                   onClick={() => { setShowChapterDropdown(!showChapterDropdown); setShowLevelDropdown(false); }}
                   className={`backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
-                    activeCircuit === 2
-                      ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                      : activeCircuit === 3
-                      ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                      : activeCircuit === 4
-                      ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                      : activeCircuit === 5
-                      ? 'bg-yellow-700/20 hover:bg-yellow-700/30 border-yellow-600/50'
-                      : activeCircuit === 6
-                      ? 'bg-emerald-500/20 hover:bg-emerald-500/30 border-emerald-400/50'
-                      : activeCircuit === 7
-                      ? 'bg-sky-500/20 hover:bg-sky-500/30 border-sky-400/50'
-                      : activeCircuit === 8
-                      ? 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/50'
-                      : activeCircuit === 9
-                      ? 'bg-yellow-500/20 hover:bg-yellow-500/30 border-yellow-400/50'
-                      : activeCircuit === 10
-                      ? 'bg-orange-500/20 hover:bg-orange-500/30 border-amber-400/50'
-                      : activeCircuit === 11
-                      ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
-                      : activeCircuit === 12
-                      ? 'bg-fuchsia-500/20 hover:bg-fuchsia-500/30 border-red-400/50'
-                      : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
+                    emoTint
                   }`}
                 >
                   <div className="flex items-center justify-center">
@@ -5307,30 +5377,8 @@ const OndaLevel1 = () => {
               <div className="relative dropdown-container w-full">
                 <button
                   onClick={() => { setShowLevelDropdown(!showLevelDropdown); setShowChapterDropdown(false); }}
-                  className={`backdrop-blur-sm font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full min-h-[56px] sm:min-h-[64px] ${
-                    activeCircuit === 2
-                      ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                      : activeCircuit === 3
-                      ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                      : activeCircuit === 4
-                      ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                      : activeCircuit === 5
-                      ? 'bg-yellow-700/20 hover:bg-yellow-700/30 border-yellow-600/50'
-                      : activeCircuit === 6
-                      ? 'bg-emerald-500/20 hover:bg-emerald-500/30 border-emerald-400/50'
-                      : activeCircuit === 7
-                      ? 'bg-sky-500/20 hover:bg-sky-500/30 border-sky-400/50'
-                      : activeCircuit === 8
-                      ? 'bg-indigo-500/20 hover:bg-indigo-500/30 border-indigo-400/50'
-                      : activeCircuit === 9
-                      ? 'bg-yellow-500/20 hover:bg-yellow-500/30 border-yellow-400/50'
-                      : activeCircuit === 10
-                      ? 'bg-orange-500/20 hover:bg-orange-500/30 border-amber-400/50'
-                      : activeCircuit === 11
-                      ? 'bg-cyan-500/20 hover:bg-cyan-500/30 border-cyan-400/50'
-                      : activeCircuit === 12
-                      ? 'bg-fuchsia-500/20 hover:bg-fuchsia-500/30 border-red-400/50'
-                      : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
+                  className={`backdrop-blur-sm font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
+                    emoTint
                   }`}
                 >
                   <div className="flex items-center justify-center">
@@ -5428,13 +5476,13 @@ const OndaLevel1 = () => {
             </div>
           </div>
           <div className="flex flex-col items-center flex-1 justify-center my-4 sm:my-6">
-            <div className="text-base sm:text-xl text-white/80 italic max-w-md text-center px-4 sm:px-0" dangerouslySetInnerHTML={{__html: `«${t(`quote_level_${activeCircuit}`)}»`}}>
+            <div className={`text-base sm:text-xl italic max-w-md text-center px-4 sm:px-0 ${isLight ? 'text-slate-500' : 'text-white/80'}`} dangerouslySetInnerHTML={{__html: `«${t(`quote_level_${activeCircuit}`)}»`}}>
             </div>
           </div>
         </div>
 
         {/* Кнопки навигации */}
-        <div className="flex flex-col items-center gap-3 sm:gap-4 mb-6 sm:mb-12 w-full max-w-lg mx-auto px-4">
+        <div className="flex flex-col items-center gap-2 mb-6 sm:mb-12 w-full max-w-lg mx-auto px-4">
           {/* Эмоциональная сверка */}
           <button
             onClick={() => {
@@ -5444,20 +5492,29 @@ const OndaLevel1 = () => {
                 localStorage.setItem('onda_emotional_check_used', 'true');
               }
             }}
-            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${
-              activeCircuit === 2
-                ? 'bg-cyan-500/10 hover:bg-cyan-500/20 border-cyan-400/40'
-                : activeCircuit === 3
-                ? 'bg-amber-600/10 hover:bg-amber-600/20 border-amber-500/40'
-                : activeCircuit === 4
-                ? 'bg-teal-500/10 hover:bg-teal-500/20 border-teal-400/40'
-                : activeCircuit === 9
-                ? 'bg-black/35 hover:bg-black/45 border-2 border-yellow-200/90 shadow-[0_0_28px_rgba(253,224,71,0.55)]'
-                : 'bg-indigo-500/10 hover:bg-indigo-500/20 border-indigo-400/40'
-            }`}
+            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
           >
             {t('nav.emotional_check')}
             {!emotionalCheckUsed && (
+              <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
+                {t('labels.free')}
+              </span>
+            )}
+          </button>
+
+          {/* Взгляд на себя (eye-scan) */}
+          <button
+            onClick={() => {
+              setShowNervousScan(true);
+              if (!nervousScanUsed) {
+                setNervousScanUsed(true);
+                localStorage.setItem('onda_nervous_scan_used', 'true');
+              }
+            }}
+            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
+          >
+            {t('eye_scan.nav_button')}
+            {!nervousScanUsed && (
               <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
                 {t('labels.free')}
               </span>
@@ -5467,7 +5524,10 @@ const OndaLevel1 = () => {
 
         {/* Центральный блок с описанием контура */}
         <div className="mb-12">
-          <div className={`backdrop-blur-sm rounded-2xl border py-4 sm:py-8 px-4 sm:px-8 transition-all duration-1000 ${activeCircuit === 9 ? 'bg-black/35' : 'bg-black/20'} ${
+          <div className={`rounded-2xl border py-4 sm:py-8 px-4 sm:px-8 transition-all duration-1000 ${
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-xl shadow-indigo-200/40 ${glow.panelBorder}`
+              : `backdrop-blur-sm ${activeCircuit === 9 ? 'bg-black/35' : 'bg-black/20'} ${
             activeCircuit === 2
               ? 'border-cyan-500/30'
               : activeCircuit === 3
@@ -5491,13 +5551,14 @@ const OndaLevel1 = () => {
               : activeCircuit === 12
               ? 'border-fuchsia-500/40'
               : 'border-purple-500/30'
+          }`
           }`}>
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center justify-between mb-6">
                 <div className="text-4xl sm:text-6xl font-light tracking-wider">{t(`circuits.circuit_${activeCircuit}_title`)}</div>
               </div>
               <h3 className="text-2xl font-light mb-4">{t(`circuits.circuit_${activeCircuit}_subtitle`)}</h3>
-              <p className="text-white/70 leading-relaxed" dangerouslySetInnerHTML={{__html: t(`circuits.circuit_${activeCircuit}_desc`)}}>
+              <p className={`leading-relaxed ${isLight ? 'text-slate-500' : 'text-white/70'}`} dangerouslySetInnerHTML={{__html: t(`circuits.circuit_${activeCircuit}_desc`)}}>
               </p>
             </div>
           </div>
@@ -5505,7 +5566,7 @@ const OndaLevel1 = () => {
 
         {/* Permission Warning Banner */}
         {permissions.needsSetup && (
-          <div className="mb-6">
+          <div className="mb-6 max-w-lg mx-auto w-full">
             <PermissionWarningBanner
               onSetupClick={() => setShowPermissionModal(true)}
             />
@@ -5520,9 +5581,9 @@ const OndaLevel1 = () => {
 
         {/* BLE Connect Tracker — Android only, shown above biometrics grid */}
         {platform !== 'ios' && !vitalsData.connected && (
-          <div className="mb-4 bg-black/30 backdrop-blur-sm rounded-2xl border border-blue-500/20 p-4 max-w-lg mx-auto w-full">
-            <p className="text-xs font-semibold text-white/70 mb-1">{t('settings.bluetooth_monitor', 'Bluetooth Heart Rate Monitor')}</p>
-            <p className="text-xs text-white/50 mb-3">
+          <div className={`mb-4 rounded-2xl p-4 max-w-lg mx-auto w-full ${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-sky-200' : 'bg-black/30 backdrop-blur-sm border border-blue-500/20'}`}>
+            <p className={`text-base font-semibold mb-1 ${isLight ? 'text-sky-800' : 'text-white/70'}`}>{t('settings.bluetooth_monitor', 'Bluetooth Heart Rate Monitor')}</p>
+            <p className={`text-sm mb-3 ${isLight ? 'text-sky-700' : 'text-white/50'}`}>
               {t('settings.bluetooth_desc', 'Connect a Bluetooth heart rate monitor for real-time biofeedback during practices')}
             </p>
             <div className="flex flex-col gap-2">
@@ -5563,7 +5624,7 @@ const OndaLevel1 = () => {
                     <button
                       onClick={vitalsData.stopScan}
                       data-testid="button-stop-scan-home"
-                      className="py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white/70"
+                      className={`py-2.5 px-4 rounded-xl text-sm font-medium transition-all flex items-center justify-center gap-2 ${isLight ? 'bg-slate-100 hover:bg-slate-200 text-slate-500' : 'bg-white/10 hover:bg-white/20 text-white/70'}`}
                     >
                       {t('settings.scan_stop', 'Stop')}
                     </button>
@@ -5572,30 +5633,30 @@ const OndaLevel1 = () => {
               )}
               {/* Available devices after scan */}
               {!vitalsData.isScanning && vitalsData.availableDevices && vitalsData.availableDevices.length > 0 && vitalsData.connectToDevice && (
-                <div className="p-3 rounded-xl bg-white/5 border border-white/10">
-                  <p className="text-xs text-white/60 mb-2">{t('settings.available_devices', 'Available Devices')}:</p>
+                <div className={`p-3 rounded-xl ${isLight ? 'bg-slate-100/80 border border-slate-200' : 'bg-white/5 border border-white/10'}`}>
+                  <p className={`text-sm mb-2 ${isLight ? 'text-sky-700' : 'text-white/60'}`}>{t('settings.available_devices', 'Available Devices')}:</p>
                   <div className="space-y-1.5">
                     {vitalsData.availableDevices.map((device) => (
                       <button
                         key={device.id}
                         onClick={() => vitalsData.connectToDevice!(device.id)}
                         data-testid={`button-device-home-${device.id}`}
-                        className="w-full py-2 px-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20"
+                        className={`w-full py-2 px-3 rounded-lg text-sm font-medium transition-all flex items-center justify-between gap-2 ${isLight ? 'bg-white hover:bg-slate-50 text-slate-700 border border-slate-200 shadow-sm' : 'bg-white/10 hover:bg-white/20 text-white border border-white/20'}`}
                       >
                         <span className="flex items-center gap-2">
                           <Bluetooth className="w-3.5 h-3.5" />
                           {device.name}
                         </span>
-                        <span className="text-xs text-white/50">{t('settings.device_connect', 'Connect')}</span>
+                        <span className={`text-xs ${isLight ? 'text-slate-400' : 'text-white/50'}`}>{t('settings.device_connect', 'Connect')}</span>
                       </button>
                     ))}
                   </div>
                 </div>
               )}
               {/* Connection instructions */}
-              <div className="mt-1 p-3 rounded-xl bg-white/5 border border-white/10">
-                <p className="text-xs font-medium text-white/70 mb-1.5">{t('settings.connection_instructions', 'Connection instructions:')}</p>
-                <div className="text-xs text-white/50 space-y-1">
+              <div className={`mt-1 p-3 rounded-xl ${isLight ? 'bg-slate-100/80 border border-slate-200' : 'bg-white/5 border border-white/10'}`}>
+                <p className={`text-sm font-medium mb-1.5 ${isLight ? 'text-sky-800' : 'text-white/70'}`}>{t('settings.connection_instructions', 'Connection instructions:')}</p>
+                <div className={`text-sm space-y-1 ${isLight ? 'text-sky-700' : 'text-white/50'}`}>
                   <p>{t('settings.instruction_1', 'On phone: Close standard tracker app. Turn on Bluetooth')}</p>
                   <p>{t('settings.instruction_2', 'On tracker: Settings → Share heart rate → Enable')}</p>
                 </div>
@@ -5607,32 +5668,35 @@ const OndaLevel1 = () => {
         {/* Биометрика */}
         <div className="mb-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-            <div className={`${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-red-500/30'} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
-              <div className="text-xl sm:text-2xl font-bold">{displayHeartRate ?? '--'}</div>
-              <div className="text-xs text-gray-400">{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
+              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{displayHeartRate ?? '--'}</div>
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
             </div>
-            <div className={`${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-blue-500/30'} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
-              <div className="text-xl sm:text-2xl font-bold">{vitalsData.br ? `${vitalsData.br.toFixed(1)}` : '--'}</div>
-              <div className="text-xs text-gray-400">{t('settings.br_unit', '/min')}</div>
+              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.br ? `${vitalsData.br.toFixed(1)}` : '--'}</div>
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</div>
             </div>
-            <div className={`${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-orange-500/30'} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Activity className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400 mb-2 mx-auto" />
-              <div className="text-xl sm:text-2xl font-bold">{vitalsData.stress ?? '--'}%</div>
-              <div className="text-xs text-gray-400">{t('settings.stress_label', 'Stress')}</div>
+              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.stress ?? '--'}%</div>
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.stress_label', 'Stress')}</div>
             </div>
-            <div className={`${activeCircuit === 9 ? 'bg-black/35 border-2 border-yellow-200/80 shadow-[0_0_18px_rgba(253,224,71,0.35)]' : 'bg-black/30 border border-amber-600/30'} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Zap className="w-5 sm:w-6 h-5 sm:h-6 text-amber-400 mb-2 mx-auto" />
-              <div className="text-xl sm:text-2xl font-bold">{vitalsData.energy ?? '--'}%</div>
-              <div className="text-xs text-gray-400">{t('settings.energy_label', 'Energy')}</div>
+              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.energy ?? '--'}%</div>
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.energy_label', 'Energy')}</div>
             </div>
           </div>
         </div>
 
         {/* Прогресс уровня */}
         <div className="mb-8">
-          <div className={`bg-black/20 backdrop-blur-sm rounded-2xl p-4 border transition-all duration-1000 ${
+          <div className={`rounded-2xl p-4 border transition-all duration-1000 ${
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+              : `bg-black/20 backdrop-blur-sm ${
             activeCircuit === 2
               ? 'border-cyan-500/30'
               : activeCircuit === 3
@@ -5656,12 +5720,13 @@ const OndaLevel1 = () => {
               : activeCircuit === 12
               ? 'border-fuchsia-500/40'
               : 'border-purple-500/30'
+          }`
           }`}>
             <div className="flex justify-between mb-2 text-sm">
               <span>{t('progress.level_progress')}</span>
               <span>{completedCount}/{totalPractices} {t('progress.practices')}</span>
             </div>
-            <div className="w-full h-3 bg-black/50 rounded-full overflow-hidden">
+            <div className={`w-full h-3 rounded-full overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-black/50'}`}>
               <div
                 className="h-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500"
                 style={{ width: `${progress}%` }}
@@ -5673,7 +5738,9 @@ const OndaLevel1 = () => {
         {/* Философский текст */}
         <div className="mb-8 sm:mb-12">
           <div className={`backdrop-blur-sm rounded-2xl p-4 sm:p-8 border transition-all duration-1000 ${
-            activeCircuit === 2
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+              : activeCircuit === 2
               ? 'bg-gradient-to-br from-teal-900/20 to-cyan-900/20 border-cyan-500/30'
               : activeCircuit === 3
               ? 'bg-gradient-to-br from-amber-900/20 to-orange-900/20 border-amber-600/30'
@@ -5697,7 +5764,7 @@ const OndaLevel1 = () => {
               ? 'bg-gradient-to-br from-fuchsia-800/30 to-red-700/30 border-fuchsia-500/40'
               : 'bg-gradient-to-br from-purple-900/20 to-indigo-900/20 border-purple-500/30'
           }`}>
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               {t(`philosophy.level_${activeCircuit}.text_1`)}<br/>
               {t(`philosophy.level_${activeCircuit}.text_2`)}<br/>
               {t(`philosophy.level_${activeCircuit}.text_3`)}<br/>
@@ -5995,12 +6062,12 @@ const OndaLevel1 = () => {
         {/* Подсказка для активации Watch - показываем когда мониторинг включен но HR не приходит */}
         {platform === 'ios' && watchHeartRate.watchStatus?.paired && watchHeartRate.isMonitoring && !watchHeartRate.watchStatus?.reachable && (
           <div className="mb-6 px-4">
-            <div className="bg-cyan-500/10 border border-cyan-500/30 rounded-2xl p-4 text-center">
+            <div className={`rounded-2xl p-4 text-center ${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-cyan-200' : 'bg-cyan-500/10 border border-cyan-500/30'}`}>
               <div className="flex items-center justify-center gap-2 text-cyan-400 mb-2">
                 <Watch className="w-5 h-5" />
                 <span className="font-medium">{t('nav.watch_activate_title')}</span>
               </div>
-              <p className="text-white/70 text-sm">
+              <p className={`text-sm ${isLight ? 'text-slate-500' : 'text-white/70'}`}>
                 {t('nav.watch_activate_text')}
               </p>
             </div>
@@ -6027,9 +6094,13 @@ const OndaLevel1 = () => {
               <div
                 key={practice.id}
                 ref={el => practiceRefs.current[practice.id] = el}
-                className={`relative bg-black/40 backdrop-blur-sm rounded-lg p-6 border transition-all ${
+                className={`relative rounded-lg p-6 border transition-all flex flex-col ${
+                  isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'
+                } ${
                   isCompleted
-                    ? 'border-emerald-500/50 bg-emerald-500/10'
+                    ? isLight ? 'border-emerald-300 bg-emerald-50/70' : 'border-emerald-500/50 bg-emerald-500/10'
+                    : isLight
+                    ? glow.panelBorder
                     : activeCircuit === 2
                     ? 'border-cyan-500/30 hover:border-cyan-400/50'
                     : activeCircuit === 3
@@ -6071,10 +6142,10 @@ const OndaLevel1 = () => {
                       <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
                     </div>
                   ) : (
-                    <Circle className="w-6 h-6 text-gray-600" />
+                    <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
                   )}
                 </div>
-                <p className="text-sm text-gray-300 mb-4">{getPracticeDesc(practice.id)}</p>
+                <p className={`text-sm mb-4 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{getPracticeDesc(practice.id)}</p>
                 
                 {sessions.length > 0 && (
                   <div className="mb-4">
@@ -6102,8 +6173,12 @@ const OndaLevel1 = () => {
                         {sessions.map((session) => (
                           <div 
                             key={session.id}
-                            className={`bg-black/30 rounded p-3 border text-xs transition-all duration-1000 ${
-                              activeCircuit === 2
+                            className={`rounded p-3 border text-xs transition-all duration-1000 ${
+                              isLight ? 'bg-slate-100/80' : 'bg-black/30'
+                            } ${
+                              isLight
+                              ? 'border-slate-200'
+                              : activeCircuit === 2
                                 ? 'border-cyan-500/20'
                                 : activeCircuit === 3
                                 ? 'border-amber-600/20'
@@ -6143,7 +6218,7 @@ const OndaLevel1 = () => {
                   </div>
                 )}
                 
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between mt-auto pt-2">
                   <div className="text-amber-400 font-mono">
                     <div>{t('practices.up_to')} {earnedQnt} OND</div>
                     {bonus > 0 && (
@@ -6157,31 +6232,7 @@ const OndaLevel1 = () => {
                       markFreePracticeTapped(practice.id);
                       completePractice(practice.id, practice.maxQnt);
                     }}
-                    className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all ${
-                      activeCircuit === 2
-                        ? isCompleted
-                          ? 'bg-cyan-600/50 hover:bg-cyan-600/70 border border-cyan-400/50'
-                          : 'bg-cyan-600 hover:bg-cyan-700'
-                        : activeCircuit === 3
-                        ? isCompleted
-                          ? 'bg-amber-600/50 hover:bg-amber-600/70 border border-amber-400/50'
-                          : 'bg-amber-600 hover:bg-amber-700'
-                        : activeCircuit === 4
-                        ? isCompleted
-                          ? 'bg-teal-600/50 hover:bg-teal-600/70 border border-teal-400/50'
-                          : 'bg-teal-600 hover:bg-teal-700'
-                        : activeCircuit === 5
-                        ? isCompleted
-                          ? 'bg-amber-600/50 hover:bg-amber-600/70 border border-amber-400/50'
-                          : 'bg-amber-600 hover:bg-amber-700'
-                        : activeCircuit === 6
-                        ? isCompleted
-                          ? 'bg-emerald-600/50 hover:bg-emerald-600/70 border border-emerald-400/50'
-                          : 'bg-emerald-600 hover:bg-emerald-700'
-                        : isCompleted
-                          ? 'bg-purple-600/50 hover:bg-purple-600/70 border border-purple-400/50'
-                          : 'bg-purple-600 hover:bg-purple-700'
-                    }`}
+                    className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all backdrop-blur-sm ${emoTint}`}
                   >
                     {isCompleted ? t('practices.improve') : t('practices.start')}
                     {FREE_PRACTICE_IDS.has(practice.id) && !tappedFreePractices.has(practice.id) && (
@@ -6198,7 +6249,7 @@ const OndaLevel1 = () => {
 
         {/* Кнопка Part's info — переход на addon-страницу */}
         {t(`part_info.level_${activeCircuit}.title`, { defaultValue: '' }) && (
-          <div className="mb-6 max-w-lg mx-auto w-full">
+          <div className="mb-6 flex justify-center">
             <button
               onClick={() => {
                 setActiveView('addon');
@@ -6206,31 +6257,7 @@ const OndaLevel1 = () => {
                 if (rootEl) rootEl.scrollTop = 0;
                 window.scrollTo(0, 0);
               }}
-              className={`w-full py-3.5 px-6 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md ${
-                activeCircuit === 2
-                  ? 'bg-cyan-900/40 border border-cyan-500/40 text-cyan-300 hover:bg-cyan-800/50 hover:border-cyan-400/60'
-                  : activeCircuit === 3
-                  ? 'bg-amber-900/40 border border-amber-600/40 text-amber-300 hover:bg-amber-800/50 hover:border-amber-500/60'
-                  : activeCircuit === 4
-                  ? 'bg-teal-900/40 border border-teal-500/40 text-teal-300 hover:bg-teal-800/50 hover:border-teal-400/60'
-                  : activeCircuit === 5
-                  ? 'bg-yellow-800/40 border border-yellow-600/40 text-yellow-200 hover:bg-yellow-700/50 hover:border-yellow-500/60'
-                  : activeCircuit === 6
-                  ? 'bg-emerald-800/40 border border-emerald-500/40 text-emerald-300 hover:bg-emerald-700/50 hover:border-emerald-400/60'
-                  : activeCircuit === 7
-                  ? 'bg-sky-800/40 border border-sky-500/40 text-sky-300 hover:bg-sky-700/50 hover:border-sky-400/60'
-                  : activeCircuit === 8
-                  ? 'bg-indigo-800/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-700/50 hover:border-indigo-400/60'
-                  : activeCircuit === 9
-                  ? 'bg-amber-800/40 border border-yellow-300/70 text-yellow-100 hover:bg-amber-700/50 hover:border-yellow-200/90 shadow-[0_0_20px_rgba(253,224,71,0.4)]'
-                  : activeCircuit === 10
-                  ? 'bg-orange-800/40 border border-orange-500/40 text-orange-300 hover:bg-orange-700/50 hover:border-orange-400/60'
-                  : activeCircuit === 11
-                  ? 'bg-teal-800/40 border border-cyan-500/40 text-cyan-200 hover:bg-teal-700/50 hover:border-cyan-400/60'
-                  : activeCircuit === 12
-                  ? 'bg-fuchsia-800/40 border border-fuchsia-500/40 text-fuchsia-300 hover:bg-fuchsia-700/50 hover:border-fuchsia-400/60'
-                  : 'bg-indigo-900/40 border border-indigo-500/40 text-indigo-300 hover:bg-indigo-800/50 hover:border-indigo-400/60'
-              }`}
+              className={`py-3.5 px-8 rounded-xl font-semibold text-sm transition-all duration-300 flex items-center justify-center gap-2 backdrop-blur-md ${emoTint}`}
             >
               <span>{t('part_info.button')}</span>
             </button>
@@ -6238,7 +6265,9 @@ const OndaLevel1 = () => {
         )}
 
         <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl transition-all duration-1000 ${
-          activeCircuit === 2
+          isLight
+            ? `bg-white/55 backdrop-blur-xl shadow-xl shadow-indigo-100/50 ${glow.panelBorder}`
+            : activeCircuit === 2
             ? 'bg-gradient-to-br from-teal-900/30 via-cyan-900/20 to-blue-900/30 border-cyan-500/30'
             : activeCircuit === 3
             ? 'bg-gradient-to-br from-amber-900/30 via-orange-900/20 to-amber-900/30 border-amber-600/30'
@@ -6262,32 +6291,36 @@ const OndaLevel1 = () => {
             ? 'bg-gradient-to-br from-fuchsia-800/40 via-red-700/30 to-fuchsia-800/40 border-fuchsia-500/40'
             : 'bg-gradient-to-br from-indigo-900/30 via-purple-900/20 to-pink-900/30 border-indigo-500/30'
         }`}>
-          <div className="space-y-4 text-gray-200">
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.intro`)}</p>
-            
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_1`)}</p>
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_2`)}</p>
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.story_3`)}</p>
+          <div className={`space-y-4 ${isLight ? '[&_p.story]:text-slate-600' : 'text-gray-200'}`}>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.intro`)}</p>
+
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.story_1`)}</p>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.story_2`)}</p>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.story_3`)}</p>
             {activeCircuit === 1 && (
-              <p className="text-cyan-300 leading-relaxed italic">{t('level_goal.level_1.story_4')}</p>
+              <p className={`leading-relaxed italic ${isLight ? partTextMid : 'text-cyan-300'}`}>{t('level_goal.level_1.story_4')}</p>
             )}
 
             <div className="text-center py-4">
               <p className={`text-xl font-bold mb-2 ${
+                isLight ? partTextStrong :
                 activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-300' : activeCircuit === 7 ? 'text-sky-300' : activeCircuit === 8 ? 'text-indigo-300' : activeCircuit === 9 ? 'text-yellow-300' : activeCircuit === 10 ? 'text-orange-300' : activeCircuit === 11 ? 'text-cyan-300' : activeCircuit === 12 ? 'text-fuchsia-300' : 'text-pink-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_1`)}</p>
               <p className={`text-lg ${
+                isLight ? partTextMid :
                 activeCircuit === 2 ? 'text-teal-300' : activeCircuit === 3 ? 'text-orange-300' : activeCircuit === 4 ? 'text-cyan-300' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-teal-300' : activeCircuit === 7 ? 'text-blue-300' : activeCircuit === 8 ? 'text-violet-300' : activeCircuit === 9 ? 'text-amber-300' : activeCircuit === 10 ? 'text-amber-300' : activeCircuit === 11 ? 'text-pink-300' : activeCircuit === 12 ? 'text-red-300' : 'text-purple-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_2`)}</p>
               <p className={`text-lg ${
+                isLight ? partTextMid :
                 activeCircuit === 2 ? 'text-blue-300' : activeCircuit === 3 ? 'text-amber-300' : activeCircuit === 4 ? 'text-teal-200' : activeCircuit === 5 ? 'text-yellow-200' : activeCircuit === 6 ? 'text-emerald-200' : activeCircuit === 7 ? 'text-sky-200' : activeCircuit === 8 ? 'text-indigo-200' : activeCircuit === 9 ? 'text-yellow-200' : activeCircuit === 10 ? 'text-amber-200' : activeCircuit === 11 ? 'text-cyan-200' : activeCircuit === 12 ? 'text-red-200' : 'text-indigo-300'
               }`}>{t(`level_goal.level_${activeCircuit}.identity_3`)}</p>
             </div>
             
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_1`)}</p>
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_2`)}</p>
-            <p className="text-gray-300 leading-relaxed">{t(`level_goal.level_${activeCircuit}.wisdom_3`)}</p>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.wisdom_1`)}</p>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.wisdom_2`)}</p>
+            <p className={`leading-relaxed story ${isLight ? '' : 'text-gray-300'}`}>{t(`level_goal.level_${activeCircuit}.wisdom_3`)}</p>
             <p className={`leading-relaxed italic ${
+              isLight ? partTextMid :
               activeCircuit === 2 ? 'text-cyan-300' : activeCircuit === 3 ? 'text-amber-300' : 'text-cyan-300'
             }`}>{t(`level_goal.level_${activeCircuit}.wisdom_4`)}</p>
           </div>
@@ -6295,7 +6328,9 @@ const OndaLevel1 = () => {
 
         <div className="mt-8 p-4 sm:p-8">
           <h3 className={`text-2xl font-bold mb-6 transition-colors duration-1000 text-center ${
-            activeCircuit === 2
+            isLight
+              ? partTextStrong
+              : activeCircuit === 2
               ? 'text-cyan-300'
               : activeCircuit === 3
               ? 'text-gray-300'
@@ -6310,17 +6345,19 @@ const OndaLevel1 = () => {
             {t('terra_speaks.title')}
           </h3>
           <div className="space-y-4">
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               "{t(`terra_speaks.level_${activeCircuit}.quote_1`)}"
             </p>
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               "{t(`terra_speaks.level_${activeCircuit}.quote_2`)}"
             </p>
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               "{t(`terra_speaks.level_${activeCircuit}.quote_3`)}"
             </p>
             <p className={`text-lg leading-relaxed italic font-semibold text-center transition-colors duration-1000 ${
-              activeCircuit === 2
+              isLight
+                ? partTextMid
+                : activeCircuit === 2
                 ? 'text-cyan-200'
                 : activeCircuit === 3
                 ? 'text-gray-200'
@@ -6340,7 +6377,9 @@ const OndaLevel1 = () => {
         {/* Заголовок секции артефактов */}
         <div className="mt-12 mb-6">
           <h2 className={`text-3xl font-bold text-center transition-colors duration-1000 ${
-            activeCircuit === 2
+            isLight
+              ? partTextStrong
+              : activeCircuit === 2
               ? 'text-cyan-300'
               : activeCircuit === 3
               ? 'text-gray-300'
@@ -6360,10 +6399,10 @@ const OndaLevel1 = () => {
         <div className="space-y-4 mb-12">
           {/* Артефакт контура (Roots of Being и т.д.) */}
           {currentCircuit.artifact && (
-          <div className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+          <div className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
             artifacts.some(a => a.circuitId === currentCircuit.id)
-              ? 'border-amber-600/50 bg-yellow-500/10'
-              : 'border-purple-500/50 bg-purple-500/10'
+              ? isLight ? 'border-amber-300 bg-white/55' : 'border-amber-600/50 bg-yellow-500/10'
+              : isLight ? 'border-violet-300 bg-white/55' : 'border-purple-500/50 bg-purple-500/10'
           }`}>
             <div className="flex items-center gap-4">
               {artifacts.some(a => a.circuitId === currentCircuit.id) ? (
@@ -6387,10 +6426,10 @@ const OndaLevel1 = () => {
             const hasClearWill = artifacts.some(a => a.id === 'clear-will');
             return (
               <div
-                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
                   hasClearWill
-                    ? 'border-amber-600/50 bg-yellow-500/10'
-                    : 'border-purple-500/50 bg-purple-500/10'
+                    ? isLight ? 'border-amber-300 bg-white/55' : 'border-amber-600/50 bg-yellow-500/10'
+                    : isLight ? 'border-violet-300 bg-white/55' : 'border-purple-500/50 bg-purple-500/10'
                 }`}
               >
                 <div className="flex items-center gap-4">
@@ -6432,10 +6471,10 @@ const OndaLevel1 = () => {
             const hasInnerWave = artifacts.some(a => a.id === 'inner-wave');
             return (
               <div
-                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
                   hasInnerWave
-                    ? 'border-amber-600/50 bg-yellow-500/10'
-                    : 'border-purple-500/50 bg-purple-500/10'
+                    ? isLight ? 'border-amber-300 bg-white/55' : 'border-amber-600/50 bg-yellow-500/10'
+                    : isLight ? 'border-violet-300 bg-white/55' : 'border-purple-500/50 bg-purple-500/10'
                 }`}
               >
                 <div className="flex items-center gap-4">
@@ -6477,10 +6516,10 @@ const OndaLevel1 = () => {
             const hasTransformationPulse = artifacts.some(a => a.id === 'transformation-pulse');
             return (
               <div
-                className={`bg-black/40 backdrop-blur-sm rounded-2xl p-6 border ${
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'} ${
                   hasTransformationPulse
-                    ? 'border-amber-600/50 bg-yellow-500/10'
-                    : 'border-purple-500/50 bg-purple-500/10'
+                    ? isLight ? 'border-amber-300 bg-white/55' : 'border-amber-600/50 bg-yellow-500/10'
+                    : isLight ? 'border-violet-300 bg-white/55' : 'border-purple-500/50 bg-purple-500/10'
                 }`}
               >
                 <div className="flex items-center gap-4">
@@ -6521,7 +6560,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6551,7 +6590,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6581,7 +6620,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6611,7 +6650,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6641,7 +6680,7 @@ const OndaLevel1 = () => {
             ).length;
             return (
               <div
-                className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+                className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
               >
                 <div className="flex items-center gap-4">
                   <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6671,7 +6710,7 @@ const OndaLevel1 = () => {
                 setInfoModalMessage(t('artifacts.life_rhythm_alert'));
                 setShowInfoModal(true);
               }}
-              className="bg-black/40 backdrop-blur-sm rounded-2xl p-6 border border-purple-500/50 bg-purple-500/10"
+              className={`rounded-2xl p-6 border ${isLight ? 'backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-violet-300 bg-white/55' : 'bg-black/40 backdrop-blur-sm border-purple-500/50 bg-purple-500/10'}`}
             >
               <div className="flex items-center gap-4">
                 <Star className="w-12 h-12 text-purple-400 fill-purple-400" />
@@ -6696,7 +6735,9 @@ const OndaLevel1 = () => {
 
         <div className="mt-8 p-4 sm:p-8">
           <h3 className={`text-2xl font-bold mb-6 transition-colors duration-1000 text-center ${
-            activeCircuit === 2
+            isLight
+              ? partTextStrong
+              : activeCircuit === 2
               ? 'text-cyan-300'
               : activeCircuit === 3
               ? 'text-gray-300'
@@ -6711,27 +6752,29 @@ const OndaLevel1 = () => {
             {t('terra_final.title')}
           </h3>
           <div className="space-y-4">
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               {t(`terra_final.level_${activeCircuit}.line_1`)}
             </p>
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               {t(`terra_final.level_${activeCircuit}.line_2`)}
             </p>
-            <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
               {t(`terra_final.level_${activeCircuit}.line_3`)}
             </p>
             {activeCircuit === 2 ? (
               <>
-                <p className="text-white/90 text-sm sm:text-lg leading-relaxed text-center italic">
+                <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
                   {t('terra_final.level_2.line_4')}
                 </p>
-                <p className={`text-sm sm:text-lg leading-relaxed text-center italic font-semibold transition-colors duration-1000 text-cyan-200`}>
+                <p className={`text-sm sm:text-lg leading-relaxed text-center italic font-semibold transition-colors duration-1000 ${isLight ? partTextMid : 'text-cyan-200'}`}>
                   {t('terra_final.level_2.line_5')}
                 </p>
               </>
             ) : (activeCircuit === 1 || activeCircuit === 3) ? (
               <p className={`text-sm sm:text-lg leading-relaxed text-center italic font-semibold transition-colors duration-1000 ${
-                activeCircuit === 3
+                isLight
+                  ? partTextMid
+                  : activeCircuit === 3
                   ? 'text-gray-200'
                   : 'text-amber-200'
               }`}>
@@ -6758,33 +6801,9 @@ const OndaLevel1 = () => {
                     setShowInfoModal(true);
                   }
                 }}
-                className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg ${
+                className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg backdrop-blur-md ${
                   isPartUnlocked(activeCircuit + 1)
-                    ? 'hover:scale-105 active:scale-95 ' + (
-                      activeCircuit + 1 === 2
-                        ? 'bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white border-2 border-cyan-300/50'
-                        : activeCircuit + 1 === 3
-                        ? 'bg-gradient-to-r from-amber-600 to-orange-600 hover:from-amber-500 hover:to-orange-500 text-white border-2 border-amber-300/50'
-                        : activeCircuit + 1 === 4
-                        ? 'bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white border-2 border-teal-300/50'
-                        : activeCircuit + 1 === 5
-                        ? 'bg-gradient-to-r from-yellow-800 to-yellow-700 hover:from-yellow-700 hover:to-yellow-600 text-white border-2 border-yellow-600/50'
-                        : activeCircuit + 1 === 6
-                        ? 'bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white border-2 border-emerald-300/50'
-                        : activeCircuit + 1 === 7
-                        ? 'bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 text-white border-2 border-sky-300/50'
-                        : activeCircuit + 1 === 8
-                        ? 'bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white border-2 border-indigo-300/50'
-                        : activeCircuit + 1 === 9
-                        ? 'bg-gradient-to-r from-cyan-500 to-sky-500 hover:from-cyan-400 hover:to-sky-400 text-white border-2 border-cyan-300/50'
-                        : activeCircuit + 1 === 10
-                        ? 'bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-white border-2 border-orange-300/50'
-                        : activeCircuit + 1 === 11
-                        ? 'bg-gradient-to-r from-rose-500 to-pink-500 hover:from-rose-400 hover:to-pink-400 text-white border-2 border-rose-300/50'
-                        : activeCircuit + 1 === 12
-                        ? 'bg-gradient-to-r from-fuchsia-500 to-red-500 hover:from-fuchsia-400 hover:to-red-400 text-white border-2 border-fuchsia-300/50'
-                        : 'bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white border-2 border-purple-300/50'
-                    )
+                    ? `hover:scale-105 active:scale-95 ${emoTint}`
                     : 'bg-gray-600/60 text-gray-400 border-2 border-gray-500/50 cursor-not-allowed'
                 }`}
               >
@@ -6846,7 +6865,7 @@ const OndaLevel1 = () => {
                 return (
                   <div
                     key={idx}
-                    className="bg-gradient-to-br from-yellow-900/30 to-orange-900/30 rounded-2xl p-6 border border-amber-600/50"
+                    className={`rounded-2xl p-6 border ${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border-amber-300' : 'bg-gradient-to-br from-yellow-900/30 to-orange-900/30 border-amber-600/50'}`}
                   >
                     <Star className="w-8 h-8 text-amber-400 fill-yellow-400 mb-3" />
                     <h4 className="text-lg font-bold mb-1">{artifactName}</h4>
@@ -6865,12 +6884,12 @@ const OndaLevel1 = () => {
       {/* Модальное окно дневника */}
       {showJournalModal && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
-          <div className="bg-gradient-to-br from-gray-900 to-black max-w-4xl w-full max-h-[90vh] rounded-2xl border border-indigo-500/30 shadow-2xl my-4 flex flex-col">
-            <div className="sticky top-0 bg-gray-900/95 backdrop-blur-sm border-b border-indigo-500/30 p-4 sm:p-6 flex items-center justify-between">
+          <div className={`max-w-4xl w-full max-h-[90vh] rounded-2xl border shadow-2xl my-4 flex flex-col overflow-hidden ${isLight ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-indigo-500/30'}`}>
+            <div className={`sticky top-0 backdrop-blur-sm border-b p-4 sm:p-6 flex items-center justify-between ${isLight ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-indigo-500/30'}`}>
               <h2 className="text-lg sm:text-2xl font-bold">📖 {t('practices.journal_title')}</h2>
               <button
                 onClick={() => setShowJournalModal(false)}
-                className="text-gray-400 hover:text-white transition-all"
+                className={`transition-all ${isLight ? 'text-slate-400 hover:text-slate-700' : 'text-gray-400 hover:text-white'}`}
               >
                 <X className="w-6 h-6" />
               </button>
@@ -6886,7 +6905,7 @@ const OndaLevel1 = () => {
                   {practiceHistory.map((session) => (
                     <div
                       key={session.id}
-                      className="bg-black/30 rounded-lg p-3 sm:p-4 border border-purple-500/20 hover:border-purple-400/40 transition-all"
+                      className={`rounded-lg p-3 sm:p-4 border transition-all ${isLight ? 'bg-white/70 border-violet-200 hover:border-violet-300' : 'bg-black/30 border-purple-500/20 hover:border-purple-400/40'}`}
                     >
                       <div className="flex items-start justify-between mb-2">
                         <div>
@@ -6933,33 +6952,33 @@ const OndaLevel1 = () => {
       {/* Модальное окно статистики */}
       {showStatsModal && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
-          <div className="bg-gradient-to-br from-gray-900 to-black max-w-6xl w-full max-h-[90vh] overflow-y-auto no-scrollbar rounded-2xl border border-cyan-500/30 shadow-2xl my-4">
-            <div className="sticky top-0 bg-gray-900/95 backdrop-blur-sm border-b border-cyan-500/30 p-4 sm:p-6 flex items-center justify-between">
+          <div className={`max-w-6xl w-full max-h-[90vh] overflow-y-auto no-scrollbar rounded-2xl border shadow-2xl my-4 ${isLight ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-cyan-500/30'}`}>
+            <div className={`sticky top-0 backdrop-blur-sm border-b p-4 sm:p-6 flex items-center justify-between ${isLight ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-cyan-500/30'}`}>
               <h2 className="text-lg sm:text-2xl font-bold">{t('stats.title')}</h2>
               <button
                 onClick={() => setShowStatsModal(false)}
-                className="text-gray-400 hover:text-white transition-all"
+                className={`transition-all ${isLight ? 'text-slate-400 hover:text-slate-700' : 'text-gray-400 hover:text-white'}`}
               >
                 <X className="w-6 h-6" />
               </button>
             </div>
             <div className="p-4 sm:p-6">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 mb-6 sm:mb-8">
-                <div className="bg-black/30 rounded-lg p-4 border border-purple-500/20">
+                <div className={`rounded-lg p-4 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <p className="text-gray-400 text-sm mb-1">{t('stats.total_qnt')}</p>
                   <p className="text-3xl font-bold">{practiceHistory.length}</p>
                 </div>
-                <div className="bg-black/30 rounded-lg p-4 border border-purple-500/20">
+                <div className={`rounded-lg p-4 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <p className="text-gray-400 text-sm mb-1">{t('stats.time_in_practices')}</p>
                   <p className="text-3xl font-bold">
                     {Math.floor(getTotalTime() / 3600)}{t('stats.hours_short')} {Math.floor((getTotalTime() % 3600) / 60)}{t('stats.minutes_short')}
                   </p>
                 </div>
-                <div className="bg-black/30 rounded-lg p-4 border border-purple-500/20">
+                <div className={`rounded-lg p-4 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <p className="text-gray-400 text-sm mb-1">{t('stats.avg_quality')}</p>
                   <p className="text-3xl font-bold text-emerald-400">{safeToFixed(getAverageQuality(), 0)}%</p>
                 </div>
-                <div className="bg-black/30 rounded-lg p-4 border border-purple-500/20">
+                <div className={`rounded-lg p-4 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <p className="text-gray-400 text-sm mb-1">{t('stats.day_streak')}</p>
                   <p className="text-3xl font-bold text-orange-400">{getStreak()} 🔥</p>
                 </div>
@@ -6978,8 +6997,8 @@ const OndaLevel1 = () => {
                         key={achievement.id}
                         className={`rounded-lg p-4 border transition-all ${
                           isUnlocked
-                            ? 'bg-yellow-500/10 border-amber-600/30'
-                            : 'bg-black/30 border-gray-600/20'
+                            ? isLight ? 'bg-amber-50 border-amber-300' : 'bg-yellow-500/10 border-amber-600/30'
+                            : isLight ? 'bg-white/70 border-slate-200' : 'bg-black/30 border-gray-600/20'
                         }`}
                       >
                         <div className="flex items-start gap-3">
@@ -7022,17 +7041,17 @@ const OndaLevel1 = () => {
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4">{t('stats.rewards_section')}</h3>
                 <div className="grid md:grid-cols-3 gap-4">
-                  <div className="bg-gradient-to-br from-yellow-900/20 to-orange-900/20 rounded-lg p-4 border border-amber-600/30">
+                  <div className={`rounded-lg p-4 border ${isLight ? 'bg-indigo-500/15 border-indigo-400/40' : 'bg-gradient-to-br from-yellow-900/20 to-orange-900/20 border-amber-600/30'}`}>
                     <div className="text-3xl mb-2">💰</div>
                     <p className="text-sm text-gray-400 mb-1">{t('stats.bonus_qnt')}</p>
                     <p className="text-2xl font-bold text-amber-400">+{unlockedAchievements.length * 50} OND</p>
                   </div>
-                  <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-lg p-4 border border-purple-500/30">
+                  <div className={`rounded-lg p-4 border ${isLight ? 'bg-indigo-500/15 border-indigo-400/40' : 'bg-gradient-to-br from-purple-900/20 to-pink-900/20 border-purple-500/30'}`}>
                     <div className="text-3xl mb-2">⭐</div>
                     <p className="text-sm text-gray-400 mb-1">{t('stats.special_artifacts')}</p>
                     <p className="text-2xl font-bold text-purple-400">{artifacts.length}/{circuits.length}</p>
                   </div>
-                  <div className="bg-gradient-to-br from-blue-900/20 to-cyan-900/20 rounded-lg p-4 border border-blue-500/30">
+                  <div className={`rounded-lg p-4 border ${isLight ? 'bg-indigo-500/15 border-indigo-400/40' : 'bg-gradient-to-br from-blue-900/20 to-cyan-900/20 border-blue-500/30'}`}>
                     <div className="text-3xl mb-2">🎯</div>
                     <p className="text-sm text-gray-400 mb-1">{t('stats.achievements_progress')}</p>
                     <p className="text-2xl font-bold text-cyan-400">{Math.round((unlockedAchievements.length / achievements.length) * 100)}%</p>
@@ -7043,12 +7062,12 @@ const OndaLevel1 = () => {
               {/* Звания игрока */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4">🏅 {t('stats.player_title')}</h3>
-                <div className="bg-black/30 rounded-lg p-6 border border-purple-500/20">
+                <div className={`rounded-lg p-6 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <div className="flex items-center gap-4 mb-6">
                     <div className="text-6xl">{getPlayerRank().icon}</div>
                     <div>
                       <h4 className="text-3xl font-bold mb-2">{getPlayerRank().name}</h4>
-                      <p className="text-white/80">{t('stats.practices_count')}: {practiceHistory.length} | {t('stats.time_short')}: {Math.floor(getTotalTime() / 3600)}{t('stats.hours_short')}</p>
+                      <p className={isLight ? 'text-slate-500' : 'text-white/80'}>{t('stats.practices_count')}: {practiceHistory.length} | {t('stats.time_short')}: {Math.floor(getTotalTime() / 3600)}{t('stats.hours_short')}</p>
                     </div>
                   </div>
                   <div className="grid grid-cols-5 gap-2">
@@ -7059,7 +7078,7 @@ const OndaLevel1 = () => {
                       { name: t('stats.rank_master'), min: 100, icon: '💎' },
                       { name: t('stats.rank_guru'), min: 200, icon: '🌟' }
                     ].map((rank, idx) => (
-                      <div key={idx} className={`text-center p-3 rounded border transition-all ${practiceHistory.length >= rank.min ? 'bg-purple-500/20 border-purple-400/50' : 'bg-black/20 border-gray-600/20 opacity-40'}`}>
+                      <div key={idx} className={`text-center p-3 rounded border transition-all ${practiceHistory.length >= rank.min ? 'bg-indigo-500/15 border-indigo-400/40' : isLight ? 'bg-slate-100 border-slate-200 opacity-50' : 'bg-black/20 border-gray-600/20 opacity-40'}`}>
                         <div className="text-2xl mb-1">{rank.icon}</div>
                         <div className="text-xs">{rank.name}</div>
                       </div>
@@ -7071,7 +7090,7 @@ const OndaLevel1 = () => {
               {/* График качества по времени */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4">{t('stats.quality_chart')}</h3>
-                <div className="bg-black/30 rounded-lg p-6 border border-purple-500/20">
+                <div className={`rounded-lg p-6 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   {practiceHistory.length > 0 ? (
                     <div className="h-48 flex items-end gap-2">
                       {practiceHistory.slice(-20).map((session, idx) => {
@@ -7097,7 +7116,7 @@ const OndaLevel1 = () => {
               {/* Календарь активности */}
               <div className="mt-8">
                 <h3 className="text-xl font-bold mb-4">{t('stats.activity_calendar')}</h3>
-                <div className="bg-black/30 rounded-lg p-6 border border-purple-500/20">
+                <div className={`rounded-lg p-6 border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-black/30 border-purple-500/20'}`}>
                   <div className="grid grid-cols-7 gap-2">
                     {Array.from({length: 28}, (_, i) => {
                       const date = new Date();
@@ -7114,7 +7133,7 @@ const OndaLevel1 = () => {
                           <div className="text-xs text-gray-500 h-4">{dateStr}</div>
                           <div
                             className={`aspect-square w-full rounded ${
-                              dayPractices === 0 ? 'bg-gray-800' :
+                              dayPractices === 0 ? (isLight ? 'bg-slate-200' : 'bg-gray-800') :
                               dayPractices === 1 ? 'bg-green-900' :
                               dayPractices === 2 ? 'bg-green-700' :
                               'bg-green-500'
@@ -7136,12 +7155,12 @@ const OndaLevel1 = () => {
       {/* Модальное окно рейтинга */}
       {showRatingModal && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
-          <div className="bg-gradient-to-br from-gray-900 to-black max-w-6xl w-full max-h-[90vh] overflow-y-auto no-scrollbar rounded-2xl border border-cyan-500/30 shadow-2xl my-4">
-            <div className="sticky top-0 bg-gray-900/95 backdrop-blur-sm border-b border-cyan-500/30 p-4 sm:p-6 flex items-center justify-between">
+          <div className={`max-w-6xl w-full max-h-[90vh] overflow-y-auto no-scrollbar rounded-2xl border shadow-2xl my-4 ${isLight ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-cyan-500/30'}`}>
+            <div className={`sticky top-0 backdrop-blur-sm border-b p-4 sm:p-6 flex items-center justify-between ${isLight ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-cyan-500/30'}`}>
               <h2 className="text-lg sm:text-2xl font-bold">{t('leaderboard.title')}</h2>
               <button
                 onClick={() => setShowRatingModal(false)}
-                className="text-gray-400 hover:text-white transition-all"
+                className={`transition-all ${isLight ? 'text-slate-400 hover:text-slate-700' : 'text-gray-400 hover:text-white'}`}
               >
                 <X className="w-6 h-6" />
               </button>
@@ -7158,8 +7177,8 @@ const OndaLevel1 = () => {
                         key={idx}
                         className={`flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all ${
                           isCurrentPlayer
-                            ? 'bg-cyan-500/10 border-cyan-500/50 shadow-lg shadow-cyan-500/20'
-                            : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
+                            ? 'bg-indigo-500/15 border-indigo-400/50 shadow-lg shadow-indigo-500/20'
+                            : isLight ? 'bg-white/70 border-slate-200 hover:border-slate-300' : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
                         }`}
                       >
                         <div className={`text-lg sm:text-2xl font-bold w-6 sm:w-8 ${idx === 0 ? 'text-amber-400' : idx === 1 ? 'text-gray-300' : idx === 2 ? 'text-orange-400' : 'text-gray-500'}`}>
@@ -7188,8 +7207,8 @@ const OndaLevel1 = () => {
                         key={idx}
                         className={`flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all ${
                           isCurrentPlayer
-                            ? 'bg-cyan-500/10 border-cyan-500/50 shadow-lg shadow-cyan-500/20'
-                            : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
+                            ? 'bg-indigo-500/15 border-indigo-400/50 shadow-lg shadow-indigo-500/20'
+                            : isLight ? 'bg-white/70 border-slate-200 hover:border-slate-300' : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
                         }`}
                       >
                         <div className={`text-lg sm:text-2xl font-bold w-6 sm:w-8 ${idx === 0 ? 'text-amber-400' : idx === 1 ? 'text-gray-300' : idx === 2 ? 'text-orange-400' : 'text-gray-500'}`}>
@@ -7221,8 +7240,8 @@ const OndaLevel1 = () => {
                         key={idx}
                         className={`flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all ${
                           isCurrentPlayer
-                            ? 'bg-cyan-500/10 border-cyan-500/50 shadow-lg shadow-cyan-500/20'
-                            : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
+                            ? 'bg-indigo-500/15 border-indigo-400/50 shadow-lg shadow-indigo-500/20'
+                            : isLight ? 'bg-white/70 border-slate-200 hover:border-slate-300' : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'
                         }`}
                       >
                         <div className={`text-lg sm:text-2xl font-bold w-6 sm:w-8 ${idx === 0 ? 'text-amber-400' : idx === 1 ? 'text-gray-300' : idx === 2 ? 'text-orange-400' : 'text-gray-500'}`}>
@@ -7251,7 +7270,7 @@ const OndaLevel1 = () => {
                       return (
                         <div
                           key={practice.practice_id}
-                          className="flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all bg-black/30 border-gray-700/30 hover:border-gray-600/50"
+                          className={`flex items-center gap-2 sm:gap-4 p-3 sm:p-4 rounded-lg border transition-all ${isLight ? 'bg-white/70 border-slate-200 hover:border-slate-300' : 'bg-black/30 border-gray-700/30 hover:border-gray-600/50'}`}
                         >
                           <div className={`text-lg sm:text-2xl font-bold w-6 sm:w-8 ${idx === 0 ? 'text-amber-400' : idx === 1 ? 'text-gray-300' : idx === 2 ? 'text-orange-400' : 'text-gray-500'}`}>
                             {idx + 1}
@@ -7289,7 +7308,6 @@ const OndaLevel1 = () => {
       {showAuthModal && (
         <AuthModal
           onClose={() => setShowAuthModal(false)}
-          isLightTheme={isLightTheme}
         />
       )}
 
@@ -7298,7 +7316,6 @@ const OndaLevel1 = () => {
           user={user}
           profile={userProfile}
           onClose={() => setShowProfileModal(false)}
-          isLightTheme={isLightTheme}
           onProfileUpdate={(updatedProfile) => {
             setUserProfile(updatedProfile);
           }}
@@ -7308,7 +7325,6 @@ const OndaLevel1 = () => {
       {showSettingsModal && (
         <SettingsModal
           onClose={() => setShowSettingsModal(false)}
-          isLightTheme={isLightTheme}
         />
       )}
 
@@ -7333,7 +7349,6 @@ const OndaLevel1 = () => {
       {showConnectionModal && (
         <ConnectionModal
           onClose={() => setShowConnectionModal(false)}
-          isLightTheme={isLightTheme}
           vitalsData={vitalsData}
           healthConnectData={healthConnectData}
           healthKitHeartRateData={healthKitHeartRate}
@@ -7350,7 +7365,6 @@ const OndaLevel1 = () => {
         isOpen={showQntShop}
         onClose={() => setShowQntShop(false)}
         currentOnd={qnt}
-        isLightTheme={isLightTheme}
       />
 
       <EmotionalCheckModal
@@ -7358,6 +7372,15 @@ const OndaLevel1 = () => {
         onClose={() => setShowEmotionalCheck(false)}
         onOndEarned={(amount) => setQnt(prev => prev + amount)}
       />
+
+      {showNervousScan && (
+        <Suspense fallback={null}>
+          <NervousSystemScan
+            onClose={() => setShowNervousScan(false)}
+            onOndEarned={(amount) => setQnt(prev => prev + amount)}
+          />
+        </Suspense>
+      )}
 
       <InfoModal
         isOpen={showInfoModal}
@@ -7385,14 +7408,8 @@ const OndaLevel1 = () => {
                 setShowInfoModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-home"
             >
               <Mountain className="w-6 h-6 text-purple-400" />
@@ -7407,14 +7424,8 @@ const OndaLevel1 = () => {
                 setShowOnboarding(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-intro"
             >
               <RotateCcw className="w-6 h-6 text-gray-400" />
@@ -7427,14 +7438,8 @@ const OndaLevel1 = () => {
                 setShowJournalModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-diary"
             >
               <Circle className="w-6 h-6 text-cyan-400" />
@@ -7447,14 +7452,8 @@ const OndaLevel1 = () => {
                 setShowStatsModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-statistics"
             >
               <Activity className="w-6 h-6 text-emerald-400" />
@@ -7467,14 +7466,8 @@ const OndaLevel1 = () => {
                 setShowQntShop(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-ond-balance"
             >
               <Star className="w-6 h-6 text-amber-400" />
@@ -7488,14 +7481,8 @@ const OndaLevel1 = () => {
                 setShowRatingModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-leaderboard"
             >
               <Zap className="w-6 h-6 text-orange-400" />
@@ -7508,14 +7495,8 @@ const OndaLevel1 = () => {
                 setShowLanguageModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-language"
             >
               <Languages className="w-6 h-6 text-indigo-400" />
@@ -7538,14 +7519,8 @@ const OndaLevel1 = () => {
                 setShowSettingsModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-settings"
             >
               <Settings className="w-6 h-6 text-blue-400" />
@@ -7558,14 +7533,8 @@ const OndaLevel1 = () => {
                 setShowConnectionModal(true);
                 setShowMenu(false);
               }}
-              className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                activeCircuit === 2
-                  ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                  : activeCircuit === 3
-                  ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                  : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-              }`}
-              style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
               data-testid="menu-item-connection"
             >
               <Heart className="w-6 h-6 text-pink-400" />
@@ -7582,14 +7551,8 @@ const OndaLevel1 = () => {
                   setShowAuthModal(true);
                   setShowMenu(false);
                 }}
-                className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                  activeCircuit === 2
-                    ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                    : activeCircuit === 3
-                    ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                    : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-                }`}
-                style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+                className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+                style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
                 data-testid="menu-item-login"
               >
                 <User className="w-6 h-6 text-purple-400" />
@@ -7604,14 +7567,8 @@ const OndaLevel1 = () => {
                   setShowProfileModal(true);
                   setShowMenu(false);
                 }}
-                className={`flex items-center gap-3 px-4 py-3 rounded-xl shadow-2xl backdrop-blur-md text-white transition-all text-left ${
-                  activeCircuit === 2
-                    ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-                    : activeCircuit === 3
-                    ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-                    : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-                }`}
-                style={{ boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)' }}
+                className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+                style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
                 data-testid="menu-item-profile"
               >
                 <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-cyan-500 flex items-center justify-center flex-shrink-0">

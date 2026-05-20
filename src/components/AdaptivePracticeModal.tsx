@@ -3,7 +3,6 @@ import { X, Play, Pause, Activity, Zap, Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { RemoteAudioPlayer } from './RemoteAudioPlayer';
-import { SubscriptionModal } from './SubscriptionModal';
 import { useVitals } from '../hooks/useVitals';
 import { useSubscription } from '../hooks/useSubscription';
 import { useAnalytics } from '../hooks/useAnalytics';
@@ -11,6 +10,7 @@ import { heartRateStore } from '../hooks/heartRateStore';
 import { supabase } from '../lib/supabase';
 import { calculatePracticeOnd } from '../utils/ondCalculator';
 import { trackTenjinPractice, trackTenjinFirstPracticeComplete } from '../lib/tenjin';
+import { useTheme } from '../theme/ThemeProvider';
 
 interface AdaptivePracticeModalProps {
   isOpen: boolean;
@@ -523,12 +523,11 @@ type PracticeState = 'intro' | 'practice' | 'complete';
 
 export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned }: AdaptivePracticeModalProps) {
   const { t } = useTranslation();
+  const isLight = useTheme().resolved === 'light';
   const vitalsData = useVitals();
-  const { isPremium, isLoading: isSubLoading, refresh: refreshSubscription } = useSubscription();
+  const { isPremium, isLoading: isSubLoading } = useSubscription();
   const { track } = useAnalytics();
   const platform = Capacitor.getPlatform();
-  const [showPaywall, setShowPaywall] = useState(false);
-  const [pendingStartAfterSubscribe, setPendingStartAfterSubscribe] = useState(false);
   const [practiceState, setPracticeState] = useState<PracticeState>('intro');
   const [isPaused, setIsPaused] = useState(false);
   const [practiceTime, setPracticeTime] = useState(0);
@@ -562,26 +561,6 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   }, [isOpen, practice?.id]);
 
   useEffect(() => {
-    if (!pendingStartAfterSubscribe) return;
-    if (!isPremium) return;
-    console.warn('[DEBUG AdaptivePractice] Auto-start firing from pendingStartAfterSubscribe effect', {
-      practiceId,
-      practiceState,
-      msSinceOpen: modalOpenedAtRef.current ? Date.now() - modalOpenedAtRef.current : null,
-    });
-    track('practice_intro_closed_debug', {
-      surface: 'adaptive',
-      reason: 'auto_start_after_subscribe',
-      practiceId,
-      practiceState,
-      msSinceOpen: modalOpenedAtRef.current ? Date.now() - modalOpenedAtRef.current : null,
-    });
-    setPendingStartAfterSubscribe(false);
-    setShowPaywall(false);
-    startPractice();
-  }, [pendingStartAfterSubscribe, isPremium]);
-
-  useEffect(() => {
     console.log('AdaptivePracticeModal vitalsData:', {
       stress: vitalsData.stress,
       energy: vitalsData.energy,
@@ -604,15 +583,6 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     if (isOpen && isIOS) {
       console.log('[AdaptivePractice] Modal opened on iOS, starting health monitoring...');
       
-      // Start HealthKit monitoring early so data accumulates before practice starts
-      if (vitalsData.healthKitHR.isAvailable && !vitalsData.healthKitHR.isMonitoring) {
-        vitalsData.healthKitHR.startMonitoring('realtime').then(() => {
-          console.log('[AdaptivePractice] HealthKit auto-started on modal open');
-        }).catch(err => {
-          console.error('[AdaptivePractice] HealthKit auto-start error:', err);
-        });
-      }
-      
       // Start Watch monitoring if connected
       if (vitalsData.watchHR.isConnected && !vitalsData.watchHR.isMonitoring) {
         vitalsData.watchHR.startRealtime().then(() => {
@@ -625,7 +595,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     
     // ❌ НЕ ОСТАНАВЛИВАЕМ мониторинг при закрытии модалки
     // Мониторинг должен продолжаться в фоне для других практик
-  }, [isOpen, vitalsData.healthKitHR.isAvailable, vitalsData.watchHR.isConnected]);
+  }, [isOpen, vitalsData.watchHR.isConnected]);
 
   useEffect(() => {
     // Reset state when modal OPENS (transition from closed to open)
@@ -743,48 +713,14 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         }
       }
       
-      // Start HealthKit monitoring if available
-      if (vitalsData.healthKitHR.isAvailable && !vitalsData.healthKitHR.isMonitoring) {
-        try {
-          await vitalsData.healthKitHR.startMonitoring('realtime');
-          console.log('[AdaptivePractice] HealthKit monitoring started');
-        } catch (err) {
-          console.error('[AdaptivePractice] HealthKit start error:', err);
-        }
-      }
       
       // Check if vitals are already available (displayed on screen)
       const alreadyHasVitals = vitalsRef.current.hasVitalsData;
       console.log('[AdaptivePractice] iOS check: hasVitalsData=' + alreadyHasVitals + 
         ', stress=' + vitalsRef.current.stress + ', energy=' + vitalsRef.current.energy);
       
-      // Only wait if vitals are NOT ready yet
-      if (!alreadyHasVitals) {
-        console.log('[AdaptivePractice] iOS: Waiting for hasVitalsData to become TRUE...');
-        await new Promise<void>((resolve) => {
-          let attempts = 0;
-          const maxAttempts = 20; // 10 seconds total
-          const checkInterval = setInterval(() => {
-            attempts++;
-            const nowHasVitals = vitalsRef.current.hasVitalsData;
-            const stress = vitalsRef.current.stress;
-            const energy = vitalsRef.current.energy;
-            console.log(`[AdaptivePractice] Wait #${attempts}: hasVitals=${nowHasVitals}, stress=${stress}, energy=${energy}`);
-            
-            if (nowHasVitals || attempts >= maxAttempts) {
-              clearInterval(checkInterval);
-              if (nowHasVitals) {
-                console.log('[AdaptivePractice] Vitals ready! stress=' + stress + ', energy=' + energy);
-              } else {
-                console.log('[AdaptivePractice] Timeout waiting for vitals, using fallback');
-              }
-              resolve();
-            }
-          }, 500);
-        });
-      } else {
-        console.log('[AdaptivePractice] iOS: Vitals already available, using them directly!');
-      }
+      // Практику не блокируем ожиданием пульса (раньше — зависание до 10 с
+      // без Apple Watch). Мониторинг запущен выше, метрики подтянутся в фоне.
     }
 
     // Use vitalsRef.current for FRESH values after any async wait
@@ -1135,17 +1071,22 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const circumference = 2 * Math.PI * 120;
   const strokeDashoffset = circumference - (progress / 100) * circumference;
 
+  // Светлый экран завершения только в светлой теме; в остальном — космический.
+  const completeLight = practiceState === 'complete' && isLight;
+
   return (
-    <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900 flex items-center justify-center z-50 p-3 sm:p-6">
+    <div className={`fixed inset-0 flex items-center justify-center z-50 p-3 sm:p-6 transition-colors duration-1000 ${isLight ? 'bg-gradient-to-br from-indigo-50 via-white to-violet-100 text-slate-800' : 'bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900 text-white'}`}>
+      {!isLight && (
       <div className="absolute inset-0" style={{
         backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.3) 100%)'
       }} />
+      )}
 
       <button
         onClick={handleClose}
         disabled={!canClose}
         style={!canClose ? { pointerEvents: 'none', opacity: 0.5 } : undefined}
-        className="absolute top-[72px] right-6 z-50 bg-black/40 hover:bg-black/60 backdrop-blur-sm p-3 rounded-full transition-all hover:scale-110"
+        className={`absolute top-[72px] right-6 z-50 p-3 rounded-full transition-all hover:scale-110 backdrop-blur-2xl ${isLight ? 'bg-white/60 hover:bg-white/80 border border-violet-200 text-slate-600' : 'bg-white/10 hover:bg-white/20 border border-white/25'}`}
       >
         <X className="w-6 h-6" />
       </button>
@@ -1156,46 +1097,37 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             <div className="text-4xl sm:text-6xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '2s' }}>
               {practice.visual}
             </div>
-            <h1 className="text-3xl sm:text-6xl font-bold mb-2 sm:mb-4 drop-shadow-2xl">
+            <h1 className={`text-3xl sm:text-6xl font-bold mb-2 sm:mb-4 drop-shadow-2xl ${isLight ? 'text-slate-800' : ''}`}>
               {t(practice.name)}
             </h1>
-            <div className="bg-black/40 backdrop-blur-md rounded-2xl p-4 sm:p-8 mb-3 sm:mb-6 border border-white/20 shadow-2xl">
+            <div className={`rounded-2xl p-4 sm:p-8 mb-3 sm:mb-6 shadow-2xl ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
               <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
                 <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
-                <p className="text-sm text-purple-200 font-semibold tracking-wide">
+                <p className={`text-sm font-semibold tracking-wide ${isLight ? 'text-violet-600' : 'text-purple-200'}`}>
                   {practice.element}
                 </p>
                 <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
               </div>
-              <p className="text-base sm:text-2xl leading-relaxed italic font-light">
+              <p className={`text-base sm:text-2xl leading-relaxed italic font-light ${isLight ? 'text-slate-700' : ''}`}>
                 "{t(practice.shortPhrase)}"
               </p>
             </div>
-            <div className="flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base text-gray-200">
-              <span className="bg-black/30 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-sm text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center">
+            <div className={`flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
+              <span className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center ${isLight ? 'bg-white/70 border border-violet-200' : 'bg-white/10 border border-white/20'}`}>
                 {formatTime(practice.targetTime)}
               </span>
-              <span className="text-gray-400">•</span>
-              <span className="bg-black/30 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-sm text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center">
+              <span className={isLight ? 'text-slate-500' : 'text-gray-400'}>•</span>
+              <span className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center ${isLight ? 'bg-white/70 border border-violet-200' : 'bg-white/10 border border-white/20'}`}>
                 {t('practices.up_to')} {practice.maxOnd} OND
               </span>
             </div>
             <button
               onClick={() => {
-                if (isPremium || isSubLoading || platform !== 'ios') {
-                  startPractice();
-                  return;
-                }
-                track('paywall_viewed', {
-                  source: 'practice_intro',
-                  practice_id: practice.id,
-                  practice_type: 'adaptive',
-                });
-                setPendingStartAfterSubscribe(true);
-                setShowPaywall(true);
-                // Source is constant for this entry path; set on the modal below.
+                // Адаптивные практики бесплатны (FREE-бейджи на «Эмоциональной
+                // сверке» и «Взгляд на себя») — без пэйвола.
+                startPractice();
               }}
-              className="bg-white/30 hover:bg-white/40 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl border border-white/30"
+              className={`backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 shadow-2xl ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border border-white/25'}`}
             >
               {t('practices.start')}
             </button>
@@ -1213,7 +1145,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   cy="128"
                   r="110"
                   fill="none"
-                  stroke="rgba(255,255,255,0.1)"
+                  stroke={isLight ? 'rgba(99,102,241,0.15)' : 'rgba(255,255,255,0.1)'}
                   strokeWidth="12"
                 />
                 <circle
@@ -1267,7 +1199,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                 <span className="font-semibold">{t('practices.quality')}</span>
                 <span className="font-bold text-xl sm:text-2xl">{Math.round(calculateCurrentQuality())}%</span>
               </div>
-              <div className="w-full h-5 sm:h-6 bg-black/40 rounded-full overflow-hidden backdrop-blur-sm border border-white/20 shadow-inner">
+              <div className={`w-full h-5 sm:h-6 rounded-full overflow-hidden backdrop-blur-sm shadow-inner ${isLight ? 'bg-slate-200 border border-violet-200' : 'bg-black/40 border border-white/20'}`}>
                 <div
                   className="h-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-300 transition-all duration-[12500ms] relative"
                   style={{ width: `${calculateCurrentQuality()}%` }}
@@ -1275,7 +1207,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   <div className="absolute inset-0 bg-white/30 animate-pulse" />
                 </div>
               </div>
-              <div className="mt-2 sm:mt-3 text-xs sm:text-sm text-gray-300 flex justify-between">
+              <div className={`mt-2 sm:mt-3 text-xs sm:text-sm flex justify-between ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>
                 <span>{t('labels.time_label')}: {Math.round((practiceTime / practice.targetTime) * 100)}%</span>
                 <span>{t('labels.energy')}: {vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</span>
               </div>
@@ -1283,9 +1215,9 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
 
             {practice.guidingTexts && practice.guidingTexts.length > 0 && (
               <div className="w-full max-w-md mb-6 sm:mb-8 px-3 sm:px-0">
-                <div className="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-white/20 shadow-xl h-24 sm:h-28 flex items-center justify-center overflow-hidden">
+                <div className={`rounded-2xl p-4 sm:p-6 shadow-xl h-24 sm:h-28 flex items-center justify-center overflow-hidden ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
                   <p
-                    className={`text-sm sm:text-base text-center italic leading-snug text-white/90 whitespace-pre-line transition-all duration-1000 ${
+                    className={`text-sm sm:text-base text-center italic leading-snug whitespace-pre-line transition-all duration-1000 ${isLight ? 'text-slate-700' : 'text-white/90'} ${
                       isTextTransitioning ? 'opacity-0 translate-y-[-20px]' : 'opacity-100 translate-y-0'
                     }`}
                   >
@@ -1296,22 +1228,22 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             )}
 
             <div className="grid grid-cols-2 gap-3 sm:gap-6 mb-6 sm:mb-12 px-3 sm:px-0 w-full max-w-md">
-              <div className="bg-black/30 backdrop-blur-md rounded-2xl p-3 sm:p-6 text-center border border-red-400/30 shadow-xl">
+              <div className={`rounded-2xl p-3 sm:p-6 text-center shadow-xl ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
                 <Activity className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-red-400" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{vitalsData.stress !== null ? Math.round(vitalsData.stress) : '--'}%</div>
-                <div className="text-xs sm:text-sm text-gray-300">{t('labels.stress')}</div>
+                <div className={`text-xs sm:text-sm ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>{t('labels.stress')}</div>
               </div>
-              <div className="bg-black/30 backdrop-blur-md rounded-2xl p-3 sm:p-6 text-center border border-blue-400/30 shadow-xl">
+              <div className={`rounded-2xl p-3 sm:p-6 text-center shadow-xl ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
                 <Zap className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-blue-400" />
                 <div className="text-2xl sm:text-4xl font-bold mb-1">{vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</div>
-                <div className="text-xs sm:text-sm text-gray-300">{t('labels.energy')}</div>
+                <div className={`text-xs sm:text-sm ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>{t('labels.energy')}</div>
               </div>
             </div>
             
             <div className="flex gap-3 sm:gap-6">
               <button
                 onClick={togglePause}
-                className="bg-white/30 hover:bg-white/40 backdrop-blur-md p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl border border-white/30"
+                className={`backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border border-white/25'}`}
               >
                 {isPaused ? <Play className="w-6 h-6 sm:w-8 sm:h-8" /> : <Pause className="w-6 h-6 sm:w-8 sm:h-8" />}
               </button>
@@ -1320,7 +1252,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   console.log('[AdaptivePractice] Complete button clicked!');
                   completePractice();
                 }}
-                className="bg-emerald-500/30 hover:bg-emerald-500/50 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all hover:scale-110 shadow-xl border border-emerald-400/50"
+                className="bg-emerald-500/25 hover:bg-emerald-500/40 backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all hover:scale-110 shadow-xl border border-emerald-400/50"
                 data-testid="button-complete-practice"
               >
                 {t('adaptive_practices.complete')}
@@ -1336,54 +1268,54 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">{t('practices.completed')}</h2>
 
               {practice.finalPhrase && (
-                <div className="bg-black/30 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-white/30 shadow-xl mb-4 sm:mb-6">
-                  <p className="text-base sm:text-lg md:text-xl italic leading-relaxed text-white/90 whitespace-pre-line">
+                <div className={`rounded-2xl p-4 sm:p-6 border shadow-xl mb-4 sm:mb-6 ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
+                  <p className={`text-base sm:text-lg md:text-xl italic leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-700' : 'text-white/90'}`}>
                     {t(practice.finalPhrase)}
                   </p>
                 </div>
               )}
 
-              <div className="bg-black/40 backdrop-blur-md rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border border-white/20 shadow-2xl">
+              <div className={`rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border shadow-2xl ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
                 {/* Row 1: OND Amount */}
-                <div className="text-4xl sm:text-5xl md:text-7xl font-mono text-yellow-400 drop-shadow-2xl animate-pulse">
+                <div className={`text-4xl sm:text-5xl md:text-7xl font-mono animate-pulse ${completeLight ? 'text-amber-500' : 'text-yellow-400 drop-shadow-2xl'}`}>
                   +{earnedOnd} OND
                 </div>
-                
+
                 {/* Row 2: Quality + Time - symmetric: numbers in center */}
                 <div className="flex justify-center items-center text-sm sm:text-base">
                   <div className="flex items-center justify-end gap-2 w-[140px]">
-                    <span className="text-gray-300">{t('practices.quality')}</span>
-                    <span className="font-bold text-lg sm:text-xl text-emerald-400">{qualityScore}%</span>
+                    <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.quality')}</span>
+                    <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-emerald-500' : 'text-emerald-400'}`}>{qualityScore}%</span>
                   </div>
-                  <div className="w-px h-6 bg-white/30 mx-3" />
+                  <div className={`w-px h-6 mx-3 ${completeLight ? 'bg-slate-300' : 'bg-white/30'}`} />
                   <div className="flex items-center justify-start gap-2 w-[140px]">
-                    <span className="font-bold text-lg sm:text-xl text-white">{formatTime(practiceTime)}</span>
-                    <span className="text-gray-300">{t('practices.time')}</span>
+                    <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-slate-700' : 'text-white'}`}>{formatTime(practiceTime)}</span>
+                    <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.time')}</span>
                   </div>
                 </div>
-                
+
                 {/* Row 3: Stress + Energy - symmetric: numbers in center */}
                 <div className="flex justify-center items-start text-sm sm:text-base">
                   <div className="flex flex-col items-end w-[140px]">
                     <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className="text-gray-300">{t('labels.stress')}</span>
-                      <span className="font-bold text-red-400">{vitalsData.stress !== null ? Math.round(vitalsData.stress) : '--'}%</span>
+                      <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('labels.stress')}</span>
+                      <span className={`font-bold ${completeLight ? 'text-red-500' : 'text-red-400'}`}>{vitalsData.stress !== null ? Math.round(vitalsData.stress) : '--'}%</span>
                     </div>
-                    <Activity className="w-4 h-4 text-red-400 mt-1" />
+                    <Activity className={`w-4 h-4 mt-1 ${completeLight ? 'text-red-500' : 'text-red-400'}`} />
                   </div>
-                  <div className="w-px h-10 bg-white/30 mx-3" />
+                  <div className={`w-px h-10 mx-3 ${completeLight ? 'bg-slate-300' : 'bg-white/30'}`} />
                   <div className="flex flex-col items-start w-[140px]">
                     <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className="font-bold text-blue-400">{vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</span>
-                      <span className="text-gray-300">{t('labels.energy')}</span>
+                      <span className={`font-bold ${completeLight ? 'text-blue-500' : 'text-blue-400'}`}>{vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</span>
+                      <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('labels.energy')}</span>
                     </div>
-                    <Zap className="w-4 h-4 text-blue-400 mt-1" />
+                    <Zap className={`w-4 h-4 mt-1 ${completeLight ? 'text-blue-500' : 'text-blue-400'}`} />
                   </div>
                 </div>
-                
+
                 {/* Row 4: Star Rating */}
                 <div className="pt-2">
-                  <p className="text-sm text-gray-400 mb-2">{t('practices.rate_practice') || 'Rate this practice'}</p>
+                  <p className={`text-sm mb-2 ${completeLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('practices.rate_practice') || 'Rate this practice'}</p>
                   <div className="flex justify-center gap-2">
                     {[1, 2, 3, 4, 5].map((star) => (
                       <button
@@ -1392,12 +1324,12 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                         className="transition-all hover:scale-110"
                         data-testid={`button-adaptive-star-${star}`}
                       >
-                        <Star 
+                        <Star
                           className={`w-8 h-8 sm:w-10 sm:h-10 ${
-                            star <= practiceRating 
-                              ? 'text-yellow-400 fill-yellow-400' 
-                              : 'text-gray-500'
-                          }`} 
+                            star <= practiceRating
+                              ? 'text-yellow-400 fill-yellow-400'
+                              : completeLight ? 'text-slate-300' : 'text-gray-500'
+                          }`}
                         />
                       </button>
                     ))}
@@ -1418,13 +1350,13 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                     setCurrentTrack(1);
                     setTotalTracks(1);
                   }}
-                  className="bg-purple-500/30 hover:bg-purple-500/50 backdrop-blur-md px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border border-purple-400/50"
+                  className={`backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                 >
                   {t('practices.try_again')}
                 </button>
                 <button
                   onClick={handleClose}
-                  className="bg-white/30 hover:bg-white/40 backdrop-blur-md px-8 sm:px-10 py-3 sm:py-4 rounded-full text-lg sm:text-xl font-bold transition-all border border-white/30"
+                  className={`backdrop-blur-xl px-8 sm:px-10 py-3 sm:py-4 rounded-full text-lg sm:text-xl font-bold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                 >
                   {t('practices.back_to_practices')}
                 </button>
@@ -1446,14 +1378,6 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         />
       )}
 
-      <SubscriptionModal
-        isOpen={showPaywall}
-        onClose={() => setShowPaywall(false)}
-        source="practice_gate_adaptive"
-        onSubscribed={async () => {
-          await refreshSubscription();
-        }}
-      />
     </div>
   );
 }

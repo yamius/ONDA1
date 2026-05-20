@@ -1,4 +1,25 @@
 {
+  "eye_scan": {
+    "nav_button": "Una mirada a ti mismo",
+    "title": "Una mirada a ti mismo",
+    "subtitle": "Análisis del estado emocional por la mirada y la expresión facial",
+    "intro": "Mira a la cámara y mantén la calma durante unos {{sec}} segundos. Analiza tu parpadeo, mirada y micromovimientos. Los fotogramas no se guardan.",
+    "start": "Iniciar escaneo",
+    "preparing": "Preparando la cámara…",
+    "hold_still": "Mira a la cámara y mantén la calma",
+    "remaining": "Quedan ~{{sec}} s",
+    "result_title": "Resultado del escaneo",
+    "quality": "Fiabilidad del escaneo: {{value}}%",
+    "recommend": "Práctica recomendada",
+    "disclaimer": "Es una estimación de bienestar, no un diagnóstico médico.",
+    "again": "Escanear de nuevo",
+    "error": "El escaneo falló: {{error}}",
+    "retry": "Reintentar",
+    "back": "Volver a la app",
+    "metric_calm": "Calma del sistema nervioso",
+    "metric_focus": "Concentración",
+    "metric_fatigue": "Fatiga"
+  },
   "notification_primer": {
     "title": "Mantén tu ritmo",
     "body": "Te enviaremos un aviso diario suave para que no pierdas tu racha. Eliges la hora en Ajustes — puedes desactivarlo en cualquier momento.",
@@ -63,7 +84,7 @@
     "watch_activate_text": "Abre la app en tu reloj para un seguimiento preciso de la práctica"
   },
   "permissions": {
-    "description": "Para que ONDA funcione correctamente, permite el acceso al micrófono, frecuencia cardíaca y datos de sueño.",
+    "description": "Para que ONDA funcione correctamente, conecta un reloj y permite el acceso a tu frecuencia cardíaca.",
     "setup_button": "Configurar ahora",
     "modal_title": "Configuración de permisos",
     "modal_description": "Otorga acceso para que la aplicación funcione correctamente",
@@ -73,7 +94,7 @@
     "heart_rate_description": "Para ver tu progreso durante las prácticas, monitoreamos tu frecuencia cardíaca",
     "notifications_title": "Recordatorios de práctica",
     "notifications_description": "Un suave aviso diario y protección de racha. Ambos se activan manualmente en Ajustes — conceder el permiso ahora solo desbloquea los interruptores.",
-    "grant_all": "Otorgar todos los permisos",
+    "grant_all": "Permitir",
     "requesting": "Solicitando permisos...",
     "setup_later": "Configurar después"
   },
@@ -3649,5 +3670,11 @@
       "mind_reading": "Lectura mental",
       "all_or_nothing": "Pensamiento todo o nada"
     }
+  },
+  "theme": {
+    "title": "Apariencia",
+    "system": "Sistema",
+    "light": "Clara",
+    "dark": "Oscura"
   }
 }

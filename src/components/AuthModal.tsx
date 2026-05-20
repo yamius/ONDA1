@@ -6,14 +6,15 @@ import { Capacitor } from '@capacitor/core';
 import { Browser } from '@capacitor/browser';
 import { SignInWithApple, SignInWithAppleOptions, SignInWithAppleResponse } from '@capacitor-community/apple-sign-in';
 import { LegalModal } from './LegalModal';
+import { useTheme } from '../theme/ThemeProvider';
 
 interface AuthModalProps {
   onClose: () => void;
-  isLightTheme: boolean;
 }
 
-export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) => {
+export const AuthModal: React.FC<AuthModalProps> = ({ onClose }) => {
   const { t } = useTranslation();
+  const isLight = useTheme().resolved === 'light';
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -273,19 +274,11 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
 
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 overflow-y-auto">
-      <div
-        className={`max-w-md w-full rounded-2xl border p-6 sm:p-8 relative my-4 ${
-          isLightTheme
-            ? 'bg-white border-gray-300'
-            : 'bg-gradient-to-br from-gray-900 to-black border-purple-500/30'
-        }`}
-      >
+      <div className="max-w-md w-full rounded-2xl border border-border/15 p-6 sm:p-8 relative my-4 bg-bg text-text-primary">
         <button
           onClick={onClose}
           className={`absolute top-4 right-4 p-2 rounded-full transition-all ${
-            isLightTheme
-              ? 'hover:bg-gray-200'
-              : 'hover:bg-white/10'
+            'hover:bg-border/10'
           }`}
         >
           <X className="w-5 h-5" />
@@ -293,9 +286,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
 
         {showConfirmationMessage && (
           <div className={`mb-6 p-4 rounded-xl border ${
-            isLightTheme
-              ? 'bg-green-50 border-green-300 text-green-800'
-              : 'bg-green-900/20 border-green-500/30 text-green-400'
+            'bg-green-500/15 border-green-500/30 text-green-400'
           }`}>
             <p className="text-sm font-medium mb-1">
               {t('auth.confirmation_title')}
@@ -308,19 +299,19 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
 
         <div className="text-center mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl font-light mb-2">ONDA Life</h2>
-          <p className={`text-xs sm:text-sm ${isLightTheme ? 'text-gray-600' : 'text-white/70'}`}>
+          <p className={`text-xs sm:text-sm ${'text-text-secondary'}`}>
             {isLogin ? t('auth.sign_in_subtitle') : t('auth.sign_up_subtitle')}
           </p>
         </div>
 
         <form onSubmit={handleEmailAuth} className="space-y-4 mb-6">
           <div>
-            <label className={`block text-sm mb-2 ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+            <label className={`block text-sm mb-2 ${'text-text-primary/80'}`}>
               Email
             </label>
             <div className="relative">
               <Mail className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 ${
-                isLightTheme ? 'text-gray-400' : 'text-white/40'
+                'text-text-muted'
               }`} />
               <input
                 id="login_email"
@@ -329,9 +320,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 className={`w-full pl-11 pr-4 py-3 rounded-xl border transition-all focus:outline-none focus:ring-2 ${
-                  isLightTheme
-                    ? 'bg-gray-100 border-gray-300 focus:ring-gray-400 text-gray-900'
-                    : 'bg-white/10 border-white/20 focus:ring-purple-500/50 text-white placeholder-white/40'
+                  'bg-surface border border-border/20 focus:ring-accent/50 text-text-primary placeholder-text-muted'
                 }`}
                 placeholder="your@email.com"
               />
@@ -339,12 +328,12 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
           </div>
 
           <div>
-            <label className={`block text-sm mb-2 ${isLightTheme ? 'text-gray-700' : 'text-white/80'}`}>
+            <label className={`block text-sm mb-2 ${'text-text-primary/80'}`}>
               Пароль
             </label>
             <div className="relative">
               <Lock className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 ${
-                isLightTheme ? 'text-gray-400' : 'text-white/40'
+                'text-text-muted'
               }`} />
               <input
                 id="login_password"
@@ -354,9 +343,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
                 required
                 minLength={6}
                 className={`w-full pl-11 pr-4 py-3 rounded-xl border transition-all focus:outline-none focus:ring-2 ${
-                  isLightTheme
-                    ? 'bg-gray-100 border-gray-300 focus:ring-gray-400 text-gray-900'
-                    : 'bg-white/10 border-white/20 focus:ring-purple-500/50 text-white placeholder-white/40'
+                  'bg-surface border border-border/20 focus:ring-accent/50 text-text-primary placeholder-text-muted'
                 }`}
                 placeholder="••••••••"
               />
@@ -365,9 +352,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
 
           {error && (
             <div className={`text-sm p-3 rounded-lg ${
-              isLightTheme
-                ? 'bg-red-100 text-red-700'
-                : 'bg-red-500/20 text-red-400'
+              'bg-red-500/15 text-red-400'
             }`}>
               {error}
             </div>
@@ -377,10 +362,10 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
             id="login_button"
             type="submit"
             disabled={loading}
-            className={`w-full py-3 sm:py-4 px-6 rounded-xl font-medium transition-all text-sm sm:text-base ${
-              isLightTheme
-                ? 'bg-gray-900 hover:bg-gray-800 text-white disabled:bg-gray-400'
-                : 'bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 disabled:opacity-50'
+            className={`w-full py-2.5 sm:py-3 px-6 rounded-xl font-medium transition-all text-sm sm:text-base disabled:opacity-50 ${
+              isLight
+                ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800'
+                : 'bg-accent hover:opacity-90 text-white'
             } ${loading ? 'cursor-not-allowed' : ''}`}
           >
             {loading ? t('auth.loading') : isLogin ? t('auth.sign_in') : t('auth.sign_up')}
@@ -394,9 +379,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
                 setError('');
               }}
               className={`text-sm transition-all ${
-                isLightTheme
-                  ? 'text-gray-600 hover:text-gray-900'
-                  : 'text-white/70 hover:text-white'
+                'text-text-secondary hover:text-text-primary'
               }`}
             >
               {isLogin ? t('auth.no_account') : t('auth.have_account')}
@@ -404,23 +387,19 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
           </div>
         </form>
 
-        <div className={`relative mb-6 ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+        <div className={`relative mb-6 ${'text-text-muted'}`}>
           <div className="absolute inset-0 flex items-center">
-            <div className={`w-full border-t ${isLightTheme ? 'border-gray-300' : 'border-white/20'}`}></div>
+            <div className={`w-full border-t ${'border-border/20'}`}></div>
           </div>
           <div className="relative flex justify-center text-xs">
-            <span className={`px-2 ${isLightTheme ? 'bg-white' : 'bg-gray-900'}`}>{t('auth.or_continue_with')}</span>
+            <span className={`px-2 ${'bg-bg'}`}>{t('auth.or_continue_with')}</span>
           </div>
         </div>
 
         <div className="space-y-4 sm:space-y-6">
           <button
             onClick={handleGoogleSignIn}
-            className={`w-full py-2.5 sm:py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 text-sm sm:text-base ${
-              isLightTheme
-                ? 'bg-gray-200 hover:bg-gray-300 text-gray-900'
-                : 'bg-white/10 hover:bg-white/20 border border-white/20'
-            }`}
+            className="w-full py-2.5 sm:py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 text-sm sm:text-base bg-indigo-500/15 hover:bg-indigo-500/25 text-text-primary border border-indigo-400/40"
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24">
               <path
@@ -446,9 +425,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
           <button
             onClick={handleAppleSignIn}
             className={`w-full py-2.5 sm:py-3 px-6 rounded-xl font-medium transition-all flex items-center justify-center gap-3 text-sm sm:text-base ${
-              isLightTheme
-                ? 'bg-gray-900 hover:bg-gray-800 text-white'
-                : 'bg-white text-gray-900 hover:bg-gray-100'
+              'bg-text-primary text-bg hover:opacity-90'
             }`}
           >
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
@@ -458,13 +435,13 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
           </button>
         </div>
 
-        <p className={`text-xs text-center mt-6 ${isLightTheme ? 'text-gray-500' : 'text-white/50'}`}>
+        <p className={`text-xs text-center mt-6 ${'text-text-muted'}`}>
           {t('auth.terms_agreement')}{' '}
           <button
             type="button"
             onClick={() => setLegalModal('terms')}
             className={`underline hover:no-underline ${
-              isLightTheme ? 'text-gray-700 hover:text-gray-900' : 'text-white/70 hover:text-white'
+              'text-text-secondary hover:text-text-primary'
             }`}
           >
             {t('auth.terms_of_use')}
@@ -474,7 +451,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
             type="button"
             onClick={() => setLegalModal('privacy')}
             className={`underline hover:no-underline ${
-              isLightTheme ? 'text-gray-700 hover:text-gray-900' : 'text-white/70 hover:text-white'
+              'text-text-secondary hover:text-text-primary'
             }`}
           >
             {t('auth.privacy_policy')}
@@ -487,7 +464,6 @@ export const AuthModal: React.FC<AuthModalProps> = ({ onClose, isLightTheme }) =
         <LegalModal
           type={legalModal}
           onClose={() => setLegalModal(null)}
-          isLightTheme={isLightTheme}
         />
       )}
     </div>

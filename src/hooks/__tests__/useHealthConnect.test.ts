@@ -49,6 +49,7 @@ describe('useHealthConnect', () => {
   describe('Connect Flow', () => {
     it('should dispatch Android.requestHealthConnectPermissions on connect', () => {
       const mockAndroid = {
+        isHealthConnectAvailable: vi.fn(() => true),
         requestHealthConnectPermissions: vi.fn(),
       };
       (window as any).Android = mockAndroid;

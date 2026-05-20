@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { useSubscription } from '../hooks/useSubscription';
 import { useAnalytics } from '../hooks/useAnalytics';
+import { useTheme } from '../theme/ThemeProvider';
 import { LegalModal } from './LegalModal';
 import {
   trackTenjinPaywallView,
@@ -53,6 +54,33 @@ const THEMES = {
   },
 } as const;
 
+const THEMES_LIGHT = {
+  yearly: {
+    gradient: 'linear-gradient(180deg, #f5f3ff 0%, #ede9fe 30%, #fdf4ff 60%, #fff7ed 100%)',
+    iconBg: 'bg-amber-100',
+    iconColor: 'text-amber-600',
+    featureHighlight: 'text-amber-600',
+    badgeBg: 'bg-amber-400',
+    badgeText: 'text-amber-900',
+    selectedBorder: 'border-amber-400',
+    selectedBg: 'bg-amber-50',
+    taglineColor: 'text-amber-700',
+    ctaClass: 'bg-gradient-to-r from-amber-300 to-amber-400 text-amber-900 hover:from-amber-400 hover:to-amber-500',
+  },
+  monthly: {
+    gradient: 'linear-gradient(180deg, #eef2ff 0%, #e0f2fe 30%, #eef2ff 60%, #f0f9ff 100%)',
+    iconBg: 'bg-cyan-100',
+    iconColor: 'text-cyan-600',
+    featureHighlight: 'text-cyan-600',
+    badgeBg: 'bg-cyan-400',
+    badgeText: 'text-cyan-900',
+    selectedBorder: 'border-cyan-400',
+    selectedBg: 'bg-cyan-50',
+    taglineColor: 'text-cyan-700',
+    ctaClass: 'bg-gradient-to-r from-cyan-300 to-cyan-400 text-cyan-900 hover:from-cyan-400 hover:to-cyan-500',
+  },
+} as const;
+
 export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscribed, source }: SubscriptionModalProps) {
   const { t } = useTranslation();
   const { track } = useAnalytics();
@@ -61,8 +89,9 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
   const [purchaseError, setPurchaseError] = useState<string | null>(null);
 
   const isIOS = useMemo(() => Capacitor.getPlatform() === 'ios', []);
+  const isLight = useTheme().resolved === 'light';
 
-  const theme = THEMES[selectedPlan];
+  const theme = isLight ? THEMES_LIGHT[selectedPlan] : THEMES[selectedPlan];
 
   const {
     isLoading,
@@ -242,11 +271,11 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
       >
         <button
           onClick={onClose}
-          className="absolute left-4 z-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition-colors w-10 h-10"
+          className={`absolute right-4 z-10 flex items-center justify-center rounded-full ${isLight ? 'bg-slate-100 hover:bg-slate-200' : 'bg-white/10 hover:bg-white/20'} transition-colors w-10 h-10`}
           style={{ top: isIOS ? 'calc(env(safe-area-inset-top) + 2px)' : '12px' }}
           data-testid="button-close-subscription"
         >
-          <X className="w-5 h-5 text-white/80" />
+          <X className={`w-5 h-5 ${isLight ? 'text-slate-500' : 'text-white/80'}`} />
         </button>
 
         <div
@@ -260,8 +289,8 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
         >
           {/* Header */}
           <div>
-            <p className="text-white/70 text-sm mb-1">{t('subscription.ready', 'Your plan is ready.')}</p>
-            <h2 className="text-white text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">
+            <p className={`${isLight ? 'text-slate-500' : 'text-white/70'} text-sm mb-1`}>{t('subscription.ready', 'Your plan is ready.')}</p>
+            <h2 className={`${isLight ? 'text-slate-800' : 'text-white'} text-2xl sm:text-3xl font-bold mb-4 sm:mb-6`}>
               {t('subscription.unlock', 'Unlock ONDA for free')}
             </h2>
 
@@ -284,7 +313,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
                 <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full ${theme.iconBg} flex items-center justify-center flex-shrink-0 transition-colors duration-500`}>
                   <Headphones className={`w-4 h-4 sm:w-5 sm:h-5 ${theme.iconColor} transition-colors duration-500`} />
                 </div>
-                <p className="text-white/80 pt-1 text-sm sm:text-base">
+                <p className={`${isLight ? 'text-slate-600' : 'text-white/80'} pt-1 text-sm sm:text-base`}>
                   {t('subscription.feature2', '100+ audio practices for meditation, relaxation and growth')}
                 </p>
               </div>
@@ -294,7 +323,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
                 <div className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full ${theme.iconBg} flex items-center justify-center flex-shrink-0 transition-colors duration-500`}>
                   <Heart className={`w-4 h-4 sm:w-5 sm:h-5 ${theme.iconColor} transition-colors duration-500`} />
                 </div>
-                <p className="text-white/80 pt-1 text-sm sm:text-base">
+                <p className={`${isLight ? 'text-slate-600' : 'text-white/80'} pt-1 text-sm sm:text-base`}>
                   {t('subscription.feature4', 'Real-time heart rate tracking during practices')}
                 </p>
               </div>
@@ -316,15 +345,15 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
                 className={`w-full text-left rounded-xl p-3 sm:p-4 transition-all duration-300 ${
                   selectedPlan === 'yearly'
                     ? `border-2 ${theme.selectedBorder} ${theme.selectedBg}`
-                    : 'border border-white/20 bg-transparent hover:bg-white/5'
+                    : (isLight ? 'border border-slate-300 bg-transparent hover:bg-slate-100/50' : 'border border-white/20 bg-transparent hover:bg-white/5')
                 } ${(isLoading || isPurchasing) ? 'opacity-50' : ''}`}
                 data-testid="button-plan-yearly"
               >
                 <div className="flex items-center justify-between gap-2 mb-1">
-                  <p className="font-bold text-white text-sm sm:text-base">{t('subscription.yearly', 'Yearly')}</p>
+                  <p className={`font-bold ${isLight ? 'text-slate-800' : 'text-white'} text-sm sm:text-base`}>{t('subscription.yearly', 'Yearly')}</p>
                   <div className="flex items-baseline gap-2">
-                    <span className="text-white font-bold text-sm sm:text-base">{yearlyPrice}</span>
-                    <span className="text-white/60 text-xs">{yearlyMonthlyEquivalent}</span>
+                    <span className={`${isLight ? 'text-slate-800' : 'text-white'} font-bold text-sm sm:text-base`}>{yearlyPrice}</span>
+                    <span className={`${isLight ? 'text-slate-500' : 'text-white/60'} text-xs`}>{yearlyMonthlyEquivalent}</span>
                   </div>
                 </div>
                 {/* Tagline expands when selected */}
@@ -349,13 +378,13 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
                 className={`w-full text-left rounded-xl p-3 sm:p-4 transition-all duration-300 ${
                   selectedPlan === 'monthly'
                     ? `border-2 ${theme.selectedBorder} ${theme.selectedBg}`
-                    : 'border border-white/20 bg-transparent hover:bg-white/5'
+                    : (isLight ? 'border border-slate-300 bg-transparent hover:bg-slate-100/50' : 'border border-white/20 bg-transparent hover:bg-white/5')
                 } ${(isLoading || isPurchasing) ? 'opacity-50' : ''}`}
                 data-testid="button-plan-monthly"
               >
                 <div className="flex items-center justify-between gap-2 mb-1">
-                  <p className="font-bold text-white text-sm sm:text-base">{t('subscription.monthly', 'Monthly')}</p>
-                  <p className="text-white text-sm sm:text-base">{monthlyPrice}/mo.</p>
+                  <p className={`font-bold ${isLight ? 'text-slate-800' : 'text-white'} text-sm sm:text-base`}>{t('subscription.monthly', 'Monthly')}</p>
+                  <p className={`${isLight ? 'text-slate-800' : 'text-white'} text-sm sm:text-base`}>{monthlyPrice}/mo.</p>
                 </div>
                 {/* Tagline expands when selected */}
                 <div className={`overflow-hidden transition-all duration-300 ${selectedPlan === 'monthly' ? 'max-h-8 opacity-100 mt-1' : 'max-h-0 opacity-0'}`}>
@@ -368,7 +397,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
 
             {/* Error */}
             {(purchaseError || error) && (
-              <div className="mb-4 p-3 rounded-lg bg-red-500/20 text-red-300 text-sm text-center">
+              <div className={`mb-4 p-3 rounded-lg ${isLight ? 'bg-red-100 text-red-700' : 'bg-red-500/20 text-red-300'} text-sm text-center`}>
                 {purchaseError || error}
               </div>
             )}
@@ -394,7 +423,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
             </button>
 
             {/* Disclaimer */}
-            <p className="text-white/50 text-xs text-center mt-2 pb-1 leading-relaxed">
+            <p className={`${isLight ? 'text-slate-400' : 'text-white/50'} text-xs text-center mt-2 pb-1 leading-relaxed`}>
               {selectedPlan === 'yearly'
                 ? t('subscription.disclaimer_yearly', 'Totally free for 14 days, then 5.42 USD/month, billed annually at 64.99 USD/year. Cancel anytime.')
                 : t('subscription.disclaimer_monthly', 'Totally free for 7 days, then 14.99 USD/month. Cancel anytime.')}
@@ -404,7 +433,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
             <button
               onClick={handleRestore}
               disabled={isLoading || isPurchasing || isRestoring}
-              className="w-full mt-3 text-white/60 hover:text-white/80 text-xs sm:text-sm flex items-center justify-center gap-2 py-2 transition-colors"
+              className={`w-full mt-3 ${isLight ? 'text-slate-500 hover:text-slate-600' : 'text-white/60 hover:text-white/80'} text-xs sm:text-sm flex items-center justify-center gap-2 py-2 transition-colors`}
             >
               <RotateCcw className="w-3 h-3 sm:w-4 sm:h-4" />
               {isRestoring
@@ -413,17 +442,17 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
             </button>
 
             {/* Legal Links */}
-            <div className="flex items-center justify-center gap-3 mt-4 text-white/40 text-xs">
+            <div className={`flex items-center justify-center gap-3 mt-4 ${isLight ? 'text-slate-400' : 'text-white/40'} text-xs`}>
               <button
                 onClick={() => setLegalModal('terms')}
-                className="hover:text-white/60 underline transition-colors"
+                className={`${isLight ? 'hover:text-slate-600' : 'hover:text-white/60'} underline transition-colors`}
               >
                 {t('auth.terms_of_use', 'Terms of Use')}
               </button>
               <span>|</span>
               <button
                 onClick={() => setLegalModal('privacy')}
-                className="hover:text-white/60 underline transition-colors"
+                className={`${isLight ? 'hover:text-slate-600' : 'hover:text-white/60'} underline transition-colors`}
               >
                 {t('auth.privacy_policy', 'Privacy Policy')}
               </button>
@@ -436,7 +465,6 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
         <LegalModal
           type={legalModal}
           onClose={() => setLegalModal(null)}
-          isLightTheme={false}
         />
       )}
 

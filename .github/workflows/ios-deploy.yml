@@ -41,10 +41,10 @@ jobs:
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_PROJECT: capacitor
           # Unique release per CI build so we can tell versions apart in Sentry.
-          SENTRY_RELEASE: onda-life@1.0.1+${{ github.run_number }}
+          SENTRY_RELEASE: onda-life@1.7.1+${{ github.run_number }}
           # Same release string gets baked into the JS bundle so runtime
           # events tag themselves with a release that has source maps.
-          VITE_SENTRY_RELEASE: onda-life@1.0.1+${{ github.run_number }}
+          VITE_SENTRY_RELEASE: onda-life@1.7.1+${{ github.run_number }}
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1

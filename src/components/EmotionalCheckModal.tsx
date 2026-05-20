@@ -5,6 +5,7 @@ import { Capacitor } from '@capacitor/core';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 import { LizaChatModal } from './LizaChatModal';
 import { trackTenjinEmotionalCheck } from '../lib/tenjin';
+import { useTheme } from '../theme/ThemeProvider';
 
 interface EmotionalCheckModalProps {
   isOpen: boolean;
@@ -26,6 +27,7 @@ interface EmotionalResult {
 
 export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalCheckModalProps) {
   const { t } = useTranslation();
+  const isLight = useTheme().resolved === 'light';
   const [recordingState, setRecordingState] = useState<RecordingState>('idle');
   const [recordingTime, setRecordingTime] = useState(0);
   const [selectedPractice, setSelectedPractice] = useState<string | null>(null);
@@ -212,6 +214,10 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       let response: Response;
       let lastError: Error | null = null;
       const maxRetries = 2;
+      // Ответ ждём не дольше 5 с — иначе сразу в fallback (случайная эмоция),
+      // чтобы запись не «думала» по 15 секунд.
+      const controller = new AbortController();
+      const analysisTimeout = setTimeout(() => controller.abort(), 5000);
       
       for (let attempt = 1; attempt <= maxRetries; attempt++) {
         try {
@@ -219,6 +225,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
           
           response = await fetch(apiUrl, {
             method: 'POST',
+            signal: controller.signal,
             headers: {
               'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
               'Content-Type': 'application/json',
@@ -234,12 +241,15 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
         } catch (e) {
           lastError = e as Error;
           console.warn(`[EmotionalCheck] ⚠️ Attempt ${attempt} failed:`, lastError.message);
+          if (controller.signal.aborted) break; // 5 с истекли — уходим в fallback
           if (attempt < maxRetries) {
             await new Promise(r => setTimeout(r, 1000)); // Wait 1s before retry
           }
         }
       }
       
+      clearTimeout(analysisTimeout);
+
       if (lastError) {
         throw lastError;
       }
@@ -375,31 +385,31 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       className={`fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 p-4 overflow-y-auto ${selectedPractice ? 'hidden' : ''}`}
       style={{ paddingTop: 'max(20px, env(safe-area-inset-top))', paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}
     >
-      <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl max-w-lg w-full shadow-2xl border border-white/10 overflow-hidden max-h-full flex flex-col my-auto">
-        <div className="relative bg-gradient-to-r from-indigo-600 to-purple-600 p-4 flex-shrink-0">
+      <div className="bg-gradient-to-br from-bg to-surface text-text-primary rounded-3xl max-w-lg w-full shadow-2xl border border-border/10 overflow-hidden max-h-full flex flex-col my-auto">
+        <div className={`relative p-4 flex-shrink-0 ${isLight ? 'bg-gradient-to-r from-indigo-100 to-violet-100' : 'bg-gradient-to-r from-accent to-accent-2'}`}>
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors"
+            className={`absolute top-4 right-4 transition-colors ${isLight ? 'text-slate-500 hover:text-slate-800' : 'text-white/80 hover:text-white'}`}
           >
             <X className="w-6 h-6" />
           </button>
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-0.5 text-center">{t('emotional_check.title')}</h2>
-          <p className="text-indigo-100 text-sm text-center">{t('emotional_check.subtitle')}</p>
+          <h2 className={`text-2xl sm:text-3xl font-bold mb-0.5 text-center ${isLight ? 'text-slate-800' : 'text-white'}`}>{t('emotional_check.title')}</h2>
+          <p className={`text-sm text-center ${isLight ? 'text-slate-500' : 'text-indigo-100'}`}>{t('emotional_check.subtitle')}</p>
         </div>
 
         <div className="p-4 space-y-4 overflow-y-auto flex-1" style={{ paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}>
           {recordingState === 'idle' && (
             <div className="text-center space-y-4">
-              <div className="bg-gradient-to-br from-indigo-500/20 to-purple-500/20 rounded-2xl p-6 border border-indigo-500/30">
-                <div className="w-20 h-20 mx-auto mb-3 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
-                  <Mic className="w-10 h-10 text-white" />
+              <div className={`rounded-2xl p-6 border ${isLight ? 'bg-white/60 border-violet-200' : 'bg-gradient-to-br from-accent/20 to-accent-2/20 border-accent/30'}`}>
+                <div className={`w-20 h-20 mx-auto mb-3 rounded-full flex items-center justify-center ${isLight ? 'bg-gradient-to-br from-indigo-200 to-violet-200' : 'bg-gradient-to-br from-accent to-accent-2'}`}>
+                  <Mic className={`w-10 h-10 ${isLight ? 'text-indigo-600' : 'text-white'}`} />
                 </div>
-                <p className="text-white/80 mb-2 text-base">{t('emotional_check.instruction')}</p>
-                <p className="text-white/60 text-sm">{t('emotional_check.instruction_detail')}</p>
+                <p className="text-text-primary/80 mb-2 text-base">{t('emotional_check.instruction')}</p>
+                <p className="text-text-muted text-sm">{t('emotional_check.instruction_detail')}</p>
               </div>
               <button
                 onClick={startRecording}
-                className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-base"
+                className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-base ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white'}`}
               >
                 {t('emotional_check.start_recording')}
               </button>
@@ -416,13 +426,13 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                   <div className="w-32 h-32 border-4 border-red-500/30 rounded-full animate-ping" />
                 </div>
               </div>
-              <div className="text-2xl font-bold text-white tabular-nums">
+              <div className="text-2xl font-bold text-text-primary tabular-nums">
                 {formatTime(recordingTime)}
               </div>
-              <p className="text-white/70 text-sm">{t('emotional_check.recording_in_progress')}</p>
+              <p className="text-text-secondary text-sm">{t('emotional_check.recording_in_progress')}</p>
               <button
                 onClick={stopRecording}
-                className="w-full bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
+                className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base ${isLight ? 'bg-rose-100 hover:bg-rose-200 text-rose-700 border border-rose-300' : 'bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white'}`}
               >
                 <Square className="w-5 h-5" />
                 {t('emotional_check.stop_recording')}
@@ -434,15 +444,15 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
             <div className="space-y-4">
               <audio ref={audioRef} src={audioURL} onEnded={() => setIsPlaying(false)} className="hidden" />
 
-              <div className="bg-slate-800/50 rounded-xl p-4 border border-white/10">
+              <div className="bg-surface-2 rounded-xl p-4 border border-border/10">
                 <div className="flex items-center justify-between mb-3 gap-2">
-                  <span className="text-white/70 text-sm">{t('emotional_check.recording_ready')}</span>
-                  <span className="text-white font-semibold text-base">{formatTime(recordingTime)}</span>
+                  <span className="text-text-secondary text-sm">{t('emotional_check.recording_ready')}</span>
+                  <span className="text-text-primary font-semibold text-base">{formatTime(recordingTime)}</span>
                 </div>
 
                 <button
                   onClick={playAudio}
-                  className="w-full bg-slate-700 hover:bg-slate-600 text-white py-3 rounded-lg transition-all flex items-center justify-center gap-2 text-base"
+                  className="w-full bg-surface hover:opacity-90 text-text-primary py-3 rounded-lg transition-all flex items-center justify-center gap-2 text-base"
                 >
                   {isPlaying ? (
                     <>
@@ -461,14 +471,14 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
               <div className="flex gap-3">
                 <button
                   onClick={reset}
-                  className="flex-1 bg-slate-700 hover:bg-slate-600 text-white py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2 text-sm"
+                  className="flex-1 bg-surface-2 hover:opacity-90 text-text-primary py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2 text-sm"
                 >
                   <RefreshCw className="w-5 h-5" />
                   {t('emotional_check.record_again')}
                 </button>
                 <button
                   onClick={analyzeVoice}
-                  className="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold py-3 px-4 rounded-xl transition-all text-base"
+                  className={`flex-1 font-semibold py-3 px-4 rounded-xl transition-all text-base ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white'}`}
                 >
                   {t('emotional_check.analyze')}
                 </button>
@@ -479,35 +489,35 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
           {recordingState === 'analyzing' && (
             <div className="text-center space-y-4 py-6">
               <div className="relative w-24 h-24 mx-auto">
-                <div className="absolute inset-0 border-4 border-indigo-500/30 rounded-full" />
-                <div className="absolute inset-0 border-4 border-t-indigo-500 rounded-full animate-spin" />
+                <div className="absolute inset-0 border-4 border-accent/30 rounded-full" />
+                <div className="absolute inset-0 border-4 border-t-accent rounded-full animate-spin" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Volume2 className="w-10 h-10 text-indigo-400 animate-pulse" />
+                  <Volume2 className="w-10 h-10 text-accent animate-pulse" />
                 </div>
               </div>
-              <p className="text-white font-semibold text-base">{t('emotional_check.analyzing')}</p>
-              <p className="text-white/60 text-sm">{t('emotional_check.analyzing_detail')}</p>
+              <p className="text-text-primary font-semibold text-base">{t('emotional_check.analyzing')}</p>
+              <p className="text-text-muted text-sm">{t('emotional_check.analyzing_detail')}</p>
             </div>
           )}
 
           {recordingState === 'result' && emotionalResult && (
             <div className="space-y-3">
-              <div className={`bg-gradient-to-br ${getEmotionColor(emotionalResult.primaryEmotion)} rounded-2xl p-5 text-white`}>
+              <div className={`rounded-2xl p-5 ${isLight ? 'bg-gradient-to-br from-indigo-100 to-violet-100 text-slate-700' : `bg-gradient-to-br ${getEmotionColor(emotionalResult.primaryEmotion)} text-white`}`}>
                 <div className="text-center mb-3">
                   <div className="text-5xl mb-2">🎭</div>
                   <h3 className="text-2xl font-bold mb-1">{t(emotionalResult.primaryEmotion)}</h3>
-                  <p className="text-white/90 text-sm">{t('emotional_check.detected_state')}</p>
+                  <p className={`text-sm ${isLight ? 'text-slate-500' : 'text-white/90'}`}>{t('emotional_check.detected_state')}</p>
                 </div>
 
-                <div className="space-y-3 bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                <div className={`space-y-3 backdrop-blur-sm rounded-xl p-4 ${isLight ? 'bg-white/60' : 'bg-white/10'}`}>
                   <div>
                     <div className="flex justify-between text-sm mb-1 gap-2">
                       <span>{t('emotional_check.confidence')}</span>
                       <span className="font-semibold">{Math.round(emotionalResult.confidence * 100)}%</span>
                     </div>
-                    <div className="bg-white/20 rounded-full h-2.5 overflow-hidden">
+                    <div className={`rounded-full h-2.5 overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-white/20'}`}>
                       <div
-                        className="bg-white h-full rounded-full transition-all duration-1000"
+                        className={`h-full rounded-full transition-all duration-1000 ${isLight ? 'bg-indigo-500' : 'bg-white'}`}
                         style={{ width: `${emotionalResult.confidence * 100}%` }}
                       />
                     </div>
@@ -518,9 +528,9 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                       <span>{t('emotional_check.energy_level')}</span>
                       <span className="font-semibold">{Math.round(emotionalResult.energyLevel * 100)}%</span>
                     </div>
-                    <div className="bg-white/20 rounded-full h-2.5 overflow-hidden">
+                    <div className={`rounded-full h-2.5 overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-white/20'}`}>
                       <div
-                        className="bg-yellow-300 h-full rounded-full transition-all duration-1000"
+                        className={`h-full rounded-full transition-all duration-1000 ${isLight ? 'bg-amber-400' : 'bg-yellow-300'}`}
                         style={{ width: `${emotionalResult.energyLevel * 100}%` }}
                       />
                     </div>
@@ -528,18 +538,18 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                 </div>
               </div>
 
-              <div className="bg-slate-800/50 rounded-xl p-4 border border-white/10">
-                <h4 className="text-white font-semibold mb-2 flex items-center gap-2 text-base">
+              <div className="bg-surface-2 rounded-xl p-4 border border-border/10">
+                <h4 className="text-text-primary font-semibold mb-2 flex items-center gap-2 text-base">
                   <span>💡</span>
                   {t('emotional_check.recommendation_title')}
                 </h4>
-                <p className="text-white/80 text-sm leading-relaxed">
+                <p className="text-text-primary/80 text-sm leading-relaxed">
                   {t(emotionalResult.recommendation)}
                 </p>
               </div>
 
               <div className="space-y-2">
-                <h5 className="text-white/70 text-sm font-semibold text-center">
+                <h5 className="text-text-secondary text-sm font-semibold text-center">
                   {t('emotional_check.adaptive_practices')}
                 </h5>
                 <div className="grid grid-cols-3 gap-2">
@@ -547,7 +557,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                     <button
                       key={index}
                       onClick={() => setSelectedPractice(practice.id)}
-                      className="bg-slate-800/50 hover:bg-slate-700/50 text-white text-sm py-2.5 px-3 rounded-lg transition-all border border-white/10 hover:border-white/20 hover:scale-105"
+                      className={`text-sm py-2.5 px-3 rounded-lg transition-all border hover:scale-105 ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-surface-2/50 hover:bg-surface-2/80 text-text-primary border-border/10 hover:border-border/20'}`}
                       title={t(`emotional_check.${practice.label}`)}
                     >
                       {t(`emotional_check.${practice.label}`)}
@@ -558,7 +568,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
               <button
                 onClick={() => setIsLizaChatOpen(true)}
-                className="w-full bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
+                className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base ${isLight ? 'bg-sky-100 hover:bg-sky-200 text-sky-700 border border-sky-200' : 'bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white'}`}
                 data-testid="button-start-liza-chat"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -567,7 +577,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
               <button
                 onClick={reset}
-                className="w-full bg-gradient-to-r from-slate-700 to-slate-600 hover:from-slate-600 hover:to-slate-500 text-white font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
+                className="w-full bg-surface-2 hover:opacity-90 text-text-primary font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
               >
                 <RefreshCw className="w-5 h-5" />
                 {t('emotional_check.check_again')}
