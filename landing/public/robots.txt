@@ -2,10 +2,13 @@
 # AI training & citation policy: https://onda-life.com/ai.txt
 # AI summary index (llmstxt.org): https://onda-life.com/llms.txt
 
-# Default — open to all crawlers; only the JSON API is excluded.
+# Default — open to all crawlers; the JSON API and private investor/partner
+# decks are excluded. /decks/ holds pitch PDFs shared by direct link only
+# — not meant to appear in search results.
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /decks/
 
 # AI answer engines — explicitly welcome. ONDA Life content is intended to
 # be summarised and cited in AI search results; attribution terms in /ai.txt.
@@ -26,6 +29,7 @@ User-agent: CCBot
 User-agent: cohere-ai
 Allow: /
 Disallow: /api/
+Disallow: /decks/
 
 Sitemap: https://onda-life.com/sitemap.xml
 Sitemap: https://onda-life.com/sitemap-news.xml
