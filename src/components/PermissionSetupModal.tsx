@@ -110,11 +110,11 @@ export function PermissionSetupModal({
               <button
                 onClick={handleRequestAll}
                 disabled={isRequesting}
-                className="w-full bg-green-500/20 hover:bg-green-500/30 disabled:bg-green-500/10 text-green-400 disabled:text-green-400/50 font-medium py-3 px-6 rounded-xl transition-all disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full bg-indigo-500/15 hover:bg-indigo-500/25 disabled:bg-indigo-500/5 text-text-primary disabled:opacity-50 font-medium py-3 px-6 rounded-xl transition-all disabled:cursor-not-allowed flex items-center justify-center gap-2 border border-indigo-400/40"
               >
                 {isRequesting ? (
                   <>
-                    <div className="w-4 h-4 border-2 border-green-400/30 border-t-green-400 rounded-full animate-spin" />
+                    <div className="w-4 h-4 border-2 border-indigo-400/30 border-t-indigo-500 rounded-full animate-spin" />
                     {t('permissions.requesting')}
                   </>
                 ) : (
@@ -128,7 +128,7 @@ export function PermissionSetupModal({
               {/* Setup later button */}
               <button
                 onClick={onClose}
-                className="w-full bg-surface-2 hover:opacity-80 text-text-secondary hover:text-text-primary font-medium py-3 px-6 rounded-xl transition-all"
+                className="w-full bg-indigo-500/15 hover:bg-indigo-500/25 text-text-primary font-medium py-3 px-6 rounded-xl transition-all border border-indigo-400/40"
               >
                 {t('permissions.setup_later')}
               </button>
