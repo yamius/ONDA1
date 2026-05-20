@@ -175,6 +175,7 @@ function ResultView({
   onPick: (id: string) => void;
 }) {
   const { t } = useTranslation();
+  const isLight = useTheme().resolved === 'light';
   const practices = recommendedPractices(result.scores);
 
   return (
