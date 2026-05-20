@@ -95,7 +95,7 @@
     "watch_activate_text": "Open the app on your watch for accurate practice tracking"
   },
   "permissions": {
-    "description": "For ONDA to work properly, please grant access to your heart rate data.",
+    "description": "For ONDA to work properly, connect a watch and grant access to your heart rate data.",
     "setup_button": "Set Up Now",
     "modal_title": "Permission Setup",
     "modal_description": "Grant access for the app to function properly",

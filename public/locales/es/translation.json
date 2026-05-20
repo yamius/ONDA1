@@ -84,7 +84,7 @@
     "watch_activate_text": "Abre la app en tu reloj para un seguimiento preciso de la práctica"
   },
   "permissions": {
-    "description": "Para que ONDA funcione correctamente, permite el acceso a tu frecuencia cardíaca.",
+    "description": "Para que ONDA funcione correctamente, conecta un reloj y permite el acceso a tu frecuencia cardíaca.",
     "setup_button": "Configurar ahora",
     "modal_title": "Configuración de permisos",
     "modal_description": "Otorga acceso para que la aplicación funcione correctamente",
