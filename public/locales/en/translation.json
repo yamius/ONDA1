@@ -105,7 +105,7 @@
     "heart_rate_description": "We monitor your heart rate to track your progress during practices",
     "notifications_title": "Practice reminders",
     "notifications_description": "Gentle daily nudge and streak protection. Both are opt-in inside Settings — granting permission now just unlocks the toggles.",
-    "grant_all": "Grant All Permissions",
+    "grant_all": "Allow",
     "requesting": "Requesting permissions...",
     "setup_later": "Set Up Later"
   },
