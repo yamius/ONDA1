@@ -485,6 +485,7 @@ app.use('/assets', (req, res) => {
 const DECK_SHORT_LINKS = {
   mundi: '/decks/onda-pitch-mundi-x9k4.pdf',
   info: '/decks/onda-eurostar-framework-r3p8.pdf',
+  radboud: '/decks/onda-radboud-donders-m4t7.pdf',
 }
 app.get('/p/:slug', (req, res, next) => {
   const target = DECK_SHORT_LINKS[req.params.slug]
