@@ -207,19 +207,6 @@ const OndaLevel1 = () => {
     }
   }, [watchHeartRate.heartRate]);
   
-  // Notification Primer — показываем ПОСЛЕ 2 завершённых практик, не
-  // на старте и не в онбординге. Логика: пуш о напоминаниях имеет смысл,
-  // когда юзер уже втянулся; ранний prompt = низкий opt-in + ощущение
-  // спама. v1.7.3: онбординг и ATT-prompt убраны, primer триггерится
-  // здесь по practiceHistory.length.
-  useEffect(() => {
-    if (!Capacitor.isNativePlatform()) return;
-    if (practiceHistory.length < 2) return;
-    if (localStorage.getItem('onda_notification_primer_shown') === 'true') return;
-    setShowNotificationPrimer(true);
-    localStorage.setItem('onda_notification_primer_shown', 'true');
-  }, [practiceHistory.length]);
-
   // Автозапуск HR мониторинга на втором и последующих запусках (когда разрешения уже есть)
   useEffect(() => {
     const autoStartMonitoring = async () => {
@@ -272,6 +259,21 @@ const OndaLevel1 = () => {
   const [practiceOpenedAtMs, setPracticeOpenedAtMs] = useState<number | null>(null);
   const [canExitPractice, setCanExitPractice] = useState(true);
   const [practiceHistory, setPracticeHistory] = useState([]);
+
+  // Notification Primer — показываем ПОСЛЕ 2 завершённых практик, не
+  // на старте и не в онбординге. Логика: пуш о напоминаниях имеет смысл,
+  // когда юзер уже втянулся; ранний prompt = низкий opt-in + ощущение
+  // спама. v1.7.3: онбординг и ATT-prompt убраны, primer триггерится
+  // по practiceHistory.length.
+  // ВАЖНО: этот useEffect должен идти ПОСЛЕ объявления practiceHistory —
+  // иначе TDZ (`Cannot access 'practiceHistory' before initialization`).
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+    if (practiceHistory.length < 2) return;
+    if (localStorage.getItem('onda_notification_primer_shown') === 'true') return;
+    setShowNotificationPrimer(true);
+    localStorage.setItem('onda_notification_primer_shown', 'true');
+  }, [practiceHistory.length]);
   const [activePractice, setActivePractice] = useState(null);
   const [practiceState, setPracticeState] = useState('intro');
   const [practiceTime, setPracticeTime] = useState(0);
