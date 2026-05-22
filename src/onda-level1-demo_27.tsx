@@ -28,7 +28,9 @@ import { useWatchHeartRate } from './hooks/useWatchHeartRate';
 import { usePermissions } from './hooks/usePermissions';
 import { Capacitor } from '@capacitor/core';
 import { App as CapApp } from '@capacitor/app';
-import { AppTrackingTransparency } from 'capacitor-plugin-app-tracking-transparency';
+// AppTrackingTransparency: импорт удалён в v1.7.3 — ATT-prompt отключён
+// целиком. Если когда-нибудь захотим IDFA, возвращать через value-moment
+// prompt после первой завершённой практики / пейволла, не на cold-start.
 import OndaTenjin from './plugins/ondaTenjin';
 import {
   initOneSignal,
@@ -129,29 +131,19 @@ const OndaLevel1 = () => {
     // Airbridge App Open (cold start + resume). Safe no-op on web / before SDK attaches.
     initTenjinAppOpenTracking();
 
-    // 2nd+ cold-start Tenjin connect.
+    // Tenjin connect на каждом cold-start.
     //
-    // ATT has been moved into the onboarding flow (screen 1 → 2 transition).
-    // On the very first install the onboarding fires both the ATT prompt
-    // AND OndaTenjin.connect() back-to-back. But on every subsequent
-    // launch the onboarding doesn't show — so we'd never call connect()
-    // again. Tenjin needs connect() on each session for it to register
-    // the open and attribute it properly.
-    //
-    // Strategy: read ATT status (no prompt — getStatus only). If it's
-    // 'authorized', 'denied', or 'restricted' (i.e. user has answered
-    // already), fire OndaTenjin.connect() — the plugin is idempotent so
-    // doubled calls within the same process are no-ops. If status is
-    // 'notDetermined', stay silent — the onboarding flow will own it.
+    // ATT-prompt в v1.7.3 убран целиком: на indie-масштабе opt-in 20–30%
+    // не окупает install-friction. Атрибуция идёт по SKAdNetwork (postbacks
+    // приходят независимо от ATT) + AdServices для Apple Search Ads. Tenjin
+    // SDK сам определит ATT.notDetermined и пойдёт по SKAN-only пути.
+    // Если когда-нибудь решим вернуть IDFA — делать это надо value-moment
+    // prompt'ом (после 1-й завершённой практики или пейволла), не на холодном
+    // старте. Подсказка: см. историю handleOnboardingNext до v1.7.3.
     if (Capacitor.isNativePlatform()) {
-      AppTrackingTransparency.getStatus()
-        .then(({ status }) => {
-          if (status !== 'notDetermined') {
-            return OndaTenjin.connect();
-          }
-          return undefined;
-        })
-        .catch((e) => console.warn('[boot] Tenjin auto-connect skipped', e));
+      OndaTenjin.connect().catch((e) =>
+        console.warn('[boot] Tenjin connect failed', e),
+      );
 
       // OneSignal SDK bootstrap. Safe to call on every cold start —
       // init is internally idempotent. We init regardless of ATT so the
@@ -215,44 +207,18 @@ const OndaLevel1 = () => {
     }
   }, [watchHeartRate.heartRate]);
   
-  // Auto-open Notification Primer — ONLY for legacy users who completed
-  // an older onboarding that didn't ask for notifications. Fresh installs
-  // go through the new 3-screen intro where screen 2 → Continue triggers
-  // the iOS notifications prompt natively (no extra modal needed).
-  //
-  // Gating:
-  //   1. Native only (no point on web).
-  //   2. Onboarding ALREADY completed in the past (legacy install).
-  //   3. Primer not shown yet (avoid repeat).
-  //
-  // Without #2 the primer would auto-fire on ATT dismissal during the
-  // very first onboarding session — landing on top of screen 2 or 3 —
-  // which is what regressed in 1.5.0 cold start.
+  // Notification Primer — показываем ПОСЛЕ 2 завершённых практик, не
+  // на старте и не в онбординге. Логика: пуш о напоминаниях имеет смысл,
+  // когда юзер уже втянулся; ранний prompt = низкий opt-in + ощущение
+  // спама. v1.7.3: онбординг и ATT-prompt убраны, primer триггерится
+  // здесь по practiceHistory.length.
   useEffect(() => {
     if (!Capacitor.isNativePlatform()) return;
-    if (localStorage.getItem('onda_onboarding_completed') !== 'true') return;
+    if (practiceHistory.length < 2) return;
     if (localStorage.getItem('onda_notification_primer_shown') === 'true') return;
-
-    let opened = false;
-    const open = () => {
-      if (opened) return;
-      opened = true;
-      setShowNotificationPrimer(true);
-      localStorage.setItem('onda_notification_primer_shown', 'true');
-    };
-
-    let appSub: { remove: () => void } | null = null;
-    CapApp.addListener('appStateChange', ({ isActive }) => {
-      if (isActive) open();
-    }).then((h) => { appSub = h; }).catch(() => undefined);
-
-    const fallback = setTimeout(open, 2500);
-
-    return () => {
-      clearTimeout(fallback);
-      appSub?.remove();
-    };
-  }, []);
+    setShowNotificationPrimer(true);
+    localStorage.setItem('onda_notification_primer_shown', 'true');
+  }, [practiceHistory.length]);
 
   // Автозапуск HR мониторинга на втором и последующих запусках (когда разрешения уже есть)
   useEffect(() => {
@@ -418,12 +384,10 @@ const OndaLevel1 = () => {
   const [infoModalMessage, setInfoModalMessage] = useState('');
   const [showMenu, setShowMenu] = useState(false);
   const [activeView, setActiveView] = useState<'main' | 'addon'>('main');
-  const [showOnboarding, setShowOnboarding] = useState(() => {
-    if (typeof localStorage !== 'undefined') {
-      return !localStorage.getItem('onda_onboarding_completed');
-    }
-    return true;
-  });
+  // v1.7.3: онбординг временно скрыт — юзер сразу попадает в хаб.
+  // Меню «Intro» по-прежнему может его открыть вручную (для QA / legacy).
+  // Авто-показ на холодном старте отключён.
+  const [showOnboarding, setShowOnboarding] = useState(false);
   const [onboardingScreen, setOnboardingScreen] = useState(1);
   // Timestamp of the first render while onboarding is visible — used to
   // attach `duration_seconds` to the Airbridge `Complete Onboarding` event.
@@ -4374,62 +4338,9 @@ const OndaLevel1 = () => {
 
   if (showOnboarding) {
     const handleOnboardingNext = async () => {
-      if (onboardingScreen === 1) {
-        // Screen 1 → 2 is where ATT lives in the new flow. The native side
-        // (AppDelegate) no longer auto-fires it. We request → wait for any
-        // outcome → fire Tenjin connect() with whatever IDFA state we now
-        // have. Errors are non-fatal: on iOS < 14 or if the plugin fails
-        // for whatever reason, we still call connect() so attribution
-        // doesn't get stuck waiting for an answer that never comes.
-        if (Capacitor.isNativePlatform()) {
-          try {
-            const result = await AppTrackingTransparency.requestPermission();
-            console.log('[onboarding] ATT result:', result.status);
-            // A/B telemetry — which rationale copy the user saw and how
-            // they answered. Query later: opt-in rate per variant.
-            track('att_prompt_result', {
-              variant: attCopyVariantRef.current,
-              result: result.status,
-            });
-            // MMP side: distinct att_authorized / att_denied events so
-            // AppLovin Axon can optimize toward the IDFA opt-in cohort.
-            trackTenjinAttResult(result.status);
-          } catch (e) {
-            console.warn('[onboarding] ATT prompt error', e);
-          }
-          try {
-            await OndaTenjin.connect();
-          } catch (e) {
-            console.warn('[onboarding] Tenjin connect failed', e);
-          }
-        }
-      }
-
-      if (onboardingScreen === 2) {
-        // Screen 2 → 3 transition is the moment we ask for the iOS
-        // notifications permission. We've spent screen 2's text bridge
-        // explaining why; now the system prompt lands on top of our
-        // branded onboarding background.
-        let notifResult: string = 'unknown';
-        try {
-          notifResult = await requestNotificationPermission();
-        } catch (e) {
-          console.warn('[onboarding] notifications permission error', e);
-        }
-        track('notification_prompt_result', { result: notifResult });
-        // Tell the OneSignal SDK to register the subscription. iOS won't
-        // re-prompt (permission is already decided one way or another),
-        // but without this call OneSignal stays in 'unsubscribed' state
-        // and the dashboard can't target the device.
-        try {
-          registerOneSignalSubscription();
-        } catch (e) {
-          console.warn('[onboarding] OneSignal register failed', e);
-        }
-        // Snapshot so the standalone NotificationPrimerModal auto-open
-        // never fires on top of this — onboarding owns the prompt now.
-        localStorage.setItem('onda_notification_primer_shown', 'true');
-      }
+      // v1.7.3: онбординг теперь — чистые info-экраны. ATT-prompt убран
+      // (SKAN-only атрибуция через Tenjin). Notifications-prompt отложен
+      // до Notification Primer'а после 2 завершённых практик.
 
       if (onboardingScreen < 3) {
         setOnboardingScreen(onboardingScreen + 1);
