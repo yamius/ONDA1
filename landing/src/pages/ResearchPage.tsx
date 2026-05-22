@@ -18,7 +18,11 @@ import { useLocation } from 'react-router-dom'
 const SITE_URL = 'https://onda-life.com'
 const RESEARCH_URL = `${SITE_URL}/research`
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
-const RESEARCH_EMAIL = 'research@onda-life.com'
+// Until a dedicated research@ inbox is provisioned, partnership enquiries
+// land in the main inbox alongside other comms. Swap to research@ when
+// the alias is live.
+const RESEARCH_EMAIL = 'info@onda-life.com'
+const TECHNICAL_DOCS_URL = 'https://onda-life.com/p/info'
 
 function setMeta(name: string, content: string, isProperty = false) {
   const attr = isProperty ? 'property' : 'name'
@@ -594,6 +598,30 @@ export function ResearchPage() {
             For grant-application work-packages (Model C), please attach
             the call reference, deadline and the work-package you want
             ONDA to lead.
+          </p>
+        </div>
+
+        {/* Documentation pointer — the engineering / clinical-research
+            documentation deck (PDF + supplementary materials) lives at
+            /p/info on the main site. Surfaced separately from the
+            mailto so reviewers landing here can grab the full doc
+            without needing to email first. */}
+        <div className="mt-6 rounded-lg border border-white/15 bg-white/[0.02] p-6">
+          <div className="mb-2 font-mono text-xs tracking-widest text-white/55">TECHNICAL DOCUMENTATION</div>
+          <a
+            href={TECHNICAL_DOCS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono text-base text-white hover:text-terminal-green md:text-lg break-all"
+          >
+            {TECHNICAL_DOCS_URL}
+          </a>
+          <p className="mt-4 font-mono text-xs text-white/55">
+            Engineering &amp; clinical-research deck — Technical
+            Architecture, Product Ecosystem and the 24-Step
+            Neuro-Physiological Framework. Reviewers and prospective
+            partners should consult this document before initial
+            contact.
           </p>
         </div>
 
