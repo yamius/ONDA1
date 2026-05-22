@@ -170,11 +170,61 @@ const SLEEP_APP_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Vagus-nerve stimulators: non-invasive (and one reference implanted)
+ *  devices targeting the vagus nerve. Evidence and mechanism carry the
+ *  most weight — the field is full of marketing claims weakly tied to
+ *  what the hardware actually does. */
+const VAGUS_STIM_CRITERIA: Criterion[] = [
+  {
+    id: 'evidence',
+    label: 'Evidence and clinical backing',
+    weight: 0.25,
+    description:
+      'Quality and quantity of peer-reviewed studies on the device itself — not the vagus nerve in general — plus FDA / CE clearances and the conditions they cover.',
+  },
+  {
+    id: 'mechanism',
+    label: 'Stimulation mechanism',
+    weight: 0.2,
+    description:
+      'What the device does to the vagus nerve — electrical (transcutaneous tVNS at the ear or neck), implanted, vibrotactile or infrasonic — and how transparent its dosing parameters are.',
+  },
+  {
+    id: 'protocols',
+    label: 'Protocol flexibility',
+    weight: 0.15,
+    description:
+      'Range and customisability of programmes — session lengths, intensities, modes (sleep, stress, focus, recovery) and whether parameters are documented or hidden behind a black-box app.',
+  },
+  {
+    id: 'comfort',
+    label: 'Comfort and wearability',
+    weight: 0.15,
+    description:
+      'Form factor, skin tolerance and how realistic daily or session-based use is — handheld, ear clip, neck collar, chest pebble or wearable patch.',
+  },
+  {
+    id: 'biofeedback',
+    label: 'Biofeedback and data',
+    weight: 0.15,
+    description:
+      'On-device or paired HRV measurement, session logging and integration with health apps — does it just stimulate, or close the loop with measurable output.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.1,
+    description:
+      'Hardware price together with any mandatory subscription or prescription, weighed against the evidence and what the device delivers.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
   'meditation-app': MEDITATION_APP_CRITERIA,
   'sleep-app': SLEEP_APP_CRITERIA,
+  'vagus-stim': VAGUS_STIM_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -182,10 +232,16 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   'hrv-wearable': 'HRV trackers',
   'meditation-app': 'Meditation apps',
   'sleep-app': 'Sleep apps',
+  'vagus-stim': 'Vagus nerve stimulators',
 }
 
 /** Review categories in display order. */
-export const REVIEW_CATEGORIES: ReviewCategory[] = ['hrv-wearable', 'meditation-app', 'sleep-app']
+export const REVIEW_CATEGORIES: ReviewCategory[] = [
+  'hrv-wearable',
+  'meditation-app',
+  'sleep-app',
+  'vagus-stim',
+]
 
 /** All scoring criteria for a category, in display order. */
 export function getCriteria(category: ReviewCategory): Criterion[] {

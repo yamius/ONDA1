@@ -53,9 +53,21 @@ import rise from './rise'
 import pzizz from './pzizz'
 import autosleep from './autosleep'
 import endel from './endel'
+// Vagus nerve stimulators (May 2026)
+import nurosym from './nurosym'
+import gammacoreSapphireCv from './gammacore-sapphire-cv'
+import truvaga350 from './truvaga-350'
+import apolloNeuro from './apollo-neuro'
+import vagustim from './vagustim'
+import pulsetto from './pulsetto'
+import hoolestVeReliefPrime from './hoolest-verelief-prime'
+import sensate from './sensate'
+import xenByNeuvana from './xen-by-neuvana'
+import livanovaVnsTherapy from './livanova-vns-therapy'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
 import bestSleepApps2026 from './best-sleep-apps-2026'
+import bestVagusNerveStimulators2026 from './best-vagus-nerve-stimulators-2026'
 
 /** All published product reviews. Ordered best-scored first for the hub grid. */
 export const reviews: ToolReview[] = [
@@ -89,10 +101,26 @@ export const reviews: ToolReview[] = [
   pzizz,
   autosleep,
   endel,
+  // Vagus nerve stimulators — ordered by overallScore.
+  nurosym,
+  gammacoreSapphireCv,
+  livanovaVnsTherapy,
+  truvaga350,
+  apolloNeuro,
+  pulsetto,
+  vagustim,
+  hoolestVeReliefPrime,
+  sensate,
+  xenByNeuvana,
 ]
 
 /** All published comparison / round-up pages. */
-export const comparisons: Comparison[] = [bestHrvTrackers2026, bestMeditationApps2026, bestSleepApps2026]
+export const comparisons: Comparison[] = [
+  bestHrvTrackers2026,
+  bestMeditationApps2026,
+  bestSleepApps2026,
+  bestVagusNerveStimulators2026,
+]
 
 export function getReviewBySlug(slug: string): ToolReview | undefined {
   return reviews.find((r) => r.slug === slug)
