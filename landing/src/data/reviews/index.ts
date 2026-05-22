@@ -12,6 +12,8 @@ export type {
   Comparison,
   ComparisonPick,
   ComparisonFAQ,
+  HeadToHead,
+  HeadToHeadAxis,
   ReviewCategory,
   CriterionScore,
   ReviewReference,
@@ -20,6 +22,7 @@ export type {
   TestStatus,
   Criterion,
 } from './types'
+export { headToHeads, getHeadToHeadBySlug, getHeadToHeadsForProduct } from './head-to-head'
 export {
   CRITERIA,
   CATEGORY_LABELS,

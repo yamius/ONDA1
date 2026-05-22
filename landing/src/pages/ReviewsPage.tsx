@@ -7,7 +7,7 @@
  */
 import { useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { reviews, comparisons, REVIEW_CATEGORIES, CATEGORY_LABELS, CATEGORY_URL_SLUGS } from '../data/reviews'
+import { reviews, comparisons, headToHeads, REVIEW_CATEGORIES, CATEGORY_LABELS, CATEGORY_URL_SLUGS, getReviewBySlug } from '../data/reviews'
 import { langFromPath } from '../i18n'
 
 export function ReviewsPage() {
@@ -71,6 +71,35 @@ export function ReviewsPage() {
           })}
         </div>
       </section>
+
+      {headToHeads.length > 0 && (
+        <section className="mb-14">
+          <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-green/90">
+            {tReviews('ui.headToHeadHeading', { defaultValue: 'Head-to-head duels' })}
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {headToHeads.map((h) => {
+              const a = getReviewBySlug(h.productASlug)
+              const b = getReviewBySlug(h.productBSlug)
+              if (!a || !b) return null
+              return (
+                <Link
+                  key={h.slug}
+                  to={`${langPrefix}/reviews/vs/${h.slug}`}
+                  className="glass-card group flex items-start justify-between gap-3 rounded-lg p-4 transition-all hover:border-terminal-green/20"
+                >
+                  <div className="min-w-0">
+                    <p className="font-mono text-sm font-semibold text-white/80 transition-colors group-hover:text-terminal-green">
+                      {a.name} <span className="text-white/35">vs</span> {b.name}
+                    </p>
+                  </div>
+                  <span className="font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">→</span>
+                </Link>
+              )
+            })}
+          </div>
+        </section>
+      )}
 
       {comparisons.length > 0 && (
         <section className="mb-14">

@@ -30,6 +30,7 @@ import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
 import { ReviewCategoryPage } from './pages/ReviewCategoryPage'
+import { HeadToHeadPage } from './pages/HeadToHeadPage'
 import { CATEGORY_URL_SLUG_SET } from './data/reviews'
 import { ComparisonPage } from './pages/ComparisonPage'
 import { getArticleBySlug } from './data/articles'
@@ -131,6 +132,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />
+          <Route path="/reviews/vs/:slug"      element={<HeadToHeadPage />} />
           <Route path="/reviews/:slug"         element={<ReviewsSlugRouter />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`reviews-${l}`} path={`/${l}/reviews`} element={<ReviewsPage />} />
@@ -140,6 +142,9 @@ export function createApp(location: string, lang?: Lang) {
           ))}
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`rev-cmp-${l}`} path={`/${l}/reviews/compare/:slug`} element={<ComparisonPage />} />
+          ))}
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`rev-vs-${l}`} path={`/${l}/reviews/vs/:slug`} element={<HeadToHeadPage />} />
           ))}
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`rev-${l}`} path={`/${l}/reviews/:slug`} element={<ReviewsSlugRouter />} />

@@ -18,6 +18,7 @@ import {
   getReviewBySlug,
   getComparisonBySlug,
   getReviewsForComparison,
+  getHeadToHeadBySlug,
   getCategoryByUrlSlug,
   CATEGORY_LABELS,
 } from '../src/data/reviews'
@@ -365,6 +366,12 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
     } else if (segments[1] === 'compare' && segments[2]) {
       const cmp = getComparisonBySlug(segments[2])
       items.push({ name: cmp?.title ?? segments[2], url: `${SITE_URL}/reviews/compare/${segments[2]}` })
+    } else if (segments[1] === 'vs' && segments[2]) {
+      const h2h = getHeadToHeadBySlug(segments[2])
+      const a = h2h ? getReviewBySlug(h2h.productASlug) : undefined
+      const b = h2h ? getReviewBySlug(h2h.productBSlug) : undefined
+      const name = a && b ? `${a.name} vs ${b.name}` : (h2h?.title ?? segments[2])
+      items.push({ name, url: `${SITE_URL}/reviews/vs/${segments[2]}` })
     } else if (segments[1]) {
       // A /reviews/<slug> URL is either a per-category landing page
       // (CATEGORY_URL_SLUGS) or an individual review. Both surface the
@@ -1869,6 +1876,42 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
     }
   }
+  // Head-to-head duel pages — /reviews/vs/<product-a>-vs-<product-b>. AI
+  // engines and SERPs surface these for "X vs Y" queries; we emit an
+  // ItemList of the two products plus a FAQPage so they read as a single
+  // structured answer rather than free-form text.
+  const headToHeadMatch = route.match(/^\/reviews\/vs\/([^/]+)$/)
+  if (headToHeadMatch) {
+    const h2h = getHeadToHeadBySlug(headToHeadMatch[1])
+    if (h2h) {
+      const a = getReviewBySlug(h2h.productASlug)
+      const b = getReviewBySlug(h2h.productBSlug)
+      const items =
+        a && b
+          ? [
+              { url: `${SITE_URL}/reviews/${a.slug}`, name: a.name },
+              { url: `${SITE_URL}/reviews/${b.slug}`, name: b.name },
+            ]
+          : []
+      return {
+        title: `${h2h.title} — Side-by-Side Comparison | ONDA Life`,
+        description: h2h.description,
+        url,
+        breadcrumbs,
+        ogType: 'article',
+        itemList: {
+          name: h2h.title,
+          description: h2h.description,
+          url,
+          items,
+        },
+        faq: h2h.faq.length
+          ? { mainEntity: h2h.faq.map((f) => ({ question: f.q, answer: f.a })), url }
+          : undefined,
+      }
+    }
+  }
+
   const comparisonMatch = route.match(/^\/reviews\/compare\/([^/]+)$/)
   if (comparisonMatch) {
     const comparison = getComparisonBySlug(comparisonMatch[1])

@@ -12,7 +12,7 @@ import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
-import { getReviewBySlug, getCriterion } from '../data/reviews'
+import { getReviewBySlug, getCriterion, getHeadToHeadsForProduct } from '../data/reviews'
 import { langFromPath, langHref } from '../i18n'
 
 export function ReviewPage() {
@@ -42,6 +42,10 @@ export function ReviewPage() {
   const related = (review.relatedSlugs ?? [])
     .map((s) => getReviewBySlug(s))
     .filter((r): r is NonNullable<typeof r> => !!r)
+
+  // Head-to-head duels featuring this product — surfaced as their own rail
+  // because users land on a review page often after a "X vs Y" search.
+  const productHeadToHeads = getHeadToHeadsForProduct(review.slug)
 
   return (
     <div className="mx-auto max-w-3xl px-4 pb-16 pt-6 md:px-6">
@@ -233,6 +237,33 @@ export function ReviewPage() {
               </li>
             ))}
           </ol>
+        </section>
+      )}
+
+      {productHeadToHeads.length > 0 && (
+        <section className="mb-10">
+          <h2 className="mb-3 font-mono text-xs font-bold uppercase tracking-widest text-terminal-cyan/80">
+            {tReviews('ui.headToHeadHeading', { defaultValue: 'Compared head-to-head' })}
+          </h2>
+          <div className="grid gap-3">
+            {productHeadToHeads.map((h) => {
+              const otherSlug = h.productASlug === review.slug ? h.productBSlug : h.productASlug
+              const other = getReviewBySlug(otherSlug)
+              if (!other) return null
+              return (
+                <Link
+                  key={h.slug}
+                  to={`${langPrefix}/reviews/vs/${h.slug}`}
+                  className="glass-card group flex items-center justify-between gap-4 rounded-lg p-4 transition-all hover:border-terminal-cyan/30"
+                >
+                  <span className="font-mono text-sm font-semibold text-white/80 transition-colors group-hover:text-terminal-cyan">
+                    {review.name} <span className="text-white/35">vs</span> {other.name}
+                  </span>
+                  <span className="font-mono text-xs text-white/30 transition-colors group-hover:text-terminal-cyan/60">→</span>
+                </Link>
+              )
+            })}
+          </div>
         </section>
       )}
 

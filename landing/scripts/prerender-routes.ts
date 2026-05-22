@@ -11,7 +11,7 @@ import { TOPIC_SLUGS, INDEXED_TOPIC_SLUGS } from '../src/data/topics'
 import { parts } from '../src/pages/PartPage'
 import { levelsData } from '../src/data/levels'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
-import { reviews, comparisons, CATEGORY_URL_SLUGS } from '../src/data/reviews'
+import { reviews, comparisons, headToHeads, CATEGORY_URL_SLUGS } from '../src/data/reviews'
 import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRouteVariants, LOCALIZED_PAGES } from '../src/i18n'
 
 // Pages localized into all 5 languages — each gets its own prerendered HTML
@@ -471,6 +471,9 @@ export function getPrerenderRoutes(): string[] {
     ...Object.values(CATEGORY_URL_SLUGS).map((s) => `/reviews/${s}`),
     ...reviews.map((r) => `/reviews/${r.slug}`),
     ...comparisons.map((c) => `/reviews/compare/${c.slug}`),
+    // Head-to-head duels — /reviews/vs/<product-a>-vs-<product-b>. Distinct
+    // from the comparison round-ups; target the high-volume "X vs Y" query.
+    ...headToHeads.map((h) => `/reviews/vs/${h.slug}`),
     ...localizedReviewRoutes,
     ...localizedGlossaryRoutes,
   ]

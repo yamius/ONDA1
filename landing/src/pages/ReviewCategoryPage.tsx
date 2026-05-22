@@ -13,10 +13,12 @@ import { useTranslation } from 'react-i18next'
 import {
   reviews,
   comparisons,
+  headToHeads,
   REVIEW_CATEGORIES,
   CATEGORY_LABELS,
   CATEGORY_URL_SLUGS,
   getCategoryByUrlSlug,
+  getReviewBySlug,
   type ReviewCategory,
 } from '../data/reviews'
 import { langFromPath } from '../i18n'
@@ -74,6 +76,11 @@ export function ReviewCategoryPage() {
   const catReviews = reviews.filter((r) => r.category === category)
   const catComparison = comparisons.find((c) => c.category === category)
   const otherCategories = REVIEW_CATEGORIES.filter((c) => c !== category)
+  // Head-to-heads where both products belong to this category.
+  const catReviewSlugs = new Set(catReviews.map((r) => r.slug))
+  const catHeadToHeads = headToHeads.filter(
+    (h) => catReviewSlugs.has(h.productASlug) && catReviewSlugs.has(h.productBSlug),
+  )
   const { h1, intro } = CATEGORY_INTRO[category]
   const label = CATEGORY_LABELS[category]
 
@@ -131,6 +138,33 @@ export function ReviewCategoryPage() {
             </div>
             <span className="font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">→</span>
           </Link>
+        </section>
+      )}
+
+      {catHeadToHeads.length > 0 && (
+        <section className="mb-14">
+          <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-cyan/80">
+            {tReviews('ui.headToHeadHeading', { defaultValue: 'Head-to-head duels' })}
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {catHeadToHeads.map((h) => {
+              const a = getReviewBySlug(h.productASlug)
+              const b = getReviewBySlug(h.productBSlug)
+              if (!a || !b) return null
+              return (
+                <Link
+                  key={h.slug}
+                  to={`${langPrefix}/reviews/vs/${h.slug}`}
+                  className="glass-card group flex items-start justify-between gap-3 rounded-lg p-4 transition-all hover:border-terminal-green/20"
+                >
+                  <p className="font-mono text-sm font-semibold text-white/80 transition-colors group-hover:text-terminal-green">
+                    {a.name} <span className="text-white/35">vs</span> {b.name}
+                  </p>
+                  <span className="font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">→</span>
+                </Link>
+              )
+            })}
+          </div>
         </section>
       )}
 

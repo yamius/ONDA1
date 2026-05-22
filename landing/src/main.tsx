@@ -46,6 +46,7 @@ const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPag
 const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
 const ReviewsSlugRouter     = lazyNs('reviews', () => import('./components/ReviewsSlugRouter'))
 const ComparisonPage        = lazyNs('reviews', () => import('./pages/ComparisonPage').then(m => ({ default: m.ComparisonPage })))
+const HeadToHeadPage        = lazyNs('reviews', () => import('./pages/HeadToHeadPage').then(m => ({ default: m.HeadToHeadPage })))
 
 const app = (
   <StrictMode>
@@ -120,6 +121,7 @@ const app = (
             <Route path="/reviews"               element={<ReviewsPage />} />
             <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
             <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />
+            <Route path="/reviews/vs/:slug"      element={<HeadToHeadPage />} />
             <Route path="/reviews/:slug"         element={<ReviewsSlugRouter />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`reviews-${l}`} path={`/${l}/reviews`} element={<ReviewsPage />} />
@@ -129,6 +131,9 @@ const app = (
             ))}
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`rev-cmp-${l}`} path={`/${l}/reviews/compare/:slug`} element={<ComparisonPage />} />
+            ))}
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`rev-vs-${l}`} path={`/${l}/reviews/vs/:slug`} element={<HeadToHeadPage />} />
             ))}
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`rev-${l}`} path={`/${l}/reviews/:slug`} element={<ReviewsSlugRouter />} />
