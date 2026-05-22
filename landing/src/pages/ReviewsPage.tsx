@@ -7,7 +7,7 @@
  */
 import { useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { reviews, comparisons, REVIEW_CATEGORIES, CATEGORY_LABELS } from '../data/reviews'
+import { reviews, comparisons, REVIEW_CATEGORIES, CATEGORY_LABELS, CATEGORY_URL_SLUGS } from '../data/reviews'
 import { langFromPath } from '../i18n'
 
 export function ReviewsPage() {
@@ -38,10 +38,39 @@ export function ReviewsPage() {
       </p>
       <Link
         to={`${langPrefix}/reviews/methodology`}
-        className="mb-12 inline-block font-mono text-xs text-terminal-cyan/70 transition-colors hover:text-terminal-cyan"
+        className="mb-10 inline-block font-mono text-xs text-terminal-cyan/70 transition-colors hover:text-terminal-cyan"
       >
         {tReviews('hub.methodologyLink')}
       </Link>
+
+      {/* Category nav — links to the per-category landing pages. Surfaced
+          before the round-up list so visitors targeting one category jump
+          straight to it instead of scrolling through the omnibus. */}
+      <section className="mb-14">
+        <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-cyan/80">
+          {tReviews('ui.categoriesHeading', { defaultValue: 'Browse by category' })}
+        </h2>
+        <div className="grid gap-3 sm:grid-cols-2">
+          {REVIEW_CATEGORIES.map((cat) => {
+            const count = reviews.filter((r) => r.category === cat).length
+            if (count === 0) return null
+            return (
+              <Link
+                key={cat}
+                to={`${langPrefix}/reviews/${CATEGORY_URL_SLUGS[cat]}`}
+                className="glass-card group flex items-center justify-between gap-3 rounded-lg p-4 transition-all hover:border-terminal-cyan/30"
+              >
+                <span className="font-mono text-sm text-white/80 transition-colors group-hover:text-terminal-cyan">
+                  {tReviews(`categories.${cat}`, { defaultValue: CATEGORY_LABELS[cat] })}
+                </span>
+                <span className="font-mono text-xs text-white/30">
+                  {count} {tReviews('ui.reviewsCountSuffix', { defaultValue: 'reviews' })}
+                </span>
+              </Link>
+            )
+          })}
+        </div>
+      </section>
 
       {comparisons.length > 0 && (
         <section className="mb-14">

@@ -12,7 +12,15 @@ import { parts } from '../src/pages/PartPage'
 import { getArticleBySlug } from '../src/data/articles'
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
-import { reviews, comparisons, getReviewBySlug, getComparisonBySlug, getReviewsForComparison } from '../src/data/reviews'
+import {
+  reviews,
+  comparisons,
+  getReviewBySlug,
+  getComparisonBySlug,
+  getReviewsForComparison,
+  getCategoryByUrlSlug,
+  CATEGORY_LABELS,
+} from '../src/data/reviews'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/og-preview.png`
@@ -358,8 +366,16 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       const cmp = getComparisonBySlug(segments[2])
       items.push({ name: cmp?.title ?? segments[2], url: `${SITE_URL}/reviews/compare/${segments[2]}` })
     } else if (segments[1]) {
-      const rev = getReviewBySlug(segments[1])
-      items.push({ name: rev ? `${rev.name} review` : segments[1], url: `${SITE_URL}/reviews/${segments[1]}` })
+      // A /reviews/<slug> URL is either a per-category landing page
+      // (CATEGORY_URL_SLUGS) or an individual review. Both surface the
+      // same way in the breadcrumb — by their human-readable label.
+      const cat = getCategoryByUrlSlug(segments[1])
+      if (cat) {
+        items.push({ name: CATEGORY_LABELS[cat], url: `${SITE_URL}/reviews/${segments[1]}` })
+      } else {
+        const rev = getReviewBySlug(segments[1])
+        items.push({ name: rev ? `${rev.name} review` : segments[1], url: `${SITE_URL}/reviews/${segments[1]}` })
+      }
     }
     return items
   }
@@ -1874,6 +1890,60 @@ export function getMetaForRoute(route: string): RouteMeta {
       }
     }
   }
+  // Per-category landing pages — /reviews/hrv-trackers, /reviews/cgm, etc.
+  // Checked before the individual-review handler because category URL slugs
+  // sit in the same /reviews/:slug path space.
+  const categoryMatch = route.match(/^\/reviews\/([^/]+)$/)
+  if (categoryMatch) {
+    const category = getCategoryByUrlSlug(categoryMatch[1])
+    if (category) {
+      const label = CATEGORY_LABELS[category]
+      const catReviews = reviews.filter((r) => r.category === category)
+      const catComparison = comparisons.find((c) => c.category === category)
+      const titleByCat: Record<typeof category, string> = {
+        'hrv-wearable': `Best HRV Trackers (2026) — Independent Reviews | ONDA Life`,
+        'meditation-app': `Best Meditation Apps (2026) — Independent Reviews | ONDA Life`,
+        'sleep-app': `Best Sleep Apps (2026) — Independent Reviews | ONDA Life`,
+        'vagus-stim': `Best Vagus Nerve Stimulators (2026) — Independent Reviews | ONDA Life`,
+        cgm: `Best CGMs for Biohackers (2026) — Independent Reviews | ONDA Life`,
+        'eeg-headset': `Best EEG & Brain-Training Headsets (2026) — Independent Reviews | ONDA Life`,
+      } as Record<typeof category, string>
+      const descriptionByCat: Record<typeof category, string> = {
+        'hrv-wearable':
+          'Independent ONDA reviews of HRV trackers — rings, bands, smartwatches and chest straps — scored on measurement accuracy, sleep, data access, wearability and value.',
+        'meditation-app':
+          'Independent ONDA reviews of meditation apps — scored on library, teaching quality, personalisation, free tier, evidence base and value.',
+        'sleep-app':
+          'Independent ONDA reviews of sleep apps — trackers and wind-down tools — scored on tracking accuracy, content, sleep-science grounding, insights and value.',
+        'vagus-stim':
+          'Independent ONDA reviews of vagus nerve stimulators — auricular and cervical tVNS, vibrotactile and infrasonic devices — scored on evidence, mechanism, protocols and value.',
+        cgm:
+          'Independent ONDA reviews of CGMs for biohackers — Levels, Nutrisense, Stelo, Lingo, Ultrahuman, Signos, Veri, Zoe and more — scored on insights, accuracy, coaching and value.',
+        'eeg-headset':
+          'Independent ONDA reviews of EEG and brain-training headsets — Muse, Neurosity Crown, Emotiv, Mendi, FocusCalm and more — scored on signal, content, openness and value.',
+      } as Record<typeof category, string>
+      const itemListEntries = [
+        ...(catComparison
+          ? [{ url: `${SITE_URL}/reviews/compare/${catComparison.slug}`, name: catComparison.title }]
+          : []),
+        ...catReviews.map((r) => ({ url: `${SITE_URL}/reviews/${r.slug}`, name: `${r.name} review` })),
+      ]
+      return {
+        title: titleByCat[category],
+        description: descriptionByCat[category],
+        url,
+        breadcrumbs,
+        ogType: 'website',
+        itemList: {
+          name: `ONDA Life — Best ${label} (2026)`,
+          description: descriptionByCat[category],
+          url,
+          items: itemListEntries,
+        },
+      }
+    }
+  }
+
   const reviewMatch = route.match(/^\/reviews\/([^/]+)$/)
   if (reviewMatch) {
     const review = getReviewBySlug(reviewMatch[1])

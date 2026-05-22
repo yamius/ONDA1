@@ -29,6 +29,8 @@ import { ResearchPage } from './pages/ResearchPage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
+import { ReviewCategoryPage } from './pages/ReviewCategoryPage'
+import { CATEGORY_URL_SLUG_SET } from './data/reviews'
 import { ComparisonPage } from './pages/ComparisonPage'
 import { getArticleBySlug } from './data/articles'
 
@@ -44,6 +46,18 @@ function ArticlesSlugRouter() {
   const staticArticle = slug ? getArticleBySlug(slug) : undefined
   if (staticArticle) return <ArticlePage />
   return <MdArticlePage />
+}
+
+/**
+ * /reviews/:slug serves both individual product reviews and per-category
+ * landing pages. A handful of slugs (hrv-trackers, cgm, eeg-headsets, …)
+ * are reserved as category URLs; everything else is an individual review.
+ * The set comes from the reviews data module so the two stay in lockstep.
+ */
+function ReviewsSlugRouter() {
+  const { slug } = useParams<{ slug: string }>()
+  if (slug && CATEGORY_URL_SLUG_SET.has(slug)) return <ReviewCategoryPage />
+  return <ReviewPage />
 }
 
 export function createApp(location: string, lang?: Lang) {
@@ -117,7 +131,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />
-          <Route path="/reviews/:slug"         element={<ReviewPage />} />
+          <Route path="/reviews/:slug"         element={<ReviewsSlugRouter />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`reviews-${l}`} path={`/${l}/reviews`} element={<ReviewsPage />} />
           ))}
@@ -128,7 +142,7 @@ export function createApp(location: string, lang?: Lang) {
             <Route key={`rev-cmp-${l}`} path={`/${l}/reviews/compare/:slug`} element={<ComparisonPage />} />
           ))}
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
-            <Route key={`rev-${l}`} path={`/${l}/reviews/:slug`} element={<ReviewPage />} />
+            <Route key={`rev-${l}`} path={`/${l}/reviews/:slug`} element={<ReviewsSlugRouter />} />
           ))}
           <Route path="*"               element={<NotFoundPage />} />
         </Route>

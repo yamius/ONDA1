@@ -357,6 +357,35 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'eeg-headset',
 ]
 
+/** URL slugs for per-category landing pages — /reviews/<slug>. Chosen to
+ *  match the dominant search keyword for each category ("best hrv tracker",
+ *  "best cgm", "best eeg headset"), not the internal category id. Must not
+ *  collide with any individual review slug. */
+export const CATEGORY_URL_SLUGS: Record<ReviewCategory, string> = {
+  'hrv-wearable': 'hrv-trackers',
+  'meditation-app': 'meditation-apps',
+  'sleep-app': 'sleep-apps',
+  'vagus-stim': 'vagus-nerve-stimulators',
+  cgm: 'cgm',
+  'eeg-headset': 'eeg-headsets',
+}
+
+/** Reverse lookup — URL slug → category id. Returns undefined if the slug
+ *  does not match a known category. */
+export function getCategoryByUrlSlug(slug: string): ReviewCategory | undefined {
+  const entry = (Object.entries(CATEGORY_URL_SLUGS) as [ReviewCategory, string][]).find(
+    ([, urlSlug]) => urlSlug === slug,
+  )
+  return entry?.[0]
+}
+
+/** Set of URL slugs reserved for category landing pages. Useful for route
+ *  matching to distinguish /reviews/cgm (category) from /reviews/oura-ring-4
+ *  (individual review). */
+export const CATEGORY_URL_SLUG_SET: ReadonlySet<string> = new Set(
+  Object.values(CATEGORY_URL_SLUGS),
+)
+
 /** All scoring criteria for a category, in display order. */
 export function getCriteria(category: ReviewCategory): Criterion[] {
   return CRITERIA[category]

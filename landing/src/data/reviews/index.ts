@@ -20,7 +20,16 @@ export type {
   TestStatus,
   Criterion,
 } from './types'
-export { CRITERIA, CATEGORY_LABELS, REVIEW_CATEGORIES, getCriteria, getCriterion } from './criteria'
+export {
+  CRITERIA,
+  CATEGORY_LABELS,
+  REVIEW_CATEGORIES,
+  CATEGORY_URL_SLUGS,
+  CATEGORY_URL_SLUG_SET,
+  getCriteria,
+  getCriterion,
+  getCategoryByUrlSlug,
+} from './criteria'
 
 import type { ToolReview, Comparison } from './types'
 import ouraRing4 from './oura-ring-4'
