@@ -53,6 +53,17 @@ import rise from './rise'
 import pzizz from './pzizz'
 import autosleep from './autosleep'
 import endel from './endel'
+// EEG / brain-training headsets (May 2026)
+import museSAthena from './muse-s-athena'
+import muse2 from './muse-2'
+import neurosityCrown from './neurosity-crown'
+import emotivInsight2 from './emotiv-insight-2'
+import sensAi from './sens-ai'
+import myndlift from './myndlift'
+import mendi from './mendi'
+import focuscalm from './focuscalm'
+import flowNeuroscience from './flow-neuroscience'
+import neuroskyMindwaveMobile2 from './neurosky-mindwave-mobile-2'
 // Continuous glucose monitors (May 2026)
 import levels from './levels'
 import nutrisense from './nutrisense'
@@ -80,6 +91,7 @@ import bestMeditationApps2026 from './best-meditation-apps-2026'
 import bestSleepApps2026 from './best-sleep-apps-2026'
 import bestVagusNerveStimulators2026 from './best-vagus-nerve-stimulators-2026'
 import bestCgmForBiohackers2026 from './best-cgm-for-biohackers-2026'
+import bestEegHeadsets2026 from './best-eeg-headsets-2026'
 
 /** All published product reviews. Ordered best-scored first for the hub grid. */
 export const reviews: ToolReview[] = [
@@ -135,6 +147,17 @@ export const reviews: ToolReview[] = [
   lingo,
   helloInside,
   supersapiens,
+  // EEG / brain-training headsets — ordered by overallScore.
+  museSAthena,
+  muse2,
+  neurosityCrown,
+  emotivInsight2,
+  sensAi,
+  myndlift,
+  mendi,
+  focuscalm,
+  flowNeuroscience,
+  neuroskyMindwaveMobile2,
 ]
 
 /** All published comparison / round-up pages. */
@@ -144,6 +167,7 @@ export const comparisons: Comparison[] = [
   bestSleepApps2026,
   bestVagusNerveStimulators2026,
   bestCgmForBiohackers2026,
+  bestEegHeadsets2026,
 ]
 
 export function getReviewBySlug(slug: string): ToolReview | undefined {

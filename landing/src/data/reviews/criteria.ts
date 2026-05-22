@@ -270,6 +270,63 @@ const CGM_CRITERIA: Criterion[] = [
   },
 ]
 
+/** EEG / brain-training headsets: consumer and developer wearables that
+ *  measure (EEG, fNIRS) or modulate (tDCS) brain activity for focus,
+ *  meditation, sleep or clinical neurofeedback. Signal quality and
+ *  training-content depth lead the rubric — a noisy signal or an empty
+ *  app turn the headset into a paperweight regardless of price. */
+const EEG_HEADSET_CRITERIA: Criterion[] = [
+  {
+    id: 'signal-quality',
+    label: 'Signal quality and sensor pedigree',
+    weight: 0.2,
+    description:
+      'Sensor type and count (EEG channels, fNIRS optodes, tDCS electrode pairs), sampling rate, dry vs wet electrodes and how well a clean signal holds during a real session. For non-measurement devices (tDCS) this scores stimulation parameter transparency.',
+  },
+  {
+    id: 'training-content',
+    label: 'Training programmes and content',
+    weight: 0.2,
+    description:
+      'Breadth and depth of guided sessions — meditations, focus exercises, neurofeedback protocols, clinical programmes — and whether the experience evolves with the user over months of use.',
+  },
+  {
+    id: 'insights',
+    label: 'Insights and analysis quality',
+    weight: 0.15,
+    description:
+      'How the app interprets the brain signal — EEG band breakdowns, focus and calm metrics, session-by-session progression, sleep-stage analysis where applicable. The translation from raw signal to actionable feedback.',
+  },
+  {
+    id: 'comfort',
+    label: 'Comfort and wearability',
+    weight: 0.1,
+    description:
+      'Headset weight, fit, electrode pressure and how realistic 20–60 minute sessions or overnight wear is in practice.',
+  },
+  {
+    id: 'app-ux',
+    label: 'App and integration UX',
+    weight: 0.1,
+    description:
+      'Clarity of the app, friction of starting a session and whether data integrates with Apple Health, Google Fit and other wearables.',
+  },
+  {
+    id: 'open-data',
+    label: 'Open data and developer access',
+    weight: 0.1,
+    description:
+      'Raw-signal export, SDK availability, third-party app ecosystem and how locked the user is into the manufacturer’s interpretation. Biohackers and researchers value this disproportionately.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.15,
+    description:
+      'Hardware price together with any required subscription, weighed against signal quality, content depth and developer access.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
@@ -277,6 +334,7 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'sleep-app': SLEEP_APP_CRITERIA,
   'vagus-stim': VAGUS_STIM_CRITERIA,
   cgm: CGM_CRITERIA,
+  'eeg-headset': EEG_HEADSET_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -286,6 +344,7 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   'sleep-app': 'Sleep apps',
   'vagus-stim': 'Vagus nerve stimulators',
   cgm: 'Continuous glucose monitors',
+  'eeg-headset': 'EEG & brain-training headsets',
 }
 
 /** Review categories in display order. */
@@ -295,6 +354,7 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'sleep-app',
   'vagus-stim',
   'cgm',
+  'eeg-headset',
 ]
 
 /** All scoring criteria for a category, in display order. */
