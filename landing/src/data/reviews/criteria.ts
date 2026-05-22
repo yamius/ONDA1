@@ -219,12 +219,64 @@ const VAGUS_STIM_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Continuous Glucose Monitors for non-diabetic / biohacker use. Insight
+ *  quality and sensor accuracy carry the most weight — eight out of ten
+ *  CGM programmes on the consumer market are software/coaching wrappers
+ *  around two underlying sensors (Abbott Libre 3 and Dexcom G7), so the
+ *  real differentiator is what the app does with the data, not the
+ *  hardware itself. */
+const CGM_CRITERIA: Criterion[] = [
+  {
+    id: 'sensor-accuracy',
+    label: 'Sensor accuracy and reliability',
+    weight: 0.2,
+    description:
+      'Mean absolute relative difference (MARD) of the underlying sensor versus reference plasma glucose, sensor lifespan, drop-out and warm-up behaviour. Most consumer CGMs ride on either Abbott Libre 3 or Dexcom G7 — both well-validated, with G7 marginally more accurate in independent comparison.',
+  },
+  {
+    id: 'insights',
+    label: 'Insights and analysis quality',
+    weight: 0.25,
+    description:
+      'How the app interprets glucose curves — meal scoring, food-by-food impact, time-in-range, fasting and overnight metrics, AUC and variability. This is the category’s real differentiator and the metric biohackers are paying for.',
+  },
+  {
+    id: 'coaching',
+    label: 'Coaching and guidance',
+    weight: 0.15,
+    description:
+      'Form and quality of human or AI coaching included — registered dietitian, certified coach, AI agent or none. Substance of the guidance, not the marketing claim.',
+  },
+  {
+    id: 'app-integration',
+    label: 'App and integration UX',
+    weight: 0.15,
+    description:
+      'Clarity of the app itself plus integration with the wider stack — Apple Health, Google Fit, Oura, Whoop, MyFitnessPal — so the CGM data composes with other biomarkers rather than living in a silo.',
+  },
+  {
+    id: 'flexibility',
+    label: 'Programme flexibility and data access',
+    weight: 0.15,
+    description:
+      'Subscription terms, ability to pause or buy single sensors, whether raw glucose data can be exported, and how easy it is to leave without losing access to historical insights.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.1,
+    description:
+      'Total monthly or annual cost — hardware, sensors and any coaching subscription — weighed against insight depth and the credibility of the coaching layer.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
   'meditation-app': MEDITATION_APP_CRITERIA,
   'sleep-app': SLEEP_APP_CRITERIA,
   'vagus-stim': VAGUS_STIM_CRITERIA,
+  cgm: CGM_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -233,6 +285,7 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   'meditation-app': 'Meditation apps',
   'sleep-app': 'Sleep apps',
   'vagus-stim': 'Vagus nerve stimulators',
+  cgm: 'Continuous glucose monitors',
 }
 
 /** Review categories in display order. */
@@ -241,6 +294,7 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'meditation-app',
   'sleep-app',
   'vagus-stim',
+  'cgm',
 ]
 
 /** All scoring criteria for a category, in display order. */

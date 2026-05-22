@@ -53,6 +53,17 @@ import rise from './rise'
 import pzizz from './pzizz'
 import autosleep from './autosleep'
 import endel from './endel'
+// Continuous glucose monitors (May 2026)
+import levels from './levels'
+import nutrisense from './nutrisense'
+import zoe from './zoe'
+import stelo from './stelo'
+import ultrahumanM1 from './ultrahuman-m1'
+import signos from './signos'
+import veri from './veri'
+import lingo from './lingo'
+import helloInside from './hello-inside'
+import supersapiens from './supersapiens'
 // Vagus nerve stimulators (May 2026)
 import nurosym from './nurosym'
 import gammacoreSapphireCv from './gammacore-sapphire-cv'
@@ -68,6 +79,7 @@ import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
 import bestSleepApps2026 from './best-sleep-apps-2026'
 import bestVagusNerveStimulators2026 from './best-vagus-nerve-stimulators-2026'
+import bestCgmForBiohackers2026 from './best-cgm-for-biohackers-2026'
 
 /** All published product reviews. Ordered best-scored first for the hub grid. */
 export const reviews: ToolReview[] = [
@@ -112,6 +124,17 @@ export const reviews: ToolReview[] = [
   hoolestVeReliefPrime,
   sensate,
   xenByNeuvana,
+  // Continuous glucose monitors — ordered by overallScore.
+  levels,
+  nutrisense,
+  zoe,
+  stelo,
+  ultrahumanM1,
+  signos,
+  veri,
+  lingo,
+  helloInside,
+  supersapiens,
 ]
 
 /** All published comparison / round-up pages. */
@@ -120,6 +143,7 @@ export const comparisons: Comparison[] = [
   bestMeditationApps2026,
   bestSleepApps2026,
   bestVagusNerveStimulators2026,
+  bestCgmForBiohackers2026,
 ]
 
 export function getReviewBySlug(slug: string): ToolReview | undefined {
