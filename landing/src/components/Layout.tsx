@@ -268,6 +268,9 @@ export function Layout() {
               <Link to={currentLang === 'en' ? '/contact' : `/${currentLang}/contact`} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.contacts')}<span className="sr-only">{t('menu.contactsSr')}</span>
               </Link>
+              <Link to="/research" className="text-xs text-white/40 transition-colors hover:text-white/60">
+                Research
+              </Link>
             </div>
             <p className="text-xs text-white/20">
               &copy; {new Date().getFullYear()} ONDA Life

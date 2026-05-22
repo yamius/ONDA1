@@ -435,6 +435,9 @@ const nonLocalizedStaticPaths = [
   '/topics',
   '/reviews',
   '/reviews/methodology',
+  // /research — dedicated research-partner landing, linked from the
+  // Eurostar deck final slide. EN-only by design (peer-review audience).
+  '/research',
 ]
 
 // Every topic hub URL is prerendered. Hubs without a pillar render

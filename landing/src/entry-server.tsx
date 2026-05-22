@@ -25,6 +25,7 @@ import { BioPage } from './pages/BioPage'
 import { BioMetricPage } from './pages/BioMetricPage'
 import { TopicsPage } from './pages/TopicsPage'
 import { TopicPage } from './pages/TopicPage'
+import { ResearchPage } from './pages/ResearchPage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -112,6 +113,7 @@ export function createApp(location: string, lang?: Lang) {
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />
           ))}
+          <Route path="/research"              element={<ResearchPage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

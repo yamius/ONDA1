@@ -424,6 +424,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/molecular-psychology-hormonal-firmware.avif": {
+    "width": 1168,
+    "height": 784
+  },
+  "/images/articles/molecular-psychology-hormonal-firmware.png": {
+    "width": 1168,
+    "height": 784
+  },
+  "/images/articles/molecular-psychology-hormonal-firmware.webp": {
+    "width": 1168,
+    "height": 784
+  },
   "/images/articles/muscle-metabolic-marker-longevity-onda.avif": {
     "width": 1024,
     "height": 434

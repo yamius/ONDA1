@@ -41,6 +41,7 @@ const BioMetricPage      = lazyNs('bio-metric', () => import('./pages/BioMetricP
 const TopicsPage         = lazy(() => import('./pages/TopicsPage').then(m => ({ default: m.TopicsPage })))
 const TopicPage          = lazy(() => import('./pages/TopicPage').then(m => ({ default: m.TopicPage })))
 const ArticlesSlugRouter = lazyNs(['articles', 'glossary'], () => import('./components/ArticlesSlugRouter'))
+const ResearchPage          = lazy(() => import('./pages/ResearchPage').then(m => ({ default: m.ResearchPage })))
 const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
 const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
 const ReviewPage            = lazyNs('reviews', () => import('./pages/ReviewPage').then(m => ({ default: m.ReviewPage })))
@@ -115,6 +116,7 @@ const app = (
             ))}
             <Route path="/topics"         element={<TopicsPage />} />
             <Route path="/topics/:slug"   element={<TopicPage />} />
+            <Route path="/research"              element={<ResearchPage />} />
             <Route path="/reviews"               element={<ReviewsPage />} />
             <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
             <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

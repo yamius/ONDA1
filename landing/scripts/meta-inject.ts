@@ -242,6 +242,8 @@ export interface RouteMeta {
   faq?: { mainEntity: { question: string; answer: string }[]; url: string }
   contactPage?: { name: string; description: string; url: string; email: string }
   aboutPage?: { name: string; description: string; url: string }
+  /** Dedicated research-partnership landing — emitted as schema.org/ResearchProject. */
+  researchProject?: { name: string; description: string; url: string }
   creativeWork?: { name: string; description: string; url: string; about: string[] }
   course?: { name: string; description: string; url: string }
   /** Individual product review — emitted as schema.org/Review with an
@@ -786,6 +788,41 @@ function buildCourseJsonLd(name: string, description: string, url: string): stri
   return JSON.stringify(course)
 }
 
+function buildResearchProjectJsonLd(name: string, description: string, url: string): string {
+  const project = {
+    '@context': 'https://schema.org',
+    '@type': 'ResearchProject',
+    '@id': `${url}#project`,
+    name,
+    description,
+    url,
+    sponsor: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
+    funder: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life' },
+    keywords: [
+      'heart rate variability',
+      'autonomic nervous system',
+      'interoceptive accuracy',
+      'BDNF',
+      'cortisol awakening response',
+      'EEG coherence',
+      'default mode network',
+      'salience network',
+      'transient hypofrontality',
+      'allostatic load',
+      'digital therapeutics',
+      'neurophysiology',
+    ],
+    about: [
+      { '@type': 'Thing', name: 'Autonomic Homeostasis' },
+      { '@type': 'Thing', name: 'Executive Function' },
+      { '@type': 'Thing', name: 'Network Integration' },
+      { '@type': 'Thing', name: 'Structural Neuroplasticity' },
+      { '@type': 'Thing', name: 'Peak States' },
+    ],
+  }
+  return JSON.stringify(project)
+}
+
 function buildAboutPageJsonLd(name: string, description: string, url: string): string {
   const aboutPage = {
     '@context': 'https://schema.org',
@@ -1099,6 +1136,22 @@ export function getMetaForRoute(route: string): RouteMeta {
         url,
         email: 'hello@onda-life.com',
       },
+    }
+  }
+  // /research — Research-partnership landing. Linked from the Eurostar
+  // deck final slide. EN-only; peer-review audience.
+  if (route === '/research') {
+    const researchTitle =
+      'ONDA Research Network — Validating the 24-Step Neuro-Physiological Framework | ONDA Life'
+    const researchDesc =
+      'Academic and clinical partnership programme for validating the 24-step ONDA framework: longitudinal HRV, eye-scan ANS markers, BDNF, EEG coherence, DMN dynamics.'
+    return {
+      title: researchTitle,
+      description: researchDesc,
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      researchProject: { name: researchTitle, description: researchDesc, url },
     }
   }
 
@@ -2004,6 +2057,10 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   }
 
   // JSON-LD: AboutPage
+  if (meta.researchProject) {
+    const rpScript = `<script type="application/ld+json">${buildResearchProjectJsonLd(meta.researchProject.name, meta.researchProject.description, meta.researchProject.url)}</script>`
+    out = out.replace('</head>', `  ${rpScript}\n</head>`)
+  }
   if (meta.aboutPage) {
     const aboutScript = `<script type="application/ld+json">${buildAboutPageJsonLd(meta.aboutPage.name, meta.aboutPage.description, meta.aboutPage.url)}</script>`
     out = out.replace('</head>', `  ${aboutScript}\n</head>`)

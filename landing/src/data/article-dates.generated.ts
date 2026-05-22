@@ -10,79 +10,79 @@
 export const ARTICLE_DATES: Record<string, { published: string; modified: string }> = {
   "acc-calibration-protocol-cognitive-control": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-05-01T23:21:51+02:00"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "acetylcholine-lens-neuro-mechanics": {
     "published": "2026-04-22T08:39:02Z",
-    "modified": "2026-04-22T17:14:27Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "adaptation-hack-range-fractionation": {
     "published": "2026-03-14T12:57:50Z",
-    "modified": "2026-03-14T13:08:20Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "adrenal-governor-thermal-runaway": {
     "published": "2026-04-01T13:38:29Z",
-    "modified": "2026-04-01T13:38:29Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "ai-biomarker-tracking-predictive": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "ancestral-sync-circadian-anchors": {
     "published": "2026-03-24T09:54:24Z",
-    "modified": "2026-03-24T09:59:17Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "anterior-cingulate-core-coherence-monitoring": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-05-01T23:21:51+02:00"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "anti-entropy-neural-architecture": {
     "published": "2026-03-30T20:35:54Z",
-    "modified": "2026-03-30T20:35:54Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "baroreflex-01hz-shift": {
     "published": "2026-03-24T13:06:24Z",
-    "modified": "2026-03-24T13:12:26Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "biological-latency-optimizing-system-ping": {
     "published": "2026-04-21T12:59:22Z",
-    "modified": "2026-04-21T13:29:12Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "bohr-effect-oxygen-telemetry": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-05-01T23:21:51+02:00"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "breathwork-command-line-interface": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "cacao-stem-cells": {
     "published": "2026-03-08T12:26:14+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-05-11T17:14:36+02:00"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "circadian-lighting-dark-therapy": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "circadian-reset-mastering-light": {
     "published": "2026-02-26T15:36:15+01:00",
-    "modified": "2026-03-16T12:12:37Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "co2-tolerance-expanding-oxygen-limit": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-05-11T17:14:36+02:00"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "cognitive-architecture-neural-throughput": {
     "published": "2026-03-08T13:29:07+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "cognitive-architecture-nootropic-stacks": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "cpg-neural-autopilot": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -90,15 +90,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "digital-dementia-attentional-control": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "dopamine-architecture-mastering-desire": {
     "published": "2026-02-26T15:36:15+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "dopamine-stacking-preventing-circuit-overload": {
     "published": "2026-03-08T01:19:56+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "electric-medicine-neuromodulation": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -110,27 +110,27 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "energy-governor-tsh": {
     "published": "2026-03-10T22:24:32Z",
-    "modified": "2026-05-11T17:14:36+02:00"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "energy-sensor-leptin": {
     "published": "2026-03-10T14:37:54Z",
-    "modified": "2026-05-11T17:14:36+02:00"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "fascial-tensegrity-protocol-myofascial-noise": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-05-01T23:21:51+02:00"
+    "modified": "2026-05-18T09:59:04+02:00"
   },
   "fault-tolerant-human-hrv-buffer": {
     "published": "2026-03-24T12:53:43Z",
-    "modified": "2026-03-24T12:57:43Z"
+    "modified": "2026-05-18T09:59:04+02:00"
   },
   "femtech-cyclical-architecture": {
     "published": "2026-03-04T21:35:50+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "glp1-biology-muscle-preservation": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "glymphatic-flush-clearing-neural-cache": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -138,7 +138,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "gut-brain-axis-data-link": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
@@ -146,31 +146,31 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-training-nervous-system-latency": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "hydraulic-viscosity-onda-transport-bus": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-05-01T23:21:51+02:00"
+    "modified": "2026-05-18T09:59:04+02:00"
   },
   "idle-state-alpha-rhythms": {
     "published": "2026-03-31T16:27:38Z",
-    "modified": "2026-03-31T16:29:58Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "interoceptive-precision-sensor-calibration": {
     "published": "2026-04-21T12:25:38Z",
-    "modified": "2026-04-21T12:25:38Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "longevity-hardware-cellular-cleanup": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "longevity-protocol-biological-clock-reset": {
     "published": "2026-03-24T10:01:04Z",
-    "modified": "2026-03-24T10:04:43Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "metabolic-flexibility-dual-fuel-system": {
     "published": "2026-02-26T15:36:15+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "metabolic-redundancy-hybrid-power-architecture": {
     "published": "2026-04-21T13:10:41Z",
@@ -178,23 +178,27 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "mitochondrial-biogenesis-cellular-power-grid": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "mitochondrial-dna-red-light": {
     "published": "2026-02-28T20:22:39+01:00",
     "modified": "2026-03-12T11:40:20Z"
   },
+  "molecular-psychology-hormonal-firmware": {
+    "published": "2026-05-18T08:38:26+02:00",
+    "modified": "2026-05-19T09:06:05+02:00"
+  },
   "muscle-metabolic-marker": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-05-11T17:14:36+02:00"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "nervous-system-ping-latency": {
     "published": "2026-03-24T10:43:38Z",
-    "modified": "2026-03-24T10:45:56Z"
+    "modified": "2026-05-18T09:59:04+02:00"
   },
   "neural-bridge-alpha-flow-gateway": {
     "published": "2026-03-31T16:32:31Z",
-    "modified": "2026-03-31T21:57:09Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "neural-entrainment-meditation-2": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -202,15 +206,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "neural-hydraulics-csf-flow": {
     "published": "2026-03-30T20:30:05Z",
-    "modified": "2026-03-30T20:31:04Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "neural-optimizer-estrogen": {
     "published": "2026-03-10T14:37:54Z",
-    "modified": "2026-05-11T17:14:36+02:00"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "neural-signal-to-noise-cleaning-system-channel": {
     "published": "2026-04-21T12:43:38Z",
-    "modified": "2026-04-21T13:29:12Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "neuroplasticity-flow-overclocking": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -218,63 +222,63 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "nightly-flush-glymphatic-neural-cache": {
     "published": "2026-03-30T20:04:48Z",
-    "modified": "2026-03-30T20:08:31Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "phase-locked-acoustic-sleep": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "physiological-concentration-flow-state-hardwired": {
     "published": "2026-04-22T07:43:40Z",
-    "modified": "2026-04-22T17:14:27Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "protocol-circadian-hard-reset": {
     "published": "2026-03-24T09:33:24Z",
-    "modified": "2026-03-24T09:43:56Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "quiet-mode-alpha-cortisol-buffer": {
     "published": "2026-03-31T22:01:43Z",
-    "modified": "2026-03-31T22:05:25Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "resonant-frequency-system-coherence": {
     "published": "2026-03-24T13:00:58Z",
-    "modified": "2026-03-24T13:02:58Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",
-    "modified": "2026-03-31T22:30:36Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "senolytic-high-dosing-longevity": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "spinal-harddrive-cpg-autonomous-scripts": {
     "published": "2026-03-31T22:15:23Z",
-    "modified": "2026-03-31T22:26:27Z"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "spinal-intelligence-decentralized-control": {
     "published": "2026-03-31T22:40:04Z",
-    "modified": "2026-03-31T22:40:04Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "system-feedback-biometric-loop": {
     "published": "2026-03-09T00:06:14+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "system-stability-serotonin": {
     "published": "2026-03-10T14:37:54Z",
-    "modified": "2026-05-11T17:14:36+02:00"
+    "modified": "2026-05-18T11:01:28+02:00"
   },
   "vagus-nerve-master-key": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-03-12T11:40:20Z"
+    "modified": "2026-05-18T09:59:04+02:00"
   },
   "vascular-tensegrity-microvascular-mechanics": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-05-01T23:21:51+02:00"
+    "modified": "2026-05-18T09:59:04+02:00"
   },
   "ventral-tegmental-core-motivational-salience": {
     "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-05-01T23:21:51+02:00"
+    "modified": "2026-05-18T09:35:55+02:00"
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
