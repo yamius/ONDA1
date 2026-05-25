@@ -46,11 +46,16 @@ const HR_HEADROOM = 5;
 // Raw-значения апдейтятся скачкообразно раз в ~5 сек. Без сглаживания
 // плато → скачок → плато, причём stress и energy часто математически
 // связаны (обратно коррелируют), и линии идут зеркально — некрасиво.
-// Разные постоянные времени дают фазовый сдвиг: energy реагирует
-// быстрее, stress инерционнее → линии переплетаются вместо зеркала.
 // HR не сглаживается — он и так приходит 1 Гц с watch, real-time.
-const ALPHA_ENERGY = 0.18; // ~5 сек ramp
-const ALPHA_STRESS = 0.08; // ~12 сек ramp (медленнее)
+const ALPHA_ENERGY = 0.20; // ~5 сек ramp
+const ALPHA_STRESS = 0.05; // ~20 сек ramp (значительно медленнее)
+
+// Временной сдвиг для stress — рисуем линию stress тем значением,
+// что было STRESS_SHIFT_SAMPLES секунд назад. Реальный фазовый
+// shift против energy: даже если raw-метрики идеально инверсные,
+// после shift пики/минимумы попадают в разные точки оси X, и линии
+// переплетаются, а не зеркалят.
+const STRESS_SHIFT_SAMPLES = 10; // 10 сек запаздывания
 
 const ema = (prev: number | null, raw: number | null, alpha: number): number | null => {
   if (raw == null || Number.isNaN(raw)) return prev;
@@ -185,11 +190,16 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
   // за минуту, и вниз когда падает. Диапазон адаптивный — мин ±5%,
   // иначе по max|delta| * 1.2 чтобы заполнять весь график. Это даёт
   // видимость МАЛЕЙШИХ колебаний независимо от абсолютного уровня.
-  const toDeltaPath = (extract: (s: Sample) => number | null): string => {
+  // extractAt принимает индекс — позволяет вытаскивать значение из
+  // buffer[i - shift] для временного сдвига линий друг относительно
+  // друга (разносит зеркально коррелированные метрики по оси X).
+  const toDeltaPath = (extractAt: (i: number) => number | null): string => {
+    const values: Array<number | null> = [];
     let sum = 0;
     let count = 0;
-    for (const s of buffer) {
-      const v = extract(s);
+    for (let i = 0; i < buffer.length; i++) {
+      const v = extractAt(i);
+      values.push(v);
       if (v != null && !Number.isNaN(v)) {
         sum += v;
         count++;
@@ -199,8 +209,7 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
     const mean = sum / count;
 
     let maxAbsDelta = 0;
-    for (const s of buffer) {
-      const v = extract(s);
+    for (const v of values) {
       if (v != null && !Number.isNaN(v)) {
         const d = Math.abs(v - mean);
         if (d > maxAbsDelta) maxAbsDelta = d;
@@ -211,8 +220,8 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
     const pts: Array<[number, number]> = [];
     const halfH = H / 2;
     const usableHalf = halfH - PAD;
-    for (let i = 0; i < buffer.length; i++) {
-      const v = extract(buffer[i]);
+    for (let i = 0; i < values.length; i++) {
+      const v = values[i];
       if (v == null || Number.isNaN(v)) continue;
       const delta = v - mean;
       const clamped = Math.max(-1, Math.min(1, delta / range));
@@ -264,18 +273,23 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
         />
       ) : (
         <>
-          {/* Stress — delta от running mean (центрирован), средняя толщина */}
+          {/* Stress — delta + временной сдвиг на STRESS_SHIFT_SAMPLES сек,
+              чтобы линия не зеркалила energy. */}
           <path
-            d={toDeltaPath((s) => s.stress)}
+            d={toDeltaPath((i) =>
+              i >= STRESS_SHIFT_SAMPLES
+                ? buffer[i - STRESS_SHIFT_SAMPLES].stress
+                : null,
+            )}
             fill="none"
             stroke={colorStress}
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          {/* Energy — delta от running mean (центрирован), средняя толщина */}
+          {/* Energy — delta в реальном времени */}
           <path
-            d={toDeltaPath((s) => s.energy)}
+            d={toDeltaPath((i) => buffer[i].energy)}
             fill="none"
             stroke={colorEnergy}
             strokeWidth="1.5"
