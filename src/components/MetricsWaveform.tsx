@@ -40,6 +40,22 @@ const HR_HEADROOM = 5;
 const PCT_MIN = 0;
 const PCT_MAX = 100;
 
+// EMA-сглаживание для stress/energy.
+// Raw-значения апдейтятся скачкообразно раз в ~5 сек. Без сглаживания
+// плато → скачок → плато, причём stress и energy часто математически
+// связаны (обратно коррелируют), и линии идут зеркально — некрасиво.
+// Разные постоянные времени дают фазовый сдвиг: energy реагирует
+// быстрее, stress инерционнее → линии переплетаются вместо зеркала.
+// HR не сглаживается — он и так приходит 1 Гц с watch, real-time.
+const ALPHA_ENERGY = 0.18; // ~5 сек ramp
+const ALPHA_STRESS = 0.08; // ~12 сек ramp (медленнее)
+
+const ema = (prev: number | null, raw: number | null, alpha: number): number | null => {
+  if (raw == null || Number.isNaN(raw)) return prev;
+  if (prev == null) return raw;
+  return prev + alpha * (raw - prev);
+};
+
 const norm = (v: number | null, min: number, max: number): number | null =>
   v == null || Number.isNaN(v) ? null : Math.max(0, Math.min(1, (v - min) / (max - min)));
 
@@ -61,12 +77,23 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
     energy: energy ?? null,
   };
 
+  // EMA-state для stress/energy. Хранится между тиками сэмплинга.
+  const smoothRef = useRef<{ stress: number | null; energy: number | null }>({
+    stress: null,
+    energy: null,
+  });
+
   // Сэмплинг 1 Гц.
   useEffect(() => {
     const id = window.setInterval(() => {
       setBuffer((prev) => {
+        const raw = latestRef.current;
+        const sm = smoothRef.current;
+        const newStress = ema(sm.stress, raw.stress, ALPHA_STRESS);
+        const newEnergy = ema(sm.energy, raw.energy, ALPHA_ENERGY);
+        smoothRef.current = { stress: newStress, energy: newEnergy };
         const next = prev.slice(1);
-        next.push({ ...latestRef.current });
+        next.push({ hr: raw.hr, stress: newStress, energy: newEnergy });
         return next;
       });
     }, 1000);
