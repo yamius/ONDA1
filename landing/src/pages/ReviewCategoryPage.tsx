@@ -63,6 +63,16 @@ const CATEGORY_INTRO: Record<ReviewCategory, { h1: string; intro: string }> = {
     intro:
       'Red light therapy is one of the most marketing-noisy biohacker categories on the market — inflated irradiance claims, EMF and flicker hidden behind the spec sheet, premium pricing not always backed by the build. ONDA scored the ten most credible panels of 2026 against the same six axes, with independent irradiance measurement and EMF/flicker discipline carrying weight on purpose.',
   },
+  'cold-plunge': {
+    h1: 'Best Cold Plunge & Ice Bath (2026)',
+    intro:
+      'Cold plunge hardware went from niche to mainstream over 2023–2026, and the market split into three clean tiers: chiller-built premium tubs, mid-tier insulated tubs, and budget portable plunges. ONDA scored the ten most credible options of 2026 against the same six axes — with chiller capacity, build longevity and total cost of ownership carrying the rubric.',
+  },
+  sauna: {
+    h1: 'Best Infrared Sauna & Sauna (2026)',
+    intro:
+      'The home-sauna category divides cleanly across heat sources — full-spectrum IR, near-IR incandescent, traditional Finnish convection — and form factors from blanket to outdoor barrel. ONDA scored the ten most credible options of 2026 against the same six axes, with heat-source spectrum honesty and independently-measured EMF carrying weight on purpose.',
+  },
 }
 
 export function ReviewCategoryPage() {

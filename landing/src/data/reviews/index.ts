@@ -109,6 +109,28 @@ import hoolestVeReliefPrime from './hoolest-verelief-prime'
 import sensate from './sensate'
 import xenByNeuvana from './xen-by-neuvana'
 import livanovaVnsTherapy from './livanova-vns-therapy'
+// Cold plunge (May 2026)
+import plunge from './plunge'
+import edgeTub from './edge-tub'
+import iceBarrel500 from './ice-barrel-500'
+import coldPod from './cold-pod'
+import inergizeColdTub from './inergize-cold-tub'
+import coldture from './coldture'
+import morozkoForge from './morozko-forge'
+import renuTherapyColdStoic from './renu-therapy-cold-stoic'
+import blueCubeColdPlunge from './bluecube-cold-plunge'
+import penguinChillers from './penguin-chillers'
+// Sauna (May 2026)
+import sunlightenMpulse from './sunlighten-mpulse'
+import clearlightSanctuary2 from './clearlight-sanctuary-2'
+import higherdoseBlanketV4 from './higherdose-blanket-v4'
+import saunaspaceFaraday from './saunaspace-faraday'
+import therasageTheraSaunaPersonal from './therasage-thera-sauna-personal'
+import sunHomeEquinox from './sun-home-equinox'
+import jnhLifestylesJoyous from './jnh-lifestyles-joyous'
+import almostHeavenSalem from './almost-heaven-salem'
+import relaxSaunaPortable from './relax-sauna-portable'
+import finnleoHallmark from './finnleo-hallmark'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
 import bestSleepApps2026 from './best-sleep-apps-2026'
@@ -116,6 +138,8 @@ import bestVagusNerveStimulators2026 from './best-vagus-nerve-stimulators-2026'
 import bestCgmForBiohackers2026 from './best-cgm-for-biohackers-2026'
 import bestEegHeadsets2026 from './best-eeg-headsets-2026'
 import bestRedLightPanels2026 from './best-red-light-therapy-panels-2026'
+import bestColdPlunge2026 from './best-cold-plunge-2026'
+import bestInfraredSauna2026 from './best-infrared-sauna-2026'
 
 /** All published product reviews. Ordered best-scored first for the hub grid. */
 export const reviews: ToolReview[] = [
@@ -193,6 +217,28 @@ export const reviews: ToolReview[] = [
   hoogaHg500,
   bonCharge,
   kineonMovePlus,
+  // Cold plunge — ordered by overallScore.
+  plunge,
+  coldture,
+  edgeTub,
+  morozkoForge,
+  renuTherapyColdStoic,
+  blueCubeColdPlunge,
+  penguinChillers,
+  inergizeColdTub,
+  iceBarrel500,
+  coldPod,
+  // Saunas — ordered by overallScore.
+  sunlightenMpulse,
+  clearlightSanctuary2,
+  saunaspaceFaraday,
+  finnleoHallmark,
+  sunHomeEquinox,
+  almostHeavenSalem,
+  higherdoseBlanketV4,
+  therasageTheraSaunaPersonal,
+  jnhLifestylesJoyous,
+  relaxSaunaPortable,
 ]
 
 /** All published comparison / round-up pages. */
@@ -204,6 +250,8 @@ export const comparisons: Comparison[] = [
   bestCgmForBiohackers2026,
   bestEegHeadsets2026,
   bestRedLightPanels2026,
+  bestColdPlunge2026,
+  bestInfraredSauna2026,
 ]
 
 export function getReviewBySlug(slug: string): ToolReview | undefined {

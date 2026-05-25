@@ -1955,6 +1955,8 @@ export function getMetaForRoute(route: string): RouteMeta {
         cgm: `Best CGMs for Biohackers (2026) — Independent Reviews | ONDA Life`,
         'eeg-headset': `Best EEG & Brain-Training Headsets (2026) — Independent Reviews | ONDA Life`,
         'red-light': `Best Red Light Therapy Panels (2026) — Independent Reviews | ONDA Life`,
+        'cold-plunge': `Best Cold Plunge & Ice Bath (2026) — Independent Reviews | ONDA Life`,
+        sauna: `Best Infrared Sauna & Sauna (2026) — Independent Reviews | ONDA Life`,
       } as Record<typeof category, string>
       const descriptionByCat: Record<typeof category, string> = {
         'hrv-wearable':
@@ -1971,6 +1973,10 @@ export function getMetaForRoute(route: string): RouteMeta {
           'Independent ONDA reviews of EEG and brain-training headsets — Muse, Neurosity Crown, Emotiv, Mendi, FocusCalm and more — scored on signal, content, openness and value.',
         'red-light':
           'Independent ONDA reviews of red light therapy panels — Joovv, Mito Red, PlatinumLED, GembaRed, Hooga and more — scored on irradiance, wavelength coverage, EMF and value.',
+        'cold-plunge':
+          'Independent ONDA reviews of cold plunge tubs and ice baths — Plunge, BlueCube, Ice Barrel, Cold Pod, Edge and more — scored on chiller capacity, build, filtration and value.',
+        sauna:
+          'Independent ONDA reviews of infrared and traditional saunas — Sunlighten, Clearlight, HigherDose, SaunaSpace, Therasage and more — scored on heat source, EMF, build and value.',
       } as Record<typeof category, string>
       const itemListEntries = [
         ...(catComparison

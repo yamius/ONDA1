@@ -376,6 +376,104 @@ const RED_LIGHT_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Cold-plunge / ice-bath hardware: chillers, tubs and inflatable plunges
+ *  for cold-exposure protocols. Chiller capacity dominates the rubric —
+ *  the whole category exists to deliver and hold water under 13°C, and
+ *  the rest is form factor and longevity. */
+const COLD_PLUNGE_CRITERIA: Criterion[] = [
+  {
+    id: 'chiller-capacity',
+    label: 'Chiller capacity and temperature range',
+    weight: 0.25,
+    description:
+      'How cold the unit can hold (target range, minimum temperature), how fast it recovers after a plunge, and how it behaves in summer heat. The single criterion the category exists for.',
+  },
+  {
+    id: 'build',
+    label: 'Build quality and longevity',
+    weight: 0.15,
+    description:
+      'Tub materials and insulation, exterior finish, expected lifespan and warranty terms. Cold-plunge hardware lives outdoors or in damp environments — the build either holds up for a decade or starts failing in year two.',
+  },
+  {
+    id: 'water-management',
+    label: 'Filtration and water management',
+    weight: 0.15,
+    description:
+      'Ozone or UV sanitisation, filter quality and how often the water actually needs changing in practice. The maintenance pattern that determines whether the plunge stays usable for daily protocols.',
+  },
+  {
+    id: 'form-factor',
+    label: 'Form factor and footprint',
+    weight: 0.15,
+    description:
+      'Indoor vs outdoor, footprint, install requirements (power, drainage, level surface) and how realistic the device is in a typical home setup.',
+  },
+  {
+    id: 'evidence',
+    label: 'Evidence and protocol guidance',
+    weight: 0.1,
+    description:
+      'How honestly the manufacturer represents cold-exposure benefits relative to the published research, and whether the included protocols are grounded in real science or in marketing language.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.2,
+    description:
+      'Total cost of ownership including install, electricity and water — weighed against chiller capability, build longevity and the realistic daily-use pattern.',
+  },
+]
+
+/** Saunas and infrared saunas: traditional Finnish, full-spectrum IR,
+ *  near-IR incandescent and portable blanket form factors. Heat source
+ *  and EMF discipline lead the rubric — consumer claims about IR
+ *  wavelengths are the dominant source of category confusion. */
+const SAUNA_CRITERIA: Criterion[] = [
+  {
+    id: 'heat-source',
+    label: 'Heat source and wavelength coverage',
+    weight: 0.25,
+    description:
+      'Traditional convection vs full-spectrum IR vs near-IR incandescent — and within IR, which emitter type (carbon, ceramic, incandescent) and what wavelength bands the device actually puts out. The single biggest source of consumer confusion in the category.',
+  },
+  {
+    id: 'build',
+    label: 'Build quality and wood',
+    weight: 0.15,
+    description:
+      'Cabin wood (cedar, hemlock, basswood, eucalyptus), joinery, insulation and expected lifespan. Sauna hardware that holds up matches the wood to the use case rather than to the marketing budget.',
+  },
+  {
+    id: 'emf',
+    label: 'EMF discipline',
+    weight: 0.15,
+    description:
+      'Independently measured EMF at the seated treatment position, with documentation. Cheap IR saunas can run high EMF without the user knowing; the premium brands publish numbers.',
+  },
+  {
+    id: 'form-factor',
+    label: 'Form factor and footprint',
+    weight: 0.15,
+    description:
+      'Cabin (1 / 2 / 4-person), portable, blanket or barrel — and the install requirements for each (power, footprint, ventilation, outdoor weather rating).',
+  },
+  {
+    id: 'evidence',
+    label: 'Evidence and regulatory status',
+    weight: 0.1,
+    description:
+      'Quality of the published sauna and IR-therapy literature backing the device’s claimed benefits, FDA Class II where applicable, and honest representation of indication versus marketing language.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.2,
+    description:
+      'Hardware price plus install plus annual electricity — weighed against heat-source quality, build longevity, EMF profile and form factor fit.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
@@ -385,6 +483,8 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   cgm: CGM_CRITERIA,
   'eeg-headset': EEG_HEADSET_CRITERIA,
   'red-light': RED_LIGHT_CRITERIA,
+  'cold-plunge': COLD_PLUNGE_CRITERIA,
+  sauna: SAUNA_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -396,6 +496,8 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   cgm: 'Continuous glucose monitors',
   'eeg-headset': 'EEG & brain-training headsets',
   'red-light': 'Red light therapy panels',
+  'cold-plunge': 'Cold plunge & ice bath',
+  sauna: 'Saunas & infrared saunas',
 }
 
 /** Review categories in display order. */
@@ -407,6 +509,8 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'cgm',
   'eeg-headset',
   'red-light',
+  'cold-plunge',
+  'sauna',
 ]
 
 /** URL slugs for per-category landing pages — /reviews/<slug>. Chosen to
@@ -421,6 +525,8 @@ export const CATEGORY_URL_SLUGS: Record<ReviewCategory, string> = {
   cgm: 'cgm',
   'eeg-headset': 'eeg-headsets',
   'red-light': 'red-light-therapy',
+  'cold-plunge': 'cold-plunge',
+  sauna: 'infrared-sauna',
 }
 
 /** Reverse lookup — URL slug → category id. Returns undefined if the slug

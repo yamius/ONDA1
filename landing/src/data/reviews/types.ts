@@ -21,6 +21,8 @@ export type ReviewCategory =
   | 'cgm'
   | 'eeg-headset'
   | 'red-light'
+  | 'cold-plunge'
+  | 'sauna'
 
 /** How a verdict link is treated. 'affiliate' flips rel="sponsored nofollow"
  *  plus a visible disclosure badge in the UI. v1 ships everything 'official'. */
