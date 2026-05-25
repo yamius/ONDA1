@@ -1,9 +1,18 @@
 /**
- * Head-to-head duels — pair-wise "X vs Y" comparisons of two ToolReviews.
- * Distinct from Comparison (which is a ≥3-product ranked round-up). Lives
- * at /reviews/vs/<slug> on the site.
+ * Head-to-head duels — pair-wise "X vs Y" comparisons of two or three
+ * ToolReviews. Distinct from Comparison (which is a ≥3-product ranked
+ * round-up). Lives at /reviews/vs/<slug> on the site.
+ *
+ * The exported `headToHeads` array is filtered by `publishOn` against the
+ * current date: any entry with a publishOn in the future is excluded so
+ * it does not appear in the hub, category, review-page rails, prerender
+ * route list or any helper lookup until its rollout date.
  */
 import type { HeadToHead } from '../types'
+
+/** Current date (YYYY-MM-DD), captured once at module load. Used to filter
+ *  date-gated duels out of `headToHeads` until their `publishOn` date. */
+const TODAY = new Date().toISOString().slice(0, 10)
 // HRV
 import ouraRing4VsWhoop50 from './oura-ring-4-vs-whoop-5-0'
 import ouraVsAppleWatch from './oura-ring-4-vs-apple-watch-series-11'
@@ -54,6 +63,18 @@ import threeSleep from './sleepio-vs-sleep-cycle-vs-pzizz'
 // More two-way fillers
 import ouraVsRingconn from './oura-ring-4-vs-ringconn-gen-2'
 import nurosymVsVagustim from './nurosym-vs-vagustim'
+// Three-way duels date-gated to 2026-06-04 — hidden until that date by
+// the publishOn filter at the bottom of this file.
+import ouraVsWhoopVsGarmin from './oura-ring-4-vs-whoop-5-0-vs-garmin-venu-4'
+import polarVsWhoopVsGarmin from './polar-h10-vs-whoop-5-0-vs-garmin-venu-4'
+import apolloVsNurosymVsSensate from './apollo-neuro-vs-nurosym-vs-sensate'
+import pulsettoVsTruvagaVsHoolest from './pulsetto-vs-truvaga-350-vs-hoolest-verelief-prime'
+import nurosymVsVagustimVsXen from './nurosym-vs-vagustim-vs-xen-by-neuvana'
+import levelsVsZoeVsNutrisense from './levels-vs-zoe-vs-nutrisense'
+import muse2VsFocusCalmVsMendi from './muse-2-vs-focuscalm-vs-mendi'
+import headspaceVsWakingUpVsHealthyMinds from './headspace-vs-waking-up-vs-healthy-minds-program'
+import sleepCycleVsSleepAsAndroidVsAutoSleep from './sleep-cycle-vs-sleep-as-android-vs-autosleep'
+import endelVsPzizzVsBettersleep from './endel-vs-pzizz-vs-bettersleep'
 // HRV (continued)
 import polarH10VsGarmin from './polar-h10-vs-garmin-venu-4'
 // CGM (continued)
@@ -67,8 +88,8 @@ import mendiVsMuse2 from './mendi-vs-muse-2'
 import headspaceVsInsight from './headspace-vs-insight-timer'
 import healthyMindsVsWakingUp from './healthy-minds-program-vs-waking-up'
 
-/** All published head-to-head duels, in editorial order. */
-export const headToHeads: HeadToHead[] = [
+/** The full registry — including any future-dated entries. Internal only. */
+const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   // Three-way duels
   ouraVsWhoopVsApple,
   threeRings,
@@ -125,7 +146,26 @@ export const headToHeads: HeadToHead[] = [
   sleepCycleVsSleepAsAndroid,
   sleepioVsPzizz,
   bettersleepVsSleepCycle,
+  // Date-gated to 2026-06-04 (all three-way duels)
+  ouraVsWhoopVsGarmin,
+  polarVsWhoopVsGarmin,
+  apolloVsNurosymVsSensate,
+  pulsettoVsTruvagaVsHoolest,
+  nurosymVsVagustimVsXen,
+  levelsVsZoeVsNutrisense,
+  muse2VsFocusCalmVsMendi,
+  headspaceVsWakingUpVsHealthyMinds,
+  sleepCycleVsSleepAsAndroidVsAutoSleep,
+  endelVsPzizzVsBettersleep,
 ]
+
+/** Live head-to-head duels — date-gated entries are excluded until their
+ *  `publishOn` date is reached. Consumers (hub, category and review pages,
+ *  prerender route list, lookup helpers) all read from this filtered view
+ *  so future-dated entries cannot leak into the live site. */
+export const headToHeads: HeadToHead[] = ALL_HEAD_TO_HEADS.filter(
+  (h) => !h.publishOn || h.publishOn <= TODAY,
+)
 
 export function getHeadToHeadBySlug(slug: string): HeadToHead | undefined {
   return headToHeads.find((h) => h.slug === slug)

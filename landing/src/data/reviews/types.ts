@@ -176,6 +176,11 @@ export interface HeadToHead {
   /** Optional: slug of a Comparison round-up that contains the products,
    *  for the "see the full ranking" cross-link. */
   relatedComparisonSlug?: string
+  /** Optional date-gate (YYYY-MM-DD): the duel is hidden from the live
+   *  registry — and not prerendered — until this date. Used to drip-publish
+   *  batches of comparisons rather than ship them all at once. Absent =
+   *  live immediately. */
+  publishOn?: string
   /** ISO date (YYYY-MM-DD). */
   datePublished: string
   /** ISO date (YYYY-MM-DD) — drives sitemap <lastmod> and the "Updated" UI. */
