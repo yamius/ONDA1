@@ -31,8 +31,11 @@ const SAMPLE_HZ = 1;
 const BUFFER_SIZE = WINDOW_SECONDS * SAMPLE_HZ;
 
 // Физиологические диапазоны для нормализации в [0, 1].
-const HR_MIN = 40;
-const HR_MAX = 180;
+// HR сужен до «реалистичного в покое» — иначе всё сидит в нижней
+// трети графика. При активной практике пульс выше 110 тоже клампится
+// к верху, не убегая за край.
+const HR_MIN = 50;
+const HR_MAX = 110;
 const PCT_MIN = 0;
 const PCT_MAX = 100;
 
@@ -92,37 +95,57 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
 
   // ViewBox используем фиксированный, ширину тянем через style — preserveAspectRatio=none.
   const W = 600;
-  const H = 100;
-  const PAD = 8;
+  const H = 140;
+  const PAD = 6;
 
-  const toPoints = (
+  // Catmull-Rom → cubic Bezier (tension 1/6). Сглаживает резкие
+  // ступеньки (например stress/energy который обновляется раз в 5 сек).
+  const smoothPath = (pts: Array<[number, number]>): string => {
+    if (pts.length === 0) return '';
+    if (pts.length === 1) return `M${pts[0][0]},${pts[0][1]}`;
+    let d = `M${pts[0][0]},${pts[0][1]}`;
+    for (let i = 0; i < pts.length - 1; i++) {
+      const p0 = pts[i - 1] ?? pts[i];
+      const p1 = pts[i];
+      const p2 = pts[i + 1];
+      const p3 = pts[i + 2] ?? pts[i + 1];
+      const cp1x = p1[0] + (p2[0] - p0[0]) / 6;
+      const cp1y = p1[1] + (p2[1] - p0[1]) / 6;
+      const cp2x = p2[0] - (p3[0] - p1[0]) / 6;
+      const cp2y = p2[1] - (p3[1] - p1[1]) / 6;
+      d += ` C${cp1x.toFixed(1)},${cp1y.toFixed(1)} ${cp2x.toFixed(1)},${cp2y.toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;
+    }
+    return d;
+  };
+
+  const toPath = (
     extract: (s: Sample) => number | null,
     min: number,
     max: number,
   ): string => {
-    const out: string[] = [];
+    const pts: Array<[number, number]> = [];
     for (let i = 0; i < buffer.length; i++) {
       const nv = norm(extract(buffer[i]), min, max);
       if (nv == null) continue;
       const x = PAD + (i / (BUFFER_SIZE - 1)) * (W - PAD * 2);
       const y = H - PAD - nv * (H - PAD * 2);
-      out.push(`${x.toFixed(1)},${y.toFixed(1)}`);
+      pts.push([x, y]);
     }
-    return out.join(' ');
+    return smoothPath(pts);
   };
 
-  // 2 длины волны на всю ширину, амплитуда ~22% высоты.
-  const sinPath = (() => {
+  // 2 длины волны на всю ширину, амплитуда ~28% высоты.
+  const sinPathD = (() => {
     if (!noData) return '';
-    const out: string[] = [];
+    const pts: Array<[number, number]> = [];
     const steps = 120;
     for (let i = 0; i <= steps; i++) {
       const x = PAD + (i / steps) * (W - PAD * 2);
       const wave = Math.sin((i / steps) * Math.PI * 4 + phase);
-      const y = H / 2 + wave * (H * 0.22);
-      out.push(`${x.toFixed(1)},${y.toFixed(1)}`);
+      const y = H / 2 + wave * (H * 0.28);
+      pts.push([x, y]);
     }
-    return out.join(' ');
+    return smoothPath(pts);
   })();
 
   // Цвета линий. Светлая тема — чуть прозрачнее и темнее (чтобы читалось
@@ -137,12 +160,12 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
       className={className}
       viewBox={`0 0 ${W} ${H}`}
       preserveAspectRatio="none"
-      style={{ width: '100%', height: 72, display: 'block' }}
+      style={{ width: '100%', height: 96, display: 'block' }}
       aria-hidden="true"
     >
       {noData ? (
-        <polyline
-          points={sinPath}
+        <path
+          d={sinPathD}
           fill="none"
           stroke={colorIdle}
           strokeWidth="2"
@@ -151,9 +174,9 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
         />
       ) : (
         <>
-          {/* Stress — снизу, средняя толщина */}
-          <polyline
-            points={toPoints((s) => s.stress, PCT_MIN, PCT_MAX)}
+          {/* Stress — средняя толщина */}
+          <path
+            d={toPath((s) => s.stress, PCT_MIN, PCT_MAX)}
             fill="none"
             stroke={colorStress}
             strokeWidth="1.5"
@@ -161,8 +184,8 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
             strokeLinejoin="round"
           />
           {/* Energy — средняя толщина */}
-          <polyline
-            points={toPoints((s) => s.energy, PCT_MIN, PCT_MAX)}
+          <path
+            d={toPath((s) => s.energy, PCT_MIN, PCT_MAX)}
             fill="none"
             stroke={colorEnergy}
             strokeWidth="1.5"
@@ -170,8 +193,8 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
             strokeLinejoin="round"
           />
           {/* HR — самая толстая, рисуется последней, чтобы быть сверху */}
-          <polyline
-            points={toPoints((s) => s.hr, HR_MIN, HR_MAX)}
+          <path
+            d={toPath((s) => s.hr, HR_MIN, HR_MAX)}
             fill="none"
             stroke={colorHR}
             strokeWidth="2.5"
