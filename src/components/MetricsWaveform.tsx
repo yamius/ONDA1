@@ -37,11 +37,10 @@ const BUFFER_SIZE = WINDOW_SECONDS * SAMPLE_HZ;
 const HR_MIN = 50;
 const HR_MAX_BASE = 110;
 const HR_HEADROOM = 5;
-// Stress/Energy в реальности крайне редко дают 0% или 100%. Сужаем
-// рабочий диапазон до 10–90 — линии получают больше визуальной
-// амплитуды при тех же реальных значениях.
-const PCT_MIN = 10;
-const PCT_MAX = 90;
+// Stress/Energy теперь рисуются в delta-режиме (см. toDeltaPath),
+// абсолютные PCT_MIN/PCT_MAX больше не используются — оставлены
+// комментарием на случай отката.
+// const PCT_MIN = 10; const PCT_MAX = 90;
 
 // EMA-сглаживание для stress/energy.
 // Raw-значения апдейтятся скачкообразно раз в ~5 сек. Без сглаживания
@@ -180,6 +179,51 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
     return smoothPath(pts);
   };
 
+  // Delta-режим: значения отображаются как отклонение от mean по
+  // буферу. Центр графика = текущий «обычный» уровень метрики; линия
+  // уходит вверх когда значение растёт относительно своего среднего
+  // за минуту, и вниз когда падает. Диапазон адаптивный — мин ±5%,
+  // иначе по max|delta| * 1.2 чтобы заполнять весь график. Это даёт
+  // видимость МАЛЕЙШИХ колебаний независимо от абсолютного уровня.
+  const toDeltaPath = (extract: (s: Sample) => number | null): string => {
+    let sum = 0;
+    let count = 0;
+    for (const s of buffer) {
+      const v = extract(s);
+      if (v != null && !Number.isNaN(v)) {
+        sum += v;
+        count++;
+      }
+    }
+    if (count === 0) return '';
+    const mean = sum / count;
+
+    let maxAbsDelta = 0;
+    for (const s of buffer) {
+      const v = extract(s);
+      if (v != null && !Number.isNaN(v)) {
+        const d = Math.abs(v - mean);
+        if (d > maxAbsDelta) maxAbsDelta = d;
+      }
+    }
+    const range = Math.max(5, maxAbsDelta * 1.2);
+
+    const pts: Array<[number, number]> = [];
+    const halfH = H / 2;
+    const usableHalf = halfH - PAD;
+    for (let i = 0; i < buffer.length; i++) {
+      const v = extract(buffer[i]);
+      if (v == null || Number.isNaN(v)) continue;
+      const delta = v - mean;
+      const clamped = Math.max(-1, Math.min(1, delta / range));
+      const x = PAD + (i / (BUFFER_SIZE - 1)) * (W - PAD * 2);
+      // delta > 0 → линия идёт вверх (y меньше); < 0 → вниз.
+      const y = halfH - clamped * usableHalf;
+      pts.push([x, y]);
+    }
+    return smoothPath(pts);
+  };
+
   // 2 длины волны на всю ширину, амплитуда ~28% высоты.
   const sinPathD = (() => {
     if (!noData) return '';
@@ -220,18 +264,18 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
         />
       ) : (
         <>
-          {/* Stress — средняя толщина */}
+          {/* Stress — delta от running mean (центрирован), средняя толщина */}
           <path
-            d={toPath((s) => s.stress, PCT_MIN, PCT_MAX)}
+            d={toDeltaPath((s) => s.stress)}
             fill="none"
             stroke={colorStress}
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          {/* Energy — средняя толщина */}
+          {/* Energy — delta от running mean (центрирован), средняя толщина */}
           <path
-            d={toPath((s) => s.energy, PCT_MIN, PCT_MAX)}
+            d={toDeltaPath((s) => s.energy)}
             fill="none"
             stroke={colorEnergy}
             strokeWidth="1.5"
