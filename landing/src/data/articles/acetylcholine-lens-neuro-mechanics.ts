@@ -95,6 +95,18 @@ A calibrated acetylcholine lens delivers measurable upgrades.
 ---
 
 > **ONDA_STATEMENT:** "Your attention is not a resource to be spent; it is a tool to be focused. Acetylcholine is the mechanical core of that focus. Sharpen your lens, and the world becomes crystalline."
+
+---
+
+## Recommended tools
+
+Acetylcholine sharpens attention; EEG is the noisiest-but-most-direct readback consumer hardware can give you on the result.
+
+- [Muse S Athena](/reviews/muse-s-athena) — EEG + fNIRS focus tracking
+- [Neurosity Crown](/reviews/neurosity-crown) — developer-grade focus EEG
+- [FocusCalm](/reviews/focuscalm) — content-driven focus training EEG
+
+[Best EEG Headsets (2026) →](/reviews/eeg-headsets)
 `,
   howToSteps: [
     {

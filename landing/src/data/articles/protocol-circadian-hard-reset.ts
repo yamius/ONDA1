@@ -98,6 +98,18 @@ If HRV does not improve by Day 4, the issue is likely upstream: chronic psycholo
 > [ SYSTEM_LOG ]
 > STATUS: RECALIBRATION_SEQUENCE_COMPLETE
 > NEXT_MAINTENANCE: Repeat protocol at first sign of HRV drift or sustained sleep phase fragmentation.
+
+---
+
+## Recommended tools
+
+A hard reset deserves measurement. Tools that report whether it stuck:
+
+- [Oura Ring 4](/reviews/oura-ring-4) — sleep model that resolves a reset
+- [Sleep Cycle](/reviews/sleep-cycle) — simple timing and disturbance tracking
+- [Sleepio](/reviews/sleepio) — clinical CBT-I for when timing is not the only problem
+
+[Best Sleep Apps (2026) →](/reviews/sleep-apps)
 `,
   howToSteps: [
     {

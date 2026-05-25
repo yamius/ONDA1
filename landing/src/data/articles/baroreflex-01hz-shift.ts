@@ -111,6 +111,18 @@ Clinical data: consistent 0.1 Hz biofeedback training produces systolic reductio
 
 > [ ONDA_STATEMENT ]
 > "0.1 Hz is not just a rhythm; it is the frequency where your biology speaks the language of physics. It is the point where you stop wasting energy on internal friction."
+
+---
+
+## Recommended tools
+
+Catching the 0.1 Hz shift cleanly requires an HRV device with enough sampling fidelity. The chest strap is the reference; the wearables are the lifestyle option.
+
+- [Polar H10](/reviews/polar-h10) — ECG chest strap that resolves resonant-frequency breathing cleanly
+- [Oura Ring 4](/reviews/oura-ring-4) — overnight HRV trending
+- [Whoop 5.0](/reviews/whoop-5-0) — continuous HRV with recovery framing
+
+[Best HRV Trackers (2026) →](/reviews/hrv-trackers)
 `,
   howToSteps: [
     {

@@ -95,6 +95,18 @@ STATUS: Cognitive Architecture Stable. Interference Minimized.
 
 > [ FINALIZE_ANALYSIS ]
 > System Integrity: Optimal. Cognition Flow: Unlocked.
+
+---
+
+## Recommended tools
+
+Watching cognitive throughput directly means watching EEG. Three consumer headsets that produce a usable signal.
+
+- [Neurosity Crown](/reviews/neurosity-crown) — open-SDK EEG with raw signal access
+- [Muse S Athena](/reviews/muse-s-athena) — consumer EEG with sleep + focus content
+- [Emotiv Insight 2](/reviews/emotiv-insight-2) — research-grade EEG with academic toolchain
+
+[Best EEG Headsets (2026) →](/reviews/eeg-headsets)
 `,
   howToSteps: [
     {

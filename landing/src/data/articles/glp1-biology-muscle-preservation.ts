@@ -75,6 +75,18 @@ A: No. Berberine manages fuel efficiency (software), but resistance training is 
 **Q: Why not just use the drug?**
 
 A: Endogenous stimulation preserves your metabolism's natural feedback loops, preventing "Ozempic face" (the loss of facial fat pads and muscle tone) and rebound weight gain.
+
+---
+
+## Recommended tools
+
+GLP-1 protocols change everything about glucose and satiety. A CGM is the cheapest, fastest way to see what is actually happening.
+
+- [Signos](/reviews/signos) — AI-coached CGM built around weight and meal behaviour
+- [Levels](/reviews/levels) — deepest meal-impact analytics
+- [Nutrisense](/reviews/nutrisense) — registered dietitian on continuous CGM data
+
+[Best CGMs for Biohackers (2026) →](/reviews/cgm)
 `,
   howToSteps: [
     {

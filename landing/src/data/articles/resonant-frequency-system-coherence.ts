@@ -96,6 +96,18 @@ Three mechanisms activated by resonant frequency breathing:
 
 > [ ONDA_STATEMENT ]
 > "You aren't broken; you are just out of tune. Resonance is the key to returning your biology to its original, effortless frequency."
+
+---
+
+## Recommended tools
+
+Resonant-frequency work needs a device that captures the breathing-driven HRV envelope without smoothing it away.
+
+- [Polar H10](/reviews/polar-h10) — ECG chest strap for app-agnostic resonance training
+- [Oura Ring 4](/reviews/oura-ring-4) — overnight coherence trends
+- [Whoop 5.0](/reviews/whoop-5-0) — daily recovery on continuous HRV
+
+[Best HRV Trackers (2026) →](/reviews/hrv-trackers)
 `,
   howToSteps: [
     {

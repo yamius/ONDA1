@@ -98,6 +98,18 @@ Developing metabolic redundancy delivers measurable system upgrades.
 ---
 
 > **ONDA_STATEMENT:** "Hunger should not be a system error that paralyzes your software. Make your energy independent of external supply chains. When you control your metabolic switch, you control your freedom."
+
+---
+
+## Recommended tools
+
+Watching the metabolic system live requires CGM. Three programmes covering the price tiers:
+
+- [Levels](/reviews/levels) — continuous Dexcom G7 with deep analytics
+- [Nutrisense](/reviews/nutrisense) — registered-dietitian coach on the same hardware
+- [Stelo by Dexcom](/reviews/stelo) — OTC version at a third of the cost
+
+[Best CGMs for Biohackers (2026) →](/reviews/cgm)
 `,
   howToSteps: [
     {

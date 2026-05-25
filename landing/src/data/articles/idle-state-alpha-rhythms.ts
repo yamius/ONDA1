@@ -106,6 +106,18 @@ Three targeted triggers to engage Alpha manually — without waiting for it to "
 
 > [ ONDA_STATEMENT ]
 > "Alpha is not a meditation for relaxation; it is a professional calibration for your processor. If you want to work fast, you must master the return to Neutral."
+
+---
+
+## Recommended tools
+
+Watching alpha rhythms directly means watching the EEG. Three consumer headsets that produce a usable signal.
+
+- [Muse S Athena](/reviews/muse-s-athena) — EEG + fNIRS with sleep tracking
+- [Muse 2](/reviews/muse-2) — mature consumer EEG meditation reference
+- [Neurosity Crown](/reviews/neurosity-crown) — developer-grade open-SDK EEG
+
+[Best EEG Headsets (2026) →](/reviews/eeg-headsets)
 `,
   howToSteps: [
     {

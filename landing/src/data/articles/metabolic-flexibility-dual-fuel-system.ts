@@ -85,6 +85,18 @@ Ketosis isn't just a diet; it's a high-performance metabolic state. Ketones are 
 > VALIDATION_DEVICE: CGM (Abbott/Dexcom)
 > METRIC: Postprandial Glucose Curve
 > STATUS: DUAL_FUEL_ACTIVE
+
+---
+
+## Recommended tools
+
+Switching fuel substrates is invisible without a CGM. Three programmes that make the dual-fuel signal legible:
+
+- [Levels](/reviews/levels) — deepest meal-by-meal insight engine on Dexcom G7
+- [Stelo by Dexcom](/reviews/stelo) — OTC Dexcom G7 access without coaching premium
+- [Lingo by Abbott](/reviews/lingo) — cheapest legitimate CGM entry
+
+[Best CGMs for Biohackers (2026) →](/reviews/cgm)
 `,
   howToSteps: [
     {

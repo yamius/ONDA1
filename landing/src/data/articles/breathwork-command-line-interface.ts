@@ -84,6 +84,18 @@ The diaphragm is more than a muscle; it is a mechanical pump for the Vagus Nerve
 > VALIDATION_DEVICE: Pulse Oximeter
 > METRIC: SpO2 Stability & CO2 Tolerance
 > STATUS: ROOT_ACCESS_GRANTED
+
+---
+
+## Recommended tools
+
+Breathwork is the software; these are the hardware adjuncts most users layer on top.
+
+- [Apollo Neuro](/reviews/apollo-neuro) — wearable that pairs with breath sessions
+- [Sensate](/reviews/sensate) — paired soundscape + infrasonic wind-down
+- [Nurosym](/reviews/nurosym) — electrical adjunct to breath protocols
+
+[Best Vagus Nerve Stimulators (2026) →](/reviews/vagus-nerve-stimulators)
 `,
   howToSteps: [
     {

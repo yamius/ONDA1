@@ -78,6 +78,18 @@ High-performance states often fail due to 'System Noise'—anxiety or over-stimu
 > VALIDATION_DEVICE: Cognitive Testing Apps
 > METRIC: Working Memory & Reaction Time
 > STATUS: PATCH_SUCCESSFUL
+
+---
+
+## Recommended tools
+
+Nootropic stacks are most valuable when you can measure them. EEG is the most direct consumer signal.
+
+- [Neurosity Crown](/reviews/neurosity-crown) — developer-grade EEG to measure stack effects
+- [Muse S Athena](/reviews/muse-s-athena) — consumer EEG with focus mode
+- [Emotiv Insight 2](/reviews/emotiv-insight-2) — multi-dimensional cognitive-performance metrics
+
+[Best EEG Headsets (2026) →](/reviews/eeg-headsets)
 `,
   howToSteps: [
     {

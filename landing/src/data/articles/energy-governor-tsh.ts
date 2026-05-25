@@ -130,6 +130,18 @@ METRIC: Free T3 / Free T4 (upper quartile) + Stable Resting Heart Rate.
 
 > [ FINALIZE_ANALYSIS ]
 > TSH is your Biochemical Pressure Gauge. By monitoring this metric, you understand how efficiently your system converts fuel into pure energy and intelligence. Managing TSH allows you to sustain a high-drive state without the risk of burning out your biological resources.
+
+---
+
+## Recommended tools
+
+TSH-driven metabolism shows up in glucose patterns long before it shows up in lab work. The instruments that catch it:
+
+- [Levels](/reviews/levels) — deep glucose-curve analytics
+- [Nutrisense](/reviews/nutrisense) — human dietitian on metabolic data
+- [Zoe](/reviews/zoe) — multi-biomarker reset including microbiome and blood markers
+
+[Best CGMs for Biohackers (2026) →](/reviews/cgm)
 `,
 }
 

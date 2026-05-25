@@ -60,6 +60,18 @@ The biological mechanism behind this is the Frequency Following Response (FFR).
 > VALIDATION_DEVICE: Muse 2 / Flowtime EEG Headband
 > METRIC: Alpha-Theta Coherence & Time-in-State (min)
 > STATUS: NEURAL_SYNC_ACTIVE
+
+---
+
+## Recommended tools
+
+Neural entrainment via meditation is built on the practice. Three apps where the teaching is the value, not the marketing:
+
+- [Insight Timer](/reviews/insight-timer) — largest free meditation library on the market
+- [Waking Up](/reviews/waking-up) — Sam Harris’ philosophical and non-dual practice
+- [Healthy Minds Program](/reviews/healthy-minds-program) — science-backed four-pillar framework, genuinely free
+
+[Best Meditation Apps (2026) →](/reviews/meditation-apps)
 `,
   howToSteps: [
     {

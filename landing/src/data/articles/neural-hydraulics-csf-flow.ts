@@ -105,6 +105,18 @@ Three engineering interventions for the pre-sleep window:
 
 > [ ONDA_STATEMENT ]
 > "Your brain is a hydraulic machine. If you don't manage the pressure and the flow, no software update can make your hardware run at peak performance."
+
+---
+
+## Recommended tools
+
+CSF flow is a sleep-stage phenomenon. Watching the stage is watching the flow.
+
+- [Oura Ring 4](/reviews/oura-ring-4) — sleep-stage tracking for CSF clearance windows
+- [Muse S Athena](/reviews/muse-s-athena) — EEG-based confirmation
+- [Whoop 5.0](/reviews/whoop-5-0) — continuous overnight HRV alongside sleep
+
+[Best Sleep Apps (2026) →](/reviews/sleep-apps)
 `,
   howToSteps: [
     {

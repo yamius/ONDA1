@@ -164,6 +164,18 @@ You do not patch molecular firmware from the application layer — talking to yo
 ---
 
 > ONDA_STATEMENT: «You are not your moods. You are the operator with access to the panel that produces them. Molecular Psychology is simply the decision to read the code before you blame the self.»
+
+---
+
+## Recommended tools
+
+Hormonal firmware reads in glucose, sleep and HRV before it reads in lab work. Three instruments that catch it:
+
+- [Levels](/reviews/levels) — deepest insight engine on continuous glucose
+- [Zoe](/reviews/zoe) — multi-biomarker reset (CGM + microbiome + blood)
+- [Oura Ring 4](/reviews/oura-ring-4) — sleep + HRV as a hormonal proxy
+
+[Best CGMs for Biohackers (2026) →](/reviews/cgm)
 `,
   howToSteps: [
     {

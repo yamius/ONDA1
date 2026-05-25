@@ -111,6 +111,18 @@ Reducing your nervous system's ping provides a direct upgrade across all core me
 
 > [ ONDA_STATEMENT ]
 > "High HRV is the ultimate competitive advantage. It's the difference between reacting to the world and anticipating it."
+
+---
+
+## Recommended tools
+
+Pinging the autonomic system requires a device that hears the response. Three wearables that do.
+
+- [Oura Ring 4](/reviews/oura-ring-4) — passive ring, deepest sleep model
+- [Polar H10](/reviews/polar-h10) — ECG-grade morning measurement
+- [Whoop 5.0](/reviews/whoop-5-0) — continuous recovery coaching
+
+[Best HRV Trackers (2026) →](/reviews/hrv-trackers)
 `,
   howToSteps: [
     {

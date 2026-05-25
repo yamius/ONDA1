@@ -86,6 +86,18 @@ The receptors in your brainstem are sensors that react to blood acidification (l
 
 Cellular Oxygenation: Peak.
 Breathing Efficiency: High.
+
+---
+
+## Recommended tools
+
+CO₂ tolerance and vagal tone reinforce each other. Tools that train the latter directly:
+
+- [Nurosym](/reviews/nurosym) — auricular tVNS — vagal training adjunct
+- [Pulsetto](/reviews/pulsetto) — cervical tVNS with breath/stress programmes
+- [Apollo Neuro](/reviews/apollo-neuro) — continuous vagal modulation through CO₂ training sessions
+
+[Best Vagus Nerve Stimulators (2026) →](/reviews/vagus-nerve-stimulators)
 `,
   howToSteps: [
     {

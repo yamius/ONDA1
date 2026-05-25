@@ -105,6 +105,18 @@ Three physiological triggers to engage the silence protocol on demand:
 
 > [ ONDA_STATEMENT ]
 > "Silence is not the absence of sound; it is the absence of noise in your neural circuits. Quiet Mode is the reset button you must press before the system starts to smoke."
+
+---
+
+## Recommended tools
+
+Pushing into the alpha-cortisol-buffer state benefits from a structured practice partner. Three apps that work:
+
+- [Calm](/reviews/calm) — sleep stories and ambient calming content
+- [Healthy Minds Program](/reviews/healthy-minds-program) — evidence-based meditation, free
+- [Headspace](/reviews/headspace) — structured beginner curriculum
+
+[Best Meditation Apps (2026) →](/reviews/meditation-apps)
 `,
   howToSteps: [
     {

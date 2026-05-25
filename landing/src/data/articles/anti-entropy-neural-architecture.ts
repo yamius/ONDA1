@@ -108,6 +108,18 @@ Three strict system overrides to minimize entropy accumulation:
 
 > [ ONDA_STATEMENT ]
 > "Aging isn't time. Aging is accumulated entropy. Regular system purging is the only way to cheat the Second Law of Thermodynamics."
+
+---
+
+## Recommended tools
+
+Anti-entropy maintenance is measured at the HRV layer. The instruments that catch the signal:
+
+- [Oura Ring 4](/reviews/oura-ring-4) — continuous overnight HRV and sleep
+- [Whoop 5.0](/reviews/whoop-5-0) — daily recovery coach
+- [Polar H10](/reviews/polar-h10) — reference accuracy
+
+[Best HRV Trackers (2026) →](/reviews/hrv-trackers)
 `,
   howToSteps: [
     {

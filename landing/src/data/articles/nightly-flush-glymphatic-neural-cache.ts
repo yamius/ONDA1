@@ -105,6 +105,18 @@ Three targeted patches to ensure a full SYSTEM_PURGE every night:
 
 > [ ONDA_STATEMENT ]
 > "Your intelligence tomorrow depends on how cleanly your brain 'tidied up' tonight. Deep sleep is not a luxury; it is mandatory technical maintenance."
+
+---
+
+## Recommended tools
+
+Glymphatic clearance happens in deep sleep. Tracking that specific window:
+
+- [Oura Ring 4](/reviews/oura-ring-4) — deep-sleep tracking — the window glymphatic flow opens
+- [Muse S Athena](/reviews/muse-s-athena) — EEG-confirmed sleep staging
+- [Whoop 5.0](/reviews/whoop-5-0) — continuous overnight metrics
+
+[Best Sleep Apps (2026) →](/reviews/sleep-apps)
 `,
   howToSteps: [
     {

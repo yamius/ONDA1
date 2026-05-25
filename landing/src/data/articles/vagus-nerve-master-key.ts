@@ -85,6 +85,18 @@ To move from theory to hardware optimization, initialize these three neural reca
 > VALIDATION_DEVICE: Polar H10 / Oura Ring
 > METRIC: rMSSD
 > STATUS: BIOMETRIC_VERIFIED
+
+---
+
+## Recommended tools
+
+Three consumer devices that actually target the vagus nerve — auricular electrical tVNS, cervical tVNS and vibrotactile modulation. Different mechanisms, all peer-reviewed in their own ways.
+
+- [Nurosym](/reviews/nurosym) — clinical-grade auricular tVNS with the deepest evidence base
+- [Pulsetto](/reviews/pulsetto) — consumer-friendly neck collar with four guided programmes
+- [Apollo Neuro](/reviews/apollo-neuro) — all-day vibrotactile vagal modulation
+
+[Best Vagus Nerve Stimulators (2026) →](/reviews/vagus-nerve-stimulators)
 `,
   howToSteps: [
     {

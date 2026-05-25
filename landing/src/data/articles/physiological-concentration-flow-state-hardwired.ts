@@ -101,6 +101,18 @@ Physiological concentration delivers measurable upgrades.
 ---
 
 > **ONDA_STATEMENT:** "Concentration is not a battle against distractions. It is the creation of internal signal brightness so intense that the outside world fades into shadow. Align the sensors, and flow becomes the only possible state."
+
+---
+
+## Recommended tools
+
+Flow has a physiological footprint that EEG can resolve. Hardware that turns it into feedback:
+
+- [Neurosity Crown](/reviews/neurosity-crown) — live focus-music EEG streaming
+- [Muse S Athena](/reviews/muse-s-athena) — EEG + fNIRS sensor-fusion focus
+- [FocusCalm](/reviews/focuscalm) — content-driven focus training
+
+[Best EEG Headsets (2026) →](/reviews/eeg-headsets)
 `,
   howToSteps: [
     {

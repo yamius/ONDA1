@@ -92,6 +92,18 @@ Reducing biological latency delivers measurable upgrades.
 ---
 
 > **ONDA_STATEMENT:** "The difference between reaction and anticipation is latency. We don't teach you to react faster. We teach your system to predict reality so accurately that the delay ceases to exist. Become a real-time operator."
+
+---
+
+## Recommended tools
+
+Measuring biological latency starts with a wearable that captures HRV continuously, not in spot-checks.
+
+- [Oura Ring 4](/reviews/oura-ring-4) — lowest-friction continuous HRV
+- [Whoop 5.0](/reviews/whoop-5-0) — training-load + HRV in one device
+- [Garmin Venu 4](/reviews/garmin-venu-4) — no-subscription HRV smartwatch with training analytics
+
+[Best HRV Trackers (2026) →](/reviews/hrv-trackers)
 `,
   howToSteps: [
     {

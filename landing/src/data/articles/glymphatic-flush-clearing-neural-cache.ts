@@ -87,6 +87,18 @@ Research indicates that glymphatic clearance is most efficient in specific body 
 
 System Maintenance: Complete.
 Neural Debris: Removed.
+
+---
+
+## Recommended tools
+
+The clearing cycle is gated by deep sleep. Hardware that surfaces whether you got it:
+
+- [Oura Ring 4](/reviews/oura-ring-4) — deep-sleep window tracking
+- [Muse S Athena](/reviews/muse-s-athena) — EEG sleep staging
+- [Sleep Cycle](/reviews/sleep-cycle) — simpler phone-based alternative
+
+[Best Sleep Apps (2026) →](/reviews/sleep-apps)
 `,
   howToSteps: [
     {

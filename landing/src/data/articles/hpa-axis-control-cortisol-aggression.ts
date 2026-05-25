@@ -128,6 +128,18 @@ METRIC: Morning Cortisol Levels + Heart Rate Variability (HRV).
 
 > [ FINALIZE_ANALYSIS ]
 > Aggression management is not a matter of suppression, but of Energy Management. Once you understand the mechanics of the HPA axis, you cease to be a hostage to hormonal spikes and become the operator of your biological power.
+
+---
+
+## Recommended tools
+
+HPA dysregulation responds to vagal tone work. Three consumer devices that engage the parasympathetic side:
+
+- [Apollo Neuro](/reviews/apollo-neuro) — all-day vagal modulation for stress regulation
+- [Sensate](/reviews/sensate) — evening wind-down ritual on the chest
+- [Nurosym](/reviews/nurosym) — clinical-grade auricular tVNS adjunct
+
+[Best Vagus Nerve Stimulators (2026) →](/reviews/vagus-nerve-stimulators)
 `,
 }
 

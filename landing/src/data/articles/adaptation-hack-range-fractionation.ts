@@ -108,6 +108,18 @@ STATUS: System pulled from stagnation. Adaptation protocols active.
 Range Fractionation is an Anti-fragility Strategy. Instead of attempting to be 'stably average,' you teach your system to be efficient across extreme ranges. This prepares you for any load while maintaining biological flexibility and resourcefulness.
 
 > [ SYSTEM_STATUS: DYNAMIC_FLOW_ACTIVE ]
+
+---
+
+## Recommended tools
+
+Range fractionation reads as adaptation across cognitive states. EEG is the highest-density consumer signal for catching it.
+
+- [Neurosity Crown](/reviews/neurosity-crown) — developer EEG for measuring adaptation
+- [Muse S Athena](/reviews/muse-s-athena) — consumer EEG with multi-state tracking
+- [Emotiv Insight 2](/reviews/emotiv-insight-2) — six-dimensional cognitive performance metrics
+
+[Best EEG Headsets (2026) →](/reviews/eeg-headsets)
 `,
   howToSteps: [
     {

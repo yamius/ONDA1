@@ -112,6 +112,18 @@ Developing Interoceptive Precision delivers measurable system upgrades:
 ---
 
 > **ONDA_STATEMENT:** "Your body is the most complex diagnostic station in the universe. The problem isn't the sensors — it's that you've forgotten how to read the logs. Calibrate your system, and intuition becomes just another mathematically accurate metric."
+
+---
+
+## Recommended tools
+
+Interoceptive calibration uses HRV as the external reference. Pick a device that returns clean data.
+
+- [Oura Ring 4](/reviews/oura-ring-4) — baseline calibration via overnight HRV
+- [Polar H10](/reviews/polar-h10) — ECG ground-truth measurement
+- [Whoop 5.0](/reviews/whoop-5-0) — recovery score as calibration feedback
+
+[Best HRV Trackers (2026) →](/reviews/hrv-trackers)
 `,
   howToSteps: [
     {

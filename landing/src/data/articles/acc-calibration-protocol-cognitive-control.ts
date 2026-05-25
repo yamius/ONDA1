@@ -85,6 +85,18 @@ Regular execution of the ACC calibration protocol delivers the following.
 ---
 
 > **ONDA_STATEMENT:** "Cool down your system arbiter. Monotasking and mindfulness alignment are the most effective ways to clear the error buffer and restore focus to its maximum potential."
+
+---
+
+## Recommended tools
+
+ACC calibration is the kind of thing neurofeedback was designed to address. Hardware that puts the loop in your hands:
+
+- [Muse S Athena](/reviews/muse-s-athena) — EEG + fNIRS for ACC-adjacent metrics
+- [Neurosity Crown](/reviews/neurosity-crown) — developer-grade EEG with raw access
+- [Myndlift](/reviews/myndlift) — clinical-supervised neurofeedback at home
+
+[Best EEG Headsets (2026) →](/reviews/eeg-headsets)
 `,
   howToSteps: [
     {

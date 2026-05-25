@@ -100,6 +100,18 @@ Three interventions to stress-test the system and expand the HRV buffer:
 
 > [ ONDA_STATEMENT ]
 > "Resilience isn't about avoiding the storm; it's about having a system architecture that turns the storm into background noise."
+
+---
+
+## Recommended tools
+
+Reading the buffer requires a device that resolves beat-to-beat intervals reliably. These three are the ones that do.
+
+- [Oura Ring 4](/reviews/oura-ring-4) — best overall for continuous overnight HRV
+- [Polar H10](/reviews/polar-h10) — reference-grade ECG accuracy
+- [Whoop 5.0](/reviews/whoop-5-0) — sharpest daily recovery coaching
+
+[Best HRV Trackers (2026) →](/reviews/hrv-trackers)
 `,
   howToSteps: [
     {

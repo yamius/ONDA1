@@ -83,6 +83,18 @@ The Prefrontal Cortex (PFC) is the 'Executive Suite' of your brain. It is the mo
 > VALIDATION_DEVICE: Focus Session Logs
 > METRIC: Deep Work Units (90min blocks)
 > STATUS: FIREWALL_ACTIVE
+
+---
+
+## Recommended tools
+
+Rebuilding attentional control is best paired with feedback. Three consumer headsets that surface it:
+
+- [Muse 2](/reviews/muse-2) — entry-level focus and meditation EEG
+- [FocusCalm](/reviews/focuscalm) — content-driven attention training
+- [Mendi](/reviews/mendi) — fNIRS prefrontal training for attention
+
+[Best EEG Headsets (2026) →](/reviews/eeg-headsets)
 `,
   howToSteps: [
     { name: "The 'Analog Morning' Firewall", text: 'No digital inputs (phone, email, news) for the first 60 minutes after waking.', protocolId: 'digital-analog-morning' },

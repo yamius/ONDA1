@@ -84,6 +84,18 @@ The Vagus Nerve serves as the high-speed data cable between your gut and your br
 > VALIDATION_DEVICE: Microbiome Kit (Viome)
 > METRIC: Microbial Diversity Index
 > STATUS: DATA_LINK_OPTIMIZED
+
+---
+
+## Recommended tools
+
+The gut-brain axis is measured at the gut: food, glucose, microbiome. Three programmes that surface that data:
+
+- [Zoe](/reviews/zoe) — multi-biomarker including gut microbiome test
+- [Levels](/reviews/levels) — food-by-food impact analytics
+- [Nutrisense](/reviews/nutrisense) — registered dietitian on continuous data
+
+[Best CGMs for Biohackers (2026) →](/reviews/cgm)
 `,
   howToSteps: [
     {

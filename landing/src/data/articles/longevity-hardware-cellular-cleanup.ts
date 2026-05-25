@@ -79,6 +79,18 @@ Autophagy is your body's internal recycling program. During periods of nutrient 
 > VALIDATION_DEVICE: DNA Methylation Kit
 > METRIC: Epigenetic Aging Rate (DunedinPACE)
 > STATUS: HARDWARE_LIFESPAN_EXTENDED
+
+---
+
+## Recommended tools
+
+Cellular-cleanup protocols pair with photobiomodulation routines. Three panels with verified specs:
+
+- [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — broad-spectrum biohacker premium
+- [Joovv Solo 3.0](/reviews/joovv-solo-3) — FDA-registered modular reference
+- [PlatinumLED BIOMAX 600](/reviews/platinumled-biomax-600) — six-wavelength coverage with published EMF testing
+
+[Best Red Light Therapy Panels (2026) →](/reviews/red-light-therapy)
 `,
   howToSteps: [
     { name: "The '3-Day System Flush' (Extended Fasting)", text: 'A 36-to-72 hour water-only fast performed once per quarter.', protocolId: 'longevity-system-flush' },

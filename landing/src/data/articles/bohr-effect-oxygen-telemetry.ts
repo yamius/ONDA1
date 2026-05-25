@@ -101,6 +101,18 @@ Correctly managing the Bohr Effect yields the following.
 ---
 
 > **ONDA_STATEMENT:** "Your lung capacity is the hardware pipeline. Control the gas exchange, and your brain will process signals without lag."
+
+---
+
+## Recommended tools
+
+Watching the Bohr-effect shift in real time requires a wearable that resolves SpO₂ and HRV together.
+
+- [Oura Ring 4](/reviews/oura-ring-4) — overnight SpO₂ + HRV in one device
+- [Apple Watch Series 11](/reviews/apple-watch-series-11) — blood-oxygen spot-checks plus HRV
+- [Whoop 5.0](/reviews/whoop-5-0) — continuous HRV through breath-driven sessions
+
+[Best HRV Trackers (2026) →](/reviews/hrv-trackers)
 `,
   howToSteps: [
     {

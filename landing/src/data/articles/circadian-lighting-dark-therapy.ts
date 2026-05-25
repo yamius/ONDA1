@@ -77,6 +77,18 @@ Dark Therapy is the intentional restriction of short-wavelength light to allow f
 > VALIDATION_DEVICE: Lux Meter / Spectrometer
 > METRIC: Melanopic Lux < 10 (Post-Sunset)
 > STATUS: SIGNAL_NOISE_REDUCED
+
+---
+
+## Recommended tools
+
+Dark therapy works when the protocol survives contact with real life. A tracker confirms it.
+
+- [Oura Ring 4](/reviews/oura-ring-4) — overnight sleep model that reflects light timing
+- [Sleep Cycle](/reviews/sleep-cycle) — phone-based smart-alarm tracking
+- [Rise](/reviews/rise) — sleep-debt model tied to circadian timing
+
+[Best Sleep Apps (2026) →](/reviews/sleep-apps)
 `,
   howToSteps: [
     {

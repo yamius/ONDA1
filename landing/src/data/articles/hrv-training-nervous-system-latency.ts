@@ -85,6 +85,18 @@ Think of HRV as your 'Battery Health' percentage. If you wake up with an HRV sig
 > VALIDATION_DEVICE: ECG-grade Chest Strap
 > METRIC: SDNN and rMSSD Baseline
 > STATUS: SYSTEM_LATENCY_LOW
+
+---
+
+## Recommended tools
+
+HRV training depends entirely on the device measuring it. Three consumer wearables pick up the signal cleanly enough to act on day-to-day.
+
+- [Oura Ring 4](/reviews/oura-ring-4) — passive ring with the consumer-reference sleep and HRV pipeline
+- [Whoop 5.0](/reviews/whoop-5-0) — continuous recovery-coaching band built for trained users
+- [Polar H10](/reviews/polar-h10) — ECG chest strap for reference-grade morning HRV
+
+[Best HRV Trackers (2026) →](/reviews/hrv-trackers)
 `,
   howToSteps: [
     {

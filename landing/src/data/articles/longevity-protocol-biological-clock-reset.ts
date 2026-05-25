@@ -95,6 +95,18 @@ The body has always had the capacity for this. It simply needs the correct input
 
 > [ ONDA_STATEMENT ]
 > "Longevity is the result of perfect timing. Sync your system, or watch it drift into entropy."
+
+---
+
+## Recommended tools
+
+Red-light protocols are part of most longevity stacks. The panels that actually deliver the dose they claim:
+
+- [Joovv Solo 3.0](/reviews/joovv-solo-3) — modular full-body reference
+- [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — four-wavelength large panel
+- [Hooga HG500](/reviews/hooga-hg500) — budget option that meets its specs
+
+[Best Red Light Therapy Panels (2026) →](/reviews/red-light-therapy)
 `,
   howToSteps: [
     {

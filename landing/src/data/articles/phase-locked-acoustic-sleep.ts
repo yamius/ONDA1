@@ -58,6 +58,18 @@ For decades, sleep was treated as a black box—you closed your eyes and hoped f
 > VALIDATION_DEVICE: Oura Ring Gen 4+ / Somnee Headband
 > METRIC: Deep Sleep Duration (>90 min) & Delta Wave Amplitude
 > STATUS: DEEP_SLEEP_ENHANCEMENT_ACTIVE
+
+---
+
+## Recommended tools
+
+Acoustic phase-locking and sleep tracking layer cleanly. Hardware and software that complement the protocol:
+
+- [Muse S Athena](/reviews/muse-s-athena) — EEG-based sleep staging in a sleep-friendly band
+- [Oura Ring 4](/reviews/oura-ring-4) — optical sleep-stage estimation
+- [Pzizz](/reviews/pzizz) — generative dreamscape audio for phase-onset
+
+[Best Sleep Apps (2026) →](/reviews/sleep-apps)
 `,
   howToSteps: [
     {

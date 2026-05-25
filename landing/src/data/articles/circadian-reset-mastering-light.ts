@@ -87,6 +87,18 @@ Screens at 11 PM act as a "Force Quit" for your sleep architecture. Blue light s
 > VALIDATION_DEVICE: Actigraph / Whoop
 > METRIC: Sleep Latency & RHR
 > STATUS: CLOCK_SYNC_SUCCESS
+
+---
+
+## Recommended tools
+
+A circadian reset is measured. Pair the light protocol with a tracker that catches the result.
+
+- [Sleep Cycle](/reviews/sleep-cycle) — cross-platform sleep tracking with smart alarm
+- [Calm](/reviews/calm) — sleep stories and wind-down content
+- [Oura Ring 4](/reviews/oura-ring-4) — best-in-class sleep-stage tracking
+
+[Best Sleep Apps (2026) →](/reviews/sleep-apps)
 `,
   howToSteps: [
     {

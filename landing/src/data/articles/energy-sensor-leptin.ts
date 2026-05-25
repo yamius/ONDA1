@@ -127,6 +127,18 @@ METRIC: Reduction in sugar cravings + Stable energy levels without snacking.
 
 > [ FINALIZE_ANALYSIS ]
 > Leptin is your Metabolic Balance Sheet. When you restore sensitivity to it, you stop wasting willpower on fighting hunger. The system enters an optimal expenditure mode, freeing up cognitive power for creativity and expansion.
+
+---
+
+## Recommended tools
+
+Leptin signalling is hard to see directly; glucose curves and meal-impact data are the practical proxy.
+
+- [Zoe](/reviews/zoe) — multi-biomarker model fusing CGM with microbiome and blood biomarkers
+- [Levels](/reviews/levels) — continuous CGM as a self-experimentation instrument
+- [Signos](/reviews/signos) — AI-coached CGM focused on weight regulation
+
+[Best CGMs for Biohackers (2026) →](/reviews/cgm)
 `,
 }
 

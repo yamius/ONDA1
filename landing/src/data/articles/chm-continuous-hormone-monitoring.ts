@@ -87,6 +87,18 @@ For both men and women, hormonal cycles dictate cognitive bandwidth. Real-time m
 
 System Visibility: Absolute.
 Control Level: Operator.
+
+---
+
+## Recommended tools
+
+Continuous hormone monitoring does not yet exist as a consumer product; CGM is the closest currently-available signal.
+
+- [Zoe](/reviews/zoe) — multi-biomarker programme including blood-biomarker panel
+- [Levels](/reviews/levels) — continuous glucose as the closest existing analogue
+- [Nutrisense](/reviews/nutrisense) — CGM plus dietitian for hormone-adjacent intake
+
+[Best CGMs for Biohackers (2026) →](/reviews/cgm)
 `,
   howToSteps: [
     {
