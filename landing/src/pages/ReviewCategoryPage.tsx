@@ -76,10 +76,13 @@ export function ReviewCategoryPage() {
   const catReviews = reviews.filter((r) => r.category === category)
   const catComparison = comparisons.find((c) => c.category === category)
   const otherCategories = REVIEW_CATEGORIES.filter((c) => c !== category)
-  // Head-to-heads where both products belong to this category.
+  // Head-to-heads where every product (2 or 3) belongs to this category.
   const catReviewSlugs = new Set(catReviews.map((r) => r.slug))
   const catHeadToHeads = headToHeads.filter(
-    (h) => catReviewSlugs.has(h.productASlug) && catReviewSlugs.has(h.productBSlug),
+    (h) =>
+      catReviewSlugs.has(h.productASlug) &&
+      catReviewSlugs.has(h.productBSlug) &&
+      (h.productCSlug ? catReviewSlugs.has(h.productCSlug) : true),
   )
   const { h1, intro } = CATEGORY_INTRO[category]
   const label = CATEGORY_LABELS[category]
@@ -150,7 +153,9 @@ export function ReviewCategoryPage() {
             {catHeadToHeads.map((h) => {
               const a = getReviewBySlug(h.productASlug)
               const b = getReviewBySlug(h.productBSlug)
-              if (!a || !b) return null
+              const c = h.productCSlug ? getReviewBySlug(h.productCSlug) : undefined
+              if (!a || !b || (h.productCSlug && !c)) return null
+              const names = c ? [a.name, b.name, c.name] : [a.name, b.name]
               return (
                 <Link
                   key={h.slug}
@@ -158,7 +163,12 @@ export function ReviewCategoryPage() {
                   className="glass-card group flex items-start justify-between gap-3 rounded-lg p-4 transition-all hover:border-terminal-green/20"
                 >
                   <p className="font-mono text-sm font-semibold text-white/80 transition-colors group-hover:text-terminal-green">
-                    {a.name} <span className="text-white/35">vs</span> {b.name}
+                    {names.map((n, i) => (
+                      <span key={i}>
+                        {i > 0 && <span className="text-white/35"> vs </span>}
+                        {n}
+                      </span>
+                    ))}
                   </p>
                   <span className="font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">→</span>
                 </Link>

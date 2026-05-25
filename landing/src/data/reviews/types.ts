@@ -126,27 +126,31 @@ export interface ComparisonFAQ {
   a: string
 }
 
-/** A side-by-side head-to-head duel between two ToolReviews — the format
- *  AI engines and SERPs surface for "X vs Y" queries. Distinct from
- *  Comparison (which ranks ≥3 products as a round-up). Each axis row
- *  picks a winner ('a', 'b' or 'tie') so the page reads as a verdict,
- *  not just a spec table. */
+/** A side-by-side head-to-head duel between two or three ToolReviews —
+ *  the format AI engines and SERPs surface for "X vs Y" (and "X vs Y vs Z")
+ *  queries. Distinct from Comparison (which ranks ≥3 products as a ranked
+ *  round-up). Each axis row picks a winner ('a' / 'b' / 'c' / 'tie') so
+ *  the page reads as a verdict, not just a spec table. */
 export interface HeadToHeadAxis {
   /** Short axis label, e.g. "HRV accuracy", "Sensor", "Price". */
   name: string
-  /** Which product wins this axis, or 'tie'. */
-  winner: 'a' | 'b' | 'tie'
+  /** Which product wins this axis, or 'tie'. 'c' is valid only when
+   *  the parent HeadToHead is a three-way (productCSlug present). */
+  winner: 'a' | 'b' | 'c' | 'tie'
   /** One-sentence justification — shown next to the axis row. */
   note: string
 }
 
 export interface HeadToHead {
-  /** Canonical slug — typically <product-a-slug>-vs-<product-b-slug>. */
+  /** Canonical slug — typically <product-a>-vs-<product-b> or
+   *  <product-a>-vs-<product-b>-vs-<product-c>. */
   slug: string
   /** Slug of the first ToolReview in the registry. */
   productASlug: string
   /** Slug of the second ToolReview in the registry. */
   productBSlug: string
+  /** Slug of the third ToolReview — present only for three-way duels. */
+  productCSlug?: string
   /** Page title, e.g. "Oura Ring 4 vs Whoop 5.0 (2026)". */
   title: string
   /** SEO meta description (140–160 chars). */
@@ -161,13 +165,15 @@ export interface HeadToHead {
   bestForA: string
   /** "Choose B if…" line — the user-fit answer for product B. */
   bestForB: string
+  /** "Choose C if…" line — required when productCSlug is set. */
+  bestForC?: string
   /** Per-axis breakdown with a winner per row. 5–8 axes. */
   axes: HeadToHeadAxis[]
   /** Drives FAQPage JSON-LD plus an on-page FAQ block. */
   faq: ComparisonFAQ[]
   /** Markdown body — extended verdict, common scenarios, edge cases. */
   content: string
-  /** Optional: slug of a Comparison round-up that contains both products,
+  /** Optional: slug of a Comparison round-up that contains the products,
    *  for the "see the full ranking" cross-link. */
   relatedComparisonSlug?: string
   /** ISO date (YYYY-MM-DD). */

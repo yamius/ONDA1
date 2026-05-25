@@ -370,7 +370,9 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       const h2h = getHeadToHeadBySlug(segments[2])
       const a = h2h ? getReviewBySlug(h2h.productASlug) : undefined
       const b = h2h ? getReviewBySlug(h2h.productBSlug) : undefined
-      const name = a && b ? `${a.name} vs ${b.name}` : (h2h?.title ?? segments[2])
+      const c = h2h?.productCSlug ? getReviewBySlug(h2h.productCSlug) : undefined
+      const names = [a?.name, b?.name, c?.name].filter(Boolean) as string[]
+      const name = names.length >= 2 ? names.join(' vs ') : (h2h?.title ?? segments[2])
       items.push({ name, url: `${SITE_URL}/reviews/vs/${segments[2]}` })
     } else if (segments[1]) {
       // A /reviews/<slug> URL is either a per-category landing page
@@ -1886,11 +1888,13 @@ export function getMetaForRoute(route: string): RouteMeta {
     if (h2h) {
       const a = getReviewBySlug(h2h.productASlug)
       const b = getReviewBySlug(h2h.productBSlug)
+      const c = h2h.productCSlug ? getReviewBySlug(h2h.productCSlug) : undefined
       const items =
         a && b
           ? [
               { url: `${SITE_URL}/reviews/${a.slug}`, name: a.name },
               { url: `${SITE_URL}/reviews/${b.slug}`, name: b.name },
+              ...(c ? [{ url: `${SITE_URL}/reviews/${c.slug}`, name: c.name }] : []),
             ]
           : []
       return {

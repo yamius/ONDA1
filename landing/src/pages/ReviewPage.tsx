@@ -247,9 +247,15 @@ export function ReviewPage() {
           </h2>
           <div className="grid gap-3">
             {productHeadToHeads.map((h) => {
-              const otherSlug = h.productASlug === review.slug ? h.productBSlug : h.productASlug
-              const other = getReviewBySlug(otherSlug)
-              if (!other) return null
+              // Build the duel's list of products with the current review
+              // pinned first, then the other 1 or 2 sides.
+              const otherSlugs = [h.productASlug, h.productBSlug, h.productCSlug]
+                .filter((s): s is string => !!s && s !== review.slug)
+              const others = otherSlugs
+                .map((s) => getReviewBySlug(s))
+                .filter((r): r is NonNullable<typeof r> => !!r)
+              if (others.length === 0) return null
+              const names = [review.name, ...others.map((o) => o.name)]
               return (
                 <Link
                   key={h.slug}
@@ -257,7 +263,12 @@ export function ReviewPage() {
                   className="glass-card group flex items-center justify-between gap-4 rounded-lg p-4 transition-all hover:border-terminal-cyan/30"
                 >
                   <span className="font-mono text-sm font-semibold text-white/80 transition-colors group-hover:text-terminal-cyan">
-                    {review.name} <span className="text-white/35">vs</span> {other.name}
+                    {names.map((n, i) => (
+                      <span key={i}>
+                        {i > 0 && <span className="text-white/35"> vs </span>}
+                        {n}
+                      </span>
+                    ))}
                   </span>
                   <span className="font-mono text-xs text-white/30 transition-colors group-hover:text-terminal-cyan/60">→</span>
                 </Link>

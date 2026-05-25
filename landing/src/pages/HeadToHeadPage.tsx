@@ -27,10 +27,17 @@ export function HeadToHeadPage() {
 
   const a = getReviewBySlug(h2h.productASlug)
   const b = getReviewBySlug(h2h.productBSlug)
+  const c = h2h.productCSlug ? getReviewBySlug(h2h.productCSlug) : undefined
   if (!a || !b) return <NotFoundPage />
+  if (h2h.productCSlug && !c) return <NotFoundPage />
 
-  const winner =
-    h2h.winnerSlug === a.slug ? a : h2h.winnerSlug === b.slug ? b : null
+  // Either a 2-product duel or a 3-product duel. The page renders 2 or 3
+  // columns based on `products.length`; the axis rows render the winning
+  // side's name (or "Tie") regardless of arity.
+  const products = c ? [a, b, c] : [a, b]
+  const colsClass = products.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2'
+
+  const winner = products.find((p) => p.slug === h2h.winnerSlug) ?? null
   const related = h2h.relatedComparisonSlug ? getComparisonBySlug(h2h.relatedComparisonSlug) : undefined
 
   return (
@@ -48,7 +55,7 @@ export function HeadToHeadPage() {
         </Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">
-          {a.name} vs {b.name}
+          {products.map((p) => p.name).join(' vs ')}
         </span>
       </nav>
 
@@ -68,9 +75,10 @@ export function HeadToHeadPage() {
         <p className="text-sm leading-relaxed text-white/85">{h2h.verdict}</p>
       </section>
 
-      {/* Two-column product cards — scores side by side. */}
-      <section className="mb-10 grid gap-4 sm:grid-cols-2">
-        {[a, b].map((p) => (
+      {/* Product cards — scores side by side. Renders 2 or 3 columns
+          depending on whether the duel includes a third product. */}
+      <section className={`mb-10 grid gap-4 ${colsClass}`}>
+        {products.map((p) => (
           <Link
             key={p.slug}
             to={`${langPrefix}/reviews/${p.slug}`}
@@ -102,7 +110,13 @@ export function HeadToHeadPage() {
         <ul className="divide-y divide-white/5 overflow-hidden rounded-xl border border-white/5 bg-white/[0.02]">
           {h2h.axes.map((axis) => {
             const winnerName =
-              axis.winner === 'a' ? a.name : axis.winner === 'b' ? b.name : 'Tie'
+              axis.winner === 'a'
+                ? a.name
+                : axis.winner === 'b'
+                  ? b.name
+                  : axis.winner === 'c' && c
+                    ? c.name
+                    : 'Tie'
             const winnerColor =
               axis.winner === 'tie'
                 ? 'text-white/40'
@@ -124,20 +138,22 @@ export function HeadToHeadPage() {
         </ul>
       </section>
 
-      {/* "Choose X if…" callouts side by side. */}
-      <section className="mb-10 grid gap-4 sm:grid-cols-2">
-        <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-          <p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-terminal-cyan/70">
-            Choose {a.name}
-          </p>
-          <p className="text-sm leading-relaxed text-white/75">{h2h.bestForA}</p>
-        </div>
-        <div className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
-          <p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-terminal-cyan/70">
-            Choose {b.name}
-          </p>
-          <p className="text-sm leading-relaxed text-white/75">{h2h.bestForB}</p>
-        </div>
+      {/* "Choose X if…" callouts — 2 or 3 columns depending on duel arity. */}
+      <section className={`mb-10 grid gap-4 ${colsClass}`}>
+        {(
+          [
+            [a, h2h.bestForA],
+            [b, h2h.bestForB],
+            ...(c && h2h.bestForC ? [[c, h2h.bestForC] as const] : []),
+          ] as ReadonlyArray<readonly [typeof a, string]>
+        ).map(([p, line]) => (
+          <div key={p.slug} className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
+            <p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-terminal-cyan/70">
+              Choose {p.name}
+            </p>
+            <p className="text-sm leading-relaxed text-white/75">{line}</p>
+          </div>
+        ))}
       </section>
 
       {/* Extended editorial verdict. */}

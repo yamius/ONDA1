@@ -39,9 +39,28 @@ import calmVsInsightTimer from './calm-vs-insight-timer'
 // Sleep
 import sleepCycleVsSleepAsAndroid from './sleep-cycle-vs-sleep-as-android'
 import sleepioVsPzizz from './sleepio-vs-pzizz'
+import bettersleepVsSleepCycle from './bettersleep-vs-sleep-cycle'
+// Three-way duels
+import pulsettoVsNurosymVsApollo from './pulsetto-vs-nurosym-vs-apollo-neuro'
+import ouraVsWhoopVsApple from './oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11'
+// HRV (continued)
+import polarH10VsGarmin from './polar-h10-vs-garmin-venu-4'
+// CGM (continued)
+import nutrisenseVsZoe from './nutrisense-vs-zoe'
+// Vagus (continued)
+import flowVsApollo from './flow-neuroscience-vs-apollo-neuro'
+// EEG (continued)
+import sensAiVsMuse from './sens-ai-vs-muse-s-athena'
+import mendiVsMuse2 from './mendi-vs-muse-2'
+// Meditation (continued)
+import headspaceVsInsight from './headspace-vs-insight-timer'
+import healthyMindsVsWakingUp from './healthy-minds-program-vs-waking-up'
 
 /** All published head-to-head duels, in editorial order. */
 export const headToHeads: HeadToHead[] = [
+  // Three-way duels
+  ouraVsWhoopVsApple,
+  pulsettoVsNurosymVsApollo,
   // HRV
   ouraRing4VsWhoop50,
   ouraVsAppleWatch,
@@ -52,6 +71,7 @@ export const headToHeads: HeadToHead[] = [
   whoopVsPolarH10,
   ringconnVsUltrahuman,
   appleWatchVsFitbit,
+  polarH10VsGarmin,
   // CGM
   levelsVsNutrisense,
   steloVsLingo,
@@ -59,6 +79,7 @@ export const headToHeads: HeadToHead[] = [
   zoeVsLevels,
   signosVsLevels,
   veriVsLevels,
+  nutrisenseVsZoe,
   // Vagus
   apolloNeuroVsPulsetto,
   nurosymVsPulsetto,
@@ -66,26 +87,36 @@ export const headToHeads: HeadToHead[] = [
   sensateVsApollo,
   gammacoreVsNurosym,
   hoolestVsPulsetto,
+  flowVsApollo,
   // EEG
   museSAthenaVsMuse2,
   neurosityVsEmotiv,
   muse2VsFocuscalm,
+  sensAiVsMuse,
+  mendiVsMuse2,
   // Meditation
   headspaceVsCalm,
   headspaceVsWakingUp,
   calmVsInsightTimer,
+  headspaceVsInsight,
+  healthyMindsVsWakingUp,
   // Sleep
   sleepCycleVsSleepAsAndroid,
   sleepioVsPzizz,
+  bettersleepVsSleepCycle,
 ]
 
 export function getHeadToHeadBySlug(slug: string): HeadToHead | undefined {
   return headToHeads.find((h) => h.slug === slug)
 }
 
-/** All head-to-heads that reference a given product slug as either side. */
+/** All head-to-heads that reference a given product slug as any of the
+ *  two or three sides. */
 export function getHeadToHeadsForProduct(productSlug: string): HeadToHead[] {
   return headToHeads.filter(
-    (h) => h.productASlug === productSlug || h.productBSlug === productSlug,
+    (h) =>
+      h.productASlug === productSlug ||
+      h.productBSlug === productSlug ||
+      h.productCSlug === productSlug,
   )
 }
