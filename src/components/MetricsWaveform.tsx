@@ -28,7 +28,11 @@ interface MetricsWaveformProps {
 
 const WINDOW_SECONDS = 60;
 const SAMPLE_HZ = 1;
-const BUFFER_SIZE = WINDOW_SECONDS * SAMPLE_HZ;
+// Видимое окно — WINDOW_SECONDS точек. Внутреннее хранилище длиннее на
+// STRESS_SHIFT_SAMPLES, чтобы у stress-линии всегда было реальное
+// прошлое значение для сдвига, а не flat-extension левого края.
+const VISIBLE_SAMPLES = WINDOW_SECONDS * SAMPLE_HZ;
+const BUFFER_SIZE = VISIBLE_SAMPLES + 10; // 10 = STRESS_SHIFT_SAMPLES (см. ниже)
 
 // Физиологические диапазоны для нормализации в [0, 1].
 // HR_MAX — базовый «потолок в покое», но используется адаптивно
@@ -54,7 +58,8 @@ const ALPHA_STRESS = 0.05; // ~20 сек ramp (значительно медле
 // что было STRESS_SHIFT_SAMPLES секунд назад. Реальный фазовый
 // shift против energy: даже если raw-метрики идеально инверсные,
 // после shift пики/минимумы попадают в разные точки оси X, и линии
-// переплетаются, а не зеркалят.
+// переплетаются, а не зеркалят. ВНИМАНИЕ: при изменении этого
+// значения нужно обновить +10 в BUFFER_SIZE выше.
 const STRESS_SHIFT_SAMPLES = 10; // 10 сек запаздывания
 
 const ema = (prev: number | null, raw: number | null, alpha: number): number | null => {
@@ -111,13 +116,17 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
     (s) => s.hr == null && s.stress == null && s.energy == null,
   );
 
-  // Адаптивный потолок HR: если наблюдаемый пульс в буфере уходит
-  // выше базовых 110 bpm — расширяем шкалу, чтобы линия не упиралась
-  // в верх графика. Когда пульс возвращается в покой — потолок сам
-  // подтягивается обратно к 110. headroom +5 чтобы линия не липла к
-  // самой кромке.
+  // Видимые окна метрик. HR/Energy = последние VISIBLE_SAMPLES (realtime).
+  // Stress сдвинут на STRESS_SHIFT_SAMPLES в прошлое — за счёт расширения
+  // BUFFER_SIZE его линия имеет реальные старые значения и дотягивается
+  // до левого края, без flat-extension.
+  const realtimeSlice = buffer.slice(STRESS_SHIFT_SAMPLES);
+  const stressSlice = buffer.slice(0, VISIBLE_SAMPLES);
+
+  // Адаптивный потолок HR — считаем только по видимому окну HR, иначе
+  // off-screen пик растягивал бы шкалу когда уже сам со сцены ушёл.
   let hrMaxObserved = -Infinity;
-  for (const s of buffer) {
+  for (const s of realtimeSlice) {
     if (s.hr != null && !Number.isNaN(s.hr) && s.hr > hrMaxObserved) {
       hrMaxObserved = s.hr;
     }
@@ -169,15 +178,16 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
   };
 
   const toPath = (
+    samples: Sample[],
     extract: (s: Sample) => number | null,
     min: number,
     max: number,
   ): string => {
     const pts: Array<[number, number]> = [];
-    for (let i = 0; i < buffer.length; i++) {
-      const nv = norm(extract(buffer[i]), min, max);
+    for (let i = 0; i < samples.length; i++) {
+      const nv = norm(extract(samples[i]), min, max);
       if (nv == null) continue;
-      const x = PAD + (i / (BUFFER_SIZE - 1)) * (W - PAD * 2);
+      const x = PAD + (i / (samples.length - 1)) * (W - PAD * 2);
       const y = H - PAD - nv * (H - PAD * 2);
       pts.push([x, y]);
     }
@@ -185,20 +195,19 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
   };
 
   // Delta-режим: значения отображаются как отклонение от mean по
-  // буферу. Центр графика = текущий «обычный» уровень метрики; линия
-  // уходит вверх когда значение растёт относительно своего среднего
-  // за минуту, и вниз когда падает. Диапазон адаптивный — мин ±5%,
-  // иначе по max|delta| * 1.2 чтобы заполнять весь график. Это даёт
-  // видимость МАЛЕЙШИХ колебаний независимо от абсолютного уровня.
-  // extractAt принимает индекс — позволяет вытаскивать значение из
-  // buffer[i - shift] для временного сдвига линий друг относительно
-  // друга (разносит зеркально коррелированные метрики по оси X).
-  const toDeltaPath = (extractAt: (i: number) => number | null): string => {
+  // переданному окну. Центр графика = текущий «обычный» уровень
+  // метрики; линия уходит вверх когда значение растёт относительно
+  // своего среднего за окно, и вниз когда падает. Диапазон адаптивный —
+  // мин ±5%, иначе по max|delta| * 1.2.
+  const toDeltaPath = (
+    samples: Sample[],
+    extract: (s: Sample) => number | null,
+  ): string => {
     const values: Array<number | null> = [];
     let sum = 0;
     let count = 0;
-    for (let i = 0; i < buffer.length; i++) {
-      const v = extractAt(i);
+    for (let i = 0; i < samples.length; i++) {
+      const v = extract(samples[i]);
       values.push(v);
       if (v != null && !Number.isNaN(v)) {
         sum += v;
@@ -225,8 +234,7 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
       if (v == null || Number.isNaN(v)) continue;
       const delta = v - mean;
       const clamped = Math.max(-1, Math.min(1, delta / range));
-      const x = PAD + (i / (BUFFER_SIZE - 1)) * (W - PAD * 2);
-      // delta > 0 → линия идёт вверх (y меньше); < 0 → вниз.
+      const x = PAD + (i / (values.length - 1)) * (W - PAD * 2);
       const y = halfH - clamped * usableHalf;
       pts.push([x, y]);
     }
@@ -273,24 +281,21 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
         />
       ) : (
         <>
-          {/* Stress — delta + временной сдвиг на STRESS_SHIFT_SAMPLES сек,
-              чтобы линия не зеркалила energy. Для первых SHIFT точек
-              слева используем buffer[0].stress (flat-extension) —
-              иначе линия не доходит до левого края. */}
+          {/* Stress — delta из stressSlice (буфер сдвинут на
+              STRESS_SHIFT_SAMPLES в прошлое относительно HR/energy).
+              Линия дотягивается до левого края с реальными старыми
+              значениями stress, переплетение с energy сохраняется. */}
           <path
-            d={toDeltaPath((i) => {
-              const idx = Math.max(0, i - STRESS_SHIFT_SAMPLES);
-              return buffer[idx].stress;
-            })}
+            d={toDeltaPath(stressSlice, (s) => s.stress)}
             fill="none"
             stroke={colorStress}
             strokeWidth="1.5"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          {/* Energy — delta в реальном времени */}
+          {/* Energy — delta в реальном времени (realtimeSlice) */}
           <path
-            d={toDeltaPath((i) => buffer[i].energy)}
+            d={toDeltaPath(realtimeSlice, (s) => s.energy)}
             fill="none"
             stroke={colorEnergy}
             strokeWidth="1.5"
@@ -299,7 +304,7 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
           />
           {/* HR — самая толстая, рисуется последней, чтобы быть сверху */}
           <path
-            d={toPath((s) => s.hr, HR_MIN, hrMax)}
+            d={toPath(realtimeSlice, (s) => s.hr, HR_MIN, hrMax)}
             fill="none"
             stroke={colorHR}
             strokeWidth="2.5"
