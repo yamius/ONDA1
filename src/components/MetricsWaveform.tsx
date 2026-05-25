@@ -37,8 +37,11 @@ const BUFFER_SIZE = WINDOW_SECONDS * SAMPLE_HZ;
 const HR_MIN = 50;
 const HR_MAX_BASE = 110;
 const HR_HEADROOM = 5;
-const PCT_MIN = 0;
-const PCT_MAX = 100;
+// Stress/Energy в реальности крайне редко дают 0% или 100%. Сужаем
+// рабочий диапазон до 10–90 — линии получают больше визуальной
+// амплитуды при тех же реальных значениях.
+const PCT_MIN = 10;
+const PCT_MAX = 90;
 
 // EMA-сглаживание для stress/energy.
 // Raw-значения апдейтятся скачкообразно раз в ~5 сек. Без сглаживания
@@ -138,8 +141,8 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
 
   // ViewBox используем фиксированный, ширину тянем через style — preserveAspectRatio=none.
   const W = 600;
-  const H = 140;
-  const PAD = 6;
+  const H = 200;
+  const PAD = 4;
 
   // Catmull-Rom → cubic Bezier (tension 1/6). Сглаживает резкие
   // ступеньки (например stress/energy который обновляется раз в 5 сек).
@@ -203,7 +206,7 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
       className={className}
       viewBox={`0 0 ${W} ${H}`}
       preserveAspectRatio="none"
-      style={{ width: '100%', height: 96, display: 'block' }}
+      style={{ width: '100%', height: 140, display: 'block' }}
       aria-hidden="true"
     >
       {noData ? (
