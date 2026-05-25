@@ -43,6 +43,17 @@ import bettersleepVsSleepCycle from './bettersleep-vs-sleep-cycle'
 // Three-way duels
 import pulsettoVsNurosymVsApollo from './pulsetto-vs-nurosym-vs-apollo-neuro'
 import ouraVsWhoopVsApple from './oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11'
+import threeRings from './oura-ring-4-vs-ultrahuman-ring-air-vs-ringconn-gen-2'
+import threeCgm from './levels-vs-nutrisense-vs-stelo'
+import threeOtcCgm from './lingo-vs-stelo-vs-ultrahuman-m1'
+import threeEeg from './muse-s-athena-vs-muse-2-vs-neurosity-crown'
+import threeMeditation from './headspace-vs-calm-vs-insight-timer'
+import threeVagusForms from './apollo-neuro-vs-sensate-vs-hoolest-verelief-prime'
+import threeCervical from './gammacore-sapphire-cv-vs-truvaga-350-vs-pulsetto'
+import threeSleep from './sleepio-vs-sleep-cycle-vs-pzizz'
+// More two-way fillers
+import ouraVsRingconn from './oura-ring-4-vs-ringconn-gen-2'
+import nurosymVsVagustim from './nurosym-vs-vagustim'
 // HRV (continued)
 import polarH10VsGarmin from './polar-h10-vs-garmin-venu-4'
 // CGM (continued)
@@ -60,7 +71,15 @@ import healthyMindsVsWakingUp from './healthy-minds-program-vs-waking-up'
 export const headToHeads: HeadToHead[] = [
   // Three-way duels
   ouraVsWhoopVsApple,
+  threeRings,
   pulsettoVsNurosymVsApollo,
+  threeCervical,
+  threeVagusForms,
+  threeCgm,
+  threeOtcCgm,
+  threeEeg,
+  threeMeditation,
+  threeSleep,
   // HRV
   ouraRing4VsWhoop50,
   ouraVsAppleWatch,
@@ -72,6 +91,7 @@ export const headToHeads: HeadToHead[] = [
   ringconnVsUltrahuman,
   appleWatchVsFitbit,
   polarH10VsGarmin,
+  ouraVsRingconn,
   // CGM
   levelsVsNutrisense,
   steloVsLingo,
@@ -88,6 +108,7 @@ export const headToHeads: HeadToHead[] = [
   gammacoreVsNurosym,
   hoolestVsPulsetto,
   flowVsApollo,
+  nurosymVsVagustim,
   // EEG
   museSAthenaVsMuse2,
   neurosityVsEmotiv,
