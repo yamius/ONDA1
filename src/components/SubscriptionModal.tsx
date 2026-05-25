@@ -84,7 +84,14 @@ const THEMES_LIGHT = {
 export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscribed, source }: SubscriptionModalProps) {
   const { t } = useTranslation();
   const { track } = useAnalytics();
-  const [selectedPlan, setSelectedPlan] = useState<'yearly' | 'monthly'>('yearly');
+  // Default 'monthly' (был 'yearly'). По данным первых 5 trial'ов:
+  // yearly $64.99 + 14d trial → 0/2 conversion (отменяют до списания,
+  // $64.99 single payment психологически пугает). monthly $14.99 + 7d
+  // trial → 1/1 conversion. Monthly = soft commitment, легче решиться
+  // оставить. После 1-2 месяцев платных можно показать upsell на
+  // yearly с экономией 64% — это превратит yearly из commit-приведения
+  // в reward за удержание.
+  const [selectedPlan, setSelectedPlan] = useState<'yearly' | 'monthly'>('monthly');
   const [legalModal, setLegalModal] = useState<'terms' | 'privacy' | null>(null);
   const [purchaseError, setPurchaseError] = useState<string | null>(null);
 
