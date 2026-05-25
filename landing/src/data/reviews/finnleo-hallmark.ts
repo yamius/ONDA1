@@ -67,6 +67,7 @@ The biology of why heat exposure works — and the protocols that compound with 
     { label: 'Finnish sauna bathing and dementia risk (Age and Ageing)', url: 'https://academic.oup.com/ageing/article/46/2/245/2654230' },
   ],
   relatedSlugs: ['almost-heaven-salem', 'sunlighten-mpulse', 'saunaspace-faraday'],
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

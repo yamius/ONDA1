@@ -66,6 +66,7 @@ The biology of why heat exposure works — and the protocols that compound with 
     { label: 'Sun Home Saunas — official site', url: 'https://sunhomesaunas.com/' },
   ],
   relatedSlugs: ['sunlighten-mpulse', 'clearlight-sanctuary-2', 'therasage-thera-sauna-personal'],
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

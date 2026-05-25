@@ -467,8 +467,13 @@ export function getPrerenderRoutes(): string[] {
     // Per-category landing pages — /reviews/hrv-trackers, /reviews/cgm, etc.
     // Each gets its own focused page that ranks for the dominant search
     // keyword ("best HRV tracker", "best CGM", "best EEG headset") instead
-    // of the single /reviews omnibus.
-    ...Object.values(CATEGORY_URL_SLUGS).map((s) => `/reviews/${s}`),
+    // of the single /reviews omnibus. Only categories with at least one
+    // live review are prerendered — date-gated empty categories are
+    // skipped until their reviews go live.
+    ...(Array.from(new Set(reviews.map((r) => r.category))) as Array<keyof typeof CATEGORY_URL_SLUGS>)
+      .map((c) => CATEGORY_URL_SLUGS[c])
+      .filter(Boolean)
+      .map((s) => `/reviews/${s}`),
     ...reviews.map((r) => `/reviews/${r.slug}`),
     ...comparisons.map((c) => `/reviews/compare/${c.slug}`),
     // Head-to-head duels — /reviews/vs/<product-a>-vs-<product-b>. Distinct

@@ -66,6 +66,7 @@ The biology of why heat exposure works — and the protocols that compound with 
     { label: 'Relax Sauna — official site', url: 'https://www.relaxsaunas.com/' },
   ],
   relatedSlugs: ['higherdose-blanket-v4', 'therasage-thera-sauna-personal', 'jnh-lifestyles-joyous'],
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

@@ -66,6 +66,7 @@ The biology of why infrared sauna works at the mitochondrial level.
     { label: 'Sunlighten research and clinical-grade IR documentation', url: 'https://www.sunlighten.com/research/' },
   ],
   relatedSlugs: ['clearlight-sanctuary-2', 'saunaspace-faraday', 'sun-home-equinox'],
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

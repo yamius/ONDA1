@@ -141,8 +141,13 @@ import bestRedLightPanels2026 from './best-red-light-therapy-panels-2026'
 import bestColdPlunge2026 from './best-cold-plunge-2026'
 import bestInfraredSauna2026 from './best-infrared-sauna-2026'
 
-/** All published product reviews. Ordered best-scored first for the hub grid. */
-export const reviews: ToolReview[] = [
+/** Current date captured once at module load. Used to filter date-gated
+ *  reviews and comparisons out of the live registry until their publishOn
+ *  date is reached. Mirrors the head-to-head filter pattern. */
+const TODAY = new Date().toISOString().slice(0, 10)
+
+/** Full registry — including date-gated future entries. Internal only. */
+const ALL_REVIEWS: ToolReview[] = [
   ouraRing4,
   whoop5,
   polarH10,
@@ -241,8 +246,14 @@ export const reviews: ToolReview[] = [
   relaxSaunaPortable,
 ]
 
-/** All published comparison / round-up pages. */
-export const comparisons: Comparison[] = [
+/** Live product reviews — date-gated entries are excluded until their
+ *  publishOn date is reached. */
+export const reviews: ToolReview[] = ALL_REVIEWS.filter(
+  (r) => !r.publishOn || r.publishOn <= TODAY,
+)
+
+/** Full registry of comparisons — including date-gated future entries. */
+const ALL_COMPARISONS: Comparison[] = [
   bestHrvTrackers2026,
   bestMeditationApps2026,
   bestSleepApps2026,
@@ -253,6 +264,12 @@ export const comparisons: Comparison[] = [
   bestColdPlunge2026,
   bestInfraredSauna2026,
 ]
+
+/** Live round-up comparisons — date-gated entries excluded until their
+ *  publishOn date is reached. */
+export const comparisons: Comparison[] = ALL_COMPARISONS.filter(
+  (c) => !c.publishOn || c.publishOn <= TODAY,
+)
 
 export function getReviewBySlug(slug: string): ToolReview | undefined {
   return reviews.find((r) => r.slug === slug)

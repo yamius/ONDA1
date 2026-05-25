@@ -55,6 +55,7 @@ If near-IR-only via tungsten-filament incandescent bulbs is your wavelength bet 
 
 If you want full-spectrum IR with the ability to programme near, mid and far separately per session — Sunlighten is the right shape. The deepest published-research footprint and traditional cabin form factor are bonuses.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

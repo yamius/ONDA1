@@ -55,6 +55,7 @@ If portability is the deciding factor — renters, small homes, travel, no dedic
 
 If you have install space and want full-spectrum IR (near + mid + far) at mid-tier pricing — Therasage is the right shape. Closer to the premium cabin experience without the $5K+ commitment.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

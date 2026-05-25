@@ -105,6 +105,7 @@ Three buying questions resolve the category cleanly:
 **What budget tier?** Under $1,000 → HigherDose Blanket. $1,500–$3,500 → JNH Joyous, Therasage. $4,500–$6,500 → Sun Home Equinox, SaunaSpace Faraday. $5,000–$10,000+ → Sunlighten mPulse, Clearlight Sanctuary 2, Almost Heaven Salem, Finnleo Hallmark.
 
 The category is mature; these ten options cover the full landscape of consumer choices.`,
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

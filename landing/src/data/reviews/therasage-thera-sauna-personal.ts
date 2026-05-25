@@ -66,6 +66,7 @@ The biology of why heat exposure works — and the protocols that compound with 
     { label: 'Therasage — official site', url: 'https://therasage.com/' },
   ],
   relatedSlugs: ['sunlighten-mpulse', 'higherdose-blanket-v4', 'sun-home-equinox'],
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

@@ -55,6 +55,7 @@ If true 3-wavelength control (programmable near / mid / far separately) is the d
 
 If you want Jacuzzi-backed lifetime heater warranty at marginally lower price for comparable full-spectrum IR — Clearlight is the right shape. The hypoallergenic basswood option is also unique.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

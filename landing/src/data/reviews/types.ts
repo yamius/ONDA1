@@ -111,6 +111,11 @@ export interface ToolReview {
   datePublished: string
   /** ISO date (YYYY-MM-DD) — drives sitemap <lastmod> and the "Updated" UI. */
   dateModified: string
+  /** Optional date-gate (YYYY-MM-DD). Same shape as HeadToHead.publishOn —
+   *  the review is hidden from the live `reviews` array, the prerender
+   *  route list and any helper lookup until this date. Used to drip-publish
+   *  categories. Absent = live immediately. */
+  publishOn?: string
 }
 
 /** One ranked entry on a Comparison page. */
@@ -211,4 +216,8 @@ export interface Comparison {
   datePublished: string
   /** ISO date (YYYY-MM-DD) — drives sitemap <lastmod> and the "Updated" UI. */
   dateModified: string
+  /** Optional date-gate (YYYY-MM-DD). Same shape as HeadToHead.publishOn —
+   *  the comparison is hidden until this date. Used for drip-publication
+   *  alongside its constituent reviews. Absent = live immediately. */
+  publishOn?: string
 }

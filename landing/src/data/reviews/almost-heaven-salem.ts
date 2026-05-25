@@ -67,6 +67,7 @@ The biology of why heat exposure works — and the protocols that compound with 
     { label: 'Finnish sauna and cardiovascular mortality (JAMA Internal Medicine)', url: 'https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2130724' },
   ],
   relatedSlugs: ['finnleo-hallmark', 'sunlighten-mpulse', 'jnh-lifestyles-joyous'],
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

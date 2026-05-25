@@ -55,6 +55,7 @@ If you have indoor install space and want premium Finnish manufacturing pedigree
 
 If you have outdoor install space and want a traditional cedar barrel sauna with American-built construction — Almost Heaven is the right shape. The wood-burning heater option is unique and the price is marginally lower.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

@@ -66,6 +66,7 @@ The biology of why heat exposure works — and the protocols that compound with 
     { label: 'JNH Lifestyles — official site', url: 'https://jnhlifestyles.com/' },
   ],
   relatedSlugs: ['therasage-thera-sauna-personal', 'higherdose-blanket-v4', 'almost-heaven-salem'],
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

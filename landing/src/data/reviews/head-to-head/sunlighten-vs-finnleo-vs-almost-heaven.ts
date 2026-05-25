@@ -62,6 +62,7 @@ If you want premium traditional Finnish indoor sauna with Helo-engineered heater
 
 If you want traditional outdoor cedar barrel sauna and have the outdoor space — Almost Heaven is the right shape. The wood-burning heater option is unique to this category; American red cedar build at marginally lower price than Finnleo.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

@@ -66,6 +66,7 @@ The biology of why heat exposure works — and the protocols that compound with 
     { label: 'Clearlight Infrared Saunas — official site', url: 'https://infraredsauna.com/' },
   ],
   relatedSlugs: ['sunlighten-mpulse', 'sun-home-equinox', 'saunaspace-faraday'],
+  publishOn: '2026-06-04',
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }
