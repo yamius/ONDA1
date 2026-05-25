@@ -327,6 +327,55 @@ const EEG_HEADSET_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Red-light therapy panels: consumer LED photobiomodulation hardware for
+ *  skin, joints and mitochondrial-function adjunct use. The category is
+ *  notorious for inflated marketing claims around irradiance; independent
+ *  measurement and EMF/flicker discipline are weighted accordingly. */
+const RED_LIGHT_CRITERIA: Criterion[] = [
+  {
+    id: 'irradiance',
+    label: 'Irradiance and spec verification',
+    weight: 0.2,
+    description:
+      'Measured power density (mW/cm²) at the manufacturer-specified treatment distance, cross-referenced against independent meter readings rather than marketing-stated peak figures. The single biggest source of consumer confusion in this category.',
+  },
+  {
+    id: 'wavelengths',
+    label: 'Wavelength coverage',
+    weight: 0.15,
+    description:
+      'Spectrum coverage — most consumer panels combine red 660 nm (skin) with near-infrared 850 nm (deeper tissue); some add 630, 810, 830 or 940 nm. The mix and the published peaks matter more than the LED count.',
+  },
+  {
+    id: 'build-emf-flicker',
+    label: 'Build, EMF and flicker',
+    weight: 0.15,
+    description:
+      'Hardware build quality, independent EMF measurements at typical treatment distance, and driver flicker rate. Cheaper panels often skip the driver hardware that keeps both clean.',
+  },
+  {
+    id: 'coverage',
+    label: 'Panel coverage and form factor',
+    weight: 0.15,
+    description:
+      'Treatment area for the panel size — full-body, half-body, targeted or handheld — and ergonomics for unattended sessions (stand, hanging hardware, door mount).',
+  },
+  {
+    id: 'evidence',
+    label: 'Evidence and regulatory status',
+    weight: 0.15,
+    description:
+      'Quality of the published photobiomodulation literature backing the device’s claimed indications, FDA registration / Class II clearances where applicable, and how honestly the manufacturer represents what its panel does versus the published evidence.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.2,
+    description:
+      'Hardware price weighed against measured irradiance × coverage area × build quality. Premium pricing is acceptable when independent verification matches; thin when it does not.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
@@ -335,6 +384,7 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'vagus-stim': VAGUS_STIM_CRITERIA,
   cgm: CGM_CRITERIA,
   'eeg-headset': EEG_HEADSET_CRITERIA,
+  'red-light': RED_LIGHT_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -345,6 +395,7 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   'vagus-stim': 'Vagus nerve stimulators',
   cgm: 'Continuous glucose monitors',
   'eeg-headset': 'EEG & brain-training headsets',
+  'red-light': 'Red light therapy panels',
 }
 
 /** Review categories in display order. */
@@ -355,6 +406,7 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'vagus-stim',
   'cgm',
   'eeg-headset',
+  'red-light',
 ]
 
 /** URL slugs for per-category landing pages — /reviews/<slug>. Chosen to
@@ -368,6 +420,7 @@ export const CATEGORY_URL_SLUGS: Record<ReviewCategory, string> = {
   'vagus-stim': 'vagus-nerve-stimulators',
   cgm: 'cgm',
   'eeg-headset': 'eeg-headsets',
+  'red-light': 'red-light-therapy',
 }
 
 /** Reverse lookup — URL slug → category id. Returns undefined if the slug

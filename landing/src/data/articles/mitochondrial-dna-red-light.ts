@@ -61,6 +61,19 @@ Why does light drive energy? Within the mitochondria, ATP Synthase is a nanomoto
 > SPECTRUM_CHECK: 660nm (Surface) + 850nm (Deep Tissue)
 > METRIC: Increase in Grip Strength / Recovery Speed (via HRV)
 > STATUS: PHOTONIC_FLOW_ACTIVE
+
+---
+
+## Recommended hardware
+
+The panel is the variable. Most consumer red-light products inflate their irradiance figures and bury their EMF and flicker numbers behind the spec sheet — both matter when you are running 10–30 minute sessions daily. Independent verification is the single biggest filter when buying.
+
+ONDA has scored the ten most credible panels of 2026 on irradiance, wavelength coverage, EMF/flicker discipline and value. The full ranked list lives at [Best Red Light Therapy Panels (2026)](/reviews/red-light-therapy). The short version:
+
+- [Joovv Solo 3.0](/reviews/joovv-solo-3) — the FDA-registered modular reference. Premium-priced.
+- [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — biohacker favourite, four-wavelength coverage, cheaper than Joovv.
+- [PlatinumLED BIOMAX 600](/reviews/platinumled-biomax-600) — six wavelengths and published third-party EMF testing.
+- [Hooga HG500](/reviews/hooga-hg500) — the budget entry at $349 with honest specs.
 `,
   howToSteps: [
     {

@@ -65,6 +65,17 @@ import rise from './rise'
 import pzizz from './pzizz'
 import autosleep from './autosleep'
 import endel from './endel'
+// Red light therapy panels (May 2026)
+import joovvSolo3 from './joovv-solo-3'
+import mitoRedMitoPro1500 from './mito-red-mitopro-1500'
+import platinumledBiomax600 from './platinumled-biomax-600'
+import gembaredVesta from './gembared-vesta'
+import rubylxLyraPro from './rubylx-lyra-pro'
+import infraredi from './infraredi-pro-1500'
+import bioLightPro900 from './biolight-pro-900'
+import hoogaHg500 from './hooga-hg500'
+import bonCharge from './bon-charge-red-light-panel'
+import kineonMovePlus from './kineon-move-plus'
 // EEG / brain-training headsets (May 2026)
 import museSAthena from './muse-s-athena'
 import muse2 from './muse-2'
@@ -104,6 +115,7 @@ import bestSleepApps2026 from './best-sleep-apps-2026'
 import bestVagusNerveStimulators2026 from './best-vagus-nerve-stimulators-2026'
 import bestCgmForBiohackers2026 from './best-cgm-for-biohackers-2026'
 import bestEegHeadsets2026 from './best-eeg-headsets-2026'
+import bestRedLightPanels2026 from './best-red-light-therapy-panels-2026'
 
 /** All published product reviews. Ordered best-scored first for the hub grid. */
 export const reviews: ToolReview[] = [
@@ -170,6 +182,17 @@ export const reviews: ToolReview[] = [
   focuscalm,
   flowNeuroscience,
   neuroskyMindwaveMobile2,
+  // Red light therapy panels — ordered by overallScore.
+  joovvSolo3,
+  mitoRedMitoPro1500,
+  platinumledBiomax600,
+  gembaredVesta,
+  rubylxLyraPro,
+  infraredi,
+  bioLightPro900,
+  hoogaHg500,
+  bonCharge,
+  kineonMovePlus,
 ]
 
 /** All published comparison / round-up pages. */
@@ -180,6 +203,7 @@ export const comparisons: Comparison[] = [
   bestVagusNerveStimulators2026,
   bestCgmForBiohackers2026,
   bestEegHeadsets2026,
+  bestRedLightPanels2026,
 ]
 
 export function getReviewBySlug(slug: string): ToolReview | undefined {

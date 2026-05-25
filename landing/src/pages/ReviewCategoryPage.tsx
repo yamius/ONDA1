@@ -58,6 +58,11 @@ const CATEGORY_INTRO: Record<ReviewCategory, { h1: string; intro: string }> = {
     intro:
       'The brain-training headset market splits across three modalities — EEG measurement, fNIRS prefrontal sensing and tDCS stimulation — plus clinical-prescribed and multi-modal-premium entries. ONDA scored the ten most credible devices of 2026 across all modalities against the same rubric, so the cross-modality trade-offs are explicit.',
   },
+  'red-light': {
+    h1: 'Best Red Light Therapy Panels (2026)',
+    intro:
+      'Red light therapy is one of the most marketing-noisy biohacker categories on the market — inflated irradiance claims, EMF and flicker hidden behind the spec sheet, premium pricing not always backed by the build. ONDA scored the ten most credible panels of 2026 against the same six axes, with independent irradiance measurement and EMF/flicker discipline carrying weight on purpose.',
+  },
 }
 
 export function ReviewCategoryPage() {

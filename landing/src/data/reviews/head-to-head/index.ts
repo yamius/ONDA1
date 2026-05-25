@@ -63,6 +63,14 @@ import threeSleep from './sleepio-vs-sleep-cycle-vs-pzizz'
 // More two-way fillers
 import ouraVsRingconn from './oura-ring-4-vs-ringconn-gen-2'
 import nurosymVsVagustim from './nurosym-vs-vagustim'
+// Red light therapy (May 2026)
+import joovvVsMitoRed from './joovv-solo-3-vs-mito-red-mitopro-1500'
+import joovvVsPlatinumLed from './joovv-solo-3-vs-platinumled-biomax-600'
+import mitoRedVsHooga from './mito-red-mitopro-1500-vs-hooga-hg500'
+import gembaredVsJoovv from './gembared-vesta-vs-joovv-solo-3'
+import platinumledVsBioLight from './platinumled-biomax-600-vs-biolight-pro-900'
+import topThreePanels from './joovv-solo-3-vs-mito-red-mitopro-1500-vs-platinumled-biomax-600'
+import threeValuePanels from './hooga-hg500-vs-bon-charge-red-light-panel-vs-infraredi-pro-1500'
 // Three-way duels date-gated to 2026-06-04 — hidden until that date by
 // the publishOn filter at the bottom of this file.
 import ouraVsWhoopVsGarmin from './oura-ring-4-vs-whoop-5-0-vs-garmin-venu-4'
@@ -146,6 +154,14 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   sleepCycleVsSleepAsAndroid,
   sleepioVsPzizz,
   bettersleepVsSleepCycle,
+  // Red light therapy
+  joovvVsMitoRed,
+  joovvVsPlatinumLed,
+  mitoRedVsHooga,
+  gembaredVsJoovv,
+  platinumledVsBioLight,
+  topThreePanels,
+  threeValuePanels,
   // Date-gated to 2026-06-04 (all three-way duels)
   ouraVsWhoopVsGarmin,
   polarVsWhoopVsGarmin,
