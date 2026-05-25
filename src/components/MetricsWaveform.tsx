@@ -274,13 +274,14 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
       ) : (
         <>
           {/* Stress — delta + временной сдвиг на STRESS_SHIFT_SAMPLES сек,
-              чтобы линия не зеркалила energy. */}
+              чтобы линия не зеркалила energy. Для первых SHIFT точек
+              слева используем buffer[0].stress (flat-extension) —
+              иначе линия не доходит до левого края. */}
           <path
-            d={toDeltaPath((i) =>
-              i >= STRESS_SHIFT_SAMPLES
-                ? buffer[i - STRESS_SHIFT_SAMPLES].stress
-                : null,
-            )}
+            d={toDeltaPath((i) => {
+              const idx = Math.max(0, i - STRESS_SHIFT_SAMPLES);
+              return buffer[idx].stress;
+            })}
             fill="none"
             stroke={colorStress}
             strokeWidth="1.5"
