@@ -50,7 +50,18 @@ It is not a panel and cannot replace one. The wrap covers a single joint per ses
 
 ## Who it is for
 
-Choose Kineon Move+ if you have a specific joint-pain indication (knee, elbow, shoulder) and want laser-grade dose with FDA backing. For general red-light therapy, full-body photobiomodulation, or skin indications — choose a panel (Joovv, Mito Red, PlatinumLED). Not substitutes; different jobs.`,
+Choose Kineon Move+ if you have a specific joint-pain indication (knee, elbow, shoulder) and want laser-grade dose with FDA backing. For general red-light therapy, full-body photobiomodulation, or skin indications — choose a panel (Joovv, Mito Red, PlatinumLED). Not substitutes; different jobs.
+
+---
+
+## Background reading
+
+The photobiomodulation mechanism behind why red light therapy works.
+
+- [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how RLT fits the broader autophagy / mitophagy stack
+- [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where photobiomodulation slots into a reset routine
+- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how 660/850 nm photons reach the mitochondria and what they do there
+`,
   references: [
     { label: 'Kineon Move+ — official product page', url: 'https://kineon.io/move-plus' },
     { label: 'Laser photobiomodulation for knee osteoarthritis — systematic review', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8421064/' },

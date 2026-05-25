@@ -50,7 +50,18 @@ The consumer version is no longer regulated as a medical device — Truvaga is s
 
 ## Who it is for
 
-Choose Truvaga 350 if you want cervical-trunk tVNS — the same approach used in the FDA-cleared device — without going through a clinician, and you are willing to accept thinner wellness-indication evidence in exchange for accessibility. If you want the deepest research base, Nurosym (auricular) has the trial record. If you have a real headache diagnosis, gammaCore is the right tool.`,
+Choose Truvaga 350 if you want cervical-trunk tVNS — the same approach used in the FDA-cleared device — without going through a clinician, and you are willing to accept thinner wellness-indication evidence in exchange for accessibility. If you want the deepest research base, Nurosym (auricular) has the trial record. If you have a real headache diagnosis, gammaCore is the right tool.
+
+---
+
+## Background reading
+
+The biology behind what these devices target — and the protocols that compound with the hardware.
+
+- [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — why slow breathing rebuilds vagal tone via CO₂ chemistry
+- [Breathwork as a command-line interface](/articles/breathwork-command-line-interface) — the protocols stimulation pairs with
+- [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — why vagal tone work targets cortisol downstream
+`,
   references: [
     { label: 'Truvaga 350 — official product page', url: 'https://www.truvaga.com/' },
     { label: 'electroCore — published nVNS trial library', url: 'https://www.electrocore.com/clinical-evidence' },

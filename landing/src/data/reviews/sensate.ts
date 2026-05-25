@@ -50,7 +50,18 @@ Mechanism evidence is the weak point. The infrasonic-to-vagus pathway is plausib
 
 ## Who it is for
 
-Choose Sensate if you want a calming evening ritual you will actually use — sound-paired, passive, comfortable — rather than a clinical-grade stimulation device. If you want acute electrical vagus stimulation, Nurosym, Truvaga 350 or Pulsetto are the right shape. Apollo Neuro is the closest non-electrical alternative if you want all-day passive wear instead of session-based use.`,
+Choose Sensate if you want a calming evening ritual you will actually use — sound-paired, passive, comfortable — rather than a clinical-grade stimulation device. If you want acute electrical vagus stimulation, Nurosym, Truvaga 350 or Pulsetto are the right shape. Apollo Neuro is the closest non-electrical alternative if you want all-day passive wear instead of session-based use.
+
+---
+
+## Background reading
+
+The biology behind what these devices target — and the protocols that compound with the hardware.
+
+- [Vagus nerve: the master key](/articles/vagus-nerve-master-key) — why the vagus nerve sits upstream of HRV, sleep, mood and inflammation
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — the regulatory and mechanistic landscape behind non-invasive VNS
+- [ACC and coherence monitoring](/articles/anterior-cingulate-core-coherence-monitoring) — how vagal tone shapes attention and emotional regulation upstream
+`,
   references: [
     { label: 'Sensate — official product page', url: 'https://www.getsensate.com/' },
     { label: 'Sensate stress/HRV pilot RCT (open-access)', url: 'https://www.getsensate.com/science' },

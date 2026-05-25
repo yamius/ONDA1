@@ -51,7 +51,18 @@ Sleep debt is a model, not a direct measurement, so treat the numbers as a well-
 
 ## Who it is for
 
-Choose RISE if you want to manage daytime energy and time your day around your rhythm. If you mainly want nightly tracking stats or help falling asleep, a tracker or a relaxation app fits better.`,
+Choose RISE if you want to manage daytime energy and time your day around your rhythm. If you mainly want nightly tracking stats or help falling asleep, a tracker or a relaxation app fits better.
+
+---
+
+## Background reading
+
+The sleep biology behind what these apps measure and the protocols they support.
+
+- [Neural hydraulics: CSF flow](/articles/neural-hydraulics-csf-flow) — CSF circulation during sleep as the substrate of glymphatic clearance
+- [Circadian reset: mastering light](/articles/circadian-reset-mastering-light) — why light timing dominates sleep quality more than anything else
+- [Circadian lighting and dark therapy](/articles/circadian-lighting-dark-therapy) — the protocol layer that compounds with tracking
+`,
   references: [
     { label: 'RISE (Rise Science) — official site', url: 'https://www.risescience.com' },
     { label: 'Sleep and circadian rhythm research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+debt+circadian+rhythm' },

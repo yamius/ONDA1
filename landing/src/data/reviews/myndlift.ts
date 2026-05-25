@@ -51,7 +51,18 @@ You cannot buy it directly. Access is gated by a licensed mental-health provider
 
 ## Who it is for
 
-Choose Myndlift if you have a diagnosed condition (ADHD, anxiety, post-traumatic stress, sleep disorder) and a licensed mental-health provider willing to prescribe and supervise. For self-directed brain training, Muse S Athena or Neurosity Crown are the right consumer shapes; Myndlift is the clinical reference point in the same category.`,
+Choose Myndlift if you have a diagnosed condition (ADHD, anxiety, post-traumatic stress, sleep disorder) and a licensed mental-health provider willing to prescribe and supervise. For self-directed brain training, Muse S Athena or Neurosity Crown are the right consumer shapes; Myndlift is the clinical reference point in the same category.
+
+---
+
+## Background reading
+
+The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+
+- [Cognitive architecture: nootropic stacks](/articles/cognitive-architecture-nootropic-stacks) — why EEG is the closest consumer-measurable proxy for nootropic effects
+- [Digital dementia and attentional control](/articles/digital-dementia-attentional-control) — rebuilding attention with feedback-driven practice
+- [Neuroplasticity and flow overclocking](/articles/neuroplasticity-flow-overclocking) — EEG signatures of flow states and how they form
+`,
   references: [
     { label: 'Myndlift — official site', url: 'https://www.myndlift.com/' },
     { label: 'Remote neurofeedback for ADHD — clinical evidence (Frontiers in Human Neuroscience)', url: 'https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2019.00091/full' },

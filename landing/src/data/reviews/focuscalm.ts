@@ -51,7 +51,18 @@ A single electrode is informationally thin. Multi-channel systems like Muse, Cro
 
 ## Who it is for
 
-Choose FocusCalm if you want the cheapest legitimate EEG-feedback experience with real content depth and you do not care about raw data. If meditation depth is the deciding criterion, Muse 2 or Muse S Athena are the better fit at higher cost. If raw EEG is the point, look at Neurosity Crown or Emotiv Insight 2.`,
+Choose FocusCalm if you want the cheapest legitimate EEG-feedback experience with real content depth and you do not care about raw data. If meditation depth is the deciding criterion, Muse 2 or Muse S Athena are the better fit at higher cost. If raw EEG is the point, look at Neurosity Crown or Emotiv Insight 2.
+
+---
+
+## Background reading
+
+The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+
+- [Adaptation and range fractionation](/articles/adaptation-hack-range-fractionation) — training cognitive states by deliberate variation
+- [Idle-state alpha rhythms](/articles/idle-state-alpha-rhythms) — the resting cortex signal that meditation and focus headsets exploit
+- [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus that EEG resolves
+`,
   references: [
     { label: 'FocusCalm — official product page', url: 'https://focuscalm.com/' },
     { label: 'BrainCo — consumer EEG research summary', url: 'https://www.brainco.tech/' },

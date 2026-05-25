@@ -51,7 +51,18 @@ None of the individual metrics is class-leading. HRV is solid but not as cleanly
 
 ## Who it is for
 
-Choose the Garmin Venu 4 if you want one no-subscription device that handles training, everyday health and HRV competently, with the battery life to actually wear it through the night. If overnight HRV precision is the single thing you care about, a ring or a band will edge it out.`,
+Choose the Garmin Venu 4 if you want one no-subscription device that handles training, everyday health and HRV competently, with the battery life to actually wear it through the night. If overnight HRV precision is the single thing you care about, a ring or a band will edge it out.
+
+---
+
+## Background reading
+
+The science behind why HRV is the signal worth tracking — and how the body produces it.
+
+- [Interoceptive precision and sensor calibration](/articles/interoceptive-precision-sensor-calibration) — why your own perception is the upstream baseline HRV measures against
+- [Anti-entropy neural architecture](/articles/anti-entropy-neural-architecture) — HRV as the daily maintenance signal of the autonomic system
+- [HRV training and nervous-system latency](/articles/hrv-training-nervous-system-latency) — how HRV reflects autonomic responsiveness
+`,
   references: [
     { label: 'Garmin Venu — official site', url: 'https://www.garmin.com/en-US/' },
     { label: 'Garmin HRV Status — technology overview', url: 'https://www.garmin.com/en-US/garmin-technology/health-science/hrv-status/' },

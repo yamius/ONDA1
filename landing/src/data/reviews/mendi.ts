@@ -51,7 +51,18 @@ Mendi is also the narrowest entry. fNIRS is not EEG — different modality, diff
 
 ## Who it is for
 
-Choose Mendi if the simplest possible neurofeedback experience is exactly what you want, or if EEG-based devices have not produced a clear signal for you and a different modality is worth trying. For meditation breadth, Muse S Athena or Muse 2. For real EEG with developer access, Neurosity Crown or Emotiv Insight 2.`,
+Choose Mendi if the simplest possible neurofeedback experience is exactly what you want, or if EEG-based devices have not produced a clear signal for you and a different modality is worth trying. For meditation breadth, Muse S Athena or Muse 2. For real EEG with developer access, Neurosity Crown or Emotiv Insight 2.
+
+---
+
+## Background reading
+
+The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+
+- [Cognitive architecture: neural throughput](/articles/cognitive-architecture-neural-throughput) — reading EEG as the bandwidth signal of your cognitive system
+- [Cognitive architecture: nootropic stacks](/articles/cognitive-architecture-nootropic-stacks) — why EEG is the closest consumer-measurable proxy for nootropic effects
+- [Digital dementia and attentional control](/articles/digital-dementia-attentional-control) — rebuilding attention with feedback-driven practice
+`,
   references: [
     { label: 'Mendi — official product page', url: 'https://www.mendi.io/' },
     { label: 'fNIRS neurofeedback — clinical review (NeuroImage)', url: 'https://www.sciencedirect.com/science/article/pii/S1053811919309668' },

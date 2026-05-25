@@ -50,7 +50,18 @@ That same focus is the limit. If you want general biohacker insight — flow-sta
 
 ## Who it is for
 
-Choose Signos if weight loss is the primary reason you are wearing a CGM and you respond well to in-app AI nudges. If you want a deeper general-purpose insight engine, Levels. If you want a human coach, Nutrisense. The hardware is the same in all three — pick on what sits above it.`,
+Choose Signos if weight loss is the primary reason you are wearing a CGM and you respond well to in-app AI nudges. If you want a deeper general-purpose insight engine, Levels. If you want a human coach, Nutrisense. The hardware is the same in all three — pick on what sits above it.
+
+---
+
+## Background reading
+
+The metabolic biology these programmes surface — and the protocols the data unlocks.
+
+- [GLP-1 biology and muscle preservation](/articles/glp1-biology-muscle-preservation) — what CGM data shows during GLP-1 protocol use
+- [AI biomarker tracking](/articles/ai-biomarker-tracking-predictive) — CGM as the highest-density consumer biomarker stream available
+- [Continuous hormone monitoring](/articles/chm-continuous-hormone-monitoring) — why CGM is the closest consumer product to the hormone-stream future
+`,
   references: [
     { label: 'Signos — official site', url: 'https://www.signos.com/' },
     { label: 'Signos outcome data summary', url: 'https://www.signos.com/science' },

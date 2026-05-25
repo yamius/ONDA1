@@ -50,7 +50,18 @@ The CGM is a snapshot, not an instrument. Two weeks of Abbott Libre wear feed th
 
 ## Who it is for
 
-Choose Zoe if you want personalised nutrition grounded in published science and the once-only CGM phase is enough — it is the right shape for a hard reset of your eating patterns based on your own physiology, not for ongoing glucose tracking. If continuous CGM is the point, Levels (premium) or Stelo (value) are better fits.`,
+Choose Zoe if you want personalised nutrition grounded in published science and the once-only CGM phase is enough — it is the right shape for a hard reset of your eating patterns based on your own physiology, not for ongoing glucose tracking. If continuous CGM is the point, Levels (premium) or Stelo (value) are better fits.
+
+---
+
+## Background reading
+
+The metabolic biology these programmes surface — and the protocols the data unlocks.
+
+- [Energy governor: TSH](/articles/energy-governor-tsh) — thyroid-driven metabolism as the upstream of glucose-handling capacity
+- [GLP-1 biology and muscle preservation](/articles/glp1-biology-muscle-preservation) — what CGM data shows during GLP-1 protocol use
+- [AI biomarker tracking](/articles/ai-biomarker-tracking-predictive) — CGM as the highest-density consumer biomarker stream available
+`,
   references: [
     { label: 'Zoe — official site', url: 'https://zoe.com/' },
     { label: 'PREDICT-1: postprandial responses to identical foods (Nature Medicine)', url: 'https://www.nature.com/articles/s41591-020-0934-0' },

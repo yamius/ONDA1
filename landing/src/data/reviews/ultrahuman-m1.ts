@@ -50,7 +50,18 @@ Almost all the differentiation depends on also owning the Ring Air. As a standal
 
 ## Who it is for
 
-Choose Ultrahuman M1 if you already own (or plan to own) the Ultrahuman Ring Air and want glucose data composing with HRV, sleep and recovery in one place. If CGM is the only thing you want and you are not buying into the ring ecosystem, Stelo or Levels is the better fit.`,
+Choose Ultrahuman M1 if you already own (or plan to own) the Ultrahuman Ring Air and want glucose data composing with HRV, sleep and recovery in one place. If CGM is the only thing you want and you are not buying into the ring ecosystem, Stelo or Levels is the better fit.
+
+---
+
+## Background reading
+
+The metabolic biology these programmes surface — and the protocols the data unlocks.
+
+- [AI biomarker tracking](/articles/ai-biomarker-tracking-predictive) — CGM as the highest-density consumer biomarker stream available
+- [Continuous hormone monitoring](/articles/chm-continuous-hormone-monitoring) — why CGM is the closest consumer product to the hormone-stream future
+- [The gut-brain axis as a data link](/articles/gut-brain-axis-data-link) — where microbiome and glucose patterns meet
+`,
   references: [
     { label: 'Ultrahuman Cyborg / M1 — official site', url: 'https://www.ultrahuman.com/cyborg/' },
     { label: 'Abbott FreeStyle Libre 3 accuracy validation (J Diabetes Sci Technol)', url: 'https://journals.sagepub.com/doi/10.1177/19322968221101632' },

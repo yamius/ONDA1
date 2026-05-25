@@ -50,7 +50,18 @@ It is a surgical implant. The patient pathway is a neurosurgeon, a hospital proc
 
 ## Who it is for
 
-Not a consumer recommendation. LivaNova VNS Therapy is the gold-standard medical device for drug-resistant epilepsy and treatment-resistant depression — the right tool for the people meeting those criteria, prescribed by a specialist. For everyone else, non-invasive cervical (gammaCore, Truvaga) or auricular (Nurosym, Vagustim) devices approximate the mechanism without surgery, at known cost to the strength of the effect.`,
+Not a consumer recommendation. LivaNova VNS Therapy is the gold-standard medical device for drug-resistant epilepsy and treatment-resistant depression — the right tool for the people meeting those criteria, prescribed by a specialist. For everyone else, non-invasive cervical (gammaCore, Truvaga) or auricular (Nurosym, Vagustim) devices approximate the mechanism without surgery, at known cost to the strength of the effect.
+
+---
+
+## Background reading
+
+The biology behind what these devices target — and the protocols that compound with the hardware.
+
+- [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — why slow breathing rebuilds vagal tone via CO₂ chemistry
+- [Breathwork as a command-line interface](/articles/breathwork-command-line-interface) — the protocols stimulation pairs with
+- [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — why vagal tone work targets cortisol downstream
+`,
   references: [
     { label: 'LivaNova VNS Therapy — official clinical site', url: 'https://www.livanova.com/epilepsy-vnstherapy/en-us' },
     { label: 'FDA — VNS Therapy approval history', url: 'https://www.accessdata.fda.gov/cdrh_docs/pdf/P970003S207B.pdf' },

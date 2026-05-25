@@ -50,7 +50,18 @@ Brand maturity. Infraredi is newer than Joovv or Mito Red, and the multi-year re
 
 ## Who it is for
 
-Choose Infraredi Pro 1500 if MitoPRO-class large-panel coverage at $200 less is the deciding criterion and you are comfortable with a newer brand. For the established biohacker community, Mito Red. For pure budget, Hooga.`,
+Choose Infraredi Pro 1500 if MitoPRO-class large-panel coverage at $200 less is the deciding criterion and you are comfortable with a newer brand. For the established biohacker community, Mito Red. For pure budget, Hooga.
+
+---
+
+## Background reading
+
+The photobiomodulation mechanism behind why red light therapy works.
+
+- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how 660/850 nm photons reach the mitochondria and what they do there
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why photobiomodulation drives mitochondrial density up
+- [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how RLT fits the broader autophagy / mitophagy stack
+`,
   references: [
     { label: 'Infraredi Pro 1500 — official product page', url: 'https://infraredi.com/products/infraredi-pro-1500' },
     { label: 'Photobiomodulation therapy clinical review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },

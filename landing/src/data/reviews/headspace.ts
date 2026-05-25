@@ -51,7 +51,18 @@ The free tier is the weak point: it is essentially a guided tour of the product,
 
 ## Who it is for
 
-Choose Headspace if you are new to meditation and want a clear, well-taught path rather than an overwhelming library — and you are willing to subscribe. If you want depth beyond the basics, or a usable free option, Waking Up and Insight Timer are the better fits.`,
+Choose Headspace if you are new to meditation and want a clear, well-taught path rather than an overwhelming library — and you are willing to subscribe. If you want depth beyond the basics, or a usable free option, Waking Up and Insight Timer are the better fits.
+
+---
+
+## Background reading
+
+The science of what meditation actually does at the nervous-system level.
+
+- [Rhythmic entrainment and system frequencies](/articles/rhythmic-entrainment-system-frequencies) — why paced audio and breath protocols compound with practice
+- [Physiological concentration: flow-state hardwiring](/articles/physiological-concentration-flow-state-hardwired) — what neurochemistry the flow state actually requires
+- [Neural bridge: the alpha-to-flow gateway](/articles/neural-bridge-alpha-flow-gateway) — the EEG transition from idle to engaged focus
+`,
   references: [
     { label: 'Headspace — official site', url: 'https://www.headspace.com' },
     { label: 'Headspace clinical studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=headspace+meditation+randomized+controlled+trial' },

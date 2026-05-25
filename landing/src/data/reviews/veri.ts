@@ -50,7 +50,18 @@ In the US Veri competes against programmes shipping Dexcom G7, which lags Libre 
 
 ## Who it is for
 
-Choose Veri if you are in an EU market and want a polished, locally-supported CGM programme with Garmin/Oura integration baked in. If you are in the US, Stelo (Dexcom G7, cheaper) or Levels (deepest insights) are better fits.`,
+Choose Veri if you are in an EU market and want a polished, locally-supported CGM programme with Garmin/Oura integration baked in. If you are in the US, Stelo (Dexcom G7, cheaper) or Levels (deepest insights) are better fits.
+
+---
+
+## Background reading
+
+The metabolic biology these programmes surface — and the protocols the data unlocks.
+
+- [Metabolic flexibility and the dual-fuel system](/articles/metabolic-flexibility-dual-fuel-system) — why fat-to-glucose switching is the metric CGM data makes visible
+- [Metabolic redundancy and hybrid power architecture](/articles/metabolic-redundancy-hybrid-power-architecture) — reading glucose curves as the runtime state of your fuel substrates
+- [Energy sensor: leptin](/articles/energy-sensor-leptin) — why leptin sits behind the satiety patterns CGM curves draw
+`,
   references: [
     { label: 'Veri — official site', url: 'https://www.veri.co/' },
     { label: 'Abbott FreeStyle Libre 3 accuracy validation (J Diabetes Sci Technol)', url: 'https://journals.sagepub.com/doi/10.1177/19322968221101632' },

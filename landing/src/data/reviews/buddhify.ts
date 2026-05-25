@@ -51,7 +51,18 @@ The library is smaller than the subscription giants, and there is no adaptive, c
 
 ## Who it is for
 
-Choose Buddhify if you want to pay once and never see a subscription prompt again, and you like the idea of meditations matched to whatever you are doing right now. If you want the largest library or a structured course from zero, Insight Timer or Headspace will serve you better.`,
+Choose Buddhify if you want to pay once and never see a subscription prompt again, and you like the idea of meditations matched to whatever you are doing right now. If you want the largest library or a structured course from zero, Insight Timer or Headspace will serve you better.
+
+---
+
+## Background reading
+
+The science of what meditation actually does at the nervous-system level.
+
+- [Physiological concentration: flow-state hardwiring](/articles/physiological-concentration-flow-state-hardwired) — what neurochemistry the flow state actually requires
+- [Neural bridge: the alpha-to-flow gateway](/articles/neural-bridge-alpha-flow-gateway) — the EEG transition from idle to engaged focus
+- [Neural entrainment through meditation](/articles/neural-entrainment-meditation-2) — why structured practice rewires baseline cortical states
+`,
   references: [
     { label: 'Buddhify — official site', url: 'https://buddhify.com' },
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },

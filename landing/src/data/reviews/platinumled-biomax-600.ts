@@ -50,7 +50,18 @@ The BIOMAX 600 is mid-size — smaller than Joovv Solo 3.0 or MitoPRO 1500. For 
 
 ## Who it is for
 
-Choose PlatinumLED BIOMAX 600 if you want broad-spectrum coverage and published EMF testing at $300 below Joovv, and the mid-size panel fits your use case. For larger half-body or modular full-body needs, Mito Red or Joovv. For pure budget, Hooga HG500.`,
+Choose PlatinumLED BIOMAX 600 if you want broad-spectrum coverage and published EMF testing at $300 below Joovv, and the mid-size panel fits your use case. For larger half-body or modular full-body needs, Mito Red or Joovv. For pure budget, Hooga HG500.
+
+---
+
+## Background reading
+
+The photobiomodulation mechanism behind why red light therapy works.
+
+- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how 660/850 nm photons reach the mitochondria and what they do there
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why photobiomodulation drives mitochondrial density up
+- [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how RLT fits the broader autophagy / mitophagy stack
+`,
   references: [
     { label: 'PlatinumLED BIOMAX 600 — official product page', url: 'https://www.platinumtherapylights.com/biomax600' },
     { label: 'PlatinumLED third-party EMF and irradiance test reports', url: 'https://www.platinumtherapylights.com/testing' },

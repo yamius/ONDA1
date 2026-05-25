@@ -51,7 +51,18 @@ It is a tracker first. Wind-down content — sounds, sleep-aid audio — exists 
 
 ## Who it is for
 
-Choose Sleep Cycle if you want a polished, low-effort tracker with a smart alarm and a free tier you can actually live on. If you mainly need help falling asleep, a relaxation app will serve you better; if you want clinical-grade precision, a wearable will.`,
+Choose Sleep Cycle if you want a polished, low-effort tracker with a smart alarm and a free tier you can actually live on. If you mainly need help falling asleep, a relaxation app will serve you better; if you want clinical-grade precision, a wearable will.
+
+---
+
+## Background reading
+
+The sleep biology behind what these apps measure and the protocols they support.
+
+- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why deep sleep is the metabolic window of the brain
+- [Glymphatic flush: clearing the neural cache](/articles/glymphatic-flush-clearing-neural-cache) — the cleanup cycle sleep stages enable
+- [Neural hydraulics: CSF flow](/articles/neural-hydraulics-csf-flow) — CSF circulation during sleep as the substrate of glymphatic clearance
+`,
   references: [
     { label: 'Sleep Cycle — official site', url: 'https://www.sleepcycle.com' },
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },

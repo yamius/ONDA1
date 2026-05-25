@@ -51,7 +51,18 @@ It is focused rather than vast: there is no sprawling library, no celebrity slee
 
 ## Who it is for
 
-Choose the Healthy Minds Program if you want a free, ad-free practice grounded in real science and a clear framework — and you value substance over polish or breadth. It pairs especially well with anyone who came to meditation through an interest in the underlying neuroscience.`,
+Choose the Healthy Minds Program if you want a free, ad-free practice grounded in real science and a clear framework — and you value substance over polish or breadth. It pairs especially well with anyone who came to meditation through an interest in the underlying neuroscience.
+
+---
+
+## Background reading
+
+The science of what meditation actually does at the nervous-system level.
+
+- [Neural entrainment through meditation](/articles/neural-entrainment-meditation-2) — why structured practice rewires baseline cortical states
+- [Quiet-mode alpha and the cortisol buffer](/articles/quiet-mode-alpha-cortisol-buffer) — the stress-regulation mechanism meditation engages
+- [Rhythmic entrainment and system frequencies](/articles/rhythmic-entrainment-system-frequencies) — why paced audio and breath protocols compound with practice
+`,
   references: [
     { label: 'Healthy Minds Program — official site', url: 'https://hminnovations.org/meditation-app' },
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },

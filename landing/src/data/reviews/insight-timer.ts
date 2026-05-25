@@ -51,7 +51,18 @@ Breadth has a cost. Because the library is crowd-sourced, quality varies session
 
 ## Who it is for
 
-Choose Insight Timer if you want the widest possible choice, strong value, and the freedom to practise for free — and you are comfortable doing some of the curation yourself. If you would rather be guided along a clear, vetted path, Headspace is the more structured choice.`,
+Choose Insight Timer if you want the widest possible choice, strong value, and the freedom to practise for free — and you are comfortable doing some of the curation yourself. If you would rather be guided along a clear, vetted path, Headspace is the more structured choice.
+
+---
+
+## Background reading
+
+The science of what meditation actually does at the nervous-system level.
+
+- [Physiological concentration: flow-state hardwiring](/articles/physiological-concentration-flow-state-hardwired) — what neurochemistry the flow state actually requires
+- [Neural bridge: the alpha-to-flow gateway](/articles/neural-bridge-alpha-flow-gateway) — the EEG transition from idle to engaged focus
+- [Neural entrainment through meditation](/articles/neural-entrainment-meditation-2) — why structured practice rewires baseline cortical states
+`,
   references: [
     { label: 'Insight Timer — official site', url: 'https://insighttimer.com' },
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },

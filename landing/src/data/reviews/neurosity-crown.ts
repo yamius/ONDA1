@@ -51,7 +51,18 @@ Almost everything Muse leads on. There is no deep guided-meditation library, no 
 
 ## Who it is for
 
-Choose Neurosity Crown if you are a developer, researcher or hands-on biohacker who wants raw EEG data on a programmable platform with no subscription tax. If you want a polished consumer experience for meditation and sleep, Muse S Athena. If you want a budget-friendly EEG entry, Muse 2 or NeuroSky.`,
+Choose Neurosity Crown if you are a developer, researcher or hands-on biohacker who wants raw EEG data on a programmable platform with no subscription tax. If you want a polished consumer experience for meditation and sleep, Muse S Athena. If you want a budget-friendly EEG entry, Muse 2 or NeuroSky.
+
+---
+
+## Background reading
+
+The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+
+- [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — how prefrontal control loops show up in EEG
+- [Adaptation and range fractionation](/articles/adaptation-hack-range-fractionation) — training cognitive states by deliberate variation
+- [Idle-state alpha rhythms](/articles/idle-state-alpha-rhythms) — the resting cortex signal that meditation and focus headsets exploit
+`,
   references: [
     { label: 'Neurosity Crown — official product page', url: 'https://neurosity.co/crown' },
     { label: 'Neurosity SDK — developer documentation', url: 'https://docs.neurosity.co/' },

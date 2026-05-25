@@ -51,7 +51,18 @@ It is a fall-asleep aid and nothing else. There is no tracking, no analytics, no
 
 ## Who it is for
 
-Choose Pzizz if you simply want to be played to sleep and have no interest in tracking. If you want to measure your night, or want a broader relaxation library, a tracker or BetterSleep is the better fit.`,
+Choose Pzizz if you simply want to be played to sleep and have no interest in tracking. If you want to measure your night, or want a broader relaxation library, a tracker or BetterSleep is the better fit.
+
+---
+
+## Background reading
+
+The sleep biology behind what these apps measure and the protocols they support.
+
+- [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — why audio-paired sleep onset works
+- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why deep sleep is the metabolic window of the brain
+- [Glymphatic flush: clearing the neural cache](/articles/glymphatic-flush-clearing-neural-cache) — the cleanup cycle sleep stages enable
+`,
   references: [
     { label: 'Pzizz — official site', url: 'https://pzizz.com' },
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },

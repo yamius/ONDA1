@@ -50,7 +50,18 @@ It is the most expensive programme in this list once the coaching tier is includ
 
 ## Who it is for
 
-Choose Nutrisense if a registered dietitian working through your data weekly is what makes the difference between sustained behaviour change and a $200 month of charts. If you trust the app and want the deepest insight engine on its own, Levels is the right shape. If you want the same Dexcom G7 sensor without coaching at a fraction of the cost, Stelo.`,
+Choose Nutrisense if a registered dietitian working through your data weekly is what makes the difference between sustained behaviour change and a $200 month of charts. If you trust the app and want the deepest insight engine on its own, Levels is the right shape. If you want the same Dexcom G7 sensor without coaching at a fraction of the cost, Stelo.
+
+---
+
+## Background reading
+
+The metabolic biology these programmes surface — and the protocols the data unlocks.
+
+- [Metabolic redundancy and hybrid power architecture](/articles/metabolic-redundancy-hybrid-power-architecture) — reading glucose curves as the runtime state of your fuel substrates
+- [Energy sensor: leptin](/articles/energy-sensor-leptin) — why leptin sits behind the satiety patterns CGM curves draw
+- [Energy governor: TSH](/articles/energy-governor-tsh) — thyroid-driven metabolism as the upstream of glucose-handling capacity
+`,
   references: [
     { label: 'Nutrisense — official site', url: 'https://www.nutrisense.io/' },
     { label: 'Dexcom G7 accuracy validation (Diabetes Technology & Therapeutics)', url: 'https://www.liebertpub.com/doi/10.1089/dia.2023.0218' },

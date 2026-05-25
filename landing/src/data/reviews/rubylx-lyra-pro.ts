@@ -50,7 +50,18 @@ RubyLx is a smaller brand than Joovv, Mito Red or PlatinumLED. The multi-year re
 
 ## Who it is for
 
-Choose RubyLx Lyra Pro if every published specification must be independently verifiable before purchase, and you trust a smaller brand’s testing discipline over a larger brand’s marketing. For modular scaling, Joovv. For EMF-shielded engineering, GembaRed. For pure value, Hooga.`,
+Choose RubyLx Lyra Pro if every published specification must be independently verifiable before purchase, and you trust a smaller brand’s testing discipline over a larger brand’s marketing. For modular scaling, Joovv. For EMF-shielded engineering, GembaRed. For pure value, Hooga.
+
+---
+
+## Background reading
+
+The photobiomodulation mechanism behind why red light therapy works.
+
+- [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where photobiomodulation slots into a reset routine
+- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how 660/850 nm photons reach the mitochondria and what they do there
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why photobiomodulation drives mitochondrial density up
+`,
   references: [
     { label: 'RubyLx Lyra Pro — official product page', url: 'https://rubylx.com/products/lyra-pro' },
     { label: 'RubyLx third-party lab reports — Lyra Pro', url: 'https://rubylx.com/pages/lab-testing' },

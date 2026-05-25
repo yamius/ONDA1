@@ -51,7 +51,18 @@ For developers and biohackers wanting raw signal access, this is the wrong tool.
 
 ## Who it is for
 
-Choose Muse S Athena if you want one consumer device that handles meditation, focus and sleep with the deepest content library in the market and no subscription gate. If raw EEG access is the deciding feature, Neurosity Crown is the right pick. If price is the deciding feature, Muse 2 covers most of the same meditation use case for half the cost.`,
+Choose Muse S Athena if you want one consumer device that handles meditation, focus and sleep with the deepest content library in the market and no subscription gate. If raw EEG access is the deciding feature, Neurosity Crown is the right pick. If price is the deciding feature, Muse 2 covers most of the same meditation use case for half the cost.
+
+---
+
+## Background reading
+
+The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+
+- [Idle-state alpha rhythms](/articles/idle-state-alpha-rhythms) — the resting cortex signal that meditation and focus headsets exploit
+- [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus that EEG resolves
+- [Cognitive architecture: neural throughput](/articles/cognitive-architecture-neural-throughput) — reading EEG as the bandwidth signal of your cognitive system
+`,
   references: [
     { label: 'Muse S Athena — official product page', url: 'https://choosemuse.com/products/muse-s-athena' },
     { label: 'Muse EEG headband — independent signal-quality validation (Frontiers in Neuroscience)', url: 'https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2020.00109/full' },

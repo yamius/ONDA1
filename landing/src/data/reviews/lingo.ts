@@ -50,7 +50,18 @@ It is a beginner tool. The single-score insight layer becomes frustrating once y
 
 ## Who it is for
 
-Choose Lingo if you have never worn a CGM and want the lowest-cost legitimate way to find out whether it changes anything for you. If you have outgrown the beginner framing and want depth, Levels or Stelo are the natural next steps.`,
+Choose Lingo if you have never worn a CGM and want the lowest-cost legitimate way to find out whether it changes anything for you. If you have outgrown the beginner framing and want depth, Levels or Stelo are the natural next steps.
+
+---
+
+## Background reading
+
+The metabolic biology these programmes surface — and the protocols the data unlocks.
+
+- [Continuous hormone monitoring](/articles/chm-continuous-hormone-monitoring) — why CGM is the closest consumer product to the hormone-stream future
+- [The gut-brain axis as a data link](/articles/gut-brain-axis-data-link) — where microbiome and glucose patterns meet
+- [Metabolic flexibility and the dual-fuel system](/articles/metabolic-flexibility-dual-fuel-system) — why fat-to-glucose switching is the metric CGM data makes visible
+`,
   references: [
     { label: 'Lingo — official site', url: 'https://www.hellolingo.com/' },
     { label: 'Abbott FreeStyle Libre 3 accuracy validation (J Diabetes Sci Technol)', url: 'https://journals.sagepub.com/doi/10.1177/19322968221101632' },

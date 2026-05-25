@@ -50,7 +50,18 @@ Technical disclosure. Bon Charge publishes less detail on independent EMF testin
 
 ## Who it is for
 
-Choose Bon Charge if you are in an EU/AU market and want a panel from an established wellness brand with consistent build quality. For maximum spec disclosure, Joovv or PlatinumLED. For value at the half-body tier, BioLight or Hooga.`,
+Choose Bon Charge if you are in an EU/AU market and want a panel from an established wellness brand with consistent build quality. For maximum spec disclosure, Joovv or PlatinumLED. For value at the half-body tier, BioLight or Hooga.
+
+---
+
+## Background reading
+
+The photobiomodulation mechanism behind why red light therapy works.
+
+- [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where photobiomodulation slots into a reset routine
+- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how 660/850 nm photons reach the mitochondria and what they do there
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why photobiomodulation drives mitochondrial density up
+`,
   references: [
     { label: 'Bon Charge Red Light Therapy Panel — official', url: 'https://boncharge.com/products/red-light-therapy-device' },
     { label: 'Photobiomodulation in chronic conditions (Lasers in Surgery and Medicine)', url: 'https://onlinelibrary.wiley.com/journal/10969101' },

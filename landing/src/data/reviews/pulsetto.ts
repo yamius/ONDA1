@@ -50,7 +50,18 @@ The trade-off is evidence. Most of the supporting research is company-sponsored 
 
 ## Who it is for
 
-Choose Pulsetto if you want a polished daily-use cervical tVNS device with structured programmes and minimal setup, and you are comfortable with a lighter independent-evidence base in exchange for accessibility. If clinical-grade evidence is the deciding criterion, Nurosym is the right pick. If you want a one-time-purchase device with no app subscription, Truvaga 350 is closer to that shape.`,
+Choose Pulsetto if you want a polished daily-use cervical tVNS device with structured programmes and minimal setup, and you are comfortable with a lighter independent-evidence base in exchange for accessibility. If clinical-grade evidence is the deciding criterion, Nurosym is the right pick. If you want a one-time-purchase device with no app subscription, Truvaga 350 is closer to that shape.
+
+---
+
+## Background reading
+
+The biology behind what these devices target — and the protocols that compound with the hardware.
+
+- [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — why slow breathing rebuilds vagal tone via CO₂ chemistry
+- [Breathwork as a command-line interface](/articles/breathwork-command-line-interface) — the protocols stimulation pairs with
+- [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — why vagal tone work targets cortisol downstream
+`,
   references: [
     { label: 'Pulsetto — official product page', url: 'https://pulsetto.tech/' },
     { label: 'Pulsetto HRV/stress pilot study summary', url: 'https://pulsetto.tech/pages/science' },

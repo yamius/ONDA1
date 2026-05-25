@@ -51,7 +51,18 @@ It is tracking and nothing else. There is no wind-down content whatsoever — no
 
 ## Who it is for
 
-Choose AutoSleep if you own an Apple Watch, you only want data, and you are tired of subscriptions. If you want help getting to sleep, or you are on Android, it is the wrong app.`,
+Choose AutoSleep if you own an Apple Watch, you only want data, and you are tired of subscriptions. If you want help getting to sleep, or you are on Android, it is the wrong app.
+
+---
+
+## Background reading
+
+The sleep biology behind what these apps measure and the protocols they support.
+
+- [Circadian reset: mastering light](/articles/circadian-reset-mastering-light) — why light timing dominates sleep quality more than anything else
+- [Circadian lighting and dark therapy](/articles/circadian-lighting-dark-therapy) — the protocol layer that compounds with tracking
+- [Ancestral sync and circadian anchors](/articles/ancestral-sync-circadian-anchors) — the inputs that keep circadian timing stable across travel and shift work
+`,
   references: [
     { label: 'AutoSleep (Tantsissa) — developer site', url: 'https://www.tantsissa.com' },
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },

@@ -51,7 +51,18 @@ It is not an EEG headset. Flow stimulates the dorsolateral prefrontal cortex wit
 
 ## Who it is for
 
-Choose Flow Neuroscience if you have major depression and a clinician open to discussing it as a take-home option. For general brain training, meditation feedback or sleep tracking, this is the wrong category — Muse S Athena and the EEG-based devices are the right shape. Flow is included here as the clinical reference for what regulated, trial-backed brain-targeted hardware looks like.`,
+Choose Flow Neuroscience if you have major depression and a clinician open to discussing it as a take-home option. For general brain training, meditation feedback or sleep tracking, this is the wrong category — Muse S Athena and the EEG-based devices are the right shape. Flow is included here as the clinical reference for what regulated, trial-backed brain-targeted hardware looks like.
+
+---
+
+## Background reading
+
+The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+
+- [Digital dementia and attentional control](/articles/digital-dementia-attentional-control) — rebuilding attention with feedback-driven practice
+- [Neuroplasticity and flow overclocking](/articles/neuroplasticity-flow-overclocking) — EEG signatures of flow states and how they form
+- [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — how prefrontal control loops show up in EEG
+`,
   references: [
     { label: 'Flow Neuroscience — official site', url: 'https://www.flowneuroscience.com/' },
     { label: 'Home-based tDCS for major depression — randomised trial (The Lancet Digital Health)', url: 'https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00077-X/fulltext' },

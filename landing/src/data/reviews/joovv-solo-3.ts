@@ -50,7 +50,18 @@ Price. $1,295 for a Solo 3.0 is the most expensive single panel in this list; a 
 
 ## Who it is for
 
-Choose Joovv Solo 3.0 if you want the category-reference build and you accept that verification, EMF discipline and modular scalability have a price. If price is the deciding criterion, Mito Red MitoPRO 1500 or Hooga HG500 cover most of the spec at a fraction of the cost; if you want EMF-shielded premium with independent testing, GembaRed Vesta is the cleaner build at slightly lower price.`,
+Choose Joovv Solo 3.0 if you want the category-reference build and you accept that verification, EMF discipline and modular scalability have a price. If price is the deciding criterion, Mito Red MitoPRO 1500 or Hooga HG500 cover most of the spec at a fraction of the cost; if you want EMF-shielded premium with independent testing, GembaRed Vesta is the cleaner build at slightly lower price.
+
+---
+
+## Background reading
+
+The photobiomodulation mechanism behind why red light therapy works.
+
+- [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where photobiomodulation slots into a reset routine
+- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how 660/850 nm photons reach the mitochondria and what they do there
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why photobiomodulation drives mitochondrial density up
+`,
   references: [
     { label: 'Joovv Solo 3.0 — official product page', url: 'https://joovv.com/products/joovv-solo-3-0' },
     { label: 'Photobiomodulation therapy — clinical evidence review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },

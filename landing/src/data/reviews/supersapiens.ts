@@ -50,7 +50,18 @@ The programme is regulatorily marooned. Supersapiens withdrew from the US in 202
 
 ## Who it is for
 
-Choose Supersapiens if you are an endurance athlete in an EU market who wants race-day glucose pacing in your Garmin/TrainingPeaks stack. For general biohacker insight, this is the wrong shape — Levels, Stelo or Veri are the right fits. If you are in the US, Supersapiens is not currently an option.`,
+Choose Supersapiens if you are an endurance athlete in an EU market who wants race-day glucose pacing in your Garmin/TrainingPeaks stack. For general biohacker insight, this is the wrong shape — Levels, Stelo or Veri are the right fits. If you are in the US, Supersapiens is not currently an option.
+
+---
+
+## Background reading
+
+The metabolic biology these programmes surface — and the protocols the data unlocks.
+
+- [Energy sensor: leptin](/articles/energy-sensor-leptin) — why leptin sits behind the satiety patterns CGM curves draw
+- [Energy governor: TSH](/articles/energy-governor-tsh) — thyroid-driven metabolism as the upstream of glucose-handling capacity
+- [GLP-1 biology and muscle preservation](/articles/glp1-biology-muscle-preservation) — what CGM data shows during GLP-1 protocol use
+`,
   references: [
     { label: 'Supersapiens — official site', url: 'https://www.supersapiens.com/' },
     { label: 'Abbott Libre Sense — sport sensor specification', url: 'https://www.freestyle.abbott/uk-en/libre-sense.html' },

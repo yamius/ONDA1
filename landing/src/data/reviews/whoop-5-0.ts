@@ -51,7 +51,18 @@ Whoop is sold as a membership, not a product. There is no hardware to own — st
 
 ## Who it is for
 
-Choose the Whoop 5.0 if you are an athlete or serious trainer who makes decisions on a daily recovery score and wants continuous overnight HRV without a screen on your wrist. If you dislike perpetual subscriptions, or you want a device that also tells the time, the alternatives will fit better.`,
+Choose the Whoop 5.0 if you are an athlete or serious trainer who makes decisions on a daily recovery score and wants continuous overnight HRV without a screen on your wrist. If you dislike perpetual subscriptions, or you want a device that also tells the time, the alternatives will fit better.
+
+---
+
+## Background reading
+
+The science behind why HRV is the signal worth tracking — and how the body produces it.
+
+- [HRV training and nervous-system latency](/articles/hrv-training-nervous-system-latency) — how HRV reflects autonomic responsiveness
+- [HRV as fault-tolerant buffer](/articles/fault-tolerant-human-hrv-buffer) — why a wide HRV envelope is what you are actually training for
+- [The baroreflex and the 0.1 Hz shift](/articles/baroreflex-01hz-shift) — the resonant-frequency breathing signature in your HRV trace
+`,
   references: [
     { label: 'Whoop — official product page', url: 'https://whoop.com' },
     { label: 'Whoop HRV and recovery validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=whoop+heart+rate+variability+validation' },

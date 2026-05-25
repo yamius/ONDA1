@@ -50,7 +50,18 @@ Price is the deciding constraint. At $199 a month — $2,388 a year — Levels i
 
 ## Who it is for
 
-Choose Levels if you treat CGM as an instrument rather than an experiment — you want the deepest insight engine, you trust app intelligence over human coaching, and the cost is acceptable for what is essentially a year of food-by-food research on yourself. If price matters and you want most of the insight at a third of the cost, Dexcom Stelo is the right tool. If human coaching is the priority, Nutrisense.`,
+Choose Levels if you treat CGM as an instrument rather than an experiment — you want the deepest insight engine, you trust app intelligence over human coaching, and the cost is acceptable for what is essentially a year of food-by-food research on yourself. If price matters and you want most of the insight at a third of the cost, Dexcom Stelo is the right tool. If human coaching is the priority, Nutrisense.
+
+---
+
+## Background reading
+
+The metabolic biology these programmes surface — and the protocols the data unlocks.
+
+- [Energy governor: TSH](/articles/energy-governor-tsh) — thyroid-driven metabolism as the upstream of glucose-handling capacity
+- [GLP-1 biology and muscle preservation](/articles/glp1-biology-muscle-preservation) — what CGM data shows during GLP-1 protocol use
+- [AI biomarker tracking](/articles/ai-biomarker-tracking-predictive) — CGM as the highest-density consumer biomarker stream available
+`,
   references: [
     { label: 'Levels — official site', url: 'https://www.levels.com/' },
     { label: 'Dexcom G7 accuracy validation (Diabetes Technology & Therapeutics)', url: 'https://www.liebertpub.com/doi/10.1089/dia.2023.0218' },

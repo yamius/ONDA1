@@ -50,7 +50,18 @@ Stand it next to Veri and the comparison is clear: Veri has the wider integratio
 
 ## Who it is for
 
-Choose Hello Inside if you read and learn in German and want a CGM programme that meets you in your language. Outside DACH, Veri (EU) or Lingo (cheapest in markets where it ships) are better fits.`,
+Choose Hello Inside if you read and learn in German and want a CGM programme that meets you in your language. Outside DACH, Veri (EU) or Lingo (cheapest in markets where it ships) are better fits.
+
+---
+
+## Background reading
+
+The metabolic biology these programmes surface — and the protocols the data unlocks.
+
+- [Metabolic flexibility and the dual-fuel system](/articles/metabolic-flexibility-dual-fuel-system) — why fat-to-glucose switching is the metric CGM data makes visible
+- [Metabolic redundancy and hybrid power architecture](/articles/metabolic-redundancy-hybrid-power-architecture) — reading glucose curves as the runtime state of your fuel substrates
+- [Energy sensor: leptin](/articles/energy-sensor-leptin) — why leptin sits behind the satiety patterns CGM curves draw
+`,
   references: [
     { label: 'Hello Inside — official site', url: 'https://helloinside.com/' },
     { label: 'Abbott FreeStyle Libre 3 accuracy validation (J Diabetes Sci Technol)', url: 'https://journals.sagepub.com/doi/10.1177/19322968221101632' },

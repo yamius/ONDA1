@@ -51,7 +51,18 @@ Two things keep it from a higher score. First, the daytime number: away from res
 
 ## Who it is for
 
-Choose the Oura Ring 4 if your priority is the most accurate overnight HRV and sleep record in the smallest thing you can wear around the clock, and the subscription is an acceptable cost of doing business. If you want to own your device outright, or you train on daytime strain, the trade-offs may push you elsewhere.`,
+Choose the Oura Ring 4 if your priority is the most accurate overnight HRV and sleep record in the smallest thing you can wear around the clock, and the subscription is an acceptable cost of doing business. If you want to own your device outright, or you train on daytime strain, the trade-offs may push you elsewhere.
+
+---
+
+## Background reading
+
+The science behind why HRV is the signal worth tracking — and how the body produces it.
+
+- [HRV as fault-tolerant buffer](/articles/fault-tolerant-human-hrv-buffer) — why a wide HRV envelope is what you are actually training for
+- [The baroreflex and the 0.1 Hz shift](/articles/baroreflex-01hz-shift) — the resonant-frequency breathing signature in your HRV trace
+- [Nervous-system ping latency](/articles/nervous-system-ping-latency) — reading recovery as the time between cardiac and nervous-system events
+`,
   references: [
     { label: 'Oura Ring — official product page', url: 'https://ouraring.com' },
     { label: 'Oura HRV and sleep validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=oura+ring+heart+rate+variability+sleep+validation' },

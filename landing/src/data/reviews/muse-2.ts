@@ -51,7 +51,18 @@ Time is the issue. The Muse 2 hardware predates the Athena variant and lacks fNI
 
 ## Who it is for
 
-Choose Muse 2 if meditation feedback is the only thing you want from an EEG headset and price matters. If you want sleep tracking on top, Muse S Athena. If you want raw EEG data for self-experimentation, Neurosity Crown.`,
+Choose Muse 2 if meditation feedback is the only thing you want from an EEG headset and price matters. If you want sleep tracking on top, Muse S Athena. If you want raw EEG data for self-experimentation, Neurosity Crown.
+
+---
+
+## Background reading
+
+The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+
+- [Neuroplasticity and flow overclocking](/articles/neuroplasticity-flow-overclocking) — EEG signatures of flow states and how they form
+- [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — how prefrontal control loops show up in EEG
+- [Adaptation and range fractionation](/articles/adaptation-hack-range-fractionation) — training cognitive states by deliberate variation
+`,
   references: [
     { label: 'Muse 2 — official product page', url: 'https://choosemuse.com/products/muse-2' },
     { label: 'Muse EEG headband — independent signal-quality validation (Frontiers in Neuroscience)', url: 'https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2020.00109/full' },

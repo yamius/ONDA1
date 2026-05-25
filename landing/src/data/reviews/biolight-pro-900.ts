@@ -50,7 +50,18 @@ Nothing about the BioLight Pro 900 stands out the way Joovv stands out on modula
 
 ## Who it is for
 
-Choose BioLight Pro 900 if you want a four-wavelength mid-size panel under $1,000 and you do not specifically value any of the things Joovv, Mito Red, PlatinumLED or GembaRed lead on. For most buyers, one of those four is the right shape; BioLight wins specifically when value at the four-wavelength tier is the deciding criterion.`,
+Choose BioLight Pro 900 if you want a four-wavelength mid-size panel under $1,000 and you do not specifically value any of the things Joovv, Mito Red, PlatinumLED or GembaRed lead on. For most buyers, one of those four is the right shape; BioLight wins specifically when value at the four-wavelength tier is the deciding criterion.
+
+---
+
+## Background reading
+
+The photobiomodulation mechanism behind why red light therapy works.
+
+- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how 660/850 nm photons reach the mitochondria and what they do there
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why photobiomodulation drives mitochondrial density up
+- [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how RLT fits the broader autophagy / mitophagy stack
+`,
   references: [
     { label: 'BioLight Pro 900 — official product page', url: 'https://biolight.shop/products/biolight-pro-900' },
     { label: 'Photobiomodulation therapy clinical review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },

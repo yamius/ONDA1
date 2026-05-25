@@ -51,7 +51,18 @@ For dedicated HRV work it is the weakest of the three. The watch records HRV in 
 
 ## Who it is for
 
-Choose the Apple Watch Series 11 if you want a single excellent all-round smartwatch and treat HRV as a useful bonus rather than the point. If overnight HRV and recovery are your primary reason to buy, a dedicated tracker will give you a far cleaner signal.`,
+Choose the Apple Watch Series 11 if you want a single excellent all-round smartwatch and treat HRV as a useful bonus rather than the point. If overnight HRV and recovery are your primary reason to buy, a dedicated tracker will give you a far cleaner signal.
+
+---
+
+## Background reading
+
+The science behind why HRV is the signal worth tracking — and how the body produces it.
+
+- [HRV training and nervous-system latency](/articles/hrv-training-nervous-system-latency) — how HRV reflects autonomic responsiveness
+- [HRV as fault-tolerant buffer](/articles/fault-tolerant-human-hrv-buffer) — why a wide HRV envelope is what you are actually training for
+- [The baroreflex and the 0.1 Hz shift](/articles/baroreflex-01hz-shift) — the resonant-frequency breathing signature in your HRV trace
+`,
   references: [
     { label: 'Apple Watch — official product page', url: 'https://www.apple.com/watch/' },
     { label: 'Apple Watch HRV validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=apple+watch+heart+rate+variability+validation' },

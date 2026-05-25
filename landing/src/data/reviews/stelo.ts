@@ -50,7 +50,18 @@ The insight engine is the trade. Stelo gives meal-impact and time-in-range views
 
 ## Who it is for
 
-Choose Stelo if you want the most accurate CGM hardware available at the best price and you trust yourself to interpret the data. If you want the deepest insight engine on top of the same sensor, Levels. If you want a registered dietitian, Nutrisense. The hardware is identical in all three cases — you are paying for what sits above it.`,
+Choose Stelo if you want the most accurate CGM hardware available at the best price and you trust yourself to interpret the data. If you want the deepest insight engine on top of the same sensor, Levels. If you want a registered dietitian, Nutrisense. The hardware is identical in all three cases — you are paying for what sits above it.
+
+---
+
+## Background reading
+
+The metabolic biology these programmes surface — and the protocols the data unlocks.
+
+- [The gut-brain axis as a data link](/articles/gut-brain-axis-data-link) — where microbiome and glucose patterns meet
+- [Metabolic flexibility and the dual-fuel system](/articles/metabolic-flexibility-dual-fuel-system) — why fat-to-glucose switching is the metric CGM data makes visible
+- [Metabolic redundancy and hybrid power architecture](/articles/metabolic-redundancy-hybrid-power-architecture) — reading glucose curves as the runtime state of your fuel substrates
+`,
   references: [
     { label: 'Stelo — official site', url: 'https://www.stelo.com/' },
     { label: 'FDA — Stelo OTC CGM authorisation summary', url: 'https://www.fda.gov/news-events/press-announcements/fda-clears-first-over-counter-continuous-glucose-monitor' },

@@ -51,7 +51,18 @@ It is plainer than the big paid apps — production and interface are simple, th
 
 ## Who it is for
 
-Choose Smiling Mind if you want a free, credible app for a family or a school — age-appropriate programs, no cost, no paywall. A solo practitioner who wants depth or a vast library will be better served elsewhere.`,
+Choose Smiling Mind if you want a free, credible app for a family or a school — age-appropriate programs, no cost, no paywall. A solo practitioner who wants depth or a vast library will be better served elsewhere.
+
+---
+
+## Background reading
+
+The science of what meditation actually does at the nervous-system level.
+
+- [Neural bridge: the alpha-to-flow gateway](/articles/neural-bridge-alpha-flow-gateway) — the EEG transition from idle to engaged focus
+- [Neural entrainment through meditation](/articles/neural-entrainment-meditation-2) — why structured practice rewires baseline cortical states
+- [Quiet-mode alpha and the cortisol buffer](/articles/quiet-mode-alpha-cortisol-buffer) — the stress-regulation mechanism meditation engages
+`,
   references: [
     { label: 'Smiling Mind — official site', url: 'https://www.smilingmind.com.au' },
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },

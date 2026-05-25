@@ -51,7 +51,18 @@ It is iOS-only, and it leans hard on the Apple Watch — without one you lose mu
 
 ## Who it is for
 
-Choose Pillow if you are on iPhone, wear an Apple Watch to bed, and want detailed, well-presented sleep analysis. Android users, or anyone without a watch, should look elsewhere.`,
+Choose Pillow if you are on iPhone, wear an Apple Watch to bed, and want detailed, well-presented sleep analysis. Android users, or anyone without a watch, should look elsewhere.
+
+---
+
+## Background reading
+
+The sleep biology behind what these apps measure and the protocols they support.
+
+- [Circadian lighting and dark therapy](/articles/circadian-lighting-dark-therapy) — the protocol layer that compounds with tracking
+- [Ancestral sync and circadian anchors](/articles/ancestral-sync-circadian-anchors) — the inputs that keep circadian timing stable across travel and shift work
+- [Protocol: the circadian hard reset](/articles/protocol-circadian-hard-reset) — how to actually shift the rhythm when you have to
+`,
   references: [
     { label: 'Pillow — official site', url: 'https://pillow.app' },
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },

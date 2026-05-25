@@ -51,7 +51,18 @@ Price is the sticking point. At around 100 USD a year it is one of the more expe
 
 ## Who it is for
 
-Choose Happier Meditation if teaching quality is what you care about most and the price is acceptable. If you want the same calibre of instruction with more philosophical depth, look at Waking Up; if budget matters, Insight Timer and the free apps deliver more for less.`,
+Choose Happier Meditation if teaching quality is what you care about most and the price is acceptable. If you want the same calibre of instruction with more philosophical depth, look at Waking Up; if budget matters, Insight Timer and the free apps deliver more for less.
+
+---
+
+## Background reading
+
+The science of what meditation actually does at the nervous-system level.
+
+- [Neural bridge: the alpha-to-flow gateway](/articles/neural-bridge-alpha-flow-gateway) — the EEG transition from idle to engaged focus
+- [Neural entrainment through meditation](/articles/neural-entrainment-meditation-2) — why structured practice rewires baseline cortical states
+- [Quiet-mode alpha and the cortisol buffer](/articles/quiet-mode-alpha-cortisol-buffer) — the stress-regulation mechanism meditation engages
+`,
   references: [
     { label: 'Happier Meditation — official site', url: 'https://www.meditatehappier.com' },
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },

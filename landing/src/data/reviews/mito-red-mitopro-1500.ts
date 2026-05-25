@@ -50,7 +50,18 @@ The MitoPRO 1500 is not FDA-registered the way the Joovv Solo 3.0 is. For most c
 
 ## Who it is for
 
-Choose Mito Red MitoPRO 1500 if you want premium four-wavelength coverage with honest spec discipline, at a price meaningfully under Joovv. If FDA registration or modular stacking is the deciding criterion, Joovv is the right shape. If price is the deciding criterion, Hooga HG500 covers most of the basic spec at a third of the cost.`,
+Choose Mito Red MitoPRO 1500 if you want premium four-wavelength coverage with honest spec discipline, at a price meaningfully under Joovv. If FDA registration or modular stacking is the deciding criterion, Joovv is the right shape. If price is the deciding criterion, Hooga HG500 covers most of the basic spec at a third of the cost.
+
+---
+
+## Background reading
+
+The photobiomodulation mechanism behind why red light therapy works.
+
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why photobiomodulation drives mitochondrial density up
+- [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how RLT fits the broader autophagy / mitophagy stack
+- [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where photobiomodulation slots into a reset routine
+`,
   references: [
     { label: 'Mito Red MitoPRO 1500 — official product page', url: 'https://mitoredlight.com/products/mitopro-1500' },
     { label: 'Photobiomodulation in chronic conditions — review (Lasers in Surgery and Medicine)', url: 'https://onlinelibrary.wiley.com/journal/10969101' },

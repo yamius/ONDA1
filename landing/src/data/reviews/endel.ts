@@ -51,7 +51,18 @@ It is an audio app, full stop. Endel reads inputs to shape sound; it does not tr
 
 ## Who it is for
 
-Choose Endel if you want adaptive, generative ambient audio and the aesthetics matter to you. If you want to know how you actually slept, pair it with a tracker — or choose one instead.`,
+Choose Endel if you want adaptive, generative ambient audio and the aesthetics matter to you. If you want to know how you actually slept, pair it with a tracker — or choose one instead.
+
+---
+
+## Background reading
+
+The sleep biology behind what these apps measure and the protocols they support.
+
+- [Glymphatic flush: clearing the neural cache](/articles/glymphatic-flush-clearing-neural-cache) — the cleanup cycle sleep stages enable
+- [Neural hydraulics: CSF flow](/articles/neural-hydraulics-csf-flow) — CSF circulation during sleep as the substrate of glymphatic clearance
+- [Circadian reset: mastering light](/articles/circadian-reset-mastering-light) — why light timing dominates sleep quality more than anything else
+`,
   references: [
     { label: 'Endel — official site', url: 'https://endel.io' },
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },

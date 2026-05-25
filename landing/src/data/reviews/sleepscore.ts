@@ -51,7 +51,18 @@ The contact-free sonar approach is clever but still a phone-based estimate, not 
 
 ## Who it is for
 
-Choose SleepScore if you want a tracker that does something with the data — concrete, science-led recommendations — and you would rather not wear anything to bed. If you want the deepest raw tracking, a wearable-paired app like Pillow or AutoSleep goes further.`,
+Choose SleepScore if you want a tracker that does something with the data — concrete, science-led recommendations — and you would rather not wear anything to bed. If you want the deepest raw tracking, a wearable-paired app like Pillow or AutoSleep goes further.
+
+---
+
+## Background reading
+
+The sleep biology behind what these apps measure and the protocols they support.
+
+- [Protocol: the circadian hard reset](/articles/protocol-circadian-hard-reset) — how to actually shift the rhythm when you have to
+- [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — why audio-paired sleep onset works
+- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why deep sleep is the metabolic window of the brain
+`,
   references: [
     { label: 'SleepScore — official site', url: 'https://www.sleepscore.com' },
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },

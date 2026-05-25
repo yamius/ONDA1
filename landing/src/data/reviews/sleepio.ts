@@ -51,7 +51,18 @@ It is not a tracker and not a sound library — if you want nightly stats or sou
 
 ## Who it is for
 
-Choose Sleepio if you have a real, persistent sleep problem and want evidence-based treatment. If you sleep adequately and want measurement or relaxation, a tracker like Sleep Cycle or a library like BetterSleep is the better fit.`,
+Choose Sleepio if you have a real, persistent sleep problem and want evidence-based treatment. If you sleep adequately and want measurement or relaxation, a tracker like Sleep Cycle or a library like BetterSleep is the better fit.
+
+---
+
+## Background reading
+
+The sleep biology behind what these apps measure and the protocols they support.
+
+- [Circadian reset: mastering light](/articles/circadian-reset-mastering-light) — why light timing dominates sleep quality more than anything else
+- [Circadian lighting and dark therapy](/articles/circadian-lighting-dark-therapy) — the protocol layer that compounds with tracking
+- [Ancestral sync and circadian anchors](/articles/ancestral-sync-circadian-anchors) — the inputs that keep circadian timing stable across travel and shift work
+`,
   references: [
     { label: 'Sleepio — official site', url: 'https://www.sleepio.com' },
     { label: 'Digital CBT-I clinical trials (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=digital+CBT-I+insomnia' },

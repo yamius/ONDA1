@@ -50,7 +50,18 @@ The mechanism is the catch. Vibrotactile stimulation modulates autonomic tone vi
 
 ## Who it is for
 
-Choose Apollo Neuro if you want a vagal-modulation device you can actually wear all day, in the office, while sleeping, while exercising, without any setup ritual. If you want a stronger acute electrical effect, Nurosym, Truvaga 350 or Pulsetto are better fits. Pair the two if you can — many users run Apollo Neuro as the daily passive baseline and an electrical tVNS device for targeted sessions.`,
+Choose Apollo Neuro if you want a vagal-modulation device you can actually wear all day, in the office, while sleeping, while exercising, without any setup ritual. If you want a stronger acute electrical effect, Nurosym, Truvaga 350 or Pulsetto are better fits. Pair the two if you can — many users run Apollo Neuro as the daily passive baseline and an electrical tVNS device for targeted sessions.
+
+---
+
+## Background reading
+
+The biology behind what these devices target — and the protocols that compound with the hardware.
+
+- [Vagus nerve: the master key](/articles/vagus-nerve-master-key) — why the vagus nerve sits upstream of HRV, sleep, mood and inflammation
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — the regulatory and mechanistic landscape behind non-invasive VNS
+- [ACC and coherence monitoring](/articles/anterior-cingulate-core-coherence-monitoring) — how vagal tone shapes attention and emotional regulation upstream
+`,
   references: [
     { label: 'Apollo Neuro — official product page', url: 'https://apolloneuro.com/' },
     { label: 'Apollo wearable HRV/recovery RCT — University of Pittsburgh', url: 'https://apolloneuro.com/pages/science' },

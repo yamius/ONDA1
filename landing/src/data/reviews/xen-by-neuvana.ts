@@ -50,7 +50,18 @@ The evidence base is the weak point. The auricular tVNS mechanism inherits credi
 
 ## Who it is for
 
-Choose Xen by Neuvana if the earbud form factor and music-paired sessions make daily use realistic for you, and you are comfortable with a thinner device-specific evidence base. If clinical-grade evidence is the priority, Nurosym is the right pick. If you want a wider protocol library at a lower price, Pulsetto delivers more for less.`,
+Choose Xen by Neuvana if the earbud form factor and music-paired sessions make daily use realistic for you, and you are comfortable with a thinner device-specific evidence base. If clinical-grade evidence is the priority, Nurosym is the right pick. If you want a wider protocol library at a lower price, Pulsetto delivers more for less.
+
+---
+
+## Background reading
+
+The biology behind what these devices target — and the protocols that compound with the hardware.
+
+- [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — why slow breathing rebuilds vagal tone via CO₂ chemistry
+- [Breathwork as a command-line interface](/articles/breathwork-command-line-interface) — the protocols stimulation pairs with
+- [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — why vagal tone work targets cortisol downstream
+`,
   references: [
     { label: 'Xen by Neuvana — official product page', url: 'https://neuvanalife.com/' },
     { label: 'Auricular tVNS mechanism review (Frontiers in Neuroscience)', url: 'https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2019.00854/full' },

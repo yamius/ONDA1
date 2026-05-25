@@ -51,7 +51,18 @@ Everywhere else. Single-channel EEG is informationally thin compared to the four
 
 ## Who it is for
 
-Choose NeuroSky MindWave Mobile 2 if you are a student, developer or hobbyist who wants the cheapest legitimate way to learn EEG basics and to build something on top of the SDK. For modern consumer experience, Muse 2 or FocusCalm. For serious developer work, Neurosity Crown or Emotiv Insight 2.`,
+Choose NeuroSky MindWave Mobile 2 if you are a student, developer or hobbyist who wants the cheapest legitimate way to learn EEG basics and to build something on top of the SDK. For modern consumer experience, Muse 2 or FocusCalm. For serious developer work, Neurosity Crown or Emotiv Insight 2.
+
+---
+
+## Background reading
+
+The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+
+- [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus that EEG resolves
+- [Cognitive architecture: neural throughput](/articles/cognitive-architecture-neural-throughput) — reading EEG as the bandwidth signal of your cognitive system
+- [Cognitive architecture: nootropic stacks](/articles/cognitive-architecture-nootropic-stacks) — why EEG is the closest consumer-measurable proxy for nootropic effects
+`,
   references: [
     { label: 'NeuroSky MindWave Mobile 2 — official product page', url: 'https://store.neurosky.com/products/mindwave-mobile-2' },
     { label: 'ThinkGear SDK — developer documentation', url: 'https://developer.neurosky.com/' },

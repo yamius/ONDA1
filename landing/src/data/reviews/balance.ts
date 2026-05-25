@@ -51,7 +51,18 @@ The adaptation is good, not perfect — independent reviews note it does not alw
 
 ## Who it is for
 
-Choose Balance if you want a plan that meets you where you are and adapts over time, and the year-long free trial appeals. If you want the largest library, or you are on Android and reliability worries you, Insight Timer or Headspace are safer picks.`,
+Choose Balance if you want a plan that meets you where you are and adapts over time, and the year-long free trial appeals. If you want the largest library, or you are on Android and reliability worries you, Insight Timer or Headspace are safer picks.
+
+---
+
+## Background reading
+
+The science of what meditation actually does at the nervous-system level.
+
+- [Neural entrainment through meditation](/articles/neural-entrainment-meditation-2) — why structured practice rewires baseline cortical states
+- [Quiet-mode alpha and the cortisol buffer](/articles/quiet-mode-alpha-cortisol-buffer) — the stress-regulation mechanism meditation engages
+- [Rhythmic entrainment and system frequencies](/articles/rhythmic-entrainment-system-frequencies) — why paced audio and breath protocols compound with practice
+`,
   references: [
     { label: 'Balance — official site', url: 'https://balanceapp.com' },
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },

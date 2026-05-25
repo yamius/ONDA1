@@ -51,7 +51,18 @@ The trade-off is deliberate. A chest strap is not something you wear around the 
 
 ## Who it is for
 
-Choose the Polar H10 if you want ground-truth HRV — a clean, app-agnostic signal for a structured morning protocol, or for validating another device — and you are willing to put a strap on to get it. If you want HRV collected passively while you sleep, pair it with one of the rings or bands here, or pick one of them instead.`,
+Choose the Polar H10 if you want ground-truth HRV — a clean, app-agnostic signal for a structured morning protocol, or for validating another device — and you are willing to put a strap on to get it. If you want HRV collected passively while you sleep, pair it with one of the rings or bands here, or pick one of them instead.
+
+---
+
+## Background reading
+
+The science behind why HRV is the signal worth tracking — and how the body produces it.
+
+- [Optimising biological latency](/articles/biological-latency-optimizing-system-ping) — turning HRV data into the lag between input and adaptive response
+- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — why 5.5–6 breaths per minute is the HRV-training sweet spot
+- [Interoceptive precision and sensor calibration](/articles/interoceptive-precision-sensor-calibration) — why your own perception is the upstream baseline HRV measures against
+`,
   references: [
     { label: 'Polar H10 — official product page', url: 'https://www.polar.com/en/sensors/h10-heart-rate-sensor' },
     { label: 'Validity of the Polar H10 sensor for HRV analysis (PMC)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9459793/' },

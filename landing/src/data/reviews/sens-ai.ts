@@ -51,7 +51,18 @@ Price first. At $1495 plus an ongoing programme subscription, Sens.ai is the mos
 
 ## Who it is for
 
-Choose Sens.ai if the multi-modal stack — EEG + photobiomodulation + HRV in a single programme — is specifically what you want, and the price is acceptable. If you want EEG alone with the deepest content, Muse S Athena. If you want EEG with open data, Neurosity Crown.`,
+Choose Sens.ai if the multi-modal stack — EEG + photobiomodulation + HRV in a single programme — is specifically what you want, and the price is acceptable. If you want EEG alone with the deepest content, Muse S Athena. If you want EEG with open data, Neurosity Crown.
+
+---
+
+## Background reading
+
+The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+
+- [Digital dementia and attentional control](/articles/digital-dementia-attentional-control) — rebuilding attention with feedback-driven practice
+- [Neuroplasticity and flow overclocking](/articles/neuroplasticity-flow-overclocking) — EEG signatures of flow states and how they form
+- [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — how prefrontal control loops show up in EEG
+`,
   references: [
     { label: 'Sens.ai — official product page', url: 'https://www.sens.ai/' },
     { label: 'Transcranial photobiomodulation — clinical evidence review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },

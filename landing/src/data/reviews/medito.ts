@@ -51,7 +51,18 @@ It is the fundamentals, not the full range. The library is smaller than the paid
 
 ## Who it is for
 
-Choose Medito if you want a completely free, ad-free, open-source app with no account and no upsells — especially if you are privacy-conscious or simply opposed to paying to meditate. If you want a larger library or a science-led framework, Insight Timer and the Healthy Minds Program go further.`,
+Choose Medito if you want a completely free, ad-free, open-source app with no account and no upsells — especially if you are privacy-conscious or simply opposed to paying to meditate. If you want a larger library or a science-led framework, Insight Timer and the Healthy Minds Program go further.
+
+---
+
+## Background reading
+
+The science of what meditation actually does at the nervous-system level.
+
+- [Quiet-mode alpha and the cortisol buffer](/articles/quiet-mode-alpha-cortisol-buffer) — the stress-regulation mechanism meditation engages
+- [Rhythmic entrainment and system frequencies](/articles/rhythmic-entrainment-system-frequencies) — why paced audio and breath protocols compound with practice
+- [Physiological concentration: flow-state hardwiring](/articles/physiological-concentration-flow-state-hardwired) — what neurochemistry the flow state actually requires
+`,
   references: [
     { label: 'Medito — official site', url: 'https://meditofoundation.org/medito-app' },
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },

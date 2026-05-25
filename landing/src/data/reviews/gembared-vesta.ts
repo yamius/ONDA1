@@ -50,7 +50,18 @@ GembaRed is a smaller brand than Joovv, Mito Red or PlatinumLED. Reliability tra
 
 ## Who it is for
 
-Choose GembaRed Vesta if EMF and flicker are first-class criteria — you want the cleanest possible build and you trust the engineer-founder transparency. For modular full-body scaling, Joovv. For maximum half-body coverage, MitoPRO 1500. For the broadest established brand and the same EMF discipline at lower price, PlatinumLED BIOMAX 600.`,
+Choose GembaRed Vesta if EMF and flicker are first-class criteria — you want the cleanest possible build and you trust the engineer-founder transparency. For modular full-body scaling, Joovv. For maximum half-body coverage, MitoPRO 1500. For the broadest established brand and the same EMF discipline at lower price, PlatinumLED BIOMAX 600.
+
+---
+
+## Background reading
+
+The photobiomodulation mechanism behind why red light therapy works.
+
+- [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how RLT fits the broader autophagy / mitophagy stack
+- [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where photobiomodulation slots into a reset routine
+- [Mitochondrial DNA and red light](/articles/mitochondrial-dna-red-light) — how 660/850 nm photons reach the mitochondria and what they do there
+`,
   references: [
     { label: 'GembaRed Vesta — official product page', url: 'https://gembared.com/products/vesta' },
     { label: 'GembaRed engineering notes on EMF shielding', url: 'https://gembared.com/blogs/news' },

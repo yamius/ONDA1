@@ -51,7 +51,18 @@ You feel the budget in the software and the data. The app is functional rather t
 
 ## Who it is for
 
-Choose the RingConn Gen 2 if you want most of what a premium ring does — overnight HRV, sleep, stress — for noticeably less money and with no recurring fee, and you care more about battery life than about polished software or open data. If you want the most accurate ring or the deepest app, the Oura Ring 4 still leads.`,
+Choose the RingConn Gen 2 if you want most of what a premium ring does — overnight HRV, sleep, stress — for noticeably less money and with no recurring fee, and you care more about battery life than about polished software or open data. If you want the most accurate ring or the deepest app, the Oura Ring 4 still leads.
+
+---
+
+## Background reading
+
+The science behind why HRV is the signal worth tracking — and how the body produces it.
+
+- [Anti-entropy neural architecture](/articles/anti-entropy-neural-architecture) — HRV as the daily maintenance signal of the autonomic system
+- [HRV training and nervous-system latency](/articles/hrv-training-nervous-system-latency) — how HRV reflects autonomic responsiveness
+- [HRV as fault-tolerant buffer](/articles/fault-tolerant-human-hrv-buffer) — why a wide HRV envelope is what you are actually training for
+`,
   references: [
     { label: 'RingConn Gen 2 — official product page', url: 'https://ringconn.com/products/ringconn-gen-2' },
     { label: 'Smart ring HRV and sleep validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=smart+ring+heart+rate+variability+sleep+validation' },

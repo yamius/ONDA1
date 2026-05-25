@@ -51,7 +51,18 @@ One issue is hard to set aside. Through 2026, reviewers and owners have reported
 
 ## Who it is for
 
-Choose the Ultrahuman Ring Air if a featherweight, subscription-free ring with strong sleep tracking is what you want — and go in aware of the battery-reliability reports, ideally buying somewhere with a clear return and warranty path. If long-term reliability is non-negotiable, the Oura Ring 4 or RingConn Gen 2 are safer rings.`,
+Choose the Ultrahuman Ring Air if a featherweight, subscription-free ring with strong sleep tracking is what you want — and go in aware of the battery-reliability reports, ideally buying somewhere with a clear return and warranty path. If long-term reliability is non-negotiable, the Oura Ring 4 or RingConn Gen 2 are safer rings.
+
+---
+
+## Background reading
+
+The science behind why HRV is the signal worth tracking — and how the body produces it.
+
+- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — why 5.5–6 breaths per minute is the HRV-training sweet spot
+- [Interoceptive precision and sensor calibration](/articles/interoceptive-precision-sensor-calibration) — why your own perception is the upstream baseline HRV measures against
+- [Anti-entropy neural architecture](/articles/anti-entropy-neural-architecture) — HRV as the daily maintenance signal of the autonomic system
+`,
   references: [
     { label: 'Ultrahuman Ring Air — official product page', url: 'https://www.ultrahuman.com/ring/' },
     { label: 'Smart ring HRV and sleep validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=smart+ring+heart+rate+variability+sleep+validation' },

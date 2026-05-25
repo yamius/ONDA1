@@ -51,7 +51,18 @@ Tracking exists but is the lighter half of the app — phone-based, basic, not a
 
 ## Who it is for
 
-Choose BetterSleep if you mainly need help falling asleep and want the richest possible library of sounds and stories to do it. If you want accurate tracking or a clinical program, a dedicated tracker or Sleepio will serve you better.`,
+Choose BetterSleep if you mainly need help falling asleep and want the richest possible library of sounds and stories to do it. If you want accurate tracking or a clinical program, a dedicated tracker or Sleepio will serve you better.
+
+---
+
+## Background reading
+
+The sleep biology behind what these apps measure and the protocols they support.
+
+- [Protocol: the circadian hard reset](/articles/protocol-circadian-hard-reset) — how to actually shift the rhythm when you have to
+- [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — why audio-paired sleep onset works
+- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why deep sleep is the metabolic window of the brain
+`,
   references: [
     { label: 'BetterSleep — official site', url: 'https://www.bettersleep.com' },
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },

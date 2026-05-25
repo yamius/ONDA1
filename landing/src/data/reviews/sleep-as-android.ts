@@ -51,7 +51,18 @@ All those features make it feel techy and dense — it rewards tinkering more th
 
 ## Who it is for
 
-Choose Sleep as Android if you are on Android and want a powerful, configurable all-in-one — tracking, smart alarm and wind-down sounds together. iPhone users, or anyone who wants simplicity over options, should look elsewhere.`,
+Choose Sleep as Android if you are on Android and want a powerful, configurable all-in-one — tracking, smart alarm and wind-down sounds together. iPhone users, or anyone who wants simplicity over options, should look elsewhere.
+
+---
+
+## Background reading
+
+The sleep biology behind what these apps measure and the protocols they support.
+
+- [Ancestral sync and circadian anchors](/articles/ancestral-sync-circadian-anchors) — the inputs that keep circadian timing stable across travel and shift work
+- [Protocol: the circadian hard reset](/articles/protocol-circadian-hard-reset) — how to actually shift the rhythm when you have to
+- [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — why audio-paired sleep onset works
+`,
   references: [
     { label: 'Sleep as Android — official site', url: 'https://sleep.urbandroid.org' },
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },

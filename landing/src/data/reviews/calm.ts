@@ -51,7 +51,18 @@ The free tier is thin. The Daily Calm is genuinely useful, but the library prope
 
 ## Who it is for
 
-Choose Calm if sleep and relaxation are your priority and a polished, soothing experience matters to you — and you are happy to pay for the full library. If you want to genuinely learn to meditate, or to practise for free, look at Headspace or Insight Timer.`,
+Choose Calm if sleep and relaxation are your priority and a polished, soothing experience matters to you — and you are happy to pay for the full library. If you want to genuinely learn to meditate, or to practise for free, look at Headspace or Insight Timer.
+
+---
+
+## Background reading
+
+The science of what meditation actually does at the nervous-system level.
+
+- [Quiet-mode alpha and the cortisol buffer](/articles/quiet-mode-alpha-cortisol-buffer) — the stress-regulation mechanism meditation engages
+- [Rhythmic entrainment and system frequencies](/articles/rhythmic-entrainment-system-frequencies) — why paced audio and breath protocols compound with practice
+- [Physiological concentration: flow-state hardwiring](/articles/physiological-concentration-flow-state-hardwired) — what neurochemistry the flow state actually requires
+`,
   references: [
     { label: 'Calm — official site', url: 'https://www.calm.com' },
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },

@@ -51,7 +51,18 @@ The data model. Raw-EEG access requires the EmotivPRO subscription on top of the
 
 ## Who it is for
 
-Choose Emotiv Insight 2 if you want a research-grade toolchain at consumer pricing and the subscription-for-raw-data trade is acceptable. If raw data without subscription is the deciding criterion, Neurosity Crown. If meditation content is the deciding criterion, Muse S Athena or Muse 2.`,
+Choose Emotiv Insight 2 if you want a research-grade toolchain at consumer pricing and the subscription-for-raw-data trade is acceptable. If raw data without subscription is the deciding criterion, Neurosity Crown. If meditation content is the deciding criterion, Muse S Athena or Muse 2.
+
+---
+
+## Background reading
+
+The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
+
+- [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus that EEG resolves
+- [Cognitive architecture: neural throughput](/articles/cognitive-architecture-neural-throughput) — reading EEG as the bandwidth signal of your cognitive system
+- [Cognitive architecture: nootropic stacks](/articles/cognitive-architecture-nootropic-stacks) — why EEG is the closest consumer-measurable proxy for nootropic effects
+`,
   references: [
     { label: 'Emotiv Insight 2 — official product page', url: 'https://www.emotiv.com/products/insight' },
     { label: 'EmotivPRO academic-publication index', url: 'https://www.emotiv.com/publications' },

@@ -51,7 +51,18 @@ That depth is narrow by design. The library is curated and comparatively small, 
 
 ## Who it is for
 
-Choose Waking Up if you already have a basic practice and want to go deeper — into rigorous instruction and the philosophy behind it — and the price (or the scholarship) works for you. If you are starting from zero, begin with Headspace and move to Waking Up once a practice is established.`,
+Choose Waking Up if you already have a basic practice and want to go deeper — into rigorous instruction and the philosophy behind it — and the price (or the scholarship) works for you. If you are starting from zero, begin with Headspace and move to Waking Up once a practice is established.
+
+---
+
+## Background reading
+
+The science of what meditation actually does at the nervous-system level.
+
+- [Rhythmic entrainment and system frequencies](/articles/rhythmic-entrainment-system-frequencies) — why paced audio and breath protocols compound with practice
+- [Physiological concentration: flow-state hardwiring](/articles/physiological-concentration-flow-state-hardwired) — what neurochemistry the flow state actually requires
+- [Neural bridge: the alpha-to-flow gateway](/articles/neural-bridge-alpha-flow-gateway) — the EEG transition from idle to engaged focus
+`,
   references: [
     { label: 'Waking Up — official site', url: 'https://www.wakingup.com' },
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },

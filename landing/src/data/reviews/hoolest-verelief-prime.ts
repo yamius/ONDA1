@@ -50,7 +50,18 @@ It is not a passive wearable. The user has to actively hold the device against t
 
 ## Who it is for
 
-Choose Hoolest VeRelief Prime if you want a short, intense parasympathetic session before sleep or after training, and you prefer an athlete-built tool over a wellness wearable. If you want passive all-day vagal modulation, Apollo Neuro is the right shape. If you want a guided, programme-driven daily device, Pulsetto delivers more variety for similar money.`,
+Choose Hoolest VeRelief Prime if you want a short, intense parasympathetic session before sleep or after training, and you prefer an athlete-built tool over a wellness wearable. If you want passive all-day vagal modulation, Apollo Neuro is the right shape. If you want a guided, programme-driven daily device, Pulsetto delivers more variety for similar money.
+
+---
+
+## Background reading
+
+The biology behind what these devices target — and the protocols that compound with the hardware.
+
+- [Vagus nerve: the master key](/articles/vagus-nerve-master-key) — why the vagus nerve sits upstream of HRV, sleep, mood and inflammation
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — the regulatory and mechanistic landscape behind non-invasive VNS
+- [ACC and coherence monitoring](/articles/anterior-cingulate-core-coherence-monitoring) — how vagal tone shapes attention and emotional regulation upstream
+`,
   references: [
     { label: 'Hoolest VeRelief Prime — official product page', url: 'https://www.hoolest.com/' },
     { label: 'Hoolest HRV recovery and sleep-onset research summary', url: 'https://www.hoolest.com/pages/science' },

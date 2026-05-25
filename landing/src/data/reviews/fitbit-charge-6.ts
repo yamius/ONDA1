@@ -51,7 +51,18 @@ It is a mainstream tracker, not a recovery instrument. HRV is reported as a basi
 
 ## Who it is for
 
-Choose the Fitbit Charge 6 if you want a cheap, reliable, comfortable band that covers HRV and sleep well enough to track your trends, and you are not trying to train on the data. If HRV is the main reason you are buying, a dedicated ring or band will give you far more to work with.`,
+Choose the Fitbit Charge 6 if you want a cheap, reliable, comfortable band that covers HRV and sleep well enough to track your trends, and you are not trying to train on the data. If HRV is the main reason you are buying, a dedicated ring or band will give you far more to work with.
+
+---
+
+## Background reading
+
+The science behind why HRV is the signal worth tracking — and how the body produces it.
+
+- [Nervous-system ping latency](/articles/nervous-system-ping-latency) — reading recovery as the time between cardiac and nervous-system events
+- [Optimising biological latency](/articles/biological-latency-optimizing-system-ping) — turning HRV data into the lag between input and adaptive response
+- [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — why 5.5–6 breaths per minute is the HRV-training sweet spot
+`,
   references: [
     { label: 'Fitbit Charge 6 — official product page', url: 'https://store.google.com/product/fitbit_charge_6' },
     { label: 'Fitbit HRV validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=fitbit+heart+rate+variability+validation' },

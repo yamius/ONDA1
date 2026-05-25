@@ -51,7 +51,18 @@ The ring is tied to its ecosystem. It is built around Samsung Health and Android
 
 ## Who it is for
 
-Choose the Samsung Galaxy Ring if you are an Android — ideally Samsung — user who wants Oura-style ring tracking without a perpetual subscription, and you are content to keep your data inside Samsung Health. iPhone users, or anyone who wants the most accurate ring or open data, should look at the Oura Ring 4.`,
+Choose the Samsung Galaxy Ring if you are an Android — ideally Samsung — user who wants Oura-style ring tracking without a perpetual subscription, and you are content to keep your data inside Samsung Health. iPhone users, or anyone who wants the most accurate ring or open data, should look at the Oura Ring 4.
+
+---
+
+## Background reading
+
+The science behind why HRV is the signal worth tracking — and how the body produces it.
+
+- [The baroreflex and the 0.1 Hz shift](/articles/baroreflex-01hz-shift) — the resonant-frequency breathing signature in your HRV trace
+- [Nervous-system ping latency](/articles/nervous-system-ping-latency) — reading recovery as the time between cardiac and nervous-system events
+- [Optimising biological latency](/articles/biological-latency-optimizing-system-ping) — turning HRV data into the lag between input and adaptive response
+`,
   references: [
     { label: 'Samsung Galaxy Ring — official page', url: 'https://www.samsung.com/us/mobile/galaxy-ring/' },
     { label: 'Smart ring HRV and sleep validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=smart+ring+heart+rate+variability+sleep+validation' },

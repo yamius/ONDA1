@@ -50,7 +50,18 @@ You give up wavelength breadth (no 630/810/830 nm), LED count, and the premium b
 
 ## Who it is for
 
-Choose Hooga HG500 if budget is the deciding criterion and you want verified specs at the entry tier. For wavelength breadth, MitoPRO 1500 or PlatinumLED BIOMAX 600. For premium build and FDA registration, Joovv Solo 3.0.`,
+Choose Hooga HG500 if budget is the deciding criterion and you want verified specs at the entry tier. For wavelength breadth, MitoPRO 1500 or PlatinumLED BIOMAX 600. For premium build and FDA registration, Joovv Solo 3.0.
+
+---
+
+## Background reading
+
+The photobiomodulation mechanism behind why red light therapy works.
+
+- [Mitochondrial biogenesis: the cellular power grid](/articles/mitochondrial-biogenesis-cellular-power-grid) — why photobiomodulation drives mitochondrial density up
+- [Longevity hardware and cellular cleanup](/articles/longevity-hardware-cellular-cleanup) — how RLT fits the broader autophagy / mitophagy stack
+- [Longevity protocol: biological clock reset](/articles/longevity-protocol-biological-clock-reset) — where photobiomodulation slots into a reset routine
+`,
   references: [
     { label: 'Hooga HG500 — official product page', url: 'https://hoogahealth.com/products/hooga-hg500' },
     { label: 'Photobiomodulation therapy clinical review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },

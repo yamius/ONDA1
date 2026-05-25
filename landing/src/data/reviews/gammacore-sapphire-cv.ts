@@ -50,7 +50,18 @@ That same regulatory and clinical rigour limits its use. It is prescription-only
 
 ## Who it is for
 
-Choose gammaCore if you have a clinical migraine or cluster-headache diagnosis and a prescriber who will write for it. For general HRV training, stress reduction or experimental tVNS, Nurosym (auricular, evidence-backed) or Truvaga 350 (cervical, OTC) are the right tools — not this one.`,
+Choose gammaCore if you have a clinical migraine or cluster-headache diagnosis and a prescriber who will write for it. For general HRV training, stress reduction or experimental tVNS, Nurosym (auricular, evidence-backed) or Truvaga 350 (cervical, OTC) are the right tools — not this one.
+
+---
+
+## Background reading
+
+The biology behind what these devices target — and the protocols that compound with the hardware.
+
+- [CO₂ tolerance and the oxygen limit](/articles/co2-tolerance-expanding-oxygen-limit) — why slow breathing rebuilds vagal tone via CO₂ chemistry
+- [Breathwork as a command-line interface](/articles/breathwork-command-line-interface) — the protocols stimulation pairs with
+- [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — why vagal tone work targets cortisol downstream
+`,
   references: [
     { label: 'gammaCore — official product page', url: 'https://www.gammacore.com/' },
     { label: 'FDA 510(k) clearance — non-invasive vagus nerve stimulator for migraine', url: 'https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K173442' },
