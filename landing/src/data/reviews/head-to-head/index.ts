@@ -83,6 +83,20 @@ import muse2VsFocusCalmVsMendi from './muse-2-vs-focuscalm-vs-mendi'
 import headspaceVsWakingUpVsHealthyMinds from './headspace-vs-waking-up-vs-healthy-minds-program'
 import sleepCycleVsSleepAsAndroidVsAutoSleep from './sleep-cycle-vs-sleep-as-android-vs-autosleep'
 import endelVsPzizzVsBettersleep from './endel-vs-pzizz-vs-bettersleep'
+// Cold plunge (May 2026)
+import plungeVsEdge from './plunge-vs-edge-tub'
+import plungeVsColdture from './plunge-vs-coldture'
+import plungeVsIceBarrel from './plunge-vs-ice-barrel-500'
+import morozkoVsPlunge from './morozko-forge-vs-plunge'
+import threePremiumPlunge from './plunge-vs-coldture-vs-renu-therapy-cold-stoic'
+import threeBudgetPlunge from './ice-barrel-500-vs-cold-pod-vs-inergize-cold-tub'
+// Sauna (May 2026)
+import sunlightenVsClearlight from './sunlighten-mpulse-vs-clearlight-sanctuary-2'
+import higherdoseVsTherasage from './higherdose-blanket-v4-vs-therasage-thera-sauna-personal'
+import saunaspaceVsSunlighten from './saunaspace-faraday-vs-sunlighten-mpulse'
+import finnleoVsAlmostHeaven from './finnleo-hallmark-vs-almost-heaven-salem'
+import threePremiumSauna from './sunlighten-vs-clearlight-vs-saunaspace'
+import irVsTraditional from './sunlighten-vs-finnleo-vs-almost-heaven'
 // HRV (continued)
 import polarH10VsGarmin from './polar-h10-vs-garmin-venu-4'
 // CGM (continued)
@@ -162,6 +176,20 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   platinumledVsBioLight,
   topThreePanels,
   threeValuePanels,
+  // Cold plunge (live)
+  plungeVsEdge,
+  plungeVsColdture,
+  plungeVsIceBarrel,
+  morozkoVsPlunge,
+  threePremiumPlunge,
+  threeBudgetPlunge,
+  // Sauna (live)
+  sunlightenVsClearlight,
+  saunaspaceVsSunlighten,
+  higherdoseVsTherasage,
+  finnleoVsAlmostHeaven,
+  threePremiumSauna,
+  irVsTraditional,
   // Date-gated to 2026-06-04 (all three-way duels)
   ouraVsWhoopVsGarmin,
   polarVsWhoopVsGarmin,
