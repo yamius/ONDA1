@@ -17,6 +17,7 @@ import { PermissionSetupModal } from './components/PermissionSetupModal';
 import { NotificationPrimerModal } from './components/NotificationPrimerModal';
 import { WatchConnectionPrompt } from './components/WatchConnectionPrompt';
 import { DebugMonitor } from './components/DebugMonitor';
+import { MetricsWaveform } from './components/MetricsWaveform';
 import { useTheme } from './theme/ThemeProvider';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
@@ -5601,6 +5602,15 @@ const OndaLevel1 = () => {
               <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.energy ?? '--'}%</div>
               <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.energy_label', 'Energy')}</div>
             </div>
+          </div>
+          {/* Объединённая волна: пульс (толстая) + стресс/энергия (средние).
+              Без данных — дышащая sin-волна как бренд-якорь ONDA. */}
+          <div className="mt-3 sm:mt-4">
+            <MetricsWaveform
+              heartRate={displayHeartRate}
+              stress={vitalsData.stress}
+              energy={vitalsData.energy}
+            />
           </div>
         </div>
 
