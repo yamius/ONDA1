@@ -248,37 +248,58 @@ export function trackTenjinPaywallClick(subscriptionType: string): void {
 }
 
 /**
- * Subscribe: fired after a successful purchase.
+ * Trial start: fired when paywall purchase succeeds (Apple charges $0
+ * for the trial period; real money happens later when trial converts).
  *
- * Sends to BOTH:
- *   - Tenjin transaction API (productName + currencyCode + quantity +
- *     unitPrice) so Tenjin's revenue dashboard and ad-network postbacks
- *     can attribute spend to the right install.
- *   - Firebase `purchase` event (value + currency) so Google Ads picks
- *     it up via the standard ecommerce schema.
+ *   - Tenjin SDK `start_trial` event — SKAdNetwork CV6.
+ *   - Firebase `trial_started` event — БЕЗ value/currency, чтобы GA4
+ *     не считал это как revenue. Реальный `purchase` событие фаерит
+ *     `trackTenjinSubscriptionPaid` после фактического списания
+ *     (детектится в useSubscription по entitlement.periodType==='NORMAL').
  */
 export function trackTenjinSubscribe(params: {
+  productId?: string;
+  plan?: string;
+}): void {
+  try {
+    // SKAdNetwork CV6 — install-quality signal на day 0 для Axon.
+    _tenjinEvent('start_trial');
+
+    // Firebase: trial_started (НЕ purchase!), без value/currency.
+    // Раньше тут фаерилось 'purchase' с полной ценой триала ($14.99 /
+    // $64.99), что давало фантомную выручку в GA4 и врущий ROAS в
+    // Google Ads. Trial — это $0 списание; реальный purchase event
+    // фаерит trackTenjinSubscriptionPaid после конверсии trial → paid.
+    _logFirebase('trial_started', {
+      product_id: params.productId,
+      plan: params.plan,
+    });
+  } catch (e) {
+    console.warn('[Tenjin] Failed to track trial start:', e);
+  }
+}
+
+/**
+ * Subscription paid: фаерится когда trial реально конвертится в paid
+ * (или при прямой покупке без триала). Это и есть «настоящий» purchase
+ * event с реальной выручкой — для GA4 / Google Ads ROAS.
+ *
+ *   - Tenjin SDK `subscription_paid` event — SKAdNetwork CV7-10.
+ *   - Firebase `purchase` (стандартный ecommerce-схема, с value/currency).
+ *
+ * Вызывается из useSubscription useEffect'а при детектировании
+ * entitlement.periodType === 'NORMAL' (т.е. не TRIAL и не INTRO).
+ * Dedupe через localStorage по (productId + originalPurchaseDate).
+ */
+export function trackTenjinSubscriptionPaid(params: {
   value: number;
   currency?: string;
   productId?: string;
   plan?: string;
 }): void {
   try {
-    // Tenjin SDK custom event `start_trial` — maps to SKAdNetwork
-    // conversion value 6 in our Tenjin CV schema (onda_cv_mapping.csv).
-    // Every ONDA paywall purchase begins with a free trial (14-day
-    // yearly / 7-day monthly), so a successful purchase() === trial
-    // start. This fires on day 0, inside the SKAN measurement window —
-    // it's the strongest install-quality signal we can hand AppLovin
-    // Axon from the client. The later trial→paid conversion (CV 7-10)
-    // happens off-device days later and is covered by the server-side
-    // RevenueCat → Tenjin integration, not here.
-    _tenjinEvent('start_trial');
+    _tenjinEvent('subscription_paid');
 
-    // Tenjin revenue itself is handled server-side via the RevenueCat →
-    // Tenjin integration. Here we only mirror to Firebase / GA4 — that
-    // pipeline drives Google Ads conversion optimization and is
-    // independent of the MMP.
     _logFirebase('purchase', {
       value: params.value,
       currency: params.currency ?? 'USD',
@@ -286,7 +307,7 @@ export function trackTenjinSubscribe(params: {
       plan: params.plan,
     });
   } catch (e) {
-    console.warn('[Tenjin] Failed to track subscribe:', e);
+    console.warn('[Tenjin] Failed to track subscription_paid:', e);
   }
 }
 

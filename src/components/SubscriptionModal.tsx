@@ -173,32 +173,25 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
       return;
     }
 
-    // Use Google Analytics' standard ecommerce param names (`value`,
-    // `currency`, `transaction_id`, `items`) so GA4 / Google Ads can do
-    // ROAS-style optimization on these conversions instead of treating
-    // them as opaque custom events. RevenueCat exposes the localized price
-    // and ISO currency right on the package, so we forward both verbatim.
-    track('purchase_started', {
+    // Внимание: тут НЕ передаём value/currency. paywall-тап и старт
+    // триала — это $0 на стороне Apple. Реальный purchase event с
+    // выручкой фаерится в useSubscription, когда entitlement.periodType
+    // станет 'NORMAL' (т.е. triаl сконвертился в реальное списание).
+    // Раньше передавали value=цена_подписки на trial start → фантомная
+    // выручка в GA4 и врущий ROAS в Google Ads.
+    track('trial_attempt', {
       plan: selectedPlan,
       product_id: pkg.product.identifier,
-      value: pkg.product.price,
-      currency: pkg.product.currencyCode ?? 'USD',
     });
 
     try {
       const success = await purchase(pkg);
       if (success) {
-        track('purchase_succeeded', {
+        track('trial_started', {
           plan: selectedPlan,
           product_id: pkg.product.identifier,
-          // Critical for Google Ads ROAS bidding — the `value` + `currency`
-          // pair is what the optimizer scores conversions on.
-          value: pkg.product.price,
-          currency: pkg.product.currencyCode ?? 'USD',
         });
         trackTenjinSubscribe({
-          value: pkg.product.price,
-          currency: pkg.product.currencyCode ?? 'USD',
           productId: pkg.product.identifier,
           plan: selectedPlan,
         });
