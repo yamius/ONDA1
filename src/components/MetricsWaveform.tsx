@@ -31,11 +31,12 @@ const SAMPLE_HZ = 1;
 const BUFFER_SIZE = WINDOW_SECONDS * SAMPLE_HZ;
 
 // Физиологические диапазоны для нормализации в [0, 1].
-// HR сужен до «реалистичного в покое» — иначе всё сидит в нижней
-// трети графика. При активной практике пульс выше 110 тоже клампится
-// к верху, не убегая за край.
+// HR_MAX — базовый «потолок в покое», но используется адаптивно
+// (см. ниже): если наблюдаемый пульс в буфере уходит выше — диапазон
+// сам расширяется, чтобы линия не упиралась в верх графика.
 const HR_MIN = 50;
-const HR_MAX = 110;
+const HR_MAX_BASE = 110;
+const HR_HEADROOM = 5;
 const PCT_MIN = 0;
 const PCT_MAX = 100;
 
@@ -75,6 +76,21 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
   const noData = buffer.every(
     (s) => s.hr == null && s.stress == null && s.energy == null,
   );
+
+  // Адаптивный потолок HR: если наблюдаемый пульс в буфере уходит
+  // выше базовых 110 bpm — расширяем шкалу, чтобы линия не упиралась
+  // в верх графика. Когда пульс возвращается в покой — потолок сам
+  // подтягивается обратно к 110. headroom +5 чтобы линия не липла к
+  // самой кромке.
+  let hrMaxObserved = -Infinity;
+  for (const s of buffer) {
+    if (s.hr != null && !Number.isNaN(s.hr) && s.hr > hrMaxObserved) {
+      hrMaxObserved = s.hr;
+    }
+  }
+  const hrMax = Number.isFinite(hrMaxObserved)
+    ? Math.max(HR_MAX_BASE, hrMaxObserved + HR_HEADROOM)
+    : HR_MAX_BASE;
 
   // Дышащая sin-волна работает только когда нет данных.
   // Throttle ~30 FPS — экономим CPU на хабе.
@@ -194,7 +210,7 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
           />
           {/* HR — самая толстая, рисуется последней, чтобы быть сверху */}
           <path
-            d={toPath((s) => s.hr, HR_MIN, HR_MAX)}
+            d={toPath((s) => s.hr, HR_MIN, hrMax)}
             fill="none"
             stroke={colorHR}
             strokeWidth="2.5"
