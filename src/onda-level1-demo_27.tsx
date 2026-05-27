@@ -5151,7 +5151,19 @@ const OndaLevel1 = () => {
             <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
           )}
         </div>
-        <p className={`text-sm mb-4 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{getPracticeDesc(practice.id)}</p>
+        <p className={`text-sm mb-1 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{getPracticeDesc(practice.id)}</p>
+        {(() => {
+          const fnKey = `practice_items.${getPracticeKey(practice.id)}_functional`;
+          const fn = t(fnKey, { defaultValue: '' });
+          return fn ? (
+            <p
+              className={`text-xs mb-4 ${isLight ? 'text-slate-400' : 'text-gray-400'}`}
+              data-testid={`practice-functional-${practice.id}`}
+            >
+              → {fn}
+            </p>
+          ) : <div className="mb-4" />;
+        })()}
 
         {sessions.length > 0 && (
           <div className="mb-4">
