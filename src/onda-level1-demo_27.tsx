@@ -5002,6 +5002,179 @@ const OndaLevel1 = () => {
     : activeCircuit === 12 ? 'text-fuchsia-700'
     : 'text-indigo-800';
 
+  // Practice card renderer — extracted so Section 2 (Today's Practice
+  // hero) can show the same card markup that the Section 5 grid uses,
+  // without duplicating 160+ lines of JSX. All closures (state setters,
+  // theme tokens, t, etc.) are captured from the component scope.
+  const renderPracticeCard = (practice: any) => {
+    const sessions = getPracticeSessions(practice.id);
+    const completedData = completedPractices[practice.id];
+    // Лучшее качество из сессий или из completedData
+    const bestQuality = sessions.length > 0
+      ? Math.max(...sessions.map(s => s.quality || 0), completedData?.quality || 0)
+      : (completedData?.quality || 0);
+    // Практика считается начатой только если есть хотя бы одна сессия
+    const isCompleted = sessions.length > 0 ? { ...completedData, quality: bestQuality } : null;
+    const bonus = calculateBonus();
+    const earnedQnt = Math.floor(practice.maxQnt * (1 + bonus / 100));
+    const isExpanded = expandedPractice === practice.id;
+
+    return (
+      <div
+        key={practice.id}
+        ref={el => practiceRefs.current[practice.id] = el}
+        className={`relative rounded-lg p-6 border transition-all flex flex-col ${
+          isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'
+        } ${
+          isCompleted
+            ? isLight ? 'border-emerald-300 bg-emerald-50/70' : 'border-emerald-500/50 bg-emerald-500/10'
+            : isLight
+            ? glow.panelBorder
+            : activeCircuit === 2
+            ? 'border-cyan-500/30 hover:border-cyan-400/50'
+            : activeCircuit === 3
+            ? 'border-gray-500/30 hover:border-gray-400/50'
+            : activeCircuit === 4
+            ? 'border-teal-500/30 hover:border-teal-400/50'
+            : activeCircuit === 5
+            ? 'border-amber-600/40 hover:border-amber-500/60'
+            : activeCircuit === 6
+            ? 'border-emerald-500/40 hover:border-emerald-400/60'
+            : activeCircuit === 7
+            ? 'border-sky-500/40 hover:border-sky-400/60'
+            : activeCircuit === 8
+            ? 'border-indigo-500/40 hover:border-indigo-400/60'
+            : activeCircuit === 9
+            ? 'border-yellow-500/50 hover:border-yellow-400/70'
+            : activeCircuit === 10
+            ? 'border-orange-500/40 hover:border-orange-400/60'
+            : activeCircuit === 11
+            ? 'border-cyan-500/40 hover:border-cyan-400/60'
+            : activeCircuit === 12
+            ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
+            : 'border-purple-500/30 hover:border-purple-400/50'
+        }`}
+      >
+        <div className="flex items-start justify-between mb-3">
+          <div className="flex-1">
+            <h3 className="text-xl font-semibold mb-1">{getPracticeName(practice.id)}</h3>
+            <p className="text-sm text-gray-400">{practice.duration}</p>
+          </div>
+          {isCompleted?.isValidForArtifact ? (
+            <div className="text-right">
+              <CheckCircle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
+              <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
+            </div>
+          ) : isCompleted ? (
+            <div className="text-right">
+              <Circle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
+              <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
+            </div>
+          ) : (
+            <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
+          )}
+        </div>
+        <p className={`text-sm mb-4 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{getPracticeDesc(practice.id)}</p>
+
+        {sessions.length > 0 && (
+          <div className="mb-4">
+            <button
+              onClick={() => setExpandedPractice(isExpanded ? null : practice.id)}
+              className={`text-xs flex items-center gap-1 transition-all ${
+                activeCircuit === 2
+                  ? 'text-cyan-300 hover:text-cyan-200'
+                  : activeCircuit === 3
+                  ? 'text-amber-200 hover:text-amber-100'
+                  : activeCircuit === 4
+                  ? 'text-teal-300 hover:text-teal-200'
+                  : activeCircuit === 5
+                  ? 'text-amber-200 hover:text-amber-100'
+                  : activeCircuit === 6
+                  ? 'text-emerald-300 hover:text-emerald-200'
+                  : 'text-indigo-300 hover:text-indigo-200'
+              }`}
+            >
+              {isExpanded ? '▼' : '▶'} {t('practices.session_history')} ({sessions.length})
+            </button>
+
+            {isExpanded && (
+              <div className="mt-3 space-y-2 max-h-48 overflow-y-auto scrollbar-hide">
+                {sessions.map((session) => (
+                  <div
+                    key={session.id}
+                    className={`rounded p-3 border text-xs transition-all duration-1000 ${
+                      isLight ? 'bg-slate-100/80' : 'bg-black/30'
+                    } ${
+                      isLight
+                      ? 'border-slate-200'
+                      : activeCircuit === 2
+                        ? 'border-cyan-500/20'
+                        : activeCircuit === 3
+                        ? 'border-amber-600/20'
+                        : activeCircuit === 4
+                        ? 'border-teal-500/20'
+                        : activeCircuit === 5
+                        ? 'border-amber-500/20'
+                        : activeCircuit === 6
+                        ? 'border-emerald-500/20'
+                        : 'border-purple-500/20'
+                    }`}
+                  >
+                    <div className="flex justify-between items-start mb-2">
+                      <span className="text-gray-400">{formatDate(session.date)}</span>
+                      {session.isNewRecord && (
+                        <span className="text-amber-400">🏆</span>
+                      )}
+                    </div>
+                    <div className="grid grid-cols-3 gap-2">
+                      <div>
+                        <p className="text-gray-500">{t('journal.quality')}</p>
+                        <p className="font-bold text-emerald-400">{safeToFixed(session.quality, 0)}%</p>
+                      </div>
+                      <div>
+                        <p className="text-gray-500">{t('journal.time')}</p>
+                        <p className="font-mono">{formatTime(session.duration)}</p>
+                      </div>
+                      <div>
+                        <p className="text-gray-500">OND</p>
+                        <p className="text-amber-400">+{session.qnt}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        <div className="flex items-center justify-between mt-auto pt-2">
+          <div className="text-amber-400 font-mono">
+            <div>{t('practices.up_to')} {earnedQnt} OND</div>
+            {bonus > 0 && (
+              <div className="text-xs text-emerald-400">
+                (+{bonus}%)
+              </div>
+            )}
+          </div>
+          <button
+            onClick={() => {
+              markFreePracticeTapped(practice.id);
+              completePractice(practice.id, practice.maxQnt);
+            }}
+            className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all backdrop-blur-sm ${emoTint}`}
+          >
+            {isCompleted ? t('practices.improve') : t('practices.start')}
+            {FREE_PRACTICE_IDS.has(practice.id) && !tappedFreePractices.has(practice.id) && (
+              <span className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
+                {t('labels.free')}
+              </span>
+            )}
+          </button>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div
       data-main-container
@@ -5073,50 +5246,10 @@ const OndaLevel1 = () => {
         </button>
       )}
 
-      {/* Кнопка подписки ($) — временно скрыта по просьбе владельца, пока не нужна. */}
-      {false && !showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal &&
-       !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
-       !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && !showMenu && !showSubscriptionModal && (
-        <button
-          onClick={() => {
-            setPaywallSource('cta_button');
-            setShowSubscriptionModal(true);
-          }}
-          className={`fixed top-12 z-[100] text-white transition-all w-10 h-10 rounded-full shadow-2xl backdrop-blur-md flex items-center justify-center ${
-            activeCircuit === 2
-              ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-              : activeCircuit === 3
-              ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-              : activeCircuit === 4
-              ? 'bg-teal-600/40 hover:bg-teal-600/60 border border-teal-400/30'
-              : activeCircuit === 5
-              ? 'bg-yellow-700/40 hover:bg-yellow-700/60 border border-yellow-600/30'
-              : activeCircuit === 6
-              ? 'bg-emerald-500/40 hover:bg-emerald-500/60 border border-emerald-400/30'
-              : activeCircuit === 7
-              ? 'bg-sky-500/40 hover:bg-sky-500/60 border border-sky-400/30'
-              : activeCircuit === 8
-              ? 'bg-indigo-500/40 hover:bg-indigo-500/60 border border-indigo-400/30'
-              : activeCircuit === 9
-              ? 'bg-yellow-500/40 hover:bg-yellow-500/60 border border-yellow-400/40'
-              : activeCircuit === 10
-              ? 'bg-orange-500/40 hover:bg-orange-500/60 border border-amber-400/30'
-              : activeCircuit === 11
-              ? 'bg-cyan-500/40 hover:bg-cyan-500/60 border border-cyan-400/30'
-              : activeCircuit === 12
-              ? 'bg-fuchsia-500/40 hover:bg-fuchsia-500/60 border border-red-400/30'
-              : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-          }`}
-          style={{ 
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
-            right: 'max(44px, calc(50% - 256px + 16px))'
-          }}
-          title={t('subscription.title', 'Subscription')}
-          data-testid="button-subscription"
-        >
-          <DollarSign className="w-5 h-5" />
-        </button>
-      )}
+      {/* Paywall $ button removed in home redesign 1.7.4 (dead code: was
+          already gated behind {false && ...}). Paywall now triggers only
+          from (a) tapping a locked practice, (b) after 3 free practices,
+          (c) Settings → Premium. */}
 
       {/* Верхняя навигация */}
       <div className="hidden">
@@ -5204,6 +5337,138 @@ const OndaLevel1 = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-3 sm:px-6 pb-4 sm:pb-8 pt-[28px]">
+        {/* ──────────────────────────────────────────────────────────── *
+         * Home redesign 1.7.4 — top of flow.                              *
+         * Sections 1 (Biometric Hero), 2 (Today's Practice), 2.5 (Part   *
+         * Progress) and 4 (Your Progress) are surfaced here so the first *
+         * fold is product, not poem. The lore blocks below are moved     *
+         * inside <JourneyAccordion> in a separate follow-up commit.      *
+         * ──────────────────────────────────────────────────────────── */}
+
+        {/* Section 1 — Biometric Hero (4 metric cards + waveform) */}
+        <div className="mb-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+              <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
+              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{displayHeartRate ?? '--'}</div>
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
+            </div>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+              <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
+              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.br ? `${vitalsData.br.toFixed(1)}` : '--'}</div>
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</div>
+            </div>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+              <Activity className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400 mb-2 mx-auto" />
+              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.stress ?? '--'}%</div>
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.stress_label', 'Stress')}</div>
+            </div>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+              <Zap className="w-5 sm:w-6 h-5 sm:h-6 text-amber-400 mb-2 mx-auto" />
+              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.energy ?? '--'}%</div>
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.energy_label', 'Energy')}</div>
+            </div>
+          </div>
+          <div className="mt-3 sm:mt-4">
+            <MetricsWaveform
+              heartRate={displayHeartRate}
+              stress={vitalsData.stress}
+              energy={vitalsData.energy}
+            />
+          </div>
+        </div>
+
+        {/* Section 2 — Today's Practice (state machine: empty / collecting / recommended) */}
+        {todaysPractice.state === 'recommended' && todaysPractice.recommendedPracticeId ? (
+          <div className="grid md:grid-cols-2 gap-4 mb-8">
+            {currentCircuit.practices
+              .filter(p => p.id === todaysPractice.recommendedPracticeId)
+              .map(renderPracticeCard)}
+          </div>
+        ) : (
+          <div className="mb-8">
+            <TodaysPracticeStateCard
+              mode={todaysPractice.state === 'collecting' ? 'collecting' : 'empty'}
+              onScrollToPractices={() => {
+                const grid = document.querySelector('[data-onda-practices-grid]');
+                if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+              }}
+            />
+          </div>
+        )}
+
+        {/* Section 2.5 — Part Progress bar (current level completion) */}
+        <div className="mb-8">
+          <div className={`rounded-2xl p-4 border transition-all duration-1000 ${
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+              : `bg-black/20 backdrop-blur-sm ${
+            activeCircuit === 2
+              ? 'border-cyan-500/30'
+              : activeCircuit === 3
+              ? 'border-amber-600/30'
+              : activeCircuit === 4
+              ? 'border-teal-500/30'
+              : activeCircuit === 5
+              ? 'border-amber-600/40'
+              : activeCircuit === 6
+              ? 'border-emerald-500/40'
+              : activeCircuit === 7
+              ? 'border-sky-500/40'
+              : activeCircuit === 8
+              ? 'border-indigo-500/40'
+              : activeCircuit === 9
+              ? 'border-yellow-500/50'
+              : activeCircuit === 10
+              ? 'border-orange-500/40'
+              : activeCircuit === 11
+              ? 'border-cyan-500/40'
+              : activeCircuit === 12
+              ? 'border-fuchsia-500/40'
+              : 'border-purple-500/30'
+          }`
+          }`}>
+            <div className="flex justify-between mb-2 text-sm">
+              <span>{t('progress.level_progress')}</span>
+              <span>{completedCount}/{totalPractices} {t('progress.practices')}</span>
+            </div>
+            <div className={`w-full h-3 rounded-full overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-black/50'}`}>
+              <div
+                className="h-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500"
+                style={{ width: `${progress}%` }}
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Section 4 — Your Progress (lifetime: 7-day HRV + streak + total) */}
+        <div className="mb-8">
+          <div className={`rounded-2xl p-4 border ${isLight ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}` : 'bg-black/20 backdrop-blur-sm border-white/10'}`}>
+            <div className="text-sm font-medium mb-3" style={{ opacity: 0.75 }}>
+              {t('home.progress.title')}
+            </div>
+            <HRVMiniChart
+              samples={hrv7Day.samples}
+              hasEnoughData={hrv7Day.hasEnoughData}
+            />
+            <div className="mt-3 text-sm" style={{ opacity: 0.85 }}>
+              {practicesProgress.total === 0
+                ? t('home.progress.streak_empty')
+                : (
+                  <span>
+                    🔥 {t('home.progress.streak_label', { count: practicesProgress.streak })}
+                    {' · '}
+                    {t('home.progress.total_label', { count: practicesProgress.total })}
+                  </span>
+                )}
+            </div>
+          </div>
+        </div>
+
+        {/* End of home redesign top-of-flow block. The existing lore /
+            navigation / practices grid follows below until they're moved
+            into <JourneyAccordion> in the next commit. */}
+
         {/* Центральный заголовок */}
         <div className="text-center mb-6 sm:mb-12 pt-0">
           {/* Логотип по центру */}
@@ -5605,84 +5870,8 @@ const OndaLevel1 = () => {
           </div>
         )}
 
-        {/* Биометрика */}
-        <div className="mb-6">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{displayHeartRate ?? '--'}</div>
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
-            </div>
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.br ? `${vitalsData.br.toFixed(1)}` : '--'}</div>
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</div>
-            </div>
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Activity className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400 mb-2 mx-auto" />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.stress ?? '--'}%</div>
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.stress_label', 'Stress')}</div>
-            </div>
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Zap className="w-5 sm:w-6 h-5 sm:h-6 text-amber-400 mb-2 mx-auto" />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.energy ?? '--'}%</div>
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.energy_label', 'Energy')}</div>
-            </div>
-          </div>
-          {/* Объединённая волна: пульс (толстая) + стресс/энергия (средние).
-              Без данных — дышащая sin-волна как бренд-якорь ONDA. */}
-          <div className="mt-3 sm:mt-4">
-            <MetricsWaveform
-              heartRate={displayHeartRate}
-              stress={vitalsData.stress}
-              energy={vitalsData.energy}
-            />
-          </div>
-        </div>
-
-        {/* Прогресс уровня */}
-        <div className="mb-8">
-          <div className={`rounded-2xl p-4 border transition-all duration-1000 ${
-            isLight
-              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
-              : `bg-black/20 backdrop-blur-sm ${
-            activeCircuit === 2
-              ? 'border-cyan-500/30'
-              : activeCircuit === 3
-              ? 'border-amber-600/30'
-              : activeCircuit === 4
-              ? 'border-teal-500/30'
-              : activeCircuit === 5
-              ? 'border-amber-600/40'
-              : activeCircuit === 6
-              ? 'border-emerald-500/40'
-              : activeCircuit === 7
-              ? 'border-sky-500/40'
-              : activeCircuit === 8
-              ? 'border-indigo-500/40'
-              : activeCircuit === 9
-              ? 'border-yellow-500/50'
-              : activeCircuit === 10
-              ? 'border-orange-500/40'
-              : activeCircuit === 11
-              ? 'border-cyan-500/40'
-              : activeCircuit === 12
-              ? 'border-fuchsia-500/40'
-              : 'border-purple-500/30'
-          }`
-          }`}>
-            <div className="flex justify-between mb-2 text-sm">
-              <span>{t('progress.level_progress')}</span>
-              <span>{completedCount}/{totalPractices} {t('progress.practices')}</span>
-            </div>
-            <div className={`w-full h-3 rounded-full overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-black/50'}`}>
-              <div
-                className="h-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500"
-                style={{ width: `${progress}%` }}
-              />
-            </div>
-          </div>
-        </div>
+        {/* Биометрика и Прогресс уровня перенесены наверх в шапку
+            (Sections 1 и 2.5 home redesign 1.7.4). */}
 
         {/* Философский текст */}
         <div className="mb-8 sm:mb-12">
@@ -6025,175 +6214,8 @@ const OndaLevel1 = () => {
 
         {/* Подсказка для разрешения Watch - СКРЫТА */}
 
-        <div className="grid md:grid-cols-2 gap-4 mb-8">
-          {currentCircuit.practices.map(practice => {
-            const sessions = getPracticeSessions(practice.id);
-            const completedData = completedPractices[practice.id];
-            // Лучшее качество из сессий или из completedData
-            const bestQuality = sessions.length > 0 
-              ? Math.max(...sessions.map(s => s.quality || 0), completedData?.quality || 0)
-              : (completedData?.quality || 0);
-            // Практика считается начатой только если есть хотя бы одна сессия
-            const isCompleted = sessions.length > 0 ? { ...completedData, quality: bestQuality } : null;
-            const bonus = calculateBonus();
-            const earnedQnt = Math.floor(practice.maxQnt * (1 + bonus / 100));
-            const isExpanded = expandedPractice === practice.id;
-
-            return (
-              <div
-                key={practice.id}
-                ref={el => practiceRefs.current[practice.id] = el}
-                className={`relative rounded-lg p-6 border transition-all flex flex-col ${
-                  isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'
-                } ${
-                  isCompleted
-                    ? isLight ? 'border-emerald-300 bg-emerald-50/70' : 'border-emerald-500/50 bg-emerald-500/10'
-                    : isLight
-                    ? glow.panelBorder
-                    : activeCircuit === 2
-                    ? 'border-cyan-500/30 hover:border-cyan-400/50'
-                    : activeCircuit === 3
-                    ? 'border-gray-500/30 hover:border-gray-400/50'
-                    : activeCircuit === 4
-                    ? 'border-teal-500/30 hover:border-teal-400/50'
-                    : activeCircuit === 5
-                    ? 'border-amber-600/40 hover:border-amber-500/60'
-                    : activeCircuit === 6
-                    ? 'border-emerald-500/40 hover:border-emerald-400/60'
-                    : activeCircuit === 7
-                    ? 'border-sky-500/40 hover:border-sky-400/60'
-                    : activeCircuit === 8
-                    ? 'border-indigo-500/40 hover:border-indigo-400/60'
-                    : activeCircuit === 9
-                    ? 'border-yellow-500/50 hover:border-yellow-400/70'
-                    : activeCircuit === 10
-                    ? 'border-orange-500/40 hover:border-orange-400/60'
-                    : activeCircuit === 11
-                    ? 'border-cyan-500/40 hover:border-cyan-400/60'
-                    : activeCircuit === 12
-                    ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
-                    : 'border-purple-500/30 hover:border-purple-400/50'
-                }`}
-              >
-                <div className="flex items-start justify-between mb-3">
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-1">{getPracticeName(practice.id)}</h3>
-                    <p className="text-sm text-gray-400">{practice.duration}</p>
-                  </div>
-                  {isCompleted?.isValidForArtifact ? (
-                    <div className="text-right">
-                      <CheckCircle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
-                      <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
-                    </div>
-                  ) : isCompleted ? (
-                    <div className="text-right">
-                      <Circle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
-                      <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
-                    </div>
-                  ) : (
-                    <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
-                  )}
-                </div>
-                <p className={`text-sm mb-4 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{getPracticeDesc(practice.id)}</p>
-                
-                {sessions.length > 0 && (
-                  <div className="mb-4">
-                    <button
-                      onClick={() => setExpandedPractice(isExpanded ? null : practice.id)}
-                      className={`text-xs flex items-center gap-1 transition-all ${
-                        activeCircuit === 2
-                          ? 'text-cyan-300 hover:text-cyan-200'
-                          : activeCircuit === 3
-                          ? 'text-amber-200 hover:text-amber-100'
-                          : activeCircuit === 4
-                          ? 'text-teal-300 hover:text-teal-200'
-                          : activeCircuit === 5
-                          ? 'text-amber-200 hover:text-amber-100'
-                          : activeCircuit === 6
-                          ? 'text-emerald-300 hover:text-emerald-200'
-                          : 'text-indigo-300 hover:text-indigo-200'
-                      }`}
-                    >
-                      {isExpanded ? '▼' : '▶'} {t('practices.session_history')} ({sessions.length})
-                    </button>
-                    
-                    {isExpanded && (
-                      <div className="mt-3 space-y-2 max-h-48 overflow-y-auto scrollbar-hide">
-                        {sessions.map((session) => (
-                          <div 
-                            key={session.id}
-                            className={`rounded p-3 border text-xs transition-all duration-1000 ${
-                              isLight ? 'bg-slate-100/80' : 'bg-black/30'
-                            } ${
-                              isLight
-                              ? 'border-slate-200'
-                              : activeCircuit === 2
-                                ? 'border-cyan-500/20'
-                                : activeCircuit === 3
-                                ? 'border-amber-600/20'
-                                : activeCircuit === 4
-                                ? 'border-teal-500/20'
-                                : activeCircuit === 5
-                                ? 'border-amber-500/20'
-                                : activeCircuit === 6
-                                ? 'border-emerald-500/20'
-                                : 'border-purple-500/20'
-                            }`}
-                          >
-                            <div className="flex justify-between items-start mb-2">
-                              <span className="text-gray-400">{formatDate(session.date)}</span>
-                              {session.isNewRecord && (
-                                <span className="text-amber-400">🏆</span>
-                              )}
-                            </div>
-                            <div className="grid grid-cols-3 gap-2">
-                              <div>
-                                <p className="text-gray-500">{t('journal.quality')}</p>
-                                <p className="font-bold text-emerald-400">{safeToFixed(session.quality, 0)}%</p>
-                              </div>
-                              <div>
-                                <p className="text-gray-500">{t('journal.time')}</p>
-                                <p className="font-mono">{formatTime(session.duration)}</p>
-                              </div>
-                              <div>
-                                <p className="text-gray-500">OND</p>
-                                <p className="text-amber-400">+{session.qnt}</p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                )}
-                
-                <div className="flex items-center justify-between mt-auto pt-2">
-                  <div className="text-amber-400 font-mono">
-                    <div>{t('practices.up_to')} {earnedQnt} OND</div>
-                    {bonus > 0 && (
-                      <div className="text-xs text-emerald-400">
-                        (+{bonus}%)
-                      </div>
-                    )}
-                  </div>
-                  <button
-                    onClick={() => {
-                      markFreePracticeTapped(practice.id);
-                      completePractice(practice.id, practice.maxQnt);
-                    }}
-                    className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all backdrop-blur-sm ${emoTint}`}
-                  >
-                    {isCompleted ? t('practices.improve') : t('practices.start')}
-                    {FREE_PRACTICE_IDS.has(practice.id) && !tappedFreePractices.has(practice.id) && (
-                      <span className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
-                        {t('labels.free')}
-                      </span>
-                    )}
-                  </button>
-                </div>
-              </div>
-            );
-          })}
+        <div className="grid md:grid-cols-2 gap-4 mb-8" data-onda-practices-grid>
+          {currentCircuit.practices.map(renderPracticeCard)}
         </div>
 
         {/* Кнопка Part's info — переход на addon-страницу */}
