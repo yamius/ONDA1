@@ -2784,6 +2784,20 @@ const OndaLevel1 = () => {
     return t(mapping[practiceId] || practiceId);
   };
 
+  // Reverse-lookup helper used by the Welcome screen to compose i18n
+  // keys like `practice_items.micro_breath_pre_start`. Returns the
+  // bare suffix (e.g. "micro_breath") for a given practice id, or the
+  // id itself as a fallback so missing entries don't crash.
+  const getPracticeKey = (practiceId: string): string => {
+    const mapping: Record<string, string> = {
+      'p1-1': 'micro_breath', 'p1-2': 'sense_of_being', 'p1-3': 'warm_pulse',
+      'p1-4': 'still_wave', 'p1-5': 'inner_listening', 'p1-6': 'first_light',
+      'p1-7': 'liquid_presence', 'p1-8': 'breath_count', 'p1-9': 'point_of_stillness',
+      'p1-10': 'i_am_silence', 'p1-11': 'ground_flow', 'p1-12': 'body_root',
+    };
+    return mapping[practiceId] || practiceId;
+  };
+
   const getPracticeDesc = (practiceId: string) => {
     const mapping = {
       'p1-1': 'practice_items.micro_breath_desc',
@@ -4058,26 +4072,56 @@ const OndaLevel1 = () => {
                   <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
                 </div>
                 <p className="text-sm sm:text-2xl leading-relaxed italic font-light">
-                  "{getPracticeMessage(activePractice.id)}"
+                  "{t(`practice_items.${getPracticeKey(activePractice.id)}_pre_start`, { defaultValue: getPracticeMessage(activePractice.id) })}"
                 </p>
               </div>
-              {activePractice.scienceInfo && activePractice.scienceInfo.length > 0 && (
-                <div className={`text-sm sm:text-base space-y-2 mb-4 sm:mb-6 px-4 max-w-lg text-justify ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
-                  {activePractice.scienceInfo.map((info: string, idx: number) => {
-                    const colonIndex = info.indexOf(':');
-                    if (colonIndex > -1) {
-                      const label = info.substring(0, colonIndex + 1);
-                      const value = info.substring(colonIndex + 1);
-                      return (
+              {/* Science block — Biology / Why / Effect / Bio-marker.
+                  Pulls from i18n keys named `<practice_key>_<field>` per
+                  practice (e.g. micro_breath_biology). Falls back to the
+                  legacy `activePractice.scienceInfo` array for any
+                  practice that doesn't yet have the new keys (Parts 2+
+                  during the rollout). */}
+              {(() => {
+                const key = getPracticeKey(activePractice.id);
+                const hasBio = !!t(`practice_items.${key}_biology`, { defaultValue: '' });
+                if (hasBio) {
+                  const rows: Array<[string, string]> = [
+                    [t('practice_items.label_biology', 'Biology:'), t(`practice_items.${key}_biology`)],
+                    [t('practice_items.label_why', 'Why:'), t(`practice_items.${key}_why`)],
+                    [t('practice_items.label_effect', 'Effect:'), t(`practice_items.${key}_effect`)],
+                    [t('practice_items.label_biomarker', 'Bio-marker:'), t(`practice_items.${key}_biomarker`)],
+                  ];
+                  return (
+                    <div className={`text-sm sm:text-base space-y-2 mb-4 sm:mb-6 px-4 max-w-lg text-justify mx-auto ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
+                      {rows.map(([label, body], idx) => (
                         <p key={idx} className="leading-tight">
-                          <span className="font-bold">{label}</span>{value}
+                          <span className="font-bold">{label}</span> {body}
                         </p>
-                      );
-                    }
-                    return <p key={idx} className="leading-tight">{info}</p>;
-                  })}
-                </div>
-              )}
+                      ))}
+                    </div>
+                  );
+                }
+                if (activePractice.scienceInfo && activePractice.scienceInfo.length > 0) {
+                  return (
+                    <div className={`text-sm sm:text-base space-y-2 mb-4 sm:mb-6 px-4 max-w-lg text-justify ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
+                      {activePractice.scienceInfo.map((info: string, idx: number) => {
+                        const colonIndex = info.indexOf(':');
+                        if (colonIndex > -1) {
+                          const label = info.substring(0, colonIndex + 1);
+                          const value = info.substring(colonIndex + 1);
+                          return (
+                            <p key={idx} className="leading-tight">
+                              <span className="font-bold">{label}</span>{value}
+                            </p>
+                          );
+                        }
+                        return <p key={idx} className="leading-tight">{info}</p>;
+                      })}
+                    </div>
+                  );
+                }
+                return null;
+              })()}
               <div className={`flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
                 <span className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-white/10 border-white/20'}`}>
                   {activePractice.targetTime ? `${Math.floor(activePractice.targetTime / 60)} ${t('practice_items.duration_min')}` : activePractice.duration}
