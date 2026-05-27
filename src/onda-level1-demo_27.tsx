@@ -5031,7 +5031,7 @@ const OndaLevel1 = () => {
   // hero) can show the same card markup that the Section 5 grid uses,
   // without duplicating 160+ lines of JSX. All closures (state setters,
   // theme tokens, t, etc.) are captured from the component scope.
-  const renderPracticeCard = (practice: any) => {
+  const renderPracticeCard = (practice: any, isFeatured: boolean = false) => {
     const sessions = getPracticeSessions(practice.id);
     const completedData = completedPractices[practice.id];
     // Лучшее качество из сессий или из completedData
@@ -5078,8 +5078,16 @@ const OndaLevel1 = () => {
             : activeCircuit === 12
             ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
             : 'border-purple-500/30 hover:border-purple-400/50'
-        }`}
+        } ${isFeatured ? 'ring-2 ring-indigo-400/70 shadow-[0_0_24px_rgba(99,102,241,0.25)]' : ''}`}
       >
+        {isFeatured && (
+          <span
+            className="absolute -top-2 left-3 px-2 py-0.5 rounded-full bg-indigo-500 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow"
+            data-testid="featured-badge"
+          >
+            ✨ {t('home.featured.recommended', 'Recommended')}
+          </span>
+        )}
         <div className="flex items-start justify-between mb-3">
           <div className="flex-1">
             <h3 className="text-xl font-semibold mb-1">{getPracticeName(practice.id)}</h3>
@@ -5430,10 +5438,12 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
-        {/* Section 2 — Today's Practice. Always renders a concrete
-            practice card with an active Start button (no "Browse"
-            indirection). When the watch isn't connected we add a tiny
-            inline hint above the card — never blocking the action. */}
+        {/* Practices list — single block. The featured (recommended)
+            practice is hoisted to the first position and rendered with
+            an indigo accent ring + ✨ Recommended badge so it reads as
+            "start here" without duplicating the card above (Option 3
+            from the UX review). When the watch isn't connected we add
+            a tiny inline hint above the list — never blocking action. */}
         {!watchHeartRate.isConnected && (
           <div
             className="text-center text-xs mb-2"
@@ -5451,17 +5461,11 @@ const OndaLevel1 = () => {
             </button>
           </div>
         )}
-        <div className="grid md:grid-cols-2 gap-4 mb-8" data-testid="todays-practice-card">
-          {currentCircuit.practices
-            .filter(p => p.id === featuredPracticeId)
-            .map(renderPracticeCard)}
-        </div>
-
-        {/* Section 5 — All Practices grid moved up here (per UX feedback:
-            a new user must see real practice cards in the first viewport).
-            The grid still contains all 12 cards (free + locked). */}
         <div className="grid md:grid-cols-2 gap-4 mb-8" data-onda-practices-grid>
-          {currentCircuit.practices.map(renderPracticeCard)}
+          {[
+            ...currentCircuit.practices.filter(p => p.id === featuredPracticeId),
+            ...currentCircuit.practices.filter(p => p.id !== featuredPracticeId),
+          ].map((practice, idx) => renderPracticeCard(practice, idx === 0))}
         </div>
 
         {/* Section 2.5 — Part Progress bar. Hidden while the user has

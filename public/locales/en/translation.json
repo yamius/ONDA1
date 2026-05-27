@@ -823,6 +823,9 @@
       "connect_title": "Connect Apple Watch",
       "connect_body": "See your HRV in real time during breathing practices.",
       "connect_cta": "Set Up Now"
+    },
+    "featured": {
+      "recommended": "Recommended"
     }
   },
   "time": {
