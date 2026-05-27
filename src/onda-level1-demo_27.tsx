@@ -18,6 +18,13 @@ import { NotificationPrimerModal } from './components/NotificationPrimerModal';
 import { WatchConnectionPrompt } from './components/WatchConnectionPrompt';
 import { DebugMonitor } from './components/DebugMonitor';
 import { MetricsWaveform } from './components/MetricsWaveform';
+// Home redesign 1.7.4 — new sections (Section 2 / 4 / 6).
+import { HRVMiniChart } from './components/HRVMiniChart';
+import { TodaysPracticeStateCard } from './components/TodaysPracticeStateCard';
+import { JourneyAccordion } from './components/JourneyAccordion';
+import { useHRV7Day } from './hooks/useHRV7Day';
+import { usePracticesProgress } from './hooks/usePracticesProgress';
+import { useTodaysPractice } from './hooks/useTodaysPractice';
 import { useTheme } from './theme/ThemeProvider';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
@@ -260,6 +267,25 @@ const OndaLevel1 = () => {
   const [practiceOpenedAtMs, setPracticeOpenedAtMs] = useState<number | null>(null);
   const [canExitPractice, setCanExitPractice] = useState(true);
   const [practiceHistory, setPracticeHistory] = useState([]);
+
+  // ─── Home redesign 1.7.4: derived/auxiliary state for new sections ───
+  // Streak + total over the user's entire practice history (Section 4).
+  const practicesProgress = usePracticesProgress(practiceHistory);
+  // 7-day HRV trend, client-side daily log (Section 4). Recording is wired
+  // up in a useEffect further down so the value follows fresh vitalsData.
+  const hrv7Day = useHRV7Day();
+  // Section 2 state machine — A (no watch) / B (collecting, 30 s) / C (pick).
+  const todaysPractice = useTodaysPractice({
+    isWatchConnected: watchHeartRate.isConnected,
+    freePracticeIds: ['p1-1', 'p1-2', 'p1-3'],
+  });
+
+  // Stream the latest HRV reading into the 7-day daily log. Cheap to call
+  // — the hook itself bails out on null/0/NaN, and writes are skipped when
+  // today's slot already holds the same value.
+  useEffect(() => {
+    hrv7Day.recordSample(vitalsData.hrv);
+  }, [vitalsData.hrv, hrv7Day.recordSample]);
 
   // Notification Primer — показываем ПОСЛЕ 2 завершённых практик, не
   // на старте и не в онбординге. Логика: пуш о напоминаниях имеет смысл,
