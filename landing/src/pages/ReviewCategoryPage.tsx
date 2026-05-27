@@ -83,6 +83,11 @@ const CATEGORY_INTRO: Record<ReviewCategory, { h1: string; intro: string }> = {
     intro:
       'Pulsed electromagnetic field hardware divides cleanly across three form factors — full-body mats (Bemer, Healthy Wave, HigherDOSE), localised coil systems (Pulse Centers, Curatron, iMRS) and the new wearable tier (Resona Health VIBE). ONDA scored the ten most credible PEMF devices of 2026 against the same six axes — field strength, waveform research, build, programmability, form factor and value.',
   },
+  'breathwork-app': {
+    h1: 'Best Breathwork Apps (2026)',
+    intro:
+      'Breathwork went from niche somatic-therapy modality to mainstream nervous-system tool in 2024–2026, driven by the Stanford cyclic-sighing research and the Wim Hof / Othership crossover into recovery culture. ONDA scored the ten most credible breathwork apps of 2026 against the same six axes — session library, technique coverage, evidence grounding, app experience, biofeedback integration and value.',
+  },
 }
 
 export function ReviewCategoryPage() {

@@ -154,6 +154,17 @@ import resonaVibe from './resona-health-vibe'
 import olylifeTera from './olylife-tera-p90-plus'
 import higherDosePemf from './higherdose-pemf-mat'
 import magnawaveMini from './magnawave-mini'
+// Breathwork apps (date-gated to 2026-06-29)
+import breathwrk from './breathwrk'
+import othership from './othership'
+import somaBreath from './soma-breath'
+import wimHofMethodApp from './wim-hof-method-app'
+import openApp from './open-app'
+import pauseBreathwork from './pause-breathwork'
+import inhale from './inhale-by-aero-health'
+import pranaBreath from './prana-breath'
+import ibreathe from './ibreathe'
+import breatheToRelax from './breathe-to-relax'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
 import bestSleepApps2026 from './best-sleep-apps-2026'
@@ -165,6 +176,7 @@ import bestColdPlunge2026 from './best-cold-plunge-2026'
 import bestInfraredSauna2026 from './best-infrared-sauna-2026'
 import bestSmartSleepClimate2026 from './best-smart-sleep-climate-2026'
 import bestPemfDevices2026 from './best-pemf-devices-2026'
+import bestBreathworkApps2026 from './best-breathwork-apps-2026'
 
 /** Current date captured once at module load. Used to filter date-gated
  *  reviews and comparisons out of the live registry until their publishOn
@@ -292,6 +304,17 @@ const ALL_REVIEWS: ToolReview[] = [
   resonaVibe,
   olylifeTera,
   higherDosePemf,
+  // Breathwork apps — ordered by overallScore. All date-gated to 2026-06-29.
+  breathwrk,
+  othership,
+  somaBreath,
+  wimHofMethodApp,
+  openApp,
+  pauseBreathwork,
+  inhale,
+  pranaBreath,
+  ibreathe,
+  breatheToRelax,
 ]
 
 /** Live product reviews — date-gated entries are excluded until their
@@ -313,6 +336,7 @@ const ALL_COMPARISONS: Comparison[] = [
   bestInfraredSauna2026,
   bestSmartSleepClimate2026,
   bestPemfDevices2026,
+  bestBreathworkApps2026,
 ]
 
 /** Live round-up comparisons — date-gated entries excluded until their

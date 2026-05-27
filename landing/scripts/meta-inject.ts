@@ -1959,6 +1959,7 @@ export function getMetaForRoute(route: string): RouteMeta {
         sauna: `Best Infrared Sauna & Sauna (2026) — Independent Reviews | ONDA Life`,
         'sleep-climate': `Best Smart Sleep Climate Systems (2026) — Independent Reviews | ONDA Life`,
         pemf: `Best PEMF Devices (2026) — Independent Reviews | ONDA Life`,
+        'breathwork-app': `Best Breathwork Apps (2026) — Independent Reviews | ONDA Life`,
       } as Record<typeof category, string>
       const descriptionByCat: Record<typeof category, string> = {
         'hrv-wearable':
@@ -1983,6 +1984,8 @@ export function getMetaForRoute(route: string): RouteMeta {
           'Independent ONDA reviews of smart sleep climate systems — Eight Sleep Pod, ChiliPad, BedJet, Sleepme, OOLER and more — scored on climate range, build, app and value.',
         pemf:
           'Independent ONDA reviews of PEMF devices — Bemer, Healthy Wave, Pulse Centers, Curatron, iMRS, OMI, EarthPulse and more — scored on field strength, waveform research, build and value.',
+        'breathwork-app':
+          'Independent ONDA reviews of breathwork apps — Breathwrk, Othership, SOMA Breath, Wim Hof Method, Open, Pause and more — scored on library, technique coverage, evidence and value.',
       } as Record<typeof category, string>
       const itemListEntries = [
         ...(catComparison

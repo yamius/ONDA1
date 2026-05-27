@@ -575,6 +575,57 @@ const PEMF_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Breathwork apps: guided-session apps covering box breathing, 4-7-8,
+ *  Wim Hof rounds, Tummo, holotropic, Buteyko, cyclic sighing and the
+ *  rest of the documented technique landscape. Library breadth and
+ *  evidence-grounding dominate the rubric — the category is full of
+ *  thin apps with one technique and apps overstating physiological
+ *  claims. */
+const BREATHWORK_APP_CRITERIA: Criterion[] = [
+  {
+    id: 'session-library',
+    label: 'Session library',
+    weight: 0.25,
+    description:
+      'Breadth and depth of guided breath sessions — count, lengths, themes (sleep, focus, energy, anxiety, performance) and how the library evolves with use over months.',
+  },
+  {
+    id: 'technique-coverage',
+    label: 'Technique coverage',
+    weight: 0.15,
+    description:
+      'Range of documented breathwork modalities covered — box breathing, 4-7-8, Wim Hof rounds, Tummo, holotropic, Buteyko, coherent breathing, cyclic sighing — vs single-technique apps.',
+  },
+  {
+    id: 'evidence-grounding',
+    label: 'Evidence grounding',
+    weight: 0.15,
+    description:
+      'How far the app cites and follows published research (Stanford cyclic-sighing, polyvagal, Buteyko CO₂ tolerance) rather than vague wellness claims, and whether instructor credentials are real.',
+  },
+  {
+    id: 'app-experience',
+    label: 'App experience',
+    weight: 0.15,
+    description:
+      'Clarity and friction of the app itself — interface, visual or audio guidance, session-start friction, Apple Watch / wearable support.',
+  },
+  {
+    id: 'biofeedback',
+    label: 'Biofeedback and integration',
+    weight: 0.1,
+    description:
+      'HRV / breath-rate tracking, Apple Health and wearable integration, and whether the app closes the loop with measurable physiological output — most apps just guide; a few measure.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.2,
+    description:
+      'Free tier viability and subscription price weighed against library breadth, technique coverage and evidence depth. The category spans free (iBreathe, Breathe2Relax) to $150/yr (Othership) — value gap is large.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
@@ -588,6 +639,7 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   sauna: SAUNA_CRITERIA,
   'sleep-climate': SLEEP_CLIMATE_CRITERIA,
   pemf: PEMF_CRITERIA,
+  'breathwork-app': BREATHWORK_APP_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -603,6 +655,7 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   sauna: 'Saunas & infrared saunas',
   'sleep-climate': 'Smart sleep climate',
   pemf: 'PEMF devices',
+  'breathwork-app': 'Breathwork apps',
 }
 
 /** Review categories in display order. */
@@ -618,6 +671,7 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'cold-plunge',
   'sauna',
   'pemf',
+  'breathwork-app',
 ]
 
 /** URL slugs for per-category landing pages — /reviews/<slug>. Chosen to
@@ -636,6 +690,7 @@ export const CATEGORY_URL_SLUGS: Record<ReviewCategory, string> = {
   sauna: 'infrared-sauna',
   'sleep-climate': 'smart-sleep-climate',
   pemf: 'pemf-devices',
+  'breathwork-app': 'breathwork-apps',
 }
 
 /** Reverse lookup — URL slug → category id. Returns undefined if the slug

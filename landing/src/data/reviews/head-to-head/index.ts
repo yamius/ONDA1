@@ -104,6 +104,13 @@ import healthyWaveVsHigherDose from './healthy-wave-multi-wave-vs-higherdose-pem
 import imrsVsOmi from './imrs-prime-vs-omi-full-body-mat'
 import resonaVsOlylife from './resona-health-vibe-vs-olylife-tera-p90-plus'
 import bemerVsHealthyWaveVsPulse from './bemer-classic-evo-vs-healthy-wave-multi-wave-vs-pulse-centers-pulse-xl-pro'
+// Breathwork apps (date-gated to 2026-06-29)
+import breathwrkVsOthership from './breathwrk-vs-othership'
+import breathwrkVsSoma from './breathwrk-vs-soma-breath'
+import othershipVsOpen from './othership-vs-open-app'
+import wimHofVsSoma from './wim-hof-method-app-vs-soma-breath'
+import ibreatheVsB2r from './ibreathe-vs-breathe-to-relax'
+import breathwrkVsOthershipVsWhm from './breathwrk-vs-othership-vs-wim-hof-method-app'
 // Sleep climate (date-gated to 2026-06-15)
 import eightSleepVsChilipad from './eight-sleep-pod-4-vs-chilipad-dock-pro'
 import pod4VsCoverPro from './eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro'
@@ -229,6 +236,13 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   imrsVsOmi,
   resonaVsOlylife,
   bemerVsHealthyWaveVsPulse,
+  // Breathwork apps (date-gated to 2026-06-29)
+  breathwrkVsOthership,
+  breathwrkVsSoma,
+  othershipVsOpen,
+  wimHofVsSoma,
+  ibreatheVsB2r,
+  breathwrkVsOthershipVsWhm,
 ]
 
 /** Live head-to-head duels — date-gated entries are excluded until their
