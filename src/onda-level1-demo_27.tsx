@@ -5441,6 +5441,51 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
+        {/* Section 3 — Quick Mood Scan (Voice Check + Face Check) */}
+        <div className="mb-8 w-full max-w-lg mx-auto px-4">
+          <div className="text-sm font-medium mb-3 text-center" style={{ opacity: 0.75 }}>
+            {t('home.quick_mood.title')}
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <button
+              onClick={() => {
+                setShowEmotionalCheck(true);
+                if (!emotionalCheckUsed) {
+                  setEmotionalCheckUsed(true);
+                  localStorage.setItem('onda_emotional_check_used', 'true');
+                }
+              }}
+              className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
+              data-testid="quick-mood-voice-check"
+            >
+              {t('nav.emotional_check')}
+              {!emotionalCheckUsed && (
+                <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
+                  {t('labels.free')}
+                </span>
+              )}
+            </button>
+            <button
+              onClick={() => {
+                setShowNervousScan(true);
+                if (!nervousScanUsed) {
+                  setNervousScanUsed(true);
+                  localStorage.setItem('onda_nervous_scan_used', 'true');
+                }
+              }}
+              className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
+              data-testid="quick-mood-face-check"
+            >
+              {t('eye_scan.nav_button')}
+              {!nervousScanUsed && (
+                <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
+                  {t('labels.free')}
+                </span>
+              )}
+            </button>
+          </div>
+        </div>
+
         {/* Section 4 — Your Progress (lifetime: 7-day HRV + streak + total) */}
         <div className="mb-8">
           <div className={`rounded-2xl p-4 border ${isLight ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}` : 'bg-black/20 backdrop-blur-sm border-white/10'}`}>
@@ -5686,46 +5731,11 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
-        {/* Кнопки навигации */}
-        <div className="flex flex-col items-center gap-2 mb-6 sm:mb-12 w-full max-w-lg mx-auto px-4">
-          {/* Эмоциональная сверка */}
-          <button
-            onClick={() => {
-              setShowEmotionalCheck(true);
-              if (!emotionalCheckUsed) {
-                setEmotionalCheckUsed(true);
-                localStorage.setItem('onda_emotional_check_used', 'true');
-              }
-            }}
-            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
-          >
-            {t('nav.emotional_check')}
-            {!emotionalCheckUsed && (
-              <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
-                {t('labels.free')}
-              </span>
-            )}
-          </button>
-
-          {/* Взгляд на себя (eye-scan) */}
-          <button
-            onClick={() => {
-              setShowNervousScan(true);
-              if (!nervousScanUsed) {
-                setNervousScanUsed(true);
-                localStorage.setItem('onda_nervous_scan_used', 'true');
-              }
-            }}
-            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
-          >
-            {t('eye_scan.nav_button')}
-            {!nervousScanUsed && (
-              <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
-                {t('labels.free')}
-              </span>
-            )}
-          </button>
-        </div>
+        {/* Quick Mood Scan buttons moved up into Section 3 of the home
+            redesign (1.7.4). The two existing actions
+            (`setShowEmotionalCheck` → Voice Check, `setShowNervousScan` →
+            Face Check) are unchanged — only the page slot and the EN
+            labels changed. */}
 
         {/* Центральный блок с описанием контура */}
         <div className="mb-12">
