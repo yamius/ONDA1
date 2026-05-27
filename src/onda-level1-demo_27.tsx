@@ -5332,8 +5332,9 @@ const OndaLevel1 = () => {
        !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && (
         <button
           onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
-          className={`menu-container fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-14 h-14 sm:w-16 sm:h-16 rounded-full backdrop-blur-md flex items-center justify-center transition-all ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
+          className={`menu-container fixed left-1/2 -translate-x-1/2 z-[100] w-14 h-14 sm:w-16 sm:h-16 rounded-full backdrop-blur-md flex items-center justify-center transition-all ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
           style={{
+            top: 'max(env(safe-area-inset-top, 0px) + 0.75rem, 3rem)',
             boxShadow: isLight ? '0 10px 28px rgba(99,102,241,0.18)' : '0 10px 36px rgba(0,0,0,0.45)',
           }}
           data-testid="button-menu"
@@ -5461,7 +5462,10 @@ const OndaLevel1 = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-3 sm:px-6 pb-4 sm:pb-8 pt-[28px]">
+      <div
+        className="max-w-6xl mx-auto px-3 sm:px-6 pb-4 sm:pb-8"
+        style={{ paddingTop: 'max(env(safe-area-inset-top, 0px) + 0.75rem, 3rem)' }}
+      >
         {/* ──────────────────────────────────────────────────────────── *
          * Home redesign 1.7.4 — top of flow.                              *
          * Sections 1 (Biometric Hero), 2 (Today's Practice), 2.5 (Part   *
