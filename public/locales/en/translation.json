@@ -809,13 +809,20 @@
       "section_title": "Today's Practice",
       "empty_body": "Connect your Apple Watch for a personalised recommendation, or start with any practice below ↓",
       "empty_cta": "Browse practices",
-      "collecting_body": "Collecting your data to recommend a practice…"
+      "collecting_body": "Collecting your data to recommend a practice…",
+      "watch_hint": "Connect Apple Watch to see live HRV during practice.",
+      "connect_watch": "Connect"
     },
     "journey": {
       "title": "Your Journey"
     },
     "quick_mood": {
       "title": "Quick Mood Scan"
+    },
+    "biometric": {
+      "connect_title": "Connect Apple Watch",
+      "connect_body": "See your HRV in real time during breathing practices.",
+      "connect_cta": "Set Up Now"
     }
   },
   "time": {

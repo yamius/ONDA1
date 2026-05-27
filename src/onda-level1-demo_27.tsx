@@ -5395,11 +5395,38 @@ const OndaLevel1 = () => {
             </div>
           </div>
           <div className="mt-3 sm:mt-4">
-            <MetricsWaveform
-              heartRate={displayHeartRate}
-              stress={vitalsData.stress}
-              energy={vitalsData.energy}
-            />
+            {displayHeartRate != null ? (
+              <MetricsWaveform
+                heartRate={displayHeartRate}
+                stress={vitalsData.stress}
+                energy={vitalsData.energy}
+              />
+            ) : (
+              <div
+                className={`rounded-2xl p-4 sm:p-5 text-center ${
+                  isLight
+                    ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+                    : 'bg-black/20 backdrop-blur-sm border border-white/10'
+                }`}
+                data-testid="biometric-connect-cta"
+              >
+                <div className="text-base sm:text-lg font-medium mb-1 flex items-center justify-center gap-2">
+                  <Heart className="w-4 h-4 text-red-400" />
+                  <span>{t('home.biometric.connect_title', 'Connect Apple Watch')}</span>
+                </div>
+                <p className="text-xs sm:text-sm mb-3" style={{ opacity: 0.7 }}>
+                  {t('home.biometric.connect_body', 'See your HRV in real time during breathing practices.')}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setShowPermissionModal(true)}
+                  className={`px-5 py-2 rounded-xl text-sm font-semibold transition-all ${emoTint}`}
+                  data-testid="biometric-connect-cta-button"
+                >
+                  {t('home.biometric.connect_cta', 'Set Up Now')}
+                </button>
+              </div>
+            )}
           </div>
         </div>
 
@@ -5832,14 +5859,10 @@ const OndaLevel1 = () => {
         </div>
         )}
 
-        {/* Permission Warning Banner */}
-        {permissions.needsSetup && (
-          <div className="mb-6 max-w-lg mx-auto w-full">
-            <PermissionWarningBanner
-              onSetupClick={() => setShowPermissionModal(true)}
-            />
-          </div>
-        )}
+        {/* PermissionWarningBanner removed — the same "Set Up Now"
+            trigger now lives inside the Biometric Hero (replaces the
+            decorative sine wave when there's no live HR data). Avoids
+            duplicate CTA on the home screen. */}
 
         {/* Watch Connection Prompt */}
         <WatchConnectionPrompt
