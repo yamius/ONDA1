@@ -288,6 +288,23 @@ const OndaLevel1 = () => {
   // them in the page flow.
   const [journeyOpen, setJourneyOpen] = useState(false);
 
+  // Featured (a.k.a. "Today's") practice — always picks a concrete free
+  // practice so Section 2 can render an actual Start button. Selection
+  // is deterministic so the picked card doesn't flicker between renders:
+  //   1. First free practice that hasn't been completed yet.
+  //   2. Else the most recent free practice from history (so a returning
+  //      user lands on the one they last did).
+  //   3. Else `p1-1` as ultimate fallback.
+  const featuredPracticeId = useMemo(() => {
+    const freeIds = ['p1-1', 'p1-2', 'p1-3'];
+    const cp = completedPractices as Record<string, unknown>;
+    const uncompleted = freeIds.find(id => !cp[id]);
+    if (uncompleted) return uncompleted;
+    const lastFree = (practiceHistory as any[]).find(s => freeIds.includes(s?.practiceId));
+    if (lastFree) return lastFree.practiceId as string;
+    return freeIds[0];
+  }, [completedPractices, practiceHistory]);
+
   // Stream the latest HRV reading into the 7-day daily log. Cheap to call
   // — the hook itself bails out on null/0/NaN, and writes are skipped when
   // today's slot already holds the same value.
@@ -5386,26 +5403,44 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
-        {/* Section 2 — Today's Practice (state machine: empty / collecting / recommended) */}
-        {todaysPractice.state === 'recommended' && todaysPractice.recommendedPracticeId ? (
-          <div className="grid md:grid-cols-2 gap-4 mb-8">
-            {currentCircuit.practices
-              .filter(p => p.id === todaysPractice.recommendedPracticeId)
-              .map(renderPracticeCard)}
-          </div>
-        ) : (
-          <div className="mb-8">
-            <TodaysPracticeStateCard
-              mode={todaysPractice.state === 'collecting' ? 'collecting' : 'empty'}
-              onScrollToPractices={() => {
-                const grid = document.querySelector('[data-onda-practices-grid]');
-                if (grid) grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }}
-            />
+        {/* Section 2 — Today's Practice. Always renders a concrete
+            practice card with an active Start button (no "Browse"
+            indirection). When the watch isn't connected we add a tiny
+            inline hint above the card — never blocking the action. */}
+        {!watchHeartRate.isConnected && (
+          <div
+            className="text-center text-xs mb-2"
+            style={{ opacity: 0.65 }}
+            data-testid="watch-hint"
+          >
+            {t('home.todays_practice.watch_hint', 'Connect Apple Watch to see live HRV during practice.')}{' '}
+            <button
+              type="button"
+              onClick={() => setShowWatchPrompt(true)}
+              className="underline"
+              data-testid="watch-hint-cta"
+            >
+              {t('home.todays_practice.connect_watch', 'Connect')}
+            </button>
           </div>
         )}
+        <div className="grid md:grid-cols-2 gap-4 mb-8" data-testid="todays-practice-card">
+          {currentCircuit.practices
+            .filter(p => p.id === featuredPracticeId)
+            .map(renderPracticeCard)}
+        </div>
 
-        {/* Section 2.5 — Part Progress bar (current level completion) */}
+        {/* Section 5 — All Practices grid moved up here (per UX feedback:
+            a new user must see real practice cards in the first viewport).
+            The grid still contains all 12 cards (free + locked). */}
+        <div className="grid md:grid-cols-2 gap-4 mb-8" data-onda-practices-grid>
+          {currentCircuit.practices.map(renderPracticeCard)}
+        </div>
+
+        {/* Section 2.5 — Part Progress bar. Hidden while the user has
+            not started this level (0/12 with an empty bar reads as
+            "nothing here" and crowds the first viewport for free). */}
+        {completedCount > 0 && (
         <div className="mb-8">
           <div className={`rounded-2xl p-4 border transition-all duration-1000 ${
             isLight
@@ -5448,6 +5483,7 @@ const OndaLevel1 = () => {
             </div>
           </div>
         </div>
+        )}
 
         {/* Section 3 — Quick Mood Scan (Voice Check + Face Check) */}
         <div className="mb-8 w-full max-w-lg mx-auto px-4">
@@ -6244,9 +6280,10 @@ const OndaLevel1 = () => {
 
         {/* Подсказка для разрешения Watch - СКРЫТА */}
 
-        <div className="grid md:grid-cols-2 gap-4 mb-8" data-onda-practices-grid>
-          {currentCircuit.practices.map(renderPracticeCard)}
-        </div>
+        {/* The 12-practice grid moved up under Section 2 (Today's
+            Practice) so the first viewport for new users contains real
+            practice cards, not setup chrome. Its data-testid anchor
+            (`data-onda-practices-grid`) still exists at the new site. */}
 
         {/* Section 6 — Your Journey toggle. When opened, the lore
             blocks reveal directly below in the page flow (not at their
