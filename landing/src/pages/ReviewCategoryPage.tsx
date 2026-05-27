@@ -88,6 +88,11 @@ const CATEGORY_INTRO: Record<ReviewCategory, { h1: string; intro: string }> = {
     intro:
       'Breathwork went from niche somatic-therapy modality to mainstream nervous-system tool in 2024–2026, driven by the Stanford cyclic-sighing research and the Wim Hof / Othership crossover into recovery culture. ONDA scored the ten most credible breathwork apps of 2026 against the same six axes — session library, technique coverage, evidence grounding, app experience, biofeedback integration and value.',
   },
+  'red-light-mask': {
+    h1: 'Best Red Light Face Masks (2026)',
+    intro:
+      'Red light face masks split sharply across two tiers by 2026: FDA-cleared clinical references (Omnilux Contour, Dr. Dennis Gross SpectraLite, LightStim) and consumer-brand premium devices (CurrentBody Series 2, HigherDOSE, TheraFace, Lumara Viso). Form factor is the second axis — flexible silicone vs hard shell vs handheld wand. ONDA scored the ten most credible masks of 2026 against the same six axes — irradiance, wavelength coverage, LED count and facial coverage, clinical evidence, comfort and value.',
+  },
 }
 
 export function ReviewCategoryPage() {

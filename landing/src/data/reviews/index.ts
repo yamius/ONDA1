@@ -165,6 +165,17 @@ import inhale from './inhale-by-aero-health'
 import pranaBreath from './prana-breath'
 import ibreathe from './ibreathe'
 import breatheToRelax from './breathe-to-relax'
+// Red light face masks (date-gated to 2026-07-06)
+import omniluxContourFace from './omnilux-contour-face'
+import currentbodySeries2 from './currentbody-series-2'
+import drDennisGross from './dr-dennis-gross-spectralite'
+import lumaraViso from './lumara-viso'
+import therafaceMask from './theraface-mask'
+import higherDoseFaceMask from './higherdose-red-light-face-mask'
+import lightstim from './lightstim-for-wrinkles'
+import jovsDpl from './jovs-dpl-photofacial-mask'
+import solawave from './solawave-wand-4-in-1'
+import sharkCryoglow from './shark-cryoglow'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
 import bestSleepApps2026 from './best-sleep-apps-2026'
@@ -177,6 +188,7 @@ import bestInfraredSauna2026 from './best-infrared-sauna-2026'
 import bestSmartSleepClimate2026 from './best-smart-sleep-climate-2026'
 import bestPemfDevices2026 from './best-pemf-devices-2026'
 import bestBreathworkApps2026 from './best-breathwork-apps-2026'
+import bestRedLightFaceMasks2026 from './best-red-light-face-masks-2026'
 
 /** Current date captured once at module load. Used to filter date-gated
  *  reviews and comparisons out of the live registry until their publishOn
@@ -315,6 +327,17 @@ const ALL_REVIEWS: ToolReview[] = [
   pranaBreath,
   ibreathe,
   breatheToRelax,
+  // Red light face masks — ordered by overallScore. All date-gated to 2026-07-06.
+  omniluxContourFace,
+  currentbodySeries2,
+  drDennisGross,
+  lumaraViso,
+  therafaceMask,
+  higherDoseFaceMask,
+  lightstim,
+  jovsDpl,
+  solawave,
+  sharkCryoglow,
 ]
 
 /** Live product reviews — date-gated entries are excluded until their
@@ -337,6 +360,7 @@ const ALL_COMPARISONS: Comparison[] = [
   bestSmartSleepClimate2026,
   bestPemfDevices2026,
   bestBreathworkApps2026,
+  bestRedLightFaceMasks2026,
 ]
 
 /** Live round-up comparisons — date-gated entries excluded until their

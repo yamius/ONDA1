@@ -626,6 +626,58 @@ const BREATHWORK_APP_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Red light face masks: wearable LED photobiomodulation hardware for
+ *  facial skin — distinct from full-body panels by form factor, dose
+ *  per session, and clinical-evidence framing around dermatology. The
+ *  category split sharply in 2024–2026 between FDA-cleared clinical
+ *  references (Omnilux, Dr. Dennis Gross, LightStim) and consumer-brand
+ *  premium devices (CurrentBody, HigherDOSE, TheraFace). Irradiance
+ *  honesty and clinical-evidence base lead the rubric. */
+const RED_LIGHT_MASK_CRITERIA: Criterion[] = [
+  {
+    id: 'irradiance',
+    label: 'Irradiance and dose',
+    weight: 0.2,
+    description:
+      'Measured power density (mW/cm²) at the skin during session, cross-referenced against independent meter readings rather than marketing-stated peak figures. Mask form factor delivers lower irradiance than panels by design; honesty about the dose is what separates serious devices from spec-inflation.',
+  },
+  {
+    id: 'wavelength-coverage',
+    label: 'Wavelength coverage',
+    weight: 0.15,
+    description:
+      'Spectrum coverage — most face masks combine red 633 nm (skin surface, collagen) with near-infrared 830 nm (deeper tissue). Some add 590 nm amber (pigmentation) or blue 415 nm (acne). The mix and the published peaks matter more than the LED count.',
+  },
+  {
+    id: 'led-count-coverage',
+    label: 'LED count and facial coverage',
+    weight: 0.15,
+    description:
+      'LED count and spatial distribution across the face — coverage of forehead, cheeks, jaw, neck. A 100-LED mask with poor distribution treats less skin than a 60-LED mask with even coverage. Neck flap inclusion is the 2026 spec war.',
+  },
+  {
+    id: 'clinical-evidence',
+    label: 'Clinical evidence and regulatory standing',
+    weight: 0.2,
+    description:
+      'FDA Class II clearance, published peer-reviewed studies on the specific device for the claimed indications (fine lines, collagen, pigmentation, acne), and how honestly the manufacturer represents the published evidence. The category is full of marketing claims weakly tied to what the hardware actually does.',
+  },
+  {
+    id: 'comfort-fit',
+    label: 'Comfort and wearable fit',
+    weight: 0.15,
+    description:
+      'Flexible silicone vs hard plastic, weight, strap design and whether the mask can be worn unattended during a session. Hard-shell masks are cheaper to build but compromise daily use; flexible-silicone is the 2026 reference.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.15,
+    description:
+      'Hardware price weighed against measured irradiance, wavelength mix, clinical evidence and wearability. The category spans $169 (handheld wand) to $650+ (premium silicone masks) — value gap is large.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
@@ -640,6 +692,7 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'sleep-climate': SLEEP_CLIMATE_CRITERIA,
   pemf: PEMF_CRITERIA,
   'breathwork-app': BREATHWORK_APP_CRITERIA,
+  'red-light-mask': RED_LIGHT_MASK_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -656,6 +709,7 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   'sleep-climate': 'Smart sleep climate',
   pemf: 'PEMF devices',
   'breathwork-app': 'Breathwork apps',
+  'red-light-mask': 'Red light face masks',
 }
 
 /** Review categories in display order. */
@@ -672,6 +726,7 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'sauna',
   'pemf',
   'breathwork-app',
+  'red-light-mask',
 ]
 
 /** URL slugs for per-category landing pages — /reviews/<slug>. Chosen to
@@ -691,6 +746,7 @@ export const CATEGORY_URL_SLUGS: Record<ReviewCategory, string> = {
   'sleep-climate': 'smart-sleep-climate',
   pemf: 'pemf-devices',
   'breathwork-app': 'breathwork-apps',
+  'red-light-mask': 'red-light-face-masks',
 }
 
 /** Reverse lookup — URL slug → category id. Returns undefined if the slug

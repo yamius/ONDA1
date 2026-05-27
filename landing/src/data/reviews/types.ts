@@ -26,6 +26,7 @@ export type ReviewCategory =
   | 'sleep-climate'
   | 'pemf'
   | 'breathwork-app'
+  | 'red-light-mask'
 
 /** How a verdict link is treated. 'affiliate' flips rel="sponsored nofollow"
  *  plus a visible disclosure badge in the UI. v1 ships everything 'official'. */

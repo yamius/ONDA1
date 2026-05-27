@@ -111,6 +111,13 @@ import othershipVsOpen from './othership-vs-open-app'
 import wimHofVsSoma from './wim-hof-method-app-vs-soma-breath'
 import ibreatheVsB2r from './ibreathe-vs-breathe-to-relax'
 import breathwrkVsOthershipVsWhm from './breathwrk-vs-othership-vs-wim-hof-method-app'
+// Red light face masks (date-gated to 2026-07-06)
+import omniluxVsCurrentbody from './omnilux-contour-face-vs-currentbody-series-2'
+import omniluxVsGross from './omnilux-contour-face-vs-dr-dennis-gross-spectralite'
+import currentbodyVsHigherDose from './currentbody-series-2-vs-higherdose-red-light-face-mask'
+import therafaceVsHigherDose from './theraface-mask-vs-higherdose-red-light-face-mask'
+import lightstimVsSolawave from './lightstim-for-wrinkles-vs-solawave-wand-4-in-1'
+import omniluxVsCurrentbodyVsGross from './omnilux-contour-face-vs-currentbody-series-2-vs-dr-dennis-gross-spectralite'
 // Sleep climate (date-gated to 2026-06-15)
 import eightSleepVsChilipad from './eight-sleep-pod-4-vs-chilipad-dock-pro'
 import pod4VsCoverPro from './eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro'
@@ -243,6 +250,13 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   wimHofVsSoma,
   ibreatheVsB2r,
   breathwrkVsOthershipVsWhm,
+  // Red light face masks (date-gated to 2026-07-06)
+  omniluxVsCurrentbody,
+  omniluxVsGross,
+  currentbodyVsHigherDose,
+  therafaceVsHigherDose,
+  lightstimVsSolawave,
+  omniluxVsCurrentbodyVsGross,
 ]
 
 /** Live head-to-head duels — date-gated entries are excluded until their
