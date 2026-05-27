@@ -5442,25 +5442,8 @@ const OndaLevel1 = () => {
             practice is hoisted to the first position and rendered with
             an indigo accent ring + ✨ Recommended badge so it reads as
             "start here" without duplicating the card above (Option 3
-            from the UX review). When the watch isn't connected we add
-            a tiny inline hint above the list — never blocking action. */}
-        {!watchHeartRate.isConnected && (
-          <div
-            className="text-center text-xs mb-2"
-            style={{ opacity: 0.65 }}
-            data-testid="watch-hint"
-          >
-            {t('home.todays_practice.watch_hint', 'Connect Apple Watch to see live HRV during practice.')}{' '}
-            <button
-              type="button"
-              onClick={() => setShowWatchPrompt(true)}
-              className="underline"
-              data-testid="watch-hint-cta"
-            >
-              {t('home.todays_practice.connect_watch', 'Connect')}
-            </button>
-          </div>
-        )}
+            from the UX review). The Connect-Watch CTA already lives at
+            the top of the biometric block — no inline hint here. */}
         <div className="grid md:grid-cols-2 gap-4 mb-8" data-onda-practices-grid>
           {[
             ...currentCircuit.practices.filter(p => p.id === featuredPracticeId),
