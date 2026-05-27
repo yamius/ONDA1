@@ -2794,6 +2794,14 @@ const OndaLevel1 = () => {
       'p1-4': 'still_wave', 'p1-5': 'inner_listening', 'p1-6': 'first_light',
       'p1-7': 'liquid_presence', 'p1-8': 'breath_count', 'p1-9': 'point_of_stillness',
       'p1-10': 'i_am_silence', 'p1-11': 'ground_flow', 'p1-12': 'body_root',
+      'p2-1': 'flow_rhythm', 'p2-2': 'directional_sense', 'p2-3': 'rhythm_movement',
+      'p2-4': 'water_balance', 'p2-5': 'fluid_motion', 'p2-6': 'wave_breath',
+      'p2-7': 'sense_of_flow', 'p2-8': 'flow_focus', 'p2-9': 'flow_adapt',
+      'p2-10': 'still_water', 'p2-11': 'deep_current', 'p2-12': 'echo_ocean',
+      'p3-1': 'breath_of_transition', 'p3-2': 'balance_point', 'p3-3': 'adaptive_flow',
+      'p3-4': 'ground_air_breath', 'p3-5': 'step_of_stability', 'p3-6': 'wave_of_breath',
+      'p3-7': 'breath_bridge', 'p3-8': 'center_of_gravity', 'p3-9': 'shape_shift',
+      'p3-10': 'resonant_stillness', 'p3-11': 'pulse_of_earth', 'p3-12': 'breath_of_adaptation',
     };
     return mapping[practiceId] || practiceId;
   };
