@@ -5487,7 +5487,7 @@ const OndaLevel1 = () => {
             className={`text-base sm:text-lg font-light tracking-wider w-20 text-left pl-4 ${isLight ? 'text-slate-500' : 'text-white/80'}`}
             style={{
               display: 'inline-block',
-              transform: 'scaleX(1.4)',
+              transform: 'scaleX(1.2)',
               transformOrigin: 'left center',
             }}
             aria-hidden="true"
