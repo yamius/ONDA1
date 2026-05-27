@@ -280,6 +280,14 @@ const OndaLevel1 = () => {
     freePracticeIds: ['p1-1', 'p1-2', 'p1-3'],
   });
 
+  // Section 6 — "Your Journey" collapsible. Always starts closed on every
+  // mount (intentional: the redesign goal is that a biohacker's first
+  // impression is product, not poem). State is *not* persisted across
+  // sessions. The lore blocks scattered below are each wrapped in
+  // `{journeyOpen && (...)}`, and the toggle button lives just before
+  // them in the page flow.
+  const [journeyOpen, setJourneyOpen] = useState(false);
+
   // Stream the latest HRV reading into the 7-day daily log. Cheap to call
   // — the hook itself bails out on null/0/NaN, and writes are skipped when
   // today's slot already holds the same value.
@@ -5510,11 +5518,36 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
-        {/* End of home redesign top-of-flow block. The existing lore /
-            navigation / practices grid follows below until they're moved
-            into <JourneyAccordion> in the next commit. */}
+        {/* End of home redesign top-of-flow block. Below this is the
+            "Your Journey" collapsible: a single toggle, with each lore
+            block downstream wrapped in `{journeyOpen && (...)}`. The
+            non-lore blocks in between (Permission banner, Connection
+            panel, Practices grid, Watch prompt) stay visible regardless. */}
 
-        {/* Центральный заголовок */}
+        {/* Section 6 — Your Journey toggle */}
+        <div className="mb-6">
+          <button
+            type="button"
+            onClick={() => setJourneyOpen(v => !v)}
+            aria-expanded={journeyOpen}
+            data-testid="journey-toggle"
+            className={`w-full flex items-center justify-between rounded-2xl px-4 sm:px-5 py-3 sm:py-4 transition-all ${emoTint}`}
+          >
+            <span className="text-base sm:text-lg font-medium">{t('home.journey.title')}</span>
+            <span
+              aria-hidden="true"
+              className="text-sm opacity-70"
+              style={{
+                display: 'inline-block',
+                transition: 'transform 180ms ease',
+                transform: journeyOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+              }}
+            >▾</span>
+          </button>
+        </div>
+
+        {/* Центральный заголовок — inside Your Journey */}
+        {journeyOpen && (
         <div className="text-center mb-6 sm:mb-12 pt-0">
           {/* Логотип по центру */}
           <div className={`flex items-center justify-center gap-2 mb-8 sm:mb-10 ${isLight ? 'text-slate-400' : 'text-white/80'}`}>
@@ -5730,6 +5763,7 @@ const OndaLevel1 = () => {
             </div>
           </div>
         </div>
+        )}
 
         {/* Quick Mood Scan buttons moved up into Section 3 of the home
             redesign (1.7.4). The two existing actions
@@ -5737,7 +5771,8 @@ const OndaLevel1 = () => {
             Face Check) are unchanged — only the page slot and the EN
             labels changed. */}
 
-        {/* Центральный блок с описанием контура */}
+        {/* Центральный блок с описанием контура — inside Your Journey */}
+        {journeyOpen && (
         <div className="mb-12">
           <div className={`rounded-2xl border py-4 sm:py-8 px-4 sm:px-8 transition-all duration-1000 ${
             isLight
@@ -5778,6 +5813,7 @@ const OndaLevel1 = () => {
             </div>
           </div>
         </div>
+        )}
 
         {/* Permission Warning Banner */}
         {permissions.needsSetup && (
@@ -5883,7 +5919,8 @@ const OndaLevel1 = () => {
         {/* Биометрика и Прогресс уровня перенесены наверх в шапку
             (Sections 1 и 2.5 home redesign 1.7.4). */}
 
-        {/* Философский текст */}
+        {/* Философский текст — inside Your Journey */}
+        {journeyOpen && (
         <div className="mb-8 sm:mb-12">
           <div className={`backdrop-blur-sm rounded-2xl p-4 sm:p-8 border transition-all duration-1000 ${
             isLight
@@ -5922,6 +5959,7 @@ const OndaLevel1 = () => {
             </p>
           </div>
         </div>
+        )}
 
       {showStats && (
         <div className="max-w-6xl mx-auto mb-8 bg-black/40 backdrop-blur-md rounded-2xl p-6 border border-cyan-500/30">
@@ -6228,8 +6266,8 @@ const OndaLevel1 = () => {
           {currentCircuit.practices.map(renderPracticeCard)}
         </div>
 
-        {/* Кнопка Part's info — переход на addon-страницу */}
-        {t(`part_info.level_${activeCircuit}.title`, { defaultValue: '' }) && (
+        {/* Кнопка Part's info — inside Your Journey */}
+        {journeyOpen && t(`part_info.level_${activeCircuit}.title`, { defaultValue: '' }) && (
           <div className="mb-6 flex justify-center">
             <button
               onClick={() => {
@@ -6244,6 +6282,10 @@ const OndaLevel1 = () => {
             </button>
           </div>
         )}
+
+        {/* Level goal storytelling + Terra speaks — inside Your Journey */}
+        {journeyOpen && (
+        <>
 
         <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl transition-all duration-1000 ${
           isLight
@@ -6354,8 +6396,12 @@ const OndaLevel1 = () => {
             </p>
           </div>
         </div>
+        </>
+        )}
 
-        {/* Заголовок секции артефактов */}
+        {/* Заголовок секции артефактов + all artifact panels — inside Your Journey */}
+        {journeyOpen && (
+        <>
         <div className="mt-12 mb-6">
           <h2 className={`text-3xl font-bold text-center transition-colors duration-1000 ${
             isLight
@@ -6857,6 +6903,9 @@ const OndaLevel1 = () => {
               })}
             </div>
           </div>
+        )}
+        {/* End of artifacts — close the Your Journey conditional */}
+        </>
         )}
 
       </div>
