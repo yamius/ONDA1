@@ -5496,27 +5496,40 @@ const OndaLevel1 = () => {
           </span>
         </div>
 
-        {/* Section 1 — Biometric Hero (4 metric cards + waveform) */}
+        {/* Section 1 — Biometric Hero (4 metric cards + waveform).
+            Each card hides its value line when the metric is null
+            (no watch / no tracker) — the card collapses to icon +
+            label and the whole grid reads as setup-pending, not
+            broken-with-placeholders. Cards expand to full height
+            again as soon as each metric arrives. */}
         <div className="mb-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
             <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{displayHeartRate ?? '--'}</div>
+              {displayHeartRate != null && (
+                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{displayHeartRate}</div>
+              )}
               <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
             </div>
             <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.br ? `${vitalsData.br.toFixed(1)}` : '--'}</div>
+              {vitalsData.br != null && (
+                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.br.toFixed(1)}</div>
+              )}
               <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</div>
             </div>
             <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Activity className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400 mb-2 mx-auto" />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.stress ?? '--'}%</div>
+              {vitalsData.stress != null && (
+                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.stress}%</div>
+              )}
               <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.stress_label', 'Stress')}</div>
             </div>
             <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Zap className="w-5 sm:w-6 h-5 sm:h-6 text-amber-400 mb-2 mx-auto" />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.energy ?? '--'}%</div>
+              {vitalsData.energy != null && (
+                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.energy}%</div>
+              )}
               <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.energy_label', 'Energy')}</div>
             </div>
           </div>
