@@ -804,6 +804,12 @@
       "total_label_one": "{{count}} practice total",
       "total_label_other": "{{count}} practices total",
       "chart_empty": "Need a few more days of data to draw your trend"
+    },
+    "todays_practice": {
+      "section_title": "Today's Practice",
+      "empty_body": "Connect your Apple Watch for a personalised recommendation, or start with any practice below ↓",
+      "empty_cta": "Browse practices",
+      "collecting_body": "Collecting your data to recommend a practice…"
     }
   },
   "time": {
