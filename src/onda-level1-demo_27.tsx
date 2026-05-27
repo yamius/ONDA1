@@ -5462,10 +5462,7 @@ const OndaLevel1 = () => {
         </div>
       </div>
 
-      <div
-        className="max-w-6xl mx-auto px-3 sm:px-6 pb-4 sm:pb-8"
-        style={{ paddingTop: 'max(env(safe-area-inset-top, 0px) + 0.75rem, 3rem)' }}
-      >
+      <div className="max-w-6xl mx-auto px-3 sm:px-6 pb-4 sm:pb-8 pt-[28px]">
         {/* ──────────────────────────────────────────────────────────── *
          * Home redesign 1.7.4 — top of flow.                              *
          * Sections 1 (Biometric Hero), 2 (Today's Practice), 2.5 (Part   *
