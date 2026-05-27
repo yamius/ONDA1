@@ -97,6 +97,13 @@ import saunaspaceVsSunlighten from './saunaspace-faraday-vs-sunlighten-mpulse'
 import finnleoVsAlmostHeaven from './finnleo-hallmark-vs-almost-heaven-salem'
 import threePremiumSauna from './sunlighten-vs-clearlight-vs-saunaspace'
 import irVsTraditional from './sunlighten-vs-finnleo-vs-almost-heaven'
+// Sleep climate (date-gated to 2026-06-15)
+import eightSleepVsChilipad from './eight-sleep-pod-4-vs-chilipad-dock-pro'
+import pod4VsCoverPro from './eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro'
+import chilipadVsBedjet from './chilipad-dock-pro-vs-bedjet-3'
+import dockProVsCube from './chilipad-dock-pro-vs-chilipad-cube'
+import pod3VsCoverPro from './eight-sleep-pod-3-vs-eight-sleep-pod-cover-pro'
+import eightSleepVsChilipadVsBedjet from './eight-sleep-pod-4-vs-chilipad-dock-pro-vs-bedjet-3'
 // HRV (continued)
 import polarH10VsGarmin from './polar-h10-vs-garmin-venu-4'
 // CGM (continued)
@@ -201,6 +208,13 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   headspaceVsWakingUpVsHealthyMinds,
   sleepCycleVsSleepAsAndroidVsAutoSleep,
   endelVsPzizzVsBettersleep,
+  // Sleep climate (date-gated to 2026-06-15)
+  eightSleepVsChilipad,
+  pod4VsCoverPro,
+  chilipadVsBedjet,
+  dockProVsCube,
+  pod3VsCoverPro,
+  eightSleepVsChilipadVsBedjet,
 ]
 
 /** Live head-to-head duels — date-gated entries are excluded until their
