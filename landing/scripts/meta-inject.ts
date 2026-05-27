@@ -1957,6 +1957,7 @@ export function getMetaForRoute(route: string): RouteMeta {
         'red-light': `Best Red Light Therapy Panels (2026) — Independent Reviews | ONDA Life`,
         'cold-plunge': `Best Cold Plunge & Ice Bath (2026) — Independent Reviews | ONDA Life`,
         sauna: `Best Infrared Sauna & Sauna (2026) — Independent Reviews | ONDA Life`,
+        'sleep-climate': `Best Smart Sleep Climate Systems (2026) — Independent Reviews | ONDA Life`,
       } as Record<typeof category, string>
       const descriptionByCat: Record<typeof category, string> = {
         'hrv-wearable':
@@ -1977,6 +1978,8 @@ export function getMetaForRoute(route: string): RouteMeta {
           'Independent ONDA reviews of cold plunge tubs and ice baths — Plunge, BlueCube, Ice Barrel, Cold Pod, Edge and more — scored on chiller capacity, build, filtration and value.',
         sauna:
           'Independent ONDA reviews of infrared and traditional saunas — Sunlighten, Clearlight, HigherDose, SaunaSpace, Therasage and more — scored on heat source, EMF, build and value.',
+        'sleep-climate':
+          'Independent ONDA reviews of smart sleep climate systems — Eight Sleep Pod, ChiliPad, BedJet, Sleepme, OOLER and more — scored on climate range, build, app and value.',
       } as Record<typeof category, string>
       const itemListEntries = [
         ...(catComparison

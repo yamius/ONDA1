@@ -1,7 +1,7 @@
 {
   "hub": {
     "h1": "Biohacking Tool Reviews",
-    "intro": "Independent, criteria-based reviews of biohacking tools — HRV trackers, meditation apps and sleep apps — scored against a fixed, public rubric, not on hype.",
+    "intro": "Independent, criteria-based reviews across ten biohacker hardware and software categories — HRV trackers, sleep apps and climate systems, vagus stimulators, CGMs, EEG headsets, red light therapy, cold plunge, sauna and meditation apps. Every device scored against a fixed, public rubric — not on hype.",
     "methodologyLink": "→ How we score (methodology)"
   },
   "breadcrumb": {
@@ -11,7 +11,7 @@
   },
   "methodology": {
     "h1": "How ONDA scores tools",
-    "intro": "Every review on ONDA is a single, named editorial assessment — not a crowd average and not an algorithm. This page is the fixed rubric behind those scores, so you can judge the judgement.",
+    "intro": "Every review on ONDA is a single, named editorial assessment — not a crowd average and not an algorithm. We score across ten biohacker categories with category-specific rubrics, each one weighted on what actually matters in that category (HRV accuracy for trackers, irradiance for red light, chiller capacity for cold plunge, heat-source spectrum for sauna, climate range for sleep systems). This page is the fixed rubric behind those scores, so you can judge the judgement.",
     "scoreHeading": "The score",
     "scoreBody": "Each tool gets an overall score from 0 to 10 (one decimal). It is the weighted mean of the criteria below — never a round number picked by feel. A single reviewer assigns it, so it is published as one editorial rating, not an aggregate of many.",
     "criteriaHeading": "Scoring criteria — {{category}}",

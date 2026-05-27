@@ -474,6 +474,56 @@ const SAUNA_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Smart sleep-climate hardware: bed-temperature systems that cool, heat
+ *  or actively regulate bed-surface temperature overnight. Eight Sleep
+ *  defined the modern premium tier; Sleepme (ChiliPad) holds the
+ *  water-only chiller niche; BedJet runs the air-flow alternative. Active
+ *  climate control plus app/sleep-tracking dominate the rubric. */
+const SLEEP_CLIMATE_CRITERIA: Criterion[] = [
+  {
+    id: 'climate-range',
+    label: 'Climate range and capacity',
+    weight: 0.25,
+    description:
+      'Cooling and heating range delivered (e.g. 13–43 °C at the bed surface), dual-zone capability, recovery time after a temperature change, and how the system holds the target through real ambient swings — the criterion the whole category exists to serve.',
+  },
+  {
+    id: 'build',
+    label: 'Build, install and longevity',
+    weight: 0.15,
+    description:
+      'Hardware build quality (cover, hub, water hose / air duct), install footprint, water-tank or filter maintenance burden, and the multi-year reliability track record on the actual hardware shipped today.',
+  },
+  {
+    id: 'app-tracking',
+    label: 'App, tracking and integration',
+    weight: 0.15,
+    description:
+      'Quality of the companion app, sleep-staging and HRV tracking on the device, integration with Apple Health / Oura / Whoop and the depth of insights surfaced — sleep-climate is increasingly bought as a tracker as well as a heater.',
+  },
+  {
+    id: 'form-factor',
+    label: 'Form factor flexibility',
+    weight: 0.15,
+    description:
+      'Cover vs full-mattress vs blanket, fit on existing beds, dual-zone (his/her) capability, and whether the system survives travel or rentals — install flexibility is the second-most-asked question after cooling.',
+  },
+  {
+    id: 'subscription',
+    label: 'Subscription model and ownership cost',
+    weight: 0.15,
+    description:
+      'Whether ongoing membership is required for full features (Eight Sleep), how locked the device is to the manufacturer’s app, and the realistic 3-year total cost of ownership. Eight Sleep’s subscription model is the category’s biggest editorial point of contention.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.15,
+    description:
+      'Hardware price plus subscription weighed against climate capability, build longevity and tracking depth. The category spans $500 (BedJet) to $5,000+ (Eight Sleep Pod 4 Ultra) — value is a real differentiator.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
@@ -485,6 +535,7 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'red-light': RED_LIGHT_CRITERIA,
   'cold-plunge': COLD_PLUNGE_CRITERIA,
   sauna: SAUNA_CRITERIA,
+  'sleep-climate': SLEEP_CLIMATE_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -498,6 +549,7 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   'red-light': 'Red light therapy panels',
   'cold-plunge': 'Cold plunge & ice bath',
   sauna: 'Saunas & infrared saunas',
+  'sleep-climate': 'Smart sleep climate',
 }
 
 /** Review categories in display order. */
@@ -505,6 +557,7 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'hrv-wearable',
   'meditation-app',
   'sleep-app',
+  'sleep-climate',
   'vagus-stim',
   'cgm',
   'eeg-headset',
@@ -527,6 +580,7 @@ export const CATEGORY_URL_SLUGS: Record<ReviewCategory, string> = {
   'red-light': 'red-light-therapy',
   'cold-plunge': 'cold-plunge',
   sauna: 'infrared-sauna',
+  'sleep-climate': 'smart-sleep-climate',
 }
 
 /** Reverse lookup — URL slug → category id. Returns undefined if the slug

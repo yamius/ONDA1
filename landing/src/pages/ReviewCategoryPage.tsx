@@ -73,6 +73,11 @@ const CATEGORY_INTRO: Record<ReviewCategory, { h1: string; intro: string }> = {
     intro:
       'The home-sauna category divides cleanly across heat sources — full-spectrum IR, near-IR incandescent, traditional Finnish convection — and form factors from blanket to outdoor barrel. ONDA scored the ten most credible options of 2026 against the same six axes, with heat-source spectrum honesty and independently-measured EMF carrying weight on purpose.',
   },
+  'sleep-climate': {
+    h1: 'Best Smart Sleep Climate Systems (2026)',
+    intro:
+      'Bed-surface temperature regulation went from niche biohacker hardware to mainstream biohacker reference in 2024–2026, driven by Eight Sleep’s Pod and the long-running Sleepme (ChiliPad) lineage. ONDA scored the ten most credible smart sleep-climate systems of 2026 against the same six axes — climate range, build, app and tracking, form factor, subscription model and value.',
+  },
 }
 
 export function ReviewCategoryPage() {

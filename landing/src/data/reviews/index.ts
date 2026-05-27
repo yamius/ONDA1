@@ -120,6 +120,17 @@ import morozkoForge from './morozko-forge'
 import renuTherapyColdStoic from './renu-therapy-cold-stoic'
 import blueCubeColdPlunge from './bluecube-cold-plunge'
 import penguinChillers from './penguin-chillers'
+// Smart sleep climate (date-gated to 2026-06-15)
+import eightSleepPod4 from './eight-sleep-pod-4'
+import eightSleepPodCoverPro from './eight-sleep-pod-cover-pro'
+import eightSleepPod3 from './eight-sleep-pod-3'
+import chilipadDockPro from './chilipad-dock-pro'
+import chilipadCube from './chilipad-cube'
+import bedjet3 from './bedjet-3'
+import oolerSleepSystem from './ooler-sleep-system'
+import sleepNumberClimate360 from './sleep-number-climate360'
+import tempurBreezePro from './tempur-breeze-pro'
+import slumberCloudDryline from './slumber-cloud-dryline'
 // Sauna (May 2026)
 import sunlightenMpulse from './sunlighten-mpulse'
 import clearlightSanctuary2 from './clearlight-sanctuary-2'
@@ -140,6 +151,7 @@ import bestEegHeadsets2026 from './best-eeg-headsets-2026'
 import bestRedLightPanels2026 from './best-red-light-therapy-panels-2026'
 import bestColdPlunge2026 from './best-cold-plunge-2026'
 import bestInfraredSauna2026 from './best-infrared-sauna-2026'
+import bestSmartSleepClimate2026 from './best-smart-sleep-climate-2026'
 
 /** Current date captured once at module load. Used to filter date-gated
  *  reviews and comparisons out of the live registry until their publishOn
@@ -244,6 +256,17 @@ const ALL_REVIEWS: ToolReview[] = [
   therasageTheraSaunaPersonal,
   jnhLifestylesJoyous,
   relaxSaunaPortable,
+  // Smart sleep climate — ordered by overallScore. All date-gated to 2026-06-15.
+  eightSleepPod4,
+  eightSleepPodCoverPro,
+  chilipadDockPro,
+  eightSleepPod3,
+  chilipadCube,
+  oolerSleepSystem,
+  bedjet3,
+  sleepNumberClimate360,
+  tempurBreezePro,
+  slumberCloudDryline,
 ]
 
 /** Live product reviews — date-gated entries are excluded until their
@@ -263,6 +286,7 @@ const ALL_COMPARISONS: Comparison[] = [
   bestRedLightPanels2026,
   bestColdPlunge2026,
   bestInfraredSauna2026,
+  bestSmartSleepClimate2026,
 ]
 
 /** Live round-up comparisons — date-gated entries excluded until their
