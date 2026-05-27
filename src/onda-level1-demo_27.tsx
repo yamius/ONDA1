@@ -5355,7 +5355,7 @@ const OndaLevel1 = () => {
                 </linearGradient>
               </defs>
               <path
-                d="M 3 16 C 8 4, 12 4, 16 16 S 24 28, 29 16"
+                d="M 3 16 C 8 10, 12 10, 16 16 S 24 22, 29 16"
                 stroke="url(#onda-wave-grad)"
                 strokeWidth="2.6"
                 strokeLinecap="round"
