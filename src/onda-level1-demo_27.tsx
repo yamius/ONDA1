@@ -5327,14 +5327,42 @@ const OndaLevel1 = () => {
        !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && (
         <button
           onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
-          className={`menu-container fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-11 h-11 sm:w-12 sm:h-12 rounded-full backdrop-blur-md flex items-center justify-center transition-all ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
+          className={`menu-container fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-14 h-14 sm:w-16 sm:h-16 rounded-full backdrop-blur-md flex items-center justify-center transition-all ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
           style={{
-            boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)',
+            boxShadow: isLight ? '0 10px 28px rgba(99,102,241,0.18)' : '0 10px 36px rgba(0,0,0,0.45)',
           }}
           data-testid="button-menu"
           aria-label={showMenu ? 'Close menu' : 'Open menu'}
         >
-          {showMenu ? <X className="w-5 h-5" /> : <Waves className="w-5 h-5" />}
+          {showMenu ? (
+            <X className="w-6 h-6" />
+          ) : (
+            /* One bold sine wave, indigo→violet gradient. Hand-rolled
+               SVG so we control amplitude (Lucide's Waves is ~3 stacked
+               low-amplitude curves and reads timid in a 56–64 px well). */
+            <svg
+              viewBox="0 0 32 32"
+              width="32"
+              height="32"
+              fill="none"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient id="onda-wave-grad" x1="0%" y1="50%" x2="100%" y2="50%">
+                  <stop offset="0%" stopColor="#4f46e5" />
+                  <stop offset="50%" stopColor="#7c3aed" />
+                  <stop offset="100%" stopColor="#a855f7" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M 3 16 C 8 4, 12 4, 16 16 S 24 28, 29 16"
+                stroke="url(#onda-wave-grad)"
+                strokeWidth="2.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          )}
         </button>
       )}
 
@@ -5450,7 +5478,7 @@ const OndaLevel1 = () => {
             ONDA
           </span>
           <span
-            className="inline-block w-11 h-11 sm:w-12 sm:h-12"
+            className="inline-block w-14 h-14 sm:w-16 sm:h-16"
             aria-hidden="true"
           />
           <span
