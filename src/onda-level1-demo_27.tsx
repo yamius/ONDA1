@@ -5524,8 +5524,10 @@ const OndaLevel1 = () => {
             (Permission banner, Connection panel, Watch prompt) stay
             visible regardless of journey state. */}
 
-        {/* Центральный заголовок — inside Your Journey */}
-        {journeyOpen && (
+        {/* Центральный заголовок (logo + chapter+level chips + quote)
+            relocated to the Your Journey section below the practices
+            grid. See `journeyBlock1` insertion just after the toggle. */}
+        {false && (
         <div className="text-center mb-6 sm:mb-12 pt-0">
           {/* Логотип по центру */}
           <div className={`flex items-center justify-center gap-2 mb-8 sm:mb-10 ${isLight ? 'text-slate-400' : 'text-white/80'}`}>
@@ -5749,8 +5751,9 @@ const OndaLevel1 = () => {
             Face Check) are unchanged — only the page slot and the EN
             labels changed. */}
 
-        {/* Центральный блок с описанием контура — inside Your Journey */}
-        {journeyOpen && (
+        {/* Центральный блок с описанием контура relocated to Your
+            Journey section below the practices grid. */}
+        {false && (
         <div className="mb-12">
           <div className={`rounded-2xl border py-4 sm:py-8 px-4 sm:px-8 transition-all duration-1000 ${
             isLight
@@ -5897,8 +5900,9 @@ const OndaLevel1 = () => {
         {/* Биометрика и Прогресс уровня перенесены наверх в шапку
             (Sections 1 и 2.5 home redesign 1.7.4). */}
 
-        {/* Философский текст — inside Your Journey */}
-        {journeyOpen && (
+        {/* Философский текст relocated to Your Journey section below
+            the practices grid. */}
+        {false && (
         <div className="mb-8 sm:mb-12">
           <div className={`backdrop-blur-sm rounded-2xl p-4 sm:p-8 border transition-all duration-1000 ${
             isLight
@@ -6244,9 +6248,13 @@ const OndaLevel1 = () => {
           {currentCircuit.practices.map(renderPracticeCard)}
         </div>
 
-        {/* Section 6 — Your Journey toggle (positioned after the
-            practices grid per the 1.7.4 spec revision). When opened,
-            the lore blocks above reveal in their original positions. */}
+        {/* Section 6 — Your Journey toggle. When opened, the lore
+            blocks reveal directly below in the page flow (not at their
+            original positions further up). The three "upper" lore
+            blocks (header / circuit description / philosophy) are
+            mirrored here; the original sites are kept dead-gated
+            ({false && (...)}) for now to limit diff size — a future
+            cleanup can delete the dead JSX entirely. */}
         <div className="mb-6">
           <button
             type="button"
@@ -6267,6 +6275,168 @@ const OndaLevel1 = () => {
             >▾</span>
           </button>
         </div>
+
+        {/* ─── Your Journey lore — upper blocks (1: header, 2: circuit
+             description, 3: philosophy text) relocated under the
+             toggle so that expanding reveals content right here. ─── */}
+
+        {/* Block 1 — logo + chapter/level chips + level quote */}
+        {journeyOpen && (
+        <div className="text-center mb-6 sm:mb-12 pt-0">
+          <div className={`flex items-center justify-center gap-2 mb-8 sm:mb-10 ${isLight ? 'text-slate-400' : 'text-white/80'}`}>
+            <span className="text-lg sm:text-xl font-light">ONDA</span>
+            <span className="text-sm sm:text-base font-light">~</span>
+            <span className="text-lg sm:text-xl font-light">LIFE</span>
+          </div>
+
+          <div className="w-full max-w-lg mx-auto px-4">
+            {/* Chapter | Title */}
+            <div className="flex items-center justify-center mb-2 sm:mb-2">
+              <div className="relative dropdown-container w-full">
+                <button
+                  onClick={() => { setShowChapterDropdown(!showChapterDropdown); setShowLevelDropdown(false); }}
+                  className={`backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${emoTint}`}
+                >
+                  <div className="flex items-center justify-center">
+                    <span className="flex-1 text-right pr-3 sm:pr-4">{t('chapter')} {selectedChapter}</span>
+                    <span className="text-white/30">|</span>
+                    <span className="flex-1 text-left pl-3 sm:pl-4">{t(`chapters.chapter_${selectedChapter}`)}</span>
+                  </div>
+                </button>
+                {showChapterDropdown && (
+                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden w-full bg-indigo-500/20 border-indigo-400/50`}>
+                    {Array.from({length: 4}, (_, i) => i + 1).map(chapter => {
+                      const firstLevelOfChapter = (chapter - 1) * 3 + 1;
+                      const isAvailable = isPartUnlocked(firstLevelOfChapter);
+                      return (
+                        <button
+                          key={chapter}
+                          onClick={() => {
+                            if (isAvailable) {
+                              setSelectedChapter(chapter);
+                              setSelectedLevel(firstLevelOfChapter);
+                              setActiveCircuit(firstLevelOfChapter);
+                              setShowChapterDropdown(false);
+                            }
+                          }}
+                          className={`block w-full px-4 py-3 transition-all text-lg ${
+                            !isAvailable
+                              ? 'text-white/40 cursor-not-allowed'
+                              : selectedChapter === chapter ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
+                          }`}
+                        >
+                          <div className="flex items-center justify-center">
+                            <span className="flex-1 text-right pr-3 sm:pr-4">{t('chapter')} {chapter}</span>
+                            <span className="text-white/30">|</span>
+                            <span className="flex-1 text-left pl-3 sm:pl-4">{t(`chapters.chapter_${chapter}`)}</span>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </div>
+            {/* Level | Part name */}
+            <div className="flex items-center justify-center mb-3">
+              <div className="relative dropdown-container w-full">
+                <button
+                  onClick={() => { setShowLevelDropdown(!showLevelDropdown); setShowChapterDropdown(false); }}
+                  className={`backdrop-blur-sm font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${emoTint}`}
+                >
+                  <div className="flex items-center justify-center">
+                    <span className="flex-1 text-right pr-3 sm:pr-4 text-xl sm:text-2xl">{t('level')} {selectedLevel}</span>
+                    <span className="text-white/30 text-xl sm:text-2xl">|</span>
+                    <span className="flex-1 text-left pl-3 sm:pl-4">
+                      <span className="text-xl sm:text-2xl">{t(`part_name_${selectedLevel}`).split(' ')[0]}</span>
+                      <span className="text-base sm:text-xl"> {t(`part_name_${selectedLevel}`).split(' ').slice(1).join(' ')}</span>
+                    </span>
+                  </div>
+                </button>
+                {showLevelDropdown && (
+                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden w-full max-h-[60vh] overflow-y-auto scrollbar-hide bg-indigo-500/20 border-indigo-400/50`}>
+                    {Array.from({length: 12}, (_, i) => i + 1).map(level => {
+                      const isAvailable = isPartUnlocked(level);
+                      return (
+                        <button
+                          key={level}
+                          onClick={() => {
+                            if (isAvailable) {
+                              setSelectedLevel(level);
+                              setActiveCircuit(level);
+                              const chapterForLevel = Math.ceil(level / 3);
+                              setSelectedChapter(chapterForLevel);
+                              setShowLevelDropdown(false);
+                            }
+                          }}
+                          className={`block w-full px-4 py-2.5 transition-all text-lg ${
+                            !isAvailable
+                              ? 'text-white/40 cursor-not-allowed'
+                              : level === selectedLevel ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
+                          }`}
+                        >
+                          <div className="flex items-center justify-center">
+                            <span className="flex-1 text-right pr-3 sm:pr-4">{t('level')} {level}</span>
+                            <span className="text-white/30">|</span>
+                            <span className="flex-1 text-left pl-3 sm:pl-4">
+                              <span>{t(`part_name_${level}`).split(' ')[0]}</span>
+                              <span className="text-sm sm:text-base"> {t(`part_name_${level}`).split(' ').slice(1).join(' ')}</span>
+                            </span>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center flex-1 justify-center my-4 sm:my-6">
+            <div className={`text-base sm:text-xl italic max-w-md text-center px-4 sm:px-0 ${isLight ? 'text-slate-500' : 'text-white/80'}`} dangerouslySetInnerHTML={{__html: `«${t(`quote_level_${activeCircuit}`)}»`}}>
+            </div>
+          </div>
+        </div>
+        )}
+
+        {/* Block 2 — circuit description card */}
+        {journeyOpen && (
+        <div className="mb-12">
+          <div className={`rounded-2xl border py-4 sm:py-8 px-4 sm:px-8 transition-all duration-1000 ${
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-xl shadow-indigo-200/40 ${glow.panelBorder}`
+              : 'backdrop-blur-sm bg-black/20 border-purple-500/30'
+          }`}>
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-center justify-between mb-6">
+                <div className="text-4xl sm:text-6xl font-light tracking-wider">{t(`circuits.circuit_${activeCircuit}_title`)}</div>
+              </div>
+              <h3 className="text-2xl font-light mb-4">{t(`circuits.circuit_${activeCircuit}_subtitle`)}</h3>
+              <p className={`leading-relaxed ${isLight ? 'text-slate-500' : 'text-white/70'}`} dangerouslySetInnerHTML={{__html: t(`circuits.circuit_${activeCircuit}_desc`)}}>
+              </p>
+            </div>
+          </div>
+        </div>
+        )}
+
+        {/* Block 3 — philosophy text */}
+        {journeyOpen && (
+        <div className="mb-8 sm:mb-12">
+          <div className={`backdrop-blur-sm rounded-2xl p-4 sm:p-8 border transition-all duration-1000 ${
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+              : 'bg-gradient-to-br from-purple-900/20 to-indigo-900/20 border-purple-500/30'
+          }`}>
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
+              {t(`philosophy.level_${activeCircuit}.text_1`)}<br/>
+              {t(`philosophy.level_${activeCircuit}.text_2`)}<br/>
+              {t(`philosophy.level_${activeCircuit}.text_3`)}<br/>
+              {t(`philosophy.level_${activeCircuit}.text_4`)}<br/>
+              {t(`philosophy.level_${activeCircuit}.text_5`)}
+              {activeCircuit === 1 && <><br/>{t('philosophy.level_1.text_6')}</>}
+            </p>
+          </div>
+        </div>
+        )}
 
         {/* Кнопка Part's info — inside Your Journey */}
         {journeyOpen && t(`part_info.level_${activeCircuit}.title`, { defaultValue: '' }) && (
