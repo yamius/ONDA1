@@ -5467,22 +5467,24 @@ const OndaLevel1 = () => {
 
         {/* Brand header — ONDA · [burger spacer] · LIFE. The burger
             button itself is `position:fixed` (above), so this row holds
-            an invisible spacer the same width as the button so the
-            labels are on-axis with it at scroll-top, and they scroll
-            away normally when the user scrolls down. */}
-        <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+            an invisible spacer the same width as the button. Each label
+            sits in a fixed-width column (text-right on the left side,
+            text-left on the right side) so optical spacing is equal —
+            ONDA's chars are visually wider than LIFE's, so a plain
+            `gap-3` flexbox made the right side look further away. */}
+        <div className="flex items-center justify-center mb-4 sm:mb-6">
           <span
-            className={`text-base sm:text-lg font-light tracking-wider ${isLight ? 'text-slate-500' : 'text-white/80'}`}
+            className={`text-base sm:text-lg font-light tracking-wider w-20 text-right pr-4 ${isLight ? 'text-slate-500' : 'text-white/80'}`}
             aria-hidden="true"
           >
             ONDA
           </span>
           <span
-            className="inline-block w-14 h-14 sm:w-16 sm:h-16"
+            className="inline-block w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0"
             aria-hidden="true"
           />
           <span
-            className={`text-base sm:text-lg font-light tracking-wider ${isLight ? 'text-slate-500' : 'text-white/80'}`}
+            className={`text-base sm:text-lg font-light tracking-wider w-20 text-left pl-4 ${isLight ? 'text-slate-500' : 'text-white/80'}`}
             aria-hidden="true"
           >
             LIFE
