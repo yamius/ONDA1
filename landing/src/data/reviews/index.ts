@@ -142,6 +142,18 @@ import jnhLifestylesJoyous from './jnh-lifestyles-joyous'
 import almostHeavenSalem from './almost-heaven-salem'
 import relaxSaunaPortable from './relax-sauna-portable'
 import finnleoHallmark from './finnleo-hallmark'
+// PEMF devices (date-gated to 2026-06-22)
+import bemerClassicEvo from './bemer-classic-evo'
+import healthyWaveMultiWave from './healthy-wave-multi-wave'
+import pulseCentersXLPro from './pulse-centers-pulse-xl-pro'
+import curatron3d from './curatron-3d'
+import imrsPrime from './imrs-prime'
+import omiFullBodyMat from './omi-full-body-mat'
+import earthpulse from './earthpulse-sleep-on-command'
+import resonaVibe from './resona-health-vibe'
+import olylifeTera from './olylife-tera-p90-plus'
+import higherDosePemf from './higherdose-pemf-mat'
+import magnawaveMini from './magnawave-mini'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
 import bestSleepApps2026 from './best-sleep-apps-2026'
@@ -152,6 +164,7 @@ import bestRedLightPanels2026 from './best-red-light-therapy-panels-2026'
 import bestColdPlunge2026 from './best-cold-plunge-2026'
 import bestInfraredSauna2026 from './best-infrared-sauna-2026'
 import bestSmartSleepClimate2026 from './best-smart-sleep-climate-2026'
+import bestPemfDevices2026 from './best-pemf-devices-2026'
 
 /** Current date captured once at module load. Used to filter date-gated
  *  reviews and comparisons out of the live registry until their publishOn
@@ -267,6 +280,18 @@ const ALL_REVIEWS: ToolReview[] = [
   sleepNumberClimate360,
   tempurBreezePro,
   slumberCloudDryline,
+  // PEMF devices — ordered by overallScore. All date-gated to 2026-06-22.
+  bemerClassicEvo,
+  healthyWaveMultiWave,
+  pulseCentersXLPro,
+  curatron3d,
+  imrsPrime,
+  magnawaveMini,
+  omiFullBodyMat,
+  earthpulse,
+  resonaVibe,
+  olylifeTera,
+  higherDosePemf,
 ]
 
 /** Live product reviews — date-gated entries are excluded until their
@@ -287,6 +312,7 @@ const ALL_COMPARISONS: Comparison[] = [
   bestColdPlunge2026,
   bestInfraredSauna2026,
   bestSmartSleepClimate2026,
+  bestPemfDevices2026,
 ]
 
 /** Live round-up comparisons — date-gated entries excluded until their

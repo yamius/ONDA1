@@ -78,6 +78,11 @@ const CATEGORY_INTRO: Record<ReviewCategory, { h1: string; intro: string }> = {
     intro:
       'Bed-surface temperature regulation went from niche biohacker hardware to mainstream biohacker reference in 2024–2026, driven by Eight Sleep’s Pod and the long-running Sleepme (ChiliPad) lineage. ONDA scored the ten most credible smart sleep-climate systems of 2026 against the same six axes — climate range, build, app and tracking, form factor, subscription model and value.',
   },
+  pemf: {
+    h1: 'Best PEMF Devices (2026)',
+    intro:
+      'Pulsed electromagnetic field hardware divides cleanly across three form factors — full-body mats (Bemer, Healthy Wave, HigherDOSE), localised coil systems (Pulse Centers, Curatron, iMRS) and the new wearable tier (Resona Health VIBE). ONDA scored the ten most credible PEMF devices of 2026 against the same six axes — field strength, waveform research, build, programmability, form factor and value.',
+  },
 }
 
 export function ReviewCategoryPage() {

@@ -97,6 +97,13 @@ import saunaspaceVsSunlighten from './saunaspace-faraday-vs-sunlighten-mpulse'
 import finnleoVsAlmostHeaven from './finnleo-hallmark-vs-almost-heaven-salem'
 import threePremiumSauna from './sunlighten-vs-clearlight-vs-saunaspace'
 import irVsTraditional from './sunlighten-vs-finnleo-vs-almost-heaven'
+// PEMF (date-gated to 2026-06-22)
+import bemerVsHealthyWave from './bemer-classic-evo-vs-healthy-wave-multi-wave'
+import bemerVsPulseCenters from './bemer-classic-evo-vs-pulse-centers-pulse-xl-pro'
+import healthyWaveVsHigherDose from './healthy-wave-multi-wave-vs-higherdose-pemf-mat'
+import imrsVsOmi from './imrs-prime-vs-omi-full-body-mat'
+import resonaVsOlylife from './resona-health-vibe-vs-olylife-tera-p90-plus'
+import bemerVsHealthyWaveVsPulse from './bemer-classic-evo-vs-healthy-wave-multi-wave-vs-pulse-centers-pulse-xl-pro'
 // Sleep climate (date-gated to 2026-06-15)
 import eightSleepVsChilipad from './eight-sleep-pod-4-vs-chilipad-dock-pro'
 import pod4VsCoverPro from './eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro'
@@ -215,6 +222,13 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   dockProVsCube,
   pod3VsCoverPro,
   eightSleepVsChilipadVsBedjet,
+  // PEMF (date-gated to 2026-06-22)
+  bemerVsHealthyWave,
+  bemerVsPulseCenters,
+  healthyWaveVsHigherDose,
+  imrsVsOmi,
+  resonaVsOlylife,
+  bemerVsHealthyWaveVsPulse,
 ]
 
 /** Live head-to-head duels — date-gated entries are excluded until their

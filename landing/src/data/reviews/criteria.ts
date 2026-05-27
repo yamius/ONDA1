@@ -524,6 +524,57 @@ const SLEEP_CLIMATE_CRITERIA: Criterion[] = [
   },
 ]
 
+/** PEMF (pulsed electromagnetic field) devices: mats, coils and wearable
+ *  applicators that deliver low-intensity pulsed magnetic fields for
+ *  recovery, sleep, circulation and bone-density adjunct use. Field
+ *  strength and waveform-research grounding lead the rubric — the category
+ *  has wide variance between mats with credible specs and Amazon-tier
+ *  hardware running undocumented coils. */
+const PEMF_CRITERIA: Criterion[] = [
+  {
+    id: 'field-strength',
+    label: 'Field strength and dose',
+    weight: 0.2,
+    description:
+      'Measured magnetic field intensity at the treatment surface (microTesla / Gauss), pulse-rate range, and how documented the dose is. Marketing-stated peaks are common; usable continuous output is what matters and is rarely published.',
+  },
+  {
+    id: 'waveform-evidence',
+    label: 'Waveform and research evidence',
+    weight: 0.2,
+    description:
+      'Whether the specific waveforms and frequencies used are tied to published research (Bemer biorhythmic pulse, FDA-cleared bone-healing waveforms, Schumann-resonance frequencies) or are proprietary patterns without independent backing.',
+  },
+  {
+    id: 'build',
+    label: 'Build quality and longevity',
+    weight: 0.15,
+    description:
+      'Hardware build, control-unit electronics, coil quality, included applicators and warranty. PEMF hardware lives 5–10+ years when built right; cheap mats degrade in 12–24 months.',
+  },
+  {
+    id: 'programmability',
+    label: 'Programmability and protocols',
+    weight: 0.1,
+    description:
+      'Range and customisability of programmes — preset protocols, intensity steps, session lengths, app control where present. Black-box single-button devices score lower than systems exposing real parameters.',
+  },
+  {
+    id: 'form-factor',
+    label: 'Form factor and applicator range',
+    weight: 0.15,
+    description:
+      'Full-body mat vs coil/loop applicator vs wearable patch — and the range of included applicators (whole-body mat plus pillow plus spot applicator vs single mat only). Form-factor flexibility drives real-world session frequency.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.2,
+    description:
+      'Hardware price weighed against measured field strength, waveform research backing and applicator range. The category spans $299 (wearable) to $10,000+ (clinical coil systems) — value gap is large.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
@@ -536,6 +587,7 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'cold-plunge': COLD_PLUNGE_CRITERIA,
   sauna: SAUNA_CRITERIA,
   'sleep-climate': SLEEP_CLIMATE_CRITERIA,
+  pemf: PEMF_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -550,6 +602,7 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   'cold-plunge': 'Cold plunge & ice bath',
   sauna: 'Saunas & infrared saunas',
   'sleep-climate': 'Smart sleep climate',
+  pemf: 'PEMF devices',
 }
 
 /** Review categories in display order. */
@@ -564,6 +617,7 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'red-light',
   'cold-plunge',
   'sauna',
+  'pemf',
 ]
 
 /** URL slugs for per-category landing pages — /reviews/<slug>. Chosen to
@@ -581,6 +635,7 @@ export const CATEGORY_URL_SLUGS: Record<ReviewCategory, string> = {
   'cold-plunge': 'cold-plunge',
   sauna: 'infrared-sauna',
   'sleep-climate': 'smart-sleep-climate',
+  pemf: 'pemf-devices',
 }
 
 /** Reverse lookup — URL slug → category id. Returns undefined if the slug
