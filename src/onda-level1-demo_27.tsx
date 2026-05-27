@@ -5151,19 +5151,24 @@ const OndaLevel1 = () => {
             <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
           )}
         </div>
-        <p className={`text-sm mb-1 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{getPracticeDesc(practice.id)}</p>
         {(() => {
+          // Subtitle priority: if we have functional copy for this
+          // practice, it stands alone (title already carries the
+          // semi-poetic vibe; doubling it with the poetic desc was
+          // redundant). For practices that don't yet have functional
+          // copy (Parts 2–6 during rollout) we fall back to the poetic
+          // desc so the card still has a subtitle line.
           const fnKey = `practice_items.${getPracticeKey(practice.id)}_functional`;
           const fn = t(fnKey, { defaultValue: '' });
-          return fn ? (
+          const subtitle = fn || getPracticeDesc(practice.id);
+          return (
             <p
-              className={`text-sm mb-4 ${isLight ? 'text-slate-400' : 'text-gray-500'}`}
-              style={{ opacity: 0.75 }}
-              data-testid={`practice-functional-${practice.id}`}
+              className={`text-sm mb-4 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}
+              data-testid={`practice-subtitle-${practice.id}`}
             >
-              {fn}
+              {subtitle}
             </p>
-          ) : <div className="mb-4" />;
+          );
         })()}
 
         {sessions.length > 0 && (
