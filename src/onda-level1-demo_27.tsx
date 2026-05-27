@@ -5319,38 +5319,23 @@ const OndaLevel1 = () => {
         </div>
       )}
 
-      {/* Плавающая кнопка-меню — круг по центру верха, по бокам логотип
-          ONDA / LIFE. Раньше прямоугольная кнопка стояла слева; новая
-          композиция тестируется в 1.7.4 как fixed-header без всякого
-          обычного top-bar. */}
+      {/* Sticky burger button — only the circle. ONDA / LIFE labels live
+          in the document flow at the top of the home content (below) so
+          they scroll away with the page; the burger stays anchored. */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal &&
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
        !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && (
-        <div
-          className="menu-container fixed top-6 left-1/2 -translate-x-1/2 z-[100] flex items-center gap-3 sm:gap-4 pointer-events-none"
+        <button
+          onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
+          className={`menu-container fixed top-6 left-1/2 -translate-x-1/2 z-[100] w-11 h-11 sm:w-12 sm:h-12 rounded-full backdrop-blur-md flex items-center justify-center transition-all ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
+          style={{
+            boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)',
+          }}
+          data-testid="button-menu"
+          aria-label={showMenu ? 'Close menu' : 'Open menu'}
         >
-          <span
-            className={`text-base sm:text-lg font-light tracking-wider ${isLight ? 'text-slate-500' : 'text-white/80'}`}
-          >
-            ONDA
-          </span>
-          <button
-            onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
-            className={`w-11 h-11 sm:w-12 sm:h-12 rounded-full backdrop-blur-md flex items-center justify-center transition-all pointer-events-auto ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
-            style={{
-              boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)',
-            }}
-            data-testid="button-menu"
-            aria-label={showMenu ? 'Close menu' : 'Open menu'}
-          >
-            {showMenu ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
-          <span
-            className={`text-base sm:text-lg font-light tracking-wider ${isLight ? 'text-slate-500' : 'text-white/80'}`}
-          >
-            LIFE
-          </span>
-        </div>
+          {showMenu ? <X className="w-5 h-5" /> : <Waves className="w-5 h-5" />}
+        </button>
       )}
 
       {/* Paywall $ button removed in home redesign 1.7.4 (dead code: was
@@ -5451,6 +5436,30 @@ const OndaLevel1 = () => {
          * fold is product, not poem. The lore blocks below are moved     *
          * inside <JourneyAccordion> in a separate follow-up commit.      *
          * ──────────────────────────────────────────────────────────── */}
+
+        {/* Brand header — ONDA · [burger spacer] · LIFE. The burger
+            button itself is `position:fixed` (above), so this row holds
+            an invisible spacer the same width as the button so the
+            labels are on-axis with it at scroll-top, and they scroll
+            away normally when the user scrolls down. */}
+        <div className="flex items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+          <span
+            className={`text-base sm:text-lg font-light tracking-wider ${isLight ? 'text-slate-500' : 'text-white/80'}`}
+            aria-hidden="true"
+          >
+            ONDA
+          </span>
+          <span
+            className="inline-block w-11 h-11 sm:w-12 sm:h-12"
+            aria-hidden="true"
+          />
+          <span
+            className={`text-base sm:text-lg font-light tracking-wider ${isLight ? 'text-slate-500' : 'text-white/80'}`}
+            aria-hidden="true"
+          >
+            LIFE
+          </span>
+        </div>
 
         {/* Section 1 — Biometric Hero (4 metric cards + waveform) */}
         <div className="mb-6">
