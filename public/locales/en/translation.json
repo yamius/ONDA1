@@ -795,6 +795,16 @@
     "level_progress": "Part Progress",
     "practices": "practices"
   },
+  "home": {
+    "progress": {
+      "title": "Your Progress",
+      "streak_empty": "Complete your first practice to start your streak",
+      "streak_label_one": "{{count}} day streak",
+      "streak_label_other": "{{count}} day streak",
+      "total_label_one": "{{count}} practice total",
+      "total_label_other": "{{count}} practices total"
+    }
+  },
   "time": {
     "just_now": "just now",
     "min_ago": "min ago",
