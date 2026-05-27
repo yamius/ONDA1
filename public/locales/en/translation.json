@@ -810,6 +810,9 @@
       "empty_body": "Connect your Apple Watch for a personalised recommendation, or start with any practice below ↓",
       "empty_cta": "Browse practices",
       "collecting_body": "Collecting your data to recommend a practice…"
+    },
+    "journey": {
+      "title": "Your Journey"
     }
   },
   "time": {
