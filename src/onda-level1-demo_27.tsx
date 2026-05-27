@@ -5349,9 +5349,9 @@ const OndaLevel1 = () => {
             >
               <defs>
                 <linearGradient id="onda-wave-grad" x1="0%" y1="50%" x2="100%" y2="50%">
-                  <stop offset="0%" stopColor="#4f46e5" />
-                  <stop offset="50%" stopColor="#7c3aed" />
-                  <stop offset="100%" stopColor="#a855f7" />
+                  <stop offset="0%" stopColor="#475569" />
+                  <stop offset="50%" stopColor="#64748b" />
+                  <stop offset="100%" stopColor="#94a3b8" />
                 </linearGradient>
               </defs>
               <path
