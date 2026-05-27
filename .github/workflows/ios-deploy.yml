@@ -24,10 +24,13 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # Remove old lockfile and install fresh (fixes version mismatch)
+          # Remove old lockfile and install fresh (fixes version mismatch).
+          # --legacy-peer-deps: npm 10.x строже относится к peer-dep
+          # конфликтам (например @vitejs/plugin-react vs vite^5), хотя
+          # реальные версии совместимы. Старый алгоритм резолва решает это.
           rm -f package-lock.json
-          npm install --package-lock-only
-          npm ci
+          npm install --package-lock-only --legacy-peer-deps
+          npm ci --legacy-peer-deps
 
       - name: Build React app
         run: npm run build

@@ -37,8 +37,8 @@ jobs:
         run: |
           # Remove old lockfile and install fresh (fixes version mismatch)
           rm -f package-lock.json
-          npm install --package-lock-only
-          npm ci
+          npm install --package-lock-only --legacy-peer-deps
+          npm ci --legacy-peer-deps
       
       - name: Build web application
         run: npm run build

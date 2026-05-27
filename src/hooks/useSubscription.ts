@@ -3,6 +3,7 @@ import { Capacitor } from '@capacitor/core';
 import { PurchasesPackage, PurchasesOfferings, CustomerInfo } from '@revenuecat/purchases-capacitor';
 import { revenueCatService, ENTITLEMENT_ID } from '../services/RevenueCatService';
 import { supabase } from '../lib/supabase';
+import { trackTenjinSubscriptionPaid } from '../lib/tenjin';
 
 interface SubscriptionState {
   // Loading states
@@ -91,6 +92,65 @@ export function useSubscription(): UseSubscriptionReturn {
 
     init();
   }, [isNative]);
+
+  // Детектор реальной оплаты подписки (trial → paid конверсия или
+  // прямая покупка без триала). Фаерит Firebase `purchase` event с
+  // реальной выручкой — ровно один раз на транзакцию через localStorage
+  // dedupe по (productId + originalPurchaseDate).
+  //
+  // Зачем: раньше Firebase `purchase` фаерилось на trial start с полной
+  // ценой подписки → фантомная выручка в GA4 и врущий ROAS в Google Ads.
+  // Trial — это $0 на стороне Apple; реальная выручка появляется когда
+  // Apple списывает деньги после trial-периода. Это происходит off-app,
+  // и detection срабатывает на следующем открытии (или сразу если юзер
+  // в app в момент конверсии).
+  useEffect(() => {
+    if (!state.customerInfo) return;
+    const ent = state.customerInfo.entitlements?.active?.[ENTITLEMENT_ID];
+    if (!ent || !ent.isActive) return;
+    // Только реальное paid состояние — TRIAL и INTRO пропускаем.
+    if (ent.periodType !== 'NORMAL') return;
+
+    const txnKey = `onda_subscription_paid_fired_${ent.productIdentifier}_${ent.originalPurchaseDate}`;
+    if (localStorage.getItem(txnKey) === '1') return;
+
+    // Лукапим цену из offerings (для корректного value в Firebase).
+    // Если offerings ещё не загружены — пропускаем, useEffect перезапустится
+    // когда они придут.
+    let value = 0;
+    let currency = 'USD';
+    let plan: string | undefined;
+    const o = state.offerings as any;
+    const offering = o?.current ?? o?.all?.['default'] ?? o;
+    const allPkgs: PurchasesPackage[] = offering?.availablePackages
+      ?? [offering?.monthly, offering?.annual, offering?.yearly].filter(Boolean);
+    const pkg = allPkgs?.find(
+      (p) => p.product?.identifier === ent.productIdentifier,
+    );
+    if (pkg?.product?.price != null) {
+      value = pkg.product.price;
+      currency = pkg.product.currencyCode ?? 'USD';
+      plan = (pkg as any).packageType?.toString();
+    } else {
+      // Нет offerings → fall back на defaults и всё равно фаерим, чтобы
+      // не потерять событие. ROAS будет неточным для этого случая, но
+      // лучше чем пропустить транзакцию.
+      console.warn('[useSubscription] No package found for paid entitlement', ent.productIdentifier);
+    }
+
+    localStorage.setItem(txnKey, '1');
+    trackTenjinSubscriptionPaid({
+      value,
+      currency,
+      productId: ent.productIdentifier,
+      plan,
+    });
+    console.log('[useSubscription] subscription_paid fired:', {
+      productId: ent.productIdentifier,
+      value,
+      originalPurchaseDate: ent.originalPurchaseDate,
+    });
+  }, [state.customerInfo, state.offerings]);
 
   // Listen for auth changes to login/logout with RevenueCat
   useEffect(() => {

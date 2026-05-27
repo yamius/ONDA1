@@ -17,6 +17,14 @@ import { PermissionSetupModal } from './components/PermissionSetupModal';
 import { NotificationPrimerModal } from './components/NotificationPrimerModal';
 import { WatchConnectionPrompt } from './components/WatchConnectionPrompt';
 import { DebugMonitor } from './components/DebugMonitor';
+import { MetricsWaveform } from './components/MetricsWaveform';
+// Home redesign 1.7.4 — new sections (Section 2 / 4 / 6).
+import { HRVMiniChart } from './components/HRVMiniChart';
+import { TodaysPracticeStateCard } from './components/TodaysPracticeStateCard';
+import { JourneyAccordion } from './components/JourneyAccordion';
+import { useHRV7Day } from './hooks/useHRV7Day';
+import { usePracticesProgress } from './hooks/usePracticesProgress';
+import { useTodaysPractice } from './hooks/useTodaysPractice';
 import { useTheme } from './theme/ThemeProvider';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
@@ -28,7 +36,9 @@ import { useWatchHeartRate } from './hooks/useWatchHeartRate';
 import { usePermissions } from './hooks/usePermissions';
 import { Capacitor } from '@capacitor/core';
 import { App as CapApp } from '@capacitor/app';
-import { AppTrackingTransparency } from 'capacitor-plugin-app-tracking-transparency';
+// AppTrackingTransparency: импорт удалён в v1.7.3 — ATT-prompt отключён
+// целиком. Если когда-нибудь захотим IDFA, возвращать через value-moment
+// prompt после первой завершённой практики / пейволла, не на cold-start.
 import OndaTenjin from './plugins/ondaTenjin';
 import {
   initOneSignal,
@@ -129,29 +139,19 @@ const OndaLevel1 = () => {
     // Airbridge App Open (cold start + resume). Safe no-op on web / before SDK attaches.
     initTenjinAppOpenTracking();
 
-    // 2nd+ cold-start Tenjin connect.
+    // Tenjin connect на каждом cold-start.
     //
-    // ATT has been moved into the onboarding flow (screen 1 → 2 transition).
-    // On the very first install the onboarding fires both the ATT prompt
-    // AND OndaTenjin.connect() back-to-back. But on every subsequent
-    // launch the onboarding doesn't show — so we'd never call connect()
-    // again. Tenjin needs connect() on each session for it to register
-    // the open and attribute it properly.
-    //
-    // Strategy: read ATT status (no prompt — getStatus only). If it's
-    // 'authorized', 'denied', or 'restricted' (i.e. user has answered
-    // already), fire OndaTenjin.connect() — the plugin is idempotent so
-    // doubled calls within the same process are no-ops. If status is
-    // 'notDetermined', stay silent — the onboarding flow will own it.
+    // ATT-prompt в v1.7.3 убран целиком: на indie-масштабе opt-in 20–30%
+    // не окупает install-friction. Атрибуция идёт по SKAdNetwork (postbacks
+    // приходят независимо от ATT) + AdServices для Apple Search Ads. Tenjin
+    // SDK сам определит ATT.notDetermined и пойдёт по SKAN-only пути.
+    // Если когда-нибудь решим вернуть IDFA — делать это надо value-moment
+    // prompt'ом (после 1-й завершённой практики или пейволла), не на холодном
+    // старте. Подсказка: см. историю handleOnboardingNext до v1.7.3.
     if (Capacitor.isNativePlatform()) {
-      AppTrackingTransparency.getStatus()
-        .then(({ status }) => {
-          if (status !== 'notDetermined') {
-            return OndaTenjin.connect();
-          }
-          return undefined;
-        })
-        .catch((e) => console.warn('[boot] Tenjin auto-connect skipped', e));
+      OndaTenjin.connect().catch((e) =>
+        console.warn('[boot] Tenjin connect failed', e),
+      );
 
       // OneSignal SDK bootstrap. Safe to call on every cold start —
       // init is internally idempotent. We init regardless of ATT so the
@@ -215,45 +215,6 @@ const OndaLevel1 = () => {
     }
   }, [watchHeartRate.heartRate]);
   
-  // Auto-open Notification Primer — ONLY for legacy users who completed
-  // an older onboarding that didn't ask for notifications. Fresh installs
-  // go through the new 3-screen intro where screen 2 → Continue triggers
-  // the iOS notifications prompt natively (no extra modal needed).
-  //
-  // Gating:
-  //   1. Native only (no point on web).
-  //   2. Onboarding ALREADY completed in the past (legacy install).
-  //   3. Primer not shown yet (avoid repeat).
-  //
-  // Without #2 the primer would auto-fire on ATT dismissal during the
-  // very first onboarding session — landing on top of screen 2 or 3 —
-  // which is what regressed in 1.5.0 cold start.
-  useEffect(() => {
-    if (!Capacitor.isNativePlatform()) return;
-    if (localStorage.getItem('onda_onboarding_completed') !== 'true') return;
-    if (localStorage.getItem('onda_notification_primer_shown') === 'true') return;
-
-    let opened = false;
-    const open = () => {
-      if (opened) return;
-      opened = true;
-      setShowNotificationPrimer(true);
-      localStorage.setItem('onda_notification_primer_shown', 'true');
-    };
-
-    let appSub: { remove: () => void } | null = null;
-    CapApp.addListener('appStateChange', ({ isActive }) => {
-      if (isActive) open();
-    }).then((h) => { appSub = h; }).catch(() => undefined);
-
-    const fallback = setTimeout(open, 2500);
-
-    return () => {
-      clearTimeout(fallback);
-      appSub?.remove();
-    };
-  }, []);
-
   // Автозапуск HR мониторинга на втором и последующих запусках (когда разрешения уже есть)
   useEffect(() => {
     const autoStartMonitoring = async () => {
@@ -306,6 +267,65 @@ const OndaLevel1 = () => {
   const [practiceOpenedAtMs, setPracticeOpenedAtMs] = useState<number | null>(null);
   const [canExitPractice, setCanExitPractice] = useState(true);
   const [practiceHistory, setPracticeHistory] = useState([]);
+
+  // ─── Home redesign 1.7.4: derived/auxiliary state for new sections ───
+  // Streak + total over the user's entire practice history (Section 4).
+  const practicesProgress = usePracticesProgress(practiceHistory);
+  // 7-day HRV trend, client-side daily log (Section 4). Recording is wired
+  // up in a useEffect further down so the value follows fresh vitalsData.
+  const hrv7Day = useHRV7Day();
+  // Section 2 state machine — A (no watch) / B (collecting, 30 s) / C (pick).
+  const todaysPractice = useTodaysPractice({
+    isWatchConnected: watchHeartRate.isConnected,
+    freePracticeIds: ['p1-1', 'p1-2', 'p1-3'],
+  });
+
+  // Section 6 — "Your Journey" collapsible. Always starts closed on every
+  // mount (intentional: the redesign goal is that a biohacker's first
+  // impression is product, not poem). State is *not* persisted across
+  // sessions. The lore blocks scattered below are each wrapped in
+  // `{journeyOpen && (...)}`, and the toggle button lives just before
+  // them in the page flow.
+  const [journeyOpen, setJourneyOpen] = useState(false);
+
+  // Featured (a.k.a. "Today's") practice — always picks a concrete free
+  // practice so Section 2 can render an actual Start button. Selection
+  // is deterministic so the picked card doesn't flicker between renders:
+  //   1. First free practice that hasn't been completed yet.
+  //   2. Else the most recent free practice from history (so a returning
+  //      user lands on the one they last did).
+  //   3. Else `p1-1` as ultimate fallback.
+  const featuredPracticeId = useMemo(() => {
+    const freeIds = ['p1-1', 'p1-2', 'p1-3'];
+    const cp = completedPractices as Record<string, unknown>;
+    const uncompleted = freeIds.find(id => !cp[id]);
+    if (uncompleted) return uncompleted;
+    const lastFree = (practiceHistory as any[]).find(s => freeIds.includes(s?.practiceId));
+    if (lastFree) return lastFree.practiceId as string;
+    return freeIds[0];
+  }, [completedPractices, practiceHistory]);
+
+  // Stream the latest HRV reading into the 7-day daily log. Cheap to call
+  // — the hook itself bails out on null/0/NaN, and writes are skipped when
+  // today's slot already holds the same value.
+  useEffect(() => {
+    hrv7Day.recordSample(vitalsData.hrv);
+  }, [vitalsData.hrv, hrv7Day.recordSample]);
+
+  // Notification Primer — показываем ПОСЛЕ 2 завершённых практик, не
+  // на старте и не в онбординге. Логика: пуш о напоминаниях имеет смысл,
+  // когда юзер уже втянулся; ранний prompt = низкий opt-in + ощущение
+  // спама. v1.7.3: онбординг и ATT-prompt убраны, primer триггерится
+  // по practiceHistory.length.
+  // ВАЖНО: этот useEffect должен идти ПОСЛЕ объявления practiceHistory —
+  // иначе TDZ (`Cannot access 'practiceHistory' before initialization`).
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+    if (practiceHistory.length < 2) return;
+    if (localStorage.getItem('onda_notification_primer_shown') === 'true') return;
+    setShowNotificationPrimer(true);
+    localStorage.setItem('onda_notification_primer_shown', 'true');
+  }, [practiceHistory.length]);
   const [activePractice, setActivePractice] = useState(null);
   const [practiceState, setPracticeState] = useState('intro');
   const [practiceTime, setPracticeTime] = useState(0);
@@ -418,12 +438,10 @@ const OndaLevel1 = () => {
   const [infoModalMessage, setInfoModalMessage] = useState('');
   const [showMenu, setShowMenu] = useState(false);
   const [activeView, setActiveView] = useState<'main' | 'addon'>('main');
-  const [showOnboarding, setShowOnboarding] = useState(() => {
-    if (typeof localStorage !== 'undefined') {
-      return !localStorage.getItem('onda_onboarding_completed');
-    }
-    return true;
-  });
+  // v1.7.3: онбординг временно скрыт — юзер сразу попадает в хаб.
+  // Меню «Intro» по-прежнему может его открыть вручную (для QA / legacy).
+  // Авто-показ на холодном старте отключён.
+  const [showOnboarding, setShowOnboarding] = useState(false);
   const [onboardingScreen, setOnboardingScreen] = useState(1);
   // Timestamp of the first render while onboarding is visible — used to
   // attach `duration_seconds` to the Airbridge `Complete Onboarding` event.
@@ -2766,6 +2784,20 @@ const OndaLevel1 = () => {
     return t(mapping[practiceId] || practiceId);
   };
 
+  // Reverse-lookup helper used by the Welcome screen to compose i18n
+  // keys like `practice_items.micro_breath_pre_start`. Returns the
+  // bare suffix (e.g. "micro_breath") for a given practice id, or the
+  // id itself as a fallback so missing entries don't crash.
+  const getPracticeKey = (practiceId: string): string => {
+    const mapping: Record<string, string> = {
+      'p1-1': 'micro_breath', 'p1-2': 'sense_of_being', 'p1-3': 'warm_pulse',
+      'p1-4': 'still_wave', 'p1-5': 'inner_listening', 'p1-6': 'first_light',
+      'p1-7': 'liquid_presence', 'p1-8': 'breath_count', 'p1-9': 'point_of_stillness',
+      'p1-10': 'i_am_silence', 'p1-11': 'ground_flow', 'p1-12': 'body_root',
+    };
+    return mapping[practiceId] || practiceId;
+  };
+
   const getPracticeDesc = (practiceId: string) => {
     const mapping = {
       'p1-1': 'practice_items.micro_breath_desc',
@@ -4040,26 +4072,56 @@ const OndaLevel1 = () => {
                   <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
                 </div>
                 <p className="text-sm sm:text-2xl leading-relaxed italic font-light">
-                  "{getPracticeMessage(activePractice.id)}"
+                  "{t(`practice_items.${getPracticeKey(activePractice.id)}_pre_start`, { defaultValue: getPracticeMessage(activePractice.id) })}"
                 </p>
               </div>
-              {activePractice.scienceInfo && activePractice.scienceInfo.length > 0 && (
-                <div className={`text-sm sm:text-base space-y-2 mb-4 sm:mb-6 px-4 max-w-lg text-justify ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
-                  {activePractice.scienceInfo.map((info: string, idx: number) => {
-                    const colonIndex = info.indexOf(':');
-                    if (colonIndex > -1) {
-                      const label = info.substring(0, colonIndex + 1);
-                      const value = info.substring(colonIndex + 1);
-                      return (
+              {/* Science block — Biology / Why / Effect / Bio-marker.
+                  Pulls from i18n keys named `<practice_key>_<field>` per
+                  practice (e.g. micro_breath_biology). Falls back to the
+                  legacy `activePractice.scienceInfo` array for any
+                  practice that doesn't yet have the new keys (Parts 2+
+                  during the rollout). */}
+              {(() => {
+                const key = getPracticeKey(activePractice.id);
+                const hasBio = !!t(`practice_items.${key}_biology`, { defaultValue: '' });
+                if (hasBio) {
+                  const rows: Array<[string, string]> = [
+                    [t('practice_items.label_biology', 'Biology:'), t(`practice_items.${key}_biology`)],
+                    [t('practice_items.label_why', 'Why:'), t(`practice_items.${key}_why`)],
+                    [t('practice_items.label_effect', 'Effect:'), t(`practice_items.${key}_effect`)],
+                    [t('practice_items.label_biomarker', 'Bio-marker:'), t(`practice_items.${key}_biomarker`)],
+                  ];
+                  return (
+                    <div className={`text-sm sm:text-base space-y-2 mb-4 sm:mb-6 px-4 max-w-lg text-justify mx-auto ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
+                      {rows.map(([label, body], idx) => (
                         <p key={idx} className="leading-tight">
-                          <span className="font-bold">{label}</span>{value}
+                          <span className="font-bold">{label}</span> {body}
                         </p>
-                      );
-                    }
-                    return <p key={idx} className="leading-tight">{info}</p>;
-                  })}
-                </div>
-              )}
+                      ))}
+                    </div>
+                  );
+                }
+                if (activePractice.scienceInfo && activePractice.scienceInfo.length > 0) {
+                  return (
+                    <div className={`text-sm sm:text-base space-y-2 mb-4 sm:mb-6 px-4 max-w-lg text-justify ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
+                      {activePractice.scienceInfo.map((info: string, idx: number) => {
+                        const colonIndex = info.indexOf(':');
+                        if (colonIndex > -1) {
+                          const label = info.substring(0, colonIndex + 1);
+                          const value = info.substring(colonIndex + 1);
+                          return (
+                            <p key={idx} className="leading-tight">
+                              <span className="font-bold">{label}</span>{value}
+                            </p>
+                          );
+                        }
+                        return <p key={idx} className="leading-tight">{info}</p>;
+                      })}
+                    </div>
+                  );
+                }
+                return null;
+              })()}
               <div className={`flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
                 <span className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-white/10 border-white/20'}`}>
                   {activePractice.targetTime ? `${Math.floor(activePractice.targetTime / 60)} ${t('practice_items.duration_min')}` : activePractice.duration}
@@ -4374,62 +4436,9 @@ const OndaLevel1 = () => {
 
   if (showOnboarding) {
     const handleOnboardingNext = async () => {
-      if (onboardingScreen === 1) {
-        // Screen 1 → 2 is where ATT lives in the new flow. The native side
-        // (AppDelegate) no longer auto-fires it. We request → wait for any
-        // outcome → fire Tenjin connect() with whatever IDFA state we now
-        // have. Errors are non-fatal: on iOS < 14 or if the plugin fails
-        // for whatever reason, we still call connect() so attribution
-        // doesn't get stuck waiting for an answer that never comes.
-        if (Capacitor.isNativePlatform()) {
-          try {
-            const result = await AppTrackingTransparency.requestPermission();
-            console.log('[onboarding] ATT result:', result.status);
-            // A/B telemetry — which rationale copy the user saw and how
-            // they answered. Query later: opt-in rate per variant.
-            track('att_prompt_result', {
-              variant: attCopyVariantRef.current,
-              result: result.status,
-            });
-            // MMP side: distinct att_authorized / att_denied events so
-            // AppLovin Axon can optimize toward the IDFA opt-in cohort.
-            trackTenjinAttResult(result.status);
-          } catch (e) {
-            console.warn('[onboarding] ATT prompt error', e);
-          }
-          try {
-            await OndaTenjin.connect();
-          } catch (e) {
-            console.warn('[onboarding] Tenjin connect failed', e);
-          }
-        }
-      }
-
-      if (onboardingScreen === 2) {
-        // Screen 2 → 3 transition is the moment we ask for the iOS
-        // notifications permission. We've spent screen 2's text bridge
-        // explaining why; now the system prompt lands on top of our
-        // branded onboarding background.
-        let notifResult: string = 'unknown';
-        try {
-          notifResult = await requestNotificationPermission();
-        } catch (e) {
-          console.warn('[onboarding] notifications permission error', e);
-        }
-        track('notification_prompt_result', { result: notifResult });
-        // Tell the OneSignal SDK to register the subscription. iOS won't
-        // re-prompt (permission is already decided one way or another),
-        // but without this call OneSignal stays in 'unsubscribed' state
-        // and the dashboard can't target the device.
-        try {
-          registerOneSignalSubscription();
-        } catch (e) {
-          console.warn('[onboarding] OneSignal register failed', e);
-        }
-        // Snapshot so the standalone NotificationPrimerModal auto-open
-        // never fires on top of this — onboarding owns the prompt now.
-        localStorage.setItem('onda_notification_primer_shown', 'true');
-      }
+      // v1.7.3: онбординг теперь — чистые info-экраны. ATT-prompt убран
+      // (SKAN-only атрибуция через Tenjin). Notifications-prompt отложен
+      // до Notification Primer'а после 2 завершённых практик.
 
       if (onboardingScreen < 3) {
         setOnboardingScreen(onboardingScreen + 1);
@@ -5062,6 +5071,205 @@ const OndaLevel1 = () => {
     : activeCircuit === 12 ? 'text-fuchsia-700'
     : 'text-indigo-800';
 
+  // Practice card renderer — extracted so Section 2 (Today's Practice
+  // hero) can show the same card markup that the Section 5 grid uses,
+  // without duplicating 160+ lines of JSX. All closures (state setters,
+  // theme tokens, t, etc.) are captured from the component scope.
+  const renderPracticeCard = (practice: any, isFeatured: boolean = false) => {
+    const sessions = getPracticeSessions(practice.id);
+    const completedData = completedPractices[practice.id];
+    // Лучшее качество из сессий или из completedData
+    const bestQuality = sessions.length > 0
+      ? Math.max(...sessions.map(s => s.quality || 0), completedData?.quality || 0)
+      : (completedData?.quality || 0);
+    // Практика считается начатой только если есть хотя бы одна сессия
+    const isCompleted = sessions.length > 0 ? { ...completedData, quality: bestQuality } : null;
+    const bonus = calculateBonus();
+    const earnedQnt = Math.floor(practice.maxQnt * (1 + bonus / 100));
+    const isExpanded = expandedPractice === practice.id;
+
+    return (
+      <div
+        key={practice.id}
+        ref={el => practiceRefs.current[practice.id] = el}
+        className={`relative rounded-lg p-6 border transition-all flex flex-col ${
+          isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'
+        } ${
+          isCompleted
+            ? isLight ? 'border-emerald-300 bg-emerald-50/70' : 'border-emerald-500/50 bg-emerald-500/10'
+            : isLight
+            ? glow.panelBorder
+            : activeCircuit === 2
+            ? 'border-cyan-500/30 hover:border-cyan-400/50'
+            : activeCircuit === 3
+            ? 'border-gray-500/30 hover:border-gray-400/50'
+            : activeCircuit === 4
+            ? 'border-teal-500/30 hover:border-teal-400/50'
+            : activeCircuit === 5
+            ? 'border-amber-600/40 hover:border-amber-500/60'
+            : activeCircuit === 6
+            ? 'border-emerald-500/40 hover:border-emerald-400/60'
+            : activeCircuit === 7
+            ? 'border-sky-500/40 hover:border-sky-400/60'
+            : activeCircuit === 8
+            ? 'border-indigo-500/40 hover:border-indigo-400/60'
+            : activeCircuit === 9
+            ? 'border-yellow-500/50 hover:border-yellow-400/70'
+            : activeCircuit === 10
+            ? 'border-orange-500/40 hover:border-orange-400/60'
+            : activeCircuit === 11
+            ? 'border-cyan-500/40 hover:border-cyan-400/60'
+            : activeCircuit === 12
+            ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
+            : 'border-purple-500/30 hover:border-purple-400/50'
+        } ${isFeatured ? 'ring-2 ring-indigo-400/70 shadow-[0_0_24px_rgba(99,102,241,0.25)]' : ''}`}
+      >
+        {isFeatured && (
+          <span
+            className="absolute -top-2 left-3 px-2 py-0.5 rounded-full bg-indigo-500 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow"
+            data-testid="featured-badge"
+          >
+            ✨ {t('home.featured.recommended', 'Recommended')}
+          </span>
+        )}
+        <div className="flex items-start justify-between mb-3">
+          <div className="flex-1">
+            <h3 className="text-xl font-semibold mb-1">{getPracticeName(practice.id)}</h3>
+            <p className="text-sm text-gray-400">{practice.duration}</p>
+          </div>
+          {isCompleted?.isValidForArtifact ? (
+            <div className="text-right">
+              <CheckCircle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
+              <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
+            </div>
+          ) : isCompleted ? (
+            <div className="text-right">
+              <Circle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
+              <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
+            </div>
+          ) : (
+            <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
+          )}
+        </div>
+        {(() => {
+          // Subtitle priority: if we have functional copy for this
+          // practice, it stands alone (title already carries the
+          // semi-poetic vibe; doubling it with the poetic desc was
+          // redundant). For practices that don't yet have functional
+          // copy (Parts 2–6 during rollout) we fall back to the poetic
+          // desc so the card still has a subtitle line.
+          const fnKey = `practice_items.${getPracticeKey(practice.id)}_functional`;
+          const fn = t(fnKey, { defaultValue: '' });
+          const subtitle = fn || getPracticeDesc(practice.id);
+          return (
+            <p
+              className={`text-sm mb-4 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}
+              data-testid={`practice-subtitle-${practice.id}`}
+            >
+              {subtitle}
+            </p>
+          );
+        })()}
+
+        {sessions.length > 0 && (
+          <div className="mb-4">
+            <button
+              onClick={() => setExpandedPractice(isExpanded ? null : practice.id)}
+              className={`text-xs flex items-center gap-1 transition-all ${
+                activeCircuit === 2
+                  ? 'text-cyan-300 hover:text-cyan-200'
+                  : activeCircuit === 3
+                  ? 'text-amber-200 hover:text-amber-100'
+                  : activeCircuit === 4
+                  ? 'text-teal-300 hover:text-teal-200'
+                  : activeCircuit === 5
+                  ? 'text-amber-200 hover:text-amber-100'
+                  : activeCircuit === 6
+                  ? 'text-emerald-300 hover:text-emerald-200'
+                  : 'text-indigo-300 hover:text-indigo-200'
+              }`}
+            >
+              {isExpanded ? '▼' : '▶'} {t('practices.session_history')} ({sessions.length})
+            </button>
+
+            {isExpanded && (
+              <div className="mt-3 space-y-2 max-h-48 overflow-y-auto scrollbar-hide">
+                {sessions.map((session) => (
+                  <div
+                    key={session.id}
+                    className={`rounded p-3 border text-xs transition-all duration-1000 ${
+                      isLight ? 'bg-slate-100/80' : 'bg-black/30'
+                    } ${
+                      isLight
+                      ? 'border-slate-200'
+                      : activeCircuit === 2
+                        ? 'border-cyan-500/20'
+                        : activeCircuit === 3
+                        ? 'border-amber-600/20'
+                        : activeCircuit === 4
+                        ? 'border-teal-500/20'
+                        : activeCircuit === 5
+                        ? 'border-amber-500/20'
+                        : activeCircuit === 6
+                        ? 'border-emerald-500/20'
+                        : 'border-purple-500/20'
+                    }`}
+                  >
+                    <div className="flex justify-between items-start mb-2">
+                      <span className="text-gray-400">{formatDate(session.date)}</span>
+                      {session.isNewRecord && (
+                        <span className="text-amber-400">🏆</span>
+                      )}
+                    </div>
+                    <div className="grid grid-cols-3 gap-2">
+                      <div>
+                        <p className="text-gray-500">{t('journal.quality')}</p>
+                        <p className="font-bold text-emerald-400">{safeToFixed(session.quality, 0)}%</p>
+                      </div>
+                      <div>
+                        <p className="text-gray-500">{t('journal.time')}</p>
+                        <p className="font-mono">{formatTime(session.duration)}</p>
+                      </div>
+                      <div>
+                        <p className="text-gray-500">OND</p>
+                        <p className="text-amber-400">+{session.qnt}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        <div className="flex items-center justify-between mt-auto pt-2">
+          <div className="text-amber-400 font-mono">
+            <div>{t('practices.up_to')} {earnedQnt} OND</div>
+            {bonus > 0 && (
+              <div className="text-xs text-emerald-400">
+                (+{bonus}%)
+              </div>
+            )}
+          </div>
+          <button
+            onClick={() => {
+              markFreePracticeTapped(practice.id);
+              completePractice(practice.id, practice.maxQnt);
+            }}
+            className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all backdrop-blur-sm ${emoTint}`}
+          >
+            {isCompleted ? t('practices.improve') : t('practices.start')}
+            {FREE_PRACTICE_IDS.has(practice.id) && !tappedFreePractices.has(practice.id) && (
+              <span className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
+                {t('labels.free')}
+              </span>
+            )}
+          </button>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div
       data-main-container
@@ -5116,67 +5324,58 @@ const OndaLevel1 = () => {
         </div>
       )}
 
-      {/* Плавающая кнопка гамбургер меню */}
-      {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
+      {/* Sticky burger button — only the circle. ONDA / LIFE labels live
+          in the document flow at the top of the home content (below) so
+          they scroll away with the page; the burger stays anchored. */}
+      {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal &&
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
        !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && (
         <button
           onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
-          className={`menu-container fixed top-12 z-[100] transition-all px-3 py-3 rounded-xl backdrop-blur-md ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
+          className={`menu-container fixed left-1/2 -translate-x-1/2 z-[100] w-14 h-14 sm:w-16 sm:h-16 rounded-full backdrop-blur-md flex items-center justify-center transition-all ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
           style={{
-            boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)',
-            left: 'max(28px, calc(50% - 256px + 16px))'
+            top: 'max(env(safe-area-inset-top, 0px) + 0.75rem, 3rem)',
+            boxShadow: isLight ? '0 10px 28px rgba(99,102,241,0.18)' : '0 10px 36px rgba(0,0,0,0.45)',
           }}
           data-testid="button-menu"
+          aria-label={showMenu ? 'Close menu' : 'Open menu'}
         >
-          {showMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {showMenu ? (
+            <X className="w-6 h-6" />
+          ) : (
+            /* One bold sine wave, indigo→violet gradient. Hand-rolled
+               SVG so we control amplitude (Lucide's Waves is ~3 stacked
+               low-amplitude curves and reads timid in a 56–64 px well). */
+            <svg
+              viewBox="0 0 32 32"
+              width="32"
+              height="32"
+              fill="none"
+              aria-hidden="true"
+            >
+              <defs>
+                <linearGradient id="onda-wave-grad" x1="0%" y1="50%" x2="100%" y2="50%">
+                  <stop offset="0%" stopColor="#475569" />
+                  <stop offset="50%" stopColor="#64748b" />
+                  <stop offset="100%" stopColor="#94a3b8" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M 3 16 C 8 10, 12 10, 16 16 S 24 22, 29 16"
+                stroke="url(#onda-wave-grad)"
+                strokeWidth="2.6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+          )}
         </button>
       )}
 
-      {/* Кнопка подписки ($) — временно скрыта по просьбе владельца, пока не нужна. */}
-      {false && !showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal &&
-       !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
-       !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && !showMenu && !showSubscriptionModal && (
-        <button
-          onClick={() => {
-            setPaywallSource('cta_button');
-            setShowSubscriptionModal(true);
-          }}
-          className={`fixed top-12 z-[100] text-white transition-all w-10 h-10 rounded-full shadow-2xl backdrop-blur-md flex items-center justify-center ${
-            activeCircuit === 2
-              ? 'bg-cyan-600/40 hover:bg-cyan-600/60 border border-cyan-400/30'
-              : activeCircuit === 3
-              ? 'bg-amber-700/40 hover:bg-amber-700/60 border border-amber-500/30'
-              : activeCircuit === 4
-              ? 'bg-teal-600/40 hover:bg-teal-600/60 border border-teal-400/30'
-              : activeCircuit === 5
-              ? 'bg-yellow-700/40 hover:bg-yellow-700/60 border border-yellow-600/30'
-              : activeCircuit === 6
-              ? 'bg-emerald-500/40 hover:bg-emerald-500/60 border border-emerald-400/30'
-              : activeCircuit === 7
-              ? 'bg-sky-500/40 hover:bg-sky-500/60 border border-sky-400/30'
-              : activeCircuit === 8
-              ? 'bg-indigo-500/40 hover:bg-indigo-500/60 border border-indigo-400/30'
-              : activeCircuit === 9
-              ? 'bg-yellow-500/40 hover:bg-yellow-500/60 border border-yellow-400/40'
-              : activeCircuit === 10
-              ? 'bg-orange-500/40 hover:bg-orange-500/60 border border-amber-400/30'
-              : activeCircuit === 11
-              ? 'bg-cyan-500/40 hover:bg-cyan-500/60 border border-cyan-400/30'
-              : activeCircuit === 12
-              ? 'bg-fuchsia-500/40 hover:bg-fuchsia-500/60 border border-red-400/30'
-              : 'bg-purple-600/40 hover:bg-purple-600/60 border border-purple-400/30'
-          }`}
-          style={{ 
-            boxShadow: '0 8px 32px rgba(0, 0, 0, 0.4)',
-            right: 'max(44px, calc(50% - 256px + 16px))'
-          }}
-          title={t('subscription.title', 'Subscription')}
-          data-testid="button-subscription"
-        >
-          <DollarSign className="w-5 h-5" />
-        </button>
-      )}
+      {/* Paywall $ button removed in home redesign 1.7.4 (dead code: was
+          already gated behind {false && ...}). Paywall now triggers only
+          from (a) tapping a locked practice, (b) after 3 free practices,
+          (c) Settings → Premium. */}
 
       {/* Верхняя навигация */}
       <div className="hidden">
@@ -5264,7 +5463,258 @@ const OndaLevel1 = () => {
       </div>
 
       <div className="max-w-6xl mx-auto px-3 sm:px-6 pb-4 sm:pb-8 pt-[28px]">
-        {/* Центральный заголовок */}
+        {/* ──────────────────────────────────────────────────────────── *
+         * Home redesign 1.7.4 — top of flow.                              *
+         * Sections 1 (Biometric Hero), 2 (Today's Practice), 2.5 (Part   *
+         * Progress) and 4 (Your Progress) are surfaced here so the first *
+         * fold is product, not poem. The lore blocks below are moved     *
+         * inside <JourneyAccordion> in a separate follow-up commit.      *
+         * ──────────────────────────────────────────────────────────── */}
+
+        {/* Brand header — ONDA · [burger spacer] · LIFE. The burger
+            button itself is `position:fixed` (above), so this row holds
+            an invisible spacer the same width as the button. Each label
+            sits in a fixed-width column (text-right on the left side,
+            text-left on the right side) so optical spacing is equal —
+            ONDA's chars are visually wider than LIFE's, so a plain
+            `gap-3` flexbox made the right side look further away. */}
+        <div className="flex items-center justify-center mb-4 sm:mb-6">
+          <span
+            className={`text-base sm:text-lg font-light tracking-wider w-20 text-right pr-4 ${isLight ? 'text-slate-500' : 'text-white/80'}`}
+            aria-hidden="true"
+          >
+            ONDA
+          </span>
+          <span
+            className="inline-block w-14 h-14 sm:w-16 sm:h-16 flex-shrink-0"
+            aria-hidden="true"
+          />
+          <span
+            className={`text-base sm:text-lg font-light tracking-wider w-20 text-left pl-4 ${isLight ? 'text-slate-500' : 'text-white/80'}`}
+            style={{
+              display: 'inline-block',
+              transform: 'scaleX(1.2)',
+              transformOrigin: 'left center',
+            }}
+            aria-hidden="true"
+          >
+            LIFE
+          </span>
+        </div>
+
+        {/* Section 1 — Biometric Hero (4 metric cards + waveform).
+            Each card hides its value line when the metric is null
+            (no watch / no tracker) — the card collapses to icon +
+            label and the whole grid reads as setup-pending, not
+            broken-with-placeholders. Cards expand to full height
+            again as soon as each metric arrives. */}
+        <div className="mb-6">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+              <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
+              {displayHeartRate != null && (
+                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{displayHeartRate}</div>
+              )}
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
+            </div>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+              <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
+              {vitalsData.br != null && (
+                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.br.toFixed(1)}</div>
+              )}
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</div>
+            </div>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+              <Activity className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400 mb-2 mx-auto" />
+              {vitalsData.stress != null && (
+                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.stress}%</div>
+              )}
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.stress_label', 'Stress')}</div>
+            </div>
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+              <Zap className="w-5 sm:w-6 h-5 sm:h-6 text-amber-400 mb-2 mx-auto" />
+              {vitalsData.energy != null && (
+                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.energy}%</div>
+              )}
+              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.energy_label', 'Energy')}</div>
+            </div>
+          </div>
+          <div className="mt-3 sm:mt-4">
+            {displayHeartRate != null ? (
+              <MetricsWaveform
+                heartRate={displayHeartRate}
+                stress={vitalsData.stress}
+                energy={vitalsData.energy}
+              />
+            ) : (
+              <div
+                className={`rounded-2xl p-4 sm:p-5 text-center ${
+                  isLight
+                    ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+                    : 'bg-black/20 backdrop-blur-sm border border-white/10'
+                }`}
+                data-testid="biometric-connect-cta"
+              >
+                <div className="text-base sm:text-lg font-medium mb-1 flex items-center justify-center gap-2">
+                  <Heart className="w-4 h-4 text-red-400" />
+                  <span>{t('home.biometric.connect_title', 'Connect Apple Watch')}</span>
+                </div>
+                <p className="text-xs sm:text-sm mb-3" style={{ opacity: 0.7 }}>
+                  {t('home.biometric.connect_body', 'See your HRV in real time during breathing practices.')}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => setShowPermissionModal(true)}
+                  className={`px-5 py-2 rounded-xl text-sm font-semibold transition-all ${emoTint}`}
+                  data-testid="biometric-connect-cta-button"
+                >
+                  {t('home.biometric.connect_cta', 'Set Up Now')}
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Practices list — single block. The featured (recommended)
+            practice is hoisted to the first position and rendered with
+            an indigo accent ring + ✨ Recommended badge so it reads as
+            "start here" without duplicating the card above (Option 3
+            from the UX review). The Connect-Watch CTA already lives at
+            the top of the biometric block — no inline hint here. */}
+        <div className="grid md:grid-cols-2 gap-4 mb-8" data-onda-practices-grid>
+          {[
+            ...currentCircuit.practices.filter(p => p.id === featuredPracticeId),
+            ...currentCircuit.practices.filter(p => p.id !== featuredPracticeId),
+          ].map((practice, idx) => renderPracticeCard(practice, idx === 0))}
+        </div>
+
+        {/* Section 2.5 — Part Progress bar. Hidden while the user has
+            not started this level (0/12 with an empty bar reads as
+            "nothing here" and crowds the first viewport for free). */}
+        {completedCount > 0 && (
+        <div className="mb-8">
+          <div className={`rounded-2xl p-4 border transition-all duration-1000 ${
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+              : `bg-black/20 backdrop-blur-sm ${
+            activeCircuit === 2
+              ? 'border-cyan-500/30'
+              : activeCircuit === 3
+              ? 'border-amber-600/30'
+              : activeCircuit === 4
+              ? 'border-teal-500/30'
+              : activeCircuit === 5
+              ? 'border-amber-600/40'
+              : activeCircuit === 6
+              ? 'border-emerald-500/40'
+              : activeCircuit === 7
+              ? 'border-sky-500/40'
+              : activeCircuit === 8
+              ? 'border-indigo-500/40'
+              : activeCircuit === 9
+              ? 'border-yellow-500/50'
+              : activeCircuit === 10
+              ? 'border-orange-500/40'
+              : activeCircuit === 11
+              ? 'border-cyan-500/40'
+              : activeCircuit === 12
+              ? 'border-fuchsia-500/40'
+              : 'border-purple-500/30'
+          }`
+          }`}>
+            <div className="flex justify-between mb-2 text-sm">
+              <span>{t('progress.level_progress')}</span>
+              <span>{completedCount}/{totalPractices} {t('progress.practices')}</span>
+            </div>
+            <div className={`w-full h-3 rounded-full overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-black/50'}`}>
+              <div
+                className="h-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500"
+                style={{ width: `${progress}%` }}
+              />
+            </div>
+          </div>
+        </div>
+        )}
+
+        {/* Section 3 — Quick Mood Scan (Voice Check + Face Check) */}
+        <div className="mb-8 w-full max-w-lg mx-auto px-4">
+          <div className="text-sm font-medium mb-3 text-center" style={{ opacity: 0.75 }}>
+            {t('home.quick_mood.title')}
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <button
+              onClick={() => {
+                setShowEmotionalCheck(true);
+                if (!emotionalCheckUsed) {
+                  setEmotionalCheckUsed(true);
+                  localStorage.setItem('onda_emotional_check_used', 'true');
+                }
+              }}
+              className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
+              data-testid="quick-mood-voice-check"
+            >
+              {t('nav.emotional_check')}
+              {!emotionalCheckUsed && (
+                <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
+                  {t('labels.free')}
+                </span>
+              )}
+            </button>
+            <button
+              onClick={() => {
+                setShowNervousScan(true);
+                if (!nervousScanUsed) {
+                  setNervousScanUsed(true);
+                  localStorage.setItem('onda_nervous_scan_used', 'true');
+                }
+              }}
+              className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
+              data-testid="quick-mood-face-check"
+            >
+              {t('eye_scan.nav_button')}
+              {!nervousScanUsed && (
+                <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
+                  {t('labels.free')}
+                </span>
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* Section 4 — Your Progress (lifetime: 7-day HRV + streak + total) */}
+        <div className="mb-8">
+          <div className={`rounded-2xl p-4 border ${isLight ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}` : 'bg-black/20 backdrop-blur-sm border-white/10'}`}>
+            <div className="text-sm font-medium mb-3" style={{ opacity: 0.75 }}>
+              {t('home.progress.title')}
+            </div>
+            <HRVMiniChart
+              samples={hrv7Day.samples}
+              hasEnoughData={hrv7Day.hasEnoughData}
+            />
+            <div className="mt-3 text-sm" style={{ opacity: 0.85 }}>
+              {practicesProgress.total === 0
+                ? t('home.progress.streak_empty')
+                : (
+                  <span>
+                    🔥 {t('home.progress.streak_label', { count: practicesProgress.streak })}
+                    {' · '}
+                    {t('home.progress.total_label', { count: practicesProgress.total })}
+                  </span>
+                )}
+            </div>
+          </div>
+        </div>
+
+        {/* End of home redesign top-of-flow block. The "Your Journey"
+            toggle (moved below the practices grid per 1.7.4 spec rev 2)
+            opens the lore blocks below. The non-lore blocks in between
+            (Permission banner, Connection panel, Watch prompt) stay
+            visible regardless of journey state. */}
+
+        {/* Центральный заголовок (logo + chapter+level chips + quote)
+            relocated to the Your Journey section below the practices
+            grid. See `journeyBlock1` insertion just after the toggle. */}
+        {false && (
         <div className="text-center mb-6 sm:mb-12 pt-0">
           {/* Логотип по центру */}
           <div className={`flex items-center justify-center gap-2 mb-8 sm:mb-10 ${isLight ? 'text-slate-400' : 'text-white/80'}`}>
@@ -5480,49 +5930,17 @@ const OndaLevel1 = () => {
             </div>
           </div>
         </div>
+        )}
 
-        {/* Кнопки навигации */}
-        <div className="flex flex-col items-center gap-2 mb-6 sm:mb-12 w-full max-w-lg mx-auto px-4">
-          {/* Эмоциональная сверка */}
-          <button
-            onClick={() => {
-              setShowEmotionalCheck(true);
-              if (!emotionalCheckUsed) {
-                setEmotionalCheckUsed(true);
-                localStorage.setItem('onda_emotional_check_used', 'true');
-              }
-            }}
-            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
-          >
-            {t('nav.emotional_check')}
-            {!emotionalCheckUsed && (
-              <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
-                {t('labels.free')}
-              </span>
-            )}
-          </button>
+        {/* Quick Mood Scan buttons moved up into Section 3 of the home
+            redesign (1.7.4). The two existing actions
+            (`setShowEmotionalCheck` → Voice Check, `setShowNervousScan` →
+            Face Check) are unchanged — only the page slot and the EN
+            labels changed. */}
 
-          {/* Взгляд на себя (eye-scan) */}
-          <button
-            onClick={() => {
-              setShowNervousScan(true);
-              if (!nervousScanUsed) {
-                setNervousScanUsed(true);
-                localStorage.setItem('onda_nervous_scan_used', 'true');
-              }
-            }}
-            className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
-          >
-            {t('eye_scan.nav_button')}
-            {!nervousScanUsed && (
-              <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
-                {t('labels.free')}
-              </span>
-            )}
-          </button>
-        </div>
-
-        {/* Центральный блок с описанием контура */}
+        {/* Центральный блок с описанием контура relocated to Your
+            Journey section below the practices grid. */}
+        {false && (
         <div className="mb-12">
           <div className={`rounded-2xl border py-4 sm:py-8 px-4 sm:px-8 transition-all duration-1000 ${
             isLight
@@ -5563,15 +5981,12 @@ const OndaLevel1 = () => {
             </div>
           </div>
         </div>
-
-        {/* Permission Warning Banner */}
-        {permissions.needsSetup && (
-          <div className="mb-6 max-w-lg mx-auto w-full">
-            <PermissionWarningBanner
-              onSetupClick={() => setShowPermissionModal(true)}
-            />
-          </div>
         )}
+
+        {/* PermissionWarningBanner removed — the same "Set Up Now"
+            trigger now lives inside the Biometric Hero (replaces the
+            decorative sine wave when there's no live HR data). Avoids
+            duplicate CTA on the home screen. */}
 
         {/* Watch Connection Prompt */}
         <WatchConnectionPrompt
@@ -5665,77 +6080,12 @@ const OndaLevel1 = () => {
           </div>
         )}
 
-        {/* Биометрика */}
-        <div className="mb-6">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{displayHeartRate ?? '--'}</div>
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
-            </div>
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.br ? `${vitalsData.br.toFixed(1)}` : '--'}</div>
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</div>
-            </div>
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Activity className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400 mb-2 mx-auto" />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.stress ?? '--'}%</div>
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.stress_label', 'Stress')}</div>
-            </div>
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Zap className="w-5 sm:w-6 h-5 sm:h-6 text-amber-400 mb-2 mx-auto" />
-              <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.energy ?? '--'}%</div>
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.energy_label', 'Energy')}</div>
-            </div>
-          </div>
-        </div>
+        {/* Биометрика и Прогресс уровня перенесены наверх в шапку
+            (Sections 1 и 2.5 home redesign 1.7.4). */}
 
-        {/* Прогресс уровня */}
-        <div className="mb-8">
-          <div className={`rounded-2xl p-4 border transition-all duration-1000 ${
-            isLight
-              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
-              : `bg-black/20 backdrop-blur-sm ${
-            activeCircuit === 2
-              ? 'border-cyan-500/30'
-              : activeCircuit === 3
-              ? 'border-amber-600/30'
-              : activeCircuit === 4
-              ? 'border-teal-500/30'
-              : activeCircuit === 5
-              ? 'border-amber-600/40'
-              : activeCircuit === 6
-              ? 'border-emerald-500/40'
-              : activeCircuit === 7
-              ? 'border-sky-500/40'
-              : activeCircuit === 8
-              ? 'border-indigo-500/40'
-              : activeCircuit === 9
-              ? 'border-yellow-500/50'
-              : activeCircuit === 10
-              ? 'border-orange-500/40'
-              : activeCircuit === 11
-              ? 'border-cyan-500/40'
-              : activeCircuit === 12
-              ? 'border-fuchsia-500/40'
-              : 'border-purple-500/30'
-          }`
-          }`}>
-            <div className="flex justify-between mb-2 text-sm">
-              <span>{t('progress.level_progress')}</span>
-              <span>{completedCount}/{totalPractices} {t('progress.practices')}</span>
-            </div>
-            <div className={`w-full h-3 rounded-full overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-black/50'}`}>
-              <div
-                className="h-full bg-gradient-to-r from-yellow-400 to-orange-500 transition-all duration-500"
-                style={{ width: `${progress}%` }}
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* Философский текст */}
+        {/* Философский текст relocated to Your Journey section below
+            the practices grid. */}
+        {false && (
         <div className="mb-8 sm:mb-12">
           <div className={`backdrop-blur-sm rounded-2xl p-4 sm:p-8 border transition-all duration-1000 ${
             isLight
@@ -5774,6 +6124,7 @@ const OndaLevel1 = () => {
             </p>
           </div>
         </div>
+        )}
 
       {showStats && (
         <div className="max-w-6xl mx-auto mb-8 bg-black/40 backdrop-blur-md rounded-2xl p-6 border border-cyan-500/30">
@@ -6076,179 +6427,203 @@ const OndaLevel1 = () => {
 
         {/* Подсказка для разрешения Watch - СКРЫТА */}
 
-        <div className="grid md:grid-cols-2 gap-4 mb-8">
-          {currentCircuit.practices.map(practice => {
-            const sessions = getPracticeSessions(practice.id);
-            const completedData = completedPractices[practice.id];
-            // Лучшее качество из сессий или из completedData
-            const bestQuality = sessions.length > 0 
-              ? Math.max(...sessions.map(s => s.quality || 0), completedData?.quality || 0)
-              : (completedData?.quality || 0);
-            // Практика считается начатой только если есть хотя бы одна сессия
-            const isCompleted = sessions.length > 0 ? { ...completedData, quality: bestQuality } : null;
-            const bonus = calculateBonus();
-            const earnedQnt = Math.floor(practice.maxQnt * (1 + bonus / 100));
-            const isExpanded = expandedPractice === practice.id;
+        {/* The 12-practice grid moved up under Section 2 (Today's
+            Practice) so the first viewport for new users contains real
+            practice cards, not setup chrome. Its data-testid anchor
+            (`data-onda-practices-grid`) still exists at the new site. */}
 
-            return (
-              <div
-                key={practice.id}
-                ref={el => practiceRefs.current[practice.id] = el}
-                className={`relative rounded-lg p-6 border transition-all flex flex-col ${
-                  isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'
-                } ${
-                  isCompleted
-                    ? isLight ? 'border-emerald-300 bg-emerald-50/70' : 'border-emerald-500/50 bg-emerald-500/10'
-                    : isLight
-                    ? glow.panelBorder
-                    : activeCircuit === 2
-                    ? 'border-cyan-500/30 hover:border-cyan-400/50'
-                    : activeCircuit === 3
-                    ? 'border-gray-500/30 hover:border-gray-400/50'
-                    : activeCircuit === 4
-                    ? 'border-teal-500/30 hover:border-teal-400/50'
-                    : activeCircuit === 5
-                    ? 'border-amber-600/40 hover:border-amber-500/60'
-                    : activeCircuit === 6
-                    ? 'border-emerald-500/40 hover:border-emerald-400/60'
-                    : activeCircuit === 7
-                    ? 'border-sky-500/40 hover:border-sky-400/60'
-                    : activeCircuit === 8
-                    ? 'border-indigo-500/40 hover:border-indigo-400/60'
-                    : activeCircuit === 9
-                    ? 'border-yellow-500/50 hover:border-yellow-400/70'
-                    : activeCircuit === 10
-                    ? 'border-orange-500/40 hover:border-orange-400/60'
-                    : activeCircuit === 11
-                    ? 'border-cyan-500/40 hover:border-cyan-400/60'
-                    : activeCircuit === 12
-                    ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
-                    : 'border-purple-500/30 hover:border-purple-400/50'
-                }`}
-              >
-                <div className="flex items-start justify-between mb-3">
-                  <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-1">{getPracticeName(practice.id)}</h3>
-                    <p className="text-sm text-gray-400">{practice.duration}</p>
-                  </div>
-                  {isCompleted?.isValidForArtifact ? (
-                    <div className="text-right">
-                      <CheckCircle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
-                      <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
-                    </div>
-                  ) : isCompleted ? (
-                    <div className="text-right">
-                      <Circle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
-                      <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
-                    </div>
-                  ) : (
-                    <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
-                  )}
-                </div>
-                <p className={`text-sm mb-4 ${isLight ? 'text-slate-500' : 'text-gray-300'}`}>{getPracticeDesc(practice.id)}</p>
-                
-                {sessions.length > 0 && (
-                  <div className="mb-4">
-                    <button
-                      onClick={() => setExpandedPractice(isExpanded ? null : practice.id)}
-                      className={`text-xs flex items-center gap-1 transition-all ${
-                        activeCircuit === 2
-                          ? 'text-cyan-300 hover:text-cyan-200'
-                          : activeCircuit === 3
-                          ? 'text-amber-200 hover:text-amber-100'
-                          : activeCircuit === 4
-                          ? 'text-teal-300 hover:text-teal-200'
-                          : activeCircuit === 5
-                          ? 'text-amber-200 hover:text-amber-100'
-                          : activeCircuit === 6
-                          ? 'text-emerald-300 hover:text-emerald-200'
-                          : 'text-indigo-300 hover:text-indigo-200'
-                      }`}
-                    >
-                      {isExpanded ? '▼' : '▶'} {t('practices.session_history')} ({sessions.length})
-                    </button>
-                    
-                    {isExpanded && (
-                      <div className="mt-3 space-y-2 max-h-48 overflow-y-auto scrollbar-hide">
-                        {sessions.map((session) => (
-                          <div 
-                            key={session.id}
-                            className={`rounded p-3 border text-xs transition-all duration-1000 ${
-                              isLight ? 'bg-slate-100/80' : 'bg-black/30'
-                            } ${
-                              isLight
-                              ? 'border-slate-200'
-                              : activeCircuit === 2
-                                ? 'border-cyan-500/20'
-                                : activeCircuit === 3
-                                ? 'border-amber-600/20'
-                                : activeCircuit === 4
-                                ? 'border-teal-500/20'
-                                : activeCircuit === 5
-                                ? 'border-amber-500/20'
-                                : activeCircuit === 6
-                                ? 'border-emerald-500/20'
-                                : 'border-purple-500/20'
-                            }`}
-                          >
-                            <div className="flex justify-between items-start mb-2">
-                              <span className="text-gray-400">{formatDate(session.date)}</span>
-                              {session.isNewRecord && (
-                                <span className="text-amber-400">🏆</span>
-                              )}
-                            </div>
-                            <div className="grid grid-cols-3 gap-2">
-                              <div>
-                                <p className="text-gray-500">{t('journal.quality')}</p>
-                                <p className="font-bold text-emerald-400">{safeToFixed(session.quality, 0)}%</p>
-                              </div>
-                              <div>
-                                <p className="text-gray-500">{t('journal.time')}</p>
-                                <p className="font-mono">{formatTime(session.duration)}</p>
-                              </div>
-                              <div>
-                                <p className="text-gray-500">OND</p>
-                                <p className="text-amber-400">+{session.qnt}</p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                )}
-                
-                <div className="flex items-center justify-between mt-auto pt-2">
-                  <div className="text-amber-400 font-mono">
-                    <div>{t('practices.up_to')} {earnedQnt} OND</div>
-                    {bonus > 0 && (
-                      <div className="text-xs text-emerald-400">
-                        (+{bonus}%)
-                      </div>
-                    )}
-                  </div>
-                  <button
-                    onClick={() => {
-                      markFreePracticeTapped(practice.id);
-                      completePractice(practice.id, practice.maxQnt);
-                    }}
-                    className={`relative px-4 py-2 rounded-lg text-sm font-semibold transition-all backdrop-blur-sm ${emoTint}`}
-                  >
-                    {isCompleted ? t('practices.improve') : t('practices.start')}
-                    {FREE_PRACTICE_IDS.has(practice.id) && !tappedFreePractices.has(practice.id) && (
-                      <span className="absolute -top-2 -right-2 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
-                        {t('labels.free')}
-                      </span>
-                    )}
-                  </button>
-                </div>
-              </div>
-            );
-          })}
+        {/* Section 6 — Your Journey toggle. When opened, the lore
+            blocks reveal directly below in the page flow (not at their
+            original positions further up). The three "upper" lore
+            blocks (header / circuit description / philosophy) are
+            mirrored here; the original sites are kept dead-gated
+            ({false && (...)}) for now to limit diff size — a future
+            cleanup can delete the dead JSX entirely. */}
+        <div className="mb-6">
+          <button
+            type="button"
+            onClick={() => setJourneyOpen(v => !v)}
+            aria-expanded={journeyOpen}
+            data-testid="journey-toggle"
+            className={`w-full flex items-center justify-between rounded-2xl px-4 sm:px-5 py-3 sm:py-4 transition-all ${emoTint}`}
+          >
+            <span className="text-base sm:text-lg font-medium">{t('home.journey.title')}</span>
+            <span
+              aria-hidden="true"
+              className="text-sm opacity-70"
+              style={{
+                display: 'inline-block',
+                transition: 'transform 180ms ease',
+                transform: journeyOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+              }}
+            >▾</span>
+          </button>
         </div>
 
-        {/* Кнопка Part's info — переход на addon-страницу */}
-        {t(`part_info.level_${activeCircuit}.title`, { defaultValue: '' }) && (
+        {/* ─── Your Journey lore — upper blocks (1: header, 2: circuit
+             description, 3: philosophy text) relocated under the
+             toggle so that expanding reveals content right here. ─── */}
+
+        {/* Block 1 — logo + chapter/level chips + level quote */}
+        {journeyOpen && (
+        <div className="text-center mb-6 sm:mb-12 pt-0">
+          <div className={`flex items-center justify-center gap-2 mb-8 sm:mb-10 ${isLight ? 'text-slate-400' : 'text-white/80'}`}>
+            <span className="text-lg sm:text-xl font-light">ONDA</span>
+            <span className="text-sm sm:text-base font-light">~</span>
+            <span className="text-lg sm:text-xl font-light">LIFE</span>
+          </div>
+
+          <div className="w-full max-w-lg mx-auto px-4">
+            {/* Chapter | Title */}
+            <div className="flex items-center justify-center mb-2 sm:mb-2">
+              <div className="relative dropdown-container w-full">
+                <button
+                  onClick={() => { setShowChapterDropdown(!showChapterDropdown); setShowLevelDropdown(false); }}
+                  className={`backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${emoTint}`}
+                >
+                  <div className="flex items-center justify-center">
+                    <span className="flex-1 text-right pr-3 sm:pr-4">{t('chapter')} {selectedChapter}</span>
+                    <span className="text-white/30">|</span>
+                    <span className="flex-1 text-left pl-3 sm:pl-4">{t(`chapters.chapter_${selectedChapter}`)}</span>
+                  </div>
+                </button>
+                {showChapterDropdown && (
+                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden w-full bg-indigo-500/20 border-indigo-400/50`}>
+                    {Array.from({length: 4}, (_, i) => i + 1).map(chapter => {
+                      const firstLevelOfChapter = (chapter - 1) * 3 + 1;
+                      const isAvailable = isPartUnlocked(firstLevelOfChapter);
+                      return (
+                        <button
+                          key={chapter}
+                          onClick={() => {
+                            if (isAvailable) {
+                              setSelectedChapter(chapter);
+                              setSelectedLevel(firstLevelOfChapter);
+                              setActiveCircuit(firstLevelOfChapter);
+                              setShowChapterDropdown(false);
+                            }
+                          }}
+                          className={`block w-full px-4 py-3 transition-all text-lg ${
+                            !isAvailable
+                              ? 'text-white/40 cursor-not-allowed'
+                              : selectedChapter === chapter ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
+                          }`}
+                        >
+                          <div className="flex items-center justify-center">
+                            <span className="flex-1 text-right pr-3 sm:pr-4">{t('chapter')} {chapter}</span>
+                            <span className="text-white/30">|</span>
+                            <span className="flex-1 text-left pl-3 sm:pl-4">{t(`chapters.chapter_${chapter}`)}</span>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </div>
+            {/* Level | Part name */}
+            <div className="flex items-center justify-center mb-3">
+              <div className="relative dropdown-container w-full">
+                <button
+                  onClick={() => { setShowLevelDropdown(!showLevelDropdown); setShowChapterDropdown(false); }}
+                  className={`backdrop-blur-sm font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all border w-full ${emoTint}`}
+                >
+                  <div className="flex items-center justify-center">
+                    <span className="flex-1 text-right pr-3 sm:pr-4 text-xl sm:text-2xl">{t('level')} {selectedLevel}</span>
+                    <span className="text-white/30 text-xl sm:text-2xl">|</span>
+                    <span className="flex-1 text-left pl-3 sm:pl-4">
+                      <span className="text-xl sm:text-2xl">{t(`part_name_${selectedLevel}`).split(' ')[0]}</span>
+                      <span className="text-base sm:text-xl"> {t(`part_name_${selectedLevel}`).split(' ').slice(1).join(' ')}</span>
+                    </span>
+                  </div>
+                </button>
+                {showLevelDropdown && (
+                  <div className={`absolute top-full mt-2 left-1/2 -translate-x-1/2 backdrop-blur-md rounded-2xl border z-50 overflow-hidden w-full max-h-[60vh] overflow-y-auto scrollbar-hide bg-indigo-500/20 border-indigo-400/50`}>
+                    {Array.from({length: 12}, (_, i) => i + 1).map(level => {
+                      const isAvailable = isPartUnlocked(level);
+                      return (
+                        <button
+                          key={level}
+                          onClick={() => {
+                            if (isAvailable) {
+                              setSelectedLevel(level);
+                              setActiveCircuit(level);
+                              const chapterForLevel = Math.ceil(level / 3);
+                              setSelectedChapter(chapterForLevel);
+                              setShowLevelDropdown(false);
+                            }
+                          }}
+                          className={`block w-full px-4 py-2.5 transition-all text-lg ${
+                            !isAvailable
+                              ? 'text-white/40 cursor-not-allowed'
+                              : level === selectedLevel ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
+                          }`}
+                        >
+                          <div className="flex items-center justify-center">
+                            <span className="flex-1 text-right pr-3 sm:pr-4">{t('level')} {level}</span>
+                            <span className="text-white/30">|</span>
+                            <span className="flex-1 text-left pl-3 sm:pl-4">
+                              <span>{t(`part_name_${level}`).split(' ')[0]}</span>
+                              <span className="text-sm sm:text-base"> {t(`part_name_${level}`).split(' ').slice(1).join(' ')}</span>
+                            </span>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col items-center flex-1 justify-center my-4 sm:my-6">
+            <div className={`text-base sm:text-xl italic max-w-md text-center px-4 sm:px-0 ${isLight ? 'text-slate-500' : 'text-white/80'}`} dangerouslySetInnerHTML={{__html: `«${t(`quote_level_${activeCircuit}`)}»`}}>
+            </div>
+          </div>
+        </div>
+        )}
+
+        {/* Block 2 — circuit description card */}
+        {journeyOpen && (
+        <div className="mb-12">
+          <div className={`rounded-2xl border py-4 sm:py-8 px-4 sm:px-8 transition-all duration-1000 ${
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-xl shadow-indigo-200/40 ${glow.panelBorder}`
+              : 'backdrop-blur-sm bg-black/20 border-purple-500/30'
+          }`}>
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-center justify-between mb-6">
+                <div className="text-4xl sm:text-6xl font-light tracking-wider">{t(`circuits.circuit_${activeCircuit}_title`)}</div>
+              </div>
+              <h3 className="text-2xl font-light mb-4">{t(`circuits.circuit_${activeCircuit}_subtitle`)}</h3>
+              <p className={`leading-relaxed ${isLight ? 'text-slate-500' : 'text-white/70'}`} dangerouslySetInnerHTML={{__html: t(`circuits.circuit_${activeCircuit}_desc`)}}>
+              </p>
+            </div>
+          </div>
+        </div>
+        )}
+
+        {/* Block 3 — philosophy text */}
+        {journeyOpen && (
+        <div className="mb-8 sm:mb-12">
+          <div className={`backdrop-blur-sm rounded-2xl p-4 sm:p-8 border transition-all duration-1000 ${
+            isLight
+              ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+              : 'bg-gradient-to-br from-purple-900/20 to-indigo-900/20 border-purple-500/30'
+          }`}>
+            <p className={`text-sm sm:text-lg leading-relaxed text-center italic ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
+              {t(`philosophy.level_${activeCircuit}.text_1`)}<br/>
+              {t(`philosophy.level_${activeCircuit}.text_2`)}<br/>
+              {t(`philosophy.level_${activeCircuit}.text_3`)}<br/>
+              {t(`philosophy.level_${activeCircuit}.text_4`)}<br/>
+              {t(`philosophy.level_${activeCircuit}.text_5`)}
+              {activeCircuit === 1 && <><br/>{t('philosophy.level_1.text_6')}</>}
+            </p>
+          </div>
+        </div>
+        )}
+
+        {/* Кнопка Part's info — inside Your Journey */}
+        {journeyOpen && t(`part_info.level_${activeCircuit}.title`, { defaultValue: '' }) && (
           <div className="mb-6 flex justify-center">
             <button
               onClick={() => {
@@ -6263,6 +6638,10 @@ const OndaLevel1 = () => {
             </button>
           </div>
         )}
+
+        {/* Level goal storytelling + Terra speaks — inside Your Journey */}
+        {journeyOpen && (
+        <>
 
         <div className={`backdrop-blur-md rounded-2xl p-8 border shadow-2xl transition-all duration-1000 ${
           isLight
@@ -6373,8 +6752,12 @@ const OndaLevel1 = () => {
             </p>
           </div>
         </div>
+        </>
+        )}
 
-        {/* Заголовок секции артефактов */}
+        {/* Заголовок секции артефактов + all artifact panels — inside Your Journey */}
+        {journeyOpen && (
+        <>
         <div className="mt-12 mb-6">
           <h2 className={`text-3xl font-bold text-center transition-colors duration-1000 ${
             isLight
@@ -6783,34 +7166,9 @@ const OndaLevel1 = () => {
             ) : null}
           </div>
 
-          <div className="text-center mt-6">
-            {activeCircuit < 12 && (
-              <button
-                onClick={() => {
-                  const nextPart = activeCircuit + 1;
-                  if (isPartUnlocked(nextPart)) {
-                    setActiveCircuit(nextPart);
-                    setSelectedLevel(nextPart);
-                    const rootElement = document.getElementById('root');
-                    if (rootElement) rootElement.scrollTop = 0;
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                    window.scrollTo(0, 0);
-                  } else {
-                    setInfoModalMessage(t('terra_final.lock_alert'));
-                    setShowInfoModal(true);
-                  }
-                }}
-                className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg backdrop-blur-md ${
-                  isPartUnlocked(activeCircuit + 1)
-                    ? `hover:scale-105 active:scale-95 ${emoTint}`
-                    : 'bg-gray-600/60 text-gray-400 border-2 border-gray-500/50 cursor-not-allowed'
-                }`}
-              >
-                {t('terra_final.button')} {activeCircuit + 1}
-              </button>
-            )}
-          </div>
+          {/* Next-level button moved out of the lore block to the very
+              bottom of the home flow (always visible, not inside the
+              Your Journey toggle). See its new home below. */}
         </div>
 
         {artifacts.length > 0 && (
@@ -6875,6 +7233,43 @@ const OndaLevel1 = () => {
                 );
               })}
             </div>
+          </div>
+        )}
+        {/* End of artifacts — close the Your Journey conditional */}
+        </>
+        )}
+
+        {/* Next-level CTA — always visible at the very bottom of the
+            home flow. Was previously inside the lore section (hidden
+            when Journey was collapsed); promoted out in spec rev 2 so
+            level progression is always one tap away. */}
+        {activeCircuit < 12 && (
+          <div className="text-center mt-8 mb-4">
+            <button
+              onClick={() => {
+                const nextPart = activeCircuit + 1;
+                if (isPartUnlocked(nextPart)) {
+                  setActiveCircuit(nextPart);
+                  setSelectedLevel(nextPart);
+                  const rootElement = document.getElementById('root');
+                  if (rootElement) rootElement.scrollTop = 0;
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                  window.scrollTo(0, 0);
+                } else {
+                  setInfoModalMessage(t('terra_final.lock_alert'));
+                  setShowInfoModal(true);
+                }
+              }}
+              className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg backdrop-blur-md ${
+                isPartUnlocked(activeCircuit + 1)
+                  ? `hover:scale-105 active:scale-95 ${emoTint}`
+                  : 'bg-gray-600/60 text-gray-400 border-2 border-gray-500/50 cursor-not-allowed'
+              }`}
+              data-testid="next-level-cta"
+            >
+              {t('terra_final.button')} {activeCircuit + 1}
+            </button>
           </div>
         )}
 

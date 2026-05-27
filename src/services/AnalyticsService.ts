@@ -50,8 +50,9 @@ export type AnalyticsEventName =
   // Paywall / Monetization
   | 'paywall_viewed'
   | 'paywall_auth_required'
-  | 'purchase_started'
-  | 'purchase_succeeded'
+  | 'trial_attempt'      // тап CTA «Try Free» (раньше: purchase_started)
+  | 'trial_started'      // Apple вернул success на $0 trial (раньше: purchase_succeeded)
+  | 'subscription_paid'  // реальная оплата после trial → paid (фаерится из useSubscription)
   | 'purchase_failed'
   | 'purchase_cancelled'
   // Errors
