@@ -5518,33 +5518,11 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
-        {/* End of home redesign top-of-flow block. Below this is the
-            "Your Journey" collapsible: a single toggle, with each lore
-            block downstream wrapped in `{journeyOpen && (...)}`. The
-            non-lore blocks in between (Permission banner, Connection
-            panel, Practices grid, Watch prompt) stay visible regardless. */}
-
-        {/* Section 6 — Your Journey toggle */}
-        <div className="mb-6">
-          <button
-            type="button"
-            onClick={() => setJourneyOpen(v => !v)}
-            aria-expanded={journeyOpen}
-            data-testid="journey-toggle"
-            className={`w-full flex items-center justify-between rounded-2xl px-4 sm:px-5 py-3 sm:py-4 transition-all ${emoTint}`}
-          >
-            <span className="text-base sm:text-lg font-medium">{t('home.journey.title')}</span>
-            <span
-              aria-hidden="true"
-              className="text-sm opacity-70"
-              style={{
-                display: 'inline-block',
-                transition: 'transform 180ms ease',
-                transform: journeyOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-              }}
-            >▾</span>
-          </button>
-        </div>
+        {/* End of home redesign top-of-flow block. The "Your Journey"
+            toggle (moved below the practices grid per 1.7.4 spec rev 2)
+            opens the lore blocks below. The non-lore blocks in between
+            (Permission banner, Connection panel, Watch prompt) stay
+            visible regardless of journey state. */}
 
         {/* Центральный заголовок — inside Your Journey */}
         {journeyOpen && (
@@ -6266,6 +6244,30 @@ const OndaLevel1 = () => {
           {currentCircuit.practices.map(renderPracticeCard)}
         </div>
 
+        {/* Section 6 — Your Journey toggle (positioned after the
+            practices grid per the 1.7.4 spec revision). When opened,
+            the lore blocks above reveal in their original positions. */}
+        <div className="mb-6">
+          <button
+            type="button"
+            onClick={() => setJourneyOpen(v => !v)}
+            aria-expanded={journeyOpen}
+            data-testid="journey-toggle"
+            className={`w-full flex items-center justify-between rounded-2xl px-4 sm:px-5 py-3 sm:py-4 transition-all ${emoTint}`}
+          >
+            <span className="text-base sm:text-lg font-medium">{t('home.journey.title')}</span>
+            <span
+              aria-hidden="true"
+              className="text-sm opacity-70"
+              style={{
+                display: 'inline-block',
+                transition: 'transform 180ms ease',
+                transform: journeyOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+              }}
+            >▾</span>
+          </button>
+        </div>
+
         {/* Кнопка Part's info — inside Your Journey */}
         {journeyOpen && t(`part_info.level_${activeCircuit}.title`, { defaultValue: '' }) && (
           <div className="mb-6 flex justify-center">
@@ -6810,34 +6812,9 @@ const OndaLevel1 = () => {
             ) : null}
           </div>
 
-          <div className="text-center mt-6">
-            {activeCircuit < 12 && (
-              <button
-                onClick={() => {
-                  const nextPart = activeCircuit + 1;
-                  if (isPartUnlocked(nextPart)) {
-                    setActiveCircuit(nextPart);
-                    setSelectedLevel(nextPart);
-                    const rootElement = document.getElementById('root');
-                    if (rootElement) rootElement.scrollTop = 0;
-                    document.body.scrollTop = 0;
-                    document.documentElement.scrollTop = 0;
-                    window.scrollTo(0, 0);
-                  } else {
-                    setInfoModalMessage(t('terra_final.lock_alert'));
-                    setShowInfoModal(true);
-                  }
-                }}
-                className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg backdrop-blur-md ${
-                  isPartUnlocked(activeCircuit + 1)
-                    ? `hover:scale-105 active:scale-95 ${emoTint}`
-                    : 'bg-gray-600/60 text-gray-400 border-2 border-gray-500/50 cursor-not-allowed'
-                }`}
-              >
-                {t('terra_final.button')} {activeCircuit + 1}
-              </button>
-            )}
-          </div>
+          {/* Next-level button moved out of the lore block to the very
+              bottom of the home flow (always visible, not inside the
+              Your Journey toggle). See its new home below. */}
         </div>
 
         {artifacts.length > 0 && (
@@ -6906,6 +6883,40 @@ const OndaLevel1 = () => {
         )}
         {/* End of artifacts — close the Your Journey conditional */}
         </>
+        )}
+
+        {/* Next-level CTA — always visible at the very bottom of the
+            home flow. Was previously inside the lore section (hidden
+            when Journey was collapsed); promoted out in spec rev 2 so
+            level progression is always one tap away. */}
+        {activeCircuit < 12 && (
+          <div className="text-center mt-8 mb-4">
+            <button
+              onClick={() => {
+                const nextPart = activeCircuit + 1;
+                if (isPartUnlocked(nextPart)) {
+                  setActiveCircuit(nextPart);
+                  setSelectedLevel(nextPart);
+                  const rootElement = document.getElementById('root');
+                  if (rootElement) rootElement.scrollTop = 0;
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                  window.scrollTo(0, 0);
+                } else {
+                  setInfoModalMessage(t('terra_final.lock_alert'));
+                  setShowInfoModal(true);
+                }
+              }}
+              className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg backdrop-blur-md ${
+                isPartUnlocked(activeCircuit + 1)
+                  ? `hover:scale-105 active:scale-95 ${emoTint}`
+                  : 'bg-gray-600/60 text-gray-400 border-2 border-gray-500/50 cursor-not-allowed'
+              }`}
+              data-testid="next-level-cta"
+            >
+              {t('terra_final.button')} {activeCircuit + 1}
+            </button>
+          </div>
         )}
 
       </div>
