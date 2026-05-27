@@ -5319,21 +5319,38 @@ const OndaLevel1 = () => {
         </div>
       )}
 
-      {/* Плавающая кнопка гамбургер меню */}
-      {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal && 
+      {/* Плавающая кнопка-меню — круг по центру верха, по бокам логотип
+          ONDA / LIFE. Раньше прямоугольная кнопка стояла слева; новая
+          композиция тестируется в 1.7.4 как fixed-header без всякого
+          обычного top-bar. */}
+      {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal &&
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
        !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && (
-        <button
-          onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
-          className={`menu-container fixed top-12 z-[100] transition-all px-3 py-3 rounded-xl backdrop-blur-md ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
-          style={{
-            boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)',
-            left: 'max(28px, calc(50% - 256px + 16px))'
-          }}
-          data-testid="button-menu"
+        <div
+          className="menu-container fixed top-6 left-1/2 -translate-x-1/2 z-[100] flex items-center gap-3 sm:gap-4 pointer-events-none"
         >
-          {showMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+          <span
+            className={`text-base sm:text-lg font-light tracking-wider ${isLight ? 'text-slate-500' : 'text-white/80'}`}
+          >
+            ONDA
+          </span>
+          <button
+            onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
+            className={`w-11 h-11 sm:w-12 sm:h-12 rounded-full backdrop-blur-md flex items-center justify-center transition-all pointer-events-auto ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
+            style={{
+              boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)',
+            }}
+            data-testid="button-menu"
+            aria-label={showMenu ? 'Close menu' : 'Open menu'}
+          >
+            {showMenu ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          </button>
+          <span
+            className={`text-base sm:text-lg font-light tracking-wider ${isLight ? 'text-slate-500' : 'text-white/80'}`}
+          >
+            LIFE
+          </span>
+        </div>
       )}
 
       {/* Paywall $ button removed in home redesign 1.7.4 (dead code: was
