@@ -5484,8 +5484,12 @@ const OndaLevel1 = () => {
             aria-hidden="true"
           />
           <span
-            className={`text-base sm:text-lg font-light w-20 text-left pl-4 ${isLight ? 'text-slate-500' : 'text-white/80'}`}
-            style={{ letterSpacing: '0.22em' }}
+            className={`text-base sm:text-lg font-light tracking-wider w-20 text-left pl-4 ${isLight ? 'text-slate-500' : 'text-white/80'}`}
+            style={{
+              display: 'inline-block',
+              transform: 'scaleX(1.4)',
+              transformOrigin: 'left center',
+            }}
             aria-hidden="true"
           >
             LIFE
