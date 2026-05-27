@@ -5157,10 +5157,11 @@ const OndaLevel1 = () => {
           const fn = t(fnKey, { defaultValue: '' });
           return fn ? (
             <p
-              className={`text-xs mb-4 ${isLight ? 'text-slate-400' : 'text-gray-400'}`}
+              className={`text-sm mb-4 ${isLight ? 'text-slate-400' : 'text-gray-500'}`}
+              style={{ opacity: 0.75 }}
               data-testid={`practice-functional-${practice.id}`}
             >
-              → {fn}
+              {fn}
             </p>
           ) : <div className="mb-4" />;
         })()}
