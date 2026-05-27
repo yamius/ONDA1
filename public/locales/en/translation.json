@@ -802,7 +802,8 @@
       "streak_label_one": "{{count}} day streak",
       "streak_label_other": "{{count}} day streak",
       "total_label_one": "{{count}} practice total",
-      "total_label_other": "{{count}} practices total"
+      "total_label_other": "{{count}} practices total",
+      "chart_empty": "Need a few more days of data to draw your trend"
     }
   },
   "time": {
