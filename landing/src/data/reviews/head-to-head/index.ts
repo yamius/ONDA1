@@ -118,6 +118,13 @@ import currentbodyVsHigherDose from './currentbody-series-2-vs-higherdose-red-li
 import therafaceVsHigherDose from './theraface-mask-vs-higherdose-red-light-face-mask'
 import lightstimVsSolawave from './lightstim-for-wrinkles-vs-solawave-wand-4-in-1'
 import omniluxVsCurrentbodyVsGross from './omnilux-contour-face-vs-currentbody-series-2-vs-dr-dennis-gross-spectralite'
+// Mouth tape & nasal breathing (date-gated to 2026-07-13)
+import hostageVsSomnifix from './hostage-tape-vs-somnifix'
+import hostageVsDream from './hostage-tape-vs-dream-recovery-mouth-tape'
+import intakeVsMute from './intake-breathing-vs-mute-nasal-dilator'
+import intakeVsBreatheRight from './intake-breathing-vs-breathe-right-original'
+import hostageVsIntake from './hostage-tape-vs-intake-breathing'
+import hostageVsSomnifixVsIntake from './hostage-tape-vs-somnifix-vs-intake-breathing'
 // Sleep climate (date-gated to 2026-06-15)
 import eightSleepVsChilipad from './eight-sleep-pod-4-vs-chilipad-dock-pro'
 import pod4VsCoverPro from './eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro'
@@ -257,6 +264,13 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   therafaceVsHigherDose,
   lightstimVsSolawave,
   omniluxVsCurrentbodyVsGross,
+  // Mouth tape & nasal breathing (date-gated to 2026-07-13)
+  hostageVsSomnifix,
+  hostageVsDream,
+  intakeVsMute,
+  intakeVsBreatheRight,
+  hostageVsIntake,
+  hostageVsSomnifixVsIntake,
 ]
 
 /** Live head-to-head duels — date-gated entries are excluded until their

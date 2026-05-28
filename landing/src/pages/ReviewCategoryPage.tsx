@@ -93,6 +93,11 @@ const CATEGORY_INTRO: Record<ReviewCategory, { h1: string; intro: string }> = {
     intro:
       'Red light face masks split sharply across two tiers by 2026: FDA-cleared clinical references (Omnilux Contour, Dr. Dennis Gross SpectraLite, LightStim) and consumer-brand premium devices (CurrentBody Series 2, HigherDOSE, TheraFace, Lumara Viso). Form factor is the second axis — flexible silicone vs hard shell vs handheld wand. ONDA scored the ten most credible masks of 2026 against the same six axes — irradiance, wavelength coverage, LED count and facial coverage, clinical evidence, comfort and value.',
   },
+  'breathing-aid': {
+    h1: 'Best Mouth Tape & Nasal Breathing Aids (2026)',
+    intro:
+      'Mouth taping and nasal-breathing hardware went mainstream in 2024–2026 driven by James Nestor\'s Breath, the Wim Hof breathing crossover and the Hostage Tape biohacker brand. The category splits across mouth tape (full-seal vs porous) and nasal dilators (external strips vs internal stents). ONDA scored the ten most credible products of 2026 against the same six axes — adhesion and comfort, breathing mechanism, evidence and safety, form factor, material safety and value.',
+  },
 }
 
 export function ReviewCategoryPage() {

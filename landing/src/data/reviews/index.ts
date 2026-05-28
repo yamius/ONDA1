@@ -176,6 +176,18 @@ import lightstim from './lightstim-for-wrinkles'
 import jovsDpl from './jovs-dpl-photofacial-mask'
 import solawave from './solawave-wand-4-in-1'
 import sharkCryoglow from './shark-cryoglow'
+// Mouth tape & nasal breathing (date-gated to 2026-07-13)
+import hostageTape from './hostage-tape'
+import somnifix from './somnifix'
+import dreamRecovery from './dream-recovery-mouth-tape'
+import intakeBreathing from './intake-breathing'
+import muteNasal from './mute-nasal-dilator'
+import breatheRight from './breathe-right-original'
+import nexcareSurgical from './nexcare-surgical-tape'
+import ayoSleepTape from './ayo-sleep-tape'
+import somnifit from './somnifit-sleep-strips'
+import theTapeCo from './the-tape-co'
+import sleepRightStrips from './sleep-strips-by-sleepright'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
 import bestSleepApps2026 from './best-sleep-apps-2026'
@@ -189,6 +201,7 @@ import bestSmartSleepClimate2026 from './best-smart-sleep-climate-2026'
 import bestPemfDevices2026 from './best-pemf-devices-2026'
 import bestBreathworkApps2026 from './best-breathwork-apps-2026'
 import bestRedLightFaceMasks2026 from './best-red-light-face-masks-2026'
+import bestMouthTapeNasalBreathing2026 from './best-mouth-tape-nasal-breathing-2026'
 
 /** Current date captured once at module load. Used to filter date-gated
  *  reviews and comparisons out of the live registry until their publishOn
@@ -338,6 +351,18 @@ const ALL_REVIEWS: ToolReview[] = [
   jovsDpl,
   solawave,
   sharkCryoglow,
+  // Mouth tape & nasal breathing — ordered by overallScore. All date-gated to 2026-07-13.
+  hostageTape,
+  somnifix,
+  dreamRecovery,
+  intakeBreathing,
+  muteNasal,
+  breatheRight,
+  nexcareSurgical,
+  ayoSleepTape,
+  theTapeCo,
+  somnifit,
+  sleepRightStrips,
 ]
 
 /** Live product reviews — date-gated entries are excluded until their
@@ -361,6 +386,7 @@ const ALL_COMPARISONS: Comparison[] = [
   bestPemfDevices2026,
   bestBreathworkApps2026,
   bestRedLightFaceMasks2026,
+  bestMouthTapeNasalBreathing2026,
 ]
 
 /** Live round-up comparisons — date-gated entries excluded until their

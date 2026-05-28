@@ -678,6 +678,58 @@ const RED_LIGHT_MASK_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Mouth taping and nasal breathing aids: mouth tape, nasal dilators
+ *  (external strips and internal stents), and related sleep-breathing
+ *  hardware. The category went mainstream in 2024–2026 driven by James
+ *  Nestor\'s Breath, Wim Hof crossover and the Hostage Tape biohacker
+ *  brand. Adhesion comfort and material safety lead the rubric — the
+ *  category has wide variance between FDA-cleared medical tape and
+ *  Amazon-tier products with skin-irritation issues. */
+const BREATHING_AID_CRITERIA: Criterion[] = [
+  {
+    id: 'adhesion-comfort',
+    label: 'Adhesion and comfort',
+    weight: 0.2,
+    description:
+      'Does the tape or device stay on through a full night without falling off, with painless removal? Beard-friendliness for mouth tape, nostril-fit for dilators. The core daily-use criterion.',
+  },
+  {
+    id: 'breathing-mechanism',
+    label: 'Breathing mechanism and approach',
+    weight: 0.15,
+    description:
+      'Full mouth seal vs porous mouth tape (allows emergency exhale), external nasal strip (dilates nostrils via leverage) vs internal stent (mechanically holds airway open). The mechanism dictates use case and risk profile.',
+  },
+  {
+    id: 'evidence-grounding',
+    label: 'Evidence grounding and safety',
+    weight: 0.15,
+    description:
+      'How honestly the brand represents the published evidence (sleep-apnea caution is real — undiagnosed OSA + full mouth seal is contraindicated), and whether FDA registration / Class II clearance backs claims. The category is full of viral wellness marketing weakly tied to clinical reality.',
+  },
+  {
+    id: 'form-factor',
+    label: 'Form factor and design',
+    weight: 0.15,
+    description:
+      'Strip vs cross vs single-piece vs dilator vs collar. Each form factor trades comfort, seal effectiveness and reapplication friction differently. Cross designs allow corner-of-mouth breathing if needed.',
+  },
+  {
+    id: 'material-safety',
+    label: 'Material safety and skin tolerance',
+    weight: 0.15,
+    description:
+      'Adhesive composition (silicone gel vs acrylic vs hydrocolloid), hypoallergenic certification, skin-reaction reports in user feedback and lip-irritation patterns. Skin-tolerance issues are the #1 reason users drop the practice.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.2,
+    description:
+      'Cost per night including subscription (Hostage Tape model) or per-pack pricing (Somnifix, Breathe Right) vs the durability of the adhesive and reusable form factors. The category spans $0.30/night DIY medical tape to $13/month subscription brands — value gap is large.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
@@ -693,6 +745,7 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   pemf: PEMF_CRITERIA,
   'breathwork-app': BREATHWORK_APP_CRITERIA,
   'red-light-mask': RED_LIGHT_MASK_CRITERIA,
+  'breathing-aid': BREATHING_AID_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -710,6 +763,7 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   pemf: 'PEMF devices',
   'breathwork-app': 'Breathwork apps',
   'red-light-mask': 'Red light face masks',
+  'breathing-aid': 'Mouth tape & nasal breathing',
 }
 
 /** Review categories in display order. */
@@ -727,6 +781,7 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'pemf',
   'breathwork-app',
   'red-light-mask',
+  'breathing-aid',
 ]
 
 /** URL slugs for per-category landing pages — /reviews/<slug>. Chosen to
@@ -747,6 +802,7 @@ export const CATEGORY_URL_SLUGS: Record<ReviewCategory, string> = {
   pemf: 'pemf-devices',
   'breathwork-app': 'breathwork-apps',
   'red-light-mask': 'red-light-face-masks',
+  'breathing-aid': 'mouth-tape-nasal-breathing',
 }
 
 /** Reverse lookup — URL slug → category id. Returns undefined if the slug

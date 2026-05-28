@@ -1961,6 +1961,7 @@ export function getMetaForRoute(route: string): RouteMeta {
         pemf: `Best PEMF Devices (2026) — Independent Reviews | ONDA Life`,
         'breathwork-app': `Best Breathwork Apps (2026) — Independent Reviews | ONDA Life`,
         'red-light-mask': `Best Red Light Face Masks (2026) — Independent Reviews | ONDA Life`,
+        'breathing-aid': `Best Mouth Tape & Nasal Breathing Aids (2026) — Independent Reviews | ONDA Life`,
       } as Record<typeof category, string>
       const descriptionByCat: Record<typeof category, string> = {
         'hrv-wearable':
@@ -1989,6 +1990,8 @@ export function getMetaForRoute(route: string): RouteMeta {
           'Independent ONDA reviews of breathwork apps — Breathwrk, Othership, SOMA Breath, Wim Hof Method, Open, Pause and more — scored on library, technique coverage, evidence and value.',
         'red-light-mask':
           'Independent ONDA reviews of red light face masks — Omnilux Contour, CurrentBody Series 2, Dr. Dennis Gross, Lumara Viso, TheraFace, HigherDOSE and more — scored on irradiance, wavelength, evidence and value.',
+        'breathing-aid':
+          'Independent ONDA reviews of mouth tape and nasal breathing aids — Hostage Tape, Somnifix, Dream Recovery, Intake Breathing, Mute, Breathe Right and more — scored on adhesion, mechanism, safety and value.',
       } as Record<typeof category, string>
       const itemListEntries = [
         ...(catComparison
