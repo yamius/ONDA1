@@ -98,6 +98,11 @@ const CATEGORY_INTRO: Record<ReviewCategory, { h1: string; intro: string }> = {
     intro:
       'Mouth taping and nasal-breathing hardware went mainstream in 2024–2026 driven by James Nestor\'s Breath, the Wim Hof breathing crossover and the Hostage Tape biohacker brand. The category splits across mouth tape (full-seal vs porous) and nasal dilators (external strips vs internal stents). ONDA scored the ten most credible products of 2026 against the same six axes — adhesion and comfort, breathing mechanism, evidence and safety, form factor, material safety and value.',
   },
+  'massage-gun': {
+    h1: 'Best Massage Guns (2026)',
+    intro:
+      'Percussion-therapy hardware split into clear tiers by 2026: premium reference brands (Therabody Theragun PRO Plus, Hyperice Hypervolt 2 Pro), mid-tier (Theragun Elite, Achedaway Pro), and credible budget alternatives that closed the spec gap meaningfully (Bob and Brad Q2 Mini, Renpho R3, OPOVE M3 Pro 2). ONDA scored the ten most credible massage guns of 2026 against the same six axes — stall force and amplitude, build and attachments, battery and noise, app features, ergonomics and value.',
+  },
 }
 
 export function ReviewCategoryPage() {

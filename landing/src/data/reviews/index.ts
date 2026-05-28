@@ -188,6 +188,17 @@ import ayoSleepTape from './ayo-sleep-tape'
 import somnifit from './somnifit-sleep-strips'
 import theTapeCo from './the-tape-co'
 import sleepRightStrips from './sleep-strips-by-sleepright'
+// Massage guns (date-gated to 2026-07-20)
+import theragunProPlus from './theragun-pro-plus'
+import hypervolt2Pro from './hypervolt-2-pro'
+import theragunElite from './theragun-elite'
+import achedawayPro from './achedaway-pro'
+import opoveM3 from './opove-m3-pro-2'
+import ekrinB37 from './ekrin-b37'
+import hypervoltGo2 from './hypervolt-go-2'
+import bobAndBradQ2 from './bob-and-brad-q2-mini'
+import renphoR3 from './renpho-r3'
+import tolocoGun from './toloco-massage-gun'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
 import bestSleepApps2026 from './best-sleep-apps-2026'
@@ -202,6 +213,7 @@ import bestPemfDevices2026 from './best-pemf-devices-2026'
 import bestBreathworkApps2026 from './best-breathwork-apps-2026'
 import bestRedLightFaceMasks2026 from './best-red-light-face-masks-2026'
 import bestMouthTapeNasalBreathing2026 from './best-mouth-tape-nasal-breathing-2026'
+import bestMassageGuns2026 from './best-massage-guns-2026'
 
 /** Current date captured once at module load. Used to filter date-gated
  *  reviews and comparisons out of the live registry until their publishOn
@@ -363,6 +375,17 @@ const ALL_REVIEWS: ToolReview[] = [
   theTapeCo,
   somnifit,
   sleepRightStrips,
+  // Massage guns — ordered by overallScore. All date-gated to 2026-07-20.
+  theragunProPlus,
+  hypervolt2Pro,
+  theragunElite,
+  achedawayPro,
+  opoveM3,
+  ekrinB37,
+  hypervoltGo2,
+  bobAndBradQ2,
+  renphoR3,
+  tolocoGun,
 ]
 
 /** Live product reviews — date-gated entries are excluded until their
@@ -387,6 +410,7 @@ const ALL_COMPARISONS: Comparison[] = [
   bestBreathworkApps2026,
   bestRedLightFaceMasks2026,
   bestMouthTapeNasalBreathing2026,
+  bestMassageGuns2026,
 ]
 
 /** Live round-up comparisons — date-gated entries excluded until their

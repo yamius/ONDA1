@@ -125,6 +125,13 @@ import intakeVsMute from './intake-breathing-vs-mute-nasal-dilator'
 import intakeVsBreatheRight from './intake-breathing-vs-breathe-right-original'
 import hostageVsIntake from './hostage-tape-vs-intake-breathing'
 import hostageVsSomnifixVsIntake from './hostage-tape-vs-somnifix-vs-intake-breathing'
+// Massage guns (date-gated to 2026-07-20)
+import theragunVsHypervolt from './theragun-pro-plus-vs-hypervolt-2-pro'
+import proPlusVsElite from './theragun-pro-plus-vs-theragun-elite'
+import eliteVsHypervolt from './theragun-elite-vs-hypervolt-2-pro'
+import bobVsRenpho from './bob-and-brad-q2-mini-vs-renpho-r3'
+import goVsQ2 from './hypervolt-go-2-vs-bob-and-brad-q2-mini'
+import theragunVsHypervoltVsAchedaway from './theragun-pro-plus-vs-hypervolt-2-pro-vs-achedaway-pro'
 // Sleep climate (date-gated to 2026-06-15)
 import eightSleepVsChilipad from './eight-sleep-pod-4-vs-chilipad-dock-pro'
 import pod4VsCoverPro from './eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro'
@@ -271,6 +278,13 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   intakeVsBreatheRight,
   hostageVsIntake,
   hostageVsSomnifixVsIntake,
+  // Massage guns (date-gated to 2026-07-20)
+  theragunVsHypervolt,
+  proPlusVsElite,
+  eliteVsHypervolt,
+  bobVsRenpho,
+  goVsQ2,
+  theragunVsHypervoltVsAchedaway,
 ]
 
 /** Live head-to-head duels — date-gated entries are excluded until their

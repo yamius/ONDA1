@@ -730,6 +730,58 @@ const BREATHING_AID_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Massage guns / percussion-therapy devices: handheld percussive
+ *  hardware for muscle recovery, fascial release and pre-/post-workout
+ *  protocols. The category split in 2024–2026 between premium reference
+ *  brands (Theragun, Hyperice Hypervolt) and credible budget alternatives
+ *  (Bob and Brad, Renpho, OPOVE). Stall force and amplitude lead the
+ *  rubric — they are the actual percussion dose, and most consumer
+ *  marketing inflates one and hides the other. */
+const MASSAGE_GUN_CRITERIA: Criterion[] = [
+  {
+    id: 'stall-force-amplitude',
+    label: 'Stall force and amplitude',
+    weight: 0.25,
+    description:
+      'Stall force (pounds of pressure before the motor stops) and amplitude (mm of stroke depth) — the two specs that define percussion dose. Premium devices deliver 60+ lbs stall and 16 mm amplitude; budget devices deliver 30 lbs and 10–12 mm. Marketing-stated peak figures versus real continuous output is the category\'s biggest confusion.',
+  },
+  {
+    id: 'build-attachments',
+    label: 'Build, attachments and warranty',
+    weight: 0.15,
+    description:
+      'Hardware build quality, motor durability, attachment-head count and quality, and warranty terms. Premium brands offer 2-year warranties with 5-6 attachments; budget brands offer 1-year with 4-6 attachments.',
+  },
+  {
+    id: 'battery-noise',
+    label: 'Battery life and noise level',
+    weight: 0.15,
+    description:
+      'Hours per charge under realistic use plus measured noise level in decibels. Premium brushless motors run 50–55 dB and 2-3 hours; cheap motors run 60+ dB and 1-2 hours. Both metrics drive daily-use friendliness.',
+  },
+  {
+    id: 'app-smart-features',
+    label: 'App and smart features',
+    weight: 0.1,
+    description:
+      'Bluetooth integration, guided recovery routines via app (Therabody, Hyperice), pressure sensors, OLED displays. The premium tier differentiator beyond raw motor specs.',
+  },
+  {
+    id: 'ergonomics-portability',
+    label: 'Ergonomics and portability',
+    weight: 0.15,
+    description:
+      'Weight, handle design, multiple grip positions, mini / travel form factors and how realistic single-hand self-treatment is over a 20-minute session. Heavy premium devices win on motor but lose on extended use.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.2,
+    description:
+      'Price weighed against measured stall force, amplitude, build, app and ergonomics. The category spans $99 (Bob and Brad, Renpho) to $599+ (Theragun PRO Plus) — value gap is large and budget devices have closed the spec gap meaningfully.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
@@ -746,6 +798,7 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'breathwork-app': BREATHWORK_APP_CRITERIA,
   'red-light-mask': RED_LIGHT_MASK_CRITERIA,
   'breathing-aid': BREATHING_AID_CRITERIA,
+  'massage-gun': MASSAGE_GUN_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -764,6 +817,7 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   'breathwork-app': 'Breathwork apps',
   'red-light-mask': 'Red light face masks',
   'breathing-aid': 'Mouth tape & nasal breathing',
+  'massage-gun': 'Massage guns',
 }
 
 /** Review categories in display order. */
@@ -782,6 +836,7 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'breathwork-app',
   'red-light-mask',
   'breathing-aid',
+  'massage-gun',
 ]
 
 /** URL slugs for per-category landing pages — /reviews/<slug>. Chosen to
@@ -803,6 +858,7 @@ export const CATEGORY_URL_SLUGS: Record<ReviewCategory, string> = {
   'breathwork-app': 'breathwork-apps',
   'red-light-mask': 'red-light-face-masks',
   'breathing-aid': 'mouth-tape-nasal-breathing',
+  'massage-gun': 'massage-guns',
 }
 
 /** Reverse lookup — URL slug → category id. Returns undefined if the slug
