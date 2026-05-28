@@ -782,6 +782,58 @@ const MASSAGE_GUN_CRITERIA: Criterion[] = [
   },
 ]
 
+/** Air purifiers: HEPA, PECO and activated-carbon hardware for indoor
+ *  air quality, PM2.5 reduction, VOC capture and allergen filtration.
+ *  Biohacker-adjacent category — overlaps with sleep environment, EMF
+ *  hygiene and longevity protocols. Filtration technology and CADR
+ *  (Clean Air Delivery Rate) lead the rubric — the category has wide
+ *  variance between clinical-tier HEPA references (IQAir) and consumer-
+ *  brand devices with inflated coverage claims. */
+const AIR_PURIFIER_CRITERIA: Criterion[] = [
+  {
+    id: 'filtration-technology',
+    label: 'Filtration technology and grade',
+    weight: 0.25,
+    description:
+      'HEPA grade (H13, H14 medical), activated-carbon depth (lbs of carbon), PECO / photocatalytic claims and pre-filter quality. The single biggest source of consumer confusion — many "True HEPA" claims hide thin carbon layers and inflated efficacy figures.',
+  },
+  {
+    id: 'cadr-coverage',
+    label: 'CADR and room coverage',
+    weight: 0.2,
+    description:
+      'Clean Air Delivery Rate (CFM) for smoke, dust and pollen — AHAM-certified figures preferred over manufacturer-stated peaks. Verified room coverage (sq ft) at 5 air changes per hour (4.8 ACH minimum for asthma/allergy protocols).',
+  },
+  {
+    id: 'build-noise',
+    label: 'Build quality and noise',
+    weight: 0.15,
+    description:
+      'Hardware build, fan motor durability, noise level at low / medium / high speeds (dB), and how quietly the device can run at sleeping speeds for bedroom use. Cheap fan motors run 50+ dB at medium speed; premium devices stay under 35 dB.',
+  },
+  {
+    id: 'smart-features',
+    label: 'Smart features and sensors',
+    weight: 0.1,
+    description:
+      'Built-in PM2.5 / VOC sensors, app integration with auto modes, real-time air-quality display, HomeKit / Alexa / Google Home support. The premium-tier differentiator beyond raw filtration.',
+  },
+  {
+    id: 'maintenance-cost',
+    label: 'Filter replacement and maintenance',
+    weight: 0.1,
+    description:
+      'Filter replacement frequency, per-replacement cost and 3-year ownership filter cost. Premium devices with 12-month filter life can cost less long-term than budget devices with 6-month filters.',
+  },
+  {
+    id: 'value',
+    label: 'Value',
+    weight: 0.2,
+    description:
+      'Hardware price plus 3-year filter cost weighed against measured CADR, filtration tech, build and smart features. The category spans $99 (Levoit Core 300) to $1,200+ (Molekule, IQAir HealthPro Plus) — value gap is large.',
+  },
+]
+
 /** Criteria sets keyed by category. */
 export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'hrv-wearable': HRV_WEARABLE_CRITERIA,
@@ -799,6 +851,7 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'red-light-mask': RED_LIGHT_MASK_CRITERIA,
   'breathing-aid': BREATHING_AID_CRITERIA,
   'massage-gun': MASSAGE_GUN_CRITERIA,
+  'air-purifier': AIR_PURIFIER_CRITERIA,
 }
 
 /** Human-readable category labels for the hub and the methodology page. */
@@ -818,6 +871,7 @@ export const CATEGORY_LABELS: Record<ReviewCategory, string> = {
   'red-light-mask': 'Red light face masks',
   'breathing-aid': 'Mouth tape & nasal breathing',
   'massage-gun': 'Massage guns',
+  'air-purifier': 'Air purifiers',
 }
 
 /** Review categories in display order. */
@@ -837,6 +891,7 @@ export const REVIEW_CATEGORIES: ReviewCategory[] = [
   'red-light-mask',
   'breathing-aid',
   'massage-gun',
+  'air-purifier',
 ]
 
 /** URL slugs for per-category landing pages — /reviews/<slug>. Chosen to
@@ -859,6 +914,7 @@ export const CATEGORY_URL_SLUGS: Record<ReviewCategory, string> = {
   'red-light-mask': 'red-light-face-masks',
   'breathing-aid': 'mouth-tape-nasal-breathing',
   'massage-gun': 'massage-guns',
+  'air-purifier': 'air-purifiers',
 }
 
 /** Reverse lookup — URL slug → category id. Returns undefined if the slug

@@ -132,6 +132,13 @@ import eliteVsHypervolt from './theragun-elite-vs-hypervolt-2-pro'
 import bobVsRenpho from './bob-and-brad-q2-mini-vs-renpho-r3'
 import goVsQ2 from './hypervolt-go-2-vs-bob-and-brad-q2-mini'
 import theragunVsHypervoltVsAchedaway from './theragun-pro-plus-vs-hypervolt-2-pro-vs-achedaway-pro'
+// Air purifiers (date-gated to 2026-07-27)
+import iqairVsMolekule from './iqair-healthpro-plus-vs-molekule-air-pro'
+import cowayVsBlueair from './coway-airmega-400-vs-blueair-healthprotect-7770i'
+import levoitVsWinix from './levoit-core-600s-vs-winix-5500-2'
+import cowayApVsLevoit300 from './coway-airmega-ap-1512hh-vs-levoit-core-300'
+import dysonVsIqair from './dyson-purifier-big-quiet-vs-iqair-healthpro-plus'
+import iqairVsMolekuleVsDyson from './iqair-healthpro-plus-vs-molekule-air-pro-vs-dyson-purifier-big-quiet'
 // Sleep climate (date-gated to 2026-06-15)
 import eightSleepVsChilipad from './eight-sleep-pod-4-vs-chilipad-dock-pro'
 import pod4VsCoverPro from './eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro'
@@ -285,6 +292,13 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   bobVsRenpho,
   goVsQ2,
   theragunVsHypervoltVsAchedaway,
+  // Air purifiers (date-gated to 2026-07-27)
+  iqairVsMolekule,
+  cowayVsBlueair,
+  levoitVsWinix,
+  cowayApVsLevoit300,
+  dysonVsIqair,
+  iqairVsMolekuleVsDyson,
 ]
 
 /** Live head-to-head duels — date-gated entries are excluded until their

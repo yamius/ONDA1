@@ -103,6 +103,11 @@ const CATEGORY_INTRO: Record<ReviewCategory, { h1: string; intro: string }> = {
     intro:
       'Percussion-therapy hardware split into clear tiers by 2026: premium reference brands (Therabody Theragun PRO Plus, Hyperice Hypervolt 2 Pro), mid-tier (Theragun Elite, Achedaway Pro), and credible budget alternatives that closed the spec gap meaningfully (Bob and Brad Q2 Mini, Renpho R3, OPOVE M3 Pro 2). ONDA scored the ten most credible massage guns of 2026 against the same six axes — stall force and amplitude, build and attachments, battery and noise, app features, ergonomics and value.',
   },
+  'air-purifier': {
+    h1: 'Best Air Purifiers (2026)',
+    intro:
+      'Air purification went from allergy-niche product to biohacker-adjacent recovery hardware in 2024–2026, driven by wildfire-PM2.5 awareness and the indoor-air-quality crossover into sleep / longevity protocols. The category splits cleanly: clinical-tier HEPA references (IQAir, Molekule), consumer premium (Dyson, Coway Airmega, Blueair), mid-budget smart (Levoit, Winix), and entry budget (Levoit Core 300). ONDA scored the ten most credible air purifiers of 2026 against the same six axes — filtration technology, CADR and coverage, build and noise, smart features, maintenance cost and value.',
+  },
 }
 
 export function ReviewCategoryPage() {

@@ -1963,6 +1963,7 @@ export function getMetaForRoute(route: string): RouteMeta {
         'red-light-mask': `Best Red Light Face Masks (2026) — Independent Reviews | ONDA Life`,
         'breathing-aid': `Best Mouth Tape & Nasal Breathing Aids (2026) — Independent Reviews | ONDA Life`,
         'massage-gun': `Best Massage Guns (2026) — Independent Reviews | ONDA Life`,
+        'air-purifier': `Best Air Purifiers (2026) — Independent Reviews | ONDA Life`,
       } as Record<typeof category, string>
       const descriptionByCat: Record<typeof category, string> = {
         'hrv-wearable':
@@ -1995,6 +1996,8 @@ export function getMetaForRoute(route: string): RouteMeta {
           'Independent ONDA reviews of mouth tape and nasal breathing aids — Hostage Tape, Somnifix, Dream Recovery, Intake Breathing, Mute, Breathe Right and more — scored on adhesion, mechanism, safety and value.',
         'massage-gun':
           'Independent ONDA reviews of massage guns — Theragun PRO Plus, Hypervolt 2 Pro, Theragun Elite, Achedaway, Bob and Brad, Renpho, OPOVE and more — scored on stall force, amplitude, build and value.',
+        'air-purifier':
+          'Independent ONDA reviews of air purifiers — IQAir, Molekule, Dyson, Coway Airmega, Blueair, Levoit, Winix, Honeywell and more — scored on filtration, CADR, noise and value.',
       } as Record<typeof category, string>
       const itemListEntries = [
         ...(catComparison

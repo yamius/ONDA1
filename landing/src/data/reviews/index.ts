@@ -199,6 +199,17 @@ import hypervoltGo2 from './hypervolt-go-2'
 import bobAndBradQ2 from './bob-and-brad-q2-mini'
 import renphoR3 from './renpho-r3'
 import tolocoGun from './toloco-massage-gun'
+// Air purifiers (date-gated to 2026-07-27)
+import iqairHealthPro from './iqair-healthpro-plus'
+import molekuleAirPro from './molekule-air-pro'
+import dysonBigQuiet from './dyson-purifier-big-quiet'
+import cowayAirmega400 from './coway-airmega-400'
+import blueair7770 from './blueair-healthprotect-7770i'
+import levoitCore600s from './levoit-core-600s'
+import winix5500 from './winix-5500-2'
+import cowayAp1512 from './coway-airmega-ap-1512hh'
+import levoitCore300 from './levoit-core-300'
+import honeywellHpa300 from './honeywell-hpa300'
 import bestHrvTrackers2026 from './best-hrv-trackers-2026'
 import bestMeditationApps2026 from './best-meditation-apps-2026'
 import bestSleepApps2026 from './best-sleep-apps-2026'
@@ -214,6 +225,7 @@ import bestBreathworkApps2026 from './best-breathwork-apps-2026'
 import bestRedLightFaceMasks2026 from './best-red-light-face-masks-2026'
 import bestMouthTapeNasalBreathing2026 from './best-mouth-tape-nasal-breathing-2026'
 import bestMassageGuns2026 from './best-massage-guns-2026'
+import bestAirPurifiers2026 from './best-air-purifiers-2026'
 
 /** Current date captured once at module load. Used to filter date-gated
  *  reviews and comparisons out of the live registry until their publishOn
@@ -386,6 +398,17 @@ const ALL_REVIEWS: ToolReview[] = [
   bobAndBradQ2,
   renphoR3,
   tolocoGun,
+  // Air purifiers — ordered by overallScore. All date-gated to 2026-07-27.
+  iqairHealthPro,
+  dysonBigQuiet,
+  molekuleAirPro,
+  cowayAirmega400,
+  blueair7770,
+  levoitCore600s,
+  cowayAp1512,
+  winix5500,
+  honeywellHpa300,
+  levoitCore300,
 ]
 
 /** Live product reviews — date-gated entries are excluded until their
@@ -411,6 +434,7 @@ const ALL_COMPARISONS: Comparison[] = [
   bestRedLightFaceMasks2026,
   bestMouthTapeNasalBreathing2026,
   bestMassageGuns2026,
+  bestAirPurifiers2026,
 ]
 
 /** Live round-up comparisons — date-gated entries excluded until their
