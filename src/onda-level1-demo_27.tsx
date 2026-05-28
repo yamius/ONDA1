@@ -2459,7 +2459,29 @@ const OndaLevel1 = () => {
       isNewRecord: shouldUpdate && existingPractice
     };
 
-    setPracticeHistory(prev => [session, ...prev]);
+    setPracticeHistory(prev => {
+      const next = [session, ...prev];
+      // SKStoreReviewController prompt — fired once on the 2nd lifetime
+      // completed practice (a natural value moment per Apple HIG). The
+      // system silently caps real displays to ~3 / 365 days, so even if
+      // localStorage is wiped on re-install the prompt won't spam. The
+      // local flag is the JS-side belt-and-braces.
+      try {
+        if (next.length === 2 && localStorage.getItem('onda_review_prompted') !== '1') {
+          localStorage.setItem('onda_review_prompted', '1');
+          // Lazy import keeps the plugin out of the cold-start bundle.
+          import('./plugins/ondaStoreReview').then(m => {
+            m.requestAppStoreReview().then(r => {
+              console.log('[OndaStoreReview] result:', r);
+            });
+          });
+        }
+      } catch (e) {
+        // localStorage in private mode etc — non-fatal.
+        console.log('[OndaStoreReview] skipped:', e);
+      }
+      return next;
+    });
 
     if (shouldUpdate) {
       const qntDiff = existingPractice ? earnedQnt - existingPractice.qnt : earnedQnt;
