@@ -5765,7 +5765,7 @@ const OndaLevel1 = () => {
                 >
                   <div className="flex items-center justify-center">
                     <span className="flex-1 text-right pr-3 sm:pr-4">{t('chapter')} {selectedChapter}</span>
-                    <span className="text-white/30">|</span>
+                    <span className={isLight ? 'text-slate-400' : 'text-white/30'}>|</span>
                     <span className="flex-1 text-left pl-3 sm:pl-4">{t(`chapters.chapter_${selectedChapter}`)}</span>
                   </div>
                 </button>
@@ -5811,7 +5811,17 @@ const OndaLevel1 = () => {
                             } 
                           }}
                           className={`block w-full px-4 py-3 transition-all text-lg ${
-                            !isAvailable
+                            // Light theme: hard-coded white text was unreadable on the
+                            // pale dropdown surface — use slate ramp for locked /
+                            // available / selected. Dark theme keeps the existing
+                            // per-circuit accent ladder unchanged.
+                            isLight
+                              ? !isAvailable
+                                ? 'text-slate-400 cursor-not-allowed'
+                                : selectedChapter === chapter
+                                  ? 'bg-indigo-500/25 text-slate-900 font-medium'
+                                  : 'text-slate-700 hover:bg-indigo-500/10'
+                              : !isAvailable
                               ? 'text-white/40 cursor-not-allowed'
                               : activeCircuit === 2
                               ? selectedChapter === chapter ? 'bg-cyan-500/40 text-white' : 'hover:bg-cyan-500/30'
@@ -5840,7 +5850,7 @@ const OndaLevel1 = () => {
                         >
                           <div className="flex items-center justify-center">
                             <span className="flex-1 text-right pr-3 sm:pr-4">{t('chapter')} {chapter}</span>
-                            <span className="text-white/30">|</span>
+                            <span className={isLight ? 'text-slate-400' : 'text-white/30'}>|</span>
                             <span className="flex-1 text-left pl-3 sm:pl-4">
                               {t(`chapters.chapter_${chapter}`)}
                             </span>
@@ -5863,7 +5873,7 @@ const OndaLevel1 = () => {
                 >
                   <div className="flex items-center justify-center">
                     <span className="flex-1 text-right pr-3 sm:pr-4 text-xl sm:text-2xl">{t('level')} {selectedLevel}</span>
-                    <span className="text-white/30 text-xl sm:text-2xl">|</span>
+                    <span className={`text-xl sm:text-2xl ${isLight ? 'text-slate-400' : 'text-white/30'}`}>|</span>
                     <span className="flex-1 text-left pl-3 sm:pl-4">
                       <span className="text-xl sm:text-2xl">{t(`part_name_${selectedLevel}`).split(' ')[0]}</span>
                       <span className="text-base sm:text-xl"> {t(`part_name_${selectedLevel}`).split(' ').slice(1).join(' ')}</span>
@@ -5912,7 +5922,17 @@ const OndaLevel1 = () => {
                             }
                           }}
                           className={`block w-full px-4 py-2.5 transition-all text-lg ${
-                            !isAvailable
+                            // Light theme: hard-coded white text was unreadable on the
+                            // pale dropdown surface — use slate ramp for locked /
+                            // available / selected. Dark theme keeps the existing
+                            // per-circuit accent ladder unchanged.
+                            isLight
+                              ? !isAvailable
+                                ? 'text-slate-400 cursor-not-allowed'
+                                : level === selectedLevel
+                                  ? 'bg-indigo-500/25 text-slate-900 font-medium'
+                                  : 'text-slate-700 hover:bg-indigo-500/10'
+                              : !isAvailable
                               ? 'text-white/40 cursor-not-allowed'
                               : activeCircuit === 2
                               ? level === selectedLevel ? 'bg-cyan-500/40 text-white' : 'hover:bg-cyan-500/30'
@@ -5941,7 +5961,7 @@ const OndaLevel1 = () => {
                         >
                           <div className="flex items-center justify-center">
                             <span className="flex-1 text-right pr-3 sm:pr-4">{t('level')} {level}</span>
-                            <span className="text-white/30">|</span>
+                            <span className={isLight ? 'text-slate-400' : 'text-white/30'}>|</span>
                             <span className="flex-1 text-left pl-3 sm:pl-4">
                               <span>{t(`part_name_${level}`).split(' ')[0]}</span>
                               <span className="text-sm sm:text-base"> {t(`part_name_${level}`).split(' ').slice(1).join(' ')}</span>
@@ -6513,7 +6533,7 @@ const OndaLevel1 = () => {
                 >
                   <div className="flex items-center justify-center">
                     <span className="flex-1 text-right pr-3 sm:pr-4">{t('chapter')} {selectedChapter}</span>
-                    <span className="text-white/30">|</span>
+                    <span className={isLight ? 'text-slate-400' : 'text-white/30'}>|</span>
                     <span className="flex-1 text-left pl-3 sm:pl-4">{t(`chapters.chapter_${selectedChapter}`)}</span>
                   </div>
                 </button>
@@ -6534,14 +6554,20 @@ const OndaLevel1 = () => {
                             }
                           }}
                           className={`block w-full px-4 py-3 transition-all text-lg ${
-                            !isAvailable
+                            isLight
+                              ? !isAvailable
+                                ? 'text-slate-400 cursor-not-allowed'
+                                : selectedChapter === chapter
+                                  ? 'bg-indigo-500/25 text-slate-900 font-medium'
+                                  : 'text-slate-700 hover:bg-indigo-500/10'
+                              : !isAvailable
                               ? 'text-white/40 cursor-not-allowed'
                               : selectedChapter === chapter ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                           }`}
                         >
                           <div className="flex items-center justify-center">
                             <span className="flex-1 text-right pr-3 sm:pr-4">{t('chapter')} {chapter}</span>
-                            <span className="text-white/30">|</span>
+                            <span className={isLight ? 'text-slate-400' : 'text-white/30'}>|</span>
                             <span className="flex-1 text-left pl-3 sm:pl-4">{t(`chapters.chapter_${chapter}`)}</span>
                           </div>
                         </button>
@@ -6560,7 +6586,7 @@ const OndaLevel1 = () => {
                 >
                   <div className="flex items-center justify-center">
                     <span className="flex-1 text-right pr-3 sm:pr-4 text-xl sm:text-2xl">{t('level')} {selectedLevel}</span>
-                    <span className="text-white/30 text-xl sm:text-2xl">|</span>
+                    <span className={`text-xl sm:text-2xl ${isLight ? 'text-slate-400' : 'text-white/30'}`}>|</span>
                     <span className="flex-1 text-left pl-3 sm:pl-4">
                       <span className="text-xl sm:text-2xl">{t(`part_name_${selectedLevel}`).split(' ')[0]}</span>
                       <span className="text-base sm:text-xl"> {t(`part_name_${selectedLevel}`).split(' ').slice(1).join(' ')}</span>
@@ -6584,14 +6610,20 @@ const OndaLevel1 = () => {
                             }
                           }}
                           className={`block w-full px-4 py-2.5 transition-all text-lg ${
-                            !isAvailable
+                            isLight
+                              ? !isAvailable
+                                ? 'text-slate-400 cursor-not-allowed'
+                                : level === selectedLevel
+                                  ? 'bg-indigo-500/25 text-slate-900 font-medium'
+                                  : 'text-slate-700 hover:bg-indigo-500/10'
+                              : !isAvailable
                               ? 'text-white/40 cursor-not-allowed'
                               : level === selectedLevel ? 'bg-indigo-500/40 text-white' : 'hover:bg-indigo-500/30'
                           }`}
                         >
                           <div className="flex items-center justify-center">
                             <span className="flex-1 text-right pr-3 sm:pr-4">{t('level')} {level}</span>
-                            <span className="text-white/30">|</span>
+                            <span className={isLight ? 'text-slate-400' : 'text-white/30'}>|</span>
                             <span className="flex-1 text-left pl-3 sm:pl-4">
                               <span>{t(`part_name_${level}`).split(' ')[0]}</span>
                               <span className="text-sm sm:text-base"> {t(`part_name_${level}`).split(' ').slice(1).join(' ')}</span>
@@ -7294,6 +7326,13 @@ const OndaLevel1 = () => {
               className={`mt-2 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg backdrop-blur-md ${
                 isPartUnlocked(activeCircuit + 1)
                   ? `hover:scale-105 active:scale-95 ${emoTint}`
+                  // Locked state: in dark theme keep the original solid grey
+                  // pill; in light theme match the outlined "pill" look used
+                  // by Voice Check / Face Check / dropdown triggers, just
+                  // with a white fill and muted slate text so the disabled
+                  // affordance still reads.
+                  : isLight
+                  ? 'bg-white/85 text-slate-400 border border-slate-300 cursor-not-allowed'
                   : 'bg-gray-600/60 text-gray-400 border-2 border-gray-500/50 cursor-not-allowed'
               }`}
               data-testid="next-level-cta"
