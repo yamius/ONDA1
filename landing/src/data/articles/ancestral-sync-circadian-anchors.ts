@@ -50,7 +50,7 @@ const article: Article = {
 
 **Signal: Low-Angle Sunlight**
 
-The first photons of morning light hitting your retina trigger a cascade of critical reactions. This isn't just about "waking up." It's a command for the mitochondria to begin ATP production and a master signal to suppress melatonin.
+The first photons of morning light hitting your retina trigger a cascade of critical reactions. This isn't just about "waking up." It's a command for the [mitochondria](/glossary/mitochondria) to begin [ATP](/glossary/atp) production and a master signal to suppress [melatonin](/glossary/melatonin) — the two biochemical bookends of your [circadian rhythm](/glossary/circadian-rhythm).
 
 The photoreceptors responsible — intrinsically photosensitive retinal ganglion cells (ipRGCs) — are maximally sensitive to the short-wave spectrum of low-angle morning light. This is the exact wavelength that artificial light sources fail to replicate at sufficient intensity. A screen cannot boot the system; a window barely can.
 
@@ -66,9 +66,9 @@ This is your primary Boot Loader for the entire system. Every other circadian pr
 
 In nature, temperature drops at night and rises during the day. A constant 22°C (72°F) in your apartment "mutes" your regulatory mechanisms. The body's thermoregulatory system is not just a comfort mechanism — it is a timing device. Core temperature oscillates with a circadian period: lowest around 4 AM, peak in mid-afternoon. When the environment is thermally flat, this oscillation dampens.
 
-Brown adipose tissue (BAT), activated by cold exposure, is particularly sensitive to this signal. BAT thermogenesis is regulated by the sympathetic nervous system — the same system that governs morning cortisol release. Cold in the morning sharpens the sympathetic spike. Heat in the evening mimics sunset and accelerates the parasympathetic transition.
+Brown adipose tissue (BAT), activated by cold exposure, is particularly sensitive to this signal. BAT thermogenesis is regulated by the [sympathetic nervous system](/glossary/sympathetic-nervous-system) — the same system that governs morning [cortisol](/glossary/cortisol) release. Cold in the morning sharpens the sympathetic spike. Heat in the evening mimics sunset and accelerates the [parasympathetic](/glossary/parasympathetic-nervous-system) transition.
 
-> **The Hack:** Use a cold shower in the morning (stimulating the sympathetic nervous system and brown fat) and a hot bath or sauna in the evening. The rapid cooling of the body after a hot bath mimics a natural sunset, signaling the hypothalamus: Time to Sleep.
+> **The Hack:** Use a cold shower in the morning (stimulating the sympathetic nervous system and brown fat) and a hot bath or sauna in the evening. The rapid cooling of the body after a hot bath mimics a natural sunset, signaling the [hypothalamus](/glossary/hypothalamus): Time to Sleep.
 
 ---
 
@@ -78,7 +78,7 @@ Brown adipose tissue (BAT), activated by cold exposure, is particularly sensitiv
 
 Your internal organs — liver, kidneys, gut — have their own independent clocks. They aren't wound by light, but by food. The timing of the first meal acts as a Start Command for the peripheral metabolic network. These clocks operate via transcription factors (CLOCK, BMAL1, PER, CRY) that are directly responsive to nutrient availability, not photons.
 
-The consequence of temporal misalignment here is severe: eating at 11 PM tells your liver "Stay active, the sun is still high," while your brain is already broadcasting "Shutdown sequence initiated." The result is Data Corruption at the cellular level — misexpression of metabolic genes, impaired lipid clearance, and blunted insulin sensitivity the following morning.
+The consequence of temporal misalignment here is severe: eating at 11 PM tells your liver "Stay active, the sun is still high," while your brain is already broadcasting "Shutdown sequence initiated." The result is Data Corruption at the cellular level — misexpression of metabolic genes, impaired lipid clearance, and blunted [insulin sensitivity](/glossary/insulin-sensitivity) the following morning.
 
 > **The Hack:** Eat breakfast at a consistent time to lock in the start of your metabolic day. Even a small caloric input (protein + fat) is sufficient to trigger the peripheral clock cascade.
 

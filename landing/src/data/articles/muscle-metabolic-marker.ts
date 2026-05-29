@@ -35,7 +35,7 @@ const article: Article = {
 
 > "In traditional biology, muscle is viewed merely as a tool for locomotion. In the ONDA system, muscle is your largest metabolic organ—your primary glucose 'accumulator' and the chief driver of hormonal youth.
 >
-> Muscle functions as a Metabolic Buffer: the higher the quality of your tissue, the more stable your 'Energy Grid' (blood sugar levels, insulin sensitivity). A drop in muscle mass (Sarcopenia) is the biological equivalent of battery degradation in your biocomputer. Defending that tissue through the GLP-1 era is its own protocol — see [GLP-1 biology & muscle preservation](/articles/glp1-biology-muscle-preservation). As of 2026, muscle strength is officially recognized as the single best predictor of biological age."
+> Muscle functions as a Metabolic Buffer: the higher the quality of your tissue, the more stable your 'Energy Grid' (blood sugar levels, insulin sensitivity). A drop in muscle mass ([sarcopenia](/glossary/sarcopenia)) is the biological equivalent of battery degradation in your [biocomputer](/glossary/biocomputer). Defending that tissue through the GLP-1 era is its own protocol — see [GLP-1 biology & muscle preservation](/articles/glp1-biology-muscle-preservation). As of 2026, muscle strength is officially recognized as the single best predictor of biological age."
 
 ---
 

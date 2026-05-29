@@ -70,25 +70,25 @@ Three mechanisms activated by resonant frequency breathing:
 
 > **Action:** Breathe at your identified resonant frequency for a minimum of 5 minutes. Use a 5:5 ratio (5-second inhale, 5-second exhale) as a starting point if your frequency has not been scanned yet.
 
-**Logic:** Most humans resonate near 0.1 Hz. This frequency "unlocks" the baroreflex — your body's built-in regulator for blood pressure and emotional stability. At resonance, the baroreceptors in your aorta and carotid arteries synchronize with the cardiac cycle, creating a high-amplitude oscillation that drives HRV to its ceiling. The signal propagates upward through the vagal afferents to the brainstem, shifting prefrontal activation and suppressing amygdala reactivity.
+**Logic:** Most humans resonate near 0.1 Hz. This frequency "unlocks" the baroreflex — your body's built-in regulator for blood pressure and emotional stability. At resonance, the baroreceptors in your aorta and carotid arteries synchronize with the cardiac cycle, creating a high-amplitude oscillation that drives [HRV](/glossary/heart-rate-variability) to its ceiling. The signal propagates upward through the vagal afferents to the [brainstem](/glossary/brainstem), shifting [prefrontal](/glossary/prefrontal-cortex) activation and suppressing [amygdala](/glossary/amygdala) reactivity.
 
 ### Mechanism 2: Vagal Capture
 
 > **Action:** Maintain the resonant breathing rhythm for 10+ consecutive minutes without interruption. Avoid speaking, checking devices, or breaking the rhythm.
 
-**Logic:** At resonance, the breathing rhythm literally "captures" the Vagus Nerve — forcing it to broadcast a high-fidelity safety signal across all internal systems simultaneously. The heart, gut, lungs, and immune cells all receive the same signal: the environment is safe, repair is authorized, resources can be allocated to long-term maintenance. This is not metaphor. Vagal efferent output measurably increases within 90 seconds of reaching resonance.
+**Logic:** At resonance, the breathing rhythm literally "captures" the [Vagus Nerve](/glossary/vagus-nerve) — forcing it to broadcast a high-fidelity safety signal across all internal systems simultaneously. The heart, gut, lungs, and immune cells all receive the same signal: the environment is safe, repair is authorized, resources can be allocated to long-term maintenance. This is not metaphor. Vagal efferent output measurably increases within 90 seconds of reaching resonance — the mechanism formalised by [polyvagal theory](/glossary/polyvagal-theory).
 
 ### Mechanism 3: Instant Reset
 
 > **Action:** Use 5-minute resonance sessions as a cognitive reset between high-load tasks — between meetings, before creative work, before sleep-onset.
 
-**Logic:** Five minutes of resonance breathing removes cognitive noise as effectively as a system reboot clears corrupted temporary files. The neural mechanism: resonance drives the thalamo-cortical loop into Alpha/Theta border activity (8–10 Hz), the optimal state for creative integration and consolidation. Cortisol drops. Working memory clears. The system is ready for the next load cycle.
+**Logic:** Five minutes of resonance breathing removes cognitive noise as effectively as a system reboot clears corrupted temporary files. The neural mechanism: resonance drives the thalamo-cortical loop (involving the [thalamus](/glossary/thalamus)) into [Alpha](/glossary/alpha-state)/Theta border activity (8–10 Hz), the optimal state for creative integration and consolidation. [Cortisol](/glossary/cortisol) drops. Working memory clears. The system is ready for the next load cycle.
 
 ---
 
 ## Impact Log: System Harmony
 
-**Autonomic Balance:** The Sympathetic and Parasympathetic branches stop competing and begin operating as a coordinated duet. Neither dominates — both contribute to the oscillation. This is the biological definition of coherence.
+**Autonomic Balance:** The [Sympathetic](/glossary/sympathetic-nervous-system) and [Parasympathetic](/glossary/parasympathetic-nervous-system) branches stop competing and begin operating as a coordinated duet. Neither dominates — both contribute to the oscillation. This is the biological definition of [coherence](/glossary/coherence).
 
 **Neural Clarity:** The brain shifts into "relaxed alertness" — Alpha/Theta border state — ideal for deep creative work, complex problem-solving, and high-fidelity decision-making. The same state meditators spend years trying to access deliberately.
 

@@ -26,7 +26,7 @@ const article: Article = {
   content: `
 ## [ ARTICLE: PREDICTIVE_BIOMETRICS // SYSTEM_STABILITY ]
 
-Most trackers tell you how you slept last night. Predictive Analytics tells you how you will perform three days from now. By feeding raw telemetry (HRV, RHR, Skin Temp, Respiratory Rate) into specialized AI models, we move beyond static data points into System Stability Forecasting. We don't just track the crash; we calculate the probability of the "Biological Reboot" before it happens.
+Most trackers tell you how you slept last night. Predictive Analytics tells you how you will perform three days from now. By feeding raw telemetry ([HRV](/glossary/heart-rate-variability), RHR, Skin Temp, Respiratory Rate) into specialized AI models, we move beyond static data points into System Stability Forecasting. We don't just track the crash; we calculate the probability of the "Biological Reboot" before it happens — the signature of accumulating [allostatic load](/glossary/allostatic-load) drifting your [biological signature](/glossary/biological-signature) out of [homeostasis](/glossary/homeostasis).
 
 ---
 
@@ -34,9 +34,9 @@ Most trackers tell you how you slept last night. Predictive Analytics tells you 
 
 > **The Hack:** [ PROTOCOL_PREDICTIVE_SYNC ]
 >
-> **Baseline Calibration:** Establish a 21-day "Clean Signal" period using high-fidelity wearables. The AI maps your unique Biological Signature and standard deviations.
+> **Baseline Calibration:** Establish a 21-day "Clean Signal" period using high-fidelity wearables. The AI maps your unique [Biological Signature](/glossary/biological-signature) and standard deviations.
 >
-> **Anomaly Detection:** The system monitors for "Micro-Drifts"—minuscule shifts in Resting Heart Rate (RHR) or HRV latency that are invisible to the human eye but signal an incoming system failure (illness or burnout).
+> **Anomaly Detection:** The system monitors for [Micro-Drifts](/glossary/micro-drift) — minuscule shifts in Resting Heart Rate (RHR) or HRV latency that are invisible to the human eye but signal an incoming system failure (illness or burnout).
 >
 > **Stability Thresholds:** Define your "Operational Redline." When the AI detects a 15% deviation from your baseline signature, it triggers a Soft Reboot Command (enforcing immediate recovery protocols).
 >

@@ -44,7 +44,7 @@ const article: Article = {
 
 ## [ SECTION 1: THE REGENERATIVE MATRIX ]
 
-Stem cells are the 'Master Code' of your body's repair system. Their production determines the efficiency of your Neuroplasticity and tissue recovery. Cacao, in its non-stimulant form, acts as a signaling molecule that triggers the mobilization of these cells from the bone marrow, effectively initiating a 'Hardware Repair' sequence at the capillary level.
+Stem cells are the 'Master Code' of your body's repair system. Their production determines the efficiency of your [neuroplasticity](/glossary/neuroplasticity) and tissue recovery. Cacao, in its non-stimulant form, acts as a signaling molecule that triggers the mobilization of these cells from the bone marrow, effectively initiating a 'Hardware Repair' sequence at the capillary level.
 
 ---
 
@@ -60,7 +60,7 @@ Caffeine and theobromine are pharmacological accelerators. While useful for 'Pro
 
 > **The Hack:** 30g of high-flavonol, decaffeinated cacao matrix in 70°C water.
 
-**The Logic:** This delivers a concentrated dose of Epicatechin which triggers the release of nitric oxide. It's the 'Software Update' that tells your bone marrow to release new building blocks into the bloodstream.
+**The Logic:** This delivers a concentrated dose of Epicatechin which triggers the release of [nitric oxide](/glossary/nitric-oxide) — the vasodilatory signaling molecule that opens capillary throughput. It's the 'Software Update' that tells your bone marrow to release new building blocks into the bloodstream.
 
 ### PROTOCOL 2: The Micro-Circulation Loop (Zone 1)
 
@@ -72,7 +72,7 @@ Caffeine and theobromine are pharmacological accelerators. While useful for 'Pro
 
 > **The Hack:** 10 minutes of Red Light Therapy (660nm) before the sleep cycle.
 
-**The Logic:** Light therapy provides the Mitochondria with the necessary ATP to utilize the stem cells produced during the day. It closes the loop on the regeneration sequence.
+**The Logic:** [Photobiomodulation](/glossary/photobiomodulation) at 660nm provides the [mitochondria](/glossary/mitochondria) with the necessary [ATP](/glossary/atp) to utilize the stem cells produced during the day. It closes the loop on the regeneration sequence.
 
 ---
 

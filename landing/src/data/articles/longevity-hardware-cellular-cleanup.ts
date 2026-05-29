@@ -39,7 +39,7 @@ const article: Article = {
 
 ## [ SYSTEM LIFESPAN: EXTENDED ]
 
-Autophagy and [senolytics](/articles/senolytic-high-dosing-longevity) are your cellular cleanup crew. Extended fasting, quercetin/fisetin, and hormetic stress defend your mitochondria from zombie cells.
+[Autophagy](/glossary/autophagy) and [senolytics](/articles/senolytic-high-dosing-longevity) are your cellular cleanup crew. Extended fasting, quercetin/fisetin, and hormetic stress defend your [mitochondria](/glossary/mitochondria) from zombie cells.
 
 ---
 
@@ -51,7 +51,7 @@ Cellular Senescence is a protective mechanism that goes wrong. When a cell is to
 
 ## Section 2: Autophagy — The Recycling Script
 
-Autophagy is your body's internal recycling program. During periods of nutrient scarcity, your cells start breaking down old, misfolded proteins and damaged organelles to create new energy. This 'Deep Clean' is essential for maintaining Mitochondrial health and preventing the buildup of biological 'Junk Data.'
+[Autophagy](/glossary/autophagy) is your body's internal recycling program. During periods of nutrient scarcity, your cells start breaking down old, misfolded proteins and damaged organelles to create new energy. This 'Deep Clean' is essential for maintaining mitochondrial health and preventing the buildup of biological 'Junk Data.'
 
 ---
 
@@ -61,7 +61,7 @@ Autophagy is your body's internal recycling program. During periods of nutrient 
 
 > **The Hack:** A 36-to-72 hour water-only fast performed once per quarter.
 
-**The Logic:** This maximizes the AMPK pathway and triggers massive Autophagy. It is the ultimate 'Reset Button' for your immune system, clearing out damaged white blood cells and stimulating the production of new, high-performance ones.
+**The Logic:** This maximizes the [AMPK](/glossary/ampk) pathway and triggers massive [autophagy](/glossary/autophagy). It is the ultimate 'Reset Button' for your immune system, clearing out damaged white blood cells and stimulating the production of new, high-performance ones.
 
 ### PROTOCOL 2: Natural Senolytics (The Quercetin/Fisetin Patch)
 
