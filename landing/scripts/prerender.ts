@@ -736,9 +736,27 @@ for (const route of routes) {
     mkdirSync(outDir, { recursive: true })
     const outPath = join(outDir, 'index.html')
     writeFileSync(outPath, out)
+
+    // Memory hygiene: explicitly tear down the JSDOM window so its
+    // internal DOM tree, event-loop hooks and document references can
+    // be GC'd. Without this, JSDOM windows accumulate across the 800+
+    // routes and push Node heap past its 2GB default. Combined with a
+    // periodic global.gc() call below, this keeps peak heap well under
+    // the --max-old-space-size=4096 budget the build script sets.
+    try {
+      dom.window.close()
+    } catch {
+      // JSDOM occasionally throws on close when the document was
+      // partially mutated; the window is still eligible for GC.
+    }
+
     done++
     if (done % HEARTBEAT_EVERY === 0) {
       console.log(`[prerender] ... ${done}/${routes.length}`)
+      // Suggest a major GC pass at every heartbeat. Requires the build
+      // to start Node with --expose-gc (set by the `build` npm script).
+      // Without --expose-gc, global.gc is undefined and this is a no-op.
+      if (typeof global.gc === 'function') global.gc()
     }
   } catch (err) {
     failed++
