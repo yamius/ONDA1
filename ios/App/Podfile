@@ -32,8 +32,13 @@ target 'App' do
   #      they wanted was $5,000/mo for <100 installs — pricing not aligned
   #      with our scale.
   #   2. Tenjin includes AppLovin Axon integration, which Airbridge does not.
-  # No version pin: CocoaPods picks the latest 1.x release.
-  pod 'TenjinSDK'
+  #
+  # Pinned to ~> 1.17 (current stable as of 2026-05-29 is 1.17.1). The
+  # pessimistic operator allows patch updates but blocks a surprise 2.x
+  # major bump on a CI rebuild — important because the lockfile is
+  # regenerated on every CI run and an unpinned dep can silently switch
+  # APIs between two consecutive builds.
+  pod 'TenjinSDK', '~> 1.17'
 end
 
 post_install do |installer|
