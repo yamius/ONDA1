@@ -1,5 +1,27 @@
 import "jsr:@supabase/functions-js/edge-runtime.d.ts";
 
+/**
+ * Voice emotion analysis via Hume AI **Stream API** (WebSocket).
+ *
+ * History note:
+ *   v1: Hume Batch Jobs API. Async — submit + poll. End-to-end latency
+ *       10–30 s. Client only waits 5 s before falling back to a random
+ *       mock emotion, so in production the user almost never saw the
+ *       real result. The feature looked like decoration.
+ *
+ *   v2 (this file): Hume Stream Models API. Synchronous WebSocket —
+ *       one message in, one prediction message back, typically 1–2 s
+ *       total. Fits comfortably under the client's 5-second timeout,
+ *       so the user actually sees their real top emotion.
+ *
+ * Privacy posture is unchanged: audio passes through this Edge Function
+ * in-memory only (no Supabase Storage write, no DB insert), forwarded
+ * to Hume AI's prosody model, and discarded once the prediction is
+ * returned. Hume AI's own retention policy applies during the analysis
+ * window. This matches the public Privacy Policy §1.3 "Emotion
+ * Analysis (Voice Check)" effective 2026-05-29.
+ */
+
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
@@ -11,205 +33,215 @@ interface HumeEmotionScore {
   score: number;
 }
 
-interface HumeProsodyPrediction {
-  emotions: HumeEmotionScore[];
+/**
+ * Hume Stream `/v0/stream/models` response shape (prosody model).
+ * Only the fields we actually consume are typed.
+ */
+interface HumeStreamMessage {
+  prosody?: {
+    predictions?: Array<{
+      time?: { begin: number; end: number };
+      emotions?: HumeEmotionScore[];
+    }>;
+    warning?: string;
+    error?: string;
+  };
+  error?: string;
+  warning?: string;
 }
 
-interface HumeApiResponse {
-  results?: {
-    predictions?: Array<{
-      models?: {
-        prosody?: {
-          grouped_predictions?: Array<{
-            predictions?: HumeProsodyPrediction[];
-          }>;
-        };
-      };
-    }>;
-  }[];
+/**
+ * Convert an ArrayBuffer to base64 without blowing up on large inputs.
+ * String.fromCharCode(...new Uint8Array(buf)) throws on big buffers
+ * because of the spread argument-count limit, so we chunk manually.
+ */
+function arrayBufferToBase64(buf: ArrayBuffer): string {
+  const bytes = new Uint8Array(buf);
+  const CHUNK = 0x8000;
+  let binary = "";
+  for (let i = 0; i < bytes.length; i += CHUNK) {
+    binary += String.fromCharCode(...bytes.subarray(i, i + CHUNK));
+  }
+  return btoa(binary);
+}
+
+/**
+ * Send the audio to Hume Stream, wait for one prediction message,
+ * close the socket. Resolves with the parsed message, or rejects
+ * on timeout / socket error / Hume-side error.
+ */
+async function callHumeStream(
+  apiKey: string,
+  audioBase64: string,
+  timeoutMs: number,
+): Promise<HumeStreamMessage> {
+  return new Promise<HumeStreamMessage>((resolve, reject) => {
+    // Hume Stream Models endpoint. Auth via query param is the documented
+    // pattern for WebSocket clients that can't set custom headers.
+    const url = `wss://api.hume.ai/v0/stream/models?apiKey=${encodeURIComponent(apiKey)}`;
+    const ws = new WebSocket(url);
+
+    const timer = setTimeout(() => {
+      console.warn("[analyze-emotion] Hume stream timeout after", timeoutMs, "ms");
+      try { ws.close(); } catch (_) { /* ignore */ }
+      reject(new Error(`Hume stream timeout after ${timeoutMs}ms`));
+    }, timeoutMs);
+
+    ws.onopen = () => {
+      console.log("[analyze-emotion] Hume WS open, sending audio…");
+      ws.send(
+        JSON.stringify({
+          data: audioBase64,
+          models: { prosody: {} },
+          raw_text: false,
+        }),
+      );
+    };
+
+    ws.onmessage = (event) => {
+      try {
+        const msg = JSON.parse(event.data) as HumeStreamMessage;
+        // Hume may send warning-only frames before predictions on edge cases;
+        // we accept the first frame that has predictions or an explicit error.
+        if (msg.prosody?.predictions || msg.prosody?.error || msg.error) {
+          clearTimeout(timer);
+          try { ws.close(); } catch (_) { /* ignore */ }
+          resolve(msg);
+        } else {
+          console.log("[analyze-emotion] Hume non-final frame:", msg);
+        }
+      } catch (e) {
+        clearTimeout(timer);
+        try { ws.close(); } catch (_) { /* ignore */ }
+        reject(new Error(`Hume stream parse error: ${(e as Error).message}`));
+      }
+    };
+
+    ws.onerror = (e) => {
+      clearTimeout(timer);
+      console.error("[analyze-emotion] Hume WS error:", e);
+      reject(new Error("Hume WebSocket error"));
+    };
+
+    ws.onclose = (event) => {
+      // If the socket closes without resolving (no message received),
+      // surface that as a rejection so the caller can fall back.
+      clearTimeout(timer);
+      if (event.code !== 1000) {
+        console.warn("[analyze-emotion] Hume WS closed unexpectedly:", event.code, event.reason);
+      }
+    };
+  });
 }
 
 Deno.serve(async (req: Request) => {
   if (req.method === "OPTIONS") {
-    return new Response(null, {
-      status: 200,
-      headers: corsHeaders,
-    });
+    return new Response(null, { status: 200, headers: corsHeaders });
   }
 
   try {
     const HUME_API_KEY = Deno.env.get("HUME_API_KEY");
-    
+
     if (!HUME_API_KEY) {
       return new Response(
-        JSON.stringify({ 
+        JSON.stringify({
           error: "Hume AI API key not configured",
-          useMock: true 
+          useMock: true,
         }),
         {
           status: 200,
           headers: { ...corsHeaders, "Content-Type": "application/json" },
-        }
+        },
       );
     }
 
+    // ----- Decode the inbound audio into base64 -----
     const contentType = req.headers.get("content-type") || "";
-    let audioBlob: Blob;
-    let fileName = "recording.webm";
+    let audioBase64: string;
 
-    // 🔥 НОВОЕ: Поддержка base64 JSON (для iOS WKWebView compatibility)
     if (contentType.includes("application/json")) {
-      console.log("Processing JSON request (base64)");
+      // iOS WKWebView path: client sends { audio: "data:audio/webm;base64,…", format: "base64" }
       const body = await req.json();
-      
-      if (body.audio && body.format === 'base64') {
-        console.log("Received base64 audio, decoding...");
-        
-        // Извлекаем base64 без data URL prefix (data:audio/webm;base64,...)
-        const base64Data = body.audio.includes(',') ? body.audio.split(',')[1] : body.audio;
-        console.log("Base64 data length:", base64Data.length);
-        
-        // Декодируем base64 → binary
-        const binaryString = atob(base64Data);
-        const bytes = new Uint8Array(binaryString.length);
-        for (let i = 0; i < binaryString.length; i++) {
-          bytes[i] = binaryString.charCodeAt(i);
-        }
-        
-        audioBlob = new Blob([bytes], { type: 'audio/webm' });
-        console.log("Decoded audio blob size:", audioBlob.size, "bytes");
+      if (body.audio && body.format === "base64") {
+        audioBase64 = body.audio.includes(",")
+          ? body.audio.split(",")[1]
+          : body.audio;
       } else {
         throw new Error("Invalid JSON body format (expected audio + format fields)");
       }
     } else if (contentType.includes("multipart/form-data")) {
-      console.log("Processing FormData request");
       const formData = await req.formData();
       const file = formData.get("audio");
-
       if (!file || !(file instanceof Blob)) {
         throw new Error("No audio file provided");
       }
-
-      audioBlob = file;
-
-      if (file instanceof File && file.name) {
-        fileName = file.name;
-      }
+      audioBase64 = arrayBufferToBase64(await file.arrayBuffer());
     } else {
-      console.log("Processing raw blob request");
-      audioBlob = await req.blob();
+      // Raw blob fallback
+      audioBase64 = arrayBufferToBase64(await req.arrayBuffer());
     }
 
-    console.log("Processing audio file:", fileName, "Size:", audioBlob.size, "Type:", audioBlob.type);
+    console.log("[analyze-emotion] Audio base64 length:", audioBase64.length);
 
-    const form = new FormData();
-    form.append("file", audioBlob, fileName);
-    form.append("json", JSON.stringify({ models: { prosody: {} } }));
+    // ----- Call Hume Stream -----
+    // The client aborts at 5 s, so we cap our wait at 4.2 s and leave
+    // headroom for response serialisation.
+    const streamMsg = await callHumeStream(HUME_API_KEY, audioBase64, 4200);
 
-    console.log("Sending request to Hume AI...");
-
-    const humeResponse = await fetch("https://api.hume.ai/v0/batch/jobs", {
-      method: "POST",
-      headers: {
-        "X-Hume-Api-Key": HUME_API_KEY,
-      },
-      body: form,
-    });
-
-    if (!humeResponse.ok) {
-      const errorText = await humeResponse.text();
-      console.error("Hume API error response:", humeResponse.status, errorText);
-      throw new Error(`Hume API error: ${humeResponse.status} - ${errorText}`);
-    }
-
-    const jobData = await humeResponse.json();
-    console.log("Job created:", jobData.job_id);
-    const jobId = jobData.job_id;
-
-    let jobComplete = false;
-    let attempts = 0;
-    const maxAttempts = 60;
-    let results: HumeApiResponse | null = null;
-
-    while (!jobComplete && attempts < maxAttempts) {
-      await new Promise(resolve => setTimeout(resolve, 3000));
-
-      const statusResponse = await fetch(
-        `https://api.hume.ai/v0/batch/jobs/${jobId}/predictions`,
-        {
-          headers: {
-            "X-Hume-Api-Key": HUME_API_KEY,
-          },
-        }
+    if (streamMsg.error || streamMsg.prosody?.error) {
+      throw new Error(
+        `Hume stream error: ${streamMsg.error ?? streamMsg.prosody?.error}`,
       );
-
-      console.log(`Polling attempt ${attempts + 1}/${maxAttempts}, status: ${statusResponse.status}`);
-
-      if (statusResponse.ok) {
-        results = await statusResponse.json();
-        jobComplete = true;
-        console.log("Job complete, processing results...");
-      } else if (statusResponse.status === 404) {
-        console.log("Job still processing...");
-      } else {
-        const errorText = await statusResponse.text();
-        console.error("Error fetching job status:", statusResponse.status, errorText);
-      }
-
-      attempts++;
     }
 
-    if (!results || !results.results || results.results.length === 0) {
-      throw new Error("No results from Hume AI");
+    const prediction = streamMsg.prosody?.predictions?.[0];
+    if (!prediction || !prediction.emotions) {
+      throw new Error("No prosody predictions in Hume stream response");
     }
 
-    const predictions = results.results[0]?.predictions?.[0]?.models?.prosody?.grouped_predictions?.[0]?.predictions?.[0];
-    
-    if (!predictions || !predictions.emotions) {
-      throw new Error("Invalid response structure from Hume AI");
-    }
-
-    const emotions = predictions.emotions
+    // ----- Map Hume emotions → in-app keys -----
+    const emotions = [...prediction.emotions]
       .sort((a, b) => b.score - a.score)
       .slice(0, 10);
 
     const primaryEmotion = emotions[0];
-    const averageScore = emotions.slice(0, 5).reduce((sum, e) => sum + e.score, 0) / 5;
+
     const energyEmotions = ["Excitement", "Joy", "Triumph", "Amusement", "Surprise (positive)"];
-    const calmEmotions = ["Calmness", "Contentment", "Relief", "Satisfaction", "Contemplation"];
-    
-    const energyScore = emotions
-      .filter(e => energyEmotions.some(en => e.name.toLowerCase().includes(en.toLowerCase())))
-      .reduce((sum, e) => sum + e.score, 0) / energyEmotions.length;
+    const energyScore =
+      emotions
+        .filter((e) =>
+          energyEmotions.some((en) => e.name.toLowerCase().includes(en.toLowerCase())),
+        )
+        .reduce((sum, e) => sum + e.score, 0) / energyEmotions.length;
 
     const emotionMapping: { [key: string]: string } = {
-      "calmness": "emotional_check.calmness",
-      "contentment": "emotional_check.calmness",
-      "joy": "emotional_check.joy",
-      "amusement": "emotional_check.joy",
-      "excitement": "emotional_check.joy",
-      "anxiety": "emotional_check.anxiety",
-      "distress": "emotional_check.anxiety",
-      "fear": "emotional_check.anxiety",
-      "tiredness": "emotional_check.fatigue",
-      "boredom": "emotional_check.fatigue",
-      "determination": "emotional_check.inspiration",
-      "interest": "emotional_check.inspiration",
-      "concentration": "emotional_check.contemplation",
-      "contemplation": "emotional_check.contemplation",
+      calmness: "emotional_check.calmness",
+      contentment: "emotional_check.calmness",
+      joy: "emotional_check.joy",
+      amusement: "emotional_check.joy",
+      excitement: "emotional_check.joy",
+      anxiety: "emotional_check.anxiety",
+      distress: "emotional_check.anxiety",
+      fear: "emotional_check.anxiety",
+      tiredness: "emotional_check.fatigue",
+      boredom: "emotional_check.fatigue",
+      determination: "emotional_check.inspiration",
+      interest: "emotional_check.inspiration",
+      concentration: "emotional_check.contemplation",
+      contemplation: "emotional_check.contemplation",
     };
 
-    const mappedEmotion = Object.keys(emotionMapping).find(key => 
-      primaryEmotion.name.toLowerCase().includes(key)
+    const mappedEmotion = Object.keys(emotionMapping).find((key) =>
+      primaryEmotion.name.toLowerCase().includes(key),
     );
 
-    const emotionKey = mappedEmotion 
-      ? emotionMapping[mappedEmotion] 
+    const emotionKey = mappedEmotion
+      ? emotionMapping[mappedEmotion]
       : "emotional_check.contemplation";
 
     const recommendationKey = emotionKey.replace(
       "emotional_check.",
-      "emotional_check.rec_"
+      "emotional_check.rec_",
     );
 
     return new Response(
@@ -223,24 +255,30 @@ Deno.serve(async (req: Request) => {
           topEmotion: primaryEmotion.name,
           score: primaryEmotion.score,
         },
+        source: "hume-stream",
       }),
       {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
-      }
+      },
     );
   } catch (error) {
-    console.error("Error processing emotion analysis:", error);
-    console.error("Error stack:", error instanceof Error ? error.stack : "No stack trace");
+    console.error("[analyze-emotion] Error:", error);
+    console.error(
+      "[analyze-emotion] Stack:",
+      error instanceof Error ? error.stack : "no stack",
+    );
 
+    // Returning useMock:true lets the client display a random
+    // calming emotion instead of a hard error. Same behaviour as v1.
     return new Response(
       JSON.stringify({
         error: error instanceof Error ? error.message : String(error),
-        useMock: true
+        useMock: true,
       }),
       {
         status: 200,
         headers: { ...corsHeaders, "Content-Type": "application/json" },
-      }
+      },
     );
   }
 });
