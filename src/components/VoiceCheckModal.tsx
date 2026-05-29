@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 import { LizaChatModal } from './LizaChatModal';
-import { trackTenjinEmotionalCheck } from '../lib/tenjin';
+import { trackTenjinVoiceCheck } from '../lib/tenjin';
 import { useTheme } from '../theme/ThemeProvider';
 
-interface EmotionalCheckModalProps {
+interface VoiceCheckModalProps {
   isOpen: boolean;
   onClose: () => void;
   onOndEarned?: (amount: number) => void;
@@ -18,14 +18,14 @@ const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 type RecordingState = 'idle' | 'recording' | 'recorded' | 'analyzing' | 'result';
 
-interface EmotionalResult {
+interface VoiceCheckResult {
   primaryEmotion: string;
   confidence: number;
   energyLevel: number;
   recommendation: string;
 }
 
-export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalCheckModalProps) {
+export function VoiceCheckModal({ isOpen, onClose, onOndEarned }: VoiceCheckModalProps) {
   const { t } = useTranslation();
   const isLight = useTheme().resolved === 'light';
   const [recordingState, setRecordingState] = useState<RecordingState>('idle');
@@ -33,7 +33,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   const [selectedPractice, setSelectedPractice] = useState<string | null>(null);
   const [audioURL, setAudioURL] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [emotionalResult, setEmotionalResult] = useState<EmotionalResult | null>(null);
+  const [emotionalResult, setVoiceCheckResult] = useState<VoiceCheckResult | null>(null);
   const [isLizaChatOpen, setIsLizaChatOpen] = useState(false);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -43,9 +43,9 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
   useEffect(() => {
     if (isOpen) {
-      console.log('[EmotionalCheck] 🚪 Modal OPENED');
+      console.log('[VoiceCheck] 🚪 Modal OPENED');
     } else {
-      console.log('[EmotionalCheck] 🚪 Modal CLOSED');
+      console.log('[VoiceCheck] 🚪 Modal CLOSED');
     }
   }, [isOpen]);
 
@@ -62,8 +62,8 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
   const startRecording = async () => {
     try {
-      console.log('[EmotionalCheck] 🎤 Starting recording...');
-      console.log('[EmotionalCheck] Requesting microphone access...');
+      console.log('[VoiceCheck] 🎤 Starting recording...');
+      console.log('[VoiceCheck] Requesting microphone access...');
       
       if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
         throw new Error('getUserMedia not supported');
@@ -77,9 +77,9 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
         }
       });
       
-      console.log('[EmotionalCheck] ✅ Microphone access granted');
-      console.log('[EmotionalCheck] Audio tracks:', stream.getAudioTracks().length);
-      console.log('[EmotionalCheck] 🔊 iOS Audio Session may have changed to RECORD mode');
+      console.log('[VoiceCheck] ✅ Microphone access granted');
+      console.log('[VoiceCheck] Audio tracks:', stream.getAudioTracks().length);
+      console.log('[VoiceCheck] 🔊 iOS Audio Session may have changed to RECORD mode');
       
       const mediaRecorder = new MediaRecorder(stream, {
         mimeType: 'audio/webm'
@@ -90,39 +90,39 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       mediaRecorder.ondataavailable = (event) => {
         if (event.data.size > 0) {
           audioChunksRef.current.push(event.data);
-          console.log('[EmotionalCheck] Audio chunk received:', event.data.size, 'bytes');
+          console.log('[VoiceCheck] Audio chunk received:', event.data.size, 'bytes');
         }
       };
 
       mediaRecorder.onstop = () => {
-        console.log('[EmotionalCheck] 🛑 Recording stopped, chunks:', audioChunksRef.current.length);
+        console.log('[VoiceCheck] 🛑 Recording stopped, chunks:', audioChunksRef.current.length);
         const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
-        console.log('[EmotionalCheck] Audio blob size:', audioBlob.size, 'bytes');
+        console.log('[VoiceCheck] Audio blob size:', audioBlob.size, 'bytes');
         
         const url = URL.createObjectURL(audioBlob);
         setAudioURL(url);
         setRecordingState('recorded');
         stream.getTracks().forEach(track => {
-          console.log('[EmotionalCheck] Stopping track:', track.label);
+          console.log('[VoiceCheck] Stopping track:', track.label);
           track.stop();
         });
-        console.log('[EmotionalCheck] Recording complete, audio ready for playback');
-        console.log('[EmotionalCheck] 🔊 iOS Audio Session released (microphone stopped)');
+        console.log('[VoiceCheck] Recording complete, audio ready for playback');
+        console.log('[VoiceCheck] 🔊 iOS Audio Session released (microphone stopped)');
       };
 
       mediaRecorder.start(100); // Request data every 100ms
       setRecordingState('recording');
       setRecordingTime(0);
-      trackTenjinEmotionalCheck('Start');
-      console.log('[EmotionalCheck] MediaRecorder started');
+      trackTenjinVoiceCheck('Start');
+      console.log('[VoiceCheck] MediaRecorder started');
 
       timerRef.current = window.setInterval(() => {
         setRecordingTime(prev => prev + 1);
       }, 1000);
     } catch (error: any) {
-      console.error('[EmotionalCheck] ❌ Error accessing microphone:', error);
-      console.error('[EmotionalCheck] Error name:', error.name);
-      console.error('[EmotionalCheck] Error message:', error.message);
+      console.error('[VoiceCheck] ❌ Error accessing microphone:', error);
+      console.error('[VoiceCheck] Error name:', error.name);
+      console.error('[VoiceCheck] Error message:', error.message);
       
       let errorMessage = 'Unable to access microphone. Please check permissions.';
       if (error.name === 'NotAllowedError') {
@@ -136,7 +136,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   };
 
   const stopRecording = () => {
-    console.log('[EmotionalCheck] ⏸️ Stop recording requested');
+    console.log('[VoiceCheck] ⏸️ Stop recording requested');
     if (mediaRecorderRef.current && recordingState === 'recording') {
       mediaRecorderRef.current.stop();
       if (timerRef.current) {
@@ -146,15 +146,15 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   };
 
   const playAudio = () => {
-    console.log('[EmotionalCheck] 🔊 Play audio requested, current state:', { isPlaying, hasAudio: !!audioURL });
+    console.log('[VoiceCheck] 🔊 Play audio requested, current state:', { isPlaying, hasAudio: !!audioURL });
     if (audioURL && audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
         setIsPlaying(false);
-        console.log('[EmotionalCheck] ⏸️ Audio paused');
+        console.log('[VoiceCheck] ⏸️ Audio paused');
       } else {
-        console.log('[EmotionalCheck] ▶️ Starting audio playback');
-        console.log('[EmotionalCheck] 🔊 iOS Audio Session may change to PLAYBACK mode');
+        console.log('[VoiceCheck] ▶️ Starting audio playback');
+        console.log('[VoiceCheck] 🔊 iOS Audio Session may change to PLAYBACK mode');
         audioRef.current.play();
         setIsPlaying(true);
       }
@@ -162,7 +162,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
   };
 
   const analyzeVoice = async () => {
-    console.log('[EmotionalCheck] 🔍 Starting voice analysis...');
+    console.log('[VoiceCheck] 🔍 Starting voice analysis...');
     setRecordingState('analyzing');
 
     try {
@@ -171,42 +171,42 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       }
 
       const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
-      console.log('[EmotionalCheck] 📦 Audio blob:', {
+      console.log('[VoiceCheck] 📦 Audio blob:', {
         size: audioBlob.size,
         type: audioBlob.type,
         chunks: audioChunksRef.current.length
       });
 
       // 🔥 НОВОЕ: Конвертируем в base64 (обходит проблемы с FormData на iOS)
-      console.log('[EmotionalCheck] 🔄 Converting to base64...');
+      console.log('[VoiceCheck] 🔄 Converting to base64...');
       const base64Audio = await new Promise<string>((resolve, reject) => {
         const reader = new FileReader();
         reader.onloadend = () => {
           if (typeof reader.result === 'string') {
-            console.log('[EmotionalCheck] ✅ Base64 conversion complete');
+            console.log('[VoiceCheck] ✅ Base64 conversion complete');
             resolve(reader.result);
           } else {
             reject(new Error('Failed to read as data URL'));
           }
         };
         reader.onerror = (error) => {
-          console.error('[EmotionalCheck] ❌ FileReader error:', error);
+          console.error('[VoiceCheck] ❌ FileReader error:', error);
           reject(error);
         };
         reader.readAsDataURL(audioBlob);
       });
 
-      console.log('[EmotionalCheck] 📊 Base64 string length:', base64Audio.length);
+      console.log('[VoiceCheck] 📊 Base64 string length:', base64Audio.length);
 
       const apiUrl = `${SUPABASE_URL}/functions/v1/analyze-emotion`;
       
       // 🔍 ДИАГНОСТИКА
       const platform = Capacitor.getPlatform();
       const isNative = Capacitor.isNativePlatform();
-      console.log('[EmotionalCheck] 🌐 API URL:', apiUrl);
-      console.log('[EmotionalCheck] 📱 Platform:', platform, 'Native:', isNative);
-      console.log('[EmotionalCheck] 🔑 Auth key (first 20 chars):', SUPABASE_ANON_KEY?.substring(0, 20) + '...');
-      console.log('[EmotionalCheck] 📤 Sending as base64 JSON via CapacitorHttp...');
+      console.log('[VoiceCheck] 🌐 API URL:', apiUrl);
+      console.log('[VoiceCheck] 📱 Platform:', platform, 'Native:', isNative);
+      console.log('[VoiceCheck] 🔑 Auth key (first 20 chars):', SUPABASE_ANON_KEY?.substring(0, 20) + '...');
+      console.log('[VoiceCheck] 📤 Sending as base64 JSON via CapacitorHttp...');
       
       const fetchStartTime = Date.now();
 
@@ -221,7 +221,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       
       for (let attempt = 1; attempt <= maxRetries; attempt++) {
         try {
-          console.log(`[EmotionalCheck] 🔄 Fetch attempt ${attempt}/${maxRetries}...`);
+          console.log(`[VoiceCheck] 🔄 Fetch attempt ${attempt}/${maxRetries}...`);
           
           response = await fetch(apiUrl, {
             method: 'POST',
@@ -240,7 +240,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
           break; // Success
         } catch (e) {
           lastError = e as Error;
-          console.warn(`[EmotionalCheck] ⚠️ Attempt ${attempt} failed:`, lastError.message);
+          console.warn(`[VoiceCheck] ⚠️ Attempt ${attempt} failed:`, lastError.message);
           if (controller.signal.aborted) break; // 5 с истекли — уходим в fallback
           if (attempt < maxRetries) {
             await new Promise(r => setTimeout(r, 1000)); // Wait 1s before retry
@@ -255,35 +255,35 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       }
 
       const fetchDuration = Date.now() - fetchStartTime;
-      console.log('[EmotionalCheck] ✅ Fetch completed in', fetchDuration, 'ms');
-      console.log('[EmotionalCheck] 📊 Response status:', response!.status);
+      console.log('[VoiceCheck] ✅ Fetch completed in', fetchDuration, 'ms');
+      console.log('[VoiceCheck] 📊 Response status:', response!.status);
 
       if (!response!.ok) {
         const errorText = await response!.text();
-        console.error('[EmotionalCheck] ❌ API error response:', errorText);
+        console.error('[VoiceCheck] ❌ API error response:', errorText);
         throw new Error(`API error: ${response!.status} - ${errorText}`);
       }
 
       const result = await response!.json();
-      console.log('[EmotionalCheck] 📦 API result received');
+      console.log('[VoiceCheck] 📦 API result received');
 
       let resolvedEmotionKey: string;
       if (result.useMock) {
         console.warn('Using mock emotion detection:', result.error || 'API key not configured');
 
         const emotions = [
-          { name: 'emotional_check.calmness', confidence: 0.75, energy: 0.4, rec: 'emotional_check.rec_calmness' },
-          { name: 'emotional_check.joy', confidence: 0.82, energy: 0.8, rec: 'emotional_check.rec_joy' },
-          { name: 'emotional_check.anxiety', confidence: 0.68, energy: 0.65, rec: 'emotional_check.rec_anxiety' },
-          { name: 'emotional_check.fatigue', confidence: 0.55, energy: 0.25, rec: 'emotional_check.rec_fatigue' },
-          { name: 'emotional_check.inspiration', confidence: 0.78, energy: 0.85, rec: 'emotional_check.rec_inspiration' },
-          { name: 'emotional_check.contemplation', confidence: 0.62, energy: 0.5, rec: 'emotional_check.rec_contemplation' }
+          { name: 'voice_check.calmness', confidence: 0.75, energy: 0.4, rec: 'voice_check.rec_calmness' },
+          { name: 'voice_check.joy', confidence: 0.82, energy: 0.8, rec: 'voice_check.rec_joy' },
+          { name: 'voice_check.anxiety', confidence: 0.68, energy: 0.65, rec: 'voice_check.rec_anxiety' },
+          { name: 'voice_check.fatigue', confidence: 0.55, energy: 0.25, rec: 'voice_check.rec_fatigue' },
+          { name: 'voice_check.inspiration', confidence: 0.78, energy: 0.85, rec: 'voice_check.rec_inspiration' },
+          { name: 'voice_check.contemplation', confidence: 0.62, energy: 0.5, rec: 'voice_check.rec_contemplation' }
         ];
 
         const randomEmotion = emotions[Math.floor(Math.random() * emotions.length)];
         resolvedEmotionKey = randomEmotion.name;
 
-        setEmotionalResult({
+        setVoiceCheckResult({
           primaryEmotion: randomEmotion.name,
           confidence: randomEmotion.confidence,
           energyLevel: randomEmotion.energy,
@@ -291,7 +291,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
         });
       } else {
         resolvedEmotionKey = result.primaryEmotion;
-        setEmotionalResult({
+        setVoiceCheckResult({
           primaryEmotion: result.primaryEmotion,
           confidence: result.confidence,
           energyLevel: result.energyLevel,
@@ -300,11 +300,11 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       }
 
       setRecordingState('result');
-      trackTenjinEmotionalCheck('Finish', t(resolvedEmotionKey));
-      console.log('[EmotionalCheck] ✅ Analysis complete, showing results');
+      trackTenjinVoiceCheck('Finish', t(resolvedEmotionKey));
+      console.log('[VoiceCheck] ✅ Analysis complete, showing results');
     } catch (error: any) {
-      console.error('[EmotionalCheck] ❌ Error analyzing voice:', error);
-      console.error('[EmotionalCheck] 🔍 Error details:', {
+      console.error('[VoiceCheck] ❌ Error analyzing voice:', error);
+      console.error('[VoiceCheck] 🔍 Error details:', {
         message: error?.message || 'Unknown error',
         name: error?.name || 'Unknown',
         stack: error?.stack,
@@ -314,29 +314,29 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       
       // 🔍 ДИАГНОСТИКА: Специфичные проверки для "Load failed"
       if (error.name === 'TypeError' && error.message === 'Load failed') {
-        console.error('[EmotionalCheck] 🚨 Network request blocked or failed (Load failed)');
-        console.error('[EmotionalCheck] This typically indicates:');
-        console.error('[EmotionalCheck] - iOS WKWebView network restrictions');
-        console.error('[EmotionalCheck] - CORS issue with Edge Function');
-        console.error('[EmotionalCheck] - Invalid Supabase URL or credentials');
-        console.error('[EmotionalCheck] Switched to base64 JSON format to avoid FormData issues');
+        console.error('[VoiceCheck] 🚨 Network request blocked or failed (Load failed)');
+        console.error('[VoiceCheck] This typically indicates:');
+        console.error('[VoiceCheck] - iOS WKWebView network restrictions');
+        console.error('[VoiceCheck] - CORS issue with Edge Function');
+        console.error('[VoiceCheck] - Invalid Supabase URL or credentials');
+        console.error('[VoiceCheck] Switched to base64 JSON format to avoid FormData issues');
       }
 
       // Используем mock данные в случае ошибки (graceful fallback)
-      console.warn('[EmotionalCheck] ⚠️ Using fallback mock emotion data due to API error');
+      console.warn('[VoiceCheck] ⚠️ Using fallback mock emotion data due to API error');
       const emotions = [
-        { name: 'emotional_check.calmness', confidence: 0.75, energy: 0.4, rec: 'emotional_check.rec_calmness' },
-        { name: 'emotional_check.joy', confidence: 0.82, energy: 0.8, rec: 'emotional_check.rec_joy' },
-        { name: 'emotional_check.anxiety', confidence: 0.68, energy: 0.65, rec: 'emotional_check.rec_anxiety' },
-        { name: 'emotional_check.fatigue', confidence: 0.55, energy: 0.25, rec: 'emotional_check.rec_fatigue' },
-        { name: 'emotional_check.inspiration', confidence: 0.78, energy: 0.85, rec: 'emotional_check.rec_inspiration' },
-        { name: 'emotional_check.contemplation', confidence: 0.62, energy: 0.5, rec: 'emotional_check.rec_contemplation' }
+        { name: 'voice_check.calmness', confidence: 0.75, energy: 0.4, rec: 'voice_check.rec_calmness' },
+        { name: 'voice_check.joy', confidence: 0.82, energy: 0.8, rec: 'voice_check.rec_joy' },
+        { name: 'voice_check.anxiety', confidence: 0.68, energy: 0.65, rec: 'voice_check.rec_anxiety' },
+        { name: 'voice_check.fatigue', confidence: 0.55, energy: 0.25, rec: 'voice_check.rec_fatigue' },
+        { name: 'voice_check.inspiration', confidence: 0.78, energy: 0.85, rec: 'voice_check.rec_inspiration' },
+        { name: 'voice_check.contemplation', confidence: 0.62, energy: 0.5, rec: 'voice_check.rec_contemplation' }
       ];
 
       const randomEmotion = emotions[Math.floor(Math.random() * emotions.length)];
-      console.log('[EmotionalCheck] 🎲 Selected mock emotion:', randomEmotion.name);
+      console.log('[VoiceCheck] 🎲 Selected mock emotion:', randomEmotion.name);
 
-      setEmotionalResult({
+      setVoiceCheckResult({
         primaryEmotion: randomEmotion.name,
         confidence: randomEmotion.confidence,
         energyLevel: randomEmotion.energy,
@@ -344,20 +344,20 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
       });
 
       setRecordingState('result');
-      trackTenjinEmotionalCheck('Finish', t(randomEmotion.name));
-      console.log('[EmotionalCheck] ✅ Fallback analysis complete, showing mock results');
+      trackTenjinVoiceCheck('Finish', t(randomEmotion.name));
+      console.log('[VoiceCheck] ✅ Fallback analysis complete, showing mock results');
     }
   };
 
   const reset = () => {
-    console.log('[EmotionalCheck] 🔄 Resetting to initial state');
+    console.log('[VoiceCheck] 🔄 Resetting to initial state');
     if (audioURL) {
       URL.revokeObjectURL(audioURL);
     }
     setAudioURL(null);
     setRecordingState('idle');
     setRecordingTime(0);
-    setEmotionalResult(null);
+    setVoiceCheckResult(null);
     setIsPlaying(false);
   };
 
@@ -393,8 +393,8 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
           >
             <X className="w-6 h-6" />
           </button>
-          <h2 className={`text-2xl sm:text-3xl font-bold mb-0.5 text-center ${isLight ? 'text-slate-800' : 'text-white'}`}>{t('emotional_check.title')}</h2>
-          <p className={`text-sm text-center ${isLight ? 'text-slate-500' : 'text-indigo-100'}`}>{t('emotional_check.subtitle')}</p>
+          <h2 className={`text-2xl sm:text-3xl font-bold mb-0.5 text-center ${isLight ? 'text-slate-800' : 'text-white'}`}>{t('voice_check.title')}</h2>
+          <p className={`text-sm text-center ${isLight ? 'text-slate-500' : 'text-indigo-100'}`}>{t('voice_check.subtitle')}</p>
         </div>
 
         <div className="p-4 space-y-4 overflow-y-auto flex-1" style={{ paddingBottom: 'max(16px, env(safe-area-inset-bottom))' }}>
@@ -404,14 +404,14 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                 <div className={`w-20 h-20 mx-auto mb-3 rounded-full flex items-center justify-center ${isLight ? 'bg-gradient-to-br from-indigo-200 to-violet-200' : 'bg-gradient-to-br from-accent to-accent-2'}`}>
                   <Mic className={`w-10 h-10 ${isLight ? 'text-indigo-600' : 'text-white'}`} />
                 </div>
-                <p className="text-text-primary/80 mb-2 text-base">{t('emotional_check.instruction')}</p>
-                <p className="text-text-muted text-sm">{t('emotional_check.instruction_detail')}</p>
+                <p className="text-text-primary/80 mb-2 text-base">{t('voice_check.instruction')}</p>
+                <p className="text-text-muted text-sm">{t('voice_check.instruction_detail')}</p>
               </div>
               <button
                 onClick={startRecording}
                 className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-base ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white'}`}
               >
-                {t('emotional_check.start_recording')}
+                {t('voice_check.start_recording')}
               </button>
             </div>
           )}
@@ -429,13 +429,13 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
               <div className="text-2xl font-bold text-text-primary tabular-nums">
                 {formatTime(recordingTime)}
               </div>
-              <p className="text-text-secondary text-sm">{t('emotional_check.recording_in_progress')}</p>
+              <p className="text-text-secondary text-sm">{t('voice_check.recording_in_progress')}</p>
               <button
                 onClick={stopRecording}
                 className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base ${isLight ? 'bg-rose-100 hover:bg-rose-200 text-rose-700 border border-rose-300' : 'bg-gradient-to-r from-red-600 to-pink-600 hover:from-red-700 hover:to-pink-700 text-white'}`}
               >
                 <Square className="w-5 h-5" />
-                {t('emotional_check.stop_recording')}
+                {t('voice_check.stop_recording')}
               </button>
             </div>
           )}
@@ -446,7 +446,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
               <div className="bg-surface-2 rounded-xl p-4 border border-border/10">
                 <div className="flex items-center justify-between mb-3 gap-2">
-                  <span className="text-text-secondary text-sm">{t('emotional_check.recording_ready')}</span>
+                  <span className="text-text-secondary text-sm">{t('voice_check.recording_ready')}</span>
                   <span className="text-text-primary font-semibold text-base">{formatTime(recordingTime)}</span>
                 </div>
 
@@ -457,12 +457,12 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                   {isPlaying ? (
                     <>
                       <Pause className="w-5 h-5" />
-                      {t('emotional_check.pause')}
+                      {t('voice_check.pause')}
                     </>
                   ) : (
                     <>
                       <Play className="w-5 h-5" />
-                      {t('emotional_check.play')}
+                      {t('voice_check.play')}
                     </>
                   )}
                 </button>
@@ -474,13 +474,13 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                   className="flex-1 bg-surface-2 hover:opacity-90 text-text-primary py-3 px-4 rounded-xl transition-all flex items-center justify-center gap-2 text-sm"
                 >
                   <RefreshCw className="w-5 h-5" />
-                  {t('emotional_check.record_again')}
+                  {t('voice_check.record_again')}
                 </button>
                 <button
                   onClick={analyzeVoice}
                   className={`flex-1 font-semibold py-3 px-4 rounded-xl transition-all text-base ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white'}`}
                 >
-                  {t('emotional_check.analyze')}
+                  {t('voice_check.analyze')}
                 </button>
               </div>
             </div>
@@ -495,8 +495,8 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                   <Volume2 className="w-10 h-10 text-accent animate-pulse" />
                 </div>
               </div>
-              <p className="text-text-primary font-semibold text-base">{t('emotional_check.analyzing')}</p>
-              <p className="text-text-muted text-sm">{t('emotional_check.analyzing_detail')}</p>
+              <p className="text-text-primary font-semibold text-base">{t('voice_check.analyzing')}</p>
+              <p className="text-text-muted text-sm">{t('voice_check.analyzing_detail')}</p>
             </div>
           )}
 
@@ -506,13 +506,13 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                 <div className="text-center mb-3">
                   <div className="text-5xl mb-2">🎭</div>
                   <h3 className="text-2xl font-bold mb-1">{t(emotionalResult.primaryEmotion)}</h3>
-                  <p className={`text-sm ${isLight ? 'text-slate-500' : 'text-white/90'}`}>{t('emotional_check.detected_state')}</p>
+                  <p className={`text-sm ${isLight ? 'text-slate-500' : 'text-white/90'}`}>{t('voice_check.detected_state')}</p>
                 </div>
 
                 <div className={`space-y-3 backdrop-blur-sm rounded-xl p-4 ${isLight ? 'bg-white/60' : 'bg-white/10'}`}>
                   <div>
                     <div className="flex justify-between text-sm mb-1 gap-2">
-                      <span>{t('emotional_check.confidence')}</span>
+                      <span>{t('voice_check.confidence')}</span>
                       <span className="font-semibold">{Math.round(emotionalResult.confidence * 100)}%</span>
                     </div>
                     <div className={`rounded-full h-2.5 overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-white/20'}`}>
@@ -525,7 +525,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
                   <div>
                     <div className="flex justify-between text-sm mb-1 gap-2">
-                      <span>{t('emotional_check.energy_level')}</span>
+                      <span>{t('voice_check.energy_level')}</span>
                       <span className="font-semibold">{Math.round(emotionalResult.energyLevel * 100)}%</span>
                     </div>
                     <div className={`rounded-full h-2.5 overflow-hidden ${isLight ? 'bg-slate-200' : 'bg-white/20'}`}>
@@ -541,7 +541,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
               <div className="bg-surface-2 rounded-xl p-4 border border-border/10">
                 <h4 className="text-text-primary font-semibold mb-2 flex items-center gap-2 text-base">
                   <span>💡</span>
-                  {t('emotional_check.recommendation_title')}
+                  {t('voice_check.recommendation_title')}
                 </h4>
                 <p className="text-text-primary/80 text-sm leading-relaxed">
                   {t(emotionalResult.recommendation)}
@@ -550,7 +550,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
 
               <div className="space-y-2">
                 <h5 className="text-text-secondary text-sm font-semibold text-center">
-                  {t('emotional_check.adaptive_practices')}
+                  {t('voice_check.adaptive_practices')}
                 </h5>
                 <div className="grid grid-cols-3 gap-2">
                   {getAdaptivePractices(emotionalResult.primaryEmotion).map((practice, index) => (
@@ -558,9 +558,9 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                       key={index}
                       onClick={() => setSelectedPractice(practice.id)}
                       className={`text-sm py-2.5 px-3 rounded-lg transition-all border hover:scale-105 ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-800' : 'bg-surface-2/50 hover:bg-surface-2/80 text-text-primary border-border/10 hover:border-border/20'}`}
-                      title={t(`emotional_check.${practice.label}`)}
+                      title={t(`voice_check.${practice.label}`)}
                     >
-                      {t(`emotional_check.${practice.label}`)}
+                      {t(`voice_check.${practice.label}`)}
                     </button>
                   ))}
                 </div>
@@ -572,7 +572,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                 data-testid="button-start-liza-chat"
               >
                 <MessageCircle className="w-5 h-5" />
-                {t('emotional_check.start_dialog_terra')}
+                {t('voice_check.start_dialog_terra')}
               </button>
 
               <button
@@ -580,7 +580,7 @@ export function EmotionalCheckModal({ isOpen, onClose, onOndEarned }: EmotionalC
                 className="w-full bg-surface-2 hover:opacity-90 text-text-primary font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
               >
                 <RefreshCw className="w-5 h-5" />
-                {t('emotional_check.check_again')}
+                {t('voice_check.check_again')}
               </button>
             </div>
           )}

@@ -6,16 +6,16 @@ import { recommendedPractices } from '../utils/eyeScanMetrics';
 import { AdaptivePracticeModal } from './AdaptivePracticeModal';
 import { useTheme } from '../theme/ThemeProvider';
 
-// Экран «Сканирование нервной системы». Оформление — в стиле EmotionalCheckModal.
+// Экран Face Check (биофидбэк по лицу через MediaPipe).
 const METRICS: { key: 'calm' | 'focus' | 'fatigue'; labelKey: string }[] = [
-  { key: 'calm', labelKey: 'eye_scan.metric_calm' },
-  { key: 'focus', labelKey: 'eye_scan.metric_focus' },
-  { key: 'fatigue', labelKey: 'eye_scan.metric_fatigue' },
+  { key: 'calm', labelKey: 'face_check.metric_calm' },
+  { key: 'focus', labelKey: 'face_check.metric_focus' },
+  { key: 'fatigue', labelKey: 'face_check.metric_fatigue' },
 ];
 
 const SCAN_SEC = Math.round(SCAN_DURATION_MS / 1000);
 
-export default function NervousSystemScan({
+export default function FaceCheckScreen({
   onClose,
   onOndEarned,
 }: {
@@ -58,14 +58,14 @@ export default function NervousSystemScan({
             <button
               onClick={close}
               className={`absolute top-4 right-4 transition-colors ${isLight ? 'text-slate-500 hover:text-slate-800' : 'text-white/80 hover:text-white'}`}
-              aria-label={t('eye_scan.back')}
+              aria-label={t('face_check.back')}
             >
               <X className="w-6 h-6" />
             </button>
             <h2 className={`text-2xl sm:text-3xl font-bold text-center mb-0.5 ${isLight ? 'text-slate-800' : 'text-white'}`}>
-              {t('eye_scan.title')}
+              {t('face_check.title')}
             </h2>
-            <p className={`text-sm text-center ${isLight ? 'text-slate-500' : 'text-indigo-100'}`}>{t('eye_scan.subtitle')}</p>
+            <p className={`text-sm text-center ${isLight ? 'text-slate-500' : 'text-indigo-100'}`}>{t('face_check.subtitle')}</p>
           </div>
 
           {/* Тело */}
@@ -100,24 +100,24 @@ export default function NervousSystemScan({
                   <div className={`w-20 h-20 mx-auto mb-3 rounded-full flex items-center justify-center ${isLight ? 'bg-gradient-to-br from-indigo-200 to-violet-200' : 'bg-gradient-to-br from-accent to-accent-2'}`}>
                     <Eye className={`w-10 h-10 ${isLight ? 'text-indigo-600' : 'text-white'}`} />
                   </div>
-                  <p className="text-text-primary/80 text-base">{t('eye_scan.intro', { sec: SCAN_SEC })}</p>
+                  <p className="text-text-primary/80 text-base">{t('face_check.intro', { sec: SCAN_SEC })}</p>
                 </div>
                 <button
                   onClick={scan.start}
                   className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all transform hover:scale-105 shadow-lg text-base ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white'}`}
                 >
-                  {t('eye_scan.start')}
+                  {t('face_check.start')}
                 </button>
               </div>
             )}
 
             {status === 'preparing' && (
-              <p className="text-text-primary/80 text-sm text-center">{t('eye_scan.preparing')}</p>
+              <p className="text-text-primary/80 text-sm text-center">{t('face_check.preparing')}</p>
             )}
 
             {status === 'scanning' && (
               <div className="space-y-3">
-                <p className="text-text-primary/80 text-sm text-center">{t('eye_scan.hold_still')}</p>
+                <p className="text-text-primary/80 text-sm text-center">{t('face_check.hold_still')}</p>
                 <div className="bg-border/15 rounded-full h-2.5 overflow-hidden">
                   <div
                     className="bg-gradient-to-r from-accent to-accent-2 h-full rounded-full transition-all duration-200"
@@ -125,7 +125,7 @@ export default function NervousSystemScan({
                   />
                 </div>
                 <p className="text-text-muted text-sm text-center">
-                  {t('eye_scan.remaining', {
+                  {t('face_check.remaining', {
                     sec: Math.max(0, Math.ceil(SCAN_SEC * (1 - scan.progress))),
                   })}
                 </p>
@@ -140,14 +140,14 @@ export default function NervousSystemScan({
               <div className="space-y-4">
                 <div className="bg-red-500/15 rounded-xl p-4 border border-red-500/30">
                   <p className="text-red-400 text-sm">
-                    {t('eye_scan.error', { error: scan.error ?? '' })}
+                    {t('face_check.error', { error: scan.error ?? '' })}
                   </p>
                 </div>
                 <button
                   onClick={scan.start}
                   className={`w-full font-semibold py-3.5 px-6 rounded-xl transition-all text-base ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-gradient-to-r from-accent to-accent-2 hover:opacity-90 text-white'}`}
                 >
-                  {t('eye_scan.retry')}
+                  {t('face_check.retry')}
                 </button>
               </div>
             )}
@@ -183,7 +183,7 @@ function ResultView({
       {/* Карточка результата */}
       <div className="bg-gradient-to-br from-accent/20 to-accent-2/20 rounded-2xl p-5 border border-accent/30">
         <h3 className="text-xl font-bold text-text-primary text-center mb-3">
-          {t('eye_scan.result_title')}
+          {t('face_check.result_title')}
         </h3>
         <div className="space-y-3 bg-border/10 backdrop-blur-sm rounded-xl p-4">
           {METRICS.map((m) => (
@@ -191,14 +191,14 @@ function ResultView({
           ))}
         </div>
         <p className="text-text-muted text-xs text-center mt-3">
-          {t('eye_scan.quality', { value: result.scores.quality })}
+          {t('face_check.quality', { value: result.scores.quality })}
         </p>
       </div>
 
       {/* Рекомендованные практики */}
       <div className="space-y-2">
         <h5 className="text-text-secondary text-sm font-semibold text-center">
-          {t('eye_scan.recommend')}
+          {t('face_check.recommend')}
         </h5>
         <div className="grid grid-cols-3 gap-2">
           {practices.map((p) => (
@@ -214,7 +214,7 @@ function ResultView({
       </div>
 
       <p className="text-text-muted text-xs text-center leading-relaxed">
-        {t('eye_scan.disclaimer')}
+        {t('face_check.disclaimer')}
       </p>
 
       <button
@@ -222,7 +222,7 @@ function ResultView({
         className="w-full bg-surface-2 hover:opacity-90 text-text-primary font-semibold py-3.5 px-6 rounded-xl transition-all flex items-center justify-center gap-2 text-base"
       >
         <RefreshCw className="w-5 h-5" />
-        {t('eye_scan.again')}
+        {t('face_check.again')}
       </button>
     </div>
   );

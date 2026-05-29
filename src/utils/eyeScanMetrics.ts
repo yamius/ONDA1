@@ -138,19 +138,19 @@ export function recommendState(scores: NervousSystemScores): RecommendedState {
 // Наборы практик по состояниям — id совпадают с каталогом AdaptivePracticeModal.
 const PRACTICE_SETS: Record<RecommendedState, { id: string; labelKey: string }[]> = {
   calmness: [
-    { id: 'earth_breath', labelKey: 'emotional_check.earth_breath' },
-    { id: 'wave_pulse', labelKey: 'emotional_check.wave_pulse' },
-    { id: 'still_form', labelKey: 'emotional_check.still_form' },
+    { id: 'earth_breath', labelKey: 'voice_check.earth_breath' },
+    { id: 'wave_pulse', labelKey: 'voice_check.wave_pulse' },
+    { id: 'still_form', labelKey: 'voice_check.still_form' },
   ],
   anxiety: [
-    { id: 'roots_breath', labelKey: 'emotional_check.roots_breath' },
-    { id: 'earth_pulse', labelKey: 'emotional_check.earth_pulse' },
-    { id: 'body_cocoon', labelKey: 'emotional_check.body_cocoon' },
+    { id: 'roots_breath', labelKey: 'voice_check.roots_breath' },
+    { id: 'earth_pulse', labelKey: 'voice_check.earth_pulse' },
+    { id: 'body_cocoon', labelKey: 'voice_check.body_cocoon' },
   ],
   fatigue: [
-    { id: 'slow_glow', labelKey: 'emotional_check.slow_glow' },
-    { id: 'rest_breath', labelKey: 'emotional_check.rest_breath' },
-    { id: 'warm_sphere', labelKey: 'emotional_check.warm_sphere' },
+    { id: 'slow_glow', labelKey: 'voice_check.slow_glow' },
+    { id: 'rest_breath', labelKey: 'voice_check.rest_breath' },
+    { id: 'warm_sphere', labelKey: 'voice_check.warm_sphere' },
   ],
 };
 

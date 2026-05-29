@@ -9,7 +9,7 @@ import { ConnectionModal } from './components/ConnectionModal';
 import LanguageModal from './components/LanguageModal';
 import { OndShopModal } from './components/OndShopModal';
 import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
-import { EmotionalCheckModal } from './components/EmotionalCheckModal';
+import { VoiceCheckModal } from './components/VoiceCheckModal';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
 import { PermissionWarningBanner } from './components/PermissionWarningBanner';
@@ -82,7 +82,7 @@ import * as Sentry from '@sentry/capacitor';
 // boot splash visible for ~6 seconds even after main-scene code-splitting.
 const WelcomeScene = lazy(() => import('./components/WelcomeScene'));
 // Экран eye-scan лениво — чтобы MediaPipe не попал в холодный старт.
-const NervousSystemScan = lazy(() => import('./components/NervousSystemScan'));
+const FaceCheckScreen = lazy(() => import('./components/FaceCheckScreen'));
 import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './constants/practiceAssets';
 
 // Free-tier sampler. The first three basic practices of Part 1 are open to
@@ -366,17 +366,17 @@ const OndaLevel1 = () => {
   const [showStatsModal, setShowStatsModal] = useState(false);
   const [expandedPractice, setExpandedPractice] = useState(null);
   const [unlockedAchievements, setUnlockedAchievements] = useState([]);
-  const [showEmotionalCheck, setShowEmotionalCheck] = useState(false);
-  const [showNervousScan, setShowNervousScan] = useState(false);
+  const [showVoiceCheck, setShowVoiceCheck] = useState(false);
+  const [showFaceCheck, setShowFaceCheck] = useState(false);
   const [emotionalState, setEmotionalState] = useState(null);
-  // Whether the user has ever opened the Emotional Check — drives the
+  // Whether the user has ever opened the Voice Check — drives the
   // one-time FREE badge on its button. Persisted so it stays hidden
   // across sessions once used.
-  const [emotionalCheckUsed, setEmotionalCheckUsed] = useState<boolean>(
+  const [voiceCheckUsed, setVoiceCheckUsed] = useState<boolean>(
     () => typeof localStorage !== 'undefined' && localStorage.getItem('onda_emotional_check_used') === 'true',
   );
   // One-time FREE badge on the «Взгляд на себя» (eye-scan) button.
-  const [nervousScanUsed, setNervousScanUsed] = useState<boolean>(
+  const [faceCheckUsed, setFaceCheckUsed] = useState<boolean>(
     () => typeof localStorage !== 'undefined' && localStorage.getItem('onda_nervous_scan_used') === 'true',
   );
   // Free practices the user has already tapped Start on — drives the
@@ -3281,8 +3281,8 @@ const OndaLevel1 = () => {
     checkAchievements();
   }, [practiceHistory, completedPractices, artifacts]);
 
-  const startEmotionalCheck = async () => {
-    setShowEmotionalCheck(true);
+  const startVoiceCheck = async () => {
+    setShowVoiceCheck(true);
     setEmotionalState(null);
   };
 
@@ -5359,7 +5359,7 @@ const OndaLevel1 = () => {
           they scroll away with the page; the burger stays anchored. */}
       {!showJournalModal && !showStatsModal && !showRatingModal && !showAuthModal &&
        !showProfileModal && !showSettingsModal && !showConnectionModal && !showLanguageModal &&
-       !showQntShop && !showEmotionalCheck && !showNervousScan && !showInfoModal && (
+       !showQntShop && !showVoiceCheck && !showFaceCheck && !showInfoModal && (
         <button
           onClick={(e) => { e.stopPropagation(); setShowMenu(!showMenu); }}
           className={`menu-container fixed left-1/2 -translate-x-1/2 z-[100] w-14 h-14 sm:w-16 sm:h-16 rounded-full backdrop-blur-md flex items-center justify-center transition-all ${isLight ? 'text-slate-700' : 'text-white'} ${emoTint}`}
@@ -5674,17 +5674,17 @@ const OndaLevel1 = () => {
           <div className="flex flex-col items-center gap-2">
             <button
               onClick={() => {
-                setShowEmotionalCheck(true);
-                if (!emotionalCheckUsed) {
-                  setEmotionalCheckUsed(true);
+                setShowVoiceCheck(true);
+                if (!voiceCheckUsed) {
+                  setVoiceCheckUsed(true);
                   localStorage.setItem('onda_emotional_check_used', 'true');
                 }
               }}
               className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
               data-testid="quick-mood-voice-check"
             >
-              {t('nav.emotional_check')}
-              {!emotionalCheckUsed && (
+              {t('nav.voice_check')}
+              {!voiceCheckUsed && (
                 <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
                   {t('labels.free')}
                 </span>
@@ -5692,17 +5692,17 @@ const OndaLevel1 = () => {
             </button>
             <button
               onClick={() => {
-                setShowNervousScan(true);
-                if (!nervousScanUsed) {
-                  setNervousScanUsed(true);
+                setShowFaceCheck(true);
+                if (!faceCheckUsed) {
+                  setFaceCheckUsed(true);
                   localStorage.setItem('onda_nervous_scan_used', 'true');
                 }
               }}
               className={`relative backdrop-blur-sm text-xl sm:text-2xl font-light px-4 sm:px-6 py-3 sm:py-4 rounded-full transition-all w-full ${emoTint}`}
               data-testid="quick-mood-face-check"
             >
-              {t('eye_scan.nav_button')}
-              {!nervousScanUsed && (
+              {t('face_check.nav_button')}
+              {!faceCheckUsed && (
                 <span className="absolute -top-2 right-8 px-2 py-0.5 rounded-full bg-emerald-500/90 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow">
                   {t('labels.free')}
                 </span>
@@ -5964,9 +5964,9 @@ const OndaLevel1 = () => {
 
         {/* Quick Mood Scan buttons moved up into Section 3 of the home
             redesign (1.7.4). The two existing actions
-            (`setShowEmotionalCheck` → Voice Check, `setShowNervousScan` →
-            Face Check) are unchanged — only the page slot and the EN
-            labels changed. */}
+            (`setShowVoiceCheck` → Voice Check, `setShowFaceCheck` → Face
+            Check) are unchanged — only the page slot and the EN labels
+            changed. */}
 
         {/* Центральный блок с описанием контура relocated to Your
             Journey section below the practices grid. */}
@@ -7792,16 +7792,16 @@ const OndaLevel1 = () => {
         currentOnd={qnt}
       />
 
-      <EmotionalCheckModal
-        isOpen={showEmotionalCheck}
-        onClose={() => setShowEmotionalCheck(false)}
+      <VoiceCheckModal
+        isOpen={showVoiceCheck}
+        onClose={() => setShowVoiceCheck(false)}
         onOndEarned={(amount) => setQnt(prev => prev + amount)}
       />
 
-      {showNervousScan && (
+      {showFaceCheck && (
         <Suspense fallback={null}>
-          <NervousSystemScan
-            onClose={() => setShowNervousScan(false)}
+          <FaceCheckScreen
+            onClose={() => setShowFaceCheck(false)}
             onOndEarned={(amount) => setQnt(prev => prev + amount)}
           />
         </Suspense>

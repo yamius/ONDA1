@@ -190,11 +190,18 @@ export function trackTenjinPractice(
 }
 
 /**
- * Emotional check-in events.
+ * Voice Check events (formerly "Emotional Check" in UI — renamed 2026-05-29).
+ *
+ * IMPORTANT: the analytics event names below intentionally keep their old
+ * `emotional_check` / `Emotional Check` strings. Renaming them would
+ * break continuity in the Tenjin and Firebase dashboards (existing
+ * funnels, conversion tracking, alerts). Only the function name and
+ * user-facing terminology change.
+ *
  *   - Start  → start_emotional_check
  *   - Finish → finish_emotional_check
  */
-export function trackTenjinEmotionalCheck(
+export function trackTenjinVoiceCheck(
   action: 'Start' | 'Finish',
   emotionName?: string | null,
 ): void {
@@ -204,7 +211,7 @@ export function trackTenjinEmotionalCheck(
     _tenjinEvent(_toSnake(eventAction));
     _logFirebase(eventAction, { category: 'emotional_check', label });
   } catch (e) {
-    console.warn('[Tenjin] Failed to track emotional check event:', action, e);
+    console.warn('[Tenjin] Failed to track voice check event:', action, e);
   }
 }
 

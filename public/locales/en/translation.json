@@ -1,5 +1,5 @@
 {
-  "eye_scan": {
+  "face_check": {
     "nav_button": "Face Check",
     "title": "A look at yourself",
     "subtitle": "Analysis of emotional state by gaze and facial expression",
@@ -82,7 +82,7 @@
     "intro": "Intro",
     "home_description": "ONDA Life is a practice of self-awareness and body awareness.\n\nConnect your fitness tracker or smartwatch in settings and watch your vitals change in real time during your practice.\n\nThe more successful you are—measured by time in practice and improvements in your state—the more OND you earn. Connecting a tracker or smartwatch will boost your earnings for completing practices.\n\nOnce you complete all practices in a part with over 40% success, you'll unlock the next level.\n\nAt the start of each part, you'll find general guidance before the Main Practices. At the end, there's a more detailed attunement to help you assess your current state.\n\nIn the Emotional Check window, you can discover your current emotional state and can complete an Adaptive practice.\n\nRemember: the ONDA level system is a journey of realizations—experiencing yourself as an amoeba, fish, animal, primate, human, brain cell, DNA, and finally, an atom. Give each stage the attention it deserves, and your path will be effortless and fulfilling.\n\nGood luck on your journey!",
     "diary": "Journal",
-    "emotional_check": "Voice Check",
+    "voice_check": "Voice Check",
     "stats": "Stats",
     "rating": "Leaderboard",
     "login": "Sign In",
@@ -1231,7 +1231,7 @@
     "info_4": "Earn OND through daily practices or purchase for instant access",
     "secure_payment": "Secure payment processing via Stripe"
   },
-  "emotional_check": {
+  "voice_check": {
     "title": "Emotional Check-In",
     "subtitle": "Voice-Based Emotional State Analysis",
     "instruction": "Record your voice for 10-30 seconds",
