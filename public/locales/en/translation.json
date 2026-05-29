@@ -1,8 +1,8 @@
 {
   "face_check": {
     "nav_button": "Face Check",
-    "title": "A look at yourself",
-    "subtitle": "Analysis of emotional state by gaze and facial expression",
+    "title": "Face Check",
+    "subtitle": "On-device facial state estimation",
     "intro": "Look into the camera and stay calm for about {{sec}} seconds. It reads your blinking, gaze and micro-movements. Frames are never saved.",
     "start": "Start scan",
     "preparing": "Preparing the camera…",
@@ -1232,8 +1232,8 @@
     "secure_payment": "Secure payment processing via Stripe"
   },
   "voice_check": {
-    "title": "Emotional Check-In",
-    "subtitle": "Voice-Based Emotional State Analysis",
+    "title": "Voice Check",
+    "subtitle": "Voice-based state estimation",
     "instruction": "Record your voice for 10-30 seconds",
     "instruction_detail": "Speak naturally about how you feel right now",
     "start_recording": "Start Recording",

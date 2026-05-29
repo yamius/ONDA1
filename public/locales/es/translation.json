@@ -1,8 +1,8 @@
 {
   "face_check": {
     "nav_button": "Face Check",
-    "title": "Una mirada a ti mismo",
-    "subtitle": "Análisis del estado emocional por la mirada y la expresión facial",
+    "title": "Face Check",
+    "subtitle": "Análisis facial procesado en el dispositivo",
     "intro": "Mira a la cámara y mantén la calma durante unos {{sec}} segundos. Analiza tu parpadeo, mirada y micromovimientos. Los fotogramas no se guardan.",
     "start": "Iniciar escaneo",
     "preparing": "Preparando la cámara…",
@@ -1073,8 +1073,8 @@
   },
   "voice_check": {
     "start_dialog_terra": "Iniciar diálogo con Liza",
-    "title": "Chequeo emocional",
-    "subtitle": "Análisis del estado emocional por la voz",
+    "title": "Voice Check",
+    "subtitle": "Análisis del estado por la voz",
     "instruction": "Graba tu voz durante 10–30 segundos",
     "instruction_detail": "Habla con naturalidad sobre cómo te sientes ahora mismo",
     "start_recording": "Iniciar grabación",

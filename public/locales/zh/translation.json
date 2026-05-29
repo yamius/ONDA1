@@ -1,8 +1,8 @@
 {
   "face_check": {
     "nav_button": "Face Check",
-    "title": "看看自己",
-    "subtitle": "通过视线和面部表情分析情绪状态",
+    "title": "Face Check",
+    "subtitle": "面部状态分析（设备本地处理）",
     "intro": "请注视摄像头并保持平静约 {{sec}} 秒。系统会分析你的眨眼、视线和细微动作。画面不会被保存。",
     "start": "开始扫描",
     "preparing": "正在准备摄像头…",
@@ -1072,8 +1072,8 @@
   },
   "voice_check": {
     "start_dialog_terra": "与Liza开始对话",
-    "title": "情绪校准",
-    "subtitle": "通过声音分析情绪状态",
+    "title": "Voice Check",
+    "subtitle": "基于声音的状态分析",
     "instruction": "录下你的声音 10–30 秒",
     "instruction_detail": "自然地说说你现在的感受",
     "start_recording": "开始录音",
