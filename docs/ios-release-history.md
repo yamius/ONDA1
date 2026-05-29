@@ -8,9 +8,10 @@
 
 ## Текущий статус
 
-- **На ревью в App Store:** `1.7.4 (202605272243)` — **REJECTED 2026-05-29** по Guideline 2.1 (Information Needed про face data). См. секцию ниже.
-- **Готова к сабмиту:** `1.7.5` (на 2026-05-28, после approval'а 1.7.4 если он случится, или как замена)
-- **Активная ветка разработки:** `main` (после merge'а `claude/v1.7.4` home-redesign и Parts 2/3 контента)
+- **LIVE в App Store:** `1.7.5` — ✅ **APPROVED 2026-05-29**, прошла ревью за **< 3 часов** (fast-track), в тот же день в сторе. Заменила отклонённый 1.7.4; face-data вопросы не повторились.
+- **Предыдущий сабмит:** `1.7.4 (202605272243)` — **REJECTED 2026-05-29** по Guideline 2.1 (Information Needed про face data), билд удалён. См. секцию ниже.
+- **Готовится к сабмиту (на main, версия НЕ бампнута):** SKAdNetwork attribution config (62 SKAN ID, ASA + Reddit), удалён orphan ATT key, TenjinSDK pinned `~> 1.17`. Войдёт в следующий билд (1.7.6).
+- **Активная ветка разработки:** `main`
 
 ---
 
@@ -62,7 +63,7 @@
 | **1.7.2** | 2026-05-20 | chore | Version bump (минорные правки) |
 | **1.7.3** | 2026-05-23 | **feat** | **ATT prompt убран целиком**, онбординг скрыт, push primer отложен до 2 практик |
 | **1.7.4** | 2026-05-25 | **REJECTED** | **Build `1.7.4 (202605272243)`** — Apple отклонила 2026-05-29 за face-data privacy questions (см. ниже) |
-| **1.7.5** | 2026-05-28 | готова | Post-rejection bump; SKStoreReviewController prompt на 2-й практике, home redesign |
+| **1.7.5** | 2026-05-28 | ✅ **APPROVED / LIVE** | Прошла ревью 2026-05-29 за <3ч. SKStoreReviewController на 2-й практике, home redesign, Hume Stream fix, Voice/Face Check rebrand, light-theme fixes |
 
 ---
 
@@ -276,7 +277,7 @@ ONDA Life Team
 - Component rename `EmotionalCheckModal` → `VoiceCheckModal`, `NervousSystemScan` → `FaceCheckScreen`. Pure internal refactor.
 - Light-theme fixes: Level/Chapter dropdown text readability + locked "next part" CTA pill style.
 
-**Outcome:** _pending review_
+**Outcome:** ✅ **APPROVED** 2026-05-29 — passed review in **under 3 hours** (fast-track). Live on the App Store same day. Validated the post-rejection strategy: fresh submission (not Resolution Center reply) + neutral copy that doesn't name Voice/Face Check + privacy-policy paragraph as a soft "concern addressed" signal → clean approval, no follow-up questions. The face-data scrutiny from 1.7.4 did not recur.
 
 ---
 
