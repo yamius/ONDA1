@@ -428,6 +428,19 @@ function applyLevelLocalizedMeta(html: string, levelNum: number, lang: Lang): st
 
 console.log(`[prerender] start — ${routes.length} routes, renderToString + JSDOM`)
 
+// Construct the JSDOM window ONCE, reuse it across every route. Before
+// this hoist we created `new JSDOM(template)` inside the loop — 842
+// fresh DOM trees + 842 parses of the ~7KB index template = significant
+// GC pressure and the main contributor to the Replit OOM crash.
+//
+// All per-route HTML mutation happens through #root.innerHTML and
+// dom.serialize(); the surrounding meta tags / hreflang / OG image
+// rewrites all run against the *serialized string*, not the DOM, so
+// reusing the same window is safe and idempotent.
+const dom = new JSDOM(template)
+const sharedDoc = dom.window.document
+const sharedRoot = sharedDoc.getElementById('root')
+
 let done = 0
 let failed = 0
 const HEARTBEAT_EVERY = 100
@@ -465,10 +478,8 @@ for (const route of routes) {
     const basePath = isLocalized ? stripLangPrefix(route) : route
 
     const html = renderToString(createApp(route, lang))
-    const dom = new JSDOM(template)
-    const doc = dom.window.document
-    const root = doc.getElementById('root')
-    if (root) root.innerHTML = html
+    // Reuse the shared JSDOM window — see the hoisted construction above.
+    if (sharedRoot) sharedRoot.innerHTML = html
 
     let out = dom.serialize()
     // GTM only on EN main page (/index.html); strip from prerendered subpages.
@@ -737,19 +748,6 @@ for (const route of routes) {
     const outPath = join(outDir, 'index.html')
     writeFileSync(outPath, out)
 
-    // Memory hygiene: explicitly tear down the JSDOM window so its
-    // internal DOM tree, event-loop hooks and document references can
-    // be GC'd. Without this, JSDOM windows accumulate across the 800+
-    // routes and push Node heap past its 2GB default. Combined with a
-    // periodic global.gc() call below, this keeps peak heap well under
-    // the --max-old-space-size=4096 budget the build script sets.
-    try {
-      dom.window.close()
-    } catch {
-      // JSDOM occasionally throws on close when the document was
-      // partially mutated; the window is still eligible for GC.
-    }
-
     done++
     if (done % HEARTBEAT_EVERY === 0) {
       console.log(`[prerender] ... ${done}/${routes.length}`)
@@ -762,6 +760,17 @@ for (const route of routes) {
     failed++
     console.error('[prerender] FAIL', route, '—', (err as Error).message)
   }
+}
+
+// Tear down the shared JSDOM window once the loop is done. Only one
+// close() call total now — instead of 842 per-route window.close() of
+// the previous implementation, which itself created the windows we had
+// to close.
+try {
+  dom.window.close()
+} catch {
+  // JSDOM occasionally throws on close when the document was
+  // partially mutated; process exit will reclaim the memory anyway.
 }
 
 console.log(`[prerender] done — ${done} rendered, ${failed} failed (of ${routes.length})`)
