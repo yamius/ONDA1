@@ -187,3 +187,130 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 2. Если был rejection — добавить полную секцию в **REJECTED submissions** с submission ID и причинами.
 3. Если был APPROVED — пометить в основной таблице.
 4. Если переход тематический (новая эпоха фич) — добавить секцию в **Тематические эпохи**.
+5. Добавить запись в **Release notes archive** ниже (What's New + sanitised Reviewer Notes + Outcome).
+
+**Правила архива:**
+- Demo account credentials → НИКОГДА в репо. Заменять на `[redacted — see App Store Connect]`.
+- Бэкфилить только 1.7.x и новее. Старые версии остаются строкой в основной таблице.
+- После ревью обязательно дописать **Outcome:** одной строкой — это даёт pattern-match на будущие rejection'ы.
+- Длинные notes сворачивать в `<details>` для читаемости.
+
+---
+
+## Release notes archive
+
+Архив текстов, отправленных в App Store Connect: What's New (публичный, store listing) + Reviewer Notes (для App Review). Demo credentials удалены.
+
+### 1.7.5 — submitted 2026-05-29
+
+**What's New (EN):**
+> • Live heart-rate, stress, and energy trend chart on the home screen
+> • Smoother subscription experience
+> • Small polish across the app
+
+**What's New (RU):**
+> • График пульса, стресса и энергии в реальном времени на главном экране
+> • Плавнее работа с подпиской
+> • Мелкие улучшения интерфейса
+
+<details>
+<summary>Reviewer Notes</summary>
+
+```
+Hello App Review Team,
+
+Version 1.7.5 contains the following changes since the last
+approved build (1.7.3):
+
+1. Home screen: a new compact line chart visualises the current
+   heart-rate, stress, and energy trends already shown as numeric
+   tiles above. The chart reads existing biometric data — no new
+   permissions and no new data collection.
+
+2. Home screen layout refined: biometric overview tiles, clearer
+   practice descriptions, and updated welcome screens for individual
+   practices with educational context. No new features, no new
+   permissions, no new data flows.
+
+3. Subscription analytics: internal correction so that paid
+   conversions and free-trial starts are reported as separate
+   events. No change to user-facing pricing, paywall content,
+   or subscription terms.
+
+4. Subscription screen: the default highlighted plan is now the
+   monthly plan instead of the yearly plan. All plans, prices,
+   and trial terms remain unchanged.
+
+5. App rating: a standard SKStoreReviewController prompt is now
+   shown after a user completes their second guided practice,
+   subject to Apple's system-level frequency rules.
+
+6. Minor UI polish on the home screen and subscription screen.
+
+No changes to data collection, third-party SDKs, sign-in flows,
+permissions, or in-app purchases beyond the above.
+
+Demo account:
+  Email:    [redacted — see App Store Connect]
+  Password: [redacted — see App Store Connect]
+
+Thank you,
+The ONDA Life team
+```
+
+</details>
+
+**Outcome:** _pending review_
+
+---
+
+### 1.7.4 — submitted 2026-05-27, build `202605272243`
+
+Содержательно покрывает: split Firebase events (trial_started ≠ subscription_paid), paywall default monthly, MetricsWaveform graph на хабе.
+
+<details>
+<summary>Reviewer Notes (что отправляли)</summary>
+
+Полного архива текста не сохранилось. Известно, что notes описывали MetricsWaveform и split событий, без явного упоминания Face/Voice Check.
+
+</details>
+
+**Outcome:** ❌ **REJECTED** 2026-05-29 — Guideline 2.1 (Information Needed), вопросы про face data privacy. Submission ID `52d43b89-8877-45c3-ac85-e04c5a60901b`. Билд удалён до отправки нового ответа; функциональность перенесена в 1.7.5 с обновлённой privacy policy. Подробности — секция **REJECTED submissions** выше.
+
+---
+
+### 1.7.3 — submitted 2026-05-23
+
+Содержательно: убран ATT prompt (полностью, не «отложен»), скрыт авто-показ первых трёх экранов онбординга, push notification primer отложен до 2-й успешной практики.
+
+<details>
+<summary>Reviewer Notes (что отправляли)</summary>
+
+Notes объясняли: удаление ATT (мы остаёмся в SKAN-only режиме через Tenjin), причина скрытия онбординга (UX optimization для cold-start), и что push primer теперь триггерится после value moment, а не сразу.
+
+</details>
+
+**Outcome:** ✅ **APPROVED**. С этой сборки Face Check + Voice Check уже присутствовали (added в 1.7.1) и Apple их одобрил без вопросов.
+
+---
+
+### 1.7.2 — submitted 2026-05-20
+
+Содержательно: bugfix-релиз после 1.7.1 (детали по коммитам в основной таблице).
+
+**Outcome:** ✅ **APPROVED**. Face Check + Voice Check без вопросов.
+
+---
+
+### 1.7.1 — submitted 2026-05-17
+
+Содержательно: первая сборка с **NervousSystemScan** (Face Check on-device MediaPipe) и Voice Check (Hume AI prosody).
+
+<details>
+<summary>Reviewer Notes (что отправляли)</summary>
+
+Notes описывали новый экран «Nervous System Scan» как биофидбэк-инструмент. Apple одобрил без вопросов про face data — что делает rejection 1.7.4 reviewer-зависимым, а не policy-обусловленным.
+
+</details>
+
+**Outcome:** ✅ **APPROVED**. Это baseline для всех будущих ссылок «эта фича уже была одобрена».
