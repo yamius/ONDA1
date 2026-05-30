@@ -544,6 +544,13 @@ function buildTechArticleJsonLd(
       creditText: 'ONDA Life',
       creator: { '@id': AUTHOR_ID },
       copyrightNotice: '© ONDA Life',
+      // Image-license metadata closes the GSC "Image metadata structured
+      // data" warning for missing `license` and `acquireLicensePage`
+      // (reported 2026-05-29). Creative Commons BY-NC-SA 4.0 is the
+      // public reuse license for editorial imagery; /contact is the
+      // existing page where commercial-use requests are handled.
+      license: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+      acquireLicensePage: `${SITE_URL}/contact`,
     }
   }
   if (opts?.keywords?.length) article.keywords = opts.keywords.join(', ')
@@ -577,6 +584,8 @@ function buildOrganizationJsonLd(): string {
       url: `${SITE_URL}/onda-logo-source.png`,
       width: 1024,
       height: 1024,
+      license: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
+      acquireLicensePage: `${SITE_URL}/contact`,
     },
     sameAs: AUTHOR_SAME_AS,
     founder: {
@@ -613,7 +622,7 @@ function buildDatasetJsonLd(): string {
       'glossary',
     ],
     inLanguage: 'en',
-    license: `${SITE_URL}/license`,
+    license: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
     creator: { '@id': AUTHOR_ID },
     publisher: { '@id': `${SITE_URL}/#organization` },
     isAccessibleForFree: true,
