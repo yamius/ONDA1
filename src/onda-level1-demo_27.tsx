@@ -5717,6 +5717,33 @@ const OndaLevel1 = () => {
         </div>
         )}
 
+        {/* Section 4 — Your Progress (lifetime: 7-day HRV + streak + total).
+            Placed ABOVE Quick Mood Scan: the real recovery metric (HRV trend)
+            is the stronger above-the-fold signal for the biohacker audience,
+            so it leads; the Voice/Face Check actions follow. */}
+        <div className="mb-8">
+          <div className={`rounded-2xl p-4 border ${isLight ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}` : 'bg-black/20 backdrop-blur-sm border-white/10'}`}>
+            <div className="text-sm font-medium mb-3" style={{ opacity: 0.75 }}>
+              {t('home.progress.title')}
+            </div>
+            <HRVMiniChart
+              samples={hrv7Day.samples}
+              hasEnoughData={hrv7Day.hasEnoughData}
+            />
+            <div className="mt-3 text-sm" style={{ opacity: 0.85 }}>
+              {practicesProgress.total === 0
+                ? t('home.progress.streak_empty')
+                : (
+                  <span>
+                    🔥 {t('home.progress.streak_label', { count: practicesProgress.streak })}
+                    {' · '}
+                    {t('home.progress.total_label', { count: practicesProgress.total })}
+                  </span>
+                )}
+            </div>
+          </div>
+        </div>
+
         {/* Section 3 — Quick Mood Scan (Voice Check + Face Check) */}
         <div className="mb-8 w-full max-w-lg mx-auto px-4">
           <div className="text-sm font-medium mb-3 text-center" style={{ opacity: 0.75 }}>
@@ -5759,30 +5786,6 @@ const OndaLevel1 = () => {
                 </span>
               )}
             </button>
-          </div>
-        </div>
-
-        {/* Section 4 — Your Progress (lifetime: 7-day HRV + streak + total) */}
-        <div className="mb-8">
-          <div className={`rounded-2xl p-4 border ${isLight ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}` : 'bg-black/20 backdrop-blur-sm border-white/10'}`}>
-            <div className="text-sm font-medium mb-3" style={{ opacity: 0.75 }}>
-              {t('home.progress.title')}
-            </div>
-            <HRVMiniChart
-              samples={hrv7Day.samples}
-              hasEnoughData={hrv7Day.hasEnoughData}
-            />
-            <div className="mt-3 text-sm" style={{ opacity: 0.85 }}>
-              {practicesProgress.total === 0
-                ? t('home.progress.streak_empty')
-                : (
-                  <span>
-                    🔥 {t('home.progress.streak_label', { count: practicesProgress.streak })}
-                    {' · '}
-                    {t('home.progress.total_label', { count: practicesProgress.total })}
-                  </span>
-                )}
-            </div>
           </div>
         </div>
 
