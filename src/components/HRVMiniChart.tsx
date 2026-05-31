@@ -61,6 +61,14 @@ export function HRVMiniChart({
   const values = samples.map(s => s.value);
   const min = Math.min(...values);
   const max = Math.max(...values);
+  // Persistent numeric readout — biohackers want the real number, not a
+  // decorative line they have to read off a tooltip. Latest reading shown
+  // large; 7-day average as quiet context. Deliberately NO growth indicator
+  // ("↑ +9ms" / green arrow): that is a health claim and, on any short
+  // window, an over-promise. The line itself carries the trend; the numbers
+  // just state the fact.
+  const last = Math.round(values[values.length - 1]);
+  const avg = Math.round(values.reduce((a, b) => a + b, 0) / values.length);
   // If every sample is identical we'd divide by zero; pin the range so
   // the line draws flat through the middle in that case.
   const span = max - min < 1e-6 ? 1 : max - min;
@@ -81,12 +89,36 @@ export function HRVMiniChart({
     .join(' ');
 
   return (
-    <div className={className} style={{ width: '100%', height }}>
+    <div className={className} style={{ width: '100%' }}>
+      {/* Numeric readout: label + 7-day avg (quiet, right) */}
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'baseline',
+          justifyContent: 'space-between',
+          marginBottom: 2,
+        }}
+      >
+        <span style={{ fontSize: 12, opacity: 0.6, textTransform: 'uppercase', letterSpacing: 0.5 }}>
+          {t('home.progress.hrv_label')}
+        </span>
+        <span style={{ fontSize: 12, opacity: 0.55 }}>
+          {t('home.progress.hrv_avg', { value: avg })}
+        </span>
+      </div>
+      {/* Latest reading, large */}
+      <div style={{ display: 'flex', alignItems: 'baseline', gap: 4, marginBottom: 4 }}>
+        <span style={{ fontSize: 28, fontWeight: 700, lineHeight: 1, fontVariantNumeric: 'tabular-nums' }}>
+          {last}
+        </span>
+        <span style={{ fontSize: 14, fontWeight: 500, opacity: 0.65 }}>ms</span>
+      </div>
       <svg
         viewBox={`0 0 ${VB_W} ${VB_H}`}
         preserveAspectRatio="none"
         width="100%"
-        height="100%"
+        height={height}
+        style={{ display: 'block' }}
         role="img"
         aria-label={`HRV trend, last ${n} days`}
       >

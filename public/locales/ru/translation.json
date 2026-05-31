@@ -1029,6 +1029,8 @@
       "total_label_few": "Всего {{count}} практики",
       "total_label_many": "Всего {{count}} практик",
       "total_label_other": "Всего {{count}} практик",
+      "hrv_label": "Resting HRV",
+      "hrv_avg": "avg {{value}} ms",
       "chart_empty": "Нужно несколько дней данных, чтобы построить тренд"
     },
     "todays_practice": {

@@ -983,6 +983,8 @@
       "streak_label_other": "连续 {{count}} 天",
       "total_label_one": "累计 {{count}} 次练习",
       "total_label_other": "累计 {{count}} 次练习",
+      "hrv_label": "Resting HRV",
+      "hrv_avg": "avg {{value}} ms",
       "chart_empty": "还需几天数据才能绘制你的趋势"
     },
     "todays_practice": {

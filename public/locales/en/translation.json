@@ -1025,6 +1025,8 @@
       "streak_label_other": "{{count}} day streak",
       "total_label_one": "{{count}} practice total",
       "total_label_other": "{{count}} practices total",
+      "hrv_label": "Resting HRV",
+      "hrv_avg": "avg {{value}} ms",
       "chart_empty": "Need a few more days of data to draw your trend"
     },
     "todays_practice": {

@@ -984,6 +984,8 @@
       "streak_label_other": "Racha de {{count}} días",
       "total_label_one": "{{count}} práctica en total",
       "total_label_other": "{{count}} prácticas en total",
+      "hrv_label": "Resting HRV",
+      "hrv_avg": "avg {{value}} ms",
       "chart_empty": "Necesitamos unos días más de datos para dibujar tu tendencia"
     },
     "todays_practice": {
