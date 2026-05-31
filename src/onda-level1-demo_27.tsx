@@ -5722,7 +5722,10 @@ const OndaLevel1 = () => {
             is the stronger above-the-fold signal for the biohacker audience,
             so it leads; the Voice/Face Check actions follow. */}
         <div className="mb-8">
-          <div className={`rounded-2xl p-4 border ${isLight ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}` : 'bg-black/20 backdrop-blur-sm border-white/10'}`}>
+          {/* Light highlight — a soft indigo ring + gentle halo lifts the
+              Your Progress (HRV) card above the surrounding blocks without
+              shouting. */}
+          <div className={`rounded-2xl p-4 border ring-1 ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`}>
             <div className="text-sm font-medium mb-3" style={{ opacity: 0.75 }}>
               {t('home.progress.title')}
             </div>
