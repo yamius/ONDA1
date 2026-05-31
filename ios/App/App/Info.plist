@@ -168,7 +168,7 @@
         <key>NSCameraUsageDescription</key>
         <string>ONDA uses the camera for an optional eye scan that reads gaze and blink patterns to personalize practices. Frames are processed on-device and not stored.</string>
         <key>NSHealthShareUsageDescription</key>
-        <string>ONDA uses your heart rate data to provide personalized meditation and breathing exercises that adapt to your stress levels and wellness state.</string>
+        <string>ONDA uses your heart rate and heart rate variability to provide personalized meditation and breathing exercises that adapt to your state, and to show your resting HRV trend over time.</string>
         <key>NSHealthUpdateUsageDescription</key>
         <string>ONDA tracks your mindfulness sessions and workout data in Apple Health to help you monitor your wellness progress.</string>
         <key>UIBackgroundModes</key>

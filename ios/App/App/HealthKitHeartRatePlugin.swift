@@ -37,8 +37,14 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
             return
         }
         
-        let typesToRead: Set<HKObjectType> = [heartRateType]
-        
+        var typesToRead: Set<HKObjectType> = [heartRateType]
+        // HRV (SDNN) powers the resting-HRV trend on the home screen. Reading
+        // it requires read authorization — otherwise HealthKit returns zero
+        // samples (read status is hidden for privacy) and the trend never fills.
+        if let hrv = HKQuantityType.quantityType(forIdentifier: .heartRateVariabilitySDNN) {
+            typesToRead.insert(hrv)
+        }
+
         healthStore.requestAuthorization(toShare: nil, read: typesToRead) { success, error in
             DispatchQueue.main.async {
                 if let error = error {
@@ -226,7 +232,11 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         if let heartRate = HKQuantityType.quantityType(forIdentifier: .heartRate) {
             typesToRead.insert(heartRate)
         }
-        
+        // HRV (SDNN) for the resting-HRV trend on the home screen.
+        if let hrv = HKQuantityType.quantityType(forIdentifier: .heartRateVariabilitySDNN) {
+            typesToRead.insert(hrv)
+        }
+
         typesToRead.insert(HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!)
         
         healthStore.requestAuthorization(toShare: nil, read: typesToRead) { success, error in
