@@ -8,10 +8,11 @@
 
 ## Текущий статус
 
+- **Готовится к сабмиту:** `1.7.6` — собирается из ветки `claude/practice-live-coherence`. **Один билд = всё сразу:** SKAdNetwork attribution (62 SKAN ID, ASA + Reddit, ATT-ключ удалён, TenjinSDK pinned) + live Coherence на практике (HR-RSA delta-волна) + Resting HRV trend на home (реальный HealthKit SDNN + числа) + home reorder/highlight + R1-1 guiding register. Ветка отведена от main после SKAN-коммитов, поэтому несёт и их. Решение «один сабмит» принято после device-валидации live coherence на реальных часах.
 - **LIVE в App Store:** `1.7.5` — ✅ **APPROVED 2026-05-29**, прошла ревью за **< 3 часов** (fast-track), в тот же день в сторе. Заменила отклонённый 1.7.4; face-data вопросы не повторились.
 - **Предыдущий сабмит:** `1.7.4 (202605272243)` — **REJECTED 2026-05-29** по Guideline 2.1 (Information Needed про face data), билд удалён. См. секцию ниже.
-- **Готовится к сабмиту (на main, версия НЕ бампнута):** SKAdNetwork attribution config (62 SKAN ID, ASA + Reddit), удалён orphan ATT key, TenjinSDK pinned `~> 1.17`. Войдёт в следующий билд (1.7.6).
-- **Активная ветка разработки:** `main`
+- **Активные ветки:** `claude/practice-live-coherence` (= 1.7.6, ждёт device-теста + сабмита, затем FF-merge в main) · `main` (позади ветки).
+- **Отложено:** workout-session lifecycle фикс («сессия висит весь день») — вышел из ближайшего окна, свой билд позже.
 
 ---
 
@@ -64,6 +65,7 @@
 | **1.7.3** | 2026-05-23 | **feat** | **ATT prompt убран целиком**, онбординг скрыт, push primer отложен до 2 практик |
 | **1.7.4** | 2026-05-25 | **REJECTED** | **Build `1.7.4 (202605272243)`** — Apple отклонила 2026-05-29 за face-data privacy questions (см. ниже) |
 | **1.7.5** | 2026-05-28 | ✅ **APPROVED / LIVE** | Прошла ревью 2026-05-29 за <3ч. SKStoreReviewController на 2-й практике, home redesign, Hume Stream fix, Voice/Face Check rebrand, light-theme fixes |
+| **1.7.6** | 2026-05-31 | **feat / готовится** | Из ветки `practice-live-coherence`. SKAN attribution + live Coherence (HR-RSA delta-волна) + Resting HRV trend (real HealthKit SDNN + числа) + HealthKit HRV auth fix + home reorder/highlight + R1-1 register |
 
 ---
 
@@ -201,6 +203,67 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 ## Release notes archive
 
 Архив текстов, отправленных в App Store Connect: What's New (публичный, store listing) + Reviewer Notes (для App Review). Demo credentials удалены.
+
+### 1.7.6 — prepared 2026-05-31 (not yet submitted)
+
+**Что в билде:** SKAN attribution + live Coherence на практике (HR-RSA delta-волна) + Resting HRV trend на home (реальный HealthKit SDNN + числовой readout) + HealthKit HRV read-authorization fix + home reorder (Your Progress над Quick Mood Scan) + лёгкое выделение Progress + R1-1 dual-audience guiding register. Один сабмит, всё вместе (см. «Текущий статус»).
+
+**Naming-дисциплина (как в 1.7.5):** Voice/Face Check НЕ упоминаются (всё ещё чувствительны после 1.7.4). SKAN не упоминается (стандартная инфраструктура, не новый SDK/permission/data flow). HRV read-доступ — единственное новое разрешение — раскрыт upfront, чтобы не словить вопрос. «Coherence» / «Resting HRV» — честные термины (live = on-device RSA; trend = реальный Apple SDNN).
+
+**What's New (EN):**
+> • Live Coherence — watch your heart rhythm move in real time as you breathe, right on the practice screen.
+> • Resting HRV trend — your recent heart-rate variability, at a glance on the home screen.
+> • Refreshed home layout and calmer, clearer breathing guidance.
+
+**What's New (RU):**
+> • Live Coherence — следи за ритмом сердца в реальном времени во время дыхания, прямо на экране практики.
+> • Тренд HRV покоя — твоя вариабельность пульса за последние дни на главном экране.
+> • Обновлённый главный экран и более спокойные подсказки для дыхания.
+
+<details>
+<summary>Reviewer Notes</summary>
+
+```
+Dear App Review Team,
+
+Version 1.7.6 introduces the following changes:
+
+1. Practice screen — a live "Coherence" waveform shows the user's heart
+   rhythm in real time during a breathing practice. It uses the heart-rate
+   data the app already receives (Apple Watch / Bluetooth / HealthKit) and
+   is computed entirely on-device. The "Coherence" percentage is derived
+   locally from the rhythm; no new data leaves the device.
+
+2. Home screen — a "Resting HRV" trend shows the user's recent heart-rate
+   variability with the latest value and a 7-day line. It reads the HRV
+   (SDNN) that Apple Health already records. This build adds HealthKit read
+   access for heart-rate variability, and the NSHealthShareUsageDescription
+   string is updated to cover it. No third party receives this data.
+
+3. Home layout refined and the in-practice guidance text reworded.
+
+No changes to sign-in, in-app purchases, or third-party SDKs. The only
+permission change is HealthKit read access for heart-rate variability. Our
+privacy policy at https://onda-life.com/privacy remains accurate for this
+build.
+
+To test the live features, please connect an Apple Watch and start any
+breathing practice — the Coherence waveform reads live heart rate, and the
+HRV trend populates once Apple Health has logged daily HRV samples.
+
+Demo account:
+  Email:    [redacted — see App Store Connect]
+  Password: [redacted — see App Store Connect]
+
+Thank you,
+The ONDA Life team
+```
+
+</details>
+
+**Outcome:** _not yet submitted_
+
+---
 
 ### 1.7.5 — submitted 2026-05-29
 
