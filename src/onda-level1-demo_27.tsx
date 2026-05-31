@@ -4295,19 +4295,18 @@ const OndaLevel1 = () => {
                     )}
                   </div>
                 </div>
-                {/* Stress — small secondary readout, top-left corner.
-                    Uses settings.stress ("Stress", short) — not labels.stress
-                    ("Stress Level") — per the corner-readout sizing. */}
-                <div className="absolute top-2 left-3 flex items-center gap-1.5 pointer-events-none">
-                  <Activity className="w-3 h-3 text-red-300" />
+                {/* Stress — top-left corner. Word hugs the left edge, value to
+                    its right (points inward) — mirrors Energy for symmetry.
+                    No icon. settings.stress = "Stress" (short, localized). */}
+                <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5 pointer-events-none">
                   <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('settings.stress')}</span>
                   <span className="text-xs sm:text-sm font-semibold tabular-nums">{safeToFixed(vitalsData.stress, 0)}%</span>
                 </div>
-                {/* Energy — small secondary readout, top-right corner */}
-                <div className="absolute top-2 right-3 flex items-center gap-1.5 pointer-events-none">
-                  <Zap className="w-3 h-3 text-blue-300" />
-                  <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('settings.energy')}</span>
+                {/* Energy — top-right corner. Value to the LEFT (inward), word
+                    hugs the right edge — mirror of Stress. No icon. */}
+                <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 pointer-events-none">
                   <span className="text-xs sm:text-sm font-semibold tabular-nums">{safeToFixed(vitalsData.energy, 0)}%</span>
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('settings.energy')}</span>
                 </div>
               </div>
             </div>)}
