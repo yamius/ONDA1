@@ -2233,10 +2233,10 @@
   },
   "guiding_texts": {
     "p1_1": [
-      "Siente la respiración como vida.\nInhala — atención al centro del cuerpo.\nExhala — suave resplandor desde dentro.",
-      "Deja que el cuerpo encuentre su propio ritmo.\nNo controles la respiración — obsérvala.",
-      "Cada inhalación te conecta con la Tierra.\nCada exhalación te devuelve a la paz.",
-      "Simplemente permanece en la respiración.\nElla respira en ti, y tú respiras en ella."
+      "Respira suavemente por la nariz.\nDeja que cada respiración se vuelva lenta y se asiente, baja hacia el vientre.",
+      "Haz que tu exhalación sea un poco más larga que la inhalación.\nEntra en un ritmo lento y uniforme.",
+      "A medida que tu ritmo se estabiliza, observa cómo la onda se suaviza en curvas largas y uniformes — tu coherencia sube.",
+      "Nada que forzar. Quédate con la respiración — con los pies en la tierra, estable, sin esfuerzo."
     ],
     "p1_2": [
       "Siéntate cómodamente. Deja que la respiración se vuelva natural.",
@@ -3517,7 +3517,7 @@
     "contemplation_desc": "Tu mente busca respuestas más profundas"
   },
   "final_phrases": {
-    "p1_1": "Has inhalado la vida.\nY la vida te ha inhalado.",
+    "p1_1": "Respiración estable, corazón estable.\nLleva la calma contigo.",
     "p1_2": "Tú eres.\nY con eso basta.",
     "p1_3": "La vida pulsa en ti.\nY tú pulsas en la vida.",
     "p1_4": "Cuando te detienes, la vida sigue fluyendo dentro de ti.",
