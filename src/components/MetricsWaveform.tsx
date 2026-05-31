@@ -222,6 +222,7 @@ export function MetricsWaveform({
   const toDeltaPath = (
     samples: Sample[],
     extract: (s: Sample) => number | null,
+    minRange = 5,
   ): string => {
     const values: Array<number | null> = [];
     let sum = 0;
@@ -244,7 +245,11 @@ export function MetricsWaveform({
         if (d > maxAbsDelta) maxAbsDelta = d;
       }
     }
-    const range = Math.max(5, maxAbsDelta * 1.2);
+    // Amplitude floor: when the real variation is tiny, `range` stays at
+    // `minRange` so a near-flat signal renders modestly instead of blowing
+    // micro-noise up to fill the window. Above the floor, scaling is linear
+    // in the real delta — morphology preserved, only the span adapts.
+    const range = Math.max(minRange, maxAbsDelta * 1.2);
 
     const pts: Array<[number, number]> = [];
     const halfH = H / 2;
@@ -336,9 +341,20 @@ export function MetricsWaveform({
             </>
           )}
           {/* HR — самая толстая, рисуется последней, чтобы быть сверху.
-              В hrOnly-режиме толще (hero-визуал когерентности). */}
+              hrOnly (practice coherence hero): delta-from-running-mean +
+              auto-scale, so the breathing-driven RSA swings fill the window
+              and read as a coherence wave — coherence is about the *rhythm*,
+              not the absolute bpm (which lives as its own number on the
+              dashboard). Honesty: linear gain on the real delta + amplitude
+              floor (minRange 6 bpm), SAME Catmull-Rom as the absolute line —
+              no extra smoothing, morphology preserved (smooth breath → smooth
+              wave; ragged → ragged; flat → modest, never noise blown up for
+              drama). Non-hrOnly (home dashboard): keeps the absolute 50–110
+              scale so the bpm level reads alongside stress/energy. */}
           <path
-            d={toPath(realtimeSlice, (s) => s.hr, HR_MIN, hrMax)}
+            d={hrOnly
+              ? toDeltaPath(realtimeSlice, (s) => s.hr, 6)
+              : toPath(realtimeSlice, (s) => s.hr, HR_MIN, hrMax)}
             fill="none"
             stroke={colorHR}
             strokeWidth={hrOnly ? '3.5' : '2.5'}
