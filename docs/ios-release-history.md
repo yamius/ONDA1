@@ -210,6 +210,8 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 
 **Naming-дисциплина (как в 1.7.5):** Voice/Face Check НЕ упоминаются (всё ещё чувствительны после 1.7.4). SKAN не упоминается (стандартная инфраструктура, не новый SDK/permission/data flow). HRV read-доступ — единственное новое разрешение — раскрыт upfront, чтобы не словить вопрос. «Coherence» / «Resting HRV» — честные термины (live = on-device RSA; trend = реальный Apple SDNN).
 
+**Версия в нотах — намеренно НЕ хардкодим.** Билд несёт `CFBundleShortVersionString = MARKETING_VERSION = 1.7.6` (Fastfile стампит только build number, marketing-версию не трогает). При этом App Store Connect показывает свою нумерацию `1.1.x` (см. секцию [App Store Connect display version](#app-store-connect-display-version)) — это давняя benign-связка, с ней уже уехали 1.7.1/1.7.2/1.7.3/live-1.7.5. Чтобы ноты совпадали с карточкой при любом отображаемом числе, Reviewer Notes начинаются с «This update introduces…», без жёсткого «Version X». What's New номер и так не содержит.
+
 **What's New (EN):**
 > • Live Coherence — watch your heart rhythm move in real time as you breathe, right on the practice screen.
 > • Resting HRV trend — your recent heart-rate variability, at a glance on the home screen.
@@ -226,7 +228,7 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 ```
 Dear App Review Team,
 
-Version 1.7.6 introduces the following changes:
+This update introduces the following changes:
 
 1. Practice screen — a live "Coherence" waveform shows the user's heart
    rhythm in real time during a breathing practice. It uses the heart-rate
