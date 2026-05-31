@@ -4261,9 +4261,61 @@ const OndaLevel1 = () => {
               </div>
             </div>)}
 
-            {!isMinimalMode && (<div className="w-full max-w-md mb-6 sm:mb-12 px-3 sm:px-0">
+            {/* Live Coherence hero window — the visual centre of the active
+                screen. The HR-RSA waveform (MetricsWaveform, hrOnly+forceDark)
+                fills the body of the frosted box; Coherence is the large hero
+                readout top-left, Stress/Energy are small secondary readouts
+                top-right. Coherence % comes from useVitals (Goertzel peak-
+                concentration of respiratory sinus arrhythmia) — NOT RMSSD HRV,
+                hence the "Coherence" label, never "HRV". */}
+            {!isMinimalMode && (<div className="w-full max-w-md mb-4 sm:mb-5 px-3 sm:px-0">
+              <div className="relative rounded-2xl bg-white/10 backdrop-blur-2xl border border-white/25 overflow-hidden">
+                {/* HR-RSA waveform dominates the body of the window */}
+                <MetricsWaveform
+                  heartRate={displayHeartRate}
+                  stress={null}
+                  energy={null}
+                  forceDark
+                  hrOnly
+                  heightPx={176}
+                />
+                {/* Top scrim — keeps the corner readouts legible over the wave */}
+                <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/35 to-transparent pointer-events-none" />
+                {/* Coherence — hero readout, top-left */}
+                <div className="absolute top-2 left-3 pointer-events-none">
+                  <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white/75 leading-none mb-0.5">
+                    {t('practices.coherence')}
+                  </div>
+                  <div className="font-bold leading-none drop-shadow" style={{ fontVariantNumeric: 'tabular-nums' }}>
+                    {vitalsData.coherence != null ? (
+                      <span className="text-3xl sm:text-4xl">{vitalsData.coherence}<span className="text-lg sm:text-xl font-semibold">%</span></span>
+                    ) : (
+                      <span className="text-2xl sm:text-3xl text-white/60">--</span>
+                    )}
+                  </div>
+                </div>
+                {/* Stress / Energy — small secondary readouts, top-right */}
+                <div className="absolute top-2 right-3 space-y-1 pointer-events-none">
+                  <div className="flex items-center justify-end gap-1.5">
+                    <Activity className="w-3 h-3 text-red-300" />
+                    <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('labels.stress')}</span>
+                    <span className="text-xs sm:text-sm font-semibold tabular-nums w-9 text-right">{safeToFixed(vitalsData.stress, 0)}%</span>
+                  </div>
+                  <div className="flex items-center justify-end gap-1.5">
+                    <Zap className="w-3 h-3 text-blue-300" />
+                    <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('labels.energy')}</span>
+                    <span className="text-xs sm:text-sm font-semibold tabular-nums w-9 text-right">{safeToFixed(vitalsData.energy, 0)}%</span>
+                  </div>
+                </div>
+              </div>
+            </div>)}
+
+            {/* Progress bar (was labelled "Quality" — renamed because the bar
+                grows monotonically through the practice; a low % early on read
+                as "bad quality"). Underlying score calc unchanged. */}
+            {!isMinimalMode && (<div className="w-full max-w-md mb-4 sm:mb-6 px-3 sm:px-0">
               <div className="flex justify-between text-sm sm:text-base mb-2 sm:mb-3">
-                <span className="font-semibold">{t('practices.quality')}</span>
+                <span className="font-semibold">{t('practices.progress')}</span>
                 <span className="font-bold text-xl sm:text-2xl">{safeToFixed(qualityScore, 0)}%</span>
               </div>
               <div className="w-full h-5 sm:h-6 rounded-full overflow-hidden backdrop-blur-sm border border-white/20 bg-black/30 shadow-inner">
@@ -4271,8 +4323,8 @@ const OndaLevel1 = () => {
                   className={`h-full transition-all duration-[12500ms] relative ${
                     qualityScore >= 100
                       ? 'bg-gradient-to-r from-pink-500 via-fuchsia-500 to-purple-600'
-                      : meetsArtifactRequirements 
-                        ? 'bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-300' 
+                      : meetsArtifactRequirements
+                        ? 'bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-300'
                         : 'bg-gradient-to-r from-green-400 via-emerald-400 to-teal-300'
                   }`}
                   style={{ width: `${qualityScore}%` }}
@@ -4280,24 +4332,26 @@ const OndaLevel1 = () => {
                   <div className="absolute inset-0 bg-white/30 animate-pulse" />
                 </div>
               </div>
-              <div className="mt-2 sm:mt-3 text-xs sm:text-sm flex justify-between text-white/80">
-                <span>{t('labels.time_label')}: {safeToFixed((practiceTime / activePractice.targetTime) * 100, 0)}%</span>
-                <span>{t('labels.energy')}: {safeToFixed(vitalsData.energy, 0)}%</span>
-              </div>
             </div>)}
 
+            {/* Guiding text — coaching layer. Lives UNDER the progress bar in
+                the standard active view (subtle/frosted, functional during the
+                practice) AND becomes the sole zen card in minimal mode (larger,
+                tappable to exit minimal mode). */}
             {activePractice.guidingTexts && activePractice.guidingTexts.length > 0 && (
               <div
                 className={`w-full max-w-md px-3 sm:px-0 ${isMinimalMode ? '' : 'mb-6 sm:mb-8'}`}
                 onClick={isMinimalMode ? () => setIsMinimalMode(false) : undefined}
               >
-                <div className={`bg-white/10 backdrop-blur-2xl rounded-2xl p-4 sm:p-6 border flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
+                <div className={`backdrop-blur-2xl rounded-2xl border flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
                   isMinimalMode
-                    ? 'border-white/30 h-28 sm:h-32 cursor-pointer hover:bg-white/20 active:scale-95'
-                    : 'border-white/25 h-24 sm:h-28'
+                    ? 'bg-white/10 border-white/30 p-4 sm:p-6 h-28 sm:h-32 cursor-pointer hover:bg-white/20 active:scale-95'
+                    : 'bg-white/5 border-white/15 px-4 py-3 sm:px-6 sm:py-4 min-h-[64px] sm:min-h-[72px]'
                 }`}>
                   <p
-                    className={`text-sm sm:text-base text-center italic leading-snug text-white/90 whitespace-pre-line transition-all duration-1000 ${
+                    className={`text-center italic leading-snug whitespace-pre-line transition-all duration-1000 ${
+                      isMinimalMode ? 'text-sm sm:text-base text-white/90' : 'text-xs sm:text-sm text-white/75'
+                    } ${
                       isTextTransitioning ? 'opacity-0 translate-y-[-20px]' : 'opacity-100 translate-y-0'
                     }`}
                   >
@@ -4306,19 +4360,6 @@ const OndaLevel1 = () => {
                 </div>
               </div>
             )}
-
-            {!isMinimalMode && (<div className="grid grid-cols-2 gap-3 sm:gap-6 mb-6 sm:mb-12 px-3 sm:px-0 w-full max-w-md">
-              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-3 sm:p-6 text-center border border-white/25">
-                <Activity className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-red-300" />
-                <div className="text-2xl sm:text-4xl font-bold mb-1">{safeToFixed(vitalsData.stress, 0)}%</div>
-                <div className="text-xs sm:text-sm text-white/70">{t('labels.stress')}</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur-2xl rounded-2xl p-3 sm:p-6 text-center border border-white/25">
-                <Zap className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-blue-300" />
-                <div className="text-2xl sm:text-4xl font-bold mb-1">{safeToFixed(vitalsData.energy, 0)}%</div>
-                <div className="text-xs sm:text-sm text-white/70">{t('labels.energy')}</div>
-              </div>
-            </div>)}
 
             {!isMinimalMode && (
             <div className="flex gap-3 sm:gap-6">

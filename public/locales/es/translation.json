@@ -216,6 +216,8 @@
     "improve": "Mejorar",
     "time": "min",
     "quality": "calidad",
+    "coherence": "Coherence",
+    "progress": "Progreso",
     "qnt_earned": "OND ganado",
     "new_record": "Nuevo record! Resultado anterior",
     "rate_practice": "Califica esta practica",
@@ -989,7 +991,7 @@
       "empty_body": "Conecta tu Apple Watch para una recomendación personal, o empieza con cualquier práctica de abajo ↓",
       "empty_cta": "Ver prácticas",
       "collecting_body": "Recopilando tus datos para recomendar una práctica…",
-      "watch_hint": "Conecta Apple Watch para ver HRV en vivo durante la práctica.",
+      "watch_hint": "Conecta Apple Watch para ver tu ritmo cardíaco en vivo durante la práctica.",
       "connect_watch": "Conectar"
     },
     "journey": {
@@ -1000,7 +1002,7 @@
     },
     "biometric": {
       "connect_title": "Conecta Apple Watch",
-      "connect_body": "Mira tu HRV en tiempo real durante las prácticas de respiración.",
+      "connect_body": "Mira tu ritmo cardíaco en tiempo real durante las prácticas de respiración.",
       "connect_cta": "Configurar"
     },
     "featured": {

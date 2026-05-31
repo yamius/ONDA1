@@ -225,6 +225,8 @@
     "back_to_practices": "Back to Practices",
     "time": "min",
     "quality": "Quality",
+    "coherence": "Coherence",
+    "progress": "Progress",
     "qnt_earned": "OND earned",
     "elemental": "Elemental",
     "up_to": "Up to",
@@ -1030,7 +1032,7 @@
       "empty_body": "Connect your Apple Watch for a personalised recommendation, or start with any practice below ↓",
       "empty_cta": "Browse practices",
       "collecting_body": "Collecting your data to recommend a practice…",
-      "watch_hint": "Connect Apple Watch to see live HRV during practice.",
+      "watch_hint": "Connect Apple Watch to see your live heart rhythm during practice.",
       "connect_watch": "Connect"
     },
     "journey": {
@@ -1041,7 +1043,7 @@
     },
     "biometric": {
       "connect_title": "Connect Apple Watch",
-      "connect_body": "See your HRV in real time during breathing practices.",
+      "connect_body": "See your heart rhythm in real time during breathing practices.",
       "connect_cta": "Set Up Now"
     },
     "featured": {

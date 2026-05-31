@@ -215,6 +215,8 @@
     "improve": "改进",
     "time": "分钟",
     "quality": "质量",
+    "coherence": "Coherence",
+    "progress": "进度",
     "qnt_earned": "获得的OND",
     "new_record": "新纪录! 之前的结果",
     "rate_practice": "评价这个练习",
@@ -988,7 +990,7 @@
       "empty_body": "连接 Apple Watch 获取个性化推荐，或从下方任选一项练习 ↓",
       "empty_cta": "浏览练习",
       "collecting_body": "正在收集数据以推荐练习…",
-      "watch_hint": "连接 Apple Watch 以在练习时查看实时 HRV。",
+      "watch_hint": "连接 Apple Watch，在练习时实时查看你的心律。",
       "connect_watch": "连接"
     },
     "journey": {
@@ -999,7 +1001,7 @@
     },
     "biometric": {
       "connect_title": "连接 Apple Watch",
-      "connect_body": "在呼吸练习中实时查看你的 HRV。",
+      "connect_body": "在呼吸练习中实时查看你的心律。",
       "connect_cta": "立即设置"
     },
     "featured": {

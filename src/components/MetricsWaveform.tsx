@@ -24,6 +24,16 @@ interface MetricsWaveformProps {
   stress: number | null | undefined;
   energy: number | null | undefined;
   className?: string;
+  /** Force dark-theme line colors regardless of app theme. Used on the
+   *  practice screen where the waveform sits over a dark HDR photo even
+   *  when the app is in light mode. */
+  forceDark?: boolean;
+  /** Override the rendered pixel height (default 140). The practice-screen
+   *  coherence hero uses a taller value. */
+  heightPx?: number;
+  /** Render only the HR line (the live coherence visual), hiding the
+   *  stress/energy delta lines. Also thickens + glows the HR stroke. */
+  hrOnly?: boolean;
 }
 
 const WINDOW_SECONDS = 60;
@@ -73,8 +83,18 @@ const norm = (v: number | null, min: number, max: number): number | null =>
 
 const EMPTY_SAMPLE: Sample = { hr: null, stress: null, energy: null };
 
-export function MetricsWaveform({ heartRate, stress, energy, className = '' }: MetricsWaveformProps) {
-  const isLight = useTheme().resolved === 'light';
+export function MetricsWaveform({
+  heartRate,
+  stress,
+  energy,
+  className = '',
+  forceDark = false,
+  heightPx,
+  hrOnly = false,
+}: MetricsWaveformProps) {
+  // useTheme must be called unconditionally (rules of hooks); forceDark just
+  // overrides the resolved value for color selection.
+  const isLight = forceDark ? false : useTheme().resolved === 'light';
   const [buffer, setBuffer] = useState<Sample[]>(() =>
     Array.from({ length: BUFFER_SIZE }, () => EMPTY_SAMPLE),
   );
@@ -267,7 +287,14 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
       className={className}
       viewBox={`0 0 ${W} ${H}`}
       preserveAspectRatio="none"
-      style={{ width: '100%', height: 140, display: 'block' }}
+      style={{
+        width: '100%',
+        height: heightPx ?? 140,
+        display: 'block',
+        // Soft glow makes the HR line read as "alive" over the dark practice
+        // backdrop. Cheap CSS filter, only on the coherence-hero variant.
+        filter: hrOnly ? 'drop-shadow(0 0 6px rgba(251,113,133,0.45))' : undefined,
+      }}
       aria-hidden="true"
     >
       {noData ? (
@@ -281,33 +308,40 @@ export function MetricsWaveform({ heartRate, stress, energy, className = '' }: M
         />
       ) : (
         <>
-          {/* Stress — delta из stressSlice (буфер сдвинут на
-              STRESS_SHIFT_SAMPLES в прошлое относительно HR/energy).
-              Линия дотягивается до левого края с реальными старыми
-              значениями stress, переплетение с energy сохраняется. */}
-          <path
-            d={toDeltaPath(stressSlice, (s) => s.stress)}
-            fill="none"
-            stroke={colorStress}
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          {/* Energy — delta в реальном времени (realtimeSlice) */}
-          <path
-            d={toDeltaPath(realtimeSlice, (s) => s.energy)}
-            fill="none"
-            stroke={colorEnergy}
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-          {/* HR — самая толстая, рисуется последней, чтобы быть сверху */}
+          {/* Stress + Energy delta lines — hidden in hrOnly (coherence-hero)
+              mode so the single HR-RSA line reads cleanly as "your coherence". */}
+          {!hrOnly && (
+            <>
+              {/* Stress — delta из stressSlice (буфер сдвинут на
+                  STRESS_SHIFT_SAMPLES в прошлое относительно HR/energy).
+                  Линия дотягивается до левого края с реальными старыми
+                  значениями stress, переплетение с energy сохраняется. */}
+              <path
+                d={toDeltaPath(stressSlice, (s) => s.stress)}
+                fill="none"
+                stroke={colorStress}
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              {/* Energy — delta в реальном времени (realtimeSlice) */}
+              <path
+                d={toDeltaPath(realtimeSlice, (s) => s.energy)}
+                fill="none"
+                stroke={colorEnergy}
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </>
+          )}
+          {/* HR — самая толстая, рисуется последней, чтобы быть сверху.
+              В hrOnly-режиме толще (hero-визуал когерентности). */}
           <path
             d={toPath(realtimeSlice, (s) => s.hr, HR_MIN, hrMax)}
             fill="none"
             stroke={colorHR}
-            strokeWidth="2.5"
+            strokeWidth={hrOnly ? '3.5' : '2.5'}
             strokeLinecap="round"
             strokeLinejoin="round"
           />

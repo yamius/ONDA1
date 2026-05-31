@@ -38,6 +38,10 @@ export function useVitals() {
   const [stress, setStress] = useState<number | null>(null);
   const [energy, setEnergy] = useState<number | null>(null);
   const [hrv, setHrv] = useState<number | null>(null);
+  // Coherence (0..100): peak-concentration of the respiratory-sinus-arrhythmia
+  // oscillation in the HR signal. NOT RMSSD/SDNN HRV — see calc below. Used by
+  // the live coherence waveform on the practice screen.
+  const [coherence, setCoherence] = useState<number | null>(null);
   const [csi, setCsi] = useState<number | null>(null);
   const [recoveryRate, setRecoveryRate] = useState<number | null>(null);
   const [hrTrendSlope, setHrTrendSlope] = useState<number | null>(null);
@@ -59,6 +63,8 @@ export function useVitals() {
 
   const dhrDtRef = useRef(0);
   const calculationCountRef = useRef(0);
+  // EMA state for the coherence score (sentinel -1 = uninitialised, see ewma).
+  const coherenceRef = useRef(-1);
 
   // Feed notification HR into series when BLE is not connected
   useEffect(() => {
@@ -130,8 +136,12 @@ export function useVitals() {
 
       const fs = 1;
       let bestF = 0.0, bestP = 0;
+      const powers: number[] = [];
+      let sumP = 0;
       for (let f = 0.10; f <= 0.50; f += 0.02) {
         const p = goertzelPower(xs, fs, f);
+        powers.push(p);
+        sumP += p;
         if (p > bestP) { bestP = p; bestF = f; }
       }
       const brBpm = bestF > 0 ? bestF * 60 : null;
@@ -150,6 +160,23 @@ export function useVitals() {
       const zAct = (activityRef.current - b.actMean) / (b.actVar || 1);
 
       const roughBreathStability = Math.min(1, bestP / 200);
+
+      // Coherence (HR-RSA peak concentration). How dominant a single
+      // breathing-band peak is in the HR oscillation spectrum, gated by the
+      // oscillation amplitude. A slow, even breath → one tall RSA peak →
+      // high coherence. A flat or noisy HR → power spread thin / weak → low.
+      // This is the live-biofeedback signal shown on the practice screen as
+      // the "Coherence" waveform. It is explicitly NOT RMSSD/SDNN HRV — we
+      // never receive beat-to-beat RR intervals from Apple Watch via WCSession.
+      const peakIdx = powers.indexOf(bestP);
+      let peakBand = bestP;
+      if (peakIdx - 1 >= 0) peakBand += powers[peakIdx - 1];
+      if (peakIdx + 1 < powers.length) peakBand += powers[peakIdx + 1];
+      const concentration = sumP > 0 ? clamp01(peakBand / sumP) : 0;
+      const coherence01 = clamp01(concentration * (0.4 + 0.6 * roughBreathStability));
+      coherenceRef.current = ewma(coherenceRef.current, coherence01, 0.2);
+      setCoherence(Math.round(coherenceRef.current * 100));
+
       const stress01 = clamp01(0.6 * sigmoid(zHr) + 0.3 * sigmoid(zAct) + 0.1 * (1 - roughBreathStability));
       const energy01 = clamp01(0.6 * (1 - sigmoid(zHr)) + 0.3 * (1 - sigmoid(zAct)) + 0.1 * roughBreathStability);
 
@@ -270,7 +297,7 @@ export function useVitals() {
     hrSource, // 'ble' | 'healthkit' | 'notification' | null
     
     // Calculated vitals
-    br, stress, energy, hrv, csi, recoveryRate, hrTrendSlope, hrAcceleration,
+    br, stress, energy, hrv, coherence, csi, recoveryRate, hrTrendSlope, hrAcceleration,
     arousal, calm, focus, excitement, fatigue, flow,
     
     // Android Bluetooth-specific fields
