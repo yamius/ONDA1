@@ -4279,10 +4279,11 @@ const OndaLevel1 = () => {
                   hrOnly
                   heightPx={176}
                 />
-                {/* Top scrim — keeps the corner readouts legible over the wave */}
+                {/* Top scrim — keeps the readouts legible over the wave */}
                 <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/35 to-transparent pointer-events-none" />
-                {/* Coherence — hero readout, top-left */}
-                <div className="absolute top-2 left-3 pointer-events-none">
+                {/* Coherence — hero readout, top-CENTER (flanked by the two
+                    corner metrics below) */}
+                <div className="absolute top-1.5 left-1/2 -translate-x-1/2 text-center pointer-events-none">
                   <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white/75 leading-none mb-0.5">
                     {t('practices.coherence')}
                   </div>
@@ -4294,18 +4295,19 @@ const OndaLevel1 = () => {
                     )}
                   </div>
                 </div>
-                {/* Stress / Energy — small secondary readouts, top-right */}
-                <div className="absolute top-2 right-3 space-y-1 pointer-events-none">
-                  <div className="flex items-center justify-end gap-1.5">
-                    <Activity className="w-3 h-3 text-red-300" />
-                    <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('labels.stress')}</span>
-                    <span className="text-xs sm:text-sm font-semibold tabular-nums w-9 text-right">{safeToFixed(vitalsData.stress, 0)}%</span>
-                  </div>
-                  <div className="flex items-center justify-end gap-1.5">
-                    <Zap className="w-3 h-3 text-blue-300" />
-                    <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('labels.energy')}</span>
-                    <span className="text-xs sm:text-sm font-semibold tabular-nums w-9 text-right">{safeToFixed(vitalsData.energy, 0)}%</span>
-                  </div>
+                {/* Stress — small secondary readout, top-left corner.
+                    Uses settings.stress ("Stress", short) — not labels.stress
+                    ("Stress Level") — per the corner-readout sizing. */}
+                <div className="absolute top-2 left-3 flex items-center gap-1.5 pointer-events-none">
+                  <Activity className="w-3 h-3 text-red-300" />
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('settings.stress')}</span>
+                  <span className="text-xs sm:text-sm font-semibold tabular-nums">{safeToFixed(vitalsData.stress, 0)}%</span>
+                </div>
+                {/* Energy — small secondary readout, top-right corner */}
+                <div className="absolute top-2 right-3 flex items-center gap-1.5 pointer-events-none">
+                  <Zap className="w-3 h-3 text-blue-300" />
+                  <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('settings.energy')}</span>
+                  <span className="text-xs sm:text-sm font-semibold tabular-nums">{safeToFixed(vitalsData.energy, 0)}%</span>
                 </div>
               </div>
             </div>)}
@@ -4346,7 +4348,7 @@ const OndaLevel1 = () => {
                 <div className={`backdrop-blur-2xl rounded-2xl border flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
                   isMinimalMode
                     ? 'bg-white/10 border-white/30 p-4 sm:p-6 h-28 sm:h-32 cursor-pointer hover:bg-white/20 active:scale-95'
-                    : 'bg-white/5 border-white/15 px-4 py-3 sm:px-6 sm:py-4 min-h-[64px] sm:min-h-[72px]'
+                    : 'bg-white/5 border-white/15 px-4 sm:px-6 h-[78px] sm:h-[88px]'
                 }`}>
                   <p
                     className={`text-center italic leading-snug whitespace-pre-line transition-all duration-1000 ${
