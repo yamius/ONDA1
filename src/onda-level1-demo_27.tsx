@@ -305,12 +305,21 @@ const OndaLevel1 = () => {
     return freeIds[0];
   }, [completedPractices, practiceHistory]);
 
-  // Stream the latest HRV reading into the 7-day daily log. Cheap to call
-  // — the hook itself bails out on null/0/NaN, and writes are skipped when
-  // today's slot already holds the same value.
+  // Stream the latest HRV reading into the 7-day daily log.
+  //
+  // HONESTY: this log feeds HRVMiniChart, which labels its values as real
+  // HRV in milliseconds ("{value} ms", aria "HRV trend"). So it must be fed
+  // the REAL resting HRV — Apple Watch's own SDNN read from HealthKit
+  // (HealthKitHeartRatePlugin queries .heartRateVariabilitySDNN) — NOT the
+  // HR-derived surrogate from useVitals (std-dev of HR, not true HRV, not in
+  // ms). Feeding the surrogate here was the same mislabel we removed on the
+  // practice screen. On platforms / sessions without a real HealthKit SDNN
+  // the value is undefined → recordSample no-ops → the chart shows its
+  // "need more data" stub rather than a fabricated trend.
+  // TODO(android): surface a real Health Connect HRV value and record it too.
   useEffect(() => {
-    hrv7Day.recordSample(vitalsData.hrv);
-  }, [vitalsData.hrv, hrv7Day.recordSample]);
+    hrv7Day.recordSample(healthKitData.data?.vitals?.hrv);
+  }, [healthKitData.data?.vitals?.hrv, hrv7Day.recordSample]);
 
   // Notification Primer — показываем ПОСЛЕ 2 завершённых практик, не
   // на старте и не в онбординге. Логика: пуш о напоминаниях имеет смысл,
