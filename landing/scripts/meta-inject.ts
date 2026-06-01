@@ -2303,6 +2303,20 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
     out = out.replace('</head>', `  ${itemListScript}\n</head>`)
   }
 
+  // JSON-LD: canonical Person on review + round-up pages (roadmap 6.8).
+  // Review and CollectionPage schema reference the author by @id, but the
+  // Person entity itself was only emitted on homepage + /about — so on a
+  // review page Google saw a dangling @id with no resolvable node. These
+  // are YMYL (health) pages where author E-E-A-T is exactly what Google
+  // weighs, so we emit the FULL canonical Person (credentials + knowsAbout),
+  // not a sparse stub. Same @id as homepage → Google de-dupes to one node,
+  // no conflict. Fires for either a product review or a round-up, never the
+  // homepage/article paths (those emit Person via their own branches).
+  if (meta.review || meta.itemList) {
+    const personScript = `<script type="application/ld+json">${buildPersonJsonLd()}</script>`
+    out = out.replace('</head>', `  ${personScript}\n</head>`)
+  }
+
   // Replace <title>...</title>
   out = out.replace(/<title>[\s\S]*?<\/title>/i, `<title>${escapedTitle}</title>`)
 
