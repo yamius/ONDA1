@@ -292,3 +292,55 @@ landing/src/data/articles/types.ts            — Article interface
 6. Show diff to user, wait for OK.
 7. Merge to main.
 8. Mark task done in this roadmap (update file).
+
+---
+
+## Phase 6 — SEO audit findings (2026-05-29)
+
+> **Origin:** Full-site SEO/GEO/performance audit run 2026-05-29 against the live build
+> (843 prerendered routes, 215 glossary terms, 80 reviews, 8 round-ups). The site already
+> scores above-average — clean robots.txt with explicit AI-bot allowlist, hreflang clusters,
+> premium JSON-LD (TechArticle/FAQPage/HowTo/DefinedTerm/Product/Review/Dataset), llms.txt +
+> ai.txt, multi-locale prerender. This phase tracks the gaps the audit surfaced, ordered by
+> ROI (impact ÷ effort).
+
+### 6A — Quick wins
+
+| # | Task | File | Acceptance | Status |
+|---|---|---|---|---|
+| 6.1 | **H1 on review pages.** ~~Review pages had NO `<h1>`~~ — **FALSE ALARM.** Audit grep was fooled by React `<!-- -->` text-node markers (`{review.name} review` renders `<h1>Oura Ring 4<!-- --> review</h1>`). Review pages DO have a correct single `<h1>` at `ReviewPage.tsx:75`. No change needed. | `src/pages/ReviewPage.tsx:75` | Already correct | ✅ already done |
+| 6.2 | **Title truncation bug.** Homepage HTML title rendered `ONDA Life \| Biohacking App, HRV Tracker &amp…` — truncated with ellipsis. Root cause: `truncateForBudget` counted the HTML-encoded string (`&amp;` = 5 chars) instead of decoded `&` (1 char), pushing a 58-char source title over budget. **Fixed:** function now measures decoded length, re-encodes &/</> only on the encoded call path. | `scripts/meta-inject.ts` (truncateForBudget) | No `…` in any `<title>` whose decoded source ≤ budget. Verified: homepage now full. | ✅ done 2026-05-29 |
+| 6.3 | **TITLE_MAX 60 → 65.** Google desktop SERP renders ~70-78 chars in 2026; 60 over-conservative. | `scripts/meta-inject.ts:44` | `TITLE_MAX = 65` | ✅ done 2026-05-29 |
+| 6.11 | **SpeakableSpecification on reviews** (pulled forward from 6C in place of 6.1's no-op). Articles had speakable markup; reviews didn't. Added `speakable` to Review JSON-LD (`['h1', '#review-summary']`) + stable `id="review-summary"` on the summary paragraph. | `scripts/meta-inject.ts` (buildReviewJsonLd) + `src/pages/ReviewPage.tsx` | Every review page emits SpeakableSpecification. Verified. | ✅ done 2026-05-29 |
+| 6.4 | **Inline glossary links on review pages.** Articles got a rich inline-glossary-link pass (2026-05-29); reviews did not. Reviews discuss HRV / VO2max / ATP etc. but link only to sibling reviews. Add contextual `[term](/glossary/slug)` links in review summary/verdict/criteria copy. | `src/data/reviews/*.ts` (criteria notes, summaries) OR review render layer | ≥ 30 new internal glossary backlinks from review pages | ☐ next |
+
+### 6B — High-impact, needs a decision or larger effort
+
+| # | Task | Impact | Effort | Blocker / decision needed |
+|---|---|---|---|---|
+| 6.5 | **Product images on review pages.** `<img>` count = 0 on review pages; Product schema has no `image:` field. Kills Google Image + Shopping surfaces for 80 review pages. | 🔴 High | 1-2 days | DECISION: generate (DALL-E/MJ branded renders), buy stock, or use manufacturer press images (licensing risk)? |
+| 6.6 | **Product schema `image` field.** Once 6.5 lands, add `image: [url]` to the `Product` JSON-LD for rich-result eligibility. | 🟡 Med | 5 min | Depends on 6.5 |
+| 6.7 | **Image sitemap for reviews + glossary.** `sitemap.xml` has 68 `<image:loc>` entries — all articles. Reviews/glossary absent. Extend generator after 6.5. | 🟡 Med | 30 min | Depends on 6.5 |
+| 6.8 | **Inline Author Person entity on review pages.** Review schema references `author` by `@id` but the `Person` entity is only emitted on homepage. Valid via @id, but Google sometimes prefers inline. Emit sparse Person (4 fields) per review. | 🟢 Low | 20 min | None |
+
+### 6C — Performance / nice-to-have
+
+| # | Task | Impact | Effort | Notes |
+|---|---|---|---|---|
+| 6.9 | **Entry bundle 1.4MB raw (107KB gzip).** Gzip is under budget; raw parse/execute cost hits INP on slow mobile. Vendor-chunk React/ReactDOM, split heavy review/meditation data further. | 🔵 Low | Med | Diminishing returns — Vite chunking already smart |
+| 6.10 | **Render-blocking CSS (87KB sync in head).** Inline critical CSS, async the rest. ~100-200ms LCP win on slow connections. | 🔵 Low | Med | Vite critical-CSS plugin |
+| 6.11 | **SpeakableSpecification on reviews.** ~~Articles have it; reviews don't.~~ **DONE 2026-05-29** — pulled forward into 6A (see above). | 🔵 Low | 30 min | ✅ done |
+| 6.12 | **NewsArticle vs TechArticle for round-ups.** "Best X 2026" round-ups are time-sensitive — `Article` with publication-date priority fits Google News better than `TechArticle`. | 🔵 Low | 1 hr | Contextual judgment per round-up |
+| 6.13 | **FAQ position above fold.** FAQPage schema present, but if FAQ `<details>` sit at page bottom Google may skip them. Audit placement. | 🔵 Low | Audit | None |
+
+### Audit baseline snapshot (2026-05-29)
+
+- robots.txt: ✓ clean, AI allowlist present, /api /decks /p disallowed
+- sitemap.xml: 842 URLs, hreflang clusters, 68 article image entries
+- sitemap-news.xml: 48h rolling window ✓
+- JSON-LD: TechArticle, FAQPage, HowTo, DefinedTerm, DefinedTermSet, Product, Review, Offer, Rating, Brand, ItemList, CollectionPage, Dataset, Organization, Person, WebSite, SearchAction ✓
+- ImageObject license fields: ✓ (fixed 2026-05-29, CC BY-NC-SA 4.0)
+- Bundle: entry 107KB gzip (budget 150KB) ✓; raw 1.4MB
+- Images: 74 PNG sources → 147 WebP + 138 AVIF variants
+- TITLE_MAX 60 / DESC_MAX 160
+- Build: 843 pages, validate-seo clean, ~61s warm

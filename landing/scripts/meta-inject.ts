@@ -41,27 +41,64 @@ const AUTHOR_NAME = 'Yakiv Bilenko'
 const AUTHOR_URL = 'https://www.linkedin.com/in/yamius'
 const AUTHOR_SAME_AS = ['https://www.linkedin.com/in/yamius']
 
-export const TITLE_MAX = 60
+// Google desktop SERP renders ~70-78 chars in 2026; 65 keeps a safe margin
+// while no longer forcing our own ellipsis on titles Google would show in
+// full. (Raised from 60 — 2026-05-29 SEO audit, roadmap 6.3.)
+export const TITLE_MAX = 65
 export const DESC_MAX = 160
+
+/** Decode the handful of HTML entities that appear in titles / descriptions
+ *  so length is measured against the *visible* character count, not the
+ *  encoded byte length. `&amp;` is 5 chars encoded but renders as 1 char in
+ *  the SERP — counting the encoded form falsely trips the budget and forces
+ *  a spurious ellipsis (2026-05-29 audit, roadmap 6.2). */
+function decodeBasicEntities(s: string): string {
+  return s
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&apos;/g, "'")
+}
+
+/** Re-encode the structural HTML characters after truncation, so a value
+ *  that arrived HTML-encoded leaves HTML-encoded. Only `&`, `<`, `>` — these
+ *  are the chars that are unsafe in both element text and attribute values;
+ *  quotes/apostrophes are left as-is because the truncation tail never ends
+ *  on one and re-encoding them would risk double-encoding the meta-inject
+ *  (raw-input) call path. */
+function encodeBasicEntities(s: string): string {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+}
+
+const HTML_ENTITY_RE = /&(?:amp|lt|gt|quot|apos|#39);/
 
 /**
  * Trim text to fit within Google's SERP slot, preserving word boundary.
  *
+ * - Measures length against the DECODED (visible) string, so `&amp;` counts
+ *   as one char, not five.
  * - Pass-through when already within budget.
  * - Otherwise cut at the last space before (max - 1) and append `…`.
  * - Idempotent: text already ending in `…` is left alone.
+ * - Re-encodes &/</> only when the input arrived HTML-encoded (prerender
+ *   final-pass call path); the raw-input meta-inject call path is untouched.
  *
  * Intentionally does not pad short texts — padded descriptions look like
  * keyword stuffing to Google and provide no SEO benefit. Short titles and
  * descriptions are fine; Google will use them as-is or rewrite slightly.
  */
 export function truncateForBudget(text: string, max: number): string {
-  if (text.length <= max) return text
-  if (text.endsWith('…')) return text
-  const slice = text.slice(0, max - 1)
+  const hadEntities = HTML_ENTITY_RE.test(text)
+  const decoded = hadEntities ? decodeBasicEntities(text) : text
+  if (decoded.length <= max) return text
+  if (decoded.endsWith('…')) return text
+  const slice = decoded.slice(0, max - 1)
   const lastSpace = slice.lastIndexOf(' ')
   const cut = lastSpace > Math.floor(max * 0.6) ? slice.slice(0, lastSpace) : slice
-  return `${cut.replace(/[\s,;:.!?\-—…]+$/, '')}…`
+  const truncated = `${cut.replace(/[\s,;:.!?\-—…]+$/, '')}…`
+  return hadEntities ? encodeBasicEntities(truncated) : truncated
 }
 
 /** Build canonical URL without trailing slash. Google sees only one URL variant. */
@@ -1044,6 +1081,14 @@ function buildReviewJsonLd(r: NonNullable<RouteMeta['review']>): string {
       ratingValue: r.ratingValue,
       bestRating: 10,
       worstRating: 0,
+    },
+    // SpeakableSpecification — Google Assistant / Siri / Alexa read the H1
+    // (product name + "review") and the summary paragraph as a spoken answer
+    // to "what's the best <product>" voice queries. Parity with articles,
+    // which already carry speakable markup (2026-05-29 audit, roadmap 6.11).
+    speakable: {
+      '@type': 'SpeakableSpecification',
+      cssSelector: ['h1', '#review-summary'],
     },
   }
   if (r.pros.length) {

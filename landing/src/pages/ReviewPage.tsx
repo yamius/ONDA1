@@ -93,7 +93,7 @@ export function ReviewPage() {
         </div>
       </div>
 
-      <p className="mb-6 font-mono text-sm leading-relaxed text-white/60">
+      <p id="review-summary" className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {tSummary}
       </p>
       <p className="mb-8 font-mono text-xs leading-relaxed text-white/40">
