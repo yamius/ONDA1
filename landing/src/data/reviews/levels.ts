@@ -42,7 +42,7 @@ const levels: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Levels is the programme that turned CGM into a consumer category for non-diabetics, and the app is still the most thoughtful piece of software in the field. Meals do not just appear on a timeline — each is scored, ranked against your own history, decomposed into peak, AUC and time-to-baseline, and rolled into daily and weekly time-in-range views. The underlying hardware is Dexcom G7, which independent MARD comparison puts at the top of the consumer-CGM accuracy ranking. The medical advisory board adds credibility most coaching-light programmes do not have.
+Levels is the programme that turned CGM into a consumer category for non-diabetics, and the app is still the most thoughtful piece of software in the field. Meals do not just appear on a timeline — each is scored, ranked against your own history, decomposed into peak [glucose spike](/glossary/glucose-spikes), AUC and time-to-baseline, and rolled into daily and weekly time-in-range views that train [metabolic flexibility](/glossary/metabolic-flexibility). The underlying hardware is Dexcom G7, which independent MARD comparison puts at the top of the consumer-CGM accuracy ranking. The medical advisory board adds credibility most coaching-light programmes do not have.
 
 ## Where it falls short
 

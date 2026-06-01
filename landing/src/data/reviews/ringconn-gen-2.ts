@@ -43,7 +43,7 @@ const ringconnGen2: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-The RingConn Gen 2 is the value pick of the smart-ring field. It costs roughly half what an Oura Ring 4 does over time, takes no subscription, and its battery is the standout number in this entire comparison — around twelve days per charge, with a case that extends that to months. It is light, titanium, properly waterproof, and even adds sleep-apnea screening. For HRV and sleep its accuracy sits solidly in the same conversation as the pricier rings.
+The RingConn Gen 2 is the value pick of the smart-ring field. It costs roughly half what an Oura Ring 4 does over time, takes no subscription, and its battery is the standout number in this entire comparison — around twelve days per charge, with a case that extends that to months. It is light, titanium, properly waterproof, and even adds sleep-apnea screening. For [HRV](/glossary/heart-rate-variability) and sleep its accuracy sits solidly in the same conversation as the pricier rings.
 
 ## Where it falls short
 

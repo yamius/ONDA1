@@ -42,7 +42,7 @@ const zoe: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Zoe is the only programme in this list that does not pretend glucose is the whole story. The 2-week CGM phase runs alongside a gut microbiome stool test and a blood biomarker panel, and the three signals are fused into a single set of personalised food rankings — backed by the published PREDICT-1 and PREDICT-2 studies from Tim Spector’s King’s College London group. The scientific lineage is the strongest in this category by a meaningful margin.
+Zoe is the only programme in this list that does not pretend glucose is the whole story. The 2-week CGM phase tracks your [glucose spikes](/glossary/glucose-spikes) alongside a gut [microbiome](/glossary/microbiome) stool test and a blood biomarker panel, and the three signals are fused into a single set of personalised food rankings — backed by the published PREDICT-1 and PREDICT-2 studies from Tim Spector’s King’s College London group. The scientific lineage is the strongest in this category by a meaningful margin.
 
 ## Where it falls short
 

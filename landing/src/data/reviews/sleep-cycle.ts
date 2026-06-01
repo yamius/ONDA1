@@ -43,7 +43,7 @@ const sleepCycle: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Sleep Cycle is the most popular sleep tracker for a reason: it does the core job cleanly. It measures your night through the phone microphone and accelerometer — or through heart rate if you wear an Apple Watch — and its long-running idea, the smart alarm, rouses you within a window when you are in lighter sleep, so you wake less groggy. The analysis it hands back is readable: trends and a nightly breakdown, not a wall of numbers.
+Sleep Cycle is the most popular sleep tracker for a reason: it does the core job cleanly. It measures your night through the phone microphone and accelerometer — or through heart rate if you wear an Apple Watch — and its long-running idea, the smart alarm, rouses you within a window when you are in lighter sleep rather than [deep sleep](/glossary/deep-sleep), so you wake less groggy. The analysis it hands back is readable: trends and a nightly breakdown, not a wall of numbers.
 
 ## Where it falls short
 

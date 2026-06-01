@@ -43,7 +43,7 @@ const garminVenu4: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-The Garmin Venu 4 is the most complete smartwatch-shaped option in this comparison. Garmin HRV Status builds an overnight baseline over about three weeks and then flags whether you are balanced or unbalanced, and the Venu 4 carries the most advanced Garmin sleep tracking to date. Battery life comfortably outlasts a general-purpose smartwatch, which matters: a tracker you can wear for several nights between charges produces a more continuous HRV record. There is no subscription — the price buys everything.
+The Garmin Venu 4 is the most complete smartwatch-shaped option in this comparison. Garmin HRV Status builds an overnight [HRV](/glossary/heart-rate-variability) baseline over about three weeks and then flags whether you are balanced or unbalanced, and the Venu 4 carries the most advanced Garmin sleep tracking to date. Battery life comfortably outlasts a general-purpose smartwatch, which matters: a tracker you can wear for several nights between charges produces a more continuous HRV record. There is no subscription — the price buys everything.
 
 ## Where it falls short
 

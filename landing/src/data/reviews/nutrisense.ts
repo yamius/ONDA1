@@ -42,7 +42,7 @@ const nutrisense: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Nutrisense is the CGM programme for people who want a person, not an app, helping them interpret the data. Every subscriber is paired with a registered dietitian who reviews glucose curves, sends weekly written summaries, and answers questions through in-app messaging. The hardware is Dexcom G7, the same sensor underneath Levels and Stelo, so the accuracy ceiling is identical — the difference is the coach. For users who need accountability or who do not trust themselves to interpret meal data alone, that human layer is exactly the value proposition.
+Nutrisense is the CGM programme for people who want a person, not an app, helping them interpret the data. Every subscriber is paired with a registered dietitian who reviews glucose curves — flagging [glucose spikes](/glossary/glucose-spikes) and coaching toward [insulin sensitivity](/glossary/insulin-sensitivity) — sends weekly written summaries, and answers questions through in-app messaging. The hardware is Dexcom G7, the same sensor underneath Levels and Stelo, so the accuracy ceiling is identical — the difference is the coach. For users who need accountability or who do not trust themselves to interpret meal data alone, that human layer is exactly the value proposition.
 
 ## Where it falls short
 

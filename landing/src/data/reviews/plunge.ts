@@ -42,7 +42,7 @@ const plunge: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-The Plunge All-In is the cold-plunge tub that defined consumer expectations for the category. The 1 HP integrated chiller is the most capable in the consumer space, the ozone sanitation system cuts water-change frequency to every 2–4 weeks rather than weekly, and the build holds up outdoors in the multi-year ownership reports. Founder Michael Garrett built the company around the cold-exposure community, and the protocol guidance is honest about what the research supports.
+The Plunge All-In is the cold-plunge tub that defined consumer expectations for the category. The 1 HP integrated chiller is the most capable in the consumer space, the ozone sanitation system cuts water-change frequency to every 2–4 weeks rather than weekly, and the build holds up outdoors in the multi-year ownership reports. Founder Michael Garrett built the company around the cold-exposure community, and the protocol guidance is honest about what the research supports — the [norepinephrine](/glossary/norepinephrine) and [dopamine](/glossary/dopamine) surge cold drives, framed as [hormesis](/glossary/hormesis) rather than a cure-all.
 
 ## Where it falls short
 

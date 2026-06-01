@@ -43,7 +43,7 @@ const whoop5: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-The Whoop 5.0 is built around one idea: recovery. Rather than a morning spot-check, it samples HRV continuously through the night and reports a full-sleep average drawn from hundreds of readings — the cleanest basis for a daily recovery signal of the three devices here. The screenless band is easy to forget you are wearing, the current generation pushed battery life out to roughly two weeks, and the slide-on battery pack means it never has to leave your wrist to charge.
+The Whoop 5.0 is built around one idea: recovery. Rather than a morning spot-check, it samples [HRV](/glossary/heart-rate-variability) continuously through the night and reports a full-sleep average drawn from hundreds of readings — the cleanest basis for a daily recovery signal of the three devices here. The screenless band is easy to forget you are wearing, the current generation pushed battery life out to roughly two weeks, and the slide-on battery pack means it never has to leave your wrist to charge.
 
 ## Where it falls short
 
@@ -51,7 +51,7 @@ Whoop is sold as a membership, not a product. There is no hardware to own — st
 
 ## Who it is for
 
-Choose the Whoop 5.0 if you are an athlete or serious trainer who makes decisions on a daily recovery score and wants continuous overnight HRV without a screen on your wrist. If you dislike perpetual subscriptions, or you want a device that also tells the time, the alternatives will fit better.
+Choose the Whoop 5.0 if you are an athlete or serious trainer who makes decisions on a daily recovery score and wants continuous overnight [HRV](/glossary/heart-rate-variability) without a screen on your wrist. If you dislike perpetual subscriptions, or you want a device that also tells the time, the alternatives will fit better.
 
 ---
 

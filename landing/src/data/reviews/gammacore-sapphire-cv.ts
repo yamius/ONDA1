@@ -42,7 +42,7 @@ const gammacoreSapphireCv: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-gammaCore Sapphire CV is the only non-invasive vagus nerve stimulator with FDA clearance — a fact that puts it in a different regulatory tier from everything else in this list. It is cleared for migraine prevention, episodic-migraine acute treatment, and cluster-headache acute and preventive treatment, backed by more than thirty randomised controlled trials over the past decade. The device is held against the side of the neck over the carotid sheath and delivers a proprietary 5 kHz burst waveform for two-minute sessions; dosing is set clinically rather than by app.
+gammaCore Sapphire CV is the only non-invasive [vagus nerve](/glossary/vagus-nerve) stimulator with FDA clearance — a fact that puts it in a different regulatory tier from everything else in this list. It is cleared for migraine prevention, episodic-migraine acute treatment, and cluster-headache acute and preventive treatment, backed by more than thirty randomised controlled trials over the past decade. The device is held against the side of the neck over the carotid sheath and delivers a proprietary 5 kHz burst waveform for two-minute sessions; dosing is set clinically rather than by app.
 
 ## Where it falls short
 

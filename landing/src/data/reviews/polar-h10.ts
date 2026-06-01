@@ -43,7 +43,7 @@ const polarH10: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-The Polar H10 is not really a wearable — it is a measurement instrument, and within this comparison it is the reference the others are judged against. Its electrical ECG sensor reads the heart's signal directly rather than inferring it from blood flow, and peer-reviewed validation finds near-perfect agreement with clinical ECG for resting HRV. It also broadcasts raw beat-to-beat (RR) intervals over both Bluetooth and ANT+, so it pairs with effectively any HRV app. At around 90 USD with no subscription, nothing else here is this accurate or this open.
+The Polar H10 is not really a wearable — it is a measurement instrument, and within this comparison it is the reference the others are judged against. Its electrical ECG sensor reads the heart's signal directly rather than inferring it from blood flow, and peer-reviewed validation finds near-perfect agreement with clinical ECG for resting [HRV](/glossary/heart-rate-variability). It also broadcasts raw beat-to-beat (RR) intervals over both Bluetooth and ANT+, so it pairs with effectively any HRV app. At around 90 USD with no subscription, nothing else here is this accurate or this open.
 
 ## Where it falls short
 

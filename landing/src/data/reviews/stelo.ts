@@ -42,7 +42,7 @@ const stelo: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Stelo is the cheapest legitimate way to put Dexcom G7 on your arm. The hardware is identical to what Levels and Nutrisense ship at two to three times the price — the same sensor, the same accuracy ceiling (MARD ~8.2% in independent comparison), the same 30-minute warm-up. What you give up is the wrapper: Stelo’s app is competent rather than category-leading, the coaching layer is in-app AI rather than a registered dietitian, and the integration ecosystem is narrower than Levels. As an OTC product cleared by the FDA in 2024 it requires no prescription, and you can buy sensors one pack at a time.
+Stelo is the cheapest legitimate way to put Dexcom G7 on your arm and watch your [glucose spikes](/glossary/glucose-spikes) in real time. The hardware is identical to what Levels and Nutrisense ship at two to three times the price — the same sensor, the same accuracy ceiling (MARD ~8.2% in independent comparison), the same 30-minute warm-up. What you give up is the wrapper: Stelo’s app is competent rather than category-leading, the coaching layer is in-app AI rather than a registered dietitian, and the integration ecosystem is narrower than Levels. As an OTC product cleared by the FDA in 2024 it requires no prescription, and you can buy sensors one pack at a time.
 
 ## Where it falls short
 

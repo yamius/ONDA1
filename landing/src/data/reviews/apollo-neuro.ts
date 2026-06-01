@@ -42,7 +42,7 @@ const apolloNeuro: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Apollo Neuro is the easiest device in this category to actually live with. It is worn on the wrist or ankle like a band, delivers low-frequency vibration rather than electrical pulses, and runs in the background — no setup, no pads, no titration. The founding team at University of Pittsburgh has published peer-reviewed HRV and recovery trials on it, which is more than most non-electrical vagal devices can claim. Seven programmes cover different intent states (calm, energy, sleep, focus, recover, social, clear), with intensity and duration both adjustable.
+Apollo Neuro is the easiest device in this category to actually live with. It is worn on the wrist or ankle like a band, delivers low-frequency vibration rather than electrical pulses, and runs in the background — no setup, no pads, no titration. The founding team at University of Pittsburgh has published peer-reviewed [HRV](/glossary/heart-rate-variability) and recovery trials on it — the vibration is pitched as a safety cue that nudges the [vagus nerve](/glossary/vagus-nerve) toward [parasympathetic](/glossary/parasympathetic-nervous-system) tone — which is more than most non-electrical vagal devices can claim. Seven programmes cover different intent states (calm, energy, sleep, focus, recover, social, clear), with intensity and duration both adjustable.
 
 ## Where it falls short
 

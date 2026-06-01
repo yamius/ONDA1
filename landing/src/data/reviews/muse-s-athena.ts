@@ -43,7 +43,7 @@ const museSAthena: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Muse S Athena is the most complete consumer brain-training headset in 2026. Interaxon kept everything that made the original Muse line work — soft headband, deep meditation content library, sleep-friendly form factor — and added two things almost no competitor has: prefrontal fNIRS oxygenation sensing alongside the four-channel EEG, and explicit sleep staging derived from the EEG signal itself. The combination is genuinely novel in the consumer space; the meditation, focus and sleep modules all draw on it.
+Muse S Athena is the most complete consumer brain-training headset in 2026. Interaxon kept everything that made the original Muse line work — soft headband, deep meditation content library, sleep-friendly form factor — and added two things almost no competitor has: [prefrontal](/glossary/prefrontal-cortex) fNIRS oxygenation sensing alongside the four-channel EEG, and explicit sleep staging — including [slow-wave sleep](/glossary/slow-wave-sleep) — derived from the EEG signal itself. The combination is genuinely novel in the consumer space; the meditation, focus and sleep modules all draw on it.
 
 ## Where it falls short
 

@@ -42,7 +42,7 @@ const sensate: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Sensate is the most pleasant device in this category. It is a smooth river-stone-shaped pebble that lies on the sternum during a 10–30 minute session, emitting low-frequency infrasonic vibration through the chest while a paired soundscape plays through headphones. The premise — that infrasonic resonance modulates vagal tone via thoracic mechanoreceptors — is supported by one published RCT and several company-funded studies. As a passive evening wind-down ritual it is well-loved by daily users.
+Sensate is the most pleasant device in this category. It is a smooth river-stone-shaped pebble that lies on the sternum during a 10–30 minute session, emitting low-frequency infrasonic vibration through the chest while a paired soundscape plays through headphones. The premise — that infrasonic resonance modulates [vagus nerve](/glossary/vagus-nerve) tone via thoracic mechanoreceptors, pulling the system toward [parasympathetic](/glossary/parasympathetic-nervous-system) calm — is supported by one published RCT and several company-funded studies. As a passive evening wind-down ritual it is well-loved by daily users.
 
 ## Where it falls short
 

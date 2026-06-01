@@ -43,7 +43,7 @@ const samsungGalaxyRing: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-The Samsung Galaxy Ring is the most direct alternative to the Oura Ring 4, and its headline advantage is simple: no subscription. The purchase unlocks every feature for good, where Oura keeps charging monthly. As hardware it is a comfortable, well-made ring with a multi-day battery and competent overnight HRV and sleep tracking — for a Samsung phone owner already inside Samsung Health, it is a natural, friction-free choice.
+The Samsung Galaxy Ring is the most direct alternative to the Oura Ring 4, and its headline advantage is simple: no subscription. The purchase unlocks every feature for good, where Oura keeps charging monthly. As hardware it is a comfortable, well-made ring with a multi-day battery and competent overnight [HRV](/glossary/heart-rate-variability) and sleep tracking — for a Samsung phone owner already inside Samsung Health, it is a natural, friction-free choice.
 
 ## Where it falls short
 

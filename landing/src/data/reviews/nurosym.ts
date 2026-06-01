@@ -42,7 +42,7 @@ const nurosym: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Nurosym wins this comparison on the criterion that matters most for medical devices: evidence. The underlying Parasym hardware has been the experimental platform for dozens of published trials of transcutaneous auricular VNS — including HRV modulation, inflammatory-marker reduction and long-COVID symptom studies — which no other consumer tVNS device can claim. The parameters are documented (25 Hz pulse, 200–1000 µs pulse width, intensity user-titrated), so a clinician or self-experimenter can describe exactly what dose is being delivered.
+Nurosym wins this comparison on the criterion that matters most for medical devices: evidence. The underlying Parasym hardware has been the experimental platform for dozens of published trials of transcutaneous auricular VNS — stimulating the [vagus nerve](/glossary/vagus-nerve) to shift autonomic balance toward the [parasympathetic](/glossary/parasympathetic-nervous-system) branch, with measured [HRV](/glossary/heart-rate-variability) modulation, inflammatory-marker reduction and long-COVID symptom studies — which no other consumer tVNS device can claim. The parameters are documented (25 Hz pulse, 200–1000 µs pulse width, intensity user-titrated), so a clinician or self-experimenter can describe exactly what dose is being delivered.
 
 ## Where it falls short
 

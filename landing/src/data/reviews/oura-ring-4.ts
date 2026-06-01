@@ -43,7 +43,7 @@ const ouraRing4: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-For the one job that matters most to ONDA — a clean overnight HRV signal — the Oura Ring 4 is the strongest consumer device of 2026. Worn on the finger, its optical sensor holds a stable reading through the night, and published Bland–Altman work puts its nighttime RMSSD within a few milliseconds of an ECG chest strap. Sleep staging is the other half of the story: independent validation against clinical polysomnography lands near 79% epoch-by-epoch agreement — the best of the three devices here.
+For the one job that matters most to ONDA — a clean overnight [HRV](/glossary/heart-rate-variability) signal — the Oura Ring 4 is the strongest consumer device of 2026. Worn on the finger, its optical sensor holds a stable reading through the night, and published Bland–Altman work puts its nighttime RMSSD within a few milliseconds of an ECG chest strap. Sleep staging is the other half of the story: independent validation against clinical polysomnography lands near 79% epoch-by-epoch agreement on [deep sleep](/glossary/deep-sleep) and REM — the best of the three devices here.
 
 ## Where it falls short
 

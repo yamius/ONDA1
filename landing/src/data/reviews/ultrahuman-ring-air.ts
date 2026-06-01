@@ -43,7 +43,7 @@ const ultrahumanRingAir: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-The Ultrahuman Ring Air gets the fundamentals right. It is one of the lightest rings you can wear, it samples HRV continuously — updating every couple of minutes at rest — and there is no subscription: the purchase buys lifelong access to the ring and your own data. Early third-party checks have put its sleep-stage agreement high, and the app, built around add-on "PowerPlugs", is genuinely capable.
+The Ultrahuman Ring Air gets the fundamentals right. It is one of the lightest rings you can wear, it samples [HRV](/glossary/heart-rate-variability) continuously — updating every couple of minutes at rest — and there is no subscription: the purchase buys lifelong access to the ring and your own data. Early third-party checks have put its sleep-stage agreement high, and the app, built around add-on "PowerPlugs", is genuinely capable.
 
 ## Where it falls short
 
