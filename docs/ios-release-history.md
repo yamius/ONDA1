@@ -8,8 +8,8 @@
 
 ## Текущий статус
 
-- **На ревью:** `1.7.6` — ⏳ **SUBMITTED 2026-05-31**, ожидает ревью. Build `202605310519` (= CFBundleShortVersionString 1.7.6) под записью ASC «1.1.6». **Один билд = всё сразу:** SKAdNetwork attribution (ASA + Reddit, ATT-ключ удалён, TenjinSDK pinned) + live Coherence на практике (HR-RSA delta-волна) + Resting HRV trend на home (реальный HealthKit SDNN + числа + HRV read-auth fix) + home reorder/highlight + R1-1 guiding register. Device-валидация на реальных часах пройдена (live coherence + HRV-permission лист). Метаданные согласованы с приложением (live = Coherence, trend = real HRV; «beat-to-beat» / «Live HRV»-overclaim убраны из описания и промо). Demo-логин не требуется (free-tier sampler без авторизации), ноты это явно говорят.
-- **LIVE в App Store:** `1.7.5` — ✅ **APPROVED 2026-05-29**, прошла ревью за **< 3 часов** (fast-track), в тот же день в сторе. Заменила отклонённый 1.7.4; face-data вопросы не повторились.
+- **LIVE в App Store:** `1.7.6` — ✅ **APPROVED 2026-06-02** (submitted 2026-05-31). Build `202605310519` (= CFBundleShortVersionString 1.7.6) под записью ASC «1.1.6». **Один билд = всё сразу:** SKAdNetwork attribution (ASA + Reddit, ATT-ключ удалён, TenjinSDK pinned) + live Coherence на практике (HR-RSA delta-волна) + Resting HRV trend на home (реальный HealthKit SDNN + числа + HRV read-auth fix) + home reorder/highlight + R1-1 guiding register. Чистый аппрув: метаданные согласованы с приложением (live = Coherence, trend = real HRV; «beat-to-beat»/«Live HRV»-overclaim убраны), honesty-линия выдержана, Voice/Face/face-data вопросы не всплыли. Demo-логин не требовался (free-tier sampler без авторизации).
+- **Предыдущий live:** `1.7.5` — ✅ **APPROVED 2026-05-29**, прошла ревью за **< 3 часов** (fast-track). Заменила отклонённый 1.7.4; face-data вопросы не повторились.
 - **Предыдущий сабмит:** `1.7.4 (202605272243)` — **REJECTED 2026-05-29** по Guideline 2.1 (Information Needed про face data), билд удалён. См. секцию ниже.
 - **Ветки:** `claude/practice-live-coherence` влита в `main` FF-merge'ем (`647c3d1..4395c3a`); main = полный 1.7.6.
 - **Отложено (свои билды позже):** workout-session lifecycle фикс («сессия висит весь день») · HRV grant в основном онбординге (сейчас только через Connections → узкий reach) · Android real-HRV через Health Connect.
@@ -65,7 +65,7 @@
 | **1.7.3** | 2026-05-23 | **feat** | **ATT prompt убран целиком**, онбординг скрыт, push primer отложен до 2 практик |
 | **1.7.4** | 2026-05-25 | **REJECTED** | **Build `1.7.4 (202605272243)`** — Apple отклонила 2026-05-29 за face-data privacy questions (см. ниже) |
 | **1.7.5** | 2026-05-28 | ✅ **APPROVED / LIVE** | Прошла ревью 2026-05-29 за <3ч. SKStoreReviewController на 2-й практике, home redesign, Hume Stream fix, Voice/Face Check rebrand, light-theme fixes |
-| **1.7.6** | 2026-05-31 | ⏳ **SUBMITTED** | Build `202605310519`. SKAN attribution + live Coherence (HR-RSA delta-волна) + Resting HRV trend (real HealthKit SDNN + числа) + HealthKit HRV auth fix + home reorder/highlight + R1-1 register. Влита в main FF. Ожидает ревью |
+| **1.7.6** | 2026-05-31 | ✅ **APPROVED / LIVE** | Approved 2026-06-02. Build `202605310519`. SKAN attribution + live Coherence (HR-RSA delta-волна) + Resting HRV trend (real HealthKit SDNN + числа) + HealthKit HRV auth fix + home reorder/highlight + R1-1 register. Чистый аппрув |
 
 ---
 
@@ -273,7 +273,7 @@ ONDA Life Team
 - **Promo:** "Live heart-rhythm coherence from your Apple Watch. Watch it build in real time during 3-min breathing practices. Real data, not another after-session score." (the earlier "Live HRV biofeedback" + "beat-to-beat data" overclaim was removed — live = coherence, the false RR-interval claim is gone.)
 - **Description:** rewritten to lead with live coherence (drawn from Apple Watch heart-rate data) + a separate "resting-HRV trend (real SDNN)". Voice/Face Check not mentioned; SKAN not mentioned.
 
-**Outcome:** ⏳ **SUBMITTED 2026-05-31** — awaiting review. (Update to APPROVED / REJECTED + reason when Apple responds.)
+**Outcome:** ✅ **APPROVED 2026-06-02** (submitted 2026-05-31) — clean approval, no follow-up questions. Validated the honesty-aligned approach a second time: app + metadata consistent (live = Coherence, trend = real HRV), no Voice/Face/face-data scrutiny, demo-login correctly omitted (free-tier sampler needs none). Same smooth path as 1.7.5.
 
 ---
 
