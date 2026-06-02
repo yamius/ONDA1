@@ -89,31 +89,16 @@ function wrap(name: string, fontSize: number, maxLines = 2, maxWidth = W - 160):
   return lines
 }
 
-// The radial accents carry a mid stop (smoother falloff) and a faint
-// fractal-noise overlay dithers the gradient — subtle low-opacity gradients
-// over a dark fill band hard in 8-bit PNG; the grain breaks the steps and
-// reads as texture, not noise. (Fix for visible gradient stepping, 6.5.)
+// Flat background — no large radial gradient. Subtle dark gradients over a
+// wide area band on 6-bit / FRC desktop panels no matter how we dither
+// (enough dither to mask 6-bit steps shows as visible grain on good 8-bit
+// phone/OLED panels — an unwinnable trade). A flat fill is banding-proof on
+// every display. Visual interest comes from the bordered score badge and a
+// thin top accent rule, not a gradient wash. (Banding fix, 6.5.)
 const sharedDefs = `
-  <defs>
-    <radialGradient id="g1" cx="50%" cy="0%" r="85%">
-      <stop offset="0%" stop-color="${CYAN}" stop-opacity="0.10"/>
-      <stop offset="45%" stop-color="${CYAN}" stop-opacity="0.025"/>
-      <stop offset="78%" stop-color="${CYAN}" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="g2" cx="50%" cy="100%" r="85%">
-      <stop offset="0%" stop-color="${GREEN}" stop-opacity="0.08"/>
-      <stop offset="45%" stop-color="${GREEN}" stop-opacity="0.02"/>
-      <stop offset="78%" stop-color="${GREEN}" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="grain" x="0" y="0" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" stitchTiles="stitch"/>
-      <feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.04 0"/>
-    </filter>
-  </defs>
   <rect width="${W}" height="${H}" fill="${BG}"/>
-  <rect width="${W}" height="${H}" fill="url(#g1)"/>
-  <rect width="${W}" height="${H}" fill="url(#g2)"/>
-  <rect width="${W}" height="${H}" filter="url(#grain)"/>
+  <rect x="0" y="0" width="${W}" height="4" fill="${GREEN}" fill-opacity="0.5"/>
+  <rect x="0" y="0" width="${W * 0.5}" height="4" fill="${CYAN}" fill-opacity="0.6"/>
   <text x="80" y="90" font-family="monospace" font-size="26" font-weight="700" letter-spacing="6">
     <tspan fill="${GREEN}">ONDA</tspan><tspan fill="${MUTE}"> · </tspan><tspan fill="${CYAN}">LIFE</tspan>
   </text>`
