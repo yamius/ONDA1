@@ -46,6 +46,35 @@ function buildImageBlockForArticle(slug: string): string {
     </image:image>`
 }
 
+/** Image:image block for a product review (roadmap 6.7). Uses the explicit
+ *  product photo when set, else the generated branded score card at
+ *  /images/reviews/<slug>.png (always present for a live review). */
+function buildImageBlockForReview(slug: string): string {
+  const r = getReviewBySlug(slug)
+  if (!r) return ''
+  const loc = `${SITE_URL}${r.image ?? `/images/reviews/${slug}.png`}`
+  const title = `${r.name} review`
+  const caption = r.imageAlt || `${r.name} — ONDA review, scored ${r.overallScore.toFixed(1)}/10`
+  return `\n    <image:image>
+      <image:loc>${escapeXml(loc)}</image:loc>
+      <image:title>${escapeXml(title)}</image:title>
+      <image:caption>${escapeXml(caption)}</image:caption>
+    </image:image>`
+}
+
+/** Image:image block for a round-up. Uses the generated branded round-up
+ *  card at /images/reviews/<slug>.png. */
+function buildImageBlockForComparison(slug: string): string {
+  const c = getComparisonBySlug(slug)
+  if (!c) return ''
+  const loc = `${SITE_URL}/images/reviews/${slug}.png`
+  return `\n    <image:image>
+      <image:loc>${escapeXml(loc)}</image:loc>
+      <image:title>${escapeXml(c.title)}</image:title>
+      <image:caption>${escapeXml(c.description)}</image:caption>
+    </image:image>`
+}
+
 // Featured slugs get higher priority + weekly changefreq so Google
 // re-crawls them more often. Regular articles/terms drop one tier
 // below to make the relative weighting visible to crawlers.
@@ -59,6 +88,18 @@ function articleSlugFromRoute(route: string): string | null {
 
 function glossarySlugFromRoute(route: string): string | null {
   const m = route.match(/^\/glossary\/([^/]+)$/)
+  return m ? m[1] : null
+}
+
+/** EN review slug (excludes the hub, methodology, and compare/* round-ups). */
+function reviewSlugFromRoute(route: string): string | null {
+  const m = route.match(/^\/reviews\/([^/]+)$/)
+  return m && m[1] !== 'methodology' ? m[1] : null
+}
+
+/** EN round-up slug. */
+function comparisonSlugFromRoute(route: string): string | null {
+  const m = route.match(/^\/reviews\/compare\/([^/]+)$/)
   return m ? m[1] : null
 }
 
@@ -281,10 +322,19 @@ const urls = routes.map((path) => {
   const lastmod = getLastmod(path)
   const priority = getPriority(path)
   const changefreq = getChangefreq(path)
-  // Image Sitemap extension: list the article's hero image so Google
-  // Image Search can index it with our title + caption metadata.
+  // Image Sitemap extension: list the page's hero image so Google Image
+  // Search can index it with our title + caption metadata. Articles use
+  // their hero; reviews + round-ups use the branded score card (6.7).
   const articleSlug = articleSlugFromRoute(path)
-  const images = articleSlug ? buildImageBlockForArticle(articleSlug) : ''
+  const compareSlug = comparisonSlugFromRoute(path)
+  const reviewSlug = compareSlug ? null : reviewSlugFromRoute(path)
+  const images = articleSlug
+    ? buildImageBlockForArticle(articleSlug)
+    : compareSlug
+      ? buildImageBlockForComparison(compareSlug)
+      : reviewSlug
+        ? buildImageBlockForReview(reviewSlug)
+        : ''
   let alternates = ''
   if (LOCALIZED_ROUTE_SET.has(path)) {
     const base = stripLangPrefix(path)
