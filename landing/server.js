@@ -469,6 +469,20 @@ app.use(
     immutable: true,
     index: false, // disable default index.html so we control SSG routing
     redirect: false, // no trailing-slash redirect: /articles stays /articles (canonical)
+    setHeaders: (res, filePath) => {
+      // Vite assets under /assets/ are content-hashed — new content always
+      // means a new filename, so immutable-1y is correct and ideal.
+      // Everything else (images/reviews/*.png cards, images/articles/*,
+      // og-preview, fonts, etc.) keeps a STABLE filename, so immutable-1y
+      // would pin a stale copy in browsers/CDN forever when the content
+      // changes at the same URL (this is what made redesigned review cards
+      // keep showing the old banded gradient after redeploy). Give those a
+      // revalidating cache: 1h fresh, then a cheap ETag/Last-Modified 304
+      // re-check, so content updates propagate within the hour.
+      if (!/[\\/]assets[\\/]/.test(filePath)) {
+        res.setHeader('Cache-Control', 'public, max-age=3600, must-revalidate')
+      }
+    },
   }),
 )
 
