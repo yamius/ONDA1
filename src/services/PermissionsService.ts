@@ -1,6 +1,7 @@
 import { Capacitor } from '@capacitor/core';
 import { LocalNotifications } from '@capacitor/local-notifications';
 import OndaWatch from '../plugins/ondaWatch';
+import HealthKitHeartRate from '../plugins/healthKitHeartRate';
 
 export interface PermissionStatus {
   microphone: boolean;
@@ -178,22 +179,25 @@ export class PermissionsService {
     }
 
     try {
-      const CapacitorHealth = (window as any).CapacitorHealth;
-      if (!CapacitorHealth) {
-        console.error('[Permissions] CapacitorHealth plugin not available');
-        return false;
-      }
-
-      // Запрашиваем разрешения на чтение и запись
-      // READ: HeartRate (пульс) + Sleep (сон для Ритма Жизни)
-      // WRITE: Workout + MindfulSession (сохранение практик в Здоровье)
-      const result = await CapacitorHealth.requestAuthorization({
-        read: ['HKQuantityTypeIdentifierHeartRate', 'HKCategoryTypeIdentifierSleepAnalysis'],
-        write: ['HKWorkoutTypeIdentifier', 'HKCategoryTypeIdentifierMindfulSession']
-      });
-
-      console.log('[Permissions] HealthKit authorization result:', result);
-      return true; // Apple всегда возвращает success даже если пользователь отказал
+      // iPhone-side HealthKit authorization via our own HealthKitHeartRate
+      // plugin. This is the path that actually reaches iOS HealthKit AND can
+      // request HRV: requestFullAuthorization asks for Heart Rate + HRV (SDNN)
+      // + Sleep in one system sheet.
+      //
+      // Previously this called `(window as any).CapacitorHealth
+      // .requestAuthorization(...)` — but the installed capacitor-health
+      // plugin exposes no such method and supports no HRV type, so iPhone
+      // HealthKit (and the HRV grant) was never requested from the main
+      // onboarding flow. HRV could only be granted by opening Connection
+      // settings (which already used THIS plugin) → the resting-HRV trend
+      // stayed empty for the majority. Wiring the full auth here surfaces the
+      // HRV sheet during onboarding, for everyone.
+      const result = await HealthKitHeartRate.requestFullAuthorization();
+      console.log('[Permissions] HealthKit full authorization result:', result);
+      // iOS returns "authorized" regardless of the user's actual choice (read
+      // status is hidden for privacy); a localStorage flag elsewhere tracks
+      // the real grant. We report success if the request was dispatched.
+      return result?.authorized ?? true;
     } catch (error) {
       console.error('[Permissions] Error requesting health permissions:', error);
       return false;
@@ -236,12 +240,15 @@ export class PermissionsService {
     // Он будет запрошен только в момент, когда реально нужен (эмоциональная проверка).
     status.microphone = await this.checkMicrophonePermission();
 
-    // HealthKit (только read) - capacitor-health не установлен
-    // Пульс работает через нативный HKHealthStore в OndaWatchPlugin
-    console.log('[Permissions] HealthKit works via native OndaWatchPlugin');
-    status.healthRead = true; // Считаем что разрешение есть (работает нативно)
-    status.healthWrite = false; // Не используем
-    onProgress?.('healthRead', true);
+    // iPhone HealthKit (read): Heart Rate + HRV (SDNN, for the resting-HRV
+    // trend) + Sleep — surfaced via the iOS HealthKit sheet (HealthKitHeartRate
+    // plugin). HR also streams live from the Watch over WCSession (watchOS
+    // auth, separate), but the HRV trend reads iPhone HealthKit SDNN — so THIS
+    // grant is what lets the trend populate. Was previously a no-op that just
+    // assumed `healthRead = true`, so HRV was never requested in onboarding.
+    status.healthRead = await this.requestHealthPermissions();
+    status.healthWrite = false; // write не используем
+    onProgress?.('healthRead', status.healthRead);
     
     // 3. Уведомления — НЕ запрашиваем здесь.
     //    Notifications обрабатываются отдельным NotificationPrimerModal
