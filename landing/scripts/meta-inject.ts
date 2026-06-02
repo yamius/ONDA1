@@ -1984,6 +1984,8 @@ export function getMetaForRoute(route: string): RouteMeta {
         url,
         breadcrumbs,
         ogType: 'article',
+        // Branded ranked-round-up card as og:image (roadmap 6.5).
+        image: `${SITE_URL}/images/reviews/${comparison.slug}.png`,
         itemList: { name: comparison.title, description: comparison.description, url, items },
         faq: comparison.faq.length
           ? { mainEntity: comparison.faq.map((f) => ({ question: f.q, answer: f.a })), url }
@@ -2079,7 +2081,10 @@ export function getMetaForRoute(route: string): RouteMeta {
   if (reviewMatch) {
     const review = getReviewBySlug(reviewMatch[1])
     if (review) {
-      const absImage = review.image ? `${SITE_URL}${review.image}` : undefined
+      // Default to the generated branded score card (roadmap 6.5/6.6) when a
+      // review has no explicit photo. A review that later gets a real photo
+      // sets `image:` in its data file, which overrides the card here.
+      const absImage = `${SITE_URL}${review.image ?? `/images/reviews/${review.slug}.png`}`
       return {
         title: `${review.name} Review — Scored ${review.overallScore.toFixed(1)}/10 | ONDA Life`,
         description: review.description,

@@ -79,6 +79,16 @@ export function ReviewPage() {
         {tReviews('ui.updated')} {review.dateModified}
       </p>
 
+      {/* Branded score card — og:image + Product.image + visible hero (6.5).
+          Falls back to the generated card when no explicit product photo. */}
+      <img
+        src={review.image ?? `/images/reviews/${slug}.png`}
+        alt={review.imageAlt ?? `${review.name} — ONDA review, scored ${review.overallScore.toFixed(1)}/10`}
+        width={1200}
+        height={630}
+        className="mb-8 w-full rounded-xl border border-white/10"
+      />
+
       {/* Score + verdict */}
       <div className="mb-8 flex items-start gap-5 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5">
         <div className="shrink-0 text-center">

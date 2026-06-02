@@ -60,6 +60,14 @@ export function ComparisonPage() {
       <p className="mb-6 font-mono text-xs text-white/30">
         {tReviews('ui.updated')} {comparison.dateModified}
       </p>
+      {/* Branded round-up card — og:image + visible hero (roadmap 6.5). */}
+      <img
+        src={`/images/reviews/${slug}.png`}
+        alt={`${comparison.title} — ONDA editorial ranking`}
+        width={1200}
+        height={630}
+        className="mb-8 w-full rounded-xl border border-white/10"
+      />
       <p className="mb-12 font-mono text-sm leading-relaxed text-white/60">
         {tIntro}
       </p>
