@@ -33,6 +33,18 @@ class WorkoutManager: NSObject, ObservableObject {
     private var workoutStartTime: Date?
     private var extendedSessionStartTime: Date?
     private var lastReachabilityChange: Date?
+
+    // Dead-man's-switch. `lastPhoneContact` = the last time the phone sent ANY
+    // message (start / heartbeat / …). nil means the phone has never driven
+    // this session — e.g. the watch app was opened standalone — and the
+    // watchdog leaves it alone so standalone HR viewing still works. Once the
+    // phone HAS been in contact, going silent for longer than the timeout means
+    // it was force-quit or suspended too long and can no longer send "stop"
+    // (iOS doesn't reliably call willTerminate on a backgrounded app that gets
+    // killed). So the watch ends the workout itself instead of streaming HR —
+    // and draining the watch battery — forever.
+    private var lastPhoneContact: Date?
+    private let phoneContactTimeout: TimeInterval = 45
     
     override init() {
         super.init()
@@ -108,11 +120,25 @@ class WorkoutManager: NSObject, ObservableObject {
     private func startReconnectionMonitor() {
         reconnectionTimer?.invalidate()
         reconnectionTimer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: true) { [weak self] _ in
+            self?.checkPhoneContactWatchdog()
             self?.checkAndSendPendingData()
         }
         print("[WorkoutManager] Reconnection monitor started")
     }
-    
+
+    // Dead-man's-switch check — see `lastPhoneContact`. Runs on the 2s
+    // reconnection timer (which fires while a workout keeps the watch app alive
+    // in the background). Only acts on a phone-driven session that has gone
+    // silent past the timeout; a standalone session (lastPhoneContact == nil)
+    // is left untouched.
+    private func checkPhoneContactWatchdog() {
+        guard isActive, let last = lastPhoneContact else { return }
+        let silence = Date().timeIntervalSince(last)
+        guard silence > phoneContactTimeout else { return }
+        logDiagnostic("🛑 No phone contact for \(Int(silence))s (>\(Int(phoneContactTimeout))s) — phone closed/suspended, auto-stopping workout", important: true)
+        stopWorkout()
+    }
+
     private func checkAndSendPendingData() {
         guard WCSession.default.activationState == .activated else {
             // Попытка переактивировать сессию
@@ -368,6 +394,10 @@ class WorkoutManager: NSObject, ObservableObject {
         // *deliberate* stop (→ stay dead). Flipping it first makes this stop
         // deterministic and prevents the session from coming back to life.
         isActive = false
+        // Clear phone-contact tracking so a later standalone session (opened on
+        // the watch with no phone driving it) isn't immediately killed by a
+        // stale timestamp from this session.
+        lastPhoneContact = nil
 
         let endingBuilder = builder
         session.end()
@@ -870,8 +900,11 @@ extension WorkoutManager: WCSessionDelegate {
         }
         
         print("[WorkoutManager] 🎯 Processing command: '\(cmd)'")
-        
+
         DispatchQueue.main.async {
+            // Any inbound command means the phone is alive and in contact —
+            // refresh the dead-man's-switch timestamp (see `lastPhoneContact`).
+            self.lastPhoneContact = Date()
             switch cmd {
             case "REQUEST_OPEN":
                 print("[WorkoutManager] 📳 REQUEST_OPEN command received")
