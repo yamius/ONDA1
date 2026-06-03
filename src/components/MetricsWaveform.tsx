@@ -34,6 +34,10 @@ interface MetricsWaveformProps {
   /** Render only the HR line (the live coherence visual), hiding the
    *  stress/energy delta lines. Also thickens + glows the HR stroke. */
   hrOnly?: boolean;
+  /** Emphasise one line: it renders thicker at full opacity while the other
+   *  two dim. Driven by tapping the matching biometric card on the home
+   *  screen. `null` → all three lines render normally. */
+  highlight?: 'hr' | 'stress' | 'energy' | null;
 }
 
 const WINDOW_SECONDS = 60;
@@ -91,7 +95,13 @@ export function MetricsWaveform({
   forceDark = false,
   heightPx,
   hrOnly = false,
+  highlight = null,
 }: MetricsWaveformProps) {
+  // When a line is highlighted, thicken it and dim the other two.
+  const lineW = (metric: 'hr' | 'stress' | 'energy', base: number) =>
+    highlight === metric ? base + 1.8 : base;
+  const lineOpacity = (metric: 'hr' | 'stress' | 'energy') =>
+    !highlight || highlight === metric ? 1 : 0.3;
   // useTheme must be called unconditionally (rules of hooks); forceDark just
   // overrides the resolved value for color selection.
   const isLight = forceDark ? false : useTheme().resolved === 'light';
@@ -325,7 +335,8 @@ export function MetricsWaveform({
                 d={toDeltaPath(stressSlice, (s) => s.stress)}
                 fill="none"
                 stroke={colorStress}
-                strokeWidth="1.5"
+                strokeWidth={lineW('stress', 1.5)}
+                opacity={lineOpacity('stress')}
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
@@ -334,7 +345,8 @@ export function MetricsWaveform({
                 d={toDeltaPath(realtimeSlice, (s) => s.energy)}
                 fill="none"
                 stroke={colorEnergy}
-                strokeWidth="1.5"
+                opacity={lineOpacity('energy')}
+                strokeWidth={lineW('energy', 1.5)}
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
@@ -357,7 +369,8 @@ export function MetricsWaveform({
               : toPath(realtimeSlice, (s) => s.hr, HR_MIN, hrMax)}
             fill="none"
             stroke={colorHR}
-            strokeWidth={hrOnly ? '3.5' : '2.5'}
+            strokeWidth={hrOnly ? 3.5 : lineW('hr', 2.5)}
+            opacity={hrOnly ? 1 : lineOpacity('hr')}
             strokeLinecap="round"
             strokeLinejoin="round"
           />

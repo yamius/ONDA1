@@ -126,6 +126,11 @@ const OndaLevel1 = () => {
   const healthKitHeartRate = useHealthKitHeartRate({ pollingInterval: 1500 });
   const watchHeartRate = useWatchHeartRate();
   const permissions = usePermissions();
+  // Home biometric waveform: tapping a HR/Stress/Energy card emphasises its
+  // line in the MetricsWaveform below. Tap again (or another card) to switch.
+  const [highlightedMetric, setHighlightedMetric] = useState<'hr' | 'stress' | 'energy' | null>(null);
+  const toggleMetric = (m: 'hr' | 'stress' | 'energy') =>
+    setHighlightedMetric((cur) => (cur === m ? null : m));
   const { track, trackPractice } = useAnalytics();
   const { isPremium, isLoading: isSubLoading, refresh: refreshSubscription } = useSubscription();
   const platform = Capacitor.getPlatform();
@@ -5588,7 +5593,10 @@ const OndaLevel1 = () => {
             again as soon as each metric arrives. */}
         <div className="mb-6">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+            <div
+              onClick={() => toggleMetric('hr')}
+              className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center cursor-pointer transition-all ${highlightedMetric === 'hr' ? 'ring-2 ring-rose-400/70' : ''}`}
+            >
               <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
               {displayHeartRate != null && (
                 <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{displayHeartRate}</div>
@@ -5602,14 +5610,20 @@ const OndaLevel1 = () => {
               )}
               <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</div>
             </div>
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+            <div
+              onClick={() => toggleMetric('stress')}
+              className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center cursor-pointer transition-all ${highlightedMetric === 'stress' ? 'ring-2 ring-orange-400/70' : ''}`}
+            >
               <Activity className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400 mb-2 mx-auto" />
               {vitalsData.stress != null && (
                 <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.stress}%</div>
               )}
               <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.stress_label', 'Stress')}</div>
             </div>
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
+            <div
+              onClick={() => toggleMetric('energy')}
+              className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center cursor-pointer transition-all ${highlightedMetric === 'energy' ? 'ring-2 ring-blue-400/70' : ''}`}
+            >
               <Zap className="w-5 sm:w-6 h-5 sm:h-6 text-amber-400 mb-2 mx-auto" />
               {vitalsData.energy != null && (
                 <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.energy}%</div>
@@ -5623,6 +5637,7 @@ const OndaLevel1 = () => {
                 heartRate={displayHeartRate}
                 stress={vitalsData.stress}
                 energy={vitalsData.energy}
+                highlight={highlightedMetric}
               />
             ) : (
               <div

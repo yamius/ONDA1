@@ -14,6 +14,10 @@ struct ContentView: View {
     @State private var hasStartedInit: Bool = false
     @State private var showStartButton: Bool = false
     @State private var timeoutTimer: Timer? = nil
+    // True once HR has streamed at least once this session. Lets the waiting
+    // view distinguish a genuine cold start ("Starting…") from a paused state
+    // after the workout was stopped because the phone app backgrounded.
+    @State private var everHadHR: Bool = false
     
     var body: some View {
         Group {
@@ -46,6 +50,7 @@ struct ContentView: View {
                 // HR получен — сохраняем флаг, останавливаем таймер
                 UserDefaults.standard.set(true, forKey: "healthkit_permission_granted")
                 showStartButton = false
+                everHadHR = true
                 timeoutTimer?.invalidate()
                 timeoutTimer = nil
                 print("[ContentView] ✅ HR received: \(Int(newValue)) bpm")
@@ -72,21 +77,27 @@ struct ContentView: View {
     
     // MARK: - Views
     
-    // Spinner — shown for first 30 sec
+    // Idle view. Two flavours:
+    //  • cold start (never had HR) → "Starting heart rate…" + spinner.
+    //  • paused (had HR, workout stopped because the phone app backgrounded)
+    //    → "Paused" + hint, no spinner — it isn't actively starting, it's
+    //    waiting for the phone app to come back to the foreground.
     private var waitingView: some View {
         VStack(spacing: 12) {
-            Image(systemName: "heart.circle")
+            Image(systemName: everHadHR ? "pause.circle" : "heart.circle")
                 .font(.system(size: 40))
                 .foregroundColor(.cyan)
-            
-            Text("Starting\nheart rate...")
+
+            Text(everHadHR ? "Paused\nOpen ONDA on iPhone" : "Starting\nheart rate...")
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
                 .lineLimit(2)
-            
-            ProgressView()
-                .progressViewStyle(CircularProgressViewStyle())
-                .scaleEffect(1.2)
+
+            if !everHadHR {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle())
+                    .scaleEffect(1.2)
+            }
         }
         .padding(.horizontal, 8)
     }
