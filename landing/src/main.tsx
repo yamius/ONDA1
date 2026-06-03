@@ -57,6 +57,7 @@ const FastingCalculatorPage = lazy(() => import('./pages/FastingCalculatorPage')
 const JetlagPlannerPage = lazy(() => import('./pages/JetlagPlannerPage').then(m => ({ default: m.JetlagPlannerPage })))
 const OneRepMaxCalculatorPage = lazy(() => import('./pages/OneRepMaxCalculatorPage').then(m => ({ default: m.OneRepMaxCalculatorPage })))
 const BodyFatCalculatorPage = lazy(() => import('./pages/BodyFatCalculatorPage').then(m => ({ default: m.BodyFatCalculatorPage })))
+const SleepCycleCalculatorPage = lazy(() => import('./pages/SleepCycleCalculatorPage').then(m => ({ default: m.SleepCycleCalculatorPage })))
 const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
 const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
 const ReviewsSlugRouter     = lazyNs('reviews', () => import('./components/ReviewsSlugRouter'))
@@ -148,6 +149,7 @@ const app = (
             <Route path="/tools/jet-lag"         element={<JetlagPlannerPage />} />
             <Route path="/tools/one-rep-max"     element={<OneRepMaxCalculatorPage />} />
             <Route path="/tools/body-fat"        element={<BodyFatCalculatorPage />} />
+            <Route path="/tools/sleep-cycle"     element={<SleepCycleCalculatorPage />} />
             <Route path="/reviews"               element={<ReviewsPage />} />
             <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
             <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

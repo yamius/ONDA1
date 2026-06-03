@@ -135,4 +135,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'FITNESS',
     badge: '%BF',
   },
+  {
+    slug: 'sleep-cycle',
+    name: 'Sleep Cycle Calculator',
+    blurb: 'Find the best bedtime or wake time by aligning your alarm with ~90-minute sleep cycles, so you wake in lighter sleep and less groggy.',
+    live: true,
+    category: 'SLEEP',
+    badge: '90m',
+  },
 ]

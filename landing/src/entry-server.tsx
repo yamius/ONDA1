@@ -41,6 +41,7 @@ import { FastingCalculatorPage } from './pages/FastingCalculatorPage'
 import { JetlagPlannerPage } from './pages/JetlagPlannerPage'
 import { OneRepMaxCalculatorPage } from './pages/OneRepMaxCalculatorPage'
 import { BodyFatCalculatorPage } from './pages/BodyFatCalculatorPage'
+import { SleepCycleCalculatorPage } from './pages/SleepCycleCalculatorPage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -159,6 +160,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/jet-lag"         element={<JetlagPlannerPage />} />
           <Route path="/tools/one-rep-max"     element={<OneRepMaxCalculatorPage />} />
           <Route path="/tools/body-fat"        element={<BodyFatCalculatorPage />} />
+          <Route path="/tools/sleep-cycle"     element={<SleepCycleCalculatorPage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

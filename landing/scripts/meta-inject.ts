@@ -26,6 +26,7 @@ import { FASTING_FAQ } from '../src/data/fasting'
 import { JETLAG_FAQ } from '../src/data/jetlag'
 import { ONE_REP_MAX_FAQ } from '../src/data/one-rep-max'
 import { BODY_FAT_FAQ } from '../src/data/body-fat'
+import { SLEEP_CYCLE_FAQ } from '../src/data/sleep-cycle'
 import {
   reviews,
   comparisons,
@@ -394,6 +395,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'One-Rep Max', url: `${SITE_URL}/tools/one-rep-max` })
     } else if (segments[1] === 'body-fat') {
       items.push({ name: 'Body Fat', url: `${SITE_URL}/tools/body-fat` })
+    } else if (segments[1] === 'sleep-cycle') {
+      items.push({ name: 'Sleep Cycle', url: `${SITE_URL}/tools/sleep-cycle` })
     }
     return items
   }
@@ -1457,6 +1460,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/body-fat.png`,
       faq: { mainEntity: BODY_FAT_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/sleep-cycle') {
+    return {
+      title: 'Sleep Cycle Calculator — Best Bedtime & Wake Time | ONDA Life',
+      description:
+        'Free sleep cycle calculator: enter your wake time (or bedtime) to find times that align with ~90-minute sleep cycles, so you wake in lighter sleep and feel less groggy.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/sleep-cycle.png`,
+      faq: { mainEntity: SLEEP_CYCLE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
