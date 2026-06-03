@@ -8,8 +8,9 @@
 
 ## Текущий статус
 
-- **Готовится к сабмиту:** `1.7.8` — батарейный билд (из ветки `claude/workout-lifecycle-battery`, влит в main FF `cf4d00e..0bae80e`). 1.7.7 заапрувлен → его train закрыт, поэтому батарейка идёт как 1.7.8. Содержит: **workout-session lifecycle fix** (сессия активна ⟺ foreground ∨ практика, иначе стоп + `discardWorkout` → больше нет «весь день» дренажа + Apple Fitness чистый; autonomy во время практики сохранена) + watch «Paused» idle-текст + home waveform tap-to-emphasise линии. Device-тест пройден. Ноты version-agnostic, demo-логин не нужен. _(Параллельно в main влита landing-фича `/tools/hrv` — веб-сайт, к iOS-билду отношения не имеет.)_
-- **LIVE в App Store:** `1.7.7` — ✅ **APPROVED 2026-06-03**. Onboarding-HealthKit-лист включает HRV (reach) + reliability-fix live Coherence/stress/energy (отвязаны от флапающего `isConnected`) + AdServices weak-link (Tenjin ASA).
+- **Готовится (1.7.9):** practice-audio resume fix — ветка `claude/audio-resume-fix`. Фоновое аудио в WKWebView невозможно (WebKit паузит `<audio>`, как только приложение свёрнуто — это не лечится `AVAudioSession`). Поэтому: **откат** аудио-эксперимента (`.playback`-категория + `audio` в UIBackgroundModes; последнее ещё и App-Review-2.5.4-риск) + **foreground-resume** в `PracticeAudioPlayer` (при возврате в приложение, если практика идёт и WebKit спаузил элемент — пере-`play()` + восстановление громкости). Итог: в фоне музыка молчит (ограничение платформы), возвращается мгновенно при открытии. ⚠️ **В main сейчас лежит НЕоткаченный аудио-эксперимент** (соседний чат влил regressive-ветку `bg-audio-active`) — **1.7.9 собирать только из `claude/audio-resume-fix`** и влить её в main перед сабмитом.
+- **LIVE в App Store:** `1.7.8` — ✅ **APPROVED 2026-06-04** (submitted 2026-06-03). Батарейный билд (из ветки `claude/workout-lifecycle-battery`): **workout-session lifecycle fix** (сессия активна ⟺ foreground ∨ практика, иначе стоп + `discardWorkout` → больше нет «весь день» дренажа + Apple Fitness чистый; autonomy во время практики сохранена) + watch «Paused» idle-текст + home waveform tap-to-emphasise линии. Ноты version-agnostic, demo-логин не нужен. _(Параллельно в main влита landing-фича `/tools/hrv` — веб-сайт, к iOS-билду отношения не имеет.)_
+- **Предыдущий live:** `1.7.7` — ✅ **APPROVED 2026-06-03**. Onboarding-HealthKit-лист включает HRV (reach) + reliability-fix live Coherence/stress/energy (отвязаны от флапающего `isConnected`) + AdServices weak-link (Tenjin ASA).
 - **LIVE в App Store:** `1.7.6` — ✅ **APPROVED 2026-06-02** (submitted 2026-05-31). Build `202605310519` (= CFBundleShortVersionString 1.7.6) под записью ASC «1.1.6». **Один билд = всё сразу:** SKAdNetwork attribution (ASA + Reddit, ATT-ключ удалён, TenjinSDK pinned) + live Coherence на практике (HR-RSA delta-волна) + Resting HRV trend на home (реальный HealthKit SDNN + числа + HRV read-auth fix) + home reorder/highlight + R1-1 guiding register. Чистый аппрув: метаданные согласованы с приложением (live = Coherence, trend = real HRV; «beat-to-beat»/«Live HRV»-overclaim убраны), honesty-линия выдержана, Voice/Face/face-data вопросы не всплыли. Demo-логин не требовался (free-tier sampler без авторизации).
 - **Предыдущий live:** `1.7.5` — ✅ **APPROVED 2026-05-29**, прошла ревью за **< 3 часов** (fast-track). Заменила отклонённый 1.7.4; face-data вопросы не повторились.
 - **Предыдущий сабмит:** `1.7.4 (202605272243)` — **REJECTED 2026-05-29** по Guideline 2.1 (Information Needed про face data), билд удалён. См. секцию ниже.
@@ -69,7 +70,8 @@
 | **1.7.5** | 2026-05-28 | ✅ **APPROVED / LIVE** | Прошла ревью 2026-05-29 за <3ч. SKStoreReviewController на 2-й практике, home redesign, Hume Stream fix, Voice/Face Check rebrand, light-theme fixes |
 | **1.7.6** | 2026-05-31 | ✅ **APPROVED / LIVE** | Approved 2026-06-02. Build `202605310519`. SKAN attribution + live Coherence (HR-RSA delta-волна) + Resting HRV trend (real HealthKit SDNN + числа) + HealthKit HRV auth fix + home reorder/highlight + R1-1 register. Чистый аппрув |
 | **1.7.7** | 2026-06-02 | ✅ **APPROVED / LIVE** | Approved 2026-06-03. Onboarding-лист включает HRV + reliability-fix live Coherence/stress/energy (не завязаны на `isConnected`) + AdServices weak-link (Tenjin ASA) |
-| **1.7.8** | 2026-06-03 | **feat / готовится** | Из ветки `workout-lifecycle-battery`. Workout-session lifecycle fix (foreground∨практика, иначе стоп+discard → батарея/Apple Fitness) + watch «Paused» + home waveform tap-to-emphasise. Влита в main FF |
+| **1.7.8** | 2026-06-03 | ✅ **APPROVED / LIVE** | Approved 2026-06-04. Из ветки `workout-lifecycle-battery`. Workout-session lifecycle fix (foreground∨практика, иначе стоп+discard → батарея/Apple Fitness) + watch «Paused» + home waveform tap-to-emphasise |
+| **1.7.9** | 2026-06-04 | **fix / готовится** | Из ветки `claude/audio-resume-fix`. Откат фонового аудио-эксперимента (WKWebView не играет `<audio>` в фоне; `audio`-режим = 2.5.4-риск) + foreground-resume практического аудио. ⚠️ собирать из ветки, не из main (там НЕоткаченный эксперимент) |
 
 ---
 
@@ -208,7 +210,7 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 
 Архив текстов, отправленных в App Store Connect: What's New (публичный, store listing) + Reviewer Notes (для App Review). Demo credentials удалены.
 
-### 1.7.8 — prepared 2026-06-03 (not yet submitted)
+### 1.7.8 — submitted 2026-06-03, approved 2026-06-04 ✅
 
 **Что в билде:** workout-session lifecycle fix (батарея/Apple Fitness — сессия активна только пока app foreground ∨ практика идёт; иначе стоп + `discardWorkout`; autonomy во время практики цела) + watch «Paused» idle-текст + home waveform tap-to-emphasise линии. Дисциплина та же: version-agnostic (ASC 1.1.8), demo-логин не нужен (галку снять), без Voice/Face Check / SKAN. _(landing `/tools/hrv` в этом же main, но это веб — в нотах/билде не фигурирует.)_
 
@@ -257,7 +259,7 @@ ONDA Life Team
 
 </details>
 
-**Outcome:** _not yet submitted_
+**Outcome:** ✅ **APPROVED 2026-06-04** (submitted 2026-06-03) — clean approval. Battery workout-lifecycle fix + watch «Paused» + home waveform highlight; version-agnostic notes, demo-login не требовался. No Voice/Face/face-data scrutiny.
 
 ---
 
@@ -309,7 +311,7 @@ ONDA Life Team
 
 </details>
 
-**Outcome:** _not yet submitted_
+**Outcome:** ✅ **APPROVED 2026-06-03** (submitted 2026-06-02) — clean approval. HRV onboarding reach + live Coherence/stress/energy reliability (отвязка от `isConnected`) + AdServices weak-link (Tenjin ASA).
 
 ---
 
