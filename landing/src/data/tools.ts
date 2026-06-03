@@ -183,4 +183,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'LONGEVITY',
     badge: 'AGE',
   },
+  {
+    slug: 'digital-detox',
+    name: 'Digital Detox Planner',
+    blurb: 'Build a realistic screen-reset plan — evidence-based swaps and a phone-setup checklist to reclaim your attention and sleep, without a purity test.',
+    live: true,
+    category: 'FOCUS',
+    badge: 'OFF',
+  },
 ]

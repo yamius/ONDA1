@@ -32,6 +32,7 @@ import { BREATHING_FAQ } from '../src/data/breathing'
 import { RESONANCE_FAQ } from '../src/data/resonance-breathing'
 import { DOPAMINE_FAQ } from '../src/data/dopamine-reset'
 import { BIOAGE_FAQ } from '../src/data/biological-age'
+import { DETOX_FAQ } from '../src/data/digital-detox'
 import {
   reviews,
   comparisons,
@@ -412,6 +413,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Dopamine Reset', url: `${SITE_URL}/tools/dopamine-detox` })
     } else if (segments[1] === 'biological-age') {
       items.push({ name: 'Biological Age', url: `${SITE_URL}/tools/biological-age` })
+    } else if (segments[1] === 'digital-detox') {
+      items.push({ name: 'Digital Detox', url: `${SITE_URL}/tools/digital-detox` })
     }
     return items
   }
@@ -1547,6 +1550,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/biological-age.png`,
       faq: { mainEntity: BIOAGE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/digital-detox') {
+    return {
+      title: 'Digital Detox: Build a Screen-Reset Plan | ONDA Life',
+      description:
+        'Free digital detox planner: pick the screen habits draining your attention and sleep and get evidence-based swaps plus a phone-setup checklist. Sustainable changes, not a purge.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/digital-detox.png`,
+      faq: { mainEntity: DETOX_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
