@@ -175,4 +175,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'DOPAMINE',
     badge: 'RESET',
   },
+  {
+    slug: 'biological-age',
+    name: 'Biological Age Calculator',
+    blurb: 'Estimate your "fitness age" from resting heart rate, activity, sleep and smoking — a calm, motivational mirror of your habits, not a medical verdict.',
+    live: true,
+    category: 'LONGEVITY',
+    badge: 'AGE',
+  },
 ]

@@ -459,6 +459,7 @@ const nonLocalizedStaticPaths = [
   '/tools/breathing',
   '/tools/resonance-breathing',
   '/tools/dopamine-detox',
+  '/tools/biological-age',
 ]
 
 // Every topic hub URL is prerendered. Hubs without a pillar render

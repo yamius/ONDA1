@@ -31,6 +31,7 @@ import { SHUFFLE_FAQ } from '../src/data/cognitive-shuffle'
 import { BREATHING_FAQ } from '../src/data/breathing'
 import { RESONANCE_FAQ } from '../src/data/resonance-breathing'
 import { DOPAMINE_FAQ } from '../src/data/dopamine-reset'
+import { BIOAGE_FAQ } from '../src/data/biological-age'
 import {
   reviews,
   comparisons,
@@ -409,6 +410,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Resonance Breathing', url: `${SITE_URL}/tools/resonance-breathing` })
     } else if (segments[1] === 'dopamine-detox') {
       items.push({ name: 'Dopamine Reset', url: `${SITE_URL}/tools/dopamine-detox` })
+    } else if (segments[1] === 'biological-age') {
+      items.push({ name: 'Biological Age', url: `${SITE_URL}/tools/biological-age` })
     }
     return items
   }
@@ -1532,6 +1535,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/dopamine-detox.png`,
       faq: { mainEntity: DOPAMINE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/biological-age') {
+    return {
+      title: 'Biological Age Calculator — How Old Is Your Body? | ONDA Life',
+      description:
+        'Free biological "fitness age" calculator: estimate how your habits — resting heart rate, activity, sleep, smoking — stack up against your real age. Educational, not a medical test.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/biological-age.png`,
+      faq: { mainEntity: BIOAGE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

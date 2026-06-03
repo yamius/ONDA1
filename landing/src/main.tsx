@@ -62,6 +62,7 @@ const CognitiveShufflePage = lazy(() => import('./pages/CognitiveShufflePage').t
 const BreathingPacerPage = lazy(() => import('./pages/BreathingPacerPage').then(m => ({ default: m.BreathingPacerPage })))
 const ResonanceBreathingPage = lazy(() => import('./pages/ResonanceBreathingPage').then(m => ({ default: m.ResonanceBreathingPage })))
 const DopamineResetPage = lazy(() => import('./pages/DopamineResetPage').then(m => ({ default: m.DopamineResetPage })))
+const BiologicalAgeCalculatorPage = lazy(() => import('./pages/BiologicalAgeCalculatorPage').then(m => ({ default: m.BiologicalAgeCalculatorPage })))
 const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
 const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
 const ReviewsSlugRouter     = lazyNs('reviews', () => import('./components/ReviewsSlugRouter'))
@@ -158,6 +159,7 @@ const app = (
             <Route path="/tools/breathing"       element={<BreathingPacerPage />} />
             <Route path="/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
             <Route path="/tools/dopamine-detox"  element={<DopamineResetPage />} />
+            <Route path="/tools/biological-age"  element={<BiologicalAgeCalculatorPage />} />
             <Route path="/reviews"               element={<ReviewsPage />} />
             <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
             <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />
