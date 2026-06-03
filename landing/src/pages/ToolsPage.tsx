@@ -40,6 +40,12 @@ const TOOLS: ToolEntry[] = [
     blurb: 'Six questions to find your body-clock type — morning, intermediate or evening — with a personalised daily-timing protocol.',
     live: true,
   },
+  {
+    slug: 'protein',
+    name: 'Protein Intake Calculator',
+    blurb: 'Get your daily protein target in grams from your bodyweight and goal — based on ISSN/ACSM guidelines — plus a per-meal split.',
+    live: true,
+  },
 ]
 
 export function ToolsPage() {
@@ -82,7 +88,7 @@ export function ToolsPage() {
         ))}
       </div>
 
-      <p className="mt-8 font-mono text-xs text-white/30">More tools coming — protein target, VO₂max estimator.</p>
+      <p className="mt-8 font-mono text-xs text-white/30">More tools coming — VO₂max estimator.</p>
     </main>
   )
 }

@@ -17,6 +17,7 @@ import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
 import { HR_ZONE_FAQ } from '../src/data/hr-zones'
 import { CHRONOTYPE_FAQ } from '../src/data/chronotype-quiz'
+import { PROTEIN_FAQ } from '../src/data/protein-target'
 import {
   reviews,
   comparisons,
@@ -367,6 +368,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Zone 2 Heart Rate', url: `${SITE_URL}/tools/zone-2` })
     } else if (segments[1] === 'chronotype') {
       items.push({ name: 'Chronotype Quiz', url: `${SITE_URL}/tools/chronotype` })
+    } else if (segments[1] === 'protein') {
+      items.push({ name: 'Protein Target', url: `${SITE_URL}/tools/protein` })
     }
     return items
   }
@@ -1317,6 +1320,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       faq: { mainEntity: CHRONOTYPE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/protein') {
+    return {
+      title: 'Protein Intake Calculator — How Much Protein Per Day? | ONDA Life',
+      description:
+        'Free protein calculator: enter your bodyweight and goal (maintain, build muscle, fat loss) to get your daily protein target in grams — based on ISSN/ACSM guidelines — plus a per-meal split.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: PROTEIN_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
