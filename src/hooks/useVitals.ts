@@ -19,19 +19,27 @@ export function useVitals() {
   // 2. Apple Watch (iOS real-time via WCSession) - when connected
   // 3. HealthKit (iOS) - when monitoring and available
   // 4. Notification (Android periodic updates) - fallback
-  const currentHR = bleHR.connected 
-    ? bleHR.hr 
-    : watchHR.isConnected && watchHR.heartRate
+  // NB: the Apple-Watch branch keys off `watchHR.heartRate` alone, NOT
+  // `watchHR.isConnected`. `isConnected` (paired && watchAppInstalled, from
+  // getStatus) can read false transiently even while HR is actively
+  // streaming over WCSession — and when it does, HR still SHOWS on screen
+  // (displayHeartRate = watchHeartRate.heartRate ?? …, no isConnected gate)
+  // but never enters this vitals pipeline, so stress/energy/coherence stay
+  // empty. Keying off the live HR value keeps the derived metrics in sync
+  // with the number the user already sees.
+  const currentHR = bleHR.connected
+    ? bleHR.hr
+    : watchHR.heartRate != null
       ? watchHR.heartRate
-      : (healthKitHR.isMonitoring && healthKitHR.heartRate) 
-        ? healthKitHR.heartRate 
+      : (healthKitHR.isMonitoring && healthKitHR.heartRate)
+        ? healthKitHR.heartRate
         : notificationHR.hr;
-  const hrSource = bleHR.connected 
-    ? 'ble' 
-    : watchHR.isConnected && watchHR.heartRate
+  const hrSource = bleHR.connected
+    ? 'ble'
+    : watchHR.heartRate != null
       ? 'watch'
-      : (healthKitHR.isMonitoring && healthKitHR.heartRate) 
-        ? 'healthkit' 
+      : (healthKitHR.isMonitoring && healthKitHR.heartRate)
+        ? 'healthkit'
         : (notificationHR.hr ? 'notification' : null);
 
   const [br, setBr] = useState<number | null>(null);
@@ -82,13 +90,16 @@ export function useVitals() {
     }
   }, [healthKitHR.heartRate, healthKitHR.isMonitoring, bleHR.connected]);
 
-  // Feed Apple Watch HR into series (iOS real-time via WCSession)
+  // Feed Apple Watch HR into series (iOS real-time via WCSession).
+  // Keyed off heartRate presence, not isConnected (see currentHR note) — so
+  // the buffer fills (and stress/energy/coherence compute) whenever HR is
+  // actually streaming, matching what's shown on screen.
   useEffect(() => {
-    if (!bleHR.connected && watchHR.isConnected && watchHR.heartRate != null) {
+    if (!bleHR.connected && watchHR.heartRate != null) {
       const now = Date.now() / 1000;
       heartRateStore.addDataPoint(now, watchHR.heartRate);
     }
-  }, [watchHR.heartRate, watchHR.isConnected, bleHR.connected]);
+  }, [watchHR.heartRate, bleHR.connected]);
 
   useEffect(() => {
     if (currentHR == null) return;
@@ -265,9 +276,9 @@ export function useVitals() {
 
   // Individual source checks for debugging
   const hasHRSource = Boolean(
-    bleHR.connected || 
+    bleHR.connected ||
     (healthKitHR.isMonitoring && healthKitHR.heartRate != null) ||
-    (watchHR.isConnected && watchHR.heartRate != null) ||
+    (watchHR.heartRate != null) ||
     notificationHR.hr != null
   );
   
