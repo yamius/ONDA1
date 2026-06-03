@@ -34,6 +34,7 @@ import { Zone2CalculatorPage } from './pages/Zone2CalculatorPage'
 import { ChronotypeQuizPage } from './pages/ChronotypeQuizPage'
 import { ProteinCalculatorPage } from './pages/ProteinCalculatorPage'
 import { Vo2maxCalculatorPage } from './pages/Vo2maxCalculatorPage'
+import { TdeeCalculatorPage } from './pages/TdeeCalculatorPage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -145,6 +146,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/chronotype"      element={<ChronotypeQuizPage />} />
           <Route path="/tools/protein"         element={<ProteinCalculatorPage />} />
           <Route path="/tools/vo2max"          element={<Vo2maxCalculatorPage />} />
+          <Route path="/tools/tdee"            element={<TdeeCalculatorPage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

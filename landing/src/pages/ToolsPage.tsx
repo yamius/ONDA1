@@ -52,6 +52,12 @@ const TOOLS: ToolEntry[] = [
     blurb: 'Estimate your cardiorespiratory fitness from your resting and max heart rate, and see where it ranks against age- and sex-based norms.',
     live: true,
   },
+  {
+    slug: 'tdee',
+    name: 'TDEE Calculator',
+    blurb: 'Find your total daily calorie burn with the Mifflin–St Jeor equation, plus a calorie target and macro split for your goal.',
+    live: true,
+  },
 ]
 
 export function ToolsPage() {

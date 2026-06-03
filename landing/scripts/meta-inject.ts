@@ -19,6 +19,7 @@ import { HR_ZONE_FAQ } from '../src/data/hr-zones'
 import { CHRONOTYPE_FAQ } from '../src/data/chronotype-quiz'
 import { PROTEIN_FAQ } from '../src/data/protein-target'
 import { VO2MAX_FAQ } from '../src/data/vo2max'
+import { TDEE_FAQ } from '../src/data/tdee'
 import {
   reviews,
   comparisons,
@@ -373,6 +374,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Protein Target', url: `${SITE_URL}/tools/protein` })
     } else if (segments[1] === 'vo2max') {
       items.push({ name: 'VO2max', url: `${SITE_URL}/tools/vo2max` })
+    } else if (segments[1] === 'tdee') {
+      items.push({ name: 'TDEE', url: `${SITE_URL}/tools/tdee` })
     }
     return items
   }
@@ -1345,6 +1348,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       faq: { mainEntity: VO2MAX_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/tdee') {
+    return {
+      title: 'TDEE Calculator — Daily Calorie & Macro Needs | ONDA Life',
+      description:
+        'Free TDEE calculator: find your total daily energy expenditure with the Mifflin–St Jeor equation, then get a calorie target and protein/carb/fat split for your goal.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: TDEE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
