@@ -143,4 +143,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'SLEEP',
     badge: '90m',
   },
+  {
+    slug: 'cognitive-shuffle',
+    name: 'Cognitive Shuffle',
+    blurb: 'A drug-free way to fall asleep faster: picture a stream of random neutral words (serial diverse imagining) to crowd out bedtime worry-loops.',
+    live: true,
+    category: 'SLEEP',
+    badge: 'ZZZ',
+  },
 ]

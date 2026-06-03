@@ -27,6 +27,7 @@ import { JETLAG_FAQ } from '../src/data/jetlag'
 import { ONE_REP_MAX_FAQ } from '../src/data/one-rep-max'
 import { BODY_FAT_FAQ } from '../src/data/body-fat'
 import { SLEEP_CYCLE_FAQ } from '../src/data/sleep-cycle'
+import { SHUFFLE_FAQ } from '../src/data/cognitive-shuffle'
 import {
   reviews,
   comparisons,
@@ -397,6 +398,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Body Fat', url: `${SITE_URL}/tools/body-fat` })
     } else if (segments[1] === 'sleep-cycle') {
       items.push({ name: 'Sleep Cycle', url: `${SITE_URL}/tools/sleep-cycle` })
+    } else if (segments[1] === 'cognitive-shuffle') {
+      items.push({ name: 'Cognitive Shuffle', url: `${SITE_URL}/tools/cognitive-shuffle` })
     }
     return items
   }
@@ -1472,6 +1475,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/sleep-cycle.png`,
       faq: { mainEntity: SLEEP_CYCLE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/cognitive-shuffle') {
+    return {
+      title: 'Cognitive Shuffle — Random Words to Fall Asleep | ONDA Life',
+      description:
+        'Free cognitive shuffle tool: a stream of random neutral words to picture at bedtime (serial diverse imagining) that crowds out worry-loops and helps you fall asleep faster.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/cognitive-shuffle.png`,
+      faq: { mainEntity: SHUFFLE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
