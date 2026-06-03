@@ -43,4 +43,28 @@ end
 
 post_install do |installer|
   assertDeploymentTarget(installer)
+
+  # Weak-link AdServices.framework on the App (iOS) target so the Tenjin SDK
+  # can read the Apple Search Ads / Apple Ads attribution token
+  # (AAAttribution.attributionToken) — deterministic ASA attribution, not just
+  # probabilistic SKAN. iOS-only: deliberately NOT the watch target, where
+  # AdServices does not exist (linking it there would break the watch build).
+  # Idempotent — runs on every `pod install` (incl. CI) and survives
+  # `capacitor sync`, so it doesn't get lost on project regeneration.
+  app_proj_path = File.join(__dir__, 'App.xcodeproj')
+  if File.exist?(app_proj_path)
+    app_project = Xcodeproj::Project.open(app_proj_path)
+    app_project.native_targets.each do |target|
+      next unless target.name == 'App'
+      target.build_configurations.each do |config|
+        flags = config.build_settings['OTHER_LDFLAGS'] || ['$(inherited)']
+        flags = [flags] unless flags.is_a?(Array)
+        unless flags.join(' ').include?('AdServices')
+          config.build_settings['OTHER_LDFLAGS'] = flags + ['-weak_framework', 'AdServices']
+        end
+      end
+    end
+    app_project.save
+    puts '[ONDA] Weak-linked AdServices.framework on App target (Tenjin ASA attribution)'
+  end
 end
