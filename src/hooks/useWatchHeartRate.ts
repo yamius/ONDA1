@@ -17,6 +17,10 @@ interface UseWatchHeartRateReturn {
   debugLog: string[];
   autoManaged: boolean;
   setAutoManaged: (value: boolean) => void;
+  /** Tell the hook a practice is (in)active. While active, the workout is
+   *  kept running even if the app goes to background (autonomy); when it ends
+   *  in the background, the workout is stopped right away. */
+  setPracticeActive: (active: boolean) => void;
 }
 
 export function useWatchHeartRate(): UseWatchHeartRateReturn {
@@ -30,6 +34,11 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
   const heartbeatIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const isAutoManagedRef = useRef(false);
   const lastHrUpdateRef = useRef<number>(0);
+  // Workout-lifecycle gating: the watch HKWorkoutSession should run when the
+  // app is foreground OR a practice is active, and stop otherwise. These refs
+  // drive that without re-subscribing the lifecycle listeners.
+  const isPracticeActiveRef = useRef(false);
+  const isAppForegroundRef = useRef(true);
   // Airbridge: fire `Watch Connected` once per app session on the first
   // false→true transition of `isConnected`.
   const hasFiredWatchConnectedRef = useRef<boolean>(false);
@@ -248,6 +257,19 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     console.log('[Watch] autoManaged changed to:', autoManaged);
   }, [autoManaged]);
 
+  // Practice lifecycle → workout gating. The app-state listeners only fire on
+  // foreground/background transitions; this callback covers the case where a
+  // practice ENDS while the app is already in the background — at that point
+  // the last reason to keep the workout alive is gone, so stop it now.
+  const setPracticeActive = useCallback((active: boolean) => {
+    isPracticeActiveRef.current = active;
+    if (!active && !isAppForegroundRef.current) {
+      console.log('[Watch] Practice ended in background — stopping workout');
+      OndaWatch.stopRealtime().catch(() => {});
+      setIsMonitoring(false);
+    }
+  }, []);
+
   // Auto-manage workout based on app lifecycle
   useEffect(() => {
     const platform = Capacitor.getPlatform();
@@ -270,6 +292,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     let visibilityHandler: (() => void) | null = null;
 
     const handleAppActive = async () => {
+      isAppForegroundRef.current = true;
       if (!isAutoManagedRef.current) return;
       console.log('[Watch] App became active - starting workout');
       try {
@@ -282,6 +305,15 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     };
 
     const handleAppInactive = async () => {
+      isAppForegroundRef.current = false;
+      // Autonomy: if a practice is running, KEEP the workout alive across
+      // backgrounding (this is the whole point of the watch session surviving
+      // the mic dialog / a locked phone mid-practice). It is stopped instead
+      // when the practice ends (see setPracticeActive).
+      if (isPracticeActiveRef.current) {
+        console.log('[Watch] App inactive but practice active — keeping workout');
+        return;
+      }
       console.log('[Watch] App became inactive - stopping workout');
       try {
         await OndaWatch.stopRealtime();
@@ -345,6 +377,7 @@ export function useWatchHeartRate(): UseWatchHeartRateReturn {
     isMonitoring,
     debugLog,
     autoManaged,
-    setAutoManaged
+    setAutoManaged,
+    setPracticeActive
   };
 }

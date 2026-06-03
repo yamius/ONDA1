@@ -39,7 +39,10 @@ class WorkoutManager: NSObject, ObservableObject {
         let bundleId = Bundle.main.bundleIdentifier ?? "unknown"
         logDiagnostic("🚀 WorkoutManager initialized [watchkitapp] bundle: \(bundleId)", important: true)
         setupWatchConnectivity()
-        startExtendedSession()
+        // Extended runtime session is now started TOGETHER with the workout
+        // (in startWorkout), NOT here. Starting it on every watch-app launch
+        // kept an extended session — and thus the app + workout — alive all
+        // day (battery drain). It now lives only for the workout's lifetime.
         startReconnectionMonitor()
         
         // 🚀 Предварительный "прогрев" HealthKit — запрашиваем статус сразу при инициализации
@@ -59,17 +62,13 @@ class WorkoutManager: NSObject, ObservableObject {
         let wasHRSuccessful = UserDefaults.standard.bool(forKey: "healthkit_permission_granted")
         print("[WorkoutManager] 🔥 wasHRSuccessful (from UserDefaults): \(wasHRSuccessful)")
         
-        // Если разрешения точно работали раньше — сразу запускаем workout для ускорения
-        // НО только если статус sharingAuthorized (для write типов это надёжно)
-        if wasHRSuccessful && status == .sharingAuthorized {
-            print("[WorkoutManager] 🚀 Permissions confirmed working, pre-starting workout...")
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
-                self.startWorkout()
-            }
-        } else {
-            print("[WorkoutManager] ⏳ First launch or permissions not confirmed - ContentView will handle")
-            // НЕ запускаем workout здесь - пусть ContentView сначала запросит разрешения
-        }
+        // ⚠️ We no longer auto-start a workout here. The workout (live HR
+        // stream + extended session) starts ONLY when the phone sends a
+        // "start" command — i.e. when the ONDA app is foreground or a practice
+        // is active. Auto-starting on every watch-app launch is what made the
+        // session run all day → battery drain + Apple Fitness / Activity-ring
+        // pollution. preWarm now only warms HealthKit and reports auth status.
+        _ = wasHRSuccessful // (still logged above; no longer triggers a start)
 
         // Отчитаться перед iPhone о текущем статусе разрешений (с небольшой
         // задержкой, чтобы WCSession успел активироваться).
@@ -359,12 +358,38 @@ class WorkoutManager: NSObject, ObservableObject {
             print("[WorkoutManager] No active session to stop")
             return
         }
-        
-        print("[WorkoutManager] Stopping workout...")
+
+        print("[WorkoutManager] Stopping workout (discard)...")
+
+        // ⚠️ Set isActive = false SYNCHRONOUSLY, before session.end(). The
+        // didChangeTo(.ended) / didFailWithError / extended-session delegates
+        // all auto-restart "if isActive" — that guard is how they tell an
+        // *unexpected* drop (during a practice → resurrect, autonomy) from a
+        // *deliberate* stop (→ stay dead). Flipping it first makes this stop
+        // deterministic and prevents the session from coming back to life.
+        isActive = false
+
+        let endingBuilder = builder
         session.end()
-        
+
+        // Finalise the builder with DISCARD — we stream HR live for biofeedback
+        // but do NOT persist an HKWorkout. ONDA is a biofeedback tool, not a
+        // fitness logger; saving short mind-and-body workouts cluttered Apple
+        // Fitness and skewed the user's Activity rings. Discarding keeps their
+        // metrics clean.
+        endingBuilder?.endCollection(withEnd: Date()) { _, _ in
+            endingBuilder?.discardWorkout()
+            print("[WorkoutManager] 🗑️ Workout discarded (not saved to HealthKit)")
+        }
+
+        // Tear down the extended runtime session too — nothing should keep the
+        // app alive once the workout is stopped.
+        stopExtendedSession()
+
+        self.session = nil
+        self.builder = nil
+
         DispatchQueue.main.async {
-            self.isActive = false
             self.heartRate = 0
             self.pendingHeartRates.removeAll()
         }

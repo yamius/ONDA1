@@ -215,33 +215,20 @@ const OndaLevel1 = () => {
     }
   }, [watchHeartRate.heartRate]);
   
-  // Автозапуск HR мониторинга на втором и последующих запусках (когда разрешения уже есть)
+  // Когда разрешения есть → отдаём управление workout-сессией app-lifecycle
+  // менеджеру (вместо безусловного старта на mount). Он держит HKWorkoutSession
+  // пока приложение на переднем плане ИЛИ идёт практика, и глушит её иначе —
+  // больше нет сессии-«на-весь-день» (батарея + Apple Fitness загрязнение).
   useEffect(() => {
-    const autoStartMonitoring = async () => {
-      // Если разрешения УЖЕ есть → запускаем стрим сразу при старте app
-      if (!permissions.needsSetup && platform === 'ios') {
-        console.log('[OndaLevel1] Разрешения уже есть → запускаем HR мониторинг автоматически');
-        
-        const isPluginAvailable = Capacitor.isPluginAvailable('OndaWatch');
-        console.log('[OndaLevel1] 🔍 OndaWatch plugin check:', {
-          isPluginAvailable,
-          platform
-        });
-
-        if (isPluginAvailable) {
-          try {
-            await OndaWatch.startRealtime();
-            console.log('[OndaLevel1] ✅ HR мониторинг запущен (канал настроен)');
-          } catch (error) {
-            console.error('[OndaLevel1] Ошибка запуска мониторинга:', error);
-          }
-        } else {
-          console.error('[OndaLevel1] ❌ OndaWatch plugin NOT AVAILABLE or not registered!');
-        }
+    if (!permissions.needsSetup && platform === 'ios') {
+      if (Capacitor.isPluginAvailable('OndaWatch')) {
+        console.log('[OndaLevel1] Разрешения есть → включаю auto-managed workout lifecycle');
+        watchHeartRate.setAutoManaged(true);
+      } else {
+        console.error('[OndaLevel1] ❌ OndaWatch plugin NOT AVAILABLE or not registered!');
       }
-    };
-    
-    autoStartMonitoring();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [permissions.needsSetup, platform]);
   
   useEffect(() => {
@@ -338,6 +325,16 @@ const OndaLevel1 = () => {
   const [activePractice, setActivePractice] = useState(null);
   const [practiceState, setPracticeState] = useState('intro');
   const [practiceTime, setPracticeTime] = useState(0);
+
+  // Workout lifecycle ↔ практика: сообщаем watch-хуку, когда практика активна,
+  // чтобы (1) HKWorkoutSession НЕ глушилась при уходе в фон во время практики
+  // (autonomy — переживаем диалог микрофона / заблокированный телефон), и
+  // (2) глушилась сразу, если практика закончилась пока приложение в фоне.
+  // Объявлено ПОСЛЕ practiceState, чтобы избежать TDZ.
+  useEffect(() => {
+    watchHeartRate.setPracticeActive(practiceState === 'active');
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [practiceState]);
 
   // Monitor activePractice transitions. Catches ANY path that closes the practice,
   // including paths that bypass exitPractice (setState via closure, unmount, etc).
