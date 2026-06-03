@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
-import { HRV_AGE_BANDS, HRV_FAQ, interpretHrv, type HrvResult } from '../data/hrv-norms'
+import { HRV_AGE_BANDS, HRV_FAQ, HRV_SOURCES, HRV_METHODOLOGY, interpretHrv, type HrvResult } from '../data/hrv-norms'
 
 const TIER_COLOR: Record<string, string> = {
   low: 'text-red-400',
@@ -153,6 +153,31 @@ export function HrvInterpreterPage() {
           </tbody>
         </table>
       </div>
+
+      {/* Sources & methodology — defends the numbers against "source?" */}
+      <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">
+        Sources &amp; methodology
+      </h2>
+      <p className="mb-5 font-mono text-xs leading-relaxed text-white/50">{HRV_METHODOLOGY}</p>
+      <ol className="mb-10 space-y-3">
+        {HRV_SOURCES.map((s, i) => (
+          <li key={s.url} className="rounded-lg border border-white/10 bg-white/5 p-4">
+            <div className="mb-1 font-mono text-xs text-white/80">
+              <span className="text-terminal-cyan">[{i + 1}]</span> {s.authors} ({s.year}).{' '}
+              <a
+                href={s.url}
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                className="text-terminal-green underline decoration-dotted hover:decoration-solid"
+              >
+                {s.title}
+              </a>
+              . <span className="text-white/50 italic">{s.journal}</span>.
+            </div>
+            <p className="font-mono text-[11px] leading-relaxed text-white/40">{s.contributes}</p>
+          </li>
+        ))}
+      </ol>
 
       {/* FAQ — mirrors the FAQPage JSON-LD injected at build */}
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">

@@ -1,15 +1,70 @@
 /**
  * Population reference ranges for night-time RMSSD HRV by age.
  *
- * These are APPROXIMATE population percentiles (ms) synthesised from the
- * published normative HRV literature (Nunan 2010 meta-analysis; Umetani 1998
- * age-decline curves) and the resting/overnight ranges consumer devices
- * (Oura, Whoop) surface. RMSSD declines roughly 3–5 ms per decade.
+ * These are APPROXIMATE population percentiles (ms) DERIVED from the published
+ * normative HRV literature (see HRV_SOURCES below) — chiefly the Nunan 2010
+ * meta-analysis, the Umetani 1998 nine-decade age-decline data, and the Voss
+ * 2015 age/sex cohort — adjusted upward for the night-time/overnight context
+ * that consumer wearables (Oura, Whoop, Garmin) measure, where parasympathetic
+ * tone (and therefore RMSSD) is highest. See HRV_METHODOLOGY for how the bands
+ * were built and why night-time medians run above daytime lab figures.
  *
- * Intended for an EDUCATIONAL interpreter, not diagnosis: an individual's own
- * trend and baseline matter far more than where a single reading falls on a
- * population curve. Not medical advice.
+ * RMSSD declines roughly 3–5 ms per decade. Intended for an EDUCATIONAL
+ * interpreter, not diagnosis: an individual's own trend and baseline matter far
+ * more than where a single reading falls on a population curve. Not medical advice.
  */
+
+export interface HrvSource {
+  authors: string
+  year: number
+  title: string
+  journal: string
+  /** What this reference contributes to the bands. */
+  contributes: string
+  /** Stable DOI link. */
+  url: string
+}
+
+/** Peer-reviewed normative HRV literature the reference bands are built on.
+ *  Surfaced on the page so the numbers are defensible, not "made up". */
+export const HRV_SOURCES: HrvSource[] = [
+  {
+    authors: 'Nunan D, Sandercock GRH, Brodie DA',
+    year: 2010,
+    title: 'A quantitative systematic review of normal values for short-term heart rate variability in healthy adults',
+    journal: 'Pacing and Clinical Electrophysiology, 33(11):1407–1417',
+    contributes: 'Pooled reference RMSSD/SDNN values across 44 studies of healthy adults (pooled resting RMSSD ≈ 42 ms) — anchors the central tendency.',
+    url: 'https://doi.org/10.1111/j.1540-8159.2010.02841.x',
+  },
+  {
+    authors: 'Umetani K, Singer DH, McCraty R, Atkinson M',
+    year: 1998,
+    title: 'Twenty-four hour time domain heart rate variability and heart rate: relations to age and gender over nine decades',
+    journal: 'Journal of the American College of Cardiology, 31(3):593–601',
+    contributes: 'The classic age-decline curve — time-domain HRV (incl. RMSSD) falling decade by decade — shapes the per-band shift.',
+    url: 'https://doi.org/10.1016/S0735-1097(97)00554-8',
+  },
+  {
+    authors: 'Voss A, Schroeder R, Heitmann A, Peters A, Perz S',
+    year: 2015,
+    title: 'Short-term heart rate variability — influence of gender and age in healthy subjects',
+    journal: 'PLoS ONE, 10(3):e0118308',
+    contributes: 'Large healthy cohort (n ≈ 1,900) with age- and sex-stratified short-term HRV — informs the spread (p10–p90 width).',
+    url: 'https://doi.org/10.1371/journal.pone.0118308',
+  },
+  {
+    authors: 'Task Force of the ESC and NASPE',
+    year: 1996,
+    title: 'Heart rate variability: standards of measurement, physiological interpretation, and clinical use',
+    journal: 'Circulation, 93(5):1043–1065',
+    contributes: 'Foundational definitions of RMSSD/SDNN and measurement standards the literature reports against.',
+    url: 'https://doi.org/10.1161/01.CIR.93.5.1043',
+  },
+]
+
+/** Plain-English methodology note shown alongside the sources. */
+export const HRV_METHODOLOGY =
+  'These bands are derived, not copied from a single dataset. Most normative studies report means ± SD or medians by decade for short-term, daytime, seated or supine recordings. We combined those central values (Nunan 2010), applied the decade-by-decade decline (Umetani 1998) and the age/sex spread (Voss 2015), then converted to approximate percentiles accounting for the known right-skew of RMSSD. Crucially, the table is keyed to night-time RMSSD — the overnight window consumer wearables (Oura, Whoop, Garmin) measure, when parasympathetic tone and RMSSD are at their highest. That is why these medians sit above the ~42 ms pooled daytime figure in Nunan 2010, and why a daytime 5-minute lab reading should not be compared directly against them. Treat the percentile as a rough population anchor, not a clinical cut-off — your own multi-week trend matters far more.'
 
 export interface HrvAgeBand {
   /** Inclusive lower age bound. */
@@ -104,6 +159,10 @@ export const HRV_FAQ: Array<{ q: string; a: string }> = [
   {
     q: 'Is low HRV dangerous?',
     a: 'A single low reading is not a medical event — it usually reflects recent sleep, alcohol or training. Persistently low HRV relative to your own baseline can signal accumulated stress or under-recovery. This tool is educational, not a diagnosis; see a clinician for health concerns.',
+  },
+  {
+    q: 'Where do these HRV reference numbers come from?',
+    a: 'The bands are derived from peer-reviewed normative HRV research — chiefly the Nunan 2010 meta-analysis of 44 healthy-adult studies, the Umetani 1998 nine-decade age-decline data, and the Voss 2015 age/sex cohort (n≈1,900), against the ESC/NASPE 1996 measurement standards. Because the table is keyed to night-time RMSSD (what wearables measure, when parasympathetic tone is highest), the medians sit above the ~42 ms pooled daytime figure in Nunan. Full citations and the derivation method are listed in the Sources section on this page.',
   },
 ]
 
