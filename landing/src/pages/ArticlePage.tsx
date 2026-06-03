@@ -847,6 +847,12 @@ export function ArticlePage() {
       <p id="article-intro" className="mb-4 font-mono text-sm leading-relaxed text-white/50">
         {tDescription}
       </p>
+      {/* Visible author byline — E-E-A-T signal for YMYL (schema author lives in meta-inject). */}
+      <p className="mb-2 font-mono text-xs text-white/35">
+        {tArticles('detail.by', { defaultValue: 'By' })}{' '}
+        <Link to={`${langPrefix}/about`} className="text-terminal-green hover:underline" rel="author">Yakiv Bilenko</Link>
+        {' · '}Architect &amp; Gestalt psychologist, founder of ONDA Life
+      </p>
       <div className="mb-10 flex items-center justify-between gap-3 font-mono text-xs">
         {(() => {
           const d = ARTICLE_DATES[article.slug]
