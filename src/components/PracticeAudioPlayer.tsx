@@ -32,6 +32,12 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
   const isFirstPlayRef = useRef<boolean>(true);
   const availableTracksRef = useRef<string[]>([]);
   const currentTrackIndexRef = useRef<number>(0);
+  // Latest props, read from the foreground-resume listener below without
+  // re-subscribing it on every render.
+  const isPlayingRef = useRef<boolean>(isPlaying);
+  const volumeRef = useRef<number>(volume);
+  useEffect(() => { isPlayingRef.current = isPlaying; }, [isPlaying]);
+  useEffect(() => { volumeRef.current = volume; }, [volume]);
 
   const startFade = (target: number, durationMs: number) => {
     const audio = audioRef.current;
@@ -190,6 +196,36 @@ export const PracticeAudioPlayer: React.FC<PracticeAudioPlayerProps> = ({
   useEffect(() => {
     isFirstPlayRef.current = true;
   }, [resetKey]);
+
+  // Foreground resume.
+  //
+  // WKWebView suspends (pauses) HTML5 <audio> the moment the app is
+  // backgrounded, and iOS does NOT auto-resume it when the app returns. The
+  // practice itself keeps running in the background (its JS timer survives and
+  // practiceState stays 'active'), so `isPlaying` never transitions — which
+  // means the play/fade effect above won't re-issue play() on its own. Without
+  // this, the user comes back to a running practice with the music dead.
+  //
+  // So on every return-to-foreground we re-start playback ourselves, but only
+  // if a practice is still in progress (isPlaying) and the element was paused
+  // by the system (not by us, e.g. a deliberate pause sets isPlaying=false).
+  // Note: this is the deliberate trade-off after we dropped true background
+  // audio — WKWebView can't play <audio> while hidden, so the soundtrack is
+  // silent in the background and resumes the instant you reopen the app.
+  useEffect(() => {
+    const resumeIfNeeded = () => {
+      if (document.visibilityState !== 'visible') return;
+      const audio = audioRef.current;
+      if (!audio) return;
+      if (isPlayingRef.current && audio.paused) {
+        audio.play()
+          .then(() => { try { audio.volume = volumeRef.current; } catch (_) { /* ignore */ } })
+          .catch(() => { /* ignore — element may not be ready; user can retry */ });
+      }
+    };
+    document.addEventListener('visibilitychange', resumeIfNeeded);
+    return () => document.removeEventListener('visibilitychange', resumeIfNeeded);
+  }, []);
 
   useEffect(() => {
     return () => {

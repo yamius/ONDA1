@@ -3,7 +3,6 @@ import Capacitor
 import WatchConnectivity
 import FirebaseCore
 import TenjinSDK
-import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -54,36 +53,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             OndaWatchManager.shared.activateSession()
         }
 
-        // Background audio for practices.
-        //
-        // The practice soundtrack is an HTML5 <audio> element inside the
-        // WKWebView. By default WKWebView uses an ambient-style audio session
-        // that iOS silences the moment the app leaves the foreground — so a
-        // user who backgrounds the app or locks the phone mid-practice loses
-        // the music (and, perceptually, the practice). Overriding the shared
-        // AVAudioSession category to .playback — together with the `audio`
-        // UIBackgroundModes entry in Info.plist — lets that web audio keep
-        // playing in the background and over the lock screen, which is the
-        // expected behaviour for a guided breathing / meditation app.
-        //
-        // At LAUNCH we set the CATEGORY only, not setActive(true): WKWebView
-        // activates the session itself when audio starts playing, so other
-        // apps' audio (Spotify, etc.) isn't interrupted merely by launching
-        // ONDA. Setting .playback at launch alone, however, proved NOT enough
-        // for background continuation — WKWebView resets the shared session
-        // when it begins its own media, and iOS pauses that media the instant
-        // the app backgrounds. So the actual background keep-alive is asserted
-        // in applicationDidEnterBackground (below), right at the transition.
-        // Because `audio` background execution is sustained only while audio is
-        // *playing*, the app still suspends normally once a practice ends —
-        // consistent with the watch battery-lifecycle fix.
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
-            print("[ONDA] AVAudioSession category set to .playback (background practice audio) ✅")
-        } catch {
-            print("[ONDA] ⚠️ Failed to set AVAudioSession category: \(error.localizedDescription)")
-        }
-
         return true
     }
 
@@ -91,28 +60,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {
-        // Keep the practice soundtrack alive in the background.
-        //
-        // WKWebView pauses its HTML5 <audio> the moment the app backgrounds
-        // unless the shared audio session is an ACTIVE .playback session at
-        // that point. Setting only the category at launch wasn't enough
-        // (verified on device: practice + watch HR kept running in background,
-        // but the music cut out). Re-asserting .playback + setActive(true)
-        // exactly at the background transition keeps the already-playing audio
-        // going over backgrounding and the lock screen.
-        //
-        // Scope/politeness: this fires ONLY when ONDA itself goes to the
-        // background — not on every launch — so it claims the audio route only
-        // when the user backgrounds ONDA (and if they do that mid-practice,
-        // owning the audio is exactly what we want). If nothing is playing,
-        // iOS has no audio to sustain and the app suspends normally, so the
-        // active session is short-lived and harmless.
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
-            try AVAudioSession.sharedInstance().setActive(true)
-        } catch {
-            print("[ONDA] ⚠️ Background audio keep-alive failed: \(error.localizedDescription)")
-        }
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

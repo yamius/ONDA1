@@ -173,7 +173,6 @@
         <string>ONDA tracks your mindfulness sessions and workout data in Apple Health to help you monitor your wellness progress.</string>
         <key>UIBackgroundModes</key>
         <array>
-                <string>audio</string>
                 <string>fetch</string>
                 <string>remote-notification</string>
         </array>
