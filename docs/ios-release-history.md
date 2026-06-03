@@ -8,11 +8,12 @@
 
 ## Текущий статус
 
+- **Готовится к сабмиту:** `1.7.7` — собрано из ветки `claude/hrv-onboarding-grant`, влито в main FF (`b135c78..928da3a`). Reliability-follow-up к 1.7.6: (1) онбординг-HealthKit-лист теперь включает HRV (раньше HRV грантился только через Connections → тренд наполнялся у единиц; теперь у всех, кто выдаёт доступ в онбординге), (2) fix — live Coherence/stress/energy считаются при любом стриме HR (раньше были завязаны на флапающий `watchHR.isConnected`), (3) AdServices.framework залинкован weak (для детерминированной Apple Ads-атрибуции в Tenjin). Device-тест пройден (HRV-лист, метрики идут). HRV — НЕ новое разрешение (было в 1.7.6), просто всплывает в онбординге.
 - **LIVE в App Store:** `1.7.6` — ✅ **APPROVED 2026-06-02** (submitted 2026-05-31). Build `202605310519` (= CFBundleShortVersionString 1.7.6) под записью ASC «1.1.6». **Один билд = всё сразу:** SKAdNetwork attribution (ASA + Reddit, ATT-ключ удалён, TenjinSDK pinned) + live Coherence на практике (HR-RSA delta-волна) + Resting HRV trend на home (реальный HealthKit SDNN + числа + HRV read-auth fix) + home reorder/highlight + R1-1 guiding register. Чистый аппрув: метаданные согласованы с приложением (live = Coherence, trend = real HRV; «beat-to-beat»/«Live HRV»-overclaim убраны), honesty-линия выдержана, Voice/Face/face-data вопросы не всплыли. Demo-логин не требовался (free-tier sampler без авторизации).
 - **Предыдущий live:** `1.7.5` — ✅ **APPROVED 2026-05-29**, прошла ревью за **< 3 часов** (fast-track). Заменила отклонённый 1.7.4; face-data вопросы не повторились.
 - **Предыдущий сабмит:** `1.7.4 (202605272243)` — **REJECTED 2026-05-29** по Guideline 2.1 (Information Needed про face data), билд удалён. См. секцию ниже.
-- **Ветки:** `claude/practice-live-coherence` влита в `main` FF-merge'ем (`647c3d1..4395c3a`); main = полный 1.7.6.
-- **Отложено (свои билды позже):** workout-session lifecycle фикс («сессия висит весь день») · HRV grant в основном онбординге (сейчас только через Connections → узкий reach) · Android real-HRV через Health Connect.
+- **Ветки:** `claude/practice-live-coherence` (=1.7.6) и `claude/hrv-onboarding-grant` (=1.7.7) обе влиты в `main` FF; main = полный 1.7.7.
+- **Отложено (свои билды позже):** workout-session lifecycle фикс («сессия висит весь день» — батарея/Apple Fitness) — следующий приоритет · backfill HRV-тренда из истории HealthKit (сейчас копит с момента гранта, ~2 дня до линии) · Android real-HRV через Health Connect.
 
 ---
 
@@ -66,6 +67,7 @@
 | **1.7.4** | 2026-05-25 | **REJECTED** | **Build `1.7.4 (202605272243)`** — Apple отклонила 2026-05-29 за face-data privacy questions (см. ниже) |
 | **1.7.5** | 2026-05-28 | ✅ **APPROVED / LIVE** | Прошла ревью 2026-05-29 за <3ч. SKStoreReviewController на 2-й практике, home redesign, Hume Stream fix, Voice/Face Check rebrand, light-theme fixes |
 | **1.7.6** | 2026-05-31 | ✅ **APPROVED / LIVE** | Approved 2026-06-02. Build `202605310519`. SKAN attribution + live Coherence (HR-RSA delta-волна) + Resting HRV trend (real HealthKit SDNN + числа) + HealthKit HRV auth fix + home reorder/highlight + R1-1 register. Чистый аппрув |
+| **1.7.7** | 2026-06-02 | **feat / готовится** | Из ветки `hrv-onboarding-grant`. Onboarding-лист включает HRV + reliability-fix live Coherence/stress/energy (не завязаны на `isConnected`) + AdServices weak-link (Tenjin ASA). Влита в main FF |
 
 ---
 
@@ -203,6 +205,58 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 ## Release notes archive
 
 Архив текстов, отправленных в App Store Connect: What's New (публичный, store listing) + Reviewer Notes (для App Review). Demo credentials удалены.
+
+### 1.7.7 — prepared 2026-06-02 (not yet submitted)
+
+**Что в билде:** reliability-follow-up к 1.7.6 — (1) онбординг-HealthKit-лист включает HRV (reach фикс), (2) live Coherence/stress/energy считаются при любом стриме HR (убрана завязка на флапающий `watchHR.isConnected`), (3) AdServices weak-link для Tenjin ASA. HRV — НЕ новое разрешение (было в 1.7.6). Version-agnostic ноты (ASC показывает свою 1.1.x). Voice/Face Check и SKAN/AdServices в нотах не упоминаются. Demo-логин не нужен (галку «Sign-in required» снять).
+
+**What's New (EN):**
+> • More reliable live Coherence, stress, and energy readouts during practice.
+> • Your Resting HRV trend starts tracking as soon as you grant Health access.
+> • Stability fixes.
+
+**What's New (RU):**
+> • Стабильнее живые Coherence, стресс и энергия во время практики.
+> • Тренд HRV покоя начинает считаться сразу после доступа к Здоровью.
+> • Исправления стабильности.
+
+<details>
+<summary>Reviewer Notes</summary>
+
+```
+Dear App Review Team,
+
+This update is a reliability follow-up to the previous version:
+
+1. The onboarding Health-access prompt now also lists Heart Rate Variability
+   (alongside Heart Rate and Sleep), so the Resting HRV trend can start
+   filling for users who grant access during onboarding rather than only via
+   the in-app Connection settings. This uses the same HealthKit read access
+   already present in the app; the NSHealthShareUsageDescription is unchanged
+   and already covers it. No new data flows.
+
+2. Reliability fix: the live Coherence, stress, and energy readouts now
+   compute whenever heart-rate data is streaming from the Apple Watch.
+
+No changes to sign-in, in-app purchases, third-party SDKs, or data
+collection. No account or sign-in is required to review — the three core
+practices, the live Coherence waveform, and the home-screen Resting HRV
+trend are all available immediately on launch. Connect an Apple Watch to see
+live data; HRV access can also be granted in the in-app Connection settings.
+Our privacy policy at https://onda-life.com/privacy remains accurate.
+
+Thank you!
+
+Best regards,
+Yakiv
+ONDA Life Team
+```
+
+</details>
+
+**Outcome:** _not yet submitted_
+
+---
 
 ### 1.7.6 — submitted 2026-05-31
 
