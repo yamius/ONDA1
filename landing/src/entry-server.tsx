@@ -45,6 +45,7 @@ import { SleepCycleCalculatorPage } from './pages/SleepCycleCalculatorPage'
 import { CognitiveShufflePage } from './pages/CognitiveShufflePage'
 import { BreathingPacerPage } from './pages/BreathingPacerPage'
 import { ResonanceBreathingPage } from './pages/ResonanceBreathingPage'
+import { DopamineResetPage } from './pages/DopamineResetPage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -167,6 +168,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/cognitive-shuffle" element={<CognitiveShufflePage />} />
           <Route path="/tools/breathing"       element={<BreathingPacerPage />} />
           <Route path="/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/tools/dopamine-detox"  element={<DopamineResetPage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

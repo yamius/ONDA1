@@ -30,6 +30,7 @@ import { SLEEP_CYCLE_FAQ } from '../src/data/sleep-cycle'
 import { SHUFFLE_FAQ } from '../src/data/cognitive-shuffle'
 import { BREATHING_FAQ } from '../src/data/breathing'
 import { RESONANCE_FAQ } from '../src/data/resonance-breathing'
+import { DOPAMINE_FAQ } from '../src/data/dopamine-reset'
 import {
   reviews,
   comparisons,
@@ -406,6 +407,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Breathing Pacer', url: `${SITE_URL}/tools/breathing` })
     } else if (segments[1] === 'resonance-breathing') {
       items.push({ name: 'Resonance Breathing', url: `${SITE_URL}/tools/resonance-breathing` })
+    } else if (segments[1] === 'dopamine-detox') {
+      items.push({ name: 'Dopamine Reset', url: `${SITE_URL}/tools/dopamine-detox` })
     }
     return items
   }
@@ -1517,6 +1520,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/resonance-breathing.png`,
       faq: { mainEntity: RESONANCE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/dopamine-detox') {
+    return {
+      title: 'Dopamine Detox: Build Your Reset Plan | ONDA Life',
+      description:
+        'Free dopamine detox planner: build a structured behavioural reset (stimulus control) — choose your window and the cheap-reward loops to cut, and get a plan to recalibrate focus.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/dopamine-detox.png`,
+      faq: { mainEntity: DOPAMINE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

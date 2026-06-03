@@ -167,4 +167,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'NERVOUS SYSTEM',
     badge: '5.5',
   },
+  {
+    slug: 'dopamine-detox',
+    name: 'Dopamine Reset Planner',
+    blurb: 'Build a structured "dopamine detox" — really stimulus control — to cut the cheap-reward loops hijacking your focus and rebuild drive for what matters.',
+    live: true,
+    category: 'DOPAMINE',
+    badge: 'RESET',
+  },
 ]
