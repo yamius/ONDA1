@@ -3,6 +3,7 @@ import Capacitor
 import WatchConnectivity
 import FirebaseCore
 import TenjinSDK
+import AVFoundation
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -52,6 +53,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("[ONDA] WCSession supported, activating via OndaWatchManager")
             OndaWatchManager.shared.activateSession()
         }
+
+        // Background audio for practices.
+        //
+        // The practice soundtrack is an HTML5 <audio> element inside the
+        // WKWebView. By default WKWebView uses an ambient-style audio session
+        // that iOS silences the moment the app leaves the foreground — so a
+        // user who backgrounds the app or locks the phone mid-practice loses
+        // the music (and, perceptually, the practice). Overriding the shared
+        // AVAudioSession category to .playback — together with the `audio`
+        // UIBackgroundModes entry in Info.plist — lets that web audio keep
+        // playing in the background and over the lock screen, which is the
+        // expected behaviour for a guided breathing / meditation app.
+        //
+        // We set the CATEGORY only, not setActive(true): the session is
+        // actually activated by WKWebView when audio starts playing, so other
+        // apps' audio (Spotify, etc.) is not interrupted merely by launching
+        // ONDA — only when a practice soundtrack actually begins. And because
+        // `audio` background execution is sustained only while audio is
+        // *playing*, the app still suspends normally once a practice ends,
+        // which keeps this consistent with the watch battery-lifecycle fix.
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: [])
+            print("[ONDA] AVAudioSession category set to .playback (background practice audio) ✅")
+        } catch {
+            print("[ONDA] ⚠️ Failed to set AVAudioSession category: \(error.localizedDescription)")
+        }
+
         return true
     }
 

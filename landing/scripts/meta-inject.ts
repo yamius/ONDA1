@@ -1293,6 +1293,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/hrv.png`,
       faq: { mainEntity: HRV_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
@@ -1304,6 +1305,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/caffeine.png`,
       faq: { mainEntity: CAFFEINE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
@@ -1315,6 +1317,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/sleep-debt.png`,
       faq: { mainEntity: SLEEP_DEBT_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
@@ -1326,6 +1329,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/zone-2.png`,
       faq: { mainEntity: HR_ZONE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
@@ -1337,6 +1341,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/chronotype.png`,
       faq: { mainEntity: CHRONOTYPE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
@@ -1348,6 +1353,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/protein.png`,
       faq: { mainEntity: PROTEIN_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
@@ -1359,6 +1365,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/vo2max.png`,
       faq: { mainEntity: VO2MAX_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
@@ -1370,6 +1377,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/tdee.png`,
       faq: { mainEntity: TDEE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
@@ -1381,6 +1389,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/water.png`,
       faq: { mainEntity: WATER_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
@@ -1392,6 +1401,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/alcohol.png`,
       faq: { mainEntity: ALCOHOL_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
@@ -1403,6 +1413,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/fasting.png`,
       faq: { mainEntity: FASTING_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
@@ -1414,6 +1425,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      image: `${SITE_URL}/images/tools/jet-lag.png`,
       faq: { mainEntity: JETLAG_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
