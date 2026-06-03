@@ -15,6 +15,7 @@ import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
+import { HR_ZONE_FAQ } from '../src/data/hr-zones'
 import {
   reviews,
   comparisons,
@@ -361,6 +362,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Caffeine Cut-Off', url: `${SITE_URL}/tools/caffeine` })
     } else if (segments[1] === 'sleep-debt') {
       items.push({ name: 'Sleep Debt', url: `${SITE_URL}/tools/sleep-debt` })
+    } else if (segments[1] === 'zone-2') {
+      items.push({ name: 'Zone 2 Heart Rate', url: `${SITE_URL}/tools/zone-2` })
     }
     return items
   }
@@ -1289,6 +1292,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       faq: { mainEntity: SLEEP_DEBT_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/zone-2') {
+    return {
+      title: 'Zone 2 Heart Rate Calculator — Find Your Aerobic Zone | ONDA Life',
+      description:
+        'Free Zone 2 heart rate calculator: enter your age (and resting HR for Karvonen) to find your aerobic-base target and all 5 training zones — using the accurate Tanaka max-HR formula.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: HR_ZONE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

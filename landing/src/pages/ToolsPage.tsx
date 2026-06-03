@@ -28,6 +28,12 @@ const TOOLS: ToolEntry[] = [
     blurb: 'Add up your last 7 nights to see your accumulated sleep deficit against your age-based need — and how to repay it.',
     live: true,
   },
+  {
+    slug: 'zone-2',
+    name: 'Zone 2 Heart Rate Calculator',
+    blurb: 'Find your aerobic-base (Zone 2) heart rate and all 5 training zones from your age — using the accurate Tanaka formula.',
+    live: true,
+  },
 ]
 
 export function ToolsPage() {
@@ -70,7 +76,7 @@ export function ToolsPage() {
         ))}
       </div>
 
-      <p className="mt-8 font-mono text-xs text-white/30">More tools coming — sleep debt, Zone-2 heart rate, chronotype.</p>
+      <p className="mt-8 font-mono text-xs text-white/30">More tools coming — chronotype quiz, protein target, VO₂max.</p>
     </main>
   )
 }
