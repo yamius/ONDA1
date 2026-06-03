@@ -16,6 +16,12 @@ const TOOLS: ToolEntry[] = [
     blurb: 'Enter your age and resting HRV (RMSSD) to see where it lands against population norms — and what moves it.',
     live: true,
   },
+  {
+    slug: 'caffeine',
+    name: 'Caffeine Cut-Off Calculator',
+    blurb: 'Find the latest you can have your last coffee before bed without leaving sleep-disrupting caffeine in your system.',
+    live: true,
+  },
 ]
 
 export function ToolsPage() {
@@ -58,7 +64,7 @@ export function ToolsPage() {
         ))}
       </div>
 
-      <p className="mt-8 font-mono text-xs text-white/30">More tools coming — sleep debt, caffeine cut-off, chronotype.</p>
+      <p className="mt-8 font-mono text-xs text-white/30">More tools coming — sleep debt, Zone-2 heart rate, chronotype.</p>
     </main>
   )
 }

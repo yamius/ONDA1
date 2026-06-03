@@ -441,6 +441,7 @@ const nonLocalizedStaticPaths = [
   // Interactive biohacking tools. EN-only for now.
   '/tools',
   '/tools/hrv',
+  '/tools/caffeine',
 ]
 
 // Every topic hub URL is prerendered. Hubs without a pillar render

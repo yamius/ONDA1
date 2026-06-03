@@ -13,6 +13,7 @@ import { getArticleBySlug } from '../src/data/articles'
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
+import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import {
   reviews,
   comparisons,
@@ -355,6 +356,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
     items.push({ name: 'Tools', url: `${SITE_URL}/tools` })
     if (segments[1] === 'hrv') {
       items.push({ name: 'HRV Interpreter', url: `${SITE_URL}/tools/hrv` })
+    } else if (segments[1] === 'caffeine') {
+      items.push({ name: 'Caffeine Cut-Off', url: `${SITE_URL}/tools/caffeine` })
     }
     return items
   }
@@ -1261,6 +1264,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       faq: { mainEntity: HRV_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/caffeine') {
+    return {
+      title: 'Caffeine Cut-Off Calculator — Last Coffee Before Bed | ONDA Life',
+      description:
+        'Free caffeine calculator: pick your drink and bedtime to find the latest you can have coffee without disrupting sleep — based on caffeine\'s ~5.5-hour half-life. Plus a caffeine-by-drink chart.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: CAFFEINE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
