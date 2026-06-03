@@ -271,6 +271,9 @@ export function Layout() {
               <Link to={langHref('/reviews', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.reviews')}<span className="sr-only">{t('menu.reviewsSr')}</span>
               </Link>
+              <Link to="/tools" className="text-xs text-white/40 transition-colors hover:text-white/60">
+                {t('menu.tools', { defaultValue: 'Tools' })}
+              </Link>
               <Link to={localizedPathFor('/bio', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.bio')}<span className="sr-only">{t('menu.bioSr')}</span>
               </Link>
