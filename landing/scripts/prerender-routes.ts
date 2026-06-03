@@ -461,6 +461,7 @@ const nonLocalizedStaticPaths = [
   '/tools/dopamine-detox',
   '/tools/biological-age',
   '/tools/digital-detox',
+  '/tools/burnout',
 ]
 
 // Every topic hub URL is prerendered. Hubs without a pillar render

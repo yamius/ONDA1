@@ -33,6 +33,7 @@ import { RESONANCE_FAQ } from '../src/data/resonance-breathing'
 import { DOPAMINE_FAQ } from '../src/data/dopamine-reset'
 import { BIOAGE_FAQ } from '../src/data/biological-age'
 import { DETOX_FAQ } from '../src/data/digital-detox'
+import { BURNOUT_FAQ } from '../src/data/burnout-assessment'
 import {
   reviews,
   comparisons,
@@ -415,6 +416,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Biological Age', url: `${SITE_URL}/tools/biological-age` })
     } else if (segments[1] === 'digital-detox') {
       items.push({ name: 'Digital Detox', url: `${SITE_URL}/tools/digital-detox` })
+    } else if (segments[1] === 'burnout') {
+      items.push({ name: 'Burnout Test', url: `${SITE_URL}/tools/burnout` })
     }
     return items
   }
@@ -1562,6 +1565,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/digital-detox.png`,
       faq: { mainEntity: DETOX_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/burnout') {
+    return {
+      title: 'Burnout Test — Free Stress-Load Self-Assessment | ONDA Life',
+      description:
+        'Free burnout test: 8 questions across exhaustion, cynicism and efficacy gauge your stress-load and give a recovery-focused next step. Educational self-check, not a diagnosis.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/burnout.png`,
+      faq: { mainEntity: BURNOUT_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

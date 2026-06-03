@@ -191,4 +191,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'FOCUS',
     badge: 'OFF',
   },
+  {
+    slug: 'burnout',
+    name: 'Burnout Self-Assessment',
+    blurb: 'An 8-question stress-load check across exhaustion, detachment and efficacy — with a recovery-focused next step. Educational, not a diagnosis.',
+    live: true,
+    category: 'NERVOUS SYSTEM',
+    badge: 'BURN',
+  },
 ]
