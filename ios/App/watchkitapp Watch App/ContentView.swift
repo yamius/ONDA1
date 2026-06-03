@@ -88,10 +88,10 @@ struct ContentView: View {
                 .font(.system(size: 40))
                 .foregroundColor(.cyan)
 
-            Text(everHadHR ? "Paused\nOpen ONDA on iPhone" : "Starting\nheart rate...")
+            Text(everHadHR ? "Paused\nOpen ONDA\non iPhone" : "Starting\nheart rate...")
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
-                .lineLimit(2)
+                .lineLimit(3)
 
             if !everHadHR {
                 ProgressView()
