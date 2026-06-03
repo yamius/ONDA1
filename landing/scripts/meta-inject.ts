@@ -18,6 +18,7 @@ import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
 import { HR_ZONE_FAQ } from '../src/data/hr-zones'
 import { CHRONOTYPE_FAQ } from '../src/data/chronotype-quiz'
 import { PROTEIN_FAQ } from '../src/data/protein-target'
+import { VO2MAX_FAQ } from '../src/data/vo2max'
 import {
   reviews,
   comparisons,
@@ -370,6 +371,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Chronotype Quiz', url: `${SITE_URL}/tools/chronotype` })
     } else if (segments[1] === 'protein') {
       items.push({ name: 'Protein Target', url: `${SITE_URL}/tools/protein` })
+    } else if (segments[1] === 'vo2max') {
+      items.push({ name: 'VO2max', url: `${SITE_URL}/tools/vo2max` })
     }
     return items
   }
@@ -1331,6 +1334,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       faq: { mainEntity: PROTEIN_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/vo2max') {
+    return {
+      title: 'VO₂max Estimator — Free Calculator by Heart Rate | ONDA Life',
+      description:
+        'Free VO₂max calculator: estimate your cardiorespiratory fitness from resting and max heart rate (Uth–Sørensen formula) and compare it against age- and sex-based fitness norms.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: VO2MAX_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

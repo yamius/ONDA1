@@ -46,6 +46,12 @@ const TOOLS: ToolEntry[] = [
     blurb: 'Get your daily protein target in grams from your bodyweight and goal — based on ISSN/ACSM guidelines — plus a per-meal split.',
     live: true,
   },
+  {
+    slug: 'vo2max',
+    name: 'VO₂max Estimator',
+    blurb: 'Estimate your cardiorespiratory fitness from your resting and max heart rate, and see where it ranks against age- and sex-based norms.',
+    live: true,
+  },
 ]
 
 export function ToolsPage() {
@@ -88,7 +94,6 @@ export function ToolsPage() {
         ))}
       </div>
 
-      <p className="mt-8 font-mono text-xs text-white/30">More tools coming — VO₂max estimator.</p>
     </main>
   )
 }

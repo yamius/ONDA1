@@ -446,6 +446,7 @@ const nonLocalizedStaticPaths = [
   '/tools/zone-2',
   '/tools/chronotype',
   '/tools/protein',
+  '/tools/vo2max',
 ]
 
 // Every topic hub URL is prerendered. Hubs without a pillar render
