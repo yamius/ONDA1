@@ -21,6 +21,7 @@ import { PROTEIN_FAQ } from '../src/data/protein-target'
 import { VO2MAX_FAQ } from '../src/data/vo2max'
 import { TDEE_FAQ } from '../src/data/tdee'
 import { WATER_FAQ } from '../src/data/water-intake'
+import { ALCOHOL_FAQ } from '../src/data/alcohol-clearance'
 import {
   reviews,
   comparisons,
@@ -379,6 +380,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'TDEE', url: `${SITE_URL}/tools/tdee` })
     } else if (segments[1] === 'water') {
       items.push({ name: 'Water Intake', url: `${SITE_URL}/tools/water` })
+    } else if (segments[1] === 'alcohol') {
+      items.push({ name: 'Alcohol Clearance', url: `${SITE_URL}/tools/alcohol` })
     }
     return items
   }
@@ -1373,6 +1376,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       faq: { mainEntity: WATER_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/alcohol') {
+    return {
+      title: 'Alcohol Clearance Calculator — Time to Sober Up | ONDA Life',
+      description:
+        'Free alcohol clearance calculator: estimate your blood-alcohol level and how many hours until it returns to zero using the Widmark equation. Educational only — never drive after drinking.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: ALCOHOL_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

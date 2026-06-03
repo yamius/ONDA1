@@ -64,6 +64,12 @@ const TOOLS: ToolEntry[] = [
     blurb: 'Estimate your daily water target from bodyweight, with adjustments for exercise, hot weather and high caffeine or alcohol intake.',
     live: true,
   },
+  {
+    slug: 'alcohol',
+    name: 'Alcohol Clearance Calculator',
+    blurb: 'Estimate your blood-alcohol level and how long until it clears, with the Widmark equation — and why drinks cost you a night of recovery.',
+    live: true,
+  },
 ]
 
 export function ToolsPage() {
