@@ -22,6 +22,7 @@ import { VO2MAX_FAQ } from '../src/data/vo2max'
 import { TDEE_FAQ } from '../src/data/tdee'
 import { WATER_FAQ } from '../src/data/water-intake'
 import { ALCOHOL_FAQ } from '../src/data/alcohol-clearance'
+import { FASTING_FAQ } from '../src/data/fasting'
 import {
   reviews,
   comparisons,
@@ -382,6 +383,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Water Intake', url: `${SITE_URL}/tools/water` })
     } else if (segments[1] === 'alcohol') {
       items.push({ name: 'Alcohol Clearance', url: `${SITE_URL}/tools/alcohol` })
+    } else if (segments[1] === 'fasting') {
+      items.push({ name: 'Fasting', url: `${SITE_URL}/tools/fasting` })
     }
     return items
   }
@@ -1387,6 +1390,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       faq: { mainEntity: ALCOHOL_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/fasting') {
+    return {
+      title: 'Intermittent Fasting Calculator — Eating Window | ONDA Life',
+      description:
+        'Free intermittent fasting calculator: pick a protocol (16:8, 18:6, 20:4, OMAD) and your first-meal time to get your exact eating and fasting windows, plus a metabolic-phase timeline.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: FASTING_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

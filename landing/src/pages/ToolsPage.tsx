@@ -70,6 +70,12 @@ const TOOLS: ToolEntry[] = [
     blurb: 'Estimate your blood-alcohol level and how long until it clears, with the Widmark equation — and why drinks cost you a night of recovery.',
     live: true,
   },
+  {
+    slug: 'fasting',
+    name: 'Intermittent Fasting Calculator',
+    blurb: 'Pick a protocol (16:8, 18:6, 20:4, OMAD) and first-meal time to get your eating and fasting windows, plus a metabolic-phase timeline.',
+    live: true,
+  },
 ]
 
 export function ToolsPage() {
