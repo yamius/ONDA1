@@ -76,6 +76,12 @@ const TOOLS: ToolEntry[] = [
     blurb: 'Pick a protocol (16:8, 18:6, 20:4, OMAD) and first-meal time to get your eating and fasting windows, plus a metabolic-phase timeline.',
     live: true,
   },
+  {
+    slug: 'jet-lag',
+    name: 'Jet Lag Light-Timing Planner',
+    blurb: 'Enter your trip to see which way your body clock must shift and exactly when to seek and avoid bright light to beat jet lag faster.',
+    live: true,
+  },
 ]
 
 export function ToolsPage() {

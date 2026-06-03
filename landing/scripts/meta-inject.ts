@@ -23,6 +23,7 @@ import { TDEE_FAQ } from '../src/data/tdee'
 import { WATER_FAQ } from '../src/data/water-intake'
 import { ALCOHOL_FAQ } from '../src/data/alcohol-clearance'
 import { FASTING_FAQ } from '../src/data/fasting'
+import { JETLAG_FAQ } from '../src/data/jetlag'
 import {
   reviews,
   comparisons,
@@ -385,6 +386,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Alcohol Clearance', url: `${SITE_URL}/tools/alcohol` })
     } else if (segments[1] === 'fasting') {
       items.push({ name: 'Fasting', url: `${SITE_URL}/tools/fasting` })
+    } else if (segments[1] === 'jet-lag') {
+      items.push({ name: 'Jet Lag', url: `${SITE_URL}/tools/jet-lag` })
     }
     return items
   }
@@ -1401,6 +1404,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       faq: { mainEntity: FASTING_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/jet-lag') {
+    return {
+      title: 'Jet Lag Calculator — Light-Timing Planner | ONDA Life',
+      description:
+        'Free jet lag calculator: enter your trip to see which way your body clock must shift and exactly when to seek and avoid bright light — the strongest tool for beating jet lag.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: JETLAG_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
