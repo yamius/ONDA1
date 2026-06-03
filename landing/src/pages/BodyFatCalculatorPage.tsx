@@ -158,6 +158,8 @@ export function BodyFatCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/body-fat-percentage-composition`} className="text-terminal-green hover:underline">Ideal body fat % explained</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/tdee`} className="text-terminal-green hover:underline">TDEE calculator</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/protein`} className="text-terminal-green hover:underline">Protein target</Link>

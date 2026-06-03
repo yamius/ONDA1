@@ -166,6 +166,8 @@ export function ProteinCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/protein-intake-muscle-protein-synthesis`} className="text-terminal-green hover:underline">How much protein you need</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/zone-2`} className="text-terminal-green hover:underline">Zone 2 heart rate</Link>
         {' · '}
         <Link to={`${langPrefix}/articles/glp1-biology-muscle-preservation`} className="text-terminal-green hover:underline">Muscle preservation</Link>

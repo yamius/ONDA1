@@ -189,6 +189,8 @@ export function CaffeineCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/caffeine-half-life-sleep-pressure`} className="text-terminal-green hover:underline">Caffeine, sleep & half-life</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
         {' · '}
         <Link to={`${langPrefix}/reviews/sleep-apps`} className="text-terminal-green hover:underline">Best sleep apps (2026)</Link>
