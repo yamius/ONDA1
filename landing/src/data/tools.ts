@@ -119,4 +119,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'SLEEP',
     badge: 'TZ',
   },
+  {
+    slug: 'one-rep-max',
+    name: 'One-Rep Max Calculator',
+    blurb: 'Estimate your 1RM from a hard set with the Epley and Brzycki equations, plus a training-load table for every percentage of your max.',
+    live: true,
+    category: 'FITNESS',
+    badge: '1RM',
+  },
 ]

@@ -24,6 +24,7 @@ import { WATER_FAQ } from '../src/data/water-intake'
 import { ALCOHOL_FAQ } from '../src/data/alcohol-clearance'
 import { FASTING_FAQ } from '../src/data/fasting'
 import { JETLAG_FAQ } from '../src/data/jetlag'
+import { ONE_REP_MAX_FAQ } from '../src/data/one-rep-max'
 import {
   reviews,
   comparisons,
@@ -388,6 +389,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Fasting', url: `${SITE_URL}/tools/fasting` })
     } else if (segments[1] === 'jet-lag') {
       items.push({ name: 'Jet Lag', url: `${SITE_URL}/tools/jet-lag` })
+    } else if (segments[1] === 'one-rep-max') {
+      items.push({ name: 'One-Rep Max', url: `${SITE_URL}/tools/one-rep-max` })
     }
     return items
   }
@@ -1427,6 +1430,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/jet-lag.png`,
       faq: { mainEntity: JETLAG_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/one-rep-max') {
+    return {
+      title: 'One-Rep Max Calculator — Estimate Your 1RM | ONDA Life',
+      description:
+        'Free one-rep max calculator: estimate your 1RM from a hard set using the Epley and Brzycki equations, plus a training-load table for every %1RM. Best with sets of 6 reps or fewer.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/one-rep-max.png`,
+      faq: { mainEntity: ONE_REP_MAX_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
