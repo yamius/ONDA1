@@ -12,6 +12,8 @@
  * for deciding whether it is safe or legal to drive. Never drive after drinking.
  */
 
+import type { ScienceSource } from './sources'
+
 export type Sex = 'male' | 'female'
 
 const GRAMS_PER_STANDARD_DRINK = 14
@@ -60,7 +62,41 @@ export function formatHours(h: number): string {
   return `${whole}h ${mins}m`
 }
 
+export const ALCOHOL_SOURCES: ScienceSource[] = [
+  {
+    authors: 'Watson PE, Watson ID, Batt RD',
+    year: 1981,
+    title: 'Prediction of blood alcohol concentrations in human subjects: updating the Widmark equation',
+    journal: 'Journal of Studies on Alcohol, 42(7):547–556',
+    contributes: 'Basis for the distribution-ratio values (r ≈ 0.68 men, 0.55 women) in the Widmark calculation.',
+    url: 'https://doi.org/10.15288/jsa.1981.42.547',
+  },
+  {
+    authors: 'Jones AW',
+    year: 2010,
+    title: 'Evidence-based survey of the elimination rates of ethanol from blood with applications in forensic casework',
+    journal: 'Forensic Science International, 200(1–3):1–20',
+    contributes: 'Supports the ~0.015%/hour elimination rate (typical range 0.013–0.017) used to project time-to-sober.',
+    url: 'https://doi.org/10.1016/j.forsciint.2010.02.021',
+  },
+  {
+    authors: 'National Institute on Alcohol Abuse and Alcoholism (NIAAA)',
+    year: 2024,
+    title: 'What is a standard drink?',
+    journal: 'NIAAA, U.S. National Institutes of Health',
+    contributes: 'Defines one standard drink as 14 g of pure alcohol — the unit this tool converts from.',
+    url: 'https://www.niaaa.nih.gov/alcohols-effects-health/what-standard-drink',
+  },
+]
+
+export const ALCOHOL_METHODOLOGY =
+  'Blood-alcohol is estimated with the Widmark equation (originally 1932): grams of pure alcohol divided by bodyweight and a distribution ratio, minus the alcohol eliminated since the first drink. The distribution ratios (r ≈ 0.68 for men, 0.55 for women) follow Watson 1981; the elimination rate (≈0.015% per hour, typical range 0.013–0.017) follows the forensic survey by Jones 2010; one standard drink is 14 g of pure alcohol per the NIAAA definition. Real clearance varies widely with genetics, food, medication, sex and liver health. This is an educational estimate — it is NOT valid for deciding whether it is safe or legal to drive. Never drive after drinking.'
+
 export const ALCOHOL_FAQ: Array<{ q: string; a: string }> = [
+  {
+    q: 'How reliable are these blood-alcohol numbers?',
+    a: 'They are an educational estimate built on the Widmark equation, with distribution ratios from Watson (1981), an elimination rate from Jones (2010), and the NIAAA 14 g standard-drink definition (full citations in the Sources section). Real BAC varies widely with genetics, food, medication, sex and liver health, so never use this to decide whether it is safe or legal to drive — if you have been drinking, do not drive.',
+  },
   {
     q: 'How long does it take to sober up?',
     a: 'Your body clears alcohol at a roughly fixed rate — about 0.015% BAC per hour, or close to one standard drink per hour — regardless of coffee, cold showers or food. So four drinks can take five to six hours or more to fully clear. Nothing reliably speeds this up; only time lowers your BAC.',

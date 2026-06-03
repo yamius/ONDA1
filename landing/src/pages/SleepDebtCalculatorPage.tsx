@@ -5,10 +5,13 @@ import { appStoreUrl } from '../config/appStore'
 import {
   SLEEP_NEED_BANDS,
   SLEEP_DEBT_FAQ,
+  SLEEP_DEBT_SOURCES,
+  SLEEP_DEBT_METHODOLOGY,
   sleepNeedForAge,
   computeSleepDebt,
   type SleepDebtResult,
 } from '../data/sleep-debt'
+import { SourcesSection } from '../components/SourcesSection'
 
 const DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
 
@@ -183,6 +186,8 @@ export function SleepDebtCalculatorPage() {
           </tbody>
         </table>
       </div>
+
+      <SourcesSection methodology={SLEEP_DEBT_METHODOLOGY} sources={SLEEP_DEBT_SOURCES} />
 
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">

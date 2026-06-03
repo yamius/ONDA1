@@ -14,6 +14,8 @@
  * sit lower. Educational, not medical/dietetic advice.
  */
 
+import type { ScienceSource } from './sources'
+
 export interface ProteinGoal {
   id: string
   label: string
@@ -55,7 +57,41 @@ export function computeProtein(weightKg: number, goal: ProteinGoal, meals: numbe
   }
 }
 
+export const PROTEIN_SOURCES: ScienceSource[] = [
+  {
+    authors: 'Jäger R, Kerksick CM, Campbell BI, et al.',
+    year: 2017,
+    title: 'International Society of Sports Nutrition Position Stand: protein and exercise',
+    journal: 'Journal of the International Society of Sports Nutrition, 14:20',
+    contributes: 'Primary basis for the active/strength ranges (≈1.4–2.0 g/kg, up to 2.4 g/kg in a deficit).',
+    url: 'https://doi.org/10.1186/s12970-017-0177-8',
+  },
+  {
+    authors: 'Thomas DT, Erdman KA, Burke LM',
+    year: 2016,
+    title: 'Nutrition and Athletic Performance — Joint Position Statement (ACSM, AND, DC)',
+    journal: 'Medicine & Science in Sports & Exercise, 48(3):543–568',
+    contributes: 'Corroborates the athlete protein ranges and per-meal distribution guidance.',
+    url: 'https://doi.org/10.1249/MSS.0000000000000852',
+  },
+  {
+    authors: 'Morton RW, Murphy KT, McKellar SR, et al.',
+    year: 2018,
+    title: 'A systematic review, meta-analysis and meta-regression of protein supplementation on resistance-training gains',
+    journal: 'British Journal of Sports Medicine, 52(6):376–384',
+    contributes: 'Source of the ≈1.6 g/kg/day plateau for maximising muscle gain.',
+    url: 'https://doi.org/10.1136/bjsports-2017-097608',
+  },
+]
+
+export const PROTEIN_METHODOLOGY =
+  'Targets are expressed in grams per kg of total bodyweight, as the position stands report them. The 0.8 g/kg RDA is the minimum to avoid deficiency in sedentary adults — not the optimum. The ISSN (Jäger 2017) and ACSM/AND joint stand (Thomas 2016) put active and strength athletes at roughly 1.4–2.0 g/kg, and a meta-analysis (Morton 2018) places the muscle-gain plateau near 1.6 g/kg. In an energy deficit, 2.0–2.4 g/kg better preserves lean mass. Spread intake across meals (~0.4 g/kg each) for best muscle-protein synthesis. If your body fat is high, a lean-mass-based target runs lower than total-bodyweight figures.'
+
 export const PROTEIN_FAQ: Array<{ q: string; a: string }> = [
+  {
+    q: 'Where do these protein targets come from?',
+    a: 'The ranges come from the ISSN protein position stand (Jäger 2017), the ACSM/AND/DC joint statement (Thomas 2016), and a resistance-training meta-analysis (Morton 2018) that pins the muscle-gain plateau near 1.6 g/kg. Full citations are in the Sources section on this page. Targets use total bodyweight, per the position stands; the 0.8 g/kg RDA is a minimum, not an optimum.',
+  },
   {
     q: 'How much protein do I need per day?',
     a: 'It depends on your goal. The 0.8 g/kg RDA only prevents deficiency. For an active person, 1.2–1.6 g/kg is a better target; for building muscle, 1.6–2.2 g/kg; and in a fat-loss phase, 1.8–2.4 g/kg helps preserve muscle. Multiply your bodyweight in kg by the range for your goal.',

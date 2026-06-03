@@ -12,6 +12,8 @@
  * by age and sex (ml/kg/min). Educational, not medical advice.
  */
 
+import type { ScienceSource } from './sources'
+
 export type Sex = 'male' | 'female'
 export type FitnessCat = 'poor' | 'fair' | 'good' | 'excellent' | 'superior'
 
@@ -89,7 +91,41 @@ export function classifyVo2max(vo2: number, age: number, sex: Sex): Vo2Result {
   }
 }
 
+export const VO2MAX_SOURCES: ScienceSource[] = [
+  {
+    authors: 'Uth N, Sørensen H, Overgaard K, Pedersen PK',
+    year: 2004,
+    title: 'Estimation of VO2max from the ratio between HRmax and HRrest — the Heart Rate Ratio Method',
+    journal: 'European Journal of Applied Physiology, 91(1):111–115',
+    contributes: 'The estimation formula used here: VO₂max ≈ 15.3 × (HRmax ÷ HRrest).',
+    url: 'https://doi.org/10.1007/s00421-003-0988-y',
+  },
+  {
+    authors: 'Tanaka H, Monahan KD, Seals DR',
+    year: 2001,
+    title: 'Age-predicted maximal heart rate revisited',
+    journal: 'Journal of the American College of Cardiology, 37(1):153–156',
+    contributes: 'Supplies the HRmax estimate (208 − 0.7 × age) when you do not enter a measured max HR.',
+    url: 'https://doi.org/10.1016/S0735-1097(00)01054-8',
+  },
+  {
+    authors: 'Kaminsky LA, Arena R, Myers J',
+    year: 2015,
+    title: 'Reference standards for cardiorespiratory fitness measured with cardiopulmonary exercise testing (FRIEND registry)',
+    journal: 'Mayo Clinic Proceedings, 90(11):1515–1523',
+    contributes: 'Modern US reference standards for VO₂max by age and sex underpinning the fitness-category bands.',
+    url: 'https://doi.org/10.1016/j.mayocp.2015.07.026',
+  },
+]
+
+export const VO2MAX_METHODOLOGY =
+  'The estimate uses the Heart Rate Ratio Method (Uth–Sørensen 2004): VO₂max ≈ 15.3 × HRmax/HRrest. It needs your true max HR (estimated from age via Tanaka 2001 if you don’t enter one) and an accurate resting HR, ideally measured first thing in the morning. Accuracy is roughly ±10–15% versus a lab test. The fitness categories approximate age- and sex-based percentile bands from the FRIEND registry (Kaminsky 2015) and ACSM norms. VO₂max declines about 10% per decade after 30 without training. For a precise number, a lab CPET or a maximal field test (Cooper 12-minute run) beats any HR-based estimate.'
+
 export const VO2MAX_FAQ: Array<{ q: string; a: string }> = [
+  {
+    q: 'Where do these VO₂max numbers come from?',
+    a: 'The estimate is the Uth–Sørensen (2004) Heart Rate Ratio Method (VO₂max ≈ 15.3 × HRmax/HRrest), with HRmax from Tanaka (2001) when not measured. The fitness categories approximate age/sex reference standards from the FRIEND registry (Kaminsky 2015) and ACSM. Full citations are in the Sources section on this page. It is a population estimate, accurate to about ±10–15% versus a lab test.',
+  },
   {
     q: 'What is VO₂max?',
     a: 'VO₂max is the maximum volume of oxygen your body can use per minute (ml/kg/min) — the single best measure of cardiorespiratory fitness. It reflects how well your heart, lungs and muscles deliver and use oxygen, and it is one of the strongest predictors of longevity and all-cause mortality.',

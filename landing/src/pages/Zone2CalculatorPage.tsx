@@ -4,11 +4,14 @@ import { langFromPath } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
 import {
   HR_ZONE_FAQ,
+  HR_ZONE_SOURCES,
+  HR_ZONE_METHODOLOGY,
   estimateMaxHr,
   computeZones,
   type MaxHrMethod,
   type ZoneRange,
 } from '../data/hr-zones'
+import { SourcesSection } from '../components/SourcesSection'
 
 const ZONE_COLOR = ['', 'text-white/50', 'text-terminal-green', 'text-terminal-cyan', 'text-amber-400', 'text-red-400']
 
@@ -140,6 +143,8 @@ export function Zone2CalculatorPage() {
           Download ONDA Life on the App Store →
         </a>
       </div>
+
+      <SourcesSection methodology={HR_ZONE_METHODOLOGY} sources={HR_ZONE_SOURCES} />
 
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">

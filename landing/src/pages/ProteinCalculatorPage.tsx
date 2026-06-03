@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
-import { PROTEIN_GOALS, PROTEIN_FAQ, computeProtein, type ProteinResult } from '../data/protein-target'
+import { PROTEIN_GOALS, PROTEIN_FAQ, PROTEIN_SOURCES, PROTEIN_METHODOLOGY, computeProtein, type ProteinResult } from '../data/protein-target'
+import { SourcesSection } from '../components/SourcesSection'
 
 export function ProteinCalculatorPage() {
   const { pathname } = useLocation()
@@ -151,6 +152,8 @@ export function ProteinCalculatorPage() {
           </tbody>
         </table>
       </div>
+
+      <SourcesSection methodology={PROTEIN_METHODOLOGY} sources={PROTEIN_SOURCES} />
 
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">

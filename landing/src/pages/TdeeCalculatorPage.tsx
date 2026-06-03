@@ -6,10 +6,13 @@ import {
   ACTIVITY_LEVELS,
   CALORIE_GOALS,
   TDEE_FAQ,
+  TDEE_SOURCES,
+  TDEE_METHODOLOGY,
   computeTdee,
   type Sex,
   type TdeeResult,
 } from '../data/tdee'
+import { SourcesSection } from '../components/SourcesSection'
 
 export function TdeeCalculatorPage() {
   const { pathname } = useLocation()
@@ -220,6 +223,8 @@ export function TdeeCalculatorPage() {
           </tbody>
         </table>
       </div>
+
+      <SourcesSection methodology={TDEE_METHODOLOGY} sources={TDEE_SOURCES} />
 
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">

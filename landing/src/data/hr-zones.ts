@@ -17,6 +17,8 @@
  * Peter Attia. Educational, not medical advice.
  */
 
+import type { ScienceSource } from './sources'
+
 export interface HrZone {
   z: number
   name: string
@@ -66,7 +68,41 @@ export function computeZones(maxHr: number, restHr: number): ZoneRange[] {
   }))
 }
 
+export const HR_ZONE_SOURCES: ScienceSource[] = [
+  {
+    authors: 'Tanaka H, Monahan KD, Seals DR',
+    year: 2001,
+    title: 'Age-predicted maximal heart rate revisited',
+    journal: 'Journal of the American College of Cardiology, 37(1):153–156',
+    contributes: 'The HRmax = 208 − 0.7 × age equation used here — more accurate across adult ages than the older 220 − age.',
+    url: 'https://doi.org/10.1016/S0735-1097(00)01054-8',
+  },
+  {
+    authors: 'Karvonen MJ, Kentala E, Mustala O',
+    year: 1957,
+    title: 'The effects of training on heart rate: a longitudinal study',
+    journal: 'Annales Medicinae Experimentalis et Biologiae Fenniae, 35(3):307–315',
+    contributes: 'Origin of the heart-rate-reserve (Karvonen) method used when you enter a resting HR.',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/13470504/',
+  },
+  {
+    authors: 'Seiler S, Kjerland GØ',
+    year: 2006,
+    title: 'Quantifying training intensity distribution in elite endurance athletes: is there evidence for an "optimal" distribution?',
+    journal: 'Scandinavian Journal of Medicine & Science in Sports, 16(1):49–56',
+    contributes: 'Evidence that the bulk of endurance training should sit in the easy, aerobic (Zone 2) band below the first threshold.',
+    url: 'https://doi.org/10.1111/j.1600-0838.2004.00418.x',
+  },
+]
+
+export const HR_ZONE_METHODOLOGY =
+  'Max heart rate is estimated with the Tanaka equation (208 − 0.7 × age), which the original study found more accurate across adult ages than the familiar 220 − age. Zones are then taken as percentages of max HR, or — if you enter a resting HR — by the Karvonen heart-rate-reserve method, which personalises the zones to your fitness. Zone 2 is the easy, conversational aerobic band that endurance research (Seiler) shows should make up most training volume. These are population formulas: an individual’s true max HR can differ by ±10–12 bpm, so a lab or maximal field test is more precise than any age formula.'
+
 export const HR_ZONE_FAQ: Array<{ q: string; a: string }> = [
+  {
+    q: 'Where do these heart-rate zones come from?',
+    a: 'Max HR uses the Tanaka 2001 equation (208 − 0.7 × age), validated as more accurate than 220 − age. With a resting HR entered, zones use the Karvonen (1957) heart-rate-reserve method. The emphasis on a large Zone 2 base reflects endurance-training research such as Seiler & Kjerland (2006). Full citations are in the Sources section on this page. Note age formulas estimate max HR to within roughly ±10–12 bpm.',
+  },
   {
     q: 'What is Zone 2 heart rate?',
     a: 'Zone 2 is the aerobic "base" zone — roughly 60–70% of your maximum heart rate, the pace at which you can still hold a conversation. It is where the body preferentially burns fat and builds mitochondrial density, which is why endurance athletes spend the bulk of their training there.',

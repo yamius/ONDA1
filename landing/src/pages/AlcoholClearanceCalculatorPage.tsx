@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
-import { ALCOHOL_FAQ, computeAlcohol, formatHours, type Sex, type AlcoholResult } from '../data/alcohol-clearance'
+import { ALCOHOL_FAQ, ALCOHOL_SOURCES, ALCOHOL_METHODOLOGY, computeAlcohol, formatHours, type Sex, type AlcoholResult } from '../data/alcohol-clearance'
+import { SourcesSection } from '../components/SourcesSection'
 
 export function AlcoholClearanceCalculatorPage() {
   const { pathname } = useLocation()
@@ -154,6 +155,8 @@ export function AlcoholClearanceCalculatorPage() {
           Download ONDA Life on the App Store →
         </a>
       </div>
+
+      <SourcesSection methodology={ALCOHOL_METHODOLOGY} sources={ALCOHOL_SOURCES} />
 
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">

@@ -9,6 +9,8 @@
  * deficit/surplus. Educational estimate, not medical or dietetic advice.
  */
 
+import type { ScienceSource } from './sources'
+
 export type Sex = 'male' | 'female'
 
 export interface ActivityLevel {
@@ -78,7 +80,41 @@ export function computeTdee(
   return { bmr, tdee, goalCalories, proteinG, fatG, carbG }
 }
 
+export const TDEE_SOURCES: ScienceSource[] = [
+  {
+    authors: 'Mifflin MD, St Jeor ST, Hill LA, et al.',
+    year: 1990,
+    title: 'A new predictive equation for resting energy expenditure in healthy individuals',
+    journal: 'American Journal of Clinical Nutrition, 51(2):241–247',
+    contributes: 'The BMR equation used here (the "Mifflin–St Jeor" equation).',
+    url: 'https://doi.org/10.1093/ajcn/51.2.241',
+  },
+  {
+    authors: 'Frankenfield D, Roth-Yousey L, Compher C',
+    year: 2005,
+    title: 'Comparison of predictive equations for resting metabolic rate in healthy nonobese and obese adults: a systematic review',
+    journal: 'Journal of the American Dietetic Association, 105(5):775–789',
+    contributes: 'Found Mifflin–St Jeor the most accurate of the common predictive equations — why this tool uses it.',
+    url: 'https://doi.org/10.1016/j.jada.2005.02.005',
+  },
+  {
+    authors: 'FAO / WHO / UNU',
+    year: 2004,
+    title: 'Human energy requirements (Report of a Joint Expert Consultation)',
+    journal: 'FAO Food and Nutrition Technical Report Series 1',
+    contributes: 'Basis for the physical-activity-level (PAL) multipliers, 1.2 (sedentary) to 1.9 (extra active).',
+    url: 'https://www.fao.org/4/y5686e/y5686e00.htm',
+  },
+]
+
+export const TDEE_METHODOLOGY =
+  'Resting metabolism (BMR) is estimated with the Mifflin–St Jeor equation, which a systematic review (Frankenfield 2005) found to be the most accurate predictive formula for most adults. BMR is then multiplied by a physical-activity level (PAL) from the FAO/WHO/UNU consultation, ranging 1.2 (sedentary) to 1.9 (extra active), to give TDEE. Goal calories shift TDEE by a sensible deficit/surplus. The macro split sets protein at ~1.8 g/kg, fat at 25% of calories, and the remainder as carbs. Predictive equations are accurate to roughly ±10%, so treat the number as a starting point and adjust from your real 2–3 week weight trend.'
+
 export const TDEE_FAQ: Array<{ q: string; a: string }> = [
+  {
+    q: 'Where do these calorie numbers come from?',
+    a: 'BMR uses the Mifflin–St Jeor equation (1990), which a systematic review (Frankenfield 2005) rated the most accurate of the common formulas. TDEE then applies a physical-activity multiplier (PAL) from the FAO/WHO/UNU 2004 energy-requirements report. Full citations are in the Sources section on this page. Predictive equations are accurate to about ±10% — adjust from your real weight trend.',
+  },
   {
     q: 'What is TDEE?',
     a: 'TDEE — Total Daily Energy Expenditure — is the total number of calories you burn in a day, including your resting metabolism (BMR), the energy used to digest food, and all movement and exercise. It is the number you eat at to maintain your current weight.',

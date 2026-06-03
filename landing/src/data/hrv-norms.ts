@@ -14,20 +14,11 @@
  * more than where a single reading falls on a population curve. Not medical advice.
  */
 
-export interface HrvSource {
-  authors: string
-  year: number
-  title: string
-  journal: string
-  /** What this reference contributes to the bands. */
-  contributes: string
-  /** Stable DOI link. */
-  url: string
-}
+import type { ScienceSource } from './sources'
 
 /** Peer-reviewed normative HRV literature the reference bands are built on.
  *  Surfaced on the page so the numbers are defensible, not "made up". */
-export const HRV_SOURCES: HrvSource[] = [
+export const HRV_SOURCES: ScienceSource[] = [
   {
     authors: 'Nunan D, Sandercock GRH, Brodie DA',
     year: 2010,

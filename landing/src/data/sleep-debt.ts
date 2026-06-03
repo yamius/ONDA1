@@ -15,6 +15,8 @@
  * matters as much as total hours.
  */
 
+import type { ScienceSource } from './sources'
+
 export interface SleepNeedBand {
   minAge: number
   maxAge: number
@@ -82,7 +84,41 @@ export function computeSleepDebt(need: number, nights: number[]): SleepDebtResul
   }
 }
 
+export const SLEEP_DEBT_SOURCES: ScienceSource[] = [
+  {
+    authors: 'Hirshkowitz M, Whiton K, Albert SM, et al.',
+    year: 2015,
+    title: "National Sleep Foundation's sleep time duration recommendations: methodology and results summary",
+    journal: 'Sleep Health, 1(1):40–43',
+    contributes: 'Primary basis for the age-banded sleep-need ranges used to compute your debt.',
+    url: 'https://doi.org/10.1016/j.sleh.2014.12.010',
+  },
+  {
+    authors: 'Watson NF, Badr MS, Belenky G, et al.',
+    year: 2015,
+    title: 'Recommended amount of sleep for a healthy adult: a joint consensus statement of the AASM and Sleep Research Society',
+    journal: 'Sleep, 38(6):843–844',
+    contributes: 'The ≥7 hours/night adult recommendation that anchors the adult need band.',
+    url: 'https://doi.org/10.5665/sleep.4716',
+  },
+  {
+    authors: 'Van Dongen HPA, Maislin G, Mullington JM, Dinges DF',
+    year: 2003,
+    title: 'The cumulative cost of additional wakefulness: dose-response effects from chronic sleep restriction',
+    journal: 'Sleep, 26(2):117–126',
+    contributes: 'Evidence that sleep debt accumulates dose-dependently and is not erased by a single long night.',
+    url: 'https://doi.org/10.1093/sleep/26.2.117',
+  },
+]
+
+export const SLEEP_DEBT_METHODOLOGY =
+  'Age-based sleep-need ranges come from the National Sleep Foundation recommendations (Hirshkowitz 2015) and the AASM/Sleep Research Society adult consensus of at least 7 hours (Watson 2015). Debt is the cumulative shortfall — the sum over your last 7 nights of (need − actual sleep). The "debt" framing rests on Van Dongen 2003, which showed that chronic short sleep degrades performance dose-dependently and that the deficit is not fully repaid by one lie-in. Need is individual; these bands are population guidance, and your own daytime alertness is the practical check.'
+
 export const SLEEP_DEBT_FAQ: Array<{ q: string; a: string }> = [
+  {
+    q: 'Where do the sleep-need numbers come from?',
+    a: 'The age-based need ranges follow the National Sleep Foundation recommendations (Hirshkowitz 2015) and the AASM/Sleep Research Society ≥7-hour adult consensus (Watson 2015); the idea that debt accumulates comes from Van Dongen (2003). Full citations are in the Sources section on this page. Sleep need varies between individuals — treat the bands as population guidance.',
+  },
   {
     q: 'What is sleep debt?',
     a: 'Sleep debt is the running total of the gap between how much sleep you need and how much you actually get. Lose an hour a night for five nights and you carry roughly five hours of debt — which degrades focus, mood, glucose control and reaction time even if you feel "used to it".',

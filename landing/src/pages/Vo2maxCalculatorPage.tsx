@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
-import { VO2MAX_FAQ, estimateVo2max, classifyVo2max, type Sex, type Vo2Result } from '../data/vo2max'
+import { VO2MAX_FAQ, VO2MAX_SOURCES, VO2MAX_METHODOLOGY, estimateVo2max, classifyVo2max, type Sex, type Vo2Result } from '../data/vo2max'
+import { SourcesSection } from '../components/SourcesSection'
 
 const CAT_COLOR: Record<string, string> = {
   poor: 'text-red-400',
@@ -159,6 +160,8 @@ export function Vo2maxCalculatorPage() {
           Download ONDA Life on the App Store →
         </a>
       </div>
+
+      <SourcesSection methodology={VO2MAX_METHODOLOGY} sources={VO2MAX_SOURCES} />
 
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">
