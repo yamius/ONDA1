@@ -157,6 +157,8 @@ export function Zone2CalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/zone-2-training-aerobic-base`} className="text-terminal-green hover:underline">Zone 2 training explained</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
         {' · '}
         <Link to={`${langPrefix}/reviews/hrv-trackers`} className="text-terminal-green hover:underline">Best HRV trackers (2026)</Link>

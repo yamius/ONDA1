@@ -154,6 +154,8 @@ export function FastingCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/intermittent-fasting-metabolic-switch`} className="text-terminal-green hover:underline">Intermittent fasting explained</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/tdee`} className="text-terminal-green hover:underline">TDEE calculator</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/caffeine`} className="text-terminal-green hover:underline">Caffeine cut-off</Link>

@@ -174,6 +174,8 @@ export function Vo2maxCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/vo2max-increase-aerobic-engine`} className="text-terminal-green hover:underline">How to increase VO₂max</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/zone-2`} className="text-terminal-green hover:underline">Zone 2 heart rate</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
