@@ -34,6 +34,12 @@ const TOOLS: ToolEntry[] = [
     blurb: 'Find your aerobic-base (Zone 2) heart rate and all 5 training zones from your age — using the accurate Tanaka formula.',
     live: true,
   },
+  {
+    slug: 'chronotype',
+    name: 'Chronotype Quiz',
+    blurb: 'Six questions to find your body-clock type — morning, intermediate or evening — with a personalised daily-timing protocol.',
+    live: true,
+  },
 ]
 
 export function ToolsPage() {
@@ -76,7 +82,7 @@ export function ToolsPage() {
         ))}
       </div>
 
-      <p className="mt-8 font-mono text-xs text-white/30">More tools coming — chronotype quiz, protein target, VO₂max.</p>
+      <p className="mt-8 font-mono text-xs text-white/30">More tools coming — protein target, VO₂max estimator.</p>
     </main>
   )
 }

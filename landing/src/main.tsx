@@ -47,6 +47,7 @@ const HrvInterpreterPage    = lazy(() => import('./pages/HrvInterpreterPage').th
 const CaffeineCalculatorPage = lazy(() => import('./pages/CaffeineCalculatorPage').then(m => ({ default: m.CaffeineCalculatorPage })))
 const SleepDebtCalculatorPage = lazy(() => import('./pages/SleepDebtCalculatorPage').then(m => ({ default: m.SleepDebtCalculatorPage })))
 const Zone2CalculatorPage   = lazy(() => import('./pages/Zone2CalculatorPage').then(m => ({ default: m.Zone2CalculatorPage })))
+const ChronotypeQuizPage    = lazy(() => import('./pages/ChronotypeQuizPage').then(m => ({ default: m.ChronotypeQuizPage })))
 const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
 const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
 const ReviewsSlugRouter     = lazyNs('reviews', () => import('./components/ReviewsSlugRouter'))
@@ -128,6 +129,7 @@ const app = (
             <Route path="/tools/caffeine"        element={<CaffeineCalculatorPage />} />
             <Route path="/tools/sleep-debt"      element={<SleepDebtCalculatorPage />} />
             <Route path="/tools/zone-2"          element={<Zone2CalculatorPage />} />
+            <Route path="/tools/chronotype"      element={<ChronotypeQuizPage />} />
             <Route path="/reviews"               element={<ReviewsPage />} />
             <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
             <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

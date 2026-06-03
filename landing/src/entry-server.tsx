@@ -31,6 +31,7 @@ import { HrvInterpreterPage } from './pages/HrvInterpreterPage'
 import { CaffeineCalculatorPage } from './pages/CaffeineCalculatorPage'
 import { SleepDebtCalculatorPage } from './pages/SleepDebtCalculatorPage'
 import { Zone2CalculatorPage } from './pages/Zone2CalculatorPage'
+import { ChronotypeQuizPage } from './pages/ChronotypeQuizPage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -139,6 +140,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/caffeine"        element={<CaffeineCalculatorPage />} />
           <Route path="/tools/sleep-debt"      element={<SleepDebtCalculatorPage />} />
           <Route path="/tools/zone-2"          element={<Zone2CalculatorPage />} />
+          <Route path="/tools/chronotype"      element={<ChronotypeQuizPage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

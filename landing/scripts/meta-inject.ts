@@ -16,6 +16,7 @@ import { HRV_FAQ } from '../src/data/hrv-norms'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
 import { HR_ZONE_FAQ } from '../src/data/hr-zones'
+import { CHRONOTYPE_FAQ } from '../src/data/chronotype-quiz'
 import {
   reviews,
   comparisons,
@@ -364,6 +365,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Sleep Debt', url: `${SITE_URL}/tools/sleep-debt` })
     } else if (segments[1] === 'zone-2') {
       items.push({ name: 'Zone 2 Heart Rate', url: `${SITE_URL}/tools/zone-2` })
+    } else if (segments[1] === 'chronotype') {
+      items.push({ name: 'Chronotype Quiz', url: `${SITE_URL}/tools/chronotype` })
     }
     return items
   }
@@ -1303,6 +1306,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       faq: { mainEntity: HR_ZONE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/chronotype') {
+    return {
+      title: "What's Your Chronotype? Free Quiz (Lion, Bear, Wolf) | ONDA Life",
+      description:
+        'Free 6-question chronotype quiz: find whether you are a morning, intermediate or evening type — and get a personalised daily protocol for when to work, train, cut caffeine and sleep.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: CHRONOTYPE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
