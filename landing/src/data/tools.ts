@@ -127,4 +127,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'FITNESS',
     badge: '1RM',
   },
+  {
+    slug: 'body-fat',
+    name: 'Body Fat Calculator',
+    blurb: 'Estimate your body-fat percentage with just a tape measure using the U.S. Navy circumference method, and see your fitness band.',
+    live: true,
+    category: 'FITNESS',
+    badge: '%BF',
+  },
 ]

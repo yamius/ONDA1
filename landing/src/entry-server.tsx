@@ -40,6 +40,7 @@ import { AlcoholClearanceCalculatorPage } from './pages/AlcoholClearanceCalculat
 import { FastingCalculatorPage } from './pages/FastingCalculatorPage'
 import { JetlagPlannerPage } from './pages/JetlagPlannerPage'
 import { OneRepMaxCalculatorPage } from './pages/OneRepMaxCalculatorPage'
+import { BodyFatCalculatorPage } from './pages/BodyFatCalculatorPage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -157,6 +158,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/fasting"         element={<FastingCalculatorPage />} />
           <Route path="/tools/jet-lag"         element={<JetlagPlannerPage />} />
           <Route path="/tools/one-rep-max"     element={<OneRepMaxCalculatorPage />} />
+          <Route path="/tools/body-fat"        element={<BodyFatCalculatorPage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

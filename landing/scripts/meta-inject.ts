@@ -25,6 +25,7 @@ import { ALCOHOL_FAQ } from '../src/data/alcohol-clearance'
 import { FASTING_FAQ } from '../src/data/fasting'
 import { JETLAG_FAQ } from '../src/data/jetlag'
 import { ONE_REP_MAX_FAQ } from '../src/data/one-rep-max'
+import { BODY_FAT_FAQ } from '../src/data/body-fat'
 import {
   reviews,
   comparisons,
@@ -391,6 +392,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Jet Lag', url: `${SITE_URL}/tools/jet-lag` })
     } else if (segments[1] === 'one-rep-max') {
       items.push({ name: 'One-Rep Max', url: `${SITE_URL}/tools/one-rep-max` })
+    } else if (segments[1] === 'body-fat') {
+      items.push({ name: 'Body Fat', url: `${SITE_URL}/tools/body-fat` })
     }
     return items
   }
@@ -1442,6 +1445,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/one-rep-max.png`,
       faq: { mainEntity: ONE_REP_MAX_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/body-fat') {
+    return {
+      title: 'Body Fat Calculator — U.S. Navy Tape Method | ONDA Life',
+      description:
+        'Free body fat calculator using the U.S. Navy circumference method (Hodgdon–Beckett): estimate your body-fat percentage from neck, waist (and hip) measurements with just a tape measure.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/body-fat.png`,
+      faq: { mainEntity: BODY_FAT_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
