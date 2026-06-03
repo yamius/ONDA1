@@ -39,6 +39,7 @@
     "@sentry/capacitor": "^3.2.0",
     "@sentry/react": "10.43.0",
     "@supabase/supabase-js": "^2.57.4",
+    "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
