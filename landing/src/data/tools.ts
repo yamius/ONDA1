@@ -159,4 +159,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'NERVOUS SYSTEM',
     badge: '4-7-8',
   },
+  {
+    slug: 'resonance-breathing',
+    name: 'Resonance Breathing Rate Finder',
+    blurb: 'Find the slow breathing rate (~4.5–6.5/min) where your HRV peaks — your personal resonance frequency — with a height estimate and a paced circle.',
+    live: true,
+    category: 'NERVOUS SYSTEM',
+    badge: '5.5',
+  },
 ]

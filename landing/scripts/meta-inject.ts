@@ -29,6 +29,7 @@ import { BODY_FAT_FAQ } from '../src/data/body-fat'
 import { SLEEP_CYCLE_FAQ } from '../src/data/sleep-cycle'
 import { SHUFFLE_FAQ } from '../src/data/cognitive-shuffle'
 import { BREATHING_FAQ } from '../src/data/breathing'
+import { RESONANCE_FAQ } from '../src/data/resonance-breathing'
 import {
   reviews,
   comparisons,
@@ -403,6 +404,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Cognitive Shuffle', url: `${SITE_URL}/tools/cognitive-shuffle` })
     } else if (segments[1] === 'breathing') {
       items.push({ name: 'Breathing Pacer', url: `${SITE_URL}/tools/breathing` })
+    } else if (segments[1] === 'resonance-breathing') {
+      items.push({ name: 'Resonance Breathing', url: `${SITE_URL}/tools/resonance-breathing` })
     }
     return items
   }
@@ -1502,6 +1505,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/breathing.png`,
       faq: { mainEntity: BREATHING_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/resonance-breathing') {
+    return {
+      title: 'Resonance Breathing: Find Your Rate (HRV) | ONDA Life',
+      description:
+        'Free resonance breathing tool: find the slow breathing rate (~4.5–6.5/min) where your HRV peaks — your personal resonance frequency — with a height estimate and a paced circle.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/resonance-breathing.png`,
+      faq: { mainEntity: RESONANCE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
