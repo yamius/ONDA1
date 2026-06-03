@@ -442,6 +442,7 @@ const nonLocalizedStaticPaths = [
   '/tools',
   '/tools/hrv',
   '/tools/caffeine',
+  '/tools/sleep-debt',
 ]
 
 // Every topic hub URL is prerendered. Hubs without a pillar render

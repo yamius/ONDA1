@@ -22,6 +22,12 @@ const TOOLS: ToolEntry[] = [
     blurb: 'Find the latest you can have your last coffee before bed without leaving sleep-disrupting caffeine in your system.',
     live: true,
   },
+  {
+    slug: 'sleep-debt',
+    name: 'Sleep Debt Calculator',
+    blurb: 'Add up your last 7 nights to see your accumulated sleep deficit against your age-based need — and how to repay it.',
+    live: true,
+  },
 ]
 
 export function ToolsPage() {

@@ -14,6 +14,7 @@ import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
+import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
 import {
   reviews,
   comparisons,
@@ -358,6 +359,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'HRV Interpreter', url: `${SITE_URL}/tools/hrv` })
     } else if (segments[1] === 'caffeine') {
       items.push({ name: 'Caffeine Cut-Off', url: `${SITE_URL}/tools/caffeine` })
+    } else if (segments[1] === 'sleep-debt') {
+      items.push({ name: 'Sleep Debt', url: `${SITE_URL}/tools/sleep-debt` })
     }
     return items
   }
@@ -1275,6 +1278,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       faq: { mainEntity: CAFFEINE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/sleep-debt') {
+    return {
+      title: 'Sleep Debt Calculator — Are You Sleep Deprived? | ONDA Life',
+      description:
+        'Free sleep debt calculator: enter your last 7 nights to see your accumulated sleep deficit against your age-based need — plus how much is realistically repayable and how.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: SLEEP_DEBT_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
