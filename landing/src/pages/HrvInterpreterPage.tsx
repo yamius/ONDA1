@@ -172,6 +172,8 @@ export function HrvInterpreterPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/hrv-different-every-device`} className="text-terminal-green hover:underline">Why your HRV differs on every device</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/reviews/hrv-trackers`} className="text-terminal-green hover:underline">Best HRV trackers (2026)</Link>
         {' · '}
         <Link to={`${langPrefix}/glossary/heart-rate-variability`} className="text-terminal-green hover:underline">What is HRV?</Link>
