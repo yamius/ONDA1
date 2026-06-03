@@ -160,6 +160,15 @@ export function Layout() {
           >
             {t('menu.reviews')}<span className="sr-only">{t('menu.reviewsSr')}</span>
           </TransitionLink>
+          <TransitionLink
+            to={langHref('/tools', currentLang)}
+            onClick={() => setMenuOpen(false)}
+            className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
+              location.pathname.startsWith('/tools') ? 'text-cyan-400' : 'text-white/70'
+            }`}
+          >
+            {t('menu.tools', { defaultValue: 'Tools' })}
+          </TransitionLink>
           <a
             href={`${homePathFor(currentLang)}#download`.replace('//', '/')}
             onClick={() => setMenuOpen(false)}

@@ -438,6 +438,9 @@ const nonLocalizedStaticPaths = [
   // /research — dedicated research-partner landing, linked from the
   // Eurostar deck final slide. EN-only by design (peer-review audience).
   '/research',
+  // Interactive biohacking tools. EN-only for now.
+  '/tools',
+  '/tools/hrv',
 ]
 
 // Every topic hub URL is prerendered. Hubs without a pillar render

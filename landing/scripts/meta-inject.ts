@@ -12,6 +12,7 @@ import { parts } from '../src/pages/PartPage'
 import { getArticleBySlug } from '../src/data/articles'
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
+import { HRV_FAQ } from '../src/data/hrv-norms'
 import {
   reviews,
   comparisons,
@@ -348,6 +349,13 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
   }
   if (segments[0] === 'the-stack') {
     items.push({ name: 'The Stack', url: `${SITE_URL}/the-stack` })
+    return items
+  }
+  if (segments[0] === 'tools') {
+    items.push({ name: 'Tools', url: `${SITE_URL}/tools` })
+    if (segments[1] === 'hrv') {
+      items.push({ name: 'HRV Interpreter', url: `${SITE_URL}/tools/hrv` })
+    }
     return items
   }
   if (segments[0] === 'articles') {
@@ -1231,6 +1239,28 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       researchProject: { name: researchTitle, description: researchDesc, url },
+    }
+  }
+
+  if (route === '/tools') {
+    return {
+      title: 'Biohacking Tools & Calculators | ONDA Life',
+      description:
+        'Free interactive biohacking calculators from ONDA Life — read your HRV, sleep and recovery numbers against the evidence, then track them automatically in the app.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+    }
+  }
+  if (route === '/tools/hrv') {
+    return {
+      title: 'Good HRV by Age — Free Interpreter & Chart | ONDA Life',
+      description:
+        'Free HRV interpreter: enter your age and resting RMSSD to see where your heart rate variability lands against population norms by age — plus a reference chart and what actually raises HRV.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: HRV_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

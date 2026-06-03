@@ -26,6 +26,8 @@ import { BioMetricPage } from './pages/BioMetricPage'
 import { TopicsPage } from './pages/TopicsPage'
 import { TopicPage } from './pages/TopicPage'
 import { ResearchPage } from './pages/ResearchPage'
+import { ToolsPage } from './pages/ToolsPage'
+import { HrvInterpreterPage } from './pages/HrvInterpreterPage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -129,6 +131,8 @@ export function createApp(location: string, lang?: Lang) {
             <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />
           ))}
           <Route path="/research"              element={<ResearchPage />} />
+          <Route path="/tools"                 element={<ToolsPage />} />
+          <Route path="/tools/hrv"             element={<HrvInterpreterPage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />
