@@ -8,12 +8,13 @@
 
 ## Текущий статус
 
-- **Готовится к сабмиту:** `1.7.7` — собрано из ветки `claude/hrv-onboarding-grant`, влито в main FF (`b135c78..928da3a`). Reliability-follow-up к 1.7.6: (1) онбординг-HealthKit-лист теперь включает HRV (раньше HRV грантился только через Connections → тренд наполнялся у единиц; теперь у всех, кто выдаёт доступ в онбординге), (2) fix — live Coherence/stress/energy считаются при любом стриме HR (раньше были завязаны на флапающий `watchHR.isConnected`), (3) AdServices.framework залинкован weak (для детерминированной Apple Ads-атрибуции в Tenjin). Device-тест пройден (HRV-лист, метрики идут). HRV — НЕ новое разрешение (было в 1.7.6), просто всплывает в онбординге.
+- **Готовится к сабмиту:** `1.7.8` — батарейный билд (из ветки `claude/workout-lifecycle-battery`, влит в main FF `cf4d00e..0bae80e`). 1.7.7 заапрувлен → его train закрыт, поэтому батарейка идёт как 1.7.8. Содержит: **workout-session lifecycle fix** (сессия активна ⟺ foreground ∨ практика, иначе стоп + `discardWorkout` → больше нет «весь день» дренажа + Apple Fitness чистый; autonomy во время практики сохранена) + watch «Paused» idle-текст + home waveform tap-to-emphasise линии. Device-тест пройден. Ноты version-agnostic, demo-логин не нужен. _(Параллельно в main влита landing-фича `/tools/hrv` — веб-сайт, к iOS-билду отношения не имеет.)_
+- **LIVE в App Store:** `1.7.7` — ✅ **APPROVED 2026-06-03**. Onboarding-HealthKit-лист включает HRV (reach) + reliability-fix live Coherence/stress/energy (отвязаны от флапающего `isConnected`) + AdServices weak-link (Tenjin ASA).
 - **LIVE в App Store:** `1.7.6` — ✅ **APPROVED 2026-06-02** (submitted 2026-05-31). Build `202605310519` (= CFBundleShortVersionString 1.7.6) под записью ASC «1.1.6». **Один билд = всё сразу:** SKAdNetwork attribution (ASA + Reddit, ATT-ключ удалён, TenjinSDK pinned) + live Coherence на практике (HR-RSA delta-волна) + Resting HRV trend на home (реальный HealthKit SDNN + числа + HRV read-auth fix) + home reorder/highlight + R1-1 guiding register. Чистый аппрув: метаданные согласованы с приложением (live = Coherence, trend = real HRV; «beat-to-beat»/«Live HRV»-overclaim убраны), honesty-линия выдержана, Voice/Face/face-data вопросы не всплыли. Demo-логин не требовался (free-tier sampler без авторизации).
 - **Предыдущий live:** `1.7.5` — ✅ **APPROVED 2026-05-29**, прошла ревью за **< 3 часов** (fast-track). Заменила отклонённый 1.7.4; face-data вопросы не повторились.
 - **Предыдущий сабмит:** `1.7.4 (202605272243)` — **REJECTED 2026-05-29** по Guideline 2.1 (Information Needed про face data), билд удалён. См. секцию ниже.
-- **Ветки:** `claude/practice-live-coherence` (=1.7.6) и `claude/hrv-onboarding-grant` (=1.7.7) обе влиты в `main` FF; main = полный 1.7.7.
-- **Отложено (свои билды позже):** workout-session lifecycle фикс («сессия висит весь день» — батарея/Apple Fitness) — следующий приоритет · backfill HRV-тренда из истории HealthKit (сейчас копит с момента гранта, ~2 дня до линии) · Android real-HRV через Health Connect.
+- **Ветки:** `practice-live-coherence` (1.7.6), `hrv-onboarding-grant` (1.7.7), `workout-lifecycle-battery` (1.7.8) — все влиты в `main` FF; main = полный 1.7.8.
+- **Отложено (свои билды позже):** backfill HRV-тренда из истории HealthKit (сейчас копит с момента гранта, ~2 дня до линии) · Android real-HRV через Health Connect · следующие Tier-1 tools на landing (sleep-debt, caffeine cut-off, chronotype).
 
 ---
 
@@ -67,7 +68,8 @@
 | **1.7.4** | 2026-05-25 | **REJECTED** | **Build `1.7.4 (202605272243)`** — Apple отклонила 2026-05-29 за face-data privacy questions (см. ниже) |
 | **1.7.5** | 2026-05-28 | ✅ **APPROVED / LIVE** | Прошла ревью 2026-05-29 за <3ч. SKStoreReviewController на 2-й практике, home redesign, Hume Stream fix, Voice/Face Check rebrand, light-theme fixes |
 | **1.7.6** | 2026-05-31 | ✅ **APPROVED / LIVE** | Approved 2026-06-02. Build `202605310519`. SKAN attribution + live Coherence (HR-RSA delta-волна) + Resting HRV trend (real HealthKit SDNN + числа) + HealthKit HRV auth fix + home reorder/highlight + R1-1 register. Чистый аппрув |
-| **1.7.7** | 2026-06-02 | **feat / готовится** | Из ветки `hrv-onboarding-grant`. Onboarding-лист включает HRV + reliability-fix live Coherence/stress/energy (не завязаны на `isConnected`) + AdServices weak-link (Tenjin ASA). Влита в main FF |
+| **1.7.7** | 2026-06-02 | ✅ **APPROVED / LIVE** | Approved 2026-06-03. Onboarding-лист включает HRV + reliability-fix live Coherence/stress/energy (не завязаны на `isConnected`) + AdServices weak-link (Tenjin ASA) |
+| **1.7.8** | 2026-06-03 | **feat / готовится** | Из ветки `workout-lifecycle-battery`. Workout-session lifecycle fix (foreground∨практика, иначе стоп+discard → батарея/Apple Fitness) + watch «Paused» + home waveform tap-to-emphasise. Влита в main FF |
 
 ---
 
@@ -206,7 +208,60 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 
 Архив текстов, отправленных в App Store Connect: What's New (публичный, store listing) + Reviewer Notes (для App Review). Demo credentials удалены.
 
-### 1.7.7 — prepared 2026-06-02 (not yet submitted)
+### 1.7.8 — prepared 2026-06-03 (not yet submitted)
+
+**Что в билде:** workout-session lifecycle fix (батарея/Apple Fitness — сессия активна только пока app foreground ∨ практика идёт; иначе стоп + `discardWorkout`; autonomy во время практики цела) + watch «Paused» idle-текст + home waveform tap-to-emphasise линии. Дисциплина та же: version-agnostic (ASC 1.1.8), demo-логин не нужен (галку снять), без Voice/Face Check / SKAN. _(landing `/tools/hrv` в этом же main, но это веб — в нотах/билде не фигурирует.)_
+
+**What's New (EN):**
+> • Big Apple Watch battery fix — live heart-rate monitoring now runs only while you're in the app or a practice, instead of all day.
+> • Tap a metric card on the home screen to highlight its line in the live graph.
+> • Apple Watch and stability polish.
+
+**What's New (RU):**
+> • Большой фикс батареи Apple Watch — мониторинг пульса теперь работает только пока ты в приложении или в практике, а не весь день.
+> • Тапни карточку метрики на главном экране — её линия на живом графике подсветится.
+> • Полировка Apple Watch и стабильности.
+
+<details>
+<summary>Reviewer Notes</summary>
+
+```
+Dear App Review Team,
+
+This update is a reliability follow-up to the previous version:
+
+1. Battery: the Apple Watch heart-rate workout session (used to stream live
+   heart rate during a breathing practice) now starts and stops with the app
+   and practice lifecycle — it runs while the app is in the foreground or a
+   practice is active, and stops otherwise — instead of running continuously.
+   This fixes an all-day battery drain and stops short mind-and-body workouts
+   from being written to Apple Health / the Activity rings. No new permissions,
+   no new data collection.
+
+2. Minor UI: the Watch shows a clearer "Paused" state when the session isn't
+   active, and on the home screen tapping a metric card highlights its line in
+   the live graph.
+
+No changes to sign-in, in-app purchases, third-party SDKs, or data collection.
+No account or sign-in is required to review — the three core practices, the
+live Coherence waveform, and the home Resting HRV trend are available
+immediately on launch. Connect an Apple Watch to see live data. Our privacy
+policy at https://onda-life.com/privacy remains accurate.
+
+Thank you!
+
+Best regards,
+Yakiv
+ONDA Life Team
+```
+
+</details>
+
+**Outcome:** _not yet submitted_
+
+---
+
+### 1.7.7 — submitted 2026-06-02, approved 2026-06-03
 
 **Что в билде:** reliability-follow-up к 1.7.6 — (1) онбординг-HealthKit-лист включает HRV (reach фикс), (2) live Coherence/stress/energy считаются при любом стриме HR (убрана завязка на флапающий `watchHR.isConnected`), (3) AdServices weak-link для Tenjin ASA. HRV — НЕ новое разрешение (было в 1.7.6). Version-agnostic ноты (ASC показывает свою 1.1.x). Voice/Face Check и SKAN/AdServices в нотах не упоминаются. Demo-логин не нужен (галку «Sign-in required» снять).
 
