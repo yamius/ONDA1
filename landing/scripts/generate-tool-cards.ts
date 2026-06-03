@@ -115,11 +115,11 @@ function toolSvg(name: string, category: string, badge: string): string {
   ${sharedDefs}
   <text x="80" y="180" font-family="monospace" font-size="24" font-weight="600" letter-spacing="3" fill="${CYAN}">${esc(ascii(category))} · FREE TOOL</text>
   <text y="${startY}" font-family="sans-serif" font-size="${fs}" font-weight="800" fill="${INK}">${nameTspans}</text>
-  <text x="80" y="${lastBaseline + fs * 0.55 + 16}" font-family="monospace" font-size="26" fill="${MUTE}">interactive calculator</text>
+  <text x="80" y="${lastBaseline + fs * 0.55 + 16}" font-family="monospace" font-size="26" fill="${MUTE}">interactive tool</text>
   <g>
     <rect x="${W - 360}" y="200" width="280" height="180" rx="20" fill="${GREEN}" fill-opacity="0.10" stroke="${GREEN}" stroke-opacity="0.4" stroke-width="2"/>
     <text x="${W - 220}" y="${300 + bfs * 0.18}" font-family="monospace" font-size="${bfs}" font-weight="800" fill="${GREEN}" text-anchor="middle">${esc(ascii(badge))}</text>
-    <text x="${W - 220}" y="352" font-family="monospace" font-size="22" fill="${MUTE}" text-anchor="middle">CALCULATOR</text>
+    <text x="${W - 220}" y="352" font-family="monospace" font-size="22" fill="${MUTE}" text-anchor="middle">ONDA TOOL</text>
   </g>
   ${footer}
 </svg>`

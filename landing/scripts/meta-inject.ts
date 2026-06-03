@@ -28,6 +28,7 @@ import { ONE_REP_MAX_FAQ } from '../src/data/one-rep-max'
 import { BODY_FAT_FAQ } from '../src/data/body-fat'
 import { SLEEP_CYCLE_FAQ } from '../src/data/sleep-cycle'
 import { SHUFFLE_FAQ } from '../src/data/cognitive-shuffle'
+import { BREATHING_FAQ } from '../src/data/breathing'
 import {
   reviews,
   comparisons,
@@ -400,6 +401,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Sleep Cycle', url: `${SITE_URL}/tools/sleep-cycle` })
     } else if (segments[1] === 'cognitive-shuffle') {
       items.push({ name: 'Cognitive Shuffle', url: `${SITE_URL}/tools/cognitive-shuffle` })
+    } else if (segments[1] === 'breathing') {
+      items.push({ name: 'Breathing Pacer', url: `${SITE_URL}/tools/breathing` })
     }
     return items
   }
@@ -1487,6 +1490,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/cognitive-shuffle.png`,
       faq: { mainEntity: SHUFFLE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/breathing') {
+    return {
+      title: 'Breathing Pacer — Box, 4-7-8 & Coherent Breathing | ONDA Life',
+      description:
+        'Free animated breathing pacer: follow the circle through box breathing, 4-7-8, coherent (resonance) or extended-exhale patterns to calm your nervous system and sleep.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/breathing.png`,
+      faq: { mainEntity: BREATHING_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

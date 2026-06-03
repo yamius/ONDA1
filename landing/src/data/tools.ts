@@ -151,4 +151,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'SLEEP',
     badge: 'ZZZ',
   },
+  {
+    slug: 'breathing',
+    name: 'Breathing Pacer',
+    blurb: 'Follow the circle through box, 4-7-8, coherent or extended-exhale breathing to calm your nervous system — the paced-breathing mechanic ONDA trains against live HRV.',
+    live: true,
+    category: 'NERVOUS SYSTEM',
+    badge: '4-7-8',
+  },
 ]
