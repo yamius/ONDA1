@@ -20,6 +20,7 @@ import { CHRONOTYPE_FAQ } from '../src/data/chronotype-quiz'
 import { PROTEIN_FAQ } from '../src/data/protein-target'
 import { VO2MAX_FAQ } from '../src/data/vo2max'
 import { TDEE_FAQ } from '../src/data/tdee'
+import { WATER_FAQ } from '../src/data/water-intake'
 import {
   reviews,
   comparisons,
@@ -376,6 +377,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'VO2max', url: `${SITE_URL}/tools/vo2max` })
     } else if (segments[1] === 'tdee') {
       items.push({ name: 'TDEE', url: `${SITE_URL}/tools/tdee` })
+    } else if (segments[1] === 'water') {
+      items.push({ name: 'Water Intake', url: `${SITE_URL}/tools/water` })
     }
     return items
   }
@@ -1359,6 +1362,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
       faq: { mainEntity: TDEE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/water') {
+    return {
+      title: 'Water Intake Calculator — How Much Water a Day? | ONDA Life',
+      description:
+        'Free water intake calculator: estimate how much water to drink per day from your bodyweight, with adjustments for exercise, hot weather and caffeine or alcohol.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: WATER_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

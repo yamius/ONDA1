@@ -58,6 +58,12 @@ const TOOLS: ToolEntry[] = [
     blurb: 'Find your total daily calorie burn with the Mifflin–St Jeor equation, plus a calorie target and macro split for your goal.',
     live: true,
   },
+  {
+    slug: 'water',
+    name: 'Water Intake Calculator',
+    blurb: 'Estimate your daily water target from bodyweight, with adjustments for exercise, hot weather and high caffeine or alcohol intake.',
+    live: true,
+  },
 ]
 
 export function ToolsPage() {

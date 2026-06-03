@@ -51,6 +51,7 @@ const ChronotypeQuizPage    = lazy(() => import('./pages/ChronotypeQuizPage').th
 const ProteinCalculatorPage = lazy(() => import('./pages/ProteinCalculatorPage').then(m => ({ default: m.ProteinCalculatorPage })))
 const Vo2maxCalculatorPage = lazy(() => import('./pages/Vo2maxCalculatorPage').then(m => ({ default: m.Vo2maxCalculatorPage })))
 const TdeeCalculatorPage = lazy(() => import('./pages/TdeeCalculatorPage').then(m => ({ default: m.TdeeCalculatorPage })))
+const WaterIntakeCalculatorPage = lazy(() => import('./pages/WaterIntakeCalculatorPage').then(m => ({ default: m.WaterIntakeCalculatorPage })))
 const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
 const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
 const ReviewsSlugRouter     = lazyNs('reviews', () => import('./components/ReviewsSlugRouter'))
@@ -136,6 +137,7 @@ const app = (
             <Route path="/tools/protein"         element={<ProteinCalculatorPage />} />
             <Route path="/tools/vo2max"          element={<Vo2maxCalculatorPage />} />
             <Route path="/tools/tdee"            element={<TdeeCalculatorPage />} />
+            <Route path="/tools/water"           element={<WaterIntakeCalculatorPage />} />
             <Route path="/reviews"               element={<ReviewsPage />} />
             <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
             <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />
