@@ -52,6 +52,14 @@ export function HrvInterpreterPage() {
       </p>
 
       {/* Calculator */}
+      <img
+        src="/images/tools/hrv.png"
+        alt="HRV Interpreter — free interactive calculator from ONDA Life"
+        width={1200}
+        height={630}
+        className="mb-8 w-full rounded-xl border border-white/10"
+      />
+
       <div className="mb-6 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5 md:p-6">
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <label className="block">

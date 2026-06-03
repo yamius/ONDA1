@@ -59,6 +59,14 @@ export function TdeeCalculatorPage() {
         Mifflin–St Jeor equation, plus a calorie target and macro split for your goal.
       </p>
 
+      <img
+        src="/images/tools/tdee.png"
+        alt="TDEE Calculator — free interactive calculator from ONDA Life"
+        width={1200}
+        height={630}
+        className="mb-8 w-full rounded-xl border border-white/10"
+      />
+
       <div className="mb-6 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5 md:p-6">
         <div className="mb-4 flex items-center justify-between">
           <span className="font-mono text-xs uppercase tracking-widest text-white/50">Units</span>

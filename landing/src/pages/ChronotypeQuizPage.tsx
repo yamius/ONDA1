@@ -56,6 +56,14 @@ export function ChronotypeQuizPage() {
         cut caffeine and sleep.
       </p>
 
+      <img
+        src="/images/tools/chronotype.png"
+        alt="Chronotype Quiz — free body-clock quiz from ONDA Life"
+        width={1200}
+        height={630}
+        className="mb-8 w-full rounded-xl border border-white/10"
+      />
+
       {/* Progress */}
       <div className="mb-6 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
         <div

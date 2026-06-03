@@ -67,6 +67,14 @@ export function SleepDebtCalculatorPage() {
         sleep debt against your age-based need — and how to repay it.
       </p>
 
+      <img
+        src="/images/tools/sleep-debt.png"
+        alt="Sleep Debt Calculator — free interactive calculator from ONDA Life"
+        width={1200}
+        height={630}
+        className="mb-8 w-full rounded-xl border border-white/10"
+      />
+
       <div className="mb-6 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5 md:p-6">
         <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <label className="block">

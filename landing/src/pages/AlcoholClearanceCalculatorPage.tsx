@@ -45,6 +45,14 @@ export function AlcoholClearanceCalculatorPage() {
         equation — and see why those drinks cost you a night of recovery.
       </p>
 
+      <img
+        src="/images/tools/alcohol.png"
+        alt="Alcohol Clearance Calculator — free interactive calculator from ONDA Life"
+        width={1200}
+        height={630}
+        className="mb-6 w-full rounded-xl border border-white/10"
+      />
+
       <div className="mb-6 rounded-xl border border-amber-400/25 bg-amber-400/5 p-4">
         <p className="font-mono text-[11px] leading-relaxed text-amber-200/80">
           ⚠ Educational estimate only, with large individual variation. This is <strong>not</strong> a

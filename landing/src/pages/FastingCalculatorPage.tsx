@@ -51,6 +51,14 @@ export function FastingCalculatorPage() {
         opens and closes — plus a timeline of the metabolic phases across your fast.
       </p>
 
+      <img
+        src="/images/tools/fasting.png"
+        alt="Intermittent Fasting Calculator — free interactive calculator from ONDA Life"
+        width={1200}
+        height={630}
+        className="mb-8 w-full rounded-xl border border-white/10"
+      />
+
       <div className="mb-6 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5 md:p-6">
         <span className="mb-2 block font-mono text-xs uppercase tracking-widest text-white/50">Protocol</span>
         <div className="mb-4 grid grid-cols-1 gap-2 sm:grid-cols-2">

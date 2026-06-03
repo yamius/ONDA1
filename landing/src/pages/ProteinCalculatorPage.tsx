@@ -45,6 +45,14 @@ export function ProteinCalculatorPage() {
         ACSM sports-nutrition position stands — plus a suggested per-meal amount.
       </p>
 
+      <img
+        src="/images/tools/protein.png"
+        alt="Protein Intake Calculator — free interactive calculator from ONDA Life"
+        width={1200}
+        height={630}
+        className="mb-8 w-full rounded-xl border border-white/10"
+      />
+
       <div className="mb-6 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5 md:p-6">
         <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <label className="block">
