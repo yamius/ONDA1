@@ -203,6 +203,8 @@ export function CognitiveShufflePage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/cognitive-shuffling`} className="text-terminal-green hover:underline">How cognitive shuffling works</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/sleep-cycle`} className="text-terminal-green hover:underline">Sleep cycle calculator</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/caffeine`} className="text-terminal-green hover:underline">Caffeine cut-off</Link>
