@@ -196,6 +196,8 @@ export function ResonanceBreathingPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/coherent-breathing-guide`} className="text-terminal-green hover:underline">Coherent breathing explained</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/breathing`} className="text-terminal-green hover:underline">Breathing pacer</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>

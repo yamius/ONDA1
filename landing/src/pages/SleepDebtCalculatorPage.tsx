@@ -200,6 +200,8 @@ export function SleepDebtCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/how-much-sleep-do-you-need`} className="text-terminal-green hover:underline">How much sleep you need</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/caffeine`} className="text-terminal-green hover:underline">Caffeine cut-off</Link>
         {' · '}
         <Link to={`${langPrefix}/reviews/sleep-apps`} className="text-terminal-green hover:underline">Best sleep apps (2026)</Link>
