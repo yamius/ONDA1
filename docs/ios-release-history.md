@@ -8,7 +8,7 @@
 
 ## Текущий статус
 
-- **Готовится (1.7.9):** practice-audio resume fix — ветка `claude/audio-resume-fix`. Фоновое аудио в WKWebView невозможно (WebKit паузит `<audio>`, как только приложение свёрнуто — это не лечится `AVAudioSession`). Поэтому: **откат** аудио-эксперимента (`.playback`-категория + `audio` в UIBackgroundModes; последнее ещё и App-Review-2.5.4-риск) + **foreground-resume** в `PracticeAudioPlayer` (при возврате в приложение, если практика идёт и WebKit спаузил элемент — пере-`play()` + восстановление громкости). Итог: в фоне музыка молчит (ограничение платформы), возвращается мгновенно при открытии. ⚠️ **В main сейчас лежит НЕоткаченный аудио-эксперимент** (соседний чат влил regressive-ветку `bg-audio-active`) — **1.7.9 собирать только из `claude/audio-resume-fix`** и влить её в main перед сабмитом.
+- **Готовится к сабмиту (1.7.9):** влито в `main` (ветка `claude/audio-resume-fix`). Два фикса: **(1) practice-audio resume** — фоновое аудио в WKWebView невозможно (WebKit паузит `<audio>` при сворачивании, не лечится `AVAudioSession`), поэтому аудио-эксперимент откачен (`.playback` + `audio` в UIBackgroundModes; последнее ещё и App-Review-2.5.4-риск) и добавлен foreground-resume в `PracticeAudioPlayer` (при возврате музыка сразу возобновляется). **(2) watch dead-man's-switch** — `HKWorkoutSession` на часах сам завершается через ~45с тишины от телефона, чтобы force-quit iPhone-приложения не оставлял часы стримить пульс (дренаж) вечно. Device-тест пройден. Version-agnostic ноты, demo-логин не нужен.
 - **LIVE в App Store:** `1.7.8` — ✅ **APPROVED 2026-06-04** (submitted 2026-06-03). Батарейный билд (из ветки `claude/workout-lifecycle-battery`): **workout-session lifecycle fix** (сессия активна ⟺ foreground ∨ практика, иначе стоп + `discardWorkout` → больше нет «весь день» дренажа + Apple Fitness чистый; autonomy во время практики сохранена) + watch «Paused» idle-текст + home waveform tap-to-emphasise линии. Ноты version-agnostic, demo-логин не нужен. _(Параллельно в main влита landing-фича `/tools/hrv` — веб-сайт, к iOS-билду отношения не имеет.)_
 - **Предыдущий live:** `1.7.7` — ✅ **APPROVED 2026-06-03**. Onboarding-HealthKit-лист включает HRV (reach) + reliability-fix live Coherence/stress/energy (отвязаны от флапающего `isConnected`) + AdServices weak-link (Tenjin ASA).
 - **LIVE в App Store:** `1.7.6` — ✅ **APPROVED 2026-06-02** (submitted 2026-05-31). Build `202605310519` (= CFBundleShortVersionString 1.7.6) под записью ASC «1.1.6». **Один билд = всё сразу:** SKAdNetwork attribution (ASA + Reddit, ATT-ключ удалён, TenjinSDK pinned) + live Coherence на практике (HR-RSA delta-волна) + Resting HRV trend на home (реальный HealthKit SDNN + числа + HRV read-auth fix) + home reorder/highlight + R1-1 guiding register. Чистый аппрув: метаданные согласованы с приложением (live = Coherence, trend = real HRV; «beat-to-beat»/«Live HRV»-overclaim убраны), honesty-линия выдержана, Voice/Face/face-data вопросы не всплыли. Demo-логин не требовался (free-tier sampler без авторизации).
@@ -71,7 +71,7 @@
 | **1.7.6** | 2026-05-31 | ✅ **APPROVED / LIVE** | Approved 2026-06-02. Build `202605310519`. SKAN attribution + live Coherence (HR-RSA delta-волна) + Resting HRV trend (real HealthKit SDNN + числа) + HealthKit HRV auth fix + home reorder/highlight + R1-1 register. Чистый аппрув |
 | **1.7.7** | 2026-06-02 | ✅ **APPROVED / LIVE** | Approved 2026-06-03. Onboarding-лист включает HRV + reliability-fix live Coherence/stress/energy (не завязаны на `isConnected`) + AdServices weak-link (Tenjin ASA) |
 | **1.7.8** | 2026-06-03 | ✅ **APPROVED / LIVE** | Approved 2026-06-04. Из ветки `workout-lifecycle-battery`. Workout-session lifecycle fix (foreground∨практика, иначе стоп+discard → батарея/Apple Fitness) + watch «Paused» + home waveform tap-to-emphasise |
-| **1.7.9** | 2026-06-04 | **fix / готовится** | Из ветки `claude/audio-resume-fix`. Откат фонового аудио-эксперимента (WKWebView не играет `<audio>` в фоне; `audio`-режим = 2.5.4-риск) + foreground-resume практического аудио. ⚠️ собирать из ветки, не из main (там НЕоткаченный эксперимент) |
+| **1.7.9** | 2026-06-04 | **fix / готовится** | Влито в main. (1) Откат фон-аудио эксперимента + foreground-resume практического аудио. (2) Watch dead-man's-switch: `HKWorkoutSession` сам завершается через ~45с тишины от телефона (force-quit больше не оставляет часы стримить вечно) |
 
 ---
 
@@ -209,6 +209,57 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 ## Release notes archive
 
 Архив текстов, отправленных в App Store Connect: What's New (публичный, store listing) + Reviewer Notes (для App Review). Demo credentials удалены.
+
+### 1.7.9 — prepared 2026-06-04 (not yet submitted)
+
+**Что в билде:** reliability-follow-up к 1.7.8. (1) **Practice-audio resume** — откат короткого фонового-аудио эксперимента (WKWebView не может играть `<audio>` в фоне; `.playback`-категория + `audio` в UIBackgroundModes убраны, последнее = App-Review-2.5.4-риск) + foreground-resume в `PracticeAudioPlayer` (музыка возобновляется при возврате в приложение). (2) **Watch dead-man's-switch** — watch `HKWorkoutSession` сам завершается через ~45с тишины от iPhone (force-quit приложения больше не оставляет часы стримить пульс вечно). Никаких новых разрешений / данных / SDK. Version-agnostic (ASC своя 1.1.x), demo-логин не нужен (галку «Sign-in required» снять).
+
+**What's New (EN):**
+> • Your practice soundtrack now resumes the moment you return to ONDA.
+> • More Apple Watch battery savings — live heart-rate monitoring now winds down on its own shortly after you close or leave the app, instead of lingering.
+> • Stability and polish.
+
+**What's New (RU):**
+> • Музыка практики теперь сразу возобновляется, когда ты возвращаешься в ONDA.
+> • Ещё бережнее к батарее Apple Watch — мониторинг пульса сам останавливается вскоре после того, как ты закрываешь приложение или выходишь из него, а не работает дальше.
+> • Стабильность и полировка.
+
+<details>
+<summary>Reviewer Notes</summary>
+
+```
+Dear App Review Team,
+
+This update is a reliability follow-up to the previous version:
+
+1. Practice audio: the in-app practice soundtrack now resumes automatically
+   when the app returns to the foreground (previously it could stay silent
+   after the app had been backgrounded). No new audio capability is declared —
+   this build does not play audio in the background.
+
+2. Apple Watch battery: the watch heart-rate workout session now ends on its
+   own a short time after the iPhone app is closed or stays in the background
+   (a watch-side inactivity timeout), so it no longer keeps streaming and
+   draining the watch battery if the app is force-quit.
+
+No changes to sign-in, in-app purchases, third-party SDKs, permissions, or data
+collection. No account or sign-in is required to review — the three core
+practices, the live Coherence waveform, and the home Resting HRV trend are
+available immediately on launch. Connect an Apple Watch to see live data. Our
+privacy policy at https://onda-life.com/privacy remains accurate.
+
+Thank you!
+
+Best regards,
+Yakiv
+ONDA Life Team
+```
+
+</details>
+
+**Outcome:** _not yet submitted_
+
+---
 
 ### 1.7.8 — submitted 2026-06-03, approved 2026-06-04 ✅
 
