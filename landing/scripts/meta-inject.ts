@@ -37,6 +37,7 @@ import { BURNOUT_FAQ } from '../src/data/burnout-assessment'
 import { NS_FAQ } from '../src/data/nervous-system-state'
 import { WHM_FAQ } from '../src/data/wim-hof'
 import { FOG_FAQ } from '../src/data/brain-fog'
+import { RHR_FAQ } from '../src/data/resting-hr'
 import {
   reviews,
   comparisons,
@@ -427,6 +428,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Wim Hof & Cold', url: `${SITE_URL}/tools/wim-hof` })
     } else if (segments[1] === 'brain-fog') {
       items.push({ name: 'Brain Fog', url: `${SITE_URL}/tools/brain-fog` })
+    } else if (segments[1] === 'resting-heart-rate') {
+      items.push({ name: 'Resting Heart Rate', url: `${SITE_URL}/tools/resting-heart-rate` })
     }
     return items
   }
@@ -1622,6 +1625,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/brain-fog.png`,
       faq: { mainEntity: FOG_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/resting-heart-rate') {
+    return {
+      title: 'Resting Heart Rate by Age — Is Yours Normal? | ONDA Life',
+      description:
+        'Free resting heart rate by age chart: enter your age and pulse to see where it lands against fitness-based reference ranges, what’s normal, and how to lower it.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/resting-heart-rate.png`,
+      faq: { mainEntity: RHR_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

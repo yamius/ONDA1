@@ -223,4 +223,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'FOCUS',
     badge: 'FOG',
   },
+  {
+    slug: 'resting-heart-rate',
+    name: 'Resting Heart Rate by Age',
+    blurb: 'See whether your resting pulse is normal against fitness-based ranges for your age — and what actually lowers it. Pairs with HRV.',
+    live: true,
+    category: 'RECOVERY',
+    badge: 'bpm',
+  },
 ]
