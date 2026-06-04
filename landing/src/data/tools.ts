@@ -231,4 +231,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'RECOVERY',
     badge: 'bpm',
   },
+  {
+    slug: 'recovery-score',
+    name: 'Recovery Score Explained',
+    blurb: 'What Whoop, Oura and Garmin recovery scores really measure (HRV, resting HR, sleep) — plus a quick readiness estimate and what to do today.',
+    live: true,
+    category: 'RECOVERY',
+    badge: '%',
+  },
 ]

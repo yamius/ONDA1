@@ -38,6 +38,7 @@ import { NS_FAQ } from '../src/data/nervous-system-state'
 import { WHM_FAQ } from '../src/data/wim-hof'
 import { FOG_FAQ } from '../src/data/brain-fog'
 import { RHR_FAQ } from '../src/data/resting-hr'
+import { RECOVERY_FAQ } from '../src/data/recovery-score'
 import {
   reviews,
   comparisons,
@@ -430,6 +431,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Brain Fog', url: `${SITE_URL}/tools/brain-fog` })
     } else if (segments[1] === 'resting-heart-rate') {
       items.push({ name: 'Resting Heart Rate', url: `${SITE_URL}/tools/resting-heart-rate` })
+    } else if (segments[1] === 'recovery-score') {
+      items.push({ name: 'Recovery Score', url: `${SITE_URL}/tools/recovery-score` })
     }
     return items
   }
@@ -1642,6 +1645,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/resting-heart-rate.png`,
       faq: { mainEntity: RHR_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/recovery-score') {
+    return {
+      title: 'Recovery Score Explained — Whoop, Oura, Garmin | ONDA Life',
+      description:
+        'What your Whoop, Oura or Garmin recovery score really measures (HRV, resting HR, sleep) — plus a quick readiness estimate and what to actually do today. Educational, not medical.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/recovery-score.png`,
+      faq: { mainEntity: RECOVERY_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

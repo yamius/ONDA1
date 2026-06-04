@@ -53,6 +53,7 @@ import { NervousSystemStatePage } from './pages/NervousSystemStatePage'
 import { WimHofPage } from './pages/WimHofPage'
 import { BrainFogQuizPage } from './pages/BrainFogQuizPage'
 import { RestingHeartRatePage } from './pages/RestingHeartRatePage'
+import { RecoveryScorePage } from './pages/RecoveryScorePage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -183,6 +184,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/wim-hof"         element={<WimHofPage />} />
           <Route path="/tools/brain-fog"       element={<BrainFogQuizPage />} />
           <Route path="/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/tools/recovery-score"  element={<RecoveryScorePage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

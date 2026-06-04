@@ -35,15 +35,15 @@ class WorkoutManager: NSObject, ObservableObject {
     private var lastReachabilityChange: Date?
 
     // Dead-man's-switch. `lastPhoneContact` = the last time the phone sent ANY
-    // message (start / heartbeat / …). nil means the phone has never driven
-    // this session — e.g. the watch app was opened standalone — and the
-    // watchdog leaves it alone so standalone HR viewing still works. Once the
-    // phone HAS been in contact, going silent for longer than the timeout means
-    // it was force-quit or suspended too long and can no longer send "stop"
-    // (iOS doesn't reliably call willTerminate on a backgrounded app that gets
-    // killed). So the watch ends the workout itself instead of streaming HR —
-    // and draining the watch battery — forever.
-    private var lastPhoneContact: Date?
+    // message (start / heartbeat / …); also reset when a workout starts. While
+    // a workout is active, if the phone stays silent longer than the timeout it
+    // was force-quit or suspended too long and can no longer send "stop" (iOS
+    // doesn't reliably call willTerminate on a backgrounded app that gets
+    // killed) — so the watch ends the workout itself instead of streaming HR,
+    // and draining the watch battery, forever. (Standalone watch-only use isn't
+    // a supported mode, so an unattended session winding down after the timeout
+    // is fine.)
+    private var lastPhoneContact = Date()
     private let phoneContactTimeout: TimeInterval = 45
     
     override init() {
@@ -330,7 +330,11 @@ class WorkoutManager: NSObject, ObservableObject {
             logDiagnostic("⏭️ Workout already running, skipping")
             return
         }
-        
+
+        // Give the dead-man's-switch a fresh window at start so a just-started
+        // workout isn't instantly stopped (see `lastPhoneContact`).
+        lastPhoneContact = Date()
+
         let config = HKWorkoutConfiguration()
         config.activityType = .mindAndBody
         config.locationType = .indoor
