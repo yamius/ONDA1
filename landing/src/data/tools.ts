@@ -199,4 +199,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'NERVOUS SYSTEM',
     badge: 'BURN',
   },
+  {
+    slug: 'nervous-system',
+    name: 'Nervous System State Quiz',
+    blurb: 'Are you in fight-or-flight, shutdown or regulated? Read your current autonomic state and get the right vagal-tone protocol to shift it.',
+    live: true,
+    category: 'NERVOUS SYSTEM',
+    badge: 'ANS',
+  },
 ]

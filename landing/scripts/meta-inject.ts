@@ -34,6 +34,7 @@ import { DOPAMINE_FAQ } from '../src/data/dopamine-reset'
 import { BIOAGE_FAQ } from '../src/data/biological-age'
 import { DETOX_FAQ } from '../src/data/digital-detox'
 import { BURNOUT_FAQ } from '../src/data/burnout-assessment'
+import { NS_FAQ } from '../src/data/nervous-system-state'
 import {
   reviews,
   comparisons,
@@ -418,6 +419,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Digital Detox', url: `${SITE_URL}/tools/digital-detox` })
     } else if (segments[1] === 'burnout') {
       items.push({ name: 'Burnout Test', url: `${SITE_URL}/tools/burnout` })
+    } else if (segments[1] === 'nervous-system') {
+      items.push({ name: 'Nervous System State', url: `${SITE_URL}/tools/nervous-system` })
     }
     return items
   }
@@ -1577,6 +1580,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/burnout.png`,
       faq: { mainEntity: BURNOUT_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/nervous-system') {
+    return {
+      title: 'Nervous System Quiz — Are You in Fight-or-Flight? | ONDA Life',
+      description:
+        'Free nervous system quiz: 8 questions read whether you’re in fight-or-flight, shutdown or a regulated state — with a vagal-tone protocol to shift it. Educational, not a diagnosis.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/nervous-system.png`,
+      faq: { mainEntity: NS_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

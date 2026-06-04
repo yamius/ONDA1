@@ -49,6 +49,7 @@ import { DopamineResetPage } from './pages/DopamineResetPage'
 import { BiologicalAgeCalculatorPage } from './pages/BiologicalAgeCalculatorPage'
 import { DigitalDetoxPage } from './pages/DigitalDetoxPage'
 import { BurnoutAssessmentPage } from './pages/BurnoutAssessmentPage'
+import { NervousSystemStatePage } from './pages/NervousSystemStatePage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -175,6 +176,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/biological-age"  element={<BiologicalAgeCalculatorPage />} />
           <Route path="/tools/digital-detox"   element={<DigitalDetoxPage />} />
           <Route path="/tools/burnout"         element={<BurnoutAssessmentPage />} />
+          <Route path="/tools/nervous-system"  element={<NervousSystemStatePage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />
