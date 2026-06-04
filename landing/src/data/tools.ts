@@ -239,4 +239,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'RECOVERY',
     badge: '%',
   },
+  {
+    slug: 'camera-heart-rate',
+    name: 'Camera Heart Rate',
+    blurb: 'Measure your pulse with just your phone camera — fingertip on the lens, heartbeat in real time. A live taste of how ONDA reads your body, no wearable needed.',
+    live: true,
+    category: 'RECOVERY',
+    badge: 'PPG',
+  },
 ]

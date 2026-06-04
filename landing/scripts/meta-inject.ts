@@ -39,6 +39,7 @@ import { WHM_FAQ } from '../src/data/wim-hof'
 import { FOG_FAQ } from '../src/data/brain-fog'
 import { RHR_FAQ } from '../src/data/resting-hr'
 import { RECOVERY_FAQ } from '../src/data/recovery-score'
+import { CAMERA_HR_FAQ } from '../src/data/camera-heart-rate'
 import {
   reviews,
   comparisons,
@@ -433,6 +434,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Resting Heart Rate', url: `${SITE_URL}/tools/resting-heart-rate` })
     } else if (segments[1] === 'recovery-score') {
       items.push({ name: 'Recovery Score', url: `${SITE_URL}/tools/recovery-score` })
+    } else if (segments[1] === 'camera-heart-rate') {
+      items.push({ name: 'Camera Heart Rate', url: `${SITE_URL}/tools/camera-heart-rate` })
     }
     return items
   }
@@ -1657,6 +1660,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/recovery-score.png`,
       faq: { mainEntity: RECOVERY_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/camera-heart-rate') {
+    return {
+      title: 'Camera Heart Rate — Measure Pulse With Your Phone | ONDA Life',
+      description:
+        'Measure your heart rate with your phone camera — cover the rear camera and flash with a fingertip and see your pulse in real time. Rough estimate, processed on-device, not medical.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/camera-heart-rate.png`,
+      faq: { mainEntity: CAMERA_HR_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
