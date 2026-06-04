@@ -51,6 +51,7 @@ import { DigitalDetoxPage } from './pages/DigitalDetoxPage'
 import { BurnoutAssessmentPage } from './pages/BurnoutAssessmentPage'
 import { NervousSystemStatePage } from './pages/NervousSystemStatePage'
 import { WimHofPage } from './pages/WimHofPage'
+import { BrainFogQuizPage } from './pages/BrainFogQuizPage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -179,6 +180,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/burnout"         element={<BurnoutAssessmentPage />} />
           <Route path="/tools/nervous-system"  element={<NervousSystemStatePage />} />
           <Route path="/tools/wim-hof"         element={<WimHofPage />} />
+          <Route path="/tools/brain-fog"       element={<BrainFogQuizPage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

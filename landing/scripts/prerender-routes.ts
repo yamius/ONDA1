@@ -464,6 +464,7 @@ const nonLocalizedStaticPaths = [
   '/tools/burnout',
   '/tools/nervous-system',
   '/tools/wim-hof',
+  '/tools/brain-fog',
 ]
 
 // Every topic hub URL is prerendered. Hubs without a pillar render

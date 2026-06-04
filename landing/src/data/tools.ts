@@ -215,4 +215,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'NERVOUS SYSTEM',
     badge: 'WHM',
   },
+  {
+    slug: 'brain-fog',
+    name: 'Brain Fog Quiz',
+    blurb: 'Pinpoint which factors — sleep, stress, overstimulation or lifestyle — are clouding your focus, with a targeted fix and tools for each.',
+    live: true,
+    category: 'FOCUS',
+    badge: 'FOG',
+  },
 ]

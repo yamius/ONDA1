@@ -67,6 +67,7 @@ const DigitalDetoxPage = lazy(() => import('./pages/DigitalDetoxPage').then(m =>
 const BurnoutAssessmentPage = lazy(() => import('./pages/BurnoutAssessmentPage').then(m => ({ default: m.BurnoutAssessmentPage })))
 const NervousSystemStatePage = lazy(() => import('./pages/NervousSystemStatePage').then(m => ({ default: m.NervousSystemStatePage })))
 const WimHofPage = lazy(() => import('./pages/WimHofPage').then(m => ({ default: m.WimHofPage })))
+const BrainFogQuizPage = lazy(() => import('./pages/BrainFogQuizPage').then(m => ({ default: m.BrainFogQuizPage })))
 const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
 const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
 const ReviewsSlugRouter     = lazyNs('reviews', () => import('./components/ReviewsSlugRouter'))
@@ -168,6 +169,7 @@ const app = (
             <Route path="/tools/burnout"         element={<BurnoutAssessmentPage />} />
             <Route path="/tools/nervous-system"  element={<NervousSystemStatePage />} />
             <Route path="/tools/wim-hof"         element={<WimHofPage />} />
+            <Route path="/tools/brain-fog"       element={<BrainFogQuizPage />} />
             <Route path="/reviews"               element={<ReviewsPage />} />
             <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
             <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

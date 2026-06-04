@@ -36,6 +36,7 @@ import { DETOX_FAQ } from '../src/data/digital-detox'
 import { BURNOUT_FAQ } from '../src/data/burnout-assessment'
 import { NS_FAQ } from '../src/data/nervous-system-state'
 import { WHM_FAQ } from '../src/data/wim-hof'
+import { FOG_FAQ } from '../src/data/brain-fog'
 import {
   reviews,
   comparisons,
@@ -424,6 +425,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Nervous System State', url: `${SITE_URL}/tools/nervous-system` })
     } else if (segments[1] === 'wim-hof') {
       items.push({ name: 'Wim Hof & Cold', url: `${SITE_URL}/tools/wim-hof` })
+    } else if (segments[1] === 'brain-fog') {
+      items.push({ name: 'Brain Fog', url: `${SITE_URL}/tools/brain-fog` })
     }
     return items
   }
@@ -1607,6 +1610,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/wim-hof.png`,
       faq: { mainEntity: WHM_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/brain-fog') {
+    return {
+      title: "Brain Fog Quiz — Why Can't You Focus? | ONDA Life",
+      description:
+        'Free brain fog quiz: 8 questions pinpoint which factors — sleep, stress, overstimulation or lifestyle — are clouding your focus, each with a targeted fix. Educational, not a diagnosis.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/brain-fog.png`,
+      faq: { mainEntity: FOG_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
