@@ -192,6 +192,8 @@ for (const slug of PART_SLUGS) {
 const allRoutes = getPrerenderRoutes()
 const INDEXED_TOPIC_SET = new Set<string>(INDEXED_TOPIC_SLUGS)
 const routes = allRoutes.filter((r) => {
+  // Embeddable widgets are noindex — keep them out of the sitemap.
+  if (r.startsWith('/embed/')) return false
   if (LOCALIZED_PART_ROUTE_SET.has(r)) {
     const info = parsePartRoute(r)
     if (!info) return false
