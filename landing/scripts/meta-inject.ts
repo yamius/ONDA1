@@ -704,6 +704,11 @@ function buildOrganizationJsonLd(): string {
       url: `${SITE_URL}/onda-logo-source.png`,
       width: 1024,
       height: 1024,
+      // Image-metadata fields close the GSC "missing creator/creditText/
+      // copyrightNotice" warning (reported 2026-06) on the Organization logo.
+      creditText: 'ONDA Life',
+      creator: { '@id': `${SITE_URL}/#organization` },
+      copyrightNotice: '© ONDA Life',
       license: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
       acquireLicensePage: `${SITE_URL}/contact`,
     },
