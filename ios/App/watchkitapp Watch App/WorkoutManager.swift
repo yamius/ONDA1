@@ -128,12 +128,11 @@ class WorkoutManager: NSObject, ObservableObject {
 
     // Dead-man's-switch check — see `lastPhoneContact`. Runs on the 2s
     // reconnection timer (which fires while a workout keeps the watch app alive
-    // in the background). Only acts on a phone-driven session that has gone
-    // silent past the timeout; a standalone session (lastPhoneContact == nil)
-    // is left untouched.
+    // in the background). Ends any active workout that has gone silent past the
+    // timeout.
     private func checkPhoneContactWatchdog() {
-        guard isActive, let last = lastPhoneContact else { return }
-        let silence = Date().timeIntervalSince(last)
+        guard isActive else { return }
+        let silence = Date().timeIntervalSince(lastPhoneContact)
         guard silence > phoneContactTimeout else { return }
         logDiagnostic("🛑 No phone contact for \(Int(silence))s (>\(Int(phoneContactTimeout))s) — phone closed/suspended, auto-stopping workout", important: true)
         stopWorkout()
@@ -398,10 +397,6 @@ class WorkoutManager: NSObject, ObservableObject {
         // *deliberate* stop (→ stay dead). Flipping it first makes this stop
         // deterministic and prevents the session from coming back to life.
         isActive = false
-        // Clear phone-contact tracking so a later standalone session (opened on
-        // the watch with no phone driving it) isn't immediately killed by a
-        // stale timestamp from this session.
-        lastPhoneContact = nil
 
         let endingBuilder = builder
         session.end()
