@@ -8,7 +8,7 @@
 
 ## Текущий статус
 
-- **Готовится к сабмиту (1.7.9):** влито в `main` (ветка `claude/audio-resume-fix`). Два фикса: **(1) practice-audio resume** — фоновое аудио в WKWebView невозможно (WebKit паузит `<audio>` при сворачивании, не лечится `AVAudioSession`), поэтому аудио-эксперимент откачен (`.playback` + `audio` в UIBackgroundModes; последнее ещё и App-Review-2.5.4-риск) и добавлен foreground-resume в `PracticeAudioPlayer` (при возврате музыка сразу возобновляется). **(2) watch dead-man's-switch** — `HKWorkoutSession` на часах сам завершается через ~45с тишины от телефона, чтобы force-quit iPhone-приложения не оставлял часы стримить пульс (дренаж) вечно. Device-тест пройден. Version-agnostic ноты, demo-логин не нужен.
+- **На ревью (1.7.9):** ⏳ отправлено в App Store 2026-06-04, ожидаем. Влито в `main` (ветка `claude/audio-resume-fix` уже удалена). Два фикса: **(1) practice-audio resume** — фоновое аудио в WKWebView невозможно (WebKit паузит `<audio>` при сворачивании, не лечится `AVAudioSession`), поэтому аудио-эксперимент откачен (`.playback` + `audio` в UIBackgroundModes; последнее ещё и App-Review-2.5.4-риск) и добавлен foreground-resume в `PracticeAudioPlayer` (при возврате музыка сразу возобновляется). **(2) watch dead-man's-switch** — `HKWorkoutSession` на часах сам завершается через ~45с тишины от телефона, чтобы force-quit iPhone-приложения не оставлял часы стримить пульс (дренаж) вечно. Device-тест пройден. Version-agnostic ноты, demo-логин не нужен.
 - **LIVE в App Store:** `1.7.8` — ✅ **APPROVED 2026-06-04** (submitted 2026-06-03). Батарейный билд (из ветки `claude/workout-lifecycle-battery`): **workout-session lifecycle fix** (сессия активна ⟺ foreground ∨ практика, иначе стоп + `discardWorkout` → больше нет «весь день» дренажа + Apple Fitness чистый; autonomy во время практики сохранена) + watch «Paused» idle-текст + home waveform tap-to-emphasise линии. Ноты version-agnostic, demo-логин не нужен. _(Параллельно в main влита landing-фича `/tools/hrv` — веб-сайт, к iOS-билду отношения не имеет.)_
 - **Предыдущий live:** `1.7.7` — ✅ **APPROVED 2026-06-03**. Onboarding-HealthKit-лист включает HRV (reach) + reliability-fix live Coherence/stress/energy (отвязаны от флапающего `isConnected`) + AdServices weak-link (Tenjin ASA).
 - **LIVE в App Store:** `1.7.6` — ✅ **APPROVED 2026-06-02** (submitted 2026-05-31). Build `202605310519` (= CFBundleShortVersionString 1.7.6) под записью ASC «1.1.6». **Один билд = всё сразу:** SKAdNetwork attribution (ASA + Reddit, ATT-ключ удалён, TenjinSDK pinned) + live Coherence на практике (HR-RSA delta-волна) + Resting HRV trend на home (реальный HealthKit SDNN + числа + HRV read-auth fix) + home reorder/highlight + R1-1 guiding register. Чистый аппрув: метаданные согласованы с приложением (live = Coherence, trend = real HRV; «beat-to-beat»/«Live HRV»-overclaim убраны), honesty-линия выдержана, Voice/Face/face-data вопросы не всплыли. Demo-логин не требовался (free-tier sampler без авторизации).
@@ -71,7 +71,7 @@
 | **1.7.6** | 2026-05-31 | ✅ **APPROVED / LIVE** | Approved 2026-06-02. Build `202605310519`. SKAN attribution + live Coherence (HR-RSA delta-волна) + Resting HRV trend (real HealthKit SDNN + числа) + HealthKit HRV auth fix + home reorder/highlight + R1-1 register. Чистый аппрув |
 | **1.7.7** | 2026-06-02 | ✅ **APPROVED / LIVE** | Approved 2026-06-03. Onboarding-лист включает HRV + reliability-fix live Coherence/stress/energy (не завязаны на `isConnected`) + AdServices weak-link (Tenjin ASA) |
 | **1.7.8** | 2026-06-03 | ✅ **APPROVED / LIVE** | Approved 2026-06-04. Из ветки `workout-lifecycle-battery`. Workout-session lifecycle fix (foreground∨практика, иначе стоп+discard → батарея/Apple Fitness) + watch «Paused» + home waveform tap-to-emphasise |
-| **1.7.9** | 2026-06-04 | **fix / готовится** | Влито в main. (1) Откат фон-аудио эксперимента + foreground-resume практического аудио. (2) Watch dead-man's-switch: `HKWorkoutSession` сам завершается через ~45с тишины от телефона (force-quit больше не оставляет часы стримить вечно) |
+| **1.7.9** | 2026-06-04 | ⏳ **fix / на ревью** | Отправлено 2026-06-04. Влито в main. (1) Откат фон-аудио эксперимента + foreground-resume практического аудио. (2) Watch dead-man's-switch: `HKWorkoutSession` сам завершается через ~45с тишины от телефона (force-quit больше не оставляет часы стримить вечно) |
 
 ---
 
@@ -210,7 +210,7 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 
 Архив текстов, отправленных в App Store Connect: What's New (публичный, store listing) + Reviewer Notes (для App Review). Demo credentials удалены.
 
-### 1.7.9 — prepared 2026-06-04 (not yet submitted)
+### 1.7.9 — submitted 2026-06-04 (awaiting review) ⏳
 
 **Что в билде:** reliability-follow-up к 1.7.8. (1) **Practice-audio resume** — откат короткого фонового-аудио эксперимента (WKWebView не может играть `<audio>` в фоне; `.playback`-категория + `audio` в UIBackgroundModes убраны, последнее = App-Review-2.5.4-риск) + foreground-resume в `PracticeAudioPlayer` (музыка возобновляется при возврате в приложение). (2) **Watch dead-man's-switch** — watch `HKWorkoutSession` сам завершается через ~45с тишины от iPhone (force-quit приложения больше не оставляет часы стримить пульс вечно). Никаких новых разрешений / данных / SDK. Version-agnostic (ASC своя 1.1.x), demo-логин не нужен (галку «Sign-in required» снять).
 
@@ -257,7 +257,7 @@ ONDA Life Team
 
 </details>
 
-**Outcome:** _not yet submitted_
+**Outcome:** ⏳ **submitted 2026-06-04** — awaiting review.
 
 ---
 
