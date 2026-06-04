@@ -40,6 +40,7 @@ import { FOG_FAQ } from '../src/data/brain-fog'
 import { RHR_FAQ } from '../src/data/resting-hr'
 import { RECOVERY_FAQ } from '../src/data/recovery-score'
 import { CAMERA_HR_FAQ } from '../src/data/camera-heart-rate'
+import { MIC_FAQ } from '../src/data/mic-breathing'
 import {
   reviews,
   comparisons,
@@ -436,6 +437,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Recovery Score', url: `${SITE_URL}/tools/recovery-score` })
     } else if (segments[1] === 'camera-heart-rate') {
       items.push({ name: 'Camera Heart Rate', url: `${SITE_URL}/tools/camera-heart-rate` })
+    } else if (segments[1] === 'breathing-rate') {
+      items.push({ name: 'Breathing Rate', url: `${SITE_URL}/tools/breathing-rate` })
     }
     return items
   }
@@ -1672,6 +1675,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/camera-heart-rate.png`,
       faq: { mainEntity: CAMERA_HR_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/breathing-rate') {
+    return {
+      title: 'Breathing Rate Monitor — Measure It With Your Mic | ONDA Life',
+      description:
+        'Measure your breathing rate with your phone mic and slow toward the ~6 breaths/min calm zone. Live breath biofeedback, processed on-device — rough estimate, not medical.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/breathing-rate.png`,
+      faq: { mainEntity: MIC_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

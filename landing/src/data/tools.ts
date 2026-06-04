@@ -247,4 +247,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'RECOVERY',
     badge: 'PPG',
   },
+  {
+    slug: 'breathing-rate',
+    name: 'Breathing Rate Monitor',
+    blurb: 'Measure your breathing rate with your phone mic and slow toward the ~6 breaths/min calm zone — live breath biofeedback, no wearable needed.',
+    live: true,
+    category: 'NERVOUS SYSTEM',
+    badge: 'RR',
+  },
 ]

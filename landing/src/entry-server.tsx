@@ -55,6 +55,7 @@ import { BrainFogQuizPage } from './pages/BrainFogQuizPage'
 import { RestingHeartRatePage } from './pages/RestingHeartRatePage'
 import { RecoveryScorePage } from './pages/RecoveryScorePage'
 import { CameraHeartRatePage } from './pages/CameraHeartRatePage'
+import { MicBreathingPage } from './pages/MicBreathingPage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -187,6 +188,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
           <Route path="/tools/recovery-score"  element={<RecoveryScorePage />} />
           <Route path="/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/tools/breathing-rate"  element={<MicBreathingPage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />
           <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
           <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

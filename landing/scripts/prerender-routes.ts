@@ -468,6 +468,7 @@ const nonLocalizedStaticPaths = [
   '/tools/resting-heart-rate',
   '/tools/recovery-score',
   '/tools/camera-heart-rate',
+  '/tools/breathing-rate',
 ]
 
 // Every topic hub URL is prerendered. Hubs without a pillar render
