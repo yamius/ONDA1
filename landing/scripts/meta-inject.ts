@@ -35,6 +35,7 @@ import { BIOAGE_FAQ } from '../src/data/biological-age'
 import { DETOX_FAQ } from '../src/data/digital-detox'
 import { BURNOUT_FAQ } from '../src/data/burnout-assessment'
 import { NS_FAQ } from '../src/data/nervous-system-state'
+import { WHM_FAQ } from '../src/data/wim-hof'
 import {
   reviews,
   comparisons,
@@ -421,6 +422,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Burnout Test', url: `${SITE_URL}/tools/burnout` })
     } else if (segments[1] === 'nervous-system') {
       items.push({ name: 'Nervous System State', url: `${SITE_URL}/tools/nervous-system` })
+    } else if (segments[1] === 'wim-hof') {
+      items.push({ name: 'Wim Hof & Cold', url: `${SITE_URL}/tools/wim-hof` })
     }
     return items
   }
@@ -1592,6 +1595,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/nervous-system.png`,
       faq: { mainEntity: NS_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/wim-hof') {
+    return {
+      title: 'Wim Hof Breathing Timer + Cold Exposure Guide | ONDA Life',
+      description:
+        'Free Wim Hof breathing timer (power breaths, breath-hold, recovery) plus a safety-first cold-exposure protocol. Honestly framed, with the real risks — educational, not medical advice.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/wim-hof.png`,
+      faq: { mainEntity: WHM_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 

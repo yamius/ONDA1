@@ -207,4 +207,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'NERVOUS SYSTEM',
     badge: 'ANS',
   },
+  {
+    slug: 'wim-hof',
+    name: 'Wim Hof Timer & Cold Guide',
+    blurb: 'A guided Wim Hof breathing timer plus a safety-first cold-exposure protocol — stress-resilience training, honestly framed with the real risks.',
+    live: true,
+    category: 'NERVOUS SYSTEM',
+    badge: 'WHM',
+  },
 ]
