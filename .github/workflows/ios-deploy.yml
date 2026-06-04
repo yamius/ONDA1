@@ -55,7 +55,14 @@ jobs:
           ruby-version: '3.2'
 
       - name: Install Fastlane
-        run: gem install fastlane
+        # multi_json is a *soft* runtime dependency of fastlane's bundled
+        # `representable`/google-apis stack (required at load time, not declared
+        # in fastlane's gemspec). The macОS runner image used to ship it
+        # preinstalled; image 20260527 dropped it, so `gem install fastlane`
+        # alone left fastlane crashing on startup with
+        # `Could not find 'multi_json' (>= 1.14.1) ... (Gem::MissingSpecError)`
+        # while loading default actions. Install it explicitly.
+        run: gem install fastlane multi_json
 
       - name: Setup Xcode
         # ITMS-90725: starting 2026-04-28 App Store Connect requires
