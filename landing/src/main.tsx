@@ -72,6 +72,7 @@ const RestingHeartRatePage = lazy(() => import('./pages/RestingHeartRatePage').t
 const RecoveryScorePage = lazy(() => import('./pages/RecoveryScorePage').then(m => ({ default: m.RecoveryScorePage })))
 const CameraHeartRatePage = lazy(() => import('./pages/CameraHeartRatePage').then(m => ({ default: m.CameraHeartRatePage })))
 const MicBreathingPage = lazy(() => import('./pages/MicBreathingPage').then(m => ({ default: m.MicBreathingPage })))
+const BreathHeartBiofeedbackPage = lazy(() => import('./pages/BreathHeartBiofeedbackPage').then(m => ({ default: m.BreathHeartBiofeedbackPage })))
 const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
 const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
 const ReviewsSlugRouter     = lazyNs('reviews', () => import('./components/ReviewsSlugRouter'))
@@ -178,6 +179,7 @@ const app = (
             <Route path="/tools/recovery-score"  element={<RecoveryScorePage />} />
             <Route path="/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
             <Route path="/tools/breathing-rate"  element={<MicBreathingPage />} />
+            <Route path="/tools/breath-heart-biofeedback" element={<BreathHeartBiofeedbackPage />} />
             <Route path="/reviews"               element={<ReviewsPage />} />
             <Route path="/reviews/methodology"   element={<ReviewMethodologyPage />} />
             <Route path="/reviews/compare/:slug" element={<ComparisonPage />} />

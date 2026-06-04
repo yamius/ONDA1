@@ -255,4 +255,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'NERVOUS SYSTEM',
     badge: 'RR',
   },
+  {
+    slug: 'breath-heart-biofeedback',
+    name: 'Breath–Heart Biofeedback',
+    blurb: 'Breathe with the pacer while your phone camera reads your pulse — watch your heart rate rise on the inhale and fall on the exhale. ONDA in miniature.',
+    live: true,
+    category: 'NERVOUS SYSTEM',
+    badge: 'RSA',
+  },
 ]

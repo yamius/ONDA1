@@ -41,6 +41,7 @@ import { RHR_FAQ } from '../src/data/resting-hr'
 import { RECOVERY_FAQ } from '../src/data/recovery-score'
 import { CAMERA_HR_FAQ } from '../src/data/camera-heart-rate'
 import { MIC_FAQ } from '../src/data/mic-breathing'
+import { BH_FAQ } from '../src/data/breath-heart'
 import {
   reviews,
   comparisons,
@@ -439,6 +440,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Camera Heart Rate', url: `${SITE_URL}/tools/camera-heart-rate` })
     } else if (segments[1] === 'breathing-rate') {
       items.push({ name: 'Breathing Rate', url: `${SITE_URL}/tools/breathing-rate` })
+    } else if (segments[1] === 'breath-heart-biofeedback') {
+      items.push({ name: 'Breath–Heart Biofeedback', url: `${SITE_URL}/tools/breath-heart-biofeedback` })
     }
     return items
   }
@@ -1687,6 +1690,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/breathing-rate.png`,
       faq: { mainEntity: MIC_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/breath-heart-biofeedback') {
+    return {
+      title: 'Breath–Heart Biofeedback — Camera + Pacer | ONDA Life',
+      description:
+        'Breathe with the pacer while your phone camera reads your pulse — and watch your heart rate rise on the inhale and fall on the exhale (RSA). A live, on-device biofeedback demo.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/breath-heart-biofeedback.png`,
+      faq: { mainEntity: BH_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
 
