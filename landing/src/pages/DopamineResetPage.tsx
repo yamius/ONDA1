@@ -152,6 +152,8 @@ export function DopamineResetPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/does-dopamine-detox-work`} className="text-terminal-green hover:underline">Does a dopamine detox work?</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/articles/dopamine-architecture-mastering-desire`} className="text-terminal-green hover:underline">Dopamine architecture</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/breathing`} className="text-terminal-green hover:underline">Breathing pacer</Link>

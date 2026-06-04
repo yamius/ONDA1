@@ -178,6 +178,8 @@ export function BrainFogQuizPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/how-to-get-rid-of-brain-fog`} className="text-terminal-green hover:underline">How to get rid of brain fog</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/dopamine-detox`} className="text-terminal-green hover:underline">Dopamine reset</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/nervous-system`} className="text-terminal-green hover:underline">Nervous system state</Link>

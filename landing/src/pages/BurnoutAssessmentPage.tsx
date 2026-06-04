@@ -176,6 +176,8 @@ export function BurnoutAssessmentPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/how-to-lower-cortisol`} className="text-terminal-green hover:underline">How to lower cortisol</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/breathing`} className="text-terminal-green hover:underline">Breathing pacer</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
