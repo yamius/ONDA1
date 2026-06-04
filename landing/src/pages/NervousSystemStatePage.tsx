@@ -161,6 +161,8 @@ export function NervousSystemStatePage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/vagus-nerve-exercises`} className="text-terminal-green hover:underline">Vagus nerve exercises</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/breathing`} className="text-terminal-green hover:underline">Breathing pacer</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/burnout`} className="text-terminal-green hover:underline">Burnout test</Link>

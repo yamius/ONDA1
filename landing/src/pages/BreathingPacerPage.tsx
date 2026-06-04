@@ -204,9 +204,11 @@ export function BreathingPacerPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/box-breathing-how-it-works`} className="text-terminal-green hover:underline">Box breathing explained</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
         {' · '}
-        <Link to={`${langPrefix}/articles/breathwork-command-line-interface`} className="text-terminal-green hover:underline">Breathwork guide</Link>
+        <Link to={`${langPrefix}/tools/resonance-breathing`} className="text-terminal-green hover:underline">Resonance breathing</Link>
       </div>
     </main>
   )
