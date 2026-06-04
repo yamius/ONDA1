@@ -1,5 +1,6 @@
 import { useState, useEffect, useLayoutEffect, Suspense, useMemo } from 'react'
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
+import { AndroidWaitlist } from './AndroidWaitlist'
 import { useTranslation } from 'react-i18next'
 import { TransitionLink } from './TransitionLink'
 import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, langHref, type Lang } from '../i18n'
@@ -242,6 +243,8 @@ export function Layout() {
             <Outlet />
           </Suspense>
         </div>
+        {/* Android-only waitlist capture on tool pages (app is iOS-only). Self-hides off Android. */}
+        {/(^|\/)tools(\/|$)/.test(location.pathname) && <AndroidWaitlist />}
       </main>
 
       <footer className="border-t border-white/5 bg-[#1a1b26]/70 pb-[env(safe-area-inset-bottom,0px)] backdrop-blur-xl">
