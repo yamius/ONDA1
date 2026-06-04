@@ -264,85 +264,76 @@
     },
     "7": {
       "name": "DNA / AER II",
-      "subtitle": "DNA Consciousness and Epigenetic Mastery — the human as a Biological Designer.",
-      "metaDescription": "Level 7 DNA / AER II: DNA consciousness, epigenetics, cellular regeneration, autophagy. Become the Biological Designer. ONDA Life.",
-      "intro": "At this stage, we move beyond thoughts and muscles into the informational core of life. We transition from being \"biological objects\" to becoming Evolutionary Creators. The objective is to access the billion-year-old library of DNA, activate deep cellular regeneration, and align your personal development with the developmental vector of Life itself. You are no longer a hostage to heredity; you are the architect of your biological future.",
+      "subtitle": "Biocomputer Architecture: Where Practice Becomes Permanent",
+      "metaDescription": "Level 7 — DNA / AER II: where practice becomes permanent. The slow level — months of consistency turning calm, focus and steadiness into a durable baseline. ONDA Life.",
+      "intro": "By now you've learned to reach states on demand — calm, focus, steadiness. Level 7 is where those states stop being something you do and start becoming who you are. The slow level. It's measured in months of consistency, not single sessions.\n\nThink of it as writing new patterns into your default code. Not a quick edit — a rewrite that holds because you've run it enough times. This is the difference between getting calm and being a calmer person.",
       "architecture": {
-        "intro": "Level 7 integrates genetic memory, cellular repair, and evolutionary synthesis:",
+        "intro": "Level 7 unfolds across three slow protocols:",
         "parts": [
-          { "label": "I Remember", "protocol": "Protocol: DNA Consciousness and Evolutionary Memory", "goal": "Objective: Transitioning from the \"Self\" to the \"Species\" — accessing the 4-billion-year-old legacy of survival and triumph.", "work": "Work: Activating the brainstem and archicortex to transform ancient instincts into conscious resources. Using \"Ancestral Breathing\" to modulate epigenetic markers and stabilize instinctive calm." },
-          { "label": "I Restore", "protocol": "Protocol: Cellular Regeneration and DNA Self-Correction", "goal": "Objective: Shifting from \"Survival and Attrition\" to \"Deep Renewal\" — the Prefrontal Cortex as a control panel for cellular repair.", "work": "Work: Activating autophagy and DNA proofreading enzymes via high Vagal Tone. Modulating telomerase through deep meditative states to restore the system to its \"factory settings.\"" },
-          { "label": "I Synthesize", "protocol": "Protocol: Epigenetic Mastery and Planetary Symbiosis", "goal": "Objective: From \"Consumer of Life\" to \"Engineer of Life\" — turning personal experience into a healthy update for the planetary field.", "work": "Work: Using the Orbitofrontal Cortex and Prospection Networks to model a creative future. Aligning heart-brain coherence with global natural cycles (Schumann frequencies) for planetary resonance." }
+          { "label": "I Remember", "protocol": "Protocol: Baseline Recall", "goal": "Objective: Make a settled nervous system the place you return to by default.", "work": "Work: The body learns calm the way it learns any skill — through repetition. The regulated baseline you built in earlier levels becomes the one your system reaches for on its own, without effort." },
+          { "label": "I Restore", "protocol": "Protocol: Recovery & Repair", "goal": "Objective: Bring chronic stress load down over time, not just in the moment.", "work": "Work: Sustained practice gives the stress system room to recalibrate — better recovery, steadier sleep, a lower background hum of tension. Slow, cumulative, real." },
+          { "label": "I Synthesize", "protocol": "Protocol: Integration", "goal": "Objective: Pull everything from Levels 1–6 into one stable way of being.", "work": "Work: Breath, attention, emotional steadiness, and self-awareness stop being separate exercises and start working as a single, integrated baseline." }
         ]
       },
       "biologicalProtocol": {
-        "intro": "The epigenetic and regenerative technological stack:",
+        "intro": "The mechanics of lasting change:",
         "items": [
-          { "name": "Epigenetic Resonance", "text": "Modulating internal states to influence gene expression related to immunity, stress resilience, and longevity." },
-          { "name": "Autophagy Triggering", "text": "Conscious deactivation of the \"stress axis\" (HPA) to allow lysosomes to recycle cellular waste and cleanse the extracellular matrix." },
-          { "name": "Archaic Recapitulation", "text": "Contacting the oldest layers of the brain to \"upcycle\" primal fears into instinctive wisdom and biological dignity." },
-          { "name": "Telomerase Modulation", "text": "Stabilizing genetic integrity through ultra-deep relaxation phases that stimulate growth hormone and anabolic repair." }
+          { "name": "State-to-Trait Formation", "text": "Repeated practice is how a temporary state becomes a stable trait. The brain adapts to what it does often — this is ordinary neuroplasticity, given time." },
+          { "name": "Stress-System Recovery", "text": "Lowering chronic stress load through consistency, so the system spends less time braced and more time at rest." },
+          { "name": "Consolidation", "text": "Integrating the skills of earlier levels into one durable baseline you don't have to think about." }
         ]
       },
       "targetSystems": {
-        "intro": "The level engages the following biological and genetic structures:",
+        "intro": "Over months, sustained practice engages the systems that govern long-term adaptation:",
         "items": [
-          { "name": "The Genetic Code (Epigenetic Markers)", "text": "The primary site for modulating gene expression through conscious physiological shifts." },
-          { "name": "Vagus Nerve (Ventral Complex)", "text": "The main lever for switching the body into \"Trophotropic\" (repair and build) mode." },
-          { "name": "Brainstem & Reticular Formation", "text": "Access points to archaic survival algorithms and the \"reptilian\" brain." },
-          { "name": "Lysosomes & Telomeres", "text": "The cellular hardware for waste recycling and maintaining genetic lifespan." },
-          { "name": "Orbitofrontal Cortex", "text": "The center for higher ethical synthesis and evolutionary decision-making." }
+          { "name": "The stress-response system", "text": "Learning to switch off, not just on — so recovery becomes the default." },
+          { "name": "Neuroplasticity", "text": "The brain's capacity to adapt to repeated experience, given enough time." },
+          { "name": "Habit & recovery circuits", "text": "The loops that make a steadier baseline stick without effort." }
         ]
       },
       "results": {
-        "intro": "The outcome of completing Level 7 is attaining \"Biological Sovereignty.\" Your progress markers include:",
+        "intro": "Level 7 isn't about a single session — it's about what's left after many. There's no shortcut to it; that's the point. What people describe over months of consistency:",
         "items": [
-          "Epigenetic Freedom: You are no longer a victim of hereditary scripts or family traumas; you are the editor of your code.",
-          "Factory Settings Effect: A palpable sense of clarity, functionality, and \"newness\" in the tissues and mind.",
-          "Evolutionary Validity: An unshakeable sense of \"rightness\" and belonging to the billion-year-old arrow of life.",
-          "Sustainable Flow: The ecstasy of creation becomes the baseline frequency, fueled by healthy eustress rather than anxiety."
+          "A steadier baseline you don't have to work for.",
+          "Lower background stress, more often.",
+          "The practice starting to run on its own, without willpower."
         ]
       }
     },
     "8": {
       "name": "ATOMIC / IGNIS II",
-      "subtitle": "Quantum Consciousness and Reality Creation — the human as the Zero Point.",
-      "metaDescription": "The final destination of the ONDA system. Achieve Quantum Sovereignty and realize yourself as the Source of reality through Zero-Point protocols.",
-      "intro": "At this ultimate stage, we deconstruct the final filters of \"solidity\" and \"separation.\" Level 8 is the return to the Singularity Point, where the vacuum of consciousness is recognized not as emptiness, but as a medium of infinite energy density. You transition from being a \"biological object\" to the Reality Creator, realizing that everything you experience happens within the field of your own consciousness. You are the space from which existence erupts.",
+      "subtitle": "Biocomputer Architecture: The Edge of the Map",
+      "metaDescription": "Level 8 — ATOMIC / IGNIS II: the edge of the map. The deep, quiet states long-term practitioners describe — experiential, not measured, never overclaimed. ONDA Life.",
+      "intro": "This is the deep end. Levels 1–7 build a stable, regulated nervous system. Level 8 is about what some people find on the far side of that: states of deep stillness and presence that long-term practitioners across many traditions describe — where the usual sense of a separate, busy self goes quiet.\n\nWe'll be straight with you: this level is experiential, not measured. We can't promise it, and we don't track it. There's no biomarker, no badge, no score. We provide the conditions — deep practice, the right state, letting go of effort — and what happens is yours. It's the edge of the map, and we mark it as such.",
       "architecture": {
-        "intro": "Level 8 integrates vibrational tuning, non-local awareness, and the singularity of being:",
+        "intro": "Three contemplative orientations — pointers, not protocols to complete:",
         "parts": [
-          { "label": "I Am Vibration", "protocol": "Protocol: Quantum Consciousness and Energy Resonance", "goal": "Objective: Shifting from object-based to wave-based perception — realizing the body as 99.9% energy field.", "work": "Work: Activating the Pineal Gland as a piezoelectric transducer and stabilizing high-frequency Gamma Rhythms (40+ Hz). Deconstructing the \"biographical ego\" (DMN) to perceive the interface of reality directly." },
-          { "label": "I Am Wholeness", "protocol": "Protocol: Non-local Unity and Quantum Self-Awareness", "goal": "Objective: Collapsing the \"Subject-Object\" duality — becoming a self-luminous field of consciousness.", "work": "Work: Integrating all previously mastered levels (Terra, Aqua, Aer, Ignis) into a single, non-dual structure. Erasing the illusion of separateness through the deactivation of the \"ego-censor\" in the Dorsolateral PFC." },
-          { "label": "I Am the Source", "protocol": "Protocol: Consciousness Singularity and Quantum Creation", "goal": "Objective: Returning to the Singularity — transitioning from \"I am someone\" to the \"Source from which someone arises.\"", "work": "Work: Achieving the \"Neural Activity Zero Point\" — a state of consciousness preceding thought. Utilizing the Thalamus as a gateway to distribute the signals of Being from potential to manifestation." }
+          { "label": "I Am Vibration", "protocol": "Orientation: The Body as Movement", "goal": "Feeling the body less as a solid object and more as rhythm and motion.", "work": "Breath, pulse, the quiet activity that's always there underneath thinking — sensed directly rather than thought about." },
+          { "label": "I Am Wholeness", "protocol": "Orientation: The Boundary Softens", "goal": "The line between the one watching and the experience being watched gets thin.", "work": "A felt sense of things being less divided than usual. Many practitioners describe this; few force it." },
+          { "label": "I Am the Source", "protocol": "Orientation: Resting as Awareness", "goal": "Resting as awareness itself rather than as the contents passing through it.", "work": "The contemplative endpoint described across traditions. This is philosophy and direct experience, not biology — a pointer, not a promise." }
         ]
       },
       "biologicalProtocol": {
-        "intro": "The quantum-biological and singularity technological stack:",
+        "intro": "There's less \"protocol\" here and more \"conditions for\" — and we stay honest about the difference:",
         "items": [
-          { "name": "Deconstruction of Density", "text": "Scanning the \"void\" within the atoms of the body, shifting focus from solid tissue to the energy space within." },
-          { "name": "Gamma-Phase Synchronization", "text": "Techniques to achieve nearly 100% brainwave coherence, creating a state of \"superconductivity\" in the nervous system." },
-          { "name": "Zero Point Practice", "text": "Holding attention in the silence before a thought arises to enter the space of Pure Awareness." },
-          { "name": "Radiation of Creation", "text": "Consciously radiating intent (Clarity, Creation) from the center of being to modulate the external informational field." }
+          { "name": "Conditions, not triggers", "text": "These states tend to arise from deep relaxation, long practice, and — paradoxically — letting go of trying. We can't make them happen on command." },
+          { "name": "Resemblance isn't measurement", "text": "Research on flow and deep meditation describes states that resemble these, but resemblance isn't proof. We don't claim to produce a specific brain state." },
+          { "name": "Stillness before thought", "text": "Holding attention in the quiet before a thought arises — the one practice we can actually point you toward." }
         ]
       },
       "targetSystems": {
-        "intro": "The level engages the final integration of the consciousness circuit:",
+        "intro": "Rather than a list of structures to \"activate,\" Level 8 is about what happens when the effortful, self-referential, always-narrating mind finally quiets down:",
         "items": [
-          { "name": "Pineal Gland", "text": "The primary transducer for subtle electromagnetic and vibrational signals." },
-          { "name": "Thalamo-cortical Resonance", "text": "The central hub distributing the signals of \"Being\" into the manifested world." },
-          { "name": "Default Mode Network (Annihilation Mode)", "text": "The total absence of ego-noise and biographical programming." },
-          { "name": "Parietal Lobe (Deactivation)", "text": "Dissolving spatial orientation to experience transpersonal, non-local unity." },
-          { "name": "Reticular Formation", "text": "The ultimate filter that allows the frequency of the \"Source\" to reach consciousness." }
+          { "name": "The narrating mind, quieted", "text": "What happens when the effortful, self-referential, always-narrating part of the mind finally settles." },
+          { "name": "Pointer, not promise", "text": "Researchers have words for it; practitioners have a felt sense of it. We point toward the experience and stay honest about the rest." }
         ]
       },
       "results": {
-        "intro": "The outcome of completing Level 8 is attaining \"Quantum Sovereignty.\" Your progress markers include:",
+        "intro": "There's no metric for this level — experiential, not measured. We give you the conditions; the experience is your own. What people describe:",
         "items": [
-          "Fundamental Peace: A baseline state of silence that is independent of any external circumstances.",
-          "Direct Authorship: The realization of yourself as the cause of your states; life \"emanates\" from you rather than happening to you.",
-          "Instant Realignment: The ability to annihilate any stress or noise in the \"zero point\" of your presence within nanoseconds.",
-          "Radiation of Presence: A field so coherent that your mere presence harmonizes the surrounding environment and orders chaos."
+          "Profound calm and a sense of spaciousness.",
+          "The mind going quiet.",
+          "A feeling of presence that's hard to put into words."
         ]
       }
     }

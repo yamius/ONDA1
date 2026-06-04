@@ -22,7 +22,7 @@
     "titleLine1": "ONDA LIFE:",
     "titleLine2": "Operating System",
     "titleLine3": "for Your Consciousness",
-    "subtitle": "Stop meditating randomly. Start managing your biological code through systematic upgrades. Your body is a biocomputer. ONDA Life is the OS.",
+    "subtitle": "Stop meditating randomly. Train your nervous system with structure — and watch it respond in real time. Your body is a biocomputer. ONDA is the OS.",
     "ctaDownload": "Download Now",
     "ctaDownloadAria": "Download ONDA Life app",
     "ctaLearn": "Learn More",
@@ -32,28 +32,28 @@
     "tag": "[ CONCEPT ]",
     "titlePrefix": "Your Body is the Most Complex",
     "titleHighlight": "Computer",
-    "subtitle": "Most people use only 10% of their biological potential. ONDA Life provides a step-by-step algorithm to upgrade your firmware — from cellular level to higher consciousness.",
+    "subtitle": "Most meditation is random: a session here, an app there, nothing connecting them. ONDA is a structured path. You start by steadying your nervous system, then build from there — and you can watch your HRV respond while you practice. Each level rests on the one before it.",
     "cards": [
-      { "title": "Systematic", "description": "Not random meditations. A structured protocol based on evolutionary biology and neuroscience." },
-      { "title": "Progressive", "description": "Each level builds upon the previous one. From basic body awareness to social intelligence." },
-      { "title": "Measurable", "description": "Track your progress with biometric data. HRV, sleep quality, stress levels — real metrics." }
+      { "title": "Systematic", "description": "Not random meditations. A structured protocol grounded in how the nervous system actually works." },
+      { "title": "Progressive", "description": "Each level builds on the last — from steadying your baseline to focus, emotional regulation, and beyond." },
+      { "title": "Measurable", "description": "Track real signals — HRV, sleep, stress — and watch your trend move over weeks, not just one morning number." }
     ]
   },
   "levels": {
     "tag": "[ SYSTEM ARCHITECTURE ]",
     "titleLeft": "Clear Hierarchy.",
     "titleRight": "No Chaos.",
-    "subtitle": "Unlike fragmented meditation apps, ONDA Life provides a structured progression through 8 levels of consciousness development. Each level builds upon the previous one.",
+    "subtitle": "Unlike fragmented meditation apps, ONDA is a structured progression through 8 levels. Each one builds on the last — from steadying your body to the quietest states of long practice.",
     "levelLabel": "Level {{n}}",
     "items": [
       { "name": "BODY / TERRA", "description": "Breathing, diaphragm, and HRV — the foundation of parasympathetic activation.", "parts": ["1) I Am", "2) I Move", "3) I Adapt"] },
-      { "name": "EMOTIONS / AQUA", "description": "HPA axis, DHEA, and Mirror Neurons — the architecture of emotional mastery.", "parts": ["4) I Maneuver", "5) I Guard Territory", "6) I'm Part of the Pack"] },
-      { "name": "MIND / AER", "description": "PFC, Norepinephrine, and Gamma Binding — the fuel of cognitive clarity.", "parts": ["7. I Distinguish", "8. I Focus", "9. I Shape the Vision"] },
-      { "name": "SOCIETY / IGNIS", "description": "Oxytocin, Mirror Neurons, and Ventral Vagus — the fuel of social resonance.", "parts": ["10. I Express", "11. I Interact", "12. I Co-Create"] },
-      { "name": "BODY II / TERRA II", "description": "The body as conductor. I Sense → I Channel → I Attune: informational fluidity, flow states, neurosomatic fusion.", "parts": ["13. I Sense", "14. I Channel", "15. I Attune"] },
-      { "name": "BRAIN / AQUA II", "description": "Cognitive Sovereignty and Global Neural Integration — the mind as a high-precision supercomputer. DMN & metacognition, Gamma rhythms.", "parts": ["16. I Witness", "17. I Integrate", "18. I Synchronize"] },
-      { "name": "DNA / AER II", "description": "DNA consciousness and epigenetic mastery — the human as a Biological Designer. Access the billion-year-old library of DNA, activate cellular regeneration.", "parts": ["19. I Remember", "20. I Restore", "21. I Synthesize"] },
-      { "name": "ATOMIC / IGNIS II", "description": "Quantum Consciousness and Reality Creation — the human as the Zero Point.", "parts": ["22. I Am Vibration", "23. I Am Wholeness", "24. I Am the Source"] }
+      { "name": "EMOTIONS / AQUA", "description": "Working with stress and emotional reactivity — steadier responses when things get heavy.", "parts": ["4) I Maneuver", "5) I Guard Territory", "6) I'm Part of the Pack"] },
+      { "name": "MIND / AER", "description": "Attention and focus — training a calmer, clearer mind.", "parts": ["7. I Distinguish", "8. I Focus", "9. I Shape the Vision"] },
+      { "name": "SOCIETY / IGNIS", "description": "Connection and social calm — showing up steadier around other people.", "parts": ["10. I Express", "11. I Interact", "12. I Co-Create"] },
+      { "name": "BODY II / TERRA II", "description": "Deeper embodiment — moving from thinking about the body to feeling it. Flow and ease in motion.", "parts": ["13. I Sense", "14. I Channel", "15. I Attune"] },
+      { "name": "BRAIN / AQUA II", "description": "Self-awareness and metacognition — watching your own mind with more clarity.", "parts": ["16. I Witness", "17. I Integrate", "18. I Synchronize"] },
+      { "name": "DNA / AER II", "description": "Where the practice stops being something you do and becomes part of who you are. Months of consistency settling into a steadier baseline.", "parts": ["19. I Remember", "20. I Restore", "21. I Synthesize"] },
+      { "name": "ATOMIC / IGNIS II", "description": "The deep, quiet states long-term practitioners describe — total presence, the self going still. Experiential, not measured. The edge of the map.", "parts": ["22. I Am Vibration", "23. I Am Wholeness", "24. I Am the Source"] }
     ]
   },
   "features": {
@@ -61,9 +61,9 @@
     "titlePrefix": "Real-Time",
     "titleHighlight": "Bio-Sync",
     "items": [
-      { "title": "Tracker Integration", "description": "Connect Apple Watch, Oura Ring, Garmin. Watch your HRV, sleep, and stress metrics transform in real-time.", "iconAlt": "Biometric data sync icon" },
-      { "title": "Gamified Progression", "description": "Earn OND tokens for each completed practice. Convert your consciousness into real value starting at Level 3.", "iconAlt": "Gamification progression icon" },
-      { "title": "Structured System", "description": "No random meditations. Each practice is a firmware update for a specific system: breathing, emotions, mind, DNA.", "iconAlt": "Structured system icon" }
+      { "title": "Tracker Integration", "description": "Connect Apple Watch, Oura, Garmin, or a chest strap. Watch your HRV, sleep, and stress move in real time.", "iconAlt": "Biometric data sync icon" },
+      { "title": "Gamified Progression", "description": "Earn OND for completed practices and streaks. Unlock themes and extra protocols as you go.", "iconAlt": "Gamification progression icon" },
+      { "title": "Structured System", "description": "No random meditations. Each practice targets a specific system: breathing, emotions, mind, recovery.", "iconAlt": "Structured system icon" }
     ]
   },
   "articles": {

@@ -1089,34 +1089,34 @@ const FAQ_LEVEL_SCHEMA: Record<number, { question: string; answer: string }[]> =
     {
       question: 'What is Level 7 DNA / AER II in the ONDA System?',
       answer:
-        'Level 7 is the stage of DNA Consciousness and Epigenetic Mastery — the human as a Biological Designer. You transition from biological objects to Evolutionary Creators, accessing the billion-year-old library of DNA, activating cellular regeneration, and aligning with the developmental vector of Life. Protocols: I Remember, I Restore, I Synthesize.',
+        'Level 7 is the slow level — where practice becomes permanent. The states you learned to reach in earlier levels (calm, focus, steadiness) stop being something you do and become part of who you are, through months of consistency. Protocols: I Remember, I Restore, I Synthesize.',
     },
     {
       question: 'What is the I Remember protocol?',
       answer:
-        'I Remember (Part 19) is the protocol of DNA Consciousness and Evolutionary Memory. It transitions you from "Self" to "Species" by activating the brainstem and archicortex, transforming ancient instincts into conscious resources. Ancestral Breathing modulates epigenetic markers and stabilizes instinctive calm.',
+        'I Remember (Part 19) is Baseline Recall: making a settled nervous system the place you return to by default. The body learns calm the way it learns any skill — through repetition — until the regulated baseline becomes the one your system reaches for on its own.',
     },
     {
-      question: 'What is Biological Sovereignty?',
+      question: 'What does Level 7 build toward?',
       answer:
-        'Biological Sovereignty is the outcome of completing Level 7. It includes epigenetic freedom (editing your hereditary code), the Factory Settings Effect (clarity and "newness" in tissues and mind), evolutionary validity (belonging to the arrow of life), and sustainable flow fueled by healthy eustress.',
+        'A steadier baseline you do not have to work for, lower background stress more often, and a practice that starts to run on its own without willpower. It is the long horizon — what is left after many sessions, not the result of a single one.',
     },
   ],
   8: [
     {
       question: 'What is Level 8 ATOMIC / IGNIS II in the ONDA System?',
       answer:
-        'Level 8 is the final stage of the ONDA system — Quantum Consciousness and Reality Creation. You transition from biological object to Reality Creator, returning to the Singularity Point where consciousness is recognized as a medium of infinite energy density. Protocols: I Am Vibration, I Am Wholeness, I Am the Source.',
+        'Level 8 is the edge of the map — the deep, quiet states of stillness and presence that long-term practitioners across many traditions describe. It is experiential, not measured: there is no biomarker, badge or score. ONDA provides the conditions; the experience is your own. Orientations: I Am Vibration, I Am Wholeness, I Am the Source.',
     },
     {
-      question: 'What is Quantum Sovereignty?',
+      question: 'Does ONDA measure or promise Level 8 states?',
       answer:
-        'Quantum Sovereignty is the outcome of completing Level 8. It includes Fundamental Peace (silence independent of circumstances), Direct Authorship (life emanates from you), Instant Realignment (annihilating stress in nanoseconds), and Radiation of Presence (your field harmonizes the environment).',
+        'No. We are straight about this: Level 8 is experiential, not measured. We do not track it and we cannot promise it. Research on flow and deep meditation describes states that resemble these, but resemblance is not measurement — so we point you toward the experience and stay honest about the rest.',
     },
     {
-      question: 'What is the Zero Point Practice?',
+      question: 'What do people describe at Level 8?',
       answer:
-        'Zero Point Practice is a Level 8 protocol: holding attention in the silence before a thought arises to enter the space of Pure Awareness. It leads to the Neural Activity Zero Point — a state of consciousness preceding thought — using the Thalamus as a gateway from potential to manifestation.',
+        'Profound calm and a sense of spaciousness, the mind going quiet, and a feeling of presence that is hard to put into words. Experiential, not measured — the conditions are provided, the experience is yours.',
     },
   ],
 }
@@ -2315,9 +2315,9 @@ export function getMetaForRoute(route: string): RouteMeta {
     const course =
       level?.number === 7
         ? {
-            name: 'Epigenetic Design and DNA Consciousness',
+            name: 'Where Practice Becomes Permanent',
             description:
-              'Level 7 DNA / AER II: DNA consciousness, epigenetic mastery, cellular regeneration, autophagy. Become the Biological Designer. ONDA Life.',
+              'Level 7 — DNA / AER II: the slow level. Months of consistency turning calm, focus and steadiness into a durable baseline — where states become traits. ONDA Life.',
             url,
           }
         : undefined
