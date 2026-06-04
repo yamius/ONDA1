@@ -49,7 +49,7 @@ Oura Ring 4 wins for the general HRV-tracking use case. The overnight signal is 
 
 ## How they really differ
 
-The hardware story is nearly equivalent — both are well-validated optical PPG wearables with strong overnight HRV pipelines. The choice is mostly about the wrapper. Oura is a passive instrument with a polished analytics app and a credible sleep model. Whoop is an active coach: the band is more visible, the daily Recovery score is more directive, the Strain target is built into the experience.
+The hardware story is nearly equivalent — both are well-validated optical PPG wearables with strong overnight HRV pipelines. (If you're weighing the raw numbers, read [why your HRV is different on every device](/articles/hrv-different-every-device) — the two won't always agree, and that's expected.) The choice is mostly about the wrapper. Oura is a passive instrument with a polished analytics app and a credible sleep model. Whoop is an active coach: the band is more visible, the daily Recovery score is more directive, the Strain target is built into the experience.
 
 ## When the verdict flips
 

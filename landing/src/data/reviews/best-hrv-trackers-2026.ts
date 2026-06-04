@@ -84,7 +84,7 @@ const bestHrvTrackers2026: Comparison = {
 
 Every device was scored against ONDA's published [review methodology](/reviews/methodology): seven weighted criteria, with HRV measurement accuracy carrying the most weight because it is the metric this category exists to serve. The overall score is the weighted mean — not a number picked by feel.
 
-All of them were assessed from manufacturer specifications, independent 2026 reviews and published validation literature rather than hands-on testing, so treat the scores as an evidence-based starting point.
+All of them were assessed from manufacturer specifications, independent 2026 reviews and published validation literature rather than hands-on testing, so treat the scores as an evidence-based starting point. One caveat worth reading first: no two devices report the same HRV number — [here is why your HRV is different on every device](/articles/hrv-different-every-device), and which reading to actually trust.
 
 ## The short version
 

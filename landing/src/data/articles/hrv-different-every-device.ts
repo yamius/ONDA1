@@ -85,7 +85,7 @@ But the real answer is the one nobody selling a wearable will tell you: **the ab
 
 This is also the antidote to the new wellness trap: obsessively comparing trackers and spiralling over a low number is *itself* a stressor that lowers HRV. The point of the metric is calm self-knowledge, not a leaderboard. Read your number against [population norms](/tools/hrv) once to get oriented — then stop staring at the daily digit and watch the line over time.
 
-When you're ready to choose hardware, our [HRV tracker reviews](/reviews/hrv-trackers) rank devices on exactly this: how trustworthy their HRV actually is, not their marketing.
+When you're ready to choose hardware, our [HRV tracker reviews](/reviews/hrv-trackers) rank devices on exactly this: how trustworthy their HRV actually is, not their marketing. Most people are deciding between two — see [Oura Ring 4 vs Whoop 5.0](/reviews/vs/oura-ring-4-vs-whoop-5-0) — and if you've ever wondered what your "recovery" number really means, the [recovery score explainer](/tools/recovery-score) decodes it.
 
 > [ HARDWARE_VALIDATION ]
 > VALIDATION_DEVICE: One device, one condition, measured consistently
