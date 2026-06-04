@@ -1692,6 +1692,16 @@ export function getMetaForRoute(route: string): RouteMeta {
       faq: { mainEntity: MIC_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
+  if (route === '/embed/hrv') {
+    return {
+      title: 'HRV Interpreter — ONDA Life',
+      description: 'Embeddable HRV interpreter: enter age and resting RMSSD to see where heart rate variability lands against population norms. By ONDA Life.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      noindex: true,
+    }
+  }
   if (route === '/tools/breath-heart-biofeedback') {
     return {
       title: 'Breath–Heart Biofeedback — Camera + Pacer | ONDA Life',

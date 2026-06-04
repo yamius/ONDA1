@@ -104,6 +104,20 @@ app.use(
   })
 )
 
+// Allow /embed/* pages to be framed cross-origin (embeddable widgets).
+// Helmet sets X-Frame-Options: SAMEORIGIN by default, which blocks third-party
+// embedding; override it (and the CSP) only for the embed routes.
+app.use((req, res, next) => {
+  if (req.path.startsWith('/embed/')) {
+    res.removeHeader('X-Frame-Options')
+    res.setHeader(
+      'Content-Security-Policy',
+      "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; frame-ancestors *",
+    )
+  }
+  next()
+})
+
 // Log all incoming requests (to see Replit healthcheck path)
 app.use((req, res, next) => {
   console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`)

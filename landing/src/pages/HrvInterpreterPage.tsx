@@ -171,6 +171,10 @@ export function HrvInterpreterPage() {
         ))}
       </div>
 
+      {/* Embeddable widget — free backlinks. The snippet's attribution <a> sits
+          OUTSIDE the iframe (in the host page) so it counts as a real link. */}
+      <EmbedHrvBlock />
+
       <div className="font-mono text-xs text-white/40">
         Read the guide: <Link to={`${langPrefix}/articles/hrv-different-every-device`} className="text-terminal-green hover:underline">Why your HRV differs on every device</Link>
         {' · '}
@@ -179,5 +183,42 @@ export function HrvInterpreterPage() {
         <Link to={`${langPrefix}/glossary/heart-rate-variability`} className="text-terminal-green hover:underline">What is HRV?</Link>
       </div>
     </main>
+  )
+}
+
+const EMBED_SNIPPET = `<iframe src="https://onda-life.com/embed/hrv" width="100%" height="440" style="border:0;max-width:440px" title="HRV Interpreter — ONDA Life" loading="lazy"></iframe>
+<p style="font:12px sans-serif"><a href="https://onda-life.com/tools/hrv">HRV Interpreter</a> by <a href="https://onda-life.com">ONDA Life</a></p>`
+
+function EmbedHrvBlock() {
+  const [copied, setCopied] = useState(false)
+  const copy = () => {
+    try {
+      navigator.clipboard?.writeText(EMBED_SNIPPET)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      /* clipboard unavailable */
+    }
+  }
+  return (
+    <div className="mb-10 rounded-xl border border-white/10 bg-white/[0.02] p-5">
+      <h2 className="mb-2 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Embed this calculator</h2>
+      <p className="mb-3 font-mono text-xs leading-relaxed text-white/50">
+        Free to embed on your site or blog — paste this snippet (it includes a credit link to ONDA Life):
+      </p>
+      <textarea
+        readOnly
+        rows={4}
+        value={EMBED_SNIPPET}
+        onFocus={(e) => e.currentTarget.select()}
+        className="mb-3 w-full resize-none rounded-lg border border-white/15 bg-black/40 p-3 font-mono text-[11px] leading-relaxed text-white/70 outline-none focus:border-terminal-green/50"
+      />
+      <button
+        onClick={copy}
+        className="rounded-lg border border-terminal-green/40 px-4 py-2 font-mono text-xs text-terminal-green transition-colors hover:bg-terminal-green/10"
+      >
+        {copied ? '✓ Copied' : 'Copy embed code'}
+      </button>
+    </div>
   )
 }

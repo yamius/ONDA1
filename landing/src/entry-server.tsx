@@ -57,6 +57,7 @@ import { RecoveryScorePage } from './pages/RecoveryScorePage'
 import { CameraHeartRatePage } from './pages/CameraHeartRatePage'
 import { MicBreathingPage } from './pages/MicBreathingPage'
 import { BreathHeartBiofeedbackPage } from './pages/BreathHeartBiofeedbackPage'
+import { HrvEmbedPage } from './pages/HrvEmbedPage'
 import { ReviewsPage } from './pages/ReviewsPage'
 import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
@@ -101,6 +102,8 @@ export function createApp(location: string, lang?: Lang) {
   return (
     <StaticRouter location={location}>
       <Routes>
+        {/* Bare embeddable widgets — no Layout chrome (iframe-friendly). */}
+        <Route path="/embed/hrv" element={<HrvEmbedPage />} />
         <Route element={<Layout />}>
           <Route path="/"            element={<HomePage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (

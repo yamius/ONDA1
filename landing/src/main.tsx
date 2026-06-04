@@ -73,6 +73,7 @@ const RecoveryScorePage = lazy(() => import('./pages/RecoveryScorePage').then(m 
 const CameraHeartRatePage = lazy(() => import('./pages/CameraHeartRatePage').then(m => ({ default: m.CameraHeartRatePage })))
 const MicBreathingPage = lazy(() => import('./pages/MicBreathingPage').then(m => ({ default: m.MicBreathingPage })))
 const BreathHeartBiofeedbackPage = lazy(() => import('./pages/BreathHeartBiofeedbackPage').then(m => ({ default: m.BreathHeartBiofeedbackPage })))
+const HrvEmbedPage = lazy(() => import('./pages/HrvEmbedPage').then(m => ({ default: m.HrvEmbedPage })))
 const ReviewsPage           = lazyNs('reviews', () => import('./pages/ReviewsPage').then(m => ({ default: m.ReviewsPage })))
 const ReviewMethodologyPage = lazyNs('reviews', () => import('./pages/ReviewMethodologyPage').then(m => ({ default: m.ReviewMethodologyPage })))
 const ReviewsSlugRouter     = lazyNs('reviews', () => import('./components/ReviewsSlugRouter'))
@@ -84,6 +85,8 @@ const app = (
     <BrowserRouter>
       <Suspense fallback={<div className="min-h-screen bg-[#050a0f]" />}>
         <Routes>
+          {/* Bare embeddable widgets — no Layout chrome (iframe-friendly). */}
+          <Route path="/embed/hrv" element={<HrvEmbedPage />} />
           <Route element={<Layout />}>
             <Route path="/"            element={<HomePage />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
