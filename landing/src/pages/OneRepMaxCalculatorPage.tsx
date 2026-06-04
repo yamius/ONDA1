@@ -167,6 +167,8 @@ export function OneRepMaxCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/how-to-calculate-one-rep-max`} className="text-terminal-green hover:underline">How to calculate your 1RM</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/protein`} className="text-terminal-green hover:underline">Protein target</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/zone-2`} className="text-terminal-green hover:underline">Zone 2 heart rate</Link>

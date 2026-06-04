@@ -169,6 +169,8 @@ export function AlcoholClearanceCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/how-long-does-alcohol-stay-in-your-system`} className="text-terminal-green hover:underline">How long alcohol stays in your system</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/sleep-debt`} className="text-terminal-green hover:underline">Sleep debt</Link>

@@ -237,6 +237,8 @@ export function TdeeCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/how-to-calculate-maintenance-calories`} className="text-terminal-green hover:underline">How to calculate maintenance calories</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/protein`} className="text-terminal-green hover:underline">Protein target</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/vo2max`} className="text-terminal-green hover:underline">VO₂max estimator</Link>

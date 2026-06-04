@@ -162,6 +162,8 @@ export function WaterIntakeCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/how-much-water-should-you-drink`} className="text-terminal-green hover:underline">How much water you should drink</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/tdee`} className="text-terminal-green hover:underline">TDEE calculator</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/caffeine`} className="text-terminal-green hover:underline">Caffeine cut-off</Link>
