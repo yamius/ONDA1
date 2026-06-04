@@ -161,6 +161,8 @@ export function ChronotypeQuizPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/what-is-my-chronotype`} className="text-terminal-green hover:underline">What’s your chronotype?</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/sleep-debt`} className="text-terminal-green hover:underline">Sleep debt calculator</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/caffeine`} className="text-terminal-green hover:underline">Caffeine cut-off</Link>

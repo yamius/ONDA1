@@ -153,6 +153,8 @@ export function JetlagPlannerPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
+        Read the guide: <Link to={`${langPrefix}/articles/how-to-beat-jet-lag`} className="text-terminal-green hover:underline">How to beat jet lag</Link>
+        {' · '}
         Related: <Link to={`${langPrefix}/tools/chronotype`} className="text-terminal-green hover:underline">Chronotype quiz</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/sleep-debt`} className="text-terminal-green hover:underline">Sleep debt</Link>
