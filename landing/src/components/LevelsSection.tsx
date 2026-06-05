@@ -99,9 +99,25 @@ export function LevelsSection() {
           <span className="text-terminal-green">{t('levels.titleLeft')}</span>{' '}
           <span className="text-terminal-cyan">{t('levels.titleRight')}</span>
         </h3>
-        <p className="mb-10 max-w-2xl text-sm leading-relaxed text-white/40 md:mb-16">
+        <p className="mb-8 max-w-2xl text-sm leading-relaxed text-white/40 md:mb-10">
           {t('levels.subtitle')}
         </p>
+
+        {/* Rising ladder: 8 rungs, emoji + name only — the shape of the path before the detail */}
+        <ol className="mb-10 flex items-end gap-1.5 overflow-x-auto pb-1 md:mb-16 md:gap-3" aria-label="The 8-level path">
+          {levelStyles.map((style, i) => (
+            <li
+              key={style.number}
+              className="flex min-w-[60px] flex-1 flex-col items-center gap-1.5 text-center"
+              style={{ marginBottom: `${i * 10}px` }}
+            >
+              <span className="text-xl md:text-2xl" aria-hidden="true">{style.emoji}</span>
+              <span className="font-mono text-[8px] uppercase leading-tight tracking-wider text-white/35 md:text-[9px]">
+                {items[i]?.name}
+              </span>
+            </li>
+          ))}
+        </ol>
 
         <div className="grid gap-4 md:grid-cols-2">
           {levelStyles.map((style, i) => (

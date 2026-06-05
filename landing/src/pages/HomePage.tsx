@@ -10,6 +10,7 @@ import { LevelsSection } from '../components/LevelsSection'
 import { ArticlesSection } from '../components/ArticlesSection'
 import { RecentLog } from '../components/RecentLog'
 import { CtaSection } from '../components/CtaSection'
+import { StickyCta } from '../components/StickyCta'
 
 export function HomePage() {
   const { t } = useTranslation('home')
@@ -45,6 +46,7 @@ export function HomePage() {
       <RecentLog />
       <ArticlesSection />
       <CtaSection />
+      <StickyCta />
     </>
   )
 }

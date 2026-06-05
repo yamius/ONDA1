@@ -47,8 +47,8 @@
     "subtitle": "ONDA isn't one exercise — it's a structured progression. You start by settling your nervous system, then build from there. Go as deep as you want, from steadying your baseline to the quietest states of long practice.",
     "levelLabel": "Level {{n}}",
     "items": [
-      { "name": "BODY / TERRA", "description": "Breathing, diaphragm, and HRV — the foundation of parasympathetic activation.", "parts": ["1) I Am", "2) I Move", "3) I Adapt"] },
-      { "name": "EMOTIONS / AQUA", "description": "Working with stress and emotional reactivity — steadier responses when things get heavy.", "parts": ["4) I Maneuver", "5) I Guard Territory", "6) I'm Part of the Pack"] },
+      { "name": "BODY / TERRA", "description": "Breathing, diaphragm, and HRV — the foundation of parasympathetic activation.", "parts": ["1. I Am", "2. I Move", "3. I Adapt"] },
+      { "name": "EMOTIONS / AQUA", "description": "Working with stress and emotional reactivity — steadier responses when things get heavy.", "parts": ["4. I Maneuver", "5. I Guard Territory", "6. I'm Part of the Pack"] },
       { "name": "MIND / AER", "description": "Attention and focus — training a calmer, clearer mind.", "parts": ["7. I Distinguish", "8. I Focus", "9. I Shape the Vision"] },
       { "name": "SOCIETY / IGNIS", "description": "Connection and social calm — showing up steadier around other people.", "parts": ["10. I Express", "11. I Interact", "12. I Co-Create"] },
       { "name": "BODY II / TERRA II", "description": "Deeper embodiment — moving from thinking about the body to feeling it. Flow and ease in motion.", "parts": ["13. I Sense", "14. I Channel", "15. I Attune"] },
@@ -96,7 +96,7 @@
     "tag": "[ WHY ONDA ]",
     "title": "Not another meditation app. Not another tracker.",
     "cards": [
-      { "title": "Structured, not random.", "text": "A clear path that builds on itself — not a shuffle of unrelated sessions." },
+      { "title": "Structured, because it's sequential.", "text": "A real 8-level progression where each level builds on the last — not a shuffle of unrelated sessions. You always know the next step." },
       { "title": "Training, not just tracking.", "text": "Whoop and Oura tell you you're stressed. ONDA helps you do something about it." },
       { "title": "Honest, not anxiety-inducing.", "text": "Your trend matters more than one morning number. We won't gamify your panic." },
       { "title": "Works on what you own.", "text": "Any heart-rate device, from a $1000 watch to a $30 band." }
