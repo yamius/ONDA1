@@ -136,11 +136,11 @@ export const levelsData: Record<number, LevelData> = {
     results: {
       title: 'Results & Benefits',
       intro:
-        'The outcome of completing Level 1 is reaching the "Point of Stillness" and "Neural Fluidity." Your biological markers of progress include:',
+        'The aim of Level 1 is reaching a "Point of Stillness" and "Neural Fluidity." What people often notice with consistent practice:',
       items: [
-        'Increased HRV: Growth in Heart Rate Variability as a marker of nervous system flexibility.',
-        'Basal Cortisol Reduction: Eliminating background stress at the cellular level.',
-        'Body Armor Dissolution: Releasing chronic spasms and restoring deep, rhythmic breathing.',
+        'HRV that tends to trend up over time as the nervous system gets more flexible.',
+        'A calmer baseline: many people notice less background tension with consistent practice.',
+        'Less holding: chronic tension easing, breathing getting deeper and more rhythmic.',
       ],
     },
     researchLinks: [
@@ -239,11 +239,11 @@ export const levelsData: Record<number, LevelData> = {
     results: {
       title: 'Results & Benefits',
       intro:
-        'The outcome of Level 2 is high cognitive selectivity and control over the limbic field. Your progress markers include:',
+        'Level 2 builds cognitive selectivity and steadier control under pressure. What people often notice with consistent practice:',
       items: [
-        'Replacing Impulsivity with Conscious Speed: You feel the trajectory of the maneuver rather than simply reacting.',
-        '"Winner\'s" Hormonal Profile: Increased DHEA and stabilized testosterone with low cortisol levels.',
-        'Social Density: The ability to influence the group\'s emotional state while remaining in a "Ventral Vagus" state (safety and clarity).',
+        'Conscious speed in place of impulsivity: feeling the trajectory of a reaction rather than just firing it off.',
+        'A steadier stress-hormone balance over time — less running on adrenaline, more on calm drive.',
+        'Social steadiness: holding your own calm and clarity around other people, even in charged moments.',
       ],
     },
     researchLinks: [
@@ -344,12 +344,12 @@ export const levelsData: Record<number, LevelData> = {
     results: {
       title: 'Results & Benefits',
       intro:
-        'The outcome of Level 3 is the attainment of mental autonomy and "Neural Resilience." Your progress markers include:',
+        'Level 3 builds mental autonomy and "Neural Resilience." What people often notice with consistent practice:',
       items: [
-        'Pattern Recognition: The ability to recognize event patterns before they hijack your attention.',
-        'Deep Work Efficiency: Sustained focus in 90/20 cycles without cognitive burnout.',
-        'Biological Belief: Changes in Galvanic Skin Response (GSR)—the body begins to "believe" in the created mental image as if it were real.',
-        'Load Reduction: A radical decrease in cognitive costs by "sharpening" the tools of perception.',
+        'Pattern recognition: catching event patterns before they hijack your attention.',
+        'Deep-work stamina: sustained focus in 90/20 cycles without burning out.',
+        'Embodied rehearsal: a vividly imagined outcome starts to feel real to the body, not just the mind.',
+        'Lower mental load: less effort spent on perception once the tools are sharper.',
       ],
     },
     researchLinks: [
@@ -449,12 +449,12 @@ export const levelsData: Record<number, LevelData> = {
     results: {
       title: 'Results & Benefits',
       intro:
-        'The outcome of Level 4 is entering a space of social freedom and co-creation. Your progress markers include:',
+        'Level 4 opens up social freedom and co-creation. What people often notice with consistent practice:',
       items: [
-        'Sovereign Expression: Your voice gains weight, and your self-expression becomes clear and authentic, free of jaw or throat tension.',
-        'Empathic Precision: The ability to "read" a partner\'s state before it is voiced.',
-        'Synergetic Mastery: The skill of integrating into group processes of any complexity while maintaining personal sovereignty.',
-        'Hormonal Glue: Establishing stable oxytocin and endorphin reward circuits for collective activities.',
+        'Sovereign expression: a clearer, more grounded voice, free of jaw or throat tension.',
+        'Empathic precision: sensing a partner\'s state before it is spoken.',
+        'Synergy: slotting into group processes of any complexity while keeping your own center.',
+        'Connection that sticks: collaboration that feels genuinely rewarding, not draining.',
       ],
     },
     researchLinks: [
@@ -555,12 +555,12 @@ export const levelsData: Record<number, LevelData> = {
     },
     results: {
       title: 'Results & Benefits',
-      intro: 'The outcome of completing Level 5 is attaining "Bodily Transparency." Your progress markers include:',
+      intro: 'Level 5 works toward "Bodily Transparency." What people often notice with consistent practice:',
       items: [
-        'Increased gray matter density in the insular cortex.',
-        'Reduced resting muscle tone.',
-        'Normalization of Galvanic Skin Response (GSR) for autonomic stability.',
-        'The body perceived not as noise, but as a high-precision data stream.',
+        'Sharper interoception — feeling subtle body signals more clearly.',
+        'Less resting tension over time.',
+        'A steadier, calmer autonomic baseline.',
+        'The body experienced as clear signal rather than background noise.',
       ],
     },
     researchLinks: [
@@ -656,12 +656,12 @@ export const levelsData: Record<number, LevelData> = {
     },
     results: {
       title: 'Results & Benefits',
-      intro: 'The outcome of completing Level 6 is attaining "Neural Transparency." Your progress markers include:',
+      intro: 'Level 6 works toward "Neural Transparency." What people often notice with consistent practice:',
       items: [
-        'Increased Cognitive Gap: The ability to choose your response to any thought or impulse.',
-        'High Heart-Brain Coherence: Total absence of internal conflict and "energy leaks."',
-        'Inter-brain Phase Coherence: The ability to instantly "lock into" the rhythm of a group.',
-        'Alpha/Gamma Stabilization: A calm, silent mind capable of high-intensity informational bursts.',
+        'A wider cognitive gap: more room to choose your response to any thought or impulse.',
+        'Heart-brain coherence: less internal friction, fewer "energy leaks."',
+        'Group attunement: settling into the rhythm of a room more easily.',
+        'A calm, quiet mind that can still summon intense focus when needed.',
       ],
     },
     researchLinks: [

@@ -94,33 +94,33 @@ export const PART_SEO: Record<string, { title: string; description: string }> = 
       'Inter-brain hyperscanning, gamma rhythms, mirror neurons. Master of collective intelligence. Neural Wi-Fi.',
   },
   'i-remember': {
-    title: 'Part 19: The Inheriting Human | ONDA Life',
+    title: 'Part 19: Baseline Recall | ONDA Life',
     description:
-      'Epigenetic modulation, genetic memory, ancestral breathing. Guardian of ancient memory. DNA consciousness.',
+      'Making a settled nervous system the place you return to by default — calm learned through repetition until it runs on its own.',
   },
   'i-restore': {
-    title: 'Part 20: Biological Designer | ONDA Life',
+    title: 'Part 20: Recovery & Repair | ONDA Life',
     description:
-      'Autophagy, DNA repair, parasympathetic activation. Guardian of the primary code. Cellular regeneration.',
+      'Bringing chronic stress load down over time so the system spends more time at rest — better recovery, steadier sleep, less background tension.',
   },
   'i-synthesize': {
-    title: 'Part 21: Evolutionary Creator | ONDA Life',
+    title: 'Part 21: Integration | ONDA Life',
     description:
-      'Epigenetic mastery, planetary symbiosis. Engineer of life. Conscious co-author of the noosphere.',
+      'Breath, attention, emotional steadiness and self-awareness working together as one durable baseline you do not have to think about.',
   },
   'i-am-vibration': {
     title: 'Part 22: I Am Vibration | ONDA Life',
     description:
-      'Quantum observer, wave-based perception. Gamma coherence, frequency sovereignty. Energy resonance.',
+      'Feeling the body less as a solid object and more as rhythm and motion — breath, pulse, the quiet activity underneath thinking. Experiential, not measured.',
   },
   'i-am-wholeness': {
-    title: 'Part 23: The Quantum Human | ONDA Life',
+    title: 'Part 23: I Am Wholeness | ONDA Life',
     description:
-      'Universal Assembly Point. Integrated Information Theory, non-local unity. Collapse of duality, existential sovereignty.',
+      'When the line between the one watching and the experience watched gets thin — a felt sense of things being less divided than usual. Experiential, not measured.',
   },
   'i-am-the-source': {
-    title: 'Part 24: Reality Creator | ONDA Life',
+    title: 'Part 24: I Am the Source | ONDA Life',
     description:
-      'Zero Point, Pure Being. Zero-Point Energy, consciousness superconductivity. Direct authorship of reality.',
+      'Resting as awareness itself rather than the contents passing through it — the contemplative endpoint described across traditions. Philosophy and experience, not biology.',
   },
 }
