@@ -60,12 +60,9 @@ export function CtaSection() {
         <h2 className="mb-4 bg-gradient-to-r from-terminal-green to-white bg-clip-text text-2xl font-bold tracking-tight text-transparent md:text-5xl">
           {t('cta.title')}
         </h2>
-        <Link
-          to={langHref('/inner-spectrum', lang)}
-          className="mb-10 block cursor-pointer text-sm text-white/40 transition-colors hover:text-white/70"
-        >
-          {t('cta.subtitle')}
-        </Link>
+        <p className="mb-10 text-sm text-white/50">
+          {t('cta.sub')}
+        </p>
 
         <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
           <a
@@ -103,6 +100,13 @@ export function CtaSection() {
             </div>
           </button>
         </div>
+
+        <Link
+          to={langHref('/inner-spectrum', lang)}
+          className="mt-10 inline-block cursor-pointer text-xs text-white/30 transition-colors hover:text-white/60"
+        >
+          {t('cta.subtitle')}
+        </Link>
       </div>
 
       {isOpen && (

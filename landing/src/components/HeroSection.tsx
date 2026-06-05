@@ -151,39 +151,44 @@ export function HeroSection() {
         <h1 className="mb-4 font-mono text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-6xl lg:text-7xl">
           <span className="block text-cyan-400">{t('hero.titleLine1')}</span>
           <span className="block text-green-400">{t('hero.titleLine2')}</span>
-          <span className="block text-white">{t('hero.titleLine3')}</span>
+          {t('hero.titleLine3') && <span className="block text-white">{t('hero.titleLine3')}</span>}
         </h1>
 
         {/* Subtitle */}
-        <p className="mx-auto mb-14 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base md:mb-20 md:text-xl">
+        <p className="mx-auto mb-8 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base md:mb-10 md:text-xl">
           {t('hero.subtitle')}
         </p>
 
         {/* CTA buttons */}
-        <div className="mb-10 flex flex-col items-center justify-center gap-3 sm:flex-row md:mb-16 md:gap-4">
+        <div className="mb-3 flex flex-col items-center justify-center gap-3 sm:flex-row md:gap-4">
           <a
             href="#download"
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-2 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 sm:w-auto"
+            className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-2.5 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 sm:w-auto"
             aria-label={t('hero.ctaDownloadAria')}
           >
             <DownloadIcon />
             <span>{t('hero.ctaDownload')}</span>
+            <span>&rarr;</span>
           </a>
           <Link
             to={langHref('/about', lang)}
-            className="flex w-full items-center justify-center gap-2 rounded-lg border border-cyan-500/50 px-6 py-2 text-sm text-cyan-400 transition-all hover:bg-cyan-500/10 sm:w-auto"
+            className="flex w-full items-center justify-center gap-2 rounded-lg border border-cyan-500/50 px-6 py-2.5 text-sm text-cyan-400 transition-all hover:bg-cyan-500/10 sm:w-auto"
           >
             <span>{t('hero.ctaLearn')}</span>
-            <span>&rarr;</span>
           </Link>
         </div>
+
+        {/* Friction-reducer microcopy — the single best line on the site */}
+        <p className="mb-10 font-mono text-xs text-white/45 md:mb-16">
+          {t('hero.ctaMicrocopy')}
+        </p>
 
         {/* Scroll indicator */}
         <div className="flex justify-center pb-4 md:pb-8">
           <button
             type="button"
             aria-label={t('hero.scrollAria')}
-            onClick={() => document.getElementById('download')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('product')?.scrollIntoView({ behavior: 'smooth' })}
             className="animate-bounce text-cyan-400/60 transition-colors hover:text-cyan-400 cursor-pointer bg-transparent border-0 p-0"
           >
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

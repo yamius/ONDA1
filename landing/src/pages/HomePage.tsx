@@ -1,9 +1,12 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { HeroSection } from '../components/HeroSection'
-import { ConceptSection } from '../components/ConceptSection'
+import { BridgeSection } from '../components/BridgeSection'
+import { ProductSection } from '../components/ProductSection'
+import { HowItWorksSection } from '../components/HowItWorksSection'
+import { WhySection } from '../components/WhySection'
+import { ProofSection } from '../components/ProofSection'
 import { LevelsSection } from '../components/LevelsSection'
-import { FeaturesSection } from '../components/FeaturesSection'
 import { ArticlesSection } from '../components/ArticlesSection'
 import { RecentLog } from '../components/RecentLog'
 import { CtaSection } from '../components/CtaSection'
@@ -27,12 +30,18 @@ export function HomePage() {
     setMeta('twitter:description', desc, true)
   }, [t])
 
+  // Conversion-focused order (product-first, framework-last):
+  // hook → name the pain → show the product → how → differentiate → prove
+  // → the 8-level journey (depth for the curious) → content → invite.
   return (
     <>
       <HeroSection />
-      <ConceptSection />
+      <BridgeSection />
+      <ProductSection />
+      <HowItWorksSection />
+      <WhySection />
+      <ProofSection />
       <LevelsSection />
-      <FeaturesSection />
       <RecentLog />
       <ArticlesSection />
       <CtaSection />
