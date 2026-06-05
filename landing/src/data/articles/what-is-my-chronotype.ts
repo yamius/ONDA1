@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['circadian-rhythm', 'homeostasis', 'cortisol', 'deep-sleep', 'adenosine'],
   introStyle: 'indigo',
-  image: '/images/tools/chronotype.png',
+  image: '/images/articles/what-is-my-chronotype.png',
   imageAlt:
     'What is my chronotype: morning lark vs night owl vs intermediate, why it’s largely genetic, social jet lag, and how to time your day around it.',
   imageTitle: '[CLOCK_TYPE]: Identifying your natural circadian timing — and working with it.',

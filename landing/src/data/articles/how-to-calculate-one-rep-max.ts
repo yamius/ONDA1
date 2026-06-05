@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['metabolism', 'metabolic-flexibility', 'mitochondria', 'atp'],
   introStyle: 'gold',
-  image: '/images/tools/one-rep-max.png',
+  image: '/images/articles/how-to-calculate-one-rep-max.png',
   imageAlt:
     'How to calculate your one-rep max: the Epley and Brzycki equations from a sub-maximal set, most accurate at 6 reps or fewer, plus a %1RM training table.',
   imageTitle: '[STRENGTH_CEILING]: Estimating 1RM from a hard set, without a max attempt.',

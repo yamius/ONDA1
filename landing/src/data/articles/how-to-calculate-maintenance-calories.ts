@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['metabolism', 'metabolic-flexibility', 'insulin-sensitivity', 'mitochondria', 'homeostasis'],
   introStyle: 'rose',
-  image: '/images/tools/tdee.png',
+  image: '/images/articles/how-to-calculate-maintenance-calories.png',
   imageAlt:
     'How to calculate maintenance calories: Mifflin–St Jeor BMR times an activity multiplier gives TDEE, then verify against your real weight trend.',
   imageTitle: '[ENERGY_BUDGET]: BMR × activity = maintenance — then calibrate to the scale.',

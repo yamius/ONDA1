@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['circadian-rhythm', 'homeostasis', 'deep-sleep', 'slow-wave-sleep', 'cortisol'],
   introStyle: 'amber',
-  image: '/images/tools/jet-lag.png',
+  image: '/images/articles/how-to-beat-jet-lag.png',
   imageAlt:
     'How to beat jet lag: timed bright light to shift the body clock, melatonin for eastward travel, and why direction changes the strategy.',
   imageTitle: '[CLOCK_SHIFT]: Using light and melatonin to re-time the circadian clock.',

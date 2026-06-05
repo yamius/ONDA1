@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['homeostasis', 'metabolism', 'cortisol', 'circadian-rhythm'],
   introStyle: 'cyan',
-  image: '/images/tools/water.png',
+  image: '/images/articles/how-much-water-should-you-drink.png',
   imageAlt:
     'How much water should you drink a day: a bodyweight-based target (~35 ml/kg) adjusted for exercise, heat and caffeine, with urine colour as the real-time guide.',
   imageTitle: '[HYDRATION_TARGET]: Bodyweight-based fluid need, adjusted for your day.',
