@@ -78,7 +78,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Sensory Filtering & Psychoneuroimmunology (PNI)',
-          text: 'Training the thalamus to filter out redundant stimuli, thereby reducing the load on the nervous system. Leveraging neuroplasticity to strengthen the link between mental states and immune responses at the cellular level.',
+          text: 'Training the thalamus to filter out redundant stimuli, thereby reducing the load on the nervous system. Leveraging neuroplasticity to support the connection between mental state and how the body recovers.',
         },
         {
           name: 'Diaphragmatic Release',
@@ -95,11 +95,11 @@ export const parts: Record<string, {
       ],
     },
     results: {
-      intro: 'The outcome of completing Part 1 is the discovery of the \u201cpoint of stillness.\u201d Your biological markers of progress include:',
+      intro: 'The outcome of completing Part 1 is the discovery of the \u201cpoint of stillness.\u201d What people often notice with consistent practice:',
       items: [
-        'Increased Heart Rate Variability (HRV).',
-        'Reduced levels of basal cortisol (the \u201cstress hormone\u201d).',
-        'Restoration of rhythmic peristalsis and stable, deep breathing.',
+        'HRV that tends to trend upward with consistent practice.',
+        'Lower background stress over time \u2014 often felt as a calmer baseline.',
+        'Steadier digestion and deeper, more rhythmic breathing.',
       ],
     },
     outro:
@@ -179,7 +179,7 @@ export const parts: Record<string, {
       ],
     },
     results: {
-      intro: 'The outcome of completing Part 2 is the attainment of \u201cneural fluidity.\u201d Your biological markers of progress include:',
+      intro: 'The outcome of completing Part 2 is the attainment of \u201cneural fluidity.\u201d What people often notice with consistent practice:',
       items: [
         'The disappearance of \u201cjerky\u201d movements (micro-coordination).',
         'Improved fascial gliding and synovial joint lubrication.',
@@ -251,7 +251,7 @@ export const parts: Record<string, {
       ],
     },
     results: {
-      intro: 'The outcome of completing Part 3 is the deep adaptation of the body to the physical world. Your biological markers of progress include:',
+      intro: 'The outcome of completing Part 3 is the deep adaptation of the body to the physical world. What people often notice with consistent practice:',
       items: [
         'Reduction of muscular tension (the \u201cbody armor\u201d).',
         'Stabilization of breathing rhythms under physical exertion.',
@@ -1147,7 +1147,7 @@ export const parts: Record<string, {
       ],
     },
     targets: {
-      intro: 'Target systems and biomarkers of progress:',
+      intro: 'Target systems engaged at this stage:',
       items: [
         {
           name: 'Peripheral Nervous System',
@@ -1236,7 +1236,7 @@ export const parts: Record<string, {
       ],
     },
     targets: {
-      intro: 'Target systems and biomarkers of progress:',
+      intro: 'Target systems engaged at this stage:',
       items: [
         {
           name: 'Oxytocinergic Pathways',
@@ -1360,7 +1360,7 @@ export const parts: Record<string, {
       ],
     },
     targets: {
-      intro: 'Target systems and biomarkers of progress:',
+      intro: 'Target systems engaged at this stage:',
       items: [
         {
           name: 'Dorsolateral PFC',
@@ -1445,7 +1445,7 @@ export const parts: Record<string, {
       ],
     },
     targets: {
-      intro: 'Target systems and biomarkers of progress:',
+      intro: 'Target systems engaged at this stage:',
       items: [
         { name: 'Corpus Callosum (horizontal)', text: 'Inter-hemispheric synchronization.' },
         { name: 'Cortex-Subcortex pathways (vertical)', text: 'Strengthening body-mind connections.' },
@@ -1519,7 +1519,7 @@ export const parts: Record<string, {
       ],
     },
     targets: {
-      intro: 'Target systems and biomarkers of progress:',
+      intro: 'Target systems engaged at this stage:',
       items: [
         { name: 'Mirror Neuron Network', text: 'Pre-verbal understanding of partners\' intentions and actions.' },
         { name: 'Oxytocin System (bonding chemistry)', text: 'The neurochemistry of trust and belonging within the collective.' },
@@ -1560,26 +1560,26 @@ export const parts: Record<string, {
     badge: '[ PART 19 — LEVEL 7: DNA / AER II ]',
     title: 'I',
     titleHighlight: 'Remember',
-    subtitle: 'Protocol: DNA Consciousness and Evolutionary Memory',
+    subtitle: 'Protocol: Baseline Recall',
     metaDescription:
-      'Part 19: Epigenetic modulation, genetic memory, ancestral breathing. The Inheriting Human. Guardian of ancient memory. ONDA Life.',
+      'Part 19: Baseline Recall — making a settled nervous system the place you return to by default, through months of repetition. ONDA Life.',
     intro:
-      'Part 19 is about working with the "Legacy Code" of your biology. We move beyond working memory (your thoughts and plans) and dive into the genetic and epigenetic memory of generations. Your body is not just "you"; it is a manuscript edited over billions of years. Here, we learn to recognize archaic life forms within ourselves: from Ice Age survival instincts to cellular algorithms that remember life\'s emergence from the ocean. DNA is viewed not as a sentence, but as a library of evolution\'s triumphant solutions.\n\nKey Biological Challenge: Moving ancient instinctive programs from blind automatism into a mode of conscious resource.\n\nWe activate the oldest layers of the nervous system and mechanisms of cellular recognition. Epigenetic Modulation influences gene expression by managing deep physiological states. The Reticular Formation and Brainstem provide access to the "reptilian" brain and archaic survival algorithms. The Hippocampus (implicit memory) works with the memory of forms and movements that precede the conscious "I." The Archicortex synchronizes limbic and instinctive patterns. Ultra-deep Interoception is the ability to read "tissue memory" and organ-level data.',
+      'Part 19 is about the slow work of making calm your default. The steadiness and ease you can already reach become the states your nervous system returns to on its own — not because you force them, but because you have practised them enough.\n\nKey idea: repetition, not magic. The body learns calm the way it learns any skill — by doing it, often, over months.\n\nWe lean on the oldest, most automatic layers of the nervous system: breath, brainstem regulation, and deep interoception. The aim is simple but slow — a regulated baseline stops being a place you visit and becomes the place you live.',
     protocol: {
       title: 'Biological Protocol',
       intro: 'This protocol transforms you into a Guardian of Ancient Memory:',
       items: [
         {
-          name: 'Epigenetic Resonance',
-          text: '"Ancestral Breathing" practices to modulate the vagus nerve, affecting the expression of genes related to immunity and stress resilience.',
+          name: 'Vagal Breathing',
+          text: 'Slow, "ancestral" breathing that raises vagal tone and helps the stress system settle over time.',
         },
         {
-          name: 'Evolutionary Recapitulation',
-          text: 'Contacting archaic brain layers to transform primal fears into instinctive wisdom and dignity.',
+          name: 'Working With Old Fears',
+          text: 'Meeting primal, instinctive reactions with awareness, so they become information rather than alarm.',
         },
         {
-          name: 'Cellular Retrospection',
-          text: 'Deep tissue scanning to "recognize" the history of your biological suit and activate self-healing mechanisms.',
+          name: 'Body Scanning',
+          text: 'Slow attention through the body — noticing tension and letting it release. A practice, not a cure.',
         },
         {
           name: 'Motor Memory of Forms',
@@ -1592,29 +1592,29 @@ export const parts: Record<string, {
       ],
     },
     targets: {
-      intro: 'Target systems and biomarkers of progress:',
+      intro: 'Target systems engaged at this stage:',
       items: [
-        { name: 'Genetic memory (epigenetic markers)', text: 'Influencing gene expression through deep physiological states.' },
-        { name: 'Limbic system (archaic emotions)', text: 'Transforming primal patterns into conscious resources.' },
-        { name: 'Fascial networks (somatic memory)', text: 'Stores of tissue-level and movement memory.' },
+        { name: 'Autonomic baseline', text: 'The body learning to return to a regulated resting state on its own.' },
+        { name: 'Limbic system (old emotions)', text: 'Meeting primal patterns with awareness instead of reacting to them.' },
+        { name: 'Fascial networks (somatic memory)', text: 'Where tension and movement habits are held — and gradually released.' },
         {
-          name: 'Biomarkers',
-          text: 'Reduction in systemic inflammation (epigenetic stabilization), shift in primordial breathing patterns, strengthening of instinctive calm in the face of core threats.',
+          name: 'What shifts over time',
+          text: 'Steadier breathing, a calmer resting state, and more instinctive ease under stress — gradually, with practice.',
         },
       ],
     },
     results: {
       intro:
-        'Achieving the status of the Inheriting Human. You cease to perceive yourself as an isolated fragment of time and realize yourself as the living tip of a billion-year-old evolutionary arrow.',
+        'Level 7 is the long horizon — what is left after many sessions, not the result of a single one. What people describe over months of consistency:',
       items: [
-        'Instinctive Foundation: You gain access to nature\'s "database" of successful solutions. Fear and anxiety are replaced by a profound calm, as you feel the power of all your ancestors who survived to pass this code down to you.',
-        'Biological Dignity: Your body acquires a new stature and grace, characteristic of a being that recognizes its evolutionary worth.',
-        'Epigenetic Freedom: You are no longer a hostage to family traumas or hereditary scripts. You have learned to "read" the code and use its energy for creation rather than the repetition of errors.',
-        'Sensory Depth: Your interoception expands to the ability to feel the rhythms of life in every cell, providing an unshakeable sense of the "rightness" of your existence in this world.',
+        'A profound, ordinary calm — fear and anxiety meeting a steadier baseline.',
+        'A sense of being more at home in your own body.',
+        'Less reactivity to old patterns and family scripts — more room to choose your response.',
+        'Subtler body awareness, and a quiet sense that your baseline is genuinely your own.',
       ],
     },
     outro:
-      'You are the continuation of life. Every breath carries evolutionary validity. The Guardian of the Code.',
+      'Calm, practised enough times, becomes who you are. A steady baseline you can return to.',
     glossaryLinks: [
       { label: 'Hippocampus', slug: 'hippocampus' },
       { label: 'Vagus Nerve', slug: 'vagus-nerve' },
@@ -1634,61 +1634,61 @@ export const parts: Record<string, {
     badge: '[ PART 20 — LEVEL 7: DNA / AER II ]',
     title: 'I',
     titleHighlight: 'Restore',
-    subtitle: 'Protocol: Cellular Regeneration and DNA Self-Correction',
+    subtitle: 'Protocol: Recovery & Repair',
     metaDescription:
-      'Part 20: Autophagy, DNA repair, parasympathetic activation. Biological Designer. Guardian of the primary code. Deep renewal. ONDA Life.',
+      'Part 20: Recovery & Repair — bringing chronic stress load down over time so the body spends more time at rest. ONDA Life.',
     intro:
-      'Part 20 is the transition from observation to active self-regulation. We leave the "software" level and enter the engineering department of self-regulating matter. Our task is to use the prefrontal cortex as a control panel to activate repair systems that usually operate in the background. We learn to shift the body from a mode of "survival and attrition" to a mode of "deep renewal." Restoration is understood here not as "healing," but as removing blockages from the natural flow of life.\n\nKey Biological Challenge: Activating autophagy and DNA repair mechanisms through conscious alignment with the body\'s "factory settings."\n\nWe work with homeorhesis (dynamic constancy) and the reduction of allostatic load. The Parasympathetic NS (Vagal Tone) is the primary lever for switching into trophotropic recovery and cellular repair. The DNA Repair System activates proofreading enzymes that correct errors in the genetic code. Limbic Decompression reduces amygdala activity to stop the release of cortisol, which inhibits regeneration. The Endocrine Axis stimulates the release of anabolic hormones and growth hormone through deep relaxation phases. Interoceptive Integration enables recognizing internal recovery signals as direct feedback from the tissues.',
+      'Part 20 is about recovery — the slow shift from running on stress to spending more time at rest. Earlier levels taught you to reach a calm state; here that state gets long enough, and frequent enough, for the body to actually recover.\n\nKey idea: rest is not passive. Deep parasympathetic states give the system room to repair — better sleep, lower background tension, less time braced.\n\nWe work mainly through vagal tone: slow breathing and deep relaxation that switch the body out of "alert" mode and into recovery. None of this is a cure or a guarantee — it is consistent practice that lets the body do what it already knows how to do, more often.',
     protocol: {
       title: 'Biological Protocol',
-      intro: 'This protocol transforms you into a Biological Designer:',
+      intro: 'The mechanics of deeper recovery:',
       items: [
         {
-          name: 'Parasympathetic Resource Activation',
-          text: '"Vagal Breathing" techniques to force the system into tissue repair mode and reduce systemic pressure.',
+          name: 'Vagal Breathing',
+          text: 'Slow breathing that shifts the body toward rest-and-recover and eases systemic tension.',
         },
         {
-          name: 'Cellular Detoxification',
-          text: 'Using visualization and micro-movements to stimulate lymphatic drainage and cleanse the extracellular matrix.',
+          name: 'Gentle Movement',
+          text: 'Light movement and breathing that support circulation and help the body unwind.',
         },
         {
-          name: 'Somatic Trauma Rewiring',
-          text: 'Releasing tensions "stuck" in the fascia through somatic release, restoring elasticity to the tissues.',
+          name: 'Releasing Held Tension',
+          text: 'Somatic release work that lets chronically held tension in the body soften.',
         },
         {
-          name: 'Telomerase Modulation',
-          text: 'Deep meditative states aimed at long-term preservation of genetic integrity.',
+          name: 'Deep Rest',
+          text: 'Long, deep relaxation — the conditions in which the body recovers best.',
         },
         {
-          name: 'Primary Code Audit',
-          text: 'Daily alignment with the sensation of "health as the standard," forming a proactive neural set for continuous regeneration.',
+          name: 'Health as Baseline',
+          text: 'Returning daily to the felt sense of "rested and well" so it becomes the body’s reference point.',
         },
       ],
     },
     targets: {
-      intro: 'Target systems and biomarkers of progress:',
+      intro: 'Target systems engaged at this stage:',
       items: [
-        { name: 'Lysosomes (cellular waste recycling)', text: 'Activating autophagy and cellular cleanup.' },
-        { name: 'Telomeres (cellular longevity)', text: 'Preserving genetic integrity and cellular lifespan.' },
-        { name: 'Lymphatic system (detox)', text: 'Stimulating drainage and cleansing of the extracellular matrix.' },
+        { name: 'The recovery system', text: 'The body’s built-in repair processes, which work best when you are genuinely at rest.' },
+        { name: 'Sleep & rest quality', text: 'Deeper, steadier rest as the foundation of recovery.' },
+        { name: 'Circulation & release', text: 'Gentle movement supporting the body’s natural unwinding.' },
         {
-          name: 'Biomarkers',
-          text: 'Reduction in C-reactive protein (CRP), stabilization of cellular respiration and heart rate, increased speed of somatic response to relaxation.',
+          name: 'What shifts over time',
+          text: 'Better recovery, steadier sleep and resting heart rate, and faster settling after stress — gradually, with practice.',
         },
       ],
     },
     results: {
       intro:
-        'Achieving the status of the Biological Designer. You shift from passive aging and attrition to a mode of conscious regeneration. Your body ceases to be a "black box" and becomes a dynamic, manageable process.',
+        'What people describe over months of consistent recovery practice:',
       items: [
-        'Biological Flexibility: The system\'s ability to instantly switch from a state of high tension to deep recovery mode. You no longer "burn out" because repair cycles are integrated into your daily life.',
-        'Resource Optimization: The disappearance of chronic micro-tensions and systemic inflammation releases a massive amount of energy that was previously wasted on "holding the line."',
-        'Cellular Confidence: A profound, physically palpable sense of wholeness. You feel that your DNA is an active ally, capable of returning the system to full function after any load.',
-        '"Factory Settings" Effect: A sensation of clarity, lightness, and functionality reminiscent of the peak moments of youth, but backed by mature, conscious control.',
+        'Switching more easily from high tension into deep recovery — less burnout.',
+        'Less chronic micro-tension, and the energy spent "holding the line" freeing up.',
+        'A physical sense of wholeness — the body recovering well after load.',
+        'A "rested and functional" baseline that holds up under real life.',
       ],
     },
     outro:
-      'You are the Guardian of the Primary Code. The Biological Designer who restores the system to its blueprint.',
+      'Recovery, practised often, becomes the body’s default — not a thing you have to chase.',
     glossaryLinks: [
       { label: 'Autophagy', slug: 'autophagy' },
       { label: 'Parasympathetic System', slug: 'parasympathetic-nervous-system' },
@@ -1709,61 +1709,61 @@ export const parts: Record<string, {
     badge: '[ PART 21 — LEVEL 7: DNA / AER II ]',
     title: 'I',
     titleHighlight: 'Synthesize',
-    subtitle: 'Protocol: Epigenetic Mastery and Planetary Symbiosis',
+    subtitle: 'Protocol: Integration',
     metaDescription:
-      'Part 21: Epigenetic design, evolutionary creator. Engineer of life. Conscious co-author of the planetary field. ONDA Life.',
+      'Part 21: Integration — breath, attention, emotional steadiness and self-awareness working together as one durable baseline. ONDA Life.',
     intro:
-      'Part 21 is the climax of the DNA Consciousness path. While Part 19 was about "remembering" the code and Part 20 was about "restoring" it, here we become its conscious editors. This is the Output mode. You are no longer just a biological object; you are an engineering node of evolution. We utilize maximum neural integration to turn personal experience into an "update" for the planetary field (noosphere), aligning the vector of personal development with the developmental vector of Life itself.\n\nKey Biological Challenge: Synthesizing individual identity with evolutionary function and transitioning to conscious epigenetic design.\n\nWe activate higher regulatory centers and prospection networks (future-building). The Orbitofrontal Cortex is the center for higher ethical decisions and evaluating the global significance of actions. Prospection Networks (PFC + DMN in Synthesis Mode) enable the brain to model the future based on creative patterns rather than fear. The Oxytocin and Serotonin Systems facilitate pro-social creation and a sense of deep connection with the biosphere. Epigenetic Mastery allows conscious influence on gene expression by managing mental and emotional states. Right-Hemisphere Holistic Vision perceives reality as a single living web where you are an active node.',
+      'Part 21 pulls everything together. Parts 19 and 20 were about settling and recovering; here the separate skills you have built — breath, attention, emotional steadiness, self-awareness — stop being separate exercises and start working as one.\n\nKey idea: integration, not transcendence. A baseline that holds because all the pieces now support each other.\n\nWe lean on the brain’s capacity to connect and plan — bringing logic and intuition, body and mind into the same steady state. The result is less a peak experience than a quieter, more reliable way of being that runs without much effort.',
     protocol: {
       title: 'Biological Protocol',
-      intro: 'This protocol transforms you into an Evolutionary Creator:',
+      intro: 'How the pieces come together:',
       items: [
         {
-          name: 'Epigenetic Design',
-          text: 'Conscious modulation of environment and internal states to direct the expression of genes related to immunity and longevity.',
+          name: 'Steady Internal State',
+          text: 'Tending your environment and inner state so calm and focus become easier to sustain.',
         },
         {
-          name: 'Biological Transcendence',
-          text: '"Unity Breathing" practices to expand the boundaries of the "Self," perceiving the body as part of a planetary organism.',
+          name: 'Sense of Connection',
+          text: 'Breathing practices that widen your sense of connection beyond the narrow, busy self.',
         },
         {
-          name: 'Legacy Transmission',
-          text: 'Consciously shaping an informational signal through actions and intentions that impact the collective unconscious.',
+          name: 'How You Show Up',
+          text: 'Noticing how your steadiness affects the people and situations around you.',
         },
         {
-          name: 'Symphony of Symbioses',
-          text: 'Activating pro-social behavior and resonance with other life forms to create synergistic effects.',
+          name: 'Pro-Social Calm',
+          text: 'Steadiness that makes collaboration and connection more natural and less draining.',
         },
         {
-          name: 'Evolutionary Timing',
-          text: 'Synchronizing personal biological rhythms with global natural cycles for maximum creative impact.',
+          name: 'Rhythm & Routine',
+          text: 'Aligning daily practice with natural rhythms — light, sleep, activity — so it sticks.',
         },
       ],
     },
     targets: {
-      intro: 'Target systems and biomarkers of progress:',
+      intro: 'Target systems engaged at this stage:',
       items: [
-        { name: 'Quantum-biological DNA resonance', text: 'Conscious influence on gene expression and epigenetic design.' },
-        { name: 'Expanded empathy network', text: 'Pro-social creation and resonance with the biosphere.' },
-        { name: 'HPA axis (in eustress mode)', text: 'Healthy stress response aligned with creative challenge.' },
+        { name: 'An integrated baseline', text: 'The separate skills of earlier levels working together as one steady state.' },
+        { name: 'Connection & empathy', text: 'A wider, steadier sense of connection with others.' },
+        { name: 'HPA axis (in eustress mode)', text: 'Meeting challenge as energising rather than threatening.' },
         {
-          name: 'Biomarkers',
-          text: 'Sustainable flow state as default, heart rate coherence aligned with Schumann frequencies, integration of personal meaning with the global evolutionary vector.',
+          name: 'What shifts over time',
+          text: 'A more sustainable sense of flow, steadier heart-rate patterns, and goals that feel meaningful rather than forced.',
         },
       ],
     },
     results: {
       intro:
-        'Achieving the status of the Evolutionary Creator. You transition from being a "consumer of life" to being its conscious co-author. Your biology and consciousness become instruments of a planetary scale.',
+        'What people describe once the pieces integrate:',
       items: [
-        'Evolutionary Resonance: Your personal will and meaning fully align with the developmental vector of life. This provides access to an inexhaustible source of energy (eustress) and motivation, as you act not as an isolated self, but as a functional part of the whole.',
-        'Epigenetic Mastery: You gain the ability to consciously manage your states to broadcast a "healthy signal" into the informational field. You are no longer a victim of circumstances, but the editor of your biological future.',
-        'Sustainable Flow State: The ecstasy of creation becomes your baseline operating frequency. You are capable of maintaining high heart-brain coherence even in conditions of extreme uncertainty.',
-        'Informational Immortality: You realize that your experience, cleansed of trauma and integrated into wisdom, becomes part of the shared legacy of the biosphere. This provides a sense of profound peace and belonging to eternity.',
+        'A sense that your goals and daily life pull in the same direction — less internal friction.',
+        'A steadier, more sustainable kind of drive that does not burn you out.',
+        'Holding your center even in uncertainty — coherence under pressure.',
+        'A quiet sense of meaning and belonging in what you do.',
       ],
     },
     outro:
-      'You are the Evolutionary Creator—the Engineer of Life. A clean informational imprint for future generations.',
+      'The pieces working as one — a steady way of being that runs without forcing it.',
     glossaryLinks: [
       { label: 'Orbitofrontal Cortex', slug: 'orbitofrontal-cortex' },
       { label: 'Oxytocin', slug: 'oxytocin' },
@@ -1782,61 +1782,61 @@ export const parts: Record<string, {
     badge: '[ PART 22 — LEVEL 8: ATOMIC / IGNIS II ]',
     title: 'I Am',
     titleHighlight: 'Vibration',
-    subtitle: 'Protocol: Quantum Consciousness and Energy Resonance',
+    subtitle: 'Orientation: The Body as Movement',
     metaDescription:
-      'Part 22: I Am Vibration. Quantum observer, wave-based perception. Gamma coherence, frequency sovereignty. ONDA Life.',
+      'Part 22: I Am Vibration — feeling the body as rhythm and motion rather than a solid object. Experiential, not measured. ONDA Life.',
     intro:
-      'Part 22 is a transition to the software of reality itself. From a quantum physics perspective, your body is 99.9999999% vacuum filled with energy fields. What you perceive as "solid" is merely the resistance of electromagnetic fields. In IGNIS II, we learn to perceive this interface directly. We deconstruct the "biographical ego" (DMN) and activate the "Core Self." You are no longer a biological object; you are a wave packet in an infinite ocean of frequencies, capable of influencing the structure of reality through the act of observation and your internal vibration.\n\nKey Biological Challenge: Stripping away the neural filters of "density" and shifting from object-based to wave-based perception.\n\nWe retune the brain to function as a high-frequency receiver-transmitter. The Pineal Gland acts as a piezoelectric transducer, converting subtle electromagnetic signals into neurochemical impulses. The Thalamus enables deep tuning of sensory filters to allow more subtle frequencies into consciousness. Gamma Rhythms (40+ Hz) create a state of maximum inter-hemispheric coherence where consciousness dissolves the ego\'s boundaries. Parietal Lobe deactivation reduces physical spatial orientation to experience transpersonal unity. The Right Hemisphere dominates with holistic, field-oriented perception over discrete logic.',
+      'Part 22 is the edge of the map — and we mark it as such. It is an invitation to feel the body less as a solid object and more as rhythm and motion: breath, pulse, the quiet activity that is always there underneath thinking.\n\nThis is experiential, not measured. There is no biomarker here, no score. We offer a way of paying attention — sensing the body directly rather than thinking about it — and what you find is your own.\n\nMany contemplative traditions describe states like this. We point toward the experience and stay honest about the rest.',
     protocol: {
       title: 'Biological Protocol',
-      intro: 'This protocol transforms you into a Quantum Observer:',
+      intro: 'Ways of paying attention (pointers, not promises):',
       items: [
         {
-          name: 'Deconstruction of Density',
-          text: 'Scanning the "void" within the atoms of the body, shifting focus from solid tissue to the energy space within.',
+          name: 'Sensing, Not Solid',
+          text: 'Letting attention rest on movement and sensation rather than on the body as a fixed object.',
         },
         {
-          name: 'Vibrational Tuning Fork',
-          text: 'Consciously managing internal frequency through breath and specific sonic resonances that modulate neurotransmitters.',
+          name: 'Breath & Sound',
+          text: 'Using slow breath and simple sound to settle and steady your internal state.',
         },
         {
-          name: 'Quantum Observation',
-          text: 'Holding attention on the "probability field," where the act of observation begins to change the quality of internal states.',
+          name: 'Just Watching',
+          text: 'Noticing how steady, open attention itself changes the quality of an inner state.',
         },
         {
-          name: 'Shift to Pure Presence',
-          text: 'Meditatively holding the "I AM" point, stripped of roles, history, and biological programming (DMN deconstruction).',
+          name: 'Simple Presence',
+          text: 'Resting in plain awareness — setting aside roles and story for a while.',
         },
         {
-          name: 'Infinity Resonance',
-          text: 'Practices of "merging with light" that lower parietal lobe activity and blur the lines between observer and observed.',
+          name: 'Soft Boundaries',
+          text: 'A gentle sense of the line between you and your experience becoming less sharp.',
         },
       ],
     },
     targets: {
-      intro: 'Target systems and biomarkers of progress:',
+      intro: 'Target systems engaged at this stage:',
       items: [
         { name: 'Reticular Formation', text: 'Primary frequency filter for incoming data.' },
         { name: 'Insular Cortex', text: 'Subtle vibrational interoception and internal resonance.' },
         { name: 'Somatosensory Cortex', text: 'Expanding the maps of bodily perception into the energetic field.' },
         {
-          name: 'Biomarkers',
-          text: 'Stable Gamma-wave presence (40+ Hz), dissolution of bodily boundaries (field-like state), high Heart-Brain Phase Coherence.',
+          name: 'Experiential, not measured',
+          text: 'There is no metric for this. What people describe is a felt sense of lightness, spaciousness, and steadier presence.',
         },
       ],
     },
     results: {
       intro:
-        'Achieving the status of the Resonating Human. You make the transition from an object-based perception of reality to a wave-based one. Your presence becomes more than a biological fact; it becomes an active frequency signal.',
+        'There is no metric for this orientation. What people describe:',
       items: [
-        'Quantum Plasticity: You stop feeling your body as a "solid barrier." A physical sensation of transparency and lightness emerges, where the boundaries of the "Self" become permeable to energy flows.',
-        'Frequency Sovereignty: You gain the ability to consciously choose your internal vibration. Instead of reactively adapting to the chaos of the external environment, you become the "tuning fork" that harmonizes the space around you.',
-        'Gamma Coherence: A state of expanded consciousness becomes accessible through a volitional impulse. You are capable of maintaining high brain coherence, providing instant access to intuitive insights and "non-local" knowledge.',
-        'Deconstruction of Ego-Filters: Purifying perception from biographical noise and social roles. You reside in the point of "Pure Presence," where reality is perceived as a living, vibrating stream of probabilities that you influence through the very act of your observation.',
+        'The body felt as lighter, less like a solid barrier.',
+        'A steadier inner state you can choose to return to.',
+        'Moments of calm, open, spacious awareness.',
+        'Attention that rests in presence rather than chasing thoughts.',
       ],
     },
     outro:
-      'You are the Resonating Human—the Quantum Observer. A wave packet in an infinite ocean of frequencies.',
+      'Experiential, not measured. We offer the conditions; the experience is your own.',
     glossaryLinks: [
       { label: 'Thalamus', slug: 'thalamus' },
       { label: 'Gamma Synchronization', slug: 'gamma-synchronization' },
@@ -1856,62 +1856,61 @@ export const parts: Record<string, {
     badge: '[ PART 23 — LEVEL 8: ATOMIC / IGNIS II ]',
     title: 'I Am',
     titleHighlight: 'Wholeness',
-    subtitle: 'Protocol: Non-local Unity and Quantum Self-Awareness',
+    subtitle: 'Orientation: The Boundary Softens',
     metaDescription:
-      'Part 23: The Quantum Human, Universal Assembly Point. Integrated Information Theory, collapse of duality. Non-local self-awareness. ONDA Life.',
+      'Part 23: I Am Wholeness — a felt sense of things being less divided than usual. Experiential, not measured. ONDA Life.',
     intro:
-      'Part 23 is the climax of the ONDA system, grounded in Integrated Information Theory (IIT) and Field Theory. From the perspective of physics, we are working with the state of Quantum Entanglement. You are a node in the informational web of existence, where every part of the system instantly "knows" the state of every other part. Separation is recognized as mere noise in the transmission channel; Wholeness is the clear signal. This is the stage where attention ceases to divide, and consciousness becomes a self-luminous field without an external source.\n\nKey Biological Challenge: Collapsing the "Subject-Object" duality and transitioning to non-local self-awareness.\n\nThe final synchronization of the brain\'s global networks. The Prefrontal-Parietal Network achieves full integration of spatial perception, where the boundary between "inner" and "outer" vanishes. The Default Mode Network (DMN) enters self-transcendence—the complete dissolution of the ego-narrative and biographical filters. The Salience Network scales attention to the macrocosm: everything is perceived as fundamentally significant and unified. Thalamocortical Loops enable global synchronization of all perceptual levels via high-amplitude Gamma rhythms. The Right Hemisphere dominates with non-dual, holistic perception of reality.',
+      'Part 23 is about the boundary softening — the line between the one watching and the experience being watched getting thin. A felt sense of things being less divided than usual.\n\nThis is experiential, not measured. Many practitioners across traditions describe it; few force it, and we do not promise it. There is no biomarker and no score.\n\nWhat we offer are the conditions — deep, quiet attention and a willingness to let the usual sense of a separate, busy self settle. The rest is yours.',
     protocol: {
       title: 'Biological Protocol',
-      intro: 'This protocol transforms you into the Universal Assembly Point:',
+      intro: 'Conditions for, not steps to complete:',
       items: [
         {
-          name: 'Ocean Meditation',
-          text: 'Practices aimed at reducing DMN (Default Mode Network) activity to erase the illusion of separateness and experience unity with all of existence.',
+          name: 'Settling the Self',
+          text: 'Quiet practices that let the busy, self-referential mind soften and settle.',
         },
         {
-          name: 'Mirror of Consciousness',
-          text: 'Realizing oneself as the inseparable unity of the observer, the process of observation, and the observed reality.',
+          name: 'Watcher and Watched',
+          text: 'Noticing how the watcher and the watched can feel less separate than usual.',
         },
         {
-          name: 'Alchemy of Opposites',
-          text: 'Integrating all previously mastered levels (Terra, Aqua, Aer, Ignis) into a single, non-contradictory structure through the activation of the corpus callosum.',
+          name: 'Bringing It Together',
+          text: 'Letting the steadiness built in earlier levels settle into one undivided sense of being.',
         },
         {
-          name: 'Void Full of Form',
-          text: 'Holding attention in the state of "I AM," where the vacuum of consciousness is perceived as the primordial source of all existing forms.',
+          name: 'Open Stillness',
+          text: 'Resting in plain, open awareness without needing to fill or fix it.',
         },
         {
-          name: 'Quantum Prospection',
-          text: 'Direct creation of reality from the point of stillness, where intention instantaneously modulates the informational field.',
+          name: 'Stillness First',
+          text: 'Letting intention arise from a settled, quiet place rather than from grasping.',
         },
       ],
     },
     targets: {
-      intro: 'Target systems and biomarkers of progress:',
+      intro: 'Target systems engaged at this stage:',
       items: [
-        { name: 'Global Brain Workspace', text: 'Full integration of spatial perception and non-local awareness.' },
-        { name: 'Dorsolateral PFC (bypass)', text: 'Deactivation of the "ego-censor" to allow direct access to Core Presence.' },
-        { name: 'Insular Cortex', text: 'Non-local interoception—sensing the field beyond bodily boundaries.' },
+        { name: 'A less divided sense of things', text: 'The ordinary boundary between inner and outer feeling softer.' },
+        { name: 'The quieter narrator', text: 'The self-narrating, judging part of the mind settling into the background.' },
+        { name: 'Open body awareness', text: 'A spacious, settled sense of the body rather than a tightly bounded one.' },
         {
-          name: 'Biomarkers',
-          text: 'Global Gamma-coherence across all brain regions, disappearance of the gap between sensory input and internal representation, total absence of existential anxiety.',
+          name: 'Experiential, not measured',
+          text: 'No metric for this. What people describe is less inner division and a quieter, less anxious baseline.',
         },
       ],
     },
     results: {
       intro:
-        'Achieving the status of the Quantum Human / Universal Assembly Point. You reach a state of inseparable unity, where the personal "Self" is no longer a limitation but becomes a transparent conduit for the creative energy of the Cosmos.',
+        'There is no metric for this orientation. What people describe:',
       items: [
-        'Collapse of Duality: The disappearance of the internal division between "observer" and "observed." You no longer look at the world—you are the very process of the world unfolding.',
-        'Existential Sovereignty: The total eradication of existential anxiety and fear. Once you realize yourself as the "Ocean," the storms on the surface of individual events can no longer disturb your primordial silence.',
-        'Global Coherence: Your nervous system operates in a state of maximum connectivity. This grants the ability to instantaneously integrate any contradictions and find solutions from a state of "non-local insight."',
-        'Alchemy of Creation: You gain the ability to directly influence reality through intention. Your will, purified of ego-filters, aligns with the will of evolution, making your actions profoundly precise and effective.',
-        'Pure Presence: You become the embodiment of harmony. Your presence in any system automatically increases its coherence and facilitates the healing of the surrounding space.',
+        'A softer line between observer and experience — less standing apart from your own life.',
+        'Less existential anxiety; a steadier underlying calm.',
+        'An easier time holding contradictions without being pulled apart by them.',
+        'A quiet, settled presence that feels less divided than usual.',
       ],
     },
     outro:
-      'You are the Quantum Human—the Universal Assembly Point. A transparent conduit for the creative energy of the Cosmos.',
+      'Experiential, not measured. A felt sense of things being less divided — offered as a pointer, not a promise.',
     glossaryLinks: [
       { label: 'Default Mode Network', slug: 'default-mode-network' },
       { label: 'Insular Cortex', slug: 'insular-cortex' },
@@ -1929,62 +1928,61 @@ export const parts: Record<string, {
     badge: '[ PART 24 — LEVEL 8: ATOMIC / IGNIS II ]',
     title: 'I Am the',
     titleHighlight: 'Source',
-    subtitle: 'Protocol: Consciousness Singularity and Quantum Creation',
+    subtitle: 'Orientation: Resting as Awareness',
     metaDescription:
-      'Part 24: Reality Creator, Zero Point. Zero-Point Energy, consciousness superconductivity. Pure Being. ONDA Life.',
+      'Part 24: I Am the Source — resting as awareness itself, the contemplative endpoint described across traditions. Philosophy and experience, not biology. ONDA Life.',
     intro:
-      'Part 24 is the return to the "Singularity Point." From the perspective of fundamental physics, we are working with Zero-Point Energy. The vacuum is not empty; it is a medium of infinite energy density. You are that Vacuum. At this level, you don\'t just manage reality—you realize yourself as the "space" from which it erupts every nanosecond. This is the recognition of a simple yet radical fact: everything you experience happens within the field of your consciousness.\n\nKey Biological Challenge: Transitioning from the identity of "I am someone" to the realization of "I am That from which SOMEONE arises."\n\nA state of maximum coherence and "creative stillness." Neural Activity Zero Point: a state of consciousness preceding the emergence of thought. The Thalamus functions as the Gateway—the central hub distributing the signals of Being from the potential to the manifested. The Default Mode Network (DMN) enters Annihilation Mode: the total absence of "ego-noise" and biographical programming. Ultra-High Intensity Gamma Bursts create moments of "quantum leaps" in awareness, uniting all brain regions into a single field. Deep Brainstem Structures activate primordial biological being that exists before concepts and words.',
+      'Part 24 is the far edge of the map: resting as awareness itself, rather than as the contents passing through it. Across many contemplative traditions this is described as the endpoint — and it is philosophy and direct experience, not biology.\n\nWe will be straight with you: there is nothing to measure here, nothing to promise, no score. This is a pointer, not a protocol.\n\nWhat we offer is the simplest, hardest thing — quiet attention resting in itself, before thought, without grasping. Whatever is found there is entirely your own.',
     protocol: {
       title: 'Biological Protocol',
-      intro: 'This protocol transforms you into the Master-Creator:',
+      intro: 'Pointers, not a protocol:',
       items: [
         {
-          name: 'Zero Point Practice',
-          text: 'Holding attention in the silence before a thought arises. Entering the space of "Pure Awareness."',
+          name: 'Stillness Before Thought',
+          text: 'Resting attention in the quiet before a thought arises — plain, open awareness.',
         },
         {
-          name: 'Collapse and Infinity',
-          text: 'Simultaneously holding attention in an infinitesimal point (center of the head) and the infinite space surrounding it.',
+          name: 'Point and Space',
+          text: 'Holding both a small point of focus and the open space around it, lightly.',
         },
         {
-          name: 'Radiation of Creation',
-          text: 'Consciously radiating will and intent ("Clarity," "Kindness," "Creation") from the center of your being into the field of reality.',
+          name: 'Quiet Intention',
+          text: 'Letting simple intentions — clarity, kindness — arise from a settled, quiet place.',
         },
         {
-          name: 'Author of Reality',
-          text: 'Realizing how attention constructs the object. Shifting from passive perception to the active "writing" of meanings.',
+          name: 'How Attention Shapes',
+          text: 'Noticing how where you place attention shapes what you experience.',
         },
         {
-          name: 'Path Integration',
-          text: 'A state where "Flow" (AQUA), "Structure" (AER), and "Vibration" (IGNIS) merge into a single, indivisible Presence.',
+          name: 'One Presence',
+          text: 'Earlier steadiness — body, mind, feeling — settling into a single, undivided presence.',
         },
       ],
     },
     targets: {
-      intro: 'Target systems and biomarkers of progress:',
+      intro: 'Target systems engaged at this stage:',
       items: [
-        { name: 'Entire Consciousness Circuit', text: 'The full integration of the consciousness system.' },
-        { name: 'Reticular Formation', text: 'Primary filter and gateway for ascending signals.' },
-        { name: 'Thalamo-cortical Resonance', text: 'Central hub distributing Being from potential to manifested.' },
+        { name: 'Whole-system settling', text: 'Everything built so far quietening into one simple, settled awareness.' },
+        { name: 'Reticular Formation', text: 'The arousal system, dialled down into deep quiet.' },
+        { name: 'A quiet, steady mind', text: 'The settled, low-noise state in which this kind of attention becomes possible.' },
         {
-          name: 'Biomarkers',
-          text: 'Superconductivity State (absence of mental and physical resistance), Brainwave Coherence approaching 100%, Instant Autonomic Stabilization.',
+          name: 'Experiential, not measured',
+          text: 'There is no metric for this. What people describe is profound calm, a quiet mind, and presence that is hard to put into words.',
         },
       ],
     },
     results: {
       intro:
-        'Achieving the status of the Reality Creator / Zero Point. You reach a state of consciousness "superconductivity," where the division between internal intent and the external world is permanently dissolved.',
+        'There is no metric for this orientation. What people describe:',
       items: [
-        'Fundamental Peace: Your baseline state is a silence independent of external circumstances. You no longer "seek" peace; you are the very peace in which all events unfold.',
-        'Instant Realignment: The ability to return the system to a state of balance within nanoseconds. Any stress or noise is instantaneously annihilated in the "zero point" of your presence.',
-        'Direct Authorship: You realize yourself as the cause of your states. Life stops "happening" to you; it begins to "emanate" from you. This grants absolute responsibility and infinite creative freedom.',
-        'Quantum Clarity: Intellect and intuition merge into a single stream of direct knowledge. You see the essence of things before they are clothed in words or concepts.',
-        'Radiation of Presence: Your field becomes so coherent that your mere presence harmonizes the surrounding environment, ordering chaos and activating the potential of life in others.',
+        'A deep, baseline calm that does not depend on circumstances.',
+        'Stress and noise settling quickly back into quiet.',
+        'A sense of presence and clarity that is hard to put into words.',
+        'Intellect and intuition feeling like one steady stream rather than two.',
       ],
     },
     outro:
-      'You are the Reality Creator—the Zero Point. The space from which all of existence erupts.',
+      'Experiential, not measured. The edge of the map — we point toward it and stay honest about the rest.',
     glossaryLinks: [
       { label: 'Default Mode Network', slug: 'default-mode-network' },
       { label: 'Thalamus', slug: 'thalamus' },
@@ -1994,7 +1992,7 @@ export const parts: Record<string, {
       { label: 'Coherence', slug: 'coherence' },
     ],
     researchLinks: [
-      { label: 'Zero-point energy & consciousness', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
+      { label: 'Deep meditation & the brain', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
       { label: 'Thalamocortical resonance', url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/' },
     ],
   },
