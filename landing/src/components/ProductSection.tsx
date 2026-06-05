@@ -5,36 +5,18 @@ interface Shot {
   alt: string
 }
 
-// Phone-frame placeholder for an app screenshot.
-// When a final asset exists at /images/home/showcase-{n}.png it renders on top;
-// until then the labeled placeholder layer behind it shows.
+// Cropped device-frame screenshots live at /images/home/showcase-{n}.webp.
 function PhoneShot({ n, caption, alt }: { n: number; caption: string; alt: string }) {
-  const src = `/images/home/showcase-${n}.png`
   return (
     <figure className="flex flex-col items-center">
-      <div className="relative w-full max-w-[230px] overflow-hidden rounded-[2rem] border-2 border-white/15 bg-gradient-to-b from-white/[0.06] to-transparent p-2 shadow-2xl">
-        <div className="relative aspect-[9/19] w-full overflow-hidden rounded-[1.5rem] bg-[#0a1018]">
-          {/* placeholder layer (always present, sits behind the image) */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center gap-2 p-4 text-center">
-            <span className="font-mono text-[10px] uppercase tracking-widest text-terminal-green/50">
-              screen {n}
-            </span>
-            <span className="font-mono text-[11px] leading-relaxed text-white/30">{alt}</span>
-          </div>
-          {/* image layer — covers the placeholder when the asset exists; hides itself if missing */}
-          <img
-            src={src}
-            alt={alt}
-            loading="lazy"
-            className="absolute inset-0 h-full w-full object-cover"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none'
-            }}
-          />
-          {/* notch (on top of everything) */}
-          <div className="absolute left-1/2 top-2 z-10 h-1.5 w-16 -translate-x-1/2 rounded-full bg-white/15" />
-        </div>
-      </div>
+      <img
+        src={`/images/home/showcase-${n}.webp`}
+        alt={alt}
+        loading="lazy"
+        width="940"
+        height="1960"
+        className="w-full max-w-[230px] rounded-[1.9rem] shadow-2xl shadow-black/40 ring-1 ring-white/10"
+      />
       <figcaption className="mt-4 max-w-[230px] text-center font-mono text-[11px] leading-relaxed text-white/45">
         {caption}
       </figcaption>

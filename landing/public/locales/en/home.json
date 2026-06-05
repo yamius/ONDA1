@@ -75,12 +75,12 @@
   },
   "product": {
     "tag": "[ THE PRODUCT ]",
-    "title": "See your body respond. In real time.",
-    "subtitle": "Breathe with the pacer. Watch your heart rhythm smooth out as you go — the live feedback loop that meditation always lacked. When the session ends, you see exactly what shifted.",
+    "title": "Most apps score you after. ONDA shows you during.",
+    "subtitle": "See your body respond, in real time. Breathe with the pacer and watch your heart rhythm smooth out as you go — the live feedback loop meditation always lacked.",
     "shots": [
-      { "caption": "Breathe. Your live coherence responds.", "alt": "ONDA live coherence breathing session screen" },
-      { "caption": "See what shifted, every session.", "alt": "ONDA post-session summary screen" },
-      { "caption": "Your HRV trend — what actually matters, over weeks.", "alt": "ONDA HRV trend over time screen" }
+      { "caption": "Live vitals from your watch — heart, breath, stress, energy.", "alt": "ONDA dashboard showing live heart rate, breathing rate, stress and energy from your watch" },
+      { "caption": "Short, science-backed protocols — 3 to 12 minutes.", "alt": "ONDA breathing protocols list — Micro-Breath, Still Wave, Warm Pulse and more" },
+      { "caption": "Your HRV trend — what actually matters, over weeks.", "alt": "ONDA resting HRV trend over time with a practice streak" }
     ]
   },
   "how": {
@@ -109,7 +109,9 @@
     "scienceCta": "See the science →",
     "trust": "No account, no paywall, no email before your first reading.",
     "advisor": "Co-developed with a neuroscience PhD advisor.",
-    "ratingPending": "App Store reviews coming soon — we'd rather show real ones than fake them."
+    "ratingPending": "App Store reviews coming soon — we'd rather show real ones than fake them.",
+    "shotCaption": "Every protocol explains its mechanism — inside the app.",
+    "shotAlt": "ONDA in-app science screen showing the biology, why, and effect behind a breathing protocol"
   },
   "articles": {
     "tag": "[ DEEP DIVES ]",

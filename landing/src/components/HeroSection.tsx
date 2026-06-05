@@ -139,52 +139,69 @@ export function HeroSection() {
       {/* Pixel reveal — square 10vw×10vw cells, wave from screen centre */}
       <PixelReveal />
 
-      <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
-        {/* [ SYSTEM INITIALIZED ] badge */}
-        <div className="mb-6 inline-block rounded-full border border-cyan-500/50 bg-cyan-500/10 px-3 py-1.5 md:mb-8 md:px-4 md:py-2">
-          <span className="font-mono text-xs text-cyan-400 md:text-sm">
-            {t('hero.badge')}
-          </span>
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-4">
+        <div className="flex flex-col items-center gap-10 text-center md:flex-row md:gap-12 md:text-left">
+          {/* Left: the pitch */}
+          <div className="md:flex-1">
+            {/* badge */}
+            <div className="mb-6 inline-block rounded-full border border-cyan-500/50 bg-cyan-500/10 px-3 py-1.5 md:mb-8 md:px-4 md:py-2">
+              <span className="font-mono text-xs text-cyan-400 md:text-sm">
+                {t('hero.badge')}
+              </span>
+            </div>
+
+            {/* Main heading */}
+            <h1 className="mb-4 font-mono text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-5xl lg:text-6xl">
+              <span className="block text-cyan-400">{t('hero.titleLine1')}</span>
+              <span className="block text-green-400">{t('hero.titleLine2')}</span>
+              {t('hero.titleLine3') && <span className="block text-white">{t('hero.titleLine3')}</span>}
+            </h1>
+
+            {/* Subtitle */}
+            <p className="mx-auto mb-8 max-w-xl text-sm leading-relaxed text-gray-300 sm:text-base md:mx-0 md:mb-8 md:text-lg">
+              {t('hero.subtitle')}
+            </p>
+
+            {/* CTA buttons */}
+            <div className="mb-3 flex flex-col items-center justify-center gap-3 sm:flex-row md:justify-start md:gap-4">
+              <a
+                href="#download"
+                className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-2.5 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 sm:w-auto"
+                aria-label={t('hero.ctaDownloadAria')}
+              >
+                <DownloadIcon />
+                <span>{t('hero.ctaDownload')}</span>
+                <span>&rarr;</span>
+              </a>
+              <Link
+                to={langHref('/about', lang)}
+                className="flex w-full items-center justify-center gap-2 rounded-lg border border-cyan-500/50 px-6 py-2.5 text-sm text-cyan-400 transition-all hover:bg-cyan-500/10 sm:w-auto"
+              >
+                <span>{t('hero.ctaLearn')}</span>
+              </Link>
+            </div>
+
+            {/* Friction-reducer microcopy — the single best line on the site */}
+            <p className="font-mono text-xs text-white/45">
+              {t('hero.ctaMicrocopy')}
+            </p>
+          </div>
+
+          {/* Right: the in-session money shot (training, not a dashboard) */}
+          <div className="w-full max-w-[240px] md:max-w-[300px] md:flex-shrink-0">
+            <img
+              src="/images/home/hero-session.webp"
+              alt="ONDA live coherence training session — breathing timer, live heart-rhythm wave, and coherence score"
+              width="940"
+              height="1963"
+              fetchPriority="high"
+              className="mx-auto w-full rounded-[2.2rem] shadow-2xl shadow-black/60 ring-1 ring-white/10"
+            />
+          </div>
         </div>
-
-        {/* Main heading */}
-        <h1 className="mb-4 font-mono text-3xl font-bold leading-tight sm:text-4xl md:mb-6 md:text-6xl lg:text-7xl">
-          <span className="block text-cyan-400">{t('hero.titleLine1')}</span>
-          <span className="block text-green-400">{t('hero.titleLine2')}</span>
-          {t('hero.titleLine3') && <span className="block text-white">{t('hero.titleLine3')}</span>}
-        </h1>
-
-        {/* Subtitle */}
-        <p className="mx-auto mb-8 max-w-2xl text-sm leading-relaxed text-gray-300 sm:text-base md:mb-10 md:text-xl">
-          {t('hero.subtitle')}
-        </p>
-
-        {/* CTA buttons */}
-        <div className="mb-3 flex flex-col items-center justify-center gap-3 sm:flex-row md:gap-4">
-          <a
-            href="#download"
-            className="flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-2.5 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 sm:w-auto"
-            aria-label={t('hero.ctaDownloadAria')}
-          >
-            <DownloadIcon />
-            <span>{t('hero.ctaDownload')}</span>
-            <span>&rarr;</span>
-          </a>
-          <Link
-            to={langHref('/about', lang)}
-            className="flex w-full items-center justify-center gap-2 rounded-lg border border-cyan-500/50 px-6 py-2.5 text-sm text-cyan-400 transition-all hover:bg-cyan-500/10 sm:w-auto"
-          >
-            <span>{t('hero.ctaLearn')}</span>
-          </Link>
-        </div>
-
-        {/* Friction-reducer microcopy — the single best line on the site */}
-        <p className="mb-10 font-mono text-xs text-white/45 md:mb-16">
-          {t('hero.ctaMicrocopy')}
-        </p>
 
         {/* Scroll indicator */}
-        <div className="flex justify-center pb-4 md:pb-8">
+        <div className="mt-10 flex justify-center md:mt-14">
           <button
             type="button"
             aria-label={t('hero.scrollAria')}
