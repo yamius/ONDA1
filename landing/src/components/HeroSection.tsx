@@ -103,7 +103,7 @@ export function HeroSection() {
           backgroundImage: `url(${LQIP})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.22,
+          opacity: 0.3,
           filter: 'blur(12px)',
           transform: 'scale(1.06)',
         }}
@@ -125,13 +125,13 @@ export function HeroSection() {
           loading="eager"
           width="1024"
           height="682"
-          className="absolute inset-0 h-full w-full object-cover opacity-[0.22] [object-position:50%_-15px] md:[object-position:50%_-30px]"
+          className="absolute inset-0 h-full w-full object-cover opacity-[0.30] [object-position:50%_-15px] md:[object-position:50%_-30px]"
           style={{ willChange: 'transform' }}
         />
       </picture>
 
-      {/* Gradient overlay — darker so the hero copy stays readable over the figure */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/65 to-black" />
+      {/* Gradient overlay — darkened so the hero copy stays readable over the figure */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/68 via-black/55 to-black" />
 
       {/* Pixel reveal — square 10vw×10vw cells, wave from screen centre */}
       <PixelReveal />
