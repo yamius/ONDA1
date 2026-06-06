@@ -248,8 +248,6 @@ export const levelsData: Record<number, LevelData> = {
     },
     researchLinks: [
       { label: 'Neurobiology of Neuroception & Survival', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
-      { label: 'Endocrinology of Dominance and Vitality (DHEA vs Cortisol)', url: 'https://pubmed.ncbi.nlm.nih.gov/10744432/' },
-      { label: 'Mirror Neurons and Social Coherence', url: 'https://pubmed.ncbi.nlm.nih.gov/17512470/' },
     ],
     glossaryLinks: [
       { label: 'Polyvagal Theory', slug: 'polyvagal-theory' },
@@ -352,11 +350,7 @@ export const levelsData: Record<number, LevelData> = {
         'Lower mental load: less effort spent on perception once the tools are sharper.',
       ],
     },
-    researchLinks: [
-      { label: 'Prefrontal cortex & attention', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-      { label: 'Norepinephrine & locus coeruleus', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
-      { label: 'Gamma oscillations & binding', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
-    ],
+    researchLinks: [],
     glossaryLinks: [
       { label: 'Cognitive Gap', slug: 'cognitive-gap' },
       { label: 'Dorsolateral Prefrontal Cortex', slug: 'dorsolateral-prefrontal-cortex' },
@@ -457,11 +451,7 @@ export const levelsData: Record<number, LevelData> = {
         'Connection that sticks: collaboration that feels genuinely rewarding, not draining.',
       ],
     },
-    researchLinks: [
-      { label: 'Mirror neurons & social cognition', url: 'https://pubmed.ncbi.nlm.nih.gov/17512470/' },
-      { label: 'Oxytocin & social bonding', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
-      { label: 'Inter-brain synchrony', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
-    ],
+    researchLinks: [],
     glossaryLinks: [
       { label: 'Ventral Vagus', slug: 'ventral-vagus' },
       { label: "Broca's Area", slug: 'brocas-area' },
@@ -565,7 +555,6 @@ export const levelsData: Record<number, LevelData> = {
     },
     researchLinks: [
       { label: 'Interoception & Insula', url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/' },
-      { label: 'C-tactile fibers & affective touch', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
     ],
     glossaryLinks: [
       { label: 'Interoception', slug: 'interoception' },
@@ -664,11 +653,7 @@ export const levelsData: Record<number, LevelData> = {
         'A calm, quiet mind that can still summon intense focus when needed.',
       ],
     },
-    researchLinks: [
-      { label: 'DMN & self-referential processing', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-      { label: 'Metacognition & PFC', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
-      { label: 'Gamma oscillations & binding', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
-    ],
+    researchLinks: [],
     glossaryLinks: [
       { label: 'Default Mode Network', slug: 'default-mode-network' },
       { label: 'Central Executive Network', slug: 'central-executive-network' },
@@ -764,8 +749,8 @@ export const levelsData: Record<number, LevelData> = {
       ],
     },
     researchLinks: [
-      { label: 'Epigenetics & gene expression', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
-      { label: 'Autophagy & cellular repair', url: 'https://pubmed.ncbi.nlm.nih.gov/28011467/' },
+      { label: 'Polyvagal theory & vagal tone', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+      { label: 'Resonance breathing & HRV biofeedback', url: 'https://pubmed.ncbi.nlm.nih.gov/19246382/' },
     ],
     glossaryLinks: [
       { label: 'Autophagy', slug: 'autophagy' },
@@ -863,10 +848,11 @@ export const levelsData: Record<number, LevelData> = {
         "A feeling of presence that's hard to put into words.",
       ],
     },
-    researchLinks: [
-      { label: 'Gamma rhythms & consciousness', url: 'https://pubmed.ncbi.nlm.nih.gov/10677593/' },
-      { label: '40 Hz oscillations & perception', url: 'https://pubmed.ncbi.nlm.nih.gov/8028764/' },
-    ],
+    // Level 8 is experiential, not measured — deliberately no external
+    // "Research Basis" citations. The body says resemblance isn't measurement;
+    // claiming a measured basis here would contradict that. The Research Basis
+    // block hides when this array is empty (see LevelPage).
+    researchLinks: [],
     glossaryLinks: [
       { label: 'Thalamus', slug: 'thalamus' },
       { label: 'Default Mode Network', slug: 'default-mode-network' },

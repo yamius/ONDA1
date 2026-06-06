@@ -56,7 +56,7 @@ function setOrCreateScript(id: string, json: object) {
 /* Real, vetted PubMed references — reused from the level pages
    (src/data/levels.ts / researchLinks.ts). No fabricated DOIs. Each inline
    marker in Sections B and D resolves to one of these. */
-const REFERENCES: { id: string; cite: string; url: string; group: 'app' | 'frontier' }[] = [
+const REFERENCES: { id: string; cite: string; url: string; group: 'app' }[] = [
   {
     id: 'R1',
     cite: 'Lehrer PM & Gevirtz R. Resonance-frequency breathing and HRV biofeedback — how and why it works.',
@@ -80,18 +80,6 @@ const REFERENCES: { id: string; cite: string; url: string; group: 'app' | 'front
     cite: 'Craig AD. Interoception and the insular cortex — the felt sense of the physiological body.',
     url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/',
     group: 'app',
-  },
-  {
-    id: 'R5',
-    cite: 'Doidge N. Neuroplasticity — the brain that changes itself (background reading).',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/',
-    group: 'frontier',
-  },
-  {
-    id: 'R6',
-    cite: 'Ader R & Cohen N. Psychoneuroimmunology — mind, behaviour and immune response (background reading).',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/6657789/',
-    group: 'frontier',
   },
 ]
 
@@ -280,7 +268,7 @@ export function ResearchPage() {
             badge="PH.D. PHYSICS & NEUROSCIENCE"
             points={[
               'Expertise in biometric feedback loops and neural-optimization mechanisms.',
-              'Oversees scientific methodology and clinical-validation protocols.',
+              'Oversees scientific methodology and study design.',
               'Bridges fundamental research and digital-health application.',
             ]}
           />
@@ -291,7 +279,7 @@ export function ResearchPage() {
             points={[
               "Lead developer responsible for ONDA's high-fidelity data pipeline.",
               '1,871+ commits on the core codebase (iOS, Android, Supabase).',
-              'Architect of the open-pipeline system for academic data export.',
+              'Building an open pipeline for academic data export.',
             ]}
           />
         </div>
@@ -422,32 +410,16 @@ export function ResearchPage() {
         </div>
         <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-3xl">Sources</h2>
 
-        <h3 className="mb-3 font-mono text-xs tracking-widest text-terminal-green/70">
-          BEHIND THE CURRENT APP
-        </h3>
-        <ol className="mb-8 space-y-3 font-mono text-xs leading-relaxed text-white/60">
-          {REFERENCES.filter((r) => r.group === 'app').map((r) => (
+        <p className="mb-6 font-mono text-xs leading-relaxed text-white/50">
+          These are the mechanisms the app rests on today. The research-frontier
+          directions above are described in hypothesis tense and, where the
+          evidence is still early, left deliberately uncited rather than dressed
+          in a citation.
+        </p>
+        <ol className="space-y-3 font-mono text-xs leading-relaxed text-white/60">
+          {REFERENCES.map((r) => (
             <li key={r.id} id={`ref-${r.id}`} className="scroll-mt-20">
               <span className="text-terminal-green/70">[{r.id}]</span> {r.cite}{' '}
-              <a
-                href={r.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-terminal-cyan hover:text-terminal-green break-all"
-              >
-                {r.url}
-              </a>
-            </li>
-          ))}
-        </ol>
-
-        <h3 className="mb-3 font-mono text-xs tracking-widest text-white/50">
-          RESEARCH FRONTIER — BACKGROUND READING
-        </h3>
-        <ol className="space-y-3 font-mono text-xs leading-relaxed text-white/55">
-          {REFERENCES.filter((r) => r.group === 'frontier').map((r) => (
-            <li key={r.id} id={`ref-${r.id}`} className="scroll-mt-20">
-              <span className="text-white/40">[{r.id}]</span> {r.cite}{' '}
               <a
                 href={r.url}
                 target="_blank"

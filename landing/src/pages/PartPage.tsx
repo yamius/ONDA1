@@ -174,7 +174,7 @@ export const parts: Record<string, {
       intro: 'The primary goal is to launch the body\u2019s wave dynamics and radically reduce the coefficient of internal resistance.',
       items: [
         { name: 'The Spine', text: 'The axial skeleton as the primary waveguide for movement.' },
-        { name: 'Spinal Neural Circuits and Cerebellum', text: 'Centers for rhythmic movement; modulating smoothness and eliminating \u201cnoise.\u201d' },
+        { name: 'Spinal Neural Circuits and Cerebellum', text: 'Centers for rhythmic movement; modulating smoothness and smoothing out \u201cnoise.\u201d' },
         { name: 'Vestibular System', text: 'The primary gyroscope for orientation within the flow.' },
       ],
     },
@@ -238,7 +238,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Interoception and Energy Efficiency',
-          text: 'Developing the skill of perceiving internal states (organ signals, pressure, heartbeat) as the foundation for emotional intelligence. Training the nervous system to perform tasks with the minimum necessary muscular effort, eliminating parasitic tension.',
+          text: 'Developing the skill of perceiving internal states (organ signals, pressure, heartbeat) as the foundation for emotional intelligence. Training the nervous system to perform tasks with the minimum necessary muscular effort, releasing parasitic tension over time.',
         },
       ],
     },
@@ -381,7 +381,7 @@ export const parts: Record<string, {
       items: [
         {
           name: 'Endocrine System (Dominance Hormonal Circuit)',
-          text: 'The adrenal glands switch from emergency cortisol release to the production of DHEA\u2014the hormone of vitality and longevity. The Pituitary-Gonadal axis forms the \u201cwinner\u2019s state\u201d through moderate testosterone stimulation. The Thymus restores the link between the sense of social safety and a powerful immune response.',
+          text: 'The adrenal glands shift from emergency cortisol release toward DHEA\u2014associated with vitality and longevity. The Pituitary-Gonadal axis supports a \u201cwinner\u2019s state\u201d through moderate testosterone stimulation. The Thymus supports the link between a sense of social safety and immune function.',
         },
         {
           name: 'Autonomic Nervous System (Smart Parasympathetic)',
@@ -583,9 +583,7 @@ export const parts: Record<string, {
       { label: 'Brain', slug: 'brain' },
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
     ],
-    researchLinks: [
-      { label: 'Neuroplasticity', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-    ],
+    researchLinks: [],
   },
   'i-focus': {
     badge: '[ PART 8 — LEVEL 3: MIND / AER ]',
@@ -659,9 +657,7 @@ export const parts: Record<string, {
       { label: 'Cognitive Gap', slug: 'cognitive-gap' },
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
     ],
-    researchLinks: [
-      { label: 'Neuroplasticity', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-    ],
+    researchLinks: [],
   },
   'i-shape-the-vision': {
     badge: '[ PART 9 — LEVEL 3: MIND / AER ]',
@@ -674,7 +670,7 @@ export const parts: Record<string, {
     protocol: {
       title: 'Biological Protocol',
       intro:
-        'Training the brain to use imagination as a program for rewiring reality:',
+        'Training the brain to use imagination as a tool for reshaping how you respond to reality:',
       items: [
         {
           name: 'Sensory Visualization',
@@ -755,10 +751,7 @@ export const parts: Record<string, {
       { label: 'Theta State', slug: 'theta-state' },
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
     ],
-    researchLinks: [
-      { label: 'Neuroplasticity', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-      { label: 'Hemispheric synchronization', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
-    ],
+    researchLinks: [],
   },
   'i-express': {
     badge: '[ PART 10 — LEVEL 4: SOCIETY / IGNIS ]',
@@ -1055,7 +1048,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Embodiment Clarity',
-          text: 'Eliminating the delay between the body\'s signal and its realization ("I feel — I know — I act").',
+          text: 'Narrowing the delay between the body\'s signal and its realization ("I feel — I know — I act").',
         },
       ],
     },
@@ -1117,9 +1110,9 @@ export const parts: Record<string, {
     titleHighlight: 'Channel',
     subtitle: 'Protocol: Neurodynamic Conductivity and Fascial Flow',
     metaDescription:
-      'Part 14: The body as conductor. Vagal tone, neurodynamics, fascial flow. Master of flow states — eliminate congestions, achieve high conductivity. ONDA Life.',
+      'Part 14: The body as conductor. Vagal tone, neurodynamics, fascial flow. Master of flow states — ease congestions, build conductivity. ONDA Life.',
     intro:
-      'At this stage, we work with the "informational fluidity" of the organism. The goal is to train the nervous system and tissues not to block incoming or internal impulses (stress, pain, intense emotions), but to let them pass through unhindered. We stop being a "form" that resists pressure and become a "process" that transforms any impulse into a resource while maintaining homeostasis.\n\nKey Biological Challenge: Eliminating "congestions"—muscular, vascular, and neural blocks—for the free distribution of energy and signals.',
+      'At this stage, we work with the "informational fluidity" of the organism. The goal is to train the nervous system and tissues not to block incoming or internal impulses (stress, pain, intense emotions), but to let them pass through unhindered. We stop being a "form" that resists pressure and become a "process" that transforms any impulse into a resource while maintaining homeostasis.\n\nKey Biological Challenge: easing "congestions"—muscular, vascular, and neural blocks—so energy and signals can distribute freely.',
     protocol: {
       title: 'Biological Protocol',
       intro: 'Neurodynamic Conductivity and Fascial Flow transforms the body into an open channel:',
@@ -1197,7 +1190,6 @@ export const parts: Record<string, {
     ],
     researchLinks: [
       { label: 'Polyvagal Theory', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
-      { label: 'Neurodynamics & nerve mobility', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
     ],
   },
   'i-attune': {
@@ -1282,8 +1274,7 @@ export const parts: Record<string, {
       { label: 'Neuroplasticity', slug: 'neuroplasticity' },
     ],
     researchLinks: [
-      { label: 'Oxytocin & social bonding', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
-      { label: 'Mirror neurons & inter-brain synchrony', url: 'https://pubmed.ncbi.nlm.nih.gov/17512470/' },
+      { label: 'Polyvagal theory & vagal tone', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
     ],
   },
   'i-witness': {
@@ -1404,10 +1395,7 @@ export const parts: Record<string, {
       { label: 'Alpha State', slug: 'alpha-state' },
       { label: 'Neuroplasticity', slug: 'neuroplasticity' },
     ],
-    researchLinks: [
-      { label: 'DMN & self-referential processing', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-      { label: 'Metacognition & PFC', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
-    ],
+    researchLinks: [],
   },
   'i-integrate': {
     badge: '[ PART 17 — LEVEL 6: BRAIN / AQUA II ]',
@@ -1432,11 +1420,11 @@ export const parts: Record<string, {
         },
         {
           name: 'Reconsolidation of Experience',
-          text: 'Memory rewiring techniques where traumatic or negative patterns are recoded into resources through the shifting of neural context within the hippocampus.',
+          text: 'Memory-reconsolidation techniques where negative patterns can gradually be reframed into resources by shifting the neural context around the hippocampus.',
         },
         {
           name: 'Value Synthesis (vmPFC)',
-          text: 'Exercises to align core beliefs with daily actions, eliminating energy leaks caused by internal arguments.',
+          text: 'Exercises to align core beliefs with daily actions, easing energy leaks caused by internal arguments.',
         },
         {
           name: 'Daily Inventory',
@@ -1478,10 +1466,7 @@ export const parts: Record<string, {
       { label: 'Default Mode Network', slug: 'default-mode-network' },
       { label: 'Neuroplasticity', slug: 'neuroplasticity' },
     ],
-    researchLinks: [
-      { label: 'Corpus callosum & hemispheric integration', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-      { label: 'Memory reconsolidation', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
-    ],
+    researchLinks: [],
   },
   'i-synchronize': {
     badge: '[ PART 18 — LEVEL 6: BRAIN / AQUA II ]',
@@ -1551,10 +1536,7 @@ export const parts: Record<string, {
       { label: 'Inter-brain Coherence', slug: 'inter-brain-coherence' },
       { label: 'Alpha State', slug: 'alpha-state' },
     ],
-    researchLinks: [
-      { label: 'Inter-brain hyperscanning', url: 'https://pubmed.ncbi.nlm.nih.gov/15913566/' },
-      { label: 'Gamma rhythms & collective cognition', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-    ],
+    researchLinks: [],
   },
   'i-remember': {
     badge: '[ PART 19 — LEVEL 7: DNA / AER II ]',
@@ -1626,8 +1608,7 @@ export const parts: Record<string, {
       { label: 'Brainstem', slug: 'brainstem' },
     ],
     researchLinks: [
-      { label: 'Epigenetics & stress resilience', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-      { label: 'Vagus nerve & gene expression', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+      { label: 'Polyvagal theory & vagal tone', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
     ],
   },
   'i-restore': {
@@ -1701,8 +1682,7 @@ export const parts: Record<string, {
       { label: 'Prefrontal Cortex', slug: 'prefrontal-cortex' },
     ],
     researchLinks: [
-      { label: 'Autophagy & cellular repair', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-      { label: 'Vagal tone & regeneration', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+      { label: 'Polyvagal theory & vagal tone', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
     ],
   },
   'i-synthesize': {
@@ -1774,8 +1754,7 @@ export const parts: Record<string, {
       { label: 'Default Mode Network', slug: 'default-mode-network' },
     ],
     researchLinks: [
-      { label: 'Epigenetics & consciousness', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-      { label: 'Oxytocin & pro-social behavior', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
+      { label: 'Polyvagal theory & vagal tone', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
     ],
   },
   'i-am-vibration': {
@@ -1847,10 +1826,7 @@ export const parts: Record<string, {
       { label: 'Interoception', slug: 'interoception' },
       { label: 'Flow State', slug: 'flow-state' },
     ],
-    researchLinks: [
-      { label: 'Gamma rhythms & consciousness', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-      { label: 'Interoception & resonance', url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/' },
-    ],
+    researchLinks: [],
   },
   'i-am-wholeness': {
     badge: '[ PART 23 — LEVEL 8: ATOMIC / IGNIS II ]',
@@ -1919,10 +1895,7 @@ export const parts: Record<string, {
       { label: 'Thalamus', slug: 'thalamus' },
       { label: 'Flow State', slug: 'flow-state' },
     ],
-    researchLinks: [
-      { label: 'Integrated Information Theory', url: 'https://pubmed.ncbi.nlm.nih.gov/27161172/' },
-      { label: 'DMN & self-transcendence', url: 'https://pubmed.ncbi.nlm.nih.gov/21390261/' },
-    ],
+    researchLinks: [],
   },
   'i-am-the-source': {
     badge: '[ PART 24 — LEVEL 8: ATOMIC / IGNIS II ]',
@@ -1991,10 +1964,7 @@ export const parts: Record<string, {
       { label: 'Flow State', slug: 'flow-state' },
       { label: 'Coherence', slug: 'coherence' },
     ],
-    researchLinks: [
-      { label: 'Deep meditation & the brain', url: 'https://pubmed.ncbi.nlm.nih.gov/17329479/' },
-      { label: 'Thalamocortical resonance', url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/' },
-    ],
+    researchLinks: [],
   },
 }
 

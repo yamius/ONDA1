@@ -223,7 +223,9 @@ export function LevelPage() {
         </div>
       )}
 
-      {/* Research Basis */}
+      {/* Research Basis — hidden when there are no citations (e.g. Level 8,
+          which is experiential, not measured). */}
+      {level.researchLinks.length > 0 && (
       <div className="border-t border-white/5 pt-10">
         <h2 className="mb-6 text-2xl font-bold tracking-tight md:text-4xl">
           {t('ui.researchBasis')}
@@ -242,6 +244,7 @@ export function LevelPage() {
           ))}
         </div>
       </div>
+      )}
 
       {/* Related Terms */}
       <div className="border-t border-white/5 pt-10">

@@ -34,7 +34,7 @@
           { "name": "Interoceptive Calibration", "text": "Developing the skill to detect \"biocomputer\" signals before they translate into emotions or thoughts." },
           { "name": "Vagal Tone (V2)", "text": "Exiting \"freeze\" states by releasing the diaphragm and activating the Vagus nerve." },
           { "name": "Vestibulo-Ocular Reflex (VOR)", "text": "Stabilizing gaze and navigation within the flow of incoming stimuli." },
-          { "name": "Energy Efficiency", "text": "Training the nervous system to perform tasks with minimal electrical impulse, eliminating \"body armor\" (chronic tension)." }
+          { "name": "Energy Efficiency", "text": "Training the nervous system to work with less effort — releasing \"body armor\" (chronic tension) over time." }
         ]
       },
       "targetSystems": {
@@ -42,7 +42,7 @@
         "items": [
           { "name": "Insular Cortex (Insula)", "text": "The primary hub for self-sensing and interoception." },
           { "name": "Brainstem & Hypothalamus", "text": "Control centers for life support and homeostasis." },
-          { "name": "Cerebellum", "text": "Ensuring precision, coordination, and the elimination of \"noise\" in movement." },
+          { "name": "Cerebellum", "text": "Supporting precision, coordination, and the smoothing of \"noise\" in movement." },
           { "name": "Vagus Nerve", "text": "The highway of the parasympathetic system, responsible for the biological sense of safety." }
         ]
       },
@@ -186,7 +186,7 @@
         "intro": "Level 5 integrates sensory precision protocols:",
         "parts": [
           { "label": "I Sense", "protocol": "Protocol: Interoceptive Accuracy and Sensory Expansion", "goal": "Objective: Transitioning from \"Survival Mode\" to total \"Presence Mode\" through sensory anchors.", "work": "Work: Activating the insular cortex, somatosensory cortex, and thalamic filters. Engaging C-tactile fibers and proprioceptive integration to create an ultra-precise body map." },
-          { "label": "I Channel", "protocol": "Protocol: Neurodynamic Conductivity and Fascial Flow", "goal": "Objective: The body as conductor — transforming impulses into resource while maintaining homeostasis.", "work": "Work: Eliminating muscular, vascular, and neural congestions. Training the nervous system and tissues to let stress, pain, and intense emotions pass through unhindered. Achieving somatic freedom and high conductivity." },
+          { "label": "I Channel", "protocol": "Protocol: Neurodynamic Conductivity and Fascial Flow", "goal": "Objective: The body as conductor — transforming impulses into resource while maintaining homeostasis.", "work": "Work: Easing muscular, vascular, and neural congestions. Training the nervous system and tissues to let stress, pain, and intense emotions pass through unhindered. Building somatic freedom and high conductivity over time." },
           { "label": "I Attune", "protocol": "Protocol: Neurosomatic Fusion and Collective Ecstasy", "goal": "Objective: From individual conductivity to collective resonance — creating a unified neurosomatic circuit (\"We-state\").", "work": "Work: Dissolving the ego-shell boundaries. Activating oxytocin, mirror neurons, ventral vagal complex, and parietal modulation. Achieving neurosomatic coupling where two organisms function as one." }
         ]
       },
@@ -196,7 +196,7 @@
           { "name": "Interoceptive Accuracy", "text": "Practices to activate the insula, allowing you to hear pulsation, peristalsis, and micro-movements beneath the skin." },
           { "name": "Sensory Discrimination", "text": "Exercises to sharpen exteroception through the conscious management of thalamic filters." },
           { "name": "DMN Suppression via Sensories", "text": "Shifting attention to the \"direct wire\" of sensations to deactivate mental rumination." },
-          { "name": "Embodiment Clarity", "text": "Eliminating the delay between the body's signal and its realization." }
+          { "name": "Embodiment Clarity", "text": "Narrowing the delay between the body's signal and its realization." }
         ]
       },
       "targetSystems": {
