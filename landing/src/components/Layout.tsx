@@ -170,6 +170,15 @@ export function Layout() {
           >
             {t('menu.tools', { defaultValue: 'Tools' })}
           </TransitionLink>
+          <TransitionLink
+            to="/research"
+            onClick={() => setMenuOpen(false)}
+            className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
+              location.pathname === '/research' ? 'text-cyan-400' : 'text-white/70'
+            }`}
+          >
+            {t('menu.research', { defaultValue: 'Research' })}
+          </TransitionLink>
           <a
             href={`${homePathFor(currentLang)}#download`.replace('//', '/')}
             onClick={() => setMenuOpen(false)}
