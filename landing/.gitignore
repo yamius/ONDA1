@@ -26,3 +26,6 @@ dist-ssr
 *.sln
 *.sw?
 .article-dates.cache.json
+
+# build beacon (written at build start, read by prerender)
+.build-sha

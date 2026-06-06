@@ -339,7 +339,7 @@ export function MdArticlePage() {
     setMeta('og:url', `${SITE_URL}/articles/${article.slug}`, true)
     syncOgLocale(lang)
     return () => {
-      document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
+      document.title = 'ONDA Life — HRV Biofeedback & Breathing Training App'
     }
   }, [article])
 

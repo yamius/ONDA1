@@ -137,9 +137,9 @@ function buildCanonicalUrl(route: string): string {
   const cleanPath = (route || '/').replace(/\/+$/, '') || '/'
   return cleanPath === '/' ? base : `${base}${cleanPath}`
 }
-const DEFAULT_TITLE = 'ONDA Life | Biohacking App, HRV Tracker & Consciousness OS'
+const DEFAULT_TITLE = 'ONDA Life: Stop Tracking Stress. Start Training It.'
 const DEFAULT_DESC =
-  'Your body is a biological computer. ONDA Life is the OS that upgrades it — 8 levels of structured consciousness development, HRV tracking, and neural optimization protocols.'
+  'Guided breathing with real-time feedback from your own heart rhythm. Structured 8-level training for your nervous system. Free to start, no account.'
 
 const ABOUT_TITLE = 'About ONDA Life | Operating System for Your Consciousness & Biohacking'
 const ABOUT_DESC =

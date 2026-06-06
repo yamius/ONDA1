@@ -6,8 +6,8 @@ import type { Article } from './types'
  */
 const article: Article = {
   slug: 'dopamine-architecture-mastering-desire',
-  title: 'Dopamine Architecture: Mastering the Currency of Desire',
-  seoTitle: 'Dopamine Architecture: Mastering Desire | ONDA Life',
+  title: 'Dopamine Architecture: Drive, Prediction Error, and Reward Traps',
+  seoTitle: 'Dopamine Architecture: Drive & Reward Traps | ONDA Life',
   description:
     'Dopamine architecture: reclaim your drive by understanding the biological Prediction Error — and escape the Dopamine Traps that hijack your reward circuitry.',
   category: 'Biological Software',

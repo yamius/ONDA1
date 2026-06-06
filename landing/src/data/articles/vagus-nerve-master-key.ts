@@ -6,15 +6,15 @@ import type { Article } from './types'
  */
 const article: Article = {
   slug: 'vagus-nerve-master-key',
-  title: "Vagus Nerve: The Master Key to Your Biocomputer",
+  title: "Vagus Nerve: The Body's Master Switch for Calm",
   description:
-    "Vagus nerve optimization: hack your biological stress response and unlock deep resilience through neural interface control.",
+    "How the vagus nerve regulates your stress response and recovery — and what slow, paced breathing can actually influence.",
   category: 'Neural Hardware',
   relatedSlugs: ['vagus-nerve', 'parasympathetic-nervous-system', 'heart-rate-variability', 'polyvagal-theory', 'neuroception'],
   image: '/images/articles/vagus-nerve-biohacking-data-highway.webp',
   imageAlt:
-    'Vagus nerve stimulation biohacking visual: neural interface, parasympathetic data highway, brainstem to heart lungs gut pathway.',
-  imageTitle: 'Vagus nerve biohacking — master data highway for neural interface and parasympathetic control',
+    'Vagus nerve biohacking visual: the parasympathetic pathway from brainstem to heart, lungs, and gut.',
+  imageTitle: 'Vagus nerve — the parasympathetic pathway linking brainstem, heart, lungs, and gut',
   imageCaption:
     '[ SYSTEM_BUS_INTERFACE ]: Mapping the primary data conduit for parasympathetic override. Neural code pulses connect CPU to heart, lungs, gut.',
   imagePlacement: 'header',

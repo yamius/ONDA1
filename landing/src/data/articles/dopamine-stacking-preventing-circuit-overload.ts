@@ -9,7 +9,7 @@ const article: Article = {
   title: 'Dopamine Stacking & Circuit Overload',
   seoTitle: 'Dopamine Stacking & Circuit Overload | ONDA Life',
   description:
-    'Learn how to prevent neural burnout. Master your dopamine baseline and stop glutamate storms with ONDA\'s neurochemical protocols.',
+    'How chasing dopamine leads to burnout — and what actually helps the reward system settle and recover.',
   category: 'Biological Software',
   relatedSlugs: [
     'dopamine',
@@ -28,7 +28,7 @@ const article: Article = {
   imageTitle:
     'Dopamine stacking overload: receptor downregulation and glutamate excitotoxicity in neural circuits.',
   imageCaption:
-    '[ CIRCUIT_OVERLOAD ]: Dopamine baseline collapse and glutamate storm visualization. Receptor downregulation leads to system-level anhedonia.',
+    '[ CIRCUIT_OVERLOAD ]: Dopamine baseline collapse and glutamate overload visualization. Receptor downregulation leads to system-level anhedonia.',
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Attention requires protection. Install a firewall against digital fragmentation with Digital Dementia protocols.',

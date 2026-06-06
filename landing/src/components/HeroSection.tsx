@@ -119,8 +119,8 @@ export function HeroSection() {
         <img
           ref={imgRef}
           src="/onda-life-hrv-consciousness-hero.webp"
-          alt="ONDA Life mobile app interface showing HRV tracking and biocomputer optimization"
-          title="ONDA Life: HRV tracking, consciousness OS, biocomputer interface"
+          alt="ONDA Life mobile app showing live HRV and guided breathing"
+          title="ONDA Life — HRV biofeedback and guided breathing"
           fetchPriority="high"
           loading="eager"
           width="1024"

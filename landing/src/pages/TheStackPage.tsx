@@ -199,9 +199,9 @@ export function TheStackPage() {
     const desc = document.querySelector('meta[name="description"]')
     if (desc) desc.setAttribute('content', PAGE_DESC)
     return () => {
-      document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
+      document.title = 'ONDA Life — HRV Biofeedback & Breathing Training App'
       const d = document.querySelector('meta[name="description"]')
-      if (d) d.setAttribute('content', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
+      if (d) d.setAttribute('content', 'Guided breathing with live feedback from your own heart rhythm — structured training for your nervous system. Free to start, no account.')
     }
   }, [])
 

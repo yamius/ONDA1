@@ -125,16 +125,16 @@ export function GlossaryTermPage() {
     setLd('breadcrumb', breadcrumbLd)
 
     return () => {
-      document.title = 'ONDA Life — Biohacking App & Systematic Consciousness OS'
-      setMeta('description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.')
-      setMeta('og:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
-      setMeta('og:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
+      document.title = 'ONDA Life — HRV Biofeedback & Breathing Training App'
+      setMeta('description', 'Guided breathing with live feedback from your own heart rhythm — structured training for your nervous system. Free to start, no account.')
+      setMeta('og:title', 'ONDA Life — HRV Biofeedback & Breathing Training App', true)
+      setMeta('og:description', 'Guided breathing with live feedback from your own heart rhythm — structured training for your nervous system. Free to start, no account.', true)
       setMeta('og:url', SITE_URL, true)
       setMeta('og:image', OG_IMAGE, true)
       setMeta('og:type', 'website', true)
       setMeta('twitter:card', 'summary_large_image', true)
-      setMeta('twitter:title', 'ONDA Life — Biohacking App & Systematic Consciousness OS', true)
-      setMeta('twitter:description', 'Manage your body as a biocomputer. 24 stages of deep consciousness firmware based on neuroscience. Download the update protocol now.', true)
+      setMeta('twitter:title', 'ONDA Life — HRV Biofeedback & Breathing Training App', true)
+      setMeta('twitter:description', 'Guided breathing with live feedback from your own heart rhythm — structured training for your nervous system. Free to start, no account.', true)
       setMeta('twitter:image', OG_IMAGE, true)
       removeLd('term')
       removeLd('breadcrumb')

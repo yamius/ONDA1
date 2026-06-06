@@ -53,6 +53,14 @@ const BUILD_COMMIT =
     try {
       return execSync('git rev-parse --short HEAD', { cwd: projectRoot }).toString().trim()
     } catch {
+      // in-process git failed (some Replit build envs) — try the file written
+      // by scripts/write-build-sha.mjs at build start before giving up.
+      try {
+        const s = readFileSync(join(projectRoot, '.build-sha'), 'utf-8').trim().slice(0, 12)
+        if (s) return s
+      } catch {
+        /* no file either */
+      }
       return 'unknown'
     }
   })()
