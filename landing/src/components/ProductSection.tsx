@@ -15,7 +15,7 @@ function PhoneShot({ n, caption, alt }: { n: number; caption: string; alt: strin
         loading="lazy"
         width="600"
         height="1252"
-        className="w-full max-w-[230px] [filter:drop-shadow(0_10px_22px_rgba(45,212,191,0.45))_drop-shadow(0_4px_10px_rgba(0,0,0,0.45))]"
+        className="w-full max-w-[230px] [filter:drop-shadow(0_0_24px_rgba(45,212,191,0.45))]"
       />
       <figcaption className="mt-4 max-w-[230px] text-center font-mono text-[11px] leading-relaxed text-white/45">
         {caption}
