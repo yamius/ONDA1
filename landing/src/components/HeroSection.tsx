@@ -192,7 +192,7 @@ export function HeroSection() {
               width="760"
               height="1588"
               fetchPriority="high"
-              className="mx-auto w-full [filter:drop-shadow(0_0_36px_rgba(45,212,191,0.30))_drop-shadow(0_6px_16px_rgba(0,0,0,0.5))]"
+              className="mx-auto w-full [filter:drop-shadow(0_0_28px_rgba(45,212,191,0.55))_drop-shadow(0_0_55px_rgba(45,212,191,0.30))]"
             />
           </div>
         </div>
