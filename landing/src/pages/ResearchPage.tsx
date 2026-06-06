@@ -267,13 +267,34 @@ export function ResearchPage() {
           </div>
         </div>
 
-        <h3 className="mt-8 mb-3 text-lg font-bold text-white">Who&rsquo;s behind it</h3>
-        <p className="font-mono text-sm leading-relaxed text-white/70 md:text-base">
-          ONDA was built method-first. Its founder trained and practiced as a
-          psychotherapist before writing a line of the app, and the practice
-          design comes out of that clinical background. The science is held to
-          account by a scientific advisor with a PhD in physics and neuroscience.
+        <h3 className="mt-8 mb-4 text-lg font-bold text-white">Who&rsquo;s behind it</h3>
+        <p className="mb-6 font-mono text-sm leading-relaxed text-white/70 md:text-base">
+          ONDA was built method-first, by a two-person founding team — the
+          science held to account on one side, the engineering owned end-to-end
+          on the other.
         </p>
+        <div className="grid gap-4 md:grid-cols-2">
+          <TeamCard
+            name="Valentin"
+            role="Co-founder & Scientific Advisor"
+            badge="PH.D. PHYSICS & NEUROSCIENCE"
+            points={[
+              'Expertise in biometric feedback loops and neural-optimization mechanisms.',
+              'Oversees scientific methodology and clinical-validation protocols.',
+              'Bridges fundamental research and digital-health application.',
+            ]}
+          />
+          <TeamCard
+            name="Yakiv"
+            role="Founder & CEO"
+            badge="FULL-STACK EXECUTION"
+            points={[
+              "Lead developer responsible for ONDA's high-fidelity data pipeline.",
+              '1,871+ commits on the core codebase (iOS, Android, Supabase).',
+              'Architect of the open-pipeline system for academic data export.',
+            ]}
+          />
+        </div>
       </section>
 
       {/* ───────────── D · THE RESEARCH FRONTIER ───────────── */}
@@ -502,6 +523,36 @@ function FrontierCard({
       {note ? (
         <p className="mt-2 font-mono text-[11px] italic text-terminal-amber/70">{note}</p>
       ) : null}
+    </div>
+  )
+}
+
+function TeamCard({
+  name,
+  role,
+  badge,
+  points,
+}: {
+  name: string
+  role: string
+  badge: string
+  points: string[]
+}) {
+  return (
+    <div className="rounded-lg border border-white/10 bg-white/[0.02] p-5">
+      <h4 className="text-xl font-bold text-white">{name}</h4>
+      <div className="mt-0.5 font-mono text-sm text-terminal-green/80">{role}</div>
+      <div className="mt-3 inline-block rounded border border-terminal-green/30 bg-terminal-green/5 px-2 py-1 font-mono text-[10px] tracking-widest text-terminal-green/80">
+        {badge}
+      </div>
+      <ul className="mt-4 space-y-2 font-mono text-xs leading-relaxed text-white/65">
+        {points.map((p) => (
+          <li key={p} className="flex gap-2">
+            <span className="text-terminal-green/50">▸</span>
+            <span>{p}</span>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
