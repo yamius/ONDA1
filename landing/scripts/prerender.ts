@@ -8,6 +8,7 @@ import React from 'react'
 import { JSDOM } from 'jsdom'
 import { renderToString } from 'react-dom/server'
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs'
+import { execSync } from 'child_process'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { createApp } from '../src/entry-server'
@@ -33,7 +34,38 @@ const projectRoot = join(__dirname, '..')
 const distDir = join(projectRoot, 'dist')
 
 const routes = getPrerenderRoutes()
-const template = readFileSync(join(distDir, 'index.html'), 'utf-8')
+
+// ── Build/version beacon ─────────────────────────────────────────────
+// Stamp the real built commit + UTC build time into every page's <head>,
+// so the live build is verifiable in a single fetch (curl | grep
+// onda-build-commit). The SHA comes from the host's git env when present
+// (Vercel/Cloudflare/Netlify/GitHub), else from git at build time — it can
+// only ever reflect what was actually built, never a hand-typed value.
+const BUILD_COMMIT =
+  (
+    process.env.VERCEL_GIT_COMMIT_SHA ||
+    process.env.CF_PAGES_COMMIT_SHA ||
+    process.env.COMMIT_REF ||
+    process.env.GITHUB_SHA ||
+    ''
+  ).slice(0, 7) ||
+  (() => {
+    try {
+      return execSync('git rev-parse --short HEAD', { cwd: projectRoot }).toString().trim()
+    } catch {
+      return 'unknown'
+    }
+  })()
+const BUILD_TIME = new Date().toISOString()
+const buildBeacon =
+  `<meta name="onda-build-commit" content="${BUILD_COMMIT}">\n` +
+  `    <meta name="onda-build-time" content="${BUILD_TIME}">\n` +
+  `    <script>console.info('onda build','${BUILD_COMMIT}','${BUILD_TIME}')</script>\n  `
+const template = readFileSync(join(distDir, 'index.html'), 'utf-8').replace(
+  '</head>',
+  `  ${buildBeacon}</head>`,
+)
+console.log(`[prerender] build beacon — commit ${BUILD_COMMIT}, time ${BUILD_TIME}`)
 
 ;(globalThis as Record<string, unknown>).React = React
 
