@@ -1317,20 +1317,22 @@ export function getMetaForRoute(route: string): RouteMeta {
       },
     }
   }
-  // /research — Research-partnership landing. Linked from the Eurostar
-  // deck final slide. EN-only; peer-review audience.
+  // /research — "The Science Behind ONDA". Honest two-register page: the
+  // cited evidence the app rests on today, plus a clearly-labelled research
+  // frontier. EN-only. Plain WebPage schema — deliberately NOT
+  // ResearchProject (would imply a funded, active programme) and NOT
+  // MedicalWebPage (would imply medical claims).
   if (route === '/research') {
     const researchTitle =
-      'ONDA Research Network — Validating the 24-Step Neuro-Physiological Framework | ONDA Life'
+      'The Science Behind ONDA — HRV Biofeedback, Evidence & Research Roadmap | ONDA Life'
     const researchDesc =
-      'Academic and clinical partnership programme for validating the 24-step ONDA framework: longitudinal HRV, eye-scan ANS markers, BDNF, EEG coherence, DMN dynamics.'
+      "The evidence ONDA is built on — resonance breathing and HRV biofeedback, cited in plain sight — and the research frontier we're working to validate."
     return {
       title: researchTitle,
       description: researchDesc,
       url,
       breadcrumbs,
       ogType: 'website',
-      researchProject: { name: researchTitle, description: researchDesc, url },
     }
   }
 
