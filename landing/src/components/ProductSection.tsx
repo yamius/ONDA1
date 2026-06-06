@@ -10,7 +10,7 @@ function PhoneShot({ n, caption, alt }: { n: number; caption: string; alt: strin
   return (
     <figure className="flex flex-col items-center">
       <img
-        src={`/images/home/showcase-${n}.webp`}
+        src={`/images/home/showcase-${n}-v2.webp`}
         alt={alt}
         loading="lazy"
         width="600"

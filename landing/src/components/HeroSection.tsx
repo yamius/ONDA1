@@ -187,7 +187,7 @@ export function HeroSection() {
           {/* Right: the in-session money shot (training, not a dashboard) */}
           <div className="w-full max-w-[240px] md:max-w-[300px] md:flex-shrink-0">
             <img
-              src="/images/home/hero-phone.webp"
+              src="/images/home/hero-phone-v2.webp"
               alt="ONDA live coherence training session — breathing timer, live heart-rhythm wave, and coherence score"
               width="760"
               height="1588"

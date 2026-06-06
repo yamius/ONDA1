@@ -44,7 +44,7 @@ export function ProofSection() {
           <div className="w-full max-w-[220px] md:flex-shrink-0">
             <figure className="flex flex-col items-center">
               <img
-                src="/images/home/proof.webp"
+                src="/images/home/proof-v2.webp"
                 alt={t('proof.shotAlt')}
                 loading="lazy"
                 width="600"
