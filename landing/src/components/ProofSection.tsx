@@ -49,7 +49,7 @@ export function ProofSection() {
                 loading="lazy"
                 width="600"
                 height="1252"
-                className="w-full [filter:drop-shadow(0_0_24px_rgba(45,212,191,0.22))_drop-shadow(0_6px_14px_rgba(0,0,0,0.45))]"
+                className="w-full [filter:drop-shadow(0_10px_22px_rgba(45,212,191,0.45))_drop-shadow(0_4px_10px_rgba(0,0,0,0.45))]"
               />
               <figcaption className="mt-4 text-center font-mono text-[11px] leading-relaxed text-white/45">
                 {t('proof.shotCaption')}
