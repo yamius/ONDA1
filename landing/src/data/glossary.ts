@@ -42,8 +42,7 @@ Most people run on autopilot — executing ancient firmware without awareness. O
 The Biocomputer concept maps directly to the 8-level architecture. Levels 1-4 work with the "hardware" (body, emotions, mind, social systems), while Levels 5-8 access deeper "source code" (cellular, genetic, planetary, universal).
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'firmware-update',
@@ -82,8 +81,7 @@ Because each Firmware Update targets a specific system, results are measurable:
 - Stress response changes tracked over weeks
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'psycho-neural-network',
@@ -120,8 +118,7 @@ Each Level of the ONDA system works with a different layer of the PNN:
 The PNN is not abstract — it has a molecular basis. Every psychological state corresponds to specific neurotransmitter and hormone profiles. ONDA practices are designed to shift these profiles systematically.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'molecular-psychology',
@@ -153,8 +150,7 @@ Traditional meditation apps say "feel calmer." ONDA Life says "reduce cortisol b
 Your endocrine system is the "firmware" that runs beneath conscious awareness. Hormonal patterns established in childhood continue to run unless deliberately updated. ONDA practices target these patterns at the molecular level.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'interoception',
@@ -194,10 +190,7 @@ Studies show that people with higher interoceptive accuracy:
 ---
 
 ## References
-
-1. [Craig, Nat Rev Neurosci (2002)](https://pubmed.ncbi.nlm.nih.gov/12030437/) — interoception and insula
-2. [Füstös et al., Biol Psychol (2013)](https://pubmed.ncbi.nlm.nih.gov/23153889/) — interoception and emotional regulation
-`,
+1. [Craig, Nat Rev Neurosci (2002)](https://pubmed.ncbi.nlm.nih.gov/12030437/) — interoception and insula`,
   },
   {
     slug: 'ond-tokens',
@@ -238,9 +231,7 @@ Each Part has an associated **Artifact** — a collectible that provides permane
 
 Starting at Level 3, OND tokens will be convertible to real value through the ONDA ecosystem. The exact mechanism is under development.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'homeostasis',
@@ -271,12 +262,7 @@ Level 1 (TERRA) begins with homeostatic alignment — the practice of sensing an
 
 A body in homeostatic balance is a body ready for growth. Without this foundation, higher-level practices (emotional regulation, cognitive focus, social connection) lack the biological substrate they need.
 
----
-
-## References
-
-1. [Saper & Lowell, Cell (2014)](https://pubmed.ncbi.nlm.nih.gov/24679536/) — hypothalamus and homeostasis
-`,
+---`,
   },
   {
     slug: 'primary-interoception',
@@ -311,9 +297,7 @@ Practices include:
 ---
 
 ## References
-
-1. [Craig, Nat Rev Neurosci (2009)](https://pubmed.ncbi.nlm.nih.gov/12030437/) — interoception and insula
-`,
+1. [Craig, Nat Rev Neurosci (2009)](https://pubmed.ncbi.nlm.nih.gov/12030437/) — interoception and insula`,
   },
   {
     slug: 'metabolism',
@@ -342,9 +326,7 @@ Practices include:
 
 Level 1 practices help shift the metabolic balance from chronic catabolic stress toward dynamic equilibrium. When metabolism is balanced, the nervous system has the energy resources needed for higher-order functions like emotional regulation and focused attention.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'metabolic-flexibility',
@@ -550,9 +532,7 @@ ONDA Life works bottom-up: we stabilize the brainstem before engaging the limbic
 
 The brain rewires itself based on repeated experience. Every ONDA practice is designed to strengthen specific neural pathways through deliberate, structured repetition.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'mind',
@@ -584,9 +564,7 @@ In ONDA Life, the **mind** is distinguished from the brain. The brain is hardwar
 
 The ultimate goal of ONDA is to develop the "observer" — the aspect of mind that can witness its own processes without being captured by them.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'insular-cortex',
@@ -617,9 +595,7 @@ The **insular cortex** (or insula) is a region of the cerebral cortex folded dee
 
 The insula is the key target of Level 1 practices. By training interoceptive accuracy, you strengthen the insula's ability to provide clear, reliable signals about your internal state — the foundation of all self-regulation.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'vagus-nerve',
@@ -662,12 +638,8 @@ ONDA Level 1 aims to establish a stable ventral vagal state — the biological f
 ---
 
 ## References
-
-1. [Berthoud & Neuhuber, Physiol Rev (2000)](https://pubmed.ncbi.nlm.nih.gov/10696521/) — vagal anatomy and function
-2. [Tracey, Nature (2002)](https://pubmed.ncbi.nlm.nih.gov/11967552/) — cholinergic anti-inflammatory pathway
-3. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — HRV as vagal tone marker
-4. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — Polyvagal Theory
-`,
+1. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — HRV as vagal tone marker
+2. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — Polyvagal Theory`,
   },
   {
     slug: 'mammalian-dive-reflex',
@@ -712,9 +684,7 @@ The **thalamus** is a paired structure in the center of the brain that acts as t
 
 Level 1 practices include "thalamic calibration" — training the thalamus to filter out redundant stimuli and reduce the load on the nervous system. When the thalamus is overwhelmed (chronic stress, sensory overload), the system operates in deficit mode.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'proto-consciousness',
@@ -737,9 +707,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 The main objective of Part 1 ("I Am") is the activation of proto-consciousness and the creation of an unconditional sense of safety. This is the "biological zero" — the foundation from which all higher consciousness emerges.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'physiological-rhythms',
@@ -765,9 +733,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 1 activates proto-consciousness "through contact with physiological rhythms." Practices bring attention to breath, heartbeat, and gut sensations — aligning awareness with the body's natural tempo rather than overriding it.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'hypothalamus',
@@ -791,12 +757,7 @@ The **hypothalamus** is a small region at the base of the brain that acts as the
 
 Level 1 "Homeostatic Alignment" works directly with the hypothalamus to establish internal equilibrium. When the hypothalamus is chronically activated (stress), the entire system operates in survival mode.
 
----
-
-## References
-
-1. [Saper & Lowell, Cell (2014)](https://pubmed.ncbi.nlm.nih.gov/24679536/) — hypothalamus and homeostasis
-`,
+---`,
   },
   {
     slug: 'psychoneuroimmunology',
@@ -817,11 +778,7 @@ Level 1 "Homeostatic Alignment" works directly with the hypothalamus to establis
 
 ## In ONDA Life
 
-Level 1 "Sensory Filtering & PNI" leverages neuroplasticity to strengthen the link between mental states and immune responses. Calming the nervous system through interoceptive practices has measurable effects on immune function.
-
-## Scientific Basis
-Built on: [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Level 1 "Sensory Filtering & PNI" leverages neuroplasticity to strengthen the link between mental states and immune responses. Calming the nervous system through interoceptive practices has measurable effects on immune function.`,
   },
   {
     slug: 'diaphragm',
@@ -847,10 +804,8 @@ The **diaphragm** is the main muscle of respiration — a dome-shaped sheet that
 ---
 
 ## References
-
 1. [Lehrer et al., Appl Psychophysiol Biofeedback (2000)](https://pubmed.ncbi.nlm.nih.gov/19246382/) — diaphragmatic breathing and HRV
-2. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — vagal tone and respiration
-`,
+2. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — vagal tone and respiration`,
   },
   {
     slug: 'parasympathetic-nervous-system',
@@ -875,8 +830,7 @@ The **parasympathetic nervous system** (PNS) is one of two branches of the auton
 Level 1 practices aim to activate the parasympathetic system through diaphragmatic breathing, extended exhales, and interoceptive awareness. The vagus nerve is the primary channel of parasympathetic influence.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/19463818/) (Thayer & Lane).
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/19463818/) (Thayer & Lane).`,
   },
   {
     slug: 'sympathetic-nervous-system',
@@ -901,8 +855,7 @@ The **sympathetic nervous system** (SNS) is the "fight or flight" branch of the 
 Chronic sympathetic activation (stress) keeps the body in deficit mode. Level 1 practices help restore balance by activating the parasympathetic system, allowing the sympathetic branch to return to baseline when not needed.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'insula',
@@ -926,8 +879,7 @@ The **insula** (or insular cortex) is a region of the cerebral cortex folded dee
 The terms "insula" and "insular cortex" refer to the same structure. The insula is the primary target of Level 1 interoceptive practices.
 
 ## Scientific Basis
-Built on: [Interoception & insula](https://pubmed.ncbi.nlm.nih.gov/12030437/) (Craig); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Interoception & insula](https://pubmed.ncbi.nlm.nih.gov/12030437/) (Craig).`,
   },
   {
     slug: 'cortisol',
@@ -958,12 +910,7 @@ Built on: [Interoception & insula](https://pubmed.ncbi.nlm.nih.gov/12030437/) (C
 
 One marker of Part 1 progress is "reduced levels of basal cortisol." Level 1 practices activate the parasympathetic system, which downregulates the HPA axis and allows cortisol to return to healthy baseline levels.
 
----
-
-## References
-
-1. [Sapolsky, Arch Intern Med (2004)](https://pubmed.ncbi.nlm.nih.gov/15557597/) — stress and cortisol
-`,
+---`,
   },
   {
     slug: 'peristalsis',
@@ -984,8 +931,7 @@ Under sympathetic activation (stress), peristalsis slows or stops — the body p
 "Restoration of rhythmic peristalsis" is a biological marker of Part 1 completion. When the parasympathetic system is activated and cortisol drops, the gut can return to its natural rhythmic movement — a sign that the body perceives safety.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/19463818/) (Thayer & Lane).
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/19463818/) (Thayer & Lane).`,
   },
   {
     slug: 'heart-rate-variability',
@@ -1011,10 +957,8 @@ Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") pr
 ---
 
 ## References
-
 1. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — HRV as vagal tone marker
-2. [Lehrer et al., Appl Psychophysiol Biofeedback (2000)](https://pubmed.ncbi.nlm.nih.gov/19246382/) — resonance breathing and HRV
-`,
+2. [Lehrer et al., Appl Psychophysiol Biofeedback (2000)](https://pubmed.ncbi.nlm.nih.gov/19246382/) — resonance breathing and HRV`,
   },
   {
     slug: 'central-pattern-generators',
@@ -1035,8 +979,7 @@ CPGs are "half-center" networks — mutually inhibiting neuron groups that alter
 Part 2 ("I Move") activates CPGs to create natural, effortless locomotion. Movement becomes "as effortless as swimming" — the body's built-in motor programs take over, reducing conscious effort and enabling fluid navigation through space.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'vestibulo-ocular-reflex',
@@ -1060,8 +1003,7 @@ The **Vestibulo-Ocular Reflex** (VOR) is a reflex that stabilizes visual images 
 Part 2 trains VOR as part of "stabilizing gaze while the head is in motion." This is the foundation for visual navigation and the feeling of stability within the flow — essential for moving through space with confidence.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'vestibular-system',
@@ -1084,8 +1026,7 @@ The **vestibular system** is the sensory system in the inner ear that provides t
 Part 2 targets the vestibular system as "the primary gyroscope for orientation within the flow." A well-calibrated vestibular system enables intuitive navigation — you sense where you are in space without conscious calculation.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'cerebellum',
@@ -1109,8 +1050,7 @@ The **cerebellum** ("little brain") is a structure at the back of the brain that
 Part 2 works with "spinal neural circuits and cerebellum" as "centers for rhythmic movement; modulating smoothness and eliminating noise." The cerebellum learns to produce fluid, efficient movement with minimal effort.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'fascia',
@@ -1134,8 +1074,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 Part 2 "Intermuscular Coordination" trains "transferring force through fascial chains, allowing the whole body to move as a single vector." Improved fascial gliding and synovial joint lubrication are markers of Part 2 progress.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'neurophysiology',
@@ -1159,8 +1098,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 ONDA practices are grounded in neurophysiology. Part 3 works with "the deepest, automated processes" — brainstem, reticular formation, sensorimotor cortex — from a neurophysiological perspective. Each protocol targets specific neural structures with measurable outcomes.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'reticular-formation',
@@ -1184,8 +1122,7 @@ The **reticular formation** is a diffuse network of neurons in the brainstem tha
 Part 3 aims to "tune the brainstem and reticular formation." A well-regulated reticular formation supports the rapid switching between "relaxation/fluidity" and "tone/stability" — essential for adaptive movement and gravity mastery.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'sensorimotor-cortex',
@@ -1209,8 +1146,7 @@ The **sensorimotor cortex** refers to the brain regions that integrate sensory i
 Part 3 activates "the primary sensorimotor cortex" as part of gravity mastery. Training this region improves the brain-muscle-brain feedback loop — the foundation for efficient movement and the elimination of parasitic tension.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'locomotion',
@@ -1234,8 +1170,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 Parts 2 and 3 work with "spinal pattern generators for natural locomotion." The goal is to transform movement from effortful "pushing" to effortless "flow" — the body navigating space using inertia, rhythm, and the natural curves of the spine.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'body-armor',
@@ -1265,8 +1200,7 @@ The concept is central to Western body-oriented psychotherapy (Bioenergetics, So
 Part 3 ("I Adapt") targets "reduction of muscular tension (the \u2018body armor\u2019)." As you master gravity and develop interoceptive efficiency, chronic holding patterns release. The body transitions from defensive rigidity to responsive fluidity.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'polyvagal-theory',
@@ -1297,9 +1231,7 @@ Part 4 trains the nervous system to transition smoothly between Ventral Vagus (s
 ---
 
 ## References
-
-1. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — Polyvagal Theory
-`,
+1. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — Polyvagal Theory`,
   },
   {
     slug: 'neuroception',
@@ -1329,9 +1261,7 @@ Part 4 trains "the chain: Reticular Formation → Thalamus → Motor Cortex" so 
 ---
 
 ## References
-
-1. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — neuroception and Polyvagal Theory
-`,
+1. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — neuroception and Polyvagal Theory`,
   },
   {
     slug: 'neuroplasticity',
@@ -1355,8 +1285,7 @@ Part 4 trains "the chain: Reticular Formation → Thalamus → Motor Cortex" so 
 ONDA practices leverage neuroplasticity at every level. Level 1 interoceptive calibration rewires the brainstem-insula connection. Level 3 cognitive protocols strengthen prefrontal circuits. The entire system is designed to systematically update your "firmware" through repeated, structured practice.
 
 ## Scientific Basis
-Built on: [Neuroplasticity research](https://pubmed.ncbi.nlm.nih.gov/17329479/) (Doidge et al.); [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen).
-`,
+[Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'bdnf',
@@ -1427,8 +1356,7 @@ Chronically elevated cortisol is damaging. But in acute, controlled doses, corti
 Part 4 "Neuroendocrinology" directly impacts the HPA axis. We teach the body to control cortisol and adrenaline release, turning them "from poison into fuel for precision."
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'proprioception',
@@ -1453,8 +1381,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 Part 4 develops proprioception as "a sense of trajectory and the boundaries of one's \u2018safety bubble.\u2019" Combined with vestibular precision and diffuse perception, it enables maneuverability — feeling the trajectory and flowing through it.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'lymphatic-system',
@@ -1482,8 +1409,7 @@ Muscle tone and movement act as a natural pump for lymph. Sedentary states and c
 Part 4 "Lymphology" uses muscle tone as a natural pump to clear the body of stress metabolic byproducts, ensuring physical freshness even under high-load conditions.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'motor-cortex',
@@ -1505,9 +1431,7 @@ The **motor cortex** is the region of the cerebral cortex responsible for planni
 
 Part 4 trains the chain "Reticular Formation → Thalamus → Motor Cortex" — enabling reactions "before the thought." The motor cortex executes maneuverability; when fed by rapid neuroception, it produces precise, adaptive responses without slow cognitive filtering.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'neurobiology',
@@ -1531,9 +1455,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 4 "Neurobiology and Neuroception" trains the chain Reticular Formation → Thalamus → Motor Cortex. Understanding neurobiology allows us to target specific circuits — turning scientific knowledge into precise, measurable practices.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'cognitive-system',
@@ -1560,9 +1482,7 @@ Cognitive processing operates on the order of hundreds of milliseconds. Sensory-
 
 Part 4 bypasses "slow cognitive filters" for maneuverability. Emotional navigation becomes a sensory process, not a cognitive calculation. The cognitive system remains available for reflection — but doesn't bottleneck action.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'neuroendocrinology',
@@ -1584,9 +1504,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 4 "Neuroendocrinology" directly impacts the HPA axis. We teach the body to control cortisol and adrenaline release — turning stress hormones from "poison" (chronic elevation) into "fuel for precision" (acute, regulated mobilization).
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'pituitary',
@@ -1610,9 +1528,7 @@ The **pituitary gland** is a small gland at the base of the brain, often called 
 
 Hypothalamus → CRH → Pituitary → ACTH → Adrenal → Cortisol. The pituitary is the middle link in the stress response chain.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'adrenal',
@@ -1639,9 +1555,7 @@ The **adrenal glands** are two small glands located above each kidney. Each has 
 
 Part 4 teaches the body to control adrenal output. Instead of chronic cortisol and adrenaline release (stress), we develop the ability to mobilize acutely when needed — and return to baseline quickly.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'adrenaline',
@@ -1665,9 +1579,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Chronically elevated adrenaline contributes to anxiety and burnout. But in acute, controlled doses, it sharpens focus and provides energy for precision. Part 4 aims to use adrenaline as "fuel for precision" rather than a trigger for panic.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'lymphology',
@@ -1690,9 +1602,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 4 "Lymphology" uses muscle tone as a natural pump to clear the body of stress metabolic byproducts. Rhythmic movement and optimal muscle tone ensure lymphatic flow — physical freshness even under high-load conditions.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'dhea',
@@ -1715,9 +1625,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Chronic stress shifts adrenal output from DHEA toward cortisol. Part 5 aims to reverse this — the adrenals switch from "emergency cortisol release" to DHEA production, supporting the "winner's state" of calm dominance.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'testosterone',
@@ -1740,9 +1648,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 5 engages the Pituitary-Gonadal axis for "moderate testosterone stimulation" — the "winner's state." The feedback loop: Hypothalamus activation → Increased testosterone → Decreased cortisol = calm dominance without aggression.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'thymus',
@@ -1764,9 +1670,7 @@ The **thymus** is a gland located behind the breastbone that plays a key role in
 
 Part 5 aims to "restore the link between the sense of social safety and a powerful immune response" through the thymus. When the nervous system perceives safety (ventral vagal state), immune function can operate optimally.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'basal-ganglia',
@@ -1789,9 +1693,7 @@ The **basal ganglia** are a group of nuclei deep in the brain that control volun
 
 Part 5 engages the basal ganglia for "formation of stable, \u2018unshakeable\u2019 postures." Combined with deep postural muscles, this creates an internal framework of strength — the body as territory, occupied with calm dominance.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'endocrine-system',
@@ -1817,9 +1719,7 @@ The **endocrine system** is a network of glands that produce and secrete hormone
 
 Part 5 "Endocrine System (Dominance Hormonal Circuit)" reconfigures the body through hormonal balance: adrenals shift from cortisol to DHEA, pituitary-gonadal axis supports the "winner's state," thymus links safety with immune strength.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'gonads',
@@ -1841,9 +1741,7 @@ The **gonads** are the primary reproductive glands: the **testes** in men and **
 
 The hypothalamus and pituitary regulate gonadal function through gonadotropins (LH, FSH). Part 5 engages this axis for "moderate testosterone stimulation" — the hormonal basis of calm dominance.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'autonomic-nervous-system',
@@ -1870,9 +1768,7 @@ Stephen Porges' Polyvagal Theory further divides the parasympathetic into ventra
 
 Part 5 activates the Ventral Vagus for "calm alertness" — the heart beats powerfully and steadily, the brain is ready for effective dominance rather than panic.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'ventral-vagus',
@@ -1895,9 +1791,7 @@ The **ventral vagal** (or ventral vagus) is the myelinated branch of the vagus n
 
 Part 5 "Smart Parasympathetic" activates the Ventral Vagus. This is a state of "calm alertness" — ready for effective dominance rather than panic. The heart beats powerfully and steadily; the brain is primed for presence.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'quantum-biology',
@@ -1919,9 +1813,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 5 "Quantum Biology (Coherence)" works on the "density of presence." From a biophotonics perspective, this is high coherence in the electromagnetic field of cells. Your presence becomes palpable to others on a physical level.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'coherence',
@@ -1943,9 +1835,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 5 works on "the density of presence" through "high coherence in the electromagnetic field of the cells." Coherent presence is palpable — others register your stability before you speak.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'biophotonics',
@@ -1967,9 +1857,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 5 "Quantum Biology (Coherence)" references biophotonics: "high coherence in the electromagnetic field of the cells" makes your presence palpable. The body's coherent state may be detectable by others at a subtle level.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'limbic-system',
@@ -2000,9 +1888,7 @@ The **limbic system** is a network of brain structures involved in emotion, memo
 
 Part 5 "Limbic Influence" describes how others register your stability and limbic confidence before you speak. A well-regulated limbic system broadcasts calm dominance — others sense it through limbic-to-limbic communication.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'mirror-neurons',
@@ -2025,9 +1911,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 6 trains the "Mirror Neuron System (Premotor Cortex)" — your "biological Wi-Fi." We develop the ability to instantaneously read the intentions and states of others through micro-expressions and gestures, turning intuition into a precise navigational tool.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'oxytocin',
@@ -2052,9 +1936,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 6 "Oxytocin Profile" works with the hormone of trust and belonging. The goal is to train the system to produce oxytocin in response to safe social contact — which automatically lowers baseline anxiety and aggression, enabling social engagement without fear.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'anterior-cingulate-cortex',
@@ -2077,9 +1959,7 @@ The **anterior cingulate cortex** (ACC) is a region of the cingulate cortex that
 
 Part 6 trains the ACC as the "detector for social errors and signals." We learn "emotional osmosis" — the exchange of states with others — while maintaining autonomy and avoiding being pulled into someone else's chaos.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'emotional-osmosis',
@@ -2106,9 +1986,7 @@ Emotional osmosis can pull us into someone else's chaos — we lose our "coheren
 
 Part 6 trains "emotional osmosis" through the Anterior Cingulate Cortex. We learn to exchange states with others — feeling the "pack," influencing it — while avoiding being pulled into chaos. Your presence becomes the "glue" that unites the group.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'social-sensing',
@@ -2136,9 +2014,7 @@ Social sensing involves the mirror neuron system, anterior cingulate cortex, and
 
 Part 6 trains "Social Sensing" through the Anterior Cingulate Cortex — the detector for social errors and signals. We develop the ability to read and broadcast signals of safety and status through the subtlest movements, turning social intuition into a precise navigational tool.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'norepinephrine',
@@ -2161,9 +2037,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 7 "Neural Clarity (Norepinephrine)" utilizes norepinephrine modulation to enhance alertness and inhibitory control over impulsive reactions. Metacognitive monitoring trains the medial PFC to separate objective facts from subjective interpretations.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'prefrontal-cortex',
@@ -2186,9 +2060,7 @@ The **prefrontal cortex** (PFC) is the front part of the frontal lobe, responsib
 
 Part 7 activates the PFC as the "command center for attention and executive functions." We strengthen the link between PFC and Anterior Cingulate Cortex for instantaneous detection of inconsistencies — the foundation of discernment.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'dorsolateral-prefrontal-cortex',
@@ -2211,9 +2083,7 @@ The **dorsolateral prefrontal cortex** (dlPFC) is the upper outer region of the 
 
 Part 7 targets the dlPFC for "cognitive clarity and focus retention." A well-tuned dlPFC creates the "cognitive gap" between stimulus and reaction — the space for discernment rather than reflexive response.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'visual-cortex',
@@ -2237,9 +2107,7 @@ The **visual cortex** is the region of the occipital lobe that processes visual 
 
 Part 7 "Sensorimotor Integration" develops deep processing of contours, shapes, and movement vectors through the visual cortex (V1–V5). We train the ability to isolate key signals from a dense flow of external stimuli.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'biofeedback',
@@ -2262,9 +2130,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Biofeedback principles underlie many ONDA practices. Connecting a fitness tracker or smartwatch provides real-time vitals during practice. Part 7 biomarkers (P300, saccadic stability, theta/alpha states) can be measured and trained through biofeedback approaches.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'p300',
@@ -2287,9 +2153,7 @@ The **P300** (or P3) is an event-related potential (ERP) — an electrical respo
 
 Part 7 lists "P300 Amplitude Increase" as a progress biomarker — indicating how quickly and efficiently the brain recognizes a significant stimulus. Higher P300 amplitude suggests improved signal-to-noise optimization and cognitive clarity.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'saccades',
@@ -2312,9 +2176,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 7 "Saccadic Stability" refers to the precision and controllability of eye micro-movements when scanning space. Training saccadic stability supports perceptual clarity and reduces cognitive load when processing visual information.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'theta-state',
@@ -2337,9 +2199,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to ground the mind." Theta supports the transition from reactive thinking to observational presence — the cognitive gap that enables discernment.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'alpha-state',
@@ -2362,9 +2222,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 7 "Perceptual Stabilization" involves "entering a Theta/Alpha state to ground the mind." Alpha supports relaxed alertness — the optimal state for cognitive clarity and signal-to-noise optimization.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'cognitive-gap',
@@ -2392,9 +2250,7 @@ The gap is built through:
 
 Part 7 ("I Distinguish") aims to create a cognitive gap between stimulus and reaction. Discernment — the ability to see clearly and choose consciously — is the first step toward true mental autonomy. The gap is where freedom of choice is born.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'default-mode-network',
@@ -2421,9 +2277,7 @@ When we engage in focused, goal-directed tasks, the DMN is typically deactivated
 
 Part 8 trains the brain to "timely deactivate the Default Mode Network (DMN) — the \u2018mind-wandering mode\u2019 — for deep immersion in the task." This enables sustained, voluntary attention.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'dorsal-attention-network',
@@ -2449,9 +2303,7 @@ The DAN directs attention to task-relevant stimuli and suppresses irrelevant one
 
 Part 8 activates the "network of voluntary, directed attention." Training the DAN enables the shift from reactive attention (chaotic) to voluntary attention (controlled) — the heart of "I Focus."
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'acetylcholine',
@@ -2474,9 +2326,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 8 "Gamma Binding and Cholinergic Modulation" works with acetylcholine, which "literally \u2018highlights\u2019 the necessary neural connections." This supports the assembly of scattered perceptual elements into a single, cohesive image during deep focus.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'locus-coeruleus',
@@ -2499,9 +2349,7 @@ The **locus coeruleus** is a small nucleus in the brainstem that is the primary 
 
 Part 8 "Locus Coeruleus" regulates alertness levels through norepinephrine. The ACC monitors distractions and detects errors. Optimal locus coeruleus function supports sustained focus without burnout.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'dopamine',
@@ -2525,9 +2373,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 8 "Dopamine Calibration" utilizes micro-rewards to maintain high motivation and working memory capacity. This prevents cognitive burnout and supports "Deep Work" mode — sustained focus without excessive strain.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'ventral-tegmental-area',
@@ -2593,9 +2439,7 @@ Part 8 works with the Nucleus Accumbens through intermittent rewards and high-yi
 
 Part 8 "Ultradian Optimization" works within natural rhythms (90/20-minute cycles) for the timely restoration of neurotransmitters. Working against these rhythms leads to cognitive burnout; working with them supports neural resilience.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'gamma-binding',
@@ -2618,9 +2462,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 8 "Gamma Binding and Cholinergic Modulation" synchronizes neurons at gamma frequency to assemble scattered elements of perception into a single, cohesive image. Combined with acetylcholine, this supports deep focus and unified perceptual experience.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'cholinergic-modulation',
@@ -2643,9 +2485,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 8 works with acetylcholine, which "literally \u2018highlights\u2019 the necessary neural connections." Cholinergic modulation supports the assembly of scattered perceptual elements into a single, cohesive image during deep focus.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'neurotransmitters',
@@ -2671,9 +2511,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Sustained focus depletes neurotransmitters. Ultradian rhythms (90/20-minute cycles) allow timely restoration. Working against these cycles leads to cognitive burnout.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'beta-rhythm',
@@ -2696,9 +2534,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 8 lists "increased beta-rhythm power in the frontal lobes" as a biological marker of progress. It indicates improved neural resilience — the brain's ability to sustain focus and maintain cognitive control.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'frontal-lobes',
@@ -2724,9 +2560,7 @@ The frontal lobes enable us to set goals, resist impulses, and maintain focus. T
 
 Part 8 targets the frontal lobes for "Deep Work" mode. Increased beta-rhythm power in the frontal lobes, along with dlPFC stabilization, supports sustained focus and neural resilience.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'hippocampus',
@@ -2749,9 +2583,7 @@ The **hippocampus** is a structure in the medial temporal lobe critical for memo
 
 Part 9 links the hippocampus and medial PFC for "mental modeling" — playing out future scenarios. The hippocampus reconstructs past experiences to model new possibilities, enabling imagination as a tool for behavioral engineering.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'predictive-coding',
@@ -2774,9 +2606,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 9 aims to create a "precise Predictive Coding model of reality." Mental simulation and visualization train the brain to generate accurate predictions — enabling proactive mastery and "pre-writing" events at the neural level.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'posterior-parietal-cortex',
@@ -2799,9 +2629,7 @@ The **posterior parietal cortex** (PPC) is a region of the parietal lobe that in
 
 Part 9 engages the PPC for "assembling spatial maps and placing the image within the environmental context." It synchronizes the mental sketch with the body's physiological response — the vision becomes grounded in space.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'reticular-activating-system',
@@ -2824,9 +2652,7 @@ The **Reticular Activating System** (RAS) is a diffuse network in the brainstem 
 
 Part 9 "Proactive Programming (RAS)" tunes the Reticular Activating System to automatically search for opportunities that match the internal vision. The brain begins to notice what aligns with your mental model — turning imagination into a program for reality.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'galvanic-skin-response',
@@ -2849,9 +2675,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 9 "Biological Belief" references changes in GSR as an indicator that the body "believes" in the created image as if it were real. When mental simulation is vivid enough, the autonomic system responds — the vision becomes physiologically real.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'flow-state',
@@ -2874,9 +2698,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 9 lists "Flow State: Predominance of Alpha and Theta rhythms, characteristic of creative flow and insight" as a result. When imagination becomes a precise program and the brain acts as an efficient executor, flow emerges — the vision and action unite.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'hormones',
@@ -2899,9 +2721,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 9 "Biochemical Resonance" trains the hypothalamus to generate the "victory state" through hormonal release — even before real action begins. The mental image triggers the same chemical response as actual success.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'occipital-cortex',
@@ -2924,9 +2744,7 @@ The **occipital cortex** is the visual processing center at the back of the brai
 
 Part 9 engages the occipital cortex for "visualizing and rendering images in the absence of external stimuli" — mental imagery activates the same regions as real vision, creating a tangible internal experience.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'gamma-synchronization',
@@ -2949,9 +2767,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 9 describes "instantaneous unification of neural ensembles for a 'flash' of understanding and image integrity." Gamma synchronization enables the mental image to cohere — the vision becomes a single, vivid whole.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'medial-prefrontal-cortex',
@@ -2974,9 +2790,7 @@ The **medial prefrontal cortex** (mPFC) is the midline region of the prefrontal 
 
 Part 9 "Mental Modeling" links the hippocampus and medial PFC to "play out future scenarios." The mPFC evaluates and directs the creative process — it is the conductor of the internal "rendering" of reality.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'proactive-programming',
@@ -2999,9 +2813,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 9 lists "Proactive Programming (RAS)" as a Biological Protocol item. The vision becomes a program; the brain acts as an efficient executor, finding the shortest paths to the goal by automatically detecting relevant signals in the environment.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'neural-reframing',
@@ -3024,9 +2836,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 9 "Neural Reframing" uses cognitive metaphors to alter synaptic connections. Imagination is not idle — it is a biological tool for behavioral engineering. New frames create new neural patterns.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'synaptic-connections',
@@ -3049,9 +2859,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 9 "Neural Reframing" aims to alter synaptic connections through cognitive metaphors. Mental simulation and visualization create new firing patterns — imagination literally rewires the brain at the synaptic level.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'brocas-area',
@@ -3073,9 +2881,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 10 engages Broca's area as one of the "centers for assembling and delivering speech structures." Together with Wernicke's area and the Ventral Vagus, it enables sovereign expression — clear, authentic self-expression supported by calm social engagement.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'wernickes-area',
@@ -3097,9 +2903,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 10 lists Wernicke's area as part of the "centers for assembling and delivering speech structures." Effective expression requires both production (Broca's) and comprehension (Wernicke's) — you must understand before you speak, and monitor your own output in real time.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'amygdala',
@@ -3123,9 +2927,7 @@ The **amygdala** is an almond-shaped structure in the temporal lobe, part of the
 
 Part 10 aims to "reduce amygdala reactivity to suppress paralyzing social fear." Cognitive Reappraisal is a prefrontal technique that physiologically dampens amygdala activity — replacing fear with excitement. The goal is to exit "social paralysis" and enter sovereign expression.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'thyroid-gland',
@@ -3148,9 +2950,7 @@ The **thyroid gland** is located in the neck and produces hormones (T3, T4) that
 
 Part 10 describes the Thyroid as "the driver of metabolic tempo and the energy of manifestation." Optimal thyroid function supports the physical energy needed for vocal projection, presence, and sustained social engagement.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'cognitive-reappraisal',
@@ -3173,9 +2973,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 10 lists "Cognitive Reappraisal" as a Biological Protocol item. It is a prefrontal control technique that physiologically dampens amygdala activity, replacing social fear with excitement. You no longer fear being noticed — you use attention as fuel.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'theory-of-mind',
@@ -3198,9 +2996,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 11 "Cognitive Flexibility (ToM)" trains the ability to "walk in someone else's shoes." The mPFC is the center for understanding the "Self" of another. Theory of Mind is the foundation for instantaneous empathy and nutritious interaction.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'orbitofrontal-cortex',
@@ -3223,9 +3019,7 @@ The **orbitofrontal cortex** (OFC) is the ventral part of the prefrontal cortex,
 
 Part 11 pairs the Orbitofrontal Cortex with the Ventral Vagus to ensure "social harmony and ethical choices in the moment." The OFC helps prevent interaction from turning into conflict or manipulation.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'right-temporoparietal-junction',
@@ -3248,9 +3042,7 @@ The **right temporoparietal junction** (rTPJ) is a region at the boundary of the
 
 Part 11 describes the rTPJ as "a key node for reading non-verbal signals and managing the 'mental model' of others." Together with the mPFC, it enables the balance between autonomy ("I") and deep connection ("We").
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'vasopressin',
@@ -3273,9 +3065,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 11 references the "Oxytocin-Vasopressin System" as the "biochemical balance between trust and boundary protection." Deep connection (oxytocin) requires healthy boundaries (vasopressin) — preventing either total merging or alienation.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'inter-brain-synchrony',
@@ -3298,9 +3088,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 11 lists "Inter-brain Synchrony" as a target: "the brain rhythms of partners begin to operate in a coherent mode." Biological markers include "synchronization of Heart Rate Variability (HRV) between partners and Alpha-rhythm brain coherence." This is co-resonance at the physiological level.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'interference',
@@ -3316,9 +3104,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 11 describes the transition from self-expression to **interference** — "the moment when two waves overlap, creating a new, complex pattern." In ONDA, this is the tuning of your "neural Wi-Fi." We learn to be with another so that interaction does not turn into conflict or manipulation, but into co-resonance.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'feelings',
@@ -3341,9 +3127,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 10 aims to "synchronize the heart (feelings), the brain (vision), and the throat (the instrument of manifestation)." Feelings are one pole of the triad — they must align with vision and expression for sovereign manifestation.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'emotions',
@@ -3366,9 +3150,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 The ONDA system works with emotions at multiple levels — from limbic regulation (Parts 4–6) to cognitive reappraisal (Part 10) to empathic calibration (Part 11). Emotions are not enemies to suppress but signals to integrate.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'thoughts',
@@ -3391,9 +3173,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Parts 7–9 train the mind to distinguish signal from noise, focus attention, and shape vision through mental simulation. Thoughts become tools rather than masters — you learn to observe and direct them.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'sensations',
@@ -3416,9 +3196,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 1 "Interoceptive Calibration" develops the ability to feel pulsation, pressure, and internal movement. Part 11 "Interoception in Contact" uses sensations to feel one's own and others' boundaries in real-time. Sensations are the bedrock of self-awareness.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'pelvic-diaphragm',
@@ -3441,9 +3219,7 @@ The **pelvic diaphragm** (or pelvic floor) is the muscular layer that forms the 
 
 Part 11 "Resonance Strategy" includes "relaxation of the pelvic diaphragm and the release of deep bodily blocks." Chronic stress blocks both the respiratory diaphragm and the pelvic floor; releasing them supports the shift from "social survival" to "social resonance."
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'joint-attention',
@@ -3466,9 +3242,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 12 "DMN Inhibition and Joint Attention" shifts from protecting personal boundaries to realizing a common goal. Joint Attention forms "a single focus as the group's center of synergy" — the foundation for collective co-creation and We-Consciousness.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'endorphins',
@@ -3491,9 +3265,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 12 pairs the "Endorphin-Oxytocin Systems" as the "hormonal glue" of collective cohesion. Celebrating collective victories (Dopaminergic Reinforcement) and synchronized group activities trigger endorphin release — reinforcing cooperative behavior and We-Consciousness.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'neural-coupling',
@@ -3516,9 +3288,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 12 "Neural Coupling" practices synchronize attention and breathing rhythms to enter a shared neural field. This is the foundation for collective co-creation — the transition from "I" to "WE" without loss of individuality.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'synchronization',
@@ -3541,9 +3311,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 9 engages gamma synchronization for image integrity. Part 11 targets HRV synchronization between partners. Part 12 uses "Intentional Synchronization" for seamless joint task execution. Synchronization is the biological substrate of coordination and collective flow.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'oxytocin-system',
@@ -3566,9 +3334,7 @@ The **oxytocin system** (окситоциновая система) refers to th
 
 Part 9 links the hippocampus and mPFC for mental modeling. Part 10 "Oxytocin Loops" build social trust. Part 11 "Oxytocin Loop Stimulation" shifts into deep cooperation. Part 12 "Oxytocin Resonance" lowers amygdala reactivity within the group through radical trust. The oxytocin system is central to the transition from "I" to "WE."
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'inter-brain-coherence',
@@ -3591,9 +3357,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Part 12 lists "Inter-brain coherence" as a biological marker — alongside group HRV alignment and collective dopamine surges. Together with Gamma Synchronization, it enables collective insight and the instantaneous synthesis of ideas. The group becomes a living neural network.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'circadian-rhythm',
@@ -3616,8 +3380,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Blue Light Block** — Limit blue spectrum light 2–3 hours before sleep to initiate the natural recovery process.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
     slug: 'suprachiasmatic-nucleus',
@@ -3750,8 +3513,7 @@ The **Enteric Nervous System** (ENS) is a complex network of over 100 million ne
 - **Microbiome Support** — Maintaining a healthy microbiome is viewed as a foundation for cognitive performance and emotional stability.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [Psychoneuroimmunology](https://pubmed.ncbi.nlm.nih.gov/6657789/) (Ader & Cohen); [neuroplasticity](https://pubmed.ncbi.nlm.nih.gov/17329479/) research.
-`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
     relatedSlugs: ['vagus-nerve', 'microbiome', 'serotonin'],
   },
   {
@@ -5286,12 +5048,7 @@ In ONDA protocols, we aim to maximize adiponectin levels to fortify the system:
 
 - **Cold Exposure:** Cold stress (ice baths, cryotherapy) is one of the most powerful triggers for adiponectin release. This activates "brown fat" and accelerates metabolic rate.
 - **Visceral Fat Reduction:** Decreasing the volume of internal (visceral) fat automatically removes the inhibition of adiponectin synthesis.
-- **Monounsaturated Fats:** Incorporating olive oil and avocados into the nutritional protocol supports the natural secretion of this optimizer.
-
-## Scientific Basis
-
-Research on adiponectin and metabolic health: [Adiponectin & insulin sensitivity](https://pubmed.ncbi.nlm.nih.gov/12453867/) (Yamauchi et al.); [Adiponectin & AMPK activation](https://pubmed.ncbi.nlm.nih.gov/11976682/) (Fruebis et al.); [Cold exposure & adiponectin](https://pubmed.ncbi.nlm.nih.gov/15489072/).
-`,
+- **Monounsaturated Fats:** Incorporating olive oil and avocados into the nutritional protocol supports the natural secretion of this optimizer.`,
     relatedSlugs: ['insulin-sensitivity', 'allostatic-load', 'metabolic-flexibility'],
   },
   {
@@ -5333,12 +5090,7 @@ In ONDA protocols, we utilize AMPK to "reboot" metabolic efficiency:
 
 - **Intermittent Fasting:** Feeding pauses are the most direct method to raise AMP levels, forcing AMPK to trigger fat burning.
 - **High-Intensity Training (HIIT):** Short bursts of maximum effort rapidly deplete ATP stores, causing a powerful enzymatic response.
-- **Hormetic Stress:** Cold exposure and specific phytonutrients (such as Berberine or Quercetin) mimic an energy-depleted state, activating AMPK without actual starvation.
-
-## Scientific Basis
-
-[AMPK as energy sensor](https://pubmed.ncbi.nlm.nih.gov/11311166/) (Hardie et al.); [AMPK & autophagy](https://pubmed.ncbi.nlm.nih.gov/21205921/) (Kim et al.); [AMPK & mitochondrial biogenesis](https://pubmed.ncbi.nlm.nih.gov/12181338/) (Zong et al.).
-`,
+- **Hormetic Stress:** Cold exposure and specific phytonutrients (such as Berberine or Quercetin) mimic an energy-depleted state, activating AMPK without actual starvation.`,
     relatedSlugs: ['autophagy', 'mitochondria', 'insulin-sensitivity'],
   },
   {
@@ -5386,12 +5138,7 @@ In ONDA protocols, we optimize the ghrelin response by correcting external signa
 - **Sleep Hygiene:** Quality sleep is the primary "patch" for ghrelin. Deep sleep phases naturally suppress excessive hunger prompts.
 - **Protein Anchoring:** Protein suppresses ghrelin more effectively and for longer than carbohydrates, creating a stable window of metabolic rest.
 - **Hydration Patch:** Mechanical stretching of the stomach walls with water can temporarily lower the amplitude of the ghrelin signal, eliminating false hunger cues.
-- **Meal Timing:** Synchronizing meal times trains the system to issue the ghrelin prompt in strictly defined slots, preventing random snacking.
-
-## Scientific Basis
-
-[Ghrelin discovery & hunger signaling](https://pubmed.ncbi.nlm.nih.gov/10604470/) (Kojima et al.); [Sleep deprivation & ghrelin elevation](https://pubmed.ncbi.nlm.nih.gov/15583226/) (Spiegel et al.); [Ghrelin & dopamine reward](https://pubmed.ncbi.nlm.nih.gov/16421571/) (Abizaid et al.).
-`,
+- **Meal Timing:** Synchronizing meal times trains the system to issue the ghrelin prompt in strictly defined slots, preventing random snacking.`,
     relatedSlugs: ['leptin', 'hypothalamus', 'metabolic-flexibility'],
   },
   {
@@ -5438,12 +5185,7 @@ In ONDA protocols, we use biometric data to manage and "pay down" this debt:
 
 - **Recovery Loading:** If the Readiness Score (based on HRV) is low, the system suggests reducing training intensity and increasing sleep duration to prevent load accumulation.
 - **Vagal Tone Activation:** Utilizing breathing techniques and cold therapy to activate the [Vagus Nerve](/glossary/vagus-nerve), which serves as the primary "kill switch" for the allostatic response.
-- **Stress Buffering:** Implementing timely micro-breaks throughout the day to prevent the cumulative effect of stress from reaching a tipping point.
-
-## Scientific Basis
-
-[Allostatic load concept](https://pubmed.ncbi.nlm.nih.gov/8571113/) (McEwen & Stellar); [HRV as allostatic marker](https://pubmed.ncbi.nlm.nih.gov/17173570/) (Thayer et al.); [Chronic stress & neural degradation](https://pubmed.ncbi.nlm.nih.gov/11742410/) (McEwen).
-`,
+- **Stress Buffering:** Implementing timely micro-breaks throughout the day to prevent the cumulative effect of stress from reaching a tipping point.`,
     relatedSlugs: ['cortisol', 'hpa-axis', 'heart-rate-variability'],
   },
   {
@@ -5491,12 +5233,7 @@ In the ONDA app, we utilize dosed stress to expand your adaptive bandwidth:
 - **Cold/Heat Shock:** Ice baths or saunas are classic examples of thermal hormesis that activate metabolic defense layers.
 - **Intermittent Fasting:** Hunger, acting as a hormetic stressor, triggers [Autophagy](/glossary/autophagy) (cellular cleanup).
 - **Hypoxic Training:** Brief breath-holding exercises train the brain's resilience to oxygen deficits and improve vascular health.
-- **Phytohormetins:** Consumption of specific plants (e.g., broccoli or turmeric) that contain low doses of "toxins" which stimulate our own internal antioxidant systems.
-
-## Scientific Basis
-
-[Hormesis concept & dose-response](https://pubmed.ncbi.nlm.nih.gov/12855239/) (Calabrese & Baldwin); [Cold hormesis & metabolic adaptation](https://pubmed.ncbi.nlm.nih.gov/15489072/); [Dietary hormesis & longevity](https://pubmed.ncbi.nlm.nih.gov/17316213/) (Mattson).
-`,
+- **Phytohormetins:** Consumption of specific plants (e.g., broccoli or turmeric) that contain low doses of "toxins" which stimulate our own internal antioxidant systems.`,
     relatedSlugs: ['allostatic-load', 'ampk', 'autophagy'],
   },
   {
@@ -5543,12 +5280,7 @@ We don't just train the body — we offload the Cortex Stack to ensure you have 
 
 - **Automation:** Converting beneficial behaviors into "Background Tasks" (Habit Loops) so they no longer drain the Cortex Stack's resources.
 - **Cognitive Offloading:** Using the ONDA app as external storage for biometric tracking, freeing your brain from manual calculations and monitoring.
-- **Prefrontal Recovery:** Implementing meditation and breathwork protocols to "cool down the processor" and restore executive function.
-
-## Scientific Basis
-
-[PFC & executive control](https://pubmed.ncbi.nlm.nih.gov/15913566/) (Miller & Cohen); [Decision fatigue & glucose depletion](https://pubmed.ncbi.nlm.nih.gov/21993810/) (Hagger et al.); [Meditation & PFC recovery](https://pubmed.ncbi.nlm.nih.gov/16272667/) (Lazar et al.).
-`,
+- **Prefrontal Recovery:** Implementing meditation and breathwork protocols to "cool down the processor" and restore executive function.`,
     relatedSlugs: ['prefrontal-cortex', 'dopamine', 'dorsolateral-prefrontal-cortex'],
   },
   {
