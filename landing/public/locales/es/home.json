@@ -18,42 +18,43 @@
     "languagesLabel": "Idioma"
   },
   "hero": {
-    "badge": "[ INICIALIZANDO SISTEMA ]",
-    "titleLine1": "ONDA LIFE:",
-    "titleLine2": "El sistema operativo",
-    "titleLine3": "de tu consciencia",
-    "subtitle": "Deja de meditar al azar. Empieza a gestionar tu código biológico con actualizaciones sistemáticas. Tu cuerpo es un biocomputador. ONDA Life es el SO.",
-    "ctaDownload": "Descargar ahora",
-    "ctaDownloadAria": "Descargar la app ONDA Life",
+    "badge": "[ ONDA LIFE — el SO de tu sistema nervioso ]",
+    "titleLine1": "Deja de monitorizar tu estrés.",
+    "titleLine2": "Empieza a entrenarlo.",
+    "titleLine3": "",
+    "subtitle": "Tu reloj ya te dice que tu HRV está bajo. ONDA guía tu respiración y te muestra cómo responde tu ritmo cardíaco en tiempo real — para que de verdad calmes tu sistema nervioso, no solo lo midas. Funciona con el Apple Watch, Garmin o la banda de pecho que ya tienes.",
+    "ctaDownload": "Empezar gratis",
+    "ctaDownloadAria": "Empezar gratis con ONDA Life",
+    "ctaMicrocopy": "Sin cuenta. Sin muro de pago. Tu primera lectura en 90 segundos.",
     "ctaLearn": "Saber más",
-    "scrollAria": "Desplazar para descargar"
+    "scrollAria": "Desplazar al producto"
   },
   "concept": {
     "tag": "[ CONCEPTO ]",
     "titlePrefix": "Tu cuerpo es el más complejo",
     "titleHighlight": "computador",
-    "subtitle": "La mayoría usa solo el 10% de su potencial biológico. ONDA Life ofrece un algoritmo paso a paso para actualizar tu firmware — desde el nivel celular hasta la consciencia superior.",
+    "subtitle": "La mayoría de la meditación es aleatoria: una sesión aquí, una app allá, nada conectado. ONDA es un camino estructurado. Empiezas por estabilizar tu sistema nervioso y construyes desde ahí, viendo cómo responde tu HRV mientras practicas. Cada nivel se apoya en el anterior.",
     "cards": [
-      { "title": "Sistemático", "description": "No son meditaciones aleatorias. Un protocolo estructurado basado en biología evolutiva y neurociencia." },
-      { "title": "Progresivo", "description": "Cada nivel se construye sobre el anterior. Desde la consciencia corporal básica hasta la inteligencia social." },
-      { "title": "Medible", "description": "Sigue tu progreso con datos biométricos. HRV, calidad del sueño, niveles de estrés — métricas reales." }
+      { "title": "Sistemático", "description": "No son meditaciones aleatorias. Un protocolo estructurado basado en cómo funciona realmente el sistema nervioso." },
+      { "title": "Progresivo", "description": "Cada nivel se construye sobre el anterior — de estabilizar tu base al enfoque, la regulación emocional y más allá." },
+      { "title": "Medible", "description": "Sigue señales reales — HRV, sueño, estrés — y observa cómo tu tendencia avanza a lo largo de semanas, no una sola cifra matutina." }
     ]
   },
   "levels": {
-    "tag": "[ ARQUITECTURA DEL SISTEMA ]",
-    "titleLeft": "Jerarquía clara.",
-    "titleRight": "Cero caos.",
-    "subtitle": "A diferencia de las apps de meditación fragmentadas, ONDA Life ofrece una progresión estructurada a través de 8 niveles de desarrollo de la consciencia. Cada nivel se construye sobre el anterior.",
+    "tag": "[ EL CAMINO ]",
+    "titleLeft": "Hasta dónde llega:",
+    "titleRight": "8 niveles.",
+    "subtitle": "ONDA no es un solo ejercicio, es una progresión estructurada. Empiezas por calmar tu sistema nervioso y construyes desde ahí. Llega tan hondo como quieras, de estabilizar tu base a los estados más silenciosos de la práctica prolongada.",
     "levelLabel": "Nivel {{n}}",
     "items": [
-      { "name": "CUERPO / TERRA", "description": "Respiración, diafragma y HRV — el fundamento de la activación parasimpática.", "parts": ["1) Yo soy", "2) Yo me muevo", "3) Yo me adapto"] },
-      { "name": "EMOCIONES / AQUA", "description": "Eje HPA, DHEA y neuronas espejo — la arquitectura de la maestría emocional.", "parts": ["4) Yo maniobro", "5) Yo guardo el territorio", "6) Soy parte de la manada"] },
-      { "name": "MENTE / AER", "description": "PFC, noradrenalina y vinculación gamma — el combustible de la claridad cognitiva.", "parts": ["7. Yo distingo", "8. Yo me enfoco", "9. Yo doy forma a la visión"] },
-      { "name": "SOCIEDAD / IGNIS", "description": "Oxitocina, neuronas espejo y vago ventral — el combustible de la resonancia social.", "parts": ["10. Yo expreso", "11. Yo interactúo", "12. Yo co-creo"] },
-      { "name": "CUERPO II / TERRA II", "description": "El cuerpo como conductor. Yo siento → Yo canalizo → Yo sintonizo: fluidez informacional, estados de flujo, fusión neurosomática.", "parts": ["13. Yo siento", "14. Yo canalizo", "15. Yo sintonizo"] },
-      { "name": "CEREBRO / AQUA II", "description": "Soberanía cognitiva e integración neuronal global — la mente como supercomputador de alta precisión. DMN y metacognición, ritmos gamma.", "parts": ["16. Yo observo", "17. Yo integro", "18. Yo sincronizo"] },
-      { "name": "ADN / AER II", "description": "Consciencia del ADN y maestría epigenética — el humano como diseñador biológico. Accede a la biblioteca milenaria del ADN, activa la regeneración celular.", "parts": ["19. Yo recuerdo", "20. Yo restauro", "21. Yo sintetizo"] },
-      { "name": "ATÓMICO / IGNIS II", "description": "Consciencia cuántica y creación de realidad — el humano como Punto Cero.", "parts": ["22. Yo soy vibración", "23. Yo soy plenitud", "24. Yo soy la fuente"] }
+      { "name": "CUERPO / TERRA", "description": "Respiración, diafragma y HRV — el fundamento de la activación parasimpática.", "parts": ["1. Yo soy", "2. Yo me muevo", "3. Yo me adapto"] },
+      { "name": "EMOCIONES / AQUA", "description": "Trabajar con el estrés y la reactividad emocional — respuestas más firmes cuando las cosas se ponen difíciles.", "parts": ["4. Yo maniobro", "5. Yo guardo el territorio", "6. Soy parte de la manada"] },
+      { "name": "MENTE / AER", "description": "Atención y enfoque — entrenar una mente más calmada y clara.", "parts": ["7. Yo distingo", "8. Yo me enfoco", "9. Yo doy forma a la visión"] },
+      { "name": "SOCIEDAD / IGNIS", "description": "Conexión y calma social — mostrarte más firme junto a otras personas.", "parts": ["10. Yo expreso", "11. Yo interactúo", "12. Yo co-creo"] },
+      { "name": "CUERPO II / TERRA II", "description": "Una corporalidad más profunda — pasar de pensar el cuerpo a sentirlo. Flujo y soltura en movimiento.", "parts": ["13. Yo siento", "14. Yo canalizo", "15. Yo sintonizo"] },
+      { "name": "CEREBRO / AQUA II", "description": "Autoconsciencia y metacognición — observar tu propia mente con más claridad.", "parts": ["16. Yo observo", "17. Yo integro", "18. Yo sincronizo"] },
+      { "name": "ADN / AER II", "description": "Donde la práctica deja de ser algo que haces y pasa a ser parte de quien eres. Meses de constancia que se asientan en una base más estable.", "parts": ["19. Yo recuerdo", "20. Yo restauro", "21. Yo sintetizo"] },
+      { "name": "ATÓMICO / IGNIS II", "description": "Los estados profundos y silenciosos que describen los practicantes veteranos — presencia total, el yo aquietándose. Experiencial, no medido. El borde del mapa.", "parts": ["22. Yo soy vibración", "23. Yo soy plenitud", "24. Yo soy la fuente"] }
     ]
   },
   "features": {
@@ -61,10 +62,56 @@
     "titlePrefix": "Bio-sincronización",
     "titleHighlight": "en tiempo real",
     "items": [
-      { "title": "Integración de wearables", "description": "Conecta Apple Watch, Oura Ring, Garmin. Observa cómo tu HRV, sueño y métricas de estrés se transforman en tiempo real.", "iconAlt": "Icono de sincronización de datos biométricos" },
-      { "title": "Progresión gamificada", "description": "Gana tokens OND por cada práctica completada. Convierte tu consciencia en valor real desde el Nivel 3.", "iconAlt": "Icono de progresión gamificada" },
-      { "title": "Sistema estructurado", "description": "Sin meditaciones al azar. Cada práctica es una actualización de firmware para un sistema concreto: respiración, emociones, mente, ADN.", "iconAlt": "Icono de sistema estructurado" }
+      { "title": "Integración de wearables", "description": "Conecta Apple Watch, Oura, Garmin o una banda de pecho. Observa cómo tu HRV, sueño y estrés se mueven en tiempo real.", "iconAlt": "Icono de sincronización de datos biométricos" },
+      { "title": "Progresión gamificada", "description": "Gana OND por prácticas completadas y rachas. Desbloquea temas y protocolos extra a medida que avanzas.", "iconAlt": "Icono de progresión gamificada" },
+      { "title": "Sistema estructurado", "description": "Sin meditaciones al azar. Cada práctica apunta a un sistema concreto: respiración, emociones, mente, recuperación.", "iconAlt": "Icono de sistema estructurado" }
     ]
+  },
+  "bridge": {
+    "tag": "[ EL PROBLEMA ]",
+    "title": "Has probado las apps. Tienes el reloj. Y sigues sin poder desconectar.",
+    "p1": "Las apps de meditación se sienten bien pero son aleatorias — sin feedback, sin forma de saber si algo funciona, así que no se quedan. Los wearables son el problema opuesto: tu anillo te dice que tu HRV se desplomó y tu estrés está alto, y te deja a solas con el «¿y ahora qué hago?».",
+    "p2": "ONDA es la pieza intermedia. Respiración guiada, con feedback en vivo de tu propio corazón — ves la cifra moverse mientras practicas, y tu base sube como tendencia a lo largo de las semanas."
+  },
+  "product": {
+    "tag": "[ EL PRODUCTO ]",
+    "title": "La mayoría de las apps te puntúan después. ONDA te lo muestra durante.",
+    "subtitle": "Ve cómo responde tu cuerpo, en tiempo real. Respira con el guía de ritmo y observa cómo tu ritmo cardíaco se suaviza sobre la marcha — el bucle de feedback en vivo que a la meditación siempre le faltó.",
+    "shots": [
+      { "caption": "Constantes en vivo desde tu reloj — corazón, respiración, estrés, energía.", "alt": "Panel de ONDA con datos en vivo: ritmo cardíaco, frecuencia respiratoria, estrés y energía desde tu reloj" },
+      { "caption": "Protocolos breves y con base científica — de 3 a 12 minutos.", "alt": "Lista de protocolos de respiración de ONDA — Micro-Breath, Still Wave, Warm Pulse y más" },
+      { "caption": "Tu tendencia de HRV — lo que de verdad importa, a lo largo de semanas.", "alt": "Tendencia del HRV en reposo en ONDA a lo largo del tiempo con una racha de práctica" }
+    ]
+  },
+  "how": {
+    "tag": "[ CÓMO FUNCIONA ]",
+    "title": "Tres pasos. Cinco minutos.",
+    "steps": [
+      { "n": "01", "title": "Conecta", "text": "Vincula el Apple Watch, Polar, Garmin o la banda que ya tienes. No hace falta hardware especial." },
+      { "n": "02", "title": "Respira", "text": "Sigue una sesión guiada, de 5 a 30 minutos. ONDA marca el ritmo de tu respiración y lee tu corazón en tiempo real." },
+      { "n": "03", "title": "Míralo moverse", "text": "Ve cómo responde tu ritmo ahora, y cómo tu base de HRV sube como tendencia a lo largo de las semanas que practicas." }
+    ]
+  },
+  "why": {
+    "tag": "[ POR QUÉ ONDA ]",
+    "title": "No es otra app de meditación. No es otro wearable.",
+    "cards": [
+      { "title": "Estructurado, porque es secuencial.", "text": "Una progresión real de 8 niveles donde cada uno se apoya en el anterior — no una baraja de sesiones inconexas. Siempre sabes cuál es el siguiente paso." },
+      { "title": "Entrenar, no solo medir.", "text": "Whoop y Oura te dicen que estás estresado. ONDA te ayuda a hacer algo al respecto." },
+      { "title": "Honesto, sin generar ansiedad.", "text": "Tu tendencia importa más que una cifra matutina. No vamos a gamificar tu pánico." },
+      { "title": "Funciona con lo que ya tienes.", "text": "Cualquier dispositivo de ritmo cardíaco, de un reloj de 1000 $ a una banda de 30 $." }
+    ]
+  },
+  "proof": {
+    "tag": "[ POR QUÉ FIARTE ]",
+    "title": "Confianza, ganada en menos de 90 segundos.",
+    "science": "Basado en respiración de resonancia y biofeedback de HRV — con la investigación en la que se apoya citada, a la vista.",
+    "scienceCta": "Ver la ciencia →",
+    "trust": "Sin cuenta, sin muro de pago, sin email antes de tu primera lectura.",
+    "advisor": "Co-desarrollado con un asesor doctorado en neurociencia.",
+    "ratingPending": "Pronto habrá reseñas en la App Store — preferimos mostrar reseñas reales antes que inventarlas.",
+    "shotCaption": "Cada protocolo explica su mecanismo — dentro de la app.",
+    "shotAlt": "Pantalla de ciencia dentro de ONDA que muestra la biología, el porqué y el efecto de un protocolo de respiración"
   },
   "articles": {
     "tag": "[ ANÁLISIS PROFUNDOS ]",
@@ -74,8 +121,9 @@
     "viewAll": "Ver los {{count}} artículos"
   },
   "cta": {
-    "badge": "[ ¿LISTO PARA ACTUALIZAR? ]",
-    "title": "Inicializa tu sistema",
+    "badge": "[ ¿LISTO? ]",
+    "title": "Empieza con una respiración.",
+    "sub": "Gratis para empezar. Sin cuenta. Tu primera lectura en 90 segundos.",
     "subtitle": "El mundo a tu alrededor se vuelve como te ves a ti mismo por dentro.",
     "appStoreSup": "Descargar en",
     "appStoreLabel": "App Store",
@@ -103,9 +151,9 @@
     "terms": "Términos del servicio"
   },
   "meta": {
-    "title": "ONDA Life | App de biohacking, monitor HRV y SO de la consciencia",
-    "description": "Tu cuerpo es un computador biológico. ONDA Life es el SO que lo actualiza — 8 niveles de desarrollo estructurado de la consciencia, monitorización de HRV y protocolos de optimización neuronal.",
-    "ogImageAlt": "ONDA Life — App de biohacking y SO de la consciencia. Monitorización de HRV y optimización neuronal."
+    "title": "ONDA Life | Entrena tu sistema nervioso con respiración y biofeedback de HRV",
+    "description": "Deja de solo monitorizar el estrés — entrena tu sistema nervioso. ONDA guía tu respiración y muestra la respuesta de tu ritmo cardíaco en tiempo real, en el reloj que ya tienes. Un camino estructurado de 8 niveles.",
+    "ogImageAlt": "ONDA Life — entrena el sistema nervioso con respiración y biofeedback de HRV en tiempo real."
   },
   "notFound": {
     "title": "Página no encontrada | ONDA Life",
