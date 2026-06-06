@@ -47,9 +47,9 @@ export function ProofSection() {
                 src="/images/home/proof.webp"
                 alt={t('proof.shotAlt')}
                 loading="lazy"
-                width="940"
-                height="1960"
-                className="w-full rounded-[1.9rem] shadow-2xl shadow-black/40 ring-1 ring-white/10"
+                width="600"
+                height="1252"
+                className="w-full [filter:drop-shadow(0_0_24px_rgba(45,212,191,0.22))_drop-shadow(0_6px_14px_rgba(0,0,0,0.45))]"
               />
               <figcaption className="mt-4 text-center font-mono text-[11px] leading-relaxed text-white/45">
                 {t('proof.shotCaption')}

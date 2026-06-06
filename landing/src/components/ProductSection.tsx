@@ -13,9 +13,9 @@ function PhoneShot({ n, caption, alt }: { n: number; caption: string; alt: strin
         src={`/images/home/showcase-${n}.webp`}
         alt={alt}
         loading="lazy"
-        width="940"
-        height="1960"
-        className="w-full max-w-[230px] rounded-[1.9rem] shadow-2xl shadow-black/40 ring-1 ring-white/10"
+        width="600"
+        height="1252"
+        className="w-full max-w-[230px] [filter:drop-shadow(0_0_24px_rgba(45,212,191,0.22))_drop-shadow(0_6px_14px_rgba(0,0,0,0.45))]"
       />
       <figcaption className="mt-4 max-w-[230px] text-center font-mono text-[11px] leading-relaxed text-white/45">
         {caption}
