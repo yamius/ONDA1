@@ -64,7 +64,7 @@
         "intro": "Level 2 integrates three resource management strategies:",
         "parts": [
           { "label": "I Maneuver", "protocol": "Protocol: The Maneuverability of the \"Small Mammal\"", "goal": "Objective: Biological flexibility and instantaneous acceleration without paralyzing stress.", "work": "Mechanism: Training neuroception (the brain's ability to detect threats before they are consciously perceived). We teach the system to \"drift\" smoothly between rest and action, turning cortisol and adrenaline from toxins into fuel for precision." },
-          { "label": "I Guard the Territory", "protocol": "Protocol: The Strength of the \"Large Mammal\"", "goal": "Objective: Status calm and density of presence.", "work": "Mechanism: Reconfiguring the endocrine system. We shift the adrenal glands from emergency cortisol release to the production of DHEA (the hormone of vitality). This is a state of \"calm dominance,\" where your stability is sensed by others at a limbic level before you even speak." },
+          { "label": "I Guard the Territory", "protocol": "Protocol: The Strength of the \"Large Mammal\"", "goal": "Objective: Status calm and density of presence.", "work": "Mechanism: Working with the endocrine system — leaning less on emergency cortisol over time and more toward DHEA. This supports a state of \"calm dominance,\" a steadiness others tend to sense before you even speak." },
           { "label": "I'm Part of the Pack", "protocol": "Protocol: Social Resonance", "goal": "Objective: Transforming individual survival into collective power.", "work": "Mechanism: Activating the \"social brain\"—the mirror neuron system and the oxytocin profile. We learn to synchronize our rhythms with the group (co-regulation) while maintaining an autonomous center. Your presence becomes the \"glue\" that unites the field." }
         ]
       },
@@ -72,7 +72,7 @@
         "intro": "The energy management technological stack:",
         "items": [
           { "name": "Polyvagal Theory (Ventral Vagus)", "text": "Utilizing \"smart parasympathetics\" to maintain social engagement even under high loads." },
-          { "name": "HPA Axis Control", "text": "Direct influence on the Hypothalamus-Pituitary-Adrenal chain to manage hormonal response." },
+          { "name": "HPA Axis Regulation", "text": "Working with the Hypothalamus-Pituitary-Adrenal chain that shapes the hormonal stress response." },
           { "name": "Emotional Osmosis", "text": "The skill of exchanging states with others without being absorbed by their chaos." },
           { "name": "Lymphatic Pumping", "text": "Using muscle tone as a pump to clear the body of stress metabolic byproducts." }
         ]
@@ -82,7 +82,7 @@
         "items": [
           { "name": "Hypothalamus", "text": "Control center for territorial behavior and hormonal balance." },
           { "name": "Basal Ganglia", "text": "Formation of stable, \"unshakeable\" postures and dominance habits." },
-          { "name": "Mirror Neurons", "text": "Your biological Wi-Fi for instantaneous reading of others' intentions." },
+          { "name": "Mirror Neurons", "text": "The brain's system for reading others' intentions and states." },
           { "name": "Anterior Cingulate Cortex", "text": "The detector for social signals and emotional accuracy." }
         ]
       },

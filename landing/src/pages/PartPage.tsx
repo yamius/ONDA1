@@ -381,7 +381,7 @@ export const parts: Record<string, {
       items: [
         {
           name: 'Endocrine System (Dominance Hormonal Circuit)',
-          text: 'The adrenal glands shift from emergency cortisol release toward DHEA\u2014associated with vitality and longevity. The Pituitary-Gonadal axis supports a \u201cwinner\u2019s state\u201d through moderate testosterone stimulation. The Thymus supports the link between a sense of social safety and immune function.',
+          text: 'Over time, the stress system tends to lean less on emergency cortisol and more toward DHEA, supporting a grounded \u201cstatus calm\u201d rather than reactivity. The thymus supports the link between feeling socially safe and how the body recovers.',
         },
         {
           name: 'Autonomic Nervous System (Smart Parasympathetic)',
@@ -392,8 +392,8 @@ export const parts: Record<string, {
           text: 'Chronic stress blocks the diaphragm and the pelvic floor. Our practices of \u201cweight\u201d and \u201cvolume\u201d act as deep lymphatic drainage, literally squeezing stress metabolites out of the tissues.',
         },
         {
-          name: 'Quantum Biology (Coherence)',
-          text: 'We work on the \u201cdensity of presence.\u201d From the perspective of biophotonics, this is a state of high coherence in the electromagnetic field of the cells. Your presence becomes palpable to others on a physical level.',
+          name: 'Density of Presence',
+          text: 'We work on steadiness \u2014 the felt sense of being settled. As the nervous system calms, that steadiness tends to come across to others as composure, without you having to perform it.',
         },
       ],
     },
@@ -406,15 +406,15 @@ export const parts: Record<string, {
       ],
     },
     results: {
-      intro: 'Neurobiological Results',
+      intro: 'What people often notice with consistent practice:',
       items: [
-        'The Feedback Loop: Hypothalamus activation \u2192 Increased testosterone \u2192 Decreased cortisol. This yields a state of calm dominance without aggression.',
-        'Neuro-Signaling: You broadcast status through neuromotor signals.',
-        'Limbic Influence: Others register your stability and limbic confidence before you even say your first word.',
+        'A calmer kind of confidence under pressure \u2014 present and steady rather than reactive.',
+        'Posture and presence that tend to read as steady to the people around you.',
+        'Often, others sense that steadiness before you say a word.',
       ],
     },
     outro:
-      'Your body is not just a shell; it is your territory. It is time to occupy it.\n\nCalm dominance is a biological state. It requires no effort when your hormonal profile and vegetative tone are tuned correctly.',
+      'Your body is not just a shell; it is your territory. It is time to occupy it.\n\nCalm dominance is less a performance than a state the body settles into as the nervous system steadies.',
     glossaryLinks: [
       { label: 'Homeostasis', slug: 'homeostasis' },
       { label: 'Endocrine System', slug: 'endocrine-system' },
@@ -460,7 +460,7 @@ export const parts: Record<string, {
       items: [
         {
           name: 'Mirror Neuron System (Premotor Cortex)',
-          text: 'Your biological Wi-Fi. We train the ability to instantaneously read the intentions and states of others through micro-expressions and gestures, turning intuition into a precise navigational tool.',
+          text: 'The brain\'s system for picking up on others. We train the ability to read the intentions and states of others through micro-expressions and gestures, turning intuition into a more reliable navigational sense.',
         },
         {
           name: 'Oxytocin Profile (Hypothalamus)',
@@ -485,11 +485,11 @@ export const parts: Record<string, {
       ],
     },
     results: {
-      intro: 'Neurobiological Results',
+      intro: 'What people often notice with consistent practice:',
       items: [
-        'The Feedback Loop: Mirror Neurons + Ventral Vagus + Oxytocin. The result is social engagement without anxiety.',
-        'Group Dynamics: You gain the ability to feel the \u201cpack,\u201d influence it, and utilize collective resources to achieve goals.',
-        'Social Integration: Your presence becomes the \u201cglue\u201d that unites the group and the \u201cvector\u201d that directs it.',
+        'Social situations that feel less anxious \u2014 more engaged and more at ease.',
+        'A better feel for group dynamics, and more ease working within them.',
+        'Often, a steadying presence that others in the group respond to.',
       ],
     },
     outro:
