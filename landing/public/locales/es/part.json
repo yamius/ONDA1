@@ -25,7 +25,7 @@
         "items": [
           { "name": "Alineación homeostática", "text": "Trabajo con el hipotálamo para establecer equilibrio interno y asegurar la distribución eficiente de los recursos del cuerpo." },
           { "name": "Calibración interoceptiva", "text": "Prácticas para desarrollar la capacidad de sentir pulsación, presión y movimiento de los órganos internos como base del autoconocimiento." },
-          { "name": "Filtrado sensorial y psiconeuroinmunología (PNI)", "text": "Entrenar al tálamo para filtrar estímulos redundantes y reducir la carga del sistema nervioso. Aprovechar la neuroplasticidad para fortalecer el vínculo entre estados mentales y respuestas inmunes a nivel celular." },
+          { "name": "Filtrado sensorial y psiconeuroinmunología (PNI)", "text": "Entrenar al tálamo para filtrar estímulos redundantes y reducir la carga del sistema nervioso. Apoyarse en la neuroplasticidad para sostener el vínculo entre el estado mental y cómo se recupera el cuerpo." },
           { "name": "Liberación diafragmática", "text": "Liberar espasmos del músculo respiratorio principal para liberar el nervio vago y disparar una recuperación parasimpática profunda." }
         ]
       },
@@ -38,11 +38,11 @@
         ]
       },
       "results": {
-        "intro": "El resultado de completar la Parte 1 es el descubrimiento del «punto de quietud». Tus marcadores biológicos de progreso:",
+        "intro": "El objetivo de la Parte 1 es el descubrimiento del «punto de quietud». Lo que la gente suele notar con la práctica constante:",
         "items": [
-          "Aumento de la variabilidad cardíaca (HRV).",
-          "Reducción del cortisol basal (la «hormona del estrés»).",
-          "Restauración de la peristalsis rítmica y respiración profunda y estable."
+          "Un HRV (variabilidad cardíaca) que tiende a subir con el tiempo.",
+          "Una base más calmada — menos estrés de fondo con el tiempo.",
+          "Una peristalsis más pareja y una respiración profunda y estable."
         ]
       },
       "outro": "Estás enseñando a tu sistema nervioso a percibir seguridad y el puro hecho de existir sin condiciones externas. Es el estado desde el cual cualquier movimiento intencional («Yo me muevo») y cualquier transformación («Yo me adapto») se vuelven posibles."
@@ -72,7 +72,7 @@
         ]
       },
       "results": {
-        "intro": "El resultado de completar la Parte 2 es alcanzar la «fluidez neural». Marcadores biológicos de progreso:",
+        "intro": "El objetivo de la Parte 2 es la «fluidez neural». Lo que la gente suele notar con la práctica constante:",
         "items": [
           "Desaparición de los movimientos «bruscos» (microcoordinación).",
           "Mejora del deslizamiento fascial y la lubricación sinovial articular.",
@@ -106,7 +106,7 @@
         ]
       },
       "results": {
-        "intro": "El resultado de completar la Parte 3 es la adaptación profunda del cuerpo al mundo físico. Marcadores biológicos de progreso:",
+        "intro": "El resultado de la Parte 3 es la adaptación profunda del cuerpo al mundo físico. Lo que la gente suele notar con la práctica constante:",
         "items": [
           "Reducción de la tensión muscular (la «armadura corporal»).",
           "Estabilización de los ritmos respiratorios bajo esfuerzo físico.",
@@ -232,7 +232,7 @@
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "Sistemas que intervienen en esta etapa:",
         "items": [
           { "name": "Corteza prefrontal dorsolateral (dlPFC)", "text": "Claridad cognitiva y retención del foco." },
           { "name": "Corteza cingulada anterior (ACC)", "text": "Un «detector de errores» de alta precisión y discriminador de diferencias." },
@@ -457,7 +457,7 @@
         "items": [
           "Empiezas a percibir el cuerpo no como ruido, sino como un flujo de datos de alta precisión.",
           "Es el estado de un «piloto» que siente la mínima vibración del ala del avión.",
-          "Biomarcadores de progreso: aumento de la densidad de materia gris en la ínsula, reducción del tono muscular en reposo, normalización de la respuesta galvánica de la piel (GSR).",
+          "Con el tiempo: una interocepción más fina, menos tensión en reposo y una base autonómica más estable.",
           "Transición del «modo supervivencia» al «modo presencia» total mediante anclas sensoriales."
         ]
       },
@@ -481,7 +481,7 @@
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "Sistemas que intervienen en esta etapa:",
         "items": [
           { "name": "Sistema nervioso periférico", "text": "Conductividad fibras sin «ruido»." },
           { "name": "Cadenas fasciales (tensegridad)", "text": "Tejido conjuntivo como red informativa global del cuerpo." },
@@ -518,7 +518,7 @@
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "Sistemas que intervienen en esta etapa:",
         "items": [
           { "name": "Vías oxitocinérgicas", "text": "Centros del vínculo y reducción del estrés." },
           { "name": "Corteza somatosensorial", "text": "Para mapeo sensorial expandido." },
@@ -554,7 +554,7 @@
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "Sistemas que intervienen en esta etapa:",
         "items": [
           { "name": "PFC dorsolateral", "text": "Un filtro potente que separa señales vitales del ruido informativo." },
           { "name": "Corteza cingulada anterior (ACC)", "text": "Tu monitor interno que avisa: «¡Atención! Acabamos de resbalar de vuelta a la rumiación.»" },
@@ -590,7 +590,7 @@
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "Sistemas que intervienen en esta etapa:",
         "items": [
           { "name": "Cuerpo calloso (horizontal)", "text": "Sincronización inter-hemisférica." },
           { "name": "Vías corteza-subcorteza (vertical)", "text": "Reforzar las conexiones cuerpo-mente." },
@@ -626,7 +626,7 @@
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "Sistemas que intervienen en esta etapa:",
         "items": [
           { "name": "Red de neuronas espejo", "text": "Comprensión preverbal de las intenciones y acciones de los partners." },
           { "name": "Sistema oxitocínico (química del vínculo)", "text": "La neuroquímica de la confianza y la pertenencia dentro del colectivo." },
@@ -646,227 +646,220 @@
     },
     "i-remember": {
       "badge": "[ PARTE 19 — NIVEL 7: ADN / AER II ]",
-      "subtitle": "Protocolo: Consciencia del ADN y memoria evolutiva",
-      "metaDescription": "Parte 19: Modulación epigenética, memoria genética, respiración ancestral. El humano que hereda. Guardián de la memoria antigua. ONDA Life.",
-      "imageAlt": "Consciencia del ADN, memoria evolutiva, ONDA YO RECUERDO.",
-      "imageTitle": "[I_REMEMBER]: Visualización de la biblioteca milenaria del ADN reconocida y activada como recurso consciente.",
-      "intro": "La Parte 19 trata sobre trabajar con el «código heredado» de tu biología. Vamos más allá de la memoria de trabajo (tus pensamientos y planes) y nos sumergimos en la memoria genética y epigenética de generaciones. Tu cuerpo no eres solo «tú»; es un manuscrito editado durante miles de millones de años. Aquí aprendemos a reconocer formas de vida arcaicas dentro de nosotros: desde instintos de supervivencia de la Edad de Hielo hasta algoritmos celulares que recuerdan la emergencia de la vida desde el océano. El ADN se ve no como una sentencia sino como una biblioteca de las soluciones triunfantes de la evolución.\n\nReto biológico clave: mover los programas instintivos antiguos del automatismo ciego a un modo de recurso consciente.\n\nActivamos las capas más antiguas del sistema nervioso y los mecanismos de reconocimiento celular. La modulación epigenética influye en la expresión génica al gestionar estados fisiológicos profundos. La formación reticular y el tronco encefálico permiten acceso al cerebro «reptiliano» y a los algoritmos arcaicos de supervivencia. El hipocampo (memoria implícita) trabaja con la memoria de formas y movimientos que preceden al «Yo» consciente. El archicórtex sincroniza patrones límbicos e instintivos. La interocepción ultraprofunda es la capacidad de leer la «memoria tisular» y datos a nivel orgánico.",
+      "subtitle": "Protocolo: Recuperar la base",
+      "metaDescription": "Parte 19: Recuperar la base — hacer de un sistema nervioso sereno el lugar al que vuelves por defecto, a lo largo de meses de repetición. ONDA Life.",
+      "imageAlt": "Recuperar la base, la calma como hábito, ONDA YO RECUERDO.",
+      "imageTitle": "[I_REMEMBER]: visualización del estado base sereno al que el sistema vuelve por sí solo.",
+      "intro": "La Parte 19 trata del trabajo lento de hacer de la calma tu estado por defecto. La firmeza y la soltura que ya sabes alcanzar se vuelven los estados a los que tu sistema nervioso regresa solo — no porque los fuerces, sino porque los has practicado lo suficiente.\n\nIdea clave: repetición, no magia. El cuerpo aprende la calma como aprende cualquier habilidad — haciéndolo, a menudo, a lo largo de meses.\n\nNos apoyamos en las capas más antiguas y automáticas del sistema nervioso: la respiración, la regulación a nivel del tronco encefálico y la interocepción profunda. El objetivo es simple pero lento — una base regulada deja de ser un lugar que visitas y se vuelve el lugar donde vives.",
       "protocol": {
-        "intro": "Este protocolo te transforma en Guardián de la Memoria Antigua:",
+        "intro": "La mecánica lenta de una base estable:",
         "items": [
-          { "name": "Resonancia epigenética", "text": "Prácticas de «respiración ancestral» para modular el nervio vago, afectando la expresión de genes relacionados con inmunidad y resiliencia al estrés." },
-          { "name": "Recapitulación evolutiva", "text": "Contactar con las capas arcaicas del cerebro para transformar miedos primarios en sabiduría instintiva y dignidad." },
-          { "name": "Retrospección celular", "text": "Escaneo profundo de tejidos para «reconocer» la historia de tu traje biológico y activar mecanismos de auto-sanación." },
-          { "name": "Memoria motriz de formas", "text": "Movimientos que activan el cerebelo y el archicórtex, restaurando la conexión con la gracia y el poder naturales de la especie." },
-          { "name": "Guardián del código", "text": "Integrar la postura de «soy la continuación de la vida», proporcionando un fundamento inquebrantable y un sentido de validez evolutiva en cada respiración." }
+          { "name": "Respiración vagal", "text": "Respiración lenta, «ancestral», que sube el tono vagal y ayuda al sistema de estrés a asentarse con el tiempo." },
+          { "name": "Trabajar con los miedos viejos", "text": "Recibir las reacciones primarias e instintivas con conciencia, para que se vuelvan información y no alarma." },
+          { "name": "Escaneo corporal", "text": "Atención lenta a través del cuerpo — notar la tensión y dejar que suelte. Una práctica, no una cura." },
+          { "name": "Memoria motriz de formas", "text": "Movimientos que restauran la conexión con la gracia y la firmeza naturales del cuerpo." },
+          { "name": "Un cimiento estable", "text": "Asentarse en la sensación de «esta es mi base» — una calma ordinaria e inquebrantable a la que puedes volver." }
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "A lo largo de meses, la práctica sostenida involucra los sistemas de adaptación a largo plazo:",
         "items": [
-          { "name": "Memoria genética (marcadores epigenéticos)", "text": "Influencia en la expresión génica mediante estados fisiológicos profundos." },
-          { "name": "Sistema límbico (emociones arcaicas)", "text": "Transformar patrones primarios en recursos conscientes." },
-          { "name": "Redes fasciales (memoria somática)", "text": "Reservas de memoria a nivel tisular y de movimiento." },
-          { "name": "Biomarcadores", "text": "Reducción de la inflamación sistémica (estabilización epigenética), cambio en los patrones respiratorios primordiales, fortalecimiento de la calma instintiva ante amenazas centrales." }
+          { "name": "Base autonómica", "text": "El cuerpo aprende a volver por sí solo a un estado de reposo regulado." },
+          { "name": "Sistema límbico (emociones viejas)", "text": "Recibir los patrones primarios con conciencia en lugar de reaccionar a ellos." },
+          { "name": "Redes fasciales (memoria somática)", "text": "Donde se sostienen la tensión y los hábitos de movimiento — y se sueltan poco a poco." },
+          { "name": "Lo que cambia con el tiempo", "text": "Respiración más pareja, un reposo más sereno y más soltura instintiva bajo estrés — poco a poco, con la práctica." }
         ]
       },
       "results": {
-        "intro": "Alcanzar el estatus del Humano que Hereda. Dejas de percibirte como un fragmento aislado del tiempo y te realizas como la punta viva de una flecha evolutiva milenaria.",
+        "intro": "El Nivel 7 es el horizonte largo: lo que queda tras muchas sesiones, no el resultado de una. No hay atajo; ese es el punto. Lo que la gente describe tras meses de constancia:",
         "items": [
-          "Cimiento instintivo: ganas acceso a la «base de datos» de la naturaleza con sus soluciones exitosas. El miedo y la ansiedad son sustituidos por una calma profunda, al sentir el poder de todos tus ancestros que sobrevivieron para transmitirte este código.",
-          "Dignidad biológica: tu cuerpo adquiere una nueva estatura y gracia, características de un ser que reconoce su valía evolutiva.",
-          "Libertad epigenética: ya no eres rehén de traumas familiares ni guiones hereditarios. Has aprendido a «leer» el código y usar su energía para crear en lugar de repetir errores.",
-          "Profundidad sensorial: tu interocepción se expande hasta sentir los ritmos de la vida en cada célula, dándote una sensación inquebrantable de la «justeza» de tu existencia en este mundo."
+          "Una calma profunda y ordinaria — el miedo y la ansiedad encuentran una base más estable.",
+          "La sensación de estar más en casa en tu propio cuerpo.",
+          "Menos reactividad a los patrones viejos y guiones familiares — más espacio para elegir tu respuesta.",
+          "Una conciencia corporal más fina y la sensación serena de que tu base es de verdad tuya."
         ]
       },
-      "outro": "Eres la continuación de la vida. Cada respiración lleva validez evolutiva. El Guardián del Código."
+      "outro": "La calma, practicada las veces suficientes, se vuelve quien eres. Una base estable a la que puedes volver."
     },
     "i-restore": {
       "badge": "[ PARTE 20 — NIVEL 7: ADN / AER II ]",
-      "subtitle": "Protocolo: Regeneración celular y autocorrección del ADN",
-      "metaDescription": "Parte 20: Autofagia, reparación del ADN, activación parasimpática. Diseñador biológico. Guardián del código primario. Renovación profunda. ONDA Life.",
-      "imageAlt": "Regeneración celular, autocorrección del ADN, ONDA YO RESTAURO.",
-      "imageTitle": "[I_RESTORE]: Visualización de la reparación celular profunda y el retorno del sistema a sus «ajustes de fábrica».",
-      "intro": "La Parte 20 es la transición de la observación a la auto-regulación activa. Dejamos el nivel «software» y entramos en el departamento de ingeniería de la materia auto-regulada. Nuestra tarea es usar la corteza prefrontal como panel de control para activar sistemas de reparación que normalmente operan en segundo plano. Aprendemos a pasar el cuerpo del modo «supervivencia y desgaste» al modo «renovación profunda». La restauración aquí no se entiende como «sanación» sino como retirar bloqueos del flujo natural de la vida.\n\nReto biológico clave: activar la autofagia y los mecanismos de reparación del ADN mediante la alineación consciente con los «ajustes de fábrica» del cuerpo.\n\nTrabajamos con homeorhesis (constancia dinámica) y reducción de la carga alostática. El SNA parasimpático (tono vagal) es la palanca principal para conmutar al modo trofotrópico de recuperación y reparación celular. El sistema de reparación del ADN activa enzimas de revisión que corrigen errores en el código genético. La descompresión límbica reduce la actividad de la amígdala para detener la liberación de cortisol que inhibe la regeneración. El eje endocrino estimula la liberación de hormonas anabólicas y de crecimiento mediante fases de relajación profunda. La integración interoceptiva permite reconocer señales internas de recuperación como retroalimentación directa de los tejidos.",
+      "subtitle": "Protocolo: Recuperación y reparación",
+      "metaDescription": "Parte 20: Recuperación y reparación — bajar la carga crónica de estrés con el tiempo para que el cuerpo pase más tiempo en reposo. ONDA Life.",
+      "imageAlt": "Recuperación y reparación, reposo profundo, ONDA YO RESTAURO.",
+      "imageTitle": "[I_RESTORE]: visualización de la recuperación profunda y el retorno al reposo.",
+      "intro": "La Parte 20 trata de la recuperación: el cambio lento de vivir «a base de estrés» a pasar más tiempo en reposo. En niveles anteriores aprendiste a alcanzar un estado de calma; aquí ese estado se vuelve lo bastante largo y frecuente para que el cuerpo de verdad se recupere.\n\nIdea clave: el reposo no es pasividad. Los estados parasimpáticos profundos dan al sistema espacio para recuperarse — mejor sueño, menos tensión de fondo, menos tiempo «en alerta».\n\nTrabajamos sobre todo a través del tono vagal: respiración lenta y relajación profunda que conmutan el cuerpo del modo «alarma» al modo recuperación. No es una cura ni una garantía — es una práctica constante que deja al cuerpo hacer más a menudo lo que ya sabe hacer.",
       "protocol": {
-        "intro": "Este protocolo te transforma en Diseñador Biológico:",
+        "intro": "La mecánica de una recuperación más profunda:",
         "items": [
-          { "name": "Activación parasimpática del recurso", "text": "Técnicas de «respiración vagal» para forzar al sistema al modo de reparación tisular y reducir la presión sistémica." },
-          { "name": "Detoxificación celular", "text": "Usar visualización y micromovimientos para estimular el drenaje linfático y limpiar la matriz extracelular." },
-          { "name": "Re-cableado del trauma somático", "text": "Liberar tensiones «atrapadas» en la fascia mediante liberación somática, restaurando la elasticidad de los tejidos." },
-          { "name": "Modulación de telomerasa", "text": "Estados meditativos profundos dirigidos a la preservación a largo plazo de la integridad genética." },
-          { "name": "Auditoría del código primario", "text": "Alineación diaria con la sensación de «salud como estándar», formando un set neural proactivo de regeneración continua." }
+          { "name": "Respiración vagal", "text": "Respiración lenta que desplaza al cuerpo hacia el reposo-y-recuperación y alivia la tensión sistémica." },
+          { "name": "Movimiento suave", "text": "Movimiento y respiración ligeros que apoyan la circulación y ayudan al cuerpo a soltarse." },
+          { "name": "Soltar la tensión sostenida", "text": "Trabajo de liberación somática que deja ablandarse a la tensión que el cuerpo retiene de forma crónica." },
+          { "name": "Descanso profundo", "text": "Relajación larga y profunda — las condiciones en las que el cuerpo mejor se recupera." },
+          { "name": "Salud como base", "text": "Volver a diario a la sensación de «descansado y bien» para que se vuelva el punto de referencia del cuerpo." }
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "A lo largo de meses, la práctica sostenida involucra los sistemas de adaptación a largo plazo:",
         "items": [
-          { "name": "Lisosomas (reciclaje de desechos celulares)", "text": "Activación de la autofagia y la limpieza celular." },
-          { "name": "Telómeros (longevidad celular)", "text": "Preservación de la integridad genética y la vida útil celular." },
-          { "name": "Sistema linfático (detox)", "text": "Estimulación del drenaje y limpieza de la matriz extracelular." },
-          { "name": "Biomarcadores", "text": "Reducción de la proteína C reactiva (PCR), estabilización de la respiración celular y el ritmo cardíaco, mayor rapidez de la respuesta somática a la relajación." }
+          { "name": "El sistema de recuperación", "text": "Los procesos de reparación propios del cuerpo, que funcionan mejor cuando estás de verdad en reposo." },
+          { "name": "Calidad de sueño y descanso", "text": "Un descanso más profundo y parejo como base de la recuperación." },
+          { "name": "Circulación y relajación", "text": "Movimiento suave que apoya la relajación natural del cuerpo." },
+          { "name": "Lo que cambia con el tiempo", "text": "Mejor recuperación, sueño y ritmo cardíaco en reposo más estables, y un asentamiento más rápido tras el estrés — poco a poco, con la práctica." }
         ]
       },
       "results": {
-        "intro": "Alcanzar el estatus del Diseñador Biológico. Pasas del envejecimiento y desgaste pasivos al modo de regeneración consciente. Tu cuerpo deja de ser una «caja negra» y se vuelve un proceso dinámico y manejable.",
+        "intro": "Lo que la gente describe tras meses de práctica de recuperación constante:",
         "items": [
-          "Flexibilidad biológica: la capacidad del sistema de conmutar al instante de un estado de tensión alta al modo de recuperación profunda. Ya no «te quemas» porque los ciclos de reparación están integrados en tu vida diaria.",
-          "Optimización de recursos: la desaparición de microtensiones crónicas e inflamación sistémica libera una enorme cantidad de energía antes desperdiciada en «mantener la línea».",
-          "Confianza celular: una sensación profunda y físicamente palpable de integridad. Sientes que tu ADN es un aliado activo, capaz de devolver el sistema a la función plena tras cualquier carga.",
-          "Efecto «ajustes de fábrica»: una sensación de claridad, ligereza y funcionalidad que recuerda a los momentos pico de la juventud, pero respaldada por un control maduro y consciente."
+          "Pasar más fácilmente de la tensión alta a la recuperación profunda — menos burnout.",
+          "Menos microtensiones crónicas, y la energía que se gastaba en «mantener la línea» se libera.",
+          "Una sensación física de integridad — el cuerpo se recupera bien tras la carga.",
+          "Una base de «descansado y funcional» que se sostiene en la vida real."
         ]
       },
-      "outro": "Eres el Guardián del Código Primario. El Diseñador Biológico que devuelve el sistema a su plano original."
+      "outro": "La recuperación, practicada a menudo, se vuelve el estado por defecto del cuerpo — no algo que tengas que perseguir."
     },
     "i-synthesize": {
       "badge": "[ PARTE 21 — NIVEL 7: ADN / AER II ]",
-      "subtitle": "Protocolo: Maestría epigenética y simbiosis planetaria",
-      "metaDescription": "Parte 21: Diseño epigenético, creador evolutivo. Ingeniero de la vida. Co-autor consciente del campo planetario. ONDA Life.",
-      "imageAlt": "Maestría epigenética, simbiosis planetaria, ONDA YO SINTETIZO.",
-      "imageTitle": "[I_SYNTHESIZE]: Visualización del Creador Evolutivo y su alineación con el vector de desarrollo de la Vida.",
-      "intro": "La Parte 21 es el clímax del camino de la Consciencia del ADN. Mientras la Parte 19 era sobre «recordar» el código y la Parte 20 sobre «restaurarlo», aquí nos volvemos sus editores conscientes. Es el modo Output. Ya no eres solo un objeto biológico; eres un nodo de ingeniería de la evolución. Usamos la integración neural máxima para convertir la experiencia personal en una «actualización» del campo planetario (noosfera), alineando el vector de desarrollo personal con el vector de desarrollo de la Vida misma.\n\nReto biológico clave: sintetizar la identidad individual con la función evolutiva y pasar al diseño epigenético consciente.\n\nActivamos centros reguladores superiores y redes de prospección (construcción del futuro). La corteza orbitofrontal es el centro de las decisiones éticas superiores y de la evaluación de la significación global de las acciones. Las redes de prospección (PFC + DMN en modo síntesis) permiten al cerebro modelar el futuro a partir de patrones creativos en lugar de miedo. Los sistemas de oxitocina y serotonina facilitan la creación pro-social y un sentido de conexión profunda con la biosfera. La maestría epigenética permite la influencia consciente sobre la expresión génica gestionando estados mentales y emocionales. La visión holística del hemisferio derecho percibe la realidad como una red viva donde tú eres un nodo activo.",
+      "subtitle": "Protocolo: Integración",
+      "metaDescription": "Parte 21: Integración — respiración, atención, firmeza emocional y autoconciencia funcionando juntas como una sola base fiable. ONDA Life.",
+      "imageAlt": "Integración, una sola base, ONDA YO SINTETIZO.",
+      "imageTitle": "[I_SYNTHESIZE]: visualización de cómo las habilidades separadas convergen en un solo estado estable.",
+      "intro": "La Parte 21 lo reúne todo. Las Partes 19 y 20 trataban de asentarse y recuperarse; aquí las habilidades separadas que has construido — respiración, atención, firmeza emocional, autoconciencia — dejan de ser ejercicios sueltos y empiezan a funcionar como uno solo.\n\nIdea clave: integración, no trascendencia. Una base que se sostiene porque ahora todas las piezas se apoyan entre sí.\n\nNos apoyamos en la capacidad del cerebro de conectar y planificar — llevando lógica e intuición, cuerpo y mente, a un mismo estado estable. El resultado es menos una experiencia cumbre que una forma de estar más serena y fiable, que funciona casi sin esfuerzo.",
       "protocol": {
-        "intro": "Este protocolo te transforma en Creador Evolutivo:",
+        "intro": "Cómo convergen las piezas:",
         "items": [
-          { "name": "Diseño epigenético", "text": "Modulación consciente del entorno y los estados internos para dirigir la expresión de genes relacionados con inmunidad y longevidad." },
-          { "name": "Trascendencia biológica", "text": "Prácticas de «respiración de unidad» para expandir los límites del «Yo», percibiendo el cuerpo como parte de un organismo planetario." },
-          { "name": "Transmisión del legado", "text": "Modelar conscientemente una señal informacional mediante acciones e intenciones que impactan el inconsciente colectivo." },
-          { "name": "Sinfonía de simbiosis", "text": "Activar comportamiento pro-social y resonancia con otras formas de vida para crear efectos sinérgicos." },
-          { "name": "Timing evolutivo", "text": "Sincronizar los ritmos biológicos personales con ciclos naturales globales para máximo impacto creativo." }
+          { "name": "Estado interno estable", "text": "Cuidar el entorno y el estado interno para que la calma y el foco sean más fáciles de sostener." },
+          { "name": "Sentido de conexión", "text": "Prácticas de respiración que amplían el sentido de conexión más allá del yo estrecho y ajetreado." },
+          { "name": "Cómo te muestras", "text": "Notar cómo tu firmeza afecta a las personas y situaciones a tu alrededor." },
+          { "name": "Calma pro-social", "text": "Una firmeza que hace la colaboración y la conexión más naturales y menos agotadoras." },
+          { "name": "Ritmo y rutina", "text": "Alinear la práctica diaria con los ritmos naturales — luz, sueño, actividad — para que se fije." }
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "A lo largo de meses, la práctica sostenida involucra los sistemas de adaptación a largo plazo:",
         "items": [
-          { "name": "Resonancia cuántico-biológica del ADN", "text": "Influencia consciente sobre la expresión génica y el diseño epigenético." },
-          { "name": "Red de empatía expandida", "text": "Creación pro-social y resonancia con la biosfera." },
-          { "name": "Eje HPA (en modo eustrés)", "text": "Respuesta sana al estrés alineada con el reto creativo." },
-          { "name": "Biomarcadores", "text": "Estado de flujo sostenible por defecto, coherencia cardíaca alineada con frecuencias de Schumann, integración del sentido personal con el vector evolutivo global." }
+          { "name": "Una base integrada", "text": "Las habilidades separadas de los niveles anteriores funcionando juntas como un solo estado estable." },
+          { "name": "Conexión y empatía", "text": "Un sentido más amplio y estable de conexión con los demás." },
+          { "name": "Respuesta sana al estrés", "text": "Recibir el reto como algo que energiza, no que amenaza." },
+          { "name": "Lo que cambia con el tiempo", "text": "Un sentido de flujo más sostenible, patrones de ritmo cardíaco más estables y metas que se sienten con sentido, no forzadas." }
         ]
       },
       "results": {
-        "intro": "Alcanzar el estatus del Creador Evolutivo. Pasas de ser un «consumidor de la vida» a ser su co-autor consciente. Tu biología y consciencia se vuelven instrumentos a escala planetaria.",
+        "intro": "Lo que la gente describe cuando las piezas se integran:",
         "items": [
-          "Resonancia evolutiva: tu voluntad y sentido personales se alinean plenamente con el vector de desarrollo de la vida. Esto da acceso a una fuente inagotable de energía (eustrés) y motivación, al actuar no como un yo aislado sino como parte funcional del todo.",
-          "Maestría epigenética: ganas la capacidad de gestionar tus estados conscientemente para emitir una «señal sana» al campo informativo. Ya no eres víctima de las circunstancias sino editor de tu futuro biológico.",
-          "Estado de flujo sostenible: el éxtasis de la creación se vuelve tu frecuencia base de operación. Eres capaz de mantener alta coherencia corazón-cerebro incluso en condiciones de extrema incertidumbre.",
-          "Inmortalidad informativa: te das cuenta de que tu experiencia, limpia de trauma e integrada en sabiduría, se vuelve parte del legado compartido de la biosfera. Esto da una sensación de paz profunda y pertenencia a la eternidad."
+          "La sensación de que las metas y lo cotidiano tiran en la misma dirección — menos fricción interna.",
+          "Un empuje más estable y sostenible que no te quema.",
+          "Mantener tu centro incluso en la incertidumbre — coherencia bajo presión.",
+          "Una sensación serena de sentido y pertenencia en lo que haces."
         ]
       },
-      "outro": "Eres el Creador Evolutivo — el Ingeniero de la Vida. Un imprint informacional limpio para las generaciones futuras."
+      "outro": "Las piezas funcionando como una sola — una forma estable de estar que funciona sin forzarla."
     },
     "i-am-vibration": {
       "badge": "[ PARTE 22 — NIVEL 8: ATÓMICO / IGNIS II ]",
-      "subtitle": "Protocolo: Consciencia cuántica y resonancia energética",
-      "metaDescription": "Parte 22: Soy Vibración. Observador cuántico, percepción ondulatoria. Coherencia gamma, soberanía de la frecuencia. ONDA Life.",
-      "imageAlt": "Consciencia cuántica, observador cuántico, ONDA SOY VIBRACIÓN.",
-      "imageTitle": "[I_AM_VIBRATION]: Visualización del cuerpo como un campo de energía coherente, no como objeto sólido.",
-      "intro": "La Parte 22 es la transición al software de la realidad misma. Desde la perspectiva de la física cuántica, tu cuerpo es un 99,9999999% vacío lleno de campos de energía. Lo que percibes como «sólido» es solo la resistencia de campos electromagnéticos. En IGNIS II aprendemos a percibir esta interfaz directamente. Deconstruimos el «ego biográfico» (DMN) y activamos el «Yo Esencial». Ya no eres un objeto biológico; eres un paquete de ondas en un océano infinito de frecuencias, capaz de influir en la estructura de la realidad mediante el acto de la observación y tu vibración interna.\n\nReto biológico clave: despojarse de los filtros neurales de «densidad» y pasar de la percepción objetal a la ondulatoria.\n\nReafinamos el cerebro para que funcione como receptor-transmisor de alta frecuencia. La glándula pineal actúa como transductor piezoeléctrico, convirtiendo señales electromagnéticas sutiles en impulsos neuroquímicos. El tálamo permite afinar profundamente los filtros sensoriales para dejar pasar frecuencias más sutiles a la consciencia. Los ritmos gamma (40+ Hz) crean un estado de coherencia inter-hemisférica máxima donde la consciencia disuelve los límites del ego. La desactivación del lóbulo parietal reduce la orientación espacial física para experimentar la unidad transpersonal. El hemisferio derecho domina con la percepción holística y orientada al campo sobre la lógica discreta.",
+      "subtitle": "Orientación: el cuerpo como movimiento",
+      "metaDescription": "Parte 22: Soy vibración. Sentir el cuerpo como ritmo y movimiento, no como objeto sólido. Experiencial, no medido. ONDA Life.",
+      "imageAlt": "El cuerpo como ritmo y movimiento, ONDA SOY VIBRACIÓN.",
+      "imageTitle": "[I_AM_VIBRATION]: visualización del cuerpo sentido como movimiento, no como objeto sólido.",
+      "intro": "La Parte 22 es el borde del mapa, y así lo señalamos. Es una invitación a sentir el cuerpo menos como un objeto sólido y más como ritmo y movimiento: respiración, pulso, esa actividad silenciosa que siempre está bajo el pensamiento.\n\nEsto es experiencial, no medido. No hay biomarcador, ni puntuación. Ofrecemos una forma de atención — sentir el cuerpo directamente en vez de pensar en él — y lo que encuentres es tuyo.\n\nMuchas tradiciones contemplativas describen estados como este. Apuntamos a la experiencia y somos honestos sobre el resto.",
       "protocol": {
-        "intro": "Este protocolo te transforma en Observador Cuántico:",
+        "intro": "Formas de atención (indicaciones, no promesas):",
         "items": [
-          { "name": "Deconstrucción de la densidad", "text": "Escanear el «vacío» dentro de los átomos del cuerpo, desplazando el foco del tejido sólido al espacio energético interior." },
-          { "name": "Diapasón vibracional", "text": "Gestionar conscientemente la frecuencia interna mediante la respiración y resonancias sónicas específicas que modulan neurotransmisores." },
-          { "name": "Observación cuántica", "text": "Sostener la atención en el «campo de probabilidades», donde el acto de observación empieza a cambiar la cualidad de los estados internos." },
-          { "name": "Cambio a la presencia pura", "text": "Sostener meditativamente el punto «Yo Soy», despojado de roles, historia y programación biológica (deconstrucción del DMN)." },
-          { "name": "Resonancia con el infinito", "text": "Prácticas de «fusión con la luz» que bajan la actividad del lóbulo parietal y borran las líneas entre observador y observado." }
+          { "name": "Sentir, no «sólido»", "text": "Dejar que la atención repose en el movimiento y la sensación, no en el cuerpo como objeto fijo." },
+          { "name": "Respiración y sonido", "text": "Usar respiración lenta y sonido simple para calmar y nivelar el estado interno." },
+          { "name": "Solo observar", "text": "Notar cómo una atención pareja y abierta cambia por sí sola la cualidad de un estado interno." },
+          { "name": "Presencia simple", "text": "Reposar en la conciencia llana — dejando de lado roles e historia por un rato." },
+          { "name": "Límites blandos", "text": "Una sensación leve de que la línea entre tú y tu experiencia se vuelve menos nítida." }
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "Más bien lo que ocurre cuando la mente que siempre narra se asienta un poco:",
         "items": [
-          { "name": "Formación reticular", "text": "Filtro principal de frecuencia para los datos entrantes." },
-          { "name": "Ínsula", "text": "Interocepción vibracional sutil y resonancia interna." },
-          { "name": "Corteza somatosensorial", "text": "Expansión de los mapas de percepción corporal hacia el campo energético." },
-          { "name": "Biomarcadores", "text": "Presencia estable de ondas gamma (40+ Hz), disolución de los límites corporales (estado tipo campo), alta coherencia de fase corazón-cerebro." }
+          { "name": "La mente narradora, en calma", "text": "Lo que ocurre cuando la parte esforzada, autorreferencial y siempre narrando se asienta un poco." },
+          { "name": "Experiencial, no medido", "text": "No hay métrica para esto. La gente describe una sensación de ligereza, amplitud y presencia más estable." }
         ]
       },
       "results": {
-        "intro": "Alcanzar el estatus del Humano Resonante. Haces la transición de una percepción objetal de la realidad a una ondulatoria. Tu presencia se vuelve más que un hecho biológico; se convierte en una señal de frecuencia activa.",
+        "intro": "No hay métrica para esta orientación. Lo que la gente describe:",
         "items": [
-          "Plasticidad cuántica: dejas de sentir el cuerpo como una «barrera sólida». Surge una sensación física de transparencia y ligereza, donde los límites del «Yo» se vuelven permeables a los flujos de energía.",
-          "Soberanía de la frecuencia: ganas la capacidad de elegir conscientemente tu vibración interna. En lugar de adaptarte reactivamente al caos del entorno externo, te conviertes en el «diapasón» que armoniza el espacio a tu alrededor.",
-          "Coherencia gamma: un estado de consciencia expandida se vuelve accesible mediante un impulso volitivo. Eres capaz de mantener alta coherencia cerebral, dando acceso instantáneo a insights intuitivos y conocimiento «no local».",
-          "Deconstrucción de filtros del ego: purificación de la percepción del ruido biográfico y los roles sociales. Resides en el punto de «pura presencia», donde la realidad se percibe como un flujo vivo y vibrante de probabilidades sobre el que influyes mediante el propio acto de tu observación."
+          "El cuerpo sentido más ligero, menos como una barrera sólida.",
+          "Un estado interno más estable al que puedes volver.",
+          "Momentos de conciencia calmada, abierta y espaciosa.",
+          "Una atención que reposa en la presencia en vez de perseguir pensamientos."
         ]
       },
-      "outro": "Eres el Humano Resonante — el Observador Cuántico. Un paquete de ondas en un océano infinito de frecuencias."
+      "outro": "Experiencial, no medido. Damos las condiciones; la experiencia es tuya."
     },
     "i-am-wholeness": {
       "badge": "[ PARTE 23 — NIVEL 8: ATÓMICO / IGNIS II ]",
-      "subtitle": "Protocolo: Unidad no-local y autoconciencia cuántica",
-      "metaDescription": "Parte 23: El humano cuántico, Punto de Ensamblaje Universal. Teoría de la Información Integrada, colapso de la dualidad. Autoconciencia no-local. ONDA Life.",
-      "imageAlt": "Humano cuántico, punto de ensamblaje universal, ONDA SOY PLENITUD.",
-      "imageTitle": "[I_AM_WHOLENESS]: Visualización del campo de consciencia auto-luminoso y la unidad no-local de la existencia.",
-      "intro": "La Parte 23 es el clímax del sistema ONDA, fundamentado en la Teoría de la Información Integrada (IIT) y la Teoría de Campos. Desde la perspectiva de la física trabajamos con el estado de Entrelazamiento Cuántico. Eres un nodo en la red informacional de la existencia, donde cada parte del sistema «conoce» al instante el estado de cada otra parte. La separación se reconoce como mero ruido en el canal de transmisión; la Plenitud es la señal clara. Es la etapa donde la atención deja de dividirse y la consciencia se convierte en un campo auto-luminoso sin fuente externa.\n\nReto biológico clave: colapsar la dualidad «sujeto-objeto» y pasar a la autoconciencia no-local.\n\nLa sincronización final de las redes globales del cerebro. La red prefrontal-parietal logra la integración plena de la percepción espacial, donde el límite entre «interior» y «exterior» se desvanece. La Default Mode Network (DMN) entra en auto-trascendencia — la disolución completa de la narrativa egoica y los filtros biográficos. La red de saliencia escala la atención al macrocosmos: todo se percibe como fundamentalmente significativo y unificado. Los bucles tálamo-corticales permiten la sincronización global de todos los niveles perceptivos vía ritmos gamma de alta amplitud. El hemisferio derecho domina con la percepción no-dual y holística de la realidad.",
+      "subtitle": "Orientación: la frontera se ablanda",
+      "metaDescription": "Parte 23: Soy plenitud. Una sensación de que las cosas están menos divididas de lo habitual. Experiencial, no medido. ONDA Life.",
+      "imageAlt": "La frontera entre observador y experiencia se ablanda, ONDA SOY PLENITUD.",
+      "imageTitle": "[I_AM_WHOLENESS]: visualización del ablandamiento de la frontera entre observador y observado.",
+      "intro": "La Parte 23 trata del ablandamiento de la frontera: la línea entre quien observa y lo observado se adelgaza. Una sensación de que las cosas están menos divididas de lo habitual.\n\nEsto es experiencial, no medido. Muchos practicantes en distintas tradiciones lo describen; pocos lo fuerzan, y no lo prometemos. No hay biomarcador ni puntuación.\n\nOfrecemos las condiciones — atención profunda y silenciosa y la disposición a dejar asentarse a la sensación habitual de un yo separado y ajetreado. El resto es tuyo.",
       "protocol": {
-        "intro": "Este protocolo te transforma en Punto de Ensamblaje Universal:",
+        "intro": "Condiciones para, no pasos que completar:",
         "items": [
-          { "name": "Meditación oceánica", "text": "Prácticas dirigidas a reducir la actividad de la DMN para borrar la ilusión de separación y experimentar la unidad con toda la existencia." },
-          { "name": "Espejo de la consciencia", "text": "Realizarte como la unidad inseparable del observador, el proceso de observación y la realidad observada." },
-          { "name": "Alquimia de los opuestos", "text": "Integrar todos los niveles previamente dominados (Terra, Aqua, Aer, Ignis) en una estructura única no contradictoria mediante la activación del cuerpo calloso." },
-          { "name": "Vacío lleno de forma", "text": "Sostener la atención en el estado «Yo Soy», donde el vacío de la consciencia se percibe como la fuente primordial de todas las formas existentes." },
-          { "name": "Prospección cuántica", "text": "Creación directa de la realidad desde el punto de quietud, donde la intención modula instantáneamente el campo informativo." }
+          { "name": "Asentar el yo", "text": "Prácticas silenciosas que dejan ablandarse y asentarse a la mente ajetreada y autorreferencial." },
+          { "name": "El que observa y lo observado", "text": "Notar cómo el que observa y lo observado pueden sentirse menos separados de lo habitual." },
+          { "name": "Reunirlo todo", "text": "Dejar que la firmeza construida en los niveles anteriores se asiente en un único sentir indiviso de ser." },
+          { "name": "Quietud abierta", "text": "Reposar en una conciencia llana y abierta, sin intentar llenarla ni arreglarla." },
+          { "name": "Primero el silencio", "text": "Dejar que la intención surja de un lugar asentado y silencioso, no del aferramiento." }
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "Más bien lo que ocurre cuando la sensación habitual de separación se ablanda:",
         "items": [
-          { "name": "Global Brain Workspace", "text": "Integración plena de la percepción espacial y la consciencia no-local." },
-          { "name": "PFC dorsolateral (bypass)", "text": "Desactivación del «censor del ego» para permitir el acceso directo a la presencia esencial." },
-          { "name": "Ínsula", "text": "Interocepción no-local — sentir el campo más allá de los límites corporales." },
-          { "name": "Biomarcadores", "text": "Coherencia gamma global a través de todas las regiones cerebrales, desaparición del hueco entre input sensorial y representación interna, ausencia total de ansiedad existencial." }
+          { "name": "Un sentir menos dividido de las cosas", "text": "La frontera habitual entre interior y exterior se siente más blanda." },
+          { "name": "Experiencial, no medido", "text": "No hay métrica. La gente describe menos división interna y una base más serena y menos ansiosa." }
         ]
       },
       "results": {
-        "intro": "Alcanzar el estatus del Humano Cuántico / Punto de Ensamblaje Universal. Llegas a un estado de unidad inseparable, donde el «Yo» personal ya no es una limitación sino que se vuelve un conducto transparente para la energía creativa del Cosmos.",
+        "intro": "No hay métrica para esta orientación. Lo que la gente describe:",
         "items": [
-          "Colapso de la dualidad: la desaparición de la división interna entre «observador» y «observado». Ya no miras el mundo — eres el propio proceso del mundo desplegándose.",
-          "Soberanía existencial: la erradicación total de la ansiedad y el miedo existenciales. Una vez te realizas como el «Océano», las tormentas en la superficie de los eventos individuales ya no pueden perturbar tu silencio primordial.",
-          "Coherencia global: tu sistema nervioso opera en un estado de máxima conectividad. Esto otorga la capacidad de integrar al instante cualquier contradicción y encontrar soluciones desde un estado de «insight no local».",
-          "Alquimia de la creación: ganas la capacidad de influir directamente en la realidad mediante la intención. Tu voluntad, purificada de filtros del ego, se alinea con la voluntad de la evolución, haciendo tus acciones profundamente precisas y eficaces.",
-          "Pura presencia: te conviertes en la encarnación de la armonía. Tu presencia en cualquier sistema aumenta automáticamente su coherencia y facilita la sanación del espacio circundante."
+          "Una línea más blanda entre el observador y la experiencia — menos distancia respecto a tu propia vida.",
+          "Menos ansiedad existencial; una calma de fondo más estable.",
+          "Más facilidad para sostener contradicciones sin que te desgarren.",
+          "Una presencia serena y asentada que se siente menos dividida de lo habitual."
         ]
       },
-      "outro": "Eres el Humano Cuántico — el Punto de Ensamblaje Universal. Un conducto transparente para la energía creativa del Cosmos."
+      "outro": "Experiencial, no medido. Una sensación de que las cosas están menos divididas — ofrecida como indicación, no como promesa."
     },
     "i-am-the-source": {
       "badge": "[ PARTE 24 — NIVEL 8: ATÓMICO / IGNIS II ]",
-      "subtitle": "Protocolo: Singularidad de la consciencia y creación cuántica",
-      "metaDescription": "Parte 24: Creador de la realidad, Punto Cero. Energía del Punto Cero, superconductividad de la consciencia. Pura existencia. ONDA Life.",
-      "imageAlt": "Creador de la realidad, punto cero, ONDA SOY LA FUENTE.",
-      "imageTitle": "[I_AM_THE_SOURCE]: Visualización del espacio del que la existencia irrumpe a cada nanosegundo.",
-      "intro": "La Parte 24 es el regreso al «Punto de Singularidad». Desde la física fundamental trabajamos con la energía del Punto Cero. El vacío no está vacío; es un medio de densidad infinita de energía. Tú eres ese vacío. En este nivel no solo gestionas la realidad — te realizas como el «espacio» del que ella irrumpe cada nanosegundo. Es el reconocimiento de un hecho simple pero radical: todo lo que experimentas ocurre dentro del campo de tu consciencia.\n\nReto biológico clave: pasar de la identidad «soy alguien» a la realización «soy Aquello de lo que ALGUIEN surge».\n\nUn estado de coherencia máxima y «quietud creativa». Punto Cero de la actividad neural: un estado de consciencia que precede al surgimiento del pensamiento. El tálamo funciona como puerta — el hub central que distribuye las señales del Ser desde el potencial a lo manifestado. La Default Mode Network (DMN) entra en modo de aniquilación: ausencia total de «ruido del ego» y programación biográfica. Ráfagas gamma de ultra-alta intensidad crean momentos de «saltos cuánticos» en la consciencia, uniendo todas las regiones cerebrales en un único campo. Las estructuras profundas del tronco encefálico activan la existencia biológica primordial que existe antes de los conceptos y las palabras.",
+      "subtitle": "Orientación: reposar como conciencia",
+      "metaDescription": "Parte 24: Soy la fuente. Reposar como la conciencia misma — el punto final contemplativo que describen muchas tradiciones. Filosofía y experiencia, no biología. ONDA Life.",
+      "imageAlt": "Reposar como conciencia, ONDA SOY LA FUENTE.",
+      "imageTitle": "[I_AM_THE_SOURCE]: visualización del reposo como conciencia, no como los contenidos que la atraviesan.",
+      "intro": "La Parte 24 es el extremo lejano del mapa: reposar como la conciencia misma, en vez de como los contenidos que la atraviesan. En muchas tradiciones contemplativas esto se describe como el punto final — y es filosofía y experiencia directa, no biología.\n\nSeremos francos: aquí no hay nada que medir, nada que prometer, ninguna puntuación. Es una indicación, no un protocolo.\n\nOfrecemos lo más simple y lo más difícil — una atención silenciosa que reposa en sí misma, antes del pensamiento, sin aferramiento. Lo que se encuentre ahí es enteramente tuyo.",
       "protocol": {
-        "intro": "Este protocolo te transforma en Maestro-Creador:",
+        "intro": "Indicaciones, no un protocolo:",
         "items": [
-          { "name": "Práctica del Punto Cero", "text": "Sostener la atención en el silencio anterior al pensamiento. Entrar en el espacio de la «pura consciencia»." },
-          { "name": "Colapso e infinito", "text": "Sostener simultáneamente la atención en un punto infinitesimal (centro de la cabeza) y el espacio infinito que lo rodea." },
-          { "name": "Radiación de la creación", "text": "Irradiar conscientemente voluntad e intención («Claridad», «Amabilidad», «Creación») desde el centro de tu ser hacia el campo de la realidad." },
-          { "name": "Autor de la realidad", "text": "Realizar cómo la atención construye el objeto. Pasar de la percepción pasiva a la «escritura» activa de significados." },
-          { "name": "Integración del camino", "text": "Un estado donde «Flujo» (AQUA), «Estructura» (AER) y «Vibración» (IGNIS) se fusionan en una única e indivisible Presencia." }
+          { "name": "Silencio antes del pensamiento", "text": "Reposar la atención en el silencio antes de que surja un pensamiento — conciencia llana y abierta." },
+          { "name": "Punto y espacio", "text": "Sostener a la vez un pequeño punto de foco y el espacio abierto a su alrededor, con ligereza." },
+          { "name": "Intención silenciosa", "text": "Dejar que intenciones simples — claridad, amabilidad — surjan de un lugar asentado y silencioso." },
+          { "name": "Cómo la atención da forma", "text": "Notar cómo dónde pones la atención da forma a lo que experimentas." },
+          { "name": "Una sola presencia", "text": "La firmeza anterior — cuerpo, mente, sentir — se asienta en una única presencia indivisa." }
         ]
       },
       "targets": {
-        "intro": "Sistemas objetivo y biomarcadores de progreso:",
+        "intro": "Más bien lo que ocurre cuando todo el sistema se asienta en silencio:",
         "items": [
-          { "name": "Circuito completo de la consciencia", "text": "Integración plena del sistema de la consciencia." },
-          { "name": "Formación reticular", "text": "Filtro principal y puerta para señales ascendentes." },
-          { "name": "Resonancia tálamo-cortical", "text": "Hub central que distribuye el Ser desde el potencial a lo manifestado." },
-          { "name": "Biomarcadores", "text": "Estado de superconductividad (ausencia de resistencia mental y física), coherencia de ondas cerebrales próxima al 100%, estabilización autonómica instantánea." }
+          { "name": "El asentamiento de todo el sistema", "text": "Todo lo construido se asienta en una conciencia simple y asentada." },
+          { "name": "Una mente serena y estable", "text": "El estado asentado y de bajo ruido en el que esta clase de atención se vuelve posible." },
+          { "name": "Experiencial, no medido", "text": "No hay métrica para esto. La gente describe una calma profunda, una mente serena y una presencia difícil de poner en palabras." }
         ]
       },
       "results": {
-        "intro": "Alcanzar el estatus del Creador de la Realidad / Punto Cero. Llegas a un estado de «superconductividad» de la consciencia, donde la división entre intención interna y mundo externo queda permanentemente disuelta.",
+        "intro": "No hay métrica para este nivel — es experiencial, no medido. Damos las condiciones; la experiencia es tuya. Lo que la gente describe:",
         "items": [
-          "Paz fundamental: tu estado base es un silencio independiente de las circunstancias externas. Ya no «buscas» la paz; eres la paz misma en la que se despliegan todos los eventos.",
-          "Realineamiento instantáneo: la capacidad de devolver el sistema al equilibrio en nanosegundos. Cualquier estrés o ruido se aniquila al instante en el «punto cero» de tu presencia.",
-          "Autoría directa: te realizas como la causa de tus estados. La vida deja de «ocurrirte»; empieza a «emanar» de ti. Esto otorga responsabilidad absoluta y libertad creativa infinita.",
-          "Claridad cuántica: intelecto e intuición se fusionan en un único flujo de conocimiento directo. Ves la esencia de las cosas antes de que sean vestidas con palabras o conceptos.",
-          "Radiación de presencia: tu campo se vuelve tan coherente que tu mera presencia armoniza el entorno, ordena el caos y activa el potencial de vida en otros."
+          "Una calma profunda y de base que no depende de las circunstancias.",
+          "El estrés y el ruido se asientan rápido de vuelta al silencio.",
+          "Una sensación de presencia y claridad difícil de poner en palabras.",
+          "Intelecto e intuición se sienten como un solo flujo parejo, no como dos."
         ]
       },
-      "outro": "Eres el Creador de la Realidad — el Punto Cero. El espacio del que toda la existencia irrumpe."
+      "outro": "Experiencial, no medido. El borde del mapa — apuntamos a él y somos honestos sobre el resto."
     }
   }
 }
