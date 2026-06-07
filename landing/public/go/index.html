@@ -54,17 +54,36 @@ fbq('track', 'InitiateCheckout', {
      fires on /go load (track first) before the redirect below navigates. -->
 <script>rdt('track', 'Lead');</script>
 <!-- JS redirect with a small delay so the pixel beacon has time to fire.
-     The <meta refresh> above is the no-JS fallback. -->
+     Channel split: utm_source=reddit routes through the reddit_ads Tenjin
+     link; all other traffic keeps the quiz_cta link. The <meta refresh>
+     above stays statically on quiz_cta as the no-JS fallback (a JS-disabled
+     visitor fires no pixel anyway, so they're already invisible to
+     measurement — falling through to quiz_cta only slightly undercounts). -->
 <script>
-  setTimeout(function () {
-    window.location.replace('https://track.tenjin.com/v0/click/dP34JI7LL3ck8Yp8X91JGe');
-  }, 700);
+  (function () {
+    var QUIZ = 'https://track.tenjin.com/v0/click/dP34JI7LL3ck8Yp8X91JGe';
+    var REDDIT = 'https://track.tenjin.com/v0/click/gmOJIvCGZqB4cBnIkpFQPZ';
+    var target = QUIZ;
+    try {
+      if (new URLSearchParams(window.location.search).get('utm_source') === 'reddit') {
+        target = REDDIT;
+      }
+    } catch (e) { /* URLSearchParams unsupported — keep quiz_cta */ }
+    // Point the visible "tap here" fallback at the chosen target too.
+    document.addEventListener('DOMContentLoaded', function () {
+      var a = document.getElementById('tap-here');
+      if (a) a.href = target;
+    });
+    setTimeout(function () {
+      window.location.replace(target);
+    }, 700);
+  })();
 </script>
 </head>
 <body>
 <main>
   <h1>OPENING APP STORE<span class="dot"></span><span class="dot"></span><span class="dot"></span></h1>
-  <p>Redirecting to ONDA Life on the App Store. If nothing happens, <a href="https://track.tenjin.com/v0/click/dP34JI7LL3ck8Yp8X91JGe">tap here</a>.</p>
+  <p>Redirecting to ONDA Life on the App Store. If nothing happens, <a id="tap-here" href="https://track.tenjin.com/v0/click/dP34JI7LL3ck8Yp8X91JGe">tap here</a>.</p>
 </main>
 </body>
 </html>
