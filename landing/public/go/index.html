@@ -44,6 +44,15 @@ fbq('track', 'InitiateCheckout', {
        src="https://www.facebook.com/tr?id=2615262235497922&ev=InitiateCheckout&noscript=1"
        alt="" />
 </noscript>
+<!-- Reddit Pixel -->
+<script>
+!function(w,d){if(!w.rdt){var p=w.rdt=function(){p.sendEvent?p.sendEvent.apply(p,arguments):p.callQueue.push(arguments)};p.callQueue=[];var t=d.createElement("script");t.src="https://www.redditstatic.com/ads/pixel.js?pixel_id=a2_j1iw32mi5ccu",t.async=!0;var s=d.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}}(window,document);rdt('init','a2_j1iw32mi5ccu');rdt('track', 'PageVisit');
+</script>
+<!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
+<!-- End Reddit Pixel -->
+<!-- Reddit Lead — conversion proxy, mirrors the Meta InitiateCheckout above:
+     fires on /go load (track first) before the redirect below navigates. -->
+<script>rdt('track', 'Lead');</script>
 <!-- JS redirect with a small delay so the pixel beacon has time to fire.
      The <meta refresh> above is the no-JS fallback. -->
 <script>

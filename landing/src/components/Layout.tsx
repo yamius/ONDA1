@@ -1,4 +1,4 @@
-import { useState, useEffect, useLayoutEffect, Suspense, useMemo } from 'react'
+import { useState, useEffect, useLayoutEffect, useRef, Suspense, useMemo } from 'react'
 import { Outlet, Link, useLocation, useNavigate } from 'react-router-dom'
 import { AndroidWaitlist } from './AndroidWaitlist'
 import { useTranslation } from 'react-i18next'
@@ -46,6 +46,20 @@ export function Layout() {
 
   useEffect(() => {
     setMenuOpen(false)
+  }, [location.pathname])
+
+  // Reddit Pixel — fire PageVisit on client-side route changes. The base
+  // snippet in index.html already fires PageVisit on the initial load, so
+  // skip the first render to avoid a double-count. Mirrors how a SPA would
+  // re-fire a pageview on navigation.
+  const rdtFirstRender = useRef(true)
+  useEffect(() => {
+    if (rdtFirstRender.current) {
+      rdtFirstRender.current = false
+      return
+    }
+    const rdt = (window as unknown as { rdt?: (...args: unknown[]) => void }).rdt
+    if (typeof rdt === 'function') rdt('track', 'PageVisit')
   }, [location.pathname])
 
   useEffect(() => {
