@@ -141,9 +141,9 @@ const DEFAULT_TITLE = 'ONDA Life: Stop Tracking Stress. Start Training It.'
 const DEFAULT_DESC =
   'Guided breathing with real-time feedback from your own heart rhythm. Structured 8-level training for your nervous system. Free to start, no account.'
 
-const ABOUT_TITLE = 'About ONDA Life | Operating System for Your Consciousness & Biohacking'
+const ABOUT_TITLE = 'About ONDA Life — Who Builds It, and Why'
 const ABOUT_DESC =
-  'Discover how ONDA Life upgrades your biological firmware through systematic HRV tracking, neural hardware optimization, and 8 levels of consciousness development.'
+  "Built by a developer-founder and a science advisor with a PhD in physics and neuroscience — HRV biofeedback training, honest about what it can and can't do."
 
 const GLOSSARY_TITLE = 'Biohacking & Neuroscience Glossary | ONDA Life Knowledge Base'
 const GLOSSARY_DESC =
@@ -162,36 +162,36 @@ export interface BreadcrumbItem {
   url: string
 }
 
-/** SEO descriptions for articles (150–160 chars). Style: Technical protocol for biocomputer upgrade. */
+/** SEO descriptions for articles (150–160 chars). Honest, keyword-forward — no overclaim register. */
 const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'vagus-nerve-master-key':
-    'Technical protocol on Vagus Nerve optimization for biocomputer upgrade. Hack stress response, unlock deep resilience via parasympathetic access.',
+    'How the vagus nerve regulates your stress response and recovery — and what slow, paced breathing can actually influence.',
   'dopamine-architecture-mastering-desire':
-    'Technical protocol on Dopamine as biological Prediction Error for biocomputer upgrade. Reclaim drive, escape Dopamine Traps.',
+    'How dopamine works as a prediction-error signal — understanding drive, reward, and the traps that hijack it.',
   'dopamine-stacking-preventing-circuit-overload':
-    'Learn how to prevent neural burnout. Master your dopamine baseline and stop glutamate storms with ONDA\'s neurochemical protocols.',
+    'How chasing dopamine leads to burnout — and what actually helps the reward system settle and recover.',
   'circadian-reset-mastering-light':
-    'Technical protocol on photic signal and System Clock for biocomputer upgrade. Fix Circadian Drift, insomnia, brain fog.',
+    'How light sets your circadian clock — using photic timing to ease circadian drift, insomnia, and brain fog.',
   'metabolic-flexibility-dual-fuel-system':
-    'Technical protocol on dual-fuel (glucose/ketones) for biocomputer upgrade. Eliminate brain fog, access stable metabolic power.',
+    'How metabolic flexibility between glucose and ketones works — for steadier energy and less brain fog.',
   'neuroplasticity-flow-overclocking':
-    'Technical protocol on BDNF, Flow State, myelination for biocomputer upgrade. Rewrite neural hardware for peak cognition.',
+    'How BDNF, flow states, and myelination relate to learning and focus — and what practice can actually influence.',
   'gut-brain-axis-data-link':
-    'Technical protocol on Gut-Brain Axis for biocomputer upgrade. Optimize microbiome, mood, immunity, and cognition.',
+    'How the gut-brain axis links the microbiome to mood, immunity, and cognition — and what supports it.',
   'breathwork-command-line-interface':
-    'Technical protocol on breath as CLI for biocomputer upgrade. Box Breathing, Physiological Sigh, Nasal Breathing for Root Access.',
+    'Breath as your nervous-system command line: box breathing, the physiological sigh, and nasal breathing, explained.',
   'hrv-training-nervous-system-latency':
-    'Technical protocol on HRV and nervous system latency for biocomputer upgrade. Calibrate recovery, read the pulse of your code.',
+    'How HRV reflects nervous-system recovery — and how to read and train it over weeks, not one morning number.',
   'digital-dementia-attentional-control':
-    'Technical protocol on attentional firewall for biocomputer upgrade. Install protection against digital fragmentation.',
+    'How constant digital input fragments attention — and practical ways to protect and rebuild your focus.',
   'longevity-hardware-cellular-cleanup':
-    'Technical protocol on Autophagy and Senolysis for biocomputer upgrade. Extend hardware operational lifespan.',
+    'How autophagy and senescent-cell clearance relate to healthy aging — what the research suggests, honestly.',
   'cognitive-architecture-nootropic-stacks':
-    'Technical protocol on nootropic stacks for biocomputer upgrade. Neuroprotection, neurotransmission, Cerebral Blood Flow.',
+    'Nootropics, explained: neuroprotection, neurotransmission, and cerebral blood flow — and what to stay skeptical of.',
   'mitochondrial-biogenesis-cellular-power-grid':
-    'Technical protocol on mitochondrial biogenesis for biocomputer upgrade. Build new power units, raise total wattage.',
+    'How exercise and cold exposure drive mitochondrial biogenesis — building cellular energy capacity over time.',
   'circadian-lighting-dark-therapy':
-    'Technical protocol on Circadian Lighting and Dark Therapy for biocomputer upgrade. Restore hormonal integrity, eliminate photic noise.',
+    'How light and dark exposure shape circadian and hormonal rhythms — reducing photic noise for better sleep.',
   'glp1-biology-muscle-preservation':
     'Natural GLP-1 activation protocols using Berberine and Protein Leverage to optimize metabolism without muscle loss.',
   'mitochondrial-dna-red-light':
@@ -1007,7 +1007,7 @@ function buildAboutPageJsonLd(name: string, description: string, url: string): s
       applicationCategory: 'HealthApplication',
       operatingSystem: 'iOS, Android',
       description:
-        'Operating system for consciousness. Biohacking platform with HRV tracking, neural hardware optimization, and 8 levels of consciousness development.',
+        'Structured HRV biofeedback training: guided breathing with live heart-rhythm feedback, across an 8-level path for your nervous system.',
       url: SITE_URL,
     },
   }

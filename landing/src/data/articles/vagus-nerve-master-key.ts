@@ -27,7 +27,7 @@ const article: Article = {
 >
 > But inside your frame lies a hidden 'Admin Access.' It is the Vagus Nerve—the longest, highest-bandwidth data highway in your organism. This is the physical fiber-optic cable connecting your CPU (Brain) to every critical peripheral: heart, lungs, and gut.
 >
-> While the Sympathetic Nervous System is an 'Overclocking' button that burns your resources under stress, the Vagus is the master controller of your Parasympathetic system. By hacking its code, you gain direct root access to your state: from instant anxiety suppression to entering the Flow State.
+> While the Sympathetic Nervous System is an 'Overclocking' button that burns your resources under stress, the Vagus is the master controller of your Parasympathetic system. Working with its signals gives you a kind of root access to your state — from calming down faster under stress to settling into focus.
 >
 > It is time to flash the firmware. Welcome to manual control of your biocomputer.
 

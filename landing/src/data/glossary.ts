@@ -160,14 +160,14 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
       'The sense of the internal state of your body — the foundation of all self-awareness and emotional intelligence.',
     content: `
 
-**Interoception** is your body's ability to sense its own internal state — heartbeat, breathing, gut feelings, temperature, pain, hunger.¹ It is the most fundamental sense, and the foundation of the entire ONDA system.
+**Interoception** is your body's ability to sense its own internal state — heartbeat, breathing, gut feelings, temperature, pain, hunger. It is the most fundamental sense, and the foundation of the entire ONDA system.
 
 ## Why Interoception First
 
 ONDA Level 1 (TERRA) begins with interoception because:
 
 1. **It's the base layer** — You cannot regulate what you cannot sense
-2. **Emotional awareness depends on it** — Emotions are first felt as body sensations²
+2. **Emotional awareness depends on it** — Emotions are first felt as body sensations
 3. **It's measurable** — Interoceptive accuracy correlates with emotional intelligence
 4. **It's trainable** — Unlike many cognitive abilities, interoception improves rapidly with practice
 
@@ -242,7 +242,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     relatedSlugs: ['hypothalamus', 'primary-interoception', 'autonomic-nervous-system'],
     content: `
 
-**Homeostasis** is the dynamic process by which living organisms maintain a stable internal environment.¹ It is the biological foundation of the "I Am" state in ONDA Level 1.
+**Homeostasis** is the dynamic process by which living organisms maintain a stable internal environment. It is the biological foundation of the "I Am" state in ONDA Level 1.
 
 ## How It Works
 
@@ -272,7 +272,7 @@ A body in homeostatic balance is a body ready for growth. Without this foundatio
       'The most fundamental layer of body sensing — awareness of heartbeat, breath, gut signals, and internal organ states.',
     content: `
 
-**Primary Interoception** is the raw, unfiltered sensing of your body's internal state.¹ It is the connection between the brainstem and the insular cortex — the most ancient pathway of self-awareness.
+**Primary Interoception** is the raw, unfiltered sensing of your body's internal state. It is the connection between the brainstem and the insular cortex — the most ancient pathway of self-awareness.
 
 ## Layers of Interoception
 
@@ -605,19 +605,19 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
       'The longest cranial nerve, connecting the brain to the heart, lungs, and gut — the highway of the parasympathetic nervous system.',
     content: `
 
-The **vagus nerve** (cranial nerve X) is the primary channel of the parasympathetic nervous system.¹ It wanders from the brainstem through the neck, thorax, and abdomen — connecting the brain to virtually every major organ.
+The **vagus nerve** (cranial nerve X) is the primary channel of the parasympathetic nervous system. It wanders from the brainstem through the neck, thorax, and abdomen — connecting the brain to virtually every major organ.
 
 ## Key Functions
 
 - **Heart rate regulation** — slowing heart rate for calm states
 - **Breathing control** — coordinating diaphragm and respiratory rhythm
 - **Digestive activation** — stimulating "rest and digest" mode
-- **Inflammation control** — the cholinergic anti-inflammatory pathway²
+- **Inflammation control** — the cholinergic anti-inflammatory pathway
 - **Social engagement** — facial expression, voice tone, listening
 
 ## Vagal Tone
 
-**Vagal tone** is measured through Heart Rate Variability (HRV).³ Higher vagal tone = greater ability to shift between activation and recovery. ONDA Level 1 practices directly train vagal tone through:
+**Vagal tone** is measured through Heart Rate Variability (HRV). Higher vagal tone = greater ability to shift between activation and recovery. ONDA Level 1 practices directly train vagal tone through:
 
 - Diaphragmatic breathing (mechanical stimulation)
 - Extended exhale patterns (parasympathetic activation)
@@ -625,7 +625,7 @@ The **vagus nerve** (cranial nerve X) is the primary channel of the parasympathe
 
 ## Polyvagal Theory
 
-Stephen Porges' polyvagal theory⁴ describes three states:
+Stephen Porges' polyvagal theory describes three states:
 
 | State | Nerve Branch | Experience |
 |-------|-------------|-----------|
@@ -743,7 +743,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
       'The brain\'s master regulator of homeostasis — temperature, hunger, thirst, sleep, and stress response.',
     content: `
 
-The **hypothalamus** is a small region at the base of the brain that acts as the body's control center for homeostasis.¹ It constantly monitors internal state and coordinates responses to maintain equilibrium.
+The **hypothalamus** is a small region at the base of the brain that acts as the body's control center for homeostasis. It constantly monitors internal state and coordinates responses to maintain equilibrium.
 
 ## Key Functions
 
@@ -788,14 +788,14 @@ Level 1 "Sensory Filtering & PNI" leverages neuroplasticity to strengthen the li
       'The primary respiratory muscle — a dome-shaped sheet separating chest and abdomen, central to breath and vagal tone.',
     content: `
 
-The **diaphragm** is the main muscle of respiration — a dome-shaped sheet that separates the thoracic cavity from the abdomen.¹ It contracts and relaxes with each breath, and its health is intimately linked to the vagus nerve and parasympathetic system.
+The **diaphragm** is the main muscle of respiration — a dome-shaped sheet that separates the thoracic cavity from the abdomen. It contracts and relaxes with each breath, and its health is intimately linked to the vagus nerve and parasympathetic system.
 
 ## Functions
 
 - **Breathing** — primary driver of inhalation
 - **Pressure regulation** — creates pressure gradient for venous return
 - **Core stability** — part of the inner unit
-- **Vagal stimulation** — mechanical massage of the vagus nerve with each breath²
+- **Vagal stimulation** — mechanical massage of the vagus nerve with each breath
 
 ## In ONDA Life
 
@@ -889,7 +889,7 @@ Built on: [Interoception & insula](https://pubmed.ncbi.nlm.nih.gov/12030437/) (C
       'The primary stress hormone — released by the adrenal glands, elevated in chronic stress.',
     content: `
 
-**Cortisol** is the main glucocorticoid hormone produced by the adrenal glands.¹ It is essential for life but becomes problematic when chronically elevated.
+**Cortisol** is the main glucocorticoid hormone produced by the adrenal glands. It is essential for life but becomes problematic when chronically elevated.
 
 ## Normal Functions
 
@@ -941,7 +941,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
       'The variation in time between heartbeats — a key marker of nervous system flexibility and recovery capacity.',
     content: `
 
-**Heart Rate Variability** (HRV) is the variation in the time interval between successive heartbeats.¹ Contrary to intuition, a healthy heart does not beat like a metronome — it constantly adjusts its rhythm in response to breathing, stress, and environmental demands.
+**Heart Rate Variability** (HRV) is the variation in the time interval between successive heartbeats. Contrary to intuition, a healthy heart does not beat like a metronome — it constantly adjusts its rhythm in response to breathing, stress, and environmental demands.
 
 ## What It Measures
 
@@ -952,7 +952,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 ## In ONDA Life
 
-Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") progress.² Part 1 practices activate the parasympathetic system, raising baseline HRV. Part 2 "Rhythmic Coherence" further increases HRV by synchronizing axial movements with the respiratory cycle.
+Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") progress. Part 1 practices activate the parasympathetic system, raising baseline HRV. Part 2 "Rhythmic Coherence" further increases HRV by synchronizing axial movements with the respiratory cycle.
 
 ---
 
@@ -1210,7 +1210,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
       'Stephen Porges\' theory of the vagus nerve — three neural states: ventral vagal (safety), sympathetic (mobilization), dorsal vagal (shutdown).',
     content: `
 
-**Polyvagal Theory**, developed by Stephen Porges,¹ describes how the vagus nerve has evolved in layers, each supporting a different survival strategy. The nervous system doesn't simply switch between "on" and "off" — it navigates between distinct physiological states.
+**Polyvagal Theory**, developed by Stephen Porges, describes how the vagus nerve has evolved in layers, each supporting a different survival strategy. The nervous system doesn't simply switch between "on" and "off" — it navigates between distinct physiological states.
 
 ## Three States
 
@@ -1241,7 +1241,7 @@ Part 4 trains the nervous system to transition smoothly between Ventral Vagus (s
       'The brain\'s unconscious detection of safety or threat — happens before conscious perception.',
     content: `
 
-**Neuroception** is a term coined by Stephen Porges¹ to describe the nervous system's automatic, unconscious evaluation of the environment for safety or threat. It occurs before we consciously perceive or think — the body "reads" the situation and responds.
+**Neuroception** is a term coined by Stephen Porges to describe the nervous system's automatic, unconscious evaluation of the environment for safety or threat. It occurs before we consciously perceive or think — the body "reads" the situation and responds.
 
 ## How It Works
 

@@ -78,7 +78,7 @@ Brown adipose tissue (BAT), activated by cold exposure, is particularly sensitiv
 
 Your internal organs — liver, kidneys, gut — have their own independent clocks. They aren't wound by light, but by food. The timing of the first meal acts as a Start Command for the peripheral metabolic network. These clocks operate via transcription factors (CLOCK, BMAL1, PER, CRY) that are directly responsive to nutrient availability, not photons.
 
-The consequence of temporal misalignment here is severe: eating at 11 PM tells your liver "Stay active, the sun is still high," while your brain is already broadcasting "Shutdown sequence initiated." The result is Data Corruption at the cellular level — misexpression of metabolic genes, impaired lipid clearance, and blunted [insulin sensitivity](/glossary/insulin-sensitivity) the following morning.
+The consequence of temporal misalignment here is severe: eating at 11 PM tells your liver "Stay active, the sun is still high," while your brain is already broadcasting "Shutdown sequence initiated." The result is Data Corruption — misexpression of metabolic genes, impaired lipid clearance, and blunted [insulin sensitivity](/glossary/insulin-sensitivity) the following morning.
 
 > **The Hack:** Eat breakfast at a consistent time to lock in the start of your metabolic day. Even a small caloric input (protein + fat) is sufficient to trigger the peripheral clock cascade.
 

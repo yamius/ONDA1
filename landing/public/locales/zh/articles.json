@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "文章 | ONDA Life — 生物黑客与神经科学",
-    "description": "关于迷走神经张力、神经系统优化和意识架构的深度文章。基于科学的指南，助你升级生物计算机。"
+    "description": "关于迷走神经张力、HRV、呼吸与神经系统的深度文章——基于科学、对研究结论保持诚实的指南。"
   },
   "breadcrumb": {
     "home": "首页",
@@ -16,8 +16,8 @@
   "featuredHeader": "[ 精选文章 ]",
   "bodies": {
     "vagus-nerve-master-key": {
-      "title": "迷走神经：你生物计算机的主密钥",
-      "description": "迷走神经优化：通过神经接口控制黑客你的生物压力反应，解锁深层韧性。",
+      "title": "迷走神经：身体平静的主开关",
+      "description": "迷走神经如何调节你的压力反应与恢复——以及缓慢、有节奏的呼吸究竟能影响什么。",
       "imageAlt": "迷走神经刺激生物黑客可视化：神经接口、副交感数据高速公路、从脑干到心脏、肺、肠的通路。",
       "imageTitle": "迷走神经生物黑客 — 神经接口与副交感控制的主数据高速公路",
       "imageCaption": "[ SYSTEM_BUS_INTERFACE ]：副交感覆盖的主要数据通道映射。神经代码脉冲将 CPU 与心脏、肺、肠相连。",
@@ -38,7 +38,7 @@
       ]
     },
     "dopamine-architecture-mastering-desire": {
-      "title": "多巴胺架构：掌握欲望的货币",
+      "title": "多巴胺架构：驱动力、预测误差与奖赏陷阱",
       "description": "多巴胺架构：通过理解生物学的 Prediction Error 夺回你的驱动力，逃离劫持奖励回路的多巴胺陷阱。",
       "imageAlt": "多巴胺神经奖励通路架构可视化：中脑边缘通路、VTA、伏隔核、多巴胺回路生物黑客。",
       "imageTitle": "多巴胺架构 — 中脑边缘通路、奖励回路与多巴胺优化生物黑客",
@@ -65,7 +65,7 @@
     },
     "dopamine-stacking-preventing-circuit-overload": {
       "title": "Dopamine Stacking 与回路过载",
-      "description": "学习如何防止神经倦怠。掌握你的多巴胺基线，用 ONDA 的神经化学协议阻止谷氨酸风暴。",
+      "description": "为何追逐多巴胺会导致倦怠——以及什么才真正帮助奖励系统平复与恢复。",
       "imageAlt": "多巴胺回路过载可视化：神经受体饱和、突触下调与奖励通路中的谷氨酸兴奋毒性。ONDA 生物黑客。",
       "imageTitle": "Dopamine stacking 过载：神经回路中的受体下调与谷氨酸兴奋毒性。",
       "imageCaption": "[ CIRCUIT_OVERLOAD ]：多巴胺基线崩溃与谷氨酸风暴的可视化。受体下调导致系统级快感缺失。",

@@ -67,7 +67,7 @@ To move beyond basic alignment and into Age Deceleration, implement the three-la
 
 > **Action:** Total elimination of artificial blue light after sunset for two consecutive days. Use only low-level amber or red light (< 10 lux, wavelength > 550 nm).
 
-**Logic:** This maximizes endogenous Melatonin production — not just as a sleep hormone, but as the most potent mitochondrial antioxidant. Melatonin crosses the blood-brain barrier and enters mitochondria directly, where it neutralizes reactive oxygen species accumulated during the drift period. It cleans the system at the cellular level before the next layer of the protocol begins.
+**Logic:** This maximizes endogenous Melatonin production — not just as a sleep hormone, but as the most potent mitochondrial antioxidant. Melatonin crosses the blood-brain barrier and enters mitochondria directly, where it neutralizes reactive oxygen species accumulated during the drift period. It clears these reactive oxygen species before the next layer of the protocol begins.
 
 ### Protocol 2: Pulsed Hormesis (The Stress Patch)
 

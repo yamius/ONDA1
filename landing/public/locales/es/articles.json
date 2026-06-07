@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Artículos | ONDA Life — Biohacking y neurociencia",
-    "description": "Artículos en profundidad sobre tono vagal, optimización del sistema nervioso y arquitectura de la consciencia. Guías con base científica para actualizar tu biocomputador."
+    "description": "Artículos en profundidad sobre tono vagal, HRV, respiración y el sistema nervioso — guías con base científica, honestas sobre lo que muestra la investigación."
   },
   "breadcrumb": {
     "home": "Inicio",
@@ -16,8 +16,8 @@
   "featuredHeader": "[ ARTÍCULOS DESTACADOS ]",
   "bodies": {
     "vagus-nerve-master-key": {
-      "title": "Nervio vago: la llave maestra de tu biocomputador",
-      "description": "Optimización del nervio vago: hackea tu respuesta biológica al estrés y desbloquea una resiliencia profunda mediante el control de la interfaz neuronal.",
+      "title": "Nervio vago: el interruptor maestro de la calma del cuerpo",
+      "description": "Cómo el nervio vago regula tu respuesta al estrés y la recuperación — y qué puede influir realmente la respiración lenta y pausada.",
       "imageAlt": "Visual de biohacking con estimulación del nervio vago: interfaz neuronal, autopista de datos parasimpática, vía del tronco encefálico al corazón, pulmones e intestino.",
       "imageTitle": "Biohacking del nervio vago — autopista maestra de datos para la interfaz neuronal y el control parasimpático",
       "imageCaption": "[ SYSTEM_BUS_INTERFACE ]: Mapeo del conducto principal de datos para la sustitución parasimpática. Pulsos de código neuronal conectan la CPU con corazón, pulmones e intestino.",
@@ -38,7 +38,7 @@
       ]
     },
     "dopamine-architecture-mastering-desire": {
-      "title": "Arquitectura de la dopamina: dominar la moneda del deseo",
+      "title": "Arquitectura de la dopamina: impulso, error de predicción y trampas de recompensa",
       "description": "Arquitectura de la dopamina: recupera tu impulso entendiendo el Prediction Error biológico — y escapa de las trampas dopaminérgicas que secuestran tu circuitería de recompensa.",
       "imageAlt": "Visual de la arquitectura de la vía neural de recompensa de la dopamina: vía mesolímbica, VTA, núcleo accumbens, biohacking del circuito dopaminérgico.",
       "imageTitle": "Arquitectura de la dopamina — vía mesolímbica, circuitería de recompensa y biohacking de la optimización dopaminérgica",
@@ -65,7 +65,7 @@
     },
     "dopamine-stacking-preventing-circuit-overload": {
       "title": "Dopamine Stacking y sobrecarga del circuito",
-      "description": "Aprende a prevenir el agotamiento neuronal. Domina tu línea base de dopamina y detén las tormentas de glutamato con los protocolos neuroquímicos de ONDA.",
+      "description": "Cómo perseguir la dopamina lleva al agotamiento — y qué ayuda de verdad a que el sistema de recompensa se calme y se recupere.",
       "imageAlt": "Visualización de la sobrecarga del circuito dopaminérgico: saturación de receptores neuronales, regulación a la baja sináptica y excitotoxicidad por glutamato en las vías de recompensa. Biohacking ONDA.",
       "imageTitle": "Sobrecarga por dopamine stacking: regulación a la baja de receptores y excitotoxicidad por glutamato en circuitos neuronales.",
       "imageCaption": "[ CIRCUIT_OVERLOAD ]: Visualización del colapso de la línea base de dopamina y de la tormenta de glutamato. La regulación a la baja de receptores conduce a la anhedonia a nivel del sistema.",
