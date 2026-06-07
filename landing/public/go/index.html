@@ -7,7 +7,7 @@
 <!-- Tracking redirect: should never be indexed by search engines -->
 <meta name="robots" content="noindex, nofollow" />
 <!-- Belt-and-braces redirect: HTTP-equiv refresh fires even with JS disabled -->
-<meta http-equiv="refresh" content="1;url=https://track.tenjin.com/v0/click/dP34Jl7LL3ck8Yp8X91JGe" />
+<meta http-equiv="refresh" content="4;url=https://track.tenjin.com/v0/click/dP34Jl7LL3ck8Yp8X91JGe" />
 <link rel="canonical" href="https://onda-life.com/go" />
 <style>
   html, body { background: #050a0f; color: #eaeaea; font-family: 'JetBrains Mono', ui-monospace, monospace; margin: 0; min-height: 100vh; }
@@ -53,12 +53,12 @@ fbq('track', 'InitiateCheckout', {
 <!-- Reddit Lead — conversion proxy, mirrors the Meta InitiateCheckout above:
      fires on /go load (track first) before the redirect below navigates. -->
 <script>rdt('track', 'Lead');</script>
-<!-- JS redirect with a small delay so the pixel beacon has time to fire.
-     Channel split: utm_source=reddit routes through the reddit_ads Tenjin
-     link; all other traffic keeps the quiz_cta link. The <meta refresh>
-     above stays statically on quiz_cta as the no-JS fallback (a JS-disabled
-     visitor fires no pixel anyway, so they're already invisible to
-     measurement — falling through to quiz_cta only slightly undercounts). -->
+<!-- JS redirect — hold navigation until the pixel scripts have loaded and
+     flushed, so Meta InitiateCheckout / Reddit Lead actually send before we
+     leave (a fixed 700ms outran pixel.js and dropped the events). Channel
+     split: utm_source=reddit -> reddit_ads, else quiz_cta. The <meta refresh>
+     above (4s) is the no-JS fallback and sits above the hard cap, so JS
+     always wins for pixel-capable visitors. -->
 <script>
   (function () {
     var QUIZ = 'https://track.tenjin.com/v0/click/dP34Jl7LL3ck8Yp8X91JGe';
@@ -69,14 +69,37 @@ fbq('track', 'InitiateCheckout', {
         target = REDDIT;
       }
     } catch (e) { /* URLSearchParams unsupported — keep quiz_cta */ }
-    // Point the visible "tap here" fallback at the chosen target too.
-    document.addEventListener('DOMContentLoaded', function () {
+
+    var redirected = false;
+    function go() {
+      if (redirected) return;
+      redirected = true;
+      window.location.replace(target);
+    }
+
+    // Primary: window 'load' waits for the async pixel scripts to finish
+    // (ad-blocked scripts resolve instantly, so those users still redirect
+    // fast); +500ms lets the queued PageVisit / Lead / InitiateCheckout
+    // beacons flush before we navigate away.
+    if (document.readyState === 'complete') {
+      setTimeout(go, 500);
+    } else {
+      window.addEventListener('load', function () { setTimeout(go, 500); });
+    }
+
+    // On DOM ready: point the visible "tap here" fallback at the chosen
+    // target, and arm a hard cap (~2500ms) so a slow or hanging asset can
+    // never strand the user.
+    function onReady() {
       var a = document.getElementById('tap-here');
       if (a) a.href = target;
-    });
-    setTimeout(function () {
-      window.location.replace(target);
-    }, 700);
+      setTimeout(go, 2500);
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', onReady);
+    } else {
+      onReady();
+    }
   })();
 </script>
 </head>
