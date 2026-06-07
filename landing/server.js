@@ -67,6 +67,10 @@ app.use(
           "'unsafe-inline'",
           'https://www.googletagmanager.com',
           'https://tagmanager.google.com',
+          // Ad pixels (Meta + Reddit) — loaded on /go and the Reddit base
+          // PageVisit site-wide.
+          'https://connect.facebook.net',
+          'https://www.redditstatic.com',
         ],
         'style-src': [
           "'self'",
@@ -82,6 +86,9 @@ app.use(
           'https://*.googletagmanager.com',
           'https://*.midjourney.com',
           'https://cdn.midjourney.com',
+          // Pixel beacons fire as GET images.
+          'https://www.facebook.com',
+          'https://alb.reddit.com',
         ],
         'font-src': ["'self'", 'https://fonts.gstatic.com', 'data:'],
         'connect-src': [
@@ -91,6 +98,10 @@ app.use(
           'https://*.analytics.google.com',
           'https://*.googletagmanager.com',
           'https://www.google.com',
+          // Pixel config/event endpoints.
+          'https://pixel-config.reddit.com',
+          'https://www.facebook.com',
+          'https://connect.facebook.net',
         ],
         'frame-src': [
           'https://www.googletagmanager.com',
