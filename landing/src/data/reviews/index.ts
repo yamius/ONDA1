@@ -34,7 +34,8 @@ export {
   getCategoryByUrlSlug,
 } from './criteria'
 
-import type { ToolReview, Comparison } from './types'
+import type { ToolReview, Comparison, ReviewCategory } from './types'
+import { REVIEW_CATEGORIES } from './criteria'
 import ouraRing4 from './oura-ring-4'
 import whoop5 from './whoop-5-0'
 import appleWatchSeries11 from './apple-watch-series-11'
@@ -441,6 +442,18 @@ const ALL_COMPARISONS: Comparison[] = [
  *  publishOn date is reached. */
 export const comparisons: Comparison[] = ALL_COMPARISONS.filter(
   (c) => !c.publishOn || c.publishOn <= TODAY,
+)
+
+/** Categories with at least one live review or comparison. Use this for
+ *  category grids and cross-links so we never link to a date-gated category
+ *  whose landing page isn't prerendered yet (it would 404 until its drip
+ *  date). Order follows the canonical REVIEW_CATEGORIES list. */
+const LIVE_CATEGORY_SET = new Set<ReviewCategory>([
+  ...reviews.map((r) => r.category),
+  ...comparisons.map((c) => c.category),
+])
+export const LIVE_REVIEW_CATEGORIES: ReviewCategory[] = REVIEW_CATEGORIES.filter((c) =>
+  LIVE_CATEGORY_SET.has(c),
 )
 
 export function getReviewBySlug(slug: string): ToolReview | undefined {

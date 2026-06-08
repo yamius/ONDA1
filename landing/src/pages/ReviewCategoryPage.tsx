@@ -14,7 +14,7 @@ import {
   reviews,
   comparisons,
   headToHeads,
-  REVIEW_CATEGORIES,
+  LIVE_REVIEW_CATEGORIES,
   CATEGORY_LABELS,
   CATEGORY_URL_SLUGS,
   getCategoryByUrlSlug,
@@ -125,7 +125,7 @@ export function ReviewCategoryPage() {
 
   const catReviews = reviews.filter((r) => r.category === category)
   const catComparison = comparisons.find((c) => c.category === category)
-  const otherCategories = REVIEW_CATEGORIES.filter((c) => c !== category)
+  const otherCategories = LIVE_REVIEW_CATEGORIES.filter((c) => c !== category)
   // Head-to-heads where every product (2 or 3) belongs to this category.
   const catReviewSlugs = new Set(catReviews.map((r) => r.slug))
   const catHeadToHeads = headToHeads.filter(

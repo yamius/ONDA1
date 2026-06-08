@@ -500,10 +500,16 @@ export function getPrerenderRoutes(): string[] {
     // Per-category landing pages — /reviews/hrv-trackers, /reviews/cgm, etc.
     // Each gets its own focused page that ranks for the dominant search
     // keyword ("best HRV tracker", "best CGM", "best EEG headset") instead
-    // of the single /reviews omnibus. Only categories with at least one
-    // live review are prerendered — date-gated empty categories are
-    // skipped until their reviews go live.
-    ...(Array.from(new Set(reviews.map((r) => r.category))) as Array<keyof typeof CATEGORY_URL_SLUGS>)
+    // of the single /reviews omnibus. A category is prerendered if it has any
+    // live content — an individual review OR a comparison round-up. (Some
+    // categories ship the round-up first and add individual reviews later;
+    // their landing page must still exist so cross-links don't 404.)
+    ...(Array.from(
+      new Set([
+        ...reviews.map((r) => r.category),
+        ...comparisons.map((c) => c.category),
+      ]),
+    ) as Array<keyof typeof CATEGORY_URL_SLUGS>)
       .map((c) => CATEGORY_URL_SLUGS[c])
       .filter(Boolean)
       .map((s) => `/reviews/${s}`),

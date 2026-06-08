@@ -7,7 +7,7 @@
  */
 import { useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { reviews, comparisons, headToHeads, REVIEW_CATEGORIES, CATEGORY_LABELS, CATEGORY_URL_SLUGS, getReviewBySlug } from '../data/reviews'
+import { reviews, comparisons, headToHeads, LIVE_REVIEW_CATEGORIES, CATEGORY_LABELS, CATEGORY_URL_SLUGS, getReviewBySlug } from '../data/reviews'
 import { langFromPath } from '../i18n'
 
 export function ReviewsPage() {
@@ -51,7 +51,7 @@ export function ReviewsPage() {
           {tReviews('ui.categoriesHeading', { defaultValue: 'Browse by category' })}
         </h2>
         <div className="grid gap-3 sm:grid-cols-2">
-          {REVIEW_CATEGORIES.map((cat) => {
+          {LIVE_REVIEW_CATEGORIES.map((cat) => {
             const count = reviews.filter((r) => r.category === cat).length
             if (count === 0) return null
             return (
@@ -137,7 +137,7 @@ export function ReviewsPage() {
         </section>
       )}
 
-      {REVIEW_CATEGORIES.map((cat) => {
+      {LIVE_REVIEW_CATEGORIES.map((cat) => {
         const catReviews = reviews.filter((r) => r.category === cat)
         if (catReviews.length === 0) return null
         return (
