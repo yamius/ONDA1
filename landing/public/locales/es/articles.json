@@ -1657,7 +1657,9 @@
   "detail": {
     "backToArticles": "← Volver a los artículos",
     "relatedGlossaryTerms": "TÉRMINOS RELACIONADOS DEL GLOSARIO",
-    "browseFullGlossary": "→ Ver glosario completo"
+    "browseFullGlossary": "→ Ver glosario completo",
+    "disclaimerLabel": "NOTA",
+    "disclaimer": "Contenido educativo, no consejo médico. Los artículos de ONDA Life explican cómo funcionan los sistemas y qué sugiere la investigación — no diagnostican, tratan ni sustituyen a un profesional sanitario cualificado. Consulta a un profesional de la salud antes de cambiar algo en tu salud, medicación o entrenamiento."
   },
   "categories": {
     "Neural Hardware": "Hardware Neural",

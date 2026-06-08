@@ -17,7 +17,9 @@
   "detail": {
     "backToArticles": "← Back to Articles",
     "relatedGlossaryTerms": "RELATED GLOSSARY TERMS",
-    "browseFullGlossary": "→ Browse full Glossary"
+    "browseFullGlossary": "→ Browse full Glossary",
+    "disclaimerLabel": "NOTE",
+    "disclaimer": "Educational content, not medical advice. ONDA Life articles explain how systems work and what the research suggests — they don’t diagnose, treat, or replace a qualified clinician. Talk to a healthcare professional before changing your health, medication, or training."
   },
   "categories": {
     "Neural Hardware": "Neural Hardware",

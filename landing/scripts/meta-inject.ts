@@ -131,6 +131,92 @@ export function truncateForBudget(text: string, max: number): string {
   return hadEntities ? encodeBasicEntities(truncated) : truncated
 }
 
+/**
+ * Ideal SERP title length. Google renders ~580–600px of title (~60 chars for
+ * Latin text) before truncating with an ellipsis. TITLE_MAX (65) is the hard
+ * ceiling that triggers truncateForBudget's dumb tail-cut; TITLE_IDEAL is the
+ * soft target we shape titles to so the brand suffix is never the thing that
+ * gets dropped.
+ */
+export const TITLE_IDEAL = 60
+
+/** Trailing words too weak to end a title on — dropped after a word trim. */
+const TRAILING_STOPWORDS = new Set([
+  'a', 'an', 'and', 'or', 'the', 'to', 'of', 'for', 'your', 'with', 'in', 'on',
+  'at', 'by', 'from', 'into', 'is', 'are', 'how', 'what', 'find',
+])
+
+/**
+ * Greedy word-boundary trim with no ellipsis: keep the maximal run of whole
+ * words that fits, strip trailing punctuation, then drop a final dangling
+ * function word ("… Returning to" → "… Returning") so the title doesn't end
+ * mid-thought.
+ */
+function wordTrim(s: string, max: number): string {
+  if (s.length <= max) return s
+  const words = s.split(' ')
+  let out = ''
+  for (const w of words) {
+    const cand = out ? `${out} ${w}` : w
+    if (cand.length > max) break
+    out = cand
+  }
+  if (!out) out = s.slice(0, max) // single oversized token — hard cut
+  out = out.replace(/[\s,;:.!?\-–—…]+$/, '')
+  // Drop up to two trailing stopwords (also re-strip punctuation between).
+  for (let i = 0; i < 2; i++) {
+    const parts = out.split(' ')
+    if (parts.length > 1 && TRAILING_STOPWORDS.has(parts[parts.length - 1].toLowerCase())) {
+      parts.pop()
+      out = parts.join(' ').replace(/[\s,;:.!?\-–—…]+$/, '')
+    } else break
+  }
+  return out
+}
+
+/**
+ * Shape a title to <= TITLE_IDEAL chars WITHOUT ever dropping the " | ONDA Life"
+ * brand suffix or appending an ellipsis (unlike truncateForBudget). Strategy:
+ *   1. If already within budget, return as-is.
+ *   2. Drop a year token "(20XX)" if that alone brings it under (preserves words).
+ *   3. Detect the brand-suffix separator (the last ' | ' / ' — ' / ' – ' whose
+ *      tail mentions ONDA) and word-trim only the STEM so stem + suffix fit.
+ *   4. If there is no recognisable brand suffix (or it's too long to leave a
+ *      meaningful stem), fall back to a plain word-trim of the whole title.
+ * Deterministic and idempotent — safe to run on every build.
+ */
+export function clampTitleToIdeal(title: string, max = TITLE_IDEAL): string {
+  if (title.length <= max) return title
+
+  // 2 — try shedding a year parenthetical first.
+  const noYear = title.replace(/\s*\((?:19|20)\d\d\)/, '')
+  if (noYear !== title && noYear.length <= max) return noYear
+  const work = noYear.length < title.length ? noYear : title
+  if (work.length <= max) return work
+
+  // 3 — brand-aware stem trim.
+  const seps = [' | ', ' — ', ' – ', ' - ']
+  let best: { idx: number; sep: string } | null = null
+  for (const sep of seps) {
+    const idx = work.lastIndexOf(sep)
+    if (idx > 0 && work.slice(idx).includes('ONDA') && (!best || idx > best.idx)) {
+      best = { idx, sep }
+    }
+  }
+  if (best) {
+    const stem = work.slice(0, best.idx)
+    const suffix = work.slice(best.idx) // includes the leading separator
+    const room = max - suffix.length
+    if (room >= 24) {
+      const trimmed = wordTrim(stem, room)
+      if (trimmed.length >= 12) return trimmed + suffix
+    }
+  }
+
+  // 4 — no usable brand suffix; trim the whole thing on a word boundary.
+  return wordTrim(work, max)
+}
+
 /** Build canonical URL without trailing slash. Google sees only one URL variant. */
 function buildCanonicalUrl(route: string): string {
   const base = SITE_URL.replace(/\/+$/, '')
@@ -1360,7 +1446,7 @@ export function getMetaForRoute(route: string): RouteMeta {
   }
   if (route === '/tools/caffeine') {
     return {
-      title: 'Caffeine Cut-Off Calculator — Last Coffee Before Bed | ONDA Life',
+      title: 'Caffeine Cut-Off — Last Coffee Before Bed | ONDA Life',
       description:
         'Free caffeine calculator: pick your drink and bedtime to find the latest you can have coffee without disrupting sleep — based on caffeine\'s ~5.5-hour half-life. Plus a caffeine-by-drink chart.',
       url,
@@ -1384,7 +1470,7 @@ export function getMetaForRoute(route: string): RouteMeta {
   }
   if (route === '/tools/zone-2') {
     return {
-      title: 'Zone 2 Heart Rate Calculator — Find Your Aerobic Zone | ONDA Life',
+      title: 'Zone 2 Heart Rate Calculator — Aerobic Zone | ONDA Life',
       description:
         'Free Zone 2 heart rate calculator: enter your age (and resting HR for Karvonen) to find your aerobic-base target and all 5 training zones — using the accurate Tanaka max-HR formula.',
       url,
@@ -1396,7 +1482,7 @@ export function getMetaForRoute(route: string): RouteMeta {
   }
   if (route === '/tools/chronotype') {
     return {
-      title: "What's Your Chronotype? Free Quiz (Lion, Bear, Wolf) | ONDA Life",
+      title: "What's Your Chronotype? Lion, Bear or Wolf | ONDA Life",
       description:
         'Free 6-question chronotype quiz: find whether you are a morning, intermediate or evening type — and get a personalised daily protocol for when to work, train, cut caffeine and sleep.',
       url,
@@ -1408,7 +1494,7 @@ export function getMetaForRoute(route: string): RouteMeta {
   }
   if (route === '/tools/protein') {
     return {
-      title: 'Protein Intake Calculator — How Much Protein Per Day? | ONDA Life',
+      title: 'Protein Intake Calculator — How Much Per Day? | ONDA Life',
       description:
         'Free protein calculator: enter your bodyweight and goal (maintain, build muscle, fat loss) to get your daily protein target in grams — based on ISSN/ACSM guidelines — plus a per-meal split.',
       url,
@@ -1576,7 +1662,7 @@ export function getMetaForRoute(route: string): RouteMeta {
   }
   if (route === '/tools/biological-age') {
     return {
-      title: 'Biological Age Calculator — How Old Is Your Body? | ONDA Life',
+      title: 'Biological Age Calculator — How Old Are You? | ONDA Life',
       description:
         'Free biological "fitness age" calculator: estimate how your habits — resting heart rate, activity, sleep, smoking — stack up against your real age. Educational, not a medical test.',
       url,
@@ -1612,7 +1698,7 @@ export function getMetaForRoute(route: string): RouteMeta {
   }
   if (route === '/tools/nervous-system') {
     return {
-      title: 'Nervous System Quiz — Are You in Fight-or-Flight? | ONDA Life',
+      title: 'Nervous System Quiz — Stuck in Fight-or-Flight? | ONDA Life',
       description:
         'Free nervous system quiz: 8 questions read whether you’re in fight-or-flight, shutdown or a regulated state — with a vagal-tone protocol to shift it. Educational, not a diagnosis.',
       url,
@@ -2612,7 +2698,10 @@ function escapeHtmlAttr(s: string): string {
 export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   // Truncate to SERP budgets BEFORE escaping — escapeHtmlAttr can turn one
   // character into a 5-char entity which would skew length math.
-  const trimmedTitle = truncateForBudget(meta.title, TITLE_MAX)
+  // Shape to the ideal SERP length (brand-aware, no ellipsis), then run the
+  // hard-ceiling guard as a backstop — clamped titles are already <= TITLE_IDEAL
+  // so truncateForBudget is a no-op for them.
+  const trimmedTitle = truncateForBudget(clampTitleToIdeal(meta.title), TITLE_MAX)
   const trimmedDesc = truncateForBudget(meta.description, DESC_MAX)
   const escapedTitle = escapeHtmlAttr(trimmedTitle)
   const escapedDesc = escapeHtmlAttr(trimmedDesc)

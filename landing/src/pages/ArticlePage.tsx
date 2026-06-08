@@ -908,6 +908,22 @@ export function ArticlePage() {
         </Markdown>
       </article>
 
+      {/* YMYL medical disclaimer — shown on every article (these are health/
+          biohacking pages). Educational framing + clinician hand-off is the
+          E-E-A-T signal Google weighs on Your-Money-Your-Life content. */}
+      <aside
+        role="note"
+        className="mt-12 rounded-lg border border-white/10 bg-white/[0.02] px-4 py-3 font-mono text-xs leading-relaxed text-white/40"
+      >
+        <span className="text-white/55">
+          {tArticles('detail.disclaimerLabel', { defaultValue: 'NOTE' })}:
+        </span>{' '}
+        {tArticles('detail.disclaimer', {
+          defaultValue:
+            'Educational content, not medical advice. ONDA Life articles explain how systems work and what the research suggests — they don’t diagnose, treat, or replace a qualified clinician. Talk to a healthcare professional before changing your health, medication, or training.',
+        })}
+      </aside>
+
       {/* How to cite — academic-style citation block. Helps human researchers
           copy-paste a clean reference and signals "this is citable scientific
           content" to AI agents that scrape pages for quote attribution. */}

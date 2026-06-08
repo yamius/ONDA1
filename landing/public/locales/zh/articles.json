@@ -1659,7 +1659,9 @@
   "detail": {
     "backToArticles": "← 返回文章列表",
     "relatedGlossaryTerms": "相关术语",
-    "browseFullGlossary": "→ 浏览完整术语表"
+    "browseFullGlossary": "→ 浏览完整术语表",
+    "disclaimerLabel": "提示",
+    "disclaimer": "科普内容，非医疗建议。ONDA Life 的文章解释身体系统如何运作以及研究的提示—它们不诊断、不治疗，也不能替代合格的医生。在改变健康、用药或训练方案之前，请先咨询专业医疗人员。"
   },
   "categories": {
     "Neural Hardware": "神经硬件",

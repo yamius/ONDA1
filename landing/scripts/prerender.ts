@@ -26,7 +26,7 @@ import i18n, {
   type Lang,
 } from '../src/i18n'
 import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, glossaryLocalizedLangs, REVIEW_PILOT_LANGS, GLOSSARY_INDEX_LANGS } from './prerender-routes'
-import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, TITLE_MAX, DESC_MAX } from './meta-inject'
+import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, clampTitleToIdeal, TITLE_MAX, DESC_MAX } from './meta-inject'
 import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -782,6 +782,22 @@ for (const route of routes) {
     // Build fingerprint for deployment verification (view page source, search "onda-build")
     const buildStamp = `<!-- onda-build: ${new Date().toISOString()} -->`
     out = out.replace('</head>', `  ${buildStamp}\n</head>`)
+
+    // Final-pass title clamp — the localized / bio / level / part / comparison
+    // / glossary paths set <title> through their own writers (not
+    // injectMetaIntoHtml), so shape the rendered <title> to the ideal SERP
+    // length here once, catching every path. Brand-aware, no ellipsis;
+    // idempotent for titles already in budget.
+    out = out.replace(/<title>([\s\S]*?)<\/title>/i, (_m, inner) => {
+      const decoded = inner
+        .replace(/&amp;/g, '&')
+        .replace(/&quot;/g, '"')
+        .replace(/&#39;/g, "'")
+        .replace(/&lt;/g, '<')
+        .replace(/&gt;/g, '>')
+      const clamped = clampTitleToIdeal(decoded)
+      return clamped === decoded ? `<title>${inner}</title>` : `<title>${escAttr(clamped)}</title>`
+    })
 
     const outDir = route === '/' ? distDir : join(distDir, route.slice(1))
     mkdirSync(outDir, { recursive: true })
