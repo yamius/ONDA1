@@ -8,6 +8,8 @@
   "placeFinger": "Coloca el dedo en la cámara →",
   "backCameraHint": "Cámara trasera · cubre la lente con el dedo",
   "lightHint": "Mantén la cámara orientada hacia una fuente de luz",
+  "cameraPrivacy": "Tu cámara se usa solo en tu navegador para estimar tu pulso: no se sube ni se almacena ningún vídeo ni dato.",
+  "cameraPrivacyLink": "Cómo tratamos los datos de la cámara",
   "cameraDenied": "Acceso a la cámara denegado. Permite la cámara en los ajustes del navegador.",
   "main": {
     "bpm": "BPM",

@@ -570,6 +570,19 @@ export function BioPage() {
           {cameraError && (
             <p className="text-center text-xs text-red-400">{cameraError}</p>
           )}
+
+          {/* Camera privacy note — shown at the moment the user decides whether
+              to grant access. Browser-only PPG, nothing uploaded; links to the
+              dedicated privacy section. */}
+          <p className="mt-1 max-w-xs text-center text-[11px] leading-relaxed text-white/30">
+            {t('cameraPrivacy')}{' '}
+            <Link
+              to={localizedPathFor('/privacy', lang)}
+              className="underline transition-colors hover:text-white/55"
+            >
+              {t('cameraPrivacyLink')}
+            </Link>
+          </p>
         </div>
 
         {/* 4 main cards */}

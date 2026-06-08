@@ -8,6 +8,8 @@
   "placeFinger": "把手指放在摄像头上 →",
   "backCameraHint": "后置摄像头 · 用手指覆盖镜头",
   "lightHint": "把摄像头朝向光源",
+  "cameraPrivacy": "摄像头仅在您的浏览器中用于估算脉搏——不会上传或存储任何视频或数据。",
+  "cameraPrivacyLink": "我们如何处理摄像头数据",
   "cameraDenied": "摄像头访问被拒绝。请在浏览器设置中允许摄像头。",
   "main": {
     "bpm": "BPM",

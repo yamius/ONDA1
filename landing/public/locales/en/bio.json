@@ -8,6 +8,8 @@
   "placeFinger": "Place finger on camera →",
   "backCameraHint": "Back camera · cover lens with finger",
   "lightHint": "Hold camera facing a light source",
+  "cameraPrivacy": "Your camera is used only in your browser to estimate your pulse — no video or data is uploaded or stored.",
+  "cameraPrivacyLink": "How we handle camera data",
   "cameraDenied": "Camera access denied. Please allow camera in browser settings.",
   "main": {
     "bpm": "BPM",
