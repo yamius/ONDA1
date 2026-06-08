@@ -20,7 +20,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
     sections: [
       {
         heading: 'The Point of Optimum',
-        body: 'Flow is the holy grail of performance. At ONDA, we capture this state when your system reaches perfect synchronization: high attentional focus while maintaining profound internal calm. It is the moment when you are entirely absorbed in a task, yet your body isn\'t paying an excessive price for it.',
+        body: 'Flow is the holy grail of performance. At ONDA, we estimate a flow-like pattern when the signal suggests synchronization: steady attention alongside internal calm. It points to the moment when you are absorbed in a task without your body paying an excessive price for it — an inference from your rhythm, not a direct read of your mind.',
       },
       {
         heading: 'What the Values Mean',
@@ -35,7 +35,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
           },
           {
             label: '50–75% · In the Zone',
-            text: 'Biometric signature of flow is active: moderate HR, stable rhythm, low alarm. You are fully capable of sustained, high-quality work with minimal cognitive friction.',
+            text: 'Your signal looks consistent with a flow-like pattern: moderate HR, stable rhythm, low alarm. Conditions tend to favour sustained, high-quality work with minimal cognitive friction.',
           },
           {
             label: '75–100% · Deep Resonance',
@@ -77,7 +77,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
     sections: [
       {
         heading: 'The Cost of Movement',
-        body: 'Fatigue in ONDA is more than just a desire to sleep. It is an objective measurement of the "biological cost" of your recent efforts. We record this metric when your energy reserves are depleted and your stress levels remain chronically elevated. It is a signal that your system has shifted from efficient operation to a state of attrition.',
+        body: 'Fatigue in ONDA is more than just a desire to sleep. It is a rough estimate of the "biological cost" of your recent efforts. This estimate rises when your energy reserves look depleted and your stress signal stays elevated. It is a hint that your system may have shifted from efficient operation toward attrition.',
       },
       {
         heading: 'What the Values Mean',
@@ -530,7 +530,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
     sections: [
       {
         heading: 'Your Internal Battery',
-        body: 'At ONDA, Energy % is not a subjective feeling of alertness; it is an objective measurement of your cardiovascular reserve. It is a mathematical ratio of how far your heart rate is from its elevated ceiling and how stable your cardiac rhythm is at this very second. The higher the score, the more physiological capacity your body has to handle new tasks.',
+        body: 'At ONDA, Energy % is less a subjective feeling of alertness and more a rough estimate of your cardiovascular reserve. It is a mathematical ratio of how far your heart rate is from its elevated ceiling and how stable your cardiac rhythm is at this very second. The higher the score, the more physiological headroom your body likely has to handle new tasks.',
       },
       {
         heading: 'The Anatomy of Depletion',
@@ -584,7 +584,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
     sections: [
       {
         heading: 'Beyond Emotions',
-        body: 'At ONDA, Stress % is not a psychological state; it is a mathematical measurement of chaos within your system. This score is derived from the Cardiac Stability Index. We don\'t just analyze your pulse; we examine the micro-deviations in the rhythm of every single beat. The higher the irregularity and "noise" in these intervals, the higher your biological stress score.',
+        body: 'At ONDA, Stress % is less a psychological state and more a rough index of irregularity in your cardiac rhythm. This score is derived from the Cardiac Stability Index: instead of just your pulse, it looks at the micro-deviations between beats. The more irregularity and "noise" in these intervals, the higher the estimated stress score — a directional signal, not a clinical stress measurement.',
       },
       {
         heading: 'What Does Your Score Mean?',
@@ -606,7 +606,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
       },
       {
         heading: 'Why Does It Matter?',
-        body: 'The most dangerous stress is the kind you don\'t feel. You might be sitting in silence, yet your Stress % shows 70%. This means an invisible struggle is happening inside: lack of sleep, hidden inflammation, or information overload. ONDA makes the invisible visible, allowing you to hit pause before exhaustion sets in.',
+        body: 'The most dangerous stress is the kind you don\'t feel. You might be sitting in silence, yet your Stress % reads high. That can reflect things like poor sleep, illness, or information overload — though the score alone can\'t tell you which. Treat it as a prompt to check in with yourself and pause before exhaustion sets in, not as a diagnosis.',
       },
       {
         highlight: 'Stress isn\'t what happens to you; it\'s how your body spends its resources in response. A high percentage is a signal to re-evaluate your priorities in this very moment.',

@@ -616,6 +616,11 @@ export function BioPage() {
             <MetricRow label={t('rows.fatigue.label')} desc={t('rows.fatigue.desc')} value={metrics.fatigue} />
             <MetricRow label={t('rows.flow.label')} desc={t('rows.flow.desc')} value={metrics.flow} />
           </div>
+          {/* Honesty: these labels are heuristic arousal/calm patterns from
+              HR/BR, not emotion detection or a measurement. */}
+          <p className="mt-3 rounded-lg border border-white/10 bg-white/[0.02] px-3 py-2 text-center text-[11px] leading-relaxed text-white/30">
+            {t('emotionalDisclaimer')}
+          </p>
           <p className="mt-4 text-center text-xs text-white/30">
             {measuring
               ? (fingerOn ? t('status.measuring') : t('status.waiting'))

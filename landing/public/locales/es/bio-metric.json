@@ -25,258 +25,675 @@
       "errorDuplicate": "Este email ya está registrado.",
       "errorGeneric": "Algo salió mal. Inténtalo de nuevo más tarde.",
       "close": "Cerrar"
-    }
+    },
+    "measurementDisclaimer": "Estimado a partir de una sola lectura de cámara (PPG): es una estimación educativa, no una medición médica. Las etiquetas de estado (Flow, Focus, Alarm…) son patrones aproximados y experimentales, no detección de emociones."
   },
   "metrics": {
     "flow": {
       "title": "Flujo: el estado de resonancia biológica",
       "shortTitle": "🌊 Flujo",
       "sections": [
-        { "heading": "El punto óptimo", "body": "El flujo es el santo grial del rendimiento. En ONDA capturamos este estado cuando tu sistema alcanza una sincronización perfecta: alta concentración con calma interna profunda. Es el momento en que estás totalmente absorto en una tarea y, sin embargo, tu cuerpo no paga un precio excesivo por ello." },
-        { "heading": "Qué significan los valores", "bullets": [
-          { "label": "0–25% · Desconectado", "text": "Faltan las condiciones para el flujo: índice de alarma elevado, energía baja o foco disperso. Intentar trabajo profundo aquí es luchar contra la biología." },
-          { "label": "25–50% · Acercándose", "text": "El sistema se calienta hacia la coherencia. El foco empieza a establecerse, el estrés disminuye. Una respiración corta o una intención clara pueden empujarte a la zona." },
-          { "label": "50–75% · En la zona", "text": "La firma biométrica del flujo está activa: HR moderado, ritmo estable, alarma baja. Eres totalmente capaz de un trabajo sostenido y de calidad con mínima fricción cognitiva." },
-          { "label": "75–100% · Resonancia profunda", "text": "Raro y óptimo. Las tres condiciones perfectamente alineadas: activación, estabilidad, silencio. Es el estado donde las horas se sienten como minutos y el rendimiento supera el esfuerzo. Protégelo." }
-        ]},
-        { "heading": "La fórmula del flujo", "body": "A diferencia de un estado de trabajo común, el flujo en ONDA tiene una firma biométrica clara:", "bullets": [
-          { "label": "Activación moderada", "text": "Tu HR está ligeramente por encima de la línea base de reposo. Eso da al cerebro el impulso y los recursos necesarios sin cruzar al estadio de alarma." },
-          { "label": "Estabilidad rítmica", "text": "Tu corazón opera como una máquina afinada — sin sacudidas ni caos. Eso te permite sostener el foco durante horas sin sentir fricción mental." },
-          { "label": "Ausencia de ruido", "text": "El índice de alarma está en cero. Estás comprometido pero no abrumado. No luchas con la tarea; te fundes con ella." }
-        ]},
-        { "heading": "¿Por qué está en ONDA?", "body": "El flujo es la forma más eficiente de existencia. Aquí produces el máximo resultado con el mínimo desgaste. ONDA te ayuda a hacer más que «caer» en él; te ayuda a entender qué condiciones (respiración, hora del día, nivel de preparación) lo provocan. Te enseñamos a encontrar tu «zona», donde el reto se ajusta exactamente a tu habilidad." },
-        { "highlight": "El flujo no es suerte; es una habilidad biofísica. Afina tu ritmo, retira el ruido sobrante, y el mundo a tu alrededor se desvanecerá, dejando solo a ti y a tu oficio." }
+        {
+          "heading": "El punto óptimo",
+          "body": "El flujo es el santo grial del rendimiento. En ONDA capturamos este estado cuando tu sistema alcanza una sincronización perfecta: alta concentración con calma interna profunda. Es el momento en que estás totalmente absorto en una tarea y, sin embargo, tu cuerpo no paga un precio excesivo por ello."
+        },
+        {
+          "heading": "Qué significan los valores",
+          "bullets": [
+            {
+              "label": "0–25% · Desconectado",
+              "text": "Faltan las condiciones para el flujo: índice de alarma elevado, energía baja o foco disperso. Intentar trabajo profundo aquí es luchar contra la biología."
+            },
+            {
+              "label": "25–50% · Acercándose",
+              "text": "El sistema se calienta hacia la coherencia. El foco empieza a establecerse, el estrés disminuye. Una respiración corta o una intención clara pueden empujarte a la zona."
+            },
+            {
+              "label": "50–75% · En la zona",
+              "text": "La firma biométrica del flujo está activa: HR moderado, ritmo estable, alarma baja. Eres totalmente capaz de un trabajo sostenido y de calidad con mínima fricción cognitiva."
+            },
+            {
+              "label": "75–100% · Resonancia profunda",
+              "text": "Raro y óptimo. Las tres condiciones perfectamente alineadas: activación, estabilidad, silencio. Es el estado donde las horas se sienten como minutos y el rendimiento supera el esfuerzo. Protégelo."
+            }
+          ]
+        },
+        {
+          "heading": "La fórmula del flujo",
+          "body": "A diferencia de un estado de trabajo común, el flujo en ONDA tiene una firma biométrica clara:",
+          "bullets": [
+            {
+              "label": "Activación moderada",
+              "text": "Tu HR está ligeramente por encima de la línea base de reposo. Eso da al cerebro el impulso y los recursos necesarios sin cruzar al estadio de alarma."
+            },
+            {
+              "label": "Estabilidad rítmica",
+              "text": "Tu corazón opera como una máquina afinada — sin sacudidas ni caos. Eso te permite sostener el foco durante horas sin sentir fricción mental."
+            },
+            {
+              "label": "Ausencia de ruido",
+              "text": "El índice de alarma está en cero. Estás comprometido pero no abrumado. No luchas con la tarea; te fundes con ella."
+            }
+          ]
+        },
+        {
+          "heading": "¿Por qué está en ONDA?",
+          "body": "El flujo es la forma más eficiente de existencia. Aquí produces el máximo resultado con el mínimo desgaste. ONDA te ayuda a hacer más que «caer» en él; te ayuda a entender qué condiciones (respiración, hora del día, nivel de preparación) lo provocan. Te enseñamos a encontrar tu «zona», donde el reto se ajusta exactamente a tu habilidad."
+        },
+        {
+          "highlight": "El flujo no es suerte; es una habilidad biofísica. Afina tu ritmo, retira el ruido sobrante, y el mundo a tu alrededor se desvanecerá, dejando solo a ti y a tu oficio."
+        }
       ]
     },
     "fatigue": {
       "title": "Fatiga: el impuesto fisiológico al esfuerzo",
       "shortTitle": "🪫 Fatiga",
       "sections": [
-        { "heading": "El coste del movimiento", "body": "La fatiga en ONDA es más que ganas de dormir. Es una medición objetiva del «coste biológico» de tus esfuerzos recientes. Registramos esta métrica cuando tus reservas de energía están agotadas y tu estrés permanece crónicamente elevado. Es la señal de que tu sistema ha pasado de una operación eficiente a un estado de desgaste." },
-        { "heading": "Qué significan los valores", "bullets": [
-          { "label": "0–20% · Recuperado", "text": "Reservas energéticas intactas, estrés bajo, HRV saludable. Tu sistema opera desde la abundancia — listo para grandes demandas." },
-          { "label": "20–45% · Carga acumulada", "text": "Desgaste normal de fin de jornada. Manejable con recuperación estándar: sueño, nutrición, una pausa. Rendimiento ligeramente reducido pero no comprometido." },
-          { "label": "45–70% · Zona de agotamiento", "text": "Déficit energético significativo. HRV cayendo, HR de reposo subiendo, recuperación lenta tras micro-estresores. Empujar aquí aumenta el riesgo de errores y de burnout." },
-          { "label": "70–100% · Alerta roja biológica", "text": "Sistema en modo de desgaste. Cualquier intento de «empujar» da rendimientos decrecientes a un coste creciente. La única acción productiva es el descanso estructurado: sueño, quietud o recuperación parasimpática profunda." }
-        ]},
-        { "heading": "La anatomía del agotamiento", "body": "Tu cuerpo reporta fatiga a través de tres marcadores biométricos:", "bullets": [
-          { "label": "HRV reducido", "text": "El corazón pierde adaptabilidad y fluidez, volviéndose «rígido» y monótono." },
-          { "label": "HR de reposo elevado", "text": "Incluso sentado, tu corazón late más rápido de lo habitual, intentando compensar el déficit de recursos internos." },
-          { "label": "Recuperación lenta", "text": "Tu capacidad de volver a la línea base tras cualquier micro-estresor (incluso una llamada) cae notablemente." }
-        ]},
-        { "heading": "¿Por qué está en ONDA?", "body": "La fatiga es insidiosa porque solemos acostumbrarnos y dejar de notar su peso. ONDA hace visible esta carga invisible. Un índice alto no es un fracaso, sino una orden de cambiar de marcha. Cualquier «aguantar» aquí da retornos decrecientes y sube el riesgo de burnout y de error." },
-        { "highlight": "La fatiga es la forma en que tu cuerpo protege sus activos. Respeta esta señal. A veces, lo más productivo que puedes hacer es dormir bien o pasar una hora en silencio." }
+        {
+          "heading": "El coste del movimiento",
+          "body": "La fatiga en ONDA es más que ganas de dormir. Es una medición objetiva del «coste biológico» de tus esfuerzos recientes. Registramos esta métrica cuando tus reservas de energía están agotadas y tu estrés permanece crónicamente elevado. Es la señal de que tu sistema ha pasado de una operación eficiente a un estado de desgaste."
+        },
+        {
+          "heading": "Qué significan los valores",
+          "bullets": [
+            {
+              "label": "0–20% · Recuperado",
+              "text": "Reservas energéticas intactas, estrés bajo, HRV saludable. Tu sistema opera desde la abundancia — listo para grandes demandas."
+            },
+            {
+              "label": "20–45% · Carga acumulada",
+              "text": "Desgaste normal de fin de jornada. Manejable con recuperación estándar: sueño, nutrición, una pausa. Rendimiento ligeramente reducido pero no comprometido."
+            },
+            {
+              "label": "45–70% · Zona de agotamiento",
+              "text": "Déficit energético significativo. HRV cayendo, HR de reposo subiendo, recuperación lenta tras micro-estresores. Empujar aquí aumenta el riesgo de errores y de burnout."
+            },
+            {
+              "label": "70–100% · Alerta roja biológica",
+              "text": "Sistema en modo de desgaste. Cualquier intento de «empujar» da rendimientos decrecientes a un coste creciente. La única acción productiva es el descanso estructurado: sueño, quietud o recuperación parasimpática profunda."
+            }
+          ]
+        },
+        {
+          "heading": "La anatomía del agotamiento",
+          "body": "Tu cuerpo reporta fatiga a través de tres marcadores biométricos:",
+          "bullets": [
+            {
+              "label": "HRV reducido",
+              "text": "El corazón pierde adaptabilidad y fluidez, volviéndose «rígido» y monótono."
+            },
+            {
+              "label": "HR de reposo elevado",
+              "text": "Incluso sentado, tu corazón late más rápido de lo habitual, intentando compensar el déficit de recursos internos."
+            },
+            {
+              "label": "Recuperación lenta",
+              "text": "Tu capacidad de volver a la línea base tras cualquier micro-estresor (incluso una llamada) cae notablemente."
+            }
+          ]
+        },
+        {
+          "heading": "¿Por qué está en ONDA?",
+          "body": "La fatiga es insidiosa porque solemos acostumbrarnos y dejar de notar su peso. ONDA hace visible esta carga invisible. Un índice alto no es un fracaso, sino una orden de cambiar de marcha. Cualquier «aguantar» aquí da retornos decrecientes y sube el riesgo de burnout y de error."
+        },
+        {
+          "highlight": "La fatiga es la forma en que tu cuerpo protege sus activos. Respeta esta señal. A veces, lo más productivo que puedes hacer es dormir bien o pasar una hora en silencio."
+        }
       ]
     },
     "excitement": {
       "title": "Excitación: la energía de la anticipación",
       "shortTitle": "✨ Excitación",
       "sections": [
-        { "heading": "Empuje positivo", "body": "La excitación es un estado de movilización «luminosa» del sistema. Como la ansiedad, implica un alza de HR y de la frecuencia respiratoria, pero con una distinción crítica: en ONDA este índice solo sube si el estrés permanece en rango saludable. No es una respuesta a una amenaza, sino una preparación para el juego, la creatividad o un evento significativo." },
-        { "heading": "Qué significan los valores", "bullets": [
-          { "label": "0–20% · Neutro", "text": "Sin activación positiva detectada. Sistema en reposo o baja activación. Útil para recuperación, no para rendimiento o creatividad." },
-          { "label": "20–50% · Carga ligera", "text": "Energización suave — el cuerpo se calienta con motivación y leve anticipación. Ideal para iniciar tareas que requieren compromiso sostenido." },
-          { "label": "50–75% · Empuje", "text": "Movilización positiva clara con ritmo estable. HR elevado pero estrés contenido. Es la zona óptima para trabajo de alto rendimiento, deporte o flujo creativo." },
-          { "label": "75–100% · Pico", "text": "Eustrés máximo. Sistema totalmente preparado. Estado raro y limitado en el tiempo — úsalo estratégicamente. Pasa a ansiedad si los marcadores de estrés empiezan a subir en paralelo." }
-        ]},
-        { "heading": "La biología de la alegría", "body": "En estado de excitación, el cuerpo se prepara para la acción, pero lo hace de forma eficiente:", "bullets": [
-          { "label": "Subida productiva", "text": "El corazón late más rápido para saturar de oxígeno músculos y cerebro, pero el ritmo se mantiene estable y firme." },
-          { "label": "Eustrés", "text": "Es el «estrés positivo» — el que no agota tus reservas, sino que te hace sentir vivo y comprometido." },
-          { "label": "Sin contracción", "text": "A diferencia de la ansiedad, no hay «visión túnel». Conservas una mirada amplia y una alta capacidad creativa." }
-        ]},
-        { "heading": "¿Por qué está en ONDA?", "body": "Te ayudamos a recalibrar tus señales internas. A menudo confundimos excitación con ansiedad y tratamos de suprimirla. ONDA revela la verdad: «Tu HR está alto, pero tu sistema es estable — no tienes miedo, solo estás cargado». Esto te permite usar la energía de la excitación como combustible y no como motivo de preocupación." },
-        { "highlight": "La excitación es energía dirigida hacia fuera. Abraza la subida; es señal de que tu sistema está listo para la grandeza." }
+        {
+          "heading": "Empuje positivo",
+          "body": "La excitación es un estado de movilización «luminosa» del sistema. Como la ansiedad, implica un alza de HR y de la frecuencia respiratoria, pero con una distinción crítica: en ONDA este índice solo sube si el estrés permanece en rango saludable. No es una respuesta a una amenaza, sino una preparación para el juego, la creatividad o un evento significativo."
+        },
+        {
+          "heading": "Qué significan los valores",
+          "bullets": [
+            {
+              "label": "0–20% · Neutro",
+              "text": "Sin activación positiva detectada. Sistema en reposo o baja activación. Útil para recuperación, no para rendimiento o creatividad."
+            },
+            {
+              "label": "20–50% · Carga ligera",
+              "text": "Energización suave — el cuerpo se calienta con motivación y leve anticipación. Ideal para iniciar tareas que requieren compromiso sostenido."
+            },
+            {
+              "label": "50–75% · Empuje",
+              "text": "Movilización positiva clara con ritmo estable. HR elevado pero estrés contenido. Es la zona óptima para trabajo de alto rendimiento, deporte o flujo creativo."
+            },
+            {
+              "label": "75–100% · Pico",
+              "text": "Eustrés máximo. Sistema totalmente preparado. Estado raro y limitado en el tiempo — úsalo estratégicamente. Pasa a ansiedad si los marcadores de estrés empiezan a subir en paralelo."
+            }
+          ]
+        },
+        {
+          "heading": "La biología de la alegría",
+          "body": "En estado de excitación, el cuerpo se prepara para la acción, pero lo hace de forma eficiente:",
+          "bullets": [
+            {
+              "label": "Subida productiva",
+              "text": "El corazón late más rápido para saturar de oxígeno músculos y cerebro, pero el ritmo se mantiene estable y firme."
+            },
+            {
+              "label": "Eustrés",
+              "text": "Es el «estrés positivo» — el que no agota tus reservas, sino que te hace sentir vivo y comprometido."
+            },
+            {
+              "label": "Sin contracción",
+              "text": "A diferencia de la ansiedad, no hay «visión túnel». Conservas una mirada amplia y una alta capacidad creativa."
+            }
+          ]
+        },
+        {
+          "heading": "¿Por qué está en ONDA?",
+          "body": "Te ayudamos a recalibrar tus señales internas. A menudo confundimos excitación con ansiedad y tratamos de suprimirla. ONDA revela la verdad: «Tu HR está alto, pero tu sistema es estable — no tienes miedo, solo estás cargado». Esto te permite usar la energía de la excitación como combustible y no como motivo de preocupación."
+        },
+        {
+          "highlight": "La excitación es energía dirigida hacia fuera. Abraza la subida; es señal de que tu sistema está listo para la grandeza."
+        }
       ]
     },
     "focus": {
       "title": "Foco / concentración: la fisiología de la inmersión",
       "shortTitle": "🎯 Foco / concentración",
       "sections": [
-        { "heading": "El estado de flujo", "body": "Foco / concentración no es un acto de voluntad, sino el resultado de la armonía del sistema. En ONDA este índice se calcula como el balance entre tu nivel de energía y la ausencia de ruido interno (estrés). Es la expresión matemática del «flujo» — donde el cerebro opera al máximo sin recalentar el «procesador» con activación emocional excesiva." },
-        { "heading": "Qué significan los valores", "bullets": [
-          { "label": "0–25% · Disperso", "text": "Mucho ruido interno o poca energía. La atención sostenida es biológicamente inaccesible. Las tareas requerirán esfuerzo desproporcionado con baja calidad." },
-          { "label": "25–50% · Calentando", "text": "El sistema está parcialmente disponible para el foco. Tareas superficiales son posibles, pero el trabajo cognitivo profundo será fragmentado. Una breve respiración puede llevarte a la siguiente zona." },
-          { "label": "50–75% · Comprometido", "text": "Energía suficiente, estrés moderado. Eres capaz de concentración sostenida. Es la zona estándar de trabajo de la mayoría de personas productivas." },
-          { "label": "75–100% · Foco profundo", "text": "Estado óptimo. Corteza prefrontal totalmente al mando, amígdala silenciosa, ritmo estable. Es la firma fisiológica del flujo — donde el esfuerzo desaparece y el rendimiento alcanza su pico." }
-        ]},
-        { "heading": "La arquitectura de la atención", "body": "En ONDA, la concentración pico ocurre cuando se cumplen tres condiciones:", "bullets": [
-          { "label": "HR moderado", "text": "Tu corazón no se dispara, pero tampoco «duerme». Es la zona de activación óptima, donde el cerebro recibe los recursos justos para tareas complejas." },
-          { "label": "Ritmo estable", "text": "La ausencia de picos bruscos (CSI bajo) significa que el sistema nervioso no se distrae con interferencias internas." },
-          { "label": "Estrés bajo", "text": "Tu amígdala está calma, permitiendo que la corteza prefrontal mantenga el control total del foco atencional." }
-        ]},
-        { "heading": "¿Por qué importa para ONDA?", "body": "A menudo confundimos «estar ocupado» con «ser productivo». El índice de foco revela la diferencia. Puedes estar muy ocupado, pero si tu puntuación de concentración es baja, gastas tres veces más energía en la misma tarea. ONDA te ayuda a capturar ese momento de «alerta tranquila» — donde estás profundamente atento y biológicamente sereno." },
-        { "highlight": "El foco no es lo que haces; es el estado en el que estás. Crea silencio en tu ritmo, y la atención lo seguirá naturalmente." }
+        {
+          "heading": "El estado de flujo",
+          "body": "Foco / concentración no es un acto de voluntad, sino el resultado de la armonía del sistema. En ONDA este índice se calcula como el balance entre tu nivel de energía y la ausencia de ruido interno (estrés). Es la expresión matemática del «flujo» — donde el cerebro opera al máximo sin recalentar el «procesador» con activación emocional excesiva."
+        },
+        {
+          "heading": "Qué significan los valores",
+          "bullets": [
+            {
+              "label": "0–25% · Disperso",
+              "text": "Mucho ruido interno o poca energía. La atención sostenida es biológicamente inaccesible. Las tareas requerirán esfuerzo desproporcionado con baja calidad."
+            },
+            {
+              "label": "25–50% · Calentando",
+              "text": "El sistema está parcialmente disponible para el foco. Tareas superficiales son posibles, pero el trabajo cognitivo profundo será fragmentado. Una breve respiración puede llevarte a la siguiente zona."
+            },
+            {
+              "label": "50–75% · Comprometido",
+              "text": "Energía suficiente, estrés moderado. Eres capaz de concentración sostenida. Es la zona estándar de trabajo de la mayoría de personas productivas."
+            },
+            {
+              "label": "75–100% · Foco profundo",
+              "text": "Estado óptimo. Corteza prefrontal totalmente al mando, amígdala silenciosa, ritmo estable. Es la firma fisiológica del flujo — donde el esfuerzo desaparece y el rendimiento alcanza su pico."
+            }
+          ]
+        },
+        {
+          "heading": "La arquitectura de la atención",
+          "body": "En ONDA, la concentración pico ocurre cuando se cumplen tres condiciones:",
+          "bullets": [
+            {
+              "label": "HR moderado",
+              "text": "Tu corazón no se dispara, pero tampoco «duerme». Es la zona de activación óptima, donde el cerebro recibe los recursos justos para tareas complejas."
+            },
+            {
+              "label": "Ritmo estable",
+              "text": "La ausencia de picos bruscos (CSI bajo) significa que el sistema nervioso no se distrae con interferencias internas."
+            },
+            {
+              "label": "Estrés bajo",
+              "text": "Tu amígdala está calma, permitiendo que la corteza prefrontal mantenga el control total del foco atencional."
+            }
+          ]
+        },
+        {
+          "heading": "¿Por qué importa para ONDA?",
+          "body": "A menudo confundimos «estar ocupado» con «ser productivo». El índice de foco revela la diferencia. Puedes estar muy ocupado, pero si tu puntuación de concentración es baja, gastas tres veces más energía en la misma tarea. ONDA te ayuda a capturar ese momento de «alerta tranquila» — donde estás profundamente atento y biológicamente sereno."
+        },
+        {
+          "highlight": "El foco no es lo que haces; es el estado en el que estás. Crea silencio en tu ritmo, y la atención lo seguirá naturalmente."
+        }
       ]
     },
     "relaxation": {
       "title": "Relajación / calma: el estado de quietud profunda",
       "shortTitle": "🌿 Relajación / calma",
       "sections": [
-        { "heading": "El arte de la presencia", "body": "Relajación / calma no es solo la ausencia de estrés; es un estado activo de bienestar fisiológico. En ONDA este índice se calcula como el inverso del caos (CSI) combinado con la reserva de energía. Mide cuán eficientemente tu sistema ha despejado el ruido biológico y se ha preparado para un descanso de calidad o una creatividad profunda." },
-        { "heading": "Qué significan los valores", "bullets": [
-          { "label": "0–25% · Tensión superficial", "text": "El sistema aún arrastra ruido biológico — CSI elevado, respiración superficial o reserva energética baja. El verdadero descanso aún no es accesible. Hace falta intervenir (respiración lenta, quietud)." },
-          { "label": "25–50% · Asentando", "text": "El sistema nervioso empieza a bajar de marcha. El ritmo se estabiliza. Es la zona de transición — el cuerpo va camino a la calma pero aún no ha llegado." },
-          { "label": "50–75% · Calma activa", "text": "Bajo ruido biológico, respiración estable, suficiente margen energético. Estás en alerta tranquila — totalmente presente y abierto, sin trasfondo de vigilancia." },
-          { "label": "75–100% · Quietud profunda", "text": "Estado óptimo para la regeneración, la creatividad y el foco profundo. La reparación tisular se acelera, la inmunidad alcanza su pico, el cerebro entra en modo de consolidación e insight." }
-        ]},
-        { "heading": "La firma de la «alerta tranquila»", "body": "Una calma alta es el resultado de tres factores sincronizados:", "bullets": [
-          { "label": "Pureza rítmica", "text": "Tu corazón late con fluctuaciones mínimas e injustificadas (CSI bajo)." },
-          { "label": "Respiración estable", "text": "Un ritmo lento y regular de inhalaciones y exhalaciones que nutre el cerebro sin sobrecargar el sistema." },
-          { "label": "Margen biológico", "text": "Tu corazón tiene un amplio «margen cardiovascular» (Reserva de energía), permitiéndote permanecer relajado incluso si cambia el entorno." }
-        ]},
-        { "heading": "¿Por qué importa para ONDA?", "body": "El estado de calma es el modo en que el cuerpo pasa de la supervivencia al florecimiento. Es en esta zona donde ocurre la máxima regeneración tisular, el fortalecimiento inmunitario y la «recableado» neural. Seguimos esta métrica para que aprendas no solo a relajarte, sino a alcanzar la alerta tranquila — un estado donde estás profundamente calmo y, a la vez, totalmente presente y atento." },
-        { "highlight": "La relajación no es debilidad; es la forma suprema de la eficiencia. Cuanto mayor tu calma, menos esfuerzo cuesta seguir siendo tú." }
+        {
+          "heading": "El arte de la presencia",
+          "body": "Relajación / calma no es solo la ausencia de estrés; es un estado activo de bienestar fisiológico. En ONDA este índice se calcula como el inverso del caos (CSI) combinado con la reserva de energía. Mide cuán eficientemente tu sistema ha despejado el ruido biológico y se ha preparado para un descanso de calidad o una creatividad profunda."
+        },
+        {
+          "heading": "Qué significan los valores",
+          "bullets": [
+            {
+              "label": "0–25% · Tensión superficial",
+              "text": "El sistema aún arrastra ruido biológico — CSI elevado, respiración superficial o reserva energética baja. El verdadero descanso aún no es accesible. Hace falta intervenir (respiración lenta, quietud)."
+            },
+            {
+              "label": "25–50% · Asentando",
+              "text": "El sistema nervioso empieza a bajar de marcha. El ritmo se estabiliza. Es la zona de transición — el cuerpo va camino a la calma pero aún no ha llegado."
+            },
+            {
+              "label": "50–75% · Calma activa",
+              "text": "Bajo ruido biológico, respiración estable, suficiente margen energético. Estás en alerta tranquila — totalmente presente y abierto, sin trasfondo de vigilancia."
+            },
+            {
+              "label": "75–100% · Quietud profunda",
+              "text": "Estado óptimo para la regeneración, la creatividad y el foco profundo. La reparación tisular se acelera, la inmunidad alcanza su pico, el cerebro entra en modo de consolidación e insight."
+            }
+          ]
+        },
+        {
+          "heading": "La firma de la «alerta tranquila»",
+          "body": "Una calma alta es el resultado de tres factores sincronizados:",
+          "bullets": [
+            {
+              "label": "Pureza rítmica",
+              "text": "Tu corazón late con fluctuaciones mínimas e injustificadas (CSI bajo)."
+            },
+            {
+              "label": "Respiración estable",
+              "text": "Un ritmo lento y regular de inhalaciones y exhalaciones que nutre el cerebro sin sobrecargar el sistema."
+            },
+            {
+              "label": "Margen biológico",
+              "text": "Tu corazón tiene un amplio «margen cardiovascular» (Reserva de energía), permitiéndote permanecer relajado incluso si cambia el entorno."
+            }
+          ]
+        },
+        {
+          "heading": "¿Por qué importa para ONDA?",
+          "body": "El estado de calma es el modo en que el cuerpo pasa de la supervivencia al florecimiento. Es en esta zona donde ocurre la máxima regeneración tisular, el fortalecimiento inmunitario y la «recableado» neural. Seguimos esta métrica para que aprendas no solo a relajarte, sino a alcanzar la alerta tranquila — un estado donde estás profundamente calmo y, a la vez, totalmente presente y atento."
+        },
+        {
+          "highlight": "La relajación no es debilidad; es la forma suprema de la eficiencia. Cuanto mayor tu calma, menos esfuerzo cuesta seguir siendo tú."
+        }
       ]
     },
     "alarm": {
       "title": "Alarma: el código rojo de tu sistema",
       "shortTitle": "🚨 Alarma",
       "sections": [
-        { "heading": "El detector invisible de amenazas", "body": "Alarma es un índice compuesto en ONDA que analiza la sinergia entre tu HR y tu respiración. Buscamos un patrón específico: un alza simultánea de HR y de la frecuencia respiratoria. Es la firma biológica clásica del modo «lucha o huida». Esta métrica captura el momento exacto en que tu sistema nervioso autónomo deja de simplemente funcionar y empieza a prepararse para defenderse." },
-        { "heading": "Qué significan los valores", "bullets": [
-          { "label": "0–20% · Calma basal", "text": "Sin señales de alarma. HR y respiración en estado equilibrado de baja activación. El sistema nervioso está totalmente en modo parasimpático." },
-          { "label": "20–50% · Activación leve", "text": "Activación de bajo nivel — normal durante trabajo concentrado o actividad ligera. Cuerpo alerta pero no movilizado. Manejable sin intervención." },
-          { "label": "50–75% · Alarma elevada", "text": "Patrón claro de lucha-o-huida emergiendo. HR sube junto con la respiración. Es la zona del estrés crónico no notado — puedes sentirte «bien», pero tu biología no está de acuerdo." },
-          { "label": "75–100% · Movilización aguda", "text": "Subida simpática total. La amígdala ha tomado el control. Cortisol y adrenalina disparados. Aquí, una intervención inmediata —exhalación profunda, pausa, reseteo con apnea— resulta muy eficaz." }
-        ]},
-        { "heading": "El eco psicosomático", "body": "Valores altos en este índice indican que el cuerpo está en movilización aguda:", "bullets": [
-          { "label": "Nivel biológico", "text": "La sangre se redistribuye desde los órganos digestivos a los músculos, el cerebro recibe señal de peligro externo y el cortisol se dispara." },
-          { "label": "Nivel mental", "text": "La corteza prefrontal (responsable de la lógica) cede ante la amígdala. Aparecen inquietud, visión túnel o «contractura» cognitiva." }
-        ]},
-        { "heading": "¿Por qué está en ONDA?", "body": "La ansiedad suele disfrazarse de fatiga ordinaria o alta productividad. El índice de alarma te permite ver la verdad: puede que solo estés tomando café, pero tu cuerpo se comporta como si lo estuviese cazando un depredador. ONDA te da la oportunidad de detectar este patrón a tiempo y «cancelar» la señal con respiración consciente, antes de que se convierta en pánico o burnout." },
-        { "highlight": "El cuerpo no miente. Si la alarma sube, no es razón para entrar en pánico — es razón para una exhalación profunda. Recupera el control a través del cuerpo cuando la mente parece impotente." }
+        {
+          "heading": "El detector invisible de amenazas",
+          "body": "Alarma es un índice compuesto en ONDA que analiza la sinergia entre tu HR y tu respiración. Buscamos un patrón específico: un alza simultánea de HR y de la frecuencia respiratoria. Es la firma biológica clásica del modo «lucha o huida». Esta métrica captura el momento exacto en que tu sistema nervioso autónomo deja de simplemente funcionar y empieza a prepararse para defenderse."
+        },
+        {
+          "heading": "Qué significan los valores",
+          "bullets": [
+            {
+              "label": "0–20% · Calma basal",
+              "text": "Sin señales de alarma. HR y respiración en estado equilibrado de baja activación. El sistema nervioso está totalmente en modo parasimpático."
+            },
+            {
+              "label": "20–50% · Activación leve",
+              "text": "Activación de bajo nivel — normal durante trabajo concentrado o actividad ligera. Cuerpo alerta pero no movilizado. Manejable sin intervención."
+            },
+            {
+              "label": "50–75% · Alarma elevada",
+              "text": "Patrón claro de lucha-o-huida emergiendo. HR sube junto con la respiración. Es la zona del estrés crónico no notado — puedes sentirte «bien», pero tu biología no está de acuerdo."
+            },
+            {
+              "label": "75–100% · Movilización aguda",
+              "text": "Subida simpática total. La amígdala ha tomado el control. Cortisol y adrenalina disparados. Aquí, una intervención inmediata —exhalación profunda, pausa, reseteo con apnea— resulta muy eficaz."
+            }
+          ]
+        },
+        {
+          "heading": "El eco psicosomático",
+          "body": "Valores altos en este índice indican que el cuerpo está en movilización aguda:",
+          "bullets": [
+            {
+              "label": "Nivel biológico",
+              "text": "La sangre se redistribuye desde los órganos digestivos a los músculos, el cerebro recibe señal de peligro externo y el cortisol se dispara."
+            },
+            {
+              "label": "Nivel mental",
+              "text": "La corteza prefrontal (responsable de la lógica) cede ante la amígdala. Aparecen inquietud, visión túnel o «contractura» cognitiva."
+            }
+          ]
+        },
+        {
+          "heading": "¿Por qué está en ONDA?",
+          "body": "La ansiedad suele disfrazarse de fatiga ordinaria o alta productividad. El índice de alarma te permite ver la verdad: puede que solo estés tomando café, pero tu cuerpo se comporta como si lo estuviese cazando un depredador. ONDA te da la oportunidad de detectar este patrón a tiempo y «cancelar» la señal con respiración consciente, antes de que se convierta en pánico o burnout."
+        },
+        {
+          "highlight": "El cuerpo no miente. Si la alarma sube, no es razón para entrar en pánico — es razón para una exhalación profunda. Recupera el control a través del cuerpo cuando la mente parece impotente."
+        }
       ]
     },
     "acceleration": {
       "title": "Aceleración del HR: la intensidad de la respuesta biológica",
       "shortTitle": "⚡ Aceleración del HR",
       "sections": [
-        { "heading": "Dinámica más allá de la velocidad", "body": "La aceleración del HR es la segunda derivada de tu ritmo cardíaco. Si la pendiente de tendencia muestra la dirección del movimiento, la aceleración mide la intensidad con la que ese movimiento gana inercia. Es un indicador de cuán bruscamente el sistema «pisa el acelerador» o, por el contrario, con cuánta suavidad empieza a frenar." },
-        { "heading": "Leer el impulso", "body": "La aceleración revela la dinámica oculta de tu adaptación:", "bullets": [
-          { "label": "Aceleración positiva · Subida", "text": "Tu HR empieza a subir más rápido que hace un segundo. Es señal de una reacción «aguda» — un susto, un pensamiento brusco sobre un plazo, un estallido físico. Tu sistema simpático trabaja a tope, movilizando recursos aquí y ahora." },
-          { "label": "Aceleración negativa · Desaceleración", "text": "La tasa de cambio del HR está cayendo. Aunque el corazón siga latiendo rápido, ha dejado de acelerar. Es la primera señal de que el pico ha pasado y el sistema empieza a estabilizarse. Estás recuperando el control sobre el estrés." }
-        ]},
-        { "heading": "¿Por qué está en ONDA?", "body": "La aceleración del HR es un detector de tu reactividad. Picos excesivamente bruscos pueden indicar alta ansiedad o un umbral bajo de tolerancia al estrés. ONDA rastrea estos «tirones», ayudándote a desarrollar suavidad biológica — la capacidad de entrar en estados de alto rendimiento sin las subidas bruscas y agotadoras que drenan el sistema." },
-        { "highlight": "La fuerza no está en el subidón, sino en la suavidad de la transición. Cuantas menos aceleraciones bruscas en tu ritmo, mejor preservas tu energía vital." }
+        {
+          "heading": "Dinámica más allá de la velocidad",
+          "body": "La aceleración del HR es la segunda derivada de tu ritmo cardíaco. Si la pendiente de tendencia muestra la dirección del movimiento, la aceleración mide la intensidad con la que ese movimiento gana inercia. Es un indicador de cuán bruscamente el sistema «pisa el acelerador» o, por el contrario, con cuánta suavidad empieza a frenar."
+        },
+        {
+          "heading": "Leer el impulso",
+          "body": "La aceleración revela la dinámica oculta de tu adaptación:",
+          "bullets": [
+            {
+              "label": "Aceleración positiva · Subida",
+              "text": "Tu HR empieza a subir más rápido que hace un segundo. Es señal de una reacción «aguda» — un susto, un pensamiento brusco sobre un plazo, un estallido físico. Tu sistema simpático trabaja a tope, movilizando recursos aquí y ahora."
+            },
+            {
+              "label": "Aceleración negativa · Desaceleración",
+              "text": "La tasa de cambio del HR está cayendo. Aunque el corazón siga latiendo rápido, ha dejado de acelerar. Es la primera señal de que el pico ha pasado y el sistema empieza a estabilizarse. Estás recuperando el control sobre el estrés."
+            }
+          ]
+        },
+        {
+          "heading": "¿Por qué está en ONDA?",
+          "body": "La aceleración del HR es un detector de tu reactividad. Picos excesivamente bruscos pueden indicar alta ansiedad o un umbral bajo de tolerancia al estrés. ONDA rastrea estos «tirones», ayudándote a desarrollar suavidad biológica — la capacidad de entrar en estados de alto rendimiento sin las subidas bruscas y agotadoras que drenan el sistema."
+        },
+        {
+          "highlight": "La fuerza no está en el subidón, sino en la suavidad de la transición. Cuantas menos aceleraciones bruscas en tu ritmo, mejor preservas tu energía vital."
+        }
       ]
     },
     "slope": {
       "title": "Pendiente de tendencia del HR: el vector de dirección biológica",
       "shortTitle": "📈 Pendiente de tendencia del HR",
       "sections": [
-        { "heading": "La dirección del flujo", "body": "La pendiente de tendencia del HR es un indicador matemático de hacia dónde se dirige tu sistema ahora mismo. Usamos regresión lineal para entender la trayectoria global del HR durante la ventana de medición. No es solo un número; es una aguja de brújula que apunta al futuro fisiológico inmediato." },
-        { "heading": "Leer el vector", "body": "La dirección de la pendiente habla de la dinámica de tu adaptación:", "bullets": [
-          { "label": "Pendiente negativa · Descendente", "text": "Tu HR baja de forma gradual. Es la clásica «respuesta de relajación». El sistema nervioso amortigua el arousal y entra en modo de recuperación. Escenario ideal para meditación o cierre del día." },
-          { "label": "Pendiente positiva · Ascendente", "text": "Tu HR se acelera. Es signo de un aumento de la activación emocional o física. El cuerpo se prepara para actuar o reacciona a un estresor surgido durante la sesión." },
-          { "label": "Pendiente cero · Meseta", "text": "Estado estable. El sistema está en equilibrio, manteniendo su nivel de activación sin oscilaciones bruscas." }
-        ]},
-        { "heading": "¿Por qué está en ONDA?", "body": "La pendiente de tendencia te permite ver la inercia del sistema nervioso. Si intentas relajarte y la tendencia sigue siendo positiva, significa que tu «freno» aún no ha entrado. Esta métrica te ayuda a entender si tu práctica (respiración, música, pausa) está cambiando realmente tu rumbo biológico." },
-        { "highlight": "No se trata de dónde estás, sino de hacia dónde te mueves. Una tendencia negativa es tu billete a la restauración profunda." }
+        {
+          "heading": "La dirección del flujo",
+          "body": "La pendiente de tendencia del HR es un indicador matemático de hacia dónde se dirige tu sistema ahora mismo. Usamos regresión lineal para entender la trayectoria global del HR durante la ventana de medición. No es solo un número; es una aguja de brújula que apunta al futuro fisiológico inmediato."
+        },
+        {
+          "heading": "Leer el vector",
+          "body": "La dirección de la pendiente habla de la dinámica de tu adaptación:",
+          "bullets": [
+            {
+              "label": "Pendiente negativa · Descendente",
+              "text": "Tu HR baja de forma gradual. Es la clásica «respuesta de relajación». El sistema nervioso amortigua el arousal y entra en modo de recuperación. Escenario ideal para meditación o cierre del día."
+            },
+            {
+              "label": "Pendiente positiva · Ascendente",
+              "text": "Tu HR se acelera. Es signo de un aumento de la activación emocional o física. El cuerpo se prepara para actuar o reacciona a un estresor surgido durante la sesión."
+            },
+            {
+              "label": "Pendiente cero · Meseta",
+              "text": "Estado estable. El sistema está en equilibrio, manteniendo su nivel de activación sin oscilaciones bruscas."
+            }
+          ]
+        },
+        {
+          "heading": "¿Por qué está en ONDA?",
+          "body": "La pendiente de tendencia te permite ver la inercia del sistema nervioso. Si intentas relajarte y la tendencia sigue siendo positiva, significa que tu «freno» aún no ha entrado. Esta métrica te ayuda a entender si tu práctica (respiración, música, pausa) está cambiando realmente tu rumbo biológico."
+        },
+        {
+          "highlight": "No se trata de dónde estás, sino de hacia dónde te mueves. Una tendencia negativa es tu billete a la restauración profunda."
+        }
       ]
     },
     "recovery": {
       "title": "Velocidad de recuperación: el índice del retorno a uno mismo",
       "shortTitle": "🔄 Velocidad de recuperación %",
       "sections": [
-        { "heading": "El arte del cierre", "body": "La velocidad de recuperación mide cuán eficientemente tu corazón puede «bajar de marcha» tras un esfuerzo. En ONDA calculamos la rapidez con la que tu HR vuelve desde su pico en la sesión actual hacia tu media base. Es la medida de tu capacidad para salir de un estado de activación y volver a tu centro de gravedad." },
-        { "heading": "¿Por qué importa?", "body": "En la naturaleza no sobrevive el más rápido en la carrera, sino el que se calma antes tras la persecución. En el mundo moderno funciona igual:", "bullets": [
-          { "label": "0% · Atascado", "text": "Tu HR está congelado en su pico. El cuerpo sigue «luchando con sombras» incluso cuando el disparador externo ya no está. Es señal de rigidez del sistema nervioso y fatiga acumulada." },
-          { "label": "100% · Calma total", "text": "El corazón ha vuelto plenamente a su línea base o por debajo. Es el estándar de oro de la flexibilidad biológica." }
-        ]},
-        { "heading": "El eco biológico", "body": "Tu velocidad de recuperación depende directamente del tono del nervio vago. Una alta tasa significa que tu «freno parasimpático» funciona perfectamente. Permite cambiar entre tareas sin arrastrar el estrés del momento previo al siguiente." },
-        { "highlight": "No importa la altura del pico, sino la velocidad del descenso. La verdadera fuerza está en volver pronto al equilibrio." }
+        {
+          "heading": "El arte del cierre",
+          "body": "La velocidad de recuperación mide cuán eficientemente tu corazón puede «bajar de marcha» tras un esfuerzo. En ONDA calculamos la rapidez con la que tu HR vuelve desde su pico en la sesión actual hacia tu media base. Es la medida de tu capacidad para salir de un estado de activación y volver a tu centro de gravedad."
+        },
+        {
+          "heading": "¿Por qué importa?",
+          "body": "En la naturaleza no sobrevive el más rápido en la carrera, sino el que se calma antes tras la persecución. En el mundo moderno funciona igual:",
+          "bullets": [
+            {
+              "label": "0% · Atascado",
+              "text": "Tu HR está congelado en su pico. El cuerpo sigue «luchando con sombras» incluso cuando el disparador externo ya no está. Es señal de rigidez del sistema nervioso y fatiga acumulada."
+            },
+            {
+              "label": "100% · Calma total",
+              "text": "El corazón ha vuelto plenamente a su línea base o por debajo. Es el estándar de oro de la flexibilidad biológica."
+            }
+          ]
+        },
+        {
+          "heading": "El eco biológico",
+          "body": "Tu velocidad de recuperación depende directamente del tono del nervio vago. Una alta tasa significa que tu «freno parasimpático» funciona perfectamente. Permite cambiar entre tareas sin arrastrar el estrés del momento previo al siguiente."
+        },
+        {
+          "highlight": "No importa la altura del pico, sino la velocidad del descenso. La verdadera fuerza está en volver pronto al equilibrio."
+        }
       ]
     },
     "csi": {
       "title": "CSI: Índice de estabilidad cardíaca",
       "shortTitle": "🎯 Índice de estabilidad cardíaca (CSI)",
       "sections": [
-        { "heading": "La arquitectura del ritmo", "body": "CSI (Cardiac Stability Index) es un coeficiente único que permite a ONDA mirar más profundo que el pulso ordinario. Tomamos la desviación estándar de tus ciclos cardíacos y la dividimos por la frecuencia media. Esto permite medir la pura consistencia del corazón, independientemente de cuán rápido lata en este momento." },
-        { "heading": "Estabilidad vs. caos", "body": "El CSI es el detector del «ruido biológico» del sistema:", "bullets": [
-          { "label": "0,03–0,10 · Estabilidad de diamante", "text": "Tu corazón opera con la precisión de un reloj suizo. Es un estado de profunda confianza fisiológica. El sistema no malgasta recursos en oscilaciones innecesarias y trabaja en máxima economía y foco." },
-          { "label": "0,11–0,24 · Equilibrio dinámico", "text": "El ritmo natural de un organismo vivo. El corazón se adapta con fluidez a los estímulos manteniendo su integridad estructural." },
-          { "label": "0,25+ · Ruido biológico", "text": "Señal de inestabilidad. Un CSI alto suele indicar «glitches» en la transmisión nerviosa, fatiga extrema o ruido de medición. El sistema pierde el control del ritmo." }
-        ]},
-        { "heading": "¿Por qué importa para ONDA?", "body": "El CSI es la base sobre la que se construye tu Estrés %. Mientras el HRV nos habla de tu flexibilidad, el CSI informa sobre tu fiabilidad estructural. Un CSI bajo es señal de que tu «sistema operativo» interno corre sin errores en el código." },
-        { "highlight": "La verdadera fuerza está en la estabilidad. Cuanto menos ruido en tu ritmo, más claridad en tu mente." }
+        {
+          "heading": "La arquitectura del ritmo",
+          "body": "CSI (Cardiac Stability Index) es un coeficiente único que permite a ONDA mirar más profundo que el pulso ordinario. Tomamos la desviación estándar de tus ciclos cardíacos y la dividimos por la frecuencia media. Esto permite medir la pura consistencia del corazón, independientemente de cuán rápido lata en este momento."
+        },
+        {
+          "heading": "Estabilidad vs. caos",
+          "body": "El CSI es el detector del «ruido biológico» del sistema:",
+          "bullets": [
+            {
+              "label": "0,03–0,10 · Estabilidad de diamante",
+              "text": "Tu corazón opera con la precisión de un reloj suizo. Es un estado de profunda confianza fisiológica. El sistema no malgasta recursos en oscilaciones innecesarias y trabaja en máxima economía y foco."
+            },
+            {
+              "label": "0,11–0,24 · Equilibrio dinámico",
+              "text": "El ritmo natural de un organismo vivo. El corazón se adapta con fluidez a los estímulos manteniendo su integridad estructural."
+            },
+            {
+              "label": "0,25+ · Ruido biológico",
+              "text": "Señal de inestabilidad. Un CSI alto suele indicar «glitches» en la transmisión nerviosa, fatiga extrema o ruido de medición. El sistema pierde el control del ritmo."
+            }
+          ]
+        },
+        {
+          "heading": "¿Por qué importa para ONDA?",
+          "body": "El CSI es la base sobre la que se construye tu Estrés %. Mientras el HRV nos habla de tu flexibilidad, el CSI informa sobre tu fiabilidad estructural. Un CSI bajo es señal de que tu «sistema operativo» interno corre sin errores en el código."
+        },
+        {
+          "highlight": "La verdadera fuerza está en la estabilidad. Cuanto menos ruido en tu ritmo, más claridad en tu mente."
+        }
       ]
     },
     "hrv": {
       "title": "HRV: el índice de tu agilidad biológica",
       "shortTitle": "📊 HRV (RMSSD)",
       "sections": [
-        { "heading": "El microscopio interior", "body": "El HRV (Variabilidad de la Frecuencia Cardíaca) es la métrica más sofisticada e informativa del arsenal de ONDA. A diferencia del HR, que solo cuenta latidos, el HRV mide las fluctuaciones microscópicas de tiempo entre ellos en milisegundos. Usamos el algoritmo RMSSD para evaluar con qué fluidez responde el corazón a cada movimiento, pensamiento o respiración." },
-        { "heading": "Un espejo del nervio vago", "body": "El HRV es un reporte directo del estado del nervio vago:", "bullets": [
-          { "label": "HRV alto (40–70 ms y más)", "text": "El corazón se adapta al instante a los cambios. Señal de una respuesta parasimpática potente. Estás en alta resiliencia biológica: tranquilo, enfocado y listo para actuar." },
-          { "label": "HRV bajo (por debajo de 20–25 ms)", "text": "El sistema autónomo está «bloqueado». El corazón late demasiado métricamente, como un robot. Es señal de que las reservas de recuperación se agotaron y el sistema opera al borde de su capacidad adaptativa." }
-        ]},
-        { "heading": "Por qué importa más que el pulso", "body": "Dos personas pueden tener el mismo HR y un perfil de salud completamente distinto. La diferencia está en el HRV. Una alta variabilidad significa que tu «SO interno» escanea el entorno y micro-ajusta el ritmo. Una baja variabilidad es señal de fragilidad biológica." },
-        { "heading": "Entrenar con ONDA", "body": "El HRV es dinámico. Cae con alcohol, falta de sueño o sobreentrenamiento, pero puede «fortalecerse». Usando los protocolos de respiración de ONDA estás entrenando tu nervio vago, elevando el HRV base y, por tanto, tu resiliencia ante las tormentas." },
-        { "highlight": "Un HRV alto es tu capacidad de doblarte sin romperte. Es la medida de tu fuerza vital, expresada en milisegundos." }
+        {
+          "heading": "El microscopio interior",
+          "body": "El HRV (Variabilidad de la Frecuencia Cardíaca) es la métrica más sofisticada e informativa del arsenal de ONDA. A diferencia del HR, que solo cuenta latidos, el HRV mide las fluctuaciones microscópicas de tiempo entre ellos en milisegundos. Usamos el algoritmo RMSSD para evaluar con qué fluidez responde el corazón a cada movimiento, pensamiento o respiración."
+        },
+        {
+          "heading": "Un espejo del nervio vago",
+          "body": "El HRV es un reporte directo del estado del nervio vago:",
+          "bullets": [
+            {
+              "label": "HRV alto (40–70 ms y más)",
+              "text": "El corazón se adapta al instante a los cambios. Señal de una respuesta parasimpática potente. Estás en alta resiliencia biológica: tranquilo, enfocado y listo para actuar."
+            },
+            {
+              "label": "HRV bajo (por debajo de 20–25 ms)",
+              "text": "El sistema autónomo está «bloqueado». El corazón late demasiado métricamente, como un robot. Es señal de que las reservas de recuperación se agotaron y el sistema opera al borde de su capacidad adaptativa."
+            }
+          ]
+        },
+        {
+          "heading": "Por qué importa más que el pulso",
+          "body": "Dos personas pueden tener el mismo HR y un perfil de salud completamente distinto. La diferencia está en el HRV. Una alta variabilidad significa que tu «SO interno» escanea el entorno y micro-ajusta el ritmo. Una baja variabilidad es señal de fragilidad biológica."
+        },
+        {
+          "heading": "Entrenar con ONDA",
+          "body": "El HRV es dinámico. Cae con alcohol, falta de sueño o sobreentrenamiento, pero puede «fortalecerse». Usando los protocolos de respiración de ONDA estás entrenando tu nervio vago, elevando el HRV base y, por tanto, tu resiliencia ante las tormentas."
+        },
+        {
+          "highlight": "Un HRV alto es tu capacidad de doblarte sin romperte. Es la medida de tu fuerza vital, expresada en milisegundos."
+        }
       ]
     },
     "energy": {
       "title": "Energía %: tu reserva biológica de potencia",
       "shortTitle": "🔋 Energía %",
       "sections": [
-        { "heading": "Tu batería interior", "body": "En ONDA, Energía % no es una sensación subjetiva de viveza; es una medición objetiva de tu reserva cardiovascular. Es la razón matemática entre cuán lejos está tu HR del techo elevado y cuán estable es tu ritmo cardíaco en este segundo. A más puntuación, más capacidad fisiológica para tareas nuevas." },
-        { "heading": "La anatomía del agotamiento", "body": "Tu puntuación de energía cae bajo la influencia de tres factores:", "bullets": [
-          { "label": "Fatiga acumulada", "text": "Cuando el sistema no logra recuperarse lo suficiente durante el sueño." },
-          { "label": "BPM alto", "text": "Operar a «altas RPM» quema rápidamente el combustible disponible." },
-          { "label": "Estrés prolongado", "text": "La turbulencia constante en el ritmo (baja estabilidad) obliga al corazón a gastar más recursos solo en mantener funciones básicas." }
-        ]},
-        { "heading": "Lo que dicen los números", "body": "", "bullets": [
-          { "label": "80–100% · Carga completa", "text": "Sistema en abundancia. Listo para cargas cognitivas intensas, entrenamientos exigentes y decisiones estratégicas." },
-          { "label": "40–70% · Rango operativo", "text": "Las reservas empiezan a menguar. Toca dosificarse. La eficiencia sigue alta, pero el «precio» de cada esfuerzo sucesivo aumenta." },
-          { "label": "Por debajo del 30% · Crítico", "text": "Operas «a crédito». En este estado el cuerpo percibe cualquier evento nuevo como una amenaza. El cerebro entra en modo estricto de ahorro, bajando creatividad y empatía." }
-        ]},
-        { "heading": "El arte de recargar", "body": "Energía % es nuestra métrica más dinámica. Puede desplomarse tras una conversación difícil y dispararse tras 10 minutos de meditación profunda o un paseo corto. ONDA te muestra estas oscilaciones en tiempo real y convierte la gestión de la energía en ciencia exacta." },
-        { "highlight": "No esperes a que el depósito quede vacío. Una alta puntuación de energía es tu seguro contra los errores. En zona roja cualquier trabajo será contraproducente. Carga primero el sistema y luego actúa." }
+        {
+          "heading": "Tu batería interior",
+          "body": "En ONDA, Energía % no es una sensación subjetiva de viveza; es una medición objetiva de tu reserva cardiovascular. Es la razón matemática entre cuán lejos está tu HR del techo elevado y cuán estable es tu ritmo cardíaco en este segundo. A más puntuación, más capacidad fisiológica para tareas nuevas."
+        },
+        {
+          "heading": "La anatomía del agotamiento",
+          "body": "Tu puntuación de energía cae bajo la influencia de tres factores:",
+          "bullets": [
+            {
+              "label": "Fatiga acumulada",
+              "text": "Cuando el sistema no logra recuperarse lo suficiente durante el sueño."
+            },
+            {
+              "label": "BPM alto",
+              "text": "Operar a «altas RPM» quema rápidamente el combustible disponible."
+            },
+            {
+              "label": "Estrés prolongado",
+              "text": "La turbulencia constante en el ritmo (baja estabilidad) obliga al corazón a gastar más recursos solo en mantener funciones básicas."
+            }
+          ]
+        },
+        {
+          "heading": "Lo que dicen los números",
+          "body": "",
+          "bullets": [
+            {
+              "label": "80–100% · Carga completa",
+              "text": "Sistema en abundancia. Listo para cargas cognitivas intensas, entrenamientos exigentes y decisiones estratégicas."
+            },
+            {
+              "label": "40–70% · Rango operativo",
+              "text": "Las reservas empiezan a menguar. Toca dosificarse. La eficiencia sigue alta, pero el «precio» de cada esfuerzo sucesivo aumenta."
+            },
+            {
+              "label": "Por debajo del 30% · Crítico",
+              "text": "Operas «a crédito». En este estado el cuerpo percibe cualquier evento nuevo como una amenaza. El cerebro entra en modo estricto de ahorro, bajando creatividad y empatía."
+            }
+          ]
+        },
+        {
+          "heading": "El arte de recargar",
+          "body": "Energía % es nuestra métrica más dinámica. Puede desplomarse tras una conversación difícil y dispararse tras 10 minutos de meditación profunda o un paseo corto. ONDA te muestra estas oscilaciones en tiempo real y convierte la gestión de la energía en ciencia exacta."
+        },
+        {
+          "highlight": "No esperes a que el depósito quede vacío. Una alta puntuación de energía es tu seguro contra los errores. En zona roja cualquier trabajo será contraproducente. Carga primero el sistema y luego actúa."
+        }
       ]
     },
     "stress": {
       "title": "Estrés %: el índice de turbulencia biológica",
       "shortTitle": "⚡ Estrés %",
       "sections": [
-        { "heading": "Más allá de las emociones", "body": "En ONDA, Estrés % no es un estado psicológico; es una medición matemática del caos del sistema. Esta puntuación se deriva del Índice de Estabilidad Cardíaca. No solo analizamos tu pulso; examinamos las microdesviaciones del ritmo en cada latido. A mayor irregularidad y «ruido» en estos intervalos, mayor tu puntuación biológica de estrés." },
-        { "heading": "¿Qué significa tu puntuación?", "body": "El estrés es el «gasto» de tu fuerza vital. Lo dividimos en tres zonas:", "bullets": [
-          { "label": "0–30% · Zona de flujo", "text": "Sistema en coherencia. El corazón trabaja con ritmo y eficiencia. Momento ideal para decisiones complejas y trabajo profundo." },
-          { "label": "30–60% · Zona adaptativa", "text": "Estás bajo carga. Estado normal en un día activo, pero si te quedas demasiado tiempo aquí, los recursos cognitivos empiezan a drenarse." },
-          { "label": "60%+ · Zona de burnout", "text": "Estrés fisiológico agudo. El sistema nervioso está saturado. El cerebro baja la corteza prefrontal (lógica) y le pasa el control a la amígdala (miedo e impulsividad)." }
-        ]},
-        { "heading": "¿Por qué importa?", "body": "El estrés más peligroso es el que no sientes. Puedes estar sentado en silencio y, sin embargo, tu Estrés % marca 70%. Significa que dentro hay una lucha invisible: falta de sueño, inflamación oculta o sobrecarga informativa. ONDA hace visible lo invisible y te permite pulsar pausa antes del agotamiento." },
-        { "highlight": "El estrés no es lo que te ocurre; es cómo gasta tus recursos tu cuerpo en respuesta. Un porcentaje alto es la señal de revisar tus prioridades en este mismo momento." }
+        {
+          "heading": "Más allá de las emociones",
+          "body": "En ONDA, Estrés % no es un estado psicológico; es una medición matemática del caos del sistema. Esta puntuación se deriva del Índice de Estabilidad Cardíaca. No solo analizamos tu pulso; examinamos las microdesviaciones del ritmo en cada latido. A mayor irregularidad y «ruido» en estos intervalos, mayor tu puntuación biológica de estrés."
+        },
+        {
+          "heading": "¿Qué significa tu puntuación?",
+          "body": "El estrés es el «gasto» de tu fuerza vital. Lo dividimos en tres zonas:",
+          "bullets": [
+            {
+              "label": "0–30% · Zona de flujo",
+              "text": "Sistema en coherencia. El corazón trabaja con ritmo y eficiencia. Momento ideal para decisiones complejas y trabajo profundo."
+            },
+            {
+              "label": "30–60% · Zona adaptativa",
+              "text": "Estás bajo carga. Estado normal en un día activo, pero si te quedas demasiado tiempo aquí, los recursos cognitivos empiezan a drenarse."
+            },
+            {
+              "label": "60%+ · Zona de burnout",
+              "text": "Estrés fisiológico agudo. El sistema nervioso está saturado. El cerebro baja la corteza prefrontal (lógica) y le pasa el control a la amígdala (miedo e impulsividad)."
+            }
+          ]
+        },
+        {
+          "heading": "¿Por qué importa?",
+          "body": "El estrés más peligroso es el que no sientes. Puedes estar sentado en silencio y, sin embargo, tu Estrés % marca 70%. Significa que dentro hay una lucha invisible: falta de sueño, inflamación oculta o sobrecarga informativa. ONDA hace visible lo invisible y te permite pulsar pausa antes del agotamiento."
+        },
+        {
+          "highlight": "El estrés no es lo que te ocurre; es cómo gasta tus recursos tu cuerpo en respuesta. Un porcentaje alto es la señal de revisar tus prioridades en este mismo momento."
+        }
       ]
     },
     "br": {
       "title": "Frecuencia respiratoria: el puente entre mundos",
       "shortTitle": "🌬️ /min — Frecuencia respiratoria",
       "sections": [
-        { "heading": "El único modo manual", "body": "La frecuencia respiratoria es un parámetro biométrico único. A diferencia del latido o de la digestión, la respiración es la única función del Sistema Nervioso Autónomo que puedes controlar directamente. Es tu «mando a distancia» del estado interno." },
-        { "heading": "Ritmo de calma vs. ritmo de supervivencia", "body": "Tu frecuencia respiratoria es una emisión en directo de cómo el cerebro percibe el entorno:", "bullets": [
-          { "label": "Respiración corta y rápida", "text": "Señal de alarma. Cuando respiras desde el pecho alto a más de 16–20 ciclos/min, le dices al cuerpo: «estamos en peligro». Eso mantiene el cortisol elevado y al cerebro en vigilancia constante." },
-          { "label": "Respiración profunda y lenta", "text": "Señal de seguridad. Bajar la frecuencia a 6–10 ciclos/min activa el nervio vago. El sistema entra al instante en foco profundo y estabilidad emocional." }
-        ]},
-        { "heading": "Biofeedback", "body": "En ONDA seguimos tu frecuencia respiratoria para detectar momentos de «apnea de pantalla» — cuando, sin darte cuenta, contienes la respiración o respiras de forma irregular mientras revisas correos o haces tareas complejas. Estas micro-pausas disparan una cascada de respuestas de estrés que ni notas." },
-        { "heading": "El arte de ralentizar", "body": "La respiración óptima en reposo es un ritmo casi invisible. Cuantos menos ciclos necesites para saturar tu sangre de oxígeno, más eficiente trabaja tu metabolismo. Te enseñamos a «sub-respirar» — hacer cada respiración más rara pero de mayor calidad, convirtiendo cada ciclo en un acto de restauración." },
-        { "highlight": "La respiración es la única forma de hablar con el corazón en su propio idioma. Al ralentizar la inhalación, dictas paz a tu mente." }
+        {
+          "heading": "El único modo manual",
+          "body": "La frecuencia respiratoria es un parámetro biométrico único. A diferencia del latido o de la digestión, la respiración es la única función del Sistema Nervioso Autónomo que puedes controlar directamente. Es tu «mando a distancia» del estado interno."
+        },
+        {
+          "heading": "Ritmo de calma vs. ritmo de supervivencia",
+          "body": "Tu frecuencia respiratoria es una emisión en directo de cómo el cerebro percibe el entorno:",
+          "bullets": [
+            {
+              "label": "Respiración corta y rápida",
+              "text": "Señal de alarma. Cuando respiras desde el pecho alto a más de 16–20 ciclos/min, le dices al cuerpo: «estamos en peligro». Eso mantiene el cortisol elevado y al cerebro en vigilancia constante."
+            },
+            {
+              "label": "Respiración profunda y lenta",
+              "text": "Señal de seguridad. Bajar la frecuencia a 6–10 ciclos/min activa el nervio vago. El sistema entra al instante en foco profundo y estabilidad emocional."
+            }
+          ]
+        },
+        {
+          "heading": "Biofeedback",
+          "body": "En ONDA seguimos tu frecuencia respiratoria para detectar momentos de «apnea de pantalla» — cuando, sin darte cuenta, contienes la respiración o respiras de forma irregular mientras revisas correos o haces tareas complejas. Estas micro-pausas disparan una cascada de respuestas de estrés que ni notas."
+        },
+        {
+          "heading": "El arte de ralentizar",
+          "body": "La respiración óptima en reposo es un ritmo casi invisible. Cuantos menos ciclos necesites para saturar tu sangre de oxígeno, más eficiente trabaja tu metabolismo. Te enseñamos a «sub-respirar» — hacer cada respiración más rara pero de mayor calidad, convirtiendo cada ciclo en un acto de restauración."
+        },
+        {
+          "highlight": "La respiración es la única forma de hablar con el corazón en su propio idioma. Al ralentizar la inhalación, dictas paz a tu mente."
+        }
       ]
     },
     "bpm": {
       "title": "BPM: el ritmo de tu sistema operativo interno",
       "shortTitle": "❤️ BPM — Frecuencia cardíaca",
       "sections": [
-        { "heading": "El metrónomo biológico", "body": "BPM (latidos por minuto) es más que la velocidad a la que tu corazón bombea sangre. En el ecosistema ONDA vemos el pulso como la interfaz principal del Sistema Nervioso Autónomo. Es un gráfico en directo de cómo el cuerpo asigna recursos en respuesta a los desafíos del mundo exterior." },
-        { "heading": "Una sinfonía de dos estados", "body": "Tu corazón equilibra constantemente dos «directores»:", "bullets": [
-          { "label": "Drive simpático", "text": "Cuando el pulso sube, el cuerpo entra en modo alto rendimiento o defensa. Es la movilización — esencial para un sprint, tóxica si se sostiene." },
-          { "label": "Calma parasimpática", "text": "Un HR bajo es señal de seguridad. En este estado el cuerpo activa la regeneración tisular, la consolidación de memoria y la recuperación profunda." }
-        ]},
-        { "heading": "¿Por qué seguimos los números?", "body": "Tu HR de reposo es tu coste biológico base de vivir.", "bullets": [
-          { "label": "BPM alto sentado", "text": "Estás malgastando energía. Tu cuerpo «corre un maratón» mientras solo respondes correos. Camino directo al burnout cognitivo." },
-          { "label": "BPM óptimo", "text": "Es el modo «crucero silencioso» — donde el sistema opera al máximo de eficiencia, dejando una reserva enorme para tareas inesperadas." }
-        ]},
-        { "heading": "Una herramienta de calibración", "body": "El BPM en la app de ONDA es un espejo. Al notar un pico anómalo, ganas la oportunidad de intervenir conscientemente. No solo medimos latidos; te enseñamos a dominarlos. Una breve sesión de respiración o un cambio de foco puede «bajar» el pulso al instante, conmutando el cerebro de modo supervivencia a flujo creativo." },
-        { "highlight": "Un pulso alto es caro. Un pulso bajo es intencional. Domina el ritmo para dominar la vida." }
+        {
+          "heading": "El metrónomo biológico",
+          "body": "BPM (latidos por minuto) es más que la velocidad a la que tu corazón bombea sangre. En el ecosistema ONDA vemos el pulso como la interfaz principal del Sistema Nervioso Autónomo. Es un gráfico en directo de cómo el cuerpo asigna recursos en respuesta a los desafíos del mundo exterior."
+        },
+        {
+          "heading": "Una sinfonía de dos estados",
+          "body": "Tu corazón equilibra constantemente dos «directores»:",
+          "bullets": [
+            {
+              "label": "Drive simpático",
+              "text": "Cuando el pulso sube, el cuerpo entra en modo alto rendimiento o defensa. Es la movilización — esencial para un sprint, tóxica si se sostiene."
+            },
+            {
+              "label": "Calma parasimpática",
+              "text": "Un HR bajo es señal de seguridad. En este estado el cuerpo activa la regeneración tisular, la consolidación de memoria y la recuperación profunda."
+            }
+          ]
+        },
+        {
+          "heading": "¿Por qué seguimos los números?",
+          "body": "Tu HR de reposo es tu coste biológico base de vivir.",
+          "bullets": [
+            {
+              "label": "BPM alto sentado",
+              "text": "Estás malgastando energía. Tu cuerpo «corre un maratón» mientras solo respondes correos. Camino directo al burnout cognitivo."
+            },
+            {
+              "label": "BPM óptimo",
+              "text": "Es el modo «crucero silencioso» — donde el sistema opera al máximo de eficiencia, dejando una reserva enorme para tareas inesperadas."
+            }
+          ]
+        },
+        {
+          "heading": "Una herramienta de calibración",
+          "body": "El BPM en la app de ONDA es un espejo. Al notar un pico anómalo, ganas la oportunidad de intervenir conscientemente. No solo medimos latidos; te enseñamos a dominarlos. Una breve sesión de respiración o un cambio de foco puede «bajar» el pulso al instante, conmutando el cerebro de modo supervivencia a flujo creativo."
+        },
+        {
+          "highlight": "Un pulso alto es caro. Un pulso bajo es intencional. Domina el ritmo para dominar la vida."
+        }
       ]
     }
   }

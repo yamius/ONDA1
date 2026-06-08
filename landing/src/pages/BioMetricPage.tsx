@@ -95,9 +95,19 @@ export function BioMetricPage() {
       </nav>
 
       {/* Title */}
-      <h1 className="mb-10 text-2xl font-bold leading-snug tracking-tight text-white md:text-3xl">
+      <h1 className="mb-6 text-2xl font-bold leading-snug tracking-tight text-white md:text-3xl">
         {detail.title}
       </h1>
+
+      {/* Honesty banner — every metric is a single-reading camera (PPG) estimate;
+          the state labels in particular are heuristic patterns, not emotion
+          detection or a measurement. */}
+      <p className="mb-10 rounded-lg border border-white/10 bg-white/[0.02] px-4 py-3 font-mono text-xs leading-relaxed text-white/40">
+        {t('ui.measurementDisclaimer', {
+          defaultValue:
+            'Estimated from a single camera (PPG) reading — an educational estimate, not a medical measurement. State labels (Flow, Focus, Alarm…) are rough, experimental patterns, not emotion detection.',
+        })}
+      </p>
 
       {/* Sections */}
       <div className="flex flex-col gap-8">

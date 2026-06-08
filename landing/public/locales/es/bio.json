@@ -19,22 +19,55 @@
   },
   "sections": {
     "advanced": "Métricas fisiológicas avanzadas",
-    "emotional": "Métricas del estado emocional",
+    "emotional": "Patrones de estado (experimental)",
     "advancedTag": "Fisiológicas avanzadas",
     "emotionalTag": "Estado emocional"
   },
   "rows": {
-    "hrv": { "label": "Sustituto de HRV", "desc": "variabilidad de HR en el tiempo" },
-    "csi": { "label": "Índice de estabilidad cardíaca", "desc": "lo regular que late el corazón" },
-    "recovery": { "label": "Velocidad de recuperación", "desc": "rapidez de normalización del HR tras estrés" },
-    "trend": { "label": "Pendiente del tendencia HR", "desc": "tendencia en 30–60 s" },
-    "accel": { "label": "Aceleración del HR", "desc": "qué tan rápido sube el HR" },
-    "alarm": { "label": "Alarma / ansiedad", "desc": "subida de HR + subida de BR" },
-    "relaxation": { "label": "Relajación / calma", "desc": "HR bajo + BR estable" },
-    "focus": { "label": "Foco / concentración", "desc": "HR medio + baja variabilidad" },
-    "excitement": { "label": "Excitación", "desc": "momento agudo de HR↑↑" },
-    "fatigue": { "label": "Fatiga", "desc": "HR sobre la línea base, BR↓, energía↓" },
-    "flow": { "label": "Flujo", "desc": "HR un poco sobre la base, BR estable" }
+    "hrv": {
+      "label": "Sustituto de HRV",
+      "desc": "variabilidad de HR en el tiempo"
+    },
+    "csi": {
+      "label": "Índice de estabilidad cardíaca",
+      "desc": "lo regular que late el corazón"
+    },
+    "recovery": {
+      "label": "Velocidad de recuperación",
+      "desc": "rapidez de normalización del HR tras estrés"
+    },
+    "trend": {
+      "label": "Pendiente del tendencia HR",
+      "desc": "tendencia en 30–60 s"
+    },
+    "accel": {
+      "label": "Aceleración del HR",
+      "desc": "qué tan rápido sube el HR"
+    },
+    "alarm": {
+      "label": "Alarma / ansiedad",
+      "desc": "subida de HR + subida de BR"
+    },
+    "relaxation": {
+      "label": "Relajación / calma",
+      "desc": "HR bajo + BR estable"
+    },
+    "focus": {
+      "label": "Foco / concentración",
+      "desc": "HR medio + baja variabilidad"
+    },
+    "excitement": {
+      "label": "Excitación",
+      "desc": "momento agudo de HR↑↑"
+    },
+    "fatigue": {
+      "label": "Fatiga",
+      "desc": "HR sobre la línea base, BR↓, energía↓"
+    },
+    "flow": {
+      "label": "Flujo",
+      "desc": "HR un poco sobre la base, BR estable"
+    }
   },
   "status": {
     "measuring": "Midiendo... resultados se actualizan cada ~2 s",
@@ -49,25 +82,85 @@
   "descriptions": {
     "heading": "Qué significa cada métrica",
     "main": [
-      { "title": "❤️ BPM — Frecuencia cardíaca", "text": "Número de latidos por minuto medidos a partir del pulso óptico en la yema del dedo. Rango normal en reposo: 55–90 BPM. BPM elevado puede indicar estrés, esfuerzo físico o consumo de estimulantes.", "key": "bpm" },
-      { "title": "🌬️ /min — Frecuencia respiratoria", "text": "Frecuencia respiratoria derivada de la modulación lenta de amplitud de la señal PPG. Rango normal: 12–20 respiraciones/min. Valores más altos indican estrés o actividad física; más bajos aparecen en relajación profunda.", "key": "br" },
-      { "title": "⚡ Estrés %", "text": "Derivado del Índice de Estabilidad Cardíaca. Mayor irregularidad de la variabilidad del HR → mayor puntuación de estrés. Por debajo del 30 % indica estado calmo; 60 %+ sugiere estrés fisiológico agudo.", "key": "stress" },
-      { "title": "🔋 Energía %", "text": "Refleja la reserva cardiovascular: cuán lejos está tu HR del techo elevado y cuán estable es el ritmo. Mayor puntuación = más capacidad fisiológica disponible. Cae con fatiga, BPM alto o estrés prolongado.", "key": "energy" }
+      {
+        "title": "❤️ BPM — Frecuencia cardíaca",
+        "text": "Número de latidos por minuto medidos a partir del pulso óptico en la yema del dedo. Rango normal en reposo: 55–90 BPM. BPM elevado puede indicar estrés, esfuerzo físico o consumo de estimulantes.",
+        "key": "bpm"
+      },
+      {
+        "title": "🌬️ /min — Frecuencia respiratoria",
+        "text": "Frecuencia respiratoria derivada de la modulación lenta de amplitud de la señal PPG. Rango normal: 12–20 respiraciones/min. Valores más altos indican estrés o actividad física; más bajos aparecen en relajación profunda.",
+        "key": "br"
+      },
+      {
+        "title": "⚡ Estrés %",
+        "text": "Derivado del Índice de Estabilidad Cardíaca. Mayor irregularidad de la variabilidad del HR → mayor puntuación de estrés. Por debajo del 30 % indica estado calmo; 60 %+ sugiere estrés fisiológico agudo.",
+        "key": "stress"
+      },
+      {
+        "title": "🔋 Energía %",
+        "text": "Refleja la reserva cardiovascular: cuán lejos está tu HR del techo elevado y cuán estable es el ritmo. Mayor puntuación = más capacidad fisiológica disponible. Cae con fatiga, BPM alto o estrés prolongado.",
+        "key": "energy"
+      }
     ],
     "advanced": [
-      { "title": "Sustituto de HRV (RMSSD)", "text": "Raíz cuadrada de la media de las diferencias sucesivas entre intervalos RR adyacentes, en milisegundos. Refleja la actividad parasimpática. Mayor = regulación autonómica más adaptativa. Rango típico por cámara: 15–70 ms.", "key": "hrv" },
-      { "title": "Índice de estabilidad cardíaca (CSI)", "text": "Desviación estándar de los intervalos RR dividida por el RR medio. Mide la consistencia rítmica independientemente de la frecuencia. Valores bajos (0,03–0,10) — ritmo muy estable; superior a 0,25 sugiere latidos irregulares o ruido.", "key": "csi" },
-      { "title": "Velocidad de recuperación %", "text": "Cuán completamente ha vuelto el HR hacia su media tras el latido más alto registrado en esta sesión. 0 % = HR aún en su pico; 100 % = totalmente recuperado a la base o por debajo.", "key": "recovery" },
-      { "title": "Pendiente del tendencia HR", "text": "Pendiente de regresión lineal de los intervalos RR en la ventana de medición. Negativa = HR descendiendo gradualmente (respuesta de relajación). Positiva = HR acelerando (mayor activación o actividad).", "key": "slope" },
-      { "title": "Aceleración del HR", "text": "Segunda derivada de los intervalos RR — la tasa de cambio del trend. Positiva = HR subiendo más rápido que antes. Negativa = la tasa de cambio se desacelera, aunque el HR siga subiendo.", "key": "acceleration" }
+      {
+        "title": "Sustituto de HRV (RMSSD)",
+        "text": "Raíz cuadrada de la media de las diferencias sucesivas entre intervalos RR adyacentes, en milisegundos. Refleja la actividad parasimpática. Mayor = regulación autonómica más adaptativa. Rango típico por cámara: 15–70 ms.",
+        "key": "hrv"
+      },
+      {
+        "title": "Índice de estabilidad cardíaca (CSI)",
+        "text": "Desviación estándar de los intervalos RR dividida por el RR medio. Mide la consistencia rítmica independientemente de la frecuencia. Valores bajos (0,03–0,10) — ritmo muy estable; superior a 0,25 sugiere latidos irregulares o ruido.",
+        "key": "csi"
+      },
+      {
+        "title": "Velocidad de recuperación %",
+        "text": "Cuán completamente ha vuelto el HR hacia su media tras el latido más alto registrado en esta sesión. 0 % = HR aún en su pico; 100 % = totalmente recuperado a la base o por debajo.",
+        "key": "recovery"
+      },
+      {
+        "title": "Pendiente del tendencia HR",
+        "text": "Pendiente de regresión lineal de los intervalos RR en la ventana de medición. Negativa = HR descendiendo gradualmente (respuesta de relajación). Positiva = HR acelerando (mayor activación o actividad).",
+        "key": "slope"
+      },
+      {
+        "title": "Aceleración del HR",
+        "text": "Segunda derivada de los intervalos RR — la tasa de cambio del trend. Positiva = HR subiendo más rápido que antes. Negativa = la tasa de cambio se desacelera, aunque el HR siga subiendo.",
+        "key": "acceleration"
+      }
     ],
     "emotional": [
-      { "title": "Alarma / ansiedad", "text": "Composición de subida del HR y elevación de la frecuencia respiratoria. Valores altos indican un patrón de lucha-o-huida en el sistema nervioso autónomo.", "key": "alarm" },
-      { "title": "Relajación / calma", "text": "Inverso del CSI más reserva de energía. Alta puntuación = baja irregularidad del HRV, respiración lenta y estable, y amplio margen cardiovascular — la firma de una alerta tranquila.", "key": "relaxation" },
-      { "title": "Foco / concentración", "text": "Mezcla del nivel de energía y estrés inverso. Alcanza su pico cuando el HR es moderado, el ritmo estable y el estrés bajo — atención sostenida sin sobreactivación.", "key": "focus" },
-      { "title": "Excitación", "text": "Sube con elevación del HR sobre la base de reposo y mayor frecuencia respiratoria. Se distingue de la alarma por la ausencia de estrés extremo — es activación positiva, no respuesta a amenaza.", "key": "excitement" },
-      { "title": "Fatiga", "text": "Aumenta cuando la energía está agotada y el estrés crónicamente elevado. Refleja el coste fisiológico del esfuerzo prolongado: HRV reducido, HR elevado en reposo y recuperación lenta.", "key": "fatigue" },
-      { "title": "Flujo", "text": "El estado óptimo de rendimiento: alto foco, relajación moderada y HR ligeramente sobre el reposo sin alarma. Aparece cuando estás plenamente comprometido pero no abrumado — la zona.", "key": "flow" }
+      {
+        "title": "Alarma / ansiedad",
+        "text": "Composición de subida del HR y elevación de la frecuencia respiratoria. Valores altos indican un patrón de lucha-o-huida en el sistema nervioso autónomo.",
+        "key": "alarm"
+      },
+      {
+        "title": "Relajación / calma",
+        "text": "Inverso del CSI más reserva de energía. Alta puntuación = baja irregularidad del HRV, respiración lenta y estable, y amplio margen cardiovascular — la firma de una alerta tranquila.",
+        "key": "relaxation"
+      },
+      {
+        "title": "Foco / concentración",
+        "text": "Mezcla del nivel de energía y estrés inverso. Alcanza su pico cuando el HR es moderado, el ritmo estable y el estrés bajo — atención sostenida sin sobreactivación.",
+        "key": "focus"
+      },
+      {
+        "title": "Excitación",
+        "text": "Sube con elevación del HR sobre la base de reposo y mayor frecuencia respiratoria. Se distingue de la alarma por la ausencia de estrés extremo — es activación positiva, no respuesta a amenaza.",
+        "key": "excitement"
+      },
+      {
+        "title": "Fatiga",
+        "text": "Aumenta cuando la energía está agotada y el estrés crónicamente elevado. Refleja el coste fisiológico del esfuerzo prolongado: HRV reducido, HR elevado en reposo y recuperación lenta.",
+        "key": "fatigue"
+      },
+      {
+        "title": "Flujo",
+        "text": "El estado óptimo de rendimiento: alto foco, relajación moderada y HR ligeramente sobre el reposo sin alarma. Aparece cuando estás plenamente comprometido pero no abrumado — la zona.",
+        "key": "flow"
+      }
     ],
     "readMore": "leer más →",
     "footnote1": "Todas las métricas se derivan de la señal óptica PPG mediante la cámara del dispositivo.",
@@ -100,5 +193,6 @@
     "title": "Bio OS — Biometría en directo en tu navegador | ONDA Life",
     "description": "Mide tu pulso, estrés, energía y HRV directamente en el navegador — sin wearable. Coloca el dedo en la cámara y obtén análisis biométrico en tiempo real.",
     "ogImageAlt": "ONDA Life Bio OS — Biometría en directo en tu navegador a través de la cámara del dispositivo."
-  }
+  },
+  "emotionalDisclaimer": "Patrones aproximados y experimentales inferidos de los cambios de frecuencia cardíaca y respiración en una sola lectura de cámara: pistas orientativas, no detección de emociones ni una medición."
 }

@@ -19,22 +19,55 @@
   },
   "sections": {
     "advanced": "Advanced Physiological Metrics",
-    "emotional": "Emotional State Metrics",
+    "emotional": "State Patterns (experimental)",
     "advancedTag": "Advanced Physiological",
     "emotionalTag": "Emotional State"
   },
   "rows": {
-    "hrv": { "label": "HRV surrogate", "desc": "HR variability over time" },
-    "csi": { "label": "Cardiac Stability Index", "desc": "how evenly the heart beats" },
-    "recovery": { "label": "Recovery Rate", "desc": "HR normalization speed after stress" },
-    "trend": { "label": "HR trend slope", "desc": "trend over 30-60s" },
-    "accel": { "label": "HR Acceleration", "desc": "how fast HR rises" },
-    "alarm": { "label": "Alarm / Anxiety", "desc": "HR rise + BR rise" },
-    "relaxation": { "label": "Relaxation / Calmness", "desc": "low HR + stable BR" },
-    "focus": { "label": "Focus / Concentration", "desc": "average HR + low variability" },
-    "excitement": { "label": "Excitement", "desc": "HR↑↑ sharp moment" },
-    "fatigue": { "label": "Fatigue", "desc": "HR above baseline, BR↓, energy↓" },
-    "flow": { "label": "Flow", "desc": "HR slightly above baseline, stable BR" }
+    "hrv": {
+      "label": "HRV surrogate",
+      "desc": "HR variability over time"
+    },
+    "csi": {
+      "label": "Cardiac Stability Index",
+      "desc": "how evenly the heart beats"
+    },
+    "recovery": {
+      "label": "Recovery Rate",
+      "desc": "HR normalization speed after stress"
+    },
+    "trend": {
+      "label": "HR trend slope",
+      "desc": "trend over 30-60s"
+    },
+    "accel": {
+      "label": "HR Acceleration",
+      "desc": "how fast HR rises"
+    },
+    "alarm": {
+      "label": "Alarm / Anxiety",
+      "desc": "HR rise + BR rise"
+    },
+    "relaxation": {
+      "label": "Relaxation / Calmness",
+      "desc": "low HR + stable BR"
+    },
+    "focus": {
+      "label": "Focus / Concentration",
+      "desc": "average HR + low variability"
+    },
+    "excitement": {
+      "label": "Excitement",
+      "desc": "HR↑↑ sharp moment"
+    },
+    "fatigue": {
+      "label": "Fatigue",
+      "desc": "HR above baseline, BR↓, energy↓"
+    },
+    "flow": {
+      "label": "Flow",
+      "desc": "HR slightly above baseline, stable BR"
+    }
   },
   "status": {
     "measuring": "Measuring... results update every ~2s",
@@ -49,25 +82,85 @@
   "descriptions": {
     "heading": "What each metric means",
     "main": [
-      { "title": "❤️ BPM — Heart Rate", "text": "The number of heartbeats per minute measured from the optical pulse in your fingertip. Normal resting range: 55–90 BPM. Elevated BPM may signal stress, physical exertion, or stimulant intake.", "key": "bpm" },
-      { "title": "🌬️ /min — Breathing Rate", "text": "Respiratory rate derived from the slow amplitude modulation of the PPG signal. Normal range: 12–20 breaths/min. Higher values indicate stress or physical activity; lower values appear during deep relaxation.", "key": "br" },
-      { "title": "⚡ Stress %", "text": "Derived from the Cardiac Stability Index. High heart rate variability irregularity → higher stress score. A score under 30 % indicates a calm state; 60 %+ suggests acute physiological stress.", "key": "stress" },
-      { "title": "🔋 Energy %", "text": "Reflects cardiovascular reserve: how far your heart rate is from its elevated ceiling and how stable the rhythm is. Higher score = more physiological capacity left. Drops with fatigue, high BPM, or prolonged stress.", "key": "energy" }
+      {
+        "title": "❤️ BPM — Heart Rate",
+        "text": "The number of heartbeats per minute measured from the optical pulse in your fingertip. Normal resting range: 55–90 BPM. Elevated BPM may signal stress, physical exertion, or stimulant intake.",
+        "key": "bpm"
+      },
+      {
+        "title": "🌬️ /min — Breathing Rate",
+        "text": "Respiratory rate derived from the slow amplitude modulation of the PPG signal. Normal range: 12–20 breaths/min. Higher values indicate stress or physical activity; lower values appear during deep relaxation.",
+        "key": "br"
+      },
+      {
+        "title": "⚡ Stress %",
+        "text": "Derived from the Cardiac Stability Index. High heart rate variability irregularity → higher stress score. A score under 30 % indicates a calm state; 60 %+ suggests acute physiological stress.",
+        "key": "stress"
+      },
+      {
+        "title": "🔋 Energy %",
+        "text": "Reflects cardiovascular reserve: how far your heart rate is from its elevated ceiling and how stable the rhythm is. Higher score = more physiological capacity left. Drops with fatigue, high BPM, or prolonged stress.",
+        "key": "energy"
+      }
     ],
     "advanced": [
-      { "title": "HRV surrogate (RMSSD)", "text": "Root Mean Square of Successive Differences between adjacent RR intervals, in milliseconds. Reflects parasympathetic nervous system activity. Higher = more adaptive autonomic regulation. Typical camera-derived range: 15–70 ms.", "key": "hrv" },
-      { "title": "Cardiac Stability Index (CSI)", "text": "Standard deviation of RR intervals divided by mean RR interval. Measures rhythmic consistency independent of heart rate. Lower values (0.03–0.10) indicate a very stable rhythm; values above 0.25 suggest irregular beats or measurement noise.", "key": "csi" },
-      { "title": "Recovery Rate %", "text": "How completely the heart rate has returned toward its mean after the highest recorded beat in this session. 0 % = HR still at its peak; 100 % = fully recovered to baseline or below.", "key": "recovery" },
-      { "title": "HR Trend Slope", "text": "Linear regression slope of RR intervals over the measurement window. Negative = heart rate gradually slowing (relaxation response). Positive = HR accelerating (rising arousal or activity).", "key": "slope" },
-      { "title": "HR Acceleration", "text": "Second derivative of RR intervals — the rate of change of the trend. Positive = HR is speeding up faster than before. Negative = the rate of change is decelerating, even if HR is still rising.", "key": "acceleration" }
+      {
+        "title": "HRV surrogate (RMSSD)",
+        "text": "Root Mean Square of Successive Differences between adjacent RR intervals, in milliseconds. Reflects parasympathetic nervous system activity. Higher = more adaptive autonomic regulation. Typical camera-derived range: 15–70 ms.",
+        "key": "hrv"
+      },
+      {
+        "title": "Cardiac Stability Index (CSI)",
+        "text": "Standard deviation of RR intervals divided by mean RR interval. Measures rhythmic consistency independent of heart rate. Lower values (0.03–0.10) indicate a very stable rhythm; values above 0.25 suggest irregular beats or measurement noise.",
+        "key": "csi"
+      },
+      {
+        "title": "Recovery Rate %",
+        "text": "How completely the heart rate has returned toward its mean after the highest recorded beat in this session. 0 % = HR still at its peak; 100 % = fully recovered to baseline or below.",
+        "key": "recovery"
+      },
+      {
+        "title": "HR Trend Slope",
+        "text": "Linear regression slope of RR intervals over the measurement window. Negative = heart rate gradually slowing (relaxation response). Positive = HR accelerating (rising arousal or activity).",
+        "key": "slope"
+      },
+      {
+        "title": "HR Acceleration",
+        "text": "Second derivative of RR intervals — the rate of change of the trend. Positive = HR is speeding up faster than before. Negative = the rate of change is decelerating, even if HR is still rising.",
+        "key": "acceleration"
+      }
     ],
     "emotional": [
-      { "title": "Alarm / Anxiety", "text": "Composite of rising HR and elevated breathing rate. High values indicate a fight-or-flight activation pattern in the autonomic nervous system.", "key": "alarm" },
-      { "title": "Relaxation / Calmness", "text": "Inverse of CSI plus energy reserve. High score = low HR variability irregularity, slow stable breathing, and ample cardiovascular headroom — the signature of restful alertness.", "key": "relaxation" },
-      { "title": "Focus / Concentration", "text": "Blend of energy level and inverse stress. Peaks when HR is moderate, rhythm is stable, and stress is low — consistent with sustained attentional effort without overarousal.", "key": "focus" },
-      { "title": "Excitement", "text": "Rises with HR elevation above resting baseline and higher breathing rate. Distinguishable from alarm by the absence of extreme stress scores — it is positive arousal rather than threat response.", "key": "excitement" },
-      { "title": "Fatigue", "text": "Increases when energy is depleted and stress is chronically elevated. Reflects the physiological cost of prolonged effort: reduced HRV, elevated HR at rest, and slow recovery.", "key": "fatigue" },
-      { "title": "Flow", "text": "The optimal performance state: high focus, moderate relaxation, and HR slightly above resting without alarm. Appears when you are fully engaged but not overwhelmed — the zone.", "key": "flow" }
+      {
+        "title": "Alarm / Anxiety",
+        "text": "Composite of rising HR and elevated breathing rate. High values indicate a fight-or-flight activation pattern in the autonomic nervous system.",
+        "key": "alarm"
+      },
+      {
+        "title": "Relaxation / Calmness",
+        "text": "Inverse of CSI plus energy reserve. High score = low HR variability irregularity, slow stable breathing, and ample cardiovascular headroom — the signature of restful alertness.",
+        "key": "relaxation"
+      },
+      {
+        "title": "Focus / Concentration",
+        "text": "Blend of energy level and inverse stress. Peaks when HR is moderate, rhythm is stable, and stress is low — consistent with sustained attentional effort without overarousal.",
+        "key": "focus"
+      },
+      {
+        "title": "Excitement",
+        "text": "Rises with HR elevation above resting baseline and higher breathing rate. Distinguishable from alarm by the absence of extreme stress scores — it is positive arousal rather than threat response.",
+        "key": "excitement"
+      },
+      {
+        "title": "Fatigue",
+        "text": "Increases when energy is depleted and stress is chronically elevated. Reflects the physiological cost of prolonged effort: reduced HRV, elevated HR at rest, and slow recovery.",
+        "key": "fatigue"
+      },
+      {
+        "title": "Flow",
+        "text": "The optimal performance state: high focus, moderate relaxation, and HR slightly above resting without alarm. Appears when you are fully engaged but not overwhelmed — the zone.",
+        "key": "flow"
+      }
     ],
     "readMore": "read more →",
     "footnote1": "All metrics are derived from the optical PPG signal via the device camera.",
@@ -100,5 +193,6 @@
     "title": "Bio OS — Live Biometrics in Your Browser | ONDA Life",
     "description": "Measure your heart rate, stress, energy and HRV right in the browser — no wearable required. Place your finger on the camera and get real-time biometric analysis.",
     "ogImageAlt": "ONDA Life Bio OS — Live biometrics in your browser via the device camera."
-  }
+  },
+  "emotionalDisclaimer": "Rough, experimental patterns inferred from heart-rate and breathing changes on a single camera reading — directional hints, not emotion detection or a measurement."
 }
