@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "联系 ONDA Life | 支持与社区",
-    "description": "需要生物升级的技术支持？联系 ONDA 核心团队。邮件、Telegram、Discord — 我们会回复。"
+    "description": "问题、支持或合作——联系 ONDA Life 团队。我们会阅读每条消息并回复。"
   },
   "breadcrumb": {
     "home": "首页",
@@ -9,7 +9,7 @@
   },
   "badge": "[ 神经上行链路 ]",
   "title": "初始化直接联系",
-  "subtitle": "需要生物升级的技术支持？联系 ONDA 核心团队。",
+  "subtitle": "问题、支持或合作——联系 ONDA Life 团队。",
   "channelsTitle": "联系渠道",
   "emailLabel": "邮件",
   "communityLabel": "社区",

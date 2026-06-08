@@ -630,7 +630,11 @@ export function BioPage() {
             {t('ctaPrimary.subtitle')}
           </p>
           <a
-            href={`${lang === 'en' ? '' : '/' + lang}/#download`}
+            href={appStoreUrl('bio')}
+            target="_blank"
+            rel="noopener"
+            data-button="apple"
+            data-platform="ios"
             className="inline-block rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-6 py-2.5 text-sm font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600"
           >
             {t('ctaPrimary.button')}

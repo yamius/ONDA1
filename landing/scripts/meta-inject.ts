@@ -71,6 +71,18 @@ const AUTHOR_NAME = 'Yakiv Bilenko'
 const AUTHOR_URL = 'https://www.linkedin.com/in/yamius'
 const AUTHOR_SAME_AS = ['https://www.linkedin.com/in/yamius']
 
+/**
+ * Brand profiles for the ONDA Life *Organization* (distinct from the founder's
+ * personal LinkedIn above). These sameAs links are the strongest signal that
+ * disambiguates "ONDA Life" the app from the unrelated "ONDA Life, Inc" /
+ * Onda Beauty entities — they point Google at the canonical owned profiles.
+ */
+const ORG_SAME_AS = [
+  'https://apps.apple.com/app/apple-store/id6755912529',
+  'https://www.reddit.com/user/onda_life/',
+  'https://www.facebook.com/waterstree.yakov',
+]
+
 // Google desktop SERP renders ~70-78 chars in 2026; 65 keeps a safe margin
 // while no longer forcing our own ellipsis on titles Google would show in
 // full. (Raised from 60 — 2026-05-29 SEO audit, roadmap 6.3.)
@@ -237,7 +249,7 @@ const GLOSSARY_DESC =
 
 const CONTACT_TITLE = 'Contact ONDA Life | Support & Community'
 const CONTACT_DESC =
-  'Need technical support for your biological upgrade? Connect with the ONDA Core Team. Email, Telegram, Discord — we respond.'
+  'Questions, support, or collaboration — reach the ONDA Life team. We read every message and respond.'
 
 const THE_STACK_TITLE = 'The Stack | System Configuration | ONDA Life'
 const THE_STACK_DESC =
@@ -810,7 +822,7 @@ function buildOrganizationJsonLd(): string {
       license: 'https://creativecommons.org/licenses/by-nc-sa/4.0/',
       acquireLicensePage: `${SITE_URL}/contact`,
     },
-    sameAs: AUTHOR_SAME_AS,
+    sameAs: ORG_SAME_AS,
     founder: {
       '@id': AUTHOR_ID,
     },
@@ -878,6 +890,7 @@ function buildWebSiteJsonLd(): string {
     url: SITE_URL,
     name: 'ONDA Life',
     description: 'HRV biofeedback and breathing training — guided practice with live feedback from your own heart rhythm.',
+    sameAs: ORG_SAME_AS,
     publisher: {
       '@id': `${SITE_URL}/#organization`,
     },
