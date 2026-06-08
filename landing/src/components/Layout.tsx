@@ -62,6 +62,25 @@ export function Layout() {
     if (typeof rdt === 'function') rdt('track', 'PageVisit')
   }, [location.pathname])
 
+  // Reddit Pixel — count a Lead whenever an App Store CTA is clicked anywhere
+  // on the site (calculators, hero, sticky bar, CTA section). These links go
+  // straight to apps.apple.com (with per-surface Apple campaign tags), so
+  // without this the conversion was never measured. Delegated capture-phase
+  // listener fires before navigation; ad traffic is iPhone-only, where tapping
+  // opens the App Store app and the page persists so the beacon flushes.
+  useEffect(() => {
+    function onClick(e: MouseEvent) {
+      const target = e.target as HTMLElement | null
+      const anchor = target?.closest?.('a[href]') as HTMLAnchorElement | null
+      if (!anchor) return
+      if (!(anchor.getAttribute('href') || '').includes('apps.apple.com')) return
+      const rdt = (window as unknown as { rdt?: (...args: unknown[]) => void }).rdt
+      if (typeof rdt === 'function') rdt('track', 'Lead')
+    }
+    document.addEventListener('click', onClick, true)
+    return () => document.removeEventListener('click', onClick, true)
+  }, [])
+
   useEffect(() => {
     if (!menuOpen) return
     const handleScroll = () => setMenuOpen(false)

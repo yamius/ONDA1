@@ -207,7 +207,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'cacao-stem-cells':
     'Filter the noise. Learn how purified cacao flavonols trigger stem cell production and optimize your regenerative matrix without stimulant overload.',
   'cognitive-architecture-neural-throughput':
-    'Upgrade your neural hardware. Master the protocols of cognitive architecture: clear the signal, manage neural noise, and expand bandwidth without external patches.',
+    'Cognitive architecture, explained: attention, signal-to-noise, and mental bandwidth — what practice can support, without overpromising.',
   'system-feedback-biometric-loop':
     'Stop tracking and start optimizing. Learn how ONDA turns your biometric data into immediate corrective protocols for peak performance.',
   'endocrine-social-drive-oxytocin-testosterone':
@@ -791,7 +791,7 @@ function buildWebSiteJsonLd(): string {
     '@id': `${SITE_URL}/#website`,
     url: SITE_URL,
     name: 'ONDA Life',
-    description: 'Operating system for the biocomputer — biohacking, HRV tracking, and consciousness optimization protocols.',
+    description: 'HRV biofeedback and breathing training — guided practice with live feedback from your own heart rhythm.',
     publisher: {
       '@id': `${SITE_URL}/#organization`,
     },

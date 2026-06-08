@@ -10,7 +10,7 @@ const article: Article = {
   subtitle: 'Optimizing Neural Throughput Without External Patches',
   seoTitle: 'Cognitive Architecture: Neural Throughput | ONDA Life',
   description:
-    'Upgrade your neural hardware. Master the protocols of cognitive architecture: clear the signal, manage neural noise, and expand bandwidth without external patches.',
+    'Cognitive architecture, explained: attention, signal-to-noise, and mental bandwidth — what practice can support, without overpromising.',
   category: 'Neural Hardware',
   relatedSlugs: [
     'neuroplasticity',
