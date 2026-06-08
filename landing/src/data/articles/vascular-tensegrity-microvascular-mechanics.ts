@@ -59,7 +59,7 @@ The tensegrity matrix absorbs biochemical and physical shocks, protecting fragil
 
 ---
 
-## Section 3: ONDA Insight — Eliminating Myofascial Noise
+## Section 3: ONDA Insight — Reducing Myofascial Noise
 
 Prolonged sedentary work or psychological stress causes the neck, shoulder, and masticatory (jaw) muscles to lock up. This creates an imbalance in structural tension and compresses the vascular pathways.
 
@@ -82,7 +82,7 @@ Maintaining vascular tensegrity delivers the following.
 
 **Unrestricted Nutrient Flow:** Essential metabolites are delivered to the active neural nodes without latency.
 
-**System Voltage Optimization:** Physical tension, which draws computational power away from the prefrontal cortex, is neutralized.
+**System Voltage Optimization:** Physical tension, which draws attention and energy away from the prefrontal cortex, is eased — freeing up resources for focused work.
 
 **Resilience Under Load:** The physical body acts as a coherent, resilient spring rather than a set of isolated, strained levers.
 

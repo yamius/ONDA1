@@ -87,7 +87,7 @@ Reducing biological latency delivers measurable upgrades.
 
 **Sustained Performance:** High-speed information streams can be processed without cognitive overheating.
 
-**Spatial Presence:** Increased clarity in perceiving time and space. You are literally seeing faster.
+**Spatial Presence:** A subjective sense of more clarity in perceiving time and space — many people describe it as "seeing faster," even if the eyes themselves haven't changed.
 
 ---
 

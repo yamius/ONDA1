@@ -79,7 +79,7 @@ const article: Article = {
 
 > **The Hack:** Maintain steady, non-threatening eye contact for 3–5 second windows during interactions.
 
-**The Logic:** This triggers mirror neuron activation and an immediate Oxytocin release. It serves as a biochemical "handshake," shifting the recipient's system from "Threat Detection" to "Connection Mode."
+**The Logic:** Eye contact is associated with mirror-neuron engagement and is thought to support Oxytocin signalling. It acts like a biochemical "handshake," helping nudge the recipient's system from "Threat Detection" toward "Connection Mode."
 
 \`[ STATUS: ACTIVE ]\`
 

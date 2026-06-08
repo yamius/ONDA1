@@ -70,13 +70,13 @@ Three mechanisms activated by resonant frequency breathing:
 
 > **Action:** Breathe at your identified resonant frequency for a minimum of 5 minutes. Use a 5:5 ratio (5-second inhale, 5-second exhale) as a starting point if your frequency has not been scanned yet.
 
-**Logic:** Most humans resonate near 0.1 Hz. This frequency "unlocks" the baroreflex — your body's built-in regulator for blood pressure and emotional stability. At resonance, the baroreceptors in your aorta and carotid arteries synchronize with the cardiac cycle, creating a high-amplitude oscillation that drives [HRV](/glossary/heart-rate-variability) to its ceiling. The signal propagates upward through the vagal afferents to the [brainstem](/glossary/brainstem), shifting [prefrontal](/glossary/prefrontal-cortex) activation and suppressing [amygdala](/glossary/amygdala) reactivity.
+**Logic:** Most people resonate near 0.1 Hz. Breathing at this frequency engages the baroreflex — your body's built-in regulator for blood pressure and autonomic balance. At resonance, the baroreceptors in your aorta and carotid arteries synchronize with the cardiac cycle, producing a high-amplitude oscillation that pushes [HRV](/glossary/heart-rate-variability) toward its personal peak. The signal propagates upward through the vagal afferents to the [brainstem](/glossary/brainstem), and is associated with shifts in [prefrontal](/glossary/prefrontal-cortex) activation and lower [amygdala](/glossary/amygdala) reactivity.
 
 ### Mechanism 2: Vagal Capture
 
 > **Action:** Maintain the resonant breathing rhythm for 10+ consecutive minutes without interruption. Avoid speaking, checking devices, or breaking the rhythm.
 
-**Logic:** At resonance, the breathing rhythm literally "captures" the [Vagus Nerve](/glossary/vagus-nerve) — forcing it to broadcast a high-fidelity safety signal across all internal systems simultaneously. The heart, gut, lungs, and immune cells all receive the same signal: the environment is safe, repair is authorized, resources can be allocated to long-term maintenance. This is not metaphor. Vagal efferent output measurably increases within 90 seconds of reaching resonance — the mechanism formalised by [polyvagal theory](/glossary/polyvagal-theory).
+**Logic:** At resonance, the breathing rhythm strongly engages the [Vagus Nerve](/glossary/vagus-nerve) — the channel that carries a "safety" signal toward the heart, gut, lungs, and other systems: the environment is calm, recovery can be prioritised. Studies of slow resonant breathing typically show vagal tone (measured via HRV) rising within a few minutes, though the exact timing varies from person to person — a pattern often discussed through the lens of [polyvagal theory](/glossary/polyvagal-theory).
 
 ### Mechanism 3: Instant Reset
 
@@ -117,7 +117,7 @@ Resonant-frequency work needs a device that captures the breathing-driven HRV en
     },
     {
       name: 'Vagal Capture Session',
-      text: 'Breathe at your resonant frequency for 10+ consecutive minutes without interruption. Vagal efferent output measurably increases within 90 seconds of reaching resonance.',
+      text: 'Breathe at your resonant frequency for 10+ consecutive minutes without interruption. Slow resonant breathing typically raises vagal tone (via HRV) within a few minutes, though timing varies by person.',
       protocolId: 'resonance-vagal-capture',
     },
     {

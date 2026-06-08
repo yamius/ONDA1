@@ -66,7 +66,7 @@ High-performance states often fail due to 'System Noise'—anxiety or over-stimu
 
 > **The Hack:** 300mg of Alpha-GPC paired with 150mg of Bacopa Monnieri.
 >
-> **The Logic:** Alpha-GPC provides the Choline required for Acetylcholine synthesis. Bacopa Monnieri upregulates the speed at which the nervous system communicates by increasing the growth of the nerve endings (dendrites). This is a long-term 'Firmware Update' for your memory.
+> **The Logic:** Alpha-GPC provides the Choline used for Acetylcholine synthesis. Bacopa Monnieri is one of the better-studied herbal nootropics for memory: trials report modest gains in recall over 8–12 weeks, and animal research links it to dendritic growth (the nerve endings that pass signals along). Think of it as a slow 'Firmware Update' rather than an instant patch — and check interactions with your clinician first.
 
 ### PROTOCOL_03 > The 'Recovery' Loop (Magnesium L-Threonate)
 

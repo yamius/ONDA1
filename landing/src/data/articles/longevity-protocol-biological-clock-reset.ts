@@ -11,7 +11,7 @@ const article: Article = {
   subtitle: 'From Circadian Fragmentation to Epigenetic Restoration — The Deep Reset Stack',
   seoTitle: 'Biological Clock Reset: Reverse Cellular Age | ONDA Life',
   description:
-    'Aging is circadian fragmentation. When internal clocks desync, Sirtuin-governed repair loses its timing and epigenetic age accelerates. The ONDA Deep Reset stack — dark surge, pulsed hormesis, and data-driven wind down — targets the Horvath Clock directly.',
+    'Part of aging is circadian fragmentation. When internal clocks desync, Sirtuin-governed repair loses its timing, and epigenetic aging may accelerate. The ONDA Deep Reset stack — dark surge, pulsed hormesis, and data-driven wind down — aims at the circadian inputs the Horvath Clock is built on.',
   category: 'ONDA Protocol',
   relatedSlugs: [
     'circadian-rhythm',
@@ -27,11 +27,11 @@ const article: Article = {
   introStyle: 'gold',
   image: '/images/articles/longevity-protocol-biological-clock-reset.webp',
   imageAlt:
-    'DNA helix epigenetic reset visualization: Horvath Clock regressing, epigenetic noise cleaning, cellular system restoring, biological age -1.2 years. ONDA Life longevity protocol.',
+    'DNA helix circadian-alignment visualization: Horvath Clock as the target metric, epigenetic noise being reduced, cellular rhythm re-syncing. ONDA Life longevity protocol concept art.',
   imageTitle:
-    '[ SYSTEM_RESTORE ]: HORVATH_CLOCK: REGRESSING — EPIGENETIC_NOISE: CLEANING — CELLULAR_SYSTEM: RESTORING — BIOLOGICAL_AGE: -1.2 YRS.',
+    '[ SYSTEM_TARGET ]: HORVATH_CLOCK: MONITORING — EPIGENETIC_NOISE: REDUCING — CELLULAR_RHYTHM: RE-SYNCING.',
   imageCaption:
-    '[ HORVATH_CLOCK: REGRESSING ] — Epigenetic noise: cleaning. Cellular system: restoring. Biological age: -1.2 yrs.',
+    '[ HORVATH_CLOCK: THE TARGET METRIC ] — Goal: reduce epigenetic noise, re-sync cellular rhythm. (Conceptual — not a measured result.)',
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The clock is reset. Now anchor the three primary Zeitgeber signals to keep it from drifting again.',
@@ -83,11 +83,11 @@ To move beyond basic alignment and into Age Deceleration, implement the three-la
 
 ---
 
-## Impact Log: The Reversal Metric
+## Impact Log: What People Tend To Notice
 
-By aligning rhythms to this degree, you are not just sleeping — you are directly optimizing the Horvath Clock.
+By tightening circadian alignment, you're not just sleeping better — you're targeting the same methylation machinery the Horvath Clock reads. Whether that shifts measured biological age is still an open research question; what you can track yourself is the upstream signal.
 
-**Short-term:** 20% increase in Deep Sleep architecture and a significant reduction in systemic morning cortisol. HRV trending upward within 3 nights.
+**Short-term:** Many people report more Deep Sleep and an easier morning cortisol curve within the first week, with HRV often trending upward over a few nights. Individual results vary — use your own data, not these numbers, as the benchmark.
 
 **Long-term:** The kind of circadian and metabolic alignment that research associates with healthier aging markers over time. (We don't promise specific telomere, methylation-clock, or sirtuin changes — those are research directions, not guaranteed outcomes.)
 

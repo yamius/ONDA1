@@ -58,13 +58,13 @@ The primary command for building new mitochondria is the activation of the PGC-1
 
 > **The Hack:** High-heat sauna (80°C+) for 20 minutes, 3 times a week.
 >
-> **The Logic:** Heat stress triggers 'Heat Shock Proteins' and forces mitochondria to become more efficient at handling thermal energy. This acute stressor upregulates PGC-1α, leading to an increase in the number of power units in your muscle and brain tissue.
+> **The Logic:** Heat stress triggers 'Heat Shock Proteins' and pushes mitochondria to handle thermal energy more efficiently. In research, this kind of acute stressor is associated with increased PGC-1α signalling — the pathway linked to building more power units in muscle and brain tissue. Individual response varies.
 
 ### PROTOCOL_02 > Photonic Charging (Red Light Therapy)
 
 > **The Hack:** Exposure to 660nm (Red) and 850nm (Near-Infrared) light for 10 minutes daily.
 >
-> **The Logic:** Near-infrared light penetrates the skin and is absorbed by Cytochrome c Oxidase in the mitochondria. This 'kicks' the ATP production cycle into high gear and reduces Oxidative Stress, effectively cleaning the 'soot' off your cellular engines.
+> **The Logic:** Near-infrared light penetrates the skin and is absorbed by Cytochrome c Oxidase in the mitochondria. The working hypothesis is that this supports the ATP production cycle and may help lower markers of oxidative stress — the lab equivalent of cleaning 'soot' off your cellular engines. The evidence is promising but still early.
 
 ### PROTOCOL_03 > The 'NAD+' Fuel Cell (Molecular Repair)
 
