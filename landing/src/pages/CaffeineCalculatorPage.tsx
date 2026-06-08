@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
 import {
   CAFFEINE_DRINKS,
@@ -193,7 +193,7 @@ export function CaffeineCalculatorPage() {
         {' · '}
         Related: <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
         {' · '}
-        <Link to={`${langPrefix}/reviews/sleep-apps`} className="text-terminal-green hover:underline">Best sleep apps (2026)</Link>
+        <Link to={langHref(`/reviews/sleep-apps`, lang)} className="text-terminal-green hover:underline">Best sleep apps (2026)</Link>
       </div>
     </main>
   )

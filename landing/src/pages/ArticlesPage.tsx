@@ -5,7 +5,7 @@ import { articles } from '../data/articles'
 import { FEATURED_ARTICLE_SLUGS } from '../data/articles-categories'
 import { TOPICS } from '../data/topics'
 import { OptimizedImage } from '../components/OptimizedImage'
-import { langFromPath, homePathFor } from '../i18n'
+import { langFromPath, homePathFor, langHref } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
 interface MdArticle {
   slug: string
@@ -66,7 +66,7 @@ export function ArticlesPage() {
       title: t(`bodies.${a.slug}.title`, { defaultValue: a.title }) as string,
       description: t(`bodies.${a.slug}.description`, { defaultValue: a.description }) as string,
       category: a.category,
-      path: `${langPrefix}/articles/${a.slug}`,
+      path: langHref(`/articles/${a.slug}`, lang),
       image: a.image,
     })),
     ...mdArticles.map((a) => ({
@@ -79,7 +79,7 @@ export function ArticlesPage() {
         .join(' ')
         .slice(0, 180) + '…',
       category: 'Biological Software',
-      path: `${langPrefix}/articles/${a.slug}`,
+      path: langHref(`/articles/${a.slug}`, lang),
       isMd: true as const,
     })),
   ], [mdArticles, langPrefix, t])

@@ -1,5 +1,6 @@
 import i18n from 'i18next'
 import { initReactI18next } from 'react-i18next'
+import { LOCALIZED_COVERAGE } from './data/localized-coverage.generated'
 // Only the 'home' namespace is statically imported — it is the one namespace
 // the eager entry chunk needs (Layout nav + the homepage). Every other
 // namespace (about, bio, level, part, glossary, articles, reviews, …) is left
@@ -109,8 +110,13 @@ export function homePathFor(lang: Lang): string {
   return lang === 'en' ? '/' : `/${lang}`
 }
 
-/** Routes that have no per-language variant — never prefix these. */
-const NON_LOCALIZED_PREFIXES = ['/the-stack', '/topics']
+/**
+ * Routes that have no per-language variant — never prefix these. /tools and
+ * /research are currently EN-only sections (no localized index is prerendered),
+ * so langHref must keep links to them on the bare EN URL rather than emit a
+ * /<lang>/... route that soft-404s. Revisit when either is localized.
+ */
+const NON_LOCALIZED_PREFIXES = ['/the-stack', '/topics', '/tools', '/research']
 
 /**
  * Prefix an internal path with the active language so navigation keeps the
@@ -124,9 +130,30 @@ const NON_LOCALIZED_PREFIXES = ['/the-stack', '/topics']
  */
 export function langHref(path: string, lang: Lang): string {
   if (lang === 'en' || !path.startsWith('/')) return path
-  const first = path.split('/').filter(Boolean)[0]
-  if (isLang(first)) return path
+  const parts = path.split('/').filter(Boolean)
+  if (isLang(parts[0])) return path
   if (NON_LOCALIZED_PREFIXES.some((p) => path === p || path.startsWith(p + '/'))) return path
+  // Partial-localized content (articles, glossary): the localized pages are
+  // drip-/pilot-prerendered, so only some slugs exist per locale. If this
+  // locale has no prerendered page for the slug, fall back to the EN URL
+  // rather than link to a /<lang>/... route that 404s (HTTP 404 + SPA shell).
+  const cov = LOCALIZED_COVERAGE[lang]
+  if (cov) {
+    if (parts[0] === 'articles' && parts[1] && !cov.articles.has(parts[1])) return path
+    // Glossary: detail pages are coverage-gated; the bare /glossary index has no
+    // localized prerender while this locale has zero localized glossary slugs,
+    // so fall back to EN for the index too.
+    if (parts[0] === 'glossary') {
+      if (parts[1] ? !cov.glossary.has(parts[1]) : cov.glossary.size === 0) return path
+    }
+    // Reviews are nested (/, /vs/<slug>, /compare/<slug>, /<category>) and only
+    // partially localized per locale. The coverage set holds the full remainder
+    // after 'reviews' ('' = the index); fall back to EN for anything not present.
+    if (parts[0] === 'reviews') {
+      const remainder = parts.slice(1).join('/')
+      if (!cov.reviews.has(remainder)) return path
+    }
+  }
   return `/${lang}${path}`
 }
 
@@ -195,16 +222,30 @@ export function localizedPathFor(pathname: string, lang: Lang): string {
     return lang === 'en' ? `/part/${partMatch[1]}` : `/${lang}/part/${partMatch[1]}`
   }
 
-  // Article detail page: preserve slug across language switches.
+  // Article detail page: preserve slug across language switches — but only if
+  // the localized page is actually prerendered for this locale; otherwise fall
+  // back to EN so we never point at a /<lang>/... route that 404s.
   const articleMatch = basePath.match(/^\/articles\/([^/]+)$/)
   if (articleMatch) {
-    return lang === 'en' ? `/articles/${articleMatch[1]}` : `/${lang}/articles/${articleMatch[1]}`
+    const slug = articleMatch[1]
+    if (lang === 'en' || !LOCALIZED_COVERAGE[lang]?.articles.has(slug)) return `/articles/${slug}`
+    return `/${lang}/articles/${slug}`
   }
 
-  // Glossary detail page: preserve slug across language switches.
+  // Glossary detail page: same coverage-gated fallback.
   const glossaryMatch = basePath.match(/^\/glossary\/([^/]+)$/)
   if (glossaryMatch) {
-    return lang === 'en' ? `/glossary/${glossaryMatch[1]}` : `/${lang}/glossary/${glossaryMatch[1]}`
+    const slug = glossaryMatch[1]
+    if (lang === 'en' || !LOCALIZED_COVERAGE[lang]?.glossary.has(slug)) return `/glossary/${slug}`
+    return `/${lang}/glossary/${slug}`
+  }
+
+  // Reviews (index + nested review/comparison/category pages): coverage-gated.
+  const reviewMatch = basePath.match(/^\/reviews(?:\/(.*))?$/)
+  if (reviewMatch) {
+    const remainder = reviewMatch[1] ?? ''
+    if (lang === 'en' || !LOCALIZED_COVERAGE[lang]?.reviews.has(remainder)) return basePath
+    return `/${lang}${basePath}`
   }
 
   // Pages with /:lang/ variants but no per-slug data — keep the user in their

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
 import {
   SLEEP_NEED_BANDS,
@@ -204,7 +204,7 @@ export function SleepDebtCalculatorPage() {
         {' · '}
         Related: <Link to={`${langPrefix}/tools/caffeine`} className="text-terminal-green hover:underline">Caffeine cut-off</Link>
         {' · '}
-        <Link to={`${langPrefix}/reviews/sleep-apps`} className="text-terminal-green hover:underline">Best sleep apps (2026)</Link>
+        <Link to={langHref(`/reviews/sleep-apps`, lang)} className="text-terminal-green hover:underline">Best sleep apps (2026)</Link>
       </div>
     </main>
   )

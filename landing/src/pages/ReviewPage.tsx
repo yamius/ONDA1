@@ -19,7 +19,6 @@ export function ReviewPage() {
   const { slug } = useParams<{ slug: string }>()
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
   const { t: tReviews } = useTranslation('reviews')
   const review = slug ? getReviewBySlug(slug) : undefined
   if (!review) return <NotFoundPage />
@@ -55,7 +54,7 @@ export function ReviewPage() {
       >
         <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/reviews`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
+        <Link to={langHref(`/reviews`, lang)} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">{review.name}</span>
       </nav>
@@ -269,7 +268,7 @@ export function ReviewPage() {
               return (
                 <Link
                   key={h.slug}
-                  to={`${langPrefix}/reviews/vs/${h.slug}`}
+                  to={langHref(`/reviews/vs/${h.slug}`, lang)}
                   className="glass-card group flex items-center justify-between gap-4 rounded-lg p-4 transition-all hover:border-terminal-cyan/30"
                 >
                   <span className="font-mono text-sm font-semibold text-white/80 transition-colors group-hover:text-terminal-cyan">
@@ -297,7 +296,7 @@ export function ReviewPage() {
             {related.map((r) => (
               <Link
                 key={r.slug}
-                to={`${langPrefix}/reviews/${r.slug}`}
+                to={langHref(`/reviews/${r.slug}`, lang)}
                 className="glass-card group flex items-center justify-between gap-4 rounded-lg p-4 transition-all hover:border-terminal-green/20"
               >
                 <span className="font-semibold transition-colors group-hover:text-terminal-green">
@@ -314,7 +313,7 @@ export function ReviewPage() {
 
       <div className="mt-4">
         <Link
-          to={`${langPrefix}/reviews`}
+          to={langHref(`/reviews`, lang)}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
           {tReviews('ui.allReviews')}

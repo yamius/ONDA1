@@ -6,7 +6,7 @@ import { parts } from './PartPage'
 import { levelsData } from '../data/levels'
 import { METRIC_DETAILS } from '../data/bioMetrics'
 import { useEffect } from 'react'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 
@@ -44,10 +44,10 @@ export function SitemapPage() {
     { to: lang === 'en' ? '/' : `/${lang}`, label: t('main.home') },
     { to: lang === 'en' ? '/about' : `/${lang}/about`, label: t('main.about') },
     { to: lang === 'en' ? '/inner-spectrum' : `/${lang}/inner-spectrum`, label: t('main.philosophy') },
-    { to: `${langPrefix}/articles`, label: t('main.articles') },
-    { to: `${langPrefix}/glossary`, label: t('main.glossary') },
-    { to: `${langPrefix}/the-stack`, label: t('main.stack') },
-    { to: `${langPrefix}/contact`, label: t('main.contact') },
+    { to: langHref('/articles', lang), label: t('main.articles') },
+    { to: langHref('/glossary', lang), label: t('main.glossary') },
+    { to: langHref('/the-stack', lang), label: t('main.stack') },
+    { to: langHref('/contact', lang), label: t('main.contact') },
     { to: lang === 'en' ? '/bio' : `/${lang}/bio`, label: t('main.bio') },
   ]
 
@@ -78,7 +78,7 @@ export function SitemapPage() {
             <ul className="space-y-2">
               {glossaryTerms.map((term) => (
                 <li key={term.slug}>
-                  <Link to={`${langPrefix}/glossary/${term.slug}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
+                  <Link to={langHref(`/glossary/${term.slug}`, lang)} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
                     {t(`bodies.${term.slug}.title`, { ns: 'glossary', defaultValue: term.title }) as string}
                   </Link>
                 </li>
@@ -93,7 +93,7 @@ export function SitemapPage() {
           <ul className="space-y-2">
             {articles.map((a) => (
               <li key={a.slug}>
-                <Link to={`${langPrefix}/articles/${a.slug}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
+                <Link to={langHref(`/articles/${a.slug}`, lang)} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
                   {t(`bodies.${a.slug}.title`, { ns: 'articles', defaultValue: a.title }) as string}
                 </Link>
               </li>

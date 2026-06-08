@@ -307,7 +307,7 @@ export function Layout() {
               <Link to={localizedPathFor('/inner-spectrum', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.philosophy')}<span className="sr-only">{t('menu.philosophySr')}</span>
               </Link>
-              <Link to={currentLang === 'en' ? '/glossary' : `/${currentLang}/glossary`} className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link to={langHref('/glossary', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.glossary')}<span className="sr-only">{t('menu.glossarySr')}</span>
               </Link>
               <Link to={currentLang === 'en' ? '/articles' : `/${currentLang}/articles`} className="text-xs text-white/40 transition-colors hover:text-white/60">

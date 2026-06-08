@@ -8,12 +8,11 @@
 import { useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { reviews, comparisons, headToHeads, LIVE_REVIEW_CATEGORIES, CATEGORY_LABELS, CATEGORY_URL_SLUGS, getReviewBySlug } from '../data/reviews'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 
 export function ReviewsPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
   const { t: tReviews } = useTranslation('reviews')
 
   return (
@@ -37,7 +36,7 @@ export function ReviewsPage() {
         {tReviews('hub.intro')}
       </p>
       <Link
-        to={`${langPrefix}/reviews/methodology`}
+        to={langHref(`/reviews/methodology`, lang)}
         className="mb-10 inline-block font-mono text-xs text-terminal-cyan/70 transition-colors hover:text-terminal-cyan"
       >
         {tReviews('hub.methodologyLink')}
@@ -57,7 +56,7 @@ export function ReviewsPage() {
             return (
               <Link
                 key={cat}
-                to={`${langPrefix}/reviews/${CATEGORY_URL_SLUGS[cat]}`}
+                to={langHref(`/reviews/${CATEGORY_URL_SLUGS[cat]}`, lang)}
                 className="glass-card group flex items-center justify-between gap-3 rounded-lg p-4 transition-all hover:border-terminal-cyan/30"
               >
                 <span className="font-mono text-sm text-white/80 transition-colors group-hover:text-terminal-cyan">
@@ -87,7 +86,7 @@ export function ReviewsPage() {
               return (
                 <Link
                   key={h.slug}
-                  to={`${langPrefix}/reviews/vs/${h.slug}`}
+                  to={langHref(`/reviews/vs/${h.slug}`, lang)}
                   className="glass-card group flex items-start justify-between gap-3 rounded-lg p-4 transition-all hover:border-terminal-green/20"
                 >
                   <div className="min-w-0">
@@ -117,7 +116,7 @@ export function ReviewsPage() {
             {comparisons.map((c) => (
               <Link
                 key={c.slug}
-                to={`${langPrefix}/reviews/compare/${c.slug}`}
+                to={langHref(`/reviews/compare/${c.slug}`, lang)}
                 className="glass-card group flex items-start justify-between gap-4 rounded-lg p-5 transition-all hover:border-terminal-green/20"
               >
                 <div className="min-w-0">
@@ -149,7 +148,7 @@ export function ReviewsPage() {
               {catReviews.map((r) => (
                 <Link
                   key={r.slug}
-                  to={`${langPrefix}/reviews/${r.slug}`}
+                  to={langHref(`/reviews/${r.slug}`, lang)}
                   className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/20"
                 >
                   <div className="mb-2 flex items-center justify-between">

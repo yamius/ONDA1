@@ -12,7 +12,7 @@
 import { useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { REVIEW_CATEGORIES, CATEGORY_LABELS, getCriteria } from '../data/reviews'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 
 export function ReviewMethodologyPage() {
   const { pathname } = useLocation()
@@ -28,7 +28,7 @@ export function ReviewMethodologyPage() {
       >
         <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/reviews`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
+        <Link to={langHref(`/reviews`, lang)} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">{tReviews('breadcrumb.methodology')}</span>
       </nav>
@@ -98,7 +98,7 @@ export function ReviewMethodologyPage() {
 
       <div className="mt-4">
         <Link
-          to={`${langPrefix}/reviews`}
+          to={langHref(`/reviews`, lang)}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
           {tReviews('ui.allReviews')}

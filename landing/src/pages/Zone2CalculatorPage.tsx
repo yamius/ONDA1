@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
 import {
   HR_ZONE_FAQ,
@@ -161,7 +161,7 @@ export function Zone2CalculatorPage() {
         {' · '}
         Related: <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
         {' · '}
-        <Link to={`${langPrefix}/reviews/hrv-trackers`} className="text-terminal-green hover:underline">Best HRV trackers (2026)</Link>
+        <Link to={langHref(`/reviews/hrv-trackers`, lang)} className="text-terminal-green hover:underline">Best HRV trackers (2026)</Link>
       </div>
     </main>
   )

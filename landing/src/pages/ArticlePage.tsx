@@ -288,9 +288,9 @@ export function ArticlePage() {
     ? {
         text: tField('neuralSuggestion.text', article.neuralSuggestion.text),
         linkText: tField('neuralSuggestion.linkText', article.neuralSuggestion.linkText),
-        link: lang === 'en' || !article.neuralSuggestion.link.startsWith('/articles/')
-          ? article.neuralSuggestion.link
-          : `/${lang}${article.neuralSuggestion.link}`,
+        // Bare path — langHref() localizes it (coverage-aware) at the render
+        // site, falling back to EN when the target article isn't localized.
+        link: article.neuralSuggestion.link,
       }
     : article?.neuralSuggestion
 

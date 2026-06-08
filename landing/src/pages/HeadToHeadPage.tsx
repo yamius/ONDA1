@@ -12,14 +12,13 @@ import {
   getReviewBySlug,
   getComparisonBySlug,
 } from '../data/reviews'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import { NotFoundPage } from './NotFoundPage'
 
 export function HeadToHeadPage() {
   const { slug } = useParams<{ slug: string }>()
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
   const { t: tReviews } = useTranslation('reviews')
 
   const h2h = slug ? getHeadToHeadBySlug(slug) : undefined
@@ -50,7 +49,7 @@ export function HeadToHeadPage() {
           {tReviews('breadcrumb.home', { defaultValue: 'Home' })}
         </Link>
         <span>/</span>
-        <Link to={`${langPrefix}/reviews`} className="transition-colors hover:text-white/50">
+        <Link to={langHref(`/reviews`, lang)} className="transition-colors hover:text-white/50">
           {tReviews('breadcrumb.reviews', { defaultValue: 'Reviews' })}
         </Link>
         <span>/</span>
@@ -81,7 +80,7 @@ export function HeadToHeadPage() {
         {products.map((p) => (
           <Link
             key={p.slug}
-            to={`${langPrefix}/reviews/${p.slug}`}
+            to={langHref(`/reviews/${p.slug}`, lang)}
             className="glass-card group rounded-xl p-5 transition-all hover:border-terminal-green/20"
           >
             <div className="mb-2 flex items-center justify-between">
@@ -189,7 +188,7 @@ export function HeadToHeadPage() {
             {tReviews('ui.seeFullRanking', { defaultValue: 'See the full ranking' })}
           </p>
           <Link
-            to={`${langPrefix}/reviews/compare/${related.slug}`}
+            to={langHref(`/reviews/compare/${related.slug}`, lang)}
             className="glass-card group flex items-start justify-between gap-4 rounded-lg p-4 transition-all hover:border-terminal-green/20"
           >
             <div className="min-w-0">

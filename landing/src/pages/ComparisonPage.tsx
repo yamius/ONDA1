@@ -23,7 +23,6 @@ export function ComparisonPage() {
   const { slug } = useParams<{ slug: string }>()
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
   const { t: tReviews } = useTranslation('reviews')
   const comparison = slug ? getComparisonBySlug(slug) : undefined
   if (!comparison) return <NotFoundPage />
@@ -46,7 +45,7 @@ export function ComparisonPage() {
       >
         <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/reviews`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
+        <Link to={langHref(`/reviews`, lang)} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">{tTitle}</span>
       </nav>
@@ -96,7 +95,7 @@ export function ComparisonPage() {
                 </div>
                 <div className="mb-1 flex items-baseline justify-between gap-4">
                   <Link
-                    to={`${langPrefix}/reviews/${r.slug}`}
+                    to={langHref(`/reviews/${r.slug}`, lang)}
                     className="font-semibold transition-colors hover:text-terminal-green"
                   >
                     {r.name}
@@ -138,7 +137,7 @@ export function ComparisonPage() {
                 {tableReviews.map((r) => (
                   <tr key={r.slug} className="border-b border-white/5">
                     <th scope="row" className="py-3 pr-4 text-left font-semibold text-white/80">
-                      <Link to={`${langPrefix}/reviews/${r.slug}`} className="hover:text-terminal-green">
+                      <Link to={langHref(`/reviews/${r.slug}`, lang)} className="hover:text-terminal-green">
                         {r.name}
                       </Link>
                     </th>
@@ -223,7 +222,7 @@ export function ComparisonPage() {
 
       <div className="mt-4">
         <Link
-          to={`${langPrefix}/reviews`}
+          to={langHref(`/reviews`, lang)}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
           {tReviews('ui.allReviews')}

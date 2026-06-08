@@ -21,7 +21,7 @@ import {
   getReviewBySlug,
   type ReviewCategory,
 } from '../data/reviews'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import { NotFoundPage } from './NotFoundPage'
 
 /** Per-category intro copy. Kept here rather than in i18n so each page has
@@ -117,7 +117,6 @@ export function ReviewCategoryPage() {
   const { slug } = useParams<{ slug: string }>()
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
   const { t: tReviews } = useTranslation('reviews')
 
   const category = slug ? getCategoryByUrlSlug(slug) : undefined
@@ -147,7 +146,7 @@ export function ReviewCategoryPage() {
           {tReviews('breadcrumb.home', { defaultValue: 'Home' })}
         </Link>
         <span>/</span>
-        <Link to={`${langPrefix}/reviews`} className="transition-colors hover:text-white/50">
+        <Link to={langHref(`/reviews`, lang)} className="transition-colors hover:text-white/50">
           {tReviews('breadcrumb.reviews', { defaultValue: 'Reviews' })}
         </Link>
         <span>/</span>
@@ -166,7 +165,7 @@ export function ReviewCategoryPage() {
         {intro}
       </p>
       <Link
-        to={`${langPrefix}/reviews/methodology`}
+        to={langHref(`/reviews/methodology`, lang)}
         className="mb-12 inline-block font-mono text-xs text-terminal-cyan/70 transition-colors hover:text-terminal-cyan"
       >
         {tReviews('hub.methodologyLink', { defaultValue: 'How we score →' })}
@@ -178,7 +177,7 @@ export function ReviewCategoryPage() {
             {tReviews('ui.roundUpHeading', { defaultValue: 'Ranked round-up' })}
           </h2>
           <Link
-            to={`${langPrefix}/reviews/compare/${catComparison.slug}`}
+            to={langHref(`/reviews/compare/${catComparison.slug}`, lang)}
             className="glass-card group flex items-start justify-between gap-4 rounded-lg p-5 transition-all hover:border-terminal-green/20"
           >
             <div className="min-w-0">
@@ -209,7 +208,7 @@ export function ReviewCategoryPage() {
               return (
                 <Link
                   key={h.slug}
-                  to={`${langPrefix}/reviews/vs/${h.slug}`}
+                  to={langHref(`/reviews/vs/${h.slug}`, lang)}
                   className="glass-card group flex items-start justify-between gap-3 rounded-lg p-4 transition-all hover:border-terminal-green/20"
                 >
                   <p className="font-mono text-sm font-semibold text-white/80 transition-colors group-hover:text-terminal-green">
@@ -236,7 +235,7 @@ export function ReviewCategoryPage() {
           {catReviews.map((r) => (
             <Link
               key={r.slug}
-              to={`${langPrefix}/reviews/${r.slug}`}
+              to={langHref(`/reviews/${r.slug}`, lang)}
               className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/20"
             >
               <div className="mb-2 flex items-center justify-between">
@@ -267,7 +266,7 @@ export function ReviewCategoryPage() {
           {otherCategories.map((c) => (
             <Link
               key={c}
-              to={`${langPrefix}/reviews/${CATEGORY_URL_SLUGS[c]}`}
+              to={langHref(`/reviews/${CATEGORY_URL_SLUGS[c]}`, lang)}
               className="group flex items-center justify-between gap-3 rounded-lg border border-white/5 bg-white/[0.02] p-4 transition-all hover:border-terminal-cyan/30 hover:bg-white/[0.04]"
             >
               <span className="font-mono text-sm text-white/70 transition-colors group-hover:text-terminal-cyan">

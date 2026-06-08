@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
 import { HRV_AGE_BANDS, HRV_FAQ, HRV_SOURCES, HRV_METHODOLOGY, interpretHrv, type HrvResult } from '../data/hrv-norms'
 import { SourcesSection } from '../components/SourcesSection'
@@ -178,7 +178,7 @@ export function HrvInterpreterPage() {
       <div className="font-mono text-xs text-white/40">
         Read the guide: <Link to={`${langPrefix}/articles/hrv-different-every-device`} className="text-terminal-green hover:underline">Why your HRV differs on every device</Link>
         {' · '}
-        Related: <Link to={`${langPrefix}/reviews/hrv-trackers`} className="text-terminal-green hover:underline">Best HRV trackers (2026)</Link>
+        Related: <Link to={langHref(`/reviews/hrv-trackers`, lang)} className="text-terminal-green hover:underline">Best HRV trackers (2026)</Link>
         {' · '}
         <Link to={`${langPrefix}/glossary/heart-rate-variability`} className="text-terminal-green hover:underline">What is HRV?</Link>
       </div>

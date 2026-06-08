@@ -5,6 +5,7 @@
  */
 
 import { glossaryTerms } from '../data/glossary'
+import { LOCALIZED_COVERAGE } from '../data/localized-coverage.generated'
 
 /** Common abbreviations for glossary terms (used in articles). */
 const ARTICLE_ABBREVIATIONS: { pattern: RegExp; slug: string }[] = [
@@ -108,7 +109,13 @@ function injectGlossaryLinksWithPatterns(
       const used = linkedSlugs.get(slug) ?? 0
       if (used >= MAX_LINKS_PER_SLUG) return match
       linkedSlugs.set(slug, used + 1)
-      const link = `[${match}](${langPrefix}/glossary/${slug})`
+      // Only keep the locale prefix when this glossary slug actually has a
+      // prerendered localized page; otherwise emit the EN URL so we never
+      // inject a /<lang>/glossary/... link that 404s. (Localized glossary is
+      // drip-gated — currently none — so this resolves to /glossary/<slug>.)
+      const lng = langPrefix.replace(/^\//, '')
+      const prefix = lng && LOCALIZED_COVERAGE[lng]?.glossary.has(slug) ? langPrefix : ''
+      const link = `[${match}](${prefix}/glossary/${slug})`
       const idx = createdLinks.length
       createdLinks.push(link)
       return `${CREATED_LINK_PREFIX}${idx}\x01`

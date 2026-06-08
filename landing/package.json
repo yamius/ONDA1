@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node scripts/write-build-sha.mjs && node scripts/optimize-images.mjs && node scripts/article-dates.mjs && tsc -b && vite build && node scripts/check-budget.mjs && tsx scripts/generate-review-cards.ts && tsx scripts/generate-tool-cards.ts && cross-env NODE_OPTIONS=\"--max-old-space-size=4096 --expose-gc\" tsx scripts/prerender.ts && node scripts/validate-seo.mjs",
+    "build": "node scripts/write-build-sha.mjs && node scripts/optimize-images.mjs && node scripts/article-dates.mjs && tsx scripts/generate-localized-coverage.ts && tsc -b && vite build && node scripts/check-budget.mjs && tsx scripts/generate-review-cards.ts && tsx scripts/generate-tool-cards.ts && cross-env NODE_OPTIONS=\"--max-old-space-size=4096 --expose-gc\" tsx scripts/prerender.ts && node scripts/validate-seo.mjs",
     "build:fast": "node scripts/optimize-images.mjs && node scripts/article-dates.mjs && tsc -b && vite build && node scripts/check-budget.mjs",
     "favicons": "node scripts/generate-favicons.mjs",
     "lint": "eslint .",
