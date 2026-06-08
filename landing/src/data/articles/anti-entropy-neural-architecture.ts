@@ -11,7 +11,7 @@ const article: Article = {
   subtitle: 'Degradation Control — Active Resistance Against Neural Drift via Glymphatic Optimization, Autophagy Sync, and Thermal Regulation',
   seoTitle: 'Anti-Entropy Brain: Prevent Neural Drift | ONDA Life',
   description:
-    'Aging is accumulated entropy. The ONDA Anti-Entropy Protocol maximizes glymphatic throughput, syncs nocturnal fasting with autophagy, and uses thermal regulation to halt beta-amyloid drift before it becomes irreversible neurodegeneration.',
+    'Aging is accumulated entropy. The ONDA Anti-Entropy Protocol supports glymphatic clearance, syncs nocturnal fasting with autophagy, and uses thermal regulation to help slow beta-amyloid drift over time.',
   category: 'ONDA Protocol',
   relatedSlugs: [
     'sleep',
@@ -70,7 +70,7 @@ Skipping even one night of high-quality clearance is a form of **Technical Debt*
 
 **Long-term:** Cumulative protein accumulation crosses recovery thresholds. Beta-amyloid begins to form oligomers that inhibit synaptic plasticity. Tau tangles disrupt axonal transport. The system transitions from a state of recoverable suboptimality into a state of **irreversible degradation** — neurodegeneration.
 
-The critical insight: neurodegeneration is not a disease that "strikes." It is an engineering failure — the predictable result of chronically underperforming maintenance systems. The transition is not sudden; it is gradual, measurable, and — within certain windows — reversible.
+The critical insight: neurodegeneration is not a disease that "strikes." It is an engineering failure — the predictable result of chronically underperforming maintenance systems. The transition is not sudden; it is gradual and measurable — which is why supporting these maintenance systems early matters. Once neurodegeneration is established, it is not something to expect to reverse.
 
 ---
 
@@ -88,7 +88,7 @@ Three strict system overrides to minimize entropy accumulation:
 
 > **Action:** Use cooling gel pillows or maintain bedroom temperature at 17–18°C (62–64°F) throughout the sleep window. Do not use thick insulating pillows that trap heat around the head.
 
-**Logic:** Brain temperature drops of 1–2°C produce measurable increases in slow-wave (N3) sleep duration and glymphatic flow velocity. The hypothalamic thermostat interprets head cooling as a deep-night signal, extending the N3 phase and allowing the glymphatic pump to operate longer per sleep cycle. CSF viscosity also decreases slightly at lower temperatures — reducing hydraulic resistance and increasing flow velocity per pump stroke.
+**Logic:** Brain temperature drops of 1–2°C produce measurable increases in slow-wave (N3) sleep duration and glymphatic flow velocity. The hypothalamic thermostat interprets head cooling as a deep-night signal, extending the N3 phase and allowing the glymphatic pump to operate longer per sleep cycle.
 
 ### Override 3: Vagus Lockdown
 
@@ -129,7 +129,7 @@ Anti-entropy maintenance is measured at the HRV layer. The instruments that catc
     },
     {
       name: 'Cold-Head Protocol (Thermal Clearance Boost)',
-      text: 'Maintain bedroom temperature at 17–18°C with a cooling gel pillow throughout the sleep window. Brain cooling of 1–2°C extends N3 duration, decreases CSF viscosity, and increases glymphatic flow velocity per arterial pump stroke.',
+      text: 'Maintain bedroom temperature at 17–18°C with a cooling gel pillow throughout the sleep window. Brain cooling of 1–2°C extends N3 duration and supports glymphatic flow.',
       protocolId: 'anti-entropy-cold-head',
     },
     {

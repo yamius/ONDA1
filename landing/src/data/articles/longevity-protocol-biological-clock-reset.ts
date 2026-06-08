@@ -43,7 +43,7 @@ const article: Article = {
 
 > "Aging, at its core, is an accumulation of cellular noise. One of the primary drivers of this noise is Circadian Fragmentation. When your internal clocks are out of sync, your body's repair mechanisms — specifically those governed by the Sirtuin family — lose their timing.
 >
-> In the ONDA framework, we don't just look at 'feeling tired.' We look at DNA Methylation. If your biological clock is drifting, your epigenetic age is accelerating. Resetting your clock isn't just about better sleep; it's about a System Restore to a younger functional state."
+> In the ONDA framework, we don't just look at 'feeling tired.' We look at DNA Methylation. If your biological clock is drifting, your epigenetic age is accelerating. Resetting your clock isn't just about better sleep; it's a meaningful reset toward better-aligned rhythms — not literal age reversal."
 
 ---
 
@@ -89,7 +89,7 @@ By aligning rhythms to this degree, you are not just sleeping — you are direct
 
 **Short-term:** 20% increase in Deep Sleep architecture and a significant reduction in systemic morning cortisol. HRV trending upward within 3 nights.
 
-**Long-term:** Stabilized telomere length (reduced telomerase inhibition), reduced rate of biological aging as measured by methylation clocks, and a measurable shift in Sirtuin activity profiles.
+**Long-term:** The kind of circadian and metabolic alignment that research associates with healthier aging markers over time. (We don't promise specific telomere, methylation-clock, or sirtuin changes — those are research directions, not guaranteed outcomes.)
 
 The body has always had the capacity for this. It simply needs the correct input data — delivered in the correct sequence, at the correct time.
 

@@ -56,7 +56,7 @@ In the ONDA model, your **dopamine baseline** is your 'Idle Power.' It determine
 
 ---
 
-## The Glutamate Storm
+## Glutamate Overload
 
 When you stack stimuli, you trigger a massive release of Glutamate, the brain's primary excitatory neurotransmitter. Without sufficient 'Cooling' (GABA), this leads to **glutamate excitotoxicity**—a 'Storm' that causes neural noise, anxiety, and the inability to focus on a single task. Your 'Processor' is spinning at 100%, but no useful code is being written. **Biohacking focus** requires taming this storm.
 
@@ -80,7 +80,7 @@ When you stack stimuli, you trigger a massive release of Glutamate, the brain's 
 
 > **The Hack:** 2 minutes of Cold Exposure (3°C - 10°C) to trigger a 250% increase in Dopamine.
 
-**The Logic:** Unlike 'Stacked' digital dopamine, 'Cold Shock' creates a slow, sustained rise in dopamine that lasts for hours without a subsequent crash. It 'Flash-Freezes' the Glutamate Storm and resets the baseline to 'Peak Performance.'
+**The Logic:** Unlike 'Stacked' digital dopamine, 'Cold Shock' creates a slow, sustained rise in dopamine that lasts for hours without a subsequent crash. It 'Flash-Freezes' the glutamate overload and resets the baseline to 'Peak Performance.'
 
 ---
 

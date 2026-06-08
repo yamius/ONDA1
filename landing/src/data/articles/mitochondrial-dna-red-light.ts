@@ -8,7 +8,7 @@ const article: Article = {
   slug: 'mitochondrial-dna-red-light',
   title: 'Mitochondrial DNA & Red Light 2.0',
   description:
-    'How NIR light reduces water viscosity and boosts ATP synthase efficiency. A deep dive into mitochondrial photonics.',
+    'How red and near-infrared light interact with mitochondria — the real photobiomodulation evidence, with the speculative "structured water" claims kept clearly separate.',
   category: 'Biological Software',
   relatedSlugs: [
     'mitochondria',
@@ -26,7 +26,7 @@ const article: Article = {
   content: `
 ## [ ARTICLE: MTDNA_PHOTONICS // THE_LIGHT_DRIVE ]
 
-Mitochondria are far more than mere "power plants"; they function as quantum sensors. A critical phase of cellular energy production is the physical rotation of the ATP Synthase protein. Emerging data confirms that Near-Infrared (NIR) light reduces the viscosity of the water surrounding this molecular motor, allowing it to spin faster and generate more ATP without requiring additional caloric "fuel."
+Mitochondria are more than mere "power plants." A key step in cellular energy production is the physical rotation of the ATP synthase protein. Near-infrared (NIR) light is absorbed by cytochrome c oxidase in the mitochondria, and there is real (if still-developing) evidence that this can support ATP production — the basis of photobiomodulation. A separate, more speculative idea — that NIR also lowers the viscosity of the water around the motor so it spins faster — is not established science; treat it as a hypothesis, not a fact.
 
 ---
 
@@ -38,7 +38,7 @@ Mitochondria are far more than mere "power plants"; they function as quantum sen
 >
 > **Morning_Window:** Execute the session within the first 2 hours of waking to synchronize mitochondrial circadian rhythms.
 >
-> **Hydration_Link:** Consume 300ml of pure water prior to the session. Water serves as the primary substrate for forming the "structured" interfacial layer.
+> **Hydration_Link:** Be well hydrated before the session — general cellular function depends on it. (The idea of a special "structured" interfacial water layer is speculative; see below.)
 >
 > **Target_Areas:** Focus on high-mitochondrial density zones: the prefrontal cortex (forehead), heart, liver, and major muscle groups.
 
@@ -48,9 +48,9 @@ Mitochondria are far more than mere "power plants"; they function as quantum sen
 
 Why does light drive energy? Within the mitochondria, ATP Synthase is a nanomotor that rotates at speeds up to 9,000 RPM. This motor is submerged in mitochondrial water.
 
-**Structured Water (EZ Water):** Under specific frequencies (670nm and 810nm), water near biological membranes transitions into a "fourth phase." It becomes less viscous (more fluid).
+**Structured Water (EZ Water) — speculative:** A fringe hypothesis (associated with Gerald Pollack) proposes that water near membranes can form a "fourth phase." This is not accepted mainstream biophysics; we include it only as a contested idea, not a mechanism we rely on.
 
-**Reduced Drag:** This reduction in viscosity decreases the "friction" encountered by the ATP Synthase rotor. The motor spins with higher efficiency, producing ATP at a lower metabolic cost.
+**Reduced Drag (if it held):** If that hypothesis were true, lower viscosity might reduce drag on the ATP-synthase rotor. This is unproven — the dependable mechanism here is cytochrome c oxidase absorbing NIR, not water "structuring."
 
 **mtDNA Protection:** Photobiomodulation (PBM) reduces systemic oxidative stress, shielding the fragile, circular Mitochondrial DNA (mtDNA) from structural damage.
 

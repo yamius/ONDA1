@@ -200,7 +200,7 @@ Studies show that people with higher interoceptive accuracy:
       'The internal reward currency earned through completed practices — converting consciousness work into measurable progress.',
     content: `
 
-**OND Tokens** are the gamification layer of ONDA Life — a reward system that makes consciousness development measurable and motivating.
+**OND Tokens** are the gamification layer of ONDA Life — a reward system that makes your practice measurable and motivating.
 
 ## How You Earn
 
@@ -767,7 +767,7 @@ Level 1 "Homeostatic Alignment" works directly with the hypothalamus to establis
       'The study of links between mind, nervous system, and immune function — how mental states affect immunity.',
     content: `
 
-**Psychoneuroimmunology** (PNI) is the field studying the bidirectional communication between the nervous system, endocrine system, and immune system. Mental states directly influence immune function at the cellular level.
+**Psychoneuroimmunology** (PNI) is the field studying the bidirectional communication between the nervous system, endocrine system, and immune system. Mental states are linked to immune function.
 
 ## Key Findings
 
@@ -4115,7 +4115,7 @@ The Mitochondrial DNA Red Light article covers photonic charging protocols using
 
 ## Key Points
 
-- **Interfacial water** — structured water layers around proteins behave differently from bulk water
+- **Interfacial water** — proposed "structured water" layers around proteins, said to behave differently from bulk water (a contested, non-mainstream idea)
 - **Reaction rates** — lower viscosity could increase diffusion and turnover
 - **PBM hypothesis** — one proposed mechanism for photobiomodulation effects
 
