@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['metabolism', 'metabolic-flexibility', 'muscle-metabolic-marker', 'glp1-biology-muscle-preservation', 'insulin-sensitivity'],
   introStyle: 'rose',
-  image: '/images/tools/protein.png',
+  image: '/images/protein-intake-muscle-protein-synthesis.png',
   imageAlt:
     'Protein intake and muscle protein synthesis: the daily g/kg target, the per-meal leucine threshold, and why protein distribution matters.',
   imageTitle: '[BUILD_QUEUE]: Provisioning amino-acid substrate for muscle protein synthesis.',

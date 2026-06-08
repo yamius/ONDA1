@@ -304,6 +304,54 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/how-much-water-should-you-drink.avif": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/articles/how-much-water-should-you-drink.png": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/articles/how-much-water-should-you-drink.webp": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/articles/how-to-beat-jet-lag.avif": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/articles/how-to-beat-jet-lag.png": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/articles/how-to-beat-jet-lag.webp": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/articles/how-to-calculate-maintenance-calories.avif": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/articles/how-to-calculate-maintenance-calories.png": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/articles/how-to-calculate-maintenance-calories.webp": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/articles/how-to-calculate-one-rep-max.avif": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/articles/how-to-calculate-one-rep-max.png": {
+    "width": 2688,
+    "height": 1152
+  },
+  "/images/articles/how-to-calculate-one-rep-max.webp": {
+    "width": 2688,
+    "height": 1152
+  },
   "/images/articles/hpa-axis-cortisol-aggression.avif": {
     "width": 1584,
     "height": 672
@@ -736,6 +784,222 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/what-is-my-chronotype.avif": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/articles/what-is-my-chronotype.png": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/articles/what-is-my-chronotype.webp": {
+    "width": 1584,
+    "height": 672
+  },
+  "/images/body-fat-percentage-composition.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/body-fat-percentage-composition.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/body-fat-percentage-composition.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/box-breathing-how-it-works.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/box-breathing-how-it-works.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/box-breathing-how-it-works.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/caffeine-half-life-sleep-pressure.avif": {
+    "width": 1914,
+    "height": 822
+  },
+  "/images/caffeine-half-life-sleep-pressure.png": {
+    "width": 1914,
+    "height": 822
+  },
+  "/images/caffeine-half-life-sleep-pressure.webp": {
+    "width": 1914,
+    "height": 822
+  },
+  "/images/cognitive-shuffling.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/cognitive-shuffling.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/cognitive-shuffling.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/coherent-breathing-guide.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/coherent-breathing-guide.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/coherent-breathing-guide.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/does-dopamine-detox-work.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/does-dopamine-detox-work.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/does-dopamine-detox-work.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/home/hero-phone-v3.avif": {
+    "width": 760,
+    "height": 1577
+  },
+  "/images/home/hero-phone-v3.png": {
+    "width": 760,
+    "height": 1577
+  },
+  "/images/home/hero-phone-v3.webp": {
+    "width": 760,
+    "height": 1577
+  },
+  "/images/home/proof-v2.avif": {
+    "width": 600,
+    "height": 1254
+  },
+  "/images/home/proof-v2.png": {
+    "width": 600,
+    "height": 1254
+  },
+  "/images/home/proof-v2.webp": {
+    "width": 600,
+    "height": 1254
+  },
+  "/images/home/showcase-1-v2.avif": {
+    "width": 600,
+    "height": 1250
+  },
+  "/images/home/showcase-1-v2.png": {
+    "width": 600,
+    "height": 1250
+  },
+  "/images/home/showcase-1-v2.webp": {
+    "width": 600,
+    "height": 1250
+  },
+  "/images/home/showcase-2-v2.avif": {
+    "width": 600,
+    "height": 1254
+  },
+  "/images/home/showcase-2-v2.png": {
+    "width": 600,
+    "height": 1254
+  },
+  "/images/home/showcase-2-v2.webp": {
+    "width": 600,
+    "height": 1254
+  },
+  "/images/home/showcase-3-v2.avif": {
+    "width": 600,
+    "height": 1254
+  },
+  "/images/home/showcase-3-v2.png": {
+    "width": 600,
+    "height": 1254
+  },
+  "/images/home/showcase-3-v2.webp": {
+    "width": 600,
+    "height": 1254
+  },
+  "/images/how-long-does-alcohol-stay-in-your-system.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/how-long-does-alcohol-stay-in-your-system.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/how-long-does-alcohol-stay-in-your-system.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/how-much-sleep-do-you-need.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/how-much-sleep-do-you-need.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/how-much-sleep-do-you-need.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/how-to-get-rid-of-brain-fog.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/how-to-get-rid-of-brain-fog.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/how-to-get-rid-of-brain-fog.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/how-to-lower-cortisol.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/how-to-lower-cortisol.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/how-to-lower-cortisol.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/hrv-different-every-device.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/hrv-different-every-device.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/hrv-different-every-device.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/intermittent-fasting-metabolic-switch.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/intermittent-fasting-metabolic-switch.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/intermittent-fasting-metabolic-switch.webp": {
+    "width": 1915,
+    "height": 821
+  },
   "/images/parts/onda-part-1-i-am-conscious-architecture.avif": {
     "width": 1024,
     "height": 434
@@ -807,6 +1071,54 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/parts/onda-part-6-pack-synchronization-social-intelligence.webp": {
     "width": 1024,
     "height": 434
+  },
+  "/images/protein-intake-muscle-protein-synthesis.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/protein-intake-muscle-protein-synthesis.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/protein-intake-muscle-protein-synthesis.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/vagus-nerve-exercises.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/vagus-nerve-exercises.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/vagus-nerve-exercises.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/vo2max-increase-aerobic-engine.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/vo2max-increase-aerobic-engine.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/vo2max-increase-aerobic-engine.webp": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/zone-2-training-aerobic-base.avif": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/zone-2-training-aerobic-base.png": {
+    "width": 1915,
+    "height": 821
+  },
+  "/images/zone-2-training-aerobic-base.webp": {
+    "width": 1915,
+    "height": 821
   },
   "/og-preview.avif": {
     "width": 1200,

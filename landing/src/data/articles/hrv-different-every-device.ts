@@ -15,7 +15,7 @@ const article: Article = {
   category: 'Neural Hardware',
   relatedSlugs: ['heart-rate-variability', 'parasympathetic-nervous-system', 'vagus-nerve', 'hrv-training-nervous-system-latency'],
   introStyle: 'cyan',
-  image: '/images/tools/hrv.png',
+  image: '/images/hrv-different-every-device.png',
   imageAlt:
     'Why HRV differs across devices: RMSSD vs SDNN, overnight vs spot readings, and PPG vs ECG accuracy on Oura, Apple Watch, Whoop and Garmin.',
   imageTitle: '[SENSOR_DISCREPANCY]: Why two devices report different HRV from the same heart.',

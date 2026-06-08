@@ -14,7 +14,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['dopamine', 'prefrontal-cortex', 'limbic-system', 'homeostasis', 'neuroplasticity'],
   introStyle: 'purple',
-  image: '/images/tools/dopamine-detox.png',
+  image: '/images/does-dopamine-detox-work.png',
   imageAlt:
     'Does a dopamine detox work — the honest answer: you can’t detox dopamine, but stimulus control (cutting cheap-reward loops) genuinely recalibrates focus.',
   imageTitle: '[REWARD_RECALIBRATION]: What a "dopamine detox" actually is — stimulus control, not a cleanse.',

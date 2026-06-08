@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['adenosine', 'circadian-rhythm', 'cortisol', 'deep-sleep', 'homeostasis'],
   introStyle: 'orange',
-  image: '/images/tools/caffeine.png',
+  image: '/images/caffeine-half-life-sleep-pressure.png',
   imageAlt:
     'Caffeine and sleep: how caffeine blocks adenosine receptors, its ~5.5-hour half-life, and timing your last coffee to protect deep sleep.',
   imageTitle: '[RECEPTOR_BLOCK]: Caffeine masking the adenosine sleep-pressure signal.',

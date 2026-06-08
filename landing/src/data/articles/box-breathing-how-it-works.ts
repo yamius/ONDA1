@@ -14,7 +14,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['parasympathetic-nervous-system', 'vagus-nerve', 'heart-rate-variability', 'diaphragm', 'sympathetic-nervous-system'],
   introStyle: 'blue',
-  image: '/images/tools/breathing.png',
+  image: '/images/box-breathing-how-it-works.png',
   imageAlt:
     'Box breathing 4-4-4-4 technique: inhale, hold, exhale, hold — a paced breathing reset that calms the nervous system and raises HRV.',
   imageTitle: '[STATE_RESET]: The 4-4-4-4 box — pacing breath to down-shift the nervous system.',

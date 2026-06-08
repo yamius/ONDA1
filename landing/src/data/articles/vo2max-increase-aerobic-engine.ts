@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['mitochondria', 'metabolic-flexibility', 'atp', 'heart-rate-variability', 'homeostasis'],
   introStyle: 'cyan',
-  image: '/images/tools/vo2max.png',
+  image: '/images/vo2max-increase-aerobic-engine.png',
   imageAlt:
     'VO2max aerobic engine capacity: maximum oxygen uptake, the top marker of cardiorespiratory fitness and a strong predictor of longevity.',
   imageTitle: '[ENGINE_THROUGHPUT]: Maximising oxygen uptake — the master ceiling on aerobic output.',

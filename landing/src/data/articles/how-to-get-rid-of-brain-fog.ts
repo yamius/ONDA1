@@ -14,7 +14,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['brain', 'cortisol', 'circadian-rhythm', 'homeostasis', 'adenosine'],
   introStyle: 'slate',
-  image: '/images/tools/brain-fog.png',
+  image: '/images/how-to-get-rid-of-brain-fog.png',
   imageAlt:
     'How to get rid of brain fog: the common fixable causes — sleep, stress, digital overstimulation and lifestyle — and the fastest fix for each.',
   imageTitle: '[SIGNAL_CLARITY]: Clearing brain fog by fixing its real drivers, not chasing a label.',

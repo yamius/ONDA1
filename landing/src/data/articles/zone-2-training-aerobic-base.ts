@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['mitochondria', 'metabolic-flexibility', 'atp', 'heart-rate-variability', 'homeostasis'],
   introStyle: 'emerald',
-  image: '/images/tools/zone-2.png',
+  image: '/images/zone-2-training-aerobic-base.png',
   imageAlt:
     'Zone 2 training aerobic base: conversational-pace cardio that builds mitochondrial density and fat oxidation for endurance and longevity.',
   imageTitle: '[BASE_LAYER_INSTALL]: Building mitochondrial density at the conversational-pace threshold.',

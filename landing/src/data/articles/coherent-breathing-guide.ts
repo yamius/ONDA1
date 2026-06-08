@@ -14,7 +14,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['heart-rate-variability', 'parasympathetic-nervous-system', 'vagus-nerve', 'diaphragm', 'sympathetic-nervous-system'],
   introStyle: 'cyan',
-  image: '/images/tools/resonance-breathing.png',
+  image: '/images/coherent-breathing-guide.png',
   imageAlt:
     'Coherent breathing at ~6 breaths per minute: the resonance frequency where heart rate, breathing and baroreflex sync and HRV peaks.',
   imageTitle: '[RESONANCE_LOCK]: Breathing at ~6/min to maximise heart-rate variability.',

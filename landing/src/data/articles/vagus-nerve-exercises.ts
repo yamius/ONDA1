@@ -14,7 +14,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['vagus-nerve', 'parasympathetic-nervous-system', 'heart-rate-variability', 'sympathetic-nervous-system', 'mammalian-dive-reflex'],
   introStyle: 'emerald',
-  image: '/images/tools/nervous-system.png',
+  image: '/images/vagus-nerve-exercises.png',
   imageAlt:
     'Vagus nerve exercises: slow-exhale breathing, humming, gargling and cold exposure to raise vagal tone and shift out of fight-or-flight.',
   imageTitle: '[VAGAL_TONE_UP]: Activating the parasympathetic brake to leave fight-or-flight.',

@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['homeostasis', 'heart-rate-variability', 'deep-sleep', 'slow-wave-sleep', 'circadian-rhythm'],
   introStyle: 'orange',
-  image: '/images/tools/alcohol.png',
+  image: '/images/how-long-does-alcohol-stay-in-your-system.png',
   imageAlt:
     'How long alcohol stays in your system: the Widmark equation, ~0.015%/hour clearance, and why only time lowers blood alcohol.',
   imageTitle: '[CLEARANCE_RATE]: Why only time lowers blood alcohol — about one drink per hour.',

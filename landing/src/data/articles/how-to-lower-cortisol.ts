@@ -14,7 +14,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['cortisol', 'circadian-rhythm', 'homeostasis', 'sympathetic-nervous-system', 'parasympathetic-nervous-system'],
   introStyle: 'amber',
-  image: '/images/tools/burnout.png',
+  image: '/images/how-to-lower-cortisol.png',
   imageAlt:
     'How to lower cortisol: evidence-based ways to reduce chronically high stress-hormone levels — sleep, slow breathing, movement — and why cortisol detox is a myth.',
   imageTitle: '[STRESS_HORMONE_REGULATION]: Lowering chronically elevated cortisol the way that actually works.',

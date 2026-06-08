@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['ketosis', 'autophagy', 'insulin-sensitivity', 'metabolic-flexibility', 'ketones', 'glucose-spikes'],
   introStyle: 'amber',
-  image: '/images/tools/fasting.png',
+  image: '/images/intermittent-fasting-metabolic-switch.png',
   imageAlt:
     'Intermittent fasting metabolic switch: the shift from glucose to fat and ketones during the fasted state, plus autophagy and insulin sensitivity.',
   imageTitle: '[FUEL_SWITCH]: Transitioning the system from glucose to fat and ketone metabolism.',

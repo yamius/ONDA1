@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['deep-sleep', 'slow-wave-sleep', 'circadian-rhythm', 'adenosine', 'homeostasis'],
   introStyle: 'indigo',
-  image: '/images/tools/sleep-debt.png',
+  image: '/images/how-much-sleep-do-you-need.png',
   imageAlt:
     'How much sleep do you need by age: the National Sleep Foundation ranges, why most adults need 7–9 hours, and how sleep debt accumulates.',
   imageTitle: '[SLEEP_REQUIREMENT]: Matching sleep duration to your age-based need.',

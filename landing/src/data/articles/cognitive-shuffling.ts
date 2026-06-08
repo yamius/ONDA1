@@ -18,7 +18,7 @@ const article: Article = {
     'hrv-training-nervous-system-latency',
   ],
   introStyle: 'indigo',
-  image: '/images/tools/cognitive-shuffle.png',
+  image: '/images/cognitive-shuffling.png',
   imageAlt:
     'Cognitive shuffling sleep technique: picturing random neutral words at bedtime to quiet a racing mind and fall asleep faster.',
   imageTitle: '[BUFFER_FLUSH]: Serial diverse imagining to break the bedtime worry-loop.',

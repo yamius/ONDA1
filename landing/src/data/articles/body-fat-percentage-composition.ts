@@ -13,7 +13,7 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['metabolism', 'insulin-sensitivity', 'metabolic-flexibility', 'homeostasis', 'cortisol'],
   introStyle: 'gold',
-  image: '/images/tools/body-fat.png',
+  image: '/images/body-fat-percentage-composition.png',
   imageAlt:
     'Body fat percentage and composition: essential vs storage fat, healthy ranges by sex, and measurement methods from tape to DEXA.',
   imageTitle: '[COMPOSITION_LAYER]: Reading fat mass vs lean mass — the signal the scale hides.',
