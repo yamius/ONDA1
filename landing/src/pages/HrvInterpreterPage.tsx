@@ -4,6 +4,7 @@ import { langFromPath, langHref } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
 import { HRV_AGE_BANDS, HRV_FAQ, HRV_SOURCES, HRV_METHODOLOGY, interpretHrv, type HrvResult } from '../data/hrv-norms'
 import { SourcesSection } from '../components/SourcesSection'
+import { ordinal } from '../utils/ordinal'
 
 const TIER_COLOR: Record<string, string> = {
   low: 'text-red-400',
@@ -85,7 +86,7 @@ export function HrvInterpreterPage() {
           <div className="mt-6">
             <div className="mb-2 flex items-baseline justify-between">
               <span className={`text-2xl font-bold ${TIER_COLOR[result.tier]}`}>{result.tierLabel}</span>
-              <span className="font-mono text-sm text-white/50">~{result.percentile}th percentile · age {result.band.label}</span>
+              <span className="font-mono text-sm text-white/50">~{ordinal(result.percentile)} percentile · age {result.band.label}</span>
             </div>
             <div className="mb-4 h-3 w-full overflow-hidden rounded-full bg-white/10">
               <div

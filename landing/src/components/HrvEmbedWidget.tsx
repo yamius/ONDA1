@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { interpretHrv, type HrvResult } from '../data/hrv-norms'
+import { ordinal } from '../utils/ordinal'
 
 /**
  * Self-contained, iframe-friendly HRV interpreter widget.
@@ -57,7 +58,7 @@ export function HrvEmbedWidget() {
         <div className="rounded-lg border border-white/10 bg-white/5 p-3">
           <div className="flex items-baseline justify-between">
             <span className={`text-lg font-bold ${tierColor}`}>{result.tierLabel}</span>
-            <span className="font-mono text-xs text-white/50">~{result.percentile}th pct · {result.band.label}</span>
+            <span className="font-mono text-xs text-white/50">~{ordinal(result.percentile)} pct · {result.band.label}</span>
           </div>
           <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
             <div className="h-full rounded-full bg-gradient-to-r from-terminal-cyan to-terminal-green" style={{ width: `${result.barPct}%` }} />
