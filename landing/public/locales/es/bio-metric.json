@@ -35,7 +35,7 @@
       "sections": [
         {
           "heading": "El punto óptimo",
-          "body": "El flujo es el santo grial del rendimiento. En ONDA capturamos este estado cuando tu sistema alcanza una sincronización perfecta: alta concentración con calma interna profunda. Es el momento en que estás totalmente absorto en una tarea y, sin embargo, tu cuerpo no paga un precio excesivo por ello."
+          "body": "El flujo es el santo grial del rendimiento. En ONDA estimamos un patrón de tipo flujo cuando la señal sugiere sincronización: alta concentración con calma interna profunda. Es el momento en que estás totalmente absorto en una tarea y, sin embargo, tu cuerpo no paga un precio excesivo por ello."
         },
         {
           "heading": "Qué significan los valores",
@@ -91,7 +91,7 @@
       "sections": [
         {
           "heading": "El coste del movimiento",
-          "body": "La fatiga en ONDA es más que ganas de dormir. Es una medición objetiva del «coste biológico» de tus esfuerzos recientes. Registramos esta métrica cuando tus reservas de energía están agotadas y tu estrés permanece crónicamente elevado. Es la señal de que tu sistema ha pasado de una operación eficiente a un estado de desgaste."
+          "body": "La fatiga en ONDA es más que ganas de dormir. Es una estimación aproximada del «coste biológico» de tus esfuerzos recientes. Esta estimación sube cuando tus reservas de energía parecen agotadas y tu estrés se mantiene elevado. Es la señal de que tu sistema ha pasado de una operación eficiente a un estado de desgaste."
         },
         {
           "heading": "Qué significan los valores",
@@ -147,7 +147,7 @@
       "sections": [
         {
           "heading": "Empuje positivo",
-          "body": "La excitación es un estado de movilización «luminosa» del sistema. Como la ansiedad, implica un alza de HR y de la frecuencia respiratoria, pero con una distinción crítica: en ONDA este índice solo sube si el estrés permanece en rango saludable. No es una respuesta a una amenaza, sino una preparación para el juego, la creatividad o un evento significativo."
+          "body": "La excitación es un estado de movilización «luminosa» del sistema. Como la ansiedad, implica un alza de HR y de la frecuencia respiratoria, pero con una distinción crítica: en ONDA este índice solo sube si el estrés permanece en rango saludable. Solemos leer este patrón como preparación para el juego, la creatividad o un evento significativo, más que como una respuesta a una amenaza."
         },
         {
           "heading": "Qué significan los valores",
@@ -190,7 +190,7 @@
         },
         {
           "heading": "¿Por qué está en ONDA?",
-          "body": "Te ayudamos a recalibrar tus señales internas. A menudo confundimos excitación con ansiedad y tratamos de suprimirla. ONDA revela la verdad: «Tu HR está alto, pero tu sistema es estable — no tienes miedo, solo estás cargado». Esto te permite usar la energía de la excitación como combustible y no como motivo de preocupación."
+          "body": "Te ayudamos a recalibrar tus señales internas. A menudo confundimos excitación con ansiedad y tratamos de suprimirla. ONDA puede dar una pista: tu HR está alto, pero tu ritmo se ve estable — una señal de que quizá estés cargado más que asustado. Esto te permite usar la energía de la excitación como combustible y no como motivo de preocupación."
         },
         {
           "highlight": "La excitación es energía dirigida hacia fuera. Abraza la subida; es señal de que tu sistema está listo para la grandeza."
@@ -203,7 +203,7 @@
       "sections": [
         {
           "heading": "El estado de flujo",
-          "body": "Foco / concentración no es un acto de voluntad, sino el resultado de la armonía del sistema. En ONDA este índice se calcula como el balance entre tu nivel de energía y la ausencia de ruido interno (estrés). Es la expresión matemática del «flujo» — donde el cerebro opera al máximo sin recalentar el «procesador» con activación emocional excesiva."
+          "body": "Foco / concentración no es un acto de voluntad, sino el resultado de la armonía del sistema. En ONDA este índice se calcula como el balance entre tu nivel de energía y la ausencia de ruido interno (estrés). Es nuestro indicador aproximado de un estado de tipo foco — cuando tu energía es suficiente y el ruido interno (estrés) se mantiene bajo, la atención llega con más facilidad."
         },
         {
           "heading": "Qué significan los valores",
@@ -259,7 +259,7 @@
       "sections": [
         {
           "heading": "El arte de la presencia",
-          "body": "Relajación / calma no es solo la ausencia de estrés; es un estado activo de bienestar fisiológico. En ONDA este índice se calcula como el inverso del caos (CSI) combinado con la reserva de energía. Mide cuán eficientemente tu sistema ha despejado el ruido biológico y se ha preparado para un descanso de calidad o una creatividad profunda."
+          "body": "Relajación / calma no es solo la ausencia de estrés; es un estado activo de bienestar fisiológico. En ONDA este índice se calcula como el inverso del caos (CSI) combinado con la reserva de energía. Estima cuán asentado se ve tu ritmo —bajo ruido cardíaco junto con reserva de energía— como indicio de disposición para un descanso de calidad o una creatividad profunda."
         },
         {
           "heading": "Qué significan los valores",
@@ -315,7 +315,7 @@
       "sections": [
         {
           "heading": "El detector invisible de amenazas",
-          "body": "Alarma es un índice compuesto en ONDA que analiza la sinergia entre tu HR y tu respiración. Buscamos un patrón específico: un alza simultánea de HR y de la frecuencia respiratoria. Es la firma biológica clásica del modo «lucha o huida». Esta métrica captura el momento exacto en que tu sistema nervioso autónomo deja de simplemente funcionar y empieza a prepararse para defenderse."
+          "body": "Alarma es un índice compuesto en ONDA que analiza la sinergia entre tu HR y tu respiración. Buscamos un patrón específico: un alza simultánea de HR y de la frecuencia respiratoria. Es un patrón que suele asociarse al modo «lucha o huida». El índice avisa cuando aparece ese patrón — una señal para revisarte, no un diagnóstico."
         },
         {
           "heading": "Qué significan los valores",
@@ -354,7 +354,7 @@
         },
         {
           "heading": "¿Por qué está en ONDA?",
-          "body": "La ansiedad suele disfrazarse de fatiga ordinaria o alta productividad. El índice de alarma te permite ver la verdad: puede que solo estés tomando café, pero tu cuerpo se comporta como si lo estuviese cazando un depredador. ONDA te da la oportunidad de detectar este patrón a tiempo y «cancelar» la señal con respiración consciente, antes de que se convierta en pánico o burnout."
+          "body": "La ansiedad suele disfrazarse de fatiga ordinaria o alta productividad. El índice de alarma puede dar una pista: puede que solo estés tomando café, pero tu cuerpo se comporta como si lo estuviese cazando un depredador. ONDA te da la oportunidad de detectar este patrón a tiempo y «cancelar» la señal con respiración consciente, antes de que se convierta en pánico o burnout."
         },
         {
           "highlight": "El cuerpo no miente. Si la alarma sube, no es razón para entrar en pánico — es razón para una exhalación profunda. Recupera el control a través del cuerpo cuando la mente parece impotente."
@@ -534,7 +534,7 @@
       "sections": [
         {
           "heading": "Tu batería interior",
-          "body": "En ONDA, Energía % no es una sensación subjetiva de viveza; es una medición objetiva de tu reserva cardiovascular. Es la razón matemática entre cuán lejos está tu HR del techo elevado y cuán estable es tu ritmo cardíaco en este segundo. A más puntuación, más capacidad fisiológica para tareas nuevas."
+          "body": "En ONDA, Energía % no es una sensación subjetiva de viveza; es una estimación aproximada de tu reserva cardiovascular. Es la razón matemática entre cuán lejos está tu HR del techo elevado y cuán estable es tu ritmo cardíaco en este segundo. A más puntuación, más capacidad fisiológica para tareas nuevas."
         },
         {
           "heading": "La anatomía del agotamiento",
@@ -587,7 +587,7 @@
       "sections": [
         {
           "heading": "Más allá de las emociones",
-          "body": "En ONDA, Estrés % no es un estado psicológico; es una medición matemática del caos del sistema. Esta puntuación se deriva del Índice de Estabilidad Cardíaca. No solo analizamos tu pulso; examinamos las microdesviaciones del ritmo en cada latido. A mayor irregularidad y «ruido» en estos intervalos, mayor tu puntuación biológica de estrés."
+          "body": "En ONDA, Estrés % no es un estado psicológico; es un índice aproximado de la irregularidad de tu ritmo cardíaco. Esta puntuación se deriva del Índice de Estabilidad Cardíaca. No solo analizamos tu pulso; examinamos las microdesviaciones del ritmo en cada latido. A mayor irregularidad y «ruido» en estos intervalos, mayor la puntuación de estrés estimada — una señal orientativa, no una medición clínica."
         },
         {
           "heading": "¿Qué significa tu puntuación?",
