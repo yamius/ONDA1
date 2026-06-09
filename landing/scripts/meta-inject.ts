@@ -1255,8 +1255,8 @@ function buildReviewJsonLd(r: NonNullable<RouteMeta['review']>): string {
     name: r.name,
     datePublished: r.datePublished,
     dateModified: r.dateModified,
-    author: { '@id': AUTHOR_ID },
-    publisher: { '@id': `${SITE_URL}/#organization` },
+    author: { '@type': 'Person', '@id': AUTHOR_ID, name: AUTHOR_NAME },
+    publisher: { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'ONDA Life' },
     reviewBody: r.reviewBody,
     itemReviewed: {
       '@type': 'Product',
@@ -1264,6 +1264,7 @@ function buildReviewJsonLd(r: NonNullable<RouteMeta['review']>): string {
       brand: { '@type': 'Brand', name: r.brand },
       ...(r.productType ? { category: r.productType } : {}),
       ...(r.image ? { image: r.image } : {}),
+      description: r.reviewBody,
       ...(r.priceUsd
         ? {
             offers: {
@@ -1281,7 +1282,7 @@ function buildReviewJsonLd(r: NonNullable<RouteMeta['review']>): string {
       // ratings we don't have.
       review: {
         '@type': 'Review',
-        author: { '@id': AUTHOR_ID },
+        author: { '@type': 'Person', '@id': AUTHOR_ID, name: AUTHOR_NAME },
         datePublished: r.datePublished,
         reviewRating: {
           '@type': 'Rating',
