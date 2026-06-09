@@ -52,7 +52,7 @@ Every cognitive load requires pristine 'Hardware' status. If your Cortisol is sp
 
 ## [ SECTION 2: PHOTIC & METABOLIC CALIBRATION ]
 
-Your eyes are data input ports. The light they receive directly programs your hormonal output. By optimizing the solar window and 'Fuel Input' (nutrition), we eliminate the metabolic lag—commonly felt as 'brain fog'—that disrupts high-level processing.
+Your eyes are data input ports. The light they receive directly programs your hormonal output. By optimizing the solar window and 'Fuel Input' (nutrition), we work to reduce the metabolic lag—commonly felt as 'brain fog'—that disrupts high-level processing.
 
 ---
 

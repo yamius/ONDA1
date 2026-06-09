@@ -38,7 +38,7 @@ const article: Article = {
 
 > "Cacao is more than a nutrient; it is a complex chemical driver for your cellular infrastructure. In the ONDA model, we treat the removal of caffeine and theobromine not as a loss, but as a 'Frequency Filter.'
 >
-> By isolating the pure flavonols from their stimulant counterparts, we eliminate 'System Noise' (adrenal spikes) while maximizing the signal for Stem Cell Production. This is how you calibrate your internal laboratory for regeneration without overclocking the nervous system."
+> By isolating the pure flavonols from their stimulant counterparts, we cut 'System Noise' (adrenal spikes) while leaning into the pathways research has linked to regeneration. This is how you calibrate your internal laboratory for recovery without overclocking the nervous system."
 
 ---
 

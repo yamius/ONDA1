@@ -51,7 +51,7 @@ This protocol pairs single-task execution with a mindfulness gate to switch the 
 
 ### Stage A: Monotasking Check
 
-This step eliminates excess task-switching and prevents conflicts that strain the dACC.
+This step cuts down excess task-switching and the kind of conflicts that strain the dACC.
 
 > **The Hack:** Select a single task (Core Vector). Set a timer for 50 minutes of deep work. Isolate all external distractors — disable notifications and close unnecessary tabs.
 

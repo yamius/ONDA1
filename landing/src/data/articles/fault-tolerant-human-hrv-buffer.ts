@@ -80,7 +80,7 @@ Three interventions to stress-test the system and expand the HRV buffer:
 
 > **Action:** Daily Vagus Nerve Stimulation via resonant frequency breathing (0.1 Hz, 10–15 minutes), gargling, or humming. Track morning HRV for 7 consecutive days to establish baseline.
 
-**Logic:** VNS acts like installing an Uninterruptible Power Supply (UPS) for the parasympathetic nervous system. Even when the external environment cuts the power — acute stress, sleep deprivation, infection — your internal regulatory system maintains baseline function. Each VNS session strengthens the afferent vagal pathways, permanently increasing the threshold before the system tips into sympathetic overdrive.
+**Logic:** VNS acts like installing an Uninterruptible Power Supply (UPS) for the parasympathetic nervous system. Even when the external environment cuts the power — acute stress, sleep deprivation, infection — a well-regulated system holds baseline function better. Regular VNS practice is associated with better vagal tone over time, which tends to raise the threshold before the system tips into sympathetic overdrive.
 
 ### Protocol 3: Predictive Maintenance
 

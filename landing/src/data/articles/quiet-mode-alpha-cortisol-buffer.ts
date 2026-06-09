@@ -97,7 +97,7 @@ Three physiological triggers to engage the silence protocol on demand:
 
 ## Impact Log: Recovery Efficiency
 
-**Instant Decompression:** Releasing muscular and mental tension within minutes — not hours. The Alpha-Drop protocol, when executed after a high-stress work period, achieves measurable cortisol reduction faster than passive rest because it actively engages the parasympathetic system rather than waiting for it to activate spontaneously.
+**Instant Decompression:** Releasing muscular and mental tension within minutes — not hours. The Alpha-Drop protocol, when used after a high-stress work period, tends to bring stress down faster than passive rest because it actively engages the parasympathetic system rather than waiting for it to settle on its own.
 
 **Metabolic Preservation:** Conserving bodily resources by lowering background stress levels. Every hour of chronic High-Beta neural activity and associated cortisol elevation consumes resources that would otherwise go toward cellular repair, immune function, and neuroplasticity consolidation. Quiet Mode is metabolic efficiency — the body stops burning emergency fuel on a non-emergency.
 

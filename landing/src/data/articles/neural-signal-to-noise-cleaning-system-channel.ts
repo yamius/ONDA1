@@ -67,7 +67,7 @@ The brain consumes up to 20% of the body's energy. At low SNR, most of that ener
 
 ## Section 3: Active Noise Cancellation
 
-ONDA boosts SNR through biological filtration algorithms.
+ONDA works to improve that signal-to-noise — less static, clearer signal — through the practices in this guide.
 
 ### Inhibitory Tuning
 

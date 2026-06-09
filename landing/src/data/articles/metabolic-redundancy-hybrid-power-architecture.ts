@@ -44,7 +44,7 @@ Fast energy for peak cognitive bursts or explosive movement. Powerful, but leave
 Low-temperature, clean-burning fuel for deep work and sustained focus for 12+ hours.
 
 ### The Redundancy Layer
-When glucose runs low, a flexible system seamlessly transitions to fats without a performance hit. This eliminates the post-lunch food coma. The switch becomes the system's most valuable hardware feature.
+When glucose runs low, a flexible system transitions to fats with less of a performance hit. This is what tends to soften the post-lunch food coma. The switch becomes the system's most valuable hardware feature.
 
 ---
 

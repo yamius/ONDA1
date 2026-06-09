@@ -55,7 +55,7 @@ Instead of fixed schedules, we implement Adaptive Protocols. This is the 'IF-THE
 
 **IF** RECOVERY_SCORE < 40%, **THEN** the system automatically replaces the HIGH_INTENSITY protocol with VAGAL_TONE_RESET.
 
-This eliminates 'Human Error'—the tendency to ignore biological signals in favor of artificial performance goals.
+This curbs 'Human Error'—the tendency to ignore biological signals in favor of artificial performance goals.
 
 ---
 

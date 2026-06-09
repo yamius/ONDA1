@@ -52,7 +52,7 @@ The biological mechanism behind this is the Frequency Following Response (FFR).
 
 **Network Synchronization:** This local firing spreads throughout the cortex, effectively "tuning" the entire system's CPU frequency.
 
-**Neuroplasticity:** Repeatedly "forcing" the brain into Alpha (8–12 Hz) for focus or Theta (4–8 Hz) for creativity strengthens the neural pathways associated with these states, making it easier to access them over time without the hardware.
+**Neuroplasticity:** Repeatedly practising a shift into Alpha (8–12 Hz) for focus or Theta (4–8 Hz) for creativity is associated, over time, with finding these states easier to reach on your own — the same "practice makes it familiar" principle behind any trained skill.
 
 ---
 

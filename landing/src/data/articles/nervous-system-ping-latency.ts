@@ -89,7 +89,7 @@ Three-layer intervention to reduce systemic latency:
 
 > **Action:** Apply Vagus Nerve Stimulation via sustained resonant breathing, cold exposure, or humming/gargling — minimum 2–3 minutes of direct vagal activation.
 
-**Logic:** VNS acts like installing a dedicated high-speed fiber line for your parasympathetic nervous system. Each session strengthens the afferent vagal pathways, permanently increasing baseline vagal tone — the same pathway that device-based [electrical neuromodulation](/articles/electric-medicine-neuromodulation) targets directly. Over weeks of consistent application, the resting HRV baseline rises and the sympathetic "recovery slope" steepens — meaning the system exits stress states faster with each iteration.
+**Logic:** VNS acts like installing a dedicated high-speed fiber line for your parasympathetic nervous system. Regular practice is associated with better baseline vagal tone over time — the same pathway that device-based [electrical neuromodulation](/articles/electric-medicine-neuromodulation) targets directly. Over weeks of consistent practice, many people see their resting HRV baseline drift upward and recover from stress states more readily, though the pace varies from person to person.
 
 ### Protocol 3: Stress Buffering (Load Training)
 

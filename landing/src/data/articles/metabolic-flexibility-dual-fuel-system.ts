@@ -8,7 +8,7 @@ const article: Article = {
   slug: 'metabolic-flexibility-dual-fuel-system',
   title: 'Metabolic Flexibility: Optimizing Your Body\'s Dual-Fuel System',
   description:
-    'Unlock your hybrid engine. Master the switch between glucose and ketones, eliminate brain fog, and access stable metabolic power.',
+    'Unlock your hybrid engine. Master the switch between glucose and ketones, ease brain fog, and access stable metabolic power.',
   category: 'Biological Software',
   relatedSlugs: [
     'metabolic-flexibility',
@@ -37,7 +37,7 @@ const article: Article = {
 
 > "Your body is a hybrid engine designed to run on two distinct fuel sources: Glucose (Sugar) and Ketones (Fats). In the modern world, most biological systems are 'Glucose-Locked'—trapped in a perpetual cycle of insulin spikes and energy crashes. This is inefficient hardware management.
 >
-> [Metabolic Flexibility](/glossary/metabolic-flexibility) is the ability of your [mitochondria](/glossary/mitochondria) to seamlessly switch between these fuel sources based on availability and demand. Engineering that switch as a true backup system is the [metabolic redundancy](/articles/metabolic-redundancy-hybrid-power-architecture) protocol. In the ONDA model, this is 'Power Management 2.0.' When you unlock this flexibility, you eliminate 'Brain Fog,' stabilize your mood, and access a near-limitless reserve of stored metabolic energy.
+> [Metabolic Flexibility](/glossary/metabolic-flexibility) is the ability of your [mitochondria](/glossary/mitochondria) to seamlessly switch between these fuel sources based on availability and demand. Engineering that switch as a true backup system is the [metabolic redundancy](/articles/metabolic-redundancy-hybrid-power-architecture) protocol. In the ONDA model, this is 'Power Management 2.0.' When you build this flexibility, many people notice less 'Brain Fog,' steadier mood, and access to a deep reserve of stored metabolic energy.
 >
 > It's time to upgrade your fuel logic and unlock stable power."
 
@@ -57,7 +57,7 @@ Your [mitochondria](/glossary/mitochondria) are the cellular power plants. [Meta
 
 ## Section 3: The Ketogenic Backup
 
-Ketosis isn't just a diet; it's a high-performance metabolic state. Ketones are a "cleaner" fuel for the brain, producing fewer reactive oxygen species (ROS) than glucose. Accessing this state is like switching your CPU to a more stable power supply. When you're metabolically flexible, you can enter Ketosis during a fasted window—and your brain runs on Ketones instead of demanding the next glucose spike. This eliminates the energy rollercoaster.
+Ketosis isn't just a diet; it's a high-performance metabolic state. Ketones are a "cleaner" fuel for the brain, producing fewer reactive oxygen species (ROS) than glucose. Accessing this state is like switching your CPU to a more stable power supply. When you're metabolically flexible, you can enter Ketosis during a fasted window—and your brain runs on Ketones instead of demanding the next glucose spike. This is what tends to smooth out the energy rollercoaster.
 
 ---
 

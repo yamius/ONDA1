@@ -44,7 +44,7 @@ The dopamine pathway begins in the [Ventral Tegmental Area (VTA)](/articles/vent
 
 ## Section 2: The Baseline vs. The Spike
 
-Your biological "Satisfaction Level" depends on your Dopamine Baseline. When you experience a massive spike (a 'Cheap Dopamine' hit), your system triggers Homeostasis, forcing a proportional "crash" to balance the scales. Chronic spiking leads to a lower baseline, making everyday tasks feel grey and uninspiring. The good news: Neuroplasticity allows you to rewire this circuitry over time. To maintain high performance, you must protect your baseline from extreme volatility.
+Your biological "Satisfaction Level" depends on your Dopamine Baseline. When you experience a massive spike (a 'Cheap Dopamine' hit), your system triggers Homeostasis, forcing a proportional "crash" to balance the scales. Chronic spiking leads to a lower baseline, making everyday tasks feel grey and uninspiring. The good news: through neuroplasticity, this balance can gradually reshape with consistent habits over time. To maintain high performance, you must protect your baseline from extreme volatility.
 
 ---
 
