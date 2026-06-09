@@ -1274,6 +1274,22 @@ function buildReviewJsonLd(r: NonNullable<RouteMeta['review']>): string {
             },
           }
         : {}),
+      // Attach the single editorial review onto the Product itself so Google's
+      // Product-snippet validator sees a rating on the product (it reads the
+      // itemReviewed node, not the wrapping Review). Still ONE editorial score
+      // — deliberately NOT an aggregateRating, which would imply many user
+      // ratings we don't have.
+      review: {
+        '@type': 'Review',
+        author: { '@id': AUTHOR_ID },
+        datePublished: r.datePublished,
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: r.ratingValue,
+          bestRating: 10,
+          worstRating: 0,
+        },
+      },
     },
     reviewRating: {
       '@type': 'Rating',
