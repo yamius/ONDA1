@@ -6,6 +6,7 @@ import {
   PPG,
   type PpgSample,
 } from '../lib/ppgCore';
+import { heartRateStore } from './heartRateStore';
 
 /**
  * useCameraPpg — live camera pulse for the no-watch majority.
@@ -86,6 +87,10 @@ export function useCameraPpg() {
 
   const teardown = useCallback(() => {
     runningRef.current = false;
+    // Release the camera as a pulse source + drop the shared buffer so stale
+    // camera HR can't linger into a later watch session.
+    heartRateStore.setCameraActive(false);
+    heartRateStore.clear();
     if (rafRef.current != null) {
       cancelAnimationFrame(rafRef.current);
       rafRef.current = null;
@@ -184,6 +189,10 @@ export function useCameraPpg() {
       smoothedBpmRef.current = adaptiveSmooth(smoothedBpmRef.current, est.bpm, est.confidence);
       const bpm = Math.round(smoothedBpmRef.current);
       setState((s) => ({ ...s, bpm, confidence: est.confidence, status: 'reading' }));
+      // Feed the shared pulse buffer so useVitals derives breathing from camera
+      // HR (same path as the watch); set the camera HR useVitals reads as `hr`.
+      heartRateStore.setCameraHr(bpm);
+      heartRateStore.addDataPoint(Date.now() / 1000, bpm);
     } else {
       // hold the last good bpm briefly via smoothedBpmRef; surface "searching"
       setState((s) => ({ ...s, confidence: est.confidence, status: s.status === 'reading' ? 'reading' : 'searching' }));
@@ -235,6 +244,7 @@ export function useCameraPpg() {
       runningRef.current = true;
       bufferRef.current = [];
       smoothedBpmRef.current = 0;
+      heartRateStore.setCameraActive(true); // camera is now the pulse source
       patch({ status: 'searching', torchOn });
 
       const vAny = video as HTMLVideoElement & {

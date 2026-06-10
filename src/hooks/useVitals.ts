@@ -6,6 +6,7 @@ import { useNotificationHeartRate } from "./useNotificationHeartRate";
 import { useHealthKitHeartRate } from "./useHealthKitHeartRate";
 import { useWatchHeartRate } from "./useWatchHeartRate";
 import { heartRateStore } from "./heartRateStore";
+import { resolvePulseSource, coherenceForSource } from "../lib/sensorSource";
 
 export function useVitals() {
   const bleHR = useHeartRate();
@@ -13,34 +14,37 @@ export function useVitals() {
   const healthKitHR = useHealthKitHeartRate();
   const watchHR = useWatchHeartRate();
   const { activity } = useMotion();
-  
-  // Priority system for heart rate sources:
-  // 1. BLE (real-time, most accurate) - when connected
-  // 2. Apple Watch (iOS real-time via WCSession) - when connected
-  // 3. HealthKit (iOS) - when monitoring and available
-  // 4. Notification (Android periodic updates) - fallback
-  // NB: the Apple-Watch branch keys off `watchHR.heartRate` alone, NOT
-  // `watchHR.isConnected`. `isConnected` (paired && watchAppInstalled, from
-  // getStatus) can read false transiently even while HR is actively
-  // streaming over WCSession — and when it does, HR still SHOWS on screen
-  // (displayHeartRate = watchHeartRate.heartRate ?? …, no isConnected gate)
-  // but never enters this vitals pipeline, so stress/energy/coherence stay
-  // empty. Keying off the live HR value keeps the derived metrics in sync
-  // with the number the user already sees.
-  const currentHR = bleHR.connected
-    ? bleHR.hr
-    : watchHR.heartRate != null
-      ? watchHR.heartRate
-      : (healthKitHR.isMonitoring && healthKitHR.heartRate)
-        ? healthKitHR.heartRate
-        : notificationHR.hr;
-  const hrSource = bleHR.connected
-    ? 'ble'
-    : watchHR.heartRate != null
-      ? 'watch'
-      : (healthKitHR.isMonitoring && healthKitHR.heartRate)
-        ? 'healthkit'
-        : (notificationHR.hr ? 'notification' : null);
+
+  // Camera pulse channel (set by useCameraPpg). Subscribed here so useVitals
+  // re-renders when the camera commits a bpm or is started/stopped.
+  const [camera, setCamera] = useState<{ active: boolean; hr: number | null }>(() => ({
+    active: heartRateStore.isCameraActive(),
+    hr: heartRateStore.getCameraHr(),
+  }));
+  useEffect(() => heartRateStore.subscribeCamera(setCamera), []);
+
+  // Pulse-source resolution lives in the pure, tested sensorSource module.
+  // Camera, when active, OVERRIDES (explicit choice — e.g. watch not worn);
+  // otherwise watch/BLE/HealthKit/notification in priority. Watch keys off
+  // heartRate presence, not isConnected (which can read false transiently while
+  // HR still streams over WCSession), so derived metrics stay in sync with the
+  // number already shown.
+  const { source: hrSource, hr: currentHR } = resolvePulseSource({
+    bleConnected: bleHR.connected,
+    bleHr: bleHR.hr,
+    watchHr: watchHR.heartRate,
+    healthkitHr: healthKitHR.isMonitoring ? healthKitHR.heartRate : null,
+    notificationHr: notificationHR.hr,
+    cameraActive: camera.active,
+    cameraHr: camera.hr,
+  });
+  // Refs so the empty-deps 1 Hz interval sees the live source: gate coherence
+  // OFF for camera, and stop watch/etc. polluting the shared buffer while the
+  // camera owns it.
+  const hrSourceRef = useRef(hrSource);
+  hrSourceRef.current = hrSource;
+  const cameraActiveRef = useRef(camera.active);
+  cameraActiveRef.current = camera.active;
 
   const [br, setBr] = useState<number | null>(null);
   const [stress, setStress] = useState<number | null>(null);
@@ -78,6 +82,7 @@ export function useVitals() {
 
   // Feed notification HR into series when BLE is not connected
   useEffect(() => {
+    if (cameraActiveRef.current) return; // camera owns the buffer while active
     if (!bleHR.connected && notificationHR.hr != null) {
       const now = Date.now() / 1000;
       heartRateStore.addDataPoint(now, notificationHR.hr);
@@ -86,6 +91,7 @@ export function useVitals() {
 
   // Feed HealthKit HR into series when BLE is not connected (iOS)
   useEffect(() => {
+    if (cameraActiveRef.current) return; // camera owns the buffer while active
     if (!bleHR.connected && healthKitHR.isMonitoring && healthKitHR.heartRate != null) {
       const now = Date.now() / 1000;
       heartRateStore.addDataPoint(now, healthKitHR.heartRate);
@@ -97,6 +103,7 @@ export function useVitals() {
   // the buffer fills (and stress/energy/coherence compute) whenever HR is
   // actually streaming, matching what's shown on screen.
   useEffect(() => {
+    if (cameraActiveRef.current) return; // camera owns the buffer while active
     if (!bleHR.connected && watchHR.heartRate != null) {
       const now = Date.now() / 1000;
       heartRateStore.addDataPoint(now, watchHR.heartRate);
@@ -194,7 +201,10 @@ export function useVitals() {
       const concentration = sumP > 0 ? clamp01(peakBand / sumP) : 0;
       const coherence01 = clamp01(concentration * (0.4 + 0.6 * roughBreathStability));
       coherenceRef.current = ewma(coherenceRef.current, coherence01, 0.2);
-      setCoherence(Math.round(coherenceRef.current * 100));
+      // HONESTY GATE: coherence is watch-grade only. coherenceForSource hard-
+      // nulls it for the camera source so camera HR never surfaces as coherence.
+      const rawCoherence = Math.round(coherenceRef.current * 100);
+      setCoherence(coherenceForSource(rawCoherence, hrSourceRef.current));
 
       const stress01 = clamp01(0.6 * sigmoid(zHr) + 0.3 * sigmoid(zAct) + 0.1 * (1 - roughBreathStability));
       const energy01 = clamp01(0.6 * (1 - sigmoid(zHr)) + 0.3 * (1 - sigmoid(zAct)) + 0.1 * roughBreathStability);
@@ -287,7 +297,8 @@ export function useVitals() {
     bleHR.connected ||
     (healthKitHR.isMonitoring && healthKitHR.heartRate != null) ||
     (watchHR.heartRate != null) ||
-    notificationHR.hr != null
+    notificationHR.hr != null ||
+    (camera.active && camera.hr != null)
   );
   
   const stressReady = stress !== null;

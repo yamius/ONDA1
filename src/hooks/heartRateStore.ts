@@ -7,6 +7,12 @@ class HeartRateStore {
   private currentHR: number | null = null;
   private isConnected = false;
   private device: any | null = null;
+  // Camera pulse channel (set by useCameraPpg, read by useVitals). Kept here so
+  // the camera source and the watch/BLE sources share one buffer + one place
+  // useVitals can observe — the pulse-source abstraction's shared bridge.
+  private cameraActive = false;
+  private cameraHr: number | null = null;
+  private cameraListeners: Set<(s: { active: boolean; hr: number | null }) => void> = new Set();
 
   getBuffer(): HRPoint[] {
     return this.buffer;
@@ -56,6 +62,36 @@ class HeartRateStore {
 
   setDevice(device: any | null) {
     this.device = device;
+  }
+
+  // ── Camera pulse channel ──────────────────────────────────────────────
+  subscribeCamera(callback: (s: { active: boolean; hr: number | null }) => void): () => void {
+    this.cameraListeners.add(callback);
+    return () => this.cameraListeners.delete(callback);
+  }
+
+  private notifyCamera() {
+    const snapshot = { active: this.cameraActive, hr: this.cameraHr };
+    this.cameraListeners.forEach(l => l(snapshot));
+  }
+
+  setCameraActive(active: boolean) {
+    this.cameraActive = active;
+    if (!active) this.cameraHr = null;
+    this.notifyCamera();
+  }
+
+  setCameraHr(hr: number | null) {
+    this.cameraHr = hr;
+    this.notifyCamera();
+  }
+
+  isCameraActive(): boolean {
+    return this.cameraActive;
+  }
+
+  getCameraHr(): number | null {
+    return this.cameraHr;
   }
 
   getDevice(): any | null {
