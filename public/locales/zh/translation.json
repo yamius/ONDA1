@@ -200,6 +200,18 @@
     "stability": "稳定性",
     "pulse_label": "脉搏（BPM）"
   },
+  "camera": {
+    "offer_title": "实时看你的脉搏回应",
+    "offer_body": "把指尖放在后置摄像头上，看脉搏随呼吸起伏。",
+    "offer_cta": "使用摄像头",
+    "offer_skip": "不用摄像头继续",
+    "opening": "正在打开摄像头…",
+    "denied": "摄像头不可用 — 继续而不使用。",
+    "place_finger": "把指尖放在后置摄像头上",
+    "source_label": "摄像头 · 快速",
+    "no_torch": "无法打开闪光灯 — 请在光线良好处尝试。",
+    "coherence_locked": "连接 Apple Watch 解锁一致性。"
+  },
   "practices": {
     "title": "回路练习",
     "unlock_hint": "完成回路后解锁",

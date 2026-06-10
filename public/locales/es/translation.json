@@ -201,6 +201,18 @@
     "stability": "Estabilidad",
     "pulse_label": "Pulso (BPM)"
   },
+  "camera": {
+    "offer_title": "Mira tu pulso responder en vivo",
+    "offer_body": "Apoya un dedo en la cámara trasera y observa cómo tu pulso se mueve con la respiración.",
+    "offer_cta": "Usar cámara",
+    "offer_skip": "Continuar sin cámara",
+    "opening": "Abriendo la cámara…",
+    "denied": "Cámara no disponible — continuamos sin ella.",
+    "place_finger": "Apoya un dedo en la cámara trasera",
+    "source_label": "Cámara · rápido",
+    "no_torch": "No se pudo encender el flash — prueba con buena luz.",
+    "coherence_locked": "La coherencia se desbloquea con un Apple Watch."
+  },
   "practices": {
     "title": "Prácticas del Circuito",
     "unlock_hint": "Se desbloquea después del circuito",

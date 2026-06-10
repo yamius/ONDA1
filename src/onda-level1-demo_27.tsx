@@ -28,6 +28,7 @@ import { useTodaysPractice } from './hooks/useTodaysPractice';
 import { useTheme } from './theme/ThemeProvider';
 import type { UserProfile as UserProfileType } from './lib/supabase';
 import { useVitals } from './hooks/useVitals';
+import { useCameraPpg } from './hooks/useCameraPpg';
 import { useHealthConnect } from './hooks/useHealthConnect';
 import { useHealthKitData } from './hooks/useHealthKitData';
 import { useHealthKitHeartRate } from './hooks/useHealthKitHeartRate';
@@ -116,7 +117,12 @@ const OndaLevel1 = () => {
   const { resolved } = useTheme();
   const isLight = resolved === 'light';
   const vitalsData = useVitals();
-  
+  // Camera pulse — offered to no-watch users during a practice (Step 5). It
+  // feeds useVitals through the shared pulse-source abstraction, so the wave +
+  // bpm above light up automatically; coherence stays null for camera.
+  const cameraPpg = useCameraPpg();
+  const [cameraOfferDismissed, setCameraOfferDismissed] = useState(false);
+
   // Ref to store CURRENT vitals - updated every render, accessible in async functions
   const vitalsRef = useRef(vitalsData);
   vitalsRef.current = vitalsData;
@@ -2466,6 +2472,7 @@ const OndaLevel1 = () => {
     initialCoherenceRef.current = freshVitals.coherence ?? null;
     peakCoherenceRef.current = freshVitals.coherence ?? null;
     setMeetsArtifactRequirements(false); // Reset artifact validation
+    setCameraOfferDismissed(false); // re-offer camera each new practice
     setPracticeState('active');
     setCurrentGuidingTextIndex(0);
     setIsTextTransitioning(false);
@@ -2474,6 +2481,7 @@ const OndaLevel1 = () => {
 
   const finishPractice = async () => {
     setIsMinimalMode(false);
+    cameraPpg.stop(); // free camera + torch on completion (finger no longer needed)
     const bonus = calculateBonus();
     const baseEarned = Math.floor((activePractice.maxQnt * qualityScore) / 100);
     const earnedQnt = Math.floor(baseEarned * (1 + bonus / 100));
@@ -2892,6 +2900,7 @@ const OndaLevel1 = () => {
     // The on-screen practice is gone — any further results screen belongs to a
     // hub-launched practice, so the button reverts to "Back to Practices".
     setCameFromFirstRun(false);
+    cameraPpg.stop(); // free camera + torch when leaving the practice
 
     // Scroll to practice after exit
     if (practiceId) {
@@ -4476,6 +4485,64 @@ const OndaLevel1 = () => {
                 </div>
               </div>
             </div>)}
+
+            {/* Camera pulse — offered to no-watch users so the 83–91% without a
+                watch still get the live "your body responds" wow. Value-framed;
+                "continue without" is equally visible (no dark pattern); the
+                practice is NEVER hard-gated behind the camera. The wave + bpm in
+                the hero above light up automatically once camera is the source;
+                coherence stays null (an upgrade hook, framed as invitation). */}
+            {!isMinimalMode && watchHeartRate.heartRate == null && (
+              <div className="w-full max-w-md mb-4 sm:mb-5 px-3 sm:px-0">
+                {cameraPpg.status === 'idle' && !cameraOfferDismissed && (
+                  <div className="rounded-2xl bg-white/10 backdrop-blur-2xl border border-white/25 p-4 text-center">
+                    <div className="text-sm sm:text-base font-medium text-white mb-1">{t('camera.offer_title', 'See your pulse respond live')}</div>
+                    <p className="text-xs text-white/70 mb-3">{t('camera.offer_body', 'Rest a fingertip on the rear camera and watch your pulse move with your breath.')}</p>
+                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center">
+                      <button
+                        onClick={() => cameraPpg.start()}
+                        className="px-5 py-2 rounded-full text-sm font-semibold bg-white/20 hover:bg-white/30 border border-white/30 text-white transition-all"
+                        data-testid="camera-offer-start"
+                      >
+                        {t('camera.offer_cta', 'Use camera')}
+                      </button>
+                      <button
+                        onClick={() => setCameraOfferDismissed(true)}
+                        className="px-5 py-2 rounded-full text-sm text-white/70 hover:text-white underline underline-offset-4 transition-colors"
+                        data-testid="camera-offer-skip"
+                      >
+                        {t('camera.offer_skip', 'Continue without')}
+                      </button>
+                    </div>
+                  </div>
+                )}
+                {cameraPpg.status === 'requesting' && (
+                  <p className="text-center text-xs text-white/70">{t('camera.opening', 'Opening camera…')}</p>
+                )}
+                {(cameraPpg.status === 'denied' || cameraPpg.status === 'error') && (
+                  <p className="text-center text-xs text-white/70">{t('camera.denied', 'Camera unavailable — continuing without it.')}</p>
+                )}
+                {(cameraPpg.status === 'searching' || cameraPpg.status === 'reading') && (
+                  <div className="rounded-2xl bg-white/10 backdrop-blur-2xl border border-white/25 px-3 py-2 text-center">
+                    <div className="flex items-center justify-center gap-2 text-xs">
+                      <span className="px-2 py-0.5 rounded-full bg-white/15 text-white/80 uppercase tracking-wide text-[10px]">{t('camera.source_label', 'Camera · quick')}</span>
+                      {cameraPpg.status === 'searching' && (
+                        <span className="text-white/80">{t('camera.place_finger', 'Rest a fingertip on the rear camera')}</span>
+                      )}
+                    </div>
+                    {!cameraPpg.torchOn && (
+                      <p className="text-[11px] text-amber-300/80 mt-1">{t('camera.no_torch', "Couldn't turn on the flash — try in good light.")}</p>
+                    )}
+                    <p className="text-[11px] text-white/45 mt-1">{t('camera.coherence_locked', 'Coherence unlocks with an Apple Watch.')}</p>
+                  </div>
+                )}
+                {import.meta.env.VITE_PPG_DEBUG === 'true' && cameraPpg.status !== 'idle' && (
+                  <div className="mt-1 text-center text-[10px] font-mono text-white/50">
+                    ppg bpm={cameraPpg.bpm ?? '—'} conf={cameraPpg.confidence.toFixed(2)} {cameraPpg.status} finger={String(cameraPpg.fingerOn)} torch={String(cameraPpg.torchOn)}
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Progress bar (was labelled "Quality" — renamed because the bar
                 grows monotonically through the practice; a low % early on read

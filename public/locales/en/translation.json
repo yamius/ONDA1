@@ -212,6 +212,18 @@
     "stability": "Stability",
     "pulse_label": "Pulse (BPM)"
   },
+  "camera": {
+    "offer_title": "See your pulse respond live",
+    "offer_body": "Rest a fingertip on the rear camera and watch your pulse move with your breath.",
+    "offer_cta": "Use camera",
+    "offer_skip": "Continue without",
+    "opening": "Opening camera…",
+    "denied": "Camera unavailable — continuing without it.",
+    "place_finger": "Rest a fingertip on the rear camera",
+    "source_label": "Camera · quick",
+    "no_torch": "Couldn't turn on the flash — try in good light.",
+    "coherence_locked": "Coherence unlocks with an Apple Watch."
+  },
   "practices": {
     "title": "Circuit Practices",
     "unlock_hint": "Unlocks after circuit",
