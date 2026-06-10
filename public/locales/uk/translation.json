@@ -1036,6 +1036,9 @@
     "quick_mood": {
       "title": "Швидка перевірка стану"
     },
+    "coherence": {
+      "caption": "ритм серця й дихання"
+    },
     "biometric": {
       "connect_title": "Підключи Apple Watch",
       "connect_body": "Дивись свій серцевий ритм у реальному часі під час дихальних практик.",

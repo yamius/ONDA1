@@ -1002,6 +1002,9 @@
     "quick_mood": {
       "title": "快速状态检查"
     },
+    "coherence": {
+      "caption": "心跳与呼吸的节奏"
+    },
     "biometric": {
       "connect_title": "连接 Apple Watch",
       "connect_body": "在呼吸练习中实时查看你的心律。",

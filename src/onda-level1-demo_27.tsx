@@ -126,11 +126,6 @@ const OndaLevel1 = () => {
   const healthKitHeartRate = useHealthKitHeartRate({ pollingInterval: 1500 });
   const watchHeartRate = useWatchHeartRate();
   const permissions = usePermissions();
-  // Home biometric waveform: tapping a HR/Stress/Energy card emphasises its
-  // line in the MetricsWaveform below. Tap again (or another card) to switch.
-  const [highlightedMetric, setHighlightedMetric] = useState<'hr' | 'stress' | 'energy' | null>(null);
-  const toggleMetric = (m: 'hr' | 'stress' | 'energy') =>
-    setHighlightedMetric((cur) => (cur === m ? null : m));
   const { track, trackPractice } = useAnalytics();
   const { isPremium, isLoading: isSubLoading, refresh: refreshSubscription } = useSubscription();
   const platform = Capacitor.getPlatform();
@@ -5804,60 +5799,74 @@ const OndaLevel1 = () => {
           </span>
         </div>
 
-        {/* Section 1 — Biometric Hero (4 metric cards + waveform).
-            Each card hides its value line when the metric is null
-            (no watch / no tracker) — the card collapses to icon +
-            label and the whole grid reads as setup-pending, not
-            broken-with-placeholders. Cards expand to full height
-            again as soon as each metric arrives. */}
+        {/* Section 1 — Biometric block. Honest + calm: two tiles
+            (Pulse — measured · Breathing — an RSA estimate) → Coherence
+            hero (heart–breath rhythm, the live training signal). The old
+            Stress/Energy tiles were removed: they were ONE pulse-formula
+            shown twice (stress + energy ≈ 100), and a resting "Stress %"
+            verdict is exactly the anxiety score this audience came to ONDA
+            to escape. One calm HR-RSA curve now lives inside the coherence
+            hero; the busy 3-line dashboard is gone. */}
         <div className="mb-6">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-            <div
-              onClick={() => toggleMetric('hr')}
-              className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center cursor-pointer transition-all ${highlightedMetric === 'hr' ? 'ring-2 ring-rose-400/70' : ''}`}
-            >
+          {/* Pulse | Breathing — ALWAYS shown. Each tile hides only its value
+              line when the metric is null (no tracker yet), collapsing to
+              icon + label so the row reads as "setup pending", not missing. */}
+          <div className="grid grid-cols-2 gap-3 sm:gap-4">
+            {/* Pulse — the one real, independent measurement (Watch). */}
+            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
               {displayHeartRate != null && (
                 <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{displayHeartRate}</div>
               )}
               <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
             </div>
+            {/* Breathing — RSA-derived ESTIMATE. Smoothed in useVitals, shown
+                as a rounded integer with a leading ≈ so it never reads as a
+                precise, independent measurement. */}
             <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
               {vitalsData.br != null && (
-                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.br.toFixed(1)}</div>
+                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>
+                  <span className="font-normal opacity-60 mr-0.5">≈</span>{Math.round(vitalsData.br)}
+                </div>
               )}
               <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</div>
             </div>
-            <div
-              onClick={() => toggleMetric('stress')}
-              className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center cursor-pointer transition-all ${highlightedMetric === 'stress' ? 'ring-2 ring-orange-400/70' : ''}`}
-            >
-              <Activity className="w-5 sm:w-6 h-5 sm:h-6 text-orange-400 mb-2 mx-auto" />
-              {vitalsData.stress != null && (
-                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.stress}%</div>
-              )}
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.stress_label', 'Stress')}</div>
-            </div>
-            <div
-              onClick={() => toggleMetric('energy')}
-              className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center cursor-pointer transition-all ${highlightedMetric === 'energy' ? 'ring-2 ring-blue-400/70' : ''}`}
-            >
-              <Zap className="w-5 sm:w-6 h-5 sm:h-6 text-amber-400 mb-2 mx-auto" />
-              {vitalsData.energy != null && (
-                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{vitalsData.energy}%</div>
-              )}
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.energy_label', 'Energy')}</div>
-            </div>
           </div>
+
           <div className="mt-3 sm:mt-4">
             {displayHeartRate != null ? (
-              <MetricsWaveform
-                heartRate={displayHeartRate}
-                stress={vitalsData.stress}
-                energy={vitalsData.energy}
-                highlight={highlightedMetric}
-              />
+              /* Coherence — the hero. Heart–breath synchrony read from the
+                 HR-RSA rhythm: NOT clinical RMSSD HRV, never medical. Big
+                 readout above a single calm HR-RSA curve. */
+              <div className={`rounded-2xl p-4 sm:p-5 ${
+                isLight
+                  ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+                  : 'bg-black/20 backdrop-blur-sm border border-white/10'
+              }`}>
+                <div className="flex items-baseline justify-between">
+                  <div className="text-left">
+                    <div className={`text-sm font-semibold ${isLight ? 'text-slate-600' : 'text-white/90'}`}>{t('practices.coherence')}</div>
+                    <div className={`text-xs ${isLight ? 'text-slate-400' : 'text-white/50'}`}>{t('home.coherence.caption', 'heart–breath rhythm')}</div>
+                  </div>
+                  <div className={`font-bold leading-none ${isLight ? 'text-slate-500' : 'text-white'}`} style={{ fontVariantNumeric: 'tabular-nums' }}>
+                    {vitalsData.coherence != null ? (
+                      <span className="text-3xl sm:text-4xl">{vitalsData.coherence}<span className="text-lg sm:text-xl font-semibold">%</span></span>
+                    ) : (
+                      <span className={`text-2xl sm:text-3xl ${isLight ? 'text-slate-300' : 'text-white/40'}`}>--</span>
+                    )}
+                  </div>
+                </div>
+                <div className="mt-3">
+                  <MetricsWaveform
+                    heartRate={displayHeartRate}
+                    stress={null}
+                    energy={null}
+                    hrOnly
+                    heightPx={120}
+                  />
+                </div>
+              </div>
             ) : (
               <div
                 className={`rounded-2xl p-4 sm:p-5 text-center ${
@@ -5872,7 +5881,7 @@ const OndaLevel1 = () => {
                   <span>{t('home.biometric.connect_title', 'Connect Apple Watch')}</span>
                 </div>
                 <p className="text-xs sm:text-sm mb-3" style={{ opacity: 0.7 }}>
-                  {t('home.biometric.connect_body', 'See your HRV in real time during breathing practices.')}
+                  {t('home.biometric.connect_body', 'See your heart–breath rhythm live during breathing practices.')}
                 </p>
                 <button
                   type="button"

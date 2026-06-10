@@ -1044,6 +1044,9 @@
     "quick_mood": {
       "title": "Quick Mood Scan"
     },
+    "coherence": {
+      "caption": "heart–breath rhythm"
+    },
     "biometric": {
       "connect_title": "Connect Apple Watch",
       "connect_body": "See your heart rhythm in real time during breathing practices.",

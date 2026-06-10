@@ -73,6 +73,8 @@ export function useVitals() {
   const calculationCountRef = useRef(0);
   // EMA state for the coherence score (sentinel -1 = uninitialised, see ewma).
   const coherenceRef = useRef(-1);
+  // EMA state for the DISPLAYED breathing estimate (sentinel -1, see ewma).
+  const brSmoothRef = useRef(-1);
 
   // Feed notification HR into series when BLE is not connected
   useEffect(() => {
@@ -157,8 +159,14 @@ export function useVitals() {
       }
       const brBpm = bestF > 0 ? bestF * 60 : null;
       const brValue = brBpm ? Math.max(6, Math.min(30, brBpm)) : null;
-      setBr(brValue);
-      console.log('Breathing Rate:', brValue);
+      // Breathing is an RSA-derived ESTIMATE recomputed every 2s — the raw
+      // value jitters. Smooth what we DISPLAY (EWMA ~10s) so the tile shows a
+      // stable estimate, not a flickering false-precision number. Raw brValue
+      // still feeds the baseline + emotional-index math below unchanged.
+      const brSmoothed = brValue != null ? ewma(brSmoothRef.current, brValue, 0.2) : null;
+      if (brSmoothed != null) brSmoothRef.current = brSmoothed;
+      setBr(brSmoothed);
+      console.log('Breathing Rate:', brValue, '→ smoothed', brSmoothed);
 
       // Update baseline for BR
       const b = baseline.current;

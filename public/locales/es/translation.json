@@ -1003,6 +1003,9 @@
     "quick_mood": {
       "title": "Chequeo rápido de estado"
     },
+    "coherence": {
+      "caption": "ritmo corazón–respiración"
+    },
     "biometric": {
       "connect_title": "Conecta Apple Watch",
       "connect_body": "Mira tu ritmo cardíaco en tiempo real durante las prácticas de respiración.",
