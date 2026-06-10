@@ -311,30 +311,31 @@ export function estimateHr(samples: PpgSample[], fs = PPG.FS): HrEstimate {
 // here. (A higher-fidelity breathing read directly off the raw PPG waveform is
 // a possible later refinement.)
 
-// ── Per-frame contact / quality gate (operates on frame RGB stats) ──────────
+// ── Per-frame FINGER-PRESENCE gate (operates on frame RGB stats) ────────────
 export interface FrameStats {
   rMean: number;
   gMean: number;
   bMean: number;
   /** fraction of ROI pixels with R≥250 (torch saturation) */
   clipFrac: number;
-  /** spatial variance of the red channel across the ROI */
-  redVar: number;
 }
 
 /**
- * Decide if the current frame looks like a finger on the lens (good contact),
- * replacing the web tool's brittle fixed `brightness < 90`. Relative features
- * (redness ratio, clipping, variance) so it holds across skin tones/devices.
+ * FINGER-PRESENCE ONLY — "is there a finger on the lens", NOT a quality filter.
+ * Quality is the estimator's job (pulsatility + two-estimator agreement →
+ * commit or null). Deliberately has NO brightness threshold: a brightness floor
+ * is exactly what rejects darker skin (lower transmitted luminance through the
+ * fingertip) and would deny those users the live feedback. Uses only a relative
+ * redness ratio + a saturation guard. If this gate ever starts filtering "weak
+ * signal", skin-tone bias has crept back in — gate decides finger/no-finger,
+ * estimateHr decides good/null.
  */
 export function isGoodContact(s: FrameStats): boolean {
   const sum = s.rMean + s.gMean + s.bMean + 1e-6;
-  const redness = s.rMean / sum; // finger over torch ⇒ red dominates
+  const redness = s.rMean / sum; // finger over the torch ⇒ red dominates the transmitted light
   const redDominant = s.rMean > s.gMean * 1.3;
-  const notSaturated = s.clipFrac < 0.05;
-  const lowSpatialVar = s.redVar < 1500; // a covering finger fills the ROI fairly uniformly
-  const litEnough = s.rMean > 60;
-  return redness > 0.5 && redDominant && notSaturated && lowSpatialVar && litEnough;
+  const notSaturated = s.clipFrac < 0.05; // fully clipped red has no AC pulse left to read
+  return redness > 0.5 && redDominant && notSaturated;
 }
 
 // ── SQI-adaptive smoothing (keeps RSA visible) ──────────────────────────────

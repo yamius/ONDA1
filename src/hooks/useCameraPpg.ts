@@ -1,0 +1,289 @@
+import { useCallback, useEffect, useRef, useState } from 'react';
+import {
+  estimateHr,
+  isGoodContact,
+  adaptiveSmooth,
+  PPG,
+  type PpgSample,
+} from '../lib/ppgCore';
+
+/**
+ * useCameraPpg — live camera pulse for the no-watch majority.
+ *
+ * Owns a hidden rear-camera <video> (getUserMedia), reads the red-channel mean
+ * of a large central ROI every frame (requestVideoFrameCallback, rAF fallback),
+ * and feeds the framework-free ppgCore. Once per second it asks ppgCore for a
+ * heart rate; ppgCore commits a bpm only when its two independent estimators
+ * agree and the signal quality passes — otherwise null ("blank, don't bluff").
+ *
+ * This hook is a PURE PRODUCER: it exposes { bpm, confidence, fingerOn, status }.
+ * It does NOT write to heartRateStore and does NOT touch useVitals — wiring the
+ * camera in as a selectable pulse source (and gating coherence OFF for camera)
+ * is the integration step, done atomically so camera HR can never leak into a
+ * coherence number.
+ *
+ * Torch: best-effort web `applyConstraints({torch:true})` (works on iOS 17+).
+ * A native torch bridge is intentionally deferred — added only if on-device
+ * data shows web-torch failing somewhere (see brief addendum D6 = A).
+ *
+ * Honesty: HEART RATE ONLY. No HRV / coherence from the camera.
+ */
+
+export type CameraPpgStatus =
+  | 'idle'
+  | 'requesting' // asking for camera permission / opening stream
+  | 'denied' // permission refused or no camera
+  | 'searching' // stream live, but no finger / not enough signal yet
+  | 'reading' // committing live bpm
+  | 'error';
+
+export interface CameraPpgState {
+  bpm: number | null;
+  confidence: number;
+  fingerOn: boolean;
+  torchOn: boolean;
+  status: CameraPpgStatus;
+  error: string | null;
+}
+
+const IDLE: CameraPpgState = {
+  bpm: null,
+  confidence: 0,
+  fingerOn: false,
+  torchOn: false,
+  status: 'idle',
+  error: null,
+};
+
+// Keep a little more than the analysis window so estimateHr always has a full window.
+const BUFFER_SEC = PPG.WINDOW_SEC + 3;
+const ESTIMATE_EVERY_MS = 1000;
+// Downscaled canvas — finger covers the lens, so a small frame keeps full info
+// while making getImageData cheap enough for a 30–60 fps loop on-device.
+const CANVAS_W = 80;
+const CANVAS_H = 60;
+
+export function useCameraPpg() {
+  const [state, setState] = useState<CameraPpgState>(IDLE);
+
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+  const streamRef = useRef<MediaStream | null>(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const ctxRef = useRef<CanvasRenderingContext2D | null>(null);
+  const rafRef = useRef<number | null>(null);
+  const rvfcRef = useRef<number | null>(null);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const lastSampleAtRef = useRef(0);
+  const bufferRef = useRef<PpgSample[]>([]);
+  const smoothedBpmRef = useRef(0);
+  const runningRef = useRef(false);
+  const fingerFramesRef = useRef(0);
+  const noFingerFramesRef = useRef(0);
+
+  const patch = useCallback((p: Partial<CameraPpgState>) => {
+    setState((s) => ({ ...s, ...p }));
+  }, []);
+
+  const teardown = useCallback(() => {
+    runningRef.current = false;
+    if (rafRef.current != null) {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = null;
+    }
+    const video = videoRef.current as (HTMLVideoElement & { cancelVideoFrameCallback?: (h: number) => void }) | null;
+    if (video && rvfcRef.current != null && typeof video.cancelVideoFrameCallback === 'function') {
+      video.cancelVideoFrameCallback(rvfcRef.current);
+    }
+    rvfcRef.current = null;
+    if (intervalRef.current != null) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+    const stream = streamRef.current;
+    if (stream) {
+      stream.getTracks().forEach((t) => {
+        try {
+          // best-effort: turn the torch back off before releasing
+          (t as MediaStreamTrack).applyConstraints?.({ advanced: [{ torch: false }] as MediaTrackConstraintSet[] }).catch(() => {});
+        } catch {
+          /* noop */
+        }
+        t.stop();
+      });
+    }
+    streamRef.current = null;
+    if (video) {
+      video.srcObject = null;
+      video.remove();
+    }
+    videoRef.current = null;
+    canvasRef.current = null;
+    ctxRef.current = null;
+    bufferRef.current = [];
+    smoothedBpmRef.current = 0;
+    fingerFramesRef.current = 0;
+    noFingerFramesRef.current = 0;
+  }, []);
+
+  // Pull one frame's red/green/blue means + clip fraction over a central ROI.
+  const sampleFrame = useCallback((tMs: number) => {
+    const video = videoRef.current;
+    const ctx = ctxRef.current;
+    if (!video || !ctx || video.readyState < 2) return;
+    ctx.drawImage(video, 0, 0, CANVAS_W, CANVAS_H);
+    // central ~60% ROI
+    const rw = Math.floor(CANVAS_W * 0.3);
+    const rh = Math.floor(CANVAS_H * 0.3);
+    const x0 = Math.floor(CANVAS_W / 2) - rw;
+    const y0 = Math.floor(CANVAS_H / 2) - rh;
+    const img = ctx.getImageData(x0, y0, rw * 2, rh * 2).data;
+    let r = 0, g = 0, b = 0, clipped = 0;
+    const n = img.length / 4;
+    for (let i = 0; i < img.length; i += 4) {
+      r += img[i];
+      g += img[i + 1];
+      b += img[i + 2];
+      if (img[i] >= 250) clipped++;
+    }
+    const rMean = r / n;
+    const gMean = g / n;
+    const bMean = b / n;
+    const clipFrac = clipped / n;
+
+    const fingerNow = isGoodContact({ rMean, gMean, bMean, clipFrac });
+    // debounce finger on/off so a single dropped frame doesn't flap the UI
+    if (fingerNow) {
+      fingerFramesRef.current++;
+      noFingerFramesRef.current = 0;
+      if (fingerFramesRef.current >= 5) bufferRef.current.push({ t: tMs, v: rMean });
+    } else {
+      noFingerFramesRef.current++;
+      fingerFramesRef.current = 0;
+      // finger lifted long enough → drop stale signal so a new contact starts clean
+      if (noFingerFramesRef.current >= 30) {
+        bufferRef.current = [];
+        smoothedBpmRef.current = 0;
+      }
+    }
+
+    // prune to the rolling window
+    const cutoff = tMs - BUFFER_SEC * 1000;
+    const buf = bufferRef.current;
+    let drop = 0;
+    while (drop < buf.length && buf[drop].t < cutoff) drop++;
+    if (drop > 0) bufferRef.current = buf.slice(drop);
+
+    const fingerOn = noFingerFramesRef.current < 15;
+    setState((s) => (s.fingerOn === fingerOn ? s : { ...s, fingerOn }));
+  }, []);
+
+  // 1 Hz: ask ppgCore for a committed bpm (or null).
+  const runEstimate = useCallback(() => {
+    const est = estimateHr(bufferRef.current);
+    if (est.bpm != null) {
+      smoothedBpmRef.current = adaptiveSmooth(smoothedBpmRef.current, est.bpm, est.confidence);
+      const bpm = Math.round(smoothedBpmRef.current);
+      setState((s) => ({ ...s, bpm, confidence: est.confidence, status: 'reading' }));
+    } else {
+      // hold the last good bpm briefly via smoothedBpmRef; surface "searching"
+      setState((s) => ({ ...s, confidence: est.confidence, status: s.status === 'reading' ? 'reading' : 'searching' }));
+    }
+  }, []);
+
+  const start = useCallback(async () => {
+    if (runningRef.current) return;
+    patch({ status: 'requesting', error: null });
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({
+        // 30 fps is plenty for HR (≈7 Hz Nyquist) and lighter on CPU/heat than 60.
+        video: { facingMode: 'environment', frameRate: { ideal: 30 } },
+        audio: false,
+      });
+      streamRef.current = stream;
+
+      // best-effort torch (works on iOS 17+; silently ignored elsewhere)
+      let torchOn = false;
+      const track = stream.getVideoTracks()[0];
+      try {
+        const caps = (track.getCapabilities?.() ?? {}) as MediaTrackCapabilities & { torch?: boolean };
+        if (caps.torch) {
+          await track.applyConstraints({ advanced: [{ torch: true }] as MediaTrackConstraintSet[] });
+          torchOn = true;
+        }
+      } catch {
+        /* torch unsupported / ignored — pipeline runs torch-off in good light */
+      }
+
+      const video = document.createElement('video');
+      video.setAttribute('playsinline', '');
+      video.muted = true;
+      video.playsInline = true;
+      // offscreen but RENDERED (display:none can pause decoding on iOS)
+      video.style.cssText =
+        'position:fixed;top:0;left:0;width:2px;height:2px;opacity:0.01;pointer-events:none;z-index:-1;';
+      document.body.appendChild(video);
+      video.srcObject = stream;
+      await video.play();
+      videoRef.current = video;
+
+      const canvas = document.createElement('canvas');
+      canvas.width = CANVAS_W;
+      canvas.height = CANVAS_H;
+      canvasRef.current = canvas;
+      ctxRef.current = canvas.getContext('2d', { willReadFrequently: true });
+
+      runningRef.current = true;
+      bufferRef.current = [];
+      smoothedBpmRef.current = 0;
+      patch({ status: 'searching', torchOn });
+
+      const vAny = video as HTMLVideoElement & {
+        requestVideoFrameCallback?: (cb: (now: number) => void) => number;
+      };
+      const useRvfc = typeof vAny.requestVideoFrameCallback === 'function';
+      const onFrame = () => {
+        if (!runningRef.current) return;
+        // HR needs only ~7 Hz Nyquist; throttle the heavy getImageData to ~30 Hz
+        // even when the stream delivers 60 fps (perf/heat over a 2.5-min session).
+        // resampleUniform absorbs the resulting jitter.
+        const now = performance.now();
+        if (now - lastSampleAtRef.current >= 31) {
+          lastSampleAtRef.current = now;
+          sampleFrame(now);
+        }
+        if (useRvfc) {
+          rvfcRef.current = vAny.requestVideoFrameCallback!(onFrame);
+        } else {
+          rafRef.current = requestAnimationFrame(onFrame);
+        }
+      };
+      onFrame();
+
+      intervalRef.current = setInterval(runEstimate, ESTIMATE_EVERY_MS);
+    } catch (e: unknown) {
+      const name = (e as { name?: string })?.name;
+      const denied = name === 'NotAllowedError' || name === 'NotFoundError' || name === 'SecurityError';
+      teardown();
+      patch({ status: denied ? 'denied' : 'error', error: String((e as Error)?.message ?? e) });
+    }
+  }, [patch, runEstimate, sampleFrame, teardown]);
+
+  const stop = useCallback(() => {
+    teardown();
+    setState(IDLE);
+  }, [teardown]);
+
+  // Free the camera + torch if the app is backgrounded mid-read.
+  useEffect(() => {
+    const onHidden = () => {
+      if (document.visibilityState === 'hidden' && runningRef.current) stop();
+    };
+    document.addEventListener('visibilitychange', onHidden);
+    return () => {
+      document.removeEventListener('visibilitychange', onHidden);
+      teardown();
+    };
+  }, [stop, teardown]);
+
+  return { ...state, start, stop };
+}
