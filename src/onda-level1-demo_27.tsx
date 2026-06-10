@@ -488,6 +488,12 @@ const OndaLevel1 = () => {
   // consumed by exitPractice so the paywall opens AFTER the user leaves
   // the results screen — value felt first, offer second, never before.
   const postFirstExperiencePaywallArmedRef = useRef(false);
+  // True only while the practice currently on screen was launched straight
+  // from the first-run welcome CTA. Drives the results-screen button to read
+  // "Enter ONDA" instead of "Back to Practices" — in the first run the user
+  // has never seen a practices list to go "back" to; this button is their
+  // first entry into the app. Reset on exitPractice.
+  const [cameFromFirstRun, setCameFromFirstRun] = useState(false);
 
   // A/B test for the ATT rationale copy on onboarding screen 1.
   //   variant 'a' — original ("...помогаешь нам расти...")
@@ -2798,6 +2804,10 @@ const OndaLevel1 = () => {
       setShowSubscriptionModal(true);
     }
 
+    // The on-screen practice is gone — any further results screen belongs to a
+    // hub-launched practice, so the button reverts to "Back to Practices".
+    setCameFromFirstRun(false);
+
     // Scroll to practice after exit
     if (practiceId) {
       setTimeout(() => {
@@ -4569,8 +4579,9 @@ const OndaLevel1 = () => {
                 <button
                   onClick={exitPractice}
                   className={`flex-1 sm:flex-none sm:min-w-[15rem] backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
+                  data-testid="button-exit-practice"
                 >
-                  {t('practices.back_to_practices')}
+                  {cameFromFirstRun ? t('practices.enter_onda') : t('practices.back_to_practices')}
                 </button>
               </div>
             </div>
@@ -4788,6 +4799,11 @@ const OndaLevel1 = () => {
           .flatMap(c => c.practices)
           .find(p => p.id === featuredPracticeId);
         if (featured) {
+          // Mark this as the first-run session so the results screen offers
+          // "Enter ONDA" (their first entry into the app) rather than the
+          // "Back to Practices" label, which would point at a list they have
+          // never seen.
+          setCameFromFirstRun(true);
           // Same entry point the hub cards use — opens the practice intro
           // (practice_view fires inside) where the existing free-tier
           // Start button leads straight into the live session.
