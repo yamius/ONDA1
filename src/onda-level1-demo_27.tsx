@@ -6714,12 +6714,8 @@ const OndaLevel1 = () => {
                       <p className="font-mono">{formatTime(session.duration)}</p>
                     </div>
                     <div>
-                      <p className="text-gray-400 text-xs">{t('labels.stress')}</p>
-                      <p className="font-mono">{safeToFixed(session.stress, 0)}%</p>
-                    </div>
-                    <div>
-                      <p className="text-gray-400 text-xs">{t('labels.energy')}</p>
-                      <p className="font-mono">{safeToFixed(session.energy, 0)}%</p>
+                      <p className="text-gray-400 text-xs">{t('practices.coherence')}</p>
+                      <p className="font-bold text-cyan-400">{session.coherenceDelta != null ? `+${Math.round(session.coherenceDelta)}%` : '—'}</p>
                     </div>
                     <div>
                       <p className="text-gray-400 text-xs">{t('journal.reward')}</p>
@@ -7689,12 +7685,8 @@ const OndaLevel1 = () => {
                           <p className="font-mono">{formatTime(session.duration)}</p>
                         </div>
                         <div>
-                          <p className="text-gray-400 text-xs">{t('labels.stress')}</p>
-                          <p className="font-mono">{safeToFixed(session.stress, 0)}%</p>
-                        </div>
-                        <div>
-                          <p className="text-gray-400 text-xs">{t('labels.energy')}</p>
-                          <p className="font-mono">{safeToFixed(session.energy, 0)}%</p>
+                          <p className="text-gray-400 text-xs">{t('practices.coherence')}</p>
+                          <p className="font-bold text-cyan-400">{session.coherenceDelta != null ? `+${Math.round(session.coherenceDelta)}%` : '—'}</p>
                         </div>
                         <div>
                           <p className="text-gray-400 text-xs">{t('journal.reward')}</p>
