@@ -3330,6 +3330,12 @@
     "start_journey": "Empezar el camino en ONDA Life",
     "replay": "Repetir la introducción"
   },
+  "first_run": {
+    "title": "Deja de medir el estrés. Empieza a entrenarlo.",
+    "body": "Tu primera sesión guiada dura unos {{minutes}} minutos. Sin cuenta y sin configuración: pulsa empezar, sigue la guía y nota qué cambia.",
+    "cta": "Empezar mi primera sesión · {{minutes}} min",
+    "skip": "Prefiero explorar primero"
+  },
   "connection": {
     "title": "Conexión",
     "subtitle": "Conecta tus dispositivos y rastreadores de salud",

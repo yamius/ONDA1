@@ -20,6 +20,13 @@ export type AnalyticsEventName =
   | 'onboarding_start'
   | 'onboarding_step'
   | 'onboarding_complete'
+  // First-run welcome (onboarding refactor): one light screen → featured
+  // free practice. view → cta|skip; first_experience_complete fires on the
+  // first-ever valid practice completion (the funnel's value anchor).
+  | 'first_run_welcome_view'
+  | 'first_run_welcome_cta'
+  | 'first_run_welcome_skip'
+  | 'first_experience_complete'
   | 'sign_up'
   | 'sign_in'
   // Permissions

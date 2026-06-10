@@ -395,21 +395,27 @@ export function trackTenjinOnboardingComplete(durationSeconds?: number): void {
  * first time a user validly completes any practice — ever. Idempotent
  * via a localStorage flag (kept under the original `onda_airbridge_…` key
  * so users who upgraded mid-flight don't re-fire the event).
+ *
+ * Returns true the one time the event actually fires — callers use this
+ * to trigger first-experience-only behavior (funnel event + the
+ * post-first-experience paywall) without duplicating the flag logic.
  */
 const FIRST_PRACTICE_FLAG = 'onda_airbridge_first_practice_tracked';
 export function trackTenjinFirstPracticeComplete(
   practiceName: string | undefined | null,
   opts?: { surface?: 'basic' | 'adaptive' },
-): void {
+): boolean {
   try {
-    if (typeof localStorage !== 'undefined' && localStorage.getItem(FIRST_PRACTICE_FLAG) === '1') return;
+    if (typeof localStorage !== 'undefined' && localStorage.getItem(FIRST_PRACTICE_FLAG) === '1') return false;
     if (typeof localStorage !== 'undefined') localStorage.setItem(FIRST_PRACTICE_FLAG, '1');
     const label = (practiceName ?? '').toString();
     const surface = opts?.surface ?? 'basic';
     _tenjinEvent('first_practice_complete');
     _logFirebase('first_practice_complete', { label, surface });
+    return true;
   } catch (e) {
     console.warn('[Tenjin] Failed to track first practice complete:', e);
+    return false;
   }
 }
 

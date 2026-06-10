@@ -458,6 +458,37 @@ const OndaLevel1 = () => {
   // attach `duration_seconds` to the Airbridge `Complete Onboarding` event.
   const onboardingStartRef = useRef<number | null>(null);
 
+  // Onboarding refactor: one light first-run screen, shown once to a
+  // brand-new install on cold start. Its single CTA drops the user
+  // straight into the featured FREE practice intro (shortest path to the
+  // live "during" experience); the visible skip goes to the hub. The
+  // legacy 3-screen tutorial above stays reachable via Menu → Intro.
+  // Suppressed for anyone who already passed a first-run surface or has
+  // already engaged with practices (upgraders must not see it).
+  const [showFirstRun, setShowFirstRun] = useState<boolean>(() => {
+    if (typeof localStorage === 'undefined') return false;
+    if (localStorage.getItem('onda_first_run_done') === 'true') return false;
+    // Graduated from the legacy 3-screen onboarding (pre-1.7.3 installs).
+    if (localStorage.getItem('onda_onboarding_completed') === 'true') return false;
+    // Already validly completed a practice at some point (any version).
+    if (localStorage.getItem('onda_airbridge_first_practice_tracked') === '1') return false;
+    try {
+      // Already opened at least one free practice from the hub.
+      const tapped = JSON.parse(localStorage.getItem('onda_tapped_free_practices') || '[]');
+      if (Array.isArray(tapped) && tapped.length > 0) return false;
+    } catch {
+      // corrupted flag — treat as new install
+    }
+    return true;
+  });
+  // First view timestamp → `duration_seconds` on tutorial_complete, so the
+  // old (3-screen) and new (1-screen) first-run funnels stay comparable.
+  const firstRunShownAtRef = useRef<number | null>(null);
+  // Armed by finishPractice on the user's first-ever valid completion;
+  // consumed by exitPractice so the paywall opens AFTER the user leaves
+  // the results screen — value felt first, offer second, never before.
+  const postFirstExperiencePaywallArmedRef = useRef(false);
+
   // A/B test for the ATT rationale copy on onboarding screen 1.
   //   variant 'a' — original ("...помогаешь нам расти...")
   //   variant 'b' — "...показывать ONDA людям, которым она реально нужна..."
@@ -515,6 +546,17 @@ const OndaLevel1 = () => {
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showOnboarding, onboardingScreen]);
+
+  // First-run welcome funnel: view fires once per install when the screen
+  // first renders. The CTA / skip taps are tracked in dismissFirstRun
+  // (next to the screen's JSX below).
+  useEffect(() => {
+    if (!showFirstRun) return;
+    if (firstRunShownAtRef.current !== null) return;
+    firstRunShownAtRef.current = Date.now();
+    track('first_run_welcome_view', { featured_practice_id: featuredPracticeId });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showFirstRun]);
 
   const [bioMetrics, setBioMetrics] = useState({
     heartRate: 72,
@@ -2440,9 +2482,26 @@ const OndaLevel1 = () => {
     // Magic-moment activation event — helper is idempotent across sessions
     // via localStorage flag, so it's safe to call on every valid Finish.
     if (isValidForArtifact) {
-      trackTenjinFirstPracticeComplete(getPracticeName(activePractice.id), {
-        surface: 'basic',
-      });
+      const isFirstEverCompletion = trackTenjinFirstPracticeComplete(
+        getPracticeName(activePractice.id),
+        { surface: 'basic' },
+      );
+      if (isFirstEverCompletion) {
+        // Onboarding-refactor funnel anchor: the user has now FELT the
+        // product once. Mirrors the MMP first_practice_complete into the
+        // product-analytics funnel and arms the one-time paywall that
+        // opens when they leave the results screen (after value, never
+        // before / never over the results).
+        track('first_experience_complete', {
+          practice_id: activePractice.id,
+          duration_seconds: practiceTime,
+          quality_score: qualityScore,
+          has_biometrics: hasRealMetricsAtFinish,
+        });
+        if (platform === 'ios' && !isPremium) {
+          postFirstExperiencePaywallArmedRef.current = true;
+        }
+      }
     }
     trackPractice('complete', activePractice.id, {
       practice_name: activePractice.name,
@@ -2724,6 +2783,20 @@ const OndaLevel1 = () => {
     setCurrentGuidingTextIndex(0);
     setIsTextTransitioning(false);
     setCurrentTrack(1);
+
+    // Onboarding refactor: first-ever completed experience → show the
+    // offer once, right after the value moment, over the hub the user
+    // returns to. Armed only in finishPractice (iOS, non-premium), so
+    // mid-practice exits and repeat completions never trigger it.
+    if (postFirstExperiencePaywallArmedRef.current) {
+      postFirstExperiencePaywallArmedRef.current = false;
+      track('paywall_viewed', {
+        source: 'post_first_experience',
+        practice_id: practiceId,
+      });
+      setPaywallSource('post_first_experience');
+      setShowSubscriptionModal(true);
+    }
 
     // Scroll to practice after exit
     if (practiceId) {
@@ -4684,6 +4757,78 @@ const OndaLevel1 = () => {
               </span>
             </button>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ═══════════════════════════════════════════════════════
+  // FIRST-RUN WELCOME — onboarding refactor. One screen, two choices.
+  // Rendered after the practice early-return above, so the CTA (which
+  // opens the featured free practice) lands on the practice intro on
+  // the very next render. See the showFirstRun state for display rules.
+  // ═══════════════════════════════════════════════════════
+  if (showFirstRun) {
+    const dismissFirstRun = (via: 'cta' | 'skip') => {
+      localStorage.setItem('onda_first_run_done', 'true');
+      const durationSeconds = firstRunShownAtRef.current
+        ? Math.round((Date.now() - firstRunShownAtRef.current) / 1000)
+        : undefined;
+      // Keeps the MMP signal alive and comparable: tutorial_complete now
+      // means "got past the first-run screen" (1 screen) where it used to
+      // mean "got past the 3-screen tutorial".
+      trackTenjinOnboardingComplete(durationSeconds);
+      track(via === 'cta' ? 'first_run_welcome_cta' : 'first_run_welcome_skip', {
+        featured_practice_id: featuredPracticeId,
+        seconds_on_screen: durationSeconds,
+      });
+      setShowFirstRun(false);
+      if (via === 'cta') {
+        const featured = circuits
+          .flatMap(c => c.practices)
+          .find(p => p.id === featuredPracticeId);
+        if (featured) {
+          // Same entry point the hub cards use — opens the practice intro
+          // (practice_view fires inside) where the existing free-tier
+          // Start button leads straight into the live session.
+          completePractice(featured.id, featured.maxQnt);
+        }
+      }
+    };
+    const featuredMinutes = Math.max(
+      1,
+      Math.round((practiceSpaces[featuredPracticeId]?.targetTime ?? 180) / 60),
+    );
+
+    return (
+      <div className={`h-full overflow-x-hidden ${isLight ? 'text-slate-800 bg-gradient-to-br from-indigo-50 via-white to-violet-100' : 'text-white bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950'}`}>
+        <div
+          className="min-h-screen flex flex-col justify-center px-6 py-8 max-w-2xl mx-auto text-center"
+          style={{ paddingBottom: 'calc(env(safe-area-inset-bottom) + 32px)' }}
+        >
+          <div className={`text-base sm:text-lg font-light tracking-[0.35em] mb-8 ${isLight ? 'text-slate-500' : 'text-white/70'}`}>
+            ONDA
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-6">
+            {t('first_run.title')}
+          </h1>
+          <p className={`text-lg leading-relaxed mb-10 ${isLight ? 'text-slate-600' : 'text-white/85'}`}>
+            {t('first_run.body', { minutes: featuredMinutes })}
+          </p>
+          <button
+            onClick={() => dismissFirstRun('cta')}
+            className={`mx-auto px-8 py-4 rounded-xl text-lg font-semibold transition-all border bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+            data-testid="button-first-run-start"
+          >
+            {t('first_run.cta', { minutes: featuredMinutes })}
+          </button>
+          <button
+            onClick={() => dismissFirstRun('skip')}
+            className={`mx-auto mt-6 px-4 py-2 text-sm underline underline-offset-4 transition-colors ${isLight ? 'text-slate-500 hover:text-slate-700' : 'text-white/60 hover:text-white/80'}`}
+            data-testid="button-first-run-skip"
+          >
+            {t('first_run.skip')}
+          </button>
         </div>
       </div>
     );

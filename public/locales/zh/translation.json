@@ -3330,6 +3330,12 @@
     "start_journey": "开启 ONDA Life 之旅",
     "replay": "重播引导介绍"
   },
+  "first_run": {
+    "title": "别再监测压力，开始训练它。",
+    "body": "第一次引导练习约 {{minutes}} 分钟。无需账号、无需设置——按下开始，跟随引导，留意有什么变化。",
+    "cta": "开始第一次练习 · {{minutes}} 分钟",
+    "skip": "先自己看看"
+  },
   "connection": {
     "title": "连接",
     "subtitle": "连接你的健康设备和追踪器",

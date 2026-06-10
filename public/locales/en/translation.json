@@ -3274,6 +3274,12 @@
     "start_journey": "Start your ONDA Life journey",
     "replay": "Replay intro"
   },
+  "first_run": {
+    "title": "Stop tracking stress. Start training it.",
+    "body": "Your first guided session takes about {{minutes}} minutes. No account, no setup — press start, follow the guide, and notice what shifts.",
+    "cta": "Start my first session · {{minutes}} min",
+    "skip": "I'll explore on my own"
+  },
   "subscription": {
     "title": "Subscription",
     "ready": "Your plan is ready.",
