@@ -2537,18 +2537,76 @@ const OndaLevel1 = () => {
 
     setPracticeHistory(prev => {
       const next = [session, ...prev];
-      // SKStoreReviewController prompt — fired once on the 2nd lifetime
-      // completed practice (a natural value moment per Apple HIG). The
-      // system silently caps real displays to ~3 / 365 days, so even if
-      // localStorage is wiped on re-install the prompt won't spam. The
-      // local flag is the JS-side belt-and-braces.
+      // SKStoreReviewController prompt — quality-gated to hit the genuine
+      // 5-star profile. We ask ONLY when BOTH hold:
+      //   1. LIVE biometrics this session (hasRealMetricsAtFinish) — the user
+      //      actually felt the biofeedback, not a simulated run.
+      //   2. RETURN on a later calendar day than the first session — never
+      //      back-to-back in the first sitting.
+      // Why not the old "2nd lifetime completion": once the camera puts
+      // biometrics into the onboarding practice, the first biometric session
+      // IS the first sitting (5th minute), right next to the soft paywall and
+      // before any multi-day value or formed opinion. Gating on "felt
+      // biometrics AND came back" selects the retained user — exactly who
+      // leaves a 5. localStorage one-shot + Apple's ~3/365 cap still apply.
+      //
+      // Loosening lever (only if reviews accrue too slowly): relax the DAY gate
+      // ONLY when BOTH hold — (a) requested:true volume is low AND (b) the App
+      // Store Connect average is still healthy (≥4.6). Never loosen on request
+      // volume alone: that floods the prompt to less-delighted users and sinks
+      // the average — the exact outcome we're avoiding. Never go below "felt
+      // biometrics", never adjacent to the paywall.
       try {
-        if (next.length === 2 && localStorage.getItem('onda_review_prompted') !== '1') {
+        const d = new Date();
+        const todayKey = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+        let firstDay = localStorage.getItem('onda_first_session_day');
+        if (!firstDay) {
+          // First completion we've seen → anchor the first-sitting day so a
+          // later completion can be recognised as a genuine return.
+          localStorage.setItem('onda_first_session_day', todayKey);
+          firstDay = todayKey;
+        }
+        const isReturningDay = todayKey > firstDay; // strictly later calendar day
+        const alreadyPrompted = localStorage.getItem('onda_review_prompted') === '1';
+        // platform==='ios' gate: SKStoreReview only exists on iOS. Without it
+        // the web preview / Android would call the no-op plugin, burn the
+        // one-shot flag, and emit bogus requested:false events — polluting the
+        // bucket with non-iOS noise. Keep this funnel iOS-only.
+        if (platform === 'ios' && hasRealMetricsAtFinish && isReturningDay && !alreadyPrompted) {
           localStorage.setItem('onda_review_prompted', '1');
+          const daysSinceFirst = Math.round(
+            (Date.parse(todayKey) - Date.parse(firstDay || todayKey)) / 86400000,
+          );
+          const lifetimeCompletions = next.length;
+          const promptedPracticeId = activePractice.id;
+          const biometricSource = freshVitalsForSession.hrSource ?? null;
           // Lazy import keeps the plugin out of the cold-start bundle.
           import('./plugins/ondaStoreReview').then(m => {
             m.requestAppStoreReview().then(r => {
               console.log('[OndaStoreReview] result:', r);
+              // The ONLY observable signal in this funnel — requestReview is
+              // fire-and-forget: Apple NEVER reports whether the dialog showed,
+              // and may silently suppress it even at requested:true (its own
+              // heuristic + the ~3/365 cap). So read these precisely:
+              //   requested:true  = request dispatched to iOS — NOT "shown",
+              //                     NOT "rated".
+              //   requested:false = the plugin could not invoke (e.g. no
+              //                     foreground window scene). NOT "Apple
+              //                     declined to show" — that case is invisible.
+              // web/Android no-ops are excluded by the platform gate above, so
+              // they never reach this bucket. The real outcome (counts + average)
+              // lives in App Store Connect; this event is only the top of the
+              // funnel — how many requests went out.
+              track('review_prompt_requested', {
+                requested: r.requested,
+                reason: r.reason ?? null,
+                had_live_biometrics: true,
+                returning_day: true,
+                days_since_first: daysSinceFirst,
+                lifetime_completions: lifetimeCompletions,
+                biometric_source: biometricSource,
+                practice_id: promptedPracticeId,
+              });
             });
           });
         }

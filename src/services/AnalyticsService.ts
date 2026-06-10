@@ -62,6 +62,8 @@ export type AnalyticsEventName =
   | 'subscription_paid'  // реальная оплата после trial → paid (фаерится из useSubscription)
   | 'purchase_failed'
   | 'purchase_cancelled'
+  // Reviews
+  | 'review_prompt_requested'  // SKStoreReview dispatched — only observable signal (Apple hides the actual dialog)
   // Errors
   | 'error'
   | 'audio_load_error'
