@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { X, Play, Pause, Activity, Zap, Star } from 'lucide-react';
+import { X, Play, Pause, Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { RemoteAudioPlayer } from './RemoteAudioPlayer';
+import { MetricsWaveform } from './MetricsWaveform';
 import { useVitals } from '../hooks/useVitals';
 import { useSubscription } from '../hooks/useSubscription';
 import { useAnalytics } from '../hooks/useAnalytics';
@@ -552,6 +553,12 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const vitalsRef = useRef(vitalsData);
   vitalsRef.current = vitalsData;
 
+  // Coherence training-signal capture for this session: baseline at start +
+  // running peak → max delta (peak − baseline), recorded in completion
+  // analytics. Mirrors the basic practice flow.
+  const initialCoherenceRef = useRef<number | null>(null);
+  const peakCoherenceRef = useRef<number | null>(null);
+
   const practice = adaptivePractices[practiceId];
 
   // Airbridge: fire "View Practice" once each time the intro screen opens.
@@ -681,7 +688,14 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             return updated;
           });
         }
-        
+
+        // Coherence training signal: baseline (first valid reading) + running
+        // peak → the session's max coherence delta (recorded at completion).
+        if (freshVitals.coherence != null) {
+          if (initialCoherenceRef.current == null) initialCoherenceRef.current = freshVitals.coherence;
+          peakCoherenceRef.current = Math.max(peakCoherenceRef.current ?? freshVitals.coherence, freshVitals.coherence);
+        }
+
         // Update maxQualityScore - quality only goes up, never down
         setMaxQualityScore(prev => {
           const current = calculateCurrentQuality();
@@ -758,6 +772,9 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     setIsPaused(false);
     setQualityScore(0);
     setMaxQualityScore(0);
+    // Reset coherence-delta capture for this session.
+    initialCoherenceRef.current = freshVitals.coherence ?? null;
+    peakCoherenceRef.current = freshVitals.coherence ?? null;
     if (practice) trackTenjinPractice('Start', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
   };
 
@@ -820,6 +837,14 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     const finalStress = Math.min(bestMetrics.stress ?? currentStress, currentStress);
     const finalEnergy = Math.max(bestMetrics.energy ?? currentEnergy, currentEnergy);
 
+    // Coherence training signal for this session (mirrors the basic flow):
+    // how much the user raised their heart–breath sync from start to peak.
+    const coherenceBaseline = initialCoherenceRef.current;
+    const coherencePeak = peakCoherenceRef.current;
+    const coherenceDelta = (coherenceBaseline != null && coherencePeak != null)
+      ? Math.max(0, coherencePeak - coherenceBaseline)
+      : null;
+
     // hasRealMetrics = TRUE only if BOTH initial and final used real data
     const hasRealMetrics = freshVitals.hasVitalsData && initialMetrics.stress !== 50;
 
@@ -875,6 +900,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   energy_after: Math.round(finalEnergy),
                   has_real_metrics: hasRealMetrics,
                   ond_earned: ondReward.totalOnd,
+                  coherence_delta: coherenceDelta,
+                  coherence_peak: coherencePeak,
                 }
               : undefined,
           }
@@ -954,6 +981,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
               energy_after: Math.round(finalEnergy),
               has_real_metrics: hasRealMetrics,
               ond_earned: ondReward.totalOnd,
+              coherence_delta: coherenceDelta,
+              coherence_peak: coherencePeak,
             }
           : undefined,
       }
@@ -1207,9 +1236,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   <div className="absolute inset-0 bg-white/30 animate-pulse" />
                 </div>
               </div>
-              <div className={`mt-2 sm:mt-3 text-xs sm:text-sm flex justify-between ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>
+              <div className={`mt-2 sm:mt-3 text-xs sm:text-sm ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>
                 <span>{t('labels.time_label')}: {Math.round((practiceTime / practice.targetTime) * 100)}%</span>
-                <span>{t('labels.energy')}: {vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</span>
               </div>
             </div>
 
@@ -1227,16 +1255,25 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
               </div>
             )}
 
-            <div className="grid grid-cols-2 gap-3 sm:gap-6 mb-6 sm:mb-12 px-3 sm:px-0 w-full max-w-md">
-              <div className={`rounded-2xl p-3 sm:p-6 text-center shadow-xl ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
-                <Activity className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-red-400" />
-                <div className="text-2xl sm:text-4xl font-bold mb-1">{vitalsData.stress !== null ? Math.round(vitalsData.stress) : '--'}%</div>
-                <div className={`text-xs sm:text-sm ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>{t('labels.stress')}</div>
-              </div>
-              <div className={`rounded-2xl p-3 sm:p-6 text-center shadow-xl ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
-                <Zap className="w-6 h-6 sm:w-8 sm:h-8 mx-auto mb-2 sm:mb-3 text-blue-400" />
-                <div className="text-2xl sm:text-4xl font-bold mb-1">{vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</div>
-                <div className={`text-xs sm:text-sm ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>{t('labels.energy')}</div>
+            {/* Coherence hero — heart–breath synchrony from the HR-RSA rhythm
+                (NOT clinical HRV, never medical) over a single calm curve.
+                Replaces the Stress/Energy verdict tiles (train it, not track it).
+                Theme-aware: the adaptive screen background follows the app theme
+                (unlike the basic screen's dark HDR), so no forceDark here. */}
+            <div className="w-full max-w-md mb-6 sm:mb-12 px-3 sm:px-0">
+              <div className={`relative rounded-2xl overflow-hidden shadow-xl ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
+                <MetricsWaveform heartRate={vitalsData.hr} stress={null} energy={null} hrOnly heightPx={160} />
+                {!isLight && <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/30 to-transparent pointer-events-none" />}
+                <div className="absolute top-2 left-1/2 -translate-x-1/2 text-center pointer-events-none">
+                  <div className={`text-[10px] sm:text-xs font-semibold uppercase tracking-wider leading-none mb-0.5 ${isLight ? 'text-slate-500' : 'text-white/75'}`}>{t('practices.coherence')}</div>
+                  <div className={`font-bold leading-none drop-shadow ${isLight ? 'text-slate-700' : 'text-white'}`} style={{ fontVariantNumeric: 'tabular-nums' }}>
+                    {vitalsData.coherence != null ? (
+                      <span className="text-3xl sm:text-4xl">{vitalsData.coherence}<span className="text-lg sm:text-xl font-semibold">%</span></span>
+                    ) : (
+                      <span className={`text-2xl sm:text-3xl ${isLight ? 'text-slate-400' : 'text-white/60'}`}>--</span>
+                    )}
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -1291,25 +1328,6 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   <div className="flex items-center justify-start gap-2 w-[140px]">
                     <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-slate-700' : 'text-white'}`}>{formatTime(practiceTime)}</span>
                     <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.time')}</span>
-                  </div>
-                </div>
-
-                {/* Row 3: Stress + Energy - symmetric: numbers in center */}
-                <div className="flex justify-center items-start text-sm sm:text-base">
-                  <div className="flex flex-col items-end w-[140px]">
-                    <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('labels.stress')}</span>
-                      <span className={`font-bold ${completeLight ? 'text-red-500' : 'text-red-400'}`}>{vitalsData.stress !== null ? Math.round(vitalsData.stress) : '--'}%</span>
-                    </div>
-                    <Activity className={`w-4 h-4 mt-1 ${completeLight ? 'text-red-500' : 'text-red-400'}`} />
-                  </div>
-                  <div className={`w-px h-10 mx-3 ${completeLight ? 'bg-slate-300' : 'bg-white/30'}`} />
-                  <div className="flex flex-col items-start w-[140px]">
-                    <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className={`font-bold ${completeLight ? 'text-blue-500' : 'text-blue-400'}`}>{vitalsData.energy !== null ? Math.round(vitalsData.energy) : '--'}%</span>
-                      <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('labels.energy')}</span>
-                    </div>
-                    <Zap className={`w-4 h-4 mt-1 ${completeLight ? 'text-blue-500' : 'text-blue-400'}`} />
                   </div>
                 </div>
 
