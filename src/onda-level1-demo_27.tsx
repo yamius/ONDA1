@@ -576,6 +576,11 @@ const OndaLevel1 = () => {
   const [bestMetrics, setBestMetrics] = useState({ stress: 50, energy: 50 }); // Best metrics achieved during practice
   const [meetsArtifactRequirements, setMeetsArtifactRequirements] = useState(false); // Real-time validation for artifact
   const maxQualityRef = useRef(0);
+  // Coherence training-signal capture for the session record: baseline at
+  // start + running peak during the session → max delta (peak − baseline),
+  // mirroring how best stress/energy were tracked. Refs (not displayed live).
+  const initialCoherenceRef = useRef<number | null>(null);
+  const peakCoherenceRef = useRef<number | null>(null);
   const practiceRefs = useRef({});
 
 
@@ -1242,6 +1247,15 @@ const OndaLevel1 = () => {
           console.log('Basic practice best metrics:', { previous: prev, current: { stress: currentStress, energy: currentEnergy }, updated, hasRealVitals: freshVitals.hasVitalsData });
           return updated;
         });
+
+        // Coherence training signal: capture baseline (first valid reading)
+        // and running peak → the session's max coherence delta. The honest
+        // "you raised your heart–breath sync by X" metric that replaces the
+        // removed stress/energy verdict.
+        if (freshVitals.coherence != null) {
+          if (initialCoherenceRef.current == null) initialCoherenceRef.current = freshVitals.coherence;
+          peakCoherenceRef.current = Math.max(peakCoherenceRef.current ?? freshVitals.coherence, freshVitals.coherence);
+        }
 
         // Stress reduction (10% = good, more is better)
         const stressReduction = initialVitals.stress - currentStress;
@@ -2447,6 +2461,10 @@ const OndaLevel1 = () => {
       energy: initialEnergy
     });
     maxQualityRef.current = 0;
+    // Reset coherence-delta capture for this session (baseline backfills on
+    // the first valid reading in the practice loop).
+    initialCoherenceRef.current = freshVitals.coherence ?? null;
+    peakCoherenceRef.current = freshVitals.coherence ?? null;
     setMeetsArtifactRequirements(false); // Reset artifact validation
     setPracticeState('active');
     setCurrentGuidingTextIndex(0);
@@ -2504,6 +2522,15 @@ const OndaLevel1 = () => {
         }
       }
     }
+    // Coherence training signal for this session: how much the user raised
+    // their heart–breath sync from their own start baseline to the peak —
+    // the honest achievement that replaces the removed stress/energy verdict.
+    const coherenceBaseline = initialCoherenceRef.current;
+    const coherencePeak = peakCoherenceRef.current;
+    const coherenceDelta = (coherenceBaseline != null && coherencePeak != null)
+      ? Math.max(0, coherencePeak - coherenceBaseline)
+      : null;
+
     trackPractice('complete', activePractice.id, {
       practice_name: activePractice.name,
       duration_seconds: practiceTime,
@@ -2515,6 +2542,9 @@ const OndaLevel1 = () => {
       is_new_record: shouldUpdate && !!existingPractice,
       final_stress: freshVitalsForSession.stress,
       final_energy: freshVitalsForSession.energy,
+      coherence_baseline: coherenceBaseline,
+      coherence_peak: coherencePeak,
+      coherence_delta: coherenceDelta,
     });
 
     const session = {
@@ -2527,6 +2557,8 @@ const OndaLevel1 = () => {
       qnt: earnedQnt,
       stress: freshVitalsForSession.stress,
       energy: freshVitalsForSession.energy,
+      coherenceDelta,
+      coherencePeak,
       isNewRecord: shouldUpdate && existingPractice
     };
 
@@ -4410,11 +4442,10 @@ const OndaLevel1 = () => {
 
             {/* Live Coherence hero window — the visual centre of the active
                 screen. The HR-RSA waveform (MetricsWaveform, hrOnly+forceDark)
-                fills the body of the frosted box; Coherence is the large hero
-                readout top-left, Stress/Energy are small secondary readouts
-                top-right. Coherence % comes from useVitals (Goertzel peak-
-                concentration of respiratory sinus arrhythmia) — NOT RMSSD HRV,
-                hence the "Coherence" label, never "HRV". */}
+                fills the body of the frosted box; Coherence is the single hero
+                readout, centered. Coherence % comes from useVitals (Goertzel
+                peak-concentration of respiratory sinus arrhythmia) — NOT RMSSD
+                HRV, hence the "Coherence" label, never "HRV". */}
             {!isMinimalMode && (<div className="w-full max-w-md mb-4 sm:mb-5 px-3 sm:px-0">
               <div className="relative rounded-2xl bg-white/10 backdrop-blur-2xl border border-white/25 overflow-hidden">
                 {/* HR-RSA waveform dominates the body of the window */}
@@ -4428,8 +4459,9 @@ const OndaLevel1 = () => {
                 />
                 {/* Top scrim — keeps the readouts legible over the wave */}
                 <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/35 to-transparent pointer-events-none" />
-                {/* Coherence — hero readout, top-CENTER (flanked by the two
-                    corner metrics below) */}
+                {/* Coherence — the sole hero readout, top-CENTER. Stress/Energy
+                    corner readouts removed: Coherence is the only signal now
+                    (train it, not track it). */}
                 <div className="absolute top-1.5 left-1/2 -translate-x-1/2 text-center pointer-events-none">
                   <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white/75 leading-none mb-0.5">
                     {t('practices.coherence')}
@@ -4441,19 +4473,6 @@ const OndaLevel1 = () => {
                       <span className="text-2xl sm:text-3xl text-white/60">--</span>
                     )}
                   </div>
-                </div>
-                {/* Stress — top-left corner. Word hugs the left edge, value to
-                    its right (points inward) — mirrors Energy for symmetry.
-                    No icon. settings.stress = "Stress" (short, localized). */}
-                <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5 pointer-events-none">
-                  <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('settings.stress')}</span>
-                  <span className="text-xs sm:text-sm font-semibold tabular-nums">{safeToFixed(vitalsData.stress, 0)}%</span>
-                </div>
-                {/* Energy — top-right corner. Value to the LEFT (inward), word
-                    hugs the right edge — mirror of Stress. No icon. */}
-                <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 pointer-events-none">
-                  <span className="text-xs sm:text-sm font-semibold tabular-nums">{safeToFixed(vitalsData.energy, 0)}%</span>
-                  <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('settings.energy')}</span>
                 </div>
               </div>
             </div>)}
@@ -4564,25 +4583,6 @@ const OndaLevel1 = () => {
                   <div className="flex items-center justify-start gap-2 w-[140px]">
                     <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-slate-500' : 'text-white'}`}>{formatTime(practiceTime)}</span>
                     <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.time')}</span>
-                  </div>
-                </div>
-
-                {/* Row 3: Stress + Energy - symmetric: numbers in center */}
-                <div className="flex justify-center items-start text-sm sm:text-base">
-                  <div className="flex flex-col items-end w-[140px]">
-                    <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('labels.stress')}</span>
-                      <span className={`font-bold ${completeLight ? 'text-red-500' : 'text-red-400'}`}>{safeToFixed(vitalsData.stress, 0)}%</span>
-                    </div>
-                    <Activity className={`w-4 h-4 mt-1 ${completeLight ? 'text-red-500' : 'text-red-400'}`} />
-                  </div>
-                  <div className={`w-px h-10 mx-3 ${completeLight ? 'bg-slate-300' : 'bg-white/30'}`} />
-                  <div className="flex flex-col items-start w-[140px]">
-                    <div className="flex items-center gap-1 whitespace-nowrap">
-                      <span className={`font-bold ${completeLight ? 'text-blue-500' : 'text-blue-400'}`}>{safeToFixed(vitalsData.energy, 0)}%</span>
-                      <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('labels.energy')}</span>
-                    </div>
-                    <Zap className={`w-4 h-4 mt-1 ${completeLight ? 'text-blue-500' : 'text-blue-400'}`} />
                   </div>
                 </div>
 
