@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
 import { X, Play, Pause, Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { RemoteAudioPlayer } from './RemoteAudioPlayer';
 import { MetricsWaveform } from './MetricsWaveform';
+import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from '../constants/practiceAssets';
 import { useVitals } from '../hooks/useVitals';
 import { useSubscription } from '../hooks/useSubscription';
 import { useAnalytics } from '../hooks/useAnalytics';
@@ -12,6 +13,11 @@ import { supabase } from '../lib/supabase';
 import { calculatePracticeOnd } from '../utils/ondCalculator';
 import { trackTenjinPractice, trackTenjinFirstPracticeComplete } from '../lib/tenjin';
 import { useTheme } from '../theme/ThemeProvider';
+
+// Same 3D HDR panorama backdrop the basic practice screen uses, mounted only
+// while a practice is actively running. Lazy so the three.js chunk loads on
+// demand (not on the modal's intro/complete screens).
+const WelcomeScene = lazy(() => import('./WelcomeScene'));
 
 interface AdaptivePracticeModalProps {
   isOpen: boolean;
@@ -560,6 +566,11 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const peakCoherenceRef = useRef<number | null>(null);
 
   const practice = adaptivePractices[practiceId];
+
+  // Adaptive practices have no "part" of their own → reuse the Part-1 HDR
+  // panorama as the live backdrop (same 3D-panorama principle as basic).
+  const panoramaExr = PRACTICE_EXR['p1-1'];
+  const panoramaJpeg = PRACTICE_JPEG_PREVIEW['p1-1'];
 
   // Airbridge: fire "View Practice" once each time the intro screen opens.
   useEffect(() => {
@@ -1111,6 +1122,15 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       }} />
       )}
 
+      {/* 3D HDR panorama — the live backdrop while the practice runs (mirrors
+          the basic practice screen). Mounted only in 'practice' state so the
+          three.js/WebGL context is never created for the intro/complete screens. */}
+      {practiceState === 'practice' && panoramaExr && (
+        <Suspense fallback={null}>
+          <WelcomeScene url={panoramaExr} previewUrl={panoramaJpeg} />
+        </Suspense>
+      )}
+
       <button
         onClick={handleClose}
         disabled={!canClose}
@@ -1164,7 +1184,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         )}
 
         {practiceState === 'practice' && (
-          <div className="flex flex-col items-center justify-center min-h-screen">
+          <div className="flex flex-col items-center justify-center min-h-screen text-white">
             {/* Компактный круг с эмодзи и таймером */}
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-1 sm:mt-3">
               {/* Круговой прогресс */}
@@ -1174,7 +1194,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   cy="128"
                   r="110"
                   fill="none"
-                  stroke={isLight ? 'rgba(99,102,241,0.15)' : 'rgba(255,255,255,0.1)'}
+                  stroke="rgba(255,255,255,0.1)"
                   strokeWidth="12"
                 />
                 <circle
@@ -1228,7 +1248,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                 <span className="font-semibold">{t('practices.quality')}</span>
                 <span className="font-bold text-xl sm:text-2xl">{Math.round(calculateCurrentQuality())}%</span>
               </div>
-              <div className={`w-full h-5 sm:h-6 rounded-full overflow-hidden backdrop-blur-sm shadow-inner ${isLight ? 'bg-slate-200 border border-violet-200' : 'bg-black/40 border border-white/20'}`}>
+              <div className="w-full h-5 sm:h-6 rounded-full overflow-hidden backdrop-blur-sm shadow-inner bg-black/40 border border-white/20">
                 <div
                   className="h-full bg-gradient-to-r from-green-400 via-emerald-400 to-teal-300 transition-all duration-[12500ms] relative"
                   style={{ width: `${calculateCurrentQuality()}%` }}
@@ -1236,16 +1256,16 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   <div className="absolute inset-0 bg-white/30 animate-pulse" />
                 </div>
               </div>
-              <div className={`mt-2 sm:mt-3 text-xs sm:text-sm ${isLight ? 'text-slate-600' : 'text-gray-300'}`}>
+              <div className="mt-2 sm:mt-3 text-xs sm:text-sm text-gray-300">
                 <span>{t('labels.time_label')}: {Math.round((practiceTime / practice.targetTime) * 100)}%</span>
               </div>
             </div>
 
             {practice.guidingTexts && practice.guidingTexts.length > 0 && (
               <div className="w-full max-w-md mb-6 sm:mb-8 px-3 sm:px-0">
-                <div className={`rounded-2xl p-4 sm:p-6 shadow-xl h-24 sm:h-28 flex items-center justify-center overflow-hidden ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
+                <div className="rounded-2xl p-4 sm:p-6 shadow-xl h-24 sm:h-28 flex items-center justify-center overflow-hidden bg-white/10 backdrop-blur-2xl border border-white/25">
                   <p
-                    className={`text-sm sm:text-base text-center italic leading-snug whitespace-pre-line transition-all duration-1000 ${isLight ? 'text-slate-700' : 'text-white/90'} ${
+                    className={`text-sm sm:text-base text-center italic leading-snug whitespace-pre-line transition-all duration-1000 text-white/90 ${
                       isTextTransitioning ? 'opacity-0 translate-y-[-20px]' : 'opacity-100 translate-y-0'
                     }`}
                   >
@@ -1258,19 +1278,19 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             {/* Coherence hero — heart–breath synchrony from the HR-RSA rhythm
                 (NOT clinical HRV, never medical) over a single calm curve.
                 Replaces the Stress/Energy verdict tiles (train it, not track it).
-                Theme-aware: the adaptive screen background follows the app theme
-                (unlike the basic screen's dark HDR), so no forceDark here. */}
+                White treatment over the dark HDR panorama (forceDark), like the
+                basic practice screen. */}
             <div className="w-full max-w-md mb-6 sm:mb-12 px-3 sm:px-0">
-              <div className={`relative rounded-2xl overflow-hidden shadow-xl ${isLight ? 'bg-white/55 backdrop-blur-xl border border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border border-white/25'}`}>
-                <MetricsWaveform heartRate={vitalsData.hr} stress={null} energy={null} hrOnly heightPx={160} />
-                {!isLight && <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/30 to-transparent pointer-events-none" />}
+              <div className="relative rounded-2xl overflow-hidden shadow-xl bg-white/10 backdrop-blur-2xl border border-white/25">
+                <MetricsWaveform heartRate={vitalsData.hr} stress={null} energy={null} forceDark hrOnly heightPx={160} />
+                <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/30 to-transparent pointer-events-none" />
                 <div className="absolute top-2 left-1/2 -translate-x-1/2 text-center pointer-events-none">
-                  <div className={`text-[10px] sm:text-xs font-semibold uppercase tracking-wider leading-none mb-0.5 ${isLight ? 'text-slate-500' : 'text-white/75'}`}>{t('practices.coherence')}</div>
-                  <div className={`font-bold leading-none drop-shadow ${isLight ? 'text-slate-700' : 'text-white'}`} style={{ fontVariantNumeric: 'tabular-nums' }}>
+                  <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider leading-none mb-0.5 text-white/75">{t('practices.coherence')}</div>
+                  <div className="font-bold leading-none drop-shadow text-white" style={{ fontVariantNumeric: 'tabular-nums' }}>
                     {vitalsData.coherence != null ? (
                       <span className="text-3xl sm:text-4xl">{vitalsData.coherence}<span className="text-lg sm:text-xl font-semibold">%</span></span>
                     ) : (
-                      <span className={`text-2xl sm:text-3xl ${isLight ? 'text-slate-400' : 'text-white/60'}`}>--</span>
+                      <span className="text-2xl sm:text-3xl text-white/60">--</span>
                     )}
                   </div>
                 </div>
@@ -1280,7 +1300,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             <div className="flex gap-3 sm:gap-6">
               <button
                 onClick={togglePause}
-                className={`backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border border-indigo-400/40 text-slate-800' : 'bg-white/10 hover:bg-white/20 border border-white/25'}`}
+                className="backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl bg-white/10 hover:bg-white/20 border border-white/25"
               >
                 {isPaused ? <Play className="w-6 h-6 sm:w-8 sm:h-8" /> : <Pause className="w-6 h-6 sm:w-8 sm:h-8" />}
               </button>
