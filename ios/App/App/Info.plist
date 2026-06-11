@@ -166,7 +166,7 @@
         <key>NSMicrophoneUsageDescription</key>
         <string>ONDA uses the microphone during emotional check-ins to analyze your voice and provide personalized wellness recommendations.</string>
         <key>NSCameraUsageDescription</key>
-        <string>ONDA uses the camera for an optional eye scan that reads gaze and blink patterns to personalize practices. Frames are processed on-device and not stored.</string>
+        <string>ONDA uses the camera for two optional features: a fingertip pulse reading (rest a fingertip on the camera to measure your heart rate during breathing practices) and an eye scan (gaze and blink patterns to personalize practices). Frames are processed on-device and not stored.</string>
         <key>NSHealthShareUsageDescription</key>
         <string>ONDA uses your heart rate and heart rate variability to provide personalized meditation and breathing exercises that adapt to your state, and to show your resting HRV trend over time.</string>
         <key>NSHealthUpdateUsageDescription</key>
