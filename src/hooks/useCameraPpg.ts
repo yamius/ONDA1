@@ -85,6 +85,8 @@ export function useCameraPpg() {
   const noFingerFramesRef = useRef(0);
   const lastFrameStatsRef = useRef({ r: 0, clip: 0, redness: 0 });
   const lastCommitAtRef = useRef(0);
+  const videoTrackRef = useRef<MediaStreamTrack | null>(null);
+  const torchKeepAliveRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const patch = useCallback((p: Partial<CameraPpgState>) => {
     setState((s) => ({ ...s, ...p }));
@@ -109,6 +111,11 @@ export function useCameraPpg() {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
+    if (torchKeepAliveRef.current != null) {
+      clearInterval(torchKeepAliveRef.current);
+      torchKeepAliveRef.current = null;
+    }
+    videoTrackRef.current = null;
     const stream = streamRef.current;
     if (stream) {
       stream.getTracks().forEach((t) => {
@@ -244,6 +251,14 @@ export function useCameraPpg() {
         }
       } catch {
         /* torch unsupported / ignored — pipeline runs torch-off in good light */
+      }
+      videoTrackRef.current = track;
+      // iOS drops the torch after a while (≈30 s) and on some exposure changes —
+      // re-assert it periodically so the flash stays on for the whole session.
+      if (torchOn) {
+        torchKeepAliveRef.current = setInterval(() => {
+          track.applyConstraints({ advanced: [{ torch: true }] as MediaTrackConstraintSet[] }).catch(() => {});
+        }, 8000);
       }
 
       const video = document.createElement('video');

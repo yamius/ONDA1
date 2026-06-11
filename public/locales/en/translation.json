@@ -221,6 +221,7 @@
     "denied": "Camera unavailable — continuing without it.",
     "place_finger": "Rest a fingertip on the rear camera",
     "source_label": "Camera · quick",
+    "stop": "Stop",
     "live": "Live — your pulse is responding",
     "reading": "Got your finger — hold still, reading your pulse…",
     "no_torch": "Couldn't turn on the flash — try in good light.",
@@ -1063,7 +1064,9 @@
     },
     "biometric": {
       "connect_title": "Connect Apple Watch",
-      "connect_body": "See your heart rhythm in real time during breathing practices.",
+      "connect_body": "Connect and see your heart rhythm in real time during breathing practices.",
+      "connect_watch": "Apple Watch",
+      "connect_camera": "Camera",
       "connect_cta": "Set Up Now"
     },
     "featured": {

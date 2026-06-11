@@ -209,6 +209,7 @@
     "denied": "摄像头不可用 — 继续而不使用。",
     "place_finger": "把指尖放在后置摄像头上",
     "source_label": "摄像头 · 快速",
+    "stop": "停止",
     "live": "实时 — 你的脉搏在回应",
     "reading": "已检测到手指 — 保持稳定，正在读取脉搏…",
     "no_torch": "无法打开闪光灯 — 请在光线良好处尝试。",
@@ -1021,7 +1022,9 @@
     },
     "biometric": {
       "connect_title": "连接 Apple Watch",
-      "connect_body": "在呼吸练习中实时查看你的心律。",
+      "connect_body": "连接后在呼吸练习中实时查看你的心率。",
+      "connect_watch": "Apple Watch",
+      "connect_camera": "摄像头",
       "connect_cta": "立即设置"
     },
     "featured": {

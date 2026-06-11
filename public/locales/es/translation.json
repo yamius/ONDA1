@@ -210,6 +210,7 @@
     "denied": "Cámara no disponible — continuamos sin ella.",
     "place_finger": "Apoya un dedo en la cámara trasera",
     "source_label": "Cámara · rápido",
+    "stop": "Detener",
     "live": "En vivo — tu pulso responde",
     "reading": "Dedo detectado — mantén firme, leyendo tu pulso…",
     "no_torch": "No se pudo encender el flash — prueba con buena luz.",
@@ -1022,7 +1023,9 @@
     },
     "biometric": {
       "connect_title": "Conecta Apple Watch",
-      "connect_body": "Mira tu ritmo cardíaco en tiempo real durante las prácticas de respiración.",
+      "connect_body": "Conecta y mira tu ritmo cardíaco en tiempo real durante las prácticas de respiración.",
+      "connect_watch": "Apple Watch",
+      "connect_camera": "Cámara",
       "connect_cta": "Configurar"
     },
     "featured": {

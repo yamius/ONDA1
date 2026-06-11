@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo, useCallback, lazy, Suspense } from 'react';
-import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth, Minimize2, Maximize2 } from 'lucide-react';
+import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth, Minimize2, Maximize2, Camera } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
@@ -4228,13 +4228,13 @@ const OndaLevel1 = () => {
             dissolves from the preview into the HDR panorama via its own
             preview→full cross-fade. */}
         {practiceState === 'active' && PRACTICE_EXR[activePractice.id] ? (
-          // Suspense fallback={null} — three.js chunk streams while the
-          // user sees whatever the parent renders behind it (JPEG preview
-          // in тёмной теме, светлый фон в светлой). В светлой теме
-          // previewUrl не передаём — HDR-панорама плавно «проявится»
-          // через её собственный fade-in поверх светлого фона.
+          // Suspense fallback={null} — three.js chunk streams while the user
+          // sees the JPEG preview WelcomeScene paints first, then the HDR
+          // panorama cross-fades in on top. previewUrl is passed in BOTH themes
+          // so the load reads as preview → 3D everywhere (matching the adaptive
+          // practice), rather than the 3D popping in over a bare light bg.
           <Suspense fallback={null}>
-            <WelcomeScene url={PRACTICE_EXR[activePractice.id]} previewUrl={isLight ? undefined : PRACTICE_JPEG_PREVIEW[activePractice.id]} />
+            <WelcomeScene url={PRACTICE_EXR[activePractice.id]} previewUrl={PRACTICE_JPEG_PREVIEW[activePractice.id]} />
           </Suspense>
         ) : practiceState === 'intro' && PRACTICE_JPEG_PREVIEW[activePractice.id] && !isLight ? (
           <div
@@ -4457,139 +4457,127 @@ const OndaLevel1 = () => {
                 HRV, hence the "Coherence" label, never "HRV". */}
             {!isMinimalMode && (<div className="w-full max-w-md mb-4 sm:mb-5 px-3 sm:px-0">
               <div className="relative rounded-2xl bg-white/10 backdrop-blur-2xl border border-white/25 overflow-hidden">
-                {/* HR-RSA trend line. For camera, smoothHr eases the 1 Hz
-                    integer-bpm steps into a calm line while keeping the slow RSA
-                    swing (no per-beat pulsation). Watch unchanged. */}
-                <MetricsWaveform
-                  heartRate={displayHeartRate}
-                  stress={null}
-                  energy={null}
-                  forceDark
-                  hrOnly
-                  smoothHr={vitalsData.hrSource === 'camera'}
-                  pulseTone={vitalsData.hrSource === 'camera'}
-                  heightPx={176}
-                />
-                {/* Top scrim — keeps the readouts legible over the wave */}
-                <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/35 to-transparent pointer-events-none" />
-                {/* Hero readout — SOURCE-AWARE. Camera: the window IS the live
-                    Pulse (the wave below is your pulse; camera has no honest
-                    coherence, so it stays locked under the block, not here).
-                    Watch: Coherence is the centre hero, flanked by Pulse (left)
-                    and Breathing (right). */}
-                {vitalsData.hrSource === 'camera' ? (
-                  <div className="absolute top-1.5 left-1/2 -translate-x-1/2 text-center pointer-events-none">
-                    <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white/75 leading-none mb-0.5">
-                      {t('labels.pulse')}
-                    </div>
-                    <div className="font-bold leading-none drop-shadow" style={{ fontVariantNumeric: 'tabular-nums' }}>
-                      {displayHeartRate != null ? (
-                        <span className="text-3xl sm:text-4xl">{displayHeartRate}<span className="text-base sm:text-lg font-semibold text-white/70"> bpm</span></span>
-                      ) : (
-                        <span className="text-2xl sm:text-3xl text-white/60">--</span>
-                      )}
-                    </div>
+                {watchHeartRate.heartRate == null && cameraPpg.status === 'idle' && !cameraOfferDismissed ? (
+                  /* No-watch + camera idle → the OFFER fills the window slot (in
+                     place of the wave), like the home Connect-Watch CTA sits
+                     where the wave would be. Keeps the screen compact — no extra
+                     card. Never hard-gated: "continue without" is equally shown. */
+                  <div className="flex flex-col items-center justify-center text-center px-5" style={{ height: 176 }}>
+                    <div className="text-sm sm:text-base font-medium text-white mb-1">{t('camera.offer_title', 'See your pulse respond live')}</div>
+                    <p className="text-xs text-white/70 mb-3 max-w-xs">{t('camera.offer_body', 'Rest a fingertip on the rear camera and watch your pulse move with your breath.')}</p>
+                    <button
+                      onClick={() => cameraPpg.start()}
+                      className="px-5 py-2 rounded-full text-sm font-semibold bg-white/20 hover:bg-white/30 border border-white/30 text-white transition-all"
+                      data-testid="camera-offer-start"
+                    >
+                      {t('camera.offer_cta', 'Use camera')}
+                    </button>
+                    <button
+                      onClick={() => setCameraOfferDismissed(true)}
+                      className="mt-2 px-4 py-1 text-sm text-white/70 hover:text-white underline underline-offset-4 transition-colors"
+                      data-testid="camera-offer-skip"
+                    >
+                      {t('camera.offer_skip', 'Continue without')}
+                    </button>
                   </div>
                 ) : (
                   <>
-                    {/* Coherence — centre hero */}
-                    <div className="absolute top-1.5 left-1/2 -translate-x-1/2 text-center pointer-events-none">
-                      <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white/75 leading-none mb-0.5">
-                        {t('practices.coherence')}
+                    {/* HR-RSA trend line. For camera, smoothHr eases the 1 Hz
+                        integer-bpm steps into a calm line while keeping the slow
+                        RSA swing (no per-beat pulsation). Watch unchanged. */}
+                    <MetricsWaveform
+                      heartRate={displayHeartRate}
+                      stress={null}
+                      energy={null}
+                      forceDark
+                      hrOnly
+                      smoothHr={vitalsData.hrSource === 'camera'}
+                      pulseTone={vitalsData.hrSource === 'camera'}
+                      heightPx={176}
+                    />
+                    {/* Top scrim — keeps the readouts legible over the wave */}
+                    <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/35 to-transparent pointer-events-none" />
+                    {/* Hero readout — SOURCE-AWARE. Camera → "Pulse" (the wave is
+                        your pulse; coherence is watch-only). Watch → Coherence
+                        centre + Pulse (left) / Breathing (right) corners. */}
+                    {vitalsData.hrSource === 'camera' ? (
+                      <div className="absolute top-1.5 left-1/2 -translate-x-1/2 text-center pointer-events-none">
+                        <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white/75 leading-none mb-0.5">
+                          {t('labels.pulse')}
+                        </div>
+                        <div className="font-bold leading-none drop-shadow" style={{ fontVariantNumeric: 'tabular-nums' }}>
+                          {displayHeartRate != null ? (
+                            <span className="text-3xl sm:text-4xl">{displayHeartRate}<span className="text-base sm:text-lg font-semibold text-white/70"> bpm</span></span>
+                          ) : (
+                            <span className="text-2xl sm:text-3xl text-white/60">--</span>
+                          )}
+                        </div>
                       </div>
-                      <div className="font-bold leading-none drop-shadow" style={{ fontVariantNumeric: 'tabular-nums' }}>
-                        {vitalsData.coherence != null ? (
-                          <span className="text-3xl sm:text-4xl">{vitalsData.coherence}<span className="text-lg sm:text-xl font-semibold">%</span></span>
-                        ) : (
-                          <span className="text-2xl sm:text-3xl text-white/60">--</span>
-                        )}
+                    ) : (
+                      <>
+                        <div className="absolute top-1.5 left-1/2 -translate-x-1/2 text-center pointer-events-none">
+                          <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white/75 leading-none mb-0.5">
+                            {t('practices.coherence')}
+                          </div>
+                          <div className="font-bold leading-none drop-shadow" style={{ fontVariantNumeric: 'tabular-nums' }}>
+                            {vitalsData.coherence != null ? (
+                              <span className="text-3xl sm:text-4xl">{vitalsData.coherence}<span className="text-lg sm:text-xl font-semibold">%</span></span>
+                            ) : (
+                              <span className="text-2xl sm:text-3xl text-white/60">--</span>
+                            )}
+                          </div>
+                        </div>
+                        <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5 pointer-events-none">
+                          <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('labels.pulse')}</span>
+                          <span className="text-xs sm:text-sm font-semibold tabular-nums">{displayHeartRate != null ? displayHeartRate : '--'}</span>
+                        </div>
+                        <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 pointer-events-none">
+                          <span className="text-xs sm:text-sm font-semibold tabular-nums">{vitalsData.br != null ? `≈${Math.round(vitalsData.br)}` : '--'}</span>
+                          <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('settings.br_unit', '/min')}</span>
+                        </div>
+                      </>
+                    )}
+                    {/* Camera status — instruction text laid directly over the
+                        window (drop-shadow for legibility, NO background bar). */}
+                    {watchHeartRate.heartRate == null && cameraPpg.status !== 'idle' && (
+                      <div className="absolute inset-x-0 bottom-2 px-4 text-center pointer-events-none">
+                        <div className="inline-flex items-center gap-2 text-xs sm:text-sm text-white drop-shadow-lg">
+                          <span className={`w-2 h-2 rounded-full ${cameraPpg.status === 'reading' ? 'bg-emerald-400 animate-pulse' : cameraPpg.fingerOn ? 'bg-amber-300 animate-pulse' : 'bg-white/50'}`} />
+                          <span>
+                            {cameraPpg.status === 'reading'
+                              ? t('camera.live', 'Live — your pulse is responding')
+                              : cameraPpg.status === 'requesting'
+                                ? t('camera.opening', 'Opening camera…')
+                                : cameraPpg.status === 'denied' || cameraPpg.status === 'error'
+                                  ? t('camera.denied', 'Camera unavailable — continuing without it.')
+                                  : cameraPpg.fingerOn
+                                    ? t('camera.reading', 'Got your finger — hold still, reading your pulse…')
+                                    : t('camera.place_finger', 'Rest a fingertip on the rear camera')}
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                    {/* Pulse — top-left corner */}
-                    <div className="absolute top-2.5 left-2.5 flex items-center gap-1.5 pointer-events-none">
-                      <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('labels.pulse')}</span>
-                      <span className="text-xs sm:text-sm font-semibold tabular-nums">{displayHeartRate != null ? displayHeartRate : '--'}</span>
-                    </div>
-                    {/* Breathing — top-right corner (RSA estimate → leading ≈) */}
-                    <div className="absolute top-2.5 right-2.5 flex items-center gap-1.5 pointer-events-none">
-                      <span className="text-xs sm:text-sm font-semibold tabular-nums">{vitalsData.br != null ? `≈${Math.round(vitalsData.br)}` : '--'}</span>
-                      <span className="text-[10px] sm:text-xs uppercase tracking-wide text-white/60">{t('settings.br_unit', '/min')}</span>
-                    </div>
+                    )}
                   </>
                 )}
               </div>
+              {/* Below the window: the coherence upgrade line shows whenever
+                  there's no watch — in the offer state AND while the camera runs
+                  — so enabling the camera doesn't shift the layout. The no-torch
+                  hint only appears while the camera is actually running. */}
+              {watchHeartRate.heartRate == null && (
+                <div className="mt-1 text-center leading-tight">
+                  {(cameraPpg.status === 'searching' || cameraPpg.status === 'reading') && !cameraPpg.torchOn && (
+                    <p className="text-[11px] text-amber-300/80">{t('camera.no_torch', "Couldn't turn on the flash — try in good light.")}</p>
+                  )}
+                  <p className="text-[11px] text-white/45">{t('camera.coherence_locked', 'Coherence unlocks with an Apple Watch.')}</p>
+                </div>
+              )}
+              {import.meta.env.VITE_PPG_DEBUG === 'true' && cameraPpg.status !== 'idle' && (
+                <div className="mt-1 text-center text-[10px] font-mono text-white/50">
+                  ppg bpm={cameraPpg.bpm ?? '—'} conf={cameraPpg.confidence.toFixed(2)} {cameraPpg.status} finger={String(cameraPpg.fingerOn)} torch={String(cameraPpg.torchOn)} r={cameraPpg.debug.r} clip={cameraPpg.debug.clip.toFixed(2)} red={cameraPpg.debug.redness.toFixed(2)}
+                </div>
+              )}
             </div>)}
-
-            {/* Camera pulse — offered to no-watch users so the 83–91% without a
-                watch still get the live "your body responds" wow. Value-framed;
-                "continue without" is equally visible (no dark pattern); the
-                practice is NEVER hard-gated behind the camera. The wave + bpm in
-                the hero above light up automatically once camera is the source;
-                coherence stays null (an upgrade hook, framed as invitation). */}
-            {!isMinimalMode && watchHeartRate.heartRate == null && (
-              <div className="w-full max-w-md mb-4 sm:mb-5 px-3 sm:px-0">
-                {cameraPpg.status === 'idle' && !cameraOfferDismissed && (
-                  <div className="rounded-2xl bg-white/10 backdrop-blur-2xl border border-white/25 p-4 text-center">
-                    <div className="text-sm sm:text-base font-medium text-white mb-1">{t('camera.offer_title', 'See your pulse respond live')}</div>
-                    <p className="text-xs text-white/70 mb-3">{t('camera.offer_body', 'Rest a fingertip on the rear camera and watch your pulse move with your breath.')}</p>
-                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 justify-center">
-                      <button
-                        onClick={() => cameraPpg.start()}
-                        className="px-5 py-2 rounded-full text-sm font-semibold bg-white/20 hover:bg-white/30 border border-white/30 text-white transition-all"
-                        data-testid="camera-offer-start"
-                      >
-                        {t('camera.offer_cta', 'Use camera')}
-                      </button>
-                      <button
-                        onClick={() => setCameraOfferDismissed(true)}
-                        className="px-5 py-2 rounded-full text-sm text-white/70 hover:text-white underline underline-offset-4 transition-colors"
-                        data-testid="camera-offer-skip"
-                      >
-                        {t('camera.offer_skip', 'Continue without')}
-                      </button>
-                    </div>
-                  </div>
-                )}
-                {cameraPpg.status === 'requesting' && (
-                  <p className="text-center text-xs text-white/70">{t('camera.opening', 'Opening camera…')}</p>
-                )}
-                {(cameraPpg.status === 'denied' || cameraPpg.status === 'error') && (
-                  <p className="text-center text-xs text-white/70">{t('camera.denied', 'Camera unavailable — continuing without it.')}</p>
-                )}
-                {(cameraPpg.status === 'searching' || cameraPpg.status === 'reading') && (
-                  <div className="rounded-2xl bg-white/10 backdrop-blur-2xl border border-white/25 px-4 py-3 text-center">
-                    {/* status dot: green = live read, amber-pulse = finger found
-                        & building, dim = looking for a finger */}
-                    <div className="flex items-center justify-center gap-2 mb-1">
-                      <span className={`w-2.5 h-2.5 rounded-full ${cameraPpg.status === 'reading' ? 'bg-emerald-400 animate-pulse' : cameraPpg.fingerOn ? 'bg-amber-300 animate-pulse' : 'bg-white/40'}`} />
-                      <span className="px-2 py-0.5 rounded-full bg-white/15 text-white/80 uppercase tracking-wide text-[10px]">{t('camera.source_label', 'Camera · quick')}</span>
-                    </div>
-                    {cameraPpg.status === 'reading' ? (
-                      <p className="text-sm font-medium text-emerald-300">{t('camera.live', 'Live — your pulse is responding')}</p>
-                    ) : cameraPpg.fingerOn ? (
-                      <p className="text-sm text-white/85">{t('camera.reading', 'Got your finger — hold still, reading your pulse…')}</p>
-                    ) : (
-                      <p className="text-sm text-white/85">{t('camera.place_finger', 'Rest a fingertip on the rear camera')}</p>
-                    )}
-                    {/* "signal building" bar — finger detected but no committed bpm yet */}
-                    {cameraPpg.status !== 'reading' && cameraPpg.fingerOn && (
-                      <div className="mt-2 h-1 w-full overflow-hidden rounded-full bg-white/10">
-                        <div className="h-full w-1/3 rounded-full bg-amber-300/70 animate-pulse" />
-                      </div>
-                    )}
-                    {!cameraPpg.torchOn && (
-                      <p className="text-[11px] text-amber-300/80 mt-2">{t('camera.no_torch', "Couldn't turn on the flash — try in good light.")}</p>
-                    )}
-                    <p className="text-[11px] text-white/45 mt-1">{t('camera.coherence_locked', 'Coherence unlocks with an Apple Watch.')}</p>
-                  </div>
-                )}
-                {import.meta.env.VITE_PPG_DEBUG === 'true' && cameraPpg.status !== 'idle' && (
-                  <div className="mt-1 text-center text-[10px] font-mono text-white/50">
-                    ppg bpm={cameraPpg.bpm ?? '—'} conf={cameraPpg.confidence.toFixed(2)} {cameraPpg.status} finger={String(cameraPpg.fingerOn)} torch={String(cameraPpg.torchOn)} r={cameraPpg.debug.r} clip={cameraPpg.debug.clip.toFixed(2)} red={cameraPpg.debug.redness.toFixed(2)}
-                  </div>
-                )}
-              </div>
-            )}
 
             {/* Progress bar (was labelled "Quality" — renamed because the bar
                 grows monotonically through the practice; a low % early on read
@@ -5949,10 +5937,62 @@ const OndaLevel1 = () => {
           </div>
 
           <div className="mt-3 sm:mt-4">
-            {displayHeartRate != null ? (
-              /* Coherence — the hero. Heart–breath synchrony read from the
-                 HR-RSA rhythm: NOT clinical RMSSD HRV, never medical. Big
-                 readout above a single calm HR-RSA curve. */
+            {cameraPpg.status !== 'idle' ? (
+              /* CAMERA ACTIVE → one STABLE-height Pulse window (bpm or --) the
+                 whole time, so a brief finger-lift / reconnect doesn't make the
+                 panel jump. Always shows the wave + a status line + a Stop button. */
+              <div className={`rounded-2xl p-4 sm:p-5 ${
+                isLight
+                  ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
+                  : 'bg-black/20 backdrop-blur-sm border border-white/10'
+              }`}>
+                <div className="flex items-baseline justify-between">
+                  <div className="text-left">
+                    <div className={`text-sm font-semibold ${isLight ? 'text-slate-600' : 'text-white/90'}`}>{t('labels.pulse')}</div>
+                    <div className={`text-xs ${isLight ? 'text-slate-400' : 'text-white/50'}`}>{t('camera.source_label', 'Camera · quick')}</div>
+                  </div>
+                  <div className={`font-bold leading-none ${isLight ? 'text-slate-500' : 'text-white'}`} style={{ fontVariantNumeric: 'tabular-nums' }}>
+                    {displayHeartRate != null ? (
+                      <span className="text-3xl sm:text-4xl">{displayHeartRate}<span className="text-base sm:text-lg font-semibold"> bpm</span></span>
+                    ) : (
+                      <span className={`text-2xl sm:text-3xl ${isLight ? 'text-slate-300' : 'text-white/40'}`}>--</span>
+                    )}
+                  </div>
+                </div>
+                <div className="mt-3">
+                  <MetricsWaveform heartRate={displayHeartRate} stress={null} energy={null} hrOnly smoothHr pulseTone heightPx={120} />
+                </div>
+                <div className="mt-2 flex items-center justify-center gap-2 text-xs">
+                  <span className={`w-2 h-2 rounded-full ${cameraPpg.status === 'reading' ? 'bg-emerald-400 animate-pulse' : cameraPpg.fingerOn ? 'bg-amber-400 animate-pulse' : isLight ? 'bg-slate-300' : 'bg-white/40'}`} />
+                  <span className={isLight ? 'text-slate-600' : 'text-white/85'}>
+                    {cameraPpg.status === 'reading'
+                      ? t('camera.live', 'Live — your pulse is responding')
+                      : cameraPpg.status === 'requesting'
+                        ? t('camera.opening', 'Opening camera…')
+                        : cameraPpg.status === 'denied' || cameraPpg.status === 'error'
+                          ? t('camera.denied', 'Camera unavailable — continuing without it.')
+                          : cameraPpg.fingerOn
+                            ? t('camera.reading', 'Got your finger — hold still, reading your pulse…')
+                            : t('camera.place_finger', 'Rest a fingertip on the rear camera')}
+                  </span>
+                </div>
+                {!cameraPpg.torchOn && (cameraPpg.status === 'searching' || cameraPpg.status === 'reading') && (
+                  <p className={`mt-1 text-[11px] text-center ${isLight ? 'text-amber-600' : 'text-amber-300/80'}`}>{t('camera.no_torch', "Couldn't turn on the flash — try in good light.")}</p>
+                )}
+                <div className="mt-2 flex items-center justify-center gap-3">
+                  <span className={`text-[11px] ${isLight ? 'text-slate-400' : 'text-white/45'}`}>{t('camera.coherence_locked', 'Coherence unlocks with an Apple Watch.')}</span>
+                  <button
+                    type="button"
+                    onClick={() => cameraPpg.stop()}
+                    className={`px-3 py-1 rounded-full text-xs font-semibold transition-all ${emoTint}`}
+                    data-testid="camera-stop"
+                  >
+                    {t('camera.stop', 'Stop')}
+                  </button>
+                </div>
+              </div>
+            ) : displayHeartRate != null ? (
+              /* WATCH → Coherence hero (heart–breath synchrony; never medical). */
               <div className={`rounded-2xl p-4 sm:p-5 ${
                 isLight
                   ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
@@ -5972,13 +6012,7 @@ const OndaLevel1 = () => {
                   </div>
                 </div>
                 <div className="mt-3">
-                  <MetricsWaveform
-                    heartRate={displayHeartRate}
-                    stress={null}
-                    energy={null}
-                    hrOnly
-                    heightPx={120}
-                  />
+                  <MetricsWaveform heartRate={displayHeartRate} stress={null} energy={null} hrOnly heightPx={120} />
                 </div>
               </div>
             ) : (
@@ -5990,21 +6024,29 @@ const OndaLevel1 = () => {
                 }`}
                 data-testid="biometric-connect-cta"
               >
-                <div className="text-base sm:text-lg font-medium mb-1 flex items-center justify-center gap-2">
-                  <Heart className="w-4 h-4 text-red-400" />
-                  <span>{t('home.biometric.connect_title', 'Connect Apple Watch')}</span>
-                </div>
-                <p className="text-xs sm:text-sm mb-3" style={{ opacity: 0.7 }}>
-                  {t('home.biometric.connect_body', 'See your heart–breath rhythm live during breathing practices.')}
+                <p className={`text-xs sm:text-sm mb-3 ${isLight ? 'text-slate-600' : 'text-white/75'}`}>
+                  {t('home.biometric.connect_body', 'Connect and see your heart rhythm in real time during breathing practices.')}
                 </p>
-                <button
-                  type="button"
-                  onClick={() => setShowPermissionModal(true)}
-                  className={`px-5 py-2 rounded-xl text-sm font-semibold transition-all ${emoTint}`}
-                  data-testid="biometric-connect-cta-button"
-                >
-                  {t('home.biometric.connect_cta', 'Set Up Now')}
-                </button>
+                <div className="flex gap-2 sm:gap-3 justify-center">
+                  <button
+                    type="button"
+                    onClick={() => setShowPermissionModal(true)}
+                    className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all ${emoTint}`}
+                    data-testid="biometric-connect-watch"
+                  >
+                    <Watch className="w-4 h-4" />
+                    {t('home.biometric.connect_watch', 'Apple Watch')}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => cameraPpg.start()}
+                    className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all ${emoTint}`}
+                    data-testid="biometric-connect-camera"
+                  >
+                    <Camera className="w-4 h-4" />
+                    {t('home.biometric.connect_camera', 'Camera')}
+                  </button>
+                </div>
               </div>
             )}
           </div>

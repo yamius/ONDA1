@@ -133,7 +133,20 @@ export function useVitals() {
     const id = setInterval(() => {
       const series = heartRateStore.getBuffer();
       calculationCountRef.current++;
-      if (series.length < 10) return;
+      if (series.length < 10) {
+        // No (or not enough) signal — e.g. the camera was stopped and the buffer
+        // cleared. Reset the DERIVED metrics to null so a stale breathing/stress/
+        // coherence number doesn't keep hanging in the tiles. (hr clears on its
+        // own via the source resolver.)
+        setBr(null);
+        setStress(null);
+        setEnergy(null);
+        setCoherence(null);
+        setHrv(null);
+        coherenceRef.current = -1;
+        brSmoothRef.current = -1;
+        return;
+      }
 
       const tNow = series[series.length - 1].t;
       const tStart = tNow - 45;
