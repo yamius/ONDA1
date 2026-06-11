@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, lazy, Suspense } from 'react';
-import { X, Play, Pause, Star } from 'lucide-react';
+import { X, Play, Pause, Star, Minimize2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { RemoteAudioPlayer } from './RemoteAudioPlayer';
@@ -542,6 +542,9 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const platform = Capacitor.getPlatform();
   const [practiceState, setPracticeState] = useState<PracticeState>('intro');
   const [isPaused, setIsPaused] = useState(false);
+  // Zen "minimal mode" — same as the basic practice: hides the timer/window/
+  // quality/buttons and leaves only the guiding card (tap it to restore).
+  const [isMinimalMode, setIsMinimalMode] = useState(false);
   const [practiceTime, setPracticeTime] = useState(0);
   const [currentGuidingTextIndex, setCurrentGuidingTextIndex] = useState(0);
   const [isTextTransitioning, setIsTextTransitioning] = useState(false);
@@ -644,6 +647,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       setInitialMetrics({ stress: null, energy: null });
       setBestMetrics({ stress: null, energy: null });
       setEarnedOnd(0);
+      setIsMinimalMode(false);
       // Fresh camera offer each open; make sure no stream is left running from
       // a previous session.
       setCameraOfferDismissed(false);
@@ -798,6 +802,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     setIsPaused(false);
     setQualityScore(0);
     setMaxQualityScore(0);
+    setIsMinimalMode(false);
     // Offer the camera afresh for this run (no-watch users); never hard-gated.
     setCameraOfferDismissed(false);
     // Reset coherence-delta capture for this session.
@@ -851,6 +856,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     }
     // Free the camera + torch as we leave the live screen for the result screen.
     cameraPpg.stop();
+    setIsMinimalMode(false);
 
     // Completion threshold: user must have spent at least 80% of target time.
     // Mirrors the `timePercent >= 0.8` rule used for basic practices' isValidForArtifact.
@@ -1109,6 +1115,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       clearInterval(timerRef.current);
     }
     cameraPpg.stop();
+    setIsMinimalMode(false);
     onClose();
   };
 
@@ -1151,6 +1158,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         </Suspense>
       )}
 
+      {/* Hidden in minimal mode (zen view) — tap the guiding card to restore. */}
+      {!isMinimalMode && (
       <button
         onClick={handleClose}
         disabled={!canClose}
@@ -1159,6 +1168,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       >
         <X className="w-6 h-6" />
       </button>
+      )}
 
       <div className="relative z-10 w-full max-w-2xl">
         {practiceState === 'intro' && (
@@ -1204,9 +1214,18 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         )}
 
         {practiceState === 'practice' && (
-          <div className="flex flex-col items-center justify-center min-h-screen text-white">
+          <div
+            className={`flex flex-col items-center min-h-screen text-white transition-all duration-500 ${isMinimalMode ? 'justify-end' : 'justify-center'}`}
+            style={{ paddingBottom: isMinimalMode
+              ? platform === 'ios'
+                ? 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 10px)'
+                : platform === 'android'
+                  ? 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 30px)'
+                  : 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 0px)'
+              : 'calc(max(env(safe-area-inset-bottom, 0px), 48px) + 16px)' }}
+          >
             {/* Компактный круг с эмодзи и таймером */}
-            <div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-1 sm:mt-3">
+            {!isMinimalMode && (<div className="relative w-48 h-48 sm:w-64 sm:h-64 mb-4 sm:mb-6 mx-auto mt-1 sm:mt-3">
               {/* Круговой прогресс */}
               <svg className="w-full h-full transform -rotate-90" viewBox="0 0 256 256">
                 <circle
@@ -1236,7 +1255,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   </linearGradient>
                 </defs>
               </svg>
-              
+
               {/* Эмодзи и таймер в центре круга */}
               <div className="absolute inset-0 flex flex-col items-center justify-center">
                 {/* Эмодзи в маленьком круге с размытием к краям */}
@@ -1253,7 +1272,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                     {practice.visual}
                   </div>
                 </div>
-                
+
                 {/* Таймер */}
                 <div className="text-4xl sm:text-6xl font-mono tracking-wider drop-shadow-2xl transform -translate-y-4 sm:-translate-y-6" style={{
                   fontVariantNumeric: 'tabular-nums'
@@ -1261,9 +1280,26 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   {formatTime(practiceTime)}
                 </div>
               </div>
-            </div>
+            </div>)}
 
-            <div className="w-full max-w-md mb-6 sm:mb-12 px-3 sm:px-0">
+            {/* Live hero window — same position as the basic practice (right
+                under the timer). The SAME <CameraPulseWindow>, so no-watch users
+                get camera pulse here too. No watch → camera offer / live Pulse;
+                watch → Coherence hero. Coherence stays an honest Watch upgrade. */}
+            {!isMinimalMode && (<div className="w-full max-w-md mb-4 sm:mb-5 px-3 sm:px-0">
+              <CameraPulseWindow
+                hasWatch={vitalsData.watchHR.hr != null}
+                displayHeartRate={vitalsData.hr}
+                hrSource={vitalsData.hrSource}
+                coherence={vitalsData.coherence}
+                breathing={vitalsData.br}
+                cameraPpg={cameraPpg}
+                cameraOfferDismissed={cameraOfferDismissed}
+                onDismissOffer={() => setCameraOfferDismissed(true)}
+              />
+            </div>)}
+
+            {!isMinimalMode && (<div className="w-full max-w-md mb-4 sm:mb-6 px-3 sm:px-0">
               <div className="flex justify-between text-sm sm:text-base mb-2 sm:mb-3">
                 <span className="font-semibold">{t('practices.quality')}</span>
                 <span className="font-bold text-xl sm:text-2xl">{Math.round(calculateCurrentQuality())}%</span>
@@ -1279,13 +1315,24 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
               <div className="mt-2 sm:mt-3 text-xs sm:text-sm text-gray-300">
                 <span>{t('labels.time_label')}: {Math.round((practiceTime / practice.targetTime) * 100)}%</span>
               </div>
-            </div>
+            </div>)}
 
+            {/* Guiding text — coaching layer under the practice in the standard
+                view; the sole zen card in minimal mode (larger, tap to exit). */}
             {practice.guidingTexts && practice.guidingTexts.length > 0 && (
-              <div className="w-full max-w-md mb-6 sm:mb-8 px-3 sm:px-0">
-                <div className="rounded-2xl p-4 sm:p-6 shadow-xl h-24 sm:h-28 flex items-center justify-center overflow-hidden bg-white/10 backdrop-blur-2xl border border-white/25">
+              <div
+                className={`w-full max-w-md px-3 sm:px-0 ${isMinimalMode ? '' : 'mb-6 sm:mb-8'}`}
+                onClick={isMinimalMode ? () => setIsMinimalMode(false) : undefined}
+              >
+                <div className={`backdrop-blur-2xl rounded-2xl border flex flex-col items-center justify-center overflow-hidden transition-all duration-300 ${
+                  isMinimalMode
+                    ? 'bg-white/10 border-white/30 p-4 sm:p-6 h-28 sm:h-32 cursor-pointer hover:bg-white/20 active:scale-95'
+                    : 'bg-white/5 border-white/15 px-4 sm:px-6 h-[78px] sm:h-[88px]'
+                }`}>
                   <p
-                    className={`text-sm sm:text-base text-center italic leading-snug whitespace-pre-line transition-all duration-1000 text-white/90 ${
+                    className={`text-center italic leading-snug whitespace-pre-line transition-all duration-1000 ${
+                      isMinimalMode ? 'text-sm sm:text-base text-white/90' : 'text-xs sm:text-sm text-white/75'
+                    } ${
                       isTextTransitioning ? 'opacity-0 translate-y-[-20px]' : 'opacity-100 translate-y-0'
                     }`}
                   >
@@ -1295,28 +1342,11 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
               </div>
             )}
 
-            {/* Live hero window — the SAME <CameraPulseWindow> the basic
-                practice uses, so no-watch users get camera pulse here too.
-                No watch → camera offer / live Pulse window; watch → Coherence
-                hero. Camera users see their pulse respond to the breath; the
-                coherence training signal stays an honest Apple-Watch upgrade. */}
-            <div className="w-full max-w-md mb-6 sm:mb-12 px-3 sm:px-0">
-              <CameraPulseWindow
-                hasWatch={vitalsData.watchHR.hr != null}
-                displayHeartRate={vitalsData.hr}
-                hrSource={vitalsData.hrSource}
-                coherence={vitalsData.coherence}
-                breathing={vitalsData.br}
-                cameraPpg={cameraPpg}
-                cameraOfferDismissed={cameraOfferDismissed}
-                onDismissOffer={() => setCameraOfferDismissed(true)}
-              />
-            </div>
-            
+            {!isMinimalMode && (
             <div className="flex gap-3 sm:gap-6">
               <button
                 onClick={togglePause}
-                className="backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 shadow-xl bg-white/10 hover:bg-white/20 border border-white/25"
+                className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 border border-white/25 text-white"
               >
                 {isPaused ? <Play className="w-6 h-6 sm:w-8 sm:h-8" /> : <Pause className="w-6 h-6 sm:w-8 sm:h-8" />}
               </button>
@@ -1325,12 +1355,19 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                   console.log('[AdaptivePractice] Complete button clicked!');
                   completePractice();
                 }}
-                className="bg-emerald-500/25 hover:bg-emerald-500/40 backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all hover:scale-110 shadow-xl border border-emerald-400/50"
+                className="bg-emerald-500/25 hover:bg-emerald-500/40 backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all hover:scale-110 border border-emerald-400/50 text-white"
                 data-testid="button-complete-practice"
               >
                 {t('adaptive_practices.complete')}
               </button>
+              <button
+                onClick={() => setIsMinimalMode(!isMinimalMode)}
+                className="bg-white/10 hover:bg-white/20 backdrop-blur-2xl p-3 sm:p-5 rounded-full transition-all hover:scale-110 border border-white/25 text-white"
+              >
+                <Minimize2 className="w-6 h-6 sm:w-8 sm:h-8" />
+              </button>
             </div>
+            )}
           </div>
         )}
 
