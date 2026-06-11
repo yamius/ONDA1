@@ -5807,25 +5807,30 @@ const OndaLevel1 = () => {
               line when the metric is null (no tracker yet), collapsing to
               icon + label so the row reads as "setup pending", not missing. */}
           <div className="grid grid-cols-2 gap-3 sm:gap-4">
-            {/* Pulse — the one real, independent measurement (Watch). */}
+            {/* Pulse — measured (Watch or camera). Fixed 2-line layout: icon,
+                then value + unit on ONE line, the big number ALWAYS rendered
+                (-- when absent) so the tile never grows a third line / jumps in
+                height when a pulse first appears. Taller value line on purpose —
+                the number is bigger than the unit. No source ("Watch") label. */}
             <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${watchHeartRate.isConnected ? 'text-green-400' : 'text-red-400'}`} />
-              {displayHeartRate != null && (
-                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>{displayHeartRate}</div>
-              )}
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.bpm', 'BPM')} {watchHeartRate.isConnected && <span className="text-green-400">Watch</span>}</div>
+              <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${displayHeartRate != null ? 'text-green-400' : 'text-red-400'}`} />
+              <div className="flex items-baseline justify-center gap-1 leading-none">
+                <span className={`text-2xl sm:text-3xl font-bold tabular-nums ${displayHeartRate == null ? (isLight ? 'text-slate-300' : 'text-white/40') : (isLight ? 'text-slate-400' : '')}`}>
+                  {displayHeartRate != null ? displayHeartRate : '--'}
+                </span>
+                <span className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.bpm', 'BPM')}</span>
+              </div>
             </div>
-            {/* Breathing — RSA-derived ESTIMATE. Smoothed in useVitals, shown
-                as a rounded integer with a leading ≈ so it never reads as a
-                precise, independent measurement. */}
+            {/* Breathing — RSA-derived ESTIMATE (leading ≈ so it never reads as a
+                precise, independent measurement). Same fixed 2-line layout. */}
             <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
               <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
-              {vitalsData.br != null && (
-                <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-400' : ''}`}>
-                  <span className="font-normal opacity-60 mr-0.5">≈</span>{Math.round(vitalsData.br)}
-                </div>
-              )}
-              <div className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</div>
+              <div className="flex items-baseline justify-center gap-1 leading-none">
+                <span className={`text-2xl sm:text-3xl font-bold tabular-nums ${vitalsData.br == null ? (isLight ? 'text-slate-300' : 'text-white/40') : (isLight ? 'text-slate-400' : '')}`}>
+                  {vitalsData.br != null ? (<><span className="text-base font-normal opacity-60 mr-0.5">≈</span>{Math.round(vitalsData.br)}</>) : '--'}
+                </span>
+                <span className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</span>
+              </div>
             </div>
           </div>
 
