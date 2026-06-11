@@ -272,7 +272,15 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         var body: [String: Any] = [:]
         var sleep: [String: Any] = [:]
         var wellness: [String: Any] = [:]
-        
+
+        // ⚠️ DORMANT FITNESS READS — the steps / active-energy / VO2Max queries
+        // below are NOT in typesToRead (requestAuthorization + requestFullAuthorization
+        // authorize only heartRate, heartRateVariabilitySDNN and sleepAnalysis),
+        // so HealthKit returns nothing for them. Before adding any of these to
+        // typesToRead, in the SAME change you MUST update: the App Store App
+        // Privacy labels (this adds the "Fitness" data type), NSHealthShareUsageDescription,
+        // and privacy policy §1.1 — fitness data must never start flowing
+        // off-device silently, past the declarations.
         // Steps
         group.enter()
         querySum(.stepCount, from: startOfDay, to: now) { value in
