@@ -315,16 +315,17 @@ const OndaLevel1 = () => {
     hrv7Day.recordSample(healthKitData.data?.vitals?.hrv);
   }, [healthKitData.data?.vitals?.hrv, hrv7Day.recordSample]);
 
-  // Notification Primer — показываем ПОСЛЕ 2 завершённых практик, не
+  // Notification Primer — показываем ПОСЛЕ 6 завершённых практик, не
   // на старте и не в онбординге. Логика: пуш о напоминаниях имеет смысл,
   // когда юзер уже втянулся; ранний prompt = низкий opt-in + ощущение
   // спама. v1.7.3: онбординг и ATT-prompt убраны, primer триггерится
-  // по practiceHistory.length.
+  // по practiceHistory.length. Порог поднят 2 → 6 — даём прочувствовать
+  // ценность глубже, прежде чем просить разрешение на пуши.
   // ВАЖНО: этот useEffect должен идти ПОСЛЕ объявления practiceHistory —
   // иначе TDZ (`Cannot access 'practiceHistory' before initialization`).
   useEffect(() => {
     if (!Capacitor.isNativePlatform()) return;
-    if (practiceHistory.length < 2) return;
+    if (practiceHistory.length < 6) return;
     if (localStorage.getItem('onda_notification_primer_shown') === 'true') return;
     setShowNotificationPrimer(true);
     localStorage.setItem('onda_notification_primer_shown', 'true');
