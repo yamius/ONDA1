@@ -930,10 +930,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             extra: isValidForCompletion
               ? {
                   duration_seconds: practiceTime,
-                  stress_before: initialMetrics.stress,
-                  stress_after: Math.round(finalStress),
-                  energy_before: initialMetrics.energy,
-                  energy_after: Math.round(finalEnergy),
+                  // No stress/energy — pulse-derived, removed from the product;
+                  // kept on-device only. Coherence delta is the honest signal.
                   has_real_metrics: hasRealMetrics,
                   ond_earned: ondReward.totalOnd,
                   coherence_delta: coherenceDelta,
@@ -955,10 +953,10 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         practice_id: practice.id,
         practice_duration_seconds: practiceTime,
         expected_duration_seconds: practice.targetTime,
-        stress_before: initialMetrics.stress,
-        stress_after: finalStress, // Best (lowest) stress achieved
-        energy_before: initialMetrics.energy,
-        energy_after: finalEnergy, // Best (highest) energy achieved
+        // stress/energy columns left null on purpose — these are pulse-derived,
+        // computed on-device (they feed the OND reward above) but no longer
+        // persisted, so nothing derived from the camera pulse leaves the device.
+        // Columns are nullable; the OND amounts below are the record we keep.
         completion_ond: ondReward.completionOnd,
         performance_ond: ondReward.performanceOnd,
         total_ond_earned: ondReward.totalOnd
@@ -1011,10 +1009,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
         extra: isValidForCompletion
           ? {
               duration_seconds: practiceTime,
-              stress_before: initialMetrics.stress,
-              stress_after: Math.round(finalStress),
-              energy_before: initialMetrics.energy,
-              energy_after: Math.round(finalEnergy),
+              // No stress/energy — pulse-derived, removed from the product;
+              // kept on-device only. Coherence delta is the honest signal.
               has_real_metrics: hasRealMetrics,
               ond_earned: ondReward.totalOnd,
               coherence_delta: coherenceDelta,

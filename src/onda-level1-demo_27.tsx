@@ -2441,8 +2441,10 @@ const OndaLevel1 = () => {
         practice_name: activePractice.name,
         target_duration: activePractice.duration,
         has_biometrics: hasRealMetrics,
-        initial_stress: initialStress,
-        initial_energy: initialEnergy,
+        // Stress/energy intentionally NOT sent: they're derived from the pulse
+        // (incl. the camera source) and we removed them from the product, so
+        // they must not leave the device either. The honest before/after signal
+        // is the coherence delta, reported on the 'complete' event below.
       });
       trackTenjinPractice('Start', getPracticeName(activePractice.id), { practiceId: activePractice.id });
     }
@@ -2550,8 +2552,8 @@ const OndaLevel1 = () => {
       has_biometrics: hasRealMetricsAtFinish,
       is_valid_for_artifact: isValidForArtifact,
       is_new_record: shouldUpdate && !!existingPractice,
-      final_stress: freshVitalsForSession.stress,
-      final_energy: freshVitalsForSession.energy,
+      // No final_stress/final_energy — pulse-derived, removed from the product,
+      // kept on-device only. Coherence delta below is the honest effect signal.
       coherence_baseline: coherenceBaseline,
       coherence_peak: coherencePeak,
       coherence_delta: coherenceDelta,
@@ -2565,8 +2567,10 @@ const OndaLevel1 = () => {
       duration: practiceTime,
       quality: qualityScore,
       qnt: earnedQnt,
-      stress: freshVitalsForSession.stress,
-      energy: freshVitalsForSession.energy,
+      // No stress/energy — this session record is persisted to Supabase
+      // (user_game_progress.practice_history); keeping pulse-derived metrics OFF
+      // it means nothing derived from the camera pulse leaves the device. The
+      // coherence delta (training signal) is the honest record we keep.
       coherenceDelta,
       coherencePeak,
       isNewRecord: shouldUpdate && existingPractice
@@ -2732,10 +2736,10 @@ const OndaLevel1 = () => {
             practice_id: activePractice.id,
             practice_duration_seconds: practiceTime,
             expected_duration_seconds: activePractice.targetTime || 720,
-            stress_before: initialVitals.stress,
-            stress_after: finalStress, // Best (lowest) stress achieved
-            energy_before: initialVitals.energy,
-            energy_after: finalEnergy, // Best (highest) energy achieved
+            // stress/energy columns left null on purpose — pulse-derived,
+            // computed on-device (they feed the OND reward above) but no longer
+            // persisted, so nothing derived from the camera pulse leaves the
+            // device. Columns are nullable; the OND amounts are the record we keep.
             completion_ond: ondReward.completionOnd,
             performance_ond: ondReward.performanceOnd,
             total_ond_earned: totalOndWithBonus // With artifact bonuses applied
