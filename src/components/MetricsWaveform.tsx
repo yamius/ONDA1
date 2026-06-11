@@ -325,11 +325,11 @@ export function MetricsWaveform({
   const colorStress = isLight ? 'rgba(249,115,22,0.65)' : 'rgba(251,146,60,0.8)';
   const colorEnergy = isLight ? 'rgba(59,130,246,0.65)' : 'rgba(96,165,250,0.8)';
   const colorIdle = isLight ? 'rgba(99,102,241,0.35)' : 'rgba(199,210,254,0.45)';
-  // The single hrOnly wave reads GOLD for coherence (premium + distinct from the
+  // The single hrOnly wave reads ORANGE for coherence (warm + distinct from the
   // rose PULSE wave so a user never confuses the two); camera pulse stays rose.
-  const colorCoherence = isLight ? 'rgba(202,138,4,0.95)' : 'rgba(240,200,80,0.95)';
+  const colorCoherence = isLight ? 'rgba(234,88,12,0.95)' : 'rgba(251,146,60,0.97)';
   const hrLineColor = hrOnly ? (pulseTone ? colorHR : colorCoherence) : colorHR;
-  const hrGlow = pulseTone ? 'rgba(251,113,133,0.45)' : 'rgba(240,200,80,0.5)';
+  const hrGlow = pulseTone ? 'rgba(251,113,133,0.45)' : 'rgba(251,146,60,0.5)';
 
   return (
     <svg

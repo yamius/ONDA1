@@ -45,6 +45,11 @@ export function useVitals() {
   hrSourceRef.current = hrSource;
   const cameraActiveRef = useRef(camera.active);
   cameraActiveRef.current = camera.active;
+  // Live refs for the 1 Hz buffer sampler below (empty-deps interval).
+  const currentHrRef = useRef(currentHR);
+  currentHrRef.current = currentHR;
+  const bleConnectedRef = useRef(bleHR.connected);
+  bleConnectedRef.current = bleHR.connected;
 
   const [br, setBr] = useState<number | null>(null);
   const [stress, setStress] = useState<number | null>(null);
@@ -80,35 +85,25 @@ export function useVitals() {
   // EMA state for the DISPLAYED breathing estimate (sentinel -1, see ewma).
   const brSmoothRef = useRef(-1);
 
-  // Feed notification HR into series when BLE is not connected
+  // Feed the shared HR buffer at a steady 1 Hz from whichever non-camera,
+  // non-BLE source is live (Apple Watch via WCSession / HealthKit / Android
+  // notification). Sampling every second — NOT only when the HR integer
+  // CHANGES — keeps the buffer DENSE: a calm, steady resting pulse still lands
+  // ~1 point/s, so the 45 s coherence/breathing window fills in ~10 s instead
+  // of stalling at "--" when the watch repeats the same value (React skips the
+  // re-render, so the old change-driven effect never fired). currentHR is the
+  // resolved non-camera source HR here (camera overrides only when active, and
+  // we skip that case). Camera owns the buffer when active (it pushes its own
+  // points); BLE is fed by useHeartRate directly.
   useEffect(() => {
-    if (cameraActiveRef.current) return; // camera owns the buffer while active
-    if (!bleHR.connected && notificationHR.hr != null) {
-      const now = Date.now() / 1000;
-      heartRateStore.addDataPoint(now, notificationHR.hr);
-    }
-  }, [notificationHR.hr, bleHR.connected]);
-
-  // Feed HealthKit HR into series when BLE is not connected (iOS)
-  useEffect(() => {
-    if (cameraActiveRef.current) return; // camera owns the buffer while active
-    if (!bleHR.connected && healthKitHR.isMonitoring && healthKitHR.heartRate != null) {
-      const now = Date.now() / 1000;
-      heartRateStore.addDataPoint(now, healthKitHR.heartRate);
-    }
-  }, [healthKitHR.heartRate, healthKitHR.isMonitoring, bleHR.connected]);
-
-  // Feed Apple Watch HR into series (iOS real-time via WCSession).
-  // Keyed off heartRate presence, not isConnected (see currentHR note) — so
-  // the buffer fills (and stress/energy/coherence compute) whenever HR is
-  // actually streaming, matching what's shown on screen.
-  useEffect(() => {
-    if (cameraActiveRef.current) return; // camera owns the buffer while active
-    if (!bleHR.connected && watchHR.heartRate != null) {
-      const now = Date.now() / 1000;
-      heartRateStore.addDataPoint(now, watchHR.heartRate);
-    }
-  }, [watchHR.heartRate, bleHR.connected]);
+    const id = setInterval(() => {
+      if (cameraActiveRef.current) return; // camera owns the buffer while active
+      if (bleConnectedRef.current) return; // BLE strap feeds the store itself
+      const hr = currentHrRef.current;
+      if (hr != null) heartRateStore.addDataPoint(Date.now() / 1000, hr);
+    }, 1000);
+    return () => clearInterval(id);
+  }, []);
 
   useEffect(() => {
     if (currentHR == null) return;
