@@ -3,9 +3,10 @@ import { X, Play, Pause, Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { RemoteAudioPlayer } from './RemoteAudioPlayer';
-import { MetricsWaveform } from './MetricsWaveform';
+import { CameraPulseWindow } from './CameraPulseWindow';
 import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from '../constants/practiceAssets';
 import { useVitals } from '../hooks/useVitals';
+import { useCameraPpg } from '../hooks/useCameraPpg';
 import { useSubscription } from '../hooks/useSubscription';
 import { useAnalytics } from '../hooks/useAnalytics';
 import { heartRateStore } from '../hooks/heartRateStore';
@@ -532,6 +533,10 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
   const { t } = useTranslation();
   const isLight = useTheme().resolved === 'light';
   const vitalsData = useVitals();
+  // Camera-pulse channel for no-watch users — the same hook the basic practice
+  // uses. Drives the offer card / live Pulse window inside <CameraPulseWindow>.
+  const cameraPpg = useCameraPpg();
+  const [cameraOfferDismissed, setCameraOfferDismissed] = useState(false);
   const { isPremium, isLoading: isSubLoading } = useSubscription();
   const { track } = useAnalytics();
   const platform = Capacitor.getPlatform();
@@ -639,18 +644,28 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       setInitialMetrics({ stress: null, energy: null });
       setBestMetrics({ stress: null, energy: null });
       setEarnedOnd(0);
+      // Fresh camera offer each open; make sure no stream is left running from
+      // a previous session.
+      setCameraOfferDismissed(false);
+      cameraPpg.stop();
       if (timerRef.current) {
         clearInterval(timerRef.current);
         timerRef.current = null;
       }
     }
-    
-    // Clean up timer when modal closes
-    if (!isOpen && timerRef.current) {
-      clearInterval(timerRef.current);
-      timerRef.current = null;
+
+    // Clean up timer + camera when modal closes
+    if (!isOpen) {
+      cameraPpg.stop();
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+        timerRef.current = null;
+      }
     }
   }, [isOpen]);
+
+  // Stop the camera if the modal unmounts mid-stream (frees the stream + torch).
+  useEffect(() => () => { cameraPpg.stop(); }, []);
 
   useEffect(() => {
     if (practiceState === 'practice' && !isPaused && practice) {
@@ -783,6 +798,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     setIsPaused(false);
     setQualityScore(0);
     setMaxQualityScore(0);
+    // Offer the camera afresh for this run (no-watch users); never hard-gated.
+    setCameraOfferDismissed(false);
     // Reset coherence-delta capture for this session.
     initialCoherenceRef.current = freshVitals.coherence ?? null;
     peakCoherenceRef.current = freshVitals.coherence ?? null;
@@ -832,6 +849,8 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       console.log('[AdaptivePractice] No practice found, returning');
       return;
     }
+    // Free the camera + torch as we leave the live screen for the result screen.
+    cameraPpg.stop();
 
     // Completion threshold: user must have spent at least 80% of target time.
     // Mirrors the `timePercent >= 0.8` rule used for basic practices' isValidForArtifact.
@@ -1089,6 +1108,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     if (timerRef.current) {
       clearInterval(timerRef.current);
     }
+    cameraPpg.stop();
     onClose();
   };
 
@@ -1275,26 +1295,22 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
               </div>
             )}
 
-            {/* Coherence hero — heart–breath synchrony from the HR-RSA rhythm
-                (NOT clinical HRV, never medical) over a single calm curve.
-                Replaces the Stress/Energy verdict tiles (train it, not track it).
-                White treatment over the dark HDR panorama (forceDark), like the
-                basic practice screen. */}
+            {/* Live hero window — the SAME <CameraPulseWindow> the basic
+                practice uses, so no-watch users get camera pulse here too.
+                No watch → camera offer / live Pulse window; watch → Coherence
+                hero. Camera users see their pulse respond to the breath; the
+                coherence training signal stays an honest Apple-Watch upgrade. */}
             <div className="w-full max-w-md mb-6 sm:mb-12 px-3 sm:px-0">
-              <div className="relative rounded-2xl overflow-hidden shadow-xl bg-white/10 backdrop-blur-2xl border border-white/25">
-                <MetricsWaveform heartRate={vitalsData.hr} stress={null} energy={null} forceDark hrOnly heightPx={160} />
-                <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black/30 to-transparent pointer-events-none" />
-                <div className="absolute top-2 left-1/2 -translate-x-1/2 text-center pointer-events-none">
-                  <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider leading-none mb-0.5 text-white/75">{t('practices.coherence')}</div>
-                  <div className="font-bold leading-none drop-shadow text-white" style={{ fontVariantNumeric: 'tabular-nums' }}>
-                    {vitalsData.coherence != null ? (
-                      <span className="text-3xl sm:text-4xl">{vitalsData.coherence}<span className="text-lg sm:text-xl font-semibold">%</span></span>
-                    ) : (
-                      <span className="text-2xl sm:text-3xl text-white/60">--</span>
-                    )}
-                  </div>
-                </div>
-              </div>
+              <CameraPulseWindow
+                hasWatch={vitalsData.watchHR.hr != null}
+                displayHeartRate={vitalsData.hr}
+                hrSource={vitalsData.hrSource}
+                coherence={vitalsData.coherence}
+                breathing={vitalsData.br}
+                cameraPpg={cameraPpg}
+                cameraOfferDismissed={cameraOfferDismissed}
+                onDismissOffer={() => setCameraOfferDismissed(true)}
+              />
             </div>
             
             <div className="flex gap-3 sm:gap-6">
