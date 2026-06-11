@@ -6,9 +6,53 @@
 
 ---
 
+## 1.8.0 — 2026 (TBD)
+
+**Headline:** Camera-based fingertip pulse (PPG) — live heart rate
+without an Apple Watch.
+
+### Added
+- Camera pulse channel: on-device fingertip PPG (rear camera + torch) as
+  a pulse source for users without a watch. Pure-math core (ppgCore.ts),
+  capture hook (useCameraPpg.ts), pulse-source abstraction
+  (sensorSource.ts). Dual-estimator + SQI gating — shows a number only
+  when confident, blank otherwise. No HRV/coherence/RMSSD from camera.
+  (f571c0c7, 0cdda13b, 6a51d308, df7aa87c)
+- Source-adaptive hero: camera users get the live pulse wave as hero;
+  coherence shown as a watch-unlock.
+
+### Changed
+- Onboarding: straight into first practice → paywall; first-run
+  "Enter ONDA" results label. (98f67bcf, 163d68ce)
+- Home dashboard trimmed: removed derived stress/energy tiles;
+  Pulse | Breathing + Coherence hero (coherence watch-only).
+- Review prompt re-gated: fires on first biometric practice in a return
+  session (day-2+), targeting delighted returners. Added
+  review_prompt_requested analytics. (cd15e4f6)
+
+### Privacy / compliance
+- Stress & energy scores no longer leave the device — removed from
+  analytics, Supabase practice_history, practice_rewards, and Tenjin
+  (6 call sites); kept local-only for reward/quality calc. (f23008a4)
+- Privacy policy §1.6 (Camera Pulse, fingertip) added in all 5 locales,
+  generic "wellness indicators derived from it" wording.
+  (f1165837, 6e5b31ea, bc4ad000)
+- Info.plist: camera usage string covers fingertip pulse + eye scan;
+  HealthKit usage string now lists heart rate + HRV + sleep.
+  (f1165837, ccf43dff)
+- App Store Connect App Privacy: added Health (Analytics) + Audio (App
+  Functionality); removed Fitness.
+- Dormant fitness HealthKit queries flagged in-code — not in
+  typesToRead, return nothing. (3354fdfb)
+
+### Fixed
+- Test infra (@testing-library/dom). (b149afc7)
+
+---
+
 ## Текущий статус
 
-- **Открытый трейн (1.8.0):** `MARKETING_VERSION` поднят 1.7.9 → 1.8.0 (фич пока нет — копим сюда). В main также CI-фикс: `gem install fastlane multi_json` (раннер-образ `20260527` выронил `multi_json`, fastlane падал на старте).
+- **Открытый трейн (1.8.0):** `MARKETING_VERSION` поднят 1.7.9 → 1.8.0 — теперь несёт **камеру-пульс (fingertip PPG)** во всех практиках + честные метрики (Pulse|Breathing → Coherence; стресс/энергия больше не покидают устройство) + онбординг-полиш + privacy-апдейт (§1.6, usage-strings, App Privacy: +Health/Audio, −Fitness). Готовится к сабмиту — детали в секции [1.8.0](#180--2026-tbd) в начале файла. В main также CI-фикс: `gem install fastlane multi_json` (раннер-образ `20260527` выронил `multi_json`, fastlane падал на старте).
 - **LIVE в App Store:** `1.7.9` — ✅ **APPROVED 2026-06-05** (submitted 2026-06-04). Два фикса: **(1) practice-audio resume** — фоновое аудио в WKWebView невозможно (WebKit паузит `<audio>` при сворачивании, не лечится `AVAudioSession`), поэтому аудио-эксперимент откачен (`.playback` + `audio` в UIBackgroundModes; последнее ещё и App-Review-2.5.4-риск) и добавлен foreground-resume в `PracticeAudioPlayer` (при возврате музыка сразу возобновляется). **(2) watch dead-man's-switch** — `HKWorkoutSession` на часах сам завершается через ~45с тишины от телефона, чтобы force-quit iPhone-приложения не оставлял часы стримить пульс (дренаж) вечно.
 - **Предыдущий live:** `1.7.8` — ✅ **APPROVED 2026-06-04** (submitted 2026-06-03). Батарейный билд (из ветки `claude/workout-lifecycle-battery`): **workout-session lifecycle fix** (сессия активна ⟺ foreground ∨ практика, иначе стоп + `discardWorkout` → больше нет «весь день» дренажа + Apple Fitness чистый; autonomy во время практики сохранена) + watch «Paused» idle-текст + home waveform tap-to-emphasise линии. Ноты version-agnostic, demo-логин не нужен. _(Параллельно в main влита landing-фича `/tools/hrv` — веб-сайт, к iOS-билду отношения не имеет.)_
 - **Предыдущий live:** `1.7.7` — ✅ **APPROVED 2026-06-03**. Onboarding-HealthKit-лист включает HRV (reach) + reliability-fix live Coherence/stress/energy (отвязаны от флапающего `isConnected`) + AdServices weak-link (Tenjin ASA).
@@ -73,7 +117,7 @@
 | **1.7.7** | 2026-06-02 | ✅ **APPROVED / LIVE** | Approved 2026-06-03. Onboarding-лист включает HRV + reliability-fix live Coherence/stress/energy (не завязаны на `isConnected`) + AdServices weak-link (Tenjin ASA) |
 | **1.7.8** | 2026-06-03 | ✅ **APPROVED / LIVE** | Approved 2026-06-04. Из ветки `workout-lifecycle-battery`. Workout-session lifecycle fix (foreground∨практика, иначе стоп+discard → батарея/Apple Fitness) + watch «Paused» + home waveform tap-to-emphasise |
 | **1.7.9** | 2026-06-04 | ✅ **APPROVED / LIVE** | Approved 2026-06-05. (1) Откат фон-аудио эксперимента + foreground-resume практического аудио. (2) Watch dead-man's-switch: `HKWorkoutSession` сам завершается через ~45с тишины от телефона (force-quit больше не оставляет часы стримить вечно) |
-| **1.8.0** | 2026-06-05 | **open / готовится** | Версия поднята (фич пока нет). В main CI-фикс fastlane (`multi_json`). Копим следующие правки сюда |
+| **1.8.0** | 2026-06-05 | **open / готовится** | **Камера-пульс (fingertip PPG)** во всех практиках + честные метрики (стресс/энергия не покидают устройство) + онбординг-полиш + privacy (§1.6, usage-strings, App Privacy ±). CI-фикс fastlane (`multi_json`). Детали — секция 1.8.0 |
 
 ---
 
