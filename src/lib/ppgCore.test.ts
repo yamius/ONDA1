@@ -153,10 +153,12 @@ describe('ppgCore — contact gate, smoothing', () => {
     expect(isGoodContact({ rMean: 180, gMean: 40, bMean: 30, clipFrac: 0.01 })).toBe(true);
     // DARK-skin finger: low absolute brightness but red still dominates — MUST pass (inclusivity)
     expect(isGoodContact({ rMean: 70, gMean: 18, bMean: 14, clipFrac: 0 })).toBe(true);
+    // torch-lit finger with NORMAL partial clipping → still accepted
+    expect(isGoodContact({ rMean: 230, gMean: 60, bMean: 50, clipFrac: 0.3 })).toBe(true);
     // bright balanced scene (no finger): not red-dominant → reject
     expect(isGoodContact({ rMean: 200, gMean: 200, bMean: 200, clipFrac: 0.2 })).toBe(false);
-    // fully clipped (too much pressure/light): no AC pulse left → reject
-    expect(isGoodContact({ rMean: 255, gMean: 120, bMean: 110, clipFrac: 0.6 })).toBe(false);
+    // near-total white-out (no AC pulse left) → reject
+    expect(isGoodContact({ rMean: 255, gMean: 120, bMean: 110, clipFrac: 0.9 })).toBe(false);
   });
 
   it('adaptiveSmooth caps artifact jumps and seeds from zero', () => {

@@ -45,6 +45,8 @@ export interface CameraPpgState {
   torchOn: boolean;
   status: CameraPpgStatus;
   error: string | null;
+  /** Latest frame stats for the env-gated debug readout (updated ~1 Hz). */
+  debug: { r: number; clip: number; redness: number };
 }
 
 const IDLE: CameraPpgState = {
@@ -54,6 +56,7 @@ const IDLE: CameraPpgState = {
   torchOn: false,
   status: 'idle',
   error: null,
+  debug: { r: 0, clip: 0, redness: 0 },
 };
 
 // Keep a little more than the analysis window so estimateHr always has a full window.
@@ -80,6 +83,8 @@ export function useCameraPpg() {
   const runningRef = useRef(false);
   const fingerFramesRef = useRef(0);
   const noFingerFramesRef = useRef(0);
+  const lastFrameStatsRef = useRef({ r: 0, clip: 0, redness: 0 });
+  const lastCommitAtRef = useRef(0);
 
   const patch = useCallback((p: Partial<CameraPpgState>) => {
     setState((s) => ({ ...s, ...p }));
@@ -154,6 +159,11 @@ export function useCameraPpg() {
     const gMean = g / n;
     const bMean = b / n;
     const clipFrac = clipped / n;
+    lastFrameStatsRef.current = {
+      r: Math.round(rMean),
+      clip: clipFrac,
+      redness: rMean / (rMean + gMean + bMean + 1e-6),
+    };
 
     const fingerNow = isGoodContact({ rMean, gMean, bMean, clipFrac });
     // debounce finger on/off so a single dropped frame doesn't flap the UI
@@ -185,17 +195,30 @@ export function useCameraPpg() {
   // 1 Hz: ask ppgCore for a committed bpm (or null).
   const runEstimate = useCallback(() => {
     const est = estimateHr(bufferRef.current);
+    const now = performance.now();
     if (est.bpm != null) {
+      lastCommitAtRef.current = now;
       smoothedBpmRef.current = adaptiveSmooth(smoothedBpmRef.current, est.bpm, est.confidence);
       const bpm = Math.round(smoothedBpmRef.current);
-      setState((s) => ({ ...s, bpm, confidence: est.confidence, status: 'reading' }));
+      setState((s) => ({ ...s, bpm, confidence: est.confidence, status: 'reading', debug: lastFrameStatsRef.current }));
       // Feed the shared pulse buffer so useVitals derives breathing from camera
       // HR (same path as the watch); set the camera HR useVitals reads as `hr`.
       heartRateStore.setCameraHr(bpm);
       heartRateStore.addDataPoint(Date.now() / 1000, bpm);
+      return;
+    }
+    // No commit this tick. BLANK ("don't bluff") when the finger is clearly off
+    // OR we've had no good reading for a few seconds — never keep showing a
+    // stale pulse after the finger is lifted. A brief dropout while the finger
+    // is still on holds the last value and stays "reading".
+    const fingerOff = noFingerFramesRef.current >= 15;
+    const staleMs = now - lastCommitAtRef.current;
+    if (fingerOff || staleMs > 3500) {
+      smoothedBpmRef.current = 0;
+      heartRateStore.setCameraHr(null);
+      setState((s) => ({ ...s, bpm: null, confidence: est.confidence, status: 'searching', debug: lastFrameStatsRef.current }));
     } else {
-      // hold the last good bpm briefly via smoothedBpmRef; surface "searching"
-      setState((s) => ({ ...s, confidence: est.confidence, status: s.status === 'reading' ? 'reading' : 'searching' }));
+      setState((s) => ({ ...s, confidence: est.confidence, debug: lastFrameStatsRef.current }));
     }
   }, []);
 

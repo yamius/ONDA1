@@ -334,8 +334,13 @@ export function isGoodContact(s: FrameStats): boolean {
   const sum = s.rMean + s.gMean + s.bMean + 1e-6;
   const redness = s.rMean / sum; // finger over the torch ⇒ red dominates the transmitted light
   const redDominant = s.rMean > s.gMean * 1.3;
-  const notSaturated = s.clipFrac < 0.05; // fully clipped red has no AC pulse left to read
-  return redness > 0.5 && redDominant && notSaturated;
+  // A torch-lit fingertip is BRIGHT — partial red clipping is NORMAL and the AC
+  // pulse still rides in the spatial mean of the un-clipped pixels. Only reject
+  // a near-total white-out (no AC possible); the estimator handles the rest.
+  // (A 5% threshold here wrongly rejected every torch+finger frame → stuck
+  // "searching".) The redness check already rejects a bright balanced scene.
+  const notBlownOut = s.clipFrac < 0.8;
+  return redness > 0.5 && redDominant && notBlownOut;
 }
 
 // ── SQI-adaptive smoothing (keeps RSA visible) ──────────────────────────────

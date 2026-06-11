@@ -209,6 +209,8 @@
     "denied": "摄像头不可用 — 继续而不使用。",
     "place_finger": "把指尖放在后置摄像头上",
     "source_label": "摄像头 · 快速",
+    "live": "实时 — 你的脉搏在回应",
+    "reading": "已检测到手指 — 保持稳定，正在读取脉搏…",
     "no_torch": "无法打开闪光灯 — 请在光线良好处尝试。",
     "coherence_locked": "连接 Apple Watch 解锁一致性。"
   },

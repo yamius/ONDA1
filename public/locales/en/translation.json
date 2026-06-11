@@ -221,6 +221,8 @@
     "denied": "Camera unavailable — continuing without it.",
     "place_finger": "Rest a fingertip on the rear camera",
     "source_label": "Camera · quick",
+    "live": "Live — your pulse is responding",
+    "reading": "Got your finger — hold still, reading your pulse…",
     "no_torch": "Couldn't turn on the flash — try in good light.",
     "coherence_locked": "Coherence unlocks with an Apple Watch."
   },

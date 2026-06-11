@@ -38,6 +38,12 @@ interface MetricsWaveformProps {
    *  two dim. Driven by tapping the matching biometric card on the home
    *  screen. `null` → all three lines render normally. */
   highlight?: 'hr' | 'stress' | 'energy' | null;
+  /** Light EMA on the HR line to ease the 1 Hz integer-bpm steps into a calm
+   *  line (used for the rougher camera source). Keeps the slow RSA swing. */
+  smoothHr?: boolean;
+  /** Tone of the single hrOnly wave: rose for the camera PULSE wave, GOLD for
+   *  COHERENCE (default). Keeps pulse vs coherence visually distinct + premium. */
+  pulseTone?: boolean;
 }
 
 const WINDOW_SECONDS = 60;
@@ -96,6 +102,8 @@ export function MetricsWaveform({
   heightPx,
   hrOnly = false,
   highlight = null,
+  smoothHr = false,
+  pulseTone = false,
 }: MetricsWaveformProps) {
   // When a line is highlighted, thicken it and dim the other two.
   const lineW = (metric: 'hr' | 'stress' | 'energy', base: number) =>
@@ -213,15 +221,22 @@ export function MetricsWaveform({
     min: number,
     max: number,
   ): string => {
-    const pts: Array<[number, number]> = [];
+    // Split into separate sub-paths at gaps (null runs) so a dropout BREAKS the
+    // line instead of being bridged by one long diagonal back to the next point.
+    let d = '';
+    let seg: Array<[number, number]> = [];
+    const flush = () => {
+      if (seg.length) { d += (d ? ' ' : '') + smoothPath(seg); seg = []; }
+    };
     for (let i = 0; i < samples.length; i++) {
       const nv = norm(extract(samples[i]), min, max);
-      if (nv == null) continue;
+      if (nv == null) { flush(); continue; }
       const x = PAD + (i / (samples.length - 1)) * (W - PAD * 2);
       const y = H - PAD - nv * (H - PAD * 2);
-      pts.push([x, y]);
+      seg.push([x, y]);
     }
-    return smoothPath(pts);
+    flush();
+    return d;
   };
 
   // Delta-режим: значения отображаются как отклонение от mean по
@@ -233,17 +248,24 @@ export function MetricsWaveform({
     samples: Sample[],
     extract: (s: Sample) => number | null,
     minRange = 5,
+    smooth = false,
   ): string => {
-    const values: Array<number | null> = [];
+    const values: Array<number | null> = samples.map(extract);
+    // Optional light EMA (per contiguous run, resets on gaps) — eases the 1 Hz
+    // integer-bpm camera steps into a calm line without killing the slow RSA.
+    if (smooth) {
+      let e: number | null = null;
+      for (let i = 0; i < values.length; i++) {
+        const v = values[i];
+        if (v == null || Number.isNaN(v)) { e = null; continue; }
+        e = e == null ? v : e + 0.35 * (v - e);
+        values[i] = e;
+      }
+    }
     let sum = 0;
     let count = 0;
-    for (let i = 0; i < samples.length; i++) {
-      const v = extract(samples[i]);
-      values.push(v);
-      if (v != null && !Number.isNaN(v)) {
-        sum += v;
-        count++;
-      }
+    for (const v of values) {
+      if (v != null && !Number.isNaN(v)) { sum += v; count++; }
     }
     if (count === 0) return '';
     const mean = sum / count;
@@ -261,19 +283,26 @@ export function MetricsWaveform({
     // in the real delta — morphology preserved, only the span adapts.
     const range = Math.max(minRange, maxAbsDelta * 1.2);
 
-    const pts: Array<[number, number]> = [];
     const halfH = H / 2;
     const usableHalf = halfH - PAD;
+    // Break the line at gaps (null runs) — a dropout interrupts the trace
+    // cleanly instead of being bridged by a long diagonal to the next sample.
+    let d = '';
+    let seg: Array<[number, number]> = [];
+    const flush = () => {
+      if (seg.length) { d += (d ? ' ' : '') + smoothPath(seg); seg = []; }
+    };
     for (let i = 0; i < values.length; i++) {
       const v = values[i];
-      if (v == null || Number.isNaN(v)) continue;
+      if (v == null || Number.isNaN(v)) { flush(); continue; }
       const delta = v - mean;
       const clamped = Math.max(-1, Math.min(1, delta / range));
       const x = PAD + (i / (values.length - 1)) * (W - PAD * 2);
       const y = halfH - clamped * usableHalf;
-      pts.push([x, y]);
+      seg.push([x, y]);
     }
-    return smoothPath(pts);
+    flush();
+    return d;
   };
 
   // 2 длины волны на всю ширину, амплитуда ~28% высоты.
@@ -296,6 +325,11 @@ export function MetricsWaveform({
   const colorStress = isLight ? 'rgba(249,115,22,0.65)' : 'rgba(251,146,60,0.8)';
   const colorEnergy = isLight ? 'rgba(59,130,246,0.65)' : 'rgba(96,165,250,0.8)';
   const colorIdle = isLight ? 'rgba(99,102,241,0.35)' : 'rgba(199,210,254,0.45)';
+  // The single hrOnly wave reads GOLD for coherence (premium + distinct from the
+  // rose PULSE wave so a user never confuses the two); camera pulse stays rose.
+  const colorCoherence = isLight ? 'rgba(202,138,4,0.95)' : 'rgba(240,200,80,0.95)';
+  const hrLineColor = hrOnly ? (pulseTone ? colorHR : colorCoherence) : colorHR;
+  const hrGlow = pulseTone ? 'rgba(251,113,133,0.45)' : 'rgba(240,200,80,0.5)';
 
   return (
     <svg
@@ -308,7 +342,7 @@ export function MetricsWaveform({
         display: 'block',
         // Soft glow makes the HR line read as "alive" over the dark practice
         // backdrop. Cheap CSS filter, only on the coherence-hero variant.
-        filter: hrOnly ? 'drop-shadow(0 0 6px rgba(251,113,133,0.45))' : undefined,
+        filter: hrOnly ? `drop-shadow(0 0 6px ${hrGlow})` : undefined,
       }}
       aria-hidden="true"
     >
@@ -365,10 +399,10 @@ export function MetricsWaveform({
               scale so the bpm level reads alongside stress/energy. */}
           <path
             d={hrOnly
-              ? toDeltaPath(realtimeSlice, (s) => s.hr, 6)
+              ? toDeltaPath(realtimeSlice, (s) => s.hr, 6, smoothHr)
               : toPath(realtimeSlice, (s) => s.hr, HR_MIN, hrMax)}
             fill="none"
-            stroke={colorHR}
+            stroke={hrLineColor}
             strokeWidth={hrOnly ? 3.5 : lineW('hr', 2.5)}
             opacity={hrOnly ? 1 : lineOpacity('hr')}
             strokeLinecap="round"
