@@ -4456,7 +4456,10 @@ const OndaLevel1 = () => {
                 aware: watch → Coherence hero; no watch → camera offer / Pulse.
                 Coherence % is RSA peak-concentration from useVitals — NOT RMSSD
                 HRV (we never get beat-to-beat RR over WCSession). */}
-            {!isMinimalMode && (<div className="w-full max-w-md mb-4 sm:mb-5 px-3 sm:px-0">
+            {/* Kept MOUNTED across minimal mode (hidden via CSS, not unmounted)
+                so MetricsWaveform's rolling buffer survives — otherwise the pulse
+                line would redraw from scratch on return from the zen view. */}
+            <div className={`w-full max-w-md mb-4 sm:mb-5 px-3 sm:px-0 ${isMinimalMode ? 'hidden' : ''}`}>
               <CameraPulseWindow
                 hasWatch={watchHeartRate.heartRate != null}
                 displayHeartRate={displayHeartRate}
@@ -4467,7 +4470,7 @@ const OndaLevel1 = () => {
                 cameraOfferDismissed={cameraOfferDismissed}
                 onDismissOffer={() => setCameraOfferDismissed(true)}
               />
-            </div>)}
+            </div>
 
             {/* Progress bar (was labelled "Quality" — renamed because the bar
                 grows monotonically through the practice; a low % early on read

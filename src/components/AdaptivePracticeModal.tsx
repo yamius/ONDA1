@@ -1285,8 +1285,11 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
             {/* Live hero window — same position as the basic practice (right
                 under the timer). The SAME <CameraPulseWindow>, so no-watch users
                 get camera pulse here too. No watch → camera offer / live Pulse;
-                watch → Coherence hero. Coherence stays an honest Watch upgrade. */}
-            {!isMinimalMode && (<div className="w-full max-w-md mb-4 sm:mb-5 px-3 sm:px-0">
+                watch → Coherence hero. Coherence stays an honest Watch upgrade.
+                Kept MOUNTED across minimal mode (hidden via CSS, not unmounted)
+                so MetricsWaveform's rolling buffer survives — otherwise the pulse
+                line would redraw from scratch on return from the zen view. */}
+            <div className={`w-full max-w-md mb-4 sm:mb-5 px-3 sm:px-0 ${isMinimalMode ? 'hidden' : ''}`}>
               <CameraPulseWindow
                 hasWatch={vitalsData.watchHR.hr != null}
                 displayHeartRate={vitalsData.hr}
@@ -1297,7 +1300,7 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                 cameraOfferDismissed={cameraOfferDismissed}
                 onDismissOffer={() => setCameraOfferDismissed(true)}
               />
-            </div>)}
+            </div>
 
             {!isMinimalMode && (<div className="w-full max-w-md mb-4 sm:mb-6 px-3 sm:px-0">
               <div className="flex justify-between text-sm sm:text-base mb-2 sm:mb-3">
