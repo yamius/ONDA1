@@ -7,6 +7,7 @@
 ---
 
 ## 1.8.0 — 2026 (TBD)
+_App Store version: 1.2.0_
 
 **Headline:** Camera-based fingertip pulse (PPG) — live heart rate
 without an Apple Watch.
