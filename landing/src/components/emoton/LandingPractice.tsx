@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState, lazy, Suspense } from 'react';
 import { X, Play, Pause, Minimize2 } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { useCameraPpg } from '../../hooks/useCameraPpg';
 import { CameraPulseWindow } from '../CameraPulseWindow';
 import { RemoteAudioPlayer } from '../RemoteAudioPlayer';
 import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from '../../constants/practiceAssets';
+import { appStoreUrl } from '../../config/appStore';
 import type { AdaptivePractice } from '../../data/adaptivePractices';
 
 /**
@@ -29,6 +31,7 @@ interface LandingPracticeProps {
 const fmt = (s: number) => `${Math.floor(s / 60)}:${(s % 60).toString().padStart(2, '0')}`;
 
 export function LandingPractice({ practice, onDone }: LandingPracticeProps) {
+  const { t } = useTranslation('emoton');
   const cam = useCameraPpg();
   const [state, setState] = useState<PracticeState>('intro');
   const [isPaused, setIsPaused] = useState(false);
@@ -206,7 +209,7 @@ export function LandingPractice({ practice, onDone }: LandingPracticeProps) {
                 tap it to restore). */}
             {practice.guidingTexts.length > 0 && (
               <div
-                className={`w-full max-w-md px-3 sm:px-0 ${isMinimal ? '' : 'mb-6 sm:mb-8'}`}
+                className={`w-full max-w-md px-3 sm:px-0 ${isMinimal ? 'fixed inset-x-0 bottom-10 z-20 mx-auto sm:bottom-14' : 'mb-6 sm:mb-8'}`}
                 onClick={isMinimal ? () => setIsMinimal(false) : undefined}
               >
                 <div className={`flex flex-col items-center justify-center overflow-hidden rounded-2xl border backdrop-blur-2xl transition-all duration-300 ${isMinimal ? 'h-28 cursor-pointer border-white/30 bg-white/10 p-4 hover:bg-white/20 active:scale-95 sm:h-32 sm:p-6' : 'h-[78px] border-white/15 bg-white/5 px-4 sm:h-[88px] sm:px-6'}`}>
@@ -244,6 +247,19 @@ export function LandingPractice({ practice, onDone }: LandingPracticeProps) {
                 <p className="whitespace-pre-line text-base italic leading-relaxed text-white/90 sm:text-lg">{practice.finalPhrase}</p>
               </div>
             )}
+
+            {/* Post-practice app CTA — the highest-intent click ("your body
+                answered"). Routes straight to the App Store with the Apple
+                campaign token `emoton_post_practice` (same mechanism as the tool
+                pages). An apps.apple.com href, so the site-wide delegated
+                listener also fires a Reddit Lead. See download-tracking brief. */}
+            <a
+              href={appStoreUrl('emoton_post_practice')}
+              className="mx-auto mb-6 block max-w-md rounded-2xl border border-emerald-400/40 bg-emerald-500/15 px-5 py-4 text-sm font-semibold leading-snug text-emerald-50 backdrop-blur-2xl transition-all hover:scale-[1.02] hover:bg-emerald-500/25"
+            >
+              {t('upgrade_link')}
+            </a>
+
             <div className="flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
               <button onClick={tryAgain} className="rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold backdrop-blur-xl transition-all hover:bg-white/20 sm:px-8 sm:py-4 sm:text-base">
                 Again

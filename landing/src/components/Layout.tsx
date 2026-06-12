@@ -4,6 +4,7 @@ import { AndroidWaitlist } from './AndroidWaitlist'
 import { useTranslation } from 'react-i18next'
 import { TransitionLink } from './TransitionLink'
 import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, langHref, type Lang } from '../i18n'
+import { appStoreUrl } from '../config/appStore'
 
 export function Layout() {
   const location = useLocation()
@@ -13,6 +14,16 @@ export function Layout() {
 
   // Derive language from URL — single source of truth.
   const currentLang: Lang = useMemo(() => langFromPath(location.pathname), [location.pathname])
+
+  // Page-aware nav "Download". Everywhere it scrolls to the homepage #download
+  // section, BUT on /emoton (any locale) it goes straight to the App Store with
+  // the Apple campaign token `emoton_nav`, so Emoton installs are attributed to
+  // the page (and the placement) instead of looking homepage-sourced. The
+  // post-practice CTA carries its own token. See download-tracking brief.
+  const onEmoton = location.pathname.replace(/\/+$/, '').endsWith('/emoton')
+  const downloadHref = onEmoton
+    ? appStoreUrl('emoton_nav')
+    : `${homePathFor(currentLang)}#download`.replace('//', '/')
 
   // Keep i18n + <html lang> in sync with the URL on every navigation
   useLayoutEffect(() => {
@@ -245,7 +256,7 @@ export function Layout() {
             {t('menu.emoton', { defaultValue: 'Emoton' })}
           </TransitionLink>
           <a
-            href={`${homePathFor(currentLang)}#download`.replace('//', '/')}
+            href={downloadHref}
             onClick={() => setMenuOpen(false)}
             className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
           >
@@ -326,7 +337,7 @@ export function Layout() {
               <Link to={langHref('/emoton', currentLang)} className="text-xs text-green-400/70 transition-colors hover:text-green-400">
                 {t('menu.emoton', { defaultValue: 'Emoton' })}
               </Link>
-              <a href={`${homePathFor(currentLang)}#download`.replace('//', '/')} className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <a href={downloadHref} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.download')}
               </a>
               <Link to={langHref('/contact', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
