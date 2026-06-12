@@ -92,7 +92,7 @@ export function EmotonPage() {
   const shadeLabel = shade ? t(`shade.${shade}`) : '';
 
   return (
-    <div className="relative mx-auto flex min-h-[80vh] max-w-md flex-col items-center px-5 pb-10 pt-3 text-white">
+    <div className="relative mx-auto flex min-h-[80vh] max-w-md flex-col items-center px-5 pb-10 pt-0 text-white">
       <style>{`
         @keyframes emoton-swell { 0% { transform: scale(0.7); opacity:.7 } 50% { transform: scale(1.06); opacity:1 } 100% { transform: scale(0.74); opacity:.8 } }
         @keyframes emoton-rise  { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
@@ -106,7 +106,7 @@ export function EmotonPage() {
               "коснись своего Я"). Top-anchored with a margin that lands the orb at
               the SAME centre as the wheel orb (prompt + wheel half) — no jump on
               presence → wheel. The title/description float below it absolutely. */}
-          <div className="relative mt-[140px]">
+          <div className="relative mt-[132px]">
             <button
               onClick={() => setStep('wheel')}
               aria-label={t('presence.cta')}
@@ -125,7 +125,7 @@ export function EmotonPage() {
 
       {/* ── 2. Wheel → zone → shade ─────────────────────────────────────── */}
       {step === 'wheel' && (
-        <div className="flex w-full flex-1 flex-col items-center justify-start pt-2">
+        <div className="flex w-full flex-1 flex-col items-center justify-start">
           {/* Top-anchored: the prompt sits just under the header, the wheel hangs
               below it. The presence orb is given a matching top margin so its
               centre lines up with this wheel's centre orb — no jump. The shade
