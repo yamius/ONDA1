@@ -102,7 +102,13 @@ app.use(
           'https://pixel-config.reddit.com',
           'https://www.facebook.com',
           'https://connect.facebook.net',
+          // Emoton: fetch adaptive-practice audio + HDR backdrops from the
+          // public Supabase Storage buckets (audio-practices, hdr).
+          'https://*.supabase.co',
         ],
+        // Emoton: the practice audio plays from a blob: URL (downloaded and
+        // cached by useAudioCache); allow blob media + the Supabase host.
+        'media-src': ["'self'", 'blob:', 'https://*.supabase.co'],
         'frame-src': [
           'https://www.googletagmanager.com',
           'https://www.youtube.com',
