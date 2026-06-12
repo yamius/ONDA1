@@ -207,21 +207,23 @@ export function EmotonPage() {
 
       {/* ── 3. Own it + name the want ───────────────────────────────────── */}
       {step === 'own' && zone && shade && (
-        <div className="flex w-full flex-1 flex-col items-center justify-center text-center">
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('own.meta')}</p>
-          {/* Relational frame "я и оно": Я (the reused orb — constant anchor) and
-              the feeling as a SEPARATE entity beside it — together, not merged.
-              Neutral geometry (same size + distance for all six); only the
-              shape's quality changes by cluster. */}
-          <div className="mt-5 flex items-center justify-center gap-7">
-            <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent text-xl font-light tracking-wide text-white/90" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
+        <div className="flex w-full flex-1 flex-col items-center justify-start text-center">
+          {/* Я orb — SAME size + place as presence/wheel (the constant anchor:
+              176px, centred, same top margin). The feeling is a SEPARATE entity
+              beside it, positioned absolutely so the orb itself never moves —
+              "я и оно", together but not merged. Copy + wants flow below. */}
+          <div className="relative mt-[132px]">
+            <div className="flex h-44 w-44 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent text-3xl font-light tracking-wide text-white/90" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
               {t('be_with.self_label')}
             </div>
-            <FeelingShape zone={zone} size={76} />
+            <div className="absolute left-full top-1/2 ml-3 -translate-y-1/2">
+              <FeelingShape zone={zone} size={56} />
+            </div>
           </div>
-          <h2 className="mt-5 text-2xl font-semibold">{t('own.title', { shade: shadeLabel })}</h2>
+          <p className="mt-7 font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('own.meta')}</p>
+          <h2 className="mt-2 text-2xl font-semibold">{t('own.title', { shade: shadeLabel })}</h2>
           <p className="mt-2 text-sm text-white/55">{t('own.description')}</p>
-          <div className="mt-6 w-full space-y-2">
+          <div className="mt-5 w-full space-y-2">
             {wantsForZone(zone).map((w) => (
               <button
                 key={w.id}
