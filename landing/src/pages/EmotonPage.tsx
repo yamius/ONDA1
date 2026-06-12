@@ -14,6 +14,7 @@ import {
   type RoutedBranch,
 } from '../lib/emotonCore';
 import { LandingPractice } from '../components/emoton/LandingPractice';
+import { FeelingShape } from '../components/emoton/FeelingShape';
 import { ADAPTIVE_PRACTICES } from '../data/adaptivePractices';
 
 /**
@@ -114,6 +115,13 @@ export function EmotonPage() {
         @keyframes emoton-swell { 0% { transform: scale(0.7); opacity:.7 } 50% { transform: scale(1.06); opacity:1 } 100% { transform: scale(0.74); opacity:.8 } }
         @keyframes emoton-rise  { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
         @keyframes emoton-breathe { 0%,100% { transform: scale(1); opacity:.9 } 50% { transform: scale(1.06); opacity:1 } }
+        /* Feeling-shape movement primitives — same blob, different autonomic quality. */
+        @keyframes emoton-fs-breathe { 0%,100% { transform: scale(1) } 50% { transform: scale(1.09) } }
+        @keyframes emoton-fs-shimmer { 0%,100% { transform: scale(1); opacity:.82 } 50% { transform: scale(1.13); opacity:1 } }
+        @keyframes emoton-fs-press   { 0%,100% { transform: scale(1) } 50% { transform: scale(0.88) } }
+        @keyframes emoton-fs-tremor  { 0% { transform: translate(0,0) } 20% { transform: translate(-1.5px,1px) } 40% { transform: translate(1.5px,-1px) } 60% { transform: translate(-1px,-1.5px) } 80% { transform: translate(1px,1.5px) } 100% { transform: translate(0,0) } }
+        @keyframes emoton-fs-settle  { 0%,100% { transform: translateY(-3px) scale(1) } 50% { transform: translateY(4px) scale(0.96) } }
+        @keyframes emoton-fs-fade    { 0%,100% { opacity:.5 } 50% { opacity:.28 } }
       `}</style>
 
       {/* ── 1. Presence (Я) ─────────────────────────────────────────────── */}
@@ -201,7 +209,17 @@ export function EmotonPage() {
       {step === 'own' && zone && shade && (
         <div className="flex w-full flex-1 flex-col items-center justify-center text-center">
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('own.meta')}</p>
-          <h2 className="mt-2 text-2xl font-semibold">{t('own.title', { shade: shadeLabel })}</h2>
+          {/* Relational frame "я и оно": Я (the reused orb — constant anchor) and
+              the feeling as a SEPARATE entity beside it — together, not merged.
+              Neutral geometry (same size + distance for all six); only the
+              shape's quality changes by cluster. */}
+          <div className="mt-5 flex items-center justify-center gap-7">
+            <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent text-xl font-light tracking-wide text-white/90" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
+              {t('be_with.self_label')}
+            </div>
+            <FeelingShape zone={zone} size={76} />
+          </div>
+          <h2 className="mt-5 text-2xl font-semibold">{t('own.title', { shade: shadeLabel })}</h2>
           <p className="mt-2 text-sm text-white/55">{t('own.description')}</p>
           <div className="mt-6 w-full space-y-2">
             {wantsForZone(zone).map((w) => (
