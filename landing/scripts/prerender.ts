@@ -484,6 +484,13 @@ const sharedRoot = sharedDoc.getElementById('root')
 let done = 0
 let failed = 0
 const HEARTBEAT_EVERY = 100
+// GC cadence — decoupled from the (rarer) heartbeat log. Each route churns a
+// React tree + a fresh JSDOM node graph (innerHTML reassign) + two big HTML
+// strings; left uncollected, 100 routes' worth piles up between heartbeats and
+// balloons peak heap → OOM on small CI/Replit build containers. A major GC
+// every ~12 routes keeps the baseline low for ~2s total. No-op without
+// --expose-gc (the build script sets it).
+const GC_EVERY = 12
 for (const route of routes) {
   try {
     const isLocalized = LOCALIZED_ROUTE_SET.has(route)
@@ -807,11 +814,10 @@ for (const route of routes) {
     done++
     if (done % HEARTBEAT_EVERY === 0) {
       console.log(`[prerender] ... ${done}/${routes.length}`)
-      // Suggest a major GC pass at every heartbeat. Requires the build
-      // to start Node with --expose-gc (set by the `build` npm script).
-      // Without --expose-gc, global.gc is undefined and this is a no-op.
-      if (typeof global.gc === 'function') global.gc()
     }
+    // Major GC every GC_EVERY routes to cap peak heap (see GC_EVERY above).
+    // Requires --expose-gc (set by the `build` npm script); else a no-op.
+    if (done % GC_EVERY === 0 && typeof global.gc === 'function') global.gc()
   } catch (err) {
     failed++
     console.error('[prerender] FAIL', route, '—', (err as Error).message)
