@@ -102,19 +102,23 @@ export function EmotonPage() {
       {/* ── 1. Presence (Я) ─────────────────────────────────────────────── */}
       {step === 'presence' && (
         <div className="flex flex-1 flex-col items-center justify-center text-center">
-          {/* The orb is the vertical pivot (justify-center centres just the orb;
-              the copy sits below it absolutely) so it lands at the SAME centre as
-              the wheel orb — no jump on presence → wheel. */}
+          {/* The orb is the vertical pivot AND the tap target — touch it to begin
+              (the copy below invites "коснись своего Я"). justify-center centres
+              just the orb; the title/description float below it absolutely, so it
+              lands at the SAME centre as the wheel orb — no jump on presence →
+              wheel. No separate CTA button. */}
           <div className="relative">
-            <div className="flex h-44 w-44 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
+            <button
+              onClick={() => setStep('wheel')}
+              aria-label={t('presence.cta')}
+              className="flex h-44 w-44 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent transition-shadow hover:border-cyan-300/50 hover:shadow-[0_0_45px_rgba(34,211,238,0.3)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/50"
+              style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}
+            >
               <span className="text-3xl font-light tracking-wide text-white/90">{t('be_with.self_label')}</span>
-            </div>
+            </button>
             <div className="absolute left-1/2 top-full w-[80vw] max-w-xs -translate-x-1/2 text-center">
               <h1 className="mt-8 text-2xl font-semibold">{t('presence.title')}</h1>
               <p className="mt-2 text-sm leading-relaxed text-white/60">{t('presence.description')}</p>
-              <button onClick={() => setStep('wheel')} className="mt-8 rounded-full bg-cyan-500/20 px-8 py-3 text-sm font-semibold text-cyan-200 transition-colors hover:bg-cyan-500/30">
-                {t('presence.cta')}
-              </button>
             </div>
           </div>
         </div>
