@@ -204,13 +204,6 @@ export function Layout() {
             {t('menu.tools', { defaultValue: 'Tools' })}
           </TransitionLink>
           <TransitionLink
-            to={langHref('/emoton', currentLang)}
-            onClick={() => setMenuOpen(false)}
-            className="-mx-4 block border-b border-white/5 bg-gradient-to-r from-green-400/70 to-transparent px-4 py-3 text-sm font-bold text-white transition-opacity hover:opacity-80"
-          >
-            {t('menu.emoton', { defaultValue: 'Emoton' })}
-          </TransitionLink>
-          <TransitionLink
             to="/research"
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
@@ -219,14 +212,7 @@ export function Layout() {
           >
             {t('menu.research', { defaultValue: 'Research' })}
           </TransitionLink>
-          <a
-            href={`${homePathFor(currentLang)}#download`.replace('//', '/')}
-            onClick={() => setMenuOpen(false)}
-            className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
-          >
-            {t('menu.download')}
-          </a>
-          {/* Language picker — between Download and Bio OS */}
+          {/* Language picker */}
           <div
             role="group"
             aria-label={t('menu.languagesLabel')}
@@ -251,6 +237,20 @@ export function Layout() {
               )
             })}
           </div>
+          <TransitionLink
+            to={langHref('/emoton', currentLang)}
+            onClick={() => setMenuOpen(false)}
+            className="-mx-4 block border-b border-white/5 bg-gradient-to-r from-green-400/70 to-transparent px-4 py-3 text-sm font-bold text-white transition-opacity hover:opacity-80"
+          >
+            {t('menu.emoton', { defaultValue: 'Emoton' })}
+          </TransitionLink>
+          <a
+            href={`${homePathFor(currentLang)}#download`.replace('//', '/')}
+            onClick={() => setMenuOpen(false)}
+            className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
+          >
+            {t('menu.download')}
+          </a>
           <TransitionLink
             to={langHref('/contact', currentLang)}
             onClick={() => setMenuOpen(false)}
