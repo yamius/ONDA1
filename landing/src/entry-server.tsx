@@ -23,6 +23,7 @@ import { PrivacyPage } from './pages/PrivacyPage'
 import { TermsPage } from './pages/TermsPage'
 import { BioPage } from './pages/BioPage'
 import { BioMetricPage } from './pages/BioMetricPage'
+import { EmotonPage } from './pages/EmotonPage'
 import { TopicsPage } from './pages/TopicsPage'
 import { TopicPage } from './pages/TopicPage'
 import { ResearchPage } from './pages/ResearchPage'
@@ -151,6 +152,10 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/terms"          element={<TermsPage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`terms-${l}`} path={`/${l}/terms`} element={<TermsPage />} />
+          ))}
+          <Route path="/emoton"         element={<EmotonPage />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`emoton-${l}`} path={`/${l}/emoton`} element={<EmotonPage />} />
           ))}
           <Route path="/bio"            element={<BioPage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (

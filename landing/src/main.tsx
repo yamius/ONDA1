@@ -38,6 +38,7 @@ const PrivacyPage        = lazyNs('privacy', () => import('./pages/PrivacyPage')
 const TermsPage          = lazyNs('terms', () => import('./pages/TermsPage').then(m => ({ default: m.TermsPage })))
 const BioPage            = lazyNs('bio', () => import('./pages/BioPage').then(m => ({ default: m.BioPage })))
 const BioMetricPage      = lazyNs('bio-metric', () => import('./pages/BioMetricPage').then(m => ({ default: m.BioMetricPage })))
+const EmotonPage         = lazy(() => import('./pages/EmotonPage').then(m => ({ default: m.EmotonPage })))
 const TopicsPage         = lazy(() => import('./pages/TopicsPage').then(m => ({ default: m.TopicsPage })))
 const TopicPage          = lazy(() => import('./pages/TopicPage').then(m => ({ default: m.TopicPage })))
 const ArticlesSlugRouter = lazyNs(['articles', 'glossary'], () => import('./components/ArticlesSlugRouter'))
@@ -140,6 +141,10 @@ const app = (
             <Route path="/terms"          element={<TermsPage />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`terms-${l}`} path={`/${l}/terms`} element={<TermsPage />} />
+            ))}
+            <Route path="/emoton"         element={<EmotonPage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`emoton-${l}`} path={`/${l}/emoton`} element={<EmotonPage />} />
             ))}
             <Route path="/bio"            element={<BioPage />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
