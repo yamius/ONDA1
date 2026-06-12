@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useCameraPpg } from '../../hooks/useCameraPpg';
 import type { PracticeDirection } from '../../lib/emotonCore';
 
@@ -16,7 +17,7 @@ import type { PracticeDirection } from '../../lib/emotonCore';
 interface EmotonPracticeProps {
   /** Existing in-app practice id this maps to (for the upgrade continuation). */
   practiceId: string;
-  /** EN label of the practice / its felt intent. */
+  /** Localized label of the practice / its felt intent (resolved by the page). */
   title: string;
   intent: string;
   /** Regulation direction — keeps the web pacer honest to the brief's asymmetry:
@@ -28,15 +29,17 @@ interface EmotonPracticeProps {
 const MAX_TREND = 48;
 
 export function EmotonPractice({ practiceId, title, intent, direction, onDone }: EmotonPracticeProps) {
+  const { t } = useTranslation('emoton');
   const cam = useCameraPpg();
-  // Pacer is direction-aware: down/deepen = slow settle; gentle_up/channel = a
-  // brisker gentle rise (so freeze is never given a calming pacer — the brief's
-  // core asymmetry). The differentiated, audio-guided practice itself is in-app.
-  const up = direction === 'gentle_up' || direction === 'channel';
-  const cycleSec = up ? 7 : 12;
-  const cue = up ? 'rise' : 'breathe';
   const [offered, setOffered] = useState(true); // show the camera offer first
   const [usingCamera, setUsingCamera] = useState(false);
+
+  // Direction-aware pacer: down/deepen = slow settle; gentle_up/channel = a
+  // brisker gentle rise (so freeze is never given a calming pacer). The
+  // differentiated, audio-guided practice itself is in-app.
+  const up = direction === 'gentle_up' || direction === 'channel';
+  const cycleSec = up ? 7 : 12;
+  const cue = up ? t('practice.pacer_cue_rise') : t('practice.pacer_cue_breathe');
 
   // Pulse trend ring-buffer — the "responsive visual". Pushed only on a committed
   // reading; blanks when the engine isn't confident (no fabricated line).
@@ -44,9 +47,9 @@ export function EmotonPractice({ practiceId, title, intent, direction, onDone }:
   const [, force] = useState(0);
   useEffect(() => {
     if (cam.status === 'reading' && cam.bpm != null) {
-      const t = trendRef.current;
-      t.push(cam.bpm);
-      if (t.length > MAX_TREND) t.shift();
+      const tr = trendRef.current;
+      tr.push(cam.bpm);
+      if (tr.length > MAX_TREND) tr.shift();
       force((n) => n + 1);
     }
   }, [cam.status, cam.bpm]);
@@ -94,23 +97,19 @@ export function EmotonPractice({ practiceId, title, intent, direction, onDone }:
 
       {offered ? (
         <div className="mt-6 w-full max-w-sm rounded-2xl border border-white/10 bg-white/5 p-6">
-          <p className="text-sm text-white/80">See your pulse respond — live</p>
-          <p className="mt-1 text-xs leading-relaxed text-white/55">
-            Rest a fingertip over your camera — the rear camera on a phone, or the webcam
-            on a laptop — and watch your pulse move with the breath. It runs entirely on
-            your device. On a laptop, press gently and use bright light (there's no flash).
-          </p>
+          <p className="text-sm text-white/80">{t('practice.camera_offer_title')}</p>
+          <p className="mt-1 text-xs leading-relaxed text-white/55">{t('practice.camera_offer_description')}</p>
           <button
             onClick={startCamera}
             className="mt-4 w-full rounded-full bg-cyan-500/20 px-5 py-2.5 text-sm font-semibold text-cyan-200 transition-colors hover:bg-cyan-500/30"
           >
-            Use the camera
+            {t('practice.camera_use_cta')}
           </button>
           <button
             onClick={skipCamera}
             className="mt-2 w-full text-xs text-white/45 underline underline-offset-4 transition-colors hover:text-white/70"
           >
-            Continue without it
+            {t('practice.camera_skip')}
           </button>
         </div>
       ) : (
@@ -144,28 +143,28 @@ export function EmotonPractice({ practiceId, title, intent, direction, onDone }:
                 <span className={`h-2 w-2 rounded-full ${cam.status === 'reading' ? 'bg-rose-400' : cam.fingerOn ? 'bg-amber-300' : 'bg-white/40'}`} style={cam.status === 'reading' ? { animation: 'emoton-glow 1.2s ease-in-out infinite' } : undefined} />
                 <span className="text-white/70">
                   {cam.status === 'reading'
-                    ? 'Live — your pulse is responding'
+                    ? t('practice.camera_status_reading')
                     : cam.status === 'requesting'
-                      ? 'Opening camera…'
+                      ? t('practice.camera_status_requesting')
                       : cam.status === 'denied' || cam.status === 'error'
-                        ? 'Camera unavailable — follow the breath instead.'
+                        ? t('practice.camera_status_denied')
                         : cam.fingerOn
-                          ? 'Got your finger — hold still…'
-                          : 'Rest a fingertip over the camera lens'}
+                          ? t('practice.camera_status_finger_on')
+                          : t('practice.camera_status_waiting')}
                 </span>
               </div>
               {/* Pulse number is SECONDARY and blanks when not confident — never bluffs. */}
               <div className="mt-1 font-mono text-sm text-white/60">
                 {cam.status === 'reading' && cam.bpm != null ? (
-                  <span>{cam.bpm}<span className="text-white/40"> bpm</span></span>
+                  <span>{cam.bpm}<span className="text-white/40"> {t('practice.camera_bpm_label')}</span></span>
                 ) : (
-                  <span className="text-white/30">— bpm</span>
+                  <span className="text-white/30">{t('practice.camera_bpm_no_reading')}</span>
                 )}
               </div>
               {!cam.torchOn && (cam.status === 'searching' || cam.status === 'reading') && (
-                <p className="mt-1 text-[11px] text-amber-300/70">No flash on this device — press a fingertip firmly over the lens, in bright light.</p>
+                <p className="mt-1 text-[11px] text-amber-300/70">{t('practice.camera_no_flash_note')}</p>
               )}
-              <p className="mt-1 text-[11px] text-white/35">Pulse only — coherence unlocks with an Apple Watch.</p>
+              <p className="mt-1 text-[11px] text-white/35">{t('practice.camera_coherence_note')}</p>
             </div>
           )}
 
@@ -173,7 +172,7 @@ export function EmotonPractice({ practiceId, title, intent, direction, onDone }:
             onClick={finish}
             className="mt-8 rounded-full bg-emerald-500/20 px-8 py-3 text-sm font-semibold text-emerald-200 transition-colors hover:bg-emerald-500/30"
           >
-            Done
+            {t('practice.done_cta')}
           </button>
 
           {/* Upgrade hook — the download is the precision/coherence/journey upgrade,
@@ -183,7 +182,7 @@ export function EmotonPractice({ practiceId, title, intent, direction, onDone }:
             className="mt-3 text-xs text-white/45 underline underline-offset-4 transition-colors hover:text-white/70"
             data-practice={practiceId}
           >
-            In the app with Apple Watch: precise pulse + coherence + the full journey
+            {t('practice.upgrade_link')}
           </a>
         </>
       )}
