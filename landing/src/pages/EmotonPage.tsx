@@ -92,7 +92,7 @@ export function EmotonPage() {
   const shadeLabel = shade ? t(`shade.${shade}`) : '';
 
   return (
-    <div className="mx-auto flex min-h-[80vh] max-w-md flex-col items-center px-5 py-10 text-white">
+    <div className="relative mx-auto flex min-h-[80vh] max-w-md flex-col items-center px-5 py-10 text-white">
       <style>{`
         @keyframes emoton-swell { 0% { transform: scale(0.7); opacity:.7 } 50% { transform: scale(1.06); opacity:1 } 100% { transform: scale(0.74); opacity:.8 } }
         @keyframes emoton-rise  { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
@@ -102,22 +102,33 @@ export function EmotonPage() {
       {/* ── 1. Presence (Я) ─────────────────────────────────────────────── */}
       {step === 'presence' && (
         <div className="flex flex-1 flex-col items-center justify-center text-center">
-          <div className="flex h-44 w-44 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
-            <span className="text-3xl font-light tracking-wide text-white/90">{t('be_with.self_label')}</span>
+          {/* The orb is the vertical pivot (justify-center centres just the orb;
+              the copy sits below it absolutely) so it lands at the SAME centre as
+              the wheel orb — no jump on presence → wheel. */}
+          <div className="relative">
+            <div className="flex h-44 w-44 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
+              <span className="text-3xl font-light tracking-wide text-white/90">{t('be_with.self_label')}</span>
+            </div>
+            <div className="absolute left-1/2 top-full w-[80vw] max-w-xs -translate-x-1/2 text-center">
+              <h1 className="mt-8 text-2xl font-semibold">{t('presence.title')}</h1>
+              <p className="mt-2 text-sm leading-relaxed text-white/60">{t('presence.description')}</p>
+              <button onClick={() => setStep('wheel')} className="mt-8 rounded-full bg-cyan-500/20 px-8 py-3 text-sm font-semibold text-cyan-200 transition-colors hover:bg-cyan-500/30">
+                {t('presence.cta')}
+              </button>
+            </div>
           </div>
-          <h1 className="mt-8 text-2xl font-semibold">{t('presence.title')}</h1>
-          <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/60">{t('presence.description')}</p>
-          <button onClick={() => setStep('wheel')} className="mt-8 rounded-full bg-cyan-500/20 px-8 py-3 text-sm font-semibold text-cyan-200 transition-colors hover:bg-cyan-500/30">
-            {t('presence.cta')}
-          </button>
         </div>
       )}
 
       {/* ── 2. Wheel → zone → shade ─────────────────────────────────────── */}
       {step === 'wheel' && (
-        <div className="flex w-full flex-1 flex-col items-center">
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('wheel.prompt')}</p>
-          <div className="relative mt-6 h-[360px] w-[360px]">
+        <div className="flex w-full flex-1 flex-col items-center justify-center">
+          {/* Centre the 360px wheel so its centre orb lands at the SAME vertical
+              centre as the presence orb (no jump). The prompt floats above the
+              wheel and the shade picker below it — both absolute, so neither
+              shifts the orb. */}
+          <div className="relative h-[360px] w-[360px]">
+            <p className="absolute bottom-full left-1/2 mb-6 w-max -translate-x-1/2 font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('wheel.prompt')}</p>
             {/* Center orb — identical to the presence orb (size + cyan gradient
                 + breathe) so the "Я" reads as the same orb carried across. */}
             <div className="absolute left-1/2 top-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent text-3xl font-light tracking-wide text-white/90" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
@@ -143,24 +154,23 @@ export function EmotonPage() {
                 </button>
               );
             })}
-          </div>
-
-          {z && (
-            <div className="mt-2 w-full text-center">
-              <p className="text-xs text-white/45">{t('wheel.shade_prompt')}</p>
-              <div className="mt-3 flex flex-wrap justify-center gap-2">
-                {z.shades.map((sh) => (
-                  <button
-                    key={sh}
-                    onClick={() => pickShade(sh)}
-                    className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/85 transition-colors hover:border-cyan-400/40 hover:bg-cyan-500/10"
-                  >
-                    {t(`shade.${sh}`)}
-                  </button>
-                ))}
+            {z && (
+              <div className="absolute left-1/2 top-full mt-3 w-[92vw] max-w-md -translate-x-1/2 text-center">
+                <p className="text-xs text-white/45">{t('wheel.shade_prompt')}</p>
+                <div className="mt-3 flex flex-wrap justify-center gap-2">
+                  {z.shades.map((sh) => (
+                    <button
+                      key={sh}
+                      onClick={() => pickShade(sh)}
+                      className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm text-white/85 transition-colors hover:border-cyan-400/40 hover:bg-cyan-500/10"
+                    >
+                      {t(`shade.${sh}`)}
+                    </button>
+                  ))}
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       )}
 
@@ -302,9 +312,11 @@ export function EmotonPage() {
         </div>
       )}
 
-      {/* persistent gentle restart for mid-flow steps */}
+      {/* Persistent gentle restart for mid-flow steps. Pinned absolutely to the
+          bottom so it never eats into the flex-1 centring area — otherwise it
+          would pull the wheel orb up and break the presence → wheel orb match. */}
       {step !== 'presence' && step !== 'release' && step !== 'support' && step !== 'assimilation' && (
-        <button onClick={restart} className="mt-6 font-mono text-[10px] uppercase tracking-widest text-white/30 hover:text-white/60">
+        <button onClick={restart} className="absolute bottom-5 left-1/2 -translate-x-1/2 font-mono text-[10px] uppercase tracking-widest text-white/30 hover:text-white/60">
           {t('start_over')}
         </button>
       )}
