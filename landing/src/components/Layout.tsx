@@ -25,6 +25,15 @@ export function Layout() {
     ? emotonCtaUrl('emoton_nav')
     : `${homePathFor(currentLang)}#download`.replace('//', '/')
 
+  // Tapping "Emoton" should always land on the START of the flow. Navigating
+  // from another page remounts EmotonPage fresh (begins at presence), but when
+  // already on /emoton the same-route click keeps the in-flow step — so fire an
+  // event EmotonPage listens for to reset itself. Also closes the mobile menu.
+  const goEmoton = () => {
+    setMenuOpen(false)
+    if (typeof window !== 'undefined') window.dispatchEvent(new Event('emoton:reset'))
+  }
+
   // Keep i18n + <html lang> in sync with the URL on every navigation
   useLayoutEffect(() => {
     if (i18n.language !== currentLang) {
@@ -250,7 +259,7 @@ export function Layout() {
           </div>
           <TransitionLink
             to={langHref('/emoton', currentLang)}
-            onClick={() => setMenuOpen(false)}
+            onClick={goEmoton}
             className="-mx-4 block border-b border-white/5 bg-gradient-to-r from-green-400/70 to-transparent px-4 py-3 text-sm font-bold text-white transition-opacity hover:opacity-80"
           >
             {t('menu.emoton', { defaultValue: 'Emoton' })}
@@ -284,7 +293,7 @@ export function Layout() {
             </TransitionLink>
             <TransitionLink
               to={langHref('/emoton', currentLang)}
-              onClick={() => setMenuOpen(false)}
+              onClick={goEmoton}
               className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-3 py-1.5 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:px-4 md:py-1.5 md:text-sm"
             >
               {t('menu.emoton', { defaultValue: 'Emoton' })}
@@ -334,7 +343,7 @@ export function Layout() {
               <Link to="/research" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.research', { defaultValue: 'Research' })}
               </Link>
-              <Link to={langHref('/emoton', currentLang)} className="text-xs text-green-400/70 transition-colors hover:text-green-400">
+              <Link to={langHref('/emoton', currentLang)} onClick={goEmoton} className="text-xs text-green-400/70 transition-colors hover:text-green-400">
                 {t('menu.emoton', { defaultValue: 'Emoton' })}
               </Link>
               <a href={downloadHref} className="text-xs text-white/40 transition-colors hover:text-white/60">

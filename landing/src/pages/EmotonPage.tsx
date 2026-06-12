@@ -62,6 +62,23 @@ export function EmotonPage() {
     setDescribePick(null);
   };
 
+  // Tapping the "Emoton" nav item while already on /emoton doesn't remount this
+  // page (same route), so the in-flow step would persist. The nav fires an
+  // `emoton:reset` event on click; reset the whole flow back to the start. (All
+  // setters are stable, so no deps are needed.)
+  useEffect(() => {
+    const onReset = () => {
+      setStep('presence');
+      setZone(null);
+      setShade(null);
+      setBranch(null);
+      setSelfFraction(0.5);
+      setDescribePick(null);
+    };
+    window.addEventListener('emoton:reset', onReset);
+    return () => window.removeEventListener('emoton:reset', onReset);
+  }, []);
+
   const pickShade = (shadeId: string) => {
     setShade(shadeId);
     // A hopelessness/meaninglessness shade routes straight to the gentle off-ramp.
