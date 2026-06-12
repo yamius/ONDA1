@@ -96,12 +96,13 @@ export function EmotonPage() {
       <style>{`
         @keyframes emoton-swell { 0% { transform: scale(0.7); opacity:.7 } 50% { transform: scale(1.06); opacity:1 } 100% { transform: scale(0.74); opacity:.8 } }
         @keyframes emoton-rise  { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
+        @keyframes emoton-breathe { 0%,100% { transform: scale(1); opacity:.9 } 50% { transform: scale(1.06); opacity:1 } }
       `}</style>
 
       {/* ── 1. Presence (Я) ─────────────────────────────────────────────── */}
       {step === 'presence' && (
         <div className="flex flex-1 flex-col items-center justify-center text-center">
-          <div className="flex h-40 w-40 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent" style={{ animation: 'emoton-rise 6s ease-in-out infinite' }}>
+          <div className="flex h-44 w-44 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
             <span className="text-3xl font-light tracking-wide text-white/90">{t('be_with.self_label')}</span>
           </div>
           <h1 className="mt-8 text-2xl font-semibold">{t('presence.title')}</h1>
