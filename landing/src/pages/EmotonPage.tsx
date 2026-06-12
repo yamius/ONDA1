@@ -117,14 +117,18 @@ export function EmotonPage() {
       {step === 'wheel' && (
         <div className="flex w-full flex-1 flex-col items-center">
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('wheel.prompt')}</p>
-          <div className="relative mt-6 h-[300px] w-[300px]">
-            <div className="absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-white/5 text-lg text-white/80">
+          <div className="relative mt-6 h-[360px] w-[360px]">
+            {/* Center orb — identical to the presence orb (size + cyan gradient
+                + breathe) so the "Я" reads as the same orb carried across. */}
+            <div className="absolute left-1/2 top-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent text-3xl font-light tracking-wide text-white/90" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
               {t('be_with.self_label')}
             </div>
             {ZONE_ORDER.map((zid, i) => {
               const angle = (-90 + i * 60) * (Math.PI / 180);
-              const left = 50 + 40 * Math.cos(angle);
-              const top = 50 + 40 * Math.sin(angle);
+              // 44% ring radius — pushes the zones clear of the larger (176px)
+              // centre orb while the 360px wheel still fits a 375px viewport.
+              const left = 50 + 44 * Math.cos(angle);
+              const top = 50 + 44 * Math.sin(angle);
               const active = zone === zid;
               return (
                 <button
