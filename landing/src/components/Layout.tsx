@@ -206,9 +206,7 @@ export function Layout() {
           <TransitionLink
             to={langHref('/emoton', currentLang)}
             onClick={() => setMenuOpen(false)}
-            className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
-              location.pathname.endsWith('/emoton') ? 'text-cyan-400' : 'text-white/70'
-            }`}
+            className="-mx-4 block border-b border-white/5 bg-gradient-to-r from-green-400/70 to-transparent px-4 py-3 text-sm font-bold text-white transition-opacity hover:opacity-80"
           >
             {t('menu.emoton', { defaultValue: 'Emoton' })}
           </TransitionLink>
