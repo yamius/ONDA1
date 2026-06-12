@@ -27,6 +27,22 @@ export function ToolsPage() {
         against the evidence, then track them automatically in ONDA Life.
       </p>
 
+      {/* Bio OS — the flagship live dashboard. It keeps its own URL (/bio) and
+          its own richer engine; here it's surfaced under the Tools group as a
+          featured entry (nav placement only — the path is unchanged). */}
+      <Link
+        to={`${langPrefix}/bio`}
+        className="mb-4 block rounded-xl border border-terminal-green/30 bg-terminal-green/5 p-5 transition-colors hover:border-terminal-green/50 hover:bg-terminal-green/10"
+      >
+        <div className="mb-1 flex items-center gap-3">
+          <span className="font-semibold text-white/90">Bio OS — live biometric dashboard</span>
+          <span className="rounded-md border border-terminal-green/30 bg-terminal-green/10 px-2 py-0.5 font-mono text-[10px] text-terminal-green/90">live · camera</span>
+        </div>
+        <p className="font-mono text-xs leading-relaxed text-white/50">
+          Camera-based pulse, breathing and nervous-system readout — your body, in real time, right in the browser.
+        </p>
+      </Link>
+
       <div className="grid grid-cols-1 gap-4">
         {TOOLS.map((t) => (
           <Link

@@ -254,13 +254,6 @@ export function Layout() {
             })}
           </div>
           <TransitionLink
-            to={localizedPathFor('/bio', currentLang)}
-            onClick={() => setMenuOpen(false)}
-            className="-mx-4 block border-b border-white/5 bg-gradient-to-r from-green-400/70 to-transparent px-4 py-3 text-sm font-bold text-white transition-opacity hover:opacity-80"
-          >
-            {t('menu.bio')}
-          </TransitionLink>
-          <TransitionLink
             to={langHref('/contact', currentLang)}
             onClick={() => setMenuOpen(false)}
             className={`block py-3 text-sm font-medium transition-colors hover:text-white ${
