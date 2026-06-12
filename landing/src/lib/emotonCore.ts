@@ -37,21 +37,21 @@ export const ZONES: Record<ZoneId, Zone> = {
   fight: {
     id: 'fight',
     window: 'over',
-    shades: ['anger', 'irritation', 'pressure', 'rage'],
+    shades: ['irritation', 'indignation', 'rage', 'hurt', 'guilt'],
     practiceId: 'body_cocoon', // DOWN-regulation (self-soothing, long exhale)
     practiceDirection: 'down',
   },
   flight: {
     id: 'flight',
     window: 'over',
-    shades: ['anxiety', 'fear', 'panic', 'overwhelm'],
+    shades: ['worry', 'tension', 'wariness', 'turmoil', 'panic'],
     practiceId: 'earth_pulse', // DOWN-regulation (grounding heart anchor)
     practiceDirection: 'down',
   },
   freeze: {
     id: 'freeze',
     window: 'under',
-    shades: ['emptiness', 'numbness', 'flatness', 'hopelessness'],
+    shades: ['detachment', 'numbness', 'apathy', 'indifference', 'shame'],
     // GENTLE UP (asymmetry — not calming). Reuses the closest up-leaning existing
     // practice (Inspiration/inner_spark); no bespoke energizing protocol exists.
     practiceId: 'inner_spark',
@@ -60,7 +60,7 @@ export const ZONES: Record<ZoneId, Zone> = {
   grief: {
     id: 'grief',
     window: 'low_present',
-    shades: ['sadness', 'grief', 'loneliness', 'longing'],
+    shades: ['sorrow', 'melancholy', 'loneliness', 'despondency', 'lostness'],
     // Default is the be-with visualization, not a breathing practice.
     practiceId: null,
     practiceDirection: null,
@@ -68,14 +68,14 @@ export const ZONES: Record<ZoneId, Zone> = {
   regulated: {
     id: 'regulated',
     window: 'within',
-    shades: ['calm', 'present', 'ok'],
+    shades: ['serenity', 'clarity', 'fullness', 'grounded', 'lightness'],
     practiceId: 'earth_breath', // deepen / maintain
     practiceDirection: 'deepen',
   },
   expansive: {
     id: 'expansive',
     window: 'within', // pleasant high arousal — within tolerance, not a problem
-    shades: ['joy', 'excitement', 'inspiration'],
+    shades: ['thrill', 'anticipation', 'warmth', 'aliveness', 'interest'],
     practiceId: 'light_inhale', // channel into action (gentle up-leaning)
     practiceDirection: 'channel',
   },
