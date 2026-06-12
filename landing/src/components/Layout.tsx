@@ -272,11 +272,11 @@ export function Layout() {
               <span className="text-green-400"> LIFE</span>
             </TransitionLink>
             <TransitionLink
-              to={localizedPathFor('/bio', currentLang)}
+              to={langHref('/emoton', currentLang)}
               onClick={() => setMenuOpen(false)}
               className="shrink-0 rounded-lg bg-gradient-to-r from-cyan-500 to-green-500 px-3 py-1.5 text-xs font-bold text-black transition-all hover:from-cyan-600 hover:to-green-600 md:px-4 md:py-1.5 md:text-sm"
             >
-              {t('menu.bio')}
+              {t('menu.emoton', { defaultValue: 'Emoton' })}
             </TransitionLink>
           </div>
         </header>
