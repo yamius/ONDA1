@@ -150,10 +150,13 @@ export function EmotonPage() {
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('wheel.prompt')}</p>
           <div className="relative mt-6 h-[360px] w-[360px]">
             {/* Center orb — identical to the presence orb (size + cyan gradient
-                + breathe) so the "Я" reads as the same orb carried across. */}
-            <div className="absolute left-1/2 top-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent text-3xl font-light tracking-wide text-white/90" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
+                + breathe). Tapping "Я" returns to centre: it clears the current
+                zone choice (and the shade picker), so you can re-feel the wheel. */}
+            <button
+              onClick={() => { setZone(null); setShade(null); }}
+              className="absolute left-1/2 top-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent text-3xl font-light tracking-wide text-white/90 transition-shadow hover:border-cyan-300/50 hover:shadow-[0_0_45px_rgba(34,211,238,0.3)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/50" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
               {t('be_with.self_label')}
-            </div>
+            </button>
             {ZONE_ORDER.map((zid, i) => {
               const angle = (-90 + i * 60) * (Math.PI / 180);
               // 44% ring radius — pushes the zones clear of the larger (176px)
