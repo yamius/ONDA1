@@ -300,6 +300,7 @@ export function Layout() {
               <span className="text-cyan-400">{'> ONDA'}</span>
               <span className="text-green-400"> LIFE</span>
             </Link>
+            {/* Mirrors the main-menu items + order (minus the language picker). */}
             <div className="flex flex-wrap justify-center gap-6">
               <Link to={localizedPathFor('/about', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.about')}<span className="sr-only">{t('menu.aboutSr')}</span>
@@ -310,23 +311,26 @@ export function Layout() {
               <Link to={langHref('/glossary', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.glossary')}<span className="sr-only">{t('menu.glossarySr')}</span>
               </Link>
-              <Link to={currentLang === 'en' ? '/articles' : `/${currentLang}/articles`} className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link to={langHref('/articles', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.articles')}<span className="sr-only">{t('menu.articlesSr')}</span>
               </Link>
               <Link to={langHref('/reviews', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.reviews')}<span className="sr-only">{t('menu.reviewsSr')}</span>
               </Link>
-              <Link to="/tools" className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <Link to={langHref('/tools', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.tools', { defaultValue: 'Tools' })}
               </Link>
-              <Link to={localizedPathFor('/bio', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
-                {t('menu.bio')}<span className="sr-only">{t('menu.bioSr')}</span>
-              </Link>
-              <Link to={currentLang === 'en' ? '/contact' : `/${currentLang}/contact`} className="text-xs text-white/40 transition-colors hover:text-white/60">
-                {t('menu.contacts')}<span className="sr-only">{t('menu.contactsSr')}</span>
-              </Link>
               <Link to="/research" className="text-xs text-white/40 transition-colors hover:text-white/60">
-                Research
+                {t('menu.research', { defaultValue: 'Research' })}
+              </Link>
+              <Link to={langHref('/emoton', currentLang)} className="text-xs text-green-400/70 transition-colors hover:text-green-400">
+                {t('menu.emoton', { defaultValue: 'Emoton' })}
+              </Link>
+              <a href={`${homePathFor(currentLang)}#download`.replace('//', '/')} className="text-xs text-white/40 transition-colors hover:text-white/60">
+                {t('menu.download')}
+              </a>
+              <Link to={langHref('/contact', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
+                {t('menu.contacts')}<span className="sr-only">{t('menu.contactsSr')}</span>
               </Link>
             </div>
             <p className="text-xs text-white/20">
