@@ -5,7 +5,7 @@ import { useCameraPpg } from '../../hooks/useCameraPpg';
 import { CameraPulseWindow } from '../CameraPulseWindow';
 import { RemoteAudioPlayer } from '../RemoteAudioPlayer';
 import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from '../../constants/practiceAssets';
-import { appStoreUrl } from '../../config/appStore';
+import { emotonCtaUrl } from '../../config/appStore';
 import type { AdaptivePractice } from '../../data/adaptivePractices';
 
 /**
@@ -249,12 +249,12 @@ export function LandingPractice({ practice, onDone }: LandingPracticeProps) {
             )}
 
             {/* Post-practice app CTA — the highest-intent click ("your body
-                answered"). Routes straight to the App Store with the Apple
-                campaign token `emoton_post_practice` (same mechanism as the tool
-                pages). An apps.apple.com href, so the site-wide delegated
-                listener also fires a Reddit Lead. See download-tracking brief. */}
+                answered"). Routes through the Emoton Tenjin click (source
+                emoton_web) → Apple ct `emoton_post_practice`, so one tap feeds
+                both Tenjin (install/revenue) and Apple Sources. See emotonCtaUrl
+                + the download-tracking brief. */}
             <a
-              href={appStoreUrl('emoton_post_practice')}
+              href={emotonCtaUrl('emoton_post_practice')}
               className="mx-auto mb-6 block max-w-md rounded-2xl border border-emerald-400/40 bg-emerald-500/15 px-5 py-4 text-sm font-semibold leading-snug text-emerald-50 backdrop-blur-2xl transition-all hover:scale-[1.02] hover:bg-emerald-500/25"
             >
               {t('upgrade_link')}

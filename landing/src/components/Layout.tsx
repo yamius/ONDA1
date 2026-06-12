@@ -4,7 +4,7 @@ import { AndroidWaitlist } from './AndroidWaitlist'
 import { useTranslation } from 'react-i18next'
 import { TransitionLink } from './TransitionLink'
 import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, langHref, type Lang } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
+import { emotonCtaUrl } from '../config/appStore'
 
 export function Layout() {
   const location = useLocation()
@@ -16,13 +16,13 @@ export function Layout() {
   const currentLang: Lang = useMemo(() => langFromPath(location.pathname), [location.pathname])
 
   // Page-aware nav "Download". Everywhere it scrolls to the homepage #download
-  // section, BUT on /emoton (any locale) it goes straight to the App Store with
-  // the Apple campaign token `emoton_nav`, so Emoton installs are attributed to
-  // the page (and the placement) instead of looking homepage-sourced. The
-  // post-practice CTA carries its own token. See download-tracking brief.
+  // section, BUT on /emoton (any locale) it routes through the Emoton Tenjin
+  // click → Apple ct `emoton_nav`, so the install is attributed to the page (and
+  // feeds Tenjin) instead of looking homepage-sourced. The post-practice CTA
+  // carries its own token. See emotonCtaUrl + the download-tracking brief.
   const onEmoton = location.pathname.replace(/\/+$/, '').endsWith('/emoton')
   const downloadHref = onEmoton
-    ? appStoreUrl('emoton_nav')
+    ? emotonCtaUrl('emoton_nav')
     : `${homePathFor(currentLang)}#download`.replace('//', '/')
 
   // Keep i18n + <html lang> in sync with the URL on every navigation
