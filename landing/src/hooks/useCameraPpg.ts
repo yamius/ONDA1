@@ -77,6 +77,7 @@ export function useCameraPpg() {
   const lastCommitAtRef = useRef(0);
   const videoTrackRef = useRef<MediaStreamTrack | null>(null);
   const torchKeepAliveRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const torchActiveRef = useRef(false); // when false (e.g. laptop, no flash) → relaxed finger gate
 
   const patch = useCallback((p: Partial<CameraPpgState>) => {
     setState((s) => ({ ...s, ...p }));
@@ -125,6 +126,7 @@ export function useCameraPpg() {
     smoothedBpmRef.current = 0;
     fingerFramesRef.current = 0;
     noFingerFramesRef.current = 0;
+    torchActiveRef.current = false;
   }, []);
 
   // Pull one frame's red/green/blue means + clip fraction over a central ROI.
@@ -156,7 +158,7 @@ export function useCameraPpg() {
       redness: rMean / (rMean + gMean + bMean + 1e-6),
     };
 
-    const fingerNow = isGoodContact({ rMean, gMean, bMean, clipFrac });
+    const fingerNow = isGoodContact({ rMean, gMean, bMean, clipFrac }, !torchActiveRef.current);
     if (fingerNow) {
       fingerFramesRef.current++;
       noFingerFramesRef.current = 0;
@@ -207,10 +209,17 @@ export function useCameraPpg() {
     if (runningRef.current) return;
     patch({ status: 'requesting', error: null });
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({
-        video: { facingMode: 'environment', frameRate: { ideal: 30 } },
-        audio: false,
-      });
+      // Prefer the rear camera (phone); fall back to ANY camera so a laptop /
+      // desktop webcam (no environment-facing camera) still opens.
+      let stream: MediaStream;
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: 'environment', frameRate: { ideal: 30 } },
+          audio: false,
+        });
+      } catch {
+        stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+      }
       streamRef.current = stream;
 
       let torchOn = false;
@@ -225,6 +234,7 @@ export function useCameraPpg() {
         /* torch unsupported / ignored — pipeline runs torch-off in good light */
       }
       videoTrackRef.current = track;
+      torchActiveRef.current = torchOn;
       if (torchOn) {
         torchKeepAliveRef.current = setInterval(() => {
           track.applyConstraints({ advanced: [{ torch: true }] as unknown as MediaTrackConstraintSet[] }).catch(() => {});

@@ -96,8 +96,9 @@ export function EmotonPractice({ practiceId, title, intent, direction, onDone }:
         <div className="mt-6 w-full max-w-sm rounded-2xl border border-white/10 bg-white/5 p-6">
           <p className="text-sm text-white/80">See your pulse respond — live</p>
           <p className="mt-1 text-xs leading-relaxed text-white/55">
-            Rest a fingertip on your phone's rear camera and watch your pulse move with the breath.
-            It runs entirely on your device.
+            Rest a fingertip over your camera — the rear camera on a phone, or the webcam
+            on a laptop — and watch your pulse move with the breath. It runs entirely on
+            your device. On a laptop, press gently and use bright light (there's no flash).
           </p>
           <button
             onClick={startCamera}
@@ -150,7 +151,7 @@ export function EmotonPractice({ practiceId, title, intent, direction, onDone }:
                         ? 'Camera unavailable — follow the breath instead.'
                         : cam.fingerOn
                           ? 'Got your finger — hold still…'
-                          : 'Rest a fingertip on the rear camera'}
+                          : 'Rest a fingertip over the camera lens'}
                 </span>
               </div>
               {/* Pulse number is SECONDARY and blanks when not confident — never bluffs. */}
@@ -162,7 +163,7 @@ export function EmotonPractice({ practiceId, title, intent, direction, onDone }:
                 )}
               </div>
               {!cam.torchOn && (cam.status === 'searching' || cam.status === 'reading') && (
-                <p className="mt-1 text-[11px] text-amber-300/70">Couldn't turn on the flash — try in good light.</p>
+                <p className="mt-1 text-[11px] text-amber-300/70">No flash on this device — press a fingertip firmly over the lens, in bright light.</p>
               )}
               <p className="mt-1 text-[11px] text-white/35">Pulse only — coherence unlocks with an Apple Watch.</p>
             </div>

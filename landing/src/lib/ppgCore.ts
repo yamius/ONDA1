@@ -303,10 +303,20 @@ export interface FrameStats {
  * Deliberately has NO brightness threshold: a brightness floor is exactly what
  * rejects darker skin and would deny those users the live feedback. Uses only a
  * relative redness ratio + a saturation guard.
+ *
+ * `relaxed` (WEB DIVERGENCE from the app copy): a laptop/desktop has no torch, so
+ * a fingertip on the webcam is reddish but far weaker than a torch-lit finger and
+ * the strict redness floor never trips. In relaxed mode we lower the floor and
+ * only require red to be the dominant channel + not blown out — the two-estimator
+ * + SQI agreement in estimateHr remains the real quality guard (blank-don't-bluff),
+ * so a non-finger scene still won't fabricate a pulse.
  */
-export function isGoodContact(s: FrameStats): boolean {
+export function isGoodContact(s: FrameStats, relaxed = false): boolean {
   const sum = s.rMean + s.gMean + s.bMean + 1e-6;
-  const redness = s.rMean / sum; // finger over the torch ⇒ red dominates the transmitted light
+  const redness = s.rMean / sum; // finger over the light ⇒ red dominates the transmitted light
+  if (relaxed) {
+    return redness > 0.4 && s.rMean >= s.gMean && s.rMean >= s.bMean && s.clipFrac < 0.95;
+  }
   const redDominant = s.rMean > s.gMean * 1.3;
   const notBlownOut = s.clipFrac < 0.8;
   return redness > 0.5 && redDominant && notBlownOut;
