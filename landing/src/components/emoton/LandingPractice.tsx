@@ -103,7 +103,7 @@ export function LandingPractice({ practice, onDone }: LandingPracticeProps) {
   const progress = Math.min(100, Math.round((time / practice.targetTime) * 100));
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900 p-3 text-white sm:p-6">
+    <div className="fixed inset-0 z-[70] flex items-center justify-center bg-gradient-to-br from-slate-900 via-indigo-900 to-purple-900 p-3 text-white sm:p-6">
       <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.3) 100%)' }} />
 
       {/* 3D HDR panorama — live backdrop only while the practice runs. */}
