@@ -92,7 +92,7 @@ export function EmotonPage() {
   const shadeLabel = shade ? t(`shade.${shade}`) : '';
 
   return (
-    <div className="relative mx-auto flex min-h-[80vh] max-w-md flex-col items-center px-5 py-10 text-white">
+    <div className="relative mx-auto flex min-h-[80vh] max-w-md flex-col items-center px-5 pb-10 pt-3 text-white">
       <style>{`
         @keyframes emoton-swell { 0% { transform: scale(0.7); opacity:.7 } 50% { transform: scale(1.06); opacity:1 } 100% { transform: scale(0.74); opacity:.8 } }
         @keyframes emoton-rise  { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
@@ -101,13 +101,12 @@ export function EmotonPage() {
 
       {/* ── 1. Presence (Я) ─────────────────────────────────────────────── */}
       {step === 'presence' && (
-        <div className="flex flex-1 flex-col items-center justify-center text-center">
-          {/* The orb is the vertical pivot AND the tap target — touch it to begin
-              (the copy below invites "коснись своего Я"). justify-center centres
-              just the orb; the title/description float below it absolutely, so it
-              lands at the SAME centre as the wheel orb — no jump on presence →
-              wheel. No separate CTA button. */}
-          <div className="relative">
+        <div className="flex flex-1 flex-col items-center justify-start text-center">
+          {/* The orb is the tap target — touch it to begin (the copy below invites
+              "коснись своего Я"). Top-anchored with a margin that lands the orb at
+              the SAME centre as the wheel orb (prompt + wheel half) — no jump on
+              presence → wheel. The title/description float below it absolutely. */}
+          <div className="relative mt-[140px]">
             <button
               onClick={() => setStep('wheel')}
               aria-label={t('presence.cta')}
@@ -126,13 +125,13 @@ export function EmotonPage() {
 
       {/* ── 2. Wheel → zone → shade ─────────────────────────────────────── */}
       {step === 'wheel' && (
-        <div className="flex w-full flex-1 flex-col items-center justify-center">
-          {/* Centre the 360px wheel so its centre orb lands at the SAME vertical
-              centre as the presence orb (no jump). The prompt floats above the
-              wheel and the shade picker below it — both absolute, so neither
-              shifts the orb. */}
-          <div className="relative h-[360px] w-[360px]">
-            <p className="absolute bottom-full left-1/2 mb-6 w-max -translate-x-1/2 font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('wheel.prompt')}</p>
+        <div className="flex w-full flex-1 flex-col items-center justify-start pt-2">
+          {/* Top-anchored: the prompt sits just under the header, the wheel hangs
+              below it. The presence orb is given a matching top margin so its
+              centre lines up with this wheel's centre orb — no jump. The shade
+              picker floats below the wheel (absolute) so it never shifts the orb. */}
+          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('wheel.prompt')}</p>
+          <div className="relative mt-6 h-[360px] w-[360px]">
             {/* Center orb — identical to the presence orb (size + cyan gradient
                 + breathe) so the "Я" reads as the same orb carried across. */}
             <div className="absolute left-1/2 top-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent text-3xl font-light tracking-wide text-white/90" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
