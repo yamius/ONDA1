@@ -13,10 +13,15 @@ import { createClient } from '@supabase/supabase-js';
 //     a build without VITE_SUPABASE_* (CI/Replit — landing/.env is gitignored)
 //     must still construct. Fall back to a valid-shaped placeholder; with the
 //     real env present (browser/prod) the real values win.
-// Set VITE_SUPABASE_URL + VITE_SUPABASE_ANON_KEY (same as the app) for audio +
-// the HDR backdrop to actually load.
+// The fallback URL is the REAL project — audio (`audio-practices`) and HDR
+// (`hdr`) live in PUBLIC buckets there, so reads need only the URL, no auth.
+// It's not a secret (the app ships it in its bundle; it's in committed
+// .env.development), so baking it as the default means audio + the backdrop load
+// on ANY host even when the build env lacks VITE_SUPABASE_* (e.g. Replit, where
+// landing/.env is gitignored). Set the env to point landing at a different
+// project; otherwise this default is correct.
 const env = ((import.meta as unknown as { env?: Record<string, string | undefined> }).env) ?? {};
-const supabaseUrl = env.VITE_SUPABASE_URL || 'https://placeholder.supabase.co';
-const supabaseAnonKey = env.VITE_SUPABASE_ANON_KEY || 'placeholder-anon-key';
+const supabaseUrl = env.VITE_SUPABASE_URL || 'https://qwtdppugdcguyeaumymc.supabase.co';
+const supabaseAnonKey = env.VITE_SUPABASE_ANON_KEY || 'public-anon-read-only';
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
