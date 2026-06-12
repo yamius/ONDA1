@@ -13,7 +13,8 @@ import {
   type WantOption,
   type RoutedBranch,
 } from '../lib/emotonCore';
-import { EmotonPractice } from '../components/emoton/EmotonPractice';
+import { LandingPractice } from '../components/emoton/LandingPractice';
+import { ADAPTIVE_PRACTICES } from '../data/adaptivePractices';
 
 /**
  * Emoton — the deliberate, owned emotional check-in ("I name what I feel").
@@ -192,16 +193,13 @@ export function EmotonPage() {
       )}
 
       {/* ── Practice branch (the ONLY sensor branch) ────────────────────── */}
-      {step === 'practice' && branch?.practiceId && (
-        <div className="flex w-full flex-1 flex-col justify-center">
-          <EmotonPractice
-            practiceId={branch.practiceId}
-            title={t(`practice.${branch.practiceId}`)}
-            intent={t(`practice.${branch.practiceId}_intent`)}
-            direction={branch.practiceDirection}
-            onDone={() => setStep('assimilation')}
-          />
-        </div>
+      {/* The real adaptive practice, ported 1:1 from the app: 3D backdrop +
+          guided audio + live camera pulse. Renders as a full-screen overlay. */}
+      {step === 'practice' && branch?.practiceId && ADAPTIVE_PRACTICES[branch.practiceId] && (
+        <LandingPractice
+          practice={ADAPTIVE_PRACTICES[branch.practiceId]}
+          onDone={() => setStep('assimilation')}
+        />
       )}
 
       {/* ── Be-with visualization (no sensor) ───────────────────────────── */}
