@@ -105,9 +105,6 @@ export function CameraPulseWindow({
                 (left) / Breathing (right) corners. */}
             {isCamera ? (
               <div className="absolute top-1.5 left-1/2 -translate-x-1/2 text-center pointer-events-none">
-                <div className="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-white/75 leading-none mb-0.5">
-                  {t('labels.pulse')}
-                </div>
                 <div className="font-bold leading-none drop-shadow" style={{ fontVariantNumeric: 'tabular-nums' }}>
                   {displayHeartRate != null ? (
                     <span className="text-3xl sm:text-4xl">{displayHeartRate}<span className="text-base sm:text-lg font-semibold text-white/70"> bpm</span></span>
@@ -163,16 +160,11 @@ export function CameraPulseWindow({
           </>
         )}
       </div>
-      {/* Below the window: the coherence upgrade line shows whenever there's no
-          watch — in the offer state AND while the camera runs — so enabling the
-          camera doesn't shift the layout. The no-torch hint only appears while
-          the camera is actually running. */}
-      {!hasWatch && (
+      {/* Landing is pulse-only — no Apple-Watch coherence upsell below the
+          window. Keep just the no-torch hint while the camera is running. */}
+      {!hasWatch && (cameraPpg.status === 'searching' || cameraPpg.status === 'reading') && !cameraPpg.torchOn && (
         <div className="mt-1 text-center leading-tight">
-          {(cameraPpg.status === 'searching' || cameraPpg.status === 'reading') && !cameraPpg.torchOn && (
-            <p className="text-[11px] text-amber-300/80">{t('camera.no_torch', "Couldn't turn on the flash — try in good light.")}</p>
-          )}
-          <p className="text-[11px] text-white/45">{t('camera.coherence_locked', 'Coherence unlocks with an Apple Watch.')}</p>
+          <p className="text-[11px] text-amber-300/80">{t('camera.no_torch', "Couldn't turn on the flash — try in good light.")}</p>
         </div>
       )}
       {import.meta.env.VITE_PPG_DEBUG === 'true' && cameraPpg.status !== 'idle' && (
