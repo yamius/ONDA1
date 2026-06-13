@@ -24,11 +24,11 @@ ONDA проводит пользователей через прогрессив
 | iOS | Capacitor, Swift, WatchKit |
 | Android | WebView, Kotlin, Health Connect |
 | Backend | Supabase (Auth, PostgreSQL, Storage, Edge Functions) |
-| Analytics | Firebase Analytics (iOS + Android), Supabase Events |
+| Analytics | Firebase/GA4 + Supabase events (one typed `track()`), Tenjin (attribution/MMP) |
 
 ## Documentation
 
-📚 **[Full Documentation](./docs/index.md)**
+📚 **[Full Documentation](./docs/README.md)**
 
 | Section | Description |
 |---------|-------------|
@@ -76,7 +76,7 @@ npm run dev
 1. Локально: `cd landing && npm run build` → `git add .` → `git commit -m "..."` → `git pull --rebase origin main` → `git push origin main`
 2. На хостинге (Replit / Vercel / др.): подтянуть изменения и пересобрать
 
-Подробнее: `.assistant/MODULE_LANDING.md` (раздел «Деплой»)
+Подробнее: [`landing/docs/architecture.md`](./landing/docs/architecture.md) (раздел «Деплой»)
 
 ## Деплой iOS
 
@@ -84,11 +84,11 @@ npm run dev
 
 ## Аналитика
 
-Firebase Analytics интегрирован для отслеживания конверсий и атрибуции рекламного трафика.
+Событийная аналитика идёт через один типизированный `track()` → Firebase/GA4 +
+Supabase `app_events`; атрибуция (install/revenue) — через Tenjin (native).
 
-**Быстрый старт:** См. `FIREBASE_QUICK_START.md`
-
-**Полная документация:** См. `docs/FIREBASE_ANALYTICS_SETUP.md`
+- Канон событий: [`docs/architecture/analytics.md`](./docs/architecture/analytics.md)
+- Активация Firebase: [`docs/guides/firebase.md`](./docs/guides/firebase.md)
 
 ## Лицензия
 
