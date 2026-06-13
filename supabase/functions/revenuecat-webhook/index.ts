@@ -49,6 +49,30 @@ serve(async (req) => {
     return new Response('ok', { headers: corsHeaders });
   }
 
+  // ── Authorization ────────────────────────────────────────────────
+  // RevenueCat sends the exact value configured in the dashboard
+  // (Project → Integrations → Webhooks → "Authorization header value")
+  // as the `Authorization` header. Verify it so the endpoint can't be
+  // spoofed with fake subscription events.
+  //
+  // Config: set the same secret in the RevenueCat dashboard AND as the
+  // `REVENUECAT_WEBHOOK_AUTH` env var (`supabase secrets set …`).
+  // Until that secret is set we log loudly and still process, so an
+  // un-configured deploy doesn't silently drop real subscription events.
+  const expectedAuth = Deno.env.get('REVENUECAT_WEBHOOK_AUTH');
+  if (expectedAuth) {
+    const got = req.headers.get('Authorization') ?? '';
+    if (got !== expectedAuth) {
+      console.warn('[RevenueCat Webhook] Rejected: bad/missing Authorization header');
+      return new Response(JSON.stringify({ error: 'unauthorized' }), {
+        status: 401,
+        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+      });
+    }
+  } else {
+    console.warn('[RevenueCat Webhook] REVENUECAT_WEBHOOK_AUTH is not set — webhook is UNAUTHENTICATED. Set it in RevenueCat + supabase secrets.');
+  }
+
   try {
     const supabase = createClient(
       Deno.env.get('SUPABASE_URL') ?? '',

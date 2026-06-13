@@ -9,7 +9,7 @@ and receiving server-to-server billing webhooks.
 | --- | --- | --- | --- |
 | `analyze-emotion` | Client `POST` (voice check) | Streams audio to Hume AI prosody model over WebSocket, maps the top emotion to an in-app key. In-memory only — no storage/DB write. | None (no JWT check); key gate is the `HUME_API_KEY` env |
 | `delete-account` | Client `POST` (GDPR delete) | Verifies the caller's JWT, then service-role-deletes the auth user (cascades to all user data). | User JWT (`Authorization` header) verified, then service role |
-| `revenuecat-webhook` | RevenueCat server→server webhook | Maps the subscription event → status, upserts `user_subscriptions`, logs the lifecycle event into `app_events`. | None in code (RevenueCat-signed; relies on URL secrecy) — uses service role internally |
+| `revenuecat-webhook` | RevenueCat server→server webhook | Maps the subscription event → status, upserts `user_subscriptions`, logs the lifecycle event into `app_events`. | `Authorization` header verified against `REVENUECAT_WEBHOOK_AUTH` (enforced when set; warns if unset) — service role internally |
 
 > No `_shared/` directory exists. Each function defines its own inline `corsHeaders`
 > (they differ slightly between the analyze-emotion file and the other two).
@@ -134,7 +134,8 @@ It keeps `user_subscriptions` (current state) in sync and appends an analytics r
 ### Flow
 
 1. `OPTIONS` → CORS 200 (`index.ts:48-50`).
-2. Create a **service-role** client (`index.ts:53-56`).
+2. **Verify `Authorization`** against `REVENUECAT_WEBHOOK_AUTH`: mismatch → **401**; if the env var is unset, log a loud warning and continue (so an un-configured deploy doesn't silently drop real subscription events). Configure the same value in RevenueCat (Integrations → Webhooks → Authorization header) and `supabase secrets`.
+3. Create a **service-role** client.
 3. Parse the webhook JSON; pull `payload.event` (`index.ts:59-60`).
 4. `switch` on `event.type` → derive `status` + `willRenew` (see mapping below). Unknown
    types short-circuit with `{ success: true }` 200 (`index.ts:68-114`).
@@ -225,6 +226,7 @@ forever. Other DB errors throw → **500** (`index.ts:217`, `233-242`).
 | `SUPABASE_URL` | `delete-account`, `revenuecat-webhook` | Supabase project URL. |
 | `SUPABASE_ANON_KEY` | `delete-account` | Builds the JWT-scoped client used to verify the caller. |
 | `SUPABASE_SERVICE_ROLE_KEY` | `delete-account`, `revenuecat-webhook` | Privileged client: admin user delete; `app_events` / `user_subscriptions` writes that bypass RLS. |
+| `REVENUECAT_WEBHOOK_AUTH` | `revenuecat-webhook` | Shared secret matched against the request's `Authorization` header (set the same value in the RevenueCat dashboard). If unset, the webhook runs unauthenticated (logs a warning). |
 
 `analyze-emotion` does **not** use the Supabase env vars at all (no DB access).
 
