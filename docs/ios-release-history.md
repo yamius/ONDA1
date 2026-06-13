@@ -53,8 +53,8 @@ without an Apple Watch.
 
 ## Текущий статус
 
-- **На ревью (1.8.1):** 🟡 **submitted 2026-06-13** (билд с ветки `claude/analytics-cleanup`). Внутренняя чистка аналитики (purchase not-paid→paid; онбординг-воронка на live first-run) + унификация версии. **Дельта пользовательски невидима** → What's New = reliability-нота; Reviewer Notes = полные камера-ноты 1.8.0. ⚠️ ушло **до** DebugView re-check; ✅ **main смержен (FF 2026-06-13, `b1b5b166`)** — репо совпадает со стором. Детали — секция 1.8.1 в архиве.
-- **LIVE в App Store:** `1.8.0` — ✅ **released** (per owner). Несёт **камеру-пульс (fingertip PPG)** во всех практиках + честные метрики (Pulse|Breathing → Coherence; стресс/энергия не покидают устройство) + онбординг-полиш + privacy-апдейт (§1.6, usage-strings, App Privacy: +Health/Audio, −Fitness). Публичный номер показывал 1.2.0. CI-фикс fastlane (`multi_json`). Детали — секция [1.8.0](#180--2026--live) в начале файла.
+- **LIVE в App Store:** `1.8.1` — ✅ **released** (per owner). Билд @ `830d2047` (ветка `claude/analytics-cleanup`, смержена в main FF `b1b5b166`): 1.8.0 + внутренняя чистка аналитики (purchase only on not-paid→paid; онбординг-воронка на live first-run; единый Firebase-путь). **Пользовательски невидимая дельта**; публичный номер теперь 1.8.1. ⚠️ ушло до DebugView re-check (следить за GA4). Детали — секция [1.8.1](#181--released-2026-06-13) в архиве.
+- **Предыдущий live:** `1.8.0` — ✅ released. Несёт **камеру-пульс (fingertip PPG)** во всех практиках + честные метрики (Pulse|Breathing → Coherence; стресс/энергия не покидают устройство) + онбординг-полиш + privacy-апдейт (§1.6, usage-strings, App Privacy: +Health/Audio, −Fitness). Публичный номер показывал 1.2.0. CI-фикс fastlane (`multi_json`).
 - **Предыдущий live:** `1.7.9` — ✅ **APPROVED 2026-06-05** (submitted 2026-06-04). Два фикса: **(1) practice-audio resume** — фоновое аудио в WKWebView невозможно (WebKit паузит `<audio>` при сворачивании, не лечится `AVAudioSession`), поэтому аудио-эксперимент откачен (`.playback` + `audio` в UIBackgroundModes; последнее ещё и App-Review-2.5.4-риск) и добавлен foreground-resume в `PracticeAudioPlayer` (при возврате музыка сразу возобновляется). **(2) watch dead-man's-switch** — `HKWorkoutSession` на часах сам завершается через ~45с тишины от телефона, чтобы force-quit iPhone-приложения не оставлял часы стримить пульс (дренаж) вечно.
 - **Предыдущий live:** `1.7.8` — ✅ **APPROVED 2026-06-04** (submitted 2026-06-03). Батарейный билд (из ветки `claude/workout-lifecycle-battery`): **workout-session lifecycle fix** (сессия активна ⟺ foreground ∨ практика, иначе стоп + `discardWorkout` → больше нет «весь день» дренажа + Apple Fitness чистый; autonomy во время практики сохранена) + watch «Paused» idle-текст + home waveform tap-to-emphasise линии. Ноты version-agnostic, demo-логин не нужен. _(Параллельно в main влита landing-фича `/tools/hrv` — веб-сайт, к iOS-билду отношения не имеет.)_
 - **Предыдущий live:** `1.7.7` — ✅ **APPROVED 2026-06-03**. Onboarding-HealthKit-лист включает HRV (reach) + reliability-fix live Coherence/stress/energy (отвязаны от флапающего `isConnected`) + AdServices weak-link (Tenjin ASA).
@@ -120,7 +120,7 @@ without an Apple Watch.
 | **1.7.8** | 2026-06-03 | ✅ **APPROVED / LIVE** | Approved 2026-06-04. Из ветки `workout-lifecycle-battery`. Workout-session lifecycle fix (foreground∨практика, иначе стоп+discard → батарея/Apple Fitness) + watch «Paused» + home waveform tap-to-emphasise |
 | **1.7.9** | 2026-06-04 | ✅ **APPROVED / LIVE** | Approved 2026-06-05. (1) Откат фон-аудио эксперимента + foreground-resume практического аудио. (2) Watch dead-man's-switch: `HKWorkoutSession` сам завершается через ~45с тишины от телефона (force-quit больше не оставляет часы стримить вечно) |
 | **1.8.0** | 2026-06-05 | ✅ **LIVE** (per owner) | **Камера-пульс (fingertip PPG)** во всех практиках + честные метрики (стресс/энергия не покидают устройство) + онбординг-полиш + privacy (§1.6, usage-strings, App Privacy ±). CI-фикс fastlane (`multi_json`). Публичный номер 1.2.0. Детали — секция 1.8.0 |
-| **1.8.1** | 2026-06-13 | 🟡 **SUBMITTED** (in review) | Билд 1.8.1 @ `830d2047` с ветки `claude/analytics-cleanup` (**main приведён FF 2026-06-13**): 1.8.0 + внутренняя чистка аналитики (purchase not-paid→paid, онбординг-воронка на live first-run). Пользовательски невидимая дельта. What's New = reliability-нота; Reviewer Notes = полные камера-ноты 1.8.0. ⚠️ ушло до DebugView re-check |
+| **1.8.1** | 2026-06-13 | ✅ **LIVE** (per owner) | Билд @ `830d2047` (ветка `claude/analytics-cleanup`, FF в main): 1.8.0 + внутренняя чистка аналитики (purchase not-paid→paid, онбординг-воронка на live first-run). Пользовательски невидимая дельта. What's New = reliability-нота; Reviewer Notes = полные камера-ноты 1.8.0. ⚠️ ушло до DebugView re-check |
 
 ---
 
@@ -259,7 +259,7 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 
 Архив текстов, отправленных в App Store Connect: What's New (публичный, store listing) + Reviewer Notes (для App Review). Demo credentials удалены.
 
-### 1.8.1 — submitted 2026-06-13 (in review)
+### 1.8.1 — released 2026-06-13 ✅
 
 **Что в билде:** билд **1.8.1 @ commit `830d2047`** (подтверждено владельцем), собран с ветки `claude/analytics-cleanup` — только там `MARKETING_VERSION = 1.8.1`. `830d2047` идёт ПОСЛЕ обоих analytics-фиксов (`448f2c17` purchase, `ad3343a3` онбординг), так что **чистка точно в билде** (следующие коммиты ветки — docs-only). ✅ **`main` приведён к ветке (FF 2026-06-13, `b1b5b166`)** — репозиторий совпадает с тем, что на ревью. Содержимое билда: 1.8.0 (камера-пульс fingertip PPG + честные метрики Pulse|Breathing→Coherence + privacy §1.6) + внутренняя чистка аналитики (`purchase` фаится только на not-paid→paid; онбординг-воронка на live first-run `onboarding_start/complete{source}`; `first_run_welcome_*` убраны; единый Firebase-путь). **Дельта 1.8.0→1.8.1 пользовательски невидима.** Версия унифицирована (публичный номер был 1.2.0 → ASC теперь 1.8.1). ⚠️ Ушло на ревью **ДО** запланированного DebugView re-check. Demo-логин не нужен (free-tier sampler).
 
@@ -336,7 +336,7 @@ ONDA Life Team
 
 </details>
 
-**Outcome:** TBD — submitted 2026-06-13, awaiting review.
+**Outcome:** ✅ **APPROVED + LIVE 2026-06-13** (per owner). Camera-pulse (from 1.8.0) + the user-invisible analytics cleanup now public under version 1.8.1. Watch GA4 for the cleaned funnel (DebugView re-check shipped post-release).
 
 ---
 
