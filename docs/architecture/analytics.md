@@ -96,15 +96,19 @@ await analytics.flush();
 | Event | Description | Metadata |
 |-------|-------------|----------|
 | `app_open` | App launched | `platform`, `cold_start` |
-| `onboarding_start` | User starts onboarding | `att_copy_variant` |
-| `onboarding_step` | User views a step | `step_index`, `step_name` |
-| `onboarding_complete` | Onboarding finished (was Tenjin `tutorial_complete`) | `duration_seconds` |
-| `first_run_welcome_view` / `_cta` / `_skip` | First-run welcome shown / CTA / skipped | `featured_practice_id` |
+| `onboarding_start` | Onboarding begins — live one-screen first-run, or 3-screen tutorial replay | `source` (first_run\|menu), `featured_practice_id` / `att_copy_variant` |
+| `onboarding_step` | Step view — **3-screen tutorial only** (the one-screen first-run has no steps) | `source` (menu), `step`, `total`, `permission` |
+| `onboarding_complete` | Onboarding finished (was Tenjin `tutorial_complete`) | `source`, `completed_via` (cta\|skip — first_run only), `duration_seconds` |
 | `sign_up` | User created account | `method` |
 | `sign_in` | User signed in | `method` |
 
-> **Canonical activation funnel:** `first_open` (Firebase auto) → `onboarding_start`
-> → `onboarding_complete` → `first_practice_complete` → `paywall_view` → `purchase`.
+> **Canonical activation funnel** (filter `source = 'first_run'`): `first_open`
+> (Firebase auto) → `onboarding_start` → `onboarding_complete` →
+> `first_practice_complete` → `paywall_view` → `purchase`. The live new-install
+> path is the one-screen first-run welcome. The legacy 3-screen tutorial is
+> demoted to Menu → Intro and emits the same events with `source: 'menu'`, so
+> manual replays stay OUT of the new-user funnel. `first_run_welcome_*` was
+> folded in: the view = `onboarding_start`, the cta/skip outcome = `completed_via`.
 
 ### Permission Events
 
@@ -167,10 +171,14 @@ await analytics.flush();
 | `purchase_failed` | Purchase threw | `plan`, `error` |
 | `purchase_cancelled` | User cancelled the StoreKit sheet | `plan` |
 
-> `purchase` fires from `useSubscription` when the entitlement becomes `NORMAL`
-> (trial → paid), deduped per transaction. Keep the name `purchase` + `value`/
-> `currency` so GA4 counts it as revenue. Trial start ($0) is `trial_start`, never
-> `purchase` (that was the old phantom-revenue bug).
+> `purchase` fires from `useSubscription` **only on a genuine not-paid → paid
+> (NORMAL) transition** — never on restore, login-restore, reinstall (pre-existing
+> sub on first load), or renewal (active→active with only the date moved). Those
+> are recorded as a paid-state baseline (`onda_sub_paid_state`) instead; renewals
+> are counted server-side as `subscription_renew` via the RevenueCat webhook. The
+> off-app trial→paid flip still counts, because the baseline persists across
+> launches. Keep the name `purchase` + `value`/`currency` so GA4 counts it as
+> revenue. Trial start ($0) is `trial_start`, never `purchase` (old phantom bug).
 
 ### Diagnostics Events
 
