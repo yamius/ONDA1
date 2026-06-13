@@ -1,4 +1,13 @@
-# MODULE_SUPABASE — Архитектура бэкенда ONDA
+# Backend architecture (Supabase)
+
+> **⚠️ Corrections (verified against `supabase/`):** the Edge Functions are
+> **`analyze-emotion`** (Hume AI voice, Stream/WebSocket), **`delete-account`** (GDPR
+> purge), and **`revenuecat-webhook`** (subscription state → `user_subscriptions`).
+> There is **no** `hume-emotion` function. The schema is ~12 tables across 18
+> migrations — beyond profiles/progress it includes fitness connections
+> (`google_fit_connections`, `strava_connections`), `user_subscriptions`, and
+> `public.app_events` + ~19 `analytics_*` views (see
+> [analytics.md](analytics.md) / [../guides/analytics-views.md](../guides/analytics-views.md)).
 
 ## Сервисы Supabase
 

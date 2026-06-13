@@ -1,4 +1,13 @@
-# MODULE_NATIVE — Архитектура нативных приложений ONDA
+# Native architecture (iOS / Android)
+
+> **⚠️ Corrections (verified against current code):** the actual iOS Swift files are
+> `AppDelegate.swift`, `CustomBridgeViewController.swift` (registers custom plugins),
+> `HealthKitHeartRatePlugin.swift`, `OndaWatchPlugin.swift`, `OndaTenjinPlugin.swift`,
+> `OndaStoreReviewPlugin.swift`, and the watch target `watchkitapp Watch App/`
+> (`WorkoutManager.swift`). Older names in this doc (`ViewController.swift`,
+> `PhoneConnector.swift`, `OndaWatch Watch App/`) **do not exist**. The **ATT prompt
+> was removed** in v1.7.3 (SKAN-only via Tenjin) — references to a live ATT step are
+> stale. Watch HR flow deep-dive: [watch-hr-flow.md](watch-hr-flow.md).
 
 ## iOS (Capacitor)
 

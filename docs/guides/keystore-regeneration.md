@@ -32,14 +32,14 @@ Create a new keystore using Java's `keytool` utility.
      -keyalg RSA \
      -keysize 2048 \
      -validity 10000 \
-     -storepass onda2024secure \
-     -keypass onda2024secure \
+     -storepass <KEYSTORE_PASSWORD> \
+     -keypass <KEYSTORE_PASSWORD> \
      -dname "CN=ONDA, OU=MindfulTech, O=ONDA, L=Moscow, ST=Moscow, C=RU"
    ```
 
 4. **Verify the keystore:**
    ```bash
-   keytool -list -v -keystore onda-release.keystore -storepass onda2024secure
+   keytool -list -v -keystore onda-release.keystore -storepass <KEYSTORE_PASSWORD>
    ```
 
    You should see:
@@ -136,7 +136,7 @@ After updating, the build should:
 
 ## Security Notes
 
-- **Password:** `onda2024secure` (both keystore and key)
+- **Password:** stored ONLY in CI secrets (`KEYSTORE_PASSWORD` / `KEY_PASSWORD`) — never in this repo. ⚠️ The previously-committed literal has been redacted here; if it was ever the real signing password, **rotate it** (it remains in git history).
 - **Validity:** 10000 days (~27 years)
 - **Algorithm:** RSA 2048-bit
 - **Never commit keystore to public repository** (use GitHub Secrets)

@@ -1,5 +1,12 @@
 # Architecture Overview
 
+> **⚠️ Corrections (verified against current code):** emotion analysis is **Hume AI
+> voice/prosody** (Edge Function `analyze-emotion`, Stream/WebSocket) — *not* OpenAI
+> GPT-4 Vision on a selfie. Attribution/MMP is **Tenjin** (Airbridge removed in
+> v1.4.0). The **ATT prompt was removed** in v1.7.3 (SKAN-only). Treat any contrary
+> statement below as stale; see [analytics.md](analytics.md), [native.md](native.md),
+> [supabase.md](supabase.md).
+
 This document provides a high-level overview of the ONDA Life system architecture.
 
 ## System Diagram
