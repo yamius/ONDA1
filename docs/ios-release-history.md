@@ -118,7 +118,8 @@ without an Apple Watch.
 | **1.7.7** | 2026-06-02 | ✅ **APPROVED / LIVE** | Approved 2026-06-03. Onboarding-лист включает HRV + reliability-fix live Coherence/stress/energy (не завязаны на `isConnected`) + AdServices weak-link (Tenjin ASA) |
 | **1.7.8** | 2026-06-03 | ✅ **APPROVED / LIVE** | Approved 2026-06-04. Из ветки `workout-lifecycle-battery`. Workout-session lifecycle fix (foreground∨практика, иначе стоп+discard → батарея/Apple Fitness) + watch «Paused» + home waveform tap-to-emphasise |
 | **1.7.9** | 2026-06-04 | ✅ **APPROVED / LIVE** | Approved 2026-06-05. (1) Откат фон-аудио эксперимента + foreground-resume практического аудио. (2) Watch dead-man's-switch: `HKWorkoutSession` сам завершается через ~45с тишины от телефона (force-quit больше не оставляет часы стримить вечно) |
-| **1.8.0** | 2026-06-05 | **open / готовится** | **Камера-пульс (fingertip PPG)** во всех практиках + честные метрики (стресс/энергия не покидают устройство) + онбординг-полиш + privacy (§1.6, usage-strings, App Privacy ±). CI-фикс fastlane (`multi_json`). Детали — секция 1.8.0 |
+| **1.8.0** | 2026-06-05 | ✅ **APPROVED** (per owner) | **Камера-пульс (fingertip PPG)** во всех практиках + честные метрики (стресс/энергия не покидают устройство) + онбординг-полиш + privacy (§1.6, usage-strings, App Privacy ±). CI-фикс fastlane (`multi_json`). Детали — секция 1.8.0 |
+| **1.8.1** | 2026-06-13 | **open / prep** | = 1.8.0 + внутренняя чистка аналитики (ветка `claude/analytics-cleanup`): purchase not-paid→paid, онбординг-воронка на live first-run. **Дельта 1.8.0→1.8.1 пользовательски невидима.** Версия унифицирована с публичной. What's New / Reviewer Notes **reused from 1.8.0** |
 
 ---
 
@@ -256,6 +257,95 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 ## Release notes archive
 
 Архив текстов, отправленных в App Store Connect: What's New (публичный, store listing) + Reviewer Notes (для App Review). Demo credentials удалены.
+
+### 1.8.1 — TBD
+
+**Что в билде:** = всё из 1.8.0 (камера-пульс fingertip PPG + честные метрики Pulse|Breathing→Coherence + онбординг-полиш + privacy §1.6) ПЛЮС внутренняя чистка аналитики (ветка `claude/analytics-cleanup`, ещё не в main — ждёт DebugView re-check): Firebase `purchase` фаится только на реальном переходе not-paid→paid (restore / переустановка / renewal больше не раздувают GA4-выручку); онбординг-воронка сведена на живой one-screen first-run (`onboarding_start/complete` с `source`, `first_run_welcome_*` убраны); единый Firebase-путь. **Дельта 1.8.0→1.8.1 — пользовательски НЕвидимая** (внутренние события аналитики). Версия унифицирована: MARKETING_VERSION 1.8.0 → 1.8.1 (свести с публичным номером, который показывал 1.2.0). Demo-логин не нужен (free-tier sampler).
+
+**Решение по копирайту:** What's New и Reviewer Notes **переиспользованы из 1.8.0** — камера-пульс ещё НЕ доходил до публики (последнее live по фичам — 1.7.9), поэтому 1.8.1 несёт камеру людям впервые и история та же. Аналитический фикс юзеру невидим → отдельной строки в What's New не требует («Polish and reliability fixes throughout» уже накрывает). Reviewer Notes 1.8.0 прошли чистый аппрув и адресуют camera=fingertip-not-face (класс реджекта 1.7.4) — переиспользуем как наименее рисковые. _Если к моменту сабмита 1.8.0 уже зарелижена людям — заменить What's New на короткую reliability-ноту (камера будет «старой» новостью)._
+
+**What's New (EN):**
+> Your pulse, live — no watch required.
+>
+> Rest a fingertip on the rear camera and watch your heart rate respond in real time. It's all processed on your phone; nothing leaves the device.
+>
+> Also in this release:
+> - Onboarding takes you straight into your first practice.
+> - A cleaner home screen — we kept the signals that actually train your nervous system (your pulse and your breathing) and dropped the noise.
+> - Polish and reliability fixes throughout.
+>
+> With an Apple Watch, you'll also see your live coherence score during practice — your vagal brake, made visible.
+
+**What's New (RU):**
+> Твой пульс — вживую, без часов.
+>
+> Приложи палец к задней камере и смотри, как пульс откликается в реальном времени. Всё обрабатывается на телефоне; ничего не покидает устройство.
+>
+> Также в этом релизе:
+> - Онбординг сразу ведёт к твоей первой практике.
+> - Чище главный экран — оставили сигналы, которые реально тренируют нервную систему (пульс и дыхание), и убрали шум.
+> - Полировка и исправления стабильности.
+>
+> С Apple Watch ты также увидишь живой показатель когерентности во время практики — твой вагальный тормоз, ставший видимым.
+
+<details>
+<summary>Reviewer Notes (= 1.8.0, проверенные аппрувом)</summary>
+
+```
+Dear App Review Team,
+
+Thanks for reviewing ONDA.
+
+NO ACCOUNT NEEDED
+The first three practices are free and require no sign-in. You can
+experience the core app immediately.
+
+CAMERA = FINGERTIP PULSE, NOT FACE DATA
+The camera permission is for a fingertip pulse reading
+(photoplethysmography), similar to a pulse oximeter. The user rests a
+fingertip over the REAR camera lens; the flash turns on; the app reads
+subtle color changes to estimate heart rate. It does not capture,
+analyze, or store facial data for this feature.
+
+Privacy: the pulse signal is processed entirely on-device. It is not
+written to disk, saved to Apple Health, or transmitted off the device.
+The camera permission is requested just-in-time and is never required to
+use the app.
+
+HOW TO TEST CAMERA PULSE
+- Use a physical device — the Simulator has no camera.
+- Good, steady lighting helps.
+- Cover the rear lens fully with a fingertip; the flash turns on
+  automatically.
+- Hold ~5–10 seconds. A "searching" state is normal until the signal
+  locks; a number appears only when the reading is confident.
+
+HEALTHKIT (READ-ONLY)
+With permission, the app reads heart rate, heart-rate variability, and
+sleep to personalize sessions and show a resting-HRV trend. Nothing is
+written to Apple Health.
+
+COHERENCE (WELLNESS, NOT MEDICAL)
+The live coherence score is a wellness feature, not a medical
+measurement, and requires an Apple Watch for live readings.
+
+VOICE CHECK (OPTIONAL)
+If you try the optional Voice Check, a short audio clip is sent to Hume
+AI for emotion analysis, as disclosed in our privacy policy
+(onda-life.com/privacy)
+
+Thank you!
+
+Best regards,
+Yakiv
+ONDA Life Team
+```
+
+</details>
+
+**Outcome:** TBD — на момент записи ветка `claude/analytics-cleanup` ещё не в main (ждёт DebugView re-check; см. memory `analytics-events-canon`). Билд 1.8.1 собирается после мержа.
+
+---
 
 ### 1.7.9 — submitted 2026-06-04, approved 2026-06-05 ✅
 
