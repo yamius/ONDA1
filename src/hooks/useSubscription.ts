@@ -4,6 +4,7 @@ import { PurchasesPackage, PurchasesOfferings, CustomerInfo } from '@revenuecat/
 import { revenueCatService, ENTITLEMENT_ID } from '../services/RevenueCatService';
 import { supabase } from '../lib/supabase';
 import { trackTenjinSubscriptionPaid } from '../lib/tenjin';
+import { trackEvent } from '../services/AnalyticsService';
 
 interface SubscriptionState {
   // Loading states
@@ -139,6 +140,15 @@ export function useSubscription(): UseSubscriptionReturn {
     }
 
     localStorage.setItem(txnKey, '1');
+    // Firebase ecommerce `purchase` (revenue endpoint of the funnel) — now via
+    // System A so it survives the removal of Tenjin's Firebase mirror. Keep the
+    // name `purchase` + value/currency so GA4 counts it as revenue.
+    trackEvent('purchase', {
+      value,
+      currency,
+      product_id: ent.productIdentifier,
+      plan,
+    });
     trackTenjinSubscriptionPaid({
       value,
       currency,

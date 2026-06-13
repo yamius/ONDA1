@@ -13,39 +13,44 @@ import { Capacitor } from '@capacitor/core';
 // native Firebase pod, on Android we use our own analytics-bridge instead.
 import { FirebaseAnalytics } from '@capacitor-community/firebase-analytics';
 
-// Event types for type safety
+// Event types for type safety.
+//
+// CANON (cleanup 2026-06-13): ONE name per action, object_action snake_case.
+// This typed enum is the single guard that keeps Firebase/GA4 event names from
+// diverging again — every Firebase event flows through track() and must be a
+// member here. Tenjin NATIVE sends (Axon/MMP attribution) keep their own pooled
+// action_object names inside src/lib/tenjin.ts and are intentionally NOT in this
+// list. Reserved Firebase auto-events (first_open, session_start, screen_view,
+// purchase is ours-ecommerce) are never emitted from here except `purchase`.
 export type AnalyticsEventName =
   // Onboarding & Activation
   | 'app_open'
   | 'onboarding_start'
-  | 'onboarding_step'
-  | 'onboarding_complete'
-  // First-run welcome (onboarding refactor): one light screen → featured
-  // free practice. view → cta|skip; first_experience_complete fires on the
-  // first-ever valid practice completion (the funnel's value anchor).
+  | 'onboarding_step'                  // params: step_index, step_name
+  | 'onboarding_complete'             // ← was Tenjin-only `tutorial_complete`
+  // First-run welcome (one light screen → featured free practice). Unique
+  // events, not dupes — kept distinct from the onboarding_* set.
   | 'first_run_welcome_view'
   | 'first_run_welcome_cta'
   | 'first_run_welcome_skip'
-  | 'first_experience_complete'
+  | 'first_practice_complete'         // value-moment; first-ever valid completion
   | 'sign_up'
   | 'sign_in'
   // Permissions
-  | 'health_permission_request'
-  | 'health_permission_granted'
-  | 'health_permission_denied'
+  | 'health_permission'              // params: scope, granted (← Tenjin `healthkit_permission`)
   | 'att_prompt_result'
   | 'notification_prompt_result'
   | 'onboarding_permission_screen_view'
   | 'watch_connection_attempt'
-  | 'watch_connection_success'
+  | 'watch_connect_success'          // ← was watch_connection_success / Tenjin watch_connected
   | 'watch_connection_failed'
-  // Practice
-  | 'practice_view'
+  // Practice — variety lives in PARAMS (practice_type=standard|adaptive, practice_id),
+  // never in the name. abandon = stop/close mid-flow.
   | 'practice_start'
   | 'practice_pause'
   | 'practice_resume'
   | 'practice_complete'
-  | 'practice_abandon'
+  | 'practice_abandon'               // ← stop/close (params: practice_type, practice_id, reason)
   // Biometrics
   | 'heart_rate_received'
   | 'biometric_sync_success'
@@ -55,23 +60,33 @@ export type AnalyticsEventName =
   | 'artifact_unlocked'
   | 'level_up'
   // Paywall / Monetization
-  | 'paywall_viewed'
+  | 'paywall_view'                   // ← merge paywall_viewed + Tenjin view_paywall
+  | 'paywall_dismiss'                // ← Tenjin dismiss_paywall
+  | 'paywall_cta_tap'                // ← was trial_attempt / Tenjin click_paywall_button
   | 'paywall_auth_required'
-  | 'trial_attempt'      // тап CTA «Try Free» (раньше: purchase_started)
-  | 'trial_started'      // Apple вернул success на $0 trial (раньше: purchase_succeeded)
-  | 'subscription_paid'  // реальная оплата после trial → paid (фаерится из useSubscription)
+  | 'trial_start'                    // ← was trial_started (one, not two)
+  | 'purchase'                       // Firebase ecommerce — params: value, currency, product_id, plan
   | 'purchase_failed'
   | 'purchase_cancelled'
   // Reviews
-  | 'review_prompt_requested'  // SKStoreReview dispatched — only observable signal (Apple hides the actual dialog)
+  | 'review_prompt_requested'        // SKStoreReview dispatched (Apple hides the actual dialog)
   // Errors
   | 'error'
   | 'audio_load_error'
   | 'api_error'
-  // Diagnostics
+  // Diagnostics — dev-gated, dropped in prod (see ANALYTICS_DEBUG)
   | 'practice_intro_closed_debug'
   | 'app_crash_suspected'
   | 'resource_snapshot';
+
+/**
+ * Diagnostics gate. When false (prod), the noisy diagnostic events
+ * (practice_intro_closed_debug, resource_snapshot, and the practice-view crash
+ * marker) are dropped before they reach Firebase/Supabase — they were leaking
+ * ~214 events/build into GA4 and burying the funnel. Flip to true locally to
+ * re-enable while debugging the iOS WebView OOM pattern.
+ */
+const ANALYTICS_DEBUG = false;
 
 export interface AnalyticsEvent {
   event_name: AnalyticsEventName;
@@ -383,28 +398,27 @@ class AnalyticsService {
 
     console.log(`[Analytics] Track: ${eventName}`, metadata);
 
+    // Diagnostics gate: in prod, drop the dev-only diagnostic events entirely
+    // so they never reach Firebase/Supabase (they leaked ~214 events/build into
+    // GA4 and buried the funnel). Flip ANALYTICS_DEBUG to re-enable locally.
+    if (!ANALYTICS_DEBUG && (eventName === 'practice_intro_closed_debug' || eventName === 'resource_snapshot')) {
+      return;
+    }
+
     // Mirror to Firebase Analytics so the same event flows into GA4 and is
     // available as a Google Ads conversion. Fire-and-forget, never blocks
     // the Supabase write path below.
     _mirrorToFirebase(eventName, metadata);
 
-    // Resource snapshot diagnostics: emit a parallel event whenever
-    // practice_view fires, so we can correlate memory growth with the
-    // iOS WebView OOM crash pattern (see app_crash_suspected).
-    if (eventName === 'practice_view' || eventName === 'practice_intro_closed_debug') {
+    // Resource-snapshot diagnostics (dev only): correlate memory growth with the
+    // iOS WebView OOM crash pattern. Keyed on practice_start (practice_view retired).
+    if (ANALYTICS_DEBUG && eventName === 'practice_start') {
       try {
-        // Dynamic import to keep the core analytics bundle independent.
         const { snapshotResources } = await import('./resourceTracker');
         const snap = snapshotResources();
-        // Fire-and-forget — don't block the outer track() on this.
         this.track('resource_snapshot', {
           at_event: eventName,
-          practice_id:
-            (metadata as any)?.practice_id ??
-            (metadata as any)?.practiceId ??
-            (metadata as any)?.prevPracticeId ??
-            null,
-          close_reason: (metadata as any)?.reason ?? null,
+          practice_id: (metadata as any)?.practice_id ?? (metadata as any)?.practiceId ?? null,
           ...snap,
         }).catch(() => {});
       } catch (e) {
@@ -412,10 +426,10 @@ class AnalyticsService {
       }
     }
 
-    // Crash-detector marker: record last practice_view in localStorage.
-    // If the app dies (iOS WebView OOM-kill) before next heartbeat, the next
-    // app_open will detect a fresh marker and emit app_crash_suspected.
-    if (eventName === 'practice_view') {
+    // Crash-detector marker: set when a practice STARTS. If the app dies (iOS
+    // WebView OOM-kill) before it completes/abandons, the next app_open detects
+    // the stale marker and emits app_crash_suspected.
+    if (eventName === 'practice_start') {
       try {
         const sessionCountStr = localStorage.getItem('onda_session_practice_count') || '0';
         const newCount = parseInt(sessionCountStr, 10) + 1;
@@ -434,14 +448,8 @@ class AnalyticsService {
       }
     }
 
-    // Clear the marker on any event that proves the app survived past practice_view
-    // (e.g. practice_intro_closed_debug, practice_start, practice_abandon, practice_complete).
-    if (
-      eventName === 'practice_intro_closed_debug' ||
-      eventName === 'practice_start' ||
-      eventName === 'practice_abandon' ||
-      eventName === 'practice_complete'
-    ) {
+    // Clear the marker once the practice resolves (completed or abandoned).
+    if (eventName === 'practice_complete' || eventName === 'practice_abandon') {
       try {
         localStorage.removeItem('onda_last_practice_view');
       } catch (e) {}
@@ -484,7 +492,7 @@ class AnalyticsService {
    * Track practice-specific events with standard metadata
    */
   trackPractice(
-    action: 'view' | 'start' | 'pause' | 'resume' | 'complete' | 'abandon',
+    action: 'start' | 'pause' | 'resume' | 'complete' | 'abandon',
     practiceId: string,
     metadata?: Record<string, unknown>
   ): Promise<void> {

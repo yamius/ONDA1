@@ -29,7 +29,7 @@ export function useAnalytics() {
   }, []);
 
   const trackPractice = useCallback((
-    action: 'view' | 'start' | 'pause' | 'resume' | 'complete' | 'abandon',
+    action: 'start' | 'pause' | 'resume' | 'complete' | 'abandon',
     practiceId: string,
     metadata?: Record<string, unknown>
   ) => {

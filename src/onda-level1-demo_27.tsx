@@ -215,7 +215,7 @@ const OndaLevel1 = () => {
   useEffect(() => {
     if (watchHeartRate.heartRate && !hasTrackedWatchConnection.current) {
       hasTrackedWatchConnection.current = true;
-      track('watch_connection_success', {
+      track('watch_connect_success', {
         heart_rate: watchHeartRate.heartRate,
         is_connected: watchHeartRate.isConnected,
       });
@@ -2392,12 +2392,8 @@ const OndaLevel1 = () => {
       setQualityScore(0);
       setIsPaused(false);
 
-      // Track practice view
-      trackPractice('view', practiceId, {
-        practice_name: space.name,
-        target_duration: space.duration,
-        base_ond: baseQnt,
-      });
+      // practice_view retired (folded into practice_start). Tenjin native 'View'
+      // stays for Axon/MMP pooling.
       trackTenjinPractice('View', getPracticeName(practiceId), { practiceId });
 
       // Scroll to practice after a short delay
@@ -2438,6 +2434,7 @@ const OndaLevel1 = () => {
     // Track practice start
     if (activePractice) {
       trackPractice('start', activePractice.id, {
+        practice_type: 'standard',
         practice_name: activePractice.name,
         target_duration: activePractice.duration,
         has_biometrics: hasRealMetrics,
@@ -2523,7 +2520,8 @@ const OndaLevel1 = () => {
         // product-analytics funnel and arms the one-time paywall that
         // opens when they leave the results screen (after value, never
         // before / never over the results).
-        track('first_experience_complete', {
+        track('first_practice_complete', {
+          practice_type: 'standard',
           practice_id: activePractice.id,
           duration_seconds: practiceTime,
           quality_score: qualityScore,
@@ -2544,6 +2542,7 @@ const OndaLevel1 = () => {
       : null;
 
     trackPractice('complete', activePractice.id, {
+      practice_type: 'standard',
       practice_name: activePractice.name,
       duration_seconds: practiceTime,
       target_duration: activePractice.targetTime || 720,
@@ -2856,8 +2855,12 @@ const OndaLevel1 = () => {
     //     fired inside finishPractice; we'd double-count otherwise)
     if (practiceId) {
       if (practiceState === 'active') {
+        // Started but left before completing — the signal for "start but don't finish".
+        track('practice_abandon', { practice_type: 'standard', practice_id: practiceId, reason: 'stop' });
         trackTenjinPractice('Stop', practiceName || getPracticeName(practiceId), { practiceId });
       } else if (practiceState !== 'complete') {
+        // Closed the intro without ever pressing Start.
+        track('practice_abandon', { practice_type: 'standard', practice_id: practiceId, reason: 'close' });
         trackTenjinPractice('Close', practiceName || getPracticeName(practiceId), { practiceId });
       }
     }
@@ -2895,7 +2898,7 @@ const OndaLevel1 = () => {
     // mid-practice exits and repeat completions never trigger it.
     if (postFirstExperiencePaywallArmedRef.current) {
       postFirstExperiencePaywallArmedRef.current = false;
-      track('paywall_viewed', {
+      track('paywall_view', {
         source: 'post_first_experience',
         practice_id: practiceId,
       });
@@ -4369,7 +4372,7 @@ const OndaLevel1 = () => {
                     beginPractice();
                     return;
                   }
-                  track('paywall_viewed', {
+                  track('paywall_view', {
                     source: 'practice_intro',
                     practice_id: activePractice?.id,
                     practice_type: 'basic',
@@ -4667,6 +4670,7 @@ const OndaLevel1 = () => {
         const durationSeconds = onboardingStartRef.current
           ? Math.round((Date.now() - onboardingStartRef.current) / 1000)
           : undefined;
+        track('onboarding_complete', { duration_seconds: durationSeconds });
         trackTenjinOnboardingComplete(durationSeconds);
         setShowOnboarding(false);
         // Intentionally NOT opening the Auth modal here. The free-tier
@@ -4841,6 +4845,7 @@ const OndaLevel1 = () => {
       // Keeps the MMP signal alive and comparable: tutorial_complete now
       // means "got past the first-run screen" (1 screen) where it used to
       // mean "got past the 3-screen tutorial".
+      track('onboarding_complete', { duration_seconds: durationSeconds });
       trackTenjinOnboardingComplete(durationSeconds);
       track(via === 'cta' ? 'first_run_welcome_cta' : 'first_run_welcome_skip', {
         featured_practice_id: featuredPracticeId,

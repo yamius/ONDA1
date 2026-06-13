@@ -3,6 +3,7 @@ import { Capacitor } from '@capacitor/core';
 import HealthKitHeartRate, { HeartRateUpdateEvent } from '../plugins/healthKitHeartRate';
 import type { PluginListenerHandle } from '@capacitor/core';
 import { trackTenjinPermission } from '../lib/tenjin';
+import { trackEvent } from '../services/AnalyticsService';
 
 export type MonitoringMode = 'direct' | 'workout' | 'realtime' | null;
 
@@ -88,8 +89,17 @@ export function useHealthKitHeartRate(options?: UseHealthKitHeartRateOptions): U
       const result = await HealthKitHeartRate.requestAuthorization();
       console.log('[HealthKit] Authorization result:', result);
       setIsAuthorized(result.authorized);
-      // Airbridge attribution: every system-prompt resolution.
-      trackTenjinPermission('healthkit', !!result.authorized);
+      // Firebase health_permission — deduped (shared key) so re-checks can't spam
+      // it (was ~15 events/user). Fire only when the granted state changes.
+      const _granted = !!result.authorized;
+      try {
+        if (localStorage.getItem('onda_health_perm_logged') !== String(_granted)) {
+          localStorage.setItem('onda_health_perm_logged', String(_granted));
+          trackEvent('health_permission', { scope: 'healthkit', granted: _granted });
+        }
+      } catch {}
+      // Tenjin native attribution: unchanged (every system-prompt resolution).
+      trackTenjinPermission('healthkit', _granted);
       
       if (!result.authorized) {
         setError('HealthKit permission denied');

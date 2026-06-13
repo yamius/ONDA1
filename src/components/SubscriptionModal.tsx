@@ -151,6 +151,11 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
       if (wasPremiumOnCloseRef.current) return;
       const openedAt = paywallOpenedAtRef.current;
       const seconds = openedAt ? Math.round((Date.now() - openedAt) / 1000) : undefined;
+      track('paywall_dismiss', {
+        source,
+        plan: selectedPlanRef.current,
+        time_on_screen_seconds: seconds,
+      });
       trackTenjinPaywallDismiss({
         source,
         plan: selectedPlanRef.current,
@@ -186,7 +191,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     // станет 'NORMAL' (т.е. triаl сконвертился в реальное списание).
     // Раньше передавали value=цена_подписки на trial start → фантомная
     // выручка в GA4 и врущий ROAS в Google Ads.
-    track('trial_attempt', {
+    track('paywall_cta_tap', {
       plan: selectedPlan,
       product_id: pkg.product.identifier,
     });
@@ -194,7 +199,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     try {
       const success = await purchase(pkg);
       if (success) {
-        track('trial_started', {
+        track('trial_start', {
           plan: selectedPlan,
           product_id: pkg.product.identifier,
         });

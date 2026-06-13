@@ -808,7 +808,10 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     // Reset coherence-delta capture for this session.
     initialCoherenceRef.current = freshVitals.coherence ?? null;
     peakCoherenceRef.current = freshVitals.coherence ?? null;
-    if (practice) trackTenjinPractice('Start', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
+    if (practice) {
+      track('practice_start', { practice_type: 'adaptive', practice_id: practice.id });
+      trackTenjinPractice('Start', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
+    }
   };
 
   const togglePause = () => {
@@ -941,7 +944,11 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
           }
         );
         if (isValidForCompletion) {
-          trackTenjinFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
+          track('practice_complete', { practice_type: 'adaptive', practice_id: practice.id, duration_seconds: practiceTime, ond_earned: ondReward.totalOnd, coherence_delta: coherenceDelta });
+          const isFirst = trackTenjinFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
+          if (isFirst) track('first_practice_complete', { practice_type: 'adaptive', practice_id: practice.id });
+        } else {
+          track('practice_abandon', { practice_type: 'adaptive', practice_id: practice.id, reason: 'incomplete' });
         }
         return;
       }
@@ -1020,7 +1027,11 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       }
     );
     if (isValidForCompletion) {
-      trackTenjinFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
+      track('practice_complete', { practice_type: 'adaptive', practice_id: practice.id, duration_seconds: practiceTime, ond_earned: ondReward.totalOnd, coherence_delta: coherenceDelta });
+      const isFirst = trackTenjinFirstPracticeComplete(t(practice.name), { surface: 'adaptive' });
+      if (isFirst) track('first_practice_complete', { practice_type: 'adaptive', practice_id: practice.id });
+    } else {
+      track('practice_abandon', { practice_type: 'adaptive', practice_id: practice.id, reason: 'incomplete' });
     }
   };
 
@@ -1073,8 +1084,10 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
     //   - 'complete' result screen → no-op (Finish/Stop already fired)
     if (practice) {
       if (practiceState === 'practice') {
+        track('practice_abandon', { practice_type: 'adaptive', practice_id: practice.id, reason: 'stop' });
         trackTenjinPractice('Stop', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
       } else if (practiceState !== 'complete') {
+        track('practice_abandon', { practice_type: 'adaptive', practice_id: practice.id, reason: 'close' });
         trackTenjinPractice('Close', t(practice.name), { surface: 'adaptive', practiceId: practice.id });
       }
     }
