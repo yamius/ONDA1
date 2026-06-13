@@ -1,5 +1,10 @@
 # Paywall Implementation & Roadmap
 
+> **⚠️ Event-name drift:** older iteration notes use `paywall_viewed` /
+> `purchase_succeeded`. The canon (see [`analytics.md`](../architecture/analytics.md))
+> is `paywall_view`, `paywall_cta_tap`, `trial_start`, and `purchase` (the latter
+> fires only on a real not-paid→paid transition; trial start is `trial_start`).
+
 История изменений и план развития пэйволла в ONDA.
 
 См. также: [In-App Purchase](./in-app-purchase.md) — низкоуровневая интеграция RevenueCat/Supabase.

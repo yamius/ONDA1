@@ -1,5 +1,10 @@
 # 🏥 HealthKit Direct Solution
 
+> **⚠️ Correction:** the manual `saveHeartRateToHealthKit` write described below was
+> **removed** — the watch `HKWorkoutSession` auto-saves HR, so the app no longer
+> writes to HealthKit (read-only). See [`permissions-solution.md`](permissions-solution.md)
+> and [`watch-hr-flow.md`](watch-hr-flow.md) for the current flow.
+
 ## 🎯 Суть решения
 
 **Обходим WatchConnectivity полностью!**

@@ -1,5 +1,12 @@
 # Analytics Views Guide
 
+> **⚠️ Event-name drift:** some SQL below uses pre-cleanup event names
+> (`practice_view`, old onboarding→sign_up shape). The canonical event schema is
+> [`../architecture/analytics.md`](../architecture/analytics.md) — `practice_view`
+> was retired (folded into `practice_start`); the funnel is `onboarding_start →
+> onboarding_complete → first_practice_complete → paywall_view → purchase`. Adjust
+> queries to the canon.
+
 This guide explains how to use the built-in analytics views in Supabase to track ONDA metrics.
 
 ## Quick Start
