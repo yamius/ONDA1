@@ -4868,8 +4868,8 @@ const OndaLevel1 = () => {
           // never seen.
           setCameFromFirstRun(true);
           // Same entry point the hub cards use — opens the practice intro
-          // (practice_view fires inside) where the existing free-tier
-          // Start button leads straight into the live session.
+          // where the existing free-tier Start button leads straight into the
+          // live session (practice_start fires when the session begins).
           completePractice(featured.id, featured.maxQnt);
         }
       }
