@@ -535,19 +535,21 @@ const OndaLevel1 = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showOnboarding, onboardingScreen]);
 
-  // Onboarding funnel. onboarding_start fires once on first show;
-  // onboarding_step fires for every screen (1 → 2 → 3) so the Supabase
-  // app_events funnel shows exactly which screen users drop off on.
-  // Tenjin / Axon already get the completion signal via tutorial_complete,
-  // so these stay product-analytics only — no MMP event-name fan-out.
+  // Legacy 3-screen tutorial — DEMOTED to Menu → Intro; NOT shown to new
+  // installs (see showFirstRun below for the live onboarding). Manual replays
+  // still emit the funnel, so every event is tagged source:'menu' to keep them
+  // OUT of the new-user funnel (which filters source:'first_run'). Here
+  // onboarding_step is meaningful (3 screens). Tenjin/Axon get completion via
+  // tutorial_complete separately.
   const onboardingStartTrackedRef = useRef(false);
   useEffect(() => {
     if (!showOnboarding) return;
     if (!onboardingStartTrackedRef.current) {
       onboardingStartTrackedRef.current = true;
-      track('onboarding_start', { att_copy_variant: attCopyVariantRef.current });
+      track('onboarding_start', { source: 'menu', att_copy_variant: attCopyVariantRef.current });
     }
     track('onboarding_step', {
+      source: 'menu',
       step: onboardingScreen,
       total: 3,
       permission:
@@ -556,14 +558,16 @@ const OndaLevel1 = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showOnboarding, onboardingScreen]);
 
-  // First-run welcome funnel: view fires once per install when the screen
-  // first renders. The CTA / skip taps are tracked in dismissFirstRun
-  // (next to the screen's JSX below).
+  // First-run welcome = the LIVE new-install onboarding (one screen). Its view
+  // IS the canonical funnel start for new users → fire onboarding_start with
+  // source:'first_run'. No onboarding_step: one screen has no steps. The
+  // cta/skip outcome rides on onboarding_complete (completed_via) in
+  // dismissFirstRun below.
   useEffect(() => {
     if (!showFirstRun) return;
     if (firstRunShownAtRef.current !== null) return;
     firstRunShownAtRef.current = Date.now();
-    track('first_run_welcome_view', { featured_practice_id: featuredPracticeId });
+    track('onboarding_start', { source: 'first_run', featured_practice_id: featuredPracticeId });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showFirstRun]);
 
@@ -4670,7 +4674,7 @@ const OndaLevel1 = () => {
         const durationSeconds = onboardingStartRef.current
           ? Math.round((Date.now() - onboardingStartRef.current) / 1000)
           : undefined;
-        track('onboarding_complete', { duration_seconds: durationSeconds });
+        track('onboarding_complete', { source: 'menu', duration_seconds: durationSeconds });
         trackTenjinOnboardingComplete(durationSeconds);
         setShowOnboarding(false);
         // Intentionally NOT opening the Auth modal here. The free-tier
@@ -4842,15 +4846,16 @@ const OndaLevel1 = () => {
       const durationSeconds = firstRunShownAtRef.current
         ? Math.round((Date.now() - firstRunShownAtRef.current) / 1000)
         : undefined;
-      // Keeps the MMP signal alive and comparable: tutorial_complete now
-      // means "got past the first-run screen" (1 screen) where it used to
-      // mean "got past the 3-screen tutorial".
-      track('onboarding_complete', { duration_seconds: durationSeconds });
-      trackTenjinOnboardingComplete(durationSeconds);
-      track(via === 'cta' ? 'first_run_welcome_cta' : 'first_run_welcome_skip', {
+      // Live new-user funnel close. completed_via folds the old
+      // first_run_welcome_cta/skip split into a param (one event, variety in
+      // params). Tenjin/Axon still get completion via tutorial_complete.
+      track('onboarding_complete', {
+        source: 'first_run',
+        completed_via: via,
         featured_practice_id: featuredPracticeId,
-        seconds_on_screen: durationSeconds,
+        duration_seconds: durationSeconds,
       });
+      trackTenjinOnboardingComplete(durationSeconds);
       setShowFirstRun(false);
       if (via === 'cta') {
         const featured = circuits

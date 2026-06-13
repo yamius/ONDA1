@@ -25,14 +25,13 @@ import { FirebaseAnalytics } from '@capacitor-community/firebase-analytics';
 export type AnalyticsEventName =
   // Onboarding & Activation
   | 'app_open'
-  | 'onboarding_start'
-  | 'onboarding_step'                  // params: step_index, step_name
-  | 'onboarding_complete'             // ← was Tenjin-only `tutorial_complete`
-  // First-run welcome (one light screen → featured free practice). Unique
-  // events, not dupes — kept distinct from the onboarding_* set.
-  | 'first_run_welcome_view'
-  | 'first_run_welcome_cta'
-  | 'first_run_welcome_skip'
+  | 'onboarding_start'                // params: source (first_run|menu), [att_copy_variant|featured_practice_id]
+  | 'onboarding_step'                 // params: source (menu), step, total, permission — 3-screen tutorial only
+  | 'onboarding_complete'            // params: source, [completed_via: cta|skip] — ← was Tenjin `tutorial_complete`
+  // first_run_welcome_* folded into the onboarding_* funnel: the live one-screen
+  // first-run view = onboarding_start{source:'first_run'}, its cta/skip outcome =
+  // onboarding_complete{completed_via}. The 3-screen tutorial (Menu→Intro) emits
+  // the same events with source:'menu' so manual replays don't pollute the funnel.
   | 'first_practice_complete'         // value-moment; first-ever valid completion
   | 'sign_up'
   | 'sign_in'
