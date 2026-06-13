@@ -76,40 +76,23 @@ function _toSnake(s: string): string {
     .slice(0, 40); // Firebase event-name limit
 }
 
-function _sanitizeFirebaseParams(p?: Record<string, unknown>): Record<string, any> {
-  if (!p) return {};
-  const out: Record<string, any> = {};
-  for (const [k, v] of Object.entries(p)) {
-    if (v === null || v === undefined) continue;
-    const key = _toSnake(k);
-    if (typeof v === 'string') out[key] = v.slice(0, 100);
-    else if (typeof v === 'number' || typeof v === 'boolean') out[key] = v;
-    else out[key] = String(v).slice(0, 100);
-  }
-  return out;
-}
-
-function _logFirebase(eventName: string, params?: Record<string, unknown>): void {
-  // Fire-and-forget; never block the Tenjin call site.
-  (async () => {
-    try {
-      const name = _toSnake(eventName);
-      const safeParams = _sanitizeFirebaseParams(params);
-      const platform = Capacitor.getPlatform();
-      if (platform === 'android') {
-        const { trackEventAndroid, isAndroidBridgeAvailable } = await import('./analytics-bridge');
-        if (isAndroidBridgeAvailable()) {
-          trackEventAndroid(name, safeParams);
-          console.log('[Firebase][android] Event mirrored:', name, safeParams);
-        }
-      } else if (platform === 'ios' && _firebaseReady) {
-        await FirebaseAnalytics.logEvent({ name, params: safeParams });
-        console.log('[Firebase][ios] Event mirrored:', name, safeParams);
-      }
-    } catch (e) {
-      console.warn('[Firebase] mirror failed:', eventName, e);
-    }
-  })();
+// Firebase mirror REMOVED (analytics cleanup, cutover 2026-06-13 / build 1.8.x+).
+//
+// Until now every trackTenjin* helper fired its event into Firebase here AS WELL
+// AS through AnalyticsService — so GA4 received the same action under two names
+// (this file's action_object `start_practice` + AnalyticsService's object_action
+// `practice_start`). That double-pipeline was the root of the GA4 dupes.
+//
+// Firebase/GA4 now flows through ONE typed path — AnalyticsService.track() — and
+// all B-only Firebase events (purchase, onboarding_complete, first_practice_
+// complete, paywall_dismiss, paywall_cta_tap, health_permission) were migrated
+// there BEFORE this mirror was retired, so nothing is lost.
+//
+// Tenjin NATIVE sends (_tenjinEvent) below are UNTOUCHED — install attribution
+// (Axon/MMP, SKAdNetwork CVs) depends on them. identifyTenjinUser keeps its
+// Firebase setUserId (an identity join, not a duplicated event).
+function _logFirebase(_eventName: string, _params?: Record<string, unknown>): void {
+  /* no-op — Firebase now flows only through AnalyticsService.track(); see note above */
 }
 
 // ─── Public API ─────────────────────────────────────────────────────────────
