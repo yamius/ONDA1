@@ -25,7 +25,7 @@ export function LizaChatModal({ isOpen, onClose, initialEmotion }: LizaChatModal
   
   const engine = useMemo(() => {
     const eliza = new Eliza(t, lang);
-    return new ConversationEngine({ eliza, flows, t });
+    return new ConversationEngine({ eliza, flows, t, lang });
   }, [t, lang]);
   const [state, setState] = useState<EngineState>(() => createInitialState());
   const stateRef = useRef<EngineState>(state);

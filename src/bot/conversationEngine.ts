@@ -1,5 +1,6 @@
 // src/bot/conversationEngine.ts
 import { Eliza } from "./eliza";
+import { detectCrisis, crisisMessage } from "./crisisDetection";
 import type { FlowDefinition, FlowStep } from "./flowsTypes";
 
 export type Mode = "eliza" | "flow";
@@ -29,6 +30,8 @@ interface EngineConfig {
   eliza: Eliza;
   flows: FlowDefinition[];
   t: (key: string, vars?: Record<string, unknown>) => string;
+  /** UI language (e.g. 'en','ru') — used for the crisis off-ramp copy. */
+  lang?: string;
 }
 
 export function createInitialState(): EngineState {
@@ -44,12 +47,14 @@ export class ConversationEngine {
   private eliza: Eliza;
   private flows: FlowDefinition[];
   private t: EngineConfig["t"];
+  private lang?: string;
   private flowIndex: Map<string, FlowDefinition>;
 
   constructor(config: EngineConfig) {
     this.eliza = config.eliza;
     this.flows = config.flows;
     this.t = config.t;
+    this.lang = config.lang;
 
     this.flowIndex = new Map(this.flows.map(f => [f.id, f]));
   }
@@ -87,6 +92,13 @@ export class ConversationEngine {
     state: EngineState,
     userInput: { text?: string; value?: string | number }
   ): { state: EngineState; bot: BotMessage } {
+    // Safety first: a self-harm / crisis expression short-circuits everything
+    // (any mode) and surfaces real help. State is left unchanged so the user
+    // can continue afterwards if they choose.
+    if (detectCrisis(userInput.text)) {
+      return { state, bot: { type: "text", text: crisisMessage(this.lang) } };
+    }
+
     if (state.mode === "flow" && state.activeFlowId && state.activeStepId) {
       return this.handleFlowMessage(state, userInput);
     }

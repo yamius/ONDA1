@@ -9,7 +9,15 @@ Liza is **not** a real therapist, doctor, or emergency service, and this is asse
 - `src/bot/eliza.ts:3` — file header: *"IMPORTANT: Not a real therapist or emergency service."*
 - The product copy frames her modestly as a *companion*, not a clinician: `liza.subtitle` = "Your emotional support companion", `liza.greeting` = "Hi! I'm Liza, and I'm here to listen and support you." (`public/locales/en/translation.json:3334`-`3335`).
 
-**Uncertainty / gap to flag:** I found **no explicit crisis / self-harm detection or off-ramp** anywhere in the subsystem. There is no keyword trip for suicide/self-harm, no hotline number, and no hard escalation path. The closest thing to an off-ramp is soft de-escalation inside scripted flows — e.g. an "I'm not ready" branch that routes to a normalizing closing step (`flows.json` `anxiety_basic` → `end_normalize`, `body_scan` → `end_normalize`) — but these are gentle reassurances, not safety interventions. The pattern table (`eliza.ts:70`-`93`) classifies `fear`, `sad`, `anxiety`, `lonely`, etc. into reflective prompts only; distressing input is met with another open question, never a referral. If a crisis-handling requirement exists, it is currently **unmet in this code**.
+**Gap (now FIXED 2026-06-13 — see the update at the end of this paragraph; the description below is the historical "before" state):** the subsystem had **no explicit crisis / self-harm detection or off-ramp** anywhere in the subsystem. There is no keyword trip for suicide/self-harm, no hotline number, and no hard escalation path. The closest thing to an off-ramp is soft de-escalation inside scripted flows — e.g. an "I'm not ready" branch that routes to a normalizing closing step (`flows.json` `anxiety_basic` → `end_normalize`, `body_scan` → `end_normalize`) — but these are gentle reassurances, not safety interventions. The pattern table (`eliza.ts:70`-`93`) classifies `fear`, `sad`, `anxiety`, `lonely`, etc. into reflective prompts only; distressing input is met with another open question, never a referral. If a crisis-handling requirement exists, it was previously **unmet in this code**.
+>
+> **✅ Update (2026-06-13):** a crisis off-ramp now exists. `src/bot/crisisDetection.ts`
+> (`detectCrisis()` — a union keyword match across all 5 languages) is checked at the
+> top of `ConversationEngine.handleUserMessage` **before** any ELIZA/flow handling and
+> short-circuits to `crisisMessage(lang)`: a gentle, localized (en/es/ru/uk/zh) message
+> leading with findahelpline.com + a national line (US 988, RU 8-800-2000-122, UA 7333,
+> ES 024) + local emergency, in the same honest "not a therapist" framing. It surfaces
+> resources; it does not diagnose or auto-escalate.
 
 ## Architecture
 
