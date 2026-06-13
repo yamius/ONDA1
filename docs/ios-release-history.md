@@ -6,8 +6,8 @@
 
 ---
 
-## 1.8.0 — 2026 (TBD)
-_App Store version: 1.2.0_
+## 1.8.0 — 2026 ✅ LIVE
+_App Store version: 1.2.0 — **released to the public App Store**. Camera-pulse reached users in this release._
 
 **Headline:** Camera-based fingertip pulse (PPG) — live heart rate
 without an Apple Watch.
@@ -53,8 +53,9 @@ without an Apple Watch.
 
 ## Текущий статус
 
-- **Открытый трейн (1.8.0):** `MARKETING_VERSION` поднят 1.7.9 → 1.8.0 — теперь несёт **камеру-пульс (fingertip PPG)** во всех практиках + честные метрики (Pulse|Breathing → Coherence; стресс/энергия больше не покидают устройство) + онбординг-полиш + privacy-апдейт (§1.6, usage-strings, App Privacy: +Health/Audio, −Fitness). Готовится к сабмиту — детали в секции [1.8.0](#180--2026-tbd) в начале файла. В main также CI-фикс: `gem install fastlane multi_json` (раннер-образ `20260527` выронил `multi_json`, fastlane падал на старте).
-- **LIVE в App Store:** `1.7.9` — ✅ **APPROVED 2026-06-05** (submitted 2026-06-04). Два фикса: **(1) practice-audio resume** — фоновое аудио в WKWebView невозможно (WebKit паузит `<audio>` при сворачивании, не лечится `AVAudioSession`), поэтому аудио-эксперимент откачен (`.playback` + `audio` в UIBackgroundModes; последнее ещё и App-Review-2.5.4-риск) и добавлен foreground-resume в `PracticeAudioPlayer` (при возврате музыка сразу возобновляется). **(2) watch dead-man's-switch** — `HKWorkoutSession` на часах сам завершается через ~45с тишины от телефона, чтобы force-quit iPhone-приложения не оставлял часы стримить пульс (дренаж) вечно.
+- **В работе (1.8.1):** ветка `claude/analytics-cleanup` (ещё не в main — ждёт DebugView re-check). Внутренняя чистка аналитики (purchase not-paid→paid; онбординг-воронка на live first-run) + унификация версии 1.8.0 → 1.8.1. **Дельта пользовательски невидима** → What's New = короткая reliability-нота (камера уже у людей с 1.8.0). Детали — секция [1.8.1](#181--tbd) в архиве.
+- **LIVE в App Store:** `1.8.0` — ✅ **released** (per owner). Несёт **камеру-пульс (fingertip PPG)** во всех практиках + честные метрики (Pulse|Breathing → Coherence; стресс/энергия не покидают устройство) + онбординг-полиш + privacy-апдейт (§1.6, usage-strings, App Privacy: +Health/Audio, −Fitness). Публичный номер показывал 1.2.0. CI-фикс fastlane (`multi_json`). Детали — секция [1.8.0](#180--2026--live) в начале файла.
+- **Предыдущий live:** `1.7.9` — ✅ **APPROVED 2026-06-05** (submitted 2026-06-04). Два фикса: **(1) practice-audio resume** — фоновое аудио в WKWebView невозможно (WebKit паузит `<audio>` при сворачивании, не лечится `AVAudioSession`), поэтому аудио-эксперимент откачен (`.playback` + `audio` в UIBackgroundModes; последнее ещё и App-Review-2.5.4-риск) и добавлен foreground-resume в `PracticeAudioPlayer` (при возврате музыка сразу возобновляется). **(2) watch dead-man's-switch** — `HKWorkoutSession` на часах сам завершается через ~45с тишины от телефона, чтобы force-quit iPhone-приложения не оставлял часы стримить пульс (дренаж) вечно.
 - **Предыдущий live:** `1.7.8` — ✅ **APPROVED 2026-06-04** (submitted 2026-06-03). Батарейный билд (из ветки `claude/workout-lifecycle-battery`): **workout-session lifecycle fix** (сессия активна ⟺ foreground ∨ практика, иначе стоп + `discardWorkout` → больше нет «весь день» дренажа + Apple Fitness чистый; autonomy во время практики сохранена) + watch «Paused» idle-текст + home waveform tap-to-emphasise линии. Ноты version-agnostic, demo-логин не нужен. _(Параллельно в main влита landing-фича `/tools/hrv` — веб-сайт, к iOS-билду отношения не имеет.)_
 - **Предыдущий live:** `1.7.7` — ✅ **APPROVED 2026-06-03**. Onboarding-HealthKit-лист включает HRV (reach) + reliability-fix live Coherence/stress/energy (отвязаны от флапающего `isConnected`) + AdServices weak-link (Tenjin ASA).
 - **LIVE в App Store:** `1.7.6` — ✅ **APPROVED 2026-06-02** (submitted 2026-05-31). Build `202605310519` (= CFBundleShortVersionString 1.7.6) под записью ASC «1.1.6». **Один билд = всё сразу:** SKAdNetwork attribution (ASA + Reddit, ATT-ключ удалён, TenjinSDK pinned) + live Coherence на практике (HR-RSA delta-волна) + Resting HRV trend на home (реальный HealthKit SDNN + числа + HRV read-auth fix) + home reorder/highlight + R1-1 guiding register. Чистый аппрув: метаданные согласованы с приложением (live = Coherence, trend = real HRV; «beat-to-beat»/«Live HRV»-overclaim убраны), honesty-линия выдержана, Voice/Face/face-data вопросы не всплыли. Demo-логин не требовался (free-tier sampler без авторизации).
@@ -118,8 +119,8 @@ without an Apple Watch.
 | **1.7.7** | 2026-06-02 | ✅ **APPROVED / LIVE** | Approved 2026-06-03. Onboarding-лист включает HRV + reliability-fix live Coherence/stress/energy (не завязаны на `isConnected`) + AdServices weak-link (Tenjin ASA) |
 | **1.7.8** | 2026-06-03 | ✅ **APPROVED / LIVE** | Approved 2026-06-04. Из ветки `workout-lifecycle-battery`. Workout-session lifecycle fix (foreground∨практика, иначе стоп+discard → батарея/Apple Fitness) + watch «Paused» + home waveform tap-to-emphasise |
 | **1.7.9** | 2026-06-04 | ✅ **APPROVED / LIVE** | Approved 2026-06-05. (1) Откат фон-аудио эксперимента + foreground-resume практического аудио. (2) Watch dead-man's-switch: `HKWorkoutSession` сам завершается через ~45с тишины от телефона (force-quit больше не оставляет часы стримить вечно) |
-| **1.8.0** | 2026-06-05 | ✅ **APPROVED** (per owner) | **Камера-пульс (fingertip PPG)** во всех практиках + честные метрики (стресс/энергия не покидают устройство) + онбординг-полиш + privacy (§1.6, usage-strings, App Privacy ±). CI-фикс fastlane (`multi_json`). Детали — секция 1.8.0 |
-| **1.8.1** | 2026-06-13 | **open / prep** | = 1.8.0 + внутренняя чистка аналитики (ветка `claude/analytics-cleanup`): purchase not-paid→paid, онбординг-воронка на live first-run. **Дельта 1.8.0→1.8.1 пользовательски невидима.** Версия унифицирована с публичной. What's New / Reviewer Notes **reused from 1.8.0** |
+| **1.8.0** | 2026-06-05 | ✅ **LIVE** (per owner) | **Камера-пульс (fingertip PPG)** во всех практиках + честные метрики (стресс/энергия не покидают устройство) + онбординг-полиш + privacy (§1.6, usage-strings, App Privacy ±). CI-фикс fastlane (`multi_json`). Публичный номер 1.2.0. Детали — секция 1.8.0 |
+| **1.8.1** | 2026-06-13 | **open / prep** | = 1.8.0 + внутренняя чистка аналитики (ветка `claude/analytics-cleanup`): purchase not-paid→paid, онбординг-воронка на live first-run. **Дельта 1.8.0→1.8.1 пользовательски невидима** → What's New = короткая reliability-нота (1.8.0 уже live, камера у людей) |
 
 ---
 
@@ -262,77 +263,30 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 
 **Что в билде:** = всё из 1.8.0 (камера-пульс fingertip PPG + честные метрики Pulse|Breathing→Coherence + онбординг-полиш + privacy §1.6) ПЛЮС внутренняя чистка аналитики (ветка `claude/analytics-cleanup`, ещё не в main — ждёт DebugView re-check): Firebase `purchase` фаится только на реальном переходе not-paid→paid (restore / переустановка / renewal больше не раздувают GA4-выручку); онбординг-воронка сведена на живой one-screen first-run (`onboarding_start/complete` с `source`, `first_run_welcome_*` убраны); единый Firebase-путь. **Дельта 1.8.0→1.8.1 — пользовательски НЕвидимая** (внутренние события аналитики). Версия унифицирована: MARKETING_VERSION 1.8.0 → 1.8.1 (свести с публичным номером, который показывал 1.2.0). Demo-логин не нужен (free-tier sampler).
 
-**Решение по копирайту:** What's New и Reviewer Notes **переиспользованы из 1.8.0** — камера-пульс ещё НЕ доходил до публики (последнее live по фичам — 1.7.9), поэтому 1.8.1 несёт камеру людям впервые и история та же. Аналитический фикс юзеру невидим → отдельной строки в What's New не требует («Polish and reliability fixes throughout» уже накрывает). Reviewer Notes 1.8.0 прошли чистый аппрув и адресуют camera=fingertip-not-face (класс реджекта 1.7.4) — переиспользуем как наименее рисковые. _Если к моменту сабмита 1.8.0 уже зарелижена людям — заменить What's New на короткую reliability-ноту (камера будет «старой» новостью)._
+**Решение по копирайту:** 1.8.0 **уже live** в App Store (камера-пульс у людей), поэтому 1.8.1 — maintenance-инкремент с **пользовательски невидимой** дельтой (внутренняя аналитика). What's New = короткая честная reliability-нота, без ложных фич-клеймов (restore-опыт юзера не менялся — поменялся только внутренний учёт события `purchase`; камера — уже не новость). Reviewer Notes = короткий reliability-follow-up в стиле 1.7.9, без повторного открытия темы камеры (одобрена в 1.8.0) — меньше surface для вопросов. Полный камера-пульс копирайт, если понадобится откатиться, — в секции [1.8.0](#180--2026--live) выше.
 
 **What's New (EN):**
-> Your pulse, live — no watch required.
->
-> Rest a fingertip on the rear camera and watch your heart rate respond in real time. It's all processed on your phone; nothing leaves the device.
->
-> Also in this release:
-> - Onboarding takes you straight into your first practice.
-> - A cleaner home screen — we kept the signals that actually train your nervous system (your pulse and your breathing) and dropped the noise.
-> - Polish and reliability fixes throughout.
->
-> With an Apple Watch, you'll also see your live coherence score during practice — your vagal brake, made visible.
+> Behind-the-scenes improvements and fixes to keep ONDA running smoothly.
+> Thanks for training your nervous system with us.
 
 **What's New (RU):**
-> Твой пульс — вживую, без часов.
->
-> Приложи палец к задней камере и смотри, как пульс откликается в реальном времени. Всё обрабатывается на телефоне; ничего не покидает устройство.
->
-> Также в этом релизе:
-> - Онбординг сразу ведёт к твоей первой практике.
-> - Чище главный экран — оставили сигналы, которые реально тренируют нервную систему (пульс и дыхание), и убрали шум.
-> - Полировка и исправления стабильности.
->
-> С Apple Watch ты также увидишь живой показатель когерентности во время практики — твой вагальный тормоз, ставший видимым.
+> Улучшения и исправления под капотом, чтобы ONDA работала стабильнее.
+> Спасибо, что тренируешь нервную систему вместе с нами.
 
 <details>
-<summary>Reviewer Notes (= 1.8.0, проверенные аппрувом)</summary>
+<summary>Reviewer Notes (short reliability-follow-up)</summary>
 
 ```
 Dear App Review Team,
 
-Thanks for reviewing ONDA.
+This is a maintenance update to the previously approved build. It contains
+internal analytics and reliability improvements only — there are no changes
+to features, permissions, data collection, third-party SDKs, sign-in, or
+in-app purchases.
 
-NO ACCOUNT NEEDED
-The first three practices are free and require no sign-in. You can
-experience the core app immediately.
-
-CAMERA = FINGERTIP PULSE, NOT FACE DATA
-The camera permission is for a fingertip pulse reading
-(photoplethysmography), similar to a pulse oximeter. The user rests a
-fingertip over the REAR camera lens; the flash turns on; the app reads
-subtle color changes to estimate heart rate. It does not capture,
-analyze, or store facial data for this feature.
-
-Privacy: the pulse signal is processed entirely on-device. It is not
-written to disk, saved to Apple Health, or transmitted off the device.
-The camera permission is requested just-in-time and is never required to
-use the app.
-
-HOW TO TEST CAMERA PULSE
-- Use a physical device — the Simulator has no camera.
-- Good, steady lighting helps.
-- Cover the rear lens fully with a fingertip; the flash turns on
-  automatically.
-- Hold ~5–10 seconds. A "searching" state is normal until the signal
-  locks; a number appears only when the reading is confident.
-
-HEALTHKIT (READ-ONLY)
-With permission, the app reads heart rate, heart-rate variability, and
-sleep to personalize sessions and show a resting-HRV trend. Nothing is
-written to Apple Health.
-
-COHERENCE (WELLNESS, NOT MEDICAL)
-The live coherence score is a wellness feature, not a medical
-measurement, and requires an Apple Watch for live readings.
-
-VOICE CHECK (OPTIONAL)
-If you try the optional Voice Check, a short audio clip is sent to Hume
-AI for emotion analysis, as disclosed in our privacy policy
-(onda-life.com/privacy)
+No account or sign-in is required to review — the first three practices are
+free and available immediately on launch. Our privacy policy at
+https://onda-life.com/privacy remains accurate.
 
 Thank you!
 
