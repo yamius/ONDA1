@@ -86,11 +86,13 @@ jobs:
           STORE_PASS="${{ secrets.KEYSTORE_PASSWORD }}"
           KEY_PASS="${{ secrets.KEY_PASSWORD }}"
           
-          # Use defaults if secrets are empty
+          # Alias may default; passwords MUST come from secrets — never hardcode.
           : ${ALIAS:=onda}
-          : ${STORE_PASS:=onda2024secure}
-          : ${KEY_PASS:=onda2024secure}
-          
+          if [ -z "${STORE_PASS}" ] || [ -z "${KEY_PASS}" ]; then
+            echo "::error::KEYSTORE_PASSWORD / KEY_PASSWORD secrets are not set. Refusing to generate a keystore with a default password. Set the repo secrets first."
+            exit 1
+          fi
+
           keytool -genkeypair -v -keystore android-webview/app/onda-release.keystore -alias "${ALIAS}" -keyalg RSA -keysize 2048 -validity 10000 -storepass "${STORE_PASS}" -keypass "${KEY_PASS}" -dname "CN=ONDA, OU=MindfulTech, O=ONDA, L=Moscow, ST=Moscow, C=RU"
           
           # Verify new keystore
@@ -115,9 +117,13 @@ jobs:
         # ИЛИ если это пустой выбор в ветке main
         if: github.event.inputs.build_type == 'release' || (github.event.inputs.build_type == '' && github.ref == 'refs/heads/main')
         env:
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD || 'onda2024secure' }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD || 'onda2024secure' }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
+          if [ -z "${KEYSTORE_PASSWORD}" ] || [ -z "${KEY_PASSWORD}" ]; then
+            echo "::error::KEYSTORE_PASSWORD / KEY_PASSWORD secrets are not set — cannot sign a release build."
+            exit 1
+          fi
           cd android-webview
           ./gradlew assembleRelease --stacktrace
       
