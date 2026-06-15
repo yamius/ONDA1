@@ -1120,6 +1120,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1915,
     "height": 821
   },
+  "/og-emoton.avif": {
+    "width": 1200,
+    "height": 630
+  },
+  "/og-emoton.png": {
+    "width": 1200,
+    "height": 630
+  },
+  "/og-emoton.webp": {
+    "width": 1200,
+    "height": 630
+  },
   "/og-preview.avif": {
     "width": 1200,
     "height": 630

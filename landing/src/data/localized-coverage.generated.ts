@@ -15,7 +15,7 @@ export const LOCALIZED_COVERAGE: Record<string, { articles: Set<string>; glossar
   uk: {
     articles: new Set([]),
     glossary: new Set([]),
-    reviews: new Set(['', 'apple-watch-series-11', 'autosleep', 'bettersleep', 'compare/best-hrv-trackers-2026', 'compare/best-sleep-apps-2026', 'endel', 'fitbit-charge-6', 'garmin-venu-4', 'methodology', 'oura-ring-4', 'pillow', 'polar-h10', 'pzizz', 'ringconn-gen-2', 'rise', 'samsung-galaxy-ring', 'sleep-as-android', 'sleep-cycle', 'sleepio', 'sleepscore', 'ultrahuman-ring-air', 'whoop-5-0', 'withings-scanwatch']),
+    reviews: new Set(['', 'apple-watch-series-11', 'autosleep', 'balance', 'bettersleep', 'buddhify', 'calm', 'compare/best-hrv-trackers-2026', 'compare/best-meditation-apps-2026', 'compare/best-sleep-apps-2026', 'endel', 'fitbit-charge-6', 'garmin-venu-4', 'happier-meditation', 'headspace', 'healthy-minds-program', 'insight-timer', 'medito', 'methodology', 'oura-ring-4', 'pillow', 'polar-h10', 'pzizz', 'ringconn-gen-2', 'rise', 'samsung-galaxy-ring', 'sleep-as-android', 'sleep-cycle', 'sleepio', 'sleepscore', 'smiling-mind', 'ultrahuman-ring-air', 'waking-up', 'whoop-5-0', 'withings-scanwatch']),
   },
   zh: {
     articles: new Set([]),
