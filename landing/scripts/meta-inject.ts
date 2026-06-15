@@ -13,6 +13,7 @@ import { getArticleBySlug } from '../src/data/articles'
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
+import { EMOTON_FAQ } from '../src/data/emoton-faq'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
 import { HR_ZONE_FAQ } from '../src/data/hr-zones'
@@ -416,6 +417,8 @@ export interface RouteMeta {
   faq?: { mainEntity: { question: string; answer: string }[]; url: string }
   contactPage?: { name: string; description: string; url: string; email: string }
   aboutPage?: { name: string; description: string; url: string }
+  /** SoftwareApplication JSON-LD (a free web tool, e.g. /emoton). */
+  softwareApplication?: { name: string; description: string; url: string; category: string }
   /** Dedicated research-partnership landing — emitted as schema.org/ResearchProject. */
   researchProject?: { name: string; description: string; url: string }
   creativeWork?: { name: string; description: string; url: string; about: string[] }
@@ -1113,6 +1116,21 @@ function buildAboutPageJsonLd(name: string, description: string, url: string): s
   return JSON.stringify(aboutPage)
 }
 
+function buildSoftwareApplicationJsonLd(app: NonNullable<RouteMeta['softwareApplication']>): string {
+  return JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: app.name,
+    description: app.description,
+    url: app.url,
+    applicationCategory: app.category,
+    operatingSystem: 'Web',
+    browserRequirements: 'Requires JavaScript',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    isAccessibleForFree: true,
+  })
+}
+
 /**
  * HowTo JSON-LD for an article's practical protocols. Each HowToStep
  * carries a deep-link `url` to its anchored protocol block on the page,
@@ -1377,6 +1395,28 @@ export function getMetaForRoute(route: string): RouteMeta {
         name: 'About ONDA Life',
         description: ABOUT_DESC,
         url,
+      },
+    }
+  }
+  if (route === '/emoton') {
+    // title/description are overridden per-language by applyLocalizedMeta
+    // (prerender.ts) from locales/<lang>/emoton.json; kept here as the EN base.
+    return {
+      title: "Feelings Wheel — Name What You're Feeling · Emoton",
+      description:
+        'A free interactive feelings wheel. Name what you feel right now, then take a quiet moment to be with it — no sign-up, no diagnosis, no advice.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/og-emoton.png`,
+      imageAlt: 'Emoton — a feelings wheel to name what you feel',
+      faq: { mainEntity: EMOTON_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      softwareApplication: {
+        name: 'Emoton — Feelings Wheel',
+        description:
+          'A free interactive feelings wheel: name what you feel, then be with it. No account, no diagnosis.',
+        url,
+        category: 'HealthApplication',
       },
     }
   }
@@ -2872,6 +2912,11 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (meta.aboutPage) {
     const aboutScript = `<script type="application/ld+json">${buildAboutPageJsonLd(meta.aboutPage.name, meta.aboutPage.description, meta.aboutPage.url)}</script>`
     out = out.replace('</head>', `  ${aboutScript}\n</head>`)
+  }
+
+  if (meta.softwareApplication) {
+    const appScript = `<script type="application/ld+json">${buildSoftwareApplicationJsonLd(meta.softwareApplication)}</script>`
+    out = out.replace('</head>', `  ${appScript}\n</head>`)
   }
 
   // JSON-LD: CreativeWork (level pages)

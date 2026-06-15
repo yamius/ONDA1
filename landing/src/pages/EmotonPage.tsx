@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { langFromPath, langHref } from '../i18n';
 import {
   ZONE_ORDER,
   ZONES,
@@ -38,6 +40,8 @@ const surface = 'rounded-2xl border border-white/10 bg-white/5';
 
 export function EmotonPage() {
   const { t } = useTranslation('emoton');
+  const { pathname } = useLocation();
+  const lang = langFromPath(pathname);
   const [step, setStep] = useState<Step>('presence');
   const [zone, setZone] = useState<ZoneId | null>(null);
   const [shade, setShade] = useState<string | null>(null);
@@ -160,7 +164,8 @@ export function EmotonPage() {
           : 'description_no_pick';
 
   return (
-    <div className="relative mx-auto flex min-h-[80vh] max-w-md flex-col items-center overflow-x-hidden px-5 pb-10 -mt-4 pt-0 text-white">
+    <>
+      <div className="relative mx-auto flex min-h-[80vh] max-w-md flex-col items-center overflow-x-hidden px-5 pb-10 -mt-4 pt-0 text-white">
       <style>{`
         @keyframes emoton-swell { 0% { transform: scale(0.7); opacity:.7 } 50% { transform: scale(1.06); opacity:1 } 100% { transform: scale(0.74); opacity:.8 } }
         @keyframes emoton-rise  { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
@@ -184,7 +189,7 @@ export function EmotonPage() {
               <span className="text-3xl font-light tracking-wide text-white/90">{t('be_with.self_label')}</span>
             </button>
             <div className="absolute left-1/2 top-full w-[80vw] max-w-xs -translate-x-1/2 text-center">
-              <h1 className="mt-8 text-2xl font-semibold">{t('presence.title')}</h1>
+              <p className="mt-8 text-2xl font-semibold">{t('presence.title')}</p>
               <p className="mt-2 text-sm leading-relaxed text-white/60">{t('presence.description')}</p>
             </div>
           </div>
@@ -490,7 +495,44 @@ export function EmotonPage() {
           {t('start_over')}
         </button>
       )}
-    </div>
+      </div>
+
+      {/* SEO: prerendered text + FAQ below the immersive tool (the page's only H1).
+          Lands in the SSR/prerendered HTML — the main ranking lever for a tool with
+          almost no copy. Lead from the searched concept ("feelings wheel"). */}
+      <section className="mx-auto max-w-2xl px-5 pb-16 text-left text-white/80">
+        <h1 className="text-2xl font-bold tracking-tight text-white">{t('seo.h1')}</h1>
+
+        <h2 className="mt-8 text-lg font-semibold text-white">{t('seo.intro_h2')}</h2>
+        <p className="mt-2 text-sm leading-relaxed text-white/65">{t('seo.intro_p')}</p>
+
+        <h2 className="mt-6 text-lg font-semibold text-white">{t('seo.how_h2')}</h2>
+        <p className="mt-2 text-sm leading-relaxed text-white/65">{t('seo.how_p')}</p>
+
+        <h2 className="mt-6 text-lg font-semibold text-white">{t('seo.bewith_h2')}</h2>
+        <p className="mt-2 text-sm leading-relaxed text-white/65">{t('seo.bewith_p')}</p>
+
+        <h2 className="mt-6 text-lg font-semibold text-white">{t('seo.felt_h2')}</h2>
+        <p className="mt-2 text-sm leading-relaxed text-white/65">{t('seo.felt_p')}</p>
+
+        <h2 className="mt-8 text-lg font-semibold text-white">{t('seo.faq_h2')}</h2>
+        <div className="mt-3 space-y-4">
+          {(t('seo.faq', { returnObjects: true }) as unknown as Array<{ q: string; a: string }>).map((f) => (
+            <div key={f.q}>
+              <h3 className="text-sm font-semibold text-white/90">{f.q}</h3>
+              <p className="mt-1 text-sm leading-relaxed text-white/60">{f.a}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10 border-t border-white/10 pt-6 text-sm text-white/55">
+          {t('seo.related_label')}{' '}
+          <Link to={langHref('/tools/hrv', lang)} className="text-cyan-300 underline-offset-2 hover:underline">{t('seo.related_hrv')}</Link>
+          <span className="mx-2 text-white/25">·</span>
+          <Link to={langHref('/', lang)} className="text-cyan-300 underline-offset-2 hover:underline">{t('seo.related_home')}</Link>
+        </div>
+      </section>
+    </>
   );
 }
 

@@ -1,9 +1,32 @@
 {
   "meta": {
-    "title": "Emoton — name what you feel | ONDA",
-    "description": "A calm emotional check-in: name what's most alive, choose what you need, and continue into a breathing practice with a live signal. Agency, never assessment."
+    "title": "Feelings Wheel — Name What You're Feeling · Emoton",
+    "description": "A free interactive feelings wheel. Name what you feel right now, then take a quiet moment to be with it — no sign-up, no diagnosis, no advice."
   },
-  "page_title": "Emoton — name what you feel | ONDA",
+  "page_title": "Feelings Wheel — Name What You're Feeling · Emoton",
+  "seo": {
+    "h1": "Feelings wheel: name what you're feeling",
+    "intro_h2": "What is Emoton?",
+    "intro_p": "Emoton is a free interactive feelings wheel — an emotional check-in you can do in under a minute. Touch your “I”, see what's most alive right now, and pick the word closest to it. No sign-up, no account, nothing saved.",
+    "how_h2": "How to name what you're feeling",
+    "how_p": "Not sure what am I feeling? Start broad — choose the area that's loudest, then the shade nearest to it. Naming your feeling is the whole practice: putting a feeling into words already changes how it sits.",
+    "bewith_h2": "Be with it — not fix it",
+    "bewith_p": "Once you've named it, you can simply be with an emotion — let it be here for a moment instead of fixing it or pushing it away. That's how to sit with your feelings: not solving, just keeping it company.",
+    "felt_h2": "Felt states, not a diagnosis",
+    "felt_p": "Emoton works with felt states, not diagnoses. It never reads, scores, or labels you — you name what you feel, and the tool only holds the space. If you continue into a practice, the camera reads pulse only, on your device.",
+    "faq_h2": "Questions people ask",
+    "faq": [
+      { "q": "What is a feelings wheel?", "a": "A circular map of emotions you pick from to find the word closest to what you feel." },
+      { "q": "How do I know what I'm feeling?", "a": "Start broad: choose the area that's loudest right now, then the shade nearest. It doesn't have to be exact." },
+      { "q": "Is it free?", "a": "Yes — no account, no sign-up, nothing is saved." },
+      { "q": "Does it analyse or diagnose my emotions?", "a": "No. Emoton never reads, scores, or labels you. You name what you feel; it just holds the space." },
+      { "q": "What does “be with it” mean?", "a": "Instead of fixing or pushing a feeling away, you let it be here a moment. Often that's what it was waiting for." },
+      { "q": "Do I have to turn on my camera?", "a": "Only if you choose a practice, and it reads pulse only, on your device." }
+    ],
+    "related_label": "More from ONDA Life:",
+    "related_hrv": "Quick HRV check",
+    "related_home": "Train your nervous system"
+  },
   "presence": {
     "title": "Here you are.",
     "description": "Take one breath. When you're ready, touch your I and feel what's most alive in you right now.",
