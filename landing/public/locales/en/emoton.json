@@ -79,7 +79,7 @@
   "own": {
     "meta": "You named it",
     "title": "Me and my {{shade}}.",
-    "description": "It's here, and it's yours.\nWhat do you want with it right now?"
+    "description": "It's here, and it's yours.\nHow do you want to be with this right now?"
   },
   "action": {
     "be_with": "Be with it",
@@ -153,7 +153,7 @@
     "describe_cta": "Describe the feeling",
     "ready_cta": "When you're ready",
     "stay_longer": "Stay longer · or close",
-    "description_no_pick": "You're bigger than this feeling — it lives within you. Let it rise, and let it settle on its own.",
+    "description_no_pick": "It lives within you. Let it rise, and let it settle on its own.",
     "description_with_pick": "It feels {{word}}. Noticed — that's enough.",
     "soak": "Your {{shade}} is here — stay with it. Let it fill you.",
     "near": "Let it be — no rush.",
@@ -186,7 +186,8 @@
     "lifeline_title": "988 — Suicide & Crisis Lifeline",
     "lifeline_call": "Call or text",
     "lifeline_number": "988",
-    "lifeline_hours": "(US, 24/7), or chat at",
+    "lifeline_hours": "(US, 24/7)",
+    "lifeline_url": "https://988lifeline.org",
     "close_cta": "Close"
   },
   "assimilation": {

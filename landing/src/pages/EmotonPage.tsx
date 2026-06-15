@@ -435,8 +435,9 @@ export function EmotonPage() {
           <div className={`${surface} mt-6 w-full px-5 py-4 text-sm`}>
             <p className="font-semibold text-white/90">{t('support.lifeline_title')}</p>
             <p className="mt-1 text-white/60">
-              {t('support.lifeline_call')} <span className="text-cyan-300">{t('support.lifeline_number')}</span> {t('support.lifeline_hours')}{' '}
-              <a href="https://988lifeline.org" className="text-cyan-300 underline underline-offset-2" target="_blank" rel="noreferrer">988lifeline.org</a>.
+              {t('support.lifeline_call')}{' '}
+              <a href={t('support.lifeline_url')} className="text-cyan-300 underline underline-offset-2" target="_blank" rel="noreferrer">{t('support.lifeline_number')}</a>
+              {t('support.lifeline_hours') ? ` ${t('support.lifeline_hours')}` : ''}
             </p>
           </div>
           <button onClick={restart} className="mt-6 text-xs text-white/45 underline underline-offset-4 hover:text-white/70">

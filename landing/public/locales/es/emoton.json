@@ -71,7 +71,7 @@
     "despondency": "desánimo",
     "lostness": "desorientación",
     "detachment": "desapego",
-    "numbness": "entumecimiento",
+    "numbness": "embotamiento",
     "apathy": "apatía",
     "indifference": "indiferencia",
     "shame": "vergüenza"
@@ -248,7 +248,7 @@
     "describe_cta": "Describir el sentimiento",
     "ready_cta": "Cuando estés listo",
     "stay_longer": "Quedarse más · o cerrar",
-    "description_no_pick": "Eres más grande que este sentimiento — vive dentro de ti. Deja que suba y deja que se asiente por sí solo.",
+    "description_no_pick": "Vive dentro de ti. Deja que suba y deja que se asiente por sí solo.",
     "description_with_pick": "Se siente {{word}}. Notado — con eso basta.",
     "soak": "Tu {{shade}} está aquí — quédate con {{pronInst}}. Deja que te llene.",
     "near": "Déja{{pronDat}} estar, sin prisa.",
@@ -279,9 +279,10 @@
     "title": "Parece que ahora mismo es mucho.",
     "description": "A veces ayuda no quedarse con ello a solas. Hablar con alguien es un paso fuerte, no una debilidad.",
     "lifeline_title": "Línea de ayuda en crisis",
-    "lifeline_call": "Llama o escribe",
-    "lifeline_number": "988",
-    "lifeline_hours": "(EE. UU., 24/7), o chatea en",
+    "lifeline_call": "Encuentra una línea en tu país",
+    "lifeline_number": "findahelpline.com",
+    "lifeline_hours": "",
+    "lifeline_url": "https://findahelpline.com",
     "close_cta": "Cerrar"
   },
   "assimilation": {
