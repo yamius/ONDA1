@@ -55,8 +55,20 @@
   },
   "own": {
     "meta": "You named it",
-    "title": "I feel {{shade}}.",
-    "description": "It's here, and it's yours. What do you want with it right now?"
+    "title": "Me and my {{shade}}.",
+    "description": "It's here, and it's yours.\nWhat do you want with it right now?"
+  },
+  "action": {
+    "be_with": "Be with it",
+    "know": "I know what to do with this",
+    "practice": {
+      "regulated": "Deepen it",
+      "expansive": "Channel it into action",
+      "fight": "Let the charge settle",
+      "flight": "Ground and exhale",
+      "freeze": "Gently come back",
+      "grief": "Breathe through it"
+    }
   },
   "want": {
     "calm_down": "Calm down",
@@ -119,7 +131,14 @@
     "ready_cta": "When you're ready",
     "stay_longer": "Stay longer · or close",
     "description_no_pick": "You're bigger than this feeling — it lives within you. Let it rise, and let it settle on its own.",
-    "description_with_pick": "It feels {{word}}. Noticed — that's enough."
+    "description_with_pick": "It feels {{word}}. Noticed — that's enough.",
+    "soak": "Your {{shade}} is here — stay with it. Let it fill you.",
+    "near": "Let it be — no rush.",
+    "soft": "Something's there, faint as it is — stay with it.",
+    "camera_cta": "Connect the camera",
+    "camera_title": "See your pulse respond live",
+    "camera_hint": "Rest a fingertip on the rear camera and watch your pulse move with your breath.",
+    "finish_cta": "Finish"
   },
   "quality": {
     "heavy": "heavy",
@@ -134,8 +153,8 @@
     "numb": "numb"
   },
   "release": {
-    "title": "Then that's your answer.",
-    "description": "Go do it — the breath can wait. Naming what you need is the practice, this time.",
+    "title": "You named it — and it's yours.",
+    "description": "That's already enough. You know what to do with it — do it your way, at your pace.",
     "close_cta": "Close"
   },
   "support": {
@@ -150,7 +169,10 @@
   "assimilation": {
     "title": "You stayed with it.",
     "description": "You breathed even when it wasn't easy. That's the capacity you're building — carry it with you.",
-    "close_cta": "Close"
+    "close_cta": "Close",
+    "invite": "Continue your journey in the ONDA Life app and meet all your capacities.",
+    "app_store": "Download on the App Store",
+    "google_play": "Get it on Google Play"
   },
   "start_over": "start over"
 }

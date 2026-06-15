@@ -1,21 +1,18 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   ZONE_ORDER,
   ZONES,
-  wantsForZone,
-  resolveBranch,
   requiresFirstMove,
   isHopelessnessShade,
-  beWithMoves,
-  QUALITY_WORDS,
   type ZoneId,
-  type WantOption,
   type RoutedBranch,
 } from '../lib/emotonCore';
 import { LandingPractice } from '../components/emoton/LandingPractice';
 import { FeelingShape } from '../components/emoton/FeelingShape';
 import { ADAPTIVE_PRACTICES } from '../data/adaptivePractices';
+import { useCameraPpg } from '../hooks/useCameraPpg';
+import { appStoreUrl } from '../config/appStore';
 
 /**
  * Emoton — the deliberate, owned emotional check-in ("I name what I feel").
@@ -48,19 +45,54 @@ export function EmotonPage() {
   // Я proportion for the be-with gauge — drives graded moves + the support
   // trigger. NEVER shown as a number; conveyed via the circle region sizes.
   const [selfFraction, setSelfFraction] = useState(0.5);
-  const [describePick, setDescribePick] = useState<string | null>(null);
+  // Live camera pulse for the be-with step (idle until the user taps "connect").
+  const cameraPpg = useCameraPpg();
+  const haloRef = useRef<HTMLDivElement | null>(null);
+  const bpmRef = useRef<number | null>(null);
+  bpmRef.current = cameraPpg.bpm;
 
   useEffect(() => {
     document.title = t('page_title');
   }, [t]);
 
+  // Heartbeat halo: a rAF phase-accumulator writes --fs-halo-op on the be-with orb
+  // wrapper. Phase runs continuously; the period EASES toward 60/bpm and amplitude
+  // eases in/out — so a new pulse rate transitions smoothly (no blink jump). Reads
+  // the live bpm via a ref, so the loop never restarts (and never resets phase).
+  useEffect(() => {
+    if (step !== 'be_with') return;
+    if (typeof window !== 'undefined' && window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+    let raf = 0;
+    let phase = 0;
+    let period = 0.9; // s — smoothed toward 60/bpm
+    let amp = 0; // 0 = no pulse (static), 1 = full beat
+    let last = performance.now();
+    const tick = (now: number) => {
+      const dt = Math.min(0.05, (now - last) / 1000);
+      last = now;
+      const bpm = bpmRef.current;
+      if (bpm) period += (120 / bpm - period) * Math.min(1, dt * 1.2); // ×2 → flash every OTHER beat
+      phase = (phase + dt / period) % 1;
+      const beat =
+        phase < 0.18 ? 1 - 0.55 * (phase / 0.18) // longer bright phase → gentle decay
+          : phase < 0.9 ? 0.45 // softer rest floor (less aggressive contrast)
+            : 0.45 + 0.55 * ((phase - 0.9) / 0.1); // gentle rise into next pulse
+      amp += ((bpm ? 1 : 0) - amp) * Math.min(1, dt * 2);
+      const op = 1 - amp * (1 - beat);
+      haloRef.current?.style.setProperty('--fs-halo-op', op.toFixed(3));
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [step]);
+
   const restart = () => {
+    cameraPpg.stop();
     setStep('presence');
     setZone(null);
     setShade(null);
     setBranch(null);
     setSelfFraction(0.5);
-    setDescribePick(null);
   };
 
   // Tapping the "Emoton" nav item while already on /emoton doesn't remount this
@@ -74,7 +106,6 @@ export function EmotonPage() {
       setShade(null);
       setBranch(null);
       setSelfFraction(0.5);
-      setDescribePick(null);
     };
     window.addEventListener('emoton:reset', onReset);
     return () => window.removeEventListener('emoton:reset', onReset);
@@ -90,38 +121,47 @@ export function EmotonPage() {
     setStep('own');
   };
 
-  const pickWant = (want: WantOption) => {
+  // The own step now offers exactly THREE universal actions (identical on every
+  // feeling): practice (the cluster's route) · be-with · "I know what to do"
+  // (acknowledge & close). No per-zone custom wants.
+  const goPractice = () => {
     if (!zone) return;
-    const b = resolveBranch(zone, want);
-    setBranch(b);
-    if (b.branch === 'support') return setStep('support');
-    if (b.branch === 'release') return setStep('release');
-    if (b.branch === 'be_with') {
-      setDescribePick(null);
-      return setStep('be_with');
-    }
-    // practice
+    const z = ZONES[zone];
+    if (!z.practiceId || !z.practiceDirection) return setStep('be_with');
+    setBranch({ branch: 'practice', practiceId: z.practiceId, practiceDirection: z.practiceDirection });
     if (requiresFirstMove(zone)) return setStep('freeze_move');
     return setStep('practice');
   };
 
   const z = zone ? ZONES[zone] : null;
-  const moves = beWithMoves(selfFraction);
   const shadeLabel = shade ? t(`shade.${shade}`) : '';
+  // Gendered possessive + pronoun for the feeling (RU agrees with the shade's
+  // grammatical gender; EN ignores these — its strings carry no placeholders).
+  const ownPoss = shade ? t(`own_poss.${shade}`, { defaultValue: '' }) : '';
+  const ownPron = shade ? t(`own_pron.${shade}`, { defaultValue: 'it' }) : 'it';
+  const ownPronCap = ownPron.charAt(0).toUpperCase() + ownPron.slice(1);
+  // Instrumental ("с ней" / "с ним") for the "Be with it" button.
+  const ownPronInst = ownPron === 'она' ? 'ней' : 'ним';
+  const ownPronDat = ownPron === 'она' ? 'ей' : 'ему'; // дай ЕЙ / ЕМУ
+  // "Твоя/Твой/Твоё" derived from the gendered possessive (моя→твоя …).
+  const ownPossYour = ownPoss ? ownPoss.replace(/^мо/, 'тво') : '';
+  const ownPossYourCap = ownPossYour ? ownPossYour.charAt(0).toUpperCase() + ownPossYour.slice(1) : '';
+  // Per-emotion "be with it" copy; fight/flight keep the default "settle" line.
+  const beWithDescKey =
+    zone === 'regulated' || zone === 'expansive'
+      ? 'soak'
+      : zone === 'grief'
+        ? 'near'
+        : zone === 'freeze'
+          ? 'soft'
+          : 'description_no_pick';
 
   return (
-    <div className="relative mx-auto flex min-h-[80vh] max-w-md flex-col items-center px-5 pb-10 pt-0 text-white">
+    <div className="relative mx-auto flex min-h-[80vh] max-w-md flex-col items-center overflow-x-hidden px-5 pb-10 -mt-4 pt-0 text-white">
       <style>{`
         @keyframes emoton-swell { 0% { transform: scale(0.7); opacity:.7 } 50% { transform: scale(1.06); opacity:1 } 100% { transform: scale(0.74); opacity:.8 } }
         @keyframes emoton-rise  { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
         @keyframes emoton-breathe { 0%,100% { transform: scale(1); opacity:.9 } 50% { transform: scale(1.06); opacity:1 } }
-        /* Feeling-shape movement primitives — same blob, different autonomic quality. */
-        @keyframes emoton-fs-breathe { 0%,100% { transform: scale(1) } 50% { transform: scale(1.09) } }
-        @keyframes emoton-fs-shimmer { 0%,100% { transform: scale(1); opacity:.82 } 50% { transform: scale(1.13); opacity:1 } }
-        @keyframes emoton-fs-press   { 0%,100% { transform: scale(1) } 50% { transform: scale(0.88) } }
-        @keyframes emoton-fs-tremor  { 0% { transform: translate(0,0) } 20% { transform: translate(-1.5px,1px) } 40% { transform: translate(1.5px,-1px) } 60% { transform: translate(-1px,-1.5px) } 80% { transform: translate(1px,1.5px) } 100% { transform: translate(0,0) } }
-        @keyframes emoton-fs-settle  { 0%,100% { transform: translateY(-3px) scale(1) } 50% { transform: translateY(4px) scale(0.96) } }
-        @keyframes emoton-fs-fade    { 0%,100% { opacity:.5 } 50% { opacity:.28 } }
       `}</style>
 
       {/* ── 1. Presence (Я) ─────────────────────────────────────────────── */}
@@ -131,11 +171,11 @@ export function EmotonPage() {
               "коснись своего Я"). Top-anchored with a margin that lands the orb at
               the SAME centre as the wheel orb (prompt + wheel half) — no jump on
               presence → wheel. The title/description float below it absolutely. */}
-          <div className="relative mt-[132px]">
+          <div className="relative mt-[99px]">
             <button
               onClick={() => setStep('wheel')}
               aria-label={t('presence.cta')}
-              className="flex h-44 w-44 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent transition-shadow hover:border-cyan-300/50 hover:shadow-[0_0_45px_rgba(34,211,238,0.3)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/50"
+              className="flex h-[162px] w-[162px] items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/10 to-transparent transition-shadow hover:border-cyan-300/50 hover:shadow-[0_0_45px_rgba(34,211,238,0.3)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/50"
               style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}
             >
               <span className="text-3xl font-light tracking-wide text-white/90">{t('be_with.self_label')}</span>
@@ -151,26 +191,27 @@ export function EmotonPage() {
       {/* ── 2. Wheel → zone → shade ─────────────────────────────────────── */}
       {step === 'wheel' && (
         <div className="flex w-full flex-1 flex-col items-center justify-start">
-          {/* Top-anchored: the prompt sits just under the header, the wheel hangs
-              below it. The presence orb is given a matching top margin so its
-              centre lines up with this wheel's centre orb — no jump. The shade
-              picker floats below the wheel (absolute) so it never shifts the orb. */}
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('wheel.prompt')}</p>
-          <div className="relative mt-6 h-[360px] w-[360px]">
+          {/* Raised: the wheel hangs from the very top (Спокойствие's top edge sits
+              at the old prompt line). The section prompt sits just BELOW the wheel and
+              is swapped IN PLACE for the shade prompt + chips once a zone is picked.
+              presence/own share the same raised top margin so the centre orb never
+              jumps between steps; the picker floats absolutely so it never shifts it. */}
+          <div className="relative mt-0 h-[360px] w-[360px]">
             {/* Center orb — identical to the presence orb (size + cyan gradient
                 + breathe). Tapping "Я" returns to centre: it clears the current
                 zone choice (and the shade picker), so you can re-feel the wheel. */}
             <button
               onClick={() => { setZone(null); setShade(null); }}
-              className="absolute left-1/2 top-1/2 flex h-44 w-44 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent text-3xl font-light tracking-wide text-white/90 transition-shadow hover:border-cyan-300/50 hover:shadow-[0_0_45px_rgba(34,211,238,0.3)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/50" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
+              className="absolute left-1/2 top-1/2 flex h-[162px] w-[162px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/10 to-transparent text-3xl font-light tracking-wide text-white/90 transition-shadow hover:border-cyan-300/50 hover:shadow-[0_0_45px_rgba(34,211,238,0.3)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/50" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
               {t('be_with.self_label')}
             </button>
             {ZONE_ORDER.map((zid, i) => {
               const angle = (-90 + i * 60) * (Math.PI / 180);
-              // 44% ring radius — pushes the zones clear of the larger (176px)
-              // centre orb while the 360px wheel still fits a 375px viewport.
-              const left = 50 + 44 * Math.cos(angle);
-              const top = 50 + 44 * Math.sin(angle);
+              // 44% ring radius; the TOP (i=0) and BOTTOM (i=3) zones sit a bit
+              // closer to the orb (only their vertical offset changes — cos=0 there).
+              const ringR = i === 0 || i === 3 ? 40 : 44;
+              const left = 50 + ringR * Math.cos(angle);
+              const top = 50 + ringR * Math.sin(angle);
               const active = zone === zid;
               return (
                 <button
@@ -185,6 +226,13 @@ export function EmotonPage() {
                 </button>
               );
             })}
+            {/* Below the wheel: the section prompt — swapped IN PLACE for the shade
+                prompt + chips once a zone is picked (same slot, step 1 → step 2). */}
+            {!z && (
+              <p className="absolute left-1/2 top-full mt-3 w-[92vw] max-w-md -translate-x-1/2 text-center font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">
+                {t('wheel.prompt')}
+              </p>
+            )}
             {z && (
               <div className="absolute left-1/2 top-full mt-3 w-[92vw] max-w-md -translate-x-1/2 text-center">
                 <p className="text-xs text-white/45">{t('wheel.shade_prompt')}</p>
@@ -212,27 +260,39 @@ export function EmotonPage() {
               176px, centred, same top margin). The feeling is a SEPARATE entity
               beside it, positioned absolutely so the orb itself never moves —
               "я и оно", together but not merged. Copy + wants flow below. */}
-          <div className="relative mt-[132px]">
-            <div className="flex h-44 w-44 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent text-3xl font-light tracking-wide text-white/90" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
+          <div className="relative mt-[99px]">
+            {/* Ambient feeling field — the darkness around the orb stirs/gathers.
+                In the diffuse state it PERMEATES and surrounds the orb (you're
+                partly in it, no boundary); the "two beside each other" separation
+                only appears once it gathers form (formedness → 1, a later step). */}
+            <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" style={{ zIndex: 0 }}>
+              <FeelingShape zone={zone} />
+            </div>
+            <div className="relative z-10 flex h-[162px] w-[162px] items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/10 to-transparent text-3xl font-light tracking-wide text-white/90" style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}>
               {t('be_with.self_label')}
             </div>
-            <div className="absolute left-full top-1/2 ml-3 -translate-y-1/2">
-              <FeelingShape zone={zone} size={56} />
-            </div>
           </div>
-          <p className="mt-7 font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('own.meta')}</p>
-          <h2 className="mt-2 text-2xl font-semibold">{t('own.title', { shade: shadeLabel })}</h2>
-          <p className="mt-2 text-sm text-white/55">{t('own.description')}</p>
+          <h2 className="mt-7 text-2xl font-semibold">{t('own.title', { shade: shadeLabel, poss: ownPoss })}</h2>
+          <p className="mt-2 whitespace-pre-line text-sm text-white/55">{t('own.description', { pron: ownPron, pronCap: ownPronCap, possYour: ownPossYour })}</p>
           <div className="mt-5 w-full space-y-2">
-            {wantsForZone(zone).map((w) => (
-              <button
-                key={w.id}
-                onClick={() => pickWant(w)}
-                className={`${surface} w-full px-5 py-3 text-left text-sm text-white/85 transition-colors hover:border-cyan-400/40 hover:bg-cyan-500/10`}
-              >
-                {t(`want.${w.id}`)}
-              </button>
-            ))}
+            <button
+              onClick={goPractice}
+              className={`${surface} w-full px-5 py-3 text-left text-sm text-white/85 transition-colors hover:border-cyan-400/40 hover:bg-cyan-500/10`}
+            >
+              {t(`action.practice.${zone}`)}
+            </button>
+            <button
+              onClick={() => setStep('be_with')}
+              className={`${surface} w-full px-5 py-3 text-left text-sm text-white/85 transition-colors hover:border-cyan-400/40 hover:bg-cyan-500/10`}
+            >
+              {t('action.be_with', { pronInst: ownPronInst })}
+            </button>
+            <button
+              onClick={() => setStep('release')}
+              className={`${surface} w-full px-5 py-3 text-left text-sm text-white/85 transition-colors hover:border-cyan-400/40 hover:bg-cyan-500/10`}
+            >
+              {t('action.know')}
+            </button>
           </div>
         </div>
       )}
@@ -262,53 +322,71 @@ export function EmotonPage() {
 
       {/* ── Be-with visualization (no sensor) ───────────────────────────── */}
       {step === 'be_with' && shade && (
-        <div className="flex w-full flex-1 flex-col items-center justify-center text-center">
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('be_with.meta')}</p>
-          {/* Я is the larger field; the feeling is held WITHIN it. */}
-          <div className="relative mt-6 flex h-64 w-64 items-center justify-center">
+        <div className="relative flex w-full flex-1 flex-col items-center justify-start text-center">
+          {/* Our Я orb with the emotion's ray field behind it, anchored at the SAME
+              spot as presence/wheel/own (mt-[99px] → centre 180) so it never jumps.
+              "Growing the Self" recedes the feeling: the rays scale down as
+              selfFraction rises above the 0.5 baseline; the orb stays the anchor. */}
+          <div ref={haloRef} className="relative mt-[99px] flex items-center justify-center">
             <div
-              className="absolute rounded-full border border-cyan-300/30 bg-cyan-400/5"
-              style={{ width: `${Math.round(60 + selfFraction * 40)}%`, height: `${Math.round(60 + selfFraction * 40)}%` }}
+              className="pointer-events-none absolute left-1/2 top-1/2"
+              style={{
+                zIndex: 0,
+                transform: `translate(-50%, -50%) scale(${(1 - Math.max(0, selfFraction - 0.5) * 0.8).toFixed(3)})`,
+                transition: 'transform 1.2s ease',
+              }}
             >
-              <span className="absolute left-3 top-2 font-mono text-[10px] uppercase tracking-widest text-cyan-200/50">{t('be_with.self_label')}</span>
+              {zone && <FeelingShape zone={zone} />}
             </div>
             <div
-              className="rounded-full bg-gradient-to-b from-rose-400/40 to-rose-500/10"
-              style={{
-                width: `${Math.round(46 - selfFraction * 22)}%`,
-                height: `${Math.round(46 - selfFraction * 22)}%`,
-                animation: 'emoton-swell 16s ease-in-out infinite',
-              }}
-            />
-            <span className="absolute bottom-6 text-xs text-white/70">{t('be_with.feeling_label', { shade: shadeLabel })}</span>
+              className="relative z-10 flex h-[162px] w-[162px] items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/10 to-transparent text-3xl font-light tracking-wide text-white/90"
+              style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}
+            >
+              {t('be_with.self_label')}
+            </div>
           </div>
 
-          {describePick ? (
-            <p className="mt-4 text-sm text-white/70">{t('be_with.description_with_pick', { word: t(`quality.${describePick}`) })}</p>
+          <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/55">{t(`be_with.${beWithDescKey}`, { pronCap: ownPronCap, pronDat: ownPronDat, pronInst: ownPronInst, possYourCap: ownPossYourCap, shade: shadeLabel })}</p>
+
+          {cameraPpg.status === 'idle' ? (
+            <div className="mt-8 flex flex-col items-center">
+              <button onClick={() => cameraPpg.start()} className="rounded-full bg-cyan-500/20 px-7 py-3 text-sm font-semibold text-cyan-200 hover:bg-cyan-500/30">
+                {t('be_with.camera_cta')}
+              </button>
+              <p className="mt-3 text-sm font-medium text-white/70">{t('be_with.camera_title')}</p>
+              <p className="mt-1 max-w-xs text-xs leading-relaxed text-white/45">{t('be_with.camera_hint')}</p>
+            </div>
           ) : (
-            <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/55">{t('be_with.description_no_pick')}</p>
+            /* Camera connecting / live — accompanying status text + bpm, right here. */
+            <div className="mt-7 flex flex-col items-center gap-2">
+              <div className="inline-flex items-center gap-2 text-sm text-white/80">
+                <span className={`h-2 w-2 rounded-full ${cameraPpg.status === 'reading' ? 'bg-emerald-400' : cameraPpg.fingerOn ? 'bg-amber-300' : 'bg-white/40'} ${cameraPpg.status === 'denied' || cameraPpg.status === 'error' ? '' : 'animate-pulse'}`} />
+                <span>
+                  {cameraPpg.status === 'requesting'
+                    ? t('practice.camera_status_requesting')
+                    : cameraPpg.status === 'reading'
+                      ? t('practice.camera_status_reading')
+                      : cameraPpg.status === 'denied' || cameraPpg.status === 'error'
+                        ? t('practice.camera_status_denied')
+                        : cameraPpg.fingerOn
+                          ? t('practice.camera_status_finger_on')
+                          : t('practice.camera_status_waiting')}
+                </span>
+              </div>
+              <div className="text-2xl font-semibold tabular-nums text-cyan-100">{cameraPpg.bpm != null ? cameraPpg.bpm : '—'}</div>
+            </div>
           )}
 
-          <div className="mt-6 flex w-full flex-wrap justify-center gap-2">
-            <button onClick={() => setSelfFraction((f) => Math.min(0.9, f + 0.15))} className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-white/80 hover:bg-white/10">
-              {t('be_with.grow_self_cta')}
+          {/* Finish + start-over — matched footer styling, a divider between them. */}
+          <div className="absolute bottom-5 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2">
+            <button onClick={() => { cameraPpg.stop(); setStep('assimilation'); }} className="font-mono text-[10px] uppercase tracking-widest text-white/30 hover:text-white/60">
+              {t('be_with.finish_cta')}
             </button>
-            {moves.includes('describe') && (
-              <DescribeWords value={describePick} onPick={setDescribePick} />
-            )}
-            {moves.includes('ease') && (
-              <button onClick={() => setSelfFraction((f) => Math.min(0.95, f + 0.2))} className="rounded-full border border-amber-300/30 bg-amber-400/10 px-4 py-2 text-xs text-amber-200/90 hover:bg-amber-400/20">
-                {t('be_with.ease_cta')}
-              </button>
-            )}
+            <span className="h-px w-12 bg-white/15" />
+            <button onClick={restart} className="font-mono text-[10px] uppercase tracking-widest text-white/30 hover:text-white/60">
+              {t('start_over')}
+            </button>
           </div>
-
-          <button onClick={() => setStep('own')} className="mt-8 rounded-full bg-cyan-500/20 px-7 py-3 text-sm font-semibold text-cyan-200 hover:bg-cyan-500/30">
-            {t('be_with.ready_cta')}
-          </button>
-          <button onClick={restart} className="mt-2 text-xs text-white/40 underline underline-offset-4 hover:text-white/70">
-            {t('be_with.stay_longer')}
-          </button>
         </div>
       )}
 
@@ -345,12 +423,41 @@ export function EmotonPage() {
 
       {/* ── Assimilation close (after a practice; no new cycle) ──────────── */}
       {step === 'assimilation' && (
-        <div className="flex w-full flex-1 flex-col items-center justify-center text-center">
-          <div className="flex h-28 w-28 items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/15 to-transparent text-3xl" style={{ animation: 'emoton-rise 6s ease-in-out infinite' }}>✓</div>
-          <h2 className="mt-6 text-xl font-semibold">{t('assimilation.title')}</h2>
+        <div className="flex w-full flex-1 flex-col items-center justify-start text-center">
+          {/* Same Я orb + ray field as the rest of the flow (anchored at centre 180). */}
+          <div className="relative mt-[99px] flex items-center justify-center">
+            <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" style={{ zIndex: 0 }}>
+              {zone && <FeelingShape zone={zone} />}
+            </div>
+            <div
+              className="relative z-10 flex h-[162px] w-[162px] items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/10 to-transparent text-3xl font-light tracking-wide text-white/90"
+              style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}
+            >
+              {t('be_with.self_label')}
+            </div>
+          </div>
+          <h2 className="mt-7 text-xl font-semibold">{t('assimilation.title')}</h2>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/60">{t('assimilation.description')}</p>
-          <button onClick={restart} className="mt-8 rounded-full border border-white/15 bg-white/5 px-7 py-3 text-sm font-semibold text-white/80 hover:bg-white/10">
-            {t('assimilation.close_cta')}
+          {/* Invitation into the app instead of a bare "close". */}
+          <p className="mt-6 max-w-xs text-sm leading-relaxed text-white/70">{t('assimilation.invite')}</p>
+          <div className="mt-5 flex w-full max-w-xs flex-col gap-3">
+            <a
+              href={appStoreUrl('emoton')}
+              target="_blank"
+              rel="noopener"
+              className="flex items-center justify-center rounded-full bg-cyan-500/20 px-6 py-3 text-sm font-semibold text-cyan-100 transition-colors hover:bg-cyan-500/30"
+            >
+              {t('assimilation.app_store')}
+            </a>
+            <a
+              href="/#download"
+              className="flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:bg-white/10"
+            >
+              {t('assimilation.google_play')}
+            </a>
+          </div>
+          <button onClick={restart} className="mt-5 font-mono text-[10px] uppercase tracking-widest text-white/30 hover:text-white/60">
+            {t('start_over')}
           </button>
         </div>
       )}
@@ -358,37 +465,11 @@ export function EmotonPage() {
       {/* Persistent gentle restart for mid-flow steps. Pinned absolutely to the
           bottom so it never eats into the flex-1 centring area — otherwise it
           would pull the wheel orb up and break the presence → wheel orb match. */}
-      {step !== 'presence' && step !== 'release' && step !== 'support' && step !== 'assimilation' && (
+      {step !== 'presence' && step !== 'release' && step !== 'support' && step !== 'assimilation' && step !== 'be_with' && (
         <button onClick={restart} className="absolute bottom-5 left-1/2 -translate-x-1/2 font-mono text-[10px] uppercase tracking-widest text-white/30 hover:text-white/60">
           {t('start_over')}
         </button>
       )}
-    </div>
-  );
-}
-
-// ── Describe-the-feeling: SELECT a quality word (Gendlin), never free text ───
-function DescribeWords({ value, onPick }: { value: string | null; onPick: (w: string) => void }) {
-  const { t } = useTranslation('emoton');
-  const [open, setOpen] = useState(false);
-  if (!open) {
-    return (
-      <button onClick={() => setOpen(true)} className="rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs text-white/80 hover:bg-white/10">
-        {t('be_with.describe_cta')}
-      </button>
-    );
-  }
-  return (
-    <div className="flex w-full flex-wrap justify-center gap-2">
-      {QUALITY_WORDS.map((w) => (
-        <button
-          key={w}
-          onClick={() => { onPick(w); setOpen(false); }}
-          className={`rounded-full border px-3 py-1.5 text-xs transition-colors ${value === w ? 'border-rose-300/50 bg-rose-400/15 text-rose-100' : 'border-white/15 bg-white/5 text-white/75 hover:bg-white/10'}`}
-        >
-          {t(`quality.${w}`)}
-        </button>
-      ))}
     </div>
   );
 }
@@ -402,7 +483,7 @@ function FreezeStroke({ onDone }: { onDone: () => void }) {
       <div
         onPointerDown={() => setDrawn(true)}
         onPointerMove={(e) => { if (e.buttons === 1) setDrawn(true); }}
-        className={`flex h-44 w-44 cursor-pointer items-center justify-center rounded-full border-2 border-dashed transition-colors ${drawn ? 'border-cyan-400/60 bg-cyan-500/10' : 'border-white/20 bg-white/5'}`}
+        className={`flex h-[162px] w-[162px] cursor-pointer items-center justify-center rounded-full border-2 border-dashed transition-colors ${drawn ? 'border-cyan-400/60 bg-cyan-500/10' : 'border-white/20 bg-white/5'}`}
       >
         <span className="text-xs text-white/50">{drawn ? t('freeze_move.stroke_prompt_done') : t('freeze_move.stroke_prompt_idle')}</span>
       </div>

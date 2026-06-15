@@ -55,7 +55,7 @@
   },
   "own": {
     "meta": "You named it",
-    "title": "I feel {{shade}}.",
+    "title": "Me and my {{shade}}.",
     "description": "It's here, and it's yours. What do you want with it right now?"
   },
   "want": {

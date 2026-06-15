@@ -61,9 +61,13 @@ export const ZONES: Record<ZoneId, Zone> = {
     id: 'grief',
     window: 'low_present',
     shades: ['sorrow', 'melancholy', 'loneliness', 'despondency', 'lostness'],
-    // Default is the be-with visualization, not a breathing practice.
-    practiceId: null,
-    practiceDirection: null,
+    // The universal "practice" action needs a route for every zone. Grief has no
+    // bespoke protocol, so it REUSES earth_breath as a slow "breathe WITH the
+    // heaviness" (stay, don't push it away) — reused by id, never invented. The
+    // be-with branch stays grief's primary path. ⚠ flag: confirm earth_breath is
+    // the best reuse for grief, or pick another existing practice.
+    practiceId: 'earth_breath',
+    practiceDirection: 'deepen',
   },
   regulated: {
     id: 'regulated',

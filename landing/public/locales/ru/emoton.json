@@ -55,8 +55,84 @@
   },
   "own": {
     "meta": "Ты это назвал",
-    "title": "Это — {{shade}}.",
-    "description": "Оно здесь, и оно твоё. Что ты хочешь с этим чувством сейчас?"
+    "title": "Я и {{poss}} {{shade}}.",
+    "description": "{{pronCap}} здесь, и {{pron}} {{possYour}}.\nКак быть с этим переживанием?"
+  },
+  "own_pron": {
+    "serenity": "оно",
+    "clarity": "она",
+    "fullness": "она",
+    "grounded": "она",
+    "lightness": "она",
+    "thrill": "он",
+    "anticipation": "оно",
+    "warmth": "она",
+    "aliveness": "она",
+    "interest": "он",
+    "irritation": "оно",
+    "indignation": "оно",
+    "rage": "она",
+    "hurt": "она",
+    "guilt": "она",
+    "worry": "оно",
+    "tension": "оно",
+    "wariness": "она",
+    "turmoil": "оно",
+    "panic": "она",
+    "sorrow": "она",
+    "melancholy": "она",
+    "loneliness": "оно",
+    "despondency": "оно",
+    "lostness": "она",
+    "detachment": "она",
+    "numbness": "оно",
+    "apathy": "она",
+    "indifference": "оно",
+    "shame": "он"
+  },
+  "own_poss": {
+    "serenity": "моё",
+    "clarity": "моя",
+    "fullness": "моя",
+    "grounded": "моя",
+    "lightness": "моя",
+    "thrill": "мой",
+    "anticipation": "моё",
+    "warmth": "моя",
+    "aliveness": "моя",
+    "interest": "мой",
+    "irritation": "моё",
+    "indignation": "моё",
+    "rage": "моя",
+    "hurt": "моя",
+    "guilt": "моя",
+    "worry": "моё",
+    "tension": "моё",
+    "wariness": "моя",
+    "turmoil": "моё",
+    "panic": "моя",
+    "sorrow": "моя",
+    "melancholy": "моя",
+    "loneliness": "моё",
+    "despondency": "моё",
+    "lostness": "моя",
+    "detachment": "моя",
+    "numbness": "моё",
+    "apathy": "моя",
+    "indifference": "моё",
+    "shame": "мой"
+  },
+  "action": {
+    "be_with": "Побыть с {{pronInst}}",
+    "know": "Я знаю, что с этим делать",
+    "practice": {
+      "regulated": "Углубиться в это",
+      "expansive": "Направить это в действие",
+      "fight": "Дать заряду осесть",
+      "flight": "Заземлиться и выдохнуть",
+      "freeze": "Мягко вернуться",
+      "grief": "Дышать через это"
+    }
   },
   "want": {
     "calm_down": "Успокоиться",
@@ -119,7 +195,14 @@
     "ready_cta": "Когда будешь готов",
     "stay_longer": "Побыть дольше · или закрыть",
     "description_no_pick": "Ты больше, чем это чувство — оно живёт внутри тебя. Дай ему подняться и дай ему осесть самому.",
-    "description_with_pick": "Оно ощущается как {{word}}. Замечено — этого достаточно."
+    "description_with_pick": "Оно ощущается как {{word}}. Замечено — этого достаточно.",
+    "soak": "{{possYourCap}} {{shade}} здесь — побудь с {{pronInst}}. Дай {{pronDat}} наполнить себя.",
+    "near": "Дай {{pronDat}} быть, не торопи.",
+    "soft": "Что-то есть, даже еле слышно — побудь с этим.",
+    "camera_cta": "Подключить камеру",
+    "camera_title": "Смотри, как твой пульс отвечает вживую",
+    "camera_hint": "Приложи палец к задней камере и смотри, как пульс движется с дыханием.",
+    "finish_cta": "Завершить"
   },
   "quality": {
     "heavy": "тяжесть",
@@ -134,8 +217,8 @@
     "numb": "онемение"
   },
   "release": {
-    "title": "Тогда это твой ответ.",
-    "description": "Иди и сделай это — дыхание подождёт. На этот раз практика в том, что ты назвал то, что тебе нужно.",
+    "title": "Ты назвал это — и оно твоё.",
+    "description": "Этого уже достаточно. Ты знаешь, что с этим делать — сделай по-своему, в своём темпе.",
     "close_cta": "Закрыть"
   },
   "support": {
@@ -150,7 +233,10 @@
   "assimilation": {
     "title": "Ты остался с этим.",
     "description": "Ты дышал, даже когда было непросто. Это и есть та способность, что ты в себе растишь — унеси её с собой.",
-    "close_cta": "Закрыть"
+    "close_cta": "Закрыть",
+    "invite": "Продолжи свой путь в приложении ONDA Life и познакомься со всеми своими способностями.",
+    "app_store": "Скачать в App Store",
+    "google_play": "Скачать в Google Play"
   },
   "start_over": "начать заново"
 }
