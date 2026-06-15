@@ -145,6 +145,30 @@
     "indifference": "моё",
     "shame": "мой"
   },
+  "own_poss_your": {
+    "serenity": "твоё", "clarity": "твоя", "fullness": "твоя", "grounded": "твоя", "lightness": "твоя",
+    "thrill": "твой", "anticipation": "твоё", "warmth": "твоя", "aliveness": "твоя", "interest": "твой",
+    "irritation": "твоё", "indignation": "твоё", "rage": "твоя", "hurt": "твоя", "guilt": "твоя",
+    "worry": "твоё", "tension": "твоё", "wariness": "твоя", "turmoil": "твоё", "panic": "твоя",
+    "sorrow": "твоя", "melancholy": "твоя", "loneliness": "твоё", "despondency": "твоё", "lostness": "твоя",
+    "detachment": "твоя", "numbness": "твоё", "apathy": "твоя", "indifference": "твоё", "shame": "твой"
+  },
+  "own_pron_inst": {
+    "serenity": "ним", "clarity": "ней", "fullness": "ней", "grounded": "ней", "lightness": "ней",
+    "thrill": "ним", "anticipation": "ним", "warmth": "ней", "aliveness": "ней", "interest": "ним",
+    "irritation": "ним", "indignation": "ним", "rage": "ней", "hurt": "ней", "guilt": "ней",
+    "worry": "ним", "tension": "ним", "wariness": "ней", "turmoil": "ним", "panic": "ней",
+    "sorrow": "ней", "melancholy": "ней", "loneliness": "ним", "despondency": "ним", "lostness": "ней",
+    "detachment": "ней", "numbness": "ним", "apathy": "ней", "indifference": "ним", "shame": "ним"
+  },
+  "own_pron_dat": {
+    "serenity": "ему", "clarity": "ей", "fullness": "ей", "grounded": "ей", "lightness": "ей",
+    "thrill": "ему", "anticipation": "ему", "warmth": "ей", "aliveness": "ей", "interest": "ему",
+    "irritation": "ему", "indignation": "ему", "rage": "ей", "hurt": "ей", "guilt": "ей",
+    "worry": "ему", "tension": "ему", "wariness": "ей", "turmoil": "ему", "panic": "ей",
+    "sorrow": "ей", "melancholy": "ей", "loneliness": "ему", "despondency": "ему", "lostness": "ей",
+    "detachment": "ей", "numbness": "ему", "apathy": "ей", "indifference": "ему", "shame": "ему"
+  },
   "shade_acc": {
     "sorrow": "печаль",
     "melancholy": "тоску",

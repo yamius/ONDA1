@@ -139,20 +139,19 @@ export function EmotonPage() {
 
   const z = zone ? ZONES[zone] : null;
   const shadeLabel = shade ? t(`shade.${shade}`) : '';
-  // Accusative of the feeling for "Дышать, ощущая …" (only differs for a few RU
-  // shades, e.g. тоска→тоску); falls back to the nominative label otherwise.
-  const shadeAcc = shade ? t(`shade_acc.${shade}`, { defaultValue: shadeLabel }) : '';
-  // Gendered possessive + pronoun for the feeling (RU agrees with the shade's
-  // grammatical gender; EN ignores these — its strings carry no placeholders).
-  const ownPoss = shade ? t(`own_poss.${shade}`, { defaultValue: '' }) : '';
-  const ownPron = shade ? t(`own_pron.${shade}`, { defaultValue: 'it' }) : 'it';
-  const ownPronCap = ownPron.charAt(0).toUpperCase() + ownPron.slice(1);
-  // Instrumental ("с ней" / "с ним") for the "Be with it" button.
-  const ownPronInst = ownPron === 'она' ? 'ней' : 'ним';
-  const ownPronDat = ownPron === 'она' ? 'ей' : 'ему'; // дай ЕЙ / ЕМУ
-  // "Твоя/Твой/Твоё" derived from the gendered possessive (моя→твоя …).
-  const ownPossYour = ownPoss ? ownPoss.replace(/^мо/, 'тво') : '';
-  const ownPossYourCap = ownPossYour ? ownPossYour.charAt(0).toUpperCase() + ownPossYour.slice(1) : '';
+  // All gendered forms are read from PER-LANGUAGE maps in the locale JSON — each
+  // language supplies its own grammar (RU/UK: 3 genders; ES: mi + tuyo/tuya, él/ella;
+  // ZH: invariant). No grammar derivation in code. Sensible fallbacks for the rest.
+  const g = (map: string, dflt: string) => (shade ? t(`${map}.${shade}`, { defaultValue: dflt }) : dflt);
+  const cap = (s: string) => (s ? s.charAt(0).toUpperCase() + s.slice(1) : s);
+  const shadeAcc = g('shade_acc', shadeLabel); // accusative of the feeling
+  const ownPoss = g('own_poss', ''); // "my" (gendered): моя/мій/mi/我的
+  const ownPron = g('own_pron', 'it'); // "it": оно/воно/él/它
+  const ownPronCap = cap(ownPron);
+  const ownPronInst = g('own_pron_inst', ownPron); // "with it": с ней/нею/con él
+  const ownPronDat = g('own_pron_dat', ownPron); // "to it": ей/їй/le
+  const ownPossYour = g('own_poss_your', ownPoss); // "yours": твоя/твій/tuya
+  const ownPossYourCap = cap(ownPossYour);
   // Per-emotion "be with it" copy; fight/flight keep the default "settle" line.
   const beWithDescKey =
     zone === 'regulated' || zone === 'expansive'
