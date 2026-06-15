@@ -1,8 +1,7 @@
 # Emoton — translations review (en · ru · es · uk · zh)
 
 Auto-generated from `landing/public/locales/<lang>/emoton.json`. Use for native review.
-Empty EN cells in the gendered maps (own_pron / own_poss / own_poss_your / own_pron_inst / own_pron_dat / shade_acc) are expected — EN has no grammatical gender (its strings carry no placeholders).
-
+Empty EN cells in the gendered maps are expected — EN has no grammatical gender.
 
 ## meta
 
@@ -103,7 +102,7 @@ Empty EN cells in the gendered maps (own_pron / own_poss / own_poss_your / own_p
 | `despondency` | despondency | уныние | desánimo | зневіра | 消沉 |
 | `lostness` | lostness | потерянность | desorientación | розгубленість | 迷失 |
 | `detachment` | detachment | отстранённость | desapego | відстороненість | 疏离 |
-| `numbness` | numbness | оцепенение | entumecimiento | оніміння | 麻木 |
+| `numbness` | numbness | оцепенение | embotamiento | оніміння | 木然 |
 | `apathy` | apathy | апатия | apatía | апатія | 冷淡 |
 | `indifference` | indifference | безразличие | indiferencia | байдужість | 漠然 |
 | `shame` | shame | стыд | vergüenza | сором | 羞耻 |
@@ -114,7 +113,7 @@ Empty EN cells in the gendered maps (own_pron / own_poss / own_poss_your / own_p
 |---|---|---|---|---|---|
 | `meta` | You named it | Ты это назвал | Lo has nombrado | Ти це назвав | 你说出了它 |
 | `title` | Me and my {{shade}}. | Я и {{poss}} {{shade}}. | Yo y mi {{shade}}. | Я і {{poss}} {{shade}}. | 我和我的{{shade}}。 |
-| `description` | It's here, and it's yours. ⏎ What do you want with it right now? | {{pronCap}} здесь, и {{pron}} {{possYour}}. ⏎ Как быть с этим переживанием? | {{pronCap}} está aquí, y es {{possYour}}. ⏎ ¿Cómo quieres estar con esta experiencia? | {{pronCap}} тут, і {{pron}} {{possYour}}. ⏎ Як бути з цим переживанням? | 它就在这里，{{pron}}是{{possYour}}。 ⏎ 你想怎样和这份体验相处？ |
+| `description` | It's here, and it's yours. ⏎ How do you want to be with this right now? | {{pronCap}} здесь, и {{pron}} {{possYour}}. ⏎ Как быть с этим переживанием? | {{pronCap}} está aquí, y es {{possYour}}. ⏎ ¿Cómo quieres estar con esta experiencia? | {{pronCap}} тут, і {{pron}} {{possYour}}. ⏎ Як бути з цим переживанням? | 它就在这里，{{pron}}是{{possYour}}。 ⏎ 你想怎样和这份体验相处？ |
 
 ## own_pron
 
@@ -361,7 +360,7 @@ Empty EN cells in the gendered maps (own_pron / own_poss / own_poss_your / own_p
 | `camera_use_cta` | Use the camera | Включить камеру | Usar la cámara | Увімкнути камеру | 使用摄像头 |
 | `camera_skip` | Continue without it | Продолжить без неё | Continuar sin ella | Продовжити без неї | 不用它，继续 |
 | `pacer_cue_breathe` | breathe | дыши | respira | дихай | 呼吸 |
-| `pacer_cue_rise` | rise | поднимайся | sube | піднімайся | 上升 |
+| `pacer_cue_rise` | rise | поднимайся | sube | піднімайся | 升起 |
 | `camera_status_reading` | Live — your pulse is responding | Вживую — твой пульс отвечает | En vivo — tu pulso está respondiendo | Наживо — твій пульс відповідає | 实时——你的脉搏正在回应 |
 | `camera_status_requesting` | Opening camera… | Открываю камеру… | Abriendo la cámara… | Відкриваю камеру… | 正在打开摄像头…… |
 | `camera_status_denied` | Camera unavailable — follow the breath instead. | Камера недоступна — просто следи за дыханием. | Cámara no disponible — sigue la respiración. | Камера недоступна — просто стеж за диханням. | 摄像头不可用——那就跟着呼吸走吧。 |
@@ -386,7 +385,7 @@ Empty EN cells in the gendered maps (own_pron / own_poss / own_poss_your / own_p
 | `describe_cta` | Describe the feeling | Описать чувство | Describir el sentimiento | Описати почуття | 描述这份感受 |
 | `ready_cta` | When you're ready | Когда будешь готов | Cuando estés listo | Коли будеш готовий | 等你准备好 |
 | `stay_longer` | Stay longer · or close | Побыть дольше · или закрыть | Quedarse más · o cerrar | Побути довше · або закрити | 再待一会儿 · 或关闭 |
-| `description_no_pick` | You're bigger than this feeling — it lives within you. Let it rise, and let it settle on its own. | Ты больше, чем это чувство — оно живёт внутри тебя. Дай ему подняться и дай ему осесть самому. | Eres más grande que este sentimiento — vive dentro de ti. Deja que suba y deja que se asiente por sí solo. | Ти більший, ніж це почуття — воно живе всередині тебе. Дай йому піднятися й дай йому осісти самому. | 你比这份感受更大——它住在你之内。让它升起，也让它自己沉淀。 |
+| `description_no_pick` | It lives within you. Let it rise, and let it settle on its own. | Оно живёт внутри тебя. Дай ему подняться и дай ему осесть самому. | Vive dentro de ti. Deja que suba y deja que se asiente por sí solo. | Воно живе всередині тебе. Дай йому піднятися й дай йому осісти самому. | 它住在你之内。让它升起，也让它自己沉淀。 |
 | `description_with_pick` | It feels {{word}}. Noticed — that's enough. | Оно ощущается как {{word}}. Замечено — этого достаточно. | Se siente {{word}}. Notado — con eso basta. | Воно відчувається як {{word}}. Помічено — цього досить. | 它感觉起来像{{word}}。被看见了——这就够了。 |
 | `soak` | Your {{shade}} is here — stay with it. Let it fill you. | {{possYourCap}} {{shade}} здесь — побудь с {{pronInst}}. Дай {{pronDat}} наполнить себя. | Tu {{shade}} está aquí — quédate con {{pronInst}}. Deja que te llene. | {{possYourCap}} {{shade}} тут — побудь із {{pronInst}}. Дай {{pronDat}} наповнити себе. | 你的{{shade}}就在这里——和{{pronInst}}待在一起，让{{pronDat}}充满你。 |
 | `near` | Let it be — no rush. | Дай {{pronDat}} быть, не торопи. | Déja{{pronDat}} estar, sin prisa. | Дай {{pronDat}} бути, не квапся. | 让{{pronDat}}存在，别急。 |
@@ -402,12 +401,12 @@ Empty EN cells in the gendered maps (own_pron / own_poss / own_poss_your / own_p
 |---|---|---|---|---|---|
 | `heavy` | heavy | тяжесть | pesadez | тяжкість | 沉重 |
 | `tight` | tight | сжатость | opresión | стиснутість | 紧绷 |
-| `hollow` | hollow | пустоту | vacío | порожнечу | 空洞 |
-| `sharp` | sharp | остроту | agudeza | гостроту | 尖锐 |
+| `hollow` | hollow | пустота | vacío | порожнеча | 空洞 |
+| `sharp` | sharp | острота | agudeza | гострота | 尖锐 |
 | `warm` | warm | тепло | calidez | тепло | 温热 |
 | `cold` | cold | холод | frío | холод | 冰冷 |
 | `fluttery` | fluttery | трепет | aleteo | трепет | 悸动 |
-| `dull` | dull | тупую боль | dolor sordo | тупий біль | 钝钝的 |
+| `dull` | dull | тупая боль | dolor sordo | тупий біль | 钝钝的 |
 | `electric` | electric | наэлектризованность | electricidad | наелектризованість | 如触电般 |
 | `numb` | numb | онемение | entumecimiento | оніміння | 麻木 |
 
@@ -426,9 +425,10 @@ Empty EN cells in the gendered maps (own_pron / own_poss / own_poss_your / own_p
 | `title` | This seems like a lot right now. | Похоже, сейчас этого очень много. | Parece que ahora mismo es mucho. | Схоже, зараз цього дуже багато. | 此刻这些好像有点太多了。 |
 | `description` | It can help not to be alone with it. Talking to someone is a strong move, not a weak one. | Иногда помогает не оставаться с этим в одиночку. Поговорить с кем-то — это сильный шаг, а не слабость. | A veces ayuda no quedarse con ello a solas. Hablar con alguien es un paso fuerte, no una debilidad. | Іноді допомагає не залишатися з цим на самоті. Поговорити з кимось — це сильний крок, а не слабкість. | 有时候，不独自承受会有帮助。和别人聊聊是一种坚强的举动，而不是软弱。 |
 | `lifeline_title` | 988 — Suicide & Crisis Lifeline | Линия помощи при кризисе | Línea de ayuda en crisis | Лінія допомоги в кризі | 心理危机援助热线 |
-| `lifeline_call` | Call or text | Позвони или напиши | Llama o escribe | Зателефонуй або напиши | 拨打或发短信 |
-| `lifeline_number` | 988 | 988 | 988 | 988 | 988 |
-| `lifeline_hours` | (US, 24/7), or chat at | (США, круглосуточно) или в чат на | (EE. UU., 24/7), o chatea en | (США, цілодобово) або в чат на | （美国，24 小时），或在线咨询 |
+| `lifeline_call` | Call or text | Найди линию помощи в своей стране | Encuentra una línea en tu país | Знайди лінію допомоги у своїй країні | 查找你所在地区的求助热线 |
+| `lifeline_number` | 988 | findahelpline.com | findahelpline.com | findahelpline.com | findahelpline.com |
+| `lifeline_hours` | (US, 24/7) |  |  |  |  |
+| `lifeline_url` | https://988lifeline.org | https://findahelpline.com | https://findahelpline.com | https://findahelpline.com | https://findahelpline.com |
 | `close_cta` | Close | Закрыть | Cerrar | Закрити | 关闭 |
 
 ## assimilation
