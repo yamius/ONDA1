@@ -11,6 +11,28 @@ site** (not a `/tools/*` page; `/bio` is the separate tool — see [Boundaries](
 
 ---
 
+## Карта шагов (актуальный флоу) — RU
+
+> **Источник истины по UX — этот раздел** (обновлён после переработки вида/флоу, 2026-06). Разделы §3/§8 ниже описывают исходную модель «want → branch»; UI упростил её до **3 фиксированных действий** на шаге *own*. Хелперы `WANTS_BY_ZONE`, `resolveBranch`, `beWithMoves` и Gendlin-«describe» в `emotonCore.ts` страницей **больше не используются** (легаси, оставлены для переноса в app).
+
+Последовательность (`StepId`): `presence → wheel → own → {be_with | release | (freeze_move →) practice} → assimilation`, плюс `support` как off-ramp.
+
+| # | Шаг | Что на экране | Куда ведёт |
+|---|---|---|---|
+| 1 | **presence** | Орб «Я», «Вот ты здесь». Коснись орба. | → wheel |
+| 2 | **wheel** | «Что сейчас живо в тебе?» — 6 зон вокруг орба. Выбор зоны → «Выбери оттенок» (5 оттенков, та же позиция, фраза сменяется на месте). Тап «Я» — сброс. | оттенок → own · оттенок безнадёжности → support |
+| 3 | **own** | «Я и {моя/мой/моё} {чувство}». Орб с полем-эффектом эмоции (цвет по зоне). Текст с местоимениями по роду. **3 кнопки.** | «{практика зоны}» → practice (freeze: → freeze_move) · «Побыть с {ней/ним}» → be_with · «Я знаю, что делать» → release |
+| 4 | **be_with** | «Быть с этим»: орб+поле, текст по эмоции (впитать / осесть / побыть рядом / мягкий контакт). «Подключить камеру» (+ подпись) → инлайн-камера: статус + число пульса, **гало бьётся по живому пульсу**. Внизу: «Завершить» · «Начать заново». | «Подключить камеру» → practice · «Завершить» → assimilation · «Начать заново» → restart |
+| 5 | **freeze_move** (только freeze) | «Просто один штрих» — нарисуй линию. | → practice |
+| 6 | **practice** | Адаптивная практика (3D-фон + аудио + камера-пульс), полноэкранно. Контент EN-only. | onDone → assimilation |
+| 7 | **release** | «Ты назвал это — и оно твоё» + приглашение в ONDA Life + кнопки App Store / Google Play. | стор-ссылки · «Начать заново» → restart |
+| 8 | **support** | Мягкий off-ramp (Я ≤ ~10% или оттенок безнадёжности): линия помощи 988. | «Начать заново» → restart |
+| 9 | **assimilation** | «Ты остался с этим» + орб с эффектами + приглашение в ONDA Life + кнопки стора. | стор-ссылки · «Начать заново» → restart |
+
+**Орб (`FeelingShape`).** SVG-поле тонких лучей вокруг «Я» (не CSS-блоб). Палитра по зоне: радость — золото, покой — тил, гнев — тёмно-красный, тревога — стально-голубой, грусть — индиго, онемение — почти серое. Мягкий заход у кромки орба, пик у основания, рваные кончики, ~70% лучей мерцают (композитные слои), гало в тоне зоны. На *be_with* гало **пульсирует по живому пульсу** (rAF фаза-аккумулятор → плавная смена частоты, удар через один; пишет CSS-переменную `--fs-halo-op`). Mobile-lite: на узких экранах меньше лучей/слоёв (плавность iOS).
+
+---
+
 ## 1. Routing & placement
 
 - Page: `/emoton`, wired in `src/main.tsx` + `src/entry-server.tsx` (routes) and `src/components/Layout.tsx` (primary nav item).
@@ -29,7 +51,7 @@ site** (not a `/tools/*` page; `/bio` is the separate tool — see [Boundaries](
 | `src/lib/emotonCore.ts` | **Pure, UI-free core** — wheel taxonomy, want→branch routing, state→direction, tolerance (Я) gauge, zone→practice map. Liftable into the app. |
 | `src/pages/EmotonPage.tsx` | The flow surface (wheel → want → branch). SSR-safe; sensor connects only in the practice branch. |
 | `src/components/emoton/LandingPractice.tsx` | The practice branch — the **real adaptive-practice experience**, ported 1:1 from the app's `AdaptivePracticeModal`. |
-| `src/components/emoton/FeelingShape.tsx` | Parametric CSS "feeling shape" (per-zone preset blob) shown beside the orb on the *own / be-with* step. |
+| `src/components/emoton/FeelingShape.tsx` | SVG **ray-field** behind the orb (per-zone colour + halo) on *own / be-with / assimilation*. Halo pulses to the live camera bpm on *be-with* (rAF → `--fs-halo-op`). Mobile-lite. See «Карта шагов». |
 | `src/data/adaptivePractices.ts` | All **18 adaptive practices** (6 emotion folders), **EN-only**, user-proofread. (Basic practices stay app-only.) |
 | `src/lib/ppgCore.ts`, `src/lib/dsp.ts` | **Synced copies** of the app's shipped camera-pulse core (see [§4](#4-synced-copy-maintenance)). |
 | `src/hooks/useCameraPpg.ts` | Web-only variant of the app hook (heartRateStore coupling removed; self-contained bpm/confidence/fingerOn/status). |
@@ -46,6 +68,8 @@ site** (not a `/tools/*` page; `/bio` is the separate tool — see [Boundaries](
 ---
 
 ## 3. Wheel-state → existing-practice mapping (reuse only)
+
+> ⚠ **Legacy model.** The per-zone `WANTS_BY_ZONE` table below is the *original* want→branch design; the live UI replaced it with **3 fixed actions** on the *own* step (practice · be-with · "I know what to do") — see «Карта шагов». The mapping is still useful as the zone→practice reference (the practice route still uses it).
 
 | Zone (window) | Want → branch | Practice (existing id) | Direction |
 |---|---|---|---|
@@ -139,7 +163,7 @@ Canonical mechanism (`src/config/appStore.ts`):
 - **No coherence/HRV from camera.** Stated in UI ("Pulse only — coherence unlocks with an Apple Watch"); no fabricated metric.
 - **"Be with it" is not suppression.** In a normal state the moves are witness / grow-the-Self / describe — no shrink-slider. "Ease it a notch" (titration) appears **only** as Я approaches the danger zone.
 - **Support off-ramp is gentle + real, never an alarm.** 988 Suicide & Crisis Lifeline (US/EN v1). The Я-proportion gauge is **never shown as a %** — conveyed only by circle-region sizes; the ~10% threshold is a backend trigger.
-- **No persistence, no free text.** No storage calls anywhere; "describe the feeling" is a SELECT from Gendlin quality words, never typed input.
+- **No persistence, no free text.** No storage calls anywhere. (The Gendlin "describe the feeling" SELECT and the grow-self/ease moves were **removed** from the be-with UI in the 2026-06 rework — be-with now offers the live camera pulse + finish; the helpers remain in `emotonCore.ts` for the app port. See «Карта шагов».)
 - **Sensor only at the practice branch.** Only `LandingPractice` mounts `useCameraPpg`; wheel / be-with / release / support never touch the camera.
 
 ---

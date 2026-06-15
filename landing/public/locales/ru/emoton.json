@@ -122,16 +122,23 @@
     "indifference": "моё",
     "shame": "мой"
   },
+  "shade_acc": {
+    "sorrow": "печаль",
+    "melancholy": "тоску",
+    "loneliness": "одиночество",
+    "despondency": "уныние",
+    "lostness": "потерянность"
+  },
   "action": {
     "be_with": "Побыть с {{pronInst}}",
-    "know": "Я знаю, что с этим делать",
+    "know": "Я знаю, что делать",
     "practice": {
       "regulated": "Углубиться в это",
       "expansive": "Направить это в действие",
       "fight": "Дать заряду осесть",
       "flight": "Заземлиться и выдохнуть",
       "freeze": "Мягко вернуться",
-      "grief": "Дышать через это"
+      "grief": "Дышать, ощущая {{shadeAcc}}"
     }
   },
   "want": {

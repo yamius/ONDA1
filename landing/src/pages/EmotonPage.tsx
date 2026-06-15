@@ -135,6 +135,9 @@ export function EmotonPage() {
 
   const z = zone ? ZONES[zone] : null;
   const shadeLabel = shade ? t(`shade.${shade}`) : '';
+  // Accusative of the feeling for "Дышать, ощущая …" (only differs for a few RU
+  // shades, e.g. тоска→тоску); falls back to the nominative label otherwise.
+  const shadeAcc = shade ? t(`shade_acc.${shade}`, { defaultValue: shadeLabel }) : '';
   // Gendered possessive + pronoun for the feeling (RU agrees with the shade's
   // grammatical gender; EN ignores these — its strings carry no placeholders).
   const ownPoss = shade ? t(`own_poss.${shade}`, { defaultValue: '' }) : '';
@@ -279,7 +282,7 @@ export function EmotonPage() {
               onClick={goPractice}
               className={`${surface} w-full px-5 py-3 text-left text-sm text-white/85 transition-colors hover:border-cyan-400/40 hover:bg-cyan-500/10`}
             >
-              {t(`action.practice.${zone}`)}
+              {t(`action.practice.${zone}`, { shadeAcc })}
             </button>
             <button
               onClick={() => setStep('be_with')}
@@ -396,8 +399,25 @@ export function EmotonPage() {
           <div className="flex h-28 w-28 items-center justify-center rounded-full border border-emerald-300/30 bg-emerald-400/10 text-3xl">↗</div>
           <h2 className="mt-6 text-xl font-semibold">{t('release.title')}</h2>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/60">{t('release.description')}</p>
-          <button onClick={restart} className="mt-8 rounded-full border border-white/15 bg-white/5 px-7 py-3 text-sm font-semibold text-white/80 hover:bg-white/10">
-            {t('release.close_cta')}
+          <p className="mt-6 max-w-xs text-sm leading-relaxed text-white/70">{t('assimilation.invite')}</p>
+          <div className="mt-5 flex w-full max-w-xs flex-col gap-3">
+            <a
+              href={appStoreUrl('emoton')}
+              target="_blank"
+              rel="noopener"
+              className="flex items-center justify-center rounded-full bg-cyan-500/20 px-6 py-3 text-sm font-semibold text-cyan-100 transition-colors hover:bg-cyan-500/30"
+            >
+              {t('assimilation.app_store')}
+            </a>
+            <a
+              href="/#download"
+              className="flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:bg-white/10"
+            >
+              {t('assimilation.google_play')}
+            </a>
+          </div>
+          <button onClick={restart} className="mt-5 font-mono text-[10px] uppercase tracking-widest text-white/30 hover:text-white/60">
+            {t('start_over')}
           </button>
         </div>
       )}
