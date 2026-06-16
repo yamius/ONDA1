@@ -26,11 +26,15 @@ type PracticeState = 'intro' | 'practice' | 'complete';
 interface LandingPracticeProps {
   practice: AdaptivePractice;
   onDone: () => void;
+  // Lifecycle callbacks (the parent decides what, if anything, to track —
+  // this component stays analytics-free, it only emits).
+  onStart?: () => void;
+  onComplete?: (info: { camera: boolean; durationS: number }) => void;
 }
 
 const fmt = (s: number) => `${Math.floor(s / 60)}:${(s % 60).toString().padStart(2, '0')}`;
 
-export function LandingPractice({ practice, onDone }: LandingPracticeProps) {
+export function LandingPractice({ practice, onDone, onStart, onComplete }: LandingPracticeProps) {
   const { t } = useTranslation('emoton');
   const cam = useCameraPpg();
   const [state, setState] = useState<PracticeState>('intro');
@@ -83,8 +87,10 @@ export function LandingPractice({ practice, onDone }: LandingPracticeProps) {
     setIsMinimal(false);
     setCameraOfferDismissed(false);
     setAudioResetKey((k) => k + 1);
+    onStart?.();
   };
   const complete = () => {
+    onComplete?.({ camera: cam.bpm != null || cam.fingerOn, durationS: time });
     cam.stop();
     setIsMinimal(false);
     setState('complete');

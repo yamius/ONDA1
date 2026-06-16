@@ -16,6 +16,11 @@ import { ADAPTIVE_PRACTICES } from '../data/adaptivePractices';
 import { useCameraPpg } from '../hooks/useCameraPpg';
 import { appStoreUrl } from '../config/appStore';
 import { rdtTrack } from '../lib/redditPixel';
+import { startEmotonSession, track, trackDownloadClick } from '../lib/emotonAnalytics';
+
+// be-with register shown for a zone (stable analytics key, not a UI string).
+const registerFor = (z: ZoneId | null): 'soak' | 'settle' | 'near' | 'soft' =>
+  z === 'regulated' || z === 'expansive' ? 'soak' : z === 'grief' ? 'near' : z === 'freeze' ? 'soft' : 'settle';
 
 /**
  * Emoton — the deliberate, owned emotional check-in ("I name what I feel").
@@ -60,6 +65,26 @@ export function EmotonPage() {
     document.title = t('page_title');
   }, [t]);
 
+  // Analytics: open the in-tool funnel session once on mount (PostHog only).
+  useEffect(() => {
+    void startEmotonSession();
+  }, []);
+
+  // Analytics: funnel milestones with multiple entry points are tracked on step
+  // entry, deduped by step so StrictMode's double-invoked effect can't double-count.
+  const lastTrackedStep = useRef<Step | null>(null);
+  useEffect(() => {
+    if (lastTrackedStep.current === step) return;
+    lastTrackedStep.current = step;
+    if (step === 'be_with') track('bewith_entered', { register: registerFor(zone), zone });
+    else if (step === 'assimilation') {
+      track('assimilation_reached');
+      track('download_cta_viewed', { placement: 'emoton_post_practice' });
+    } else if (step === 'release') {
+      track('download_cta_viewed', { placement: 'emoton_post_practice' });
+    }
+  }, [step, zone]);
+
   // Heartbeat halo: a rAF phase-accumulator writes --fs-halo-op on the be-with orb
   // wrapper. Phase runs continuously; the period EASES toward 60/bpm and amplitude
   // eases in/out — so a new pulse rate transitions smoothly (no blink jump). Reads
@@ -92,6 +117,7 @@ export function EmotonPage() {
   }, [step]);
 
   const restart = () => {
+    track('restarted');
     cameraPpg.stop();
     setStep('presence');
     setZone(null);
@@ -119,14 +145,16 @@ export function EmotonPage() {
   const pickShade = (shadeId: string) => {
     setShade(shadeId);
     // A hopelessness/meaninglessness shade routes straight to the gentle off-ramp.
+    // The crisis path is deliberately NOT eventized (no shade_selected, no
+    // conversion) — see the analytics brief's privacy rules.
     if (isHopelessnessShade(shadeId)) {
       setStep('support');
       return;
     }
     // Check-in complete: the feeling is named and the 'own' step shows the result.
-    // This is the genuine "tool used" moment (the crisis off-ramp above is
-    // deliberately excluded from the ad conversion).
-    rdtTrack('Custom', { customEventName: 'emoton_used' });
+    // This is the genuine "tool used" moment.
+    track('shade_selected', { zone, shade: shadeId }); // PostHog only (most sensitive)
+    rdtTrack('Custom', { customEventName: 'emoton_used' }); // generic ad conversion — no emotion
     setStep('own');
   };
 
@@ -135,6 +163,7 @@ export function EmotonPage() {
   // (acknowledge & close). No per-zone custom wants.
   const goPractice = () => {
     if (!zone) return;
+    track('route_selected', { route: 'practice', zone });
     const z = ZONES[zone];
     if (!z.practiceId || !z.practiceDirection) return setStep('be_with');
     setBranch({ branch: 'practice', practiceId: z.practiceId, practiceDirection: z.practiceDirection });
@@ -174,18 +203,23 @@ export function EmotonPage() {
         @keyframes emoton-swell { 0% { transform: scale(0.7); opacity:.7 } 50% { transform: scale(1.06); opacity:1 } 100% { transform: scale(0.74); opacity:.8 } }
         @keyframes emoton-rise  { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
         @keyframes emoton-breathe { 0%,100% { transform: scale(1); opacity:.9 } 50% { transform: scale(1.06); opacity:1 } }
+        /* Each step fades in on mount. Opacity-only — no transform — so the
+           centre orb stays anchored across steps (no jump). */
+        @keyframes emoton-step-in { from { opacity: 0 } to { opacity: 1 } }
+        .emoton-step { animation: emoton-step-in .5s ease both }
+        @media (prefers-reduced-motion: reduce) { .emoton-step { animation: none } }
       `}</style>
 
       {/* ── 1. Presence (Я) ─────────────────────────────────────────────── */}
       {step === 'presence' && (
-        <div className="flex flex-1 flex-col items-center justify-start text-center">
+        <div className="emoton-step flex flex-1 flex-col items-center justify-start text-center">
           {/* The orb is the tap target — touch it to begin (the copy below invites
               "коснись своего Я"). Top-anchored with a margin that lands the orb at
               the SAME centre as the wheel orb (prompt + wheel half) — no jump on
               presence → wheel. The title/description float below it absolutely. */}
           <div className="relative mt-[99px]">
             <button
-              onClick={() => setStep('wheel')}
+              onClick={() => { track('presence_started'); setStep('wheel'); }}
               aria-label={t('presence.cta')}
               className="flex h-[162px] w-[162px] items-center justify-center rounded-full border border-cyan-300/30 bg-gradient-to-b from-cyan-400/10 to-transparent transition-shadow hover:border-cyan-300/50 hover:shadow-[0_0_45px_rgba(34,211,238,0.3)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300/50"
               style={{ animation: 'emoton-breathe 5.5s ease-in-out infinite' }}
@@ -202,7 +236,7 @@ export function EmotonPage() {
 
       {/* ── 2. Wheel → zone → shade ─────────────────────────────────────── */}
       {step === 'wheel' && (
-        <div className="flex w-full flex-1 flex-col items-center justify-start">
+        <div className="emoton-step flex w-full flex-1 flex-col items-center justify-start">
           {/* Raised: the wheel hangs from the very top (Спокойствие's top edge sits
               at the old prompt line). The section prompt sits just BELOW the wheel and
               is swapped IN PLACE for the shade prompt + chips once a zone is picked.
@@ -228,7 +262,7 @@ export function EmotonPage() {
               return (
                 <button
                   key={zid}
-                  onClick={() => setZone(zid)}
+                  onClick={() => { setZone(zid); track('zone_selected', { zone: zid }); }}
                   className={`absolute w-24 -translate-x-1/2 -translate-y-1/2 rounded-xl border px-2 py-2 text-center text-[11px] font-medium leading-tight transition-colors ${
                     active ? 'border-cyan-400/60 bg-cyan-500/20 text-cyan-100' : 'border-white/10 bg-white/5 text-white/70 hover:bg-white/10'
                   }`}
@@ -267,7 +301,7 @@ export function EmotonPage() {
 
       {/* ── 3. Own it + name the want ───────────────────────────────────── */}
       {step === 'own' && zone && shade && (
-        <div className="flex w-full flex-1 flex-col items-center justify-start text-center">
+        <div className="emoton-step flex w-full flex-1 flex-col items-center justify-start text-center">
           {/* Я orb — SAME size + place as presence/wheel (the constant anchor:
               176px, centred, same top margin). The feeling is a SEPARATE entity
               beside it, positioned absolutely so the orb itself never moves —
@@ -294,13 +328,13 @@ export function EmotonPage() {
               {t(`action.practice.${zone}`, { shadeAcc })}
             </button>
             <button
-              onClick={() => setStep('be_with')}
+              onClick={() => { track('route_selected', { route: 'be_with', zone }); setStep('be_with'); }}
               className={`${surface} w-full px-5 py-3 text-left text-sm text-white/85 transition-colors hover:border-cyan-400/40 hover:bg-cyan-500/10`}
             >
               {t('action.be_with', { pronInst: ownPronInst })}
             </button>
             <button
-              onClick={() => setStep('release')}
+              onClick={() => { track('route_selected', { route: 'know', zone }); setStep('release'); }}
               className={`${surface} w-full px-5 py-3 text-left text-sm text-white/85 transition-colors hover:border-cyan-400/40 hover:bg-cyan-500/10`}
             >
               {t('action.know')}
@@ -311,7 +345,7 @@ export function EmotonPage() {
 
       {/* ── Freeze first-move (tiny, impossible-to-fail) → gentle-up ─────── */}
       {step === 'freeze_move' && (
-        <div className="flex w-full flex-1 flex-col items-center justify-center text-center">
+        <div className="emoton-step flex w-full flex-1 flex-col items-center justify-center text-center">
           <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cyan-400/70">{t('freeze_move.meta')}</p>
           <h2 className="mt-2 text-xl font-semibold">{t('freeze_move.title')}</h2>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/60">{t('freeze_move.description')}</p>
@@ -328,13 +362,17 @@ export function EmotonPage() {
       {step === 'practice' && branch?.practiceId && ADAPTIVE_PRACTICES[branch.practiceId] && (
         <LandingPractice
           practice={ADAPTIVE_PRACTICES[branch.practiceId]}
+          onStart={() => track('practice_started', { practice_id: branch?.practiceId, camera: false })}
+          onComplete={({ camera, durationS }) =>
+            track('practice_completed', { practice_id: branch?.practiceId, duration_s: durationS, camera })
+          }
           onDone={() => setStep('assimilation')}
         />
       )}
 
       {/* ── Be-with visualization (no sensor) ───────────────────────────── */}
       {step === 'be_with' && shade && (
-        <div className="relative flex w-full flex-1 flex-col items-center justify-start text-center">
+        <div className="emoton-step relative flex w-full flex-1 flex-col items-center justify-start text-center">
           {/* Our Я orb with the emotion's ray field behind it, anchored at the SAME
               spot as presence/wheel/own (mt-[99px] → centre 180) so it never jumps.
               "Growing the Self" recedes the feeling: the rays scale down as
@@ -404,7 +442,7 @@ export function EmotonPage() {
 
       {/* ── Release branch (real-world action / "other" / "nothing") ─────── */}
       {step === 'release' && (
-        <div className="flex w-full flex-1 flex-col items-center justify-center text-center">
+        <div className="emoton-step flex w-full flex-1 flex-col items-center justify-center text-center">
           <div className="flex h-28 w-28 items-center justify-center rounded-full border border-emerald-300/30 bg-emerald-400/10 text-3xl">↗</div>
           <h2 className="mt-6 text-xl font-semibold">{t('release.title')}</h2>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/60">{t('release.description')}</p>
@@ -414,12 +452,14 @@ export function EmotonPage() {
               href={appStoreUrl('emoton')}
               target="_blank"
               rel="noopener"
+              onClick={() => trackDownloadClick('emoton_post_practice')}
               className="flex items-center justify-center rounded-full bg-cyan-500/20 px-6 py-3 text-sm font-semibold text-cyan-100 transition-colors hover:bg-cyan-500/30"
             >
               {t('assimilation.app_store')}
             </a>
             <a
               href="/#download"
+              onClick={() => trackDownloadClick('emoton_post_practice')}
               className="flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:bg-white/10"
             >
               {t('assimilation.google_play')}
@@ -433,7 +473,7 @@ export function EmotonPage() {
 
       {/* ── Support off-ramp (gentle, never an alarm) ───────────────────── */}
       {step === 'support' && (
-        <div className="flex w-full flex-1 flex-col items-center justify-center text-center">
+        <div className="emoton-step flex w-full flex-1 flex-col items-center justify-center text-center">
           <div className="flex h-24 w-24 items-center justify-center rounded-full border border-cyan-300/30 bg-cyan-400/10 text-2xl">♡</div>
           <h2 className="mt-6 text-xl font-semibold">{t('support.title')}</h2>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-white/65">{t('support.description')}</p>
@@ -453,7 +493,7 @@ export function EmotonPage() {
 
       {/* ── Assimilation close (after a practice; no new cycle) ──────────── */}
       {step === 'assimilation' && (
-        <div className="flex w-full flex-1 flex-col items-center justify-start text-center">
+        <div className="emoton-step flex w-full flex-1 flex-col items-center justify-start text-center">
           {/* Same Я orb + ray field as the rest of the flow (anchored at centre 180). */}
           <div className="relative mt-[99px] flex items-center justify-center">
             <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" style={{ zIndex: 0 }}>
@@ -475,12 +515,14 @@ export function EmotonPage() {
               href={appStoreUrl('emoton')}
               target="_blank"
               rel="noopener"
+              onClick={() => trackDownloadClick('emoton_post_practice')}
               className="flex items-center justify-center rounded-full bg-cyan-500/20 px-6 py-3 text-sm font-semibold text-cyan-100 transition-colors hover:bg-cyan-500/30"
             >
               {t('assimilation.app_store')}
             </a>
             <a
               href="/#download"
+              onClick={() => trackDownloadClick('emoton_post_practice')}
               className="flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white/80 transition-colors hover:bg-white/10"
             >
               {t('assimilation.google_play')}
