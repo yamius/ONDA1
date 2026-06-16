@@ -38,7 +38,7 @@ export type EmotonEvent =
 // lib/supabase.ts) so importing this module never throws at build/prerender time.
 const env = ((import.meta as unknown as { env?: Record<string, string | undefined> }).env) ?? {}
 const KEY = env.VITE_POSTHOG_KEY
-const HOST = env.VITE_POSTHOG_HOST || 'https://eu.i.posthog.com'
+const HOST = env.VITE_POSTHOG_HOST || 'https://us.i.posthog.com'
 
 let ph: PostHog | null = null
 let initPromise: Promise<void> | null = null

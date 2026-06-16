@@ -72,8 +72,8 @@ app.use(
           'https://connect.facebook.net',
           'https://www.redditstatic.com',
           // PostHog (Emoton product analytics) — array.js / recorder assets.
-          'https://eu.i.posthog.com',
-          'https://eu-assets.i.posthog.com',
+          'https://us.i.posthog.com',
+          'https://us-assets.i.posthog.com',
         ],
         'style-src': [
           "'self'",
@@ -111,8 +111,8 @@ app.use(
           // public Supabase Storage buckets (audio-practices, hdr).
           'https://*.supabase.co',
           // PostHog (Emoton product analytics) — capture + decide endpoints.
-          'https://eu.i.posthog.com',
-          'https://eu-assets.i.posthog.com',
+          'https://us.i.posthog.com',
+          'https://us-assets.i.posthog.com',
         ],
         // Emoton: the practice audio plays from a blob: URL (downloaded and
         // cached by useAudioCache); allow blob media + the Supabase host.
