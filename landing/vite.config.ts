@@ -1,7 +1,25 @@
-import { defineConfig } from 'vite'
+import { defineConfig, loadEnv, type PluginOption } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
+
+// Dev mirror of server.js's /runtime-env.js so the runtime-config path works the
+// same way in `vite dev` (reads VITE_POSTHOG_* from .env/.env.local). In prod the
+// real route lives in server.js (request-time process.env).
+function runtimeEnvDev(env: Record<string, string>): PluginOption {
+  return {
+    name: 'runtime-env-dev',
+    apply: 'serve',
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        if ((req.url ?? '').split('?')[0] !== '/runtime-env.js') return next()
+        const cfg = { POSTHOG_KEY: env.VITE_POSTHOG_KEY || '', POSTHOG_HOST: env.VITE_POSTHOG_HOST || '' }
+        res.setHeader('Content-Type', 'application/javascript')
+        res.end(`window.__ONDA_ENV__=${JSON.stringify(cfg)};`)
+      })
+    },
+  }
+}
 
 function preloadCriticalChunks(names: string[]) {
   return {
@@ -28,11 +46,14 @@ function preloadCriticalChunks(names: string[]) {
   }
 }
 
-export default defineConfig({
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd())
+  return {
   plugins: [
     react(),
     tailwindcss(),
     preloadCriticalChunks(['HomePage']),
+    runtimeEnvDev(env),
   ],
   resolve: {
     alias: {
@@ -47,4 +68,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
+  }
 })

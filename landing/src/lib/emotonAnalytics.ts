@@ -33,12 +33,21 @@ export type EmotonEvent =
   | 'download_cta_clicked'
   | 'restarted'
 
-// `import.meta.env` is a Vite-only object — UNDEFINED when tsx evaluates this
-// module directly during the prerender step (Node). Read it defensively (mirrors
-// lib/supabase.ts) so importing this module never throws at build/prerender time.
-const env = ((import.meta as unknown as { env?: Record<string, string | undefined> }).env) ?? {}
-const KEY = env.VITE_POSTHOG_KEY
-const HOST = env.VITE_POSTHOG_HOST || 'https://us.i.posthog.com'
+// Config resolution, RUNTIME-first:
+//   1. window.__ONDA_ENV__ — injected by server.js's /runtime-env.js at request
+//      time. This is the source of truth in production: on Replit the PostHog key
+//      is a RUNTIME secret, NOT present during `npm run build`, so Vite would
+//      otherwise inline an empty string and analytics would silently no-op.
+//   2. import.meta.env (Vite build-time) — fallback for local dev (.env / .env.local).
+// `import.meta.env` is also UNDEFINED when tsx evaluates this module during the
+// prerender step (Node), so it's read defensively (mirrors lib/supabase.ts).
+const buildEnv = ((import.meta as unknown as { env?: Record<string, string | undefined> }).env) ?? {}
+const runtimeEnv =
+  (typeof window !== 'undefined' &&
+    (window as unknown as { __ONDA_ENV__?: { POSTHOG_KEY?: string; POSTHOG_HOST?: string } }).__ONDA_ENV__) ||
+  {}
+const KEY = runtimeEnv.POSTHOG_KEY || buildEnv.VITE_POSTHOG_KEY
+const HOST = runtimeEnv.POSTHOG_HOST || buildEnv.VITE_POSTHOG_HOST || 'https://us.i.posthog.com'
 
 let ph: PostHog | null = null
 let initPromise: Promise<void> | null = null

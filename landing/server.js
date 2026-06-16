@@ -153,6 +153,23 @@ app.use((req, res, next) => {
 app.get('/health', (req, res) => res.status(200).send('OK'))
 app.head('/health', (req, res) => res.status(200).end())
 
+// Runtime public config — exposes window.__ONDA_ENV__ to the client. Read from
+// process.env at REQUEST time (this server has the deployment secrets; the Vite
+// build does NOT — on Replit VITE_* values are runtime secrets, absent during
+// `npm run build`, so a build-time import.meta.env would bake an empty string).
+// no-store so a key/host change applies on the next load without a rebuild.
+// PUBLIC values only — the PostHog project key is a write-only, browser-facing
+// token. Never put server-only secrets here.
+app.get('/runtime-env.js', (req, res) => {
+  const cfg = {
+    POSTHOG_KEY: process.env.VITE_POSTHOG_KEY || '',
+    POSTHOG_HOST: process.env.VITE_POSTHOG_HOST || '',
+  }
+  res.setHeader('Content-Type', 'application/javascript; charset=utf-8')
+  res.setHeader('Cache-Control', 'no-store')
+  res.send(`window.__ONDA_ENV__=${JSON.stringify(cfg)};`)
+})
+
 // WWW → non-WWW redirect (301). Fixes duplicate content: www.onda-life.com → onda-life.com
 app.use((req, res, next) => {
   if (req.hostname && req.hostname.startsWith('www.')) {
