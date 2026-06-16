@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 import { TransitionLink } from './TransitionLink'
 import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, langHref, type Lang } from '../i18n'
 import { emotonCtaUrl } from '../config/appStore'
+import { rdtTrack } from '../lib/redditPixel'
 
 export function Layout() {
   const location = useLocation()
@@ -68,18 +69,17 @@ export function Layout() {
     setMenuOpen(false)
   }, [location.pathname])
 
-  // Reddit Pixel — fire PageVisit on client-side route changes. The base
-  // snippet in index.html already fires PageVisit on the initial load, so
-  // skip the first render to avoid a double-count. Mirrors how a SPA would
-  // re-fire a pageview on navigation.
-  const rdtFirstRender = useRef(true)
+  // Reddit Pixel — fire PageVisit on the initial load AND every client-side
+  // route change. The base snippet in index.html only runs rdt('init', …) (no
+  // inline PageVisit), so this effect owns every pageview. Deduped by pathname:
+  // fires once per distinct path, so React StrictMode's double-invoked effect
+  // (dev) and redundant re-renders can't double-count. This layout route stays
+  // mounted across navigations, so the ref persists.
+  const rdtLastPath = useRef<string | null>(null)
   useEffect(() => {
-    if (rdtFirstRender.current) {
-      rdtFirstRender.current = false
-      return
-    }
-    const rdt = (window as unknown as { rdt?: (...args: unknown[]) => void }).rdt
-    if (typeof rdt === 'function') rdt('track', 'PageVisit')
+    if (rdtLastPath.current === location.pathname) return
+    rdtLastPath.current = location.pathname
+    rdtTrack('PageVisit')
   }, [location.pathname])
 
   // Reddit Pixel — count a Lead whenever an App Store CTA is clicked anywhere
@@ -94,8 +94,7 @@ export function Layout() {
       const anchor = target?.closest?.('a[href]') as HTMLAnchorElement | null
       if (!anchor) return
       if (!(anchor.getAttribute('href') || '').includes('apps.apple.com')) return
-      const rdt = (window as unknown as { rdt?: (...args: unknown[]) => void }).rdt
-      if (typeof rdt === 'function') rdt('track', 'Lead')
+      rdtTrack('Lead')
     }
     document.addEventListener('click', onClick, true)
     return () => document.removeEventListener('click', onClick, true)

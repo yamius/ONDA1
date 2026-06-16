@@ -15,6 +15,7 @@ import { FeelingShape } from '../components/emoton/FeelingShape';
 import { ADAPTIVE_PRACTICES } from '../data/adaptivePractices';
 import { useCameraPpg } from '../hooks/useCameraPpg';
 import { appStoreUrl } from '../config/appStore';
+import { rdtTrack } from '../lib/redditPixel';
 
 /**
  * Emoton — the deliberate, owned emotional check-in ("I name what I feel").
@@ -122,6 +123,10 @@ export function EmotonPage() {
       setStep('support');
       return;
     }
+    // Check-in complete: the feeling is named and the 'own' step shows the result.
+    // This is the genuine "tool used" moment (the crisis off-ramp above is
+    // deliberately excluded from the ad conversion).
+    rdtTrack('Custom', { customEventName: 'emoton_used' });
     setStep('own');
   };
 

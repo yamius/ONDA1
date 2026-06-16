@@ -98,8 +98,10 @@ app.use(
           'https://*.analytics.google.com',
           'https://*.googletagmanager.com',
           'https://www.google.com',
-          // Pixel config/event endpoints.
+          // Pixel config + event endpoints (events may go via fetch/sendBeacon,
+          // not only the alb.reddit.com image beacon allowed under img-src).
           'https://pixel-config.reddit.com',
+          'https://alb.reddit.com',
           'https://www.facebook.com',
           'https://connect.facebook.net',
           // Emoton: fetch adaptive-practice audio + HDR backdrops from the
