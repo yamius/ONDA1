@@ -503,6 +503,7 @@
     "label_why": "Por qué:",
     "label_effect": "Efecto:",
     "label_biomarker": "Bio-marcador:",
+    "label_state_marker": "Marcador de estado:",
     "duration_1min": "1 min",
     "duration_1_5min": "1.5 min",
     "duration_2min": "2 min",
@@ -1668,7 +1669,11 @@
       "guiding_7": "Si un pensamiento te preocupa — llámalo \"pensamiento\" y vuelve a las sensaciones del cuerpo.",
       "guiding_8": "Reduce la amplitud de la respiración a lo cómodo, déjala natural.",
       "guiding_9": "Permítete ser pequeño y protegido — ahora es posible.",
-      "final_phrase": "Estás a salvo. Tu cuerpo sabe cómo abrazarte desde dentro."
+      "final_phrase": "Estás a salvo. Tu cuerpo sabe cómo abrazarte desde dentro.",
+      "biology": "La presión suave y profunda (abrazarse a uno mismo) y la espiración alargada refuerzan juntas la respuesta parasimpática: una espiración más larga que la inspiración activa el freno vagal, mientras que una presión tranquila sobre el cuerpo reduce la activación fisiológica.",
+      "why": "Nombrar un pensamiento ansioso como «un pensamiento» es una técnica de defusión cognitiva (de la terapia de aceptación y compromiso) que reduce la fusión con el contenido ansioso.",
+      "effect": "El corazón late más tranquilo bajo las palmas, los hombros descienden, la respiración fluye con más facilidad.",
+      "biomarker": "Ritmo cardíaco y respiración más lentos, aumento de la VFC."
     },
     "light_inhale": {
       "name": "Respiración de Luz",
@@ -1681,7 +1686,11 @@
       "guiding_6": "Si la atención se dispersa, vuelve al primer toque de luz en tu pecho.",
       "guiding_7": "Con cada ciclo, añade un grano de gratitud.",
       "guiding_8": "Deja que tu cuerpo se vuelva un poco más ligero, y tu respiración aún más cálida.",
-      "final_phrase": "Con cada inhalación recibes luz, con cada exhalación te conviertes en luz."
+      "final_phrase": "Con cada inhalación recibes luz, con cada exhalación te conviertes en luz.",
+      "biology": "Una respiración tranquila y uniforme sostiene el equilibrio parasimpático y la relajación de la musculatura facial y torácica.",
+      "why": "Es una práctica de atención dirigida y gratitud —desplazar el foco hacia una experiencia positiva—; este tipo de prácticas se asocian con una mejora del estado subjetivo, más que con un efecto neurológico concreto.",
+      "effect": "Ligereza en el cuerpo, una respiración cálida y una mirada suave y clara.",
+      "biomarker": "Respiración uniforme y sensación de calidez (signo corporal de relajación)."
     },
     "light_flow": {
       "name": "Flujo de Luz",
@@ -1693,7 +1702,11 @@
       "guiding_5": "Nota dónde en el camino la luz encuentra tensión — suaviza ese lugar con respiración.",
       "guiding_6": "Con cada ciclo siente más espacio en espalda y clavículas.",
       "guiding_7": "Mantén una mirada interior amable — la luz fluye más fácilmente.",
-      "final_phrase": "Cuando la luz fluye libremente, las acciones se vuelven simples."
+      "final_phrase": "Cuando la luz fluye libremente, las acciones se vuelven simples.",
+      "biology": "Dirigir la atención a las zonas tensas durante la espiración ayuda a que se relajen y libera parte de la tensión corporal.",
+      "why": "Es una práctica de atención corporal e imaginería: la sensación subjetiva de «amplitud» en la espalda y los hombros reduce la barrera percibida a la acción; el valor está en la experiencia de libertad, no en un mecanismo concreto.",
+      "effect": "Más libertad en la espalda y las clavículas, el movimiento se vuelve más fácil.",
+      "biomarker": "Relajación de la musculatura de la cintura escapular, respiración uniforme."
     },
     "roots_breath": {
       "name": "Respiración de las Raíces",
@@ -1707,7 +1720,11 @@
       "guiding_7": "Si la mente se desvía — regresa al contacto planta ↔ tierra.",
       "guiding_8": "Respira uniformemente, sin esfuerzo; deja que la gravedad trabaje para ti.",
       "guiding_9": "Cuanto más profundas las raíces, más libre se vuelve la respiración.",
-      "final_phrase": "La Tierra te sostiene. Con la exhalación la ansiedad baja."
+      "final_phrase": "La Tierra te sostiene. Con la exhalación la ansiedad baja.",
+      "biology": "Respirar con la espiración más larga que la inspiración (inspirar en 4 / espirar en 6) refuerza el freno vagal: la desaceleración parasimpática del ritmo cardíaco durante la espiración. Es una de las técnicas respiratorias para reducir la ansiedad mejor estudiadas.",
+      "why": "El contacto propioceptivo de los pies con el suelo le da al sistema nervioso un ancla externa firme que compite con la rumiación ansiosa.",
+      "effect": "Una liberación progresiva de la tensión en el vientre, la garganta y la frente.",
+      "biomarker": "Espiración alargada, aumento de la VFC (tono vagal)."
     },
     "inner_spark": {
       "name": "Chispa Interior",
@@ -1718,7 +1735,11 @@
       "guiding_4": "Respira como si alimentaras la llama con oxígeno: tranquilo, uniforme, cuidadoso.",
       "guiding_5": "Si la atención se dispersa — vuelve a la palabra-intención y al calor en tu pecho.",
       "guiding_6": "Siente cómo la chispa se vuelve constante — no más brillante, sino más confiable.",
-      "final_phrase": "La chispa de intención arde en silencio — y eso es suficiente para comenzar."
+      "final_phrase": "La chispa de intención arde en silencio — y eso es suficiente para comenzar.",
+      "biology": "Una respiración tranquila y uniforme mantiene un nivel de activación equilibrado, en el que la atención es clara pero no está sobreexcitada.",
+      "why": "Es una práctica de intención y foco: una breve palabra-«para qué» le da a la atención un punto de reunión y facilita iniciar la acción; funciona a nivel del sentido y la atención, no como un efecto neurológico concreto.",
+      "effect": "Una claridad cálida en el pecho, la sensación de una intención firme.",
+      "biomarker": "Respiración uniforme, atención recogida y estable."
     },
     "slow_glow": {
       "name": "Brillo Lento",
@@ -1731,7 +1752,11 @@
       "guiding_6": "Relaja la frente, ojos, lengua, hombros. Permite que la pesadez sea.",
       "guiding_7": "Si la atención se desvía — vuelve a la luz en el vientre y la larga exhalación.",
       "guiding_8": "Deja que cada respiración haga la luz más constante, y el cuerpo más tranquilo.",
-      "final_phrase": "La luz permaneció, la fatiga se hundió más profundo en la tierra."
+      "final_phrase": "La luz permaneció, la fatiga se hundió más profundo en la tierra.",
+      "biology": "La respiración lenta con espiración larga desplaza el equilibrio autónomo hacia el predominio parasimpático, el estado de «descanso y recuperación».",
+      "why": "Ante el cansancio, el recurso no se recupera con estimulación, sino permitiéndole al cuerpo asentarse en el apoyo y reducir la activación.",
+      "effect": "El cuerpo pesa agradablemente, la respiración se vuelve más uniforme, por dentro hay más calma.",
+      "biomarker": "Respiración más lenta, relajación muscular, aumento de la VFC."
     },
     "earth_breath": {
       "name": "Respiración de la Tierra",
@@ -1743,7 +1768,11 @@
       "guiding_5": "Si la mente divaga — regresa a las plantas: calor, peso, presión del suelo.",
       "guiding_6": "Con cada inhalación llena el pecho de calma, con cada exhalación profundiza las raíces.",
       "guiding_7": "Eres el tronco; la respiración es savia, la tierra es tu apoyo.",
-      "final_phrase": "Con cada exhalación la Tierra te recibe, y el interior se vuelve más silencioso."
+      "final_phrase": "Con cada exhalación la Tierra te recibe, y el interior se vuelve más silencioso.",
+      "biology": "Una espiración alargada refuerza el freno vagal: la desaceleración parasimpática del ritmo cardíaco durante la espiración a través del nervio vago. El contacto propioceptivo de los pies con el suelo añade una señal estabilizadora al sistema nervioso.",
+      "why": "La combinación de un apoyo firme y una espiración más larga que la inspiración contrarresta la activación simpática, base fisiológica de la ansiedad.",
+      "effect": "Menor activación de fondo, sensación de estabilidad y calidez.",
+      "biomarker": "Respiración más lenta, aumento de la VFC, relajación de la mandíbula y los hombros."
     },
     "wave_pulse": {
       "name": "Ola del Pulso",
@@ -1758,7 +1787,11 @@
       "guiding_8": "Imagina cómo cada inhalación recoge paz, y cada exhalación la distribuye por todo el cuerpo.",
       "guiding_9": "La respiración es el mar, el pulso es su orilla: recibe la ola y despídela con gratitud.",
       "guiding_10": "Permanece en este movimiento hasta que la ola se vuelva casi invisible, y la paz tangible.",
-      "final_phrase": "Cuando corazón y respiración suenan como una sola ola, el silencio reina dentro."
+      "final_phrase": "Cuando corazón y respiración suenan como una sola ola, el silencio reina dentro.",
+      "biology": "Al respirar a unos 6 ciclos por minuto, las oscilaciones del pulso entran en resonancia con el barorreflejo: es el estado de coherencia cardiorrespiratoria con la máxima amplitud de variabilidad del ritmo cardíaco.",
+      "why": "Sincronizar rítmicamente la inspiración y la espiración con la variación natural del pulso (arritmia sinusal respiratoria) refuerza el control vagal sobre el corazón, uno de los efectos mejor estudiados de la respiración lenta.",
+      "effect": "La respiración se nivela, el latido se siente más suave y la atención se estabiliza.",
+      "biomarker": "Aumento de la amplitud de la VFC, pulso uniforme y ondulante, onda de coherencia visible."
     },
     "sphere_breath": {
       "name": "Respiración de la Esfera",
@@ -1772,7 +1805,11 @@
       "guiding_7": "Si los pensamientos distraen — regresa al límite de la esfera y su contacto con el aire.",
       "guiding_8": "Permite que el centro permanezca tranquilo, y la respiración sea movimiento del mundo a su alrededor.",
       "guiding_9": "Cuanto más ancha la esfera, más silencio dentro.",
-      "final_phrase": "Cuando la esfera respira, te conviertes en el centro de un mundo tranquilo."
+      "final_phrase": "Cuando la esfera respira, te conviertes en el centro de un mundo tranquilo.",
+      "biology": "Una respiración uniforme y una atención repartida de forma equilibrada por el cuerpo sostienen un estado tranquilo y recogido del sistema nervioso.",
+      "why": "Sostener una imagen íntegra y simétrica del cuerpo entrena la estabilidad de la atención —la habilidad de concentrarse—; es una práctica de atención, y su efecto está en el propio entrenamiento del foco.",
+      "effect": "Cuanto más amplia es la «esfera», más silencio por dentro; la atención se mantiene uniforme.",
+      "biomarker": "Respiración tranquila y uniforme, atención estable."
     },
     "earth_pulse": {
       "name": "Pulso de la Tierra",
@@ -1786,7 +1823,11 @@
       "guiding_7": "Con cada exhalación permite que el pulso se vuelva más amplio y suave.",
       "guiding_8": "Si aparece prisa — alarga la exhalación y nota la pausa después de ella.",
       "guiding_9": "Permanece en la sensación de ritmo cálido y pesado bajo los pies.",
-      "final_phrase": "Cuando respiras en el ritmo de la Tierra, la ansiedad pierde poder."
+      "final_phrase": "Cuando respiras en el ritmo de la Tierra, la ansiedad pierde poder.",
+      "biology": "La respiración diafragmática lenta con la espiración alargada reduce la frecuencia cardíaca a través de la activación parasimpática, un efecto bien estudiado de la respiración lenta.",
+      "why": "Apoyarse en un ritmo interno lento le ofrece a la mente ansiosa una referencia simple y predecible (menor carga cognitiva).",
+      "effect": "El pulso se siente más amplio y suave, surge una sensación de peso y apoyo.",
+      "biomarker": "Ritmo cardíaco más lento, pausa tras la espiración, aumento de la VFC."
     },
     "breath_possibility": {
       "name": "Respiración de Posibilidad",
@@ -1797,7 +1838,11 @@
       "guiding_4": "Imagina un umbral frente a ti: inhala — la puerta se abre, exhala — das medio paso con atención.",
       "guiding_5": "Si aparece duda — ríndete a una exhalación larga y regresa a las frases.",
       "guiding_6": "Mantén postura suave y vientre cálido — allí nace la determinación sin tensión.",
-      "final_phrase": "La posibilidad respira contigo — y cada exhalación hace el paso más real."
+      "final_phrase": "La posibilidad respira contigo — y cada exhalación hace el paso más real.",
+      "biology": "Una respiración uniforme con una postura tranquila sostiene una atención recogida y sin ansiedad, y un fondo autónomo estable.",
+      "why": "Es una práctica de intención con refuerzo corporal: unir la palabra y la respiración fija la disposición no solo en la mente, sino también en el cuerpo; funciona como una actitud encarnada, no como un mecanismo neurológico medible.",
+      "effect": "Una sensación de espacio para elegir, determinación sin tensión.",
+      "biomarker": "Respiración uniforme, postura suave y estable."
     },
     "inner_smile": {
       "name": "Sonrisa interior",
@@ -1810,7 +1855,11 @@
       "guiding_6": "Si aparece una sonrisa real en tu cara — no la retengas, solo suavízala.",
       "guiding_7": "Respira como si agradecieras a tu cuerpo por su trabajo.",
       "guiding_8": "Mantente amable contigo mismo — esa es la fuente de la alegría.",
-      "final_phrase": "Cuando el corazón sonríe, el mundo responde con calidez."
+      "final_phrase": "Cuando el corazón sonríe, el mundo responde con calidez.",
+      "biology": "Relajar los músculos de la cara y la garganta libera parte de la tensión muscular que el cuerpo retiene bajo estrés.",
+      "why": "Es una práctica de autocompasión —tratarse a uno mismo con amabilidad—; su valor está respaldado como práctica, no como un mecanismo cerebral medible, por eso se ofrece aquí como experiencia y no como un efecto neurológico.",
+      "effect": "Calidez en el pecho, el rostro se distiende, la respiración se suaviza.",
+      "biomarker": "Sensación de calidez y relajación; respiración uniforme."
     },
     "amoeba_dance": {
       "name": "Danza de ameba",
@@ -1823,7 +1872,11 @@
       "guiding_6": "Deja que el movimiento surja desde el centro del vientre y se desvanezca solo.",
       "guiding_7": "Si la velocidad aumenta — vuelve a 'casi inmóvil'.",
       "guiding_8": "Nota cómo la alegría aparece en el cuerpo sin esfuerzo — como un pulso suave.",
-      "final_phrase": "La alegría es el movimiento que respira por sí mismo."
+      "final_phrase": "La alegría es el movimiento que respira por sí mismo.",
+      "biology": "Los movimientos suaves al ritmo de la respiración liberan la tensión muscular estática y reavivan la conciencia del cuerpo en el espacio.",
+      "why": "Es una práctica de movimiento espontáneo y presencia corporal: la alegría a menudo no se «provoca», sino que se le permite surgir a través de un movimiento ligero; el valor está en la propia experiencia, no en un mecanismo concreto.",
+      "effect": "Ligereza corporal, vitalidad, el movimiento quiere continuar por sí solo.",
+      "biomarker": "Respiración libre y una movilidad ligera y sin tensión."
     },
     "warm_sphere": {
       "name": "Esfera cálida",
@@ -1835,7 +1888,11 @@
       "guiding_5": "Respira despacio, sin esfuerzo; mantén el rostro suave y la garganta libre.",
       "guiding_6": "Si los pensamientos vuelven — encuentra de nuevo los bordes de la esfera cálida.",
       "guiding_7": "Deja que se vuelva firme y estable, como una linterna nocturna dentro del cuerpo.",
-      "final_phrase": "La esfera cálida te sostiene desde dentro, y la fuerza regresa con suavidad."
+      "final_phrase": "La esfera cálida te sostiene desde dentro, y la fuerza regresa con suavidad.",
+      "biology": "La atención al centro del cuerpo y la respiración diafragmática lenta sostienen el tono parasimpático y la reducción de la tensión muscular.",
+      "why": "La imagen de una esfera cálida y estable le da a la atención fatigada un ancla suave en lugar de una rumiación dispersa (menor carga cognitiva).",
+      "effect": "La calidez se extiende más, el cuerpo está más tranquilo, la cara y la garganta se ablandan.",
+      "biomarker": "Respiración lenta y uniforme, sensación de calidez y peso."
     },
     "rest_breath": {
       "name": "Respiración de descanso",
@@ -1847,7 +1904,11 @@
       "guiding_5": "Libera la tensión del rostro, los hombros y las manos.",
       "guiding_6": "Imagina que la respiración disuelve la fatiga como agua tibia.",
       "guiding_7": "Permanece en este ritmo lento sin esfuerzo.",
-      "final_phrase": "El descanso no es debilidad — es sabiduría del cuerpo."
+      "final_phrase": "El descanso no es debilidad — es sabiduría del cuerpo.",
+      "biology": "Un ritmo con la espiración más larga que la inspiración refuerza la arritmia sinusal respiratoria: la desaceleración natural del pulso durante la espiración bajo el control del nervio vago. Es una técnica básica del biofeedback de VFC.",
+      "why": "Un conteo regular le da a la mente una tarea simple y la saca de la rumiación propia del cansancio.",
+      "effect": "La respiración se asemeja a olas uniformes de descanso y el cuerpo se ablanda.",
+      "biomarker": "Espiración alargada, pausa natural tras ella, aumento de la VFC."
     },
     "silence_point": {
       "name": "Punto de quietud",
@@ -1860,7 +1921,11 @@
       "guiding_6": "Los oídos escuchan el silencio, la piel escucha el aire, el corazón se escucha a sí mismo.",
       "guiding_7": "Deja que los límites del 'yo' se vuelvan suaves, como la luz en la niebla.",
       "guiding_8": "Permanece cerca del punto — no necesita nada y ya está en calma.",
-      "final_phrase": "En el punto de quietud, todo ya ha sucedido — solo queda ser."
+      "final_phrase": "En el punto de quietud, todo ya ha sucedido — solo queda ser.",
+      "biology": "Una respiración muy suave, apenas perceptible, acompaña a una reducción profunda de la activación fisiológica.",
+      "why": "Observar los pensamientos sin implicarse es una habilidad de descentramiento (atención observadora); es una práctica de atención plena que entrena la estabilidad y reduce la reactividad.",
+      "effect": "Los pensamientos pasan flotando con más facilidad, la tensión se ablanda, nace un silencio interior.",
+      "biomarker": "Respiración muy lenta, sensación de calma y quietud."
     },
     "listen_space": {
       "name": "Escuchar el espacio",
@@ -1873,7 +1938,11 @@
       "guiding_6": "Si aparece un juicio — 'me gusta / no me gusta' — suéltalo con la exhalación.",
       "guiding_7": "Nota cómo el espacio también te escucha — a través del silencio alrededor de la respiración.",
       "guiding_8": "Vuélvete transparente para el mundo, para que el mundo se vuelva transparente para ti.",
-      "final_phrase": "Cuando escuchas el espacio, el espacio empieza a escucharte."
+      "final_phrase": "Cuando escuchas el espacio, el espacio empieza a escucharte.",
+      "biology": "Una atención auditiva abierta, no dirigida y sin juicio sostiene un estado mental tranquilo y no reactivo.",
+      "why": "Es una práctica de presencia abierta (monitorización abierta): escuchar sin nombrar ni juzgar reduce la categorización automática y la reactividad asociada a ella; el valor está en la propia cualidad de la presencia.",
+      "effect": "Los sonidos te atraviesan sin rozarte; alrededor de la respiración surge el silencio.",
+      "biomarker": "Respiración tranquila y uniforme, atención amplia y estable."
     },
     "still_form": {
       "name": "Forma inmóvil",
@@ -1890,7 +1959,11 @@
       "guiding_10": "Si la mente divaga — regresa a la sensación de peso y contacto con la tierra.",
       "guiding_11": "Deja que el silencio llene gradualmente la forma desde dentro, como la luz llena el agua.",
       "guiding_12": "Permanece inmóvil un poco más de lo que deseas — allí comienza la paz.",
-      "final_phrase": "Cuando la forma se congela, el silencio nace dentro de ella."
+      "final_phrase": "Cuando la forma se congela, el silencio nace dentro de ella.",
+      "biology": "Una postura estable con el eje extendido reduce la carga muscular y postural; una respiración natural y sin forzar sostiene el tono parasimpático (de recuperación).",
+      "why": "La interocepción —prestar atención a las señales internas del cuerpo sin intentar cambiarlas— se relaciona con la actividad de la corteza insular y, plausiblemente, entrena la capacidad del sistema nervioso de permanecer en reposo.",
+      "effect": "Un silencio interior más profundo, estabilidad y una respiración casi imperceptible.",
+      "biomarker": "Respiración lenta y uniforme, VFC estable, sensación de quietud."
     }
   },
   "subscription": {

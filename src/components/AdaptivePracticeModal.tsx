@@ -1200,6 +1200,29 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
                 "{t(practice.shortPhrase)}"
               </p>
             </div>
+            {/* Science block — Biology / Why / Effect / Bio-marker, mirroring the
+                basic-practice intro. Keys derive from the practice id; the block
+                only renders where the translations exist (gated on biology). */}
+            {(() => {
+              const base = `adaptive_practices.${practice.id}`;
+              const bio = t(`${base}.biology`, { defaultValue: '' });
+              if (!bio) return null;
+              const rows: Array<[string, string]> = ([
+                [t('practice_items.label_biology', 'Biology:'), bio],
+                [t('practice_items.label_why', 'Why:'), t(`${base}.why`, { defaultValue: '' })],
+                [t('practice_items.label_effect', 'Effect:'), t(`${base}.effect`, { defaultValue: '' })],
+                [t('practice_items.label_state_marker', 'State marker:'), t(`${base}.biomarker`, { defaultValue: '' })],
+              ] as Array<[string, string]>).filter(([, body]) => body);
+              return (
+                <div className={`text-sm sm:text-base space-y-2 mb-3 sm:mb-6 px-2 sm:px-4 max-w-lg text-justify mx-auto ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
+                  {rows.map(([label, body], idx) => (
+                    <p key={idx} className="leading-tight">
+                      <span className="font-bold">{label}</span> {body}
+                    </p>
+                  ))}
+                </div>
+              );
+            })()}
             <div className={`flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
               <span className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center ${isLight ? 'bg-white/70 border border-violet-200' : 'bg-white/10 border border-white/20'}`}>
                 {formatTime(practice.targetTime)}

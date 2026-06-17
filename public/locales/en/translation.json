@@ -592,6 +592,7 @@
     "label_why": "Why:",
     "label_effect": "Effect:",
     "label_biomarker": "Bio-marker:",
+    "label_state_marker": "State marker:",
     "duration_1min": "1 min",
     "duration_1_5min": "1.5 min",
     "duration_2min": "2 min",
@@ -3041,7 +3042,11 @@
       "guiding_7": "If a thought worries you — call it \"thought\" and return to body sensations.",
       "guiding_8": "Reduce breath amplitude to comfortable, leave it natural.",
       "guiding_9": "Allow yourself to be small and protected — now it's possible.",
-      "final_phrase": "You are safe. Your body knows how to embrace you from within."
+      "final_phrase": "You are safe. Your body knows how to embrace you from within.",
+      "biology": "Gentle deep pressure (a self-hug) and a lengthened exhale together strengthen the parasympathetic response: an exhale longer than the inhale engages the vagal brake, while calm pressure on the body lowers physiological arousal.",
+      "why": "Labeling an anxious thought as \"a thought\" is a technique of cognitive defusion (from acceptance and commitment therapy) that reduces fusion with anxious content.",
+      "effect": "The heart under your palms beats more calmly, the shoulders drop, the breath comes more freely.",
+      "biomarker": "A slowing pulse and breath, rising HRV."
     },
     "light_inhale": {
       "name": "Light Breath",
@@ -3054,7 +3059,11 @@
       "guiding_6": "If attention wanders, return to the first touch of light in your chest.",
       "guiding_7": "With each cycle, add a grain of gratitude.",
       "guiding_8": "Let your body become a bit lighter, and your breath even warmer.",
-      "final_phrase": "With each inhale you receive light, with each exhale you become light."
+      "final_phrase": "With each inhale you receive light, with each exhale you become light.",
+      "biology": "Even, calm breathing supports parasympathetic balance and relaxation of the facial and chest muscles.",
+      "why": "This is a practice of directed attention and gratitude — shifting focus toward a positive experience; such practices are associated with improved subjective state rather than a specific neuro-effect.",
+      "effect": "Lightness in the body, warm breath, a soft clear gaze.",
+      "biomarker": "Even breathing and a sense of warmth (a bodily sign of relaxation)."
     },
     "inner_spark": {
       "name": "Inner Spark",
@@ -3065,7 +3074,11 @@
       "guiding_4": "Breathe as if feeding the flame with oxygen: calmly, evenly, carefully.",
       "guiding_5": "If attention scatters — return to the intention-word and to the warmth in your chest.",
       "guiding_6": "Feel how the the the spark becomes steady — not brighter, but more reliable.",
-      "final_phrase": "The spark of intention burns quietly — and that's enough to begin."
+      "final_phrase": "The spark of intention burns quietly — and that's enough to begin.",
+      "biology": "Calm, even breathing holds a balanced level of arousal at which attention is clear but not overstimulated.",
+      "why": "This is a practice of intention and focus — a short \"why\" word gives attention a point to gather around and makes it easier to begin acting; it works at the level of meaning and attention rather than a specific neuro-effect.",
+      "effect": "A warm clarity in the chest, a sense of the intention being reliable.",
+      "biomarker": "Even breathing, collected steady attention."
     },
     "slow_glow": {
       "name": "Slow Glow",
@@ -3078,7 +3091,11 @@
       "guiding_6": "Relax forehead, eyes, tongue, shoulders. Allow heaviness to be.",
       "guiding_7": "If attention drifts — return to the light in belly and long exhale.",
       "guiding_8": "Let each breath make the light steadier, and the body calmer.",
-      "final_phrase": "The light remained, fatigue went deeper into the earth."
+      "final_phrase": "The light remained, fatigue went deeper into the earth.",
+      "biology": "Slow breathing with a long exhale shifts the autonomic balance toward parasympathetic dominance — a state of \"rest and recovery\".",
+      "why": "When you are tired, the resource is restored not by stimulation but by allowing the body to settle into support and lower its activation.",
+      "effect": "The body grows pleasantly heavy, the breath more even, calmer inside.",
+      "biomarker": "Slower breathing, muscular relaxation, rising HRV."
     },
     "earth_breath": {
       "name": "Earth Breath",
@@ -3090,7 +3107,11 @@
       "guiding_5": "If mind wanders — return to soles: warmth, weight, floor pressure.",
       "guiding_6": "With each inhale fill chest with calmness, with each exhale deepen roots.",
       "guiding_7": "You are the trunk; breath is sap, earth is your support.",
-      "final_phrase": "With each exhale the Earth receives you, and inside becomes quieter."
+      "final_phrase": "With each exhale the Earth receives you, and inside becomes quieter.",
+      "biology": "A lengthened exhale strengthens the vagal brake — the parasympathetic slowing of heart rate on the out-breath via the vagus nerve. Proprioceptive contact of the feet with the ground adds a stabilizing signal to the nervous system.",
+      "why": "Combining a steady base of support with an exhale longer than the inhale counters sympathetic activation — the physiological basis of anxiety.",
+      "effect": "Lower background arousal, a sense of steadiness and warmth.",
+      "biomarker": "Slower breathing, rising HRV, the jaw and shoulders letting go."
     },
     "wave_pulse": {
       "name": "Wave Pulse",
@@ -3105,7 +3126,11 @@
       "guiding_8": "Imagine how each inhale gathers peace, and each exhale spreads it through entire body.",
       "guiding_9": "Breath is the sea, pulse is its shore: meet the wave and bid it farewell with gratitude.",
       "guiding_10": "Stay in this movement until wave becomes almost invisible, and peace tangible.",
-      "final_phrase": "When heart and breath sound as one wave, silence reigns within."
+      "final_phrase": "When heart and breath sound as one wave, silence reigns within.",
+      "biology": "Breathing at around 6 cycles per minute brings the heart-rate oscillations into resonance with the baroreflex — a state of cardiorespiratory coherence with maximum heart-rate variability amplitude.",
+      "why": "Rhythmically syncing the inhale and exhale with the natural rise and fall of the pulse (respiratory sinus arrhythmia) strengthens vagal control of the heart — one of the best-studied effects of slow breathing.",
+      "effect": "The breath evens out, the heartbeat feels softer, attention settles.",
+      "biomarker": "Rising HRV amplitude, a smooth wave-like pulse, a visible coherence wave."
     },
     "sphere_breath": {
       "name": "Sphere Breath",
@@ -3119,7 +3144,11 @@
       "guiding_7": "If thoughts distract — return to sphere boundary and its touch with air.",
       "guiding_8": "Let center remain calm, and breath be movement of world around it.",
       "guiding_9": "The wider the sphere, the quieter inside.",
-      "final_phrase": "When sphere breathes, you become the center of a calm world."
+      "final_phrase": "When sphere breathes, you become the center of a calm world.",
+      "biology": "Even breathing and attention spread evenly across the body support a calm, collected state of the nervous system.",
+      "why": "Holding a whole, symmetrical image of the body trains stability of attention — a skill of concentration; this is a practice of attention, and its effect lies in the training of focus itself.",
+      "effect": "The wider the \"sphere\", the quieter it is inside; attention stays even.",
+      "biomarker": "Even calm breathing, steady attention."
     },
     "light_flow": {
       "name": "Light Flow",
@@ -3131,7 +3160,11 @@
       "guiding_5": "Notice where along the way light meets tension — soften that place with breath.",
       "guiding_6": "With each cycle feel more spaciousness in back and collarbones.",
       "guiding_7": "Keep a kind inner gaze — light flows easier.",
-      "final_phrase": "When light flows freely, actions become simple."
+      "final_phrase": "When light flows freely, actions become simple.",
+      "biology": "Directing attention to tight areas on the exhale helps them relax and releases some of the body's tension.",
+      "why": "This is a practice of bodily attention and imagery — the subjective sense of \"spaciousness\" in the back and shoulders lowers the perceived barrier to action; the value is in the experience of freedom, not in a specific mechanism.",
+      "effect": "More freedom in the back and collarbones, movement comes more easily.",
+      "biomarker": "Relaxation of the shoulder-girdle muscles, even breathing."
     },
     "roots_breath": {
       "name": "Roots Breath",
@@ -3145,7 +3178,11 @@
       "guiding_7": "If mind drifts — return to contact sole ↔ earth.",
       "guiding_8": "Breathe evenly, without effort; let gravity work for you.",
       "guiding_9": "The deeper the roots, the freer the breath becomes.",
-      "final_phrase": "Earth holds you. With exhale anxiety goes down."
+      "final_phrase": "Earth holds you. With exhale anxiety goes down.",
+      "biology": "Breathing with an exhale longer than the inhale (inhale for 4 / exhale for 6) strengthens the vagal brake — the parasympathetic slowing of heart rate on the out-breath. This is one of the best-studied breathing techniques for reducing anxiety.",
+      "why": "Proprioceptive contact of the feet with the ground gives the nervous system a steady external anchor that competes with anxious rumination.",
+      "effect": "A step-by-step release of tension in the belly, throat, and forehead.",
+      "biomarker": "A lengthened exhale, rising HRV (vagal tone)."
     },
     "earth_pulse": {
       "name": "Earth Pulse",
@@ -3159,7 +3196,11 @@
       "guiding_7": "With each exhale let pulse become wider and softer.",
       "guiding_8": "If rush appears — lengthen exhale and notice pause after it.",
       "guiding_9": "Stay in sensation of warm, heavy rhythm under feet.",
-      "final_phrase": "When you breathe in Earth's rhythm, anxiety loses power."
+      "final_phrase": "When you breathe in Earth's rhythm, anxiety loses power.",
+      "biology": "Slow diaphragmatic breathing with a lengthened exhale lowers heart rate through parasympathetic activation — a well-studied effect of slow breathing.",
+      "why": "Leaning on a slow inner rhythm gives the anxious mind a simple, predictable point of reference (reducing cognitive load).",
+      "effect": "The pulse feels broader and softer, a sense of weight and grounding arises.",
+      "biomarker": "A slowing pulse, a pause after the exhale, rising HRV."
     },
     "breath_possibility": {
       "name": "Breath of Possibility",
@@ -3170,7 +3211,11 @@
       "guiding_4": "Imagine doorway before you: inhale — door opens, exhale — you take half-step with attention.",
       "guiding_5": "If doubt appears — surrender to long exhale and return to phrases.",
       "guiding_6": "Keep soft posture and warm belly — there determination is born without tension.",
-      "final_phrase": "Possibility breathes with you — and each exhale makes the step more real."
+      "final_phrase": "Possibility breathes with you — and each exhale makes the step more real.",
+      "biology": "Even breathing with a calm posture supports collected, non-anxious attention and a stable autonomic baseline.",
+      "why": "This is a practice of intention with bodily reinforcement — pairing a word with the breath anchors the mindset not only in the head but in the body; it works as an embodied attitude rather than a measurable neuro-mechanism.",
+      "effect": "A sense of room to choose, resolve without strain.",
+      "biomarker": "Even breathing, a soft steady posture."
     },
     "inner_smile": {
       "name": "Inner Smile",
@@ -3183,7 +3228,11 @@
       "guiding_6": "If a real smile appears on your face — don't hold it, just soften it.",
       "guiding_7": "Breathe as if thanking your body for its work.",
       "guiding_8": "Stay kind to yourself — this is the source of joy.",
-      "final_phrase": "When the heart smiles, the world answers with warmth."
+      "final_phrase": "When the heart smiles, the world answers with warmth.",
+      "biology": "Relaxing the muscles of the face and throat releases some of the muscular tension the body holds under stress.",
+      "why": "This is a practice of self-compassion — a kind, friendly stance toward oneself; its value is supported as a practice rather than as a measurable brain mechanism, so it is offered here as an experience rather than as a \"neuro-effect\".",
+      "effect": "Warmth in the chest, the face smoothing out, the breath softening.",
+      "biomarker": "A sense of warmth and relaxation; even breathing."
     },
     "amoeba_dance": {
       "name": "Amoeba Dance",
@@ -3196,7 +3245,11 @@
       "guiding_6": "Let movement arise from center of belly and fade on its own.",
       "guiding_7": "If speed increases — return to 'almost motionless'.",
       "guiding_8": "Notice how joy appears in body without effort — like a gentle pulse.",
-      "final_phrase": "Joy is movement that breathes on its own."
+      "final_phrase": "Joy is movement that breathes on its own.",
+      "biology": "Gentle movement on the breath releases static muscular tension and revives the felt sense of the body in space.",
+      "why": "This is a practice of spontaneous movement and bodily presence — joy is often easier not to \"summon\" but to allow to arise through light movement; the value here is in the experience itself, not in a specific mechanism.",
+      "effect": "Bodily lightness, a sense of coming alive, movement that wants to keep going on its own.",
+      "biomarker": "Free breathing and an easy, unstrained mobility."
     },
     "warm_sphere": {
       "name": "Warm Sphere",
@@ -3208,7 +3261,11 @@
       "guiding_5": "Breathe slowly, without effort; keep face soft and throat free.",
       "guiding_6": "If thoughts return — find the edges of the warm sphere again.",
       "guiding_7": "Let it become steady and stable, like a night lantern inside your body.",
-      "final_phrase": "The warm sphere holds you from within, and strength returns gently."
+      "final_phrase": "The warm sphere holds you from within, and strength returns gently.",
+      "biology": "Attention to the body's center and slow diaphragmatic breathing support parasympathetic tone and a reduction in muscular tension.",
+      "why": "The image of a steady warm sphere gives tired attention a gentle anchor instead of scattered rumination (reducing cognitive load).",
+      "effect": "Warmth spreads more widely, the body grows calmer, the face and throat soften.",
+      "biomarker": "Even slow breathing, a sense of warmth and weight."
     },
     "rest_breath": {
       "name": "Rest Breath",
@@ -3220,7 +3277,11 @@
       "guiding_5": "Release tension in face, shoulders, hands.",
       "guiding_6": "Imagine breath dissolving fatigue like warm water.",
       "guiding_7": "Stay in this slow rhythm without effort.",
-      "final_phrase": "Rest is not weakness — it is wisdom of the body."
+      "final_phrase": "Rest is not weakness — it is wisdom of the body.",
+      "biology": "A rhythm with an exhale longer than the inhale strengthens respiratory sinus arrhythmia — the natural slowing of the pulse on the out-breath governed by the vagus nerve. This is a core technique of HRV biofeedback.",
+      "why": "An even count gives the mind a simple task and draws it out of fatigue-driven rumination.",
+      "effect": "The breath comes to resemble steady waves of rest, the body softens.",
+      "biomarker": "A lengthened exhale, a natural pause after it, rising HRV."
     },
     "silence_point": {
       "name": "Point of Stillness",
@@ -3233,7 +3294,11 @@
       "guiding_6": "Ears listen to silence, skin listens to air, heart listens to itself.",
       "guiding_7": "Let boundaries of 'I' become soft, like light in fog.",
       "guiding_8": "Stay near the point — it requires nothing and is already calm.",
-      "final_phrase": "In the point of stillness, everything has already happened — all that remains is to be."
+      "final_phrase": "In the point of stillness, everything has already happened — all that remains is to be.",
+      "biology": "Very gentle, barely perceptible breathing accompanies a deep drop in physiological arousal.",
+      "why": "Watching thoughts without getting involved is a skill of decentering (observing attention); this is a mindfulness practice that trains steadiness and reduces reactivity.",
+      "effect": "Thoughts drift by more easily, tension softens, an inner stillness is born.",
+      "biomarker": "Very slow breathing, a sense of calm and stillness."
     },
     "listen_space": {
       "name": "Listen to Space",
@@ -3246,7 +3311,11 @@
       "guiding_6": "If judgment appears — 'like/dislike' — release it with exhale.",
       "guiding_7": "Notice how space listens back to you — through silence around breath.",
       "guiding_8": "Become transparent to the world, so the world becomes transparent to you.",
-      "final_phrase": "When you listen to space, space begins to listen to you."
+      "final_phrase": "When you listen to space, space begins to listen to you.",
+      "biology": "Open, undirected, non-judging auditory attention supports a calm, non-reactive state of mind.",
+      "why": "This is a practice of open monitoring — listening without naming or judging reduces automatic categorization and the reactivity tied to it; the value is in the quality of presence itself.",
+      "effect": "Sounds pass through you without catching; a stillness forms around the breath.",
+      "biomarker": "Even calm breathing, broadened steady attention."
     },
     "still_form": {
       "name": "Still Form",
@@ -3263,7 +3332,11 @@
       "guiding_10": "If mind wanders — return to the feeling of weight and contact with earth.",
       "guiding_11": "Let silence gradually fill the form from within, like light fills water.",
       "guiding_12": "Stay still a bit longer than you want — there peace begins.",
-      "final_phrase": "When form freezes, silence is born within it."
+      "final_phrase": "When form freezes, silence is born within it.",
+      "biology": "A stable posture with a lengthened axis reduces muscular and postural load; natural, unforced breathing supports parasympathetic (\"restorative\") tone.",
+      "why": "Interoception — attending to internal bodily signals without trying to change them — is associated with the insular cortex and trains the nervous system's capacity to stay at rest.",
+      "effect": "A deepening inner stillness, steadiness, breath that becomes almost imperceptible.",
+      "biomarker": "Slow even breathing, steady HRV, a sense of stillness."
     }
   },
   "onboarding": {
