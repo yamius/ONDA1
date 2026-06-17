@@ -343,7 +343,7 @@ export function Layout() {
                 {t('menu.research', { defaultValue: 'Research' })}
               </Link>
               <Link to={langHref('/emoton', currentLang)} onClick={goEmoton} className="text-xs text-green-400/70 transition-colors hover:text-green-400">
-                {t('footer.emoton', { defaultValue: 'Feelings wheel' })}
+                {t('footer.emoton', { defaultValue: 'Emoton' })}
               </Link>
               <a href={downloadHref} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.download')}
