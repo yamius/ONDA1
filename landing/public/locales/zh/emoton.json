@@ -256,7 +256,8 @@
     "camera_cta": "连接摄像头",
     "camera_title": "实时看着你的脉搏回应",
     "camera_hint": "把指尖搭在后置摄像头上，看着脉搏随你的呼吸起伏。",
-    "finish_cta": "结束"
+    "finish_cta": "结束",
+    "app_invite": "或在功能完整的应用中继续"
   },
   "quality": {
     "heavy": "沉重",

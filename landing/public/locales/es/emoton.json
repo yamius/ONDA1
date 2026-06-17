@@ -256,7 +256,8 @@
     "camera_cta": "Conectar la cámara",
     "camera_title": "Mira cómo responde tu pulso en vivo",
     "camera_hint": "Apoya la yema del dedo en la cámara trasera y observa cómo tu pulso se mueve con la respiración.",
-    "finish_cta": "Terminar"
+    "finish_cta": "Terminar",
+    "app_invite": "O continúa en la app con la experiencia completa"
   },
   "quality": {
     "heavy": "pesadez",

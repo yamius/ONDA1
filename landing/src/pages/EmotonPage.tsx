@@ -427,9 +427,28 @@ export function EmotonPage() {
             </div>
           )}
 
-          {/* Finish + start-over — matched footer styling, a divider between them. */}
-          <div className="absolute bottom-5 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2">
-            <button onClick={() => { cameraPpg.stop(); setStep('assimilation'); }} className="font-mono text-[10px] uppercase tracking-widest text-white/30 hover:text-white/60">
+          {/* App invite + the two stores (one line) sit above finish/start-over. */}
+          <div className="absolute bottom-5 left-1/2 flex w-[88%] max-w-xs -translate-x-1/2 flex-col items-center gap-2">
+            <p className="text-center text-xs leading-snug text-white/55">{t('be_with.app_invite')}</p>
+            <div className="flex w-full gap-2">
+              <a
+                href={appStoreUrl('emoton')}
+                target="_blank"
+                rel="noopener"
+                onClick={() => trackDownloadClick('emoton_bewith')}
+                className="flex-1 rounded-full bg-cyan-500/20 px-3 py-2 text-center text-xs font-semibold text-cyan-100 transition-colors hover:bg-cyan-500/30"
+              >
+                App Store
+              </a>
+              <a
+                href="/#download"
+                onClick={() => trackDownloadClick('emoton_bewith')}
+                className="flex-1 rounded-full border border-white/15 bg-white/5 px-3 py-2 text-center text-xs font-semibold text-white/80 transition-colors hover:bg-white/10"
+              >
+                Google Play
+              </a>
+            </div>
+            <button onClick={() => { cameraPpg.stop(); setStep('assimilation'); }} className="mt-1 font-mono text-[10px] uppercase tracking-widest text-white/30 hover:text-white/60">
               {t('be_with.finish_cta')}
             </button>
             <span className="h-px w-12 bg-white/15" />

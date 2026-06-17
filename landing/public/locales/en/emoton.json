@@ -161,7 +161,8 @@
     "camera_cta": "Connect the camera",
     "camera_title": "See your pulse respond live",
     "camera_hint": "Rest a fingertip on the rear camera and watch your pulse move with your breath.",
-    "finish_cta": "Finish"
+    "finish_cta": "Finish",
+    "app_invite": "Or continue in the app with the full experience"
   },
   "quality": {
     "heavy": "heavy",
