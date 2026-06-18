@@ -12,8 +12,12 @@ android {
         applicationId "com.onda.app"
         minSdk 26
         targetSdk 34
-        versionCode 1
-        versionName "1.0"
+        // Version is stamped by CI from the GitHub Actions run number (the same
+        // number used for the v1.0.<run> release tag), so the APK's internal
+        // version always matches the release and increases monotonically.
+        // Local builds fall back to 1 / "1.0" when the properties aren't passed.
+        versionCode (project.hasProperty('ondaVersionCode') ? project.ondaVersionCode.toInteger() : 1)
+        versionName (project.hasProperty('ondaVersionName') ? project.ondaVersionName : "1.0")
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -25,9 +29,11 @@ android {
     signingConfigs {
         release {
             storeFile file("onda-release.keystore")
-            storePassword System.getenv("KEYSTORE_PASSWORD") ?: "onda2024secure"
-            keyAlias "onda"
-            keyPassword System.getenv("KEY_PASSWORD") ?: "onda2024secure"
+            // Secrets come ONLY from the environment (CI passes them; no hardcoded
+            // fallback in the repo). A release build fails loudly if they're absent.
+            storePassword System.getenv("KEYSTORE_PASSWORD")
+            keyAlias System.getenv("KEY_ALIAS") ?: "onda"
+            keyPassword System.getenv("KEY_PASSWORD")
         }
     }
 

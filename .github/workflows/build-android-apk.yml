@@ -110,7 +110,9 @@ jobs:
         if: github.event.inputs.build_type == 'debug' || (github.event.inputs.build_type == '' && github.ref != 'refs/heads/main')
         run: |
           cd android-webview
-          ./gradlew assembleDebug --stacktrace
+          ./gradlew assembleDebug --stacktrace \
+            -PondaVersionCode=${{ github.run_number }} \
+            -PondaVersionName=1.0.${{ github.run_number }}
       
       - name: Build Release APK
         # Собираем release, только если явно выбрали 'release'
@@ -125,7 +127,9 @@ jobs:
             exit 1
           fi
           cd android-webview
-          ./gradlew assembleRelease --stacktrace
+          ./gradlew assembleRelease --stacktrace \
+            -PondaVersionCode=${{ github.run_number }} \
+            -PondaVersionName=1.0.${{ github.run_number }}
       
       - name: Get APK info
         id: apk_info

@@ -253,49 +253,57 @@ class MainActivity : AppCompatActivity() {
 
             override fun onPermissionRequest(request: PermissionRequest) {
                 Log.d("WebViewConsole", "onPermissionRequest called for: ${request.resources.joinToString()}")
-                
-                // Проверяем, что запрашивается микрофон
-                if (request.resources.contains(PermissionRequest.RESOURCE_AUDIO_CAPTURE)) {
-                    // Запрашиваем аудио фокус
+
+                val wantsAudio = request.resources.contains(PermissionRequest.RESOURCE_AUDIO_CAPTURE)
+                val wantsVideo = request.resources.contains(PermissionRequest.RESOURCE_VIDEO_CAPTURE)
+
+                // Only mic (voice/breathing) and camera (live PPG pulse) are ever granted.
+                if (!wantsAudio && !wantsVideo) {
+                    request.deny()
+                    Log.d("WebViewConsole", "Permission request denied (neither audio nor video)")
+                    return
+                }
+
+                // Take transient audio focus only when the mic is involved.
+                if (wantsAudio) {
                     val audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
                     val result = audioManager.requestAudioFocus(
                         null,
                         AudioManager.STREAM_VOICE_CALL,
                         AudioManager.AUDIOFOCUS_GAIN_TRANSIENT
                     )
-                    
-                    if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
-                        Log.d("WebViewConsole", "Audio focus granted")
-                    } else {
-                        Log.d("WebViewConsole", "Audio focus NOT granted")
-                    }
-                    
-                    // Проверяем, есть ли у нас runtime permission
-                    if (ContextCompat.checkSelfPermission(
-                            this@MainActivity,
-                            Manifest.permission.RECORD_AUDIO
-                        ) == PackageManager.PERMISSION_GRANTED
-                    ) {
-                        // Разрешаем WebView использовать микрофон
-                        runOnUiThread {
-                            request.grant(request.resources)
-                            Log.d("WebViewConsole", "Microphone permission granted to WebView immediately")
-                        }
-                    } else {
-                        // Сохраняем запрос и просим runtime permission
-                        pendingPermissionRequest = request
-                        runOnUiThread {
-                            ActivityCompat.requestPermissions(
-                                this@MainActivity,
-                                arrayOf(Manifest.permission.RECORD_AUDIO),
-                                PERMISSION_REQUEST_CODE
-                            )
-                            Log.d("WebViewConsole", "Requesting microphone permission from user")
-                        }
+                    Log.d(
+                        "WebViewConsole",
+                        if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) "Audio focus granted" else "Audio focus NOT granted"
+                    )
+                }
+
+                // Map the requested web resources to the OS runtime permissions they need.
+                val needed = mutableListOf<String>()
+                if (wantsAudio) needed.add(Manifest.permission.RECORD_AUDIO)
+                if (wantsVideo) needed.add(Manifest.permission.CAMERA)
+
+                val missing = needed.filter {
+                    ContextCompat.checkSelfPermission(this@MainActivity, it) != PackageManager.PERMISSION_GRANTED
+                }
+
+                if (missing.isEmpty()) {
+                    // All backing OS permissions already held — grant exactly what was asked.
+                    runOnUiThread {
+                        request.grant(request.resources)
+                        Log.d("WebViewConsole", "Permissions already held — granted to WebView: ${request.resources.joinToString()}")
                     }
                 } else {
-                    request.deny()
-                    Log.d("WebViewConsole", "Permission request denied (not audio)")
+                    // Hold the WebView request until the user answers the runtime prompt(s).
+                    pendingPermissionRequest = request
+                    runOnUiThread {
+                        ActivityCompat.requestPermissions(
+                            this@MainActivity,
+                            missing.toTypedArray(),
+                            PERMISSION_REQUEST_CODE
+                        )
+                        Log.d("WebViewConsole", "Requesting runtime permissions from user: ${missing.joinToString()}")
+                    }
                 }
             }
         }
@@ -555,17 +563,19 @@ class MainActivity : AppCompatActivity() {
             PERMISSION_REQUEST_CODE -> {
                 val request = pendingPermissionRequest
                 if (request != null) {
-                    if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                        // Разрешение получено, грантим запрос WebView
+                    // We may have asked for several runtime perms (mic and/or camera) at once —
+                    // only hand the WebView what it requested if every backing perm was granted.
+                    val allGranted = grantResults.isNotEmpty() &&
+                        grantResults.all { it == PackageManager.PERMISSION_GRANTED }
+                    if (allGranted) {
                         runOnUiThread {
                             request.grant(request.resources)
-                            Log.d("WebViewConsole", "User granted microphone permission - granting to WebView")
+                            Log.d("WebViewConsole", "User granted runtime permission(s) - granting to WebView")
                         }
                     } else {
-                        // Разрешение отклонено
                         runOnUiThread {
                             request.deny()
-                            Log.d("WebViewConsole", "User denied microphone permission")
+                            Log.d("WebViewConsole", "User denied runtime permission(s)")
                         }
                     }
                     pendingPermissionRequest = null

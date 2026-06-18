@@ -113,8 +113,10 @@
   - `BluetoothManager.kt` — BLE-пульсометры (Polar, Xiaomi)
   - `OndaHeartRateService.kt` — foreground service для долгих сессий
   - `OndaNotificationListener.kt` — push handling
-- Gradle build (`build-apk-45.sh`, `build-apk-46.sh` — версионные скрипты
-  для разных Android API)
+- Gradle build через CI (`.github/workflows/build-android-apk.yml`,
+  `workflow_dispatch`): versionCode/versionName проставляются из
+  `github.run_number` (тот же номер, что в релиз-теге `v1.0.<run>`),
+  передаются в gradle как `-PondaVersionCode/-PondaVersionName`
 
 ### 3.4. Биометрические интеграции
 

@@ -44,6 +44,11 @@
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-feature android:name="android.hardware.microphone" android:required="false" />
+
+    <!-- Camera for live pulse (PPG via rear camera + flash); flash is best-effort -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
     
     <!-- Foreground service for heart rate monitoring (API 28+) -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
