@@ -240,26 +240,12 @@ export function useCameraPpg() {
       });
       streamRef.current = stream;
 
-      // best-effort torch (works on iOS 17+; silently ignored elsewhere)
-      let torchOn = false;
+      // Torch is enabled below, AFTER the capture pipeline is live — Android
+      // WebView frequently reports `getCapabilities().torch` only once frames
+      // start flowing, so a single attempt right after getUserMedia (as iOS
+      // tolerates) silently no-ops there. See enableTorch() further down.
       const track = stream.getVideoTracks()[0];
-      try {
-        const caps = (track.getCapabilities?.() ?? {}) as MediaTrackCapabilities & { torch?: boolean };
-        if (caps.torch) {
-          await track.applyConstraints({ advanced: [{ torch: true }] as MediaTrackConstraintSet[] });
-          torchOn = true;
-        }
-      } catch {
-        /* torch unsupported / ignored — pipeline runs torch-off in good light */
-      }
       videoTrackRef.current = track;
-      // iOS drops the torch after a while (≈30 s) and on some exposure changes —
-      // re-assert it periodically so the flash stays on for the whole session.
-      if (torchOn) {
-        torchKeepAliveRef.current = setInterval(() => {
-          track.applyConstraints({ advanced: [{ torch: true }] as MediaTrackConstraintSet[] }).catch(() => {});
-        }, 8000);
-      }
 
       const video = document.createElement('video');
       video.setAttribute('playsinline', '');
@@ -283,7 +269,7 @@ export function useCameraPpg() {
       bufferRef.current = [];
       smoothedBpmRef.current = 0;
       heartRateStore.setCameraActive(true); // camera is now the pulse source
-      patch({ status: 'searching', torchOn });
+      patch({ status: 'searching', torchOn: false });
 
       const vAny = video as HTMLVideoElement & {
         requestVideoFrameCallback?: (cb: (now: number) => void) => number;
@@ -308,6 +294,39 @@ export function useCameraPpg() {
       onFrame();
 
       intervalRef.current = setInterval(runEstimate, ESTIMATE_EVERY_MS);
+
+      // Best-effort torch — now that frames are flowing. On iOS this lights up
+      // on the first try; on Android WebView the `torch` capability often shows
+      // up only after a beat, so we poll a few times before giving up. Once on,
+      // re-assert periodically (iOS/Android both drop it on exposure changes).
+      const applyTorch = async (): Promise<boolean> => {
+        try {
+          const caps = (track.getCapabilities?.() ?? {}) as MediaTrackCapabilities & { torch?: boolean };
+          if (!caps.torch) return false;
+          await track.applyConstraints({ advanced: [{ torch: true }] as MediaTrackConstraintSet[] });
+          return true;
+        } catch {
+          return false;
+        }
+      };
+      void (async () => {
+        let torchOn = false;
+        // ~first 2.4 s: retry until the capability appears and applies.
+        for (let i = 0; i < 6 && runningRef.current && !torchOn; i++) {
+          torchOn = await applyTorch();
+          if (!torchOn) await new Promise((r) => setTimeout(r, 400));
+        }
+        if (!runningRef.current) return;
+        // Diagnostic: one line so on-device logcat tells us torch-capable vs not.
+        const finalCaps = (track.getCapabilities?.() ?? {}) as MediaTrackCapabilities & { torch?: boolean };
+        console.log(`[useCameraPpg] torch on=${torchOn} capable=${Boolean(finalCaps.torch)}`);
+        if (torchOn) {
+          patch({ torchOn: true });
+          torchKeepAliveRef.current = setInterval(() => {
+            track.applyConstraints({ advanced: [{ torch: true }] as MediaTrackConstraintSet[] }).catch(() => {});
+          }, 8000);
+        }
+      })();
     } catch (e: unknown) {
       const name = (e as { name?: string })?.name;
       const denied = name === 'NotAllowedError' || name === 'NotFoundError' || name === 'SecurityError';
