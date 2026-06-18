@@ -202,6 +202,10 @@ export function useSubscription(): UseSubscriptionReturn {
       currency,
       product_id: ent.productIdentifier,
       plan,
+      // quality→purchase linkage: quality of the user's first practice (stashed
+      // in finishPractice when the paywall was armed). Lets us later plot
+      // "at what first-practice quality do people buy". undefined if not set.
+      first_practice_quality: Number(localStorage.getItem('onda_first_practice_quality')) || undefined,
     });
     trackTenjinSubscriptionPaid({
       value,

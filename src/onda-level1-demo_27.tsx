@@ -2531,9 +2531,10 @@ const OndaLevel1 = () => {
           quality_score: qualityScore,
           has_biometrics: hasRealMetricsAtFinish,
         });
-        if (platform === 'ios' && !isPremium) {
-          postFirstExperiencePaywallArmedRef.current = true;
-        }
+        // NOTE: paywall arming was moved OFF this near-unreachable valid event
+        // (≥80% time + quality≥70/33) onto practice_complete below, so the
+        // offer actually shows. first_practice_complete stays as a strict
+        // reference metric only.
       }
     }
     // Coherence training signal for this session: how much the user raised
@@ -2545,12 +2546,25 @@ const OndaLevel1 = () => {
       ? Math.max(0, coherencePeak - coherenceBaseline)
       : null;
 
+    // Funnel instrumentation (1.8.x). Enrich practice_complete so we can later
+    // plot the quality→activation→purchase curve. metrics_source distinguishes
+    // watch / camera (both make has_biometrics true → the strict 70 bar) from
+    // simulated (no sensor → quality caps ~20, can never clear its own 33 bar).
+    const metricsSource = freshVitalsForSession.hrSource || 'simulated';
+    // First practice_complete ever? Keyed on a DEDICATED flag, not the
+    // (effectively unreachable) validity threshold — this is what now arms the
+    // post-first-practice paywall, so it actually shows to real users.
+    const isFirstPracticeComplete = localStorage.getItem('onda_paywall_armed') !== '1';
+
     trackPractice('complete', activePractice.id, {
       practice_type: 'standard',
       practice_name: activePractice.name,
       duration_seconds: practiceTime,
       target_duration: activePractice.targetTime || 720,
       quality_score: qualityScore,
+      time_percent: Math.round(timePercent * 100),
+      metrics_source: metricsSource,
+      is_first: isFirstPracticeComplete,
       ond_earned: earnedQnt,
       has_biometrics: hasRealMetricsAtFinish,
       is_valid_for_artifact: isValidForArtifact,
@@ -2561,6 +2575,19 @@ const OndaLevel1 = () => {
       coherence_peak: coherencePeak,
       coherence_delta: coherenceDelta,
     });
+
+    // Decoupled paywall arming (replaces the old valid-first_practice_complete
+    // gate, which fired for ~0 users so the paywall never showed). Arm once, on
+    // the first practice_complete — value delivered, real people see the offer.
+    // Idempotent via onda_paywall_armed; quality stashed so paywall_view /
+    // purchase can carry first_practice_quality across components.
+    if (isFirstPracticeComplete) {
+      localStorage.setItem('onda_paywall_armed', '1');
+      localStorage.setItem('onda_first_practice_quality', String(Math.round(qualityScore)));
+      if (platform === 'ios' && !isPremium) {
+        postFirstExperiencePaywallArmedRef.current = true;
+      }
+    }
 
     const session = {
       id: Date.now(),
@@ -2905,6 +2932,9 @@ const OndaLevel1 = () => {
       track('paywall_view', {
         source: 'post_first_experience',
         practice_id: practiceId,
+        // quality→purchase linkage: the quality of the practice that earned
+        // this offer (stashed in finishPractice). undefined if not recorded.
+        first_practice_quality: Number(localStorage.getItem('onda_first_practice_quality')) || undefined,
       });
       setPaywallSource('post_first_experience');
       setShowSubscriptionModal(true);
