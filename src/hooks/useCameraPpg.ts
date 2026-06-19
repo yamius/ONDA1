@@ -87,6 +87,10 @@ export function useCameraPpg() {
   const lastCommitAtRef = useRef(0);
   const videoTrackRef = useRef<MediaStreamTrack | null>(null);
   const torchKeepAliveRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  // True when the flash was lit via the native Android bridge (web torch
+  // unavailable) — so keep-alive re-asserts the right channel and teardown
+  // turns the native flash back off.
+  const nativeTorchRef = useRef(false);
 
   const patch = useCallback((p: Partial<CameraPpgState>) => {
     setState((s) => ({ ...s, ...p }));
@@ -114,6 +118,13 @@ export function useCameraPpg() {
     if (torchKeepAliveRef.current != null) {
       clearInterval(torchKeepAliveRef.current);
       torchKeepAliveRef.current = null;
+    }
+    // Turn the native flash back off if we lit it via the Android bridge.
+    if (nativeTorchRef.current) {
+      try {
+        (window as unknown as { Android?: { torchOff?: () => boolean } }).Android?.torchOff?.();
+      } catch { /* noop */ }
+      nativeTorchRef.current = false;
     }
     videoTrackRef.current = null;
     const stream = streamRef.current;
@@ -317,13 +328,29 @@ export function useCameraPpg() {
           if (!torchOn) await new Promise((r) => setTimeout(r, 400));
         }
         if (!runningRef.current) return;
-        // Diagnostic: one line so on-device logcat tells us torch-capable vs not.
         const finalCaps = (track.getCapabilities?.() ?? {}) as MediaTrackCapabilities & { torch?: boolean };
-        console.log(`[useCameraPpg] torch on=${torchOn} capable=${Boolean(finalCaps.torch)}`);
+        // Native fallback: Android WebView usually can't drive torch over WebRTC
+        // (capable=false), and may open a flash-less aux camera — so light the
+        // main rear flash directly through the Android bridge.
+        const bridge = (window as unknown as { Android?: { torchOn?: () => boolean; torchOff?: () => boolean } }).Android;
+        if (!torchOn && typeof bridge?.torchOn === 'function') {
+          try {
+            if (bridge.torchOn()) {
+              torchOn = true;
+              nativeTorchRef.current = true;
+            }
+          } catch { /* native torch unavailable — stay on ambient light */ }
+        }
+        // Diagnostic: one line so on-device logcat tells us web vs native vs none.
+        console.log(`[useCameraPpg] torch on=${torchOn} capable=${Boolean(finalCaps.torch)} native=${nativeTorchRef.current}`);
         if (torchOn) {
           patch({ torchOn: true });
           torchKeepAliveRef.current = setInterval(() => {
-            track.applyConstraints({ advanced: [{ torch: true }] as MediaTrackConstraintSet[] }).catch(() => {});
+            if (nativeTorchRef.current) {
+              try { bridge?.torchOn?.(); } catch { /* noop */ }
+            } else {
+              track.applyConstraints({ advanced: [{ torch: true }] as MediaTrackConstraintSet[] }).catch(() => {});
+            }
           }, 8000);
         }
       })();

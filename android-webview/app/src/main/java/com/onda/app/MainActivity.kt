@@ -7,6 +7,8 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.PackageManager
 import android.graphics.Color
+import android.hardware.camera2.CameraCharacteristics
+import android.hardware.camera2.CameraManager
 import android.media.AudioManager
 import android.net.Uri
 import android.os.Build
@@ -656,6 +658,39 @@ class MainActivity : AppCompatActivity() {
                 Log.e("WebViewConsole", "[OAuth] Error opening external browser: ${e.message}")
             }
         }
+
+        // --- Camera torch (flash) bridge ---
+        // Android WebView (esp. Samsung) doesn't expose the WebRTC `torch`
+        // constraint, and getUserMedia often opens a flash-less aux rear camera.
+        // The web PPG hook calls these as a fallback (when its web-torch reports
+        // capable=false), lighting the main rear camera's flash directly. That
+        // camera is a different device id than the one WebRTC holds, so
+        // setTorchMode succeeds while the capture session is live.
+        private fun torchCameraId(cm: CameraManager): String? =
+            cm.cameraIdList.firstOrNull { id ->
+                val c = cm.getCameraCharacteristics(id)
+                c.get(CameraCharacteristics.FLASH_INFO_AVAILABLE) == true &&
+                    c.get(CameraCharacteristics.LENS_FACING) == CameraCharacteristics.LENS_FACING_BACK
+            }
+
+        private fun setTorch(on: Boolean): Boolean {
+            return try {
+                val cm = activity.getSystemService(Context.CAMERA_SERVICE) as CameraManager
+                val id = torchCameraId(cm) ?: return false
+                cm.setTorchMode(id, on)
+                Log.d("WebViewConsole", "[Torch] setTorchMode($id, $on) ok")
+                true
+            } catch (e: Exception) {
+                Log.e("WebViewConsole", "[Torch] setTorchMode failed: ${e.message}")
+                false
+            }
+        }
+
+        @JavascriptInterface
+        fun torchOn(): Boolean = setTorch(true)
+
+        @JavascriptInterface
+        fun torchOff(): Boolean = setTorch(false)
 
         @JavascriptInterface
         fun isHealthConnectAvailable(): Boolean {
