@@ -53,7 +53,8 @@ without an Apple Watch.
 
 ## Текущий статус
 
-- **LIVE в App Store:** `1.8.1` — ✅ **released** (per owner). Билд @ `830d2047` (ветка `claude/analytics-cleanup`, смержена в main FF `b1b5b166`): 1.8.0 + внутренняя чистка аналитики (purchase only on not-paid→paid; онбординг-воронка на live first-run; единый Firebase-путь). **Пользовательски невидимая дельта**; публичный номер теперь 1.8.1. ⚠️ ушло до DebugView re-check (следить за GA4). Детали — секция [1.8.1](#181--released-2026-06-13) в архиве.
+- **На ревью (1.8.2):** ⏳ submitted (per owner). Влито в main (ветка `claude/practice-funnel-analytics`, merge-commit). Инструментирование воронки первой практики: `practice_complete` несёт `quality_score / time_percent / metrics_source (watch|camera|simulated) / is_first`; **пейвол расцеплен** с мёртвым `first_practice_complete` (валидность ≥80% времени + quality≥70/33 фаилась у 0/12) и теперь армится на первом `practice_complete` (флаг `onda_paywall_armed`) → оффер реально показывается; `first_practice_quality` на `paywall_view`+`purchase`; `completed_via` в GA4 (5 custom dimensions зарегистрированы). **Пользовательская дельта:** оффер снова показывается после первой практики. What's New = reliability-нота; Reviewer Notes = камера-ноты 1.8.1 + абзац про подписку. Demo-логин не нужен. Детали — секция [1.8.2](#182--submitted-2026-06-18) в архиве.
+- **Предыдущий live:** `1.8.1` — ✅ **released** (per owner). Билд @ `830d2047` (ветка `claude/analytics-cleanup`, смержена в main FF `b1b5b166`): 1.8.0 + внутренняя чистка аналитики (purchase only on not-paid→paid; онбординг-воронка на live first-run; единый Firebase-путь). **Пользовательски невидимая дельта**; публичный номер теперь 1.8.1. ⚠️ ушло до DebugView re-check (следить за GA4). Детали — секция [1.8.1](#181--released-2026-06-13) в архиве.
 - **Предыдущий live:** `1.8.0` — ✅ released. Несёт **камеру-пульс (fingertip PPG)** во всех практиках + честные метрики (Pulse|Breathing → Coherence; стресс/энергия не покидают устройство) + онбординг-полиш + privacy-апдейт (§1.6, usage-strings, App Privacy: +Health/Audio, −Fitness). Публичный номер показывал 1.2.0. CI-фикс fastlane (`multi_json`).
 - **Предыдущий live:** `1.7.9` — ✅ **APPROVED 2026-06-05** (submitted 2026-06-04). Два фикса: **(1) practice-audio resume** — фоновое аудио в WKWebView невозможно (WebKit паузит `<audio>` при сворачивании, не лечится `AVAudioSession`), поэтому аудио-эксперимент откачен (`.playback` + `audio` в UIBackgroundModes; последнее ещё и App-Review-2.5.4-риск) и добавлен foreground-resume в `PracticeAudioPlayer` (при возврате музыка сразу возобновляется). **(2) watch dead-man's-switch** — `HKWorkoutSession` на часах сам завершается через ~45с тишины от телефона, чтобы force-quit iPhone-приложения не оставлял часы стримить пульс (дренаж) вечно.
 - **Предыдущий live:** `1.7.8` — ✅ **APPROVED 2026-06-04** (submitted 2026-06-03). Батарейный билд (из ветки `claude/workout-lifecycle-battery`): **workout-session lifecycle fix** (сессия активна ⟺ foreground ∨ практика, иначе стоп + `discardWorkout` → больше нет «весь день» дренажа + Apple Fitness чистый; autonomy во время практики сохранена) + watch «Paused» idle-текст + home waveform tap-to-emphasise линии. Ноты version-agnostic, demo-логин не нужен. _(Параллельно в main влита landing-фича `/tools/hrv` — веб-сайт, к iOS-билду отношения не имеет.)_
@@ -121,6 +122,7 @@ without an Apple Watch.
 | **1.7.9** | 2026-06-04 | ✅ **APPROVED / LIVE** | Approved 2026-06-05. (1) Откат фон-аудио эксперимента + foreground-resume практического аудио. (2) Watch dead-man's-switch: `HKWorkoutSession` сам завершается через ~45с тишины от телефона (force-quit больше не оставляет часы стримить вечно) |
 | **1.8.0** | 2026-06-05 | ✅ **LIVE** (per owner) | **Камера-пульс (fingertip PPG)** во всех практиках + честные метрики (стресс/энергия не покидают устройство) + онбординг-полиш + privacy (§1.6, usage-strings, App Privacy ±). CI-фикс fastlane (`multi_json`). Публичный номер 1.2.0. Детали — секция 1.8.0 |
 | **1.8.1** | 2026-06-13 | ✅ **LIVE** (per owner) | Билд @ `830d2047` (ветка `claude/analytics-cleanup`, FF в main): 1.8.0 + внутренняя чистка аналитики (purchase not-paid→paid, онбординг-воронка на live first-run). Пользовательски невидимая дельта. What's New = reliability-нота; Reviewer Notes = полные камера-ноты 1.8.0. ⚠️ ушло до DebugView re-check |
+| **1.8.2** | 2026-06-18 | ⏳ **submitted** (per owner) | Ветка `claude/practice-funnel-analytics`, влита в main. Инструментирование воронки: `practice_complete` +`time_percent/metrics_source/is_first`; пейвол расцеплен с мёртвым `first_practice_complete` → армится на первом `practice_complete` (`onda_paywall_armed`); `first_practice_quality` на paywall_view+purchase; 5 GA4 custom dimensions. **Оффер снова показывается.** Reviewer Notes = камера 1.8.1 + абзац про подписку |
 
 ---
 
@@ -258,6 +260,82 @@ Apple Connect показывает «iOS приложение **1.1.4**» ряд
 ## Release notes archive
 
 Архив текстов, отправленных в App Store Connect: What's New (публичный, store listing) + Reviewer Notes (для App Review). Demo credentials удалены.
+
+### 1.8.2 — submitted 2026-06-18 ⏳
+
+**Что в билде:** 1.8.1 + инструментирование воронки первой практики (ветка `claude/practice-funnel-analytics`, `MARKETING_VERSION = 1.8.2`; 1.8.1 уже в сторе → bump обязателен). `practice_complete` несёт `quality_score / time_percent / metrics_source (watch|camera|simulated, из `hrSource`) / is_first`. **Пейвол расцеплен** с практически недостижимым `first_practice_complete` (валидность `≥80% времени + quality≥70 watch/camera | ≥33 simulated` фаилась у **0/12** — simulated quality капится ~20<33, watch/camera требует ~76% идеала для 70) и теперь армится на **первом `practice_complete`** через флаг `onda_paywall_armed` (идемпотентно, НЕ через валидность) → оффер реально показывается. `first_practice_quality` (стэш на арминге) пробрасывается на `paywall_view{post_first_experience}` + `purchase`. `completed_via{skip|cta}` уже шлётся (санитайзер пропускает). **5 GA4 custom dimensions зарегистрированы** (`metrics_source`, `time_percent`, `is_first`, `first_practice_quality`, `completed_via`). `first_practice_complete{порог 70}` оставлен как референс-метрика. **Пользовательская дельта:** подписочный оффер снова показывается один раз после первой практики (existing IAP, новых продуктов/разрешений нет). Demo-логин не нужен.
+
+**Решение по копирайту:** дельта пользовательски почти невидима (как 1.8.1) → What's New = reliability-нота. **Reviewer Notes = проверенные камера-ноты 1.8.1 + короткий абзац про подписочный оффер** (чтобы свежий ревьюер не споткнулся о появившийся пейвол).
+
+**What's New (EN) — как отправлено:**
+> Quiet, under-the-hood improvements to keep ONDA smooth and reliable.
+
+_(в ASC заполнена только локаль English (US).)_
+
+<details>
+<summary>Reviewer Notes (как отправлено — камера 1.8.1 + подписка)</summary>
+
+```
+Dear App Review Team,
+
+Thanks for reviewing ONDA.
+
+NO ACCOUNT NEEDED
+The first three practices are free and require no sign-in. You can
+experience the core app immediately.
+
+CAMERA = FINGERTIP PULSE, NOT FACE DATA
+The camera permission is for a fingertip pulse reading
+(photoplethysmography), similar to a pulse oximeter. The user rests a
+fingertip over the REAR camera lens; the flash turns on; the app reads
+subtle color changes to estimate heart rate. It does not capture,
+analyze, or store facial data for this feature.
+
+Privacy: the pulse signal is processed entirely on-device. It is not
+written to disk, saved to Apple Health, or transmitted off the device.
+The camera permission is requested just-in-time and is never required to
+use the app.
+
+HOW TO TEST CAMERA PULSE
+- Use a physical device — the Simulator has no camera.
+- Good, steady lighting helps.
+- Cover the rear lens fully with a fingertip; the flash turns on
+  automatically.
+- Hold ~5–10 seconds. A "searching" state is normal until the signal
+  locks; a number appears only when the reading is confident.
+
+HEALTHKIT (READ-ONLY)
+With permission, the app reads heart rate, heart-rate variability, and
+sleep to personalize sessions and show a resting-HRV trend. Nothing is
+written to Apple Health.
+
+COHERENCE (WELLNESS, NOT MEDICAL)
+The live coherence score is a wellness feature, not a medical
+measurement, and requires an Apple Watch for live readings.
+
+SUBSCRIPTION (OPTIONAL, AFTER THE FREE EXPERIENCE)
+After the first free practice, an optional subscription offer may appear.
+The three core practices stay free and need no sign-in; the offer never
+blocks the free experience, and no account is required to use or review
+the app.
+
+VOICE CHECK (OPTIONAL)
+If you try the optional Voice Check, a short audio clip is sent to Hume
+AI for emotion analysis, as disclosed in our privacy policy
+(onda-life.com/privacy)
+
+Thank you!
+
+Best regards,
+Yakiv
+ONDA Life Team
+```
+
+</details>
+
+**Outcome:** _submitted 2026-06-18 — awaiting review._
+
+---
 
 ### 1.8.1 — released 2026-06-13 ✅
 
