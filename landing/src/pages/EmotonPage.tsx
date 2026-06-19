@@ -198,7 +198,7 @@ export function EmotonPage() {
 
   return (
     <>
-      <div className="relative mx-auto flex min-h-[80vh] max-w-md flex-col items-center overflow-x-hidden px-5 pb-10 -mt-4 pt-0 text-white">
+      <div className="relative mx-auto flex min-h-[100svh] max-w-md flex-col items-center overflow-x-hidden px-5 pb-10 -mt-4 pt-0 text-white">
       <style>{`
         @keyframes emoton-swell { 0% { transform: scale(0.7); opacity:.7 } 50% { transform: scale(1.06); opacity:1 } 100% { transform: scale(0.74); opacity:.8 } }
         @keyframes emoton-rise  { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-6px) } }
@@ -427,8 +427,10 @@ export function EmotonPage() {
             </div>
           )}
 
-          {/* App invite + the two stores (one line) sit above finish/start-over. */}
-          <div className="absolute bottom-5 left-1/2 flex w-[88%] max-w-xs -translate-x-1/2 flex-col items-center gap-2">
+          {/* App invite + the two stores (one line) sit above finish/start-over.
+              In-flow (mt-auto) rather than absolute so it can't overlap the camera
+              CTA on short viewports — if content is tall the page scrolls instead. */}
+          <div className="mt-auto flex w-[88%] max-w-xs flex-col items-center gap-2 pt-8 pb-5">
             <p className="text-center text-xs leading-snug text-white/55">{t('be_with.app_invite')}</p>
             <div className="flex w-full gap-2">
               <a
