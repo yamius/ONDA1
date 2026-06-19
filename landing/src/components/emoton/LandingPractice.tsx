@@ -263,7 +263,7 @@ export function LandingPractice({ practice, onDone, onStart, onComplete }: Landi
               href={emotonCtaUrl('emoton_post_practice')}
               className="mx-auto mb-6 block max-w-md rounded-2xl border border-emerald-400/40 bg-emerald-500/15 px-5 py-4 text-sm font-semibold leading-snug text-emerald-50 backdrop-blur-2xl transition-all hover:scale-[1.02] hover:bg-emerald-500/25"
             >
-              {t('upgrade_link')}
+              {t('practice.upgrade_link')}
             </a>
 
             <div className="flex flex-col justify-center gap-3 sm:flex-row sm:gap-4">
