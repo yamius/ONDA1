@@ -4672,55 +4672,25 @@ const OndaLevel1 = () => {
                 </div>
               )}
 
-              <div className={`rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border shadow-2xl ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
-                {/* Row 1: OND Amount */}
-                <div className={`text-4xl sm:text-5xl md:text-7xl font-mono animate-pulse ${completeLight ? 'text-amber-500' : 'text-amber-400 drop-shadow-2xl'}`}>
-                  +{Math.floor((activePractice.maxQnt * qualityScore) / 100)} OND
-                </div>
-
-                {/* Row 2: Quality + Time - symmetric: numbers in center */}
-                <div className="flex justify-center items-center text-sm sm:text-base">
-                  <div className="flex items-center justify-end gap-2 w-[140px]">
-                    <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.quality')}</span>
-                    <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-emerald-500' : 'text-emerald-400'}`}>{safeToFixed(qualityScore, 0)}%</span>
-                  </div>
-                  <div className={`w-px h-6 mx-3 ${completeLight ? 'bg-slate-300' : 'bg-white/30'}`} />
-                  <div className="flex items-center justify-start gap-2 w-[140px]">
-                    <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-slate-500' : 'text-white'}`}>{formatTime(practiceTime)}</span>
-                    <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.time')}</span>
-                  </div>
-                </div>
-
-                {/* Row 4: Star Rating */}
-                <div className="pt-2">
-                  <p className={`text-sm mb-2 ${completeLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('practices.rate_practice') || 'Rate this practice'}</p>
-                  <div className="flex justify-center gap-2">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <button
-                        key={star}
-                        onClick={() => setPracticeRating(star)}
-                        className="transition-all hover:scale-110"
-                        data-testid={`button-star-${star}`}
-                      >
-                        <Star
-                          className={`w-8 h-8 sm:w-10 sm:h-10 ${
-                            star <= practiceRating
-                              ? 'text-amber-400 fill-yellow-400'
-                              : completeLight ? 'text-slate-300' : 'text-gray-500'
-                          }`}
-                        />
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {completedPractices[activePractice.id] && completedPractices[activePractice.id].quality < qualityScore && (
-                  <div className={`bg-emerald-500/15 border border-emerald-400/50 rounded-lg p-3 sm:p-4 text-sm sm:text-base ${completeLight ? 'text-emerald-700' : 'text-emerald-200'}`}>
-                    {t('practices.new_record')}: {safeToFixed(completedPractices[activePractice.id]?.quality, 0)}%
-                  </div>
-                )}
+              {/* Honest signal — replaces the gamified OND/Quality/stars block.
+                  A = no sensor → invite; B = camera + a real, SUSTAINED pulse
+                  drop → "from X to Y"; C = everything else → neutral, no
+                  numbers, never "rose", never a grade. Decided in finishPractice
+                  (honestResult). EN fallbacks so every locale renders honestly. */}
+              <div className={`rounded-2xl p-6 sm:p-8 md:p-10 border shadow-2xl ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
+                <p className={`text-base sm:text-lg md:text-xl leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-600' : 'text-white/90'}`}>
+                  {honestResult?.state === 'A'
+                    ? t('practices.result_a', "You've completed your first practice. Connect the camera or a watch to see what to do with it.")
+                    : honestResult?.state === 'B'
+                      ? t('practices.result_b', 'Your pulse dropped from {{start}} to {{min}} during the practice — your body is responding to the breath.\nWith a watch, next practices show more: how heart and breath sync up.', { start: honestResult?.hrStart, min: honestResult?.hrMin })
+                      : t('practices.result_c', 'You breathed, and your body tracked it. With a watch, next practices show more — how heart and breath sync up.')}
+                </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+                {/* Try again — hidden on the onboarding first run (cameFromFirstRun):
+                    a replay over a list the new user hasn't seen yet only delays
+                    "Enter ONDA". Kept for normal hub-launched practices. */}
+                {!cameFromFirstRun && (
                 <button
                   onClick={() => {
                     setPracticeState('intro');
@@ -4734,6 +4704,7 @@ const OndaLevel1 = () => {
                 >
                   {t('practices.try_again')}
                 </button>
+                )}
                 <button
                   onClick={exitPractice}
                   className={`flex-1 sm:flex-none sm:min-w-[15rem] backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
