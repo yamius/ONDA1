@@ -242,6 +242,7 @@
     "result_a": "You've completed your first practice. Connect the camera or a watch to see what to do with it.",
     "result_b": "Your pulse dropped from {{start}} to {{min}} during the practice — your body is responding to the breath.\nWith a watch, next practices show more: how heart and breath sync up.",
     "result_c": "You breathed, and your body tracked it. With a watch, next practices show more — how heart and breath sync up.",
+"result_path": "This was practice 1. Ahead: 8 levels, live coherence with a watch, and a resting-HRV trend over days. Deeper each time.",
     "time": "min",
     "quality": "Quality",
     "coherence": "Coherence",

@@ -4679,16 +4679,26 @@ const OndaLevel1 = () => {
         {practiceState === 'complete' && (
           <div className="relative z-10 flex items-center justify-center min-h-screen p-4 sm:p-6">
             <div className="max-w-2xl w-full text-center space-y-4 sm:space-y-8">
-              <div className="text-6xl sm:text-8xl md:text-9xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '1s' }}>✨</div>
-              <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 ${completeLight ? 'text-slate-500' : ''}`}>{t('practices.completed')}</h2>
-
-              {activePractice.finalPhrase && (
-                <div className={`rounded-2xl p-4 sm:p-6 border shadow-xl mb-4 sm:mb-6 ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
-                  <p className={`text-base sm:text-lg md:text-xl italic leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-500' : 'text-white/90'}`}>
-                    {activePractice.finalPhrase}
-                  </p>
+              {/* Coherence concept visual — a calm heart↔breath rhythm (the
+                  app's signature), replacing the ✨. Pure CSS/SVG, on-brand
+                  cyan→emerald (same palette as the home coherence bar). */}
+              <div className="flex justify-center mb-4 sm:mb-8">
+                <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/25 to-emerald-400/25 blur-2xl animate-pulse" />
+                  <div className={`absolute inset-2 rounded-full border ${completeLight ? 'border-cyan-400/30' : 'border-cyan-300/25'}`} />
+                  <svg viewBox="0 0 72 44" className="relative w-16 h-16 sm:w-20 sm:h-20" fill="none" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="cohResultGrad" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stopColor="#22d3ee" />
+                        <stop offset="100%" stopColor="#34d399" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M4 30 Q 22 14 36 30 T 68 30" stroke="url(#cohResultGrad)" strokeWidth="2" strokeLinecap="round" opacity="0.45" />
+                    <path d="M4 22 Q 22 6 36 22 T 68 22" stroke="url(#cohResultGrad)" strokeWidth="2.5" strokeLinecap="round" className="animate-pulse" />
+                  </svg>
                 </div>
-              )}
+              </div>
+              <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 ${completeLight ? 'text-slate-500' : ''}`}>{t('practices.completed')}</h2>
 
               {/* Honest signal — replaces the gamified OND/Quality/stars block.
                   A = no sensor → invite; B = camera + a real, SUSTAINED pulse
@@ -4704,6 +4714,13 @@ const OndaLevel1 = () => {
                       : t('practices.result_c', 'You breathed, and your body tracked it. With a watch, next practices show more — how heart and breath sync up.')}
                 </p>
               </div>
+              {/* Forward path — the honest upsell bridge to the paywall: what
+                  continuing unlocks (real features). coherence is LIVE (with a
+                  watch); the multi-day trend is resting-HRV — not a coherence
+                  days-trend, which we don't have. Secondary styling. */}
+              <p className={`text-sm sm:text-base leading-relaxed ${completeLight ? 'text-slate-500' : 'text-white/70'}`}>
+                {t('practices.result_path', 'This was practice 1. Ahead: 8 levels, live coherence with a watch, and a resting-HRV trend over days. Deeper each time.')}
+              </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 {/* Try again — hidden on the onboarding first run (cameFromFirstRun):
                     a replay over a list the new user hasn't seen yet only delays
