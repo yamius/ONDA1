@@ -33,6 +33,7 @@ export type AnalyticsEventName =
   // onboarding_complete{completed_via}. The 3-screen tutorial (Menu→Intro) emits
   // the same events with source:'menu' so manual replays don't pollute the funnel.
   | 'first_practice_complete'         // value-moment; first-ever valid completion
+  | 'results_view'                    // post-practice results screen shown — params: metrics_source, time_percent, result_state (A|B|C), [hr_start, hr_min], is_first
   | 'sign_up'
   | 'sign_in'
   // Permissions

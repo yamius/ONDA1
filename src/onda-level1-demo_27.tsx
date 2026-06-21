@@ -373,6 +373,10 @@ const OndaLevel1 = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [isMinimalMode, setIsMinimalMode] = useState(false);
   const [qualityScore, setQualityScore] = useState(0);
+  // Honest post-practice signal shown on the results screen (replaces the
+  // gamified OND/Quality block). State A|B|C decided at finish; B carries a
+  // real, sustained camera pulse drop {hrStart→hrMin}.
+  const [honestResult, setHonestResult] = useState<{ state: 'A' | 'B' | 'C'; hrStart: number | null; hrMin: number | null } | null>(null);
   const [practiceRating, setPracticeRating] = useState(0);
   const [showJournal, setShowJournal] = useState(false);
   const [showStats, setShowStats] = useState(false);
@@ -593,6 +597,14 @@ const OndaLevel1 = () => {
   // mirroring how best stress/energy were tracked. Refs (not displayed live).
   const initialCoherenceRef = useRef<number | null>(null);
   const peakCoherenceRef = useRef<number | null>(null);
+  // Honest pulse-trend capture for the camera results signal: start HR (first
+  // confident bpm, not t=0), a SUSTAINED min (EWMA-smoothed so a single low
+  // outlier can't mint a flattering number), and confident-coverage counters.
+  const initialHrRef = useRef<number | null>(null);
+  const minHrRef = useRef<number | null>(null);
+  const hrSmoothRef = useRef<number>(-1);
+  const hrConfidentTicksRef = useRef<number>(0);
+  const hrTotalTicksRef = useRef<number>(0);
   const practiceRefs = useRef({});
 
 
@@ -1267,6 +1279,22 @@ const OndaLevel1 = () => {
         if (freshVitals.coherence != null) {
           if (initialCoherenceRef.current == null) initialCoherenceRef.current = freshVitals.coherence;
           peakCoherenceRef.current = Math.max(peakCoherenceRef.current ?? freshVitals.coherence, freshVitals.coherence);
+        }
+
+        // Honest pulse-trend capture (camera results signal). Start = first
+        // confident bpm within the first ~10s (the camera is still locking at
+        // t=0). min is tracked on an EWMA-smoothed HR, and only after the EWMA
+        // has settled (≥3 confident samples) → a single low outlier can't make
+        // a pretty number. Coverage = confident ticks / total ticks.
+        hrTotalTicksRef.current += 1;
+        const liveHr = freshVitals.hr;
+        if (liveHr != null) {
+          hrConfidentTicksRef.current += 1;
+          if (initialHrRef.current == null && currentTime <= 10) initialHrRef.current = liveHr;
+          hrSmoothRef.current = hrSmoothRef.current < 0 ? liveHr : hrSmoothRef.current * 0.7 + liveHr * 0.3;
+          if (hrConfidentTicksRef.current >= 3) {
+            minHrRef.current = minHrRef.current == null ? hrSmoothRef.current : Math.min(minHrRef.current, hrSmoothRef.current);
+          }
         }
 
         // Stress reduction (10% = good, more is better)
@@ -2476,6 +2504,13 @@ const OndaLevel1 = () => {
     // the first valid reading in the practice loop).
     initialCoherenceRef.current = freshVitals.coherence ?? null;
     peakCoherenceRef.current = freshVitals.coherence ?? null;
+    // Reset honest pulse-trend capture for this session.
+    initialHrRef.current = null;
+    minHrRef.current = null;
+    hrSmoothRef.current = -1;
+    hrConfidentTicksRef.current = 0;
+    hrTotalTicksRef.current = 0;
+    setHonestResult(null);
     setMeetsArtifactRequirements(false); // Reset artifact validation
     setCameraOfferDismissed(false); // re-offer camera each new practice
     setPracticeState('active');
@@ -2588,6 +2623,39 @@ const OndaLevel1 = () => {
         postFirstExperiencePaywallArmedRef.current = true;
       }
     }
+
+    // Honest results-screen signal (state for the screen + the results_view
+    // analytics step). result_state:
+    //   A — no real sensor (simulated) → invite to connect a camera/watch.
+    //   B — camera + a clean, SUSTAINED pulse drop → show "from X to Y".
+    //   C — everything else (flat / rose / noisy / short) → neutral, never
+    //       "rose", never a bad grade. When in doubt → C (don't bluff).
+    // B requires ALL (conservative on purpose): camera source, start+min
+    // captured, drop ≥ 3 bpm, confident coverage ≥ 60%, time_percent ≥ 50% AND
+    // duration ≥ 45s.
+    const hrStart = initialHrRef.current;
+    const hrMin = minHrRef.current != null ? Math.round(minHrRef.current) : null;
+    const hrCoverage = hrTotalTicksRef.current > 0 ? hrConfidentTicksRef.current / hrTotalTicksRef.current : 0;
+    const cleanDrop =
+      metricsSource === 'camera' &&
+      hrStart != null && hrMin != null &&
+      hrStart - hrMin >= 3 &&
+      hrCoverage >= 0.6 &&
+      timePercent >= 0.5 &&
+      practiceTime >= 45;
+    const resultState: 'A' | 'B' | 'C' =
+      metricsSource === 'simulated' ? 'A' : cleanDrop ? 'B' : 'C';
+    const resultHrStart = resultState === 'B' ? hrStart : null;
+    const resultHrMin = resultState === 'B' ? hrMin : null;
+    setHonestResult({ state: resultState, hrStart: resultHrStart, hrMin: resultHrMin });
+    track('results_view', {
+      metrics_source: metricsSource,
+      time_percent: Math.round(timePercent * 100),
+      result_state: resultState,
+      hr_start: resultHrStart ?? undefined,
+      hr_min: resultHrMin ?? undefined,
+      is_first: cameFromFirstRun,
+    });
 
     const session = {
       id: Date.now(),
