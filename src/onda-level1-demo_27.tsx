@@ -605,6 +605,10 @@ const OndaLevel1 = () => {
   const hrSmoothRef = useRef<number>(-1);
   const hrConfidentTicksRef = useRef<number>(0);
   const hrTotalTicksRef = useRef<number>(0);
+  // Sticky session HR source — the source that actually drove the session, so
+  // lifting the finger right before tapping "End" doesn't flip metrics_source
+  // (and the result state) to 'simulated' at the finish instant.
+  const sessionHrSourceRef = useRef<string | null>(null);
   const practiceRefs = useRef({});
 
 
@@ -1297,6 +1301,7 @@ const OndaLevel1 = () => {
           hrTotalTicksRef.current += 1;
           if (liveHr != null) {
             hrConfidentTicksRef.current += 1;
+            if (freshVitals.hrSource) sessionHrSourceRef.current = freshVitals.hrSource;
             hrSmoothRef.current = hrSmoothRef.current < 0 ? liveHr : hrSmoothRef.current * 0.7 + liveHr * 0.3;
             if (hrConfidentTicksRef.current >= 3) {
               minHrRef.current = minHrRef.current == null ? hrSmoothRef.current : Math.min(minHrRef.current, hrSmoothRef.current);
@@ -2517,6 +2522,7 @@ const OndaLevel1 = () => {
     hrSmoothRef.current = -1;
     hrConfidentTicksRef.current = 0;
     hrTotalTicksRef.current = 0;
+    sessionHrSourceRef.current = null;
     setHonestResult(null);
     setMeetsArtifactRequirements(false); // Reset artifact validation
     setCameraOfferDismissed(false); // re-offer camera each new practice
@@ -2592,7 +2598,7 @@ const OndaLevel1 = () => {
     // plot the quality→activation→purchase curve. metrics_source distinguishes
     // watch / camera (both make has_biometrics true → the strict 70 bar) from
     // simulated (no sensor → quality caps ~20, can never clear its own 33 bar).
-    const metricsSource = freshVitalsForSession.hrSource || 'simulated';
+    const metricsSource = sessionHrSourceRef.current || freshVitalsForSession.hrSource || 'simulated';
     // First practice_complete ever? Keyed on a DEDICATED flag, not the
     // (effectively unreachable) validity threshold — this is what now arms the
     // post-first-practice paywall, so it actually shows to real users.
