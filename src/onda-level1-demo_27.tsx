@@ -1281,19 +1281,26 @@ const OndaLevel1 = () => {
           peakCoherenceRef.current = Math.max(peakCoherenceRef.current ?? freshVitals.coherence, freshVitals.coherence);
         }
 
-        // Honest pulse-trend capture (camera results signal). Start = first
-        // confident bpm within the first ~10s (the camera is still locking at
-        // t=0). min is tracked on an EWMA-smoothed HR, and only after the EWMA
-        // has settled (≥3 confident samples) → a single low outlier can't make
-        // a pretty number. Coverage = confident ticks / total ticks.
-        hrTotalTicksRef.current += 1;
+        // Honest pulse-trend capture (camera results signal). Start = the FIRST
+        // confident bpm whenever the camera locks — NOT a fixed 10s-from-practice
+        // window: the camera is started by a button mid-practice, so anchoring
+        // start to t=0 left hrStart null whenever the lock happened later. The
+        // camera's "don't bluff" gate already makes the first committed bpm a
+        // valid baseline. min is tracked on an EWMA-smoothed HR, and only after
+        // it settles (≥3 confident samples) → a single low outlier can't make a
+        // pretty number. Coverage = confident ticks / total ticks.
         const liveHr = freshVitals.hr;
-        if (liveHr != null) {
-          hrConfidentTicksRef.current += 1;
-          if (initialHrRef.current == null && currentTime <= 10) initialHrRef.current = liveHr;
-          hrSmoothRef.current = hrSmoothRef.current < 0 ? liveHr : hrSmoothRef.current * 0.7 + liveHr * 0.3;
-          if (hrConfidentTicksRef.current >= 3) {
-            minHrRef.current = minHrRef.current == null ? hrSmoothRef.current : Math.min(minHrRef.current, hrSmoothRef.current);
+        if (liveHr != null && initialHrRef.current == null) initialHrRef.current = liveHr;
+        // Coverage counts only AFTER the camera first locked — the pre-camera
+        // dead time (before the user started it) must not dilute coverage.
+        if (initialHrRef.current != null) {
+          hrTotalTicksRef.current += 1;
+          if (liveHr != null) {
+            hrConfidentTicksRef.current += 1;
+            hrSmoothRef.current = hrSmoothRef.current < 0 ? liveHr : hrSmoothRef.current * 0.7 + liveHr * 0.3;
+            if (hrConfidentTicksRef.current >= 3) {
+              minHrRef.current = minHrRef.current == null ? hrSmoothRef.current : Math.min(minHrRef.current, hrSmoothRef.current);
+            }
           }
         }
 
