@@ -1339,8 +1339,13 @@ const OndaLevel1 = () => {
         let newQuality;
 
         if (!freshVitals.hasVitalsData) {
-          // Without tracker: direct linear growth, no smoothing
-          newQuality = rawQuality;
+          // No tracker / signal dropped (e.g. camera lost the finger mid-session).
+          // Progress must NEVER fall back: without a tracker rawQuality is a low
+          // time-based value (~timeProgress*0.2), so a direct assign yanked the
+          // bar down from the tracker value to ~20 every time the finger lifted.
+          // Hold instead (floor at the current value); time-based growth can
+          // still push it up, and the tracker branch resumes when signal returns.
+          newQuality = Math.max(currentQuality, rawQuality);
         } else if (rawQuality > maxQualityRef.current) {
           // New peak - grow slowly (2x smoother)
           maxQualityRef.current = rawQuality;
