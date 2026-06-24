@@ -25,6 +25,7 @@ import { FirebaseAnalytics } from '@capacitor-community/firebase-analytics';
 export type AnalyticsEventName =
   // Onboarding & Activation
   | 'app_open'
+  | 'home_view'                       // main hub shown — params: source (first_run|menu|relaunch), is_first. first_run = reached home after the onboarding paywall WITHOUT buying (closes the post-paywall funnel blind spot)
   | 'onboarding_start'                // params: source (first_run|menu), [att_copy_variant|featured_practice_id]
   | 'onboarding_step'                 // params: source (menu), step, total, permission — 3-screen tutorial only
   | 'onboarding_complete'            // params: source, [completed_via: cta|skip] — ← was Tenjin `tutorial_complete`

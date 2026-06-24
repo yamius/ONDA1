@@ -491,6 +491,33 @@ const OndaLevel1 = () => {
   // First view timestamp → `duration_seconds` on tutorial_complete, so the
   // old (3-screen) and new (1-screen) first-run funnels stay comparable.
   const firstRunShownAtRef = useRef<number | null>(null);
+  // Funnel: home_view — entering the main hub. Closes the blind spot after the
+  // paywall (how many reach the app WITHOUT buying). Fires once per entry, not
+  // per re-render.
+  const homeViewFiredRef = useRef(false);
+  // first_run: the post-onboarding paywall was dismissed WITHOUT a purchase →
+  // the user landed on the hub. A purchase flips isPremium and auto-closes the
+  // modal, so we skip it there → home_view{first_run} and purchase stay disjoint
+  // (matches the funnel: silent-close = paywall_view − purchase − home_view).
+  useEffect(() => {
+    if (showSubscriptionModal) return;                 // only on close
+    if (paywallSource !== 'post_first_experience') return;
+    if (isPremium) return;                             // bought → that's purchase, not this
+    if (homeViewFiredRef.current) return;
+    homeViewFiredRef.current = true;
+    const isFirst = localStorage.getItem('onda_home_view_seen') !== '1';
+    if (isFirst) localStorage.setItem('onda_home_view_seen', '1');
+    track('home_view', { source: 'first_run', is_first: isFirst });
+  }, [showSubscriptionModal, paywallSource, isPremium]);
+  // relaunch: a returning user (not in onboarding) lands on the hub at launch.
+  // New users start in onboarding (showFirstRun) → their home_view fires as
+  // first_run after the paywall instead. Fires once per app session (mount).
+  useEffect(() => {
+    if (showFirstRun) return;
+    localStorage.setItem('onda_home_view_seen', '1');
+    track('home_view', { source: 'relaunch', is_first: false });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   // Armed by finishPractice on the user's first-ever valid completion;
   // consumed by exitPractice so the paywall opens AFTER the user leaves
   // the results screen — value felt first, offer second, never before.
