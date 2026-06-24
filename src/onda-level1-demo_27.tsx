@@ -4763,17 +4763,12 @@ const OndaLevel1 = () => {
                   continuing unlocks (real features). coherence is LIVE (with a
                   watch); the multi-day trend is resting-HRV — not a coherence
                   days-trend, which we don't have. Secondary styling. */}
-              <div className="space-y-2 sm:space-y-3">
-                <p className={`text-base sm:text-lg leading-relaxed ${completeLight ? 'text-slate-600' : 'text-white/80'}`}>
-                  {renderAccented(t('practices.r_path', 'Ahead: [[24]] parts, [[12]] practices each, each with its own science-based protocol for your nervous system. And with a watch, this opens up:'), completeLight ? 'text-violet-600 font-semibold' : 'text-violet-300 font-semibold')}
-                </p>
-                {/* Punchline — the upsell hook, larger than the lead-in, centered,
-                    violet-accented. resting-HRV is nowrap so it never splits as
-                    "resting-" / "HRV" across a line break. */}
-                <p className={`text-lg sm:text-xl font-medium leading-snug ${completeLight ? 'text-slate-700' : 'text-white/90'}`}>
-                  {renderAccented(t('practices.r_path_punch', 'live [[coherence]] and your [[resting-HRV]] trend'), completeLight ? 'text-violet-600 font-semibold whitespace-nowrap' : 'text-violet-300 font-semibold whitespace-nowrap')}
-                </p>
-              </div>
+              {/* Forward path — one clean sentence (bigger + darker than a
+                  disclaimer per the hierarchy). Accent terms (incl. resting-HRV)
+                  are whitespace-nowrap so resting-HRV never splits across a line. */}
+              <p className={`text-base sm:text-lg leading-relaxed ${completeLight ? 'text-slate-600' : 'text-white/80'}`}>
+                {renderAccented(t('practices.r_path', 'Ahead: [[24]] parts, [[12]] practices each, every one with its own science-based protocols for your nervous system. And with a watch, live [[coherence]] and your [[resting-HRV]] trend open up.'), completeLight ? 'text-violet-600 font-semibold whitespace-nowrap' : 'text-violet-300 font-semibold whitespace-nowrap')}
+              </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 {/* Try again — hidden on the onboarding first run (cameFromFirstRun):
                     a replay over a list the new user hasn't seen yet only delays
