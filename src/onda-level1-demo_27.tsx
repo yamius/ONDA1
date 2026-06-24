@@ -113,6 +113,16 @@ const CIRCUIT_GLOW_LIGHT: Record<number, { orbA: string; orbB: string; panelBord
 };
 const CIRCUIT_GLOW_DEFAULT = { orbA: 'rgba(221,214,254,0.55)', orbB: 'rgba(199,210,254,0.45)', panelBorder: 'border-violet-200/70' };
 
+// Renders an i18n string where [[...]]-wrapped spans get the accent color.
+// Lets translators keep plain, translatable text (with lightweight markers)
+// instead of embedded markup — used by the results screen to highlight the
+// numbers / brand terms (coherence, resting-HRV) / action phrase per the copy
+// brief. Even segments render as plain text, odd segments as accent spans.
+const renderAccented = (text: string, accentClass: string) =>
+  text.split(/\[\[|\]\]/).map((seg, i) =>
+    i % 2 === 1 ? <span key={i} className={accentClass}>{seg}</span> : seg
+  );
+
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
   const { resolved } = useTheme();
@@ -4706,26 +4716,28 @@ const OndaLevel1 = () => {
         {practiceState === 'complete' && (
           <div className="relative z-10 flex items-center justify-center min-h-screen p-4 sm:p-6">
             <div className="max-w-2xl w-full text-center space-y-4 sm:space-y-8">
-              {/* Coherence concept visual — a calm heart↔breath rhythm (the
-                  app's signature), replacing the ✨. Pure CSS/SVG, on-brand
-                  cyan→emerald (same palette as the home coherence bar). */}
+              {/* Coherence concept visual — a calm, "breathing" heart↔breath
+                  wave (the app's signature), replacing the ✨. Pure CSS/SVG,
+                  lavender→teal. The orb + waves breathe at ~5.5 cycles/min
+                  (11s, resonance frequency) — decorative, not data-bound.
+                  prefers-reduced-motion gets a static fallback (.onda-breathe). */}
               <div className="flex justify-center mb-4 sm:mb-8">
                 <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-cyan-400/25 to-emerald-400/25 blur-2xl animate-pulse" />
-                  <div className={`absolute inset-2 rounded-full border ${completeLight ? 'border-cyan-400/30' : 'border-cyan-300/25'}`} />
-                  <svg viewBox="0 0 72 44" className="relative w-16 h-16 sm:w-20 sm:h-20" fill="none" aria-hidden="true">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-400/25 to-cyan-400/25 blur-2xl onda-breathe" />
+                  <div className={`absolute inset-2 rounded-full border ${completeLight ? 'border-violet-400/30' : 'border-violet-300/25'}`} />
+                  <svg viewBox="0 0 72 44" className="relative w-16 h-16 sm:w-20 sm:h-20 onda-breathe" fill="none" aria-hidden="true">
                     <defs>
                       <linearGradient id="cohResultGrad" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stopColor="#22d3ee" />
-                        <stop offset="100%" stopColor="#34d399" />
+                        <stop offset="0%" stopColor="#a78bfa" />
+                        <stop offset="100%" stopColor="#22d3ee" />
                       </linearGradient>
                     </defs>
                     <path d="M4 30 Q 22 14 36 30 T 68 30" stroke="url(#cohResultGrad)" strokeWidth="2" strokeLinecap="round" opacity="0.45" />
-                    <path d="M4 22 Q 22 6 36 22 T 68 22" stroke="url(#cohResultGrad)" strokeWidth="2.5" strokeLinecap="round" className="animate-pulse" />
+                    <path d="M4 22 Q 22 6 36 22 T 68 22" stroke="url(#cohResultGrad)" strokeWidth="2.5" strokeLinecap="round" />
                   </svg>
                 </div>
               </div>
-              <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 ${completeLight ? 'text-slate-500' : ''}`}>{t('practices.completed')}</h2>
+              <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 ${completeLight ? 'text-slate-500' : ''}`}>{cameFromFirstRun ? t('practices.r_title', 'Your first practice is done') : t('practices.completed')}</h2>
 
               {/* Honest signal — replaces the gamified OND/Quality/stars block.
                   A = no sensor → invite; B = camera + a real, SUSTAINED pulse
@@ -4738,7 +4750,7 @@ const OndaLevel1 = () => {
                     ? t('practices.result_a', "You've completed your first practice. Connect the camera or a watch to see what to do with it.")
                     : honestResult?.state === 'B'
                       ? t('practices.result_b', 'Your pulse dropped from {{start}} to {{min}} during the practice — your body is responding to the breath.\nWith a watch, next practices show more: how heart and breath sync up.', { start: honestResult?.hrStart, min: honestResult?.hrMin })
-                      : t('practices.result_c', 'You breathed, and your body tracked it. With a watch, next practices show more — how heart and breath sync up.')}
+                      : renderAccented(t('practices.r_body', "You didn't just measure your state — you [[started working with it]]."), completeLight ? 'text-violet-600 font-semibold' : 'text-violet-300 font-semibold')}
                 </p>
               </div>
               {/* Forward path — the honest upsell bridge to the paywall: what
@@ -4746,7 +4758,7 @@ const OndaLevel1 = () => {
                   watch); the multi-day trend is resting-HRV — not a coherence
                   days-trend, which we don't have. Secondary styling. */}
               <p className={`text-sm sm:text-base leading-relaxed ${completeLight ? 'text-slate-500' : 'text-white/70'}`}>
-                {t('practices.result_path', 'This was practice 1. Ahead: 8 levels, live coherence with a watch, and a resting-HRV trend over days. Deeper each time.')}
+                {renderAccented(t('practices.r_path', 'Ahead: [[24]] parts, [[12]] practices each, every one with its own science-based protocols for your nervous system. And with a watch, live [[coherence]] and your [[resting-HRV]] trend open up.'), completeLight ? 'text-violet-600 font-semibold' : 'text-violet-300 font-semibold')}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 {/* Try again — hidden on the onboarding first run (cameFromFirstRun):
@@ -4769,10 +4781,12 @@ const OndaLevel1 = () => {
                 )}
                 <button
                   onClick={exitPractice}
-                  className={`flex-1 sm:flex-none sm:min-w-[15rem] backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
+                  className={cameFromFirstRun
+                    ? 'flex-1 sm:flex-none sm:min-w-[15rem] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold transition-all hover:scale-[1.03] bg-gradient-to-r from-violet-500 to-indigo-500 hover:from-violet-400 hover:to-indigo-400 text-white shadow-lg shadow-violet-500/30'
+                    : `flex-1 sm:flex-none sm:min-w-[15rem] backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                   data-testid="button-exit-practice"
                 >
-                  {cameFromFirstRun ? t('practices.enter_onda') : t('practices.back_to_practices')}
+                  {cameFromFirstRun ? t('practices.r_cta', 'Continue training') : t('practices.back_to_practices')}
                 </button>
               </div>
             </div>

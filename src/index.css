@@ -195,3 +195,25 @@
 .typing-indicator.fade-out {
   animation: typingFadeOut 0.8s ease-out forwards;
 }
+
+/* "Breathing" coherence wave on the practice-result screen.
+   ~5.5 cycles/min (11s) — resonance frequency, a slow calming breath, not a
+   fast loop. Decorative only. Honors prefers-reduced-motion with a static
+   fallback. Used by the lavender→teal orb/wave in onda-level1-demo. */
+@keyframes ondaBreathe {
+  0%, 100% { transform: scale(0.94); opacity: 0.7; }
+  50%      { transform: scale(1.06); opacity: 1; }
+}
+
+.onda-breathe {
+  transform-origin: center;
+  animation: ondaBreathe 11s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .onda-breathe {
+    animation: none;
+    transform: none;
+  }
+}
