@@ -4725,16 +4725,22 @@ const OndaLevel1 = () => {
                 <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-400/25 to-cyan-400/25 blur-2xl onda-breathe" />
                   <div className={`absolute inset-2 rounded-full border ${completeLight ? 'border-violet-400/30' : 'border-violet-300/25'}`} />
-                  <svg viewBox="0 0 72 44" className="relative w-16 h-16 sm:w-20 sm:h-20 onda-breathe" fill="none" aria-hidden="true">
-                    <defs>
-                      <linearGradient id="cohResultGrad" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stopColor="#a78bfa" />
-                        <stop offset="100%" stopColor="#22d3ee" />
-                      </linearGradient>
-                    </defs>
-                    <path d="M4 30 Q 22 14 36 30 T 68 30" stroke="url(#cohResultGrad)" strokeWidth="2" strokeLinecap="round" opacity="0.45" />
-                    <path d="M4 22 Q 22 6 36 22 T 68 22" stroke="url(#cohResultGrad)" strokeWidth="2.5" strokeLinecap="round" />
-                  </svg>
+                  {/* The breathing animation rides on this <div> wrapper, not the
+                      <svg> root — SVG-root transforms can sit on a non-composited
+                      layer in WKWebView and visually freeze. The wrapper + GPU
+                      hints in .onda-breathe keep it animating in Capacitor. */}
+                  <div className="relative onda-breathe">
+                    <svg viewBox="0 0 72 44" className="w-16 h-16 sm:w-20 sm:h-20" fill="none" aria-hidden="true">
+                      <defs>
+                        <linearGradient id="cohResultGrad" x1="0" y1="0" x2="1" y2="0">
+                          <stop offset="0%" stopColor="#a78bfa" />
+                          <stop offset="100%" stopColor="#22d3ee" />
+                        </linearGradient>
+                      </defs>
+                      <path d="M4 30 Q 22 14 36 30 T 68 30" stroke="url(#cohResultGrad)" strokeWidth="2" strokeLinecap="round" opacity="0.45" />
+                      <path d="M4 22 Q 22 6 36 22 T 68 22" stroke="url(#cohResultGrad)" strokeWidth="2.5" strokeLinecap="round" />
+                    </svg>
+                  </div>
                 </div>
               </div>
               <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 ${completeLight ? 'text-slate-500' : ''}`}>{cameFromFirstRun ? t('practices.r_title', 'Your first practice is done') : t('practices.completed')}</h2>
@@ -4745,11 +4751,11 @@ const OndaLevel1 = () => {
                   numbers, never "rose", never a grade. Decided in finishPractice
                   (honestResult). EN fallbacks so every locale renders honestly. */}
               <div className={`rounded-2xl p-6 sm:p-8 md:p-10 border shadow-2xl ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
-                <p className={`text-base sm:text-lg md:text-xl leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-600' : 'text-white/90'}`}>
+                <p className={`text-base sm:text-lg md:text-xl leading-relaxed ${completeLight ? 'text-slate-600' : 'text-white/90'}`}>
                   {honestResult?.state === 'A'
                     ? t('practices.result_a', "You've completed your first practice. Connect the camera or a watch to see what to do with it.")
                     : honestResult?.state === 'B'
-                      ? t('practices.result_b', 'Your pulse dropped from {{start}} to {{min}} during the practice — your body is responding to the breath.\nWith a watch, next practices show more: how heart and breath sync up.', { start: honestResult?.hrStart, min: honestResult?.hrMin })
+                      ? t('practices.result_b', 'Your pulse dropped from {{start}} to {{min}} during the practice — your body is responding to the breath. With a watch, next practices show more: how heart and breath sync up.', { start: honestResult?.hrStart, min: honestResult?.hrMin })
                       : renderAccented(t('practices.r_body', "You didn't just measure your state — you [[started working with it]]."), completeLight ? 'text-violet-600 font-semibold' : 'text-violet-300 font-semibold')}
                 </p>
               </div>
@@ -4757,9 +4763,17 @@ const OndaLevel1 = () => {
                   continuing unlocks (real features). coherence is LIVE (with a
                   watch); the multi-day trend is resting-HRV — not a coherence
                   days-trend, which we don't have. Secondary styling. */}
-              <p className={`text-sm sm:text-base leading-relaxed ${completeLight ? 'text-slate-500' : 'text-white/70'}`}>
-                {renderAccented(t('practices.r_path', 'Ahead: [[24]] parts, [[12]] practices each, every one with its own science-based protocols for your nervous system. And with a watch, live [[coherence]] and your [[resting-HRV]] trend open up.'), completeLight ? 'text-violet-600 font-semibold' : 'text-violet-300 font-semibold')}
-              </p>
+              <div className="space-y-2 sm:space-y-3">
+                <p className={`text-base sm:text-lg leading-relaxed ${completeLight ? 'text-slate-600' : 'text-white/80'}`}>
+                  {renderAccented(t('practices.r_path', 'Ahead: [[24]] parts, [[12]] practices each, each with its own science-based protocol for your nervous system. And with a watch, this opens up:'), completeLight ? 'text-violet-600 font-semibold' : 'text-violet-300 font-semibold')}
+                </p>
+                {/* Punchline — the upsell hook, larger than the lead-in, centered,
+                    violet-accented. resting-HRV is nowrap so it never splits as
+                    "resting-" / "HRV" across a line break. */}
+                <p className={`text-lg sm:text-xl font-medium leading-snug ${completeLight ? 'text-slate-700' : 'text-white/90'}`}>
+                  {renderAccented(t('practices.r_path_punch', 'live [[coherence]] and your [[resting-HRV]] trend'), completeLight ? 'text-violet-600 font-semibold whitespace-nowrap' : 'text-violet-300 font-semibold whitespace-nowrap')}
+                </p>
+              </div>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 {/* Try again — hidden on the onboarding first run (cameFromFirstRun):
                     a replay over a list the new user hasn't seen yet only delays
