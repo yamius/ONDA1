@@ -1650,6 +1650,7 @@
     }
   },
   "subscription": {
+    "continue_free": "免费继续",
     "title": "订阅",
     "ready": "您的计划已准备好。",
     "unlock": "免费解锁 ONDA",

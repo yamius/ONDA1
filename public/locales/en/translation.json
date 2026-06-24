@@ -3523,6 +3523,7 @@
     "skip": "I'll explore on my own"
   },
   "subscription": {
+    "continue_free": "Continue for free",
     "title": "Subscription",
     "ready": "Your plan is ready.",
     "unlock": "Unlock ONDA for free",

@@ -2115,6 +2115,7 @@
     }
   },
   "subscription": {
+    "continue_free": "Continuar gratis",
     "title": "Suscripción",
     "ready": "Tu plan está listo.",
     "unlock": "Desbloquea ONDA gratis",

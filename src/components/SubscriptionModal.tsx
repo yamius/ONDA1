@@ -134,6 +134,10 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
   const subscribeFiredRef = useRef<boolean>(false);
   const wasPremiumOnCloseRef = useRef<boolean>(false);
   const selectedPlanRef = useRef<'yearly' | 'monthly'>(selectedPlan);
+  // How the user left the paywall without buying — 'close' (the ✕) by default,
+  // 'continue_free' when they tap the explicit secondary exit. Read by the
+  // dismiss effect below so paywall_dismiss carries `action`.
+  const dismissActionRef = useRef<'close' | 'continue_free'>('close');
   // Mirror current values into refs so the cleanup function below sees the
   // LATEST values (effect closures snapshot at attach time by default).
   wasPremiumOnCloseRef.current = isPremium;
@@ -142,6 +146,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     if (!isOpen || isPremium) return;
     paywallOpenedAtRef.current = Date.now();
     subscribeFiredRef.current = false;
+    dismissActionRef.current = 'close'; // reset each open; the secondary button flips it
     trackTenjinPaywallView(source);
     return () => {
       // Effect cleanup runs when isOpen flips to false or isPremium becomes
@@ -153,6 +158,7 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
       const seconds = openedAt ? Math.round((Date.now() - openedAt) / 1000) : undefined;
       track('paywall_dismiss', {
         source,
+        action: dismissActionRef.current, // 'close' (✕) | 'continue_free' (secondary button)
         plan: selectedPlanRef.current,
         time_on_screen_seconds: seconds,
       });
@@ -433,6 +439,26 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
                 ? t('subscription.disclaimer_yearly', 'Totally free for 14 days, then 5.42 USD/month, billed annually at 64.99 USD/year. Cancel anytime.')
                 : t('subscription.disclaimer_monthly', 'Totally free for 7 days, then 14.99 USD/month. Cancel anytime.')}
             </p>
+
+            {/* Continue free — an explicit, honest no-purchase exit (replaces
+                the hidden ✕-only escape). Secondary by design: thin outline,
+                calm colour, content width (NOT full-width / filled) so it never
+                competes with the trial CTA. ≥44pt tap target. Same effect as the
+                ✕ (close → hub) but fires paywall_dismiss{action:continue_free}. */}
+            <div className="flex justify-center mt-3">
+              <button
+                onClick={() => { dismissActionRef.current = 'continue_free'; onClose(); }}
+                disabled={isLoading || isPurchasing || isRestoring}
+                className={`min-h-[44px] px-6 rounded-full border text-sm font-medium transition-colors ${
+                  isLight
+                    ? 'border-slate-300 text-slate-600 hover:bg-slate-100'
+                    : 'border-white/25 text-white/80 hover:bg-white/10'
+                } ${(isLoading || isPurchasing || isRestoring) ? 'opacity-50 cursor-not-allowed' : ''}`}
+                data-testid="button-continue-free"
+              >
+                {t('subscription.continue_free', 'Continue for free')}
+              </button>
+            </div>
 
             {/* Restore Purchases — required by App Store */}
             <button
