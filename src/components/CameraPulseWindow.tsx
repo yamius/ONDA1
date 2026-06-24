@@ -25,6 +25,8 @@ interface CameraPulseWindowProps {
   cameraOfferDismissed: boolean;
   /** Called when the user dismisses the camera offer. */
   onDismissOffer: () => void;
+  /** Hide the "Continue without" skip link (onboarding declutters it). */
+  hideSkip?: boolean;
   /** Window height in px (wave + offer card). Defaults to the basic-practice 176. */
   heightPx?: number;
 }
@@ -53,6 +55,7 @@ export function CameraPulseWindow({
   cameraPpg,
   cameraOfferDismissed,
   onDismissOffer,
+  hideSkip = false,
   heightPx = 176,
 }: CameraPulseWindowProps) {
   const { t } = useTranslation();
@@ -76,13 +79,15 @@ export function CameraPulseWindow({
             >
               {t('camera.offer_cta', 'Use camera')}
             </button>
-            <button
-              onClick={onDismissOffer}
-              className="mt-2 px-4 py-1 text-sm text-white/70 hover:text-white underline underline-offset-4 transition-colors"
-              data-testid="camera-offer-skip"
-            >
-              {t('camera.offer_skip', 'Continue without')}
-            </button>
+            {!hideSkip && (
+              <button
+                onClick={onDismissOffer}
+                className="mt-2 px-4 py-1 text-sm text-white/70 hover:text-white underline underline-offset-4 transition-colors"
+                data-testid="camera-offer-skip"
+              >
+                {t('camera.offer_skip', 'Continue without')}
+              </button>
+            )}
           </div>
         ) : (
           <>

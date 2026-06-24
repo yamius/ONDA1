@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo, useCallback, lazy, Suspense } from 'react';
-import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth, Minimize2, Maximize2, Camera } from 'lucide-react';
+import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth, Minimize2, Maximize2, Camera, ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
@@ -19,6 +19,7 @@ import { WatchConnectionPrompt } from './components/WatchConnectionPrompt';
 import { DebugMonitor } from './components/DebugMonitor';
 import { MetricsWaveform } from './components/MetricsWaveform';
 import { CameraPulseWindow } from './components/CameraPulseWindow';
+import { CoherenceOrb } from './components/CoherenceOrb';
 // Home redesign 1.7.4 — new sections (Section 2 / 4 / 6).
 import { HRVMiniChart } from './components/HRVMiniChart';
 import { TodaysPracticeStateCard } from './components/TodaysPracticeStateCard';
@@ -113,15 +114,28 @@ const CIRCUIT_GLOW_LIGHT: Record<number, { orbA: string; orbB: string; panelBord
 };
 const CIRCUIT_GLOW_DEFAULT = { orbA: 'rgba(221,214,254,0.55)', orbB: 'rgba(199,210,254,0.45)', panelBorder: 'border-violet-200/70' };
 
-// Renders an i18n string where [[...]]-wrapped spans get the accent color.
-// Lets translators keep plain, translatable text (with lightweight markers)
-// instead of embedded markup — used by the results screen to highlight the
-// numbers / brand terms (coherence, resting-HRV) / action phrase per the copy
-// brief. Even segments render as plain text, odd segments as accent spans.
-const renderAccented = (text: string, accentClass: string) =>
-  text.split(/\[\[|\]\]/).map((seg, i) =>
-    i % 2 === 1 ? <span key={i} className={accentClass}>{seg}</span> : seg
+// Renders an i18n string with two lightweight markers, so translators keep
+// plain (translatable) text instead of embedded markup:
+//   [[...]]  → accent color (violet) — numbers / brand terms / action phrase
+//   @@...@@  → a larger "punchline" span (may itself contain [[...]] accents)
+// Even/odd split keeps it dependency-free. The @@ pass only runs when a
+// largeClass is provided AND the string actually uses it, so existing callers
+// are unaffected. A running counter gives every emitted span a stable key.
+const renderAccented = (text: string, accentClass: string, largeClass?: string, largeAccentClass?: string) => {
+  let k = 0;
+  const accents = (s: string, cls: string) =>
+    s.split(/\[\[|\]\]/).map((seg, i) =>
+      i % 2 === 1 ? <span key={k++} className={cls}>{seg}</span> : seg
+    );
+  if (!largeClass || !text.includes('@@')) return accents(text, accentClass);
+  // Inside an @@…@@ "punchline" span, accents use largeAccentClass when given
+  // (e.g. the brand terms go blue while the lead-in accents stay violet).
+  return text.split(/@@(.*?)@@/s).flatMap((seg, i) =>
+    i % 2 === 1
+      ? <span key={k++} className={largeClass}>{accents(seg, largeAccentClass || accentClass)}</span>
+      : accents(seg, accentClass)
   );
+};
 
 const OndaLevel1 = () => {
   const { t, i18n } = useTranslation();
@@ -383,6 +397,10 @@ const OndaLevel1 = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [isMinimalMode, setIsMinimalMode] = useState(false);
   const [qualityScore, setQualityScore] = useState(0);
+  // Onboarding "passed" milestone: at 50% quality a checkmark appears by the
+  // progress label (stays) and a "Практика пройдена" toast shows for 3s.
+  const [practicePassed, setPracticePassed] = useState(false);
+  const [showPassedToast, setShowPassedToast] = useState(false);
   // Honest post-practice signal shown on the results screen (replaces the
   // gamified OND/Quality block). State A|B|C decided at finish; B carries a
   // real, sustained camera pulse drop {hrStart→hrMin}.
@@ -611,6 +629,28 @@ const OndaLevel1 = () => {
     track('onboarding_start', { source: 'first_run', featured_practice_id: featuredPracticeId });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showFirstRun]);
+
+  // Onboarding "passed" milestone — at 50% quality, latch the checkmark and
+  // raise the toast (which auto-hides after 3s below). Latches once per practice.
+  useEffect(() => {
+    if (!cameFromFirstRun || practicePassed) return;
+    if (qualityScore >= 50) {
+      setPracticePassed(true);
+      setShowPassedToast(true);
+    }
+  }, [cameFromFirstRun, practicePassed, qualityScore]);
+  useEffect(() => {
+    if (!showPassedToast) return;
+    const tid = setTimeout(() => setShowPassedToast(false), 3000);
+    return () => clearTimeout(tid);
+  }, [showPassedToast]);
+  // Reset the milestone when a new practice begins.
+  useEffect(() => {
+    if (practiceState === 'intro') {
+      setPracticePassed(false);
+      setShowPassedToast(false);
+    }
+  }, [practiceState]);
 
   const [bioMetrics, setBioMetrics] = useState({
     heartRate: 72,
@@ -4427,7 +4467,7 @@ const OndaLevel1 = () => {
         }} />
         )}
 
-        {!isMinimalMode && (
+        {!isMinimalMode && !(cameFromFirstRun && (practiceState === 'intro' || practiceState === 'active' || practiceState === 'complete')) && (
           <button
             onClick={exitPractice}
             disabled={!canExitPractice}
@@ -4439,25 +4479,48 @@ const OndaLevel1 = () => {
         )}
 
         {practiceState === 'intro' && (
-          <div className="relative z-10 flex items-center justify-center min-h-screen p-3 sm:p-6">
+          <div className="relative z-10 flex items-start justify-center min-h-screen px-3 sm:px-6 pt-[10vh] pb-3 sm:pb-6">
             <div className="max-w-2xl text-center space-y-4 sm:space-y-8">
-              <div className="text-5xl sm:text-9xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '2s' }}>
-                {activePractice.visual}
-              </div>
+              {cameFromFirstRun ? (
+                /* Onboarding: the coherence orb (no ripples), matching the
+                   first-run and results screens. Hub-launched intros keep the
+                   per-practice emoji below. */
+                <CoherenceOrb light={isLight} className="mb-4 sm:mb-8" />
+              ) : (
+                <div className="text-5xl sm:text-9xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '2s' }}>
+                  {activePractice.visual}
+                </div>
+              )}
               <h1 className={`text-xl sm:text-6xl font-bold mb-2 sm:mb-4 leading-tight px-2 ${isLight ? '' : 'drop-shadow-2xl'}`}>
                 {getPracticeName(activePractice.id)}
               </h1>
-              <div className={`rounded-2xl p-4 sm:p-8 mb-3 sm:mb-6 border shadow-2xl ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
-                <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
-                  <p className={`text-sm font-semibold tracking-wide ${isLight ? 'text-violet-600' : 'text-purple-200'}`}>
-                    {activePractice.element}
-                  </p>
-                  <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
-                </div>
-                <p className="text-sm sm:text-2xl leading-relaxed italic font-light">
-                  "{t(`practice_items.${getPracticeKey(activePractice.id)}_pre_start`, { defaultValue: getPracticeMessage(activePractice.id) })}"
-                </p>
+              <div className={`relative overflow-hidden rounded-2xl p-4 sm:p-8 mb-3 sm:mb-6 border shadow-2xl ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
+                {cameFromFirstRun && (
+                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cyan-400 to-violet-500" aria-hidden="true" />
+                )}
+                {/* TERRA element label + dots — hidden on the onboarding intro
+                    so the card reads like the other onboarding frames. */}
+                {!cameFromFirstRun && (
+                  <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
+                    <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
+                    <p className={`text-sm font-semibold tracking-wide ${isLight ? 'text-violet-600' : 'text-purple-200'}`}>
+                      {activePractice.element}
+                    </p>
+                    <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse" />
+                  </div>
+                )}
+                {(() => {
+                  const msg = t(`practice_items.${getPracticeKey(activePractice.id)}_pre_start`, { defaultValue: getPracticeMessage(activePractice.id) });
+                  // Onboarding: same body style as the first-run / results cards
+                  // (non-italic, no quote marks). Hub keeps the italic quote.
+                  return (
+                    <p className={cameFromFirstRun
+                      ? `text-base sm:text-lg md:text-xl leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/90'}`
+                      : 'text-sm sm:text-2xl leading-relaxed italic font-light'}>
+                      {cameFromFirstRun ? msg : `"${msg}"`}
+                    </p>
+                  );
+                })()}
               </div>
               {/* Science block — Biology / Why / Effect / Bio-marker.
                   Pulls from i18n keys named `<practice_key>_<field>` per
@@ -4506,6 +4569,9 @@ const OndaLevel1 = () => {
                 }
                 return null;
               })()}
+              {/* Duration / reward pills — hidden on the onboarding first run
+                  (cleaner value moment); kept for hub-launched intros. */}
+              {!cameFromFirstRun && (
               <div className={`flex items-center justify-center gap-3 sm:gap-6 text-sm sm:text-base ${isLight ? 'text-slate-600' : 'text-gray-200'}`}>
                 <span className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-full backdrop-blur-xl text-xs sm:text-base min-w-[100px] sm:min-w-[120px] text-center border ${isLight ? 'bg-white/70 border-violet-200' : 'bg-white/10 border-white/20'}`}>
                   {activePractice.targetTime ? `${Math.floor(activePractice.targetTime / 60)} ${t('practice_items.duration_min')}` : activePractice.duration}
@@ -4515,6 +4581,7 @@ const OndaLevel1 = () => {
                   {t('practices.up_to')} {activePractice.maxQnt} OND
                 </span>
               </div>
+              )}
               <button
                 onClick={() => {
                   // Free-tier sampler bypass: the first three Part-1 basic
@@ -4538,9 +4605,16 @@ const OndaLevel1 = () => {
                   setPaywallSource('practice_gate_basic');
                   setShowSubscriptionModal(true);
                 }}
-                className={`backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 border ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-700 shadow-sm shadow-indigo-200/40' : 'bg-white/10 hover:bg-white/20 border-white/25 shadow-2xl'}`}
+                className={cameFromFirstRun
+                  ? 'relative overflow-hidden px-8 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold transition-all hover:scale-[1.03] bg-gradient-to-r from-violet-500 to-indigo-500 hover:from-violet-400 hover:to-indigo-400 text-white shadow-lg shadow-violet-500/30'
+                  : `backdrop-blur-2xl px-6 sm:px-8 py-3 sm:py-5 rounded-full text-sm sm:text-base font-semibold transition-all transform hover:scale-110 border ${isLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-700 shadow-sm shadow-indigo-200/40' : 'bg-white/10 hover:bg-white/20 border-white/25 shadow-2xl'}`}
               >
-                {t('practices.start')}
+                {cameFromFirstRun ? (
+                  <>
+                    <span className="onda-shine" aria-hidden="true" />
+                    <span className="relative z-10 inline-flex items-center gap-2">{t('practices.start')}<ArrowRight className="w-5 h-5" /></span>
+                  </>
+                ) : t('practices.start')}
               </button>
             </div>
           </div>
@@ -4634,6 +4708,7 @@ const OndaLevel1 = () => {
                 cameraPpg={cameraPpg}
                 cameraOfferDismissed={cameraOfferDismissed}
                 onDismissOffer={() => setCameraOfferDismissed(true)}
+                hideSkip={cameFromFirstRun}
               />
             </div>
 
@@ -4641,9 +4716,21 @@ const OndaLevel1 = () => {
                 grows monotonically through the practice; a low % early on read
                 as "bad quality"). Underlying score calc unchanged. */}
             {!isMinimalMode && (<div className="w-full max-w-md mb-4 sm:mb-6 px-3 sm:px-0">
-              <div className="flex justify-between text-sm sm:text-base mb-2 sm:mb-3">
-                <span className="font-semibold">{t('practices.progress')}</span>
-                <span className="font-bold text-xl sm:text-2xl">{safeToFixed(qualityScore, 0)}%</span>
+              <div className="flex justify-between items-center text-sm sm:text-base mb-2 sm:mb-3">
+                <span className="font-semibold flex items-center gap-1.5">
+                  {t('practices.progress')}
+                  {/* Onboarding: a green checkmark latches at 50% and stays. */}
+                  {cameFromFirstRun && practicePassed && (
+                    <CheckCircle className="w-5 h-5 text-emerald-400" />
+                  )}
+                </span>
+                {cameFromFirstRun && showPassedToast ? (
+                  <span className="font-bold text-emerald-400 transition-opacity duration-500">
+                    {t('practices.passed', 'Практика пройдена')}
+                  </span>
+                ) : (
+                  <span className="font-bold text-xl sm:text-2xl">{safeToFixed(qualityScore, 0)}%</span>
+                )}
               </div>
               <div className="w-full h-5 sm:h-6 rounded-full overflow-hidden backdrop-blur-sm border border-white/20 bg-black/30 shadow-inner">
                 <div
@@ -4714,49 +4801,40 @@ const OndaLevel1 = () => {
         )}
 
         {practiceState === 'complete' && (
-          <div className="relative z-10 flex items-center justify-center min-h-screen p-4 sm:p-6">
+          <div className="relative z-10 flex items-start justify-center min-h-screen px-4 sm:px-6 pt-[10vh] pb-4 sm:pb-6">
             <div className="max-w-2xl w-full text-center space-y-4 sm:space-y-8">
               {/* Coherence concept visual — a calm, "breathing" heart↔breath
                   wave (the app's signature), replacing the ✨. Pure CSS/SVG,
                   lavender→teal. The orb + waves breathe at ~5.5 cycles/min
                   (11s, resonance frequency) — decorative, not data-bound.
                   prefers-reduced-motion gets a static fallback (.onda-breathe). */}
-              <div className="flex justify-center mb-4 sm:mb-8">
-                <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center">
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-violet-400/25 to-cyan-400/25 blur-2xl onda-breathe" />
-                  <div className={`absolute inset-2 rounded-full border ${completeLight ? 'border-violet-400/30' : 'border-violet-300/25'}`} />
-                  {/* The breathing animation rides on this <div> wrapper, not the
-                      <svg> root — SVG-root transforms can sit on a non-composited
-                      layer in WKWebView and visually freeze. The wrapper + GPU
-                      hints in .onda-breathe keep it animating in Capacitor. */}
-                  <div className="relative onda-breathe">
-                    <svg viewBox="0 0 72 44" className="w-16 h-16 sm:w-20 sm:h-20" fill="none" aria-hidden="true">
-                      <defs>
-                        <linearGradient id="cohResultGrad" x1="0" y1="0" x2="1" y2="0">
-                          <stop offset="0%" stopColor="#a78bfa" />
-                          <stop offset="100%" stopColor="#22d3ee" />
-                        </linearGradient>
-                      </defs>
-                      <path d="M4 30 Q 22 14 36 30 T 68 30" stroke="url(#cohResultGrad)" strokeWidth="2" strokeLinecap="round" opacity="0.45" />
-                      <path d="M4 22 Q 22 6 36 22 T 68 22" stroke="url(#cohResultGrad)" strokeWidth="2.5" strokeLinecap="round" />
-                    </svg>
-                  </div>
-                </div>
+              <CoherenceOrb light={completeLight} ripples className="mb-10 sm:mb-16" />
+              {/* Status pill + header. On first-run a small green "Done" badge
+                  sits tight above the title (success = you started). */}
+              <div className="flex flex-col items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                {cameFromFirstRun && (
+                  <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide ${completeLight ? 'bg-emerald-100 text-emerald-700' : 'bg-emerald-500/20 text-emerald-300'}`}>
+                    <CheckCircle className="w-3.5 h-3.5" />
+                    {t('practices.r_badge', 'Done')}
+                  </span>
+                )}
+                <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold ${completeLight ? 'text-slate-500' : ''}`}>{cameFromFirstRun ? t('practices.r_title', 'Your first practice is done') : t('practices.completed')}</h2>
               </div>
-              <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 ${completeLight ? 'text-slate-500' : ''}`}>{cameFromFirstRun ? t('practices.r_title', 'Your first practice is done') : t('practices.completed')}</h2>
 
               {/* Honest signal — replaces the gamified OND/Quality/stars block.
                   A = no sensor → invite; B = camera + a real, SUSTAINED pulse
                   drop → "from X to Y"; C = everything else → neutral, no
                   numbers, never "rose", never a grade. Decided in finishPractice
                   (honestResult). EN fallbacks so every locale renders honestly. */}
-              <div className={`rounded-2xl p-6 sm:p-8 md:p-10 border shadow-2xl ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
-                <p className={`text-base sm:text-lg md:text-xl leading-relaxed ${completeLight ? 'text-slate-600' : 'text-white/90'}`}>
+              <div className={`relative overflow-hidden rounded-2xl p-6 sm:p-8 md:p-10 border shadow-2xl ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
+                {/* Gradient top accent on the body card (cyan→violet, the wave palette). */}
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cyan-400 to-violet-500" aria-hidden="true" />
+                <p className={`text-base sm:text-lg md:text-xl leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-600' : 'text-white/90'}`}>
                   {honestResult?.state === 'A'
                     ? t('practices.result_a', "You've completed your first practice. Connect the camera or a watch to see what to do with it.")
                     : honestResult?.state === 'B'
                       ? t('practices.result_b', 'Your pulse dropped from {{start}} to {{min}} during the practice — your body is responding to the breath. With a watch, next practices show more: how heart and breath sync up.', { start: honestResult?.hrStart, min: honestResult?.hrMin })
-                      : renderAccented(t('practices.r_body', "You didn't just measure your state — you [[started working with it]]."), completeLight ? 'text-violet-600 font-semibold' : 'text-violet-300 font-semibold')}
+                      : renderAccented(t('practices.r_body', "You didn't just measure your state — you [[started working with it]]."), completeLight ? 'text-violet-600 font-semibold' : 'text-violet-300 font-semibold', 'text-xl sm:text-2xl font-medium')}
                 </p>
               </div>
               {/* Forward path — the honest upsell bridge to the paywall: what
@@ -4766,8 +4844,8 @@ const OndaLevel1 = () => {
               {/* Forward path — one clean sentence (bigger + darker than a
                   disclaimer per the hierarchy). Accent terms (incl. resting-HRV)
                   are whitespace-nowrap so resting-HRV never splits across a line. */}
-              <p className={`text-base sm:text-lg leading-relaxed ${completeLight ? 'text-slate-600' : 'text-white/80'}`}>
-                {renderAccented(t('practices.r_path', 'Ahead: [[24]] parts, [[12]] practices each, every one with its own science-based protocols for your nervous system. And with a watch, live [[coherence]] and your [[resting-HRV]] trend open up.'), completeLight ? 'text-violet-600 font-semibold whitespace-nowrap' : 'text-violet-300 font-semibold whitespace-nowrap')}
+              <p className={`text-base sm:text-lg leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-600' : 'text-white/80'}`}>
+                {renderAccented(t('practices.r_path', 'Ahead: [[24]] parts, [[12]] practices each, every one with its own science-based protocols for your nervous system. And with a watch, live [[coherence]] and your [[resting-HRV]] trend open up.'), completeLight ? 'text-violet-600 font-semibold whitespace-nowrap' : 'text-violet-300 font-semibold whitespace-nowrap', 'text-xl sm:text-2xl font-medium', completeLight ? 'text-blue-500 font-semibold whitespace-nowrap' : 'text-blue-300 font-semibold whitespace-nowrap')}
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 {/* Try again — hidden on the onboarding first run (cameFromFirstRun):
@@ -4791,11 +4869,19 @@ const OndaLevel1 = () => {
                 <button
                   onClick={exitPractice}
                   className={cameFromFirstRun
-                    ? 'flex-1 sm:flex-none sm:min-w-[15rem] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold transition-all hover:scale-[1.03] bg-gradient-to-r from-violet-500 to-indigo-500 hover:from-violet-400 hover:to-indigo-400 text-white shadow-lg shadow-violet-500/30'
+                    ? 'relative overflow-hidden self-center px-8 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold transition-all hover:scale-[1.03] bg-gradient-to-r from-violet-500 to-indigo-500 hover:from-violet-400 hover:to-indigo-400 text-white shadow-lg shadow-violet-500/30'
                     : `flex-1 sm:flex-none sm:min-w-[15rem] backdrop-blur-xl px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold transition-all border ${completeLight ? 'bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 text-slate-600' : 'bg-white/10 hover:bg-white/20 border-white/25 text-white'}`}
                   data-testid="button-exit-practice"
                 >
-                  {cameFromFirstRun ? t('practices.r_cta', 'Continue training') : t('practices.back_to_practices')}
+                  {cameFromFirstRun ? (
+                    <>
+                      {/* Light glare that sweeps left→right across the CTA, on a
+                          loop with a pause between sweeps. Clipped by the button's
+                          overflow-hidden; disabled under prefers-reduced-motion. */}
+                      <span className="onda-shine" aria-hidden="true" />
+                      <span className="relative z-10 inline-flex items-center gap-2">{t('practices.r_cta', 'Continue training')}<ArrowRight className="w-5 h-5" /></span>
+                    </>
+                  ) : t('practices.back_to_practices')}
                 </button>
               </div>
             </div>
@@ -5036,24 +5122,30 @@ const OndaLevel1 = () => {
     return (
       <div className={`h-full overflow-x-hidden ${isLight ? 'text-slate-800 bg-gradient-to-br from-indigo-50 via-white to-violet-100' : 'text-white bg-gradient-to-br from-indigo-950 via-slate-900 to-indigo-950'}`}>
         <div
-          className="min-h-screen flex flex-col justify-center px-6 py-8 max-w-2xl mx-auto text-center"
+          className="min-h-screen flex flex-col justify-start px-6 pt-[10vh] max-w-2xl mx-auto text-center"
           style={{ paddingBottom: 'calc(env(safe-area-inset-bottom) + 32px)' }}
         >
-          <div className={`text-base sm:text-lg font-light tracking-[0.35em] mb-8 ${isLight ? 'text-slate-500' : 'text-white/70'}`}>
-            ONDA
-          </div>
-          <h1 className="text-3xl sm:text-4xl font-bold leading-tight mb-6">
+          {/* Orb — coherence wave, no ripples (matches the intro + results). */}
+          <CoherenceOrb light={isLight} className="mb-6 sm:mb-8" />
+          <h1 className={`text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6 ${isLight ? 'text-slate-500' : ''}`}>
             {t('first_run.title')}
           </h1>
-          <p className={`text-lg leading-relaxed mb-10 ${isLight ? 'text-slate-600' : 'text-white/85'}`}>
-            {t('first_run.body', { minutes: featuredMinutes })}
-          </p>
+          {/* Body in the same framed card as the results screen, with the
+              cyan→violet gradient top accent. */}
+          <div className={`relative overflow-hidden rounded-2xl p-6 sm:p-8 md:p-10 border shadow-2xl mb-8 sm:mb-10 ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
+            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cyan-400 to-violet-500" aria-hidden="true" />
+            <p className={`text-base sm:text-lg md:text-xl leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/90'}`}>
+              {t('first_run.body', { minutes: featuredMinutes })}
+            </p>
+          </div>
+          {/* Accent-filled CTA with arrow + shine sweep, matching the results screen. */}
           <button
             onClick={() => dismissFirstRun('cta')}
-            className={`mx-auto px-8 py-4 rounded-xl text-lg font-semibold transition-all border bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+            className="relative overflow-hidden self-center px-8 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold transition-all hover:scale-[1.03] bg-gradient-to-r from-violet-500 to-indigo-500 hover:from-violet-400 hover:to-indigo-400 text-white shadow-lg shadow-violet-500/30"
             data-testid="button-first-run-start"
           >
-            {t('first_run.cta', { minutes: featuredMinutes })}
+            <span className="onda-shine" aria-hidden="true" />
+            <span className="relative z-10 inline-flex items-center gap-2">{t('first_run.cta', { minutes: featuredMinutes })}<ArrowRight className="w-5 h-5" /></span>
           </button>
           <button
             onClick={() => dismissFirstRun('skip')}
@@ -5806,7 +5898,9 @@ const OndaLevel1 = () => {
           ) : (
             /* One bold sine wave, indigo→violet gradient. Hand-rolled
                SVG so we control amplitude (Lucide's Waves is ~3 stacked
-               low-amplitude curves and reads timid in a 56–64 px well). */
+               low-amplitude curves and reads timid in a 56–64 px well).
+               Curvature mirrors the results-screen orb wave
+               (M4 22 Q 22 6 36 22 T 68 22), scaled to this 32×32 well. */
             <svg
               viewBox="0 0 32 32"
               width="32"
@@ -5822,7 +5916,7 @@ const OndaLevel1 = () => {
                 </linearGradient>
               </defs>
               <path
-                d="M 3 16 C 8 10, 12 10, 16 16 S 24 22, 29 16"
+                d="M 3 16 Q 10.3 6 16 16 T 29 16"
                 stroke="url(#onda-wave-grad)"
                 strokeWidth="2.6"
                 strokeLinecap="round"

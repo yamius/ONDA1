@@ -222,3 +222,59 @@
     transform: none;
   }
 }
+
+/* Shine sweep on the results-screen CTA — a diagonal light glare runs
+   left→right, then pauses, on a loop. Clipped by the button's overflow-hidden.
+   Sits below the (relative z-10) label. Disabled under reduced-motion. */
+@keyframes ondaShine {
+  0%        { transform: translateX(-180%) skewX(-20deg); }
+  55%, 100% { transform: translateX(320%)  skewX(-20deg); }
+}
+
+.onda-shine {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  transform: translateX(-180%) skewX(-20deg);
+  animation: ondaShine 3.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .onda-shine { animation: none; display: none; }
+}
+
+/* Ripples emitted from the results-screen orb (sonar-style). Three rings on
+   the same 3s loop, staggered by 1s so a new wave radiates ~every second. */
+@keyframes ondaRipple {
+  0%   { transform: scale(0.8); opacity: 0.5; }
+  100% { transform: scale(2.2); opacity: 0; }
+}
+
+.onda-ripple {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  /* Soft gradient ring (not a hard line) — a feathered violet→cyan band that
+     fades out on both edges, so it reads as a glowing wave, not an outline. */
+  background: radial-gradient(
+    circle,
+    transparent 46%,
+    rgba(139, 92, 246, 0.28) 64%,
+    rgba(34, 211, 238, 0.16) 78%,
+    transparent 92%
+  );
+  transform: scale(0.8);
+  opacity: 0;
+  pointer-events: none;
+  animation: ondaRipple 3s ease-out infinite;
+}
+.onda-ripple-2 { animation-delay: 1s; }
+.onda-ripple-3 { animation-delay: 2s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .onda-ripple { animation: none; display: none; }
+}
