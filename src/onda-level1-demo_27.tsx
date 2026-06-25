@@ -312,9 +312,10 @@ const OndaLevel1 = () => {
   //   1. First free practice that hasn't been completed yet.
   //   2. Else the most recent free practice from history (so a returning
   //      user lands on the one they last did).
-  //   3. Else `p1-1` as ultimate fallback.
+  //   3. Else the first id below as ultimate fallback.
+  // Order = priority: p1-2 (Sense of Being) is the onboarding/featured opener.
   const featuredPracticeId = useMemo(() => {
-    const freeIds = ['p1-1', 'p1-2', 'p1-3'];
+    const freeIds = ['p1-2', 'p1-1', 'p1-3'];
     const cp = completedPractices as Record<string, unknown>;
     const uncompleted = freeIds.find(id => !cp[id]);
     if (uncompleted) return uncompleted;
@@ -4803,50 +4804,95 @@ const OndaLevel1 = () => {
         {practiceState === 'complete' && (
           <div className="relative z-10 flex items-start justify-center min-h-screen px-4 sm:px-6 pt-[10vh] pb-4 sm:pb-6">
             <div className="max-w-2xl w-full text-center space-y-4 sm:space-y-8">
-              {/* Coherence concept visual — a calm, "breathing" heart↔breath
-                  wave (the app's signature), replacing the ✨. Pure CSS/SVG,
-                  lavender→teal. The orb + waves breathe at ~5.5 cycles/min
-                  (11s, resonance frequency) — decorative, not data-bound.
-                  prefers-reduced-motion gets a static fallback (.onda-breathe). */}
-              <CoherenceOrb light={completeLight} ripples className="mb-10 sm:mb-16" />
-              {/* Status pill + header. On first-run a small green "Done" badge
-                  sits tight above the title (success = you started). */}
-              <div className="flex flex-col items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-                {cameFromFirstRun && (
-                  <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide ${completeLight ? 'bg-emerald-100 text-emerald-700' : 'bg-emerald-500/20 text-emerald-300'}`}>
-                    <CheckCircle className="w-3.5 h-3.5" />
-                    {t('practices.r_badge', 'Done')}
-                  </span>
-                )}
-                <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold ${completeLight ? 'text-slate-500' : ''}`}>{cameFromFirstRun ? t('practices.r_title', 'Your first practice is done') : t('practices.completed')}</h2>
-              </div>
-
-              {/* Honest signal — replaces the gamified OND/Quality/stars block.
-                  A = no sensor → invite; B = camera + a real, SUSTAINED pulse
-                  drop → "from X to Y"; C = everything else → neutral, no
-                  numbers, never "rose", never a grade. Decided in finishPractice
-                  (honestResult). EN fallbacks so every locale renders honestly. */}
-              <div className={`relative overflow-hidden rounded-2xl p-6 sm:p-8 md:p-10 border shadow-2xl ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
-                {/* Gradient top accent on the body card (cyan→violet, the wave palette). */}
-                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cyan-400 to-violet-500" aria-hidden="true" />
-                <p className={`text-base sm:text-lg md:text-xl leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-600' : 'text-white/90'}`}>
-                  {honestResult?.state === 'A'
-                    ? t('practices.result_a', "You've completed your first practice. Connect the camera or a watch to see what to do with it.")
-                    : honestResult?.state === 'B'
-                      ? t('practices.result_b', 'Your pulse dropped from {{start}} to {{min}} during the practice — your body is responding to the breath. With a watch, next practices show more: how heart and breath sync up.', { start: honestResult?.hrStart, min: honestResult?.hrMin })
-                      : renderAccented(t('practices.r_body', "You didn't just measure your state — you [[started working with it]]."), completeLight ? 'text-violet-600 font-semibold' : 'text-violet-300 font-semibold', 'text-xl sm:text-2xl font-medium')}
-                </p>
-              </div>
-              {/* Forward path — the honest upsell bridge to the paywall: what
-                  continuing unlocks (real features). coherence is LIVE (with a
-                  watch); the multi-day trend is resting-HRV — not a coherence
-                  days-trend, which we don't have. Secondary styling. */}
-              {/* Forward path — one clean sentence (bigger + darker than a
-                  disclaimer per the hierarchy). Accent terms (incl. resting-HRV)
-                  are whitespace-nowrap so resting-HRV never splits across a line. */}
-              <p className={`text-base sm:text-lg leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-600' : 'text-white/80'}`}>
-                {renderAccented(t('practices.r_path', 'Ahead: [[24]] parts, [[12]] practices each, every one with its own science-based protocols for your nervous system. And with a watch, live [[coherence]] and your [[resting-HRV]] trend open up.'), completeLight ? 'text-violet-600 font-semibold whitespace-nowrap' : 'text-violet-300 font-semibold whitespace-nowrap', 'text-xl sm:text-2xl font-medium', completeLight ? 'text-blue-500 font-semibold whitespace-nowrap' : 'text-blue-300 font-semibold whitespace-nowrap')}
-              </p>
+              {cameFromFirstRun ? (
+                <>
+                  {/* ONBOARDING design: orb + "Done" badge + honest A/B/C signal
+                      + forward-path upsell. This whole block is onboarding-only;
+                      hub-launched basic practices get the original gamified screen
+                      in the else branch below. */}
+                  <CoherenceOrb light={completeLight} ripples className="mb-10 sm:mb-16" />
+                  <div className="flex flex-col items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
+                    <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wide ${completeLight ? 'bg-emerald-100 text-emerald-700' : 'bg-emerald-500/20 text-emerald-300'}`}>
+                      <CheckCircle className="w-3.5 h-3.5" />
+                      {t('practices.r_badge', 'Done')}
+                    </span>
+                    <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold ${completeLight ? 'text-slate-500' : ''}`}>{t('practices.r_title', 'Your first practice is done')}</h2>
+                  </div>
+                  <div className={`relative overflow-hidden rounded-2xl p-6 sm:p-8 md:p-10 border shadow-2xl ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
+                    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-cyan-400 to-violet-500" aria-hidden="true" />
+                    <p className={`text-base sm:text-lg md:text-xl leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-600' : 'text-white/90'}`}>
+                      {honestResult?.state === 'A'
+                        ? t('practices.result_a', "You've completed your first practice. Connect the camera or a watch to see what to do with it.")
+                        : honestResult?.state === 'B'
+                          ? t('practices.result_b', 'Your pulse dropped from {{start}} to {{min}} during the practice — your body is responding to the breath. With a watch, next practices show more: how heart and breath sync up.', { start: honestResult?.hrStart, min: honestResult?.hrMin })
+                          : renderAccented(t('practices.r_body', "You didn't just measure your state — you [[started working with it]]."), completeLight ? 'text-violet-600 font-semibold' : 'text-violet-300 font-semibold', 'text-xl sm:text-2xl font-medium')}
+                    </p>
+                  </div>
+                  <p className={`text-base sm:text-lg leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-600' : 'text-white/80'}`}>
+                    {renderAccented(t('practices.r_path', 'Ahead: [[24]] parts, [[12]] practices each, every one with its own science-based protocols for your nervous system. And with a watch, live [[coherence]] and your [[resting-HRV]] trend open up.'), completeLight ? 'text-violet-600 font-semibold whitespace-nowrap' : 'text-violet-300 font-semibold whitespace-nowrap', 'text-xl sm:text-2xl font-medium', completeLight ? 'text-blue-500 font-semibold whitespace-nowrap' : 'text-blue-300 font-semibold whitespace-nowrap')}
+                  </p>
+                </>
+              ) : (
+                <>
+                  {/* HUB basic practice: the original gamified results — ✨ +
+                      OND earned + Quality/Time + star rating + new record. The
+                      honest/orb design above is onboarding-only. */}
+                  <div className="text-6xl sm:text-8xl md:text-9xl mb-4 sm:mb-8 animate-bounce" style={{ animationDuration: '1s' }}>✨</div>
+                  <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 ${completeLight ? 'text-slate-500' : ''}`}>{t('practices.completed')}</h2>
+                  {activePractice.finalPhrase && (
+                    <div className={`rounded-2xl p-4 sm:p-6 border shadow-xl mb-4 sm:mb-6 ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
+                      <p className={`text-base sm:text-lg md:text-xl italic leading-relaxed whitespace-pre-line ${completeLight ? 'text-slate-500' : 'text-white/90'}`}>
+                        {activePractice.finalPhrase}
+                      </p>
+                    </div>
+                  )}
+                  <div className={`rounded-2xl p-6 sm:p-8 md:p-10 space-y-4 border shadow-2xl ${completeLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-indigo-100/60' : 'bg-white/10 backdrop-blur-2xl border-white/25'}`}>
+                    {/* OND earned */}
+                    <div className={`text-4xl sm:text-5xl md:text-7xl font-mono animate-pulse ${completeLight ? 'text-amber-500' : 'text-amber-400 drop-shadow-2xl'}`}>
+                      +{Math.floor((activePractice.maxQnt * qualityScore) / 100)} OND
+                    </div>
+                    {/* Quality + Time */}
+                    <div className="flex justify-center items-center text-sm sm:text-base">
+                      <div className="flex items-center justify-end gap-2 w-[140px]">
+                        <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.quality')}</span>
+                        <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-emerald-500' : 'text-emerald-400'}`}>{safeToFixed(qualityScore, 0)}%</span>
+                      </div>
+                      <div className={`w-px h-6 mx-3 ${completeLight ? 'bg-slate-300' : 'bg-white/30'}`} />
+                      <div className="flex items-center justify-start gap-2 w-[140px]">
+                        <span className={`font-bold text-lg sm:text-xl ${completeLight ? 'text-slate-500' : 'text-white'}`}>{formatTime(practiceTime)}</span>
+                        <span className={completeLight ? 'text-slate-500' : 'text-gray-300'}>{t('practices.time')}</span>
+                      </div>
+                    </div>
+                    {/* Star rating */}
+                    <div className="pt-2">
+                      <p className={`text-sm mb-2 ${completeLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('practices.rate_practice') || 'Rate this practice'}</p>
+                      <div className="flex justify-center gap-2">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <button
+                            key={star}
+                            onClick={() => setPracticeRating(star)}
+                            className="transition-all hover:scale-110"
+                            data-testid={`button-star-${star}`}
+                          >
+                            <Star
+                              className={`w-8 h-8 sm:w-10 sm:h-10 ${
+                                star <= practiceRating
+                                  ? 'text-amber-400 fill-yellow-400'
+                                  : completeLight ? 'text-slate-300' : 'text-gray-500'
+                              }`}
+                            />
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                    {completedPractices[activePractice.id] && completedPractices[activePractice.id].quality < qualityScore && (
+                      <div className={`bg-emerald-500/15 border border-emerald-400/50 rounded-lg p-3 sm:p-4 text-sm sm:text-base ${completeLight ? 'text-emerald-700' : 'text-emerald-200'}`}>
+                        {t('practices.new_record')}: {safeToFixed(completedPractices[activePractice.id]?.quality, 0)}%
+                      </div>
+                    )}
+                  </div>
+                </>
+              )}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
                 {/* Try again — hidden on the onboarding first run (cameFromFirstRun):
                     a replay over a list the new user hasn't seen yet only delays
