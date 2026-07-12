@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { API_ENABLED } from '../config/features'
 
 /**
  * Android-only waitlist capture for tool pages.
@@ -25,7 +26,9 @@ export function AndroidWaitlist() {
     if (typeof navigator !== 'undefined' && /android/i.test(navigator.userAgent)) setIsAndroid(true)
   }, [])
 
-  if (!isAndroid) return null
+  // No waitlist backend on static hosting → hide the whole capture (no dead
+  // form). Reappears when VITE_API_ENABLED=1 + the serverless function exist.
+  if (!API_ENABLED || !isAndroid) return null
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()

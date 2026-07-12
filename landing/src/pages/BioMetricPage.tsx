@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { METRIC_DETAILS, type DetailSection } from '../data/bioMetrics'
 import { NotFoundPage } from './NotFoundPage'
 import { appStoreUrl } from '../config/appStore'
+import { API_ENABLED } from '../config/features'
 import { langFromPath, localizedPathFor } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
@@ -169,20 +170,24 @@ export function BioMetricPage() {
                 <div className="text-sm font-semibold">{t('ui.appStoreLabel')}</div>
               </div>
             </a>
-            <button
-              type="button"
-              onClick={() => { (window as any).lastPlatform = 'android'; setPlatform('android'); setIsOpen(true) }}
-              className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
-              aria-label={t('ui.googlePlayAria')}
-              data-button="android"
-              data-platform="android"
-            >
-              <PlayIcon />
-              <div className="text-left">
-                <div className="text-[9px] text-white/40">{t('ui.googlePlaySup')}</div>
-                <div className="text-sm font-semibold">{t('ui.googlePlayLabel')}</div>
-              </div>
-            </button>
+            {/* Android waitlist trigger — hidden without the waitlist backend
+                (static hosting); the App Store link above always works. */}
+            {API_ENABLED && (
+              <button
+                type="button"
+                onClick={() => { (window as any).lastPlatform = 'android'; setPlatform('android'); setIsOpen(true) }}
+                className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
+                aria-label={t('ui.googlePlayAria')}
+                data-button="android"
+                data-platform="android"
+              >
+                <PlayIcon />
+                <div className="text-left">
+                  <div className="text-[9px] text-white/40">{t('ui.googlePlaySup')}</div>
+                  <div className="text-sm font-semibold">{t('ui.googlePlayLabel')}</div>
+                </div>
+              </button>
+            )}
           </div>
         </div>
       </div>

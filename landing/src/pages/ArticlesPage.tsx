@@ -5,6 +5,7 @@ import { articles } from '../data/articles'
 import { FEATURED_ARTICLE_SLUGS } from '../data/articles-categories'
 import { TOPICS } from '../data/topics'
 import { OptimizedImage } from '../components/OptimizedImage'
+import { API_ENABLED } from '../config/features'
 import { langFromPath, homePathFor, langHref } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
 interface MdArticle {
@@ -54,6 +55,10 @@ export function ArticlesPage() {
   const [activeCategory] = useState<string | null>(null)
 
   useEffect(() => {
+    // Legacy Telegram-authored md articles come from the server API, which
+    // doesn't exist on static hosting — skip the fetch (list stays the static
+    // articles only). Re-enables with VITE_API_ENABLED=1 + the function.
+    if (!API_ENABLED) return
     fetch('/api/md-articles')
       .then(r => r.json())
       .then(setMdArticles)

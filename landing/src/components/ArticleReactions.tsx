@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { getFingerprint } from '../lib/fingerprint'
+import { API_ENABLED } from '../config/features'
 
 const STORAGE_VALIDATE = 'onda_article_validate_'
 const STORAGE_INVALIDATE = 'onda_article_invalidate_'
@@ -13,7 +14,7 @@ export function ArticleValidationArrows({ articleSlug }: { articleSlug: string }
   const [loading, setLoading] = useState(false)
 
   const loadFromStorage = useCallback(() => {
-    if (!articleSlug) return
+    if (!articleSlug || !API_ENABLED) return
     try {
       const v = parseInt(localStorage.getItem(STORAGE_VALIDATE + articleSlug) || '0', 10)
       const i = parseInt(localStorage.getItem(STORAGE_INVALIDATE + articleSlug) || '0', 10)
@@ -25,7 +26,7 @@ export function ArticleValidationArrows({ articleSlug }: { articleSlug: string }
   }, [articleSlug])
 
   const loadVotes = useCallback(async () => {
-    if (!articleSlug) return
+    if (!articleSlug || !API_ENABLED) return
     const fp = getFingerprint()
     try {
       const res = await fetch(`/api/votes/${encodeURIComponent(articleSlug)}?fp=${encodeURIComponent(fp)}`)
@@ -101,7 +102,10 @@ export function ArticleValidationArrows({ articleSlug }: { articleSlug: string }
     setLoading(false)
   }
 
-  if (!articleSlug) return null
+  // Votes/comments need the Supabase-proxy API; on static hosting hide the whole
+  // widget (rather than a per-browser localStorage-only fake). Reappears with
+  // VITE_API_ENABLED=1 + the serverless functions.
+  if (!API_ENABLED || !articleSlug) return null
 
   return (
     <div className="font-terminal flex items-center justify-end gap-2">
@@ -159,7 +163,7 @@ export function ArticleReactions({ articleSlug }: { articleSlug: string }) {
   const [submitting, setSubmitting] = useState(false)
 
   const loadFromStorage = useCallback(() => {
-    if (!articleSlug) return
+    if (!articleSlug || !API_ENABLED) return
     try {
       const raw = localStorage.getItem(STORAGE_COMMENTS + articleSlug)
       if (raw) {
@@ -175,7 +179,7 @@ export function ArticleReactions({ articleSlug }: { articleSlug: string }) {
   }, [articleSlug])
 
   const loadComments = useCallback(async () => {
-    if (!articleSlug) return
+    if (!articleSlug || !API_ENABLED) return
     try {
       const res = await fetch(`/api/comments/${encodeURIComponent(articleSlug)}`)
       if (!res.ok) throw new Error('fetch failed')
@@ -234,7 +238,10 @@ export function ArticleReactions({ articleSlug }: { articleSlug: string }) {
     setSubmitting(false)
   }
 
-  if (!articleSlug) return null
+  // Votes/comments need the Supabase-proxy API; on static hosting hide the whole
+  // widget (rather than a per-browser localStorage-only fake). Reappears with
+  // VITE_API_ENABLED=1 + the serverless functions.
+  if (!API_ENABLED || !articleSlug) return null
 
   return (
     <div className="font-terminal mx-auto my-12 max-w-2xl">
