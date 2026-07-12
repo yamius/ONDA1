@@ -12,4 +12,8 @@
  * (see `_deferred-api/README.md`), set `VITE_API_ENABLED=1` in the Vercel
  * project env, and redeploy — the gated UI reappears automatically.
  */
-export const API_ENABLED = import.meta.env.VITE_API_ENABLED === '1'
+// `import.meta.env` is UNDEFINED when tsx evaluates this module during the
+// prerender step (Node), so read it defensively — same pattern as
+// lib/supabase.ts and lib/emotonAnalytics.ts.
+const env = ((import.meta as unknown as { env?: Record<string, string | undefined> }).env) ?? {}
+export const API_ENABLED = env.VITE_API_ENABLED === '1'
