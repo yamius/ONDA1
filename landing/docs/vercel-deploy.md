@@ -85,6 +85,9 @@ Verify on the live Vercel URL (and again after DNS cutover):
 
 - `/get` renders the static download page; `/app` and `/download` rewrite to it.
 - `www.onda-life.com` → `onda-life.com` (301).
+- A trailing-slash URL like `/articles/` → `/articles` — 301/308 (Vercel
+  emits **308** for trailing-slash normalization; a permanent redirect either
+  way, SEO-safe).
 - `/p/mundi`, `/p/info`, `/p/radboud`, `/p/tno` → the matching `/decks/*.pdf`
   (302); `/decks/*` responds with `X-Robots-Tag: noindex, nofollow`.
 - A deep article link (e.g. `/articles/<slug>`) returns prerendered HTML, not a
