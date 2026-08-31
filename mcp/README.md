@@ -110,10 +110,27 @@ endpoint refuses every request with 503** — an unset gate is an open gate.
 npm test
 ```
 
-15 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
+21 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
 surface, graceful `not_configured` degradation, and the funnel arithmetic
 against a mocked GA4 — including that `home_view{first_run}` is used rather
-than all `home_view`, and that `silent_exit` never goes negative.
+than all `home_view`, and that `silent_exit` never goes negative. Plus the
+failure diagnostics above, and that Tenjin targets the host from the published
+spec rather than an invented one.
+
+## When a source fails
+
+Every failure carries what is needed to act on it, because a bare `fetch failed`
+does not:
+
+- `status: null` + `network_error: true` + `cause` — the request **never reached
+  the server**. Wrong host, DNS, or egress. Not a token problem.
+- `status: 401` / `403` + `body_snippet` — the API answered and rejected us.
+  Token or scope.
+- `status: 429` — rate limited (Tenjin allows 100 reporting requests/minute).
+- `status: 4xx/5xx` + `body_snippet` — the API's own explanation, usually a
+  parameter it did not like.
+
+Body snippets are truncated to 400 characters and never contain our credentials.
 
 ## Data lag
 

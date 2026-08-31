@@ -52,7 +52,15 @@ async function salesReportDay(date, bearer) {
     headers: { Authorization: `Bearer ${bearer}`, Accept: 'application/a-gzip' },
   });
   if (res.status === 404) return null; // no report for that day
-  if (!res.ok) throw new Error(`ASC salesReports ${res.status} for ${date}`);
+  if (!res.ok) {
+    // Apple explains the refusal in the body; without it a 401 from an expired
+    // JWT is indistinguishable from a 400 for a bad vendor number.
+    const body = await res.text().catch(() => '');
+    const err = new Error(`HTTP ${res.status} from api.appstoreconnect.apple.com (reportDate ${date})`);
+    err.status = res.status;
+    err.body_snippet = body.slice(0, 400);
+    throw err;
+  }
   const buf = Buffer.from(await res.arrayBuffer());
   return zlib.gunzipSync(buf).toString('utf8');
 }

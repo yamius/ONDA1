@@ -108,6 +108,14 @@ export async function ga4Probe() {
     const rows = data?.rowCount ?? 0;
     return { ok: true, rows_seen: rows };
   } catch (err) {
+    // google-auth-library (Gaxios) hides the API's own explanation in
+    // err.response.data — lift it out so the failure is readable.
+    const status = err?.response?.status ?? err?.status;
+    if (status !== undefined) err.status = status;
+    const payload = err?.response?.data;
+    if (payload && !err.body_snippet) {
+      err.body_snippet = (typeof payload === 'string' ? payload : JSON.stringify(payload)).slice(0, 400);
+    }
     return sourceError('ga4', err);
   }
 }

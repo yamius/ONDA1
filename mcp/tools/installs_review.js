@@ -10,7 +10,7 @@
 
 import { windowFor, rate, ok, notConfigured, sourceError, DATA_LAG } from '../lib/shared.js';
 import { ascInstalls, ascMissing } from '../lib/sources/asc.js';
-import { tenjinReport, tenjinMissing, summariseByChannel } from '../lib/sources/tenjin.js';
+import { tenjinSpendReport, tenjinMissing, summariseByChannel } from '../lib/sources/tenjin.js';
 
 export const installsReviewSchema = {
   name: 'installs_review',
@@ -70,7 +70,7 @@ export async function installsReview(args = {}) {
     result.sources.tenjin = notConfigured('tenjin', tenjinGap);
   } else {
     try {
-      const payload = await tenjinReport({ startDate: win.start_date, endDate: win.end_date });
+      const payload = await tenjinSpendReport({ startDate: win.start_date, endDate: win.end_date });
       channels = summariseByChannel(payload);
       if (args.channel) channels = channels.filter((c) => c.channel === String(args.channel).toLowerCase());
       paid = channels.reduce((s, c) => s + c.installs, 0);

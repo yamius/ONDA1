@@ -81,5 +81,14 @@ export function sourceError(source, err) {
     source,
     // Message only — never echo credentials or full API responses.
     message: String(err && err.message ? err.message : err).slice(0, 300),
+    // Diagnostics carried through from lib/http.js. A bare 'fetch failed' is
+    // unactionable: status null + network_error says 'never reached the server'
+    // (host/DNS), while a status with a body snippet says what the API objected
+    // to. Body is already truncated and never contains our credentials.
+    ...(err?.status !== undefined ? { status: err.status } : {}),
+    ...(err?.network_error ? { network_error: true } : {}),
+    ...(err?.cause ? { cause: err.cause } : {}),
+    ...(err?.body_snippet ? { body_snippet: err.body_snippet } : {}),
+    ...(err?.hint ? { hint: err.hint } : {}),
   };
 }

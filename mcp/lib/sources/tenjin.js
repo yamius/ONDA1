@@ -1,66 +1,90 @@
 /**
- * Tenjin Reporting API — paid attribution by network/campaign.
+ * Tenjin Reporting Metrics API — paid attribution by channel.
+ *
+ * Verified against the official OpenAPI spec (api-docs.tenjin.com,
+ * "Reporting Metrics API 2.0.1") on 2026-09-01, after a first implementation
+ * that had every one of these details wrong:
+ *
+ *   Base URL   https://api.tenjin.com/v2        (NOT reporting.tenjin.com — no
+ *                                                such host exists, which is why
+ *                                                it failed at the DNS layer)
+ *   Path       GET /reports/spend
+ *   Auth       Authorization: Bearer <access token>   (NOT an api_key query param)
+ *   Required   start_date, end_date (YYYY-MM-DD)
+ *   group_by   enum: app | channel | country | site | campaign | creative | ...
+ *   metrics    comma-separated; spend/installs/clicks/impressions/cpi are valid
+ *   Rate limit 100 requests/minute per token, 429 above it
  *
  * Tenjin is the source of truth for "which channel actually delivered an
- * install", against which ad-console numbers are checked: the Google console
- * has shown 90 modelled installs where Tenjin saw 1 real one. Anything derived
- * from SKAN modelling is flagged `modeled: true` rather than presented as fact.
+ * install", against which ad-console numbers get checked: the Google console
+ * has shown 90 modelled installs where Tenjin saw 1 real one.
  */
 
-import { sourceError } from '../shared.js';
+import { getJson } from '../http.js';
 
-const API = 'https://reporting.tenjin.com/api/v2/reports';
+const BASE = 'https://api.tenjin.com/v2';
 
 export function tenjinMissing() {
   return process.env.TENJIN_API_KEY ? [] : ['TENJIN_API_KEY'];
 }
 
-export async function tenjinReport({ startDate, endDate, groupBy = ['campaign_name', 'ad_network'] }) {
+/**
+ * Spend/installs for a window.
+ *
+ * `granularity: 'totals-daily'` collapses the window into one row per group
+ * instead of one row per day — the spec notes such rows carry no `date`. That
+ * is what we want: these tools report a window, not a time series.
+ */
+export async function tenjinSpendReport({ startDate, endDate, groupBy = 'channel', perPage = 1000 }) {
   const qs = new URLSearchParams({
-    api_key: process.env.TENJIN_API_KEY,
     start_date: startDate,
     end_date: endDate,
-    group_by: groupBy.join(','),
-    // Only aggregate columns — nothing user-level is requested, by design.
-    metrics: 'installs,cost,clicks,impressions',
-    personal_data: 'false',
+    granularity: 'totals-daily',
+    group_by: groupBy,
+    metrics: 'spend,installs,clicks,impressions,cpi',
+    per_page: String(perPage),
   });
-  const res = await fetch(`${API}?${qs}`, { headers: { Accept: 'application/json' } });
-  if (!res.ok) throw new Error(`Tenjin ${res.status}`);
-  return res.json();
+  return getJson(`${BASE}/reports/spend?${qs}`, {
+    headers: {
+      Authorization: `Bearer ${process.env.TENJIN_API_KEY}`,
+      Accept: 'application/json',
+    },
+    source: 'tenjin',
+  });
 }
 
 /**
- * Normalise Tenjin rows into channel totals. Tenjin's own field naming varies
- * by account configuration, so each row is read defensively rather than
- * assuming one shape — a renamed column should yield 0, not a crash.
+ * Flatten `data[].attributes` into channel totals.
+ *
+ * Shape per the spec: { data: [ { type: 'report', attributes: { name,
+ * short_id, ad_network_id, ...requested metrics } } ], links, meta }.
+ * Still read defensively — a renamed metric should yield 0, not a crash — but
+ * the field names above are from the published schema, not guesswork.
  */
 export function summariseByChannel(payload) {
-  const rows = payload?.data ?? payload?.reports ?? [];
+  const rows = Array.isArray(payload?.data) ? payload.data : [];
   const byChannel = {};
-  for (const r of Array.isArray(rows) ? rows : []) {
-    const channel = String(r.ad_network ?? r.network ?? r.campaign_name ?? 'unknown').toLowerCase();
-    const installs = Number(r.installs ?? r.conversions ?? 0);
-    const cost = Number(r.cost ?? r.spend ?? 0);
-    const entry = (byChannel[channel] ??= { channel, installs: 0, spend: 0 });
-    entry.installs += installs;
-    entry.spend += cost;
+  for (const row of rows) {
+    const a = row?.attributes ?? {};
+    const channel = String(a.name ?? a.short_id ?? 'unknown');
+    const entry = (byChannel[channel] ??= { channel, installs: 0, spend: 0, clicks: 0, impressions: 0 });
+    entry.installs += Number(a.installs ?? 0);
+    entry.spend += Number(a.spend ?? 0);
+    entry.clicks += Number(a.clicks ?? 0);
+    entry.impressions += Number(a.impressions ?? 0);
   }
   for (const e of Object.values(byChannel)) {
     e.spend = Math.round(e.spend * 100) / 100;
+    // Recomputed rather than trusting the API's cpi: after summing rows it must
+    // match the totals shown here, or the two numbers contradict each other.
     e.cpi = e.installs > 0 ? Math.round((e.spend / e.installs) * 100) / 100 : null;
   }
   return Object.values(byChannel).sort((a, b) => b.installs - a.installs);
 }
 
 export async function tenjinProbe() {
-  try {
-    const end = new Date().toISOString().slice(0, 10);
-    const start = new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10);
-    const data = await tenjinReport({ startDate: start, endDate: end });
-    const rows = data?.data ?? data?.reports ?? [];
-    return { ok: true, rows_seen: Array.isArray(rows) ? rows.length : 0 };
-  } catch (err) {
-    return sourceError('tenjin', err);
-  }
+  const end = new Date().toISOString().slice(0, 10);
+  const start = new Date(Date.now() - 7 * 86400000).toISOString().slice(0, 10);
+  const data = await tenjinSpendReport({ startDate: start, endDate: end });
+  return { ok: true, rows_seen: Array.isArray(data?.data) ? data.data.length : 0 };
 }

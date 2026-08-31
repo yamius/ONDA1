@@ -7,7 +7,7 @@
  * from "no access".
  */
 
-import { ok, DATA_LAG } from '../lib/shared.js';
+import { ok, sourceError, DATA_LAG } from '../lib/shared.js';
 import { ga4Missing, ga4Probe } from '../lib/sources/ga4.js';
 import { ascMissing, ascProbe } from '../lib/sources/asc.js';
 import { tenjinMissing, tenjinProbe } from '../lib/sources/tenjin.js';
@@ -25,10 +25,16 @@ async function probe(name, missing, fn, lag) {
   if (missing.length) {
     return { source: name, status: 'not_configured', missing, data_lag: lag };
   }
-  const res = await fn();
-  return res.ok
-    ? { source: name, status: 'ok', ...res, ok: undefined, data_lag: lag }
-    : { source: name, status: 'error', message: res.message, data_lag: lag };
+  try {
+    const res = await fn();
+    if (res.ok) return { source: name, status: 'ok', ...res, ok: undefined, data_lag: lag };
+    return { source: name, status: 'error', ...res, ok: undefined, error: undefined, data_lag: lag };
+  } catch (err) {
+    // Probes may throw (HttpError) — surface the diagnostics rather than a
+    // bare message, which is what made the first Tenjin failure undebuggable.
+    const detail = sourceError(name, err);
+    return { source: name, status: 'error', ...detail, ok: undefined, error: undefined, data_lag: lag };
+  }
 }
 
 export async function checkStatus() {
