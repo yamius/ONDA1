@@ -82,8 +82,34 @@ export async function installsReview(args = {}) {
 
   if (view === 'by_channel' || view === 'full') result.by_channel = channels;
 
-  if (total !== null && paid !== null) {
-    const organic = Math.max(0, total - paid);
+  if (total !== null && paid !== null && paid > total) {
+    // Paid cannot exceed the total. Reporting 115% and an organic residual of
+    // zero would be arithmetic laid over contradictory inputs, stated with a
+    // confidence the numbers have not earned. Refuse the derivation instead.
+    result.split = {
+      inconsistent_sources: true,
+      total_installs_app_store_connect: total,
+      paid_installs_tenjin: paid,
+      excess: paid - total,
+      note:
+        'Tenjin attributes MORE paid installs than App Store Connect reports in ' +
+        'total, which is impossible. No percentage or organic residual is given ' +
+        'because both would be meaningless.',
+      likely_causes: [
+        'Tenjin rows include SKAN-modelled installs, which are estimates and ' +
+          'routinely overstate reality - the Google console once showed 90 where ' +
+          'Tenjin saw 1 real install; this is the mirror image of that.',
+        'Different clocks: Apple sales reports are in Pacific time and closed by ' +
+          'day, Tenjin attributes on its own window, so a long window drifts.',
+        'App Store Connect counts first-time downloads only, while an attributed ' +
+          'install can be a redownload or a reinstall.',
+      ],
+      how_to_check:
+        'Compare a short window (7 days) against the Tenjin dashboard for the same ' +
+        'dates, and check whether the Google Ads channel row is SKAN-modelled.',
+    };
+  } else if (total !== null && paid !== null) {
+    const organic = total - paid;
     result.split = {
       total_installs: total,
       paid: { installs: paid, of_total: rate(paid, total) },

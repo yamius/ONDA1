@@ -54,6 +54,7 @@ export const DATA_LAG = {
   ga4: 'GA4 processing lag is ~24-48h; the last day or two in this window is usually incomplete.',
   asc: 'App Store Connect sales reports land ~1-2 days behind; the newest day may be missing entirely.',
   tenjin: 'Tenjin is near-real-time but paid-network attribution can still be revised for ~48h.',
+  revenuecat: 'RevenueCat is near real-time, but refunds arrive days later and rewrite past windows retroactively.',
 };
 
 export function ok(data, extra = {}) {

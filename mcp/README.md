@@ -28,10 +28,11 @@ people drop off**.
 |---|---|---|
 | `funnel_review` | Where do people drop off? | GA4 Data API |
 | `installs_review` | Where did installs come from? | App Store Connect + Tenjin |
+| `revenue_review` | Are people paying? | RevenueCat v2 |
 | `check_status` | Are the sources actually answering? | all of the above |
 
-`retention_review`, `revenue_review` and `ads_review` are **not** implemented
-yet; they are absent rather than returning empty results.
+`retention_review` and `ads_review` are **not** implemented yet; they are
+absent rather than returning empty results.
 
 ### `funnel_review`
 
@@ -54,6 +55,41 @@ Params: `since`, `app_version`, `internal` (`exclude`|`include`|`only`), `view`.
 **Counts are total users per event in the window** — not sessions, and not a
 strictly ordered path. A user counts toward a step whenever they fired that
 event, even having skipped an earlier one.
+
+### `revenue_review`
+
+Net revenue is RevenueCat `revenue_type=proceeds` — net of taxes **and** store
+commission, taken from the API. It is deliberately **not** gross minus a flat
+30%: Apple charges 15% under the Small Business Program and after year one of a
+subscription, so a hardcoded rate would misstate net by roughly half for this
+app.
+
+The `snapshot` block (active subscriptions, active trials, MRR) comes from the
+overview endpoint, whose windows are **fixed at 28 days by the API** and do not
+follow `since`. Only `revenue`, `trials`, `refunds` and `churn` honour it. The
+payload says so rather than letting a `since: 90` call look uniformly 90-day.
+
+Breakdowns by product or channel are attempted only through segments the chart
+reports it supports (`/charts/{name}/options`); when none match, the tool
+returns `available: false` **and lists the segments that do exist**, instead of
+guessing a segment name and taking a 400.
+
+`tenjin_purchase_events_note` cross-checks RevenueCat against the Tenjin
+dashboard's `Valid Purchase Event: not received`. If RevenueCat shows paying
+activity while Tenjin shows none, that is direct evidence Tenjin has no In-App
+Purchase credentials filled in and will keep reporting zero however many
+purchases occur. If both show nothing, the tool says so plainly — that proves
+nothing about whether Tenjin is wired, and it says that too.
+
+### `installs_review` and contradictory sources
+
+When Tenjin attributes **more** paid installs than App Store Connect reports in
+total — it once returned 254 paid against 220 total over 90 days — no
+percentage and no organic residual are produced. The tool returns
+`inconsistent_sources: true` with both figures, the excess, and the likely
+causes (SKAN modelling, timezone drift, redownloads). Reporting 115.5% paid and
+0 organic was arithmetic performed on contradictory inputs and stated with a
+confidence it had not earned.
 
 ### The `internal` filter
 
@@ -110,7 +146,7 @@ endpoint refuses every request with 503** — an unset gate is an open gate.
 npm test
 ```
 
-21 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
+29 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
 surface, graceful `not_configured` degradation, and the funnel arithmetic
 against a mocked GA4 — including that `home_view{first_run}` is used rather
 than all `home_view`, and that `silent_exit` never goes negative. Plus the

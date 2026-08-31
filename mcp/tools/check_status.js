@@ -11,6 +11,7 @@ import { ok, sourceError, DATA_LAG } from '../lib/shared.js';
 import { ga4Missing, ga4Probe } from '../lib/sources/ga4.js';
 import { ascMissing, ascProbe } from '../lib/sources/asc.js';
 import { tenjinMissing, tenjinProbe } from '../lib/sources/tenjin.js';
+import { revenueCatMissing, revenueCatProbe } from '../lib/sources/revenuecat.js';
 
 export const checkStatusSchema = {
   name: 'check_status',
@@ -42,6 +43,7 @@ export async function checkStatus() {
     probe('ga4', ga4Missing(), ga4Probe, DATA_LAG.ga4),
     probe('app_store_connect', ascMissing(), ascProbe, DATA_LAG.asc),
     probe('tenjin', tenjinMissing(), tenjinProbe, DATA_LAG.tenjin),
+    probe('revenuecat', revenueCatMissing(), revenueCatProbe, DATA_LAG.revenuecat),
   ]);
 
   const healthy = sources.filter((s) => s.status === 'ok').length;
@@ -49,8 +51,8 @@ export async function checkStatus() {
     summary: `${healthy}/${sources.length} sources answering`,
     sources,
     phase_note:
-      'Phase 1 covers funnel_review, installs_review and check_status. ' +
-      'RevenueCat (revenue_review), retention_review and ads_review are not ' +
-      'wired yet, so they are absent rather than returning empty results.',
+      'funnel_review, installs_review, revenue_review and check_status are ' +
+      'wired. retention_review and ads_review are not, so they are absent ' +
+      'rather than returning empty results.',
   });
 }

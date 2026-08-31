@@ -38,7 +38,7 @@ test('accepts the token via ?key= as well as Bearer', async () => {
   process.env.MCP_AUTH_TOKEN = 'test-token';
   const r = await call({ jsonrpc: '2.0', id: 1, method: 'tools/list' }, { token: '', url: '/api/mcp?key=test-token' });
   assert.equal(r._status, 200);
-  assert.equal(r._json.result.tools.length, 3);
+  assert.equal(r._json.result.tools.length, 4);
 });
 
 test('initialize announces the tools capability', async () => {
@@ -55,11 +55,11 @@ test('notifications get no response body', async () => {
   assert.equal(r._json, undefined);
 });
 
-test('exposes exactly the three Phase 1 tools, and no write tool', async () => {
+test('exposes exactly the wired tools, and no write tool', async () => {
   process.env.MCP_AUTH_TOKEN = 'test-token';
   const r = await call({ jsonrpc: '2.0', id: 3, method: 'tools/list' });
   const names = r._json.result.tools.map((t) => t.name).sort();
-  assert.deepEqual(names, ['check_status', 'funnel_review', 'installs_review']);
+  assert.deepEqual(names, ['check_status', 'funnel_review', 'installs_review', 'revenue_review']);
   assert.ok(!names.some((n) => /write|update|create|delete/.test(n)), 'read-only server');
 });
 
@@ -84,6 +84,6 @@ test('check_status reports every source without throwing', async () => {
   process.env.MCP_AUTH_TOKEN = 'test-token';
   const r = await call({ jsonrpc: '2.0', id: 4, method: 'tools/call', params: { name: 'check_status' } });
   const payload = JSON.parse(r._json.result.content[0].text);
-  assert.equal(payload.sources.length, 3);
+  assert.equal(payload.sources.length, 4);
   assert.ok(payload.summary.includes('sources answering'));
 });
