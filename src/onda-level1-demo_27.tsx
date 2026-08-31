@@ -63,6 +63,9 @@ import {
 import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
+// Singleton, not the hook: the hidden internal-traffic toggle is the only
+// consumer, so it isn't worth widening the useAnalytics() surface for it.
+import { analytics } from './services/AnalyticsService';
 import {
   trackTenjinPractice,
   trackTenjinAttResult,
@@ -485,6 +488,56 @@ const OndaLevel1 = () => {
   const [infoModalMessage, setInfoModalMessage] = useState('');
   const [showMenu, setShowMenu] = useState(false);
   const [activeView, setActiveView] = useState<'main' | 'addon'>('main');
+  // Marketing version for the Menu footer. import.meta.env only carries the CI
+  // run number, so the real CFBundleShortVersionString comes from the native
+  // App plugin (web falls back to a dev label).
+  const [appVersionLabel, setAppVersionLabel] = useState('');
+  // Hidden internal-traffic toggle: 7 taps on the version line marks this
+  // device so our own runs can be excluded from the funnel. See
+  // AnalyticsService.setInternalTraffic — the marker rides into GA4 as a user
+  // property, which is the only thing that also covers first_open.
+  const [internalTrafficOn, setInternalTrafficOn] = useState(false);
+  const versionTapsRef = useRef(0);
+  const versionTapTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  useEffect(() => {
+    let alive = true;
+    (async () => {
+      try {
+        if (Capacitor.isNativePlatform()) {
+          const info = await CapApp.getInfo();
+          if (alive) setAppVersionLabel(`v${info.version} (${info.build})`);
+        } else if (alive) {
+          setAppVersionLabel(`web · build ${import.meta.env.VITE_BUILD_NUMBER || 'dev'}`);
+        }
+      } catch {
+        // getInfo() can fail on a native build with the plugin missing. Fall
+        // back instead of rendering nothing: an absent line would take the
+        // hidden internal-traffic toggle down with it.
+        if (alive) setAppVersionLabel(`build ${import.meta.env.VITE_BUILD_NUMBER || 'dev'}`);
+      }
+    })();
+    setInternalTrafficOn(analytics.isInternalTraffic());
+    return () => {
+      alive = false;
+      if (versionTapTimerRef.current) clearTimeout(versionTapTimerRef.current);
+    };
+  }, []);
+
+  // 7 taps, each within 2s of the last, flip the marker. The window resets the
+  // counter so ordinary stray taps on the version never accumulate into it.
+  const handleVersionTap = useCallback(() => {
+    if (versionTapTimerRef.current) clearTimeout(versionTapTimerRef.current);
+    versionTapsRef.current += 1;
+    if (versionTapsRef.current >= 7) {
+      versionTapsRef.current = 0;
+      setInternalTrafficOn(analytics.setInternalTraffic(!analytics.isInternalTraffic()));
+      return;
+    }
+    versionTapTimerRef.current = setTimeout(() => {
+      versionTapsRef.current = 0;
+    }, 2000);
+  }, []);
   // v1.7.3: онбординг временно скрыт — юзер сразу попадает в хаб.
   // Меню «Intro» по-прежнему может его открыть вручную (для QA / legacy).
   // Авто-показ на холодном старте отключён.
@@ -8694,6 +8747,26 @@ const OndaLevel1 = () => {
                   <div className="font-semibold text-sm truncate">{userProfile?.display_name || 'User'}</div>
                   <div className="text-xs text-white/60 truncate">{user.email}</div>
                 </div>
+              </button>
+            )}
+
+            {/* App version — and the hidden internal-traffic toggle (7 taps).
+                Deliberately visible: a gesture with no visible anchor doesn't
+                survive six months, and the version is the first thing anyone
+                needs when triaging a report. The INTERNAL badge is the only
+                confirmation that the marker actually flipped. */}
+            {appVersionLabel && (
+              <button
+                onClick={handleVersionTap}
+                className={`mt-1 px-4 sm:px-6 py-2 text-left font-mono text-[11px] tracking-wide transition-colors ${isLight ? 'text-slate-500' : 'text-white/40'}`}
+                data-testid="menu-app-version"
+              >
+                {appVersionLabel}
+                {internalTrafficOn && (
+                  <span className="ml-2 rounded bg-amber-400/15 px-1.5 py-0.5 text-[10px] font-semibold text-amber-400">
+                    INTERNAL
+                  </span>
+                )}
               </button>
             )}
         </nav>

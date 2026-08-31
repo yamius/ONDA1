@@ -103,6 +103,10 @@ interface StoredEvent extends AnalyticsEvent {
 const QUEUE_KEY = 'onda_analytics_queue';
 const SESSION_KEY = 'onda_session_id';
 const ANONYMOUS_ID_KEY = 'onda_anonymous_id';
+// Internal-traffic marker (own TestFlight/store runs on our own devices).
+// Set once per device via the hidden toggle (7 taps on the version line in
+// Menu); read on every launch and mirrored into Firebase as a USER PROPERTY.
+const INTERNAL_KEY = 'onda_internal_traffic';
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Firebase mirror.
@@ -179,6 +183,36 @@ function _mirrorToFirebase(eventName: string, metadata?: Record<string, unknown>
 }
 
 /**
+ * Set a Firebase USER property (iOS plugin / Android bridge; no-op on web).
+ *
+ * User properties — not event params — are the only way to mark traffic the
+ * app itself never emits: `first_open` (the first step of the activation
+ * funnel), `session_start` and `screen_view` are auto-collected by the native
+ * Firebase SDK and never pass through track(). A user property is attached by
+ * the SDK to every event, auto-collected ones included, so one call marks the
+ * whole stream instead of every call site.
+ */
+function _setUserProperty(name: string, value: string): void {
+  // Fire-and-forget — never block or throw into the analytics path.
+  (async () => {
+    try {
+      const platform = Capacitor.getPlatform();
+      if (platform === 'android') {
+        const { setUserPropertyAndroid, isAndroidBridgeAvailable } = await import(
+          '../lib/analytics-bridge'
+        );
+        if (isAndroidBridgeAvailable()) setUserPropertyAndroid(name, value);
+      } else if (platform === 'ios' && _firebaseReady) {
+        await FirebaseAnalytics.setUserProperty({ name, value });
+        console.log('[Firebase][ios] User property set:', name, '=', value);
+      }
+    } catch (e) {
+      console.warn('[Firebase] setUserProperty failed:', name, e);
+    }
+  })();
+}
+
+/**
  * Analytics readiness check — called once from main.tsx after first paint.
  *
  * Firebase's native SDK auto-initializes from GoogleService-Info.plist /
@@ -189,6 +223,10 @@ function _mirrorToFirebase(eventName: string, metadata?: Record<string, unknown>
  * including a `trackEvent` that wrote to non-existent app_events columns).
  */
 export async function initializeAnalytics(): Promise<void> {
+  // Re-assert the internal-traffic user property on every launch, so the
+  // marker survives a Firebase reset and is visible from the first event of
+  // the session onward.
+  analytics.applyInternalTrafficProperty();
   const platform = Capacitor.getPlatform();
   if (!Capacitor.isNativePlatform()) {
     console.log('[Analytics] Web — Firebase unavailable; Supabase app_events still active');
@@ -218,12 +256,17 @@ class AnalyticsService {
   private isOnline: boolean = true;
   private flushInterval: ReturnType<typeof setInterval> | null = null;
   private utmParams: { source?: string; medium?: string; campaign?: string } = {};
+  private internal: boolean = false;
 
   constructor() {
     this.sessionId = this.getOrCreateSessionId();
     this.anonymousId = this.getOrCreateAnonymousId();
     this.platform = this.detectPlatform();
+    // NOTE: this is the CI run number (VITE_BUILD_NUMBER = github.run_number),
+    // not the marketing version — it only feeds the Supabase app_events column.
+    // GA4 cohort analysis uses Firebase's own built-in `appVersion` dimension.
     this.appVersion = import.meta.env.VITE_BUILD_NUMBER || 'dev';
+    this.internal = this.readInternalFlag();
     
     // Listen for online/offline
     if (typeof window !== 'undefined') {
@@ -242,6 +285,59 @@ class AnalyticsService {
     
     // Extract UTM params from URL on web
     this.extractUtmParams();
+  }
+
+  private readInternalFlag(): boolean {
+    try {
+      return localStorage.getItem(INTERNAL_KEY) === 'true';
+    } catch {
+      return false;
+    }
+  }
+
+  /**
+   * Push the internal-traffic marker into Firebase as a user property.
+   *
+   * Called on every launch (from initializeAnalytics) and again whenever the
+   * toggle flips. Always sends an explicit 'true'/'false' rather than only
+   * marking internal devices: an explicit value makes it visible in GA4
+   * DebugView that the wiring works at all, which is exactly what the
+   * `internal: only` mode in the MCP tool is meant to verify.
+   *
+   * MCP contract: a device counts as EXTERNAL when the property is 'false'
+   * OR absent — everything recorded before this shipped carries no property
+   * at all. Only an explicit 'true' means internal.
+   */
+  applyInternalTrafficProperty(): void {
+    _setUserProperty('internal', this.internal ? 'true' : 'false');
+  }
+
+  /** Is this device marked as internal (our own runs)? */
+  isInternalTraffic(): boolean {
+    return this.internal;
+  }
+
+  /**
+   * Flip the internal-traffic marker for this device (hidden toggle).
+   *
+   * Honest boundary: this marks events from here on. Anything already in GA4
+   * — including our own TestFlight runs recorded before this shipped — cannot
+   * be separated retroactively. Reinstalling also clears localStorage, so that
+   * install's `first_open` lands unmarked before the toggle can be flipped.
+   */
+  setInternalTraffic(on: boolean): boolean {
+    this.internal = on;
+    try {
+      // Always an explicit value — never remove the key. Clearing it would
+      // leave the Firebase property at 'true' until the next launch: a device
+      // silently excluded from the funnel it believes it has rejoined.
+      localStorage.setItem(INTERNAL_KEY, on ? 'true' : 'false');
+    } catch {
+      // storage unavailable — the property still applies for this session
+    }
+    this.applyInternalTrafficProperty();
+    console.log('[Analytics] Internal traffic:', on ? 'ON' : 'OFF');
+    return this.internal;
   }
 
   private detectPlatform(): 'ios' | 'android' | 'web' {
@@ -351,7 +447,9 @@ class AnalyticsService {
         event_name: event.event_name,
         platform: this.platform,
         app_version: this.appVersion,
-        metadata: event.metadata || {},
+        // Same internal marker as the Firebase user property, so the Supabase
+        // pipeline stays filterable too. Rides in metadata — no schema change.
+        metadata: { ...(event.metadata || {}), internal: this.internal },
         utm_source: this.utmParams.source,
         utm_medium: this.utmParams.medium,
         utm_campaign: this.utmParams.campaign,
@@ -468,7 +566,9 @@ class AnalyticsService {
         event_name: eventName,
         platform: this.platform,
         app_version: this.appVersion,
-        metadata: metadata || {},
+        // Marked after _mirrorToFirebase above, so GA4 event params stay clean
+        // (GA4 gets the marker as a user property instead).
+        metadata: { ...(metadata || {}), internal: this.internal },
         utm_source: this.utmParams.source,
         utm_medium: this.utmParams.medium,
         utm_campaign: this.utmParams.campaign,
