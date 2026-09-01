@@ -120,3 +120,42 @@ test('discovery events are never presented as comparable to install counts', asy
   assert.match(r.versus_derived_organic, /49 installs/);
   assert.match(r.measurement_note, /Measured by Apple/);
 });
+
+test('report requests are read through the app relationship, not the collection', async () => {
+  // GET /v1/analyticsReportRequests returns 403 FORBIDDEN_ERROR: that resource
+  // allows only CREATE, DELETE and GET_INSTANCE. The 403 is about the
+  // OPERATION, not about permissions — the key that hit it had Admin all along.
+  const fs = await import('node:fs');
+  const client = fs.readFileSync(new URL('../lib/sources/asc-analytics.js', import.meta.url), 'utf8');
+  assert.ok(
+    /\/apps\/\$\{ascAppId\(\)\}\/analyticsReportRequests/.test(client),
+    'must list via /v1/apps/{id}/analyticsReportRequests',
+  );
+  assert.ok(
+    !/API\}\/analyticsReportRequests\?/.test(client),
+    'must not list the top-level analyticsReportRequests collection',
+  );
+
+  const script = fs.readFileSync(new URL('../scripts/register-analytics-reports.mjs', import.meta.url), 'utf8');
+  assert.ok(/\/apps\/\$\{APP_ID\}\/analyticsReportRequests/.test(script), 'script lists via the app relationship');
+  // The script may still POST to the collection — CREATE is allowed there.
+  assert.ok(/method: 'POST'/.test(script), 'creation still posts to the collection, which allows CREATE');
+});
+
+test('a 403 naming an operation is not blamed on the Admin role', async () => {
+  const fs = await import('node:fs');
+  const script = fs.readFileSync(new URL('../scripts/register-analytics-reports.mjs', import.meta.url), 'utf8');
+  assert.ok(/UNSUPPORTED OPERATION/.test(script), 'operation errors are explained as such');
+  // The role hint must be CONDITIONAL. The original asserted a missing role on
+  // any 403 and sent the operator looking in the wrong place. Only live
+  // guidance is checked — the comment recording that mistake is deliberate.
+  const guidance = script
+    .split(/\r?\n/)
+    .filter((l) => /lines\.push/.test(l))
+    .join('\n');
+  assert.ok(/Admin role/.test(guidance), 'the role hint still exists for genuine permission failures');
+  assert.ok(
+    /If the body does not name an operation/.test(guidance),
+    'the role hint is conditioned on the body not naming an operation',
+  );
+});

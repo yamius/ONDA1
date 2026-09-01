@@ -5,7 +5,7 @@
  * rhythm: asynchronous, request-then-accumulate.
  *
  *   POST /v1/analyticsReportRequests            (a WRITE — see scripts/, not here)
- *   GET  /v1/analyticsReportRequests?filter[app]=
+ *   GET  /v1/apps/{id}/analyticsReportRequests  (the ONLY way to list them)
  *   GET  /v1/analyticsReportRequests/{id}/reports
  *   GET  /v1/analyticsReports/{id}/instances
  *   GET  /v1/analyticsReportInstances/{id}/segments   -> gzipped TSV at .url
@@ -59,9 +59,17 @@ function authHeaders() {
   return { Authorization: `Bearer ${token()}`, Accept: 'application/json' };
 }
 
-/** Report requests registered for this app (created by scripts/, never here). */
+/**
+ * Report requests registered for this app (created by scripts/, never here).
+ *
+ * Read through the APP RELATIONSHIP. The top-level collection
+ * `/v1/analyticsReportRequests` does not allow GET_COLLECTION at all — Apple
+ * permits only CREATE, DELETE and GET_INSTANCE there and answers a list with
+ * 403 FORBIDDEN_ERROR. That 403 is about the operation, not about permissions,
+ * and must not be read as a missing role.
+ */
 export async function listReportRequests() {
-  const res = await getJson(`${API}/analyticsReportRequests?filter[app]=${ascAppId()}&limit=200`, {
+  const res = await getJson(`${API}/apps/${ascAppId()}/analyticsReportRequests?limit=200`, {
     headers: authHeaders(),
     source: 'asc_analytics',
   });

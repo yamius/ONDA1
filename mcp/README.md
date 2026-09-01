@@ -188,7 +188,7 @@ endpoint refuses every request with 503** — an unset gate is an open gate.
 npm test
 ```
 
-38 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
+40 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
 surface, graceful `not_configured` degradation, and the funnel arithmetic
 against a mocked GA4 — including that `home_view{first_run}` is used rather
 than all `home_view`, and that `silent_exit` never goes negative. Plus the
