@@ -13,6 +13,7 @@
 import { funnelReview, funnelReviewSchema } from '../tools/funnel_review.js';
 import { installsReview, installsReviewSchema } from '../tools/installs_review.js';
 import { revenueReview, revenueReviewSchema } from '../tools/revenue_review.js';
+import { retentionReview, retentionReviewSchema } from '../tools/retention_review.js';
 import { checkStatus, checkStatusSchema } from '../tools/check_status.js';
 
 const SERVER_INFO = { name: 'onda-analytics', version: '0.1.0' };
@@ -22,6 +23,7 @@ const TOOLS = [
   { schema: funnelReviewSchema, run: funnelReview },
   { schema: installsReviewSchema, run: installsReview },
   { schema: revenueReviewSchema, run: revenueReview },
+  { schema: retentionReviewSchema, run: retentionReview },
   { schema: checkStatusSchema, run: checkStatus },
 ];
 

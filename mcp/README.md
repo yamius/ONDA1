@@ -29,9 +29,10 @@ people drop off**.
 | `funnel_review` | Where do people drop off? | GA4 Data API |
 | `installs_review` | Where did installs come from? | App Store Connect + Tenjin |
 | `revenue_review` | Are people paying? | RevenueCat v2 |
+| `retention_review` | Do they come back? | GA4 Data API (cohorts) |
 | `check_status` | Are the sources actually answering? | all of the above |
 
-`retention_review` and `ads_review` are **not** implemented yet; they are
+`ads_review` is **not** implemented yet; it is
 absent rather than returning empty results.
 
 ### `funnel_review`
@@ -90,6 +91,45 @@ percentage and no organic residual are produced. The tool returns
 causes (SKAN modelling, timezone drift, redownloads). Reporting 115.5% paid and
 0 organic was arithmetic performed on contradictory inputs and stated with a
 confidence it had not earned.
+
+### `retention_review`
+
+Cohort retention from the GA4 Data API (`cohortSpec` with `cohortActiveUsers`
+and `cohortTotalUsers`; the fraction is computed here so the denominator always
+travels with it).
+
+**Two definitions, reported side by side and never blended:**
+
+| | Counts a user as retained when they… |
+|---|---|
+| `by_open` | launched the app — GA4 active users, the benchmark-comparable number |
+| `by_practice` | actually started a practice (`practice_start`) |
+
+Opening an app is not retention. `by_practice` is the one to act on and is
+always the lower of the two; the gap between them is people who came back and
+did nothing.
+
+**Immature cohorts are excluded, not counted as zero.** A cohort that installed
+yesterday has a d7 of 0 by arithmetic, and averaging it in makes healthy
+retention look like a collapse. A cohort must be at least `milestone + 2` days
+old (the 2 days being GA4 processing lag) to enter a rate; younger ones are
+counted in `cohorts_too_young` and, per cohort, marked `incomplete: true` with
+no percentage at all. When no cohort in the window is old enough, the milestone
+says so explicitly rather than returning 0%.
+
+Headline rates pool every eligible cohort in the window rather than reporting a
+single day: at ~49 installs a month a per-day cohort is single digits, so daily
+figures would be permanently `low_data`. Pooling also makes them directly
+comparable to the pre-redesign baseline, which was itself a window figure.
+
+**The baseline travels with the number** — Tenjin, 2026-05-23 to 2026-06-22,
+145 installs, d1 3.42% and d7 0.68%, $1861 per d7-retained user. It is an
+app-open measurement, so it is compared against `by_open` only; `by_practice`
+has no baseline and is not given a fake one.
+
+`by_channel` is `available: false`: GA4 restricts which dimensions may
+accompany a `cohortSpec`, and Tenjin — the channel-capable cohort source — is
+not wired into this tool.
 
 ### `organic_sources` — how people find the app in the store
 
@@ -188,7 +228,7 @@ endpoint refuses every request with 503** — an unset gate is an open gate.
 npm test
 ```
 
-40 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
+48 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
 surface, graceful `not_configured` degradation, and the funnel arithmetic
 against a mocked GA4 — including that `home_view{first_run}` is used rather
 than all `home_view`, and that `silent_exit` never goes negative. Plus the

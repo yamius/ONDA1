@@ -53,8 +53,8 @@ export async function checkStatus() {
     summary: `${healthy}/${sources.length} sources answering`,
     sources,
     phase_note:
-      'funnel_review, installs_review, revenue_review and check_status are ' +
-      'wired. retention_review and ads_review are not, so they are absent ' +
-      'rather than returning empty results.',
+      'funnel_review, installs_review, revenue_review, retention_review and ' +
+      'check_status are wired. ads_review is not, so it is absent rather than ' +
+      'returning empty results.',
   });
 }

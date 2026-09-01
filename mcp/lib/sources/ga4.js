@@ -119,3 +119,62 @@ export async function ga4Probe() {
     return sourceError('ga4', err);
   }
 }
+
+/**
+ * Cohort retention through the GA4 Data API.
+ *
+ * Verified against the Data API v1beta cohort documentation on 2026-09-01:
+ *   cohortSpec = { cohorts[], cohortsRange, cohortReportSettings }
+ *   dimensions: cohort, cohortNthDay | cohortNthWeek | cohortNthMonth
+ *   metrics:    cohortActiveUsers, cohortTotalUsers
+ *
+ * The retention FRACTION is computed here from active/total rather than asked
+ * for as a metric: sources disagree on whether a fraction metric exists, and
+ * the denominator has to travel with every percentage anyway.
+ *
+ * `eventFilter` is what makes retention mean something other than "opened the
+ * app". Combining a dimensionFilter on eventName with a cohortSpec restricts
+ * which events count a user as active, so retention can be defined on a
+ * deliberate action instead of a launch.
+ */
+export async function cohortReport({ startDate, endDate, days = 30, eventName = null, baseFilter = null }) {
+  // One cohort per install day. Daily cohorts are individually tiny at this
+  // volume, but summing across them yields a window-level d1/d7 that IS
+  // comparable to the pre-redesign baseline, which was also a window figure.
+  const cohorts = [];
+  const start = new Date(`${startDate}T00:00:00Z`);
+  const end = new Date(`${endDate}T00:00:00Z`);
+  for (let d = new Date(start); d <= end; d = new Date(d.getTime() + 86400000)) {
+    const day = d.toISOString().slice(0, 10);
+    cohorts.push({ name: day, dimension: 'firstSessionDate', dateRange: { startDate: day, endDate: day } });
+    if (cohorts.length >= 60) break; // API caps cohort count; stay well inside it
+  }
+
+  const filters = [baseFilter];
+  if (eventName) filters.push(eventNameFilter([eventName]));
+
+  const body = {
+    dimensions: [{ name: 'cohort' }, { name: 'cohortNthDay' }],
+    metrics: [{ name: 'cohortActiveUsers' }, { name: 'cohortTotalUsers' }],
+    cohortSpec: {
+      cohorts,
+      cohortsRange: { granularity: 'DAILY', startOffset: 0, endOffset: days },
+    },
+    limit: 100000,
+  };
+  const df = andFilters(...filters);
+  if (df) body.dimensionFilter = df;
+
+  const data = await runReport(body);
+  const rows = [];
+  for (const row of data.rows ?? []) {
+    rows.push({
+      cohort: row.dimensionValues[0].value,
+      // GA4 returns the offset as "0000001"-style strings; keep it numeric.
+      nthDay: Number(String(row.dimensionValues[1].value).replace(/[^0-9-]/g, '')),
+      activeUsers: Number(row.metricValues[0].value || 0),
+      totalUsers: Number(row.metricValues[1].value || 0),
+    });
+  }
+  return rows;
+}
