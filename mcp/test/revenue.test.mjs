@@ -53,6 +53,8 @@ test('paid > total refuses to derive a percentage or an organic residual', async
 
 // ----------------------------------------------------------------- revenue --
 
+const REVENUE_TYPES_SENT = [];
+
 const OVERVIEW = {
   object: 'overview_metrics',
   currency: 'USD',
@@ -69,7 +71,8 @@ mock.module(rcUrl, {
     revenueCatMissing: () => [],
     revenueCatProbe: async () => ({ ok: true }),
     overviewMetrics: async () => OVERVIEW,
-    revenueMetric: async ({ revenueType }) => ({
+    REVENUE_TYPES: ['revenue', 'revenue_net_of_taxes', 'proceeds'],
+    revenueMetric: async ({ revenueType }) => (REVENUE_TYPES_SENT.push(revenueType), {
       object: 'revenue_metric',
       currency: 'USD',
       revenue_type: revenueType,
@@ -156,4 +159,19 @@ test('refund lag is stated, since it rewrites the window retroactively', async (
   const r = await revenueReview({ since: 28, view: 'top' });
   assert.match(r.data_lag_note, /REFUNDS/);
   assert.match(r.data_lag_note, /retroactively/);
+});
+
+test('only spec enum values are ever sent as revenue_type', async () => {
+  // The API rejects the literal word `gross` with a 400. It appears in the
+  // docs prose as a description of `revenue`, not as a value — reading the
+  // description as the value is exactly the bug this guards.
+  const ALLOWED = new Set(['revenue', 'revenue_net_of_taxes', 'proceeds']);
+  REVENUE_TYPES_SENT.length = 0;
+  await revenueReview({ since: 28, view: 'top' });
+  assert.ok(REVENUE_TYPES_SENT.length >= 2, 'both revenue figures requested');
+  for (const t of REVENUE_TYPES_SENT) {
+    assert.ok(ALLOWED.has(t), `revenue_type "${t}" is not in the spec enum`);
+  }
+  assert.ok(REVENUE_TYPES_SENT.includes('revenue'), 'gross is requested as `revenue`');
+  assert.ok(!REVENUE_TYPES_SENT.includes('gross'), '`gross` is not a valid value');
 });

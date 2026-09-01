@@ -48,15 +48,28 @@ export async function overviewMetrics() {
 }
 
 /**
+ * Allowed `revenue_type` values, verbatim from the spec enum.
+ *
+ * Note the trap: the prose describes the first one as "gross revenue", but the
+ * ENUM VALUE is `revenue`. Sending the literal word `gross` is a 400 — which is
+ * exactly what shipped, because the description was read as if it were the
+ * value. Hence the local guard below: an invalid type now fails here, with the
+ * valid set in the message, instead of as a remote 400.
+ */
+export const REVENUE_TYPES = ['revenue', 'revenue_net_of_taxes', 'proceeds'];
+
+/**
  * Windowed revenue.
  *
- * `revenue_type`: 'gross' | 'revenue_net_of_taxes' | 'proceeds'. `proceeds` is
- * net of taxes AND store commission — the amount actually kept. We ask
- * RevenueCat for it rather than applying a flat 30%: Apple's Small Business
- * Program is 15%, and subscriptions drop to 15% after year one, so a hardcoded
- * rate would silently misstate net.
+ * `revenue` = gross. `proceeds` = net of taxes AND store commission, the amount
+ * actually kept. We ask RevenueCat for proceeds rather than applying a flat
+ * 30%: Apple's Small Business Program is 15%, and subscriptions drop to 15%
+ * after year one, so a hardcoded rate would silently misstate net.
  */
-export async function revenueMetric({ startDate, endDate, revenueType = 'gross' }) {
+export async function revenueMetric({ startDate, endDate, revenueType = 'revenue' }) {
+  if (!REVENUE_TYPES.includes(revenueType)) {
+    throw new Error(`invalid revenue_type '${revenueType}'; allowed: ${REVENUE_TYPES.join(', ')}`);
+  }
   const qs = new URLSearchParams({
     start_date: startDate,
     end_date: endDate,

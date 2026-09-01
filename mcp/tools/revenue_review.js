@@ -108,7 +108,9 @@ export async function revenueReview(args = {}) {
     // Business Program and after year one of a subscription, so a flat rate
     // would misstate net - probably by about half, for this app.
     const [gross, proceeds] = await Promise.all([
-      revenueMetric({ startDate: win.start_date, endDate: win.end_date, revenueType: 'gross' })
+      // 'revenue' IS the gross figure — the spec's enum value for it. The word
+      // 'gross' is prose, not a valid value, and sending it returns 400.
+      revenueMetric({ startDate: win.start_date, endDate: win.end_date, revenueType: 'revenue' })
         .catch((e) => e),
       revenueMetric({ startDate: win.start_date, endDate: win.end_date, revenueType: 'proceeds' })
         .catch((e) => e),
@@ -116,7 +118,7 @@ export async function revenueReview(args = {}) {
     result.revenue = {
       gross: gross instanceof Error
         ? sourceError('revenuecat', gross)
-        : { value: gross?.value ?? null, currency: gross?.currency ?? 'USD' },
+        : { value: gross?.value ?? null, currency: gross?.currency ?? 'USD', revenue_type: 'revenue' },
       net_proceeds: proceeds instanceof Error
         ? sourceError('revenuecat', proceeds)
         : { value: proceeds?.value ?? null, currency: proceeds?.currency ?? 'USD' },
