@@ -84,6 +84,6 @@ test('check_status reports every source without throwing', async () => {
   process.env.MCP_AUTH_TOKEN = 'test-token';
   const r = await call({ jsonrpc: '2.0', id: 4, method: 'tools/call', params: { name: 'check_status' } });
   const payload = JSON.parse(r._json.result.content[0].text);
-  assert.equal(payload.sources.length, 4);
+  assert.equal(payload.sources.length, 5);
   assert.ok(payload.summary.includes('sources answering'));
 });

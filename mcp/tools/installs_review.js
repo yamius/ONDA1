@@ -11,6 +11,7 @@
 import { windowFor, rate, ok, notConfigured, sourceError, DATA_LAG } from '../lib/shared.js';
 import { ascInstalls, ascMissing } from '../lib/sources/asc.js';
 import { tenjinSpendReport, tenjinMissing, summariseByChannel } from '../lib/sources/tenjin.js';
+import { organicSourceBreakdown } from '../lib/organic-sources.js';
 
 export const installsReviewSchema = {
   name: 'installs_review',
@@ -132,13 +133,11 @@ export async function installsReview(args = {}) {
 
   // Stated rather than silently omitted — the brief asks for the store-side
   // organic breakdown, and it is not available from the report family used here.
-  result.organic_sources = {
-    available: false,
-    reason:
-      'The App Store Search / Browse / Referrer split comes from ASC ANALYTICS ' +
-      'reports (asynchronous analyticsReportRequests), not the sales reports ' +
-      'used here. Not implemented yet — no substitute is being guessed.',
-  };
+  // How people FIND the app in the store, measured by Apple rather than derived.
+  // Kept separate from split.organic on purpose: one is a subtraction residual
+  // (ASC total minus Tenjin paid), the other is a direct measurement, and they
+  // answer different questions. Where they disagree, both are shown.
+  result.organic_sources = await organicSourceBreakdown(win, total);
 
   result.modeled_note =
     'Ad-console install columns (Google/Apple SKAN) are MODELLED and routinely ' +

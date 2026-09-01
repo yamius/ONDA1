@@ -91,6 +91,48 @@ causes (SKAN modelling, timezone drift, redownloads). Reporting 115.5% paid and
 0 organic was arithmetic performed on contradictory inputs and stated with a
 confidence it had not earned.
 
+### `organic_sources` — how people find the app in the store
+
+From App Store Connect **Analytics** reports (the asynchronous
+`analyticsReportRequests` family), not the sales reports used for install
+counts. Broken down by source type: App Store Search, Browse, App Referrer,
+Web Referrer, Institutional Purchase, Unavailable.
+
+**Registration is a one-off WRITE and lives outside this server**, which is
+read-only by construction:
+
+```bash
+ASC_KEY_ID=... ASC_ISSUER_ID=... ASC_PRIVATE_KEY="$(cat AuthKey_XXX.p8)" \
+  node scripts/register-analytics-reports.mjs
+```
+
+It needs the **Admin** role the first time. It registers both an `ONGOING`
+request (accumulates forward, first report in ~24-48h) and a
+`ONE_TIME_SNAPSHOT` (returns the history already available).
+
+> An `ONGOING` report accumulates **only from the moment it is registered and
+> is never backfilled**. Days before registration are gone for good. Apple also
+> *stops* a request that goes unread (`stoppedDueToInactivity`) — the tool
+> reports that state distinctly, because it looks like "no data" while actually
+> meaning "collection has halted".
+
+**Apple's privacy thresholding changes how these numbers must be read.** Rows
+covering fewer than 5 users or devices are *omitted entirely*, and statistical
+noise is added to the rest. At ~42 organic installs a month across six source
+types, whole sources can be missing. So shares are computed against the
+**visible** sum and labelled `share_of_visible`; they are the shape of
+discovery, not exact proportions, and they are never rescaled to match the
+sales-report total — that would fabricate precision Apple deliberately removed.
+
+`organic_sources` is kept **separate from `split.organic`** on purpose. One is a
+subtraction residual (ASC total − Tenjin paid); the other is measured by Apple,
+and counts discovery *events*, not installs. They answer different questions and
+are not reconciled into one flattering number.
+
+Negative states are distinct and never an empty array: `not_registered`,
+`stopped_due_to_inactivity`, `report_pending`, `unrecognised_report_format`
+(which lists the columns that were actually present).
+
 ### The `internal` filter
 
 Our own runs are marked by a Firebase **user property** `internal`, set by the
@@ -146,7 +188,7 @@ endpoint refuses every request with 503** — an unset gate is an open gate.
 npm test
 ```
 
-29 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
+38 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
 surface, graceful `not_configured` degradation, and the funnel arithmetic
 against a mocked GA4 — including that `home_view{first_run}` is used rather
 than all `home_view`, and that `silent_exit` never goes negative. Plus the

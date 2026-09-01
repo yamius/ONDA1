@@ -12,6 +12,7 @@ import { ga4Missing, ga4Probe } from '../lib/sources/ga4.js';
 import { ascMissing, ascProbe } from '../lib/sources/asc.js';
 import { tenjinMissing, tenjinProbe } from '../lib/sources/tenjin.js';
 import { revenueCatMissing, revenueCatProbe } from '../lib/sources/revenuecat.js';
+import { ascAnalyticsMissing, ascAnalyticsProbe } from '../lib/sources/asc-analytics.js';
 
 export const checkStatusSchema = {
   name: 'check_status',
@@ -44,6 +45,7 @@ export async function checkStatus() {
     probe('app_store_connect', ascMissing(), ascProbe, DATA_LAG.asc),
     probe('tenjin', tenjinMissing(), tenjinProbe, DATA_LAG.tenjin),
     probe('revenuecat', revenueCatMissing(), revenueCatProbe, DATA_LAG.revenuecat),
+    probe('asc_analytics', ascAnalyticsMissing(), ascAnalyticsProbe, DATA_LAG.asc_analytics),
   ]);
 
   const healthy = sources.filter((s) => s.status === 'ok').length;

@@ -55,6 +55,7 @@ export const DATA_LAG = {
   asc: 'App Store Connect sales reports land ~1-2 days behind; the newest day may be missing entirely.',
   tenjin: 'Tenjin is near-real-time but paid-network attribution can still be revised for ~48h.',
   revenuecat: 'RevenueCat is near real-time, but refunds arrive days later and rewrite past windows retroactively.',
+  asc_analytics: 'App Store analytics are complete two days after the reporting date; ONGOING reports only accumulate from registration and are never backfilled.',
 };
 
 export function ok(data, extra = {}) {
