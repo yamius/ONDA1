@@ -38,7 +38,7 @@ test('accepts the token via ?key= as well as Bearer', async () => {
   process.env.MCP_AUTH_TOKEN = 'test-token';
   const r = await call({ jsonrpc: '2.0', id: 1, method: 'tools/list' }, { token: '', url: '/api/mcp?key=test-token' });
   assert.equal(r._status, 200);
-  assert.equal(r._json.result.tools.length, 5);
+  assert.equal(r._json.result.tools.length, 9);
 });
 
 test('initialize announces the tools capability', async () => {
@@ -59,7 +59,7 @@ test('exposes exactly the wired tools, and no write tool', async () => {
   process.env.MCP_AUTH_TOKEN = 'test-token';
   const r = await call({ jsonrpc: '2.0', id: 3, method: 'tools/list' });
   const names = r._json.result.tools.map((t) => t.name).sort();
-  assert.deepEqual(names, ['check_status', 'funnel_review', 'installs_review', 'retention_review', 'revenue_review']);
+  assert.deepEqual(names, ['check_status', 'funnel_review', 'installs_review', 'retention_review', 'revenue_review', 'site_fetch', 'site_health', 'site_map', 'site_style']);
   assert.ok(!names.some((n) => /write|update|create|delete/.test(n)), 'read-only server');
 });
 

@@ -30,6 +30,10 @@ people drop off**.
 | `installs_review` | Where did installs come from? | App Store Connect + Tenjin |
 | `revenue_review` | Are people paying? | RevenueCat v2 |
 | `retention_review` | Do they come back? | GA4 Data API (cohorts) |
+| `site_fetch` | What is on a page? | the ONDA site |
+| `site_style` | What are the brand colours and fonts? | the ONDA site |
+| `site_health` | Does the live domain match the preview? | the ONDA site |
+| `site_map` | What pages exist? | sitemap.xml |
 | `check_status` | Are the sources actually answering? | all of the above |
 
 `ads_review` is **not** implemented yet; it is
@@ -91,6 +95,53 @@ percentage and no organic residual are produced. The tool returns
 causes (SKAN modelling, timezone drift, redownloads). Reporting 115.5% paid and
 0 organic was arithmetic performed on contradictory inputs and stated with a
 confidence it had not earned.
+
+## Site tools
+
+`site_fetch`, `site_style`, `site_health` and `site_map` read the ONDA site.
+They are read-only like everything else, and they are the part of this server
+with a real attack surface, so the constraints are worth stating plainly.
+
+**The caller never supplies a host.** It picks `target` from a two-value enum
+(`production` | `preview`) and passes a *path*. There is no `url` or `host`
+parameter to abuse. This matters because the server holds App Store Connect,
+GA4, Tenjin and RevenueCat credentials: a free-form URL parameter here would be
+an SSRF primitive pointed at cloud metadata endpoints.
+
+The remaining defences:
+
+- A three-host allowlist — `onda-life.com`, `www.onda-life.com`,
+  `ondalife.vercel.app`. No wildcards, no subdomain exceptions.
+- Path validation rejects anything that could carry a host: absolute URLs,
+  protocol-relative `//host`, backslashes, embedded credentials. The built URL
+  is then re-checked against the allowlist as defence in depth.
+- Redirects are **not** followed. One leaving the allowlist is reported as a
+  fact, never chased.
+- No `Authorization` header ever leaves the module — the analytics credentials
+  have nothing to do with reading a public page.
+- A 15s timeout and a 3 MB cap; scripts and styles are stripped from the text,
+  with `ld+json` parsed out separately.
+
+### `site_style`
+
+Built for one job: reproducing the brand in a graphic. The raw stylesheet is
+useless for that — Tailwind emits ~70 internal `--tw-*` variables and its whole
+default colour scale, which bury the handful of tokens that actually are the
+brand. Those are counted and set aside, leaving the real palette
+(`--color-terminal-green`, `--color-terminal-cyan`, `--color-surface`…), the
+font variables and `@font-face` declarations, the type scale, and a hex
+frequency list with fully transparent values dropped.
+
+### `site_health`
+
+Compares production against the preview path by path — status, title, canonical
+— and flags mismatches. It exists because a 404 on the live domain while the
+preview served fine was found by accident. Canonicals are compared by *path*,
+since the preview canonicalises to the production domain on purpose.
+
+> While DNS still points away from Vercel the two are **expected** to differ:
+> that is the migration in progress, not a regression. After the cutover any
+> mismatch here is a real problem.
 
 ### `retention_review`
 
@@ -228,7 +279,7 @@ endpoint refuses every request with 503** — an unset gate is an open gate.
 npm test
 ```
 
-48 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
+59 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
 surface, graceful `not_configured` degradation, and the funnel arithmetic
 against a mocked GA4 — including that `home_view{first_run}` is used rather
 than all `home_view`, and that `silent_exit` never goes negative. Plus the
