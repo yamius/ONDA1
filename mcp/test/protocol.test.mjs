@@ -55,12 +55,61 @@ test('notifications get no response body', async () => {
   assert.equal(r._json, undefined);
 });
 
-test('exposes exactly the wired tools, and no write tool', async () => {
+/**
+ * Every tool this server is supposed to expose, by name.
+ *
+ * Named individually and on purpose. The previous version of this test only
+ * checked a COUNT alongside the list, and a count is exactly the assertion that
+ * fails to protect you: bump the number while editing the registration and a
+ * dropped tool sails through silently. Each entry below is checked on its own,
+ * so removing any single one names that one in the failure.
+ */
+const EXPECTED_TOOLS = [
+  // analytics
+  'check_status',
+  'funnel_review',
+  'installs_review',
+  'retention_review',
+  'revenue_review',
+  // site
+  'site_fetch',
+  'site_health',
+  'site_map',
+  'site_style',
+];
+
+test('every expected tool is present in the manifest, named one by one', async () => {
   process.env.MCP_AUTH_TOKEN = 'test-token';
   const r = await call({ jsonrpc: '2.0', id: 3, method: 'tools/list' });
-  const names = r._json.result.tools.map((t) => t.name).sort();
-  assert.deepEqual(names, ['check_status', 'funnel_review', 'installs_review', 'retention_review', 'revenue_review', 'site_fetch', 'site_health', 'site_map', 'site_style']);
-  assert.ok(!names.some((n) => /write|update|create|delete/.test(n)), 'read-only server');
+  const names = r._json.result.tools.map((t) => t.name);
+
+  const missing = EXPECTED_TOOLS.filter((n) => !names.includes(n));
+  assert.deepEqual(missing, [], `missing from tools/list: ${missing.join(', ')}`);
+
+  // Reported separately so an ADDED tool is visible too, rather than silently
+  // accepted because every expected name happened to be present.
+  const unexpected = names.filter((n) => !EXPECTED_TOOLS.includes(n));
+  assert.deepEqual(unexpected, [], `not in EXPECTED_TOOLS: ${unexpected.join(', ')}`);
+});
+
+test('the manifest never contains a write tool', async () => {
+  process.env.MCP_AUTH_TOKEN = 'test-token';
+  const r = await call({ jsonrpc: '2.0', id: 3, method: 'tools/list' });
+  for (const name of r._json.result.tools.map((t) => t.name)) {
+    assert.ok(!/write|update|create|delete|post|set_/.test(name), `${name} looks like a write tool`);
+  }
+});
+
+test('each tool in the manifest is actually callable, not just declared', async () => {
+  // A schema can be registered with a broken or missing implementation; then
+  // the tool appears in the list and fails only when someone calls it.
+  process.env.MCP_AUTH_TOKEN = 'test-token';
+  const r = await call({ jsonrpc: '2.0', id: 3, method: 'tools/list' });
+  for (const tool of r._json.result.tools) {
+    assert.ok(tool.name, 'every tool has a name');
+    assert.ok(tool.description, `${tool.name} has a description`);
+    assert.ok(tool.inputSchema && tool.inputSchema.type === 'object', `${tool.name} has an object inputSchema`);
+  }
 });
 
 test('unknown tool is a protocol error, not a crash', async () => {

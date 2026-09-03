@@ -261,14 +261,21 @@ production analytics credentials.
 | Build Command | *(none)* |
 | Output Directory | *(none)* |
 | Node.js Version | 22.x |
-| Domain | `mcp.onda-life.com` |
+| Domain | `onda-mcp.vercel.app` (see the note below about `mcp.onda-life.com`) |
 
 Set every variable from [`.env.example`](.env.example) in the project env, then
 add the connector in Claude's settings:
 
 ```
-https://mcp.onda-life.com/api/mcp?key=<MCP_AUTH_TOKEN>
+https://onda-mcp.vercel.app/api/mcp?key=<MCP_AUTH_TOKEN>
 ```
+
+> ⚠️ **`mcp.onda-life.com` does not resolve.** It was written here as the
+> intended endpoint, but no DNS record was ever created for it — `onda-life.com`
+> is still at GoDaddy awaiting the migration, so the subdomain does not exist.
+> `curl https://mcp.onda-life.com/api/mcp` fails with "Could not resolve host",
+> while `onda-mcp.vercel.app` answers. Use the Vercel host until the DNS cutover
+> adds the subdomain, then update this line rather than leaving both plausible.
 
 `Authorization: Bearer <token>` works too. **With `MCP_AUTH_TOKEN` unset the
 endpoint refuses every request with 503** — an unset gate is an open gate.
@@ -279,7 +286,7 @@ endpoint refuses every request with 503** — an unset gate is an open gate.
 npm test
 ```
 
-59 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
+61 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
 surface, graceful `not_configured` degradation, and the funnel arithmetic
 against a mocked GA4 — including that `home_view{first_run}` is used rather
 than all `home_view`, and that `silent_exit` never goes negative. Plus the
