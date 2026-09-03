@@ -95,7 +95,7 @@ test('the two paywalls are reported separately, never as one conversion', async 
   const r = await fr({ since: 28 });
 
   assert.equal(r.paywall_by_type.soft_onboarding.source_value, 'post_first_experience');
-  assert.equal(r.paywall_by_type.hard_practice_gate.source_value_on_view, 'practice_intro');
+  assert.equal(r.paywall_by_type.hard_practice_gate.source_value, 'practice_gate_basic');
   // The combined figure must warn about itself rather than look authoritative.
   assert.match(r.paywall.combined_warning, /SUM of both paywalls/);
 });
@@ -111,10 +111,15 @@ test('per-paywall conversion is declared impossible rather than guessed', async 
   assert.equal(typeof attr.total_purchases_in_window, 'number');
 });
 
-test('the source-label mismatch on the hard paywall is surfaced, not silently handled', async () => {
+test('hard-paywall views sum BOTH source values across the rename seam', async () => {
+  // The app used to label the view 'practice_intro' and the dismiss
+  // 'practice_gate_basic' for the SAME paywall. Unifying it would have broken
+  // the view series unless the tool counts both, which is the whole point.
   const { funnelReview: fr } = await import('../tools/funnel_review.js');
   const r = await fr({ since: 28 });
   const hard = r.paywall_by_type.hard_practice_gate;
-  assert.notEqual(hard.source_value_on_view, hard.source_value_on_dismiss);
-  assert.match(hard.label_mismatch_warning, /app-side defect/);
+  assert.equal(hard.source_value, 'practice_gate_basic');
+  assert.ok(hard.views_by_source_value !== undefined, 'the split across the seam is visible');
+  assert.match(hard.seam_note, /SUM of/);
+  assert.match(hard.seam_note, /practice_intro/);
 });

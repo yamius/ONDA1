@@ -148,6 +148,13 @@ export function SubscriptionModal({ isOpen, onClose, activeCircuit = 1, onSubscr
     subscribeFiredRef.current = false;
     dismissActionRef.current = 'close'; // reset each open; the secondary button flips it
     trackTenjinPaywallView(source);
+    // Stash the paywall that is open so the eventual purchase can say which
+    // one produced it. purchase fires from useSubscription on the entitlement
+    // change and has no other way to know. Same stash-and-read idiom already
+    // used for onda_first_practice_quality.
+    try {
+      if (source) localStorage.setItem('onda_last_paywall_source', source);
+    } catch { /* best-effort */ }
     return () => {
       // Effect cleanup runs when isOpen flips to false or isPremium becomes
       // true. Treat "became premium during this session" as Subscribe (already

@@ -142,10 +142,19 @@ export async function funnelReview(args = {}) {
       // conversion". That number was two different things added together.
       const viewBySource = await eventBreakdown(win, baseFilter, 'paywall_view', 'customEvent:source');
       const dismissBySource = await eventBreakdown(win, baseFilter, 'paywall_dismiss', 'customEvent:source');
+      // The hard paywall's source value CHANGED: builds before the unification
+      // sent 'practice_intro' on view, later ones send 'practice_gate_basic' to
+      // match the dismiss side. Both are summed, or fixing the app would break
+      // the very series the fix exists to protect. Any window spanning the
+      // release legitimately contains both.
+      const HARD_VIEW_SOURCES = ['practice_gate_basic', 'practice_intro'];
       const softView = viewBySource.post_first_experience ?? 0;
-      const hardView = viewBySource.practice_intro ?? 0;
+      const hardBySourceValue = Object.fromEntries(
+        HARD_VIEW_SOURCES.map((k) => [k, viewBySource[k] ?? 0]).filter(([, v]) => v > 0),
+      );
+      const hardView = HARD_VIEW_SOURCES.reduce((sum, k) => sum + (viewBySource[k] ?? 0), 0);
       const otherViews = Object.entries(viewBySource)
-        .filter(([k]) => k !== 'post_first_experience' && k !== 'practice_intro')
+        .filter(([k]) => k !== 'post_first_experience' && !HARD_VIEW_SOURCES.includes(k))
         .reduce((sum, [, v]) => sum + v, 0);
 
       result.paywall_by_type = {
@@ -156,16 +165,17 @@ export async function funnelReview(args = {}) {
           role: 'Shown after the first practice. Informational — nearly everyone passes it.',
         },
         hard_practice_gate: {
-          source_value_on_view: 'practice_intro',
-          source_value_on_dismiss: 'practice_gate_basic',
+          source_value: 'practice_gate_basic',
           views: hardView,
+          views_by_source_value: hardBySourceValue,
           dismisses: dismissBySource.practice_gate_basic ?? 0,
           role: 'Shown on the fourth practice, once the three free ones are used. This is the decision point.',
-          label_mismatch_warning:
-            'The same paywall reports a DIFFERENT source on view and on dismiss ' +
-            "('practice_intro' vs 'practice_gate_basic'), so the two cannot be " +
-            'joined on one value and a filter on either alone finds only half. ' +
-            'This is an app-side defect, not a reporting choice.',
+          seam_note:
+            "Views are the SUM of 'practice_gate_basic' and the older " +
+            "'practice_intro'. Earlier builds labelled the view differently from " +
+            'the dismiss of the same paywall, so the two could not be joined; the ' +
+            'app now sends one value. views_by_source_value shows how the window ' +
+            'splits across that seam.',
         },
         other_sources: otherViews ? { views: otherViews, values: Object.keys(viewBySource) } : undefined,
         purchase_attribution: {

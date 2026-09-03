@@ -529,6 +529,15 @@ class AnalyticsService {
     // WebView OOM-kill) before it completes/abandons, the next app_open detects
     // the stale marker and emits app_crash_suspected.
     if (eventName === 'practice_start') {
+      // Lifetime attempts, used by the hard paywall to report WHICH practice a
+      // user is blocked on. Kept here because every practice start funnels
+      // through track(), so no call site can forget it.
+      try {
+        const { recordPracticeStart } = await import('../lib/lifecycleMarkers');
+        recordPracticeStart();
+      } catch (e) {
+        /* marker is best-effort */
+      }
       try {
         const sessionCountStr = localStorage.getItem('onda_session_practice_count') || '0';
         const newCount = parseInt(sessionCountStr, 10) + 1;

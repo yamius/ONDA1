@@ -67,6 +67,13 @@ runWhenIdle(() => {
     .catch((e) => console.warn('[ONDA] crash recovery check failed:', e));
 
   // Reset per-session practice counter on fresh cold start.
+  // Stamp the first time we ever saw this device, once, before any paywall can
+  // appear. It also records whether that stamp is honestly an install date —
+  // for an upgrade it is the update date, and days_since_first_seen says so.
+  import('./lib/lifecycleMarkers')
+    .then(({ ensureFirstSeen }) => ensureFirstSeen())
+    .catch(() => { /* marker is best-effort */ });
+
   try {
     if (!sessionStorage.getItem('onda_session_started')) {
       sessionStorage.setItem('onda_session_started', String(Date.now()));

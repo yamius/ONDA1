@@ -66,6 +66,7 @@ import { useAnalytics } from './hooks/useAnalytics';
 // Singleton, not the hook: the hidden internal-traffic toggle is the only
 // consumer, so it isn't worth widening the useAnalytics() surface for it.
 import { analytics } from './services/AnalyticsService';
+import { practiceAttemptsSoFar, daysSinceFirstSeen } from './lib/lifecycleMarkers';
 import {
   trackTenjinPractice,
   trackTenjinAttResult,
@@ -4650,10 +4651,28 @@ const OndaLevel1 = () => {
                     beginPractice();
                     return;
                   }
+                  // HARD paywall — the practice gate, where the money decision
+                  // is actually made. Distinct from the soft onboarding paywall
+                  // (source 'post_first_experience'), which only shows what
+                  // exists and lets everyone past.
+                  //
+                  // source was 'practice_intro' in earlier builds while the dismiss
+                  // side of the SAME paywall reported 'practice_gate_basic'
+                  // (it reads paywallSource). The two could not be joined, and
+                  // a filter on either found half the story. Unified on
+                  // 'practice_gate_basic': it matches the documented source
+                  // vocabulary (practice_gate_*, cta_button), the state, and
+                  // what Tenjin already receives. funnel_review sums both
+                  // values so the series stays continuous across the seam.
                   track('paywall_view', {
-                    source: 'practice_intro',
+                    source: 'practice_gate_basic',
                     practice_id: activePractice?.id,
                     practice_type: 'basic',
+                    // Which attempt they are blocked on: the counter holds
+                    // practices already started, so +1 is the one refused.
+                    practice_index: practiceAttemptsSoFar() + 1,
+                    free_used: tappedFreePractices.size,
+                    ...daysSinceFirstSeen(),
                   });
                   setPendingStartPracticeAfterSubscribe(true);
                   setPaywallSource('practice_gate_basic');

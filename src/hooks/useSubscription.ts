@@ -206,6 +206,11 @@ export function useSubscription(): UseSubscriptionReturn {
       // in finishPractice when the paywall was armed). Lets us later plot
       // "at what first-practice quality do people buy". undefined if not set.
       first_practice_quality: Number(localStorage.getItem('onda_first_practice_quality')) || undefined,
+      // Which paywall produced this purchase — stashed by SubscriptionModal
+      // when it opened. Without it, conversion cannot be split between the
+      // soft onboarding paywall and the hard practice gate, and the
+      // per-paywall silent-exit residual cannot be computed at all.
+      paywall_source: localStorage.getItem('onda_last_paywall_source') || undefined,
     });
     trackTenjinSubscriptionPaid({
       value,
