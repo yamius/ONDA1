@@ -85,3 +85,36 @@ test('silent_exit не уходит в минус при потере событ
   const r = await fr({ since: 28 });
   assert.ok(r.paywall.silent_exit.users >= 0);
 });
+
+test('the two paywalls are reported separately, never as one conversion', async () => {
+  // The app has always fired paywall_view for BOTH paywalls, separated only by
+  // `source`. Summing them produced "55 views, 1 purchase" and the false
+  // conclusion that the paywall converts terribly — that number was a shop
+  // window and a decision point added together.
+  const { funnelReview: fr } = await import('../tools/funnel_review.js');
+  const r = await fr({ since: 28 });
+
+  assert.equal(r.paywall_by_type.soft_onboarding.source_value, 'post_first_experience');
+  assert.equal(r.paywall_by_type.hard_practice_gate.source_value_on_view, 'practice_intro');
+  // The combined figure must warn about itself rather than look authoritative.
+  assert.match(r.paywall.combined_warning, /SUM of both paywalls/);
+});
+
+test('per-paywall conversion is declared impossible rather than guessed', async () => {
+  const { funnelReview: fr } = await import('../tools/funnel_review.js');
+  const r = await fr({ since: 28 });
+  const attr = r.paywall_by_type.purchase_attribution;
+  assert.equal(attr.available, false);
+  // purchase fires from the entitlement change and carries no paywall source,
+  // so splitting it per paywall would be invention.
+  assert.match(attr.reason, /carries no paywall source/);
+  assert.equal(typeof attr.total_purchases_in_window, 'number');
+});
+
+test('the source-label mismatch on the hard paywall is surfaced, not silently handled', async () => {
+  const { funnelReview: fr } = await import('../tools/funnel_review.js');
+  const r = await fr({ since: 28 });
+  const hard = r.paywall_by_type.hard_practice_gate;
+  assert.notEqual(hard.source_value_on_view, hard.source_value_on_dismiss);
+  assert.match(hard.label_mismatch_warning, /app-side defect/);
+});

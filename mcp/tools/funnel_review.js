@@ -129,8 +129,67 @@ export async function funnelReview(args = {}) {
       const homeFirstRun = homeBySource.first_run ?? 0;
       const dismissByAction = await eventBreakdown(win, baseFilter, 'paywall_dismiss', 'customEvent:action');
 
+      // THE TWO PAYWALLS ARE DIFFERENT PRODUCTS AND MUST NOT BE ONE NUMBER.
+      //
+      // The app shows a paywall twice, and both have always fired paywall_view,
+      // separated only by `source`:
+      //   soft — source 'post_first_experience', after the first practice in
+      //          onboarding. It is a shop window: it shows what exists and lets
+      //          everyone past.
+      //   hard — source 'practice_intro', on the fourth practice once the three
+      //          free ones are used. This is where the money decision happens.
+      // Summing them produced the reading "55 views, 1 purchase, terrible
+      // conversion". That number was two different things added together.
+      const viewBySource = await eventBreakdown(win, baseFilter, 'paywall_view', 'customEvent:source');
+      const dismissBySource = await eventBreakdown(win, baseFilter, 'paywall_dismiss', 'customEvent:source');
+      const softView = viewBySource.post_first_experience ?? 0;
+      const hardView = viewBySource.practice_intro ?? 0;
+      const otherViews = Object.entries(viewBySource)
+        .filter(([k]) => k !== 'post_first_experience' && k !== 'practice_intro')
+        .reduce((sum, [, v]) => sum + v, 0);
+
+      result.paywall_by_type = {
+        soft_onboarding: {
+          source_value: 'post_first_experience',
+          views: softView,
+          dismisses: dismissBySource.post_first_experience ?? 0,
+          role: 'Shown after the first practice. Informational — nearly everyone passes it.',
+        },
+        hard_practice_gate: {
+          source_value_on_view: 'practice_intro',
+          source_value_on_dismiss: 'practice_gate_basic',
+          views: hardView,
+          dismisses: dismissBySource.practice_gate_basic ?? 0,
+          role: 'Shown on the fourth practice, once the three free ones are used. This is the decision point.',
+          label_mismatch_warning:
+            'The same paywall reports a DIFFERENT source on view and on dismiss ' +
+            "('practice_intro' vs 'practice_gate_basic'), so the two cannot be " +
+            'joined on one value and a filter on either alone finds only half. ' +
+            'This is an app-side defect, not a reporting choice.',
+        },
+        other_sources: otherViews ? { views: otherViews, values: Object.keys(viewBySource) } : undefined,
+        purchase_attribution: {
+          available: false,
+          reason:
+            'purchase carries no paywall source — it fires from useSubscription on ' +
+            'the entitlement change and does not know which paywall preceded it. ' +
+            'So conversion CANNOT be split per paywall, and a per-paywall silent-exit ' +
+            'residual cannot be computed either. Both would need the source added to ' +
+            'the purchase event.',
+          total_purchases_in_window: purchase,
+        },
+        note:
+          'Both paywalls have been instrumented all along; only this breakdown was ' +
+          'missing. These counts therefore cover the full history, not just events ' +
+          'recorded after this change.',
+      };
+
       result.paywall = {
         paywall_view_users: paywallView,
+        combined_warning:
+          'paywall_view here is the SUM of both paywalls. For anything about ' +
+          'conversion read paywall_by_type instead — the soft and hard paywalls ' +
+          'answer different questions and their rates are not comparable.',
         // Disjoint branches — reported side by side, never summed.
         branches: {
           purchase: { users: purchase, of_paywall_view: rate(purchase, paywallView) },
