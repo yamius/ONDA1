@@ -1,6 +1,6 @@
-import { StrictMode, lazy, Suspense, type ComponentType } from 'react'
+import { StrictMode, type ComponentType, type ReactElement } from 'react'
 import { createRoot, hydrateRoot } from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, matchRoutes, createRoutesFromElements } from 'react-router-dom'
 import './index.css'
 import { Layout } from './components/Layout'
 import i18n, { langFromPath, SUPPORTED_LANGS, ensureNamespace } from './i18n'
@@ -8,17 +8,49 @@ import i18n, { langFromPath, SUPPORTED_LANGS, ensureNamespace } from './i18n'
 // Sync language with URL before hydration so first paint matches the prerendered HTML
 void i18n.changeLanguage(langFromPath(window.location.pathname))
 
-// Lazy route whose factory also loads its i18n namespace for the active
-// language before the component mounts. Only the 'home' namespace ships in
-// the eager bundle; every other namespace is fetched on demand here. React
-// keeps the prerendered HTML behind <Suspense> until both the page chunk and
-// the namespace resolve, so the page never renders before its translations
-// are present — no hydration mismatch, no flash of translation keys.
-function lazyNs(ns: string | string[], load: () => Promise<{ default: ComponentType }>) {
+// Preloadable lazy route. Unlike React.lazy — which ALWAYS throws a promise on
+// its first synchronous render, even when the chunk is already cached — this
+// renders the module SYNCHRONOUSLY once `preload()` has resolved. That is the
+// whole point: before hydrateRoot we preload + await the route matched by the
+// URL, so its component mounts on the first hydration pass without suspending.
+// A suspending boundary at hydration would mismatch the prerendered HTML (React
+// error #418): the SSR path (entry-server + renderToString) emits no Suspense
+// boundary markers, so React cannot reconcile a client Suspense with server
+// content and regenerates the whole tree. For client-side navigation the route
+// still suspends the first time; react-router v7 wraps navigations in
+// startTransition, so React keeps the current page on screen until it resolves.
+type Preloadable = ComponentType & { preload: () => Promise<ComponentType> }
+
+function makeLazy(load: () => Promise<ComponentType>): Preloadable {
+  let mod: ComponentType | null = null
+  let promise: Promise<ComponentType> | null = null
+  const preload = () => {
+    if (mod) return Promise.resolve(mod)
+    if (!promise) promise = load().then((c) => { mod = c; return c })
+    return promise
+  }
+  const LazyPage = ((props: Record<string, unknown>) => {
+    if (!mod) throw preload()
+    const Comp = mod
+    return <Comp {...props} />
+  }) as Preloadable
+  LazyPage.preload = preload
+  return LazyPage
+}
+
+// Plain lazy route (namespace already in the eager bundle, e.g. 'home').
+function lazy(load: () => Promise<{ default: ComponentType }>): Preloadable {
+  return makeLazy(() => load().then((m) => m.default))
+}
+
+// Lazy route whose loader also fetches its i18n namespace(s) for the active
+// language. Only the 'home' namespace ships eagerly; every other namespace is
+// fetched on demand here, so the page never renders before its translations.
+function lazyNs(ns: string | string[], load: () => Promise<{ default: ComponentType }>): Preloadable {
   const list = Array.isArray(ns) ? ns : [ns]
-  return lazy(() => {
+  return makeLazy(() => {
     const lang = langFromPath(window.location.pathname)
-    return Promise.all([load(), ...list.map((n) => ensureNamespace(lang, n))]).then(([m]) => m)
+    return Promise.all([load(), ...list.map((n) => ensureNamespace(lang, n))]).then(([m]) => m.default)
   })
 }
 
@@ -81,11 +113,11 @@ const ReviewsSlugRouter     = lazyNs('reviews', () => import('./components/Revie
 const ComparisonPage        = lazyNs('reviews', () => import('./pages/ComparisonPage').then(m => ({ default: m.ComparisonPage })))
 const HeadToHeadPage        = lazyNs('reviews', () => import('./pages/HeadToHeadPage').then(m => ({ default: m.HeadToHeadPage })))
 
-const app = (
-  <StrictMode>
-    <BrowserRouter>
-      <Suspense fallback={<div className="min-h-screen bg-[#050a0f]" />}>
-        <Routes>
+// Single source of truth for the route tree — rendered by <Routes> AND fed to
+// matchRoutes() below to discover which route(s) the URL resolves to, so the
+// preload list can never drift from what actually renders.
+const routeElements = (
+  <>
           {/* Bare embeddable widgets — no Layout chrome (iframe-friendly). */}
           <Route path="/embed/hrv" element={<HrvEmbedPage />} />
           <Route element={<Layout />}>
@@ -210,18 +242,42 @@ const app = (
             ))}
             <Route path="*"               element={<NotFoundPage />} />
           </Route>
-        </Routes>
-      </Suspense>
+  </>
+)
+
+// NOTE: no top-level <Suspense> boundary here — deliberately. The prerender
+// (entry-server + renderToString) emits NO Suspense boundary markers, so React
+// 19 cannot hydrate a client <Suspense> against that HTML: it discards the
+// prerendered tree and regenerates it on the client (React #418 — the "loads
+// on retry" flash). Instead we preload the URL's matched route below so nothing
+// suspends on the first paint, and rely on react-router v7's built-in
+// startTransition for later navigations: a route chunk that suspends mid-nav
+// keeps the current page on screen until it resolves (verified — no fallback
+// flash, no warning), which is better UX than the old blank dark fallback.
+const app = (
+  <StrictMode>
+    <BrowserRouter>
+      <Routes>{routeElements}</Routes>
     </BrowserRouter>
   </StrictMode>
 )
 
+// Preload the chunk(s) + i18n namespace(s) for the route the URL resolves to,
+// so its component renders synchronously on the first paint (hydrate OR fresh
+// render). matchRoutes reads the SAME element tree <Routes> renders, so the
+// preload target can never drift from what actually mounts.
 const container = document.getElementById('root')!
-if (container.hasChildNodes()) {
-  hydrateRoot(container, app)
-} else {
-  createRoot(container).render(app)
-}
+const matched = matchRoutes(createRoutesFromElements(routeElements), window.location.pathname) ?? []
+const preloads = matched
+  .map((m) => (m.route.element as ReactElement | undefined)?.type)
+  .filter((t): t is Preloadable => typeof t === 'function' && 'preload' in (t as object))
+  .map((t) => t.preload())
+void Promise.all(preloads)
+  .catch(() => { /* a chunk/namespace that fails to preload still renders below (it just suspends once) */ })
+  .then(() => {
+    if (container.hasChildNodes()) hydrateRoot(container, app)
+    else createRoot(container).render(app)
+  })
 
 if ('serviceWorker' in navigator && import.meta.env.PROD) {
   window.addEventListener('load', () => {
