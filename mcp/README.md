@@ -34,6 +34,12 @@ people drop off**.
 | `site_style` | What are the brand colours and fonts? | the ONDA site |
 | `site_health` | Does the live domain match the preview? | the ONDA site |
 | `site_map` | What pages exist? | sitemap.xml |
+| `list_files` | What files exist in the repo? | GitHub (main, live) |
+| `read_file` | Read one source file | GitHub (main, live) |
+| `grep_content` | Where does this happen in the code? | GitHub (main, live) |
+| `copy_lookup` | What is this string in every locale? | `public/locales/` (main) |
+| `analytics_catalog` | What does this event mean and where does it fire? | `src/` track() calls (main) |
+| `practice_catalog` | The practices as a table | circuits array (main) |
 | `check_status` | Are the sources actually answering? | all of the above |
 
 `ads_review` is **not** implemented yet; it is
@@ -286,7 +292,7 @@ endpoint refuses every request with 503** — an unset gate is an open gate.
 npm test
 ```
 
-61 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
+79 tests: the auth gate (fails closed, rejects wrong tokens), the JSON-RPC
 surface, graceful `not_configured` degradation, and the funnel arithmetic
 against a mocked GA4 — including that `home_view{first_run}` is used rather
 than all `home_view`, and that `silent_exit` never goes negative. Plus the

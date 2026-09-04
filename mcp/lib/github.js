@@ -194,19 +194,36 @@ async function rawText(path) {
 }
 
 /**
+ * Read every readable text file under a prefix, {path, content}. Raw-fetched
+ * (unmetered) in small concurrent batches. Shared by grep and the analytics
+ * catalog so both scan the same set the same way.
+ */
+export async function readReadableFiles({ pathPrefix, ext = TEXT_EXT } = {}) {
+  const prefix = pathPrefix ? normaliseRepoPath(pathPrefix) : null;
+  const tree = await listTree();
+  const targets = tree
+    .filter((e) => e.type === 'blob' && isReadable(e.path) && ext.test(e.path))
+    .filter((e) => (e.size ?? 0) < MAX_FILE_BYTES)
+    .filter((e) => !prefix || e.path.startsWith(prefix) || e.path === prefix)
+    .map((e) => e.path);
+
+  const files = [];
+  const BATCH = 12;
+  for (let i = 0; i < targets.length; i += BATCH) {
+    const batch = targets.slice(i, i + BATCH);
+    const got = await Promise.all(batch.map((p) => rawText(p).then((c) => [p, c]).catch(() => [p, null])));
+    for (const [path, content] of got) if (content != null) files.push({ path, content });
+  }
+  return files;
+}
+
+/**
  * Grep readable text files for a query. `pathPrefix` narrows the search; the
  * query is a plain case-insensitive substring by default, or a /regex/flags if
  * wrapped. Files are raw-fetched (unmetered) in small concurrent batches.
  */
 export async function grep(query, { pathPrefix, maxResults = 100, context = 2 } = {}) {
-  const prefix = pathPrefix ? normaliseRepoPath(pathPrefix) : null;
-  const tree = await listTree();
-  const targets = tree
-    .filter((e) => e.type === 'blob' && isReadable(e.path) && TEXT_EXT.test(e.path))
-    .filter((e) => (e.size ?? 0) < MAX_FILE_BYTES)
-    .filter((e) => !prefix || e.path.startsWith(prefix) || e.path === prefix)
-    .map((e) => e.path);
-
+  const files = await readReadableFiles({ pathPrefix });
   let matcher;
   const rx = String(query).match(/^\/(.*)\/([a-z]*)$/);
   if (rx) matcher = new RegExp(rx[1], rx[2].includes('i') ? rx[2] : rx[2] + 'i');
@@ -217,27 +234,22 @@ export async function grep(query, { pathPrefix, maxResults = 100, context = 2 } 
 
   const results = [];
   let filesSearched = 0;
-  const BATCH = 12;
-  for (let i = 0; i < targets.length && results.length < maxResults; i += BATCH) {
-    const batch = targets.slice(i, i + BATCH);
-    const contents = await Promise.all(batch.map((p) => rawText(p).then((c) => [p, c]).catch(() => [p, null])));
-    for (const [path, content] of contents) {
-      if (content == null) continue;
-      filesSearched += 1;
-      const lines = content.split('\n');
-      for (let j = 0; j < lines.length; j++) {
-        if (matcher.test(lines[j])) {
-          results.push({
-            path,
-            line: j + 1,
-            match: lines[j].slice(0, 200),
-            context: lines.slice(Math.max(0, j - context), j + context + 1).map((l, k) => ({
-              line: Math.max(0, j - context) + k + 1,
-              text: l.slice(0, 200),
-            })),
-          });
-          if (results.length >= maxResults) return { results, truncated: true, files_searched: filesSearched };
-        }
+  for (const { path, content } of files) {
+    if (results.length >= maxResults) break;
+    filesSearched += 1;
+    const lines = content.split('\n');
+    for (let j = 0; j < lines.length; j++) {
+      if (matcher.test(lines[j])) {
+        results.push({
+          path,
+          line: j + 1,
+          match: lines[j].slice(0, 200),
+          context: lines.slice(Math.max(0, j - context), j + context + 1).map((l, k) => ({
+            line: Math.max(0, j - context) + k + 1,
+            text: l.slice(0, 200),
+          })),
+        });
+        if (results.length >= maxResults) return { results, truncated: true, files_searched: filesSearched };
       }
     }
   }

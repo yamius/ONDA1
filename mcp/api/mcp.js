@@ -15,6 +15,11 @@ import { installsReview, installsReviewSchema } from '../tools/installs_review.j
 import { revenueReview, revenueReviewSchema } from '../tools/revenue_review.js';
 import { retentionReview, retentionReviewSchema } from '../tools/retention_review.js';
 import {
+  copyLookupTool, copyLookupSchema,
+  analyticsCatalogTool, analyticsCatalogSchema,
+  practiceCatalogTool, practiceCatalogSchema,
+} from '../tools/product.js';
+import {
   listFilesTool, listFilesSchema,
   readFileTool, readFileSchema,
   grepContentTool, grepContentSchema,
@@ -42,6 +47,9 @@ const TOOLS = [
   { schema: listFilesSchema, run: listFilesTool },
   { schema: readFileSchema, run: readFileTool },
   { schema: grepContentSchema, run: grepContentTool },
+  { schema: copyLookupSchema, run: copyLookupTool },
+  { schema: analyticsCatalogSchema, run: analyticsCatalogTool },
+  { schema: practiceCatalogSchema, run: practiceCatalogTool },
   { schema: checkStatusSchema, run: checkStatus },
 ];
 

@@ -38,7 +38,7 @@ test('accepts the token via ?key= as well as Bearer', async () => {
   process.env.MCP_AUTH_TOKEN = 'test-token';
   const r = await call({ jsonrpc: '2.0', id: 1, method: 'tools/list' }, { token: '', url: '/api/mcp?key=test-token' });
   assert.equal(r._status, 200);
-  assert.equal(r._json.result.tools.length, 12);
+  assert.equal(r._json.result.tools.length, 15);
 });
 
 test('initialize announces the tools capability', async () => {
@@ -80,6 +80,10 @@ const EXPECTED_TOOLS = [
   'grep_content',
   'list_files',
   'read_file',
+  // product
+  'analytics_catalog',
+  'copy_lookup',
+  'practice_catalog',
 ];
 
 test('every expected tool is present in the manifest, named one by one', async () => {
