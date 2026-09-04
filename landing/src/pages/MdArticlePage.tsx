@@ -5,6 +5,7 @@ import Markdown from 'react-markdown'
 import { ArticleReactions, ArticleValidationArrows } from '../components/ArticleReactions'
 import { ProtocolToggle } from '../components/ProtocolToggle'
 import { ARTICLE_PROTOCOL_ORDER } from '../data/protocol-ids'
+import { API_ENABLED } from '../config/features'
 import { langFromPath } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
@@ -321,6 +322,10 @@ export function MdArticlePage() {
     if (!slug) return
     const key = FINALIZE_PREFIX + slug
     setFinalized(localStorage.getItem(key) === 'true')
+    // No server API on static hosting → md (Telegram) articles can't be fetched.
+    // Every real article is prerendered via ArticlePage, so an unknown slug here
+    // is genuinely not found. Re-enables with VITE_API_ENABLED=1 + the function.
+    if (!API_ENABLED) { setNotFound(true); setLoading(false); return }
     fetch(`/api/md-article/${encodeURIComponent(slug)}`)
       .then(r => (r.ok ? r.json() : null))
       .then((found: MdArticle | null) => {

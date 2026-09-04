@@ -1,0 +1,69 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.onda-life.com" }],
+      "destination": "https://onda-life.com/$1",
+      "statusCode": 301
+    },
+    {
+      "source": "/part/i-resonate",
+      "destination": "/part/i-am-vibration",
+      "statusCode": 301
+    },
+    {
+      "source": "/articles/system-analysis-cognitive-architecture",
+      "destination": "/articles/cognitive-architecture-neural-throughput",
+      "statusCode": 301
+    },
+    { "source": "/p/mundi", "destination": "/decks/onda-pitch-mundi-x9k4.pdf", "statusCode": 302 },
+    { "source": "/p/info", "destination": "/decks/onda-eurostar-framework-r3p8.pdf", "statusCode": 302 },
+    { "source": "/p/radboud", "destination": "/decks/onda-radboud-donders-m4t7.pdf", "statusCode": 302 },
+    { "source": "/p/tno", "destination": "/decks/onda-tno-eurostars-h2v6.pdf", "statusCode": 302 }
+  ],
+  "rewrites": [
+    { "source": "/app", "destination": "/get" },
+    { "source": "/download", "destination": "/get" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://tagmanager.google.com https://connect.facebook.net https://www.redditstatic.com https://us.i.posthog.com https://us-assets.i.posthog.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://tagmanager.google.com; img-src 'self' data: https://www.googletagmanager.com https://*.google-analytics.com https://*.googletagmanager.com https://*.midjourney.com https://cdn.midjourney.com https://www.facebook.com https://alb.reddit.com; font-src 'self' https://fonts.gstatic.com data:; connect-src 'self' https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://www.google.com https://pixel-config.reddit.com https://alb.reddit.com https://www.facebook.com https://connect.facebook.net https://*.supabase.co https://us.i.posthog.com https://us-assets.i.posthog.com; media-src 'self' blob: https://*.supabase.co; frame-src https://www.googletagmanager.com https://www.youtube.com https://www.youtube-nocookie.com; object-src 'none'; base-uri 'self'; frame-ancestors 'self'"
+        },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/embed/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data:; frame-ancestors *"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600" }]
+    },
+    {
+      "source": "/sw.js",
+      "headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }]
+    },
+    {
+      "source": "/decks/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow" }]
+    }
+  ]
+}

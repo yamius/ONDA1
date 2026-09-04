@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { appStoreUrl } from '../config/appStore'
+import { API_ENABLED } from '../config/features'
 import { langFromPath, langHref } from '../i18n'
 
 export function CtaSection() {
@@ -81,24 +82,29 @@ export function CtaSection() {
               <div className="text-sm font-semibold">{t('cta.appStoreLabel')}</div>
             </div>
           </a>
-          <button
-            type="button"
-            onClick={() => {
-              window.lastPlatform = 'android'
-              setPlatform('android')
-              setIsOpen(true)
-            }}
-            className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
-            aria-label={t('cta.googlePlayAria')}
-            data-button="android"
-            data-platform="android"
-          >
-            <PlayIcon />
-            <div className="text-left">
-              <div className="text-[9px] text-white/40">{t('cta.googlePlaySup')}</div>
-              <div className="text-sm font-semibold">{t('cta.googlePlayLabel')}</div>
-            </div>
-          </button>
+          {/* Google Play → Android waitlist modal. Hidden without the waitlist
+              backend (static hosting) so there's no button that opens a form
+              that can't submit. The App Store link above always works. */}
+          {API_ENABLED && (
+            <button
+              type="button"
+              onClick={() => {
+                window.lastPlatform = 'android'
+                setPlatform('android')
+                setIsOpen(true)
+              }}
+              className="group flex w-full items-center justify-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs transition-all hover:border-white/20 hover:bg-white/10 sm:w-auto sm:px-5 sm:py-2.5"
+              aria-label={t('cta.googlePlayAria')}
+              data-button="android"
+              data-platform="android"
+            >
+              <PlayIcon />
+              <div className="text-left">
+                <div className="text-[9px] text-white/40">{t('cta.googlePlaySup')}</div>
+                <div className="text-sm font-semibold">{t('cta.googlePlayLabel')}</div>
+              </div>
+            </button>
+          )}
         </div>
 
         <Link

@@ -33,21 +33,15 @@ export type EmotonEvent =
   | 'download_cta_clicked'
   | 'restarted'
 
-// Config resolution, RUNTIME-first:
-//   1. window.__ONDA_ENV__ — injected by server.js's /runtime-env.js at request
-//      time. This is the source of truth in production: on Replit the PostHog key
-//      is a RUNTIME secret, NOT present during `npm run build`, so Vite would
-//      otherwise inline an empty string and analytics would silently no-op.
-//   2. import.meta.env (Vite build-time) — fallback for local dev (.env / .env.local).
-// `import.meta.env` is also UNDEFINED when tsx evaluates this module during the
+// Config resolution: PostHog key/host come from VITE_POSTHOG_* (build-time),
+// inlined by Vite. On Vercel, VITE_POSTHOG_KEY is a build-time env var, so
+// import.meta.env carries the real value into the bundle. Everything no-ops
+// gracefully when the key is absent.
+// `import.meta.env` is UNDEFINED when tsx evaluates this module during the
 // prerender step (Node), so it's read defensively (mirrors lib/supabase.ts).
 const buildEnv = ((import.meta as unknown as { env?: Record<string, string | undefined> }).env) ?? {}
-const runtimeEnv =
-  (typeof window !== 'undefined' &&
-    (window as unknown as { __ONDA_ENV__?: { POSTHOG_KEY?: string; POSTHOG_HOST?: string } }).__ONDA_ENV__) ||
-  {}
-const KEY = runtimeEnv.POSTHOG_KEY || buildEnv.VITE_POSTHOG_KEY
-const HOST = runtimeEnv.POSTHOG_HOST || buildEnv.VITE_POSTHOG_HOST || 'https://us.i.posthog.com'
+const KEY = buildEnv.VITE_POSTHOG_KEY
+const HOST = buildEnv.VITE_POSTHOG_HOST || 'https://us.i.posthog.com'
 
 let ph: PostHog | null = null
 let initPromise: Promise<void> | null = null
