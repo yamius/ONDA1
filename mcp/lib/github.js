@@ -12,8 +12,10 @@
  *   tree   api.github.com/repos/<owner>/<repo>/git/trees/<ref>?recursive=1
  * Only api.github.com is rate-limited unauthenticated (60/h per IP); the hot
  * path (raw file reads) is not, and the tree is cached per warm instance. grep
- * raw-fetches the readable files rather than pulling the whole-repo tarball,
- * which is 322 MB here because dist/ is committed.
+ * raw-fetches the readable files (~4 MB) rather than pulling the whole-repo
+ * tarball, which is ~322 MB here — not from dist/ (correctly gitignored) but
+ * from committed binary assets: attached_assets/ (~146 MB) and duplicated
+ * landing article images (~147 MB, png + webp).
  *
  * SECURITY POSTURE — stated plainly so it isn't mistaken for more than it is:
  *   - SSRF: the three hosts above are the ONLY hosts contacted. Fixed constants,
@@ -173,10 +175,11 @@ export async function listTree() {
   return tree;
 }
 
-// The whole-repo tarball is NOT used: this repo commits dist/ (322 MB), so a
-// tarball download would be a serverless landmine. The readable footprint
-// (src/ + public/locales/ + docs/) is ~4 MB, so grep raw-fetches just those
-// files — raw is unmetered, and the allowlist already excludes dist/.
+// The whole-repo tarball is NOT used: it is ~322 MB of committed binary assets
+// (attached_assets/ and duplicated landing images — NOT dist/, which is
+// gitignored), a serverless landmine. The readable footprint (src/ +
+// public/locales/ + docs/) is ~4 MB, so grep raw-fetches just those files —
+// raw is unmetered, and the allowlist already excludes everything heavy.
 const TEXT_EXT = /\.(ts|tsx|js|jsx|mjs|cjs|json|md|css|txt|html|yml|yaml)$/i;
 const _fileCache = new Map(); // path -> { at, content }
 
