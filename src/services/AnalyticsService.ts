@@ -43,6 +43,7 @@ export type AnalyticsEventName =
   | 'notification_prompt_result'
   | 'onboarding_permission_screen_view'
   | 'watch_connection_attempt'
+  | 'watch_connect_tapped'           // tapped the home "connect watch" CTA, BEFORE the permission prompt — params: source. Measures reach→intent for the baseline-from-Health flow (distinct from watch_connect_success, which fires on an actual connection).
   | 'watch_connect_success'          // ← was watch_connection_success / Tenjin watch_connected
   | 'watch_connection_failed'
   // Practice — variety lives in PARAMS (practice_type=standard|adaptive, practice_id),
@@ -56,6 +57,8 @@ export type AnalyticsEventName =
   | 'heart_rate_received'
   | 'biometric_sync_success'
   | 'biometric_sync_failed'
+  // Baseline (retention — Health-baseline onboarding)
+  | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera). Declared now; fired in Phase 2.
   // Gamification
   | 'ond_earned'
   | 'artifact_unlocked'

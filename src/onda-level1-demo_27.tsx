@@ -6309,7 +6309,7 @@ const OndaLevel1 = () => {
                 <div className="flex gap-2 sm:gap-3 justify-center">
                   <button
                     type="button"
-                    onClick={() => setShowPermissionModal(true)}
+                    onClick={() => { track('watch_connect_tapped', { source: 'home_biometric_cta' }); setShowPermissionModal(true); }}
                     className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all ${emoTint}`}
                     data-testid="biometric-connect-watch"
                   >
@@ -8524,6 +8524,7 @@ const OndaLevel1 = () => {
           currentStatus={permissions.permissionStatus}
           isRequesting={permissions.isRequesting}
           onPermissionsGranted={() => setShowWatchPrompt(true)}
+          onOutcome={(granted) => track('health_permission', { scope: 'healthkit', granted, source: 'onboarding_watch_cta' })}
         />
       )}
 
