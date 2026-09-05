@@ -25,13 +25,14 @@ const CLOUD = '0 0 0.45em rgba(4,8,14,0.98), 0 0 0.9em rgba(4,8,14,0.9), 0 0 1.5
 const ROW_TOP = [44.9, 33.5, 22.1, 11.4];
 const SIDE = '5.95%'; // v21 x=56 / 941
 
-function Slot({ value, caption, side, row }: { value: string; caption: string; side: 'left' | 'right'; row: number }) {
+function Slot({ value, caption, side, row, offsetY }: { value: string; caption: string; side: 'left' | 'right'; row: number; offsetY?: string }) {
   const align = side === 'left' ? 'text-left' : 'text-right';
   const pos = side === 'left' ? { left: SIDE } : { right: SIDE };
+  const top = offsetY ? `calc(${ROW_TOP[row]}% + ${offsetY})` : `${ROW_TOP[row]}%`;
   return (
-    <div className={`absolute ${align}`} style={{ ...pos, top: `${ROW_TOP[row]}%` }}>
-      <div style={{ color: GREEN, fontSize: '7.4cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{value}</div>
-      <div style={{ color: GRAY, fontSize: '1.9cqw', marginTop: '0.6cqw', textShadow: CLOUD }}>{caption}</div>
+    <div className={`absolute ${align}`} style={{ ...pos, top }}>
+      <div style={{ color: GREEN, fontSize: '8.9cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{value}</div>
+      <div style={{ color: GRAY, fontSize: '2.66cqw', marginTop: '0.6cqw', textShadow: CLOUD }}>{caption}</div>
     </div>
   );
 }
@@ -59,13 +60,14 @@ export function BaselineCard({ data, source }: { data: BaselineData; source: Bas
           <div style={{ color: CORAL, fontSize: '13.2cqw', fontWeight: 800, lineHeight: 1, textShadow: `${CLOUD}, 0 0 6cqw rgba(232,83,79,0.4)` }} className="tabular-nums">
             {model.hero.value}
           </div>
-          <div style={{ color: GRAY, fontSize: '2.1cqw', fontWeight: 500, letterSpacing: '0.05em', marginTop: '1cqw', textShadow: CLOUD }}>{model.hero.label}</div>
-          <div style={{ color: GRAY, fontSize: '1.9cqw', opacity: 0.85, textShadow: CLOUD }}>{model.hero.sub}</div>
+          <div style={{ color: GRAY, fontSize: '2.94cqw', fontWeight: 500, letterSpacing: '0.05em', marginTop: '1cqw', textShadow: CLOUD }}>{model.hero.label}</div>
+          <div style={{ color: GRAY, fontSize: '2.66cqw', opacity: 0.85, textShadow: CLOUD }}>{model.hero.sub}</div>
         </div>
       )}
 
       {/* Left / right numeric columns (collapse upward) */}
-      {model.left.map((s, i) => <Slot key={`l${i}`} value={s.value} caption={s.caption} side="left" row={i} />)}
+      {/* left[1] = calmest-night ("68") sits half a number lower, per device review. */}
+      {model.left.map((s, i) => <Slot key={`l${i}`} value={s.value} caption={s.caption} side="left" row={i} offsetY={i === 1 ? '4.45cqw' : undefined} />)}
       {model.right.map((s, i) => <Slot key={`r${i}`} value={s.value} caption={s.caption} side="right" row={i} />)}
 
       {/* Variability bar + closing lines */}
@@ -79,8 +81,8 @@ export function BaselineCard({ data, source }: { data: BaselineData; source: Bas
               width: '2cqw', height: '2cqw', background: GREEN, top: '-0.84cqw',
               left: `calc(${Math.min(Math.max(model.variability.position, 0), 1) * 100}% - 1cqw)`,
             }} />
-            <div className="absolute" style={{ color: WHITE, fontSize: '6.1cqw', fontWeight: 700, right: 'calc(100% + 2cqw)', top: '-3.4cqw', textShadow: CLOUD }}>{model.variability.min}</div>
-            <div className="absolute" style={{ color: WHITE, fontSize: '6.1cqw', fontWeight: 700, left: 'calc(100% + 2cqw)', top: '-3.4cqw', textShadow: CLOUD }}>{model.variability.max}</div>
+            <div className="absolute" style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, right: 'calc(100% + 2cqw)', top: '-4.1cqw', textShadow: CLOUD }}>{model.variability.min}</div>
+            <div className="absolute" style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, left: 'calc(100% + 2cqw)', top: '-4.1cqw', textShadow: CLOUD }}>{model.variability.max}</div>
           </div>
           <div style={{ color: WHITE, fontSize: '2.4cqw', marginTop: '5cqw', lineHeight: 1.5 }}>
             <div>{model.variability.lineOne}</div>
