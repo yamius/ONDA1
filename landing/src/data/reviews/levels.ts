@@ -7,7 +7,7 @@ const levels: ToolReview = {
   category: 'cgm',
   productType: 'CGM coaching programme (Dexcom G7)',
   description:
-    'ONDA review of Levels — the biohacker-grade CGM programme built on Dexcom G7 with the deepest food-by-food insights and the steepest price. Scored on insights, accuracy, app and value.',
+    'Levels review: the most polished biohacker CGM, built on Dexcom G7 — best-in-class food-by-food insights at the steepest price in the category. Is it worth it?',
   verdict:
     'The most polished biohacker CGM programme — best-in-class insights at the highest price in the category.',
   summary:

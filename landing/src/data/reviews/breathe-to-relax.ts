@@ -7,7 +7,7 @@ const breatheToRelax: ToolReview = {
   category: 'breathwork-app',
   productType: 'Free DoD-built diaphragmatic-breathing app for stress and PTSD',
   description:
-    'ONDA review of Breathe2Relax — free US Department of Defense / Telehealth-built diaphragmatic-breathing app originally developed for veteran PTSD and stress management. Scored on library, evidence, app experience and value.',
+    'Breathe2Relax review: the most credible free breathwork app — built by US military telehealth for PTSD and stress. Dated UX, clinical pedigree unmatched for $0.',
   verdict:
     'Best evidence-backed free breathwork app — built by US military telehealth for PTSD and stress; clinical credibility no other free app matches.',
   summary:

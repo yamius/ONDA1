@@ -7,7 +7,7 @@ const penguinChillers: ToolReview = {
   category: 'cold-plunge',
   productType: 'Chiller-only retrofit (bring your own tub)',
   description:
-    'ONDA review of Penguin Chillers — the chiller-only retrofit unit for users with their own tub or stock tank.',
+    'Penguin Chillers review: the best chiller for a DIY cold plunge — pair it with your own tub or stock tank for a capable, real-world-priced build. No tub.',
   verdict:
     'The chiller for DIY cold plunge — bring your own tub or stock tank, get a capable chiller at a real-world price.',
   summary:

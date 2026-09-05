@@ -7,7 +7,7 @@ const sunHomeEquinox: ToolReview = {
   category: 'sauna',
   productType: 'Mid-premium full-spectrum IR cabin sauna',
   description:
-    'ONDA review of the Sun Home Equinox — newer mid-premium full-spectrum IR sauna with chromotherapy and sound system.',
+    'Sun Home Equinox review: a capable newer full-spectrum infrared sauna — chromotherapy and sound bundled in, priced under Sunlighten and Clearlight. Newer brand.',
   verdict:
     'A capable newer entrant — full-spectrum IR with bundled chromotherapy and sound, price-disciplined relative to category leaders.',
   summary:

@@ -7,7 +7,7 @@ const pranaBreath: ToolReview = {
   category: 'breathwork-app',
   productType: 'Customisable pattern-based breathwork app',
   description:
-    'ONDA review of Prana Breath — long-running Android-first customisable pattern-based breathwork app with deep parameter exposure. Scored on library, technique coverage, customisation and value.',
+    'Prana Breath review: the most customisable pattern-based breathwork app — deep parameter control, Android-first, mostly free. UX feels dated vs premium apps.',
   verdict:
     'Best customisable pattern-based breathwork — deep parameter exposure, Android-first, mostly-free model. UX feels dated vs premium apps.',
   summary:

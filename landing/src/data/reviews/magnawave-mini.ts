@@ -7,7 +7,7 @@ const magnawaveMini: ToolReview = {
   category: 'pemf',
   productType: 'Portable high-intensity PEMF coil device',
   description:
-    'ONDA review of the MagnaWave Mini — portable coil-based PEMF widely used in equine and athletic recovery. Scored on field strength, build, programmability and value.',
+    'MagnaWave Mini review: portable clinical-grade PEMF with equine and athletic heritage — high-intensity paddle pulses, mid-tier price for clinic-tier output.',
   verdict:
     'Portable high-intensity PEMF coil — equine and athletic recovery heritage, accessible portable build, mid-tier pricing for clinical-tier output.',
   summary:

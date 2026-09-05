@@ -7,7 +7,7 @@ const ultrahumanM1: ToolReview = {
   category: 'cgm',
   productType: 'CGM programme (Abbott Libre 3) with ring ecosystem',
   description:
-    'ONDA review of the Ultrahuman M1 — the CGM programme tightly integrated with the Ultrahuman Ring Air, fusing glucose with HRV, sleep and movement data. Scored on insights, integration and value.',
+    'Ultrahuman M1 review: the best CGM ecosystem play — glucose read with HRV, sleep and recovery in one app. Strong for Ring owners, weaker as a standalone CGM.',
   verdict:
     'The best ecosystem play — glucose data composed with HRV, sleep and recovery from the Ultrahuman Ring in one app.',
   summary:

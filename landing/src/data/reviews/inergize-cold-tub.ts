@@ -7,7 +7,7 @@ const inergizeColdTub: ToolReview = {
   category: 'cold-plunge',
   productType: 'Mid-tier insulated tub with optional chiller',
   description:
-    'ONDA review of the Inergize Cold Tub — mid-tier insulated tub available with or without chiller add-on.',
+    'Inergize Cold Tub review: a configurable mid-tier plunge — start as ice-fill, add the chiller later. Solid tub; the add-on chiller is competent, not powerful.',
   verdict:
     'A mid-tier tub that competes on configurability — buy the tub now, add a chiller later if needed.',
   summary:

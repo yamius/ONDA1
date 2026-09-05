@@ -7,7 +7,7 @@ const coldPod: ToolReview = {
   category: 'cold-plunge',
   productType: 'Portable inflatable ice-bath tub',
   description:
-    'ONDA review of Cold Pod — the popular portable inflatable cold-plunge tub. Entry-tier price, ice-fill operation, foldable storage.',
+    'Cold Pod review: the cheapest legitimate cold plunge — inflatable, portable, ice-fill, no chiller. A great starter tub; you bring the ice and the storage space.',
   verdict:
     'The cheapest legitimate cold-plunge entry — inflatable, portable, ice-fill operation.',
   summary:
