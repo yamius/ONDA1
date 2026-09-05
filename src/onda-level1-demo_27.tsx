@@ -20,6 +20,9 @@ import { DebugMonitor } from './components/DebugMonitor';
 import { MetricsWaveform } from './components/MetricsWaveform';
 import { CameraPulseWindow } from './components/CameraPulseWindow';
 import { CoherenceOrb } from './components/CoherenceOrb';
+import { BaselineCard } from './components/BaselineCard';
+import { buildFromNative, buildFromCamera, hasAnyReading, BASELINE_WINDOW_DAYS, type BaselineData, type BaselineSource } from './lib/baseline';
+import HealthKitHeartRate from './plugins/healthKitHeartRate';
 // Home redesign 1.7.4 — new sections (Section 2 / 4 / 6).
 import { HRVMiniChart } from './components/HRVMiniChart';
 import { TodaysPracticeStateCard } from './components/TodaysPracticeStateCard';
@@ -152,6 +155,16 @@ const OndaLevel1 = () => {
   const cameraPpg = useCameraPpg();
   const [cameraOfferDismissed, setCameraOfferDismissed] = useState(false);
 
+  // ── Baseline card (retention step 1) ────────────────────────────────────
+  // The figure-card on home. Sourced from the camera session first (day-0,
+  // no permissions), then redrawn from the 14-day HealthKit read once the
+  // watch is connected. Honest by construction: only what Health/camera gave.
+  const [baseline, setBaseline] = useState<{ data: BaselineData; source: BaselineSource } | null>(null);
+  // Rolling stats over the current camera reading → avg/min/max pulse + a
+  // breathing estimate. Reset on each fresh start, sealed into a card on stop.
+  const camSessionRef = useRef({ min: Infinity, max: -Infinity, sum: 0, count: 0, brSum: 0, brCount: 0 });
+  const prevCamStatusRef = useRef<string>('idle');
+
   // Ref to store CURRENT vitals - updated every render, accessible in async functions
   const vitalsRef = useRef(vitalsData);
   vitalsRef.current = vitalsData;
@@ -167,7 +180,57 @@ const OndaLevel1 = () => {
   const [pendingStartPracticeAfterSubscribe, setPendingStartPracticeAfterSubscribe] = useState(false);
   
   useKeepAwake(true);
-  
+
+  // Read 14 days of history from HealthKit and build the baseline card. Called
+  // ONLY after the user grants access via the watch CTA (permission by intent).
+  // Honest coverage: the caption reflects the real day count Health returned;
+  // sparse/new watches say less, never "14 nights". Flips the "watching" flag.
+  const loadWatchBaseline = useCallback(async () => {
+    try {
+      const res = await HealthKitHeartRate.queryBaseline({ days: BASELINE_WINDOW_DAYS });
+      const data = buildFromNative(res);
+      if (!hasAnyReading(data.readings)) return; // nothing in Health → keep the camera card
+      setBaseline({ data, source: 'watch' });
+      try { localStorage.setItem('onda_baseline_watching', 'true'); } catch { /* noop */ }
+      const coverage = Math.max(0, ...data.readings.map((r) => r.days));
+      track('baseline_shown', { source: 'watch', coverage_days: coverage });
+    } catch (e) {
+      console.warn('[baseline] queryBaseline failed', e);
+    }
+  }, [track]);
+
+  // Camera session → baseline. Accumulate committed bpm (avg/min/max) + a
+  // breathing estimate while reading; seal a day-0 card when the reading ends.
+  // Never overwrites a watch baseline once one exists.
+  useEffect(() => {
+    const s = cameraPpg.status;
+    const prev = prevCamStatusRef.current;
+    if (s !== 'idle' && prev === 'idle') {
+      camSessionRef.current = { min: Infinity, max: -Infinity, sum: 0, count: 0, brSum: 0, brCount: 0 };
+    }
+    if (s === 'reading' && cameraPpg.bpm != null) {
+      const a = camSessionRef.current;
+      a.min = Math.min(a.min, cameraPpg.bpm);
+      a.max = Math.max(a.max, cameraPpg.bpm);
+      a.sum += cameraPpg.bpm; a.count += 1;
+      if (vitalsData.br != null) { a.brSum += vitalsData.br; a.brCount += 1; }
+    }
+    if (s === 'idle' && prev !== 'idle') {
+      const a = camSessionRef.current;
+      if (a.count >= 5 && baseline?.source !== 'watch') {
+        const data = buildFromCamera({
+          avg: a.sum / a.count,
+          min: Number.isFinite(a.min) ? a.min : null,
+          max: Number.isFinite(a.max) ? a.max : null,
+          breathing: a.brCount > 0 ? a.brSum / a.brCount : null,
+        });
+        setBaseline({ data, source: 'camera' });
+        track('baseline_shown', { source: 'camera', coverage_days: 1 });
+      }
+    }
+    prevCamStatusRef.current = s;
+  }, [cameraPpg.status, cameraPpg.bpm, vitalsData.br, baseline, track]);
+
   // Track app open on mount
   useEffect(() => {
     track('app_open', { platform });
@@ -6331,6 +6394,29 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
+        {/* Baseline card — the figure + your numbers. Camera numbers on day 0
+            (coverage caption says "1 reading"); after "Connect watch" it
+            redraws from the 14-day HealthKit read (caption → real night count).
+            The watch CTA under the card is the single retention action. */}
+        {baseline && (
+          <div className="mb-6 flex flex-col items-center">
+            <div className="w-full max-w-[360px]">
+              <BaselineCard data={baseline.data} source={baseline.source} />
+            </div>
+            {baseline.source !== 'watch' && (
+              <button
+                type="button"
+                onClick={() => { track('watch_connect_tapped', { source: 'baseline_card' }); setShowPermissionModal(true); }}
+                className={`mt-4 flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${emoTint}`}
+                data-testid="baseline-connect-watch"
+              >
+                <Watch className="w-4 h-4" />
+                {t('baseline.connect_watch', 'Connect Apple Watch')}
+              </button>
+            )}
+          </div>
+        )}
+
         {/* Practices list — single block. The featured (recommended)
             practice is hoisted to the first position and rendered with
             an indigo accent ring + ✨ Recommended badge so it reads as
@@ -8524,7 +8610,10 @@ const OndaLevel1 = () => {
           currentStatus={permissions.permissionStatus}
           isRequesting={permissions.isRequesting}
           onPermissionsGranted={() => setShowWatchPrompt(true)}
-          onOutcome={(granted) => track('health_permission', { scope: 'healthkit', granted, source: 'onboarding_watch_cta' })}
+          onOutcome={(granted) => {
+            track('health_permission', { scope: 'healthkit', granted, source: 'onboarding_watch_cta' });
+            if (granted) void loadWatchBaseline();
+          }}
         />
       )}
 
