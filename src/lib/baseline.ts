@@ -87,11 +87,25 @@ function emptyReading(key: BaselineSignalKey): BaselineReading {
   return { key, label: s.label, unit: s.unit, decimals: s.decimals, avg: null, min: null, max: null, days: 0 };
 }
 
-/** PURE: the 14-day HealthKit read → all three readings + any single-value extras (watch source). */
-export function buildFromNative(res: BaselineResult, extras: BaselineExtras = {}): BaselineData {
+/** PURE: keep only the extras Health actually returned (drop nullish) — never fabricate a slot. */
+function extrasFromNative(raw: BaselineResult['extras']): BaselineExtras {
+  const out: BaselineExtras = {};
+  if (!raw) return out;
+  for (const { key } of BASELINE_EXTRAS) {
+    const v = raw[key];
+    if (v != null && Number.isFinite(v)) out[key] = v;
+  }
+  return out;
+}
+
+/**
+ * PURE: the 14-day HealthKit read → all three readings + the single-value extras
+ * (peak / walking / VO2max / recovery) the watch returned. `override` wins for tests.
+ */
+export function buildFromNative(res: BaselineResult, override?: BaselineExtras): BaselineData {
   return {
     readings: [readingFromStat('rhr', res.rhr), readingFromStat('hrv', res.hrv), readingFromStat('rr', res.rr)],
-    extras,
+    extras: override ?? extrasFromNative(res.extras),
   };
 }
 

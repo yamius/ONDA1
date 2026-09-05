@@ -76,11 +76,24 @@ export interface BaselineSignalStat {
   days: number;
 }
 
-/** 14-day baseline read from HealthKit (resting HR / HRV-SDNN / respiratory rate). */
+/** Single-value figures around the v21 figure. Any may be absent (no data / not authorized). */
+export interface BaselineExtrasResult {
+  /** Peak heart rate over the window (true max sample). */
+  hrpeak?: number;
+  /** Average walking heart rate. */
+  whr?: number;
+  /** Estimated VO2max. */
+  vo2?: number;
+  /** 1-minute heart-rate recovery (iOS 16+). */
+  hrr?: number;
+}
+
+/** 14-day baseline read from HealthKit (resting HR / HRV-SDNN / respiratory rate + extras). */
 export interface BaselineResult {
   rhr: BaselineSignalStat;
   hrv: BaselineSignalStat;
   rr: BaselineSignalStat;
+  extras?: BaselineExtrasResult;
 }
 
 export interface HealthKitHeartRatePlugin {
