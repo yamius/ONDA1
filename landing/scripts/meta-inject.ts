@@ -236,6 +236,9 @@ function buildCanonicalUrl(route: string): string {
   const cleanPath = (route || '/').replace(/\/+$/, '') || '/'
   return cleanPath === '/' ? base : `${base}${cleanPath}`
 }
+/** Year stamped into individual review titles (freshness/CTR). Bump yearly; the
+ *  category-landing titles carry the same year and should be bumped together. */
+const REVIEW_TITLE_YEAR = '2026'
 const DEFAULT_TITLE = 'ONDA Life: Stop Tracking Stress. Start Training It.'
 const DEFAULT_DESC =
   'Guided breathing with real-time feedback from your own heart rhythm. Structured 8-level training for your nervous system. Free to start, no account.'
@@ -2762,7 +2765,12 @@ export function getMetaForRoute(route: string): RouteMeta {
       // sets `image:` in its data file, which overrides the card here.
       const absImage = `${SITE_URL}${review.image ?? `/images/reviews/${review.slug}.png`}`
       return {
-        title: `${review.name} Review — Scored ${review.overallScore.toFixed(1)}/10 | ONDA Life`,
+        // Year in the title is a freshness/CTR signal on review SERPs (the category
+        // pages already carry "(2026)"; individual reviews did not — they sit on page 1
+        // for many queries but bled clicks, GSC near_top 2026-09). The independent
+        // "/10" score stays: it is the on-brand differentiator. Title budget is clamped
+        // downstream (clampTitleToIdeal), so a long product name degrades gracefully.
+        title: `${review.name} Review (${REVIEW_TITLE_YEAR}) — Scored ${review.overallScore.toFixed(1)}/10 | ONDA Life`,
         description: review.description,
         url,
         breadcrumbs,
