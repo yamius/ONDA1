@@ -56,6 +56,7 @@ export const DATA_LAG = {
   tenjin: 'Tenjin is near-real-time but paid-network attribution can still be revised for ~48h.',
   revenuecat: 'RevenueCat is near real-time, but refunds arrive days later and rewrite past windows retroactively.',
   asc_analytics: 'App Store analytics are complete two days after the reporting date; ONGOING reports only accumulate from registration and are never backfilled.',
+  posthog: 'PostHog is near real-time and unsampled, but autocapture/ingestion can lag minutes to ~an hour, so the current partial day runs light.',
 };
 
 export function ok(data, extra = {}) {

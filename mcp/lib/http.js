@@ -72,3 +72,59 @@ export async function getJson(url, { headers = {}, timeoutMs = 20000, source } =
     });
   }
 }
+
+/**
+ * POST JSON with the same diagnosable failures as getJson.
+ * PostHog returns HogQL errors in the BODY with a 400, so body_snippet is where
+ * a malformed query explains itself — surface it, don't swallow it.
+ */
+export async function postJson(url, payload, { headers = {}, timeoutMs = 30000, source } = {}) {
+  const started = Date.now();
+  let res;
+  try {
+    res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', ...headers },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(timeoutMs),
+    });
+  } catch (err) {
+    throw new HttpError(`network error contacting ${new URL(url).host}`, {
+      source,
+      status: null,
+      network_error: true,
+      cause: causeOf(err) ?? String(err?.message ?? err).slice(0, 200),
+      hint: 'No HTTP status: the request never reached the server. Check the host, DNS and outbound egress — not the token.',
+      elapsed_ms: Date.now() - started,
+    });
+  }
+
+  const text = await res.text();
+  if (!res.ok) {
+    throw new HttpError(`HTTP ${res.status} from ${new URL(url).host}`, {
+      source,
+      status: res.status,
+      body_snippet: text.slice(0, 400),
+      hint:
+        res.status === 401 || res.status === 403
+          ? 'Authentication rejected — check the token and its scope.'
+          : res.status === 429
+            ? 'Rate limited.'
+            : res.status === 400
+              ? 'The API rejected the request body — for HogQL, read body_snippet for the query error.'
+              : 'Check the path and body against the API docs.',
+      elapsed_ms: Date.now() - started,
+    });
+  }
+
+  try {
+    return JSON.parse(text);
+  } catch {
+    throw new HttpError('response was not JSON', {
+      source,
+      status: res.status,
+      body_snippet: text.slice(0, 400),
+      elapsed_ms: Date.now() - started,
+    });
+  }
+}

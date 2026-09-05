@@ -30,6 +30,13 @@ import {
   siteHealthTool, siteHealthSchema,
   siteMapTool, siteMapSchema,
 } from '../tools/site.js';
+import {
+  phBreakdown, phBreakdownSchema,
+  phRetention, phRetentionSchema,
+  phFunnel, phFunnelSchema,
+  phQuery, phQuerySchema,
+  phEvents, phEventsSchema,
+} from '../tools/posthog.js';
 import { checkStatus, checkStatusSchema } from '../tools/check_status.js';
 
 const SERVER_INFO = { name: 'onda-analytics', version: '0.1.0' };
@@ -50,6 +57,11 @@ const TOOLS = [
   { schema: copyLookupSchema, run: copyLookupTool },
   { schema: analyticsCatalogSchema, run: analyticsCatalogTool },
   { schema: practiceCatalogSchema, run: practiceCatalogTool },
+  { schema: phBreakdownSchema, run: phBreakdown },
+  { schema: phRetentionSchema, run: phRetention },
+  { schema: phFunnelSchema, run: phFunnel },
+  { schema: phQuerySchema, run: phQuery },
+  { schema: phEventsSchema, run: phEvents },
   { schema: checkStatusSchema, run: checkStatus },
 ];
 

@@ -38,7 +38,7 @@ test('accepts the token via ?key= as well as Bearer', async () => {
   process.env.MCP_AUTH_TOKEN = 'test-token';
   const r = await call({ jsonrpc: '2.0', id: 1, method: 'tools/list' }, { token: '', url: '/api/mcp?key=test-token' });
   assert.equal(r._status, 200);
-  assert.equal(r._json.result.tools.length, 15);
+  assert.equal(r._json.result.tools.length, 20);
 });
 
 test('initialize announces the tools capability', async () => {
@@ -84,6 +84,12 @@ const EXPECTED_TOOLS = [
   'analytics_catalog',
   'copy_lookup',
   'practice_catalog',
+  // posthog (property-sliced analytics)
+  'ph_breakdown',
+  'ph_retention',
+  'ph_funnel',
+  'ph_query',
+  'ph_events',
 ];
 
 test('every expected tool is present in the manifest, named one by one', async () => {
@@ -141,6 +147,6 @@ test('check_status reports every source without throwing', async () => {
   process.env.MCP_AUTH_TOKEN = 'test-token';
   const r = await call({ jsonrpc: '2.0', id: 4, method: 'tools/call', params: { name: 'check_status' } });
   const payload = JSON.parse(r._json.result.content[0].text);
-  assert.equal(payload.sources.length, 5);
+  assert.equal(payload.sources.length, 6);
   assert.ok(payload.summary.includes('sources answering'));
 });

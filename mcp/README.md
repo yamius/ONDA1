@@ -40,6 +40,11 @@ people drop off**.
 | `copy_lookup` | What is this string in every locale? | `public/locales/` (main) |
 | `analytics_catalog` | What does this event mean and where does it fire? | `src/` track() calls (main) |
 | `practice_catalog` | The practices as a table | circuits array (main) |
+| `ph_breakdown` | One event split by a property (shares by unique users) | PostHog (HogQL) |
+| `ph_retention` | Cohort d1/d7/d30, splittable by property | PostHog (HogQL) |
+| `ph_funnel` | Ordered funnel, splittable by property | PostHog (HogQL) |
+| `ph_query` | Raw HogQL (SELECT-only) | PostHog (HogQL) |
+| `ph_events` | What events PostHog actually receives | PostHog (HogQL) |
 | `check_status` | Are the sources actually answering? | all of the above |
 
 `ads_review` is **not** implemented yet; it is
@@ -253,6 +258,38 @@ yourself.
 Uses GA4's **built-in `appVersion`** dimension, which Firebase populates from
 the real marketing version. The app's own `app_version` field is deliberately
 NOT used: it carries `VITE_BUILD_NUMBER` (a CI run counter), not `1.8.x`.
+
+## PostHog tools (`ph_*`)
+
+PostHog runs alongside Firebase/GA4 in the app. The GA4 tools answer "how many";
+the `ph_*` tools answer "how many, **split by any event property**, unsampled" —
+the cut GA4 makes hard or impossible. They do **not** replace the GA4 tools:
+`funnel_review` / `retention_review` stay the cross-cut numbers against the
+baseline, and a divergence between the two sources is itself diagnostic.
+
+They speak HogQL (SQL over the `events` table; event properties at
+`properties.<name>`, unique people via `count(distinct person_id)`) through the
+Query API. House rules hold throughout: **read-only**, **aggregate-only**
+(`person_id` counts unique people, never leaves), every percentage carries its
+`N`, and shares are by **unique users**, not events — one heavy user cannot skew
+a breakdown.
+
+- `ph_breakdown` — the one this was built for: `event=results_view
+  property=metrics_source` → the watch / camera / simulated split by unique
+  users.
+- `ph_retention` — cohort d1/d7/d30, with `breakdown=<property>`; cohorts too
+  young for a milestone are excluded from its denominator, never scored zero.
+- `ph_funnel` — ordered `windowFunnel` across steps, splittable by property.
+- `ph_query` — raw HogQL, **SELECT-only**: `INSERT`/`UPDATE`/`DELETE`/`ALTER`/
+  `DROP` and multiple statements are refused *before* the request is sent, not
+  left to the key's scopes.
+- `ph_events` — what events PostHog actually receives, with frequency; cross-check
+  against `analytics_catalog` to spot an event that fires but is counted nowhere.
+
+Env: `POSTHOG_API_KEY` (personal key, scopes `query:read` + `insight:read`) is
+the only required variable; `POSTHOG_PROJECT_ID` (default `462907`) and
+`POSTHOG_HOST` (default `https://us.posthog.com` — the US instance) fall back to
+the ONDA values.
 
 ## Deploy
 
