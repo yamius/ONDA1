@@ -1,18 +1,27 @@
 /**
- * PostHog tools — property-sliced analytics HogQL can give and GA4 cannot.
+ * PostHog tools — analytics for EMOTON, the landing's emotional check-in tool.
  *
- * The five (see the brief):
- *   ph_breakdown  ⭐ one event split by one property — shares by UNIQUE USERS.
+ * SCOPE: PostHog receives EMOTON web events ONLY. The iOS app sends NOTHING to
+ * PostHog (its analytics are Firebase/GA4). So these tools answer questions about
+ * the EMOTON funnel — open → name a feeling (zone/shade) → route → practice →
+ * be-with → download — which is captured in PostHog and nowhere else. For app
+ * questions (e.g. the watch/camera/simulated metrics_source split) use the GA4
+ * tools: ga4_breakdown / funnel_review / retention_review. When app→PostHog
+ * capture ships later, app-scoped PostHog tools can be added alongside these.
+ *
+ * The five:
+ *   ph_breakdown  one EMOTON event split by a property — shares by UNIQUE users.
  *   ph_retention  cohort d1/d7/d30, optionally split by a property.
- *   ph_funnel     ordered funnel across events, optionally split by a property.
+ *   ph_funnel     ordered funnel across EMOTON events, optionally split.
  *   ph_query      raw HogQL, SELECT-only, the escape valve.
  *   ph_events     what events PostHog actually receives, with frequency.
  *
  * House rules held throughout: READ-ONLY, AGGREGATE-ONLY (person_id counts
  * unique people, never leaves), every percentage carries its N, low_data flags a
- * denominator too small to mean anything. These do NOT replace funnel_review /
- * retention_review (GA4) — those stay the cross-cut numbers; these are the
- * property slices, and a divergence between the two sources is itself a signal.
+ * denominator too small to mean anything. EMOTON is anonymous
+ * (person_profiles:'identified_only'), so "unique users" means unique anonymous
+ * visitors (≈ browsers), and cross-session retention is weaker than for a
+ * logged-in product — flagged where it matters.
  */
 
 import {
@@ -36,18 +45,19 @@ function phMissing() {
 export const phBreakdownSchema = {
   name: 'ph_breakdown',
   description:
-    'Split one event by one of its properties and get, per property value, the ' +
-    'event count AND the number of UNIQUE users, with each value\'s share of ' +
-    'users. The tool this server was asked for first: ' +
-    'ph_breakdown event=results_view property=metrics_source answers "what share ' +
-    'of sessions ran on an Apple Watch vs camera vs simulated" — a GA4-awkward ' +
-    'cut that is one HogQL line here. Shares are by unique users, not events, so ' +
-    'one heavy user cannot skew them. Read-only, aggregate-only.',
+    'Split one EMOTON event by one of its properties and get, per value, the ' +
+    'event count AND the number of UNIQUE anonymous visitors, with each value\'s ' +
+    'share of visitors. EMOTON is the landing\'s emotional check-in (PostHog-only). ' +
+    'E.g. ph_breakdown event=shade_selected property=zone → which emotional zones ' +
+    'people name; event=download_cta_clicked property=placement → which CTA drives ' +
+    'the download. Shares are by unique visitors, not events, so one heavy visitor ' +
+    'cannot skew them. NOTE: the app\'s watch/camera/simulated split is NOT here — ' +
+    'that is a GA4 question (use ga4_breakdown). Read-only, aggregate-only.',
   inputSchema: {
     type: 'object',
     properties: {
-      event: { type: 'string', description: 'Event name, e.g. "results_view".' },
-      property: { type: 'string', description: 'Event property to split by, e.g. "metrics_source".' },
+      event: { type: 'string', description: 'EMOTON event name, e.g. "shade_selected", "route_selected", "download_cta_clicked".' },
+      property: { type: 'string', description: 'Event property to split by, e.g. "zone", "shade", "route", "placement".' },
       since: { type: 'integer', description: 'Days back. Default 28.', default: 28 },
     },
     required: ['event', 'property'],
@@ -100,19 +110,20 @@ export async function phBreakdown(args = {}) {
 export const phRetentionSchema = {
   name: 'ph_retention',
   description:
-    'Cohort retention (d1/d7/d30) computed in PostHog, optionally split by an ' +
-    'event property. Cohort day = a person\'s first event in the window; a person ' +
-    'is retained at dN if they had a qualifying event exactly N days later. With ' +
-    'breakdown=metrics_source you see retention separately for watch / camera / ' +
-    'simulated — the cut GA4 will not give. Cohorts too young to have reached dN ' +
-    'are excluded from that milestone\'s denominator, never counted as zero. ' +
-    'Read-only, aggregate-only.',
+    'Cohort retention (d1/d7/d30) for EMOTON visitors, optionally split by an ' +
+    'event property. Cohort day = a visitor\'s first event in the window; retained ' +
+    'at dN if they had a qualifying event exactly N days later. With ' +
+    'breakdown=zone you see whether people who named a particular emotional zone ' +
+    'come back. Cohorts too young to have reached dN are excluded from that ' +
+    'milestone\'s denominator, never counted as zero. CAVEAT: EMOTON is anonymous ' +
+    '(identity is a browser cookie), so cross-day return is undercounted for ' +
+    'anyone who clears cookies or switches device. Read-only, aggregate-only.',
   inputSchema: {
     type: 'object',
     properties: {
       since: { type: 'integer', description: 'Days back for the cohort window. Default 28.', default: 28 },
-      event: { type: 'string', description: 'Event that counts as activity/return. Default: any event.' },
-      breakdown: { type: 'string', description: 'Event property to split cohorts by, e.g. "metrics_source".' },
+      event: { type: 'string', description: 'EMOTON event that counts as activity/return, e.g. "emoton_opened". Default: any event.' },
+      breakdown: { type: 'string', description: 'Event property to split cohorts by, e.g. "zone" or "route".' },
     },
   },
 };
@@ -196,18 +207,19 @@ export async function phRetention(args = {}) {
 export const phFunnelSchema = {
   name: 'ph_funnel',
   description:
-    'Ordered funnel across a list of events, computed with windowFunnel: per ' +
-    'person, how far they got through the steps in order within the window. ' +
-    'Optionally split by an event property to see whether one group (e.g. ' +
-    'metrics_source=camera) drops earlier. Complements funnel_review (GA4) — same ' +
-    'shape, but sliceable by property. Reports users reaching each step, plus ' +
-    'step-to-step and from-top conversion. Read-only, aggregate-only.',
+    'Ordered funnel across a list of EMOTON events, computed with windowFunnel: ' +
+    'per visitor, how far they got through the steps in order within the window. ' +
+    'Optionally split by an event property to see whether one group (e.g. a given ' +
+    'zone) drops earlier. This is the EMOTON in-tool funnel — open → name a ' +
+    'feeling → route → practice → be-with → download — which lives in PostHog ' +
+    'only. Reports visitors reaching each step, plus step-to-step and from-top ' +
+    'conversion. Read-only, aggregate-only.',
   inputSchema: {
     type: 'object',
     properties: {
       steps: {
         type: 'array', items: { type: 'string' }, minItems: 2,
-        description: 'Ordered event names, e.g. ["results_view","paywall_view","purchase"].',
+        description: 'Ordered EMOTON event names, e.g. ["emoton_opened","shade_selected","route_selected","practice_completed","download_cta_clicked"].',
       },
       since: { type: 'integer', description: 'Days back. Default 28.', default: 28 },
       window_days: { type: 'integer', description: 'Max days from step 1 to the last step, per person. Default 7.', default: 7 },
@@ -285,17 +297,18 @@ export async function phFunnel(args = {}) {
 export const phQuerySchema = {
   name: 'ph_query',
   description:
-    'Run a raw HogQL SELECT against the events table and get the rows back. The ' +
-    'escape valve for property cuts the other tools do not cover — HogQL is SQL ' +
-    'over events, with event properties at properties.<name> and unique people at ' +
-    'count(distinct person_id). STRICTLY READ-ONLY: only SELECT (optionally a ' +
-    'leading WITH) is accepted; INSERT/UPDATE/DELETE/ALTER/DROP and multiple ' +
-    'statements are refused before the request is sent, not left to key scopes. ' +
-    'Keep it aggregate — do not select raw person identifiers or emails.',
+    'Run a raw HogQL SELECT against the EMOTON events table and get the rows back. ' +
+    'The escape valve for cuts the other tools do not cover — HogQL is SQL over ' +
+    'events, with event properties at properties.<name> (e.g. properties.zone, ' +
+    'properties.route) and unique visitors at count(distinct person_id). Scope is ' +
+    'EMOTON web events (the app sends nothing to PostHog). STRICTLY READ-ONLY: ' +
+    'only SELECT (optionally a leading WITH) is accepted; INSERT/UPDATE/DELETE/' +
+    'ALTER/DROP and multiple statements are refused before the request is sent, ' +
+    'not left to key scopes. Keep it aggregate — do not select raw identifiers.',
   inputSchema: {
     type: 'object',
     properties: {
-      query: { type: 'string', description: 'A single HogQL SELECT, e.g. "SELECT event, count() FROM events GROUP BY event".' },
+      query: { type: 'string', description: 'A single HogQL SELECT, e.g. "SELECT properties.zone AS zone, count(distinct person_id) FROM events WHERE event = \'shade_selected\' GROUP BY zone".' },
     },
     required: ['query'],
   },
@@ -331,10 +344,11 @@ export async function phQuery(args = {}) {
 export const phEventsSchema = {
   name: 'ph_events',
   description:
-    'List the event names PostHog is actually receiving in the window, with event ' +
-    'count and unique users each. Use it before slicing — PostHog can carry events ' +
-    'GA4 does not (its own autocapture), and an event that fires here but appears ' +
-    'in no analytics_catalog track() call is a likely gap. Read-only, aggregate-only.',
+    'List the EMOTON event names PostHog is actually receiving in the window, with ' +
+    'event count and unique visitors each. Use it before slicing to confirm which ' +
+    'EMOTON events are live (emoton_opened, zone_selected, shade_selected, ' +
+    'route_selected, practice_completed, download_cta_clicked, …) and their ' +
+    'volume. Read-only, aggregate-only.',
   inputSchema: {
     type: 'object',
     properties: {

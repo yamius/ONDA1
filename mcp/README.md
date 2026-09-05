@@ -260,32 +260,42 @@ Uses GA4's **built-in `appVersion`** dimension, which Firebase populates from
 the real marketing version. The app's own `app_version` field is deliberately
 NOT used: it carries `VITE_BUILD_NUMBER` (a CI run counter), not `1.8.x`.
 
-## PostHog tools (`ph_*`)
+## PostHog tools (`ph_*`) — EMOTON only
 
-PostHog runs alongside Firebase/GA4 in the app. The GA4 tools answer "how many";
-the `ph_*` tools answer "how many, **split by any event property**, unsampled" —
-the cut GA4 makes hard or impossible. They do **not** replace the GA4 tools:
-`funnel_review` / `retention_review` stay the cross-cut numbers against the
-baseline, and a divergence between the two sources is itself diagnostic.
+**Scope:** PostHog receives **EMOTON** events only — the landing's emotional
+check-in tool ([`emotonAnalytics.ts`](../landing/src/lib/emotonAnalytics.ts)),
+which reports to PostHog and nowhere else. The **iOS app sends nothing to
+PostHog** (its analytics are Firebase/GA4). So the `ph_*` tools answer EMOTON
+funnel questions — which emotional zones people name, where they drop, whether
+they return. For **app** questions (e.g. the watch/camera/simulated
+`metrics_source` split) use the GA4 tools: **`ga4_breakdown`**, `funnel_review`,
+`retention_review`. When app→PostHog capture ships, app-scoped `ph_*` tools can be
+added then.
 
 They speak HogQL (SQL over the `events` table; event properties at
-`properties.<name>`, unique people via `count(distinct person_id)`) through the
-Query API. House rules hold throughout: **read-only**, **aggregate-only**
-(`person_id` counts unique people, never leaves), every percentage carries its
-`N`, and shares are by **unique users**, not events — one heavy user cannot skew
-a breakdown.
+`properties.<name>` e.g. `properties.zone`, unique visitors via
+`count(distinct person_id)`) through the Query API. House rules: **read-only**,
+**aggregate-only**, every percentage carries its `N`, shares by **unique
+visitors** not events. EMOTON is **anonymous** (`person_profiles:
+'identified_only'`), so a "visitor" is a browser cookie and cross-day retention
+is undercounted for anyone who clears cookies or switches device.
 
-- `ph_breakdown` — the one this was built for: `event=results_view
-  property=metrics_source` → the watch / camera / simulated split by unique
-  users.
-- `ph_retention` — cohort d1/d7/d30, with `breakdown=<property>`; cohorts too
-  young for a milestone are excluded from its denominator, never scored zero.
-- `ph_funnel` — ordered `windowFunnel` across steps, splittable by property.
+EMOTON events: `emoton_opened`, `presence_started`, `zone_selected`,
+`shade_selected`, `route_selected`, `practice_started`, `practice_completed`,
+`bewith_entered`, `bewith_stayed_longer`, `assimilation_reached`,
+`download_cta_viewed`, `download_cta_clicked`. Properties include `zone`,
+`shade`, `route`, `placement`.
+
+- `ph_breakdown` — e.g. `event=shade_selected property=zone` → which emotional
+  zones people name, by unique visitors.
+- `ph_retention` — cohort d1/d7/d30, with `breakdown=zone`; too-young cohorts
+  excluded from a milestone, never scored zero (anonymous caveat above).
+- `ph_funnel` — the EMOTON funnel via `windowFunnel`, e.g.
+  `["emoton_opened","shade_selected","route_selected","practice_completed","download_cta_clicked"]`.
 - `ph_query` — raw HogQL, **SELECT-only**: `INSERT`/`UPDATE`/`DELETE`/`ALTER`/
   `DROP` and multiple statements are refused *before* the request is sent, not
   left to the key's scopes.
-- `ph_events` — what events PostHog actually receives, with frequency; cross-check
-  against `analytics_catalog` to spot an event that fires but is counted nowhere.
+- `ph_events` — which EMOTON events are live, with frequency.
 
 Env: `POSTHOG_API_KEY` (personal key, scopes `query:read` + `insight:read`) is
 the only required variable; `POSTHOG_PROJECT_ID` (default `462907`) and

@@ -1,10 +1,10 @@
 /**
  * PostHog source — HogQL Query API (us.posthog.com).
  *
- * Why this exists alongside the GA4 tools: GA4 answers "how many", PostHog
- * answers "how many, split by any event property, without sampling". The live
- * question that forced it — what share of results_view fires with metrics_source
- * = watch vs camera vs simulated — is one HogQL line here and a fight in GA4.
+ * Scope: EMOTON (the landing's emotional check-in) reports here and here only;
+ * the iOS app sends nothing to PostHog. So this source backs the EMOTON funnel
+ * questions — which emotional zones people name, where they drop, whether they
+ * come back — that live in PostHog and nowhere else. App analytics stay on GA4.
  *
  * READ-ONLY BY CONSTRUCTION. Every query passes assertSelectOnly() before it
  * leaves the process; a personal API key's own permissions are NOT relied on.

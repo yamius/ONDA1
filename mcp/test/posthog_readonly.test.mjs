@@ -49,6 +49,6 @@ test('ph_* return not_configured (not a crash) when POSTHOG_API_KEY is unset', a
   const q = await phQuery({ query: 'SELECT 1' });
   assert.equal(q.error, 'not_configured');
   assert.ok(q.missing.includes('POSTHOG_API_KEY'));
-  const b = await phBreakdown({ event: 'results_view', property: 'metrics_source' });
+  const b = await phBreakdown({ event: 'shade_selected', property: 'zone' });
   assert.equal(b.error, 'not_configured');
 });
