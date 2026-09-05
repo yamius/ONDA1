@@ -236,6 +236,13 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         if let hrv = HKQuantityType.quantityType(forIdentifier: .heartRateVariabilitySDNN) {
             typesToRead.insert(hrv)
         }
+        // Resting HR + respiratory rate: the 14-day baseline opened on first watch connect.
+        if let restingHR = HKQuantityType.quantityType(forIdentifier: .restingHeartRate) {
+            typesToRead.insert(restingHR)
+        }
+        if let respiratory = HKQuantityType.quantityType(forIdentifier: .respiratoryRate) {
+            typesToRead.insert(respiratory)
+        }
 
         typesToRead.insert(HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!)
         
@@ -487,7 +494,94 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         }
         healthStore.execute(query)
     }
-    
+
+    /// Baseline over the last N days (default 14): per signal (resting HR / HRV-SDNN / respiratory
+    /// rate) the daily avg / min / max plus the REAL number of days that carried data. Each signal is
+    /// aggregated to ONE value per calendar day first (mean of that day's samples), then avg/min/max
+    /// are taken over the daily values — so "min" is the calmest day, "max" the most restless, and
+    /// `days` is honest coverage (never claimed higher than what HealthKit actually held). Read-only;
+    /// nothing leaves the device.
+    @objc func queryBaseline(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            call.reject("HealthKit is not available")
+            return
+        }
+
+        let days = call.getInt("days") ?? 14
+        let now = Date()
+        let calendar = Calendar.current
+        let startDate = calendar.date(byAdding: .day, value: -days, to: calendar.startOfDay(for: now)) ?? now
+
+        let signals: [(key: String, id: HKQuantityTypeIdentifier)] = [
+            ("rhr", .restingHeartRate),
+            ("hrv", .heartRateVariabilitySDNN),
+            ("rr", .respiratoryRate),
+        ]
+
+        var result: [String: Any] = [:]
+        let group = DispatchGroup()
+
+        for signal in signals {
+            group.enter()
+            queryDailyStats(signal.id, from: startDate, to: now) { avg, minV, maxV, dayCount in
+                // Marshal every write onto main so the shared dict isn't raced by the 3 background queries.
+                DispatchQueue.main.async {
+                    var entry: [String: Any] = ["days": dayCount]
+                    if let avg = avg { entry["avg"] = avg }
+                    if let minV = minV { entry["min"] = minV }
+                    if let maxV = maxV { entry["max"] = maxV }
+                    result[signal.key] = entry
+                    group.leave()
+                }
+            }
+        }
+
+        group.notify(queue: .main) {
+            call.resolve(result)
+        }
+    }
+
+    /// Aggregation helper: all samples in [from, to] → one value per calendar day (mean of the day's
+    /// samples), then avg/min/max over those daily values, plus the count of days with data.
+    private func queryDailyStats(_ identifier: HKQuantityTypeIdentifier, from: Date, to: Date, completion: @escaping (Double?, Double?, Double?, Int) -> Void) {
+        guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
+            completion(nil, nil, nil, 0)
+            return
+        }
+
+        let predicate = HKQuery.predicateForSamples(withStart: from, end: to, options: .strictStartDate)
+        let query = HKSampleQuery(sampleType: type, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { _, samples, _ in
+            guard let samples = samples as? [HKQuantitySample], !samples.isEmpty else {
+                completion(nil, nil, nil, 0)
+                return
+            }
+
+            let unit = self.unitFor(identifier)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+
+            // Sum + count per calendar day → daily mean.
+            var daySum: [String: Double] = [:]
+            var dayN: [String: Int] = [:]
+            for sample in samples {
+                let day = dateFormatter.string(from: sample.endDate)
+                let value = sample.quantity.doubleValue(for: unit)
+                daySum[day, default: 0] += value
+                dayN[day, default: 0] += 1
+            }
+
+            let dailyValues = daySum.map { key, sum in sum / Double(dayN[key] ?? 1) }
+            guard !dailyValues.isEmpty else {
+                completion(nil, nil, nil, 0)
+                return
+            }
+
+            let avg = dailyValues.reduce(0, +) / Double(dailyValues.count)
+            completion(avg, dailyValues.min(), dailyValues.max(), dailyValues.count)
+        }
+        healthStore.execute(query)
+    }
+
     private func queryLatest(_ identifier: HKQuantityTypeIdentifier, completion: @escaping (Double?) -> Void) {
         guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
             completion(nil)

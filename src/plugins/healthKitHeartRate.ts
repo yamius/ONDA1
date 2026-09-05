@@ -67,6 +67,22 @@ export interface SleepHistoryResult {
   records: SleepRecord[];
 }
 
+/** One signal's baseline over the window: daily avg/min/max + the real number of days with data. */
+export interface BaselineSignalStat {
+  avg?: number;
+  min?: number;
+  max?: number;
+  /** Days that actually carried data, 0..window. Never inflated. */
+  days: number;
+}
+
+/** 14-day baseline read from HealthKit (resting HR / HRV-SDNN / respiratory rate). */
+export interface BaselineResult {
+  rhr: BaselineSignalStat;
+  hrv: BaselineSignalStat;
+  rr: BaselineSignalStat;
+}
+
 export interface HealthKitHeartRatePlugin {
   isAvailable(): Promise<{ available: boolean }>;
   requestAuthorization(): Promise<{ authorized: boolean }>;
@@ -74,6 +90,8 @@ export interface HealthKitHeartRatePlugin {
   queryHeartRate(options?: { limit?: number; minutesAgo?: number }): Promise<QueryHeartRateResult>;
   queryAllHealthData(): Promise<HealthKitDataResult>;
   querySleepHistory(options?: { days?: number }): Promise<SleepHistoryResult>;
+  /** Read the N-day baseline (default 14) — daily avg/min/max per signal. Needs full HealthKit auth. */
+  queryBaseline(options?: { days?: number }): Promise<BaselineResult>;
   startRealtimeMonitoring(): Promise<{ started: boolean }>;
   stopRealtimeMonitoring(): Promise<{ stopped: boolean }>;
   addListener(
