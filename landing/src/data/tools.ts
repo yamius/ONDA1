@@ -263,4 +263,12 @@ export const TOOLS: ToolEntry[] = [
     category: 'NERVOUS SYSTEM',
     badge: 'RSA',
   },
+  {
+    slug: 'baseline',
+    name: 'Apple Watch Baseline',
+    blurb: 'See what your Apple Watch already recorded — two weeks of resting pulse, HRV and breathing read from your own Health data, on your iPhone. The range, not one number. Nothing is uploaded.',
+    live: true,
+    category: 'RECOVERY',
+    badge: 'WATCH',
+  },
 ]

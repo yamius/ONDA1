@@ -537,6 +537,8 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
       items.push({ name: 'Resting Heart Rate', url: `${SITE_URL}/tools/resting-heart-rate` })
     } else if (segments[1] === 'recovery-score') {
       items.push({ name: 'Recovery Score', url: `${SITE_URL}/tools/recovery-score` })
+    } else if (segments[1] === 'baseline') {
+      items.push({ name: 'Apple Watch Baseline', url: `${SITE_URL}/tools/baseline` })
     } else if (segments[1] === 'camera-heart-rate') {
       items.push({ name: 'Camera Heart Rate', url: `${SITE_URL}/tools/camera-heart-rate` })
     } else if (segments[1] === 'breathing-rate') {
@@ -1824,6 +1826,41 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
       image: `${SITE_URL}/images/tools/recovery-score.png`,
       faq: { mainEntity: RECOVERY_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  if (route === '/tools/baseline') {
+    return {
+      title: 'See Your Apple Watch Data — Two-Week Baseline | ONDA Life',
+      description:
+        'A free tool that reads two weeks of your own Apple Health — resting heart rate, HRV and breathing rate — on your iPhone and shows your range, not one number. Nothing is uploaded.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      image: `${SITE_URL}/images/tools/baseline.png`,
+      faq: {
+        url,
+        mainEntity: [
+          {
+            question: 'What does the Baseline tool show?',
+            answer:
+              'Two weeks of your resting heart rate, heart-rate variability and breathing rate, read from your own Apple Health — shown as your low-to-high range, not a single number.',
+          },
+          {
+            question: 'Is my Apple Health data sent anywhere?',
+            answer:
+              'No. The figures are read on your iPhone and ride back in the URL fragment, which the browser never sends to a server. This page carries no analytics of any kind.',
+          },
+          {
+            question: 'Do I need an Apple Watch?',
+            answer:
+              'An Apple Watch gives the fullest reading, but iPhone-only Health data — such as breathing rate and some heart-rate figures — still shows whatever was recorded.',
+          },
+          {
+            question: 'Does it work on Android?',
+            answer: 'No. It reads Apple Health, which only exists on iPhone. Open the page on an iPhone and it works.',
+          },
+        ],
+      },
     }
   }
   if (route === '/tools/camera-heart-rate') {

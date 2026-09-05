@@ -129,6 +129,24 @@ export function ReviewPage() {
       )}
       {review.linkType !== 'affiliate' && <div className="mb-10" />}
 
+      {/* Baseline cross-link (task 76): on tracker reviews, offer the free way to see your own data.
+          Same intent as reading a $300-wearable review, and it passes equity to the new tool page. */}
+      {review.category === 'hrv-wearable' && (
+        <aside className="mb-10 rounded-xl border border-terminal-green/25 bg-terminal-green/[0.06] p-5">
+          <p className="mb-1 font-mono text-[10px] font-bold uppercase tracking-widest text-terminal-green/80">
+            Before you buy
+          </p>
+          <p className="text-[15px] leading-relaxed text-white/80">
+            You may already own the data. Our free{' '}
+            <Link to={langHref('/tools/baseline', lang)} className="text-terminal-green underline decoration-terminal-green/40 underline-offset-2 hover:decoration-terminal-green">
+              Apple Watch Baseline
+            </Link>{' '}
+            tool reads two weeks of your resting heart rate, HRV and breathing off your own Apple
+            Health — the range, not one number — on your iPhone, with nothing uploaded.
+          </p>
+        </aside>
+      )}
+
       {/* Criterion breakdown */}
       <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-green/90">
         {tReviews('ui.scoreBreakdown')}

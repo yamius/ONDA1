@@ -28,6 +28,7 @@ import { TopicsPage } from './pages/TopicsPage'
 import { TopicPage } from './pages/TopicPage'
 import { ResearchPage } from './pages/ResearchPage'
 import { ToolsPage } from './pages/ToolsPage'
+import { BaselinePage } from './pages/BaselinePage'
 import { HrvInterpreterPage } from './pages/HrvInterpreterPage'
 import { CaffeineCalculatorPage } from './pages/CaffeineCalculatorPage'
 import { SleepDebtCalculatorPage } from './pages/SleepDebtCalculatorPage'
@@ -105,6 +106,8 @@ export function createApp(location: string, lang?: Lang) {
       <Routes>
         {/* Bare embeddable widgets — no Layout chrome (iframe-friendly). */}
         <Route path="/embed/hrv" element={<HrvEmbedPage />} />
+        {/* Baseline: no Layout chrome — script-free health-fragment page (see BaselinePage). */}
+        <Route path="/tools/baseline" element={<BaselinePage />} />
         <Route element={<Layout />}>
           <Route path="/"            element={<HomePage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (

@@ -470,6 +470,7 @@ const nonLocalizedStaticPaths = [
   '/tools/camera-heart-rate',
   '/tools/breathing-rate',
   '/tools/breath-heart-biofeedback',
+  '/tools/baseline',
   '/embed/hrv',
 ]
 

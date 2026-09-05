@@ -76,6 +76,7 @@ const TopicPage          = lazy(() => import('./pages/TopicPage').then(m => ({ d
 const ArticlesSlugRouter = lazyNs(['articles', 'glossary'], () => import('./components/ArticlesSlugRouter'))
 const ResearchPage          = lazy(() => import('./pages/ResearchPage').then(m => ({ default: m.ResearchPage })))
 const ToolsPage             = lazy(() => import('./pages/ToolsPage').then(m => ({ default: m.ToolsPage })))
+const BaselinePage          = lazy(() => import('./pages/BaselinePage').then(m => ({ default: m.BaselinePage })))
 const HrvInterpreterPage    = lazy(() => import('./pages/HrvInterpreterPage').then(m => ({ default: m.HrvInterpreterPage })))
 const CaffeineCalculatorPage = lazy(() => import('./pages/CaffeineCalculatorPage').then(m => ({ default: m.CaffeineCalculatorPage })))
 const SleepDebtCalculatorPage = lazy(() => import('./pages/SleepDebtCalculatorPage').then(m => ({ default: m.SleepDebtCalculatorPage })))
@@ -120,6 +121,10 @@ const routeElements = (
   <>
           {/* Bare embeddable widgets — no Layout chrome (iframe-friendly). */}
           <Route path="/embed/hrv" element={<HrvEmbedPage />} />
+          {/* Baseline reads a person's own Health figures from the URL fragment, so it MUST carry no
+              third-party script: it lives outside Layout (no Reddit route tracker) and prerender.ts
+              strips the pixel/GTM from its HTML. See BaselinePage + scripts/prerender.ts. */}
+          <Route path="/tools/baseline" element={<BaselinePage />} />
           <Route element={<Layout />}>
             <Route path="/"            element={<HomePage />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (

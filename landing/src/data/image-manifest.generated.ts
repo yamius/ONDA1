@@ -1155,5 +1155,17 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/onda-life-hrv-consciousness-hero.webp": {
     "width": 1024,
     "height": 682
+  },
+  "/tools/baseline/card-bg.avif": {
+    "width": 1080,
+    "height": 1920
+  },
+  "/tools/baseline/card-bg.jpg": {
+    "width": 1080,
+    "height": 1920
+  },
+  "/tools/baseline/card-bg.webp": {
+    "width": 1080,
+    "height": 1920
   }
 } as const

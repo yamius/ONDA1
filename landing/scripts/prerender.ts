@@ -35,6 +35,13 @@ const distDir = join(projectRoot, 'dist')
 
 const routes = getPrerenderRoutes()
 
+/**
+ * Routes that must ship with NO third-party script (privacy — task 76). Baseline reads a person's
+ * own Health figures from the URL fragment; a tag that sends location.href would leak them. Kept in
+ * sync with the routes rendered outside Layout in main.tsx / entry-server.tsx.
+ */
+const SCRIPT_FREE_ROUTES = new Set<string>(['/tools/baseline'])
+
 // ── Build/version beacon ─────────────────────────────────────────────
 // Stamp the real built commit + UTC build time into every page's <head>,
 // so the live build is verifiable in a single fetch (curl | grep
@@ -533,6 +540,19 @@ for (const route of routes) {
     if (route !== '/') {
       out = out.replace(/<!-- Google Tag Manager -->[\s\S]*?<!-- End Google Tag Manager -->\s*/g, '')
       out = out.replace(/<!-- Google Tag Manager \(noscript\) -->[\s\S]*?<!-- End Google Tag Manager \(noscript\) -->\s*/g, '')
+    }
+    // Script-free routes: strip EVERY third-party script from the HTML. Baseline
+    // (/tools/baseline) reads a person's own Apple Health figures out of the URL
+    // fragment; the fragment is private only while nothing loads a tag that would
+    // send location.href — GTM/GA4 and the Reddit pixel both do. Belt-and-suspenders
+    // with rendering the route outside Layout (no route tracker). Openers matched
+    // loosely (the GTM head comment carries trailing text; the Reddit comment spans
+    // lines) so a copy-edit to a snippet cannot silently re-arm tracking here.
+    if (SCRIPT_FREE_ROUTES.has(route)) {
+      out = out
+        .replace(/<!-- Google Tag Manager[\s\S]*?<!-- End Google Tag Manager -->\s*/g, '')
+        .replace(/<!-- Google Tag Manager \(noscript\)[\s\S]*?<!-- End Google Tag Manager \(noscript\) -->\s*/g, '')
+        .replace(/<!-- Reddit Pixel[\s\S]*?<!-- End Reddit Pixel -->\s*/g, '')
     }
     // For /<lang>/articles/<slug>, ask getMetaForRoute about the EN
     // equivalent so injectMetaIntoHtml emits the proper TechArticle
