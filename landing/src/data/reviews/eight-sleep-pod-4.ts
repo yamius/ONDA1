@@ -65,7 +65,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   references: [
     { label: 'Eight Sleep Pod — official site', url: 'https://www.eightsleep.com/' },
   ],
-  relatedSlugs: ['eight-sleep-pod-cover-pro', 'chilipad-dock-pro', 'bedjet-3'],
+  relatedSlugs: ['chilipad-cube', 'eight-sleep-pod-cover-pro', 'chilipad-dock-pro', 'bedjet-3'],
   publishOn: '2026-06-15',
   datePublished: '2026-06-15',
   dateModified: '2026-06-15',

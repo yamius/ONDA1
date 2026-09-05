@@ -67,7 +67,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Ultrahuman Ring Air — official product page', url: 'https://www.ultrahuman.com/ring/' },
     { label: 'Smart ring HRV and sleep validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=smart+ring+heart+rate+variability+sleep+validation' },
   ],
-  relatedSlugs: ['oura-ring-4', 'samsung-galaxy-ring', 'ringconn-gen-2'],
+  relatedSlugs: ['ultrahuman-m1', 'oura-ring-4', 'samsung-galaxy-ring', 'ringconn-gen-2'],
   datePublished: '2026-05-15',
   dateModified: '2026-05-15',
 }

@@ -66,7 +66,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { label: 'Levels — official site', url: 'https://www.levels.com/' },
     { label: 'Dexcom G7 accuracy validation (Diabetes Technology & Therapeutics)', url: 'https://www.liebertpub.com/doi/10.1089/dia.2023.0218' },
   ],
-  relatedSlugs: ['nutrisense', 'stelo', 'zoe'],
+  relatedSlugs: ['ultrahuman-m1', 'nutrisense', 'stelo', 'zoe'],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

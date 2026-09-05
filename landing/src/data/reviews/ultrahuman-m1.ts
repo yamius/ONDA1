@@ -66,7 +66,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { label: 'Ultrahuman Cyborg / M1 — official site', url: 'https://www.ultrahuman.com/cyborg/' },
     { label: 'Abbott FreeStyle Libre 3 accuracy validation (J Diabetes Sci Technol)', url: 'https://journals.sagepub.com/doi/10.1177/19322968221101632' },
   ],
-  relatedSlugs: ['levels', 'lingo', 'veri'],
+  relatedSlugs: ['ultrahuman-ring-air', 'levels', 'lingo', 'veri'],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

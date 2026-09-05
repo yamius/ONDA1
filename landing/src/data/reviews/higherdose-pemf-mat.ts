@@ -63,7 +63,7 @@ Choose HigherDOSE PEMF Mat for consumer-polished multi-modality recovery at $1,2
   references: [
     { label: 'HigherDOSE — official site', url: 'https://higherdose.com/' },
   ],
-  relatedSlugs: ['healthy-wave-multi-wave', 'omi-full-body-mat', 'bemer-classic-evo'],
+  relatedSlugs: ['resona-health-vibe', 'healthy-wave-multi-wave', 'omi-full-body-mat', 'bemer-classic-evo'],
   publishOn: '2026-06-22',
   datePublished: '2026-06-22',
   dateModified: '2026-06-22',

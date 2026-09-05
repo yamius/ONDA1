@@ -65,7 +65,7 @@ The biology of why cold exposure works — and the protocols that compound with 
     { label: 'The Plunge — official product page', url: 'https://theplunge.com/' },
     { label: 'Cold-water immersion and vagal tone (Frontiers in Physiology)', url: 'https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.876283/full' },
   ],
-  relatedSlugs: ['edge-tub', 'coldture', 'morozko-forge'],
+  relatedSlugs: ['inergize-cold-tub', 'edge-tub', 'coldture', 'morozko-forge'],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }
