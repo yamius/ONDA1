@@ -536,11 +536,12 @@ for (const route of routes) {
     if (sharedRoot) sharedRoot.innerHTML = html
 
     let out = dom.serialize()
-    // GTM only on EN main page (/index.html); strip from prerendered subpages.
-    if (route !== '/') {
-      out = out.replace(/<!-- Google Tag Manager -->[\s\S]*?<!-- End Google Tag Manager -->\s*/g, '')
-      out = out.replace(/<!-- Google Tag Manager \(noscript\) -->[\s\S]*?<!-- End Google Tag Manager \(noscript\) -->\s*/g, '')
-    }
+    // GTM runs site-wide, on every page, on purpose (analytics for articles/tools/reviews,
+    // not just the homepage). There used to be a `route !== '/'` strip here meant to keep
+    // GTM to the homepage, but its head-block regex never matched the real opener comment
+    // (`<!-- Google Tag Manager: dataLayer init… -->`), so GTM shipped everywhere regardless —
+    // the strip was dead, misleading code. Removed 2026-09-05 after confirming the intent is
+    // GTM on all pages. The only pages that must stay script-free are handled below.
     // Script-free routes: strip EVERY third-party script from the HTML. Baseline
     // (/tools/baseline) reads a person's own Apple Health figures out of the URL
     // fragment; the fragment is private only while nothing loads a tag that would
