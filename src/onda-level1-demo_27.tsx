@@ -6403,17 +6403,6 @@ const OndaLevel1 = () => {
             <div className="w-full max-w-[360px]">
               <BaselineCard data={baseline.data} source={baseline.source} />
             </div>
-            {baseline.source !== 'watch' && (
-              <button
-                type="button"
-                onClick={() => { track('watch_connect_tapped', { source: 'baseline_card' }); setShowPermissionModal(true); }}
-                className={`mt-4 flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${emoTint}`}
-                data-testid="baseline-connect-watch"
-              >
-                <Watch className="w-4 h-4" />
-                {t('baseline.connect_watch', 'Connect Apple Watch')}
-              </button>
-            )}
           </div>
         )}
 

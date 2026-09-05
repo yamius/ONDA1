@@ -17,6 +17,10 @@ const CORAL = 'rgb(232,83,79)';
 const GRAY = 'rgb(146,161,186)';
 const WHITE = 'rgb(240,245,252)';
 
+// Soft dark "cloud" behind a number so it reads over the bright figure.
+// Layered dark blur in em → scales with each number's own font-size.
+const CLOUD = '0 0 0.45em rgba(4,8,14,0.98), 0 0 0.9em rgba(4,8,14,0.9), 0 0 1.5em rgba(4,8,14,0.7)';
+
 // Row anchors (v21 y / 1672), bottom-up: slot[0] sits lowest and the column collapses upward.
 const ROW_TOP = [44.9, 33.5, 22.1, 11.4];
 const SIDE = '5.95%'; // v21 x=56 / 941
@@ -26,8 +30,8 @@ function Slot({ value, caption, side, row }: { value: string; caption: string; s
   const pos = side === 'left' ? { left: SIDE } : { right: SIDE };
   return (
     <div className={`absolute ${align}`} style={{ ...pos, top: `${ROW_TOP[row]}%` }}>
-      <div style={{ color: GREEN, fontSize: '5.7cqw', fontWeight: 700, lineHeight: 1 }} className="tabular-nums">{value}</div>
-      <div style={{ color: GRAY, fontSize: '1.9cqw', marginTop: '0.6cqw' }}>{caption}</div>
+      <div style={{ color: GREEN, fontSize: '7.4cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{value}</div>
+      <div style={{ color: GRAY, fontSize: '1.9cqw', marginTop: '0.6cqw', textShadow: CLOUD }}>{caption}</div>
     </div>
   );
 }
@@ -52,11 +56,11 @@ export function BaselineCard({ data, source }: { data: BaselineData; source: Bas
       {/* Hero — resting pulse on the chest */}
       {model.hero && (
         <div className="absolute w-full text-center" style={{ top: '20.5%' }}>
-          <div style={{ color: CORAL, fontSize: '11cqw', fontWeight: 800, lineHeight: 1, textShadow: '0 0 6cqw rgba(232,83,79,0.45)' }} className="tabular-nums">
+          <div style={{ color: CORAL, fontSize: '13.2cqw', fontWeight: 800, lineHeight: 1, textShadow: `${CLOUD}, 0 0 6cqw rgba(232,83,79,0.4)` }} className="tabular-nums">
             {model.hero.value}
           </div>
-          <div style={{ color: GRAY, fontSize: '2.1cqw', fontWeight: 500, letterSpacing: '0.05em', marginTop: '1cqw' }}>{model.hero.label}</div>
-          <div style={{ color: GRAY, fontSize: '1.9cqw', opacity: 0.75 }}>{model.hero.sub}</div>
+          <div style={{ color: GRAY, fontSize: '2.1cqw', fontWeight: 500, letterSpacing: '0.05em', marginTop: '1cqw', textShadow: CLOUD }}>{model.hero.label}</div>
+          <div style={{ color: GRAY, fontSize: '1.9cqw', opacity: 0.85, textShadow: CLOUD }}>{model.hero.sub}</div>
         </div>
       )}
 
@@ -67,16 +71,16 @@ export function BaselineCard({ data, source }: { data: BaselineData; source: Bas
       {/* Variability bar + closing lines */}
       {model.variability && (
         <div className="absolute w-full text-center" style={{ top: '60%' }}>
-          <div style={{ color: GRAY, fontSize: '2.1cqw', fontWeight: 500, letterSpacing: '0.08em' }}>VARIABILITY</div>
-          <div style={{ color: GREEN, fontSize: '2cqw', marginTop: '0.6cqw' }}>{model.variability.caption}</div>
+          <div style={{ color: GRAY, fontSize: '2.1cqw', fontWeight: 500, letterSpacing: '0.08em', textShadow: CLOUD }}>VARIABILITY</div>
+          <div style={{ color: GREEN, fontSize: '2cqw', marginTop: '0.6cqw', textShadow: CLOUD }}>{model.variability.caption}</div>
           <div className="relative" style={{ margin: '2.6cqw 18% 0' }}>
             <div style={{ height: '0.32cqw', background: 'rgb(50,72,98)', borderRadius: 999 }} />
             <div className="absolute rounded-full" style={{
               width: '2cqw', height: '2cqw', background: GREEN, top: '-0.84cqw',
               left: `calc(${Math.min(Math.max(model.variability.position, 0), 1) * 100}% - 1cqw)`,
             }} />
-            <div className="absolute" style={{ color: WHITE, fontSize: '4.7cqw', fontWeight: 700, right: 'calc(100% + 2cqw)', top: '-2.6cqw' }}>{model.variability.min}</div>
-            <div className="absolute" style={{ color: WHITE, fontSize: '4.7cqw', fontWeight: 700, left: 'calc(100% + 2cqw)', top: '-2.6cqw' }}>{model.variability.max}</div>
+            <div className="absolute" style={{ color: WHITE, fontSize: '6.1cqw', fontWeight: 700, right: 'calc(100% + 2cqw)', top: '-3.4cqw', textShadow: CLOUD }}>{model.variability.min}</div>
+            <div className="absolute" style={{ color: WHITE, fontSize: '6.1cqw', fontWeight: 700, left: 'calc(100% + 2cqw)', top: '-3.4cqw', textShadow: CLOUD }}>{model.variability.max}</div>
           </div>
           <div style={{ color: WHITE, fontSize: '2.4cqw', marginTop: '5cqw', lineHeight: 1.5 }}>
             <div>{model.variability.lineOne}</div>
