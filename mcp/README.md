@@ -30,6 +30,7 @@ people drop off**.
 | `installs_review` | Where did installs come from? | App Store Connect + Tenjin |
 | `revenue_review` | Are people paying? | RevenueCat v2 |
 | `retention_review` | Do they come back? | GA4 Data API (cohorts) |
+| `ga4_breakdown` | One event split by a dimension (share by unique users) | GA4 Data API |
 | `site_fetch` | What is on a page? | the ONDA site |
 | `site_style` | What are the brand colours and fonts? | the ONDA site |
 | `site_health` | Does the live domain match the preview? | the ONDA site |

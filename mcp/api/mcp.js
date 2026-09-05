@@ -14,6 +14,7 @@ import { funnelReview, funnelReviewSchema } from '../tools/funnel_review.js';
 import { installsReview, installsReviewSchema } from '../tools/installs_review.js';
 import { revenueReview, revenueReviewSchema } from '../tools/revenue_review.js';
 import { retentionReview, retentionReviewSchema } from '../tools/retention_review.js';
+import { ga4Breakdown, ga4BreakdownSchema } from '../tools/ga4_breakdown.js';
 import {
   copyLookupTool, copyLookupSchema,
   analyticsCatalogTool, analyticsCatalogSchema,
@@ -47,6 +48,7 @@ const TOOLS = [
   { schema: installsReviewSchema, run: installsReview },
   { schema: revenueReviewSchema, run: revenueReview },
   { schema: retentionReviewSchema, run: retentionReview },
+  { schema: ga4BreakdownSchema, run: ga4Breakdown },
   { schema: siteFetchSchema, run: siteFetchTool },
   { schema: siteStyleSchema, run: siteStyleTool },
   { schema: siteHealthSchema, run: siteHealthTool },
