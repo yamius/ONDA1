@@ -102,6 +102,9 @@ import bemerVsHealthyWave from './bemer-classic-evo-vs-healthy-wave-multi-wave'
 import healthyWaveVsQiCoil from './healthy-wave-multi-wave-vs-qi-coil'
 import whoopVsUltrahuman from './whoop-5-0-vs-ultrahuman-ring-air'
 import hv3ProVsTheragunProPlus from './hypervolt-3-pro-vs-theragun-pro-plus'
+import hv3ProVsHv2Pro from './hypervolt-3-pro-vs-hypervolt-2-pro'
+import hv3ProVsTheragunElite from './hypervolt-3-pro-vs-theragun-elite'
+import hv3ProVsAchedaway from './hypervolt-3-pro-vs-achedaway-pro'
 import ouraRing5VsRing4 from './oura-ring-5-vs-oura-ring-4'
 import ouraRing5VsWhoop from './oura-ring-5-vs-whoop-5-0'
 import ouraRing5VsAppleWatch11 from './oura-ring-5-vs-apple-watch-series-11'
@@ -280,6 +283,9 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   healthyWaveVsQiCoil,
   whoopVsUltrahuman,
   hv3ProVsTheragunProPlus,
+  hv3ProVsHv2Pro,
+  hv3ProVsTheragunElite,
+  hv3ProVsAchedaway,
   ouraRing5VsRing4,
   ouraRing5VsWhoop,
   ouraRing5VsAppleWatch11,
