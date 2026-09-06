@@ -102,6 +102,9 @@ import bemerVsHealthyWave from './bemer-classic-evo-vs-healthy-wave-multi-wave'
 import healthyWaveVsQiCoil from './healthy-wave-multi-wave-vs-qi-coil'
 import whoopVsUltrahuman from './whoop-5-0-vs-ultrahuman-ring-air'
 import ouraRing5VsRing4 from './oura-ring-5-vs-oura-ring-4'
+import ouraRing5VsWhoop from './oura-ring-5-vs-whoop-5-0'
+import ouraRing5VsAppleWatch11 from './oura-ring-5-vs-apple-watch-series-11'
+import ouraRing5VsUltrahuman from './oura-ring-5-vs-ultrahuman-ring-air'
 import pod4VsPod5 from './eight-sleep-pod-4-vs-eight-sleep-pod-5'
 import ultrahumanVsSamsungRing from './ultrahuman-ring-air-vs-samsung-galaxy-ring'
 import ouraVsFitbitCharge6 from './oura-ring-4-vs-fitbit-charge-6'
@@ -269,6 +272,9 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   healthyWaveVsQiCoil,
   whoopVsUltrahuman,
   ouraRing5VsRing4,
+  ouraRing5VsWhoop,
+  ouraRing5VsAppleWatch11,
+  ouraRing5VsUltrahuman,
   pod4VsPod5,
   ultrahumanVsSamsungRing,
   ouraVsFitbitCharge6,
