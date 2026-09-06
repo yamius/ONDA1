@@ -262,6 +262,7 @@ const OndaLevel1 = () => {
     void loadWatchBaseline();
   }, [watchHeartRate.isConnected, loadWatchBaseline]);
 
+
   // Track app open on mount
   useEffect(() => {
     track('app_open', { platform });
@@ -6437,6 +6438,8 @@ const OndaLevel1 = () => {
               data={baseline?.data ?? null}
               source={baseline?.source ?? 'camera'}
               emptyHint={t('baseline.empty_hint', 'Подключите Apple Watch, чтобы открыть базлайн из 14 дней истории Health')}
+              liveHr={displayHeartRate}
+              liveBr={vitalsData.br}
             />
           </div>
         </div>

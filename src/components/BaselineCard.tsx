@@ -32,17 +32,29 @@ function Slot({ value, caption, side, row, offsetY }: { value: string; caption: 
   return (
     <div className={`absolute ${align}`} style={{ ...pos, top }}>
       <div style={{ color: GREEN, fontSize: '8.9cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{value}</div>
-      <div style={{ color: GRAY, fontSize: '2.66cqw', marginTop: '0.6cqw', textShadow: CLOUD }}>{caption}</div>
+      {/* Caption +10% and capped in width so long labels wrap to 2 lines instead
+          of running across the figure. */}
+      <div style={{ color: GRAY, fontSize: '2.93cqw', lineHeight: 1.2, marginTop: '0.8cqw', maxWidth: '30cqw', textShadow: CLOUD }}>{caption}</div>
     </div>
   );
 }
 
-export function BaselineCard({ data, source, emptyHint }: { data: BaselineData | null; source: BaselineSource; emptyHint?: string }) {
+export function BaselineCard({ data, source, emptyHint, liveHr, liveBr }: {
+  data: BaselineData | null;
+  source: BaselineSource;
+  emptyHint?: string;
+  /** Live pulse (Watch/camera) — when present the coral hero shows it in real
+   *  time with a pulsing dot, and live breathing appears to its right (mirrors
+   *  the Pulse | Breathing tiles above the card). Absent → the static baseline. */
+  liveHr?: number | null;
+  liveBr?: number | null;
+}) {
   // The card is ALWAYS on home once the user reaches it — it never unmounts, so
   // connecting a watch can only fill it, never make it disappear. With no data
   // yet it shows the figure + an invitation; camera/watch numbers pour in later.
   const model: CardModel | null = data ? buildCardModel(data.readings, data.extras, source) : null;
   const isEmpty = !model || model.empty;
+  const isLive = liveHr != null;
 
   return (
     <div
@@ -51,6 +63,8 @@ export function BaselineCard({ data, source, emptyHint }: { data: BaselineData |
     >
       {/* Neon body figure */}
       <img src={figureSrc} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover object-top" />
+      {/* Uniform dim over the whole figure so every label reads better. */}
+      <div className="absolute inset-0 pointer-events-none" style={{ background: 'rgba(6,10,16,0.34)' }} />
       {/* Scrims: darken top + bottom so the numbers and the closing lines stay legible over the figure. */}
       <div className="absolute inset-0 pointer-events-none" style={{
         background:
@@ -64,14 +78,31 @@ export function BaselineCard({ data, source, emptyHint }: { data: BaselineData |
         </div>
       )}
 
-      {/* Hero — resting pulse on the chest */}
-      {model?.hero && (
+      {/* Hero — resting pulse on the chest. Live pulse (Watch/camera) replaces the
+          static value in real time, with a soft pulsing dot beneath it. */}
+      {(model?.hero || isLive) && (
         <div className="absolute w-full text-center" style={{ top: '20.5%' }}>
           <div style={{ color: CORAL, fontSize: '13.2cqw', fontWeight: 800, lineHeight: 1, textShadow: `${CLOUD}, 0 0 6cqw rgba(232,83,79,0.4)` }} className="tabular-nums">
-            {model.hero.value}
+            {isLive ? liveHr : model?.hero?.value}
           </div>
-          <div style={{ color: GRAY, fontSize: '2.94cqw', fontWeight: 500, letterSpacing: '0.05em', marginTop: '1cqw', textShadow: CLOUD }}>{model.hero.label}</div>
-          <div style={{ color: GRAY, fontSize: '2.66cqw', opacity: 0.85, textShadow: CLOUD }}>{model.hero.sub}</div>
+          {isLive ? (
+            <div className="mx-auto rounded-full animate-pulse" style={{ width: '2.4cqw', height: '2.4cqw', background: CORAL, marginTop: '1.6cqw', boxShadow: '0 0 3.5cqw rgba(232,83,79,0.75)' }} />
+          ) : (
+            <>
+              <div style={{ color: GRAY, fontSize: '2.94cqw', fontWeight: 500, letterSpacing: '0.05em', marginTop: '1cqw', textShadow: CLOUD }}>{model?.hero?.label}</div>
+              <div style={{ color: GRAY, fontSize: '2.66cqw', opacity: 0.85, textShadow: CLOUD }}>{model?.hero?.sub}</div>
+            </>
+          )}
+        </div>
+      )}
+
+      {/* Live breathing — to the right, at the hero's level (mirrors the top tile). */}
+      {isLive && liveBr != null && (
+        <div className="absolute text-right" style={{ right: SIDE, top: '20.5%' }}>
+          <div style={{ color: GREEN, fontSize: '8.9cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">
+            <span style={{ fontSize: '4.2cqw', opacity: 0.6 }}>≈</span>{Math.round(liveBr)}
+          </div>
+          <div style={{ color: GRAY, fontSize: '2.93cqw', marginTop: '0.8cqw', maxWidth: '30cqw', lineHeight: 1.2, textShadow: CLOUD }}>breaths / min · live</div>
         </div>
       )}
 
@@ -80,12 +111,13 @@ export function BaselineCard({ data, source, emptyHint }: { data: BaselineData |
       {model?.left.map((s, i) => <Slot key={`l${i}`} value={s.value} caption={s.caption} side="left" row={i} offsetY={i === 1 ? '4.45cqw' : undefined} />)}
       {model?.right.map((s, i) => <Slot key={`r${i}`} value={s.value} caption={s.caption} side="right" row={i} />)}
 
-      {/* Variability bar + closing lines */}
+      {/* Variability bar + closing lines. Text +30% over the green-number
+          captions; the whole block sits a little lower. */}
       {model?.variability && (
-        <div className="absolute w-full text-center" style={{ top: '60%' }}>
-          <div style={{ color: GRAY, fontSize: '2.1cqw', fontWeight: 500, letterSpacing: '0.08em', textShadow: CLOUD }}>VARIABILITY</div>
-          <div style={{ color: GREEN, fontSize: '2cqw', marginTop: '0.6cqw', textShadow: CLOUD }}>{model.variability.caption}</div>
-          <div className="relative" style={{ margin: '2.6cqw 18% 0' }}>
+        <div className="absolute w-full text-center" style={{ top: '62%' }}>
+          <div style={{ color: GRAY, fontSize: '2.9cqw', fontWeight: 500, letterSpacing: '0.08em', textShadow: CLOUD }}>VARIABILITY</div>
+          <div style={{ color: GREEN, fontSize: '3.6cqw', marginTop: '0.8cqw', textShadow: CLOUD }}>{model.variability.caption}</div>
+          <div className="relative" style={{ margin: '3.4cqw 18% 0' }}>
             <div style={{ height: '0.32cqw', background: 'rgb(50,72,98)', borderRadius: 999 }} />
             <div className="absolute rounded-full" style={{
               width: '2cqw', height: '2cqw', background: GREEN, top: '-0.84cqw',
@@ -94,7 +126,7 @@ export function BaselineCard({ data, source, emptyHint }: { data: BaselineData |
             <div className="absolute" style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, right: 'calc(100% + 2cqw)', top: '-4.1cqw', textShadow: CLOUD }}>{model.variability.min}</div>
             <div className="absolute" style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, left: 'calc(100% + 2cqw)', top: '-4.1cqw', textShadow: CLOUD }}>{model.variability.max}</div>
           </div>
-          <div style={{ color: WHITE, fontSize: '2.4cqw', marginTop: '5cqw', lineHeight: 1.5 }}>
+          <div style={{ color: WHITE, fontSize: '3.8cqw', marginTop: '5.5cqw', lineHeight: 1.5, textShadow: CLOUD }}>
             <div>{model.variability.lineOne}</div>
             <div>{model.variability.lineTwo}</div>
           </div>
@@ -103,10 +135,10 @@ export function BaselineCard({ data, source, emptyHint }: { data: BaselineData |
 
       {/* Breathing closing lines */}
       {model?.breathing && (
-        <div className="absolute w-full text-center" style={{ top: '77.5%' }}>
-          <div style={{ color: WHITE, fontSize: '2.4cqw', lineHeight: 1.5 }}>{model.breathing.lineOne}</div>
-          <div style={{ color: GREEN, fontSize: '2.4cqw', lineHeight: 1.5 }}>{model.breathing.lineTwo}</div>
-          <div style={{ color: GREEN, fontSize: '2.4cqw', lineHeight: 1.5 }}>{model.breathing.lineThree}</div>
+        <div className="absolute w-full text-center" style={{ top: '81%' }}>
+          <div style={{ color: WHITE, fontSize: '3.8cqw', lineHeight: 1.5, textShadow: CLOUD }}>{model.breathing.lineOne}</div>
+          <div style={{ color: GREEN, fontSize: '3.8cqw', lineHeight: 1.5, textShadow: CLOUD }}>{model.breathing.lineTwo}</div>
+          <div style={{ color: GREEN, fontSize: '3.8cqw', lineHeight: 1.5, textShadow: CLOUD }}>{model.breathing.lineThree}</div>
         </div>
       )}
     </div>
