@@ -77,6 +77,7 @@ const ArticlesSlugRouter = lazyNs(['articles', 'glossary'], () => import('./comp
 const ResearchPage          = lazy(() => import('./pages/ResearchPage').then(m => ({ default: m.ResearchPage })))
 const MeasurementsPage      = lazy(() => import('./pages/MeasurementsPage').then(m => ({ default: m.MeasurementsPage })))
 const HowItWorksPage        = lazy(() => import('./pages/HowItWorksPage').then(m => ({ default: m.HowItWorksPage })))
+const ProductPage           = lazy(() => import('./pages/ProductPage').then(m => ({ default: m.ProductPage })))
 const OndaComparePage       = lazy(() => import('./pages/OndaComparePage').then(m => ({ default: m.OndaComparePage })))
 const OndaVsPage            = lazy(() => import('./pages/OndaVsPage').then(m => ({ default: m.OndaVsPage })))
 const ToolsPage             = lazy(() => import('./pages/ToolsPage').then(m => ({ default: m.ToolsPage })))
@@ -200,6 +201,7 @@ const routeElements = (
             <Route path="/research"              element={<ResearchPage />} />
             <Route path="/measurements"          element={<MeasurementsPage />} />
             <Route path="/how-it-works"          element={<HowItWorksPage />} />
+            <Route path="/product"               element={<ProductPage />} />
             <Route path="/compare"               element={<OndaComparePage />} />
             <Route path="/compare/:slug"         element={<OndaVsPage />} />
             <Route path="/tools"                 element={<ToolsPage />} />

@@ -1523,6 +1523,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
     }
   }
+  // /product — canonical product page (Product Facts). EN-only.
+  if (route === '/product') {
+    return {
+      title: 'ONDA Life — HRV Biofeedback & Guided Breathing App | Product',
+      description:
+        'ONDA Life is an HRV biofeedback and guided-breathing app for iPhone, iPad and Apple Watch: live heart-rhythm feedback, a coherence score, resonance breathing and resting-HRV trends. Free to start, no account.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+    }
+  }
   // /compare — ONDA's own comparison hub. EN-only.
   if (route === '/compare') {
     return {

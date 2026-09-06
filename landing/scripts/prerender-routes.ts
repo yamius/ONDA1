@@ -443,6 +443,8 @@ const nonLocalizedStaticPaths = [
   // ONDA measures vs derives vs estimates, and the biofeedback method. EN-only.
   '/measurements',
   '/how-it-works',
+  // /product — canonical machine-readable product page (Product Facts). EN-only.
+  '/product',
   // /compare — ONDA's own "ONDA vs <competitor>" comparisons. EN-only.
   '/compare',
   ...ONDA_VS.map((e) => `/compare/${e.slug}`),
