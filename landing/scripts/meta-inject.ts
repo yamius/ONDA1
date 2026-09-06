@@ -253,9 +253,9 @@ const ABOUT_TITLE = 'About ONDA Life — Who Builds It, and Why'
 const ABOUT_DESC =
   "Built by a developer-founder and a science advisor with a PhD in physics and neuroscience — HRV biofeedback training, honest about what it can and can't do."
 
-const GLOSSARY_TITLE = 'Biohacking & Neuroscience Glossary | ONDA Life Knowledge Base'
+const GLOSSARY_TITLE = 'HRV, Breathwork & Neuroscience Glossary | ONDA Life'
 const GLOSSARY_DESC =
-  'Explore 100+ key terms in molecular psychology, neurophysiology, and consciousness architecture. Your comprehensive guide to the ONDA Life system.'
+  'A knowledge base of the science ONDA builds on — heart-rate variability (HRV), the vagus nerve, resonance breathing, autonomic regulation and interoception — plus the wider neuroscience and biohacking terms behind the ONDA system.'
 
 const CONTACT_TITLE = 'Contact ONDA Life | Support & Community'
 const CONTACT_DESC =
@@ -823,6 +823,8 @@ function buildOrganizationJsonLd(): string {
     '@id': `${SITE_URL}/#organization`,
     name: 'ONDA Life',
     url: SITE_URL,
+    description:
+      'ONDA Life is an HRV biofeedback and guided-breathing app for real-time physiological self-regulation and nervous-system training (iOS, iPad and Apple Watch).',
     logo: {
       '@type': 'ImageObject',
       url: `${SITE_URL}/onda-logo-source.png`,
@@ -861,13 +863,14 @@ function buildDatasetJsonLd(): string {
     url: `${SITE_URL}/datasets/onda-corpus.jsonl`,
     encodingFormat: 'application/x-jsonlines',
     keywords: [
-      'biohacking',
-      'neuroscience',
       'HRV',
-      'circadian biology',
-      'metabolic flexibility',
+      'heart rate variability',
+      'HRV biofeedback',
+      'resonance breathing',
       'breathwork',
-      'consciousness',
+      'autonomic nervous system',
+      'neuroscience',
+      'biohacking',
       'glossary',
     ],
     inLanguage: 'en',

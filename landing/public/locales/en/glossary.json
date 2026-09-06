@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Biohacking & Neuroscience Glossary | ONDA Life Knowledge Base",
-    "description": "Explore 100+ key terms in molecular psychology, neurophysiology, and consciousness architecture. Your comprehensive guide to the ONDA Life system."
+    "title": "HRV, Breathwork & Neuroscience Glossary | ONDA Life",
+    "description": "A knowledge base of the science ONDA builds on — HRV, the vagus nerve, resonance breathing, autonomic regulation and interoception — plus the wider neuroscience and biohacking terms behind the ONDA system."
   },
   "breadcrumb": {
     "home": "Home",
@@ -9,7 +9,7 @@
   },
   "badge": "[ KNOWLEDGE BASE ]",
   "h1": "Glossary",
-  "subtitle": "Key concepts, terms, and scientific foundations behind the ONDA Life system. From molecular psychology to consciousness architecture.",
+  "subtitle": "The science ONDA builds on — HRV, the vagus nerve, resonance breathing, autonomic regulation and interoception — plus the wider neuroscience terms behind the ONDA system. Scientific terms and ONDA's own concepts are labelled.",
   "featuredHeader": "[ FEATURED TERMS ]",
   "searchPlaceholder": "search terms...",
   "allLabel": "All",
