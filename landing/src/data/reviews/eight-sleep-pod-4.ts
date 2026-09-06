@@ -42,6 +42,8 @@ const eightSleepPod4: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
+> The Eight Sleep Pod 5 (2026) is now available — the Pod 5 Ultra adds an adjustable base, top-down cooling and audio, but roughly doubles the price, and the core temp/HRV tech and the new Autopilot 4.0 software also reach the Pod 4. That keeps this the value pick. See [Pod 4 vs Pod 5](/reviews/vs/eight-sleep-pod-4-vs-eight-sleep-pod-5).
+
 Eight Sleep Pod 4 is the smart sleep-climate system that defined the consumer category. Dual-zone water cooling/heating (13–43°C), built-in HRV and sleep tracking that obviates the need for a separate wearable, and Autopilot programmable climate that adjusts by detected sleep stage overnight. Hardware build and multi-year reliability are both solid.
 
 ## Where it falls short
@@ -65,10 +67,10 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   references: [
     { label: 'Eight Sleep Pod — official site', url: 'https://www.eightsleep.com/' },
   ],
-  relatedSlugs: ['chilipad-cube', 'eight-sleep-pod-cover-pro', 'chilipad-dock-pro', 'bedjet-3'],
+  relatedSlugs: ['eight-sleep-pod-5', 'chilipad-cube', 'eight-sleep-pod-cover-pro', 'chilipad-dock-pro', 'bedjet-3'],
   publishOn: '2026-06-15',
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-09-06',
 }
 
 export default eightSleepPod4

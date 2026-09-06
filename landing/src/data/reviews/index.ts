@@ -124,6 +124,7 @@ import blueCubeColdPlunge from './bluecube-cold-plunge'
 import penguinChillers from './penguin-chillers'
 // Smart sleep climate (date-gated to 2026-06-15)
 import eightSleepPod4 from './eight-sleep-pod-4'
+import eightSleepPod5 from './eight-sleep-pod-5'
 import eightSleepPodCoverPro from './eight-sleep-pod-cover-pro'
 import eightSleepPod3 from './eight-sleep-pod-3'
 import chilipadDockPro from './chilipad-dock-pro'
@@ -336,6 +337,7 @@ const ALL_REVIEWS: ToolReview[] = [
   relaxSaunaPortable,
   // Smart sleep climate — ordered by overallScore. All date-gated to 2026-06-15.
   eightSleepPod4,
+  eightSleepPod5,
   eightSleepPodCoverPro,
   chilipadDockPro,
   eightSleepPod3,
