@@ -73,7 +73,7 @@ Think of HRV as your 'Battery Health' percentage. If you wake up with an HRV sig
 
 > **The Hack:** Use a real-time HRV monitor while performing Resonant Breathing (5.5s inhale/exhale).
 
-**The Logic:** You can see the 'Waveform' of your heart change in real-time. This creates Coherence, forcing the heart and brain into a synchronized loop, which instantly raises HRV and lowers systemic Cortisol.
+**The Logic:** You can see the 'Waveform' of your heart change in real-time. This creates coherence — a synchronized rhythm between heartbeat and breath. Research shows paced breathing at this rate reliably raises HRV during the session; slow-breathing practices have also been associated with lower stress markers, though the size of the effect varies from person to person.
 
 ### PROTOCOL 3: The Cold Exposure Spike
 

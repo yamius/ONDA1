@@ -83,7 +83,7 @@ Three-layer intervention to reduce systemic latency:
 
 > **Action:** Identify your unique resonance frequency — typically ~0.1 Hz (one full breath cycle every 10 seconds). Breathe at this rate for 10–20 minutes.
 
-**Logic:** Breathing at resonance frequency synchronizes cardiac oscillation, baroreflex activity, and cerebral blood flow into a single coherent wave. The heart and brain begin operating on the same clock. HRV rises sharply during the session and the elevated baseline persists for hours afterward. This is not relaxation — it is network synchronization.
+**Logic:** Breathing at your resonance frequency strongly engages the baroreflex and organizes the cardiac rhythm into a smooth, coherent wave — the mechanism behind HRV biofeedback. Research shows HRV rises sharply during the session; some studies also suggest a carry-over effect afterward, though how long it lasts varies between people. Think of it as network synchronization, not just relaxation.
 
 ### Protocol 2: VNS Patching
 
@@ -127,7 +127,7 @@ Pinging the autonomic system requires a device that hears the response. Three we
   howToSteps: [
     {
       name: 'Resonant Frequency Breathing',
-      text: 'Breathe at ~0.1 Hz (one full cycle every 10 seconds) for 10–20 minutes to synchronize cardiac and neural oscillation into coherence.',
+      text: 'Breathe at ~0.1 Hz (one full cycle every 10 seconds) for 10–20 minutes to bring your heart rhythm and breathing into coherence.',
       protocolId: 'hrv-resonant-frequency',
     },
     {

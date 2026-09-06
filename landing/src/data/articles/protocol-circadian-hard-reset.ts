@@ -79,7 +79,7 @@ To force a full system reflash, implement 72-hour strict adherence to three prim
 
 > **Action:** Vagus Nerve Stimulation (VNS) 2 hours before target sleep time.
 
-**Logic:** We manually force the system from Sympathetic (Alert) to Parasympathetic (Rest) mode. Think of this as "Safely Remove Hardware" before cutting the power. Practical methods: slow diaphragmatic breathing (4-7-8 pattern), cold water face immersion, or low-frequency humming — all activate the afferent vagal pathway and lower cortisol rapidly.
+**Logic:** We manually force the system from Sympathetic (Alert) to Parasympathetic (Rest) mode. Think of this as "Safely Remove Hardware" before cutting the power. Practical methods: slow diaphragmatic breathing (4-7-8 pattern), cold water face immersion, or low-frequency humming — all engage the afferent vagal pathway and shift you toward the parasympathetic state that helps lower stress-hormone load.
 
 ---
 

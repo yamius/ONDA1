@@ -81,8 +81,14 @@ export function AboutPage() {
           </li>
         ))}
       </ul>
-      <p className="mb-16 font-mono text-sm leading-relaxed text-white/60 md:text-base">
+      <p className="mb-6 font-mono text-sm leading-relaxed text-white/60 md:text-base">
         {t('intro2')}
+      </p>
+      <p className="mb-16 rounded-lg border border-white/10 bg-white/[0.02] p-4 font-mono text-xs leading-relaxed text-white/45">
+        {t('disclaimer', {
+          defaultValue:
+            'The evidence-backed part of ONDA is HRV biofeedback and paced (resonance) breathing — see the science behind ONDA and what ONDA measures. The ONDA Path — its levels and higher-state language — is an experiential framework, not a hierarchy of clinically validated biological states.',
+        })}
       </p>
 
       <h2 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">

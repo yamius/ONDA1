@@ -1,7 +1,7 @@
 {
   "tag": "[ ABOUT ]",
   "title1": "What is ONDA Life",
-  "intro1": "ONDA Life — a system of mindfulness and self-development practices for real life.",
+  "intro1": "ONDA Life is an HRV biofeedback and guided-breathing app for real-time physiological self-regulation and nervous-system training. Around that core sits a broader system of mindfulness and self-development practices for real life:",
   "introList": [
     "breathing, body, and meditation steps;",
     "levels: from body support to higher states of consciousness;",
@@ -9,6 +9,7 @@
     "internal currency OND for practices and missions."
   ],
   "intro2": "Path: from body sensation — to clarity, inspiration, and strength.",
+  "disclaimer": "The evidence-backed part of ONDA is HRV biofeedback and paced (resonance) breathing — see the science behind ONDA and what ONDA measures. The ONDA Path — its levels and higher-state language — is an experiential framework, not a hierarchy of clinically validated biological states.",
   "title2": "How it works",
   "how1": "ONDA Life — routes (waves and levels) of simple daily steps.",
   "howLead": "You learn to:",
