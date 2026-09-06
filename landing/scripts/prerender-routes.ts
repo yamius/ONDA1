@@ -438,6 +438,10 @@ const nonLocalizedStaticPaths = [
   // /research — dedicated research-partner landing, linked from the
   // Eurostar deck final slide. EN-only by design (peer-review audience).
   '/research',
+  // /measurements + /how-it-works — GEO/AI citability pages: exactly what
+  // ONDA measures vs derives vs estimates, and the biofeedback method. EN-only.
+  '/measurements',
+  '/how-it-works',
   // Interactive biohacking tools. EN-only for now.
   '/tools',
   '/tools/hrv',

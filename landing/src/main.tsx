@@ -75,6 +75,8 @@ const TopicsPage         = lazy(() => import('./pages/TopicsPage').then(m => ({ 
 const TopicPage          = lazy(() => import('./pages/TopicPage').then(m => ({ default: m.TopicPage })))
 const ArticlesSlugRouter = lazyNs(['articles', 'glossary'], () => import('./components/ArticlesSlugRouter'))
 const ResearchPage          = lazy(() => import('./pages/ResearchPage').then(m => ({ default: m.ResearchPage })))
+const MeasurementsPage      = lazy(() => import('./pages/MeasurementsPage').then(m => ({ default: m.MeasurementsPage })))
+const HowItWorksPage        = lazy(() => import('./pages/HowItWorksPage').then(m => ({ default: m.HowItWorksPage })))
 const ToolsPage             = lazy(() => import('./pages/ToolsPage').then(m => ({ default: m.ToolsPage })))
 const BaselinePage          = lazy(() => import('./pages/BaselinePage').then(m => ({ default: m.BaselinePage })))
 const HrvInterpreterPage    = lazy(() => import('./pages/HrvInterpreterPage').then(m => ({ default: m.HrvInterpreterPage })))
@@ -194,6 +196,8 @@ const routeElements = (
             <Route path="/topics"         element={<TopicsPage />} />
             <Route path="/topics/:slug"   element={<TopicPage />} />
             <Route path="/research"              element={<ResearchPage />} />
+            <Route path="/measurements"          element={<MeasurementsPage />} />
+            <Route path="/how-it-works"          element={<HowItWorksPage />} />
             <Route path="/tools"                 element={<ToolsPage />} />
             <Route path="/tools/hrv"             element={<HrvInterpreterPage />} />
             <Route path="/tools/caffeine"        element={<CaffeineCalculatorPage />} />

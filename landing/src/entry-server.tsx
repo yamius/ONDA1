@@ -27,6 +27,8 @@ import { EmotonPage } from './pages/EmotonPage'
 import { TopicsPage } from './pages/TopicsPage'
 import { TopicPage } from './pages/TopicPage'
 import { ResearchPage } from './pages/ResearchPage'
+import { MeasurementsPage } from './pages/MeasurementsPage'
+import { HowItWorksPage } from './pages/HowItWorksPage'
 import { ToolsPage } from './pages/ToolsPage'
 import { BaselinePage } from './pages/BaselinePage'
 import { HrvInterpreterPage } from './pages/HrvInterpreterPage'
@@ -171,6 +173,8 @@ export function createApp(location: string, lang?: Lang) {
             <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />
           ))}
           <Route path="/research"              element={<ResearchPage />} />
+          <Route path="/measurements"          element={<MeasurementsPage />} />
+          <Route path="/how-it-works"          element={<HowItWorksPage />} />
           <Route path="/tools"                 element={<ToolsPage />} />
           <Route path="/tools/hrv"             element={<HrvInterpreterPage />} />
           <Route path="/tools/caffeine"        element={<CaffeineCalculatorPage />} />

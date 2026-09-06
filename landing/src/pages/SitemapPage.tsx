@@ -49,6 +49,10 @@ export function SitemapPage() {
     { to: langHref('/the-stack', lang), label: t('main.stack') },
     { to: langHref('/contact', lang), label: t('main.contact') },
     { to: lang === 'en' ? '/bio' : `/${lang}/bio`, label: t('main.bio') },
+    // EN-only GEO/AI pages — canonical EN path regardless of locale.
+    { to: '/measurements', label: 'What ONDA measures' },
+    { to: '/how-it-works', label: 'How ONDA works' },
+    { to: '/research', label: 'The science behind ONDA' },
   ]
 
   return (

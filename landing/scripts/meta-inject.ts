@@ -13,6 +13,7 @@ import { getArticleBySlug } from '../src/data/articles'
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
+import { MEASUREMENTS_FAQ } from '../src/data/measurements-faq'
 import { EMOTON_FAQ } from '../src/data/emoton-faq'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
@@ -1491,6 +1492,31 @@ export function getMetaForRoute(route: string): RouteMeta {
     return {
       title: researchTitle,
       description: researchDesc,
+      url,
+      breadcrumbs,
+      ogType: 'website',
+    }
+  }
+
+  // /measurements — "What ONDA actually measures". Machine-verifiable signal
+  // table (measured / derived / estimated) + FAQPage JSON-LD. EN-only.
+  if (route === '/measurements') {
+    return {
+      title: 'What ONDA Measures — HRV, Coherence & What’s Estimated | ONDA Life',
+      description:
+        'Exactly what ONDA measures directly (heart rate, HRV), what it derives (coherence, resting-HRV trend) and what it estimates (stress, energy) — plus what it does not measure.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: MEASUREMENTS_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+    }
+  }
+  // /how-it-works — the biofeedback method (HRV + coherence computation). EN-only.
+  if (route === '/how-it-works') {
+    return {
+      title: 'How ONDA Works — HRV, Coherence & the Biofeedback Loop | ONDA Life',
+      description:
+        'How ONDA works: from Apple Watch or iPhone-camera pulse to beat intervals, HRV (RMSSD/SDNN), a live coherence score and paced resonance breathing — explained with its limits.',
       url,
       breadcrumbs,
       ogType: 'website',

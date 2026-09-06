@@ -165,6 +165,18 @@ export function ResearchPage() {
           >
             Where we&rsquo;re going
           </a>
+          <Link
+            to="/measurements"
+            className="rounded border border-white/15 px-3 py-1.5 text-white/70 hover:bg-white/5"
+          >
+            What ONDA measures
+          </Link>
+          <Link
+            to="/how-it-works"
+            className="rounded border border-white/15 px-3 py-1.5 text-white/70 hover:bg-white/5"
+          >
+            How it works
+          </Link>
         </div>
       </header>
 

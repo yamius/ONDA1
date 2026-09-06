@@ -92,6 +92,8 @@ function buildIndex(lang: Lang = 'en'): string {
 
 - [Home](${SITE_URL}${langPrefix === '' ? '/' : langPrefix}): ONDA Life — HRV biofeedback and guided-breathing app; live heart-rhythm feedback during resonance breathing, Apple Watch + iPhone camera pulse, resting-HRV trends
 - [About](${SITE_URL}${langPrefix}/about): what ONDA is, how it works, who built it
+- [What ONDA measures](${SITE_URL}/measurements): exactly which signals are directly measured (heart rate, HRV), derived (coherence, resting-HRV trend) or estimated (stress, energy) — and what ONDA does not measure
+- [How ONDA works](${SITE_URL}/how-it-works): the biofeedback loop — how HRV (RMSSD/SDNN) and the live coherence score are computed, with limits
 - [Bio](${SITE_URL}${langPrefix}/bio): real-time biometric dashboard — the product experience on the web
 - [Research](${SITE_URL}/research): the evidence ONDA builds on (HRV biofeedback, resonance breathing) and what remains experimental
 - [Articles](${SITE_URL}/articles): long-form knowledge base on HRV, breathwork and nervous-system science
