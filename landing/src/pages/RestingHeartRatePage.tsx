@@ -115,6 +115,53 @@ export function RestingHeartRatePage() {
         illness. See a doctor about a persistently high or very low rate, or any symptoms.
       </p>
 
+      <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Understanding your resting heart rate</h2>
+      <div className="mb-12 space-y-5 text-sm leading-relaxed text-white/70">
+        <div>
+          <h3 className="mb-1 font-semibold text-white/90">How to measure it properly</h3>
+          <p>
+            Your true resting rate is taken first thing in the morning, still in bed, before caffeine or
+            standing up. A watch or chest strap records it automatically overnight; by hand, count your
+            pulse for 30 seconds and double it. A single daytime reading is not your resting rate — it is
+            inflated by movement, caffeine and stress. You can{' '}
+            <Link to={`${langPrefix}/tools/camera-heart-rate`} className="text-terminal-green hover:underline">measure your pulse right now with your phone camera</Link>,
+            then compare it to the table above once you have a calm morning reading.
+          </p>
+        </div>
+        <div>
+          <h3 className="mb-1 font-semibold text-white/90">What raises and lowers it</h3>
+          <p>
+            Resting heart rate falls with aerobic fitness and rises with stress, short sleep, alcohol,
+            caffeine, dehydration, illness and some medications. The most reliable way to bring it down
+            over months is steady{' '}
+            <Link to={`${langPrefix}/tools/zone-2`} className="text-terminal-green hover:underline">Zone 2 cardio</Link>;
+            lowering chronic{' '}
+            <Link to={`${langPrefix}/articles/how-to-lower-cortisol`} className="text-terminal-green hover:underline">cortisol and stress load</Link>{' '}
+            helps too. Part of your baseline is genetic, so the honest comparison is against your own
+            trend, not against anyone else.
+          </p>
+        </div>
+        <div>
+          <h3 className="mb-1 font-semibold text-white/90">Why a lower resting rate matters</h3>
+          <p>
+            A lower resting heart rate generally reflects a stronger, more efficient heart. In large
+            population studies, each roughly 10 bpm higher resting rate is associated with higher
+            all-cause mortality risk (Zhang 2016) — which is why the direction it moves over weeks is
+            worth watching, not just today's number.
+          </p>
+        </div>
+        <div>
+          <h3 className="mb-1 font-semibold text-white/90">Resting heart rate vs HRV</h3>
+          <p>
+            Resting heart rate tells you how fast your heart beats at rest;{' '}
+            <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">heart-rate variability</Link>{' '}
+            tells you how adaptable it is. They move together — a resting rate creeping up while HRV
+            drifts down across a few mornings is the classic sign your body needs recovery. Tracking both
+            beats reading either one alone.
+          </p>
+        </div>
+      </div>
+
       <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
         <p className="mb-1 font-semibold text-white/90">Your morning trend, not one number</p>
         <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
