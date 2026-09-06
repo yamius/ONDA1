@@ -263,6 +263,7 @@ const OndaLevel1 = () => {
   }, [watchHeartRate.isConnected, loadWatchBaseline]);
 
 
+
   // Track app open on mount
   useEffect(() => {
     track('app_open', { platform });
@@ -369,6 +370,23 @@ const OndaLevel1 = () => {
   }, [platform, healthKitData.isAvailable, healthKitData.isAuthorized]);
   
   const displayHeartRate = watchHeartRate.heartRate ?? vitalsData.hr ?? null;
+
+  // Live values for the baseline card's realtime hero. A signal counts as live
+  // ONLY while a source is actively producing it — the camera mid-reading, or a
+  // watch that sent HR in the last few seconds. So when the watch disconnects,
+  // these go null and the card falls back to the historical baseline (instead of
+  // freezing on a stale pulse / lingering breathing). The 1 Hz tick below forces
+  // this to re-evaluate even when no new HR event arrives.
+  const [, forceLiveTick] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => forceLiveTick((t) => (t + 1) % 1000), 1000);
+    return () => clearInterval(id);
+  }, []);
+  const cameraLive = cameraPpg.status === 'reading' && cameraPpg.bpm != null;
+  const watchLive = watchHeartRate.heartRate != null && watchHeartRate.lastUpdated != null
+    && Date.now() - watchHeartRate.lastUpdated.getTime() < 8000;
+  const baselineLiveHr = cameraLive ? cameraPpg.bpm : watchLive ? watchHeartRate.heartRate : null;
+  const baselineLiveBr = (cameraLive || watchLive) ? (vitalsData.br ?? null) : null;
 
   const safeToFixed = (value: any, digits: number = 0): string => {
     if (value === null || value === undefined) return '--';
@@ -6438,8 +6456,8 @@ const OndaLevel1 = () => {
               data={baseline?.data ?? null}
               source={baseline?.source ?? 'camera'}
               emptyHint={t('baseline.empty_hint', 'Подключите Apple Watch, чтобы открыть базлайн из 14 дней истории Health')}
-              liveHr={displayHeartRate}
-              liveBr={vitalsData.br}
+              liveHr={baselineLiveHr}
+              liveBr={baselineLiveBr}
             />
           </div>
         </div>

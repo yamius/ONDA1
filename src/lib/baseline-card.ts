@@ -22,10 +22,12 @@ export interface CardModel {
     max: string;
     position: number;
     caption: string;
-    lineOne: string;
-    lineTwo: string;
+    /** Text under the low end (39) and the high end (62). May contain \n. */
+    leftText: string;
+    rightText: string;
   } | null;
-  breathing: { lineOne: string; lineTwo: string; lineThree: string } | null;
+  /** Closing lines, as two columns: an actual figure + a line under it. */
+  breathing: { leftNum: string; leftText: string; rightNum: string; rightText: string } | null;
   empty: boolean;
 }
 
@@ -66,24 +68,25 @@ export function buildCardModel(
   const cov = (days: number) => coverageLabel(days, source);
 
   // LEFT, priority bottom-up: the two ends of the resting-pulse window, then walking pulse, then peak.
+  // Captions carry explicit \n so the layout is exact (no auto-wrap guessing).
   const left: CardSlot[] = [];
   if (rhr && hasSpread(rhr)) {
-    left.push({ value: formatValue(rhr.max, 0), caption: source === 'camera' ? 'highest' : 'most restless night' });
-    left.push({ value: formatValue(rhr.min, 0), caption: source === 'camera' ? 'lowest' : 'calmest night' });
+    left.push({ value: formatValue(rhr.max, 0), caption: source === 'camera' ? 'highest' : 'most restless\nnight' });
+    left.push({ value: formatValue(rhr.min, 0), caption: source === 'camera' ? 'lowest' : 'calmest\nnight' });
   }
-  if (extras.whr != null) left.push({ value: String(round(extras.whr)), caption: 'avg pulse, walking' });
-  if (extras.hrpeak != null && rhr) left.push({ value: String(round(extras.hrpeak)), caption: `peak, ${cov(rhr.days)}` });
+  if (extras.whr != null) left.push({ value: String(round(extras.whr)), caption: 'avg pulse\nwalking' });
+  if (extras.hrpeak != null && rhr) left.push({ value: String(round(extras.hrpeak)), caption: `peak\n${cov(rhr.days)}` });
 
   // RIGHT, same idea: breathing at the bottom, workout-dependent figures on top.
   const right: CardSlot[] = [];
   if (rr) {
     if (hasSpread(rr)) {
-      right.push({ value: `${formatValue(rr.min, 0)}–${formatValue(rr.max, 0)}`, caption: `breathing range, ${coverageShort(rr.days, source)}` });
+      right.push({ value: `${formatValue(rr.min, 0)}-${formatValue(rr.max, 0)}`, caption: `breathing range\n${cov(rr.days)}` });
     }
-    right.push({ value: formatValue(rr.avg, 0), caption: source === 'camera' ? 'breaths / min' : 'breaths / min, asleep' });
+    right.push({ value: formatValue(rr.avg, 0), caption: 'breaths / min' });
   }
-  if (extras.hrr != null) right.push({ value: String(round(extras.hrr)), caption: 'recovery, first minute' });
-  if (extras.vo2 != null) right.push({ value: String(round(extras.vo2)), caption: 'VO2max, est.' });
+  if (extras.hrr != null) right.push({ value: String(round(extras.hrr)), caption: 'recovery\nfirst minute' });
+  if (extras.vo2 != null) right.push({ value: String(round(extras.vo2)), caption: 'VO2max\nest.' });
 
   const spread = hrv ? spreadMultiple(hrv.min, hrv.max) : null;
 
@@ -98,15 +101,16 @@ export function buildCardModel(
             max: formatValue(hrv.max, 0),
             position: (hrv.avg! - hrv.min!) / (hrv.max! - hrv.min!),
             caption: spread ? `a ${spread}x spread across ${cov(hrv.days)}` : `across ${cov(hrv.days)}`,
-            lineOne: `${formatValue(hrv.min, 0)} — nights your body stayed on guard.`,
-            lineTwo: `${formatValue(hrv.max, 0)} — when it finally let go.`,
+            leftText: 'nights your body\nstayed on guard',
+            rightText: 'when it\nfinally let go',
           }
         : null,
     breathing: rr
       ? {
-          lineOne: `${formatValue(rr.avg, 0)} is how your body breathes without you.`,
-          lineTwo: 'At six, you lead the rhythm —',
-          lineThree: "you don't just watch it.",
+          leftNum: formatValue(rr.avg, 0),
+          leftText: "it's how your body\nbreathes without you",
+          rightNum: '6',
+          rightText: 'at this rhythm you start\nworking with your nervous system',
         }
       : null,
     empty: !rhr && !hrv && !rr && Object.keys(extras).length === 0,

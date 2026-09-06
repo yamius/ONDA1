@@ -21,20 +21,23 @@ const WHITE = 'rgb(240,245,252)';
 // Layered dark blur in em → scales with each number's own font-size.
 const CLOUD = '0 0 0.45em rgba(4,8,14,0.98), 0 0 0.9em rgba(4,8,14,0.9), 0 0 1.5em rgba(4,8,14,0.7)';
 
-// Row anchors (v21 y / 1672), bottom-up: slot[0] sits lowest and the column collapses upward.
-const ROW_TOP = [44.9, 33.5, 22.1, 11.4];
+// Row anchors, bottom-up: slot[0] sits lowest, columns collapse upward. Both
+// left and right share these, so paired rows align (calmest ↔ breaths at row 1,
+// restless ↔ breathing-range at row 0). row 0 sits low; row 1 a touch below mid.
+const ROW_TOP = [48, 36, 22.1, 11.4];
 const SIDE = '5.95%'; // v21 x=56 / 941
+// The figure's own axis sits a hair right of centre (measured ~50.5% at the
+// hero's height); shift the hero this much so the number + dot land on it.
+const HERO_X = '0.8%';
 
-function Slot({ value, caption, side, row, offsetY }: { value: string; caption: string; side: 'left' | 'right'; row: number; offsetY?: string }) {
+function Slot({ value, caption, side, row }: { value: string; caption: string; side: 'left' | 'right'; row: number }) {
   const align = side === 'left' ? 'text-left' : 'text-right';
   const pos = side === 'left' ? { left: SIDE } : { right: SIDE };
-  const top = offsetY ? `calc(${ROW_TOP[row]}% + ${offsetY})` : `${ROW_TOP[row]}%`;
   return (
-    <div className={`absolute ${align}`} style={{ ...pos, top }}>
+    <div className={`absolute ${align}`} style={{ ...pos, top: `${ROW_TOP[row]}%` }}>
       <div style={{ color: GREEN, fontSize: '8.9cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{value}</div>
-      {/* Caption +10% and capped in width so long labels wrap to 2 lines instead
-          of running across the figure. */}
-      <div style={{ color: GRAY, fontSize: '2.93cqw', lineHeight: 1.2, marginTop: '0.8cqw', maxWidth: '30cqw', textShadow: CLOUD }}>{caption}</div>
+      {/* Caption +10%; explicit \n in the copy → exact 2-line layout (pre-line). */}
+      <div style={{ color: GRAY, fontSize: '2.93cqw', lineHeight: 1.2, marginTop: '0.8cqw', whiteSpace: 'pre-line', textShadow: CLOUD }}>{caption}</div>
     </div>
   );
 }
@@ -79,9 +82,10 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr }: {
       )}
 
       {/* Hero — resting pulse on the chest. Live pulse (Watch/camera) replaces the
-          static value in real time, with a soft pulsing dot beneath it. */}
+          static value in real time, with a soft pulsing dot beneath it. Nudged
+          right by HERO_X so the number + dot sit on the figure's own axis. */}
       {(model?.hero || isLive) && (
-        <div className="absolute w-full text-center" style={{ top: '20.5%' }}>
+        <div className="absolute w-full text-center" style={{ top: '20.5%', transform: `translateX(${HERO_X})` }}>
           <div style={{ color: CORAL, fontSize: '13.2cqw', fontWeight: 800, lineHeight: 1, textShadow: `${CLOUD}, 0 0 6cqw rgba(232,83,79,0.4)` }} className="tabular-nums">
             {isLive ? liveHr : model?.hero?.value}
           </div>
@@ -96,49 +100,61 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr }: {
         </div>
       )}
 
-      {/* Live breathing — to the right, at the hero's level (mirrors the top tile). */}
+      {/* Live breathing — right side, on the same row as the walking-pulse (109). */}
       {isLive && liveBr != null && (
-        <div className="absolute text-right" style={{ right: SIDE, top: '20.5%' }}>
+        <div className="absolute text-right" style={{ right: SIDE, top: `${ROW_TOP[2]}%` }}>
           <div style={{ color: GREEN, fontSize: '8.9cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">
             <span style={{ fontSize: '4.2cqw', opacity: 0.6 }}>≈</span>{Math.round(liveBr)}
           </div>
-          <div style={{ color: GRAY, fontSize: '2.93cqw', marginTop: '0.8cqw', maxWidth: '30cqw', lineHeight: 1.2, textShadow: CLOUD }}>breaths / min · live</div>
+          <div style={{ color: GRAY, fontSize: '2.93cqw', marginTop: '0.8cqw', lineHeight: 1.2, whiteSpace: 'pre-line', textShadow: CLOUD }}>{'breaths / min\nlive'}</div>
         </div>
       )}
 
-      {/* Left / right numeric columns (collapse upward) */}
-      {/* left[1] = calmest-night ("68") sits half a number lower, per device review. */}
-      {model?.left.map((s, i) => <Slot key={`l${i}`} value={s.value} caption={s.caption} side="left" row={i} offsetY={i === 1 ? '4.45cqw' : undefined} />)}
+      {/* Left / right numeric columns (collapse upward, paired levels) */}
+      {model?.left.map((s, i) => <Slot key={`l${i}`} value={s.value} caption={s.caption} side="left" row={i} />)}
       {model?.right.map((s, i) => <Slot key={`r${i}`} value={s.value} caption={s.caption} side="right" row={i} />)}
 
-      {/* Variability bar + closing lines. Text +30% over the green-number
-          captions; the whole block sits a little lower. */}
-      {model?.variability && (
-        <div className="absolute w-full text-center" style={{ top: '62%' }}>
-          <div style={{ color: GRAY, fontSize: '2.9cqw', fontWeight: 500, letterSpacing: '0.08em', textShadow: CLOUD }}>VARIABILITY</div>
-          <div style={{ color: GREEN, fontSize: '3.6cqw', marginTop: '0.8cqw', textShadow: CLOUD }}>{model.variability.caption}</div>
-          <div className="relative" style={{ margin: '3.4cqw 18% 0' }}>
-            <div style={{ height: '0.32cqw', background: 'rgb(50,72,98)', borderRadius: 999 }} />
-            <div className="absolute rounded-full" style={{
-              width: '2cqw', height: '2cqw', background: GREEN, top: '-0.84cqw',
-              left: `calc(${Math.min(Math.max(model.variability.position, 0), 1) * 100}% - 1cqw)`,
-            }} />
-            <div className="absolute" style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, right: 'calc(100% + 2cqw)', top: '-4.1cqw', textShadow: CLOUD }}>{model.variability.min}</div>
-            <div className="absolute" style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, left: 'calc(100% + 2cqw)', top: '-4.1cqw', textShadow: CLOUD }}>{model.variability.max}</div>
+      {/* Closing block — VARIABILITY bar with the two ends (39 / 62), then two
+          columns: the text under each end, and the breathing figures (13 left,
+          6 right) with their own lines. Text +30% over the green captions. */}
+      {(model?.variability || model?.breathing) && (
+        <div className="absolute w-full" style={{ top: '57%' }}>
+          {model?.variability && (
+            <>
+              <div className="text-center" style={{ color: GRAY, fontSize: '4.35cqw', fontWeight: 600, letterSpacing: '0.08em', textShadow: CLOUD }}>VARIABILITY</div>
+              <div className="text-center" style={{ color: GREEN, fontSize: '3.6cqw', marginTop: '1cqw', textShadow: CLOUD }}>{model.variability.caption}</div>
+              <div className="relative" style={{ margin: '4.4cqw 15% 0' }}>
+                <div style={{ height: '0.32cqw', background: 'rgb(50,72,98)', borderRadius: 999 }} />
+                <div className="absolute rounded-full" style={{
+                  width: '2cqw', height: '2cqw', background: GREEN, top: '-0.84cqw',
+                  left: `calc(${Math.min(Math.max(model.variability.position, 0), 1) * 100}% - 1cqw)`,
+                }} />
+                <div className="absolute" style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, right: 'calc(100% + 2cqw)', top: '-4.1cqw', textShadow: CLOUD }}>{model.variability.min}</div>
+                <div className="absolute" style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, left: 'calc(100% + 2cqw)', top: '-4.1cqw', textShadow: CLOUD }}>{model.variability.max}</div>
+              </div>
+            </>
+          )}
+          {/* Two columns: left sits under 39, right under 62. */}
+          <div className="flex justify-between" style={{ margin: '4.4cqw 6% 0', gap: '4%' }}>
+            <div className="text-left" style={{ flex: 1 }}>
+              {model?.variability && <div style={{ color: WHITE, fontSize: '3.8cqw', lineHeight: 1.35, whiteSpace: 'pre-line', textShadow: CLOUD }}>{model.variability.leftText}</div>}
+              {model?.breathing && (
+                <>
+                  <div style={{ color: GREEN, fontSize: '6cqw', fontWeight: 700, lineHeight: 1, marginTop: '3.5cqw', textShadow: CLOUD }} className="tabular-nums">{model.breathing.leftNum}</div>
+                  <div style={{ color: GREEN, fontSize: '3.8cqw', lineHeight: 1.35, marginTop: '0.8cqw', whiteSpace: 'pre-line', textShadow: CLOUD }}>{model.breathing.leftText}</div>
+                </>
+              )}
+            </div>
+            <div className="text-right" style={{ flex: 1 }}>
+              {model?.variability && <div style={{ color: WHITE, fontSize: '3.8cqw', lineHeight: 1.35, whiteSpace: 'pre-line', textShadow: CLOUD }}>{model.variability.rightText}</div>}
+              {model?.breathing && (
+                <>
+                  <div style={{ color: GREEN, fontSize: '6cqw', fontWeight: 700, lineHeight: 1, marginTop: '3.5cqw', textShadow: CLOUD }} className="tabular-nums">{model.breathing.rightNum}</div>
+                  <div style={{ color: GREEN, fontSize: '3.8cqw', lineHeight: 1.35, marginTop: '0.8cqw', whiteSpace: 'pre-line', textShadow: CLOUD }}>{model.breathing.rightText}</div>
+                </>
+              )}
+            </div>
           </div>
-          <div style={{ color: WHITE, fontSize: '3.8cqw', marginTop: '5.5cqw', lineHeight: 1.5, textShadow: CLOUD }}>
-            <div>{model.variability.lineOne}</div>
-            <div>{model.variability.lineTwo}</div>
-          </div>
-        </div>
-      )}
-
-      {/* Breathing closing lines */}
-      {model?.breathing && (
-        <div className="absolute w-full text-center" style={{ top: '81%' }}>
-          <div style={{ color: WHITE, fontSize: '3.8cqw', lineHeight: 1.5, textShadow: CLOUD }}>{model.breathing.lineOne}</div>
-          <div style={{ color: GREEN, fontSize: '3.8cqw', lineHeight: 1.5, textShadow: CLOUD }}>{model.breathing.lineTwo}</div>
-          <div style={{ color: GREEN, fontSize: '3.8cqw', lineHeight: 1.5, textShadow: CLOUD }}>{model.breathing.lineThree}</div>
         </div>
       )}
     </div>
