@@ -67,5 +67,5 @@ Biohacking / consciousness / DNA / "biocomputer" / 24-stage philosophy = **secon
   - #2 `/measurements` — signal table (measured/derived/estimated) + FAQPage JSON-LD.
   - #3 `/how-it-works` — HRV/coherence computation + boundaries.
   - #4 claims sweep — `/about` product-entity lead + evidence/philosophy disclaimer; softened the hardest unsupported causal claims in the nervous-system-latency articles (cortisol, "persists for hours", cerebral blood flow). Rest of corpus already well-hedged (prior honesty reframe).
-  - Follow-up debt: non-EN `about.json` intro1 still says "system of mindfulness…" (EN-only entity fix this pass); disclaimer renders via EN default in other locales.
+  - ~~Follow-up debt: non-EN about.json intro1~~ **RESOLVED same day**: intro1 translated product-first + `disclaimer` key added in all 4 non-EN locales (es, ru, uk, zh).
 - **Next: Tier 2** — Evidence Center (#5), founder + advisor entities (#6), ONDA-vs-alternatives (#7), /product (#8), FAQ hub (#9).

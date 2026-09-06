@@ -1,7 +1,7 @@
 {
   "tag": "[ ACERCA DE ]",
   "title1": "Qué es ONDA Life",
-  "intro1": "ONDA Life — un sistema de prácticas de mindfulness y autodesarrollo para la vida real.",
+  "intro1": "ONDA Life es una app de biofeedback de VFC (variabilidad de la frecuencia cardíaca) y respiración guiada para la autorregulación fisiológica en tiempo real y el entrenamiento del sistema nervioso. En torno a ese núcleo hay un sistema más amplio de prácticas de mindfulness y autodesarrollo para la vida real:",
   "introList": [
     "pasos de respiración, cuerpo y meditación;",
     "niveles: del soporte corporal a los estados superiores de consciencia;",
@@ -9,6 +9,7 @@
     "moneda interna OND por prácticas y misiones."
   ],
   "intro2": "Camino: de la sensación corporal — a la claridad, la inspiración y la fuerza.",
+  "disclaimer": "La parte de ONDA respaldada por evidencia es el biofeedback de VFC y la respiración pausada (de resonancia) — consulta la ciencia detrás de ONDA y qué mide ONDA. El Camino ONDA — sus niveles y su lenguaje de estados superiores — es un marco experiencial, no una jerarquía de estados biológicos clínicamente validados.",
   "title2": "Cómo funciona",
   "how1": "ONDA Life — rutas (olas y niveles) de pasos diarios sencillos.",
   "howLead": "Aprendes a:",
