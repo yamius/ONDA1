@@ -62,4 +62,10 @@ Biohacking / consciousness / DNA / "biocomputer" / 24-stage philosophy = **secon
 ---
 
 *Progress log:*
-- 2026-09-06: Plan saved. Tier 1 started.
+- 2026-09-06: Plan saved. **Tier 1 COMPLETE** (commits 78660c60, 76ea3f2d, e440c164):
+  - #1 llms.txt entity-framing → product-first (was "biohacking/consciousness OS/biocomputer").
+  - #2 `/measurements` — signal table (measured/derived/estimated) + FAQPage JSON-LD.
+  - #3 `/how-it-works` — HRV/coherence computation + boundaries.
+  - #4 claims sweep — `/about` product-entity lead + evidence/philosophy disclaimer; softened the hardest unsupported causal claims in the nervous-system-latency articles (cortisol, "persists for hours", cerebral blood flow). Rest of corpus already well-hedged (prior honesty reframe).
+  - Follow-up debt: non-EN `about.json` intro1 still says "system of mindfulness…" (EN-only entity fix this pass); disclaimer renders via EN default in other locales.
+- **Next: Tier 2** — Evidence Center (#5), founder + advisor entities (#6), ONDA-vs-alternatives (#7), /product (#8), FAQ hub (#9).
