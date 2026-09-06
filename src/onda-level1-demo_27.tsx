@@ -348,22 +348,9 @@ const OndaLevel1 = () => {
     }
   }, [watchHeartRate.heartRate]);
   
-  // Когда разрешения есть → отдаём управление workout-сессией app-lifecycle
-  // менеджеру (вместо безусловного старта на mount). Он держит HKWorkoutSession
-  // пока приложение на переднем плане ИЛИ идёт практика, и глушит её иначе —
-  // больше нет сессии-«на-весь-день» (батарея + Apple Fitness загрязнение).
-  useEffect(() => {
-    if (!permissions.needsSetup && platform === 'ios') {
-      if (Capacitor.isPluginAvailable('OndaWatch')) {
-        console.log('[OndaLevel1] Разрешения есть → включаю auto-managed workout lifecycle');
-        watchHeartRate.setAutoManaged(true);
-      } else {
-        console.error('[OndaLevel1] ❌ OndaWatch plugin NOT AVAILABLE or not registered!');
-      }
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [permissions.needsSetup, platform]);
-  
+  // Auto-managed watch workout lifecycle lives further down — it must read
+  // `showPermissionModal` (declared below), so the effect is placed after it.
+
   useEffect(() => {
     if (platform === 'ios' && healthKitData.isAvailable && healthKitData.isAuthorized) {
       healthKitData.startAutoRefresh(30000);
@@ -594,6 +581,32 @@ const OndaLevel1 = () => {
   const [showNotificationPrimer, setShowNotificationPrimer] = useState(false);
   const [showWatchPrompt, setShowWatchPrompt] = useState(false);
   const [showQntShop, setShowQntShop] = useState(false);
+
+  // Auto-managed watch workout lifecycle. Once Health is granted we hand the
+  // HKWorkoutSession to the app-lifecycle manager (runs while foreground OR a
+  // practice is active — no all-day session; battery + Apple Fitness hygiene).
+  // BUT: while the permission flow is on screen we hold it OFF, so the watch's
+  // workout-start screen doesn't land on top of the iOS Health sheet. When that
+  // flow closes we enable it — after a short grace ONLY if we just came out of
+  // the permission modal (so the sheet fully dismisses first); on a normal app
+  // open (modal never shown) it enables immediately, keeping "foreground → pulse".
+  const prevPermModalRef = useRef(showPermissionModal);
+  useEffect(() => {
+    const justClosedPermModal = prevPermModalRef.current && !showPermissionModal;
+    prevPermModalRef.current = showPermissionModal;
+    if (platform !== 'ios' || !Capacitor.isPluginAvailable('OndaWatch')) return;
+    const shouldManage = !permissions.needsSetup && !showPermissionModal;
+    if (!shouldManage) {
+      watchHeartRate.setAutoManaged(false);
+      return;
+    }
+    if (justClosedPermModal) {
+      const id = setTimeout(() => watchHeartRate.setAutoManaged(true), 1000);
+      return () => clearTimeout(id);
+    }
+    watchHeartRate.setAutoManaged(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [permissions.needsSetup, showPermissionModal, platform]);
   const [isLoadingUser, setIsLoadingUser] = useState(true);
   const [showInfoModal, setShowInfoModal] = useState(false);
   const [showSubscriptionModal, setShowSubscriptionModal] = useState(false);
