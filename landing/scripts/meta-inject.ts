@@ -14,6 +14,7 @@ import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
 import { MEASUREMENTS_FAQ } from '../src/data/measurements-faq'
+import { getOndaVs } from '../src/data/onda-vs'
 import { EMOTON_FAQ } from '../src/data/emoton-faq'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
@@ -1520,6 +1521,31 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+    }
+  }
+  // /compare — ONDA's own comparison hub. EN-only.
+  if (route === '/compare') {
+    return {
+      title: 'ONDA vs Oura, WHOOP, Headspace, Calm & more — Compared | ONDA Life',
+      description:
+        'How ONDA Life’s HRV biofeedback compares to Oura, WHOOP, Headspace, Calm, Breathwrk and Elite HRV — objective capability tables and who each is best for.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+    }
+  }
+  // /compare/onda-vs-<competitor> — ONDA's own comparison page + FAQ JSON-LD.
+  if (route.startsWith('/compare/')) {
+    const entry = getOndaVs(route.slice('/compare/'.length))
+    if (entry) {
+      return {
+        title: `${entry.title} — HRV Biofeedback Compared (2026) | ONDA Life`,
+        description: entry.description,
+        url,
+        breadcrumbs,
+        ogType: 'website',
+        faq: { mainEntity: entry.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      }
     }
   }
 

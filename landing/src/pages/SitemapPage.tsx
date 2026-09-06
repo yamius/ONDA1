@@ -53,6 +53,7 @@ export function SitemapPage() {
     { to: '/measurements', label: 'What ONDA measures' },
     { to: '/how-it-works', label: 'How ONDA works' },
     { to: '/research', label: 'The science behind ONDA' },
+    { to: '/compare', label: 'ONDA vs alternatives' },
   ]
 
   return (

@@ -99,6 +99,7 @@ function buildIndex(lang: Lang = 'en'): string {
 - [Articles](${SITE_URL}/articles): long-form knowledge base on HRV, breathwork and nervous-system science
 - [Glossary](${SITE_URL}/glossary): defined terms with cross-links
 - [Reviews](${SITE_URL}/reviews): independent, criteria-based reviews of HRV/recovery/biohacking tools
+- [Compare (ONDA vs alternatives)](${SITE_URL}/compare): ONDA Life's own objective comparisons vs Oura, WHOOP, Headspace, Calm, Breathwrk, Elite HRV — capability tables + who each is best for
 - [Inner Spectrum](${SITE_URL}${langPrefix}/inner-spectrum): the ONDA Path — brand philosophy layer (experiential framework, not validated biology)
 - [The Stack](${SITE_URL}/the-stack): protocol architecture overview
 - [Sitemap](${SITE_URL}/sitemap): all pages

@@ -77,6 +77,8 @@ const ArticlesSlugRouter = lazyNs(['articles', 'glossary'], () => import('./comp
 const ResearchPage          = lazy(() => import('./pages/ResearchPage').then(m => ({ default: m.ResearchPage })))
 const MeasurementsPage      = lazy(() => import('./pages/MeasurementsPage').then(m => ({ default: m.MeasurementsPage })))
 const HowItWorksPage        = lazy(() => import('./pages/HowItWorksPage').then(m => ({ default: m.HowItWorksPage })))
+const OndaComparePage       = lazy(() => import('./pages/OndaComparePage').then(m => ({ default: m.OndaComparePage })))
+const OndaVsPage            = lazy(() => import('./pages/OndaVsPage').then(m => ({ default: m.OndaVsPage })))
 const ToolsPage             = lazy(() => import('./pages/ToolsPage').then(m => ({ default: m.ToolsPage })))
 const BaselinePage          = lazy(() => import('./pages/BaselinePage').then(m => ({ default: m.BaselinePage })))
 const HrvInterpreterPage    = lazy(() => import('./pages/HrvInterpreterPage').then(m => ({ default: m.HrvInterpreterPage })))
@@ -198,6 +200,8 @@ const routeElements = (
             <Route path="/research"              element={<ResearchPage />} />
             <Route path="/measurements"          element={<MeasurementsPage />} />
             <Route path="/how-it-works"          element={<HowItWorksPage />} />
+            <Route path="/compare"               element={<OndaComparePage />} />
+            <Route path="/compare/:slug"         element={<OndaVsPage />} />
             <Route path="/tools"                 element={<ToolsPage />} />
             <Route path="/tools/hrv"             element={<HrvInterpreterPage />} />
             <Route path="/tools/caffeine"        element={<CaffeineCalculatorPage />} />

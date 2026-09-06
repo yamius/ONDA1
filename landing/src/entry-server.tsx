@@ -29,6 +29,8 @@ import { TopicPage } from './pages/TopicPage'
 import { ResearchPage } from './pages/ResearchPage'
 import { MeasurementsPage } from './pages/MeasurementsPage'
 import { HowItWorksPage } from './pages/HowItWorksPage'
+import { OndaComparePage } from './pages/OndaComparePage'
+import { OndaVsPage } from './pages/OndaVsPage'
 import { ToolsPage } from './pages/ToolsPage'
 import { BaselinePage } from './pages/BaselinePage'
 import { HrvInterpreterPage } from './pages/HrvInterpreterPage'
@@ -175,6 +177,8 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/research"              element={<ResearchPage />} />
           <Route path="/measurements"          element={<MeasurementsPage />} />
           <Route path="/how-it-works"          element={<HowItWorksPage />} />
+          <Route path="/compare"               element={<OndaComparePage />} />
+          <Route path="/compare/:slug"         element={<OndaVsPage />} />
           <Route path="/tools"                 element={<ToolsPage />} />
           <Route path="/tools/hrv"             element={<HrvInterpreterPage />} />
           <Route path="/tools/caffeine"        element={<CaffeineCalculatorPage />} />
