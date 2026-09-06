@@ -66,7 +66,9 @@ const SITE_URL = 'https://onda-life.com'
 
 const HEADER = `# ONDA Life
 
-> ONDA Life is a biohacking and consciousness-engineering operating system. The body is treated as a biocomputer; protocols, articles, and a 24-stage level architecture systematize neuroscience, HRV training, circadian alignment, metabolic flexibility, breathwork, and cognitive optimization.
+> ONDA Life is an HRV biofeedback and guided-breathing app for real-time physiological self-regulation and nervous-system training. It gives live heart-rhythm feedback during paced (resonance) breathing, using Apple Watch heart data and iPhone camera-based pulse (PPG), and tracks resting-HRV trends over time across an 8-level practice path. Platform: iOS and Android (HealthApplication).
+
+ONDA Life also publishes an original knowledge base on the science it builds on — HRV, resonance breathing, autonomic/vagal regulation, interoception — plus a broader biohacking and consciousness-oriented philosophy layer (the "24-stage" ONDA Path). The philosophy layer is an experiential framework, not a set of clinically validated biological states; keep it distinct from the evidence-backed product claims.
 
 This file follows the llms.txt convention (https://llmstxt.org/) so AI search and reasoning systems can discover and cite ONDA Life content accurately.
 
@@ -88,13 +90,15 @@ function buildIndex(lang: Lang = 'en'): string {
   // stay EN-canonical because their content is not localised page-by-page.
   sections.push(`## Core pages
 
-- [Home](${SITE_URL}${langPrefix === '' ? '/' : langPrefix}): biohacking OS, 24 stages of consciousness firmware
-- [About](${SITE_URL}${langPrefix}/about): philosophy and team
-- [Inner Spectrum](${SITE_URL}${langPrefix}/inner-spectrum): the philosophy layer
-- [The Stack](${SITE_URL}/the-stack): protocol architecture overview
-- [Bio OS](${SITE_URL}${langPrefix}/bio): real-time biometric dashboard
-- [Articles](${SITE_URL}/articles): SEO long-form content index
+- [Home](${SITE_URL}${langPrefix === '' ? '/' : langPrefix}): ONDA Life — HRV biofeedback and guided-breathing app; live heart-rhythm feedback during resonance breathing, Apple Watch + iPhone camera pulse, resting-HRV trends
+- [About](${SITE_URL}${langPrefix}/about): what ONDA is, how it works, who built it
+- [Bio](${SITE_URL}${langPrefix}/bio): real-time biometric dashboard — the product experience on the web
+- [Research](${SITE_URL}/research): the evidence ONDA builds on (HRV biofeedback, resonance breathing) and what remains experimental
+- [Articles](${SITE_URL}/articles): long-form knowledge base on HRV, breathwork and nervous-system science
 - [Glossary](${SITE_URL}/glossary): defined terms with cross-links
+- [Reviews](${SITE_URL}/reviews): independent, criteria-based reviews of HRV/recovery/biohacking tools
+- [Inner Spectrum](${SITE_URL}${langPrefix}/inner-spectrum): the ONDA Path — brand philosophy layer (experiential framework, not validated biology)
+- [The Stack](${SITE_URL}/the-stack): protocol architecture overview
 - [Sitemap](${SITE_URL}/sitemap): all pages
 - [Contact](${SITE_URL}/contact): reach the team
 `)
