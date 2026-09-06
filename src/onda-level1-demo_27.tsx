@@ -6849,6 +6849,7 @@ const OndaLevel1 = () => {
         <WatchConnectionPrompt
           visible={showWatchPrompt}
           onConnected={() => setShowWatchPrompt(false)}
+          connected={watchHeartRate.isConnected}
         />
 
         {/* BLE Connect Tracker — Android only, shown above biometrics grid */}

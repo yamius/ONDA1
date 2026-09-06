@@ -7,6 +7,10 @@ import OndaWatch, { WatchHealthAuthStatus } from '../plugins/ondaWatch';
 interface WatchConnectionPromptProps {
   visible: boolean;
   onConnected: () => void;
+  /** The watch is already paired + app installed (from useWatchHeartRate). When
+   *  true the connection is established, so the "open the app on your watch"
+   *  nudge is redundant and the banner hides — no matter the reachable flicker. */
+  connected?: boolean;
 }
 
 /**
@@ -24,7 +28,7 @@ interface WatchConnectionPromptProps {
  *
  * authorized + reachable → баннер скрывается через onConnected.
  */
-export function WatchConnectionPrompt({ visible, onConnected }: WatchConnectionPromptProps) {
+export function WatchConnectionPrompt({ visible, onConnected, connected }: WatchConnectionPromptProps) {
   const { t } = useTranslation();
   const [reachable, setReachable] = useState(false);
   const [authStatus, setAuthStatus] = useState<WatchHealthAuthStatus>('unknown');
@@ -96,6 +100,11 @@ export function WatchConnectionPrompt({ visible, onConnected }: WatchConnectionP
 
   // Не показываем если не visible, или не iOS, или всё уже хорошо
   if (!visible || Capacitor.getPlatform() !== 'ios') {
+    return null;
+  }
+  // Часы уже подключены (сопряжены + приложение установлено) → приглашение
+  // к подключению не нужно, независимо от мигающего reachable.
+  if (connected) {
     return null;
   }
   if (reachable && authStatus === 'authorized') {
