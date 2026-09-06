@@ -6349,6 +6349,7 @@ const OndaLevel1 = () => {
               liveBr={baselineLiveBr}
               shift={baselineShift}
               todayData={baselineToday}
+              light={isLight}
             />
           </div>
         </div>
