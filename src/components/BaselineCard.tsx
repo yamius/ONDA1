@@ -37,9 +37,12 @@ function Slot({ value, caption, side, row, offsetY }: { value: string; caption: 
   );
 }
 
-export function BaselineCard({ data, source }: { data: BaselineData; source: BaselineSource }) {
-  const model: CardModel = buildCardModel(data.readings, data.extras, source);
-  if (model.empty) return null;
+export function BaselineCard({ data, source, emptyHint }: { data: BaselineData | null; source: BaselineSource; emptyHint?: string }) {
+  // The card is ALWAYS on home once the user reaches it — it never unmounts, so
+  // connecting a watch can only fill it, never make it disappear. With no data
+  // yet it shows the figure + an invitation; camera/watch numbers pour in later.
+  const model: CardModel | null = data ? buildCardModel(data.readings, data.extras, source) : null;
+  const isEmpty = !model || model.empty;
 
   return (
     <div
@@ -54,8 +57,15 @@ export function BaselineCard({ data, source }: { data: BaselineData; source: Bas
           'linear-gradient(to bottom, rgba(10,16,24,0.92) 0%, rgba(10,16,24,0.15) 11%, rgba(10,16,24,0.05) 55%, rgba(10,16,24,0.75) 74%, rgba(10,16,24,0.97) 100%)',
       }} />
 
+      {/* Empty state — figure + invitation, so the card is guaranteed on home. */}
+      {isEmpty && emptyHint && (
+        <div className="absolute w-full px-10 text-center" style={{ top: '40%' }}>
+          <p style={{ color: WHITE, fontSize: '3.8cqw', lineHeight: 1.5, textShadow: CLOUD }}>{emptyHint}</p>
+        </div>
+      )}
+
       {/* Hero — resting pulse on the chest */}
-      {model.hero && (
+      {model?.hero && (
         <div className="absolute w-full text-center" style={{ top: '20.5%' }}>
           <div style={{ color: CORAL, fontSize: '13.2cqw', fontWeight: 800, lineHeight: 1, textShadow: `${CLOUD}, 0 0 6cqw rgba(232,83,79,0.4)` }} className="tabular-nums">
             {model.hero.value}
@@ -67,11 +77,11 @@ export function BaselineCard({ data, source }: { data: BaselineData; source: Bas
 
       {/* Left / right numeric columns (collapse upward) */}
       {/* left[1] = calmest-night ("68") sits half a number lower, per device review. */}
-      {model.left.map((s, i) => <Slot key={`l${i}`} value={s.value} caption={s.caption} side="left" row={i} offsetY={i === 1 ? '4.45cqw' : undefined} />)}
-      {model.right.map((s, i) => <Slot key={`r${i}`} value={s.value} caption={s.caption} side="right" row={i} />)}
+      {model?.left.map((s, i) => <Slot key={`l${i}`} value={s.value} caption={s.caption} side="left" row={i} offsetY={i === 1 ? '4.45cqw' : undefined} />)}
+      {model?.right.map((s, i) => <Slot key={`r${i}`} value={s.value} caption={s.caption} side="right" row={i} />)}
 
       {/* Variability bar + closing lines */}
-      {model.variability && (
+      {model?.variability && (
         <div className="absolute w-full text-center" style={{ top: '60%' }}>
           <div style={{ color: GRAY, fontSize: '2.1cqw', fontWeight: 500, letterSpacing: '0.08em', textShadow: CLOUD }}>VARIABILITY</div>
           <div style={{ color: GREEN, fontSize: '2cqw', marginTop: '0.6cqw', textShadow: CLOUD }}>{model.variability.caption}</div>
@@ -92,7 +102,7 @@ export function BaselineCard({ data, source }: { data: BaselineData; source: Bas
       )}
 
       {/* Breathing closing lines */}
-      {model.breathing && (
+      {model?.breathing && (
         <div className="absolute w-full text-center" style={{ top: '77.5%' }}>
           <div style={{ color: WHITE, fontSize: '2.4cqw', lineHeight: 1.5 }}>{model.breathing.lineOne}</div>
           <div style={{ color: GREEN, fontSize: '2.4cqw', lineHeight: 1.5 }}>{model.breathing.lineTwo}</div>

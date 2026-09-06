@@ -6429,13 +6429,17 @@ const OndaLevel1 = () => {
             (coverage caption says "1 reading"); after "Connect watch" it
             redraws from the 14-day HealthKit read (caption → real night count).
             The watch CTA under the card is the single retention action. */}
-        {baseline && (
-          <div className="mb-6 flex flex-col items-center">
-            <div className="w-full max-w-[360px]">
-              <BaselineCard data={baseline.data} source={baseline.source} />
-            </div>
+        {/* Always rendered on home — never gated on data, so connecting a watch
+            only fills it and it can't vanish. No data yet → figure + invitation. */}
+        <div className="mb-6 flex flex-col items-center">
+          <div className="w-full max-w-[360px]">
+            <BaselineCard
+              data={baseline?.data ?? null}
+              source={baseline?.source ?? 'camera'}
+              emptyHint={t('baseline.empty_hint', 'Подключите Apple Watch, чтобы открыть базлайн из 14 дней истории Health')}
+            />
           </div>
-        )}
+        </div>
 
         {/* Practices list — single block. The featured (recommended)
             practice is hoisted to the first position and rendered with
