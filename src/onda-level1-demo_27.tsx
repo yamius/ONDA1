@@ -249,6 +249,19 @@ const OndaLevel1 = () => {
     prevCamStatusRef.current = s;
   }, [cameraPpg.status, cameraPpg.bpm, vitalsData.br, baseline, track]);
 
+  // Auto-open the baseline on app launch for connected-watch users. The 14-day
+  // read is a LOCAL iPhone HealthKit query (the watch already synced its history
+  // there) — it needs neither the watch app open nor WCSession reachable. Fires
+  // once per session as soon as the watch is known connected (paired + our watch
+  // app installed). A read with no HealthKit grant returns empty and prompts
+  // nothing, so the "permission by intent" rule (prompt only on the CTA) holds.
+  const baselineAutoRef = useRef(false);
+  useEffect(() => {
+    if (baselineAutoRef.current || !watchHeartRate.isConnected) return;
+    baselineAutoRef.current = true;
+    void loadWatchBaseline();
+  }, [watchHeartRate.isConnected, loadWatchBaseline]);
+
   // Track app open on mount
   useEffect(() => {
     track('app_open', { platform });
