@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { ExperientialFrameworkNote } from '../components/ExperientialFrameworkNote'
 import { useTranslation } from 'react-i18next'
 import { langFromPath, localizedPathFor } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
@@ -266,6 +267,8 @@ export function InnerSpectrumPage() {
           {t('cta')}
         </Link>
       </div>
+
+      <ExperientialFrameworkNote />
 
       </div>
     </div>

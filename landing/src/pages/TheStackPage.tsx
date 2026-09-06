@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { ExperientialFrameworkNote } from '../components/ExperientialFrameworkNote'
 import { useTranslation } from 'react-i18next'
 import { getProtocolUniqueId, PROTOCOL_STORAGE_PREFIX, PROTOCOL_TO_ARTICLE } from '../data/protocol-ids'
 import { langFromPath } from '../i18n'
@@ -306,6 +307,8 @@ export function TheStackPage() {
           {tArticles('detail.backToArticles', { defaultValue: '← Back to Articles' })}
         </Link>
       </div>
+
+      <ExperientialFrameworkNote />
     </div>
   )
 }

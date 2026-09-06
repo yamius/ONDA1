@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useParams, Link, useLocation } from 'react-router-dom'
+import { ExperientialFrameworkNote } from '../components/ExperientialFrameworkNote'
 import { useTranslation } from 'react-i18next'
 import { levelsData } from '../data/levels'
 import { PART_SEO } from '../data/part-seo'
@@ -2249,6 +2250,8 @@ export function PartPage() {
           {t('ui.back')}
         </Link>
       </div>
+
+      <ExperientialFrameworkNote />
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useParams, Link, Navigate, useLocation } from 'react-router-dom'
+import { ExperientialFrameworkNote } from '../components/ExperientialFrameworkNote'
 import { useTranslation } from 'react-i18next'
 import { levelsData } from '../data/levels'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
@@ -271,6 +272,8 @@ export function LevelPage() {
           {t('ui.back')}
         </Link>
       </div>
+
+      <ExperientialFrameworkNote />
     </div>
   )
 }
