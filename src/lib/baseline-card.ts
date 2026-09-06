@@ -34,6 +34,24 @@ export interface CardModel {
   empty: boolean;
 }
 
+/**
+ * Every translatable string the card needs. The React layer builds this from
+ * i18next and passes it in, so the model itself stays pure/framework-free.
+ * Multi-word captions carry their own \n so each language controls its breaks.
+ */
+export interface CardCopy {
+  restingPulse: string;
+  vsBaseline: string;
+  heroSub: (coverage: string) => string;
+  coverage: (days: number, source: BaselineSource) => string;
+  peak: string; walking: string; calmest: string; restless: string; highest: string; lowest: string;
+  breathsMin: string; breathingRange: string; recovery: string; vo2max: string;
+  variability: string;
+  spread: (mult: number, coverage: string) => string;
+  across: (coverage: string) => string;
+  varLeft: string; varRight: string; breathLeft: string; breathRight: string;
+}
+
 /** Source-aware coverage: the watch counts nights, the camera counts readings. */
 export function coverageLabel(days: number, source: BaselineSource): string {
   if (source === 'camera') return days === 1 ? '1 reading' : `${days} readings`;
@@ -42,6 +60,24 @@ export function coverageLabel(days: number, source: BaselineSource): string {
 export function coverageShort(days: number, source: BaselineSource): string {
   return source === 'camera' ? `${days}r` : `${days}n`;
 }
+
+/** English fallback copy — matches the v21 reference exactly. */
+export const EN_CARD_COPY: CardCopy = {
+  restingPulse: 'RESTING PULSE',
+  vsBaseline: 'vs baseline',
+  heroSub: (c) => `${c} average`,
+  coverage: coverageLabel,
+  peak: 'peak', walking: 'avg pulse\nwalking', calmest: 'calmest\nnight', restless: 'most restless\nnight',
+  highest: 'highest', lowest: 'lowest',
+  breathsMin: 'breaths / min', breathingRange: 'breathing range', recovery: 'recovery\nfirst minute', vo2max: 'VO2max\nest.',
+  variability: 'VARIABILITY',
+  spread: (m, c) => `a ${m}x spread across ${c}`,
+  across: (c) => `across ${c}`,
+  varLeft: 'nights your body\nstayed on guard',
+  varRight: 'when it\nfinally let go',
+  breathLeft: "it's how your body\nbreathes without you",
+  breathRight: 'at this rhythm you start\nworking with your nervous system',
+};
 
 const round = (n: number) => Math.round(n);
 
@@ -72,11 +108,12 @@ export function buildCardModel(
   extras: Partial<Record<BaselineExtraKey, number>>,
   source: BaselineSource,
   today?: { readings: BaselineReading[]; extras: Partial<Record<BaselineExtraKey, number>> },
+  copy: CardCopy = EN_CARD_COPY,
 ): CardModel {
   const rhr = reading(readings, 'rhr');
   const hrv = reading(readings, 'hrv');
   const rr = reading(readings, 'rr');
-  const cov = (days: number) => coverageLabel(days, source);
+  const cov = (days: number) => copy.coverage(days, source);
 
   // Shift mode: each figure becomes its signed delta from today's same-shaped read.
   const shift = !!today;
@@ -92,30 +129,30 @@ export function buildCardModel(
   // Captions carry explicit \n so the layout is exact (no auto-wrap guessing).
   const left: CardSlot[] = [];
   if (rhr && hasSpread(rhr)) {
-    left.push({ ...val(rhr.max, trhr?.max), caption: source === 'camera' ? 'highest' : 'most restless\nnight' });
-    left.push({ ...val(rhr.min, trhr?.min), caption: source === 'camera' ? 'lowest' : 'calmest\nnight' });
+    left.push({ ...val(rhr.max, trhr?.max), caption: source === 'camera' ? copy.highest : copy.restless });
+    left.push({ ...val(rhr.min, trhr?.min), caption: source === 'camera' ? copy.lowest : copy.calmest });
   }
-  if (extras.whr != null) left.push({ ...val(extras.whr, tex.whr), caption: 'avg pulse\nwalking' });
-  if (extras.hrpeak != null && rhr) left.push({ ...val(extras.hrpeak, tex.hrpeak), caption: `peak\n${cov(rhr.days)}` });
+  if (extras.whr != null) left.push({ ...val(extras.whr, tex.whr), caption: copy.walking });
+  if (extras.hrpeak != null && rhr) left.push({ ...val(extras.hrpeak, tex.hrpeak), caption: `${copy.peak}\n${cov(rhr.days)}` });
 
   // RIGHT, same idea: breathing at the bottom, workout-dependent figures on top.
   const right: CardSlot[] = [];
   if (rr) {
     // Range is a two-number span — no clean delta, so Shift shows only the average.
     if (hasSpread(rr) && !shift) {
-      right.push({ value: `${formatValue(rr.min, 0)}-${formatValue(rr.max, 0)}`, caption: `breathing range\n${cov(rr.days)}` });
+      right.push({ value: `${formatValue(rr.min, 0)}-${formatValue(rr.max, 0)}`, caption: `${copy.breathingRange}\n${cov(rr.days)}` });
     }
-    right.push({ ...val(rr.avg, trr?.avg), caption: 'breaths / min' });
+    right.push({ ...val(rr.avg, trr?.avg), caption: copy.breathsMin });
   }
-  if (extras.hrr != null) right.push({ ...val(extras.hrr, tex.hrr), caption: 'recovery\nfirst minute' });
-  if (extras.vo2 != null) right.push({ ...val(extras.vo2, tex.vo2), caption: 'VO2max\nest.' });
+  if (extras.hrr != null) right.push({ ...val(extras.hrr, tex.hrr), caption: copy.recovery });
+  if (extras.vo2 != null) right.push({ ...val(extras.vo2, tex.vo2), caption: copy.vo2max });
 
   const spread = hrv ? spreadMultiple(hrv.min, hrv.max) : null;
   const vmin = shift ? fmtDelta(hrv?.min, thrv?.min) : { value: formatValue(hrv?.min ?? null, 0), sign: undefined };
   const vmax = shift ? fmtDelta(hrv?.max, thrv?.max) : { value: formatValue(hrv?.max ?? null, 0), sign: undefined };
 
   return {
-    hero: rhr ? { ...val(rhr.avg, trhr?.avg), label: 'RESTING PULSE', sub: shift ? 'vs baseline' : `${cov(rhr.days)} average` } : null,
+    hero: rhr ? { ...val(rhr.avg, trhr?.avg), label: copy.restingPulse, sub: shift ? copy.vsBaseline : copy.heroSub(cov(rhr.days)) } : null,
     left,
     right,
     variability:
@@ -126,17 +163,17 @@ export function buildCardModel(
             minSign: vmin.sign,
             maxSign: vmax.sign,
             position: (hrv.avg! - hrv.min!) / (hrv.max! - hrv.min!),
-            caption: spread ? `a ${spread}x spread across ${cov(hrv.days)}` : `across ${cov(hrv.days)}`,
-            leftText: 'nights your body\nstayed on guard',
-            rightText: 'when it\nfinally let go',
+            caption: spread ? copy.spread(spread, cov(hrv.days)) : copy.across(cov(hrv.days)),
+            leftText: copy.varLeft,
+            rightText: copy.varRight,
           }
         : null,
     breathing: rr
       ? {
           leftNum: formatValue(rr.avg, 0),
-          leftText: "it's how your body\nbreathes without you",
+          leftText: copy.breathLeft,
           rightNum: '6',
-          rightText: 'at this rhythm you start\nworking with your nervous system',
+          rightText: copy.breathRight,
         }
       : null,
     empty: !rhr && !hrv && !rr && Object.keys(extras).length === 0,

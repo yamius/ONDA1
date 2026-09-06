@@ -6332,6 +6332,7 @@ const OndaLevel1 = () => {
             <div className="text-center mb-3">
               <h2 className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.title', 'Мой Базлайн')}</h2>
               <p className={`text-sm mt-1 ${isLight ? 'text-slate-500' : 'text-white/60'}`}>{t('baseline.subtitle', 'Зайди сюда завтра и увидишь разницу')}</p>
+              <p className={`text-xs mt-0.5 ${isLight ? 'text-slate-400' : 'text-white/40'}`}>{t('baseline.subtitle_note', '(между средним за период и сегодня)')}</p>
               <button
                 type="button"
                 onClick={() => setBaselineShift((s) => !s)}

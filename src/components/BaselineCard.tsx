@@ -1,7 +1,38 @@
+import { useTranslation } from 'react-i18next';
 import figureDarkSrc from '../assets/baseline-figure.png';
 import figureLightSrc from '../assets/baseline-figure-light.png';
-import { buildCardModel, type CardModel } from '../lib/baseline-card';
+import { buildCardModel, EN_CARD_COPY, type CardModel, type CardCopy } from '../lib/baseline-card';
 import type { BaselineData, BaselineSource } from '../lib/baseline';
+
+/** Build the card's copy from i18next (keeps buildCardModel pure). */
+function useCardCopy(): CardCopy {
+  const { t } = useTranslation();
+  return {
+    restingPulse: t('baseline.resting_pulse', EN_CARD_COPY.restingPulse),
+    vsBaseline: t('baseline.vs_baseline', EN_CARD_COPY.vsBaseline),
+    heroSub: (c) => t('baseline.hero_sub', { coverage: c, defaultValue: '{{coverage}} average' }),
+    coverage: (days, source) => source === 'camera'
+      ? t('baseline.readings', { count: days, defaultValue: days === 1 ? '1 reading' : `${days} readings` })
+      : t('baseline.nights', { count: days, defaultValue: days === 1 ? '1 night' : `${days} nights` }),
+    peak: t('baseline.peak', EN_CARD_COPY.peak),
+    walking: t('baseline.walking', EN_CARD_COPY.walking),
+    calmest: t('baseline.calmest', EN_CARD_COPY.calmest),
+    restless: t('baseline.restless', EN_CARD_COPY.restless),
+    highest: t('baseline.highest', EN_CARD_COPY.highest),
+    lowest: t('baseline.lowest', EN_CARD_COPY.lowest),
+    breathsMin: t('baseline.breaths_min', EN_CARD_COPY.breathsMin),
+    breathingRange: t('baseline.breathing_range', EN_CARD_COPY.breathingRange),
+    recovery: t('baseline.recovery', EN_CARD_COPY.recovery),
+    vo2max: t('baseline.vo2max', EN_CARD_COPY.vo2max),
+    variability: t('baseline.variability', EN_CARD_COPY.variability),
+    spread: (m, c) => t('baseline.spread', { mult: m, coverage: c, defaultValue: 'a {{mult}}x spread across {{coverage}}' }),
+    across: (c) => t('baseline.across', { coverage: c, defaultValue: 'across {{coverage}}' }),
+    varLeft: t('baseline.var_left', EN_CARD_COPY.varLeft),
+    varRight: t('baseline.var_right', EN_CARD_COPY.varRight),
+    breathLeft: t('baseline.breath_left', EN_CARD_COPY.breathLeft),
+    breathRight: t('baseline.breath_right', EN_CARD_COPY.breathRight),
+  };
+}
 
 /**
  * In-app baseline card — the onda_card_v21 design in DOM: the neon body figure with the numbers
@@ -68,7 +99,8 @@ function Slot({ value, caption, side, row, sign, p }: { value: string; caption: 
  * variability block it continues. Reads on the home background in both themes.
  */
 export function BaselineClosingFooter({ data, source, light }: { data: BaselineData; source: BaselineSource; light?: boolean }) {
-  const model = buildCardModel(data.readings, data.extras, source);
+  const copy = useCardCopy();
+  const model = buildCardModel(data.readings, data.extras, source, undefined, copy);
   if (!model.variability || !model.breathing) return null;
   const b = model.breathing;
   const textColor = light ? 'rgb(71,85,105)' : 'rgb(200,210,225)';
@@ -106,10 +138,12 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, t
   // The card is ALWAYS on home once the user reaches it — it never unmounts, so
   // connecting a watch can only fill it, never make it disappear. With no data
   // yet it shows the figure + an invitation; camera/watch numbers pour in later.
+  const { t } = useTranslation();
+  const copy = useCardCopy();
   const p = light ? LIGHT : DARK;
   const shiftOn = !!shift && !!todayData;
   const model: CardModel | null = data
-    ? buildCardModel(data.readings, data.extras, source, shiftOn ? { readings: todayData!.readings, extras: todayData!.extras } : undefined)
+    ? buildCardModel(data.readings, data.extras, source, shiftOn ? { readings: todayData!.readings, extras: todayData!.extras } : undefined, copy)
     : null;
   const isEmpty = !model || model.empty;
   // Shift overrides the live hero — you're reading deltas, not the live pulse.
@@ -159,7 +193,7 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, t
           <div style={{ color: p.green, fontSize: '8.9cqw', fontWeight: 700, lineHeight: 1, textShadow: p.cloud }} className="tabular-nums">
             <span style={{ fontSize: '4.2cqw', opacity: 0.6 }}>≈</span>{Math.round(liveBr)}
           </div>
-          <div style={{ color: p.gray, fontSize: '2.93cqw', marginTop: '0.8cqw', lineHeight: 1.2, whiteSpace: 'pre-line', textShadow: p.cloud }}>{'breaths / min\nlive'}</div>
+          <div style={{ color: p.gray, fontSize: '2.93cqw', marginTop: '0.8cqw', lineHeight: 1.2, whiteSpace: 'pre-line', textShadow: p.cloud }}>{t('baseline.live', 'breaths / min\nlive')}</div>
         </div>
       )}
 
@@ -173,7 +207,7 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, t
           6) live BELOW the card, rendered by the home. */}
       {model?.variability && (
         <div className="absolute" style={{ top: '63%', left: SIDE, right: SIDE }}>
-          <div className="text-center" style={{ color: p.gray, fontSize: '4.35cqw', fontWeight: 600, letterSpacing: '0.08em', textShadow: p.cloud }}>VARIABILITY</div>
+          <div className="text-center" style={{ color: p.gray, fontSize: '4.35cqw', fontWeight: 600, letterSpacing: '0.08em', textShadow: p.cloud }}>{copy.variability}</div>
           <div className="text-center" style={{ color: p.green, fontSize: '3.6cqw', marginTop: '1cqw', textShadow: p.cloud }}>{model.variability.caption}</div>
           {/* bar: 39 (aligned to the left column) — line — 62 (right column) */}
           <div className="flex items-center" style={{ marginTop: '3.4cqw', gap: '3cqw' }}>
