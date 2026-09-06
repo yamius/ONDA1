@@ -66,7 +66,7 @@ export function BaselineClosingFooter({ data, source, light }: { data: BaselineD
   );
 }
 
-export function BaselineCard({ data, source, emptyHint, liveHr, liveBr }: {
+export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift }: {
   data: BaselineData | null;
   source: BaselineSource;
   emptyHint?: string;
@@ -75,7 +75,10 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr }: {
    *  the Pulse | Breathing tiles above the card). Absent → the static baseline. */
   liveHr?: number | null;
   liveBr?: number | null;
+  /** Shift view — flip the numbers to signed deltas from baseline (wiring TBD). */
+  shift?: boolean;
 }) {
+  void shift;
   // The card is ALWAYS on home once the user reaches it — it never unmounts, so
   // connecting a watch can only fill it, never make it disappear. With no data
   // yet it shows the figure + an invitation; camera/watch numbers pour in later.

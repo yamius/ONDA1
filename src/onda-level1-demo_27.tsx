@@ -160,6 +160,8 @@ const OndaLevel1 = () => {
   // no permissions), then redrawn from the 14-day HealthKit read once the
   // watch is connected. Honest by construction: only what Health/camera gave.
   const [baseline, setBaseline] = useState<{ data: BaselineData; source: BaselineSource } | null>(null);
+  // Shift view: flip the card numbers to signed deltas from baseline (blue −, violet +).
+  const [baselineShift, setBaselineShift] = useState(false);
   // Rolling stats over the current camera reading → avg/min/max pulse + a
   // breathing estimate. Reset on each fresh start, sealed into a card on stop.
   const camSessionRef = useRef({ min: Infinity, max: -Infinity, sum: 0, count: 0, brSum: 0, brCount: 0 });
@@ -261,6 +263,7 @@ const OndaLevel1 = () => {
     baselineAutoRef.current = true;
     void loadWatchBaseline();
   }, [watchHeartRate.isConnected, loadWatchBaseline]);
+
 
 
 
@@ -6303,6 +6306,34 @@ const OndaLevel1 = () => {
           </span>
         </div>
 
+        {/* ── My Baseline — the anchor of the home, first in view on open ──
+            Title + a reason to return + a small Shift toggle, then the figure
+            card. The coherence window now sits BELOW this (moved down). */}
+        <div className="mb-6 flex flex-col items-center">
+          <div className="w-full max-w-[360px]">
+            <div className="text-center mb-3">
+              <h2 className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.title', 'Мой Базлайн')}</h2>
+              <p className={`text-sm mt-1 ${isLight ? 'text-slate-500' : 'text-white/60'}`}>{t('baseline.subtitle', 'Зайди сюда завтра и увидишь разницу')}</p>
+              <button
+                type="button"
+                onClick={() => setBaselineShift((s) => !s)}
+                className={`mt-3 inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold transition-all ${baselineShift ? 'bg-violet-500/25 text-violet-100 ring-1 ring-violet-400/50' : emoTint}`}
+                data-testid="baseline-shift"
+              >
+                {t('baseline.shift', 'Shift')}
+              </button>
+            </div>
+            <BaselineCard
+              data={baseline?.data ?? null}
+              source={baseline?.source ?? 'camera'}
+              emptyHint={t('baseline.empty_hint', 'Подключите Apple Watch, чтобы открыть базлайн из 14 дней истории Health')}
+              liveHr={baselineLiveHr}
+              liveBr={baselineLiveBr}
+              shift={baselineShift}
+            />
+          </div>
+        </div>
+
         {/* Section 1 — Biometric block. Honest + calm: two tiles
             (Pulse — measured · Breathing — an RSA estimate) → Coherence
             hero (heart–breath rhythm, the live training signal). The old
@@ -6459,23 +6490,22 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
-        {/* Baseline card — the figure + your numbers. Camera numbers on day 0
-            (coverage caption says "1 reading"); after "Connect watch" it
-            redraws from the 14-day HealthKit read (caption → real night count).
-            The watch CTA under the card is the single retention action. */}
-        {/* Always rendered on home — never gated on data, so connecting a watch
-            only fills it and it can't vanish. No data yet → figure + invitation. */}
+        {/* Closing breathing figures (13 / 6) — after the coherence window. */}
+        {baseline && (
+          <div className="mb-6 flex flex-col items-center">
+            <div className="w-full max-w-[360px]">
+              <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
+            </div>
+          </div>
+        )}
+
+        {/* Установка — the intention block before the practices (placeholder copy). */}
         <div className="mb-6 flex flex-col items-center">
-          <div className="w-full max-w-[360px]">
-            <BaselineCard
-              data={baseline?.data ?? null}
-              source={baseline?.source ?? 'camera'}
-              emptyHint={t('baseline.empty_hint', 'Подключите Apple Watch, чтобы открыть базлайн из 14 дней истории Health')}
-              liveHr={baselineLiveHr}
-              liveBr={baselineLiveBr}
-            />
-            {/* Closing breathing figures live below the card (watch-only). */}
-            {baseline && <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />}
+          <div className={`w-full max-w-[360px] rounded-2xl p-5 border ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`}>
+            <h3 className={`text-sm font-bold mb-1.5 ${isLight ? 'text-slate-700' : 'text-white/90'}`}>{t('baseline.setup_title', 'Установка')}</h3>
+            <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>
+              {t('baseline.setup_body', 'Практики ниже сбалансируют твой сердечный ритм — просто следуй подсказкам во время.')}
+            </p>
           </div>
         </div>
 
