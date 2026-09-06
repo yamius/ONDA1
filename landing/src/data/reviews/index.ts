@@ -44,6 +44,7 @@ import polarH10 from './polar-h10'
 import garminVenu4 from './garmin-venu-4'
 import samsungGalaxyRing from './samsung-galaxy-ring'
 import ultrahumanRingAir from './ultrahuman-ring-air'
+import ultrahumanRingPro from './ultrahuman-ring-pro'
 import ringconnGen2 from './ringconn-gen-2'
 import fitbitCharge6 from './fitbit-charge-6'
 import withingsScanwatch from './withings-scanwatch'
@@ -195,6 +196,7 @@ import sleepRightStrips from './sleep-strips-by-sleepright'
 // Massage guns (date-gated to 2026-07-20)
 import theragunProPlus from './theragun-pro-plus'
 import hypervolt2Pro from './hypervolt-2-pro'
+import hypervolt3Pro from './hypervolt-3-pro'
 import theragunElite from './theragun-elite'
 import achedawayPro from './achedaway-pro'
 import opoveM3 from './opove-m3-pro-2'
@@ -245,6 +247,7 @@ const ALL_REVIEWS: ToolReview[] = [
   garminVenu4,
   samsungGalaxyRing,
   ultrahumanRingAir,
+  ultrahumanRingPro,
   appleWatchSeries11,
   ringconnGen2,
   fitbitCharge6,
@@ -397,6 +400,7 @@ const ALL_REVIEWS: ToolReview[] = [
   // Massage guns — ordered by overallScore. All date-gated to 2026-07-20.
   theragunProPlus,
   hypervolt2Pro,
+  hypervolt3Pro,
   theragunElite,
   achedawayPro,
   opoveM3,

@@ -40,6 +40,8 @@ const whoopVsUltrahuman: HeadToHead = {
   ],
   content: `## The short version
 
+> Note: the Ultrahuman Ring Air is under a US import ban (October 2025, Oura ITC patent win) and cannot be bought in the US. Ultrahuman’s US-available successor is the [Ring Pro](/reviews/ultrahuman-ring-pro) — subscription-free, with a ~15-day battery. Read this comparison with that in mind if you are in the US.
+
 This is a rent-vs-own decision. [WHOOP 5.0](/reviews/whoop-5-0) is a band you pay for every year in exchange for the deepest recovery-and-strain coaching in a screenless tracker. [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) is a ring you buy once, subscription-free, strong on sleep — with a battery-reliability asterisk.
 
 ## When WHOOP 5.0 is the right pick

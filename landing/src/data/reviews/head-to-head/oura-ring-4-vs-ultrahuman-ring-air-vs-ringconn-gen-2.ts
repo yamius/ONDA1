@@ -55,6 +55,8 @@ const threeRings: HeadToHead = {
   ],
   content: `## The short version
 
+> Note: the Ultrahuman Ring Air is under a US import ban (October 2025, Oura ITC patent win) and cannot be bought in the US. Ultrahuman’s US-available successor is the [Ring Pro](/reviews/ultrahuman-ring-pro) — subscription-free, with a ~15-day battery. Read this comparison with that in mind if you are in the US.
+
 Three different optimal points on the smart-ring trade-off surface. Oura for polish, Ultrahuman for form factor + CGM ecosystem, RingConn for value + battery. Most users do not need to think much harder than that.
 
 ## When Oura Ring 4 is the right pick
@@ -70,7 +72,7 @@ If ring weight matters more than anything else, Ultrahuman is the lightest smart
 If subscription-free is a hard requirement and you want the longest battery in the category, RingConn is the right shape. It is also the cheapest over three years by a meaningful margin. The trade is a slightly less mature app and shallower sleep analytics than Oura.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-09-06',
 }
 
 export default threeRings

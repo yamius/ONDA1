@@ -40,6 +40,8 @@ const ultrahumanVsSamsungRing: HeadToHead = {
   ],
   content: `## The short version
 
+> Note: the Ultrahuman Ring Air is under a US import ban (October 2025, Oura ITC patent win) and cannot be bought in the US. Ultrahuman’s US-available successor is the [Ring Pro](/reviews/ultrahuman-ring-pro) — subscription-free, with a ~15-day battery. Read this comparison with that in mind if you are in the US.
+
 Two subscription-free rings at the same overall standing. [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) is the lightest, most open (cross-platform) option, undercut by battery-reliability reports. [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) is the comfortable, well-supported choice — if you live in the Galaxy ecosystem.
 
 ## When the Ultrahuman Ring Air is the right pick

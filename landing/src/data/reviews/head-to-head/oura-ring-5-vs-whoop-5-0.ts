@@ -35,7 +35,7 @@ const ouraRing5VsWhoop: HeadToHead = {
     },
     {
       q: 'Are both subscription devices?',
-      a: 'Effectively. WHOOP is membership-only ($239/yr, no hardware to own). Oura needs the ~$6/month membership for full data on top of the $399 ring — but you own the hardware. Neither is truly subscription-free; for that, see the Ultrahuman Ring Air or Samsung Galaxy Ring.',
+      a: 'Effectively. WHOOP is membership-only ($239/yr, no hardware to own). Oura needs the ~$6/month membership for full data on top of the $399 ring — but you own the hardware. Neither is truly subscription-free; for that, see the Ultrahuman Ring Pro or Samsung Galaxy Ring.',
     },
   ],
   content: `## The short version
@@ -52,7 +52,7 @@ You train seriously and want continuous HRV — including during workouts — pl
 
 ## Also worth comparing
 
-For subscription-free rings, see the [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) or [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring); the full field is in the [best HRV trackers](/reviews/hrv-trackers).`,
+For subscription-free rings, see the [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) or [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring); the full field is in the [best HRV trackers](/reviews/hrv-trackers).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

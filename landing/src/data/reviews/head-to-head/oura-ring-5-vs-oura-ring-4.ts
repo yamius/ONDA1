@@ -52,7 +52,7 @@ Hold. You are getting the same new app features, so upgrading pays for sensors a
 
 ## Either way
 
-The mandatory membership applies to both, and remains the main mark against Oura. For subscription-free alternatives, see the [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) or [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring), or the full [best HRV trackers](/reviews/hrv-trackers).`,
+The mandatory membership applies to both, and remains the main mark against Oura. For subscription-free alternatives, see the [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) or [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring), or the full [best HRV trackers](/reviews/hrv-trackers).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

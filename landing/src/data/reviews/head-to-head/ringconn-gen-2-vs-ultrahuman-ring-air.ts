@@ -47,6 +47,8 @@ const ringconnVsUltrahuman: HeadToHead = {
   ],
   content: `## The short version
 
+> Note: the Ultrahuman Ring Air is under a US import ban (October 2025, Oura ITC patent win) and cannot be bought in the US. Ultrahuman’s US-available successor is the [Ring Pro](/reviews/ultrahuman-ring-pro) — subscription-free, with a ~15-day battery. Read this comparison with that in mind if you are in the US.
+
 RingConn Gen 2 is the better value choice for most users — longer battery, cleaner reliability, lower price, comparable analytics. Ultrahuman wins when ring weight or CGM integration is what you specifically want.
 
 ## When RingConn is the right pick
@@ -58,7 +60,7 @@ If you want most of an Oura at half the long-term cost — subscription-free, 12
 If you cannot tolerate a heavier ring on your finger, Ultrahuman Ring Air at 2.4g is the answer. If you already use or plan to use the Ultrahuman M1 CGM, the native unified-ecosystem view is unique and meaningful. Outside those two cases RingConn is the better-value pick.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-09-06',
 }
 
 export default ringconnVsUltrahuman

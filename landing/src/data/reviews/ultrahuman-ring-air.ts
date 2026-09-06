@@ -9,7 +9,7 @@ const ultrahumanRingAir: ToolReview = {
   description:
     'ONDA review of the Ultrahuman Ring Air — a featherweight, subscription-free HRV ring with a real reliability caveat. Scored on accuracy, data and value.',
   verdict:
-    'A featherweight, subscription-free ring with strong sleep tracking — undercut by widespread reports of batteries failing within months.',
+    'A featherweight, subscription-free ring with strong sleep tracking — undercut by widespread reports of batteries failing within months, and now banned from US sale. Ultrahuman’s successor is the Ring Pro.',
   summary:
     'The Ultrahuman Ring Air does the fundamentals well — light, subscription-free, continuous HRV and strong sleep tracking. But it is hard to recommend without reservation: through 2026, batteries failing within months have been a widely reported problem.',
   overallScore: 7.3,
@@ -41,7 +41,11 @@ const ultrahumanRingAir: ToolReview = {
   price: { usd: 350, note: 'one-time; no subscription', asOf: '2026-05-15' },
   link: 'https://www.ultrahuman.com/ring/',
   linkType: 'official',
-  content: `## Where it leads
+  content: `## Update: banned from US sale — successor is the Ring Pro
+
+> As of October 2025 the Ultrahuman Ring Air is under a US import ban following Oura’s ITC patent win, so US buyers cannot purchase it. Ultrahuman’s redesigned, US-available successor is the [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) — a one-time $479, no subscription, with a ~15-day battery that directly targets the reliability problem below. If you are in the US and want an Ultrahuman ring, that is the current one.
+
+## Where it leads
 
 The Ultrahuman Ring Air gets the fundamentals right. It is one of the lightest rings you can wear, it samples [HRV](/glossary/heart-rate-variability) continuously — updating every couple of minutes at rest — and there is no subscription: the purchase buys lifelong access to the ring and your own data. Early third-party checks have put its sleep-stage agreement high, and the app, built around add-on "PowerPlugs", is genuinely capable.
 
@@ -67,9 +71,9 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Ultrahuman Ring Air — official product page', url: 'https://www.ultrahuman.com/ring/' },
     { label: 'Smart ring HRV and sleep validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=smart+ring+heart+rate+variability+sleep+validation' },
   ],
-  relatedSlugs: ['ultrahuman-m1', 'oura-ring-4', 'samsung-galaxy-ring', 'ringconn-gen-2'],
+  relatedSlugs: ['ultrahuman-ring-pro', 'ultrahuman-m1', 'oura-ring-4', 'samsung-galaxy-ring', 'ringconn-gen-2'],
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-09-06',
 }
 
 export default ultrahumanRingAir

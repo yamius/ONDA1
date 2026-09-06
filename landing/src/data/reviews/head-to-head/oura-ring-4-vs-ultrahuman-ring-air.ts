@@ -46,6 +46,8 @@ const ouraVsUltrahuman: HeadToHead = {
   ],
   content: `## The short version
 
+> Note: the Ultrahuman Ring Air is under a US import ban (October 2025, Oura ITC patent win) and cannot be bought in the US. Ultrahuman’s US-available successor is the [Ring Pro](/reviews/ultrahuman-ring-pro) — subscription-free, with a ~15-day battery. Read this comparison with that in mind if you are in the US.
+
 Oura Ring 4 wins for most users on app maturity, sleep-model depth and reliability. Ultrahuman Ring Air wins specifically when no-subscription, lightest-possible-form-factor, or native CGM integration is the deciding criterion.
 
 ## When Oura is the right pick
@@ -57,7 +59,7 @@ If you want the most polished smart-ring experience and the analytics depth that
 If you want a smart ring without a subscription, the lightest possible form factor, or you already use (or plan to use) the Ultrahuman M1 CGM for the unique cross-signal glucose + HRV + sleep view, Ultrahuman is the right shape. Just go in aware of the battery-reliability caveat.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-09-06',
 }
 
 export default ouraVsUltrahuman

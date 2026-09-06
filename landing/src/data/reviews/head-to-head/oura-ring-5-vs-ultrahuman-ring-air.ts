@@ -40,6 +40,8 @@ const ouraRing5VsUltrahuman: HeadToHead = {
   ],
   content: `## The short version
 
+> Note: the Ultrahuman Ring Air is under a US import ban (October 2025, Oura ITC patent win) and cannot be bought in the US. Ultrahuman’s US-available successor is the [Ring Pro](/reviews/ultrahuman-ring-pro) — subscription-free, with a ~15-day battery. Read this comparison with that in mind if you are in the US.
+
 The [Oura Ring 5](/reviews/oura-ring-5) is the accuracy-leading flagship with a mandatory subscription. The [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) is the subscription-free alternative with strong sleep tracking and a battery-reliability question.
 
 ## When the Oura Ring 5 is the right pick

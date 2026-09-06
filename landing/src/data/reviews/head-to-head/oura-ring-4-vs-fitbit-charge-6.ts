@@ -52,7 +52,7 @@ Budget and breadth. For $159 you get usable HRV, a screen, GPS and Google apps â
 
 ## Also worth comparing
 
-For subscription-free rings, see the [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) or [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring); the full field is in the [best HRV trackers](/reviews/hrv-trackers).`,
+For subscription-free rings, see the [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) or [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring); the full field is in the [best HRV trackers](/reviews/hrv-trackers).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
