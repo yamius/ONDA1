@@ -15,6 +15,7 @@ import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
 import { MEASUREMENTS_FAQ } from '../src/data/measurements-faq'
 import { getOndaVs } from '../src/data/onda-vs'
+import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
 import { EMOTON_FAQ } from '../src/data/emoton-faq'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
@@ -1532,6 +1533,18 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+    }
+  }
+  // /faq — consolidated Q&A hub + FAQPage JSON-LD. EN-only.
+  if (route === '/faq') {
+    return {
+      title: 'ONDA Life FAQ — HRV Biofeedback, Breathing & the App | ONDA Life',
+      description:
+        'Straight answers about HRV biofeedback, resonance breathing, HRV science and the ONDA app: what it measures, whether it needs an Apple Watch, how it compares, and more.',
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: ONDA_FAQ_FLAT.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
   // /compare — ONDA's own comparison hub. EN-only.

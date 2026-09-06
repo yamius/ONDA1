@@ -30,6 +30,7 @@ import { ResearchPage } from './pages/ResearchPage'
 import { MeasurementsPage } from './pages/MeasurementsPage'
 import { HowItWorksPage } from './pages/HowItWorksPage'
 import { ProductPage } from './pages/ProductPage'
+import { FaqPage } from './pages/FaqPage'
 import { OndaComparePage } from './pages/OndaComparePage'
 import { OndaVsPage } from './pages/OndaVsPage'
 import { ToolsPage } from './pages/ToolsPage'
@@ -179,6 +180,7 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/measurements"          element={<MeasurementsPage />} />
           <Route path="/how-it-works"          element={<HowItWorksPage />} />
           <Route path="/product"               element={<ProductPage />} />
+          <Route path="/faq"                   element={<FaqPage />} />
           <Route path="/compare"               element={<OndaComparePage />} />
           <Route path="/compare/:slug"         element={<OndaVsPage />} />
           <Route path="/tools"                 element={<ToolsPage />} />

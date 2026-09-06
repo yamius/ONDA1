@@ -445,6 +445,8 @@ const nonLocalizedStaticPaths = [
   '/how-it-works',
   // /product — canonical machine-readable product page (Product Facts). EN-only.
   '/product',
+  // /faq — consolidated answer-engine Q&A hub. EN-only.
+  '/faq',
   // /compare — ONDA's own "ONDA vs <competitor>" comparisons. EN-only.
   '/compare',
   ...ONDA_VS.map((e) => `/compare/${e.slug}`),

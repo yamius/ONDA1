@@ -78,6 +78,7 @@ const ResearchPage          = lazy(() => import('./pages/ResearchPage').then(m =
 const MeasurementsPage      = lazy(() => import('./pages/MeasurementsPage').then(m => ({ default: m.MeasurementsPage })))
 const HowItWorksPage        = lazy(() => import('./pages/HowItWorksPage').then(m => ({ default: m.HowItWorksPage })))
 const ProductPage           = lazy(() => import('./pages/ProductPage').then(m => ({ default: m.ProductPage })))
+const FaqPage               = lazy(() => import('./pages/FaqPage').then(m => ({ default: m.FaqPage })))
 const OndaComparePage       = lazy(() => import('./pages/OndaComparePage').then(m => ({ default: m.OndaComparePage })))
 const OndaVsPage            = lazy(() => import('./pages/OndaVsPage').then(m => ({ default: m.OndaVsPage })))
 const ToolsPage             = lazy(() => import('./pages/ToolsPage').then(m => ({ default: m.ToolsPage })))
@@ -202,6 +203,7 @@ const routeElements = (
             <Route path="/measurements"          element={<MeasurementsPage />} />
             <Route path="/how-it-works"          element={<HowItWorksPage />} />
             <Route path="/product"               element={<ProductPage />} />
+            <Route path="/faq"                   element={<FaqPage />} />
             <Route path="/compare"               element={<OndaComparePage />} />
             <Route path="/compare/:slug"         element={<OndaVsPage />} />
             <Route path="/tools"                 element={<ToolsPage />} />

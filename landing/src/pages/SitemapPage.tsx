@@ -51,6 +51,7 @@ export function SitemapPage() {
     { to: lang === 'en' ? '/bio' : `/${lang}/bio`, label: t('main.bio') },
     // EN-only GEO/AI pages — canonical EN path regardless of locale.
     { to: '/product', label: 'Product' },
+    { to: '/faq', label: 'FAQ' },
     { to: '/measurements', label: 'What ONDA measures' },
     { to: '/how-it-works', label: 'How ONDA works' },
     { to: '/research', label: 'The science behind ONDA' },
