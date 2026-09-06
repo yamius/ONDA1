@@ -59,6 +59,8 @@ export type AnalyticsEventName =
   | 'biometric_sync_failed'
   // Baseline (retention — Health-baseline onboarding)
   | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera). Declared now; fired in Phase 2.
+  | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + each extra value/flag. Lets us see which numbers Health actually gave without a device session.
+  | 'baseline_error'                 // the 14-day HealthKit read threw — params: message.
   // Gamification
   | 'ond_earned'
   | 'artifact_unlocked'

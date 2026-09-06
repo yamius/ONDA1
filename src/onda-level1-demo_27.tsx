@@ -188,6 +188,23 @@ const OndaLevel1 = () => {
   const loadWatchBaseline = useCallback(async () => {
     try {
       const res = await HealthKitHeartRate.queryBaseline({ days: BASELINE_WINDOW_DAYS });
+
+      // Diagnostic → Supabase/GA4: exactly what the 14-day read returned, so we
+      // can see which numbers Health actually gave (and which extras are empty
+      // vs missing permission) without a live device session.
+      const ex = res.extras ?? {};
+      track('baseline_debug', {
+        source: 'watch',
+        rhr_days: res.rhr?.days ?? 0, rhr_has: res.rhr?.avg != null,
+        hrv_days: res.hrv?.days ?? 0, hrv_has: res.hrv?.avg != null,
+        rr_days: res.rr?.days ?? 0, rr_has: res.rr?.avg != null,
+        hrpeak: ex.hrpeak ?? null,
+        whr: ex.whr ?? null,
+        vo2: ex.vo2 ?? null,
+        hrr: ex.hrr ?? null,
+        extras_keys: Object.keys(ex).join(',') || 'none',
+      });
+
       const data = buildFromNative(res);
       if (!hasAnyReading(data.readings)) return; // nothing in Health → keep the camera card
       setBaseline({ data, source: 'watch' });
@@ -196,6 +213,7 @@ const OndaLevel1 = () => {
       track('baseline_shown', { source: 'watch', coverage_days: coverage });
     } catch (e) {
       console.warn('[baseline] queryBaseline failed', e);
+      track('baseline_error', { source: 'watch', message: String((e as Error)?.message ?? e) });
     }
   }, [track]);
 
