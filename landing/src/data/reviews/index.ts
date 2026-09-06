@@ -146,6 +146,7 @@ import finnleoHallmark from './finnleo-hallmark'
 // PEMF devices (date-gated to 2026-06-22)
 import bemerClassicEvo from './bemer-classic-evo'
 import healthyWaveMultiWave from './healthy-wave-multi-wave'
+import qiCoil from './qi-coil'
 import pulseCentersXLPro from './pulse-centers-pulse-xl-pro'
 import curatron3d from './curatron-3d'
 import imrsPrime from './imrs-prime'
@@ -345,6 +346,7 @@ const ALL_REVIEWS: ToolReview[] = [
   // PEMF devices — ordered by overallScore. All date-gated to 2026-06-22.
   bemerClassicEvo,
   healthyWaveMultiWave,
+  qiCoil,
   pulseCentersXLPro,
   curatron3d,
   imrsPrime,

@@ -63,7 +63,7 @@ Choose Healthy Wave Multi-Wave if you want PEMF stacked with IR and red light in
   references: [
     { label: 'Healthy Wave / HealthyLine — official site', url: 'https://www.healthyline.com/' },
   ],
-  relatedSlugs: ['resona-health-vibe', 'bemer-classic-evo', 'higherdose-pemf-mat', 'omi-full-body-mat'],
+  relatedSlugs: ['qi-coil', 'resona-health-vibe', 'bemer-classic-evo', 'higherdose-pemf-mat', 'omi-full-body-mat'],
   publishOn: '2026-06-22',
   datePublished: '2026-06-22',
   dateModified: '2026-06-22',

@@ -361,8 +361,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-06T01:38:51+02:00"
   },
   "what-your-apple-watch-records": {
-    "published": "2026-09-05T15:01:50.898Z",
-    "modified": "2026-09-05T15:01:50.898Z"
+    "published": "2026-09-05T18:33:27+02:00",
+    "modified": "2026-09-05T18:33:27+02:00"
   },
   "zone-2-training-aerobic-base": {
     "published": "2026-06-04T00:39:42+02:00",

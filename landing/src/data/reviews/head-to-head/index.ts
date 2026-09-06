@@ -99,6 +99,7 @@ import threePremiumSauna from './sunlighten-vs-clearlight-vs-saunaspace'
 import irVsTraditional from './sunlighten-vs-finnleo-vs-almost-heaven'
 // PEMF (date-gated to 2026-06-22)
 import bemerVsHealthyWave from './bemer-classic-evo-vs-healthy-wave-multi-wave'
+import healthyWaveVsQiCoil from './healthy-wave-multi-wave-vs-qi-coil'
 import bemerVsPulseCenters from './bemer-classic-evo-vs-pulse-centers-pulse-xl-pro'
 import healthyWaveVsHigherDose from './healthy-wave-multi-wave-vs-higherdose-pemf-mat'
 import imrsVsOmi from './imrs-prime-vs-omi-full-body-mat'
@@ -259,6 +260,7 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   eightSleepVsChilipadVsBedjet,
   // PEMF (date-gated to 2026-06-22)
   bemerVsHealthyWave,
+  healthyWaveVsQiCoil,
   bemerVsPulseCenters,
   healthyWaveVsHigherDose,
   imrsVsOmi,
