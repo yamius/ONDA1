@@ -106,6 +106,10 @@ import ouraRing5VsRing4 from './oura-ring-5-vs-oura-ring-4'
 import ouraRing5VsWhoop from './oura-ring-5-vs-whoop-5-0'
 import ouraRing5VsAppleWatch11 from './oura-ring-5-vs-apple-watch-series-11'
 import ouraRing5VsUltrahuman from './oura-ring-5-vs-ultrahuman-ring-air'
+import ringProVsOura5 from './ultrahuman-ring-pro-vs-oura-ring-5'
+import ringProVsSamsung from './ultrahuman-ring-pro-vs-samsung-galaxy-ring'
+import ringProVsRingconn from './ultrahuman-ring-pro-vs-ringconn-gen-2'
+import ringProVsRingAir from './ultrahuman-ring-pro-vs-ultrahuman-ring-air'
 import pod4VsPod5 from './eight-sleep-pod-4-vs-eight-sleep-pod-5'
 import pod5VsChilipad from './eight-sleep-pod-5-vs-chilipad-dock-pro'
 import pod5VsClimate360 from './eight-sleep-pod-5-vs-sleep-number-climate360'
@@ -280,6 +284,10 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   ouraRing5VsWhoop,
   ouraRing5VsAppleWatch11,
   ouraRing5VsUltrahuman,
+  ringProVsOura5,
+  ringProVsSamsung,
+  ringProVsRingconn,
+  ringProVsRingAir,
   pod4VsPod5,
   pod5VsChilipad,
   pod5VsClimate360,
