@@ -7,11 +7,11 @@ const ouraRing4: ToolReview = {
   category: 'hrv-wearable',
   productType: 'Smart ring',
   description:
-    'ONDA review of the Oura Ring 4 — the most precise overnight HRV and sleep tracker of 2026, scored on accuracy, data access, wearability and value.',
+    'ONDA review of the Oura Ring 4 — the previous-generation Oura: still excellent overnight HRV and sleep, now below the slimmer Ring 5 and often the better value. Mandatory subscription.',
   verdict:
-    'The most precise overnight HRV and sleep tracker of 2026 — if you accept the mandatory subscription.',
+    'Still an excellent overnight HRV and sleep tracker — now one step below the slimmer, upgraded-sensor Oura Ring 5, but sharing the same new software and often the better value discounted. Mandatory subscription remains.',
   summary:
-    'The Oura Ring 4 is the device to beat for overnight heart-rate variability and sleep. It pairs the smallest 24/7 form factor in the category with the strongest sleep-stage validation, and its nighttime HRV tracks an ECG chest strap closely. The catch is a recurring membership without which the app shows only basic data.',
+    'The Oura Ring 4 was the device to beat for overnight heart-rate variability and sleep, and it is still near the top — now succeeded by the Oura Ring 5, which is slimmer with redesigned sensors. Crucially, the new software features roll out to the Ring 4 too, so it keeps the smallest-but-one 24/7 form factor, best-in-class sleep-stage validation and ECG-close nighttime HRV. The catch is unchanged: a recurring membership without which the app shows only basic data.',
   overallScore: 7.9,
   scores: [
     { criterionId: 'hrv-accuracy', score: 8.5, note: 'Nighttime RMSSD tracks an ECG chest strap within a few milliseconds; daytime readings drift under motion.' },
@@ -43,7 +43,9 @@ const ouraRing4: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-For the one job that matters most to ONDA — a clean overnight [HRV](/glossary/heart-rate-variability) signal — the Oura Ring 4 is the strongest consumer device of 2026. Worn on the finger, its optical sensor holds a stable reading through the night, and published Bland–Altman work puts its nighttime RMSSD within a few milliseconds of an ECG chest strap. Sleep staging is the other half of the story: independent validation against clinical polysomnography lands near 79% epoch-by-epoch agreement on [deep sleep](/glossary/deep-sleep) and REM — the best of the three devices here.
+> The Oura Ring 5 (June 2026) is now the current flagship — slimmer, with upgraded sensors. But its headline new software features also roll out to the Ring 4, so this ring stays highly relevant, often at a lower price. See [Oura Ring 5 vs Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4).
+
+For the one job that matters most to ONDA — a clean overnight [HRV](/glossary/heart-rate-variability) signal — the Oura Ring 4 is among the strongest consumer devices of 2026. Worn on the finger, its optical sensor holds a stable reading through the night, and published Bland–Altman work puts its nighttime RMSSD within a few milliseconds of an ECG chest strap. Sleep staging is the other half of the story: independent validation against clinical polysomnography lands near 79% epoch-by-epoch agreement on [deep sleep](/glossary/deep-sleep) and REM — the best of the three devices here.
 
 ## Where it falls short
 
@@ -67,9 +69,9 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Oura Ring — official product page', url: 'https://ouraring.com' },
     { label: 'Oura HRV and sleep validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=oura+ring+heart+rate+variability+sleep+validation' },
   ],
-  relatedSlugs: ['whoop-5-0', 'apple-watch-series-11'],
+  relatedSlugs: ['oura-ring-5', 'whoop-5-0', 'apple-watch-series-11'],
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-09-06',
 }
 
 export default ouraRing4

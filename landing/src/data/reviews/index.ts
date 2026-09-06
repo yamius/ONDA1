@@ -37,6 +37,7 @@ export {
 import type { ToolReview, Comparison, ReviewCategory } from './types'
 import { REVIEW_CATEGORIES } from './criteria'
 import ouraRing4 from './oura-ring-4'
+import ouraRing5 from './oura-ring-5'
 import whoop5 from './whoop-5-0'
 import appleWatchSeries11 from './apple-watch-series-11'
 import polarH10 from './polar-h10'
@@ -237,6 +238,7 @@ const TODAY = new Date().toISOString().slice(0, 10)
 /** Full registry — including date-gated future entries. Internal only. */
 const ALL_REVIEWS: ToolReview[] = [
   ouraRing4,
+  ouraRing5,
   whoop5,
   polarH10,
   garminVenu4,
