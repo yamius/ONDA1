@@ -114,10 +114,12 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr }: {
       {model?.left.map((s, i) => <Slot key={`l${i}`} value={s.value} caption={s.caption} side="left" row={i} />)}
       {model?.right.map((s, i) => <Slot key={`r${i}`} value={s.value} caption={s.caption} side="right" row={i} />)}
 
-      {/* Closing block — VARIABILITY bar with the two ends (39 / 62), then two
-          columns: the text under each end, and the breathing figures (13 left,
-          6 right) with their own lines. Text +30% over the green captions. */}
-      {(model?.variability || model?.breathing) && (
+      {/* Closing block — WATCH ONLY: this space belongs to variability. It needs
+          HRV history, which the camera can't give, so the whole block (bar + the
+          two columns) is hidden for a camera-only card. VARIABILITY bar with the
+          two ends (39 / 62), then two columns: the text under each end, and the
+          breathing figures (13 left, 6 right). Text +30% over the green captions. */}
+      {model?.variability && (
         <div className="absolute w-full" style={{ top: '57%' }}>
           {model?.variability && (
             <>
