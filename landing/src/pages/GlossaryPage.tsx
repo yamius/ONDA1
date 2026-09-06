@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { glossaryTerms } from '../data/glossary'
+import { glossaryTerms, glossaryLayer } from '../data/glossary'
 import {
   CATEGORY_DESCRIPTIONS,
   FEATURED_TERM_SLUGS,
@@ -169,8 +169,18 @@ export function GlossaryPage() {
             className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/10"
           >
             <div className="mb-2 flex items-center justify-between">
-              <span className="rounded-md border border-white/10 bg-white/5 px-3 py-0.5 font-mono text-[10px] text-white/30">
-                {term.category}
+              <span className="flex items-center gap-1.5">
+                <span className="rounded-md border border-white/10 bg-white/5 px-3 py-0.5 font-mono text-[10px] text-white/30">
+                  {term.category}
+                </span>
+                {glossaryLayer(term.slug) === 'onda' && (
+                  <span
+                    className="rounded-md border border-amber-300/25 bg-amber-300/5 px-2 py-0.5 font-mono text-[10px] text-amber-300/80"
+                    title="ONDA Life's own terminology, not an established scientific term"
+                  >
+                    ONDA
+                  </span>
+                )}
               </span>
               <span className="font-mono text-xs text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
                 →

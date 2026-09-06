@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { NotFoundPage } from './NotFoundPage'
 import Markdown from 'react-markdown'
 import rehypeSlug from 'rehype-slug'
-import { getTermBySlug, glossaryTerms } from '../data/glossary'
+import { getTermBySlug, glossaryTerms, glossaryLayer } from '../data/glossary'
 import { injectGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
@@ -72,11 +72,14 @@ export function GlossaryTermPage() {
       document.querySelector(`script[data-ld="${id}"]`)?.remove()
 
     const glossaryDates = ARTICLE_DATES.__glossary
+    const isOnda = glossaryLayer(term.slug) === 'onda'
     const definedTermLd = {
       '@context': 'https://schema.org',
       '@type': 'DefinedTerm',
       name: tTitle,
-      description: tShortDescription,
+      description: isOnda
+        ? `ONDA Life terminology (a metaphor from the ONDA model, not an established scientific term): ${tShortDescription}`
+        : tShortDescription,
       url,
       inLanguage: lang,
       ...(glossaryDates
@@ -178,12 +181,27 @@ export function GlossaryTermPage() {
         <span className="text-terminal-green/60" aria-current="page">{tTitle}</span>
       </nav>
 
-      {/* Category badge */}
-      <div className="mb-4">
+      {/* Category + semantic-layer badges */}
+      <div className="mb-4 flex flex-wrap items-center gap-2">
         <span className="rounded-md border border-terminal-green/20 bg-terminal-green/5 px-3 py-1 font-mono text-[10px] tracking-wider text-terminal-green">
           {term.category}
         </span>
+        {glossaryLayer(term.slug) === 'onda' ? (
+          <span className="rounded-md border border-amber-300/30 bg-amber-300/5 px-3 py-1 font-mono text-[10px] tracking-wider text-amber-300">
+            ONDA CONCEPT
+          </span>
+        ) : (
+          <span className="rounded-md border border-white/15 px-3 py-1 font-mono text-[10px] tracking-wider text-white/45">
+            SCIENTIFIC TERM
+          </span>
+        )}
       </div>
+      {glossaryLayer(term.slug) === 'onda' && (
+        <p className="mb-4 font-mono text-xs leading-relaxed text-amber-300/80">
+          This is ONDA Life&rsquo;s own terminology — a metaphor from the ONDA model, not an
+          established scientific term.
+        </p>
+      )}
 
       {/* Title */}
       <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">
