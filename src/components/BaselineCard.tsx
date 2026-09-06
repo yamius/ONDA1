@@ -42,6 +42,30 @@ function Slot({ value, caption, side, row }: { value: string; caption: string; s
   );
 }
 
+/**
+ * The closing breathing figures (13 left, 6 right) with their lines — rendered
+ * BELOW the card (in the home), not on the figure. Watch-only, like the
+ * variability block it continues. Reads on the home background in both themes.
+ */
+export function BaselineClosingFooter({ data, source, light }: { data: BaselineData; source: BaselineSource; light?: boolean }) {
+  const model = buildCardModel(data.readings, data.extras, source);
+  if (!model.variability || !model.breathing) return null;
+  const b = model.breathing;
+  const textColor = light ? 'rgb(71,85,105)' : 'rgb(200,210,225)';
+  const Col = ({ num, text, align }: { num: string; text: string; align: 'left' | 'right' }) => (
+    <div className={align === 'left' ? 'text-left' : 'text-right'}>
+      <div className="text-[22px] font-bold tabular-nums leading-none" style={{ color: GREEN }}>{num}</div>
+      <div className="text-[13.5px] leading-snug mt-1.5 whitespace-pre-line" style={{ color: textColor }}>{text}</div>
+    </div>
+  );
+  return (
+    <div className="w-full font-mono grid grid-cols-2 gap-5 mt-4" style={{ paddingLeft: SIDE, paddingRight: SIDE }}>
+      <Col num={b.leftNum} text={b.leftText} align="left" />
+      <Col num={b.rightNum} text={b.rightText} align="right" />
+    </div>
+  );
+}
+
 export function BaselineCard({ data, source, emptyHint, liveHr, liveBr }: {
   data: BaselineData | null;
   source: BaselineSource;
@@ -114,48 +138,30 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr }: {
       {model?.left.map((s, i) => <Slot key={`l${i}`} value={s.value} caption={s.caption} side="left" row={i} />)}
       {model?.right.map((s, i) => <Slot key={`r${i}`} value={s.value} caption={s.caption} side="right" row={i} />)}
 
-      {/* Closing block — WATCH ONLY: this space belongs to variability. It needs
-          HRV history, which the camera can't give, so the whole block (bar + the
-          two columns) is hidden for a camera-only card. VARIABILITY bar with the
-          two ends (39 / 62), then two columns: the text under each end, and the
-          breathing figures (13 left, 6 right). Text +30% over the green captions. */}
+      {/* Closing block — WATCH ONLY (needs HRV history). Sits low on the figure;
+          the 39 / 62 ends align to the same vertical lines as the number columns,
+          with their lines underneath at caption size. The breathing figures (13 /
+          6) live BELOW the card, rendered by the home. */}
       {model?.variability && (
-        <div className="absolute w-full" style={{ top: '57%' }}>
-          {model?.variability && (
-            <>
-              <div className="text-center" style={{ color: GRAY, fontSize: '4.35cqw', fontWeight: 600, letterSpacing: '0.08em', textShadow: CLOUD }}>VARIABILITY</div>
-              <div className="text-center" style={{ color: GREEN, fontSize: '3.6cqw', marginTop: '1cqw', textShadow: CLOUD }}>{model.variability.caption}</div>
-              <div className="relative" style={{ margin: '4.4cqw 15% 0' }}>
-                <div style={{ height: '0.32cqw', background: 'rgb(50,72,98)', borderRadius: 999 }} />
-                <div className="absolute rounded-full" style={{
-                  width: '2cqw', height: '2cqw', background: GREEN, top: '-0.84cqw',
-                  left: `calc(${Math.min(Math.max(model.variability.position, 0), 1) * 100}% - 1cqw)`,
-                }} />
-                <div className="absolute" style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, right: 'calc(100% + 2cqw)', top: '-4.1cqw', textShadow: CLOUD }}>{model.variability.min}</div>
-                <div className="absolute" style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, left: 'calc(100% + 2cqw)', top: '-4.1cqw', textShadow: CLOUD }}>{model.variability.max}</div>
-              </div>
-            </>
-          )}
-          {/* Two columns: left sits under 39, right under 62. */}
-          <div className="flex justify-between" style={{ margin: '4.4cqw 6% 0', gap: '4%' }}>
-            <div className="text-left" style={{ flex: 1 }}>
-              {model?.variability && <div style={{ color: WHITE, fontSize: '3.8cqw', lineHeight: 1.35, whiteSpace: 'pre-line', textShadow: CLOUD }}>{model.variability.leftText}</div>}
-              {model?.breathing && (
-                <>
-                  <div style={{ color: GREEN, fontSize: '6cqw', fontWeight: 700, lineHeight: 1, marginTop: '3.5cqw', textShadow: CLOUD }} className="tabular-nums">{model.breathing.leftNum}</div>
-                  <div style={{ color: GREEN, fontSize: '3.8cqw', lineHeight: 1.35, marginTop: '0.8cqw', whiteSpace: 'pre-line', textShadow: CLOUD }}>{model.breathing.leftText}</div>
-                </>
-              )}
+        <div className="absolute" style={{ top: '63%', left: SIDE, right: SIDE }}>
+          <div className="text-center" style={{ color: GRAY, fontSize: '4.35cqw', fontWeight: 600, letterSpacing: '0.08em', textShadow: CLOUD }}>VARIABILITY</div>
+          <div className="text-center" style={{ color: GREEN, fontSize: '3.6cqw', marginTop: '1cqw', textShadow: CLOUD }}>{model.variability.caption}</div>
+          {/* bar: 39 (aligned to the left column) — line — 62 (right column) */}
+          <div className="flex items-center" style={{ marginTop: '3.4cqw', gap: '3cqw' }}>
+            <div style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{model.variability.min}</div>
+            <div className="relative" style={{ flex: 1 }}>
+              <div style={{ height: '0.32cqw', background: 'rgb(50,72,98)', borderRadius: 999 }} />
+              <div className="absolute rounded-full" style={{
+                width: '2cqw', height: '2cqw', background: GREEN, top: '-0.84cqw',
+                left: `calc(${Math.min(Math.max(model.variability.position, 0), 1) * 100}% - 1cqw)`,
+              }} />
             </div>
-            <div className="text-right" style={{ flex: 1 }}>
-              {model?.variability && <div style={{ color: WHITE, fontSize: '3.8cqw', lineHeight: 1.35, whiteSpace: 'pre-line', textShadow: CLOUD }}>{model.variability.rightText}</div>}
-              {model?.breathing && (
-                <>
-                  <div style={{ color: GREEN, fontSize: '6cqw', fontWeight: 700, lineHeight: 1, marginTop: '3.5cqw', textShadow: CLOUD }} className="tabular-nums">{model.breathing.rightNum}</div>
-                  <div style={{ color: GREEN, fontSize: '3.8cqw', lineHeight: 1.35, marginTop: '0.8cqw', whiteSpace: 'pre-line', textShadow: CLOUD }}>{model.breathing.rightText}</div>
-                </>
-              )}
-            </div>
+            <div style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{model.variability.max}</div>
+          </div>
+          {/* lines under each end — caption size, aligned to the same lines */}
+          <div className="flex justify-between" style={{ marginTop: '1.8cqw', gap: '4%' }}>
+            <div className="text-left" style={{ color: WHITE, fontSize: '2.93cqw', lineHeight: 1.25, whiteSpace: 'pre-line', textShadow: CLOUD }}>{model.variability.leftText}</div>
+            <div className="text-right" style={{ color: WHITE, fontSize: '2.93cqw', lineHeight: 1.25, whiteSpace: 'pre-line', textShadow: CLOUD }}>{model.variability.rightText}</div>
           </div>
         </div>
       )}

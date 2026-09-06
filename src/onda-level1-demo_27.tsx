@@ -20,7 +20,7 @@ import { DebugMonitor } from './components/DebugMonitor';
 import { MetricsWaveform } from './components/MetricsWaveform';
 import { CameraPulseWindow } from './components/CameraPulseWindow';
 import { CoherenceOrb } from './components/CoherenceOrb';
-import { BaselineCard } from './components/BaselineCard';
+import { BaselineCard, BaselineClosingFooter } from './components/BaselineCard';
 import { buildFromNative, buildFromCamera, hasAnyReading, BASELINE_WINDOW_DAYS, type BaselineData, type BaselineSource } from './lib/baseline';
 import HealthKitHeartRate from './plugins/healthKitHeartRate';
 // Home redesign 1.7.4 — new sections (Section 2 / 4 / 6).
@@ -261,6 +261,8 @@ const OndaLevel1 = () => {
     baselineAutoRef.current = true;
     void loadWatchBaseline();
   }, [watchHeartRate.isConnected, loadWatchBaseline]);
+
+
 
 
 
@@ -6459,6 +6461,8 @@ const OndaLevel1 = () => {
               liveHr={baselineLiveHr}
               liveBr={baselineLiveBr}
             />
+            {/* Closing breathing figures live below the card (watch-only). */}
+            {baseline && <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />}
           </div>
         </div>
 
