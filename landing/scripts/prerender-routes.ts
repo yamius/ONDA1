@@ -447,6 +447,8 @@ const nonLocalizedStaticPaths = [
   '/product',
   // /faq — consolidated answer-engine Q&A hub. EN-only.
   '/faq',
+  // /people/yakiv-bilenko — founder person/authority page. EN-only.
+  '/people/yakiv-bilenko',
   // /compare — ONDA's own "ONDA vs <competitor>" comparisons. EN-only.
   '/compare',
   ...ONDA_VS.map((e) => `/compare/${e.slug}`),

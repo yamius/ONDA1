@@ -43,6 +43,7 @@ export function SitemapPage() {
   const mainLinks = [
     { to: lang === 'en' ? '/' : `/${lang}`, label: t('main.home') },
     { to: lang === 'en' ? '/about' : `/${lang}/about`, label: t('main.about') },
+    { to: '/people/yakiv-bilenko', label: 'Yakiv Bilenko (founder)' },
     { to: lang === 'en' ? '/inner-spectrum' : `/${lang}/inner-spectrum`, label: t('main.philosophy') },
     { to: langHref('/articles', lang), label: t('main.articles') },
     { to: langHref('/glossary', lang), label: t('main.glossary') },

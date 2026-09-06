@@ -73,7 +73,10 @@ const OG_IMAGE = `${SITE_URL}/og-preview.png`
 const AUTHOR_ID = `${SITE_URL}/#author`
 const AUTHOR_NAME = 'Yakiv Bilenko'
 const AUTHOR_URL = 'https://www.linkedin.com/in/yamius'
-const AUTHOR_SAME_AS = ['https://www.linkedin.com/in/yamius']
+const AUTHOR_SAME_AS = [
+  'https://www.linkedin.com/in/yamius',
+  'https://wateremotions.tilda.ws/kukoom',
+]
 
 /**
  * Brand profiles for the ONDA Life *Organization* (distinct from the founder's
@@ -380,7 +383,7 @@ export interface RouteMeta {
   description: string
   url: string
   breadcrumbs: BreadcrumbItem[]
-  ogType?: 'article' | 'website'
+  ogType?: 'article' | 'website' | 'profile'
   /** Force <meta name=robots content="noindex, nofollow"> on the page.
    *  Used for placeholder topic hubs that haven't been reviewed yet. */
   noindex?: boolean
@@ -930,25 +933,46 @@ function buildPersonJsonLd(): string {
     name: AUTHOR_NAME,
     url: AUTHOR_URL,
     sameAs: AUTHOR_SAME_AS,
-    jobTitle: 'Founder & Lead Architect, ONDA Life',
+    jobTitle: 'Founder & CEO, ONDA Life',
     description:
-      'Yakiv Bilenko — architect and psychologist, founder of ONDA Life. Over 20 years designing physical environments and 10 years of psychological practice as a Gestalt therapist; his work researches how people\'s external and internal environments shape one another. Author of ONDA Life\'s biohacking and consciousness articles.',
-    // knowsAbout populates the topical signal AI agents read when ranking
-    // experts for a query. Mirrors the major article clusters on the site.
+      'Yakiv Bilenko — architect (Kyiv National University of Construction and Architecture, KNUCA, 2006) and Gestalt therapist (MIGIS institute, 2018), founder and CEO of ONDA Life. As an architect he researches structured forms — domes, spheres, pyramids, zomes — that influence human mental, physical and psychological states; as a Gestalt and systemic-family therapist he develops programs for psychological development and self-regulation. He leads ONDA\'s product and engineering. ONDA\'s physiology and neuroscience are overseen by its scientific advisor — Yakiv\'s own expertise is architecture, psychology and Gestalt therapy, not clinical neuroscience.',
+    // knowsAbout is deliberately his ACTUAL domains — architecture, Gestalt /
+    // systemic therapy, psychology, and the applied breath/HRV practice he
+    // builds and writes about. Neuroscience is intentionally NOT claimed here:
+    // that authority belongs to the scientific advisor, not the founder.
     knowsAbout: [
-      'biohacking',
-      'neuroscience',
-      'heart rate variability',
-      'autonomic nervous system',
-      'vagus nerve',
-      'neuroplasticity',
-      'circadian biology',
-      'metabolic flexibility',
+      'architecture',
+      'architecture and human psychological states',
+      'Gestalt therapy',
+      'systemic family therapy',
+      'psychology',
       'breathwork',
-      'dopamine regulation',
-      'glymphatic system',
-      'flow state',
-      'consciousness studies',
+      'heart rate variability',
+      'interoception',
+      'physiological self-regulation',
+      'HRV biofeedback',
+    ],
+    alumniOf: [
+      {
+        '@type': 'CollegeOrUniversity',
+        name: 'Kyiv National University of Construction and Architecture (KNUCA)',
+      },
+      {
+        '@type': 'EducationalOrganization',
+        name: 'MIGIS institute (Gestalt therapy)',
+      },
+    ],
+    hasCredential: [
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'degree',
+        name: 'Architect (urban planning), KNUCA, 2006',
+      },
+      {
+        '@type': 'EducationalOccupationalCredential',
+        credentialCategory: 'certification',
+        name: 'Gestalt & systemic-family therapist, MIGIS, 2018',
+      },
     ],
     worksFor: {
       '@type': 'Organization',
@@ -961,7 +985,11 @@ function buildPersonJsonLd(): string {
     hasOccupation: [
       {
         '@type': 'Occupation',
-        name: 'Founder & Lead Architect, ONDA Life',
+        name: 'Founder & CEO, ONDA Life',
+      },
+      {
+        '@type': 'Occupation',
+        name: 'Architect (urban planning)',
       },
       {
         '@type': 'Occupation',
@@ -1533,6 +1561,17 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+    }
+  }
+  // /people/yakiv-bilenko — founder person/authority page. EN-only.
+  if (route === '/people/yakiv-bilenko') {
+    return {
+      title: 'Yakiv Bilenko — Founder & CEO of ONDA Life',
+      description:
+        'Yakiv Bilenko, founder & CEO of ONDA Life — architect (KNUCA, 2006) and Gestalt therapist (MIGIS, 2018) who builds the product. ONDA’s physiology and neuroscience are led by its scientific advisor.',
+      url,
+      breadcrumbs,
+      ogType: 'profile',
     }
   }
   // /faq — consolidated Q&A hub + FAQPage JSON-LD. EN-only.

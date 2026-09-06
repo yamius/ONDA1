@@ -281,6 +281,15 @@ export function ResearchPage() {
             ]}
           />
         </div>
+        <p className="mt-5 font-mono text-xs leading-relaxed text-white/50">
+          More on the founder:{' '}
+          <Link to="/people/yakiv-bilenko" className="text-terminal-green hover:underline">
+            Yakiv Bilenko
+          </Link>{' '}
+          — architect and Gestalt therapist who builds ONDA. His expertise is architecture,
+          psychology and engineering, not clinical neuroscience; the science is held to account by
+          the scientific advisor above.
+        </p>
       </section>
 
       {/* ───────────── D · THE RESEARCH FRONTIER ───────────── */}
