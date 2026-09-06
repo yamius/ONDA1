@@ -100,6 +100,10 @@ import irVsTraditional from './sunlighten-vs-finnleo-vs-almost-heaven'
 // PEMF (date-gated to 2026-06-22)
 import bemerVsHealthyWave from './bemer-classic-evo-vs-healthy-wave-multi-wave'
 import healthyWaveVsQiCoil from './healthy-wave-multi-wave-vs-qi-coil'
+import whoopVsUltrahuman from './whoop-5-0-vs-ultrahuman-ring-air'
+import ultrahumanVsSamsungRing from './ultrahuman-ring-air-vs-samsung-galaxy-ring'
+import ouraVsFitbitCharge6 from './oura-ring-4-vs-fitbit-charge-6'
+import plungeVsColdPod from './plunge-vs-cold-pod'
 import bemerVsPulseCenters from './bemer-classic-evo-vs-pulse-centers-pulse-xl-pro'
 import healthyWaveVsHigherDose from './healthy-wave-multi-wave-vs-higherdose-pemf-mat'
 import imrsVsOmi from './imrs-prime-vs-omi-full-body-mat'
@@ -261,6 +265,10 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   // PEMF (date-gated to 2026-06-22)
   bemerVsHealthyWave,
   healthyWaveVsQiCoil,
+  whoopVsUltrahuman,
+  ultrahumanVsSamsungRing,
+  ouraVsFitbitCharge6,
+  plungeVsColdPod,
   bemerVsPulseCenters,
   healthyWaveVsHigherDose,
   imrsVsOmi,
