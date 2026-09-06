@@ -11,15 +11,18 @@
  */
 import { formatValue, type BaselineExtraKey, type BaselineReading, type BaselineSource } from './baseline';
 
-export interface CardSlot { value: string; caption: string; }
+/** `sign` is set only in Shift mode: -1 (below baseline → blue), +1 (above → violet), 0 (flat). */
+export interface CardSlot { value: string; caption: string; sign?: number; }
 
 export interface CardModel {
-  hero: { value: string; label: string; sub: string } | null;
+  hero: { value: string; label: string; sub: string; sign?: number } | null;
   left: CardSlot[];
   right: CardSlot[];
   variability: {
     min: string;
     max: string;
+    minSign?: number;
+    maxSign?: number;
     position: number;
     caption: string;
     /** Text under the low end (39) and the high end (62). May contain \n. */
@@ -57,48 +60,71 @@ function hasSpread(r: BaselineReading | null): boolean {
   return !!r && r.min != null && r.max != null && r.max > r.min;
 }
 
+/** Signed delta today−baseline for Shift mode. Missing today → "—", flat sign. */
+function fmtDelta(base: number | null | undefined, today: number | null | undefined): { value: string; sign: number } {
+  if (base == null || today == null) return { value: '—', sign: 0 };
+  const d = round(today) - round(base);
+  return { value: d > 0 ? `+${d}` : d < 0 ? `−${Math.abs(d)}` : '±0', sign: Math.sign(d) };
+}
+
 export function buildCardModel(
   readings: BaselineReading[],
   extras: Partial<Record<BaselineExtraKey, number>>,
   source: BaselineSource,
+  today?: { readings: BaselineReading[]; extras: Partial<Record<BaselineExtraKey, number>> },
 ): CardModel {
   const rhr = reading(readings, 'rhr');
   const hrv = reading(readings, 'hrv');
   const rr = reading(readings, 'rr');
   const cov = (days: number) => coverageLabel(days, source);
 
+  // Shift mode: each figure becomes its signed delta from today's same-shaped read.
+  const shift = !!today;
+  const trhr = today ? reading(today.readings, 'rhr') : null;
+  const thrv = today ? reading(today.readings, 'hrv') : null;
+  const trr = today ? reading(today.readings, 'rr') : null;
+  const tex = today?.extras ?? {};
+  // Baseline value, or its delta when Shift is on.
+  const val = (base: number | null | undefined, todayVal: number | null | undefined): { value: string; sign?: number } =>
+    shift ? fmtDelta(base, todayVal) : { value: formatValue(base ?? null, 0) };
+
   // LEFT, priority bottom-up: the two ends of the resting-pulse window, then walking pulse, then peak.
   // Captions carry explicit \n so the layout is exact (no auto-wrap guessing).
   const left: CardSlot[] = [];
   if (rhr && hasSpread(rhr)) {
-    left.push({ value: formatValue(rhr.max, 0), caption: source === 'camera' ? 'highest' : 'most restless\nnight' });
-    left.push({ value: formatValue(rhr.min, 0), caption: source === 'camera' ? 'lowest' : 'calmest\nnight' });
+    left.push({ ...val(rhr.max, trhr?.max), caption: source === 'camera' ? 'highest' : 'most restless\nnight' });
+    left.push({ ...val(rhr.min, trhr?.min), caption: source === 'camera' ? 'lowest' : 'calmest\nnight' });
   }
-  if (extras.whr != null) left.push({ value: String(round(extras.whr)), caption: 'avg pulse\nwalking' });
-  if (extras.hrpeak != null && rhr) left.push({ value: String(round(extras.hrpeak)), caption: `peak\n${cov(rhr.days)}` });
+  if (extras.whr != null) left.push({ ...val(extras.whr, tex.whr), caption: 'avg pulse\nwalking' });
+  if (extras.hrpeak != null && rhr) left.push({ ...val(extras.hrpeak, tex.hrpeak), caption: `peak\n${cov(rhr.days)}` });
 
   // RIGHT, same idea: breathing at the bottom, workout-dependent figures on top.
   const right: CardSlot[] = [];
   if (rr) {
-    if (hasSpread(rr)) {
+    // Range is a two-number span — no clean delta, so Shift shows only the average.
+    if (hasSpread(rr) && !shift) {
       right.push({ value: `${formatValue(rr.min, 0)}-${formatValue(rr.max, 0)}`, caption: `breathing range\n${cov(rr.days)}` });
     }
-    right.push({ value: formatValue(rr.avg, 0), caption: 'breaths / min' });
+    right.push({ ...val(rr.avg, trr?.avg), caption: 'breaths / min' });
   }
-  if (extras.hrr != null) right.push({ value: String(round(extras.hrr)), caption: 'recovery\nfirst minute' });
-  if (extras.vo2 != null) right.push({ value: String(round(extras.vo2)), caption: 'VO2max\nest.' });
+  if (extras.hrr != null) right.push({ ...val(extras.hrr, tex.hrr), caption: 'recovery\nfirst minute' });
+  if (extras.vo2 != null) right.push({ ...val(extras.vo2, tex.vo2), caption: 'VO2max\nest.' });
 
   const spread = hrv ? spreadMultiple(hrv.min, hrv.max) : null;
+  const vmin = shift ? fmtDelta(hrv?.min, thrv?.min) : { value: formatValue(hrv?.min ?? null, 0), sign: undefined };
+  const vmax = shift ? fmtDelta(hrv?.max, thrv?.max) : { value: formatValue(hrv?.max ?? null, 0), sign: undefined };
 
   return {
-    hero: rhr ? { value: formatValue(rhr.avg, 0), label: 'RESTING PULSE', sub: `${cov(rhr.days)} average` } : null,
+    hero: rhr ? { ...val(rhr.avg, trhr?.avg), label: 'RESTING PULSE', sub: shift ? 'vs baseline' : `${cov(rhr.days)} average` } : null,
     left,
     right,
     variability:
       hrv && hasSpread(hrv)
         ? {
-            min: formatValue(hrv.min, 0),
-            max: formatValue(hrv.max, 0),
+            min: vmin.value,
+            max: vmax.value,
+            minSign: vmin.sign,
+            maxSign: vmax.sign,
             position: (hrv.avg! - hrv.min!) / (hrv.max! - hrv.min!),
             caption: spread ? `a ${spread}x spread across ${cov(hrv.days)}` : `across ${cov(hrv.days)}`,
             leftText: 'nights your body\nstayed on guard',

@@ -162,6 +162,8 @@ const OndaLevel1 = () => {
   const [baseline, setBaseline] = useState<{ data: BaselineData; source: BaselineSource } | null>(null);
   // Shift view: flip the card numbers to signed deltas from baseline (blue −, violet +).
   const [baselineShift, setBaselineShift] = useState(false);
+  // Today's same-shaped read (queryBaseline days=1) — the "today" side of Shift deltas.
+  const [baselineToday, setBaselineToday] = useState<BaselineData | null>(null);
   // Rolling stats over the current camera reading → avg/min/max pulse + a
   // breathing estimate. Reset on each fresh start, sealed into a card on stop.
   const camSessionRef = useRef({ min: Infinity, max: -Infinity, sum: 0, count: 0, brSum: 0, brCount: 0 });
@@ -213,6 +215,13 @@ const OndaLevel1 = () => {
       try { localStorage.setItem('onda_baseline_watching', 'true'); } catch { /* noop */ }
       const coverage = Math.max(0, ...data.readings.map((r) => r.days));
       track('baseline_shown', { source: 'watch', coverage_days: coverage });
+
+      // Today's same-shaped read → the "today" side of the Shift deltas. Best-effort:
+      // a sparse today just yields "—" on some numbers, never a fabricated delta.
+      try {
+        const todayRes = await HealthKitHeartRate.queryBaseline({ days: 1 });
+        setBaselineToday(buildFromNative(todayRes));
+      } catch { /* Shift stays neutral if today can't be read */ }
     } catch (e) {
       console.warn('[baseline] queryBaseline failed', e);
       track('baseline_error', { source: 'watch', message: String((e as Error)?.message ?? e) });
@@ -263,6 +272,7 @@ const OndaLevel1 = () => {
     baselineAutoRef.current = true;
     void loadWatchBaseline();
   }, [watchHeartRate.isConnected, loadWatchBaseline]);
+
 
 
 
@@ -6330,6 +6340,7 @@ const OndaLevel1 = () => {
               liveHr={baselineLiveHr}
               liveBr={baselineLiveBr}
               shift={baselineShift}
+              todayData={baselineToday}
             />
           </div>
         </div>

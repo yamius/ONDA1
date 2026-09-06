@@ -16,6 +16,11 @@ const GREEN = 'rgb(74,222,128)';
 const CORAL = 'rgb(232,83,79)';
 const GRAY = 'rgb(146,161,186)';
 const WHITE = 'rgb(240,245,252)';
+// Shift deltas: below baseline → blue, above → violet, flat → neutral.
+const BLUE = 'rgb(96,165,250)';
+const VIOLET = 'rgb(167,139,250)';
+const signColor = (sign: number | undefined, base: string) =>
+  sign === undefined ? base : sign < 0 ? BLUE : sign > 0 ? VIOLET : WHITE;
 
 // Soft dark "cloud" behind a number so it reads over the bright figure.
 // Layered dark blur in em → scales with each number's own font-size.
@@ -30,12 +35,12 @@ const SIDE = '5.95%'; // v21 x=56 / 941
 // hero's height); shift the hero this much so the number + dot land on it.
 const HERO_X = '0.8%';
 
-function Slot({ value, caption, side, row }: { value: string; caption: string; side: 'left' | 'right'; row: number }) {
+function Slot({ value, caption, side, row, sign }: { value: string; caption: string; side: 'left' | 'right'; row: number; sign?: number }) {
   const align = side === 'left' ? 'text-left' : 'text-right';
   const pos = side === 'left' ? { left: SIDE } : { right: SIDE };
   return (
     <div className={`absolute ${align}`} style={{ ...pos, top: `${ROW_TOP[row]}%` }}>
-      <div style={{ color: GREEN, fontSize: '8.9cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{value}</div>
+      <div style={{ color: signColor(sign, GREEN), fontSize: '8.9cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{value}</div>
       {/* Caption +10%; explicit \n in the copy → exact 2-line layout (pre-line). */}
       <div style={{ color: GRAY, fontSize: '2.93cqw', lineHeight: 1.2, marginTop: '0.8cqw', whiteSpace: 'pre-line', textShadow: CLOUD }}>{caption}</div>
     </div>
@@ -66,7 +71,7 @@ export function BaselineClosingFooter({ data, source, light }: { data: BaselineD
   );
 }
 
-export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift }: {
+export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, todayData }: {
   data: BaselineData | null;
   source: BaselineSource;
   emptyHint?: string;
@@ -75,16 +80,21 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift }:
    *  the Pulse | Breathing tiles above the card). Absent → the static baseline. */
   liveHr?: number | null;
   liveBr?: number | null;
-  /** Shift view — flip the numbers to signed deltas from baseline (wiring TBD). */
+  /** Shift view — flip the numbers to signed deltas from `todayData` vs baseline. */
   shift?: boolean;
+  /** Today's same-shaped read (queryBaseline days=1) — the "today" side of Shift. */
+  todayData?: BaselineData | null;
 }) {
-  void shift;
   // The card is ALWAYS on home once the user reaches it — it never unmounts, so
   // connecting a watch can only fill it, never make it disappear. With no data
   // yet it shows the figure + an invitation; camera/watch numbers pour in later.
-  const model: CardModel | null = data ? buildCardModel(data.readings, data.extras, source) : null;
+  const shiftOn = !!shift && !!todayData;
+  const model: CardModel | null = data
+    ? buildCardModel(data.readings, data.extras, source, shiftOn ? { readings: todayData!.readings, extras: todayData!.extras } : undefined)
+    : null;
   const isEmpty = !model || model.empty;
-  const isLive = liveHr != null;
+  // Shift overrides the live hero — you're reading deltas, not the live pulse.
+  const isLive = liveHr != null && !shiftOn;
 
   return (
     <div
@@ -113,7 +123,7 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift }:
           right by HERO_X so the number + dot sit on the figure's own axis. */}
       {(model?.hero || isLive) && (
         <div className="absolute w-full text-center" style={{ top: '20.5%', transform: `translateX(${HERO_X})` }}>
-          <div style={{ color: CORAL, fontSize: '13.2cqw', fontWeight: 800, lineHeight: 1, textShadow: `${CLOUD}, 0 0 6cqw rgba(232,83,79,0.4)` }} className="tabular-nums">
+          <div style={{ color: shiftOn ? signColor(model?.hero?.sign, CORAL) : CORAL, fontSize: '13.2cqw', fontWeight: 800, lineHeight: 1, textShadow: shiftOn ? CLOUD : `${CLOUD}, 0 0 6cqw rgba(232,83,79,0.4)` }} className="tabular-nums">
             {isLive ? liveHr : model?.hero?.value}
           </div>
           {isLive ? (
@@ -138,8 +148,8 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift }:
       )}
 
       {/* Left / right numeric columns (collapse upward, paired levels) */}
-      {model?.left.map((s, i) => <Slot key={`l${i}`} value={s.value} caption={s.caption} side="left" row={i} />)}
-      {model?.right.map((s, i) => <Slot key={`r${i}`} value={s.value} caption={s.caption} side="right" row={i} />)}
+      {model?.left.map((s, i) => <Slot key={`l${i}`} value={s.value} caption={s.caption} side="left" row={i} sign={s.sign} />)}
+      {model?.right.map((s, i) => <Slot key={`r${i}`} value={s.value} caption={s.caption} side="right" row={i} sign={s.sign} />)}
 
       {/* Closing block — WATCH ONLY (needs HRV history). Sits low on the figure;
           the 39 / 62 ends align to the same vertical lines as the number columns,
@@ -151,7 +161,7 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift }:
           <div className="text-center" style={{ color: GREEN, fontSize: '3.6cqw', marginTop: '1cqw', textShadow: CLOUD }}>{model.variability.caption}</div>
           {/* bar: 39 (aligned to the left column) — line — 62 (right column) */}
           <div className="flex items-center" style={{ marginTop: '3.4cqw', gap: '3cqw' }}>
-            <div style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{model.variability.min}</div>
+            <div style={{ color: signColor(model.variability.minSign, WHITE), fontSize: '7.3cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{model.variability.min}</div>
             <div className="relative" style={{ flex: 1 }}>
               <div style={{ height: '0.32cqw', background: 'rgb(50,72,98)', borderRadius: 999 }} />
               <div className="absolute rounded-full" style={{
@@ -159,7 +169,7 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift }:
                 left: `calc(${Math.min(Math.max(model.variability.position, 0), 1) * 100}% - 1cqw)`,
               }} />
             </div>
-            <div style={{ color: WHITE, fontSize: '7.3cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{model.variability.max}</div>
+            <div style={{ color: signColor(model.variability.maxSign, WHITE), fontSize: '7.3cqw', fontWeight: 700, lineHeight: 1, textShadow: CLOUD }} className="tabular-nums">{model.variability.max}</div>
           </div>
           {/* lines under each end — caption size, aligned to the same lines */}
           <div className="flex justify-between" style={{ marginTop: '1.8cqw', gap: '4%' }}>
