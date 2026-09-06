@@ -266,9 +266,17 @@ const OndaLevel1 = () => {
   // once per session as soon as the watch is known connected (paired + our watch
   // app installed). A read with no HealthKit grant returns empty and prompts
   // nothing, so the "permission by intent" rule (prompt only on the CTA) holds.
+  // Auto-load the watch baseline ONLY for someone who has connected before
+  // (the onda_baseline_watching flag, set on the first explicit connect). A
+  // fresh install that merely has a paired watch must NOT get a watch baseline
+  // during the camera-first onboarding — otherwise it hides the camera offer and
+  // blocks the camera baseline from sealing. Returning users still get it on open.
   const baselineAutoRef = useRef(false);
   useEffect(() => {
     if (baselineAutoRef.current || !watchHeartRate.isConnected) return;
+    let watching = false;
+    try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
+    if (!watching) return;
     baselineAutoRef.current = true;
     void loadWatchBaseline();
   }, [watchHeartRate.isConnected, loadWatchBaseline]);
