@@ -26,6 +26,11 @@
  */
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import {
+  EVIDENCE_REFERENCES,
+  EVIDENCE_CLAIMS,
+  type EvidenceReference,
+} from '../data/evidence'
 
 const SITE_URL = 'https://onda-life.com'
 const RESEARCH_URL = `${SITE_URL}/research`
@@ -53,35 +58,9 @@ function setOrCreateScript(id: string, json: object) {
   el.textContent = JSON.stringify(json)
 }
 
-/* Real, vetted PubMed references — reused from the level pages
-   (src/data/levels.ts / researchLinks.ts). No fabricated DOIs. Each inline
-   marker in Sections B and D resolves to one of these. */
-const REFERENCES: { id: string; cite: string; url: string; group: 'app' }[] = [
-  {
-    id: 'R1',
-    cite: 'Lehrer PM & Gevirtz R. Resonance-frequency breathing and HRV biofeedback — how and why it works.',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/19246382/',
-    group: 'app',
-  },
-  {
-    id: 'R2',
-    cite: 'Thayer JF & Lane RD. Heart-rate variability and the neurovisceral integration model.',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/19463818/',
-    group: 'app',
-  },
-  {
-    id: 'R3',
-    cite: 'Porges SW. Polyvagal theory — neurophysiological foundations of vagal tone.',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/',
-    group: 'app',
-  },
-  {
-    id: 'R4',
-    cite: 'Craig AD. Interoception and the insular cortex — the felt sense of the physiological body.',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/',
-    group: 'app',
-  },
-]
+/* Evidence base lives in src/data/evidence.ts — every reference verified
+   (authors, year, journal, DOI, PMID), every claim carries its honest
+   boundary. This page renders that dataset. */
 
 export function ResearchPage() {
   const location = useLocation()
@@ -128,9 +107,32 @@ export function ResearchPage() {
       },
     })
 
+    // Machine-readable citations — each verified reference as a
+    // ScholarlyArticle the page cites. Gives AI systems a structured,
+    // DOI/PMID-anchored evidence graph rather than prose links.
+    setOrCreateScript('ld-research-citations', {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      '@id': `${RESEARCH_URL}#evidence`,
+      url: RESEARCH_URL,
+      citation: EVIDENCE_REFERENCES.map((r) => ({
+        '@type': 'ScholarlyArticle',
+        name: r.title,
+        author: r.authors.split(', ').map((name) => ({ '@type': 'Person', name })),
+        datePublished: String(r.year),
+        isPartOf: { '@type': 'Periodical', name: r.journal },
+        sameAs: [
+          `https://doi.org/${r.doi}`,
+          ...(r.pmid ? [`https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`] : []),
+        ],
+      })),
+    })
+
     return () => {
       const el = document.getElementById('ld-research-webpage')
       if (el) el.remove()
+      const c = document.getElementById('ld-research-citations')
+      if (c) c.remove()
     }
   }, [location])
 
@@ -180,41 +182,25 @@ export function ResearchPage() {
         </div>
       </header>
 
-      {/* ───────────── B · WHAT WE BUILD ON ───────────── */}
+      {/* ───────────── B · EVIDENCE CENTER ───────────── */}
       <section id="build-on" className="mt-14 scroll-mt-20">
         <div className="mb-2 font-mono text-xs tracking-widest text-terminal-green/60">
-          [ WHAT WE BUILD ON ]
+          [ EVIDENCE CENTER — WHAT WE BUILD ON ]
         </div>
         <h2 className="mb-5 text-2xl font-bold tracking-tight md:text-3xl">
           The evidence behind what the app does today
         </h2>
         <p className="mb-8 font-mono text-sm leading-relaxed text-white/70 md:text-base">
           Everything in the ONDA app right now rests on mechanisms with a real
-          evidence base. We don&rsquo;t claim more than this — and we show our
-          sources.
+          evidence base. For each claim we show the sources, exactly what ONDA
+          does with the mechanism, and — just as important — what the evidence
+          does <em>not</em> prove.
         </p>
 
         <div className="space-y-4">
-          <ClaimCard
-            title="Slow, paced breathing raises HRV."
-            body="Breathing near your resonance frequency (about six breaths a minute) increases heart-rate variability and engages the parasympathetic (“rest and digest”) branch. This is the core of every ONDA session."
-            refs={['R1', 'R2']}
-          />
-          <ClaimCard
-            title="HRV biofeedback trains autonomic balance."
-            body="Seeing your heart respond while you breathe — a closed feedback loop — is an established technique for improving vagal tone and stress resilience, not just measuring it."
-            refs={['R1', 'R3']}
-          />
-          <ClaimCard
-            title="Interoception can be trained."
-            body="Attending to internal bodily signals (the felt sense of breath and heartbeat) is a learnable skill linked to better emotional regulation. ONDA's live-feedback practice is interoceptive training."
-            refs={['R4']}
-          />
-          <ClaimCard
-            title="Resting HRV is a meaningful trend, not a daily verdict."
-            body="Your multi-day resting-HRV trend is a more honest signal of recovery and adaptation than any single morning reading — which is why ONDA leads with the trend, not the number."
-            refs={['R2']}
-          />
+          {EVIDENCE_CLAIMS.map((claim) => (
+            <ClaimCard key={claim.id} claim={claim} />
+          ))}
         </div>
 
         {/* Coherence-vs-HRV integrity note */}
@@ -428,19 +414,9 @@ export function ResearchPage() {
           evidence is still early, left deliberately uncited rather than dressed
           in a citation.
         </p>
-        <ol className="space-y-3 font-mono text-xs leading-relaxed text-white/60">
-          {REFERENCES.map((r) => (
-            <li key={r.id} id={`ref-${r.id}`} className="scroll-mt-20">
-              <span className="text-terminal-green/70">[{r.id}]</span> {r.cite}{' '}
-              <a
-                href={r.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-terminal-cyan hover:text-terminal-green break-all"
-              >
-                {r.url}
-              </a>
-            </li>
+        <ol className="space-y-4 font-mono text-xs leading-relaxed text-white/60">
+          {EVIDENCE_REFERENCES.map((r) => (
+            <ReferenceItem key={r.id} r={r} />
           ))}
         </ol>
 
@@ -456,6 +432,40 @@ export function ResearchPage() {
 }
 
 /* ────────────────────── Sub-components ────────────────────── */
+
+function ReferenceItem({ r }: { r: EvidenceReference }) {
+  return (
+    <li id={`ref-${r.id}`} className="scroll-mt-20">
+      <span className="text-terminal-green/70">[{r.id}]</span>{' '}
+      <span className="text-white/75">{r.authors}</span> ({r.year}).{' '}
+      <span className="italic text-white/70">{r.title}</span>.{' '}
+      <span className="text-white/60">{r.journal}</span>.
+      <span className="ml-2 rounded border border-white/15 px-1.5 py-0.5 text-[10px] uppercase tracking-wider text-white/45">
+        {r.studyType}
+      </span>
+      <div className="mt-1 flex flex-wrap gap-x-4 gap-y-0.5">
+        <a
+          href={`https://doi.org/${r.doi}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-terminal-cyan hover:text-terminal-green break-all"
+        >
+          DOI: {r.doi}
+        </a>
+        {r.pmid && (
+          <a
+            href={`https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-terminal-cyan hover:text-terminal-green"
+          >
+            PMID: {r.pmid}
+          </a>
+        )}
+      </div>
+    </li>
+  )
+}
 
 function RefMarkers({ refs }: { refs: string[] }) {
   return (
@@ -475,13 +485,30 @@ function RefMarkers({ refs }: { refs: string[] }) {
   )
 }
 
-function ClaimCard({ title, body, refs }: { title: string; body: string; refs: string[] }) {
+function ClaimCard({ claim }: { claim: (typeof EVIDENCE_CLAIMS)[number] }) {
   return (
     <div className="rounded-lg border border-white/10 bg-white/[0.02] p-5">
-      <h3 className="mb-2 text-base font-bold text-white md:text-lg">{title}</h3>
-      <p className="font-mono text-xs leading-relaxed text-white/70 md:text-sm">
-        {body} <RefMarkers refs={refs} />
-      </p>
+      <h3 className="mb-3 text-base font-bold text-white md:text-lg">
+        {claim.statement} <RefMarkers refs={claim.refIds} />
+      </h3>
+      <div className="space-y-3">
+        <div>
+          <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-terminal-green/70">
+            What ONDA does
+          </div>
+          <p className="font-mono text-xs leading-relaxed text-white/70 md:text-sm">
+            {claim.whatOndaDoes}
+          </p>
+        </div>
+        <div>
+          <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-terminal-amber/80">
+            What this does not prove
+          </div>
+          <p className="font-mono text-xs leading-relaxed text-white/55 md:text-sm">
+            {claim.whatIsNotProven}
+          </p>
+        </div>
+      </div>
     </div>
   )
 }
