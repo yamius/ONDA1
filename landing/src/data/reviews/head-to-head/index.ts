@@ -35,10 +35,12 @@ import apolloNeuroVsPulsetto from './apollo-neuro-vs-pulsetto'
 import nurosymVsPulsetto from './nurosym-vs-pulsetto'
 import truvagaVsPulsetto from './truvaga-350-vs-pulsetto'
 import sensateVsApollo from './sensate-vs-apollo-neuro'
+import pulsettoVsSensate from './pulsetto-vs-sensate'
 import gammacoreVsNurosym from './gammacore-sapphire-cv-vs-nurosym'
 import hoolestVsPulsetto from './hoolest-verelief-prime-vs-pulsetto'
 // EEG
 import museSAthenaVsMuse2 from './muse-s-athena-vs-muse-2'
+import museAthenaVsMendi from './muse-s-athena-vs-mendi'
 import neurosityVsEmotiv from './neurosity-crown-vs-emotiv-insight-2'
 import muse2VsFocuscalm from './muse-2-vs-focuscalm'
 // Meditation
@@ -233,12 +235,14 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   nurosymVsPulsetto,
   truvagaVsPulsetto,
   sensateVsApollo,
+  pulsettoVsSensate,
   gammacoreVsNurosym,
   hoolestVsPulsetto,
   flowVsApollo,
   nurosymVsVagustim,
   // EEG
   museSAthenaVsMuse2,
+  museAthenaVsMendi,
   neurosityVsEmotiv,
   muse2VsFocuscalm,
   sensAiVsMuse,
