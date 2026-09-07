@@ -99,6 +99,8 @@ import threePremiumPlunge from './plunge-vs-coldture-vs-renu-therapy-cold-stoic'
 import threeBudgetPlunge from './ice-barrel-500-vs-cold-pod-vs-inergize-cold-tub'
 // Sauna (May 2026)
 import sunlightenVsClearlight from './sunlighten-mpulse-vs-clearlight-sanctuary-2'
+import sunHomeVsClearlight from './sun-home-equinox-vs-clearlight-sanctuary-2'
+import sunHomeVsSunlighten from './sun-home-equinox-vs-sunlighten-mpulse'
 import higherdoseVsTherasage from './higherdose-blanket-v4-vs-therasage-thera-sauna-personal'
 import saunaspaceVsSunlighten from './saunaspace-faraday-vs-sunlighten-mpulse'
 import finnleoVsAlmostHeaven from './finnleo-hallmark-vs-almost-heaven-salem'
@@ -176,6 +178,8 @@ import cowayVsBlueair from './coway-airmega-400-vs-blueair-healthprotect-7770i'
 import levoitVsWinix from './levoit-core-600s-vs-winix-5500-2'
 import cowayApVsLevoit300 from './coway-airmega-ap-1512hh-vs-levoit-core-300'
 import dysonVsIqair from './dyson-purifier-big-quiet-vs-iqair-healthpro-plus'
+import cowayVsDyson from './coway-airmega-400-vs-dyson-purifier-big-quiet'
+import cowayVsIqair from './coway-airmega-400-vs-iqair-healthpro-plus'
 import iqairVsMolekuleVsDyson from './iqair-healthpro-plus-vs-molekule-air-pro-vs-dyson-purifier-big-quiet'
 // Sleep climate (date-gated to 2026-06-15)
 import eightSleepVsChilipad from './eight-sleep-pod-4-vs-chilipad-dock-pro'
@@ -279,6 +283,8 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   threeBudgetPlunge,
   // Sauna (live)
   sunlightenVsClearlight,
+  sunHomeVsClearlight,
+  sunHomeVsSunlighten,
   saunaspaceVsSunlighten,
   higherdoseVsTherasage,
   finnleoVsAlmostHeaven,
@@ -374,6 +380,8 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   levoitVsWinix,
   cowayApVsLevoit300,
   dysonVsIqair,
+  cowayVsDyson,
+  cowayVsIqair,
   iqairVsMolekuleVsDyson,
 ]
 
