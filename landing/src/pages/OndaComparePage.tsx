@@ -4,8 +4,15 @@
  */
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { ONDA_VS } from '../data/onda-vs'
+import { ONDA_VS, CAPABILITIES, ONDA_CAPS, type Cap } from '../data/onda-vs'
 import { ONDA_ROUNDUPS } from '../data/onda-roundups'
+
+const CAP_GLYPH: Record<Cap, string> = { yes: '✓', limited: '~', no: '—' }
+const CAP_CLASS: Record<Cap, string> = {
+  yes: 'text-terminal-green',
+  limited: 'text-amber-300',
+  no: 'text-white/25',
+}
 
 const SITE_URL = 'https://onda-life.com'
 const PAGE_URL = `${SITE_URL}/compare`
@@ -83,6 +90,54 @@ export function OndaComparePage() {
           rows for every one — with an honest &ldquo;best for&rdquo; on each side.
         </p>
       </header>
+
+      {/* Capability matrix — ONDA and every competitor on the same axes, at a
+          glance. Reuses the onda-vs data so it can't drift. */}
+      <section className="mt-12">
+        <h2 className="mb-1 text-xl font-bold tracking-tight md:text-2xl">Capabilities at a glance</h2>
+        <p className="mb-4 font-mono text-xs text-white/45">
+          ONDA and the apps people cross-shop, on the same axes.{' '}
+          <span className="text-terminal-green">✓</span> yes ·{' '}
+          <span className="text-amber-300">~</span> limited ·{' '}
+          <span className="text-white/30">—</span> no
+        </p>
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/20 font-mono text-[11px] uppercase tracking-wider text-white/50">
+                <th className="py-3 pr-4 font-medium">Capability</th>
+                <th className="px-2 py-3 text-center text-terminal-green">ONDA</th>
+                {ONDA_VS.map((e) => (
+                  <th key={e.slug} className="px-2 py-3 text-center font-medium text-white/60">
+                    <Link to={`/compare/${e.slug}`} className="hover:text-terminal-green">
+                      {e.competitorName}
+                    </Link>
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {CAPABILITIES.map((cap) => (
+                <tr key={cap} className="border-b border-white/10">
+                  <td className="min-w-[220px] py-3 pr-4 align-top text-white/75">{cap}</td>
+                  <td className={`px-2 py-3 text-center font-mono ${CAP_CLASS[ONDA_CAPS[cap]]}`}>
+                    {CAP_GLYPH[ONDA_CAPS[cap]]}
+                  </td>
+                  {ONDA_VS.map((e) => (
+                    <td key={e.slug} className={`px-2 py-3 text-center font-mono ${CAP_CLASS[e.them[cap]]}`}>
+                      {CAP_GLYPH[e.them[cap]]}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-3 font-mono text-[11px] leading-relaxed text-white/40">
+          This is ONDA&rsquo;s own comparison. Tap any competitor for the full head-to-head, and see{' '}
+          <Link to="/measurements" className="text-terminal-green hover:underline">what ONDA measures</Link>.
+        </p>
+      </section>
 
       {/* Top-X guides */}
       <h2 className="mt-12 mb-4 text-xl font-bold tracking-tight md:text-2xl">Top picks by category</h2>
