@@ -87,6 +87,50 @@ export function ReviewMethodologyPage() {
         {tReviews('methodology.independenceBody')}
       </p>
 
+      {/* Self-review firewall — the strongest independence signal: ONDA is not
+          ranked in its own reviews at all. */}
+      <div className="mb-10 rounded-lg border border-terminal-green/25 bg-terminal-green/5 p-5">
+        <h2 className="mb-3 text-xl font-bold tracking-tight">
+          {tReviews('methodology.selfReviewHeading', { defaultValue: 'Does ONDA review itself?' })}
+        </h2>
+        <p className="font-mono text-sm leading-relaxed text-white/70">
+          {tReviews('methodology.selfReviewBody', {
+            defaultValue:
+              "No. ONDA makes an HRV biofeedback app, and it is never scored in these independent reviews — you will not find an ONDA product ranked here. Where we compare ONDA to other apps, that lives separately at /compare, is clearly labelled as ONDA's own comparison, and is kept out of the independent rankings entirely. We would rather leave ourselves out than mark our own homework.",
+          })}
+        </p>
+      </div>
+
+      <h2 className="mb-3 text-xl font-bold tracking-tight">
+        {tReviews('methodology.sourcesHeading', { defaultValue: 'Data sources' })}
+      </h2>
+      <p className="mb-10 font-mono text-sm leading-relaxed text-white/60">
+        {tReviews('methodology.sourcesBody', {
+          defaultValue:
+            'Scores draw on three sources: manufacturer specifications and documentation, independent third-party reviews, and published peer-reviewed validation literature. Prices and availability are stated as of the date on each review, and can change.',
+        })}
+      </p>
+
+      <h2 className="mb-3 text-xl font-bold tracking-tight">
+        {tReviews('methodology.coiHeading', { defaultValue: 'Conflicts of interest' })}
+      </h2>
+      <p className="mb-10 font-mono text-sm leading-relaxed text-white/60">
+        {tReviews('methodology.coiBody', {
+          defaultValue:
+            'ONDA does not sell, manufacture or resell any product reviewed here, and receives no compensation, sponsorship, gifts or free units in exchange for coverage or a score. There are no vendor relationships behind the rankings. The only product ONDA makes — its app — is deliberately excluded from these reviews.',
+        })}
+      </p>
+
+      <h2 className="mb-3 text-xl font-bold tracking-tight">
+        {tReviews('methodology.updatesHeading', { defaultValue: 'How often rankings change' })}
+      </h2>
+      <p className="mb-10 font-mono text-sm leading-relaxed text-white/60">
+        {tReviews('methodology.updatesBody', {
+          defaultValue:
+            'Every review and round-up carries a last-updated date. We revise scores and rankings when a flagship launches, when a price or availability changes materially, or when new evidence emerges — not on a fixed schedule. When a product is discontinued or banned from sale, we say so and adjust the ranking.',
+        })}
+      </p>
+
       <h2 className="mb-3 text-xl font-bold tracking-tight">{tReviews('methodology.authorHeading')}</h2>
       <p className="mb-10 font-mono text-sm leading-relaxed text-white/60">
         {tReviews('methodology.authorBody')}{' '}
