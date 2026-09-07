@@ -19,6 +19,22 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { appStoreUrl, APP_STORE_ID } from '../config/appStore'
+import { ONDA_CAPS, getOndaVs, type Cap, type CapabilityAxis } from '../data/onda-vs'
+
+const CAP_GLYPH: Record<Cap, string> = { yes: '✓', limited: '~', no: '—' }
+const CAP_CLASS: Record<Cap, string> = {
+  yes: 'text-terminal-green',
+  limited: 'text-amber-300',
+  no: 'text-white/25',
+}
+// A focused "why ONDA" mini-matrix: the axes that most separate ONDA from a
+// passive tracker (Oura) and a meditation app (Headspace).
+const WHY_ROWS: CapabilityAxis[] = [
+  'Real-time HRV biofeedback (live feedback as you breathe)',
+  'Live coherence score',
+  'Works with no wearable or chest strap (iPhone camera)',
+  'Structured, progressive program',
+]
 
 const SITE_URL = 'https://onda-life.com'
 const PAGE_URL = `${SITE_URL}/product`
@@ -190,6 +206,59 @@ export function ProductPage() {
           for the method, <Link to="/how-it-works" className="text-terminal-green hover:underline">how it works</Link>.
         </p>
       </section>
+
+      {/* WHY ONDA — focused mini capability matrix vs a tracker + a meditation app */}
+      {(() => {
+        const oura = getOndaVs('onda-vs-oura')
+        const head = getOndaVs('onda-vs-headspace')
+        if (!oura || !head) return null
+        const cols: { label: string; caps: Record<CapabilityAxis, Cap>; onda?: boolean }[] = [
+          { label: 'ONDA', caps: ONDA_CAPS, onda: true },
+          { label: 'A tracker (Oura)', caps: oura.them },
+          { label: 'A meditation app (Headspace)', caps: head.them },
+        ]
+        return (
+          <section className="pt-14">
+            <h2 className="mb-1 text-2xl font-bold tracking-tight md:text-3xl">Why ONDA</h2>
+            <p className="mb-4 font-mono text-xs text-white/45">
+              What sets ONDA apart from a passive tracker and a meditation app.{' '}
+              <span className="text-terminal-green">✓</span> yes ·{' '}
+              <span className="text-amber-300">~</span> limited ·{' '}
+              <span className="text-white/30">—</span> no
+            </p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse text-left text-sm">
+                <thead>
+                  <tr className="border-b border-white/20 font-mono text-[11px] uppercase tracking-wider text-white/50">
+                    <th className="py-3 pr-4 font-medium">Capability</th>
+                    {cols.map((c) => (
+                      <th key={c.label} className={`px-2 py-3 text-center font-medium ${c.onda ? 'text-terminal-green' : 'text-white/60'}`}>
+                        {c.label}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {WHY_ROWS.map((cap) => (
+                    <tr key={cap} className="border-b border-white/10">
+                      <td className="min-w-[200px] py-3 pr-4 align-top text-white/75">{cap}</td>
+                      {cols.map((c) => (
+                        <td key={c.label} className={`px-2 py-3 text-center font-mono ${CAP_CLASS[c.caps[cap]]}`}>
+                          {CAP_GLYPH[c.caps[cap]]}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <p className="mt-3 font-mono text-[11px] text-white/40">
+              See the full comparisons on the{' '}
+              <Link to="/compare" className="text-terminal-green hover:underline">compare hub</Link>.
+            </p>
+          </section>
+        )
+      })()}
 
       {/* WHO IT'S FOR / NOT FOR */}
       <section className="pt-14 grid gap-4 md:grid-cols-2">
