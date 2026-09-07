@@ -5,6 +5,7 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { ONDA_VS } from '../data/onda-vs'
+import { ONDA_ROUNDUPS } from '../data/onda-roundups'
 
 const SITE_URL = 'https://onda-life.com'
 const PAGE_URL = `${SITE_URL}/compare`
@@ -83,7 +84,24 @@ export function OndaComparePage() {
         </p>
       </header>
 
-      <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+      {/* Top-X guides */}
+      <h2 className="mt-12 mb-4 text-xl font-bold tracking-tight md:text-2xl">Top picks by category</h2>
+      <ul className="grid gap-4 sm:grid-cols-2">
+        {ONDA_ROUNDUPS.map((r) => (
+          <li key={r.slug}>
+            <Link
+              to={`/compare/${r.slug}`}
+              className="block h-full rounded-lg border border-terminal-green/25 bg-terminal-green/5 p-5 transition-colors hover:border-terminal-green/50"
+            >
+              <div className="mb-1 text-lg font-bold text-white">{r.title}</div>
+              <p className="font-mono text-xs leading-relaxed text-white/60 line-clamp-3">{r.description}</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      <h2 className="mt-12 mb-4 text-xl font-bold tracking-tight md:text-2xl">Head-to-head</h2>
+      <ul className="grid gap-4 sm:grid-cols-2">
         {ONDA_VS.map((e) => (
           <li key={e.slug}>
             <Link

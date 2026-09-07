@@ -13,6 +13,7 @@ import { levelsData } from '../src/data/levels'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { reviews, comparisons, headToHeads, CATEGORY_URL_SLUGS } from '../src/data/reviews'
 import { ONDA_VS } from '../src/data/onda-vs'
+import { ONDA_ROUNDUPS } from '../src/data/onda-roundups'
 import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRouteVariants, LOCALIZED_PAGES } from '../src/i18n'
 
 // Pages localized into all 5 languages — each gets its own prerendered HTML
@@ -452,6 +453,7 @@ const nonLocalizedStaticPaths = [
   // /compare — ONDA's own "ONDA vs <competitor>" comparisons. EN-only.
   '/compare',
   ...ONDA_VS.map((e) => `/compare/${e.slug}`),
+  ...ONDA_ROUNDUPS.map((r) => `/compare/${r.slug}`),
   // Interactive biohacking tools. EN-only for now.
   '/tools',
   '/tools/hrv',

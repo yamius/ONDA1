@@ -81,7 +81,7 @@ const ProductPage           = lazy(() => import('./pages/ProductPage').then(m =>
 const FaqPage               = lazy(() => import('./pages/FaqPage').then(m => ({ default: m.FaqPage })))
 const FounderPage           = lazy(() => import('./pages/FounderPage').then(m => ({ default: m.FounderPage })))
 const OndaComparePage       = lazy(() => import('./pages/OndaComparePage').then(m => ({ default: m.OndaComparePage })))
-const OndaVsPage            = lazy(() => import('./pages/OndaVsPage').then(m => ({ default: m.OndaVsPage })))
+const CompareSlugRouter     = lazy(() => import('./components/CompareSlugRouter').then(m => ({ default: m.CompareSlugRouter })))
 const ToolsPage             = lazy(() => import('./pages/ToolsPage').then(m => ({ default: m.ToolsPage })))
 const BaselinePage          = lazy(() => import('./pages/BaselinePage').then(m => ({ default: m.BaselinePage })))
 const HrvInterpreterPage    = lazy(() => import('./pages/HrvInterpreterPage').then(m => ({ default: m.HrvInterpreterPage })))
@@ -207,7 +207,7 @@ const routeElements = (
             <Route path="/faq"                   element={<FaqPage />} />
             <Route path="/people/yakiv-bilenko"  element={<FounderPage />} />
             <Route path="/compare"               element={<OndaComparePage />} />
-            <Route path="/compare/:slug"         element={<OndaVsPage />} />
+            <Route path="/compare/:slug"         element={<CompareSlugRouter />} />
             <Route path="/tools"                 element={<ToolsPage />} />
             <Route path="/tools/hrv"             element={<HrvInterpreterPage />} />
             <Route path="/tools/caffeine"        element={<CaffeineCalculatorPage />} />

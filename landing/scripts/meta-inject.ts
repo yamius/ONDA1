@@ -15,6 +15,7 @@ import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
 import { MEASUREMENTS_FAQ } from '../src/data/measurements-faq'
 import { getOndaVs } from '../src/data/onda-vs'
+import { getRoundup } from '../src/data/onda-roundups'
 import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
 import { EMOTON_FAQ } from '../src/data/emoton-faq'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
@@ -1600,9 +1601,10 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
     }
   }
-  // /compare/onda-vs-<competitor> — ONDA's own comparison page + FAQ JSON-LD.
+  // /compare/<slug> — either a pairwise ONDA-vs page or a "top X" round-up.
   if (route.startsWith('/compare/')) {
-    const entry = getOndaVs(route.slice('/compare/'.length))
+    const slug = route.slice('/compare/'.length)
+    const entry = getOndaVs(slug)
     if (entry) {
       return {
         title: `${entry.title} — HRV Biofeedback Compared (2026) | ONDA Life`,
@@ -1611,6 +1613,17 @@ export function getMetaForRoute(route: string): RouteMeta {
         breadcrumbs,
         ogType: 'website',
         faq: { mainEntity: entry.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      }
+    }
+    const roundup = getRoundup(slug)
+    if (roundup) {
+      return {
+        title: `${roundup.title} (2026) | ONDA Life`,
+        description: roundup.description,
+        url,
+        breadcrumbs,
+        ogType: 'website',
+        faq: { mainEntity: roundup.faq.map((f) => ({ question: f.q, answer: f.a })), url },
       }
     }
   }
