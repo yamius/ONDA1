@@ -15,6 +15,15 @@ export function ReviewsPage() {
   const lang = langFromPath(pathname)
   const { t: tReviews } = useTranslation('reviews')
 
+  // Head-to-heads whose 2–3 products all belong to a given category — used to
+  // show how big each category's comparison group is on the tile.
+  const h2hCountFor = (cat: string) =>
+    headToHeads.filter((h) => {
+      const slugs = [h.productASlug, h.productBSlug, h.productCSlug].filter(Boolean) as string[]
+      const prods = slugs.map((s) => getReviewBySlug(s))
+      return prods.length > 0 && prods.every((p) => p && p.category === cat)
+    }).length
+
   return (
     <div className="mx-auto max-w-5xl px-4 pb-16 pt-6 md:px-6">
       <nav
@@ -55,75 +64,45 @@ export function ReviewsPage() {
         </div>
       </Link>
 
-      {/* Category nav — links to the per-category landing pages. Surfaced
-          before the round-up list so visitors targeting one category jump
-          straight to it instead of scrolling through the omnibus. */}
+      {/* Category tiles — each opens that category's own page (its round-up,
+          reviews and head-to-head comparisons together). This is the primary
+          way into the reviews; the full lists live on the category pages, not
+          as one endless scroll here. */}
       <section className="mb-14">
         <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-cyan/80">
           {tReviews('ui.categoriesHeading', { defaultValue: 'Browse by category' })}
         </h2>
-        <div className="grid gap-3 sm:grid-cols-2">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {LIVE_REVIEW_CATEGORIES.map((cat) => {
             const count = reviews.filter((r) => r.category === cat).length
             if (count === 0) return null
+            const vsCount = h2hCountFor(cat)
+            const hasGuide = comparisons.some((c) => c.category === cat)
+            const meta = [
+              `${count} ${tReviews('ui.reviewsCountSuffix', { defaultValue: 'reviews' })}`,
+              vsCount > 0 ? `${vsCount} vs` : null,
+              hasGuide ? tReviews('ui.guideLabel', { defaultValue: 'buying guide' }) : null,
+            ].filter(Boolean).join(' · ')
             return (
               <Link
                 key={cat}
                 to={langHref(`/reviews/${CATEGORY_URL_SLUGS[cat]}`, lang)}
-                className="glass-card group flex items-center justify-between gap-3 rounded-lg p-4 transition-all hover:border-terminal-cyan/30"
+                className="glass-card group flex h-full flex-col justify-between gap-3 rounded-lg p-4 transition-all hover:border-terminal-cyan/30"
               >
-                <span className="font-mono text-sm text-white/80 transition-colors group-hover:text-terminal-cyan">
+                <span className="font-medium text-white/85 transition-colors group-hover:text-terminal-cyan">
                   {tReviews(`categories.${cat}`, { defaultValue: CATEGORY_LABELS[cat] })}
                 </span>
-                <span className="font-mono text-xs text-white/30">
-                  {count} {tReviews('ui.reviewsCountSuffix', { defaultValue: 'reviews' })}
-                </span>
+                <span className="font-mono text-[11px] text-white/35">{meta} &rarr;</span>
               </Link>
             )
           })}
         </div>
       </section>
 
-      {headToHeads.length > 0 && (
-        <section className="mb-14">
-          <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-green/90">
-            {tReviews('ui.headToHeadHeading', { defaultValue: 'Head-to-head duels' })}
-          </h2>
-          <div className="grid gap-3 sm:grid-cols-2">
-            {headToHeads.map((h) => {
-              const a = getReviewBySlug(h.productASlug)
-              const b = getReviewBySlug(h.productBSlug)
-              const c = h.productCSlug ? getReviewBySlug(h.productCSlug) : undefined
-              if (!a || !b || (h.productCSlug && !c)) return null
-              const names = c ? [a.name, b.name, c.name] : [a.name, b.name]
-              return (
-                <Link
-                  key={h.slug}
-                  to={langHref(`/reviews/vs/${h.slug}`, lang)}
-                  className="glass-card group flex items-start justify-between gap-3 rounded-lg p-4 transition-all hover:border-terminal-green/20"
-                >
-                  <div className="min-w-0">
-                    <p className="font-mono text-sm font-semibold text-white/80 transition-colors group-hover:text-terminal-green">
-                      {names.map((n, i) => (
-                        <span key={i}>
-                          {i > 0 && <span className="text-white/35"> vs </span>}
-                          {n}
-                        </span>
-                      ))}
-                    </p>
-                  </div>
-                  <span className="font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">→</span>
-                </Link>
-              )
-            })}
-          </div>
-        </section>
-      )}
-
       {comparisons.length > 0 && (
         <section className="mb-14">
           <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-green/90">
-            {tReviews('ui.comparisonsHeading')}
+            {tReviews('ui.comparisonsHeading', { defaultValue: 'Buying guides' })}
           </h2>
           <div className="grid gap-3">
             {comparisons.map((c) => (
@@ -149,42 +128,6 @@ export function ReviewsPage() {
         </section>
       )}
 
-      {LIVE_REVIEW_CATEGORIES.map((cat) => {
-        const catReviews = reviews.filter((r) => r.category === cat)
-        if (catReviews.length === 0) return null
-        return (
-          <section key={cat} className="mb-12">
-            <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-cyan/80">
-              [ {tReviews(`categories.${cat}`, { defaultValue: CATEGORY_LABELS[cat] }).toUpperCase()} ]
-            </h2>
-            <div className="grid gap-6 md:grid-cols-2">
-              {catReviews.map((r) => (
-                <Link
-                  key={r.slug}
-                  to={langHref(`/reviews/${r.slug}`, lang)}
-                  className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/20"
-                >
-                  <div className="mb-2 flex items-center justify-between">
-                    <span className="rounded-md border border-white/10 bg-white/5 px-3 py-0.5 font-mono text-[10px] text-white/30">
-                      {r.brand}
-                    </span>
-                    <span className="font-mono text-sm font-bold text-terminal-green">
-                      {r.overallScore.toFixed(1)}
-                      <span className="text-white/30"> / 10</span>
-                    </span>
-                  </div>
-                  <h3 className="mb-2 text-lg font-semibold transition-colors group-hover:text-terminal-green">
-                    {r.name}
-                  </h3>
-                  <p className="font-mono text-xs leading-relaxed text-white/40">
-                    {tReviews(`bodies.${r.slug}.verdict`, { defaultValue: r.verdict })}
-                  </p>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )
-      })}
     </div>
   )
 }
