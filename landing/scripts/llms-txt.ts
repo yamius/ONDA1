@@ -96,6 +96,8 @@ function buildIndex(lang: Lang = 'en'): string {
 - [Product](${SITE_URL}/product): ONDA Life product facts — iOS (iPhone/iPad/Apple Watch), free to start, HRV biofeedback + guided breathing, App Store id 6755912529
 - [What ONDA measures](${SITE_URL}/measurements): exactly which signals are directly measured (heart rate, HRV), derived (coherence, resting-HRV trend) or estimated (stress, energy) — and what ONDA does not measure
 - [How ONDA works](${SITE_URL}/how-it-works): the biofeedback loop — how HRV (RMSSD/SDNN) and the live coherence score are computed, with limits
+- [HRV biofeedback](${SITE_URL}/hrv-biofeedback): cornerstone explainer — what HRV biofeedback is, how it works, the evidence (cited), tracking vs biofeedback, and how ONDA implements it
+- [Resonance breathing](${SITE_URL}/resonance-breathing): cornerstone explainer — the science of slow breathing and HRV, why ~6 breaths/min, finding your resonance frequency, evidence and practice
 - [Bio](${SITE_URL}${langPrefix}/bio): real-time biometric dashboard — the product experience on the web
 - [Research](${SITE_URL}/research): the evidence ONDA builds on (HRV biofeedback, resonance breathing) and what remains experimental
 - [Articles](${SITE_URL}/articles): long-form knowledge base on HRV, breathwork and nervous-system science

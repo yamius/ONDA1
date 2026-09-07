@@ -80,6 +80,8 @@ const HowItWorksPage        = lazy(() => import('./pages/HowItWorksPage').then(m
 const ProductPage           = lazy(() => import('./pages/ProductPage').then(m => ({ default: m.ProductPage })))
 const FaqPage               = lazy(() => import('./pages/FaqPage').then(m => ({ default: m.FaqPage })))
 const FounderPage           = lazy(() => import('./pages/FounderPage').then(m => ({ default: m.FounderPage })))
+const HrvBiofeedbackPage    = lazy(() => import('./pages/HrvBiofeedbackPage').then(m => ({ default: m.HrvBiofeedbackPage })))
+const ResonanceBreathingGuidePage = lazy(() => import('./pages/ResonanceBreathingGuidePage').then(m => ({ default: m.ResonanceBreathingGuidePage })))
 const OndaComparePage       = lazy(() => import('./pages/OndaComparePage').then(m => ({ default: m.OndaComparePage })))
 const CompareSlugRouter     = lazy(() => import('./components/CompareSlugRouter').then(m => ({ default: m.CompareSlugRouter })))
 const ToolsPage             = lazy(() => import('./pages/ToolsPage').then(m => ({ default: m.ToolsPage })))
@@ -206,6 +208,8 @@ const routeElements = (
             <Route path="/product"               element={<ProductPage />} />
             <Route path="/faq"                   element={<FaqPage />} />
             <Route path="/people/yakiv-bilenko"  element={<FounderPage />} />
+            <Route path="/hrv-biofeedback"       element={<HrvBiofeedbackPage />} />
+            <Route path="/resonance-breathing"   element={<ResonanceBreathingGuidePage />} />
             <Route path="/compare"               element={<OndaComparePage />} />
             <Route path="/compare/:slug"         element={<CompareSlugRouter />} />
             <Route path="/tools"                 element={<ToolsPage />} />

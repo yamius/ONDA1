@@ -52,6 +52,8 @@ export function SitemapPage() {
     { to: lang === 'en' ? '/bio' : `/${lang}/bio`, label: t('main.bio') },
     // EN-only GEO/AI pages — canonical EN path regardless of locale.
     { to: '/product', label: 'Product' },
+    { to: '/hrv-biofeedback', label: 'HRV biofeedback' },
+    { to: '/resonance-breathing', label: 'Resonance breathing' },
     { to: '/faq', label: 'FAQ' },
     { to: '/measurements', label: 'What ONDA measures' },
     { to: '/how-it-works', label: 'How ONDA works' },

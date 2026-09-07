@@ -450,6 +450,9 @@ const nonLocalizedStaticPaths = [
   '/faq',
   // /people/yakiv-bilenko — founder person/authority page. EN-only.
   '/people/yakiv-bilenko',
+  // Cornerstone bridge-entity pages: HRV biofeedback + resonance breathing. EN-only.
+  '/hrv-biofeedback',
+  '/resonance-breathing',
   // /compare — ONDA's own "ONDA vs <competitor>" comparisons. EN-only.
   '/compare',
   ...ONDA_VS.map((e) => `/compare/${e.slug}`),

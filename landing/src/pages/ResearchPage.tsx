@@ -179,6 +179,18 @@ export function ResearchPage() {
           >
             How it works
           </Link>
+          <Link
+            to="/hrv-biofeedback"
+            className="rounded border border-white/15 px-3 py-1.5 text-white/70 hover:bg-white/5"
+          >
+            HRV biofeedback
+          </Link>
+          <Link
+            to="/resonance-breathing"
+            className="rounded border border-white/15 px-3 py-1.5 text-white/70 hover:bg-white/5"
+          >
+            Resonance breathing
+          </Link>
         </div>
       </header>
 
