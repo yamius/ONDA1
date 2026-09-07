@@ -47,6 +47,8 @@ import ultrahumanRingAir from './ultrahuman-ring-air'
 import ultrahumanRingPro from './ultrahuman-ring-pro'
 import amazfitHelioRing from './amazfit-helio-ring'
 import ringconnGen3 from './ringconn-gen-3'
+import circularRing2 from './circular-ring-2'
+import lunaRing from './luna-ring'
 import ringconnGen2 from './ringconn-gen-2'
 import fitbitCharge6 from './fitbit-charge-6'
 import withingsScanwatch from './withings-scanwatch'
@@ -252,6 +254,8 @@ const ALL_REVIEWS: ToolReview[] = [
   ultrahumanRingPro,
   amazfitHelioRing,
   ringconnGen3,
+  circularRing2,
+  lunaRing,
   appleWatchSeries11,
   ringconnGen2,
   fitbitCharge6,
