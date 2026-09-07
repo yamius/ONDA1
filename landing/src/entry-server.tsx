@@ -34,6 +34,8 @@ import { FaqPage } from './pages/FaqPage'
 import { FounderPage } from './pages/FounderPage'
 import { HrvBiofeedbackPage } from './pages/HrvBiofeedbackPage'
 import { ResonanceBreathingGuidePage } from './pages/ResonanceBreathingGuidePage'
+import { HrvVsCoherencePage } from './pages/HrvVsCoherencePage'
+import { AppleWatchHrvBiofeedbackPage } from './pages/AppleWatchHrvBiofeedbackPage'
 import { OndaComparePage } from './pages/OndaComparePage'
 import { CompareSlugRouter } from './components/CompareSlugRouter'
 import { ToolsPage } from './pages/ToolsPage'
@@ -187,6 +189,8 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/people/yakiv-bilenko"  element={<FounderPage />} />
           <Route path="/hrv-biofeedback"       element={<HrvBiofeedbackPage />} />
           <Route path="/resonance-breathing"   element={<ResonanceBreathingGuidePage />} />
+          <Route path="/hrv-vs-coherence"      element={<HrvVsCoherencePage />} />
+          <Route path="/apple-watch-hrv-biofeedback" element={<AppleWatchHrvBiofeedbackPage />} />
           <Route path="/compare"               element={<OndaComparePage />} />
           <Route path="/compare/:slug"         element={<CompareSlugRouter />} />
           <Route path="/tools"                 element={<ToolsPage />} />

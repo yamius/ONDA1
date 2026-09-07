@@ -1589,6 +1589,28 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'article',
     }
   }
+  // /hrv-vs-coherence — cornerstone explainer. EN-only.
+  if (route === '/hrv-vs-coherence') {
+    return {
+      title: 'HRV vs Coherence: What’s the Difference? | ONDA Life',
+      description:
+        'HRV vs coherence explained: HRV is the raw variation between heartbeats; coherence is how smooth and rhythmic that variation is as you breathe. Which to watch, and how ONDA uses each.',
+      url,
+      breadcrumbs,
+      ogType: 'article',
+    }
+  }
+  // /apple-watch-hrv-biofeedback — cornerstone device page. EN-only.
+  if (route === '/apple-watch-hrv-biofeedback') {
+    return {
+      title: 'HRV Biofeedback on Apple Watch: How It Works | ONDA Life',
+      description:
+        'HRV biofeedback on Apple Watch: what the Watch measures, why it records HRV rather than giving live biofeedback on its own, how accurate it is, and how ONDA turns it into a real-time coherence loop.',
+      url,
+      breadcrumbs,
+      ogType: 'article',
+    }
+  }
   // /people/yakiv-bilenko — founder person/authority page. EN-only.
   if (route === '/people/yakiv-bilenko') {
     return {

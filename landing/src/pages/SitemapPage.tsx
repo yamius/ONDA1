@@ -54,6 +54,8 @@ export function SitemapPage() {
     { to: '/product', label: 'Product' },
     { to: '/hrv-biofeedback', label: 'HRV biofeedback' },
     { to: '/resonance-breathing', label: 'Resonance breathing' },
+    { to: '/hrv-vs-coherence', label: 'HRV vs coherence' },
+    { to: '/apple-watch-hrv-biofeedback', label: 'Apple Watch HRV biofeedback' },
     { to: '/faq', label: 'FAQ' },
     { to: '/measurements', label: 'What ONDA measures' },
     { to: '/how-it-works', label: 'How ONDA works' },

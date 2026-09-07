@@ -82,6 +82,8 @@ const FaqPage               = lazy(() => import('./pages/FaqPage').then(m => ({ 
 const FounderPage           = lazy(() => import('./pages/FounderPage').then(m => ({ default: m.FounderPage })))
 const HrvBiofeedbackPage    = lazy(() => import('./pages/HrvBiofeedbackPage').then(m => ({ default: m.HrvBiofeedbackPage })))
 const ResonanceBreathingGuidePage = lazy(() => import('./pages/ResonanceBreathingGuidePage').then(m => ({ default: m.ResonanceBreathingGuidePage })))
+const HrvVsCoherencePage    = lazy(() => import('./pages/HrvVsCoherencePage').then(m => ({ default: m.HrvVsCoherencePage })))
+const AppleWatchHrvBiofeedbackPage = lazy(() => import('./pages/AppleWatchHrvBiofeedbackPage').then(m => ({ default: m.AppleWatchHrvBiofeedbackPage })))
 const OndaComparePage       = lazy(() => import('./pages/OndaComparePage').then(m => ({ default: m.OndaComparePage })))
 const CompareSlugRouter     = lazy(() => import('./components/CompareSlugRouter').then(m => ({ default: m.CompareSlugRouter })))
 const ToolsPage             = lazy(() => import('./pages/ToolsPage').then(m => ({ default: m.ToolsPage })))
@@ -210,6 +212,8 @@ const routeElements = (
             <Route path="/people/yakiv-bilenko"  element={<FounderPage />} />
             <Route path="/hrv-biofeedback"       element={<HrvBiofeedbackPage />} />
             <Route path="/resonance-breathing"   element={<ResonanceBreathingGuidePage />} />
+            <Route path="/hrv-vs-coherence"      element={<HrvVsCoherencePage />} />
+            <Route path="/apple-watch-hrv-biofeedback" element={<AppleWatchHrvBiofeedbackPage />} />
             <Route path="/compare"               element={<OndaComparePage />} />
             <Route path="/compare/:slug"         element={<CompareSlugRouter />} />
             <Route path="/tools"                 element={<ToolsPage />} />

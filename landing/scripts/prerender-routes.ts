@@ -453,6 +453,8 @@ const nonLocalizedStaticPaths = [
   // Cornerstone bridge-entity pages: HRV biofeedback + resonance breathing. EN-only.
   '/hrv-biofeedback',
   '/resonance-breathing',
+  '/hrv-vs-coherence',
+  '/apple-watch-hrv-biofeedback',
   // /compare — ONDA's own "ONDA vs <competitor>" comparisons. EN-only.
   '/compare',
   ...ONDA_VS.map((e) => `/compare/${e.slug}`),

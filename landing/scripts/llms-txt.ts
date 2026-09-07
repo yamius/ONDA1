@@ -98,6 +98,8 @@ function buildIndex(lang: Lang = 'en'): string {
 - [How ONDA works](${SITE_URL}/how-it-works): the biofeedback loop — how HRV (RMSSD/SDNN) and the live coherence score are computed, with limits
 - [HRV biofeedback](${SITE_URL}/hrv-biofeedback): cornerstone explainer — what HRV biofeedback is, how it works, the evidence (cited), tracking vs biofeedback, and how ONDA implements it
 - [Resonance breathing](${SITE_URL}/resonance-breathing): cornerstone explainer — the science of slow breathing and HRV, why ~6 breaths/min, finding your resonance frequency, evidence and practice
+- [HRV vs coherence](${SITE_URL}/hrv-vs-coherence): explainer — HRV is the raw beat-to-beat variation; coherence is how smooth/rhythmic it is as you breathe; which to watch and how ONDA uses each
+- [Apple Watch HRV biofeedback](${SITE_URL}/apple-watch-hrv-biofeedback): explainer — what the Apple Watch measures, why it records HRV rather than giving live biofeedback alone, and how ONDA adds a real-time coherence loop
 - [Bio](${SITE_URL}${langPrefix}/bio): real-time biometric dashboard — the product experience on the web
 - [Research](${SITE_URL}/research): the evidence ONDA builds on (HRV biofeedback, resonance breathing) and what remains experimental
 - [Articles](${SITE_URL}/articles): long-form knowledge base on HRV, breathwork and nervous-system science
