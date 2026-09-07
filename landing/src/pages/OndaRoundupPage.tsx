@@ -136,7 +136,25 @@ export function OndaRoundupPage() {
               )}
             </div>
             <div className="mb-2 font-mono text-xs uppercase tracking-wider text-white/40">{e.tag}</div>
-            <p className="font-mono text-sm leading-relaxed text-white/70">{e.blurb}</p>
+            <p className="mb-3 font-mono text-sm leading-relaxed text-white/70">{e.blurb}</p>
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div>
+                <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-terminal-green/70">Pros</div>
+                <ul className="space-y-1 font-mono text-xs leading-relaxed text-white/65">
+                  {e.pros.map((p) => (
+                    <li key={p} className="flex gap-2"><span className="text-terminal-green">+</span><span>{p}</span></li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <div className="mb-1 font-mono text-[10px] uppercase tracking-widest text-amber-300/80">Cons</div>
+                <ul className="space-y-1 font-mono text-xs leading-relaxed text-white/55">
+                  {e.cons.map((c) => (
+                    <li key={c} className="flex gap-2"><span className="text-amber-300">−</span><span>{c}</span></li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </li>
         ))}
       </ol>

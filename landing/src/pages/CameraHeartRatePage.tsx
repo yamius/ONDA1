@@ -335,6 +335,8 @@ export function CameraHeartRatePage() {
         Related: <Link to={`${langPrefix}/tools/resting-heart-rate`} className="text-terminal-green hover:underline">Resting heart rate by age</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
+        {' · '}
+        <Link to="/compare/best-hrv-biofeedback-apps" className="text-terminal-green hover:underline">Best HRV biofeedback apps</Link>
       </div>
     </main>
   )

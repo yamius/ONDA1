@@ -49,7 +49,7 @@ export const ONDA_FAQ: FaqGroup[] = [
       {
         q: 'What is the difference between HRV tracking and HRV biofeedback?',
         a: 'HRV tracking passively records your HRV (often overnight) so you can see trends — this is what rings and bands do. HRV biofeedback is active: you get live feedback while you breathe and train your heart rhythm in the moment. Tracking tells you how you recovered; biofeedback gives you something to do about it.',
-        link: { to: '/compare', label: 'ONDA vs trackers' },
+        link: { to: '/compare/best-active-hrv-training-apps', label: 'Best active HRV training apps' },
       },
       {
         q: 'Can I train my vagus nerve?',
@@ -215,7 +215,7 @@ export const ONDA_FAQ: FaqGroup[] = [
       {
         q: 'What is the best HRV biofeedback app?',
         a: 'The main HRV-biofeedback apps are ONDA, Elite HRV and (in its premium tier) Breathwrk. ONDA works with the iPhone camera or Apple Watch inside a guided, progressive practice; Elite HRV is more measurement-focused and most accurate with a chest strap. The best one depends on whether you want a guided practice or the most precise measurement.',
-        link: { to: '/compare', label: 'Compare' },
+        link: { to: '/compare/best-hrv-biofeedback-apps', label: 'Best HRV biofeedback apps' },
       },
       {
         q: 'ONDA or Oura — which should I choose?',

@@ -184,6 +184,8 @@ export function HrvInterpreterPage() {
         <Link to={`${langPrefix}/glossary/heart-rate-variability`} className="text-terminal-green hover:underline">What is HRV?</Link>
         {' · '}
         <Link to={langHref(`/emoton`, lang)} className="text-terminal-green hover:underline">Feelings wheel</Link>
+        {' · '}
+        <Link to="/compare/best-active-hrv-training-apps" className="text-terminal-green hover:underline">Best active HRV training apps</Link>
       </div>
     </main>
   )

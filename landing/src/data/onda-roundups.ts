@@ -9,8 +9,9 @@
  *     training). Never a "best meditation apps" list topped by ONDA — it
  *     isn't the best meditation library and saying so would be self-dealing.
  *   - Rank ONDA #1 only with a specific, true reason, and always name where
- *     each competitor genuinely wins. The `bottomLine` states plainly what
- *     ONDA is NOT best at and who to buy instead.
+ *     each competitor genuinely wins. Every entry carries honest pros AND
+ *     cons — including ONDA's own. The `bottomLine` states plainly what ONDA
+ *     is NOT best at and who to buy instead.
  *   - A visible transparency banner (in the page) says this is ONDA's own
  *     guide. Competitor facts match their independent reviews / onda-vs pages.
  */
@@ -24,6 +25,8 @@ export interface RoundupEntry {
   /** Short verdict tag, e.g. "Best for accessible, guided biofeedback". */
   tag: string
   blurb: string
+  pros: string[]
+  cons: string[]
 }
 
 export interface OndaRoundup {
@@ -42,9 +45,9 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
     slug: 'best-hrv-biofeedback-apps',
     title: 'Best HRV Biofeedback Apps',
     description:
-      'The best HRV biofeedback apps of 2026 — real-time heart-rate-variability feedback you train against, ranked by ONDA. ONDA Life, Elite HRV and Breathwrk compared.',
+      'The best HRV biofeedback apps of 2026 — real-time heart-rate-variability feedback you train against, ranked with pros and cons by ONDA. ONDA Life, Elite HRV and Breathwrk.',
     intro:
-      'HRV biofeedback means seeing your heart-rate variability in real time and adjusting your breathing to train it — not just recording it overnight. Only a handful of apps actually do this. Here are the ones that do, ranked, with an honest note on who each is really for.',
+      'HRV biofeedback means seeing your heart-rate variability in real time and adjusting your breathing to train it — not just recording it overnight. Only a handful of apps actually do this. Here are the ones that do, ranked, with honest pros and cons and who each is really for.',
     entries: [
       {
         rank: 1,
@@ -54,6 +57,15 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best overall for accessible, guided biofeedback',
         blurb:
           'ONDA gives live heart-rhythm feedback and a coherence score while you breathe, using just the iPhone camera or an Apple Watch — no chest strap — inside a guided, progressive 8-level practice. It’s the most accessible way to actually train HRV, not just track it.',
+        pros: [
+          'Real-time HRV biofeedback + live coherence with no extra hardware',
+          'Works with the iPhone camera or an Apple Watch you already own',
+          'Guided, progressive 8-level path; free to start',
+        ],
+        cons: [
+          'iOS only today (Android is a waitlist)',
+          'Not a passive all-day tracker or a big meditation library',
+        ],
       },
       {
         rank: 2,
@@ -62,6 +74,15 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best for measurement precision',
         blurb:
           'A serious, data-first HRV app with a live coherence breathing pacer and morning readiness. Its most accurate readings need a chest strap, and it’s more measurement tool than guided practice — but for raw HRV precision it’s excellent.',
+        pros: [
+          'Most measurement-focused; chest-strap accuracy',
+          'Resonance breathing pacer with live HRV',
+          'Free core app',
+        ],
+        cons: [
+          'Best accuracy needs a chest strap',
+          'More data tool than guided practice',
+        ],
       },
       {
         rank: 3,
@@ -70,6 +91,14 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best for breathing-exercise variety',
         blurb:
           'A large library of guided breathing exercises. It adds HRV/coherence biofeedback only in its premium tier and via a Bluetooth heart-rate device — so biofeedback is an add-on rather than the core, but the exercise range is the widest here.',
+        pros: [
+          'The widest library of guided breathing exercises',
+          'Polished UX; calm/focus/sleep programs',
+        ],
+        cons: [
+          'HRV biofeedback is premium-only and needs a Bluetooth device',
+          'Biofeedback is an add-on, not the core',
+        ],
       },
     ],
     bottomLine:
@@ -93,9 +122,9 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
     slug: 'best-real-time-breathing-apps',
     title: 'Best Real-Time Breathing & Coherence Apps',
     description:
-      'The best breathing apps with real-time feedback in 2026 — live coherence and heart-rhythm response as you breathe, ranked by ONDA. ONDA Life, Breathwrk and Elite HRV.',
+      'The best breathing apps with real-time feedback in 2026 — live coherence and heart-rhythm response as you breathe, ranked with pros and cons by ONDA.',
     intro:
-      'Most breathing apps just animate a pacer. A few show you your body responding — a live coherence score or heart-rhythm wave that moves as you breathe, so you can feel the practice working. Here are the ones with real biometric feedback, ranked, with who each is really for.',
+      'Most breathing apps just animate a pacer. A few show you your body responding — a live coherence score or heart-rhythm wave that moves as you breathe. This top 5 ranks the strongest breathing apps by how real their feedback is, with honest pros and cons and who each is for.',
     entries: [
       {
         rank: 1,
@@ -105,6 +134,15 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best for live coherence feedback with no extra device',
         blurb:
           'ONDA pairs guided resonance breathing with a live coherence score and your real heart-rhythm response, using the iPhone camera or Apple Watch. You see your body organise as you breathe — the feedback loop that makes it a trainer, not just a pacer.',
+        pros: [
+          'Live coherence + real heart-rhythm feedback, no extra device',
+          'Guided resonance breathing on a structured path',
+          'Free to start; iPhone camera or Apple Watch',
+        ],
+        cons: [
+          'iOS only today (Android waitlist)',
+          'Fewer "just relax" audio sessions than a content app',
+        ],
       },
       {
         rank: 2,
@@ -113,6 +151,14 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best breathing-exercise library',
         blurb:
           'The widest range of guided breathing exercises for calm, focus and sleep. Real-time HRV/coherence feedback exists only in its premium tier and needs a Bluetooth device — so the feedback is optional, but the exercise variety is unmatched here.',
+        pros: [
+          'Largest guided breathing-exercise library',
+          'Polished, quick to use',
+        ],
+        cons: [
+          'Live feedback is premium-only + needs a Bluetooth device',
+          'Not built around biometrics',
+        ],
       },
       {
         rank: 3,
@@ -121,14 +167,54 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best for a data-first resonance pacer',
         blurb:
           'A resonance-frequency breathing pacer tied to live HRV, in a measurement-first app. Excellent if you want precise data and are happy to use a chest strap, though it’s less of a guided experience than ONDA.',
+        pros: [
+          'Resonance pacer with precise live HRV',
+          'Strong for data-minded users',
+        ],
+        cons: [
+          'Best accuracy needs a chest strap',
+          'Less guided/experiential',
+        ],
+      },
+      {
+        rank: 4,
+        name: 'Othership',
+        href: '/reviews/othership',
+        tag: 'Best immersive, cinematic breathwork',
+        blurb:
+          'A premium, music-driven breathwork experience with cinematic sessions and live community classes. Beautiful and motivating — but there’s no biometric feedback, and it’s the priciest subscription in the category.',
+        pros: [
+          'Cinematic, music-driven sessions; live classes',
+          'Highly polished and motivating',
+        ],
+        cons: [
+          'No real-time biometric feedback',
+          'Highest subscription price in the category',
+        ],
+      },
+      {
+        rank: 5,
+        name: 'Prana Breath',
+        href: '/reviews/prana-breath',
+        tag: 'Best for customisable breathing patterns',
+        blurb:
+          'A deeply customisable, pattern-based breathwork app with granular control over timings — Android-first and mostly free. Great for tinkerers, but the UX feels dated and there’s no biometric feedback.',
+        pros: [
+          'Deep control over breathing patterns/timings',
+          'Mostly free; Android-first',
+        ],
+        cons: [
+          'Dated UX',
+          'No biometric feedback',
+        ],
       },
     ],
     bottomLine:
-      'For live coherence feedback with no extra hardware and a guided practice, ONDA leads. For the largest breathing-exercise library (with feedback as a premium add-on), choose Breathwrk. For a measurement-first resonance pacer, choose Elite HRV. If you just want relaxing audio and no biometrics, a meditation app like Calm or Headspace is a different category.',
+      'For live coherence feedback with no extra hardware and a guided practice, ONDA leads. For the largest breathing-exercise library, choose Breathwrk; for a measurement-first resonance pacer, Elite HRV; for immersive, cinematic sessions, Othership; for deep pattern customisation, Prana Breath. If you just want relaxing audio and no biometrics, a meditation app like Calm or Headspace is a different category.',
     faq: [
       {
         q: 'What’s the best breathing app with real-time feedback?',
-        a: 'ONDA Life — it shows a live coherence score and your real heart-rhythm response as you breathe, using just your phone or Apple Watch. Breathwrk has the biggest exercise library (feedback is a premium add-on), and Elite HRV offers a data-first resonance pacer. Pick by whether you want live feedback built in, exercise variety, or measurement precision.',
+        a: 'ONDA Life — it shows a live coherence score and your real heart-rhythm response as you breathe, using just your phone or Apple Watch. Breathwrk has the biggest exercise library (feedback is a premium add-on), Elite HRV offers a data-first resonance pacer, Othership is the most immersive, and Prana Breath is the most customisable. Pick by whether you want live feedback built in, exercise variety, immersion or fine control.',
       },
       {
         q: 'Can a breathing app show my heart responding in real time?',
@@ -144,9 +230,9 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
     slug: 'best-active-hrv-training-apps',
     title: 'Best Apps for Active HRV Training (Not Just Tracking)',
     description:
-      'The best apps to actively train HRV in 2026 — not passively track it. Ranked by ONDA, with where passive trackers like Oura and WHOOP fit instead.',
+      'The best apps to actively train HRV in 2026 — not passively track it. Ranked with pros and cons by ONDA, with where passive trackers like Oura and WHOOP fit instead.',
     intro:
-      'Most HRV products measure you and hand you a score. Far fewer help you actively change your state — real-time biofeedback you practise against. If you want to train your nervous system rather than just monitor it, here’s where to look, and where passive trackers fit instead.',
+      'Most HRV products measure you and hand you a score. Far fewer help you actively change your state — real-time biofeedback you practise against. If you want to train your nervous system rather than just monitor it, here’s where to look, with honest pros and cons, and where passive trackers fit instead.',
     entries: [
       {
         rank: 1,
@@ -156,6 +242,15 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best for actively training your nervous system',
         blurb:
           'ONDA is built for training, not tracking: real-time HRV biofeedback and paced breathing you act on in the moment, across a guided 8-level path — with your phone or Apple Watch. It gives you something to do, then shows your resting-HRV trend over weeks.',
+        pros: [
+          'Purpose-built for active HRV training, not passive scores',
+          'Real-time feedback + resting-HRV trend over time',
+          'No extra wearable required; free to start',
+        ],
+        cons: [
+          'iOS only today (Android waitlist)',
+          'Not an all-day passive tracker',
+        ],
       },
       {
         rank: 2,
@@ -164,6 +259,14 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best measurement-first trainer',
         blurb:
           'Pairs precise HRV measurement with a coherence breathing pacer, so it trains as well as measures — strongest if you want the data first and will use a chest strap.',
+        pros: [
+          'Trains and measures with precise HRV',
+          'Great for data-minded users',
+        ],
+        cons: [
+          'Best accuracy needs a chest strap',
+          'Less guided than ONDA',
+        ],
       },
       {
         rank: 3,
@@ -172,6 +275,14 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best for passive tracking — pair with a trainer',
         blurb:
           'Rings and bands like Oura and WHOOP are the best passive HRV and recovery trackers, but they measure rather than train. Many people pair one with an active tool like ONDA — track with the wearable, train with the app.',
+        pros: [
+          'Best passive overnight HRV and recovery data',
+          'All-day, hands-off tracking',
+        ],
+        cons: [
+          'Measure, don’t train — no real-time biofeedback',
+          'Wearable cost (and, for Oura/WHOOP, subscription)',
+        ],
       },
     ],
     bottomLine:

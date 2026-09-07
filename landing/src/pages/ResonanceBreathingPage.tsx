@@ -201,6 +201,8 @@ export function ResonanceBreathingPage() {
         Related: <Link to={`${langPrefix}/tools/breathing`} className="text-terminal-green hover:underline">Breathing pacer</Link>
         {' · '}
         <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
+        {' · '}
+        <Link to="/compare/best-real-time-breathing-apps" className="text-terminal-green hover:underline">Best real-time breathing apps</Link>
       </div>
     </main>
   )
