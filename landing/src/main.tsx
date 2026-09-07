@@ -211,6 +211,8 @@ const routeElements = (
             <Route path="/ru/product"            element={<ProductPage />} />
             <Route path="/es/product"            element={<ProductPage />} />
             <Route path="/faq"                   element={<FaqPage />} />
+            <Route path="/ru/faq"                element={<FaqPage />} />
+            <Route path="/es/faq"                element={<FaqPage />} />
             <Route path="/people/yakiv-bilenko"  element={<FounderPage />} />
             <Route path="/hrv-biofeedback"       element={<HrvBiofeedbackPage />} />
             <Route path="/resonance-breathing"   element={<ResonanceBreathingGuidePage />} />

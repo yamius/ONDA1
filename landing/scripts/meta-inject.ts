@@ -18,6 +18,7 @@ import { getOndaVs } from '../src/data/onda-vs'
 import { getRoundup } from '../src/data/onda-roundups'
 import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
 import { PRODUCT_I18N } from '../src/data/product-i18n'
+import { FAQ_I18N } from '../src/data/faq-i18n'
 import { EMOTON_FAQ } from '../src/data/emoton-faq'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
@@ -1625,6 +1626,19 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'profile',
+    }
+  }
+  // /ru/faq, /es/faq — localized Q&A hub + localized FAQPage JSON-LD.
+  if (route === '/ru/faq' || route === '/es/faq') {
+    const c = route === '/ru/faq' ? FAQ_I18N.ru : FAQ_I18N.es
+    const items = c.groups.flatMap((g) => g.items.map((it) => ({ question: it.q, answer: it.a })))
+    return {
+      title: c.metaTitle,
+      description: c.metaDescription,
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      faq: { mainEntity: items, url },
     }
   }
   // /faq — consolidated Q&A hub + FAQPage JSON-LD. EN-only.

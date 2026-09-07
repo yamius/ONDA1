@@ -449,8 +449,10 @@ const nonLocalizedStaticPaths = [
   '/product',
   '/ru/product',
   '/es/product',
-  // /faq — consolidated answer-engine Q&A hub. EN-only.
+  // /faq — consolidated answer-engine Q&A hub (en + ru/es pilot).
   '/faq',
+  '/ru/faq',
+  '/es/faq',
   // /people/yakiv-bilenko — founder person/authority page. EN-only.
   '/people/yakiv-bilenko',
   // Cornerstone bridge-entity pages: HRV biofeedback + resonance breathing. EN-only.

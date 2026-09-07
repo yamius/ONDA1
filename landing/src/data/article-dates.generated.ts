@@ -206,7 +206,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-training-nervous-system-latency": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-05-25T19:35:33+02:00"
+    "modified": "2026-09-06T17:46:56+02:00"
   },
   "hydraulic-viscosity-onda-transport-bus": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -258,7 +258,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "nervous-system-ping-latency": {
     "published": "2026-03-24T10:43:38Z",
-    "modified": "2026-06-09T14:23:13+02:00"
+    "modified": "2026-09-06T17:46:56+02:00"
   },
   "neural-bridge-alpha-flow-gateway": {
     "published": "2026-03-31T16:32:31Z",
@@ -302,7 +302,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "protocol-circadian-hard-reset": {
     "published": "2026-03-24T09:33:24Z",
-    "modified": "2026-05-25T19:35:33+02:00"
+    "modified": "2026-09-06T17:46:56+02:00"
   },
   "quiet-mode-alpha-cortisol-buffer": {
     "published": "2026-03-31T22:01:43Z",
@@ -370,6 +370,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-06-08T08:16:41+02:00"
+    "modified": "2026-09-06T20:56:00+02:00"
   }
 }
