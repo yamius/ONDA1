@@ -113,6 +113,9 @@ import ringProVsOura5 from './ultrahuman-ring-pro-vs-oura-ring-5'
 import ringProVsSamsung from './ultrahuman-ring-pro-vs-samsung-galaxy-ring'
 import ringProVsRingconn from './ultrahuman-ring-pro-vs-ringconn-gen-2'
 import ringProVsRingAir from './ultrahuman-ring-pro-vs-ultrahuman-ring-air'
+import helioVsRingconn from './amazfit-helio-ring-vs-ringconn-gen-2'
+import helioVsOura4 from './amazfit-helio-ring-vs-oura-ring-4'
+import helioVsSamsung from './amazfit-helio-ring-vs-samsung-galaxy-ring'
 import pod4VsPod5 from './eight-sleep-pod-4-vs-eight-sleep-pod-5'
 import pod5VsChilipad from './eight-sleep-pod-5-vs-chilipad-dock-pro'
 import pod5VsClimate360 from './eight-sleep-pod-5-vs-sleep-number-climate360'
@@ -294,6 +297,9 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   ringProVsSamsung,
   ringProVsRingconn,
   ringProVsRingAir,
+  helioVsRingconn,
+  helioVsOura4,
+  helioVsSamsung,
   pod4VsPod5,
   pod5VsChilipad,
   pod5VsClimate360,

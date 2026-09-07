@@ -45,6 +45,7 @@ import garminVenu4 from './garmin-venu-4'
 import samsungGalaxyRing from './samsung-galaxy-ring'
 import ultrahumanRingAir from './ultrahuman-ring-air'
 import ultrahumanRingPro from './ultrahuman-ring-pro'
+import amazfitHelioRing from './amazfit-helio-ring'
 import ringconnGen2 from './ringconn-gen-2'
 import fitbitCharge6 from './fitbit-charge-6'
 import withingsScanwatch from './withings-scanwatch'
@@ -248,6 +249,7 @@ const ALL_REVIEWS: ToolReview[] = [
   samsungGalaxyRing,
   ultrahumanRingAir,
   ultrahumanRingPro,
+  amazfitHelioRing,
   appleWatchSeries11,
   ringconnGen2,
   fitbitCharge6,
