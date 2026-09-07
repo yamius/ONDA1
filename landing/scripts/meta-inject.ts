@@ -17,6 +17,7 @@ import { MEASUREMENTS_FAQ } from '../src/data/measurements-faq'
 import { getOndaVs } from '../src/data/onda-vs'
 import { getRoundup } from '../src/data/onda-roundups'
 import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
+import { PRODUCT_I18N } from '../src/data/product-i18n'
 import { EMOTON_FAQ } from '../src/data/emoton-faq'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
@@ -1556,7 +1557,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       ogType: 'website',
     }
   }
-  // /product — canonical product page (Product Facts). EN-only.
+  // /product — canonical product page (Product Facts). Localized to ru + es.
   if (route === '/product') {
     return {
       title: 'ONDA Life — HRV Biofeedback & Guided Breathing App | Product',
@@ -1566,6 +1567,10 @@ export function getMetaForRoute(route: string): RouteMeta {
       breadcrumbs,
       ogType: 'website',
     }
+  }
+  if (route === '/ru/product' || route === '/es/product') {
+    const c = route === '/ru/product' ? PRODUCT_I18N.ru : PRODUCT_I18N.es
+    return { title: c.metaTitle, description: c.metaDescription, url, breadcrumbs, ogType: 'website' }
   }
   // /hrv-biofeedback — cornerstone bridge-entity page. EN-only.
   if (route === '/hrv-biofeedback') {

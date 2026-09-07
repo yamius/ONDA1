@@ -444,8 +444,11 @@ const nonLocalizedStaticPaths = [
   // ONDA measures vs derives vs estimates, and the biofeedback method. EN-only.
   '/measurements',
   '/how-it-works',
-  // /product — canonical machine-readable product page (Product Facts). EN-only.
+  // /product — canonical machine-readable product page (Product Facts).
+  // Localized to ru + es (pilot); other pages stay EN-only.
   '/product',
+  '/ru/product',
+  '/es/product',
   // /faq — consolidated answer-engine Q&A hub. EN-only.
   '/faq',
   // /people/yakiv-bilenko — founder person/authority page. EN-only.

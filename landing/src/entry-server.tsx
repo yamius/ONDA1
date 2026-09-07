@@ -185,6 +185,8 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/measurements"          element={<MeasurementsPage />} />
           <Route path="/how-it-works"          element={<HowItWorksPage />} />
           <Route path="/product"               element={<ProductPage />} />
+          <Route path="/ru/product"            element={<ProductPage />} />
+          <Route path="/es/product"            element={<ProductPage />} />
           <Route path="/faq"                   element={<FaqPage />} />
           <Route path="/people/yakiv-bilenko"  element={<FounderPage />} />
           <Route path="/hrv-biofeedback"       element={<HrvBiofeedbackPage />} />
