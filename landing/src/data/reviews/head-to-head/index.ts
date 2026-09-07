@@ -45,6 +45,9 @@ import muse2VsFocuscalm from './muse-2-vs-focuscalm'
 import headspaceVsCalm from './headspace-vs-calm'
 import headspaceVsWakingUp from './headspace-vs-waking-up'
 import calmVsInsightTimer from './calm-vs-insight-timer'
+import balanceVsHeadspace from './balance-vs-headspace'
+import balanceVsCalm from './balance-vs-calm'
+import calmVsWakingUp from './calm-vs-waking-up'
 // Sleep
 import sleepCycleVsSleepAsAndroid from './sleep-cycle-vs-sleep-as-android'
 import sleepioVsPzizz from './sleepio-vs-pzizz'
@@ -244,6 +247,9 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   headspaceVsCalm,
   headspaceVsWakingUp,
   calmVsInsightTimer,
+  balanceVsHeadspace,
+  balanceVsCalm,
+  calmVsWakingUp,
   headspaceVsInsight,
   healthyMindsVsWakingUp,
   // Sleep
