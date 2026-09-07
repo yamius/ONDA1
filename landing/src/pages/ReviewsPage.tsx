@@ -37,9 +37,22 @@ export function ReviewsPage() {
       </p>
       <Link
         to={langHref(`/reviews/methodology`, lang)}
-        className="mb-10 inline-block font-mono text-xs text-terminal-cyan/70 transition-colors hover:text-terminal-cyan"
+        className="mb-6 inline-block font-mono text-xs text-terminal-cyan/70 transition-colors hover:text-terminal-cyan"
       >
         {tReviews('hub.methodologyLink')}
+      </Link>
+
+      {/* ONDA's own comparisons — kept visibly separate from the independent
+          reviews above. EN-only (the /compare hub is English). */}
+      <Link
+        to="/compare"
+        className="mb-10 block rounded-lg border border-terminal-green/25 bg-terminal-green/5 p-4 transition-colors hover:border-terminal-green/50"
+      >
+        <div className="font-mono text-xs uppercase tracking-widest text-terminal-green/80">Compare · ONDA vs alternatives</div>
+        <div className="mt-1 font-mono text-xs leading-relaxed text-white/55">
+          How ONDA compares to Oura, WHOOP, Headspace, Calm, Breathwrk and Elite HRV — ONDA&rsquo;s own
+          objective comparisons and top-picks guides (separate from the independent reviews below). &rarr;
+        </div>
       </Link>
 
       {/* Category nav — links to the per-category landing pages. Surfaced
