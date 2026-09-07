@@ -15,6 +15,27 @@
  *   - A visible transparency banner (in the page) says this is ONDA's own
  *     guide. Competitor facts match their independent reviews / onda-vs pages.
  */
+import { CAPABILITIES, ONDA_CAPS, type Cap, type CapabilityAxis } from './onda-vs'
+
+/** Which capability profile an entry uses, for the at-a-glance matrix. */
+export type CapsKey = 'onda' | 'elite' | 'breathwrk' | 'othership' | 'prana' | 'trackers'
+
+/** Build a capability record from values in CAPABILITIES order. */
+function caps(values: Cap[]): Record<CapabilityAxis, Cap> {
+  return Object.fromEntries(CAPABILITIES.map((c, i) => [c, values[i]])) as Record<CapabilityAxis, Cap>
+}
+
+/** Honest capability profiles, on the same axes as the onda-vs matrix. Elite
+ *  HRV and Breathwrk mirror their onda-vs values; the rest are authored to
+ *  match their independent reviews. Order = CAPABILITIES. */
+export const CAP_PROFILES: Record<CapsKey, Record<CapabilityAxis, Cap>> = {
+  onda: ONDA_CAPS,
+  elite: caps(['yes', 'yes', 'yes', 'limited', 'limited', 'yes', 'limited', 'no', 'no']),
+  breathwrk: caps(['limited', 'limited', 'yes', 'limited', 'limited', 'limited', 'no', 'no', 'limited']),
+  othership: caps(['no', 'no', 'yes', 'yes', 'limited', 'no', 'no', 'limited', 'limited']),
+  prana: caps(['no', 'no', 'yes', 'yes', 'no', 'no', 'no', 'no', 'limited']),
+  trackers: caps(['no', 'no', 'limited', 'no', 'no', 'yes', 'yes', 'no', 'no']),
+}
 
 export interface RoundupEntry {
   rank: number
@@ -24,6 +45,8 @@ export interface RoundupEntry {
   isOnda?: boolean
   /** Short verdict tag, e.g. "Best for accessible, guided biofeedback". */
   tag: string
+  /** Capability profile for the at-a-glance matrix (see CAP_PROFILES). */
+  capsKey: CapsKey
   blurb: string
   pros: string[]
   cons: string[]
@@ -55,6 +78,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         href: '/product',
         isOnda: true,
         tag: 'Best overall for accessible, guided biofeedback',
+        capsKey: 'onda',
         blurb:
           'ONDA gives live heart-rhythm feedback and a coherence score while you breathe, using just the iPhone camera or an Apple Watch — no chest strap — inside a guided, progressive 8-level practice. It’s the most accessible way to actually train HRV, not just track it.',
         pros: [
@@ -72,6 +96,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         name: 'Elite HRV',
         href: '/compare/onda-vs-elite-hrv',
         tag: 'Best for measurement precision',
+        capsKey: 'elite',
         blurb:
           'A serious, data-first HRV app with a live coherence breathing pacer and morning readiness. Its most accurate readings need a chest strap, and it’s more measurement tool than guided practice — but for raw HRV precision it’s excellent.',
         pros: [
@@ -89,6 +114,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         name: 'Breathwrk',
         href: '/reviews/breathwrk',
         tag: 'Best for breathing-exercise variety',
+        capsKey: 'breathwrk',
         blurb:
           'A large library of guided breathing exercises. It adds HRV/coherence biofeedback only in its premium tier and via a Bluetooth heart-rate device — so biofeedback is an add-on rather than the core, but the exercise range is the widest here.',
         pros: [
@@ -132,6 +158,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         href: '/product',
         isOnda: true,
         tag: 'Best for live coherence feedback with no extra device',
+        capsKey: 'onda',
         blurb:
           'ONDA pairs guided resonance breathing with a live coherence score and your real heart-rhythm response, using the iPhone camera or Apple Watch. You see your body organise as you breathe — the feedback loop that makes it a trainer, not just a pacer.',
         pros: [
@@ -149,6 +176,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         name: 'Breathwrk',
         href: '/reviews/breathwrk',
         tag: 'Best breathing-exercise library',
+        capsKey: 'breathwrk',
         blurb:
           'The widest range of guided breathing exercises for calm, focus and sleep. Real-time HRV/coherence feedback exists only in its premium tier and needs a Bluetooth device — so the feedback is optional, but the exercise variety is unmatched here.',
         pros: [
@@ -165,6 +193,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         name: 'Elite HRV',
         href: '/compare/onda-vs-elite-hrv',
         tag: 'Best for a data-first resonance pacer',
+        capsKey: 'elite',
         blurb:
           'A resonance-frequency breathing pacer tied to live HRV, in a measurement-first app. Excellent if you want precise data and are happy to use a chest strap, though it’s less of a guided experience than ONDA.',
         pros: [
@@ -181,6 +210,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         name: 'Othership',
         href: '/reviews/othership',
         tag: 'Best immersive, cinematic breathwork',
+        capsKey: 'othership',
         blurb:
           'A premium, music-driven breathwork experience with cinematic sessions and live community classes. Beautiful and motivating — but there’s no biometric feedback, and it’s the priciest subscription in the category.',
         pros: [
@@ -197,6 +227,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         name: 'Prana Breath',
         href: '/reviews/prana-breath',
         tag: 'Best for customisable breathing patterns',
+        capsKey: 'prana',
         blurb:
           'A deeply customisable, pattern-based breathwork app with granular control over timings — Android-first and mostly free. Great for tinkerers, but the UX feels dated and there’s no biometric feedback.',
         pros: [
@@ -240,6 +271,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         href: '/product',
         isOnda: true,
         tag: 'Best for actively training your nervous system',
+        capsKey: 'onda',
         blurb:
           'ONDA is built for training, not tracking: real-time HRV biofeedback and paced breathing you act on in the moment, across a guided 8-level path — with your phone or Apple Watch. It gives you something to do, then shows your resting-HRV trend over weeks.',
         pros: [
@@ -257,6 +289,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         name: 'Elite HRV',
         href: '/compare/onda-vs-elite-hrv',
         tag: 'Best measurement-first trainer',
+        capsKey: 'elite',
         blurb:
           'Pairs precise HRV measurement with a coherence breathing pacer, so it trains as well as measures — strongest if you want the data first and will use a chest strap.',
         pros: [
@@ -273,6 +306,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         name: 'Oura / WHOOP (for context)',
         href: '/reviews/hrv-trackers',
         tag: 'Best for passive tracking — pair with a trainer',
+        capsKey: 'trackers',
         blurb:
           'Rings and bands like Oura and WHOOP are the best passive HRV and recovery trackers, but they measure rather than train. Many people pair one with an active tool like ONDA — track with the wearable, train with the app.',
         pros: [

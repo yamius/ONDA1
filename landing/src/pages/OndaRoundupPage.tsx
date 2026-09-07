@@ -11,10 +11,18 @@
  */
 import { useEffect } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
-import { getRoundup } from '../data/onda-roundups'
+import { getRoundup, CAP_PROFILES } from '../data/onda-roundups'
+import { CAPABILITIES, type Cap } from '../data/onda-vs'
 import { NotFoundPage } from './NotFoundPage'
 
 const SITE_URL = 'https://onda-life.com'
+
+const CAP_GLYPH: Record<Cap, string> = { yes: '✓', limited: '~', no: '—' }
+const CAP_CLASS: Record<Cap, string> = {
+  yes: 'text-terminal-green',
+  limited: 'text-amber-300',
+  no: 'text-white/25',
+}
 
 function setMeta(name: string, content: string, isProperty = false) {
   const attr = isProperty ? 'property' : 'name'
@@ -114,6 +122,49 @@ export function OndaRoundupPage() {
         where it genuinely leads, name where each competitor wins, and say plainly below what ONDA is
         <em> not</em> best at.
       </div>
+
+      {/* Capabilities at a glance — the same matrix as the /compare hub, scoped
+          to this list's apps. Reuses CAP_PROFILES so it can't drift. */}
+      <section className="mb-10">
+        <h2 className="mb-1 text-lg font-bold tracking-tight md:text-xl">Capabilities at a glance</h2>
+        <p className="mb-3 font-mono text-[11px] text-white/45">
+          <span className="text-terminal-green">✓</span> yes ·{' '}
+          <span className="text-amber-300">~</span> limited ·{' '}
+          <span className="text-white/30">—</span> no
+        </p>
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/20 font-mono text-[11px] uppercase tracking-wider text-white/50">
+                <th className="py-3 pr-4 font-medium">Capability</th>
+                {roundup.entries.map((e) => (
+                  <th
+                    key={e.rank}
+                    className={`px-2 py-3 text-center font-medium ${e.isOnda ? 'text-terminal-green' : 'text-white/60'}`}
+                  >
+                    {e.name}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {CAPABILITIES.map((cap) => (
+                <tr key={cap} className="border-b border-white/10">
+                  <td className="min-w-[220px] py-3 pr-4 align-top text-white/75">{cap}</td>
+                  {roundup.entries.map((e) => {
+                    const v = CAP_PROFILES[e.capsKey][cap]
+                    return (
+                      <td key={e.rank} className={`px-2 py-3 text-center font-mono ${CAP_CLASS[v]}`}>
+                        {CAP_GLYPH[v]}
+                      </td>
+                    )
+                  })}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       {/* Ranked list */}
       <ol className="mb-10 space-y-4">
