@@ -67,6 +67,8 @@ import nurosymVsVagustim from './nurosym-vs-vagustim'
 import joovvVsMitoRed from './joovv-solo-3-vs-mito-red-mitopro-1500'
 import joovvVsPlatinumLed from './joovv-solo-3-vs-platinumled-biomax-600'
 import mitoRedVsHooga from './mito-red-mitopro-1500-vs-hooga-hg500'
+import hoogaVsJoovv from './hooga-hg500-vs-joovv-solo-3'
+import hoogaVsPlatinum from './hooga-hg500-vs-platinumled-biomax-600'
 import gembaredVsJoovv from './gembared-vesta-vs-joovv-solo-3'
 import platinumledVsBioLight from './platinumled-biomax-600-vs-biolight-pro-900'
 import topThreePanels from './joovv-solo-3-vs-mito-red-mitopro-1500-vs-platinumled-biomax-600'
@@ -252,6 +254,8 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   joovvVsMitoRed,
   joovvVsPlatinumLed,
   mitoRedVsHooga,
+  hoogaVsJoovv,
+  hoogaVsPlatinum,
   gembaredVsJoovv,
   platinumledVsBioLight,
   topThreePanels,
