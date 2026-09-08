@@ -1190,7 +1190,7 @@
   },
   "home": {
     "progress": {
-      "title": "Your Progress",
+      "title": "My Progress",
       "streak_empty": "Complete your first practice to start your streak",
       "streak_label_one": "{{count}} day streak",
       "streak_label_other": "{{count}} day streak",
@@ -1209,7 +1209,7 @@
       "connect_watch": "Connect"
     },
     "journey": {
-      "title": "Your Journey"
+      "title": "My Journey"
     },
     "quick_mood": {
       "title": "Quick Mood Scan"

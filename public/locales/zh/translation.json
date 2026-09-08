@@ -1148,7 +1148,7 @@
   },
   "home": {
     "progress": {
-      "title": "你的进度",
+      "title": "我的进度",
       "streak_empty": "完成首次练习以开启连续天数",
       "streak_label_one": "连续 {{count}} 天",
       "streak_label_other": "连续 {{count}} 天",
@@ -1167,7 +1167,7 @@
       "connect_watch": "连接"
     },
     "journey": {
-      "title": "你的旅程"
+      "title": "我的旅程"
     },
     "quick_mood": {
       "title": "快速状态检查"

@@ -159,7 +159,15 @@ const OndaLevel1 = () => {
   // The figure-card on home. Sourced from the camera session first (day-0,
   // no permissions), then redrawn from the 14-day HealthKit read once the
   // watch is connected. Honest by construction: only what Health/camera gave.
-  const [baseline, setBaseline] = useState<{ data: BaselineData; source: BaselineSource } | null>(null);
+  // Restore a camera baseline saved on the last session so it survives a restart
+  // (a watch baseline is re-read live from Health, so it isn't persisted here).
+  const [baseline, setBaseline] = useState<{ data: BaselineData; source: BaselineSource } | null>(() => {
+    try {
+      const s = localStorage.getItem('onda_baseline_camera');
+      if (s) return { data: JSON.parse(s) as BaselineData, source: 'camera' };
+    } catch { /* noop */ }
+    return null;
+  });
   // Shift view: flip the card numbers to signed deltas from baseline (blue −, violet +).
   const [baselineShift, setBaselineShift] = useState(false);
   // Today's same-shaped read (queryBaseline days=1) — the "today" side of Shift deltas.
@@ -176,18 +184,20 @@ const OndaLevel1 = () => {
     return next;
   });
   const isCollapsed = (id: string) => !!collapsedBlocks[id];
-  // The toggle: a small gray dot (solid when open, hollow ring when
-  // collapsed) inside a much larger transparent hit area (~40px) so it's easy to
-  // tap. `pos` is the DESIRED DOT position (top-right by default); the button is
-  // centred on it. Blocks whose corner holds a number (13/6) float the dot above.
-  const collapseDot = (id: string, pos?: { top?: number; right?: number }) => {
-    const dotTop = pos?.top ?? 16;   // vertically ~centred in the 45px collapsed bar
-    const dotRight = pos?.right ?? 12;
+  // The toggle: a small gray dot (solid when open, hollow ring when collapsed)
+  // in the block's very top-right CORNER, inside a large transparent hit area
+  // (~40px). `pos` overrides the corner; `opts` lets a block drive its own state
+  // (e.g. the Journey accordion uses journeyOpen instead of collapsedBlocks).
+  const collapseDot = (id: string, pos?: { top?: number; right?: number }, opts?: { collapsed?: boolean; onToggle?: () => void }) => {
+    const dotTop = pos?.top ?? 9;    // corner
+    const dotRight = pos?.right ?? 9;
+    const collapsed = opts?.collapsed ?? isCollapsed(id);
+    const toggle = opts?.onToggle ?? (() => toggleCollapse(id));
     const GRAY = 'rgb(148,163,184)';
     return (
       <button
         type="button"
-        onClick={(e) => { e.stopPropagation(); toggleCollapse(id); }}
+        onClick={(e) => { e.stopPropagation(); toggle(); }}
         aria-label="collapse"
         data-testid={`collapse-${id}`}
         className="absolute z-20 flex items-center justify-center"
@@ -197,16 +207,20 @@ const OndaLevel1 = () => {
           className="rounded-full transition-all"
           style={{
             width: '8px', height: '8px',
-            background: isCollapsed(id) ? 'transparent' : GRAY,
+            background: collapsed ? 'transparent' : GRAY,
             border: `1.5px solid ${GRAY}`,
           }}
         />
       </button>
     );
   };
-  // Style that folds a block to a compact bar when collapsed.
-  const collapseStyle = (id: string, barPx: number): React.CSSProperties =>
-    isCollapsed(id) ? { maxHeight: `${barPx}px`, overflow: 'hidden', transition: 'max-height 0.3s ease' } : { transition: 'max-height 0.3s ease' };
+  // Style that folds a block to a compact bar when collapsed. `padTop` re-centres
+  // the title in the bar (overrides the block's own top padding while collapsed).
+  const collapseStyle = (id: string, barPx: number, padTop?: number): React.CSSProperties => {
+    const base: React.CSSProperties = { transition: 'max-height 0.3s ease' };
+    if (!isCollapsed(id)) return base;
+    return { ...base, maxHeight: `${barPx}px`, overflow: 'hidden', ...(padTop != null ? { paddingTop: `${padTop}px` } : {}) };
+  };
   // Rolling stats over the current camera reading → avg/min/max pulse + a
   // breathing estimate. Reset on each fresh start, sealed into a card on stop.
   const camSessionRef = useRef({ min: Infinity, max: -Infinity, sum: 0, count: 0, brSum: 0, brCount: 0 });
@@ -297,6 +311,7 @@ const OndaLevel1 = () => {
           breathing: a.brCount > 0 ? a.brSum / a.brCount : null,
         });
         setBaseline({ data, source: 'camera' });
+        try { localStorage.setItem('onda_baseline_camera', JSON.stringify(data)); } catch { /* noop */ }
         track('baseline_shown', { source: 'camera', coverage_days: 1 });
       }
     }
@@ -3352,11 +3367,22 @@ const OndaLevel1 = () => {
 
     // The on-screen practice is gone — any further results screen belongs to a
     // hub-launched practice, so the button reverts to "Back to Practices".
+    const wasFirstRun = cameFromFirstRun;
     setCameFromFirstRun(false);
     cameraPpg.stop(); // free camera + torch when leaving the practice
 
-    // Scroll to practice after exit
-    if (practiceId) {
+    // After the onboarding first run, open the home at the very TOP (on the
+    // baseline), not scrolled down to the practice card. Otherwise, scroll to
+    // the just-finished practice.
+    if (wasFirstRun) {
+      setTimeout(() => {
+        const rootEl = document.getElementById('root');
+        if (rootEl) rootEl.scrollTop = 0;
+        const sc = document.querySelector('.overflow-x-hidden') as HTMLElement | null;
+        if (sc) sc.scrollTop = 0;
+        window.scrollTo(0, 0);
+      }, 100);
+    } else if (practiceId) {
       setTimeout(() => {
         practiceRefs.current[practiceId]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }, 100);
@@ -5986,9 +6012,9 @@ const OndaLevel1 = () => {
             ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
             : 'border-purple-500/30 hover:border-purple-400/50'
         } ${isFeatured ? 'ring-2 ring-indigo-400/70 shadow-[0_0_24px_rgba(99,102,241,0.25)]' : ''}`}
-        style={collapsible ? collapseStyle(`practice_${practice.id}`, 45) : undefined}
+        style={collapsible ? collapseStyle(`practice_${practice.id}`, 45, 9) : undefined}
       >
-        {collapsible && collapseDot(`practice_${practice.id}`, { top: 34 })}
+        {collapsible && collapseDot(`practice_${practice.id}`)}
         {isFeatured && !(collapsible && isCollapsed(`practice_${practice.id}`)) && (
           <span
             className="absolute -top-2 left-3 px-2 py-0.5 rounded-full bg-indigo-500 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow"
@@ -5997,25 +6023,26 @@ const OndaLevel1 = () => {
             ✨ {t('home.featured.recommended', 'Recommended')}
           </span>
         )}
-        <div className="flex items-start justify-between mb-3">
-          <div className="flex-1">
-            <h3 className="text-xl font-semibold mb-1">{getPracticeName(practice.id)}</h3>
-            <p className="text-sm text-gray-400">{practice.duration}</p>
-          </div>
+        {/* Title sits on the SAME row as the status circle (items-center),
+            so the heading lines up with the green dot; the duration drops
+            to its own line below. */}
+        <div className="flex items-center justify-between mb-1">
+          <h3 className="flex-1 pr-6 text-xl font-semibold">{getPracticeName(practice.id)}</h3>
           {isCompleted?.isValidForArtifact ? (
             <div className="text-right">
-              <CheckCircle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
+              <CheckCircle className="w-6 h-6 text-emerald-400 ml-auto" />
               <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
             </div>
           ) : isCompleted ? (
             <div className="text-right">
-              <Circle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
+              <Circle className="w-6 h-6 text-emerald-400 ml-auto" />
               <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
             </div>
           ) : (
             <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
           )}
         </div>
+        <p className="text-sm text-gray-400 mb-3">{practice.duration}</p>
         {(() => {
           // Subtitle priority: if we have functional copy for this
           // practice, it stands alone (title already carries the
@@ -6501,8 +6528,8 @@ const OndaLevel1 = () => {
                 isLight
                   ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
                   : 'bg-black/20 backdrop-blur-sm border border-white/10'
-              }`} style={collapseStyle('coherence', 45)}>
-                {collapseDot('coherence', { top: 26 })}
+              }`} style={collapseStyle('coherence', 45, 8)}>
+                {collapseDot('coherence')}
                 <div className="flex items-baseline justify-between pr-6">
                   <div className="text-left">
                     <div className={`text-sm font-semibold ${isLight ? 'text-slate-600' : 'text-white/90'}`}>{t('practices.coherence')}</div>
@@ -6557,8 +6584,11 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
-        {/* Closing breathing figures (13 / 6) — after the coherence window. */}
-        {baseline && (
+        {/* Closing breathing figures (13 / 6) — after the coherence window.
+            Watch-only: the footer needs HRV spread + breathing, which the
+            camera path never has, so gate the wrapper (and its collapse dot)
+            on a watch baseline to avoid a stray dot over empty space. */}
+        {baseline && baseline.source === 'watch' && (
           <div className="mb-6 flex flex-col items-center">
             <div className="relative w-full max-w-[360px]">
               {collapseDot('breathing_1306', { top: 27, right: 12 })}
@@ -6571,8 +6601,8 @@ const OndaLevel1 = () => {
 
         {/* Установка — the intention block before the practices (placeholder copy). */}
         <div className="mb-6 flex flex-col items-center">
-          <div className={`relative w-full max-w-[360px] rounded-2xl p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 45)}>
-            {collapseDot('recommendations', { top: 33 })}
+          <div className={`relative w-full max-w-[360px] rounded-2xl p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 45, 8)}>
+            {collapseDot('recommendations')}
             <h3 className={`text-xl sm:text-2xl font-bold mb-2 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Мои Рекомендации')}</h3>
             <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>
               {t('baseline.setup_body', 'Практики ниже сбалансируют твой сердечный ритм — просто следуй подсказкам во время.')}
@@ -6649,8 +6679,9 @@ const OndaLevel1 = () => {
           {/* Light highlight — a soft indigo ring + gentle halo lifts the
               Your Progress (HRV) card above the surrounding blocks without
               shouting. */}
-          <div className={`rounded-2xl p-4 border ring-1 ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`}>
-            <div className="text-sm font-medium mb-3" style={{ opacity: 0.75 }}>
+          <div className={`relative rounded-lg p-4 border ring-1 ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`} style={collapseStyle('progress', 45, 8)}>
+            {collapseDot('progress')}
+            <div className={`text-xl sm:text-2xl font-bold mb-3 pr-6 ${isLight ? 'text-slate-700' : 'text-white'}`}>
               {t('home.progress.title')}
             </div>
             <HRVMiniChart
@@ -7467,24 +7498,16 @@ const OndaLevel1 = () => {
             mirrored here; the original sites are kept dead-gated
             ({false && (...)}) for now to limit diff size — a future
             cleanup can delete the dead JSX entirely. */}
-        <div className="mb-6">
+        <div className="mb-6 relative">
+          {collapseDot('journey', undefined, { collapsed: !journeyOpen, onToggle: () => setJourneyOpen(v => !v) })}
           <button
             type="button"
             onClick={() => setJourneyOpen(v => !v)}
             aria-expanded={journeyOpen}
             data-testid="journey-toggle"
-            className={`w-full flex items-center justify-between rounded-2xl px-4 sm:px-5 py-3 sm:py-4 transition-all ${emoTint}`}
+            className={`w-full flex items-center rounded-lg px-4 sm:px-5 py-3 sm:py-4 transition-all ${emoTint}`}
           >
-            <span className="text-base sm:text-lg font-medium">{t('home.journey.title')}</span>
-            <span
-              aria-hidden="true"
-              className="text-sm opacity-70"
-              style={{
-                display: 'inline-block',
-                transition: 'transform 180ms ease',
-                transform: journeyOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-              }}
-            >▾</span>
+            <span className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('home.journey.title')}</span>
           </button>
         </div>
 

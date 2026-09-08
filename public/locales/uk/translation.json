@@ -1178,7 +1178,7 @@
   },
   "home": {
     "progress": {
-      "title": "Твій прогрес",
+      "title": "Мій прогрес",
       "streak_empty": "Заверши першу практику, щоб розпочати серію",
       "streak_label_one": "Серія {{count}} день",
       "streak_label_few": "Серія {{count}} дні",
@@ -1201,7 +1201,7 @@
       "connect_watch": "Підключити"
     },
     "journey": {
-      "title": "Твій шлях"
+      "title": "Мій шлях"
     },
     "quick_mood": {
       "title": "Швидка перевірка стану"

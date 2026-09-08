@@ -1190,7 +1190,7 @@
   },
   "home": {
     "progress": {
-      "title": "Твой прогресс",
+      "title": "Мой прогресс",
       "streak_empty": "Заверши первую практику, чтобы начать серию",
       "streak_label_one": "Серия {{count}} день",
       "streak_label_few": "Серия {{count}} дня",
@@ -1213,7 +1213,7 @@
       "connect_watch": "Подключить"
     },
     "journey": {
-      "title": "Твой путь"
+      "title": "Мой путь"
     },
     "quick_mood": {
       "title": "Быстрая проверка состояния"

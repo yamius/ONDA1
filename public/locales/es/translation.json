@@ -1149,7 +1149,7 @@
   },
   "home": {
     "progress": {
-      "title": "Tu progreso",
+      "title": "Mi progreso",
       "streak_empty": "Completa tu primera práctica para empezar tu racha",
       "streak_label_one": "Racha de {{count}} día",
       "streak_label_other": "Racha de {{count}} días",
@@ -1168,7 +1168,7 @@
       "connect_watch": "Conectar"
     },
     "journey": {
-      "title": "Tu viaje"
+      "title": "Mi viaje"
     },
     "quick_mood": {
       "title": "Chequeo rápido de estado"
