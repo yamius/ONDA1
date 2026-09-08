@@ -7505,9 +7505,9 @@ const OndaLevel1 = () => {
             onClick={() => setJourneyOpen(v => !v)}
             aria-expanded={journeyOpen}
             data-testid="journey-toggle"
-            className={`w-full flex items-center rounded-lg px-4 sm:px-5 py-3 sm:py-4 transition-all ${emoTint}`}
+            className={`w-full flex items-center rounded-lg p-4 border ring-1 transition-all ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`}
           >
-            <span className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('home.journey.title')}</span>
+            <span className={`text-xl sm:text-2xl font-bold pr-6 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('home.journey.title')}</span>
           </button>
         </div>
 
