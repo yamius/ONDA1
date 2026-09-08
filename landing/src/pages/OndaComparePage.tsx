@@ -172,6 +172,33 @@ export function OndaComparePage() {
           </li>
         ))}
       </ul>
+
+      {/* ── How we compare — methodology + honesty note ──────────────────── */}
+      <section className="mt-16 border-t border-white/10 pt-10">
+        <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">How we compare</h2>
+        <div className="space-y-4 font-mono text-sm leading-relaxed text-white/65">
+          <p>
+            These are ONDA&rsquo;s <em>own</em> comparisons, so we hold them to a stricter rule than a
+            typical &ldquo;vs&rdquo; page: every competitor is scored on the same capability rows, from public
+            information and hands-on use, and each head-to-head carries an honest &ldquo;best for&rdquo; on both
+            sides — including the cases where a rival is the better pick. ONDA is a real-time HRV
+            biofeedback and guided-breathing app; when what you actually want is passive overnight
+            tracking from a ring or band, we say so.
+          </p>
+          <p>
+            Because we can&rsquo;t be neutral about our own product, we keep our self-comparisons here at{' '}
+            <Link to="/compare" className="text-terminal-green hover:underline">/compare</Link> and out
+            of the independent{' '}
+            <Link to="/reviews" className="text-terminal-green hover:underline">reviews</Link>, which are
+            scored against a{' '}
+            <Link to="/reviews/methodology" className="text-terminal-green hover:underline">public rubric</Link>{' '}
+            that ONDA is deliberately left out of. For the underlying detail, see{' '}
+            <Link to="/measurements" className="text-terminal-green hover:underline">what ONDA measures</Link>{' '}
+            and the{' '}
+            <Link to="/research" className="text-terminal-green hover:underline">evidence</Link> it builds on.
+          </p>
+        </div>
+      </section>
     </main>
   )
 }

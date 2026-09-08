@@ -19,6 +19,7 @@ import { levelsData } from '../src/data/levels'
 import { parts } from '../src/pages/PartPage'
 import { ES_PILOT_ARTICLE_SLUGS, RU_PILOT_ARTICLE_SLUGS } from './prerender-routes'
 import { reviews, comparisons } from '../src/data/reviews'
+import { TOOLS } from '../src/data/tools'
 
 type Lang = 'en' | 'es' | 'ru' | 'uk' | 'zh'
 const NON_EN_LANGS: Lang[] = ['es', 'ru', 'uk', 'zh']
@@ -100,9 +101,11 @@ function buildIndex(lang: Lang = 'en'): string {
 - [Resonance breathing](${SITE_URL}/resonance-breathing): cornerstone explainer — the science of slow breathing and HRV, why ~6 breaths/min, finding your resonance frequency, evidence and practice
 - [HRV vs coherence](${SITE_URL}/hrv-vs-coherence): explainer — HRV is the raw beat-to-beat variation; coherence is how smooth/rhythmic it is as you breathe; which to watch and how ONDA uses each
 - [Apple Watch HRV biofeedback](${SITE_URL}/apple-watch-hrv-biofeedback): explainer — what the Apple Watch measures, why it records HRV rather than giving live biofeedback alone, and how ONDA adds a real-time coherence loop
+- [Tools](${SITE_URL}${langPrefix}/tools): ${TOOLS.length} free interactive calculators (HRV, sleep debt, caffeine cut-off, heart-rate zones, protein, VO2max and more) — read against the evidence, no sign-up
 - [Bio](${SITE_URL}${langPrefix}/bio): real-time biometric dashboard — the product experience on the web
 - [Research](${SITE_URL}/research): the evidence ONDA builds on (HRV biofeedback, resonance breathing) and what remains experimental
 - [Articles](${SITE_URL}/articles): long-form knowledge base on HRV, breathwork and nervous-system science
+- [Topics](${SITE_URL}/topics): pillar hubs grouping articles + glossary by cluster (HRV, circadian, dopamine, metabolic, breathwork, neuroplasticity, cognition, spinal, hormones, longevity)
 - [Glossary](${SITE_URL}/glossary): defined terms with cross-links
 - [FAQ](${SITE_URL}/faq): straight answers on HRV biofeedback, resonance breathing, HRV science and the ONDA app
 - [Reviews](${SITE_URL}/reviews): independent, criteria-based reviews of HRV/recovery/biohacking tools
@@ -176,6 +179,19 @@ ${partLines.join('\n')}
   sections.push(`## Glossary
 
 ${glossLines.join('\n')}
+`)
+
+  // Tools — free interactive calculators. EN-only URLs, surfaced in every
+  // locale index like Articles/Glossary/Reviews.
+  const toolLines: string[] = []
+  for (const t of TOOLS) {
+    toolLines.push(`- [${t.name}](${SITE_URL}/tools/${t.slug}): ${t.blurb}`)
+  }
+  sections.push(`## Tools (free calculators)
+
+Free interactive calculators, no sign-up. Nervous-system tools link to the measurements and evidence pages. Hub: ${SITE_URL}/tools
+
+${toolLines.join('\n')}
 `)
 
   // Reviews — independent biohacking-tool reviews. EN-only; the same EN

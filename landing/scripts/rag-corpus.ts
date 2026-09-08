@@ -26,6 +26,7 @@ import { articles } from '../src/data/articles'
 import { glossaryTerms } from '../src/data/glossary'
 import { ARTICLE_DATES } from '../src/data/article-dates.generated'
 import { reviews, comparisons } from '../src/data/reviews'
+import { TOOLS } from '../src/data/tools'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
@@ -38,7 +39,7 @@ const AUTHOR = {
 
 interface CorpusRecord {
   id: string
-  type: 'article' | 'glossary' | 'review' | 'comparison'
+  type: 'article' | 'glossary' | 'review' | 'comparison' | 'tool'
   language: 'en'
   url: string
   title: string
@@ -128,6 +129,22 @@ for (const c of comparisons) {
   })
 }
 
+for (const t of TOOLS) {
+  const body = `${t.name} is a free interactive ${t.category.toLowerCase()} calculator on ONDA Life. ${t.blurb} It runs in the browser with no sign-up. Nervous-system tools link through to what ONDA measures and the underlying evidence.`
+  records.push({
+    id: t.slug,
+    type: 'tool',
+    language: 'en',
+    url: `${SITE_URL}/tools/${t.slug}`,
+    title: t.name,
+    description: t.blurb,
+    category: t.category,
+    wordCount: wordCount(body),
+    author: { name: AUTHOR.name, url: AUTHOR.url },
+    body,
+  })
+}
+
 // Stable ordering: articles, glossary, reviews, comparisons — each group
 // by slug. Helps downstream diffs across builds — Perplexity and friends
 // can detect "what changed since last fetch" without hashing the file.
@@ -136,6 +153,7 @@ const TYPE_ORDER: Record<CorpusRecord['type'], number> = {
   glossary: 1,
   review: 2,
   comparison: 3,
+  tool: 4,
 }
 records.sort((a, b) => {
   if (a.type !== b.type) return TYPE_ORDER[a.type] - TYPE_ORDER[b.type]
@@ -156,6 +174,7 @@ const articleCount = records.filter((r) => r.type === 'article').length
 const glossaryCount = records.filter((r) => r.type === 'glossary').length
 const reviewCount = records.filter((r) => r.type === 'review').length
 const comparisonCount = records.filter((r) => r.type === 'comparison').length
+const toolCount = records.filter((r) => r.type === 'tool').length
 console.log(
-  `[rag-corpus] Generated /datasets/onda-corpus.jsonl (${(jsonl.length / 1024).toFixed(0)} KB, ${(gz.length / 1024).toFixed(0)} KB gz) — ${articleCount} articles + ${glossaryCount} glossary terms + ${reviewCount} reviews + ${comparisonCount} comparisons`,
+  `[rag-corpus] Generated /datasets/onda-corpus.jsonl (${(jsonl.length / 1024).toFixed(0)} KB, ${(gz.length / 1024).toFixed(0)} KB gz) — ${articleCount} articles + ${glossaryCount} glossary terms + ${reviewCount} reviews + ${comparisonCount} comparisons + ${toolCount} tools`,
 )

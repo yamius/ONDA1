@@ -1693,9 +1693,9 @@ export function getMetaForRoute(route: string): RouteMeta {
 
   if (route === '/tools') {
     return {
-      title: 'Biohacking Tools & Calculators | ONDA Life',
+      title: 'Biohacking Tools & Calculators — Free & Evidence-Based | ONDA Life',
       description:
-        'Free interactive biohacking calculators from ONDA Life — read your HRV, sleep and recovery numbers against the evidence, then track them automatically in the app.',
+        'Free interactive calculators for HRV, sleep debt, caffeine timing, heart-rate zones, protein and more — each read against the published evidence, no sign-up, then trackable in ONDA Life.',
       url,
       breadcrumbs,
       ogType: 'website',
