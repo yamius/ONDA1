@@ -8365,6 +8365,7 @@ const OndaLevel1 = () => {
         onClose={() => setShowDiaryModal(false)}
         light={isLight}
         dayRhr={dayRhr}
+        userId={user?.id ?? null}
       />
 
       {/* Practice-log modal (was "Дневник", now "История практик"). */}

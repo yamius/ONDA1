@@ -17,6 +17,8 @@ import {
   loadDiaryEntries,
   saveDiaryEntries,
   newDiaryId,
+  syncDiaryEntries,
+  deleteDiaryEntryRemote,
   type DiaryEntry,
   type DiarySource,
 } from '../lib/diary';
@@ -27,6 +29,9 @@ interface DiaryModalProps {
   light?: boolean;
   /** Resting-pulse for today, if known — snapshotted onto a "now" entry (§5). */
   dayRhr?: number | null;
+  /** Signed-in user id, or null when logged out (local-first). Drives the
+   *  debounced Supabase save, mirroring the user_game_progress pattern. */
+  userId?: string | null;
 }
 
 type RecState = 'idle' | 'recording' | 'recorded';
@@ -49,7 +54,7 @@ const pickMime = (): string => {
   return '';
 };
 
-export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = null }: DiaryModalProps) {
+export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = null, userId = null }: DiaryModalProps) {
   const { t, i18n } = useTranslation();
 
   const [entries, setEntries] = useState<DiaryEntry[]>([]);
@@ -96,6 +101,19 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   useEffect(() => {
     if (isOpen) setEntries(loadDiaryEntries());
   }, [isOpen]);
+
+  // Debounced Supabase save while signed in (mirrors the user_game_progress
+  // pattern): whenever there are un-synced entries, push them after 1s, then
+  // refresh local state so their synced flags settle and we don't re-push.
+  useEffect(() => {
+    if (!userId) return;
+    if (!entries.some((e) => !e.synced)) return;
+    const timer = setTimeout(async () => {
+      const n = await syncDiaryEntries(userId);
+      if (n > 0) setEntries(loadDiaryEntries());
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [userId, entries]);
 
   // Cleanup on unmount.
   useEffect(() => () => {
@@ -238,6 +256,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const handleDelete = (id: string) => {
     persist(entries.filter((e) => e.id !== id));
     if (editingId === id) resetEditor();
+    if (userId) deleteDiaryEntryRemote(userId, id); // best-effort remote removal
   };
 
   const handleClose = () => {

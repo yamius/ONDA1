@@ -13,8 +13,13 @@ create table public.diary_entries (
   text text not null default '',
   source text not null default 'text',   -- text | voice | text_voice
   event_time timestamptz not null default now(),  -- when it actually happened
-  rhr integer,                            -- resting-pulse snapshot for that day, if known
-  audio_url text,                         -- future: voice moved to Storage
+  rhr integer,                            -- resting-pulse snapshot for that day, if known (§5)
+  audio_url text,                         -- future: voice moved to Storage (photo fast-follow)
+  -- Anomaly metadata — provisioned empty for step 4 (baseline deviation → "запиши,
+  -- что было"). Populated later; left nullable so today's writes ignore them.
+  anomaly_metric text,                    -- which signal deviated: rhr | hrv | rr
+  anomaly_delta numeric,                  -- that day's deviation from baseline
+  anomaly_prompted boolean not null default false,  -- entry opened from an anomaly prompt
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
   unique (user_id, client_id)

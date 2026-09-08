@@ -93,3 +93,12 @@ export async function syncDiaryEntries(userId: string): Promise<number> {
   }
   return pending.length;
 }
+
+/** Remove a deleted entry from Supabase too (best-effort) while signed in. */
+export async function deleteDiaryEntryRemote(userId: string, clientId: string): Promise<void> {
+  try {
+    await supabase.from('diary_entries').delete().eq('user_id', userId).eq('client_id', clientId);
+  } catch (e) {
+    console.warn('[diary] remote delete failed:', e);
+  }
+}
