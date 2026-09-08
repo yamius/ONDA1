@@ -13,6 +13,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "queryHeartRate", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryAllHealthData", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "querySleepHistory", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "queryBaseline", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "stopRealtimeMonitoring", returnType: CAPPluginReturnPromise)
     ]
@@ -235,6 +236,25 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         // HRV (SDNN) for the resting-HRV trend on the home screen.
         if let hrv = HKQuantityType.quantityType(forIdentifier: .heartRateVariabilitySDNN) {
             typesToRead.insert(hrv)
+        }
+        // Resting HR + respiratory rate: the 14-day baseline opened on first watch connect.
+        if let restingHR = HKQuantityType.quantityType(forIdentifier: .restingHeartRate) {
+            typesToRead.insert(restingHR)
+        }
+        if let respiratory = HKQuantityType.quantityType(forIdentifier: .respiratoryRate) {
+            typesToRead.insert(respiratory)
+        }
+        // Baseline extras around the figure (v21): walking pulse, VO2max, 1-min recovery.
+        // Peak reuses .heartRate (already added above). Each is best-effort — absent
+        // data collapses the card slot, so requesting them never fabricates a number.
+        if let walking = HKQuantityType.quantityType(forIdentifier: .walkingHeartRateAverage) {
+            typesToRead.insert(walking)
+        }
+        if let vo2 = HKQuantityType.quantityType(forIdentifier: .vo2Max) {
+            typesToRead.insert(vo2)
+        }
+        if #available(iOS 16.0, *), let recovery = HKQuantityType.quantityType(forIdentifier: .heartRateRecoveryOneMinute) {
+            typesToRead.insert(recovery)
         }
 
         typesToRead.insert(HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!)
@@ -487,7 +507,144 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         }
         healthStore.execute(query)
     }
-    
+
+    /// Baseline over the last N days (default 14): per signal (resting HR / HRV-SDNN / respiratory
+    /// rate) the daily avg / min / max plus the REAL number of days that carried data. Each signal is
+    /// aggregated to ONE value per calendar day first (mean of that day's samples), then avg/min/max
+    /// are taken over the daily values — so "min" is the calmest day, "max" the most restless, and
+    /// `days` is honest coverage (never claimed higher than what HealthKit actually held). Read-only;
+    /// nothing leaves the device.
+    @objc func queryBaseline(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            call.reject("HealthKit is not available")
+            return
+        }
+
+        let days = call.getInt("days") ?? 14
+        let now = Date()
+        let calendar = Calendar.current
+        let startDate = calendar.date(byAdding: .day, value: -days, to: calendar.startOfDay(for: now)) ?? now
+
+        let signals: [(key: String, id: HKQuantityTypeIdentifier)] = [
+            ("rhr", .restingHeartRate),
+            ("hrv", .heartRateVariabilitySDNN),
+            ("rr", .respiratoryRate),
+        ]
+
+        var result: [String: Any] = [:]
+        var extras: [String: Any] = [:]
+        let bpm = HKUnit.count().unitDivided(by: .minute())
+        let group = DispatchGroup()
+
+        for signal in signals {
+            group.enter()
+            queryDailyStats(signal.id, from: startDate, to: now) { avg, minV, maxV, dayCount in
+                // Marshal every write onto main so the shared dict isn't raced by the background queries.
+                DispatchQueue.main.async {
+                    var entry: [String: Any] = ["days": dayCount]
+                    if let avg = avg { entry["avg"] = avg }
+                    if let minV = minV { entry["min"] = minV }
+                    if let maxV = maxV { entry["max"] = maxV }
+                    result[signal.key] = entry
+                    group.leave()
+                }
+            }
+        }
+
+        // Single-value extras (v21 figure surrounds): peak, walking pulse, VO2max, recovery.
+        // Best-effort — a nil (no data / not authorized) leaves the slot out; never invented.
+        group.enter()
+        queryDiscreteMax(.heartRate, from: startDate, to: now) { peak in
+            DispatchQueue.main.async {
+                if let peak = peak { extras["hrpeak"] = peak }
+                group.leave()
+            }
+        }
+        group.enter()
+        queryDailyStats(.walkingHeartRateAverage, from: startDate, to: now) { avg, _, _, _ in
+            DispatchQueue.main.async {
+                if let avg = avg { extras["whr"] = avg }
+                group.leave()
+            }
+        }
+        group.enter()
+        queryDailyStats(.vo2Max, from: startDate, to: now) { avg, _, _, _ in
+            DispatchQueue.main.async {
+                if let avg = avg { extras["vo2"] = avg }
+                group.leave()
+            }
+        }
+        if #available(iOS 16.0, *) {
+            group.enter()
+            queryDailyStats(.heartRateRecoveryOneMinute, from: startDate, to: now, unitOverride: bpm) { avg, _, _, _ in
+                DispatchQueue.main.async {
+                    if let avg = avg { extras["hrr"] = avg }
+                    group.leave()
+                }
+            }
+        }
+
+        group.notify(queue: .main) {
+            result["extras"] = extras
+            call.resolve(result)
+        }
+    }
+
+    /// The single peak value over [from, to] (true max sample, not a daily mean).
+    private func queryDiscreteMax(_ identifier: HKQuantityTypeIdentifier, from: Date, to: Date, completion: @escaping (Double?) -> Void) {
+        guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
+            completion(nil)
+            return
+        }
+        let predicate = HKQuery.predicateForSamples(withStart: from, end: to, options: .strictStartDate)
+        let query = HKStatisticsQuery(quantityType: type, quantitySamplePredicate: predicate, options: .discreteMax) { _, stats, _ in
+            let unit = self.unitFor(identifier)
+            completion(stats?.maximumQuantity()?.doubleValue(for: unit))
+        }
+        healthStore.execute(query)
+    }
+
+    /// Aggregation helper: all samples in [from, to] → one value per calendar day (mean of the day's
+    /// samples), then avg/min/max over those daily values, plus the count of days with data.
+    private func queryDailyStats(_ identifier: HKQuantityTypeIdentifier, from: Date, to: Date, unitOverride: HKUnit? = nil, completion: @escaping (Double?, Double?, Double?, Int) -> Void) {
+        guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
+            completion(nil, nil, nil, 0)
+            return
+        }
+
+        let predicate = HKQuery.predicateForSamples(withStart: from, end: to, options: .strictStartDate)
+        let query = HKSampleQuery(sampleType: type, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { _, samples, _ in
+            guard let samples = samples as? [HKQuantitySample], !samples.isEmpty else {
+                completion(nil, nil, nil, 0)
+                return
+            }
+
+            let unit = unitOverride ?? self.unitFor(identifier)
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+
+            // Sum + count per calendar day → daily mean.
+            var daySum: [String: Double] = [:]
+            var dayN: [String: Int] = [:]
+            for sample in samples {
+                let day = dateFormatter.string(from: sample.endDate)
+                let value = sample.quantity.doubleValue(for: unit)
+                daySum[day, default: 0] += value
+                dayN[day, default: 0] += 1
+            }
+
+            let dailyValues = daySum.map { key, sum in sum / Double(dayN[key] ?? 1) }
+            guard !dailyValues.isEmpty else {
+                completion(nil, nil, nil, 0)
+                return
+            }
+
+            let avg = dailyValues.reduce(0, +) / Double(dailyValues.count)
+            completion(avg, dailyValues.min(), dailyValues.max(), dailyValues.count)
+        }
+        healthStore.execute(query)
+    }
+
     private func queryLatest(_ identifier: HKQuantityTypeIdentifier, completion: @escaping (Double?) -> Void) {
         guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
             completion(nil)
@@ -585,7 +742,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     
     private func unitFor(_ identifier: HKQuantityTypeIdentifier) -> HKUnit {
         switch identifier {
-        case .heartRate, .restingHeartRate, .respiratoryRate:
+        case .heartRate, .restingHeartRate, .respiratoryRate, .walkingHeartRateAverage:
             return HKUnit.count().unitDivided(by: .minute())
         case .heartRateVariabilitySDNN:
             return .secondUnit(with: .milli)

@@ -20,6 +20,9 @@ import { DebugMonitor } from './components/DebugMonitor';
 import { MetricsWaveform } from './components/MetricsWaveform';
 import { CameraPulseWindow } from './components/CameraPulseWindow';
 import { CoherenceOrb } from './components/CoherenceOrb';
+import { BaselineCard, BaselineClosingFooter } from './components/BaselineCard';
+import { buildFromNative, buildFromCamera, hasAnyReading, BASELINE_WINDOW_DAYS, type BaselineData, type BaselineSource } from './lib/baseline';
+import HealthKitHeartRate from './plugins/healthKitHeartRate';
 // Home redesign 1.7.4 — new sections (Section 2 / 4 / 6).
 import { HRVMiniChart } from './components/HRVMiniChart';
 import { TodaysPracticeStateCard } from './components/TodaysPracticeStateCard';
@@ -152,6 +155,20 @@ const OndaLevel1 = () => {
   const cameraPpg = useCameraPpg();
   const [cameraOfferDismissed, setCameraOfferDismissed] = useState(false);
 
+  // ── Baseline card (retention step 1) ────────────────────────────────────
+  // The figure-card on home. Sourced from the camera session first (day-0,
+  // no permissions), then redrawn from the 14-day HealthKit read once the
+  // watch is connected. Honest by construction: only what Health/camera gave.
+  const [baseline, setBaseline] = useState<{ data: BaselineData; source: BaselineSource } | null>(null);
+  // Shift view: flip the card numbers to signed deltas from baseline (blue −, violet +).
+  const [baselineShift, setBaselineShift] = useState(false);
+  // Today's same-shaped read (queryBaseline days=1) — the "today" side of Shift deltas.
+  const [baselineToday, setBaselineToday] = useState<BaselineData | null>(null);
+  // Rolling stats over the current camera reading → avg/min/max pulse + a
+  // breathing estimate. Reset on each fresh start, sealed into a card on stop.
+  const camSessionRef = useRef({ min: Infinity, max: -Infinity, sum: 0, count: 0, brSum: 0, brCount: 0 });
+  const prevCamStatusRef = useRef<string>('idle');
+
   // Ref to store CURRENT vitals - updated every render, accessible in async functions
   const vitalsRef = useRef(vitalsData);
   vitalsRef.current = vitalsData;
@@ -167,7 +184,109 @@ const OndaLevel1 = () => {
   const [pendingStartPracticeAfterSubscribe, setPendingStartPracticeAfterSubscribe] = useState(false);
   
   useKeepAwake(true);
-  
+
+  // Read 14 days of history from HealthKit and build the baseline card. Called
+  // ONLY after the user grants access via the watch CTA (permission by intent).
+  // Honest coverage: the caption reflects the real day count Health returned;
+  // sparse/new watches say less, never "14 nights". Flips the "watching" flag.
+  const loadWatchBaseline = useCallback(async () => {
+    try {
+      const res = await HealthKitHeartRate.queryBaseline({ days: BASELINE_WINDOW_DAYS });
+
+      // Diagnostic → Supabase/GA4: exactly what the 14-day read returned, so we
+      // can see which numbers Health actually gave (and which extras are empty
+      // vs missing permission) without a live device session.
+      const ex = res.extras ?? {};
+      track('baseline_debug', {
+        source: 'watch',
+        rhr_days: res.rhr?.days ?? 0, rhr_has: res.rhr?.avg != null,
+        hrv_days: res.hrv?.days ?? 0, hrv_has: res.hrv?.avg != null,
+        rr_days: res.rr?.days ?? 0, rr_has: res.rr?.avg != null,
+        hrpeak: ex.hrpeak ?? null,
+        whr: ex.whr ?? null,
+        vo2: ex.vo2 ?? null,
+        hrr: ex.hrr ?? null,
+        extras_keys: Object.keys(ex).join(',') || 'none',
+      });
+
+      const data = buildFromNative(res);
+      if (!hasAnyReading(data.readings)) return; // nothing in Health → keep the camera card
+      setBaseline({ data, source: 'watch' });
+      try { localStorage.setItem('onda_baseline_watching', 'true'); } catch { /* noop */ }
+      const coverage = Math.max(0, ...data.readings.map((r) => r.days));
+      track('baseline_shown', { source: 'watch', coverage_days: coverage });
+
+      // Today's same-shaped read → the "today" side of the Shift deltas. Best-effort:
+      // a sparse today just yields "—" on some numbers, never a fabricated delta.
+      try {
+        const todayRes = await HealthKitHeartRate.queryBaseline({ days: 1 });
+        setBaselineToday(buildFromNative(todayRes));
+      } catch { /* Shift stays neutral if today can't be read */ }
+    } catch (e) {
+      console.warn('[baseline] queryBaseline failed', e);
+      track('baseline_error', { source: 'watch', message: String((e as Error)?.message ?? e) });
+    }
+  }, [track]);
+
+  // Camera session → baseline. Accumulate committed bpm (avg/min/max) + a
+  // breathing estimate while reading; seal a day-0 card when the reading ends.
+  // Never overwrites a watch baseline once one exists.
+  useEffect(() => {
+    const s = cameraPpg.status;
+    const prev = prevCamStatusRef.current;
+    if (s !== 'idle' && prev === 'idle') {
+      camSessionRef.current = { min: Infinity, max: -Infinity, sum: 0, count: 0, brSum: 0, brCount: 0 };
+    }
+    if (s === 'reading' && cameraPpg.bpm != null) {
+      const a = camSessionRef.current;
+      a.min = Math.min(a.min, cameraPpg.bpm);
+      a.max = Math.max(a.max, cameraPpg.bpm);
+      a.sum += cameraPpg.bpm; a.count += 1;
+      if (vitalsData.br != null) { a.brSum += vitalsData.br; a.brCount += 1; }
+    }
+    if (s === 'idle' && prev !== 'idle') {
+      const a = camSessionRef.current;
+      if (a.count >= 5 && baseline?.source !== 'watch') {
+        const data = buildFromCamera({
+          avg: a.sum / a.count,
+          min: Number.isFinite(a.min) ? a.min : null,
+          max: Number.isFinite(a.max) ? a.max : null,
+          breathing: a.brCount > 0 ? a.brSum / a.brCount : null,
+        });
+        setBaseline({ data, source: 'camera' });
+        track('baseline_shown', { source: 'camera', coverage_days: 1 });
+      }
+    }
+    prevCamStatusRef.current = s;
+  }, [cameraPpg.status, cameraPpg.bpm, vitalsData.br, baseline, track]);
+
+  // Auto-open the baseline on app launch for connected-watch users. The 14-day
+  // read is a LOCAL iPhone HealthKit query (the watch already synced its history
+  // there) — it needs neither the watch app open nor WCSession reachable. Fires
+  // once per session as soon as the watch is known connected (paired + our watch
+  // app installed). A read with no HealthKit grant returns empty and prompts
+  // nothing, so the "permission by intent" rule (prompt only on the CTA) holds.
+  // Auto-load the watch baseline ONLY for someone who has connected before
+  // (the onda_baseline_watching flag, set on the first explicit connect). A
+  // fresh install that merely has a paired watch must NOT get a watch baseline
+  // during the camera-first onboarding — otherwise it hides the camera offer and
+  // blocks the camera baseline from sealing. Returning users still get it on open.
+  const baselineAutoRef = useRef(false);
+  useEffect(() => {
+    if (baselineAutoRef.current || !watchHeartRate.isConnected) return;
+    let watching = false;
+    try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
+    if (!watching) return;
+    baselineAutoRef.current = true;
+    void loadWatchBaseline();
+  }, [watchHeartRate.isConnected, loadWatchBaseline]);
+
+
+
+
+
+
+
   // Track app open on mount
   useEffect(() => {
     track('app_open', { platform });
@@ -250,22 +369,9 @@ const OndaLevel1 = () => {
     }
   }, [watchHeartRate.heartRate]);
   
-  // Когда разрешения есть → отдаём управление workout-сессией app-lifecycle
-  // менеджеру (вместо безусловного старта на mount). Он держит HKWorkoutSession
-  // пока приложение на переднем плане ИЛИ идёт практика, и глушит её иначе —
-  // больше нет сессии-«на-весь-день» (батарея + Apple Fitness загрязнение).
-  useEffect(() => {
-    if (!permissions.needsSetup && platform === 'ios') {
-      if (Capacitor.isPluginAvailable('OndaWatch')) {
-        console.log('[OndaLevel1] Разрешения есть → включаю auto-managed workout lifecycle');
-        watchHeartRate.setAutoManaged(true);
-      } else {
-        console.error('[OndaLevel1] ❌ OndaWatch plugin NOT AVAILABLE or not registered!');
-      }
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [permissions.needsSetup, platform]);
-  
+  // Auto-managed watch workout lifecycle lives further down — it must read
+  // `showPermissionModal` (declared below), so the effect is placed after it.
+
   useEffect(() => {
     if (platform === 'ios' && healthKitData.isAvailable && healthKitData.isAuthorized) {
       healthKitData.startAutoRefresh(30000);
@@ -274,6 +380,23 @@ const OndaLevel1 = () => {
   }, [platform, healthKitData.isAvailable, healthKitData.isAuthorized]);
   
   const displayHeartRate = watchHeartRate.heartRate ?? vitalsData.hr ?? null;
+
+  // Live values for the baseline card's realtime hero. A signal counts as live
+  // ONLY while a source is actively producing it — the camera mid-reading, or a
+  // watch that sent HR in the last few seconds. So when the watch disconnects,
+  // these go null and the card falls back to the historical baseline (instead of
+  // freezing on a stale pulse / lingering breathing). The 1 Hz tick below forces
+  // this to re-evaluate even when no new HR event arrives.
+  const [, forceLiveTick] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => forceLiveTick((t) => (t + 1) % 1000), 1000);
+    return () => clearInterval(id);
+  }, []);
+  const cameraLive = cameraPpg.status === 'reading' && cameraPpg.bpm != null;
+  const watchLive = watchHeartRate.heartRate != null && watchHeartRate.lastUpdated != null
+    && Date.now() - watchHeartRate.lastUpdated.getTime() < 8000;
+  const baselineLiveHr = cameraLive ? cameraPpg.bpm : watchLive ? watchHeartRate.heartRate : null;
+  const baselineLiveBr = (cameraLive || watchLive) ? (vitalsData.br ?? null) : null;
 
   const safeToFixed = (value: any, digits: number = 0): string => {
     if (value === null || value === undefined) return '--';
@@ -479,6 +602,32 @@ const OndaLevel1 = () => {
   const [showNotificationPrimer, setShowNotificationPrimer] = useState(false);
   const [showWatchPrompt, setShowWatchPrompt] = useState(false);
   const [showQntShop, setShowQntShop] = useState(false);
+
+  // Auto-managed watch workout lifecycle. Once Health is granted we hand the
+  // HKWorkoutSession to the app-lifecycle manager (runs while foreground OR a
+  // practice is active — no all-day session; battery + Apple Fitness hygiene).
+  // BUT: while the permission flow is on screen we hold it OFF, so the watch's
+  // workout-start screen doesn't land on top of the iOS Health sheet. When that
+  // flow closes we enable it — after a short grace ONLY if we just came out of
+  // the permission modal (so the sheet fully dismisses first); on a normal app
+  // open (modal never shown) it enables immediately, keeping "foreground → pulse".
+  const prevPermModalRef = useRef(showPermissionModal);
+  useEffect(() => {
+    const justClosedPermModal = prevPermModalRef.current && !showPermissionModal;
+    prevPermModalRef.current = showPermissionModal;
+    if (platform !== 'ios' || !Capacitor.isPluginAvailable('OndaWatch')) return;
+    const shouldManage = !permissions.needsSetup && !showPermissionModal;
+    if (!shouldManage) {
+      watchHeartRate.setAutoManaged(false);
+      return;
+    }
+    if (justClosedPermModal) {
+      const id = setTimeout(() => watchHeartRate.setAutoManaged(true), 1000);
+      return () => clearTimeout(id);
+    }
+    watchHeartRate.setAutoManaged(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [permissions.needsSetup, showPermissionModal, platform]);
   const [isLoadingUser, setIsLoadingUser] = useState(true);
   const [showInfoModal, setShowInfoModal] = useState(false);
   const [showSubscriptionModal, setShowSubscriptionModal] = useState(false);
@@ -6175,6 +6324,37 @@ const OndaLevel1 = () => {
           </span>
         </div>
 
+        {/* ── My Baseline — the anchor of the home, first in view on open ──
+            Title + a reason to return + a small Shift toggle, then the figure
+            card. The coherence window now sits BELOW this (moved down). */}
+        <div className="mb-6 flex flex-col items-center">
+          <div className="w-full max-w-[360px]">
+            <div className="text-center mb-3">
+              <h2 className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.title', 'Мой Базлайн')}</h2>
+              <p className={`text-sm mt-1 ${isLight ? 'text-slate-500' : 'text-white/60'}`}>{t('baseline.subtitle', 'Зайди сюда завтра и увидишь разницу')}</p>
+              <p className={`text-xs mt-0.5 ${isLight ? 'text-slate-400' : 'text-white/40'}`}>{t('baseline.subtitle_note', '(между средним за период и сегодня)')}</p>
+              <button
+                type="button"
+                onClick={() => setBaselineShift((s) => !s)}
+                className={`mt-3 inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold transition-all ${baselineShift ? 'bg-violet-500/25 text-violet-100 ring-1 ring-violet-400/50' : emoTint}`}
+                data-testid="baseline-shift"
+              >
+                {t('baseline.shift', 'Shift')}
+              </button>
+            </div>
+            <BaselineCard
+              data={baseline?.data ?? null}
+              source={baseline?.source ?? 'camera'}
+              emptyHint={t('baseline.empty_hint', 'Подключите Apple Watch, чтобы открыть базлайн из 14 дней истории Health')}
+              liveHr={baselineLiveHr}
+              liveBr={baselineLiveBr}
+              shift={baselineShift}
+              todayData={baselineToday}
+              light={isLight}
+            />
+          </div>
+        </div>
+
         {/* Section 1 — Biometric block. Honest + calm: two tiles
             (Pulse — measured · Breathing — an RSA estimate) → Coherence
             hero (heart–breath rhythm, the live training signal). The old
@@ -6309,7 +6489,7 @@ const OndaLevel1 = () => {
                 <div className="flex gap-2 sm:gap-3 justify-center">
                   <button
                     type="button"
-                    onClick={() => setShowPermissionModal(true)}
+                    onClick={() => { track('watch_connect_tapped', { source: 'home_biometric_cta' }); setShowPermissionModal(true); }}
                     className={`flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all ${emoTint}`}
                     data-testid="biometric-connect-watch"
                   >
@@ -6328,6 +6508,25 @@ const OndaLevel1 = () => {
                 </div>
               </div>
             )}
+          </div>
+        </div>
+
+        {/* Closing breathing figures (13 / 6) — after the coherence window. */}
+        {baseline && (
+          <div className="mb-6 flex flex-col items-center">
+            <div className="w-full max-w-[360px]">
+              <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
+            </div>
+          </div>
+        )}
+
+        {/* Установка — the intention block before the practices (placeholder copy). */}
+        <div className="mb-6 flex flex-col items-center">
+          <div className={`w-full max-w-[360px] rounded-2xl p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`}>
+            <h3 className={`text-xl sm:text-2xl font-bold mb-2 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Мои Рекомендации')}</h3>
+            <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>
+              {t('baseline.setup_body', 'Практики ниже сбалансируют твой сердечный ритм — просто следуй подсказкам во время.')}
+            </p>
           </div>
         </div>
 
@@ -6774,6 +6973,7 @@ const OndaLevel1 = () => {
         <WatchConnectionPrompt
           visible={showWatchPrompt}
           onConnected={() => setShowWatchPrompt(false)}
+          connected={watchHeartRate.isConnected}
         />
 
         {/* BLE Connect Tracker — Android only, shown above biometrics grid */}
@@ -8524,6 +8724,10 @@ const OndaLevel1 = () => {
           currentStatus={permissions.permissionStatus}
           isRequesting={permissions.isRequesting}
           onPermissionsGranted={() => setShowWatchPrompt(true)}
+          onOutcome={(granted) => {
+            track('health_permission', { scope: 'healthkit', granted, source: 'onboarding_watch_cta' });
+            if (granted) void loadWatchBaseline();
+          }}
         />
       )}
 

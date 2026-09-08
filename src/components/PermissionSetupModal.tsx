@@ -10,6 +10,10 @@ interface PermissionSetupModalProps {
   currentStatus: PermissionStatus;
   isRequesting: boolean;
   onPermissionsGranted?: () => void;
+  /** Fired once the HealthKit prompt resolves, with the (best-effort) grant
+   *  result — used for the onboarding permission-outcome analytics. iOS hides
+   *  the true deny status, so `false` means "no read access after the prompt". */
+  onOutcome?: (granted: boolean) => void;
 }
 
 export function PermissionSetupModal({
@@ -19,6 +23,7 @@ export function PermissionSetupModal({
   currentStatus,
   isRequesting,
   onPermissionsGranted,
+  onOutcome,
 }: PermissionSetupModalProps) {
   const { t } = useTranslation();
   const [requestStatus, setRequestStatus] = useState<PermissionStatus>(currentStatus);
@@ -39,7 +44,10 @@ export function PermissionSetupModal({
       const status = await onRequestAll((permission, granted) => {
         setRequestStatus(prev => ({ ...prev, [permission]: granted }));
       });
-      
+
+      // Report the permission outcome (best-effort — iOS hides the true result).
+      onOutcome?.(!!status.healthRead);
+
       // Если критичные разрешения получены, закрываем модалку и показываем Watch prompt
       // healthWrite не проверяем - capacitor-health не установлен
       if (status.healthRead) {
@@ -50,6 +58,7 @@ export function PermissionSetupModal({
       }
     } catch (error) {
       console.error('[PermissionSetupModal] Error requesting permissions:', error);
+      onOutcome?.(false);
     }
   };
 
