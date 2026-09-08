@@ -176,7 +176,9 @@ const OndaLevel1 = () => {
   // Collapsible home blocks: a small light-coral dot (top-right) folds each block
   // to a compact bar (max-height clip). State persists per block in localStorage.
   const [collapsedBlocks, setCollapsedBlocks] = useState<Record<string, boolean>>(() => {
-    try { return JSON.parse(localStorage.getItem('onda_collapsed_blocks') || '{}'); } catch { return {}; }
+    // First load (no stored prefs) → "Мои Рекомендации" starts folded.
+    try { const raw = localStorage.getItem('onda_collapsed_blocks'); if (raw) return JSON.parse(raw); } catch { /* noop */ }
+    return { recommendations: true };
   });
   const toggleCollapse = (id: string) => setCollapsedBlocks((c) => {
     const next = { ...c, [id]: !c[id] };
@@ -194,6 +196,11 @@ const OndaLevel1 = () => {
     const collapsed = opts?.collapsed ?? isCollapsed(id);
     const toggle = opts?.onToggle ?? (() => toggleCollapse(id));
     const GRAY = 'rgb(148,163,184)';
+    // 56px transparent hit area (~2× the old 40px), centred on the dot's
+    // visual position so only the tap target grows, not the dot.
+    const HIT = 56;
+    const cTop = dotTop + 4;   // dot's visual centre from the corner
+    const cRight = dotRight + 4;
     return (
       <button
         type="button"
@@ -201,7 +208,7 @@ const OndaLevel1 = () => {
         aria-label="collapse"
         data-testid={`collapse-${id}`}
         className="absolute z-20 flex items-center justify-center"
-        style={{ top: `${dotTop - 16}px`, right: `${dotRight - 16}px`, width: '40px', height: '40px', cursor: 'pointer', background: 'transparent', border: 'none', padding: 0 }}
+        style={{ top: `${cTop - HIT / 2}px`, right: `${cRight - HIT / 2}px`, width: `${HIT}px`, height: `${HIT}px`, cursor: 'pointer', background: 'transparent', border: 'none', padding: 0 }}
       >
         <span
           className="rounded-full transition-all"
@@ -6590,14 +6597,13 @@ const OndaLevel1 = () => {
         </div>
 
         {/* Closing breathing figures (13 / 6) — after the coherence window.
-            Watch-only: the footer needs HRV spread + breathing, which the
-            camera path never has, so gate the wrapper (and its collapse dot)
-            on a watch baseline to avoid a stray dot over empty space. */}
-        {baseline && baseline.source === 'watch' && (
+            Watch-only (needs HRV spread + breathing, which the camera path
+            never has). No own toggle: it's bound to the "Мои Рекомендации"
+            dot and hides entirely when that block is folded. */}
+        {baseline && baseline.source === 'watch' && !isCollapsed('recommendations') && (
           <div className="mb-6 flex flex-col items-center">
             <div className="relative w-full max-w-[360px]">
-              {collapseDot('breathing_1306', { top: 27, right: 12 })}
-              <div style={collapseStyle('breathing_1306', 45)}>
+              <div>
                 <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
               </div>
             </div>
@@ -7510,7 +7516,8 @@ const OndaLevel1 = () => {
             onClick={() => setJourneyOpen(v => !v)}
             aria-expanded={journeyOpen}
             data-testid="journey-toggle"
-            className={`w-full flex items-center rounded-lg p-4 border ring-1 transition-all ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`}
+            className={`w-full flex items-center rounded-lg px-4 border ring-1 transition-all ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`}
+            style={{ height: '45px' }}
           >
             <span className={`text-xl sm:text-2xl font-bold pr-6 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('home.journey.title')}</span>
           </button>
