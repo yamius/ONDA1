@@ -176,13 +176,14 @@ const OndaLevel1 = () => {
     return next;
   });
   const isCollapsed = (id: string) => !!collapsedBlocks[id];
-  // The toggle: a small light-coral dot (solid when open, hollow ring when
+  // The toggle: a small gray dot (solid when open, hollow ring when
   // collapsed) inside a much larger transparent hit area (~40px) so it's easy to
   // tap. `pos` is the DESIRED DOT position (top-right by default); the button is
   // centred on it. Blocks whose corner holds a number (13/6) float the dot above.
   const collapseDot = (id: string, pos?: { top?: number; right?: number }) => {
-    const dotTop = pos?.top ?? 10;
-    const dotRight = pos?.right ?? 10;
+    const dotTop = pos?.top ?? 16;   // vertically ~centred in the 45px collapsed bar
+    const dotRight = pos?.right ?? 12;
+    const GRAY = 'rgb(148,163,184)';
     return (
       <button
         type="button"
@@ -190,15 +191,14 @@ const OndaLevel1 = () => {
         aria-label="collapse"
         data-testid={`collapse-${id}`}
         className="absolute z-20 flex items-center justify-center"
-        style={{ top: `${dotTop - 13}px`, right: `${dotRight - 13}px`, width: '40px', height: '40px', cursor: 'pointer', background: 'transparent', border: 'none', padding: 0 }}
+        style={{ top: `${dotTop - 16}px`, right: `${dotRight - 16}px`, width: '40px', height: '40px', cursor: 'pointer', background: 'transparent', border: 'none', padding: 0 }}
       >
         <span
           className="rounded-full transition-all"
           style={{
-            width: '14px', height: '14px',
-            background: isCollapsed(id) ? 'transparent' : 'rgb(240,128,128)',
-            border: '2px solid rgb(240,128,128)',
-            boxShadow: '0 0 6px rgba(240,128,128,0.55)',
+            width: '8px', height: '8px',
+            background: isCollapsed(id) ? 'transparent' : GRAY,
+            border: `1.5px solid ${GRAY}`,
           }}
         />
       </button>
@@ -5986,10 +5986,10 @@ const OndaLevel1 = () => {
             ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
             : 'border-purple-500/30 hover:border-purple-400/50'
         } ${isFeatured ? 'ring-2 ring-indigo-400/70 shadow-[0_0_24px_rgba(99,102,241,0.25)]' : ''}`}
-        style={collapsible ? collapseStyle(`practice_${practice.id}`, 78) : undefined}
+        style={collapsible ? collapseStyle(`practice_${practice.id}`, 45) : undefined}
       >
-        {collapsible && collapseDot(`practice_${practice.id}`)}
-        {isFeatured && (
+        {collapsible && collapseDot(`practice_${practice.id}`, { top: 34 })}
+        {isFeatured && !(collapsible && isCollapsed(`practice_${practice.id}`)) && (
           <span
             className="absolute -top-2 left-3 px-2 py-0.5 rounded-full bg-indigo-500 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow"
             data-testid="featured-badge"
@@ -6501,8 +6501,8 @@ const OndaLevel1 = () => {
                 isLight
                   ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
                   : 'bg-black/20 backdrop-blur-sm border border-white/10'
-              }`} style={collapseStyle('coherence', 70)}>
-                {collapseDot('coherence')}
+              }`} style={collapseStyle('coherence', 45)}>
+                {collapseDot('coherence', { top: 26 })}
                 <div className="flex items-baseline justify-between pr-6">
                   <div className="text-left">
                     <div className={`text-sm font-semibold ${isLight ? 'text-slate-600' : 'text-white/90'}`}>{t('practices.coherence')}</div>
@@ -6561,8 +6561,8 @@ const OndaLevel1 = () => {
         {baseline && (
           <div className="mb-6 flex flex-col items-center">
             <div className="relative w-full max-w-[360px]">
-              {collapseDot('breathing_1306', { top: 2, right: 4 })}
-              <div style={collapseStyle('breathing_1306', 52)}>
+              {collapseDot('breathing_1306', { top: 27, right: 12 })}
+              <div style={collapseStyle('breathing_1306', 45)}>
                 <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
               </div>
             </div>
@@ -6571,8 +6571,8 @@ const OndaLevel1 = () => {
 
         {/* Установка — the intention block before the practices (placeholder copy). */}
         <div className="mb-6 flex flex-col items-center">
-          <div className={`relative w-full max-w-[360px] rounded-2xl p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 64)}>
-            {collapseDot('recommendations')}
+          <div className={`relative w-full max-w-[360px] rounded-2xl p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 45)}>
+            {collapseDot('recommendations', { top: 33 })}
             <h3 className={`text-xl sm:text-2xl font-bold mb-2 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Мои Рекомендации')}</h3>
             <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>
               {t('baseline.setup_body', 'Практики ниже сбалансируют твой сердечный ритм — просто следуй подсказкам во время.')}
